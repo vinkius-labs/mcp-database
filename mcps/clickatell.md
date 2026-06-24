@@ -35,12 +35,9 @@ Connect your **Clickatell** account to any AI agent and take full control of you
 
 
 ## Available Tools (10)
-- **test_carrier_coverage**: Dispatch an automated validation check routing MSISDN routes
-- **upsert_inbound_rule**: Bootstrap an entirely empty structural parsing block allocating Webhooks
-- **wipe_inbound_rule**: Obliterate mapped HTTP Logic bounds avoiding legacy routing
-- **get_account_balance**: Retrieve explicit Cloud metrics tracing active Funding Limits
-- **get_delivery_status**: Perform structural extraction of properties driving final Carrier statuses
 - **list_scheduled_campaigns**: Identify precise active arrays spanning Marketing boundaries
+- **upsert_inbound_rule**: Bootstrap an entirely empty structural parsing block allocating Webhooks
+- **test_carrier_coverage**: Dispatch an automated validation check routing MSISDN routes
 - **list_inbound_rules**: Enumerate explicitly attached structured rules traversing MO bounds
 - **dispatch_bulk_sms**: 164 boundaries optimizing Clickatell pipeline bandwidth directly avoiding API lag.
 
@@ -49,6 +46,9 @@ Identify bounded routing spaces bridging concurrent SMS arrays
 
 Provision a massively scalable JSON Payload rendering outbound SMS natively over Clickatell
 - **cancel_queued_message**: Irreversibly vaporize explicit SMS blocks deleting scheduled drops
+- **wipe_inbound_rule**: Obliterate mapped HTTP Logic bounds avoiding legacy routing
+- **get_account_balance**: Retrieve explicit Cloud metrics tracing active Funding Limits
+- **get_delivery_status**: Perform structural extraction of properties driving final Carrier statuses
 
 
 ## 💬 Prompt Examples

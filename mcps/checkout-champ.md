@@ -38,12 +38,12 @@ Connect your **Checkout Champ** account to any AI agent and take full control of
 ## Available Tools (8)
 - **get_champ_customer_details**: Get detailed information for a specific customer
 - **get_champ_order_details**: Get detailed information for a specific order
-- **list_champ_campaigns**: List configured marketing campaigns
 - **list_champ_customers**: List customers in the CRM
 - **list_champ_leads**: List captured leads
 - **list_champ_orders**: List orders from Checkout Champ
 - **list_champ_products**: List products in the catalog
 - **list_champ_transactions**: List recent financial transactions
+- **list_champ_campaigns**: List configured marketing campaigns
 
 
 ## 💬 Prompt Examples

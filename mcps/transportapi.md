@@ -41,6 +41,9 @@ No more navigating multiple transport operator websites or manually parsing real
 
 
 ## Available Tools (12)
+- **get_updates**: Returns active alerts with affected lines, services, or operators, disruption descriptions, severity levels, expected duration, alternative route recommendations, and timestamps. Covers bus, rail, tram, and underground services across Great Britain. Essential for disruption awareness, passenger communication, journey reliability monitoring, and travel planning during service changes. AI agents should reference this when users ask "are there any disruptions on the Northern Line", "is there engineering work on Great Western Railway", or need to check service reliability before planning UK journeys.
+
+Get real-time service updates and disruption alerts for UK transport
 - **get_bus_arrivals**: Returns list of arriving services with line names and numbers, origins, scheduled and real-time arrival times (ETA), expected wait times, direction, operator details, and any delay indicators. Essential for passenger pickup coordination, arrival monitoring, and real-time arrival boards. AI agents use this when users ask "when is the next bus arriving at this stop", "show incoming buses at stop X", or need to track arriving bus services for passenger coordination.
 
 Get real-time bus arrivals at a specific UK stop
@@ -74,9 +77,6 @@ Get detailed information about a specific UK bus stop
 - **get_timetable**: Returns all scheduled services with departure times from origin through to terminus, stops served in sequence, journey duration variations by time of day, weekday/weekend/holiday service patterns, operator information, and any planned service changes. Essential for comprehensive schedule analysis, journey planning at specific times, service pattern research, and understanding bus frequency throughout the day. AI agents use this when users ask "show me the full timetable for bus route 73", "what times does the X59 run on Sundays", or need complete schedule data for a UK bus service.
 
 Get full timetable for a specific UK bus line
-- **get_updates**: Returns active alerts with affected lines, services, or operators, disruption descriptions, severity levels, expected duration, alternative route recommendations, and timestamps. Covers bus, rail, tram, and underground services across Great Britain. Essential for disruption awareness, passenger communication, journey reliability monitoring, and travel planning during service changes. AI agents should reference this when users ask "are there any disruptions on the Northern Line", "is there engineering work on Great Western Railway", or need to check service reliability before planning UK journeys.
-
-Get real-time service updates and disruption alerts for UK transport
 
 
 ## 💬 Prompt Examples

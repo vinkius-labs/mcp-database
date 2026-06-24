@@ -43,6 +43,10 @@ No more navigating the Aikido dashboard for every security review. Your AI acts 
 Use this for compliance reporting, audit preparation, or bulk analysis of vulnerabilities.
 
 Export all security issues from Aikido
+- **list_webhooks**: Webhooks are used to send security event notifications to external systems (Slack, Jira, etc.).
+Use this to verify integrations are properly configured and troubleshoot notification delivery.
+
+List all configured webhooks in Aikido
 - **get_iso_compliance**: Shows which controls are passing, failing, or need attention.
 Use this for compliance monitoring, audit preparation, and security posture reporting.
 This endpoint is available on all paid Aikido plans.
@@ -102,10 +106,6 @@ List all users in your Aikido organization
 - **list_virtual_machines**: Use this to understand your VM attack surface and identify security gaps.
 
 List all virtual machines monitored by Aikido
-- **list_webhooks**: Webhooks are used to send security event notifications to external systems (Slack, Jira, etc.).
-Use this to verify integrations are properly configured and troubleshoot notification delivery.
-
-List all configured webhooks in Aikido
 
 
 ## 💬 Prompt Examples

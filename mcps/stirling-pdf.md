@@ -34,8 +34,10 @@ Connect your **Stirling PDF** instance to any AI agent and take full control of 
 
 
 ## Available Tools (11)
-- **add_watermark**: Add a watermark to a PDF document
 - **cert_sign**: Sign a PDF document with a certificate
+- **run_generic_tool**: Pass additional parameters as a JSON string.
+
+Run any Stirling PDF tool by its ID
 - **get_all_requests**: Get POST requests count for all endpoints
 - **get_all_unique_requests**: Get unique users count for all endpoints
 - **get_load**: Get total count of GET requests
@@ -44,9 +46,7 @@ Connect your **Stirling PDF** instance to any AI agent and take full control of 
 - **get_status**: Get application status and version information
 - **get_unique_requests**: Get count of unique users for POST requests
 - **img_to_pdf**: Convert an image to a PDF document
-- **run_generic_tool**: Pass additional parameters as a JSON string.
-
-Run any Stirling PDF tool by its ID
+- **add_watermark**: Add a watermark to a PDF document
 
 
 ## 💬 Prompt Examples

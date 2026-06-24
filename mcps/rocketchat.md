@@ -37,7 +37,6 @@ Connect your conversational assistant directly to **Rocket.Chat**, the open-sour
 
 Deletes a message from a room
 - **chat_post_message**: Sends a message to a channel or user by name
-- **chat_send_message**: Sends a message to a specific room by ID
 - **chat_update_message**: Updates the text of an existing message
 - **get_channel_info**: Retrieves details for a specific channel
 - **get_user_info**: Retrieves detailed information for a specific user
@@ -45,6 +44,7 @@ Deletes a message from a room
 - **list_private_groups**: Lists all private groups (channels) the user is a member of
 - **list_public_channels**: Lists all public channels in the workspace
 - **list_users**: Lists all users in the workspace directory
+- **chat_send_message**: Sends a message to a specific room by ID
 
 
 ## 💬 Prompt Examples

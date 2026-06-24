@@ -33,16 +33,16 @@ Integrate **eSignly**, the powerful and secure electronic signature platform, di
 
 
 ## Available Tools (10)
-- **get_esignly_account_metadata**: Retrieve metadata and limits for your eSignly account
-- **get_document_detailed_data**: Get detailed settings and status for a specific document
-- **quick_signing_volume_audit**: Retrieve a high-level summary of document and template activity
 - **get_template_details**: Get detailed settings for a specific eSign template
 - **list_successfully_signed_documents**: Identify documents that have been signed by all parties
 - **list_esign_contacts**: List all contacts registered in your eSignly address book
 - **list_document_audit_trail**: Get the complete audit trail for a specific document
+- **get_esignly_account_metadata**: Retrieve metadata and limits for your eSignly account
+- **quick_signing_volume_audit**: Retrieve a high-level summary of document and template activity
 - **list_document_signers**: List all signers and their current signing status for a document
 - **list_esign_documents**: List all documents in your eSignly account
 - **list_esign_templates**: List all reusable document templates
+- **get_document_detailed_data**: Get detailed settings and status for a specific document
 
 
 ## 💬 Prompt Examples

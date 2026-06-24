@@ -33,24 +33,9 @@ Integrate **Crowdin**, the leading localization management platform, directly in
 
 
 ## Available Tools (10)
-- **list_supported_languages**: Resolves language codes, human-readable names, and locale identifiers.
-
-List all languages supported by Crowdin
-- **list_projects**: Resolves project names, IDs, source languages, and target languages for localization workflows.
-
-List all localization projects in your Crowdin account
-- **list_project_reports**: Resolves report names, types (Translation Costs, Progress), and creation timestamps.
-
-List generated reports for a specific project
 - **list_project_screenshots**: Resolves screenshot IDs, tags, and linked string identifiers used for visual context.
 
 List all screenshots uploaded to a project for context
-- **list_project_tasks**: Resolves task titles, types (Translation, Proofreading), status, and assigned linguist references.
-
-List translation and proofreading tasks for a project
-- **list_translation_memories**: Resolves TM names, IDs, and segment counts for reuse in future translations.
-
-List all translation memories (TMs) available
 - **get_file_details**: Touches file structure, revision history, and per-language translation status boundaries.
 
 Get metadata for a specific file in a project
@@ -63,6 +48,21 @@ List all files within a specific project
 - **list_glossaries**: Resolves glossary names, IDs, and language pairs used for terminology management.
 
 List all glossaries available in the account
+- **list_translation_memories**: Resolves TM names, IDs, and segment counts for reuse in future translations.
+
+List all translation memories (TMs) available
+- **list_supported_languages**: Resolves language codes, human-readable names, and locale identifiers.
+
+List all languages supported by Crowdin
+- **list_projects**: Resolves project names, IDs, source languages, and target languages for localization workflows.
+
+List all localization projects in your Crowdin account
+- **list_project_reports**: Resolves report names, types (Translation Costs, Progress), and creation timestamps.
+
+List generated reports for a specific project
+- **list_project_tasks**: Resolves task titles, types (Translation, Proofreading), status, and assigned linguist references.
+
+List translation and proofreading tasks for a project
 
 
 ## 💬 Prompt Examples

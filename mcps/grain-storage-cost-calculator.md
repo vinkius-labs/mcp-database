@@ -14,10 +14,10 @@ This MCP server provides a suite of financial tools to manage the economic compl
 
 
 ## Available Tools (4)
-- **calculate_monthly_unit_cost**: Calculates the monthly cost burden per bag
-- **calculate_storage_expenditure**: Calculates total gross expenditure for storing grain
 - **calculate_required_price_spread**: Calculates the minimum price increase needed to break even
 - **evaluate_selling_strategy**: Recommends whether to sell grain now or hold
+- **calculate_monthly_unit_cost**: Calculates the monthly cost burden per bag
+- **calculate_storage_expenditure**: Calculates total gross expenditure for storing grain
 
 
 ## 💬 Prompt Examples

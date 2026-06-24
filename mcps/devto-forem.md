@@ -34,17 +34,10 @@ Connect your **Dev.to** or **Forem** account to any AI agent and manage your tec
 
 
 ## Available Tools (12)
-- **create_article**: to/Forem. Requires API key.
-
-Create a new article
 - **get_article_by_id**: Get a single article by ID
 - **get_article_by_path**: Get a single article by username and slug
 - **get_me**: Get authenticated user details
 - **get_user**: Get a user by ID or username
-- **list_articles**: List published articles
-- **list_my_articles**: Requires API key.
-
-List authenticated user's articles
 - **list_org_articles**: List organization's articles
 - **list_org_users**: List organization's users
 - **list_videos**: List articles with videos
@@ -54,6 +47,13 @@ Unpublish an article
 - **update_article**: Requires API key.
 
 Update an existing article
+- **create_article**: to/Forem. Requires API key.
+
+Create a new article
+- **list_articles**: List published articles
+- **list_my_articles**: Requires API key.
+
+List authenticated user's articles
 
 
 ## 💬 Prompt Examples

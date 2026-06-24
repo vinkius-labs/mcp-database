@@ -34,14 +34,14 @@ Connect your **Smsmobile** account to any AI agent and turn your smartphone into
 
 
 ## Available Tools (26)
-- **check_whatsapp_number**: Check if a number is registered on WhatsApp
 - **delete_gateway_mobile**: Delete a mobile from SMS Gateway
 - **delete_sms**: Delete SMS messages from the server log
-- **get_emails**: Retrieve emails
 - **get_received_sms**: Retrieve SMS messages received on the smartphone
 - **get_sms_logs**: Retrieve logs of SMS messages sent through the API
 - **get_unsubscribed_emails**: List unsubscribed email contacts
 - **get_whatsapp_messages**: Retrieve WhatsApp messages
+- **sync_whatsapp**: Synchronize WhatsApp messages (Required before retrieval)
+- **update_gateway_mobile**: Update mobile label in SMS Gateway
 - **list_gateway_mobiles**: Manage mobiles connected to your SMS Gateway
 - **list_incoming_calls**: List incoming calls
 - **list_missed_calls**: List missed calls
@@ -51,15 +51,15 @@ Connect your **Smsmobile** account to any AI agent and turn your smartphone into
 - **list_sms_conversations**: Retrieve grouped conversations (incoming and outgoing)
 - **mark_sms_read**: Mark a received SMS as read in the API status
 - **resend_sms**: Resend a previously unsent SMS (must be in error status)
-- **resend_whatsapp**: Resend a WhatsApp message
-- **send_email**: Send an email
 - **send_notification**: Create a push notification for a target mobile device
 - **send_sms**: Send an SMS from your mobile phone
 - **send_whatsapp**: Send a WhatsApp message
 - **set_whatsapp_active**: Activate or deactivate WhatsApp feature
-- **sync_whatsapp**: Synchronize WhatsApp messages (Required before retrieval)
-- **update_gateway_mobile**: Update mobile label in SMS Gateway
 - **update_sms_alias**: Update the alias of a received SMS
+- **check_whatsapp_number**: Check if a number is registered on WhatsApp
+- **get_emails**: Retrieve emails
+- **resend_whatsapp**: Resend a WhatsApp message
+- **send_email**: Send an email
 
 
 ## 💬 Prompt Examples

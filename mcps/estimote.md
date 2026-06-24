@@ -40,6 +40,9 @@ Connect your **Estimote Cloud** account to any AI agent and take full control of
 - **assign_tag_to_beacon**: If the tag does not exist, it is created automatically. A device can have multiple tags. Use to organize beacons by floor, zone, store section, or campaign. Tags persist in the cloud and do not require physical beacon access.
 
 Assign an organizational tag to a specific Estimote beacon device, adding it to a logical group for fleet management, analytics filtering, and proximity campaign targeting
+- **update_beacon_settings**: Changes are queued in the cloud shadow and synchronized to the physical beacon when a device running the Estimote SDK connects to it. Common updates include name, tags, broadcasting power (dBm), and advertising interval (ms).
+
+Update the configuration of a specific Estimote beacon device by modifying its broadcasting parameters, advertising interval, transmission power, or attached metadata tags through the Estimote Cloud shadow system
 - **create_physical_location**: After creating a location, assign beacon devices to it for organized fleet management and location-scoped analytics. Use when deploying beacons at a new site.
 
 Register a new physical location (store, office, venue) in Estimote Cloud, providing the site name, street address, and geographic coordinates for beacon fleet organization and analytics grouping
@@ -64,9 +67,6 @@ List all physical locations (venues/buildings/stores) registered in your Estimot
 - **list_fleet_tags**: Returns an array of tag objects with names and associated device counts. Tags are the primary organizational mechanism in Estimote Cloud. Use to understand your current fleet taxonomy before assigning or filtering devices.
 
 List all organizational tags defined in your Estimote Cloud account, which are used to group and categorize beacon devices by location, use case, department, or any custom classification scheme
-- **update_beacon_settings**: Changes are queued in the cloud shadow and synchronized to the physical beacon when a device running the Estimote SDK connects to it. Common updates include name, tags, broadcasting power (dBm), and advertising interval (ms).
-
-Update the configuration of a specific Estimote beacon device by modifying its broadcasting parameters, advertising interval, transmission power, or attached metadata tags through the Estimote Cloud shadow system
 
 
 ## 💬 Prompt Examples

@@ -37,6 +37,9 @@ No more switching to the Resend dashboard to check delivery status or add a new 
 
 
 ## Available Tools (14)
+- **verify_domain**: Use this after adding or updating SPF/DKIM records in your DNS provider. Returns the updated domain status.
+
+Verify a domain's DNS records
 - **cancel_email**: The email must be in "scheduled" status. Provide the email ID.
 
 Cancel a scheduled email
@@ -76,9 +79,6 @@ Send an email via Resend
 - **update_email**: The email must be in "scheduled" status. Provide the email ID and the new scheduled_at timestamp (ISO 8601).
 
 Update a scheduled email
-- **verify_domain**: Use this after adding or updating SPF/DKIM records in your DNS provider. Returns the updated domain status.
-
-Verify a domain's DNS records
 
 
 ## 💬 Prompt Examples

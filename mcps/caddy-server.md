@@ -35,12 +35,12 @@ Connect your **Caddy Server** instance to any AI agent and automate your web inf
 
 
 ## Available Tools (13)
-- **adapt_config**: Adapts a configuration (e.g., Caddyfile) to JSON without running it
 - **append_config**: and target is array, expands payload array and appends elements.
 
 Sets or replaces an object; appends to an array in Caddy config
 - **delete_config**: Deletes the value at the named path in Caddy config
 - **get_config_by_id**: Access a configuration object directly via its @id field
+- **adapt_config**: Adapts a configuration (e.g., Caddyfile) to JSON without running it
 - **get_config**: Leave empty for full config.
 
 Exports the configuration at the specified path as JSON

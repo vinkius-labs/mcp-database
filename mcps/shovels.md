@@ -36,13 +36,13 @@ Empower your AI agent to access the most comprehensive database of construction 
 
 
 ## Available Tools (7)
-- **get_contractor_activity**: Find contractors active at an address
 - **get_contractor_by_license**: Find contractor by license ID
-- **get_contractor**: Get contractor details
 - **get_permit_stats**: Get permit activity statistics
 - **get_permit**: Get permit details
 - **search_contractors**: Search for licensed contractors
+- **get_contractor**: Get contractor details
 - **search_permits**: Search for building permits
+- **get_contractor_activity**: Find contractors active at an address
 
 
 ## 💬 Prompt Examples
