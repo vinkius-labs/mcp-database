@@ -43,6 +43,7 @@ No more manual timesheet entries or missing project budget gaps. Your AI acts as
 - **get_timeghost_entry**: Get a specific time entry
 - **list_timeghost_projects**: List projects
 - **check_timeghost_status**: Check API Status
+- **list_timeghost_workspaces**: List workspaces
 - **list_timeghost_tasks**: Filter by project ID to isolate specific technical pipelines.
 
 List tasks
@@ -50,7 +51,6 @@ List tasks
 
 List time entries
 - **list_timeghost_members**: List workspace members
-- **list_timeghost_workspaces**: List workspaces
 
 
 ## 💬 Prompt Examples

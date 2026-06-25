@@ -196,6 +196,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Critical Thinking Prover](../mcps/critical-thinking-prover.md) | AI agents accept premises without questioning, analyze from one perspective, cherry-pick evidence, ignore consequences, and present uncertainty as certainty. This tool forces rigor: surface assumptions, apply competing frameworks, weigh counterevidence, trace ripple effects, bound confidence. |
 | [Cron Expression Calculator](../mcps/cron-expression-calculator.md) | Calculate the exact future dates of any Cron expression using deterministic JavaScript. Stop LLMs from failing date mathematics and leap year edge cases. |
 | [Cronofy](../mcps/cronofy.md) | Automate scheduling via Cronofy — unify Google, iCloud, and Exchange calendars to manage events and track multi-user availability directly from any AI agent. |
+| [Crop Yield Calculator](../mcps/crop-yield-calculator.md) | Calculate crop productivity in kg/ha and bags/ha using field metrics. |
 | [CUFinder](../mcps/cufinder.md) | Discover verified B2B contact data including emails, phone numbers, and company info for targeted sales prospecting. |
 | [Culture Amp](../mcps/culture-amp.md) | Equip your AI agent to manage employee engagement surveys, monitor performance, and track development via the Culture Amp API. |
 | [Custify](../mcps/custify-alternative.md) | Predict and prevent customer churn with health scores, lifecycle tracking, and automated playbooks for your CS team. |
@@ -627,6 +628,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [SemVer Version Manager](../mcps/semver-version-manager.md) | Stop LLMs from guessing software versions. Deterministically evaluate semantic version bounds, compatibilities, and sort releases perfectly. |
 | [Sensors Data](../mcps/sensors-data.md) | Orchestrate Sensors Data analytics — manage events, query user profiles, and monitor data ingestion directly from any AI agent. |
 | [SEO Authority Prover](../mcps/seo-authority-prover.md) | AI agents generate SEO content that triggers SpamBrain, lacks E-E-A-T signals, breaks technical fundamentals, and is invisible to AI search. This tool validates against Google's 2026 algorithms, GEO for AI citation, and AEO for answer engines. Zero stuffing, maximum authority. |
+| [Set-List Planner](../mcps/set-list-planner.md) | Optimize your live performance with energy-driven song sequencing and musical transition analysis. |
 | [Severance Pay Calculator](../mcps/severance-pay-calculator.md) | Calculate precise employee termination payouts, including salary balances and statutory penalties. |
 | [ShadowBot](../mcps/shadowbot.md) | Orchestrate ShadowBot RPA — manage automation robots, handle execution tasks, and monitor bot performance directly from any AI agent. |
 | [Shansong Swift Delivery](../mcps/shansong-swift-delivery.md) | Bring Shansong's fast P2P Delivery Network into your LLM. Estimate logistics routing, dispatch riders, and track locations. |
@@ -643,6 +645,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [SnipForm](../mcps/snipform.md) | Connect your AI agents to SnipForm to manage form submissions, block spam, handle webhooks, and analyze conversion data. |
 | [Softinn](../mcps/softinn.md) | Orchestrate Softinn Hotel PMS — manage reservations, rooms, and guest folios directly from any AI agent. |
 | [Sonarr (TV)](../mcps/sonarr-tv.md) | Automate TV library management via Sonarr — list series, track episodes, and monitor download queues directly from any AI agent. |
+| [Song Structure Timer](../mcps/song-structure-timer.md) | Calculate musical timing, section durations, and full song timelines based on BPM and meter. |
 | [SoundCloud](../mcps/soundcloud.md) | Manage your SoundCloud account — audit tracks, playlists, and followers via AI. |
 | [Spec Prover](../mcps/spec-prover.md) | Catch broken formulas before they reach your codebase. Spec Prover forces AI agents to prove every specification works with real inputs — one trace exposes bugs that abstract review never finds. |
 | [Speechmatics](../mcps/speechmatics.md) | Automate speech-to-text and text-to-speech — transcribe audio files, generate natural voices, and manage transcription jobs directly. |

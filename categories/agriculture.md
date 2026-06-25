@@ -6,9 +6,13 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 |-----------|-------------|
 | [Crop Rotation Planner](../mcps/crop-rotation-planner.md) | Generate optimized agricultural crop rotation sequences to improve soil health and maximize income. |
 | [Fertilizer Requirement Calculator](../mcps/fertilizer-requirement-calculator.md) | Calculate precise nutrient dosages and fertilizer costs based on soil analysis and regional standards. |
+| [Harvest Loss Calculator](../mcps/harvest-loss-calculator.md) | Quantify physical and financial grain losses during harvest. |
+| [Irrigation Water Requirement Calculator](../mcps/irrigation-water-requirement-calculator.md) | Calculate crop evapotranspiration, water deficit, and required irrigation depths. |
 | [Lime Requirement Calculator](../mcps/lime-requirement-calculator.md) | Calculate precise limestone dosage and total application costs using base saturation and SMP buffer methods. |
 | [Pesticide Dilution Calculator](../mcps/pesticide-dilution-calculator.md) | Calculate precise pesticide dilution, tank loads, and safety intervals. |
+| [Plant Population Calculator](../mcps/plant-population-calculator.md) | Calculate seed density and evaluate planting success against industry standards. |
 | [Planting Window Calculator](../mcps/planting-window-calculator.md) | Determine optimal planting windows, insurance deadlines, and climate risks for crops. |
+| [Productivity Gap Analyzer](../mcps/productivity-gap-analyzer.md) | Identify agricultural yield gaps and potential revenue increases. |
 | [Seed Treatment Calculator](../mcps/seed-treatment-calculator.md) | Calculate precise quantities, application sequences, and costs for seed treatment batches. |
 | [Soil Correction Planner](../mcps/soil-correction-planner.md) | Plan a 3-year soil amendment program for lime, gypsum, and micronutrients. |
 
