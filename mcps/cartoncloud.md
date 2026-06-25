@@ -36,14 +36,30 @@ Connect your **CartonCloud** account to any AI agent and orchestrate your WMS (W
 
 
 ## Available Tools (8)
-- **get_sale_order_details**: Get details for a specific sale order
-- **get_product_stock**: Get current stock levels for a specific product
-- **list_consignments**: List transport consignments
-- **list_logistics_customers**: List customers associated with the tenant
-- **list_logistics_invoices**: List generated invoices for logistics services
-- **list_warehouse_products**: List warehouse products and master data
-- **list_purchase_orders**: List inbound purchase orders
-- **list_sale_orders**: List outbound sale orders
+- **search_warehouse_products**: Returns product IDs, names, SKUs, and unit-of-measure metadata.
+
+Search warehouse products and master data
+- **get_consignment**: Get details for a specific transport consignment
+- **get_customer**: Get details for a specific customer
+- **get_inbound_order**: Get details for a specific inbound order (purchase order)
+- **get_outbound_order**: Returns full order details including items, references, and delivery info.
+
+Get details for a specific outbound order (sale order)
+- **get_warehouse_product**: Get details for a specific warehouse product
+- **get_account_info**: Get the authenticated user account information
+- **list_customers**: Returns customer name and UUID.
+
+List all customers associated with the tenant
+- **list_transport_products**: List transport products available for consignments
+- **search_consignments**: Returns consignment IDs, statuses, and delivery run info.
+
+Search transport consignments in CartonCloud
+- **search_inbound_orders**: Returns order ID, status, customer, warehouse, and arrival date.
+
+Search inbound orders (purchase orders) in CartonCloud
+- **search_outbound_orders**: Returns order ID, status, customer, warehouse, and timestamps.
+
+Search outbound orders (sale orders) in CartonCloud
 
 
 ## 💬 Prompt Examples
@@ -75,14 +91,14 @@ Here are some examples of how you can interact with the **CartonCloud** MCP serv
 
 ## ❓ FAQ
 
-**Q: Can I check stock levels for a specific SKU?**
-Yes! Use the `get_product_stock` tool with the product's unique ID. The agent will return the current available quantities across your warehouses.
+**Q: How do I search for warehouse products?**
+Use the `search_warehouse_products` tool. The agent will query your CartonCloud tenant and return a list of products with their SKU, name, and unit-of-measure metadata.
 
-**Q: How do I see all pending sale orders?**
-Use the `list_sale_orders` tool. Your agent will fetch the list of outbound orders along with their current status and customer information.
+**Q: How do I see all my outbound orders?**
+Use the `search_outbound_orders` tool. Your agent will search your outbound orders and return their status, customer, and warehouse details.
 
 **Q: Which regions does this integration support?**
-It supports all CartonCloud regions. You just need to specify your region subdomain (e.g., `api-au` for Australia, `api-us` for United States) during setup.
+It supports all CartonCloud regions. Use `api.cartoncloud.com` for Global/APAC or `api.na.cartoncloud.com` for North America during setup.
 
 
 ## Installation & Usage

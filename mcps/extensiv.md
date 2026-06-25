@@ -38,36 +38,36 @@ Connect your **Extensiv** (formerly Skubana) account to any AI agent and take fu
 
 
 ## Available Tools (10)
-- **list_orders**: 1/orders with pagination. Returns orders with order number, status, channel, shipping address, line items, and fulfillment tracking. Pass limit to control page size (default 100).
+- **list_ship_methods**: Returns all shipping method codes accepted by the warehouse management system.
 
-List Extensiv/Skubana orders
-- **list_products**: 1/products with pagination. Returns product master data including SKU, name, dimensions, weight, cost, and linked vendor information.
+List available WMS shipping methods
+- **list_alerts**: Returns all outstanding active alerts for the merchant, such as sync errors, failed orders, or inventory discrepancies.
 
-List Extensiv products
-- **list_inventory**: 1/inventory with pagination. Returns current stock levels by warehouse and product, including available, committed, on-order, and in-transit quantities.
+List active merchant alerts
+- **list_orders**: Returns all merchant orders matching the given status. Valid statuses: new, at_wms, shipped, cancelled, error, all.
 
-List Extensiv inventory levels
-- **list_warehouses**: 1/warehouses. Returns all configured 3PL and in-house warehouses with name, address, type, and capability settings. No parameters required.
+List Extensiv orders by status
+- **get_order**: Returns full order details including line items, addresses, and fulfillment status for the specified customer reference ID.
 
-List Extensiv warehouses
-- **list_pos**: 1/purchaseorders with pagination. Returns PO number, vendor, expected date, line items with SKU and quantity, and receiving status.
+Get a specific order by customer reference
+- **get_order_status**: Returns shipment tracking information including carrier, tracking number, and delivery status for the specified order.
 
-List Extensiv purchase orders
-- **list_vendors**: 1/vendors. Returns all configured vendors with name, contact details, lead time, currency, and payment terms. No parameters required.
+Get tracking and shipping status for an order
+- **list_inventory**: Returns current stock levels from the WMS for all products across all configured warehouses.
 
-List Extensiv vendors/suppliers
-- **list_shipments**: 1/shipments with pagination. Returns shipment tracking details including carrier, tracking number, ship date, delivery status, and linked order references.
+List all inventory levels from warehouses
+- **get_product_inventory**: Returns stock levels for the specified product SKU across all warehouses.
 
-List Extensiv shipments
-- **list_rmas**: 1/rmas with pagination. Returns return merchandise authorizations with reason code, status, linked order, refund amount, and items being returned.
+Get inventory levels for a specific SKU
+- **get_product**: Returns master product data and any configured SKU aliases for the specified product.
 
-List Extensiv returns (RMAs)
-- **list_brands**: 1/brands. Returns all product brands configured in the system with brand name and description. No parameters required.
+Get product details and aliases by SKU
+- **list_warehouses**: Returns all warehouses set up in Integration Manager with their configurations.
 
-List Extensiv brands
-- **list_customers**: 1/customers with pagination. Returns customer profiles with name, email, phone, shipping address, and order history summary.
+List all configured warehouses
+- **list_carts**: Returns all shopping carts and integrations configured for this merchant, including connection status and settings.
 
-List Extensiv customers
+List connected shopping cart integrations
 
 
 ## 💬 Prompt Examples
