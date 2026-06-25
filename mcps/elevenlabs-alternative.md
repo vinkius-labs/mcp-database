@@ -36,18 +36,18 @@ No more manual copy-pasting into the web editor or complex history searching. Yo
 
 
 ## Available Tools (12)
-- **delete_history_item**: Delete audio record
 - **delete_voice**: Delete a cloned voice
 - **get_download_link**: Get audio download URL
+- **get_account_info**: Get user profile
 - **get_history_item**: Get history item details
 - **get_subscription_info**: Get usage and plan info
-- **get_account_info**: Get user profile
 - **get_voice_settings**: Get voice fine-tuning
 - **get_voice**: Get voice details
 - **list_audio_history**: List generated audio logs
 - **list_models**: List AI audio models
 - **list_voices**: List all available voices
 - **text_to_speech**: Convert text to audio
+- **delete_history_item**: Delete audio record
 
 
 ## 💬 Prompt Examples

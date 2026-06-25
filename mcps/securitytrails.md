@@ -38,13 +38,13 @@ Connect your **SecurityTrails** account to any AI agent and empower your OSINT, 
 
 ## Available Tools (10)
 - **get_api_usage**: Check current SecurityTrails API quota usage
+- **get_domain_tags**: Get classification tags for a domain
 - **get_associated_domains**: Great for expanding the scope of an investigation.
 
 Find other domains associated with a target domain
 - **get_dns_history**: Useful for finding old IPs that might still be hosting vulnerable software, or tracking infrastructure migration over time.
 
 Retrieve historical DNS records for a domain
-- **get_domain_tags**: Get classification tags for a domain
 - **get_domains_by_ip**: Essential for understanding shared hosting environments or identifying hidden vhosts.
 
 Find all domains pointed to a specific IP address

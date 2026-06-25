@@ -28,6 +28,7 @@ Explore the open database of **friends-mcp** Model Context Protocol (MCP) server
 | [MLflow (ML Lifecycle Management)](../mcps/mlflow-ml-lifecycle-management.md) | Manage ML lifecycle via MLflow — track training runs, monitor metrics, and audit the model registry. |
 | [Nango (Unified API & Integration Platform)](../mcps/nango-unified-api-integration-platform.md) | Manage product integrations via Nango — audit OAuth connections, track data syncs, and explore unified records. |
 | [R2R](../mcps/r2r.md) | Equip your AI with direct access to your R2R engine — execute vector searches, run precise RAG queries, and manage your documents. |
+| [Relevance AI](../mcps/relevance-ai.md) | Automate autonomous AI agents via Relevance AI — manage tools, trigger tasks, and monitor results directly. |
 | [Runlayer](../mcps/runlayer.md) | AI enterprise control plane: manage MCP servers, skills, agents, and security policies via agents. |
 | [Smithery](../mcps/smithery.md) | AI MCP registry: discover, search, and connect MCP servers to your agents via Smithery. |
 | [Zapier Smart Home](../mcps/zapier-smart-home.md) | Control smart home devices via natural language through Zapier NLA API — access 5000+ app integrations for home automation. |

@@ -33,11 +33,8 @@ Connect your **Mealie** instance to any AI agent and take full control of your k
 
 
 ## Available Tools (13)
-- **create_meal_plan**: Create a new meal plan entry
-- **create_recipe**: Create a new recipe
-- **create_shopping_list**: Create a new shopping list
-- **delete_meal_plan**: Delete a meal plan entry
 - **delete_recipe**: Remove a recipe
+- **update_recipe**: Update an existing recipe
 - **get_recipe**: Retrieve a specific recipe by its slug
 - **list_categories**: List all categories
 - **list_meal_plans**: Retrieve current meal plans
@@ -45,7 +42,10 @@ Connect your **Mealie** instance to any AI agent and take full control of your k
 - **list_shopping_lists**: List all shopping lists
 - **list_tags**: List all tags
 - **toggle_shopping_list_item**: Toggle shopping list item completion
-- **update_recipe**: Update an existing recipe
+- **create_meal_plan**: Create a new meal plan entry
+- **create_recipe**: Create a new recipe
+- **create_shopping_list**: Create a new shopping list
+- **delete_meal_plan**: Delete a meal plan entry
 
 
 ## 💬 Prompt Examples

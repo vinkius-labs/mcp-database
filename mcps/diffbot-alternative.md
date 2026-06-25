@@ -35,7 +35,7 @@ No more manual copy-pasting or complex web scraping scripts. Your AI acts as you
 - **Growth Marketers** — automate lead enrichment and competitive analysis through simple AI queries
 
 
-## Available Tools (12)
+## Available Tools (11)
 - **analyze_page_type**: Auto-detect page type
 - **enhance_company_profile**: Enrich company data
 - **enhance_person_profile**: Enrich person data
@@ -44,12 +44,11 @@ No more manual copy-pasting or complex web scraping scripts. Your AI acts as you
 - **extract_images**: Identify primary images
 - **extract_product_data**: Extract e-commerce info
 - **extract_video_metadata**: Identify embedded videos
-- **get_api_status**: Check connection
-- **list_active_crawls**: Check crawl status
 - **search_knowledge_graph**: g. type:Organization industries:"AI").
 
 Query world entities
-- **test_diffbot_auth**: Verify credentials
+- **verify_api_credentials**: Verify your Diffbot API credentials
+- **list_active_crawls**: Check crawl status
 
 
 ## 💬 Prompt Examples

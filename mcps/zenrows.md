@@ -39,15 +39,12 @@ No more manual proxy rotation or CAPTCHA solving. Your AI agent becomes your web
 
 
 ## Available Tools (10)
-- **scrape_geo**: g. "us", "gb") for localized content.
+- **scrape_markdown**: Automatically removes boilerplate like navigation and ads.
 
-Scrape using a proxy from a specific country
-- **scrape_custom**: g. wait, css_extractor, session_id).
+Scrape and convert page content to clean Markdown
+- **scrape_wait**: g. "#results") to wait for before capturing the HTML.
 
-Execute a scrape using advanced custom parameters
-- **scrape_html**: ZenRows automatically rotates proxies and handles CAPTCHAs.
-
-Scrape raw HTML using ZenRows anti-bot proxy pool
+Scrape with JS render waiting for a specific CSS selector
 - **scrape_js**: Enables js_render=true. Slower and more expensive than static scraping.
 
 Scrape JS-rendered HTML using ZenRows headless browser
@@ -57,14 +54,17 @@ Scrape with full anti-bot bypass for heavily protected sites
 - **scrape_premium**: Sets premium_proxy=true for higher anonymity.
 
 Scrape using ZenRows premium residential proxies
+- **scrape_html**: ZenRows automatically rotates proxies and handles CAPTCHAs.
+
+Scrape raw HTML using ZenRows anti-bot proxy pool
 - **scrape_autoparse**: Scrape with automatic structured data extraction
 - **get_screenshot**: Generates a URL that returns a screenshot of the target page
-- **scrape_markdown**: Automatically removes boilerplate like navigation and ads.
+- **scrape_geo**: g. "us", "gb") for localized content.
 
-Scrape and convert page content to clean Markdown
-- **scrape_wait**: g. "#results") to wait for before capturing the HTML.
+Scrape using a proxy from a specific country
+- **scrape_custom**: g. wait, css_extractor, session_id).
 
-Scrape with JS render waiting for a specific CSS selector
+Execute a scrape using advanced custom parameters
 
 
 ## 💬 Prompt Examples

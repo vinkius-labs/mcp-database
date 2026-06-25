@@ -23,7 +23,6 @@ Explore the open database of **superpower** Model Context Protocol (MCP) servers
 | [Modal (Serverless AI Infrastructure)](../mcps/modal-serverless-ai-infrastructure.md) | Manage serverless compute via Modal — audit active apps, track GPU deployments, and monitor network volumes. |
 | [OpenAI](../mcps/openai.md) | Use GPT-4o, DALL-E 3, embeddings, fine-tuning, and moderation as tools inside your AI agent workflows. |
 | [Paperspace](../mcps/paperspace.md) | Provision and track powerful GPU workloads via Paperspace — list compute instances, fetch active deployments, trace team projects, and query Gradient environments via AI. |
-| [Relevance AI](../mcps/relevance-ai.md) | Equip your AI to trigger custom autonomous agents, execute chained prompts, and manage unstructured knowledge datasets directly within your Relevance AI studio. |
 | [Replicate](../mcps/replicate.md) | Equip your AI to dynamically search, run, and monitor thousands of open-source machine learning models hosted on Replicate via simple text commands. |
 | [Retool](../mcps/retool.md) | Connect your AI assistant to Retool to inspect applications, audit users, review connected resources, and monitor workflows directly from chat. |
 | [RunPod](../mcps/runpod.md) | Integrate your AI securely to RunPod to cleanly quickly provision scalable GPU pods, manage active instances, and inspect serverless endpoints and custom templates natively. |

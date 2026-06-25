@@ -14,11 +14,11 @@ This MCP server provides a specialized toolkit for evaluating the health of SaaS
 
 
 ## Available Tools (5)
-- **calculate_arr_per_employee**: Calculate ARR per Employee
 - **compare_to_benchmarks**: Compare metrics to public company benchmarks
+- **calculate_revenue_per_sales_marketing**: Calculate Revenue per Sales & Marketing Employee
 - **calculate_gaa_leverage**: Calculate G&A Leverage
 - **calculate_rd_intensity**: Calculate R&D Intensity
-- **calculate_revenue_per_sales_marketing**: Calculate Revenue per Sales & Marketing Employee
+- **calculate_arr_per_employee**: Calculate ARR per Employee
 
 
 ## 💬 Prompt Examples

@@ -39,6 +39,9 @@ Connect to the **Chess.com** public API and explore the entire chess ecosystem t
 
 
 ## Available Tools (15)
+- **get_daily_puzzle**: com daily puzzle including the puzzle position (FEN), the sequence of moves for the solution, the puzzle rating, and the associated game metadata (players, result, opening). Use this tool to get a tactical puzzle to solve, practice chess tactics, or study interesting positions from real games. The puzzle changes once per day.
+
+Get the Chess.com daily puzzle
 - **get_club_info**: com club by its URL identifier. Returns the club name, description, creation date, last activity date, visibility status, admin information, and total member count. Use this tool to learn about a club before joining, verify club existence, or gather metadata about chess communities.
 
 Get information about a Chess.com club
@@ -48,9 +51,6 @@ Get weekly active members of a Chess.com club
 - **get_country_players**: com players who have registered with a specific country. Takes an ISO 3166-1 country code (e.g., "US" for United States, "BR" for Brazil, "IN" for India, "RU" for Russia, "NO" for Norway). Returns an array of player usernames affiliated with that country. Use this tool to discover players from a specific nation, find local opponents, or research the chess scene in different countries.
 
 Get Chess.com players from a specific country
-- **get_daily_puzzle**: com daily puzzle including the puzzle position (FEN), the sequence of moves for the solution, the puzzle rating, and the associated game metadata (players, result, opening). Use this tool to get a tactical puzzle to solve, practice chess tactics, or study interesting positions from real games. The puzzle changes once per day.
-
-Get the Chess.com daily puzzle
 - **get_leaderboards**: com leaderboards showing the highest-rated players across different game categories. Returns top players for daily chess (correspondence), blitz, bullet, and rapid time controls, plus puzzle rush leaders. Each entry includes username, current rating, and profile URL. Use this tool to identify the strongest active players on Chess.com, track rating leaders, or find grandmaster accounts to study.
 
 Get Chess.com leaderboards for top players

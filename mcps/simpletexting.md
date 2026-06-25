@@ -36,18 +36,18 @@ No more manual typing or list exporting. Your AI acts as a dedicated marketing m
 
 
 ## Available Tools (12)
-- **create_subscriber**: Add new contact
 - **remove_subscriber**: Delete contact
+- **list_audience_segments**: List dynamic segments
+- **list_active_webhooks**: Get event configs
+- **send_sms_message**: Send text message
+- **update_subscriber_info**: Modify contact data
 - **get_api_status**: Check connection
 - **get_subscriber_details**: Get contact info
 - **list_subscribers**: List SMS contacts
 - **list_chat_conversations**: Get message history
 - **list_contact_lists**: List static groups
-- **list_audience_segments**: List dynamic segments
-- **list_active_webhooks**: Get event configs
+- **create_subscriber**: Add new contact
 - **schedule_sms_delivery**: Schedule future SMS
-- **send_sms_message**: Send text message
-- **update_subscriber_info**: Modify contact data
 
 
 ## 💬 Prompt Examples

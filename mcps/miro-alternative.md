@@ -34,14 +34,14 @@ Connect your **Miro** account to any AI agent and simplify your visual collabora
 
 
 ## Available Tools (8)
+- **list_board_members**: List board collaborators
+- **list_organizations**: List linked organizations
 - **create_board**: Create a new Miro board
 - **create_sticky_note**: Add a sticky note to a board
 - **delete_board**: Delete a Miro board
 - **get_board_details**: Get details for a specific board
 - **list_boards**: List Miro boards
 - **list_board_items**: List all items on a board
-- **list_board_members**: List board collaborators
-- **list_organizations**: List linked organizations
 
 
 ## 💬 Prompt Examples

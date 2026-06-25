@@ -41,13 +41,13 @@ Connect your **Motion** account to any AI agent and take full control of your AI
 List all tasks in a Motion workspace filtering by current lifecycle status
 - **get_task**: Retrieve full details of a specific Motion task by ID
 - **create_task**: Create a new task in Motion that will be auto-scheduled by AI
+- **get_schedule**: Get the AI-optimized timeline schedule for a workspace
 - **update_task**: Update configuration parameters of an existing Motion task
 - **delete_task**: Delete a Motion task permanently destroying associated calendar blocks
 - **move_task**: Move a specific Motion task assigning a different workspace target
 - **list_projects**: List all projects in a Motion workspace. Projects are containers that group related tasks together
 - **create_project**: Create a new static project in a Motion workspace
 - **list_workspaces**: List all workspaces the authenticated Motion user has access to
-- **get_schedule**: Get the AI-optimized timeline schedule for a workspace
 
 
 ## 💬 Prompt Examples

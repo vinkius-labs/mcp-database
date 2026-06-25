@@ -38,6 +38,8 @@ No more manual testing in the Flowise UI for every prediction. Your AI acts as y
 ## Available Tools (12)
 - **get_chatflow_details**: Get details for a specific chatflow
 - **get_server_version**: Get Flowise server version
+- **execute_chatflow_prediction**: Trigger an LLM flow prediction
+- **upsert_vector_data**: Push data into a vector store
 - **list_ai_assistants**: List OpenAI-style assistants
 - **list_chatflows**: List all LLM orchestration flows
 - **list_flowise_credentials**: List configured credentials
@@ -46,8 +48,6 @@ No more manual testing in the Flowise UI for every prediction. Your AI acts as y
 - **list_marketplace_templates**: List chatflow templates
 - **list_external_tools**: List custom tools
 - **list_flow_variables**: List global variables
-- **execute_chatflow_prediction**: Trigger an LLM flow prediction
-- **upsert_vector_data**: Push data into a vector store
 
 
 ## 💬 Prompt Examples

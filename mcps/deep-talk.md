@@ -33,13 +33,13 @@ Integrate **Deep Talk**, the powerful conversation analysis platform, directly i
 
 
 ## Available Tools (5)
+- **get_pipeline_details**: Get configuration details for a specific pipeline
+- **list_batch_predictions**: List all batch prediction jobs and their statuses
+- **list_pipelines**: List all NLP analysis pipelines in your Deep Talk account
 - **create_batch_prediction**: Requires the dataset ID, pipeline name, and the column containing the text to analyze.
 
 Start a batch prediction job on a dataset
 - **get_batch_prediction**: Get the status and results of a specific batch prediction
-- **get_pipeline_details**: Get configuration details for a specific pipeline
-- **list_batch_predictions**: List all batch prediction jobs and their statuses
-- **list_pipelines**: List all NLP analysis pipelines in your Deep Talk account
 
 
 ## 💬 Prompt Examples

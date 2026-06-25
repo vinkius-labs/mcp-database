@@ -39,10 +39,10 @@ Empower your AI agent to orchestrate your cloud infrastructure and supply chain 
 - **get_billing_summary**: Get billing overview
 - **get_vm_detail**: Get VM metadata
 - **list_cicd_pipelines**: List DevOps pipelines
-- **list_cloud_disks**: List block storage disks
 - **list_oss_buckets**: List storage buckets
 - **list_vm_instances**: List virtual machines
 - **list_vpc_networks**: List VPC networks
+- **list_cloud_disks**: List block storage disks
 
 
 ## 💬 Prompt Examples

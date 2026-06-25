@@ -34,16 +34,16 @@ Connect your **Beekeeper** account to any AI agent and streamline your internal 
 
 
 ## Available Tools (10)
+- **list_posts**: List posts in a specific stream
 - **create_post**: Create a new post in a stream
+- **send_message**: Send a direct message to a user
 - **get_tenant_info**: Retrieve Beekeeper tenant information
 - **get_user**: Get details of a specific user
 - **list_groups**: List Beekeeper groups
 - **list_messages**: List messages in a conversation
-- **list_posts**: List posts in a specific stream
 - **list_streams**: List Beekeeper streams (channels)
 - **list_users**: List all Beekeeper users
 - **search_users**: Search for users by name or email
-- **send_message**: Send a direct message to a user
 
 
 ## 💬 Prompt Examples

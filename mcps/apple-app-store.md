@@ -30,14 +30,14 @@ The **Apple App Store MCP Server** provides a direct natural language interface 
 
 ## Available Tools (8)
 - **get_account_check**: Verify App Store Connect account connection
-- **get_app_info**: Get details for a specific app
-- **get_app_store_versions**: List all App Store versions for an app
 - **get_sales_reports**: frequency can be DAILY, WEEKLY, MONTHLY, or YEARLY.
 
 Download sales and trends reports
 - **list_apps**: List all apps in your App Store Connect account
 - **list_builds**: List all builds for an app
 - **list_customer_reviews**: List customer reviews for an app
+- **get_app_info**: Get details for a specific app
+- **get_app_store_versions**: List all App Store versions for an app
 - **list_prerelease_versions**: List prerelease (TestFlight) versions
 
 

@@ -34,23 +34,23 @@ Connect **Eden AI** to your AI agent and unlock the power of over 100 leading AI
 
 
 ## Available Tools (13)
-- **check_credits**: Check current Eden AI credit balance
-- **list_files**: List all files uploaded to Eden AI
 - **chat_completions**: Use @edenai for smart routing or specify provider/model.
 
 Create a chat completion using Eden AI LLM routing
-- **create_custom_token**: Create a custom API token with specific constraints
 - **create_embedding**: Convert text into numerical vectors
 - **create_stateful_response**: Create a stateful chat response that stores history server-side
 - **delete_files**: Delete files from Eden AI storage
 - **get_async_job**: Get the status and results of an asynchronous Universal AI job
-- **list_embedding_models**: List available embedding models
 - **monitor_consumption**: Monitor API consumption and costs
 - **universal_ai_async**: Start an asynchronous expert model job (e.g., Speech-to-Text)
 - **universal_ai_sync**: Model format: feature/subfeature/provider[/model]
 
 Execute synchronous expert models (OCR, Translation, Image Gen)
 - **upload_file**: Upload a file to Eden AI persistent storage
+- **check_credits**: Check current Eden AI credit balance
+- **list_files**: List all files uploaded to Eden AI
+- **create_custom_token**: Create a custom API token with specific constraints
+- **list_embedding_models**: List available embedding models
 
 
 ## 💬 Prompt Examples

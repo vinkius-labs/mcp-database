@@ -21,15 +21,15 @@ Real-time sensor data from thousands of NWS stations.
 
 
 ## Available Tools (5)
+- **get_observation_history**: Useful for seeing temperature trends, wind changes, and weather evolution over recent hours.
+
+Get recent observation history for a NWS station
 - **get_stations**: Each station has a 4-character ID (e.g., KJFK, KLAX). US only. Use station IDs with get_latest_observation.
 
 Find nearby NWS weather observation stations by latitude/longitude
 - **get_latest_observation**: Provide a 4-character station ID such as KJFK, KLAX, KORD, KDFW.
 
 Get current weather conditions from a specific NWS station
-- **get_observation_history**: Useful for seeing temperature trends, wind changes, and weather evolution over recent hours.
-
-Get recent observation history for a NWS station
 - **get_station_metadata**: Useful for understanding where a station is and what data it provides.
 
 Get metadata about a specific NWS weather station

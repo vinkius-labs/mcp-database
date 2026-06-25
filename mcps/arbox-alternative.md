@@ -46,10 +46,10 @@ No more manual logging of walk-in leads or digging through complex session calen
 - **get_schedule**: Get schedule
 - **list_classes**: List classes
 - **list_clients**: List members
-- **list_leads**: List leads
 - **list_memberships**: List memberships
 - **list_tasks**: List tasks
 - **update_client**: Update a member
+- **list_leads**: List leads
 
 
 ## 💬 Prompt Examples

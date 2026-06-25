@@ -39,6 +39,12 @@ Retrieve settings and metadata for your Deck Commerce account
 - **get_sku_stock_level**: Provides a detailed breakdown of quantities at individual fulfillment nodes and identifies current inventory status.
 
 Get current stock level and status for a specific SKU
+- **list_processed_shipments**: Returns shipment metadata including carrier information, tracking numbers, and fulfillment timestamps.
+
+List all shipments processed by Deck Commerce
+- **search_orders_by_number**: Matches keywords against order numbers, customer names, and email addresses to isolate specific OMS records.
+
+Search for orders using an order number or customer info
 - **get_order_details**: Resolves line item details, shipping addresses, tax information, and the full order history trail.
 
 Get detailed information for a specific order
@@ -57,12 +63,6 @@ List all customer orders in your Deck Commerce OMS
 - **list_order_returns**: Returns a list of return requests including return reasons, RMA numbers, and current processing state.
 
 List all customer returns and their processing status
-- **list_processed_shipments**: Returns shipment metadata including carrier information, tracking numbers, and fulfillment timestamps.
-
-List all shipments processed by Deck Commerce
-- **search_orders_by_number**: Matches keywords against order numbers, customer names, and email addresses to isolate specific OMS records.
-
-Search for orders using an order number or customer info
 
 
 ## 💬 Prompt Examples
