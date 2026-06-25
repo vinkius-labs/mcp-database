@@ -34,16 +34,15 @@ Connect your **Capsulink** account to any AI agent and orchestrate your link sho
 - **Business Admins** — monitor link performance and account health using natural language.
 
 
-## Available Tools (9)
+## Available Tools (8)
 - **delete_link**: Delete a shortened link permanently
+- **list_link_folders**: List all folders used to organize links
 - **edit_link_destination**: Change the destination URL of an existing shortened link
-- **get_account_info**: Retrieve core account information
+- **shorten_url**: Shorten a long URL using Capsulink
 - **get_link_daily_stats**: Retrieve daily click breakdown for a specific link
 - **get_link_details**: Get basic details of a specific shortened link
 - **get_link_stats**: Retrieve total click statistics for a specific link
-- **list_link_folders**: List all folders used to organize links
 - **list_links**: List all shortened links in your account
-- **shorten_url**: Shorten a long URL using Capsulink
 
 
 ## 💬 Prompt Examples

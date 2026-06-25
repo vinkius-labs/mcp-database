@@ -37,6 +37,8 @@ No more manual navigation through the cloud console for routine checks. Your AI 
 ## Available Tools (38)
 - **list_certificates**: List all certificates
 - **create_certificate**: Create a new certificate
+- **get_storage_box**: Get details of a specific Storage Box
+- **list_images**: List all images
 - **create_firewall**: Create a new firewall
 - **create_floating_ip**: Create a new floating IP
 - **create_load_balancer**: Create a new load balancer
@@ -54,9 +56,6 @@ No more manual navigation through the cloud console for routine checks. Your AI 
 - **list_floating_ips**: List all floating IPs
 - **get_action**: Get details of a specific action
 - **get_server**: Get details of a specific server
-- **get_storage_box**: Get details of a specific Storage Box
-- **list_images**: List all images
-- **list_isos**: List all ISOs
 - **list_load_balancers**: List all load balancers
 - **list_locations**: List all locations
 - **list_networks**: List all networks
@@ -73,6 +72,7 @@ No more manual navigation through the cloud console for routine checks. Your AI 
 - **update_storage_box**: Update Storage Box settings (e.g., enable/disable protocols like SMB, WebDAV)
 - **list_volumes**: List all volumes
 - **list_zones**: List all DNS zones
+- **list_isos**: List all ISOs
 
 
 ## 💬 Prompt Examples

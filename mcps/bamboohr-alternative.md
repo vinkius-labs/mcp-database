@@ -35,9 +35,7 @@ Empower your AI agent to orchestrate your entire HR ecosystem with **BambooHR**,
 
 
 ## Available Tools (9)
-- **get_custom_report**: Requires a JSON list of fields.
-
-Generate a custom report
+- **list_meta_fields**: List available employee fields
 - **get_employee**: You can specify fields to retrieve.
 
 Get details for a specific employee
@@ -46,7 +44,6 @@ Get details for a specific employee
 Get data from an employee table
 - **list_employees**: List all employees in the company directory
 - **list_employee_files**: List files for an employee
-- **list_meta_fields**: List available employee fields
 - **list_meta_tables**: g., Job Info, Compensation) in BambooHR.
 
 List available data tables
@@ -54,6 +51,9 @@ List available data tables
 - **update_employee**: Note: BambooHR uses POST for updates.
 
 Update employee data
+- **get_custom_report**: Requires a JSON list of fields.
+
+Generate a custom report
 
 
 ## 💬 Prompt Examples

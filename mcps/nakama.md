@@ -35,6 +35,9 @@ Connect your **Nakama** server to any AI agent to manage your game's backend inf
 
 
 ## Available Tools (31)
+- **update_account**: Update current user account
+- **write_leaderboard_record**: Write a leaderboard record
+- **write_storage_objects**: Write storage objects
 - **add_friends**: Add friends or send invites
 - **add_group_members**: Add members to a group
 - **authenticate_device**: Authenticate using a device ID
@@ -56,15 +59,12 @@ Connect your **Nakama** server to any AI agent to manage your game's backend inf
 - **list_groups**: List groups
 - **list_leaderboard_records**: List leaderboard records
 - **list_storage_objects**: List storage objects
-- **list_tournaments**: List tournaments
 - **logout_session**: Logout a session
 - **promote_group_members**: Promote group members
 - **read_storage_objects**: Read storage objects
 - **refresh_session**: Refresh a session token
 - **rpc_call**: Call an RPC function
-- **update_account**: Update current user account
-- **write_leaderboard_record**: Write a leaderboard record
-- **write_storage_objects**: Write storage objects
+- **list_tournaments**: List tournaments
 - **write_tournament_record**: Write a tournament record
 
 

@@ -34,6 +34,7 @@ Connect to **Scrollscan** and bring real-time Scroll L2 blockchain data into you
 
 
 ## Available Tools (33)
+- **verify_source_code**: Verify Source Code
 - **check_verify_status**: Check Source Code Verification Status
 - **get_account_balance_multi**: Get Ether Balance for Multiple Addresses
 - **get_account_balance**: Get Ether Balance for a Single Address
@@ -66,7 +67,6 @@ Connect to **Scrollscan** and bring real-time Scroll L2 blockchain data into you
 - **proxy_get_storage_at**: eth_getStorageAt
 - **proxy_get_transaction_by_hash**: eth_getTransactionByHash
 - **proxy_get_transaction_receipt**: eth_getTransactionReceipt
-- **verify_source_code**: Verify Source Code
 
 
 ## 💬 Prompt Examples
