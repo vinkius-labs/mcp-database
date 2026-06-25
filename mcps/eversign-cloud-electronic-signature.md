@@ -34,12 +34,12 @@ Connect your **Eversign** account to any AI agent to streamline your document si
 
 
 ## Available Tools (2)
-- **create_document**: Can also be used to create reusable templates or generate documents from templates.
-
-Create a new document, create a template, or use an existing template
 - **list_businesses**: Use this to find the business_id required for document operations.
 
 List all businesses associated with your account
+- **create_document**: Can also be used to create reusable templates or generate documents from templates.
+
+Create a new document, create a template, or use an existing template
 
 
 ## 💬 Prompt Examples

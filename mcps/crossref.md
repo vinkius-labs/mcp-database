@@ -31,12 +31,12 @@ Give your AI agent direct access to the **world's largest registry of scholarly 
 
 
 ## Available Tools (3)
-- **get_crossref_doi**: g. 10.1038/nature12373) and get complete metadata: title, all authors, journal, year, type, citation count, and abstract.
-
-Look up any scholarly work by its DOI
 - **search_crossref_author**: Returns their publications sorted by relevance with citation counts.
 
 Find publications by a specific author
+- **get_crossref_doi**: g. 10.1038/nature12373) and get complete metadata: title, all authors, journal, year, type, citation count, and abstract.
+
+Look up any scholarly work by its DOI
 - **search_crossref**: Every result includes DOI, citation count, and full bibliographic data. The world's largest DOI registry.
 
 Search 140M+ scholarly works across all scientific disciplines

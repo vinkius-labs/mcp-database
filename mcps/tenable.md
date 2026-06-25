@@ -34,13 +34,12 @@ Connect your **Tenable** (Tenable.io) environment to any AI agent and bring your
 
 
 ## Available Tools (10)
+- **list_assets**: Lists host and cloud assets discovered in Tenable.io
 - **get_asset_details**: Retrieves detailed metadata, networking, and risk profile for a specific asset
-- **get_asset_vulnerabilities**: Retrieves explicit security findings (Workbench) for a specific asset
 - **get_scan_results**: Retrieves runtime analytics and vulnerability summaries for a specific scan
 - **launch_scan**: Returns the newly created scan run ID.
 
 Manually triggers an immediate execution of a configured scan
-- **list_assets**: Lists host and cloud assets discovered in Tenable.io
 - **list_scan_folders**: g. "My Scans", "PCI Quarters").
 
 Lists operational scan folders
@@ -50,6 +49,7 @@ Lists operational scan folders
 
 Lists organizational tags mapped to assets
 - **list_scanners**: Lists Nessus scanners managed by Tenable.io
+- **get_asset_vulnerabilities**: Retrieves explicit security findings (Workbench) for a specific asset
 
 
 ## 💬 Prompt Examples

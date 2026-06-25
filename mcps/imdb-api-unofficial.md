@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire cinematic research and media au
 
 
 ## Available Tools (4)
-- **check_api_status**: Check if the IMDB service is operational
 - **get_imdb_cast_details**: Get the full cast and crew list for a specific IMDB title
 - **get_imdb_movie_details**: g., tt1234567).
 
 Get full metadata and synopsis for a specific IMDB title by ID
 - **search_imdb_movies**: Search for movies and TV shows on IMDB
+- **check_api_status**: Check if the IMDB service is operational
 
 
 ## 💬 Prompt Examples

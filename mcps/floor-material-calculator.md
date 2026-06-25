@@ -14,9 +14,9 @@ This MCP server provides precise estimation tools for flooring projects. Use `ca
 
 
 ## Available Tools (3)
+- **calculate_gross_area**: Determines the total surface area that needs to be covered after accounting for cutting and waste
 - **calculate_tile_effective_area**: Calculates the actual coverage footprint of a single tile or plank, including its grout border
 - **calculate_box_count**: Determines the final number of full boxes required to cover the target area
-- **calculate_gross_area**: Determines the total surface area that needs to be covered after accounting for cutting and waste
 
 
 ## 💬 Prompt Examples

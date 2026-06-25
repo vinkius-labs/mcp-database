@@ -38,10 +38,10 @@ Connect your **DVC Studio** account to any AI agent and take full control of you
 ## Available Tools (6)
 - **list_views**: List views
 - **get_view**: Get view
+- **get_user**: Get user profile
 - **list_projects**: List projects
 - **get_project**: Get project
 - **list_experiments**: List experiments
-- **get_user**: Get user profile
 
 
 ## 💬 Prompt Examples

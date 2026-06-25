@@ -40,6 +40,9 @@ Your agent navigates the entire competition hierarchy — from country to league
 - **get_club_players**: Requires the numeric club ID.
 
 List all players currently registered to a specific club
+- **get_live_basketball**: Use this when the user asks about ongoing basketball games or live NBA/EuroLeague results.
+
+Get live basketball match scores happening right now
 - **get_club_profile**: Requires the numeric club ID obtained from search results.
 
 Get the full profile of a club by its ID
@@ -76,9 +79,6 @@ Get league table standings for a specific season of a competition
 - **list_countries**: The sport parameter should be a slug like "football", "basketball", "hockey", or "tennis". Use this as the starting point to navigate the competition hierarchy.
 
 List all countries available for a given sport
-- **get_live_basketball**: Use this when the user asks about ongoing basketball games or live NBA/EuroLeague results.
-
-Get live basketball match scores happening right now
 - **get_live_football**: Use this when the user asks about ongoing football games, current scores, or live results.
 
 Get live football (soccer) match scores happening right now
