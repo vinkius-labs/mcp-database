@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your digital agreement lifecycle with **eSi
 
 
 ## Available Tools (10)
+- **download_docs**: Download flow documents
 - **add_docs**: Add documents to flow
 - **add_signers**: Add signers to flow
 - **create_sign_flow**: Create a new sign flow
-- **download_docs**: Download flow documents
 - **get_execute_url**: Get signature URL
 - **get_org_info**: Get organization details
 - **get_sign_flow**: Get sign flow details

@@ -23,15 +23,15 @@ Connect your **Accelevents** account to your AI agent to unlock effortless event
 
 ## Available Tools (4)
 - **list_events**: Retrieve a list of all active, past, and upcoming events in Accelevents
-- **list_attendees**: Requires the event URL.
-
-Retrieve the participant list and ticket types for a specific Accelevents event
 - **list_sessions**: Requires the event URL.
 
 Retrieve the schedule and session details for an Accelevents event
 - **list_exhibitors**: Requires the event URL.
 
 Retrieve details on companies exhibiting at a specific Accelevents event
+- **list_attendees**: Requires the event URL.
+
+Retrieve the participant list and ticket types for a specific Accelevents event
 
 
 ## 💬 Prompt Examples
