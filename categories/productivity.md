@@ -473,6 +473,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Legal Reasoning Prover](../mcps/legal-reasoning-prover.md) | A legal memo cited cases that do not exist and confused jurisdiction. Legal Reasoning Prover forces IRAC-based arguments grounded in US law — real Bluebook citations, jurisdiction analysis, ABA-compliant counter-arguments, and specific remedies. |
 | [Legito](../mcps/legito.md) | Automate document lifecycle management via Legito — manage template suites, document records, and user permissions directly from any AI agent. |
 | [Leiga](../mcps/leiga.md) | Manage agile projects with AI-assisted sprint planning, task prioritization, and team workload balancing that adapts in real time. |
+| [Level Time Estimator](../mcps/level-time-estimator.md) | Estimate RPG progression time and identify gameplay efficiency bottlenecks. |
 | [LibreChat](../mcps/librechat.md) | Orchestrate your LibreChat instance — manage agents, list available models, and generate AI completions via the Agents and Open Responses APIs. |
 | [LiftedWork](../mcps/liftedwork.md) | Connect job seekers with employment opportunities through a platform that matches skills to openings and tracks applications. |
 | [LinkAce](../mcps/linkace.md) | Manage your bookmarks, tags, and collections via the LinkAce REST API. |
@@ -557,6 +558,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Pedagogical Assessment Prover](../mcps/pedagogical-assessment-prover.md) | A curriculum listed 12 learning objectives. Every one used 'understand' — an unmeasurable verb. Pedagogical Assessment Prover forces Bloom's-aligned objectives, explicit rubrics, scaffolded instruction, and actionable feedback. |
 | [People Management Prover](../mcps/people-management-prover.md) | A hiring plan listed 'culture fit' as the primary criterion. That's not a criterion — that's a bias proxy. People Management Prover forces job-related criteria, adverse impact analysis, and validated assessment methods grounded in I-O psychology. |
 | [Percentage Calculation Engine](../mcps/percentage-calculation-engine.md) | Stop LLMs from miscalculating discounts and interest. Deterministically calculate exact percentages and relative increases. |
+| [Personal Trainer Session Planner](../mcps/personal-trainer-session-planner.md) | Generate personalized, goal-oriented weight training session structures based on objectives and physical constraints. |
 | [Personal Year Calculator](../mcps/personal-year-calculator.md) | Discover your numerological Personal Year, Month, and Day cycles with detailed forecasts. |
 | [Persuasion Copywriting Prover](../mcps/persuasion-copywriting-prover.md) | AI copywriting produces generic, robotic text that readers instantly recognize. This tool forces psychologically-grounded persuasion: benefits over features, emotional triggers, proof hierarchy, framework matching (AIDA/PAS/BAB), and human tone (no AI words). |
 | [PhotoPrism](../mcps/photoprism.md) | Search, browse, and manage your PhotoPrism media library — find photos by metadata, retrieve thumbnails, and stream videos via AI. |

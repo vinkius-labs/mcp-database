@@ -35,7 +35,7 @@ Connect your **CartonCloud** account to any AI agent and orchestrate your WMS (W
 - **3PL Operators** — automate routine logistics inquiries and reporting workflows
 
 
-## Available Tools (8)
+## Available Tools (12)
 - **search_warehouse_products**: Returns product IDs, names, SKUs, and unit-of-measure metadata.
 
 Search warehouse products and master data

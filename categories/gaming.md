@@ -9,7 +9,9 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 | [Drop Rate Calculator](../mcps/drop-rate-calculator.md) | Calculate item drop probabilities, pity mechanics, and expected resource usage for loot-based systems. |
 | [Gacha Pity Simulator](../mcps/gacha-pity-simulator.md) | Analyze gacha mechanics including base rates, soft pity ramps, and hard pity guarantees to predict player costs. |
 | [Game Economy Inflation Calculator](../mcps/game-economy-inflation-calculator.md) | Monitor, forecast, and stabilize game currency inflation by analyzing gold sinks and faucets. |
+| [Mastery Progression Calculator](../mcps/mastery-progression-calculator.md) | Simulate skill progression through mastery tiers based on gameplay frequency and streak bonuses. |
 | [Player Spending LTV Calculator](../mcps/player-spending-ltv-calculator.md) | Calculate player Lifetime Value (LTV), Breakeven CAC, and retention impact. |
+| [Skill Tree Optimization Engine](../mcps/skill-tree-optimization-engine.md) | Optimize skill point allocation for maximum DPS, survivability, or balanced utility. |
 
 
 ---
