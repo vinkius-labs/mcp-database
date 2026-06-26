@@ -34,7 +34,6 @@ Connect your **Snapchat Ads** account to any AI agent to automate your server-si
 
 
 ## Available Tools (12)
-- **get_capi_integration_guidelines**: Get best practices for hashing
 - **list_supported_conversion_events**: List valid event types
 - **track_add_to_cart_event**: Track an item added to cart
 - **track_app_open_event**: Track a mobile app opening
@@ -47,6 +46,7 @@ Track a successful purchase
 - **track_sign_up_event**: Track a new user registration
 - **track_start_checkout_event**: Track the start of checkout
 - **track_view_content_event**: Track a product detail view
+- **get_capi_integration_guidelines**: Get best practices for hashing
 - **check_capi_health**: Verify CAPI status
 
 

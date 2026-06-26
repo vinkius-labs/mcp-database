@@ -35,20 +35,20 @@ Replace manual link juggling by having your agent fetch the right booking URL or
 
 
 ## Available Tools (10)
+- **list_events**: Lists all scheduled booking events
 - **cancel_event**: Specify the event ID and a cancellation reason.
 
 Cancels a scheduled appointment
+- **get_account**: Retrieves authenticated account information
+- **get_event**: Retrieves details for a specific scheduled event
+- **get_link**: Retrieves details for a specific scheduling link
 - **create_link**: Specify name, slug, and duration in minutes.
 
 Creates a new scheduling link
 - **delete_link**: This action is irreversible.
 
 Permanently deletes a scheduling link
-- **get_account**: Retrieves authenticated account information
-- **get_event**: Retrieves details for a specific scheduled event
-- **get_link**: Retrieves details for a specific scheduling link
 - **list_availability**: Retrieves available time slots for a link within a date range
-- **list_events**: Lists all scheduled booking events
 - **list_links**: Lists all scheduling links in the SavvyCal account
 - **update_link**: Updates an existing scheduling link
 

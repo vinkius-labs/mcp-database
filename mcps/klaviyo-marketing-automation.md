@@ -35,12 +35,15 @@ Connect your **Klaviyo** account to any AI agent and take full control of your e
 
 
 ## Available Tools (10)
+- **get_flow_details**: It returns the entry trigger conditions, the sequence of action steps (emails, SMS, delays), and the current operational status of the automation.
+
+Get details for a Klaviyo automation flow
+- **list_audience_segments**: Unlike lists, segments update automatically based on behavioral data and predictive analytics. Use this to understand your high-value customers, churn risks, or engaged subscribers.
+
+List Klaviyo audience segments
 - **list_profiles**: This tool is used to browse your customer base and obtain profile IDs, email addresses, and names. Use this as a starting point to find specific customers before performing detailed audits or adding them to lists.
 
 List Klaviyo profiles (contacts)
-- **get_profile**: Returns everything from contact info (email, phone, address) to custom e-commerce properties, predictive analytics (CLV, churn risk), and marketing preferences.
-
-Get a Klaviyo profile by ID
 - **create_profile**: This is essential for manual lead insertion or synchronizing data from other sources. Requires an email address; first and last names are optional but recommended for personalization.
 
 Create a new Klaviyo profile
@@ -59,12 +62,9 @@ Get details for a Klaviyo campaign
 - **list_automation_flows**: Use this to audit your automated lifecycle marketing, such as welcome series, abandoned carts, or post-purchase follow-ups. Returns flow IDs, names, and active status.
 
 List Klaviyo automation flows
-- **get_flow_details**: It returns the entry trigger conditions, the sequence of action steps (emails, SMS, delays), and the current operational status of the automation.
+- **get_profile**: Returns everything from contact info (email, phone, address) to custom e-commerce properties, predictive analytics (CLV, churn risk), and marketing preferences.
 
-Get details for a Klaviyo automation flow
-- **list_audience_segments**: Unlike lists, segments update automatically based on behavioral data and predictive analytics. Use this to understand your high-value customers, churn risks, or engaged subscribers.
-
-List Klaviyo audience segments
+Get a Klaviyo profile by ID
 
 
 ## 💬 Prompt Examples

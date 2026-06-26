@@ -35,6 +35,8 @@ Empower your AI agent to orchestrate your entire scheduling ecosystem with **Acu
 
 
 ## Available Tools (10)
+- **get_me**: Get Acuity account details
+- **reschedule_appointment**: Reschedule an appointment
 - **cancel_appointment**: Cancel an appointment
 - **list_appointment_types**: List available appointment types
 - **list_appointments**: List Acuity appointments
@@ -43,8 +45,6 @@ Empower your AI agent to orchestrate your entire scheduling ecosystem with **Acu
 - **create_appointment**: Create a new appointment
 - **get_appointment**: Get details for a specific appointment
 - **get_availability**: Check available times
-- **get_me**: Get Acuity account details
-- **reschedule_appointment**: Reschedule an appointment
 
 
 ## 💬 Prompt Examples

@@ -33,16 +33,16 @@ Connect your **Qovery** infrastructure to any AI agent and bring DevOps executio
 
 
 ## Available Tools (10)
+- **get_environment**: Retrieves details for a specific Qovery environment
+- **get_organization**: Retrieves details for a specific Qovery organization
 - **list_organizations**: Lists all Qovery organizations associated with the token
 - **list_projects**: Lists all projects within a Qovery organization
 - **restart_application**: Performs a zero-downtime rolling restart of a Qovery application
-- **deploy_application**: Triggers an immediate deployment of a specific Git commit SHA
-- **get_application**: Retrieves details for a specific Qovery application
-- **get_environment**: Retrieves details for a specific Qovery environment
-- **get_organization**: Retrieves details for a specific Qovery organization
-- **get_project**: Retrieves details for a specific Qovery project
 - **list_applications**: Lists all applications running in a specific environment
 - **list_environments**: Lists all environments (Production, Staging, etc.) in a project
+- **deploy_application**: Triggers an immediate deployment of a specific Git commit SHA
+- **get_application**: Retrieves details for a specific Qovery application
+- **get_project**: Retrieves details for a specific Qovery project
 
 
 ## 💬 Prompt Examples

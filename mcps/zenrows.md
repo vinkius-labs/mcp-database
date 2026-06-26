@@ -45,12 +45,6 @@ Scrape and convert page content to clean Markdown
 - **scrape_wait**: g. "#results") to wait for before capturing the HTML.
 
 Scrape with JS render waiting for a specific CSS selector
-- **scrape_js**: Enables js_render=true. Slower and more expensive than static scraping.
-
-Scrape JS-rendered HTML using ZenRows headless browser
-- **scrape_antibot**: Enables js_render and antibot=true.
-
-Scrape with full anti-bot bypass for heavily protected sites
 - **scrape_premium**: Sets premium_proxy=true for higher anonymity.
 
 Scrape using ZenRows premium residential proxies
@@ -65,6 +59,12 @@ Scrape using a proxy from a specific country
 - **scrape_custom**: g. wait, css_extractor, session_id).
 
 Execute a scrape using advanced custom parameters
+- **scrape_js**: Enables js_render=true. Slower and more expensive than static scraping.
+
+Scrape JS-rendered HTML using ZenRows headless browser
+- **scrape_antibot**: Enables js_render and antibot=true.
+
+Scrape with full anti-bot bypass for heavily protected sites
 
 
 ## 💬 Prompt Examples

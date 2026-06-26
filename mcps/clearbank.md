@@ -30,16 +30,20 @@ The **ClearBank MCP Server** wraps incredibly defensive digital signatures (RSA-
 
 
 ## Available Tools (8)
-- **clearbank_create_account**: Provision a new virtual UK Account
-- **clearbank_create_chaps_payment**: Can only be done during BofE operating hours.
+- **clearbank_create_account**: Provision a new UK banking account on the ClearBank clearing network
+- **clearbank_get_account_balances**: Get live settled and cleared balances for a specific ClearBank account
+- **clearbank_get_accounts**: List all accounts on the ClearBank institutional ledger
+- **clearbank_get_transactions**: List transaction history for a ClearBank account
+- **clearbank_create_chaps_payment**: Only settles during Bank of England operating hours (Mon-Fri). Suitable for large transactions where immediate finality is required.
 
-Dispatch a CHAPS High-Value Wire
-- **clearbank_create_faster_payment**: Dispatch an instant UK Faster Payment
-- **clearbank_get_account_balances**: Assess live balances for a specific account
-- **clearbank_get_accounts**: List all internal ClearBank ledgers
-- **clearbank_get_payment_status**: Inspect if an FPS or CHAPS instruction settled
-- **clearbank_get_transactions**: View deep transaction logs of the Account
-- **clearbank_suspend_account**: Immediately freeze an Account preventing transfers out/in
+Initiate a CHAPS high-value wire transfer through the Bank of England settlement system
+- **clearbank_create_faster_payment**: Settles within seconds during operational hours. Requires sort code, account number, and payment reference.
+
+Initiate an instant UK Faster Payment (FPS) to an external sort code and account number
+- **clearbank_get_payment_status**: Check the settlement status of a Faster Payment or CHAPS instruction
+- **clearbank_suspend_account**: Requires a written reason for compliance audit trail.
+
+Immediately freeze a ClearBank account, preventing all inbound and outbound transfers
 
 
 ## 💬 Prompt Examples

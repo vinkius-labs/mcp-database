@@ -34,17 +34,17 @@ Connect your **Voiceflow** account to any AI agent and simplify how you build, t
 
 
 ## Available Tools (12)
-- **list_kb_docs**: List KB documents
+- **get_feedback**: Get user feedback
+- **get_project**: Get project details
+- **get_state**: Get user conversation state
+- **interact**: Send message to Voiceflow agent
 - **list_kb_tags**: List KB document tags
 - **list_projects**: List Voiceflow projects
 - **list_transcripts**: List conversation transcripts
 - **query_kb**: Ask the Knowledge Base
 - **save_state**: Update user state/variables
+- **list_kb_docs**: List KB documents
 - **delete_state**: Reset user session
-- **get_feedback**: Get user feedback
-- **get_project**: Get project details
-- **get_state**: Get user conversation state
-- **interact**: Send message to Voiceflow agent
 - **get_transcript**: Get transcript details
 
 

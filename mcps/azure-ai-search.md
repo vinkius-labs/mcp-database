@@ -35,12 +35,12 @@ Connect your **Azure AI Search** endpoints to any AI agent and bring the power o
 ## Available Tools (6)
 - **list_indexes**: List all Azure AI Search indexes
 - **get_index**: Get explicit details of a single Azure search index configuration
+- **list_indexers**: List explicit scheduled Azure indexer tasks
+- **list_datasources**: List Azure AI Search data sources explicitly mapped
 - **vector_search**: Highly targeted relevance extraction spanning dimensional maps.
 
 Perform Azure vector similarity searches via explicit embedding spaces
 - **search_documents**: Execute lexical Full-Text search queries against Azure Indexes
-- **list_indexers**: List explicit scheduled Azure indexer tasks
-- **list_datasources**: List Azure AI Search data sources explicitly mapped
 
 
 ## 💬 Prompt Examples

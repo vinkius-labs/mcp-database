@@ -74,8 +74,8 @@ Here are some examples of how you can interact with the **Aha!** MCP server usin
 **Q: How do I find my Aha! API Key?**
 Log in to your Aha! account, click on your profile avatar, and select **Personal settings**. Go to the **Developer** tab and click **API keys** to generate or retrieve your key.
 
-**Q: Can I update a feature status via the agent?**
-Yes! Use the `update_feature` tool and provide the Feature ID along with the new status (e.g., 'Shipped', 'In development'). Your agent will synchronize the change with your roadmap.
+**Q: Can I view full details for a specific feature?**
+Yes! Use the `get_feature` tool and provide the Feature ID or reference number (e.g., 'APP-F-101'). Your agent will retrieve the full metadata, status, requirements, and release assignment.
 
 **Q: Does this support creating new ideas?**
 Yes, you can use the `create_idea` tool to capture feedback or suggestions. Provide a title and description, and it will be added to your ideation portal.

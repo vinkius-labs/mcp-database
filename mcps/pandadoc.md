@@ -34,7 +34,7 @@ Connect your **PandaDoc** account to any AI agent and automate your document wor
 
 
 ## Available Tools (10)
-- **pandadoc_create_contact**: Email is required. Once created, patients can be used as recipients in document creation. Returns the created contact with their PandaDoc ID.
+- **pandadoc_create_contact**: Email is required. Once created, contacts can be used as recipients in document creation. Returns the created contact with their PandaDoc ID.
 
 Create a new contact in PandaDoc with email, name, and company for use as a document recipient
 - **pandadoc_create_document**: templateId is required (use pandadoc_list_templates to find). Recipients array must include at least email and optionally first_name, last_name, and role (matching template roles). The document is created in "uploaded" status and transitions to "draft" within 3-5 seconds. Fields is an optional JSON object to pre-fill template tokens/variables.

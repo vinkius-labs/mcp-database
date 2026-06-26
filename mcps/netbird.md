@@ -42,38 +42,38 @@ No more manual dashboard navigation to manage peer access or user onboarding. Yo
 - **create_group**: Create a group
 - **create_msp_tenant**: Create a new MSP tenant
 - **create_nameserver**: Create a nameserver group
+- **create_network**: Create a network
 - **create_network_resource**: Create a resource (host, subnet, or domain) in a network
 - **create_network_router**: Create a router in a network
-- **create_network**: Create a network
 - **create_policy**: Create a policy with rules (action, protocol, ports, sources, destinations)
 - **create_posture_check**: Create a posture check (version, OS, geo-location, network range, or process)
 - **create_route**: Create a route (Deprecated)
 - **create_setup_key**: Create a setup key (one-off or reusable)
 - **create_temporary_access_peer**: Create a temporary access peer
+- **create_user**: Create a service user or invite a regular user
 - **create_user_invite**: Create a user invite link
 - **create_user_token**: Create a new personal access token
-- **create_user**: Create a service user or invite a regular user
 - **delete_account**: Delete a NetBird account and all resources
 - **delete_group**: Delete a group
 - **delete_nameserver**: Delete nameserver group
+- **delete_network**: Delete a network
 - **delete_network_resource**: Delete network resource
 - **delete_network_router**: Delete network router
-- **delete_network**: Delete a network
 - **delete_peer**: Delete a peer
 - **delete_policy**: Delete a policy
 - **delete_posture_check**: Delete a posture check
 - **delete_route**: Delete a route (Deprecated)
 - **delete_setup_key**: Delete a setup key
+- **delete_user**: Remove a user
 - **delete_user_invite**: Delete a user invite
 - **delete_user_token**: Delete a token
-- **delete_user**: Remove a user
 - **get_current_user**: Retrieve current user info
 - **get_dns_settings**: Retrieve global DNS settings
 - **get_group**: Retrieve group details
 - **get_nameserver**: Retrieve nameserver group details
+- **get_network**: Retrieve network details
 - **get_network_resource**: Retrieve network resource details
 - **get_network_router**: Retrieve network router details
-- **get_network**: Retrieve network details
 - **get_peer**: Retrieve peer details
 - **get_policy**: Retrieve policy details
 - **get_posture_check**: Retrieve posture check details
@@ -93,8 +93,8 @@ No more manual dashboard navigation to manage peer access or user onboarding. Yo
 - **list_nameservers**: List all nameserver groups
 - **list_network_resources**: List resources in a network
 - **list_network_routers**: List routers in a network
-- **list_network_traffic_events**: List network traffic events (Cloud-only, experimental)
 - **list_networks**: List all networks
+- **list_network_traffic_events**: List network traffic events (Cloud-only, experimental)
 - **list_peers**: List all network peers
 - **list_policies**: List all policies
 - **list_posture_checks**: List all posture checks
@@ -102,8 +102,8 @@ No more manual dashboard navigation to manage peer access or user onboarding. Yo
 - **list_routes**: List all routes (Deprecated)
 - **list_setup_keys**: List all setup keys
 - **list_user_invites**: List pending user invites
-- **list_user_tokens**: List all tokens for a user
 - **list_users**: List all users
+- **list_user_tokens**: List all tokens for a user
 - **regenerate_user_invite**: Regenerate an invite token
 - **reject_user**: Reject a pending user
 - **resend_user_invite**: Resend user invitation
@@ -112,12 +112,12 @@ No more manual dashboard navigation to manage peer access or user onboarding. Yo
 - **update_account**: Update account settings (e.g., peer login expiration, network range)
 - **update_dns_settings**: Update DNS settings (e.g., disabled management groups)
 - **update_group**: Update group name, peers, or resources
-- **update_msp_tenant_subscription**: Create/update tenant subscription
 - **update_msp_tenant**: Update tenant name or access groups
+- **update_msp_tenant_subscription**: Create/update tenant subscription
 - **update_nameserver**: Update nameserver group
+- **update_network**: Update network name/description
 - **update_network_resource**: Update network resource
 - **update_network_router**: Update network router
-- **update_network**: Update network name/description
 - **update_peer**: Update peer name, SSH status, or IP
 - **update_policy**: Update policy
 - **update_posture_check**: Update posture check

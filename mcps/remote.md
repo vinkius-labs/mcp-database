@@ -34,19 +34,19 @@ Connect your **Remote** account to any AI agent to streamline your global hiring
 
 
 ## Available Tools (11)
+- **list_contractors**: List all contractors
 - **get_employee**: Get details for a specific employee
 - **get_invoice_details**: Get details for a specific invoice
 - **list_companies**: List all registered companies
-- **list_contractors**: List all contractors
-- **list_supported_countries**: List all countries supported by Remote
-- **list_employees**: List employees for a company
-- **list_expenses**: List all employee expenses
 - **create_employee**: Pass data as a JSON string.
 
 Add a new employee
 - **get_company_details**: Get specific company details
 - **list_invoices**: List invoices for a company
 - **list_timeoff**: List all time-off requests
+- **list_supported_countries**: List all countries supported by Remote
+- **list_employees**: List employees for a company
+- **list_expenses**: List all employee expenses
 
 
 ## 💬 Prompt Examples

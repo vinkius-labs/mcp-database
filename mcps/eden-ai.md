@@ -33,15 +33,15 @@ Integrate **Eden AI**, the unified AI API platform, directly into your AI workfl
 
 
 ## Available Tools (6)
-- **chat_completion**: Specify a provider/model (e.g., openai/gpt-4o) or use @edenai for smart routing.
-
-Generate a chat completion using Eden AI multi-provider routing
 - **check_credits**: Check your current Eden AI credit balance
-- **list_embedding_models**: List available embedding models on Eden AI
-- **monitor_consumption**: Monitor your API consumption and costs over time
 - **universal_ai**: Model format: feature/subfeature/provider[/model].
 
 Execute specialized AI tasks (OCR, translation, image generation) via Eden AI
+- **list_embedding_models**: List available embedding models on Eden AI
+- **chat_completion**: Specify a provider/model (e.g., openai/gpt-4o) or use @edenai for smart routing.
+
+Generate a chat completion using Eden AI multi-provider routing
+- **monitor_consumption**: Monitor your API consumption and costs over time
 - **create_embedding**: Generate text embeddings via Eden AI
 
 

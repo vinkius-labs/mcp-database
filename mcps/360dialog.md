@@ -38,6 +38,8 @@ Connect your **360dialog** WhatsApp Business API to any AI agent and manage your
 
 ## Available Tools (10)
 - **check_contacts**: Check WhatsApp contacts
+- **set_webhook**: Configure webhook URL
+- **upload_media**: Upload media for messaging
 - **check_360dialog_status**: Verify API connectivity
 - **get_media**: Get media file details
 - **get_template**: Get template details
@@ -51,8 +53,6 @@ Send a WhatsApp text message
 - **send_template_message**: Requires the template name and language code.
 
 Send a template message
-- **set_webhook**: Configure webhook URL
-- **upload_media**: Upload media for messaging
 
 
 ## 💬 Prompt Examples

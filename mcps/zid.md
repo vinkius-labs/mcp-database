@@ -37,8 +37,8 @@ No more manual stock checks or missing order updates. Your AI acts as your dedic
 
 
 ## Available Tools (9)
-- **get_zid_customer**: Get customer details
 - **get_zid_order**: Get order details
+- **get_zid_customer**: Get customer details
 - **get_zid_product**: Get product details
 - **list_zid_customers**: List shop customers
 - **list_zid_inventories**: List inventories

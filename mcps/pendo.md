@@ -35,11 +35,11 @@ Connect your **Pendo** subscription to any AI agent and take full control of you
 
 ## Available Tools (10)
 - **get_pendo_account**: Get details for a specific account
+- **list_pendo_features**: List tagged features
 - **get_pendo_guide_metrics**: Get performance metrics for a guide
 - **get_pendo_guide**: Get details for a specific guide
 - **get_pendo_visitor**: Get details for a specific visitor
 - **list_pendo_applications**: List applications tracked in the Pendo subscription
-- **list_pendo_features**: List tagged features
 - **list_pendo_guides**: ) defined in Pendo.
 
 List Pendo guides

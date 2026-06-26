@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your entire global communication strategy w
 
 
 ## Available Tools (10)
-- **get_balance**: Get current MessageBird account balance
-- **get_contact**: Get details for a specific contact
+- **list_hlr**: List HLR (Network Lookup) requests
+- **list_messages**: List recent SMS messages
 - **get_group**: Get details for a specific group
-- **get_message**: Get details for a specific message
 - **list_channels**: List configured channels
 - **list_contacts**: List MessageBird contacts
 - **list_groups**: List contact groups
-- **list_hlr**: List HLR (Network Lookup) requests
-- **list_messages**: List recent SMS messages
+- **get_message**: Get details for a specific message
+- **get_balance**: Get current MessageBird account balance
+- **get_contact**: Get details for a specific contact
 - **send_sms**: Send an SMS message
 
 

@@ -34,26 +34,6 @@ Connect your **Coder** deployment to any AI agent to orchestrate remote developm
 
 
 ## Available Tools (84)
-- **add_license**: Add an enterprise license
-- **auth_workspace_agent**: Authenticate agent using cloud provider identity
-- **cancel_workspace_build**: Cancel a pending or running build
-- **check_auth**: Check if user has permission to perform actions
-- **create_chat**: Start a new AI chat session
-- **create_chat_message**: Send a message to a chat session
-- **create_group**: Create a group in an organization
-- **create_organization**: Create an organization
-- **create_user**: Create a user
-- **create_user_secret**: Create a user secret
-- **create_user_task**: Create a long-running AI task for a user
-- **create_user_token**: Create a user token
-- **create_workspace**: Create a workspace
-- **create_workspace_port_share**: Create a port share for a workspace
-- **delete_license**: Delete an enterprise license
-- **delete_user**: Delete a user
-- **download_file**: Download a file by ID
-- **get_agent_connection**: Get DERP and connection details for an agent
-- **get_agent_containers**: List running containers and devcontainers
-- **get_agent_debug_logs**: Get the last 10MiB of agent logs (local agent API)
 - **get_agent_debug_magicsock**: Get Tailscale magicsock debug info (local agent API)
 - **get_agent_debug_manifest**: Get the startup manifest from the server (local agent API)
 - **get_agent_external_auth**: Get external authentication tokens for the agent
@@ -61,8 +41,8 @@ Connect your **Coder** deployment to any AI agent to orchestrate remote developm
 - **get_ai_session_threads**: Get threads for an AI session
 - **get_api_root**: Get basic API information
 - **get_app_auth_redirect**: Redirect to a URI with an encrypted API key
-- **get_appearance**: Get dashboard branding and banners
 - **get_app_host**: Get the base host for applications
+- **get_appearance**: Get dashboard branding and banners
 - **get_audit_logs**: Get a paginated list of audit logs
 - **get_build_info**: Get Coder build info
 - **get_chat_messages**: Get messages for a chat session
@@ -79,11 +59,11 @@ Connect your **Coder** deployment to any AI agent to orchestrate remote developm
 - **get_ssh_config**: Get SSH configuration
 - **get_update_check**: Check for Coder updates
 - **get_user_profile**: Get user profile
-- **get_workspace**: Get workspace metadata
 - **get_workspace_acl**: Get workspace ACLs
-- **get_workspace_build**: Get details of a specific build
 - **get_workspace_build_logs**: Get logs for a specific build
 - **get_workspace_build_params**: List parameters used for the build
+- **get_workspace_build**: Get details of a specific build
+- **get_workspace**: Get workspace metadata
 - **list_ai_clients**: List connected AI Bridge clients
 - **list_ai_interceptions**: List AI interceptions
 - **list_ai_models**: List available AI models
@@ -92,18 +72,18 @@ Connect your **Coder** deployment to any AI agent to orchestrate remote developm
 - **list_external_auth**: List linked external accounts (e.g., GitHub)
 - **list_groups**: List groups
 - **list_licenses**: List enterprise licenses
-- **list_organizations**: List organizations
 - **list_org_members**: List members of an organization
 - **list_org_provisioner_daemons**: List active provisioner daemons
 - **list_org_provisioner_jobs**: List jobs for the organization provisioners
 - **list_org_roles**: List assignable roles in an organization
+- **list_organizations**: List organizations
 - **list_tasks**: Manage long-running AI tasks
 - **list_template_examples**: List starter template examples
-- **list_templates**: List all templates
 - **list_template_versions**: List versions for a template
-- **list_users**: List users
+- **list_templates**: List all templates
 - **list_user_secrets**: List user secrets
 - **list_user_tokens**: List user tokens
+- **list_users**: List users
 - **list_workspace_port_shares**: List port shares for a workspace
 - **list_workspaces**: g., owner:me).
 
@@ -120,6 +100,26 @@ List workspaces
 - **update_workspace_autostart**: Update workspace autostart schedule
 - **update_workspace_autoupdates**: Update workspace autoupdates schedule
 - **upload_file**: Upload a file (tar or zip)
+- **add_license**: Add an enterprise license
+- **auth_workspace_agent**: Authenticate agent using cloud provider identity
+- **cancel_workspace_build**: Cancel a pending or running build
+- **check_auth**: Check if user has permission to perform actions
+- **create_chat_message**: Send a message to a chat session
+- **create_chat**: Start a new AI chat session
+- **create_group**: Create a group in an organization
+- **create_organization**: Create an organization
+- **create_user_secret**: Create a user secret
+- **create_user_task**: Create a long-running AI task for a user
+- **create_user_token**: Create a user token
+- **create_user**: Create a user
+- **create_workspace_port_share**: Create a port share for a workspace
+- **create_workspace**: Create a workspace
+- **delete_license**: Delete an enterprise license
+- **delete_user**: Delete a user
+- **download_file**: Download a file by ID
+- **get_agent_connection**: Get DERP and connection details for an agent
+- **get_agent_containers**: List running containers and devcontainers
+- **get_agent_debug_logs**: Get the last 10MiB of agent logs (local agent API)
 
 
 ## 💬 Prompt Examples

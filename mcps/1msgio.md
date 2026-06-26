@@ -44,13 +44,13 @@ Send a media file (image, PDF, video) to a WhatsApp number
 - **send_template**: Requires the template name.
 
 Send a pre-approved WhatsApp template message
+- **list_templates**: List all available and pre-approved WhatsApp templates
 - **get_status**: g. connected, disconnected). Use this to debug communication failures.
 
 Check the current connection status of the 1msg.io WhatsApp channel
 - **list_messages**: Use this to check previous communications or audit chat history.
 
 Retrieve recent incoming and outgoing WhatsApp message history
-- **list_templates**: List all available and pre-approved WhatsApp templates
 
 
 ## 💬 Prompt Examples

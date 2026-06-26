@@ -35,17 +35,25 @@ No more manual searching for 'who said what' or missing critical meeting follow-
 - **Developers** u2014 integrate Tactiq transcript data into custom workflows via simple AI queries
 
 
-## Available Tools (10)
-- **check_tactiq_status**: Verify Tactiq API connectivity
-- **get_action_items**: Get action items
-- **get_meeting**: Get meeting details
-- **get_summary**: Get transcript summary
-- **get_transcript**: Get transcript details
-- **list_insights**: Get AI insights
-- **list_meetings**: List all meetings
-- **list_speakers**: List speakers
-- **list_transcripts**: List all transcripts
-- **search_transcripts**: Search transcripts
+## Available Tools (6)
+- **list_meetings**: Available on all Tactiq plans (Free, Pro, Team).
+
+List recent meetings
+- **list_meeting_artifacts**: Requires Tactiq Team plan or higher.
+
+List AI artifacts from a meeting
+- **check_generation_status**: Useful when a summary is still being processed by Tactiq AI. Returns the current processing state.
+
+Check if meeting summary is ready
+- **get_artifact**: Artifacts include action items, email drafts, slide outlines, and more.
+
+Read a specific AI artifact
+- **get_meeting_summary**: Requires Tactiq Team plan or higher. Returns key takeaways, decisions, and context.
+
+Get AI-generated meeting summary
+- **search_meetings**: Use to find specific discussions: "Find my calls with the design team from last month" or "What was decided about Q1 roadmap?"
+
+Search meetings by keyword, participant, or date
 
 
 ## 💬 Prompt Examples

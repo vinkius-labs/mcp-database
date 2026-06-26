@@ -44,8 +44,8 @@ Connect your **Bird (formerly MessageBird)** account to any AI agent and take fu
 - **list_contacts**: List CRM contacts
 - **list_conversations**: List active omnichannel conversations
 - **list_messages**: List sent SMS messages
-- **send_omnichannel_message**: Send a message via WhatsApp or Telegram
 - **send_sms**: Send an SMS message
+- **send_omnichannel_message**: Send a message via WhatsApp or Telegram
 
 
 ## 💬 Prompt Examples

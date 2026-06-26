@@ -36,6 +36,11 @@ Connect your **Mailjet** account to any AI agent to automate your transactional 
 ## Available Tools (8)
 - **list_marketing_campaigns**: List all campaigns
 - **list_all_contacts**: List all contacts in the Mailjet account
+- **get_campaign_details**: Get details for a specific campaign
+- **list_subscriber_lists**: List all contact lists
+- **send_transactional_email**: Requires a JSON body matching Mailjet v3.1 Send API structure.
+
+Send an email using Mailjet Send API v3.1
 - **add_contact_to_list**: Requires list ID and contact ID/Email.
 
 Subscribe a contact to a specific list
@@ -43,11 +48,6 @@ Subscribe a contact to a specific list
 - **create_new_contact**: Requires at least an Email address.
 
 Add a new contact to the database
-- **get_campaign_details**: Get details for a specific campaign
-- **list_subscriber_lists**: List all contact lists
-- **send_transactional_email**: Requires a JSON body matching Mailjet v3.1 Send API structure.
-
-Send an email using Mailjet Send API v3.1
 
 
 ## 💬 Prompt Examples

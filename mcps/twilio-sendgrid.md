@@ -33,6 +33,23 @@ Unleash your AI agent over **Twilio SendGrid's** trusted enterprise email platfo
 
 
 ## Available Tools (16)
+- **list_single_sends**: List all marketing single-send campaigns
+- **delete_bounce**: This action is destructive on the suppression record.
+
+Removes an email from the bounce suppression list
+- **list_bounces**: Useful for list cleaning.
+
+Lists all bounced email records
+- **get_template_details**: Retrieves details for a specific template
+- **list_marketing_contacts**: Lists all marketing contacts
+- **list_marketing_lists**: Lists all marketing contact lists
+- **list_verified_senders**: Only verified senders can be used in the from_email field.
+
+List all verified sender identities
+- **list_dynamic_templates**: List all Dynamic Transactional Templates
+- **dispatch_email**: Ensure you use a verified sender email in "from_email".
+
+Sends an email via SendGrid SMTP relay
 - **delete_spam_report**: Use with caution — sending to users who report spam can damage your sender reputation.
 
 Remove an email from the spam report suppression list
@@ -48,25 +65,8 @@ List all blocked email addresses
 - **create_marketing_contact**: Merges data if the contact already exists.
 
 Creates or updates a marketing contact
-- **delete_bounce**: This action is destructive on the suppression record.
-
-Removes an email from the bounce suppression list
-- **list_bounces**: Useful for list cleaning.
-
-Lists all bounced email records
 - **list_global_unsubscribes**: Lists global unsubscribes
 - **list_spam_reports**: Lists user-reported spam complaints
-- **get_template_details**: Retrieves details for a specific template
-- **list_marketing_contacts**: Lists all marketing contacts
-- **list_marketing_lists**: Lists all marketing contact lists
-- **list_verified_senders**: Only verified senders can be used in the from_email field.
-
-List all verified sender identities
-- **list_single_sends**: List all marketing single-send campaigns
-- **list_dynamic_templates**: List all Dynamic Transactional Templates
-- **dispatch_email**: Ensure you use a verified sender email in "from_email".
-
-Sends an email via SendGrid SMTP relay
 
 
 ## 💬 Prompt Examples
