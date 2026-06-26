@@ -36,10 +36,10 @@ Connect your **Chameleon.io** account to any AI agent and take full control of y
 
 
 ## Available Tools (8)
+- **list_chameleon_events**: List recent events tracked by Chameleon
 - **delete_chameleon_user**: Permanently delete a user and their data from Chameleon
 - **get_experience_details**: Get details for a specific experience
 - **identify_chameleon_user**: Identify or update a user in Chameleon
-- **list_chameleon_events**: List recent events tracked by Chameleon
 - **list_experiences**: List all Chameleon experiences (Tours, Launchers, Microsurveys)
 - **list_user_segments**: List all configured user segments
 - **list_microsurvey_responses**: List recent responses to microsurveys

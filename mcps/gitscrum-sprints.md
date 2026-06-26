@@ -33,20 +33,23 @@ Your agent delivers sprint analytics and agile insights without requiring manual
 - **Product owners** — manage user stories and epics while monitoring delivery cadence
 
 
-## Available Tools (15)
+## Available Tools (16)
 - **all_sprints**: List sprints across all workspaces
 - **create_user_story**: Create a user story
 - **list_epics**: List epics in a project
 - **create_sprint**: Create a new sprint
+- **delete_sprint**: This action cannot be undone.
+
+Delete an existing sprint
+- **sprint_metrics**: Get detailed sprint metrics
+- **sprint_progress**: Get current sprint progress
+- **sprint_stats**: Get sprint statistics
 - **get_sprint**: Get sprint details
 - **sprint_kpis**: Get sprint KPIs
 - **list_sprints**: List sprints in a project
-- **sprint_metrics**: Get detailed sprint metrics
-- **sprint_progress**: Get current sprint progress
 - **sprint_reports**: Resource: burndown, burnup, performance, types, efforts, member_distribution, task, type_distribution.
 
 Get sprint reports with charts
-- **sprint_stats**: Get sprint statistics
 - **update_sprint**: Update an existing sprint
 - **get_task**: Get task details by UUID
 - **list_tasks**: Use the sprint_slug filter to see only tasks belonging to a specific sprint. Filter by status (todo, in-progress, done).

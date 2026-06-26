@@ -13,17 +13,30 @@ Lead generation and email verification via Icypeas API.
 Empower your AI agents to build and verify your lead database with Icypeas. This MCP server allows you to list prospects, search for specific leads, manage prospect lists, verify email deliverability, and find contact information directly through the Icypeas API. Ideal for automating sales outreach and lead enrichment.
 
 
-## Available Tools (10)
-- **find_email**: Finds an email address for a specific person at a domain
-- **get_account**: Gets your Icypeas account details
-- **get_campaign**: Retrieves details for a specific campaign
-- **get_credits**: Gets your remaining account credits
-- **get_prospect_list**: Retrieves details for a specific prospect list
-- **list_campaigns**: Lists all outreach campaigns
-- **list_prospect_lists**: Lists all prospect lists
-- **list_prospects**: Lists all prospects
-- **search_prospects**: Searches for prospects with filters
-- **verify_email**: Verifies the deliverability of an email address
+## Available Tools (9)
+- **count_people**: Uses same filter format as find_people.
+
+Count the number of people matching a query (does not consume credits)
+- **domain_scan**: Returns a search ID — use fetch_results to retrieve found emails.
+
+Scan a domain for all role-based email addresses (contact@, admin@, etc)
+- **fetch_results**: Pass the _id returned by those tools. If mode=single, lists all single searches. Max 100 results per request.
+
+Retrieve results from previous searches by ID or list all single/bulk searches
+- **find_companies**: Returns enriched company profiles.
+
+Search the lead database for companies matching filters
+- **find_email**: Returns a search ID — use fetch_results to get the actual email once status is DEBITED.
+
+Find an email address for a person at a company domain
+- **find_people**: Returns enriched profiles. Use JSON filter format: {"currentJobTitle": {"include": ["CTO"]}, "location": {"include": ["US"]}}
+
+Search the lead database for people matching filters
+- **get_subscription**: Get subscription information and remaining credits
+- **reverse_email_lookup**: Find the profile URL behind a professional email address
+- **verify_email**: Returns a search ID — use fetch_results to get verification status.
+
+Verify the deliverability of an email address
 
 
 ## 💬 Prompt Examples

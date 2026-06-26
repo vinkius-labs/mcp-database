@@ -36,15 +36,15 @@ No more manual checking of individual automation logs or missing workflow failur
 
 
 ## Available Tools (13)
+- **list_executions_by_workflow**: List executions by workflow
+- **list_connections**: List connections
+- **list_executions**: List executions
 - **enable_workflow**: Enable a workflow
 - **get_connection**: Get connection details
 - **get_execution**: Get execution details
 - **get_workflow**: Get workflow details
 - **create_workflow**: Create a workflow
 - **disable_workflow**: Disable a workflow
-- **list_executions_by_workflow**: List executions by workflow
-- **list_connections**: List connections
-- **list_executions**: List executions
 - **list_logs**: List workflow logs
 - **list_workflows**: List workflows
 - **retry_execution**: Retry an execution

@@ -14,9 +14,9 @@ This MCP server provides specialized tools for agricultural planning. Use `analy
 
 
 ## Available Tools (3)
-- **analyze_soil_chemistry**: Provides a qualitative interpretation of the soil health based on chemical laboratory results
-- **compute_nutrient_demands**: Calculates the specific kilograms per hectare of N, P2O5, and K2O needed to achieve a target productivity
 - **generate_fertilizer_plan**: Converts nutrient requirements into physical product weights and total cost estimates
+- **compute_nutrient_demands**: Calculates the specific kilograms per hectare of N, P2O5, and K2O needed to achieve a target productivity
+- **analyze_soil_chemistry**: Provides a qualitative interpretation of the soil health based on chemical laboratory results
 
 
 ## 💬 Prompt Examples

@@ -33,16 +33,16 @@ Bring the **Paymo Project Platform** directly into your generative spaces explic
 
 
 ## Available Tools (10)
+- **list_milestones**: Inspect deep internal arrays mitigating specific Time targets
 - **list_projects**: Identify bounded routing spaces inside the Headless Paymo Platform
 - **get_project_details**: Inspect deep internal arrays mitigating specific Project bindings
+- **list_invoices**: Perform structural extraction of properties driving active Billing
 - **list_tasks**: Retrieve explicit Cloud logging tracing explicit Project Tasks
 - **create_task**: Dispatch an automated validation check routing explicit Task additions
 - **list_time_entries**: Enumerate explicitly attached structured rules exporting active Ledger data
 - **create_time_entry**: Mutate global bounds verifying explicitly assigned Ledger additions
-- **list_invoices**: Perform structural extraction of properties driving active Billing
 - **list_clients**: Identify precise active arrays spanning native CRM identities
 - **list_users**: Enumerate explicitly attached structured rules defining Worker identities
-- **list_milestones**: Inspect deep internal arrays mitigating specific Time targets
 
 
 ## 💬 Prompt Examples

@@ -5,40 +5,50 @@
 
 ## Overview
 
-**Category:** [marketing-automation](../categories/marketing-automation.md)
+**Category:** [sales-automation](../categories/sales-automation.md)
 
-Find, verify, and manage leads with Snov.io — search domain emails, verify addresses, and add prospects to lists directly from your AI agent.
+Find business emails, verify deliverability, and run multi-step drip campaigns that fill your outbound sales pipeline.
 
 ## Description
-Connect your **Snov.io** account to any AI agent to automate your lead generation and sales outreach workflows through natural conversation.
+Connect your **Snov.io** account to any AI agent and take full control of your lead generation and high-fidelity outreach orchestration through natural conversation.
 
 ### What you can do
 
-- **Domain Search** — Find email addresses associated with any company domain name to identify key decision-makers.
-- **Email Verification** — Check the validity of email addresses to reduce bounce rates and protect your sender reputation.
-- **Prospect Management** — Add new leads directly to your Snov.io lists with names and contact details for immediate campaign inclusion.
+- **Email Discovery Intelligence** — Find all high-fidelity email addresses for a specific domain to identify key decision makers programmatically
+- **Prospect Portfolio Management** — List saved prospect lists, retrieve detailed profile metadata, and add new leads directly through your agent
+- **Outreach Campaign Monitoring** — Access your complete directory of high-fidelity marketing campaigns and monitor real-time performance analytics
+- **Identity Enrichment** — Retrieve technical profile data for specific prospects using unique IDs or email addresses programmatically
+- **Real-time Webhook Access** — Monitor configured high-fidelity notification streams and events directly through your agent for perfectly coordinated outreach
+- **Operational Monitoring** — Verify account-level API connectivity and monitor lead orchestration volume directly through your agent for perfectly coordinated service scaling
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Snov.io API Credentials (Client ID and Client Secret)
-3. Start finding and verifying leads from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API User ID** and **API Secret** from your Snov.io account (Settings > API)
+3. Start managing your growth metrics from Claude, Cursor, or any MCP client
+
+No more manual lead entry or missing campaign gaps. Your AI acts as your dedicated growth coordinator and outreach architect.
 
 ### Who is this for?
 
-- **Sales Development Reps (SDRs)** — quickly find contact info for target accounts without leaving the chat interface.
-- **Marketing Teams** — verify large lists of emails to ensure high deliverability for outreach campaigns.
-- **Recruiters** — identify and save potential candidates' contact details directly into organized lists.
+- **Sales Managers** — instantly retrieve prospect lists and campaign statuses using natural language commands without leaving your creative workspace
+- **Growth Engineers** — automate high-fidelity domain searches and monitor lead verification to ensure healthy outreach operations
+- **Marketing Teams** — analyze technical campaign analytics and monitor webhook events through simple AI queries
 
 
-## Available Tools (3)
-- **add_prospect**: io account.
+## Available Tools (10)
+- **add_snovio_prospect_to_list**: Add prospect to list
+- **find_snovio_domain_emails**: Find emails for a domain
+- **get_snovio_prospect_by_id**: Get prospect details by ID
+- **list_snovio_campaigns**: List outreach campaigns
+- **list_snovio_prospect_lists**: List prospect lists
+- **list_snovio_webhooks**: List account webhooks
+- **find_snovio_prospect_by_name**: Find email by name and domain
+- **get_snovio_campaign_analytics**: Get campaign analytics
+- **get_snovio_prospect_by_email**: Get prospect details by email
+- **check_snovio_status**: io API credentials.
 
-Add a prospect to a Snov.io list
-- **domain_search**: io database for email addresses belonging to a company domain name.
-
-Find email addresses associated with a specific domain
-- **verify_emails**: Check the validity of email addresses
+Check API Status
 
 
 ## 💬 Prompt Examples
@@ -46,38 +56,38 @@ Find email addresses associated with a specific domain
 Here are some examples of how you can interact with the **Snov.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Find personal email addresses for the domain 'stripe.com' with a limit of 10 results."
+> "Find all high-fidelity emails for the domain 'vinkius.com'."
 
 **🤖 AI Agent:**
-> I've searched Snov.io for stripe.com. I found 10 personal email addresses including 'john.doe@stripe.com' and 'jane.smith@stripe.com'. Would you like to verify any of these?
+> I've retrieved the domain data. You currently have 12 active high-fidelity profiles for vinkius.com, including 'admin@vinkius.com' and 'tech@vinkius.com'. Would you like the detailed identity metadata for any of them?
 
 ---
 
 **👤 You:**
-> "Verify the following emails: contact@example.com, test@invalid.com."
+> "Show the last 5 campaigns and their analytics."
 
 **🤖 AI Agent:**
-> Verification complete: 'contact@example.com' is VALID, while 'test@invalid.com' is INVALID. I recommend removing the invalid address from your list.
+> Growth orchestrated! I've identified 5 active high-fidelity campaigns, including 'Q2 Outreach'. I've retrieved the technical open rates and conversion metadata for your review. Shall I summarize the campaign performance?
 
 ---
 
 **👤 You:**
-> "Add 'Alice Johnson' (alice@company.com) to my Snov.io list with ID 987654."
+> "Check the team webhooks for lead events."
 
 **🤖 AI Agent:**
-> Successfully added Alice Johnson to list 987654. She is now ready for your outreach campaigns.
+> Notification stream orchestrated! You currently have 3 high-fidelity webhook profiles active for account events. Your API connection is healthy. Shall I retrieve the detailed event orchestration metadata for these webhooks?
 
 
 ## ❓ FAQ
 
-**Q: How can I find all email addresses for a specific company domain?**
-Use the `domain_search` tool by providing the target domain (e.g., 'example.com'). You can also filter by type (personal or generic) and set a limit on the number of results.
+**Q: How do I find my Snov.io API Credentials?**
+Log in to your account, navigate to **Settings** > **API**, and locate your unique **API User ID** and **API Secret** tokens.
 
-**Q: Can I verify if a list of emails is safe to send to?**
-Yes! Use the `verify_emails` tool with an array of email addresses. The agent will return the verification status for each, identifying valid, invalid, or catch-all addresses.
+**Q: Can I check campaign analytics via AI?**
+Yes! The `get_snovio_campaign_analytics` tool allows your agent to retrieve high-fidelity performance data and conversion metrics for any specific campaign.
 
-**Q: How do I add a new lead to a specific Snov.io list?**
-Use the `add_prospect` action. Provide the email address and the `listId`. You can also optionally include the prospect's first and last name.
+**Q: How do I list my prospect lists?**
+Use the `list_snovio_prospect_lists` tool to retrieve the complete high-fidelity directory of lists along with their unique identifiers for precise orchestration.
 
 
 ## Installation & Usage

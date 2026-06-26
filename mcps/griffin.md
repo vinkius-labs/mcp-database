@@ -36,17 +36,17 @@ Connect your **Griffin** Banking-as-a-Service account to any AI agent and take f
 
 ## Available Tools (12)
 - **create_internal_transfer**: Transfer money between internal accounts
-- **get_account**: Get details for a specific bank account
 - **get_index**: Get the root index of resources from the Griffin API
+- **get_account**: Get details for a specific bank account
 - **get_me**: Get details of the current authenticated user
 - **get_organization**: Get details for a specific organization
 - **get_transaction**: Get details for a specific transaction
-- **get_verification**: Get details for a specific verification
-- **list_accounts**: List bank accounts for an organization
 - **list_organizations**: List all accessible organizations
 - **list_payees**: List saved payees for an organization
 - **list_transactions**: Retrieve transaction history for a bank account
 - **list_verifications**: List KYC/KYB verifications for an organization
+- **get_verification**: Get details for a specific verification
+- **list_accounts**: List bank accounts for an organization
 
 
 ## 💬 Prompt Examples

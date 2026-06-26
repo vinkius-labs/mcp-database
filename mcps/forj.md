@@ -29,18 +29,18 @@ Connect your **Forj** (formerly Mobilize) account to any AI agent to automate yo
 
 
 ## Available Tools (12)
-- **add_user_to_group**: Add member to group
-- **create_group**: Create a new group
+- **search_users**: Search community members
 - **find_user**: Find user by email
 - **get_account_details**: Get community account info
 - **get_group**: Get group details
 - **get_user_activity**: Get member activity log
 - **list_group_members**: List members in a group
-- **list_groups**: List community groups
-- **list_invitations**: List sent invitations
 - **list_pending_requests**: List group join requests
+- **list_groups**: List community groups
+- **add_user_to_group**: Add member to group
+- **create_group**: Create a new group
 - **list_webhooks**: List active webhooks
-- **search_users**: Search community members
+- **list_invitations**: List sent invitations
 
 
 ## 💬 Prompt Examples

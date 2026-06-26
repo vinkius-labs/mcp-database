@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your celestial insights and astrological da
 
 ## Available Tools (8)
 - **check_sade_sati**: Check Sade Sati status
-- **get_ashtakvarga_score**: Calculate ashtakvarga points
-- **get_basic_panchang**: Get daily panchang
 - **get_daily_prediction**: Get daily horoscope
 - **get_house_positions**: Get zodiac houses
 - **get_matchmaking_details**: Analyze birth match
+- **get_ashtakvarga_score**: Calculate ashtakvarga points
+- **get_basic_panchang**: Get daily panchang
 - **get_planets_positions**: Get birth chart planets
 - **get_yoga_analysis**: Analyze planetary yogas
 

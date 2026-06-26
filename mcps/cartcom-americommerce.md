@@ -40,12 +40,12 @@ Connect your **AmeriCommerce (Cart.com)** store to your AI agent to unlock profe
 List store products
 - **get_product_details**: Get product metadata
 - **create_product**: Add a new product
-- **list_orders**: List store orders
 - **get_order_details**: Get order metadata
-- **list_customers**: List customers
-- **get_customer_details**: Get customer metadata
 - **create_customer**: Add a new customer
 - **list_categories**: List product categories
+- **list_orders**: List store orders
+- **list_customers**: List customers
+- **get_customer_details**: Get customer metadata
 - **get_category_details**: Get category metadata
 
 

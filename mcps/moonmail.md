@@ -33,17 +33,18 @@ Connect your **MoonMail** account to your AI agent and optimize your email marke
 - **Growth Teams** — automate subscriber additions and monitor analytics events in real-time.
 
 
-## Available Tools (10)
-- **add_subscriber**: Add a subscriber to a list
-- **create_campaign**: Create a new email campaign
+## Available Tools (11)
+- **get_group**: Get details for a specific group
+- **pause_campaign**: Pause an active mailing campaign
+- **list_campaigns**: List all mailing campaigns
+- **list_group_recipients**: List recipients of a group
+- **list_groups**: List all subscriber groups
+- **create_campaign**: Create a new mailing campaign
+- **send_campaign**: Send a mailing campaign
+- **add_recipient**: Add a recipient to a group
+- **create_group**: Create a new subscriber group
 - **get_campaign_stats**: Get campaign performance metrics
-- **get_events**: Get email analytics events
-- **list_campaign_recipients**: List recipients of a campaign
-- **list_campaigns**: List MoonMail campaigns
-- **list_subscribers**: List members of a list
-- **list_lists**: List subscriber lists
-- **list_segments**: List audience segments
-- **send_campaign**: Send an email campaign
+- **get_campaign**: Get details for a specific campaign
 
 
 ## 💬 Prompt Examples

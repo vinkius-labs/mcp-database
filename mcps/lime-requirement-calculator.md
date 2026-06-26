@@ -14,8 +14,8 @@ This MCP server provides specialized agricultural tools to determine the exact a
 
 
 ## Available Tools (3)
-- **calculate_base_saturation_dosage**: Calculates the amount of lime required to reach a desired base saturation level
 - **calculate_smp_dosage**: Determines the lime requirement based on the SMP buffer capacity measurements
+- **calculate_base_saturation_dosage**: Calculates the amount of lime required to reach a desired base saturation level
 - **calculate_total_expenditure**: Estimates the total financial investment required for a specific field area
 
 

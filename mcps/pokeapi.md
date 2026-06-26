@@ -30,6 +30,18 @@ Connect **PokéAPI**, the definitive Pokémon database, to any AI agent and expl
 
 
 ## Available Tools (20)
+- **list_pokemon**: Use limit and offset to browse through the full catalog of 1000+ Pokémon.
+
+List all Pokémon names with pagination
+- **list_regions**: ) with their associated locations, Pokédexes, and version groups.
+
+List all Pokémon regions
+- **get_move**: Get detailed move information
+- **get_pokedex**: Get detailed Pokédex information
+- **list_items**: List all held items
+- **list_types**: ). There are 18 types in total.
+
+List all Pokémon types
 - **get_ability**: Get detailed ability information
 - **get_berry**: Get detailed berry information
 - **get_evolution_chain**: ).
@@ -37,8 +49,6 @@ Connect **PokéAPI**, the definitive Pokémon database, to any AI agent and expl
 Get evolution chain details
 - **get_generation**: Get generation details
 - **get_item**: Get detailed item information
-- **get_move**: Get detailed move information
-- **get_pokedex**: Get detailed Pokédex information
 - **get_pokemon**: ), types, abilities, height, weight, and sprite images. Accepts either the Pokémon ID or name.
 
 Get detailed Pokémon information
@@ -52,20 +62,10 @@ List all Pokémon abilities
 
 List all berries
 - **list_generations**: List all Pokémon generations
-- **list_items**: List all held items
 - **list_moves**: List all Pokémon moves
 - **list_pokedexes**: ) with their associated regions and Pokémon entries.
 
 List all Pokédexes
-- **list_pokemon**: Use limit and offset to browse through the full catalog of 1000+ Pokémon.
-
-List all Pokémon names with pagination
-- **list_regions**: ) with their associated locations, Pokédexes, and version groups.
-
-List all Pokémon regions
-- **list_types**: ). There are 18 types in total.
-
-List all Pokémon types
 
 
 ## 💬 Prompt Examples

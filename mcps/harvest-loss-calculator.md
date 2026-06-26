@@ -15,8 +15,8 @@ The Harvest Loss Calculator MCP server provides precision tools for estimating g
 
 ## Available Tools (3)
 - **retrieve_crop_benchmark**: Provides the industry standard for acceptable loss for a specific crop type
-- **assess_harvest_efficiency**: Evaluates whether current actual losses are within acceptable industry limits
 - **calculate_harvest_impact**: Calculates the total physical and financial losses resulting from cumulative harvesting inefficiencies
+- **assess_harvest_efficiency**: Evaluates whether current actual losses are within acceptable industry limits
 
 
 ## 💬 Prompt Examples

@@ -27,15 +27,14 @@ Manage candidates, jobs, and client companies with Recruit CRM and AI agents.
 - Hiring managers tracking pipeline status and decision makers.
 
 
-## Available Tools (12)
-- **create_candidate**: Add a new candidate
-- **create_job**: Create a new job posting
+## Available Tools (11)
 - **get_candidate_details**: Get details of a specific candidate
 - **get_company_details**: Get details of a specific company
 - **get_contact_details**: Get details of a specific contact
 - **get_job_details**: Get details of a specific job
 - **get_me**: Get account information
-- **list_job_applications**: List candidates assigned to a job
+- **create_candidate**: Add a new candidate
+- **create_job**: Create a new job posting
 - **list_candidates**: List recruitment candidates
 - **list_companies**: List client companies
 - **list_contacts**: List client contacts

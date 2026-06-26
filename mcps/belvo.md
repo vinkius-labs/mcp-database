@@ -35,18 +35,38 @@ Connect your **Belvo** account to any AI agent and orchestrate your financial da
 
 
 ## Available Tools (12)
-- **get_account**: Get specific account details
-- **get_investments**: List investment portfolios
-- **get_link**: Get specific connection details
-- **get_transaction**: Get specific transaction details
-- **list_accounts**: List all financial accounts across all links
-- **list_balances**: List balances for all accounts
-- **list_incomes**: List income insights for the links
-- **list_institutions**: List all supported financial institutions
-- **list_links**: List all connections (links) to financial institutions
-- **list_owners**: List owners of the financial accounts
-- **list_recurring_expenses**: List recurring expense insights
-- **list_transactions**: List all transactions
+- **get_account**: Get full details for a specific financial account by ID
+- **get_investments**: Use for wealth management and investment analysis.
+
+List investment portfolios and holdings across linked brokerage and investment accounts
+- **get_link**: Returns institution, access mode, status, refresh rates, and credential storage details.
+
+Get detailed status and metadata for a specific Belvo link connection
+- **get_transaction**: Get complete details for a specific financial transaction
+- **list_accounts**: Each account includes balance, currency, institution, type, and account number. Filter by link if needed.
+
+List all financial accounts across all Belvo links — checking, savings, credit, loans
+- **list_balances**: Use for cash position monitoring.
+
+List current and available balances for all linked accounts
+- **list_incomes**: Use for credit risk assessment and affordability checks.
+
+List income insights derived from transaction analysis across linked accounts
+- **list_institutions**: Use this to identify available institutions before creating a link.
+
+List all financial institutions supported by Belvo — banks, fintech, fiscal authorities across Latin America
+- **list_links**: Links are the core abstraction — each link represents one user connected to one institution.
+
+List all Belvo links — active connections between your app and end-user financial accounts
+- **list_owners**: Use for KYC verification and identity confirmation.
+
+List account owners — identity information for the people behind linked accounts
+- **list_recurring_expenses**: Use for budgeting analysis and subscription auditing.
+
+List recurring expense patterns — subscriptions, utility bills, loan payments detected in transactions
+- **list_transactions**: Returns paginated results. Use for spending analysis, reconciliation, or audit trails.
+
+List financial transactions across all linked accounts — debits, credits, transfers
 
 
 ## 💬 Prompt Examples

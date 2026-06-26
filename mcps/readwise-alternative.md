@@ -33,21 +33,21 @@ Ideal for researchers, students, and professionals needing instant, conversation
 - **export_highlights**: Supports incremental export with updatedAfter filter.
 
 Export highlights
-- **get_book**: Get book details
 - **list_reviews**: List review queue
 - **list_tags**: List all tags
 - **search_books**: Search books
+- **search_highlights**: Search highlights
+- **check_readwise_status**: Verify connectivity
+- **list_highlights**: Returns text, note, location, and tags.
+
+List highlights
+- **update_highlight**: Update a highlight
+- **get_book**: Get book details
 - **get_daily_review**: Get daily review
 - **get_highlight**: Get highlight details
 - **list_books_by_category**: List books by category
 - **list_books_by_source**: List books by source
 - **list_books**: List all books
-- **list_highlights**: Returns text, note, location, and tags.
-
-List highlights
-- **search_highlights**: Search highlights
-- **update_highlight**: Update a highlight
-- **check_readwise_status**: Verify connectivity
 
 
 ## 💬 Prompt Examples

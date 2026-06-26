@@ -33,14 +33,14 @@ The **Cora Bank MCP Server** attaches your corporate entity directly to your AI 
 
 ## Available Tools (8)
 - **cora_cancel_invoice**: Cancela uma cobrança (Invoice) pendente do Banco Cora
-- **cora_create_invoice**: Criar uma Cobrança Oficial (Boleto bancário + QR Code Pix) (Cora Bank)
 - **cora_get_balance**: Traz todos os recursos atuais parados ou pendentes no Cora Bank.
 
 Consulta de recursos retidos totais (Balanço / Saldo)
-- **cora_get_invoice**: Consultar os dados ou status detalhado de uma Fatura/Cobrança
-- **cora_get_statement**: Extração de histórico contábil, recebimentos e extrato de cashflow
 - **cora_list_invoices**: Lista em massa faturas/boletos e verifica seus resultados
+- **cora_create_invoice**: Criar uma Cobrança Oficial (Boleto bancário + QR Code Pix) (Cora Bank)
+- **cora_get_invoice**: Consultar os dados ou status detalhado de uma Fatura/Cobrança
 - **cora_list_payments**: Consultar um array contendo os retiros efetuados da sua base ou conta
+- **cora_get_statement**: Extração de histórico contábil, recebimentos e extrato de cashflow
 - **cora_send_pix**: Efetuar envio de TED ou Pix pagando Fornecedor ou Cliente
 
 

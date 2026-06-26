@@ -34,6 +34,7 @@ Integrate **Crelate**, the specialized recruiting CRM and applicant tracking sys
 
 ## Available Tools (10)
 - **create_contact**: Add a new candidate or contact to the database
+- **get_account_info**: Get account information and subscription details
 - **get_contact_notes**: List internal notes for a specific contact
 - **get_contact_details**: Get detailed profile for a specific candidate or contact
 - **get_job_details**: Get detailed information for a specific job order
@@ -42,7 +43,6 @@ Integrate **Crelate**, the specialized recruiting CRM and applicant tracking sys
 - **list_contacts**: List all candidate and contact records in Crelate
 - **list_jobs**: List open and past job opportunities
 - **list_crelate_users**: List internal recruiters and team members
-- **search_contacts_by_name**: Search for contacts by name keyword
 
 
 ## 💬 Prompt Examples

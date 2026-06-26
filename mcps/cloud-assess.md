@@ -36,13 +36,13 @@ Connect your **Cloud Assess** account to any AI agent and take full control of y
 
 
 ## Available Tools (8)
+- **list_student_members**: List all students (members) in Cloud Assess
 - **get_student_details**: Get detailed information for a specific student
 - **list_assessment_records**: List individual assessment results and evidence records
 - **list_training_assessors**: List all internal assessors and trainers
 - **list_training_enrolments**: List student enrolments in qualifications or units
 - **list_assessment_forms**: List specific forms and checklists captured within assessments
 - **list_training_locations**: List physical or logical training locations
-- **list_student_members**: List all students (members) in Cloud Assess
 - **list_unit_enrolment_progress**: List progress and status at the unit enrolment level
 
 

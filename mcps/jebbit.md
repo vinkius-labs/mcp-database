@@ -17,12 +17,12 @@ Empower your AI agents with Jebbit's interactive experience platform. This MCP s
 - **get_account**: Use to verify account status.
 
 Retrieves account details
-- **get_experience**: Use this to understand the structure or overall results of a specific quiz or survey.
-
-Retrieves details for a specific experience
 - **list_attributes**: g., "favorite_color", "purchase_intent") that have been captured across experiences. Essential for understanding what consumer insights are available.
 
 Lists all consumer attributes captured
+- **get_experience**: Use this to understand the structure or overall results of a specific quiz or survey.
+
+Retrieves details for a specific experience
 - **list_campaigns**: Use this to monitor where traffic to experiences is coming from.
 
 Lists all active campaigns
