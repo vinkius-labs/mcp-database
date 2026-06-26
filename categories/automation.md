@@ -5,6 +5,7 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Count Words for Agents](../mcps/context-integrity-prover.md) | Text analysis tool that counts words, characters, sentences, and paragraphs. Validates maximum length constraints so AI agents can generate text that strictly respects exact limits. |
+| [Hreflang Generator](../mcps/hreflang-generator.md) | Generate and validate SEO-compliant HTML hreflang tags and XML sitemap entries for multi-regional websites. |
 
 
 ---

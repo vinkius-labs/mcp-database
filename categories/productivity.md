@@ -80,6 +80,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [BambooHR](../mcps/bamboohr.md) | Official HR software automation — manage employee directories, time off requests, and company reports via AI. |
 | [Basecamp](../mcps/basecamp-alternative.md) | Keep your team aligned with project discussions, to-do lists, file sharing, and schedules all in one calm workspace. |
 | [BasicOps](../mcps/basicops.md) | Centralize team communication with task management, document sharing, and project tracking designed for small business clarity. |
+| [Batch Cooking Planner](../mcps/batch-cooking-planner.md) | Consolidate ingredients from multiple recipes into a single, organized shopping list. |
 | [Beamer](../mcps/beamer.md) | Manage product updates and user feedback via Beamer — create posts, track analytics, and monitor feedback directly from any AI agent. |
 | [Bear](../mcps/bear.md) | Manage your Bear notes via AI — search, create, and organize your markdown knowledge base autonomously. |
 | [Beeminder](../mcps/beeminder.md) | Commit to your goals via Beeminder — track progress, add datapoints, and monitor your road status directly from any AI agent. |
@@ -501,6 +502,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Markdown Utilities Engine](../mcps/markdown-utilities-engine.md) | Equip your AI with programmatic Markdown tools. Deterministically generate Table of Contents (TOC) with correct anchor links and format perfect Markdown tables from JSON. |
 | [MasterGo](../mcps/mastergo.md) | Collaborative design platform and UI/UX tool — manage design files, nodes, and comments via AI. |
 | [MCPFusion Developer Prover](../mcps/mcpfusion-developer-prover.md) | LLMs have never been trained on MCPFusion. They use raw z.object(), skip Presenters, mix semantic verbs, and violate MVA layering. This tool teaches the framework through structured reflection — forcing the agent to prove it understands defineModel(), Presenters, and the Model-View-Ag... |
+| [Meal Cost Calculator](../mcps/meal-cost-calculator.md) | Calculate total recipe expenses and individual serving costs based on ingredient unit prices. |
 | [Mealie (Recipe Manager)](../mcps/mealie-recipe-manager.md) | Manage your Mealie recipes, meal plans, and shopping lists directly through your AI agent. |
 | [Medication Schedule Generator](../mcps/medication-schedule-generator.md) | Generate precise medication administration timelines and audit them for safety interval violations. |
 | [Mem AI (Knowledge Workspace)](../mcps/mem-ai-knowledge-workspace.md) | Manage your knowledge base via Mem.ai — create notes, run AI semantic search, and organize collections. |
@@ -606,6 +608,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Raven Tools](../mcps/raven-tools.md) | Track SEO rankings, audit website health, and generate white-label marketing reports for your clients automatically. |
 | [Readwise](../mcps/readwise-alternative.md) | Connect your AI agents to Readwise to manage books, highlights, tags, and spaced repetition reviews directly through natural language. |
 | [Rebrandly](../mcps/rebrandly.md) | Link management platform to create and manage branded short URLs with AI. |
+| [Recipe Scaler](../mcps/recipe-scaler.md) | Precisely scale recipe ingredients while maintaining culinary proportions and practical measurements. |
 | [Reclaim.ai](../mcps/reclaimai.md) | Equip your AI to directly manage tasks, habits, and scheduling links via your smart Reclaim.ai calendar assistant. |
 | [Recruit CRM](../mcps/recruit-crm.md) | Manage candidates, jobs, and client companies with Recruit CRM and AI agents. |
 | [Refiner](../mcps/refiner.md) | Survey your SaaS users with in-app micro-surveys that capture NPS, feature feedback, and churn signals at the perfect moment. |

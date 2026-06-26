@@ -210,7 +210,6 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Smaily](../mcps/smaily-alternative.md) | Manage email marketing campaigns, subscribers, and automations directly through Smaily. |
 | [Smaily](../mcps/smaily.md) | Automate email marketing and automations via Smaily — manage subscribers, campaigns, and responders directly from any AI agent. |
 | [SmartLead](../mcps/smartlead.md) | Equip your AI agent with direct access to SmartLead — manage cold email campaigns, rotate sending accounts, and scale outreach without opening the SmartLead dashboard. |
-| [Snov.io](../mcps/snovio-alternative-1.md) | Find, verify, and manage leads with Snov.io — search domain emails, verify addresses, and add prospects to lists directly from your AI agent. |
 | [Spiritme](../mcps/spiritme.md) | Create AI-generated videos with digital human presenters that deliver personalized messages in multiple languages naturally. |
 | [SpyFu](../mcps/spyfu.md) | Automate SEO and PPC research via SpyFu — analyze domain metrics, track keyword stats, and uncover competitor ad history directly from any AI agent. |
 | [StayFi](../mcps/stayfi.md) | Connect your AI agents to StayFi to capture guest emails, manage WiFi properties, monitor networks, and track marketing analytics. |

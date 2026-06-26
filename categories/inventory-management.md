@@ -12,6 +12,7 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 | [Safety Stock Calculator](../mcps/safety-stock-calculator.md) | Calculate optimal safety stock levels using Square Root, Statistical, and Fixed Coverage methods. |
 | [Seasonality Index Calculator](../mcps/seasonality-index-calculator.md) | Calculate seasonal indices and optimize inventory planning using historical sales data. |
 | [Winevybe](../mcps/winevybe.md) | Automate sommelier intelligence via Winevybe — search global wine catalogs, check vineyard ratings, and manage virtual cellars directly from any AI agent. |
+| [Yield Calculator](../mcps/yield-calculator.md) | Calculate usable ingredient mass and waste after preparation. |
 
 
 ---

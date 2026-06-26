@@ -5,6 +5,7 @@ Explore the open database of **social-media** Model Context Protocol (MCP) serve
 | Tool Name | Description |
 |-----------|-------------|
 | [Mastodon Intelligence](../mcps/mastodon-intelligence.md) | Monitor trending hashtags, viral posts, and community pulse across any Mastodon instance with authenticated API access. |
+| [Open Graph Generator](../mcps/open-graph-generator.md) | Generates standardized Open Graph and Twitter Card HTML meta tags from provided metadata. |
 
 
 ---
