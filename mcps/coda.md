@@ -33,9 +33,9 @@ Connect your AI to **Coda**, the collaborative document platform that brings tog
 
 ## Available Tools (10)
 - **delete_rows**: Delete one or more rows from a Coda table
+- **insert_rows**: Insert new rows into a Coda table
 - **get_doc_details**: Retrieve detailed information about a specific Coda document
 - **get_formula_value**: Retrieve the current calculated value of a named formula
-- **insert_rows**: Insert new rows into a Coda table
 - **list_columns**: Retrieve a list of columns in a Coda table
 - **list_docs**: Retrieve a list of Coda documents available to you
 - **list_formulas**: Retrieve a list of named formulas in a Coda document

@@ -56,6 +56,15 @@ Get details for a specific domain in Vercel
 - **get_logs**: Optionally filter by projectId, since/until timestamps (Unix ms). Returns log entries with timestamps, messages and source. Useful for debugging deployment issues and monitoring runtime behavior.
 
 Get runtime logs for a Vercel deployment
+- **list_env_vars**: Returns variable keys, target environments (production, preview, development) and types. Variable VALUES are NOT returned for security. Provide the project ID.
+
+List environment variables for a Vercel project
+- **list_projects**: Each project represents a deployed application with its own domains, environment variables and deployment history. Optionally filter by teamId. Returns project ID, name, framework, git repo and latest deployment info.
+
+List Vercel projects
+- **list_teams**: Each team has its own set of projects, deployments and members. Returns team ID, name, slug and creation date. Use the team ID as the teamId parameter in other tools.
+
+List Vercel teams
 - **get_user**: Returns user ID, username, email, avatar and account metadata. Use this to verify your token is working correctly.
 
 Get the authenticated Vercel user
@@ -71,15 +80,6 @@ List deployments for a Vercel account or project
 - **list_domains**: Each domain includes its verification status, DNS records, SSL certificate status and redirect configuration. Optionally filter by teamId.
 
 List domains configured for a Vercel team
-- **list_env_vars**: Returns variable keys, target environments (production, preview, development) and types. Variable VALUES are NOT returned for security. Provide the project ID.
-
-List environment variables for a Vercel project
-- **list_projects**: Each project represents a deployed application with its own domains, environment variables and deployment history. Optionally filter by teamId. Returns project ID, name, framework, git repo and latest deployment info.
-
-List Vercel projects
-- **list_teams**: Each team has its own set of projects, deployments and members. Returns team ID, name, slug and creation date. Use the team ID as the teamId parameter in other tools.
-
-List Vercel teams
 
 
 ## 💬 Prompt Examples

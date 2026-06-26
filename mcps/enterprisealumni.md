@@ -14,15 +14,15 @@ Integrate **EnterpriseAlumni**, the strategic alumni engagement platform, direct
 
 ### What you can do
 
-- **Member Oversight** — List and retrieve detailed profiles, career history, and contact information for all your alumni members.
+- **Member Oversight** — Search and retrieve detailed profiles, career history, and contact information for your alumni members.
 - **Engagement Intelligence** — Monitor network engagement metrics, resolving activity levels and community participation trends.
-- **Content Management** — Access and monitor alumni events and job board postings, tracking registration and application statuses.
-- **Network Auditing** — Retrieve high-level summaries of member volume, event activity, and organizational network health instantly.
+- **Event Management** — Access and monitor alumni events and their invitee lists, tracking RSVP statuses.
+- **Network Auditing** — Retrieve high-level summaries of member volume and organizational network health instantly.
 
 ### How it works
 
 1. Connect the EnterpriseAlumni integration to your AI assistant.
-2. Authorize using your EnterpriseAlumni REST API Key (found in your admin settings).
+2. Authorize using your **Client ID** and **Client Secret** from the API Access Manager, and select your regional gateway (EU, US, or UK).
 3. Orchestrate your alumni relations and corporate community strategy through intuitive conversation.
 
 ### Who is this for?
@@ -32,17 +32,16 @@ Integrate **EnterpriseAlumni**, the strategic alumni engagement platform, direct
 - **Operations Teams** — Monitor network growth and organizational engagement metadata instantly.
 
 
-## Available Tools (10)
-- **get_enterprisealumni_metadata**: Retrieve metadata and limits for your EnterpriseAlumni account
-- **get_alumni_detailed_profile**: Get detailed profile information for a specific alumni member
-- **get_network_engagement_summary**: Retrieve a high-level summary of network engagement metrics
-- **quick_alumni_network_audit**: Retrieve a high-level summary of alumni, events, and job postings
-- **list_alumni_members**: List all members in your EnterpriseAlumni network
-- **list_alumni_engagement_campaigns**: List all outreach and engagement campaigns
-- **list_alumni_communities**: List all interest-based communities and groups within the alumni network
-- **list_alumni_events**: List all upcoming and past alumni events
-- **list_alumni_job_board**: List job opportunities available within the alumni network
-- **search_alumni_by_name_or_keyword**: Search for alumni members using a name, skill, or keyword
+## Available Tools (7)
+- **get_user_by_guid**: Get detailed profile for an alumni by their userResourceGuid
+- **search_alumni_users**: Supports filtering by first name, last name, approval status, and join dates.
+
+Search alumni users by name, status, or date criteria
+- **get_user_by_external_guid**: Get an alumni profile using an external system identifier
+- **get_user_schema**: Retrieve the user data schema from the EnterpriseAlumni platform
+- **search_alumni_events**: Search for upcoming and past alumni events
+- **list_event_invitees**: List all invitees for a specific alumni event
+- **get_alumni_network_summary**: Retrieve a high-level summary of the alumni network size and metadata
 
 
 ## 💬 Prompt Examples
@@ -50,10 +49,10 @@ Integrate **EnterpriseAlumni**, the strategic alumni engagement platform, direct
 Here are some examples of how you can interact with the **EnterpriseAlumni** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all members in the New York community."
+> "Search for alumni named 'John'."
 
 **🤖 AI Agent:**
-> I've found 45 members in the New York community, including 'John Miller' (Senior Analyst) and 'Alice Connor' (Product Manager). 5 members recently updated their professional status. Would you like to see the details for John Miller?
+> I found 12 alumni matching 'John', including 'John Miller' (Senior Analyst) and 'John Davis' (Product Manager). Would you like to see the full profile for John Miller?
 
 ---
 
@@ -61,27 +60,27 @@ Here are some examples of how you can interact with the **EnterpriseAlumni** MCP
 > "Show me upcoming alumni events."
 
 **🤖 AI Agent:**
-> I've retrieved 3 upcoming events: 'Annual Gala 2024' (London, May 15th), 'Tech Networking Night' (Virtual, May 20th), and 'Career Mentorship Workshop' (May 25th). Should I pull the registration list for the Annual Gala?
+> I retrieved 3 upcoming events: 'Annual Gala 2024' (London, May 15th), 'Tech Networking Night' (Virtual, May 20th), and 'Career Mentorship Workshop' (May 25th). Should I pull the invitee list for the Annual Gala?
 
 ---
 
 **👤 You:**
-> "Search for alumni with experience in 'Marketing'."
+> "How many alumni are in the network?"
 
 **🤖 AI Agent:**
-> I've found 12 alumni with 'Marketing' in their professional background, including 'Sarah Connor' (Marketing Director at Wayne Corp) and 'David Smith' (Brand Lead). Would you like to see Sarah's full career history?
+> Your alumni network has 2,847 registered members. The data shows steady growth with 45 new members joining in the last 30 days.
 
 
 ## ❓ FAQ
 
-**Q: How do I get an EnterpriseAlumni API Key?**
-Log in to your EnterpriseAlumni administrator dashboard, navigate to **Settings > API Integration**, and you can generate or retrieve your unique REST API Key from there.
+**Q: How do I get my Client ID and Client Secret?**
+Log in to your EnterpriseAlumni Admin Portal, expand the **Site Manager** menu, select **API Access Manager**, and click **Create Key**. You will receive a Client ID and a Client Secret — save the secret immediately, as it is only shown once.
 
-**Q: Can the agent invite new members?**
-This integration currently focuses on listing and auditing alumni members, events, and jobs. Inviting or onboarding new members should be managed via the EnterpriseAlumni platform dashboard or automated HR integrations.
+**Q: Which gateway region should I select?**
+Select the region where your alumni instance was provisioned: **eu** (Frankfurt), **us** (United States), or **uk** (United Kingdom). Contact your EnterpriseAlumni account manager if you are unsure.
 
 **Q: Does the integration show real-time engagement?**
-Yes, you can use the get_network_engagement_summary tool to retrieve high-level statistics on current network activity and participation rates across the community.
+Yes, you can use the get_alumni_network_summary tool to retrieve high-level statistics on current network activity and member counts across the community.
 
 
 ## Installation & Usage

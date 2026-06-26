@@ -10,6 +10,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Karmic Debt Calculator](../mcps/karmic-debt-calculator.md) | Identify and interpret karmic debt numbers (13, 14, 16, 19) within a numerological matrix. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
 | [Recovery Readiness Score](../mcps/recovery-readiness-score.md) | Evaluate training readiness and optimal intensity based on sleep, soreness, stress, and motivation. |
+| [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
 
 

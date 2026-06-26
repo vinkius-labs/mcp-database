@@ -37,6 +37,7 @@ Empower your AI agent to navigate the complex landscape of civic engagement with
 ## Available Tools (10)
 - **get_account_check**: Verify BallotReady connection
 - **get_ballot_measures**: Retrieve ballot measures for a specific election
+- **list_positions**: List specific offices up for election
 - **get_candidate**: Get detailed profile for a specific candidate
 - **get_districts_by_address**: Convenience tool to get districts by address
 - **get_elections_by_address**: Convenience tool to get elections by address
@@ -44,7 +45,6 @@ Empower your AI agent to navigate the complex landscape of civic engagement with
 - **list_candidates**: List candidates running for office
 - **list_districts**: Match an address to specific voting districts
 - **list_elections**: Find upcoming elections based on a specific address
-- **list_positions**: List specific offices up for election
 
 
 ## 💬 Prompt Examples

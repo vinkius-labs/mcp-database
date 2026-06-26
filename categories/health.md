@@ -28,6 +28,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Pregnancy Week Calculator](../mcps/pregnancy-week-calculator.md) | Track your pregnancy progress, from gestational age to weekly fetal milestones. |
 | [Protein Needs Calculator](../mcps/protein-needs-calculator.md) | Calculate your daily protein requirements based on weight, activity level, and goals. |
 | [Raw Diet Ratio Calculator](../mcps/raw-diet-ratio-calculator.md) | Calculate precise daily food weights for BARF and PMR raw diets based on pet weight and activity level. |
+| [Self-Compassion Scale (SCS)](../mcps/self-compassion-scale-scs.md) | Calculate and interpret Self-Compassion Scale scores. |
 | [Sport Nutrition Timing Calculator](../mcps/sport-nutrition-timing-calculator.md) | Calculate precise carbohydrate and protein timing for pre-, intra-, and post-workout nutrition based on training intensity. |
 | [Stress Load Scorer](../mcps/stress-load-scorer.md) | Calculate cumulative psychological stress and health risk using the Holmes-Rahe Scale. |
 | [UV Exposure Estimator](../mcps/uv-exposure-estimator.md) | Calculate maximum safe sun exposure time based on UV index, skin type, and SPF. |

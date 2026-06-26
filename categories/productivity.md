@@ -477,6 +477,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Leiga](../mcps/leiga.md) | Manage agile projects with AI-assisted sprint planning, task prioritization, and team workload balancing that adapts in real time. |
 | [Level Time Estimator](../mcps/level-time-estimator.md) | Estimate RPG progression time and identify gameplay efficiency bottlenecks. |
 | [LibreChat](../mcps/librechat.md) | Orchestrate your LibreChat instance — manage agents, list available models, and generate AI completions via the Agents and Open Responses APIs. |
+| [Life Satisfaction Wheel](../mcps/life-satisfaction-wheel.md) | Quantify and analyze balance across essential life dimensions. |
 | [LiftedWork](../mcps/liftedwork.md) | Connect job seekers with employment opportunities through a platform that matches skills to openings and tracks applications. |
 | [LinkAce](../mcps/linkace.md) | Manage your bookmarks, tags, and collections via the LinkAce REST API. |
 | [LinkedIn Engagement Prover](../mcps/linkedin-engagement-prover.md) | AI agents write LinkedIn posts that get zero engagement. This tool forces scroll-stopping hooks, eliminates bait tactics, ensures authentic voice with save-worthy value, optimizes format for the 2026 algorithm, and prevents algorithm violations. Built from deep research on LinkedIn 360Brew. |
@@ -647,6 +648,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Simplenote](../mcps/simplenote.md) | Manage your Simplenote notes directly from your AI assistant. Create, search, edit, and organize plain-text notes without leaving the conversation. |
 | [SimplyBook.me](../mcps/simplybookme.md) | Enable your AI agent to manage appointments, browse staff calendars, and handle client records via the SimplyBook.me scheduling platform. |
 | [Skyscanner](../mcps/skyscanner.md) | Search flights worldwide — compare prices by date, find cheapest days to fly and discover flight routes. |
+| [Sleep Cycle Calculator](../mcps/sleep-cycle-calculator.md) | Optimize your rest by finding the perfect wake-up times based on natural 90-minute sleep cycles. |
+| [Sleep Debt Tracker](../mcps/sleep-debt-tracker.md) | Quantify accumulated sleep debt, identify trends, and predict recovery timelines. |
 | [SM2 Spaced Repetition](../mcps/sm2-spaced-repetition.md) | High-performance implementation of the SM-2 algorithm for optimal review scheduling. |
 | [SmartThings](../mcps/smartthings.md) | Control and monitor your smart home ecosystem — manage devices, check real-time statuses, and trigger scenes directly from your AI agent. |
 | [SnipForm](../mcps/snipform.md) | Connect your AI agents to SnipForm to manage form submissions, block spam, handle webhooks, and analyze conversion data. |

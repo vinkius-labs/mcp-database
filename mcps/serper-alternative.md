@@ -40,9 +40,9 @@ Empower your AI agent to orchestrate your entire web discovery workflow with **S
 - **search_images**: Search for images on Google
 - **search_maps**: Search for locations on Google Maps
 - **search_news**: Search for news results on Google
-- **search_patents**: Search for patents on Google
 - **search_places**: Search for places and local businesses
 - **search_scholar**: Search for academic papers on Google Scholar
+- **search_patents**: Search for patents on Google
 - **search_shopping**: Search for shopping results on Google
 - **search_videos**: Search for videos on Google
 

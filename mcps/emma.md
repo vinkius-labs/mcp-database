@@ -37,7 +37,6 @@ Connect your **Emma** (myemma.com) account to your AI agent and take full contro
 ## Available Tools (10)
 - **list_mailings**: List sent and scheduled mailings
 - **list_members**: List mailing list members
-- **list_webhooks**: List active webhooks
 - **create_group**: Create a new member group
 - **delete_group**: Members are not deleted.
 
@@ -45,10 +44,11 @@ Delete a member group
 - **get_mailing_stats**: ) for a specific mailing ID.
 
 Get response stats for a mailing
-- **get_member**: Get specific member details
 - **list_automations**: List email automations
+- **get_member**: Get specific member details
 - **list_fields**: List custom member fields
 - **list_groups**: List Emma member groups
+- **list_webhooks**: List active webhooks
 
 
 ## 💬 Prompt Examples

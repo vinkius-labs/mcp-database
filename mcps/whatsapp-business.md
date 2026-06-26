@@ -39,22 +39,22 @@ No more manual typing into phone apps. Your AI agent becomes your WhatsApp commu
 
 
 ## Available Tools (9)
-- **send_quick_reply_buttons**: Provide the explanation text and a comma-separated list of button labels (max 3).
-
-Sends up to 3 quick-reply buttons with a message block
 - **get_business_profile**: Get the WhatsApp Business Profile for this phone number
 - **mark_as_read**: Provide the raw wamid message ID.
 
 Mark a WhatsApp message as read
+- **send_media_message**: Provide the recipient number, absolute file URL, and media type.
+
+Sends an image, video, document, or audio file via a public URL
+- **send_quick_reply_buttons**: Provide the explanation text and a comma-separated list of button labels (max 3).
+
+Sends up to 3 quick-reply buttons with a message block
 - **send_contact_card**: Provide contacts as a JSON array with name and phone fields.
 
 Send a contact card via WhatsApp
 - **send_location_pin**: Provide recipient number and lat/lng coordinates.
 
 Sends a physical location pin on the map
-- **send_media_message**: Provide the recipient number, absolute file URL, and media type.
-
-Sends an image, video, document, or audio file via a public URL
 - **send_emoji_reaction**: Provide the recipient number, the target message_id (starting with wamid...), and an emoji.
 
 Reacts to a specific WhatsApp message with an emoji

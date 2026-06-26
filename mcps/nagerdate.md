@@ -36,13 +36,13 @@ Empower your AI agent to orchestrate your entire public holiday and global event
 
 ## Available Tools (6)
 - **get_country_details**: Get additional details for a specific country
+- **get_next_holidays**: Get the next public holidays for a specific country
 - **is_holiday_today**: Check if today is a public holiday in a country
 - **get_next_holidays_worldwide**: Get the next public holidays occurring worldwide
-- **get_next_holidays**: Get the next public holidays for a specific country
-- **get_public_holidays**: Get all public holidays for a country and year
 - **list_available_countries**: Date.
 
 List all countries supported by Nager.Date
+- **get_public_holidays**: Get all public holidays for a country and year
 
 
 ## 💬 Prompt Examples

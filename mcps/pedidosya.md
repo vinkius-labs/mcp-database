@@ -37,6 +37,12 @@ Connect your **PedidosYa** partner account to any AI agent and manage the full d
 - **accept_order**: Once accepted, the restaurant commits to preparing the items within the estimated preparation time. The PedidosYa system will begin assigning a delivery courier.
 
 Accept a pending order
+- **update_product_price**: Price changes take effect immediately on the marketplace listing. The price should be in the local currency of the venue's country.
+
+Update the price of a menu product
+- **update_product_status**: Use this to mark items as temporarily unavailable (sold out) or to bring them back online without editing the full menu.
+
+Toggle a menu product on or off
 - **create_webhook**: g., new_order, order_cancelled, courier_assigned, order_delivered).
 
 Create a new webhook subscription
@@ -64,12 +70,6 @@ Reject a pending order
 
 Request a PedidosYa courier for a delivery
 - **track_shipment**: Track a courier shipment in real-time
-- **update_product_price**: Price changes take effect immediately on the marketplace listing. The price should be in the local currency of the venue's country.
-
-Update the price of a menu product
-- **update_product_status**: Use this to mark items as temporarily unavailable (sold out) or to bring them back online without editing the full menu.
-
-Toggle a menu product on or off
 
 
 ## 💬 Prompt Examples

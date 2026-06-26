@@ -5,6 +5,7 @@ Explore the open database of **psychology** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Emotion Wheel Classifier](../mcps/emotion-wheel-classifier.md) | Map raw text descriptions to Plutchik's Wheel of Emotions, identifying intensity and emotional families. |
+| [Values Alignment Score](../mcps/values-alignment-score.md) | Measure the gap between your core values and your current life reality. |
 
 
 ---

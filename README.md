@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,213 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,220 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,7 +10,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (799 servers)
+- [productivity](categories/productivity.md) (802 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
 - [developer-tools](categories/developer-tools.md) (512 servers)
 - [data-analytics](categories/data-analytics.md) (329 servers)
@@ -41,9 +41,9 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [databases](categories/databases.md) (35 servers)
 - [brain-trust](categories/brain-trust.md) (34 servers)
 - [customer-relationship-management](categories/customer-relationship-management.md) (31 servers)
+- [health](categories/health.md) (31 servers)
 - [image-video](categories/image-video.md) (31 servers)
 - [security-compliance](categories/security-compliance.md) (31 servers)
-- [health](categories/health.md) (30 servers)
 - [design-creative](categories/design-creative.md) (28 servers)
 - [friends-mcp](categories/friends-mcp.md) (28 servers)
 - [construction](categories/construction.md) (25 servers)
@@ -64,11 +64,11 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [payment-processing](categories/payment-processing.md) (11 servers)
 - [supply-chain](categories/supply-chain.md) (10 servers)
 - [inventory-management](categories/inventory-management.md) (9 servers)
+- [analytics](categories/analytics.md) (8 servers)
 - [business-operations](categories/business-operations.md) (8 servers)
 - [devops-cicd](categories/devops-cicd.md) (8 servers)
 - [gaming](categories/gaming.md) (8 servers)
 - [travel-hospitality](categories/travel-hospitality.md) (8 servers)
-- [analytics](categories/analytics.md) (7 servers)
 - [crm-sales](categories/crm-sales.md) (7 servers)
 - [project-management](categories/project-management.md) (7 servers)
 - [business](categories/business.md) (6 servers)
@@ -91,6 +91,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [science](categories/science.md) (4 servers)
 - [shipping-logistics](categories/shipping-logistics.md) (4 servers)
 - [analysis](categories/analysis.md) (3 servers)
+- [automation](categories/automation.md) (3 servers)
 - [baking](categories/baking.md) (3 servers)
 - [communication](categories/communication.md) (3 servers)
 - [nutrition](categories/nutrition.md) (3 servers)
@@ -98,7 +99,6 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [sales-crm](categories/sales-crm.md) (3 servers)
 - [sustainability](categories/sustainability.md) (3 servers)
 - [ai-ml](categories/ai-ml.md) (2 servers)
-- [automation](categories/automation.md) (2 servers)
 - [biology](categories/biology.md) (2 servers)
 - [calendar-scheduling](categories/calendar-scheduling.md) (2 servers)
 - [cardiology](categories/cardiology.md) (2 servers)
@@ -115,6 +115,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [operations-management](categories/operations-management.md) (2 servers)
 - [pet-care](categories/pet-care.md) (2 servers)
 - [product-management](categories/product-management.md) (2 servers)
+- [psychology](categories/psychology.md) (2 servers)
 - [safety & compliance](categories/safety-compliance.md) (2 servers)
 - [social-media](categories/social-media.md) (2 servers)
 - [transportation](categories/transportation.md) (2 servers)
@@ -153,7 +154,6 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [music](categories/music.md) (1 servers)
 - [music-theory](categories/music-theory.md) (1 servers)
 - [operations](categories/operations.md) (1 servers)
-- [psychology](categories/psychology.md) (1 servers)
 - [social-network](categories/social-network.md) (1 servers)
 - [structural-design](categories/structural-design.md) (1 servers)
 - [telecommunications](categories/telecommunications.md) (1 servers)

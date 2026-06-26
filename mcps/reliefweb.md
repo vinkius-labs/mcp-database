@@ -34,34 +34,28 @@ Connect to **ReliefWeb** and explore the world's largest humanitarian informatio
 - **Journalists** — discover reports, sources and organizational data for crisis coverage
 
 
-## Available Tools (9)
-- **get_countries**: Returns country names, ISO codes and associated disaster counts. Useful for finding country IDs to use in report searches.
+## Available Tools (7)
+- **get_countries**: Returns country names, ISO codes and status. Useful for finding country references to use in report or disaster searches.
 
 Search countries in the ReliefWeb database
-- **get_disasters**: Returns disaster names, types (earthquake, flood, cyclone, etc.), start dates and affected countries.
+- **get_disasters**: Returns disaster names, types (Earthquake, Flood, Cyclone, etc.), dates and affected countries.
 
 Search disasters (earthquakes, floods, cyclones, etc.)
-- **get_formats**: Returns format names and IDs (Situation Report, Assessment, Press Release, Map, etc.) for filtering reports by type.
-
-Get report formats
-- **get_jobs**: Returns job titles, organizations, locations, types and posting dates.
+- **get_jobs**: Returns job titles, organizations, locations, career categories and posting dates.
 
 Search humanitarian job postings
-- **get_organizations**: Returns organization names, types and report counts.
-
-Search humanitarian organizations
 - **get_report**: Returns full report metadata including title, body, source, themes, countries, disasters and file attachments.
 
 Get a specific report by ID
-- **get_reports**: Supports free-text query, date range filtering, and filtering by country, disaster type, theme, format, source, organization and language. Returns report titles, dates, sources, themes and links.
+- **get_reports**: Supports free-text query, date range filtering, and filtering by country, disaster type, theme, format, source and language. Returns report titles, dates, sources, themes and links.
 
 Search humanitarian reports
-- **get_sources**: Returns source names and types.
+- **get_sources**: Returns organization names, shortnames, types and countries. Covers UN agencies, NGOs, governments and academic institutions.
 
-Get report sources
-- **get_themes**: Returns theme names and IDs for filtering reports by topic (Health, Shelter, Food, Protection, etc.).
+Search humanitarian organizations and sources
+- **get_training**: Returns training titles, providers, locations, themes and registration dates.
 
-Get report themes
+Search humanitarian training opportunities
 
 
 ## 💬 Prompt Examples

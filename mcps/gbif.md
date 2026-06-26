@@ -31,13 +31,13 @@ Connect your AI agent to the **Global Biodiversity Information Facility (GBIF)**
 
 
 ## Available Tools (3)
+- **search_gbif_species**: Returns full taxonomy (Kingdom→Phylum→Class→Order→Family→Genus), taxonomic status, and occurrence counts. Try: Panthera leo, orchid, blue whale, oak.
+
+Search 2.4 billion biodiversity records for any species on Earth
 - **get_gbif_occurrences**: Optional country filter (ISO 2-letter code: US, BR, AU, GB).
 
 Find where a species has been observed worldwide
 - **get_gbif_species**: Get full species details with common names by GBIF key
-- **search_gbif_species**: Returns full taxonomy (Kingdom→Phylum→Class→Order→Family→Genus), taxonomic status, and occurrence counts. Try: Panthera leo, orchid, blue whale, oak.
-
-Search 2.4 billion biodiversity records for any species on Earth
 
 
 ## 💬 Prompt Examples

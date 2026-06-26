@@ -23,12 +23,12 @@ Requires app_id and app_key from Nutritionix. The gold standard for NLP food tra
 
 
 ## Available Tools (2)
-- **analyze_food_nutrition**: g. "3 slices of pizza and a coke", "1 cup of brown rice", "grilled salmon 200g") and get instant, precise nutritional breakdown including calories, protein, fat, carbs, fiber, sugar, sodium, and cholesterol. The most advanced NLP food parsing engine available.
-
-Analyze nutritional content of any food using natural language — powered by Nutritionix NLP
 - **search_nutritionix_foods**: Returns both generic foods and brand-specific items with calorie data.
 
 Search Nutritionix for common and branded food items
+- **analyze_food_nutrition**: g. "3 slices of pizza and a coke", "1 cup of brown rice", "grilled salmon 200g") and get instant, precise nutritional breakdown including calories, protein, fat, carbs, fiber, sugar, sodium, and cholesterol. The most advanced NLP food parsing engine available.
+
+Analyze nutritional content of any food using natural language — powered by Nutritionix NLP
 
 
 ## 💬 Prompt Examples

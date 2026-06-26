@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire public health research and poli
 
 
 ## Available Tools (4)
+- **check_api_status**: Check if the WHO GHO Athena service is operational
 - **get_health_indicator_data**: Get data for a specific WHO health indicator code
 - **list_health_dimensions**: List all observation dimensions (e.g., country, year) available
 - **list_health_indicators**: List all health indicators available in the WHO GHO database
-- **check_api_status**: Check if the WHO GHO Athena service is operational
 
 
 ## 💬 Prompt Examples

@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your entire mobile communication strategy w
 
 ## Available Tools (8)
 - **delete_message_template**: Delete a WhatsApp template
+- **send_text_message**: Note: This usually requires an active customer service window.
+
+Send a WhatsApp text message
 - **get_business_profile**: Get WhatsApp business profile
 - **get_media**: Get media information
 - **get_waba_details**: Get WABA account details
 - **list_message_templates**: List WhatsApp message templates
 - **list_phone_numbers**: List WhatsApp phone numbers
 - **send_template_message**: Send a WhatsApp template message
-- **send_text_message**: Note: This usually requires an active customer service window.
-
-Send a WhatsApp text message
 
 
 ## 💬 Prompt Examples

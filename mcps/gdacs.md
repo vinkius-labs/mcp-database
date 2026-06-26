@@ -37,28 +37,20 @@ Connect to **GDACS** (Global Disaster Alert and Coordination System) and monitor
 - **Insurance Professionals** — assess catastrophe risk and estimate potential losses
 
 
-## Available Tools (12)
-- **get_alert_detail**: Get details for a specific alert
-- **get_alerts**: Alerts are color-coded: red (high impact), orange (medium impact), green (low impact). Supports filtering by event type and time period.
-
-Get disaster alerts
-- **get_event_detail**: Get details for a specific disaster event
-- **get_event_geojson**: Returns geographic boundaries, affected areas and population exposure polygons.
-
-Get GeoJSON data for a disaster event
-- **get_event_list**: Supports filtering by event type (EQ=earthquake, TC=cyclone, FL=flood, VO=volcano, WF=wildfire, DR=drought), date range, and time period. Returns event names, types, magnitudes, alert levels, start dates and affected countries.
-
-Search disaster events
-- **get_impacts**: Returns estimated population affected, fatalities, economic losses and confidence levels.
-
-Get impact estimates for a disaster event
-- **get_latest_cyclones**: Returns cyclone names, categories, wind speeds, locations, alert levels and forecast tracks.
-
-Get latest tropical cyclones worldwide
+## Available Tools (8)
 - **get_latest_droughts**: Returns drought locations, start dates, severity levels, alert levels and affected populations.
 
 Get latest drought events worldwide
-- **get_latest_earthquakes**: Returns magnitude, depth, location, alert level and affected countries. Optionally filter by minimum magnitude and number of days.
+- **get_event_data**: Use the eventid and eventtype from event list results.
+
+Get detailed data for a specific disaster event
+- **get_event_list**: Supports filtering by event type (EQ=earthquake, TC=cyclone, FL=flood, VO=volcano, WF=wildfire, DR=drought), alert level (red, orange, green), and date range. Returns GeoJSON features with event names, types, magnitudes, alert levels, dates and affected countries.
+
+Search disaster events
+- **get_latest_cyclones**: Returns cyclone names, categories, wind speeds, locations, alert levels and forecast tracks.
+
+Get latest tropical cyclones worldwide
+- **get_latest_earthquakes**: Returns magnitude, depth, location, alert level and affected countries. Optionally filter by minimum magnitude, alert level and date range.
 
 Get latest earthquakes worldwide
 - **get_latest_floods**: Returns flood locations, start dates, alert levels, affected populations and severity estimates.

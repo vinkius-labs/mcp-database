@@ -29,8 +29,8 @@ The **Asset Panda MCP Server** provides a flexible natural language interface to
 
 
 ## Available Tools (8)
-- **create_object**: Create a new object (asset) in a group
 - **get_account_check**: Verify Asset Panda account connection
+- **create_object**: Create a new object (asset) in a group
 - **get_group**: Get metadata for a specific asset group
 - **get_object**: Get details for a specific object (asset)
 - **list_groups**: List all asset groups (entities) in Asset Panda
