@@ -10,7 +10,6 @@ Explore the open database of **real-estate** Model Context Protocol (MCP) server
 | [BIMobject](../mcps/bimobject.md) | Access BIMobject marketplace — search building products, download technical files, and manage manufacturer data directly from any AI agent. |
 | [Bridge Data Output](../mcps/bridge-data-output.md) | Access standardized real estate data via the Bridge API — browse MLS listings, property details, and agent info directly from any AI agent. |
 | [Brokermint](../mcps/brokermint.md) | Manage real estate back-office via Brokermint — track transactions, contacts, and commissions directly from any AI agent. |
-| [Construction Schedule Calculator](../mcps/construction-schedule-calculator.md) | Calculate estimated project duration in weeks based on total built area and building complexity type (single-family, multi-family, or commercial). |
 | [DealMachine](../mcps/dealmachine.md) | Equip your AI agent to manage real estate leads, track properties, and monitor marketing campaigns via the DealMachine API. |
 | [Dotloop](../mcps/dotloop.md) | Manage real estate transactions via Dotloop — list loops, manage participants, and oversee documents. |
 | [Energy Efficiency Estimator](../mcps/energy-efficiency-estimator.md) | Classify your home's energy performance (A-E) and pinpoint specific improvements using building envelope metrics. |

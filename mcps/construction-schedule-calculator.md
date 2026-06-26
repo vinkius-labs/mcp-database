@@ -5,22 +5,18 @@
 
 ## Overview
 
-**Category:** [real-estate](../categories/real-estate.md)
+**Category:** [construction](../categories/construction.md)
 
-Calculate estimated project duration in weeks based on total built area and building complexity type (single-family, multi-family, or commercial).
+Estimate construction phase durations and project timelines based on building type and area.
 
 ## Description
-**Project Scope:** Estimating construction timelines is complex because duration depends not only on the sheer size of the build but also on its inherent complexity and structural type. A simple square footage calculation fails to capture these crucial variables.
+This MCP server provides precise estimation tools for construction planning. Use `get_phase_durations` to calculate the number of weeks required for each phase, including site work, foundation, and finishes. You can also use `get_schedule_summary` to get a high-level overview of total project duration in weeks and months, or `get_construction_reference` to see supported construction types like Residential, Commercial, and Industrial.
 
 
 ## Available Tools (3)
-- **query_base_phase_durations**: No inputs required.
-
-Retrieve standard base durations for each construction phase
-- **query_type_complexity_factors**: Retrieve complexity multipliers for a building type
-- **compute_schedule_proportionality**: Pass multiplier data as JSON from query_type_complexity_factors output.
-
-Calculate estimated construction schedule by phase
+- **get_construction_reference**: Retrieve metadata for available construction types
+- **get_phase_durations**: Calculate estimated duration for each construction phase
+- **get_schedule_summary**: Get a high-level summary of the project timeline
 
 
 ## 💬 Prompt Examples
@@ -28,38 +24,38 @@ Calculate estimated construction schedule by phase
 Here are some examples of how you can interact with the **Construction Schedule Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I am building a 2000 square unit multi-family residential complex. Estimate the total construction time."
+> "How long will a 500 square meter residential construction take for each phase?"
 
 **🤖 AI Agent:**
-> The estimated duration for your project is X weeks. This estimate was derived by first querying complexity factors using `query_type_complexity_factors` (multi-family), fetching base rates via `query_base_phase_durations`, and finally running the calculation through `compute_schedule_proportionality` with 2000 sq units.
+> For a 500 sqm residential project, the estimated durations are: Site Work: 2 weeks, Foundation: 3 weeks, Framing: 4 weeks, MEP Rough-in: 3 weeks, Insulation: 1 week, Drywall: 2 weeks, Finishes: 4 weeks, and Final Site Work: 1 week.
 
 ---
 
 **👤 You:**
-> "Calculate the timeline for a small, simple single-family home of 800 square units."
+> "Give me a summary for a 2000 sqm industrial project."
 
 **🤖 AI Agent:**
-> The projected schedule is Y weeks. This calculation used `query_type_complexity_factors` for 'single_family' and then applied the base rates retrieved from `query_base_phase_durations` using the core function, `compute_schedule_proportionality`, with 800 sq units.
+> The total estimated duration for your 2000 sqm industrial project is 45 weeks, which is approximately 10 months. The project scale is classified as Large.
 
 ---
 
 **👤 You:**
-> "What is the estimated construction time for a large commercial office space of 5000 square units?"
+> "What are the available construction types?"
 
 **🤖 AI Agent:**
-> The total estimate is Z weeks. The process involved determining the high complexity multipliers using `query_type_complexity_factors` for 'commercial' and then calculating the proportional time across all phases with the input of 5000 square units into `compute_schedule_proportionality`.
+> The supported construction types are Residential (lower complexity), Commercial (medium complexity), and Industrial (high complexity).
 
 
 ## ❓ FAQ
 
-**Q: What inputs are required to estimate a project schedule?**
-You must provide the total built area in square units and specify the building type (single_family, multi_family, or commercial). The system uses `query_type_complexity_factors` to set multipliers and then uses `compute_schedule_proportionality` with these factors.
+**Q: How do I calculate the duration for specific phases?**
+Use the `get_phase_durations` tool by providing your construction type and the total project area.
 
-**Q: Does the tool account for different building types?**
-Yes. The `query_type_complexity_factors` tool determines the intrinsic difficulty of your project (e.g., commercial vs. single-family). This factor is then applied by `compute_schedule_proportionality` to ensure accurate time scaling for each phase.
+**Q: What construction types are supported?**
+The server supports Residential, Commercial, and Industrial construction types. You can check all details using `get_construction_reference`.
 
-**Q: What kind of phases does the calculation cover?**
-The estimate covers all major sequential construction stages: Foundation, Structure, Masonry, Installations (MEP), and Finishing. The base rates are provided by `query_base_phase_durations`, which feed into the final calculation via `compute_schedule_proportionality`.
+**Q: Can I get a total project timeline summary?**
+Yes, use the `get_schedule_summary` tool to retrieve the total estimated weeks and months for your project.
 
 
 ## Installation & Usage

@@ -101,6 +101,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Bored](../mcps/bored.md) | Find the perfect activity to beat boredom — filter by category, participants, price, and accessibility directly from your AI agent. |
 | [Bounsel](../mcps/bounsel.md) | Manage your contract lifecycle via Bounsel — list documents, automate templates, and request signatures directly from any AI agent. |
 | [BoxHero](../mcps/boxhero.md) | Manage your inventory via BoxHero — list items, track stock transactions, and handle storage locations directly from any AI agent. |
+| [BPM Calculator](../mcps/bpm-calculator.md) | Convert BPM into rhythmic durations, frequencies, and musical tempo classifications. |
 | [BR Business Days Calculator](../mcps/br-business-days-calculator.md) | Stop LLMs from calculating SLAs incorrectly. An local, deterministic engine that adds business days while perfectly avoiding weekends and Brazilian national holidays. |
 | [Break-even Price Calculator](../mcps/break-even-price-calculator.md) | Calculate commodity break-even prices, margin targets, and productivity requirements. |
 | [Breakthrough Ideation Prover](../mcps/breakthrough-ideation-prover.md) | AI agents default to safe, obvious ideas or hallucinate impossible ones. This tool forces breakthrough ideation: challenge convention with facts, integrate real constraints, map a concrete roadmap, and prove feasibility for every blocker. Radical AND realizable. |
@@ -576,6 +577,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Play.ht (AI Voice Generation & TTS)](../mcps/playht-ai-voice-generation-tts.md) | Generate ultra-realistic AI voices and convert text to speech instantly using Play.ht's advanced neural engine. |
 | [Plecto](../mcps/plecto.md) | Automate KPI dashboards and data tracking via Plecto — manage registrations, dashboards, and teams directly from any AI agent. |
 | [Pointagram](../mcps/pointagram.md) | Motivate your sales team with gamified leaderboards, competitions, and rewards that turn KPIs into engaging daily challenges. |
+| [Polyrhythm Calculator](../mcps/polyrhythm-calculator.md) | Calculate precise alignment, attack timestamps, and subdivision grids for complex polyrhythms. |
 | [Pomodoro Mental Health Tracker](../mcps/pomodoro-mental-health-tracker.md) | Prevent burnout by adapting focus cycles with mandatory active breaks, ensuring sustained mental energy throughout your workday. |
 | [PracticePanther](../mcps/practicepanther.md) | Manage law practice via PracticePanther — matters, contacts, time tracking, bills, payments, tasks, and calendar. |
 | [PrecisionConvert Unit Engine](../mcps/precisionconvert-unit-engine.md) | Universal unit conversion intelligence — transform physical values via AI. |

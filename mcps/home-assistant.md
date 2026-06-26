@@ -48,6 +48,30 @@ Your AI becomes a smart home assistant, helping you manage lighting, climate, me
 Check if the Home Assistant API is running
 - **get_calendar_events**: Get events from a Home Assistant calendar
 - **list_ha_calendars**: List all calendars configured in Home Assistant
+- **check_ha_configuration**: Check Home Assistant configuration validity
+- **list_ha_components**: List all loaded components/integrations in Home Assistant
+- **get_ha_config**: Get the Home Assistant configuration details
+- **list_ha_events**: Useful for understanding what events Home Assistant is tracking.
+
+List all event types currently registered in Home Assistant
+- **get_entity_state**: Use entity IDs from list_entity_states (e.g., light.living_room, climate.bedroom, sensor.temperature).
+
+Get the current state of a specific entity
+- **get_entity_history**: Useful for analyzing trends and past behavior.
+
+Get historical state data for an entity
+- **get_logbook_entries**: Can be filtered by entity and time range.
+
+Get Home Assistant logbook entries
+- **render_ha_template**: Useful for accessing HA template functions and state from the API.
+
+Render a Jinja2 template in Home Assistant
+- **list_available_services**: g., light: turn_on, turn_off, toggle; climate: set_temperature, set_hvac_mode). Essential for discovering what actions can be performed.
+
+List all available services across all domains
+- **list_entity_states**: Each entity includes entity_id, state, last_changed timestamp, and attributes. Essential for discovering available devices.
+
+List all entity states in Home Assistant
 - **call_ha_service**: This is the primary way to control devices in Home Assistant.
 
 COMMON SERVICE CALLS:
@@ -77,33 +101,9 @@ EXAMPLES:
 - "Set bedroom temperature to 20" → domain="climate", service="set_temperature", service_data={"entity_id":"climate.bedroom","temperature":20}
 
 Call a Home Assistant service on a domain
-- **check_ha_configuration**: Check Home Assistant configuration validity
-- **list_ha_components**: List all loaded components/integrations in Home Assistant
-- **get_ha_config**: Get the Home Assistant configuration details
-- **list_ha_events**: Useful for understanding what events Home Assistant is tracking.
-
-List all event types currently registered in Home Assistant
 - **fire_ha_event**: The event type must match automation triggers configured in Home Assistant.
 
 Fire a custom event in Home Assistant
-- **get_entity_state**: Use entity IDs from list_entity_states (e.g., light.living_room, climate.bedroom, sensor.temperature).
-
-Get the current state of a specific entity
-- **get_entity_history**: Useful for analyzing trends and past behavior.
-
-Get historical state data for an entity
-- **get_logbook_entries**: Can be filtered by entity and time range.
-
-Get Home Assistant logbook entries
-- **render_ha_template**: Useful for accessing HA template functions and state from the API.
-
-Render a Jinja2 template in Home Assistant
-- **list_available_services**: g., light: turn_on, turn_off, toggle; climate: set_temperature, set_hvac_mode). Essential for discovering what actions can be performed.
-
-List all available services across all domains
-- **list_entity_states**: Each entity includes entity_id, state, last_changed timestamp, and attributes. Essential for discovering available devices.
-
-List all entity states in Home Assistant
 
 
 ## 💬 Prompt Examples

@@ -5,6 +5,7 @@ Explore the open database of **analysis** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Chord Progression Analyzer](../mcps/chord-progression-analyzer.md) | Analyze chord sequences to identify Roman numeral functions, harmonic patterns, and emotional context. |
+| [Tempo Tap Analyzer](../mcps/tempo-tap-analyzer.md) | Analyze rhythmic timing, BPM, and groove stability from tap sequences. |
 | [Voice Leading Checker](../mcps/voice-leading-checker.md) | Analyze musical voice-leading integrity between chord voicings using classical harmonic principles. |
 
 

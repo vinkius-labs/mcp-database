@@ -35,6 +35,9 @@ No digging into CURL terminal payloads or writing Python scripts for basic docum
 
 
 ## Available Tools (6)
+- **search_vectors**: Provide the collection name, a text query, and a vector_query string (e.g., "vec:(0.1, 0.2, ...)").
+
+Performs a vector similarity search combined with optional text filtering
 - **create_collection**: Provide the schema details as a JSON object.
 
 Creates a new search collection with a specific schema
@@ -46,9 +49,6 @@ Permanently removes a document from a collection by its ID
 
 Adds or updates a document in a search collection
 - **list_vector_collections**: Lists all collections in the Typesense instance
-- **search_vectors**: Provide the collection name, a text query, and a vector_query string (e.g., "vec:(0.1, 0.2, ...)").
-
-Performs a vector similarity search combined with optional text filtering
 
 
 ## 💬 Prompt Examples

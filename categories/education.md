@@ -7,13 +7,17 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Chess.com](../mcps/chesscom.md) | Access Chess.com player profiles, stats, games, puzzles, and leaderboards directly from any AI agent. |
 | [Chess.com Global Intelligence](../mcps/chesscom-global-intelligence.md) | The definitive server for Chess.com — track player ratings, historical games, and daily puzzles via AI. |
 | [Chinese Zodiac Calculator](../mcps/chinese-zodiac-calculator.md) | Discover your Chinese zodiac animal, element, and astrological compatibility. |
+| [Circle of Fifths Navigator](../mcps/circle-of-fifths-navigator.md) | Navigate musical keys, identify tonal relationships, and plan modulations using the Circle of Fifverts framework. |
 | [ENEM Score Calculator](../mcps/enem-score-calculator.md) | Calculate ENEM scores using simplified IRT, compute averages, and simulate university admission feasibility. |
 | [Global Scholarship Deadline Tracker](../mcps/global-scholarship-deadline-tracker.md) | Instantly calculate urgency and generate comprehensive document checklists for global scholarships (FUVEST, Erasmus+, DAAD). |
 | [GPA Calculator](../mcps/gpa-calculator.md) | Calculate weighted GPA for US (4.0) and Brazilian (10.0) scales, including honors classification. |
 | [GPA Converter](../mcps/gpa-converter.md) | Convert academic grades between different scales and calculate weighted averages. |
 | [IELTS Band Estimator](../mcps/ielts-band-estimator.md) | Estimate your IELTS band score, CEFR proficiency level, and discover matching visa and university requirements. |
+| [Interval Calculator](../mcps/interval-calculator.md) | Calculate musical intervals, properties, and note frequencies. |
 | [Language Proficiency Mapper](../mcps/language-proficiency-mapper.md) | Translate raw exam scores (IELTS, TOEFL, DELF, etc.) into CEFR levels and check visa/university requirements. |
+| [Mode Calculator](../mcps/mode-calculator.md) | Derive and explore the seven musical modes from any major or minor parent scale. |
 | [Numerology Name Calculator](../mcps/numerology-name-calculator.md) | Calculate Expression, Soul Urge, and Personality numbers using Pythagorean numerology. |
+| [Relative & Parallel Key Finder](../mcps/relative-parallel-key-finder.md) | Instantly discover relative, parallel, and related musical keys based on any input key. |
 | [Stanford bioRxiv](../mcps/stanford-biorxiv.md) | Search and retrieve preprint research papers in biology and life sciences from the bioRxiv open access repository. |
 | [Stanford CrossRef](../mcps/stanford-crossref.md) | Query scholarly metadata for millions of academic publications with DOI resolution, citation tracking, and publisher data. |
 | [Stanford OpenAlex](../mcps/stanford-openalex.md) | Explore the global research landscape with open access to scholarly works, authors, institutions, and citation graphs. |

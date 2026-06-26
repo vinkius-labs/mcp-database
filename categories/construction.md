@@ -8,6 +8,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Area Program Calculator](../mcps/area-program-calculator.md) | Calculates minimum required total area for any project based on room functions and structural complexity. |
 | [Concrete Yardage Calculator](../mcps/concrete-yardage-calculator.md) | Calculate concrete volume, 80lb bag requirements, and regional cost estimates for slabs, footings, walls, and columns. |
 | [Construction Cost Estimator](../mcps/construction-cost-estimator.md) | Instantly get a precise cost range estimate for any construction project using area, local region data, and desired quality standard. |
+| [Construction Schedule Calculator](../mcps/construction-schedule-calculator.md) | Estimate construction phase durations and project timelines based on building type and area. |
 | [Drywall Quantity Calculator](../mcps/drywall-quantity-calculator.md) | Calculate the exact number of drywall sheets, screws, and tape needed for your construction project. |
 | [Electrical Panel Load Calculator](../mcps/electrical-panel-load-calculator.md) | Calculate residential electrical load requirements based on NEC Article 220 standards to determine panel capacity and conductor sizing. |
 | [Fieldwire](../mcps/fieldwire.md) | Manage construction projects via Fieldwire — track tasks, organize floorplans, and coordinate field teams directly from any AI agent. |
@@ -25,6 +26,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Roofing Squares Calculator](../mcps/roofing-squares-calculator.md) | Calculate roofing squares and material requirements based on roof pitch, area, and complexity. |
 | [Shading Device Calculator](../mcps/shading-device-calculator.md) | Calculate precise dimensions for horizontal and vertical solar shading devices. |
 | [Thermal Mass Estimator](../mcps/thermal-mass-estimator.md) | Calculate thermal lag, amplitude damping, and U-value for wall structures based on material properties. |
+| [US ADA Compliance Checker](../mcps/us-ada-compliance-checker.md) | Verify architectural elements against US ADA accessibility standards. |
 | [Water Heater Sizing Calculator](../mcps/water-heater-sizing-calculator.md) | Calculate required First Hour Rating (FHR), tank capacity, and efficiency benchmarks for water heaters based on occupancy and fuel type. |
 | [Waterproofing Area Calculator](../mcps/waterproofing-area-calculator.md) | Calculate material quantity, consumption, and estimated costs for waterproofing projects across various environments. |
 
