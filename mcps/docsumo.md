@@ -34,12 +34,12 @@ Integrate **DocSumo**, the advanced Intelligent Document Processing (IDP) platfo
 
 ## Available Tools (10)
 - **get_docsumo_account_metadata**: Retrieve metadata and usage limits for your DocSumo account
+- **list_failed_doc_extractions**: Identify documents that failed the extraction process (mock logic)
 - **get_document_extraction_data**: Get the structured data extracted from a specific document
 - **quick_idp_health_audit**: Retrieve a high-level summary of document processing activity and success rates
 - **list_successfully_parsed_docs**: Identify documents that have been successfully processed and verified
 - **list_docsumo_document_types**: List all document types (e.g., invoices, bank statements) configured in DocSumo
 - **list_processed_documents**: List all documents processed by DocSumo, optionally filtered by document type
-- **list_failed_doc_extractions**: Identify documents that failed the extraction process (mock logic)
 - **list_latest_extraction_results**: Identify the most recently processed documents across all types
 - **list_documents_awaiting_review**: Identify documents that require manual review due to low extraction confidence
 - **search_documents_by_filename**: Search for processed documents using a filename keyword

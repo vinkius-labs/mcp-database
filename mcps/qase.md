@@ -33,14 +33,14 @@ Connect your **Qase** workspace to any AI agent and integrate test management de
 
 
 ## Available Tools (10)
+- **list_plans**: Lists all test plans in a project
 - **list_projects**: Lists all projects in Qase
-- **get_project**: Retrieves details for a specific project
 - **list_cases**: Lists test cases in a project
+- **get_project**: Retrieves details for a specific project
 - **get_case**: Retrieves details for a specific test case
 - **list_suites**: Lists test suites in a project
 - **list_runs**: Lists all test runs in a project
 - **get_run**: Retrieves details for a specific test run
-- **list_plans**: Lists all test plans in a project
 - **list_milestones**: Lists all milestones in a project
 - **list_defects**: Lists all defects linked to test case failures
 

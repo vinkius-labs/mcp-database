@@ -34,16 +34,16 @@ Connect your **Blueshift** account to any AI agent and orchestrate your omnichan
 
 
 ## Available Tools (10)
+- **list_segments**: List all customer segments
 - **create_update_customer**: Create or update a customer profile
+- **list_campaigns**: List all marketing campaigns
+- **list_catalogs**: List all data catalogs
+- **track_event**: Track a custom user event
 - **get_campaign_detail**: Get detailed report for a specific campaign
 - **get_campaign_performance**: Get high-level performance summary for all campaigns
 - **get_catalog_items**: Retrieve items from a specific catalog
 - **get_customer**: Retrieve a customer profile
 - **get_event_history**: Get history of events for a user
-- **list_campaigns**: List all marketing campaigns
-- **list_catalogs**: List all data catalogs
-- **list_segments**: List all customer segments
-- **track_event**: Track a custom user event
 
 
 ## 💬 Prompt Examples
