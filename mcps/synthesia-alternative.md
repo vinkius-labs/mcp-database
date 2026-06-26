@@ -35,8 +35,10 @@ Connect your **Synthesia** AI video account to any AI agent and simplify how you
 
 
 ## Available Tools (10)
+- **list_webhooks**: List configured webhooks
 - **create_video_from_template**: Generate video using a Synthesia template
 - **create_video**: Create a new AI avatar video
+- **list_videos**: List your generated videos
 - **create_webhook**: completed or video.failed.
 
 Create a new notification webhook
@@ -45,8 +47,6 @@ Create a new notification webhook
 - **get_video_details**: Get details and status for a video
 - **list_avatars**: List available AI avatars
 - **list_templates**: List your video templates
-- **list_videos**: List your generated videos
-- **list_webhooks**: List configured webhooks
 
 
 ## 💬 Prompt Examples

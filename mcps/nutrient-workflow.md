@@ -27,13 +27,13 @@ Connect your **Nutrient Workflow** (formerly Integrify) environment to any AI ag
 
 
 ## Available Tools (10)
+- **list_processes**: List Nutrient Workflow processes
+- **list_reports**: List available reports
+- **list_requests**: List active workflow requests
 - **complete_task**: Complete a workflow task
 - **get_process**: Get details for a specific process
 - **get_request**: Get details for a specific request
 - **get_task**: Get details for a specific task
-- **list_processes**: List Nutrient Workflow processes
-- **list_reports**: List available reports
-- **list_requests**: List active workflow requests
 - **list_user_tasks**: List pending tasks for a user
 - **list_users**: List tenant users
 - **start_request**: Start a new workflow request

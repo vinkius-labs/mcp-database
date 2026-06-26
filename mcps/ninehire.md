@@ -43,12 +43,12 @@ Add a candidate manually
 - **get_applicant_profile**: Get details for a specific candidate
 - **get_job_details**: Get details for a specific job
 - **get_authenticated_user_info**: Get current account profile
-- **list_job_applicants**: List candidates and applicants
-- **list_organization_departments**: List company departments
-- **list_candidate_evaluations**: Get evaluations for a candidate
 - **list_job_postings**: Supports filtering by title, job group, and employment type.
 
 List all job openings
+- **list_job_applicants**: List candidates and applicants
+- **list_organization_departments**: List company departments
+- **list_candidate_evaluations**: Get evaluations for a candidate
 - **list_job_locations**: List hiring locations
 - **list_hiring_teams**: List internal hiring teams
 - **list_configured_webhooks**: List active webhooks

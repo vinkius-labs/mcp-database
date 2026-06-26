@@ -51,7 +51,7 @@ Explore the open database of **sales-automation** Model Context Protocol (MCP) s
 | [Proxycurl (LinkedIn Data)](../mcps/proxycurl-linkedin-data.md) | Enrich company and professional data via Proxycurl — lookup websites, funding history, employee profiles, and competitive intelligence directly from your AI agent. |
 | [Skylink](../mcps/skylink.md) | Connect your AI agents to Skylink to manage leads, deals, calls, contacts, tasks, and agent performance in a real estate CRM. |
 | [Snov.io](../mcps/snovio-alternative.md) | Find business emails, verify deliverability, and run multi-step drip campaigns that fill your outbound sales pipeline. |
-| [Snov.io](../mcps/snovio-alternative-1.md) | Find business emails, verify deliverability, and run multi-step drip campaigns that fill your outbound sales pipeline. |
+| [Snov.io](../mcps/snovio-alternative-1.md) | Find, verify, and manage leads with Snov.io — search domain emails, verify addresses, and add prospects to lists directly from your AI agent. |
 | [Snov.io](../mcps/snovio.md) | Equip your AI agent with direct access to Snov.io — find emails, verify addresses, automate drip campaigns, and manage prospect lists without opening the Snov dashboard. |
 | [SugarCRM](../mcps/sugarcrm.md) | Intelligent CRM platform for sales and marketing. |
 | [SugarCRM (Enterprise CRM & Customer Success API)](../mcps/sugarcrm-enterprise-crm-customer-success-api.md) | Manage SugarCRM records, relationships, and customer data directly from your AI agent. |

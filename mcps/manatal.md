@@ -27,13 +27,13 @@ Connect your **Manatal** account to any AI agent and take full control of your r
 
 
 ## Available Tools (10)
+- **list_career_pages**: List all career pages
 - **get_application**: Get details for a specific application
 - **get_candidate**: Get details for a specific candidate
 - **get_job**: Get details for a specific job
 - **get_organization**: Get details for a specific organization
 - **list_applications**: List all applications
 - **list_candidates**: List all candidates
-- **list_career_pages**: List all career pages
 - **list_departments**: List all departments
 - **list_jobs**: List all jobs
 - **list_organizations**: List all organizations

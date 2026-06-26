@@ -34,14 +34,20 @@ Connect your **Unsplash** developer account to any AI agent and integrate the wo
 
 
 ## Available Tools (28)
+- **get_photo**: Get a single photo by ID
+- **search_users**: Search users by keyword
 - **add_photo_to_collection**: Add a photo to a collection (requires user auth)
+- **list_user_photos**: List photos uploaded by a user
+- **remove_photo_from_collection**: Remove a photo from a collection (requires user auth)
+- **search_collections**: Search collections by keyword
+- **search_photos**: Search photos by keyword
+- **track_photo_download**: Track a photo download (Required for attribution)
 - **create_collection**: Create a new collection (requires user auth)
 - **delete_collection**: Delete a collection (requires user auth)
 - **get_collection_photos**: Get photos in a specific collection
 - **get_collection**: Get a single collection by ID
 - **get_me**: Get the authenticated user profile
 - **get_photo_statistics**: Get statistics for a specific photo
-- **get_photo**: Get a single photo by ID
 - **get_random_photo**: Get one or more random photos
 - **get_related_collections**: List related collections for a given collection ID
 - **get_topic_photos**: Get photos for a specific topic
@@ -53,12 +59,6 @@ Connect your **Unsplash** developer account to any AI agent and integrate the wo
 - **list_photos**: List photos from the editorial feed
 - **list_topics**: List all topics
 - **list_user_collections**: List collections created by a user
-- **list_user_photos**: List photos uploaded by a user
-- **remove_photo_from_collection**: Remove a photo from a collection (requires user auth)
-- **search_collections**: Search collections by keyword
-- **search_photos**: Search photos by keyword
-- **search_users**: Search users by keyword
-- **track_photo_download**: Track a photo download (Required for attribution)
 - **unlike_photo**: Remove a like from a photo on behalf of the authenticated user
 - **update_collection**: Update an existing collection (requires user auth)
 - **update_me**: Update the authenticated user profile

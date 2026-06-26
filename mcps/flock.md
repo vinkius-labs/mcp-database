@@ -40,14 +40,6 @@ Connect your **Flock** bot to any AI agent and take full control of your team co
 - **channels_get_info**: Retrieve explicit Channel descriptions and banner logic mappings
 - **channels_list_public**: Enumerate explicitly attached `public` channels active within Flock
 - **channels_list_members**: Identify explicit Active UUIDs directly attached evaluating Channel ingress
-- **chat_fetch_messages**: Extracts raw JSON objects mapping historical strings natively returned by `chat.fetchMessages`.
-
-Read recent structural Chat payloads targeting a Flock Room
-- **users_get_metadata**: Perform structural extraction of metadata linked to a Flock Identity
-- **groups_get_info**: Inspect deep internal credentials identifying a precise Private Group
-- **groups_list_private**: Returns arrays necessary to retrieve correct routing UUIDs.
-
-Identify bounded Private Groups tracking strict IAM boundaries
 - **groups_list_members**: Crucial for verifying sensitive message targets.
 
 Audit IAM boundaries explicitly granting read permissions to a Group
@@ -57,6 +49,14 @@ Identify precise active Human constraints navigating the entire Flock company
 - **chat_send_message**: Detects if formatted `<flockml>` definitions are passed and converts the payload dynamically bypassing standard Markdown limits rendering rich enterprise attachments.
 
 Provision a massively fast payload strictly into an established Flock Chat
+- **chat_fetch_messages**: Extracts raw JSON objects mapping historical strings natively returned by `chat.fetchMessages`.
+
+Read recent structural Chat payloads targeting a Flock Room
+- **users_get_metadata**: Perform structural extraction of metadata linked to a Flock Identity
+- **groups_get_info**: Inspect deep internal credentials identifying a precise Private Group
+- **groups_list_private**: Returns arrays necessary to retrieve correct routing UUIDs.
+
+Identify bounded Private Groups tracking strict IAM boundaries
 
 
 ## 💬 Prompt Examples

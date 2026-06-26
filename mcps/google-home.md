@@ -68,6 +68,12 @@ List all structures (homes) in your Google Nest account
 - **set_fan_timer**: Turns the fan on for a specified duration. Duration is optional and defaults to the thermostat setting.
 
 Set the fan timer on a Nest thermostat
+- **set_thermostat_range**: Useful for HEATCOOL mode to define the comfort range.
+
+Set both heating and cooling temperatures on a Nest thermostat
+- **stop_camera_stream**: Use the stream token returned from generate_camera_stream to properly terminate the stream session.
+
+Stop an active camera stream from a Nest camera or doorbell
 - **set_thermostat_cool**: Use this when the thermostat is in COOL or HEATCOOL mode.
 
 Set the cooling temperature on a Nest thermostat
@@ -95,12 +101,6 @@ EXAMPLES:
 - "Set thermostat to cool" → call with device_id, mode="COOL"
 
 Set the mode of a Nest thermostat
-- **set_thermostat_range**: Useful for HEATCOOL mode to define the comfort range.
-
-Set both heating and cooling temperatures on a Nest thermostat
-- **stop_camera_stream**: Use the stream token returned from generate_camera_stream to properly terminate the stream session.
-
-Stop an active camera stream from a Nest camera or doorbell
 
 
 ## 💬 Prompt Examples

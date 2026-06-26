@@ -34,13 +34,9 @@ Connect **AppGallery Connect** to your AI agent and manage your mobile app lifec
 
 
 ## Available Tools (11)
-- **get_app_info**: The appId can be found via list_apps.
-
-Get detailed information for a specific application
 - **get_app_language_info**: g. "en-US", "zh-CN", "pt-BR").
 
 Get localized app information for a specific language
-- **get_comments**: Get user comments and reviews for an application
 - **get_download_stats**: Dates must be in YYYYMMDD format.
 
 Get download statistics for an application
@@ -56,6 +52,10 @@ Get a pre-signed upload URL for app binaries or assets
 - **reply_to_comment**: Use get_comments to find comment IDs.
 
 Reply to a user comment on the AppGallery
+- **get_app_info**: The appId can be found via list_apps.
+
+Get detailed information for a specific application
+- **get_comments**: Get user comments and reviews for an application
 - **submit_for_review**: The app must have all required metadata and at least one valid binary uploaded.
 
 Submit an application for review and publication

@@ -35,14 +35,14 @@ Connect your **Officevibe** (by Workleap) account to your AI agent and gain deep
 
 
 ## Available Tools (10)
+- **get_feedback_replies**: Get feedback conversation
+- **get_employee_details**: Get specific employee info
+- **list_user_attributes**: List custom user attributes
 - **get_engagement_metrics**: g., Recognition, Relationship with Manager).
 
 Get granular engagement metrics
 - **get_engagement_scores**: Get overall engagement scores
-- **get_feedback_replies**: Get feedback conversation
 - **get_nps_scores**: Get employee NPS scores
-- **get_employee_details**: Get specific employee info
-- **list_user_attributes**: List custom user attributes
 - **list_survey_feedback**: List survey feedback
 - **list_vibe_segments**: List audience segments
 - **list_vibe_teams**: List organization teams

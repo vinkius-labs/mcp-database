@@ -34,18 +34,18 @@ Connect your **DocuSeal** account to any AI agent to streamline your electronic 
 
 
 ## Available Tools (12)
-- **create_submission**: Create a new submission to request signatures
 - **create_template**: Can be created from HTML content.
 
 Create a new template from HTML
+- **get_submission_documents**: Get download URLs for signed documents
+- **create_submission**: Create a new submission to request signatures
 - **delete_submission**: Cancel or delete a submission
 - **delete_template**: Archive or delete a template
-- **get_submission_documents**: Get download URLs for signed documents
 - **get_submission**: Retrieve details of a specific submission
 - **get_submitter**: Retrieve details about a specific signer
+- **list_templates**: List all document templates
 - **get_template**: Retrieve a specific template by ID
 - **list_submissions**: List all submissions
-- **list_templates**: List all document templates
 - **update_submitter**: Update signer information or pre-fill fields
 - **update_template**: Update an existing template
 

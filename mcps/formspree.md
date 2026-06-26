@@ -35,10 +35,10 @@ No more manual exporting of CSVs to check your latest leads. Your AI acts as a d
 
 
 ## Available Tools (2)
-- **list_submissions**: Get submissions for a specific form
 - **submit_form**: Does not require API key authentication.
 
 Submit data to a form
+- **list_submissions**: Get submissions for a specific form
 
 
 ## 💬 Prompt Examples

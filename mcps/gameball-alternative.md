@@ -39,13 +39,13 @@ Connect your **Gameball** account to any AI agent to orchestrate your loyalty an
 Create or update a Gameball customer profile
 - **get_customer_activities**: Get a log of customer activities
 - **get_customer_balance**: Get a customer's points balance
+- **track_order**: Track an order to award points and finalize redemptions
 - **get_order_transactions**: Get all loyalty transactions for an order
 - **hold_points**: Holds typically expire after 10 minutes.
 
 Hold points for temporary redemption
 - **refund_transaction**: Refund a transaction
 - **send_events**: Send customer events
-- **track_order**: Track an order to award points and finalize redemptions
 
 
 ## 💬 Prompt Examples
