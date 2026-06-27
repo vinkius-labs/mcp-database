@@ -34,7 +34,7 @@ Connect your **ZipRecruiter** API to any AI agent to streamline your job search 
 
 
 ## Available Tools (1)
-- **ziprecruiter_search_jobs**: Search for jobs on ZipRecruiter
+- **search_jobs**: Search for jobs on ZipRecruiter
 
 
 ## 💬 Prompt Examples

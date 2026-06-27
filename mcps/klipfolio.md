@@ -33,11 +33,11 @@ Connect your **Klipfolio** account to any AI agent and manage analytics dashboar
 
 
 ## Available Tools (6)
-- **get_dashboard_details**: Get details for a specific dashboard
+- **list_individual_klips**: List all individual Klips
 - **list_account_clients**: List sub-clients
 - **list_dashboards**: List Klipfolio dashboards
 - **list_data_sources**: List data source instances
-- **list_individual_klips**: List all individual Klips
+- **get_dashboard_details**: Get details for a specific dashboard
 - **refresh_data_source**: Trigger data source refresh
 
 
@@ -77,7 +77,7 @@ Yes. List all dashboards, browse individual Klips with their current data values
 Yes. List all connected data sources with their last refresh time, status, and error details when applicable.
 
 **Q: What API endpoint does Klipfolio use?**
-Klipfolio uses Bearer authentication against `api.klipfolio.com/api/1.0`.
+Klipfolio uses proprietary API Key authentication via the `kf-api-key` header against `api.klipfolio.com/api/1.0`.
 
 
 ## Installation & Usage

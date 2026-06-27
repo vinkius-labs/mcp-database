@@ -34,14 +34,14 @@ Connect your **LinkedIn Ads** account to any AI agent to automate your professio
 
 
 ## Available Tools (6)
-- **list_ad_accounts**: List all accessible LinkedIn Ad Accounts
 - **get_ad_analytics**: Requires pivot and dateRange parameters.
 
 Query performance metrics (impressions, clicks, spend)
 - **list_campaign_groups**: List campaign groups for an ad account
-- **list_ad_campaigns**: List all campaigns for an ad account
+- **list_ad_accounts**: List all accessible LinkedIn Ad Accounts
 - **list_conversion_rules**: List conversion tracking rules for an account
 - **list_ad_creatives**: List all ad creatives for an ad account
+- **list_ad_campaigns**: List all campaigns for an ad account
 
 
 ## 💬 Prompt Examples

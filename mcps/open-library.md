@@ -36,6 +36,8 @@ Empower your AI agent to orchestrate your entire literary research with **Open L
 
 ## Available Tools (10)
 - **get_author**: Get author details by key
+- **search_authors**: Search for authors
+- **search_books**: Search for books on Open Library
 - **get_author_works**: Get works by a specific author
 - **get_book_by_isbn**: Get book details by ISBN
 - **get_book_ratings**: Get ratings for a specific work
@@ -43,8 +45,6 @@ Empower your AI agent to orchestrate your entire literary research with **Open L
 - **get_recent_changes**: Get recent changes on Open Library
 - **get_subject**: Get books related to a specific subject
 - **get_work**: Get details for a specific work
-- **search_authors**: Search for authors
-- **search_books**: Search for books on Open Library
 
 
 ## 💬 Prompt Examples

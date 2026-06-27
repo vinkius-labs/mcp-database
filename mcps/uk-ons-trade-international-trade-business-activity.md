@@ -22,12 +22,12 @@ UK trade and business data.
 - **get_trade**: Dataset: trade. Monthly data on UK trade in goods: imports, exports, trade balance by partner country and commodity. Non-seasonally adjusted. Values in £ million.
 
 Get UK trade in goods data — country by commodity, imports and exports
-- **get_business_counts**: Dataset: uk-business-by-enterprises-and-local-units. Source: Inter-Departmental Business Register (IDBR).
-
-Get UK business counts by enterprises and local units, by industry and geography
 - **get_traffic_activity**: Dataset: traffic-camera-activity. Used as a real-time indicator to understand economic activity and social change.
 
 Get UK traffic camera activity — experimental economic indicator
+- **get_business_counts**: Dataset: uk-business-by-enterprises-and-local-units. Source: Inter-Departmental Business Register (IDBR).
+
+Get UK business counts by enterprises and local units, by industry and geography
 
 
 ## 💬 Prompt Examples

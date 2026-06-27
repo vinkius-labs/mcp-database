@@ -36,14 +36,14 @@ Connect your **Ideogram** account to any AI agent and create AI-generated images
 
 ## Available Tools (12)
 - **check_ideogram_status**: Verify connectivity
+- **get_image**: Get image details
+- **list_images**: List images
+- **list_models**: List models
 - **delete_image**: Delete an image
 - **describe_image**: Describe an image
 - **edit_image**: Edit an image
 - **generate_image**: Generate an image
 - **get_account**: Get account info
-- **get_image**: Get image details
-- **list_images**: List images
-- **list_models**: List models
 - **list_styles**: List styles
 - **remix_image**: Remix an image
 - **upscale_image**: Upscale an image

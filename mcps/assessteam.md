@@ -40,8 +40,8 @@ Connect your **AssessTEAM** account to any AI agent and simplify how you manage 
 - **list_performance_evaluations**: List performance evaluations
 - **get_profitability_report**: Get project profitability report
 - **list_projects**: List AssessTEAM projects
-- **list_organizational_teams**: List organizational teams
 - **list_timesheets**: List timesheet entries
+- **list_organizational_teams**: List organizational teams
 
 
 ## 💬 Prompt Examples

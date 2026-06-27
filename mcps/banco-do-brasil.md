@@ -33,6 +33,9 @@ Connect your **Banco do Brasil** account to any AI agent and perform essential b
 
 
 ## Available Tools (9)
+- **get_statement**: Dates in YYYY-MM-DD format.
+
+Get account statement (transactions) by date range
 - **get_accounts**: Usually returns one active account.
 
 Get list of checking accounts
@@ -45,9 +48,6 @@ Get list of checking accounts
 
 Get history of Pix transfers (Sent/Received)
 - **get_scheduled_payments**: Get scheduled future payments
-- **get_statement**: Dates in YYYY-MM-DD format.
-
-Get account statement (transactions) by date range
 
 
 ## 💬 Prompt Examples

@@ -7,40 +7,70 @@
 
 **Category:** [industry-titans](../categories/industry-titans.md)
 
-Manage your LinkedIn presence — audit organizations, posts, and profile via AI.
+Publish to your personal profile or Company Page, share articles, react, comment, and manage LinkedIn engagement through your AI agent.
 
 ## Description
-Empower your AI agent to orchestrate your entire professional ecosystem on **LinkedIn**, the world's largest professional network. By connecting LinkedIn to your agent, you transform professional networking and publishing into a natural conversation. Your agent can instantly list your administered organizations, audit recent posts, and create new content without you ever touching a dashboard. Whether you are building a personal brand or managing a corporate page, your agent acts as a real-time professional assistant, ensuring your presence is always active and your networking data is organized.
+Transform your AI agent into a LinkedIn publishing powerhouse. This MCP server connects your AI workflow directly to the LinkedIn REST API, enabling you to publish as your personal profile or your Company Page, share articles with rich link previews, reshare content, react to updates, and engage in comment threads — all through natural conversation.
 
 ### What you can do
 
-- **Post Distribution** — Create and publish new posts (UGC) directly to your profile or administered organization pages.
-- **Organization Oversight** — List all organizations where you have administrative access and retrieve detailed metadata.
-- **Content Auditing** — Query recent posts for any author URN to stay on top of your content strategy and engagement.
-- **Profile Intelligence** — Retrieve detailed authenticated user info and primary email to ensure organizational alignment.
-- **URN Management** — Quickly identify unique identifiers (URNs) for people and organizations to facilitate precise API operations.
+- **Personal & Company Page Publishing** — Post as yourself or as your Company Page. Every publishing tool supports an optional organization ID to switch between personal and page posting seamlessly.
+- **Text Posts** — Publish original text posts to your LinkedIn feed with public visibility.
+- **Article Sharing** — Share URLs with automatically generated link preview cards, including custom title and description.
+- **Content Resharing** — Reshare existing LinkedIn posts with your own commentary to amplify reach.
+- **Social Reactions** — React to any post using all six LinkedIn reaction types: Like, Celebrate, Support, Love, Insightful, and Funny.
+- **Comment Engagement** — Post top-level comments on any LinkedIn post to join professional conversations.
+- **Threaded Replies** — Reply directly to specific comments with nested responses for deeper discussions.
+- **Profile Intelligence** — Retrieve your authenticated profile data including name, headline, photo, and profile URL.
+- **Page Discovery** — List all Company Pages you administer to quickly find your organization ID.
 
 ### How it works
 
-1. Subscribe to this server
-2. Enter your LinkedIn Access Token
-3. Start managing your professional workflow through Claude, Cursor, or any MCP-compatible client
+1. Subscribe to this server and enter your LinkedIn OAuth 2.0 credentials
+2. Your agent resolves your identity automatically via the LinkedIn REST API
+3. Start publishing, reacting, and commenting through natural language
+4. To post as a Company Page, add the Community Management API product and include `w_organization_social` in your token scopes
 
 ### Who is this for?
 
-- **Thought Leaders** — publish insights and updates straight from your professional workflow.
-- **Marketing Managers** — verify if new posts have been correctly published on organization pages.
-- **Recruiters & Sales** — perform rapid audits of organization profiles and monitor content distribution.
-- **Operations Leads** — automate professional data querying to orchestrate cross-functional outreach teams smoothly.
+- **Thought Leaders** — maintain a consistent publishing cadence without switching tools.
+- **Marketing Teams** — distribute content across personal profiles and Company Pages as part of an automated workflow.
+- **Community Builders** — engage with your network by reacting to and commenting on relevant posts.
+- **Content Strategists** — manage your entire LinkedIn publishing pipeline from one interface.
 
 
-## Available Tools (6)
-- **create_post**: Create a new post (UGC) on LinkedIn
-- **get_email**: Get primary email address of the authenticated user
-- **get_me**: Get authenticated user info from LinkedIn
-- **get_organization**: Get details for a specific organization
-- **list_organizations**: List organizations where the user is an administrator
-- **list_posts**: List recent posts for an author
+## Available Tools (11)
+- **delete_reaction**: Remove your reaction from a LinkedIn post
+- **get_me**: Requires r_profile_basicinfo scope.
+
+Get authenticated user profile from LinkedIn
+- **comment_on_post**: The comment will appear as the authenticated user.
+
+Comment on a LinkedIn post
+- **create_post**: By default, posts as the authenticated user. To post as a Company Page, provide the organization_id (get it from list_organizations). Posting as a page requires w_organization_social scope.
+
+Create a new text post on LinkedIn
+- **delete_comment**: This action cannot be undone.
+
+Delete a comment from a LinkedIn post
+- **delete_post**: Works for both personal and Company Page posts. This action cannot be undone.
+
+Delete a post from LinkedIn
+- **list_organizations**: Returns organization IDs that can be used with the organization_id parameter in posting tools. Requires r_organization_social scope (Community Management API).
+
+List LinkedIn pages you administer
+- **react_to_post**: Supported types: LIKE, PRAISE (celebrate), APPRECIATION (support), EMPATHY (love), INTEREST (insightful), ENTERTAINMENT (funny).
+
+React to a LinkedIn post
+- **reshare_post**: To reshare as a Company Page, provide the organization_id. Posting as a page requires w_organization_social scope.
+
+Reshare an existing LinkedIn post with your own commentary
+- **create_article_post**: To post as a Company Page, provide the organization_id. Posting as a page requires w_organization_social scope.
+
+Create a post with a link preview (article share)
+- **reply_to_comment**: The parent comment URN format is: urn:li:comment:(urn:li:activity:{activityId},{commentId}).
+
+Reply to a specific comment on a LinkedIn post (nested reply)
 
 
 ## 💬 Prompt Examples
@@ -48,38 +78,38 @@ Empower your AI agent to orchestrate your entire professional ecosystem on **Lin
 Here are some examples of how you can interact with the **LinkedIn** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Get my LinkedIn profile and email."
+> "Publish a post on my LinkedIn: 'Excited to announce our latest product launch!'"
 
 **🤖 AI Agent:**
-> I've retrieved your profile. You are 'Marcus R.' and your primary email is 'marcus@vinkius.com'. Would you like to see your administered organizations?
+> Post published successfully on your LinkedIn profile with public visibility. Your network will see it in their feed immediately.
 
 ---
 
 **👤 You:**
-> "List all organizations I manage on LinkedIn."
+> "Share this article on my LinkedIn with a comment: https://example.com/article"
 
 **🤖 AI Agent:**
-> I've found 2 organizations where you are an administrator: 'Vinkius Labs' and 'Growth Tech'. Which one would you like the details for?
+> Article shared on your LinkedIn profile with a rich link preview card. The post includes your commentary and the article will appear with its title and thumbnail.
 
 ---
 
 **👤 You:**
-> "Create a public post on my profile: 'Excited to launch our new MCP servers!'"
+> "Post this update as my Company Page: 'We just shipped v2.0 — here's what's new.'"
 
 **🤖 AI Agent:**
-> Post created successfully! Your update is now live on your profile with visibility set to PUBLIC. I've recorded the post URN for your audit.
+> I found your Company Page and published the update under your organization profile with public visibility. Your page followers will see it in their feed.
 
 
 ## ❓ FAQ
 
-**Q: How do I find my LinkedIn Access Token?**
-Create a developer account at [**developer.linkedin.com**](https://developer.linkedin.com/), create an App, and perform the OAuth 2.0 flow to generate a token with the required permissions. Copy and paste it below.
+**Q: Can I post as my Company Page instead of my personal profile?**
+Yes. Every publishing tool (`create_post`, `create_article_post`, `reshare_post`) accepts an optional `organization_id` parameter. Use `list_organizations` to discover your page IDs, then include the ID when creating a post. This requires the Community Management API product with `w_organization_social` scope.
 
-**Q: Can the agent post to my company page?**
-Yes. Use the `create_post` tool providing the organization's URN as the author. Your agent will publish the content and confirm the status instantly.
+**Q: Can the agent publish posts with link previews?**
+Yes. Use the `create_article_post` tool to share any URL with an automatically generated preview card. You can customize the title and description that appear alongside the link.
 
-**Q: Is it possible to see my primary email via the agent?**
-Yes. The `get_email` tool allows your agent to retrieve the primary email address associated with your LinkedIn account, ensuring your profile data is accurate.
+**Q: Can I reply to specific comments on a post?**
+Yes. The `reply_to_comment` tool creates threaded replies under any comment. Provide the post URN, the parent comment URN, and your reply text to create a nested response.
 
 
 ## Installation & Usage

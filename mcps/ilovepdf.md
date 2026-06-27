@@ -34,14 +34,14 @@ Connect your **iLovePDF** account to any AI agent and process PDF documents thro
 
 
 ## Available Tools (6)
-- **get_pdf_download_link**: Get the processed PDF download link
-- **get_task_status**: Check the status of a PDF task
 - **list_pdf_tasks**: List recent PDF processing tasks
 - **process_pdf_task**: Start processing the PDF
 - **start_pdf_task**: g. compress, merge, split). Returns a task ID.
 
 Start a new PDF processing task
 - **upload_pdf_by_url**: Upload a PDF file via URL
+- **get_pdf_download_link**: Get the processed PDF download link
+- **get_task_status**: Check the status of a PDF task
 
 
 ## 💬 Prompt Examples

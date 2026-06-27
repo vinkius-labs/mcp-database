@@ -35,16 +35,16 @@ Connect your **Buttondown** account to any AI agent and orchestrate your newslet
 
 
 ## Available Tools (10)
-- **create_email**: Create a new email or draft
 - **create_subscriber**: Add a new subscriber to the newsletter
-- **get_account_info**: Retrieve core account/profile settings
 - **get_email_analytics**: Get analytics for a specific email
 - **get_email**: Get details of a specific email
 - **get_subscriber**: Get details of a specific subscriber
-- **list_emails**: List all sent emails and drafts
 - **list_newsletters**: List all newsletters in the account
-- **list_subscribers**: List all newsletter subscribers
 - **list_tags**: List all subscriber tags
+- **create_email**: Create a new email or draft
+- **get_account_info**: Retrieve core account/profile settings
+- **list_emails**: List all sent emails and drafts
+- **list_subscribers**: List all newsletter subscribers
 
 
 ## 💬 Prompt Examples

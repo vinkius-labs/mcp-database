@@ -33,11 +33,6 @@ Connect your **Searchspring** store (now part of Athos Commerce) to any AI agent
 
 
 ## Available Tools (10)
-- **search_brand**: Lists products from a specific brand
-- **search_category**: g., "Mens>Shoes").
-
-Lists products within a specific category hierarchy
-- **search_custom**: Performs a search with custom Searchspring parameters
 - **search_filtered**: Format: "key:value,key2:value2".
 
 Performs a filtered product search
@@ -45,10 +40,15 @@ Performs a filtered product search
 - **search_price_range**: Searches for products within a specific price range
 - **search_products**: Searches for products in the Searchspring catalog
 - **search_sku**: Retrieves details for a specific product SKU
+- **search_brand**: Lists products from a specific brand
+- **search_category**: g., "Mens>Shoes").
+
+Lists products within a specific category hierarchy
+- **search_custom**: Performs a search with custom Searchspring parameters
+- **suggest_queries**: Retrieves autocomplete query suggestions
 - **search_sorted**: Format: "key:direction" (e.g., "price:asc").
 
 Performs a sorted product search
-- **suggest_queries**: Retrieves autocomplete query suggestions
 
 
 ## 💬 Prompt Examples

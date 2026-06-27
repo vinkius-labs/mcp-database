@@ -35,6 +35,7 @@ Connect your **folk** CRM account to any AI agent and simplify how you manage yo
 
 
 ## Available Tools (6)
+- **list_contact_notes**: List notes for a contact
 - **create_contact**: Create a new contact
 - **get_contact_details**: Get details for a specific contact
 - **list_contacts**: Optionally filter by group ID.
@@ -42,7 +43,6 @@ Connect your **folk** CRM account to any AI agent and simplify how you manage yo
 List folk contacts
 - **list_groups**: List folk groups
 - **list_interactions**: List interactions for a contact
-- **list_contact_notes**: List notes for a contact
 
 
 ## 💬 Prompt Examples

@@ -34,12 +34,11 @@ Empower your AI agent to orchestrate your entire product discovery and retail au
 - **Operations Leads** — automate product data querying to orchestrate cross-functional retail teams smoothly.
 
 
-## Available Tools (5)
+## Available Tools (2)
 - **check_api_status**: Check if the Go-UPC API is operational
-- **get_brand_details**: Get information about a specific brand
-- **get_category_details**: Get details for a product category
-- **get_product_by_code**: Get product details by UPC, EAN, or ISBN barcode
-- **search_products**: Search for products by name (Placeholder/Info)
+- **get_product_by_code**: This is the primary endpoint of Go-UPC — provide a valid barcode number to receive product name, brand, description, category, and image.
+
+Get product details by UPC, EAN, or ISBN barcode
 
 
 ## 💬 Prompt Examples

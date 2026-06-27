@@ -27,16 +27,16 @@ Connect your **Megaphone** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
+- **list_networks**: List all podcast networks
+- **list_orders**: List ad orders in a network
+- **list_podcasts**: List podcasts in a network
+- **search_episodes**: Search episodes across a network
 - **get_episode**: Get episode details
 - **get_network_details**: Get network details
 - **get_podcast**: Get podcast details
 - **list_ad_locations**: List ad locations for an episode
 - **list_campaigns**: List ad campaigns in a network
 - **list_episodes**: List episodes for a podcast
-- **list_networks**: List all podcast networks
-- **list_orders**: List ad orders in a network
-- **list_podcasts**: List podcasts in a network
-- **search_episodes**: Search episodes across a network
 
 
 ## 💬 Prompt Examples

@@ -37,11 +37,11 @@ Connect your **Ugosign** account to any AI agent to streamline your electronic s
 - **create_signature_request**: Pass data as a JSON string.
 
 Create a new signature request
-- **get_document**: Get document details
 - **get_organization**: Get organization details
 - **get_signature_request**: Get signature request details
 - **list_documents**: List all documents
 - **list_signature_requests**: List all signature requests
+- **get_document**: Get document details
 
 
 ## 💬 Prompt Examples

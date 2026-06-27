@@ -14,9 +14,9 @@ This MCP server provides specialized tools to calculate the exact time elapsed b
 
 
 ## Available Tools (3)
+- **verify_holiday_status**: Checks if a specific date is recognized as a national holiday in a given region
 - **count_business_days**: Calculates the total number of working days between two dates
 - **get_date_breakdown**: Provides a detailed breakdown of the time elapsed between two dates
-- **verify_holiday_status**: Checks if a specific date is recognized as a national holiday in a given region
 
 
 ## 💬 Prompt Examples

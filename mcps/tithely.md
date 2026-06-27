@@ -34,7 +34,6 @@ Connect your **Tithe.ly** account to any AI agent to streamline your ministry's 
 
 
 ## Available Tools (8)
-- **create_payment_category**: Create a new payment category
 - **create_transaction**: Process a new transaction
 - **login**: Authenticate and retrieve account details
 - **list_organization_owners**: Search for organization owners
@@ -44,6 +43,7 @@ Connect your **Tithe.ly** account to any AI agent to streamline your ministry's 
 
 Send emails (e.g., receipts) to recipients
 - **update_payment_category**: Update an existing payment category
+- **create_payment_category**: Create a new payment category
 
 
 ## 💬 Prompt Examples

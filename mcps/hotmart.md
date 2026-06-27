@@ -14,9 +14,7 @@ Empower your AI agents to manage your digital products business on Hotmart. This
 
 
 ## Available Tools (10)
-- **get_me**: Gets current authenticated user info
 - **get_sale_by_user**: Finds sales associated with a specific user email
-- **get_sales_report**: Retrieves a sales report
 - **list_affiliates**: Lists affiliates for your products
 - **list_commissions**: Lists commissions for sales
 - **list_payments**: Lists payments received
@@ -24,6 +22,8 @@ Empower your AI agents to manage your digital products business on Hotmart. This
 - **list_sales_history**: Lists sales history
 - **list_subscriptions**: Lists product subscriptions
 - **list_webhooks**: Lists configured webhooks
+- **get_me**: Gets current authenticated user info
+- **get_sales_report**: Retrieves a sales report
 
 
 ## 💬 Prompt Examples

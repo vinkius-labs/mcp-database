@@ -34,7 +34,6 @@ Access one of the world's most impressive art collections directly through your 
 
 
 ## Available Tools (31)
-- **get_agent**: Get details for a specific agent (artist)
 - **get_article**: Get details for a specific article
 - **get_artwork_manifest**: Get IIIF Manifest for a specific artwork
 - **get_artwork**: Get details for a specific artwork
@@ -43,7 +42,6 @@ Access one of the world's most impressive art collections directly through your 
 - **get_gallery**: Get details for a specific gallery
 - **get_place**: Get details for a specific place
 - **get_product**: Get details for a specific product
-- **get_publication**: Get details for a specific publication
 - **get_tour**: Get details for a specific tour
 - **list_agents**: List agents (artists) in the collection
 - **list_articles**: List articles
@@ -52,7 +50,6 @@ Access one of the world's most impressive art collections directly through your 
 - **list_exhibitions**: List exhibitions
 - **list_galleries**: List physical gallery spaces in the museum
 - **list_places**: List places associated with artworks
-- **list_products**: List products (Museum shop items)
 - **list_publications**: List publications
 - **list_tours**: List tours
 - **search_agents**: Search agents (artists)
@@ -65,6 +62,9 @@ Access one of the world's most impressive art collections directly through your 
 - **search_products**: Search products
 - **search_publications**: Search publications
 - **search_tours**: Search tours
+- **get_agent**: Get details for a specific agent (artist)
+- **get_publication**: Get details for a specific publication
+- **list_products**: List products (Museum shop items)
 
 
 ## 💬 Prompt Examples

@@ -37,12 +37,12 @@ Connect your **Forecast.app** account to any AI agent and take full control of y
 
 
 ## Available Tools (6)
+- **list_milestones**: List milestones
 - **list_projects**: List projects
 - **get_project**: Get project details
 - **list_tasks**: List tasks
 - **list_people**: List people
 - **list_clients**: List clients
-- **list_milestones**: List milestones
 
 
 ## 💬 Prompt Examples

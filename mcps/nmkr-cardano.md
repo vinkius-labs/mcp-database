@@ -36,16 +36,16 @@ Connect your **NMKR Studio** account to your AI agent and manage your Cardano NF
 
 
 ## Available Tools (10)
-- **validate_nft_metadata**: Validate NFT metadata
 - **get_mint_coupon_balance**: Check minting coupon balance
 - **get_nft_details**: Get specific NFT metadata
 - **get_project_counts**: Get project asset metrics
-- **get_project_discounts**: List active project discounts
 - **list_payout_wallets**: List all registered payout wallets
 - **list_project_nfts**: List NFTs in a project
 - **list_split_addresses**: List revenue split addresses
+- **get_project_discounts**: List active project discounts
 - **list_subcustomers**: List sub-customers for an account
 - **list_vesting_addresses**: List vesting/staking addresses
+- **validate_nft_metadata**: Validate NFT metadata
 
 
 ## 💬 Prompt Examples

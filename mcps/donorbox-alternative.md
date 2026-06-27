@@ -36,6 +36,7 @@ No more manual status checking or digging through donation tables in the portal.
 
 
 ## Available Tools (12)
+- **resume_recurring_plan**: Resume a paused recurring donation
 - **cancel_recurring_plan**: Cancel a recurring donation
 - **check_api_health**: Verify Donorbox API connectivity
 - **create_new_donor**: Requires first name, last name, and email.
@@ -52,7 +53,6 @@ List all donors
 - **list_recurring_plans**: List recurring donation plans
 - **list_configured_webhooks**: List active webhooks
 - **pause_recurring_plan**: Pause a recurring donation
-- **resume_recurring_plan**: Resume a paused recurring donation
 - **update_donor_info**: Modify a donor record
 
 

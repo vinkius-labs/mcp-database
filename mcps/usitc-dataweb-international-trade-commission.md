@@ -33,14 +33,14 @@ Connect to the **USITC DataWeb** to retrieve official US international trade dat
 
 
 ## Available Tools (4)
-- **list_metadata_fields**: List fields available for a specific table
-- **list_metadata_tables**: List available data tables
 - **list_metadata_values**: g., a list of all valid country codes).
 
 List valid values for a specific field within a table
+- **list_metadata_fields**: List fields available for a specific table
 - **query_trade_data**: Uses POST to support large filter sets.
 
 Query USITC trade statistics
+- **list_metadata_tables**: List available data tables
 
 
 ## 💬 Prompt Examples

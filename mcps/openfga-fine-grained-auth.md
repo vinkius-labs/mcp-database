@@ -34,7 +34,6 @@ Connect your **OpenFGA** instance to any AI agent to manage Relationship-Based A
 
 
 ## Available Tools (16)
-- **batch_check_relations**: Perform multiple checks in one request
 - **check_relation**: Check if a user has a relation to an object
 - **create_store**: Create a new OpenFGA store
 - **delete_store**: Delete an OpenFGA store
@@ -50,6 +49,7 @@ Connect your **OpenFGA** instance to any AI agent to manage Relationship-Based A
 - **read_tuples**: Query stored relationship tuples
 - **write_authorization_model**: Write a new authorization model
 - **write_tuples**: Add or delete relationship tuples
+- **batch_check_relations**: Perform multiple checks in one request
 
 
 ## 💬 Prompt Examples

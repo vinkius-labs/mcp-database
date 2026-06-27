@@ -14,10 +14,10 @@ This MCP server provides specialized tools for strength athletes to predict thei
 
 
 ## Available Tools (4)
-- **get_brzycki_estimate**: Determine the estimated 1RM using the Brzycki method
 - **get_epley_estimate**: Determine the estimated 1RM using the Epley method
 - **get_lift_intensity**: Calculate the percentage of a user's maximum capability used
 - **get_lander_estimate**: Determine the estimated 1RM using the Lander/Lombardi method
+- **get_brzycki_estimate**: Determine the estimated 1RM using the Brzycki method
 
 
 ## 💬 Prompt Examples

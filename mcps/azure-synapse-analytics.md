@@ -34,12 +34,12 @@ Connect your **Azure Synapse** workspace to any AI agent and take full control o
 
 
 ## Available Tools (7)
+- **list_datasets**: List all Azure Synapse explicit datasets targets
 - **list_pipelines**: List all Azure Synapse Analytics data integration pipelines
 - **get_pipeline**: Get precise definition of a specific Azure Synapse pipeline
 - **list_notebooks**: List all Azure Synapse Spark notebooks
 - **list_spark_pools**: List pre-provisioned Apache Spark Analytics pools
 - **list_sql_pools**: List dedicated and serverless SQL Analytics pools in Synapse
-- **list_datasets**: List all Azure Synapse explicit datasets targets
 - **list_linked_services**: List explicit Azure Synapse Linked Services
 
 

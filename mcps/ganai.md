@@ -37,6 +37,7 @@ Connect your **GAN.ai** account to any AI agent to automate your personalized vi
 
 
 ## Available Tools (12)
+- **get_generation_status**: Check video status
 - **verify_api_connection**: ai API connectivity.
 
 Verify API access
@@ -48,7 +49,6 @@ Get workspace details
 - **get_project_metadata**: Get template schema
 - **get_video_stats**: Get engagement stats
 - **get_video_metadata**: Get video details
-- **get_generation_status**: Check video status
 - **list_landing_templates**: List landing pages
 - **list_video_projects**: List video templates
 - **list_generated_videos**: List video history

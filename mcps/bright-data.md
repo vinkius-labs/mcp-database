@@ -36,16 +36,36 @@ Your AI now acts as a data engineer, capable of retrieving real-time web informa
 
 
 ## Available Tools (10)
-- **get_all_zones**: Get all zones
-- **get_dataset_progress**: Monitor dataset snapshot progress
-- **get_dataset_snapshot**: Download a dataset snapshot
-- **get_account_status**: Check account status
-- **get_zone_info**: Get specific zone info
-- **get_zone_passwords**: Get zone passwords
-- **list_browser_sessions**: List Scraping Browser sessions
-- **list_datasets**: List available datasets in the marketplace
-- **send_request**: Send a request to Unlocker or SERP API
-- **trigger_dataset**: Trigger a dataset collection (Crawl API)
+- **get_dataset_snapshot**: Returns structured JSON records. Error records include error_code: "dead_page" (404) or "bad_input" (wrong URL pattern).
+
+Download scraped data from a completed collection
+- **trigger_dataset**: Poll get_dataset_progress until status="ready", then call get_dataset_snapshot to download results. Provide either url or keyword. LinkedIn Posts (gd_lyy3tktm25m4avu764) requires URLs matching linkedin.com/(pulse|posts|feed/update) — no keyword support. Always set include_errors=true.
+
+Start an async scraping job for LinkedIn, Amazon, Instagram, and 100+ sources
+- **get_zone_passwords**: For direct proxy connections outside this MCP. SENSITIVE — do not log credentials.
+
+Get proxy credentials for direct connections (Selenium, Playwright, etc.)
+- **list_browser_sessions**: Only relevant if Scraping Browser zones are configured. Default: 50 most recent.
+
+List Scraping Browser sessions by status, duration, or bandwidth
+- **get_account_status**: Use first if other tools return auth errors.
+
+Check account status and API key validity
+- **get_zone_info**: Use to verify a zone is active and correctly configured before using send_request.
+
+Get zone configuration — type, status, bandwidth, and settings
+- **list_datasets**: Use to find the correct dataset_id for trigger_dataset. Large response — filter by name.
+
+Browse all 100+ available datasets with IDs and names
+- **get_all_zones**: Call this before send_request to get valid zone names. Empty list means zones must be created at brightdata.com/cp/zones.
+
+List all proxy zones configured in the account
+- **get_dataset_progress**: Returns status ("running" or "ready"), records count, and errors count. Poll every 15-30s. Only call get_dataset_snapshot after status="ready". LinkedIn scraping takes 60-120s per URL.
+
+Check if a dataset collection is complete
+- **send_request**: Requires a valid zone name — call get_all_zones first if unknown. Web Unlocker zones scrape any site; SERP API zones return structured search results from Google/Bing URLs.
+
+Scrape any URL bypassing anti-bot protections, or extract structured SERP data
 
 
 ## 💬 Prompt Examples
@@ -53,38 +73,41 @@ Your AI now acts as a data engineer, capable of retrieving real-time web informa
 Here are some examples of how you can interact with the **Bright Data** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my active proxy zones in Bright Data."
+> "Scrape this LinkedIn post and extract the engagement data."
 
 **🤖 AI Agent:**
-> I've retrieved your zones. You have 3 active zones: 'web_unlocker1' (Web Unlocker), 'serp_api_main' (SERP API), and 'residential_zone' (Residential Proxies).
+> I triggered the LinkedIn Posts dataset with your URL and received snapshot `sd_abc123`. After polling for 90 seconds, the collection completed with 1 record and 0 errors. The post has 142 reactions, 23 comments, and was published 3 days ago. Here is the full structured data.
 
 ---
 
 **👤 You:**
-> "Scrape the search results for 'best laptops 2024' using the SERP API zone."
+> "What proxy zones do I have available, and scrape this protected page."
 
 **🤖 AI Agent:**
-> Sending request to SERP API... I've extracted the structured data. The top results include reviews from TechRadar, CNET, and RTINGS. Would you like the full JSON output?
+> You have 2 active zones: `web_unlocker1` (Web Unlocker) and `serp_api1` (SERP API). I used `web_unlocker1` to scrape the protected page and retrieved the full HTML content converted to markdown. The page contains 3 product listings with prices and reviews.
 
 ---
 
 **👤 You:**
-> "Check the progress of dataset snapshot 's_l1m2n3b4'."
+> "Find all available LinkedIn-related datasets I can use."
 
 **🤖 AI Agent:**
-> The snapshot 's_l1m2n3b4' is currently at 75% completion. It has processed 15,000 records so far with 0 errors.
+> I found 6 LinkedIn datasets: LinkedIn Posts (`gd_lyy3tktm25m4avu764`), LinkedIn People Profiles (`gd_l1viktl72bvl7bjuj0` — 115M profiles), LinkedIn Companies (`gd_l1vikfnt1wgvvqz95w` — 55M companies), LinkedIn People Enriched (`gd_me5ppxjr2ge6icjuh0`), LinkedIn Companies with Jobs (`gd_mhf4aje023ctc3yn7w`), and LinkedIn Profiles by Position (`gd_la9vypp0jzg1bhkv3`). Which one would you like to use?
 
 
 ## ❓ FAQ
 
-**Q: How do I bypass anti-bot systems on a specific website?**
-Use the `send_request` tool and specify a zone configured with Web Unlocker. Provide the target URL, and Bright Data will handle the rotation and headers to return the content.
+**Q: What is the workflow for scraping a LinkedIn post?**
+Use `trigger_dataset` with the LinkedIn Posts dataset ID (`gd_lyy3tktm25m4avu764`) and a direct post URL (e.g., `https://www.linkedin.com/feed/update/urn:li:activity:...`). This returns a `snapshot_id`. Then poll `get_dataset_progress` every 15–30 seconds until the status is `ready` — LinkedIn scraping typically takes 60–120 seconds. Finally, call `get_dataset_snapshot` to retrieve the structured data including post content, author details, reactions, and comment count.
 
-**Q: Can I check if my data collection is finished?**
-Yes. Use the `get_dataset_progress` tool with your Snapshot ID. It will return the current percentage and status of the extraction process.
+**Q: Why does send_request fail with a zone error?**
+The `send_request` tool requires an active proxy zone (Web Unlocker or SERP API). If your account has no zones configured, the request will fail. Run `get_all_zones` first to check your available zones. If the list is empty, you need to create a zone in the [Bright Data dashboard](https://brightdata.com/cp/zones) before using `send_request`.
 
-**Q: How do I get the proxy credentials for my scraper?**
-You can use the `get_zone_passwords` tool by providing the zone name. This will retrieve the necessary passwords for proxy authentication.
+**Q: Which URL formats does the LinkedIn Posts dataset accept?**
+The LinkedIn Posts dataset (`gd_lyy3tktm25m4avu764`) only accepts direct post URLs matching the pattern `linkedin.com/(pulse|posts|feed/update)`. Valid examples: `https://www.linkedin.com/feed/update/urn:li:activity:1234567890` or `https://www.linkedin.com/posts/username_title-activity-1234567890`. Search result pages, profile pages, and hashtag pages are not supported.
+
+**Q: How do I find the right dataset ID for my use case?**
+Use the `list_datasets` tool to browse all 100+ available datasets. Common IDs: LinkedIn Posts (`gd_lyy3tktm25m4avu764`), LinkedIn People (`gd_l1viktl72bvl7bjuj0`), LinkedIn Companies (`gd_l1vikfnt1wgvvqz95w`), Amazon Products (`gd_l7q7dkf244hwjntr0`), Instagram Profiles (`gd_l1vikfch901nx3by4`), Google Maps (`gd_m8ebnr0q2qlklc02fz`).
 
 
 ## Installation & Usage

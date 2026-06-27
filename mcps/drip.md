@@ -37,6 +37,7 @@ Connect your **Drip** account to any AI agent and take full control of your e-co
 
 
 ## Available Tools (10)
+- **list_tags**: List all tags in your Drip account
 - **list_subscribers**: Returns emails, tags, custom fields, and lifecycle stage.
 
 List Drip subscribers. Drip is an e-commerce CRM/email platform
@@ -64,7 +65,6 @@ Start a subscriber on a Drip automation workflow
 - **record_event**: Events trigger automations.
 
 Record a custom event for a Drip subscriber
-- **list_tags**: List all tags in your Drip account
 
 
 ## 💬 Prompt Examples
