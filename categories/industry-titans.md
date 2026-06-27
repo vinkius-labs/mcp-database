@@ -234,7 +234,7 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Kuaishou Mini-Game](../mcps/kuaishou-mini-game.md) | Kuaishou mini-game developer API — manage cloud storage, leaderboards, analytics, and content moderation for casual games. |
 | [LexisNexis](../mcps/lexisnexis.md) | Manage your corporate intelligence — audit news, company data, and legal cases via AI. |
 | [Lingyi Wanwu](../mcps/lingyi-wanwu.md) | Orchestrate Lingyi Wanwu AI models — manage chat completions, embeddings, and monitor Yi model performance directly from any AI agent. |
-| [LinkedIn](../mcps/linkedin.md) | Manage your LinkedIn presence — audit organizations, posts, and profile via AI. |
+| [LinkedIn](../mcps/linkedin.md) | Publish to your personal profile or Company Page, share articles, react, comment, and manage LinkedIn engagement through your AI agent. |
 | [LinkedIn Ads](../mcps/linkedin-ads.md) | Access marketing analytics, campaigns, and reporting via the LinkedIn Ads REST API. |
 | [LinkedIn Ads](../mcps/linkedin-ads-1.md) | Equip your AI agent with direct access to LinkedIn Ads — manage campaigns, track B2B ad performance, and optimize LinkedIn marketing spend without opening Campaign Manager. |
 | [LinkedIn Page Management](../mcps/linkedin-page-management.md) | Manage Company Page posts, comments, and social actions via the LinkedIn REST API. |
