@@ -16,6 +16,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Natural Ventilation Calculator](../mcps/natural-ventilation-calculator.md) | Calculate air change rates and ensure ventilation compliance for different room uses. |
 | [Nutritional Estimator](../mcps/nutritional-estimator.md) | Calculate total and per-serving macro and calorie content of recipes using weight-based nutritional density data. |
 | [One Rep Max Calculator](../mcps/one-rep-max-calculator.md) | Estimate your maximum lifting capacity using Epley, Brzycki, and Lander models. |
+| [One-Rep Max Calculator](../mcps/one-rep-max-calculator-1.md) | Estimate your maximum strength capacity using 8 different physiological models. |
 | [Pediatric BMI Calculator](../mcps/pediatric-bmi-calculator.md) | Calculate pediatric BMI, percentiles, and growth status using WHO/CDC standards for ages 2-20 years. |
 | [Perceived Exertion Converter](../mcps/perceived-exertion-converter.md) | Convert RPE (Borg 6-20 and CR10) to estimated heart rate and training zones. |
 | [Pet Body Condition Score (BCS) Assessor](../mcps/pet-body-condition-score-bcs-assessor.md) | Assess pet weight and nutritional status using a 9-point Body Condition Score (BCS) system. |
@@ -27,9 +28,11 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Pet Water Intake Calculator](../mcps/pet-water-intake-calculator.md) | Calculate optimal daily water intake for dogs and cats based on weight, food type, and temperature. |
 | [Pregnancy Week Calculator](../mcps/pregnancy-week-calculator.md) | Track your pregnancy progress, from gestational age to weekly fetal milestones. |
 | [Protein Needs Calculator](../mcps/protein-needs-calculator.md) | Calculate your daily protein requirements based on weight, activity level, and goals. |
+| [PSS-10 Stress Assessment](../mcps/pss-10-stress-assessment.md) | Calculate and analyze perceived stress levels using the PSS-10 scale. |
 | [Raw Diet Ratio Calculator](../mcps/raw-diet-ratio-calculator.md) | Calculate precise daily food weights for BARF and PMR raw diets based on pet weight and activity level. |
 | [Self-Compassion Scale (SCS)](../mcps/self-compassion-scale-scs.md) | Calculate and interpret Self-Compassion Scale scores. |
 | [Sport Nutrition Timing Calculator](../mcps/sport-nutrition-timing-calculator.md) | Calculate precise carbohydrate and protein timing for pre-, intra-, and post-workout nutrition based on training intensity. |
+| [Strength Standards Checker](../mcps/strength-standards-checker.md) | Classify weightlifting strength levels and predict future milestones. |
 | [Stress Load Scorer](../mcps/stress-load-scorer.md) | Calculate cumulative psychological stress and health risk using the Holmes-Rahe Scale. |
 | [UV Exposure Estimator](../mcps/uv-exposure-estimator.md) | Calculate maximum safe sun exposure time based on UV index, skin type, and SPF. |
 | [VO2max Estimator](../mcps/vo2max-estimator.md) | Estimate aerobic capacity using Cooper, Rockport, Step, and YMCA Bike protocols. |

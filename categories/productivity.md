@@ -119,6 +119,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Buffer](../mcps/buffer-alternative.md) | Plan, schedule, and publish social media content across all your channels with analytics that show what is working. |
 | [Buffer](../mcps/buffer.md) | Automate social media management via Buffer — schedule posts, track sent updates, shuffle queues, and manage multi-platform profiles with any AI agent. |
 | [Bureau24](../mcps/bureau24.md) | Never miss a business call with a live virtual receptionist service that answers, routes, and logs calls professionally. |
+| [Burnout Detector](../mcps/burnout-detector.md) | Assess burnout risk using the Maslach Burnout Inventory (MBI) model. |
 | [Business Timezone & Holiday Scheduler](../mcps/business-timezone-holiday-scheduler.md) | Eradicate LLM scheduling errors. Calculate exact business days skipping global public holidays and convert precise timezones flawlessly. |
 | [Buttondown](../mcps/buttondown-alternative.md) | Automate your newsletter and subscriber management via Buttondown — manage lists, draft emails, and track tags directly from any AI agent. |
 | [Caiyun AI Translate / 彩云小译](../mcps/caiyun-ai-translate.md) | Popular high-precision machine translation — translate text lists and detect languages via AI. |
@@ -140,10 +141,12 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Change Case Engine](../mcps/change-case-engine.md) | Transform text between 12 naming conventions (camelCase, snake_case, PascalCase, kebab-case, CONSTANT_CASE, and more) with zero errors. |
 | [Chanty](../mcps/chanty.md) | Automate team communication via Chanty — manage conversations, send messages, invite members, and update statuses using any AI agent. |
 | [Chord Constructor](../mcps/chord-constructor.md) | Decompose chord notation into notes, inversions, and harmonic roles. |
+| [Chronotype Estimator](../mcps/chronotype-estimator.md) | Classifies biological chronotypes and recommends productivity windows based on natural sleep patterns. |
 | [Chuangkit / 创客贴](../mcps/chuangkit.md) | Leading graphic design platform in China — manage templates, materials, and designs via AI. |
 | [Chuck Norris](../mcps/chuck-norris.md) | Access the legendary power of Chuck Norris facts — get random jokes, browse categories, and search the entire database directly from your AI agent. |
 | [ChurchStamp](../mcps/churchstamp.md) | Manage church operations with member directories, event planning, volunteer coordination, and donation tracking for ministries. |
 | [Circadian REM Sleep Cycle Optimizer](../mcps/circadian-rem-sleep-cycle-optimizer.md) | Harmonize your workflow with biological data. Calculate optimal wake-up times and bedtimes respecting 90-minute REM sleep phases for peak chronotype management. |
+| [Circadian Rhythm Aligner](../mcps/circadian-rhythm-aligner.md) | Gradual sleep and wake time adjustment planner. |
 | [Circle.so](../mcps/circleso.md) | Manage online communities via Circle — track members, monitor posts, and manage spaces directly from any AI agent. |
 | [Click2Mail](../mcps/click2mail.md) | Manage physical mail and printing via Click2Mail — track jobs, monitor credit balance, and submit mailings directly from any AI agent. |
 | [ClickTime](../mcps/clicktime.md) | Manage time tracking and resource planning via ClickTime — track entries, monitor projects, and audit client hours directly from any AI agent. |
@@ -172,6 +175,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Coda](../mcps/coda-alternative.md) | Combine docs, spreadsheets, and apps into powerful all-in-one documents that grow with your team and automate routine work. |
 | [Coda](../mcps/coda.md) | Enable your AI agent to manage docs, tables, formulas, and rows via the Coda API. |
 | [Code Integrity Prover](../mcps/code-integrity-prover.md) | AI agents default to type evasion (like any, void*, unsafe, or ignore), TODO stubs, timing/sleep hacks, and empty catch blocks. 96% of developers don't trust AI-generated code. This tool enforces zero-workaround integrity across all programming languages. |
+| [Cognitive Load Estimator](../mcps/cognitive-load-estimator.md) | Quantify mental strain from workload metrics and get actionable mitigation strategies. |
 | [Cognito Forms](../mcps/cognito-forms.md) | Build smart online forms with conditional logic, calculations, and payment collection that adapt to every response. |
 | [CometChat](../mcps/cometchat.md) | Enable your AI agent to manage chat users, groups, and messages via the CometChat API. |
 | [Competitive Intelligence Prover](../mcps/competitive-intelligence-prover.md) | AI agents fabricate competitor data, list vague weaknesses, propose fantasy strategies, and ignore your own gaps. This tool forces fact-grounded competitive analysis: verifiable sources, measurable weaknesses, feasible attack plans, self-aware assessment, and kill criteria with deadlines. |
@@ -206,6 +210,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Customer.io](../mcps/customerio-alternative.md) | Send behavior-driven emails, push notifications, and in-app messages triggered by what your users actually do in your product. |
 | [Customers.ai](../mcps/customersai.md) | Identify anonymous website visitors by name and turn them into leads with AI-powered visitor identification and outreach automation. |
 | [Cyberimpact](../mcps/cyberimpact-alternative.md) | Email marketing automation with Cyberimpact. |
+| [Cycling FTP Calculator](../mcps/cycling-ftp-calculator.md) | Calculate FTP, power zones, and training metrics like TSS and IF from cycling tests. |
 | [D2L Brightspace](../mcps/d2l-brightspace.md) | Manage your D2L Brightspace LMS — administer courses, track student grades, and manage enrollments directly through your AI agent. |
 | [DAS Payment Scheduler](../mcps/das-payment-scheduler.md) | Automated annual calendar generator for Brazilian Simples Nacional tax payments, handling holiday-based date shifts and overdue period alerts. |
 | [Data Pipeline Prover](../mcps/data-pipeline-prover.md) | A data team asked an AI to build an ETL pipeline. No schema contract. No idempotency. No freshness SLA. The pipeline ran for 3 months — silently inserting 2.4 million duplicate records and serving stale data to dashboards nobody questioned. This tool forces schema validation at boundaries, idempotent writes, freshness alerting, and end-to-end lineage tracing. |
@@ -278,6 +283,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [EmailOctopus](../mcps/emailoctopus-alternative.md) | Send beautiful email campaigns at a fraction of the cost with a platform built for startups and growing businesses. |
 | [Emoji Name Resolver](../mcps/emoji-name-resolver.md) | Convert emoji shortcodes to Unicode and back (:rocket: ↔ 🚀). Essential for Slack, Discord, and GitHub cross-platform compatibility. |
 | [EmojisWorld](../mcps/emojisworld.md) | Universal emoji intelligence — search emojis, list categories, and get random icons via AI. |
+| [Energy Curve Mapper](../mcps/energy-curve-mapper.md) | Map your natural energy peaks, valleys, and optimal focus windows based on your chronotype. |
 | [Engineering Compliance Prover](../mcps/engineering-compliance-prover.md) | Forces AI to validate structural designs against US codes (ASCE, ACI, NEC). Demands real capacity-demand ratios, traced load paths, specific material tolerances, and FMEA instead of vague appeals to 'industry standards'. |
 | [Engineering Reasoning Prover](../mcps/engineering-reasoning-prover.md) | An engineering report cited 'industry standards' without naming a single one. Engineering Reasoning Prover forces ISO/ASME/IEC-grounded compliance analysis — real calculations, real codes, real risk quantification. |
 | [Enrich CRM](../mcps/enrich-crm.md) | Enhance your CRM records with verified company data, technographic signals, and contact enrichment that keeps your database fresh. |
@@ -306,6 +312,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Farming Efficiency Calculator](../mcps/farming-efficiency-calculator.md) | Optimize your gameplay by calculating Gold Per Hour and comparing farming routes. |
 | [Fathom](../mcps/fathom.md) | Manage AI meeting notes via Fathom — list and search meetings, retrieve transcripts and summaries, and track action items directly from any AI agent. |
 | [Fathom Analytics](../mcps/fathom-analytics.md) | Privacy-first website analytics via Fathom — list sites, monitor real-time visitors, and aggregate pageviews directly through your AI agent. |
+| [Fatigue Accumulation Tracker](../mcps/fatigue-accumulation-tracker.md) | Monitor sleep debt, estimate cognitive impact, and calculate recovery timelines. |
 | [FatSecret](../mcps/fatsecret.md) | Access millions of food items with calorie tracking, macro data, and serving sizes from the FatSecret platform used by 30M+ users worldwide. |
 | [Favqs](../mcps/favqs.md) | Discover and manage quotes — fetch the Quote of the Day, search by author or tag, and curate your favorites directly via AI. |
 | [Feedly](../mcps/feedly-alternative.md) | Stay ahead of industry trends by aggregating RSS feeds, tracking topics with AI, and organizing research in focused boards. |
@@ -407,6 +414,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Humaans](../mcps/humaans.md) | Manage employees, leaves, and organization data via Humaans HRIS API. |
 | [Humanity](../mcps/humanity.md) | Manage workforce scheduling, employee shifts, and team communication via Humanity — list employees, manage locations, and track shifts directly from any AI agent. |
 | [Hurma](../mcps/hurma.md) | Manage your HR processes with employee records, leave tracking, and performance reviews designed for growing teams. |
+| [Hypertrophy Rep Range Calculator](../mcps/hypertrophy-rep-range-calculator.md) | Track and optimize muscle hypertrophy by monitoring training volume, RIR targets, and effective stimulus. |
 | [iCal Calendar Parser](../mcps/ical-calendar-parser.md) | Parse exported .ics calendar files from Google Calendar, Apple Calendar, or Outlook local. Let your AI find free slots, count meetings, and manage your schedule. |
 | [Ideanote](../mcps/ideanote.md) | Manage ideas, missions, and innovation workspaces via Ideanote API. |
 | [idloom](../mcps/idloom.md) | Manage events, attendees, and invoices via idloom.events API. |
@@ -526,6 +534,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [MyHR](../mcps/myhr.md) | Simplify employee management in New Zealand and Australia with leave tracking, timesheets, and HR compliance tools. |
 | [Nager.Date](../mcps/nagerdate.md) | Manage public holidays worldwide — audit global events and calendars via AI. |
 | [NameSilo (Domain Registrar Developer API)](../mcps/namesilo-domain-registrar-developer-api.md) | Manage your domain portfolio, DNS records, and registrations directly through NameSilo's developer API. |
+| [Nap Optimizer](../mcps/nap-optimizer.md) | Optimize your rest with science-based nap recommendations. |
+| [Nap Strategy Calculator](../mcps/nap-strategy-calculator.md) | Optimize your rest with intelligent nap scheduling based on sleep patterns and goals. |
 | [NeonCRM](../mcps/neoncrm.md) | Manage non-profit operations via NeonCRM — track donations, memberships, and events directly from your AI agent. |
 | [Nextcloud](../mcps/nextcloud.md) | Manage your Nextcloud instance — handle files, shares, user statuses, and server capabilities directly from your AI agent. |
 | [NFe.io](../mcps/nfeio.md) | Orchestrate NFe.io services — manage service invoices (NFS-e), validate city codes, and monitor company data directly from any AI agent. |
@@ -611,6 +621,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Rebrandly](../mcps/rebrandly.md) | Link management platform to create and manage branded short URLs with AI. |
 | [Recipe Scaler](../mcps/recipe-scaler.md) | Precisely scale recipe ingredients while maintaining culinary proportions and practical measurements. |
 | [Reclaim.ai](../mcps/reclaimai.md) | Equip your AI to directly manage tasks, habits, and scheduling links via your smart Reclaim.ai calendar assistant. |
+| [Recovery Time Planner](../mcps/recovery-time-planner.md) | Calculate estimated recovery duration and progressive weekly plans based on burnout levels and mitigation strategies. |
 | [Recruit CRM](../mcps/recruit-crm.md) | Manage candidates, jobs, and client companies with Recruit CRM and AI agents. |
 | [Refiner](../mcps/refiner.md) | Survey your SaaS users with in-app micro-surveys that capture NPS, feature feedback, and churn signals at the perfect moment. |
 | [Reflect](../mcps/reflect.md) | Equip your AI to read, write, and explore your networked thought graph in Reflect Notes securely via their API. |
@@ -623,6 +634,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Routific](../mcps/routific.md) | Connect your AI assistant to Routific to solve complex vehicle routing problems, dispatch drivers, and manage global delivery timelines natively through chat. |
 | [RSS / Atom Reader](../mcps/rss-atom-reader.md) | Connect your AI assistant to any RSS or Atom feed worldwide to fetch news, updates, and articles instantly within your chat interface. |
 | [RSS Feed Parser](../mcps/rss-feed-parser.md) | Turn any RSS 2.0 or Atom feed into clean, structured JSON. Extract titles, links, dates, authors, and full content from blogs, news sites, and podcasts — ready for your agent to process. |
+| [Running Race Predictor](../mcps/running-race-predictor.md) | Predict race performance and generate segmented pacing strategies using the Riegel model. |
 | [Sally](../mcps/sally.md) | Keep frontline teams connected with an employee communication platform that reaches deskless workers through mobile and chat. |
 | [Sansan](../mcps/sansan.md) | Digitize and manage business cards via AI — browse contacts, verify details, and explore your company's network effortlessly. |
 | [Sapling (Kallidus)](../mcps/sapling-kallidus.md) | Manage employee onboarding, data, and tasks via Sapling API. |
@@ -650,6 +662,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Skyscanner](../mcps/skyscanner.md) | Search flights worldwide — compare prices by date, find cheapest days to fly and discover flight routes. |
 | [Sleep Cycle Calculator](../mcps/sleep-cycle-calculator.md) | Optimize your rest by finding the perfect wake-up times based on natural 90-minute sleep cycles. |
 | [Sleep Debt Tracker](../mcps/sleep-debt-tracker.md) | Quantify accumulated sleep debt, identify trends, and predict recovery timelines. |
+| [Sleep Quality Scorer](../mcps/sleep-quality-scorer.md) | Analyze your sleep patterns and receive a diagnostic score based on duration, continuity, and subjective recovery. |
 | [SM2 Spaced Repetition](../mcps/sm2-spaced-repetition.md) | High-performance implementation of the SM-2 algorithm for optimal review scheduling. |
 | [SmartThings](../mcps/smartthings.md) | Control and monitor your smart home ecosystem — manage devices, check real-time statuses, and trigger scenes directly from your AI agent. |
 | [SnipForm](../mcps/snipform.md) | Connect your AI agents to SnipForm to manage form submissions, block spam, handle webhooks, and analyze conversion data. |

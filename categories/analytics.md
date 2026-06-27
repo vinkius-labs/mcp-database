@@ -8,10 +8,14 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Emotional Variability Score](../mcps/emotional-variability-score.md) | Quantify emotional fluctuations, mood amplitude, and longitudinal stability. |
 | [Incrementality Estimator](../mcps/incrementality-estimator.md) | Determines true campaign ROI by calculating lift above natural conversion rates using control group data. |
 | [Karmic Debt Calculator](../mcps/karmic-debt-calculator.md) | Identify and interpret karmic debt numbers (13, 14, 16, 19) within a numerological matrix. |
+| [Life Events Stress Calculator](../mcps/life-events-stress-calculator.md) | Assess cumulative psychological stress risks using the Holmes-Rahe Scale. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
+| [Power-to-Weight and Relative Strength Calculator](../mcps/power-to-weight-and-relative-strength-calculator.md) | Calculate W/kg for endurance sports and standardized strength scores (DOTS, WILKS, IPF) for powerlifting. |
 | [Recovery Readiness Score](../mcps/recovery-readiness-score.md) | Evaluate training readiness and optimal intensity based on sleep, soreness, stress, and motivation. |
+| [Recovery Score](../mcps/recovery-score.md) | Estimate muscle recovery and physiological readiness based on training load, sleep quality, and rest frequency. |
 | [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
+| [Swimming Pace Calculator](../mcps/swimming-pace-calculator.md) | Calculate swimming training intensities, race predictions, and efficiency metrics based on Critical Swim Speed (CSS). |
 
 
 ---

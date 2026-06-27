@@ -17,6 +17,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Burn Multiple Calculator](../mcps/burn-multiple-calculator.md) | Evaluate SaaS growth efficiency by measuring capital expenditure against new ARR. |
 | [Burn Rate Analyzer](../mcps/burn-rate-analyzer.md) | Analyze startup burn rate, expense composition, and runway forecasting. |
 | [CAC Payback by Segment](../mcps/cac-payback-by-segment.md) | Analyze CAC payback periods and expansion impact across SMB, Mid-Market, and Enterprise segments. |
+| [CAPM Calculator](../mcps/capm-calculator.md) | Calculate expected asset returns using the Capital Asset Pricing Model (CAPM) and evaluate investment attractiveness. |
 | [Carbon Credit Farm Calculator](../mcps/carbon-credit-farm-calculator.md) | Estimate potential carbon credit generation from agricultural land use and sequestration models. |
 | [Carbon Offset Comparator](../mcps/carbon-offset-comparator.md) | Compare the financial efficiency of different carbon offset strategies. |
 | [Cash-to-Cash Cycle Calculator](../mcps/cash-to-cash-cycle-calculator.md) | Calculate and optimize your Cash Conversion Cycle (C2C) to improve liquidity. |
@@ -34,6 +35,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Currency Hedging Calculator](../mcps/currency-hedging-calculator.md) | Evaluate the financial impact of using forward contracts to mitigate foreign exchange risk. |
 | [DECORE Simulator](../mcps/decore-simulator.md) | Calculate and validate income declarations for regulatory compliance. |
 | [Depreciation Calculator](../mcps/depreciation-calculator.md) | Calculate asset depreciation using straight-line, sum-of-the-years' digits, and declining balance methods. |
+| [Dividend Discount Model](../mcps/dividend-discount-model.md) | Calculate intrinsic equity value using Gordon Growth and Two-Stage DDM models. |
 | [Dollar Cost Averaging Simulator](../mcps/dollar-cost-averaging-simulator.md) | Simulate and compare DCA vs Lump Sum investment strategies using historical price data. |
 | [EBITDA Calculator](../mcps/ebitda-calculator.md) | Calculate EBITDA, margins, and EV/EBITDA multiples with industry benchmark comparisons. |
 | [EBITDA Multiple Valuator](../mcps/ebitda-multiple-valuator.md) | Calculate Enterprise and Equity Value using sector-specific EBITDA multiples. |
@@ -88,6 +90,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Net Revenue Retention Calculator](../mcps/net-revenue-retention-calculator.md) | Calculate and analyze NRR and GRR metrics across customer cohorts to evaluate subscription health. |
 | [NF-e Access Key Validator](../mcps/nf-e-access-key-validator.md) | Validate the structural integrity and compliance of Brazilian NF-e access keys. |
 | [Option Pool Shuffle Simulator](../mcps/option-pool-shuffle-simulator.md) | Analyze the dilution impact of option pool timing during VC investment rounds. |
+| [Options Greeks Calculator](../mcps/options-greeks-calculator.md) | Calculate Black-Scholes theoretical option prices and Greeks (Delta, Gamma, Theta, Vega, Rho) to assess market risk. |
+| [PE Ratio Analyzer](../mcps/pe-ratio-analyzer.md) | Analyze stock valuation using P/E, PEG, and sector-specific benchmarks. |
 | [Penalty Clause Calculator](../mcps/penalty-clause-calculator.md) | Calculate contractual penalties, legal ceilings, and estimated judicial reductions based on jurisdiction. |
 | [Pet Monthly Cost Estimator](../mcps/pet-monthly-cost-estimator.md) | Estimate the monthly financial commitment for pet care based on species, size, and location. |
 | [Pipeline Velocity Calculator](../mcps/pipeline-velocity-calculator.md) | Calculate sales pipeline velocity ($/day) and identify which operational metric (opportunities, close rate, or ACV) must improve to hit your revenue targets. |
@@ -122,6 +126,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Standby Energy Waste Calculator](../mcps/standby-energy-waste-calculator.md) | Calculate the energy waste, financial cost, and carbon footprint of electronics in standby mode. |
 | [Startup Financial Model](../mcps/startup-financial-model.md) | Generate 12, 24, or 36-month financial projections including P&L, Cash Flow, and Break-even analysis. |
 | [Startup Health Score](../mcps/startup-health-score.md) | Quantify startup operational health (0-100) across Finance, Product, Growth, Team, and Market dimensions using stage-specific benchmarks. |
+| [Stock Valuation DCF](../mcps/stock-valuation-dcf.md) | Estimate intrinsic stock value using a multi-stage Discounted Cash Flow (DCF) model with sensitivity analysis. |
 | [Supply Chain Cost Calculator](../mcps/supply-chain-cost-calculator.md) | Calculate SCM cost ratio, category breakdown, and industry benchmarks. |
 | [TAM-SAM-SOM Calculator](../mcps/tam-sam-som-calculator.md) | Calculate Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) using top-down and bottom-up methodologies. |
 | [Tax Loss Harvesting Calculator](../mcps/tax-loss-harvesting-calculator.md) | Calculate the financial benefits and tax savings from harvesting capital losses. |
