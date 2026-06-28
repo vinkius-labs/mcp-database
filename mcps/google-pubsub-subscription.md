@@ -22,10 +22,10 @@ By strictly scoping access, your AI can safely operate as a highly scalable back
 
 
 ## Available Tools (2)
-- **acknowledge_messages**: Acknowledge messages to remove them from the Pub/Sub Subscription
 - **pull_messages**: You MUST acknowledge the messages using their ackIds after you process them, otherwise they will be redelivered.
 
 Pull messages from the configured Google Cloud Pub/Sub Subscription
+- **acknowledge_messages**: Acknowledge messages to remove them from the Pub/Sub Subscription
 
 
 ## 💬 Prompt Examples
