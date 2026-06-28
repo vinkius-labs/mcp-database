@@ -187,7 +187,6 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [OneLocal LocalReviews](../mcps/onelocal-localreviews.md) | Boost your local business visibility with automated review collection, reputation monitoring, and response management tools. |
 | [Ontraport](../mcps/ontraport.md) | Manage marketing and sales via Ontraport — list contacts, track campaigns, and monitor transactions directly from any AI agent. |
 | [OpenPanel](../mcps/openpanel.md) | Track events, identify users, and manage profile properties directly from your AI agent using OpenPanel analytics. |
-| [Orbit](../mcps/orbit.md) | Manage community relationships via Orbit — list members, track activities, and add notes directly from any AI agent. |
 | [Ortto (formerly Autopilot)](../mcps/ortto-formerly-autopilot.md) | Manage your CDP, customer data, and marketing automations via Ortto — orchestrate journeys natively via AI. |
 | [Papermark (Docsend Alternative)](../mcps/papermark-docsend-alternative.md) | Securely share documents, track engagement, and manage links with Papermark — the open-source DocSend alternative for your AI agent. |
 | [PartnerStack](../mcps/partnerstack.md) | Manage affiliate and partner programs via PartnerStack — list partners, track leads, and monitor rewards directly from any AI agent. |

@@ -6,11 +6,15 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Combat Balance Checker](../mcps/combat-balance-checker.md) | Quantify combat outcomes and attribute influence through large-scale simulations. |
 | [Crafting Cost Calculator](../mcps/crafting-cost-calculator.md) | Analyze production costs, profit margins, and optimal ingredient sourcing strategies. |
+| [D&D Character Stat Roller](../mcps/dd-character-stat-roller.md) | Statistical simulation engine for evaluating D&D attribute generation methods. |
+| [Dice Probability Calculator](../mcps/dice-probability-calculator.md) | Calculate full probability distributions, statistical metrics, and success thresholds for any dice notation. |
 | [Drop Rate Calculator](../mcps/drop-rate-calculator.md) | Calculate item drop probabilities, pity mechanics, and expected resource usage for loot-based systems. |
+| [Encounter Difficulty Calculator](../mcps/encounter-difficulty-calculator.md) | Calculate D&D 5e/PF2e combat difficulty, lethality risk, and encounter adjustments. |
 | [Gacha Pity Simulator](../mcps/gacha-pity-simulator.md) | Analyze gacha mechanics including base rates, soft pity ramps, and hard pity guarantees to predict player costs. |
 | [Game Economy Inflation Calculator](../mcps/game-economy-inflation-calculator.md) | Monitor, forecast, and stabilize game currency inflation by analyzing gold sinks and faucets. |
 | [Mastery Progression Calculator](../mcps/mastery-progression-calculator.md) | Simulate skill progression through mastery tiers based on gameplay frequency and streak bonuses. |
 | [Player Spending LTV Calculator](../mcps/player-spending-ltv-calculator.md) | Calculate player Lifetime Value (LTV), Breakeven CAC, and retention impact. |
+| [RPG Encounter Balance Calculator](../mcps/rpg-encounter-balance-calculator.md) | Estimate combat duration, lethality, and difficulty for tabletop RPG encounters. |
 | [Skill Tree Optimization Engine](../mcps/skill-tree-optimization-engine.md) | Optimize skill point allocation for maximum DPS, survivability, or balanced utility. |
 
 
