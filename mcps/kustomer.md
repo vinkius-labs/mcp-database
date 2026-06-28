@@ -29,6 +29,11 @@ Connect your AI agent to **Kustomer** to streamline your support operations and 
 
 
 ## Available Tools (10)
+- **list_kustomer_agents**: List all support agents (users)
+- **search_kustomer_timeline**: Provide filters as a JSON string.
+
+Perform a deep search across the customer timeline
+- **list_data_klasses**: List Kustomer custom data classes (Klasses)
 - **list_kustomer_customers**: Essential for identifying customer IDs for support auditing.
 
 List all customers in Kustomer
@@ -39,11 +44,6 @@ List all customers in Kustomer
 - **list_support_queues**: g., Billing, Technical Support) defined in Kustomer.
 
 List active support queues
-- **list_kustomer_agents**: List all support agents (users)
-- **search_kustomer_timeline**: Provide filters as a JSON string.
-
-Perform a deep search across the customer timeline
-- **list_data_klasses**: List Kustomer custom data classes (Klasses)
 - **check_kustomer_api_status**: Check the status of the Kustomer API
 
 

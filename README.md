@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,255 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,262 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,7 +10,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (815 servers)
+- [productivity](categories/productivity.md) (819 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
 - [developer-tools](categories/developer-tools.md) (512 servers)
 - [data-analytics](categories/data-analytics.md) (329 servers)
@@ -38,10 +38,10 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [collaboration](categories/collaboration.md) (39 servers)
 - [document-management](categories/document-management.md) (39 servers)
 - [talk-to-me](categories/talk-to-me.md) (38 servers)
+- [construction](categories/construction.md) (35 servers)
 - [databases](categories/databases.md) (35 servers)
 - [brain-trust](categories/brain-trust.md) (34 servers)
 - [health](categories/health.md) (34 servers)
-- [construction](categories/construction.md) (32 servers)
 - [customer-relationship-management](categories/customer-relationship-management.md) (31 servers)
 - [image-video](categories/image-video.md) (31 servers)
 - [security-compliance](categories/security-compliance.md) (31 servers)

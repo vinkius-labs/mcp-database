@@ -306,6 +306,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Everhour Time Tracking](../mcps/everhour-time-tracking.md) | Equip your AI agent to track time, manage projects, and monitor budgets via the Everhour API. |
 | [Evernote](../mcps/evernote.md) | Manage personal notes via Evernote — create and search notes, handle notebooks and tags, and monitor account quotas directly from any AI agent. |
 | [Every.org](../mcps/everyorg.md) | Enable donations to over a million nonprofits through a single integration with tax-deductible receipts and giving widgets. |
+| [Exam Notice Study Planner](../mcps/exam-notice-study-planner.md) | Transform exam notices into optimized study schedules and milestones. |
 | [Expensya](../mcps/expensya.md) | Submit and approve business expenses in seconds with receipt scanning, policy enforcement, and reimbursement workflows. |
 | [Factorial](../mcps/factorial.md) | Manage HR operations via Factorial — list employees and teams, track leave requests, monitor shifts and payslips, and handle company documents directly from any AI agent. |
 | [Fantastical](../mcps/fantastical.md) | Manage calendars via Fantastical — create events using natural language, handle scheduling openings and proposals, and monitor connected accounts directly from any AI agent. |
@@ -592,6 +593,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Pointagram](../mcps/pointagram.md) | Motivate your sales team with gamified leaderboards, competitions, and rewards that turn KPIs into engaging daily challenges. |
 | [Polyrhythm Calculator](../mcps/polyrhythm-calculator.md) | Calculate precise alignment, attack timestamps, and subdivision grids for complex polyrhythms. |
 | [Pomodoro Mental Health Tracker](../mcps/pomodoro-mental-health-tracker.md) | Prevent burnout by adapting focus cycles with mandatory active breaks, ensuring sustained mental energy throughout your workday. |
+| [Pomodoro Study Planner](../mcps/pomodoro-study-planner.md) | Optimize your study sessions with adaptive Pomodoro scheduling based on energy and subject type. |
 | [PracticePanther](../mcps/practicepanther.md) | Manage law practice via PracticePanther — matters, contacts, time tracking, bills, payments, tasks, and calendar. |
 | [PrecisionConvert Unit Engine](../mcps/precisionconvert-unit-engine.md) | Universal unit conversion intelligence — transform physical values via AI. |
 | [Presenton](../mcps/presenton.md) | Automate presentation generation via Presenton — create AI slide decks and manage exports directly from any AI agent. |
@@ -688,6 +690,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [String Metrics Analyzer](../mcps/string-metrics-analyzer.md) | Bypass LLM tokenization blindness. Get exact character counts, word counts, and specific string occurrences deterministically. |
 | [String Operations Engine](../mcps/string-operations-engine.md) | Equip your AI with deterministic text manipulation. Instantly format casings (camelCase, PascalCase, slugify), truncate safely, and count exact characters local. |
 | [Structured](../mcps/structured.md) | Connect your AI to Structured. Programmatically manage your daily planner, tasks, and routines seamlessly directly from your terminal. |
+| [Study Hours Estimator](../mcps/study-hours-estimator.md) | Calculate required study duration and structured learning phases for standardized exams. |
+| [Study Schedule Generator](../mcps/study-schedule-generator.md) | Generate personalized study schedules based on subject difficulty and available time. |
 | [Sunsama](../mcps/sunsama.md) | Connect your AI to Sunsama. Actively manage your day, orchestrate tasks, and balance your work natively from the terminal. |
 | [Superblocks](../mcps/superblocks.md) | Build and manage internal tools and workflows — list applications, manage configurations, and generate secure embed tokens directly from your AI agent. |
 | [Superdocu](../mcps/superdocu.md) | Automate document collection and client onboarding with Superdocu and AI agents. |

@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your real-time communication infrastructure
 
 
 ## Available Tools (10)
-- **add_team_member**: Add members to team
-- **create_account**: Create IM account
-- **create_team**: Create chat group/team
-- **get_session_history**: Get chat history
 - **get_team_detail**: Get team details
 - **kick_team_member**: Remove member from team
 - **refresh_user_token**: Refresh user IM token
 - **send_batch_message**: Send batch messages
 - **send_p2p_message**: Send P2P message
 - **update_account**: Update IM account
+- **add_team_member**: Add members to team
+- **create_team**: Create chat group/team
+- **get_session_history**: Get chat history
+- **create_account**: Create IM account
 
 
 ## 💬 Prompt Examples
