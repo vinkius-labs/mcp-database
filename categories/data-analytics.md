@@ -232,6 +232,7 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [OpenWeatherMap](../mcps/openweathermap.md) | Access real-time weather data, 5-day forecasts, air quality metrics, and geocoding services globally via OpenWeatherMap. |
 | [Optimizely](../mcps/optimizely.md) | Manage A/B tests and feature flags via Optimizely — list projects, track experiments, and toggle features directly from any AI agent. |
 | [Oura](../mcps/oura.md) | Access your Oura Ring health data — sleep, activity, readiness, HRV, heart rate and workout metrics from any AI agent. |
+| [Oura](../mcps/aconex.md) | Access your Oura Ring health data — sleep, activity, readiness, HRV, heart rate and workout metrics from any AI agent. |
 | [Overpass](../mcps/overpass.md) | Access OpenStreetMap data via Overpass API — execute complex spatial queries, fetch raw map data, and monitor API status. |
 | [Overpass (OpenStreetMap)](../mcps/overpass-openstreetmap.md) | Search OpenStreetMap data — find restaurants, shops, hospitals, schools, parks, ATMs and more worldwide. |
 | [Paraíba Open Data](../mcps/paraiba-open-data.md) | Access official public spending, budget, and payroll data from the State of Paraíba, Brazil, directly through your AI agent. |

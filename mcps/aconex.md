@@ -1,101 +1,100 @@
-# Aconex MCP Server
+# Oura MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aconex)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
 
-**Category:** [collaboration](../categories/collaboration.md)
+**Category:** [data-analytics](../categories/data-analytics.md)
 
-Manage construction and engineering projects via Aconex — list projects, search directories, copy projects, and invite users directly from any AI agent.
+Access your Oura Ring health data — sleep, activity, readiness, HRV, heart rate and workout metrics from any AI agent.
 
 ## Description
-Connect your **Aconex** account to any AI agent and take control of your construction and engineering project management workflows through natural conversation.
+Connect your **Oura Ring** to any AI agent and access your personal health data through natural conversation.
 
 ### What you can do
 
-- **Project Overview** — List all projects you have access to and retrieve project logos.
-- **Directory Search** — Search the Global Directory or specific project directories for users, organizations, and groups.
-- **Project Administration** — Copy existing projects with detailed configurations (name, code, type, start date, etc.).
-- **Team Collaboration** — Invite new users to active projects seamlessly.
+- **Sleep** — Analyze sleep scores, stages (REM/light/deep/wake), efficiency, latency and timing
+- **Activity** — Track daily steps, calories, MET minutes and activity goals
+- **Readiness** — Monitor readiness scores, HRV, resting heart rate, body temperature and recovery
+- **Tags** — Review your manual entries for mood, energy, behaviors and substances
+- **Workouts** — Browse logged workouts with type, duration, calories and heart rate zones
+- **Heart Rate** — Access detailed 5-minute heart rate samples and HRV data
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Aconex Hostname and Authorization credentials
-3. Start managing your construction projects from Claude, Cursor, or any MCP-compatible client
-
-No more manual directory lookups or tedious project setup. Your AI acts as an automated project coordinator.
+2. Enter your Oura Personal Access Token
+3. Start exploring your health data from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Project Managers** — Instantly retrieve project lists, verify project logos, and copy project templates without leaving your workspace.
-- **Document Controllers & Admins** — Search global and project directories to locate organizations and users quickly.
-- **Operations Leads** — Automate project duplication and user invitations to streamline onboarding.
+- **Health Enthusiasts** — track sleep quality, daily readiness and activity trends over time
+- **Athletes** — monitor recovery, HRV and workout performance to optimize training
+- **Biohackers** — correlate tags (mood, energy, behaviors) with sleep and readiness scores
 
 
-## Available Tools (13)
-- **copy_project**: Copy an existing project
-- **create_mailing_group**: Create a mailing group in a project
-- **create_user**: Requires Organization Administrator permissions.
+## Available Tools (7)
+- **get_activity**: Supports date range filtering.
 
-Create a new user within an organization
-- **delete_mailing_group**: Delete a mailing group in a project
-- **get_me**: View own user information
-- **get_project_logo**: Get the logo for a specific project
-- **get_register_schema**: Get the document register schema for a project
-- **invite_user_to_project**: Invite a user to a project
-- **list_organization_users**: Requires Organization Administrator role.
+Get your Oura activity data
+- **get_heart_rate**: Returns timestamp, heart rate value and HRV for each sample. Supports date range filtering. Note: This endpoint returns high-frequency data; use narrow date ranges.
 
-List users within an organization
-- **list_projects**: List projects for the authenticated user
-- **search_global_directory**: Search the Global Directory for users
-- **search_project_directory**: Search a specific project directory
-- **update_user_status**: Requires Organization Administrator permissions.
+Get your Oura heart rate data
+- **get_readiness**: Supports date range filtering.
 
-Enable or disable existing users
+Get your Oura readiness data
+- **get_sessions**: Includes overall scores, sleep metrics, activity data and readiness indicators. Supports date range filtering.
+
+Get your Oura session data
+- **get_sleep**: Supports date range filtering with start_date and end_date (YYYY-MM-DD). Pagination via nextToken.
+
+Get your Oura sleep data
+- **get_tags**: ). Tags are user-entered data points that correlate with sleep and readiness scores. Supports date range filtering.
+
+Get your Oura tags
+- **get_workouts**: Workouts can be manually logged or auto-detected by the Oura Ring. Supports date range filtering.
+
+Get your Oura workout data
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Aconex** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Oura** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my active projects in Aconex."
+> "How did I sleep last night?"
 
 **🤖 AI Agent:**
-> I have retrieved your active projects. You have access to: 'Metropolitan Highway Expansion' (ID: 849201) and 'Downtown Commercial Tower' (ID: 302948). Would you like to inspect the details of either project?
+> Last night: Sleep score 85/100. Total: 7h 42m. Deep: 2h 10m, REM: 1h 45m, Light: 3h 15m, Awake: 32m. Efficiency: 92%. Onset: 15min. Restlessness: Low.
 
 ---
 
 **👤 You:**
-> "Search the global directory for users with the family name 'Smith' in the organization 'BuildCorp'."
+> "What is my readiness score today?"
 
 **🤖 AI Agent:**
-> Searching the Global Directory... I found 2 matching users:
-1. John Smith (john.smith@buildcorp.com)
-2. Sarah Smith (sarah.smith@buildcorp.com)
-Would you like to invite either of them to a project?
+> Today's readiness: 82/100 (Good). HRV: 65ms, Resting HR: 51 bpm, Body temp: 36.6°C. Sleep balance: 8h 5min. Activity balance: Well recovered. Previous day strain: 14.
 
 ---
 
 **👤 You:**
-> "Invite user 'usr-92018' to project 849201."
+> "Show me my activity from yesterday."
 
 **🤖 AI Agent:**
-> I've sent an invitation to user 'usr-92018' for project 849201 ('Metropolitan Highway Expansion'). They will receive a notification to join the project directory.
+> Yesterday's activity: Score 75/100. Steps: 8,450. Calories: 2,340 (active: 520). MET minutes: 145. Average HR: 72 bpm. Inactivity: 11h 20m. Daily goal: 85% achieved.
 
 
 ## ❓ FAQ
 
-**Q: How do I list all the active construction projects I have access to?**
-You can ask your AI agent to run the `list_projects` tool. It will query Aconex and return a complete list of projects associated with your authenticated account.
+**Q: How do I get an Oura Personal Access Token?**
+Log in to your Oura account at [**cloud.ouraring.com**](https://cloud.ouraring.com/oauth2/authorize), create a personal access token in your account settings. The token gives access to your sleep, activity, readiness and health data.
 
-**Q: Can I search for users and organizations outside of my current project directory?**
-Yes! Use the `search_global_directory` tool to search across the entire Aconex Global Directory using parameters like organization name, given name, family name, or email.
+**Q: What health data is available?**
+Sleep (score, stages, efficiency), Activity (steps, calories, MET), Readiness (score, HRV, RHR, temperature), Tags (mood, energy, behaviors), Workouts (type, duration, HR zones) and Heart Rate (5-min samples).
 
-**Q: Is it possible to duplicate or copy an existing project template?**
-Yes, you can use the `copy_project` tool. Provide the source `project_id` along with the new project's name, short name, code, type, and start date to create a copy within your organization.
+**Q: How far back can I access data?**
+You can access all historical data recorded by your Oura Ring. Use start_date and end_date parameters to filter results. Data is paginated with a nextToken for large date ranges.
 
 
 ## Installation & Usage
@@ -112,7 +111,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Aconex** under Connectors.
+5. Click the **+** button in any chat and enable **Oura** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -120,7 +119,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `aconex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Aconex** tools.
+4. Click **Save** — Cursor will connect and list all **Oura** tools.
 
 **Configuration:**
 ```json

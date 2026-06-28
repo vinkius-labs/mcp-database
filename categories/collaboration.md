@@ -4,7 +4,6 @@ Explore the open database of **collaboration** Model Context Protocol (MCP) serv
 
 | Tool Name | Description |
 |-----------|-------------|
-| [Aconex](../mcps/aconex.md) | Manage construction and engineering projects via Aconex — list projects, search directories, copy projects, and invite users directly from any AI agent. |
 | [Ayanza](../mcps/ayanza.md) | AI-powered project management and team collaboration — manage tasks, projects, and wikis via AI. |
 | [Bevy Community](../mcps/bevy-community.md) | Manage your community events and chapters via Bevy — list events, attendees, and chapters directly from any AI agent. |
 | [Blackboard Learn](../mcps/blackboard-learn.md) | Manage courses, announcements, attendance, and grades directly from your AI agent via Blackboard Learn. |

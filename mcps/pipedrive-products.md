@@ -7,7 +7,7 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Manage your product catalog, attach products to deals, and track recurring revenue subscriptions in Pipedrive.
+Manage your product catalog and attach products to deals in Pipedrive.
 
 ## Description
 Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline without switching tabs.
@@ -27,28 +27,25 @@ Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline 
 - **RevOps** — Full CRM visibility and reporting
 
 
-## Available Tools (8)
-- **pd_add_product_to_deal**: Requires the deal ID, product ID (use pd_search_products or pd_list_products to find), unit price, and quantity. The line-item total is calculated automatically. Use when the user wants to add a product to a deal, build a quote, or track what is being sold.
-
-Attach a product from the catalog to a deal with a specific quantity and unit price for line-item tracking
+## Available Tools (7)
 - **pd_create_product**: Name is required. Code serves as the internal SKU/reference. Unit defines how the product is measured (piece, hour, kg, etc.). Tax is the default tax percentage. Products in the catalog can be attached to deals using pd_add_product_to_deal.
 
 Create a new product in the Pipedrive catalog with name, code (SKU), unit type, and tax rate
-- **pd_deal_products**: Returns product name, quantity, item price, discount percentage, and total value per line. Use when the user asks "what products are on this deal?", needs to check line-item pricing, or wants to review the deal composition before closing.
-
-Get all products attached to a specific deal with quantities, prices, and line-item totals
-- **pd_deal_subscriptions**: Returns subscription details including recurring amount, billing cycle, and dates. Subscriptions track ongoing revenue tied to a deal for SaaS/recurring revenue businesses. Use when the user asks about recurring revenue, MRR/ARR, or subscription details on a deal.
-
-Get recurring revenue subscriptions linked to a deal — MRR/ARR tracking for subscription-based businesses
-- **pd_get_product**: Returns full product data including name, prices per currency, code, unit, tax, and custom fields. Use after searching to drill into a specific product for complete details.
-
-Get complete details of a specific Pipedrive product by ID including all pricing, tax, and custom fields
 - **pd_list_products**: Returns product name, unit price, code (SKU), unit type, and whether it is active. Use for product catalog browsing, inventory auditing, or when the user wants to see all available products.
 
 List all products in the Pipedrive product catalog with names, prices, codes, and unit information
+- **pd_add_product_to_deal**: Requires the deal ID, product ID (use pd_search_products or pd_list_products to find), unit price, and quantity. The line-item total is calculated automatically. Use when the user wants to add a product to a deal, build a quote, or track what is being sold.
+
+Attach a product from the catalog to a deal with a specific quantity and unit price for line-item tracking
 - **pd_search_products**: Returns product name, unit price, product code (SKU), unit type, and tax percentage. Use when the user wants to find a product, check pricing, or needs a product ID before attaching it to a deal.
 
 Search Pipedrive products by name to find items in the product catalog with prices, codes, and unit types
+- **pd_deal_products**: Returns product name, quantity, item price, discount percentage, and total value per line. Use when the user asks "what products are on this deal?", needs to check line-item pricing, or wants to review the deal composition before closing.
+
+Get all products attached to a specific deal with quantities, prices, and line-item totals
+- **pd_get_product**: Returns full product data including name, prices per currency, code, unit, tax, and custom fields. Use after searching to drill into a specific product for complete details.
+
+Get complete details of a specific Pipedrive product by ID including all pricing, tax, and custom fields
 - **pd_update_product**: Only specified fields change. Use when the user wants to rename a product, update its SKU code, or change pricing information.
 
 Update an existing Pipedrive product — change name, code, pricing, or other catalog properties
