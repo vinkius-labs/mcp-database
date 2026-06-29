@@ -33,10 +33,10 @@ Connect your **Authorize.net** merchant account to any AI agent and manage your 
 
 
 ## Available Tools (10)
+- **get_batch_statistics**: Get statistics for a specific batch
 - **create_transaction**: You must provide the transaction type (e.g., authCaptureTransaction) and the request body.
 
 Create a new payment transaction
-- **get_batch_statistics**: Get statistics for a specific batch
 - **get_customer_profile**: Retrieve a customer profile by ID
 - **get_settled_batch_list**: Retrieve a list of settled batches for a date range
 - **get_transaction_details**: Get complete information for a specific transaction
