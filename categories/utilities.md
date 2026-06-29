@@ -13,6 +13,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Culinary Unit Converter](../mcps/culinary-unit-converter.md) | Convert culinary measurements between units like cups, spoons, and ml, or estimate ingredient mass. |
 | [Deep Diff Engine](../mcps/deep-diff-engine.md) | Find every single change between two JSON objects — additions, deletions, and edits with exact structural paths. Stop relying on AI to 'spot the difference'. |
 | [Deterministic Cron Schedule Engine](../mcps/deterministic-cron-schedule-engine.md) | Equip your AI with precise cron job parsing. Deterministically translate cron to natural language, format schedules, and calculate exact next execution times. |
+| [Dimensional Weight Calculator](../mcps/dimensional-weight-calculator.md) | Calculate dimensional weights, billable weight, and shipping weight discrepancies for major global carriers. |
 | [Frequency & Note Converter](../mcps/frequency-note-converter.md) | Convert between musical frequencies and notes with precision. |
 | [Groove Quantize Calculator](../mcps/groove-quantize-calculator.md) | Calculate precise millisecond-based quantization grids, swing offsets, and latency compensation for DAWs. |
 | [Ideal Weight Calculator](../mcps/ideal-weight-calculator.md) | Calculate your target weight range using scientific formulas like Lorentz, Devine, and Robinson. |

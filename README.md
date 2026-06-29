@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,292 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,301 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -16,7 +16,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [data-analytics](categories/data-analytics.md) (330 servers)
 - [marketing-automation](categories/marketing-automation.md) (234 servers)
 - [ecommerce](categories/ecommerce.md) (204 servers)
-- [finance](categories/finance.md) (166 servers)
+- [finance](categories/finance.md) (167 servers)
 - [loved-by-devs](categories/loved-by-devs.md) (134 servers)
 - [communication-messaging](categories/communication-messaging.md) (127 servers)
 - [erp-operations](categories/erp-operations.md) (127 servers)
@@ -51,24 +51,24 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [superpower](categories/superpower.md) (24 servers)
 - [government-public-data](categories/government-public-data.md) (23 servers)
 - [marketing](categories/marketing.md) (22 servers)
+- [utilities](categories/utilities.md) (21 servers)
 - [education](categories/education.md) (20 servers)
-- [utilities](categories/utilities.md) (20 servers)
 - [business-intelligence](categories/business-intelligence.md) (19 servers)
+- [healthcare](categories/healthcare.md) (19 servers)
 - [content-management](categories/content-management.md) (17 servers)
 - [analytics](categories/analytics.md) (16 servers)
 - [audio-music](categories/audio-music.md) (16 servers)
 - [architecture](categories/architecture.md) (15 servers)
-- [healthcare](categories/healthcare.md) (15 servers)
 - [gaming](categories/gaming.md) (12 servers)
+- [supply-chain](categories/supply-chain.md) (12 servers)
 - [agriculture](categories/agriculture.md) (11 servers)
 - [event-management](categories/event-management.md) (11 servers)
 - [lifestyle](categories/lifestyle.md) (11 servers)
 - [payment-processing](categories/payment-processing.md) (11 servers)
-- [supply-chain](categories/supply-chain.md) (10 servers)
 - [inventory-management](categories/inventory-management.md) (9 servers)
+- [seo](categories/seo.md) (9 servers)
 - [business-operations](categories/business-operations.md) (8 servers)
 - [devops-cicd](categories/devops-cicd.md) (8 servers)
-- [seo](categories/seo.md) (8 servers)
 - [travel-hospitality](categories/travel-hospitality.md) (8 servers)
 - [crm-sales](categories/crm-sales.md) (7 servers)
 - [project-management](categories/project-management.md) (7 servers)

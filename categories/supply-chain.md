@@ -8,9 +8,11 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Demand Forecast Calculator](../mcps/demand-forecast-calculator.md) | Generate 3-month demand projections using SMA, WMA, and Exponential Smoothing methods. |
 | [Fill Rate Calculator](../mcps/fill-rate-calculator.md) | Calculate Order, Line, and Unit Fill Rate metrics along with stockout costs. |
 | [Lead Time Analyzer](../mcps/lead-time-analyzer.md) | Analyze and decompose supply chain lead times to identify bottlenecks. |
+| [LTL-FTL Comparator](../mcps/ltl-ftl-comparator.md) | Logistics decision engine to compare LTL and FTL shipment costs, risks, and break-even points. |
 | [ManoMano (Home Improvement Marketplace)](../mcps/manomano-home-improvement-marketplace.md) | Manage your ManoMano seller account — update offer prices, track orders, and audit fulfillment stock. |
 | [Megaventory](../mcps/megaventory.md) | Inventory and order management via Megaventory — track products, stock levels, and orders. |
 | [Metrc](../mcps/metrc.md) | Cannabis track-and-trace via Metrc — track facilities, items, plants, and harvests. |
+| [NMFC Freight Class Calculator](../mcps/nmfc-freight-class-calculator.md) | Determine NMFC freight class and shipping cost impact using density-based calculations. |
 | [Omnitracs Fleet Intelligence](../mcps/omnitracs-fleet-intelligence.md) | Manage your fleet and logistics via Omnitracs — track vehicles, drivers, and shipments directly from your AI agent. |
 | [OpenTHC](../mcps/openthc.md) | Automate cannabis compliance via OpenTHC — track plants, manage inventory, query lab results, and handle B2B/B2C transactions directly from any AI agent. |
 | [Perfect Order Rate Calculator](../mcps/perfect-order-rate-calculator.md) | Calculate Perfect Order Rate and evaluate financial and loyalty impact. |
