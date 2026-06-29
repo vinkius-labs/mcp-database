@@ -61,6 +61,7 @@ Explore the open database of **human-resources** Model Context Protocol (MCP) se
 | [Oyster](../mcps/oyster.md) | Manage global HR, payroll, and compliance via Oyster — list engagements, track expenses, and manage time-off requests directly from any AI agent. |
 | [PayFit](../mcps/payfit.md) | Automate HR and payroll operations via PayFit — list collaborators, fetch payslips securely, overview company structure, and export accounting entries via AI. |
 | [Personio](../mcps/personio-alternative.md) | Automate HR operations via Personio — manage employee records, track attendance, handle absences, and streamline recruiting directly from any AI agent. |
+| [Personio](../mcps/personio.md) | Orchestrate HR logistics via Personio — manage workforce lists, track specific absences, log attendances securely, and evaluate custom attributes structurally via AI. |
 | [Retention Risk Scorer](../mcps/retention-risk-scorer.md) | Predict employee turnover risk and quantify the financial impact of attrition. |
 | [Rippling](../mcps/rippling.md) | Manage your workforce via Rippling — list employees, update profiles, and manage departments directly from any AI agent. |
 | [Salary.com API](../mcps/salarycom-api.md) | Access salary benchmarks — audit compensation and jobs via AI. |

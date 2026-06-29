@@ -289,6 +289,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Enrich CRM](../mcps/enrich-crm.md) | Enhance your CRM records with verified company data, technographic signals, and contact enrichment that keeps your database fresh. |
 | [EnterpriseAlumni](../mcps/enterprisealumni.md) | Equip your AI agent to manage alumni networks, track engagement, and monitor member profiles via the EnterpriseAlumni API. |
 | [Envoy](../mcps/envoy.md) | Manage workplace operations via Envoy — register visitors, book desks and rooms, track deliveries, and monitor office capacity directly from any AI agent. |
+| [Equity Split Calculator](../mcps/equity-split-calculator.md) | Calculate fair ownership distribution among co-founders using weighted factors or dynamic slicing. |
 | [Estimation Prover](../mcps/estimation-prover.md) | An AI estimated a database migration at 2 weeks. It took 11 weeks, cost $340K in delayed revenue, and left 3 engineers stuck in feature freeze. The estimate had no scope decomposition, no unknowns identified, no historical precedent, and no buffer. This tool forces granular scope breakdown, explicit unknown quantification, precedent mapping, and realistic buffer calculation before any timeline is committed. |
 | [EU Court Deadline Calculator](../mcps/eu-court-deadline-calculator.md) | Calculate legal procedural deadlines across European jurisdictions, accounting for national holidays and business day adjustments. |
 | [European Pension Estimator](../mcps/european-pension-estimator.md) | Estimate monthly public pension benefits and replacement rates for the UK, Germany, France, and Spain. |
@@ -399,6 +400,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [HeySummit](../mcps/heysummit.md) | Launch virtual summits and online conferences with speaker management, attendee registration, and engagement tracking built in. |
 | [HiBob](../mcps/hibob.md) | Automate HR workflows via HiBob — manage employees, time off, and tasks directly from any AI agent. |
 | [HiFlow](../mcps/hiflow.md) | Workflow and business process management. |
+| [Hiring Cost Calculator](../mcps/hiring-cost-calculator.md) | Calculate the total first-year economic impact of a new hire, including salary, benefits, recruitment, and productivity ramp-up. |
 | [Hive (Project Management)](../mcps/hive-project-management.md) | Manage projects via Hive — create actions, track initiatives, and organize workspaces. |
 | [Holiday API](../mcps/holiday-api.md) | Manage global holidays — audit public and federal holidays via AI. |
 | [Homebase](../mcps/homebase.md) | Automate employee scheduling and time tracking via Homebase — manage shifts, locations, and timecards directly from any AI agent. |
@@ -510,6 +512,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Markdown HTML Compiler](../mcps/markdown-html-compiler.md) | Stop wasting AI tokens converting text. Compile Markdown into clean, minified HTML instantly for emails and CMS platforms. |
 | [Markdown Task Extractor](../mcps/markdown-task-extractor.md) | Instantly scan any local folder of Markdown notes (Obsidian, Notion, Logseq) and aggregate every scattered '- [ ]' to-do item into a single, structured list for your AI. |
 | [Markdown Utilities Engine](../mcps/markdown-utilities-engine.md) | Equip your AI with programmatic Markdown tools. Deterministically generate Table of Contents (TOC) with correct anchor links and format perfect Markdown tables from JSON. |
+| [Markup Calculator](../mcps/markup-calculator.md) | Calculate markup divisor and suggested selling price based on costs, taxes, and profit margins. |
 | [MasterGo](../mcps/mastergo.md) | Collaborative design platform and UI/UX tool — manage design files, nodes, and comments via AI. |
 | [MCPFusion Developer Prover](../mcps/mcpfusion-developer-prover.md) | LLMs have never been trained on MCPFusion. They use raw z.object(), skip Presenters, mix semantic verbs, and violate MVA layering. This tool teaches the framework through structured reflection — forcing the agent to prove it understands defineModel(), Presenters, and the Model-View-Ag... |
 | [Meal Cost Calculator](../mcps/meal-cost-calculator.md) | Calculate total recipe expenses and individual serving costs based on ingredient unit prices. |
@@ -584,6 +587,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Pipeline CRM](../mcps/pipeline-crm.md) | Manage sales and contacts via Pipeline CRM — list deals, track people, and monitor tasks directly from any AI agent. |
 | [Pipeliner](../mcps/pipeliner.md) | Manage sales pipelines and opportunities via Pipeliner CRM — list leads, track deals, and monitor activities directly from any AI agent. |
 | [Pitch Deck Prover](../mcps/pitch-deck-prover.md) | An AI built a pitch deck that claimed a '$4.2B TAM' with no source, described the problem as 'everyone struggles with this,' showed '15K downloads' as traction with 3% D30 retention, and asked for 'funding to accelerate growth' — no amount, no use of funds, no milestones. The deck got rejected in 8 minutes. This tool forces problem validation with evidence, sourced market sizing, defined unit economics, retention-based traction, and a specific fundraising ask. |
+| [Pivotal Tracker](../mcps/pivotal-tracker.md) | Manage agile projects via Pivotal Tracker — list stories, track epics, and update tasks directly from any AI agent. |
 | [Plane](../mcps/plane.md) | Manage Plane.so projects, track issues, review sprint cycles, and audit agile modules completely autonomously. |
 | [Plane](../mcps/plane-alternative.md) | Manage projects, issues, and product roadmaps via Plane — create projects, toggle features, and organize workspaces directly from your AI agent. |
 | [Plaud](../mcps/plaud.md) | Manage your Plaud AI recordings — audit transcripts and summaries via AI. |
@@ -779,6 +783,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [vCard Contacts Parser](../mcps/vcard-contacts-parser-alternative.md) | Instantly convert massive iPhone and Android `.vcf` contact exports into structured JSON. Turn your AI into a hyper-intelligent local address book. |
 | [Venue](../mcps/venue.md) | Manage event venues with booking calendars, client contracts, and catering coordination for wedding and conference spaces. |
 | [Verbit](../mcps/verbit.md) | Automate professional transcription and captioning via Verbit — upload media, track job progress, and retrieve transcripts in multiple formats directly from your AI agent. |
+| [Vesting Schedule Calculator](../mcps/vesting-schedule-calculator.md) | Generate precise monthly equity vesting timelines, identify cliff milestones, and project liquidity values. |
 | [Viesus](../mcps/viesus.md) | Enhance photos automatically with AI that adjusts exposure, color balance, and sharpness to make every image look professional. |
 | [Vimeo](../mcps/vimeo.md) | Manage your Vimeo account — audit videos, folders, and showcases via AI. |
 | [VivifyScrum](../mcps/vivifyscrum.md) | Manage agile projects with Scrum and Kanban boards, sprint planning, and backlog grooming for software development teams. |
