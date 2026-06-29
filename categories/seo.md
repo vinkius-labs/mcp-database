@@ -7,6 +7,9 @@ Explore the open database of **seo** Model Context Protocol (MCP) servers.
 | [Content Gap Identifier](../mcps/content-gap-identifier.md) | Identify missing keywords and topics by comparing your content against competitors using TF density analysis. |
 | [Content Length Scorer](../mcps/content-length-scorer.md) | Analyze text word counts against industry-standard length benchmarks based on content intent. |
 | [FAQ Schema Extractor](../mcps/faq-schema-extractor.md) | Automatically identify Q&A pairs from unstructured text and generate SEO-ready JSON-LD FAQPage schema. |
+| [Keyword Density Analyzer](../mcps/keyword-density-analyzer.md) | Calculate keyword frequency, density percentage, and spatial distribution in text to optimize SEO content. |
+| [Keyword Proximity Checker](../mcps/keyword-proximity-checker.md) | Analyze text to measure the word distance between keywords for SEO relevance. |
+| [LSI Keyword Finder](../mcps/lsi-keyword-finder.md) | Extract semantically related keywords using co-occurrence, synonyms, and morphological variations. |
 | [Readability & SEO Scorer](../mcps/readability-seo-scorer.md) | Audit text for SEO performance using Flesch-Kincaid, sentence density, and passive voice analysis. |
 | [SEO Content Brief Scorer](../mcps/seo-content-brief-scorer.md) | Audit content briefs for SEO health, keyword placement, and heading hierarchy. |
 

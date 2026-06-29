@@ -117,6 +117,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Revenue Quality Scorer](../mcps/revenue-quality-scorer.md) | Analyze revenue stability, concentration risk, and market diversification. |
 | [ROAS Calculator](../mcps/roas-calculator.md) | Accurately determine your Return on Ad Spend (ROAS) across all channels, benchmark against industry standards, and calculate the break-even point to guide profitable ad spending. |
 | [Rule of 40 Analyzer](../mcps/rule-of-40-analyzer.md) | Calculate and benchmark Rule of 40 performance for SaaS and software companies. |
+| [Runway Per Headcount](../mcps/runway-per-headcount.md) | Simulate the impact of new hires on your company's cash runway and zero-cash date. |
 | [Rural Credit Simulator](../mcps/rural-credit-simulator.md) | Simulate agricultural credit scenarios, comparing programs like Pronaf and Pronamp with different amortization methods. |
 | [Salary Net Calculator](../mcps/salary-net-calculator.md) | Calculate net salary, INSS, IRRF, and FGTS deductions based on gross pay. |
 | [Scholarship Eligibility Checker](../mcps/scholarship-eligibility-checker.md) | Calculate household per capita income and determine eligibility for scholarship programs like ProUni and FIES. |

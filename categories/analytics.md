@@ -4,10 +4,14 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [A/B Test Significance Calculator](../mcps/ab-test-significance-calculator.md) | Calculate statistical significance, p-values, and uplift for A/B tests. |
+| [AB Test Sample Size Calculator](../mcps/ab-test-sample-size-calculator.md) | Calculate required sample size, test duration, and peeking risk for A/B experiments. |
+| [Bayesian A/B Testing Calculator](../mcps/bayesian-ab-testing-calculator.md) | Quantify conversion probability, expected loss, and uplift using Bayesian inference. |
 | [Core Web Vitals Scorer](../mcps/core-web-vitals-scorer.md) | Evaluate LCP, INP, and CLS metrics against Google's thresholds. |
 | [Emotional Variability Score](../mcps/emotional-variability-score.md) | Quantify emotional fluctuations, mood amplitude, and longitudinal stability. |
 | [Incrementality Estimator](../mcps/incrementality-estimator.md) | Determines true campaign ROI by calculating lift above natural conversion rates using control group data. |
 | [Karmic Debt Calculator](../mcps/karmic-debt-calculator.md) | Identify and interpret karmic debt numbers (13, 14, 16, 19) within a numerological matrix. |
+| [Keyword Extractor](../mcps/keyword-extractor.md) | Extract and rank significant keywords from text using term frequency and density analysis. |
 | [Life Events Stress Calculator](../mcps/life-events-stress-calculator.md) | Assess cumulative psychological stress risks using the Holmes-Rahe Scale. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
 | [Power-to-Weight and Relative Strength Calculator](../mcps/power-to-weight-and-relative-strength-calculator.md) | Calculate W/kg for endurance sports and standardized strength scores (DOTS, WILKS, IPF) for powerlifting. |
