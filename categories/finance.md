@@ -38,6 +38,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Currency Hedging Calculator](../mcps/currency-hedging-calculator.md) | Evaluate the financial impact of using forward contracts to mitigate foreign exchange risk. |
 | [DECORE Simulator](../mcps/decore-simulator.md) | Calculate and validate income declarations for regulatory compliance. |
 | [Depreciation Calculator](../mcps/depreciation-calculator.md) | Calculate asset depreciation using straight-line, sum-of-the-years' digits, and declining balance methods. |
+| [Dilution Calculator](../mcps/dilution-calculator.md) | Simulate equity dilution, cap table evolution, and anti-dilution adjustments during investment rounds. |
 | [Dividend Discount Model](../mcps/dividend-discount-model.md) | Calculate intrinsic equity value using Gordon Growth and Two-Stage DDM models. |
 | [Dollar Cost Averaging Simulator](../mcps/dollar-cost-averaging-simulator.md) | Simulate and compare DCA vs Lump Sum investment strategies using historical price data. |
 | [EBITDA Calculator](../mcps/ebitda-calculator.md) | Calculate EBITDA, margins, and EV/EBITDA multiples with industry benchmark comparisons. |
@@ -74,6 +75,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [ICMS Calculator](../mcps/icms-calculator.md) | Calculate Brazilian ICMS taxes, including tax substitution (ST), tax differentials (DIFAL), and tax-inclusive base calculations. |
 | [IFRS Depreciation Calculator](../mcps/ifrs-depreciation-calculator.md) | Calculate asset depreciation schedules using IFRS/IAS 16 standards (Straight-Line, Units of Production, and SYD). |
 | [Income Statement Generator](../mcps/income-statement-generator.md) | Generate structured Income Statements (P&L) with vertical analysis. |
+| [Incoterms 2020 Cost & Risk Calculator](../mcps/incoterms-2020-cost-risk-calculator.md) | Calculate logistics cost breakdowns, risk transfer points, and responsibility matrices for Incoterms 2020. |
 | [Indemnification Exposure Calculator](../mcps/indemnification-exposure-calculator.md) | Calculate maximum financial exposure in indemnity clauses by assessing contractual caps, carve-outs, and jurisdiction. |
 | [Inflation-Adjusted Return Calculator](../mcps/inflation-adjusted-return-calculator.md) | Calculate real investment returns by adjusting nominal rates against inflation. |
 | [INSS Retirement Estimator](../mcps/inss-retirement-estimator.md) | Estimate your Brazilian social security retirement benefits based on age, contribution time, and average salary. |
@@ -120,6 +122,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Rule of 40 Analyzer](../mcps/rule-of-40-analyzer.md) | Calculate and benchmark Rule of 40 performance for SaaS and software companies. |
 | [Runway Per Headcount](../mcps/runway-per-headcount.md) | Simulate the impact of new hires on your company's cash runway and zero-cash date. |
 | [Rural Credit Simulator](../mcps/rural-credit-simulator.md) | Simulate agricultural credit scenarios, comparing programs like Pronaf and Pronamp with different amortization methods. |
+| [Safe Note Converter](../mcps/safe-note-converter.md) | Calculate equity conversion, share issuance, and ownership dilution from SAFE conversions. |
 | [Salary Net Calculator](../mcps/salary-net-calculator.md) | Calculate net salary, INSS, IRRF, and FGTS deductions based on gross pay. |
 | [Scholarship Eligibility Checker](../mcps/scholarship-eligibility-checker.md) | Calculate household per capita income and determine eligibility for scholarship programs like ProUni and FIES. |
 | [Setel Malaysia](../mcps/setel-malaysia.md) | Orchestrate Setel Malaysia payments — manage payment intents, parking sessions, and EV charging directly from any AI agent. |
@@ -133,6 +136,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Standby Energy Waste Calculator](../mcps/standby-energy-waste-calculator.md) | Calculate the energy waste, financial cost, and carbon footprint of electronics in standby mode. |
 | [Startup Financial Model](../mcps/startup-financial-model.md) | Generate 12, 24, or 36-month financial projections including P&L, Cash Flow, and Break-even analysis. |
 | [Startup Health Score](../mcps/startup-health-score.md) | Quantify startup operational health (0-100) across Finance, Product, Growth, Team, and Market dimensions using stage-specific benchmarks. |
+| [Startup Valuation Engine](../mcps/startup-valuation-engine.md) | Calculate pre-money startup valuations using Berkus, Scorecard, Risk Factor Sum, and DCF methods. |
 | [Stock Valuation DCF](../mcps/stock-valuation-dcf.md) | Estimate intrinsic stock value using a multi-stage Discounted Cash Flow (DCF) model with sensitivity analysis. |
 | [Supply Chain Cost Calculator](../mcps/supply-chain-cost-calculator.md) | Calculate SCM cost ratio, category breakdown, and industry benchmarks. |
 | [TAM-SAM-SOM Calculator](../mcps/tam-sam-som-calculator.md) | Calculate Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) using top-down and bottom-up methodologies. |

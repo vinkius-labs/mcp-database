@@ -425,6 +425,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [SimpleHash (Multi-chain NFT API)](../mcps/simplehash-multi-chain-nft-api.md) | Access comprehensive NFT data across 50+ chains — query wallet holdings, metadata, collection details, and transfer history. |
 | [Sirv](../mcps/sirv.md) | Enable your AI agent to manage files, read metadata, and monitor bandwidth usage on your Sirv CDN account. |
 | [SketricGen](../mcps/sketricgen.md) | Connect your AI agents to SketricGen to run multi-agent workflows, manage knowledge bases, debug traces, and interact with contacts. |
+| [Slug Generator](../mcps/slug-generator.md) | Transform any text into clean, SEO-friendly, URL-optimized slugs. |
 | [Smarty](../mcps/smarty.md) | Equip your AI with enterprise-grade location intelligence to validate, autocomplete, and extract US or International addresses instantly. |
 | [SMOTE Oversampling Engine](../mcps/smote-oversampling-engine.md) | Balance skewed datasets instantly by generating mathematically sound synthetic minority data points via KNN. |
 | [SMPTE Timecode Calculator](../mcps/smpte-timecode-calculator.md) | Stop LLMs from melting down over base-60 math. Add, subtract, and convert video SMPTE timecodes natively. |

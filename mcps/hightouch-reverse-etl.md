@@ -34,12 +34,12 @@ Connect your **Hightouch** account to any AI agent and take full control of your
 
 
 ## Available Tools (6)
-- **list_destinations**: List all destinations
 - **list_syncs**: List all syncs
 - **get_sync**: Get sync details
 - **list_sync_runs**: List sync runs
 - **list_models**: List all models
 - **list_sources**: List all sources
+- **list_destinations**: List all destinations
 
 
 ## 💬 Prompt Examples
