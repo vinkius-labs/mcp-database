@@ -34,12 +34,12 @@ Connect your **MoonClerk** account to any AI agent to streamline your payment mo
 
 
 ## Available Tools (7)
+- **list_forms**: List all payment forms
 - **get_customer**: Get customer details
 - **get_form**: Get form details
 - **get_payment**: Get payment details
 - **list_coupons**: List all coupons
 - **list_customers**: List all MoonClerk customers
-- **list_forms**: List all payment forms
 - **list_payments**: List all payments
 
 

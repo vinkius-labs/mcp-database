@@ -39,34 +39,20 @@ No more navigating the Omie dashboard for every data lookup. Your AI acts as a d
 
 
 ## Available Tools (16)
+- **get_sales_order**: Use the order_id (codigo_pedido) obtained from
+list_sales_orders to inspect full order details. This is useful for verifying order data before invoicing.
+
+Get detailed information about a specific sales order
 - **create_client**: You must provide at minimum the business name (razao_social)
 and CNPJ/CPF. Optional fields include trade name, address, contacts, email, phone, payment terms, and credit limits.
 The response includes the newly created client code which can be used for future references.
 Data must be provided as a JSON object matching Omie's client schema.
 
 Create a new client (customer/supplier) in Omie ERP
-- **create_product**: You must provide at minimum the product code (codigo_produto)
-and description. Optional fields include NCM, unit, cost price, sale price, stock quantity, and tax configuration.
-The response includes the newly created product details. Data must be provided as a JSON object matching Omie's product schema.
+- **list_sales_orders**: You can optionally specify page number and records per page.
+Use this to browse your sales pipeline or find a specific order by number or client.
 
-Create a new product in Omie ERP
-- **create_sales_order**: You must provide the client code (codigo_cliente) and at least
-one line item with product code, quantity, and price. Optional fields include discounts, taxes, shipping info,
-and payment terms. The response includes the newly created order code. Data must be provided as JSON matching Omie's order schema.
-
-Create a new sales order (pedido de venda) in Omie ERP
-- **get_client**: Use the client_id (codigo_cliente) obtained from list_clients to inspect full client details.
-This is useful for verifying client data before creating orders or invoices.
-
-Get detailed information about a specific client
-- **get_product**: Use the product_code (codigo_produto) obtained from
-list_products to inspect full product details. This is useful for verifying product data before creating orders.
-
-Get detailed information about a specific product
-- **get_sales_order**: Use the order_id (codigo_pedido) obtained from
-list_sales_orders to inspect full order details. This is useful for verifying order data before invoicing.
-
-Get detailed information about a specific sales order
+List all sales orders (pedidos de venda) in Omie ERP
 - **get_stock_summary**: Use the product_code (codigo_produto) obtained from list_products to inspect stock details.
 This helps determine if a product is available for sale or needs reordering.
 
@@ -94,10 +80,24 @@ List all clients (customers, suppliers) in Omie ERP
 Use this to browse your product catalog or find a specific product by code or description.
 
 List all products and services in Omie ERP
-- **list_sales_orders**: You can optionally specify page number and records per page.
-Use this to browse your sales pipeline or find a specific order by number or client.
+- **create_product**: You must provide at minimum the product code (codigo_produto)
+and description. Optional fields include NCM, unit, cost price, sale price, stock quantity, and tax configuration.
+The response includes the newly created product details. Data must be provided as a JSON object matching Omie's product schema.
 
-List all sales orders (pedidos de venda) in Omie ERP
+Create a new product in Omie ERP
+- **create_sales_order**: You must provide the client code (codigo_cliente) and at least
+one line item with product code, quantity, and price. Optional fields include discounts, taxes, shipping info,
+and payment terms. The response includes the newly created order code. Data must be provided as JSON matching Omie's order schema.
+
+Create a new sales order (pedido de venda) in Omie ERP
+- **get_client**: Use the client_id (codigo_cliente) obtained from list_clients to inspect full client details.
+This is useful for verifying client data before creating orders or invoices.
+
+Get detailed information about a specific client
+- **get_product**: Use the product_code (codigo_produto) obtained from
+list_products to inspect full product details. This is useful for verifying product data before creating orders.
+
+Get detailed information about a specific product
 - **list_services**: Services are non-physical offerings sold to clients (consulting, maintenance, etc.).
 You can optionally specify page number and records per page. Use this to browse your service catalog.
 

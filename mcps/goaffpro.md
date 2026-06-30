@@ -36,6 +36,7 @@ Connect your **Goaffpro** admin account to any AI agent to automate your affilia
 
 
 ## Available Tools (12)
+- **list_affiliate_payouts**: List payout history
 - **verify_api_connection**: Check connection
 - **register_new_affiliate**: Add new affiliate
 - **grant_affiliate_reward**: g. signup bonus).
@@ -47,7 +48,6 @@ Issue bonus reward
 - **list_program_affiliates**: List all affiliates
 - **list_earned_commissions**: List commission events
 - **list_referral_orders**: List referral sales
-- **list_affiliate_payouts**: List payout history
 - **list_top_performers**: List top affiliates
 - **list_affiliate_webhooks**: List webhook configs
 
