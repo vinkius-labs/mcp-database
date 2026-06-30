@@ -34,6 +34,7 @@ Connect your **SurveyMonkey** account to any AI agent to streamline your market 
 
 
 ## Available Tools (17)
+- **get_survey**: Retrieve details for a specific survey
 - **create_survey_collector**: g., Web Link, Email).
 
 Create a new collector
@@ -47,7 +48,6 @@ Create a new survey
 - **get_response**: Retrieve a specific response
 - **get_survey_details**: Get full survey structure (pages, questions)
 - **get_survey_page**: Retrieve a specific page
-- **get_survey**: Retrieve details for a specific survey
 - **list_survey_collectors**: List collectors for a survey
 - **list_survey_pages**: List pages in a survey
 - **list_survey_questions**: List questions on a page

@@ -36,6 +36,12 @@ Connect to **Data.gov** and explore the US government's open data catalog throug
 
 
 ## Available Tools (13)
+- **get_tag**: Returns tag name, dataset count and associated datasets (up to 20).
+
+Get details for a specific tag
+- **search_datasets**: gov catalog of US federal government open datasets. Supports free-text search and filtering by organization, tags, groups. Returns dataset titles, descriptions, organizations, resource counts, tags and download links. Sort options include "metadata_modified desc" (recent), "views_recent desc" (popular).
+
+Search US government open data datasets
 - **get_dataset**: gov dataset by its ID or name. Returns full description, organization, tags, resource list (downloadable files), metadata dates, license info and data dictionary.
 
 Get detailed info for a specific dataset
@@ -51,9 +57,6 @@ Get all datasets published by an organization
 - **get_status**: gov API including total counts of datasets, organizations, groups and tags.
 
 Get Data.gov API status and statistics
-- **get_tag**: Returns tag name, dataset count and associated datasets (up to 20).
-
-Get details for a specific tag
 - **get_tag_datasets**: Returns dataset titles, descriptions, organizations and download links.
 
 Get all datasets with a specific tag
@@ -72,9 +75,6 @@ List all data formats available in Data.gov resources
 - **list_tags**: gov datasets. Returns tag names, dataset counts and display names. Useful for discovering common topics and filtering searches.
 
 List all tags used to categorize datasets
-- **search_datasets**: gov catalog of US federal government open datasets. Supports free-text search and filtering by organization, tags, groups. Returns dataset titles, descriptions, organizations, resource counts, tags and download links. Sort options include "metadata_modified desc" (recent), "views_recent desc" (popular).
-
-Search US government open data datasets
 
 
 ## 💬 Prompt Examples
