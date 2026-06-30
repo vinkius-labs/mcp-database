@@ -34,6 +34,7 @@ Your agent becomes the central knowledge repository, bridging personal memory wi
 
 
 ## Available Tools (28)
+- **delete_note**: Delete a note permanently
 - **create_channel**: Create a discussion channel
 - **get_channel**: Get channel details
 - **list_channels**: List discussion channels
@@ -53,7 +54,6 @@ Send a message to a channel
 - **create_note**: Use this as persistent agent memory: store decisions, context, meeting notes, or ADRs. Content supports full markdown.
 
 Create a new note
-- **delete_note**: Delete a note permanently
 - **list_notes**: Perfect for agent memory — store context, decisions, and key information across sessions.
 
 List all notes in the workspace

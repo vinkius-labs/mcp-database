@@ -36,10 +36,10 @@ Empower your AI agent to orchestrate your visual collaboration with **BoardMix**
 
 
 ## Available Tools (10)
+- **get_file_versions**: Get file version history
 - **create_file**: Create a new whiteboard
 - **get_comments**: Get whiteboard comments
 - **get_file**: Get whiteboard file details
-- **get_file_versions**: Get file version history
 - **get_org_info**: Get organization details
 - **list_files**: List all BoardMix files
 - **list_nodes**: List whiteboard nodes

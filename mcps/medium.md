@@ -32,11 +32,11 @@ Connect your **Medium** account to any AI agent and automate your publishing wor
 - **create_public_post**: Create a public post
 - **create_publication_post**: Create a post under a publication
 - **get_authenticated_user**: Get details for the authenticated user
-- **get_my_user_id**: Get your User ID
 - **get_my_profile**: Get your own profile
 - **list_contributors**: List contributors for a publication
 - **list_my_publications**: List your own publications
 - **list_publications**: List publications for a user
+- **get_my_user_id**: Get your User ID
 
 
 ## 💬 Prompt Examples

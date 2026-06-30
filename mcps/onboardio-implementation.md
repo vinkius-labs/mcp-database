@@ -36,6 +36,7 @@ Connect your **Onboard.io** account to your AI agent and streamline your custome
 
 
 ## Available Tools (10)
+- **list_plan_tasks**: List onboarding tasks
 - **get_plan_progress_analytics**: Get plan health metrics
 - **get_onboarding_customer_details**: Get customer profile info
 - **get_member_details**: Get team member profile
@@ -47,7 +48,6 @@ Connect your **Onboard.io** account to your AI agent and streamline your custome
 
 List onboarding team members
 - **list_onboarding_plans**: List all implementation plans
-- **list_plan_tasks**: List onboarding tasks
 
 
 ## 💬 Prompt Examples

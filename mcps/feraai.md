@@ -36,8 +36,8 @@ Connect your **Fera.ai** account to any AI agent and take full control of your c
 
 
 ## Available Tools (12)
-- **get_account_info**: Get Fera account and subscription details
 - **get_customer**: Get details for a specific customer profile
+- **get_account_info**: Get Fera account and subscription details
 - **get_me**: Get current API token identity info
 - **get_product_rating**: Get aggregated rating and review count for a product
 - **get_review**: Get details for a specific review

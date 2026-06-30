@@ -35,13 +35,13 @@ Empower your AI agent to orchestrate your food delivery business with the **Ele.
 
 
 ## Available Tools (10)
+- **list_recent_orders**: List recent orders
 - **cancel_order**: Cancel an order
 - **close_shop**: Set shop status to closed
 - **confirm_order**: Confirm an order
 - **get_order_comments**: Get order comments
 - **get_order_detail**: Get order details
 - **get_shop_info**: Get shop metadata
-- **list_recent_orders**: List recent orders
 - **list_shop_categories**: List shop product categories
 - **open_shop**: Set shop status to open
 - **track_delivery**: Track delivery state

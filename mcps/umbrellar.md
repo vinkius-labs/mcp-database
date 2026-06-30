@@ -14,12 +14,12 @@ The Umbrellar MCP server provides a direct conversational link to your cloud inf
 
 
 ## Available Tools (12)
+- **list_claims**: List all warranty claims
 - **check_product_eligibility**: Check if a product is eligible for warranty coverage
 - **create_claim**: Submit a new warranty claim
 - **get_claim**: Get details for a specific warranty claim
 - **get_policy**: Get details for a specific warranty policy
 - **get_warranty**: Get details for a specific warranty plan
-- **list_claims**: List all warranty claims
 - **list_policies**: List all warranty policies
 - **list_warranties**: List all available warranty plans
 - **register_product**: Register a product for OEM or manufacturer warranty

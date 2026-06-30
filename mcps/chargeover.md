@@ -36,7 +36,6 @@ Connect your **ChargeOver** account to any AI agent and take full control of you
 
 
 ## Available Tools (8)
-- **get_chargeover_account**: Retrieve core account and user information
 - **get_customer_details**: Get detailed information for a specific customer
 - **get_invoice_details**: Get detailed information for a specific invoice
 - **list_chargeover_customers**: List all customers
@@ -44,6 +43,7 @@ Connect your **ChargeOver** account to any AI agent and take full control of you
 - **list_billing_quotes**: List all sales quotes
 - **list_billing_subscriptions**: List all customer subscriptions (packages)
 - **list_billing_transactions**: List all billing transactions
+- **get_chargeover_account**: Retrieve core account and user information
 
 
 ## 💬 Prompt Examples

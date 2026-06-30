@@ -22,15 +22,15 @@ The **ultimate U.S. Treasury Mega-Server** — 13 tools.
 
 
 ## Available Tools (13)
-- **get_federal_revenue**: Shows current month and fiscal-year-to-date totals vs. prior year.
-
-Get federal government revenue — tax receipts by source
 - **get_federal_spending**: Shows current month gross outlays vs. prior year.
 
 Get federal government spending by department and agency
 - **get_deficit_surplus**: The U.S. fiscal year runs October 1 through September 30.
 
 Get the federal budget deficit or surplus — fiscal year to date
+- **get_federal_revenue**: Shows current month and fiscal-year-to-date totals vs. prior year.
+
+Get federal government revenue — tax receipts by source
 - **get_daily_cash_balance**: This is the government's daily bank statement — how much cash the U.S. has on hand.
 
 Get the daily operating cash balance of the U.S. Treasury

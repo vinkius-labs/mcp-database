@@ -33,7 +33,6 @@ Connect your **Gotify** instance to any AI agent to streamline your notification
 
 
 ## Available Tools (22)
-- **change_password**: Change current user password
 - **create_application**: Create a new application
 - **create_client**: Create a new client
 - **create_user**: Create a new user (Admin only)
@@ -59,6 +58,7 @@ Send a message via Gotify
 - **update_application**: Update an application
 - **update_client**: Update a client
 - **update_plugin_config**: Update plugin configuration
+- **change_password**: Change current user password
 
 
 ## 💬 Prompt Examples

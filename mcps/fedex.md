@@ -36,18 +36,18 @@ Essential for **e-commerce businesses**, **warehouse managers**, **shipping coor
 
 
 ## Available Tools (9)
-- **check_service_availability**: Includes service names, transit times, and availability status. Use this to verify if Express, Ground, or Freight services operate between specific postal codes before quoting or booking shipments.
-
-Check if FedEx shipping services are available between two locations
 - **create_shipment**: Requires shipper/recipient details, package weight/dimensions, and service type. Returns tracking number, label format, and estimated delivery date. Use this to generate labels for outbound shipments or process returns.
 
 Create a FedEx shipment and generate a shipping label
-- **find_locations**: Includes location type (FedEx Office, Ship Center, Drop Box), address, hours of operation, and services offered. Use this to find where to drop off packages, print labels, or access packing supplies.
-
-Find nearby FedEx locations (drop-off points, offices, or drop boxes)
 - **get_postal_code**: Use this to verify postal codes before shipping or to resolve ambiguous addresses.
 
 Validate a postal/ZIP code and get location details
+- **check_service_availability**: Includes service names, transit times, and availability status. Use this to verify if Express, Ground, or Freight services operate between specific postal codes before quoting or booking shipments.
+
+Check if FedEx shipping services are available between two locations
+- **find_locations**: Includes location type (FedEx Office, Ship Center, Drop Box), address, hours of operation, and services offered. Use this to find where to drop off packages, print labels, or access packing supplies.
+
+Find nearby FedEx locations (drop-off points, offices, or drop boxes)
 - **get_proof_of_delivery**: Returns POD image URL, delivery date, recipient name, and signature status. Use this to confirm successful delivery for billing disputes, insurance claims, or customer inquiries.
 
 Get proof of delivery (POD) document for a delivered FedEx package

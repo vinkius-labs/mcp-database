@@ -33,12 +33,6 @@ Connect to the **IBAMA Open Data Portal** (CKAN) to explore and analyze critical
 
 
 ## Available Tools (9)
-- **datastore_search**: Query CSV/Tabular data directly
-- **list_datasets**: List all dataset names
-- **list_groups**: List all thematic groups
-- **list_organizations**: g., IBAMA departments).
-
-List all organizations
 - **search_datasets**: Supports sorting and pagination.
 
 Search for datasets matching a query string
@@ -46,6 +40,12 @@ Search for datasets matching a query string
 - **show_dataset**: Show full metadata for a specific dataset
 - **show_organization**: Show details and datasets of an organization
 - **show_resource**: Show metadata for a specific resource
+- **datastore_search**: Query CSV/Tabular data directly
+- **list_datasets**: List all dataset names
+- **list_groups**: List all thematic groups
+- **list_organizations**: g., IBAMA departments).
+
+List all organizations
 
 
 ## 💬 Prompt Examples

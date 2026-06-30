@@ -42,9 +42,6 @@ Share a folder with a collaborator
 - **create_folder**: Use parent ID "0" for the root folder.
 
 Create a new folder in Box
-- **get_current_user**: Use this to verify the current identity.
-
-Retrieve current Box user details
 - **delete_file**: Delete a file from Box
 - **delete_folder**: If the folder is not empty, you must set the recursive flag to true to delete all its contents.
 
@@ -64,6 +61,9 @@ Search for files and folders
 - **update_file**: Can be used to rename the file or update its description.
 
 Update file attributes and metadata
+- **get_current_user**: Use this to verify the current identity.
+
+Retrieve current Box user details
 
 
 ## 💬 Prompt Examples

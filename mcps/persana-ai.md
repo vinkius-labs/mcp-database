@@ -36,6 +36,7 @@ No more manual signal monitoring or searching through disparate data sources. Yo
 
 
 ## Available Tools (11)
+- **create_lead_list**: Create a new lead list
 - **enrich_company**: Pass data as a JSON string.
 
 Enrich company data
@@ -46,7 +47,6 @@ Enrich person data
 - **get_signals**: Get sales intent signals
 - **list_lead_lists**: List all lead lists
 - **lookup_email**: Verify and lookup emails
-- **create_lead_list**: Create a new lead list
 - **delete_lead_list**: Delete a lead list
 - **find_job_changes**: Find recent job changes in your target accounts
 - **search_people**: Search for people by criteria

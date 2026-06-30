@@ -32,16 +32,16 @@ Infuse the premier competitive matchmaking stats of **B5 Arena** into your AI to
 
 
 ## Available Tools (10)
+- **get_server_status**: Check B5 server node health and network
+- **get_team_info**: Lookup an amateur or semi-pro 5-stack roster
+- **get_user_data**: Get a players overall B5 Account summary
+- **search_user**: Search the B5 player directory
 - **get_ban_list**: Fetch the global recent anti-cheat ban feed
 - **get_clutch_highlights**: Extract auto-generated highlight timestamps
 - **get_event_list**: Retrieve active promotional events or drops
 - **get_match_scoreboard**: Extract detailed match telemetry for a B5 pug
 - **get_ranking_list**: Query the active B5 leaderboards/divisions
 - **get_recent_matches**: Get a list of recent matches in the B5 hub
-- **get_server_status**: Check B5 server node health and network
-- **get_team_info**: Lookup an amateur or semi-pro 5-stack roster
-- **get_user_data**: Get a players overall B5 Account summary
-- **search_user**: Search the B5 player directory
 
 
 ## 💬 Prompt Examples

@@ -34,7 +34,6 @@ Connect your **Heroku** account to any AI agent and take full control of your cl
 
 
 ## Available Tools (10)
-- **create_app**: Provision a fresh structural App container on Heroku
 - **delete_app**: Traffic routing instantly yields persistent 404/no web-dynos responses. Highly destructive.
 
 Permanently wipe an active App from Heroku servers
@@ -60,6 +59,7 @@ Hard reboot all containers tied to an entire Application
 - **toggle_maintenance_mode**: Crucial for orchestrating complex sequential database migrations without encountering corrupted states from active sessions.
 
 Rapidly switch an Application's Maintenance Mode switch
+- **create_app**: Provision a fresh structural App container on Heroku
 
 
 ## 💬 Prompt Examples

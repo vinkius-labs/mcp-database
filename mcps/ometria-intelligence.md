@@ -36,8 +36,6 @@ Connect your **Ometria** account to your AI agent and gain deep visibility into 
 
 
 ## Available Tools (10)
-- **get_campaign_stats**: Get campaign performance stats
-- **get_contact_details**: Get specific contact info
 - **get_order_details**: Get specific order details
 - **get_product_details**: Get specific product info
 - **get_segment_details**: Get specific segment info
@@ -46,6 +44,8 @@ Connect your **Ometria** account to your AI agent and gain deep visibility into 
 - **list_orders**: List customer orders
 - **list_catalog_products**: List product catalog
 - **list_customer_segments**: List customer segments
+- **get_campaign_stats**: Get campaign performance stats
+- **get_contact_details**: Get specific contact info
 
 
 ## 💬 Prompt Examples

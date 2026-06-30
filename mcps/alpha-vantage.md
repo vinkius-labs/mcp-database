@@ -39,6 +39,18 @@ No more navigating complex financial terminals to check stock prices or technica
 
 
 ## Available Tools (13)
+- **get_rsi**: RSI measures momentum on a 0-100 scale; above 70 indicates overbought, below 30 indicates oversold. Optionally set interval, time period and series type (close, open, high, low).
+
+Get Relative Strength Index (RSI) indicator
+- **get_sector_performance**: Returns change percentages for each sector.
+
+Get real-time sector performance
+- **get_weekly_time_series**: Each data point represents a week of trading. Useful for medium-term trend analysis.
+
+Get weekly stock time series
+- **search_symbol**: Returns best matches with symbol, name, type and region. Useful for discovering the correct symbol before querying price data.
+
+Search for stock symbols by keywords
 - **get_company_overview**: Useful for fundamental analysis and stock screening.
 
 Get company overview and fundamentals
@@ -66,18 +78,6 @@ Get news sentiment for stock tickers
 - **get_quote**: Returns current trading data including change and change percent. Useful for quick price checks.
 
 Get real-time stock quote
-- **get_rsi**: RSI measures momentum on a 0-100 scale; above 70 indicates overbought, below 30 indicates oversold. Optionally set interval, time period and series type (close, open, high, low).
-
-Get Relative Strength Index (RSI) indicator
-- **get_sector_performance**: Returns change percentages for each sector.
-
-Get real-time sector performance
-- **get_weekly_time_series**: Each data point represents a week of trading. Useful for medium-term trend analysis.
-
-Get weekly stock time series
-- **search_symbol**: Returns best matches with symbol, name, type and region. Useful for discovering the correct symbol before querying price data.
-
-Search for stock symbols by keywords
 
 
 ## 💬 Prompt Examples

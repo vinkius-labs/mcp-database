@@ -35,9 +35,9 @@ Connect your **Flow** account to any AI agent and automate your project manageme
 
 
 ## Available Tools (12)
+- **get_project**: Get project details
 - **add_task_comment**: Post a comment
 - **create_task**: Create a new task
-- **get_project**: Get project details
 - **get_task**: Get task details
 - **list_task_lists**: List lists in project
 - **list_workspace_members**: List team members

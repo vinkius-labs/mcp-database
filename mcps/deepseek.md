@@ -41,7 +41,6 @@ No more manual toggling between chat interfaces or complex API configuration. Yo
 - **deep_reasoning**: Includes internal thinking process.
 
 Advanced logic reasoning
-- **check_api_status**: Check API health
 - **get_account_info**: Get account profile
 - **get_balance**: Get account balance
 - **get_billing_details**: Get billing info
@@ -50,6 +49,7 @@ Advanced logic reasoning
 - **list_models**: List available models
 - **list_request_history**: List request history
 - **list_api_tokens**: List API tokens
+- **check_api_status**: Check API health
 
 
 ## 💬 Prompt Examples

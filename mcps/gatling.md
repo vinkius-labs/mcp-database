@@ -47,11 +47,11 @@ List all simulations on Gatling Enterprise
 Start a Gatling simulation run
 - **abort_simulation**: Abort a running Gatling simulation
 - **list_runs**: List runs for a Gatling simulation
+- **list_tokens**: List API tokens on Gatling Enterprise
+- **list_pools**: List load generator pools on Gatling Enterprise
 - **get_run**: Get full details of a Gatling run
 - **list_teams**: List teams on Gatling Enterprise
 - **list_packages**: List uploaded packages/artifacts on Gatling Enterprise
-- **list_tokens**: List API tokens on Gatling Enterprise
-- **list_pools**: List load generator pools on Gatling Enterprise
 
 
 ## 💬 Prompt Examples

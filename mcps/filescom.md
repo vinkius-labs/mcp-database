@@ -35,6 +35,7 @@ Connect your **Files.com** secure storage account to any AI agent and simplify h
 
 
 ## Available Tools (8)
+- **list_users**: List Files.com users
 - **create_folder**: Create a new folder
 - **delete_file**: Delete a file or folder
 - **get_file_details**: Get details for a specific file
@@ -42,7 +43,6 @@ Connect your **Files.com** secure storage account to any AI agent and simplify h
 - **list_user_groups**: List organizational groups
 - **list_activity_history**: List file activity history
 - **list_permissions**: List file permissions
-- **list_users**: List Files.com users
 
 
 ## 💬 Prompt Examples
