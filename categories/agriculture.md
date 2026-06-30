@@ -7,6 +7,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Crop Rotation Planner](../mcps/crop-rotation-planner.md) | Generate optimized agricultural crop rotation sequences to improve soil health and maximize income. |
 | [Fertilizer Requirement Calculator](../mcps/fertilizer-requirement-calculator.md) | Calculate precise nutrient dosages and fertilizer costs based on soil analysis and regional standards. |
 | [Harvest Loss Calculator](../mcps/harvest-loss-calculator.md) | Quantify physical and financial grain losses during harvest. |
+| [Irrigation Water Optimizer](../mcps/irrigation-water-optimizer.md) | Calculate precise weekly water requirements, irrigation frequency, and session dosage for your garden. |
 | [Irrigation Water Requirement Calculator](../mcps/irrigation-water-requirement-calculator.md) | Calculate crop evapotranspiration, water deficit, and required irrigation depths. |
 | [Lime Requirement Calculator](../mcps/lime-requirement-calculator.md) | Calculate precise limestone dosage and total application costs using base saturation and SMP buffer methods. |
 | [Pesticide Dilution Calculator](../mcps/pesticide-dilution-calculator.md) | Calculate precise pesticide dilution, tank loads, and safety intervals. |

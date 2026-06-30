@@ -20,6 +20,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
 | [Swimming Pace Calculator](../mcps/swimming-pace-calculator.md) | Calculate swimming training intensities, race predictions, and efficiency metrics based on Critical Swim Speed (CSS). |
+| [Weekly Training Load Calculator](../mcps/weekly-training-load-calculator.md) | Calculate physiological training stress using TRIMP and TSS methodologies to track athlete fatigue and fitness. |
 
 
 ---

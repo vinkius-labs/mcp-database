@@ -8,6 +8,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Blood Pressure Classifier](../mcps/blood-pressure-classifier.md) | Classify blood pressure readings, detect trends, and identify hypertensive alerts using AHA/WHO standards. |
 | [Breathing Timer](../mcps/breathing-timer.md) | Accurately track structured breathing cycles (Box Breathing, 4-7-8, Coherence Heart Rate) for guided respiratory practice. |
 | [Calorie Deficit Calculator](../mcps/calorie-deficit-calculator.md) | Calculate BMR, TDEE, and personalized weight loss plans with precision. |
+| [Deload Calculator](../mcps/deload-calculator.md) | Calculate precise training deload protocols based on accumulated fatigue and athletic discipline. |
 | [Glycemic Index Meal Calculator](../mcps/glycemic-index-meal-calculator.md) | Calculate the weighted average Glycemic Index of a meal based on ingredient proportions. |
 | [Heart Rate Zones Calculator](../mcps/heart-rate-zones-calculator.md) | Calculate precise physiological training zones using Simple % and Karvonen (HRR) methods. |
 | [HRV Coherence Calculator](../mcps/hrv-coherence-calculator.md) | Calculates key Heart Rate Variability (HRV) metrics (RMSSD, SDNN) to classify cardiorespiratory coherence level using R-R intervals. |

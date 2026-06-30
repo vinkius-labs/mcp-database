@@ -65,6 +65,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Freelancer Budget Prover](../mcps/freelancer-budget-prover.md) | A designer charged $100/hour and calculated annual income as $208,000. Then reality arrived. Billable hours dropped to 1,352 after admin, sales, and vacation. Gross: $135,200. Self-employment tax, health insurance, tools, and accounting consumed $60,685. Net take-home: $74,515. Effective hourly rate: $35.82. Three clients paid 45 days late. This tool forces five budget axes: realistic revenue, complete costs, cash flow buffers, minimum viable pricing, and profitability with scope creep analysis. |
 | [Freight Cost Calculator](../mcps/freight-cost-calculator.md) | Calculate and compare shipping costs across road, rail, air, sea, and multimodal transport modes. |
 | [Fuel Cost Calculator](../mcps/fuel-cost-calculator.md) | Calculate trip expenses and compare gasoline vs ethanol costs. |
+| [Fundraising Target Calculator](../mcps/fundraising-target-calculator.md) | Calculate optimal fundraising targets based on projected burn, runway needs, and safety buffers. |
 | [Global Effective Tax Rate & Pillar Two Compliance](../mcps/global-effective-tax-rate-pillar-two-compliance.md) | Calculate global effective tax rates and OECD Pillar Two top-up tax liabilities. |
 | [Grain Storage Cost Calculator](../mcps/grain-storage-cost-calculator.md) | Calculate grain storage expenses and determine optimal market timing. |
 | [Gross Margin Analyzer](../mcps/gross-margin-analyzer.md) | Calculate product gross margins, identify underperforming products against industry benchmarks, and simulate COGS reduction impact. |
@@ -113,13 +114,16 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Pro-Labore Tax Calculator](../mcps/pro-labore-tax-calculator.md) | Calculate INSS, IRRF, and compare compensation strategies for business partners. |
 | [ProUni Eligibility Calculator](../mcps/prouni-eligibility-calculator.md) | Instantly calculate scholarship eligibility (Full or Partial) for ProUni by inputting family income, household size, and ENEM scores. |
 | [R&D Tax Credit Calculator](../mcps/rd-tax-credit-calculator.md) | Calculate US R&D tax credits using Regular and ASC methodologies. |
+| [Rainwater Harvesting Estimator](../mcps/rainwater-harvesting-estimator.md) | Estimate monthly rainwater collection volume and potential water bill savings based on roof area and local rainfall. |
 | [Real Estate Financing Calculator](../mcps/real-estate-financing-calculator.md) | Calculate detailed monthly amortization schedules and financial summaries for Price and SAC mortgage systems. |
 | [Recording Session Planner](../mcps/recording-session-planner.md) | Generate precise studio schedules, cost estimates, and completion risk assessments for music production. |
+| [Recycling Value Estimator](../mcps/recycling-value-estimator.md) | Calculate potential revenue and CO2 savings from recyclable materials. |
 | [Retirement Withdrawal Calculator](../mcps/retirement-withdrawal-calculator.md) | Estimate the sustainability of your retirement withdrawals using Monte Carlo simulations. |
 | [Revenue Multiple Valuator](../mcps/revenue-multiple-valuator.md) | Estimate SaaS enterprise value using industry-standard revenue multiples based on growth and retention. |
 | [Revenue Quality Scorer](../mcps/revenue-quality-scorer.md) | Analyze revenue stability, concentration risk, and market diversification. |
 | [ROAS Calculator](../mcps/roas-calculator.md) | Accurately determine your Return on Ad Spend (ROAS) across all channels, benchmark against industry standards, and calculate the break-even point to guide profitable ad spending. |
 | [Rule of 40 Analyzer](../mcps/rule-of-40-analyzer.md) | Calculate and benchmark Rule of 40 performance for SaaS and software companies. |
+| [Runway Calculator](../mcps/runway-calculator.md) | Calculate business runway, cash exhaustion dates, and required funding to reach survival targets. |
 | [Runway Per Headcount](../mcps/runway-per-headcount.md) | Simulate the impact of new hires on your company's cash runway and zero-cash date. |
 | [Rural Credit Simulator](../mcps/rural-credit-simulator.md) | Simulate agricultural credit scenarios, comparing programs like Pronaf and Pronamp with different amortization methods. |
 | [Safe Note Converter](../mcps/safe-note-converter.md) | Calculate equity conversion, share issuance, and ownership dilution from SAFE conversions. |
@@ -128,6 +132,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Setel Malaysia](../mcps/setel-malaysia.md) | Orchestrate Setel Malaysia payments — manage payment intents, parking sessions, and EV charging directly from any AI agent. |
 | [Settlement Value Estimator](../mcps/settlement-value-estimator.md) | Quantify legal settlement ranges using Expected Monetary Value and risk-adjusted negotiation boundaries. |
 | [Sharpe Ratio Calculator](../mcps/sharpe-ratio-calculator.md) | Calculate advanced risk-adjusted performance metrics like Sharpe, Sortino, and Calmar ratios. |
+| [Shrinkage Calculator](../mcps/shrinkage-calculator.md) | Calculate inventory shrinkage, risk levels, and security investment ROI. |
 | [Simples Nacional Calculator](../mcps/simples-nacional-calculator.md) | Calculate effective tax rates, Fator R eligibility, and monthly DAS amounts for the Brazilian Simples Nacional regime. |
 | [Slim Capital Prover](../mcps/slim-capital-prover.md) | An investment thesis picked the hottest sector at peak valuations. It said 'revenue growth' instead of free cash flow. It entered a market with no barriers to entry. It proposed hiring 50 people. It treated each investment as standalone. That is not capital allocation — that is herd following. This tool forces five Slim-level axes: contrarian timing, cash flow obsession, barrier market entry, operational austerity, and conglomerate leverage. |
 | [Solar Panel Estimator](../mcps/solar-panel-estimator.md) | Estimate solar panel requirements, installation area, and financial payback. |

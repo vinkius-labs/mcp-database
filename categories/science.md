@@ -5,9 +5,11 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Altitude Baking Adjuster](../mcps/altitude-baking-adjuster.md) | Adjust baking recipes for high altitudes by correcting leavening, liquids, and oven settings. |
+| [Birth Chart Positions](../mcps/birth-chart-positions.md) | Calculate zodiac positions of celestial bodies based on date, time, and location. |
 | [Bread Proofing Calculator](../mcps/bread-proofing-calculator.md) | Predict fermentation durations for bulk and final proofing based on yeast concentration and temperature. |
 | [Color Vibration Analyzer](../mcps/color-vibration-analyzer.md) | Discover the energetic frequency and chakra alignment of any color. |
 | [Sound Frequency Calculator](../mcps/sound-frequency-calculator.md) | Calculate musical note frequencies, Solfeggio resonances, and harmonic series. |
+| [Waste Decomposition Timer](../mcps/waste-decomposition-timer.md) | Get estimated decomposition timelines for various materials. |
 
 
 ---

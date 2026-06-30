@@ -576,6 +576,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Pedagogical Assessment Prover](../mcps/pedagogical-assessment-prover.md) | A curriculum listed 12 learning objectives. Every one used 'understand' — an unmeasurable verb. Pedagogical Assessment Prover forces Bloom's-aligned objectives, explicit rubrics, scaffolded instruction, and actionable feedback. |
 | [People Management Prover](../mcps/people-management-prover.md) | A hiring plan listed 'culture fit' as the primary criterion. That's not a criterion — that's a bias proxy. People Management Prover forces job-related criteria, adverse impact analysis, and validated assessment methods grounded in I-O psychology. |
 | [Percentage Calculation Engine](../mcps/percentage-calculation-engine.md) | Stop LLMs from miscalculating discounts and interest. Deterministically calculate exact percentages and relative increases. |
+| [Periodization Planner](../mcps/periodization-planner.md) | Generate structured athletic training macrocycles based on periodization models and target event timelines. |
 | [Personal Trainer Session Planner](../mcps/personal-trainer-session-planner.md) | Generate personalized, goal-oriented weight training session structures based on objectives and physical constraints. |
 | [Personal Year Calculator](../mcps/personal-year-calculator.md) | Discover your numerological Personal Year, Month, and Day cycles with detailed forecasts. |
 | [Persuasion Copywriting Prover](../mcps/persuasion-copywriting-prover.md) | AI copywriting produces generic, robotic text that readers instantly recognize. This tool forces psychologically-grounded persuasion: benefits over features, emotional triggers, proof hierarchy, framework matching (AIDA/PAS/BAB), and human tone (no AI words). |
@@ -752,6 +753,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Traction Guest](../mcps/traction-guest.md) | Manage visitor operations via Traction Guest — list hosts, locations, invites, sign-ins, and group visits directly from any AI agent. |
 | [Training Load Calculator](../mcps/training-load-calculator.md) | Quantify training stress, detect overtraining risks, and generate recovery strategies. |
 | [Training Pace Calculator](../mcps/training-pace-calculator.md) | Calculate running training intensity zones and race pace predictions based on performance or VO2max. |
+| [Training Volume Optimizer](../mcps/training-volume-optimizer.md) | Calculate optimal weekly training sets (MEV, MAV, MRV) and session distribution based on hypertrophy principles. |
 | [Trakt](../mcps/trakt.md) | Track TV shows and movies — search titles, get ratings, discover trending content and manage your watchlist. |
 | [Transport for London](../mcps/transport-for-london.md) | Get live tube status, bus arrivals, journey planning, road disruptions and bike point data across London. |
 | [Transposition Calculator](../mcps/transposition-calculator.md) | Transpose notes, chords, scales, and progressions with ease. |
@@ -793,6 +795,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Wakapi (WakaTime Alternative)](../mcps/wakapi-wakatime-alternative.md) | Track coding time, analyze productivity stats, and manage projects via Wakapi — an open-source WakaTime alternative. |
 | [WakaTime (Coding Stats)](../mcps/wakatime-coding-stats.md) | Track your coding activity and productivity metrics directly through WakaTime — monitor projects, goals, and time spent in your IDE. |
 | [Wallabag (Pocket Alternative)](../mcps/wallabag-pocket-alternative.md) | Manage your self-hosted read-it-later list — save URLs, organize with tags, and retrieve article content directly from your AI agent. |
+| [Warehouse Picking Productivity Calculator](../mcps/warehouse-picking-productivity-calculator.md) | Measure warehouse picking efficiency, error rates, and operational costs. |
 | [Wave Accounting](../mcps/wave-accounting.md) | Manage customers, invoices, and accounting workflows on Wave — the money management tool for small businesses. |
 | [Weighted Average Calculator](../mcps/weighted-average-calculator.md) | Predict academic performance and calculate required grades to pass subjects. |
 | [Wellhub](../mcps/wellhub.md) | Manage employee eligibility, gym check-ins, bookings, and partner locations for your Wellhub (Gympass) corporate wellness program through natural conversation. |

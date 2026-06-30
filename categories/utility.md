@@ -5,6 +5,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [CPF/CNPJ Batch Processor](../mcps/cpfcnpj-batch-processor.md) | Validate, format, and clean Brazilian CPF and CNPJ identifiers in bulk. |
+| [Leak Waste Estimator](../mcps/leak-waste-estimator.md) | Calculate water waste in liters across daily, monthly, and yearly intervals based on leak types. |
 
 
 ---

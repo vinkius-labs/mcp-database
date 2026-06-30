@@ -4,9 +4,13 @@ Explore the open database of **sustainability** Model Context Protocol (MCP) ser
 
 | Tool Name | Description |
 |-----------|-------------|
+| [CO2 Savings Calculator](../mcps/co2-savings-calculator.md) | Calculate the mass of CO2 emissions avoided by using recycled materials instead of primary production. |
+| [Food Waste Impact Calculator](../mcps/food-waste-impact-calculator.md) | Quantify the environmental and financial impact of food waste, including CO2e, methane, water loss, and monetary cost. |
 | [Lighting Power Density (LPD) Calculator](../mcps/lighting-power-density-lpd-calculator.md) | Calculate LPD, verify ASHRAE 90.1 compliance, and estimate LED energy savings. |
+| [Packaging Footprint Comparator](../mcps/packaging-footprint-comparator.md) | Compare the environmental impact and CO2e emissions of different packaging materials. |
 | [Personal Carbon Budget Tracker](../mcps/personal-carbon-budget-tracker.md) | Evaluate your annual carbon footprint against the 1.5°C climate target. |
 | [Tree Planting Offset Calc](../mcps/tree-planting-offset-calc.md) | Calculate the number of trees and land area needed to offset your annual carbon footprint. |
+| [Water Footprint Calculator](../mcps/water-footprint-calculator.md) | Estimate the freshwater consumption required to produce everyday food and consumer goods. |
 
 
 ---
