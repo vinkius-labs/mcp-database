@@ -32,13 +32,13 @@ Interface directly with the colossal **NetEase BUFF163 Marketplace** through nat
 
 
 ## Available Tools (10)
+- **get_transaction_history**: View logs of successfully traded items
 - **cancel_order**: Cancel an open buy or sell order
 - **create_buy_order**: Place a buy order for an item
 - **get_buy_orders**: List active buy orders for a specific item
 - **get_market_items**: Search for game skins and items on BUFF market
 - **get_price_history**: View historical transaction prices
 - **get_sell_orders**: List active sell listings for a specific item
-- **get_transaction_history**: View logs of successfully traded items
 - **get_user_inventory**: Fetch items currently in your BUFF/Steam backpack
 - **get_user_profile**: Fetch logged in user wallet balance and info
 - **sync_inventory**: Force synchronize Steam backpack with BUFF
