@@ -35,12 +35,12 @@ Connect your **Dagster** (Plus or open-source) instance to any AI agent and take
 
 
 ## Available Tools (6)
+- **list_sensors**: List all sensors from Dagster
 - **list_jobs**: List all jobs from Dagster
 - **list_runs**: List recent runs from Dagster
 - **get_run**: Get run details from Dagster
 - **list_assets**: List all assets from Dagster
 - **list_schedules**: List all schedules from Dagster
-- **list_sensors**: List all sensors from Dagster
 
 
 ## 💬 Prompt Examples

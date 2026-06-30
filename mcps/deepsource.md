@@ -39,6 +39,11 @@ No more manual navigation through the DeepSource dashboard. Your AI acts as a de
 
 
 ## Available Tools (14)
+- **update_default_branch**: This affects which branch is analyzed by default.
+You must provide the repository ID (from get_repository) and the new branch name (e.g., "main", "develop", "master").
+Use this when your team changes the default branch name (e.g., migrating from "master" to "main").
+
+Update the default branch for a repository in DeepSource
 - **activate_repository**: Once activated, DeepSource will start analyzing the code on each push/PR.
 You must provide the repository ID (obtained from get_repository).
 Use this to enable code quality monitoring for a repository that was previously inactive.
@@ -102,11 +107,6 @@ You must provide the repository ID (obtained from get_repository).
 This action invalidates the old DSN and returns the new one. Use this if you suspect the DSN has been compromised or needs rotation.
 
 Regenerate the DSN (Data Source Name) for a repository
-- **update_default_branch**: This affects which branch is analyzed by default.
-You must provide the repository ID (from get_repository) and the new branch name (e.g., "main", "develop", "master").
-Use this when your team changes the default branch name (e.g., migrating from "master" to "main").
-
-Update the default branch for a repository in DeepSource
 
 
 ## 💬 Prompt Examples

@@ -42,15 +42,15 @@ Initialize a new video
 - **delete_video**: video.
 
 Permanently delete a video
-- **get_video_analytics**: Retrieve performance metrics
-- **get_video_details**: Get metadata for a video
 - **list_video_captions**: List captions for a video
 - **list_video_chapters**: List chapters for a video
-- **list_player_themes**: List custom player themes
 - **list_videos**: Supports filtering by title or tags.
 
 List your api.video videos
 - **update_video_details**: Modify video metadata
+- **get_video_analytics**: Retrieve performance metrics
+- **get_video_details**: Get metadata for a video
+- **list_player_themes**: List custom player themes
 
 
 ## 💬 Prompt Examples

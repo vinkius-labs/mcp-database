@@ -34,6 +34,11 @@ Empower your AI agents to moderate user-generated content using **Keepcon**. Thi
 
 
 ## Available Tools (9)
+- **moderate_content**: Returns the decision (approve/reject) and tags.
+
+Moderates content in real-time
+- **list_profiles**: List user profiles
+- **search_profiles**: Search profiles with filters
 - **acknowledge_results**: Acknowledge receipt of results
 - **export_results**: Retrieve batch moderation results
 - **submit_feedback**: g., false positives) to improve the semantic engine.
@@ -46,11 +51,6 @@ Get a user profile by social network ID
 - **import_batch**: Returns an import ID.
 
 Submit content for batch moderation
-- **moderate_content**: Returns the decision (approve/reject) and tags.
-
-Moderates content in real-time
-- **list_profiles**: List user profiles
-- **search_profiles**: Search profiles with filters
 
 
 ## 💬 Prompt Examples

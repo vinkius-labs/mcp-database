@@ -35,6 +35,7 @@ Empower your AI agent to orchestrate your daily planning and environmental monit
 
 
 ## Available Tools (10)
+- **get_weather_24h**: Get 24-hour weather forecast
 - **get_air_now**: 5, etc.).
 
 Get current air quality
@@ -42,7 +43,6 @@ Get current air quality
 - **get_moon_astronomy**: Get moonrise and moonset times
 - **get_sun_astronomy**: Get sunrise and sunset times
 - **get_warning**: Get weather warnings
-- **get_weather_24h**: Get 24-hour weather forecast
 - **get_weather_3d**: Get 3-day weather forecast
 - **get_weather_7d**: Get 7-day weather forecast
 - **get_weather_now**: Get current weather

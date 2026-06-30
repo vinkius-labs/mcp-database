@@ -39,7 +39,6 @@ Connect your **Capsule CRM** account to any AI agent to streamline your sales an
 - **create_party**: Create a new party (person or organisation)
 - **create_project**: Create a new project (kase)
 - **create_task**: Create a new task
-- **delete_opportunity**: Delete an opportunity
 - **delete_party**: Delete a party
 - **delete_project**: Delete a project (kase)
 - **delete_task**: Delete a task
@@ -65,6 +64,7 @@ Connect your **Capsule CRM** account to any AI agent to streamline your sales an
 - **update_party**: Update an existing party
 - **update_project**: Update an existing project (kase)
 - **update_task**: Update an existing task
+- **delete_opportunity**: Delete an opportunity
 
 
 ## 💬 Prompt Examples

@@ -37,6 +37,12 @@ Connect your **BoardGameGeek** account to any AI agent and unlock the full analy
 
 
 ## Available Tools (10)
+- **get_thread**: Useful for reading discussions, rules clarifications, or reviews about a game.
+
+Read a specific forum thread on BoardGameGeek
+- **get_user_collection**: Returns all games owned with stats, ratings, play counts, own/want/wishlist status. Optionally filter by subtype or exclude expansions.
+
+Get a BGG user's board game collection
 - **get_forum_list**: g. Reviews, Rules, General, Strategy) associated with a specific board game by its BGG ID. Use the returned forum IDs to browse individual threads.
 
 List discussion forums for a board game
@@ -52,12 +58,6 @@ Get the current trending/hot board games on BoardGameGeek
 - **get_thing**: Returns game names, year published, min/max players, playing time, complexity weight, Bayesian/user ratings, rank, description and thumbnail. Use comma-separated IDs for multiple games.
 
 Get detailed info for a board game by BGG ID
-- **get_thread**: Useful for reading discussions, rules clarifications, or reviews about a game.
-
-Read a specific forum thread on BoardGameGeek
-- **get_user_collection**: Returns all games owned with stats, ratings, play counts, own/want/wishlist status. Optionally filter by subtype or exclude expansions.
-
-Get a BGG user's board game collection
 - **get_user_info**: Useful for understanding a user's preferences and social connections on the platform.
 
 Get a BoardGameGeek user profile
