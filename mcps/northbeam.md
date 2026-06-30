@@ -40,6 +40,10 @@ Connect your **Northbeam** account to your AI agent and gain deep insights into 
 - **list_breakdowns**: g., Platform, Campaign, Ad Set) in attribution reports.
 
 List available data breakdowns
+- **list_scheduled_exports**: List scheduled data exports
+- **create_data_export**: Initialize a new data export
+- **get_export_status**: Check data export status
+- **get_account_info**: Get account metadata
 - **list_metrics**: g., Attributed Revenue, Transactions, Spend) available for export.
 
 List available attribution metrics
@@ -47,11 +51,7 @@ List available attribution metrics
 
 List supported attribution models
 - **list_recent_exports**: List recently completed exports
-- **list_scheduled_exports**: List scheduled data exports
 - **list_webhooks**: List active webhooks
-- **create_data_export**: Initialize a new data export
-- **get_export_status**: Check data export status
-- **get_account_info**: Get account metadata
 
 
 ## 💬 Prompt Examples

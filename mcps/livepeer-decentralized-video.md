@@ -34,6 +34,7 @@ Connect your **Livepeer** account to any AI agent to orchestrate decentralized v
 
 
 ## Available Tools (34)
+- **get_webhook**: Retrieve a specific webhook
 - **create_clip**: Create a short video clip from a live stream
 - **create_multistream_target**: Create a multistream target (e.g., Twitch, YouTube)
 - **create_room**: Create a real-time WebRTC multi-participant video room
@@ -55,7 +56,6 @@ Connect your **Livepeer** account to any AI agent to orchestrate decentralized v
 - **get_task**: Retrieve a specific task (e.g., upload, transcode)
 - **get_usage_metrics**: Query usage metrics (total minutes transcoded and delivered)
 - **get_viewership_metrics**: Query viewership metrics (breakdown by device, browser, location)
-- **get_webhook**: Retrieve a specific webhook
 - **list_assets**: Retrieve all assets
 - **list_sessions**: Retrieve all broadcast sessions
 - **list_streams**: Retrieve all streams

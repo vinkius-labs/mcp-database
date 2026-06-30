@@ -36,8 +36,8 @@ No more manual toggling between browser tabs to check feature statuses or roadma
 
 
 ## Available Tools (6)
-- **create_airfocus_item**: Create an item
 - **get_airfocus_item**: Get item details
+- **create_airfocus_item**: Create an item
 - **list_airfocus_fields**: List custom fields
 - **list_airfocus_items**: List workspace items
 - **list_airfocus_workspaces**: List all workspaces

@@ -29,13 +29,13 @@ Ideal for customer success teams, support agents, and community managers who wan
 
 
 ## Available Tools (8)
+- **list_faqs**: List FAQs in Polaria
 - **create_contact**: Create a new contact in Polaria
 - **add_chat_message**: Add a message to a conversation
 - **get_contact**: Get details of a specific contact
 - **get_conversation**: Get details of a specific conversation
 - **list_contacts**: List contacts in Polaria
 - **list_conversations**: List conversations in Polaria
-- **list_faqs**: List FAQs in Polaria
 - **list_widgets**: List Polaria widgets
 
 
