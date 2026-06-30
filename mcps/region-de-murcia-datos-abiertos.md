@@ -34,12 +34,12 @@ Connect your AI agent to the **Región de Murcia Datos Abiertos** portal. This M
 
 
 ## Available Tools (7)
-- **get_dataset**: Get details for a specific dataset
 - **get_most_recent_datasets**: Get the most recently added datasets
 - **get_most_viewed_datasets**: Get the most viewed datasets
+- **list_organizations**: List all organizations in the catalog
+- **get_dataset**: Get details for a specific dataset
 - **list_datasets**: List all datasets in the catalog
 - **list_groups**: List all groups in the catalog
-- **list_organizations**: List all organizations in the catalog
 - **search_datasets**: Search for datasets in the catalog
 
 

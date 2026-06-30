@@ -36,11 +36,6 @@ No more manual check-in reading or missed status updates. Your AI acts as a dedi
 
 
 ## Available Tools (11)
-- **create_update**: Post a new standup update
-- **get_objective**: Get details for a specific objective
-- **get_snippet**: Get details of a specific check-in snippet
-- **get_team**: Get details for a specific team
-- **get_update**: Get details of a specific update (check-in)
 - **get_user**: Get details for a specific team member
 - **list_goals**: List all team goals
 - **list_objectives**: List team objectives
@@ -49,6 +44,11 @@ No more manual check-in reading or missed status updates. Your AI acts as a dedi
 
 List team check-ins (updates)
 - **list_users**: List all users in the organization
+- **create_update**: Post a new standup update
+- **get_objective**: Get details for a specific objective
+- **get_snippet**: Get details of a specific check-in snippet
+- **get_team**: Get details for a specific team
+- **get_update**: Get details of a specific update (check-in)
 
 
 ## 💬 Prompt Examples

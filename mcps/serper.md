@@ -32,12 +32,12 @@ Connect your AI agent to **Serper.dev** — the fastest and most cost-effective 
 
 
 ## Available Tools (3)
-- **google_image_search**: dev to query Google Images and return structured results including image URLs, titles, and source pages. Useful for visual research, content creation, and reference gathering.
-
-Search Google Images for visual content related to any query. Returns image URLs, titles, and sources
 - **google_news_search**: dev to query Google News and return the most recent news articles matching your query. Perfect for monitoring breaking news, industry trends, and competitor announcements.
 
 Search Google News for the latest articles on any topic. Returns headlines, sources, dates, and snippets
+- **google_image_search**: dev to query Google Images and return structured results including image URLs, titles, and source pages. Useful for visual research, content creation, and reference gathering.
+
+Search Google Images for visual content related to any query. Returns image URLs, titles, and sources
 - **google_search**: dev to perform a real-time Google Search and return structured organic results. Supports geolocation (gl) and language (hl) parameters for localized results. Returns up to 100 results per query.
 
 Search Google and get organic SERP results instantly. Returns titles, links, snippets, and positions for any query
