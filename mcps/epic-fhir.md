@@ -37,6 +37,15 @@ Epic is the world's most widely used electronic health record system, serving ov
 
 
 ## Available Tools (10)
+- **list_allergies**: Includes substance, reaction type, severity, and clinical status.
+
+List allergies and intolerances
+- **list_appointments**: Includes date/time, provider, location, and status.
+
+List patient appointments
+- **list_diagnostic_reports**: Includes report type, results, conclusion, and performing organization.
+
+List diagnostic reports
 - **search_patients**: Returns patient demographics including name, DOB, gender, address, and identifiers.
 
 Search patients by name, DOB, or MRN
@@ -58,15 +67,6 @@ List diagnoses and conditions
 - **list_medications**: Includes medication name, dosage, frequency, route, prescriber, and status.
 
 List medication requests
-- **list_allergies**: Includes substance, reaction type, severity, and clinical status.
-
-List allergies and intolerances
-- **list_appointments**: Includes date/time, provider, location, and status.
-
-List patient appointments
-- **list_diagnostic_reports**: Includes report type, results, conclusion, and performing organization.
-
-List diagnostic reports
 
 
 ## 💬 Prompt Examples
