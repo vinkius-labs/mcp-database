@@ -34,12 +34,12 @@ Connect your **MoEngage** account to any AI agent and manage customer engagement
 
 
 ## Available Tools (13)
+- **list_campaigns**: List campaigns
 - **check_moengage_status**: Verify connectivity
 - **get_campaign_stats**: Get campaign stats
 - **get_campaign**: Get campaign details
 - **get_customer**: Get customer details
 - **get_segment**: Get segment details
-- **list_campaigns**: List campaigns
 - **list_segments**: List segments
 - **search_customers**: Search customers
 - **send_push**: Send push notification

@@ -36,10 +36,10 @@ No more manual toggling between different social platforms or digging through fr
 
 
 ## Available Tools (12)
+- **get_api_status**: Check connection
 - **schedule_social_post**: Schedule a new post
 - **remove_social_post**: Delete a post
 - **modify_pending_post**: Edit scheduled post
-- **get_api_status**: Check connection
 - **list_pending_posts**: Check scheduled queue
 - **get_profile_details**: Get account info
 - **get_posting_schedules**: Check posting times

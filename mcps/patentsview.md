@@ -34,9 +34,9 @@ Equip your AI agent with the definitive source for US patent data through the **
 
 
 ## Available Tools (3)
+- **search_patents**: Search for US patents by keyword
 - **get_patent_details**: Get details for a specific patent
 - **search_inventors**: Search for inventors by last name
-- **search_patents**: Search for US patents by keyword
 
 
 ## 💬 Prompt Examples

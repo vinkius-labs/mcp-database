@@ -34,15 +34,15 @@ Connect your **SMS Mobile API** account to any AI agent to automate your mobile 
 
 
 ## Available Tools (11)
+- **get_account_info**: Get account information and usage statistics
+- **get_delivery_status**: Get delivery status for a sent message
+- **get_device**: Get details for a specific connected device
+- **list_contacts**: List all saved contacts
 - **list_sent_messages**: List all sent messages
 - **send_mms**: Send an MMS message with media attachment
 - **get_received_sms**: Get incoming SMS messages
 - **list_connected_devices**: List connected mobile gateways
 - **list_missed_calls**: List missed calls log
-- **get_account_info**: Get account information and usage statistics
-- **get_delivery_status**: Get delivery status for a sent message
-- **get_device**: Get details for a specific connected device
-- **list_contacts**: List all saved contacts
 - **send_sms**: Send SMS from your phone
 - **send_whatsapp**: Send WhatsApp from your phone
 

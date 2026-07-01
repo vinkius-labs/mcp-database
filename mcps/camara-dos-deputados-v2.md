@@ -34,6 +34,8 @@ Connect to the **Chamber of Deputies Open Data API** to monitor the Brazilian le
 
 
 ## Available Tools (49)
+- **list_frentes**: List parliamentary fronts
+- **list_proposicao_votacoes**: List votings related to the proposition
 - **get_bloco**: Get details of a block
 - **get_deputado**: Get details of a specific deputy
 - **get_evento**: Get details of an event
@@ -59,7 +61,6 @@ Connect to the **Chamber of Deputies Open Data API** to monitor the Brazilian le
 - **list_evento_votacoes**: List votings that occurred during the event
 - **list_eventos**: List events (sessions, hearings, meetings)
 - **list_frente_membros**: List members of the parliamentary front
-- **list_frentes**: List parliamentary fronts
 - **list_legislatura_mesa**: List members of the Board of Directors for that legislature
 - **list_legislaturas**: List legislatures (four-year periods of parliamentary work)
 - **list_orgao_membros**: List current members and their roles in the organ
@@ -71,7 +72,6 @@ Connect to the **Chamber of Deputies Open Data API** to monitor the Brazilian le
 - **list_proposicao_relacionadas**: List other propositions related to this one
 - **list_proposicao_temas**: List areas of interest/themes associated with the proposition
 - **list_proposicao_tramitacoes**: List history of the proposition progress
-- **list_proposicao_votacoes**: List votings related to the proposition
 - **list_proposicoes**: List propositions (projects of law, amendments, etc)
 - **list_ref_deputados_sigla_uf**: List state abbreviations
 - **list_ref_eventos_cod_situacao_evento**: List status codes for events

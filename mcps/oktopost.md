@@ -36,8 +36,8 @@ Connect your **Oktopost** account to your AI agent and streamline your B2B socia
 
 
 ## Available Tools (10)
-- **get_analytics_report**: Get social analytics report
 - **get_campaign_details**: Get specific campaign info
+- **get_analytics_report**: Get social analytics report
 - **get_message_details**: Get specific message details
 - **get_social_profile_details**: Get specific profile info
 - **list_campaigns**: List social media campaigns

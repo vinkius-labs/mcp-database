@@ -34,6 +34,7 @@ Connect your **Tettra** internal knowledge base to any AI agent and bring your c
 
 
 ## Available Tools (12)
+- **verify_wiki_page**: Marks a Tettra page as verified and up-to-date
 - **create_wiki_page**: Provide title, content, and category ID.
 
 Creates a new wiki page in a specific category
@@ -53,7 +54,6 @@ Full-text search across all Tettra wiki pages
 - **update_wiki_page**: Provide the page ID and the new fields.
 
 Updates the title or content of an existing Tettra page
-- **verify_wiki_page**: Marks a Tettra page as verified and up-to-date
 
 
 ## 💬 Prompt Examples
