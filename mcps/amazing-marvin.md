@@ -39,8 +39,8 @@ Add a new task to Amazing Marvin
 
 Get tasks and sub-categories inside a category or project
 - **get_today_items**: Get tasks scheduled for today in Amazing Marvin
-- **mark_done**: Mark a task as completed in Amazing Marvin
 - **start_tracking**: Start time tracking for a task in Amazing Marvin
+- **mark_done**: Mark a task as completed in Amazing Marvin
 - **stop_tracking**: Stop the currently running time tracker in Amazing Marvin
 - **update_task**: You can change its title, scheduled day, or done status.
 

@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,345 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,348 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,7 +10,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (830 servers)
+- [productivity](categories/productivity.md) (831 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
 - [developer-tools](categories/developer-tools.md) (513 servers)
 - [data-analytics](categories/data-analytics.md) (330 servers)
@@ -38,9 +38,9 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [document-management](categories/document-management.md) (39 servers)
 - [collaboration](categories/collaboration.md) (38 servers)
 - [talk-to-me](categories/talk-to-me.md) (38 servers)
+- [health](categories/health.md) (36 servers)
 - [construction](categories/construction.md) (35 servers)
 - [databases](categories/databases.md) (35 servers)
-- [health](categories/health.md) (35 servers)
 - [brain-trust](categories/brain-trust.md) (34 servers)
 - [customer-relationship-management](categories/customer-relationship-management.md) (31 servers)
 - [image-video](categories/image-video.md) (31 servers)
@@ -49,8 +49,8 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [friends-mcp](categories/friends-mcp.md) (28 servers)
 - [iot-hardware](categories/iot-hardware.md) (25 servers)
 - [superpower](categories/superpower.md) (24 servers)
+- [utilities](categories/utilities.md) (24 servers)
 - [government-public-data](categories/government-public-data.md) (23 servers)
-- [utilities](categories/utilities.md) (23 servers)
 - [healthcare](categories/healthcare.md) (22 servers)
 - [marketing](categories/marketing.md) (22 servers)
 - [education](categories/education.md) (20 servers)

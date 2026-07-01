@@ -592,6 +592,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Pivotal Tracker](../mcps/pivotal-tracker.md) | Manage agile projects via Pivotal Tracker — list stories, track epics, and update tasks directly from any AI agent. |
 | [Plane](../mcps/plane.md) | Manage Plane.so projects, track issues, review sprint cycles, and audit agile modules completely autonomously. |
 | [Plane](../mcps/plane-alternative.md) | Manage projects, issues, and product roadmaps via Plane — create projects, toggle features, and organize workspaces directly from your AI agent. |
+| [Planetary Hour Calculator](../mcps/planetary-hour-calculator.md) | Calculate the 24 planetary hours of a day and their ruling planets based on Chaldean tradition. |
 | [Plaud](../mcps/plaud.md) | Manage your Plaud AI recordings — audit transcripts and summaries via AI. |
 | [Play.ht (AI Voice Generation & TTS)](../mcps/playht-ai-voice-generation-tts.md) | Generate ultra-realistic AI voices and convert text to speech instantly using Play.ht's advanced neural engine. |
 | [Plecto](../mcps/plecto.md) | Automate KPI dashboards and data tracking via Plecto — manage registrations, dashboards, and teams directly from any AI agent. |

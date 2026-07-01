@@ -37,6 +37,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Stress Load Scorer](../mcps/stress-load-scorer.md) | Calculate cumulative psychological stress and health risk using the Holmes-Rahe Scale. |
 | [UV Exposure Estimator](../mcps/uv-exposure-estimator.md) | Calculate maximum safe sun exposure time based on UV index, skin type, and SPF. |
 | [VO2max Estimator](../mcps/vo2max-estimator.md) | Estimate aerobic capacity using Cooper, Rockport, Step, and YMCA Bike protocols. |
+| [Weight Loss Plateau Recalculator](../mcps/weight-loss-plateau-recalculator.md) | Predictive simulation engine to model dietary adjustments for overcoming weight loss stalls. |
 | [WHO-5 Wellbeing Index](../mcps/who-5-wellbeing-index.md) | Calculate the WHO-5 Well-Being Index score and identify potential wellbeing risks. |
 | [Workout Rest Timer](../mcps/workout-rest-timer.md) | Calculate optimal rest intervals and warm-up protocols based on your training goals like Strength, Hypertroint, or Endurance. |
 
