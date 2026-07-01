@@ -5,7 +5,6 @@ Explore the open database of **training** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Competition Peak Planner](../mcps/competition-peak-planner.md) | Generate personalized training taper protocols, nutritional strategies, and peak performance windows. |
-| [Progressive Overload Planner](../mcps/progressive-overload-planner.md) | Generate periodized strength training schedules based on 1RM progression targets. |
 | [Rest Interval Optimizer](../mcps/rest-interval-optimizer.md) | Calculate optimal rest periods between sets based on training goals and intensity. |
 
 

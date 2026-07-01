@@ -38,18 +38,6 @@ No API key required — completely free with CC BY-SA license.
 
 
 ## Available Tools (15)
-- **get_episode**: Returns the episode name, season and number, air date, summary, runtime, image URL and show link.
-
-Get detailed info for a specific episode by ID
-- **get_full_schedule**: Returns all known future episodes across all shows and networks. This is a large response (multiple MB). Optionally filter by country code.
-
-Get the full future TV schedule
-- **get_person**: ) by their numeric ID. Returns the person's name, birthday, birthplace, gender, photo, bio and external IDs (IMDb, Wikipedia, TVRage).
-
-Get detailed info for a specific person
-- **get_person_cast_credits**: Each credit includes the show name, character name, episode count and whether the role was main or recurring.
-
-Get all cast credits for a person
 - **get_schedule**: Each entry includes the show name, episode name, airtime, network and episode info. Optionally set country (ISO 3166-1 alpha-2 code, e.g. "US", "GB", "BR") and date (YYYY-MM-DD, default today).
 
 Get TV schedule for a specific date and country
@@ -80,9 +68,21 @@ Search for actors and crew by name
 - **search_shows**: Uses fuzzy matching with tolerance for typos. Returns multiple results ranked by relevance. Each result includes the show's name, genres, network, premiered year, rating, image URL and summary. Use single_search for exact single match.
 
 Search for TV shows by name
+- **get_episode**: Returns the episode name, season and number, air date, summary, runtime, image URL and show link.
+
+Get detailed info for a specific episode by ID
 - **single_search**: Returns exactly one result or none. Includes embedded details like episodes, cast and network info. Use this when you want the best match for a specific show name.
 
 Search for a single TV show with full details
+- **get_person_cast_credits**: Each credit includes the show name, character name, episode count and whether the role was main or recurring.
+
+Get all cast credits for a person
+- **get_full_schedule**: Returns all known future episodes across all shows and networks. This is a large response (multiple MB). Optionally filter by country code.
+
+Get the full future TV schedule
+- **get_person**: ) by their numeric ID. Returns the person's name, birthday, birthplace, gender, photo, bio and external IDs (IMDb, Wikipedia, TVRage).
+
+Get detailed info for a specific person
 
 
 ## 💬 Prompt Examples

@@ -4,10 +4,13 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Collision Detection Primitives](../mcps/collision-detection-primitives.md) | Calculate 3D intersections, penetrations, and impact timings for spheres, AABBs, rays, and planes. |
 | [Damage Formula Calculator](../mcps/damage-formula-calculator.md) | Evaluate and compare game damage scaling models including linear, multiplicative, and advanced RPG formulas. |
 | [Elemental Weakness Calculator](../mcps/elemental-weakness-calculator.md) | Calculate combat effectiveness and identify elemental imbalances using an interaction matrix. |
 | [Equal Temperament Calculator](../mcps/equal-temperament-calculator.md) | Calculate MIDI frequencies, interval deviations, and tuning system comparisons. |
 | [Loot Table Balancer](../mcps/loot-table-balancer.md) | Precision utility for calculating, normalizing, and auditing loot table probabilities and economic expected values. |
+| [Matrix 4x4 Transforms](../mcps/matrix-4x4-transforms.md) | Create, compose, and apply 3D transformation matrices with rotation representations and coordinate transformations for graphics and simulation applications. |
+| [Mesh Geometry Calculator](../mcps/mesh-geometry-calculator.md) | Perform advanced geometric and topological analysis on 3D triangle meshes. |
 | [Prestige System Calculator](../mcps/prestige-system-calculator.md) | Analyze the economic efficiency and temporal impact of prestige/rebirth mechanics. |
 | [Time Signature Calculator](../mcps/time-signature-calculator.md) | Calculate measure duration, rhythmic feeling, and polyrhythms for any time signature. |
 

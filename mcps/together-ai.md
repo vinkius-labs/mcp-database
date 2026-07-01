@@ -34,12 +34,7 @@ Connect your **Together AI** account to any AI agent and integrate bleeding-edge
 
 
 ## Available Tools (7)
-- **chat_completion**: Provide a model ID and a JSON array of messages.
-
-Executes a chat completion using Together AI models
-- **text_completion**: Provide a model ID and a prompt.
-
-Executes a base text completion
+- **list_finetune_jobs**: Lists all fine-tuning jobs
 - **create_finetune_job**: Provide a base model ID and a training file ID.
 
 Creates a new fine-tuning job
@@ -49,8 +44,13 @@ Generates vector embeddings for input texts
 - **generate_image**: Provide a model ID and descriptive prompt.
 
 Generates an image from a text prompt
-- **list_finetune_jobs**: Lists all fine-tuning jobs
 - **list_available_models**: Lists all AI models available on Together AI
+- **chat_completion**: Provide a model ID and a JSON array of messages.
+
+Executes a chat completion using Together AI models
+- **text_completion**: Provide a model ID and a prompt.
+
+Executes a base text completion
 
 
 ## 💬 Prompt Examples

@@ -36,13 +36,13 @@ Your AI agent becomes your growth partner, giving you instant access to affiliat
 
 ## Available Tools (8)
 - **get_merchant_details**: Retrieve detailed information about a specific merchant
+- **list_merchant_transactions**: Retrieve transactions generated for your merchant campaign
+- **list_promotions**: Retrieve active coupon codes and promotions from joined merchants
 - **get_performance_summary**: Calculate basic commission and sale totals for a set of transactions
 - **get_transaction_details**: Retrieve details of a specific transaction
 - **list_affiliate_merchants**: Retrieve a list of merchants available in the Commission Factory network
 - **list_affiliate_transactions**: Retrieve a list of transactions for your affiliate account
 - **list_merchant_affiliates**: Retrieve a list of affiliates joined to your merchant program
-- **list_merchant_transactions**: Retrieve transactions generated for your merchant campaign
-- **list_promotions**: Retrieve active coupon codes and promotions from joined merchants
 
 
 ## 💬 Prompt Examples

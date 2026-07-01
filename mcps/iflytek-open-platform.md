@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your voice and natural language operations 
 
 
 ## Available Tools (8)
+- **text_sentiment**: Analyze text sentiment
+- **text_to_speech**: Convert text to speech audio
+- **translate**: Translate text between languages
+- **summary_generation**: Generate text summary
 - **entity_recognition**: Named Entity Recognition (NER)
 - **keyword_extraction**: Extract keywords from text
 - **ocr_general**: General OCR text recognition
 - **speech_to_text**: Transcribe audio to text
-- **summary_generation**: Generate text summary
-- **text_sentiment**: Analyze text sentiment
-- **text_to_speech**: Convert text to speech audio
-- **translate**: Translate text between languages
 
 
 ## 💬 Prompt Examples

@@ -28,12 +28,6 @@ Connect your **Ordergroove** account to empower your AI agents with advanced sub
 
 
 ## Available Tools (9)
-- **cancel_subscription**: Requires a reason.
-
-Cancel a subscription
-- **get_customer**: Get customer details
-- **get_product**: Get product details
-- **get_subscription**: Get details for a specific subscription
 - **list_customers**: List Ordergroove customers
 - **list_products**: List Ordergroove products
 - **list_subscriptions**: You can filter by customer_id or status.
@@ -41,6 +35,12 @@ Cancel a subscription
 List Ordergroove subscriptions
 - **reactivate_subscription**: Reactivate a cancelled subscription
 - **update_subscription**: Update subscription details
+- **cancel_subscription**: Requires a reason.
+
+Cancel a subscription
+- **get_customer**: Get customer details
+- **get_product**: Get product details
+- **get_subscription**: Get details for a specific subscription
 
 
 ## 💬 Prompt Examples

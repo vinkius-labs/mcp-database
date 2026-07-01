@@ -36,10 +36,10 @@ Connect your **Clari** account to any AI agent and take full control of your rev
 
 
 ## Available Tools (8)
-- **list_clari_users**: List all users and hierarchy in the account
 - **get_opportunity_revenue_details**: Get detailed information for a specific opportunity
 - **list_revenue_accounts**: List CRM accounts associated with revenue data
 - **list_clari_audit_logs**: List platform events and audit trail records
+- **list_clari_users**: List all users and hierarchy in the account
 - **list_clari_export_jobs**: List status of asynchronous bulk data export jobs
 - **list_clari_forecasts**: List manual forecast submissions and historical data
 - **list_revenue_opportunities**: List CRM opportunities tracked in Clari

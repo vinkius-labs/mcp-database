@@ -37,8 +37,8 @@ Connect your **Materialize** instance to any AI agent to manage your streaming d
 
 Create a new compute cluster
 - **execute_sql**: Execute one or more SQL statements
-- **check_health**: Check the health of the Materialize instance
 - **list_clusters**: List all compute clusters
+- **check_health**: Check the health of the Materialize instance
 
 
 ## 💬 Prompt Examples

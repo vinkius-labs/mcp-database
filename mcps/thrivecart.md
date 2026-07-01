@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire checkout ecosystem with **Thriv
 
 
 ## Available Tools (10)
-- **get_customer**: Get details for a specific customer
 - **get_product**: Get details for a specific product
-- **get_subscription**: Get details for a specific subscription
 - **get_transaction**: Get details for a specific transaction
+- **get_customer**: Get details for a specific customer
+- **get_subscription**: Get details for a specific subscription
 - **list_coupons**: List all coupons
 - **list_customers**: List ThriveCart customers
 - **list_products**: List all ThriveCart products

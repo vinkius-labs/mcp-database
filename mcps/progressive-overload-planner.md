@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [training](../categories/training.md)
+**Category:** [fitness](../categories/fitness.md)
 
-Generate periodized strength training schedules based on 1RM progression targets.
+Automate 12-week strength training schedules with safety-capped linear progression.
 
 ## Description
-The Progressive Overload Planner is a mathematical engine designed to bridge the gap between current strength levels and target performance. By utilizing proven methodologies like Linear Progression, Double Progression, and Undulating Periodization, this MCP server generates precise week-by-week training schedules. Use `generate_overload_plan` to create your roadmap, `assess_load_intensity` to understand the physiological focus of your lifts, and `forecast_plateau_risk` to identify potential stagnation points before they happen.
+The Progressive Overload Planner is a specialized tool for lifters seeking to maximize strength gains while protecting connective tissue. By using the `compute_training_schedule` tool, you can generate a precise 12-week weight progression based on your starting load and desired weekly increments. The system automatically applies safety caps via the `validate_increment_safety` logic to ensure that no single week's jump exceeds your specified percentage threshold, preventing tendon strain. Additionally, use `predict_progression_plateau` to identify exactly when your training intensity might hit a structural limit based on your current parameters.
 
 
 ## Available Tools (3)
-- **assess_load_intensity**: Assesses the training intensity zone based on weight and 1RM
-- **forecast_plateau_risk**: Forecasts the risk of hitting a plateau in a training plan
-- **generate_overload_plan**: Generates a week-by-week progressive overload training plan
+- **compute_training_schedule**: Generates a complete 12-week spreadsheet of target weights for a lifting program
+- **predict_progression_plateau**: Estimates at which week in a 12-week cycle the safety cap will first be triggered
+- **validate_increment_safety**: Checks whether a proposed weight increase adheres to safety constraints
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Progressive Overload Planner is a mathematical engine designed to bridge the
 Here are some examples of how you can interact with the **Progressive Overload Planner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Generate a 4-week training plan starting from a 100kg squat to reach 105kg using the LINEAR model."
+> "Generate a 12-week training schedule starting at 60kg, adding 2.5kg each week, with a maximum jump of 5%."
 
 **🤖 AI Agent:**
-> Your 4-week plan is ready. Week 1: 100kg, 5 reps; Week 2: 101.25kg, 5 reps; Week 3: 102.5kg, 5 reps; Week 4: 103.75kg, 5 reps.
+> Week 1: 60kg, Week 2: 62.5kg, Week 3: 65kg, Week 4: 67.5kg, Week 5: 70kg, Week 6: 72.5kg, Week 7: 75kg, Week 8: 77.5kg, Week 9: 80kg, Week 10: 82.5kg, Week 11: 85kg, Week 12: 87.5kg.
 
 ---
 
 **👤 You:**
-> "If I lift 80kg for 10 reps with a 100kg 1RM, what is the intensity zone?"
+> "Is it safe to jump from 100kg to 110kg if my max jump percent is set to 8%?"
 
 **🤖 AI Agent:**
-> The intensity is 80% of your 1RM, which falls into the HYPERTROPHY zone.
+> No, that jump represents a 10% increase. The suggested weight to stay within your 8% limit would be 108kg.
 
 ---
 
 **👤 You:**
-> "Analyze this plan for plateau risks: {"weeks": [{"weekNumber": 1, "progressionRate": 0.05}, {"weekNumber": 2, "progressionRate": 0.15}]}"
+> "When will I hit my safety cap if I start at 50kg and add 5kg weekly with a 10% max jump?"
 
 **🤖 AI Agent:**
-> High risk detected in week 2 due to an aggressive 15% progression rate jump.
+> The safety cap will first be triggered in Week 3.
 
 
 ## ❓ FAQ
 
-**Q: How do I generate a new training plan?**
-Use the `generate_overload_plan` tool by providing your current 1RM, target 1RM, duration in weeks, and preferred training model.
+**Q: How does the safety cap work?**
+The planner monitors the percentage increase between weeks. If a scheduled increment would cause a jump larger than your `maxJumpPercent`, the tool automatically caps the weight at the maximum safe threshold to prevent injury.
 
-**Q: What are the different training models available?**
-The engine supports `LINEAR` for beginners, `DOUBLE_PROGRESSION` for intermediates, and `UNDULATING_PERIODIZATION` for advanced lifters.
+**Q: Can I use this for different training styles?**
+While optimized for linear progression, you can adapt it by adjusting the `weeklyIncrementKg` and `maxJumpPercent` to match your specific methodology.
 
-**Q: Can I check if a specific weight is too heavy?**
-Yes, you can use the `assess_load_intensity` tool to determine the intensity zone (Strength, Hypertrophy, or Endurance) for any given weight and repetition count.
+**Q: What does the plateau prediction tell me?**
+The `predict_progression_plateau` tool simulates your entire 12-week cycle and identifies the specific week where your weight increases will first trigger the safety cap.
 
 
 ## Installation & Usage

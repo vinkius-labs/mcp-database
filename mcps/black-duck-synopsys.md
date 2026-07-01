@@ -35,11 +35,11 @@ Connect your **Black Duck (Synopsys)** instance to any AI agent and orchestrate 
 
 
 ## Available Tools (10)
+- **list_code_locations**: List all scan code locations
 - **get_bom_status**: Check BOM calculation status for a project version
 - **get_project**: Get details of a specific project
 - **list_vulnerabilities**: List vulnerabilities for a project version
 - **get_vulnerability_details**: Get details of a specific CVE/Vulnerability
-- **list_code_locations**: List all scan code locations
 - **list_policy_rules**: List all security policy rules
 - **list_project_versions**: List all versions for a specific project
 - **list_projects**: List all Black Duck projects

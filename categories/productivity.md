@@ -223,6 +223,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [DeepL](../mcps/deepl.md) | Translate and audit text — manage multilingual communication via AI. |
 | [Degreed](../mcps/degreed.md) | Equip your AI agent to discover learning content, track skills, and monitor user completions via the Degreed API. |
 | [Delivery Integrity Prover](../mcps/delivery-integrity-prover.md) | Forces AI agents to reflect on task execution, matching prompt requirements to actual changes, verifying logs, and declaring gaps before claiming completion. |
+| [Deload Week Inserter](../mcps/deload-week-inserter.md) | Automatically integrate recovery weeks into your training blocks by scaling weights and volume. |
 | [Deputy](../mcps/deputy.md) | Equip your AI agent to manage employee rosters, track timesheets, and monitor leave requests via the Deputy API. |
 | [Design Pickle](../mcps/design-pickle.md) | Equip your AI agent to manage graphic design requests, track brand profiles, and monitor your production queue via the Design Pickle API. |
 | [Design Prover](../mcps/design-prover.md) | Every AI frontend looks identical: hero, 3 cards, 3 cards, CTA, rounded-xl, shadow-lg, blue/gray/white. Design Prover forces the agent to prove its design has dramatic hierarchy, unpredictable layout, intentional whitespace, commanding typography, and color with actual personality. |

@@ -33,9 +33,6 @@ Integrate **DoiT**, the leading cloud cost management and optimization platform,
 
 
 ## Available Tools (10)
-- **get_doit_account_metadata**: Retrieve metadata for the current DoiT organization
-- **get_asset_details**: Get detailed configuration and cost data for a specific cloud asset
-- **get_billing_cost_summary**: Retrieve a high-level summary of total cloud spending across all platforms
 - **list_cost_anomalies**: List all detected cloud cost anomalies and unexpected spending spikes
 - **list_cloud_assets**: List all cloud assets (AWS, GCP, Azure) managed by DoiT
 - **list_cost_budgets**: List all cloud spending budgets configured in DoiT
@@ -43,6 +40,9 @@ Integrate **DoiT**, the leading cloud cost management and optimization platform,
 - **list_critical_cost_spikes**: Identify high-severity cost anomalies that require immediate attention
 - **list_exceeded_cost_budgets**: Identify budgets that have exceeded their configured spending limits
 - **search_cloud_assets**: Search for cloud assets using a name keyword
+- **get_doit_account_metadata**: Retrieve metadata for the current DoiT organization
+- **get_asset_details**: Get detailed configuration and cost data for a specific cloud asset
+- **get_billing_cost_summary**: Retrieve a high-level summary of total cloud spending across all platforms
 
 
 ## 💬 Prompt Examples

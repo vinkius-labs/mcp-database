@@ -33,7 +33,6 @@ Integrate **Endear**, the leading retail CRM and clienteling platform, directly 
 
 
 ## Available Tools (10)
-- **get_endear_account_metadata**: Retrieve metadata and settings for your Endear account
 - **get_customer_profile**: Get detailed profile and history for a specific customer
 - **quick_retail_performance_audit**: Retrieve a high-level summary of customers, orders, and products
 - **list_customer_clienteling_notes**: List all clienteling notes and interactions for a specific customer
@@ -43,6 +42,7 @@ Integrate **Endear**, the leading retail CRM and clienteling platform, directly 
 - **list_clienteling_tasks**: List all clienteling and follow-up tasks
 - **list_retail_team_members**: List all team members and sales associates in the organization
 - **search_customers_by_name_or_email**: Search for customers using a name or email keyword
+- **get_endear_account_metadata**: Retrieve metadata and settings for your Endear account
 
 
 ## 💬 Prompt Examples

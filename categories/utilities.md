@@ -15,6 +15,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Deterministic Cron Schedule Engine](../mcps/deterministic-cron-schedule-engine.md) | Equip your AI with precise cron job parsing. Deterministically translate cron to natural language, format schedules, and calculate exact next execution times. |
 | [Dimensional Weight Calculator](../mcps/dimensional-weight-calculator.md) | Calculate dimensional weights, billable weight, and shipping weight discrepancies for major global carriers. |
 | [Frequency & Note Converter](../mcps/frequency-note-converter.md) | Convert between musical frequencies and notes with precision. |
+| [Geographic Distance Calculator](../mcps/geographic-distance-calculator.md) | Calculate precise distances, bearings, and waypoints using Haversine, Vincenty, and Euclidean models. |
 | [Groove Quantize Calculator](../mcps/groove-quantize-calculator.md) | Calculate precise millisecond-based quantization grids, swing offsets, and latency compensation for DAWs. |
 | [Ideal Weight Calculator](../mcps/ideal-weight-calculator.md) | Calculate your target weight range using scientific formulas like Lorentz, Devine, and Robinson. |
 | [Menstrual Cycle Calculator](../mcps/menstrual-cycle-calculator.md) | Track menstrual cycle phases and identify fertile windows using historical period data. |

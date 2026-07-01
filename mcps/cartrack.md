@@ -37,13 +37,13 @@ Connect your **Cartrack** fleet account to any AI agent and take full control of
 
 ## Available Tools (8)
 - **get_fuel_status**: Get current fuel levels and consumption for a vehicle
+- **list_vehicles**: List all vehicles in the fleet
 - **get_vehicle_position**: Get the real-time GPS position of a specific vehicle
 - **get_vehicle_details**: Get detailed information for a specific vehicle
 - **list_fleet_alerts**: List recent fleet alerts and events (speeding, etc)
 - **list_fleet_drivers**: List all registered drivers in the fleet
 - **list_geofences**: List all configured geofences for the fleet
 - **list_vehicle_trips**: List historical trips for a specific vehicle
-- **list_vehicles**: List all vehicles in the fleet
 
 
 ## 💬 Prompt Examples
