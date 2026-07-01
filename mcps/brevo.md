@@ -35,12 +35,12 @@ Skip logging into heavy marketing platforms just to send a manual password reset
 
 
 ## Available Tools (10)
+- **list_crm_contacts**: List all contacts stored in the Brevo CRM
 - **create_crm_contact**: Create a new contact record within the Brevo CRM
 - **create_contact_list**: Create a new empty audience list folder for organizing campaigns in Brevo
 - **delete_crm_contact**: Permanently delete a CRM contact profile conforming to database compliance
 - **get_smtp_account_details**: Retrieve the current Brevo account status, plans, and quota mappings
 - **get_contact_attributes**: Retrieve specific profile attributes and metadata for a given contact email
-- **list_crm_contacts**: List all contacts stored in the Brevo CRM
 - **list_contact_folders**: Retrieve all contact lists and campaign segments structured in the CRM
 - **send_transactional_email**: Needs absolute mapped verified domains to avoid DKIM failure bouncing.
 

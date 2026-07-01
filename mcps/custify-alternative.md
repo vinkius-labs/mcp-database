@@ -35,13 +35,13 @@ Connect your **Custify** customer success account to any AI agent and simplify h
 
 
 ## Available Tools (8)
-- **create_person**: Create a new person record
-- **get_company_details**: Get details for a specific company
 - **get_person_details**: Get details for a specific person
 - **list_companies**: List customer companies
 - **list_health_scores**: List customer health scores
 - **list_people**: List product users (people)
 - **list_user_segments**: List user segments
+- **create_person**: Create a new person record
+- **get_company_details**: Get details for a specific company
 - **track_user_event**: Track a custom event
 
 

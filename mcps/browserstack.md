@@ -41,6 +41,9 @@ No more context switching to the BrowserStack dashboard just to figure out why a
 - **list_projects**: json`. Returns project names, IDs, and build counts. Used to organize automation runs.
 
 List all projects on BrowserStack Automate
+- **delete_build**: json`.
+
+Delete a BrowserStack build by ID
 - **get_project**: json`. This includes name, group ID, and recent builds associated with the project.
 
 Get full details of a BrowserStack project including linked builds
@@ -65,9 +68,6 @@ Get current BrowserStack plan details and parallel session usage
 - **delete_session**: json`.
 
 Delete a BrowserStack session by ID
-- **delete_build**: json`.
-
-Delete a BrowserStack build by ID
 
 
 ## 💬 Prompt Examples

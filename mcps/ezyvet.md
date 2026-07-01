@@ -38,15 +38,15 @@ Connect your **ezyVet** Practice Management account to any AI agent and take ful
 - **get_animal**: Get a specific ezyVet animal by ID
 - **get_appointment**: Get a specific ezyVet appointment by ID
 - **get_consult**: Get a specific ezyVet consult by ID
-- **get_contact**: Get a specific ezyVet contact by ID
 - **get_invoice**: Get a specific ezyVet invoice by ID
-- **get_me**: Get current ezyVet user profile
 - **list_animals**: List all ezyVet animals (patients)
 - **list_appointments**: List all ezyVet appointments
-- **list_consults**: List all ezyVet consults
 - **list_contacts**: List all ezyVet contacts (clients/suppliers)
 - **list_invoices**: List all ezyVet invoices
 - **list_products**: List all ezyVet products
+- **get_contact**: Get a specific ezyVet contact by ID
+- **get_me**: Get current ezyVet user profile
+- **list_consults**: List all ezyVet consults
 
 
 ## 💬 Prompt Examples

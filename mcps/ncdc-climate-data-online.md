@@ -35,6 +35,8 @@ Connect to the **National Climatic Data Center (NCDC)** API through your AI agen
 
 
 ## Available Tools (10)
+- **list_stations**: List weather stations
+- **list_locations**: List specific locations
 - **get_climate_data**: Retrieve actual climate records
 - **get_dataset**: Get specific dataset details
 - **get_station**: Get specific station details
@@ -53,8 +55,6 @@ List NCDC climate datasets
 - **list_location_categories**: g., City, County, State, Country).
 
 List location categories
-- **list_locations**: List specific locations
-- **list_stations**: List weather stations
 
 
 ## 💬 Prompt Examples

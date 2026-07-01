@@ -33,13 +33,6 @@ Transform your AI agent into a professional e-sports scout and performance analy
 
 
 ## Available Tools (11)
-- **get_player_badges**: List all community badges earned by a player
-- **get_friend_list**: Requires the user profile to be public.
-
-Get the friend list of a Steam user
-- **get_game_schema**: Get the full stats and achievements schema for a game
-- **get_global_achievement_percentages**: Get global unlock percentages for all achievements in a game
-- **get_owned_games**: List all games owned by a player with playtime
 - **get_player_achievements**: Get achievement unlock status for a user in a game
 - **get_player_bans**: Check VAC, community, and economy ban status
 - **get_player_profile**: Get Steam profile info for one or more players
@@ -48,6 +41,13 @@ Get the friend list of a Steam user
 - **get_user_game_stats**: ) tracked by Steam for a user in a given game.
 
 Get raw gameplay stats for a user in a specific game
+- **get_player_badges**: List all community badges earned by a player
+- **get_friend_list**: Requires the user profile to be public.
+
+Get the friend list of a Steam user
+- **get_game_schema**: Get the full stats and achievements schema for a game
+- **get_global_achievement_percentages**: Get global unlock percentages for all achievements in a game
+- **get_owned_games**: List all games owned by a player with playtime
 
 
 ## 💬 Prompt Examples

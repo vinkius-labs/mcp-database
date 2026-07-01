@@ -36,9 +36,6 @@ No more manual toggling between social apps or digging through analytics dashboa
 
 
 ## Available Tools (12)
-- **create_post**: You must specify the providerId and the content of the post(s).
-
-Create or schedule a new post
 - **delete_post**: If it was scheduled, it will be cancelled.
 
 Delete a post
@@ -56,6 +53,9 @@ Get engagement metrics
 
 List connected social media accounts
 - **list_follow_up_templates**: List auto-plug/follow-up templates
+- **create_post**: You must specify the providerId and the content of the post(s).
+
+Create or schedule a new post
 
 
 ## 💬 Prompt Examples

@@ -33,15 +33,15 @@ Integrate **DoubleTick**, the official WhatsApp Business API-powered marketing a
 
 
 ## Available Tools (10)
+- **search_contacts_by_keyword**: Search for contacts using a name keyword or phone number
+- **list_latest_whatsapp_messages**: Identify the most recently received or sent messages across all conversations
+- **list_approved_templates**: List all approved WhatsApp message templates in your account
 - **get_doubletick_account_metadata**: Retrieve metadata and limits for your DoubleTick account
 - **get_contact_details**: Get detailed profile and conversation status for a specific contact
 - **quick_whatsapp_volume_audit**: Retrieve a high-level summary of messaging activity and success rates
 - **list_whatsapp_contacts**: List all contacts registered in your DoubleTick account
 - **list_conversation_messages**: List messages from a specific conversation
 - **list_opted_in_contacts**: Identify contacts that have explicitly opted in for WhatsApp communications
-- **list_latest_whatsapp_messages**: Identify the most recently received or sent messages across all conversations
-- **list_approved_templates**: List all approved WhatsApp message templates in your account
-- **search_contacts_by_keyword**: Search for contacts using a name keyword or phone number
 - **send_whatsapp_template**: Send a pre-approved WhatsApp template message
 
 

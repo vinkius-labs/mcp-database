@@ -29,6 +29,7 @@ Connect **Twelve Data** financial API to any AI agent and access real-time stock
 
 
 ## Available Tools (16)
+- **get_quote**: Get real-time stock quote
 - **convert_currency**: Convert an amount between currencies
 - **get_bollinger_bands**: Price touching upper band may indicate overbought, lower may indicate oversold.
 
@@ -45,7 +46,6 @@ Get Exponential Moving Average (EMA)
 - **get_macd**: Used for trend following and momentum.
 
 Get Moving Average Convergence Divergence (MACD)
-- **get_quote**: Get real-time stock quote
 - **get_rsi**: Values above 70 indicate overbought, below 30 indicate oversold conditions.
 
 Get Relative Strength Index (RSI)

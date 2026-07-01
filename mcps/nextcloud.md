@@ -36,6 +36,8 @@ Connect your **Nextcloud** instance to any AI agent and take full control of you
 ## Available Tools (16)
 - **get_capabilities**: Get Nextcloud server capabilities
 - **create_folder**: Create a new folder in Nextcloud (WebDAV)
+- **set_user_status_message**: Set custom user status message
+- **set_user_status**: Set user online status
 - **create_share**: Share Types: 0=User, 1=Group, 3=Public Link, 4=Email, 6=Federated, 7=Circle, 10=Talk.
 
 Create a new Nextcloud share
@@ -55,8 +57,6 @@ List files in a Nextcloud directory (WebDAV)
 - **list_users**: Requires admin privileges.
 
 List Nextcloud users (Admin only)
-- **set_user_status_message**: Set custom user status message
-- **set_user_status**: Set user online status
 - **update_share**: Update an existing Nextcloud share
 
 

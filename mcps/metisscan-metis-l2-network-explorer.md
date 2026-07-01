@@ -34,7 +34,6 @@ Connect your AI agent to the **Metis L2** ecosystem through Metisscan. Gain real
 
 
 ## Available Tools (26)
-- **eth_block_number**: Get the most recent block number (RPC)
 - **eth_call**: Execute a message call (RPC)
 - **eth_estimate_gas**: Estimate gas for a transaction (RPC)
 - **eth_get_balance**: Get address balance (RPC)
@@ -64,6 +63,7 @@ List internal transactions for a transaction
 - **list_blocks**: List recent blocks on Metis L2
 - **list_tokens**: List tokens on the network
 - **list_transactions**: List recent transactions on Metis L2
+- **eth_block_number**: Get the most recent block number (RPC)
 
 
 ## 💬 Prompt Examples

@@ -39,6 +39,7 @@ Generate an image using the Stable Image Core model
 - **generate_sd35**: Choose from "sd3.5-large", "sd3.5-large-turbo", or "sd3.5-medium".
 
 Generate an image using Stable Diffusion 3.5
+- **remove_background**: Removes the background from an image
 - **generate_ultra_v2**: Best for final production assets.
 
 Generate a high-end photorealistic image
@@ -50,7 +51,6 @@ Transform an existing image based on a text prompt
 - **list_engines**: These IDs are required for v1 generation tools.
 
 List all available image generation engines on Stability AI
-- **remove_background**: Removes the background from an image
 - **text_to_image_v1**: Provide engine_id, prompt, width, and height. Width/Height must be multiples of 64.
 
 Generate an image from a text prompt using v1 engines

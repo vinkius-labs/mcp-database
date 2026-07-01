@@ -38,14 +38,14 @@ Connect your **New Relic** account to your AI agent and gain full visibility int
 ## Available Tools (10)
 - **get_apm_summary**: Get APM golden metrics
 - **get_dashboard**: Get dashboard configuration
-- **get_entity_details**: Get specific entity metadata
-- **get_me**: Get current user and account info
-- **list_accounts**: List accessible New Relic accounts
-- **list_alerts**: List active issues and alerts
 - **list_dashboards**: List New Relic dashboards
 - **list_entities**: List monitored entities
 - **list_service_levels**: List Service Level Indicators (SLOs)
 - **run_nrql**: Execute a NRQL query
+- **get_entity_details**: Get specific entity metadata
+- **get_me**: Get current user and account info
+- **list_accounts**: List accessible New Relic accounts
+- **list_alerts**: List active issues and alerts
 
 
 ## 💬 Prompt Examples

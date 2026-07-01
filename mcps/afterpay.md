@@ -35,15 +35,15 @@ Connect your **Afterpay (Clearpay)** merchant account to your AI agent to unlock
 
 
 ## Available Tools (5)
-- **get_afterpay_config**: Retrieve the minimum and maximum order transaction limits enforced by your Afterpay merchant account
-- **create_checkout**: The amount must fall within the configured limits.
-
-Initiate a secure Afterpay BNPL payment session token for a customer transaction
 - **list_payments**: Retrieve historical BNPL transactions and authorizations securely from your Afterpay account
 - **get_payment_details**: Retrieve detailed financial status, settlement info, and logs for a specific Afterpay order ID
 - **refund_payment**: Always verify the remaining balance before refunding.
 
 Initiate a full or partial refund to immediately credit a consumer against a previously captured Afterpay order
+- **get_afterpay_config**: Retrieve the minimum and maximum order transaction limits enforced by your Afterpay merchant account
+- **create_checkout**: The amount must fall within the configured limits.
+
+Initiate a secure Afterpay BNPL payment session token for a customer transaction
 
 
 ## 💬 Prompt Examples

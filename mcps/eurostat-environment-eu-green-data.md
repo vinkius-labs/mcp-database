@@ -22,9 +22,6 @@ Track the EU Green Deal progress with official environmental and energy statisti
 
 
 ## Available Tools (6)
-- **get_emissions**: Units: tonnes of CO2 equivalent. Breakdown by source sector (energy, agriculture, transport, industry, waste). Essential for EU Green Deal and Paris Agreement tracking.
-
-Get EU greenhouse gas emissions by country and sector
 - **get_energy_balance**: Production, imports, exports, gross consumption by energy source. The definitive view of a country energy system.
 
 Get EU complete energy balance by country
@@ -40,6 +37,9 @@ Get EU waste generation and treatment data
 - **get_agriculture_data**: Covers cereals, fruits, vegetables, wine grapes, olive oil. Essential for Common Agricultural Policy (CAP) analysis.
 
 Get EU agriculture production data
+- **get_emissions**: Units: tonnes of CO2 equivalent. Breakdown by source sector (energy, agriculture, transport, industry, waste). Essential for EU Green Deal and Paris Agreement tracking.
+
+Get EU greenhouse gas emissions by country and sector
 
 
 ## 💬 Prompt Examples

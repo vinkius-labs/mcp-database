@@ -33,8 +33,8 @@ Connect your **AwardWallet** business account to any AI agent and track your loy
 
 
 ## Available Tools (9)
-- **create_auth_url**: Generate an authorization URL for a user to link their AwardWallet account
 - **get_account_check**: Verify AwardWallet Business API connection
+- **create_auth_url**: Generate an authorization URL for a user to link their AwardWallet account
 - **get_account_details**: Get specific details for a loyalty account
 - **get_account_history**: Retrieve historical activity for a specific loyalty account
 - **get_user_accounts**: Retrieve loyalty account list for a specific user

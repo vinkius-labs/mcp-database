@@ -36,6 +36,9 @@ Perfect for **urban commuters**, **multimodal travelers**, **cyclists**, **pedes
 
 
 ## Available Tools (9)
+- **get_regions**: Each region has an ID, name, and coverage area. Use this first to verify your city is covered before planning trips. Supports major cities across North America, Europe, Australia, and Asia.
+
+List all available transit regions supported by TripGo
 - **get_arrivals**: Returns route names, origins, scheduled vs estimated arrival times, and delays. Use this to track incoming vehicles. Requires stop ID.
 
 Get upcoming arrivals to a transit stop
@@ -45,9 +48,6 @@ Get upcoming departures from a transit stop
 - **get_nearby_stops**: Returns stop IDs, names, coordinates, routes serving each stop, and distance from search point. Use this to find nearest transit options before planning trips.
 
 Find transit stops near a GPS coordinate
-- **get_regions**: Each region has an ID, name, and coverage area. Use this first to verify your city is covered before planning trips. Supports major cities across North America, Europe, Australia, and Asia.
-
-List all available transit regions supported by TripGo
 - **get_route_info**: Requires route ID. Use this to understand route coverage before planning trips.
 
 Get information about a specific transit route

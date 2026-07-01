@@ -34,14 +34,14 @@ Connect your AI agent to **Unkey**, the robust platform for issuing and managing
 
 
 ## Available Tools (8)
-- **create_api_key**: Create a new API key for your users
-- **revoke_api_key**: Permanently delete (revoke) an API key
+- **update_api_key**: Update an existing API key
+- **verify_api_key**: Verify if an API key is valid
 - **get_api_details**: Get detailed information for a specific API
 - **get_verification_analytics**: Retrieve usage analytics for your API keys
 - **list_apis**: Retrieve a list of all APIs in your Unkey project
 - **list_api_keys**: List all API keys associated with a specific API ID
-- **update_api_key**: Update an existing API key
-- **verify_api_key**: Verify if an API key is valid
+- **create_api_key**: Create a new API key for your users
+- **revoke_api_key**: Permanently delete (revoke) an API key
 
 
 ## 💬 Prompt Examples

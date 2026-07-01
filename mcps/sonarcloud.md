@@ -35,23 +35,23 @@ Stop digging through the SonarCloud UI just to see why an automated test or qual
 
 
 ## Available Tools (9)
-- **get_issue_details**: Retrieves details for a specific issue
-- **get_project_measures**: Requires project key and comma-separated metric keys.
-
-Retrieves quality measures for a specific project component
-- **get_analysis_status**: Retrieves the latest analysis status for a project
-- **get_quality_gate_status**: g., "OK", "ERROR").
-
-Retrieves the quality gate status for a project
-- **list_project_components**: Lists files and directories (components) within a project
-- **list_organizations**: Lists organizations for the current user
-- **search_issues**: Filter by component (project) key.
-
-Searches for code quality issues
 - **search_projects**: You can filter by organization key.
 
 Searches for projects in SonarCloud
 - **search_users**: Searches for users in the organization
+- **list_organizations**: Lists organizations for the current user
+- **get_analysis_status**: Retrieves the latest analysis status for a project
+- **get_quality_gate_status**: g., "OK", "ERROR").
+
+Retrieves the quality gate status for a project
+- **get_issue_details**: Retrieves details for a specific issue
+- **get_project_measures**: Requires project key and comma-separated metric keys.
+
+Retrieves quality measures for a specific project component
+- **search_issues**: Filter by component (project) key.
+
+Searches for code quality issues
+- **list_project_components**: Lists files and directories (components) within a project
 
 
 ## 💬 Prompt Examples

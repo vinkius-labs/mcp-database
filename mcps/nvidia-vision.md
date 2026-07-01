@@ -34,8 +34,6 @@ Connect **NVIDIA Vision** to any AI agent and unlock powerful image understandin
 
 
 ## Available Tools (9)
-- **image_captioning**: Generate a detailed caption for an image
-- **detect_objects**: Detect and list all objects in an image
 - **document_qa**: Works with scanned documents, forms, receipts.
 
 Ask questions about a document image (OCR + understanding)
@@ -44,6 +42,8 @@ Ask questions about a document image (OCR + understanding)
 Generate an image from a text prompt using Stable Diffusion
 - **visual_grounding**: Locate a specific object or phrase in an image
 - **image_segmentation**: Segment and identify all objects in an image
+- **image_captioning**: Generate a detailed caption for an image
+- **detect_objects**: Detect and list all objects in an image
 - **style_transfer**: Apply an artistic style to an image
 - **list_vision_models**: List available vision models on NVIDIA API Catalog
 - **visual_question_answering**: Provide a public image URL.

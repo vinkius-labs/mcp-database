@@ -30,6 +30,9 @@ Connect your **Cloudbeds** property to any AI agent and run your hotel from a si
 
 
 ## Available Tools (10)
+- **get_housekeeping**: For housekeeping management.
+
+Get housekeeping status
 - **list_reservations**: Filter by status: confirmed, checked_in, checked_out, cancelled. Core front-desk tool.
 
 List hotel reservations
@@ -45,9 +48,6 @@ Search hotel guests
 - **list_room_types**: With max occupancy, amenities, base rate, and room count.
 
 List room types
-- **get_housekeeping**: For housekeeping management.
-
-Get housekeeping status
 - **check_availability**: Essential for booking inquiries and revenue management.
 
 Check room availability

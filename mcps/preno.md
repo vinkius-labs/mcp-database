@@ -37,9 +37,6 @@ No more manual occupancy checks or missing guest details. Your AI acts as your d
 
 
 ## Available Tools (11)
-- **list_preno_agents**: List OTAs and agents
-- **list_preno_bookings**: List property bookings
-- **create_preno_booking**: Create a new booking
 - **create_preno_guest**: Create a new guest
 - **get_preno_booking**: Get booking details
 - **get_preno_guest**: Get guest details
@@ -50,6 +47,9 @@ List property guests
 - **list_preno_payments**: List financial payments
 - **list_preno_room_types**: List room categories
 - **check_preno_status**: Check API Status
+- **list_preno_agents**: List OTAs and agents
+- **list_preno_bookings**: List property bookings
+- **create_preno_booking**: Create a new booking
 
 
 ## 💬 Prompt Examples

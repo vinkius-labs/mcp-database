@@ -36,6 +36,7 @@ Connect your **Checkly** account to any AI agent and take full control of your a
 
 
 ## Available Tools (8)
+- **trigger_check_run**: Manually trigger a check to run immediately
 - **get_checkly_account_info**: Retrieve core account and organization metadata
 - **get_check_performance_metrics**: Retrieve performance metrics for a specific check
 - **get_check_details**: Get detailed information for a specific check
@@ -43,7 +44,6 @@ Connect your **Checkly** account to any AI agent and take full control of your a
 - **list_checkly_checks**: List all API and Browser checks
 - **list_check_groups**: List groups of checks
 - **list_checkly_heartbeats**: List all heartbeat (cron) monitors
-- **trigger_check_run**: Manually trigger a check to run immediately
 
 
 ## 💬 Prompt Examples

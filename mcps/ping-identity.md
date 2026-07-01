@@ -36,6 +36,9 @@ Connect your **Ping Identity** environment to any AI agent to streamline identit
 - **delete_user**: Revokes all current session tokens, nullifies application scopes, isolates SCIM directory references, and executes the formal deletion API.
 
 Hard delete a user identity and purge related credentials
+- **list_groups**: Allows mapping high-level RBAC scopes dynamically injected into ID tokens returned via SSO channels upon successful client authorization flows.
+
+List identity Groups utilized for aggregate permissions
 - **get_application**: Determines configured Implicit/Authorization Code grants, token lifespan definitions, embedded sign-on policies, and allowed callback URIs required for stringent redirection security mapping.
 
 Get configuration for a single federated Ping Identity application
@@ -44,9 +47,6 @@ Get configuration for a single federated Ping Identity application
 - **list_applications**: Crucial to verify application exposure footprint.
 
 List Web, Native or SPA apps federated under standard PingOne
-- **list_groups**: Allows mapping high-level RBAC scopes dynamically injected into ID tokens returned via SSO channels upon successful client authorization flows.
-
-List identity Groups utilized for aggregate permissions
 - **list_populations**: g., 'Contractors', 'Partners', 'B2B Clients') possessing inherently different default password complexities, independent password expiration parameters, and isolated self-service recovery scopes.
 
 List isolated Populations logically partitioning the Environment

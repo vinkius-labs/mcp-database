@@ -22,10 +22,10 @@ The Nozbe MCP server brings your team's task management directly to your AI agen
 - **get_task**: Retrieve details for a specific task
 - **get_team**: Retrieve details for a specific team
 - **list_comments**: Retrieve discussion comments for a task
-- **list_projects**: List all accessible projects
 - **list_tasks**: List all accessible tasks
 - **list_teams**: List teams you have access to
 - **update_task**: Edit a specific task
+- **list_projects**: List all accessible projects
 
 
 ## 💬 Prompt Examples

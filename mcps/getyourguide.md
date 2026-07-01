@@ -37,18 +37,18 @@ Connect your AI agent to the **GetYourGuide** global marketplace to automate tra
 
 
 ## Available Tools (12)
+- **check_activity_availability**: Check open slots
+- **search_by_destination**: Filter by city
+- **search_travel_activities**: Search tours/activities
+- **get_partner_details**: Get account identity
 - **get_booking_status**: Check booking details
 - **get_cart_details**: Get cart metadata
-- **check_activity_availability**: Check open slots
 - **get_activity_details**: Get tour metadata
 - **list_active_carts**: List shopping carts
 - **list_travel_destinations**: List supported cities
-- **search_by_destination**: Filter by city
-- **search_travel_activities**: Search tours/activities
 - **cancel_travel_booking**: Cancel a booking
 - **verify_api_connection**: Check connection
 - **create_travel_booking**: Book an activity
-- **get_partner_details**: Get account identity
 
 
 ## 💬 Prompt Examples

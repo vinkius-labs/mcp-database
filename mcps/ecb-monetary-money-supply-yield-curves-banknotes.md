@@ -20,18 +20,18 @@ Eurozone monetary data.
 
 
 ## Available Tools (4)
-- **get_monetary_aggregate**: M1 = notes, coins + overnight deposits. M2 = M1 + deposits up to 2 years. M3 = M2 + repos + money market funds + debt securities up to 2 years. M3 is the ECB's primary monetary aggregate for policy analysis.
-
-Get eurozone monetary aggregates — M1, M2, M3 money supply
-- **get_yield_curve**: AAA-rated or all government bonds. Maturities from 3 months to 30 years. The yield curve shape is a key indicator of economic expectations.
-
-Get the eurozone government bond yield curve for a specific maturity
 - **get_yield_curve_snapshot**: Shows the current shape of the eurozone yield curve — normal (upward), flat, or inverted.
 
 Get a full yield curve snapshot — all maturities at the latest date
 - **get_banknotes**: Covers all denominations from €5 to €500. Monthly data from the start of the euro.
 
 Get eurozone banknotes in circulation statistics
+- **get_monetary_aggregate**: M1 = notes, coins + overnight deposits. M2 = M1 + deposits up to 2 years. M3 = M2 + repos + money market funds + debt securities up to 2 years. M3 is the ECB's primary monetary aggregate for policy analysis.
+
+Get eurozone monetary aggregates — M1, M2, M3 money supply
+- **get_yield_curve**: AAA-rated or all government bonds. Maturities from 3 months to 30 years. The yield curve shape is a key indicator of economic expectations.
+
+Get the eurozone government bond yield curve for a specific maturity
 
 
 ## 💬 Prompt Examples

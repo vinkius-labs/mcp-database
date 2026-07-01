@@ -36,11 +36,7 @@ Your AI acts as a dedicated sales analyst, helping you identify what separates y
 
 
 ## Available Tools (12)
-- **get_account**: Get details for a specific account
-- **get_call_media**: Get the media/recording details for a call
 - **get_call**: Get details for a specific call
-- **get_interaction_stats**: Get aggregated interaction statistics
-- **get_transcript**: Retrieve the transcript of a call
 - **get_user**: Get details for a specific user
 - **list_accounts**: List CRM accounts linked in Gong
 - **list_calls**: List Gong calls
@@ -48,6 +44,10 @@ Your AI acts as a dedicated sales analyst, helping you identify what separates y
 - **list_trackers**: List configured trackers (keywords/phrases)
 - **list_users**: List Gong users
 - **search_calls**: Search for calls with complex filters
+- **get_account**: Get details for a specific account
+- **get_call_media**: Get the media/recording details for a call
+- **get_interaction_stats**: Get aggregated interaction statistics
+- **get_transcript**: Retrieve the transcript of a call
 
 
 ## 💬 Prompt Examples
