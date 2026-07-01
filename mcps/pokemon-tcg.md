@@ -33,14 +33,6 @@ Connect to the comprehensive **Pokemon TCG API** and turn your AI agent into a m
 
 
 ## Available Tools (8)
-- **get_card**: Get details for a specific Pokemon card by ID
-- **get_set**: Get details for a specific Pokemon card set by ID
-- **list_cards**: Use the "q" parameter to search (e.g., "name:charizard").
-
-List Pokemon cards with optional search and pagination
-- **list_rarities**: g., Rare Holo, Uncommon).
-
-List all card rarities
 - **list_sets**: Use the "q" parameter to search (e.g., "series:sword").
 
 List Pokemon card sets with optional search and pagination
@@ -53,6 +45,14 @@ List all card supertypes
 - **list_types**: g., Fire, Water, Grass).
 
 List all Pokemon energy types
+- **get_card**: Get details for a specific Pokemon card by ID
+- **get_set**: Get details for a specific Pokemon card set by ID
+- **list_cards**: Use the "q" parameter to search (e.g., "name:charizard").
+
+List Pokemon cards with optional search and pagination
+- **list_rarities**: g., Rare Holo, Uncommon).
+
+List all card rarities
 
 
 ## 💬 Prompt Examples
