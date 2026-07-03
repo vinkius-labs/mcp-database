@@ -42,9 +42,6 @@ Stop context-switching to the Datadog dashboard every time an alert fires. Your 
 - **create_monitor**: Requires the monitor type (metric, anomaly, service check, event, log, process, rum, synthetics), a query string (e.g. "avg(last_5m):avg:system.cpu.user{host:myhost} > 80"), a notification message (using @user, @slack, @pagerduty) and a name. Optionally set tags, priority, renotify interval and threshold windows.
 
 Create a new Datadog monitor
-- **list_dashboards**: Use to discover available dashboards before opening a specific one.
-
-List all Datadog dashboards
 - **get_dashboard**: Provide the dashboard ID.
 
 Get details for a specific Datadog dashboard
@@ -78,6 +75,9 @@ List Datadog Synthetics tests
 - **list_teams**: Teams group users for ownership of monitors, dashboards, SLOs and incidents. Each team has a name, handle, description and user membership list.
 
 List Datadog teams
+- **list_dashboards**: Use to discover available dashboards before opening a specific one.
+
+List all Datadog dashboards
 - **unmute_monitor**: Provide the monitor ID. Optionally set a scope to unmute only specific sub-alerts.
 
 Unmute a Datadog monitor

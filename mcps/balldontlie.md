@@ -36,7 +36,6 @@ Equip your AI agent with the most accessible NBA intelligence via **BallDontLie*
 
 
 ## Available Tools (8)
-- **get_game_details**: Get game details
 - **get_player_details**: Get player details
 - **get_team_details**: Get team details
 - **list_games**: List NBA games
@@ -44,6 +43,7 @@ Equip your AI agent with the most accessible NBA intelligence via **BallDontLie*
 - **list_player_stats**: List player statistics
 - **list_teams**: List all NBA teams
 - **get_season_averages**: Get season averages
+- **get_game_details**: Get game details
 
 
 ## 💬 Prompt Examples

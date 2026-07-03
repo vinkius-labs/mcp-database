@@ -48,7 +48,6 @@ Retrieve full funding history, rounds, and participating investors
 - **create_monitor_feed**: Create a new monitor feed for company changes
 - **get_customer_listing**: Get a list of probable customers, investors, and partner platforms
 - **get_employee_profile**: Enrich professional profiles from work emails or name/employer combinations
-- **get_credit_balance**: Check your remaining API credit balance
 - **get_monitor_rss**: Get the RSS feed for a specific monitor feed
 - **list_monitor_feeds**: List all active monitor feeds
 - **lookup_work_email**: Best-effort lookup of a public work email from a name and domain
@@ -56,6 +55,7 @@ Retrieve full funding history, rounds, and participating investors
 - **get_similar_employees**: Repeat queries are served free from cache.
 
 Find counterparts in similar roles at competing companies
+- **get_credit_balance**: Check your remaining API credit balance
 
 
 ## 💬 Prompt Examples

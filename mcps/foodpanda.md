@@ -38,6 +38,9 @@ No more logging into multiple vendor portals or manually updating menus. Your AI
 
 
 ## Available Tools (13)
+- **update_vendor_status**: g., open, closed, busy).
+
+Update vendor status on Foodpanda
 - **add_catalog_products**: Add products to chain catalog on Foodpanda
 - **get_catalog_job**: Get catalog job status on Foodpanda
 - **export_catalog**: Export vendor catalog on Foodpanda
@@ -46,9 +49,6 @@ No more logging into multiple vendor portals or manually updating menus. Your AI
 - **get_promotion_job**: Get promotion job status on Foodpanda
 - **update_vendor_catalog**: Update vendor catalog on Foodpanda
 - **update_order**: Update an order on Foodpanda
-- **update_vendor_status**: g., open, closed, busy).
-
-Update vendor status on Foodpanda
 - **upsert_promotion**: Create or update a promotion on Foodpanda
 - **get_vendor_catalog**: Get vendor catalog from Foodpanda
 - **get_vendor_categories**: Get vendor categories from Foodpanda

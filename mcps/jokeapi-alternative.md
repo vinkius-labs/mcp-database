@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire entertainment research and humo
 
 
 ## Available Tools (5)
-- **check_api_status**: Check if the JokeAPI service is operational
 - **get_jokes_by_category**: Get jokes from a specific category (e.g., Programming, Misc, Pun)
 - **get_random_joke**: Get a random joke from any category
 - **list_joke_categories**: List all available joke categories in the database
 - **list_joke_blacklist_flags**: List all available flags for blacklisting content (e.g., nsfw, religious)
+- **check_api_status**: Check if the JokeAPI service is operational
 
 
 ## 💬 Prompt Examples

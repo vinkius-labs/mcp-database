@@ -34,12 +34,6 @@ Connect your **Last.fm** account to any AI agent and take control of your music 
 
 
 ## Available Tools (5)
-- **update_now_playing**: fm that a user has started listening to a track. Requires session key.
-
-Update Now Playing status on Last.fm
-- **scrobble_track**: Requires session key. Track must be > 30s and played for at least half its duration or 4 mins.
-
-Scrobble a track to Last.fm
 - **get_tag_info**: fm.
 
 Get metadata for a tag
@@ -49,6 +43,12 @@ Get metadata for a track
 - **get_user_info**: fm user.
 
 Get information about a user profile
+- **update_now_playing**: fm that a user has started listening to a track. Requires session key.
+
+Update Now Playing status on Last.fm
+- **scrobble_track**: Requires session key. Track must be > 30s and played for at least half its duration or 4 mins.
+
+Scrobble a track to Last.fm
 
 
 ## 💬 Prompt Examples

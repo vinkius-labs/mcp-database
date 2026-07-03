@@ -34,13 +34,11 @@ Connect your **Kraken** account to any AI agent to monitor the cryptocurrency ma
 
 
 ## Available Tools (28)
-- **futures_get_history**: Get Trade History (Futures)
 - **futures_get_orderbook**: Get Orderbook (Futures)
 - **futures_get_tickers**: Get Tickers (Futures)
 - **futures_send_order**: Send Order (Futures)
 - **spot_add_order**: Add Order
 - **spot_cancel_all_orders_after**: Cancel All Orders After X
-- **spot_cancel_all**: Cancel All Orders
 - **spot_cancel_order**: Cancel Order
 - **spot_get_asset_pairs**: Get Tradable Asset Pairs
 - **spot_get_assets**: Get Asset Info
@@ -62,6 +60,8 @@ Connect your **Kraken** account to any AI agent to monitor the cryptocurrency ma
 - **spot_get_websockets_token**: Get WebSockets Token
 - **spot_query_orders**: Query Orders Info
 - **spot_query_trades**: Query Trades Info
+- **futures_get_history**: Get Trade History (Futures)
+- **spot_cancel_all**: Cancel All Orders
 
 
 ## 💬 Prompt Examples

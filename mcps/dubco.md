@@ -34,16 +34,16 @@ Connect your AI agent to **Dub.co** (formerly Dub.sh), the modern link managemen
 
 
 ## Available Tools (10)
-- **create_short_link**: Create a new short link
-- **delete_short_link**: Permanently delete a short link
 - **get_workspace_analytics**: Retrieve aggregate analytics for the authenticated workspace
-- **get_link_details**: Retrieve detailed information for a specific short link
 - **get_url_metatags**: Retrieve Open Graph metatags for a specific URL
 - **list_domains**: Retrieve a list of all domains in the current workspace
 - **list_links**: Retrieve a list of short links for the authenticated workspace
 - **list_tags**: Retrieve a list of all tags in the current workspace
 - **list_workspaces**: Retrieve a list of all workspaces the user has access to
 - **update_short_link**: Update an existing short link
+- **create_short_link**: Create a new short link
+- **delete_short_link**: Permanently delete a short link
+- **get_link_details**: Retrieve detailed information for a specific short link
 
 
 ## 💬 Prompt Examples

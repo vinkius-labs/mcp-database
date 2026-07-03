@@ -28,13 +28,13 @@ Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline 
 
 
 ## Available Tools (7)
-- **pd_create_lead**: Create a lead
-- **pd_delete_lead**: Delete a lead
-- **pd_get_lead**: Get lead details
 - **pd_lead_labels**: List lead labels
 - **pd_list_leads**: List leads in the inbox
 - **pd_lead_sources**: List lead sources
 - **pd_update_lead**: Update a lead
+- **pd_create_lead**: Create a lead
+- **pd_delete_lead**: Delete a lead
+- **pd_get_lead**: Get lead details
 
 
 ## 💬 Prompt Examples

@@ -34,12 +34,9 @@ Grant your conversational AI (like Claude or Cursor) the power of a dedicated Ge
 
 
 ## Available Tools (15)
-- **list_contacts**: Lists all contacts (customers, suppliers) in sevDesk
-- **get_contact**: Retrieves details for a specific contact
 - **create_contact**: Category 3 for customers, 4 for suppliers.
 
 Creates a new contact (customer or supplier) in sevDesk
-- **list_invoices**: Lists all invoices with embedded contact data
 - **get_invoice**: Retrieves details for a specific invoice, including line items and tax
 - **list_credit_notes**: Lists all credit notes
 - **get_credit_note**: Retrieves details for a specific credit note
@@ -51,6 +48,9 @@ Creates a new contact (customer or supplier) in sevDesk
 - **create_part**: Creates a new part or service in the catalog
 - **list_accounting_types**: Lists all accounting types (Chart of Accounts)
 - **list_bank_accounts**: Lists company bank accounts
+- **list_contacts**: Lists all contacts (customers, suppliers) in sevDesk
+- **get_contact**: Retrieves details for a specific contact
+- **list_invoices**: Lists all invoices with embedded contact data
 
 
 ## 💬 Prompt Examples

@@ -30,13 +30,13 @@ Connect your **Porsline** account to any AI agent and simplify your survey creat
 ## Available Tools (12)
 - **create_survey**: Create a survey
 - **duplicate_survey**: Duplicate a survey
-- **export_responses**: Export responses
 - **get_report**: Get survey report
 - **get_response**: Get response details
 - **get_survey**: Get survey details
-- **list_folders**: List folders
 - **list_questions**: List questions
 - **list_responses**: List responses
+- **export_responses**: Export responses
+- **list_folders**: List folders
 - **list_surveys**: List surveys
 - **check_porsline_status**: Verify connectivity
 - **create_folder**: Create a folder

@@ -35,9 +35,9 @@ Equip your AI agent with a source of laughter via the **JokeAPI** MCP server. Th
 
 
 ## Available Tools (3)
-- **list_joke_categories**: List joke categories
 - **get_joke**: Get a random joke
 - **list_jokes**: Get multiple jokes
+- **list_joke_categories**: List joke categories
 
 
 ## 💬 Prompt Examples

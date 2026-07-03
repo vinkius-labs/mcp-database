@@ -33,12 +33,12 @@ Connect **Lusha** to your AI agent and access verified B2B contact data for your
 
 
 ## Available Tools (6)
-- **find_by_linkedin**: Find by LinkedIn URL
 - **get_credits**: Get credit balance
-- **search_contacts**: Search contacts
 - **find_person**: Find person
 - **find_company**: Find company
 - **bulk_enrich**: Bulk enrich emails
+- **find_by_linkedin**: Find by LinkedIn URL
+- **search_contacts**: Search contacts
 
 
 ## 💬 Prompt Examples

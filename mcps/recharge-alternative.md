@@ -66,11 +66,11 @@ Delete an address
 - **get_address**: Retrieve an address
 - **get_async_batch**: Retrieve an async batch
 - **get_charge**: Retrieve a charge
-- **get_checkout**: Retrieve a checkout
 - **get_checkout_shipping_rates**: Retrieve available shipping rates for a checkout
-- **get_customer**: Retrieve a customer
+- **get_checkout**: Retrieve a checkout
 - **get_customer_credit_summary**: Retrieve credit balance for a customer
 - **get_customer_delivery_schedule**: Retrieve projected deliveries for a customer
+- **get_customer**: Retrieve a customer
 - **get_metafield**: Retrieve a metafield
 - **get_order**: Retrieve an order
 - **get_payment_method**: Retrieve a payment method

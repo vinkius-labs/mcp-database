@@ -36,8 +36,6 @@ No more manual searching through marketplace tabs. Your AI acts as a dedicated f
 
 
 ## Available Tools (35)
-- **cancel_order**: Off-chain cancellation of an order
-- **generate_listing_fulfillment**: Get data to buy an NFT
 - **generate_offer_fulfillment**: Get data to accept an offer
 - **get_account**: Get an OpenSea account profile
 - **get_best_listing_nft**: Get the lowest price listing for a specific NFT
@@ -71,6 +69,8 @@ No more manual searching through marketplace tabs. Your AI acts as a dedicated f
 - **post_offer**: Create an offer on a single item
 - **post_swap_execute**: Get executable transaction data for a swap
 - **search**: Search across collections, NFTs, tokens, and accounts
+- **cancel_order**: Off-chain cancellation of an order
+- **generate_listing_fulfillment**: Get data to buy an NFT
 
 
 ## 💬 Prompt Examples

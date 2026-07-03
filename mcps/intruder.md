@@ -14,6 +14,9 @@ Empower your AI agents to manage your cybersecurity posture with Intruder.io. Th
 
 
 ## Available Tools (10)
+- **list_licences**: Useful for verifying subscription status and capacity.
+
+Lists all account licences
 - **get_account**: Use to verify identity and account settings.
 
 Gets your Intruder account details
@@ -32,9 +35,6 @@ Lists all configured cloud integrations (AWS, Azure, Google Cloud)
 - **list_issues**: Returns issue titles, severity levels (Low, Medium, High, Critical), and status. Use this as the primary tool for security posture auditing.
 
 Lists all identified vulnerability issues
-- **list_licences**: Useful for verifying subscription status and capacity.
-
-Lists all account licences
 - **list_scans**: Includes scan types, timestamps, and IDs. Essential for tracking scan frequency and monitoring ongoing security checks.
 
 Lists all vulnerability scans

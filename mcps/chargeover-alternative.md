@@ -40,10 +40,10 @@ No more manual entry into billing tables or digging through subscription lists. 
 - **create_billing_customer**: Create a new customer
 - **create_billing_invoice**: Create a new invoice
 - **create_subscription**: Create a new subscription
-- **list_billing_customers**: List all customers
 - **list_billing_invoices**: List all invoices
 - **list_subscriptions**: List all subscriptions (packages)
 - **list_billing_transactions**: List all transactions
+- **list_billing_customers**: List all customers
 
 
 ## 💬 Prompt Examples

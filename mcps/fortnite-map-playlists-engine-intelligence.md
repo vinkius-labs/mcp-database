@@ -33,16 +33,16 @@ Equip your AI agent with the structural intelligence of the Fortnite ecosystem v
 
 
 ## Available Tools (8)
+- **get_current_map**: Get the current Fortnite map with POIs
+- **get_playlist_details**: Get details for a specific playlist/gamemode
+- **get_save_the_world_news**: Get current Save the World news
+- **list_all_playlists**: List all available Fortnite playlists
 - **get_aes_encryption_keys**: Useful for datamining.
 
 Get encryption keys for game files
 - **get_battle_royale_news**: Get current Battle Royale news
 - **get_banner_colors**: List all banner color options
 - **get_profile_banners**: List all Fortnite profile banner icons
-- **get_current_map**: Get the current Fortnite map with POIs
-- **get_playlist_details**: Get details for a specific playlist/gamemode
-- **get_save_the_world_news**: Get current Save the World news
-- **list_all_playlists**: List all available Fortnite playlists
 
 
 ## 💬 Prompt Examples

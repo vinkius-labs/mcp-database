@@ -35,7 +35,6 @@ Empower your AI agent to orchestrate your entire productivity ecosystem with **T
 
 
 ## Available Tools (10)
-- **close_task**: Complete a task
 - **create_task**: Create a new task
 - **delete_task**: Delete a task
 - **get_project**: Get details for a specific project
@@ -47,6 +46,7 @@ Empower your AI agent to orchestrate your entire productivity ecosystem with **T
 
 List Todoist tasks
 - **update_task**: Update an existing task
+- **close_task**: Complete a task
 
 
 ## 💬 Prompt Examples

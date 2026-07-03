@@ -38,9 +38,6 @@ Connect to **7digital** and access a global music catalog through natural conver
 
 
 ## Available Tools (11)
-- **get_track_preview**: Returns the preview URL, content type (audio/mpeg) and duration. Use the track ID from search_track or get_release_tracks results.
-
-Get a preview/stream URL for a specific track
 - **add_to_basket**: Returns the updated basket contents with prices. Use the release ID from search_release results.
 
 Add a release to your 7digital shopping basket
@@ -62,6 +59,9 @@ Get detailed info for a specific album release
 - **get_release_tracks**: Returns track titles, artists, durations, track numbers and explicit content flags. Use the release ID from search_release or get_release_details.
 
 Get all tracks from a specific album release
+- **get_track_preview**: Returns the preview URL, content type (audio/mpeg) and duration. Use the track ID from search_track or get_release_tracks results.
+
+Get a preview/stream URL for a specific track
 - **search_artist**: Returns artist names, number of releases and 7digital URLs. Use country code (e.g. "US", "GB", "DE") for region-specific results.
 
 Search for music artists by name

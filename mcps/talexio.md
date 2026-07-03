@@ -35,12 +35,12 @@ Connect your **Talexio** HR platform account to any AI agent and simplify how yo
 
 
 ## Available Tools (6)
-- **get_employee_details**: Get employee details
 - **list_employees**: List all employees
 - **list_job_openings**: List all active job openings
 - **list_leave_requests**: List all leave requests
 - **list_payslips**: List all generated payslips
 - **list_training_courses**: List all available training courses
+- **get_employee_details**: Get employee details
 
 
 ## 💬 Prompt Examples

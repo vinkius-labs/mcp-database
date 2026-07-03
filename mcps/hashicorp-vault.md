@@ -63,7 +63,6 @@ Connect your **HashiCorp Vault** instance to any AI agent to automate secrets ma
 - **initialize_vault**: Initialize a new Vault cluster
 - **issue_pki_cert**: Issue a new PKI certificate
 - **kubernetes_login**: Login using Kubernetes authentication
-- **list_acl_policies**: List ACL policies
 - **list_audit_devices**: List enabled audit devices
 - **list_auth_methods**: List enabled auth methods
 - **list_kv_secrets**: List secrets in a KV v2 engine path
@@ -84,6 +83,7 @@ Connect your **HashiCorp Vault** instance to any AI agent to automate secrets ma
 - **unseal_vault**: Unseal the Vault with a key share
 - **userpass_login**: Login using Username and Password
 - **write_kv_secret**: Create or update a secret in KV v2 engine
+- **list_acl_policies**: List ACL policies
 
 
 ## 💬 Prompt Examples

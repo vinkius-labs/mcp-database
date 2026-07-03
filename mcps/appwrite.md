@@ -41,10 +41,10 @@ Empower your AI agent to orchestrate your entire backend infrastructure with **A
 - **list_collections**: List collections in a database
 - **list_databases**: List all databases
 - **list_documents**: List documents in a collection
-- **list_function_executions**: List function executions
 - **list_bucket_files**: List files in a bucket
 - **list_functions**: List cloud functions
 - **list_users**: List project users
+- **list_function_executions**: List function executions
 
 
 ## 💬 Prompt Examples

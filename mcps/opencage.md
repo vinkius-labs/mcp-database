@@ -37,6 +37,7 @@ Give your AI agent precise geolocation superpowers with **OpenCage Geocoding**. 
 
 
 ## Available Tools (10)
+- **reverse_fetch_time_annotations**: Irreversibly vaporize explicit validation limits extracting UTC logic
 - **geocode_basic**: Identify bounded routing spaces inside the Headless OpenCage Engine
 - **geocode_bounding_box**: Inspect deep internal arrays mitigating specific Polygon domains
 - **geocode_high_confidence**: Dispatch an automated validation check routing explicit Score limits
@@ -45,7 +46,6 @@ Give your AI agent precise geolocation superpowers with **OpenCage Geocoding**. 
 - **geocode_all_duplicate_results**: Retrieve the exact structural matching verifying Delivery alternatives
 - **geocode_no_record_privacy**: Provision a highly-available JSON Payload generating secure mappings
 - **reverse_basic**: Enumerate explicitly attached structured rules exporting active GPS pins
-- **reverse_fetch_time_annotations**: Irreversibly vaporize explicit validation limits extracting UTC logic
 - **reverse_fast_no_annotations**: Identify precise active arrays spanning native Location limits faster
 
 

@@ -72,8 +72,8 @@ Connect your **Zoho Billing** account to any AI agent to streamline your recurri
 - **get_contact_person**: Retrieve a contact person
 - **get_coupon**: Retrieve a coupon
 - **get_credit_note**: Retrieve a credit note
-- **get_customer**: Retrieve a customer
 - **get_customer_by_reference**: Retrieve a customer using CRM reference
+- **get_customer**: Retrieve a customer
 - **get_estimate**: Retrieve a quote/estimate
 - **get_event**: Retrieve an event
 - **get_hosted_page**: Retrieve hosted page details

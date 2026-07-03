@@ -39,7 +39,6 @@ Connect your **Directus** instance to any AI agent and manage your content datab
 - **check_directus_status**: Verify connectivity
 - **create_item**: Create an item
 - **delete_item**: Delete an item
-- **get_collection**: Get collection details
 - **get_file**: Get file details
 - **get_item**: Get item details
 - **get_me**: Get current user
@@ -52,6 +51,7 @@ Connect your **Directus** instance to any AI agent and manage your content datab
 - **list_users**: List users
 - **search_items**: Search items
 - **update_item**: Update an item
+- **get_collection**: Get collection details
 
 
 ## 💬 Prompt Examples

@@ -36,11 +36,6 @@ No more manual searching for royalty-free or independent music. Your AI acts as 
 
 
 ## Available Tools (25)
-- **get_album_reviews**: Browse and filter community album reviews
-- **get_album_tracks**: Retrieve tracks belonging to specific albums
-- **search_albums**: Search and filter albums
-- **get_artist_albums**: Retrieve albums for specific artists
-- **get_artist_locations**: Filter artists by geographical location
 - **get_artist_tracks**: Retrieve tracks for specific artists
 - **search_artists**: Search and filter artists
 - **autocomplete_search**: Prefix-based search for tracks, albums, artists, and tags
@@ -61,6 +56,11 @@ No more manual searching for royalty-free or independent music. Your AI acts as 
 - **get_user_artists**: Retrieve artists a user has interacted with
 - **get_user_tracks**: Retrieve tracks a user has interacted with
 - **get_users**: Lookup user profile information
+- **get_album_reviews**: Browse and filter community album reviews
+- **get_album_tracks**: Retrieve tracks belonging to specific albums
+- **search_albums**: Search and filter albums
+- **get_artist_albums**: Retrieve albums for specific artists
+- **get_artist_locations**: Filter artists by geographical location
 
 
 ## 💬 Prompt Examples

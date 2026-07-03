@@ -14,6 +14,7 @@ The Udemy MCP Server brings the world's largest selection of courses into your A
 
 
 ## Available Tools (6)
+- **courses**: Get details of a specific Udemy course by ID
 - **course_reviews**: Provide course ID.
 
 List reviews for a specific public Udemy course
@@ -23,7 +24,6 @@ List reviews for a specific public Udemy course
 - **instructor_reviews**: Useful for feedback analysis.
 
 List reviews for all courses taught by the authenticated instructor
-- **courses**: Get details of a specific Udemy course by ID
 
 
 ## 💬 Prompt Examples

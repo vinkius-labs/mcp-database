@@ -35,6 +35,7 @@ Connect your **Bitly** account to any AI agent and orchestrate your link managem
 
 
 ## Available Tools (10)
+- **list_groups**: List all Bitly groups
 - **shorten_url**: Optionally set custom domain and title.
 
 Shorten a URL
@@ -44,7 +45,6 @@ Shorten a URL
 - **get_clicks**: Get click analytics for a link
 - **get_countries**: Get click analytics by country
 - **get_referrers**: Get referrer analytics
-- **list_groups**: List all Bitly groups
 - **list_bitlinks**: List links in a group
 - **get_user**: Get account info
 

@@ -53,7 +53,6 @@ Generate a model response for a given chat conversation
 - **get_file**: Retrieve metadata for a specific file
 - **get_fine_tune**: Get details of a specific fine-tuning job
 - **create_image_generation**: Generate images from text prompts
-- **list_batches**: List all batch jobs
 - **list_endpoints**: List all dedicated endpoints
 - **list_files**: List all uploaded files
 - **list_fine_tune_checkpoints**: List checkpoints for a fine-tuning job
@@ -64,6 +63,7 @@ Generate a model response for a given chat conversation
 - **update_endpoint**: Update a dedicated endpoint (Start/Stop/Scale)
 - **upload_file**: Upload a file for fine-tuning, evals, or batch inference
 - **create_video_generation**: Create videos from text or image prompts
+- **list_batches**: List all batch jobs
 
 
 ## 💬 Prompt Examples

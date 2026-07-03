@@ -38,13 +38,13 @@ Empower your AI agent to orchestrate your entire voice-to-intelligence ecosystem
 - **delete_file**: Delete a Plaud recording
 - **get_download_url**: Get MP3 download URL for a recording
 - **get_file_detail**: Get details for a specific recording
-- **get_me**: Get Plaud account details
 - **get_summary**: Get AI summary for a recording
 - **get_transcript**: Get transcription for a recording
 - **list_files**: List all Plaud recordings
 - **list_folders**: List all recording folders
 - **list_tags**: List all recording tags
 - **update_file**: Update recording metadata
+- **get_me**: Get Plaud account details
 
 
 ## 💬 Prompt Examples

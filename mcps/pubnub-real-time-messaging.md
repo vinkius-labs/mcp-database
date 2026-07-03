@@ -35,14 +35,8 @@ Connect your **PubNub** account to any AI agent to orchestrate real-time communi
 
 
 ## Available Tools (31)
-- **admin_create_app**: Create a new PubNub app (Admin API)
-- **admin_get_metrics**: Get usage metrics (Admin API)
-- **admin_list_apps**: List all PubNub apps (Admin API)
-- **admin_list_keysets**: List all keysets (Admin API)
-- **delete_file**: Delete a file from a channel
 - **delete_message_history**: Delete message history for channels
 - **generate_file_upload_url**: Generate a file upload URL
-- **get_all_channels**: Get all channels (App Context)
 - **get_all_users**: Get all users (App Context)
 - **get_channel**: Get a specific channel (App Context)
 - **get_file_url**: Get a file URL
@@ -66,6 +60,12 @@ Connect your **PubNub** account to any AI agent to orchestrate real-time communi
 - **set_channel**: Set or update a channel (App Context)
 - **set_memberships**: Set or update memberships for a user (App Context)
 - **set_user**: Set or update a user (App Context)
+- **admin_create_app**: Create a new PubNub app (Admin API)
+- **admin_get_metrics**: Get usage metrics (Admin API)
+- **admin_list_apps**: List all PubNub apps (Admin API)
+- **admin_list_keysets**: List all keysets (Admin API)
+- **delete_file**: Delete a file from a channel
+- **get_all_channels**: Get all channels (App Context)
 
 
 ## 💬 Prompt Examples

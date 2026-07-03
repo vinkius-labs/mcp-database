@@ -44,8 +44,8 @@ No more wrestling with hundreds of open browser tabs to find out who is assigned
 - **list_projects**: List projects in a workspace
 - **search_tasks**: Search for tasks in a workspace with filters
 - **list_sections**: List sections inside an Asana project
-- **list_tasks**: List tasks in an Asana project
 - **update_task**: Update an existing Asana task
+- **list_tasks**: List tasks in an Asana project
 - **list_workspaces**: List Asana workspaces
 
 

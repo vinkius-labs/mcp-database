@@ -36,13 +36,13 @@ Connect your **123FormBuilder** account to any AI agent and simplify how you col
 - **remove_entry**: Delete submission
 - **get_api_status**: Check connection
 - **get_form_details**: Get form info
-- **get_entry_details**: Read submission data
 - **list_form_fields**: Get form structure
 - **list_active_forms**: List account forms
 - **list_form_entries**: Get submissions
 - **list_form_webhooks**: Get event endpoints
 - **test_formbuilder_auth**: Verify credentials
 - **update_form_info**: Modify form name
+- **get_entry_details**: Read submission data
 
 
 ## 💬 Prompt Examples
