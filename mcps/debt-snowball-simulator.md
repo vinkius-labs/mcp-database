@@ -1,0 +1,102 @@
+# Debt Snowball Simulator MCP Server
+
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/debt-snowball-simulator)
+[![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
+
+## Overview
+
+**Category:** [productivity](../categories/productivity.md)
+
+Simulate debt repayment by prioritizing the smallest balances to build momentum.
+
+## Description
+The Debt Snowball Simulator allows you to visualize your path to financial freedom. By focusing on paying off debts with the lowest balances first, this tool helps create psychological momentum. Using the `simulate_snowball` tool, you can generate a month-by-month ledger of your progress, see how much interest you will save, and understand exactly when each debt will be extinguished. It calculates interest accrual, applies minimum payments, and rolls over surplus funds to the next target automatically.
+
+
+## Available Tools (1)
+- **simulate_snowball**: Simulate a debt repayment schedule using the Debt Snowball method
+
+
+## 💬 Prompt Examples
+
+Here are some examples of how you can interact with the **Debt Snowball Simulator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+
+**👤 You:**
+> "Simulate my debt payoff: I have a credit card with $500 at 20% APR (min $25) and a personal loan of $2000 at 10% APR (min $50). I can pay an extra $100 per month."
+
+**🤖 AI Agent:**
+> The simulation shows your $500 credit card will be paid off in 3 months, and the $2000 loan will follow shortly after. Total interest paid: $142.50.
+
+---
+
+**👤 You:**
+> "How much extra monthly payment do I need to pay off my $1200 medical bill (15% APR, $40 min) in 6 months?"
+
+**🤖 AI Agent:**
+> To clear the $1200 balance in exactly 6 months, you would need to apply an additional $158.42 per month on top of your $40 minimum payment.
+
+---
+
+**👤 You:**
+> "Show me a repayment plan for: [{'name': 'Store Card', 'balance': 300, 'apr': 25, 'minPayment': 20}, {'name': 'Car Loan', 'balance': 5000, 'apr': 5, 'minPayment': 250}] with $100 extra monthly."
+
+**🤖 AI Agent:**
+> Your Store Card will be extinguished in month 2. Following that, your Car Loan payment will increase to $370 per month, leading to a full payoff by month 16.
+
+
+## ❓ FAQ
+
+**Q: How does the Debt Snowball method work?**
+The method prioritizes debts with the smallest balances. Once a debt is paid off, its minimum payment and any extra funds are rolled over to the next smallest debt.
+
+**Q: What information do I need to provide?**
+You need a JSON array of your debts, including the name, current balance, APR, and minimum monthly payment, along with any extra monthly payment you can afford.
+
+**Q: Can I use this with Claude or Cursor?**
+Yes, you can connect this simulator to Claude Desktop, Cursor, VS Code, Windsurf, and any other MCP-compatible client via Vinkius Edge.
+
+
+## Installation & Usage
+
+This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
+
+1. View installation instructions and explore the server: [https://vinkius.com/mcp/debt-snowball-simulator](https://vinkius.com/mcp/debt-snowball-simulator)
+2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
+
+### Claude.ai
+Follow the steps below to connect in seconds.
+
+1. Open [claude.ai](https://claude.ai) and sign in to your account.
+2. Go to **Customize → Connectors**.
+3. Click the **+** button and select "Add custom connector".
+4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
+5. Click the **+** button in any chat and enable **Debt Snowball Simulator** under Connectors.
+
+### Cursor
+Follow the steps below to connect in seconds.
+
+1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
+2. Click **+ Add new MCP Server**.
+3. Set Type to "SSE" (or "streamable HTTP"), enter `debt-snowball-simulator` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
+4. Click **Save** — Cursor will connect and list all **Debt Snowball Simulator** tools.
+
+**Configuration:**
+```json
+{
+  "mcpServers": {
+    "debt-snowball-simulator": {
+      "url": "https://edge.vinkius.com/[TOKEN]/mcp"
+    }
+  }
+}
+```
+
+---
+
+## Independent Platform Disclaimer
+
+Vinkius is an independent platform and is not affiliated with, endorsed by, sponsored by, verified by, or otherwise authorized by any third-party company listed in this dataset. All third-party trademarks, logos, and brand names are the property of their respective owners. Their use in this dataset is strictly for informational purposes to identify service compatibility and interoperability.
+
+---
+
+*This repository is automatically synced from the Vinkius MCP Registry. For real-time updates and more AI tools, visit [vinkius.com](https://vinkius.com).*
