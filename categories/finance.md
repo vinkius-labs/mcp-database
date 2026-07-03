@@ -8,6 +8,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Appliance Energy Calculator](../mcps/appliance-energy-calculator.md) | Calculate electricity consumption in kWh and monthly costs for appliances. |
 | [ARR Bridge Calculator](../mcps/arr-bridge-calculator.md) | Quantify and visualize Annual Recurring Revenue (ARR) movements by detailing the specific drivers of revenue expansion and contraction over time. |
 | [Asset Correlation Matrix](../mcps/asset-correlation-matrix.md) | Calculate Pearson correlation between assets to identify diversification risks and hedging opportunities. |
+| [Balance Transfer Evaluator](../mcps/balance-transfer-evaluator.md) | Compare the total cost of credit card debt transfers against staying on your current plan. |
 | [Basis Calculator](../mcps/basis-calculator.md) | Calculate and analyze commodity basis by comparing local physical prices against exchange futures. |
 | [Battle Pass Value Calculator](../mcps/battle-pass-value-calculator.md) | Analyze the economic efficiency of gaming Battle Passes by calculating ROI and break-even points. |
 | [Beta Calculator](../mcps/beta-calculator.md) | Calculate asset volatility sensitivity, Jensen's Alpha, and risk classification relative to market benchmarks. |
@@ -15,10 +16,12 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Bond Yield Calculator](../mcps/bond-yield-calculator.md) | Calculate YTM, Current Yield, and interest rate sensitivity for fixed-income bonds. |
 | [Brazil CLT Payroll Calculator](../mcps/brazil-clt-payroll-calculator.md) | Calculate Brazil's CLT payroll components including INSS, IRRF, net pay, and employer costs. |
 | [Break-Even Calculator](../mcps/break-even-calculator.md) | Calculate accounting, economic, and financial break-even points with margin of safety analysis. |
+| [Bundle vs Individual Comparator](../mcps/bundle-vs-individual-comparator.md) | Compare bundle discounts against individual coupon stacking to find the best savings. |
 | [Burn Multiple Calculator](../mcps/burn-multiple-calculator.md) | Evaluate SaaS growth efficiency by measuring capital expenditure against new ARR. |
 | [Burn Rate Analyzer](../mcps/burn-rate-analyzer.md) | Analyze startup burn rate, expense composition, and runway forecasting. |
 | [CAC Payback by Segment](../mcps/cac-payback-by-segment.md) | Analyze CAC payback periods and expansion impact across SMB, Mid-Market, and Enterprise segments. |
 | [CAPM Calculator](../mcps/capm-calculator.md) | Calculate expected asset returns using the Capital Asset Pricing Model (CAPM) and evaluate investment attractiveness. |
+| [Car True Cost Calculator](../mcps/car-true-cost-calculator.md) | Calculate the total 5-year cost of vehicle ownership, including depreciation and maintenance. |
 | [Carbon Credit Farm Calculator](../mcps/carbon-credit-farm-calculator.md) | Estimate potential carbon credit generation from agricultural land use and sequestration models. |
 | [Carbon Offset Comparator](../mcps/carbon-offset-comparator.md) | Compare the financial efficiency of different carbon offset strategies. |
 | [Cash Flow Projector](../mcps/cash-flow-projector.md) | Project monthly cash flow, identify liquidity gaps, and calculate working capital requirements. |
@@ -36,6 +39,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Cost-per-Bag Calculator](../mcps/cost-per-bag-calculator.md) | Estimate agricultural production costs per unit of yield and benchmark against regional averages. |
 | [Crop Insurance Calculator](../mcps/crop-insurance-calculator.md) | Calculate agricultural insurance parameters, premiums, and indemnity ceilings. |
 | [Currency Hedging Calculator](../mcps/currency-hedging-calculator.md) | Evaluate the financial impact of using forward contracts to mitigate foreign exchange risk. |
+| [Custom Debt Strategy Simulator](../mcps/custom-debt-strategy-simulator.md) | Simulate debt payoff strategies using custom priority orders. |
+| [Day-by-Day Burn Simulator](../mcps/day-by-day-burn-simulator.md) | Simulate daily bank balance fluctuations to predict cash runway and overdraft events. |
 | [DECORE Simulator](../mcps/decore-simulator.md) | Calculate and validate income declarations for regulatory compliance. |
 | [Depreciation Calculator](../mcps/depreciation-calculator.md) | Calculate asset depreciation using straight-line, sum-of-the-years' digits, and declining balance methods. |
 | [Dilution Calculator](../mcps/dilution-calculator.md) | Simulate equity dilution, cap table evolution, and anti-dilution adjustments during investment rounds. |
@@ -44,6 +49,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [EBITDA Calculator](../mcps/ebitda-calculator.md) | Calculate EBITDA, margins, and EV/EBITDA multiples with industry benchmark comparisons. |
 | [EBITDA Multiple Valuator](../mcps/ebitda-multiple-valuator.md) | Calculate Enterprise and Equity Value using sector-specific EBITDA multiples. |
 | [Efficient Frontier Calculator](../mcps/efficient-frontier-calculator.md) | Calculate optimal asset weights and performance metrics along the efficient frontier. |
+| [Emergency Fund Drain Timeline](../mcps/emergency-fund-drain-timeline.md) | Predict how many days your emergency fund will last based on income loss and essential expenses. |
 | [Employee Salary Benchmark](../mcps/employee-salary-benchmark.md) | Retrieve market salary ranges in USD and BRL for various roles, seniority levels, and startup stages. |
 | [Employer Cost Calculator](../mcps/employer-cost-calculator.md) | Calculate the true total cost of an employee including taxes, provisions, and levies. |
 | [EOQ Calculator](../mcps/eoq-calculator.md) | Optimize inventory replenishment by calculating the Economic Order Quantity (EOQ) and reorder points. |
@@ -56,6 +62,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [EU VAT Calculator](../mcps/eu-vat-calculator.md) | Calculate EU VAT rates, transaction taxes, and compliance rules for 27 member states. |
 | [European Arbitration Cost Calculator](../mcps/european-arbitration-cost-calculator.md) | Estimate administrative and tribunal costs for ICC, LCIA, SCC, and VIAC arbitration. |
 | [European Commercial Lease Calculator](../mcps/european-commercial-lease-calculator.md) | Calculate rental adjustments, notice periods, and eviction indemnities for European commercial leases. |
+| [EV Charging Cost Calculator](../mcps/ev-charging-cost-calculator.md) | Calculate and compare the costs of electric vehicle charging versus gasoline consumption. |
 | [Export Parity Calculator](../mcps/export-parity-calculator.md) | Calculate the net farm-gate price for grain exports by accounting for logistics and taxes. |
 | [Farm Profitability Dashboard](../mcps/farm-profitability-dashboard.md) | Calculate comprehensive farm profitability, EBITDA, and crop efficiency metrics. |
 | [FGTS Withdrawal Simulator](../mcps/fgts-withdrawal-simulator.md) | Estimate FGTS balances, severance penalties, and payout liquidity based on salary and tenure. |
@@ -66,28 +73,34 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Freight Cost Calculator](../mcps/freight-cost-calculator.md) | Calculate and compare shipping costs across road, rail, air, sea, and multimodal transport modes. |
 | [Fuel Cost Calculator](../mcps/fuel-cost-calculator.md) | Calculate trip expenses and compare gasoline vs ethanol costs. |
 | [Fundraising Target Calculator](../mcps/fundraising-target-calculator.md) | Calculate optimal fundraising targets based on projected burn, runway needs, and safety buffers. |
+| [Gas vs EV Fuel Savings Calculator](../mcps/gas-vs-ev-fuel-savings-calculator.md) | Compare the long-term costs of gasoline and electric vehicles. |
 | [Global Effective Tax Rate & Pillar Two Compliance](../mcps/global-effective-tax-rate-pillar-two-compliance.md) | Calculate global effective tax rates and OECD Pillar Two top-up tax liabilities. |
 | [Grain Storage Cost Calculator](../mcps/grain-storage-cost-calculator.md) | Calculate grain storage expenses and determine optimal market timing. |
 | [Gross Margin Analyzer](../mcps/gross-margin-analyzer.md) | Calculate product gross margins, identify underperforming products against industry benchmarks, and simulate COGS reduction impact. |
 | [Gross Profit Efficiency Calculator](../mcps/gross-profit-efficiency-calculator.md) | Analyze SaaS unit economics, COGS breakdown, and simulate margin improvement levers. |
 | [Growth Rate Calculator](../mcps/growth-rate-calculator.md) | Calculate MoM, QoQ, YoY growth rates and model multi-scenario financial projections (CAGR, Rule of 40) from historical revenue data. |
 | [Headcount Efficiency Metrics](../mcps/headcount-efficiency-metrics.md) | Evaluate SaaS operational efficiency by comparing unit economics and spend ratios against public company benchmarks. |
+| [Hedge Bet Calculator](../mcps/hedge-bet-calculator.md) | Calculate the exact hedge wager needed to guarantee profit and eliminate risk. |
 | [Hedge Ratio Calculator](../mcps/hedge-ratio-calculator.md) | Calculate commodity futures contracts and quantify price volatility exposure. |
 | [ICMS Calculator](../mcps/icms-calculator.md) | Calculate Brazilian ICMS taxes, including tax substitution (ST), tax differentials (DIFAL), and tax-inclusive base calculations. |
 | [IFRS Depreciation Calculator](../mcps/ifrs-depreciation-calculator.md) | Calculate asset depreciation schedules using IFRS/IAS 16 standards (Straight-Line, Units of Production, and SYD). |
+| [Implied Probability Extractor](../mcps/implied-probability-extractor.md) | Convert American odds to true implied probability by removing the bookmaker margin. |
 | [Income Statement Generator](../mcps/income-statement-generator.md) | Generate structured Income Statements (P&L) with vertical analysis. |
 | [Incoterms 2020 Cost & Risk Calculator](../mcps/incoterms-2020-cost-risk-calculator.md) | Calculate logistics cost breakdowns, risk transfer points, and responsibility matrices for Incoterms 2020. |
 | [Indemnification Exposure Calculator](../mcps/indemnification-exposure-calculator.md) | Calculate maximum financial exposure in indemnity clauses by assessing contractual caps, carve-outs, and jurisdiction. |
+| [Inflation Erosion Calculator](../mcps/inflation-erosion-calculator.md) | Calculate the real purchasing power of money and visualize inflation's impact over time. |
 | [Inflation-Adjusted Return Calculator](../mcps/inflation-adjusted-return-calculator.md) | Calculate real investment returns by adjusting nominal rates against inflation. |
 | [INSS Retirement Estimator](../mcps/inss-retirement-estimator.md) | Estimate your Brazilian social security retirement benefits based on age, contribution time, and average salary. |
 | [Inventory Turnover Calculator](../mcps/inventory-turnover-calculator.md) | Calculate inventory turnover ratio, DSI, and compare performance against industry benchmarks. |
 | [Investment Profitability Comparator](../mcps/investment-profitability-comparator.md) | Compare net returns of CDB, Treasury Selic, Savings, and DI Funds after regressive income tax. |
 | [IPO Readiness Scorer](../mcps/ipo-readiness-scorer.md) | Evaluate company suitability for IPO based on financial and structural benchmarks. |
 | [ISS Calculator](../mcps/iss-calculator.md) | Calculate Service Tax (ISS) based on municipality rates and service types. |
+| [Kelly Criterion Sizing](../mcps/kelly-criterion-sizing.md) | Calculate optimal bet sizes using the Kelly Criterion formula. |
 | [Land Rent Viability Calculator](../mcps/land-rent-viability-calculator.md) | Calculate the economic viability of agricultural land leasing. |
 | [LED Upgrade Calculator](../mcps/led-upgrade-calculator.md) | Calculate energy, financial, and CO2 savings when switching to LED bulbs. |
 | [Lien Waiver Deadline Calculator](../mcps/lien-waiver-deadline-calculator.md) | Calculate statutory Mechanics Lien deadlines for preliminary notice, filing, and enforcement. |
 | [Liquidation Preference Calculator](../mcps/liquidation-preference-calculator.md) | Model complex equity distribution and liquidation preference scenarios during company exits. |
+| [Loyalty Points Value Engine](../mcps/loyalty-points-value-engine.md) | Calculate the financial advantage of redeeming loyalty points now versus waiting for higher-tier rewards. |
 | [LTV:CAC Calculator](../mcps/ltvcac-calculator.md) | Determine if your customer acquisition strategy is profitable by calculating LTV, CAC, and the critical LTV:CAC ratio. |
 | [M&A Synergy Calculator](../mcps/ma-synergy-calculator.md) | Financial modeling tool to estimate NPV and break-even period for M&A deals by calculating revenue, cost, and integration synergies. |
 | [Machinery Cost Calculator](../mcps/machinery-cost-calculator.md) | Calculate hourly, per-hectare, and total operational costs for agricultural machinery. |
@@ -96,10 +109,12 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Media Mix Efficiency Calculator](../mcps/media-mix-efficiency-calculator.md) | Calculate channel efficiency (CPL, CPA, ROAS) and get a data-driven budget reallocation plan to maximize conversions. |
 | [MRR and ARR Calculator](../mcps/mrr-and-arr-calculator.md) | Calculate Monthly Recurring Revenue (MRR) and Annual Recurring Revenue (ARR) from subscription data, broken down by plan segment. |
 | [Music Licensing Royalty Calculator](../mcps/music-licensing-royalty-calculator.md) | Estimate royalties for sync, mechanical, performance, and print music licensing. |
+| [Net Balance Minimizer](../mcps/net-balance-minimizer.md) | Efficiently settle group debts with the minimum number of transactions. |
 | [Net Revenue Retention Calculator](../mcps/net-revenue-retention-calculator.md) | Calculate and analyze NRR and GRR metrics across customer cohorts to evaluate subscription health. |
 | [NF-e Access Key Validator](../mcps/nf-e-access-key-validator.md) | Validate the structural integrity and compliance of Brazilian NF-e access keys. |
 | [Option Pool Shuffle Simulator](../mcps/option-pool-shuffle-simulator.md) | Analyze the dilution impact of option pool timing during VC investment rounds. |
 | [Options Greeks Calculator](../mcps/options-greeks-calculator.md) | Calculate Black-Scholes theoretical option prices and Greeks (Delta, Gamma, Theta, Vega, Rho) to assess market risk. |
+| [Parlay Payout Calculator](../mcps/parlay-payout-calculator.md) | Calculate exact cumulative payouts and net profits for multi-leg parlay bets using American odds. |
 | [PE Ratio Analyzer](../mcps/pe-ratio-analyzer.md) | Analyze stock valuation using P/E, PEG, and sector-specific benchmarks. |
 | [Penalty Clause Calculator](../mcps/penalty-clause-calculator.md) | Calculate contractual penalties, legal ceilings, and estimated judicial reductions based on jurisdiction. |
 | [Pet Monthly Cost Estimator](../mcps/pet-monthly-cost-estimator.md) | Estimate the monthly financial commitment for pet care based on species, size, and location. |
@@ -122,7 +137,9 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Revenue Multiple Valuator](../mcps/revenue-multiple-valuator.md) | Estimate SaaS enterprise value using industry-standard revenue multiples based on growth and retention. |
 | [Revenue Quality Scorer](../mcps/revenue-quality-scorer.md) | Analyze revenue stability, concentration risk, and market diversification. |
 | [ROAS Calculator](../mcps/roas-calculator.md) | Accurately determine your Return on Ad Spend (ROAS) across all channels, benchmark against industry standards, and calculate the break-even point to guide profitable ad spending. |
+| [Round Robin Generator](../mcps/round-robin-generator.md) | Generate all possible smaller parlays from a larger set of bets. |
 | [Rule of 40 Analyzer](../mcps/rule-of-40-analyzer.md) | Calculate and benchmark Rule of 40 performance for SaaS and software companies. |
+| [Rule of 72 Doubling Engine](../mcps/rule-of-72-doubling-engine.md) | Compare precise investment doubling time against the Rule of 7lag approximation. |
 | [Runway Calculator](../mcps/runway-calculator.md) | Calculate business runway, cash exhaustion dates, and required funding to reach survival targets. |
 | [Runway Per Headcount](../mcps/runway-per-headcount.md) | Simulate the impact of new hires on your company's cash runway and zero-cash date. |
 | [Rural Credit Simulator](../mcps/rural-credit-simulator.md) | Simulate agricultural credit scenarios, comparing programs like Pronaf and Pronamp with different amortization methods. |
@@ -135,9 +152,11 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Shrinkage Calculator](../mcps/shrinkage-calculator.md) | Calculate inventory shrinkage, risk levels, and security investment ROI. |
 | [Simples Nacional Calculator](../mcps/simples-nacional-calculator.md) | Calculate effective tax rates, Fator R eligibility, and monthly DAS amounts for the Brazilian Simples Nacional regime. |
 | [Slim Capital Prover](../mcps/slim-capital-prover.md) | An investment thesis picked the hottest sector at peak valuations. It said 'revenue growth' instead of free cash flow. It entered a market with no barriers to entry. It proposed hiring 50 people. It treated each investment as standalone. That is not capital allocation — that is herd following. This tool forces five Slim-level axes: contrarian timing, cash flow obsession, barrier market entry, operational austerity, and conglomerate leverage. |
+| [Solar Panel Calculator](../mcps/solar-panel-calculator.md) | Estimate solar system capacity, financial ROI, and environmental impact. |
 | [Solar Panel Estimator](../mcps/solar-panel-estimator.md) | Estimate solar panel requirements, installation area, and financial payback. |
 | [SOX Compliance Cost Estimator](../mcps/sox-compliance-cost-estimator.md) | Estimate the annual costs of Sarbanes-Oxley (SOX) compliance for pre-IPO companies. |
 | [Spain IRPF Calculator](../mcps/spain-irpf-calculator.md) | Calculate Spanish Personal Income Tax (IRPF) liabilities, including taxable base determination and regional tax application. |
+| [Split-Bill Grace Period Calculator](../mcps/split-bill-grace-period-calculator.md) | Calculate adjusted repayment amounts for shared expenses when one party covers the cost upfront and the other delays their contribution. |
 | [Standby Energy Waste Calculator](../mcps/standby-energy-waste-calculator.md) | Calculate the energy waste, financial cost, and carbon footprint of electronics in standby mode. |
 | [Startup Financial Model](../mcps/startup-financial-model.md) | Generate 12, 24, or 36-month financial projections including P&L, Cash Flow, and Break-even analysis. |
 | [Startup Health Score](../mcps/startup-health-score.md) | Quantify startup operational health (0-100) across Finance, Product, Growth, Team, and Market dimensions using stage-specific benchmarks. |
@@ -148,6 +167,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Tax Loss Harvesting Calculator](../mcps/tax-loss-harvesting-calculator.md) | Calculate the financial benefits and tax savings from harvesting capital losses. |
 | [Tax Regime Comparator](../mcps/tax-regime-comparator.md) | Simulate and compare Brazilian tax regimes to find the most cost-effective structure for your business. |
 | [Thirteenth Salary Calculator](../mcps/thirteenth-salary-calculator.md) | Calculate gross and net 13th-month salary installments, including proportional earnings and tax deductions. |
+| [Tiered Discount Simulator](../mcps/tiered-discount-simulator.md) | Calculate the most cost-effective way to reach higher discount tiers by adding filler items. |
+| [Tip & Tax Splitter](../mcps/tip-tax-splitter.md) | Compare pre-tax and post-tax bill splitting methods. |
 | [Tip and Split Calculator](../mcps/tip-and-split-calculator.md) | Calculate tip amounts, split bills among groups, and round totals for easy payment. |
 | [Transfer Pricing Calculator](../mcps/transfer-pricing-calculator.md) | Verify arm's length compliance for related-party transactions using CUP, Cost Plus, and Resale Minus methods. |
 | [Treasury Return Calculator](../mcps/treasury-return-calculator.md) | Calculate fair price, YTM, and inflation-adjusted returns for US Treasuries, UK Gilts, and German Bunds. |

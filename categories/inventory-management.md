@@ -7,6 +7,7 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 | [Asset Panda](../mcps/asset-panda.md) | Track and manage fixed assets with Asset Panda — audit groups, objects, and locations via AI. |
 | [Days of Supply Calculator](../mcps/days-of-supply-calculator.md) | Monitor inventory health by calculating stock coverage and identifying supply risks. |
 | [Envi Healthcare Supply Chain](../mcps/envi-healthcare-supply-chain.md) | Equip your AI agent to manage healthcare purchase orders, track medical inventory, and monitor vendors via the Envi API. |
+| [Leftover Inventory Manager](../mcps/leftover-inventory-manager.md) | Track and reuse material offcuts to minimize waste. |
 | [Order Time](../mcps/order-time.md) | Inventory and order management — manage items, customers, and sales orders via Order Time. |
 | [Reorder Point Calculator](../mcps/reorder-point-calculator.md) | Calculate optimal reorder points and safety stock levels based on demand volatility and service level targets. |
 | [Safety Stock Calculator](../mcps/safety-stock-calculator.md) | Calculate optimal safety stock levels using Square Root, Statistical, and Fixed Coverage methods. |

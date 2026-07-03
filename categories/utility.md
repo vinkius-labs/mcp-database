@@ -5,7 +5,13 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [CPF/CNPJ Batch Processor](../mcps/cpfcnpj-batch-processor.md) | Validate, format, and clean Brazilian CPF and CNPJ identifiers in bulk. |
+| [Delay Time Compensator](../mcps/delay-time-compensator.md) | Calculate precise audio delay offsets to account for hardware latency and BPM. |
+| [Essential Oil Drop Calculator](../mcps/essential-oil-drop-calculator.md) | Calculate the exact number of essential oil drops needed for a specific dilution percentage in any carrier oil volume. |
 | [Leak Waste Estimator](../mcps/leak-waste-estimator.md) | Calculate water waste in liters across daily, monthly, and yearly intervals based on leak types. |
+| [PPI & DPI Density Calculator](../mcps/ppi-dpi-density-calculator.md) | Calculate screen pixel density (PPI), Windows scaling percentages, and physical-to-pixel conversions. |
+| [Resin Volume Calculator](../mcps/resin-volume-calculator.md) | Calculate precise resin volumes, weights, and mixing ratios for epoxy casting projects. |
+| [Storage Bitrate Balancer](../mcps/storage-bitrate-balancer.md) | Calculate maximum allowed video bitrates and estimated file sizes with a 10% safety margin. |
+| [Yarn Length Calculator](../mcps/yarn-length-calculator.md) | Estimate yarn length for knitting and crochet projects. |
 
 
 ---

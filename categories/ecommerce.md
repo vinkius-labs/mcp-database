@@ -56,6 +56,7 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [DCL Logistics](../mcps/dcl-logistics.md) | Equip your AI agent to manage order fulfillment, track shipments, and monitor warehouse inventory via the DCL Logistics API. |
 | [Deck Commerce](../mcps/deck-commerce.md) | Equip your AI agent to manage order fulfillment, track shipments, and monitor inventory via the Deck Commerce API. |
 | [Discogs](../mcps/discogs.md) | Explore the world's largest music database — search artists, releases, labels, and marketplace listings via AI. |
+| [Discount Order Optimizer](../mcps/discount-order-optimizer.md) | Find the optimal sequence of multiple discounts to achieve the absolute minimum final price. |
 | [Doofinder](../mcps/doofinder.md) | Empower e-commerce search via Doofinder — perform keyword and filtered searches, get predictive suggestions, and audit search analytics directly from any AI agent. |
 | [Drip](../mcps/drip.md) | Automate e-commerce marketing via Drip — manage subscribers, trigger workflows, track custom events, and audit campaigns directly from any AI agent. |
 | [Duffel Flights](../mcps/duffel-flights.md) | Search and book flights via Duffel — list airlines, airports, and manage flight orders directly via AI. |
@@ -85,6 +86,7 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Fomo](../mcps/fomo.md) | Manage social proof notifications, push real-time events, and oversee templates via AI agents with Fomo. |
 | [Foodpanda](../mcps/foodpanda.md) | Automate food delivery operations via Foodpanda — manage vendor catalogs, track orders, and control restaurant status directly from any AI agent. |
 | [Fortnite Cosmetics & Item Shop](../mcps/fortnite-cosmetics-item-shop.md) | The definitive server for Fortnite cosmetics — track daily shop rotations, leaked skins, and rarity via AI. |
+| [Free Shipping Threshold Filler](../mcps/free-shipping-threshold-filler.md) | Calculate the exact items to add to your cart to hit free shipping with zero waste. |
 | [Gameball](../mcps/gameball-alternative.md) | Automate loyalty programs and gamification via Gameball — manage customer profiles, track points, and handle order rewards directly from any AI agent. |
 | [Gelato](../mcps/gelato.md) | Manage print-on-demand orders, track fulfillment, and get shipping quotes via AI agents with Gelato. |
 | [GetYourGuide](../mcps/getyourguide.md) | Search and book tours, activities, and travel experiences via AI agents with GetYourGuide. |

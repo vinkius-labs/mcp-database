@@ -18,6 +18,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Nutritional Estimator](../mcps/nutritional-estimator.md) | Calculate total and per-serving macro and calorie content of recipes using weight-based nutritional density data. |
 | [One Rep Max Calculator](../mcps/one-rep-max-calculator.md) | Estimate your maximum lifting capacity using Epley, Brzycki, and Lander models. |
 | [One-Rep Max Calculator](../mcps/one-rep-max-calculator-1.md) | Estimate your maximum strength capacity using 8 different physiological models. |
+| [Oral Syringe Volume Converter](../mcps/oral-syringe-volume-converter.md) | Convert liquid medication doses from ml to teaspoons, tablespoons, and drops. |
 | [Pediatric BMI Calculator](../mcps/pediatric-bmi-calculator.md) | Calculate pediatric BMI, percentiles, and growth status using WHO/CDC standards for ages 2-20 years. |
 | [Perceived Exertion Converter](../mcps/perceived-exertion-converter.md) | Convert RPE (Borg 6-20 and CR10) to estimated heart rate and training zones. |
 | [Pet Body Condition Score (BCS) Assessor](../mcps/pet-body-condition-score-bcs-assessor.md) | Assess pet weight and nutritional status using a 9-point Body Condition Score (BCS) system. |
@@ -27,6 +28,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Pet Senior Care Planner](../mcps/pet-senior-care-planner.md) | Identify pet life stages and generate customized veterinary and lifestyle protocols. |
 | [Pet Treat Limit Calculator](../mcps/pet-treat-limit-calculator.md) | Calculate the maximum number of treats your pet can have without exceeding 10% of their daily calories. |
 | [Pet Water Intake Calculator](../mcps/pet-water-intake-calculator.md) | Calculate optimal daily water intake for dogs and cats based on weight, food type, and temperature. |
+| [Pill Fraction Simplifier](../mcps/pill-fraction-simplifier.md) | Converts decimal pill doses into the easiest physical way to cut them. |
 | [Pregnancy Week Calculator](../mcps/pregnancy-week-calculator.md) | Track your pregnancy progress, from gestational age to weekly fetal milestones. |
 | [Protein Needs Calculator](../mcps/protein-needs-calculator.md) | Calculate your daily protein requirements based on weight, activity level, and goals. |
 | [PSS-10 Stress Assessment](../mcps/pss-10-stress-assessment.md) | Calculate and analyze perceived stress levels using the PSS-10 scale. |

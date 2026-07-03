@@ -7,6 +7,7 @@ Explore the open database of **nutrition** Model Context Protocol (MCP) servers.
 | [Diet Carbon Footprint Calculator](../mcps/diet-carbon-footprint-calculator.md) | Estimate the CO2e emissions of different dietary patterns and food weights. |
 | [Ingredient Substitution Engine](../mcps/ingredient-substitution-engine.md) | Find dietary-friendly ingredient alternatives with usage ratios and sensory impact analysis. |
 | [Pet Calorie Needs](../mcps/pet-calorie-needs.md) | Calculate precise daily energy requirements (RER and MER) for pets based on weight and lifestyle. |
+| [Reverse Diet Metabolism Builder](../mcps/reverse-diet-metabolism-builder.md) | Design a controlled, week-by-week calorie increase plan to restore metabolic health and minimize fat gain. |
 
 
 ---

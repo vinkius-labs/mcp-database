@@ -108,6 +108,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Craft CMS (Craftnet)](../mcps/craft-cms-craftnet.md) | Equip your AI agent to manage plugins, licenses, and sales directly via the Craftnet (Craft CMS) API. |
 | [Crafter CMS](../mcps/crafter-cms.md) | Manage headless content via Crafter CMS — execute GraphQL queries, write Git-based XML content, and publish to delivery engines directly from any AI agent. |
 | [CrafterCMS](../mcps/craftercms.md) | Manage and query content from CrafterCMS — fetch pages, components, and trees, execute GraphQL/OpenSearch queries, and manage engine cache directly from your AI agent. |
+| [Cron Expression Engine](../mcps/cron-expression-engine.md) | Parse, validate, convert, and generate cron expressions across multiple standards. |
 | [Cronitor (Cron Monitoring)](../mcps/cronitor-cron-monitoring.md) | Monitor cron jobs, heartbeats, and websites. Track performance, receive alerts, and manage uptime directly from your AI agent. |
 | [Cronoscan (Cronos Block Explorer)](../mcps/cronoscan-cronos-block-explorer.md) | Access Cronos blockchain data — check CRO balances, track transactions, inspect smart contracts, and monitor token transfers directly via AI. |
 | [Crowdin](../mcps/crowdin.md) | Equip your AI agent to manage localization projects, files, and translations directly via the Crowdin API. |
@@ -122,6 +123,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [DeepOpinion (No-code NLP & Text AI API)](../mcps/deepopinion-no-code-nlp-text-ai-api.md) | Automate NLP and text analysis with DeepOpinion — list custom models, run single predictions, and process text batches directly from your AI agent. |
 | [DeepSource](../mcps/deepsource.md) | Automate code quality monitoring via DeepSource — analyze issues, vulnerabilities, metrics, and report cards directly from any AI agent. |
 | [Descope (Auth Platform)](../mcps/descope-auth-platform.md) | Manage user authentication flows via Descope — initiate OTPs, Magic Links, Enchanted Links, and OAuth directly from your AI agent. |
+| [Design Token Transformer](../mcps/design-token-transformer.md) | Convert, resolve, and generate multi-platform design tokens (JSON, CSS, SCSS, Tailwind, etc.). |
 | [Deta Space (Serverless Personal Cloud API)](../mcps/deta-space-serverless-personal-cloud-api.md) | Manage your personal cloud via Deta Space — store data in Deta Base and files in Deta Drive directly from any AI agent. |
 | [Deterministic Array Operations](../mcps/deterministic-array-operations.md) | Equip your AI with high-performance array manipulation. Deterministically chunk large datasets, deep-deduplicate objects, and intersect arrays 100% local. |
 | [Deterministic Base Converter](../mcps/deterministic-base-converter.md) | Equip your AI with infinite-precision mathematical conversion between any numerical bases (2 through 36), including Binary, Hexadecimal, and Octal. |

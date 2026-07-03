@@ -4,7 +4,9 @@ Explore the open database of **music** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [BPM Tap Tempo Analyzer](../mcps/bpm-tap-tempo-analyzer.md) | Analyze tap-based rhythmic input to derive precise tempo, stability, and musical context. |
 | [Scale Generator](../mcps/scale-generator.md) | Generate detailed musical scale reports including intervals, enharmonics, and octave data. |
+| [Tempo Tap Averager](../mcps/tempo-tap-averager.md) | Calculate precise BPM and rhythmic stability from tap timestamps. |
 
 
 ---

@@ -5,6 +5,7 @@ Explore the open database of **media-production** Model Context Protocol (MCP) s
 | Tool Name | Description |
 |-----------|-------------|
 | [Digital Audio Parameter Calculator](../mcps/digital-audio-parameter-calculator.md) | Calculate Nyquist frequency, dynamic range, bitrate, and storage requirements for digital audio. |
+| [Sample Offset Calculator](../mcps/sample-offset-calculator.md) | Convert between milliseconds and exact audio samples for precise DAW alignment. |
 
 
 ---

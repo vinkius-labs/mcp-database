@@ -8,11 +8,15 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Damage Formula Calculator](../mcps/damage-formula-calculator.md) | Evaluate and compare game damage scaling models including linear, multiplicative, and advanced RPG formulas. |
 | [Elemental Weakness Calculator](../mcps/elemental-weakness-calculator.md) | Calculate combat effectiveness and identify elemental imbalances using an interaction matrix. |
 | [Equal Temperament Calculator](../mcps/equal-temperament-calculator.md) | Calculate MIDI frequencies, interval deviations, and tuning system comparisons. |
+| [FOV to Focal Length Converter](../mcps/fov-to-focal-length-converter.md) | Convert between Field of View (degrees) and Focal Length (mm) for various sensor formats. |
 | [Loot Table Balancer](../mcps/loot-table-balancer.md) | Precision utility for calculating, normalizing, and auditing loot table probabilities and economic expected values. |
 | [Matrix 4x4 Transforms](../mcps/matrix-4x4-transforms.md) | Create, compose, and apply 3D transformation matrices with rotation representations and coordinate transformations for graphics and simulation applications. |
 | [Mesh Geometry Calculator](../mcps/mesh-geometry-calculator.md) | Perform advanced geometric and topological analysis on 3D triangle meshes. |
+| [Pattern Grading Calculator](../mcps/pattern-grading-calculator.md) | Scale sewing patterns between sizes using ASTM standards (Women, Men, Children). |
 | [Prestige System Calculator](../mcps/prestige-system-calculator.md) | Analyze the economic efficiency and temporal impact of prestige/rebirth mechanics. |
+| [Stretch Factor Calculator](../mcps/stretch-factor-calculator.md) | Calculate exact pixel stretching, aspect ratio matching, and pixel footprint when scaling resolutions. |
 | [Time Signature Calculator](../mcps/time-signature-calculator.md) | Calculate measure duration, rhythmic feeling, and polyrhythms for any time signature. |
+| [Waveform Generator](../mcps/waveform-generator.md) | Generate high-fidelity digital audio waveforms and noise profiles. |
 
 
 ---

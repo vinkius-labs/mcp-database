@@ -6,6 +6,7 @@ Explore the open database of **training** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Competition Peak Planner](../mcps/competition-peak-planner.md) | Generate personalized training taper protocols, nutritional strategies, and peak performance windows. |
 | [Rest Interval Optimizer](../mcps/rest-interval-optimizer.md) | Calculate optimal rest periods between sets based on training goals and intensity. |
+| [Running Mileage 10% Rule](../mcps/running-mileage-10-rule.md) | Generate safe running progression plans using the 10% growth rule. |
 
 
 ---

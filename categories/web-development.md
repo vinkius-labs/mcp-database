@@ -8,6 +8,7 @@ Explore the open database of **web-development** Model Context Protocol (MCP) se
 | [Heading Structure Validator](../mcps/heading-structure-validator.md) | Validates HTML heading hierarchy, keyword presence, and semantic density. |
 | [Redirect Chain Analyzer](../mcps/redirect-chain-analyzer.md) | Analyze URL redirect sequences to calculate PageRank decay and identify optimization opportunities. |
 | [URL Structure Analyzer](../mcps/url-structure-analyzer.md) | Evaluate web URLs for SEO health, analyzing path depth, keyword relevance, and parameter noise. |
+| [WCAG Contrast Checker](../mcps/wcag-contrast-checker.md) | Evaluate color contrast compliance against WCAG 2.1 and WCAG 3.0 (APCA) standards. |
 
 
 ---

@@ -8,6 +8,8 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Birth Chart Positions](../mcps/birth-chart-positions.md) | Calculate zodiac positions of celestial bodies based on date, time, and location. |
 | [Bread Proofing Calculator](../mcps/bread-proofing-calculator.md) | Predict fermentation durations for bulk and final proofing based on yeast concentration and temperature. |
 | [Color Vibration Analyzer](../mcps/color-vibration-analyzer.md) | Discover the energetic frequency and chakra alignment of any color. |
+| [Precision Dilution Calculator](../mcps/precision-dilution-calculator.md) | Calculate exact volumes of stock solution and solvent needed for precise dilutions. |
+| [Ratio to Volume Converter](../mcps/ratio-to-volume-converter.md) | Convert liquid ratios into exact milliliter volumes based on a target total volume. |
 | [Sound Frequency Calculator](../mcps/sound-frequency-calculator.md) | Calculate musical note frequencies, Solfeggio resonances, and harmonic series. |
 | [Waste Decomposition Timer](../mcps/waste-decomposition-timer.md) | Get estimated decomposition timelines for various materials. |
 

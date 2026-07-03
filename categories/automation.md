@@ -6,8 +6,12 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 |-----------|-------------|
 | [Breadcrumb Generator](../mcps/breadcrumb-generator.md) | Automatically generates text, JSON-LD schema, and HTML breadcrumbs from URL paths. |
 | [Count Words for Agents](../mcps/context-integrity-prover.md) | Text analysis tool that counts words, characters, sentences, and paragraphs. Validates maximum length constraints so AI agents can generate text that strictly respects exact limits. |
+| [Crop Coord Maximizer](../mcps/crop-coord-maximizer.md) | Calculate pixel-perfect crop coordinates for any aspect ratio while preserving subject focus. |
 | [Hreflang Generator](../mcps/hreflang-generator.md) | Generate and validate SEO-compliant HTML hreflang tags and XML sitemap entries for multi-regional websites. |
 | [Robots.txt Generator](../mcps/robotstxt-generator.md) | Generate syntactically valid robots.txt files by configuring user-agent rules, crawl delays, and sitemap URLs. |
+| [Subtitle Readability Pacer](../mcps/subtitle-readability-pacer.md) | Calculate optimal subtitle block distribution and timing based on speaking rate. |
+| [Video Timeline Packer](../mcps/video-timeline-packer.md) | Precisely adjust video clip durations through trimming and speeding up to fit a target timeline duration. |
+| [Water Hardener & Softener Balancer](../mcps/water-hardener-softener-balancer.md) | Precision calculator for mineral concentration adjustments in distilled water. |
 
 
 ---

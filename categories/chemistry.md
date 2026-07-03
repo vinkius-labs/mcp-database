@@ -5,6 +5,7 @@ Explore the open database of **chemistry** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Gelatin Converter](../mcps/gelatin-converter.md) | Calculates precise gelatin amounts for any liquid volume and classifies the resulting texture (mousse, panna cotta, or firm jelly). Standardizes measures between sheets and powder. |
+| [Simple Dilution Mixer](../mcps/simple-dilution-mixer.md) | Calculate exact volumes of solute and solvent needed for precise liquid dilution. |
 | [Sugar Syrup Calculator](../mcps/sugar-syrup-calculator.md) | Calculates precise water and sugar weights needed to achieve specific syrup consistencies, accounting for cooking loss. |
 
 

@@ -1,10 +1,10 @@
-# data science MCP Servers
+# data-science MCP Servers
 
-Explore the open database of **data science** Model Context Protocol (MCP) servers.
+Explore the open database of **data-science** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
-| [Data Analysis Prover](../mcps/data-analysis-prover.md) | A marketing team asked an AI to analyze campaign data. The AI reported 'significant correlation between email frequency and purchase rate (p<0.05).' The team tripled emails. Unsubscribes spiked 340%. Sample: N=47 self-selected respondents, no power analysis. Correlation: observational, no confounders. Distribution: right-skewed but mean used. p=0.043 but Cohen's d=0.12 — trivial. Chart: truncated Y-axis making a 2% difference look enormous. This tool forces five axes: sample validity, causal inference, distribution awareness, significance with effect size, and visualization integrity. |
+| [Signal Filter Designer](../mcps/signal-filter-designer.md) | Apply digital filters like low-pass, high-pass, SMA, EMA, and Peaking EQ to signal arrays. |
 
 
 ---
