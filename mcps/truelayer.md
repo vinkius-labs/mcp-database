@@ -34,7 +34,6 @@ Connect your **TrueLayer** account to any AI agent to automate financial operati
 
 
 ## Available Tools (13)
-- **create_mandate**: Create a Variable Recurring Payment (VRP) mandate
 - **create_payment**: Requires amount, currency, payment method, beneficiary, and user details.
 
 Create a new single payment
@@ -55,6 +54,7 @@ List user bank accounts (Data API)
 - **list_payment_sources**: List payment sources for a merchant account
 - **list_providers**: List supported bank providers
 - **verify_account**: Verify account ownership
+- **create_mandate**: Create a Variable Recurring Payment (VRP) mandate
 
 
 ## 💬 Prompt Examples

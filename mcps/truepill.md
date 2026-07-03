@@ -34,6 +34,12 @@ Connect your **Truepill** account to any AI agent to streamline pharmacy and pat
 
 
 ## Available Tools (7)
+- **get_webhook_events**: g., NOTIFY_RX, ORDER, SHIPMENT, TRANSFER).
+
+Retrieve webhook events
+- **update_patient**: g., address, phone, email) for a patient. Required fields like dob or last_name cannot be updated via this endpoint.
+
+Update an existing patient record
 - **create_patient**: Returns a patient_token.
 
 Create a new patient record
@@ -41,12 +47,6 @@ Create a new patient record
 - **get_patient_prescriptions**: Get all prescriptions for a patient
 - **get_patient**: Get a specific patient by token
 - **get_prescription**: Get details for a specific prescription
-- **get_webhook_events**: g., NOTIFY_RX, ORDER, SHIPMENT, TRANSFER).
-
-Retrieve webhook events
-- **update_patient**: g., address, phone, email) for a patient. Required fields like dob or last_name cannot be updated via this endpoint.
-
-Update an existing patient record
 
 
 ## 💬 Prompt Examples

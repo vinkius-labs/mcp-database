@@ -33,8 +33,8 @@ Connect to **Open Food Facts**, the collaborative, free, and open database of fo
 
 
 ## Available Tools (2)
-- **get_product**: Retrieve detailed information about a specific product by its barcode
 - **search_products**: Search for products using keywords and filters
+- **get_product**: Retrieve detailed information about a specific product by its barcode
 
 
 ## 💬 Prompt Examples

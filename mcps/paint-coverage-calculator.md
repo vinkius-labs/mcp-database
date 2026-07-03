@@ -7,16 +7,16 @@
 
 **Category:** [construction](../categories/construction.md)
 
-Calculate the precise volume of paint needed for any project by accounting for surface area, texture, and coats.
+Calculate exact paint volumes for walls and ceilings, accounting for textures, openings, and waste.
 
 ## Description
-This MCP server provides specialized tools to estimate paint requirements accurately. Use `calculate_net_area` to determine the actual paintable surface after subtracting windows and doors. Utilize `lookup_surface_yield` to find standard coverage rates based on surface texture (Smooth, Standard, Rough) and paint quality (Economy, Premium, Professional). Finally, use `calculate_required_volume` to compute the total liters of paint required for your project based on the number of coats applied.
+The Paint Coverage Calculator is a precision estimation engine designed to determine the exact amount of paint needed for any interior project. By inputting wall and ceiling dimensions, you can account for architectural deductions like doors and windows, surface textures such as smooth or textured walls, and the number of coats required. The tool also handles different paint chemistries including latex flat, eggshell, oil-based, and primer. It automatically calculates a 10% waste buffer to ensure you never run out of material mid-project. Use `calculate_wall_paint` for vertical surfaces, `calculate_ceiling_paint` for overhead areas, and `summarize_total_requirements` to get your final consolidated order quantity.
 
 
 ## Available Tools (3)
-- **calculate_net_area**: Determines the total square units of surface that actually require paint after accounting for openings
-- **calculate_required_volume**: Calculates the total liquid volume required to complete the project
-- **lookup_surface_yield**: Retrieves the standard coverage rate based on the type of surface and paint quality
+- **calculate_ceiling_paint**: Calculates the required volume of paint for flat ceiling surfaces
+- **summarize_total_requirements**: Aggregates all calculated volumes into a single final order quantity
+- **calculate_wall_paint**: Calculates the required volume of paint for vertical wall surfaces
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides specialized tools to estimate paint requirements accura
 Here are some examples of how you can interact with the **Paint Coverage Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I have 50 sqm of walls and 20 sqm of ceiling. There are 5 sqm of windows. How much area do I need to paint?"
+> "How much paint do I need for a wall that is 5m long and 3m high, with 1 door (2m x 0.8m) and 1 window (1m x 1m)? Use smooth texture and latex flat paint with 2 coats."
 
 **🤖 AI Agent:**
-> The net paintable area is 65 square units.
+> You will need approximately 0.34 liters (0.09 gallons) of latex flat paint for this wall.
 
 ---
 
 **👤 You:**
-> "What is the standard yield for Premium paint on a Smooth surface?"
+> "Calculate the paint needed for a ceiling that is 4m by 4m, textured surface, using oil-based paint and 1 coat."
 
 **🤖 AI Agent:**
-> The standard coverage rate for Premium paint on a Smooth surface is 12 square units per liter.
+> You will need approximately 0.48 liters (0.13 gallons) of oil-based paint for this ceiling.
 
 ---
 
 **👤 You:**
-> "I need to paint 100 sqm with 2 coats. The paint yield is 10 sqm/L. How many liters do I need?"
+> "I have 2.5L for walls and 1.2L for ceilings. What is my total paint order including the waste buffer?"
 
 **🤖 AI Agent:**
-> You will need 20 liters of paint for this project.
+> Your total required volume, including a 10% waste buffer, is 4.07 liters (1.08 gallons).
 
 
 ## ❓ FAQ
 
-**Q: How do I calculate the area for my walls and ceiling?**
-Use the `calculate_net_area` tool. Provide the gross wall area, the gross ceiling area, and any openings like windows or doors to get the net paintable area.
+**Q: How does the tool account for doors and windows?**
+The `calculate_wall_paint` tool subtracts the area of all doors and windows from the total wall area before calculating paint volume, ensuring you don't over-purchase.
 
-**Q: Does surface texture affect how much paint I need?**
-Yes. Rougher surfaces absorb more paint. You can use `lookup_surface_yield` to find the standard coverage rate for Smooth, Standard, or Rough textures.
+**Q: Does the calculation include a safety buffer?**
+Yes, the `summarize_total_requirements` tool automatically adds a 10% waste overhead to your total volume to account for roller absorption and spills.
 
-**Q: How do I know how many liters of paint to buy?**
-Once you have your net area and the number of coats planned, use `calculate_required_volume` with the appropriate yield per liter to get the total volume needed.
+**Q: What surface types are supported?**
+The tool supports smooth, textured, and raw plaster surfaces. Each type applies a specific multiplier to the surface area to account for varying absorption rates.
 
 
 ## Installation & Usage
