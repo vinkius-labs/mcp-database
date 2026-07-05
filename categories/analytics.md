@@ -14,6 +14,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Karmic Debt Calculator](../mcps/karmic-debt-calculator.md) | Identify and interpret karmic debt numbers (13, 14, 16, 19) within a numerological matrix. |
 | [Keyword Extractor](../mcps/keyword-extractor.md) | Extract and rank significant keywords from text using term frequency and density analysis. |
 | [Life Events Stress Calculator](../mcps/life-events-stress-calculator.md) | Assess cumulative psychological stress risks using the Holmes-Rahe Scale. |
+| [Loot Drop Simulator](../mcps/loot-drop-simulator.md) | A probabilistic engine for simulating and analyzing randomized item distribution patterns in RPG loot systems. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
 | [Power-to-Weight and Relative Strength Calculator](../mcps/power-to-weight-and-relative-strength-calculator.md) | Calculate W/kg for endurance sports and standardized strength scores (DOTS, WILKS, IPF) for powerlifting. |
 | [Recovery Readiness Score](../mcps/recovery-readiness-score.md) | Evaluate training readiness and optimal intensity based on sleep, soreness, stress, and motivation. |

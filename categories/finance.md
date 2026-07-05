@@ -5,7 +5,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [13th Month Salary Provision Calculator](../mcps/13th-month-salary-provision-calculator.md) | Calculate monthly 13th-month salary accruals, employer taxes, and cumulative payroll liabilities. |
-| [Appliance Energy Calculator](../mcps/appliance-energy-calculator.md) | Calculate electricity consumption in kWh and monthly costs for appliances. |
+| [Appliance Energy Calculator](../mcps/appliance-energy-calculator.md) | Calculate electricity running costs and the economic benefits of upgrading to energy-efficient appliances. |
 | [ARR Bridge Calculator](../mcps/arr-bridge-calculator.md) | Quantify and visualize Annual Recurring Revenue (ARR) movements by detailing the specific drivers of revenue expansion and contraction over time. |
 | [Asset Correlation Matrix](../mcps/asset-correlation-matrix.md) | Calculate Pearson correlation between assets to identify diversification risks and hedging opportunities. |
 | [Balance Transfer Evaluator](../mcps/balance-transfer-evaluator.md) | Compare the total cost of credit card debt transfers against staying on your current plan. |
@@ -19,6 +19,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Bundle vs Individual Comparator](../mcps/bundle-vs-individual-comparator.md) | Compare bundle discounts against individual coupon stacking to find the best savings. |
 | [Burn Multiple Calculator](../mcps/burn-multiple-calculator.md) | Evaluate SaaS growth efficiency by measuring capital expenditure against new ARR. |
 | [Burn Rate Analyzer](../mcps/burn-rate-analyzer.md) | Analyze startup burn rate, expense composition, and runway forecasting. |
+| [Business License Fee Calculator](../mcps/business-license-fee-calculator.md) | Estimate business licensing, permit, and annual renewal costs across multiple jurisdictions. |
+| [Business Profit Margin Calculator](../mcps/business-profit-margin-calculator.md) | Calculate gross, operating, and net profit margins, break-even points, optimal pricing, and seasonal cash flow projections. |
 | [CAC Payback by Segment](../mcps/cac-payback-by-segment.md) | Analyze CAC payback periods and expansion impact across SMB, Mid-Market, and Enterprise segments. |
 | [CAPM Calculator](../mcps/capm-calculator.md) | Calculate expected asset returns using the Capital Asset Pricing Model (CAPM) and evaluate investment attractiveness. |
 | [Car True Cost Calculator](../mcps/car-true-cost-calculator.md) | Calculate the total 5-year cost of vehicle ownership, including depreciation and maintenance. |
@@ -33,10 +35,12 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [CNPJ Validator](../mcps/cnpj-validator.md) | Verify the mathematical validity and structure of Brazilian CNPJ numbers. |
 | [Commodity Price Converter](../mcps/commodity-price-converter.md) | Convert commodity prices across units and currencies instantly. |
 | [Compensation Band Generator](../mcps/compensation-band-generator.md) | Generate structured compensation packages including base salary, bonus targets, and equity ranges based on global market data. |
+| [Compound Interest Optimizer](../mcps/compound-interest-optimizer.md) | Detailed investment growth projections accounting for inflation, taxes, and penalties. |
 | [Contingency Budget Calculator](../mcps/contingency-budget-calculator.md) | Calculate essential contingency reserves for architectural and construction projects based on development phases. |
 | [Contractor vs Employee Cost Calculator](../mcps/contractor-vs-employee-cost-calculator.md) | Compare total employment costs for W-2/1099 (USA) and PAYE/Ltd Company (UK) structures. |
 | [Contribution Margin Calculator](../mcps/contribution-margin-calculator.md) | Calculate unit profitability, margin indices, and weighted product mix margins. |
 | [Cost-per-Bag Calculator](../mcps/cost-per-bag-calculator.md) | Estimate agricultural production costs per unit of yield and benchmark against regional averages. |
+| [Credit Card Payoff Engine](../mcps/credit-card-payoff-engine.md) | Calculate exact credit card payoff timelines, interest costs, and compare repayment strategies using daily compounding logic. |
 | [Crop Insurance Calculator](../mcps/crop-insurance-calculator.md) | Calculate agricultural insurance parameters, premiums, and indemnity ceilings. |
 | [Currency Hedging Calculator](../mcps/currency-hedging-calculator.md) | Evaluate the financial impact of using forward contracts to mitigate foreign exchange risk. |
 | [Custom Debt Strategy Simulator](../mcps/custom-debt-strategy-simulator.md) | Simulate debt payoff strategies using custom priority orders. |
@@ -107,6 +111,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Magic Number Calculator](../mcps/magic-number-calculator.md) | Calculate and analyze Go-To-Market efficiency using the Magic Number ratio. |
 | [Max Drawdown Calculator](../mcps/max-drawdown-calculator.md) | Calculate maximum drawdown, recovery periods, and stress indicators from historical price series. |
 | [Media Mix Efficiency Calculator](../mcps/media-mix-efficiency-calculator.md) | Calculate channel efficiency (CPL, CPA, ROAS) and get a data-driven budget reallocation plan to maximize conversions. |
+| [Mortgage Payment Calculator](../mcps/mortgage-payment-calculator.md) | Calculate monthly mortgage payments, amortization schedules, and compare rent vs. buy scenarios. |
+| [Moving Cost Comparator](../mcps/moving-cost-comparator.md) | Compare the financial impact of DIY truck rentals versus professional full-service moving companies. |
 | [MRR and ARR Calculator](../mcps/mrr-and-arr-calculator.md) | Calculate Monthly Recurring Revenue (MRR) and Annual Recurring Revenue (ARR) from subscription data, broken down by plan segment. |
 | [Music Licensing Royalty Calculator](../mcps/music-licensing-royalty-calculator.md) | Estimate royalties for sync, mechanical, performance, and print music licensing. |
 | [Net Balance Minimizer](../mcps/net-balance-minimizer.md) | Efficiently settle group debts with the minimum number of transactions. |
@@ -114,6 +120,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [NF-e Access Key Validator](../mcps/nf-e-access-key-validator.md) | Validate the structural integrity and compliance of Brazilian NF-e access keys. |
 | [Option Pool Shuffle Simulator](../mcps/option-pool-shuffle-simulator.md) | Analyze the dilution impact of option pool timing during VC investment rounds. |
 | [Options Greeks Calculator](../mcps/options-greeks-calculator.md) | Calculate Black-Scholes theoretical option prices and Greeks (Delta, Gamma, Theta, Vega, Rho) to assess market risk. |
+| [Overtime Pay Calculator](../mcps/overtime-pay-calculator.md) | Calculate US overtime pay based on FLSA and state-specific rules like CA/CO daily thresholds. |
 | [Parlay Payout Calculator](../mcps/parlay-payout-calculator.md) | Calculate exact cumulative payouts and net profits for multi-leg parlay bets using American odds. |
 | [PE Ratio Analyzer](../mcps/pe-ratio-analyzer.md) | Analyze stock valuation using P/E, PEG, and sector-specific benchmarks. |
 | [Penalty Clause Calculator](../mcps/penalty-clause-calculator.md) | Calculate contractual penalties, legal ceilings, and estimated judicial reductions based on jurisdiction. |
@@ -133,6 +140,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Real Estate Financing Calculator](../mcps/real-estate-financing-calculator.md) | Calculate detailed monthly amortization schedules and financial summaries for Price and SAC mortgage systems. |
 | [Recording Session Planner](../mcps/recording-session-planner.md) | Generate precise studio schedules, cost estimates, and completion risk assessments for music production. |
 | [Recycling Value Estimator](../mcps/recycling-value-estimator.md) | Calculate potential revenue and CO2 savings from recyclable materials. |
+| [Retirement Planning Engine](../mcps/retirement-planning-engine.md) | Project retirement savings growth, optimize Social Security benefits, and simulate withdrawal success. |
 | [Retirement Withdrawal Calculator](../mcps/retirement-withdrawal-calculator.md) | Estimate the sustainability of your retirement withdrawals using Monte Carlo simulations. |
 | [Revenue Multiple Valuator](../mcps/revenue-multiple-valuator.md) | Estimate SaaS enterprise value using industry-standard revenue multiples based on growth and retention. |
 | [Revenue Quality Scorer](../mcps/revenue-quality-scorer.md) | Analyze revenue stability, concentration risk, and market diversification. |
@@ -161,6 +169,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Startup Financial Model](../mcps/startup-financial-model.md) | Generate 12, 24, or 36-month financial projections including P&L, Cash Flow, and Break-even analysis. |
 | [Startup Health Score](../mcps/startup-health-score.md) | Quantify startup operational health (0-100) across Finance, Product, Growth, Team, and Market dimensions using stage-specific benchmarks. |
 | [Startup Valuation Engine](../mcps/startup-valuation-engine.md) | Calculate pre-money startup valuations using Berkus, Scorecard, Risk Factor Sum, and DCF methods. |
+| [Stock Profit/Loss Calculator](../mcps/stock-profitloss-calculator.md) | Calculate ROI, tax liabilities, and risk metrics for stock trades and options strategies. |
 | [Stock Valuation DCF](../mcps/stock-valuation-dcf.md) | Estimate intrinsic stock value using a multi-stage Discounted Cash Flow (DCF) model with sensitivity analysis. |
 | [Supply Chain Cost Calculator](../mcps/supply-chain-cost-calculator.md) | Calculate SCM cost ratio, category breakdown, and industry benchmarks. |
 | [TAM-SAM-SOM Calculator](../mcps/tam-sam-som-calculator.md) | Calculate Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) using top-down and bottom-up methodologies. |
@@ -191,6 +200,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [US Post-Judgment Interest Calculator](../mcps/us-post-judgment-interest-calculator.md) | Calculate US Federal post-judgment interest accrual based on 28 U.S.C. § 1961 and Treasury Bill rates. |
 | [US Pre-judgment Interest Calculator](../mcps/us-pre-judgment-interest-calculator.md) | Calculate statutory pre-judgment interest for US states based on debt amount, default date, and state law. |
 | [US Quarterly Tax Estimator](../mcps/us-quarterly-tax-estimator.md) | Calculate exact US federal quarterly estimated tax payments and deadlines using Safe Harbor rules. |
+| [US Sales Tax Calculator](../mcps/us-sales-tax-calculator.md) | Calculate precise US sales and use tax liabilities based on jurisdiction, sourcing rules, and item exemptions. |
 | [US Section 409A Impact Calculator](../mcps/us-section-409a-impact-calculator.md) | Calculate legal strike price floors, tax penalties for non-compliant grants, and exercise window rules. |
 | [US Self-Employment Tax Calculator](../mcps/us-self-employment-tax-calculator.md) | Calculate US Self-Employment tax (Social Security and Medicare) and associated income tax deductions for the 202rag year. |
 | [US State Tax Calculator](../mcps/us-state-tax-calculator.md) | Calculate US state income tax rates and liabilities based on residency and taxable income. |
@@ -199,6 +209,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Vacation Provision Calculator](../mcps/vacation-provision-calculator.md) | Calculate employee vacation liabilities, including constitutional bonuses and employer taxes. |
 | [Value Engineering Comparator](../mcps/value-engineering-comparator.md) | Analyze construction alternatives by comparing Life Cycle Costs and Savings-to-Investment Ratios. |
 | [Virtual Currency Converter](../mcps/virtual-currency-converter.md) | Calculate real-world USD costs and economic efficiency of virtual currency bundles, item purchases, and gacha mechanics. |
+| [Water Usage Calculator](../mcps/water-usage-calculator.md) | Estimate household water consumption, identify leak impacts, and calculate the financial return on upgrading to water-efficient fixtures. |
+| [Workers' Compensation Premium Calculator](../mcps/workers-compensation-premium-calculator.md) | Estimate workers' comp premiums, deposits, and audit adjustments based on payroll, EMR, and region. |
 | [Working Capital Calculator](../mcps/working-capital-calculator.md) | Calculate your Cash Conversion Cycle and Working Capital Need instantly. |
 | [Yield Curve Analyzer](../mcps/yield-curve-analyzer.md) | Analyze interest rate curves, identify spreads, and detect recession signals. |
 

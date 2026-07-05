@@ -8,6 +8,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Advanced Timezone Engine](../mcps/advanced-timezone-engine.md) | Precise IANA timezone operations including historical DST transitions, ambiguity detection, and global time synchronization. |
 | [Audio Unit Converter](../mcps/audio-unit-converter.md) | Convert between musical frequencies, rhythmic durations, digital sample counts, and logarithmic amplitude levels. |
 | [Bates Numbering Generator Engine](../mcps/bates-numbering-generator-engine.md) | Generate flawless, sequentially accurate Bates numbering arrays for massive e-Discovery documentation without LLM skipping. |
+| [Blood Alcohol Content Calculator](../mcps/blood-alcohol-content-calculator.md) | Estimate BAC, legal limits, and impairment risks. |
 | [Bolt Pattern Finder](../mcps/bolt-pattern-finder.md) | Precise vehicle wheel specification lookup and cross-compatibility engine. |
 | [Button Sizing Engine](../mcps/button-sizing-engine.md) | Converts button sizes between Ligne, mm, and inches, and calculates buttonhole dimensions. |
 | [Calendar Converter](../mcps/calendar-converter.md) | Convert dates between 15+ calendar systems including Gregorian, Chinese, Persian, and Japanese Era. |
@@ -20,17 +21,21 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Deep Diff Engine](../mcps/deep-diff-engine.md) | Find every single change between two JSON objects — additions, deletions, and edits with exact structural paths. Stop relying on AI to 'spot the difference'. |
 | [Deterministic Cron Schedule Engine](../mcps/deterministic-cron-schedule-engine.md) | Equip your AI with precise cron job parsing. Deterministically translate cron to natural language, format schedules, and calculate exact next execution times. |
 | [Dimensional Weight Calculator](../mcps/dimensional-weight-calculator.md) | Calculate dimensional weights, billable weight, and shipping weight discrepancies for major global carriers. |
+| [Fraction Exact Calculator](../mcps/fraction-exact-calculator.md) | Perform exact rational number arithmetic, continued fraction analysis, and decimal expansion without floating-point errors. |
 | [Frequency & Note Converter](../mcps/frequency-note-converter.md) | Convert between musical frequencies and notes with precision. |
 | [Geographic Distance Calculator](../mcps/geographic-distance-calculator.md) | Calculate precise distances, bearings, and waypoints using Haversine, Vincenty, and Euclidean models. |
 | [Groove Quantize Calculator](../mcps/groove-quantize-calculator.md) | Calculate precise millisecond-based quantization grids, swing offsets, and latency compensation for DAWs. |
-| [Ideal Weight Calculator](../mcps/ideal-weight-calculator.md) | Calculate your target weight range using scientific formulas like Lorentz, Devine, and Robinson. |
 | [Menstrual Cycle Calculator](../mcps/menstrual-cycle-calculator.md) | Track menstrual cycle phases and identify fertile windows using historical period data. |
 | [Moon Phase Calculator](../mcps/moon-phase-calculator.md) | Calculate exact lunar phases, illumination percentages, and monthly schedules using astronomical algorithms. |
+| [Moving Truck Sizer](../mcps/moving-truck-sizer.md) | Calculate the exact truck size needed for your move based on home type and bulky items. |
 | [Multi-Monitor Arrangement Math](../mcps/multi-monitor-arrangement-math.md) | Calculate total desktop dimensions and coordinate offsets for multi-monitor setups. |
+| [Number Base Converter](../mcps/number-base-converter.md) | Convert integers and fractional numbers between any bases from 2 to 36 with high precision. |
 | [Pan Size Converter](../mcps/pan-size-converter.md) | Calculate baking pan volumes and find perfect shape or size substitutions. |
 | [Pet Age Converter](../mcps/pet-age-converter.md) | Calculate human-equivalent ages for dogs and cats using species-specific biological growth curves. |
 | [Pet Lifespan Estimator](../mcps/pet-lifespan-estimator.md) | Estimate pet longevity and identify life stages based on species, breed, and size. |
 | [Pitch Shift Speed Ratio Calculator](../mcps/pitch-shift-speed-ratio-calculator.md) | Calculate playback speed multipliers, adjusted durations, and new BPM for pitch shifting via varispeed. |
+| [Rank Percentile Calculator](../mcps/rank-percentile-calculator.md) | Discover exactly what percentage of players you've surpassed in games like Valorant, League of Legends, and CS2. |
+| [Roman Numeral Engine](../mcps/roman-numeral-engine.md) | Convert between Arabic integers and Roman numerals with support for large-scale values using vinculum notation. |
 | [RPM & Speed Gear Calculator](../mcps/rpm-speed-gear-calculator.md) | Calculate engine RPM at specific vehicle speeds or predict speed from a given RPM. |
 | [Shower Water Calculator](../mcps/shower-water-calculator.md) | Calculate water usage, costs, and carbon emissions for showers. |
 | [String Tension Calculator](../mcps/string-tension-calculator.md) | Calculate string tension, instrument total tension, and gauge requirements for musicians. |

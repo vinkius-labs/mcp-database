@@ -9,6 +9,7 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | [Crop Coord Maximizer](../mcps/crop-coord-maximizer.md) | Calculate pixel-perfect crop coordinates for any aspect ratio while preserving subject focus. |
 | [Hreflang Generator](../mcps/hreflang-generator.md) | Generate and validate SEO-compliant HTML hreflang tags and XML sitemap entries for multi-regional websites. |
 | [Robots.txt Generator](../mcps/robotstxt-generator.md) | Generate syntactically valid robots.txt files by configuring user-agent rules, crawl delays, and sitemap URLs. |
+| [Schedule Interruption Handler](../mcps/schedule-interruption-handler.md) | Adjust medical or procedural schedules based on missed doses and interruptions. |
 | [Subtitle Readability Pacer](../mcps/subtitle-readability-pacer.md) | Calculate optimal subtitle block distribution and timing based on speaking rate. |
 | [Video Timeline Packer](../mcps/video-timeline-packer.md) | Precisely adjust video clip durations through trimming and speeding up to fit a target timeline duration. |
 | [Water Hardener & Softener Balancer](../mcps/water-hardener-softener-balancer.md) | Precision calculator for mineral concentration adjustments in distilled water. |

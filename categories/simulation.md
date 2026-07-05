@@ -4,6 +4,7 @@ Explore the open database of **simulation** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Half-Life Decay Tracker](../mcps/half-life-decay-tracker.md) | Simulate drug concentration decay in the body after stopping doses. |
 | [I-Ching Hexagram Divination](../mcps/i-ching-hexagram-divination.md) | Simulate traditional I Ching coin-toss divination to generate hexagrams and interpretations. |
 
 

@@ -13,6 +13,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Environmental Impact Comparator](../mcps/environmental-impact-comparator.md) | Compare the carbon footprint and waste generation of different lifestyle choices side-by-side. |
 | [Numerology Compatibility](../mcps/numerology-compatibility.md) | Discover the vibrational alignment between individuals using numerological profiles. |
 | [Numerology Life Path Calculator](../mcps/numerology-life-path-calculator.md) | Discover your spiritual purpose and personality traits through Pythagorean numerology calculation. |
+| [Pregnancy Week-by-Week Calculator](../mcps/pregnancy-week-by-week-calculator.md) | Track pregnancy progress, fetal development milestones, and trimester symptoms. |
 | [Sun Sign Calculator](../mcps/sun-sign-calculator.md) | Calculate precise zodiac signs with year-specific cusp transitions and astrological properties. |
 | [Sustainability Score Calculator](../mcps/sustainability-score-calculator.md) | Quantify your environmental footprint and discover actionable paths to a more sustainable lifestyle. |
 | [Wine Pairing Matcher](../mcps/wine-pairing-matcher.md) | Get expert wine recommendations based on dish characteristics like protein, sauce weight, and intensity. |
