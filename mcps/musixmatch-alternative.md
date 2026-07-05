@@ -50,11 +50,11 @@ Connect your **Musixmatch** developer account to any AI agent and unlock deep ac
 - **get_track**: Get a track metadata by ID
 - **match_lyrics**: Match a track and get its lyrics in one call
 - **match_subtitle**: Match a track and get its subtitles
-- **match_track**: Match a track and get its metadata
 - **post_work**: Submit or update publishing data for a musical work
 - **post_work_validity**: Submit the validity end date for a work
 - **search_artists**: Search for an artist
 - **search_tracks**: Search for a track in the Musixmatch catalogue
+- **match_track**: Match a track and get its metadata
 
 
 ## 💬 Prompt Examples

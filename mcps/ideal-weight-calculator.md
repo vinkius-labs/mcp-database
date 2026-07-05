@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [utilities](../categories/utilities.md)
+**Category:** [health](../categories/health.md)
 
-Calculate your target weight range using scientific formulas like Lorentz, Devine, and Robinson.
+Determine personalized healthy weight ranges and nutritional transition plans using physiological markers.
 
 ## Description
-This MCP server provides a precise engine for calculating healthy weight ranges. By utilizing established physiological models including the Lorentz, Devine, and Robinson formulas, alongside a BMI 22 benchmark, it helps you understand your target body mass. Use `calculate_ideal_weight_metrics` to find your range, `assess_bmi_status` to check your current BMI category, and `calculate_weight_gap` to determine exactly how much weight you need to gain or lose to reach your ideal window.
+The Ideal Weight Calculator provides precise, science-based weight boundaries by integrating multiple anthropometric formulas including Devine, Robinson, Miller, and Ham/Hamwi. Beyond simple BMI, this tool accounts for skeletal frame size via elbow breadth measurements, muscle mass density, and target body fat percentages. Use `calculate_weight_ranges` to find your optimal bounds, `evaluate_bmi_status` to check specific weight points, or `plan_weight_transition` to calculate a safe daily caloric deficit or surplus for reaching your goal weight within a specified timeframe.
 
 
 ## Available Tools (3)
-- **assess_bmi_status**: Assess current BMI and category
-- **calculate_ideal_weight_metrics**: Calculate target weight values using various scientific formulas
-- **calculate_weight_gap**: Analyze the gap between current weight and target range
+- **calculate_weight_ranges**: Determines the minimum and maximum healthy weight boundaries
+- **plan_weight_transition**: Calculates nutritional adjustment for weight change
+- **evaluate_bmi_status**: Assesses the health classification of a specific weight
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides a precise engine for calculating healthy weight ranges.
 Here are some examples of how you can interact with the **Ideal Weight Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is my ideal weight range if I am a 180cm male?"
+> "What is my healthy weight range if I am a 30-year-old male, 180cm tall, with a large frame?"
 
 **🤖 AI Agent:**
-> Based on the Lorentz, Devine, and Robinson models, your target weight range is approximately 67.5kg to 78.2kg.
+> Based on your height and large frame size, your recommended healthy weight range is between 78.5 kg and 86.2 kg.
 
 ---
 
 **👤 You:**
-> "I am 165cm and weigh 70kg. What is my BMI?"
+> "I weigh 90kg at 175cm. What is my BMI status?"
 
 **🤖 AI Agent:**
-> Your current Body Mass Index (BMI) is 25.7, which falls into the Overweight category.
+> Your calculated BMI is 29.4, which falls into the Overweight category.
 
 ---
 
 **👤 You:**
-> "How much weight do I need to lose to reach a target range of 60kg to 65kg if I currently weigh 72kg?"
+> "I want to go from 85kg to 80kg in 6 weeks. How many calories should I cut daily?"
 
 **🤖 AI Agent:**
-> You are currently 7kg above your maximum target weight and 12kg above your minimum target weight.
+> To reach 80kg in 6 weeks, you need a daily calorie deficit of approximately 592 calories. This transition is considered safe.
 
 
 ## ❓ FAQ
 
-**Q: How accurate are these weight calculations?**
-The server uses scientifically recognized models like Devine and Robinson to provide estimates. While highly precise for physiological trends, they should be used as a guide rather than medical advice.
+**Q: How does the calculator determine my ideal weight range?**
+The `calculate_weight_ranges` tool uses four primary formulas (Devine, Robinson, Miller, and Hamwi) to establish a baseline, then adjusts that range based on your skeletal frame size, muscle mass factor, and target body fat percentage.
 
-**Q: Can I check my current BMI status?**
-Yes, you can use the `assess_bmi_status` tool by providing your height and weight to see your current BMI value and clinical category.
+**Q: Can I plan a weight loss journey safely?**
+Yes. By using `plan_weight_transition`, the tool calculates the necessary daily calorie adjustment and flags whether your target timeframe is safe, adhering to a limit of 1-2 lbs per week.
 
-**Q: How do I know how much weight to lose?**
-First, find your target range using `calculate_ideal_weight_metrics`. Then, use the `calculate_weight_gap` tool with your current weight and those targets to see the exact difference.
+**Q: What is the purpose of the elbow breadth measurement?**
+The elbow breadth measurement (in mm) allows the `calculate_weight_ranges` tool to determine your skeletal frame size (small, medium, or large), which is a critical factor in adjusting ideal mass calculations.
 
 
 ## Installation & Usage

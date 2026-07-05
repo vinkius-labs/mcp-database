@@ -7,18 +7,16 @@
 
 **Category:** [gaming](../categories/gaming.md)
 
-Calculate full probability distributions, statistical metrics, and success thresholds for any dice notation.
+Calculate exact and simulated probabilities for any dice combination, including sums, face frequencies, and drop mechanics.
 
 ## Description
-The Dice Probability Calculator is a specialized engine designed to model the mathematical outcomes of tabletop gaming dice rolls. By providing specific dice notations like '2d6' or '1d20+5', users can instantly retrieve complete statistical profiles including mean, median, mode, and standard deviation. The tool supports advanced mechanics such as advantage, disadvantage, and dropping lowest dice (e. handles 4d6 drop lowest). Use `compute_dice_distribution` to see the full frequency distribution, `calculate_threshold_probability` to find your chance of hitting a specific Difficulty Class (DC), or `compare_roll_mechanics` to quantify exactly how much advantage improves your success rate against a target value.
+The Dice Probability Calculator is a powerful engine designed for tabletop gamers and statisticians. It provides precise probability distributions for various dice-rolling scenarios. Use `dice_sum_probability` to find the likelihood of achieving a specific sum, `face_frequency_probability` to track how often a certain face appears in a pool, or `modified_distribution_probability` to calculate outcomes when dropping the lowest dice (like in D&D 5e). The engine uses exact combinatorial math for pools up to 10 dice and switches to high-precision Monte Carlo simulation for larger pools to ensure speed and accuracy.
 
 
 ## Available Tools (3)
-- **compare_roll_mechanics**: Quantifies the impact of changing a roll mechanic
-- **compute_dice_distribution**: g., "1d6"). Supports modifiers, dropCount, and mechanics like advantage/disadvantage.
-
-Computes the statistical profile for a dice notation
-- **calculate_threshold_probability**: Determines the probability of achieving a result >= target value
+- **face_frequency_probability**: Calculate the probability of a specific face appearing in a pool of dice
+- **modified_distribution_probability**: Calculate the probability of a dice sum after dropping lowest dice
+- **dice_sum_probability**: Calculate the probability of a specific dice sum
 
 
 ## 💬 Prompt Examples
@@ -26,38 +24,38 @@ Computes the statistical profile for a dice notation
 Here are some examples of how you can interact with the **Dice Probability Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is the average roll and standard deviation for 2d6?"
+> "What is the probability of rolling a sum of at least 15 on 3d6?"
 
 **🤖 AI Agent:**
-> For a 2d6 roll, the mean (average) is 7.0 and the standard deviation is approximately 1.71.
+> The probability of rolling a sum of at least 15 on 3d6 is approximately 0.0926 (9.26%).
 
 ---
 
 **👤 You:**
-> "What is my chance of rolling a 15 or higher on a 1d20+5?"
+> "How likely am I to roll at least one 6 when rolling 5d6?"
 
 **🤖 AI Agent:**
-> The probability of achieving a result of 15 or higher with 1d20+5 is 35%.
+> The probability of rolling at least one 6 on 5d6 is approximately 0.5981 (59.81%).
 
 ---
 
 **👤 You:**
-> "How much does advantage improve my chance of hitting a DC 15 on a 1d20 roll?"
+> "What's the chance of getting a sum of at least 12 on 4d6 after dropping the lowest die?"
 
 **🤖 AI Agent:**
-> Switching from a straight roll to advantage increases your success probability against DC 15 from 30% to 51.25%, an improvement of 21.25%.
+> The probability of rolling a sum of at least 12 on 4d6 after dropping the lowest die is approximately 0.8175 (81.75%).
 
 
 ## ❓ FAQ
 
-**Q: What dice notations are supported?**
-The engine supports standard notation like '1d20', '2d6+3', and complex rules like '4d6' with the `dropCount` parameter to simulate dropping the lowest die.
+**Q: How accurate are the results?**
+For pools of 10 dice or fewer, the engine uses exact combinatorial logic for 100% precision. For larger pools, it utilizes Monte Carlo simulation, which provides a highly accurate estimate with negligible error.
 
-**Q: How can I calculate my chance of success against a specific DC?**
-Use the `calculate_threshold_probability` tool. Provide your dice notation and the target value (DC) to get the exact percentage chance of success.
+**Q: Can I calculate probabilities for custom dice?**
+Yes. You can specify any number of sides per die, allowing you to model standard dice like d6 or d20, as well as custom configurations.
 
-**Q: Can I compare advantage vs. disadvantage?**
-Yes, the `compare_roll_mechanics` tool allows you to compare a base roll against 'advantage' or 'disadvantage' using metrics like mean or threshold success.
+**Q: Does it support mechanics like 'drop the lowest'?**
+Yes, using the `modified_distribution_probability` tool, you can calculate the probability of a sum after removing the lowest N dice from your pool.
 
 
 ## Installation & Usage

@@ -40,7 +40,6 @@ No more manual status checking or spreadsheet candidate tracking. Your AI acts a
 
 Add a new candidate
 - **create_talent_pool**: Create a new talent pool
-- **get_candidate_details**: Get specific candidate details
 - **get_job**: Get details for a specific job posting
 - **get_talent_pool**: Get details for a talent pool
 - **list_candidates**: List all candidates
@@ -49,6 +48,7 @@ Add a new candidate
 - **list_pipelines**: List all hiring pipelines
 - **list_talent_pools**: List all talent pools
 - **update_candidate**: Update candidate information
+- **get_candidate_details**: Get specific candidate details
 
 
 ## 💬 Prompt Examples

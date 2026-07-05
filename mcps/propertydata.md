@@ -90,11 +90,11 @@ Connect **PropertyData** to your AI agent to unlock professional-grade UK real e
 - **stamp_duty_calculator**: SDLT payable on a property transaction
 - **tenure_types**: ONS breakdown of local property stock by tenure
 - **title**: Address, type, and ownership information by title number
-- **title_use_class**: Predicted planning use class
 - **titles_by_company**: Search land titles by company ownership
+- **title_use_class**: Predicted planning use class
 - **uprn**: Property information from UPRN
-- **uprn_title**: Lookup a title number from a UPRN
 - **uprns**: Find UPRNs in a given postcode area
+- **uprn_title**: Lookup a title number from a UPRN
 - **valuation_commercial_rent**: Rental valuation for a commercial property
 - **valuation_commercial_sale**: Sale valuation for a commercial property
 - **valuation_historical**: Estimate the value of a property on a date in the past

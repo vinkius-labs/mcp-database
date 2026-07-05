@@ -27,18 +27,18 @@ Connect your **Presenton** account to any AI agent and simplify your presentatio
 
 
 ## Available Tools (12)
-- **check_presenton_status**: Verify connectivity
-- **delete_presentation**: Delete a presentation
-- **duplicate_presentation**: Duplicate a presentation
-- **export_presentation**: Export a presentation
 - **generate_presentation**: Generate a presentation
-- **get_account**: Get account
 - **get_presentation**: Get presentation
 - **get_template**: Get template
 - **list_presentations**: List presentations
 - **list_templates**: List templates
 - **list_themes**: List themes
 - **update_presentation**: Update a presentation
+- **check_presenton_status**: Verify connectivity
+- **delete_presentation**: Delete a presentation
+- **duplicate_presentation**: Duplicate a presentation
+- **export_presentation**: Export a presentation
+- **get_account**: Get account
 
 
 ## 💬 Prompt Examples

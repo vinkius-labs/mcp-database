@@ -24,7 +24,6 @@ Verify building compliance against universal accessibility standards (USA/EU) fo
 
 
 ## Available Tools (4)
-- **check_bathroom_spaciousness**: Confirm bathroom provides enough functional space for mobility aid maneuverability
 - **check_corridor_and_passage**: Returns compliance status and violation details.
 
 Verify corridor or passage meets minimum clear width for universal access
@@ -32,6 +31,7 @@ Verify corridor or passage meets minimum clear width for universal access
 - **check_ramp_compliance**: 33% maximum standard and checks for required transition landings.
 
 Determine if a ramp section meets maximum slope and landing requirements
+- **check_bathroom_spaciousness**: Confirm bathroom provides enough functional space for mobility aid maneuverability
 
 
 ## 💬 Prompt Examples

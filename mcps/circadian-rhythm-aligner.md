@@ -7,16 +7,16 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Gradual sleep and wake time adjustment planner.
+Gradually shift your feeding window to match new sleep patterns without metabolic shock.
 
 ## Description
-The Circadian Rhythm Aligner helps you transition to a new sleep schedule without the shock of sudden changes. By using tools like `calculate_adjustment_plan`, it generates a day-by-day schedule that shifts your bedtime and wake time by small, manageable increments (15 or 30 minutes). You can also use `analyze_sleep_window_integrity` to ensure your new schedule maintains healthy sleep durations and `calculate_drift_magnitude` to understand the total temporal shift required for your transition.
-
-### Available Tools
-
-`your_tool_name`
+The Circadian Rhythm Aligner helps you transition your eating schedule smoothly. By using tools like `generate_transition_schedule`, you can calculate a day-by compatible plan that avoids the physiological stress of abrupt changes. You can also use `assess_transition_intensity` to check if your proposed shift is gentle, moderate, or aggressive, and `calculate_shift_magnitude` to find the exact minutes needed for the adjustment.
 
 
+## Available Tools (3)
+- **generate_transition_schedule**: Generate a day-by-day feeding schedule for a transition
+- **assess_transition_intensity**: Assess the metabolic risk of a proposed time shift
+- **calculate_shift_magnitude**: Calculate the total minutes to shift between two times
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Circadian Rhythm Aligner helps you transition to a new sleep schedule withou
 Here are some examples of how you can interact with the **Circadian Rhythm Aligner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I currently sleep at 12:00 AM and wake up at 8:00 AM. I want to move my schedule to 11:00 PM and 7:00 AM using 30-minute increments. Can you make a plan?"
+> "I currently start eating at 08:00, but I want to move it to 12:00 over the next 4 days. Can you give me a schedule?"
 
 **🤖 AI Agent:**
-> To transition from your current schedule to 11:00 PM/7:00 AM, it will take 2 days. Day 1: Sleep at 11:30 PM, Wake at 7:30 AM. Day 2: Sleep at 11:00 PM, Wake at 7:00 AM.
+> Day 1: 09:00, Day 2: 10:00, Day 3: 11:00, Day 4: 12:00.
 
 ---
 
 **👤 You:**
-> "Is a sleep window from 1:00 AM to 6:30 AM healthy if my minimum requirement is 7 hours?"
+> "Is a 5-hour shift over 2 days considered safe?"
 
 **🤖 AI Agent:**
-> No, that schedule provides only 5.5 hours of sleep, which falls below your 7-hour threshold and poses a risk of sleep deprivation.
+> A 5-hour shift over 2 days results in a 2.5-hour daily change, which is categorized as Aggressive risk.
 
 ---
 
 **👤 You:**
-> "How many minutes do I need to shift from 10:00 PM to 12:30 AM?"
+> "How many minutes are between 07:30 and 10:45?"
 
 **🤖 AI Agent:**
-> The total drift magnitude required for this transition is 150 minutes.
+> The total shift magnitude is 195 minutes.
 
 
 ## ❓ FAQ
 
-**Q: How does the adjustment plan work?**
-The `calculate_adjustment_plan` tool creates a daily schedule that incrementally shifts your sleep and wake times by 15 or 30 minutes until you reach your target routine, minimizing biological disruption. Tools available: `your_tool_name`.
+**Q: How does the transition schedule work?**
+The `generate_transition_schedule` tool calculates a daily increment based on your current and target start times, spreading the change over several days to prevent metabolic shock.
 
-**Q: Can I check if my new schedule is healthy?**
-Yes, you can use the `analyze_sleep_window_integrity` tool to evaluate your scheduled sleep duration and ensure it meets a minimum threshold of healthy hours.
+**Q: What is metabolic shock?**
+Metabolic shock is the physiological stress caused by sudden changes in feeding windows, which can disrupt hormones like insulin and cortisol.
 
-**Q: How much drift is required for my change?**
-You can use `calculate_drift_magnitude` to find the total number of minutes your biological clock needs to migrate from your current time to your target time.
+**Q: Can I check if my plan is too aggressive?**
+Yes, you can use the `assess_transition_intensity` tool to determine if your daily rate of change falls into the Gentle, Moderate, or Aggressive category.
 
 
 ## Installation & Usage

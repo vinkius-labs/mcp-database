@@ -36,8 +36,6 @@ No more manual checking of individual tag locations or missing critical asset mo
 
 
 ## Available Tools (12)
-- **check_kitetags_status**: Verify connectivity
-- **create_group**: Create a group
 - **create_tag**: Create a tag
 - **delete_group**: Delete a group
 - **delete_tag**: Delete a tag
@@ -47,6 +45,8 @@ No more manual checking of individual tag locations or missing critical asset mo
 - **list_group_tags**: List tags in group
 - **list_groups**: List groups
 - **list_tags**: List tags
+- **check_kitetags_status**: Verify connectivity
+- **create_group**: Create a group
 - **search_tags**: Search tags
 
 

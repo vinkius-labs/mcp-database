@@ -35,12 +35,12 @@ Connect your AI agents to **Placer.ai**, the leading location intelligence platf
 
 
 ## Available Tools (10)
-- **get_demographics**: Get visitor demographics estimates
-- **get_poi_details**: Get complete details for a specific POI
-- **get_rankings**: Get location performance rankings
 - **get_same_store_visits**: Retrieve same-store foot traffic metrics
 - **get_api_status**: Check Placer.ai API operational status
 - **get_trade_area**: Get True Trade Area (TTA) coordinates
+- **get_demographics**: Get visitor demographics estimates
+- **get_poi_details**: Get complete details for a specific POI
+- **get_rankings**: Get location performance rankings
 - **get_trends**: Get visit trends over time
 - **get_visits**: Retrieve foot traffic visit counts
 - **list_properties**: ai account.

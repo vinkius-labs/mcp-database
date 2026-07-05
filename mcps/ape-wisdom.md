@@ -34,6 +34,7 @@ The **Ape Wisdom MCP Server** allows your AI agent to tap into the pulse of reta
 
 
 ## Available Tools (10)
+- **list_wallstreetbets**: List trending assets specifically from r/wallstreetbets
 - **get_market_snapshot**: Get a quick summary of top trending stocks and crypto
 - **get_sentiment_leaders**: Get assets with the highest positive sentiment
 - **get_top_gainers**: Get assets with the highest mention growth in the last 24h
@@ -42,7 +43,6 @@ The **Ape Wisdom MCP Server** allows your AI agent to tap into the pulse of reta
 - **list_trending_crypto**: List trending cryptocurrencies from crypto-focused subreddits
 - **list_trending_stocks**: List trending stocks from stock-focused subreddits
 - **list_trending_subreddit**: List trending assets from a specific subreddit
-- **list_wallstreetbets**: List trending assets specifically from r/wallstreetbets
 - **search_ticker**: Search for a specific ticker or coin in the trending lists
 
 

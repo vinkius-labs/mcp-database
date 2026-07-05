@@ -7,16 +7,16 @@
 
 **Category:** [finance](../categories/finance.md)
 
-Calculate electricity consumption in kWh and monthly costs for appliances.
+Calculate electricity running costs and the economic benefits of upgrading to energy-efficient appliances.
 
 ## Description
-This MCP server provides tools to estimate the energy footprint and financial impact of household appliances. Use `calculate_daily_consumption` to find daily kWh usage, `calculate_monthly_expenses` to determine monthly costs based on tariffs, or `get_appliance_impact_summary` for a complete breakdown including power rating, hours used, and energy pricing.
+The Appliance Energy Calculator MCP server provides precise financial estimations for appliance ownership. Use `calculate_running_cost` to determine the annual and lifetime electricity expenditure based on wattage and usage patterns. With `compare_upgrade_benefits`, you can calculate exactly how much money you will save by switching to an Energy Star model and find your payback period. Additionally, `estimate_usage_fluctuation` allows you to adjust projections for seasonal changes or time-of-use pricing shifts. This tool is essential for making data-driven decisions about appliance upgrades and managing long-term household energy budgets.
 
 
 ## Available Tools (3)
-- **get_appliance_impact_summary**: Get a complete energy and cost summary for an appliance
-- **calculate_daily_consumption**: Calculate the energy consumption of an appliance in one day
-- **calculate_monthly_expenses**: Calculate the monthly electricity cost for a given energy usage
+- **calculate_running_cost**: Calculate baseline annual and lifetime electricity expenditure
+- **compare_upgrade_benefits**: Calculate financial benefits of upgrading to a more efficient model
+- **estimate_usage_fluctuation**: Adjust energy cost projections for seasonal or time-of/use changes
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides tools to estimate the energy footprint and financial im
 Here are some examples of how you can interact with the **Appliance Energy Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "How much energy does a 1500W heater use in 5 hours per day?"
+> "How much will it cost to run a 1500W space heater for 8 hours a day at $0.15 per kWh for 5 years?"
 
 **🤖 AI Agent:**
-> A 1500W heater used for 5 hours daily consumes 7.5 kWh per day.
+> Running a 1500W heater for 8 hours daily will cost approximately $219.00 per year, totaling $1,095.00 over a 5-year period.
 
 ---
 
 **👤 You:**
-> "Calculate the monthly cost for 10kWh daily usage at $0.15 per kWh."
+> "I am replacing a 600W fridge with a 400W model that costs $300. Is it worth it at $0.12 per kWh and 10 hours of daily use?"
 
 **🤖 AI Agent:**
-> At a tariff of $0.15/kWh, 10kWh of daily usage results in a monthly cost of $45.00 (assuming a 30-day month).
+> The upgrade will result in lifetime savings of approximately $175.20 over a 10-year period, with a payback period of about 8.5 years.
 
 ---
 
 **👤 You:**
-> "Give me a summary for a 60W bulb used 12 hours a day with a $0.20 tariff."
+> "Adjust my $300 annual cost for an AC unit that uses 1.5x more energy during the 3 months of summer."
 
 **🤖 AI Agent:**
-> The bulb uses 0.72 kWh daily, which totals approximately 21.6 kWh per month and costs $4.32 monthly.
+> The adjusted annual cost, accounting for the seasonal intensity increase, is $337.50.
 
 
 ## ❓ FAQ
 
-**Q: How do I calculate daily energy usage?**
-You can use the `calculate_daily_consumption` tool by providing the appliance's power rating in Watts and the number of hours it is used per day.
+**Q: How do I calculate the cost of running my refrigerator?**
+Use the `calculate_running_cost` tool. You will need to provide the wattage of your refrigerator, how many hours it runs per day, your local electricity rate, and its expected lifespan.
 
-**Q: Can I estimate monthly electricity costs?**
-Yes, the `calculate_monthly_expenses` tool allows you to input daily kWh usage and your local energy tariff to find the total cost for a specific number of days.
+**Q: Can I determine if an Energy Star upgrade is worth the cost?**
+Yes, use `compare_upgrade_benefits`. By inputting your current appliance's wattage and the new model's wattage along with the upgrade cost, the tool calculates your lifetime savings and the payback period.
 
-**Q: What information is needed for a full summary?**
-The `get_appliance_impact_summary` tool requires the power rating in Watts, hours used per day, energy tariff, and optionally the number of days in the month.
+**Q: How does seasonal usage affect my estimates?**
+You can use the `estimate_usage_fluctuation` tool to adjust your base annual costs. This is useful for appliances like air conditioners that have higher intensity usage during specific months of the year.
 
 
 ## Installation & Usage
