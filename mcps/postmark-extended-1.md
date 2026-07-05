@@ -57,8 +57,8 @@ Connect your **Postmark** account to any AI agent to automate your transactional
 - **edit_server**: Edit server settings (Account level)
 - **edit_template**: Edit an existing template
 - **edit_webhook**: Edit a webhook
-- **get_bounce**: Get details for a specific bounce
 - **get_bounce_dump**: Get raw SMTP dump for a bounce
+- **get_bounce**: Get details for a specific bounce
 - **get_bulk_request_status**: Get bulk email request status
 - **get_current_server**: Get current server configuration (Server level)
 - **get_data_removal_status**: Check data removal request status

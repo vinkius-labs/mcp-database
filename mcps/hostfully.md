@@ -14,8 +14,6 @@ Connect your AI agents to Hostfully's Property Management System. This MCP serve
 
 
 ## Available Tools (10)
-- **get_agency**: Retrieves details for a specific agency
-- **get_lead**: Retrieves details for a specific lead
 - **get_property**: Retrieves details for a specific property
 - **list_agencies**: Lists all agencies the API key is authorized to access
 - **list_guests**: Lists guests associated with an agency
@@ -26,6 +24,8 @@ Connect your AI agents to Hostfully's Property Management System. This MCP serve
 Lists all properties belonging to an agency
 - **list_service_providers**: Lists service providers (cleaners, maintenance) for an agency
 - **list_webhooks**: Lists webhooks configured for an agency
+- **get_agency**: Retrieves details for a specific agency
+- **get_lead**: Retrieves details for a specific lead
 
 
 ## 💬 Prompt Examples

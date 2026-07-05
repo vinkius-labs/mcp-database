@@ -36,7 +36,6 @@ No more manual tracking of pending contracts. Your AI acts as a digital legal as
 
 
 ## Available Tools (25)
-- **update_me**: Update current member info
 - **archive_task**: Archive a DottedSign task
 - **create_file_mission**: Create a file mission
 - **create_public_form**: Create a public form
@@ -58,6 +57,7 @@ No more manual tracking of pending contracts. Your AI acts as a digital legal as
 - **restore_task**: Restore a DottedSign task
 - **unarchive_task**: Unarchive a DottedSign task
 - **update_groups**: Update group info
+- **update_me**: Update current member info
 - **update_public_form**: Update a public form
 - **update_task**: Update a DottedSign task
 - **void_task**: Void a DottedSign task

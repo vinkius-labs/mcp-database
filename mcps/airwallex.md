@@ -36,9 +36,9 @@ No more manual logging into banking portals to check multicurrency balances or F
 
 
 ## Available Tools (6)
+- **list_accounts**: List all accounts
 - **get_balance**: Get account balance
 - **get_fx_rates**: Get current FX quotes
-- **list_accounts**: List all accounts
 - **list_beneficiaries**: List beneficiaries
 - **list_payments**: List recent payments
 - **list_transfers**: List all transfers

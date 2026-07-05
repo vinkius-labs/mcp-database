@@ -36,14 +36,14 @@ Connect your **Databricks** workspace to any AI agent and take full control of y
 
 
 ## Available Tools (8)
+- **list_schemas**: List schemas in catalog from Databricks
+- **get_me**: Get current user from Databricks
+- **list_warehouses**: List SQL warehouses from Databricks
+- **list_catalogs**: List Unity Catalog catalogs from Databricks
 - **list_clusters**: List all clusters from Databricks
 - **get_cluster**: Get cluster details from Databricks
 - **list_jobs**: List all jobs from Databricks
 - **list_job_runs**: List job runs from Databricks
-- **list_warehouses**: List SQL warehouses from Databricks
-- **list_catalogs**: List Unity Catalog catalogs from Databricks
-- **list_schemas**: List schemas in catalog from Databricks
-- **get_me**: Get current user from Databricks
 
 
 ## 💬 Prompt Examples

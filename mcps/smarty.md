@@ -35,11 +35,11 @@ Stop manually typing test addresses into the Smarty sandbox or setting up Postma
 
 
 ## Available Tools (7)
-- **autocomplete_intl_address**: Predictive autocomplete for international addresses
-- **autocomplete_us_address**: Predictive autocomplete for US addresses
 - **extract_addresses**: g., emails, documents) and find valid addresses.
 
 Extracts physical addresses from raw text
+- **autocomplete_intl_address**: Predictive autocomplete for international addresses
+- **autocomplete_us_address**: Predictive autocomplete for US addresses
 - **get_account_info**: Retrieves Smarty account information
 - **validate_intl_address**: Requires at least the address line and country.
 

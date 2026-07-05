@@ -34,6 +34,7 @@ Connect your **Coppel** B2B account to any AI agent and manage Mexico's largest 
 
 
 ## Available Tools (14)
+- **list_categories**: List all product categories
 - **create_order**: Specify the product IDs, quantities, delivery address, and payment method. Credit-eligible customers can select weekly payment plans (abonos semanales).
 
 Place a new order
@@ -44,7 +45,6 @@ Check a customer's Coppel credit status
 - **get_order**: Get full details of a specific order
 - **get_product**: Get full details of a specific product
 - **get_store**: Get details of a specific store
-- **list_categories**: List all product categories
 - **list_customers**: List registered customers
 - **list_orders**: Filter by status to find pending or delivered orders.
 

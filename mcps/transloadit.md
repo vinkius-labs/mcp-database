@@ -34,6 +34,9 @@ Transform your AI agent into a full-scale media orchestration engine by connecti
 
 
 ## Available Tools (10)
+- **delete_template**: This action is irreversible.
+
+Permanently deletes a processing template
 - **cancel_assembly**: This action is final.
 
 Aborts a running Transloadit assembly
@@ -43,9 +46,6 @@ Creates a Transloadit assembly for automated file processing
 - **create_processing_template**: Provide a name and the steps JSON.
 
 Creates a reusable JSON template for file processing
-- **delete_template**: This action is irreversible.
-
-Permanently deletes a processing template
 - **get_assembly_details**: Retrieves the status and results of a specific Transloadit assembly
 - **get_billing_usage**: Pass the month in YYYY-MM format.
 

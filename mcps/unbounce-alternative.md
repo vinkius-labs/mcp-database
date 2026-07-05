@@ -35,7 +35,6 @@ Connect your **Unbounce** account to any AI agent and simplify how you manage yo
 
 
 ## Available Tools (10)
-- **list_accounts**: List all Unbounce accounts
 - **list_domains**: List custom domains
 - **list_form_fields**: List form fields for a page
 - **get_lead**: Get details for a specific lead
@@ -45,6 +44,7 @@ Connect your **Unbounce** account to any AI agent and simplify how you manage yo
 - **list_page_groups**: List page groups
 - **list_pages**: List pages for a sub-account
 - **list_sub_accounts**: List sub-accounts (clients)
+- **list_accounts**: List all Unbounce accounts
 
 
 ## 💬 Prompt Examples

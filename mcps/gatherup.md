@@ -37,8 +37,6 @@ Connect your **GatherUp** account to any AI agent to automate your review manage
 
 
 ## Available Tools (12)
-- **add_new_customer**: Sync a customer
-- **verify_api_connection**: Check connection
 - **get_review_metrics**: Get location stats
 - **get_account_info**: Get user identity
 - **list_business_locations**: List business units
@@ -49,8 +47,10 @@ Connect your **GatherUp** account to any AI agent to automate your review manage
 - **reply_to_online_review**: g. Google or Facebook).
 
 Reply to external review
-- **search_all_reviews**: Search all feedback
 - **send_review_invite**: Request a review
+- **add_new_customer**: Sync a customer
+- **verify_api_connection**: Check connection
+- **search_all_reviews**: Search all feedback
 
 
 ## 💬 Prompt Examples

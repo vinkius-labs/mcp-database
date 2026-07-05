@@ -33,8 +33,8 @@ Integrate **Donorbox**, the powerful and easy-to-use donation software, directly
 
 
 ## Available Tools (10)
-- **get_donorbox_account_metadata**: Retrieve metadata for the current authenticated user
 - **get_campaign_details**: Get detailed settings and progress for a specific campaign
+- **get_donorbox_account_metadata**: Retrieve metadata for the current authenticated user
 - **quick_campaign_performance_audit**: Retrieve a high-level summary of all campaign success rates
 - **list_active_subscription_plans**: Identify recurring plans that are currently in an "Active" status
 - **list_fundraising_campaigns**: List all fundraising campaigns configured in Donorbox

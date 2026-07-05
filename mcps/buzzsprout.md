@@ -35,12 +35,12 @@ Connect your **Buzzsprout** account to any AI agent and orchestrate your podcast
 
 
 ## Available Tools (7)
+- **get_episode**: Get details of a specific episode
+- **list_episodes**: List all podcast episodes
 - **create_episode**: Create a new podcast episode
 - **delete_episode**: Delete an episode permanently
 - **get_account_info**: Retrieve core account/podcast settings
-- **get_episode**: Get details of a specific episode
 - **get_podcast_info**: Retrieve core podcast information
-- **list_episodes**: List all podcast episodes
 - **update_episode**: Update an existing episode
 
 

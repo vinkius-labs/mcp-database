@@ -36,11 +36,6 @@ No more managing browser clusters or rotating IPs. Your AI acts as a dedicated d
 
 
 ## Available Tools (12)
-- **ai_data_extraction**: Extract structured data
-- **get_api_status**: Check account info
-- **list_extraction_models**: List AI models
-- **get_project_details**: Get project info
-- **get_scraping_capabilities**: Check scraping features
 - **get_screenshot_capabilities**: Check screenshot features
 - **check_credit_usage**: Check usage stats
 - **list_proxy_regions**: Check proxy options
@@ -48,6 +43,11 @@ No more managing browser clusters or rotating IPs. Your AI acts as a dedicated d
 - **web_scrape**: Scrape any website
 - **capture_screenshot**: Take a website screenshot
 - **test_scrapfly_auth**: Verify credentials
+- **ai_data_extraction**: Extract structured data
+- **get_api_status**: Check account info
+- **list_extraction_models**: List AI models
+- **get_project_details**: Get project info
+- **get_scraping_capabilities**: Check scraping features
 
 
 ## 💬 Prompt Examples

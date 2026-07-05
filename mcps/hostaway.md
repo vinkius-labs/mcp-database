@@ -22,6 +22,7 @@ Connect **Hostaway** to any AI agent — the leading vacation rental channel man
 
 
 ## Available Tools (8)
+- **get_financials**: Get reservation financials
 - **list_listings**: List vacation rental listings
 - **get_listing**: Get listing details
 - **list_reservations**: List reservations
@@ -33,7 +34,6 @@ Get availability calendar
 
 List connected channels
 - **list_conversations**: List guest conversations
-- **get_financials**: Get reservation financials
 
 
 ## 💬 Prompt Examples

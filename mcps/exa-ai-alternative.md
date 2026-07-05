@@ -36,12 +36,12 @@ No more manual keyword-based searching or messy scraping scripts. Your AI acts a
 
 
 ## Available Tools (12)
+- **keyword_search**: Search by exact keywords
 - **advanced_custom_search**: Complex search query
 - **find_similar_pages**: Find matches for a URL
 - **get_api_status**: Check connection
 - **extract_page_content**: Retrieve web page text
 - **get_query_highlights**: Extract relevant snippets
-- **keyword_search**: Search by exact keywords
 - **perform_live_crawl**: Fresh web extraction
 - **search_with_contents**: Search and extract text
 - **search_by_category**: Search by site type
