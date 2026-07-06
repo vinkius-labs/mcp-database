@@ -34,16 +34,16 @@ Connect your **Bidsketch** account to any AI agent and orchestrate your professi
 
 
 ## Available Tools (10)
-- **create_client**: Create a new client
-- **create_proposal**: Create a new proposal
-- **get_client**: Get specific client details
-- **get_proposal**: Get specific proposal details
-- **get_user_details**: Get current user details
 - **list_clients**: List all clients
 - **list_fees**: List fees for a specific proposal
 - **list_proposals**: List all proposals
 - **list_templates**: List all proposal templates
 - **update_proposal**: Update an existing proposal
+- **create_client**: Create a new client
+- **create_proposal**: Create a new proposal
+- **get_client**: Get specific client details
+- **get_proposal**: Get specific proposal details
+- **get_user_details**: Get current user details
 
 
 ## 💬 Prompt Examples

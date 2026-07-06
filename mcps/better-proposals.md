@@ -34,16 +34,16 @@ Connect your **Better Proposals** account to any AI agent and orchestrate your s
 
 
 ## Available Tools (10)
-- **create_contact**: Create a new contact
-- **create_proposal**: Create a new proposal
-- **get_analytics**: Retrieve proposal analytics
-- **get_company**: Get specific company details
 - **get_contact**: Get specific contact details
 - **get_proposal**: Get specific proposal details
 - **list_companies**: List all companies
 - **list_contacts**: List all contacts
 - **list_proposals**: List all proposals
 - **list_templates**: List all proposal templates
+- **create_contact**: Create a new contact
+- **create_proposal**: Create a new proposal
+- **get_analytics**: Retrieve proposal analytics
+- **get_company**: Get specific company details
 
 
 ## 💬 Prompt Examples

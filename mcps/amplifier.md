@@ -39,9 +39,9 @@ Connect your **Amplifier** account to your AI agent to unlock professional e-com
 - **get_order_details**: Get order metadata
 - **create_order**: Submit new order
 - **list_items**: List catalog items
-- **get_item_details**: Get item metadata
 - **get_inventory_report**: Get inventory stock levels
 - **get_shipment_report**: Get shipment tracking
+- **get_item_details**: Get item metadata
 
 
 ## 💬 Prompt Examples

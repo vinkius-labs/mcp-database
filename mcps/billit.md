@@ -28,15 +28,15 @@ Connect your **Billit** account to any AI agent and orchestrate your e-invoicing
 
 
 ## Available Tools (9)
+- **list_expenses**: List all expenses
+- **list_invoices**: List all invoices
+- **list_parties**: List all parties (customers/suppliers)
+- **list_products**: List all products
 - **create_invoice**: Create a new invoice
 - **create_party**: Create a new party (customer)
 - **get_company_info**: Get your company information
 - **get_invoice**: Get specific invoice details
 - **get_party**: Get specific party details
-- **list_expenses**: List all expenses
-- **list_invoices**: List all invoices
-- **list_parties**: List all parties (customers/suppliers)
-- **list_products**: List all products
 
 
 ## 💬 Prompt Examples

@@ -27,6 +27,7 @@ Requires a free API key from the Census Bureau.
 - **get_population_by_state**: The ACS is the most comprehensive demographic survey in the U.S., sampling 3.5 million households annually.
 
 Get total population and median age for all 50 U.S. states + DC
+- **get_demographics_by_county**: Get racial and ethnic demographics for all counties in a state
 - **get_population_by_county**: Use state FIPS codes: CA=06, TX=48, NY=36, FL=12, IL=17, PA=42, OH=39, GA=13, NC=37, MI=26, etc.
 
 Get population and median age for all counties in a state
@@ -36,7 +37,6 @@ Get population for all cities/towns/places within a state
 - **get_demographics_by_state**: Essential for diversity analysis, market segmentation, and policy research.
 
 Get racial and ethnic demographics for all states — White, Black, Asian, Hispanic, foreign-born
-- **get_demographics_by_county**: Get racial and ethnic demographics for all counties in a state
 
 
 ## 💬 Prompt Examples

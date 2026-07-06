@@ -35,9 +35,6 @@ Ideal for **budget travelers**, **students**, **eco-conscious commuters**, **tra
 
 
 ## Available Tools (8)
-- **get_driver_profile**: Use this to verify driver credibility and read passenger reviews before booking a ride. Requires the driver user ID from a trip result.
-
-Get driver profile and ratings on BlaBlaCar
 - **get_trip_details**: Use this before booking to verify driver credibility, vehicle comfort, and exact pickup location.
 
 Get complete details of a specific BlaBlaCar trip including driver and vehicle info
@@ -59,6 +56,9 @@ Search carpool trips between two GPS coordinates on BlaBlaCar
 - **search_trips_with_radius**: Useful when exact pickup/dropoff locations are flexible. Larger radius returns more options but may require additional travel to reach departure points. Returns all rides within the specified radius.
 
 Search carpool trips with flexible radius around coordinates
+- **get_driver_profile**: Use this to verify driver credibility and read passenger reviews before booking a ride. Requires the driver user ID from a trip result.
+
+Get driver profile and ratings on BlaBlaCar
 
 
 ## 💬 Prompt Examples

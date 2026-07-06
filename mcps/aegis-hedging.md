@@ -36,9 +36,9 @@ Connect your **AEGIS Hedging** (Revenue Intelligence) account to your AI agent t
 
 ## Available Tools (4)
 - **list_trades**: List energy hedge trades
+- **check_api_version**: Check AEGIS API version
 - **get_valuations**: Get real-time MTM valuations
 - **get_forward_curves**: Retrieve energy forward curves
-- **check_api_version**: Check AEGIS API version
 
 
 ## 💬 Prompt Examples

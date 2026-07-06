@@ -39,8 +39,8 @@ Orchestrate your team's rhythm with **Ayanza**, the AI-first project management 
 - **delete_task**: Delete an Ayanza task
 - **get_me**: Get current authenticated user info
 - **get_project**: Get details for a specific Ayanza project
-- **get_task**: Get details for a specific Ayanza task
 - **list_projects**: List projects in Ayanza
+- **get_task**: Get details for a specific Ayanza task
 - **list_tasks**: List tasks in Ayanza
 - **list_users**: List users in the Ayanza workspace
 - **list_wiki_pages**: List wiki pages in Ayanza

@@ -36,10 +36,6 @@ No more switching between your IDE and the Weblate dashboard to check translatio
 
 
 ## Available Tools (32)
-- **add_group_admins**: Add team administrators to a group
-- **add_group_roles**: Associate roles with a group
-- **create_group**: Create a new group
-- **create_language**: Create a new language definition
 - **create_project_component**: Create a new component in a project
 - **create_project**: Create a new project
 - **create_role**: Create a new role with specific permissions
@@ -70,6 +66,10 @@ No more switching between your IDE and the Weblate dashboard to check translatio
 - **list_users**: Requires management permissions or returns self.
 
 List Weblate users
+- **add_group_admins**: Add team administrators to a group
+- **add_group_roles**: Associate roles with a group
+- **create_group**: Create a new group
+- **create_language**: Create a new language definition
 
 
 ## 💬 Prompt Examples

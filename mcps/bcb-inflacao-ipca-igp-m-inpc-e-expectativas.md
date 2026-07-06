@@ -21,12 +21,6 @@ Brazilian inflation data.
 
 
 ## Available Tools (5)
-- **get_ipca**: Usado como meta de inflação pelo BCB. Mede a variação de preços de uma cesta de consumo para famílias com renda de 1 a 40 salários mínimos. Série SGS: 433.
-
-Obter o IPCA — Índice Nacional de Preços ao Consumidor Amplo
-- **get_ipca15**: Muito acompanhado pelo mercado como antecipação do IPCA. Série SGS: 7478.
-
-Obter o IPCA-15 — prévia da inflação oficial
 - **get_igpm**: Usado como indexador de aluguéis e contratos. Composição: 60% IPA (atacado) + 30% IPC (consumo) + 10% INCC (construção). Série SGS: 189.
 
 Obter o IGP-M — Índice Geral de Preços - Mercado
@@ -36,6 +30,12 @@ Obter o INPC — Índice Nacional de Preços ao Consumidor
 - **get_expectativas_inflacao**: Filtre por indicador: IPCA, IGP-DI, IGP-M. Inclui mediana, média, mínimo, máximo e desvio padrão.
 
 Obter as expectativas do mercado para a inflação (Relatório Focus)
+- **get_ipca**: Usado como meta de inflação pelo BCB. Mede a variação de preços de uma cesta de consumo para famílias com renda de 1 a 40 salários mínimos. Série SGS: 433.
+
+Obter o IPCA — Índice Nacional de Preços ao Consumidor Amplo
+- **get_ipca15**: Muito acompanhado pelo mercado como antecipação do IPCA. Série SGS: 7478.
+
+Obter o IPCA-15 — prévia da inflação oficial
 
 
 ## 💬 Prompt Examples

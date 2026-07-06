@@ -34,8 +34,8 @@ No more manual drafting or navigating complex legal platforms. Your AI agent bec
 
 
 ## Available Tools (10)
-- **create_webhook**: Configure a new webhook to receive contract status updates
 - **delete_webhook**: Remove a previously configured webhook
+- **create_webhook**: Configure a new webhook to receive contract status updates
 - **get_agreement**: Retrieve detailed information about a specific agreement
 - **get_template**: Retrieve details of a specific contract template
 - **list_agreements**: Retrieve a list of agreements (contracts) from Common Paper

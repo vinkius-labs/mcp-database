@@ -35,10 +35,10 @@ Connect your **Buildium** account to any AI agent and orchestrate your property 
 
 ## Available Tools (10)
 - **get_company_info**: Retrieve core company information
+- **list_properties**: List all rental properties
 - **get_property**: Get details of a specific property
 - **get_tenant**: Get details of a specific tenant
 - **get_unit**: Get details of a specific unit
-- **list_properties**: List all rental properties
 - **list_tasks**: List all maintenance tasks
 - **list_tenants**: List all rental tenants
 - **list_units**: List all rental units

@@ -34,7 +34,6 @@ Connect your **Woodpecker CI** server to any AI agent to automate your continuou
 
 
 ## Available Tools (34)
-- **activate_repo**: Activate a repository
 - **cancel_pipeline**: Cancel a running pipeline
 - **chown_repo**: Change repository owner to the current user
 - **create_agent**: Create a new Woodpecker agent
@@ -68,6 +67,7 @@ Connect your **Woodpecker CI** server to any AI agent to automate your continuou
 - **trigger_pipeline**: Trigger a manual pipeline
 - **update_agent**: Update an existing agent
 - **update_repo**: Update repository settings
+- **activate_repo**: Activate a repository
 
 
 ## 💬 Prompt Examples

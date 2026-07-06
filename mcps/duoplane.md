@@ -33,10 +33,10 @@ Integrate **Duoplane**, the leading multi-vendor e-commerce automation platform,
 
 
 ## Available Tools (11)
-- **get_duoplane_account_metadata**: Retrieve metadata for the current Duoplane subdomain
 - **get_order_details**: Get detailed information and status for a specific customer order
 - **get_purchase_order_details**: Get detailed information for a specific purchase order
 - **quick_vendor_inventory_audit**: Retrieve a high-level summary of vendor activity and product counts
+- **get_duoplane_account_metadata**: Retrieve metadata for the current Duoplane subdomain
 - **get_vendor_profile**: Get detailed profile and configuration for a specific vendor
 - **list_ecommerce_orders**: List all customer orders in your Duoplane account
 - **list_purchase_orders**: List all purchase orders (POs) sent to vendors
