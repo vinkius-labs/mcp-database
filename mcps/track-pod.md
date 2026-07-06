@@ -35,15 +35,15 @@ Connect your **Track-POD** delivery automation account to any AI agent and simpl
 
 
 ## Available Tools (7)
-- **create_order**: Requires order number and client name.
-
-Create a new delivery order
 - **get_order_by_number**: Get details for a specific order
 - **list_drivers**: List all drivers
 - **list_orders**: List all Track-POD orders
 - **list_routes**: List delivery routes
 - **list_vehicles**: List all vehicles
 - **test_api_connection**: Test API key and connection
+- **create_order**: Requires order number and client name.
+
+Create a new delivery order
 
 
 ## 💬 Prompt Examples

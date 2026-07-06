@@ -25,11 +25,6 @@ Perfect for customer success teams, marketing professionals, and community manag
 
 
 ## Available Tools (14)
-- **bulk_create_invite_requests**: Bulk create invite requests
-- **create_invite_request**: Create a new invite request
-- **create_subaccount**: Create a new sub account
-- **delete_invite_request**: Delete an invite request
-- **delete_subaccount**: Delete a sub account
 - **get_invite_request**: Get a specific invite request
 - **get_review**: Get a specific review by ID
 - **get_subaccount**: Get a specific sub account
@@ -39,6 +34,11 @@ Perfect for customer success teams, marketing professionals, and community manag
 - **list_subaccounts**: List Repuso sub accounts
 - **list_users**: List users in Repuso
 - **update_subaccount**: Update a sub account
+- **bulk_create_invite_requests**: Bulk create invite requests
+- **create_invite_request**: Create a new invite request
+- **create_subaccount**: Create a new sub account
+- **delete_invite_request**: Delete an invite request
+- **delete_subaccount**: Delete a sub account
 
 
 ## 💬 Prompt Examples

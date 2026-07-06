@@ -36,8 +36,6 @@ No more manual copy-pasting of proxy strings or missing connectivity drops. Your
 
 
 ## Available Tools (10)
-- **check_proxy_status**: Verify Residential Proxies API connectivity
-- **get_proxy_count**: Get the total number of available proxies
 - **get_br_proxies**: Get Brazil residential proxies
 - **get_proxies_by_country**: g., US, GB, DE, BR).
 
@@ -52,6 +50,8 @@ Get a limited number of proxies
 - **get_multi_country_proxies**: Returns a summary with counts and sample proxies per country.
 
 Get proxies from multiple countries at once
+- **check_proxy_status**: Verify Residential Proxies API connectivity
+- **get_proxy_count**: Get the total number of available proxies
 
 
 ## 💬 Prompt Examples

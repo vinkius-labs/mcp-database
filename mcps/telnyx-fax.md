@@ -34,7 +34,6 @@ Connect your **Telnyx** account to any AI agent and send, receive, and manage fa
 
 
 ## Available Tools (10)
-- **cancel_fax**: Cancel a fax
 - **check_telnyx_status**: Verify Telnyx API connectivity
 - **get_fax_application**: Get fax application details
 - **get_fax**: Get fax details
@@ -46,6 +45,7 @@ Connect your **Telnyx** account to any AI agent and send, receive, and manage fa
 - **send_fax**: Requires connection ID (from), recipient number, and media URL.
 
 Send a fax
+- **cancel_fax**: Cancel a fax
 
 
 ## 💬 Prompt Examples

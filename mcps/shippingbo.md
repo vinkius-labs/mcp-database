@@ -36,7 +36,6 @@ No more manual stock checks or order hunting. Your AI acts as a dedicated logist
 
 
 ## Available Tools (8)
-- **get_order**: Get order details
 - **get_product**: Get product details
 - **list_orders**: List all orders
 - **list_packs**: List packaging options
@@ -44,6 +43,7 @@ No more manual stock checks or order hunting. Your AI acts as a dedicated logist
 - **list_shipments**: List all shipments
 - **list_warehouse_slots**: List warehouse storage slots
 - **update_stock**: Update product stock level
+- **get_order**: Get order details
 
 
 ## 💬 Prompt Examples

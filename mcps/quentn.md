@@ -36,9 +36,6 @@ No more manual contact entry or searching through sequences. Your AI acts as a d
 
 
 ## Available Tools (11)
-- **create_contact**: Create a new contact
-- **delete_contact**: Delete a contact
-- **get_campaign**: Get campaign details
 - **get_contact**: Get contact details by ID
 - **get_tag_details**: Get details for a specific tag
 - **list_campaigns**: List all campaigns
@@ -47,6 +44,9 @@ No more manual contact entry or searching through sequences. Your AI acts as a d
 - **list_users**: List system users
 - **send_email**: Send an email to a contact
 - **update_contact**: Update an existing contact
+- **create_contact**: Create a new contact
+- **delete_contact**: Delete a contact
+- **get_campaign**: Get campaign details
 
 
 ## 💬 Prompt Examples

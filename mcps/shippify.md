@@ -28,8 +28,6 @@ Connect your **Shippify** account to any AI agent and simplify your logistics or
 
 
 ## Available Tools (11)
-- **cancel_delivery**: Cancel a pending delivery
-- **get_driver**: Get details for a specific driver
 - **get_delivery_quote**: Get a delivery price quote
 - **get_tracking**: Get real-time tracking for a delivery
 - **list_drivers**: List all available delivery drivers
@@ -39,6 +37,8 @@ Connect your **Shippify** account to any AI agent and simplify your logistics or
 - **get_delivery_tracking**: Check live tracking info
 - **list_deliveries**: List Shippify deliveries
 - **list_warehouses**: List available warehouses
+- **cancel_delivery**: Cancel a pending delivery
+- **get_driver**: Get details for a specific driver
 
 
 ## 💬 Prompt Examples

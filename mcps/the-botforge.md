@@ -34,15 +34,15 @@ Connect your **The Botforge** account to any AI agent and simplify how you manag
 
 
 ## Available Tools (5)
+- **subscribe_webhook**: Pass data as a JSON string.
+
+Subscribe to bot events via webhook
 - **get_bot_status**: Check bot operational status
 - **get_samples**: Get bot form field samples
 - **list_bots**: List all chatbots
 - **submit_contact**: Pass data as a JSON string.
 
 Submit data to the bot contact form
-- **subscribe_webhook**: Pass data as a JSON string.
-
-Subscribe to bot events via webhook
 
 
 ## 💬 Prompt Examples

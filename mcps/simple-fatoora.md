@@ -36,6 +36,13 @@ No more manual ZATCA reporting or spreadsheet billing. Your AI acts as a dedicat
 
 
 ## Available Tools (11)
+- **delete_client**: Delete a client
+- **get_client**: Get client details by ID
+- **get_invoice**: Get invoice details by ID
+- **list_clients**: List all clients
+- **list_invoices**: List all invoices
+- **list_items**: List all items/products
+- **update_client**: Update an existing client
 - **create_client**: Create a new client
 - **create_item**: Create a new item
 - **create_simplified_invoice**: Pass items as a JSON string.
@@ -44,13 +51,6 @@ Create a Simplified Tax Invoice (B2C)
 - **create_vat_invoice**: Pass items as a JSON string.
 
 Create a VAT Tax Invoice (B2B)
-- **delete_client**: Delete a client
-- **get_client**: Get client details by ID
-- **get_invoice**: Get invoice details by ID
-- **list_clients**: List all clients
-- **list_invoices**: List all invoices
-- **list_items**: List all items/products
-- **update_client**: Update an existing client
 
 
 ## 💬 Prompt Examples

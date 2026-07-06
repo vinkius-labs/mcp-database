@@ -28,7 +28,6 @@ Automate document collection and client onboarding with Superdocu and AI agents.
 
 
 ## Available Tools (12)
-- **approve_request**: Approve a document request
 - **create_contact**: Create a new contact
 - **create_request**: Create a new document request
 - **get_contact**: Get details for a specific contact
@@ -40,6 +39,7 @@ Automate document collection and client onboarding with Superdocu and AI agents.
 - **list_requests**: List document requests in Superdocu
 - **list_workflows**: List available document workflows
 - **reject_request**: Reject a document request
+- **approve_request**: Approve a document request
 
 
 ## 💬 Prompt Examples

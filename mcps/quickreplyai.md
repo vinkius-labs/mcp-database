@@ -28,17 +28,17 @@ Connect your **QuickReply.ai** account to any AI agent and simplify your WhatsAp
 
 
 ## Available Tools (11)
-- **create_contact**: Create a new contact
-- **get_broadcast**: Get details for a specific broadcast
-- **get_template**: Get details for a specific message template
-- **get_contact_details**: Get details for a specific contact
 - **list_broadcast_campaigns**: List broadcast campaigns
 - **list_contacts**: List QuickReply.ai contacts
-- **list_user_segments**: List contact segments
 - **list_message_templates**: List WhatsApp templates
 - **send_whatsapp_message**: Send a WhatsApp message
 - **track_user_event**: Track a custom engagement event
 - **update_contact**: Update an existing contact
+- **create_contact**: Create a new contact
+- **get_broadcast**: Get details for a specific broadcast
+- **get_template**: Get details for a specific message template
+- **get_contact_details**: Get details for a specific contact
+- **list_user_segments**: List contact segments
 
 
 ## 💬 Prompt Examples

@@ -26,11 +26,6 @@ Marketing teams, social media managers, and developers looking to integrate Post
 
 
 ## Available Tools (11)
-- **createCommentReply**: Reply to a comment on a post in Postproxy
-- **createPost**: Provide text, status, and the list of profile IDs to publish to.
-
-Create a new post in Postproxy
-- **deletePost**: Delete a post in Postproxy
 - **getPost**: Get a specific post by ID in Postproxy
 - **hideComment**: Hide a comment on a post in Postproxy
 - **likeComment**: Like a comment on a post in Postproxy
@@ -39,6 +34,11 @@ Create a new post in Postproxy
 - **listProfileGroups**: List all profile groups in Postproxy
 - **listProfiles**: List all social media profiles connected to Postproxy
 - **unhideComment**: Unhide a comment on a post in Postproxy
+- **createCommentReply**: Reply to a comment on a post in Postproxy
+- **createPost**: Provide text, status, and the list of profile IDs to publish to.
+
+Create a new post in Postproxy
+- **deletePost**: Delete a post in Postproxy
 
 
 ## 💬 Prompt Examples

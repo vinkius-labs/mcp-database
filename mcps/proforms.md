@@ -14,9 +14,6 @@ The Proforms MCP server allows your AI agent to query form responses, retrieve s
 
 
 ## Available Tools (12)
-- **create_job**: Push a new job to a field worker
-- **get_asset**: Retrieve details for a specific asset
-- **get_form**: Retrieve details for a specific form
 - **get_job**: Retrieve details for a specific field job
 - **get_me**: Check API connectivity and get user context
 - **get_submission**: Retrieve details for a specific form submission
@@ -26,6 +23,9 @@ The Proforms MCP server allows your AI agent to query form responses, retrieve s
 - **list_submissions**: List all data submissions for a specific form
 - **list_users**: List all back-office and field users
 - **update_job**: Modify an existing field job
+- **create_job**: Push a new job to a field worker
+- **get_asset**: Retrieve details for a specific asset
+- **get_form**: Retrieve details for a specific form
 
 
 ## 💬 Prompt Examples

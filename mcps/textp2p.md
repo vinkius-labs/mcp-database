@@ -35,12 +35,12 @@ Connect your **TextP2P** marketing account to any AI agent and simplify how you 
 
 
 ## Available Tools (6)
-- **add_textp2p_contact**: Add a new contact
-- **get_textp2p_balance**: Get account credit balance
 - **list_textp2p_lists**: List all contact lists
 - **send_textp2p_mms**: Send an MMS message
 - **send_textp2p_rvm**: Send a Ringless Voicemail (RVM)
 - **send_textp2p_sms**: Send an SMS message
+- **add_textp2p_contact**: Add a new contact
+- **get_textp2p_balance**: Get account credit balance
 
 
 ## 💬 Prompt Examples

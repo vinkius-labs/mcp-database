@@ -23,8 +23,6 @@ Connect your **String** account to any AI agent and manage business messaging.
 
 
 ## Available Tools (10)
-- **check_string_status**: Verify API connectivity
-- **create_contact**: Create a contact
 - **get_contact**: Get contact details
 - **get_message**: Get message details
 - **list_campaigns**: List campaigns
@@ -33,6 +31,8 @@ Connect your **String** account to any AI agent and manage business messaging.
 - **list_messages**: List messages
 - **list_tags**: List all tags
 - **send_message**: Send a text message
+- **check_string_status**: Verify API connectivity
+- **create_contact**: Create a contact
 
 
 ## 💬 Prompt Examples

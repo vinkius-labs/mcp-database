@@ -36,10 +36,6 @@ No more manual typing or spreadsheet contact updates. Your AI acts as a dedicate
 
 
 ## Available Tools (12)
-- **check_protexting_status**: Verify connectivity
-- **create_contact**: Create a contact
-- **create_group**: Create a group
-- **delete_contact**: Delete a contact
 - **get_account**: Get account info
 - **get_message_status**: Get message status
 - **list_contacts**: List contacts
@@ -48,6 +44,10 @@ No more manual typing or spreadsheet contact updates. Your AI acts as a dedicate
 - **send_bulk**: Send bulk messages
 - **send_mms**: Send MMS
 - **send_sms**: Send SMS
+- **check_protexting_status**: Verify connectivity
+- **create_contact**: Create a contact
+- **create_group**: Create a group
+- **delete_contact**: Delete a contact
 
 
 ## 💬 Prompt Examples

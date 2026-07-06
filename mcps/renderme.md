@@ -36,9 +36,6 @@ No more manual editing or complex media processing. Your AI acts as a dedicated 
 
 
 ## Available Tools (12)
-- **check_api_health**: Verify RenderMe API connectivity
-- **get_template_details**: Get details for a specific video template
-- **get_render_job_status**: Check status of a render job
 - **get_current_user**: Get authenticated user profile
 - **get_account_render_stats**: Get account usage and render statistics
 - **list_uploaded_assets**: List all uploaded images and media
@@ -48,6 +45,9 @@ No more manual editing or complex media processing. Your AI acts as a dedicated 
 - **list_video_projects**: List all video projects
 - **list_configured_webhooks**: List active webhooks
 - **create_video_render_job**: Trigger a new video rendering job
+- **check_api_health**: Verify RenderMe API connectivity
+- **get_template_details**: Get details for a specific video template
+- **get_render_job_status**: Check status of a render job
 
 
 ## 💬 Prompt Examples
