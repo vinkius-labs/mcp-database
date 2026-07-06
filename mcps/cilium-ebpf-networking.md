@@ -33,14 +33,14 @@ Connect to your **Cilium** agent to monitor and manage your Kubernetes networkin
 
 
 ## Available Tools (6)
+- **get_healthz**: Get health of Cilium daemon
+- **get_cluster_nodes**: Get nodes information stored in the cilium-agent
+- **patch_config**: Modify daemon configuration
 - **create_endpoint**: Create endpoint
 - **get_config**: Get configuration of Cilium daemon
 - **get_endpoint**: g., cilium-local:123, container-id:abc).
 
 Get endpoint by endpoint ID
-- **get_healthz**: Get health of Cilium daemon
-- **get_cluster_nodes**: Get nodes information stored in the cilium-agent
-- **patch_config**: Modify daemon configuration
 
 
 ## 💬 Prompt Examples

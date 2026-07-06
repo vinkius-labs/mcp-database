@@ -36,15 +36,6 @@ Connect to the **CrossRef API** — the authoritative source for DOI metadata an
 
 
 ## Available Tools (16)
-- **get_citations_count**: The "is-referenced-by-count" is the number of times other works cite this DOI. The "references-count" is how many references this work cites. Quick way to assess a paper's impact.
-
-Get citation count for a DOI
-- **get_funder_works**: Use the funder ID from search_funders (e.g. "100000002" for NIH). Essential for understanding research funding landscapes and tracking funded output.
-
-Get works funded by a specific funding organization
-- **get_journal**: Returns title, publisher, subjects, total DOI count, current and backfile counts, metadata coverage percentages, and quality flags.
-
-Get journal details by ISSN
 - **get_journal_works**: Can be filtered with an optional text query. Useful for browsing a journal's publication history or searching within a specific journal.
 
 Get articles published in a specific journal
@@ -84,6 +75,15 @@ Search 150M+ DOI-registered academic works
 - **validate_doi**: Returns whether the DOI exists in CrossRef, along with basic metadata (title, type, publisher) if valid. Useful for quality-checking reference lists and citation data.
 
 Check if a DOI is valid and registered
+- **get_citations_count**: The "is-referenced-by-count" is the number of times other works cite this DOI. The "references-count" is how many references this work cites. Quick way to assess a paper's impact.
+
+Get citation count for a DOI
+- **get_funder_works**: Use the funder ID from search_funders (e.g. "100000002" for NIH). Essential for understanding research funding landscapes and tracking funded output.
+
+Get works funded by a specific funding organization
+- **get_journal**: Returns title, publisher, subjects, total DOI count, current and backfile counts, metadata coverage percentages, and quality flags.
+
+Get journal details by ISSN
 
 
 ## 💬 Prompt Examples

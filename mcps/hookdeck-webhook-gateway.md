@@ -36,10 +36,6 @@ No more jumping between dashboards to pause a failing webhook or check a source 
 
 
 ## Available Tools (75)
-- **bulk_cancel_events**: Bulk cancel events
-- **bulk_retry_events**: Bulk retry events based on a query
-- **bulk_retry_requests**: Bulk retry rejected requests
-- **cancel_bulk_retry_events**: Cancel an ongoing bulk retry
 - **cancel_event**: Cancel a scheduled retry for an event
 - **count_connections**: Count connections
 - **count_destinations**: Count destinations
@@ -115,6 +111,10 @@ Pause a connection
 - **update_issue_trigger**: Update an issue trigger
 - **update_source**: Update a source
 - **update_transformation**: Update a transformation
+- **bulk_cancel_events**: Bulk cancel events
+- **bulk_retry_events**: Bulk retry events based on a query
+- **bulk_retry_requests**: Bulk retry rejected requests
+- **cancel_bulk_retry_events**: Cancel an ongoing bulk retry
 
 
 ## 💬 Prompt Examples

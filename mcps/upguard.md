@@ -34,7 +34,6 @@ Connect your **UpGuard** account to any AI agent and simplify how you monitor yo
 
 
 ## Available Tools (9)
-- **get_vendor**: Get details for a specific vendor
 - **list_saas_apps**: List monitored SaaS applications
 - **list_identity_breaches**: List identity breaches
 - **list_monitored_domains**: List monitored domains
@@ -43,6 +42,7 @@ Connect your **UpGuard** account to any AI agent and simplify how you monitor yo
 - **list_user_risks**: List users and their risk data
 - **list_vendor_risks**: List active risks for a vendor
 - **list_vendors**: List all monitored vendors
+- **get_vendor**: Get details for a specific vendor
 
 
 ## 💬 Prompt Examples

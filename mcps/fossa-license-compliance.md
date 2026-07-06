@@ -34,16 +34,16 @@ Connect your **FOSSA** account to any AI agent to automate open-source license c
 
 
 ## Available Tools (6)
-- **check_vulnerabilities**: Uses a POST request but only reads data.
-
-Check vulnerabilities by dependency locators
-- **get_revision**: Get details for a specific revision
-- **get_parent_projects**: Get parent projects containing a dependency
 - **list_projects**: Supports filtering and pagination.
 
 List all projects in your organization
 - **get_revision_dependencies**: Get dependencies for a specific revision
 - **list_revisions**: List revisions of a project
+- **check_vulnerabilities**: Uses a POST request but only reads data.
+
+Check vulnerabilities by dependency locators
+- **get_revision**: Get details for a specific revision
+- **get_parent_projects**: Get parent projects containing a dependency
 
 
 ## 💬 Prompt Examples

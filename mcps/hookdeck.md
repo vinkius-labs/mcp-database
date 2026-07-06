@@ -34,7 +34,6 @@ Connect your **Hookdeck** account to any AI agent to orchestrate your webhook in
 
 
 ## Available Tools (52)
-- **cancel_event**: Cancel scheduled retries for an event
 - **count_connections**: Count total connections
 - **count_sources**: Count total sources
 - **create_bookmark**: Create a new bookmark
@@ -86,6 +85,7 @@ Connect your **Hookdeck** account to any AI agent to orchestrate your webhook in
 - **update_source**: Update a source
 - **update_transformation**: Update transformation code
 - **upsert_connection**: Create or update a connection by name
+- **cancel_event**: Cancel scheduled retries for an event
 
 
 ## 💬 Prompt Examples

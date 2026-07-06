@@ -34,9 +34,6 @@ Connect your AI agent to **DBpedia**, the structured heart of Wikipedia. This se
 
 
 ## Available Tools (8)
-- **retrieve_live_articles**: Extract recent data for a list of resource names
-- **get_live_changes**: List change events from the DBpedia Live Sync API
-- **get_live_resource**: Retrieve the most recent data for a specific Wikipedia page
 - **query_live_sparql**: dbpedia.org/sparql for real-time Wikipedia updates.
 
 Execute a SPARQL query against the DBpedia Live endpoint
@@ -48,6 +45,9 @@ Retrieve linked data for a specific DBpedia resource
 - **query_sparql**: org/sparql. Max 10,000 rows.
 
 Execute a SPARQL query against the public DBpedia endpoint
+- **retrieve_live_articles**: Extract recent data for a list of resource names
+- **get_live_changes**: List change events from the DBpedia Live Sync API
+- **get_live_resource**: Retrieve the most recent data for a specific Wikipedia page
 
 
 ## 💬 Prompt Examples

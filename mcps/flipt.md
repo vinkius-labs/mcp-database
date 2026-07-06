@@ -34,15 +34,15 @@ Connect your **Flipt** instance to any AI agent to orchestrate feature managemen
 
 
 ## Available Tools (9)
-- **create_constraint**: Create a constraint for a segment
-- **create_distribution**: Create a distribution for a rule
-- **create_variant**: Create a new variant for a flag
 - **list_flags**: List flags in a namespace
 - **list_namespaces**: List all namespaces
 - **list_rollouts**: List rollouts for a flag
 - **list_rules**: List rules for a flag
 - **list_segments**: List segments in a namespace
 - **list_tokens**: List authentication tokens
+- **create_constraint**: Create a constraint for a segment
+- **create_distribution**: Create a distribution for a rule
+- **create_variant**: Create a new variant for a flag
 
 
 ## 💬 Prompt Examples

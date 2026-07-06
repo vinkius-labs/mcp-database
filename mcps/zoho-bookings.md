@@ -34,15 +34,15 @@ Connect your **Zoho Bookings** account to any AI agent to streamline your appoin
 
 
 ## Available Tools (7)
+- **list_services**: List all services offered
+- **list_staff**: List all staff members
+- **list_workspaces**: List all workspaces
 - **book_appointment**: Pass booking data as a JSON string.
 
 Book a new appointment
 - **cancel_appointment**: Cancel an existing appointment
 - **get_staff_slots**: Get available slots for a staff member
 - **list_appointments**: List all booked appointments
-- **list_services**: List all services offered
-- **list_staff**: List all staff members
-- **list_workspaces**: List all workspaces
 
 
 ## 💬 Prompt Examples

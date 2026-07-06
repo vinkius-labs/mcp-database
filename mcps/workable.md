@@ -37,10 +37,10 @@ Connect your **Workable** recruiting account to any AI agent and simplify how yo
 - **create_candidate**: Register a new candidate to a job
 - **get_candidate_profile**: Get details for a specific candidate
 - **get_job_details**: Get details for a specific job
-- **list_linked_accounts**: List connected accounts
 - **list_all_candidates**: List candidates across all jobs
 - **list_jobs**: List active job openings
 - **list_account_members**: List hiring team members
+- **list_linked_accounts**: List connected accounts
 
 
 ## 💬 Prompt Examples

@@ -34,15 +34,7 @@ Connect your **Cube.dev** instance to any AI agent to bridge the gap between nat
 
 
 ## Available Tools (15)
-- **check_live**: Check if Cube deployment is live
-- **check_ready**: Check if Cube deployment is ready
-- **convert_query**: Convert a SQL query to a REST API query format
 - **execute_cube_sql**: Execute a raw SQL query against the SQL API
-- **generate_meta_token**: Requires CUBE_CLOUD_API_KEY.
-
-Generate a JWT for the Metadata API
-- **get_entity**: Get detailed metadata for a specific entity
-- **get_meta**: Get metadata for cubes and views
 - **get_pre_aggregation_job_status**: Get status of pre-aggregation jobs
 - **get_sql**: Useful for debugging.
 
@@ -59,6 +51,14 @@ List environments for a deployment
 
 Execute a Cube query and return results
 - **trigger_pre_aggregation_job**: Trigger a pre-aggregation build job
+- **check_live**: Check if Cube deployment is live
+- **check_ready**: Check if Cube deployment is ready
+- **convert_query**: Convert a SQL query to a REST API query format
+- **generate_meta_token**: Requires CUBE_CLOUD_API_KEY.
+
+Generate a JWT for the Metadata API
+- **get_entity**: Get detailed metadata for a specific entity
+- **get_meta**: Get metadata for cubes and views
 
 
 ## 💬 Prompt Examples

@@ -34,6 +34,20 @@ Connect your **Axiom** account to any AI agent to streamline your observability 
 
 
 ## Available Tools (31)
+- **list_annotations**: List all annotations
+- **list_tokens**: List all API tokens
+- **get_dashboard**: Retrieve a specific dashboard by UID
+- **get_dataset**: Retrieve a specific dataset by ID
+- **get_monitor**: Retrieve a specific monitor by ID
+- **get_notifier**: Retrieve a specific notifier by ID
+- **get_org**: Retrieve an organization by ID
+- **get_user**: Retrieve a specific user by ID
+- **ingest_data**: Ingest data into an Axiom dataset
+- **list_dashboards**: List all dashboards
+- **list_datasets**: List all datasets
+- **list_monitors**: List all monitors
+- **list_notifiers**: List all notifiers
+- **list_users**: List all users
 - **create_annotation**: Create a new annotation
 - **create_dashboard**: Create a new dashboard
 - **create_dataset**: Create a new dataset
@@ -45,20 +59,6 @@ Connect your **Axiom** account to any AI agent to streamline your observability 
 - **delete_monitor**: Delete a monitor
 - **delete_notifier**: Delete a notifier
 - **get_annotation**: Retrieve a specific annotation by ID
-- **get_dashboard**: Retrieve a specific dashboard by UID
-- **get_dataset**: Retrieve a specific dataset by ID
-- **get_monitor**: Retrieve a specific monitor by ID
-- **get_notifier**: Retrieve a specific notifier by ID
-- **get_org**: Retrieve an organization by ID
-- **get_user**: Retrieve a specific user by ID
-- **ingest_data**: Ingest data into an Axiom dataset
-- **list_annotations**: List all annotations
-- **list_dashboards**: List all dashboards
-- **list_datasets**: List all datasets
-- **list_monitors**: List all monitors
-- **list_notifiers**: List all notifiers
-- **list_tokens**: List all API tokens
-- **list_users**: List all users
 - **run_query**: Run an APL query against Axiom data
 - **update_annotation**: Update an existing annotation
 - **update_dashboard**: Update an existing dashboard

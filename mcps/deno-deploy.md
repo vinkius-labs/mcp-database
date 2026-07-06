@@ -34,11 +34,6 @@ Connect your **Deno Deploy** account to any AI agent to orchestrate your edge co
 
 
 ## Available Tools (15)
-- **create_app**: Create a new Deno Deploy application
-- **create_deployment**: Create a new deployment (revision) for an app
-- **create_layer**: Create a new layer for sharing environment variables
-- **create_project_deployment**: Create a deployment for a project (v1 API)
-- **get_app_logs**: Query application logs
 - **get_app**: Get details for a specific Deno Deploy app
 - **get_build_logs**: Stream build logs for a revision
 - **get_organization**: Get organization details (v1 API)
@@ -51,6 +46,11 @@ List Deno Deploy applications
 - **list_projects**: List projects in an organization (v1 API)
 - **list_revisions**: List revisions for an app
 - **update_layer**: Update an existing layer
+- **create_app**: Create a new Deno Deploy application
+- **create_deployment**: Create a new deployment (revision) for an app
+- **create_layer**: Create a new layer for sharing environment variables
+- **create_project_deployment**: Create a deployment for a project (v1 API)
+- **get_app_logs**: Query application logs
 
 
 ## 💬 Prompt Examples

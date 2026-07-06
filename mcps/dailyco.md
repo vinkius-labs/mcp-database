@@ -36,7 +36,6 @@ Your AI acts as a virtual operator, capable of spinning up meeting rooms for sup
 
 
 ## Available Tools (50)
-- **buy_phone_number**: Purchase a specific or random number
 - **create_batch_job**: Submit a batch processor job
 - **create_meeting_token**: Create a meeting token
 - **create_room**: Create a new room
@@ -69,7 +68,6 @@ List cloud recordings
 - **list_rooms**: Supports pagination.
 
 List rooms
-- **list_webhooks**: List webhooks
 - **release_phone_number**: Release a number
 - **send_app_message**: Send data to participants
 - **send_dtmf**: Send DTMF tones to a session
@@ -90,6 +88,8 @@ List rooms
 - **update_transcription**: Update participants being transcribed
 - **update_webhook**: Update or re-activate a failed webhook
 - **validate_meeting_token**: Validate a meeting token
+- **buy_phone_number**: Purchase a specific or random number
+- **list_webhooks**: List webhooks
 
 
 ## 💬 Prompt Examples

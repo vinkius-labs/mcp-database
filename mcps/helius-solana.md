@@ -34,6 +34,12 @@ Connect your **Helius** account to any AI agent to interact with the Solana bloc
 
 
 ## Available Tools (14)
+- **get_wallet_identity**: sol domains.
+
+Resolve address to known entities
+- **get_wallet_transfers**: Get incoming and outgoing token transfers
+- **parse_transactions**: Parse raw transactions into human-readable data
+- **search_assets**: Search for assets with advanced filtering
 - **get_asset_batch**: Get multiple assets in one call
 - **get_asset_proof**: Get Merkle proof for compressed NFTs
 - **get_asset**: Get detailed data for a specific Solana asset
@@ -46,12 +52,6 @@ Get precise priority fee estimates
 - **get_wallet_balances**: Get token and NFT balances with USD values
 - **get_wallet_funded_by**: Identify the original funding source of a wallet
 - **get_wallet_history**: Get complete transaction history for a wallet
-- **get_wallet_identity**: sol domains.
-
-Resolve address to known entities
-- **get_wallet_transfers**: Get incoming and outgoing token transfers
-- **parse_transactions**: Parse raw transactions into human-readable data
-- **search_assets**: Search for assets with advanced filtering
 
 
 ## 💬 Prompt Examples

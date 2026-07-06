@@ -32,13 +32,13 @@ Connect your **Domo** instance to any AI agent to streamline user administration
 
 
 ## Available Tools (6)
-- **add_user_to_group**: Add a user to a Domo group
-- **create_group**: Create a new Domo group
 - **create_user**: Optionally sends an invite email.
 
 Create a new Domo user
-- **delete_user**: Delete a Domo user
 - **remove_user_from_group**: Remove a user from a Domo group
+- **add_user_to_group**: Add a user to a Domo group
+- **create_group**: Create a new Domo group
+- **delete_user**: Delete a Domo user
 - **update_user**: Update an existing Domo user
 
 

@@ -35,8 +35,6 @@ Connect your **tl;dv** account to any AI agent and simplify how you manage your 
 
 
 ## Available Tools (12)
-- **get_api_status**: Check connection
-- **get_recording_download**: Get video file URL
 - **get_meeting_duration**: Check call length
 - **get_meeting_highlights**: Get key moments
 - **get_meeting_details**: Get meeting info
@@ -47,6 +45,8 @@ Connect your **tl;dv** account to any AI agent and simplify how you manage your 
 - **list_recorded_meetings**: List recent meetings
 - **list_recent_transcripts**: List latest transcripts
 - **test_tldv_auth**: Verify credentials
+- **get_api_status**: Check connection
+- **get_recording_download**: Get video file URL
 
 
 ## 💬 Prompt Examples
