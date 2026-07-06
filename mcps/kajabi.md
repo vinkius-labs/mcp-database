@@ -36,12 +36,14 @@ Empower your AI agent to orchestrate your entire digital product ecosystem with 
 
 
 ## Available Tools (16)
-- **get_contact_details**: Get contact details
-- **get_offer_details**: Get offer details
-- **get_product_details**: Get product details
+- **add_tag_to_contact**: Use list_tags to find available tag IDs and list_contacts to find contact IDs.
+
+Add a tag to a contact
+- **get_course_details**: Get course details
 - **list_contacts**: Automatically uses the default site. Provide site_id if you have multiple sites and want to query a specific one.
 
 List all contacts
+- **list_courses**: List all courses
 - **list_customers**: Provide site_id if you have multiple sites.
 
 List all customers
@@ -59,17 +61,15 @@ List all purchases
 - **list_sites**: Use this to get the site_id needed for filtering contacts, customers, offers, and orders.
 
 List all sites
-- **add_tag_to_contact**: Use list_tags to find available tag IDs and list_contacts to find contact IDs.
-
-Add a tag to a contact
-- **get_course_details**: Get course details
-- **list_courses**: List all courses
 - **list_tags**: Use tag IDs with add_tag_to_contact and remove_tag_from_contact to manage contact segmentation.
 
 List all contact tags
 - **remove_tag_from_contact**: Use list_contacts to find the contact ID and their current tags.
 
 Remove a tag from a contact
+- **get_contact_details**: Get contact details
+- **get_offer_details**: Get offer details
+- **get_product_details**: Get product details
 
 
 ## 💬 Prompt Examples

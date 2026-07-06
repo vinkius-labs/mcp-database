@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire intellectual property research 
 
 
 ## Available Tools (4)
+- **search_epo_patents**: Search for published patents in the EPO database
 - **check_api_status**: Check if the EPO Open Patent Services are operational
 - **get_patent_bibliographic**: Get full bibliographic metadata for a specific patent by Doc ID
 - **get_patent_legal_status**: Check the current legal status of a patent publication
-- **search_epo_patents**: Search for published patents in the EPO database
 
 
 ## 💬 Prompt Examples

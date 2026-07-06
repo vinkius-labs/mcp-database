@@ -35,7 +35,6 @@ Empower your AI agent to orchestrate your logistics and supply chain operations 
 
 
 ## Available Tools (8)
-- **check_carrier_availability**: Check which carriers serve a route
 - **estimate_delivery_time**: Estimate delivery time between locations
 - **get_map_tracking**: Get map-based tracking data
 - **identify_carrier**: Auto-detect carrier from tracking number
@@ -47,6 +46,7 @@ Submit a shipping order (e-waybill)
 - **track_package**: Some carriers (e.g., SF Express) require the recipient phone number.
 
 Track a package in real-time
+- **check_carrier_availability**: Check which carriers serve a route
 
 
 ## 💬 Prompt Examples

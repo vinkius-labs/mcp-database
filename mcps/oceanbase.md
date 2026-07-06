@@ -38,12 +38,12 @@ Empower your AI agent to orchestrate your entire database infrastructure with **
 - **get_cluster_details**: Get cluster details
 - **get_instance_details**: Get instance details
 - **get_resource_stats**: Get resource statistics
-- **get_tenant_details**: Get tenant details
 - **get_workspaces**: Get account workspaces
+- **list_projects**: List OB projects
+- **get_tenant_details**: Get tenant details
 - **list_clusters**: List OceanBase clusters
 - **list_databases**: List tenant databases
 - **list_instances**: List OB instances
-- **list_projects**: List OB projects
 - **list_tenants**: List cluster tenants
 
 

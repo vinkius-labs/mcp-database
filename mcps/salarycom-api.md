@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your entire compensation research and caree
 
 
 ## Available Tools (6)
+- **get_salary_market_trends**: Get market salary trends for a specific job title
+- **list_job_categories**: List all available job categories
+- **search_jobs**: Search for open jobs by keyword and location
 - **check_api_status**: com API is operational.
 
 Check if the Salary.com API is operational
 - **get_job_details**: Get full details for a specific job ID
 - **get_salary_benchmark**: Get salary benchmarks for a job title and location
-- **get_salary_market_trends**: Get market salary trends for a specific job title
-- **list_job_categories**: List all available job categories
-- **search_jobs**: Search for open jobs by keyword and location
 
 
 ## 💬 Prompt Examples

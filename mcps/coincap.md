@@ -38,12 +38,6 @@ No API key required — completely free with 30 requests/second.
 
 
 ## Available Tools (9)
-- **get_asset**: Returns the current price in USD, market cap, 24h trading volume, price change percentages (1h, 24h, 7d), circulating supply, total supply, max supply and rank. Asset IDs are lowercase with hyphens (e.g. "bitcoin", "ethereum", "solana").
-
-Get detailed info for a specific cryptocurrency
-- **get_asset_history**: Returns daily or interval-based price snapshots. Use interval to specify the data granularity: "m1" (1 minute), "m5" (5 min), "m15" (15 min), "m30" (30 min), "h1" (1 hour), "h2" (2 hours), "h6" (6 hours), "h12" (12 hours), "d1" (1 day).
-
-Get historical price data for a cryptocurrency
 - **get_candles**: Each candle includes the open, high, low, close prices and volume for the time interval. Supports intervals: "m1", "m5", "m15", "m30", "h1", "h2", "h6", "h12", "d1". Optionally set start/end timestamps (milliseconds since epoch) for historical data.
 
 Get OHLCV candlestick data for technical analysis
@@ -65,6 +59,12 @@ List cryptocurrency assets with prices and market data
 - **list_exchanges**: Each exchange includes its ID, name, website, 24h volume in USD, number of markets, rank and whether it's verified.
 
 List cryptocurrency exchanges with rankings
+- **get_asset**: Returns the current price in USD, market cap, 24h trading volume, price change percentages (1h, 24h, 7d), circulating supply, total supply, max supply and rank. Asset IDs are lowercase with hyphens (e.g. "bitcoin", "ethereum", "solana").
+
+Get detailed info for a specific cryptocurrency
+- **get_asset_history**: Returns daily or interval-based price snapshots. Use interval to specify the data granularity: "m1" (1 minute), "m5" (5 min), "m15" (15 min), "m30" (30 min), "h1" (1 hour), "h2" (2 hours), "h6" (6 hours), "h12" (12 hours), "d1" (1 day).
+
+Get historical price data for a cryptocurrency
 
 
 ## 💬 Prompt Examples

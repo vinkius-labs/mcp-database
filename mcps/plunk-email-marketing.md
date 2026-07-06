@@ -34,11 +34,6 @@ Connect your AI agent to **Plunk**, the versatile email marketing platform desig
 
 
 ## Available Tools (8)
-- **create_or_update_contact**: Provide metadata as a JSON string if needed.
-
-Create a new contact or update an existing one
-- **delete_contact**: Permanently delete a contact from your audience
-- **get_contact_details**: Get comprehensive information for a specific contact
 - **list_email_campaigns**: Retrieve a list of all email marketing campaigns
 - **list_contacts**: Retrieve all contacts in your Plunk audience
 - **list_email_templates**: Retrieve a list of all saved email templates
@@ -46,6 +41,11 @@ Create a new contact or update an existing one
 - **track_user_event**: Provide data as a JSON string.
 
 Track a custom action performed by a user
+- **create_or_update_contact**: Provide metadata as a JSON string if needed.
+
+Create a new contact or update an existing one
+- **delete_contact**: Permanently delete a contact from your audience
+- **get_contact_details**: Get comprehensive information for a specific contact
 
 
 ## 💬 Prompt Examples

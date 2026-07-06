@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire public policy research and docu
 
 
 ## Available Tools (4)
-- **check_api_status**: Check if the Federal Register service is operational
 - **get_federal_document_details**: Get full metadata and HTML links for a specific federal document
 - **list_federal_agencies**: List all government agencies that publish in the Federal Register
 - **search_federal_documents**: Search for public documents and rules in the Federal Register
+- **check_api_status**: Check if the Federal Register service is operational
 
 
 ## 💬 Prompt Examples

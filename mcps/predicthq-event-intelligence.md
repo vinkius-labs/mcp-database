@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire event research and demand audit
 
 
 ## Available Tools (4)
-- **check_api_status**: Check if the PredictHQ service is operational
-- **get_event_details**: Get full metadata and ranking for a specific event ID
 - **list_event_categories**: List common event categories supported by PredictHQ
 - **search_predict_events**: Search for global events (concerts, sports, festivals) using PredictHQ
+- **check_api_status**: Check if the PredictHQ service is operational
+- **get_event_details**: Get full metadata and ranking for a specific event ID
 
 
 ## 💬 Prompt Examples

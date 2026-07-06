@@ -36,12 +36,6 @@ Connect to **API Ninjas** and access a comprehensive suite of health and fitness
 
 
 ## Available Tools (8)
-- **get_bmr**: Requires weight (kg), height (cm), age and gender. Returns BMR value in calories/day.
-
-Calculate Basal Metabolic Rate
-- **get_body_fat**: Requires waist, neck and height measurements (in cm). For women, also requires hip measurement. Returns body fat percentage and category (lean, fitness, acceptable, obese).
-
-Estimate body fat percentage
 - **get_calories_burned**: Requires activity name, weight (kg) and duration (minutes). Returns activity name, duration, calories burned and MET value.
 
 Calculate calories burned for an activity
@@ -60,6 +54,12 @@ Calculate calories and distance from steps
 - **get_tdee**: Requires weight (kg), height (cm), age, gender and activity level. Returns TDEE value in calories/day with breakdown by activity level.
 
 Calculate Total Daily Energy Expenditure
+- **get_bmr**: Requires weight (kg), height (cm), age and gender. Returns BMR value in calories/day.
+
+Calculate Basal Metabolic Rate
+- **get_body_fat**: Requires waist, neck and height measurements (in cm). For women, also requires hip measurement. Returns body fat percentage and category (lean, fitness, acceptable, obese).
+
+Estimate body fat percentage
 
 
 ## 💬 Prompt Examples

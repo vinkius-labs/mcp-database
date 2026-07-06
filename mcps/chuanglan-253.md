@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your cloud communication and identity verif
 
 
 ## Available Tools (9)
+- **send_variable_sms**: Send variable SMS
+- **verify_identity**: Verify identity (2-element)
+- **verify_phone**: Verify phone owner (3-element)
 - **flash_check**: One-click login check
 - **get_balance**: Check account balance
 - **pull_sms_reports**: Pull delivery reports
 - **query_sms_status**: Query SMS delivery status
 - **send_intl_sms**: Send international SMS
 - **send_sms**: Send a standard SMS
-- **send_variable_sms**: Send variable SMS
-- **verify_identity**: Verify identity (2-element)
-- **verify_phone**: Verify phone owner (3-element)
 
 
 ## 💬 Prompt Examples

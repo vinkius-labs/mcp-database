@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your video infrastructure and digital asset
 
 
 ## Available Tools (8)
-- **create_upload_auth**: Get upload credentials
-- **delete_media**: Delete VOD video
-- **get_media_metadata**: Get video info
 - **get_playback_info**: Get play URLs
 - **list_categories**: List media categories
 - **list_media**: List VOD media
 - **refresh_upload_auth**: Refresh upload token
 - **search_vod_media**: Search media library
+- **create_upload_auth**: Get upload credentials
+- **delete_media**: Delete VOD video
+- **get_media_metadata**: Get video info
 
 
 ## 💬 Prompt Examples

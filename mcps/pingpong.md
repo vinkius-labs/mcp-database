@@ -35,8 +35,6 @@ Empower your AI agent to orchestrate your cross-border financial operations with
 
 
 ## Available Tools (10)
-- **create_payout**: Create a new payout
-- **get_account_details**: Get account information
 - **get_balance**: Get account balance
 - **get_exchange_rates**: Get real-time exchange rates
 - **get_payout_status**: Check payout status
@@ -47,6 +45,8 @@ Empower your AI agent to orchestrate your cross-border financial operations with
 
 List e-commerce store accounts
 - **list_transactions**: List account transactions
+- **create_payout**: Create a new payout
+- **get_account_details**: Get account information
 
 
 ## 💬 Prompt Examples

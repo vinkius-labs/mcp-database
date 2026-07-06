@@ -36,8 +36,6 @@ Empower your AI agent to orchestrate your design workflow with **Pixso**, the le
 
 
 ## Available Tools (10)
-- **get_comments**: Get file comments
-- **get_file**: Get design file details
 - **get_file_versions**: Get file version history
 - **get_org_members**: List organization members
 - **get_project_files**: Get project files
@@ -46,6 +44,8 @@ Empower your AI agent to orchestrate your design workflow with **Pixso**, the le
 - **list_styles**: List file styles
 - **list_team_projects**: List team projects
 - **list_teams**: List available teams
+- **get_comments**: Get file comments
+- **get_file**: Get design file details
 
 
 ## 💬 Prompt Examples

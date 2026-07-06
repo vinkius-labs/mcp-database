@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your local retail and hospitality operation
 
 
 ## Available Tools (8)
+- **list_recent_orders**: List recent orders
+- **search_shops**: Search for shops
+- **update_product_stock**: Update product inventory
 - **get_order_detail**: Get order details
 - **get_product_detail**: Get product metadata
 - **get_product_stock**: Get product inventory
 - **get_shop_info**: Get shop metadata
 - **get_verify_code**: Get order verification code
-- **list_recent_orders**: List recent orders
-- **search_shops**: Search for shops
-- **update_product_stock**: Update product inventory
 
 
 ## 💬 Prompt Examples

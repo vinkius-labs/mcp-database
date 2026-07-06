@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire writing ecosystem on **Medium**
 
 
 ## Available Tools (5)
+- **list_contributors**: List publication contributors
+- **list_publications**: List user publications
 - **create_post**: Create a new post on Medium
 - **create_publication_post**: Create a new post under a publication
 - **get_me**: Get authenticated user info from Medium
-- **list_contributors**: List publication contributors
-- **list_publications**: List user publications
 
 
 ## 💬 Prompt Examples

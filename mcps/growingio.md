@@ -41,12 +41,12 @@ Empower your AI agent to orchestrate your product analytics and user behavioral 
 - **get_project_info**: Get project metadata
 - **get_segment_users**: Get users in a segment
 - **list_ads**: List advertising campaigns
-- **list_events**: List project events
 - **list_log_sources**: ).
 
 List data log sources
 - **list_segments**: List user segments
 - **list_variables**: List tracked variables
+- **list_events**: List project events
 
 
 ## 💬 Prompt Examples

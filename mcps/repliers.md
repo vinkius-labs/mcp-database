@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire real estate research and proper
 
 
 ## Available Tools (6)
+- **search_listings**: Search for real estate listings with optional filters
+- **search_by_neighborhood**: Search for properties in a specific neighborhood
 - **check_api_status**: Check if the Repliers API is operational
 - **get_listing_details**: Get full details for a specific property by MLS number
 - **get_listing_statistics**: Get market statistics for listings
 - **search_by_city**: Search for properties in a specific city
-- **search_listings**: Search for real estate listings with optional filters
-- **search_by_neighborhood**: Search for properties in a specific neighborhood
 
 
 ## 💬 Prompt Examples
