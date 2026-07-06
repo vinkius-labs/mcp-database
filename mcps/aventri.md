@@ -33,9 +33,6 @@ Connect your **Aventri** (now Stova) account to any AI agent to streamline your 
 
 
 ## Available Tools (13)
-- **add_contact**: Add a new contact to the account or database
-- **add_pre_approved**: Add contacts to a pre-approved list
-- **add_pre_load**: Add pre-load registrant data
 - **clone_event**: Clone an existing event
 - **create_speaker**: Create an account-level speaker
 - **delete_contact**: Delete a contact from the system
@@ -46,6 +43,9 @@ Connect your **Aventri** (now Stova) account to any AI agent to streamline your 
 - **list_speakers**: List all speakers associated with the account
 - **search_events**: Search and filter events
 - **update_contact**: Update an existing contact
+- **add_contact**: Add a new contact to the account or database
+- **add_pre_approved**: Add contacts to a pre-approved list
+- **add_pre_load**: Add pre-load registrant data
 
 
 ## 💬 Prompt Examples

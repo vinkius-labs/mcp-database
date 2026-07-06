@@ -34,7 +34,6 @@ Connect your **Vimeo** account to any AI agent to take full control of your vide
 
 
 ## Available Tools (13)
-- **create_video_upload**: Create a video upload ticket
 - **delete_video**: Delete a video
 - **get_channel**: Get a specific channel
 - **get_group**: Get a specific group
@@ -47,6 +46,7 @@ Connect your **Vimeo** account to any AI agent to take full control of your vide
 - **list_user_videos**: Get a list of videos uploaded by a user
 - **search_videos**: Search for videos on Vimeo
 - **update_video**: Update video metadata
+- **create_video_upload**: Create a video upload ticket
 
 
 ## 💬 Prompt Examples

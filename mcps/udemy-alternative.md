@@ -34,8 +34,6 @@ Connect your **Udemy Instructor** account to any AI agent to streamline student 
 
 
 ## Available Tools (13)
-- **list_courses**: List courses taught by the instructor
-- **create_message**: Send a new message in a thread
 - **create_question_reply**: Add a new reply to a question
 - **delete_question**: Delete a question
 - **get_message_thread**: Get details for a specific message thread
@@ -47,6 +45,8 @@ Connect your **Udemy Instructor** account to any AI agent to streamline student 
 - **list_reviews**: List course reviews
 - **update_message_thread**: Update thread status (read/starred)
 - **update_question**: Update a question (e.g., mark as read)
+- **list_courses**: List courses taught by the instructor
+- **create_message**: Send a new message in a thread
 
 
 ## 💬 Prompt Examples

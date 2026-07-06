@@ -33,13 +33,13 @@ Connect to the **Uselessfacts** engine and bring a touch of trivia to your AI co
 
 
 ## Available Tools (3)
-- **get_fact**: Get a specific useless fact by ID
 - **get_random_fact**: Can optionally specify language (en or de).
 
 Get a random useless fact
 - **get_today_fact**: Can optionally specify language (en or de).
 
 Get the useless fact of the day
+- **get_fact**: Get a specific useless fact by ID
 
 
 ## 💬 Prompt Examples

@@ -34,11 +34,6 @@ Connect your **Zeabur** account to any AI agent to automate your cloud infrastru
 
 
 ## Available Tools (9)
-- **create_upload_stage**: Create an upload stage for deploying pre-packaged applications
-- **deploy_template**: Deploy a service using a template specification YAML
-- **download_file**: Download a file from a service container
-- **execute_command**: Run a command within a service container
-- **get_build_logs**: Retrieve build logs for a deployment
 - **prepare_deployment**: Prepare a deployment after uploading a file
 - **schedule_email**: Requires ZEABUR_EMAIL_TOKEN.
 
@@ -49,6 +44,11 @@ Send batch personalized emails via Zeabur Email
 - **send_email**: Requires ZEABUR_EMAIL_TOKEN.
 
 Send a single transactional email via Zeabur Email
+- **create_upload_stage**: Create an upload stage for deploying pre-packaged applications
+- **deploy_template**: Deploy a service using a template specification YAML
+- **download_file**: Download a file from a service container
+- **execute_command**: Run a command within a service container
+- **get_build_logs**: Retrieve build logs for a deployment
 
 
 ## 💬 Prompt Examples

@@ -33,9 +33,6 @@ Connect to **Writer**, the full-stack generative AI platform for the enterprise.
 
 
 ## Available Tools (24)
-- **add_file_to_graph**: Add an uploaded file to a Knowledge Graph
-- **analyze_vision**: Analyze images or documents using a prompt
-- **ask_question**: Ask a question against one or more Knowledge Graphs (RAG)
 - **chat_completion**: Generate a chat completion using Writer models
 - **create_graph**: Create a new Knowledge Graph
 - **delete_file**: Permanently delete a file
@@ -57,6 +54,9 @@ Connect to **Writer**, the full-stack generative AI platform for the enterprise.
 - **translate_text**: Translate text between supported languages
 - **upload_file**: Upload a file for Knowledge Graphs or Vision tasks
 - **web_search**: Search the web for a query
+- **add_file_to_graph**: Add an uploaded file to a Knowledge Graph
+- **analyze_vision**: Analyze images or documents using a prompt
+- **ask_question**: Ask a question against one or more Knowledge Graphs (RAG)
 
 
 ## 💬 Prompt Examples

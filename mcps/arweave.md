@@ -34,7 +34,6 @@ Connect to the **Arweave** network and manage permanent data storage through nat
 
 
 ## Available Tools (13)
-- **get_block_by_hash**: Retrieve a block by its hash
 - **get_block_by_height**: Retrieve a block by its height
 - **get_storage_price**: Get the cost in Winstons to store data
 - **get_transaction_data**: Retrieve the data associated with a transaction
@@ -49,6 +48,7 @@ Get the status of a transaction
 - **get_peers**: Get a list of peer addresses known to the node
 - **query_graphql**: Execute a GraphQL query against the Arweave network
 - **submit_transaction**: Submit a new transaction to the network
+- **get_block_by_hash**: Retrieve a block by its hash
 
 
 ## 💬 Prompt Examples

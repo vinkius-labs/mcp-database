@@ -34,7 +34,6 @@ Connect **Webhook.site** to your AI agent to instantly create, manage, and inspe
 
 
 ## Available Tools (17)
-- **create_action**: Create a custom action for a token
 - **create_global_variable**: Create a global variable
 - **create_token**: Create a new Webhook.site token (URL)
 - **delete_action**: Delete a custom action
@@ -51,6 +50,7 @@ Connect **Webhook.site** to your AI agent to instantly create, manage, and inspe
 - **update_action**: Update a custom action
 - **update_global_variable**: Update a global variable
 - **update_token**: Update an existing token
+- **create_action**: Create a custom action for a token
 
 
 ## 💬 Prompt Examples

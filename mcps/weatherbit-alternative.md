@@ -28,9 +28,6 @@ Connect **Weatherbit** to your AI agent to retrieve hyper-local weather intellig
 
 
 ## Available Tools (14)
-- **get_airquality_forecast**: Requires lat and lon.
-
-Get 3-day hourly air quality forecast
 - **get_alerts**: Provide lat/lon OR city OR postal_code OR city_id.
 
 Get severe weather alerts
@@ -68,6 +65,9 @@ Get climate normals (1991-2020)
 
 Get sub-hourly historical weather
 - **get_subscription_usage**: Get subscription usage
+- **get_airquality_forecast**: Requires lat and lon.
+
+Get 3-day hourly air quality forecast
 
 
 ## 💬 Prompt Examples

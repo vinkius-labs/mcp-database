@@ -40,7 +40,6 @@ No more manual searching through complex ATS interfaces. Your AI acts as a dedic
 Create a new Bullhorn entity
 - **create_event_subscription**: Create an event subscription
 - **delete_entity**: Delete a Bullhorn entity
-- **delete_event_subscription**: Delete an event subscription
 - **find_data_hub_records**: Provide the criteria as a JSON string.
 
 Find records in Bullhorn Data Hub
@@ -65,6 +64,7 @@ Update an existing Bullhorn entity
 - **upsert_data_hub_records**: Provide the payload as a JSON string.
 
 Upsert records into Bullhorn Data Hub
+- **delete_event_subscription**: Delete an event subscription
 
 
 ## 💬 Prompt Examples

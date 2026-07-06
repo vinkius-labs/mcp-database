@@ -34,12 +34,6 @@ Connect your **Untappd** account to any AI agent to explore the world of craft b
 
 
 ## Available Tools (30)
-- **accept_friend**: Accept a friend request
-- **add_checkin**: Check-in to a beer
-- **add_comment**: Add a comment to a checkin
-- **add_to_wishlist**: Add a beer to the authenticated user's wish list
-- **get_beer_activity**: Activity feed for a single beer
-- **get_beer_info**: Get detailed information about a beer
 - **get_brewery_activity**: Activity feed for a single brewery
 - **get_brewery_info**: Get detailed information about a brewery
 - **get_checkin_details**: Extended details for a checkin including location, comments, and toasts
@@ -48,7 +42,6 @@ Connect your **Untappd** account to any AI agent to explore the world of craft b
 
 Obtain the friend check-in feed of the authenticated user
 - **get_notifications**: Get feed of toasts, comments, and news for the authenticated user
-- **get_pending_friends**: Get pending friend requests
 - **reject_friend**: Reject a friend request
 - **remove_comment**: Remove a comment from a checkin
 - **remove_friend**: Remove a friend
@@ -68,6 +61,13 @@ Obtain the check-in feed of a selected user
 - **get_user_wishlist**: Get a user's wish list
 - **get_venue_activity**: Activity feed for a single venue
 - **get_venue_info**: Get detailed information about a venue
+- **accept_friend**: Accept a friend request
+- **add_checkin**: Check-in to a beer
+- **add_comment**: Add a comment to a checkin
+- **add_to_wishlist**: Add a beer to the authenticated user's wish list
+- **get_beer_activity**: Activity feed for a single beer
+- **get_beer_info**: Get detailed information about a beer
+- **get_pending_friends**: Get pending friend requests
 
 
 ## 💬 Prompt Examples

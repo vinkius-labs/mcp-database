@@ -35,7 +35,6 @@ Connect your **Zillow** API access to any AI agent to retrieve comprehensive rea
 
 
 ## Available Tools (12)
-- **get_chart**: Generates a URL for an image file displaying historical Zestimates
 - **get_comps**: Returns a list of comparable recent sales
 - **get_deep_comps**: ) for both the principal and comparable properties.
 
@@ -53,6 +52,7 @@ Returns a list of subregions for a specified region
 - **get_search_results**: Finds a property for a specified address
 - **get_updated_property_details**: Returns home facts edited by the owner or agent
 - **get_zestimate**: Returns the most recent Zestimate for a ZPID
+- **get_chart**: Generates a URL for an image file displaying historical Zestimates
 
 
 ## 💬 Prompt Examples

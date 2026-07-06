@@ -35,12 +35,12 @@ No more manual searching through web consoles. Your AI can now find the best pri
 
 
 ## Available Tools (4)
-- **delete_instance**: Delete/Terminate an instance on Vast.ai
-- **list_instances**: List your rented instances on Vast.ai
 - **rent_instance**: Rent a GPU instance on Vast.ai
 - **search_offers**: The query should be a JSON string like {"gpu_name":{"eq":"RTX 4090"}}.
 
 Search for available GPUs on Vast.ai
+- **delete_instance**: Delete/Terminate an instance on Vast.ai
+- **list_instances**: List your rented instances on Vast.ai
 
 
 ## 💬 Prompt Examples

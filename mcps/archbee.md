@@ -34,8 +34,6 @@ Connect **Archbee** to your AI agent to streamline your technical documentation 
 
 
 ## Available Tools (19)
-- **clone_space**: Create a duplicate of an existing space
-- **create_space_group**: Organize spaces into a new group
 - **create_space**: Create a new documentation space
 - **create_update_doc**: Create a new document or update an existing one
 - **delete_doc**: Delete a specific document
@@ -53,6 +51,8 @@ Connect **Archbee** to your AI agent to streamline your technical documentation 
 - **sync_openapi**: Synchronize an OpenAPI definition with an Archbee document
 - **update_space**: Update the settings or metadata of a space
 - **upload_file**: Upload a file to Archbee storage
+- **clone_space**: Create a duplicate of an existing space
+- **create_space_group**: Organize spaces into a new group
 
 
 ## 💬 Prompt Examples

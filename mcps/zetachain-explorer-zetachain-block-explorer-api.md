@@ -33,14 +33,9 @@ Connect to the **ZetaChain Explorer** and gain deep visibility into the ZetaChai
 
 
 ## Available Tools (17)
-- **get_block_transactions**: Get transactions in a specific block
-- **get_block**: Get block details by hash or number
-- **get_address_internal_transactions**: Get internal transactions for an address
-- **get_address_token_balances**: Get token balances for an address
-- **get_address_tokens**: Get tokens owned by an address
 - **get_address**: Get address details
-- **get_address_transactions**: Get transactions for an address
-- **get_smart_contract**: Get smart contract details and ABI
+- **get_block**: Get block details by hash or number
+- **get_block_transactions**: Get transactions in a specific block
 - **get_token_holders**: Get token holders
 - **get_token**: Get token details
 - **get_token_transfers**: Get token transfers
@@ -52,6 +47,11 @@ Get internal transactions for a specific transaction
 - **list_blocks**: List recent blocks on ZetaChain
 - **list_tokens**: List tokens on ZetaChain
 - **list_transactions**: List recent transactions on ZetaChain
+- **get_address_internal_transactions**: Get internal transactions for an address
+- **get_address_token_balances**: Get token balances for an address
+- **get_address_tokens**: Get tokens owned by an address
+- **get_address_transactions**: Get transactions for an address
+- **get_smart_contract**: Get smart contract details and ABI
 
 
 ## 💬 Prompt Examples

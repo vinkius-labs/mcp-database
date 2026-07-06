@@ -34,7 +34,6 @@ Connect your **Cal.com** account to any AI agent to streamline your scheduling w
 
 
 ## Available Tools (20)
-- **cancel_booking**: Cancel a booking
 - **charge_credits**: Charge credits
 - **create_booking**: Requires either eventTypeId OR (eventTypeSlug + username).
 
@@ -44,9 +43,7 @@ Create a new Cal.com booking
 - **create_schedule**: Create a schedule
 - **create_team**: Create a team
 - **create_webhook**: Create a webhook
-- **get_booking**: Get a specific booking by UID
 - **get_busy_times**: Get busy times
-- **get_credits**: Check available credits balance
 - **get_me**: Get current user profile
 - **get_slots**: Get available slots
 - **list_bookings**: Get all bookings
@@ -56,6 +53,9 @@ Create a new Cal.com booking
 - **reschedule_booking**: Reschedule a booking
 - **update_event_type**: Update an event type
 - **update_schedule**: Update a schedule
+- **cancel_booking**: Cancel a booking
+- **get_booking**: Get a specific booking by UID
+- **get_credits**: Check available credits balance
 
 
 ## 💬 Prompt Examples

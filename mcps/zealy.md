@@ -34,23 +34,6 @@ Connect your **Zealy** community to any AI agent to streamline your Web3 and com
 
 
 ## Available Tools (23)
-- **get_review**: Retrieve a specific review by ID
-- **get_user**: Fetch user details by Zealy ID
-- **list_modules**: List all modules (categories) in a community
-- **list_quests**: List all quests in a community
-- **list_reviews**: Retrieve claimed quests waiting for review
-- **list_secrets**: Fetches secrets configured for the community.
-
-Retrieve community secrets used in API tasks
-- **list_sprints**: Retrieve a list of community sprints
-- **list_webhooks**: List all webhooks
-- **remove_xp**: Manually remove XP from a user
-- **review_submission**: Approve or reject claimed quests
-- **search_users**: Search for users by social handles
-- **update_quest**: Update an existing quest
-- **update_webhook**: Update a webhook
-- **add_xp**: Manually add XP to a user
-- **ban_user**: Ban a user from the community
 - **check_member**: Verify if a user belongs to a community
 - **create_quest**: Create a new quest
 - **create_secret**: Creates a new secret for the community.
@@ -63,6 +46,23 @@ Create a community secret for API tasks
 
 Get the all-time or sprint leaderboard
 - **get_referral_code**: Retrieve a user referral code
+- **get_review**: Retrieve a specific review by ID
+- **get_user**: Fetch user details by Zealy ID
+- **list_modules**: List all modules (categories) in a community
+- **list_secrets**: Fetches secrets configured for the community.
+
+Retrieve community secrets used in API tasks
+- **search_users**: Search for users by social handles
+- **update_quest**: Update an existing quest
+- **list_quests**: List all quests in a community
+- **list_reviews**: Retrieve claimed quests waiting for review
+- **list_sprints**: Retrieve a list of community sprints
+- **list_webhooks**: List all webhooks
+- **remove_xp**: Manually remove XP from a user
+- **review_submission**: Approve or reject claimed quests
+- **update_webhook**: Update a webhook
+- **add_xp**: Manually add XP to a user
+- **ban_user**: Ban a user from the community
 
 
 ## 💬 Prompt Examples
