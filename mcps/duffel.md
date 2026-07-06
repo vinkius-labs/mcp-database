@@ -34,8 +34,6 @@ Connect your **Duffel** account to any AI agent to transform it into a powerful 
 
 
 ## Available Tools (29)
-- **book_stay**: Book a stay
-- **cancel_order**: Cancel a flight order
 - **change_order**: Request a change to an existing order
 - **create_offer_request**: Create a flight offer request
 - **create_order**: Create a flight order (booking)
@@ -63,6 +61,8 @@ Connect your **Duffel** account to any AI agent to transform it into a powerful 
 - **search_stays**: Search for accommodation (Stays)
 - **get_seat_maps**: Get seat maps for an offer
 - **suggest_accommodation**: Suggest accommodations by name
+- **book_stay**: Book a stay
+- **cancel_order**: Cancel a flight order
 
 
 ## 💬 Prompt Examples

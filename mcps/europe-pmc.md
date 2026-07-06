@@ -33,9 +33,9 @@ Connect to **Europe PMC**, the comprehensive database for biomedical and life sc
 
 
 ## Available Tools (3)
-- **get_article_fields**: Get available search fields for articles
 - **search_articles**: Search Europe PMC articles
 - **search_grants**: Search Europe PMC grants (Grist API)
+- **get_article_fields**: Get available search fields for articles
 
 
 ## 💬 Prompt Examples

@@ -33,11 +33,11 @@ Integrate **Edamam** into your AI workflows to access world-class nutrition and 
 
 
 ## Available Tools (3)
-- **analyze_nutrition**: Get nutrition facts for a recipe
-- **parse_food**: Look up food in the Food Database
 - **search_recipes**: 3 million recipes by keywords, dietary restrictions, and other filters.
 
 Search recipes by keywords and filters
+- **analyze_nutrition**: Get nutrition facts for a recipe
+- **parse_food**: Look up food in the Food Database
 
 
 ## 💬 Prompt Examples

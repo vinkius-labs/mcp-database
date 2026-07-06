@@ -34,9 +34,6 @@ Connect your **EOD Historical Data (EODHD)** account to any AI agent to retrieve
 
 
 ## Available Tools (26)
-- **get_bulk_fundamentals**: Get bulk fundamental data for an exchange
-- **get_calendar_dividends**: Get upcoming dividends calendar
-- **get_calendar_earnings**: Get upcoming earnings calendar
 - **get_calendar_ipos**: Get upcoming IPOs calendar
 - **get_calendar_splits**: Get upcoming splits calendar
 - **get_commodities**: Get historical prices for commodities
@@ -60,6 +57,9 @@ Connect your **EOD Historical Data (EODHD)** account to any AI agent to retrieve
 - **get_ust_bill_rates**: Get US Treasury Bill Rates
 - **get_ust_real_yield_rates**: Get US Treasury Real Yield Rates
 - **get_ust_yield_rates**: Get US Treasury Yield Rates
+- **get_bulk_fundamentals**: Get bulk fundamental data for an exchange
+- **get_calendar_dividends**: Get upcoming dividends calendar
+- **get_calendar_earnings**: Get upcoming earnings calendar
 
 
 ## 💬 Prompt Examples

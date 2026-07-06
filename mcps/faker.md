@@ -34,9 +34,6 @@ Connect the **Faker** MCP server to your AI agent to instantly generate realisti
 
 
 ## Available Tools (11)
-- **get_addresses**: Can be filtered by country_code.
-
-Generate mock address data
 - **get_books**: Generate mock book information
 - **get_companies**: Generate mock company data
 - **get_credit_cards**: Generate mock credit card information
@@ -53,6 +50,9 @@ Generate mock personal information
 - **get_products**: Generate mock product data
 - **get_texts**: Generate mock text content
 - **get_users**: Generate mock user account data
+- **get_addresses**: Can be filtered by country_code.
+
+Generate mock address data
 
 
 ## 💬 Prompt Examples

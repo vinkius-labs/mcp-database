@@ -34,7 +34,6 @@ Connect your **Fitbit** account to any AI agent and gain deep insights into your
 
 
 ## Available Tools (51)
-- **create_activity_goal**: Create Activity Goal
 - **create_activity_log**: Create Activity Log
 - **create_alarm**: Create Alarm
 - **create_food_log**: Create Food Log
@@ -85,6 +84,7 @@ Connect your **Fitbit** account to any AI agent and gain deep insights into your
 - **introspect_token**: Introspect OAuth2 Token
 - **update_alarm**: Update Alarm
 - **update_profile**: Update Profile
+- **create_activity_goal**: Create Activity Goal
 
 
 ## 💬 Prompt Examples

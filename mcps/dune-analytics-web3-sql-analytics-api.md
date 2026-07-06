@@ -33,7 +33,6 @@ Connect your **Dune Analytics** account to any AI agent to query and analyze rea
 
 
 ## Available Tools (4)
-- **cancel_execution**: Interrupt an ongoing query execution
 - **execute_query**: Returns an execution_id to track status.
 
 Execute a specific Dune query ID with optional parameters
@@ -43,6 +42,7 @@ Retrieve the data rows from a completed execution
 - **get_execution_status**: g., QUERY_STATE_PENDING, QUERY_STATE_COMPLETED, QUERY_STATE_FAILED).
 
 Check the current status of a query execution
+- **cancel_execution**: Interrupt an ongoing query execution
 
 
 ## 💬 Prompt Examples

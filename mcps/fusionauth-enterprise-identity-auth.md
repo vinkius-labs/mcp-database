@@ -34,9 +34,6 @@ Connect your **FusionAuth** instance to any AI agent to streamline identity mana
 
 
 ## Available Tools (50)
-- **add_group_member**: Add a User to a Group
-- **create_api_key**: Create a new API Key
-- **create_application_role**: Create a new Application Role
 - **create_application**: Optionally provide a specific applicationId.
 
 Create a new Application
@@ -90,6 +87,9 @@ Retrieve a User from FusionAuth
 - **update_tenant**: Update a Tenant
 - **update_user**: Update an existing User
 - **update_webhook**: Update a Webhook
+- **add_group_member**: Add a User to a Group
+- **create_api_key**: Create a new API Key
+- **create_application_role**: Create a new Application Role
 
 
 ## 💬 Prompt Examples

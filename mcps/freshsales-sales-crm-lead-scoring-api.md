@@ -34,12 +34,7 @@ Connect your **Freshsales** CRM to any AI agent to streamline your sales operati
 
 
 ## Available Tools (21)
-- **convert_lead**: last_name and company_name are mandatory.
-
-Convert a lead to a contact
-- **create_account**: Create a new sales account
 - **create_appointment**: Create an appointment
-- **create_contact**: Create a new contact
 - **create_deal**: Create a new deal
 - **create_lead**: Provide at least a first name or email.
 
@@ -61,6 +56,11 @@ List all leads in a specific view
 - **search_lookup**: Lookup search for specific fields
 - **update_contact**: Update an existing contact
 - **update_lead**: Update an existing lead
+- **convert_lead**: last_name and company_name are mandatory.
+
+Convert a lead to a contact
+- **create_account**: Create a new sales account
+- **create_contact**: Create a new contact
 
 
 ## 💬 Prompt Examples

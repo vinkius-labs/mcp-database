@@ -34,8 +34,6 @@ Connect to the **Fantom Network** through FtmScan to inspect on-chain activity u
 
 
 ## Available Tools (19)
-- **get_block_countdown**: Get Estimated Block Countdown Time
-- **get_block_reward**: Get Block Rewards
 - **get_contract_abi**: Get Contract ABI
 - **get_contract_source_code**: Get Contract Source Code
 - **get_erc20_token_balance**: Get ERC20 Token Balance for Address
@@ -53,6 +51,8 @@ Connect to the **Fantom Network** through FtmScan to inspect on-chain activity u
 - **get_normal_transactions**: Get List of Normal Transactions
 - **get_transaction_receipt_status**: Check Transaction Receipt Status
 - **get_transaction_status**: Check Transaction Execution Status
+- **get_block_countdown**: Get Estimated Block Countdown Time
+- **get_block_reward**: Get Block Rewards
 
 
 ## 💬 Prompt Examples

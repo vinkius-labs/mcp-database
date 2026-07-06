@@ -36,9 +36,6 @@ No more navigating complex API dashboards to update a video tag or find a stream
 
 
 ## Available Tools (8)
-- **create_player**: Create a new video player
-- **create_video**: Create or publish a new video
-- **edit_video**: Edit video metadata
 - **get_partner_upload_url**: Requires private API key/token.
 
 Get a partner upload URL for a video file
@@ -48,6 +45,9 @@ Get a partner upload URL for a video file
 - **reporting_graphql**: g., askPartnerReportFile).
 
 Query the Reporting API via GraphQL
+- **create_player**: Create a new video player
+- **create_video**: Create or publish a new video
+- **edit_video**: Edit video metadata
 
 
 ## 💬 Prompt Examples

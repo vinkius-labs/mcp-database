@@ -45,7 +45,6 @@ Connect your **Dynatrace** environment to any AI agent to gain deep visibility i
 - **get_anomaly_detection_services**: Get anomaly detection configuration for services
 - **get_calculated_metrics_service**: Get calculated service metrics configuration
 - **get_problem**: Get details of a specific problem
-- **ingest_events**: Ingest custom events into Dynatrace
 - **ingest_metrics**: Push custom data points using the line protocol
 - **list_account_groups**: List user groups in an account
 - **list_account_policies**: List access policies in an account
@@ -54,11 +53,12 @@ Connect your **Dynatrace** environment to any AI agent to gain deep visibility i
 - **list_entities**: List monitored entities
 - **list_entity_types**: List all available entity types
 - **list_events**: List events within a timeframe
-- **list_metrics**: List available metrics
 - **list_problems**: List open and closed problems
+- **list_synthetic_executions**: View results of monitor runs
+- **ingest_events**: Ingest custom events into Dynatrace
+- **list_metrics**: List available metrics
 - **list_settings_objects**: List configuration objects
 - **list_settings_schemas**: List all configuration schemas
-- **list_synthetic_executions**: View results of monitor runs
 - **list_synthetic_locations**: List synthetic locations
 - **list_synthetic_monitors**: List synthetic monitors
 - **query_metrics**: Query data points for specific metrics

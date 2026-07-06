@@ -35,7 +35,6 @@ Connect your **Dev.to** (Forem) account to your AI agent to streamline your tech
 
 ## Available Tools (36)
 - **create_article**: Create a new article
-- **create_display_ad**: Create a display ad
 - **create_page**: Create a page
 - **create_reaction**: Create a reaction
 - **delete_page**: Delete page by ID
@@ -70,6 +69,7 @@ Connect your **Dev.to** (Forem) account to your AI agent to streamline your tech
 - **update_article**: Update article by ID
 - **update_display_ad**: Update display ad by ID
 - **update_page**: Update page by ID
+- **create_display_ad**: Create a display ad
 
 
 ## 💬 Prompt Examples

@@ -33,12 +33,12 @@ Connect to **Europeana**, the digital heart of Europe's cultural heritage. This 
 
 
 ## Available Tools (4)
+- **get_record**: Get detailed information about a specific cultural heritage object
+- **search_records**: Search Europeana metadata
 - **get_entity**: Retrieve information about linked entities
 - **oaipmh_request**: Returns XML data.
 
 Bulk harvesting of metadata via OAI-PMH
-- **get_record**: Get detailed information about a specific cultural heritage object
-- **search_records**: Search Europeana metadata
 
 
 ## 💬 Prompt Examples

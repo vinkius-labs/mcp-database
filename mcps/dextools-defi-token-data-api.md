@@ -34,11 +34,11 @@ Connect your **Dextools** API account to any AI agent to analyze decentralized f
 
 
 ## Available Tools (5)
-- **get_blockchains**: Retrieve a list of supported blockchain networks
-- **get_pair**: Retrieve information about liquidity pairs
 - **get_token_liquidity**: Get liquidity information for a token or pair
 - **get_token_price**: Get the current price of a token
 - **get_token**: Retrieve detailed information about a specific token
+- **get_blockchains**: Retrieve a list of supported blockchain networks
+- **get_pair**: Retrieve information about liquidity pairs
 
 
 ## 💬 Prompt Examples

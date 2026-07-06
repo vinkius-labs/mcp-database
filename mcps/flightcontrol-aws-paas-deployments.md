@@ -34,7 +34,6 @@ Connect your **Flightcontrol** account to any AI agent to orchestrate your AWS d
 
 
 ## Available Tools (24)
-- **create_aws_account_connection**: Create AWS Account Connection
 - **create_cloudfront_invalidation**: Create CloudFront Cache Invalidation
 - **create_deployment**: Trigger a new deployment based on repository filters
 - **create_domain_group**: Create Domain Certificate Group
@@ -58,6 +57,7 @@ Connect your **Flightcontrol** account to any AI agent to orchestrate your AWS d
 - **swap_blue_green**: Trigger a swap between Blue and Green environments
 - **trigger_deploy_hook**: Trigger deployments via a secret URL
 - **update_service_scaling**: Manually scale service instances
+- **create_aws_account_connection**: Create AWS Account Connection
 
 
 ## 💬 Prompt Examples

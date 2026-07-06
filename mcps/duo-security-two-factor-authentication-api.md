@@ -34,10 +34,6 @@ Connect your **Duo Security** instance to your AI agent to streamline identity m
 
 
 ## Available Tools (18)
-- **auth_status**: Poll for the status of an asynchronous authentication request
-- **auth**: Perform second-factor authentication
-- **bulk_create_users**: Create up to 100 users in one request
-- **check_auth**: Verify integration keys and signature generation
 - **create_account**: Create a child account
 - **create_user**: Create a new user in Duo
 - **delete_account**: Delete a child account
@@ -54,6 +50,10 @@ Retrieve a paged list of users
 - **set_billing_edition**: Set the billing edition for an account
 - **set_telephony_credits**: Set the telephony credits for an account
 - **trash_users**: Send users to trash (pending deletion for 7 days)
+- **auth_status**: Poll for the status of an asynchronous authentication request
+- **auth**: Perform second-factor authentication
+- **bulk_create_users**: Create up to 100 users in one request
+- **check_auth**: Verify integration keys and signature generation
 
 
 ## 💬 Prompt Examples

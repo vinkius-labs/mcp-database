@@ -34,6 +34,16 @@ Connect to the **Decentraland** ecosystem and interact with the metaverse's cont
 
 
 ## Available Tools (15)
+- **get_hot_scenes**: Real-time tracking of popular scenes
+- **get_main_realm_about**: Get detailed configuration for the optimal main realm
+- **get_marketplace_catalog**: Browse and filter wearables/emotes in the marketplace
+- **get_marketplace_items**: Query specific NFT items and their trading history
+- **get_parcel_stats**: Get user counts per parcel
+- **list_places**: List scenes with filters (popularity, coordinates, search)
+- **get_realms**: List all healthy catalyst realms with user counts
+- **update_place_rating**: Requires authentication.
+
+Update content rating for a place (Admin/Moderator only)
 - **list_attending_events**: Requires authentication.
 
 List events the authenticated user is attending
@@ -45,16 +55,6 @@ Create a new event
 - **list_destinations**: Unified list of Genesis City places and Worlds
 - **list_events**: List active/upcoming events
 - **get_auth_request**: Get status of an authentication request
-- **get_hot_scenes**: Real-time tracking of popular scenes
-- **get_main_realm_about**: Get detailed configuration for the optimal main realm
-- **get_marketplace_catalog**: Browse and filter wearables/emotes in the marketplace
-- **get_marketplace_items**: Query specific NFT items and their trading history
-- **get_parcel_stats**: Get user counts per parcel
-- **list_places**: List scenes with filters (popularity, coordinates, search)
-- **get_realms**: List all healthy catalyst realms with user counts
-- **update_place_rating**: Requires authentication.
-
-Update content rating for a place (Admin/Moderator only)
 
 
 ## 💬 Prompt Examples

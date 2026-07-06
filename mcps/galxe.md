@@ -34,12 +34,12 @@ Connect your **Galxe** account to any AI agent to streamline your Web3 growth an
 
 
 ## Available Tools (6)
-- **check_credential_eligibility**: Check user eligibility for a specific credential
-- **check_quest_eligibility**: Check user eligibility for a Galxe quest
-- **get_quest**: Get Galxe quest details
 - **get_space_leaderboard**: Get loyalty points leaderboard for a Galxe space
 - **get_starboard_leaderboard**: Get Starboard leaderboard for Twitter influence
 - **mutate_credential_items**: Modify eligible users for an API credential
+- **check_credential_eligibility**: Check user eligibility for a specific credential
+- **check_quest_eligibility**: Check user eligibility for a Galxe quest
+- **get_quest**: Get Galxe quest details
 
 
 ## 💬 Prompt Examples
