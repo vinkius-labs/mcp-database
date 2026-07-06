@@ -37,9 +37,6 @@ No more navigating through the Notion app to find a database or update page prop
 
 
 ## Available Tools (13)
-- **append_block**: Requires the parent block/page ID and a JSON array of block objects. Each block must follow Notion's block schema: {"object":"block","type":"paragraph","paragraph":{"rich_text":[{"type":"text","text":{"content":"Hello"}}]}}. Common types: paragraph, heading_1, heading_2, heading_3, bulleted_list_item, numbered_list_item, to_do, toggle, code.
-
-Append blocks to a Notion page
 - **create_comment**: Requires the page ID and rich text content. Rich text follows Notion's format: [{"type":"text","text":{"content":"This looks great!"}}]. The comment will appear in the page's comment thread.
 
 Add a comment to a Notion page
@@ -76,6 +73,9 @@ Search pages and databases in Notion
 - **update_page**: Requires the page ID and a properties JSON object with the fields to change. Only provided properties will be updated. Follow Notion's property format: {"Status":{"select":{"name":"Done"}},"Priority":{"select":{"name":"High"}}}.
 
 Update properties of a Notion page
+- **append_block**: Requires the parent block/page ID and a JSON array of block objects. Each block must follow Notion's block schema: {"object":"block","type":"paragraph","paragraph":{"rich_text":[{"type":"text","text":{"content":"Hello"}}]}}. Common types: paragraph, heading_1, heading_2, heading_3, bulleted_list_item, numbered_list_item, to_do, toggle, code.
+
+Append blocks to a Notion page
 
 
 ## 💬 Prompt Examples

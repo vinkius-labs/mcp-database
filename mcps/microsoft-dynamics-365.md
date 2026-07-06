@@ -45,6 +45,7 @@ Query any Dataverse entity set
 - **count_records**: Useful for dashboards without fetching full records.
 
 Count records in a Dynamics 365 entity set
+- **list_contacts**: List Dynamics 365 contacts
 - **get_record**: Example: get_record("accounts", "00000000-0000-0000-0000-000000000001").
 
 Get a specific Dynamics 365 record
@@ -64,7 +65,6 @@ List Dynamics 365 accounts
 
 List sales opportunities
 - **list_cases**: List support cases (incidents)
-- **list_contacts**: List Dynamics 365 contacts
 
 
 ## 💬 Prompt Examples

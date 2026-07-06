@@ -32,15 +32,15 @@ Connect to **Zillow** and explore US real estate through natural conversation.
 
 
 ## Available Tools (3)
+- **search_property**: Returns property details including address, price, bedrooms, bathrooms, square footage, lot size, year built, property type and listing status.
+
+Search for residential properties
 - **get_property_by_id**: Returns full property details including address, price history, tax info, features, description and photos.
 
 Get detailed info for a specific property by ID
 - **get_rental_property**: Returns rental listings with rent price, bedrooms, bathrooms, square footage, property type and listing details.
 
 Search for rental properties
-- **search_property**: Returns property details including address, price, bedrooms, bathrooms, square footage, lot size, year built, property type and listing status.
-
-Search for residential properties
 
 
 ## 💬 Prompt Examples

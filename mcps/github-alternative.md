@@ -41,21 +41,6 @@ No more context-switching to GitHub.com to check PR status or audit issues. Your
 - **create_issue**: Requires the owner, repo and title. Optionally set the issue body (Markdown text) and labels (comma-separated). Returns the created issue with its number, title and URL.
 
 Create a new GitHub issue
-- **get_issue**: Provide the owner, repo and issue number.
-
-Get details for a specific GitHub issue
-- **get_user**: Returns login, name, email, avatar URL, company, bio, public repos count, followers and following counts. Use this to verify your token is working correctly.
-
-Get the authenticated GitHub user
-- **get_pull_request**: Provide the owner, repo and PR number.
-
-Get details for a specific GitHub pull request
-- **get_release_by_tag**: Returns the release name, tag name, body (Markdown), draft/prerelease status, publish date and attached assets. Provide the owner, repo and tag name.
-
-Get a GitHub release by its tag name
-- **get_repo**: Provide the owner (org or user) and repo name.
-
-Get details for a specific GitHub repository
 - **list_branches**: Each branch includes its name, commit SHA and whether it is the default (protected) branch.
 
 List branches in a GitHub repository
@@ -80,6 +65,21 @@ List GitHub Actions workflow runs for a repository
 - **search_repos**: The query supports qualifiers like "language:typescript", "stars:>1000", "org:microsoft", "pushed:>2024-01-01" and free-text search. Results include repo name, description, stars, forks, language and creation date.
 
 Search GitHub repositories
+- **get_issue**: Provide the owner, repo and issue number.
+
+Get details for a specific GitHub issue
+- **get_user**: Returns login, name, email, avatar URL, company, bio, public repos count, followers and following counts. Use this to verify your token is working correctly.
+
+Get the authenticated GitHub user
+- **get_pull_request**: Provide the owner, repo and PR number.
+
+Get details for a specific GitHub pull request
+- **get_release_by_tag**: Returns the release name, tag name, body (Markdown), draft/prerelease status, publish date and attached assets. Provide the owner, repo and tag name.
+
+Get a GitHub release by its tag name
+- **get_repo**: Provide the owner (org or user) and repo name.
+
+Get details for a specific GitHub repository
 
 
 ## 💬 Prompt Examples

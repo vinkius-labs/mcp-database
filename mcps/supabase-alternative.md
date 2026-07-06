@@ -36,15 +36,6 @@ No more clicking through the Supabase dashboard to check project status or manag
 
 
 ## Available Tools (14)
-- **create_branch**: The branch gets an isolated copy of the database that can be modified independently. Returns the created branch with its name and status.
-
-Create a new branch for a Supabase project
-- **create_project**: Requires the project name, organization ID and optionally the region (e.g. "us-east-1", "eu-west-2") and database password. The project will be provisioned with Postgres, Auth, Storage and API services. Returns the created project with its ref.
-
-Create a new Supabase project
-- **create_secret**: Requires the secret name and value. Optionally set the branch slug (defaults to main). The secret value is encrypted at rest. Returns confirmation of creation.
-
-Create a secret for a Supabase project
 - **delete_secret**: Provide the project ref and secret name. WARNING: the secret cannot be recovered after deletion.
 
 Delete a secret from a Supabase project
@@ -76,6 +67,15 @@ Restore a paused Supabase project
 - **update_postgres_config**: Provide the project ref and a JSON object with the settings to change (e.g. {"max_connections":200,"work_mem":"16MB"}). Changes may require a database restart.
 
 Update PostgreSQL configuration for a Supabase project
+- **create_branch**: The branch gets an isolated copy of the database that can be modified independently. Returns the created branch with its name and status.
+
+Create a new branch for a Supabase project
+- **create_project**: Requires the project name, organization ID and optionally the region (e.g. "us-east-1", "eu-west-2") and database password. The project will be provisioned with Postgres, Auth, Storage and API services. Returns the created project with its ref.
+
+Create a new Supabase project
+- **create_secret**: Requires the secret name and value. Optionally set the branch slug (defaults to main). The secret value is encrypted at rest. Returns confirmation of creation.
+
+Create a secret for a Supabase project
 
 
 ## 💬 Prompt Examples

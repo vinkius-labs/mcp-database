@@ -35,15 +35,9 @@ Connect to **Duolingo** and explore language learning progress through natural c
 
 
 ## Available Tools (8)
-- **get_daily_leaderboard**: Shows top users by XP for the current day. Optionally specify language code and timezone.
-
-Get daily leaderboard for a language
 - **get_dictionary_hints**: Returns translation pairs for the given tokens. Useful for building flashcards or vocabulary tools. Target and source are language codes (e.g. "es", "fr", "de", "en").
 
 Get dictionary hints for word translations
-- **get_friends**: Optionally provide a user ID. Returns friend usernames, IDs, streaks and XP totals.
-
-Get Duolingo friends list
 - **get_leaderboard**: Optionally provide a user ID to get leaderboard info for a specific user. Returns rankings with usernames, XP totals and positions.
 
 Get Duolingo leaderboard data
@@ -59,6 +53,12 @@ Get a Duolingo user profile by username
 - **get_version_info**: Useful for understanding available language codes and API capabilities.
 
 Get Duolingo API version information
+- **get_daily_leaderboard**: Shows top users by XP for the current day. Optionally specify language code and timezone.
+
+Get daily leaderboard for a language
+- **get_friends**: Optionally provide a user ID. Returns friend usernames, IDs, streaks and XP totals.
+
+Get Duolingo friends list
 
 
 ## 💬 Prompt Examples

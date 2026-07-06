@@ -36,9 +36,6 @@ Connect your **Withings** account to any AI agent to unlock deep insights into y
 
 
 ## Available Tools (10)
-- **get_activity**: Get daily activity summaries (steps, calories)
-- **get_heart_rate**: Get specific heart rate measurements
-- **get_intraday_activity**: Get high-frequency intraday activity data
 - **get_measurements**: Use meastype to filter (1=Weight, 4=Height, 9=Diastolic BP, 10=Systolic BP, 11=Heart Pulse, 71=Body Temp). Dates should be YYYY-MM-DD.
 
 Get physiological measurements (weight, blood pressure, etc)
@@ -52,6 +49,9 @@ Get recorded workouts and exercises
 - **subscribe_notifications**: g. immediately after a user steps on a scale). Appli codes: 1(weight), 4(BP), 16(activity), 44(sleep).
 
 Subscribe to Withings webhook notifications
+- **get_activity**: Get daily activity summaries (steps, calories)
+- **get_heart_rate**: Get specific heart rate measurements
+- **get_intraday_activity**: Get high-frequency intraday activity data
 
 
 ## 💬 Prompt Examples

@@ -36,8 +36,6 @@ Connect your **Glean** workspace to any AI agent and unlock enterprise knowledge
 
 
 ## Available Tools (12)
-- **autocomplete**: Autocomplete suggestions
-- **bulk_index_documents**: Bulk index documents
 - **chat**: AI chat
 - **check_glean_status**: Verify connectivity
 - **delete_document**: Delete a document
@@ -50,6 +48,8 @@ Connect your **Glean** workspace to any AI agent and unlock enterprise knowledge
 Search in specific datasource
 - **search_people**: Search people
 - **search**: Search across all content
+- **autocomplete**: Autocomplete suggestions
+- **bulk_index_documents**: Bulk index documents
 
 
 ## 💬 Prompt Examples

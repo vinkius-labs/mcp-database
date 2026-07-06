@@ -36,13 +36,13 @@ Stop switching into the GCP Console for quick data validations. Check database c
 
 
 ## Available Tools (7)
-- **list_datasets**: List all explicit Datasets in the active GCP project
-- **get_dataset**: Get exact details of a specific BigQuery dataset
-- **list_tables**: List explicit Tables natively contained within a Dataset
 - **get_table**: Get explicit metadata and schema details of a pure BigQuery Table
 - **execute_query**: Run an explicit BigQuery Standard SQL command
 - **list_jobs**: List recent explicit BigQuery runtime Jobs securely
 - **get_job**: Get complete details of a specific BigQuery Job run
+- **list_datasets**: List all explicit Datasets in the active GCP project
+- **get_dataset**: Get exact details of a specific BigQuery dataset
+- **list_tables**: List explicit Tables natively contained within a Dataset
 
 
 ## 💬 Prompt Examples

@@ -37,13 +37,13 @@ Equip your AI agent with professional-grade tactical intelligence for **Clash Ro
 - **get_upcoming_chests**: Get the next chests in a player's rotation
 - **get_clan_details**: Get full profile for a Clash Royale clan
 - **get_clan_members**: List all members of a clan
+- **list_global_seasons**: List all past global seasons
 - **get_player_profile**: Get detailed profile and deck for a Clash Royale player
 - **get_location_rankings**: locationId 57000038 = International. Type: players, clans, or clanwars.
 
 Get top players, clans, or war clans for a location
 - **get_current_river_race**: Get real-time River Race (Clan War) status
 - **get_river_race_history**: Get past River Race results for a clan
-- **list_global_seasons**: List all past global seasons
 - **get_global_tournaments**: Get current global tournaments
 - **list_all_cards**: List all available cards in the game
 - **list_locations**: List all available country/location IDs

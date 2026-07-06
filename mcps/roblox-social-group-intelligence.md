@@ -33,15 +33,15 @@ Equip your AI agent with deep intelligence for the **Roblox Social & Economy** e
 
 
 ## Available Tools (9)
-- **get_user_followers**: List followers of a Roblox user
-- **get_user_followings**: List users followed by a Roblox user
-- **get_user_friends**: List friends for a Roblox user
-- **get_group_details**: Get details for a Roblox group
 - **get_group_roles**: List all ranks and roles within a group
 - **get_users_online_status**: Check if multiple users are online or in-game
 - **get_user_badges**: List badges earned by a Roblox user
 - **get_user_profile**: Get full profile for a Roblox user by ID
 - **search_roblox_user**: Find Roblox users by username
+- **get_user_followers**: List followers of a Roblox user
+- **get_user_followings**: List users followed by a Roblox user
+- **get_user_friends**: List friends for a Roblox user
+- **get_group_details**: Get details for a Roblox group
 
 
 ## 💬 Prompt Examples

@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire geographic research and ZIP cod
 
 
 ## Available Tools (6)
-- **find_zips_by_city**: Find all ZIP codes associated with a city and state
-- **find_zips_by_county**: Find all ZIP codes in a specific county
 - **find_zips_by_state**: Find all ZIP codes in a specific state
 - **get_zip_distance**: Calculate the distance between two ZIP codes
 - **find_zips_in_radius**: Find all ZIP codes within a specific mile radius of a starting ZIP
 - **get_zip_details**: Get geographic and demographic details for a specific ZIP code
+- **find_zips_by_city**: Find all ZIP codes associated with a city and state
+- **find_zips_by_county**: Find all ZIP codes in a specific county
 
 
 ## 💬 Prompt Examples

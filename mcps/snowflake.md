@@ -36,15 +36,15 @@ Stop juggling browser instances to paste a quick query in Snowflake Snowsight. S
 
 
 ## Available Tools (7)
+- **list_warehouses**: Lists all virtual warehouses
+- **list_stages**: Lists all internal and external stages
+- **get_query_status**: Retrieves the status of an asynchronous query
 - **list_databases**: Lists all databases in the Snowflake account
 - **list_schemas**: Lists all schemas within a specific database
 - **list_tables**: Lists all tables within a specific schema
 - **execute_sql**: Prefers read-only statements whenever possible.
 
 Executes a SQL query on Snowflake
-- **list_warehouses**: Lists all virtual warehouses
-- **list_stages**: Lists all internal and external stages
-- **get_query_status**: Retrieves the status of an asynchronous query
 
 
 ## 💬 Prompt Examples

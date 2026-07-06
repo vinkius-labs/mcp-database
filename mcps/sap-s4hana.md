@@ -39,13 +39,6 @@ Connect your **SAP S/4HANA** system to any AI agent and manage core ERP operatio
 
 
 ## Available Tools (9)
-- **list_business_partners**: Use OData $filter syntax for filtering — e.g. BusinessPartnerCategory eq '2' for organizations.
-
-List SAP business partners
-- **get_business_partner**: Get a specific business partner by ID
-- **create_business_partner**: Provide JSON with BusinessPartnerCategory (1=Person, 2=Organization), FirstName/LastName or OrganizationBPName1.
-
-Create a new business partner
 - **list_purchase_orders**: Filter by supplier, purchasing org, or status using OData $filter syntax.
 
 List purchase orders
@@ -62,6 +55,13 @@ Get material stock levels
 - **query_odata**: Provide the service path and entity set. Supports $filter, $select, $expand.
 
 Execute a custom OData v4 query
+- **list_business_partners**: Use OData $filter syntax for filtering — e.g. BusinessPartnerCategory eq '2' for organizations.
+
+List SAP business partners
+- **get_business_partner**: Get a specific business partner by ID
+- **create_business_partner**: Provide JSON with BusinessPartnerCategory (1=Person, 2=Organization), FirstName/LastName or OrganizationBPName1.
+
+Create a new business partner
 
 
 ## 💬 Prompt Examples

@@ -36,15 +36,15 @@ No more manual data entry or toggling between browser tabs to find specific reco
 
 
 ## Available Tools (7)
+- **list_airtable_comments**: List comments on a record
+- **list_airtable_records**: List records in a table
+- **update_airtable_record**: Update a record
 - **create_airtable_records**: Must pass a JSON array of objects with a "fields" key.
 
 Create new records
 - **delete_airtable_record**: Delete a record
 - **get_airtable_base_schema**: Get base schema
 - **get_airtable_record**: Get a specific record
-- **list_airtable_comments**: List comments on a record
-- **list_airtable_records**: List records in a table
-- **update_airtable_record**: Update a record
 
 
 ## 💬 Prompt Examples

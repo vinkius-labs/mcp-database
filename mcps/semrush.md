@@ -33,12 +33,6 @@ Equip your conversational workflow with the raw data power of **Semrush**, the i
 
 
 ## Available Tools (8)
-- **domain_overview**: Specify the database (e.g., "us", "uk") if targeting a specific region.
-
-Get domain SEO overview: rank, organic traffic, paid traffic
-- **organic_keywords**: Useful for competitor analysis or performance tracking.
-
-Get domain organic keyword positions
 - **keyword_overview**: Get keyword metrics: volume, CPC, competition, SERP features
 - **related_keywords**: Ideal for content planning and SEO expansion.
 
@@ -49,6 +43,12 @@ Get related keywords with volume and difficulty
 - **site_audit**: Requires a valid Semgrep project ID.
 
 Get site audit quality overview for a project
+- **domain_overview**: Specify the database (e.g., "us", "uk") if targeting a specific region.
+
+Get domain SEO overview: rank, organic traffic, paid traffic
+- **organic_keywords**: Useful for competitor analysis or performance tracking.
+
+Get domain organic keyword positions
 
 
 ## 💬 Prompt Examples

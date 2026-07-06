@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your entire e-commerce ecosystem with **Woo
 
 
 ## Available Tools (10)
-- **get_order**: Get details for a specific order
-- **get_product**: Get details for a specific product
 - **get_system_status**: Get WooCommerce system status
 - **list_coupons**: List all coupons
 - **list_customers**: List WooCommerce customers
 - **list_orders**: List WooCommerce orders
 - **list_categories**: List product categories
 - **list_products**: List WooCommerce products
+- **get_order**: Get details for a specific order
+- **get_product**: Get details for a specific product
 - **list_reports**: List WooCommerce reports
 - **update_order**: Update an order status
 

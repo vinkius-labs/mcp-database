@@ -34,9 +34,9 @@ Equip your AI agent with the industry standard for digital market intelligence t
 
 
 ## Available Tools (3)
-- **get_category_rank**: Get category rank for a domain
 - **get_global_rank**: Get global rank for a domain
 - **get_desktop_visits**: Get monthly desktop visits for a domain
+- **get_category_rank**: Get category rank for a domain
 
 
 ## 💬 Prompt Examples
