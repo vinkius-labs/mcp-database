@@ -35,10 +35,6 @@ Connect your **Mux Video** account to your AI agent and take full control of you
 
 
 ## Available Tools (11)
-- **create_asset**: Create a new video asset
-- **create_direct_upload**: Create a direct upload session
-- **create_live_stream**: Create a new live stream
-- **delete_asset**: Delete a video asset
 - **delete_live_stream**: Delete a live stream
 - **get_asset**: Get specific asset details
 - **get_live_stream**: Get specific live stream details
@@ -46,6 +42,10 @@ Connect your **Mux Video** account to your AI agent and take full control of you
 - **list_assets**: List Mux video assets
 - **list_direct_uploads**: List direct video uploads
 - **list_live_streams**: List Mux live streams
+- **create_asset**: Create a new video asset
+- **create_direct_upload**: Create a direct upload session
+- **create_live_stream**: Create a new live stream
+- **delete_asset**: Delete a video asset
 
 
 ## 💬 Prompt Examples

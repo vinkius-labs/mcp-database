@@ -28,6 +28,7 @@ Connect your **Memberstack** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
+- **search_members**: Search members by email
 - **get_member_plans**: Get plans for a specific member
 - **get_plan**: Get details for a specific plan
 - **list_coupons**: List all discount coupons
@@ -35,7 +36,6 @@ Connect your **Memberstack** account to any AI agent and take full control of yo
 - **list_members**: List all members
 - **list_plans**: List all membership plans
 - **list_promotions**: List active promotions
-- **search_members**: Search members by email
 - **get_application_info**: Get application details
 - **get_member**: Get details for a specific member
 

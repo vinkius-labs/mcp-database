@@ -37,8 +37,8 @@ Connect your **OptimoRoute** account to any AI agent and orchestrate your entire
 
 ## Available Tools (10)
 - **get_order_pod**: Retrieve the exact structural matching verifying Delivery success Proof
-- **create_route_order**: Identify bounded routing spaces inside the Headless OptimoRoute platform
 - **delete_stale_order**: Perform structural extraction of properties driving active Deletions
+- **create_route_order**: Identify bounded routing spaces inside the Headless OptimoRoute platform
 - **get_live_driver_gps**: Irreversibly vaporize explicit validations extracting Telemetry natively
 - **download_manifest_routes**: Enumerate explicitly attached structured rules exporting active Drivers
 - **check_planning_status**: Identify precise active arrays spanning native Asynchronous bounds

@@ -33,6 +33,12 @@ Bring **Parseur Document Extraction** arrays directly into your AI workflows. By
 
 
 ## Available Tools (10)
+- **retry_document**: Useful after fixing template rules or when the original parse failed due to a transient error. The document will be matched against the latest template rules.
+
+Retry parsing a failed or errored Parseur document
+- **upload_document**: eml) to the specified mailbox for automatic parsing. The document enters the processing queue and will be parsed according to the mailbox template. Returns the new document ID for tracking.
+
+Upload a document URL to a Parseur mailbox for parsing
 - **create_mailbox**: The type determines the parsing engine (e.g., "pdf", "email", "attachment"). Once created, you can configure templates and forward documents to the mailbox for automatic extraction.
 
 Create a new Parseur mailbox for document parsing
@@ -57,12 +63,6 @@ List all Parseur parsing mailboxes
 - **list_templates**: Templates define the extraction rules (field names, locations, regex patterns) used to pull structured data from incoming documents.
 
 List available extraction templates for a Parseur mailbox
-- **retry_document**: Useful after fixing template rules or when the original parse failed due to a transient error. The document will be matched against the latest template rules.
-
-Retry parsing a failed or errored Parseur document
-- **upload_document**: eml) to the specified mailbox for automatic parsing. The document enters the processing queue and will be parsed according to the mailbox template. Returns the new document ID for tracking.
-
-Upload a document URL to a Parseur mailbox for parsing
 
 
 ## 💬 Prompt Examples

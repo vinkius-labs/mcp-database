@@ -33,12 +33,12 @@ Equip any AI agent with direct access to your **Plane** workspace. Whether you'r
 
 
 ## Available Tools (6)
-- **list_projects**: List projects in a Plane workspace
-- **get_project**: Get specific details of a Plane project
-- **list_work_items**: List work items (issues) inside a Plane project
 - **list_cycles**: List cycles inside a Plane project
 - **list_modules**: List modules inside a Plane project
 - **list_labels**: List project labels in Plane
+- **list_projects**: List projects in a Plane workspace
+- **get_project**: Get specific details of a Plane project
+- **list_work_items**: List work items (issues) inside a Plane project
 
 
 ## 💬 Prompt Examples

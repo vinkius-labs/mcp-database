@@ -28,9 +28,6 @@ Connect your **Meltwater** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **get_search_analytics**: Get analytics for a search
-- **get_media_insights**: Get high-level media insights
-- **get_mention_details**: Get details for a specific mention
 - **get_search_details**: Get details for a saved search
 - **list_content_exports**: List available content exports
 - **list_folders**: List all account folders
@@ -38,6 +35,9 @@ Connect your **Meltwater** account to any AI agent and take full control of your
 - **list_media_sources**: List tracked media sources
 - **list_tags**: List all organizational tags
 - **search_content**: Search news and social media content
+- **get_search_analytics**: Get analytics for a search
+- **get_media_insights**: Get high-level media insights
+- **get_mention_details**: Get details for a specific mention
 
 
 ## 💬 Prompt Examples

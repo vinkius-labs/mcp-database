@@ -33,8 +33,6 @@ Connect the **Pixabay** massive media library natively to your AI agent. Access 
 
 
 ## Available Tools (10)
-- **search_images**: Search Pixabay free stock images. Over 4.5M photos, illustrations, vectors. Returns IDs, preview URLs, page URL, tags, dimensions, downloads, and likes. Pixabay license allows free commercial use. Instructions: Pass query, page, per_page (max 200), image_type (all/photo/illustration/vector)
-- **search_illustrations**: Search Pixabay illustrations. Drawings, digital art, and clipart
 - **search_vectors**: Search Pixabay vector graphics. Scalable SVG art, icons, and infographics
 - **search_videos**: Search Pixabay free stock videos. Returns video IDs, sizes, durations, and download URLs at multiple resolutions
 - **search_by_category**: Search Pixabay by content category. Categories: backgrounds, fashion, nature, science, education, feelings, health, people, religion, places, animals, industry, computer, food, sports, transportation, travel, buildings, business, music
@@ -43,6 +41,8 @@ Connect the **Pixabay** massive media library natively to your AI agent. Access 
 - **search_safe_content**: Search Pixabay with safe search enabled. Filters inappropriate content
 - **search_by_orientation**: Search Pixabay by image orientation. Instructions: Pass horizontal, vertical, or all
 - **get_image**: Get Pixabay image by ID. Returns full details, tags, and download URLs
+- **search_images**: Search Pixabay free stock images. Over 4.5M photos, illustrations, vectors. Returns IDs, preview URLs, page URL, tags, dimensions, downloads, and likes. Pixabay license allows free commercial use. Instructions: Pass query, page, per_page (max 200), image_type (all/photo/illustration/vector)
+- **search_illustrations**: Search Pixabay illustrations. Drawings, digital art, and clipart
 
 
 ## 💬 Prompt Examples

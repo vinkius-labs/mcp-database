@@ -31,13 +31,13 @@ Connect your AI agent to the **National Library of Medicine's PubMed database** 
 
 
 ## Available Tools (3)
-- **get_pubmed_article**: Get full details of a PubMed article by its PMID
 - **get_pubmed_citations**: Useful for tracing the impact of a paper and finding follow-up research.
 
 Find articles that cite a specific PubMed paper
 - **search_pubmed**: Returns titles, authors, journals, abstracts, DOIs, and MeSH terms. Supports boolean operators: AND, OR, NOT.
 
 Search PubMed for biomedical and life sciences research articles
+- **get_pubmed_article**: Get full details of a PubMed article by its PMID
 
 
 ## 💬 Prompt Examples

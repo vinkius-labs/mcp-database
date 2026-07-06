@@ -46,6 +46,10 @@ This is useful for creating similar requests, repeating processes, or using an e
 as a template for new items. The cloned card gets a new unique ID but retains all field data.
 
 Clone an existing card to create a duplicate
+- **get_user_profile**: Use this to verify API token access and discover organization IDs needed for other queries.
+This is also useful for understanding which organizations and pipes the user has access to.
+
+Get the authenticated user profile
 - **create_card**: You must provide the pipe_id and 
 a JSON object containing field values matching the pipe's required fields.
 Fields are key-value pairs where keys are field IDs and values are the data to store.
@@ -77,10 +81,6 @@ Use the pipe_id to get the structure of a pipe before creating cards or managing
 The response includes all phases with their IDs, names, and the custom fields defined for the pipe.
 
 Get details of a specific Pipefy pipe (process)
-- **get_user_profile**: Use this to verify API token access and discover organization IDs needed for other queries.
-This is also useful for understanding which organizations and pipes the user has access to.
-
-Get the authenticated user profile
 - **list_cards**: Cards represent individual items 
 flowing through the pipe's workflow phases (e.g., requests, tasks, tickets, leads).
 You must provide the pipe_id. Optionally filter by phase_id to see cards in a specific phase.

@@ -33,7 +33,6 @@ Connect your **Portable.io** account to your favorite AI agent and take orchestr
 
 
 ## Available Tools (6)
-- **list_flows**: List all integration flows configured in Portable
 - **get_flow**: Get complete configuration details of a specific data flow
 - **list_runs**: List historical execution runs for a specific data flow
 - **list_connectors**: List available pre-built API data source connectors
@@ -41,6 +40,7 @@ Connect your **Portable.io** account to your favorite AI agent and take orchestr
 
 List all configured data warehouse destinations
 - **get_account**: Retrieve the exact workspace and account billing details
+- **list_flows**: List all integration flows configured in Portable
 
 
 ## 💬 Prompt Examples

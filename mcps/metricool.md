@@ -28,8 +28,6 @@ Connect your **Metricool** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **get_ads_performance**: Get performance for ads
-- **get_facebook_analytics**: Get Facebook analytics
 - **get_instagram_analytics**: Get Instagram analytics
 - **get_linkedin_analytics**: Get LinkedIn analytics
 - **get_social_planner**: Get scheduled posts planner
@@ -38,6 +36,8 @@ Connect your **Metricool** account to any AI agent and take full control of your
 - **get_twitter_analytics**: Get Twitter analytics
 - **list_published_posts**: List recently published posts
 - **list_metricool_profiles**: List all connected social profiles
+- **get_ads_performance**: Get performance for ads
+- **get_facebook_analytics**: Get Facebook analytics
 
 
 ## 💬 Prompt Examples

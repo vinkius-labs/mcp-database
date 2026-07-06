@@ -36,16 +36,16 @@ Connect your **MainWP Dashboard** to any AI agent to automate your WordPress net
 
 
 ## Available Tools (8)
-- **scan_network_malware**: Trigger a malware scan across the network
-- **scan_network_vulnerabilities**: Trigger a vulnerability scan across the network
-- **list_site_plugins**: List all plugins installed on a specific site
-- **list_child_sites**: List all connected WordPress sites
-- **sync_child_sites**: Trigger a synchronization with all child sites
 - **get_pending_updates_count**: Get a quick count of all pending updates
 - **list_available_updates**: List all pending core, plugin, and theme updates
 - **upgrade_site_resource**: Requires a JSON body with details.
 
 Execute an upgrade for a specific plugin or theme
+- **scan_network_malware**: Trigger a malware scan across the network
+- **scan_network_vulnerabilities**: Trigger a vulnerability scan across the network
+- **list_site_plugins**: List all plugins installed on a specific site
+- **list_child_sites**: List all connected WordPress sites
+- **sync_child_sites**: Trigger a synchronization with all child sites
 
 
 ## 💬 Prompt Examples

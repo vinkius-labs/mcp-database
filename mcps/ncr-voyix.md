@@ -35,12 +35,12 @@ Connect your **NCR Voyix** (formerly NCR) commerce account to your AI agent and 
 
 
 ## Available Tools (10)
+- **list_catalogs**: List available catalogs
+- **list_customers**: List commerce customers
 - **get_loyalty_programs**: List loyalty programs
 - **get_order**: Get specific order info
 - **get_product**: Get specific product details
 - **get_site**: Get specific site details
-- **list_catalogs**: List available catalogs
-- **list_customers**: List commerce customers
 - **list_inventory**: List site inventory levels
 - **list_orders**: List commerce orders
 - **list_products**: List catalog items (products)
