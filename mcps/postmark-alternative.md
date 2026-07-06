@@ -33,10 +33,6 @@ Connect your **Postmark** server to any AI agent to fully orchestrate and analyz
 
 
 ## Available Tools (9)
-- **get_bounces_overview**: Get bounce overview analytics
-- **get_server**: Get Postmark server details
-- **get_template**: Get a specific Postmark template details
-- **list_templates**: List templates in the server
 - **get_outbound_overview**: Get outbound overview analytics
 - **search_bounces**: You can filter by type, email, or message ID.
 
@@ -48,6 +44,10 @@ Search outbound messages history
 
 Send a transactional email
 - **send_email_with_template**: Send an email using a Postmark Template
+- **get_bounces_overview**: Get bounce overview analytics
+- **get_server**: Get Postmark server details
+- **get_template**: Get a specific Postmark template details
+- **list_templates**: List templates in the server
 
 
 ## 💬 Prompt Examples

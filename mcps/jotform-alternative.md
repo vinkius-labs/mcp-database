@@ -39,8 +39,8 @@ Connect your **Jotform** account to any AI agent and manage forms and submission
 - **get_form_details**: Get metadata for a specific form
 - **list_account_history**: List recent account activities
 - **get_form_questions**: Get questions defined in a form
-- **get_submission_details**: Get full data for a single submission
 - **get_api_usage**: Check API and plan usage
+- **get_submission_details**: Get full data for a single submission
 - **list_form_folders**: List your organizational folders
 - **list_forms**: List all forms in your account
 - **list_form_reports**: List generated reports

@@ -35,12 +35,12 @@ Connect your **GoTo Meeting** account to any AI agent and manage your video conf
 
 
 ## Available Tools (6)
-- **create_meeting**: Schedule a new meeting
-- **delete_meeting**: Delete a meeting
 - **get_meeting_details**: Get details for a specific meeting
 - **list_meeting_history**: List historical meetings
 - **list_meetings**: List upcoming GoTo Meeting sessions
 - **list_account_organizers**: List account organizers
+- **create_meeting**: Schedule a new meeting
+- **delete_meeting**: Delete a meeting
 
 
 ## 💬 Prompt Examples

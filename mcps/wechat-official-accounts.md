@@ -35,7 +35,6 @@ Empower your AI agent to orchestrate your social ecosystem and subscriber engage
 
 
 ## Available Tools (10)
-- **create_custom_menu**: Create custom menu
 - **delete_custom_menu**: Delete custom menu
 - **get_account_status**: Check account connectivity
 - **get_custom_menu**: Retrieve custom menu
@@ -45,6 +44,7 @@ Empower your AI agent to orchestrate your social ecosystem and subscriber engage
 - **list_users**: List subscribers
 - **send_custom_text**: Send custom text message
 - **send_template_message**: Send template message
+- **create_custom_menu**: Create custom menu
 
 
 ## 💬 Prompt Examples

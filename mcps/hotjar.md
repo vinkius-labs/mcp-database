@@ -36,10 +36,6 @@ Connect your **Hotjar** account to any AI agent and access user experience analy
 
 
 ## Available Tools (15)
-- **check_hotjar_status**: Verify connectivity
-- **get_feedback_widget**: Get feedback widget details
-- **get_heatmap**: Get heatmap details
-- **get_recording**: Get recording details
 - **get_survey_stats**: Get survey statistics
 - **get_survey**: Get survey details
 - **list_feedback_responses**: List feedback responses
@@ -51,6 +47,10 @@ Connect your **Hotjar** account to any AI agent and access user experience analy
 - **list_survey_responses**: List survey responses
 - **list_surveys**: List surveys
 - **lookup_user**: Lookup user
+- **check_hotjar_status**: Verify connectivity
+- **get_feedback_widget**: Get feedback widget details
+- **get_heatmap**: Get heatmap details
+- **get_recording**: Get recording details
 
 
 ## 💬 Prompt Examples

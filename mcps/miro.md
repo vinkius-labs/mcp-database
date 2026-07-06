@@ -39,6 +39,9 @@ No more switching to the Miro app to check board content or add a quick sticky n
 - **add_board_member**: Requires the board ID and user ID. Optionally set the role (owner, admin, editor, commenter, viewer). The user must already have a Miro account.
 
 Add a member to a Miro board
+- **list_comments**: Each comment includes its ID, content text, author info, creation date and parent comment ID (for replies). Optionally set a limit.
+
+List comments on a Miro board
 - **create_board**: Requires the board name and optionally a description. Returns the created board with its ID, view link and edit link.
 
 Create a new Miro board
@@ -72,9 +75,6 @@ List members of a Miro board
 - **list_boards**: Each board includes its ID, name, description, creation date, owner and permissions. Optionally set a limit on the number of results. Use this to discover boards before accessing their content.
 
 List Miro boards accessible by the user
-- **list_comments**: Each comment includes its ID, content text, author info, creation date and parent comment ID (for replies). Optionally set a limit.
-
-List comments on a Miro board
 - **update_board**: Provide the board ID and the new name and/or description. Only provided fields will be updated.
 
 Update a Miro board name or description

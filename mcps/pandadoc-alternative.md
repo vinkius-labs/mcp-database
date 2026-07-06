@@ -36,10 +36,6 @@ No more manual status checking or template searching. Your AI acts as a dedicate
 
 
 ## Available Tools (11)
-- **create_document**: Requires a JSON string containing "template_uuid" and "recipients" list. Use this to initiate the document creation process.
-
-Create a new PandaDoc document
-- **create_signing_session**: Create an embedded signing session
 - **delete_document**: Delete a PandaDoc document
 - **get_download_link**: Get the download link for a completed document
 - **get_document_details**: Essential for tracking the progress of an individual signature request.
@@ -59,6 +55,10 @@ List all document templates
 - **send_document**: Can include an optional message to be sent in the notification email.
 
 Send a document for signing
+- **create_document**: Requires a JSON string containing "template_uuid" and "recipients" list. Use this to initiate the document creation process.
+
+Create a new PandaDoc document
+- **create_signing_session**: Create an embedded signing session
 
 
 ## 💬 Prompt Examples

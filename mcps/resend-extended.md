@@ -36,10 +36,6 @@ No more manual dashboard navigation for checking logs or verifying domains. Your
 
 
 ## Available Tools (11)
-- **create_audience**: Create a new audience
-- **add_contact_to_audience**: Requires email.
-
-Add a contact to an audience
 - **get_domain_details**: Get details for a specific domain
 - **get_email_details**: Get details for a specific email
 - **list_api_keys**: List all API keys
@@ -51,6 +47,10 @@ Add a contact to an audience
 
 Send a single email
 - **verify_domain**: Verify a domain
+- **create_audience**: Create a new audience
+- **add_contact_to_audience**: Requires email.
+
+Add a contact to an audience
 
 
 ## 💬 Prompt Examples

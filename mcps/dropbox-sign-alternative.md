@@ -36,10 +36,6 @@ No more manual status checking or digging through contract folders. Your AI acts
 
 
 ## Available Tools (12)
-- **cancel_signature_request**: Cancel a pending signature request
-- **create_unclaimed_draft**: Create an unclaimed draft
-- **get_account_info**: Get Dropbox Sign account details
-- **get_files_data_uri**: Get document as Data URI
 - **get_files_download_url**: Get temporary download link for files
 - **get_signature_request_details**: Get details for a signature request
 - **get_template_details**: Get template metadata
@@ -48,6 +44,10 @@ No more manual status checking or digging through contract folders. Your AI acts
 - **list_templates**: List available signature templates
 - **send_signature_request**: Send a document for signature
 - **send_with_template**: Send signature request using templates
+- **cancel_signature_request**: Cancel a pending signature request
+- **create_unclaimed_draft**: Create an unclaimed draft
+- **get_account_info**: Get Dropbox Sign account details
+- **get_files_data_uri**: Get document as Data URI
 
 
 ## 💬 Prompt Examples

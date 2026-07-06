@@ -36,8 +36,6 @@ Connect your **Airbrake** account to any AI agent and manage your entire error m
 
 
 ## Available Tools (10)
-- **check_airbrake_status**: Verify API connectivity
-- **get_error_group**: Get error group details
 - **get_project**: Get project details
 - **list_deploys**: List deployments
 - **list_environments**: List environments
@@ -46,6 +44,8 @@ Connect your **Airbrake** account to any AI agent and manage your entire error m
 - **list_projects**: List all projects
 - **report_notice**: Report an error notice
 - **track_deploy**: Track a deployment
+- **check_airbrake_status**: Verify API connectivity
+- **get_error_group**: Get error group details
 
 
 ## 💬 Prompt Examples

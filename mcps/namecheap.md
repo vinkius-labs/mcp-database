@@ -39,12 +39,12 @@ Connect to **Namecheap** and manage your domain portfolio through natural conver
 - **check_domain_availability**: Returns whether the domain is available, premium status and pricing info.
 
 Check if a domain name is available for registration
-- **get_dns_hosts**: ) for a specific domain. Returns host names, record types, values, TTL and MX preferences. Requires the domain's SLD and TLD (e.g. SLD="example", TLD="com").
-
-Get DNS records for a domain
 - **get_dns_servers**: Returns the list of DNS servers handling queries for the domain.
 
 Get nameservers for a domain
+- **get_dns_hosts**: ) for a specific domain. Returns host names, record types, values, TTL and MX preferences. Requires the domain's SLD and TLD (e.g. SLD="example", TLD="com").
+
+Get DNS records for a domain
 - **get_domain_info**: Get detailed info for a specific domain
 - **get_domain_ns_info**: Get nameserver info for a domain
 - **get_domains**: Returns domain names, IDs, creation dates, expiration dates, lock status and expiry status. Supports pagination and search filtering.

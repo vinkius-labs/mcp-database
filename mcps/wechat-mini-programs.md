@@ -35,10 +35,6 @@ Empower your AI agent to orchestrate your mini-app operations and subscriber eng
 
 
 ## Available Tools (10)
-- **code_to_session**: login.
-
-Exchange code for session
-- **generate_standard_qrcode**: Generate standard QR code
 - **generate_unlimited_qrcode**: Generate unlimited QR code
 - **get_account_status**: Check account connectivity
 - **get_daily_summary**: Get daily summary trend
@@ -47,6 +43,10 @@ Exchange code for session
 - **image_security_check**: Check image for sensitive content
 - **message_security_check**: Check text for sensitive content
 - **send_subscribe_message**: Send subscribe message
+- **code_to_session**: login.
+
+Exchange code for session
+- **generate_standard_qrcode**: Generate standard QR code
 
 
 ## 💬 Prompt Examples

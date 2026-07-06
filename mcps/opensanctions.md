@@ -35,9 +35,6 @@ Connect to **OpenSanctions** and access the world's largest open sanctions and P
 
 
 ## Available Tools (8)
-- **get_datasets**: Returns dataset names, descriptions, publisher info and entity counts.
-
-Get list of all sanctions datasets available
 - **get_entity**: Returns full entity details including names, aliases, dates of birth, nationalities, addresses, sanctions details, related entities and source datasets.
 
 Get detailed info for a specific entity by ID
@@ -59,6 +56,9 @@ Search for persons in the sanctions database
 - **search_vessel**: Returns vessel names, IMO numbers, flags, owners and sanctions status.
 
 Search for vessels (ships) in the sanctions database
+- **get_datasets**: Returns dataset names, descriptions, publisher info and entity counts.
+
+Get list of all sanctions datasets available
 
 
 ## 💬 Prompt Examples

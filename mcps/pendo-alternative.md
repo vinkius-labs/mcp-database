@@ -36,9 +36,6 @@ No more manual exporting of usage reports or context switching for user profiles
 
 
 ## Available Tools (11)
-- **get_pendo_account_details**: Get details for a specific account
-- **get_pendo_guide_details**: Get details for a specific guide
-- **get_pendo_visitor_details**: Get details for a specific visitor
 - **list_pendo_features**: List tagged features
 - **list_pendo_guides**: List all in-app guides
 - **list_pendo_pages**: List tagged pages
@@ -47,6 +44,9 @@ No more manual exporting of usage reports or context switching for user profiles
 - **run_pendo_aggregation**: Perform complex analytics and grouping
 - **update_account_metadata**: Update custom account metadata
 - **update_visitor_metadata**: Update custom visitor metadata
+- **get_pendo_account_details**: Get details for a specific account
+- **get_pendo_guide_details**: Get details for a specific guide
+- **get_pendo_visitor_details**: Get details for a specific visitor
 
 
 ## 💬 Prompt Examples

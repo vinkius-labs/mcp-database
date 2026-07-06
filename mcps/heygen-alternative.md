@@ -36,11 +36,6 @@ No more manual editing or complex timeline management for simple avatar videos. 
 
 
 ## Available Tools (12)
-- **remove_video_record**: Delete video
-- **create_from_template**: Use template for video
-- **generate_ai_video**: Create avatar video
-- **get_api_status**: Check connection
-- **get_video_progress**: Check video status
 - **list_available_avatars**: List AI actors
 - **list_video_templates**: List design templates
 - **list_generated_videos**: List past creations
@@ -48,6 +43,11 @@ No more manual editing or complex timeline management for simple avatar videos. 
 - **test_heygen_auth**: Verify credentials
 - **upload_media_asset**: Add image/audio source
 - **generate_from_prompt**: One-shot prompt to video
+- **remove_video_record**: Delete video
+- **create_from_template**: Use template for video
+- **generate_ai_video**: Create avatar video
+- **get_api_status**: Check connection
+- **get_video_progress**: Check video status
 
 
 ## 💬 Prompt Examples
