@@ -36,16 +36,16 @@ No more manual checking of individual banner performance or missing campaign exp
 
 
 ## Available Tools (10)
-- **check_adbutler_status**: Verify AdButler API connectivity
-- **get_advertiser**: Get advertiser details
-- **get_campaign**: Get campaign details
-- **get_stats**: Get ad serving statistics
 - **list_advertisers**: List all advertisers
 - **list_banners**: List ad items in a campaign
 - **list_campaigns**: List all campaigns
 - **list_placements**: List all placements
 - **list_publishers**: List all publishers
 - **list_zones**: List all ad zones
+- **check_adbutler_status**: Verify AdButler API connectivity
+- **get_advertiser**: Get advertiser details
+- **get_campaign**: Get campaign details
+- **get_stats**: Get ad serving statistics
 
 
 ## 💬 Prompt Examples

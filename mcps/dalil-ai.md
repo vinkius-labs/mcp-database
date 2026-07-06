@@ -39,13 +39,13 @@ No more manual LinkedIn task management or missing high-intent buying signals. Y
 - **create_contact**: Pass data as a JSON string.
 
 Create a new contact
-- **get_contact_signals**: Get buying signals for a contact
 - **list_campaigns**: List outreach campaigns
 - **list_companies**: List all tracked companies
 - **list_contacts**: List all Dalil contacts
 - **send_linkedin_message**: Pass data in JSON.
 
 Send a LinkedIn message via Dalil
+- **get_contact_signals**: Get buying signals for a contact
 
 
 ## 💬 Prompt Examples

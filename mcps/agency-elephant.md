@@ -36,14 +36,14 @@ No more manual toggling between CRM tabs or missing critical follow-ups. Your AI
 
 
 ## Available Tools (8)
+- **list_workspace_users**: List all team members
+- **trigger_drip_campaign**: Start a drip campaign for a lead
 - **add_lead_to_group**: Add a lead to a group
 - **create_lead**: Create a new lead
 - **get_lead_details**: Get lead details
 - **list_campaigns**: List all campaigns
 - **list_lead_groups**: List all lead groups
 - **list_leads**: List all leads
-- **list_workspace_users**: List all team members
-- **trigger_drip_campaign**: Start a drip campaign for a lead
 
 
 ## 💬 Prompt Examples

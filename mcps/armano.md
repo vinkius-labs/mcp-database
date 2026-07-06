@@ -36,18 +36,18 @@ No more manual checking of individual employee cards or missing leave requests. 
 
 
 ## Available Tools (10)
-- **list_employees**: List all employees
+- **get_employee**: Get employee details
+- **get_project**: Get project details
+- **get_time_entry**: Get time entry details
+- **list_departments**: List all departments
 - **list_leaves**: List all leave requests
 - **list_projects**: List all projects
 - **list_time_entries**: Optionally filter by date range (YYYY-MM-DD format).
 
 List time entries
+- **list_employees**: List all employees
 - **check_armano_status**: Verify Armano API connectivity
 - **create_time_entry**: Create a time entry
-- **get_employee**: Get employee details
-- **get_project**: Get project details
-- **get_time_entry**: Get time entry details
-- **list_departments**: List all departments
 
 
 ## 💬 Prompt Examples

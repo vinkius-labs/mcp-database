@@ -36,13 +36,13 @@ No more manual toggling between dialer tabs or digging through complex lead tabl
 
 
 ## Available Tools (7)
-- **add_contact_to_campaign**: Add a new contact to a campaign
 - **get_campaign_details**: Get details for a specific campaign
 - **list_campaigns**: List Adversus campaigns
 - **list_campaign_contacts**: List contacts in a campaign
 - **list_active_leads**: List global leads
 - **list_crm_projects**: List projects
 - **list_account_users**: List team users
+- **add_contact_to_campaign**: Add a new contact to a campaign
 
 
 ## 💬 Prompt Examples

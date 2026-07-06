@@ -33,16 +33,16 @@ Equip your AI agent with the pulse of the world's largest user-generated gaming 
 
 
 ## Available Tools (8)
-- **get_game_badges**: List badges associated with an experience
-- **get_game_details**: Get comprehensive details for an experience
-- **get_game_icons**: Get the official icon for a game
-- **get_game_media**: Get promotional images and videos for a game
 - **get_game_servers**: Use the Place ID.
 
 List active public servers for a game
 - **get_game_votes**: Get like/dislike stats for an experience
 - **get_game_sorts**: List available game sort categories
 - **search_roblox_games**: Search for Roblox experiences by keyword
+- **get_game_badges**: List badges associated with an experience
+- **get_game_details**: Get comprehensive details for an experience
+- **get_game_icons**: Get the official icon for a game
+- **get_game_media**: Get promotional images and videos for a game
 
 
 ## 💬 Prompt Examples

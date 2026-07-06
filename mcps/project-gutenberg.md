@@ -34,9 +34,9 @@ Equip your AI agent with the largest library of free public domain books through
 
 
 ## Available Tools (3)
-- **search_author**: Search for books by author
 - **get_book_details**: Get details for a specific Gutenberg book
 - **search_gutenberg_books**: Search for books on Project Gutenberg
+- **search_author**: Search for books by author
 
 
 ## 💬 Prompt Examples

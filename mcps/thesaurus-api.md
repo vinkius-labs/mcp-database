@@ -34,8 +34,8 @@ Empower your AI agent to orchestrate your entire linguistic research and writing
 
 
 ## Available Tools (2)
-- **check_api_status**: Check if the Thesaurus service is operational
 - **get_synonyms_antonyms**: Get synonyms and antonyms for a specific word
+- **check_api_status**: Check if the Thesaurus service is operational
 
 
 ## 💬 Prompt Examples

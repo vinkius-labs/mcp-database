@@ -36,14 +36,14 @@ Equip your AI agent with the most comprehensive live music intelligence availabl
 
 
 ## Available Tools (8)
-- **get_artist_calendar**: Get artist upcoming events
-- **get_artist_gigography**: Get artist past events
-- **get_event_details**: Get detailed event info
-- **get_location_calendar**: Get events in a location
 - **search_artists**: Search for artists
 - **search_locations**: Search for locations
 - **search_venues**: Search for venues
 - **get_venue_calendar**: Get events at a venue
+- **get_artist_calendar**: Get artist upcoming events
+- **get_artist_gigography**: Get artist past events
+- **get_event_details**: Get detailed event info
+- **get_location_calendar**: Get events in a location
 
 
 ## 💬 Prompt Examples

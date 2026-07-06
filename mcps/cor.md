@@ -37,14 +37,6 @@ No more manual status updates or missing profitability gaps. Your AI acts as you
 
 
 ## Available Tools (13)
-- **list_cor_clients**: List customer clients
-- **create_cor_project**: Create a new project
-- **get_cor_project**: Get details for a specific project
-- **get_cor_task**: Get details for a specific task
-- **get_cor_me**: Get current user details
-- **list_cor_projects**: List COR projects
-- **check_cor_status**: Check API Status
-- **list_cor_task_types**: List defined task types
 - **list_cor_tasks**: Optionally filter by project ID to isolate specific technical pipelines.
 
 List tasks
@@ -52,6 +44,14 @@ List tasks
 - **list_cor_teams**: List organization teams
 - **list_cor_time_entries**: List recorded time entries
 - **list_cor_team_members**: List team users
+- **check_cor_status**: Check API Status
+- **list_cor_task_types**: List defined task types
+- **list_cor_clients**: List customer clients
+- **create_cor_project**: Create a new project
+- **get_cor_project**: Get details for a specific project
+- **get_cor_task**: Get details for a specific task
+- **get_cor_me**: Get current user details
+- **list_cor_projects**: List COR projects
 
 
 ## 💬 Prompt Examples

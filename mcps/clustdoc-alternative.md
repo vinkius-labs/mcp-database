@@ -36,14 +36,14 @@ No more manual following up on missing files or digging through student/client f
 
 
 ## Available Tools (6)
-- **create_application**: Pass data as a JSON string.
-
-Create a new application
-- **get_application_details**: Get specific application details
 - **list_applications**: List all client applications
 - **list_workflows**: List all onboarding workflow processes
 - **list_team_members**: List all team members
 - **list_webhooks**: List all configured webhooks
+- **create_application**: Pass data as a JSON string.
+
+Create a new application
+- **get_application_details**: Get specific application details
 
 
 ## 💬 Prompt Examples

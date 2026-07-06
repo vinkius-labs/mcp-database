@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire persona research and data synth
 
 
 ## Available Tools (4)
-- **check_api_status**: Check if the RandomUser API is operational
 - **get_random_users**: Generate random user profiles with names, emails, and locations
 - **get_seeded_users**: Generate the same random users using a specific seed string
 - **list_supported_nationalities**: List all country codes supported by RandomUser API
+- **check_api_status**: Check if the RandomUser API is operational
 
 
 ## 💬 Prompt Examples

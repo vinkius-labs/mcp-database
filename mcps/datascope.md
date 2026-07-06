@@ -36,14 +36,14 @@ No more manual exporting of CSVs or digging through thousands of mobile response
 
 
 ## Available Tools (6)
-- **get_submission_pdf_url**: Get PDF URL for a submission
-- **get_submissions_with_metadata**: List submissions with detailed metadata
 - **list_form_submissions**: You can filter by form ID or user ID.
 
 List form submissions (answers)
 - **list_available_forms**: List available forms
 - **list_tracked_locations**: List tracked locations
 - **list_organization_users**: List all users in the organization
+- **get_submission_pdf_url**: Get PDF URL for a submission
+- **get_submissions_with_metadata**: List submissions with detailed metadata
 
 
 ## 💬 Prompt Examples

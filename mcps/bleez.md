@@ -43,8 +43,8 @@ Create a new accounting entry
 
 Create a new invoice
 - **get_account_info**: Get current account settings
-- **list_accounting_entries**: List all accounting journal entries
 - **list_customers**: List all customers
+- **list_accounting_entries**: List all accounting journal entries
 - **list_invoices**: List all invoices
 - **list_suppliers**: List all suppliers
 - **upload_document**: Upload a digital document for processing

@@ -36,7 +36,6 @@ No more manual document formatting or complex rendering pipelines. Your AI acts 
 
 
 ## Available Tools (8)
-- **generate_pdf_from_html**: Convert HTML or URL to PDF
 - **generate_image_from_html**: Convert HTML or URL to Image
 - **generate_pdf_from_template**: g. invoice1, packing_slip1) with JSON data.
 
@@ -48,6 +47,7 @@ Generate a PDF from a predefined template
 
 Capture a full-page website screenshot
 - **add_elements_to_pdf**: Draw text or images onto an existing PDF
+- **generate_pdf_from_html**: Convert HTML or URL to PDF
 
 
 ## 💬 Prompt Examples

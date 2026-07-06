@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your product intelligence and user behavior
 
 
 ## Available Tools (10)
-- **get_active_users**: Get active user statistics
-- **get_app_info**: Get application configuration info
-- **get_app_summary**: Get application performance summary
-- **get_channel_data**: Get acquisition channel data
-- **get_device_stats**: Get device hardware statistics
 - **get_event_data**: Get custom event analytics
 - **get_new_users**: Get new user registrations
 - **get_session_stats**: Get session usage statistics
 - **get_user_retention**: Get user retention data
 - **list_events**: List tracked events
+- **get_active_users**: Get active user statistics
+- **get_app_info**: Get application configuration info
+- **get_app_summary**: Get application performance summary
+- **get_channel_data**: Get acquisition channel data
+- **get_device_stats**: Get device hardware statistics
 
 
 ## 💬 Prompt Examples

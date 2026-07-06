@@ -36,9 +36,6 @@ No more manual listening to call recordings or digging through individual lead t
 
 
 ## Available Tools (10)
-- **create_aireceptionist_booking**: Create a booking
-- **create_aireceptionist_conversation**: Create a new conversation
-- **get_aireceptionist_analytics**: Get performance analytics
 - **get_aireceptionist_booking**: Get booking details
 - **get_aireceptionist_conversation**: Get conversation details
 - **get_aireceptionist_me**: Get current user profile
@@ -46,6 +43,9 @@ No more manual listening to call recordings or digging through individual lead t
 - **list_aireceptionist_conversations**: List AI conversations
 - **list_aireceptionist_knowledge**: List knowledge base articles
 - **list_aireceptionist_webhooks**: List active webhooks
+- **create_aireceptionist_booking**: Create a booking
+- **create_aireceptionist_conversation**: Create a new conversation
+- **get_aireceptionist_analytics**: Get performance analytics
 
 
 ## 💬 Prompt Examples
