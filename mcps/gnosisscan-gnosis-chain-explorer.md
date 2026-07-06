@@ -34,8 +34,6 @@ Connect your AI agent to the **Gnosis Chain** through the Gnosisscan API. This s
 
 
 ## Available Tools (26)
-- **get_account_balance_multi**: Get xDAI Balance for Multiple Addresses
-- **get_account_balance**: Get xDAI Balance for a Single Address
 - **get_account_minedblocks**: Get a List of Blocks Validated by Address
 - **get_account_tokennfttx**: Get a List of ERC721 Token Transfer Events by Address
 - **get_account_tokentx**: Get a List of ERC20 Token Transfer Events by Address
@@ -60,6 +58,8 @@ Connect your AI agent to the **Gnosis Chain** through the Gnosisscan API. This s
 - **proxy_getstorageat**: eth_getStorageAt Proxy
 - **proxy_gettransactionbyhash**: eth_getTransactionByHash Proxy
 - **proxy_gettransactionreceipt**: eth_getTransactionReceipt Proxy
+- **get_account_balance_multi**: Get xDAI Balance for Multiple Addresses
+- **get_account_balance**: Get xDAI Balance for a Single Address
 
 
 ## 💬 Prompt Examples

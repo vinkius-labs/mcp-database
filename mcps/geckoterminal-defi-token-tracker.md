@@ -34,8 +34,6 @@ Connect **GeckoTerminal** to your AI agent to monitor the decentralized finance 
 
 
 ## Available Tools (17)
-- **get_multiple_pools**: Get details for multiple pools
-- **get_multiple_tokens**: Get details for multiple tokens
 - **get_network**: Get details for a specific network
 - **get_ohlcv**: Get historical price data (OHLCV) for a pool
 - **get_pool**: Get specific pool details
@@ -51,6 +49,8 @@ Connect **GeckoTerminal** to your AI agent to monitor the decentralized finance 
 - **get_new_pools_network**: Get new pools on a specific network
 - **get_trending_pools_all**: Get trending pools across all networks
 - **get_trending_pools_network**: Get trending pools on a specific network
+- **get_multiple_pools**: Get details for multiple pools
+- **get_multiple_tokens**: Get details for multiple tokens
 
 
 ## 💬 Prompt Examples

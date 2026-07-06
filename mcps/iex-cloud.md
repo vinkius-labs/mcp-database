@@ -34,9 +34,6 @@ Connect **IEX Cloud** to your AI agent to unlock professional-grade financial in
 
 
 ## Available Tools (11)
-- **get_stock_chart**: Get historical price data for a stock
-- **get_crypto_quote**: Get real-time quotes for cryptocurrencies
-- **get_upcoming_earnings**: Get calendar of upcoming earnings releases
 - **get_stock_financials**: Get income statement, balance sheet, and cash flow
 - **get_fx_latest**: Get real-time foreign exchange rates
 - **get_market_list**: Get market lists like most active, gainers, or losers
@@ -45,6 +42,9 @@ Connect **IEX Cloud** to your AI agent to unlock professional-grade financial in
 - **get_sector_performance**: Get performance metrics for all market sectors
 - **get_stock_stats**: Get key statistics for a stock
 - **get_treasury_yield**: Get US Treasury yields
+- **get_stock_chart**: Get historical price data for a stock
+- **get_crypto_quote**: Get real-time quotes for cryptocurrencies
+- **get_upcoming_earnings**: Get calendar of upcoming earnings releases
 
 
 ## 💬 Prompt Examples

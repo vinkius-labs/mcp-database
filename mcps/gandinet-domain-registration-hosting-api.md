@@ -34,8 +34,6 @@ Connect your **Gandi.net** account to any AI agent to automate domain management
 
 
 ## Available Tools (14)
-- **check_domain**: Check if a domain is available for registration
-- **create_dns_record**: Create a new DNS record for a domain
 - **create_mailbox**: Create a new mailbox for a domain
 - **delete_dns_record**: Delete a DNS record
 - **get_domain**: Get detailed information about a specific domain
@@ -48,6 +46,8 @@ Connect your **Gandi.net** account to any AI agent to automate domain management
 - **list_mailboxes**: List all mailboxes for a given domain
 - **list_organizations**: List organizations you belong to
 - **update_dns_record**: Update an existing DNS record
+- **check_domain**: Check if a domain is available for registration
+- **create_dns_record**: Create a new DNS record for a domain
 
 
 ## 💬 Prompt Examples

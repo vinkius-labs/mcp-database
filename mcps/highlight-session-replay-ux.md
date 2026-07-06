@@ -32,11 +32,11 @@ Connect your **Highlight** project to any AI agent to manage observability data 
 
 
 ## Available Tools (3)
+- **ingest_raw_log**: Ingest a raw log message into Highlight
 - **ingest_otlp_logs**: The payload must include the highlight.project_id attribute.
 
 Ingest OTLP JSON logs into Highlight
 - **ingest_otlp_traces**: Ingest OTLP JSON traces into Highlight
-- **ingest_raw_log**: Ingest a raw log message into Highlight
 
 
 ## 💬 Prompt Examples

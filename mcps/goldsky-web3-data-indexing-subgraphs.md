@@ -34,7 +34,6 @@ Connect your **Goldsky** account to any AI agent to orchestrate high-performance
 
 
 ## Available Tools (12)
-- **create_pipeline**: Create and deploy a new pipeline
 - **delete_pipeline**: Delete a pipeline (irreversible)
 - **get_pipeline_error_count**: Get error count in a time window for a pipeline
 - **get_pipeline_logs**: Retrieve execution logs for a pipeline
@@ -43,11 +42,12 @@ Connect your **Goldsky** account to any AI agent to orchestrate high-performance
 
 Get current runtime status of a pipeline
 - **get_pipeline**: Get details of a specific pipeline
-- **list_pipelines**: List all pipelines in the project
 - **pause_pipeline**: Pause a running pipeline
 - **restart_pipeline**: Restart a pipeline
 - **resume_pipeline**: Resume a paused pipeline
 - **validate_pipeline**: Validate a pipeline definition
+- **create_pipeline**: Create and deploy a new pipeline
+- **list_pipelines**: List all pipelines in the project
 
 
 ## 💬 Prompt Examples

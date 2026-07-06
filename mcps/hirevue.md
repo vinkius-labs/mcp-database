@@ -33,7 +33,6 @@ Connect your **HireVue** account to any AI agent to automate and manage your hir
 
 
 ## Available Tools (8)
-- **cancel_interview**: Cancel an interview
 - **create_candidate**: Create a new candidate profile
 - **create_interview**: Create an interview invitation
 - **get_candidate**: Get candidate details
@@ -41,6 +40,7 @@ Connect your **HireVue** account to any AI agent to automate and manage your hir
 - **get_position**: Get position details
 - **list_positions**: List all positions
 - **update_candidate**: Update an existing candidate
+- **cancel_interview**: Cancel an interview
 
 
 ## 💬 Prompt Examples

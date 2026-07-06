@@ -47,12 +47,12 @@ Connect your **Imgur** account to any AI agent to automate image hosting, album 
 - **get_album**: Get information about a specific album
 - **get_comment**: Get information about a specific comment
 - **get_gallery**: Get the Imgur gallery
-- **get_image**: Get information about a specific image
 - **search_gallery**: Search the gallery for images and albums
 - **submit_to_gallery**: Submit an image or album to the gallery
 - **update_image**: Update the title or description of an image
 - **upload_image**: Upload a new image
 - **vote_comment**: Vote on a comment
+- **get_image**: Get information about a specific image
 
 
 ## 💬 Prompt Examples

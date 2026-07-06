@@ -34,7 +34,6 @@ Connect **JSONBin.io** to your AI agent to turn it into a powerful data manageme
 
 
 ## Available Tools (27)
-- **add_schema_to_collection**: Add a schema to a collection for validation
 - **count_bin_versions**: Count versions of a JSON bin
 - **create_access_key**: Create a restricted access key
 - **create_bin**: Requires valid JSON data.
@@ -65,6 +64,7 @@ Read a JSON bin
 - **update_bin_privacy**: Update the privacy setting of a JSON bin
 - **update_bin**: Update an existing JSON bin
 - **update_collection_name**: Update the name of a collection
+- **add_schema_to_collection**: Add a schema to a collection for validation
 - **update_schema_name**: Update the name of a JSON schema document
 - **update_schema**: Update a JSON schema document
 

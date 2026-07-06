@@ -34,13 +34,13 @@ Empower your AI agent with global geographic intelligence using the **Geocode.xy
 
 
 ## Available Tools (5)
-- **autocomplete**: Provide suggestions for partial street names, postal codes, or city names
-- **forward_geocode**: Convert a place name or address into geographic coordinates
 - **geoparse**: Uses POST under the hood for long text support.
 
 Identify and extract location names from free-form text
 - **ip_geolocation**: Locate an IP address geographically
 - **reverse_geocode**: Convert latitude and longitude coordinates into a physical address
+- **autocomplete**: Provide suggestions for partial street names, postal codes, or city names
+- **forward_geocode**: Convert a place name or address into geographic coordinates
 
 
 ## 💬 Prompt Examples

@@ -33,15 +33,6 @@ Connect your **Greenhouse** account to any AI agent to streamline your hiring pr
 
 
 ## Available Tools (16)
-- **list_board_departments**: List departments and their associated jobs
-- **list_board_jobs**: List all published job posts on a board
-- **list_board_offices**: List offices and their associated jobs
-- **list_partner_jobs**: List jobs visible to the partner user
-- **submit_board_application**: Requires Job Board API Key credential.
-
-Submit a job application to a board
-- **submit_partner_candidate**: Submit new candidates or prospects
-- **update_application**: Update an application
 - **add_application_to_candidate**: Add an application to an existing candidate
 - **create_partner_tracking_link**: Create a source-tracked link for a job
 - **delete_application**: Delete a candidate application
@@ -51,6 +42,15 @@ Submit a job application to a board
 - **get_candidate_activity_feed**: Retrieve a candidate activity feed
 - **get_partner_candidates**: Retrieve candidate status via Partner API
 - **list_applications**: List all applications in Greenhouse
+- **list_board_departments**: List departments and their associated jobs
+- **list_board_jobs**: List all published job posts on a board
+- **list_board_offices**: List offices and their associated jobs
+- **list_partner_jobs**: List jobs visible to the partner user
+- **submit_board_application**: Requires Job Board API Key credential.
+
+Submit a job application to a board
+- **submit_partner_candidate**: Submit new candidates or prospects
+- **update_application**: Update an application
 
 
 ## 💬 Prompt Examples

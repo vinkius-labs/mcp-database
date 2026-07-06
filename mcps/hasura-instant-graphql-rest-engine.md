@@ -35,17 +35,17 @@ Connect your **Hasura** engine to any AI agent to automate database management a
 
 
 ## Available Tools (7)
+- **execute_metadata**: Execute a Hasura Metadata API operation
+- **explain_graphql**: Analyze the generated SQL and execution plan for a GraphQL query
+- **get_config**: Retrieve Hasura server configuration
+- **get_version**: Get Hasura server version and type
+- **pg_dump**: Execute pg_dump on a connected Postgres source
 - **check_health**: Can optionally use strict mode to verify metadata consistency.
 
 Monitor Hasura server health
 - **execute_graphql**: Supports queries, mutations, and batched requests.
 
 Execute a GraphQL query or mutation
-- **execute_metadata**: Execute a Hasura Metadata API operation
-- **explain_graphql**: Analyze the generated SQL and execution plan for a GraphQL query
-- **get_config**: Retrieve Hasura server configuration
-- **get_version**: Get Hasura server version and type
-- **pg_dump**: Execute pg_dump on a connected Postgres source
 
 
 ## 💬 Prompt Examples

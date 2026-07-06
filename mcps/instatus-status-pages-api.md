@@ -33,8 +33,6 @@ Connect your **Instatus** account to any AI agent to streamline your incident co
 
 
 ## Available Tools (28)
-- **add_metric_datapoint**: Add a datapoint to a metric
-- **add_metric_datapoints_bulk**: Add multiple datapoints to a metric
 - **add_metric**: Add a new metric
 - **add_subscriber**: Add a new subscriber
 - **add_subscribers_bulk**: Add multiple subscribers (max 100)
@@ -61,6 +59,8 @@ Connect your **Instatus** account to any AI agent to streamline your incident co
 - **update_component**: Update an existing component
 - **update_incident**: Update an existing incident
 - **update_maintenance**: Update an existing maintenance
+- **add_metric_datapoint**: Add a datapoint to a metric
+- **add_metric_datapoints_bulk**: Add multiple datapoints to a metric
 
 
 ## 💬 Prompt Examples

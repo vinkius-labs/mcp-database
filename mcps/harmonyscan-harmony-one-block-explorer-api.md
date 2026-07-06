@@ -36,10 +36,6 @@ No more manual searching through block explorers. Your AI acts as a blockchain a
 
 
 ## Available Tools (14)
-- **get_abi**: Get Contract ABI
-- **get_balance_multi**: Get ONE Balance for Multiple Addresses
-- **get_balance**: Get ONE Balance for a Single Address
-- **get_block_reward**: Get Block Rewards
 - **get_logs**: Get Event Logs
 - **get_one_price**: ONE Last Price
 - **get_one_supply**: Total Supply of ONE
@@ -50,6 +46,10 @@ No more manual searching through block explorers. Your AI acts as a blockchain a
 - **get_tx_list**: Get List of Normal Transactions
 - **get_tx_receipt_status**: Check Transaction Receipt Status
 - **proxy_request**: Execute standard JSON-RPC methods via proxy
+- **get_abi**: Get Contract ABI
+- **get_balance_multi**: Get ONE Balance for Multiple Addresses
+- **get_balance**: Get ONE Balance for a Single Address
+- **get_block_reward**: Get Block Rewards
 
 
 ## 💬 Prompt Examples

@@ -32,6 +32,8 @@ Connect your **Jobvite** account to any AI agent to streamline your hiring proce
 
 
 ## Available Tools (9)
+- **update_application_status**: Update the workflow status of a Jobvite application
+- **update_candidate**: Update an existing Jobvite candidate
 - **create_candidate**: Create a new Jobvite candidate profile
 - **create_job**: Create a new Jobvite job requisition
 - **get_candidate**: Get details for a specific Jobvite candidate
@@ -39,8 +41,6 @@ Connect your **Jobvite** account to any AI agent to streamline your hiring proce
 - **list_applications**: List Jobvite applications
 - **list_candidates**: List Jobvite candidates
 - **list_jobs**: List all active Jobvite job requisitions
-- **update_application_status**: Update the workflow status of a Jobvite application
-- **update_candidate**: Update an existing Jobvite candidate
 
 
 ## 💬 Prompt Examples

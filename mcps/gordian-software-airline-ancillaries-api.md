@@ -34,8 +34,6 @@ Connect to **Gordian Software** to manage airline ancillaries within your AI age
 
 
 ## Available Tools (17)
-- **add_to_basket**: Add products to the basket
-- **cancel_trip**: Execute the cancellation of a trip
 - **check_basket**: Re-validate items in the basket
 - **check_cancellation**: Check if items are refundable
 - **create_trip**: Can optionally include a search object to start an ancillary search immediately.
@@ -59,6 +57,8 @@ Get search results by search ID
 - **start_search**: g., seat, bag).
 
 Start an asynchronous search for specific product types
+- **add_to_basket**: Add products to the basket
+- **cancel_trip**: Execute the cancellation of a trip
 - **subscribe_callback**: Subscribe to asynchronous event callbacks
 - **update_trip**: g., adding a PNR/Record Locator after flight booking).
 

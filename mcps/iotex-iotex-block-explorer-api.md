@@ -36,13 +36,13 @@ No more manual searching through web explorers. Your AI acts as a blockchain ana
 
 
 ## Available Tools (8)
+- **get_token_holders**: Get Token Holders
 - **get_account_actions**: Get Account Transactions
 - **get_account**: Get Account Details
 - **get_action**: Get Action by Hash
 - **get_block_by_hash**: Get Block by Hash
 - **get_block_by_height**: Get Block by Height
 - **get_recent_actions**: Get Recent Actions
-- **get_token_holders**: Get Token Holders
 - **get_token**: Get Token Details
 
 
