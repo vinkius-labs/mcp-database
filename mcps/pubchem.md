@@ -31,13 +31,13 @@ Connect your AI agent to **PubChem** — the world's largest open chemistry data
 
 
 ## Available Tools (3)
+- **search_pubchem**: Returns molecular formula, weight, SMILES, InChI, XLogP, hydrogen bond donors/acceptors, and complexity. Try: aspirin, caffeine, glucose, penicillin, dopamine.
+
+Search PubChem for chemical compounds by name
 - **get_pubchem_compound**: Get full chemical data for a PubChem compound by CID
 - **search_pubchem_formula**: g. C9H8O4, C8H10N4O2, H2O) and find matching compounds.
 
 Find compounds by molecular formula
-- **search_pubchem**: Returns molecular formula, weight, SMILES, InChI, XLogP, hydrogen bond donors/acceptors, and complexity. Try: aspirin, caffeine, glucose, penicillin, dopamine.
-
-Search PubChem for chemical compounds by name
 
 
 ## 💬 Prompt Examples

@@ -36,9 +36,6 @@ Connect to the **Kavak** platform from any AI agent and navigate Mexico's larges
 
 
 ## Available Tools (14)
-- **create_reservation**: Requires buyer contact details. The vehicle will be taken off the marketplace during the reservation period.
-
-Reserve a vehicle for purchase
 - **estimate_trade_in**: The estimate factors in make, model, year, mileage, condition, and current Mexican market prices.
 
 Get a trade-in value estimate for your current car
@@ -60,6 +57,9 @@ Schedule a test drive for a vehicle
 - **search_vehicles**: All vehicles listed on Kavak come with a 240-point mechanical inspection and Kavak warranty.
 
 Search available used cars in the Kavak inventory
+- **create_reservation**: Requires buyer contact details. The vehicle will be taken off the marketplace during the reservation period.
+
+Reserve a vehicle for purchase
 
 
 ## 💬 Prompt Examples

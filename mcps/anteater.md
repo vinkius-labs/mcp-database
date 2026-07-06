@@ -36,7 +36,6 @@ No more manual searching for 'who is doing what' or missing critical team progre
 
 
 ## Available Tools (10)
-- **check_anteater_status**: Verify AntEater API connectivity
 - **get_contact_history**: Get communication history for a contact
 - **get_profile**: Get your authenticated user profile
 - **get_user**: Get details of a specific team member
@@ -46,6 +45,7 @@ No more manual searching for 'who is doing what' or missing critical team progre
 - **search_activity**: Search team activity across Slack and email
 - **search_contacts**: Search contacts by name or company
 - **get_user_activity**: Get activity for a specific team member
+- **check_anteater_status**: Verify AntEater API connectivity
 
 
 ## 💬 Prompt Examples

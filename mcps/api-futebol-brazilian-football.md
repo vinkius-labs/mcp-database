@@ -33,8 +33,6 @@ Equip your AI agent with the most comprehensive intelligence on Brazilian footba
 
 
 ## Available Tools (12)
-- **get_cup_brackets**: Get the phases and brackets for a cup competition
-- **list_championships**: List all available football championships in Brazil
 - **get_live_matches**: Get real-time scores for matches currently in-play
 - **get_match_details**: Get full details for a specific match ID
 - **list_championship_matches**: List all matches for a specific championship
@@ -45,6 +43,8 @@ Equip your AI agent with the most comprehensive intelligence on Brazilian footba
 - **get_api_status**: Check the API status and quota usage
 - **get_team_matches**: Get the match history and schedule for a specific team
 - **search_teams**: Search for Brazilian football clubs by name
+- **get_cup_brackets**: Get the phases and brackets for a cup competition
+- **list_championships**: List all available football championships in Brazil
 
 
 ## 💬 Prompt Examples

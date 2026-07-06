@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire culinary research and nutrition
 
 
 ## Available Tools (6)
-- **check_api_status**: Check if the Edamam service is operational
-- **get_nutrition_details**: Get nutritional breakdown for a list of ingredients
 - **search_recipes_by_cuisine**: Search for recipes by cuisine type (e.g., American, Italian)
 - **search_recipes_by_diet**: Search for recipes with specific diet labels (e.g., high-protein, low-fat)
 - **search_recipes_by_health**: Search for recipes with health labels (e.g., vegan, gluten-free)
 - **search_recipes**: Search for food recipes by keyword or name
+- **check_api_status**: Check if the Edamam service is operational
+- **get_nutrition_details**: Get nutritional breakdown for a list of ingredients
 
 
 ## 💬 Prompt Examples

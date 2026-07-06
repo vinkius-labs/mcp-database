@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire solar energy research and site 
 
 
 ## Available Tools (4)
-- **check_api_status**: Check if the SolarAnywhere service is operational
 - **get_solar_irradiance**: Get real-time solar irradiance data for a specific location
 - **get_typical_solar_year**: Get Typical Meteorological Year (TMY) solar data for a location
 - **list_solar_sites**: List all solar sites registered in your SolarAnywhere account
+- **check_api_status**: Check if the SolarAnywhere service is operational
 
 
 ## 💬 Prompt Examples

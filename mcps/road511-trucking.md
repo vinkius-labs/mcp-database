@@ -41,9 +41,6 @@ No more navigating multiple state 511 websites or manually checking truck route 
 
 
 ## Available Tools (10)
-- **get_bridge_clearances**: Returns bridge location coordinates, clearance height in feet/meters, bridge identifier, road name, and jurisdiction. Supports filtering by jurisdiction, bounding box, and radius search. Essential for truck height compliance planning, low bridge avoidance, oversized load routing, and fleet safety management. AI agents should use this when users ask "find low bridges under 14 feet on I-95", "what bridge clearances exist in this area", or need vertical clearance data for truck route planning.
-
-Get bridge clearance heights from the National Bridge Inventory for truck route planning
 - **get_trucking_health**: Returns API availability, response times, data source connectivity per jurisdiction, last update timestamps, and system alerts. Essential for monitoring API reliability, verifying data freshness, troubleshooting integration issues, and ensuring production system uptime. AI agents should use this as a diagnostic tool when users report missing trucking data, when debugging integration issues, or as a periodic health check before making complex trucking data queries.
 
 Check API health and trucking data source status
@@ -71,6 +68,9 @@ Get weigh station locations and status across US and Canada
 - **get_weight_restrictions**: Returns restriction details including affected roads, weight limits, effective dates, restriction type (seasonal, permanent, temporary), severity, and jurisdiction. Supports filtering by jurisdiction, road name, severity, and geographic area. Essential for weight compliance verification, seasonal route planning, load planning, and avoiding weight violation fines. AI agents should reference this when users ask "are there seasonal weight restrictions in Minnesota right now", "show weight limits on this route", or need current weight restriction data for freight planning.
 
 Get truck weight restrictions including seasonal restrictions across US and Canada
+- **get_bridge_clearances**: Returns bridge location coordinates, clearance height in feet/meters, bridge identifier, road name, and jurisdiction. Supports filtering by jurisdiction, bounding box, and radius search. Essential for truck height compliance planning, low bridge avoidance, oversized load routing, and fleet safety management. AI agents should use this when users ask "find low bridges under 14 feet on I-95", "what bridge clearances exist in this area", or need vertical clearance data for truck route planning.
+
+Get bridge clearance heights from the National Bridge Inventory for truck route planning
 
 
 ## 💬 Prompt Examples

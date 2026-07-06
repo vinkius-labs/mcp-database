@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire environmental safety and UV aud
 
 
 ## Available Tools (4)
-- **check_api_status**: Check if the Open UV service is operational
-- **get_uv_forecast**: Get UV Index forecast for a specific location
 - **get_uv_protection_guide**: Get sun protection recommendations based on UV Index
 - **get_uv_index**: Get real-time UV Index data for a specific location
+- **check_api_status**: Check if the Open UV service is operational
+- **get_uv_forecast**: Get UV Index forecast for a specific location
 
 
 ## 💬 Prompt Examples

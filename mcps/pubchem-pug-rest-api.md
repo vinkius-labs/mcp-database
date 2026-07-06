@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire chemical research and compound 
 
 
 ## Available Tools (4)
-- **check_api_status**: Check if the PubChem PUG REST service is operational
-- **get_compound_by_cid**: Get comprehensive details for a chemical compound by CID
 - **get_compound_by_name**: Get comprehensive details for a chemical compound by name
 - **search_compound_cids**: Search for compound CIDs matching a name or keyword
+- **check_api_status**: Check if the PubChem PUG REST service is operational
+- **get_compound_by_cid**: Get comprehensive details for a chemical compound by CID
 
 
 ## 💬 Prompt Examples

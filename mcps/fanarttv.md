@@ -35,15 +35,6 @@ Connect to **Fanart.tv** and access the world's largest fan-created artwork data
 
 
 ## Available Tools (8)
-- **get_album_art**: Returns album art including: CD art, album covers, disc backgrounds and spine images.
-
-Get artwork for a music album by MusicBrainz ID
-- **get_tv_art_hd**: Returns high-resolution versions of backgrounds and banners suitable for large displays.
-
-Get HD artwork for a TV show by TVDb ID
-- **get_latest_movies**: tv. Returns a list of movies with their TMDb IDs and recently added artwork types. Useful for discovering new artwork additions.
-
-Get latest movie artwork added to Fanart.tv
 - **get_latest_music**: tv. Returns a list of artists with their MusicBrainz IDs and recently added artwork.
 
 Get latest music artist artwork added to Fanart.tv
@@ -59,6 +50,15 @@ Get artwork for a music artist by MusicBrainz ID
 - **get_tv_art**: Returns show art including: show banners, fanart backgrounds, season posters, season banners, clear logos, season thumbs and show thumbs.
 
 Get artwork for a TV show by TVDb ID
+- **get_album_art**: Returns album art including: CD art, album covers, disc backgrounds and spine images.
+
+Get artwork for a music album by MusicBrainz ID
+- **get_tv_art_hd**: Returns high-resolution versions of backgrounds and banners suitable for large displays.
+
+Get HD artwork for a TV show by TVDb ID
+- **get_latest_movies**: tv. Returns a list of movies with their TMDb IDs and recently added artwork types. Useful for discovering new artwork additions.
+
+Get latest movie artwork added to Fanart.tv
 
 
 ## 💬 Prompt Examples

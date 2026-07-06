@@ -24,18 +24,18 @@ Built for CrossFit boxes, independent gyms, and S&C facilities.
 
 
 ## Available Tools (8)
-- **search_customers**: Returns profile, active plan, check-in count, and billing status.
-
-Search gym members
-- **get_customer**: Get member profile
-- **list_checkins**: List gym check-ins
-- **list_classes**: List scheduled classes
 - **list_plans**: Includes pricing and billing cycle.
 
 List membership plans
 - **list_appointments**: List PT appointments
 - **list_messages**: List sent messages
 - **list_webhooks**: List active webhooks
+- **search_customers**: Returns profile, active plan, check-in count, and billing status.
+
+Search gym members
+- **get_customer**: Get member profile
+- **list_checkins**: List gym check-ins
+- **list_classes**: List scheduled classes
 
 
 ## 💬 Prompt Examples

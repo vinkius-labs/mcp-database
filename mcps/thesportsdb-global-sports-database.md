@@ -34,6 +34,9 @@ Equip your AI agent with the most comprehensive sports intelligence available vi
 
 ## Available Tools (16)
 - **list_events_by_day**: List all sports events for a specific date
+- **list_former_teams**: List previous clubs for a player
+- **search_events**: Search for sports events by name
+- **search_players**: Search for sports players by name
 - **list_last_events_by_team**: List recent match results for a specific team
 - **list_next_events_by_team**: List upcoming matches for a specific team
 - **list_events_by_season**: List all events in a league for a specific season
@@ -44,10 +47,7 @@ Equip your AI agent with the most comprehensive sports intelligence available vi
 - **list_player_contracts**: Get contract details for a player
 - **list_player_honours**: List trophies and awards for a player
 - **list_player_milestones**: List career milestones for a player
-- **list_former_teams**: List previous clubs for a player
 - **list_all_sports**: List all available sports
-- **search_events**: Search for sports events by name
-- **search_players**: Search for sports players by name
 - **search_teams**: Search for sports teams by name
 
 

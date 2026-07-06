@@ -35,8 +35,6 @@ Transform how you discover adoptable companions with the **Petfinder** MCP serve
 
 
 ## Available Tools (8)
-- **get_animal**: Get details for a specific animal
-- **get_organization**: Get organization details
 - **get_animal_type**: Get details for an animal type
 - **list_animals**: List adoptable animals
 - **list_breeds**: List breeds for an animal type
@@ -45,6 +43,8 @@ Transform how you discover adoptable companions with the **Petfinder** MCP serve
 
 List available animal types
 - **search_nearby_animals**: Search for animals near a location
+- **get_animal**: Get details for a specific animal
+- **get_organization**: Get organization details
 
 
 ## 💬 Prompt Examples

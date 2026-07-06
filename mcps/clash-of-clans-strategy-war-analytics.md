@@ -38,9 +38,9 @@ Equip your AI agent with professional-grade strategic intelligence for **Clash o
 - **get_clan_details**: Use the clan tag with #.
 
 Get full profile for a Clash of Clans clan
+- **get_gold_pass_season**: Get current Gold Pass season info
 - **get_clan_members**: List all members of a clan with roles and stats
 - **get_current_war**: Get live status of an ongoing clan war
-- **get_gold_pass_season**: Get current Gold Pass season info
 - **get_player_profile**: Get detailed stats for a Clash of Clans player
 - **get_location_rankings**: Use locationId 32000006 for International. Type: clans or players.
 

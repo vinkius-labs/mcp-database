@@ -35,27 +35,27 @@ Connect **PG&E Data Portals** to any AI agent and programmatically search, disco
 
 
 ## Available Tools (10)
-- **query_by_date_range**: Specify the dataset ID and start/end dates to retrieve records within that time period. Use this for time-series analysis across any dataset type. Dataset ID from search_datasets. Dates in YYYY-MM-DD format. This is useful for year-over-year comparisons and trend analysis.
-
-Query any PG&E dataset filtered by a specific date range
-- **query_ev_adoption**: Use this to analyze EV adoption trends, identify high-adoption areas, and correlate with charging infrastructure. ZIP code is 5-digit format. Year is YYYY format (e.g., "2024").
-
-Query electric vehicle adoption data by ZIP code and year
-- **query_energy_efficiency**: ), and investment amounts. Use this to analyze program effectiveness and ROI of energy efficiency initiatives. Optional programType filters by program category. Year is YYYY format.
-
-Query PG&E energy efficiency program data
-- **query_energy_usage**: Returns electricity usage aggregated by customer segment (residential, commercial, industrial, agricultural). Use this to analyze energy consumption patterns in specific geographic areas over time. ZIP code format: 5-digit (e.g., "94102"). Dates in YYYY-MM-DD format.
-
-Query PG&E energy consumption data by ZIP code and date range
-- **get_dataset_schema**: Use this to understand what columns and data types are available before querying. The datasetId is obtained from search_datasets or list_all_datasets.
-
-Get the schema/metadata for a specific PG&E dataset
 - **query_grid_infrastructure**: Use this to understand grid capacity, identify areas needing upgrades, or analyze reliability metrics. Region filters by geographic area. dataType can filter by specific infrastructure type.
 
 Query PG&E grid infrastructure and distribution data
 - **list_all_datasets**: Each dataset includes name, description, ID, and metadata. Use this as a starting point to explore what data is available from PG&E — includes energy usage, EV adoption, solar generation, energy efficiency programs, and grid infrastructure datasets.
 
 List all available datasets in the PG&E Data Portals catalog
+- **query_by_date_range**: Specify the dataset ID and start/end dates to retrieve records within that time period. Use this for time-series analysis across any dataset type. Dataset ID from search_datasets. Dates in YYYY-MM-DD format. This is useful for year-over-year comparisons and trend analysis.
+
+Query any PG&E dataset filtered by a specific date range
+- **query_ev_adoption**: Use this to analyze EV adoption trends, identify high-adoption areas, and correlate with charging infrastructure. ZIP code is 5-digit format. Year is YYYY format (e.g., "2024").
+
+Query electric vehicle adoption data by ZIP code and year
+- **get_dataset_schema**: Use this to understand what columns and data types are available before querying. The datasetId is obtained from search_datasets or list_all_datasets.
+
+Get the schema/metadata for a specific PG&E dataset
+- **query_energy_efficiency**: ), and investment amounts. Use this to analyze program effectiveness and ROI of energy efficiency initiatives. Optional programType filters by program category. Year is YYYY format.
+
+Query PG&E energy efficiency program data
+- **query_energy_usage**: Returns electricity usage aggregated by customer segment (residential, commercial, industrial, agricultural). Use this to analyze energy consumption patterns in specific geographic areas over time. ZIP code format: 5-digit (e.g., "94102"). Dates in YYYY-MM-DD format.
+
+Query PG&E energy consumption data by ZIP code and date range
 - **query_dataset**: Optional filters can be passed as key-value pairs to narrow results (e.g., zip_code, year, region). Use this to retrieve actual data records from any dataset in the PG&E Data Portals. Dataset IDs are obtained from search_datasets or list_all_datasets.
 
 Query a specific PG&E dataset with optional filters

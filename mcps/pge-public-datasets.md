@@ -41,6 +41,9 @@ Get billing data and average costs from PG&E public datasets
 - **get_usage_by_customer_type**: Shows total consumption for Residential, Commercial, Industrial, and Agricultural sectors. Use this to understand the energy consumption distribution across different customer categories. Optional dataType ("electric"/"gas") and year filters.
 
 Get energy usage broken down by customer segment (residential, commercial, industrial, agricultural)
+- **get_yearly_trends**: Shows how electricity and gas usage has changed over multiple years. Use this to identify long-term patterns, growth/decline in energy demand, and seasonal variations. Optional dataType filter ("electric" or "gas").
+
+Get yearly energy consumption trends from PG&E public data
 - **compare_regions**: Returns side-by-side usage figures (kWh and therms), customer counts, and average bills for each region. Use this to identify regional differences in energy consumption, support geographic targeting for efficiency programs, or compare urban vs. rural usage patterns. ZIP codes are comma-separated (e.g., "94102,94103,94104"). Optional dataType and year filters.
 
 Compare energy usage data between multiple ZIP codes/regions
@@ -56,9 +59,6 @@ Get monthly energy consumption data by ZIP code and customer segment from PG&E p
 - **get_savings_data**: Includes program participation counts, kWh/therms saved, program costs, and cost-effectiveness metrics by program type. Use this to evaluate program ROI, compare effectiveness across initiatives, or identify high-impact efficiency strategies. Optional programType and year filters.
 
 Get energy efficiency program savings data from PG&E
-- **get_yearly_trends**: Shows how electricity and gas usage has changed over multiple years. Use this to identify long-term patterns, growth/decline in energy demand, and seasonal variations. Optional dataType filter ("electric" or "gas").
-
-Get yearly energy consumption trends from PG&E public data
 
 
 ## 💬 Prompt Examples

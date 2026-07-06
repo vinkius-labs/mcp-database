@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your automotive research and transportation
 
 
 ## Available Tools (8)
-- **decode_vin_details**: Decode Vehicle Identification Number
-- **find_wmi_info**: Lookup WMI from VIN
-- **get_manufacturer_info**: Get manufacturer details
-- **get_safety_recalls**: Check vehicle safety recalls
 - **get_types_for_make**: ) produced by a make.
 
 Get vehicle types for make
 - **get_vehicle_complaints**: Check owner complaints
 - **get_vehicle_safety_ratings**: Get NCAP star ratings
 - **list_all_makes**: List vehicle manufacturers
+- **decode_vin_details**: Decode Vehicle Identification Number
+- **find_wmi_info**: Lookup WMI from VIN
+- **get_manufacturer_info**: Get manufacturer details
+- **get_safety_recalls**: Check vehicle safety recalls
 
 
 ## 💬 Prompt Examples

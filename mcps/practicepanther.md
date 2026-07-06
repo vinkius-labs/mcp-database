@@ -44,23 +44,6 @@ Your AI becomes a legal practice assistant, helping you track matters, log time,
 
 
 ## Available Tools (18)
-- **create_practicepanther_contact**: USE WHEN:
-- User wants to add a new client
-- User needs to create a new contact record
-- User asks to "add a new contact" or "create a client"
-
-PARAMETERS:
-- first_name (REQUIRED): Contact's first name
-- last_name (REQUIRED): Contact's last name
-- email (OPTIONAL): Contact's email address
-- phone (OPTIONAL): Contact's phone number
-- type (OPTIONAL): Contact type — "Client", "Opposing Party", "Witness", "Referral Source", etc.
-
-EXAMPLES:
-- "Add a new contact John Smith" → call with first_name="John", last_name="Smith"
-- "Create client Jane Doe, jane@example.com, 555-0123" → call with first_name="Jane", last_name="Doe", email="jane@example.com", phone="555-0123", type="Client"
-
-Create a new contact/client in PracticePanther
 - **create_practicepanther_matter**: USE WHEN:
 - User wants to open a new legal matter
 - User needs to create a new case for a client
@@ -179,6 +162,23 @@ EXAMPLES:
 
 Search matters/cases using OData filter
 - **update_practicepanther_matter**: Update an existing matter/case in PracticePanther
+- **create_practicepanther_contact**: USE WHEN:
+- User wants to add a new client
+- User needs to create a new contact record
+- User asks to "add a new contact" or "create a client"
+
+PARAMETERS:
+- first_name (REQUIRED): Contact's first name
+- last_name (REQUIRED): Contact's last name
+- email (OPTIONAL): Contact's email address
+- phone (OPTIONAL): Contact's phone number
+- type (OPTIONAL): Contact type — "Client", "Opposing Party", "Witness", "Referral Source", etc.
+
+EXAMPLES:
+- "Add a new contact John Smith" → call with first_name="John", last_name="Smith"
+- "Create client Jane Doe, jane@example.com, 555-0123" → call with first_name="Jane", last_name="Doe", email="jane@example.com", phone="555-0123", type="Client"
+
+Create a new contact/client in PracticePanther
 
 
 ## 💬 Prompt Examples

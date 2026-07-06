@@ -33,8 +33,8 @@ Equip your AI agent with the most transparent and real-time chess intelligence v
 
 
 ## Available Tools (10)
-- **get_daily_puzzle**: Get the Lichess puzzle of the day
 - **get_leaderboards**: Get top player rankings for all variants
+- **get_daily_puzzle**: Get the Lichess puzzle of the day
 - **get_player_data**: Get public data for a Lichess player
 - **get_tv_channels**: ).
 
