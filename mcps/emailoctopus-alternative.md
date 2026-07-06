@@ -36,7 +36,6 @@ No more manual scrubbing through subscriber exports or slow UI navigation. Your 
 
 
 ## Available Tools (12)
-- **add_contact_to_list**: Add a new contact to a list
 - **create_email_list**: Create a new subscriber list
 - **remove_contact_from_list**: Delete a contact from a list
 - **get_campaign_details**: Get details for a campaign
@@ -52,6 +51,7 @@ List contacts in a specific list
 
 Start an automation for a contact
 - **update_contact_profile**: Update an existing contact
+- **add_contact_to_list**: Add a new contact to a list
 
 
 ## 💬 Prompt Examples

@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire media research and news auditin
 
 
 ## Available Tools (4)
+- **search_world_news**: Search for world news articles by keyword or phrase
 - **check_api_status**: Check if the WorldNews service is operational
 - **extract_news_from_url**: Extract article content and metadata from a specific news URL
 - **get_top_world_news**: Get top news headlines for a specific country and language
-- **search_world_news**: Search for world news articles by keyword or phrase
 
 
 ## 💬 Prompt Examples

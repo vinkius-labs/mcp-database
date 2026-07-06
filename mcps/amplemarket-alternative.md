@@ -36,12 +36,12 @@ No more manual toggling between sales tools or digging through complex CSV expor
 
 
 ## Available Tools (6)
+- **list_sequences**: List active sequences
 - **enrich_company**: Enrich a company
 - **enrich_person**: Enrich a person
 - **get_contact**: Get contact details
 - **list_contacts**: List all contacts
 - **list_exclusions**: List excluded emails
-- **list_sequences**: List active sequences
 
 
 ## 💬 Prompt Examples

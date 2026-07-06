@@ -36,13 +36,13 @@ Connect your **ClientSuccess** customer success platform to any AI agent and sim
 
 ## Available Tools (6)
 - **create_client**: Create a new client
-- **get_client_details**: Get details for a specific client
 - **list_clients**: List ClientSuccess clients
 - **list_contacts**: Optionally filter by client ID.
 
 List client contacts
 - **list_contracts**: List client contracts
 - **list_segments**: List client segments
+- **get_client_details**: Get details for a specific client
 
 
 ## 💬 Prompt Examples

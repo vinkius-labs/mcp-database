@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your entire cloud communication infrastruct
 
 
 ## Available Tools (8)
+- **list_usage**: Get account usage records
+- **send_sms**: Send an SMS message
 - **get_account_info**: Get SignalWire account details
 - **get_call**: Get details for a specific call
 - **get_message**: Get details for a specific message
 - **list_calls**: List recent voice calls
 - **list_messages**: List recent SMS/MMS messages
 - **list_phone_numbers**: List SignalWire phone numbers
-- **list_usage**: Get account usage records
-- **send_sms**: Send an SMS message
 
 
 ## 💬 Prompt Examples

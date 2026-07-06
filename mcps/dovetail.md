@@ -36,13 +36,13 @@ No more manual scrubbing through interview transcripts or complex project naviga
 
 
 ## Available Tools (7)
+- **list_notes**: List research notes
+- **list_projects**: List all research projects
+- **list_workspace_members**: List workspace members
 - **create_insight**: Create a new research insight
 - **create_note**: Create a new research note
 - **get_project_details**: Get details for a research project
 - **list_insights**: List research insights
-- **list_notes**: List research notes
-- **list_projects**: List all research projects
-- **list_workspace_members**: List workspace members
 
 
 ## 💬 Prompt Examples

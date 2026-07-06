@@ -36,7 +36,6 @@ No more manual status checking across different CRM modules or digging through c
 
 
 ## Available Tools (12)
-- **create_contact**: Create a new contact
 - **create_deal**: Create a new deal
 - **delete_contact**: Delete a contact
 - **list_contacts**: List all contacts in Agile CRM
@@ -48,6 +47,7 @@ No more manual status checking across different CRM modules or digging through c
 - **retrieve_deal**: Get details of a specific deal
 - **retrieve_task**: Get details of a specific task
 - **update_contact**: Update an existing contact
+- **create_contact**: Create a new contact
 
 
 ## 💬 Prompt Examples

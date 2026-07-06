@@ -37,10 +37,6 @@ No more manual entry of every coffee receipt. Your AI acts as your dedicated fin
 
 
 ## Available Tools (12)
-- **create_new_expense**: Requires amount, currency, and category.
-
-Add a new expense record
-- **export_expense_data**: Export expenses to a specific format
 - **get_authenticated_user_profile**: Get current user profile
 - **list_expense_categories**: g., Meals, Travel).
 
@@ -57,6 +53,10 @@ List defined payment methods
 - **list_expense_tags**: List active tags
 - **list_expensya_users**: List users in the organization
 - **list_mileage_vehicles**: List vehicles for mileage tracking
+- **create_new_expense**: Requires amount, currency, and category.
+
+Add a new expense record
+- **export_expense_data**: Export expenses to a specific format
 
 
 ## 💬 Prompt Examples

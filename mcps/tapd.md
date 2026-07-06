@@ -36,7 +36,6 @@ Empower your AI agent to orchestrate your agile development lifecycle with **TAP
 
 
 ## Available Tools (10)
-- **create_bug**: Create a new TAPD bug
 - **create_story**: Create a new TAPD story
 - **create_task**: Create a new TAPD task
 - **get_workspace**: Get workspace details
@@ -46,6 +45,7 @@ Empower your AI agent to orchestrate your agile development lifecycle with **TAP
 - **list_stories**: List stories in a workspace
 - **list_tasks**: List tasks in a workspace
 - **list_workspaces**: List all TAPD workspaces
+- **create_bug**: Create a new TAPD bug
 
 
 ## 💬 Prompt Examples

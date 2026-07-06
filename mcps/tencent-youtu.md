@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your visual intelligence and facial recogni
 
 
 ## Available Tools (8)
-- **analyze_face**: Analyze facial attributes
-- **compare_faces**: Compare two faces
-- **detect_face**: Detect faces in image
-- **list_face_groups**: List person groups
 - **list_persons_in_group**: List persons in group
 - **live_face_check**: Detect live face
 - **register_person**: Create a new person
 - **search_face_in_groups**: Search face in library
+- **analyze_face**: Analyze facial attributes
+- **compare_faces**: Compare two faces
+- **detect_face**: Detect faces in image
+- **list_face_groups**: List person groups
 
 
 ## 💬 Prompt Examples

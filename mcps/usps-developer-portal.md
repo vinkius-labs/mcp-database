@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire postal logistics and address au
 
 
 ## Available Tools (8)
+- **lookup_usps_city_state**: Look up the city and state for a ZIP code
 - **calculate_domestic_rate**: Calculate USPS domestic shipping rates
 - **calculate_international_rate**: Calculate USPS international shipping rates
 - **get_delivery_commitments**: Get USPS service delivery commitments and estimates
-- **lookup_usps_city_state**: Look up the city and state for a ZIP code
 - **lookup_usps_zip_code**: Look up the exact ZIP code for a specific US address
 - **track_usps_package_advanced**: Get advanced tracking information for a USPS package
 - **track_usps_package**: Track a USPS package using a tracking number

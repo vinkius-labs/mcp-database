@@ -38,11 +38,11 @@ No more manual toggling between Word editors or slow desktop conversion tools. Y
 ## Available Tools (10)
 - **accept_all_revisions**: Accept track changes
 - **add_watermark**: Insert a watermark
-- **protect_document**: Protect document
-- **convert_document**: Convert document format
 - **delete_cloud_file**: Delete a document
 - **get_document_statistics**: Get document statistics
 - **list_cloud_files**: List files in storage
+- **protect_document**: Protect document
+- **convert_document**: Convert document format
 - **render_document_page**: Render specific page
 - **replace_text_in_document**: Replace text
 - **split_document**: Split document into pages

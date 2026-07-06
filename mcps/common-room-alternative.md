@@ -39,12 +39,6 @@ No more manual scrubbing through fragmented social logs. Your AI acts as your de
 - **create_member**: Create a new community member
 - **create_webhook**: Configure a new webhook
 - **delete_member**: Remove member (GDPR)
-- **delete_webhook**: Delete a webhook
-- **get_member**: Get member details
-- **get_token_status**: Check API token status
-- **ingest_activity**: g., Slack post, social interaction) into a members timeline.
-
-Report community activity
 - **list_members**: List community members
 - **list_segments**: g., Highly Engaged, At Risk).
 
@@ -52,6 +46,12 @@ List community segments
 - **list_tags**: List community tags
 - **list_webhooks**: List configured webhooks
 - **update_member**: Update member profile
+- **delete_webhook**: Delete a webhook
+- **get_member**: Get member details
+- **get_token_status**: Check API token status
+- **ingest_activity**: g., Slack post, social interaction) into a members timeline.
+
+Report community activity
 
 
 ## 💬 Prompt Examples

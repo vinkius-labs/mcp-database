@@ -36,12 +36,6 @@ Connect to **Weatherbit** and access global weather data through natural convers
 
 
 ## Available Tools (10)
-- **get_air_quality**: Returns AQI score, PM2.5, PM10, O3, NO2, SO2, CO concentrations and health recommendations.
-
-Get air quality index (AQI) by coordinates
-- **get_current_weather**: Returns temperature, feels like, humidity, wind speed/direction, precipitation, cloud cover, visibility, UV index, weather description and icon.
-
-Get current weather conditions by coordinates
 - **get_current_weather_by_city**: Returns temperature, feels like, humidity, wind, precipitation, cloud cover, visibility, UV index and weather description.
 
 Get current weather conditions by city name
@@ -66,6 +60,12 @@ Query severe weather reports in a geographic area
 - **get_weather_alerts**: Returns alert type, severity, description, effective/expiry times and affected areas.
 
 Get active weather alerts by coordinates
+- **get_air_quality**: Returns AQI score, PM2.5, PM10, O3, NO2, SO2, CO concentrations and health recommendations.
+
+Get air quality index (AQI) by coordinates
+- **get_current_weather**: Returns temperature, feels like, humidity, wind speed/direction, precipitation, cloud cover, visibility, UV index, weather description and icon.
+
+Get current weather conditions by coordinates
 
 
 ## 💬 Prompt Examples

@@ -26,13 +26,6 @@ Growth marketers, e-commerce managers, and developers who want an intelligent AI
 
 
 ## Available Tools (12)
-- **apply_tag**: Apply a tag to a subscriber
-- **create_or_update_subscriber**: Pass the email address and optionally any custom fields or tags.
-
-Create or update a subscriber in Drip
-- **delete_subscriber**: This action is irreversible.
-
-Delete a subscriber from Drip permanently
 - **fetch_subscriber**: Fetch a single subscriber by their ID or Email
 - **list_broadcasts**: List all Single-Email Campaigns (Broadcasts)
 - **list_campaigns**: List all Email Series Campaigns
@@ -46,6 +39,13 @@ List all subscribers in the Drip account
 
 Record a custom event for a subscriber in Drip
 - **unsubscribe_subscriber**: Unsubscribe a subscriber from all mailings
+- **apply_tag**: Apply a tag to a subscriber
+- **create_or_update_subscriber**: Pass the email address and optionally any custom fields or tags.
+
+Create or update a subscriber in Drip
+- **delete_subscriber**: This action is irreversible.
+
+Delete a subscriber from Drip permanently
 
 
 ## 💬 Prompt Examples

@@ -35,18 +35,9 @@ Connect your **WHOOP** account to any AI agent and access your personal health d
 
 
 ## Available Tools (11)
-- **get_body_measurement**: Useful for tracking physical metrics alongside your WHOOP data.
-
-Get your body measurement data
 - **get_cycle**: Includes sleep, recovery, strain and heart rate metrics for that 24-hour period.
 
 Get a specific WHOOP cycle by ID
-- **get_cycle_recovery**: Includes recovery score, resting heart rate, HRV (heart rate variability), sleep balance and strain balance.
-
-Get recovery data for a specific WHOOP cycle
-- **get_cycle_sleep**: Includes sleep duration, stages (light, deep, REM, awake), disturbances and sleep performance percentage.
-
-Get sleep data for a specific WHOOP cycle
 - **get_cycles**: Cycles represent 24-hour periods of recovery and strain data. Each cycle includes sleep, recovery, strain and heart rate metrics. Supports date range filtering with start/end in ISO 8601 format. Pagination: max 25 results, use nextToken for more.
 
 Get your WHOOP cycle data
@@ -68,6 +59,15 @@ Get a specific WHOOP workout by ID
 - **get_workouts**: Supports date range filtering. Pagination: max 25 results.
 
 Get your WHOOP workout data
+- **get_body_measurement**: Useful for tracking physical metrics alongside your WHOOP data.
+
+Get your body measurement data
+- **get_cycle_recovery**: Includes recovery score, resting heart rate, HRV (heart rate variability), sleep balance and strain balance.
+
+Get recovery data for a specific WHOOP cycle
+- **get_cycle_sleep**: Includes sleep duration, stages (light, deep, REM, awake), disturbances and sleep performance percentage.
+
+Get sleep data for a specific WHOOP cycle
 
 
 ## 💬 Prompt Examples
