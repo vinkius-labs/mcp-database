@@ -35,11 +35,6 @@ Connect your **Venue.live** account to any AI agent and simplify how you coordin
 
 
 ## Available Tools (10)
-- **create_event**: Create a new virtual event
-- **create_speaker**: Register a new speaker
-- **get_event_analytics**: Get event engagement analytics
-- **get_event_details**: Get details of a specific event
-- **get_me**: Get account information
 - **list_events**: live.
 
 List virtual events and webinars
@@ -47,6 +42,11 @@ List virtual events and webinars
 - **list_event_registrations**: List event attendees
 - **list_event_sessions**: List sessions for a specific event
 - **list_speakers**: List guest speakers
+- **create_event**: Create a new virtual event
+- **create_speaker**: Register a new speaker
+- **get_event_analytics**: Get event engagement analytics
+- **get_event_details**: Get details of a specific event
+- **get_me**: Get account information
 
 
 ## 💬 Prompt Examples

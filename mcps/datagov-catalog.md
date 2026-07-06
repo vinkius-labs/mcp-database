@@ -34,14 +34,14 @@ Connect to the **Data.gov Catalog** to explore the comprehensive repository of U
 
 
 ## Available Tools (8)
-- **get_location_geometry**: Retrieve the GeoJSON boundary for a specific location ID
-- **get_harvest_record_raw**: Retrieve original unmodified source payload for a harvest record
 - **get_harvest_record**: Retrieve metadata about how a dataset was ingested
 - **get_harvest_record_transformed**: Retrieve transformed DCAT-US payload for a harvest record
 - **get_keywords**: Retrieve commonly used keywords and their dataset counts
 - **get_organizations**: Retrieve the complete list of publishing organizations
 - **search_locations**: Autocomplete search for location names to use with spatial filtering
 - **search_datasets**: Search the catalog using keywords, filters, and sorting
+- **get_location_geometry**: Retrieve the GeoJSON boundary for a specific location ID
+- **get_harvest_record_raw**: Retrieve original unmodified source payload for a harvest record
 
 
 ## 💬 Prompt Examples

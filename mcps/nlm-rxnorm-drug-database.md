@@ -34,9 +34,6 @@ Connect your AI agent to the **National Library of Medicine (NLM) RxNorm** datab
 
 
 ## Available Tools (21)
-- **find_related_ndcs**: Find NDCs related by concept, drug, or NDC product
-- **find_rxcui_by_id**: Search for an identifier and return associated RxCUIs
-- **find_rxcui_by_string**: Search for a drug by name from any vocabulary in RxNorm
 - **find_similar_classes_by_drug_list**: Identify classes with drug members similar to a provided list of RxCUIs
 - **get_all_properties**: Return detailed properties for an RxNorm concept
 - **get_all_related_info**: Retrieve all concepts related to a specified RxCUI
@@ -63,6 +60,9 @@ Retrieve related concepts of specific term types
 - **get_rxterm_display_name**: Return the RxTerms display name for a concept
 - **get_rxcui_history_status**: Return the status, attributes, and history of a concept
 - **get_spelling_suggestions**: Return strings similar to a specified string for auto-correction
+- **find_related_ndcs**: Find NDCs related by concept, drug, or NDC product
+- **find_rxcui_by_id**: Search for an identifier and return associated RxCUIs
+- **find_rxcui_by_string**: Search for a drug by name from any vocabulary in RxNorm
 
 
 ## 💬 Prompt Examples

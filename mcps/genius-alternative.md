@@ -34,15 +34,6 @@ Connect your **Genius** account to any AI agent to explore the world's largest d
 
 
 ## Available Tools (14)
-- **create_annotation**: Requires create_annotation scope.
-
-Create a new annotation on a public web page
-- **delete_annotation**: Requires manage_annotation scope.
-
-Delete an annotation
-- **downvote_annotation**: Requires vote scope.
-
-Downvote an annotation
 - **get_account**: Requires me scope.
 
 Get current user account information
@@ -56,6 +47,15 @@ Get current user account information
 - **unvote_annotation**: Requires vote scope.
 
 Remove vote from an annotation
+- **create_annotation**: Requires create_annotation scope.
+
+Create a new annotation on a public web page
+- **delete_annotation**: Requires manage_annotation scope.
+
+Delete an annotation
+- **downvote_annotation**: Requires vote scope.
+
+Downvote an annotation
 - **update_annotation**: Requires manage_annotation scope.
 
 Update an annotation

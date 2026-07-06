@@ -33,10 +33,10 @@ Connect your AI agent to the official **openFDA** database to retrieve comprehen
 
 
 ## Available Tools (2)
-- **count_drug_labels**: Count unique values of a field in FDA drug labels
 - **search_drug_labels**: Use the search parameter to filter by fields like openfda.brand_name, warnings, etc.
 
 Search FDA drug labels (SPL format)
+- **count_drug_labels**: Count unique values of a field in FDA drug labels
 
 
 ## 💬 Prompt Examples

@@ -23,12 +23,12 @@ Bcrypt is the algorithm that Dropbox, GitHub, and every serious authentication s
 
 
 ## Available Tools (2)
-- **bcrypt_hash**: Bcrypt is the industry standard for password hashing — it includes a salt and is intentionally slow to resist brute-force attacks. Salt rounds control the computational cost (10 is default, 12+ for high security). Never store plaintext passwords.
-
-Hashes a password using bcrypt with configurable salt rounds. Pure JS, no native compilation needed
 - **bcrypt_verify**: Pass the password and the hash, and receive a boolean isMatch result. This is the only correct way to verify bcrypt passwords — never compare hashes directly.
 
 Verifies a password against a bcrypt hash. Returns boolean match result
+- **bcrypt_hash**: Bcrypt is the industry standard for password hashing — it includes a salt and is intentionally slow to resist brute-force attacks. Salt rounds control the computational cost (10 is default, 12+ for high security). Never store plaintext passwords.
+
+Hashes a password using bcrypt with configurable salt rounds. Pure JS, no native compilation needed
 
 
 ## 💬 Prompt Examples

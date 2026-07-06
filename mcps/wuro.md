@@ -35,6 +35,12 @@ Connect your **Wuro.fr** account to any AI agent to automate your business billi
 
 
 ## Available Tools (12)
+- **get_quote**: Get details of a specific quote
+- **list_contacts**: List all contacts
+- **list_invoices**: List all customer invoices
+- **list_products**: List all products
+- **list_purchases**: List all company purchases
+- **list_quotes**: List all quotes/estimates
 - **create_contact**: Create a new contact
 - **create_invoice**: Provide contact ID and lines.
 
@@ -44,13 +50,7 @@ Create a new customer invoice
 Create a new quote/estimate
 - **get_contact**: Get details of a specific contact
 - **get_invoice**: Get details of a specific invoice
-- **get_quote**: Get details of a specific quote
-- **list_contacts**: List all contacts
 - **list_employees**: List all employees
-- **list_invoices**: List all customer invoices
-- **list_products**: List all products
-- **list_purchases**: List all company purchases
-- **list_quotes**: List all quotes/estimates
 
 
 ## 💬 Prompt Examples

@@ -34,7 +34,6 @@ Connect to the **Boletín Oficial del Estado (BOE)** Open Data service to naviga
 
 
 ## Available Tools (17)
-- **get_boe_summary**: Get daily summary of the BOE
 - **get_borme_summary**: Get daily summary of the BORME
 - **get_consolidated_legislation**: ID format: BOE-A-YYYY-NUMBER.
 
@@ -61,6 +60,7 @@ List auxiliary legal ranks
 - **list_scopes**: List auxiliary scopes
 - **list_subjects**: List auxiliary subjects/topics
 - **search_consolidated_legislation**: Search consolidated legislation
+- **get_boe_summary**: Get daily summary of the BOE
 
 
 ## 💬 Prompt Examples

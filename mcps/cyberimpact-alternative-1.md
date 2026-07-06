@@ -33,13 +33,13 @@ Connect your **Cyberimpact** account to any AI agent to streamline your email ma
 
 
 ## Available Tools (7)
-- **add_group_member**: Add a member to a group
 - **delete_member**: Delete a member
 - **get_member**: Get details for a specific member
 - **list_group_members**: List members in a group
-- **list_groups**: List all groups
 - **list_members**: List all members
 - **upsert_member**: Create or update a member
+- **add_group_member**: Add a member to a group
+- **list_groups**: List all groups
 
 
 ## 💬 Prompt Examples

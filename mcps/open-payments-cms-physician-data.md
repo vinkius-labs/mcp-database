@@ -34,11 +34,11 @@ The **Open Payments** MCP server provides direct access to the Centers for Medic
 
 
 ## Available Tools (5)
+- **search_physicians**: Search for specific physicians
+- **search_teaching_hospitals**: Search for specific teaching hospitals
 - **list_datasets**: List all available datasets in the Open Payments system
 - **get_dataset**: Get detailed metadata for a specific dataset
 - **query_dataset**: Search records within a specific dataset
-- **search_physicians**: Search for specific physicians
-- **search_teaching_hospitals**: Search for specific teaching hospitals
 
 
 ## 💬 Prompt Examples

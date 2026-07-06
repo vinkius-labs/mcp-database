@@ -34,13 +34,6 @@ Connect your **Dribbble** account to any AI agent to streamline your creative wo
 
 
 ## Available Tools (15)
-- **create_attachment**: Requires upload scope and Pro/Team membership.
-
-Create an attachment for a shot
-- **create_job**: Note: Requires a special token. Contact Dribbble for partnership.
-
-Create a job
-- **create_project**: Create a new project
 - **create_shot**: Requires upload scope. Note: Video shot creation is not supported via API.
 
 Create a new shot
@@ -58,6 +51,13 @@ Show a job
 - **get_user**: Get the authenticated user
 - **list_projects**: List projects
 - **list_user_shots**: List the authenticated user’s shots
+- **create_attachment**: Requires upload scope and Pro/Team membership.
+
+Create an attachment for a shot
+- **create_job**: Note: Requires a special token. Contact Dribbble for partnership.
+
+Create a job
+- **create_project**: Create a new project
 - **update_job**: Note: Requires a special token.
 
 Update a job

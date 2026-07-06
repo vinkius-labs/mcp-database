@@ -34,14 +34,14 @@ Connect your **Wing Assistant** account to any AI agent to automate your delegat
 
 
 ## Available Tools (6)
-- **create_task**: Provide title and description.
-
-Create a new task for an assistant
-- **get_assistant**: Get details of a specific assistant
 - **get_task_status**: Get current status of a unit of work
 - **list_assistants**: List all active virtual assistants
 - **list_tasks**: List all tasks assigned to assistants
 - **update_task**: Update an existing task
+- **create_task**: Provide title and description.
+
+Create a new task for an assistant
+- **get_assistant**: Get details of a specific assistant
 
 
 ## 💬 Prompt Examples

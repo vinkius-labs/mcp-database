@@ -34,13 +34,7 @@ Connect your **Wizehire** hiring platform to any AI agent to streamline your rec
 
 
 ## Available Tools (12)
-- **check_api_health**: Verify Wizehire API connectivity
-- **create_new_candidate**: Requires name and email.
-
-Add a new candidate manually
-- **get_candidate_details**: Get details for a specific candidate
 - **get_job_details**: Get details for a specific job
-- **get_current_user**: Get authenticated user profile
 - **list_candidates**: List all recruitment candidates
 - **list_active_job_postings**: List all active job openings
 - **list_office_locations**: List business office locations
@@ -50,6 +44,12 @@ Add a new candidate manually
 - **update_candidate_hiring_stage**: g., Interview, Hired).
 
 Move a candidate to a different stage
+- **check_api_health**: Verify Wizehire API connectivity
+- **create_new_candidate**: Requires name and email.
+
+Add a new candidate manually
+- **get_candidate_details**: Get details for a specific candidate
+- **get_current_user**: Get authenticated user profile
 
 
 ## 💬 Prompt Examples

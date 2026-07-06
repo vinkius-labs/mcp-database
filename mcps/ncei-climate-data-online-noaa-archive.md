@@ -34,7 +34,6 @@ Connect your AI agent to the **NCEI Climate Data Online** archive and explore de
 
 
 ## Available Tools (10)
-- **list_datacategories**: List general types of data used to group similar data types
 - **get_data**: Annual/Monthly data limited to 10-year range; other data limited to 1-year range.
 
 Fetch actual observations and ancillary attributes
@@ -48,6 +47,7 @@ Find information about available NCEI datasets
 - **search_data**: Discover data based on temporal and spatial parameters
 - **search_datasets**: Discover datasets based on temporal and spatial parameters
 - **get_service_data**: Access subset data in multiple formats
+- **list_datacategories**: List general types of data used to group similar data types
 
 
 ## 💬 Prompt Examples

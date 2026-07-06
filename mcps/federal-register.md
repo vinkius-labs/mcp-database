@@ -34,15 +34,15 @@ Connect your AI agent to the **Federal Register** and navigate the vast landscap
 
 
 ## Available Tools (9)
-- **get_agency**: Fetch a single agency by slug
-- **get_current_public_inspection**: Retrieve all documents currently on public inspection
-- **get_document**: Fetch a single published document
 - **get_multiple_documents**: Fetch multiple published documents
 - **get_public_inspection_by_date**: Retrieve documents on public inspection on a specific date
 - **get_public_inspection_document**: Fetch a single public inspection document
 - **list_agencies**: List all federal agencies
 - **search_documents**: Search published Federal Register documents
 - **search_public_inspection**: Search public inspection documents
+- **get_agency**: Fetch a single agency by slug
+- **get_current_public_inspection**: Retrieve all documents currently on public inspection
+- **get_document**: Fetch a single published document
 
 
 ## 💬 Prompt Examples
