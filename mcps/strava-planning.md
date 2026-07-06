@@ -37,12 +37,6 @@ Connect **Strava Planning** to any AI agent and manage your training logistics â
 
 
 ## Available Tools (14)
-- **get_athlete**: Use this to review personal profile details, check equipment assignments, or verify account settings.
-
-Get the authenticated athlete's profile information
-- **get_athlete_zones**: Required for zone-based training analysis. Use this to review training zones, ensure zones are correctly set, or use zone data for activity analysis.
-
-Get the athlete's custom heart rate and power zones
 - **create_activity**: Required: name (activity name), type (activity type like "Run", "Ride", "Swim", "Walk", "Hike"), startDate (ISO 8601 format), elapsedTime (seconds). Optional: description, distance (meters). Use this to log activities recorded outside of Strava (gym workouts, yoga, cross-training, etc.). Activity types must match Strava's valid types list.
 
 Create a manual activity in Strava
@@ -79,6 +73,12 @@ Upload an activity file (FIT, TCX, GPX) to Strava for processing
 - **get_upload_status**: Status values: "Your activity is ready" (success), "Your activity is still processing" (wait and retry), or error messages. The uploadId is returned by upload_activity. Poll this endpoint every 5-10 seconds after upload until ready.
 
 Check the status of a Strava activity upload
+- **get_athlete**: Use this to review personal profile details, check equipment assignments, or verify account settings.
+
+Get the authenticated athlete's profile information
+- **get_athlete_zones**: Required for zone-based training analysis. Use this to review training zones, ensure zones are correctly set, or use zone data for activity analysis.
+
+Get the athlete's custom heart rate and power zones
 
 
 ## ðŸ’¬ Prompt Examples

@@ -33,7 +33,6 @@ Bring deep indoor location intelligence directly to your AI operations using the
 
 
 ## Available Tools (10)
-- **calculate_path**: Calculate the optimal indoor wayfinding path between two points
 - **get_building**: Retrieve detailed configuration for a specific Pointr building
 - **get_level_map**: Retrieve the floor plan map data for a specific building level
 - **get_poi**: Retrieve detailed information for a specific Pointr POI
@@ -43,6 +42,7 @@ Bring deep indoor location intelligence directly to your AI operations using the
 - **list_levels**: List all floor levels for a specific Pointr building
 - **list_pois**: List all Points of Interest (POIs) registered in the Pointr platform
 - **search_pois**: Search for indoor Points of Interest by keyword
+- **calculate_path**: Calculate the optimal indoor wayfinding path between two points
 
 
 ## 💬 Prompt Examples

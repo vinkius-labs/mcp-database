@@ -40,13 +40,14 @@ Your AI becomes a dedicated logistics coordinator, eliminating manual order entr
 - **cancel_shipment**: Once cancelled, the shipment cannot be reactivated and a new one must be created if needed.
 
 Cancel an active shipment order
+- **delete_webhook**: Remove a webhook endpoint
+- **list_coverage_zones**: List all available delivery coverage zones
 - **create_shipment**: Requires origin and destination addresses with full street details, contact information, and package dimensions. Moova will automatically assign the optimal carrier and route based on real-time availability.
 
 Create a new logistics shipment
 - **create_webhook**: Essential for keeping your e-commerce platform synchronized with delivery progress.
 
 Register a new webhook for shipment events
-- **delete_webhook**: Remove a webhook endpoint
 - **get_account_info**: Get merchant account information
 - **get_budget**: Returns pricing from available carriers including express, same-day, and standard delivery options.
 
@@ -56,7 +57,6 @@ Get a shipping cost estimate
 Download the shipping label for a shipment
 - **get_shipment_status**: Get the current status of a shipment
 - **get_shipment**: Get full details of a specific shipment
-- **list_coverage_zones**: List all available delivery coverage zones
 - **list_shipments**: Can be filtered by shipment status (e.g., CREATED, IN_TRANSIT, DELIVERED, CANCELLED) to narrow results.
 
 List all shipments with optional status filter

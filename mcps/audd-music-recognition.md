@@ -37,7 +37,6 @@ Equip your AI agent with the power of **AudD**, the leading music recognition an
 ## Available Tools (8)
 - **add_monitored_stream**: Add an audio stream to monitor for music
 - **get_lyrics**: Get full lyrics for a specific track
-- **list_monitored_streams**: List all monitored audio streams
 - **recognize_at_time**: Useful for long files.
 
 Recognize music starting at a specific offset
@@ -49,6 +48,7 @@ Recognize a song from an audio URL
 Search for song lyrics by text fragment
 - **search_music**: Search for a song by text query
 - **set_stream_callback_url**: Set the webhook URL for stream monitoring results
+- **list_monitored_streams**: List all monitored audio streams
 
 
 ## 💬 Prompt Examples

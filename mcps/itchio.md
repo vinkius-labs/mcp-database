@@ -33,6 +33,9 @@ Connect your **itch.io** account to any AI agent and explore your indie game lib
 
 
 ## Available Tools (4)
+- **get_user_games**: io account including games you've purchased, collected or developed. Returns game titles, URLs, cover images, prices and developer info.
+
+Get games you own or created on itch.io
 - **get_collection_games**: io collection by its collection ID. Returns game titles, URLs, cover images, prices and developer info.
 
 Get games in a specific itch.io collection
@@ -42,9 +45,6 @@ Get your itch.io account info
 - **get_user_collections**: io. Returns collection names, IDs, game counts and URLs.
 
 Get your itch.io game collections
-- **get_user_games**: io account including games you've purchased, collected or developed. Returns game titles, URLs, cover images, prices and developer info.
-
-Get games you own or created on itch.io
 
 
 ## 💬 Prompt Examples

@@ -29,16 +29,16 @@ Connect **OpenAQ**, the world's largest open air quality database, to any AI age
 
 
 ## Available Tools (9)
+- **get_location_by_id**: Get details for a specific location
+- **get_locations**: Filter by country, city, parameter, or geographic bounding box. Returns location details including coordinates, sensor counts, and whether the station is an official monitor.
+
+List air quality monitoring locations
 - **get_countries**: Includes location counts and city counts per country.
 
 List countries with monitoring stations
 - **get_latest_measurements**: Useful for getting current air quality status without querying full history.
 
 Get latest measurements per location
-- **get_location_by_id**: Get details for a specific location
-- **get_locations**: Filter by country, city, parameter, or geographic bounding box. Returns location details including coordinates, sensor counts, and whether the station is an official monitor.
-
-List air quality monitoring locations
 - **get_measurements**: Filter by location, parameter, date range, and value range. Returns readings with timestamps.
 
 Get historical air quality measurements

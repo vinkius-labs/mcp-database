@@ -26,6 +26,10 @@ Connect your AI assistant to your Simplenote account for seamless note managemen
 
 
 ## Available Tools (8)
+- **search_notes**: Searches for notes containing specific text
+- **update_note**: Requires the note key.
+
+Updates an existing note
 - **create_note**: Provide the full text content.
 
 Creates a new note
@@ -40,10 +44,6 @@ Retrieves a specific historical version of a note
 
 Lists all notes in Simplenote
 - **list_tags**: Lists all tags used in your notes
-- **search_notes**: Searches for notes containing specific text
-- **update_note**: Requires the note key.
-
-Updates an existing note
 
 
 ## 💬 Prompt Examples

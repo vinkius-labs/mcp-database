@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire environmental research and air 
 
 
 ## Available Tools (6)
-- **check_api_status**: Check if the IQAir API is operational
-- **get_city_air_quality**: Get real-time air quality and weather for a specific city
-- **get_nearest_city_air_quality**: Get real-time air quality and weather for the city nearest to the requester IP
 - **list_supported_cities**: List all cities supported for a specific state and country
 - **list_supported_countries**: List all countries supported by IQAir
 - **list_supported_states**: List all states supported for a specific country
+- **check_api_status**: Check if the IQAir API is operational
+- **get_city_air_quality**: Get real-time air quality and weather for a specific city
+- **get_nearest_city_air_quality**: Get real-time air quality and weather for the city nearest to the requester IP
 
 
 ## 💬 Prompt Examples

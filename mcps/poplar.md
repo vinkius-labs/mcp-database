@@ -38,9 +38,6 @@ No more manual uploading of address lists. Your AI assistant acts as a dedicated
 
 
 ## Available Tools (11)
-- **add_to_audience**: Add a recipient to a specific audience list
-- **add_to_suppression_list**: Add a recipient to the global "Do Not Mail" list
-- **get_api_profile**: Get information about the authenticated account
 - **get_mailer_status**: Check the production and delivery status of a specific mailer
 - **list_audiences**: List all mailing audiences in your account
 - **list_billing_history**: List account billing and invoice data
@@ -53,6 +50,9 @@ Clean and standardize a US mailing address
 - **trigger_physical_mailer**: Requires "campaign_id" and "recipient_json" (address details). Optional "merge_tags_json" for dynamic content.
 
 Trigger a physical mailer (postcard, letter) for a campaign
+- **add_to_audience**: Add a recipient to a specific audience list
+- **add_to_suppression_list**: Add a recipient to the global "Do Not Mail" list
+- **get_api_profile**: Get information about the authenticated account
 
 
 ## 💬 Prompt Examples

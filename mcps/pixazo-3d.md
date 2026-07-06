@@ -44,9 +44,6 @@ No more manual 3D modeling or expensive artist time. Your AI acts as a dedicated
 
 
 ## Available Tools (12)
-- **convert_3d_format**: Preserves geometry, textures, materials, and rigging data during conversion. Essential for pipeline integration, platform compatibility, and format standardization. AI agents should use this when users ask "convert this GLB model to FBX", "change this 3D file to USDZ for AR", or need 3D format conversion for specific platform or software requirements.
-
-Convert 3D models between different file formats
 - **generate_hunyuan_3d**: Hunyuan excels at producing detailed geometry with accurate proportions and realistic textures from single or multiple reference images. Accepts image URLs or base64 image data. Returns 3D model files with PBR textures in formats like GLB, OBJ, or FBX. Essential for product visualization, character creation, and asset generation requiring high geometric accuracy. AI agents should use this when users need production-quality 3D models from product photos, concept art, or reference images with precise detail reproduction.
 
 Generate 3D models using Hunyuan 3D model from images
@@ -80,6 +77,9 @@ Generate structured 3D models using Trellis3D with clean topology
 - **generate_tripo_3d**: Tripo3D is ideal for rapid prototyping, batch processing, and applications where generation time is important. Accepts image URLs and returns 3D models with reasonable geometry and textures. Essential for quick 3D previews, iterative design workflows, and content pipelines requiring fast turnaround. AI agents should use this when users need fast 3D generation, quick previews, or batch processing of multiple images.
 
 Generate 3D models using Tripo3D for fast generation
+- **convert_3d_format**: Preserves geometry, textures, materials, and rigging data during conversion. Essential for pipeline integration, platform compatibility, and format standardization. AI agents should use this when users ask "convert this GLB model to FBX", "change this 3D file to USDZ for AR", or need 3D format conversion for specific platform or software requirements.
+
+Convert 3D models between different file formats
 
 
 ## 💬 Prompt Examples

@@ -35,6 +35,13 @@ No more manually clicking through grid calendars to secure a hot desk for tomorr
 
 
 ## Available Tools (9)
+- **list_bookings**: You can filter by date range.
+
+Lists all bookings in Skedda
+- **list_spaces**: Lists all available spaces
+- **list_users**: Lists all users in the Skedda account
+- **list_venues**: Lists all venues
+- **update_booking**: Updates an existing booking
 - **create_booking**: Requires space ID, user ID, and start/end times.
 
 Creates a new booking
@@ -42,16 +49,9 @@ Creates a new booking
 
 Permanently deletes a booking
 - **get_booking_details**: Retrieves details for a specific booking
-- **list_bookings**: You can filter by date range.
-
-Lists all bookings in Skedda
 - **list_space_categories**: g., "Meeting Rooms", "Desks").
 
 Lists space categories
-- **list_spaces**: Lists all available spaces
-- **list_users**: Lists all users in the Skedda account
-- **list_venues**: Lists all venues
-- **update_booking**: Updates an existing booking
 
 
 ## 💬 Prompt Examples

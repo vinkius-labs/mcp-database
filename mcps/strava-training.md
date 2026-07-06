@@ -37,9 +37,6 @@ Connect **Strava Training** to any AI agent and unlock deep performance analysis
 
 
 ## Available Tools (12)
-- **get_activity**: The activityId is the numeric ID from Strava activity URLs (e.g., strava.com/activities/12345678 → 12345678). Use this for deep analysis of any workout, ride, or run.
-
-Get detailed information about a specific Strava activity
 - **get_activity_laps**: Each lap includes distance, moving time, average speed, elevation gain, and pace. GPS devices and Strava auto-split activities into laps (typically ~1km or ~1mi). Use this to analyze pace consistency, identify fast/slow sections, and compare splits within a single activity.
 
 Get lap/split data for a Strava activity
@@ -73,6 +70,9 @@ Get time-series data streams for a specific segment effort
 - **get_segment_streams**: Useful for previewing a segment's difficulty profile before attempting it. The "types" parameter accepts "distance", "altitude", "grade_smooth". Use this to understand elevation changes and steepness patterns along a segment.
 
 Get time-series data streams for a Strava segment (elevation profile, grade, etc)
+- **get_activity**: The activityId is the numeric ID from Strava activity URLs (e.g., strava.com/activities/12345678 → 12345678). Use this for deep analysis of any workout, ride, or run.
+
+Get detailed information about a specific Strava activity
 
 
 ## 💬 Prompt Examples

@@ -42,9 +42,9 @@ Connect the **Sellsy CRM** API to your AI workflow to unlock conversational over
 - **get_deal**: Get full details of a specific deal (amount, status, pipeline step, company)
 - **list_invoices**: List all invoices (draft, sent, paid, overdue)
 - **get_invoice**: Get full details of a specific invoice (amount, status, due date)
+- **list_activities**: List recent CRM activities (calls, emails, meetings, tasks)
 - **list_estimates**: List all estimates (quotes) sent to prospects
 - **list_items**: List all products and services in the catalog
-- **list_activities**: List recent CRM activities (calls, emails, meetings, tasks)
 
 
 ## 💬 Prompt Examples

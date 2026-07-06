@@ -35,8 +35,6 @@ Forget moving between dashboard views trying to identify where a trace broke dow
 
 
 ## Available Tools (10)
-- **list_tests**: List all test cases in a PractiTest project. PractiTest is an end-to-end test management platform with traceability from requirements to defects. Returns test names, IDs, statuses, custom fields, and traceability links. Uses JSON:API format
-- **get_test**: Get full details of a PractiTest test case including name, description, preconditions, steps, expected results, custom fields, and requirement links
 - **list_sets**: List all test sets in a PractiTest project. Test sets group test instances for execution. Returns set names, statuses, planned/actual dates, and assigned testers
 - **get_set**: Get full details of a PractiTest test set including name, status, instances count, and execution summary
 - **list_instances**: List all test instances in a PractiTest test set. Instances are test-set-specific copies of test cases. Returns instance IDs, test references, and last run statuses
@@ -45,6 +43,8 @@ Forget moving between dashboard views trying to identify where a trace broke dow
 - **list_issues**: List all issues (defects) in a PractiTest project. Returns issue names, statuses, severities, and linked test references
 - **list_custom_fields**: List all custom fields in a PractiTest project. Returns field names, types, applicable entities, and possible values
 - **list_users**: List all users in the PractiTest account. Returns user names, emails, roles, and statuses
+- **list_tests**: List all test cases in a PractiTest project. PractiTest is an end-to-end test management platform with traceability from requirements to defects. Returns test names, IDs, statuses, custom fields, and traceability links. Uses JSON:API format
+- **get_test**: Get full details of a PractiTest test case including name, description, preconditions, steps, expected results, custom fields, and requirement links
 
 
 ## 💬 Prompt Examples

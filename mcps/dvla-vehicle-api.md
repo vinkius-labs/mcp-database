@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire automotive research and vehicle
 
 
 ## Available Tools (6)
-- **get_vehicle_environmental_data**: Get CO2 emissions and fuel type details for a vehicle
-- **check_api_status**: Check if the DVLA Vehicle Enquiry API is operational
 - **get_vehicle_mot_status**: Check the current MOT status and expiry date for a vehicle
 - **get_vehicle_specifications**: Get technical specifications (make, model, engine) for a vehicle
 - **get_vehicle_tax_status**: Check the current tax status and due date for a vehicle
 - **get_vehicle_details**: Get comprehensive details for a UK vehicle by registration number
+- **get_vehicle_environmental_data**: Get CO2 emissions and fuel type details for a vehicle
+- **check_api_status**: Check if the DVLA Vehicle Enquiry API is operational
 
 
 ## 💬 Prompt Examples

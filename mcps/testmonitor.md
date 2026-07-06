@@ -34,17 +34,17 @@ Link up your **TestMonitor** cloud infrastructure with any AI agent to streamlin
 
 
 ## Available Tools (10)
-- **get_test_case_details**: Retrieves full details for a specific TestMonitor test case
 - **get_project_details**: Retrieves details for a specific TestMonitor project
+- **get_test_case_details**: Retrieves full details for a specific TestMonitor test case
+- **list_issues**: Lists all issues (defects) within a project
+- **list_test_runs**: Lists all test runs within a specific project
 - **get_test_run_details**: Retrieves details for a specific TestMonitor test run
 - **list_test_cases**: Lists all test cases within a specific TestMonitor project
-- **list_issues**: Lists all issues (defects) within a project
 - **list_milestones**: Lists all milestones within a project
 - **list_projects**: Project IDs are required for most other tools.
 
 Lists all projects available on the TestMonitor instance
 - **list_requirements**: Lists all requirements for a project
-- **list_test_runs**: Lists all test runs within a specific project
 - **list_account_users**: Lists all users associated with the TestMonitor account
 
 

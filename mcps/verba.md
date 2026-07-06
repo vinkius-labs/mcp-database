@@ -32,6 +32,7 @@ Intertwine the open-source **Verba** (by Weaviate) ecosystem natively into your 
 
 
 ## Available Tools (6)
+- **get_system_config**: Retrieves the current Verba system configuration
 - **add_knowledge_document**: Provide the document content and optional metadata JSON.
 
 Ingests a new document into the Verba knowledge base
@@ -39,7 +40,6 @@ Ingests a new document into the Verba knowledge base
 
 Permanently removes a document from the knowledge base
 - **get_document_details**: Retrieves the full content and metadata of a specific document
-- **get_system_config**: Retrieves the current Verba system configuration
 - **list_knowledge_documents**: Lists all documents indexed in the Verba knowledge base
 - **perform_rag_query**: Returns summarized answers with citations.
 

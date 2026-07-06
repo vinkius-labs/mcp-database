@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire Mexican identity and corporate 
 
 
 ## Available Tools (6)
-- **validate_mex_curp**: Validate a Mexican CURP (identity ID) and retrieve details
 - **validate_mex_rfc**: Validate a Mexican RFC (tax ID) and retrieve details
 - **get_mex_company_details**: Get full details for a Mexican company by ID
 - **get_api_usage**: Get current API usage metadata from Nubarium
 - **search_mex_companies**: Search for companies in Mexico by name
 - **validate_mex_legal_representative**: Verify the legal representative status for an RFC and CURP
+- **validate_mex_curp**: Validate a Mexican CURP (identity ID) and retrieve details
 
 
 ## 💬 Prompt Examples

@@ -24,9 +24,6 @@ Free tier: 150 requests/day. The most widely used recipe API by professional dev
 
 
 ## Available Tools (4)
-- **get_random_recipes**: Perfect for meal inspiration.
-
-Get random recipe suggestions from Spoonacular
 - **get_recipe_details**: Get complete recipe details including ingredients, instructions, and nutrition
 - **find_recipes_by_ingredients**: Enter a comma-separated list of ingredients you have, and get recipe suggestions that maximize usage of your available ingredients.
 
@@ -34,6 +31,9 @@ Find recipes based on ingredients you have available
 - **search_recipes**: Returns recipes with full nutritional breakdown, cooking time, and dietary compatibility. Cuisine options: Italian, Mexican, Chinese, Indian, Japanese, Thai, Mediterranean, etc. Diet options: vegetarian, vegan, gluten-free, ketogenic, paleo, whole30.
 
 Search for recipes with optional filters for cuisine, diet, and nutrition
+- **get_random_recipes**: Perfect for meal inspiration.
+
+Get random recipe suggestions from Spoonacular
 
 
 ## 💬 Prompt Examples

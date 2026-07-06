@@ -34,12 +34,12 @@ Connect to **Bandsintown** and discover live music events worldwide through natu
 
 
 ## Available Tools (7)
-- **get_artist**: Get info for a specific artist
 - **get_artist_by_facebook_id**: Get artist info by Facebook page ID
 - **get_artist_by_id**: Get artist info by Bandsintown ID
 - **get_artist_events**: Use date parameter to filter: "upcoming", "past", "all" or a date range "YYYY-MM-DD,YYYY-MM-DD".
 
 Get upcoming and past events for an artist
+- **get_artist**: Get info for a specific artist
 - **get_artist_events_by_id**: Same as get_artist_events but uses numeric ID instead of name.
 
 Get events for an artist by Bandsintown ID
