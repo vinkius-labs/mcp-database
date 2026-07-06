@@ -38,12 +38,6 @@ No more switching to the Figma app to check comments, find a file key or export 
 
 
 ## Available Tools (16)
-- **get_comment_reactions**: Each reaction includes the emoji, the user who reacted and the creation date.
-
-Get reactions on a Figma comment
-- **get_comments**: Each comment includes the message, author, creation date, position on canvas (client_meta) and resolved status. Use this to review feedback, design discussions and review threads.
-
-Get comments on a Figma file
 - **get_component**: Returns the component name, description, owning file and node ID.
 
 Get a published component by key
@@ -86,6 +80,12 @@ Post a comment on a Figma file
 - **post_comment_reaction**: Provide the file key, comment ID and the emoji character (e.g. "👍", "❤️", "🔥").
 
 Add a reaction to a Figma comment
+- **get_comment_reactions**: Each reaction includes the emoji, the user who reacted and the creation date.
+
+Get reactions on a Figma comment
+- **get_comments**: Each comment includes the message, author, creation date, position on canvas (client_meta) and resolved status. Use this to review feedback, design discussions and review threads.
+
+Get comments on a Figma file
 
 
 ## 💬 Prompt Examples

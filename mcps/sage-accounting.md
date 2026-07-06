@@ -37,7 +37,6 @@ No more manual report exports or multiple dashboard logins. Your AI acts as a de
 
 ## Available Tools (11)
 - **get_sales_invoice**: Get details for a specific sales invoice
-- **list_bank_accounts**: List business bank accounts
 - **list_businesses**: List accessible businesses
 - **list_contacts**: ) in the accounting system.
 
@@ -49,6 +48,7 @@ List customers and suppliers
 - **list_sales_invoices**: List sales invoices
 - **list_services**: List service items
 - **list_tax_rates**: List configured tax rates
+- **list_bank_accounts**: List business bank accounts
 
 
 ## 💬 Prompt Examples

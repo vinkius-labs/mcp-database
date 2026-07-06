@@ -34,10 +34,6 @@ Connect your **Vercel** account to any AI agent and simplify how you manage your
 
 
 ## Available Tools (11)
-- **add_vercel_environment_variable**: Add a new environment variable
-- **create_vercel_deployment**: Create a new deployment
-- **delete_vercel_deployment**: Delete a specific deployment
-- **get_vercel_deployment_info**: Get details for a specific deployment
 - **get_vercel_project_details**: Get details for a specific project
 - **get_vercel_user_profile**: Get current user profile
 - **list_vercel_deployments**: List recent deployments
@@ -45,6 +41,10 @@ Connect your **Vercel** account to any AI agent and simplify how you manage your
 - **list_vercel_project_env_vars**: List environment variables
 - **list_vercel_projects**: List all Vercel projects
 - **list_vercel_teams**: List accessible Vercel teams
+- **add_vercel_environment_variable**: Add a new environment variable
+- **create_vercel_deployment**: Create a new deployment
+- **delete_vercel_deployment**: Delete a specific deployment
+- **get_vercel_deployment_info**: Get details for a specific deployment
 
 
 ## 💬 Prompt Examples

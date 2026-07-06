@@ -35,13 +35,6 @@ Connect your **Typeform** account to any AI agent and simplify how you collect d
 
 
 ## Available Tools (8)
-- **create_webhook**: Requires a unique tag and a destination URL.
-
-Create or update a form webhook
-- **get_form_details**: Essential for understanding the questions asked in a form.
-
-Get details and structure for a specific form
-- **get_workspace_details**: Get details and forms for a workspace
 - **list_forms**: Useful for obtaining form IDs for response retrieval.
 
 List all Typeforms in the account
@@ -55,6 +48,13 @@ List all webhooks for a specific form
 - **list_workspaces**: Workspaces are used to organize collections of forms.
 
 List all Typeform workspaces
+- **create_webhook**: Requires a unique tag and a destination URL.
+
+Create or update a form webhook
+- **get_form_details**: Essential for understanding the questions asked in a form.
+
+Get details and structure for a specific form
+- **get_workspace_details**: Get details and forms for a workspace
 
 
 ## 💬 Prompt Examples

@@ -36,9 +36,6 @@ No more switching to the Pulumi Console to check deployment status or review sta
 
 
 ## Available Tools (11)
-- **create_stack**: A stack is an isolated, independently configurable instance of your Pulumi program. Requires the org name, project name and stack name (e.g. "staging", "prod"). Returns the created stack with its URL.
-
-Create a new Pulumi stack
 - **delete_stack**: The stack must be empty (no resources) or force deletion must be enabled. Provide the org name, project name and stack name. WARNING: this action is irreversible.
 
 Delete a Pulumi stack
@@ -69,6 +66,9 @@ List all stacks in a Pulumi organization
 - **set_stack_tag**: Tags are used for organizing, filtering and managing stacks (e.g. key="environment", value="prod", key="team", value="platform"). Provide the org name, project name, stack name, tag name and tag value.
 
 Set a tag on a Pulumi stack
+- **create_stack**: A stack is an isolated, independently configurable instance of your Pulumi program. Requires the org name, project name and stack name (e.g. "staging", "prod"). Returns the created stack with its URL.
+
+Create a new Pulumi stack
 
 
 ## 💬 Prompt Examples

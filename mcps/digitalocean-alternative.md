@@ -36,13 +36,6 @@ No more manual dashboard navigation or searching for IP addresses. Your AI acts 
 
 
 ## Available Tools (9)
-- **get_account_info**: Useful for verifying resource availability.
-
-Get DigitalOcean account details
-- **get_droplet_details**: Get details for a specific Droplet
-- **list_actions**: Useful for auditing and monitoring changes.
-
-List historical account actions
 - **list_kubernetes_clusters**: Includes information about cluster health, versions, and nodes.
 
 List all Kubernetes clusters
@@ -61,6 +54,13 @@ List snapshots and disk images
 - **list_volumes**: Includes size, region, and current attachment status.
 
 List block storage volumes
+- **get_account_info**: Useful for verifying resource availability.
+
+Get DigitalOcean account details
+- **get_droplet_details**: Get details for a specific Droplet
+- **list_actions**: Useful for auditing and monitoring changes.
+
+List historical account actions
 
 
 ## 💬 Prompt Examples

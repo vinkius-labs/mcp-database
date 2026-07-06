@@ -36,11 +36,6 @@ No more manual scrolling or context switching. Your AI acts as a dedicated socia
 
 
 ## Available Tools (11)
-- **get_post**: Get details for a specific Reddit post
-- **get_subreddit_rules**: Get the rules of a subreddit
-- **get_user_comments**: Get recent comments by a Reddit user
-- **list_trending_subreddits**: List popular and trending subreddits
-- **get_post_comments**: Get the comment thread for a post
 - **get_subreddit_info**: Get metadata for a subreddit
 - **get_user_profile**: Get details for a Reddit user
 - **list_popular_posts**: List trending posts globally
@@ -49,6 +44,11 @@ No more manual scrolling or context switching. Your AI acts as a dedicated socia
 List posts from a subreddit
 - **search_reddit**: Search all of Reddit
 - **search_subreddit**: Search within a specific subreddit
+- **get_post**: Get details for a specific Reddit post
+- **get_subreddit_rules**: Get the rules of a subreddit
+- **get_user_comments**: Get recent comments by a Reddit user
+- **list_trending_subreddits**: List popular and trending subreddits
+- **get_post_comments**: Get the comment thread for a post
 
 
 ## 💬 Prompt Examples

@@ -37,11 +37,9 @@ No more manual status updates or digging through candidates in the ATS. Your AI 
 
 
 ## Available Tools (12)
-- **advance_application**: Move candidate to next stage
 - **create_candidate**: Can include first name, last name, and company.
 
 Add new candidate
-- **get_api_status**: Get account connectivity
 - **get_candidate_details**: Get candidate info
 - **get_job_details**: Get job metadata
 - **list_applications**: List job applications
@@ -53,6 +51,8 @@ Add new candidate
 
 Reject job application
 - **update_candidate**: Modify candidate info
+- **advance_application**: Move candidate to next stage
+- **get_api_status**: Get account connectivity
 
 
 ## 💬 Prompt Examples

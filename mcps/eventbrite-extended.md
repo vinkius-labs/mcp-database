@@ -36,7 +36,6 @@ No more manual status checking or complex navigation through fragmented event da
 
 
 ## Available Tools (12)
-- **list_event_attendees**: List attendees for an event
 - **create_event**: Requires event name, start and end dates, and currency.
 
 Create a new Eventbrite event
@@ -54,6 +53,7 @@ List Eventbrite organizations
 - **list_event_ticket_classes**: List ticket classes for an event
 - **update_event**: Update an existing Eventbrite event
 - **list_organization_venues**: List venues for an organization
+- **list_event_attendees**: List attendees for an event
 
 
 ## 💬 Prompt Examples

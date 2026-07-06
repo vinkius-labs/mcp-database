@@ -36,12 +36,6 @@ No more clicking through the Doppler dashboard to check a secret value or audit 
 
 
 ## Available Tools (12)
-- **change_secrets**: Provide project_slug, config_name and a JSON object mapping secret names to values. For example: {"DATABASE_URL":"postgres://...","API_KEY":"sk-..."}. Existing secrets not included are not modified.
-
-Add or update secrets in a Doppler config
-- **delete_secrets**: Provide project_slug, config_name and comma-separated secret names. WARNING: deleted secrets cannot be recovered. If a secret inherits a value from a parent, it reverts to that value.
-
-Delete secrets from a Doppler config
 - **get_config**: Returns config name, project, root status, associated environment template, creation date and locked status.
 
 Get details for a specific Doppler config
@@ -72,6 +66,12 @@ List all secrets for a Doppler config
 - **list_workspaces**: A workspace is the top-level organizational unit in Doppler that groups projects. Returns workspace name, slug and creation date.
 
 List all Doppler workspaces
+- **change_secrets**: Provide project_slug, config_name and a JSON object mapping secret names to values. For example: {"DATABASE_URL":"postgres://...","API_KEY":"sk-..."}. Existing secrets not included are not modified.
+
+Add or update secrets in a Doppler config
+- **delete_secrets**: Provide project_slug, config_name and comma-separated secret names. WARNING: deleted secrets cannot be recovered. If a secret inherits a value from a parent, it reverts to that value.
+
+Delete secrets from a Doppler config
 
 
 ## 💬 Prompt Examples

@@ -37,10 +37,6 @@ No more manual status updates or missing project gaps. Your AI acts as your dedi
 
 
 ## Available Tools (11)
-- **create_linear_comment**: Add a comment to an issue
-- **create_linear_issue**: Create a new issue
-- **get_linear_issue**: Get details for a specific issue
-- **list_linear_cycles**: List active cycles
 - **list_linear_issues**: List Linear issues
 - **list_linear_labels**: List issue labels
 - **list_linear_projects**: List active projects
@@ -48,6 +44,10 @@ No more manual status updates or missing project gaps. Your AI acts as your dedi
 - **list_linear_users**: List workspace members
 - **check_linear_status**: Check API Status
 - **update_linear_issue**: Update an existing issue
+- **create_linear_comment**: Add a comment to an issue
+- **create_linear_issue**: Create a new issue
+- **get_linear_issue**: Get details for a specific issue
+- **list_linear_cycles**: List active cycles
 
 
 ## 💬 Prompt Examples

@@ -37,6 +37,9 @@ No more tab-switching to check issue status or hunt for the right assignee. Your
 
 
 ## Available Tools (12)
+- **search_issues**: Optionally filter results to a specific team. Returns issues with identifier, title, state, priority, assignee and URL.
+
+Search Linear issues by text
 - **create_comment**: The body supports Linear Markdown format including @mentions and ~~strikethrough~~.
 
 Add a comment to a Linear issue
@@ -59,9 +62,6 @@ List Linear issue labels
 - **list_projects**: Projects group issues across multiple teams. Use optional limit to control how many results to fetch.
 
 List Linear projects
-- **search_issues**: Optionally filter results to a specific team. Returns issues with identifier, title, state, priority, assignee and URL.
-
-Search Linear issues by text
 - **list_teams**: Each team has a unique ID, name, key prefix and optional description. Use this to discover teams before querying their issues or cycles.
 
 List all Linear teams

@@ -37,8 +37,6 @@ No more manual toggling between servers or missed messages in busy channels. You
 
 
 ## Available Tools (10)
-- **get_bot_info**: Get current Discord bot information
-- **send_message**: Send a message to a channel
 - **create_dm_channel**: Returns the DM channel ID.
 
 Create a DM channel with a user
@@ -49,6 +47,8 @@ Create a DM channel with a user
 - **list_guilds**: List Discord servers (guilds)
 - **list_guild_members**: List members in a server
 - **list_messages**: List recent messages in a channel
+- **get_bot_info**: Get current Discord bot information
+- **send_message**: Send a message to a channel
 
 
 ## 💬 Prompt Examples

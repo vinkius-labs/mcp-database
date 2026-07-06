@@ -36,18 +36,18 @@ No more waiting for slow model responses. Your AI acts as a real-time intelligen
 
 
 ## Available Tools (10)
+- **extract_entities**: Extract named entities from text
+- **generate_code**: Generate code snippets from natural language
+- **get_model_details**: Get metadata for a specific model
+- **analyze_sentiment**: Analyze sentiment of a text
+- **summarize_text**: Summarize long text using Llama 3
+- **translate_text**: Translate text between languages
 - **fix_grammar**: Correct grammar and spelling errors
 - **create_chat_completion**: Supports models like llama-3.3-70b-versatile.
 
 Generate a response using Groq LLM
 - **explain_code**: Explain how a code snippet works
-- **extract_entities**: Extract named entities from text
-- **generate_code**: Generate code snippets from natural language
-- **get_model_details**: Get metadata for a specific model
 - **list_available_models**: List all available high-performance models
-- **analyze_sentiment**: Analyze sentiment of a text
-- **summarize_text**: Summarize long text using Llama 3
-- **translate_text**: Translate text between languages
 
 
 ## 💬 Prompt Examples
