@@ -36,10 +36,6 @@ No more manual tagging or hunting for lost files in folders. Your AI acts as a d
 
 
 ## Available Tools (11)
-- **add_comment**: Add a comment to an asset
-- **create_collection**: Create a new collection
-- **delete_collection**: Delete a collection
-- **get_asset**: Get details for a specific asset
 - **get_collection**: Get details for a specific collection
 - **list_assets**: Optionally filter by collection ID.
 
@@ -49,6 +45,10 @@ List all digital assets
 - **list_revisions**: List asset revisions
 - **search_assets**: Search for assets
 - **update_asset**: Update asset metadata
+- **add_comment**: Add a comment to an asset
+- **create_collection**: Create a new collection
+- **delete_collection**: Delete a collection
+- **get_asset**: Get details for a specific asset
 
 
 ## 💬 Prompt Examples

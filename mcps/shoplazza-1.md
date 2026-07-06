@@ -37,9 +37,6 @@ No more manual stock checks or missing order updates. Your AI acts as your dedic
 
 
 ## Available Tools (11)
-- **create_shoplazza_customer**: Create a new customer
-- **create_shoplazza_product**: Create a new product
-- **get_shoplazza_customer**: Get customer details
 - **get_shoplazza_order**: Get order details
 - **get_shoplazza_product**: Get product details
 - **get_shoplazza_shop**: Get shop metadata
@@ -48,6 +45,9 @@ No more manual stock checks or missing order updates. Your AI acts as your dedic
 - **list_shoplazza_orders**: List store orders
 - **list_shoplazza_products**: List store products
 - **check_shoplazza_status**: Check API Status
+- **create_shoplazza_customer**: Create a new customer
+- **create_shoplazza_product**: Create a new product
+- **get_shoplazza_customer**: Get customer details
 
 
 ## 💬 Prompt Examples

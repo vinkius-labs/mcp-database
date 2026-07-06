@@ -26,15 +26,15 @@ Perfect for logistics managers and transportation analysts aiming to extract rep
 
 ## Available Tools (10)
 - **get_address**: Get an address by ID
-- **get_addresses**: List addresses from your Route4Me address book
-- **get_optimizations**: Get an optimization history
 - **get_route**: Get a route by ID
-- **get_routes**: List existing vehicle routes
-- **get_users**: List associated users/drivers
-- **get_vehicles**: List registered vehicles
 - **create_address**: Send details as a stringified JSON object.
 
 Create a new address in Route4Me
+- **get_addresses**: List addresses from your Route4Me address book
+- **get_optimizations**: Get an optimization history
+- **get_routes**: List existing vehicle routes
+- **get_users**: List associated users/drivers
+- **get_vehicles**: List registered vehicles
 - **delete_address**: Delete an address
 - **update_address**: Update an existing address
 

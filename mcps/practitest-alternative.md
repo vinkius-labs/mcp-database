@@ -30,6 +30,13 @@ Empower your AI Agents with full access to your PractiTest workspace. This MCP S
 
 
 ## Available Tools (11)
+- **get_requirement**: Get details of a specific requirement in a PractiTest project
+- **get_test**: Get details of a specific test in a PractiTest project
+- **list_instances**: List instances within a specific PractiTest project
+- **list_projects**: List all PractiTest projects accessible by the API token
+- **list_requirements**: List requirements within a specific PractiTest project
+- **list_runs**: List runs within a specific PractiTest project
+- **list_tests**: List tests within a specific PractiTest project
 - **create_instance**: Provide the data as a JSON string.
 
 Create a new instance in a PractiTest project
@@ -40,13 +47,6 @@ Create a new run in a PractiTest project
 
 Create a new test in a PractiTest project
 - **get_project**: Get details of a specific PractiTest project
-- **get_requirement**: Get details of a specific requirement in a PractiTest project
-- **get_test**: Get details of a specific test in a PractiTest project
-- **list_instances**: List instances within a specific PractiTest project
-- **list_projects**: List all PractiTest projects accessible by the API token
-- **list_requirements**: List requirements within a specific PractiTest project
-- **list_runs**: List runs within a specific PractiTest project
-- **list_tests**: List tests within a specific PractiTest project
 
 
 ## 💬 Prompt Examples

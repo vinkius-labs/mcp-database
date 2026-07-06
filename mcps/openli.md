@@ -36,9 +36,6 @@ No more manual spreadsheet tracking for user consent. Your AI acts as a dedicate
 
 
 ## Available Tools (13)
-- **check_openli_status**: Verify connectivity
-- **create_agreement**: Create an agreement
-- **create_dsar**: Create a DSAR
 - **get_agreement**: Get agreement details
 - **get_consent**: Get consent details
 - **get_dsar**: Get DSAR details
@@ -49,6 +46,9 @@ No more manual spreadsheet tracking for user consent. Your AI acts as a dedicate
 - **list_dsars**: List DSARs
 - **list_vendors**: List vendors
 - **save_consent**: Save consent
+- **check_openli_status**: Verify connectivity
+- **create_agreement**: Create an agreement
+- **create_dsar**: Create a DSAR
 
 
 ## 💬 Prompt Examples

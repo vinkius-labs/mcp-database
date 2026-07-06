@@ -36,9 +36,6 @@ No more manual following up for reviews or missing critical negative feedback. Y
 
 
 ## Available Tools (10)
-- **check_onelocal_status**: Verify OneLocal API connectivity
-- **get_campaign**: Get campaign details
-- **get_location**: Get location details
 - **get_reputation**: Get reputation overview
 - **get_review**: Get review details
 - **list_campaigns**: List all campaigns
@@ -46,6 +43,9 @@ No more manual following up for reviews or missing critical negative feedback. Y
 - **list_referrals**: List all referrals
 - **list_reviews**: List all reviews
 - **request_review**: Request a review
+- **check_onelocal_status**: Verify OneLocal API connectivity
+- **get_campaign**: Get campaign details
+- **get_location**: Get location details
 
 
 ## 💬 Prompt Examples

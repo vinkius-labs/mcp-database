@@ -21,9 +21,6 @@ Connect your **Retable** account to any AI agent and manage your spreadsheet dat
 
 
 ## Available Tools (10)
-- **check_retable_status**: Verify API connectivity
-- **create_record**: Create a new record
-- **delete_record**: Delete a record
 - **get_project**: Get project details
 - **get_record**: Get record details
 - **get_table**: Get table details
@@ -31,6 +28,9 @@ Connect your **Retable** account to any AI agent and manage your spreadsheet dat
 - **list_records**: List records in a table
 - **list_tables**: List tables in a project
 - **update_record**: Update a record
+- **check_retable_status**: Verify API connectivity
+- **create_record**: Create a new record
+- **delete_record**: Delete a record
 
 
 ## 💬 Prompt Examples

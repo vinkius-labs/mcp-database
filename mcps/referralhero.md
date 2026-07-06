@@ -36,8 +36,6 @@ No more manual leaderboard exports or subscriber hunting. Your AI acts as a dedi
 
 
 ## Available Tools (12)
-- **add_points**: Add points to a subscriber
-- **add_subscriber**: Add a new subscriber to a campaign
 - **delete_subscriber**: Remove a subscriber from a campaign
 - **get_leaderboard**: Get campaign leaderboard
 - **get_list**: Get details for a specific campaign
@@ -48,6 +46,8 @@ No more manual leaderboard exports or subscriber hunting. Your AI acts as a dedi
 - **list_transactions**: List recent transactions
 - **track_conversion**: Track a referral conversion event
 - **update_subscriber**: Update an existing subscriber
+- **add_points**: Add points to a subscriber
+- **add_subscriber**: Add a new subscriber to a campaign
 
 
 ## 💬 Prompt Examples

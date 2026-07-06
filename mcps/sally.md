@@ -35,10 +35,6 @@ Connect your **Sally** instance to any AI agent and take full control of your AP
 
 
 ## Available Tools (12)
-- **add_comment**: Comments are visible to all project members.
-
-Add a comment to a task
-- **get_board**: Get the Kanban board view
 - **create_project**: Create a new project
 - **create_task**: Optionally set priority (P1-P4), status, and labels.
 
@@ -55,6 +51,10 @@ List tasks, optionally filtered by project
 - **update_task**: Only provided fields are changed.
 
 Update an existing task
+- **add_comment**: Comments are visible to all project members.
+
+Add a comment to a task
+- **get_board**: Get the Kanban board view
 
 
 ## 💬 Prompt Examples

@@ -36,10 +36,6 @@ No more manual SIREN searching on government portals. Your AI acts as a dedicate
 
 
 ## Available Tools (12)
-- **check_api_health**: fr service API.
-
-Verify Pappers API status
-- **get_api_account_info**: Get Pappers account details
 - **get_french_company_details**: Get details for a French company
 - **get_company_document**: Access legal documents (Articles of Association)
 - **get_establishment_details**: Get details for a specific establishment
@@ -50,6 +46,10 @@ Verify Pappers API status
 - **search_french_companies**: Search for companies in France
 - **search_company_officers**: Search for company directors and managers
 - **search_ultimate_beneficial_owners**: Search for UBOs
+- **check_api_health**: fr service API.
+
+Verify Pappers API status
+- **get_api_account_info**: Get Pappers account details
 
 
 ## 💬 Prompt Examples

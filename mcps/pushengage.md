@@ -37,13 +37,13 @@ No more manual notification drafting or missing campaign gaps. Your AI acts as y
 
 
 ## Available Tools (7)
-- **send_pushengage_broadcast**: Trigger push broadcast
-- **list_pushengage_notifications**: List push notifications
-- **list_pushengage_segments**: List subscriber segments
 - **list_pushengage_sites**: List registered sites
 - **check_pushengage_status**: Check API Status
 - **list_pushengage_subscribers**: List push subscribers
 - **list_pushengage_triggers**: List automation triggers
+- **send_pushengage_broadcast**: Trigger push broadcast
+- **list_pushengage_notifications**: List push notifications
+- **list_pushengage_segments**: List subscriber segments
 
 
 ## 💬 Prompt Examples

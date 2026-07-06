@@ -29,11 +29,6 @@ Ideal for finance teams, sales operations, and account managers needing instant,
 
 
 ## Available Tools (17)
-- **check_paycove_status**: Verify connectivity
-- **convert_quote_to_invoice**: Convert quote to invoice
-- **create_client**: Create a client
-- **create_invoice**: Create an invoice
-- **create_product**: Create a product
 - **create_quote**: Create a quote
 - **get_client**: Get client details
 - **get_invoice**: Get invoice details
@@ -46,6 +41,11 @@ Ideal for finance teams, sales operations, and account managers needing instant,
 - **list_payments**: List payments
 - **list_products**: List products
 - **list_quotes**: List all quotes
+- **check_paycove_status**: Verify connectivity
+- **convert_quote_to_invoice**: Convert quote to invoice
+- **create_client**: Create a client
+- **create_invoice**: Create an invoice
+- **create_product**: Create a product
 
 
 ## 💬 Prompt Examples

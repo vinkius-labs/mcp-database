@@ -30,11 +30,6 @@ Perfect for financial controllers, accountants, and businesses operating in Saud
 
 
 ## Available Tools (20)
-- **check_simplefatoora_status**: Verify connectivity
-- **create_credit_note**: Create credit note
-- **create_customer**: Create a customer
-- **create_debit_note**: Create debit note
-- **create_product**: Create a product
 - **create_simplified_purchase**: Create simplified purchase invoice
 - **create_simplified_invoice**: Create B2C invoice
 - **create_standard_purchase**: Create standard purchase invoice
@@ -50,6 +45,11 @@ Perfect for financial controllers, accountants, and businesses operating in Saud
 - **update_customer**: Update a customer
 - **update_product**: Update a product
 - **validate_api_key**: Validate API key
+- **check_simplefatoora_status**: Verify connectivity
+- **create_credit_note**: Create credit note
+- **create_customer**: Create a customer
+- **create_debit_note**: Create debit note
+- **create_product**: Create a product
 
 
 ## 💬 Prompt Examples

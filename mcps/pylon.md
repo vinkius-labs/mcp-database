@@ -36,9 +36,6 @@ No more manual issue tracking or switching between support channels. Your AI act
 
 
 ## Available Tools (11)
-- **create_issue**: Pass data as a JSON string.
-
-Create a new issue
 - **get_account**: Get details for a specific customer account
 - **get_issue_messages**: Retrieve messages for an issue
 - **get_issue**: Get details for a specific support issue
@@ -49,6 +46,9 @@ Create a new issue
 - **list_tags**: List all available issue tags
 - **reply_to_issue**: Send a reply to an issue
 - **update_issue**: Update a support issue
+- **create_issue**: Pass data as a JSON string.
+
+Create a new issue
 
 
 ## 💬 Prompt Examples

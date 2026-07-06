@@ -36,6 +36,11 @@ No more manual status checking or template hunting. Your AI acts as a dedicated 
 
 
 ## Available Tools (10)
+- **list_ingested_sources**: List all ingested media sources
+- **list_templates**: List available video templates
+- **render_video**: Returns a render ID.
+
+Start a new video render job
 - **create_video_template**: Save an edit as a reusable template
 - **get_hosted_asset_details**: Get details for a hosted file
 - **get_render_status**: Check the status of a render job
@@ -45,11 +50,6 @@ No more manual status checking or template hunting. Your AI acts as a dedicated 
 Find all files created by a specific render
 - **list_hosted_assets**: List all hosted media files
 - **list_recent_renders**: List recent render history
-- **list_ingested_sources**: List all ingested media sources
-- **list_templates**: List available video templates
-- **render_video**: Returns a render ID.
-
-Start a new video render job
 
 
 ## 💬 Prompt Examples

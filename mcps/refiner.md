@@ -35,7 +35,6 @@ Connect your **Refiner** customer feedback account to any AI agent and simplify 
 
 
 ## Available Tools (8)
-- **list_refiner_contacts**: List product contacts
 - **get_refiner_contact**: Get contact details
 - **identify_refiner_user**: Identify or update user
 - **list_refiner_responses**: List survey responses
@@ -43,6 +42,7 @@ Connect your **Refiner** customer feedback account to any AI agent and simplify 
 - **check_refiner_status**: Check API Status
 - **list_refiner_surveys**: List feedback surveys
 - **track_refiner_event**: Track user event
+- **list_refiner_contacts**: List product contacts
 
 
 ## 💬 Prompt Examples
