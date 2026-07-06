@@ -44,9 +44,6 @@ No more manual 3D modeling or expensive artist time. Your AI acts as a dedicated
 
 
 ## Available Tools (12)
-- **generate_crm_3d**: CRM is effective for objects with complex shapes and detailed surfaces. Accepts image URLs and returns 3D models with geometry and texture. Essential for complex object reconstruction, detailed asset creation, and applications needing accurate shape recovery. AI agents should reference this when users ask "reconstruct this object in 3D", "create a detailed 3D from this complex image", or need geometry-focused 3D generation.
-
-Generate 3D models using Canvas Reconstruction Model (CRM)
 - **generate_era3d_3d**: Era3D is ideal for product visualization, architectural elements, and objects that need to look correct from any angle. Accepts image URLs and returns detailed 3D models. Essential for product showcase, e-commerce 3D previews, and applications requiring viewpoint consistency. AI agents should reference this when users ask "create a 3D model that looks good from all angles", "generate a product 3D model", or need viewpoint-consistent 3D generation.
 
 Generate multi-view consistent 3D models from images using Era3D
@@ -80,6 +77,9 @@ Generate 3D models from images using TripoSR, optimized for speed
 - **generate_unique3d_3d**: Unique3D is useful when creative variation is desired or when exploring different 3D interpretations of a 2D image. Accepts image URLs and returns 3D models with creative geometry. Essential for creative 3D exploration, design variation generation, and applications benefiting from diverse 3D interpretations. AI agents should reference this when users ask "create different 3D variations of this image", "generate creative 3D interpretations", or need diverse 3D outputs from a single reference image.
 
 Generate unique 3D models with diverse geometry from images
+- **generate_crm_3d**: CRM is effective for objects with complex shapes and detailed surfaces. Accepts image URLs and returns 3D models with geometry and texture. Essential for complex object reconstruction, detailed asset creation, and applications needing accurate shape recovery. AI agents should reference this when users ask "reconstruct this object in 3D", "create a detailed 3D from this complex image", or need geometry-focused 3D generation.
+
+Generate 3D models using Canvas Reconstruction Model (CRM)
 
 
 ## 💬 Prompt Examples

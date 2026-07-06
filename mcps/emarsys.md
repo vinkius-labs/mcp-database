@@ -33,8 +33,6 @@ Integrate **Emarsys**, the comprehensive customer engagement platform, directly 
 
 
 ## Available Tools (10)
-- **get_emarsys_account_metadata**: Retrieve metadata and settings for your Emarsys account
-- **get_campaign_details**: Get detailed settings and status for a specific email campaign
 - **get_contact_list_details**: Get detailed settings for a specific contact list
 - **quick_engagement_volume_audit**: Retrieve a high-level summary of campaigns, lists, and automation programs
 - **list_automation_programs**: List all automation programs and workflows
@@ -43,6 +41,8 @@ Integrate **Emarsys**, the comprehensive customer engagement platform, directly 
 - **list_trigger_events**: List all external events used for triggering automation programs
 - **list_registration_forms**: List all subscription and registration forms
 - **list_audience_segments**: List all audience segments (filters) in your account
+- **get_emarsys_account_metadata**: Retrieve metadata and settings for your Emarsys account
+- **get_campaign_details**: Get detailed settings and status for a specific email campaign
 
 
 ## 💬 Prompt Examples

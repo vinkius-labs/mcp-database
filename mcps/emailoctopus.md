@@ -33,7 +33,6 @@ Integrate **EmailOctopus**, the affordable and powerful email marketing platform
 
 
 ## Available Tools (10)
-- **get_campaign_performance_summary**: Get a summary of performance metrics for a specific campaign
 - **get_campaign_details**: Get detailed settings for a specific email campaign
 - **get_contact_profile**: Get full profile and history for a specific contact
 - **get_list_details**: unsubscribed counts and organizational markers.
@@ -45,6 +44,7 @@ Get detailed settings and subscriber counts for a specific list
 - **list_list_contacts**: List all contacts within a specific marketing list
 - **list_successfully_sent_campaigns**: Identify campaigns that have already been sent to subscribers
 - **search_contacts_by_email**: Search for a contact within a list using their email address
+- **get_campaign_performance_summary**: Get a summary of performance metrics for a specific campaign
 
 
 ## 💬 Prompt Examples

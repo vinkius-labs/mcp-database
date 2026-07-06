@@ -35,7 +35,6 @@ Connect your **Fathom Analytics** account to any AI agent and take full control 
 
 
 ## Available Tools (12)
-- **get_account_info**: Get Fathom Analytics account information
 - **get_current_visitors**: Get the number of current visitors on a site
 - **get_device_stats**: Get device type aggregations for a site
 - **get_event**: Get details for a specific event
@@ -47,6 +46,7 @@ Connect your **Fathom Analytics** account to any AI agent and take full control 
 - **get_visitors**: Get visitor aggregations for a site
 - **list_events**: List custom events for a specific site
 - **list_sites**: List all sites in your Fathom Analytics account
+- **get_account_info**: Get Fathom Analytics account information
 
 
 ## 💬 Prompt Examples

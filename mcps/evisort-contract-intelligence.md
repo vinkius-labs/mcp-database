@@ -33,16 +33,16 @@ Integrate **Evisort**, the AI-powered contract management and intelligence platf
 
 
 ## Available Tools (10)
-- **get_evisort_account_metadata**: Retrieve metadata and limits for your Evisort account
-- **get_document_detailed_intelligence**: Get detailed settings and AI-extracted data for a specific contract
-- **list_upcoming_contract_expirations**: Retrieve a list of contracts that are approaching their expiration date
-- **quick_contract_portfolio_audit**: Retrieve a high-level summary of documents, workflows, and alerts
 - **list_contract_documents**: List all contract documents in your Evisort account
 - **list_previously_expired_contracts**: Identify contracts that have already reached their expiration date
 - **list_document_library_folders**: List all folders and directories in your contract library
 - **list_high_monetary_value_contracts**: Identify contracts with a monetary value above a specific threshold (mock logic)
 - **list_contract_provisions**: List all AI-extracted provisions and clauses for a specific document
 - **list_contract_workflows**: List all contract approval and review workflows
+- **get_evisort_account_metadata**: Retrieve metadata and limits for your Evisort account
+- **get_document_detailed_intelligence**: Get detailed settings and AI-extracted data for a specific contract
+- **list_upcoming_contract_expirations**: Retrieve a list of contracts that are approaching their expiration date
+- **quick_contract_portfolio_audit**: Retrieve a high-level summary of documents, workflows, and alerts
 
 
 ## 💬 Prompt Examples

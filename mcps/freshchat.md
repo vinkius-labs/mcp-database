@@ -36,7 +36,6 @@ Connect your **Freshchat** account to any AI agent to automate your customer mes
 
 
 ## Available Tools (12)
-- **check_account_status**: Verify account configuration
 - **get_agent_profile**: Get agent metadata
 - **get_conversation_details**: Get chat metadata
 - **get_chat_user_details**: Get user metadata
@@ -48,6 +47,7 @@ Connect your **Freshchat** account to any AI agent to automate your customer mes
 - **list_chat_users**: List chat participants
 - **search_chat_users**: Find user by email
 - **send_chat_message**: Post a new message
+- **check_account_status**: Verify account configuration
 
 
 ## 💬 Prompt Examples

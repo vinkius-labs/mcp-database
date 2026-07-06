@@ -36,9 +36,6 @@ Connect your **GoCardless** merchant account to any AI agent to automate your di
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Check connection
-- **create_new_payment**: Initiate a collection
-- **get_account_details**: Get account identity
 - **get_customer_details**: Get customer metadata
 - **get_mandate_status**: Check mandate details
 - **get_payment_details**: Get payment metadata
@@ -48,6 +45,9 @@ Connect your **GoCardless** merchant account to any AI agent to automate your di
 - **list_merchant_payouts**: List bank payouts
 - **list_payment_refunds**: List reversed payments
 - **list_recurring_subscriptions**: List recurring plans
+- **verify_api_connection**: Check connection
+- **create_new_payment**: Initiate a collection
+- **get_account_details**: Get account identity
 
 
 ## 💬 Prompt Examples

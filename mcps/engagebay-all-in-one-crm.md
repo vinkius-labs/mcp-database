@@ -33,8 +33,6 @@ Integrate **EngageBay**, the all-in-one marketing, sales, and service CRM, direc
 
 
 ## Available Tools (10)
-- **get_engagebay_account_metadata**: Retrieve metadata and limits for your EngageBay account
-- **get_contact_profile**: Get detailed profile and interaction history for a specific contact
 - **get_deal_details**: Get detailed settings and status for a specific sales deal
 - **quick_crm_volume_audit**: Retrieve a high-level summary of contacts, deals, and tasks
 - **list_crm_companies**: List all companies/organizations in your CRM
@@ -43,6 +41,8 @@ Integrate **EngageBay**, the all-in-one marketing, sales, and service CRM, direc
 - **list_latest_sales_opportunities**: Identify the most recently created or updated sales deals
 - **list_crm_tasks**: List all CRM tasks and follow-ups
 - **list_successfully_closed_deals**: Identify deals that have reached the "Won" or "Closed" stage
+- **get_engagebay_account_metadata**: Retrieve metadata and limits for your EngageBay account
+- **get_contact_profile**: Get detailed profile and interaction history for a specific contact
 
 
 ## 💬 Prompt Examples

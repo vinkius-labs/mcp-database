@@ -37,9 +37,6 @@ Connect your **Geocodio** account to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
-- **batch_enriched_geocode**: Inspect deep internal arrays mitigating specific Timezone pipelines
-- **batch_geocode_addresses**: Identify precise active arrays spanning native Location geometries
-- **batch_enriched_reverse**: Dispatch an automated validation check routing explicit Census models
 - **batch_reverse_pins**: Retrieve the exact structural matching verifying Delivery alternatives
 - **format_coordinate_string**: Provision a highly-available JSON Payload parsing accessible strings
 - **geocode_us_address**: Identify bounded routing spaces inside the Headless Geocodio US/CA maps
@@ -47,6 +44,9 @@ Connect your **Geocodio** account to any AI agent and take full control of your 
 - **list_schema_fields**: Irreversibly vaporize explicit validations extracting rich schema
 - **reverse_geocode**: Retrieve explicit Cloud logging tracing explicit US/Canada coordinates
 - **reverse_enriched_fields**: Enumerate explicitly attached structured rules exporting active Districts
+- **batch_enriched_geocode**: Inspect deep internal arrays mitigating specific Timezone pipelines
+- **batch_geocode_addresses**: Identify precise active arrays spanning native Location geometries
+- **batch_enriched_reverse**: Dispatch an automated validation check routing explicit Census models
 
 
 ## 💬 Prompt Examples

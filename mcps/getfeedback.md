@@ -36,7 +36,6 @@ Connect your **GetFeedback** account to any AI agent to automate your customer f
 
 
 ## Available Tools (12)
-- **check_api_limits**: Verify connectivity
 - **verify_api_connection**: Check connection
 - **get_my_identity**: Get user identity
 - **get_response_details**: Get response metadata
@@ -48,6 +47,7 @@ Connect your **GetFeedback** account to any AI agent to automate your customer f
 - **list_survey_responses**: List feedback data
 - **list_surveys**: List all surveys
 - **send_survey_invites**: Trigger survey email
+- **check_api_limits**: Verify connectivity
 
 
 ## 💬 Prompt Examples

@@ -37,15 +37,15 @@ Connect your **Chattermill** account to any AI agent and take full control of yo
 
 
 ## Available Tools (11)
+- **get_chattermill_project**: Use list_chattermill_projects first if the project ID is unknown.
+
+Get details of a specific Chattermill project by its ID
 - **submit_feedback_response**: Requires the project_key plus comment text. Optionally supply score, data_source, and data_type keys from their respective list endpoints.
 
 Submit a new feedback response to a Chattermill project
 - **get_chattermill_metric**: Valid metric_type values: nps, average_score, net_sentiment, volume. Supports optional date range filtering with UNIX timestamps.
 
 Retrieve a calculated metric (NPS, CSAT, sentiment, volume) for a project
-- **get_chattermill_project**: Use list_chattermill_projects first if the project ID is unknown.
-
-Get details of a specific Chattermill project by its ID
 - **get_response_details**: Returns the comment, score, metadata, and applied themes.
 
 Get detailed information for a single feedback response

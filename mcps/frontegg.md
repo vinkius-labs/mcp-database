@@ -35,10 +35,6 @@ Connect your **Frontegg** environment to any AI agent to automate your B2B SaaS 
 
 
 ## Available Tools (12)
-- **create_tenant**: Create a new tenant
-- **create_user**: Provision a user
-- **delete_tenant**: Delete a tenant
-- **delete_user**: Remove a user
 - **check_environment_status**: Verify API connection
 - **get_tenant_details**: Get tenant metadata
 - **get_user_details**: Get user metadata
@@ -49,6 +45,10 @@ Connect your **Frontegg** environment to any AI agent to automate your B2B SaaS 
 List roles
 - **list_tenants**: List all tenants/accounts
 - **list_users**: List users globally
+- **create_tenant**: Create a new tenant
+- **create_user**: Provision a user
+- **delete_tenant**: Delete a tenant
+- **delete_user**: Remove a user
 
 
 ## 💬 Prompt Examples

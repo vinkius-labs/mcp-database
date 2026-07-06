@@ -33,16 +33,16 @@ Integrate **DevCycle**, the modern feature flag and experimentation platform, di
 
 
 ## Available Tools (10)
-- **get_environment_sdk_keys**: List SDK keys for all environments in a project
 - **get_feature_flag_details**: Get full configuration and targeting rules for a specific feature flag
-- **get_project_details**: Get detailed information for a specific DevCycle project
 - **list_active_flags**: Identify feature flags that are currently active
 - **list_project_environments**: List all environments (e.g. Production, Staging) for a project
 - **list_devcycle_projects**: List all projects in your DevCycle account
-- **list_feature_variables**: List all variables defined in a project
+- **get_project_details**: Get detailed information for a specific DevCycle project
 - **list_feature_flags**: g. release, ops), and current statuses.
 
 List all feature flags within a specific project
+- **get_environment_sdk_keys**: List SDK keys for all environments in a project
+- **list_feature_variables**: List all variables defined in a project
 - **search_feature_flags**: Search for feature flags in a project by keyword
 - **update_feature_flag_status**: Update the status (e.g. active, archived) of a feature flag
 

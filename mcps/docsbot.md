@@ -33,8 +33,8 @@ Integrate **DocsBot**, the AI-powered knowledge base platform, directly into you
 
 
 ## Available Tools (10)
-- **ask_bot_question**: Ask a technical question to a specific DocsBot and retrieve an AI-generated answer
 - **get_docsbot_account_metadata**: Retrieve metadata for the current authenticated user
+- **ask_bot_question**: Ask a technical question to a specific DocsBot and retrieve an AI-generated answer
 - **get_bot_knowledge_summary**: Retrieve a high-level summary of the knowledge base size and source count
 - **get_bot_details**: Get detailed settings and information for a specific bot
 - **list_recently_indexed_bots**: Identify bots that have had their knowledge base updated recently (mock logic)

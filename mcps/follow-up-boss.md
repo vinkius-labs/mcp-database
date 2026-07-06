@@ -36,8 +36,6 @@ Connect your **Follow Up Boss** (FUB) account to any AI agent to automate your r
 
 
 ## Available Tools (12)
-- **add_note**: Add a note to a contact
-- **create_person**: Create a new contact
 - **create_task**: Add a new task
 - **get_deal**: Get deal details
 - **get_person**: Get contact details
@@ -48,6 +46,8 @@ Connect your **Follow Up Boss** (FUB) account to any AI agent to automate your r
 - **list_smart_lists**: List smart filters (Smart Lists)
 - **list_tasks**: List follow-up tasks
 - **list_crm_users**: List team members
+- **add_note**: Add a note to a contact
+- **create_person**: Create a new contact
 
 
 ## 💬 Prompt Examples

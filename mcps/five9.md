@@ -39,7 +39,6 @@ Connect your **Five9** account to any AI agent and automate your contact center 
 - **get_agent_state**: Get specific agent state
 - **get_statistics**: Get real-time statistics
 - **list_active_interactions**: List active interactions
-- **list_agent_groups**: List agent groups
 - **list_agent_states**: List all agent states
 - **list_campaigns**: List all campaigns
 - **list_skills**: List all skills
@@ -49,6 +48,7 @@ Connect your **Five9** account to any AI agent and automate your contact center 
 - **update_agent_state**: g., READY, NOT_READY, LOGOUT).
 
 Force update agent state
+- **list_agent_groups**: List agent groups
 
 
 ## 💬 Prompt Examples

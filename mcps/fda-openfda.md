@@ -35,10 +35,6 @@ Connect to the **openFDA** public database through any AI agent and gain instant
 
 
 ## Available Tools (12)
-- **get_drug_shortages**: Get current and resolved drug shortages
-- **get_usage**: Get current API usage and rate limit info
-- **search_device_adverse_events**: Search for adverse event reports for medical devices
-- **search_device_classification**: Search for medical device classifications
 - **search_device_enforcement**: Search for medical device recall enforcement reports
 - **search_drug_adverse_events**: Search for adverse event reports for drugs
 - **search_drug_approvals**: Search for FDA-approved brand name and generic drugs
@@ -47,6 +43,10 @@ Connect to the **openFDA** public database through any AI agent and gain instant
 - **search_food_adverse_events**: Search for adverse event reports for foods
 - **search_food_enforcement**: Search for food recall enforcement reports
 - **search_ndc**: Search the National Drug Code directory
+- **get_drug_shortages**: Get current and resolved drug shortages
+- **get_usage**: Get current API usage and rate limit info
+- **search_device_adverse_events**: Search for adverse event reports for medical devices
+- **search_device_classification**: Search for medical device classifications
 
 
 ## 💬 Prompt Examples

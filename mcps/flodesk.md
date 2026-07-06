@@ -38,7 +38,6 @@ Connect your **Flodesk** account to any AI agent and automate your email marketi
 ## Available Tools (12)
 - **add_to_segment**: Add subscriber to segment
 - **trigger_workflow**: Start workflow for user
-- **create_custom_field**: Create custom field
 - **create_subscriber**: Add a subscriber
 - **get_account_details**: Get account info
 - **get_subscriber**: Get subscriber details
@@ -48,6 +47,7 @@ Connect your **Flodesk** account to any AI agent and automate your email marketi
 - **list_subscribers**: List email subscribers
 - **list_workflows**: List automation workflows
 - **unsubscribe_subscriber**: Unsubscribe a user
+- **create_custom_field**: Create custom field
 
 
 ## 💬 Prompt Examples
