@@ -35,7 +35,6 @@ Connect your **Freshteam** account to any AI agent to automate your HR operation
 
 
 ## Available Tools (12)
-- **create_employee_record**: Create an employee
 - **check_hris_status**: Verify API connection
 - **get_applicant_details**: Get candidate profile
 - **get_employee_details**: Get employee metadata
@@ -47,6 +46,7 @@ Connect your **Freshteam** account to any AI agent to automate your HR operation
 - **list_job_postings**: List active job openings
 - **list_job_roles**: List job roles
 - **list_time_off_requests**: List leave requests
+- **create_employee_record**: Create an employee
 
 
 ## 💬 Prompt Examples

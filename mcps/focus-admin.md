@@ -33,7 +33,6 @@ Connect **Focus Admin** to any AI agent and access advanced fiscal management to
 
 
 ## Available Tools (10)
-- **send_cc_e**: Send a Correction Letter (CC-e) for NF-e
 - **cancel_cc_e**: Cancel a previously sent CC-e
 - **distribute_dfe**: Distribute DF-e documents (consult NSU)
 - **download_nfe_danfe**: Download NF-e DANFE PDF
@@ -43,6 +42,7 @@ Connect **Focus Admin** to any AI agent and access advanced fiscal management to
 - **list_nfse_emitted**: List NFS-e emitted by the company
 - **list_nfse_received**: List NFS-e received (tomadas) by the company
 - **list_nfe_by_period**: List NF-e documents by period
+- **send_cc_e**: Send a Correction Letter (CC-e) for NF-e
 
 
 ## 💬 Prompt Examples

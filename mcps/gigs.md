@@ -36,7 +36,6 @@ Connect your **Gigs** telecom-as-a-service account to any AI agent to automate y
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Check connection
 - **create_mobile_subscription**: Start new plan
 - **create_telecom_user**: Add new user
 - **get_account_details**: Get account identity
@@ -48,6 +47,7 @@ Connect your **Gigs** telecom-as-a-service account to any AI agent to automate y
 - **list_connectivity_sims**: List SIM cards
 - **list_mobile_subscriptions**: List all subscriptions
 - **list_connectivity_users**: List telecom users
+- **verify_api_connection**: Check connection
 
 
 ## 💬 Prompt Examples

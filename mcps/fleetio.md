@@ -35,10 +35,6 @@ Connect your **Fleetio** account to any AI agent and automate your fleet managem
 
 
 ## Available Tools (12)
-- **create_issue**: Report a new issue
-- **create_meter_entry**: Add vehicle meter reading
-- **get_issue**: Get issue details
-- **get_service_reminder**: Get reminder details
 - **get_vehicle**: Get vehicle details
 - **list_contacts**: List fleet contacts
 - **list_fuel_entries**: List fuel entries
@@ -47,6 +43,10 @@ Connect your **Fleetio** account to any AI agent and automate your fleet managem
 - **list_vehicles**: List all vehicles
 - **list_vendors**: List fleet vendors
 - **list_work_orders**: List work orders
+- **create_issue**: Report a new issue
+- **create_meter_entry**: Add vehicle meter reading
+- **get_issue**: Get issue details
+- **get_service_reminder**: Get reminder details
 
 
 ## 💬 Prompt Examples

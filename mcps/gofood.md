@@ -37,10 +37,6 @@ No more juggling between multiple dashboards to check order status or update men
 
 
 ## Available Tools (12)
-- **accept_order**: Accept a pending GoFood order
-- **cancel_order**: Cancel a GoFood order
-- **create_promo**: Create a new promo for a GoFood outlet
-- **get_catalog**: Get the full menu catalog for a GoFood outlet
 - **get_outlet_info**: Get details for a specific GoFood outlet
 - **link_outlet**: Link a GoFood outlet to the integration
 - **list_linked_outlets**: List all linked GoFood outlets
@@ -49,6 +45,10 @@ No more juggling between multiple dashboards to check order status or update men
 - **unlink_outlet**: Unlink a GoFood outlet from the integration
 - **update_catalog**: Update the menu catalog for a GoFood outlet
 - **update_menu_stocks**: Update menu item stock levels for a GoFood outlet
+- **accept_order**: Accept a pending GoFood order
+- **cancel_order**: Cancel a GoFood order
+- **create_promo**: Create a new promo for a GoFood outlet
+- **get_catalog**: Get the full menu catalog for a GoFood outlet
 
 
 ## 💬 Prompt Examples

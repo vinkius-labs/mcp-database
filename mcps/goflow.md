@@ -36,10 +36,6 @@ No more jumping between browser tabs to check if a specific SKU is in stock or i
 
 
 ## Available Tools (12)
-- **get_customer**: Get detailed info for a specific customer
-- **get_inventory**: Check stock levels in Goflow
-- **get_order**: Get details for a specific Goflow order
-- **get_store_stats**: Get a summary of recent store activity
 - **list_customers**: List customer records from Goflow
 - **list_listings**: List marketplace listings (Amazon, Walmart, etc.)
 - **list_orders**: List Goflow orders
@@ -48,6 +44,10 @@ No more jumping between browser tabs to check if a specific SKU is in stock or i
 - **list_shipments**: List shipments and tracking info
 - **list_webhooks**: List active webhooks in Goflow
 - **update_inventory**: Adjust inventory stock levels
+- **get_customer**: Get detailed info for a specific customer
+- **get_inventory**: Check stock levels in Goflow
+- **get_order**: Get details for a specific Goflow order
+- **get_store_stats**: Get a summary of recent store activity
 
 
 ## 💬 Prompt Examples

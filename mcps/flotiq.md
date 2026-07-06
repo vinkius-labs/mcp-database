@@ -37,9 +37,6 @@ Connect your **Flotiq** account to any AI agent and take full control of your AP
 
 
 ## Available Tools (10)
-- **create_cms_object**: Provision a highly-available JSON Payload writing models natively
-- **wipe_cms_object**: Irreversibly vaporize explicit App nodes dropping live Database bytes
-- **get_content_details**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
 - **get_content_type_schema**: Retrieve the exact structural matching verifying Delivery Model blocks
 - **get_tenant_limits**: Identify precise active arrays spanning rented Identity limits
 - **list_content_objects**: Identify bounded routing spaces inside the Headless Flotiq CMS
@@ -47,6 +44,9 @@ Connect your **Flotiq** account to any AI agent and take full control of your AP
 - **list_all_content_types**: Enumerate explicitly attached structured rules exporting active Type vectors
 - **search_global_content**: Inspect deep internal arrays mitigating specific Picture constraints
 - **patch_cms_object**: Mutate global Web CRM boundaries substituting Attributes safely
+- **create_cms_object**: Provision a highly-available JSON Payload writing models natively
+- **wipe_cms_object**: Irreversibly vaporize explicit App nodes dropping live Database bytes
+- **get_content_details**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
 
 
 ## 💬 Prompt Examples

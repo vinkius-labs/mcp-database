@@ -30,18 +30,18 @@ Connect your **Fountain** account to any AI agent to automate your high-volume h
 
 
 ## Available Tools (12)
-- **get_account_details**: Get organization attributes
-- **get_applicant**: Get applicant details
-- **get_opening_details**: Get opening metadata
 - **list_applicant_notes**: Get applicant discussion
 - **list_applicants**: List job applicants
 - **list_funnels**: List hiring funnels
 - **list_hiring_goals**: List hiring targets
 - **list_interview_sessions**: List scheduled interviews
 - **list_job_posts**: List published job posts
-- **list_openings**: List active job openings
 - **list_funnel_stages**: List stages in a funnel
 - **list_workers**: List hired workers
+- **get_account_details**: Get organization attributes
+- **get_applicant**: Get applicant details
+- **get_opening_details**: Get opening metadata
+- **list_openings**: List active job openings
 
 
 ## 💬 Prompt Examples

@@ -35,16 +35,16 @@ Connect your **Fairing** (formerly EnquireLabs) account to any AI agent and take
 
 
 ## Available Tools (12)
-- **list_responses**: List all survey responses
 - **list_surveys**: List all Fairing surveys
-- **get_account_info**: Get Fairing account information
-- **get_customer_responses**: Get all survey responses for a specific customer
 - **get_insights**: Get aggregated survey insights
 - **get_me**: Get current API token identity
 - **get_question**: Get details for a specific survey question
 - **get_response**: Get details for a specific survey response
 - **get_survey_details**: Get details for a specific survey
 - **list_customers**: List customers who have interacted with surveys
+- **list_responses**: List all survey responses
+- **get_account_info**: Get Fairing account information
+- **get_customer_responses**: Get all survey responses for a specific customer
 - **list_integrations**: List active Fairing integrations
 - **list_questions**: List all Fairing survey questions
 

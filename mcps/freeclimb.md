@@ -36,7 +36,6 @@ Connect your **FreeClimb** account to any AI agent to automate your telecommunic
 
 
 ## Available Tools (12)
-- **get_account_status**: Check account and balance
 - **get_application_details**: Get app metadata
 - **get_call_details**: Get call metadata
 - **get_sms_details**: Get message metadata
@@ -48,6 +47,7 @@ Connect your **FreeClimb** account to any AI agent to automate your telecommunic
 - **list_sms_messages**: List sent/received SMS
 - **make_call**: Place a phone call
 - **send_sms**: Send an SMS message
+- **get_account_status**: Check account and balance
 
 
 ## 💬 Prompt Examples

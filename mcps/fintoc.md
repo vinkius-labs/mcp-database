@@ -36,10 +36,6 @@ Connect your **Fintoc** account to any AI agent and automate your open banking a
 
 
 ## Available Tools (12)
-- **create_payment_intent**: Create a payment intent
-- **get_account**: Get account details
-- **get_link**: Get link details
-- **get_movement**: Get movement details
 - **get_payment_intent**: Get payment intent details
 - **get_subscription**: Get subscription details
 - **list_accounts**: List accounts for a link
@@ -48,6 +44,10 @@ Connect your **Fintoc** account to any AI agent and automate your open banking a
 - **list_movements**: List movements for an account
 - **list_payment_intents**: List payment intents
 - **list_subscriptions**: List subscriptions
+- **create_payment_intent**: Create a payment intent
+- **get_account**: Get account details
+- **get_link**: Get link details
+- **get_movement**: Get movement details
 
 
 ## 💬 Prompt Examples

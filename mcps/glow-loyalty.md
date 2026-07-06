@@ -36,12 +36,6 @@ Connect your **Glow Loyalty** (Shopify) account to any AI agent to automate your
 
 
 ## Available Tools (12)
-- **gift_points_to_member**: Gift bonus points
-- **adjust_member_points**: Use positive numbers to add, negative to subtract.
-
-Add/remove points
-- **verify_api_connection**: Check connection
-- **get_reward_spec**: Check reward points
 - **find_loyalty_member**: Search member
 - **get_program_details**: Get account identity
 - **get_member_balance**: Check member points
@@ -50,6 +44,12 @@ Add/remove points
 - **list_new_members**: List latest signups
 - **list_available_rewards**: List reward options
 - **redeem_loyalty_reward**: Redeem a reward
+- **gift_points_to_member**: Gift bonus points
+- **adjust_member_points**: Use positive numbers to add, negative to subtract.
+
+Add/remove points
+- **verify_api_connection**: Check connection
+- **get_reward_spec**: Check reward points
 
 
 ## 💬 Prompt Examples

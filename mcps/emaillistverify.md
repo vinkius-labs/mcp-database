@@ -33,7 +33,6 @@ Integrate **EmailListVerify**, the powerful bulk email verification platform, di
 
 
 ## Available Tools (9)
-- **get_emaillistverify_metadata**: Retrieve metadata and settings for your EmailListVerify account
 - **get_remaining_credits**: Retrieve the number of remaining verification credits in your account
 - **get_verification_job_status**: invalid addresses.
 
@@ -44,6 +43,7 @@ Get the current status and results summary for a specific bulk verification job
 - **list_latest_verification_jobs**: Identify the most recently uploaded email verification files
 - **list_verification_jobs**: List all bulk email verification files/jobs in your account
 - **verify_single_email**: Verify a single email address for deliverability
+- **get_emaillistverify_metadata**: Retrieve metadata and settings for your EmailListVerify account
 
 
 ## 💬 Prompt Examples

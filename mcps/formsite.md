@@ -35,14 +35,14 @@ Connect your **Formsite** account to any AI agent to automate your form results 
 
 
 ## Available Tools (8)
+- **list_forms**: List all forms
+- **list_results**: List form results
+- **list_webhooks**: List form webhooks
 - **create_webhook**: Create a new webhook
 - **delete_webhook**: Remove a webhook
 - **get_form_details**: Get form metadata
 - **get_form_reports**: Get form reports
 - **list_form_items**: List form fields
-- **list_forms**: List all forms
-- **list_results**: List form results
-- **list_webhooks**: List form webhooks
 
 
 ## 💬 Prompt Examples

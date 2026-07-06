@@ -28,15 +28,15 @@ Traders, fund managers, economic journalists, central bank watchers, and macro s
 - **list_releases**: Each release contains multiple series.
 
 List all FRED economic data releases
-- **get_release**: Use release IDs like 10 (Employment Situation), 53 (GDP), 46 (CPI).
-
-Get details for a specific FRED release
 - **get_release_dates**: Without release_id, returns dates for all releases (great for economic calendar). With release_id, returns dates for a specific release.
 
 Get release dates for economic data
 - **get_release_series**: For example, release 10 (Employment Situation) contains UNRATE, PAYEMS, and hundreds more.
 
 Get all series within a FRED release
+- **get_release**: Use release IDs like 10 (Employment Situation), 53 (GDP), 46 (CPI).
+
+Get details for a specific FRED release
 
 
 ## 💬 Prompt Examples
