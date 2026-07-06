@@ -33,7 +33,6 @@ Connect your **ThingsBoard** instance to any AI agent to orchestrate your IoT in
 
 
 ## Available Tools (7)
-- **find_alarms**: Search alarms with severity and status filters
 - **find_entities**: Search entities with complex filters
 - **get_telemetry**: Read latest telemetry values for an entity
 - **save_attributes**: g., SERVER_SCOPE, SHARED_SCOPE) for an entity.
@@ -44,6 +43,7 @@ Save attributes for an entity
 Save time series telemetry data for an entity
 - **send_oneway_rpc**: Send a one-way RPC command to a device
 - **send_twoway_rpc**: Send a two-way RPC command to a device
+- **find_alarms**: Search alarms with severity and status filters
 
 
 ## 💬 Prompt Examples

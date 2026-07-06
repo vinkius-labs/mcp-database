@@ -34,8 +34,6 @@ Connect your **Semaphore CI/CD** account to any AI agent and take full control o
 
 
 ## Available Tools (36)
-- **activate_deployment_target**: Activate a deployment target
-- **configure_artifact_retention**: Configure artifact retention policies
 - **create_agent_type**: Create a self-hosted agent type
 - **create_deployment_target**: Create a deployment target
 - **deactivate_deployment_target**: Deactivate a deployment target
@@ -70,6 +68,8 @@ Connect your **Semaphore CI/CD** account to any AI agent and take full control o
 - **update_agent_type**: Update a self-hosted agent type
 - **update_deployment_target**: Update a deployment target
 - **validate_yaml**: Validate a Semaphore pipeline YAML definition
+- **activate_deployment_target**: Activate a deployment target
+- **configure_artifact_retention**: Configure artifact retention policies
 
 
 ## 💬 Prompt Examples

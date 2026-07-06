@@ -34,7 +34,6 @@ Connect your **Veryfi** account to any AI agent and automate document data extra
 
 
 ## Available Tools (57)
-- **delete_bank_statements**: Delete a bank_statements
 - **delete_business_cards**: Delete a business_cards
 - **delete_checks**: Delete a checks
 - **delete_contracts**: Delete a contracts
@@ -91,6 +90,7 @@ Connect your **Veryfi** account to any AI agent and automate document data extra
 - **list_webhooks**: Get configured webhooks
 - **process_any_document**: Process any unstructured document using a blueprint
 - **reset_client_keys**: Regenerate all API keys
+- **delete_bank_statements**: Delete a bank_statements
 
 
 ## 💬 Prompt Examples

@@ -34,8 +34,6 @@ Connect your **Rewardful** account to any AI agent to automate your affiliate ma
 
 
 ## Available Tools (24)
-- **create_affiliate_coupon**: Create a new affiliate coupon
-- **create_affiliate_link**: Create a new affiliate link
 - **create_affiliate**: Create a new Rewardful affiliate
 - **create_campaign**: Create a new Rewardful campaign
 - **delete_commission**: Delete a commission
@@ -58,6 +56,8 @@ Connect your **Rewardful** account to any AI agent to automate your affiliate ma
 - **update_affiliate**: Update an existing Rewardful affiliate
 - **update_campaign**: Update an existing Rewardful campaign
 - **update_commission**: Update a commission
+- **create_affiliate_coupon**: Create a new affiliate coupon
+- **create_affiliate_link**: Create a new affiliate link
 
 
 ## 💬 Prompt Examples

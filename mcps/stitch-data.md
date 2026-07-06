@@ -34,9 +34,6 @@ Connect your **Stitch Data** account to any AI agent to orchestrate your ETL wor
 
 
 ## Available Tools (21)
-- **create_account**: Requires partner credentials.
-
-Create a new Stitch client account (Partners only)
 - **create_destination**: Configure a destination for an account
 - **create_ephemeral_session**: Generate a temporary token for the Connect JavaScript client
 - **create_source**: Create a new data source
@@ -67,6 +64,9 @@ Push data for one or more tables to the Import API
 - **validate_import_data**: Used for testing credentials and request formatting.
 
 Validate data format and credentials without persisting data
+- **create_account**: Requires partner credentials.
+
+Create a new Stitch client account (Partners only)
 
 
 ## 💬 Prompt Examples

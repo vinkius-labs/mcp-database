@@ -34,11 +34,6 @@ Connect to **Rev AI** to transform your audio and video files into actionable te
 
 
 ## Available Tools (19)
-- **delete_stt_job**: Only allowed for completed or failed jobs.
-
-Permanently delete job data
-- **delete_vocabulary**: Delete a custom vocabulary
-- **get_alignment_result**: Get aligned timestamps for a forced alignment job
 - **get_captions**: Get captions for a completed job
 - **get_language_id_result**: Get top language and confidence scores for a job
 - **get_sentiment_analysis_result**: Get sentiment scores for a job
@@ -55,6 +50,11 @@ Permanently delete job data
 - **submit_stt_job**: Submit a media file for asynchronous transcription
 - **submit_topic_extraction_job**: Submit a transcript for topic extraction
 - **submit_vocabulary**: Submit a custom vocabulary
+- **delete_stt_job**: Only allowed for completed or failed jobs.
+
+Permanently delete job data
+- **delete_vocabulary**: Delete a custom vocabulary
+- **get_alignment_result**: Get aligned timestamps for a forced alignment job
 
 
 ## 💬 Prompt Examples

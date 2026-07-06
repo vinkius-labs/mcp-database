@@ -34,13 +34,13 @@ Connect your **Rippling** account to any AI agent to streamline HR and employee 
 
 
 ## Available Tools (7)
-- **create_department**: Create a new department
-- **get_company**: Retrieve details for a specific company
 - **get_employee**: Retrieve details for a specific employee
 - **list_companies**: Retrieve information about the company
-- **list_departments**: List all departments
 - **list_employees**: Retrieve a list of all employees in the company
 - **update_employee**: Update employee information
+- **create_department**: Create a new department
+- **get_company**: Retrieve details for a specific company
+- **list_departments**: List all departments
 
 
 ## 💬 Prompt Examples

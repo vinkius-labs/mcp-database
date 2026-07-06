@@ -29,12 +29,6 @@ No more jumping between tabs to check stock levels, assembly statuses, or custom
 
 
 ## Available Tools (43)
-- **list_accounts**: List financial accounts
-- **list_assemblies**: List assemblies
-- **list_attribute_sets**: List attribute sets
-- **list_boms**: List Bill of Materials
-- **get_company**: Get company information
-- **create_assembly**: Create a new assembly
 - **create_customer**: Create a new customer
 - **create_product**: Create a new product
 - **create_purchase_order**: Create a new purchase order
@@ -72,6 +66,12 @@ No more jumping between tabs to check stock levels, assembly statuses, or custom
 - **list_unit_of_measures**: List unit of measures
 - **list_warehouse_stock_transfers**: List warehouse stock transfers
 - **list_warehouses**: List warehouses
+- **list_accounts**: List financial accounts
+- **list_assemblies**: List assemblies
+- **list_attribute_sets**: List attribute sets
+- **list_boms**: List Bill of Materials
+- **get_company**: Get company information
+- **create_assembly**: Create a new assembly
 
 
 ## 💬 Prompt Examples

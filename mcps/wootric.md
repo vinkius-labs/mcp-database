@@ -33,10 +33,6 @@ Connect **Wootric** to your AI agent to streamline your customer experience work
 
 
 ## Available Tools (22)
-- **update_project**: Update a project
-- **update_response**: Update a response
-- **update_tag**: Update a tag
-- **create_decline**: Create a decline for an end user
 - **create_end_user**: Create a new end user
 - **create_import**: Create an import
 - **create_project**: Create a project
@@ -55,6 +51,10 @@ Connect **Wootric** to your AI agent to streamline your customer experience work
 - **list_tags**: Get all tags
 - **onboard_cxi**: Onboard account for CXI features
 - **update_end_user**: Update an end user
+- **update_project**: Update a project
+- **update_response**: Update a response
+- **update_tag**: Update a tag
+- **create_decline**: Create a decline for an end user
 
 
 ## 💬 Prompt Examples

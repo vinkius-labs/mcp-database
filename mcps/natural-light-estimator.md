@@ -28,8 +28,8 @@ The system synthesizes these calculations using `generateRoomSpecificationReport
 
 
 ## Available Tools (3)
-- **classify_lighting**: Classify a lux level into dark, dim, adequate, or bright category
 - **estimate_light_level**: Estimate natural light level in a room based on window area, room area, and latitude
+- **classify_lighting**: Classify a lux level into dark, dim, adequate, or bright category
 - **recommend_improvements**: Recommend improvements for a given lighting category
 
 

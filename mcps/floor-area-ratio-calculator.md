@@ -28,15 +28,15 @@ By chaining these tools, your agent can perform a complete, multi-faceted feasib
 
 
 ## Available Tools (3)
+- **calculate_permeability**: Takes lot area, minimum permeability percentage, and optionally a building footprint area.
+
+Calculate minimum permeable area required and available buildable ground after accounting for green space requirements
 - **max_site_coverage**: Takes plot area and maximum site coverage percentage as inputs.
 
 Calculate the maximum allowable ground footprint area for building construction based on site coverage limits
 - **max_total_area**: Takes plot area, FAR percentage, and optionally a site coverage footprint area.
 
 Calculate the maximum total floor area allowed on a plot based on Floor Area Ratio restrictions
-- **calculate_permeability**: Takes lot area, minimum permeability percentage, and optionally a building footprint area.
-
-Calculate minimum permeable area required and available buildable ground after accounting for green space requirements
 
 
 ## 💬 Prompt Examples

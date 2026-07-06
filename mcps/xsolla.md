@@ -34,7 +34,24 @@ Connect your **Xsolla** merchant account to any AI agent to streamline your gami
 
 
 ## Available Tools (30)
+- **create_order**: Requires User JWT.
+
+Create an order for an item
+- **get_bundles**: Get bundles
+- **get_events**: Get events
+- **get_payment_accounts**: Get user payment accounts
 - **get_promotions_admin**: Get promotions (Admin)
+- **invalidate_token**: Invalidate a Pay Station token
+- **register_user_oauth**: 0 protocol.
+
+Register a new user (OAuth 2.0)
+- **register_user**: Register a new user
+- **search_transactions**: Search transactions
+- **update_subscription_plan**: Update a subscription plan
+- **update_virtual_item_admin**: Update a virtual item (Admin)
+- **verify_promo_code**: Requires User JWT.
+
+Verify a promo code
 - **get_social_login_url**: Get social login URL
 - **get_subscription_plans**: Get subscription plans
 - **get_transaction_details**: Get transaction details
@@ -49,18 +66,11 @@ Get user cart
 Get user profile
 - **activate_promotion**: Activate a promotion
 - **get_user_subscription**: Get user subscription
-- **create_order**: Requires User JWT.
-
-Create an order for an item
 - **get_virtual_items**: Get virtual items
-- **invalidate_token**: Invalidate a Pay Station token
 - **create_payment**: Create a payment using a saved account
 - **create_subscription_plan**: Create a subscription plan
 - **create_token**: Create a Pay Station token
 - **create_virtual_item_admin**: Create a virtual item (Admin)
-- **get_bundles**: Get bundles
-- **get_events**: Get events
-- **get_payment_accounts**: Get user payment accounts
 - **link_account**: Requires User JWT.
 
 Link user account
@@ -70,16 +80,6 @@ Link user account
 
 Redeem a coupon
 - **refund_transaction**: Refund a transaction
-- **register_user_oauth**: 0 protocol.
-
-Register a new user (OAuth 2.0)
-- **register_user**: Register a new user
-- **search_transactions**: Search transactions
-- **update_subscription_plan**: Update a subscription plan
-- **update_virtual_item_admin**: Update a virtual item (Admin)
-- **verify_promo_code**: Requires User JWT.
-
-Verify a promo code
 
 
 ## 💬 Prompt Examples

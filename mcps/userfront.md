@@ -34,10 +34,6 @@ Connect your **Userfront** workspace to your AI agent to streamline identity man
 
 
 ## Available Tools (40)
-- **create_api_key**: Create a new API key
-- **create_child_tenant**: Create a child tenant
-- **create_custom_jwt**: Create a custom JWT access token for a user
-- **create_or_update_user**: Create or update a user
 - **create_role**: Create a new role
 - **create_tenant_role**: Create a role (tenant level)
 - **create_tenant**: Create a new tenant
@@ -76,6 +72,10 @@ Search users within a tenant
 - **update_tenant**: Update a tenant
 - **update_user**: Update a user record
 - **verify_api_key**: Verify an API key
+- **create_api_key**: Create a new API key
+- **create_child_tenant**: Create a child tenant
+- **create_custom_jwt**: Create a custom JWT access token for a user
+- **create_or_update_user**: Create or update a user
 
 
 ## 💬 Prompt Examples

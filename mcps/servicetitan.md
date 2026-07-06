@@ -34,8 +34,6 @@ Connect your **ServiceTitan** account to any AI agent to streamline your field s
 
 
 ## Available Tools (9)
-- **create_inventory_adjustment**: Adjust stock levels in ServiceTitan
-- **create_customer**: Create a new customer in ServiceTitan
 - **create_payment**: Record a payment in ServiceTitan
 - **list_customers**: List customers in ServiceTitan
 - **list_invoices**: List invoices in ServiceTitan
@@ -43,6 +41,8 @@ Connect your **ServiceTitan** account to any AI agent to streamline your field s
 - **list_locations**: List locations in ServiceTitan
 - **list_skus**: List inventory items (SKUs) in ServiceTitan
 - **update_appointment**: Update appointment status in ServiceTitan
+- **create_inventory_adjustment**: Adjust stock levels in ServiceTitan
+- **create_customer**: Create a new customer in ServiceTitan
 
 
 ## 💬 Prompt Examples

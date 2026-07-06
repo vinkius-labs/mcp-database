@@ -37,7 +37,6 @@ No more jumping between mobile apps to check if you left the lights on or to tri
 
 
 ## Available Tools (13)
-- **list_apps**: List all SmartApps
 - **create_room**: Create a new room in a SmartThings location
 - **execute_device_command**: g., switch on/off, set level).
 
@@ -54,6 +53,7 @@ List all SmartThings locations
 - **list_rooms**: List all rooms in a SmartThings location
 - **list_scenes**: List all SmartThings scenes
 - **list_subscriptions**: Manage event subscriptions for SmartApps
+- **list_apps**: List all SmartApps
 
 
 ## 💬 Prompt Examples

@@ -34,15 +34,15 @@ Connect your **Zyte API** account to any AI agent to bypass anti-bot measures an
 
 
 ## Available Tools (3)
+- **get_stats**: Requires ZYTE_DASHBOARD_API_KEY to be configured.
+
+Get Zyte API usage stats
 - **extract_data**: Uses POST under the hood but acts as a read query.
 
 Extract web data using Zyte API
 - **search_data**: Uses POST under the hood but acts as a read query.
 
 Search engine results via Zyte API
-- **get_stats**: Requires ZYTE_DASHBOARD_API_KEY to be configured.
-
-Get Zyte API usage stats
 
 
 ## 💬 Prompt Examples

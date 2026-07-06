@@ -32,7 +32,6 @@ Connect **Sensible** to your AI agent to seamlessly extract structured data from
 
 
 ## Available Tools (37)
-- **classify_async**: Classify a document into one of the document types asynchronously
 - **classify_sync**: Classify a document into one of the document types synchronously
 - **create_configuration**: Create a new configuration for a document type
 - **create_document_type**: Create a new document type
@@ -71,6 +70,7 @@ Extract data from a document synchronously
 - **update_configuration**: Update a configuration
 - **update_document_type**: Update a document type
 - **update_golden**: Update reference document metadata
+- **classify_async**: Classify a document into one of the document types asynchronously
 
 
 ## 💬 Prompt Examples

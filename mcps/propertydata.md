@@ -34,11 +34,6 @@ Connect **PropertyData** to your AI agent to unlock professional-grade UK real e
 
 
 ## Available Tools (68)
-- **account_credits**: API account credits used/remaining
-- **account_documents**: Summary of previous document purchases
-- **address_match_uprn**: Match an address to its closest UPRN
-- **agents**: Local estate agent market share
-- **analyse_buildings**: Analyse buildings on a title plot
 - **aonb**: Check if a location is within an AONB
 - **area_type**: Determine area type (e.g., rural or urban)
 - **build_cost**: Calculate building costs for construction
@@ -90,11 +85,11 @@ Connect **PropertyData** to your AI agent to unlock professional-grade UK real e
 - **stamp_duty_calculator**: SDLT payable on a property transaction
 - **tenure_types**: ONS breakdown of local property stock by tenure
 - **title**: Address, type, and ownership information by title number
-- **titles_by_company**: Search land titles by company ownership
 - **title_use_class**: Predicted planning use class
+- **titles_by_company**: Search land titles by company ownership
 - **uprn**: Property information from UPRN
-- **uprns**: Find UPRNs in a given postcode area
 - **uprn_title**: Lookup a title number from a UPRN
+- **uprns**: Find UPRNs in a given postcode area
 - **valuation_commercial_rent**: Rental valuation for a commercial property
 - **valuation_commercial_sale**: Sale valuation for a commercial property
 - **valuation_historical**: Estimate the value of a property on a date in the past
@@ -102,6 +97,11 @@ Connect **PropertyData** to your AI agent to unlock professional-grade UK real e
 - **valuation_rent**: Rental valuation for a property
 - **valuation_sale**: Sale valuation for a property
 - **yields**: Determine local rental yields
+- **account_credits**: API account credits used/remaining
+- **account_documents**: Summary of previous document purchases
+- **address_match_uprn**: Match an address to its closest UPRN
+- **agents**: Local estate agent market share
+- **analyse_buildings**: Analyse buildings on a title plot
 
 
 ## 💬 Prompt Examples

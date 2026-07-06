@@ -14,15 +14,15 @@ Calculate Customer Lifetime Value (LTV) for any acquisition cohort, projecting f
 
 
 ## Available Tools (3)
+- **generate_ltv_projections**: Historical metrics must be provided as a JSON array of objects with periodIndex and accumulatedRevenueValue fields.
+
+Project LTV at 36 months using linear and logarithmic extrapolation methods
 - **calculate_cumulative_ltv**: Milestones are specified as months after acquisition.
 
 Calculate total accumulated LTV at fixed milestones for a cohort
 - **fetch_cohort_metrics**: Use acquireMonth in YYYY-MM format and optionally specify how many months of history to retrieve.
 
 Fetch raw accumulated monthly revenues for a given acquisition cohort
-- **generate_ltv_projections**: Historical metrics must be provided as a JSON array of objects with periodIndex and accumulatedRevenueValue fields.
-
-Project LTV at 36 months using linear and logarithmic extrapolation methods
 
 
 ## 💬 Prompt Examples

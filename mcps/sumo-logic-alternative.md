@@ -36,10 +36,6 @@ No more switching between dashboards to find that one error log. Your AI acts as
 
 
 ## Available Tools (19)
-- **create_hosted_collector**: Create a new Hosted Collector
-- **create_search_job**: Returns a SEARCH_JOB_ID which must be polled for status.
-
-Create an asynchronous log search job
 - **create_source**: Create a new Source within a Collector
 - **create_user**: Create a new user
 - **delete_collector**: Delete a Collector
@@ -53,10 +49,14 @@ Create an asynchronous log search job
 - **get_search_job_status**: Poll the status of a search job
 - **get_source**: Get details for a specific Source
 - **list_collectors**: List all Installed and Hosted Collectors
-- **list_sources**: List all Sources within a specific Collector
 - **list_users**: List all users in the organization
 - **update_collector**: Update an existing Collector
 - **update_source**: Update an existing Source
+- **create_hosted_collector**: Create a new Hosted Collector
+- **create_search_job**: Returns a SEARCH_JOB_ID which must be polled for status.
+
+Create an asynchronous log search job
+- **list_sources**: List all Sources within a specific Collector
 
 
 ## 💬 Prompt Examples
