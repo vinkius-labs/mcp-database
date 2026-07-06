@@ -40,12 +40,12 @@ Connect your **Kaseya VSA 10** instance to your AI agent for comprehensive IT ma
 List all managed agents (devices) in Kaseya
 - **list_alarms**: List active system alarms
 - **list_assets**: List managed assets
-- **list_groups**: List all machine groups
-- **list_audit_logs**: List recent audit logs
 - **list_organizations**: List all organizations in Kaseya
 - **list_scripts**: List agent scripts
 - **get_system_info**: Get VSA 10 system information
 - **list_workflows**: List automation workflows
+- **list_audit_logs**: List recent audit logs
+- **list_groups**: List all machine groups
 
 
 ## 💬 Prompt Examples

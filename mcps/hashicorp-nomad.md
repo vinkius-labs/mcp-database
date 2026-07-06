@@ -37,10 +37,10 @@ Connect your **HashiCorp Nomad** cluster to your AI agent and take control of yo
 ## Available Tools (10)
 - **fail_deployment**: Mark a deployment as failed
 - **get_allocation**: Get specific allocation details
+- **list_allocations**: List all task allocations
 - **get_deployment**: Get specific deployment details
 - **get_job**: Get specific job details
 - **get_node**: Get specific node info
-- **list_allocations**: List all task allocations
 - **list_deployments**: List recent deployments
 - **list_jobs**: List all Nomad jobs
 - **list_nodes**: List all client nodes

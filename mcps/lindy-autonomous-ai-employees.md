@@ -40,11 +40,11 @@ Connect your **Lindy.ai** account to any AI agent and take full control of your 
 - **get_lindy**: Get configuration mappings including standard tools and prompts for a specific Lindy
 - **list_integrations**: List bounded third-party app connections securely connected (e.g Slack, Gmail)
 - **list_runs**: List recent runs validating the full execution graph isolating active Lindy instances
-- **list_lindies**: List all custom autonomous AI Assistants (Lindies) built on the workspace
 - **get_run_logs**: Dump literal LLM reasoning logs isolating a specific run loop
 - **trigger_lindy**: Trigger a Lindy to start an asynchronous task run parsing a JSON payload
 - **list_triggers**: List how autonomous AI agents are woken up (Cron, Webhook, API)
 - **list_workspaces**: List all explicit organizational boundaries structuring isolated Teams
+- **list_lindies**: List all custom autonomous AI Assistants (Lindies) built on the workspace
 
 
 ## 💬 Prompt Examples

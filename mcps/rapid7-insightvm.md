@@ -34,9 +34,6 @@ Connect your **Rapid7 InsightVM** (formerly Nexpose) platform directly to your A
 
 
 ## Available Tools (10)
-- **get_asset**: Retrieves detailed information for a specific asset
-- **get_asset_vulnerabilities**: Lists all vulnerabilities found on a specific asset
-- **get_scan**: Retrieves execution status and results for a specific scan
 - **get_site**: Retrieves details for a specific network site
 - **get_vulnerability**: Retrieves details for a specific vulnerability ID
 - **list_assets**: Lists all discovered computing assets
@@ -44,6 +41,9 @@ Connect your **Rapid7 InsightVM** (formerly Nexpose) platform directly to your A
 - **list_sites**: Lists all configured network scan sites
 - **list_vulnerabilities**: Lists global vulnerability definitions
 - **trigger_scan**: Forces an immediate vulnerability scan for a site
+- **get_asset**: Retrieves detailed information for a specific asset
+- **get_asset_vulnerabilities**: Lists all vulnerabilities found on a specific asset
+- **get_scan**: Retrieves execution status and results for a specific scan
 
 
 ## 💬 Prompt Examples

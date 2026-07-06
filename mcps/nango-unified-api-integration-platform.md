@@ -35,10 +35,10 @@ Connect your **Nango** account to any AI agent and take full control of your pro
 
 
 ## Available Tools (7)
+- **get_connection**: Get exact metadata extracting details mapped to a specific Nango connection
 - **list_integrations**: List integration logic configurations available in Nango
 - **get_integration**: Retrieve explicit parameters mapping a single target Nango integration
 - **list_connections**: List instantiated OAuth or credential connections authenticated via Nango
-- **get_connection**: Get exact metadata extracting details mapped to a specific Nango connection
 - **list_syncs**: List history or current synchronization status mapped to a connection
 - **list_records**: List actual data records synchronized matching a connected provider mapping
 - **get_environment**: Retrieve literal environment runtime mapping logic bounds representing the active Nango instance

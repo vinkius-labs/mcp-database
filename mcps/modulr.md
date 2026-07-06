@@ -30,17 +30,17 @@ The **Modulr MCP Server** wraps incredibly defensive digital signatures (HMAC SH
 
 
 ## Available Tools (7)
-- **modulr_create_account**: g. GBP or EUR).
-
-Instantiate a UK/EU Account under a specific Customer
 - **modulr_create_beneficiary**: , or IBAN.
 
 Map an external Recipient
 - **modulr_create_payment**: Trigger an outgoing Faster Payment or SEPA payout
-- **modulr_get_accounts**: List all live Accounts and mapped liquidity
 - **modulr_get_customers**: List underlying legal customers/entities inside Modulr
 - **modulr_get_transactions**: Audit transaction histories on a specific Account
 - **modulr_list_payments**: Check the status of massive payment arrays
+- **modulr_create_account**: g. GBP or EUR).
+
+Instantiate a UK/EU Account under a specific Customer
+- **modulr_get_accounts**: List all live Accounts and mapped liquidity
 
 
 ## 💬 Prompt Examples

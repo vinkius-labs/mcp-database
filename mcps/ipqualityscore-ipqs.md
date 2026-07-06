@@ -14,15 +14,6 @@ Empower your AI agents to protect your platform with IPQualityScore (IPQS). This
 
 
 ## Available Tools (10)
-- **email_lookup**: Returns a risk score and validation flags. Use this to vet new user registrations and prevent fraudulent accounts.
-
-Analyzes an email address for fraud and deliverability
-- **get_account**: Use to verify plan status and current configuration.
-
-Retrieves details about your IPQS account
-- **get_credits**: Essential for ensuring the service remains active and within quota.
-
-Retrieves credit usage and balance information
 - **ip_lookup**: Returns fraud scores, proxy/VPN detection results, and geographical data. Essential for identifying malicious users or automated bots during sign-up or transaction processes.
 
 Analyzes an IP address for fraud and proxy detection
@@ -44,6 +35,15 @@ Analyzes a phone number for fraud and risk
 - **url_lookup**: Returns a risk score and classification of the site. Use this to audit suspicious links provided by users or found in communication.
 
 Analyzes a URL for malicious activity
+- **email_lookup**: Returns a risk score and validation flags. Use this to vet new user registrations and prevent fraudulent accounts.
+
+Analyzes an email address for fraud and deliverability
+- **get_account**: Use to verify plan status and current configuration.
+
+Retrieves details about your IPQS account
+- **get_credits**: Essential for ensuring the service remains active and within quota.
+
+Retrieves credit usage and balance information
 
 
 ## 💬 Prompt Examples

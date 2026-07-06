@@ -37,9 +37,6 @@ No more manual exporting of CSVs or jumping between store tabs. Your AI assistan
 
 
 ## Available Tools (10)
-- **get_my_profile**: Get information about your Gumroad user profile
-- **get_product**: Get detailed information about a specific product
-- **get_sale**: Get detailed information about a specific sale
 - **list_payers**: List customers who have purchased from you
 - **list_payouts**: List your Gumroad payouts history
 - **list_products**: List all products in your Gumroad account
@@ -47,6 +44,9 @@ No more manual exporting of CSVs or jumping between store tabs. Your AI assistan
 - **list_subscribers**: List all subscribers to your products or newsletters
 - **refund_sale**: Refund a specific sale
 - **verify_license**: Verify a license key for a specific product
+- **get_my_profile**: Get information about your Gumroad user profile
+- **get_product**: Get detailed information about a specific product
+- **get_sale**: Get detailed information about a specific sale
 
 
 ## 💬 Prompt Examples

@@ -34,18 +34,18 @@ Connect your **Kibo Commerce** account to any AI agent to automate your enterpri
 
 
 ## Available Tools (10)
-- **list_categories**: List all catalog categories
-- **list_customers**: List all customer accounts
-- **get_location_details**: Get details for a specific location
-- **get_order_details**: Get details for a specific order
-- **get_product_details**: Get details for a specific product
 - **get_inventory_status**: Get real-time inventory for a product
-- **list_locations**: List all inventory locations (stores/warehouses)
 - **list_orders**: List all commerce orders
 - **list_products**: Use this to explore your inventory and item metadata.
 
 List all products in the Kibo catalog
 - **get_site_settings**: Get platform site settings
+- **list_categories**: List all catalog categories
+- **list_customers**: List all customer accounts
+- **get_location_details**: Get details for a specific location
+- **get_order_details**: Get details for a specific order
+- **get_product_details**: Get details for a specific product
+- **list_locations**: List all inventory locations (stores/warehouses)
 
 
 ## 💬 Prompt Examples

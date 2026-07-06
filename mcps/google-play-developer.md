@@ -34,8 +34,6 @@ Connect your **Google Play Developer** account to your AI agent and streamline y
 
 
 ## Available Tools (12)
-- **acknowledge_product_purchase**: Acknowledge a product purchase
-- **cancel_subscription**: Cancel a user subscription
 - **consume_product_purchase**: Consume a product purchase
 - **defer_subscription**: Defer a subscription billing date
 - **get_inapp_product**: Get details for a specific in-app product
@@ -46,6 +44,8 @@ Connect your **Google Play Developer** account to your AI agent and streamline y
 - **list_reviews**: List recent user reviews for the app
 - **refund_subscription**: Refund a subscription
 - **reply_to_review**: Reply to a user review
+- **acknowledge_product_purchase**: Acknowledge a product purchase
+- **cancel_subscription**: Cancel a user subscription
 
 
 ## 💬 Prompt Examples

@@ -23,6 +23,15 @@ Retrieves details about your Kandji organization
 - **list_activity**: Essential for auditing system changes and recent management history.
 
 Lists recent management activity
+- **list_devices**: Returns device names, IDs, and OS versions. Use this as the main tool for auditing the device fleet.
+
+Lists all managed Apple devices in Kandji
+- **list_parameters**: Useful for auditing available security controls.
+
+Lists all library parameters (policies)
+- **list_users**: Useful for identifying device owners and primary users.
+
+Lists all users associated with devices
 - **list_auto_apps**: Essential for auditing standard software libraries.
 
 Lists all Kandji Auto Apps
@@ -35,15 +44,6 @@ Lists recent MDM commands sent to devices
 - **list_custom_apps**: Useful for auditing non-store software deployments.
 
 Lists all custom applications
-- **list_devices**: Returns device names, IDs, and OS versions. Use this as the main tool for auditing the device fleet.
-
-Lists all managed Apple devices in Kandji
-- **list_parameters**: Useful for auditing available security controls.
-
-Lists all library parameters (policies)
-- **list_users**: Useful for identifying device owners and primary users.
-
-Lists all users associated with devices
 
 
 ## 💬 Prompt Examples

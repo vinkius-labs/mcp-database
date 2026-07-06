@@ -34,16 +34,16 @@ Connect your **Paystack** account to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
+- **list_subscriptions**: List all subscriptions
+- **list_transactions**: List Paystack transactions
+- **list_transfers**: List all transfers
+- **verify_transaction**: Verify a transaction status
 - **get_customer**: Get specific customer details
 - **get_subscription**: Get specific subscription details
 - **get_transaction**: Get details for a specific transaction
 - **list_customers**: List all customers
 - **list_plans**: List all payment plans
 - **list_refunds**: List all refunds
-- **list_subscriptions**: List all subscriptions
-- **list_transactions**: List Paystack transactions
-- **list_transfers**: List all transfers
-- **verify_transaction**: Verify a transaction status
 
 
 ## 💬 Prompt Examples

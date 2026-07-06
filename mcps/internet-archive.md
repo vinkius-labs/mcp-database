@@ -43,12 +43,6 @@ The Internet Archive is a non-profit library providing universal access to all k
 
 
 ## Available Tools (10)
-- **search_by_collection**: Common collections: "prelinger" (Prelinger Archives), "fedflix" (Federal government films), "gutenberg" (Project Gutenberg ebooks), "opensource_movies" (community films), "netlabels" (netlabel music), "softwarelibrary" (classic software), "tv" (TV news archive), "pubmed" (medical journal articles), "nasa" (NASA images and videos), "americanlibraries" (library collections). Returns items within that collection with their identifiers, titles, and metadata. Use this to browse or search within curated collections.
-
-Search for items in a specific Internet Archive collection
-- **search_by_creator**: The creator name should match how it appears in the item metadata (may be full name or organization name). Use this to find the complete works of an author, all films by a director, or all content from an organization. Example creators: "George Orwell", "Charlie Chaplin", "NASA", "Project Gutenberg".
-
-Search for items created by a specific person or organization
 - **search_by_date_range**: Combines a search query with year filtering to find historical content from a specific era. Use this to find content from specific decades or periods. Example: query="science fiction", startYear="1950", endYear="1959" finds 1950s sci-fi. The query parameter can be any valid search term. Years should be 4-digit format.
 
 Search for items within a specific year range
@@ -73,6 +67,12 @@ Search the Internet Archive for books, videos, audio, software, images, and more
 - **wayback_availability**: Returns the closest (most recent) archived snapshot with its timestamp and availability status. Use this to find archived versions of websites, verify if a page is preserved, or get the date of the most recent snapshot. The archived URL can be accessed at: https://web.archive.org/web/{timestamp}/{original_url}. Example: For https://example.com, returns the closest archived snapshot date and URL.
 
 Check if a URL has been archived by the Wayback Machine and find available snapshots
+- **search_by_collection**: Common collections: "prelinger" (Prelinger Archives), "fedflix" (Federal government films), "gutenberg" (Project Gutenberg ebooks), "opensource_movies" (community films), "netlabels" (netlabel music), "softwarelibrary" (classic software), "tv" (TV news archive), "pubmed" (medical journal articles), "nasa" (NASA images and videos), "americanlibraries" (library collections). Returns items within that collection with their identifiers, titles, and metadata. Use this to browse or search within curated collections.
+
+Search for items in a specific Internet Archive collection
+- **search_by_creator**: The creator name should match how it appears in the item metadata (may be full name or organization name). Use this to find the complete works of an author, all films by a director, or all content from an organization. Example creators: "George Orwell", "Charlie Chaplin", "NASA", "Project Gutenberg".
+
+Search for items created by a specific person or organization
 
 
 ## 💬 Prompt Examples

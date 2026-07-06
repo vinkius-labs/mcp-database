@@ -34,14 +34,7 @@ Connect your **Reclaim.ai** intelligent scheduling assistant directly to your AI
 
 
 ## Available Tools (10)
-- **create_task**: Specify title, duration in minutes, due date, and priority (P1 to P4).
-
-Creates a new task to be auto-scheduled by Reclaim.ai
-- **delete_task**: This action is irreversible.
-
-Deletes a task from Reclaim.ai
 - **get_analytics**: Retrieves time analytics for a specific date range
-- **get_current_user**: Retrieves the authenticated user profile
 - **get_task**: Retrieves details for a specific Reclaim.ai task
 - **list_calendar_events**: Lists all events on the Reclaim.ai planner for a date range
 - **list_habits**: Lists all habits configured in Reclaim.ai
@@ -52,6 +45,13 @@ Lists all tasks managed by Reclaim.ai
 - **update_task**: Provide a JSON object with the updates.
 
 Updates an existing Reclaim.ai task
+- **create_task**: Specify title, duration in minutes, due date, and priority (P1 to P4).
+
+Creates a new task to be auto-scheduled by Reclaim.ai
+- **delete_task**: This action is irreversible.
+
+Deletes a task from Reclaim.ai
+- **get_current_user**: Retrieves the authenticated user profile
 
 
 ## 💬 Prompt Examples

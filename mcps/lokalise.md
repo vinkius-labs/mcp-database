@@ -47,8 +47,8 @@ No more jumping between the Lokalise web console and your codebase. Your AI acts
 - **list_projects**: List all Lokalise projects
 - **list_team_members**: List all team members in your Lokalise account
 - **list_translations**: List translations for a key in a Lokalise project
-- **update_key**: Update an existing translation key
 - **upload_file**: Upload a localization file to a Lokalise project
+- **update_key**: Update an existing translation key
 
 
 ## 💬 Prompt Examples

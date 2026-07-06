@@ -35,8 +35,6 @@ Connect your **Lambda Labs** account to any AI agent and take full control of yo
 
 
 ## Available Tools (7)
-- **list_instances**: List running GPU instances on Lambda Cloud
-- **get_instance**: Get exact details and SSH connection string for a specific instance
 - **launch_instance**: g., powerful H100 or A100 boxes). Injects explicit SSH keys into the runtime so it is securely accessible over port 22 immediately upon boot.
 
 Provision a new Lambda GPU virtual machine
@@ -48,6 +46,8 @@ Permanently terminate and destroy Lambda GPU instances
 Discover available Lambda GPU instance specifications and pricing
 - **list_ssh_keys**: Enumerate globally managed SSH public keys in Lambda
 - **list_filesystems**: Map persistent shared NAS volumes living in the Lambda ecosystem
+- **list_instances**: List running GPU instances on Lambda Cloud
+- **get_instance**: Get exact details and SSH connection string for a specific instance
 
 
 ## 💬 Prompt Examples
