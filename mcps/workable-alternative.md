@@ -34,13 +34,13 @@ Connect your **Workable** account to any AI agent to manage your entire recruitm
 
 
 ## Available Tools (7)
-- **list_candidates**: List candidates in Workable
-- **create_candidate**: Create a new candidate in Workable
 - **get_candidate**: Get details for a specific candidate
 - **get_job**: Get details for a specific job
 - **list_jobs**: List job postings in Workable
 - **list_recruiters**: List recruiters in Workable
 - **list_stages**: List hiring stages in Workable
+- **list_candidates**: List candidates in Workable
+- **create_candidate**: Create a new candidate in Workable
 
 
 ## 💬 Prompt Examples

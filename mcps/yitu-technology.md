@@ -35,10 +35,6 @@ Empower your AI agent to orchestrate your enterprise-grade visual intelligence a
 
 
 ## Available Tools (12)
-- **detect_active_liveness**: Returns per-action pass/fail.
-
-Active liveness detection with action verification
-- **add_face_to_repo**: Register a face in a repository
 - **compare_faces**: Verify if two faces match (1:1)
 - **create_face_repo**: Create a new facial repository
 - **delete_face_repo**: Delete a facial repository
@@ -53,6 +49,10 @@ Search for a face in a repository (1:N)
 - **detect_silent_liveness**: Detects photos, screens, and 3D masks.
 
 Silent liveness detection (anti-spoofing)
+- **detect_active_liveness**: Returns per-action pass/fail.
+
+Active liveness detection with action verification
+- **add_face_to_repo**: Register a face in a repository
 
 
 ## 💬 Prompt Examples

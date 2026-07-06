@@ -35,8 +35,6 @@ No more switching between your IDE and the Xata dashboard to check schema or run
 
 
 ## Available Tools (30)
-- **create_branch**: Create a new database branch
-- **create_organization**: Create a new organization
 - **create_project**: Create a new project
 - **delete_branch**: Delete a branch
 - **delete_invitation**: Delete an organization invitation
@@ -65,6 +63,8 @@ No more switching between your IDE and the Xata dashboard to check schema or run
 - **update_branch**: Update branch details
 - **update_organization**: Update organization details
 - **update_project**: Update project details
+- **create_branch**: Create a new database branch
+- **create_organization**: Create a new organization
 
 
 ## 💬 Prompt Examples

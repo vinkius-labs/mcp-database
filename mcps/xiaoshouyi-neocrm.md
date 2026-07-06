@@ -35,6 +35,8 @@ Empower your AI agent to orchestrate your sales cycle with **Xiaoshouyi** (Neocr
 
 
 ## Available Tools (9)
+- **list_tasks**: List CRM tasks
+- **list_users**: List organization users
 - **create_lead**: Create a new lead
 - **create_opportunity**: Create a new opportunity
 - **get_lead**: Get lead details
@@ -42,8 +44,6 @@ Empower your AI agent to orchestrate your sales cycle with **Xiaoshouyi** (Neocr
 - **list_contacts**: List CRM contacts
 - **list_leads**: List CRM leads
 - **list_opportunities**: List sales opportunities
-- **list_tasks**: List CRM tasks
-- **list_users**: List organization users
 
 
 ## 💬 Prompt Examples

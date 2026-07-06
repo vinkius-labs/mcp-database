@@ -35,16 +35,16 @@ Connect **Hostelworld** to your AI agent and explore budget accommodation worldw
 
 
 ## Available Tools (8)
-- **get_property_availability**: Check availability and pricing for a property
-- **get_property_details**: Get detailed information about a specific property
-- **get_property_images**: Get images for a property
-- **get_property_reviews**: Get reviews for a property
 - **list_city_properties**: List properties in a specific city
 - **list_countries**: List all countries on Hostelworld
 - **search_cities**: Search for cities available on Hostelworld
 - **search_properties**: Returns a list of matching hostels with basic information.
 
 Search for hostels and properties
+- **get_property_availability**: Check availability and pricing for a property
+- **get_property_details**: Get detailed information about a specific property
+- **get_property_images**: Get images for a property
+- **get_property_reviews**: Get reviews for a property
 
 
 ## 💬 Prompt Examples

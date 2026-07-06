@@ -34,7 +34,6 @@ Connect your **Zoho ZeptoMail** account to any AI agent to automate your transac
 
 
 ## Available Tools (7)
-- **get_log_details**: Get details for a specific email log
 - **list_domains**: List all verified domains
 - **list_logs**: List email logs
 - **list_suppression_list**: List suppressed email addresses
@@ -43,6 +42,7 @@ Connect your **Zoho ZeptoMail** account to any AI agent to automate your transac
 
 Send a single transactional email
 - **send_template_email**: Send an email using a template
+- **get_log_details**: Get details for a specific email log
 
 
 ## 💬 Prompt Examples

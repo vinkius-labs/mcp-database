@@ -34,8 +34,8 @@ Connect to **Akash Network**, the world's first decentralized open-source cloud,
 
 
 ## Available Tools (13)
-- **add_deposit**: Add USD funds to a deployment escrow
 - **close_deployment**: Close a deployment
+- **add_deposit**: Add USD funds to a deployment escrow
 - **create_deployment**: 50 USD).
 
 Create a new deployment from an SDL manifest

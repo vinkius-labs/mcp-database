@@ -34,9 +34,6 @@ Connect your **Zotero** library to any AI agent and take full control of your re
 
 
 ## Available Tools (23)
-- **create_items**: Use get_new_item_template first to get the correct schema.
-
-Create new items in the Zotero library
 - **delete_item**: Delete a single item
 - **delete_items**: Delete multiple items (up to 50)
 - **get_collection**: Get a specific collection by key
@@ -59,6 +56,9 @@ Create new items in the Zotero library
 - **list_top_items**: List top-level items in the Zotero library
 - **list_trash_items**: List items in the trash
 - **update_item**: Update an existing item (Partial Update / PATCH)
+- **create_items**: Use get_new_item_template first to get the correct schema.
+
+Create new items in the Zotero library
 
 
 ## 💬 Prompt Examples

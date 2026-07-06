@@ -26,18 +26,18 @@ Connect **LibraryThing** to your AI agent for instant book lookups, bibliographi
 
 
 ## Available Tools (4)
-- **get_book_coverage**: The coverage score (0-1) indicates how completely the book is cataloged on LibraryThing. Free, no API key required.
-
-Get catalog coverage score for a book
-- **get_work**: Returns title, author, coverage score (how well the work is cataloged), member count, review count and more. Free, no API key required. Use what_work to find the work ID first.
-
-Get detailed info for a LibraryThing work
 - **thing_isbn**: Useful for finding paperback, hardcover, audio, and international editions of a book. Free, no API key required.
 
 Find all ISBNs for different editions of the same book
 - **what_work**: The work ID is needed for other LibraryThing API calls. Free, no API key required.
 
 Find the LibraryThing work ID for a book
+- **get_book_coverage**: The coverage score (0-1) indicates how completely the book is cataloged on LibraryThing. Free, no API key required.
+
+Get catalog coverage score for a book
+- **get_work**: Returns title, author, coverage score (how well the work is cataloged), member count, review count and more. Free, no API key required. Use what_work to find the work ID first.
+
+Get detailed info for a LibraryThing work
 
 
 ## 💬 Prompt Examples

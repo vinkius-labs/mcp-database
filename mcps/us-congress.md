@@ -36,7 +36,6 @@ Connect the **U.S. Congress API** to your AI agent and access comprehensive legi
 
 
 ## Available Tools (8)
-- **get_bill_details**: Get full details for a specific legislative bill
 - **list_congress_amendments**: List legislative amendments
 - **list_congress_bills**: gov database.
 
@@ -48,6 +47,7 @@ List historical congressional sessions
 - **list_congress_members**: List current or past members of the US Congress
 - **list_congress_nominations**: List executive and judicial nominations
 - **list_congress_treaties**: List treaties handled by Congress
+- **get_bill_details**: Get full details for a specific legislative bill
 
 
 ## 💬 Prompt Examples

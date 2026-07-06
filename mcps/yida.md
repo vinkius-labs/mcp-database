@@ -35,8 +35,6 @@ Empower your AI agent to orchestrate your enterprise operations with **Yida**, t
 
 
 ## Available Tools (10)
-- **create_record**: Create a new form record
-- **delete_record**: Delete a form record
 - **get_form_schema**: Get form field schema
 - **get_instance_timeline**: Get workflow instance timeline
 - **get_record_details**: Get record detailed data
@@ -45,6 +43,8 @@ Empower your AI agent to orchestrate your enterprise operations with **Yida**, t
 - **list_users**: List application users
 - **list_workflows**: List application workflows
 - **update_record**: Update an existing record
+- **create_record**: Create a new form record
+- **delete_record**: Delete a form record
 
 
 ## 💬 Prompt Examples

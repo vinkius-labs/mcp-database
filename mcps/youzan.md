@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your retail business with **Youzan** (有�
 
 
 ## Available Tools (10)
-- **get_customer**: Get customer details
-- **get_inventory**: Get item SKU inventory
-- **get_item**: Get item details
-- **get_order**: Get order details
 - **get_sales_stats**: Get sales performance stats
 - **get_shop**: Get shop information
 - **list_categories**: List item categories
 - **list_customers**: Search SCRM customers
 - **list_items**: List on-sale items
 - **list_orders**: List sold trades
+- **get_customer**: Get customer details
+- **get_inventory**: Get item SKU inventory
+- **get_item**: Get item details
+- **get_order**: Get order details
 
 
 ## 💬 Prompt Examples

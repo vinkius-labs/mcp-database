@@ -37,8 +37,6 @@ No more manual searching on block explorers. Your AI acts as a personal crypto a
 
 
 ## Available Tools (16)
-- **list_chains**: List supported blockchains and metadata
-- **list_dapps**: List metadata for decentralized applications
 - **get_fungible**: Get token metadata, prices, and charts
 - **list_gas_prices**: Get real-time gas estimates across chains
 - **get_nft**: Look up specific NFTs by reference
@@ -53,6 +51,8 @@ No more manual searching on block explorers. Your AI acts as a personal crypto a
 - **get_wallet_set_positions**: Get aggregated positions for multiple wallets
 - **get_wallet_set_transactions**: Get aggregated transactions for multiple wallets
 - **get_wallet_transactions**: Get human-readable transaction history for a wallet
+- **list_chains**: List supported blockchains and metadata
+- **list_dapps**: List metadata for decentralized applications
 
 
 ## 💬 Prompt Examples

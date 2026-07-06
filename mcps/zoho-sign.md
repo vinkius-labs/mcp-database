@@ -33,10 +33,6 @@ Empower your AI agent with access to the **Zoho Sign** platform to automate your
 
 
 ## Available Tools (12)
-- **create_request_from_template**: Create a sign request from a template
-- **get_zohosign_account_info**: Get account profile and settings
-- **get_completion_certificate**: Retrieve the audit completion certificate
-- **get_document_metadata**: Get metadata for a specific document
 - **get_sign_request_details**: Get details for a signature request
 - **list_supported_document_types**: g., PDF, DOCX).
 
@@ -49,6 +45,10 @@ List supported sign fields
 - **remind_sign_recipients**: Send reminder to signers
 - **revoke_sign_request**: Revoke an active signature request
 - **submit_sign_request**: Submit a request for signature
+- **create_request_from_template**: Create a sign request from a template
+- **get_zohosign_account_info**: Get account profile and settings
+- **get_completion_certificate**: Retrieve the audit completion certificate
+- **get_document_metadata**: Get metadata for a specific document
 
 
 ## 💬 Prompt Examples

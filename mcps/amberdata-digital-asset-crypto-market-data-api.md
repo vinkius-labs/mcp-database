@@ -34,6 +34,23 @@ Connect your **Amberdata** account to any AI agent to access comprehensive digit
 
 
 ## Available Tools (28)
+- **get_futures_tickers**: Get historical/latest tickers for futures/perpetuals
+- **get_futures_trades**: Get tick-by-tick trades for futures
+- **get_options_ohlcv**: Get aggregated OHLCV for options
+- **get_options_tickers**: Get tickers including Greeks and Implied Volatility for options
+- **get_options_trades**: Get tick-by-tick trades for options
+- **get_spot_ohlcv**: Get aggregated Open, High, Low, Close, Volume for a spot instrument
+- **get_spot_order_book_events**: Get incremental L2 order book updates (deltas) for a spot instrument
+- **get_spot_trades**: Get tick-by-tick executed transactions for a spot instrument
+- **get_spot_vwap_twap**: Get Volume/Time Weighted Average Price
+- **get_transactions_metrics_historical**: Get historical transaction-level metrics
+- **get_spot_bid_ask_spread**: Get absolute and percentage spread analytics
+- **get_spot_order_book_snapshots**: Get 1-minute snapshots of the full order book for a spot instrument
+- **get_spot_reference_rates**: Get benchmark prices for BTC/ETH (SOC I/II compliant)
+- **get_spot_tickers**: Get historical/latest best bid/ask (BBO) for a spot instrument
+- **get_spot_trade_frequency**: Get aggregated trade counts by size category
+- **get_spot_trade_pressure**: Get net trade data (buy vs sell aggressors)
+- **get_futures_order_book_snapshots**: Get order book snapshots for futures
 - **get_address_balances_latest**: Get current native account balance
 - **get_address_token_balances_latest**: Get current ERC-20 token holdings
 - **get_address_token_transfers**: Get historical token transfer events for an address
@@ -45,23 +62,6 @@ Connect your **Amberdata** account to any AI agent to access comprehensive digit
 - **get_defi_market_ohlcv_latest**: Get latest OHLCV for a DEX pair
 - **get_defi_market_trades_historical**: Get historical tick-by-tick DEX trades
 - **get_futures_ohlcv**: Get aggregated OHLCV for futures
-- **get_futures_order_book_snapshots**: Get order book snapshots for futures
-- **get_futures_tickers**: Get historical/latest tickers for futures/perpetuals
-- **get_futures_trades**: Get tick-by-tick trades for futures
-- **get_options_ohlcv**: Get aggregated OHLCV for options
-- **get_options_tickers**: Get tickers including Greeks and Implied Volatility for options
-- **get_options_trades**: Get tick-by-tick trades for options
-- **get_spot_bid_ask_spread**: Get absolute and percentage spread analytics
-- **get_spot_ohlcv**: Get aggregated Open, High, Low, Close, Volume for a spot instrument
-- **get_spot_order_book_events**: Get incremental L2 order book updates (deltas) for a spot instrument
-- **get_spot_order_book_snapshots**: Get 1-minute snapshots of the full order book for a spot instrument
-- **get_spot_reference_rates**: Get benchmark prices for BTC/ETH (SOC I/II compliant)
-- **get_spot_tickers**: Get historical/latest best bid/ask (BBO) for a spot instrument
-- **get_spot_trade_frequency**: Get aggregated trade counts by size category
-- **get_spot_trade_pressure**: Get net trade data (buy vs sell aggressors)
-- **get_spot_trades**: Get tick-by-tick executed transactions for a spot instrument
-- **get_spot_vwap_twap**: Get Volume/Time Weighted Average Price
-- **get_transactions_metrics_historical**: Get historical transaction-level metrics
 
 
 ## 💬 Prompt Examples
