@@ -14,12 +14,12 @@ Instantly calculate scholarship eligibility (Full or Partial) for ProUni by inpu
 
 
 ## Available Tools (4)
-- **determine_eligibility_tier**: Determine scholarship eligibility tier based on per capita income
 - **identify_eligible_courses**: Public school students receive a score bonus. Lower scholarship tiers restrict available courses.
 
 Identify eligible courses based on ENEM scores, public school status, and scholarship tier
 - **calculate_per_capita_income**: Calculate per capita income from gross family income and number of members
 - **query_university_locations**: Query universities participating in ProUni by city
+- **determine_eligibility_tier**: Determine scholarship eligibility tier based on per capita income
 
 
 ## 💬 Prompt Examples

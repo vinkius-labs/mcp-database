@@ -14,15 +14,15 @@ Calculates precise gelatin amounts for any liquid volume and classifies the resu
 
 
 ## Available Tools (3)
+- **calculate_required_gelatine**: Takes liquid volume in milliliters and a firmness profile (mousse, panna_cotta, or firm_jelly) to determine the precise gelatin amount required.
+
+Calculate how much gelatin is needed for a given liquid volume and desired firmness
 - **gelatine_conversion_factor**: Input form is "sheet" or "powder", input value is the measured amount.
 
 Convert between gelatin sheet and powder forms
 - **map_gelatine_type**: Takes the target amount in grams equivalent and preferred input form.
 
 Get practical preparation instructions for a calculated gelatin amount
-- **calculate_required_gelatine**: Takes liquid volume in milliliters and a firmness profile (mousse, panna_cotta, or firm_jelly) to determine the precise gelatin amount required.
-
-Calculate how much gelatin is needed for a given liquid volume and desired firmness
 
 
 ## 💬 Prompt Examples

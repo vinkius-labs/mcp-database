@@ -26,15 +26,15 @@ Instead of random play sessions, you receive a concrete plan detailing exactly w
 
 
 ## Available Tools (3)
-- **assess_environment_capacity**: Returns max activity duration, restriction matrix, and activity type modifier.
-
-Model the physical limitations and benefits of the pet's living environment
 - **get_pet_base_profile**: Use this as the foundation for enrichment planning.
 
 Retrieve a pet's baseline physical capabilities and behavioral tendencies
 - **generate_weekly_plan**: Focus area can be Cognitive Focus, Joint Conditioning, or Balanced.
 
 Generate a full structured weekly enrichment plan with physical and cognitive activities
+- **assess_environment_capacity**: Returns max activity duration, restriction matrix, and activity type modifier.
+
+Model the physical limitations and benefits of the pet's living environment
 
 
 ## 💬 Prompt Examples

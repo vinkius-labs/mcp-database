@@ -22,12 +22,12 @@ Determine a cat's emotional state instantly by describing observable body cues l
 
 
 ## Available Tools (2)
-- **query_confidence_and_ambiguity**: Detects conflicting descriptors and recommends what to observe next for a more accurate reading.
-
-Assess the consistency and ambiguity of cat body language observations
 - **query_emotional_state**: Returns confidence score and key indicators.
 
 Analyze a cat's body language to determine its dominant emotional state
+- **query_confidence_and_ambiguity**: Detects conflicting descriptors and recommends what to observe next for a more accurate reading.
+
+Assess the consistency and ambiguity of cat body language observations
 
 
 ## 💬 Prompt Examples

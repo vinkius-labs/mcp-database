@@ -14,13 +14,13 @@ Calculates key Heart Rate Variability (HRV) metrics (RMSSD, SDNN) to classify ca
 
 
 ## Available Tools (3)
-- **classify_coherence_level**: Classify cardiorespiratory coherence level based on HRV metrics
 - **calculate_rmssd**: Requires at least 3 readings.
 
 Calculate RMSSD from R-R intervals
 - **calculate_sdnn**: Requires at least 5 readings for statistical reliability.
 
 Calculate SDNN from R-R intervals
+- **classify_coherence_level**: Classify cardiorespiratory coherence level based on HRV metrics
 
 
 ## 💬 Prompt Examples

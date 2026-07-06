@@ -14,9 +14,9 @@ Immediately generate structured, guided therapeutic exercises (5-4-3-2-1, body s
 
 
 ## Available Tools (3)
+- **generate_sensory_exercise**: Generate a guided 5-4-3-2-1 sensory grounding exercise
 - **determine_anchoring_script**: Generate an emotion-specific cognitive anchoring script
 - **get_body_scan_segments**: Generate a guided body scan meditation script
-- **generate_sensory_exercise**: Generate a guided 5-4-3-2-1 sensory grounding exercise
 
 
 ## 💬 Prompt Examples

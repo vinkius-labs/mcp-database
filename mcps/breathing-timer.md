@@ -21,9 +21,9 @@ The advantage is a reliable, guided practice that allows you to focus entirely o
 
 
 ## Available Tools (3)
-- **calculate_single_cycle_duration**: Calculate the total duration of one full breathing cycle for a given technique
 - **query_breathing_parameters**: Query the default timing parameters for a breathing technique
 - **generate_breathing_schedule**: Generate a structured breathing schedule for a given total duration
+- **calculate_single_cycle_duration**: Calculate the total duration of one full breathing cycle for a given technique
 
 
 ## 💬 Prompt Examples

@@ -14,15 +14,15 @@ Instantly calculate urgency and generate comprehensive document checklists for g
 
 
 ## Available Tools (3)
+- **get_scholarship_opportunity**: Use this to look up deadlines for FUVEST, PROUNI, SISU, Fulbright, ErasmusPlus, or DAAD programs.
+
+Retrieve scholarship opportunity details by ID and year
 - **calculate_deadline_calendar**: Returns events sorted by earliest deadline first, with days remaining calculated from today.
 
 Calculate deadline urgency and generate sorted calendar
 - **generate_document_checklist**: Mandatory global documents appear first in the list.
 
 Generate document checklist for a scholarship and region
-- **get_scholarship_opportunity**: Use this to look up deadlines for FUVEST, PROUNI, SISU, Fulbright, ErasmusPlus, or DAAD programs.
-
-Retrieve scholarship opportunity details by ID and year
 
 
 ## 💬 Prompt Examples

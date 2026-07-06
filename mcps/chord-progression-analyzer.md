@@ -14,11 +14,11 @@ The Chord Progression Analyzer is a specialized tool for musicians and music the
 
 
 ## Available Tools (3)
+- **classify_progression**: Analyzes a sequence of Roman numerals to identify the overarching harmonic pattern
+- **lookup_musical_context**: Retrieves the stylistic and emotional metadata associated with a specific progression type
 - **analyze_roman_numerals**: g., "C Major") and returns the scale degrees as Roman numerals.
 
 Converts a list of named chords into their corresponding Roman numeral functions relative to a provided key
-- **classify_progression**: Analyzes a sequence of Roman numerals to identify the overarching harmonic pattern
-- **lookup_musical_context**: Retrieves the stylistic and emotional metadata associated with a specific progression type
 
 
 ## 💬 Prompt Examples

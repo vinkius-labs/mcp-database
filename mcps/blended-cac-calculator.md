@@ -25,15 +25,15 @@ The result is a clear, actionable financial roadmap. You immediately know which 
 
 
 ## Available Tools (3)
-- **assess_budget_efficiency**: Returns ranked channels, suggested budget percentages, and natural language recommendations. Provide period data as JSON array of {channelName, spendAmount, calculatedCAC} objects.
-
-Assess budget allocation efficiency and recommend optimal distribution
 - **calculate_cac_metrics**: Provide spending data as JSON array of {channelName, spendAmount} objects.
 
 Calculate blended CAC and per-channel CAC for a given period
 - **analyze_mom_trend**: Positive means worsening (CAC increased), negative means improving (CAC decreased).
 
 Analyze Month-over-Month trend for CAC or TotalSpend
+- **assess_budget_efficiency**: Returns ranked channels, suggested budget percentages, and natural language recommendations. Provide period data as JSON array of {channelName, spendAmount, calculatedCAC} objects.
+
+Assess budget allocation efficiency and recommend optimal distribution
 
 
 ## 💬 Prompt Examples

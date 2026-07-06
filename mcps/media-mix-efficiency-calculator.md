@@ -18,9 +18,9 @@ The advantage is clear: you move from guessing where to spend money to executing
 
 
 ## Available Tools (3)
+- **calculate_channel_metrics**: Calculate efficiency metrics (CPL, CPA, ROAS) for a marketing channel
 - **rank_channel_efficiency**: Rank marketing channels by composite efficiency score
 - **propose_budget_reallocation**: Propose budget reallocation to maximize conversions within total budget
-- **calculate_channel_metrics**: Calculate efficiency metrics (CPL, CPA, ROAS) for a marketing channel
 
 
 ## 💬 Prompt Examples

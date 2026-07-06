@@ -23,9 +23,9 @@ The initial presentation of Acute Coronary Syndrome (ACS), encompassing STEMI or
 
 
 ## Available Tools (3)
+- **calculate_timi_score**: Calculate TIMI risk scores for STEMI and NSTEMI presentation criteria based on clinical variables
 - **derive_adverse_event_risk**: Translate a TIMI risk score into an estimated 14-day adverse cardiac event probability
 - **recommend_management_strategy**: Recommend initial clinical management strategy based on risk category and MI type per ACC/AHA guidelines
-- **calculate_timi_score**: Calculate TIMI risk scores for STEMI and NSTEMI presentation criteria based on clinical variables
 
 
 ## 💬 Prompt Examples

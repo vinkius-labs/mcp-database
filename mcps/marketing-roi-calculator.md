@@ -18,9 +18,9 @@ Are you struggling to prove the true value of your marketing spend? Many teams c
 
 
 ## Available Tools (3)
-- **compute_rois_metrics_comparative**: Compute ROI metrics and compare performance across multiple campaigns
 - **query_marketing_investment_total**: Calculate total marketing investment for a campaign within a date range
 - **calculate_attributed_revenue**: Calculate attributed gross revenue for a campaign using an attribution model
+- **compute_rois_metrics_comparative**: Compute ROI metrics and compare performance across multiple campaigns
 
 
 ## 💬 Prompt Examples
