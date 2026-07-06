@@ -36,14 +36,14 @@ No more manual toggling between chat tabs or missing critical user events. Your 
 
 
 ## Available Tools (8)
+- **send_reply**: Send a reply to a conversation
+- **set_user_props**: Set custom properties for a user
+- **track_event**: Track a custom event for a user
 - **get_conversation**: Get details for a specific conversation
 - **get_user_details**: Get details for a specific user
 - **list_channels**: List communication channels
 - **list_conversations**: List recent conversations
 - **list_users**: List all Dashly users
-- **send_reply**: Send a reply to a conversation
-- **set_user_props**: Set custom properties for a user
-- **track_event**: Track a custom event for a user
 
 
 ## 💬 Prompt Examples

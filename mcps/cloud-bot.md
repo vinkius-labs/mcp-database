@@ -36,7 +36,6 @@ No more manual logging into individual bot portals to check job progress. Your A
 
 
 ## Available Tools (7)
-- **cancel_job**: Cancel a running job
 - **execute_bot**: You can pass optional input parameters as a JSON string.
 
 Trigger a bot execution
@@ -45,6 +44,7 @@ Trigger a bot execution
 - **list_bots**: List all available RPA bots
 - **list_cloudbot_files**: List files in Cloud BOT storage
 - **list_jobs**: List recent execution jobs
+- **cancel_job**: Cancel a running job
 
 
 ## 💬 Prompt Examples

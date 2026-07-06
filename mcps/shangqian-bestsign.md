@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your digital document workflows and electro
 
 
 ## Available Tools (8)
-- **create_shangqian_contract**: Create signature contract
-- **get_contract_details**: Get contract metadata
-- **get_contract_download**: Get download URL
-- **get_user_certificate**: Get user certificate
 - **register_shangqian_user**: Register a new user
 - **sign_contract_now**: Sign contract
 - **upload_shangqian_template**: Upload new template
 - **verify_identity_v2**: Verify user identity
+- **create_shangqian_contract**: Create signature contract
+- **get_contract_details**: Get contract metadata
+- **get_contract_download**: Get download URL
+- **get_user_certificate**: Get user certificate
 
 
 ## 💬 Prompt Examples

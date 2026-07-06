@@ -36,9 +36,6 @@ No more manual record logging or digging through complex compliance tables in th
 
 
 ## Available Tools (12)
-- **archive_dsr**: Archive a DSR
-- **create_breach**: Create a new data breach record
-- **create_dsr**: Create a new Data Subject Request
 - **get_dsr**: Get details for a specific DSR
 - **list_actors**: ).
 
@@ -50,6 +47,9 @@ List actors
 - **list_tags**: List workspace tags
 - **list_workspaces**: List all workspaces
 - **update_dsr**: Update an existing DSR
+- **archive_dsr**: Archive a DSR
+- **create_breach**: Create a new data breach record
+- **create_dsr**: Create a new Data Subject Request
 
 
 ## 💬 Prompt Examples

@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire maritime logistics and containe
 
 
 ## Available Tools (4)
+- **list_active_shipments**: List all active shipments currently tracked in your SafeCube account
 - **check_api_status**: Check if the SafeCube service is operational
 - **get_shipment_events**: Get a list of tracking events for a specific shipment ID
 - **get_container_tracking**: Get real-time tracking data for a specific maritime container
-- **list_active_shipments**: List all active shipments currently tracked in your SafeCube account
 
 
 ## 💬 Prompt Examples

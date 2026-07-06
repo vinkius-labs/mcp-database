@@ -36,12 +36,12 @@ No more manual status checking of reminder logs or digging through fragmented co
 
 
 ## Available Tools (6)
-- **get_appointment**: Get appointment details
-- **list_address_books**: List all address books
 - **list_appointments**: List all appointments
 - **list_calendars**: List connected calendars
 - **list_contacts**: List contacts in an address book
 - **list_messages**: List recent messages
+- **get_appointment**: Get appointment details
+- **list_address_books**: List all address books
 
 
 ## 💬 Prompt Examples

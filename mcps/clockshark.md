@@ -36,16 +36,16 @@ No more manual following up on missing timesheets or digging through complex sch
 
 
 ## Available Tools (10)
+- **list_jobs**: List all jobs/projects
+- **list_schedules**: List employee shifts
+- **list_tasks**: List all service tasks
+- **list_timesheets**: List time tracking entries
 - **create_job**: Add a new job/project
 - **create_shift**: Schedule a new shift
 - **create_task**: Add a new work task
 - **create_timesheet**: Manually add a time entry
 - **get_employee_details**: Get details for a staff member
 - **list_employees**: List all employees
-- **list_jobs**: List all jobs/projects
-- **list_schedules**: List employee shifts
-- **list_tasks**: List all service tasks
-- **list_timesheets**: List time tracking entries
 
 
 ## 💬 Prompt Examples

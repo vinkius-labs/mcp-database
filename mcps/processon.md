@@ -35,8 +35,6 @@ Empower your AI agent to orchestrate your visual documentation with **ProcessOn*
 
 
 ## Available Tools (10)
-- **create_file**: Create a new diagram
-- **delete_file**: Delete a diagram
 - **export_file**: Export a diagram
 - **get_file**: Get diagram file details
 - **get_folder_content**: Get folder contents
@@ -45,6 +43,8 @@ Empower your AI agent to orchestrate your visual documentation with **ProcessOn*
 - **list_collaborators**: List file collaborators
 - **list_files**: List all ProcessOn files
 - **list_folders**: List all folders
+- **create_file**: Create a new diagram
+- **delete_file**: Delete a diagram
 
 
 ## 💬 Prompt Examples

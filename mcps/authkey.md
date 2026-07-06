@@ -36,12 +36,6 @@ No more manual toggling between messaging portals or managing multiple protocol 
 
 
 ## Available Tools (13)
-- **check_balance**: Check balance
-- **check_authkey_status**: Verify connectivity
-- **get_email_status**: Get email status
-- **get_sms_status**: Get SMS status
-- **get_voice_status**: Get voice call status
-- **list_sms_history**: List SMS history
 - **list_templates**: List templates
 - **send_bulk_sms**: Send bulk SMS
 - **send_email**: Send an email
@@ -49,6 +43,12 @@ No more manual toggling between messaging portals or managing multiple protocol 
 - **send_sms**: Send an SMS
 - **send_voice**: Send a voice call
 - **verify_otp**: Verify OTP
+- **check_balance**: Check balance
+- **check_authkey_status**: Verify connectivity
+- **get_email_status**: Get email status
+- **get_sms_status**: Get SMS status
+- **get_voice_status**: Get voice call status
+- **list_sms_history**: List SMS history
 
 
 ## 💬 Prompt Examples

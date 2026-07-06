@@ -36,14 +36,6 @@ No more manual status checking of individual contracts or digging through fragme
 
 
 ## Available Tools (12)
-- **check_api_health**: Verify Autenti API connectivity
-- **add_new_contact**: Add a contact to your address book
-- **create_new_signature_process**: Requires a title and metadata.
-
-Start a new document process
-- **execute_process_action**: Use list_available_process_actions first to find valid names.
-
-Execute a discovered action (e.g., Send, Sign, Reject)
 - **get_user_account_profile**: Get authenticated user profile
 - **get_process_details**: Get details for a specific signature process
 - **list_available_process_actions**: Discover possible actions for a process
@@ -52,6 +44,14 @@ Execute a discovered action (e.g., Send, Sign, Reject)
 - **list_process_participants**: List signers and observers
 - **list_signature_processes**: List all document signature processes
 - **list_configured_webhooks**: List active webhooks
+- **check_api_health**: Verify Autenti API connectivity
+- **add_new_contact**: Add a contact to your address book
+- **create_new_signature_process**: Requires a title and metadata.
+
+Start a new document process
+- **execute_process_action**: Use list_available_process_actions first to find valid names.
+
+Execute a discovered action (e.g., Send, Sign, Reject)
 
 
 ## 💬 Prompt Examples

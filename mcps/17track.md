@@ -36,13 +36,13 @@ Equip your AI agent with the most comprehensive logistics intelligence available
 
 
 ## Available Tools (7)
+- **register_tracking**: Register a new tracking number
+- **stop_tracking**: Stop tracking a number
+- **update_tracking_tag**: Update tracking metadata
 - **delete_tracking**: Delete a tracking number
 - **detect_carrier**: Detect carrier for a number
 - **get_tracking_info**: Get status for a tracking number
 - **list_carriers**: List all supported carriers
-- **register_tracking**: Register a new tracking number
-- **stop_tracking**: Stop tracking a number
-- **update_tracking_tag**: Update tracking metadata
 
 
 ## 💬 Prompt Examples

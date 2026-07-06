@@ -30,7 +30,6 @@ Connect **Spoonacular** food API to any AI agent and unlock powerful recipe sear
 
 
 ## Available Tools (13)
-- **analyze_recipe**: Analyze a recipe and get enrichment data
 - **extract_recipe**: Useful for importing recipes from blogs or recipe sites.
 
 Extract recipe from a URL
@@ -53,6 +52,7 @@ Get random recipe suggestions
 - **search_recipes**: Returns recipes with basic information including title, ready time, servings, and dietary badges.
 
 Search recipes with advanced filters
+- **analyze_recipe**: Analyze a recipe and get enrichment data
 
 
 ## 💬 Prompt Examples

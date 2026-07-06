@@ -35,7 +35,6 @@ Empower your AI agent to orchestrate your customer relationship within the WeCom
 
 
 ## Available Tools (10)
-- **create_lead**: Create a new lead
 - **get_customer_details**: Get customer details
 - **get_group_chat**: Get group chat details
 - **get_org_summary**: Get organization activity summary
@@ -45,6 +44,7 @@ Empower your AI agent to orchestrate your customer relationship within the WeCom
 - **list_group_chats**: List WeCom group chats
 - **list_leads**: List sales leads
 - **list_staff**: List organization staff
+- **create_lead**: Create a new lead
 
 
 ## 💬 Prompt Examples

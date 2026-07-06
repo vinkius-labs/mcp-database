@@ -36,6 +36,9 @@ Equip your AI agent with the most accurate toll intelligence available via **Tol
 
 
 ## Available Tools (6)
+- **calculate_tolls_by_polyline**: Submit the encoded polyline string to get toll costs for that exact path.
+
+Calculate tolls for an encoded route polyline
 - **calculate_tolls_by_address**: Supports multiple vehicle types.
 
 Calculate tolls and fuel costs between two addresses
@@ -45,9 +48,6 @@ Calculate tolls between two GPS coordinate pairs
 - **calculate_tolls_by_gps**: Handles map-matching automatically for accurate toll identification from real trip data.
 
 Calculate tolls from GPS track data (post-trip reconciliation)
-- **calculate_tolls_by_polyline**: Submit the encoded polyline string to get toll costs for that exact path.
-
-Calculate tolls for an encoded route polyline
 - **get_toll_rates**: Look up toll rates for a specific toll plaza or booth
 - **get_transaction_count**: Useful for monitoring usage and billing.
 

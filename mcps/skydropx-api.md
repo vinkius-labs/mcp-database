@@ -33,7 +33,6 @@ Connect your heavy lifting **Skydropx Carrier Console** to the AI core forcing s
 
 
 ## Available Tools (12)
-- **cancel_label**: Void an active shipping label
 - **create_label**: Purchase and generate a printing label
 - **create_package**: Register a new package format
 - **create_shipment**: Draft a brand new shipment record
@@ -45,6 +44,7 @@ Connect your heavy lifting **Skydropx Carrier Console** to the AI core forcing s
 - **list_locations**: List registered origin warehouses
 - **list_packages**: List saved standard package templates
 - **list_shipments**: List active e-commerce shipments
+- **cancel_label**: Void an active shipping label
 
 
 ## 💬 Prompt Examples
