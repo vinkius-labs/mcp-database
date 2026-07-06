@@ -36,10 +36,6 @@ No more manual checking of availability calendars or missing guest check-in time
 
 
 ## Available Tools (10)
-- **check_hqbeds_status**: Verify HQBeds API connectivity
-- **create_reservation**: Create a reservation
-- **get_account**: Get account info
-- **get_guest**: Get guest details
 - **get_reservation**: Get reservation details
 - **get_room**: Get room details
 - **list_availability**: Use ISO 8601 dates.
@@ -48,6 +44,10 @@ Check room availability
 - **list_guests**: List all guests
 - **list_reservations**: List all reservations
 - **list_rooms**: List all rooms
+- **check_hqbeds_status**: Verify HQBeds API connectivity
+- **create_reservation**: Create a reservation
+- **get_account**: Get account info
+- **get_guest**: Get guest details
 
 
 ## 💬 Prompt Examples

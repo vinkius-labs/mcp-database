@@ -36,8 +36,6 @@ No more manual filling of templates or missing document generation errors. Your 
 
 
 ## Available Tools (10)
-- **check_docsgenflow_status**: Verify DocsGenFlow API connectivity
-- **create_template**: Create a template
 - **download_document**: Download a document
 - **generate_document**: Pass data as JSON with field-value pairs.
 
@@ -48,6 +46,8 @@ Generate a document
 - **list_documents**: List generated documents
 - **list_history**: List generation history
 - **list_templates**: List all templates
+- **check_docsgenflow_status**: Verify DocsGenFlow API connectivity
+- **create_template**: Create a template
 
 
 ## 💬 Prompt Examples

@@ -42,10 +42,10 @@ No more manual document exporting or complex video rendering pipelines. Your AI 
 Generate AI-personalized video
 - **get_render_status**: Check status of a render job
 - **get_video_details**: Get specific video details
-- **list_videos**: List all generated videos
 - **render_pdf**: Provide "url" or "html" in the JSON body.
 
 Render a PDF from URL or HTML
+- **list_videos**: List all generated videos
 
 
 ## 💬 Prompt Examples

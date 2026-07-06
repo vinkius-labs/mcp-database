@@ -35,7 +35,6 @@ Connect your **Knorish** account to any AI agent and manage your online course b
 
 
 ## Available Tools (12)
-- **create_user**: Create a new user
 - **create_webhook**: Create a new webhook
 - **enroll_user**: Enroll a user in a course
 - **get_account_info**: Get academy account details
@@ -47,6 +46,7 @@ Connect your **Knorish** account to any AI agent and manage your online course b
 - **list_users**: List all users
 - **list_webhooks**: List webhooks
 - **unenroll_user**: Unenroll a user from a course
+- **create_user**: Create a new user
 
 
 ## 💬 Prompt Examples

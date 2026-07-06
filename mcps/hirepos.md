@@ -35,7 +35,6 @@ Connect your **HirePOS** account to any AI agent and manage your equipment renta
 
 
 ## Available Tools (17)
-- **check_item_availability**: Check item availability
 - **check_hirepos_status**: Verify connectivity
 - **create_customer**: Create a customer
 - **create_hire**: Create a booking
@@ -52,6 +51,7 @@ Connect your **HirePOS** account to any AI agent and manage your equipment renta
 - **list_items_by_category**: Filter items by category
 - **list_items**: List inventory items
 - **list_overdue_hires**: List overdue hires
+- **check_item_availability**: Check item availability
 
 
 ## 💬 Prompt Examples

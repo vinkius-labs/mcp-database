@@ -34,9 +34,9 @@ Connect your **Jaicob** account to any AI agent and leverage AI capabilities thr
 
 
 ## Available Tools (6)
-- **create_candidate**: Create a new candidate profile
 - **list_applications**: List job applications
 - **list_candidates**: List all candidates in Jaicob
+- **create_candidate**: Create a new candidate profile
 - **list_clients**: List client organizations
 - **list_recruitment_leads**: List recruitment leads
 - **list_vacancies**: List all job vacancies

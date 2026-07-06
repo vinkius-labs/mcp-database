@@ -36,10 +36,6 @@ No more manual toggling between project spreadsheets. Your AI acts as your dedic
 
 
 ## Available Tools (13)
-- **check_giddyup_status**: Verify connectivity
-- **create_job**: Create a job
-- **create_lead**: Create a lead
-- **get_customer**: Get customer details
 - **get_job**: Get job details
 - **get_lead**: Get lead details
 - **list_customers**: List customers
@@ -49,6 +45,10 @@ No more manual toggling between project spreadsheets. Your AI acts as your dedic
 - **list_users**: List technicians
 - **update_job**: Update a job
 - **update_lead**: Update a lead
+- **check_giddyup_status**: Verify connectivity
+- **create_job**: Create a job
+- **create_lead**: Create a lead
+- **get_customer**: Get customer details
 
 
 ## 💬 Prompt Examples

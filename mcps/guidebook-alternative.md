@@ -36,11 +36,6 @@ No more manual editing of sessions or locations through complex web builders. Yo
 
 
 ## Available Tools (12)
-- **check_guidebook_status**: Verify connectivity
-- **create_custom_list_item**: Add list item
-- **create_guide**: Create a guide
-- **get_event**: Get session details
-- **get_guide**: Get guide details
 - **list_attendees**: List attendees
 - **list_custom_list_items**: List custom list items
 - **list_custom_lists**: List custom lists
@@ -48,6 +43,11 @@ No more manual editing of sessions or locations through complex web builders. Yo
 - **list_guides**: List guides
 - **list_locations**: List locations
 - **update_guide**: Update a guide
+- **check_guidebook_status**: Verify connectivity
+- **create_custom_list_item**: Add list item
+- **create_guide**: Create a guide
+- **get_event**: Get session details
+- **get_guide**: Get guide details
 
 
 ## 💬 Prompt Examples

@@ -33,8 +33,6 @@ Empower your AI agent with access to the **CloudCard** (RemotePhoto) platform to
 
 
 ## Available Tools (12)
-- **approve_id_photo**: Approve a submitted photo
-- **check_api_health**: Verify CloudCard API connectivity
 - **register_new_cardholder**: Requires email and first/last name.
 
 Add a new person to CloudCard
@@ -53,6 +51,8 @@ List all photo submissions
 
 Get submission requirements
 - **list_configured_webhooks**: List active event webhooks
+- **check_api_health**: Verify CloudCard API connectivity
+- **approve_id_photo**: Approve a submitted photo
 
 
 ## 💬 Prompt Examples

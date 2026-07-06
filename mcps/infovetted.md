@@ -34,8 +34,6 @@ Connect your **InfoVetted** account to any AI agent and manage background checks
 
 
 ## Available Tools (12)
-- **cancel_active_vetting**: Cancel a background check
-- **check_api_connectivity**: Verify InfoVetted API status
 - **create_screening_contact**: Add a new individual for screening
 - **create_contact_group**: g., "Engineering Team").
 
@@ -50,6 +48,8 @@ Create a new organization group
 
 List available background check types
 - **list_configured_webhooks**: List active webhooks
+- **cancel_active_vetting**: Cancel a background check
+- **check_api_connectivity**: Verify InfoVetted API status
 
 
 ## 💬 Prompt Examples

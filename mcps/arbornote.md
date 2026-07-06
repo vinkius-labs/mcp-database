@@ -36,10 +36,6 @@ No more manual logging into individual project portals or missing critical propo
 
 
 ## Available Tools (12)
-- **check_api_health**: Verify ArborNote API connectivity
-- **create_arbornote_client**: Create a new client
-- **get_arbornote_client**: Get specific client
-- **get_arbornote_metrics**: Get financial metrics
 - **get_arbornote_project**: Get specific project
 - **get_arbornote_proposal**: Get specific proposal
 - **list_arbornote_clients**: List all clients
@@ -48,6 +44,10 @@ No more manual logging into individual project portals or missing critical propo
 - **list_arbornote_schedules**: List schedules
 - **list_arbornote_webhooks**: List active webhooks
 - **update_arbornote_client**: Update an existing client
+- **check_api_health**: Verify ArborNote API connectivity
+- **create_arbornote_client**: Create a new client
+- **get_arbornote_client**: Get specific client
+- **get_arbornote_metrics**: Get financial metrics
 
 
 ## 💬 Prompt Examples

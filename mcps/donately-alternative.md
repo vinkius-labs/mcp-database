@@ -26,8 +26,6 @@ Ideal for non-profits, NGOs, and fundraising teams who want to seamlessly query 
 
 
 ## Available Tools (11)
-- **create_donation**: Create a new donation
-- **get_campaign**: Get details of a specific campaign
 - **get_donation**: Get details of a specific donation
 - **get_fundraiser**: Get details of a specific peer-to-peer fundraiser
 - **get_person**: Get details of a specific person (donor)
@@ -41,6 +39,8 @@ List donations for the Donately account
 - **list_fundraisers**: List peer-to-peer fundraisers for the Donately account
 - **list_people**: List people (donors/contacts) for the Donately account
 - **list_subscriptions**: List recurring donations (subscriptions) for the Donately account
+- **create_donation**: Create a new donation
+- **get_campaign**: Get details of a specific campaign
 
 
 ## 💬 Prompt Examples

@@ -35,10 +35,6 @@ Connect your **DecileHub** account to any AI agent and take full control of your
 
 
 ## Available Tools (12)
-- **check_decilehub_status**: Verify connectivity
-- **get_company**: Get company details
-- **get_filing_report**: Get filing report
-- **get_fund_performance**: Get fund performance
 - **get_fund**: Get fund details
 - **get_investor**: Get investor details
 - **list_companies_by_fund**: List companies by fund
@@ -47,6 +43,10 @@ Connect your **DecileHub** account to any AI agent and take full control of your
 - **list_funds**: List funds
 - **list_investors**: List investors (LPs)
 - **list_valuations**: List company valuations
+- **check_decilehub_status**: Verify connectivity
+- **get_company**: Get company details
+- **get_filing_report**: Get filing report
+- **get_fund_performance**: Get fund performance
 
 
 ## 💬 Prompt Examples
