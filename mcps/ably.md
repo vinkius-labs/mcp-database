@@ -34,14 +34,6 @@ Connect your **Ably** account to any AI agent to orchestrate real-time communica
 
 
 ## Available Tools (14)
-- **batch_presence**: Get presence for multiple channels
-- **batch_publish**: Publish messages to multiple channels at once
-- **batch_push_publish**: Publish batch push notifications
-- **get_channel_metadata**: Get metadata for a specific channel
-- **get_message**: Get a specific message by serial
-- **get_messages**: Retrieve message history for a channel
-- **get_presence_history**: Get presence history for a channel
-- **get_presence**: Get current presence members for a channel
 - **get_stats**: Retrieve application usage statistics
 - **list_channels**: Enumerate all active channels
 - **publish_message**: Publish a message to a specific channel
@@ -50,6 +42,14 @@ Connect your **Ably** account to any AI agent to orchestrate real-time communica
 
 Revoke Ably tokens before their expiry
 - **update_message**: Update, delete, or append to a message
+- **batch_presence**: Get presence for multiple channels
+- **batch_publish**: Publish messages to multiple channels at once
+- **batch_push_publish**: Publish batch push notifications
+- **get_channel_metadata**: Get metadata for a specific channel
+- **get_message**: Get a specific message by serial
+- **get_messages**: Retrieve message history for a channel
+- **get_presence_history**: Get presence history for a channel
+- **get_presence**: Get current presence members for a channel
 
 
 ## 💬 Prompt Examples

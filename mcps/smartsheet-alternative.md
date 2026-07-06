@@ -34,11 +34,6 @@ Connect your **Smartsheet** account to any AI agent to automate your enterprise 
 
 
 ## Available Tools (12)
-- **add_sheet_rows**: Rows must be provided as a JSON array.
-
-Append new rows
-- **remove_sheet_row**: Delete a row
-- **get_my_profile**: Get user info
 - **get_sheet_details**: Get sheet data
 - **get_workspace_details**: Get workspace info
 - **list_sheet_columns**: List sheet fields
@@ -50,6 +45,11 @@ Append new rows
 - **update_sheet_rows**: Rows must be provided as a JSON array with IDs.
 
 Modify existing rows
+- **add_sheet_rows**: Rows must be provided as a JSON array.
+
+Append new rows
+- **remove_sheet_row**: Delete a row
+- **get_my_profile**: Get user info
 
 
 ## 💬 Prompt Examples

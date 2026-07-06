@@ -37,12 +37,6 @@ Connect to the **Semantic Scholar Academic Graph API** and unlock the world's la
 
 
 ## Available Tools (16)
-- **batch_get_authors**: Returns names, affiliations, paper counts, citation counts, and h-indices. Useful for comparing researchers or building collaboration network analyses.
-
-Retrieve multiple author profiles in a single request
-- **batch_get_papers**: Accepts S2 IDs, DOIs, ArXiv IDs, or PubMed IDs. Useful for comparing papers, building reading lists, or analyzing a set of related works.
-
-Retrieve multiple papers in a single request
 - **bulk_search_papers**: Each call returns a batch of results plus a continuation token. Pass the token in subsequent calls to get the next batch. Ideal for systematic literature reviews and meta-analyses.
 
 Bulk search for large result sets with token pagination
@@ -85,6 +79,12 @@ Search papers filtered by conference or journal
 - **search_papers**: Returns titles, venues, years, citation counts, open access status, fields of study, and authors. Supports filtering by year range (e.g. "2020-2024"), fields of study (e.g. "Computer Science"), venue (e.g. "Nature"), and open access availability.
 
 Search across 200M+ academic papers by keyword
+- **batch_get_authors**: Returns names, affiliations, paper counts, citation counts, and h-indices. Useful for comparing researchers or building collaboration network analyses.
+
+Retrieve multiple author profiles in a single request
+- **batch_get_papers**: Accepts S2 IDs, DOIs, ArXiv IDs, or PubMed IDs. Useful for comparing papers, building reading lists, or analyzing a set of related works.
+
+Retrieve multiple papers in a single request
 
 
 ## 💬 Prompt Examples

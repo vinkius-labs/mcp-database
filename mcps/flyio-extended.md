@@ -34,10 +34,6 @@ Connect your **Fly.io** account to any AI agent to orchestrate your cloud infras
 
 
 ## Available Tools (28)
-- **check_certificate**: Trigger DNS validation check for a certificate
-- **create_acme_certificate**: Request a Let's Encrypt certificate
-- **create_app**: Create a new Fly App
-- **create_custom_certificate**: Import a custom PEM certificate
 - **create_lease**: Create a lease for a Machine
 - **create_machine**: Requires a config object containing at least the image.
 
@@ -64,6 +60,10 @@ Create a new Fly Machine
 - **suspend_machine**: Suspend a Machine
 - **update_machine**: Update Machine configuration
 - **wait_machine**: Wait for a specific Machine state
+- **check_certificate**: Trigger DNS validation check for a certificate
+- **create_acme_certificate**: Request a Let's Encrypt certificate
+- **create_app**: Create a new Fly App
+- **create_custom_certificate**: Import a custom PEM certificate
 
 
 ## 💬 Prompt Examples

@@ -33,7 +33,6 @@ Connect **ConfigCat** to any AI agent to streamline your feature flag management
 
 
 ## Available Tools (18)
-- **create_config**: Create a new configuration
 - **create_environment**: Create a new environment
 - **create_segment**: Create a new segment
 - **create_setting**: Create a new feature flag or setting
@@ -53,6 +52,7 @@ List all environments in a product
 - **list_segments**: List all segments in a product
 - **list_settings**: List all settings in a configuration
 - **update_setting_value**: Update the value/targeting of a setting
+- **create_config**: Create a new configuration
 
 
 ## 💬 Prompt Examples

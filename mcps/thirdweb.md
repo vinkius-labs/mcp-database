@@ -36,6 +36,7 @@ Connect your **ThirdWeb** account to any AI agent to build and manage Web3 appli
 - **broadcast_solana_transaction**: Broadcast a transaction on Solana
 - **complete_auth**: Verify challenge and complete login
 - **create_solana_wallet**: Create a Solana wallet
+- **list_solana_wallets**: List Solana wallets
 - **deploy_contract**: Deploy a contract using bytecode and ABI
 - **execute_solana_swap**: Execute a token swap on Solana Mainnet
 - **fetch_with_payment**: Proxy a request to a paid API using x402
@@ -47,7 +48,6 @@ Connect your **ThirdWeb** account to any AI agent to build and manage Web3 appli
 - **get_wallet_me**: Retrieve details of the authenticated user
 - **initiate_auth**: Start authentication process for email, phone, passkey, or SIWE
 - **link_profile**: Tie multiple social identities to a single wallet address
-- **list_solana_wallets**: List Solana wallets
 - **list_transactions**: List transactions
 - **pregenerate_wallet**: Create a wallet for a user before they first log in
 - **query_events**: Fetch historical events for a contract

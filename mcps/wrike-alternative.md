@@ -34,10 +34,8 @@ Connect your **Wrike** account to any AI agent to automate your complex project 
 
 
 ## Available Tools (12)
-- **add_task_comment**: Post comment to task
 - **create_folder**: Add new folder/project
 - **create_task**: Add new task
-- **get_user_profile**: Get current user
 - **get_task_details**: Get full task info
 - **list_task_comments**: Get task discussion
 - **list_team_members**: List workspace users
@@ -48,6 +46,8 @@ Connect your **Wrike** account to any AI agent to automate your complex project 
 List project tasks
 - **list_custom_workflows**: List task workflows
 - **update_task**: Modify task info
+- **add_task_comment**: Post comment to task
+- **get_user_profile**: Get current user
 
 
 ## 💬 Prompt Examples

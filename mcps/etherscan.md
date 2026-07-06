@@ -34,7 +34,6 @@ Connect your **Etherscan** API key to any AI agent and gain instant access to on
 
 
 ## Available Tools (19)
-- **get_address_token_balance**: Get address portfolio (PRO)
 - **get_balance_multi**: Get native token balances for multiple addresses
 - **get_balance**: Get native token balance for an address
 - **get_abi**: Get Contract ABI
@@ -55,6 +54,7 @@ Connect your **Etherscan** API key to any AI agent and gain instant access to on
 
 Get normal transactions for an address
 - **verify_source_code**: Verify Contract Source Code
+- **get_address_token_balance**: Get address portfolio (PRO)
 
 
 ## 💬 Prompt Examples

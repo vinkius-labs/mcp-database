@@ -34,13 +34,13 @@ Connect your **Polygon.io** account to any AI agent to retrieve institutional-gr
 
 
 ## Available Tools (6)
+- **list_tickers**: io.
+
+Query all supported tickers
 - **get_aggregates**: Get aggregate bars for a stock
 - **get_company**: Get company details for a ticker
 - **list_dividends**: List historical dividends
 - **list_quotes**: Get tick-by-tick quotes (NBBO)
-- **list_tickers**: io.
-
-Query all supported tickers
 - **list_trades**: Get tick-by-tick trades
 
 

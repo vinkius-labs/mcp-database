@@ -34,15 +34,6 @@ Connect your **Flagsmith** account to any AI agent to control feature releases a
 
 
 ## Available Tools (8)
-- **create_environment**: Requires FLAGSMITH_API_KEY.
-
-Create a new environment within a project
-- **delete_segment_override**: Requires FLAGSMITH_API_KEY.
-
-Delete a segment override
-- **get_environment_document**: Requires FLAGSMITH_ENVIRONMENT_KEY.
-
-Get the entire environment configuration document
 - **get_environment_flags**: Requires FLAGSMITH_ENVIRONMENT_KEY.
 
 Get all default flag states for an environment
@@ -58,6 +49,15 @@ Update a flag value (Single change)
 - **update_flag_v2**: Requires FLAGSMITH_API_KEY.
 
 Update flags (Batch change)
+- **create_environment**: Requires FLAGSMITH_API_KEY.
+
+Create a new environment within a project
+- **delete_segment_override**: Requires FLAGSMITH_API_KEY.
+
+Delete a segment override
+- **get_environment_document**: Requires FLAGSMITH_ENVIRONMENT_KEY.
+
+Get the entire environment configuration document
 
 
 ## 💬 Prompt Examples

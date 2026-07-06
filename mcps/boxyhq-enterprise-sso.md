@@ -34,16 +34,16 @@ Connect your **BoxyHQ** instance to any AI agent to streamline enterprise authen
 
 
 ## Available Tools (8)
+- **get_directory_groups**: List all groups for a tenant/product directory
+- **get_directory_users**: List all users for a tenant/product directory
+- **health_check**: Check BoxyHQ service health
+- **update_connection**: Update an existing SSO connection
 - **add_connection**: Add a new SAML or OIDC connection
 - **create_directory**: 0 protocol.
 
 Create a Directory Sync (SCIM) connection
 - **delete_connection**: Delete an SSO connection
 - **get_connections**: Get SSO connections
-- **get_directory_groups**: List all groups for a tenant/product directory
-- **get_directory_users**: List all users for a tenant/product directory
-- **health_check**: Check BoxyHQ service health
-- **update_connection**: Update an existing SSO connection
 
 
 ## 💬 Prompt Examples

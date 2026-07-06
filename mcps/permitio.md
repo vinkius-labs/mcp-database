@@ -34,8 +34,10 @@ Connect your **Permit.io** account to any AI agent to manage your application's 
 
 
 ## Available Tools (18)
-- **assign_permissions_to_role**: Assign permissions to a role
-- **assign_role_to_user**: Assign a role to a user in a tenant
+- **create_resource**: Create a new resource in the schema
+- **create_role**: Create a new role in the schema
+- **create_tenant**: Create a new tenant fact
+- **create_user**: Create a new user fact
 - **authzen_access_evaluation**: AuthZen Access Evaluation
 - **authzen_action_search**: AuthZen Action Search
 - **authzen_bulk_evaluations**: AuthZen Bulk Evaluations
@@ -45,13 +47,11 @@ Connect your **Permit.io** account to any AI agent to manage your application's 
 - **bulk_create_tenants**: Bulk create tenants (max 2000)
 - **bulk_create_users**: Bulk create users (max 3000)
 - **bulk_relationship_tuples**: Bulk create relationship tuples (max 1000)
+- **assign_permissions_to_role**: Assign permissions to a role
+- **assign_role_to_user**: Assign a role to a user in a tenant
 - **check_permission**: Check if a user is permitted to perform an action on a resource
 - **create_relation**: Create a ReBAC relation between resources
 - **create_relationship_tuple**: Create a ReBAC relationship tuple
-- **create_resource**: Create a new resource in the schema
-- **create_role**: Create a new role in the schema
-- **create_tenant**: Create a new tenant fact
-- **create_user**: Create a new user fact
 
 
 ## 💬 Prompt Examples

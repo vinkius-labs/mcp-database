@@ -33,12 +33,12 @@ Connect your **ClickHouse** instance to any AI agent to perform lightning-fast O
 
 
 ## Available Tools (4)
-- **execute_query**: Execute a mutating query on ClickHouse
-- **ping**: Check ClickHouse server health
 - **replicas_status**: Check ClickHouse replica delay
 - **select_query**: Automatically enforces readonly=1.
 
 Execute a read-only SELECT query on ClickHouse
+- **execute_query**: Execute a mutating query on ClickHouse
+- **ping**: Check ClickHouse server health
 
 
 ## 💬 Prompt Examples

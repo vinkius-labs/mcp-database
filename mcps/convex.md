@@ -33,7 +33,6 @@ Connect your **Convex** deployment to any AI agent and manage your application's
 
 
 ## Available Tools (4)
-- **run_action**: Call a Convex action function
 - **run_mutation**: Call a Convex mutation function
 - **run_query**: Use this for fetching data.
 
@@ -41,6 +40,7 @@ Call a Convex query function
 - **run_function**: g., "messages/list" instead of "messages:list").
 
 Call a Convex function by its URL identifier
+- **run_action**: Call a Convex action function
 
 
 ## 💬 Prompt Examples

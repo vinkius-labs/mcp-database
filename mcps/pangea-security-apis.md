@@ -34,7 +34,6 @@ Integrate **Pangea** into your AI workflows to provide a robust security layer f
 
 
 ## Available Tools (40)
-- **ai_guard_prompt**: Analyze and redact content in LLM inputs/outputs
 - **ai_guard_text**: Scan text for PII, malicious content, and prompt injections
 - **aidr_chat_completions**: Guard LLM chat completions with integrated logging and tracing
 - **audit_log_bulk**: Create multiple secure audit log entries
@@ -74,6 +73,7 @@ Integrate **Pangea** into your AI workflows to provide a robust security layer f
 - **vault_get**: Retrieve item details or secret values from Vault
 - **vault_key_generate**: Generate symmetric or asymmetric keys in Vault
 - **vault_secret_store**: Store a secret or token in Vault
+- **ai_guard_prompt**: Analyze and redact content in LLM inputs/outputs
 
 
 ## 💬 Prompt Examples

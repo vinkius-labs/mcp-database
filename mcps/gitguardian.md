@@ -36,10 +36,6 @@ Your AI acts as a 24/7 Security Operations Center (SOC) assistant, helping you t
 
 
 ## Available Tools (49)
-- **assign_secret_incident**: Assign a secret incident
-- **bulk_prefix_lookup**: Bulk lookup for honeytoken HMSL hashes
-- **create_custom_tag**: Create a custom tag
-- **create_honeytoken_note**: Create a honeytoken note
 - **create_honeytoken**: Create a honeytoken
 - **create_honeytoken_with_context**: Create a honeytoken within a context
 - **create_team**: Create a team
@@ -50,6 +46,10 @@ Your AI acts as a 24/7 Security Operations Center (SOC) assistant, helping you t
 - **get_honeytoken**: Retrieve a honeytoken
 - **get_quotas**: Retrieve quota overview
 - **get_secret_incident**: Retrieve secret incident details
+- **assign_secret_incident**: Assign a secret incident
+- **bulk_prefix_lookup**: Bulk lookup for honeytoken HMSL hashes
+- **create_custom_tag**: Create a custom tag
+- **create_honeytoken_note**: Create a honeytoken note
 - **get_self_api_token**: Retrieve current API token details
 - **ignore_secret_incident**: Ignore a secret incident
 - **list_api_tokens**: List API tokens

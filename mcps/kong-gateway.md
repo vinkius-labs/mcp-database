@@ -38,6 +38,7 @@ No more manual cURL commands or navigating complex dashboards to check a route c
 
 ## Available Tools (40)
 - **create_certificate**: Create a new Kong Certificate
+- **list_certificates**: List all Kong Certificates
 - **create_consumer**: Create a new Kong Consumer
 - **create_plugin**: Create a new Kong Plugin
 - **create_route**: Create a new Kong Route
@@ -62,7 +63,6 @@ No more manual cURL commands or navigating complex dashboards to check a route c
 - **get_sni**: Get details for a specific Kong SNI
 - **get_status**: Retrieve the status of the Kong node
 - **get_upstream**: Get details for a specific Kong Upstream
-- **list_certificates**: List all Kong Certificates
 - **list_consumers**: List all Kong Consumers
 - **list_plugins**: List all Kong Plugins
 - **list_routes**: List all Kong Routes

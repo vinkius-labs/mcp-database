@@ -38,6 +38,10 @@ Connect your **Keycloak** instance to any AI agent to streamline your Identity a
 - **create_client**: Create a new client
 - **create_group**: Create a top-level group
 - **create_role**: Create a realm-level role
+- **update_client**: Update a client
+- **update_group**: Update a group
+- **update_realm**: Update realm information
+- **update_user**: Update a user
 - **create_user**: Create a new user
 - **delete_client**: Delete a client
 - **delete_group**: Delete a group
@@ -64,10 +68,6 @@ Connect your **Keycloak** instance to any AI agent to streamline your Identity a
 - **partial_export_realm**: Partial export of a realm
 - **regenerate_client_secret**: Regenerate client secret
 - **reset_user_password**: Reset user password
-- **update_client**: Update a client
-- **update_group**: Update a group
-- **update_realm**: Update realm information
-- **update_user**: Update a user
 
 
 ## 💬 Prompt Examples
