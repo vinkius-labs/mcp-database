@@ -25,10 +25,12 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [One Rep Max Calculator](../mcps/one-rep-max-calculator.md) | Estimate your maximum lifting capacity using Epley, Brzycki, and Lander models. |
 | [One-Rep Max Calculator](../mcps/one-rep-max-calculator-1.md) | Estimate your maximum strength capacity using 8 different physiological models. |
 | [Oral Syringe Volume Converter](../mcps/oral-syringe-volume-converter.md) | Convert liquid medication doses from ml to teaspoons, tablespoons, and drops. |
+| [Ovulation Fertile Window Calculator](../mcps/ovulation-fertile-window-calculator.md) | Predict ovulation and fertile windows based on cycle tracking. |
 | [Pediatric BMI Calculator](../mcps/pediatric-bmi-calculator.md) | Calculate pediatric BMI, percentiles, and growth status using WHO/CDC standards for ages 2-20 years. |
 | [Perceived Exertion Converter](../mcps/perceived-exertion-converter.md) | Convert RPE (Borg 6-20 and CR10) to estimated heart rate and training zones. |
 | [Pet Body Condition Score (BCS) Assessor](../mcps/pet-body-condition-score-bcs-assessor.md) | Assess pet weight and nutritional status using a 9-point Body Condition Score (BCS) system. |
 | [Pet Daily Food Calculator](../mcps/pet-daily-food-calculator.md) | Calculate precise daily food portions and feeding schedules for your dog based on weight, life stage, and activity level. |
+| [Pet Food Portion Calculator](../mcps/pet-food-portion-calculator.md) | Calculate precise daily food portions for dogs and cats based on weight, activity, and life stage. |
 | [Pet Growth Tracker](../mcps/pet-growth-tracker.md) | Estimate adult weight and track puppy growth milestones by breed. |
 | [Pet Ideal Weight Calculator](../mcps/pet-ideal-weight-calculator.md) | Determine and classify your pet's weight status based on species, breed, and sex. |
 | [Pet Senior Care Planner](../mcps/pet-senior-care-planner.md) | Identify pet life stages and generate customized veterinary and lifestyle protocols. |

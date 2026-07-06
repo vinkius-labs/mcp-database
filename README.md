@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,504 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,523 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,12 +10,12 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (862 servers)
+- [productivity](categories/productivity.md) (866 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
 - [developer-tools](categories/developer-tools.md) (515 servers)
 - [data-analytics](categories/data-analytics.md) (330 servers)
 - [marketing-automation](categories/marketing-automation.md) (234 servers)
-- [finance](categories/finance.md) (209 servers)
+- [finance](categories/finance.md) (214 servers)
 - [ecommerce](categories/ecommerce.md) (206 servers)
 - [loved-by-devs](categories/loved-by-devs.md) (134 servers)
 - [communication-messaging](categories/communication-messaging.md) (127 servers)
@@ -34,10 +34,10 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [finance-accounting](categories/finance-accounting.md) (52 servers)
 - [cloud-infrastructure](categories/cloud-infrastructure.md) (51 servers)
 - [ship-it](categories/ship-it.md) (49 servers)
-- [health](categories/health.md) (46 servers)
+- [health](categories/health.md) (48 servers)
 - [real-estate](categories/real-estate.md) (44 servers)
+- [utilities](categories/utilities.md) (44 servers)
 - [document-management](categories/document-management.md) (39 servers)
-- [utilities](categories/utilities.md) (39 servers)
 - [collaboration](categories/collaboration.md) (38 servers)
 - [construction](categories/construction.md) (38 servers)
 - [talk-to-me](categories/talk-to-me.md) (38 servers)
@@ -62,18 +62,18 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [audio-music](categories/audio-music.md) (16 servers)
 - [architecture](categories/architecture.md) (15 servers)
 - [supply-chain](categories/supply-chain.md) (15 servers)
-- [lifestyle](categories/lifestyle.md) (13 servers)
+- [lifestyle](categories/lifestyle.md) (14 servers)
 - [agriculture](categories/agriculture.md) (12 servers)
 - [event-management](categories/event-management.md) (11 servers)
 - [payment-processing](categories/payment-processing.md) (11 servers)
 - [inventory-management](categories/inventory-management.md) (10 servers)
 - [automation](categories/automation.md) (9 servers)
 - [seo](categories/seo.md) (9 servers)
+- [utility](categories/utility.md) (9 servers)
 - [business-operations](categories/business-operations.md) (8 servers)
 - [devops-cicd](categories/devops-cicd.md) (8 servers)
 - [science](categories/science.md) (8 servers)
 - [travel-hospitality](categories/travel-hospitality.md) (8 servers)
-- [utility](categories/utility.md) (8 servers)
 - [crm-sales](categories/crm-sales.md) (7 servers)
 - [project-management](categories/project-management.md) (7 servers)
 - [sustainability](categories/sustainability.md) (7 servers)
@@ -179,6 +179,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [transportation-logistics](categories/transportation-logistics.md) (1 servers)
 - [travel](categories/travel.md) (1 servers)
 - [veterinary-wellness](categories/veterinary-wellness.md) (1 servers)
+- [video-production](categories/video-production.md) (1 servers)
 - [workforce-management](categories/workforce-management.md) (1 servers)
 
 

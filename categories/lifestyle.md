@@ -8,6 +8,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [BreezoMeter Air Quality & Pollen](../mcps/breezometer-air-quality-pollen.md) | Universal air quality intelligence — get real-time AQI, pollutants, and pollen data via AI. |
 | [Calendarific](../mcps/calendarific-alternative.md) | Universal holiday intelligence — get public, bank, and religious holidays worldwide via AI. |
 | [Cat Facts](../mcps/cat-facts.md) | Universal cat intelligence engine — get random cat facts and breed info via AI. |
+| [Cat Litter Box Capacity Calculator](../mcps/cat-litter-box-capacity-calculator.md) | Estimate litter volume, monthly usage, replacement frequency, and maintenance costs for your cats. |
 | [Dog CEO](../mcps/dog-ceo.md) | Universal dog intelligence engine — get random dog images and breed data via AI. |
 | [Eco Savings Tracker](../mcps/eco-savings-tracker.md) | Quantify and visualize your environmental impact through personal habit changes. |
 | [Environmental Impact Comparator](../mcps/environmental-impact-comparator.md) | Compare the carbon footprint and waste generation of different lifestyle choices side-by-side. |

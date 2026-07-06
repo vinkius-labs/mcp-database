@@ -137,6 +137,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Capsule CRM](../mcps/capsule-crm.md) | Manage your CRM via Capsule — track contacts, opportunities, and tasks directly from any AI agent. |
 | [Capsulink](../mcps/capsulink.md) | Manage shortened URLs via Capsulink — create links, track clicks, and monitor analytics directly from any AI agent. |
 | [Cardly](../mcps/cardly.md) | Send physical greeting cards via Cardly — automate personalized card sends, track orders, and manage contacts directly from any AI agent. |
+| [Cash Flow Forecaster](../mcps/cash-flow-forecaster.md) | Project future bank balances and identify upcoming liquidity gaps. |
 | [Cashboard](../mcps/cashboard.md) | Manage time tracking, invoicing, and projects via Cashboard — track expenses, send estimates, and monitor client billing directly from any AI agent. |
 | [Castmagic](../mcps/castmagic.md) | Automate audio and video content repurposing via Castmagic — generate transcripts, show notes, and social posts directly from any AI agent. |
 | [CATS ATS](../mcps/cats-ats.md) | Manage recruitment workflows via CATS ATS — track candidates, job orders, and activities directly from any AI agent. |
@@ -228,6 +229,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Deadline Calculator](../mcps/deadline-calculator.md) | Calculate precise end dates by adding calendar or business days, accounting for weekends and regional holidays. |
 | [Debt Avalanche Simulator](../mcps/debt-avalanche-simulator.md) | Run precise month-by-month debt payoff simulations using the highest-interest-rate priority strategy. |
 | [Debt Snowball Simulator](../mcps/debt-snowball-simulator.md) | Simulate debt repayment by prioritizing the smallest balances to build momentum. |
+| [Debt-Free Date Calculator](../mcps/debt-free-date-calculator.md) | Calculate your exact debt payoff date and total interest using Avalanche or Snowball strategies. |
 | [Deck of Cards](../mcps/deck-of-cards.md) | Simulate a full deck of cards via the Deck of Cards API — shuffle, draw, manage piles, and create custom decks for games or simulations. |
 | [Deep Analyst Prover](../mcps/deep-analyst-prover.md) | AI gives surface analysis — restates the question, misses hidden assumptions, uses single-lens thinking. This tool forces multi-model depth: First Principles decomposition, Second-Order cascades (3 levels), Steelmanning (Ideological Turing Test), Inversion, and Premortem risk mapping.... |
 | [DeepL](../mcps/deepl.md) | Translate and audit text — manage multilingual communication via AI. |
@@ -426,6 +428,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Homebase](../mcps/homebase.md) | Automate employee scheduling and time tracking via Homebase — manage shifts, locations, and timecards directly from any AI agent. |
 | [Homerun](../mcps/homerun.md) | Automate recruitment workflows via Homerun — manage job applications, track candidates, and oversee vacancies directly from any AI agent. |
 | [HotDocs](../mcps/hotdocs.md) | Automate document assembly via HotDocs Advance — list templates, create work items, conduct interviews, and generate documents directly from any AI agent. |
+| [Hourly Salary & Real Wage Calculator](../mcps/hourly-salary-real-wage-calculator.md) | Convert pay frequencies and calculate your 'real' hourly wage after taxes, commute, and unpaid breaks. |
 | [HowLongToBeat](../mcps/howlongtobeat.md) | Universal game completion data — get gameplay hours for any video game via AI. |
 | [Howspace](../mcps/howspace.md) | Facilitate collaborative learning and organizational development with AI-powered workshops that engage participants at scale. |
 | [HRBlade](../mcps/hrblade.md) | Streamline recruitment with an ATS that manages job postings, candidate pipelines, and interview scheduling for growing teams. |
@@ -728,6 +731,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Study Hours Estimator](../mcps/study-hours-estimator.md) | Calculate required study duration and structured learning phases for standardized exams. |
 | [Study Schedule Generator](../mcps/study-schedule-generator.md) | Generate personalized study schedules based on subject difficulty and available time. |
 | [Subscription Cashflow Aligner](../mcps/subscription-cashflow-aligner.md) | Find the safest day of the month to set subscription billing dates and minimize overdrafts. |
+| [Subscription Killer Calculator](../mcps/subscription-killer-calculator.md) | Analyze and optimize recurring expenses to maximize disposable income. |
 | [Sunsama](../mcps/sunsama.md) | Connect your AI to Sunsama. Actively manage your day, orchestrate tasks, and balance your work natively from the terminal. |
 | [Superblocks](../mcps/superblocks.md) | Build and manage internal tools and workflows — list applications, manage configurations, and generate secure embed tokens directly from your AI agent. |
 | [Superdocu](../mcps/superdocu.md) | Automate document collection and client onboarding with Superdocu and AI agents. |
