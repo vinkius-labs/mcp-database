@@ -29,15 +29,15 @@ Connect your AI agent to **Kontak** to automate your customer communications and
 
 
 ## Available Tools (10)
-- **list_kontak_messages**: List all sent and received messages
-- **get_message_details**: Get details for a specific message
-- **list_kontak_contacts**: List all contacts
 - **get_contact_details**: Get details for a specific contact
 - **send_outbound_sms**: Send a new SMS message
-- **list_kontak_templates**: List available message templates
 - **list_kontak_tags**: List all contact tags
 - **get_kontak_account_info**: Get account settings and info
 - **list_kontak_webhooks**: List configured webhooks
+- **list_kontak_messages**: List all sent and received messages
+- **get_message_details**: Get details for a specific message
+- **list_kontak_contacts**: List all contacts
+- **list_kontak_templates**: List available message templates
 - **get_kontak_audit_logs**: Retrieve system audit logs
 
 

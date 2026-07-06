@@ -29,15 +29,15 @@ Connect your **Fluxiom** account to any AI agent to automate your Digital Asset 
 
 
 ## Available Tools (9)
-- **create_tag**: Create a new tag
-- **delete_asset**: Remove an asset
-- **get_account_details**: Get account attributes
-- **get_asset**: Get asset details
 - **get_asset_versions**: Get asset version history
 - **list_assets**: List digital assets
 - **list_stages**: List branded portals (Stages)
 - **list_tags**: List organizational tags
 - **update_asset**: Update asset metadata
+- **create_tag**: Create a new tag
+- **delete_asset**: Remove an asset
+- **get_account_details**: Get account attributes
+- **get_asset**: Get asset details
 
 
 ## 💬 Prompt Examples

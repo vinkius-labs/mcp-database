@@ -34,6 +34,10 @@ Connect the **Listen Notes Podcast API** to any AI agent to automate your podcas
 
 
 ## Available Tools (7)
+- **search_podcasts_or_episodes**: Use the "q" parameter for your query.
+
+Search for podcasts or individual episodes
+- **get_trending_podcast_searches**: Get the most recent trending search terms
 - **get_best_podcasts**: You can provide an optional genre_id.
 
 Get a list of best podcasts by genre
@@ -41,10 +45,6 @@ Get a list of best podcasts by genre
 - **list_podcast_genres**: List all available podcast genres
 - **get_episode_details**: Get metadata for a specific podcast episode
 - **get_podcast_details**: Get complete metadata and episodes for a podcast
-- **search_podcasts_or_episodes**: Use the "q" parameter for your query.
-
-Search for podcasts or individual episodes
-- **get_trending_podcast_searches**: Get the most recent trending search terms
 
 
 ## 💬 Prompt Examples

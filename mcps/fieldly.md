@@ -33,10 +33,6 @@ Fieldly is a specialized project management platform for the construction indust
 
 
 ## Available Tools (11)
-- **create_work_item**: Create a new work item
-- **get_booking**: Get details for a specific booking
-- **get_invoice**: Get details for a specific invoice
-- **get_me**: Get details for the authorized application/user
 - **get_work_item**: Get details for a specific work item
 - **list_articles**: List all inventory and service articles
 - **list_bookings**: List all scheduling bookings
@@ -44,6 +40,10 @@ Fieldly is a specialized project management platform for the construction indust
 - **list_invoices**: List all invoices
 - **list_users**: List all users in the system
 - **list_work_items**: List all work items (jobs/tasks)
+- **create_work_item**: Create a new work item
+- **get_booking**: Get details for a specific booking
+- **get_invoice**: Get details for a specific invoice
+- **get_me**: Get details for the authorized application/user
 
 
 ## 💬 Prompt Examples

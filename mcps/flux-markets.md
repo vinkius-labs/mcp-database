@@ -34,15 +34,15 @@ Connect your **Flux Markets** (Onyx) account to any AI agent to monitor energy m
 
 
 ## Available Tools (9)
+- **get_officials**: Get benchmark reports (The Officials)
+- **get_swap_settlements**: Get daily swap settlement prices
+- **list_products**: List all energy products
+- **list_symbols**: List energy symbols
 - **get_account_info**: Get account and API usage details
 - **get_cot_data**: Get Commitment of Traders (COT) data
 - **get_historical_tickers**: Get historical energy prices
 - **get_live_tickers**: Get real-time energy prices
 - **get_market_snapshot**: Get current market snapshot
-- **get_officials**: Get benchmark reports (The Officials)
-- **get_swap_settlements**: Get daily swap settlement prices
-- **list_products**: List all energy products
-- **list_symbols**: List energy symbols
 
 
 ## 💬 Prompt Examples

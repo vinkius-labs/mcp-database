@@ -14,6 +14,18 @@ Empower your AI agents to monitor the New England power grid with the ISO-NE Web
 
 
 ## Available Tools (10)
+- **get_regulation**: Includes clearing prices and capacity requirements. Useful for analyzing grid stability services.
+
+Retrieves regulation requirements and clearing prices
+- **get_reserve**: Essential for auditing grid resilience capacity.
+
+Retrieves reserve requirements and clearing prices
+- **get_seven_day_forecast**: Essential for anticipating grid stress and planning energy procurement.
+
+Retrieves the seven-day load forecast
+- **get_system_load**: Returns current load in megawatts (MW). Essential for monitoring grid stress and power consumption trends.
+
+Retrieves real-time system load data
 - **get_actual_interchange**: g., NYISO, Hydro-Quebec). Essential for understanding net imports and exports of electricity.
 
 Retrieves actual interchange data
@@ -32,18 +44,6 @@ Retrieves hourly load data
 - **get_lmp**: Returns prices in USD/MWh. Essential for tracking energy market volatility and cost of power at specific locations.
 
 Retrieves 5-minute Locational Marginal Prices (LMP)
-- **get_regulation**: Includes clearing prices and capacity requirements. Useful for analyzing grid stability services.
-
-Retrieves regulation requirements and clearing prices
-- **get_reserve**: Essential for auditing grid resilience capacity.
-
-Retrieves reserve requirements and clearing prices
-- **get_seven_day_forecast**: Essential for anticipating grid stress and planning energy procurement.
-
-Retrieves the seven-day load forecast
-- **get_system_load**: Returns current load in megawatts (MW). Essential for monitoring grid stress and power consumption trends.
-
-Retrieves real-time system load data
 
 
 ## 💬 Prompt Examples

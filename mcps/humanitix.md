@@ -14,8 +14,8 @@ Connect your AI agents to Humanitix, the humane ticketing platform. This MCP ser
 
 
 ## Available Tools (10)
-- **get_event**: Retrieves details for a specific event
 - **get_me**: Gets current authenticated user info
+- **get_event**: Retrieves details for a specific event
 - **list_attendees**: Lists attendees for a specific event
 - **list_campaigns**: Lists marketing campaigns
 - **list_events**: Lists virtual and hybrid events

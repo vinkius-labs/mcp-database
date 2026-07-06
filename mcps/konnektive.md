@@ -39,7 +39,6 @@ Search for customers
 - **query_konnektive_transactions**: Provide filters as a JSON string.
 
 Search for payment transactions
-- **list_billing_campaigns**: List all campaigns
 - **list_konnektive_products**: List all products
 - **update_order_shipping_address**: Provide address as a JSON string.
 
@@ -48,6 +47,7 @@ Update the shipping address for an order
 - **get_konnektive_audit_logs**: Provide filters as a JSON string.
 
 Retrieve system audit logs
+- **list_billing_campaigns**: List all campaigns
 
 
 ## 💬 Prompt Examples

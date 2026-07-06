@@ -35,7 +35,6 @@ Connect your **Greenspark** account to any AI agent and automate your business's
 
 
 ## Available Tools (12)
-- **create_impact**: Trigger a new climate impact (e.g. plant a tree)
 - **create_webhook**: Configure a new API webhook
 - **estimate_footprint**: Calculate the carbon footprint of a transaction
 - **get_impact_summary**: Get total aggregated impact data for the account
@@ -47,6 +46,7 @@ Connect your **Greenspark** account to any AI agent and automate your business's
 - **list_impacts**: List historical climate impacts generated
 - **list_projects**: List environmental projects supported by Greenspark
 - **list_webhooks**: List configured API webhooks
+- **create_impact**: Trigger a new climate impact (e.g. plant a tree)
 
 
 ## 💬 Prompt Examples

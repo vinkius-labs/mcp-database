@@ -27,9 +27,6 @@ Connect your **Measured** account to any AI agent and take full control of your 
 
 
 ## Available Tools (8)
-- **get_campaign_performance**: Get performance for a specific campaign
-- **get_incrementality_scores**: Get incrementality scores across channels
-- **get_insights**: Get marketing insights
 - **get_performance_by_channel**: Get performance metrics for a specific channel
 - **get_performance_summary**: Get a unified performance summary
 - **list_channels**: g. Facebook, Google Ads).
@@ -37,6 +34,9 @@ Connect your **Measured** account to any AI agent and take full control of your 
 List all marketing channels tracked by Measured
 - **list_integrations**: List managed integrations
 - **list_reports**: List available performance reports
+- **get_campaign_performance**: Get performance for a specific campaign
+- **get_incrementality_scores**: Get incrementality scores across channels
+- **get_insights**: Get marketing insights
 
 
 ## 💬 Prompt Examples

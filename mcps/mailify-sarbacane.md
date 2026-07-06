@@ -34,6 +34,10 @@ Connect your **Mailify** (Sarbacane) account to any AI agent to automate your pr
 
 
 ## Available Tools (9)
+- **get_address_book_details**: Get details for a specific contact list
+- **list_book_contacts**: List contacts in a specific address book
+- **list_address_books**: List all contact lists (address books)
+- **update_book_contact**: Update an existing contact in an address book
 - **add_contact_to_book**: Requires a list ID and contact data.
 
 Add a new contact to an address book
@@ -41,10 +45,6 @@ Add a new contact to an address book
 - **list_email_campaigns**: List all email marketing campaigns
 - **delete_book_contact**: Remove a contact from an address book
 - **get_campaign_details**: Get details for a specific campaign
-- **get_address_book_details**: Get details for a specific contact list
-- **list_book_contacts**: List contacts in a specific address book
-- **list_address_books**: List all contact lists (address books)
-- **update_book_contact**: Update an existing contact in an address book
 
 
 ## 💬 Prompt Examples

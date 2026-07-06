@@ -28,12 +28,6 @@ Connect your **KnoCommerce** data to your AI agent to unlock deep insights from 
 
 
 ## Available Tools (10)
-- **list_surveys**: Use this to identify survey IDs for analyzing specific campaigns or response sets.
-
-List all KnoCommerce surveys
-- **get_survey_details**: Returns survey title, status, and high-level configuration.
-
-Get details for a specific survey
 - **list_survey_responses**: You can optionally filter by survey_id to see feedback from a specific post-purchase interaction.
 
 List responses for surveys
@@ -50,6 +44,12 @@ List all questions in a specific survey
 Get the latest channel attribution report
 - **list_survey_templates**: List available survey templates
 - **check_knocommerce_api_status**: Check the status of the KnoCommerce API integration
+- **list_surveys**: Use this to identify survey IDs for analyzing specific campaigns or response sets.
+
+List all KnoCommerce surveys
+- **get_survey_details**: Returns survey title, status, and high-level configuration.
+
+Get details for a specific survey
 
 
 ## 💬 Prompt Examples

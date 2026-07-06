@@ -35,17 +35,17 @@ Connect your **Froged** account to any AI agent to automate your customer succes
 
 
 ## Available Tools (11)
+- **list_behavioral_events**: List tracked events
+- **list_kb_articles**: List help articles
+- **send_chat_message**: Send support reply
+- **track_custom_event**: Track user behavior
+- **upsert_contact**: Create/Update contact
 - **verify_api_status**: Verify API connection
 - **get_contact_details**: Get contact metadata
 - **get_chat_details**: Get conversation history
 - **list_marketing_campaigns**: List active campaigns
 - **list_cs_contacts**: List Froged contacts
 - **list_support_conversations**: List support chats
-- **list_behavioral_events**: List tracked events
-- **list_kb_articles**: List help articles
-- **send_chat_message**: Send support reply
-- **track_custom_event**: Track user behavior
-- **upsert_contact**: Create/Update contact
 
 
 ## 💬 Prompt Examples

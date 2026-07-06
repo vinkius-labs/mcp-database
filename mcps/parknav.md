@@ -40,11 +40,11 @@ Parknav uses deep learning and IoT sensors to provide real-time and predictive d
 
 Get AI-predicted parking availability for a location at a specific time
 - **get_street_segments**: Get status of street segments for on-street parking
-- **get_historical_trends**: Get historical availability trends for a location
 - **get_parking_zones**: Get regulations and pricing for parking zones
 - **get_city_insights**: Get high-level parking insights for a specific city
 - **get_nearest_spot**: Find the nearest currently available parking spot
 - **get_realtime_occupancy**: Get current real-time occupancy for a location
+- **get_historical_trends**: Get historical availability trends for a location
 
 
 ## 💬 Prompt Examples

@@ -34,17 +34,17 @@ Connect your **LinkAce** instance to any AI agent to automate your personal know
 
 
 ## Available Tools (9)
+- **get_bookmark_details**: Get details for a specific bookmark
+- **list_all_bookmarks**: List all bookmarks (links) in your LinkAce account
+- **list_all_collections**: List all bookmark collections (lists)
+- **search_bookmarks**: Search for bookmarks by keyword
+- **list_all_tags**: List all tags used for organizing bookmarks
 - **create_new_bookmark**: Requires at least a URL.
 
 Add a new link to your archive
 - **create_new_collection**: Add a new collection (list)
 - **create_new_tag**: Add a new tag
 - **delete_bookmark**: Remove a bookmark from your archive
-- **get_bookmark_details**: Get details for a specific bookmark
-- **list_all_bookmarks**: List all bookmarks (links) in your LinkAce account
-- **list_all_collections**: List all bookmark collections (lists)
-- **search_bookmarks**: Search for bookmarks by keyword
-- **list_all_tags**: List all tags used for organizing bookmarks
 
 
 ## 💬 Prompt Examples

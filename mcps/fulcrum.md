@@ -35,8 +35,6 @@ Connect your **Fulcrum** environment to any AI agent to automate your field data
 
 
 ## Available Tools (10)
-- **create_record**: Create data record
-- **check_api_status**: Verify API connection
 - **get_form_schema**: Get form schema
 - **get_record_details**: Get record metadata
 - **list_data_forms**: List apps/forms
@@ -49,6 +47,8 @@ List field data records
 List roles
 - **list_webhooks**: List webhook configs
 - **query_records_sql**: Query data with SQL
+- **create_record**: Create data record
+- **check_api_status**: Verify API connection
 
 
 ## 💬 Prompt Examples
