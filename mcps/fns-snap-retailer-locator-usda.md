@@ -33,10 +33,10 @@ Connect to the **USDA Food and Nutrition Service (FNS)** database to locate reta
 
 
 ## Available Tools (2)
-- **search_retailers_by_location**: Search for SNAP-authorized retailers within a radius of a coordinate
 - **search_retailers**: Example: State = 'VA' AND Zip5 = '22314'
 
 Search for SNAP-authorized retailers by attributes
+- **search_retailers_by_location**: Search for SNAP-authorized retailers within a radius of a coordinate
 
 
 ## 💬 Prompt Examples

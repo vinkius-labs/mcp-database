@@ -34,10 +34,6 @@ Connect to the official **USAspending** database and gain unprecedented transpar
 
 
 ## Available Tools (32)
-- **autocomplete_awarding_agency**: Awarding agencies matching search text
-- **autocomplete_glossary**: Glossary terms matching search text
-- **autocomplete_location**: Locations based on search text
-- **autocomplete_recipient**: Recipient names and UEI based on search text
 - **bulk_download_awards**: Generates ZIP file of award data in CSV
 - **download_search**: ZIP file for Awards, Subawards, and Transactions
 - **get_agency_awards_count**: Count of award types for agencies in a fiscal year
@@ -68,6 +64,10 @@ Connect to the official **USAspending** database and gain unprecedented transpar
 Grouped spending data for visualizations
 - **search_spending_by_geography**: Spending by state, county, or congressional district
 - **search_spending_over_time**: Aggregated transaction amounts over time
+- **autocomplete_awarding_agency**: Awarding agencies matching search text
+- **autocomplete_glossary**: Glossary terms matching search text
+- **autocomplete_location**: Locations based on search text
+- **autocomplete_recipient**: Recipient names and UEI based on search text
 
 
 ## 💬 Prompt Examples

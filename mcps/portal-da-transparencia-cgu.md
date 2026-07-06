@@ -34,15 +34,15 @@ Connect to the **Portal da Transparência (CGU)** and audit Brazilian public spe
 
 
 ## Available Tools (9)
-- **get_auxilio_emergencial_beneficiario_por_municipio**: Restricted API limit applies.
-
-Get Auxilio Emergencial beneficiaries by municipality
 - **get_auxilio_emergencial_por_cpf_ou_nis**: Restricted API limit applies.
 
 Get Auxilio Emergencial by CPF or NIS
 - **get_auxilio_emergencial_por_municipio**: Restricted API limit applies.
 
 Get Auxilio Emergencial by municipality
+- **get_auxilio_emergencial_beneficiario_por_municipio**: Restricted API limit applies.
+
+Get Auxilio Emergencial beneficiaries by municipality
 - **get_bolsa_familia_disponivel_por_cpf_ou_nis**: Restricted API limit applies.
 
 Get available Bolsa Familia by CPF or NIS

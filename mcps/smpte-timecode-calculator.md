@@ -19,15 +19,15 @@ LLMs are notoriously terrible at base-60 and base-30 math. If you ask an AI to a
 
 
 ## Available Tools (3)
-- **add_timecodes**: Pass the frame count and the framerate (24, 25, 30, etc.).
-
-Adds two SMPTE timecodes natively supporting drop-frame math
 - **frames_to_timecode**: Pass both timecode strings and the framerate, and receive the summed result.
 
 Converts absolute frame counts into SMPTE formatted timecode strings
 - **subtract_timecodes**: Pass the timecode and framerate.
 
 Subtracts two SMPTE timecodes
+- **add_timecodes**: Pass the frame count and the framerate (24, 25, 30, etc.).
+
+Adds two SMPTE timecodes natively supporting drop-frame math
 
 
 ## 💬 Prompt Examples

@@ -29,10 +29,6 @@ Connect **Open Brewery DB**, the largest open-source brewery database, to any AI
 
 
 ## Available Tools (11)
-- **autocomplete_breweries**: Useful for type-ahead search or finding breweries by partial name.
-
-Autocomplete brewery names
-- **get_breweries_by_ids**: Get multiple breweries by their IDs
 - **get_brewery**: Get a single brewery by ID
 - **get_breweries_by_city**: Results can be paginated and sorted.
 
@@ -49,6 +45,10 @@ Get breweries by state
 - **get_breweries_by_type**: Types include: micro (small craft), nano (very small), regional (regional craft), brewpub (brewery + restaurant), large (major brewery), planning, contract, proprietor, closed.
 
 Get breweries by type
+- **autocomplete_breweries**: Useful for type-ahead search or finding breweries by partial name.
+
+Autocomplete brewery names
+- **get_breweries_by_ids**: Get multiple breweries by their IDs
 - **get_nearby_breweries**: Results are sorted by distance.
 
 Get breweries near a location

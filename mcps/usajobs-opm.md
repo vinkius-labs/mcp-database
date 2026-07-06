@@ -33,9 +33,6 @@ Connect to the official **USAJOBS** (Office of Personnel Management) database to
 
 
 ## Available Tools (4)
-- **get_announcement_text**: for historic JOAs.
-
-Retrieve long text fields for current and past job postings
 - **get_code_list**: No auth required.
 
 Retrieve valid values and codes for filtering search results
@@ -45,6 +42,9 @@ Retrieve bulk data for current and past job postings
 - **search_jobs**: You can filter by keyword, location, job category, and more.
 
 Search for currently open job announcements on USAJOBS
+- **get_announcement_text**: for historic JOAs.
+
+Retrieve long text fields for current and past job postings
 
 
 ## 💬 Prompt Examples

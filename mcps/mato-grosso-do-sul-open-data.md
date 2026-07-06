@@ -34,13 +34,13 @@ Connect to the **Mato Grosso do Sul (MS) Open Data Portal** to explore and analy
 
 
 ## Available Tools (7)
-- **datastore_search_sql**: Execute a SQL query on DataStore resources
-- **datastore_search**: Search data in a DataStore resource
 - **get_package**: Get details of a specific dataset package
 - **get_resource**: Get details of a specific resource
 - **list_groups**: List all groups
 - **list_organizations**: List all organizations
 - **list_packages**: List all dataset packages
+- **datastore_search_sql**: Execute a SQL query on DataStore resources
+- **datastore_search**: Search data in a DataStore resource
 
 
 ## 💬 Prompt Examples

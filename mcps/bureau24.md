@@ -40,8 +40,8 @@ Connect your **Bureau24 (bureau24.fr)** virtual secretary account to any AI agen
 - **get_me**: fr account and subscription.
 
 Get account information
-- **get_message**: Get details of a specific message
 - **get_secretary_status**: Get your current secretary status
+- **get_message**: Get details of a specific message
 - **list_calls**: List recent calls received by bureau24.fr
 - **list_contacts**: List your address book contacts
 - **list_instructions**: List secretary handling instructions

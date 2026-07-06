@@ -33,12 +33,12 @@ Connect to the **FOIA.gov** API to streamline access to Freedom of Information A
 
 
 ## Available Tools (4)
-- **get_agency_component_request_form**: Fetch the FOIA request form structure for a specific component
-- **get_agency_component**: Fetch a specific agency component by UUID
-- **get_annual_report_xml**: Fetch an agency annual report in XML format
 - **list_agency_components**: Supports JSON API sparse fieldsets and includes.
 
 List all FOIA agency components
+- **get_agency_component_request_form**: Fetch the FOIA request form structure for a specific component
+- **get_agency_component**: Fetch a specific agency component by UUID
+- **get_annual_report_xml**: Fetch an agency annual report in XML format
 
 
 ## 💬 Prompt Examples

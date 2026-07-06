@@ -36,7 +36,6 @@ No more manual toggling between sales tools or missing critical follow-ups. Your
 
 
 ## Available Tools (10)
-- **check_airmatch_status**: Verify AirMatch Pro API connectivity
 - **create_proposal**: Optionally link to an existing customer.
 
 Create a new proposal
@@ -48,6 +47,7 @@ Create a new proposal
 - **list_jobs**: List all jobs
 - **list_leads**: List all leads
 - **list_proposals**: List all proposals
+- **check_airmatch_status**: Verify AirMatch Pro API connectivity
 
 
 ## 💬 Prompt Examples

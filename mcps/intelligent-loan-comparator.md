@@ -19,12 +19,12 @@ Autonomous financial agents demand uncompromising mathematical accuracy. When st
 
 
 ## Available Tools (4)
-- **calculate_loan_amortization**: Provide principal, annual rate, months, and type.
-
-Calculates total interest, total paid, and installments for a specific loan (PRICE or SAC)
 - **compare_two_loans**: Directly compares two distinct loan offers and determines which one is mathematically cheaper over the full term
 - **calculate_effective_interest_rate**: Converts a nominal annual interest rate into an effective annual rate (EAR) based on compounding periods
 - **calculate_loan_payoff_speed**: Calculates the time and interest saved by making an extra monthly payment towards the principal
+- **calculate_loan_amortization**: Provide principal, annual rate, months, and type.
+
+Calculates total interest, total paid, and installments for a specific loan (PRICE or SAC)
 
 
 ## 💬 Prompt Examples

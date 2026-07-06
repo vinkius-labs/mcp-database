@@ -34,10 +34,10 @@ Connect to the **NIH RePORTER** (Research Portfolio Online Reporting Tools) to e
 
 
 ## Available Tools (2)
+- **search_publications**: Search for publications associated with NIH projects
 - **search_projects**: Use this to find grants, funding amounts, PIs, and organizations.
 
 Search for NIH projects based on specified criteria
-- **search_publications**: Search for publications associated with NIH projects
 
 
 ## 💬 Prompt Examples

@@ -36,13 +36,6 @@ No more manual copying of article blueprints or missing campaign updates. Your A
 
 
 ## Available Tools (10)
-- **check_aimasher_status**: Verify AIMasher API connectivity
-- **create_campaign**: Optionally assign a template.
-
-Create a new AI campaign
-- **generate_content**: Optionally pass a custom prompt.
-
-Generate content for a campaign
 - **get_account**: Get account information
 - **get_campaign**: Get campaign details
 - **get_template**: Get template details
@@ -50,6 +43,13 @@ Generate content for a campaign
 - **list_outputs**: List campaign outputs
 - **list_results**: List all generated results
 - **list_templates**: List all content templates
+- **check_aimasher_status**: Verify AIMasher API connectivity
+- **create_campaign**: Optionally assign a template.
+
+Create a new AI campaign
+- **generate_content**: Optionally pass a custom prompt.
+
+Generate content for a campaign
 
 
 ## 💬 Prompt Examples

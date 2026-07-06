@@ -36,12 +36,6 @@ No API key required — completely free.
 
 
 ## Available Tools (6)
-- **get_all_characters**: Each entry includes name, house, role (student/staff/creature), actor name, patronus, species and alive status. Useful for exploring the entire Harry Potter universe.
-
-Get all Harry Potter characters and creatures
-- **get_character**: Returns name, house, role, actor, patronus, species, ancestry and alive status. Use get_all_characters to find character IDs first.
-
-Get a specific Harry Potter character by ID
 - **get_house_characters**: Houses: gryffindor, slytherin, ravenclaw, hufflepuff. Each entry includes name, actor, role, patronus and species. Useful for exploring house-specific character rosters.
 
 Get characters from a specific Hogwarts house
@@ -54,6 +48,12 @@ Get all Hogwarts staff and teachers
 - **get_students**: Each entry includes name, house, year, actor name, patronus, species and alive status. Useful for finding students by house or character.
 
 Get all Hogwarts students
+- **get_all_characters**: Each entry includes name, house, role (student/staff/creature), actor name, patronus, species and alive status. Useful for exploring the entire Harry Potter universe.
+
+Get all Harry Potter characters and creatures
+- **get_character**: Returns name, house, role, actor, patronus, species, ancestry and alive status. Use get_all_characters to find character IDs first.
+
+Get a specific Harry Potter character by ID
 
 
 ## 💬 Prompt Examples

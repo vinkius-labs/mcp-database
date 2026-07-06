@@ -34,13 +34,6 @@ Connect your **Pixelfed** account to any AI agent to manage your decentralized p
 
 
 ## Available Tools (17)
-- **create_status**: Supports text content, media IDs, and visibility settings.
-
-Create a new post (status)
-- **delete_status**: Delete a status (post)
-- **favourite_status**: Favourite (like) a status
-- **follow_account**: Follow an account
-- **get_account**: Get details for a specific account
 - **get_followers**: Get followers of an account
 - **get_following**: Get accounts followed by an account
 - **get_home_timeline**: Get home timeline
@@ -55,6 +48,13 @@ Create a new post (status)
 
 Upload media
 - **verify_credentials**: Verify authenticated user credentials
+- **create_status**: Supports text content, media IDs, and visibility settings.
+
+Create a new post (status)
+- **delete_status**: Delete a status (post)
+- **favourite_status**: Favourite (like) a status
+- **follow_account**: Follow an account
+- **get_account**: Get details for a specific account
 
 
 ## 💬 Prompt Examples
