@@ -34,12 +34,6 @@ Connect your **Swiftfox** account to any AI agent and take full control of your 
 
 
 ## Available Tools (11)
-- **check_swiftfox_status**: Returns a status indicator and account metadata to confirm valid credentials and active connectivity.
-
-Verify Swiftfox API connectivity
-- **get_event_fields**: Useful for understanding the data schema before creating or filtering events.
-
-Get custom field definitions for events
 - **get_organization**: Get full details of a specific organization in Swiftfox
 - **get_person**: Get full details of a specific person in Swiftfox
 - **list_circles**: Optionally filter by a search term matching circle names.
@@ -63,6 +57,12 @@ Get the authenticated Swiftfox user profile
 - **list_person_subscriptions**: Subscriptions track membership plans, payment status, and renewal dates.
 
 List subscriptions for a specific person
+- **check_swiftfox_status**: Returns a status indicator and account metadata to confirm valid credentials and active connectivity.
+
+Verify Swiftfox API connectivity
+- **get_event_fields**: Useful for understanding the data schema before creating or filtering events.
+
+Get custom field definitions for events
 
 
 ## 💬 Prompt Examples

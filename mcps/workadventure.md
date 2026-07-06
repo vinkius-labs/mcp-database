@@ -33,8 +33,6 @@ Connect your **WorkAdventure** virtual world to any AI agent and simplify how yo
 
 
 ## Available Tools (10)
-- **create_member**: Add a new member to the world
-- **delete_member**: Remove a member from the world
 - **get_map_details**: Get details of a specific map
 - **get_member_details**: Get details of a specific member
 - **get_room_variables**: Get variables for a room
@@ -43,6 +41,8 @@ Connect your **WorkAdventure** virtual world to any AI agent and simplify how yo
 - **list_members**: List world members in WorkAdventure
 - **list_rooms**: List active rooms
 - **update_room_variable**: Update a room variable
+- **create_member**: Add a new member to the world
+- **delete_member**: Remove a member from the world
 
 
 ## 💬 Prompt Examples

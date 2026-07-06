@@ -36,9 +36,6 @@ No more manual checking of individual view counts or missing video recording sta
 
 
 ## Available Tools (10)
-- **check_zipper_status**: Verify ZipperHQ API connectivity
-- **get_contact_views**: Get video views for a specific contact
-- **get_account**: Get your ZipperHQ account info
 - **get_video_analytics**: Get analytics for a specific video
 - **get_video**: Get details of a specific video
 - **list_contacts**: List all video recipients
@@ -46,6 +43,9 @@ No more manual checking of individual view counts or missing video recording sta
 - **list_videos**: List all video emails
 - **get_recent_videos**: Get the 10 most recent videos
 - **search_videos**: Search videos by keyword
+- **check_zipper_status**: Verify ZipperHQ API connectivity
+- **get_contact_views**: Get video views for a specific contact
+- **get_account**: Get your ZipperHQ account info
 
 
 ## 💬 Prompt Examples

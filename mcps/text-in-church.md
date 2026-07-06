@@ -35,11 +35,11 @@ Connect your **Text In Church** account to any AI agent and simplify how you man
 
 
 ## Available Tools (5)
+- **send_church_sms**: Send an SMS message
 - **add_church_person**: Add a new person
 - **list_church_groups**: List church groups
 - **list_church_keywords**: List active keywords
 - **list_church_people**: List people in the church directory
-- **send_church_sms**: Send an SMS message
 
 
 ## 💬 Prompt Examples

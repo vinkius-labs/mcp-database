@@ -20,14 +20,14 @@ String manipulation is one of the weakest aspects of LLM generation. When tasked
 
 
 ## Available Tools (4)
-- **html_entities_codec**: Encode raw user input into HTML entities, or decode HTML entities back to raw text.
-
-Encodes or decodes malicious HTML characters (<, >, &, ") into safe entity formats
-- **punycode_codec**: Converts internationalized domains (IDN) with special characters into DNS-compliant Punycode ASCII (e.g. xn--)
 - **unicode_escapes_codec**: Transforms standard characters into strict Unicode escapes (\uXXXX) and vice versa
 - **url_codec**: It uses native V8 encodeURIComponent/decodeURIComponent logic.
 
 Safely encodes or decodes URL components (e.g. converting spaces to %20)
+- **html_entities_codec**: Encode raw user input into HTML entities, or decode HTML entities back to raw text.
+
+Encodes or decodes malicious HTML characters (<, >, &, ") into safe entity formats
+- **punycode_codec**: Converts internationalized domains (IDN) with special characters into DNS-compliant Punycode ASCII (e.g. xn--)
 
 
 ## 💬 Prompt Examples

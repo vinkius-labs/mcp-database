@@ -33,10 +33,10 @@ Connect to the **FBI Crime Data Explorer (CDE)** to retrieve comprehensive law e
 
 
 ## Available Tools (4)
-- **get_agency_summarized**: Retrieve crime data for a specific law enforcement agency
 - **get_national_estimates**: Retrieve national crime estimates
 - **get_nibrs_victim_demographics**: Retrieve NIBRS victim demographic data
 - **get_state_summarized**: Retrieve crime statistics for a specific state
+- **get_agency_summarized**: Retrieve crime data for a specific law enforcement agency
 
 
 ## 💬 Prompt Examples

@@ -20,13 +20,13 @@ When generating Frontend code (Tailwind, CSS), AI models often hallucinate color
 
 
 ## Available Tools (3)
+- **manipulate_luminance**: Pass a positive percentage to lighten, or negative to darken.
+
+Lightens or darkens a specific color by adjusting its HSL luminance percentage
 - **convert_color**: Dynamically converts any CSS color (HEX, RGB, or HSL) into all three format variations
 - **generate_color_palette**: Provide a base color and choose either analogous or complementary.
 
 Generates a mathematical color palette (analogous or complementary) based on a primary seed color
-- **manipulate_luminance**: Pass a positive percentage to lighten, or negative to darken.
-
-Lightens or darkens a specific color by adjusting its HSL luminance percentage
 
 
 ## 💬 Prompt Examples

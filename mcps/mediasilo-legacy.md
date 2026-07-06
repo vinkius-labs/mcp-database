@@ -34,17 +34,17 @@ Connect your **MediaSilo (Legacy)** account to any AI agent and manage video pro
 
 
 ## Available Tools (11)
-- **list_assets**: List all assets in the MediaSilo account
-- **list_folder_assets**: List assets within a specific MediaSilo folder
-- **get_asset**: Get details for a specific MediaSilo asset
-- **get_project**: Get details for a specific MediaSilo project
-- **get_quicklink**: Get details for a specific MediaSilo QuickLink
 - **get_user**: Get details for a specific MediaSilo user
 - **get_current_user**: Get current authenticated MediaSilo user
 - **list_project_users**: List users assigned to a specific MediaSilo project
 - **list_projects**: List projects in the MediaSilo account
 - **list_quicklinks**: List all QuickLinks in the MediaSilo account
 - **list_users**: List all users in the MediaSilo account
+- **list_assets**: List all assets in the MediaSilo account
+- **list_folder_assets**: List assets within a specific MediaSilo folder
+- **get_asset**: Get details for a specific MediaSilo asset
+- **get_project**: Get details for a specific MediaSilo project
+- **get_quicklink**: Get details for a specific MediaSilo QuickLink
 
 
 ## 💬 Prompt Examples

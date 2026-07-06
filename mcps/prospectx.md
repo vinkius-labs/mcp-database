@@ -29,7 +29,6 @@ Designed for real estate investors, wholesalers, and acquisitions teams looking 
 
 
 ## Available Tools (17)
-- **check_prospectx_status**: Verify connectivity
 - **create_lead**: Create a lead
 - **create_property_list**: Create a list
 - **get_campaign**: Get campaign details
@@ -46,6 +45,7 @@ Designed for real estate investors, wholesalers, and acquisitions teams looking 
 - **search_properties**: Search properties
 - **skip_trace**: Skip trace a property
 - **update_lead**: Update a lead
+- **check_prospectx_status**: Verify connectivity
 
 
 ## 💬 Prompt Examples

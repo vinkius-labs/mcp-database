@@ -34,10 +34,6 @@ Connect your **Memo Meister** account to any AI agent and manage field documenta
 
 
 ## Available Tools (11)
-- **add_memo_comment**: Add a comment to a memo
-- **create_memo**: Create a new memo in a project
-- **delete_memo**: Delete a memo
-- **get_me**: Get information about the current authenticated user
 - **get_memo**: Get details of a specific memo
 - **get_project**: Get details of a specific project
 - **list_memo_comments**: List comments on a memo
@@ -45,6 +41,10 @@ Connect your **Memo Meister** account to any AI agent and manage field documenta
 - **list_memos**: List memos (notes) in a project
 - **list_projects**: List all projects (memosets) in MemoMeister
 - **update_memo**: Update an existing memo
+- **add_memo_comment**: Add a comment to a memo
+- **create_memo**: Create a new memo in a project
+- **delete_memo**: Delete a memo
+- **get_me**: Get information about the current authenticated user
 
 
 ## 💬 Prompt Examples

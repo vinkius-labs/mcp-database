@@ -23,16 +23,16 @@ Connect your **SigmaMind** account to any AI agent and manage AI voice workflows
 
 
 ## Available Tools (10)
-- **check_sigmamind_status**: Verify API connectivity
-- **create_agent**: Create a voice agent
-- **create_call**: Initiate a voice call
-- **get_agent**: Get agent details
 - **get_call_analysis**: Get call analysis
 - **get_call**: Get call details
 - **get_call_transcript**: Get call transcript
 - **list_agents**: List all agents
 - **list_calls**: List all calls
 - **list_numbers**: List phone numbers
+- **check_sigmamind_status**: Verify API connectivity
+- **create_agent**: Create a voice agent
+- **create_call**: Initiate a voice call
+- **get_agent**: Get agent details
 
 
 ## 💬 Prompt Examples

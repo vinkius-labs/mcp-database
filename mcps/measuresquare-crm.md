@@ -23,10 +23,6 @@ Connect your **MeasureSquare** account to any AI agent and manage flooring estim
 
 
 ## Available Tools (11)
-- **check_measuresquare_status**: Verify API connectivity
-- **get_client**: Get client details
-- **get_estimation**: Get project estimation
-- **get_pdf_link**: Get project PDF
 - **get_project_labor**: Get project labor
 - **get_project_materials**: Get project materials
 - **get_project_rooms**: Get project rooms
@@ -34,6 +30,10 @@ Connect your **MeasureSquare** account to any AI agent and manage flooring estim
 - **list_clients**: List clients
 - **list_projects**: List all projects
 - **list_templates**: List estimation templates
+- **check_measuresquare_status**: Verify API connectivity
+- **get_client**: Get client details
+- **get_estimation**: Get project estimation
+- **get_pdf_link**: Get project PDF
 
 
 ## 💬 Prompt Examples

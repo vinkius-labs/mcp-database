@@ -36,7 +36,6 @@ No more manual status checking or missed quotes. Your AI acts as a dedicated pro
 
 
 ## Available Tools (11)
-- **create_customer**: Add a new customer
 - **create_order**: Pass data as a JSON string.
 
 Create a new order or quote
@@ -49,6 +48,7 @@ Create a new order or quote
 - **list_line_items**: List all line items on an order
 - **list_payments**: List payments for an order
 - **update_order**: Update an existing order
+- **create_customer**: Add a new customer
 
 
 ## 💬 Prompt Examples

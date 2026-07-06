@@ -35,6 +35,16 @@ Connect to the **Directory of Open Access Journals (DOAJ)** to explore millions 
 
 
 ## Available Tools (8)
+- **get_article**: Retrieve a specific DOAJ article by ID
+- **search_articles**: Supports fielded search (e.g., bibjson.title:"Quantum").
+
+Search DOAJ articles using Elasticsearch query string syntax
+- **search_journals**: Supports fielded search (e.g., bibjson.title:"Journal of Science").
+
+Search DOAJ journals using Elasticsearch query string syntax
+- **update_article**: Requires publisher API key.
+
+Update an existing DOAJ article
 - **bulk_create_articles**: Requires publisher API key. Keep batch sizes around 600KB.
 
 Bulk upload articles to DOAJ
@@ -47,16 +57,6 @@ Create a new article in DOAJ
 - **delete_article**: Requires publisher API key.
 
 Delete an article from DOAJ
-- **get_article**: Retrieve a specific DOAJ article by ID
-- **search_articles**: Supports fielded search (e.g., bibjson.title:"Quantum").
-
-Search DOAJ articles using Elasticsearch query string syntax
-- **search_journals**: Supports fielded search (e.g., bibjson.title:"Journal of Science").
-
-Search DOAJ journals using Elasticsearch query string syntax
-- **update_article**: Requires publisher API key.
-
-Update an existing DOAJ article
 
 
 ## 💬 Prompt Examples
