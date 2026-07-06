@@ -20,14 +20,14 @@ Grant your AI agent (like Claude or Cursor) absolute read-and-write sovereignty 
 
 
 ## Available Tools (6)
+- **list_workspaces**: Lists all SingleStore workspaces
+- **vector_search**: Performs a DOT_PRODUCT vector similarity search
 - **execute_sql**: Use read-only SQL statements whenever possible.
 
 Executes a SQL query on a SingleStore database
 - **get_billing_usage**: Retrieves billing and usage metrics
 - **list_databases**: Lists all databases within a specific workspace
 - **list_organizations**: Lists organizations associated with the account
-- **list_workspaces**: Lists all SingleStore workspaces
-- **vector_search**: Performs a DOT_PRODUCT vector similarity search
 
 
 ## 💬 Prompt Examples

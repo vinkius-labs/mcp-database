@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire financial research and market a
 
 
 ## Available Tools (6)
-- **list_crypto_symbols**: List supported crypto symbols for an exchange
-- **get_basic_financials**: Get basic financial metrics for a company
-- **get_market_news**: Get latest market news in a category
 - **get_company_profile**: Get general information about a company by symbol
 - **get_stock_quote**: Get real-time quote data for a specific stock symbol
 - **search_symbols**: Search for stock or crypto symbols by name
+- **list_crypto_symbols**: List supported crypto symbols for an exchange
+- **get_basic_financials**: Get basic financial metrics for a company
+- **get_market_news**: Get latest market news in a category
 
 
 ## 💬 Prompt Examples

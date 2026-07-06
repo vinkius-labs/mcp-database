@@ -35,15 +35,6 @@ Connect your **Oura Ring** to any AI agent and access your personal health data 
 
 
 ## Available Tools (7)
-- **get_activity**: Supports date range filtering.
-
-Get your Oura activity data
-- **get_heart_rate**: Returns timestamp, heart rate value and HRV for each sample. Supports date range filtering. Note: This endpoint returns high-frequency data; use narrow date ranges.
-
-Get your Oura heart rate data
-- **get_readiness**: Supports date range filtering.
-
-Get your Oura readiness data
 - **get_sessions**: Includes overall scores, sleep metrics, activity data and readiness indicators. Supports date range filtering.
 
 Get your Oura session data
@@ -56,6 +47,15 @@ Get your Oura tags
 - **get_workouts**: Workouts can be manually logged or auto-detected by the Oura Ring. Supports date range filtering.
 
 Get your Oura workout data
+- **get_activity**: Supports date range filtering.
+
+Get your Oura activity data
+- **get_heart_rate**: Returns timestamp, heart rate value and HRV for each sample. Supports date range filtering. Note: This endpoint returns high-frequency data; use narrow date ranges.
+
+Get your Oura heart rate data
+- **get_readiness**: Supports date range filtering.
+
+Get your Oura readiness data
 
 
 ## 💬 Prompt Examples

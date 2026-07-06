@@ -37,8 +37,8 @@ Connect your AI agent to **Tinybird**, the real-time data platform for developer
 - **execute_sql_query**: Execute an arbitrary SQL query against the Tinybird workspace
 - **get_datasource_details**: Get comprehensive information for a specific Data Source
 - **get_pipe_details**: Get detailed information for a specific Pipe
-- **get_datasource_stats**: Retrieve ingestion and usage statistics for a Data Source
 - **list_datasources**: Retrieve a list of all Data Sources in the current workspace
+- **get_datasource_stats**: Retrieve ingestion and usage statistics for a Data Source
 - **list_pipe_nodes**: List all SQL nodes within a specific Pipe
 - **list_pipes**: Retrieve a list of all Pipes in the current workspace
 - **list_auth_tokens**: Retrieve a list of all authentication tokens in the workspace

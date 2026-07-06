@@ -23,18 +23,18 @@ SEC XBRL financial data.
 
 
 ## Available Tools (4)
-- **get_key_financials**: Returns the most recent 5 reported values across 10-K and 10-Q filings. This is like a mini Bloomberg terminal — for free.
-
-Get key financial data for a company — revenue, net income, assets, equity, EPS, cash
-- **get_financial_metric**: Common concepts: Revenues, NetIncomeLoss, Assets, Liabilities, StockholdersEquity, EarningsPerShareBasic, LongTermDebt, ResearchAndDevelopmentExpense, CashAndCashEquivalentsAtCarryingValue, CommonStockSharesOutstanding. If the concept is not found, returns available concepts.
-
-Get a specific US-GAAP financial concept for a company (e.g., Revenue, Debt, R&D)
 - **get_all_company_facts**: This is the raw, comprehensive dataset — hundreds of concepts across multiple years. Use get_key_financials for a curated summary, or this for deep analysis.
 
 Get ALL XBRL financial facts for a company — complete financial data dump
 - **get_industry_comparison**: Useful for industry comparison and screening. Example: get all companies' Revenue for CY2024. Period format: CY2024 (annual), CY2024Q1 (quarterly), CY2024Q1I (instant).
 
 Compare a financial metric across ALL companies — industry-wide XBRL frame data
+- **get_key_financials**: Returns the most recent 5 reported values across 10-K and 10-Q filings. This is like a mini Bloomberg terminal — for free.
+
+Get key financial data for a company — revenue, net income, assets, equity, EPS, cash
+- **get_financial_metric**: Common concepts: Revenues, NetIncomeLoss, Assets, Liabilities, StockholdersEquity, EarningsPerShareBasic, LongTermDebt, ResearchAndDevelopmentExpense, CashAndCashEquivalentsAtCarryingValue, CommonStockSharesOutstanding. If the concept is not found, returns available concepts.
+
+Get a specific US-GAAP financial concept for a company (e.g., Revenue, Debt, R&D)
 
 
 ## 💬 Prompt Examples

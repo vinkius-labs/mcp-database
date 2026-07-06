@@ -29,9 +29,6 @@ Connect your AI directly with **Salt Security** to proactively defend your Appli
 
 
 ## Available Tools (10)
-- **block_attacker**: Issues a command to block a specific attacker
-- **get_attackers**: Lists known threat actors profiled by Salt
-- **get_attacks**: Lists detected malicious API attacks
 - **get_endpoint**: Retrieves details for a specific API endpoint
 - **get_governance_policies**: Lists active API governance rules
 - **get_inventory**: Retrieves the auto-discovered API inventory
@@ -39,6 +36,9 @@ Connect your AI directly with **Salt Security** to proactively defend your Appli
 - **get_system_health**: Checks the health of traffic mirror ingestion
 - **list_oas_specs**: Lists all uploaded OpenAPI specifications
 - **upload_oas_spec**: Uploads a new OAS/Swagger specification
+- **block_attacker**: Issues a command to block a specific attacker
+- **get_attackers**: Lists known threat actors profiled by Salt
+- **get_attacks**: Lists detected malicious API attacks
 
 
 ## 💬 Prompt Examples

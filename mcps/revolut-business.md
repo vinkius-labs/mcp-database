@@ -30,32 +30,15 @@ The **Revolut Business MCP Server** effectively bridges large-scale pan-European
 
 
 ## Available Tools (34)
-- **revolut_create_counterparty**: Required before making payments to a new recipient.
-
-Add a new payment recipient (Counterparty)
-- **revolut_create_exchange**: Settles immediately.
-
-Execute an FX currency exchange between accounts
-- **revolut_create_payment**: For payments requiring human approval, use revolut_create_draft_payment instead.
-
-Make a direct payment to a counterparty
-- **revolut_get_account**: Get details of a specific Revolut account
-- **revolut_get_exchange_rate**: Optionally provide an amount to get the exact quoted conversion.
-
-Get live FX exchange rates
-- **revolut_get_transaction**: Get details of a specific transaction
-- **revolut_list_accounts**: List all Revolut Business accounts and balances
-- **revolut_list_counterparties**: List all saved payment recipients
-- **revolut_list_team_members**: List all team members in the Revolut Business account
-- **revolut_list_transactions**: Use for reconciliation, auditing, and financial reporting.
-
-Retrieve historical transactions
 - **revolut_cancel_payout_link**: Funds are returned to the source account.
 
 Cancel an unclaimed payout link
 - **revolut_create_draft_payment**: The draft appears in the Revolut Business app where an authorized team member must approve it. This is the safest way to handle payments via the API.
 
 Create a payment draft for human approval
+- **revolut_create_payment**: For payments requiring human approval, use revolut_create_draft_payment instead.
+
+Make a direct payment to a counterparty
 - **revolut_create_payout_link**: The recipient receives a URL to claim the funds without sharing their banking details. The link expires after a set period.
 
 Create a payout link to send money
@@ -72,14 +55,19 @@ Delete a payment draft
 - **revolut_delete_webhook**: Events will no longer be delivered to this endpoint.
 
 Delete a webhook subscription
+- **revolut_get_account**: Get details of a specific Revolut account
 - **revolut_get_account_bank_details**: Useful for sharing payment details with clients.
 
 Get IBAN, BIC, and local bank details for a specific account
 - **revolut_get_counterparty**: Get full details of a specific counterparty
 - **revolut_get_draft_payment**: Get details of a specific payment draft
+- **revolut_get_exchange_rate**: Optionally provide an amount to get the exact quoted conversion.
+
+Get live FX exchange rates
 - **revolut_get_expense**: Get details of a specific expense
 - **revolut_get_payout_link**: Get details of a specific payout link
 - **revolut_get_team_member**: Get details of a specific team member
+- **revolut_get_transaction**: Get details of a specific transaction
 - **revolut_get_transfer_reasons**: Use this to get the valid codes before creating a transfer.
 
 Get the list of valid transfer reason codes
@@ -87,6 +75,8 @@ Get the list of valid transfer reason codes
 - **revolut_get_webhook_failed_events**: Useful for debugging connectivity issues or missed notifications.
 
 Get failed delivery events for a webhook
+- **revolut_list_accounts**: List all Revolut Business accounts and balances
+- **revolut_list_counterparties**: List all saved payment recipients
 - **revolut_list_draft_payments**: Drafts require human approval in the Revolut Business app before funds are released.
 
 List all pending payment drafts
@@ -97,11 +87,21 @@ List all submitted expenses
 
 List all payout links
 - **revolut_list_roles**: List all available roles in the organisation
+- **revolut_list_team_members**: List all team members in the Revolut Business account
+- **revolut_list_transactions**: Use for reconciliation, auditing, and financial reporting.
+
+Retrieve historical transactions
 - **revolut_list_webhooks**: List all configured webhooks
 - **revolut_rotate_webhook_secret**: The old secret is invalidated immediately.
 
 Rotate the signing secret for a webhook
 - **revolut_update_webhook**: Update a webhook configuration
+- **revolut_create_counterparty**: Required before making payments to a new recipient.
+
+Add a new payment recipient (Counterparty)
+- **revolut_create_exchange**: Settles immediately.
+
+Execute an FX currency exchange between accounts
 
 
 ## 💬 Prompt Examples

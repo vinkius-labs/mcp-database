@@ -35,16 +35,16 @@ Empower your AI agent to manage your development workflow on **Gitee**, the lead
 
 
 ## Available Tools (10)
-- **get_user**: Get authenticated user profile
-- **list_pull_requests**: List pull requests
-- **list_repo_commits**: List repository commits
-- **list_repo_issues**: List repository issues
-- **list_user_repos**: List authenticated user repositories
-- **create_issue**: Create an issue
 - **create_pull_request**: Create a pull request
 - **create_repo**: Create a new repository
 - **get_file_content**: Get file content
 - **get_repo**: Get repository details
+- **get_user**: Get authenticated user profile
+- **list_repo_commits**: List repository commits
+- **list_pull_requests**: List pull requests
+- **list_repo_issues**: List repository issues
+- **list_user_repos**: List authenticated user repositories
+- **create_issue**: Create an issue
 
 
 ## 💬 Prompt Examples

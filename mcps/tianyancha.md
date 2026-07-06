@@ -38,13 +38,13 @@ Empower your AI agent to orchestrate your business intelligence and due diligenc
 - **get_contact_info**: Get enterprise contact info
 - **get_full_details**: Get full enterprise details
 - **list_branches**: List company branches
+- **list_shareholders**: List company shareholders
+- **get_basic_info**: Get enterprise basic info
 - **list_investments**: List outward investments
 - **list_ip**: List intellectual property
 - **list_risks**: List enterprise risk info
-- **list_shareholders**: List company shareholders
 - **list_staff**: List main staff/executives
 - **search_enterprise**: Enterprise search by keyword
-- **get_basic_info**: Get enterprise basic info
 
 
 ## 💬 Prompt Examples

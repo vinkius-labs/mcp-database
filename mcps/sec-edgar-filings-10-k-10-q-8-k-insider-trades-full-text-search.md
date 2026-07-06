@@ -24,12 +24,6 @@ SEC filings access.
 
 
 ## Available Tools (6)
-- **get_recent_filings**: Includes form type, filing date, accession number, and primary document link. Results include all form types (10-K annual reports, 10-Q quarterlies, 8-K events, proxy statements, etc.).
-
-Get the most recent SEC filings for a company — 10-K, 10-Q, 8-K, and more
-- **get_annual_reports**: The 10-K is the most detailed financial disclosure — includes audited financial statements, MD&A (Management Discussion), risk factors, and business description. Required by SEC for all public companies.
-
-Get 10-K annual reports for a company — the most comprehensive financial disclosure
 - **get_quarterly_reports**: Filed 3 times per year (Q1, Q2, Q3 — Q4 is covered by the 10-K). Includes unaudited financial statements and interim MD&A.
 
 Get 10-Q quarterly reports for a company — unaudited financial updates
@@ -42,6 +36,12 @@ Get insider trading filings (Form 4) — officer and director stock transactions
 - **search_filings**: Find specific topics, companies, products, or risks mentioned in any SEC document. Filter by form type (10-K, 10-Q, 8-K) and date range.
 
 Full-text search across all SEC filings — find any keyword in any document
+- **get_recent_filings**: Includes form type, filing date, accession number, and primary document link. Results include all form types (10-K annual reports, 10-Q quarterlies, 8-K events, proxy statements, etc.).
+
+Get the most recent SEC filings for a company — 10-K, 10-Q, 8-K, and more
+- **get_annual_reports**: The 10-K is the most detailed financial disclosure — includes audited financial statements, MD&A (Management Discussion), risk factors, and business description. Required by SEC for all public companies.
+
+Get 10-K annual reports for a company — the most comprehensive financial disclosure
 
 
 ## 💬 Prompt Examples

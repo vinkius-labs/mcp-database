@@ -35,10 +35,6 @@ ScraperAPI abstracts away all the infrastructure logic, turning your agent into 
 
 
 ## Available Tools (10)
-- **create_async_job**: Returns a job ID.
-
-Creates an asynchronous scraping job
-- **custom_scrape**: Performs a scrape with custom ScraperAPI parameters
 - **get_account_stats**: Retrieves API usage statistics
 - **get_async_job**: Retrieves the status and result of an async job
 - **get_screenshot_link**: Generates a URL to capture a full-page screenshot
@@ -49,6 +45,10 @@ Creates an asynchronous scraping job
 Scrapes standard HTML from a URL
 - **scrape_js_rendered**: Scrapes a URL with JavaScript rendering enabled
 - **scrape_premium**: Scrapes a URL using high-quality residential proxies
+- **create_async_job**: Returns a job ID.
+
+Creates an asynchronous scraping job
+- **custom_scrape**: Performs a scrape with custom ScraperAPI parameters
 
 
 ## 💬 Prompt Examples

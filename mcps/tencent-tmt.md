@@ -35,9 +35,6 @@ Empower your AI agent to orchestrate your global content and multilingual commun
 
 
 ## Available Tools (10)
-- **check_tmt_status**: Check TMT API status
-- **detect_language**: Detect language of text
-- **translate_en_to_zh**: Translate English to Chinese
 - **translate_text**: Translate text between languages
 - **translate_to_chinese**: Translate text to Chinese
 - **translate_to_english**: Translate text to English
@@ -45,6 +42,9 @@ Empower your AI agent to orchestrate your global content and multilingual commun
 - **translate_to_portuguese**: Translate text to Portuguese
 - **translate_to_spanish**: Translate text to Spanish
 - **translate_zh_to_en**: Translate Chinese to English
+- **check_tmt_status**: Check TMT API status
+- **detect_language**: Detect language of text
+- **translate_en_to_zh**: Translate English to Chinese
 
 
 ## 💬 Prompt Examples
