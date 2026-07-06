@@ -34,6 +34,8 @@ Connect your **Kintone** platform to any AI agent to automate your business oper
 
 
 ## Available Tools (10)
+- **list_form_fields**: List form fields for an app
+- **get_app_details**: Get details for a specific app
 - **add_record**: Requires a JSON object mapping field codes to values.
 
 Add a new record to an app
@@ -44,8 +46,6 @@ List all Kintone apps
 - **delete_records**: Requires an array of record IDs.
 
 Delete records from an app
-- **list_form_fields**: List form fields for an app
-- **get_app_details**: Get details for a specific app
 - **get_record**: Get a specific record from an app
 - **list_records**: You can optionally provide a query string for filtering.
 

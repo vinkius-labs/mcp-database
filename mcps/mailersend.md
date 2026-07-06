@@ -35,9 +35,6 @@ Connect your **MailerSend** account to any AI agent to automate your transaction
 
 
 ## Available Tools (10)
-- **get_sender_domain_details**: Get details for a specific domain
-- **get_sent_message_details**: Get details for a specific sent message
-- **get_recipient_details**: Get details for a specific recipient
 - **list_domain_activity**: List email activity for a specific domain
 - **list_sender_domains**: List all verified and unverified sender domains
 - **list_sent_messages**: List all sent email messages
@@ -47,6 +44,9 @@ Connect your **MailerSend** account to any AI agent to automate your transaction
 
 Send a single transactional email
 - **verify_sender_domain**: Trigger a DNS verification check for a domain
+- **get_sender_domain_details**: Get details for a specific domain
+- **get_sent_message_details**: Get details for a specific sent message
+- **get_recipient_details**: Get details for a specific recipient
 
 
 ## 💬 Prompt Examples

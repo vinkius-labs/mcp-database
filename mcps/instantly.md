@@ -36,8 +36,8 @@ Connect **Instantly** to your AI agent and manage your high-volume cold email pl
 - **add_leads**: Add leads to a campaign
 - **get_account_stats**: Get account summary stats
 - **get_campaign**: Get campaign details
-- **get_campaign_analytics**: Get campaign analytics
 - **list_accounts**: List sending accounts
+- **get_campaign_analytics**: Get campaign analytics
 - **list_campaigns**: List all campaigns
 - **list_leads**: List leads in a campaign
 - **list_subsequences**: List campaign subsequences

@@ -35,12 +35,6 @@ Connect your **Linnworks** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **list_open_orders**: Pass limit to control pagination. Returns order details including order IDs, customer info, shipping, and item lines.
-
-Get Linnworks open orders including lines and customer info
-- **get_inventory_item**: Use this to check product details, pricing, weight, and category assignment for a specific product.
-
-Get Linnworks inventory item details by exact SKU
 - **get_stock_level**: Returns available, in-order, due, and minimum quantities per location.
 
 Get Linnworks stock levels across all locations by Item ID
@@ -65,6 +59,12 @@ Get Linnworks recent returns from the last 30 days
 - **execute_custom_rpc**: Example path: /api/Inventory/GetInventoryItemTitles. All Linnworks APIs are POST-based RPC. Refer to apps.linnworks.net/Api for the full endpoint list.
 
 Execute any custom fallback POST RPC method exposed by Linnworks API
+- **list_open_orders**: Pass limit to control pagination. Returns order details including order IDs, customer info, shipping, and item lines.
+
+Get Linnworks open orders including lines and customer info
+- **get_inventory_item**: Use this to check product details, pricing, weight, and category assignment for a specific product.
+
+Get Linnworks inventory item details by exact SKU
 
 
 ## 💬 Prompt Examples

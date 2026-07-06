@@ -35,14 +35,14 @@ Connect your **Lucca** instance to any AI agent and take full control of your HR
 
 
 ## Available Tools (8)
-- **list_users**: List all employees in the Lucca HR directory
-- **get_user**: Get detailed data mapping a target explicit employee UUID
 - **list_departments**: List all departments inside the enterprise company
 - **list_leaves**: List explicitly requested leaves mapping the Timmi Absences application limits
 - **list_expense_reports**: List explicit company expense reports extracting Cleemy mapped targets
 - **list_expense_claims**: List absolute bounded individual expense claims across a specific mapped report
 - **list_timesheets**: List explicit matching timesheet chunks mapped in Timmi arrays limits
 - **get_leave_balances**: Pull active strictly bound leave balances representing vacation arrays globally
+- **list_users**: List all employees in the Lucca HR directory
+- **get_user**: Get detailed data mapping a target explicit employee UUID
 
 
 ## 💬 Prompt Examples

@@ -35,9 +35,9 @@ Connect your **IPGeolocation.io** account to any AI agent and take full control 
 
 
 ## Available Tools (3)
-- **get_location**: Retrieve comprehensive geolocation data for an IP address
 - **get_timezone**: Get precise local time and timezone information
 - **get_astronomy**: Retrieve astronomy data like sunrise and moon phases
+- **get_location**: Retrieve comprehensive geolocation data for an IP address
 
 
 ## 💬 Prompt Examples

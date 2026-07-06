@@ -34,12 +34,12 @@ Connect your **Height** workspace to any AI agent and take full control of your 
 
 
 ## Available Tools (6)
+- **list_users**: List users
+- **list_activities**: List activities
 - **workspace**: Get workspace
 - **list_tasks**: List tasks
 - **get_task**: Get task
 - **list_lists**: List lists
-- **list_users**: List users
-- **list_activities**: List activities
 
 
 ## 💬 Prompt Examples

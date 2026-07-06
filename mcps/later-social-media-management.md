@@ -35,8 +35,6 @@ Connect your **Later** account to any AI agent and take full control of your vis
 
 
 ## Available Tools (10)
-- **get_me**: Get authenticated Later user info and workspace details
-- **list_profiles**: List connected Later social profiles (Instagram, TikTok, Pinterest, etc)
 - **list_media**: Takes standard page index pagination.
 
 List Later media library items
@@ -47,6 +45,8 @@ List Later media library items
 - **get_analytics**: Get Later aggregated profile analytics spanning an explicit date slice
 - **list_labels**: List Later content labels active across the media library
 - **get_calendar**: Get the Later global content calendar for a multi-profile date slice
+- **get_me**: Get authenticated Later user info and workspace details
+- **list_profiles**: List connected Later social profiles (Instagram, TikTok, Pinterest, etc)
 
 
 ## 💬 Prompt Examples

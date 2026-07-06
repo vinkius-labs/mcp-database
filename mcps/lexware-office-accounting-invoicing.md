@@ -35,9 +35,6 @@ Connect your **Lexware Office (lexoffice)** account to any AI agent and take ful
 
 
 ## Available Tools (14)
-- **list_contacts**: Nützlich zur Verwaltung der Stammdaten.
-
-Alle Kontakte (Kunden, Lieferanten) in Lexoffice strukturieren und auflisten
 - **get_contact**: Detaillierte Kontaktinformationen eines Kunden oder Lieferanten abrufen
 - **create_contact**: Berücksichtigt hierbei standardisierte Formatierung für Kontaktpersonen (Vorname Nachname) und Rollenzuweisungen.
 
@@ -63,6 +60,9 @@ Gesamtübersicht aller Arten verbuchter Belege (Ausgaben, Einnahmen) betrachten
 - **list_posting_categories**: Dies regelt in der Zuordnung, auf welches DATEV- oder Interne-Konto ein Vorfall verbucht wird.
 
 Definierte Buchungskategorien / Kontorahmen für Einnahmen und Ausgaben anzeigen
+- **list_contacts**: Nützlich zur Verwaltung der Stammdaten.
+
+Alle Kontakte (Kunden, Lieferanten) in Lexoffice strukturieren und auflisten
 
 
 ## 💬 Prompt Examples

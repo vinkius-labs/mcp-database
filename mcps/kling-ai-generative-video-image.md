@@ -35,9 +35,6 @@ Connect your **Kling AI** account to any AI agent and take full control of state
 
 
 ## Available Tools (10)
-- **text_to_video**: Returns a Task ID that must be polled until completion (status: succeed). Models: kling-v1, kling-v2, kling-v3.
-
-Generate a cinematic AI video from a text prompt using Kling V3
 - **image_to_video**: Returns a Task ID for polling.
 
 Animate a static image into a video using Kling AI
@@ -63,6 +60,9 @@ Drive mouth movements and synchronize speech to a video portrait
 - **get_lipsync_task**: Retrieve the final MP4 when succeed.
 
 Check the status of an AI Lip-Sync task
+- **text_to_video**: Returns a Task ID that must be polled until completion (status: succeed). Models: kling-v1, kling-v2, kling-v3.
+
+Generate a cinematic AI video from a text prompt using Kling V3
 
 
 ## 💬 Prompt Examples

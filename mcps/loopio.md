@@ -34,9 +34,6 @@ Connect your **Loopio** RFP management platform to your AI agent to transform pr
 
 
 ## Available Tools (8)
-- **create_submission**: Requires a project name. Optionally accepts a description, company name, due date, project type, and owner ID. The project will be created in "Not Started" status and ready for team collaboration.
-
-Create a new RFP project/submission in Loopio
 - **get_project**: Use this to check the state of a specific RFP response.
 
 Get details of a specific Loopio project by ID
@@ -58,6 +55,9 @@ List all team members in your Loopio workspace
 - **search_library**: This is the primary way to find existing approved responses before drafting new answers. You can refine results with optional filters like tags, category, stack, and whether to search in questions or answers. Always use this before creating new library entries.
 
 Search the Loopio knowledge library for approved Q&A entries
+- **create_submission**: Requires a project name. Optionally accepts a description, company name, due date, project type, and owner ID. The project will be created in "Not Started" status and ready for team collaboration.
+
+Create a new RFP project/submission in Loopio
 
 
 ## 💬 Prompt Examples

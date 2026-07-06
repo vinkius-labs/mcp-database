@@ -22,9 +22,6 @@ Loops is a modern email marketing and transactional email platform designed for 
 
 
 ## Available Tools (10)
-- **create_contact**: Requires an email address. Optionally accepts firstName, lastName, and userGroup.
-
-Create a new contact in Loops
 - **delete_contact**: This action cannot be undone.
 
 Delete a contact from Loops by ID
@@ -52,6 +49,9 @@ Test if the Loops API key is valid and working
 - **update_contact**: Requires the contact ID. Accepts any fields to update such as firstName, lastName, email, userGroup, etc.
 
 Update an existing contact in Loops by ID
+- **create_contact**: Requires an email address. Optionally accepts firstName, lastName, and userGroup.
+
+Create a new contact in Loops
 
 
 ## 💬 Prompt Examples

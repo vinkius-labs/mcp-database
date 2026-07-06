@@ -34,10 +34,6 @@ Connect your **MaintainX** workspace to any AI agent to automate your maintenanc
 
 
 ## Available Tools (8)
-- **list_maintenance_assets**: List all physical assets and equipment
-- **create_new_work_order**: Requires title.
-
-Create a new maintenance work order
 - **get_asset_details**: Get metadata for a specific asset
 - **get_work_order_details**: Get details for a specific work order
 - **list_facility_locations**: List facility locations
@@ -48,6 +44,10 @@ Change the status of a work order
 - **list_maintenance_orders**: Use optional params for filtering.
 
 List all work orders
+- **list_maintenance_assets**: List all physical assets and equipment
+- **create_new_work_order**: Requires title.
+
+Create a new maintenance work order
 
 
 ## 💬 Prompt Examples

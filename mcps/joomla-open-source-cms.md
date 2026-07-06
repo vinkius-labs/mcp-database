@@ -40,6 +40,7 @@ Connect your **Joomla** site to any AI agent and take full control of your conte
 Create a new Joomla article
 - **delete_cms_article**: Delete a Joomla article
 - **get_article_details**: Get details for a specific Joomla article
+- **list_platform_users**: List Joomla users
 - **list_site_articles**: You can optional pass query parameters like filter[state]=1.
 
 List Joomla articles
@@ -47,7 +48,6 @@ List Joomla articles
 - **list_global_categories**: List Joomla categories
 - **list_site_menus**: List Joomla site menus
 - **list_system_tags**: List Joomla tags
-- **list_platform_users**: List Joomla users
 - **patch_cms_article**: Update an existing Joomla article
 
 

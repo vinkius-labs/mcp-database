@@ -14,12 +14,6 @@ Empower your AI agents with Intrinio's comprehensive financial data. This MCP se
 
 
 ## Available Tools (10)
-- **get_company**: g., "AAPL") or ID. Returns headquarters address, employee counts, and business descriptions. Useful for providing a profile overview of a company.
-
-Retrieves details for a specific company
-- **get_earnings_releases**: Essential for tracking reporting seasons and anticipating market volatility for specific tickers.
-
-Lists upcoming and past earnings releases
 - **get_financials**: Returns line items and values. Essential for fundamental financial analysis and performance vetting.
 
 Retrieves financial statements for a company
@@ -44,6 +38,12 @@ Lists latest financial news
 - **search_companies**: Use this when the user provided a partial company name and you need to locate the correct ticker or ID.
 
 Searches for companies by name or ticker
+- **get_company**: g., "AAPL") or ID. Returns headquarters address, employee counts, and business descriptions. Useful for providing a profile overview of a company.
+
+Retrieves details for a specific company
+- **get_earnings_releases**: Essential for tracking reporting seasons and anticipating market volatility for specific tickers.
+
+Lists upcoming and past earnings releases
 
 
 ## 💬 Prompt Examples

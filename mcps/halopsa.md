@@ -37,6 +37,9 @@ No more manual navigating through complex PSA tabs. Your AI assistant acts as a 
 
 
 ## Available Tools (11)
+- **list_teams**: List all teams configured in the service desk
+- **list_tickets**: List all tickets in HaloPSA
+- **perform_ticket_action**: Perform an action on a ticket (e.g., add note, change status)
 - **create_ticket**: Create a new ticket in HaloPSA
 - **get_ticket**: Get detailed information about a specific ticket
 - **list_assets**: List all assets defined in HaloPSA
@@ -44,10 +47,7 @@ No more manual navigating through complex PSA tabs. Your AI assistant acts as a 
 - **list_contracts**: List all customer contracts
 - **list_invoices**: List all invoices in HaloPSA
 - **list_sites**: List all sites/locations
-- **list_teams**: List all teams configured in the service desk
-- **list_tickets**: List all tickets in HaloPSA
 - **list_users**: List all users in the HaloPSA instance
-- **perform_ticket_action**: Perform an action on a ticket (e.g., add note, change status)
 
 
 ## 💬 Prompt Examples
