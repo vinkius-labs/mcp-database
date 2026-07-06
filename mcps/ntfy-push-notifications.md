@@ -34,10 +34,10 @@ Connect your **ntfy** instance to any AI agent and manage real-time alerts and n
 
 
 ## Available Tools (2)
-- **poll_messages**: Poll cached messages from a ntfy topic
 - **publish_message**: Topics are created on the fly.
 
 Publish a push notification to a ntfy topic
+- **poll_messages**: Poll cached messages from a ntfy topic
 
 
 ## 💬 Prompt Examples

@@ -37,6 +37,19 @@ Connect your **Umami** instance to any AI agent to monitor your privacy-focused 
 - **add_team_user**: Add user to team
 - **admin_list_teams**: Returns all teams (Admin only)
 - **admin_list_users**: Returns all users (Admin only)
+- **list_teams**: Returns all teams
+- **delete_website**: Deletes a website
+- **get_me_teams**: Get all teams for the current user
+- **get_me**: Get information about the current session
+- **get_me_websites**: Get all websites for the current user
+- **get_realtime_stats**: Realtime stats within the last 30 minutes
+- **join_team**: Join a team via access code
+- **list_links**: Returns all user links
+- **list_pixels**: Returns all user pixels
+- **list_reports**: Get all reports by website ID
+- **list_websites**: Returns all user websites
+- **login**: Login to self-hosted Umami to get a token
+- **reset_website**: Removes all data related to the website
 - **admin_list_websites**: Returns all websites (Admin only)
 - **create_attribution_report**: Marketing attribution report
 - **create_funnel_report**: Conversion funnel report
@@ -49,11 +62,6 @@ Connect your **Umami** instance to any AI agent to monitor your privacy-focused 
 - **create_user**: Creates a user (Admin only)
 - **create_website**: Creates a website
 - **delete_user**: Deletes a user (Admin only)
-- **delete_website**: Deletes a website
-- **get_me_teams**: Get all teams for the current user
-- **get_me**: Get information about the current session
-- **get_me_websites**: Get all websites for the current user
-- **get_realtime_stats**: Realtime stats within the last 30 minutes
 - **get_session_activity**: Activity for a session
 - **get_session**: Individual session details
 - **get_team_users**: Get team members
@@ -75,14 +83,6 @@ Connect your **Umami** instance to any AI agent to monitor your privacy-focused 
 - **get_website_sessions**: Website session details
 - **get_website_stats**: Summarized website statistics (pageviews, visitors, etc.)
 - **get_website**: Gets a website by ID
-- **join_team**: Join a team via access code
-- **list_links**: Returns all user links
-- **list_pixels**: Returns all user pixels
-- **list_reports**: Get all reports by website ID
-- **list_teams**: Returns all teams
-- **list_websites**: Returns all user websites
-- **login**: Login to self-hosted Umami to get a token
-- **reset_website**: Removes all data related to the website
 - **send_event**: Send an event to Umami
 - **update_user**: Updates a user (Admin only)
 - **update_website**: Updates a website

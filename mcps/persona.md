@@ -36,14 +36,6 @@ No more jumping between dashboards to check if a user has submitted their ID. Yo
 
 
 ## Available Tools (27)
-- **approve_inquiry**: Approve an Inquiry
-- **create_account**: Create an Account
-- **create_inquiry**: Create an Inquiry
-- **create_transaction**: Create a Transaction
-- **create_webhook**: Create a Webhook
-- **decline_inquiry**: Decline an Inquiry
-- **get_account**: Retrieve an Account
-- **get_case**: Retrieve a Case
 - **get_event**: Retrieve an Event
 - **get_inquiry**: Retrieve an Inquiry
 - **get_report**: Retrieve a Report
@@ -65,6 +57,14 @@ List all Reports
 - **set_case_status**: Set Status on a Case
 - **trigger_workflow**: Create a Workflow Run
 - **update_account**: Update an Account
+- **create_account**: Create an Account
+- **create_inquiry**: Create an Inquiry
+- **create_transaction**: Create a Transaction
+- **create_webhook**: Create a Webhook
+- **decline_inquiry**: Decline an Inquiry
+- **get_account**: Retrieve an Account
+- **get_case**: Retrieve a Case
+- **approve_inquiry**: Approve an Inquiry
 
 
 ## 💬 Prompt Examples

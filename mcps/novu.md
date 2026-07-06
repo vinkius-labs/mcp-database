@@ -36,7 +36,6 @@ No more manual API calls to test your notification flows. Your AI acts as a dedi
 
 
 ## Available Tools (39)
-- **bulk_update_subscriber_preferences**: Bulk update subscriber preferences
 - **cancel_trigger**: Cancel active or pending workflows (e.g., digests, delays)
 - **check_topic_subscriber**: Check if a subscriber is subscribed to a topic
 - **create_environment_variable**: Create an environment variable
@@ -58,7 +57,6 @@ No more manual API calls to test your notification flows. Your AI acts as a dedi
 - **get_subscriber**: Retrieve a subscriber by ID
 - **get_topic_subscription**: Retrieve a topic subscription
 - **get_topic**: Retrieve a topic by key
-- **list_active_integrations**: List active integrations
 - **list_environment_variables**: List all environment variables
 - **list_integrations**: List all integrations
 - **list_messages**: List messages
@@ -75,6 +73,8 @@ No more manual API calls to test your notification flows. Your AI acts as a dedi
 - **update_subscriber**: Update an existing subscriber
 - **update_topic**: Update a topic
 - **upsert_subscriber_credentials**: Upsert subscriber credentials
+- **bulk_update_subscriber_preferences**: Bulk update subscriber preferences
+- **list_active_integrations**: List active integrations
 
 
 ## 💬 Prompt Examples

@@ -36,10 +36,6 @@ No more jumping between browser tabs to check server statuses or billing cycles.
 
 
 ## Available Tools (46)
-- **get_account**: Get UpCloud account information
-- **assign_ip**: Assign a new IP address
-- **list_audit_logs**: List account audit logs
-- **backup_storage**: Create a storage backup
 - **get_billing_summary**: Get monthly billing summary
 - **clone_storage**: Clone a storage
 - **create_database**: Create a managed database instance
@@ -82,6 +78,10 @@ No more jumping between browser tabs to check server statuses or billing cycles.
 - **update_server**: Modify server configuration
 - **update_storage**: Modify or resize storage
 - **list_zones**: List available zones
+- **get_account**: Get UpCloud account information
+- **backup_storage**: Create a storage backup
+- **assign_ip**: Assign a new IP address
+- **list_audit_logs**: List account audit logs
 
 
 ## 💬 Prompt Examples

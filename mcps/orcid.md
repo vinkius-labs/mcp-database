@@ -34,10 +34,6 @@ Connect to the **ORCID** (Open Researcher and Contributor ID) registry to identi
 
 
 ## Available Tools (13)
-- **create_item**: Requires Member API access and appropriate scopes.
-
-Add a new item to a section (Member API only)
-- **csv_search**: Search the ORCID registry and return CSV format
 - **delete_item**: Requires Member API access.
 
 Delete an item from a section (Member API only)
@@ -59,6 +55,10 @@ Search the ORCID registry using Solr 3.6 syntax
 - **update_item**: Requires Member API access.
 
 Update an existing item in a section (Member API only)
+- **create_item**: Requires Member API access and appropriate scopes.
+
+Add a new item to a section (Member API only)
+- **csv_search**: Search the ORCID registry and return CSV format
 
 
 ## 💬 Prompt Examples

@@ -33,10 +33,10 @@ Connect your **Wati** account to any AI agent to streamline your WhatsApp Busine
 
 
 ## Available Tools (4)
-- **assign_operator**: Assign a specific operator to a chat
-- **get_chatbots**: Retrieve a list of existing chatbots
 - **get_contacts**: Retrieve a list of contacts from Wati
 - **send_template_message**: Send a pre-approved WhatsApp template message
+- **assign_operator**: Assign a specific operator to a chat
+- **get_chatbots**: Retrieve a list of existing chatbots
 
 
 ## 💬 Prompt Examples

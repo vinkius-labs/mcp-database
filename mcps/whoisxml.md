@@ -33,10 +33,10 @@ Connect the **WhoisXML API** to your AI agent to perform deep network reconnaiss
 
 
 ## Available Tools (4)
-- **check_domain_availability**: Check if a domain name is available for registration
-- **get_ip_geolocation**: Get location data for an IP address
 - **get_whois_record**: Get parsed and raw WHOIS data for a domain
 - **verify_email**: Check if an email address is valid and exists
+- **check_domain_availability**: Check if a domain name is available for registration
+- **get_ip_geolocation**: Get location data for an IP address
 
 
 ## 💬 Prompt Examples

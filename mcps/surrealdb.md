@@ -43,13 +43,13 @@ Connect your **SurrealDB** database to any AI agent and take full control of you
 - **modify_all**: Modify all records in a table (Merge)
 - **modify_record**: Modify a specific record (Merge)
 - **select_all**: Select all records in a table
-- **select_record**: Select a specific record
 - **create_record**: Create a record with a random ID
 - **execute_sql**: Can pass variables via URL query parameters.
 
 Execute SurrealQL statements
 - **get_status**: Check SurrealDB web server status
 - **update_all**: Update all records in a table
+- **select_record**: Select a specific record
 - **update_record**: Update a specific record
 - **get_version**: Get SurrealDB version
 

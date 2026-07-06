@@ -38,6 +38,7 @@ No more switching between your store backend and ShipBob dashboard to check if a
 ## Available Tools (30)
 - **batch_cancel_shipments**: Cancel multiple shipments at once
 - **batch_update_tracking**: Mark tracking as synced to your system
+- **list_returns**: List return orders
 - **cancel_order**: Cancel an order and its shipments
 - **list_channels**: g., a Shopify store).
 
@@ -59,7 +60,6 @@ List all channels the user has access to
 - **list_orders**: List orders with status/tracking filters
 - **list_products**: List products with filtering
 - **list_receiving**: List Warehouse Receiving Orders (WROs)
-- **list_returns**: List return orders
 - **list_transaction_fees**: List available fee types
 - **list_product_variants**: List all variants for a product
 - **query_inventory_history**: Query inventory movement events

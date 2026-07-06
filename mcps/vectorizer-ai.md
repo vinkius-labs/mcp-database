@@ -33,12 +33,12 @@ Connect to **Vectorizer AI** to transform pixel-based images into clean, scalabl
 
 
 ## Available Tools (4)
+- **download_image**: Download a production result or additional formats
+- **vectorize_image**: Vectorize a bitmap image to SVG/EPS/PDF/DXF
 - **get_account_status**: Fetch subscription status and remaining credits
 - **delete_image**: AI servers using its image token.
 
 Manually delete an image stored via policy.retention_days > 0
-- **download_image**: Download a production result or additional formats
-- **vectorize_image**: Vectorize a bitmap image to SVG/EPS/PDF/DXF
 
 
 ## 💬 Prompt Examples

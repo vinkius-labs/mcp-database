@@ -34,12 +34,8 @@ Connect your **Legito** workspace to any AI agent to streamline your legal and d
 
 
 ## Available Tools (31)
-- **add_user_to_group**: Add a user to a user group
-- **list_advanced_styles**: List advanced styles
-- **list_categories**: List categories (groups)
 - **list_countries**: List countries (laws)
 - **create_document_version_data**: Create document version data from a template suite
-- **create_user_group**: Create a new user group
 - **create_user**: Create a new user
 - **list_currencies**: List supported currencies
 - **delete_document_record**: Delete a document record
@@ -65,6 +61,10 @@ Connect your **Legito** workspace to any AI agent to streamline your legal and d
 - **list_user_groups**: List user groups (departments)
 - **get_user_permissions**: Get permissions for a user
 - **list_users**: List users
+- **add_user_to_group**: Add a user to a user group
+- **list_advanced_styles**: List advanced styles
+- **list_categories**: List categories (groups)
+- **create_user_group**: Create a new user group
 
 
 ## 💬 Prompt Examples

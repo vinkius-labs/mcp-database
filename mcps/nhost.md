@@ -33,11 +33,6 @@ Connect your **Nhost** project to any AI agent to manage your backend services t
 
 
 ## Available Tools (15)
-- **change_email**: Requires elevated NHOST_JWT credential.
-
-Request to change the authenticated user email
-- **delete_file**: Permanently delete a file
-- **get_file_presigned_url**: Retrieve a presigned URL for a file
 - **get_file**: Supports optional image transformation parameters.
 
 Download the complete file content
@@ -56,6 +51,11 @@ Retrieve the authenticated user profile information
 - **upload_file**: Returns metadata for the processed file.
 
 Upload a file to a bucket
+- **change_email**: Requires elevated NHOST_JWT credential.
+
+Request to change the authenticated user email
+- **delete_file**: Permanently delete a file
+- **get_file_presigned_url**: Retrieve a presigned URL for a file
 
 
 ## 💬 Prompt Examples

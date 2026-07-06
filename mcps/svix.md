@@ -37,9 +37,9 @@ No more manual debugging through logs. Your AI acts as a dedicated DevOps engine
 
 ## Available Tools (15)
 - **create_application**: Create a new Svix application
+- **delete_application**: Delete a Svix application
 - **create_endpoint**: Create a new endpoint for a Svix application
 - **create_message**: Send a new webhook message
-- **delete_application**: Delete a Svix application
 - **delete_endpoint**: Delete a Svix endpoint
 - **get_application**: Get details of a specific Svix application
 - **get_endpoint**: Get details of a specific Svix endpoint

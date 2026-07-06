@@ -34,13 +34,6 @@ Connect **Meshy** to your AI agent to bridge the gap between 2D concepts and 3D 
 
 
 ## Available Tools (17)
-- **create_text_to_image**: Create Text to Image task
-- **delete_text_to_3d_task**: Delete a Text to 3D task
-- **get_balance**: Get account balance
-- **get_text_to_3d_task**: Get a Text to 3D task by ID
-- **list_text_to_3d_tasks**: List Text to 3D tasks
-- **repair_printability**: Repair 3D Printability
-- **analyze_printability**: Analyze 3D Printability
 - **create_animation**: Create an Animation task
 - **create_image_to_3d**: Create an Image to 3D task
 - **create_image_to_image**: Create Image to Image task
@@ -55,6 +48,13 @@ Create a Text to 3D preview task
 - **create_text_to_3d_refine**: This is the second step in the Text to 3D workflow.
 
 Create a Text to 3D refine task
+- **list_text_to_3d_tasks**: List Text to 3D tasks
+- **create_text_to_image**: Create Text to Image task
+- **delete_text_to_3d_task**: Delete a Text to 3D task
+- **get_balance**: Get account balance
+- **get_text_to_3d_task**: Get a Text to 3D task by ID
+- **repair_printability**: Repair 3D Printability
+- **analyze_printability**: Analyze 3D Printability
 
 
 ## 💬 Prompt Examples

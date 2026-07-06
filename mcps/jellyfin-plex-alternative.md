@@ -38,8 +38,8 @@ Connect your **Jellyfin** media server to any AI agent and take full control of 
 - **get_current_user**: Get information about the currently logged-in user
 - **get_item**: Get detailed information about a specific item
 - **get_playback_info**: Retrieve information required to start playback
-- **list_items**: Query for items in the library
 - **list_users**: List all users (Admin only)
+- **list_items**: Query for items in the library
 - **list_virtual_folders**: List the root libraries (Movies, TV Shows, etc.)
 - **session_playing_progress**: Update the server on current playback position
 - **session_playing_stopped**: Notify the server that playback has ended
