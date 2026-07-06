@@ -20,12 +20,12 @@ LLMs often struggle to construct long, structurally sound Markdown elements. Gen
 
 
 ## Available Tools (2)
-- **generate_table_from_json**: It will automatically extract headers and format rows.
-
-Converts a JSON array of objects into a beautifully formatted Markdown table
 - **generate_toc**: It will return a nested list of bullet links pointing to the header slugs.
 
 Generates a perfect, linked Table of Contents (TOC) from a raw Markdown text
+- **generate_table_from_json**: It will automatically extract headers and format rows.
+
+Converts a JSON array of objects into a beautifully formatted Markdown table
 
 
 ## 💬 Prompt Examples

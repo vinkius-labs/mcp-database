@@ -14,12 +14,12 @@ Converting large CSVs to JSON via LLM results in truncated outputs. This MCP use
 
 
 ## Available Tools (2)
-- **convert_csv_to_json**: Pass the CSV string with headers and receive clean objects with named keys. Essential for importing spreadsheet data into APIs or databases.
-
-Converts a raw CSV string into a perfectly formatted JSON array of objects
 - **convert_json_to_csv**: Pass the CSV string with headers and receive clean objects with named keys. Essential for importing spreadsheet data into APIs or databases.
 
 Converts a JSON array of objects into a properly formatted CSV string
+- **convert_csv_to_json**: Pass the CSV string with headers and receive clean objects with named keys. Essential for importing spreadsheet data into APIs or databases.
+
+Converts a raw CSV string into a perfectly formatted JSON array of objects
 
 
 ## 💬 Prompt Examples

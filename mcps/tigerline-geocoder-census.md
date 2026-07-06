@@ -41,16 +41,16 @@ Batch geocode up to 10,000 addresses
 - **batch_geocode_coordinates**: Format: Unique ID, Longitude (X), Latitude (Y)
 
 Batch lookup census geographies for coordinates
+- **geocode_oneline**: Geocode a single line address
+- **list_vintages**: List available Census Geocoder vintages for a benchmark
+- **geocode_coordinates**: ) for a specific latitude and longitude.
+
+Lookup census geographies for coordinates
 - **list_benchmarks**: g., Public_AR_Current) and their IDs.
 
 List available Census Geocoder benchmarks
 - **geocode_address_pr**: Geocode a structured Puerto Rico address
 - **geocode_address**: Geocode a structured address
-- **geocode_coordinates**: ) for a specific latitude and longitude.
-
-Lookup census geographies for coordinates
-- **geocode_oneline**: Geocode a single line address
-- **list_vintages**: List available Census Geocoder vintages for a benchmark
 
 
 ## 💬 Prompt Examples

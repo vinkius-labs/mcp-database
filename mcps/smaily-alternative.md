@@ -34,8 +34,8 @@ Connect your **Smaily** account to any AI agent and take full control of your em
 
 
 ## Available Tools (10)
-- **add_update_subscriber**: Add or update a Smaily subscriber
 - **delete_subscriber**: Delete a Smaily subscriber
+- **add_update_subscriber**: Add or update a Smaily subscriber
 - **get_campaign**: Get details for a specific Smaily campaign
 - **get_template**: Get details for a specific Smaily template
 - **list_automations**: List Smaily automations

@@ -33,10 +33,10 @@ Connect **No2Bounce** to your AI agent to ensure your email lists are clean and 
 
 
 ## Available Tools (2)
-- **get_validation_status**: Check validation status or get final results
 - **validate_bulk**: Returns a trackingId to check status later.
 
 Submit a list of emails for validation
+- **get_validation_status**: Check validation status or get final results
 
 
 ## 💬 Prompt Examples

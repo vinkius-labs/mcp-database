@@ -34,8 +34,6 @@ Connect your **NeetoInvoice** account to any AI agent to streamline your billing
 
 
 ## Available Tools (20)
-- **add_project_user**: Add a user to a project
-- **add_team_members**: Add team members to the workspace
 - **create_client**: Requires name, currency, and status.
 
 Create a new client in NeetoInvoice
@@ -56,6 +54,8 @@ Create a new client in NeetoInvoice
 - **update_project_user**: Update a project user role
 - **update_recipient**: Update a client recipient
 - **update_team_member**: Update a team member
+- **add_project_user**: Add a user to a project
+- **add_team_members**: Add team members to the workspace
 
 
 ## 💬 Prompt Examples

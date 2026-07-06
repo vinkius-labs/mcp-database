@@ -33,14 +33,14 @@ The **BEA (Bureau of Economic Analysis)** MCP server provides a direct bridge to
 
 
 ## Available Tools (4)
-- **get_dataset_list**: g., NIPA, Regional, GDPByIndustry).
-
-List available BEA datasets
 - **get_data**: Pass dataset-specific parameters as a JSON string.
 
 Retrieve economic data from a BEA dataset
 - **get_parameter_list**: List parameters for a specific BEA dataset
 - **get_parameter_values**: List valid values for a BEA dataset parameter
+- **get_dataset_list**: g., NIPA, Regional, GDPByIndustry).
+
+List available BEA datasets
 
 
 ## 💬 Prompt Examples

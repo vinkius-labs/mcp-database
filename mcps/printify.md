@@ -35,9 +35,11 @@ Connect your **Printify** account to any AI agent and manage your entire print-o
 
 ## Available Tools (22)
 - **calculate_shipping_cost**: Calculate shipping costs for an order
+- **create_webhook**: Create a new webhook
+- **update_product**: Update an existing product
+- **update_webhook**: Update an existing webhook
 - **create_order**: Create a new order
 - **create_product**: Create a new product in a shop
-- **create_webhook**: Create a new webhook
 - **delete_product**: This is a destructive action.
 
 Delete a product from a shop
@@ -58,8 +60,6 @@ Disconnect a shop from the Printify account
 - **list_webhooks**: List webhooks in a shop
 - **publish_product**: Publish a product to a connected store
 - **send_order_to_production**: Send a pending order to production
-- **update_product**: Update an existing product
-- **update_webhook**: Update an existing webhook
 
 
 ## 💬 Prompt Examples

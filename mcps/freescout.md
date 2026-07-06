@@ -34,12 +34,7 @@ Connect your **FreeScout** helpdesk to any AI agent to streamline your customer 
 
 
 ## Available Tools (16)
-- **add_note**: Add an internal note to a conversation
-- **add_reply**: Send a reply to the customer in a conversation
-- **list_conversations**: List conversations in a mailbox
-- **create_conversation**: Create a new conversation
 - **create_customer**: Create a new customer
-- **list_customers**: List customers
 - **delete_conversation**: Delete a conversation
 - **get_conversation**: Retrieve conversation details
 - **get_customer**: Retrieve customer details
@@ -50,6 +45,11 @@ Connect your **FreeScout** helpdesk to any AI agent to streamline your customer 
 - **update_conversation**: Update a conversation (status, assignee, etc.)
 - **update_customer**: Update customer information
 - **list_users**: List all users/agents
+- **add_note**: Add an internal note to a conversation
+- **add_reply**: Send a reply to the customer in a conversation
+- **list_conversations**: List conversations in a mailbox
+- **create_conversation**: Create a new conversation
+- **list_customers**: List customers
 
 
 ## 💬 Prompt Examples

@@ -33,9 +33,9 @@ Connect your **MagicBell** project to any AI agent to orchestrate multi-channel 
 
 
 ## Available Tools (3)
-- **create_broadcast**: Create a new broadcast
 - **get_broadcast**: Fetch a specific broadcast
 - **list_broadcasts**: List all broadcasts in the project
+- **create_broadcast**: Create a new broadcast
 
 
 ## 💬 Prompt Examples

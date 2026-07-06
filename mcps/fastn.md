@@ -34,12 +34,6 @@ Connect your **Fastn** account to any AI agent to orchestrate complex backend wo
 
 
 ## Available Tools (16)
-- **archive_workflow**: Deactivate / archive a flow
-- **cancel_execution**: Cancel a running execution
-- **create_workflow**: Create a new flow definition
-- **execute_flow**: The input object must match the Request Schema defined in the flow trigger.
-
-Execute a Fastn flow instantly (API Real-Time Sync)
 - **get_credentials**: Retrieve stored credentials
 - **get_execution**: Get full step-by-step execution trace
 - **get_quota_daily**: Daily usage breakdown
@@ -52,6 +46,12 @@ Execute a Fastn flow instantly (API Real-Time Sync)
 - **rotate_credentials**: Rotate credentials
 - **store_credentials**: Store connector credentials
 - **update_workflow**: Update a flow definition
+- **archive_workflow**: Deactivate / archive a flow
+- **cancel_execution**: Cancel a running execution
+- **create_workflow**: Create a new flow definition
+- **execute_flow**: The input object must match the Request Schema defined in the flow trigger.
+
+Execute a Fastn flow instantly (API Real-Time Sync)
 
 
 ## 💬 Prompt Examples

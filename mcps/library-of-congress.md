@@ -35,7 +35,6 @@ Connect your AI agent to the **Library of Congress** (LOC) and explore the vast 
 
 
 ## Available Tools (8)
-- **get_collection_items**: List items within a specific collection
 - **list_collections**: List all digital collections
 - **search_format**: g., maps, photos, audio).
 
@@ -51,6 +50,7 @@ Get access to discrete digitized files
 
 Search the entire Library of Congress website
 - **get_text_service**: Access full-text OCR, word coordinates, and context snippets
+- **get_collection_items**: List items within a specific collection
 
 
 ## 💬 Prompt Examples

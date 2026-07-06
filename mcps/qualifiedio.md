@@ -39,6 +39,7 @@ No more jumping between your ATS and assessment platform to check if a candidate
 - **archive_assessment**: Archive an assessment
 - **cancel_invitation**: Cancel an assessment invitation
 - **create_assessment_result_review**: Create a review for an assessment result
+- **unarchive_assessment**: Unarchive an assessment
 - **create_assessment**: Create a new assessment
 - **get_assessment_result_exhibit**: Retrieve streamlined exhibit data for an assessment result
 - **get_assessment_result**: Retrieve a specific assessment result
@@ -53,7 +54,6 @@ No more jumping between your ATS and assessment platform to check if a candidate
 - **publish_assessment**: Publish an assessment
 - **schedule_retry_assessment_result**: Schedule a retry (reopen/retake) for an assessment result
 - **terminate_assessment_result**: Terminate an assessment result
-- **unarchive_assessment**: Unarchive an assessment
 - **unpublish_assessment**: Unpublish an assessment
 - **update_assessment_result_review**: Update a review for an assessment result
 

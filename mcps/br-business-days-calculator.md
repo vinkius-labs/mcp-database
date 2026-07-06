@@ -20,12 +20,12 @@ LLMs cannot reliably calculate SLAs or business delivery times. If you ask an AI
 
 
 ## Available Tools (2)
-- **add_business_days**: Pass a starting date and the number of days to add (use negative values to subtract). The engine skips weekends and Brazilian holidays automatically.
-
-Adds or subtracts X Brazilian business days from a given date
 - **is_business_day**: Pass the date as an ISO string (YYYY-MM-DD). The engine accounts for all Brazilian national holidays and weekends.
 
 Checks if a given date is a Brazilian business day (excludes weekends and BR national holidays)
+- **add_business_days**: Pass a starting date and the number of days to add (use negative values to subtract). The engine skips weekends and Brazilian holidays automatically.
+
+Adds or subtracts X Brazilian business days from a given date
 
 
 ## 💬 Prompt Examples

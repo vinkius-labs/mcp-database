@@ -46,9 +46,9 @@ Connect your **Miniflux** instance to any AI agent and transform how you consume
 - **fetch_entry_content**: Fetch original article content
 - **flush_history**: Flush history
 - **get_entry**: Get a single entry
+- **get_feed**: Get a specific feed
 - **get_feed_counters**: Fetch unread and read counters
 - **get_feed_icon**: Get feed icon by feed ID
-- **get_feed**: Get a specific feed
 - **get_icon**: Get feed icon by icon ID
 - **get_integrations_status**: Check if any third-party integrations are enabled
 - **get_me**: Get current user information

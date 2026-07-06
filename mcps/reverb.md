@@ -40,6 +40,7 @@ Connect your **Reverb** seller account to any AI agent to manage your musical ge
 
 Create a new Reverb listing
 - **delete_draft**: Delete a draft listing
+- **view_seller_sales**: View seller sales
 - **delete_listing_image**: Delete an image from a listing
 - **disable_vacation_mode**: Disable vacation mode for the shop
 - **enable_vacation_mode**: Enable vacation mode for the shop
@@ -67,7 +68,6 @@ Find seller listings
 - **retrieve_orders**: Retrieve selling orders
 - **ship_order**: Mark an order as shipped
 - **update_listing**: Update an existing Reverb listing
-- **view_seller_sales**: View seller sales
 
 
 ## 💬 Prompt Examples

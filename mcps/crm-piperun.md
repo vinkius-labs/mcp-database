@@ -33,9 +33,6 @@ Connect your **PipeRun CRM** account to any AI agent to streamline your sales op
 
 
 ## Available Tools (11)
-- **create_activity**: Create a new activity
-- **delete_activity**: Delete an activity
-- **delete_file**: Delete a file from PipeRun
 - **get_activity**: Get details for a specific activity
 - **get_activity_type**: Get details for a specific activity type
 - **get_file**: Get details for a specific file
@@ -48,6 +45,9 @@ List files attached to deals, persons, or companies
 - **upload_file**: Requires base64 encoded file content.
 
 Upload a file to a deal, person, or company
+- **create_activity**: Create a new activity
+- **delete_activity**: Delete an activity
+- **delete_file**: Delete a file from PipeRun
 
 
 ## 💬 Prompt Examples

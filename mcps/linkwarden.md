@@ -34,11 +34,6 @@ Connect your **Linkwarden** instance to any AI agent and take full control of yo
 
 
 ## Available Tools (32)
-- **archive_link**: Archive a link (triggers an update of the link's archive files)
-- **bulk_update_links**: Bulk update links (tags/collections)
-- **create_collection**: Create a new collection
-- **create_highlight**: Create or update a highlight
-- **create_link**: Create a new link
 - **delete_collection**: Delete a collection
 - **delete_highlight**: Delete a highlight
 - **auth_forgot_password**: Send password reset email
@@ -66,6 +61,11 @@ Connect your **Linkwarden** instance to any AI agent and take full control of yo
 - **upload_archive_for_link**: Upload or replace a client-side archive file for a specific link
 - **upload_standalone_archive**: Upload an archive file, create a new link, and store it in the default collection
 - **auth_verify_email**: Verify email address
+- **archive_link**: Archive a link (triggers an update of the link's archive files)
+- **bulk_update_links**: Bulk update links (tags/collections)
+- **create_collection**: Create a new collection
+- **create_highlight**: Create or update a highlight
+- **create_link**: Create a new link
 
 
 ## 💬 Prompt Examples

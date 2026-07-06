@@ -34,11 +34,20 @@ Connect your **UniCourt** account to any AI agent to streamline legal research a
 
 
 ## Available Tools (27)
+- **track_case**: Automatically update cases on a schedule
+- **track_norm_attorney**: Schedule recurring bar source refreshes for an attorney
+- **track_norm_law_firm**: Schedule recurring source refreshes for a law firm
+- **update_pacer_credential**: Manage PACER account credentials
 - **delete_pacer_credential**: Delete PACER account credentials
 - **generate_token**: Generate a new UniCourt access token
 - **get_case_count_analytics**: Get case count analytics by case type
 - **get_case_export_callback**: Get the file URL for a completed case export
 - **get_case**: Get details for a specific case
+- **search_norm_attorney**: Search for normalized attorneys
+- **search_norm_judge**: Search for normalized judges
+- **search_norm_law_firm**: Search for normalized law firms
+- **search_norm_party**: Search for normalized parties
+- **search_pacer_case_locator**: Search PACER directly via Case Locator
 - **get_case_update_status**: Check the status of a requested case update
 - **get_document_order_callback**: Get the file URL for a completed document order
 - **get_norm_attorney**: Get analytics and details for a normalized attorney
@@ -54,15 +63,6 @@ Connect your **UniCourt** account to any AI agent to streamline legal research a
 - **search_cases**: g., caseName:pfizer).
 
 Search for court cases
-- **search_norm_attorney**: Search for normalized attorneys
-- **search_norm_judge**: Search for normalized judges
-- **search_norm_law_firm**: Search for normalized law firms
-- **search_norm_party**: Search for normalized parties
-- **search_pacer_case_locator**: Search PACER directly via Case Locator
-- **track_case**: Automatically update cases on a schedule
-- **track_norm_attorney**: Schedule recurring bar source refreshes for an attorney
-- **track_norm_law_firm**: Schedule recurring source refreshes for a law firm
-- **update_pacer_credential**: Manage PACER account credentials
 
 
 ## 💬 Prompt Examples
