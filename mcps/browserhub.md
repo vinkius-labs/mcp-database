@@ -35,8 +35,8 @@ Connect your **Browserhub.io** account to any AI agent and orchestrate your web 
 
 
 ## Available Tools (10)
-- **direct_scrape**: Perform a one-off URL scrape without a pre-defined scraper
 - **get_account_balance**: Check account credit balance
+- **direct_scrape**: Perform a one-off URL scrape without a pre-defined scraper
 - **get_blueprint**: Get details of a specific blueprint
 - **get_scraping_job**: Get status and results of a scraping job
 - **get_scraper**: Get details of a specific scraper

@@ -37,7 +37,6 @@ Connect your **Drupal** site to any AI agent and take full control of your headl
 
 
 ## Available Tools (10)
-- **create_cms_node**: Provision a highly-available JSON Payload writing Rows into Drupal entities
 - **wipe_cms_node**: Irreversibly vaporize explicit App nodes dropping live Document entities
 - **get_file_metadata**: Retrieve the exact structural matching verifying File storage
 - **get_single_node**: Retrieve explicit Cloud logging tracing explicit Node UUIDs
@@ -47,6 +46,7 @@ Connect your **Drupal** site to any AI agent and take full control of your headl
 - **list_term_vocabularies**: Enumerate explicitly attached structured rules exporting Taxonomies
 - **list_drupal_users**: Identify precise active arrays spanning rented Admin identities
 - **patch_cms_node**: Mutate global Web CRM boundaries substituting Draft values safely
+- **create_cms_node**: Provision a highly-available JSON Payload writing Rows into Drupal entities
 
 
 ## 💬 Prompt Examples

@@ -34,6 +34,7 @@ Connect **GetStream** to your AI agent to orchestrate complex social architectur
 
 
 ## Available Tools (23)
+- **process_image**: Process or resize an image
 - **add_activity_to_feed**: Add an activity to a feed
 - **add_to_collection**: Add objects to a collection
 - **batch_delete_collections**: Batch delete collections
@@ -52,7 +53,6 @@ Retrieve activities in a feed
 - **list_feed_followers**: List feeds following this feed
 - **list_feed_follows**: List feeds this feed follows
 - **partial_update_activity**: Partially update activity data
-- **process_image**: Process or resize an image
 - **remove_activity_from_feed**: Remove an activity from a feed
 - **unfollow_feed**: Unfollow a target feed
 - **update_activities**: Update activity metadata

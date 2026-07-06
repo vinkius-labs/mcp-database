@@ -35,12 +35,12 @@ Connect your AI agents to **rct.ai**, the advanced narrative engine for the gami
 
 
 ## Available Tools (10)
-- **create_character**: Create a new AI NPC profile
-- **create_session**: Initialize a new interaction session
-- **get_chaos_box_config**: Retrieve current Chaos Box logic parameters
 - **get_character**: Get detailed configuration of a specific AI character
 - **get_session**: Retrieve details about an ongoing interaction session
 - **send_inference**: Send user input to an AI NPC and get a response
+- **create_character**: Create a new AI NPC profile
+- **create_session**: Initialize a new interaction session
+- **get_chaos_box_config**: Retrieve current Chaos Box logic parameters
 - **list_assets**: List assets or knowledge bases attached to characters
 - **list_characters**: List all AI characters managed in your account
 - **update_chaos_box_config**: Update Chaos Box decision logic parameters

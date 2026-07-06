@@ -35,8 +35,9 @@ Connect **Favqs** to your AI agent to access a world of inspiration and wisdom. 
 
 
 ## Available Tools (28)
-- **add_quote**: Add a new quote (User Session Required)
 - **clearvote_quote**: Clear vote on a quote (User Session Required)
+- **get_followers**: Get followers of the current user
+- **add_quote**: Add a new quote (User Session Required)
 - **create_session**: Create a user session to obtain a User-Token
 - **create_user**: Create a new FavQs user
 - **delete_quote**: Delete a private quote (Pro only)
@@ -46,7 +47,6 @@ Connect **Favqs** to your AI agent to access a world of inspiration and wisdom. 
 - **follow**: Follow a user, author, or tag
 - **forgot_password**: Request a password recovery email
 - **get_activity**: Get activity feed
-- **get_followers**: Get followers of the current user
 - **get_following**: Get entities the current user is following
 - **get_qotd**: Does not require authentication.
 

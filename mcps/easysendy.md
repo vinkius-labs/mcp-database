@@ -36,12 +36,6 @@ No more manual subscriber management or complex CSV exports in the dashboard. Yo
 
 
 ## Available Tools (11)
-- **add_multiple_subscribers**: Input should be an array of subscriber objects.
-
-Add multiple subscribers to a list
-- **add_subscriber**: Requires the List UID and at least an EMAIL address.
-
-Add a single subscriber to a list
 - **create_list**: Create a new subscriber list
 - **delete_list**: Delete a subscriber list
 - **delete_subscriber**: Delete a subscriber from a list
@@ -51,6 +45,12 @@ Add a single subscriber to a list
 - **unsubscribe_user**: Unsubscribe a user from a list
 - **update_list**: Update an existing subscriber list
 - **update_subscriber**: Update an existing subscriber
+- **add_multiple_subscribers**: Input should be an array of subscriber objects.
+
+Add multiple subscribers to a list
+- **add_subscriber**: Requires the List UID and at least an EMAIL address.
+
+Add a single subscriber to a list
 
 
 ## 💬 Prompt Examples

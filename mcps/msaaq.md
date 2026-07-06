@@ -33,6 +33,12 @@ Empower your AI agent with access to the **MSAAQ** Learning Management System (L
 
 
 ## Available Tools (12)
+- **get_learning_course_details**: Get details for a course
+- **list_all_courses_admin**: List all courses (Admin)
+- **list_registered_users_admin**: List all students and users
+- **list_student_certificates**: List my earned certificates
+- **list_available_learning_courses**: List courses for students
+- **verify_issued_certificate**: Verify a certificate authenticity
 - **check_api_connectivity**: Verify MSAAQ API status
 - **create_new_student_account**: Requires name and email.
 
@@ -41,12 +47,6 @@ Invite or create a new user
 - **get_course_performance_stats**: Get analytics for a course
 - **get_my_active_enrollments**: List my enrolled courses
 - **get_logged_in_user_profile**: Get current user profile
-- **get_learning_course_details**: Get details for a course
-- **list_all_courses_admin**: List all courses (Admin)
-- **list_registered_users_admin**: List all students and users
-- **list_student_certificates**: List my earned certificates
-- **list_available_learning_courses**: List courses for students
-- **verify_issued_certificate**: Verify a certificate authenticity
 
 
 ## 💬 Prompt Examples

@@ -35,11 +35,11 @@ Connect your **Addepar** account to your AI agent to unlock enterprise-grade inv
 
 
 ## Available Tools (5)
-- **list_entities**: List clients and accounts
-- **get_entity_details**: Get details for an entity
 - **get_portfolio_analytics**: Get portfolio performance data
 - **get_position_details**: View portfolio holdings
 - **list_transactions**: List financial transactions
+- **list_entities**: List clients and accounts
+- **get_entity_details**: Get details for an entity
 
 
 ## 💬 Prompt Examples

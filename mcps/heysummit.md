@@ -36,18 +36,18 @@ No more manual attendee tracking or schedule updates through complex web forms. 
 
 
 ## Available Tools (12)
-- **add_attendee**: Register a new attendee
-- **get_event**: Get event details
-- **get_me**: Get account information
-- **get_speaker**: Get speaker details
-- **get_talk**: Get talk details
-- **list_attendees**: List event attendees
 - **list_categories**: List event categories
 - **list_events**: List all events
 - **list_speakers**: List event speakers
 - **list_talks**: List event talks
 - **list_tickets**: List event tickets
 - **update_event**: Update an existing event
+- **add_attendee**: Register a new attendee
+- **get_event**: Get event details
+- **get_me**: Get account information
+- **get_speaker**: Get speaker details
+- **get_talk**: Get talk details
+- **list_attendees**: List event attendees
 
 
 ## 💬 Prompt Examples

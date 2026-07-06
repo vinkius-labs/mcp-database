@@ -41,10 +41,10 @@ No more wrestling with IP blocks or complex browser configurations. Your AI acts
 - **scrape_to_markdown**: Ideal for RAG and LLMs.
 
 Scrape webpage directly to Markdown
+- **get_api_usage**: Check API credit usage
 - **scrape_webpage**: Handles JavaScript, anti-bot, and proxies automatically.
 
 Scrape a webpage with browser rendering
-- **get_api_usage**: Check API credit usage
 
 
 ## 💬 Prompt Examples

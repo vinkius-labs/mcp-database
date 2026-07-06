@@ -32,15 +32,15 @@ Connect your **Product Hunt** account to any AI agent and track the latest start
 
 
 ## Available Tools (3)
+- **product_details**: You can get the product ID from the leaderboard or search results.
+
+Retrieves detailed information about a specific product by its ID
 - **daily_leaderboard**: It returns a list of products with their taglines, vote counts, and URLs.
 
 Fetches the current daily leaderboard of products from Product Hunt
 - **search_products**: g., "AI", "productivity", "marketing").
 
 Searches for products on Product Hunt by keyword or name
-- **product_details**: You can get the product ID from the leaderboard or search results.
-
-Retrieves detailed information about a specific product by its ID
 
 
 ## 💬 Prompt Examples

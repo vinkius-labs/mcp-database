@@ -36,13 +36,6 @@ No more manual order checking or searching for captions. Your AI acts as a dedic
 
 
 ## Available Tools (11)
-- **cancel_order**: Cancel a pending order
-- **create_order**: Create a new transcription or captioning order
-- **get_attachment_content**: Get the content of a finished transcript or caption file
-- **get_attachment_metadata**: Get metadata of a specific attachment
-- **get_invoice**: Get details of a specific invoice
-- **get_order**: Get details of a specific order
-- **get_order_progress**: Get the progress status of a transcription order
 - **get_user_profile**: com account.
 
 Get current user profile
@@ -51,6 +44,13 @@ Get current user profile
 - **list_orders**: com orders.
 
 List all transcription and captioning orders
+- **cancel_order**: Cancel a pending order
+- **create_order**: Create a new transcription or captioning order
+- **get_attachment_content**: Get the content of a finished transcript or caption file
+- **get_attachment_metadata**: Get metadata of a specific attachment
+- **get_invoice**: Get details of a specific invoice
+- **get_order**: Get details of a specific order
+- **get_order_progress**: Get the progress status of a transcription order
 
 
 ## 💬 Prompt Examples

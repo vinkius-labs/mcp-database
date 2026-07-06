@@ -36,6 +36,14 @@ No more switching between mobile apps and desktop browsers to check the status o
 
 
 ## Available Tools (17)
+- **list_project_users**: List users in a Fieldwire project
+- **list_projects**: List all projects in the Fieldwire account
+- **list_statuses**: Get custom task statuses for a project
+- **list_task_bubbles**: Get comments and media (bubbles) for a task
+- **list_tasks**: List tasks in a Fieldwire project
+- **get_project**: Get details for a specific Fieldwire project
+- **invite_user**: Invite a user to the Fieldwire account
+- **list_floorplans**: List floorplans in a Fieldwire project
 - **add_aws_post_tokens**: Generate AWS POST tokens for uploading files
 - **batch_move_floorplans**: Move floorplans to collections
 - **batch_update_statuses**: Batch create, update, or delete task statuses
@@ -46,14 +54,6 @@ No more switching between mobile apps and desktop browsers to check the status o
 - **get_form_full**: If a job is triggered, it returns a jid. Call again with the jid to poll until the full JSON payload is returned.
 
 Get full data for a form (triggers job or polls)
-- **get_project**: Get details for a specific Fieldwire project
-- **invite_user**: Invite a user to the Fieldwire account
-- **list_floorplans**: List floorplans in a Fieldwire project
-- **list_project_users**: List users in a Fieldwire project
-- **list_projects**: List all projects in the Fieldwire account
-- **list_statuses**: Get custom task statuses for a project
-- **list_task_bubbles**: Get comments and media (bubbles) for a task
-- **list_tasks**: List tasks in a Fieldwire project
 - **update_task**: Update an existing Fieldwire task
 
 
