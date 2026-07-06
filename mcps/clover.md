@@ -26,7 +26,6 @@ Connect your **Clover** POS to any AI agent — Fiserv-backed commerce platform.
 
 List recent orders
 - **get_merchant**: Get merchant info
-- **get_order**: Get order details
 - **list_items**: List menu/product items
 - **list_categories**: List item categories
 - **list_customers**: List customers
@@ -34,6 +33,7 @@ List recent orders
 - **list_payments**: List payments
 - **list_inventory**: List inventory
 - **list_discounts**: List discounts
+- **get_order**: Get order details
 
 
 ## 💬 Prompt Examples

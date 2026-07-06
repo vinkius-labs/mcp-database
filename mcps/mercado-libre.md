@@ -35,7 +35,6 @@ Connect your **Mercado Libre** seller account to any AI agent to streamline your
 
 
 ## Available Tools (17)
-- **answer_question**: Answer a buyer question
 - **create_item**: Requires title, category_id, price, currency_id, available_quantity, buying_mode, condition, listing_type_id, and pictures.
 
 Publish a new item on Mercado Libre
@@ -54,6 +53,7 @@ Publish a new item on Mercado Libre
 - **search_orders**: Search orders for a seller
 - **search_questions**: Search questions for a seller
 - **send_post_sale_message**: Send a post-sale message
+- **answer_question**: Answer a buyer question
 
 
 ## 💬 Prompt Examples

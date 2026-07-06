@@ -45,8 +45,8 @@ Your AI becomes a legal research assistant, helping you find cases, track docket
 
 
 ## Available Tools (13)
-- **get_case_details**: Get detailed information for a specific legal case
 - **get_docket_alerts**: Get configured docket alerts for monitoring cases
+- **get_case_details**: Get detailed information for a specific legal case
 - **get_docket_details**: Use docket ID from search results.
 
 Get detailed information for a specific court docket

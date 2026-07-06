@@ -32,12 +32,12 @@ Connect your AI agent to **E2B** — the leading sandbox platform for AI code ex
 
 
 ## Available Tools (3)
-- **create_sandbox**: The sandbox is an isolated Linux VM that starts in ~150ms. Use templates like "base" (default), "python3", or "node" for pre-configured environments. Default timeout is 300 seconds.
-
-Create a new isolated cloud sandbox for running code securely. Each sandbox is a Firecracker microVM with its own filesystem
 - **kill_sandbox**: The sandbox and its filesystem contents are permanently deleted.
 
 Terminate a running sandbox by its ID
+- **create_sandbox**: The sandbox is an isolated Linux VM that starts in ~150ms. Use templates like "base" (default), "python3", or "node" for pre-configured environments. Default timeout is 300 seconds.
+
+Create a new isolated cloud sandbox for running code securely. Each sandbox is a Firecracker microVM with its own filesystem
 - **list_sandboxes**: Useful for monitoring active environments and managing resources.
 
 List all currently active sandboxes in your E2B account

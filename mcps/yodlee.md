@@ -34,12 +34,6 @@ Connect your **Yodlee** developer account to any AI agent and gain programmatic 
 
 
 ## Available Tools (13)
-- **generate_token**: Generate a Yodlee access token
-- **create_provider_account**: Link a new financial institution account
-- **create_verification**: g., for ACH).
-
-Initiate account verification
-- **delete_account**: Remove an account from the user profile
 - **get_account**: Get details for a specific account
 - **get_provider_account**: Check the status of an account refresh or linking process
 - **get_provider**: g., login requirements).
@@ -51,6 +45,12 @@ Get details about a specific provider
 - **list_transaction_categories**: List available transaction categories
 - **list_transactions**: Fetch transactions across all accounts
 - **update_provider_account**: Update credentials or trigger a manual refresh
+- **generate_token**: Generate a Yodlee access token
+- **create_provider_account**: Link a new financial institution account
+- **create_verification**: g., for ACH).
+
+Initiate account verification
+- **delete_account**: Remove an account from the user profile
 
 
 ## 💬 Prompt Examples

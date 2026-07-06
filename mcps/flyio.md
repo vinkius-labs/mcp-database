@@ -37,9 +37,6 @@ Connect your **Fly.io** account to any AI agent and take full control of your ed
 
 
 ## Available Tools (10)
-- **create_machine**: Scales horizontal capacities dynamically without waiting on full platform deployments.
-
-Provision a new highly available Edge Machine inside an App
 - **delete_machine**: The Firecracker VM is dropped, compute billing ceases immediately, and any ephemeral disk state dissolves. Fails safely if persistent volumes are explicitly attached without the force flag.
 
 Terminate and destroy a Fly Machine forever (Scale Down)
@@ -67,6 +64,9 @@ Boot a previously stopped or suspended Fly Machine
 - **stop_machine**: Drastically reduces latency bills during idle cycles outside typical user ingress bands.
 
 Gracefully halt a running Fly.io internal Machine
+- **create_machine**: Scales horizontal capacities dynamically without waiting on full platform deployments.
+
+Provision a new highly available Edge Machine inside an App
 
 
 ## 💬 Prompt Examples

@@ -27,15 +27,15 @@ Connect the **Amadeus** global travel platform to any AI agent — the backbone 
 
 
 ## Available Tools (10)
+- **search_hotels**: "Find hotels in London for next weekend."
+
+Search hotel offers
 - **search_flights**: "Find flights from Paris to New York next week."
 
 Search flight offers
 - **get_cheapest_dates**: "When is the cheapest to fly NYC to London?"
 
 Get cheapest flight dates
-- **search_hotels**: "Find hotels in London for next weekend."
-
-Search hotel offers
 - **search_hotels_nearby**: For "hotels near Eiffel Tower."
 
 Search hotels near coordinates

@@ -34,13 +34,13 @@ Connect your **Open Exchange Rates** account to any AI agent to integrate global
 
 
 ## Available Tools (7)
+- **get_time_series**: Retrieve exchange rates over a period of time
+- **get_usage**: Check your App ID usage and plan limits
 - **convert_currency**: Convert any value from one currency to another
 - **list_currencies**: Get a list of all available currency symbols and names
 - **get_historical_rates**: Retrieve exchange rates for a specific date
 - **get_latest_rates**: Retrieve the most recent exchange rates
 - **get_ohlc**: Retrieve OHLC data for a specific period
-- **get_time_series**: Retrieve exchange rates over a period of time
-- **get_usage**: Check your App ID usage and plan limits
 
 
 ## 💬 Prompt Examples

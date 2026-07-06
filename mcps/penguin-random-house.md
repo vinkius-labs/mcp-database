@@ -34,7 +34,6 @@ Connect the **Penguin Random House** Open Service to your AI agent to explore on
 
 
 ## Available Tools (13)
-- **get_author**: Get details for a specific author
 - **get_category_hierarchy**: Get category hierarchy view
 - **get_series**: Get details for a specific series
 - **get_title**: Get details for a specific title by ISBN
@@ -55,6 +54,7 @@ List works (groups of different formats of the same book)
 - **search**: Responses include a facets array for filtering results.
 
 Full-text search powered by Apache Solr
+- **get_author**: Get details for a specific author
 
 
 ## 💬 Prompt Examples

@@ -33,9 +33,9 @@ Connect your **Avalara AvaTax** account to any AI agent and automate your transa
 
 
 ## Available Tools (10)
+- **get_account_check**: Verify AvaTax account connection
 - **commit_transaction**: Mark a transaction as committed for reporting
 - **create_transaction**: Calculate tax and record a transaction
-- **get_account_check**: Verify AvaTax account connection
 - **get_company**: Get details for a specific company
 - **get_tax_rates_by_address**: Get tax rates for a physical address
 - **get_transaction**: Retrieve a specific transaction by code

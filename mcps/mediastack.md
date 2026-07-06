@@ -33,10 +33,10 @@ Connect **Mediastack** to your AI agent to search, filter, and retrieve global n
 
 
 ## Available Tools (2)
+- **list_sources**: Retrieve a list of all supported news sources
 - **get_news**: Use the date parameter for historical news.
 
 Retrieve live or historical news articles
-- **list_sources**: Retrieve a list of all supported news sources
 
 
 ## 💬 Prompt Examples

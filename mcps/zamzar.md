@@ -33,15 +33,15 @@ Connect your **Zamzar** developer account to any AI agent and automate complex f
 
 
 ## Available Tools (5)
-- **get_file_content**: Returns metadata about the downloaded file.
-
-Download the converted file content
-- **get_format**: Retrieve details for a specific format
 - **get_job**: Statuses include initialising, converting, successful, failed.
 
 Retrieve the status of a specific job
 - **list_formats**: List all supported file formats
 - **start_job**: Start a file conversion job
+- **get_file_content**: Returns metadata about the downloaded file.
+
+Download the converted file content
+- **get_format**: Retrieve details for a specific format
 
 
 ## 💬 Prompt Examples

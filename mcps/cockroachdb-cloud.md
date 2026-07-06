@@ -41,8 +41,8 @@ Connect your **CockroachDB Cloud** account to any AI agent and take full control
 - **list_network_allowlist**: List network allowlist rules for a specific cluster
 - **list_encryption_keys**: List Customer Managed Keys (CMKs) used for cluster encryption
 - **list_supported_cloud_providers**: List cloud providers supported by CockroachDB Cloud
-- **list_cockroach_clusters**: List all CockroachDB Cloud clusters
 - **list_cluster_nodes**: List all nodes within a specific cluster
+- **list_cockroach_clusters**: List all CockroachDB Cloud clusters
 - **list_cluster_operations**: List recent management operations for a cluster (e.g. scaling, upgrades)
 
 

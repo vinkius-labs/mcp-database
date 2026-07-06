@@ -36,12 +36,10 @@ No more manual dashboard building just to answer a quick question about system h
 
 
 ## Available Tools (14)
-- **clean_tombstones**: enable-admin-api to be enabled.
-
-Remove deleted data from disk
-- **delete_series**: enable-admin-api to be enabled.
-
-Delete data for a selection of series in a time range
+- **get_status_config**: Get the currently loaded Prometheus configuration (YAML)
+- **get_status_flags**: Get configured Prometheus flag values
+- **get_status_runtimeinfo**: Get Prometheus runtime information
+- **get_status_tsdb**: Get TSDB cardinality statistics
 - **get_label_values**: Get all values for a specific label
 - **get_labels**: Get a list of all label names
 - **get_metadata**: Get metadata about metrics scraped from targets
@@ -52,10 +50,12 @@ Delete data for a selection of series in a time range
 
 Create a snapshot of all current data
 - **get_status_buildinfo**: Get Prometheus build information
-- **get_status_config**: Get the currently loaded Prometheus configuration (YAML)
-- **get_status_flags**: Get configured Prometheus flag values
-- **get_status_runtimeinfo**: Get Prometheus runtime information
-- **get_status_tsdb**: Get TSDB cardinality statistics
+- **clean_tombstones**: enable-admin-api to be enabled.
+
+Remove deleted data from disk
+- **delete_series**: enable-admin-api to be enabled.
+
+Delete data for a selection of series in a time range
 
 
 ## 💬 Prompt Examples

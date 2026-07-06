@@ -37,8 +37,6 @@ Connect your **Envoy** workplace account to any AI agent and take full control o
 
 
 ## Available Tools (10)
-- **list_locations**: List all office locations managed in Envoy
-- **list_visitors**: List all visitors checked in or expected at an Envoy location
 - **pre_register_visitor**: Pre-register a visitor in Envoy
 - **list_deliveries**: List all deliveries at an Envoy location
 - **list_desks**: List all hot desks at an Envoy location
@@ -47,6 +45,8 @@ Connect your **Envoy** workplace account to any AI agent and take full control o
 - **list_rooms**: List all bookable rooms/spaces at an Envoy location
 - **get_employee_signins**: Get employee sign-in data for an Envoy location
 - **get_capacity**: Get real-time capacity data for an Envoy location
+- **list_locations**: List all office locations managed in Envoy
+- **list_visitors**: List all visitors checked in or expected at an Envoy location
 
 
 ## 💬 Prompt Examples
