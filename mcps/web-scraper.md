@@ -33,6 +33,12 @@ Connect the **Web Scraper** utility to any AI agent to give it direct access to 
 
 
 ## Available Tools (5)
+- **batch_read**: All URLs are fetched in parallel. Maximum 10 URLs per batch.
+
+Fetch multiple web pages in parallel
+- **crawl**: Maximum 10 pages to keep response size manageable.
+
+Crawl a website starting from a URL
 - **read**: Uses @mozilla/readability (Firefox Reader View) to extract the main article content, then converts to Markdown. Works best for articles, docs, blogs, and Wikipedia.
 
 Fetch any public web page and return its full content as clean Markdown
@@ -42,12 +48,6 @@ Extract structured metadata from a web page: title, description, OG tags, and mo
 - **list_links**: Internal links share the same hostname as the source page.
 
 Extract all hyperlinks from a web page
-- **batch_read**: All URLs are fetched in parallel. Maximum 10 URLs per batch.
-
-Fetch multiple web pages in parallel
-- **crawl**: Maximum 10 pages to keep response size manageable.
-
-Crawl a website starting from a URL
 
 
 ## 💬 Prompt Examples

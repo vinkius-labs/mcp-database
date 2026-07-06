@@ -36,14 +36,14 @@ No more manual stat exporting or complex SMTP configurations. Your AI acts as a 
 
 
 ## Available Tools (12)
-- **create_marketing_list**: Create a new marketing list
-- **get_account_info**: Get SendGrid account details
-- **get_email_stats**: Get account-wide email statistics
-- **get_template**: Get template details
 - **list_marketing_contacts**: List marketing contacts
 - **list_ip_access**: List allowed IP addresses
 - **list_marketing_lists**: List marketing segments/lists
 - **list_spam_reports**: List spam reports
+- **create_marketing_list**: Create a new marketing list
+- **get_account_info**: Get SendGrid account details
+- **get_email_stats**: Get account-wide email statistics
+- **get_template**: Get template details
 - **list_templates**: List dynamic email templates
 - **list_verified_senders**: List verified sender identities
 - **send_email**: Use JSON strings for recipients and dynamic_template_data.

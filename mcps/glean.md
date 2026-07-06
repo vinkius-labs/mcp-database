@@ -38,9 +38,6 @@ Connect your **Glean** enterprise account to any AI agent and take full control 
 
 
 ## Available Tools (10)
-- **get_answer**: Enumerate explicitly attached structured rules exporting active Billing
-- **autocomplete**: Retrieve explicit Cloud logging tracing explicit Vault limits
-- **chat_completion**: Dispatch an automated validation check routing explicit Gateway history
 - **custom_request**: ` merging physical POST arrays strictly.
 
 Identify precise active arrays spanning native Hold parsing
@@ -52,6 +49,9 @@ Perform structural extraction of properties driving active Account logic
 - **search_people**: Provision a highly-available JSON Payload generating hard Customer bindings
 - **search_docs**: Identify bounded CRM records inside the Headless Glean Platform
 - **get_suggestions**: Irreversibly vaporize explicit validations extracting rich Churn flags
+- **get_answer**: Enumerate explicitly attached structured rules exporting active Billing
+- **autocomplete**: Retrieve explicit Cloud logging tracing explicit Vault limits
+- **chat_completion**: Dispatch an automated validation check routing explicit Gateway history
 
 
 ## 💬 Prompt Examples

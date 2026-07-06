@@ -33,6 +33,13 @@ Connect your **Upstash Redis** serverless database securely to your conversation
 
 
 ## Available Tools (7)
+- **list_keys**: Avoid broad patterns like "*" on large databases.
+
+Scans for keys matching a glob pattern
+- **ping**: Pings the Redis instance to verify connectivity
+- **set**: You can specify expiry in seconds.
+
+Sets a string value at a key with an optional TTL
 - **delete**: Provide a comma-separated list of keys.
 
 Deletes one or more keys from Redis
@@ -41,13 +48,6 @@ Deletes one or more keys from Redis
 
 Increments or decrements a numeric counter at a key
 - **get_key_info**: Retrieves the data type and TTL of a key
-- **list_keys**: Avoid broad patterns like "*" on large databases.
-
-Scans for keys matching a glob pattern
-- **ping**: Pings the Redis instance to verify connectivity
-- **set**: You can specify expiry in seconds.
-
-Sets a string value at a key with an optional TTL
 
 
 ## 💬 Prompt Examples

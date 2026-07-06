@@ -39,12 +39,15 @@ Your AI agent becomes your ITSM command center — no more navigating complex Fi
 
 
 ## Available Tools (10)
-- **create_record**: Provide fields as JSON string. Common tables: incident, change_request, sc_request, problem.
-
-Create a new record in any ServiceNow table
 - **search_knowledge**: Returns matching articles with KB numbers and descriptions.
 
 Search the ServiceNow Knowledge Base
+- **query_cmdb**: Common tables: cmdb_ci_server, cmdb_ci_appl, cmdb_ci_db_instance, cmdb_ci_network. Example query: name=PROD-WEB-01
+
+Query ServiceNow CMDB configuration items
+- **create_record**: Provide fields as JSON string. Common tables: incident, change_request, sc_request, problem.
+
+Create a new record in any ServiceNow table
 - **update_record**: Only specify the fields you want to change.
 
 Update an existing ServiceNow record
@@ -66,9 +69,6 @@ List incidents with optional filters
 - **list_change_requests**: Filter by state, risk, type. Example: risk=high^state=new
 
 List change requests
-- **query_cmdb**: Common tables: cmdb_ci_server, cmdb_ci_appl, cmdb_ci_db_instance, cmdb_ci_network. Example query: name=PROD-WEB-01
-
-Query ServiceNow CMDB configuration items
 
 
 ## 💬 Prompt Examples

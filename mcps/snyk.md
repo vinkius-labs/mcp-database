@@ -35,15 +35,15 @@ Stop digging through the Snyk UI just to see why a container build failed. Find 
 
 
 ## Available Tools (9)
-- **get_billing_info**: Retrieves billing details for an organization
-- **get_issue_details**: Retrieves details for a specific security issue
 - **get_project_details**: Retrieves details for a specific project
-- **get_usage_stats**: Retrieves usage statistics
 - **list_integrations**: Lists active integrations for an organization
 - **list_issues**: Lists security issues for a specific project
 - **list_organization_members**: Lists all members of a Snyk organization
 - **list_organizations**: Lists all Snyk organizations
 - **list_projects**: Lists all projects in a specific organization
+- **get_billing_info**: Retrieves billing details for an organization
+- **get_issue_details**: Retrieves details for a specific security issue
+- **get_usage_stats**: Retrieves usage statistics
 
 
 ## 💬 Prompt Examples

@@ -22,12 +22,6 @@ The **ultimate SEC EDGAR Mega-Server** — 13 tools.
 
 
 ## Available Tools (13)
-- **lookup_ticker**: g., AAPL, MSFT, TSLA) to the SEC CIK number needed for all EDGAR queries. Returns company name, CIK, and ticker. The CIK is the unique identifier SEC uses for all public companies.
-
-Look up a company by stock ticker — get CIK, name, and ID
-- **search_companies**: Returns matching companies with CIK numbers. Use this when you don't know the exact ticker.
-
-Search SEC-registered companies by name or ticker
 - **get_company_info**: Provide either a CIK number or ticker.
 
 Get full company profile from SEC — SIC code, exchanges, filings history
@@ -61,6 +55,12 @@ Get ALL XBRL financial facts for a company — complete financial data dump
 - **get_industry_comparison**: Useful for industry comparison and screening. Example: get all companies' Revenue for CY2024. Period format: CY2024 (annual), CY2024Q1 (quarterly), CY2024Q1I (instant).
 
 Compare a financial metric across ALL companies — industry-wide XBRL frame data
+- **lookup_ticker**: g., AAPL, MSFT, TSLA) to the SEC CIK number needed for all EDGAR queries. Returns company name, CIK, and ticker. The CIK is the unique identifier SEC uses for all public companies.
+
+Look up a company by stock ticker — get CIK, name, and ID
+- **search_companies**: Returns matching companies with CIK numbers. Use this when you don't know the exact ticker.
+
+Search SEC-registered companies by name or ticker
 
 
 ## 💬 Prompt Examples

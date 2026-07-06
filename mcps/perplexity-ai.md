@@ -40,6 +40,15 @@ No more switching between search engines and reading through pages of results. Y
 
 
 ## Available Tools (14)
+- **chat_with_recency_filter**: Available recency filters: "hour", "day", "week", "month", "year".
+This ensures the answer is based on recent information only.
+Use this for news, recent events, or time-sensitive queries where outdated info is not useful.
+
+Ask Perplexity AI with results filtered by time recency
+- **chat_with_related_questions**: The response includes a related_questions array with suggested questions for further exploration.
+Use this for research, learning, and discovering related topics you might want to explore.
+
+Ask Perplexity AI and get related follow-up questions
 - **chat_completion**: The Sonar model searches the web, synthesizes information, and provides a concise answer.
 This is the basic query tool for factual questions, summaries, and general knowledge.
 Use this for quick lookups where you need accurate, up-to-date information.
@@ -66,15 +75,6 @@ Ask Perplexity AI with multi-turn conversation history
 Use this for visual topics, product searches, or when you need images to accompany the answer.
 
 Ask Perplexity AI and get relevant images with the answer
-- **chat_with_recency_filter**: Available recency filters: "hour", "day", "week", "month", "year".
-This ensures the answer is based on recent information only.
-Use this for news, recent events, or time-sensitive queries where outdated info is not useful.
-
-Ask Perplexity AI with results filtered by time recency
-- **chat_with_related_questions**: The response includes a related_questions array with suggested questions for further exploration.
-Use this for research, learning, and discovering related topics you might want to explore.
-
-Ask Perplexity AI and get related follow-up questions
 - **deep_research**: This model performs extensive web searches and generates detailed reports with thorough citations.
 It takes longer than regular queries but provides much more depth and breadth.
 Use this for complex topics, literature reviews, competitive analysis, or thorough investigations.

@@ -36,8 +36,6 @@ No more manual order checking or customer searching. Your AI acts as a dedicated
 
 
 ## Available Tools (10)
-- **create_customer**: Register a new customer
-- **get_customer_details**: Get details for a customer
 - **get_order_details**: Get details for an order
 - **get_product_details**: Get metadata for a product
 - **get_shop_info**: Get store information
@@ -48,6 +46,8 @@ No more manual order checking or customer searching. Your AI acts as a dedicated
 
 List your Shopify products
 - **list_smart_collections**: List automated collections
+- **create_customer**: Register a new customer
+- **get_customer_details**: Get details for a customer
 
 
 ## 💬 Prompt Examples

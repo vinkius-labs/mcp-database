@@ -33,15 +33,15 @@ Integrate **Microsoft Dynamics 365 Finance & Operations**, the comprehensive ERP
 
 
 ## Available Tools (10)
-- **get_d365_fo_metadata**: Retrieve metadata for the current authenticated environment
-- **get_inventory_on_hand**: Retrieve real-time inventory on-hand quantities across all warehouses
-- **quick_finance_health_audit**: Retrieve a high-level summary of recent orders and inventory (mock logic)
-- **get_sales_order_details**: Get detailed information for a specific sales order
-- **list_d365_customers**: List all customers registered in your enterprise account
 - **list_ledger_journals**: List ledger journals and their headers
 - **list_released_products**: List all released products in your enterprise catalog
 - **list_d365_sales_orders**: List all sales order headers in your D365 F&O environment
+- **get_inventory_on_hand**: Retrieve real-time inventory on-hand quantities across all warehouses
+- **quick_finance_health_audit**: Retrieve a high-level summary of recent orders and inventory (mock logic)
 - **list_d365_vendors**: List all vendors in your Dynamics 365 Finance & Operations account
+- **get_sales_order_details**: Get detailed information for a specific sales order
+- **get_d365_fo_metadata**: Retrieve metadata for the current authenticated environment
+- **list_d365_customers**: List all customers registered in your enterprise account
 - **search_sales_orders**: Search for sales orders using an order number or customer keyword
 
 

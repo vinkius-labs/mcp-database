@@ -36,9 +36,6 @@ Connect your **Midjourney** account to any AI agent and take full control of sta
 
 
 ## Available Tools (10)
-- **generate_image**: Always retrieve the returning Job ID to poll `get_job` tracking its process till completion.
-
-Generate images from a text prompt using Midjourney generative models
 - **get_job**: DO NOT loop aggressively, sleep in between.
 
 Get the active execution status of an ongoing Midjourney job
@@ -56,6 +53,9 @@ Create variant branches from a specific Midjourney grid image
 - **reroll_job**: Re-run identical prompt arguments dropping new sets of outputs
 - **pan_image**: Extrapolate frame borders panning natively over a direction
 - **zoom_out_image**: Widen the perspective zooming out explicitly
+- **generate_image**: Always retrieve the returning Job ID to poll `get_job` tracking its process till completion.
+
+Generate images from a text prompt using Midjourney generative models
 
 
 ## 💬 Prompt Examples

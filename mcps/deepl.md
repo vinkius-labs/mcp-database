@@ -36,13 +36,6 @@ Empower your AI agent to orchestrate your entire multilingual workflow with **De
 
 
 ## Available Tools (9)
-- **get_account_glossaries**: List configured translation glossaries
-- **get_glossary_dictionary**: Get term mapping entries for a specific glossary ID
-- **get_source_languages**: List all supported source languages for translation
-- **get_target_languages**: g., EN-US, PT-BR) that DeepL can translate TO.
-
-List all supported target languages for translation
-- **get_api_usage**: Get current API usage and character limit constraints
 - **translate_text_formal**: g., "Sie" in German, "vous" in French) suitable for business communications.
 
 Translate text using a formal/business tone
@@ -50,6 +43,13 @@ Translate text using a formal/business tone
 - **translate_text_informal**: g., "du" in German, "tu" in French) suitable for casual platforms.
 
 Translate text using an informal/casual tone
+- **get_account_glossaries**: List configured translation glossaries
+- **get_glossary_dictionary**: Get term mapping entries for a specific glossary ID
+- **get_source_languages**: List all supported source languages for translation
+- **get_target_languages**: g., EN-US, PT-BR) that DeepL can translate TO.
+
+List all supported target languages for translation
+- **get_api_usage**: Get current API usage and character limit constraints
 - **translate_text_standard**: Translate text into a target language using standard tone
 
 

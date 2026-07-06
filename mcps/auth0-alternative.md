@@ -38,12 +38,6 @@ No more wrestling with hundred browser tabs. Your AI acts as a dedicated identit
 
 
 ## Available Tools (13)
-- **create_user**: Requires the connection (e.g. "Username-Password-Authentication" for default DB connection) and email. Optionally set a password and username. Returns the created user with their user_id.
-
-Create a new user in Auth0
-- **delete_user**: All associated data (sessions, logs, metadata) will be deleted. Provide the user_id. WARNING: this action is irreversible.
-
-Delete an Auth0 user
 - **get_client**: Provide the client_id.
 
 Get details for a specific Auth0 client (application)
@@ -77,6 +71,12 @@ List users in your Auth0 tenant
 - **update_user**: Provide the user_id and a JSON object with fields to change (e.g. {"email":"new@email.com","email_verified":true,"blocked":false,"user_metadata":{"theme":"dark"}}). Only provided fields will be updated.
 
 Update an Auth0 user
+- **create_user**: Requires the connection (e.g. "Username-Password-Authentication" for default DB connection) and email. Optionally set a password and username. Returns the created user with their user_id.
+
+Create a new user in Auth0
+- **delete_user**: All associated data (sessions, logs, metadata) will be deleted. Provide the user_id. WARNING: this action is irreversible.
+
+Delete an Auth0 user
 
 
 ## 💬 Prompt Examples

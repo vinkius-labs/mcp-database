@@ -30,15 +30,15 @@ Connect your **Tableau Cloud** or **Tableau Server** to any AI agent and explore
 
 
 ## Available Tools (7)
-- **list_workbooks**: List Tableau workbooks
-- **get_workbook**: Get workbook details
-- **list_views**: List all views (dashboards)
 - **list_datasources**: Useful for monitoring data freshness.
 
 List published data sources
 - **list_projects**: List projects in the site
 - **list_users**: List site users
 - **list_jobs**: List background jobs
+- **list_workbooks**: List Tableau workbooks
+- **get_workbook**: Get workbook details
+- **list_views**: List all views (dashboards)
 
 
 ## 💬 Prompt Examples

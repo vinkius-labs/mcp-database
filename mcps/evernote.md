@@ -37,10 +37,6 @@ Connect your **Evernote** account to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
-- **list_notebooks**: Use this to discover available notebooks before listing notes within them.
-
-Retrieve all Evernote notebooks for the authenticated account
-- **get_notebook**: Fetch detailed metadata for a specific Evernote notebook by its GUID
 - **create_notebook**: Returns the newly created notebook GUID and metadata.
 
 Create a new Evernote notebook
@@ -63,6 +59,10 @@ Search across all Evernote notes using Evernote's powerful query syntax
 
 Retrieve all tags defined in the Evernote account
 - **get_user**: Get profile information for the currently authenticated Evernote user
+- **list_notebooks**: Use this to discover available notebooks before listing notes within them.
+
+Retrieve all Evernote notebooks for the authenticated account
+- **get_notebook**: Fetch detailed metadata for a specific Evernote notebook by its GUID
 
 
 ## 💬 Prompt Examples
