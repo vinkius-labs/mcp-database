@@ -36,10 +36,6 @@ No more manual copy-pasting between devices or missing mobile notifications. You
 
 
 ## Available Tools (12)
-- **register_new_device**: g. a script) to receive pushes.
-
-Add a target device
-- **send_push_notification**: Send data to devices
 - **subscribe_to_channel**: Follow a channel
 - **remove_device**: Delete a device
 - **remove_push_record**: Delete a push
@@ -50,6 +46,10 @@ Add a target device
 - **list_recent_pushes**: Get push history
 - **list_channel_subscriptions**: Get channel feeds
 - **test_pushbullet_auth**: Verify credentials
+- **register_new_device**: g. a script) to receive pushes.
+
+Add a target device
+- **send_push_notification**: Send data to devices
 
 
 ## 💬 Prompt Examples

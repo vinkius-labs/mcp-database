@@ -27,15 +27,6 @@ Localize your projects efficiently using AI Agents with the official Transifex i
 
 
 ## Available Tools (10)
-- **get_language**: g., l:en, l:pt_BR).
-
-Get a specific language by ID
-- **get_organization**: g., o:org-slug).
-
-Get a specific organization by ID
-- **get_project**: g., o:org-slug:p:project-slug).
-
-Get a specific project by ID
 - **get_resource_string**: Get a specific resource string by ID
 - **get_resource**: g., o:org-slug:p:project-slug:r:resource-slug).
 
@@ -51,6 +42,15 @@ List resource strings (source strings) for a specific resource
 - **list_resources**: Optionally filter by project ID.
 
 List resources in Transifex
+- **get_language**: g., l:en, l:pt_BR).
+
+Get a specific language by ID
+- **get_organization**: g., o:org-slug).
+
+Get a specific organization by ID
+- **get_project**: g., o:org-slug:p:project-slug).
+
+Get a specific project by ID
 
 
 ## 💬 Prompt Examples

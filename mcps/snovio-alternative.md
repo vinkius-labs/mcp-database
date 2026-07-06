@@ -37,9 +37,6 @@ No more manual lead entry or missing campaign gaps. Your AI acts as your dedicat
 
 
 ## Available Tools (10)
-- **add_snovio_prospect_to_list**: Add prospect to list
-- **find_snovio_domain_emails**: Find emails for a domain
-- **find_snovio_prospect_by_name**: Find email by name and domain
 - **get_snovio_campaign_analytics**: Get campaign analytics
 - **get_snovio_prospect_by_email**: Get prospect details by email
 - **get_snovio_prospect_by_id**: Get prospect details by ID
@@ -49,6 +46,9 @@ No more manual lead entry or missing campaign gaps. Your AI acts as your dedicat
 - **check_snovio_status**: io API credentials.
 
 Check API Status
+- **add_snovio_prospect_to_list**: Add prospect to list
+- **find_snovio_domain_emails**: Find emails for a domain
+- **find_snovio_prospect_by_name**: Find email by name and domain
 
 
 ## 💬 Prompt Examples

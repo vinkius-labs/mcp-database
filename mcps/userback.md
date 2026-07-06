@@ -34,12 +34,12 @@ Connect your **Userback** account to any AI agent and simplify how you collect a
 
 
 ## Available Tools (6)
-- **create_feedback_entry**: Create a new feedback entry
 - **get_feedback_details**: Get details for a specific feedback
 - **get_project_details**: Get details for a specific project
 - **list_feedbacks**: List Userback feedbacks
 - **list_userback_projects**: List Userback projects
 - **list_account_users**: List account users
+- **create_feedback_entry**: Create a new feedback entry
 
 
 ## 💬 Prompt Examples

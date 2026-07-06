@@ -34,13 +34,13 @@ Connect your **Veeqo** account to any AI agent and simplify how you manage your 
 
 
 ## Available Tools (7)
-- **create_manual_order**: Create a new order
 - **get_order_details**: Get details for a specific order
 - **get_product_details**: Get details for a specific product
 - **list_customers**: List Veeqo customers
 - **list_orders**: List Veeqo orders
 - **list_inventory_products**: List products
 - **list_shipments**: List shipments
+- **create_manual_order**: Create a new order
 
 
 ## 💬 Prompt Examples

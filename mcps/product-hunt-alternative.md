@@ -36,8 +36,6 @@ No more manual scrolling through the feed for daily highlights. Your AI acts as 
 
 
 ## Available Tools (12)
-- **get_my_profile**: Get account info
-- **get_product_reviews**: Read user reviews
 - **get_post_details**: Get product info
 - **get_topic_info**: Get topic details
 - **list_user_goals**: Check maker goals
@@ -48,6 +46,8 @@ No more manual scrolling through the feed for daily highlights. Your AI acts as 
 - **list_trending_products**: List top products
 - **list_discovery_topics**: List product categories
 - **search_products**: Find products
+- **get_my_profile**: Get account info
+- **get_product_reviews**: Read user reviews
 
 
 ## 💬 Prompt Examples

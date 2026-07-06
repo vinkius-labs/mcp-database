@@ -36,8 +36,6 @@ No more manual tagging or losing track of interesting articles. Your AI acts as 
 
 
 ## Available Tools (12)
-- **save_to_pocket**: Save a URL to Pocket
-- **add_tags_to_item**: Add labels to item
 - **archive_pocket_item**: Archive an item
 - **clear_item_tags**: Remove all labels
 - **delete_pocket_item**: Permanently remove item
@@ -48,6 +46,8 @@ No more manual tagging or losing track of interesting articles. Your AI acts as 
 - **search_pocket_list**: Search by keywords
 - **test_pocket_auth**: Check connection
 - **unfavorite_pocket_item**: Remove from favorites
+- **save_to_pocket**: Save a URL to Pocket
+- **add_tags_to_item**: Add labels to item
 
 
 ## 💬 Prompt Examples

@@ -35,7 +35,6 @@ Connect your **vCita** business management account to any AI agent and simplify 
 
 
 ## Available Tools (12)
-- **cancel_appointment**: Cancel booking
 - **create_new_booking**: Schedule a service
 - **create_crm_client**: Add new customer
 - **get_api_status**: Get account status
@@ -47,6 +46,7 @@ Connect your **vCita** business management account to any AI agent and simplify 
 - **list_client_invoices**: List all invoices
 - **list_recorded_payments**: List transactions
 - **list_offered_services**: List bookable services
+- **cancel_appointment**: Cancel booking
 
 
 ## 💬 Prompt Examples

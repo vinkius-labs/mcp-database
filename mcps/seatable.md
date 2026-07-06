@@ -36,12 +36,12 @@ No more manual copy-pasting or complex filter building. Your AI acts as a dedica
 
 
 ## Available Tools (11)
+- **delete_row**: Delete a row from a table
+- **get_base_metadata**: Get metadata for the current base
 - **create_row**: Pass row data as a JSON string.
 
 Add a new row to a table
 - **create_table**: Create a new table
-- **delete_row**: Delete a row from a table
-- **get_base_metadata**: Get metadata for the current base
 - **get_row**: Get a specific row from a table
 - **list_columns**: List all columns in a table
 - **list_rows**: List all rows in a table

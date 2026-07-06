@@ -34,13 +34,13 @@ Connect your **Tumblr** account to any AI agent and simplify how you manage your
 
 
 ## Available Tools (5)
-- **get_blog_avatar**: Get the avatar URL for a blog
 - **get_blog_info**: g., "officialtumblr").
 
 Get information about a Tumblr blog
 - **get_post**: Get details for a specific post
 - **list_blog_posts**: List posts for a specific blog
 - **list_tagged_posts**: Search posts by tag
+- **get_blog_avatar**: Get the avatar URL for a blog
 
 
 ## 💬 Prompt Examples

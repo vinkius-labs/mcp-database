@@ -34,6 +34,12 @@ Connect your **Spotio** account to any AI agent to automate your field sales and
 
 
 ## Available Tools (12)
+- **list_pipelines**: List sales pipelines
+- **list_pipeline_stages**: List pipeline stages
+- **list_team_users**: List team users
+- **list_field_visits**: List field visits
+- **list_webhooks**: List configured webhooks
+- **update_lead**: Update lead info
 - **create_lead**: Create a new lead
 - **create_webhook**: status.changed.
 
@@ -42,12 +48,6 @@ Create a new webhook
 - **get_lead**: Get lead details
 - **list_lead_activities**: List lead activities
 - **list_leads**: List all sales leads
-- **list_pipelines**: List sales pipelines
-- **list_pipeline_stages**: List pipeline stages
-- **list_team_users**: List team users
-- **list_field_visits**: List field visits
-- **list_webhooks**: List configured webhooks
-- **update_lead**: Update lead info
 
 
 ## 💬 Prompt Examples

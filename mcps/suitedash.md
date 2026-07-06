@@ -34,8 +34,6 @@ Connect your **SuiteDash** account to any AI agent to automate your client porta
 
 
 ## Available Tools (11)
-- **create_contact**: Register a new contact
-- **get_company_details**: Get details for a company
 - **get_contact_details**: Get details for a contact
 - **get_schema_metadata**: Get CRM field definitions
 - **get_project_details**: Get metadata for a project
@@ -45,6 +43,8 @@ Connect your **SuiteDash** account to any AI agent to automate your client porta
 - **list_invoices**: List invoices
 - **list_projects**: List active projects
 - **list_tasks**: List project tasks
+- **create_contact**: Register a new contact
+- **get_company_details**: Get details for a company
 
 
 ## 💬 Prompt Examples

@@ -36,9 +36,6 @@ No more jumping between project boards and financial reports. Your AI acts as a 
 
 
 ## Available Tools (12)
-- **create_task**: Add new task
-- **get_api_status**: Check connection
-- **get_org_settings**: Get organization info
 - **get_project_details**: Get project info
 - **list_project_budgets**: List active budgets
 - **list_client_companies**: List organizations
@@ -48,6 +45,9 @@ No more jumping between project boards and financial reports. Your AI acts as a 
 - **list_agency_projects**: List all projects
 - **list_project_tasks**: List tasks
 - **list_time_entries**: List work logs
+- **create_task**: Add new task
+- **get_api_status**: Check connection
+- **get_org_settings**: Get organization info
 
 
 ## 💬 Prompt Examples

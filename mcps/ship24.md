@@ -36,10 +36,6 @@ No more wrestling with multiple carrier websites to find your packages. Your AI 
 
 
 ## Available Tools (12)
-- **create_bulk_trackers**: Bulk start tracking
-- **create_tracker**: Start tracking package
-- **delete_tracker**: Stop tracking package
-- **get_api_status**: Get API connectivity
 - **get_tracking_results**: Get package status
 - **list_bulk_trackers**: List bulk shipments
 - **list_couriers**: List supported carriers
@@ -50,6 +46,10 @@ No more wrestling with multiple carrier websites to find your packages. Your AI 
 
 Find carrier codes
 - **update_tracker_info**: Update tracker metadata
+- **create_bulk_trackers**: Bulk start tracking
+- **create_tracker**: Start tracking package
+- **delete_tracker**: Stop tracking package
+- **get_api_status**: Get API connectivity
 
 
 ## 💬 Prompt Examples

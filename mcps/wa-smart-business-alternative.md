@@ -36,9 +36,6 @@ No more manual toggling between WhatsApp tabs or missing critical customer repli
 
 
 ## Available Tools (13)
-- **check_wasmart_status**: Verify connectivity
-- **create_customer**: Create a customer
-- **get_agent**: Get agent details
 - **get_customer**: Get customer details
 - **list_agents**: List agents
 - **list_campaigns**: List campaigns
@@ -49,6 +46,9 @@ No more manual toggling between WhatsApp tabs or missing critical customer repli
 - **send_media**: Send media
 - **send_message**: Send a message
 - **send_template**: Send a template
+- **check_wasmart_status**: Verify connectivity
+- **create_customer**: Create a customer
+- **get_agent**: Get agent details
 
 
 ## 💬 Prompt Examples

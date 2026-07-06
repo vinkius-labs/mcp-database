@@ -35,15 +35,15 @@ Connect your **Typefully** account to any AI agent and simplify how you draft, s
 
 
 ## Available Tools (9)
-- **create_draft**: Create a new content draft
-- **delete_draft**: Remove a draft
-- **get_draft_details**: Get details for a draft
-- **list_drafts**: List content drafts
 - **list_social_accounts**: List connected social accounts
 - **publish_immediately**: Publish content right now
 - **schedule_content**: Schedule content for later
 - **update_draft**: Modify an existing draft
 - **get_user_profile**: Get your Typefully profile
+- **create_draft**: Create a new content draft
+- **delete_draft**: Remove a draft
+- **get_draft_details**: Get details for a draft
+- **list_drafts**: List content drafts
 
 
 ## 💬 Prompt Examples
