@@ -33,16 +33,16 @@ Connect your **Podia** account to any AI agent to streamline your digital storef
 
 
 ## Available Tools (10)
-- **create_customer**: Create a new Podia customer
-- **get_customer**: Get details for a specific Podia customer
-- **get_product**: Get details for a specific Podia product
-- **get_sale**: Get details for a specific Podia sale
 - **list_customers**: List Podia customers
 - **list_plans**: List Podia membership plans
 - **list_products**: List Podia products
 - **list_sales**: List Podia sales
 - **list_subscriptions**: List Podia subscriptions
 - **update_customer**: Update an existing Podia customer
+- **create_customer**: Create a new Podia customer
+- **get_customer**: Get details for a specific Podia customer
+- **get_product**: Get details for a specific Podia product
+- **get_sale**: Get details for a specific Podia sale
 
 
 ## 💬 Prompt Examples

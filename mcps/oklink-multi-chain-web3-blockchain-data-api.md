@@ -29,20 +29,20 @@ No more manually searching through multiple block explorers. Your AI acts as a d
 
 
 ## Available Tools (12)
+- **get_latest_block**: Get the latest block information for a chain
+- **get_token_list**: ) on a given blockchain.
+
+Get a list of tokens on a specific chain
+- **get_transaction_detail**: Get detailed information about a specific transaction
 - **get_address_summary**: Get summary information for a specific address
 - **get_address_transactions**: Get a list of transactions for a specific address
 - **get_block_detail**: Get detailed information about a specific block
 - **get_block_transactions**: Get a list of transactions within a specific block
 - **get_chain_info**: Get detailed information about a specific blockchain
-- **get_latest_block**: Get the latest block information for a chain
 - **get_nft_collection_info**: Get information about a specific NFT collection
 - **get_supported_chains**: Get a summary of all supported blockchains
 - **get_token_balance**: Get token balances for a specific address
 - **get_token_detail**: Get detailed information about a specific token
-- **get_token_list**: ) on a given blockchain.
-
-Get a list of tokens on a specific chain
-- **get_transaction_detail**: Get detailed information about a specific transaction
 
 
 ## 💬 Prompt Examples

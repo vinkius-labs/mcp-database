@@ -34,8 +34,6 @@ Connect your **Mozscape** account to any AI agent to perform deep SEO analysis a
 
 
 ## Available Tools (24)
-- **fetch_brand_authority**: Get Brand Authority score for a site
-- **fetch_distributions**: Get link distribution data
 - **fetch_histories**: Get daily or monthly metric histories
 - **fetch_link_intersect**: Find sites linking to multiple targets
 - **fetch_link_status**: Check if a specific link exists
@@ -58,6 +56,8 @@ Connect your **Mozscape** account to any AI agent to perform deep SEO analysis a
 - **v2_top_pages**: V2: List the most linked-to pages on a domain
 - **v2_url_metrics**: V2: Bulk retrieval of URL metrics
 - **v2_usage_data**: V2: Get usage data for the current billing period
+- **fetch_brand_authority**: Get Brand Authority score for a site
+- **fetch_distributions**: Get link distribution data
 
 
 ## 💬 Prompt Examples

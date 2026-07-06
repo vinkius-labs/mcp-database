@@ -33,10 +33,10 @@ Connect your **Nimble CRM** account to any AI agent to streamline your social sa
 
 
 ## Available Tools (4)
-- **delete_contacts**: Delete Nimble contacts
-- **get_contact**: Get details for specific Nimble contacts
 - **get_myself**: Get current Nimble user details
 - **list_contacts**: List Nimble contacts
+- **delete_contacts**: Delete Nimble contacts
+- **get_contact**: Get details for specific Nimble contacts
 
 
 ## 💬 Prompt Examples

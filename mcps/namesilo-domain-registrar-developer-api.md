@@ -34,8 +34,6 @@ Connect your **NameSilo** account to any AI agent to automate domain management 
 
 
 ## Available Tools (18)
-- **add_account_funds**: Add funds to your account
-- **check_register_availability**: Check if a domain is available for registration
 - **contact_add**: Create a new contact profile
 - **contact_delete**: Delete a contact profile
 - **contact_list**: List all contact profiles
@@ -54,6 +52,8 @@ List all DNS records for a domain
 - **register_domain**: Register a new domain name
 - **renew_domain**: Renew an existing domain registration
 - **transfer_domain**: Initiate a domain transfer to NameSilo
+- **add_account_funds**: Add funds to your account
+- **check_register_availability**: Check if a domain is available for registration
 
 
 ## 💬 Prompt Examples

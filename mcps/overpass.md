@@ -33,6 +33,9 @@ Connect your AI agent to the **Overpass API** to query and retrieve OpenStreetMa
 
 
 ## Available Tools (4)
+- **execute_xapi**: Returns raw XML data.
+
+Execute a legacy XAPI query
 - **execute_query**: ALWAYS include [out:json]; at the beginning of your query to ensure JSON output.
 
 Execute an Overpass QL query
@@ -40,9 +43,6 @@ Execute an Overpass QL query
 
 Fetch OSM map data for a bounding box
 - **get_status**: Check Overpass API rate limit and slot status
-- **execute_xapi**: Returns raw XML data.
-
-Execute a legacy XAPI query
 
 
 ## 💬 Prompt Examples

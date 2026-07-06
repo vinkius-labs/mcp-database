@@ -39,7 +39,6 @@ Connect your **Osu!** account to any AI agent to explore the rhythm game's vast 
 - **list_beatmap_packs**: Get beatmap packs
 - **get_beatmap_scores**: Get scores for a beatmap
 - **get_beatmapset**: Get a beatmapset
-- **list_discussion_posts**: Get beatmapset discussion posts
 - **list_discussion_votes**: Get beatmapset discussion votes
 - **list_discussions**: Get beatmapset discussions
 - **get_favourites**: Get user beatmapset favourites
@@ -49,6 +48,7 @@ Connect your **Osu!** account to any AI agent to explore the rhythm game's vast 
 Get own user data
 - **search_beatmapsets**: Search beatmapsets
 - **get_user_beatmap_score**: Get a user's score on a beatmap
+- **list_discussion_posts**: Get beatmapset discussion posts
 
 
 ## 💬 Prompt Examples

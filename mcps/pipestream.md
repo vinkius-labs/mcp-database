@@ -33,10 +33,10 @@ Connect **PipeStream** to your AI agent to manage high-throughput data streams a
 
 
 ## Available Tools (4)
-- **create_stream**: Create a new stream
-- **fetch_events**: Fetch events from a stream
 - **list_streams**: List all active streams
 - **publish_event**: Publish an event to a stream
+- **create_stream**: Create a new stream
+- **fetch_events**: Fetch events from a stream
 
 
 ## 💬 Prompt Examples

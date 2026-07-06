@@ -36,9 +36,6 @@ No more switching between your code editor and the Payload Admin panel to verify
 
 
 ## Available Tools (11)
-- **create_document**: Create a new document in a collection
-- **delete_document**: Delete a document
-- **get_document**: Get a single document by ID
 - **get_global**: Get global data
 - **get_me**: Get current authenticated user details
 - **list_documents**: Supports optional query string for filtering, sorting, and pagination.
@@ -49,6 +46,9 @@ List documents from a Payload CMS collection
 - **refresh_token**: Refresh authentication token
 - **update_document**: Update an existing document
 - **update_global**: Update global data
+- **create_document**: Create a new document in a collection
+- **delete_document**: Delete a document
+- **get_document**: Get a single document by ID
 
 
 ## 💬 Prompt Examples

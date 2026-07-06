@@ -34,9 +34,6 @@ Connect to the **Nookipedia API** and bring the entire world of Animal Crossing 
 
 
 ## Available Tools (15)
-- **get_nh_art**: Retrieve New Horizons artworks
-- **get_nh_bugs**: Retrieve New Horizons bugs
-- **get_nh_clothing**: Retrieve New Horizons clothing
 - **get_nh_events**: Retrieve New Horizons events and dates
 - **get_nh_fish**: Retrieve New Horizons fish
 - **get_nh_fossils**: Retrieve New Horizons fossils
@@ -51,6 +48,9 @@ Connect to the **Nookipedia API** and bring the entire world of Animal Crossing 
 - **get_villagers**: Can be filtered by name, species, personality, or game.
 
 Retrieve information about villagers across the entire series
+- **get_nh_art**: Retrieve New Horizons artworks
+- **get_nh_bugs**: Retrieve New Horizons bugs
+- **get_nh_clothing**: Retrieve New Horizons clothing
 
 
 ## 💬 Prompt Examples

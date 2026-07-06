@@ -34,10 +34,6 @@ Connect your **PandaDoc** account to any AI agent to automate your entire docume
 
 
 ## Available Tools (14)
-- **create_document_folder**: Create a new folder for documents
-- **create_document**: Wait for document.draft status before sending.
-
-Create a new PandaDoc document from a template or URL
 - **create_embedded_session**: Create an embedded signing session for a document
 - **create_template_folder**: Create a new folder for templates
 - **create_webhook_subscription**: Create a webhook subscription for document events
@@ -52,6 +48,10 @@ Create a new PandaDoc document from a template or URL
 - **send_document**: draft status.
 
 Send a PandaDoc document to recipients
+- **create_document_folder**: Create a new folder for documents
+- **create_document**: Wait for document.draft status before sending.
+
+Create a new PandaDoc document from a template or URL
 
 
 ## 💬 Prompt Examples

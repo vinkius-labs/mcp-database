@@ -34,10 +34,6 @@ Connect to the **Paleobiology Database (PBDB)** and turn your AI agent into a sp
 
 
 ## Available Tools (27)
-- **autocomplete_combined**: General auto-completion across multiple record types (taxa, strata, intervals, people)
-- **autocomplete_strata**: Auto-completion for strata names
-- **autocomplete_taxa**: Auto-completion for taxonomic names
-- **get_collection**: Get information about a single fossil collection
 - **get_collections_summary**: Geographic summary of collections (clustering)
 - **get_config**: Returns database configuration info (ranks, continents, countries, lithologies, environments)
 - **get_occurrence**: Get information about a single fossil occurrence
@@ -61,6 +57,10 @@ Connect to the **Paleobiology Database (PBDB)** and turn your AI agent into a sp
 - **list_taxa**: List taxa, children, or parents
 - **list_timescales**: List available geological time scales
 - **match_reference**: Check for a matching reference in the PBDB database
+- **autocomplete_combined**: General auto-completion across multiple record types (taxa, strata, intervals, people)
+- **autocomplete_strata**: Auto-completion for strata names
+- **autocomplete_taxa**: Auto-completion for taxonomic names
+- **get_collection**: Get information about a single fossil collection
 
 
 ## 💬 Prompt Examples

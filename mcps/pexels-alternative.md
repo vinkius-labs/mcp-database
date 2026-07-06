@@ -34,8 +34,6 @@ Connect to the **Pexels** library to discover millions of high-quality photos an
 
 
 ## Available Tools (9)
-- **get_collection_media**: Get all media within a specific collection
-- **get_curated_photos**: Get a list of curated photos
 - **get_featured_collections**: Get a list of featured collections
 - **get_photo**: Get a single photo by its ID
 - **get_video**: Get a single video by its ID
@@ -43,6 +41,8 @@ Connect to the **Pexels** library to discover millions of high-quality photos an
 - **get_popular_videos**: Get a list of popular videos
 - **search_photos**: Search for photos using a text query
 - **search_videos**: Search for videos using a text query
+- **get_collection_media**: Get all media within a specific collection
+- **get_curated_photos**: Get a list of curated photos
 
 
 ## 💬 Prompt Examples

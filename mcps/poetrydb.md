@@ -36,11 +36,6 @@ No more searching through fragmented archives. Your AI acts as a digital librari
 
 
 ## Available Tools (8)
-- **advanced_search**: g., title, author, linecount, poemcount) to filter poems. The number of fields must match the number of terms.
-
-Perform a complex search combining multiple fields
-- **list_authors**: List all authors available in PoetryDB
-- **get_random_poems**: Retrieve a set of random poems
 - **search_by_author**: Can perform partial or exact matches.
 
 Search for poems by author name
@@ -50,6 +45,11 @@ Search for poems by author name
 
 Search for poems by title
 - **list_titles**: List all poem titles available in PoetryDB
+- **advanced_search**: g., title, author, linecount, poemcount) to filter poems. The number of fields must match the number of terms.
+
+Perform a complex search combining multiple fields
+- **list_authors**: List all authors available in PoetryDB
+- **get_random_poems**: Retrieve a set of random poems
 
 
 ## 💬 Prompt Examples

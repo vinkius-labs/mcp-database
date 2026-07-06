@@ -35,7 +35,6 @@ Connect to the **MusicBrainz** database to empower your AI agent with comprehens
 
 
 ## Available Tools (10)
-- **add_collection_items**: Add items to a collection (Requires Auth)
 - **browse_entities**: g., all releases for an artist).
 
 Browse entities linked to another entity
@@ -43,6 +42,7 @@ Browse entities linked to another entity
 - **lookup_isrc**: Lookup recordings by ISRC
 - **lookup_iswc**: Lookup works by ISWC
 - **lookup_entity**: Lookup a specific MusicBrainz entity by its MBID
+- **add_collection_items**: Add items to a collection (Requires Auth)
 - **remove_collection_item**: Remove an item from a collection (Requires Auth)
 - **search_entities**: Use Lucene syntax (e.g., "we will rock you" AND arid:0383dadf-2a4e-4d10-a46a-e9e041da8eb3).
 

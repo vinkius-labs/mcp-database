@@ -34,11 +34,6 @@ Connect to **NodeReal**, the ultimate high-performance blockchain infrastructure
 
 
 ## Available Tools (24)
-- **aptos_get_account_modules**: Get all Move modules for a specific Aptos account
-- **aptos_get_account_resources**: Get all resources for a specific Aptos account
-- **aptos_get_account**: Get high-level information about an Aptos account
-- **aptos_get_blocks_by_height**: Get Aptos blocks by height
-- **aptos_get_ledger_info**: Get the current Aptos ledger information
 - **aptos_get_transaction_by_hash**: Get an Aptos transaction by its hash
 - **aptos_get_transactions**: Get a list of Aptos transactions
 - **aptos_simulate_transaction**: Simulate an Aptos transaction submission
@@ -58,6 +53,11 @@ Connect to **NodeReal**, the ultimate high-performance blockchain infrastructure
 - **nr_get_token_balance_20**: Get ERC20 token balance (NodeReal Enhanced)
 - **nr_get_token_holders**: Get list of token holders (NodeReal Enhanced)
 - **nr_get_transaction_receipts_by_block_number**: Get all receipts in a block (NodeReal Enhanced)
+- **aptos_get_account_modules**: Get all Move modules for a specific Aptos account
+- **aptos_get_account_resources**: Get all resources for a specific Aptos account
+- **aptos_get_account**: Get high-level information about an Aptos account
+- **aptos_get_blocks_by_height**: Get Aptos blocks by height
+- **aptos_get_ledger_info**: Get the current Aptos ledger information
 
 
 ## 💬 Prompt Examples

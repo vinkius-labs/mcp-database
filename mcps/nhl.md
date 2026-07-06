@@ -34,12 +34,6 @@ Connect your AI agent to the pulse of the **National Hockey League**. This serve
 
 
 ## Available Tools (47)
-- **get_awards**: Get NHL awards
-- **get_conferences**: Get NHL conferences
-- **get_current_schedule**: Get the NHL schedule for the current day
-- **get_current_standings**: Get current NHL standings
-- **get_divisions**: Get NHL divisions
-- **get_franchises**: Get NHL franchises
 - **get_game_boxscore**: Get the boxscore for a specific game
 - **get_game_play_by_play**: Get play-by-play data for a specific game
 - **get_goalie_advanced**: Get goalie advanced stats
@@ -75,12 +69,18 @@ Connect your AI agent to the pulse of the **National Hockey League**. This serve
 - **get_team_powerplay**: Get team powerplay stats
 - **get_team_roster**: Get the roster for a team in a specific season
 - **get_team_season_schedule**: Get all games for a team in the current season
-- **get_team_summary**: Get team summary stats
 - **get_team_weekly_schedule**: Get the weekly schedule for a team
 - **get_venues**: Get NHL venues
 - **search_player**: Search for a player by name
 - **suggest_active_players**: Suggest active players by name fragment
 - **suggest_players**: Suggest players by name fragment
+- **get_awards**: Get NHL awards
+- **get_conferences**: Get NHL conferences
+- **get_current_schedule**: Get the NHL schedule for the current day
+- **get_current_standings**: Get current NHL standings
+- **get_divisions**: Get NHL divisions
+- **get_franchises**: Get NHL franchises
+- **get_team_summary**: Get team summary stats
 
 
 ## 💬 Prompt Examples

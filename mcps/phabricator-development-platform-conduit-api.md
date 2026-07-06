@@ -34,7 +34,6 @@ Connect your **Phabricator** instance to any AI agent to streamline your develop
 
 
 ## Available Tools (10)
-- **differential_query**: Query Differential revisions (Legacy)
 - **differential_revision_edit**: Create or update a Differential revision
 - **differential_revision_search**: Search for Differential revisions
 - **diffusion_commit_search**: Search for Diffusion commits
@@ -45,6 +44,7 @@ Connect your **Phabricator** instance to any AI agent to streamline your develop
 
 Search for Maniphest tasks
 - **user_search**: Search for users
+- **differential_query**: Query Differential revisions (Legacy)
 - **user_whoami**: Get details about the authenticated user
 
 

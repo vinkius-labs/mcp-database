@@ -34,10 +34,6 @@ Connect your **IBM NS1** account to any AI agent and take full control of your g
 
 
 ## Available Tools (15)
-- **create_data_source**: Create a new data source
-- **create_monitoring_job**: Create a new monitoring job
-- **create_record**: Create a new DNS record
-- **create_zone**: Create a new DNS zone
 - **delete_record**: Delete a DNS record
 - **delete_zone**: Delete a DNS zone
 - **get_record**: Get details for a specific DNS record
@@ -49,6 +45,10 @@ Connect your **IBM NS1** account to any AI agent and take full control of your g
 - **push_data_feed**: Push data to a specific feed
 - **update_record**: Update an existing DNS record
 - **update_zone**: Update zone settings
+- **create_data_source**: Create a new data source
+- **create_monitoring_job**: Create a new monitoring job
+- **create_record**: Create a new DNS record
+- **create_zone**: Create a new DNS zone
 
 
 ## 💬 Prompt Examples
