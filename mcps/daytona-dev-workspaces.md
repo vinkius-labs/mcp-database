@@ -34,12 +34,8 @@ Connect your **Daytona** account to any AI agent to orchestrate cloud-based deve
 
 
 ## Available Tools (28)
-- **activate_snapshot**: Activate a snapshot
-- **archive_sandbox**: Archive a sandbox
-- **create_api_key**: Create a new Daytona API key
 - **create_sandbox**: Create a new Daytona sandbox
 - **create_snapshot**: Create a new snapshot
-- **create_volume**: Create a new volume
 - **deactivate_snapshot**: Deactivate a snapshot
 - **delete_api_key**: Delete an API key by name
 - **delete_sandbox**: Delete a sandbox
@@ -62,6 +58,10 @@ Connect your **Daytona** account to any AI agent to orchestrate cloud-based deve
 - **resize_sandbox**: Resize sandbox resources
 - **start_sandbox**: Start a stopped sandbox
 - **stop_sandbox**: Stop a running sandbox
+- **activate_snapshot**: Activate a snapshot
+- **archive_sandbox**: Archive a sandbox
+- **create_api_key**: Create a new Daytona API key
+- **create_volume**: Create a new volume
 
 
 ## 💬 Prompt Examples

@@ -34,13 +34,13 @@ Connect **CurrencyBeacon** to your AI agent to access a robust global currency d
 
 
 ## Available Tools (5)
-- **convert_currency**: Convert an amount from one currency to another
 - **list_currencies**: List all supported currencies
 - **get_historical_rates**: Get historical exchange rates for a specific date
 - **get_latest_rates**: Get real-time exchange rates
 - **get_timeseries**: Max range typically 365 days.
 
 Get daily historical exchange rates between two dates
+- **convert_currency**: Convert an amount from one currency to another
 
 
 ## 💬 Prompt Examples

@@ -34,10 +34,10 @@ Connect your **Blockdaemon** account to any AI agent to interact with major bloc
 
 
 ## Available Tools (4)
+- **get_utxos**: Get Unspent Transaction Outputs (UTXOs)
 - **list_blocks**: Get a list of block identifiers
 - **get_financial_report**: Get a financial report for an address
 - **list_transactions**: Get a list of transactions for an address
-- **get_utxos**: Get Unspent Transaction Outputs (UTXOs)
 
 
 ## 💬 Prompt Examples

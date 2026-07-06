@@ -34,11 +34,6 @@ Connect your **D2L Brightspace** environment to any AI agent to streamline learn
 
 
 ## Available Tools (33)
-- **copy_course**: Initiate a course copy job
-- **create_course**: Create a course offering
-- **create_enrollment**: Enroll a user in an org unit
-- **create_lti_deployment**: Create an LTI Advantage tool deployment
-- **create_org_unit**: Create custom org units
 - **create_post**: Create a post in a discussion topic
 - **create_topic**: Create a discussion topic in a forum
 - **create_user**: Create a new user
@@ -67,6 +62,11 @@ Connect your **D2L Brightspace** environment to any AI agent to streamline learn
 - **update_user**: Update user data
 - **upload_eportfolio_artifact**: Upload a file artifact to ePortfolio
 - **get_whoami**: Retrieve current user context
+- **copy_course**: Initiate a course copy job
+- **create_course**: Create a course offering
+- **create_enrollment**: Enroll a user in an org unit
+- **create_lti_deployment**: Create an LTI Advantage tool deployment
+- **create_org_unit**: Create custom org units
 
 
 ## 💬 Prompt Examples

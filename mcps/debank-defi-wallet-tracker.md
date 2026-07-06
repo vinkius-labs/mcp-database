@@ -36,11 +36,6 @@ No more manually checking multiple block explorers or DeFi dashboards. Your AI a
 
 
 ## Available Tools (24)
-- **explain_tx**: Explain Tx
-- **get_account_units**: Get API account units usage
-- **get_chain**: Get chain information
-- **get_gas_market**: Get gas prices
-- **get_pool**: Get pool information
 - **get_protocol**: Get protocol information
 - **get_token_history_price**: Get token history price
 - **get_token**: Get token information
@@ -55,11 +50,16 @@ No more manually checking multiple block explorers or DeFi dashboards. Your AI a
 - **get_user_total_balance**: Get user total balance
 - **get_user_used_chain_list**: Get user used chain list
 - **list_all_protocols**: Get all protocols of supported chains
-- **list_app_protocols**: Get list of app-protocol information
 - **list_chains**: Get supported chain list
 - **list_protocols**: Get list of protocol information
 - **list_tokens_by_ids**: Get list of token information
 - **pre_exec_tx**: Enhanced transaction pre-execution
+- **explain_tx**: Explain Tx
+- **get_account_units**: Get API account units usage
+- **get_chain**: Get chain information
+- **get_gas_market**: Get gas prices
+- **get_pool**: Get pool information
+- **list_app_protocols**: Get list of app-protocol information
 
 
 ## 💬 Prompt Examples

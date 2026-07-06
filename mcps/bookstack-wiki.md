@@ -35,9 +35,6 @@ Connect your **BookStack** instance to any AI agent and turn your documentation 
 
 
 ## Available Tools (32)
-- **create_attachment**: Create a new attachment link
-- **create_book**: Create a new book
-- **create_chapter**: Create a new chapter
 - **create_page**: Requires either book_id or chapter_id, name, and html or markdown.
 
 Create a new page in BookStack
@@ -71,6 +68,9 @@ List all pages in BookStack
 - **update_chapter**: Update an existing chapter
 - **update_page**: Update an existing page
 - **update_shelf**: Update an existing shelf
+- **create_attachment**: Create a new attachment link
+- **create_book**: Create a new book
+- **create_chapter**: Create a new chapter
 
 
 ## 💬 Prompt Examples

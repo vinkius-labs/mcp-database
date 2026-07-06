@@ -33,11 +33,11 @@ Access comprehensive labor data from the **U.S. Department of Labor (DOL)**. Thi
 
 
 ## Available Tools (5)
+- **get_whd_compliance**: Get WHD compliance data
 - **get_eta_data**: Get ETA employment and training data
 - **get_msha_inspections**: Get MSHA inspection data
 - **get_msha_violations**: Get MSHA violations data
 - **get_osha_inspections**: Get OSHA inspection data
-- **get_whd_compliance**: Get WHD compliance data
 
 
 ## 💬 Prompt Examples

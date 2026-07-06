@@ -34,12 +34,12 @@ Connect your **Bannerbear** account to any AI agent and automate your design and
 
 
 ## Available Tools (6)
+- **get_template**: Retrieve the details of a specific template
+- **list_templates**: Retrieve a list of templates in your project
 - **create_collection**: Create multiple images at once as a collection
 - **create_image**: Create an image based on a template
 - **create_video**: Create a video based on a video template
 - **get_image**: Retrieve the details of a previously created image
-- **get_template**: Retrieve the details of a specific template
-- **list_templates**: Retrieve a list of templates in your project
 
 
 ## 💬 Prompt Examples

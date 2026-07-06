@@ -36,20 +36,20 @@ Connect your AI agent to **Arbiscan** to query the Arbitrum L2 network in real-t
 ## Available Tools (16)
 - **get_abi**: Get Contract ABI for Verified Source Codes
 - **get_balance_multi**: Get Ether Balance for Multiple Addresses
+- **get_tx_list_internal**: Get List of Internal Transactions By Address
+- **get_tx_list**: Get List of Normal Transactions By Address
+- **get_tx_receipt_status**: Check Transaction Receipt Status
+- **verify_source_code**: Verify Source Code
+- **get_source_code**: Get Contract Source Code for Verified Source Codes
+- **get_status**: Check Contract Execution Status
 - **get_balance**: Get Ether Balance for a Single Address
 - **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
 - **get_block_reward**: Get Block Rewards by BlockNo
 - **get_eth_price**: Get Ether Last Price
 - **get_eth_supply**: Get Total Supply of Ether on Arbitrum
 - **get_logs**: Get Event Logs
-- **get_source_code**: Get Contract Source Code for Verified Source Codes
-- **get_status**: Check Contract Execution Status
 - **get_token_nft_tx**: Get List of ERC721 Token Transfer Events By Address
 - **get_token_tx**: Get List of ERC20 Token Transfer Events By Address
-- **get_tx_list_internal**: Get List of Internal Transactions By Address
-- **get_tx_list**: Get List of Normal Transactions By Address
-- **get_tx_receipt_status**: Check Transaction Receipt Status
-- **verify_source_code**: Verify Source Code
 
 
 ## 💬 Prompt Examples

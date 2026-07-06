@@ -33,12 +33,12 @@ Connect your **YepCode** account to any AI agent and simplify how you automate c
 
 
 ## Available Tools (6)
+- **list_teams**: List available teams
+- **run_process**: Trigger a process execution
 - **get_process_details**: Get details for a specific process
 - **list_executions**: List recent process executions
 - **list_processes**: List YepCode processes
 - **list_secrets**: List account secrets
-- **list_teams**: List available teams
-- **run_process**: Trigger a process execution
 
 
 ## 💬 Prompt Examples

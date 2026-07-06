@@ -34,9 +34,6 @@ Connect to the **WHO Global Health Observatory (GHO) API** — the world's most 
 
 
 ## Available Tools (16)
-- **compare_countries**: Provide a comma-separated list of ISO 3-letter country codes. Returns the most recent 10 years of data for each country.
-
-Compare a health indicator across countries
 - **get_countries**: Returns ISO codes and country names for use with other indicator queries.
 
 Get list of WHO member countries
@@ -73,6 +70,9 @@ Get mortality data by cause
 - **get_ncd**: Supported shortcuts: "diabetes" (prevalence), "obesity" (BMI ≥30), "blood_pressure" (hypertension), "tobacco" (smoking), "alcohol" (consumption). Or use a WHO code.
 
 Get non-communicable disease data
+- **compare_countries**: Provide a comma-separated list of ISO 3-letter country codes. Returns the most recent 10 years of data for each country.
+
+Compare a health indicator across countries
 - **get_tuberculosis**: TB remains one of the top infectious disease killers worldwide, and this data tracks progress toward elimination.
 
 Get tuberculosis incidence data

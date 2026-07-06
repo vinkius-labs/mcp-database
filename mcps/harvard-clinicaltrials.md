@@ -35,9 +35,6 @@ Connect to the **ClinicalTrials.gov API v2** — the largest database of clinica
 
 
 ## Available Tools (16)
-- **get_api_version**: gov API version and the timestamp of the most recent data update. Useful for verifying data currency and API availability.
-
-Get API version and data timestamp
 - **get_study**: g. "NCT04368728"). Returns title, status, phase, enrollment, conditions, interventions, eligibility criteria, sponsor, and study locations.
 
 Get clinical trial details by NCT ID
@@ -83,6 +80,9 @@ Search for currently recruiting studies
 - **search_studies**: gov database of over 400,000 clinical studies from 200+ countries. Returns NCT IDs, titles, status, phases, sponsors, conditions, interventions, and locations.
 
 Search 400K+ clinical trials worldwide
+- **get_api_version**: gov API version and the timestamp of the most recent data update. Useful for verifying data currency and API availability.
+
+Get API version and data timestamp
 
 
 ## 💬 Prompt Examples

@@ -34,9 +34,7 @@ Connect your **ChangeDetection.io** instance to any AI agent to automate web mon
 
 
 ## Available Tools (14)
-- **create_tag**: Create a new tag
 - **create_watch**: Create a new watch
-- **delete_watch**: Delete a watch
 - **get_snapshot_diff**: Use "previous" and "latest" as keywords.
 
 Get snapshot difference (diff)
@@ -54,6 +52,8 @@ Import API
 - **list_watches**: List all watches
 - **search_watches**: Search API
 - **update_watch**: Update an existing watch
+- **create_tag**: Create a new tag
+- **delete_watch**: Delete a watch
 
 
 ## 💬 Prompt Examples

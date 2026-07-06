@@ -34,8 +34,6 @@ Connect your **CloudBeaver** (DBeaver Cloud) instance to any AI agent to streaml
 
 
 ## Available Tools (19)
-- **add_connections_access**: Grants users or teams access to specific connections
-- **auth_login**: Authenticates a session using a provider and credentials
 - **configure_server**: Updates the main server configuration
 - **create_team**: Creates a new team for access management
 - **create_user**: Creates a new user account (Admin only)
@@ -53,6 +51,8 @@ Connect your **CloudBeaver** (DBeaver Cloud) instance to any AI agent to streaml
 - **get_auth_providers**: Lists all available authentication providers (local, SAML, etc.)
 - **get_connection_info**: Returns configuration and status for a specific database connection
 - **get_driver_list**: Lists all database drivers supported by the server
+- **add_connections_access**: Grants users or teams access to specific connections
+- **auth_login**: Authenticates a session using a provider and credentials
 
 
 ## 💬 Prompt Examples

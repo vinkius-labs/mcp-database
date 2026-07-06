@@ -34,14 +34,15 @@ Connect your AI agent to **DefiLlama**, the leading aggregator for decentralized
 
 
 ## Available Tools (19)
+- **get_all_bridges**: Get all bridges
 - **get_all_chains_tvl**: Get current TVL for all chains
 - **get_all_pools**: Get current APY and TVL for all pools
-- **get_all_stablecoins**: Get all stablecoins
-- **get_bridge_volume_chain**: Get bridge volume for a specific chain
 - **get_current_prices**: Format: {chain}:{address}
 
 Get the current price of tokens
 - **get_current_tvl_chain**: Get the current total TVL for a specific chain
+- **get_dex_volume_chain**: Get DEX volume for a specific chain
+- **get_dex_volumes_global**: Get DEX volumes globally
 - **get_historical_prices**: Get the price of tokens at a specific timestamp
 - **get_historical_tvl_global**: Get historical TVL of the entire DeFi ecosystem
 - **get_percentage_change**: Get the price change over a period
@@ -50,10 +51,9 @@ Get the current price of tokens
 - **get_protocol**: Get historical TVL data for a specific protocol
 - **get_protocols**: Get all protocols on DefiLlama along with their current TVL
 - **get_stablecoin_historical_data**: Get stablecoin historical data
+- **get_all_stablecoins**: Get all stablecoins
+- **get_bridge_volume_chain**: Get bridge volume for a specific chain
 - **get_stablecoin_market_cap_chain**: Get stablecoin market cap for a specific chain
-- **get_all_bridges**: Get all bridges
-- **get_dex_volume_chain**: Get DEX volume for a specific chain
-- **get_dex_volumes_global**: Get DEX volumes globally
 - **get_historical_tvl_chain**: Get historical TVL for a specific blockchain
 
 

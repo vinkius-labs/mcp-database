@@ -34,11 +34,6 @@ Connect your **Canvas LMS** instance to any AI agent to automate course administ
 
 
 ## Available Tools (45)
-- **create_admin**: Make a user an admin in an account
-- **create_assignment**: Create a new assignment in a course
-- **create_conversation**: Create a new conversation
-- **create_course**: Create a new Canvas course
-- **create_discussion_topic**: Create a new discussion topic in a course
 - **create_quiz**: Create a new quiz in a course
 - **create_role**: Create a new role in an account
 - **create_sis_import**: Import SIS data
@@ -79,6 +74,11 @@ Connect your **Canvas LMS** instance to any AI agent to automate course administ
 - **update_assignment**: Edit an existing assignment
 - **update_course**: Update an existing Canvas course
 - **update_user**: Update an existing Canvas user
+- **create_admin**: Make a user an admin in an account
+- **create_assignment**: Create a new assignment in a course
+- **create_conversation**: Create a new conversation
+- **create_course**: Create a new Canvas course
+- **create_discussion_topic**: Create a new discussion topic in a course
 
 
 ## 💬 Prompt Examples

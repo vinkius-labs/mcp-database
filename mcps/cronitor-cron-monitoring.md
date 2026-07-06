@@ -36,8 +36,6 @@ No more jumping between dashboards to check if your nightly backups finished or 
 
 
 ## Available Tools (44)
-- **bulk_issues**: Perform bulk actions on issues
-- **clone_monitor**: Clone an existing monitor
 - **create_api_key**: Create an API key
 - **create_status_page_component**: Create a status page component
 - **create_environment**: Create an environment
@@ -86,6 +84,8 @@ Send telemetry events (pings, metrics)
 - **update_notification**: Update a notification list
 - **update_site**: Update RUM sites
 - **update_status_page**: Update status pages
+- **bulk_issues**: Perform bulk actions on issues
+- **clone_monitor**: Clone an existing monitor
 
 
 ## 💬 Prompt Examples
