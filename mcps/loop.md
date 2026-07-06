@@ -34,18 +34,18 @@ Connect your **Loop** account to any AI agent and manage returns through natural
 
 
 ## Available Tools (10)
-- **list_projects**: List projects in Loop
-- **list_feedback_sources**: ) providing feedback.
-
-List integrated feedback sources
-- **list_feedback_themes**: List recurring feedback themes
-- **list_dev_tickets**: List AI-generated developer tickets
 - **add_internal_note**: Add an internal note to a feedback item
 - **get_feedback_details**: Get details of a specific feedback item
 - **get_me**: Get account information
 - **get_sentiment_metrics**: Get overall sentiment analytics
 - **get_ticket_details**: Get details of a developer ticket
 - **list_feedback**: List customer feedback items in Loop
+- **list_projects**: List projects in Loop
+- **list_feedback_sources**: ) providing feedback.
+
+List integrated feedback sources
+- **list_feedback_themes**: List recurring feedback themes
+- **list_dev_tickets**: List AI-generated developer tickets
 
 
 ## 💬 Prompt Examples

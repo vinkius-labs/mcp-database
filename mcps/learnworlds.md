@@ -40,10 +40,10 @@ No more manual logging into the school dashboard for quick student or course che
 - **enroll_student**: Enroll a student in a product
 - **get_course_contents**: Get course contents
 - **get_student_details**: Get student details
-- **list_courses**: List all courses
 - **list_payments**: List all payments
 - **list_subscriptions**: List all student subscriptions
 - **list_students**: List all students
+- **list_courses**: List all courses
 
 
 ## 💬 Prompt Examples

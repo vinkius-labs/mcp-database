@@ -35,7 +35,6 @@ Connect your **Mailinator** account to any AI agent and manage email testing thr
 
 
 ## Available Tools (12)
-- **remove_message**: Delete an email
 - **list_message_attachments**: Get email attachments
 - **get_domain_details**: Get domain metadata
 - **extract_message_links**: Get links from email
@@ -49,6 +48,7 @@ Connect your **Mailinator** account to any AI agent and manage email testing thr
 Get inbox rules
 - **list_private_sms**: Check SMS inbox
 - **list_active_webhooks**: Get notification configs
+- **remove_message**: Delete an email
 
 
 ## 💬 Prompt Examples

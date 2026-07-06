@@ -34,13 +34,13 @@ Connect your **Helpwise** account to any AI agent and manage your shared inboxes
 
 
 ## Available Tools (7)
-- **create_contact**: Create a new contact
 - **get_conversation_details**: Get details for a specific conversation
 - **list_contacts**: List Helpwise contacts
 - **list_conversations**: List conversations in a mailbox
 - **list_mailboxes**: List Helpwise shared inboxes
 - **list_team_members**: List team users
 - **send_email**: Send an outgoing email
+- **create_contact**: Create a new contact
 
 
 ## 💬 Prompt Examples

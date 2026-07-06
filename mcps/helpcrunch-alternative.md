@@ -36,10 +36,6 @@ No more manual toggling between chat windows or searching for customer emails. Y
 
 
 ## Available Tools (12)
-- **create_customer**: Requires email and name.
-
-Create a new customer profile
-- **get_conversation_details**: Get details for a specific chat
 - **get_customer_details**: Get details for a specific customer
 - **list_team_agents**: List all agents/team members
 - **list_conversations**: List all customer chats
@@ -54,6 +50,10 @@ Post a message to a chat
 - **update_conversation_status**: g., open, pending, closed).
 
 Change chat status
+- **create_customer**: Requires email and name.
+
+Create a new customer profile
+- **get_conversation_details**: Get details for a specific chat
 
 
 ## 💬 Prompt Examples

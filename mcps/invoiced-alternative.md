@@ -36,8 +36,8 @@ No more manual following up on overdue payments or missing billing updates. Your
 
 
 ## Available Tools (10)
-- **check_invoiced_status**: Verify Invoiced API connectivity
 - **create_customer**: Create a customer
+- **check_invoiced_status**: Verify Invoiced API connectivity
 - **create_invoice**: Pass line items as JSON array with name, quantity, and unit_cost.
 
 Create an invoice

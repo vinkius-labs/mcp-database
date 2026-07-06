@@ -36,12 +36,7 @@ Connect your **HappierLeads** account to any AI agent and turn anonymous website
 
 
 ## Available Tools (17)
-- **check_happier_status**: Verify connectivity
-- **get_analytics**: Get analytics overview
-- **get_lead**: Get lead details
-- **get_segment**: Get segment details
 - **get_session**: Get session details
-- **get_top_pages**: Get top pages
 - **get_visitor**: Get visitor details
 - **list_leads_by_industry**: Filter leads by industry
 - **list_leads**: List identified leads
@@ -53,6 +48,11 @@ Connect your **HappierLeads** account to any AI agent and turn anonymous website
 - **list_visitors_by_country**: Filter visitors by country
 - **list_visitors**: List website visitors
 - **search_visitors**: Search visitors
+- **check_happier_status**: Verify connectivity
+- **get_analytics**: Get analytics overview
+- **get_lead**: Get lead details
+- **get_segment**: Get segment details
+- **get_top_pages**: Get top pages
 
 
 ## 💬 Prompt Examples

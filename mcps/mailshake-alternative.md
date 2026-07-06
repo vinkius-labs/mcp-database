@@ -35,9 +35,7 @@ Connect your **Mailshake** account to any AI agent and manage sales outreach thr
 
 
 ## Available Tools (12)
-- **add_prospects**: Add new prospects
 - **get_campaign_details**: Get campaign info
-- **get_user_profile**: Get profile info
 - **get_team_details**: Get account team
 - **list_engagement_activity**: Get open/click activity
 - **list_campaigns**: List cold email campaigns
@@ -49,6 +47,8 @@ Connect your **Mailshake** account to any AI agent and manage sales outreach thr
 - **update_lead_status**: g., Reply, Won, Lost, Ignored).
 
 Set lead stage
+- **add_prospects**: Add new prospects
+- **get_user_profile**: Get profile info
 
 
 ## 💬 Prompt Examples

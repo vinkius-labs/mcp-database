@@ -34,18 +34,18 @@ Connect your **Learn Amp** organizational account to any AI agent and take full 
 
 
 ## Available Tools (10)
-- **complete_item**: Mark a learning item as complete for a user
-- **create_user**: Create a new user in Learn Amp
-- **deactivate_user**: The user data remains but they can no longer log in.
-
-Deactivate a user account
-- **get_learnlist**: Get details for a specific learnlist
 - **get_user**: Get details for a specific user
 - **list_items**: List all learning items (courses, content)
 - **list_learnlists**: List all learnlists (learning pathways)
 - **list_users**: List all users from Learn Amp
 - **list_verbs**: List all available action verbs
 - **update_user**: Update an existing user
+- **complete_item**: Mark a learning item as complete for a user
+- **create_user**: Create a new user in Learn Amp
+- **deactivate_user**: The user data remains but they can no longer log in.
+
+Deactivate a user account
+- **get_learnlist**: Get details for a specific learnlist
 
 
 ## 💬 Prompt Examples

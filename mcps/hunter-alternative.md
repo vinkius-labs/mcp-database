@@ -36,8 +36,6 @@ Connect your **Hunter** account to any AI agent and power your email prospecting
 
 
 ## Available Tools (12)
-- **create_new_lead**: Save lead to CRM
-- **remove_lead**: Delete lead record
 - **search_domain_emails**: Find emails for domain
 - **get_domain_email_count**: Check email availability
 - **find_person_email**: Find personal email
@@ -48,6 +46,8 @@ Connect your **Hunter** account to any AI agent and power your email prospecting
 - **list_lead_folders**: List lead lists
 - **list_saved_leads**: List lead profiles
 - **update_lead_info**: Modify lead data
+- **create_new_lead**: Save lead to CRM
+- **remove_lead**: Delete lead record
 
 
 ## 💬 Prompt Examples

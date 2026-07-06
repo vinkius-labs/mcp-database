@@ -36,7 +36,6 @@ No more context-switching between tools to check if a customer was replied to. Y
 
 
 ## Available Tools (12)
-- **create_shared_draft**: Draft team reply
 - **get_api_status**: Check connection
 - **get_conversation_details**: Read email thread
 - **get_inbox_details**: Get mailbox info
@@ -48,6 +47,7 @@ No more context-switching between tools to check if a customer was replied to. Y
 - **search_team_members**: Find members
 - **test_hiver_auth**: Verify credentials
 - **update_thread_status**: Modify conversation
+- **create_shared_draft**: Draft team reply
 
 
 ## 💬 Prompt Examples

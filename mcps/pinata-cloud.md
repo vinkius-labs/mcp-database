@@ -36,10 +36,6 @@ No more manual dashboard uploading or CID tracking. Your AI acts as a dedicated 
 
 
 ## Available Tools (12)
-- **create_pin_group**: Add new collection
-- **remove_pin_group**: Delete collection
-- **get_pinning_stats**: Check data usage
-- **get_group_details**: Get group info
 - **list_pin_groups**: List pin collections
 - **list_api_keys**: List account keys
 - **list_ipfs_pins**: List pinned files
@@ -48,6 +44,10 @@ No more manual dashboard uploading or CID tracking. Your AI acts as a dedicated 
 - **verify_pinata_auth**: Check connection
 - **remove_ipfs_pin**: Unpin file/hash
 - **update_pin_metadata**: Modify pin name/tags
+- **create_pin_group**: Add new collection
+- **remove_pin_group**: Delete collection
+- **get_pinning_stats**: Check data usage
+- **get_group_details**: Get group info
 
 
 ## 💬 Prompt Examples

@@ -40,6 +40,8 @@ Connect your **LawPay** account to any AI agent and manage legal payments throug
 - **get_account_info**: Get merchant profile info
 - **get_account**: Get account details
 - **get_payment_method**: Get payment method details
+- **list_transactions**: List all payment transactions
+- **list_settlements**: List bank settlements
 - **get_account_stats**: Get payment statistics
 - **get_transaction**: Get transaction details
 - **list_accounts**: ).
@@ -47,8 +49,6 @@ Connect your **LawPay** account to any AI agent and manage legal payments throug
 List merchant accounts
 - **list_invoices**: List payment invoices
 - **list_payment_methods**: List saved payment methods
-- **list_settlements**: List bank settlements
-- **list_transactions**: List all payment transactions
 
 
 ## 💬 Prompt Examples
