@@ -39,8 +39,8 @@ Connect your **Vultr** account to any AI agent to manage your cloud infrastructu
 - **reboot_bare_metal**: Reboot a bare metal instance
 - **reinstall_bare_metal**: Reinstall a bare metal instance
 - **set_bare_metal_ipv4_reverse**: Set Reverse DNS for IPv4 on a bare metal instance
-- **set_bare_metal_ipv6_reverse**: Set Reverse DNS for IPv6 on a bare metal instance
 - **setup_bgp**: Setup BGP for the account
+- **set_bare_metal_ipv6_reverse**: Set Reverse DNS for IPv6 on a bare metal instance
 - **start_bare_metal**: Start a bare metal instance
 - **delete_bare_metal**: Delete a bare metal instance
 - **list_backups**: List backups

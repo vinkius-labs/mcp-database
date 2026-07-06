@@ -40,10 +40,10 @@ Empower your AI agent to orchestrate your entire social media presence with **Ay
 - **delete_auto_schedule**: Delete auto-schedule for a platform
 - **delete_profile**: Delete a user profile
 - **get_account_check**: Verify Ayrshare connection
+- **list_history**: List history of posts
 - **get_post_analytics**: Get engagement statistics for a specific post
 - **get_social_analytics**: Get profile-level analytics for a specific social network
 - **list_auto_schedules**: List all auto-schedule settings
-- **list_history**: List history of posts
 - **list_profiles**: List all user profiles
 - **schedule_post**: Schedule a post for a future date
 - **set_auto_schedule**: Set auto-schedule times for a platform

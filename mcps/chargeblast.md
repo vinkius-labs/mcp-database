@@ -38,10 +38,10 @@ Connect your **Chargeblast** account to any AI agent and take full control of yo
 ## Available Tools (8)
 - **request_dispute_credit**: Request a credit for a specific dispute alert
 - **get_dispute_alert_details**: Get details for a specific dispute alert
+- **list_uploaded_orders**: List order history uploaded for deflection
 - **list_dispute_alerts**: List all chargeback alerts from your account
 - **list_deflection_logs**: List logs of chargeback attempts that were successfully blocked
 - **list_enrolled_merchants**: List all merchants enrolled under your account
-- **list_uploaded_orders**: List order history uploaded for deflection
 - **update_alert_status**: Update the status of a dispute alert
 - **upload_order_data**: Upload order data to enable digital receipts and deflections
 

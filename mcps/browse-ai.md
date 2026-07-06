@@ -36,8 +36,8 @@ Connect your **Browse AI** account to any AI agent and orchestrate your web scra
 
 ## Available Tools (10)
 - **create_monitor**: Create a new monitor schedule for a robot
-- **get_bulk_run**: Get details of a specific bulk run
 - **get_robot**: Get details of a specific robot
+- **get_bulk_run**: Get details of a specific bulk run
 - **get_system_status**: Check Browse AI system and queue status
 - **get_task**: Get status and extracted data for a task
 - **list_bulk_runs**: List all bulk runs for a robot

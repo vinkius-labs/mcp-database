@@ -35,16 +35,16 @@ Connect your AI agent to the **Blockchain.com Data API** and orchestrate your cr
 
 
 ## Available Tools (10)
+- **get_network_stats**: Get general Bitcoin network statistics
+- **get_ticker**: Get current BTC prices in various fiat currencies
+- **get_transaction**: Get details of a specific transaction by hash
+- **list_unconfirmed_transactions**: List current unconfirmed transactions in the mempool
 - **get_address**: Get balance and transaction history for a Bitcoin address
 - **get_block_count**: Get the current total block count (height)
 - **get_block**: Get details of a specific block by hash
 - **get_chart**: Retrieve historical chart data (e.g. market-price, n-transactions)
 - **get_latest_block**: Get details of the latest Bitcoin block
 - **get_mempool_stats**: Get current mempool statistics
-- **get_network_stats**: Get general Bitcoin network statistics
-- **get_ticker**: Get current BTC prices in various fiat currencies
-- **get_transaction**: Get details of a specific transaction by hash
-- **list_unconfirmed_transactions**: List current unconfirmed transactions in the mempool
 
 
 ## 💬 Prompt Examples

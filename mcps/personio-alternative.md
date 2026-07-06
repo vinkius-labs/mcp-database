@@ -34,22 +34,6 @@ Connect your **Personio** HR platform to any AI agent to streamline your people 
 
 
 ## Available Tools (25)
-- **create_absence**: Create an absence record
-- **create_application**: Post a new recruiting application (v1)
-- **create_attendance**: Periods cannot span across two days.
-
-Create an attendance record
-- **create_employee**: Create a new employee
-- **create_person**: Create a new person (v2 API)
-- **create_webhook**: Create a new webhook (v2)
-- **delete_absence**: Delete an absence record
-- **delete_attendance**: Delete an attendance record
-- **delete_webhook**: Delete a webhook (v2)
-- **get_custom_report_columns**: Get columns for a custom report
-- **get_custom_report_data**: Archived reports require manual refresh in UI.
-
-Get data for a custom report
-- **list_absences**: List employee absences
 - **list_applications**: List recruiting applications (v2 Beta)
 - **list_attendances**: List employee attendances
 - **list_candidates**: List recruiting candidates (v2 Beta)
@@ -65,6 +49,22 @@ List company employees
 - **update_employee**: Update an existing employee
 - **update_person**: Update an existing person (v2 API)
 - **update_webhook**: Update an existing webhook (v2)
+- **create_employee**: Create a new employee
+- **create_person**: Create a new person (v2 API)
+- **create_webhook**: Create a new webhook (v2)
+- **delete_absence**: Delete an absence record
+- **delete_attendance**: Delete an attendance record
+- **get_custom_report_columns**: Get columns for a custom report
+- **get_custom_report_data**: Archived reports require manual refresh in UI.
+
+Get data for a custom report
+- **list_absences**: List employee absences
+- **create_absence**: Create an absence record
+- **create_application**: Post a new recruiting application (v1)
+- **create_attendance**: Periods cannot span across two days.
+
+Create an attendance record
+- **delete_webhook**: Delete a webhook (v2)
 
 
 ## 💬 Prompt Examples

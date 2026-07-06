@@ -62,7 +62,6 @@ No more manual dashboard navigation to check who is in a room or to force-mute a
 - **start_room_composite_egress**: Record an entire room using a web layout
 - **start_track_composite_egress**: Record one audio and one video track together
 - **start_track_egress**: Export a single track without transcoding
-- **start_web_egress**: Record any web page
 - **stop_egress**: Stop an active egress
 - **transfer_sip_participant**: Transfer an active SIP call to another number or URI
 - **update_ingress**: Update room or participant settings for a reusable ingress
@@ -72,6 +71,7 @@ No more manual dashboard navigation to check who is in a room or to force-mute a
 - **update_room_metadata**: Update room-wide metadata
 - **update_stream**: Add/remove RTMP/SRT output URLs from an active stream
 - **update_subscriptions**: Subscribe/unsubscribe a participant from specific tracks
+- **start_web_egress**: Record any web page
 
 
 ## 💬 Prompt Examples

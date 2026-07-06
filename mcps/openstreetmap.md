@@ -36,7 +36,6 @@ Your AI can now act as a GIS specialist, helping you audit map data or contribut
 
 
 ## Available Tools (33)
-- **close_changeset**: Close a changeset
 - **close_note**: Close a map note
 - **comment_note**: Add a comment to an existing map note
 - **create_changeset**: Create a new changeset
@@ -69,6 +68,7 @@ Your AI can now act as a GIS specialist, helping you audit map data or contribut
 - **update_element**: Update an existing node, way, or relation
 - **update_message_status**: Update the read status of a message
 - **upload_gpx**: Upload a GPS trace (GPX)
+- **close_changeset**: Close a changeset
 
 
 ## 💬 Prompt Examples

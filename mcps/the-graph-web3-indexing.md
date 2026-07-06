@@ -39,7 +39,6 @@ Connect to **The Graph** to index and retrieve real-time blockchain data across 
 - **get_evm_swaps**: ) for EVM chains.
 
 Get EVM DEX swaps
-- **get_evm_transfers**: Get EVM token transfers
 - **query_subgraph**: Requires THE_GRAPH_API_KEY.
 
 Query a subgraph using GraphQL
@@ -48,6 +47,7 @@ Query a subgraph using GraphQL
 
 Get SVM (Solana) DEX swaps
 - **get_svm_transfers**: Get SVM (Solana) token transfers
+- **get_evm_transfers**: Get EVM token transfers
 
 
 ## 💬 Prompt Examples

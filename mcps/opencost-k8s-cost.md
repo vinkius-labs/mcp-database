@@ -35,13 +35,13 @@ Connect your **OpenCost** instance to any AI agent to gain real-time visibility 
 
 ## Available Tools (6)
 - **get_allocation**: Query costs and resources allocated to Kubernetes workloads
-- **get_assets**: Retrieve backing cost data broken down by individual assets
 - **get_cloud_cost**: Retrieve cloud cost data directly from cloud provider billing reports
 - **get_custom_cost_timeseries**: g., Datadog, MongoDB Atlas).
 
 Get samples of third-party service costs over time steps
 - **get_custom_cost_total**: Get summary of third-party costs over a window
 - **set_log_level**: Change OpenCost log level at runtime
+- **get_assets**: Retrieve backing cost data broken down by individual assets
 
 
 ## 💬 Prompt Examples

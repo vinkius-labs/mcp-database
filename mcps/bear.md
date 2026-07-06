@@ -35,11 +35,6 @@ Say goodbye to breaking focus. Your autonomous agent fetches the precise code sn
 
 
 ## Available Tools (10)
-- **search_notes**: g. @todo @today).
-
-Search across all Bear app notes
-- **open_note**: Retrieve explicit complete Markdown content of a Bear note
-- **create_note**: Create a new native Bear note
 - **add_text**: Append or prepend Markdown chunks to a Bear note
 - **trash_note**: Move an explicit Bear Note to the Trash
 - **archive_note**: Archive an explicit Bear Note
@@ -49,6 +44,11 @@ Retrieve the exact Tags taxonomy nesting globally
 - **open_tag**: List all explicit Bear notes matching a specific tag
 - **rename_tag**: Rename globally an entire tag across all mapped Notes
 - **delete_tag**: Destroy entirely a Tag constraint globally
+- **search_notes**: g. @todo @today).
+
+Search across all Bear app notes
+- **open_note**: Retrieve explicit complete Markdown content of a Bear note
+- **create_note**: Create a new native Bear note
 
 
 ## 💬 Prompt Examples

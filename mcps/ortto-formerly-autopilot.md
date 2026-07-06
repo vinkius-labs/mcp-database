@@ -33,8 +33,8 @@ Connect your **Ortto** account to any AI agent and unify your customer data and 
 
 
 ## Available Tools (10)
-- **create_activity**: Create a custom activity for a person
 - **create_person**: Add a new person to Ortto
+- **create_activity**: Create a custom activity for a person
 - **delete_person**: Permanently archive/delete a person
 - **get_person**: Get details for a specific person
 - **get_subscription**: Get subscription status for an email

@@ -35,7 +35,6 @@ Connect your **Payload CMS** instance to any AI agent and take full control of y
 
 
 ## Available Tools (10)
-- **create_document**: Create a new document in a Payload CMS collection
 - **delete_document**: Delete a document by ID in a Payload CMS collection
 - **delete_preference**: Delete a user preference in Payload CMS
 - **find_by_id**: Find a document by ID in a Payload CMS collection
@@ -43,10 +42,11 @@ Connect your **Payload CMS** instance to any AI agent and take full control of y
 - **get_global**: g., Header, Footer).
 
 Get a Payload CMS global
-- **get_preference**: Get a user preference in Payload CMS
 - **update_document**: Update a document by ID in a Payload CMS collection
 - **update_global**: Update a Payload CMS global
 - **update_preference**: Update a user preference in Payload CMS
+- **create_document**: Create a new document in a Payload CMS collection
+- **get_preference**: Get a user preference in Payload CMS
 
 
 ## 💬 Prompt Examples

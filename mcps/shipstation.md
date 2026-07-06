@@ -38,12 +38,12 @@ Connect your **ShipStation** account to any AI agent and take full control of yo
 - **add_tag_to_order**: Add a tag to an order
 - **create_label_for_order**: Create a shipping label for an order
 - **create_order**: Create or update an order
+- **get_store**: Get store details
 - **create_shipment_label**: Create a manual shipment label
 - **get_carrier**: Get carrier details and balance
 - **get_customer**: Get customer details
 - **get_order**: Get a single order by ID
 - **get_rates**: Get shipping rates
-- **get_store**: Get store details
 - **list_carriers**: List all connected carriers
 - **list_customers**: List customers with filters
 - **list_orders_by_tag**: List orders by status and tag

@@ -34,6 +34,9 @@ Connect your **Statsig** project to any AI agent to manage feature rollouts and 
 
 
 ## Available Tools (12)
+- **list_dynamic_configs**: Requires STATSIG_CONSOLE_API_KEY.
+
+List all dynamic configs in the project
 - **check_gate**: Requires STATSIG_SERVER_SECRET_KEY.
 
 Evaluates one or more feature gates for a user
@@ -58,9 +61,6 @@ Read a specific feature gate
 - **get_layer**: Requires STATSIG_SERVER_SECRET_KEY.
 
 Fetches parameter values from a layer
-- **list_dynamic_configs**: Requires STATSIG_CONSOLE_API_KEY.
-
-List all dynamic configs in the project
 - **list_gates**: Requires STATSIG_CONSOLE_API_KEY.
 
 List all feature gates in the project

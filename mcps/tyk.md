@@ -43,6 +43,12 @@ Create a new API key (Session Object)
 - **create_org_key**: Requires TYK_ADMIN_SECRET.
 
 Create an organization key
+- **get_policy**: Requires TYK_GATEWAY_SECRET.
+
+Get details of a single policy
+- **hot_reload**: Requires TYK_GATEWAY_SECRET.
+
+Force Gateway hot reload
 - **create_policy**: Requires TYK_GATEWAY_SECRET.
 
 Create a new security policy
@@ -55,12 +61,6 @@ Delete a policy
 - **get_key**: Requires TYK_GATEWAY_SECRET.
 
 Get details for a specific API key
-- **get_policy**: Requires TYK_GATEWAY_SECRET.
-
-Get details of a single policy
-- **hot_reload**: Requires TYK_GATEWAY_SECRET.
-
-Force Gateway hot reload
 - **list_apis**: Requires TYK_DASHBOARD_TOKEN.
 
 List all API definitions

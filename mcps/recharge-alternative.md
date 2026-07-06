@@ -36,6 +36,7 @@ Connect your **Recharge** account to any AI agent to streamline your subscriptio
 ## Available Tools (70)
 - **activate_subscription**: Reactivate a cancelled subscription
 - **add_async_batch_tasks**: Add tasks to an async batch
+- **get_plan**: Retrieve a plan
 - **apply_charge_discount**: Apply a discount to a queued charge
 - **bulk_manage_product_plans**: Bulk manage plans for a product
 - **cancel_subscription**: Cancel a subscription
@@ -66,15 +67,14 @@ Delete an address
 - **get_address**: Retrieve an address
 - **get_async_batch**: Retrieve an async batch
 - **get_charge**: Retrieve a charge
-- **get_checkout**: Retrieve a checkout
 - **get_checkout_shipping_rates**: Retrieve available shipping rates for a checkout
-- **get_customer**: Retrieve a customer
+- **get_checkout**: Retrieve a checkout
 - **get_customer_credit_summary**: Retrieve credit balance for a customer
 - **get_customer_delivery_schedule**: Retrieve projected deliveries for a customer
+- **get_customer**: Retrieve a customer
 - **get_metafield**: Retrieve a metafield
 - **get_order**: Retrieve an order
 - **get_payment_method**: Retrieve a payment method
-- **get_plan**: Retrieve a plan
 - **get_product**: Retrieve a product
 - **get_subscription**: Retrieve a subscription
 - **get_webhook**: Retrieve a webhook

@@ -34,8 +34,6 @@ Connect your **Wazuh SIEM** to any AI agent to streamline security operations an
 
 
 ## Available Tools (21)
-- **list_cluster_nodes**: List Wazuh cluster nodes
-- **create_agent**: Enroll a new Wazuh agent
 - **create_security_role**: Create a new Wazuh security role
 - **list_decoders**: Supports WQL filtering.
 
@@ -73,6 +71,8 @@ Get Syscollector inventory
 - **update_rule_file**: Update a Wazuh rule file
 - **update_security_config**: Update Wazuh security configuration
 - **upgrade_agents**: Upgrade Wazuh agents
+- **list_cluster_nodes**: List Wazuh cluster nodes
+- **create_agent**: Enroll a new Wazuh agent
 
 
 ## 💬 Prompt Examples

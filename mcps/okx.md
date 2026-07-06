@@ -36,9 +36,6 @@ Connect your **OKX** trading account to any AI agent to monitor markets and mana
 - **amend_order**: Requires instrument ID and either order ID or client order ID.
 
 Amend an existing incomplete order
-- **get_balance**: Can be filtered by specific currencies.
-
-Retrieve asset balances in the trading account
 - **cancel_order**: Requires instrument ID and either order ID or client order ID.
 
 Cancel an incomplete order
@@ -51,6 +48,9 @@ Place a new trade order
 - **get_positions**: Can be filtered by instrument type, instrument ID, or position ID.
 
 Retrieve active positions
+- **get_balance**: Can be filtered by specific currencies.
+
+Retrieve asset balances in the trading account
 
 
 ## 💬 Prompt Examples
