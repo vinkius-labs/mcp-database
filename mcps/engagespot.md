@@ -36,15 +36,15 @@ No more manual API calls to test your notification logic. Your AI acts as a comm
 
 
 ## Available Tools (9)
-- **cancel_workflow_run**: Cancel a running workflow to prevent further messages
-- **create_or_update_user**: Create a new user or update an existing user profile
-- **delete_all_notifications**: Delete all notifications for the authenticated user
-- **delete_notification**: Delete a specific notification by its ID
 - **delete_user**: Delete a user from the workspace
 - **get_preferences**: Get notification preferences for the authenticated user
 - **list_notifications**: List notifications for the authenticated user
 - **send_notification**: Send a notification by triggering a workflow
 - **update_preferences**: Update notification preferences for the authenticated user
+- **cancel_workflow_run**: Cancel a running workflow to prevent further messages
+- **create_or_update_user**: Create a new user or update an existing user profile
+- **delete_all_notifications**: Delete all notifications for the authenticated user
+- **delete_notification**: Delete a specific notification by its ID
 
 
 ## 💬 Prompt Examples

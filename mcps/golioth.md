@@ -35,13 +35,13 @@ No more switching between the Golioth Console and your code. Your AI acts as a r
 
 
 ## Available Tools (7)
-- **create_project**: Create a new Golioth project
 - **get_lightdb_state**: Get LightDB State for a device
 - **list_devices**: List devices in a Golioth project
 - **list_projects**: List Golioth projects
 - **register_device**: Register a new device in a Golioth project
 - **remove_device**: Remove a device from a Golioth project
 - **set_lightdb_state**: Set LightDB State for a device
+- **create_project**: Create a new Golioth project
 
 
 ## 💬 Prompt Examples

@@ -35,14 +35,15 @@ Connect your **Coralogix** account to any AI agent to take full control of your 
 
 
 ## Available Tools (17)
+- **create_rule_group**: Create a parsing rule group
+- **create_slo**: Create a Service Level Objective (SLO)
+- **create_tco_override**: Create a TCO policy override
+- **delete_tco_override**: Delete a TCO policy override
 - **get_rules**: Get all parsing rules
 - **get_tco_overrides**: Get all TCO policy overrides
 - **list_custom_enrichments**: List custom enrichments
 - **list_slos**: List all SLOs
 - **search_grafana_dashboards**: Search hosted Grafana dashboards
-- **create_rule_group**: Create a parsing rule group
-- **create_slo**: Create a Service Level Objective (SLO)
-- **create_tco_override**: Create a TCO policy override
 - **send_logs**: Provide an array of log objects.
 
 Send logs to Coralogix
@@ -50,7 +51,6 @@ Send logs to Coralogix
 - **delete_custom_enrichment**: Delete a custom enrichment
 - **delete_rule_group**: Delete a parsing rule group
 - **delete_slo**: Delete an SLO
-- **delete_tco_override**: Delete a TCO policy override
 - **get_grafana_home**: Get hosted Grafana home dashboard
 - **get_rule_group**: Get a specific parsing rule group
 - **create_grafana_dashboard**: Create or update a hosted Grafana dashboard

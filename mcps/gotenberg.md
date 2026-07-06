@@ -34,9 +34,6 @@ Connect your **Gotenberg** instance to any AI agent to handle complex document c
 
 
 ## Available Tools (16)
-- **convert_html_to_pdf**: Returns the base64 encoded PDF.
-
-Convert raw HTML to PDF using Chromium
 - **convert_office_to_pdf**: ) to PDF using the downloadFrom parameter.
 
 Convert Office documents to PDF using LibreOffice
@@ -60,6 +57,9 @@ Split a PDF into multiple files
 - **get_version**: Get Gotenberg version
 - **write_pdf_bookmarks**: Write bookmarks to a PDF
 - **write_pdf_metadata**: Write metadata to a PDF
+- **convert_html_to_pdf**: Returns the base64 encoded PDF.
+
+Convert raw HTML to PDF using Chromium
 
 
 ## 💬 Prompt Examples

@@ -33,10 +33,10 @@ Connect your **Lemonade** account to any AI agent to streamline your insurance m
 
 
 ## Available Tools (4)
-- **cancel_policy**: Cancel an active policy
 - **create_quote**: Generate an insurance quote
 - **file_claim**: Submit an insurance claim
 - **get_policy**: Retrieve policy information
+- **cancel_policy**: Cancel an active policy
 
 
 ## 💬 Prompt Examples

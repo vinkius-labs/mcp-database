@@ -34,10 +34,6 @@ Connect your **Commerce.js** (Chec) account to any AI agent and take full contro
 
 
 ## Available Tools (10)
-- **add_to_cart**: Add an item to a cart
-- **capture_order**: Capture an order
-- **create_cart**: Create or retrieve a cart
-- **generate_checkout_token**: Generate a checkout token
 - **get_order**: Requires Secret Key.
 
 Retrieve a specific order
@@ -50,6 +46,10 @@ List orders
 
 List products in the store
 - **update_cart_item**: Update a cart item
+- **add_to_cart**: Add an item to a cart
+- **capture_order**: Capture an order
+- **create_cart**: Create or retrieve a cart
+- **generate_checkout_token**: Generate a checkout token
 
 
 ## 💬 Prompt Examples

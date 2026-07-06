@@ -33,7 +33,6 @@ Connect **Convoy** to your AI agent to orchestrate and monitor your webhook infr
 
 
 ## Available Tools (26)
-- **activate_endpoint**: Activate a paused endpoint
 - **batch_retry_event_deliveries**: Batch retry event deliveries
 - **broadcast_event**: Create a broadcast event
 - **bulk_create_filters**: Bulk create filters for a subscription
@@ -59,6 +58,7 @@ Connect **Convoy** to your AI agent to orchestrate and monitor your webhook infr
 - **pause_endpoint**: Pause an endpoint
 - **retry_event_delivery**: Retry an event delivery
 - **update_endpoint**: Update an existing endpoint
+- **activate_endpoint**: Activate a paused endpoint
 
 
 ## 💬 Prompt Examples

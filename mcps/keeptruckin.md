@@ -35,7 +35,6 @@ Connect your **KeepTruckin** (Motive) account to any AI agent to streamline flee
 
 
 ## Available Tools (10)
-- **list_assets**: List all company assets
 - **list_camera_connections**: List Camera Connection Events
 - **create_asset**: Create a new asset
 - **create_team_dispatch**: Create Team Dispatches (V1, V2, V3)
@@ -45,6 +44,7 @@ Connect your **KeepTruckin** (Motive) account to any AI agent to streamline flee
 - **list_reefer_sensor_samples**: List Sensor Samples for Reefers
 - **update_asset**: Update an existing asset
 - **get_vehicle_utilization**: Fetch Vehicle Utilization (V2)
+- **list_assets**: List all company assets
 
 
 ## 💬 Prompt Examples

@@ -35,8 +35,6 @@ Connect your entire HR and recruitment stack to any AI agent using **Kombo**. Th
 
 
 ## Available Tools (21)
-- **put_assessment_order_result**: Write back results for an assessment order
-- **put_assessment_packages**: Define available assessment/background check packages
 - **get_ats_applications**: Retrieve job applications from the ATS
 - **get_ats_candidates**: Retrieve candidate profiles from the ATS
 - **create_ats_application**: Create a new application and candidate for a job
@@ -58,6 +56,8 @@ Retrieve all employees from the HRIS
 - **upsert_lms_courses_bulk**: Asynchronously upsert courses into the LMS
 - **get_lms_users**: Retrieve learners from the LMS
 - **passthrough_request**: Call the native API of the underlying tool directly
+- **put_assessment_order_result**: Write back results for an assessment order
+- **put_assessment_packages**: Define available assessment/background check packages
 
 
 ## 💬 Prompt Examples

@@ -33,10 +33,6 @@ Connect **Frill** to your AI agent to streamline your product feedback loop and 
 
 
 ## Available Tools (35)
-- **create_announcement**: Create a new announcement
-- **create_category**: Create a new announcement category
-- **create_comment**: Create a new comment on an idea
-- **create_follower**: Create a new follower
 - **create_idea**: Create a new idea
 - **create_status**: Create a new status
 - **create_topic**: Create a new topic
@@ -68,6 +64,10 @@ Connect **Frill** to your AI agent to streamline your product feedback loop and 
 - **update_idea**: Update an idea
 - **update_status**: Update a status
 - **update_topic**: Update a topic
+- **create_announcement**: Create a new announcement
+- **create_category**: Create a new announcement category
+- **create_comment**: Create a new comment on an idea
+- **create_follower**: Create a new follower
 
 
 ## 💬 Prompt Examples

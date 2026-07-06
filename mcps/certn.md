@@ -38,7 +38,6 @@ Connect your **Certn** account to any AI agent to streamline your background scr
 - **create_pm_property**: Create a new property
 - **get_hr_applicant**: Retrieve details/status of a specific HR application
 - **get_hr_report_link**: Create a hosted PDF link for an HR report (valid for 1 hour)
-- **get_hr_report_pdf**: Download HR report as PDF
 - **get_hr_report_web**: Download HR report as HTML
 - **invite_hr_application**: Invite an HR applicant via email/SMS
 - **invite_pm_application**: Invite a tenant via email for Property Management
@@ -52,6 +51,7 @@ Connect your **Certn** account to any AI agent to streamline your background scr
 - **list_users**: List users
 - **quick_hr_application**: Screen an HR applicant instantly (Quickscreen)
 - **quick_pm_application**: Screen a tenant instantly for Property Management
+- **get_hr_report_pdf**: Download HR report as PDF
 
 
 ## 💬 Prompt Examples

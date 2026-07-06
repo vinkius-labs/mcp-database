@@ -34,15 +34,15 @@ Connect **Kraken.io** to your AI agent to automate image processing. Reduce page
 
 
 ## Available Tools (3)
+- **upload_image**: io.
+
+Upload and optimize a base64 encoded image
 - **get_user_status**: io account.
 
 Get Kraken.io user status and quota
 - **optimize_url**: io. Supports lossy/lossless compression, resizing, and format conversion.
 
 Optimize an image from a URL
-- **upload_image**: io.
-
-Upload and optimize a base64 encoded image
 
 
 ## 💬 Prompt Examples

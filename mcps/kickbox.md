@@ -33,11 +33,11 @@ Connect **Kickbox** to your AI agent to ensure your email lists are clean, deliv
 
 
 ## Available Tools (3)
+- **verify_email**: Verify a single email address
 - **get_batch_status**: Check the status of a batch verification job
 - **start_batch_verification**: Returns a Job ID to check status later.
 
 Start a batch email verification job
-- **verify_email**: Verify a single email address
 
 
 ## 💬 Prompt Examples

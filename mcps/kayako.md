@@ -34,13 +34,6 @@ Connect your **Kayako** helpdesk to any AI agent to streamline your customer sup
 
 
 ## Available Tools (21)
-- **list_article_comments**: List comments for a specific Kayako article
-- **list_articles**: List Kayako Help Center articles
-- **list_brands**: List Kayako brands
-- **list_case_posts**: List posts for a specific Kayako case
-- **list_cases**: Supports pagination and partial output.
-
-List Kayako cases (conversations)
 - **list_categories**: List Kayako Help Center categories
 - **create_case**: Create a new Kayako case
 - **create_file**: Upload a file to Kayako
@@ -59,6 +52,13 @@ List Kayako cases (conversations)
 
 List Kayako users
 - **list_views**: List Kayako views
+- **list_article_comments**: List comments for a specific Kayako article
+- **list_articles**: List Kayako Help Center articles
+- **list_brands**: List Kayako brands
+- **list_case_posts**: List posts for a specific Kayako case
+- **list_cases**: Supports pagination and partial output.
+
+List Kayako cases (conversations)
 
 
 ## 💬 Prompt Examples

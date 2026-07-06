@@ -34,11 +34,6 @@ Connect your **ComplyAdvantage** account to any AI agent to streamline your Anti
 
 
 ## Available Tools (14)
-- **acknowledge_monitor**: Acknowledge changes to a monitored search
-- **create_comment**: Create a comment on a search or entity
-- **create_search**: ) with optional fuzziness and filters.
-
-Create a new search
 - **delete_search_tag**: Detach tags from a search
 - **get_search_details**: Get full search results
 - **get_search_monitors**: Get monitored search details
@@ -52,6 +47,11 @@ Start/stop monitoring
 - **update_search_profile**: Update the Search Profile for a monitored search
 - **update_search**: Update search details (assignee, status)
 - **list_users**: Get a list of users in your account
+- **acknowledge_monitor**: Acknowledge changes to a monitored search
+- **create_comment**: Create a comment on a search or entity
+- **create_search**: ) with optional fuzziness and filters.
+
+Create a new search
 
 
 ## 💬 Prompt Examples

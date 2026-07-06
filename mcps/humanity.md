@@ -34,8 +34,6 @@ Connect your **Humanity** account to any AI agent to streamline your workforce m
 
 
 ## Available Tools (20)
-- **list_companies**: List companies
-- **get_company**: Get details for a specific company
 - **create_location**: Create a new location
 - **create_message**: Send a message
 - **create_position**: Create a new position
@@ -56,6 +54,8 @@ Add an event to a timeclock
 - **get_training_sections**: Get training sections
 - **update_weekly_availability**: Update weekly availability
 - **get_weekly_availability**: Get weekly availability
+- **list_companies**: List companies
+- **get_company**: Get details for a specific company
 
 
 ## 💬 Prompt Examples

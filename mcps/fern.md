@@ -34,12 +34,12 @@ Connect to the **Fern** ecosystem to supercharge your documentation workflows. T
 
 
 ## Available Tools (6)
+- **post_chat_completion**: Interact with the Ask Fern AI assistant
+- **whoami**: Get current user information
 - **get_jwt**: Get JWT from Fern API key
 - **get_recent_queries**: Get recent queries and analytics
 - **get_search_key**: Get Algolia search credentials
 - **index_website**: Start crawling and indexing a website for Ask Fern
-- **post_chat_completion**: Interact with the Ask Fern AI assistant
-- **whoami**: Get current user information
 
 
 ## 💬 Prompt Examples

@@ -34,8 +34,6 @@ Connect your **Immutable** developer account to any AI agent to manage Web3 gami
 
 
 ## Available Tools (17)
-- **create_bid**: Create an orderbook bid
-- **create_listing**: Create an orderbook listing
 - **fulfill_order**: Fulfill an orderbook order
 - **get_activity**: Get a specific activity by ID
 - **get_collection**: Get collection details by contract address
@@ -51,6 +49,8 @@ Connect your **Immutable** developer account to any AI agent to manage Web3 gami
 - **mint_nfts**: Mint NFTs (requires Secret API Key)
 - **refresh_collection_metadata**: Refresh metadata for a collection
 - **update_passport_username**: Update Passport username (requires Access Token)
+- **create_bid**: Create an orderbook bid
+- **create_listing**: Create an orderbook listing
 
 
 ## 💬 Prompt Examples

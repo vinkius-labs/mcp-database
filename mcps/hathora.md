@@ -34,8 +34,6 @@ Connect your **Hathora** account to any AI agent and take full control of your m
 
 
 ## Available Tools (9)
-- **create_application**: Create a new Hathora application
-- **create_build**: Initiate a new build process
 - **create_deployment**: Create a deployment for a build
 - **create_lobby**: Create a new lobby
 - **create_room**: Create a new game room (session)
@@ -43,6 +41,8 @@ Connect your **Hathora** account to any AI agent and take full control of your m
 - **get_room_connection_info**: Get connection info for a room
 - **list_active_processes**: List active processes for an application
 - **upload_build**: Upload a build file (tarball) for a specific build ID
+- **create_application**: Create a new Hathora application
+- **create_build**: Initiate a new build process
 
 
 ## 💬 Prompt Examples

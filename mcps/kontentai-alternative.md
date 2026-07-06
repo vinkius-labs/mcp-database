@@ -33,14 +33,6 @@ Connect your **Kontent.ai** project to any AI agent to streamline your headless 
 
 
 ## Available Tools (22)
-- **delivery_get_item**: Get a single content item via Delivery API
-- **delivery_list_items**: ai project. Supports filtering and depth.
-
-List content items via Delivery API
-- **delivery_list_taxonomies**: List taxonomies via Delivery API
-- **delivery_list_types**: List content types via Delivery API
-- **manage_list_assets**: List assets via Management API
-- **manage_create_asset**: Create an asset via Management API
 - **manage_create_item**: Create a content item via Management API
 - **manage_create_taxonomy**: Create a taxonomy via Management API
 - **manage_create_type**: Create a content type via Management API
@@ -57,6 +49,14 @@ List content items via Delivery API
 - **manage_update_taxonomy**: Update a taxonomy via Management API
 - **manage_update_type**: Update a content type via Management API
 - **manage_update_variant**: Update a language variant of a content item
+- **delivery_get_item**: Get a single content item via Delivery API
+- **delivery_list_items**: ai project. Supports filtering and depth.
+
+List content items via Delivery API
+- **delivery_list_taxonomies**: List taxonomies via Delivery API
+- **delivery_list_types**: List content types via Delivery API
+- **manage_list_assets**: List assets via Management API
+- **manage_create_asset**: Create an asset via Management API
 
 
 ## 💬 Prompt Examples

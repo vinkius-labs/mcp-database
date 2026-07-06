@@ -33,10 +33,6 @@ Connect your **Edmunds** API key to any AI agent and unlock deep automotive inte
 
 
 ## Available Tools (41)
-- **calculate_new_tmv**: Get TMV price for a new car
-- **calculate_typically_equipped_used_tmv**: Get TMV price for a typically equipped used car
-- **calculate_used_tmv**: Get TMV price for a used car
-- **get_color**: Get color details by ID
 - **get_dealer_reviews**: Get dealer ratings and reviews by dealer ID
 - **get_dealership_franchises**: Find dealership franchises
 - **get_editorial_make**: Get editorial make overview
@@ -51,7 +47,6 @@ Connect your **Edmunds** API key to any AI agent and unlock deep automotive inte
 - **get_make_details**: Get details on a specific car make
 - **get_makes_count**: Get total count of car makes
 - **list_makes**: Get a list of car makes
-- **get_makes_with_tco**: Get car makes with TCO value
 - **list_model_years**: Get a list of model years
 - **list_models**: Get a list of models
 - **get_models_with_tco**: Get car models with TCO value
@@ -74,6 +69,11 @@ Connect your **Edmunds** API key to any AI agent and unlock deep automotive inte
 - **get_used_tco_details**: Get TCO details for used car
 - **decode_vin**: Get vehicle details through VIN decoding
 - **get_years_with_styles**: Get years with styles for a car make/model
+- **calculate_new_tmv**: Get TMV price for a new car
+- **calculate_typically_equipped_used_tmv**: Get TMV price for a typically equipped used car
+- **calculate_used_tmv**: Get TMV price for a used car
+- **get_color**: Get color details by ID
+- **get_makes_with_tco**: Get car makes with TCO value
 
 
 ## 💬 Prompt Examples

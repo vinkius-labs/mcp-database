@@ -33,10 +33,10 @@ Connect to **Estated** to retrieve deep property insights across the United Stat
 
 
 ## Available Tools (4)
+- **get_property_split_address**: Get property data using split address components
 - **get_property_combined_address**: Get property data using a single combined address string
 - **get_property_fips_apn**: Get property data using FIPS code and APN
 - **get_property_parsed_address**: Get property data using detailed parsed address components
-- **get_property_split_address**: Get property data using split address components
 
 
 ## 💬 Prompt Examples
