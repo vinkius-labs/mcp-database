@@ -37,9 +37,6 @@ Connect your AI agents to the **Douyin Open Platform**, the primary ecosystem fo
 
 
 ## Available Tools (10)
-- **get_audience_analytics**: Retrieve demographic data for account followers
-- **get_live_analytics**: Retrieve historical live streaming data
-- **get_user_info**: Retrieve authorized user profile details
 - **get_video_analytics**: Retrieve performance metrics for specific videos
 - **list_comments**: List comments for a specific video
 - **list_fans**: List fans/followers of the authorized user
@@ -47,6 +44,9 @@ Connect your AI agents to the **Douyin Open Platform**, the primary ecosystem fo
 - **list_videos**: List videos uploaded by the authorized user
 - **reply_comment**: Reply to a comment on a video
 - **search_videos**: Search for public videos on Douyin
+- **get_audience_analytics**: Retrieve demographic data for account followers
+- **get_live_analytics**: Retrieve historical live streaming data
+- **get_user_info**: Retrieve authorized user profile details
 
 
 ## 💬 Prompt Examples

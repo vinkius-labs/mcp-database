@@ -35,10 +35,6 @@ Your agent becomes your client operations assistant, eliminating context-switchi
 
 
 ## Available Tools (12)
-- **project_budget**: Get project budget
-- **create_client**: Create a new client
-- **get_client**: Get client details
-- **list_clients**: List all clients
 - **clientflow_dashboard**: Get ClientFlow dashboard overview
 - **create_invoice**: Pass additional fields as JSON in the body parameter.
 
@@ -49,6 +45,10 @@ Create an invoice for a client
 - **list_proposals**: List all proposals
 - **log_time**: Log time on a task
 - **list_time_entries**: List time tracking entries
+- **project_budget**: Get project budget
+- **create_client**: Create a new client
+- **get_client**: Get client details
+- **list_clients**: List all clients
 
 
 ## 💬 Prompt Examples

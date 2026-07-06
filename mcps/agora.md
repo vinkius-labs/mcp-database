@@ -36,18 +36,18 @@ Connect your AI agents to **Agora**, the leading real-time engagement platform f
 
 
 ## Available Tools (10)
-- **acquire_cloud_recording**: Required before starting.
-
-Request a resource ID for cloud recording
-- **create_project**: Create a new Agora project
-- **get_project_details**: Get detailed information for a specific project
-- **get_usage_stats**: Query usage data for a specific project
 - **list_active_calls**: List ongoing calls and sessions
 - **list_projects**: List all Agora projects in your console
 - **list_whiteboard_rooms**: List active Interactive Whiteboard rooms
 - **query_cloud_recording**: Check the status of an active recording
 - **start_cloud_recording**: Start recording a channel to the cloud
 - **stop_cloud_recording**: Stop an ongoing cloud recording
+- **acquire_cloud_recording**: Required before starting.
+
+Request a resource ID for cloud recording
+- **create_project**: Create a new Agora project
+- **get_project_details**: Get detailed information for a specific project
+- **get_usage_stats**: Query usage data for a specific project
 
 
 ## 💬 Prompt Examples

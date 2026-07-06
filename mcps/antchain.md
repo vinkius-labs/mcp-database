@@ -42,9 +42,6 @@ Your AI agent becomes your blockchain operations center, handling contract deplo
 - **deploy_contract**: Requires the contract bytecode (compiled bytecode in hex format) and optionally the ABI (Application Binary Interface) for interaction. Returns the deployed contract address and deployment transaction details. The contract will be available under the specified name.
 
 Deploy a smart contract on AntChain
-- **get_chain_list**: Returns chain IDs, names, creation dates, status, and basic configuration. Use this to discover which blockchains you have access to before performing operations.
-
-List all available blockchain networks in your AntChain account
 - **invoke_contract**: Provide the contract name, method name, and any required arguments. Returns the execution result including return values, gas consumption, and transaction status. Use this to interact with deployed contracts.
 
 Invoke a smart contract method on AntChain
@@ -69,6 +66,9 @@ Query blockchain network information on AntChain
 - **query_transaction**: Returns transaction status, sender, receiver, gas used, block inclusion, and execution result. Useful for verifying transaction finality and inspecting transaction details.
 
 Query a transaction on AntChain
+- **get_chain_list**: Returns chain IDs, names, creation dates, status, and basic configuration. Use this to discover which blockchains you have access to before performing operations.
+
+List all available blockchain networks in your AntChain account
 
 
 ## 💬 Prompt Examples

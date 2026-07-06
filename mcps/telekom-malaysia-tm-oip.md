@@ -38,12 +38,12 @@ Connect your AI agents to the **Telekom Malaysia (TM) Open Innovation Platform (
 ## Available Tools (10)
 - **check_service_availability**: Verify broadband availability for a specific address
 - **create_service_order**: Place a new service order for broadband or mobile
+- **list_product_offerings**: List all broadband and telecom product offerings
 - **get_account_billing**: Get billing and account details for a customer
 - **get_offering_details**: Get detailed information for a specific product offering
 - **get_service_status**: Retrieve real-time status for a specific service
 - **get_order_details**: Check the status of a specific service order
 - **get_usage_report**: Monitor data consumption for a service
-- **list_product_offerings**: List all broadband and telecom product offerings
 - **list_active_services**: List active services in the inventory
 - **list_trouble_tickets**: List active support and network trouble tickets
 

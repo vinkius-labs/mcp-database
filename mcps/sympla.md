@@ -36,16 +36,16 @@ Connect your AI agents to **Sympla**, the leading event management and ticketing
 
 
 ## Available Tools (10)
-- **checkin_participant_by_id**: Validate event entry using participant ID
-- **checkin_participant_by_ticket**: Validate event entry using ticket number
-- **get_event_details**: Get detailed information for a specific event
-- **get_order_details**: Get detailed info for a specific order
 - **get_participant_details**: Get detailed profile for a participant by ID
 - **list_events**: List all events owned by your Sympla account
 - **list_event_orders**: List all orders (purchases) for a specific event
 - **list_event_participants**: List all participants (attendees) for an event
 - **list_event_presentations**: List multi-date event presentations
 - **search_participant_by_ticket**: Find a participant using their ticket number
+- **checkin_participant_by_id**: Validate event entry using participant ID
+- **checkin_participant_by_ticket**: Validate event entry using ticket number
+- **get_event_details**: Get detailed information for a specific event
+- **get_order_details**: Get detailed info for a specific order
 
 
 ## 💬 Prompt Examples

@@ -34,9 +34,6 @@ Empower your intelligent agents directly with **Rappi API**, the dominant delive
 
 
 ## Available Tools (10)
-- **get_store_availability**: Check availability status of a store
-- **get_order_handoff**: Get handoff confirmation codes for an order
-- **get_store_menu**: Retrieve the full menu of a store
 - **get_order_detail**: Get full details for a specific order
 - **list_new_orders**: List new incoming orders awaiting acceptance
 - **list_stores**: List all registered stores under your account
@@ -44,6 +41,9 @@ Empower your intelligent agents directly with **Rappi API**, the dominant delive
 - **reject_order**: Reject an incoming order with a reason
 - **take_order**: Accept and start preparing an incoming order
 - **update_store_status**: Open or close a store for receiving orders
+- **get_store_availability**: Check availability status of a store
+- **get_order_handoff**: Get handoff confirmation codes for an order
+- **get_store_menu**: Retrieve the full menu of a store
 
 
 ## 💬 Prompt Examples

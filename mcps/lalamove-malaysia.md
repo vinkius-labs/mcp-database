@@ -36,7 +36,6 @@ Connect your AI agents to **Lalamove Malaysia**, the leading on-demand delivery 
 
 
 ## Available Tools (10)
-- **add_priority_fee**: Add a priority fee (tip) to an order
 - **cancel_order**: Cancel an active delivery order
 - **get_driver_details**: Get information about the assigned driver
 - **get_driver_location**: Get real-time GPS location of the assigned driver
@@ -45,9 +44,10 @@ Connect your AI agents to **Lalamove Malaysia**, the leading on-demand delivery 
 - **get_quotation**: Returns a quotationId and price breakdown.
 
 Get a delivery quotation
-- **list_city_info**: List supported cities and service types
 - **list_vehicle_info**: List available vehicle types
 - **place_order**: Place a new delivery order
+- **add_priority_fee**: Add a priority fee (tip) to an order
+- **list_city_info**: List supported cities and service types
 
 
 ## 💬 Prompt Examples

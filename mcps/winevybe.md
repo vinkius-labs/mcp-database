@@ -36,16 +36,16 @@ No more manually searching through obscure tasting sites. Your AI acts as a dedi
 
 
 ## Available Tools (10)
-- **add_wine_to_cellar**: Add a purchased bottle into a users virtual cellar tracker
-- **compare_wines**: Generate a side-by-side contrast of two bottles
-- **get_pairings**: Get food pairing recommendations for a specific wine
-- **get_region_info**: Retrieve details about wine-making appellations
 - **get_reviews**: Get community tasting reviews and ratings
 - **get_user_cellar**: Examine the inventory of an authenticated users wine cellar
 - **get_vintage_scores**: Get an overview of harvest qualities by year
 - **get_wine_detail**: Get profound tasting notes and stats on a specific wine
 - **get_winery_info**: Get profiles of specific vineyards and producers
 - **search_wines**: Search the Winevybe database for specific bottles
+- **add_wine_to_cellar**: Add a purchased bottle into a users virtual cellar tracker
+- **compare_wines**: Generate a side-by-side contrast of two bottles
+- **get_pairings**: Get food pairing recommendations for a specific wine
+- **get_region_info**: Retrieve details about wine-making appellations
 
 
 ## 💬 Prompt Examples

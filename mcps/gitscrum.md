@@ -34,11 +34,6 @@ Your agent becomes your command center for the organizational backbone of GitScr
 
 
 ## Available Tools (16)
-- **list_labels**: List labels in a project
-- **get_me**: Get authenticated user profile
-- **list_project_members**: List members in a project
-- **my_role**: Get my role in the workspace
-- **create_project**: Create a new project
 - **find_project**: Find a project by name
 - **get_project**: Get project details
 - **list_projects**: List projects in a workspace
@@ -52,6 +47,11 @@ List tasks in a project
 - **get_workspace**: Get workspace details
 - **list_workspaces**: List all GitScrum workspaces
 - **workspace_stats**: Get workspace statistics
+- **list_labels**: List labels in a project
+- **get_me**: Get authenticated user profile
+- **list_project_members**: List members in a project
+- **my_role**: Get my role in the workspace
+- **create_project**: Create a new project
 
 
 ## 💬 Prompt Examples

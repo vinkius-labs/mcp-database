@@ -40,12 +40,16 @@ Connect your AI agents to **LiveKit**, the open-source framework and cloud platf
 - **create_room**: Participants can join it via access tokens.
 
 Create a new LiveKit room with specified settings
-- **list_rooms**: List all active rooms on the LiveKit server
+- **update_participant_metadata**: Update a participant's metadata
+- **update_room_metadata**: Use JSON strings for structured data.
+
+Update the metadata of a room
 - **delete_room**: Requires roomCreate permission.
 
 Delete a room, disconnecting all participants
 - **get_participant**: Get detailed information about a specific participant
 - **list_participants**: List all participants currently in a room
+- **list_rooms**: List all active rooms on the LiveKit server
 - **mute_track**: Mute or unmute a participant's published track
 - **remove_participant**: On LiveKit Cloud, their token is also revoked.
 
@@ -53,10 +57,6 @@ Remove a participant from a room
 - **send_data**: Use "reliable" for guaranteed delivery or "lossy" for low-latency.
 
 Send a data message to all participants in a room
-- **update_participant_metadata**: Update a participant's metadata
-- **update_room_metadata**: Use JSON strings for structured data.
-
-Update the metadata of a room
 
 
 ## 💬 Prompt Examples

@@ -40,9 +40,6 @@ TED is the official publication platform of the European Union for public procur
 - **search_tenders**: Returns title, country, value, deadline, and contracting authority. Covers all 27 EU member states.
 
 Search EU public tenders
-- **get_tender**: Includes description, lots, award criteria, timelines, and contracting authority contact.
-
-Get tender notice details
 - **search_by_country**: Use ISO country codes: DE, FR, ES, IT, PT, NL, etc.
 
 Search tenders by country
@@ -55,6 +52,9 @@ Search tenders by contract value
 - **list_recent_tenders**: Default is 7 days. Use to monitor new opportunities.
 
 List recently published tenders
+- **get_tender**: Includes description, lots, award criteria, timelines, and contracting authority contact.
+
+Get tender notice details
 
 
 ## 💬 Prompt Examples

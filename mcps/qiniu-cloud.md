@@ -35,8 +35,6 @@ Connect your AI agents to **Qiniu Cloud** (七牛云), the leading enterprise cl
 
 
 ## Available Tools (11)
-- **delete_file**: Delete a file from a bucket
-- **get_account_info**: Retrieve Qiniu account profile
 - **get_bucket_domains**: Get domains associated with a specific bucket
 - **get_cdn_bandwidth**: Get CDN bandwidth statistics
 - **get_file_stat**: Get metadata for a specific file
@@ -46,6 +44,8 @@ Connect your AI agents to **Qiniu Cloud** (七牛云), the leading enterprise cl
 - **list_files**: List files within a bucket
 - **persistent_file_op**: Trigger persistent file processing (transcoding, etc.)
 - **refresh_cdn_urls**: Refresh CDN cache for specific URLs
+- **delete_file**: Delete a file from a bucket
+- **get_account_info**: Retrieve Qiniu account profile
 
 
 ## 💬 Prompt Examples
