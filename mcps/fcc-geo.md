@@ -22,10 +22,10 @@ Ideal for real estate analysts, logistics AI systems, urban planners, and spectr
 
 
 ## Available Tools (2)
+- **get_fcc_areas_by_lat_lon**: Retrieve FCC telecommunication boundaries (CMA, PEA, EAG) intersecting given coordinates
 - **get_census_block_by_lat_lon**: Essential for mapping physical spaces to regulatory regions.
 
 Convert exact geographic coordinates into US Census Blocks, Counties, and FIPS codes
-- **get_fcc_areas_by_lat_lon**: Retrieve FCC telecommunication boundaries (CMA, PEA, EAG) intersecting given coordinates
 
 
 ## 💬 Prompt Examples

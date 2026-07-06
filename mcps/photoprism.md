@@ -34,12 +34,12 @@ Connect your self-hosted **PhotoPrism** instance to any AI agent to interact wit
 
 ## Available Tools (7)
 - **create_oauth_token**: Create an OAuth2 token
-- **get_oauth_authorize**: Get OAuth2 Authorization
 - **get_oauth_userinfo**: Get OAuth2 UserInfo
 - **get_thumbnail_url**: Get a thumbnail image URL for a photo
 - **get_video_url**: Get a video streaming URL
 - **revoke_oauth_token**: Revoke an OAuth2 token
 - **search_photos**: Search for photos in PhotoPrism
+- **get_oauth_authorize**: Get OAuth2 Authorization
 
 
 ## 💬 Prompt Examples

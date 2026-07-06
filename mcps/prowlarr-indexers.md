@@ -34,15 +34,15 @@ Connect your **Prowlarr** instance to any AI agent and take full control of your
 
 
 ## Available Tools (8)
-- **add_indexer**: Use get_indexer_schema to find the correct fields.
-
-Add a new indexer
-- **delete_indexer**: Delete an indexer
 - **get_indexer**: Get details of a specific indexer
 - **list_indexers**: List all configured indexers
 - **get_indexer_schema**: Get templates for all supported indexers
 - **get_indexer_status**: Get indexer health status
 - **test_indexer**: Test an indexer configuration
+- **add_indexer**: Use get_indexer_schema to find the correct fields.
+
+Add a new indexer
+- **delete_indexer**: Delete an indexer
 - **update_indexer**: Update an existing indexer
 
 

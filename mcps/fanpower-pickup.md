@@ -35,18 +35,18 @@ Connect your **FanPower (now PickUp)** engagement account to any AI agent and ta
 
 
 ## Available Tools (12)
-- **get_event_details**: Get details for a specific event
-- **get_fan_profile**: Get the profile of a specific fan
-- **get_leaderboard**: Get the fan leaderboard for engagement scores
-- **get_me**: Get current API user identity
-- **get_pick_details**: Get details for a specific fan pick
-- **get_question**: Get details for a specific engagement question
 - **get_reward_details**: Get details for a specific reward
 - **list_events**: List sports or esports events with interactive content
 - **list_fans**: List registered fans and participants
 - **list_picks**: List fan picks (answers) for interactive content
 - **list_questions**: List all interactive fan engagement questions
 - **list_rewards**: List available rewards and achievements
+- **get_event_details**: Get details for a specific event
+- **get_fan_profile**: Get the profile of a specific fan
+- **get_leaderboard**: Get the fan leaderboard for engagement scores
+- **get_me**: Get current API user identity
+- **get_pick_details**: Get details for a specific fan pick
+- **get_question**: Get details for a specific engagement question
 
 
 ## 💬 Prompt Examples

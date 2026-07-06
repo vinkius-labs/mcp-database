@@ -35,6 +35,7 @@ Connect your **CaptionHub** account to any AI agent and orchestrate your video l
 
 
 ## Available Tools (10)
+- **list_webhooks**: List all active webhooks
 - **approve_captions**: Approve a caption set for a specific language
 - **archive_project**: Archive a project permanently
 - **create_project**: Create a new captioning project
@@ -42,7 +43,6 @@ Connect your **CaptionHub** account to any AI agent and orchestrate your video l
 - **get_account_info**: Retrieve core account information
 - **get_project_details**: Get details of a specific project
 - **list_projects**: List all video captioning projects
-- **list_webhooks**: List all active webhooks
 - **transcribe_video**: Trigger AI auto-transcription for a project
 - **update_project**: Update project metadata
 

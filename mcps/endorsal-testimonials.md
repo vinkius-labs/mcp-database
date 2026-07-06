@@ -33,9 +33,6 @@ Integrate **Endorsal**, the fully automated testimonial collection platform, dir
 
 
 ## Available Tools (10)
-- **quick_social_proof_audit**: Retrieve a high-level summary of testimonials and widget activity
-- **approve_pending_testimonial**: Approve a pending testimonial for public display
-- **get_endorsal_account_metadata**: Retrieve metadata and limits for your Endorsal account
 - **get_testimonial_details**: Get full content and metadata for a specific testimonial
 - **list_pending_testimonials**: Identify testimonials that are currently awaiting approval
 - **list_account_properties**: List all properties (websites/brands) managed in your account
@@ -45,6 +42,9 @@ Integrate **Endorsal**, the fully automated testimonial collection platform, dir
 
 List all display widgets configured in your account
 - **search_testimonials_by_keyword**: Search for testimonials using a customer name or testimonial keyword
+- **quick_social_proof_audit**: Retrieve a high-level summary of testimonials and widget activity
+- **approve_pending_testimonial**: Approve a pending testimonial for public display
+- **get_endorsal_account_metadata**: Retrieve metadata and limits for your Endorsal account
 
 
 ## 💬 Prompt Examples

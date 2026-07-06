@@ -34,16 +34,16 @@ Connect your **Bilflo** account to any AI agent and orchestrate your staffing, r
 
 
 ## Available Tools (10)
+- **list_direct_hires**: List all direct hires
+- **list_overtime_rules**: List overtime rules
+- **list_placements**: List all placements
+- **list_timecards**: List all timecards
 - **get_client**: Get specific client details
 - **get_contractor**: Get specific contractor details
 - **get_direct_hire**: Get specific direct hire details
 - **get_timecard**: Get specific timecard details
 - **list_clients**: List all clients
 - **list_contractors**: List all contractors
-- **list_direct_hires**: List all direct hires
-- **list_overtime_rules**: List overtime rules
-- **list_placements**: List all placements
-- **list_timecards**: List all timecards
 
 
 ## 💬 Prompt Examples

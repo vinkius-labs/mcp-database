@@ -30,10 +30,10 @@ The **Ask Kodiak MCP Server** brings deep commercial insurance intelligence dire
 
 ## Available Tools (7)
 - **get_account_check**: Verify Ask Kodiak account connection
+- **list_companies**: List insurance carriers and companies
 - **get_company_products**: List all products offered by a specific company
 - **get_product**: Get full appetite and details for an insurance product
 - **list_classifications**: Search for industry classifications
-- **list_companies**: List insurance carriers and companies
 - **list_products**: Search for commercial insurance products
 - **suggest_naics**: Get NAICS code suggestions based on a query
 

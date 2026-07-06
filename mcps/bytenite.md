@@ -35,13 +35,13 @@ Connect your **ByteNite** account to any AI agent and orchestrate your video enc
 
 
 ## Available Tools (10)
+- **list_apps**: List all available apps in the ByteNite ecosystem
 - **create_encoding_job**: Start a new video encoding job
 - **get_account_info**: Retrieve core account/profile statistics
 - **get_app**: Get details of a specific app
 - **get_encoding_job**: Get details and progress of a specific encoding job
 - **get_system_info**: Retrieve core system information and health
 - **get_template**: Get details of a specific encoding template
-- **list_apps**: List all available apps in the ByteNite ecosystem
 - **list_storage_buckets**: List all configured storage buckets
 - **list_encoding_jobs**: List all video encoding jobs
 - **list_templates**: List all encoding templates

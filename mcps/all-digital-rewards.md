@@ -36,8 +36,8 @@ Connect your **All Digital Rewards (RewardSTACK™)** account to your AI agent t
 
 ## Available Tools (10)
 - **list_programs**: List incentive programs
-- **get_program_details**: Get program metadata
 - **list_participants**: List reward participants
+- **get_program_details**: Get program metadata
 - **get_participant_details**: Get participant profile
 - **create_participant**: Enroll new user
 - **issue_points**: Reward behavior with points

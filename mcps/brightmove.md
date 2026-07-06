@@ -35,13 +35,13 @@ Connect your **BrightMove ATS** account to any AI agent and orchestrate your rec
 
 
 ## Available Tools (10)
+- **list_jobs**: List all job postings
 - **get_applicant**: Get specific applicant details
 - **get_company_info**: Retrieve core company information
 - **get_recruitment_dashboard**: Retrieve high-level recruitment dashboard data
 - **get_job**: Get details of a specific job
 - **list_activities**: List recruitment activities
 - **list_applicants**: List all applicants/candidates
-- **list_jobs**: List all job postings
 - **list_placements**: List job placements
 - **list_references**: List references for a specific applicant
 - **list_user_accounts**: List user accounts in the company

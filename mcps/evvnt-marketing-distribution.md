@@ -33,9 +33,6 @@ Integrate **Evvnt**, the leading event marketing and distribution platform, dire
 
 
 ## Available Tools (10)
-- **get_evvnt_account_metadata**: Retrieve metadata and limits for your Evvnt account
-- **get_event_distribution_reports**: Get distribution and performance reports for a specific event
-- **get_event_detailed_data**: Get detailed settings and distribution information for a specific event
 - **quick_event_marketing_audit**: Retrieve a high-level summary of events and distribution reach
 - **list_event_categories**: List all event categories supported by Evvnt
 - **list_marketing_events**: List all events managed in your Evvnt account
@@ -43,6 +40,9 @@ Integrate **Evvnt**, the leading event marketing and distribution platform, dire
 - **list_draft_marketing_events**: Identify events that are currently in a "Draft" or "Pending" status
 - **list_successfully_distributed_events**: Identify events that have been successfully distributed to the partner network
 - **list_saved_venues**: List all saved venues and locations in your account
+- **get_evvnt_account_metadata**: Retrieve metadata and limits for your Evvnt account
+- **get_event_distribution_reports**: Get distribution and performance reports for a specific event
+- **get_event_detailed_data**: Get detailed settings and distribution information for a specific event
 
 
 ## 💬 Prompt Examples

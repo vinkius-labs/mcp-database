@@ -39,10 +39,10 @@ Connect your **AfterLogic Aurora** account to your AI agent to unlock profession
 - **list_messages**: Requires a folder path from list_folders.
 
 Retrieve recent emails contained within a specified AfterLogic mail folder
-- **send_email**: Compose and send an outbound email securely via the AfterLogic Web API
 - **check_account_exists**: Requires Admin rights.
 
 Verify if an email address is actively provisioned on the AfterLogic server
+- **send_email**: Compose and send an outbound email securely via the AfterLogic Web API
 - **list_domains**: Requires Admin rights.
 
 Retrieve all active custom domains mapped to the AfterLogic server instance

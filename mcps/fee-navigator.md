@@ -36,7 +36,6 @@ Connect your **Fee Navigator** account to any AI agent and take full control of 
 
 
 ## Available Tools (12)
-- **analyze_statement**: Trigger AI analysis for an uploaded statement
 - **get_account_info**: Get Fee Navigator account details
 - **get_audit**: Get details for a specific audit
 - **get_industry_stats**: Get merchant service industry savings benchmarks
@@ -48,6 +47,7 @@ Connect your **Fee Navigator** account to any AI agent and take full control of 
 - **list_proposals**: List all savings proposals
 - **list_recent_activities**: List recent merchant analysis activities
 - **upload_statement**: Upload a merchant statement for analysis
+- **analyze_statement**: Trigger AI analysis for an uploaded statement
 
 
 ## 💬 Prompt Examples

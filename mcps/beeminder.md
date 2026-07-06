@@ -34,15 +34,15 @@ Connect your **Beeminder** account to any AI agent and integrate goal tracking i
 
 
 ## Available Tools (10)
+- **list_datapoints**: List datapoints for a goal
+- **list_goals**: List all active Beeminder goals
+- **refresh_goal**: Trigger a refresh for a goal
 - **add_datapoint**: Add a new datapoint to a goal
 - **delete_datapoint**: Delete a datapoint
 - **get_goal_status**: Check the current status of a goal
 - **get_goal**: Get specific goal details
 - **get_user_info**: Get Beeminder user profile
 - **list_charges**: List recent charges/pledges
-- **list_datapoints**: List datapoints for a goal
-- **list_goals**: List all active Beeminder goals
-- **refresh_goal**: Trigger a refresh for a goal
 - **update_datapoint**: Update an existing datapoint
 
 

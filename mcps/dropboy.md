@@ -33,12 +33,12 @@ Integrate **DROPBOY**, the advanced logistics and delivery management platform, 
 
 
 ## Available Tools (10)
+- **list_fleet_drivers**: List all drivers registered in your DROPBOY organization
+- **list_active_deliveries**: Identify orders that are currently in the "In Progress" or "Out for Delivery" status
 - **get_dropboy_account_metadata**: Retrieve metadata and limits for your DROPBOY account
 - **get_driver_profile**: Get full profile and route history for a specific driver
 - **get_order_details**: Get detailed information and real-time status for a specific order
 - **quick_fleet_status_audit**: Retrieve a high-level summary of fleet activity and vehicle availability
-- **list_fleet_drivers**: List all drivers registered in your DROPBOY organization
-- **list_active_deliveries**: Identify orders that are currently in the "In Progress" or "Out for Delivery" status
 - **list_logistics_orders**: List all logistics and delivery orders in your DROPBOY account
 - **list_latest_logistics_orders**: Identify the most recently created delivery orders
 - **list_fleet_vehicles**: List all vehicles registered in your DROPBOY fleet

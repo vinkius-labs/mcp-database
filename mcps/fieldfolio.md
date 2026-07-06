@@ -32,6 +32,10 @@ Fieldfolio is a leading B2B wholesale marketplace. This MCP server allows your A
 
 
 ## Available Tools (12)
+- **list_products**: List all products in your wholesale catalog
+- **list_webhooks**: List all configured webhooks
+- **search_catalog**: Search the wholesale catalog by keyword
+- **update_inventory**: Update inventory quantity for a specific product
 - **get_customer**: Get details for a specific retail customer
 - **get_me**: Get details for the authorized seller account
 - **get_order**: Get details for a specific wholesale order
@@ -40,10 +44,6 @@ Fieldfolio is a leading B2B wholesale marketplace. This MCP server allows your A
 - **list_customers**: List all retail customers
 - **list_inventory**: List inventory levels for all products
 - **list_orders**: List all wholesale orders
-- **list_products**: List all products in your wholesale catalog
-- **list_webhooks**: List all configured webhooks
-- **search_catalog**: Search the wholesale catalog by keyword
-- **update_inventory**: Update inventory quantity for a specific product
 
 
 ## 💬 Prompt Examples
