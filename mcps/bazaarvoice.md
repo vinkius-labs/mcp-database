@@ -34,7 +34,6 @@ Connect your **Bazaarvoice** account to any AI agent and gain deep insights into
 
 
 ## Available Tools (10)
-- **get_product**: Get specific product details
 - **get_question**: Get specific question details
 - **get_review**: Get specific review details
 - **get_statistics**: Get review statistics for a product
@@ -44,6 +43,7 @@ Connect your **Bazaarvoice** account to any AI agent and gain deep insights into
 - **list_questions**: List customer questions
 - **list_reviews**: List product reviews
 - **search_reviews**: Search reviews by text
+- **get_product**: Get specific product details
 
 
 ## 💬 Prompt Examples

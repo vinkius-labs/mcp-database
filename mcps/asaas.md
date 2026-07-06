@@ -29,12 +29,12 @@ The **Asaas MCP Server** provides a powerful natural language interface to your 
 
 
 ## Available Tools (8)
+- **list_payments**: List all payments (charges)
 - **create_customer**: Register a new customer in Asaas
 - **create_payment**: Create a new payment (charge) for a customer
 - **get_account_check**: Verify Asaas account connection
 - **get_balance**: Get current financial balance in Asaas
 - **list_customers**: List all registered customers in Asaas
-- **list_payments**: List all payments (charges)
 - **list_subscriptions**: List all active subscriptions
 - **list_transfers**: List all financial transfers
 

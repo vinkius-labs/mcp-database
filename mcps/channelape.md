@@ -37,9 +37,9 @@ Connect your **ChannelApe** business account to any AI agent and orchestrate you
 
 ## Available Tools (8)
 - **get_ape_business_info**: Retrieve business profile and settings
+- **list_ape_channels**: List connected sales channels
 - **get_ape_order_details**: Get detailed information for a specific order
 - **get_ape_product_details**: Get details for a specific product
-- **list_ape_channels**: List connected sales channels
 - **list_ape_inventory**: List inventory levels across distribution centers
 - **list_ape_orders**: List orders associated with the business
 - **list_ape_products**: List products in the business catalog

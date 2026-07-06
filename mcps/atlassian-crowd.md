@@ -37,12 +37,12 @@ Integrate **Atlassian Crowd**, the single sign-on and identity management applic
 - **get_group_details**: Get details for a specific group
 - **get_user_details**: Get full profile and attributes for a specific user
 - **list_group_members**: List all users who are members of a specific group
-- **list_all_groups**: List all security and organizational groups
 - **list_inactive_users**: List all disabled or inactive user accounts
 - **list_user_memberships**: List all groups a specific user belongs to
 - **list_active_users**: List all active users managed in Crowd
 - **search_users_by_name**: Search for users whose name starts with a prefix
 - **search_users_by_attribute**: Search for users using a CQL-like restriction string
+- **list_all_groups**: List all security and organizational groups
 
 
 ## 💬 Prompt Examples

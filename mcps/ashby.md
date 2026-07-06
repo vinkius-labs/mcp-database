@@ -31,10 +31,10 @@ The **Ashby MCP Server** provides a direct natural language interface to your As
 ## Available Tools (10)
 - **get_account_check**: Verify Ashby account connection
 - **get_application_info**: Get details for a specific application
+- **list_candidates**: List all candidates in Ashby
 - **get_candidate_info**: Get detailed information for a specific candidate
 - **get_job_info**: Get detailed information for a specific job
 - **list_applications**: List all job applications
-- **list_candidates**: List all candidates in Ashby
 - **list_interviews**: List all interviews
 - **list_jobs**: Supports status filtering.
 

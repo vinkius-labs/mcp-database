@@ -33,9 +33,7 @@ Connect your **AudioStack** account to any AI agent and build a complete AI-driv
 
 
 ## Available Tools (10)
-- **get_voice_details**: Get detailed information for a specific voice
 - **list_media_files**: List your uploaded and generated media files
-- **list_sound_templates**: List available music and sound design templates
 - **list_voices**: You can filter by language, gender, or provider.
 
 List and search for available AI voices
@@ -45,6 +43,8 @@ List and search for available AI voices
 - **create_story**: Create a long-form audio story
 - **get_audioform**: Get the status and final URL of an Audioform
 - **get_usage_analytics**: Get account usage metrics
+- **get_voice_details**: Get detailed information for a specific voice
+- **list_sound_templates**: List available music and sound design templates
 
 
 ## 💬 Prompt Examples

@@ -39,11 +39,11 @@ Connect your **Bizzabo** account to any AI agent and orchestrate your events, re
 - **get_registration**: Get specific registration details
 - **get_session**: Get details of a specific session
 - **list_contacts**: List all contacts across events
-- **list_events**: List all Bizzabo events
 - **list_registration_types**: List ticket types for an event
 - **list_registrations**: List registrants for a specific event
-- **list_sessions**: List sessions for an event
 - **list_speakers**: List speakers for an event
+- **list_events**: List all Bizzabo events
+- **list_sessions**: List sessions for an event
 
 
 ## 💬 Prompt Examples

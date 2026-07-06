@@ -36,16 +36,6 @@ Connect your **Amplenote** account to any AI agent to fuse your personal knowled
 - **list_notes**: Use as the primary way to browse the entire knowledge base.
 
 List all notes in the Amplenote workspace
-- **get_note**: Essential for reading or analyzing a specific document.
-
-Retrieve the full content and metadata of a specific note by UUID
-- **create_note**: Use for adding documentation, meeting notes, or project plans.
-
-Create a new note with a title and Markdown body content
-- **update_note**: Use for editing content, fixing errors, or appending information.
-
-Update an existing note title and/or Markdown body by UUID
-- **delete_note**: Permanently delete a note by UUID
 - **search_notes**: Use when the user wants to find content by keyword.
 
 Full-text search across all Amplenote notes and tasks
@@ -67,6 +57,16 @@ List all tags used across notes and tasks
 - **get_note_actions**: Use to discover what operations can be performed on a note.
 
 Retrieve available actions for a specific note
+- **get_note**: Essential for reading or analyzing a specific document.
+
+Retrieve the full content and metadata of a specific note by UUID
+- **create_note**: Use for adding documentation, meeting notes, or project plans.
+
+Create a new note with a title and Markdown body content
+- **update_note**: Use for editing content, fixing errors, or appending information.
+
+Update an existing note title and/or Markdown body by UUID
+- **delete_note**: Permanently delete a note by UUID
 
 
 ## 💬 Prompt Examples

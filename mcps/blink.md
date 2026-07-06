@@ -35,16 +35,16 @@ Connect your **BL.INK** account to any AI agent and orchestrate your enterprise 
 
 
 ## Available Tools (10)
-- **delete_link**: Delete a link
-- **get_account_info**: Get authenticated user account info
-- **get_domain**: Get details of a specific domain
-- **get_link_analytics**: Get click analytics for a specific link
 - **get_link**: Get details of a specific link
 - **list_domains**: List all available domains
 - **list_links**: List all managed links
 - **list_tags**: List all link tags
 - **shorten_link**: Shorten a long URL using BL.INK
 - **update_link**: Update an existing link
+- **delete_link**: Delete a link
+- **get_account_info**: Get authenticated user account info
+- **get_domain**: Get details of a specific domain
+- **get_link_analytics**: Get click analytics for a specific link
 
 
 ## 💬 Prompt Examples

@@ -35,11 +35,11 @@ Transform your business administration with **Axonaut**, the all-in-one ERP desi
 
 
 ## Available Tools (12)
+- **list_contacts**: List all contacts
 - **create_task**: Create a new task
 - **get_account_check**: Verify Axonaut connection and get current user info
 - **get_company**: Get details for a specific company
 - **list_companies**: List all companies in Axonaut
-- **list_contacts**: List all contacts
 - **list_expenses**: List all expenses
 - **list_invoices**: List all invoices
 - **list_orders**: List all orders

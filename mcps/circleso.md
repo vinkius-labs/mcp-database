@@ -36,14 +36,14 @@ Connect your **Circle.so** community to any AI agent and take full control of yo
 
 
 ## Available Tools (8)
-- **list_community_posts**: List recent posts in the community
-- **list_space_groups**: List groups that organize spaces
 - **list_community_spaces**: List all spaces (sub-communities) in the community
 - **list_community_topics**: List discussion topics
 - **get_my_circle_profile**: Retrieve information about the authenticated admin user
 - **list_post_comments**: List comments for a specific post
 - **list_community_events**: List upcoming and past community events
 - **list_community_members**: List all members in the community
+- **list_community_posts**: List recent posts in the community
+- **list_space_groups**: List groups that organize spaces
 
 
 ## 💬 Prompt Examples

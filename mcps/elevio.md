@@ -33,7 +33,6 @@ Integrate **Elevio**, the leading customer education and knowledge management pl
 
 
 ## Available Tools (10)
-- **get_elevio_account_metadata**: Retrieve metadata and limits for your Elevio account
 - **get_article_details**: Get detailed settings and full content for a specific article
 - **quick_content_health_audit**: Retrieve a high-level summary of article and category volumes
 - **list_knowledge_articles**: List all articles in your Elevio knowledge base
@@ -43,6 +42,7 @@ Integrate **Elevio**, the leading customer education and knowledge management pl
 - **list_active_modules**: List all Elevio assistant modules (e.g. support, search, tickets)
 - **list_latest_article_updates**: Identify the most recently created or updated articles
 - **search_knowledge_articles**: Search for articles using a title or keyword
+- **get_elevio_account_metadata**: Retrieve metadata and limits for your Elevio account
 
 
 ## 💬 Prompt Examples

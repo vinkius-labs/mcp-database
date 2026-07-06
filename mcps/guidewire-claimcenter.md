@@ -37,13 +37,13 @@ Connect your **Guidewire ClaimCenter** account to any AI agent and take full con
 
 ## Available Tools (8)
 - **list_claim_activities**: List current activities and tasks across all claims
-- **list_claimcenter_claims**: List insurance claims from Guidewire ClaimCenter
 - **list_claim_contacts**: List shared contacts (claimants, vendors, providers)
+- **list_claim_notes**: List internal notes for a specific claim
+- **get_claim_details**: Get detailed information for a specific claim
+- **list_claimcenter_claims**: List insurance claims from Guidewire ClaimCenter
 - **list_claim_documents**: List uploaded documents for a specific claim
 - **list_claim_exposures**: List exposures associated with a specific claim
-- **list_claim_notes**: List internal notes for a specific claim
 - **list_claimcenter_users**: List internal users and claim adjusters
-- **get_claim_details**: Get detailed information for a specific claim
 
 
 ## 💬 Prompt Examples

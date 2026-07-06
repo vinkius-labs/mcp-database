@@ -30,6 +30,7 @@ List bookings
 
 List bookable items
 - **get_item**: Get item details
+- **get_account**: Get account info
 - **check_availability**: Check availability
 - **list_categories**: With item counts.
 
@@ -37,7 +38,6 @@ List categories
 - **search_customers**: Returns contact, booking history, total spend, and waivers on file.
 
 Search customers
-- **get_account**: Get account info
 
 
 ## 💬 Prompt Examples

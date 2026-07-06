@@ -35,9 +35,9 @@ The **Appbot MCP Server** provides deep insights into your app's user feedback. 
 
 ## Available Tools (10)
 - **get_account_info**: Retrieve Appbot account details and connection status
+- **list_apps**: List all apps tracked by your team in Appbot
 - **get_review_details**: Get complete details for a single specific review
 - **get_reviews_by_custom_topic**: Retrieve reviews associated with a specific custom topic
-- **list_apps**: List all apps tracked by your team in Appbot
 - **list_countries**: List countries available for filtering reviews
 - **list_custom_topics**: List user-defined custom topics set up in the Appbot dashboard
 - **list_languages**: List all languages supported by Appbot for sentiment analysis

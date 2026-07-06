@@ -33,7 +33,6 @@ Integrate **Determ** (formerly **Mediatoolkit**), the powerful media monitoring 
 
 
 ## Available Tools (10)
-- **search_mentions_by_keyword**: Search for specific keywords within the mentions of a monitoring query
 - **get_account_metadata**: Retrieve settings and limits for your Determ account
 - **get_mention_details**: Get full content and technical metadata for a specific media mention
 - **get_monitoring_query_details**: Get detailed settings and status for a specific monitoring query
@@ -43,6 +42,7 @@ Integrate **Determ** (formerly **Mediatoolkit**), the powerful media monitoring 
 - **list_recent_high_reach_mentions**: List only the mentions with the highest estimated reach
 - **list_analytics_reports**: List all available analytics and media monitoring reports
 - **list_top_media_sources**: Identify the media sources with the highest volume of mentions (mock logic)
+- **search_mentions_by_keyword**: Search for specific keywords within the mentions of a monitoring query
 
 
 ## 💬 Prompt Examples

@@ -37,6 +37,8 @@ Link your **Amplience** headless CMS to any intelligent AI agent to completely r
 - **delete_content_item**: Requires version validation before deletion.
 
 Permanently delete a content item from the repository database
+- **publish_content_item**: Publish a specific content item version to the live delivery CDN
+- **update_content_item**: Update an existing content item data structure matching its current schema
 - **get_content_item**: Retrieve a specific content item configuration and its schema revision lock
 - **list_content_items**: Retrieve paginated content items from a specific repository
 - **get_delivery_content**: Retrieve the exact structural matching verifying Delivery CDN blocks
@@ -45,8 +47,6 @@ Permanently delete a content item from the repository database
 
 List all accessible Amplience Hubs (environments)
 - **list_repositories**: List all content repositories within a specific Hub
-- **publish_content_item**: Publish a specific content item version to the live delivery CDN
-- **update_content_item**: Update an existing content item data structure matching its current schema
 
 
 ## 💬 Prompt Examples

@@ -34,16 +34,16 @@ Connect your **Bexio** account to any AI agent and orchestrate your business wor
 
 
 ## Available Tools (10)
-- **create_contact**: Create a new contact
-- **get_contact**: Get specific contact details
-- **get_invoice**: Get specific invoice details
-- **list_contacts**: List all contacts
 - **list_invoices**: List all invoices
 - **list_items**: List all products/items
 - **list_offers**: List all offers
 - **list_orders**: List all orders
 - **list_projects**: List all projects
 - **list_users**: List all Bexio users
+- **create_contact**: Create a new contact
+- **get_contact**: Get specific contact details
+- **get_invoice**: Get specific invoice details
+- **list_contacts**: List all contacts
 
 
 ## 💬 Prompt Examples

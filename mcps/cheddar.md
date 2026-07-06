@@ -36,8 +36,8 @@ Connect your **Cheddar (formerly CheddarGetter)** account to any AI agent and ta
 
 
 ## Available Tools (8)
-- **add_cheddar_charge**: Add a one-time or quantity-based charge to a customer
 - **get_cheddar_customer_details**: Get detailed information for a specific customer
+- **add_cheddar_charge**: Add a one-time or quantity-based charge to a customer
 - **get_cheddar_product_info**: Retrieve core product and configuration information
 - **list_cheddar_customers**: List all customers for the product
 - **list_cheddar_invoices**: List recent customer invoices

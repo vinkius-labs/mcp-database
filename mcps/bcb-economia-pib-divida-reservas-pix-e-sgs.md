@@ -23,9 +23,6 @@ Brazilian economic data.
 
 
 ## Available Tools (7)
-- **get_pib**: Este é o indicador IBC-Br (Índice de Atividade Econômica do Banco Central), uma proxy mensal do PIB. Série SGS: 4380.
-
-Obter o PIB mensal do Brasil — variação percentual
 - **get_divida_pib**: Indicador fundamental de sustentabilidade fiscal. Série SGS: 4513.
 
 Obter a dívida líquida do setor público como % do PIB
@@ -44,6 +41,9 @@ Obter estatísticas do PIX — volume e quantidade de transações
 - **get_serie_bcb**: 000+ séries do Sistema Gerenciador de Séries Temporais (SGS). Pesquise códigos em bcb.gov.br/estabilidadefinanceira/seriestemporais. Exemplos: 11 (Selic), 433 (IPCA), 1 (Dólar).
 
 Consultar qualquer série temporal do BCB pelo código SGS
+- **get_pib**: Este é o indicador IBC-Br (Índice de Atividade Econômica do Banco Central), uma proxy mensal do PIB. Série SGS: 4380.
+
+Obter o PIB mensal do Brasil — variação percentual
 
 
 ## 💬 Prompt Examples
