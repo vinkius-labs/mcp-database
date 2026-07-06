@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire phone validation and identity v
 
 
 ## Available Tools (4)
-- **get_phone_line_type**: Identify if a phone number is mobile, landline, or other
 - **get_phone_carrier**: Get carrier information for a phone number
 - **get_phone_location**: Get geographic location details for a phone number
 - **validate_phone**: Verify if a phone number is valid and retrieve metadata
+- **get_phone_line_type**: Identify if a phone number is mobile, landline, or other
 
 
 ## 💬 Prompt Examples

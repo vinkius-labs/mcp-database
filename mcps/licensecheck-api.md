@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire software compliance and license
 
 
 ## Available Tools (4)
+- **list_all_licenses**: List all software licenses available in the database
 - **check_software_license**: Search for a software license by name or identifier
 - **check_api_status**: dev REST API.
 
 Check if the LicenseCheck service is operational
 - **get_license_details**: Get full details and legal metadata for a specific license by ID
-- **list_all_licenses**: List all software licenses available in the database
 
 
 ## 💬 Prompt Examples

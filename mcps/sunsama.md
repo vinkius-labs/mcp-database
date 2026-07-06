@@ -33,22 +33,22 @@ Integrate the mindful focus of the **Sunsama** daily planner directly into your 
 
 
 ## Available Tools (8)
-- **list_tasks**: You can filter by date.
-
-Lists all tasks in Sunsama
 - **create_task**: Provide text and an optional planned date.
 
 Creates a new task in Sunsama
+- **get_user_profile**: Retrieves the current user profile
+- **list_tasks**: You can filter by date.
+
+Lists all tasks in Sunsama
+- **update_task**: Updates an existing task
 - **delete_task**: This action is irreversible.
 
 Permanently deletes a task
-- **get_user_profile**: Retrieves the current user profile
 - **get_task_details**: Retrieves details for a specific task
 - **list_channels**: g., "Work", "Personal").
 
 Lists available Sunsama channels
 - **list_contexts**: Lists available Sunsama contexts
-- **update_task**: Updates an existing task
 
 
 ## 💬 Prompt Examples

@@ -33,6 +33,7 @@ Connect **Woodpecker** to your AI agent and manage your B2B cold email automatio
 
 
 ## Available Tools (8)
+- **list_webhooks**: List webhooks
 - **list_campaigns**: List campaigns
 - **get_campaign**: Get campaign
 - **list_prospects**: List prospects
@@ -40,7 +41,6 @@ Connect **Woodpecker** to your AI agent and manage your B2B cold email automatio
 - **get_campaign_stats**: Get campaign stats
 - **pause_campaign**: Pause campaign
 - **resume_campaign**: Resume campaign
-- **list_webhooks**: List webhooks
 
 
 ## 💬 Prompt Examples

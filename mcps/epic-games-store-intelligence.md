@@ -33,11 +33,6 @@ Equip your AI agent with real-time intelligence for the world's most dynamic PC 
 
 
 ## Available Tools (8)
-- **get_free_games**: List current and upcoming free games
-- **get_game_details**: Get detailed product info for a specific game
-- **list_new_releases**: List the most recent game releases
-- **list_games_on_sale**: List games currently on sale with discounts
-- **list_top_sellers**: List current best-selling games
 - **search_games_by_category**: Browse games by store category
 - **search_games_by_tag**: Common tags: RPG, Action, Adventure, Indie, Survival, Shooter, Puzzle.
 
@@ -45,6 +40,11 @@ Find games by tag or genre
 - **search_store_catalog**: Returns titles, prices, descriptions, seller info, and cover images.
 
 Search for games on the Epic Games Store
+- **get_free_games**: List current and upcoming free games
+- **get_game_details**: Get detailed product info for a specific game
+- **list_new_releases**: List the most recent game releases
+- **list_games_on_sale**: List games currently on sale with discounts
+- **list_top_sellers**: List current best-selling games
 
 
 ## 💬 Prompt Examples

@@ -40,16 +40,16 @@ No more manual navigation through complex Jira plugins to find a test script. Yo
 
 ## Available Tools (10)
 - **get_execution**: Retrieves full details of a Zephyr Scale test execution
-- **list_test_plans**: Lists all test plans in a Zephyr Scale project
-- **list_test_cases**: Provide a Jira project key (e.g. "PROJ"). Returns test case keys, names, and statuses. Paginated.
-
-Lists all test cases in a Zephyr Scale project
 - **get_test_case**: Retrieves full details of a Zephyr Scale test case
 - **list_test_cycles**: Test cycles group test runs for a release or sprint.
 
 Lists all test cycles in a Zephyr Scale project
 - **get_test_cycle**: Retrieves full details of a Zephyr Scale test cycle
 - **list_executions**: Lists all test executions in a Zephyr Scale project
+- **list_test_cases**: Provide a Jira project key (e.g. "PROJ"). Returns test case keys, names, and statuses. Paginated.
+
+Lists all test cases in a Zephyr Scale project
+- **list_test_plans**: Lists all test plans in a Zephyr Scale project
 - **list_folders**: Folder type must be TEST_CASE, TEST_CYCLE, or TEST_PLAN.
 
 Lists all folders for a specific type within a project

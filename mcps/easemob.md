@@ -35,7 +35,6 @@ Empower your AI agent to orchestrate your real-time communication infrastructure
 
 
 ## Available Tools (10)
-- **add_group_member**: Add group member
 - **create_group**: Create chat group
 - **delete_user**: Delete IM user
 - **get_chat_history**: Get chat history
@@ -45,6 +44,7 @@ Empower your AI agent to orchestrate your real-time communication infrastructure
 - **list_users**: List IM users
 - **register_user**: Register a new IM user
 - **send_text_message**: Send text message
+- **add_group_member**: Add group member
 
 
 ## 💬 Prompt Examples

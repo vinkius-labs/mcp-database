@@ -33,15 +33,15 @@ Extend the reach of your **Tactile CRM** databases directly into your AI convers
 
 
 ## Available Tools (9)
-- **list_companies**: Lists all companies (organizations) in the Tactile CRM
-- **get_company_details**: Retrieves details for a specific company
-- **list_contacts**: Lists all individual contacts (people) in the CRM
-- **get_contact_details**: Retrieves details for a specific individual contact
 - **list_opportunities**: Lists all sales opportunities (deals) in the pipeline
 - **get_opportunity_details**: Retrieves details for a specific sales opportunity
 - **list_activities**: Lists recent CRM activities (tasks, calls, emails)
 - **list_pipelines**: Lists available sales pipelines
 - **list_notes**: Lists general CRM notes
+- **list_companies**: Lists all companies (organizations) in the Tactile CRM
+- **get_company_details**: Retrieves details for a specific company
+- **list_contacts**: Lists all individual contacts (people) in the CRM
+- **get_contact_details**: Retrieves details for a specific individual contact
 
 
 ## 💬 Prompt Examples

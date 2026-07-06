@@ -35,9 +35,6 @@ Empower your AI agent to orchestrate your video entertainment and membership ins
 
 
 ## Available Tools (8)
-- **get_content_metadata**: Get video metadata
-- **get_order_info**: Get order details
-- **get_user_profile**: Get user information
 - **get_video_rankings**: g., hot, new).
 
 Get popular rankings
@@ -45,6 +42,9 @@ Get popular rankings
 - **list_user_orders**: List user orders
 - **list_video_categories**: List content categories
 - **search_video_content**: Search for movies/shows
+- **get_content_metadata**: Get video metadata
+- **get_order_info**: Get order details
+- **get_user_profile**: Get user information
 
 
 ## 💬 Prompt Examples

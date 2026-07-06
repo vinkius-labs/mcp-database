@@ -34,18 +34,6 @@ Connect to **NHTSA** (National Highway Traffic Safety Administration) and access
 
 
 ## Available Tools (13)
-- **decode_vin**: Returns comprehensive vehicle specifications from the NHTSA database.
-
-Decode a Vehicle Identification Number (VIN)
-- **get_models_for_make_year**: Useful for discovering what models a brand offered in a particular year.
-
-Get models for a manufacturer in a specific year
-- **get_car_seat_stations_by_zip**: Returns station name, address, phone, hours and appointment requirements. Useful for parents needing car seat safety checks.
-
-Find car seat inspection stations by ZIP code
-- **get_complaint_by_odi**: Returns failure description, consequences, remedy, component, mileage and dates.
-
-Get complaint details by ODI number
 - **get_complaints_by_vehicle**: Returns complaints filed by vehicle owners including component, failure description, consequences, mileage at failure and date. At least one parameter recommended.
 
 Search consumer complaints by make, model and year
@@ -61,6 +49,18 @@ Get all models for a specific manufacturer
 - **get_recalls_by_campaign**: Returns component, summary, consequence, remedy, manufacturer notes, dates and affected vehicle count.
 
 Get recall details by campaign number
+- **decode_vin**: Returns comprehensive vehicle specifications from the NHTSA database.
+
+Decode a Vehicle Identification Number (VIN)
+- **get_car_seat_stations_by_zip**: Returns station name, address, phone, hours and appointment requirements. Useful for parents needing car seat safety checks.
+
+Find car seat inspection stations by ZIP code
+- **get_complaint_by_odi**: Returns failure description, consequences, remedy, component, mileage and dates.
+
+Get complaint details by ODI number
+- **get_models_for_make_year**: Useful for discovering what models a brand offered in a particular year.
+
+Get models for a manufacturer in a specific year
 - **get_recalls_by_vehicle**: Returns recall details including campaign number, component affected, summary, remedy, manufacturer, dates and affected vehicle count. At least one parameter (make, model, year) is recommended.
 
 Search safety recalls by make, model and year

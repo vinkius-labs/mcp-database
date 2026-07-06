@@ -35,9 +35,9 @@ Equip your AI agent with real-time sports market intelligence via **The Odds API
 
 
 ## Available Tools (3)
-- **get_odds**: Get odds for a specific sport
 - **get_scores**: Get live and past scores
 - **list_sports**: List all available sports
+- **get_odds**: Get odds for a specific sport
 
 
 ## 💬 Prompt Examples

@@ -26,16 +26,16 @@ Grant your AI agent (like Claude or Cursor) absolute administrative observabilit
 
 
 ## Available Tools (8)
+- **list_users**: Lists all Showpad users
+- **get_user_details**: Retrieves details for a specific user
+- **list_divisions**: Lists all organizational divisions
+- **list_tags**: Lists all tags used for content classification
 - **list_assets**: Returns asset IDs and metadata.
 
 Lists all content assets in Showpad
 - **get_asset_details**: Retrieves details for a specific asset
 - **search_assets**: Searches for assets by keyword
 - **list_channels**: Lists all content channels
-- **list_users**: Lists all Showpad users
-- **get_user_details**: Retrieves details for a specific user
-- **list_divisions**: Lists all organizational divisions
-- **list_tags**: Lists all tags used for content classification
 
 
 ## 💬 Prompt Examples

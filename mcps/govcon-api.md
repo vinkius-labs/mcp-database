@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire business development and govern
 
 
 ## Available Tools (4)
-- **check_api_status**: Check if the GovCon service is operational
 - **get_procurement_details**: Get full details for a specific government opportunity by ID
 - **list_government_agencies**: List all government agencies registered in the GovCon database
 - **search_government_contracts**: Search for government contracts and procurement opportunities
+- **check_api_status**: Check if the GovCon service is operational
 
 
 ## 💬 Prompt Examples

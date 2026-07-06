@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire biological research and genomic
 
 
 ## Available Tools (4)
-- **check_api_status**: Check if the NCBI E-utilities service is operational
-- **get_ncbi_summary**: Get a summary for a specific NCBI sequence ID
-- **list_ncbi_databases**: List all available NCBI databases
 - **search_ncbi_sequences**: g., nuccore, protein) based on a query term.
 
 Search for biological sequences in an NCBI database
+- **check_api_status**: Check if the NCBI E-utilities service is operational
+- **get_ncbi_summary**: Get a summary for a specific NCBI sequence ID
+- **list_ncbi_databases**: List all available NCBI databases
 
 
 ## 💬 Prompt Examples

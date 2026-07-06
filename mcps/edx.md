@@ -35,13 +35,6 @@ Connect to **edX** and explore the world's largest online learning platform thro
 
 
 ## Available Tools (8)
-- **get_course**: Returns title, description, organization, level, subjects, pacing, estimated effort, prerequisites and available course runs.
-
-Get detailed info for a specific edX course
-- **get_course_run**: Get details for a specific course run
-- **get_course_runs**: Optionally filter by course key and status (upcoming, current, archived).
-
-Get course runs (scheduled offerings) for courses
 - **get_organizations**: Returns organization names, descriptions, logos and course counts. Includes Harvard, MIT, Berkeley, Google, IBM and many more.
 
 Get partner organizations that offer courses on edX
@@ -55,6 +48,13 @@ Search for online courses on edX
 - **search_programs**: Includes MicroMasters, Professional Certificates, XSeries and Bootcamps. Returns program titles, descriptions, course counts and type.
 
 Search for edX programs (MicroMasters, Professional Certificates, XSeries)
+- **get_course**: Returns title, description, organization, level, subjects, pacing, estimated effort, prerequisites and available course runs.
+
+Get detailed info for a specific edX course
+- **get_course_run**: Get details for a specific course run
+- **get_course_runs**: Optionally filter by course key and status (upcoming, current, archived).
+
+Get course runs (scheduled offerings) for courses
 
 
 ## 💬 Prompt Examples

@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your reading life and book research with **
 
 
 ## Available Tools (8)
-- **get_author_profile**: Get author details
-- **get_book_info**: Get book metadata
 - **get_series_metadata**: Get book series info
 - **get_user_public_profile**: Get user profile data
 - **get_user_reviews**: Get reviews for user
 - **get_user_shelves_list**: List user book shelves
 - **list_author_books**: List books by author
 - **search_books**: Search for books
+- **get_author_profile**: Get author details
+- **get_book_info**: Get book metadata
 
 
 ## 💬 Prompt Examples

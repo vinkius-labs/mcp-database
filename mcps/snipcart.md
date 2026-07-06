@@ -35,7 +35,6 @@ Stop digging through dashboard menus to figure out if your discount script is wo
 
 
 ## Available Tools (9)
-- **get_customer_details**: Retrieves details for a specific customer
 - **get_order_details**: Retrieves details for a specific order
 - **get_subscription_details**: Retrieves details for a specific subscription
 - **list_customers**: Lists all registered customers
@@ -46,6 +45,7 @@ Stop digging through dashboard menus to figure out if your discount script is wo
 - **update_order_status**: g., "Processed", "Shipped").
 
 Updates the status of an existing order
+- **get_customer_details**: Retrieves details for a specific customer
 
 
 ## 💬 Prompt Examples
