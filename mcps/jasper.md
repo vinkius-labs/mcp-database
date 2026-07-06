@@ -33,26 +33,9 @@ Connect **Jasper** to your AI agent and supercharge your marketing content produ
 
 
 ## Available Tools (20)
-- **get_usage**: Requires start/end dates in ISO format and granularity (day, week, hour).
-
-Get API usage statistics
-- **list_templates**: Each template includes its input schema for use with run_template.
-
-List content templates
-- **run_template**: Retrieve template input schemas via list_templates first, then pass the required inputs as JSON.
-
-Run a specific template
 - **run_command**: Pass a command (prompt) and optional context for grounding. Supports voice IDs for brand-consistent output and output language selection.
 
 Generate AI content with Jasper
-- **list_voices**: Use voice IDs with run_command or run_task for brand-consistent content.
-
-List brand voices
-- **get_voice**: Get voice details
-- **list_knowledge**: Use knowledge IDs with run_command or run_task for grounded output.
-
-List knowledge items
-- **list_styles**: List style guides
 - **list_documents**: Supports filtering by name, status, and date range.
 
 List workspace documents
@@ -65,12 +48,29 @@ List agent tasks
 
 Run an agent task
 - **list_users**: List workspace users
+- **list_templates**: Each template includes its input schema for use with run_template.
+
+List content templates
 - **get_template**: Get template details
+- **run_template**: Retrieve template input schemas via list_templates first, then pass the required inputs as JSON.
+
+Run a specific template
+- **list_voices**: Use voice IDs with run_command or run_task for brand-consistent content.
+
+List brand voices
+- **get_voice**: Get voice details
+- **list_knowledge**: Use knowledge IDs with run_command or run_task for grounded output.
+
+List knowledge items
 - **get_knowledge_item**: Get knowledge item details
 - **search_knowledge**: Matches by meaning and context, not just keywords.
 
 Search knowledge base
+- **list_styles**: List style guides
 - **get_style**: Get style guide details
+- **get_usage**: Requires start/end dates in ISO format and granularity (day, week, hour).
+
+Get API usage statistics
 - **list_audiences**: Use audience IDs with run_task for targeted content.
 
 List target audiences

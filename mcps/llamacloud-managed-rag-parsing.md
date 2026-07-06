@@ -35,12 +35,12 @@ Connect your **LlamaCloud** account to any AI agent and take full control of you
 
 
 ## Available Tools (6)
+- **create_parsing_upload**: Dispatch a file explicitly to LlamaParse
+- **get_parsing_result**: Retrieve the final markdown/rich-text extraction from LlamaParse
 - **list_pipelines**: List LlamaCloud deployed data pipelines
 - **get_pipeline**: Get configuration details for a specific pipeline
 - **list_projects**: List active LlamaCloud projects
 - **list_parsing_jobs**: List LlamaParse active parsing jobs tracking document ingestion
-- **create_parsing_upload**: Dispatch a file explicitly to LlamaParse
-- **get_parsing_result**: Retrieve the final markdown/rich-text extraction from LlamaParse
 
 
 ## 💬 Prompt Examples

@@ -35,9 +35,6 @@ Connect your **Lacework (FortiCNAPP)** account to any AI agent and take full con
 
 
 ## Available Tools (10)
-- **list_container_vulnerabilities**: Examines ECR/DockerHub registries or direct cluster deployments for images carrying critical inherited CVEs at the filesystem level before CI/CD promotion blocks.
-
-List static image vulnerabilities detected in Container Registries
 - **get_alert**: Extracts precisely what baseline behavior was deviated from, providing deep contextual metadata such as explicit AWS Accounts involved, offending Container Image SHAs, and correlated external IP anomalies.
 
 Get exact behavioral payloads and telemetry for an Alert
@@ -65,6 +62,9 @@ List logical Resource Groups managing Lacework architectures
 - **execute_query**: Produces bespoke output matrices tracking API keys bypassing IAM logic, anomalous login patterns, or Kubernetes process spawn trees.
 
 Execute an LQL Threat Hunting Query on-demand
+- **list_container_vulnerabilities**: Examines ECR/DockerHub registries or direct cluster deployments for images carrying critical inherited CVEs at the filesystem level before CI/CD promotion blocks.
+
+List static image vulnerabilities detected in Container Registries
 
 
 ## 💬 Prompt Examples

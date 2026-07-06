@@ -24,9 +24,6 @@ Connect **Salesforce Commerce** to any AI agent.
 
 
 ## Available Tools (8)
-- **sf_order_items**: Returns product name, quantity, unit price, total price, and description per line item. Use when the user asks "what is in this order?", needs to review order composition, or wants to verify pricing before activation.
-
-Get all line items of a specific Salesforce order — products, quantities, unit prices, and total prices per item
 - **sf_orders_by_status**: Use for order management: "how many draft orders need activation?", "show all activated orders", or for revenue analysis by order status.
 
 Get Salesforce orders filtered by status (Draft or Activated) for order management and fulfillment tracking
@@ -48,6 +45,9 @@ Search the Salesforce product catalog by name or product code to find items with
 - **sf_update_product**: Common operations: set IsActive to false to discontinue a product, change Family to reclassify, update Description, or rename. Only specified fields change.
 
 Update a product in the Salesforce catalog — change name, description, active status, product code, or family
+- **sf_order_items**: Returns product name, quantity, unit price, total price, and description per line item. Use when the user asks "what is in this order?", needs to review order composition, or wants to verify pricing before activation.
+
+Get all line items of a specific Salesforce order — products, quantities, unit prices, and total prices per item
 
 
 ## 💬 Prompt Examples

@@ -36,12 +36,6 @@ Perfect for **frequent travelers**, **urban commuters**, **executive assistants*
 
 
 ## Available Tools (9)
-- **cancel_ride**: Cancellation policies vary based on ride status - cancellations after driver assignment may incur fees. Use this to cancel rides that were booked by mistake or are no longer needed.
-
-Cancel an existing Lyft ride request
-- **get_cost_estimate**: Prices are in local currency (USD). Use this to compare costs across different Lyft products before booking.
-
-Get cost estimate for a Lyft ride between two locations
 - **get_eta_estimate**: Use this to compare how quickly different Lyft services can reach you. Lower minutes mean faster pickups.
 
 Get estimated arrival times for Lyft at a location
@@ -63,6 +57,12 @@ Request a new Lyft ride
 - **set_location**: Requires location ID, latitude, and longitude. Optionally include a display name. The location ID can be home, work, or any custom string. Returns the saved location details. Use this to manage your favorite pickup/dropoff spots.
 
 Save or update a location for the Lyft account
+- **cancel_ride**: Cancellation policies vary based on ride status - cancellations after driver assignment may incur fees. Use this to cancel rides that were booked by mistake or are no longer needed.
+
+Cancel an existing Lyft ride request
+- **get_cost_estimate**: Prices are in local currency (USD). Use this to compare costs across different Lyft products before booking.
+
+Get cost estimate for a Lyft ride between two locations
 
 
 ## 💬 Prompt Examples

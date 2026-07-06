@@ -36,9 +36,6 @@ Connect your **Mapbox** account to any AI agent and take full control of world-c
 
 
 ## Available Tools (10)
-- **get_directions**: Calculate driving, walking, or cycling directions between points
-- **get_elevation**: Query elevation data for a specific coordinate point
-- **search_places**: Search for places, addresses, or POIs using Mapbox Geocoding
 - **get_isochrones**: Calculate reachable areas within a specific travel time
 - **snap_to_road**: Snap noisy GPS traces sequentially to a road network
 - **get_distance_matrix**: Calculate a distance and travel time matrix between many points
@@ -46,6 +43,9 @@ Connect your **Mapbox** account to any AI agent and take full control of world-c
 - **reverse_geocode**: Perform reverse geocoding to find places or addresses at a specific coordinate
 - **geocoding_session**: Perform autocomplete geocoding operations attached to a session
 - **generate_static_map**: Generate a static map image URL centered on coordinates
+- **get_directions**: Calculate driving, walking, or cycling directions between points
+- **get_elevation**: Query elevation data for a specific coordinate point
+- **search_places**: Search for places, addresses, or POIs using Mapbox Geocoding
 
 
 ## 💬 Prompt Examples

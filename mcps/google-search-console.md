@@ -36,16 +36,16 @@ Stop wrestling with the Search Console UI. Your AI agent acts as your dedicated 
 
 
 ## Available Tools (10)
+- **list_sitemaps**: List submitted sitemaps for a site
+- **list_sites**: List verified sites in Search Console
+- **query_search_analytics**: Query search traffic data
+- **submit_sitemap**: Submit a new sitemap
 - **add_site**: Add a site to Search Console
 - **delete_site**: Remove a site from Search Console
 - **delete_sitemap**: Delete a submitted sitemap
 - **get_site**: Get details for a specific site
 - **get_sitemap**: Get details about a specific sitemap
 - **inspect_url**: Inspect the index status of a specific URL
-- **list_sitemaps**: List submitted sitemaps for a site
-- **list_sites**: List verified sites in Search Console
-- **query_search_analytics**: Query search traffic data
-- **submit_sitemap**: Submit a new sitemap
 
 
 ## 💬 Prompt Examples

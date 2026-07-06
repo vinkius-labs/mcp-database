@@ -33,12 +33,6 @@ Connect your AI to **Runway ML**, the pioneer in applied AI research shaping the
 
 
 ## Available Tools (10)
-- **cancel_task**: This action is irreversible.
-
-Cancels a running generation task
-- **gen3_turbo**: Quick 5-second video generation using Gen-3 Alpha Turbo
-- **gen4_turbo**: High-quality video generation using Gen-4 Turbo
-- **get_organization**: Retrieves Runway ML organization and credit details
 - **get_task**: Look for SUCCEEDED status and output URL.
 
 Retrieves the status and output of a generation task
@@ -51,6 +45,12 @@ Animates a still image into a video
 - **text_to_video**: Specify prompt, model, and duration (5 or 10). Returns a task ID.
 
 Generates a video from a text prompt
+- **cancel_task**: This action is irreversible.
+
+Cancels a running generation task
+- **gen3_turbo**: Quick 5-second video generation using Gen-3 Alpha Turbo
+- **gen4_turbo**: High-quality video generation using Gen-4 Turbo
+- **get_organization**: Retrieves Runway ML organization and credit details
 
 
 ## 💬 Prompt Examples

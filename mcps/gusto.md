@@ -23,10 +23,6 @@ Connect **Gusto** to any AI agent and streamline your entire HR and payroll oper
 
 
 ## Available Tools (10)
-- **list_companies**: List managed companies
-- **list_time_off_policies**: List time-off policies
-- **get_company**: Get company details
-- **list_employees**: List employees in a company
 - **get_employee**: Get employee details
 - **list_payrolls**: List payroll runs
 - **get_payroll**: Get payroll run details
@@ -35,6 +31,10 @@ Connect **Gusto** to any AI agent and streamline your entire HR and payroll oper
 - **list_benefits**: ) with enrollment info.
 
 List company benefits
+- **list_companies**: List managed companies
+- **list_time_off_policies**: List time-off policies
+- **get_company**: Get company details
+- **list_employees**: List employees in a company
 
 
 ## 💬 Prompt Examples

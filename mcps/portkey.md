@@ -36,12 +36,6 @@ Essential for **AI platform engineers**, **LLM ops teams**, **FinOps analysts**,
 
 
 ## Available Tools (10)
-- **create_policy**: Requires policy name, budget limit (USD or token count), and optionally the target users or virtual keys to restrict. Returns the created policy details. Use this to enforce cost controls on specific teams or projects using the gateway.
-
-Create a new budget or usage policy for AI gateway access
-- **delete_policy**: Requires the policy ID. Use this when a project ends or budget constraints are no longer needed.
-
-Remove a budget or usage policy from Portkey
 - **export_logs**: Optionally filters by date range, model, or user. Returns an export ID or download URL. Use this for audit trails, cost reporting, or offline analysis of AI usage patterns.
 
 Export AI gateway logs for external analysis or compliance reporting
@@ -66,6 +60,12 @@ List all budget and usage policies defined in Portkey
 - **submit_feedback**: Requires the log ID, rating (LIKE, DISLIKE, or UNLIKE to remove), and optional text feedback. Use this to build RLHF datasets or monitor user satisfaction with AI outputs.
 
 Submit user feedback (Like/Dislike) for a specific AI response log
+- **create_policy**: Requires policy name, budget limit (USD or token count), and optionally the target users or virtual keys to restrict. Returns the created policy details. Use this to enforce cost controls on specific teams or projects using the gateway.
+
+Create a new budget or usage policy for AI gateway access
+- **delete_policy**: Requires the policy ID. Use this when a project ends or budget constraints are no longer needed.
+
+Remove a budget or usage policy from Portkey
 
 
 ## 💬 Prompt Examples

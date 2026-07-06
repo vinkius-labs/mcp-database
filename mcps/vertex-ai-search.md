@@ -43,10 +43,10 @@ No more manual digging through complex documentation systems. Your AI agent beco
 Retrieves an AI-generated answer grounded in the documents of a data store
 - **get_datastore_details**: Retrieves configuration and metadata for a specific data store
 - **list_data_stores**: Lists all data stores in the Vertex AI Search collection
+- **list_search_engines**: Lists all search engines configured in the collection
 - **list_datastore_documents**: Provide data store and branch IDs.
 
 Lists all indexed documents within a specific data store branch
-- **list_search_engines**: Lists all search engines configured in the collection
 - **get_recommendations**: Provide a data store ID and user event data as a JSON object.
 
 Retrieves personalized recommendations based on user events

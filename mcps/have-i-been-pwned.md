@@ -33,13 +33,13 @@ Connect your AI agent to **Have I Been Pwned**, the internet's most trusted reso
 
 
 ## Available Tools (5)
+- **search_account_breaches**: Search for all data breaches an email or account has been involved in
+- **search_account_pastes**: Search for all public pastes (like Pastebin) containing the email or account
 - **check_password_safety**: Uses k-anonymity; your full password is never sent to the server.
 
 Check if a password has ever appeared in a data breach (safe, k-anonymity search)
 - **get_breach_details**: Get details for a specific data breach by name
 - **list_all_breaches**: List all data breaches currently recorded in the system
-- **search_account_breaches**: Search for all data breaches an email or account has been involved in
-- **search_account_pastes**: Search for all public pastes (like Pastebin) containing the email or account
 
 
 ## 💬 Prompt Examples

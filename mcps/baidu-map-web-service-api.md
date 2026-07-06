@@ -35,8 +35,6 @@ Empower your AI agent to orchestrate your geographic searches and location-based
 
 
 ## Available Tools (10)
-- **direction_driving**: Get driving directions
-- **direction_riding**: Get riding directions
 - **direction_transit**: Get transit directions
 - **direction_walking**: Get walking directions
 - **geocoding**: Convert address to coordinates
@@ -45,6 +43,8 @@ Empower your AI agent to orchestrate your geographic searches and location-based
 - **ip_location**: Get location by IP
 - **poi_search**: Search for Points of Interest
 - **reverse_geocoding**: Convert coordinates to address
+- **direction_driving**: Get driving directions
+- **direction_riding**: Get riding directions
 
 
 ## 💬 Prompt Examples

@@ -33,13 +33,13 @@ Connect your conversational assistant directly into **RudderStack**, the leading
 
 
 ## Available Tools (7)
-- **get_destination**: Retrieves details for a specific data destination
 - **get_source**: Retrieves details for a specific data source
 - **list_audiences**: Lists all defined user audiences
 - **list_connections**: Lists all source-to-destination connections
 - **list_destinations**: Lists all data destinations configured in RudderStack
 - **list_sources**: Lists all data sources configured in RudderStack
 - **list_tracking_plans**: Lists all tracking plans defined in the data catalog
+- **get_destination**: Retrieves details for a specific data destination
 
 
 ## 💬 Prompt Examples

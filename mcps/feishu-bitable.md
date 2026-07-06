@@ -35,9 +35,6 @@ Empower your AI agent to orchestrate your data with **Feishu Bitable** (Lark), t
 
 
 ## Available Tools (10)
-- **create_records**: Batch create records in a table
-- **delete_record**: Delete a record from a table
-- **get_base_info**: Get Bitable base information
 - **get_record_details**: Get record detailed data
 - **list_fields**: List fields in a table
 - **list_records**: List records in a table
@@ -47,6 +44,9 @@ Empower your AI agent to orchestrate your data with **Feishu Bitable** (Lark), t
 List views in a table
 - **search_records**: Search records with filter
 - **update_record**: Update an existing record
+- **create_records**: Batch create records in a table
+- **delete_record**: Delete a record from a table
+- **get_base_info**: Get Bitable base information
 
 
 ## 💬 Prompt Examples

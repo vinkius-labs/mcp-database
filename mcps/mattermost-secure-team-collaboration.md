@@ -36,7 +36,6 @@ Connect your **Mattermost** instance to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
-- **create_post**: Dispatch an automated Markdown payload explicitly into a Channel
 - **delete_post**: Changes the internal `delete_at` marker implicitly wiping visibility synchronously across all active UI clients leaving no front-end trace replacing caching bounds.
 
 Irreversibly vaporize an explicit text post off Mattermost arrays
@@ -56,6 +55,7 @@ Identify precise active Human/Bot constraints navigating the server
 - **update_post**: Substitutes literal byte contents appending explicit "(edited)" timestamps visibly preserving audit compliance capabilities inherently.
 
 Mutate global Chat String pre-existing records via HTTP PUT
+- **create_post**: Dispatch an automated Markdown payload explicitly into a Channel
 
 
 ## 💬 Prompt Examples

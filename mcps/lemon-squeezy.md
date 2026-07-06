@@ -34,10 +34,6 @@ Connect your **Lemon Squeezy** account to any AI agent to automate your software
 
 
 ## Available Tools (11)
-- **cancel_subscription**: The customer will retain access until the end of the current billing cycle.
-
-Cancel an active subscription
-- **list_all_customers**: List all customers
 - **get_customer_details**: Get details for a specific customer
 - **get_order_details**: Get details for a specific order
 - **get_product_details**: Get details for a specific product
@@ -47,6 +43,10 @@ Cancel an active subscription
 - **list_all_products**: List all products available in your account
 - **list_stores**: List all stores in your Lemon Squeezy account
 - **list_all_subscriptions**: List all active and historical subscriptions
+- **cancel_subscription**: The customer will retain access until the end of the current billing cycle.
+
+Cancel an active subscription
+- **list_all_customers**: List all customers
 
 
 ## 💬 Prompt Examples

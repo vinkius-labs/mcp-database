@@ -41,12 +41,12 @@ No need to scrape HTML or fiddle with complex Postman queries. Your AI agent bec
 - **get_tweet_volume**: Returns time-series buckets showing how many tweets match a query. Great for spotting spikes in brand mentions or trending topics.
 
 Get the volume of tweets matching a search query over the last 7 days, broken down by hour or day
-- **lookup_users_batch**: Pass usernames as a comma-separated string without the "@" symbol.
-
-Fetch profile details of multiple X (Twitter) users at once by their @usernames (up to 100)
 - **get_tweets_batch**: Pass IDs as a comma-separated string.
 
 Retrieve text and engagement metrics for multiple tweets at once by providing their IDs (up to 100)
+- **lookup_users_batch**: Pass usernames as a comma-separated string without the "@" symbol.
+
+Fetch profile details of multiple X (Twitter) users at once by their @usernames (up to 100)
 - **search_recent_tweets**: Provide a search query string.
 
 Search for recent public tweets (up to last 7 days) using keywords, hashtags, or handles
