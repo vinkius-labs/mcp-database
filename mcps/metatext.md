@@ -28,16 +28,16 @@ Connect your **Metatext** account to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
-- **create_dataset_record**: Create a new record in a dataset
-- **get_account_info**: Get account information
 - **get_dataset_details**: Get details for a specific dataset
 - **get_model_details**: Get details for a specific model
-- **list_nlp_datasets**: List all datasets
 - **list_model_deployments**: List active model deployments
 - **list_nlp_models**: List all trained NLP models
 - **list_dataset_records**: List records in a dataset
 - **run_model_inference**: Run prediction on a model
 - **search_nlp_models**: Search models by name
+- **create_dataset_record**: Create a new record in a dataset
+- **get_account_info**: Get account information
+- **list_nlp_datasets**: List all datasets
 
 
 ## 💬 Prompt Examples

@@ -41,10 +41,10 @@ Connect your **MaestroQA** account to any AI agent to automate your customer ser
 - **request_qa_data_export**: Requires start_date and end_date.
 
 Initialize a raw QA data export (Async)
-- **list_qa_rubrics**: List all available evaluation rubrics
 - **list_qa_tickets**: Use optional params for filtering.
 
 List tickets and their QA statuses
+- **list_qa_rubrics**: List all available evaluation rubrics
 
 
 ## 💬 Prompt Examples

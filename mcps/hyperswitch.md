@@ -18,8 +18,8 @@ Empower your AI agents to manage your payment infrastructure with Hyperswitch. T
 - **get_dispute**: Retrieves details for a specific dispute
 - **get_payment**: Retrieves details for a specific payment
 - **get_payout**: Retrieves details for a specific payout
-- **get_refund**: Retrieves details for a specific refund
 - **list_customers**: Lists all customers
+- **get_refund**: Retrieves details for a specific refund
 - **list_disputes**: Lists all disputes
 - **list_payments**: Lists all payments
 - **list_payouts**: Lists all payouts

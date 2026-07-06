@@ -29,11 +29,6 @@ Connect your AI agent to **KnowledgeOwl** to streamline the management and retri
 
 
 ## Available Tools (10)
-- **list_kb_articles**: Useful for browsing content structure.
-
-List all articles in the Knowledge Base
-- **get_article_content**: Get detailed content for an article
-- **list_kb_categories**: List all categories in the project
 - **get_category_details**: Get details for a specific category
 - **search_help_center**: Search for content in the help center
 - **list_kb_glossary**: List all glossary terms
@@ -41,6 +36,11 @@ List all articles in the Knowledge Base
 - **list_article_templates**: List available article templates
 - **list_kb_custom_fields**: List custom fields defined in the project
 - **get_kb_project_info**: Get high-level information about the KB project
+- **list_kb_articles**: Useful for browsing content structure.
+
+List all articles in the Knowledge Base
+- **get_article_content**: Get detailed content for an article
+- **list_kb_categories**: List all categories in the project
 
 
 ## 💬 Prompt Examples

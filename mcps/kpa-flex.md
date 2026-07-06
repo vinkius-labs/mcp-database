@@ -29,16 +29,16 @@ Connect your AI agent to **KPA Flex** to maintain a safe and compliant workplace
 
 
 ## Available Tools (10)
-- **list_ehs_inspections**: List all safety inspections
-- **get_inspection_details**: Get details for an inspection
-- **list_flex_employees**: List employees in the system
-- **get_employee_ehs_profile**: Get EHS profile for an employee
-- **list_custom_forms**: List available custom forms
 - **get_form_schema**: Get schema for a specific form
 - **list_company_assets**: List equipment and assets
 - **list_safety_trainings**: List training records
 - **search_ehs_reports**: Search through all EHS reports
 - **get_flex_site_stats**: Get high-level safety statistics
+- **list_ehs_inspections**: List all safety inspections
+- **get_inspection_details**: Get details for an inspection
+- **list_flex_employees**: List employees in the system
+- **get_employee_ehs_profile**: Get EHS profile for an employee
+- **list_custom_forms**: List available custom forms
 
 
 ## 💬 Prompt Examples

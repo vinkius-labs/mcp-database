@@ -34,12 +34,6 @@ Connect your **Knack** application to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **list_objects**: This is the first step to understand the database structure and find the "Object Key" needed for record operations.
-
-List all objects in the Knack application
-- **get_object_schema**: Returns metadata including the object name, key, and high-level structure. Use this to verify you are working with the correct database table.
-
-Get the schema of a specific Knack object
 - **list_records**: You must provide the object_key. Use this to browse the actual data stored in your database.
 
 List records for a specific Knack object
@@ -64,6 +58,12 @@ Search for records using filters
 - **list_account_applications**: Use this to verify access or discover application IDs.
 
 List all applications in the account
+- **list_objects**: This is the first step to understand the database structure and find the "Object Key" needed for record operations.
+
+List all objects in the Knack application
+- **get_object_schema**: Returns metadata including the object name, key, and high-level structure. Use this to verify you are working with the correct database table.
+
+Get the schema of a specific Knack object
 
 
 ## 💬 Prompt Examples

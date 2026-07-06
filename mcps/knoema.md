@@ -34,12 +34,6 @@ Connect your AI agent to **Knoema**, the most comprehensive source of global dec
 
 
 ## Available Tools (10)
-- **search_datasets**: Returns dataset IDs and metadata. Use this to find the correct data source for your statistics.
-
-Search for datasets in Knoema
-- **get_dataset_metadata**: Critical for understanding what variables are available.
-
-Get metadata for a specific dataset
 - **list_data_topics**: g., Agriculture, Economy, Demographics).
 
 List all available data topics in Knoema
@@ -60,6 +54,12 @@ Search for specific data series across all datasets
 
 List available data frequencies
 - **get_knoema_resource**: Get a generic frontend resource
+- **search_datasets**: Returns dataset IDs and metadata. Use this to find the correct data source for your statistics.
+
+Search for datasets in Knoema
+- **get_dataset_metadata**: Critical for understanding what variables are available.
+
+Get metadata for a specific dataset
 
 
 ## 💬 Prompt Examples

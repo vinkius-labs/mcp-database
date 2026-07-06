@@ -36,12 +36,12 @@ Connect your **MRPeasy** manufacturing and ERP account to your AI agent and stre
 
 
 ## Available Tools (10)
+- **list_purchase_orders**: List purchase orders (POs)
 - **get_manufacturing_order**: Get specific manufacturing order info
 - **get_stock_item**: Get specific stock item details
 - **list_customer_orders**: List MRPeasy customer orders
 - **list_invoices**: List sales invoices
 - **list_manufacturing_orders**: List manufacturing orders (MOs)
-- **list_purchase_orders**: List purchase orders (POs)
 - **list_stock_items**: List inventory stock items
 - **list_vendors**: List suppliers and vendors
 - **list_work_stations**: List manufacturing work stations

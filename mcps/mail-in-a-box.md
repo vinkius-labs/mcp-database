@@ -34,9 +34,6 @@ Connect your **Mail-in-a-Box** instance to any AI agent to automate your private
 
 
 ## Available Tools (9)
-- **create_mail_user**: Requires a full email address and a password.
-
-Add a new mail user (mailbox)
 - **list_mail_aliases**: List all mail aliases and forwarders
 - **list_mail_domains**: List all mail domains hosted on the server
 - **delete_mail_alias**: Remove a mail alias
@@ -47,6 +44,9 @@ Add a new mail user (mailbox)
 
 Add or update a mail alias
 - **list_mail_users**: List all mail users on the server
+- **create_mail_user**: Requires a full email address and a password.
+
+Add a new mail user (mailbox)
 
 
 ## 💬 Prompt Examples

@@ -38,6 +38,10 @@ Lunatask uses end-to-end encryption. While this API allows creating and updating
 
 
 ## Available Tools (8)
+- **list_tasks_metadata**: Note: Due to encryption, names and notes are not available via API.
+
+List metadata for all tasks
+- **update_existing_task**: Update an existing task
 - **create_journal_entry**: Add a new journal entry
 - **create_new_task**: Requires a name and an area_id.
 
@@ -45,11 +49,7 @@ Create a new task
 - **delete_task**: Delete a task
 - **get_task_metadata**: Get metadata for a specific task
 - **list_notes_metadata**: List metadata for all notes
-- **list_tasks_metadata**: Note: Due to encryption, names and notes are not available via API.
-
-List metadata for all tasks
 - **track_habit_completion**: Log a completion for a habit
-- **update_existing_task**: Update an existing task
 
 
 ## 💬 Prompt Examples

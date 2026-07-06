@@ -27,7 +27,6 @@ Connect your **Mattermark** account to any AI agent and access deep insights int
 
 
 ## Available Tools (10)
-- **get_company_details**: Get details for a specific company
 - **get_company_employees**: Get employee data for a company
 - **get_company_funding_rounds**: Get funding history for a company
 - **get_company_news**: Get news for a specific company
@@ -37,6 +36,7 @@ Connect your **Mattermark** account to any AI agent and access deep insights int
 - **list_similar_companies**: Find similar companies
 - **search_companies**: Search for companies
 - **search_funding_rounds**: Search for funding rounds
+- **get_company_details**: Get details for a specific company
 
 
 ## 💬 Prompt Examples

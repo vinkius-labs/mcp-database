@@ -39,12 +39,12 @@ Connect your **Kargo** logistics account to your AI agent and optimize your supp
 - **get_device_status**: Get specific device status
 - **get_order**: Get specific order details
 - **get_shipment**: Get specific shipment details
-- **list_devices**: List facility IoT devices
+- **update_logistics**: Sync data to Kargo Unified Endpoint
 - **list_facilities**: List all business facilities
 - **list_orders**: List facility orders
 - **list_payload_logs**: List sync payload logs
 - **list_shipments**: List all shipments at the facility
-- **update_logistics**: Sync data to Kargo Unified Endpoint
+- **list_devices**: List facility IoT devices
 
 
 ## 💬 Prompt Examples

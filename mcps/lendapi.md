@@ -34,7 +34,6 @@ Connect your **LendAPI** account to any AI agent to automate your loan originati
 
 
 ## Available Tools (8)
-- **list_loan_applications**: List all loan applications
 - **list_borrowers**: List all borrower profiles
 - **create_loan_application**: Requires a JSON body with application details.
 
@@ -46,6 +45,7 @@ Create a new borrower profile
 - **get_borrower_details**: Get details for a specific borrower
 - **get_lendapi_picklists**: Retrieve valid picklist values for metadata fields
 - **submit_loan_application**: Submit a loan application for decisioning
+- **list_loan_applications**: List all loan applications
 
 
 ## 💬 Prompt Examples

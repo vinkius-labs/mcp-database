@@ -35,17 +35,17 @@ Connect your **MailWizz** instance to any AI agent to automate your professional
 
 
 ## Available Tools (9)
+- **get_list_details**: Get details for a specific subscriber list
+- **list_list_subscribers**: List subscribers in a specific list
+- **list_subscriber_collections**: List all subscriber lists
+- **pause_email_campaign**: Pause a running campaign
+- **update_list_subscriber**: Update an existing subscriber
 - **add_subscriber_to_list**: Requires a list UID and subscriber data.
 
 Add a new subscriber to a list
 - **list_email_campaigns**: List all email marketing campaigns
 - **delete_list_subscriber**: Remove a subscriber from a list
 - **get_campaign_details**: Get details for a specific campaign
-- **get_list_details**: Get details for a specific subscriber list
-- **list_list_subscribers**: List subscribers in a specific list
-- **list_subscriber_collections**: List all subscriber lists
-- **pause_email_campaign**: Pause a running campaign
-- **update_list_subscriber**: Update an existing subscriber
 
 
 ## 💬 Prompt Examples

@@ -34,6 +34,9 @@ Connect your **PartnerStack** account to any AI agent and take full control of y
 
 
 ## Available Tools (10)
+- **list_partner_rewards**: List all generated rewards
+- **list_partner_transactions**: List all partner transactions
+- **list_partner_webhooks**: List all configured webhooks
 - **get_partner_customer**: Get details for a specific customer
 - **get_partner**: Get details for a specific partner
 - **list_partner_campaigns**: List all partner campaigns
@@ -41,9 +44,6 @@ Connect your **PartnerStack** account to any AI agent and take full control of y
 - **list_partner_groups**: List all partner groups
 - **list_partner_leads**: List all leads submitted by partners
 - **list_partners**: List all partners
-- **list_partner_rewards**: List all generated rewards
-- **list_partner_transactions**: List all partner transactions
-- **list_partner_webhooks**: List all configured webhooks
 
 
 ## 💬 Prompt Examples

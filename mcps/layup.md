@@ -33,15 +33,15 @@ Connect your **Layup** operational account to any AI agent and manage lay-by e-c
 
 
 ## Available Tools (9)
-- **cancel_order**: Void an existing Layup order
-- **create_deposit**: Register a new lay-by deposit manually
-- **create_order**: Initialize a new lay-by order
 - **get_customer**: Retrieve customer explicit parameters
 - **get_order**: Get parameters surrounding an explicit order
 - **get_payment**: Fetch targeted payment details
 - **list_customers**: Read globally saved shopper customers
 - **list_orders**: Retrieve active lay-by payment plan orders
 - **list_payments**: Retrieve all payments linked to an order
+- **cancel_order**: Void an existing Layup order
+- **create_deposit**: Register a new lay-by deposit manually
+- **create_order**: Initialize a new lay-by order
 
 
 ## 💬 Prompt Examples

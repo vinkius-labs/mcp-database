@@ -44,8 +44,8 @@ No more manual filtering through complex marketplace portals. Your AI assistant 
 - **get_plan_details**: Get detailed information about a specific health plan
 - **get_provider_coverage**: Verify if a provider is in-network for a specific plan
 - **list_issuers**: List insurance issuers operating in a specific state
-- **list_market_states**: List states served by the Marketplace
 - **search_drugs**: Search for medications in the Marketplace drug database
+- **list_market_states**: List states served by the Marketplace
 - **search_plans**: Pass household and place as JSON strings.
 
 Search for health and dental plans in the Marketplace

@@ -34,13 +34,13 @@ Control quality testing automation instances seamlessly connecting LLM parameter
 
 ## Available Tools (10)
 - **list_devices**: List all available devices on Perfecto Cloud. Perfecto (by Perforce) is an enterprise mobile and web testing cloud with real devices and browsers. Returns device IDs, models, OS versions, manufacturers, locations, and availability statuses
+- **list_users**: List all users on the Perfecto cloud. Returns usernames, roles, emails, and access levels
 - **get_device_details**: Get full details of a Perfecto device including model, OS, firmware, manufacturer, resolution, location, and current status
 - **list_executions**: List current/recent executions on Perfecto. Returns execution IDs, statuses, script names, devices used, and timestamps
 - **get_execution_details**: Get status of a Perfecto execution by ID. Returns status, progress, device assignments, and timestamps
 - **list_artifacts**: List artifacts in Perfecto repository at a given path. Includes apps, scripts, images, and data files
 - **get_report_summary**: Get Smart Reporting summary for a Perfecto execution. Returns test results, pass/fail counts, video/screenshot links, and detailed step data
 - **list_device_groups**: List device groups on Perfecto. Groups organize devices by type/OS/team. Returns group names and member devices
-- **list_users**: List all users on the Perfecto cloud. Returns usernames, roles, emails, and access levels
 - **list_reservations**: List device reservations on Perfecto. Returns reservation IDs, devices, users, start/end times
 - **get_license_info**: Get Perfecto license information. Returns license type, device limits, concurrent executions, and expiration
 

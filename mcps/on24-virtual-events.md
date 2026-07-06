@@ -37,7 +37,6 @@ Connect your **ON24** account to your AI agent and gain deep insights into your 
 
 ## Available Tools (10)
 - **get_survey_responses**: Get survey response data
-- **list_event_attendees**: List event attendees
 - **list_virtual_events**: List all virtual events
 - **get_event_qa_log**: Get event Q&A log
 - **list_event_registrants**: List event registrants
@@ -46,6 +45,7 @@ Connect your **ON24** account to your AI agent and gain deep insights into your 
 - **get_attendee_engagement**: Get attendee engagement stats
 - **get_event_details**: Get specific event info
 - **get_registrant_details**: Get registrant info
+- **list_event_attendees**: List event attendees
 
 
 ## 💬 Prompt Examples
