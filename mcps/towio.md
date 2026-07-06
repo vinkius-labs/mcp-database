@@ -34,12 +34,12 @@ Connect your **Towio** craft and construction account to any AI agent and simpli
 
 
 ## Available Tools (6)
+- **list_delivery_documents**: List delivery documents
+- **list_employees**: List company employees
 - **list_projects**: List towio projects
 - **list_tasks**: List all tasks in towio
 - **create_task**: Create a new task
 - **get_api_version**: Check towio API version and connectivity
-- **list_delivery_documents**: List delivery documents
-- **list_employees**: List company employees
 
 
 ## 💬 Prompt Examples

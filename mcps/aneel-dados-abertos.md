@@ -33,12 +33,12 @@ Connect your AI agent to the **ANEEL Open Data Portal** (Agência Nacional de En
 
 
 ## Available Tools (4)
+- **get_package**: Get full metadata for a specific ANEEL dataset
+- **list_packages**: List all dataset names in the ANEEL portal
+- **search_datastore**: Search for records within an ANEEL resource
 - **get_resource**: g., CSV, PDF file) within a dataset, including its download URL and format.
 
 Get metadata for a specific ANEEL resource
-- **list_packages**: List all dataset names in the ANEEL portal
-- **search_datastore**: Search for records within an ANEEL resource
-- **get_package**: Get full metadata for a specific ANEEL dataset
 
 
 ## 💬 Prompt Examples

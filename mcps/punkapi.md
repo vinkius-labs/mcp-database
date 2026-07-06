@@ -36,9 +36,6 @@ Connect to **PunkAPI** and explore BrewDog's DIY Dog beer catalog through natura
 
 
 ## Available Tools (8)
-- **get_all_beers**: Supports searching by name, ABV range, IBU range, EBC (color), malts, hops, yeast, food pairing and brewing date range. Returns beer names, descriptions, ABV, IBU, ingredients and food pairing suggestions. Pagination supported with page and per_page parameters.
-
-Search BrewDog beers with filters
 - **get_beer_by_id**: Returns name, description, ABV, IBU, EBC, first brewed date, tagline, ingredients (malts, hops, yeast), food pairing suggestions, brewers tips and description.
 
 Get a specific beer by ID
@@ -60,6 +57,9 @@ Search beers by style
 - **get_random_beer**: Useful for discovering new beers. Can return 1-25 random beers at once.
 
 Get random beer(s) from the catalog
+- **get_all_beers**: Supports searching by name, ABV range, IBU range, EBC (color), malts, hops, yeast, food pairing and brewing date range. Returns beer names, descriptions, ABV, IBU, ingredients and food pairing suggestions. Pagination supported with page and per_page parameters.
+
+Search BrewDog beers with filters
 
 
 ## 💬 Prompt Examples

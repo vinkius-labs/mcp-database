@@ -33,10 +33,10 @@ Connect to the **EMT Madrid Open Data** platform to bring Madrid's mobility netw
 
 
 ## Available Tools (4)
-- **list_bicimad_stations**: Get status of all BiciMAD stations
-- **get_bus_arrivals**: Get real-time bus arrival times for a stop
 - **login**: Login to EMT MobilityLabs to get an accessToken
 - **plan_bus_route**: Calculate routes between points using the EMT network
+- **list_bicimad_stations**: Get status of all BiciMAD stations
+- **get_bus_arrivals**: Get real-time bus arrival times for a stop
 
 
 ## 💬 Prompt Examples

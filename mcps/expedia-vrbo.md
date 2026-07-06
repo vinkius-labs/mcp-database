@@ -57,6 +57,9 @@ Get full details for a specific vacation rental property
 - **get_rental_images**: Each image includes URLs, captions, category tags, and dimensions. Use this when the user wants to visually inspect a property before making a booking decision.
 
 Get all photos and images for a vacation rental property
+- **get_rental_reviews**: Returns individual review entries with overall ratings, category scores (cleanliness, communication, location, value), review text, traveler name, travel dates, and submission dates. Use this to help the user evaluate a rental property based on real guest experiences. Especially useful for comparing properties or verifying quality before booking.
+
+Get guest reviews and ratings for a vacation rental property
 - **get_unit_amenities**: Returns structured amenity data including categories (kitchen, bathroom, entertainment, outdoor, safety), individual amenity names, descriptions, and availability status. Use this when the user needs to verify specific amenities like pool, wifi, parking, pet-friendliness, or accessibility features.
 
 Get the full list of unit amenities for a vacation rental
@@ -66,9 +69,6 @@ Search for rental destination regions by name
 - **search_rentals**: Returns a list of matching rentals with pricing, amenities, and availability. Use this as the primary entry point for finding short-term rental properties.
 
 Search vacation rentals across Expedia and Vrbo inventory
-- **get_rental_reviews**: Returns individual review entries with overall ratings, category scores (cleanliness, communication, location, value), review text, traveler name, travel dates, and submission dates. Use this to help the user evaluate a rental property based on real guest experiences. Especially useful for comparing properties or verifying quality before booking.
-
-Get guest reviews and ratings for a vacation rental property
 
 
 ## 💬 Prompt Examples

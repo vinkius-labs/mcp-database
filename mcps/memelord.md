@@ -34,12 +34,6 @@ Connect your **MemeLord** account to any AI agent and generate memes programmati
 
 
 ## Available Tools (12)
-- **check_api_health**: Verify Memelord API connectivity
-- **generate_ai_meme**: Create a new meme using AI
-- **generate_video_meme**: Usually delivered via webhook or async.
-
-Generate a captioned video meme
-- **edit_meme_with_ai**: Modify an existing meme using instructions
 - **get_user_account_profile**: Get authenticated user profile
 - **get_api_credit_usage**: Check remaining credits
 - **get_api_version_info**: Retrieve API version and features
@@ -50,6 +44,12 @@ Explore meme categories
 - **list_meme_templates**: List available classic meme templates
 - **list_trending_memes**: See what is viral
 - **list_configured_webhooks**: List active webhooks
+- **check_api_health**: Verify Memelord API connectivity
+- **generate_ai_meme**: Create a new meme using AI
+- **generate_video_meme**: Usually delivered via webhook or async.
+
+Generate a captioned video meme
+- **edit_meme_with_ai**: Modify an existing meme using instructions
 
 
 ## 💬 Prompt Examples

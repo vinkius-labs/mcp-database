@@ -34,8 +34,8 @@ Connect to the **ANA (Agência Nacional de Águas e Saneamento Básico)** data m
 
 
 ## Available Tools (18)
-- **create_serie_chuva**: Inclusion of Rainfall (Chuva) Series data
 - **create_serie_cota**: Inclusion of Stage/Level (Cota) Series data
+- **create_serie_chuva**: Inclusion of Rainfall (Chuva) Series data
 - **create_serie_perfil_transversal**: Inclusion of Cross-Section Profile Series (Série Perfil Transversal) data
 - **create_serie_qa**: Inclusion of Water Quality (QA) Series data
 - **create_serie_resumo_descarga**: Inclusion of Discharge Summary Series (Série Resumo Descarga) data

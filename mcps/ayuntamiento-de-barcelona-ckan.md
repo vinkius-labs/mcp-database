@@ -37,8 +37,8 @@ Connect to the **Ayuntamiento de Barcelona (Open Data BCN)** portal and transfor
 - **bcn_datastore_search_sql**: The table name must be the resource_id wrapped in double quotes.
 
 Execute SQL queries directly against a resource
-- **bcn_datastore_search**: Search and filter records within a specific CSV resource
 - **bcn_package_list**: List all dataset names in the Open Data BCN catalogue
+- **bcn_datastore_search**: Search and filter records within a specific CSV resource
 - **bcn_package_search**: Search for datasets matching specific criteria
 - **bcn_package_show**: Get metadata for a specific dataset
 - **bcn_resource_show**: Get metadata for a specific resource

@@ -23,9 +23,9 @@ Autonomous agents demand flawless date arithmetic. When standard LLMs attempt to
 - **calculate_exact_age**: Provide the birthDateStr in ISO format.
 
 Executes precise chronological timeline generation. Calculates absolute age in years, months, and days, returning cumulative metrics and forecasting the next anniversary date
+- **calculate_next_anniversary**: Calculates the exact date and remaining days until the next birthday or anniversary
 - **compare_two_ages**: Calculates the exact age difference between two individuals or events
 - **calculate_time_until_milestone**: Calculates the exact time remaining until a specific age milestone (e.g., 18th or 50th birthday)
-- **calculate_next_anniversary**: Calculates the exact date and remaining days until the next birthday or anniversary
 
 
 ## 💬 Prompt Examples

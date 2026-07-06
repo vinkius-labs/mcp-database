@@ -12,15 +12,6 @@ Connect Prisma Cloud to any AI agent via MCP.
 
 
 ## Available Tools (7)
-- **get_alerts**: Use this to identify misconfigurations or security risks in cloud resources.
-
-List active security alerts in Prisma Cloud
-- **get_cloud_accounts**: Use this to audit cloud inventory and verify onboarding status.
-
-List all cloud accounts onboarded in Prisma Cloud
-- **get_compliance**: Returns failing checks and remediation steps. Use this to audit cloud security posture and ensure regulatory compliance.
-
-Check cloud compliance status against benchmarks (CIS, etc)
 - **get_network_anomalies**: Use this to identify compromised workloads or insider threats.
 
 Detect network anomalies and unusual traffic patterns in the cloud
@@ -33,6 +24,15 @@ Get profile information for the authenticated Prisma Cloud user
 - **run_rql_query**: Requires a valid RQL string. Returns matching resources. Use this for custom compliance checks or hunting misconfigurations.
 
 Execute a Resource Query Language (RQL) query for deep cloud analysis
+- **get_alerts**: Use this to identify misconfigurations or security risks in cloud resources.
+
+List active security alerts in Prisma Cloud
+- **get_cloud_accounts**: Use this to audit cloud inventory and verify onboarding status.
+
+List all cloud accounts onboarded in Prisma Cloud
+- **get_compliance**: Returns failing checks and remediation steps. Use this to audit cloud security posture and ensure regulatory compliance.
+
+Check cloud compliance status against benchmarks (CIS, etc)
 
 
 

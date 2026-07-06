@@ -36,14 +36,6 @@ No more manual checking of individual job statuses or missing 3D viewer links. Y
 
 
 ## Available Tools (10)
-- **check_imagine_status**: Verify Imagine API connectivity
-- **create_render_job**: The job runs asynchronously; check status with get_job_status.
-
-Start a 3D render job
-- **get_account**: io account details and render credit balance.
-
-Get account info
-- **get_job_status**: Check render job status
 - **get_product**: Get product details
 - **get_scene**: Get scene details
 - **list_materials**: List available materials
@@ -52,6 +44,14 @@ Get account info
 List all 3D products
 - **list_renders**: List product renders
 - **list_scenes**: List all scenes
+- **check_imagine_status**: Verify Imagine API connectivity
+- **create_render_job**: The job runs asynchronously; check status with get_job_status.
+
+Start a 3D render job
+- **get_account**: io account details and render credit balance.
+
+Get account info
+- **get_job_status**: Check render job status
 
 
 ## 💬 Prompt Examples

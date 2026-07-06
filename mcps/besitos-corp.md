@@ -35,8 +35,6 @@ Connect your **Besitos Corp** partner account to any AI agent and orchestrate yo
 
 
 ## Available Tools (10)
-- **get_campaign**: Get details of a specific campaign
-- **get_engagement_report**: Retrieve a summary of user engagement metrics
 - **get_game**: Get details of a specific game
 - **get_offer**: Get details of a specific reward offer
 - **get_revenue_report**: Retrieve a summary of monetization and revenue data
@@ -45,6 +43,8 @@ Connect your **Besitos Corp** partner account to any AI agent and orchestrate yo
 - **list_offers**: List all reward offers and milestones
 - **list_user_activity**: Retrieve gaming activity for a specific user
 - **list_user_rewards**: Retrieve reward history for a specific user
+- **get_campaign**: Get details of a specific campaign
+- **get_engagement_report**: Retrieve a summary of user engagement metrics
 
 
 ## 💬 Prompt Examples

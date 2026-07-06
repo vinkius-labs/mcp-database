@@ -12,9 +12,6 @@ Connect Microsoft Ads to any AI agent via MCP.
 
 
 ## Available Tools (10)
-- **get_ms_account_info**: Get account details
-- **get_ms_ad_group_details**: Get details for a specific ad group
-- **get_ms_campaign_details**: Get details for a specific campaign
 - **list_ms_ad_groups**: List ad groups in a campaign
 - **list_ms_ads**: List ads in an ad group
 - **list_ms_budgets**: List all shared budgets
@@ -24,6 +21,9 @@ Connect Microsoft Ads to any AI agent via MCP.
 
 List targeting settings
 - **search_ms_campaigns**: Search campaigns by name
+- **get_ms_account_info**: Get account details
+- **get_ms_ad_group_details**: Get details for a specific ad group
+- **get_ms_campaign_details**: Get details for a specific campaign
 
 
 

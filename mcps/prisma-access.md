@@ -12,12 +12,6 @@ Connect Prisma Access to any AI agent via MCP.
 
 
 ## Available Tools (7)
-- **get_locations**: Use this to review network topology or troubleshoot routing.
-
-List mobile user locations and remote networks
-- **get_policies**: Use this to audit SASE policies.
-
-List security policies enforced in Prisma Access
 - **get_service_endpoints**: Use this to verify regional connectivity or configure DNS routing.
 
 List Prisma Access service endpoints (PoPs)
@@ -33,6 +27,12 @@ List SD-WAN and network tunnels in Prisma Access
 - **get_users**: Use this to audit remote work access or identify inactive accounts.
 
 List remote users connected to Prisma Access
+- **get_locations**: Use this to review network topology or troubleshoot routing.
+
+List mobile user locations and remote networks
+- **get_policies**: Use this to audit SASE policies.
+
+List security policies enforced in Prisma Access
 
 
 

@@ -32,16 +32,16 @@ Connect your **Hullo** account to any AI agent and manage member communications 
 
 
 ## Available Tools (6)
+- **list_members**: List all members
+- **send_message**: Pass message data as a JSON string.
+
+Send a message to a member
 - **create_member**: Pass member data as a JSON string.
 
 Create a new member
 - **get_conversation**: Get conversation details
 - **get_member**: Get member details
 - **list_conversations**: List all conversations
-- **list_members**: List all members
-- **send_message**: Pass message data as a JSON string.
-
-Send a message to a member
 
 
 ## 💬 Prompt Examples

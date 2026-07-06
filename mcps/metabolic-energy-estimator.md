@@ -19,7 +19,6 @@ Autonomous health and fitness agents demand uncompromising metabolic accuracy. W
 
 
 ## Available Tools (4)
-- **calculate_tdee**: Calculates Total Daily Energy Expenditure (TDEE) and Basal Metabolic Rate (BMR) using the Mifflin-St Jeor equation
 - **estimate_calories_burned**: You MUST provide an activityId found via search_activity_catalog.
 
 Calculates exactly how many calories are burned doing a specific physical activity based on weight and time
@@ -27,6 +26,7 @@ Calculates exactly how many calories are burned doing a specific physical activi
 - **calculate_weight_loss_projection**: 1kg of fat = 7700 calories.
 
 Projects how many days and weeks it will take to reach a target weight based on a daily calorie deficit
+- **calculate_tdee**: Calculates Total Daily Energy Expenditure (TDEE) and Basal Metabolic Rate (BMR) using the Mifflin-St Jeor equation
 
 
 ## 💬 Prompt Examples

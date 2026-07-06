@@ -33,12 +33,12 @@ Connect your **InflatableOffice** account to any AI agent and manage your party 
 
 
 ## Available Tools (6)
+- **list_leads**: List InflatableOffice leads
 - **create_new_lead**: Register a new lead
 - **get_lead_details**: Get details for a specific lead
 - **list_customers**: List InflatableOffice customers
 - **list_scheduled_events**: List scheduled events
 - **list_rental_inventory**: List rental inventory
-- **list_leads**: List InflatableOffice leads
 
 
 ## 💬 Prompt Examples

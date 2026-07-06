@@ -34,7 +34,6 @@ Connect to the official **Open Data portal of the Madrid City Council** and expl
 
 
 ## Available Tools (8)
-- **madrid_get_package**: Get full metadata for a specific dataset
 - **madrid_get_resource**: Get metadata for a specific file/resource
 - **madrid_list_groups**: List all categories/groups
 - **madrid_list_organizations**: List municipal departments/organizations
@@ -44,6 +43,7 @@ Connect to the official **Open Data portal of the Madrid City Council** and expl
 Search for datasets matching a query
 - **madrid_search_resources**: Search for resources matching specific criteria
 - **madrid_list_tags**: List all tags used in the catalog
+- **madrid_get_package**: Get full metadata for a specific dataset
 
 
 ## 💬 Prompt Examples

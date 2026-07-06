@@ -34,14 +34,6 @@ Connect your **TurfHop** account to any AI agent and simplify how you coordinate
 
 
 ## Available Tools (12)
-- **create_customer**: Pass customer data as a JSON string.
-
-Create a new customer
-- **create_job**: Pass job data as a JSON string.
-
-Create a new service job
-- **get_customer**: Get customer details by ID
-- **get_invoice**: Get invoice details
 - **get_job**: Get job details
 - **list_customers**: List all customers
 - **list_invoices**: List all invoices
@@ -50,6 +42,14 @@ Create a new service job
 - **list_quotes**: List all quotes
 - **update_customer**: Update an existing customer
 - **update_job**: Update an existing job
+- **create_customer**: Pass customer data as a JSON string.
+
+Create a new customer
+- **create_job**: Pass job data as a JSON string.
+
+Create a new service job
+- **get_customer**: Get customer details by ID
+- **get_invoice**: Get invoice details
 
 
 ## 💬 Prompt Examples
