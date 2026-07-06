@@ -36,11 +36,6 @@ No more manual order searching or complex checkout URL generation in the dashboa
 
 
 ## Available Tools (12)
-- **create_checkout**: Create a checkout session
-- **create_order**: Create a new order
-- **create_webhook**: created.
-
-Create a new webhook
 - **get_account_info**: Get account profile
 - **get_checkout**: Get checkout details
 - **get_customer**: Get customer details
@@ -50,6 +45,11 @@ Create a new webhook
 - **list_orders**: List all checkout orders
 - **list_webhooks**: List active webhooks
 - **update_order**: Update order status
+- **create_checkout**: Create a checkout session
+- **create_order**: Create a new order
+- **create_webhook**: created.
+
+Create a new webhook
 
 
 ## 💬 Prompt Examples

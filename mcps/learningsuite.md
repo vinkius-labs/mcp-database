@@ -34,16 +34,16 @@ Connect your **LearningSuite** account to any AI agent and manage training progr
 
 
 ## Available Tools (10)
-- **get_ai_agent**: Get a specific AI agent
-- **get_course**: Get a specific course
-- **get_hub**: Get a specific hub
-- **get_member**: Get details for a specific member
 - **get_community_post**: Get a specific community post
 - **list_ai_agents**: List AI agents
 - **list_courses**: List all courses
 - **list_hubs**: List all hubs
 - **list_members**: List all LearningSuite members
 - **list_community_posts**: List all community posts
+- **get_ai_agent**: Get a specific AI agent
+- **get_course**: Get a specific course
+- **get_hub**: Get a specific hub
+- **get_member**: Get details for a specific member
 
 
 ## 💬 Prompt Examples

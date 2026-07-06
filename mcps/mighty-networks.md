@@ -34,8 +34,6 @@ Connect your **Mighty Networks** community to any AI agent and manage your audie
 
 
 ## Available Tools (12)
-- **invite_member**: Add member to network
-- **create_space_post**: Publish content to space
 - **create_new_space**: Add new community/course
 - **get_engagement_stats**: Get network analytics
 - **get_member_profile**: Get member details
@@ -48,6 +46,8 @@ Connect your **Mighty Networks** community to any AI agent and manage your audie
 - **list_spaces**: ) in the network.
 
 List communities and courses
+- **invite_member**: Add member to network
+- **create_space_post**: Publish content to space
 
 
 ## 💬 Prompt Examples

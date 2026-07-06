@@ -36,13 +36,9 @@ No more manual reviewing of video frames or missing critical object detections. 
 
 
 ## Available Tools (10)
-- **analyze_image**: Returns detected objects, labels, and bounding boxes.
-
-Analyze an image
 - **analyze_video**: Returns temporal object detection results.
 
 Analyze a video
-- **check_eyepop_status**: Verify EyePop API connectivity
 - **create_pop**: Create a visual pipeline
 - **get_account**: Get account info
 - **get_model**: Get model details
@@ -50,6 +46,10 @@ Analyze a video
 - **list_detections**: List detections
 - **list_models**: List available models
 - **list_pops**: List all visual pipelines
+- **analyze_image**: Returns detected objects, labels, and bounding boxes.
+
+Analyze an image
+- **check_eyepop_status**: Verify EyePop API connectivity
 
 
 ## 💬 Prompt Examples

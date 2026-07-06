@@ -36,10 +36,6 @@ No more manual status checking in the dashboard for new bookings. Your AI acts a
 
 
 ## Available Tools (12)
-- **cancel_booking**: Cancel a booking
-- **check_neetocal_status**: Verify connectivity
-- **create_booking**: Create a booking
-- **get_availability**: Get availability
 - **get_booking**: Get booking details
 - **get_scheduling_link**: Get scheduling link
 - **get_slots**: Get available slots
@@ -48,6 +44,10 @@ No more manual status checking in the dashboard for new bookings. Your AI acts a
 - **list_calendars**: List calendars
 - **list_scheduling_links**: List scheduling links
 - **reschedule_booking**: Reschedule a booking
+- **cancel_booking**: Cancel a booking
+- **check_neetocal_status**: Verify connectivity
+- **create_booking**: Create a booking
+- **get_availability**: Get availability
 
 
 ## 💬 Prompt Examples

@@ -35,14 +35,14 @@ Connect your **Dotcom-Monitor** monitoring account to any AI agent and simplify 
 
 
 ## Available Tools (6)
-- **get_device_details**: Get details for a specific device
-- **get_device_monitoring_history**: Get historical status for a device
 - **list_alert_groups**: List configured alert groups
 - **list_monitoring_devices**: List monitoring devices
 - **list_monitoring_locations**: List geographic monitoring locations
 - **list_available_platforms**: ).
 
 List monitoring platforms
+- **get_device_details**: Get details for a specific device
+- **get_device_monitoring_history**: Get historical status for a device
 
 
 ## 💬 Prompt Examples

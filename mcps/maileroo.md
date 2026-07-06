@@ -33,12 +33,12 @@ Connect your **Maileroo** account to any AI agent and manage transactional email
 
 
 ## Available Tools (6)
-- **get_domain_details**: Get details for a specific domain
-- **list_sending_activity**: List recent sending activity
 - **list_sending_domains**: List sending domains
 - **list_email_templates**: List email templates
 - **list_configured_webhooks**: List webhooks
 - **send_transactional_email**: Send a transactional email
+- **get_domain_details**: Get details for a specific domain
+- **list_sending_activity**: List recent sending activity
 
 
 ## 💬 Prompt Examples

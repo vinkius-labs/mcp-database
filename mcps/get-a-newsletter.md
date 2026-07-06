@@ -35,16 +35,16 @@ Your AI acts as a dedicated marketing assistant, ready to sync leads or pull cam
 
 
 ## Available Tools (10)
-- **create_contact**: Create a new contact (subscriber)
-- **create_list**: Create a new subscriber list
-- **delete_contact**: Delete a contact
-- **get_campaign**: Get details of a specific campaign
 - **get_contact**: Get details of a specific contact
 - **get_list**: Get details of a specific list
 - **list_campaigns**: List all campaigns
 - **list_contacts**: List all contacts (subscribers)
 - **list_lists**: List all subscriber lists
 - **update_contact**: Update an existing contact
+- **create_contact**: Create a new contact (subscriber)
+- **create_list**: Create a new subscriber list
+- **delete_contact**: Delete a contact
+- **get_campaign**: Get details of a specific campaign
 
 
 ## 💬 Prompt Examples

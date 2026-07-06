@@ -37,13 +37,13 @@ Connect your **IP2WHOIS** account to any AI agent and access comprehensive domai
 
 ## Available Tools (10)
 - **check_domain_availability**: Check if a domain is available for registration
+- **check_domain_age**: Check the age of a domain
 - **bulk_whois_lookup**: Returns key registration details for each domain.
 
 WHOIS lookup for multiple domains at once
 - **get_domain_contacts**: Note: many domains use privacy protection.
 
 Get registrant and admin contact info for a domain
-- **check_domain_age**: Check the age of a domain
 - **check_domain_expiry**: Useful for renewal monitoring.
 
 Check when a domain expires

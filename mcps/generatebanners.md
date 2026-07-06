@@ -36,11 +36,6 @@ No more manual editing of images or slow design cycles. Your AI acts as your ded
 
 
 ## Available Tools (12)
-- **check_gb_status**: Verify connectivity
-- **create_project**: Create a project
-- **delete_project**: Delete a project
-- **get_account**: Get account info
-- **get_project**: Get project details
 - **get_template**: Get template details
 - **list_categories**: List categories
 - **list_projects**: List projects
@@ -48,6 +43,11 @@ No more manual editing of images or slow design cycles. Your AI acts as your ded
 - **render_batch**: Render batch banners
 - **render_template**: Render a banner
 - **search_templates**: Search templates
+- **check_gb_status**: Verify connectivity
+- **create_project**: Create a project
+- **delete_project**: Delete a project
+- **get_account**: Get account info
+- **get_project**: Get project details
 
 
 ## 💬 Prompt Examples

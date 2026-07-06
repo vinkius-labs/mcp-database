@@ -34,28 +34,28 @@ Connect your **Hudu** instance to any AI agent and manage your IT documentation 
 
 
 ## Available Tools (12)
-- **get_article**: Get details for a specific article
-- **get_asset**: Get details for a specific asset
-- **get_company**: Get details for a specific company
-- **get_password**: Get details for a specific password
 - **get_procedure**: Get details for a specific procedure
 - **list_articles**: List knowledge base articles
-- **list_assets**: Can be filtered by company ID.
-
-List assets
 - **list_companies**: List all companies in Hudu
 - **list_passwords**: Can be filtered by company ID.
 
 List passwords
-- **list_procedures**: Can be filtered by company ID.
-
-List procedures
 - **create_asset**: Requires asset name and company ID.
 
 Create a new asset
 - **create_company**: Requires a name.
 
 Create a new company
+- **get_article**: Get details for a specific article
+- **get_asset**: Get details for a specific asset
+- **get_company**: Get details for a specific company
+- **get_password**: Get details for a specific password
+- **list_assets**: Can be filtered by company ID.
+
+List assets
+- **list_procedures**: Can be filtered by company ID.
+
+List procedures
 
 
 ## 💬 Prompt Examples

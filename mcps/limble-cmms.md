@@ -34,10 +34,6 @@ Connect your **Limble CMMS** account to any AI agent and manage maintenance oper
 
 
 ## Available Tools (9)
-- **get_asset_details**: Get details for a specific asset
-- **list_labor_entries**: List labor logs for tasks
-- **list_asset_part_relations**: List parts linked to assets
-- **list_assets**: List maintenance assets
 - **list_locations**: List facility locations
 - **list_parts**: List inventory parts
 - **list_tasks**: List work orders and PMs
@@ -45,6 +41,10 @@ Connect your **Limble CMMS** account to any AI agent and manage maintenance oper
 - **update_asset_field**: g. runtime hours, temperature) for an asset.
 
 Update a custom field for an asset
+- **get_asset_details**: Get details for a specific asset
+- **list_labor_entries**: List labor logs for tasks
+- **list_asset_part_relations**: List parts linked to assets
+- **list_assets**: List maintenance assets
 
 
 ## 💬 Prompt Examples

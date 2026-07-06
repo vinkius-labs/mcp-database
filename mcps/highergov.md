@@ -36,18 +36,18 @@ No more manual searching through fragmented government portals. Your AI acts as 
 
 
 ## Available Tools (12)
+- **get_opportunity**: Get opportunity details
+- **list_agencies**: List government agencies
+- **list_awardees**: List awardees (companies/orgs)
+- **list_contracts**: List government contract awards
+- **list_opportunities**: List government contract opportunities
+- **search_by_id**: Search using a HigherGov Search ID
 - **get_agency**: Get agency details
 - **get_awardee**: Get awardee details
 - **get_contract**: Get contract award details
 - **get_documents**: Get opportunity documents
 - **get_grant**: Get grant award details
-- **get_opportunity**: Get opportunity details
-- **list_agencies**: List government agencies
-- **list_awardees**: List awardees (companies/orgs)
-- **list_contracts**: List government contract awards
 - **list_grants**: List government grant awards
-- **list_opportunities**: List government contract opportunities
-- **search_by_id**: Search using a HigherGov Search ID
 
 
 ## 💬 Prompt Examples
