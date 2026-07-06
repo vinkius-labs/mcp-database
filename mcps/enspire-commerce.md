@@ -33,8 +33,6 @@ Integrate **Enspire Commerce**, the comprehensive omni-channel order management 
 
 
 ## Available Tools (10)
-- **get_enspire_account_metadata**: Retrieve metadata and limits for your Enspire account
-- **get_order_details**: Get detailed settings and line items for a specific order
 - **get_sku_stock_level**: Get real-time stock levels for a specific product SKU
 - **quick_commerce_volume_audit**: Retrieve a high-level summary of orders, shipments, and stock
 - **list_fulfillment_locations**: List all fulfillment centers and warehouses configured in your network
@@ -43,6 +41,8 @@ Integrate **Enspire Commerce**, the comprehensive omni-channel order management 
 - **list_commerce_orders**: List all omni-channel orders in your Enspire account
 - **list_latest_commerce_orders**: Identify the most recently placed omni-channel orders
 - **list_recent_shipments**: List all shipments and tracking information
+- **get_enspire_account_metadata**: Retrieve metadata and limits for your Enspire account
+- **get_order_details**: Get detailed settings and line items for a specific order
 
 
 ## 💬 Prompt Examples

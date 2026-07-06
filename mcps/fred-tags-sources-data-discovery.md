@@ -22,13 +22,13 @@ Researchers exploring FRED's catalog, data engineers building automated pipeline
 
 
 ## Available Tools (3)
+- **list_sources**: List all FRED data sources
 - **search_tags**: Search by text or get all tags. Tags include geographic (usa, europe), topic (gdp, inflation), source (bls, bea), and frequency (monthly, quarterly) labels.
 
 Search or browse FRED tags
 - **get_series_by_tags**: Powerful for discovering related series. Example: tag_names="usa;gdp" returns all US GDP series. Combine with exclude_tag_names to refine.
 
 Get FRED series matching specific tags
-- **list_sources**: List all FRED data sources
 
 
 ## 💬 Prompt Examples

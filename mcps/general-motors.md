@@ -36,15 +36,6 @@ Perfect for **GM vehicle owners**, **fleet managers**, **service advisors**, and
 
 
 ## Available Tools (14)
-- **flash_horn**: Requires VIN. Use this to locate a vehicle in a crowded parking lot or driveway.
-
-Trigger the horn of a GM vehicle to locate it
-- **flash_lights**: Requires VIN. Use this to locate a vehicle in the dark or signal ownership.
-
-Flash the headlights and taillights of a GM vehicle
-- **get_charge_status**: Requires VIN. Use this to manage EV range anxiety or schedule charging during off-peak hours.
-
-Get the charging status and battery level of a GM EV (Bolt, Ultium, etc)
 - **get_vehicle_diagnostics**: Requires VIN. Use this for maintenance scheduling, pre-trip inspections, or health monitoring.
 
 Get comprehensive diagnostic data for a GM vehicle
@@ -78,6 +69,15 @@ Remotely stop the running engine of a GM vehicle
 - **unlock_doors**: Requires VIN. Returns command status. Use this to let a passenger in or if keys are locked inside.
 
 Unlock the doors of a specific GM vehicle remotely
+- **flash_horn**: Requires VIN. Use this to locate a vehicle in a crowded parking lot or driveway.
+
+Trigger the horn of a GM vehicle to locate it
+- **flash_lights**: Requires VIN. Use this to locate a vehicle in the dark or signal ownership.
+
+Flash the headlights and taillights of a GM vehicle
+- **get_charge_status**: Requires VIN. Use this to manage EV range anxiety or schedule charging during off-peak hours.
+
+Get the charging status and battery level of a GM EV (Bolt, Ultium, etc)
 
 
 ## 💬 Prompt Examples

@@ -35,18 +35,18 @@ Connect your **Grepsr** account to any AI agent and take full control of your ma
 
 
 ## Available Tools (12)
-- **create_webhook**: Configure a new webhook URL for a report
-- **get_me**: Get details for the current Grepsr account
-- **get_latest_data**: Retrieve the most recent scraped dataset for a report
-- **get_report_data**: Query scraped records from a specific report
 - **get_report_details**: Get metadata and configuration for a specific report
 - **get_report_history**: Retrieve the execution history (runs) for a specific report
-- **get_usage_stats**: Check account API usage and request limits
 - **list_integrations**: List active data delivery integrations (e.g. S3, SFTP)
 - **list_projects**: List all scraping projects
 - **list_reports**: List all reports and crawlers in your Grepsr account
 - **list_webhooks**: List webhooks configured for a specific report
 - **run_report**: Trigger an on-demand crawl for a specific report
+- **create_webhook**: Configure a new webhook URL for a report
+- **get_me**: Get details for the current Grepsr account
+- **get_latest_data**: Retrieve the most recent scraped dataset for a report
+- **get_report_data**: Query scraped records from a specific report
+- **get_usage_stats**: Check account API usage and request limits
 
 
 ## 💬 Prompt Examples

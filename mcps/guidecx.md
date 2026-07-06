@@ -36,16 +36,16 @@ No more manual status updates or digging through project boards. Your AI assista
 
 
 ## Available Tools (10)
-- **create_project**: Create a new onboarding project
-- **create_time_record**: Log time against a specific task or project
-- **get_project**: Get detailed information about a specific project
-- **get_task**: Get details for a specific GUIDEcx task
-- **list_project_users**: List stakeholders and users assigned to a specific project
 - **list_projects**: List all customer onboarding projects in GUIDEcx
 - **list_tasks**: List tasks across projects
 - **list_time_records**: List all tracked time records
 - **list_users**: List internal organization users
 - **update_task**: Update an existing task status or details
+- **create_project**: Create a new onboarding project
+- **create_time_record**: Log time against a specific task or project
+- **get_project**: Get detailed information about a specific project
+- **get_task**: Get details for a specific GUIDEcx task
+- **list_project_users**: List stakeholders and users assigned to a specific project
 
 
 ## 💬 Prompt Examples

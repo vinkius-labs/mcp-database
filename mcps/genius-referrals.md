@@ -36,13 +36,6 @@ Connect your **Genius Referrals** account to any AI agent to automate your refer
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Check connection
-- **register_advocate**: Register new advocate
-- **log_referral_conversion**: g. signup or purchase).
-
-Track a referral
-- **get_my_account**: Get account identity
-- **get_advocate_details**: Get advocate metadata
 - **get_campaign_details**: Get campaign metadata
 - **list_program_advocates**: List advocates
 - **list_awarded_bonuses**: List earned rewards
@@ -50,6 +43,13 @@ Track a referral
 - **list_payout_requests**: List redemption requests
 - **list_tracked_referrals**: List referral events
 - **list_top_performers**: List top advocates
+- **verify_api_connection**: Check connection
+- **register_advocate**: Register new advocate
+- **log_referral_conversion**: g. signup or purchase).
+
+Track a referral
+- **get_my_account**: Get account identity
+- **get_advocate_details**: Get advocate metadata
 
 
 ## 💬 Prompt Examples

@@ -34,18 +34,18 @@ Connect your **FantasyData (SportsDataIO)** account to any AI agent and take ful
 
 
 ## Available Tools (12)
-- **get_mlb_player_details**: Get details for a specific MLB player
-- **get_mlb_schedule**: Get the MLB schedule for a specific season
-- **get_mlb_scores**: Get MLB scores for a specific date
-- **get_nba_player_details**: Get details for a specific NBA player
-- **get_nba_schedule**: Get the NBA schedule for a specific season
-- **get_nba_scores**: Get NBA scores for a specific date
 - **get_nfl_player_details**: Get details for a specific NFL player
 - **get_nfl_schedule**: Get the NFL schedule for a specific season
 - **get_nfl_scores**: Get NFL scores for a specific date
 - **list_mlb_players**: List all active MLB players
 - **list_nba_players**: List all active NBA players
 - **list_nfl_players**: List all active NFL players
+- **get_mlb_player_details**: Get details for a specific MLB player
+- **get_mlb_schedule**: Get the MLB schedule for a specific season
+- **get_mlb_scores**: Get MLB scores for a specific date
+- **get_nba_player_details**: Get details for a specific NBA player
+- **get_nba_schedule**: Get the NBA schedule for a specific season
+- **get_nba_scores**: Get NBA scores for a specific date
 
 
 ## 💬 Prompt Examples

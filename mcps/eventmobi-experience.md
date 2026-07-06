@@ -33,16 +33,16 @@ Integrate **EventMobi**, the comprehensive event experience platform, directly i
 
 
 ## Available Tools (10)
-- **get_eventmobi_account_metadata**: Retrieve metadata and limits for your EventMobi account
-- **get_event_engagement_analytics**: Get high-level engagement analytics for a specific event
-- **get_event_detailed_data**: Get detailed settings and information for a specific event
-- **quick_event_volume_audit**: Retrieve a high-level summary of attendees, sessions, and speakers
 - **list_event_attendees**: List all registered attendees for a specific event
 - **list_event_exhibitor_profiles**: List all exhibitor and company profiles for a specific event
 - **list_all_events**: List all events managed in your EventMobi account
 - **list_latest_event_projects**: Identify the most recently created or updated event projects
 - **list_event_sessions**: List all sessions and schedule items for a specific event
 - **list_event_speakers**: List all speakers registered for a specific event
+- **get_eventmobi_account_metadata**: Retrieve metadata and limits for your EventMobi account
+- **get_event_engagement_analytics**: Get high-level engagement analytics for a specific event
+- **get_event_detailed_data**: Get detailed settings and information for a specific event
+- **quick_event_volume_audit**: Retrieve a high-level summary of attendees, sessions, and speakers
 
 
 ## 💬 Prompt Examples

@@ -33,16 +33,16 @@ Integrate **Evoliz**, the powerful cloud-based invoicing and business management
 
 
 ## Available Tools (10)
-- **get_evoliz_account_metadata**: Retrieve metadata and limits for your Evoliz account
-- **get_client_detailed_profile**: Get detailed profile and financial summary for a specific client
-- **get_invoice_detailed_data**: Get detailed settings and line items for a specific invoice
-- **quick_financial_volume_audit**: Retrieve a high-level summary of invoices and quotes
 - **list_crm_clients**: List all clients registered in your organization
 - **list_sales_invoices**: List all sales invoices in your Evoliz account
 - **list_unpaid_overdue_invoices**: Identify invoices that are currently past their due date
 - **list_product_catalog**: List all products and services available in your catalog
 - **list_sales_quotes**: List all sales quotes and estimates
 - **list_authorized_suppliers**: List all authorized suppliers and vendors
+- **get_evoliz_account_metadata**: Retrieve metadata and limits for your Evoliz account
+- **get_client_detailed_profile**: Get detailed profile and financial summary for a specific client
+- **get_invoice_detailed_data**: Get detailed settings and line items for a specific invoice
+- **quick_financial_volume_audit**: Retrieve a high-level summary of invoices and quotes
 
 
 ## 💬 Prompt Examples

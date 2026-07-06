@@ -45,8 +45,8 @@ Connect your **GRIN** Creator Management account to any AI agent and take full c
 - **list_conversions**: Track sales and ROI attributed to influencers
 - **list_orders**: Manage product seeding and fulfillment orders
 - **list_partnerships**: Manage formal brand-creator relationships
-- **list_payments**: List and manage creator payouts
 - **update_contact**: Update properties for a specific creator
+- **list_payments**: List and manage creator payouts
 
 
 ## 💬 Prompt Examples

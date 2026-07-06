@@ -33,7 +33,6 @@ Integrate **emfluence**, the intuitive marketing automation platform, directly i
 
 
 ## Available Tools (10)
-- **get_emfluence_account_metadata**: Retrieve metadata and settings for your emfluence account
 - **get_email_performance_stats**: Get performance statistics for a specific marketing email
 - **get_contact_profile**: Get full profile and history for a specific contact
 - **get_email_details**: Get detailed settings and content for a specific marketing email
@@ -43,6 +42,7 @@ Integrate **emfluence**, the intuitive marketing automation platform, directly i
 - **list_marketing_contacts**: List all contacts registered in your organization
 - **list_marketing_emails**: List all marketing emails in your emfluence account
 - **search_contacts_by_email**: Search for a contact using their email address
+- **get_emfluence_account_metadata**: Retrieve metadata and settings for your emfluence account
 
 
 ## 💬 Prompt Examples

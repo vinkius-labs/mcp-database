@@ -36,8 +36,6 @@ Connect your **GivingFuel** account to any AI agent to automate your fundraising
 
 
 ## Available Tools (10)
-- **verify_api_connection**: Check connection
-- **filter_orders_by_status**: Filter by completion
 - **filter_orders_by_date**: Filter by date range
 - **list_crm_contacts**: List donor profiles
 - **list_donation_orders**: List all orders
@@ -46,6 +44,8 @@ Connect your **GivingFuel** account to any AI agent to automate your fundraising
 - **list_recent_donations**: List latest 10 orders
 - **list_donation_registrants**: List individual donors
 - **list_financial_transactions**: List successful charges
+- **verify_api_connection**: Check connection
+- **filter_orders_by_status**: Filter by completion
 
 
 ## 💬 Prompt Examples

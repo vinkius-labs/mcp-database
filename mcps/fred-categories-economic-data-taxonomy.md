@@ -25,6 +25,9 @@ Data explorers, researchers discovering what data FRED has, and AI agents that n
 
 
 ## Available Tools (4)
+- **get_category_tags**: Useful for understanding what data dimensions are available and for filtering series.
+
+Get tags for a FRED category
 - **get_category**: Root category is 0. Major categories: 32991 (Money, Banking, & Finance), 10 (Population, Employment, & Labor Markets), 32992 (National Accounts), 1 (Production & Business Activity), 32455 (Prices).
 
 Get a FRED category by ID
@@ -34,9 +37,6 @@ Get child categories of a FRED category
 - **get_category_series**: Use with category IDs discovered via get_category_children. Supports filtering by frequency, units, and tags.
 
 Get series within a FRED category
-- **get_category_tags**: Useful for understanding what data dimensions are available and for filtering series.
-
-Get tags for a FRED category
 
 
 ## 💬 Prompt Examples

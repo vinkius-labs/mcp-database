@@ -33,9 +33,6 @@ Integrate **Eventtia**, the all-in-one event management platform, directly into 
 
 
 ## Available Tools (10)
-- **get_eventtia_account_metadata**: Retrieve metadata and limits for your Eventtia account
-- **get_event_performance_stats**: Get high-level performance metrics for a specific event
-- **get_event_detailed_data**: Get detailed settings and information for a specific event
 - **quick_event_engagement_audit**: Retrieve a high-level summary of attendees, sessions, and meetings
 - **list_currently_live_events**: Identify events that are currently active or ongoing
 - **list_event_attendees**: List all registered attendees for a specific event
@@ -43,6 +40,9 @@ Integrate **Eventtia**, the all-in-one event management platform, directly into 
 - **list_all_events**: List all events managed in your Eventtia account
 - **list_event_sessions**: List all sessions and schedule items for a specific event
 - **list_event_speakers**: List all speakers registered for a specific event
+- **get_eventtia_account_metadata**: Retrieve metadata and limits for your Eventtia account
+- **get_event_performance_stats**: Get high-level performance metrics for a specific event
+- **get_event_detailed_data**: Get detailed settings and information for a specific event
 
 
 ## 💬 Prompt Examples

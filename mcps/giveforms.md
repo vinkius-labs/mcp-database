@@ -35,14 +35,14 @@ Connect your **GiveForms** account to any AI agent to automate your donation dat
 
 
 ## Available Tools (8)
+- **list_all_donations**: List all records
+- **list_recent_donations**: List latest records
 - **verify_api_connection**: Check connection
 - **find_donations_by_email**: Search donor by email
 - **find_donations_by_name**: Search donor by name
 - **get_organization_info**: Get org metadata
 - **get_donation_details**: Get donation metadata
 - **list_campaign_donations**: Filter by campaign
-- **list_all_donations**: List all records
-- **list_recent_donations**: List latest records
 
 
 ## 💬 Prompt Examples
