@@ -34,8 +34,6 @@ Connect to **Meteostat** to empower your AI agent with one of the largest databa
 
 
 ## Available Tools (10)
-- **point_daily**: Get historical daily point data
-- **point_hourly**: Get historical hourly point data
 - **point_monthly**: Get historical monthly point data
 - **point_normals**: Get climate normals for a point location
 - **stations_daily**: Max 10 years per request.
@@ -50,6 +48,8 @@ Get metadata for a specific weather station
 - **stations_monthly**: Get historical monthly statistics for a station
 - **stations_nearby**: Find nearby weather stations by geo location
 - **stations_normals**: Get climate normals for a station
+- **point_daily**: Get historical daily point data
+- **point_hourly**: Get historical hourly point data
 
 
 ## 💬 Prompt Examples

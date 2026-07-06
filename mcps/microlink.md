@@ -34,15 +34,15 @@ Connect **Microlink** to your AI agent to transform the web into a programmable 
 
 
 ## Available Tools (5)
+- **take_screenshot**: Can capture full page, specific elements, or emulate devices.
+
+Take a screenshot of a website
 - **advanced_query**: Advanced Microlink API query with full parameter control
 - **extract_metadata**: Extract structured metadata from any URL
 - **generate_pdf**: Supports custom formats, margins, and scaling.
 
 Generate a PDF from a website
 - **get_insights**: Get performance and technology insights for a URL
-- **take_screenshot**: Can capture full page, specific elements, or emulate devices.
-
-Take a screenshot of a website
 
 
 ## 💬 Prompt Examples

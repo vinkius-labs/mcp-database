@@ -34,14 +34,14 @@ Integrate **Lorem Picsum** into your AI workflows to instantly generate placehol
 
 
 ## Available Tools (6)
+- **get_seed_info**: Get metadata for a specific image seed
+- **get_specific_image_url**: Get a specific image URL by ID with dimensions and options
+- **list_images**: Retrieve a paginated list of available images
 - **get_image_info**: Get metadata for a specific image ID
 - **get_random_image_url**: Can be customized with dimensions, grayscale, blur, and file extensions.
 
 Get a random image URL with specified dimensions and options
 - **get_seed_image_url**: Get a static random image URL based on a seed string
-- **get_seed_info**: Get metadata for a specific image seed
-- **get_specific_image_url**: Get a specific image URL by ID with dimensions and options
-- **list_images**: Retrieve a paginated list of available images
 
 
 ## 💬 Prompt Examples

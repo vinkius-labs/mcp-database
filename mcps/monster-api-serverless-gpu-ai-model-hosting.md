@@ -34,12 +34,6 @@ Connect to **Monster API** to leverage high-performance AI models without managi
 
 
 ## Available Tools (5)
-- **generate_image_to_image**: Returns a process_id to poll for status.
-
-Modify an existing image based on a prompt
-- **generate_sdxl**: Returns a process_id to poll for status.
-
-Generate an image from text using SDXL
 - **generate_sunno_bark**: Returns a process_id to poll for status.
 
 Convert text into natural-sounding speech (TTS)
@@ -49,6 +43,12 @@ Transcribe audio to text using Whisper
 - **get_job_status**: Once status is COMPLETED, the response contains the output URL.
 
 Check the status of an asynchronous generation job
+- **generate_image_to_image**: Returns a process_id to poll for status.
+
+Modify an existing image based on a prompt
+- **generate_sdxl**: Returns a process_id to poll for status.
+
+Generate an image from text using SDXL
 
 
 ## 💬 Prompt Examples

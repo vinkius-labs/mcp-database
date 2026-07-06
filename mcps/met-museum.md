@@ -34,10 +34,10 @@ Connect to **The Metropolitan Museum of Art's Open Access API** and bring over 5
 
 
 ## Available Tools (4)
-- **list_departments**: List all valid departments
-- **get_object**: Get detailed record for a specific object
 - **list_objects**: List all valid Object IDs available
 - **search_objects**: Search for objects matching a query
+- **list_departments**: List all valid departments
+- **get_object**: Get detailed record for a specific object
 
 
 ## 💬 Prompt Examples

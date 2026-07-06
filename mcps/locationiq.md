@@ -36,7 +36,6 @@ Connect **LocationIQ** to your AI agent to access powerful location-based servic
 
 
 ## Available Tools (7)
-- **autocomplete**: Autocomplete API
 - **directions**: Directions API
 - **nearby**: ) around a given coordinate.
 
@@ -45,6 +44,7 @@ Nearby POI (Points of Interest)
 - **search**: Search / Forward Geocoding
 - **static_map**: Static Maps
 - **timezone**: Timezone API
+- **autocomplete**: Autocomplete API
 
 
 ## 💬 Prompt Examples

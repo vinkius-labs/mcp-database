@@ -32,11 +32,11 @@ Connect **MonkeyLearn** to your AI agent to perform advanced Natural Language Pr
 
 
 ## Available Tools (3)
+- **run_pipeline**: Run a MonkeyLearn pipeline on text
 - **classify_text**: g., Sentiment Analysis, Topic Classification) using a specific MonkeyLearn classifier model.
 
 Classify text into predefined labels
 - **extract_data**: Extract specific data from text
-- **run_pipeline**: Run a MonkeyLearn pipeline on text
 
 
 ## 💬 Prompt Examples

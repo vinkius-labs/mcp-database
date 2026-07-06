@@ -34,11 +34,6 @@ Connect your AI agent to any **MediaWiki** site (like Wikipedia or a private cor
 
 
 ## Available Tools (13)
-- **list_all_pages**: Enumerate all pages on the wiki
-- **list_category_members**: List all pages in a category
-- **create_account**: Requires a createaccount token fetched via get_tokens.
-
-Create a new user account
 - **edit_page**: Requires a CSRF token fetched via get_tokens.
 
 Edit a wiki page
@@ -51,6 +46,11 @@ Edit a wiki page
 - **get_site_info**: Get general wiki settings and site info
 - **get_tokens**: Fetch tokens for data-modifying actions
 - **get_user_info**: Get information about the current user
+- **list_all_pages**: Enumerate all pages on the wiki
+- **list_category_members**: List all pages in a category
+- **create_account**: Requires a createaccount token fetched via get_tokens.
+
+Create a new user account
 
 
 ## 💬 Prompt Examples

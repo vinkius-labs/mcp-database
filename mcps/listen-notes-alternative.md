@@ -34,10 +34,6 @@ Connect your AI agent to **Listen Notes**, the premier search engine for podcast
 
 
 ## Available Tools (14)
-- **batch_episodes**: Batch fetch metadata for multiple episodes using their IDs
-- **batch_podcasts**: Batch fetch metadata for multiple podcasts
-- **create_playlist**: Create or update a playlist
-- **get_best_podcasts**: Fetch a list of the best podcasts by genre or region
 - **get_episode**: Fetch detailed metadata for a specific episode
 - **get_genres**: Fetch a list of all podcast genres and their IDs
 - **get_just_listen**: Fetch a random episode (the "I'm Feeling Lucky" of podcasts)
@@ -48,6 +44,10 @@ Connect your AI agent to **Listen Notes**, the premier search engine for podcast
 - **search_episode_titles**: Targeted search for individual episodes by title
 - **search**: Full-text search on episodes, podcasts, or curated lists
 - **typeahead**: Suggest search terms, genres, and podcasts as the user types
+- **batch_episodes**: Batch fetch metadata for multiple episodes using their IDs
+- **batch_podcasts**: Batch fetch metadata for multiple podcasts
+- **create_playlist**: Create or update a playlist
+- **get_best_podcasts**: Fetch a list of the best podcasts by genre or region
 
 
 ## 💬 Prompt Examples

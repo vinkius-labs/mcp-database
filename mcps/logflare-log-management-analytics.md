@@ -33,6 +33,9 @@ Connect your **Logflare** account to any AI agent to monitor, analyze, and manag
 
 
 ## Available Tools (5)
+- **query_endpoint_by_name**: Pass interpolation parameters as a JSON object.
+
+Query a Logflare Endpoint by Name
 - **ingest_logs_by_id**: Requires ingest scope.
 
 Ingest log events into a Logflare source by UUID
@@ -45,9 +48,6 @@ Execute an ad-hoc SQL query against Logflare
 - **query_endpoint_by_id**: Pass interpolation parameters as a JSON object.
 
 Query a Logflare Endpoint by UUID
-- **query_endpoint_by_name**: Pass interpolation parameters as a JSON object.
-
-Query a Logflare Endpoint by Name
 
 
 ## 💬 Prompt Examples

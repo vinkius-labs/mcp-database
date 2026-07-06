@@ -34,8 +34,6 @@ Connect your **MailerLite** account to any AI agent to streamline your email mar
 
 
 ## Available Tools (51)
-- **assign_subscriber_to_group**: Assign subscriber to a group
-- **cancel_campaign**: Cancel a campaign
 - **create_automation**: Create a draft automation
 - **create_campaign**: Create a campaign
 - **create_field**: Create a custom field
@@ -85,6 +83,8 @@ List all subscribers
 - **update_group**: Update a group
 - **update_segment**: Update a segment
 - **update_shop**: Update an e-commerce shop
+- **assign_subscriber_to_group**: Assign subscriber to a group
+- **cancel_campaign**: Cancel a campaign
 - **update_subscriber**: Update a subscriber
 - **update_webhook**: Update a webhook
 

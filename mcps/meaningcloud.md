@@ -35,14 +35,14 @@ Unlock the power of Natural Language Processing with **MeaningCloud**. This serv
 
 
 ## Available Tools (6)
-- **categorize_text**: g., IAB_2.0_en, Business_en).
-
-Assign categories to a text based on a taxonomy
-- **cluster_text**: Group a collection of documents into clusters
 - **detect_language**: Identify the language of a text
 - **analyze_sentiment**: Analyze the sentiment of a text
 - **summarize_text**: Extract the most relevant sentences to create a summary
 - **extract_topics**: Extract topics, entities, and concepts from text
+- **categorize_text**: g., IAB_2.0_en, Business_en).
+
+Assign categories to a text based on a taxonomy
+- **cluster_text**: Group a collection of documents into clusters
 
 
 ## 💬 Prompt Examples

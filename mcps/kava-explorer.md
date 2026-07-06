@@ -33,8 +33,6 @@ Connect your AI agent to the **Kava Network** through this comprehensive explore
 
 
 ## Available Tools (10)
-- **get_account_info**: Get basic information for a Kava account
-- **get_account_reward_slash**: Get rewards and slashes for an account
 - **get_account_token**: Get token balances for an account
 - **get_block**: Get block details by height or hash
 - **list_blocks**: Get a list of blocks
@@ -43,6 +41,8 @@ Connect your AI agent to the **Kava Network** through this comprehensive explore
 - **list_extrinsics**: Get a list of extrinsics
 - **get_validator**: Get details for a specific validator
 - **list_validators**: Get a list of validators
+- **get_account_info**: Get basic information for a Kava account
+- **get_account_reward_slash**: Get rewards and slashes for an account
 
 
 ## 💬 Prompt Examples

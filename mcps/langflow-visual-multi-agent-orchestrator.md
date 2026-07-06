@@ -34,12 +34,6 @@ Connect your **Langflow** instance to any AI agent and take full control of your
 
 
 ## Available Tools (24)
-- **create_flow**: Create a new flow
-- **create_project**: Create a new project
-- **create_response**: Uses flow_id as the model.
-
-OpenAI compatible responses endpoint
-- **delete_file_v2**: Delete a file (v2)
 - **delete_flow**: Delete a flow
 - **delete_project**: Delete a project
 - **get_file_v2**: Download a file (v2)
@@ -62,6 +56,12 @@ Execute a Langflow flow
 - **update_flow**: Update an existing flow
 - **update_project**: Update project info
 - **whoami**: Get current authenticated user info
+- **create_flow**: Create a new flow
+- **create_project**: Create a new project
+- **create_response**: Uses flow_id as the model.
+
+OpenAI compatible responses endpoint
+- **delete_file_v2**: Delete a file (v2)
 
 
 ## 💬 Prompt Examples

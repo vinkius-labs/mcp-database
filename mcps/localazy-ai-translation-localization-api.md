@@ -34,7 +34,6 @@ Connect your **Localazy** account to any AI agent to automate your localization 
 
 
 ## Available Tools (23)
-- **create_glossary_term**: Create a new glossary term
 - **create_project**: Create a new project inside the given organization
 - **delete_glossary_term**: Delete a glossary term
 - **delete_screenshot**: Delete a screenshot
@@ -59,6 +58,7 @@ List projects accessible with the current token
 - **update_source_key**: Modify properties of a source key
 - **update_webhooks**: Update webhook configurations for a project
 - **upload_screenshot**: Upload a new screenshot (Base64 encoded image)
+- **create_glossary_term**: Create a new glossary term
 
 
 ## 💬 Prompt Examples

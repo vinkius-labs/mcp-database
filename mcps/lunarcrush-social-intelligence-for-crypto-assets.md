@@ -34,13 +34,13 @@ Connect **LunarCrush** to any AI agent to unlock deep social insights for the cr
 
 
 ## Available Tools (5)
+- **get_galaxy_score**: Get Galaxy Score for a specific coin
+- **get_market_metrics**: Get market metrics for a coin
+- **get_social_metrics**: Get detailed social metrics for a coin
 - **get_altrank**: Get AltRank for a specific coin
 - **list_assets**: Can be filtered by symbol, sorted, and limited.
 
 Retrieve a list of all supported assets or specific details
-- **get_galaxy_score**: Get Galaxy Score for a specific coin
-- **get_market_metrics**: Get market metrics for a coin
-- **get_social_metrics**: Get detailed social metrics for a coin
 
 
 ## 💬 Prompt Examples
