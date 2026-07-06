@@ -36,16 +36,16 @@ No more manual status checking or complex transfer management through fragmented
 
 
 ## Available Tools (10)
-- **complete_transfer**: Finalize a file transfer
-- **delete_transfer**: Delete a transfer
-- **get_configuration**: Get account configuration
-- **get_transfer_details**: Get details of a specific transfer
-- **get_user**: Get user profile
 - **initialize_transfer**: Initialize a new file transfer
 - **list_contacts**: List contacts
 - **list_received_transfers**: List received transfers (inbox)
 - **list_sent_transfers**: List sent transfers
 - **login**: Login to Filemail
+- **complete_transfer**: Finalize a file transfer
+- **delete_transfer**: Delete a transfer
+- **get_configuration**: Get account configuration
+- **get_transfer_details**: Get details of a specific transfer
+- **get_user**: Get user profile
 
 
 ## 💬 Prompt Examples

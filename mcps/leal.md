@@ -23,18 +23,18 @@ Connect your **Leal** account to any AI agent and manage customer loyalty operat
 
 
 ## Available Tools (12)
-- **check_leal_status**: Verify API connectivity
-- **get_member_balance**: Get points balance
-- **get_member**: Get member profile
-- **get_member_transactions**: Get member transactions
-- **get_segment**: Get segment details
 - **get_store**: Get store details
-- **list_campaigns**: List marketing campaigns
 - **list_members**: List loyalty members
 - **list_rewards**: List available rewards
 - **list_segments**: List customer segments
 - **list_stores**: List stores
 - **list_transactions**: List all transactions
+- **check_leal_status**: Verify API connectivity
+- **get_member_balance**: Get points balance
+- **get_member**: Get member profile
+- **get_member_transactions**: Get member transactions
+- **get_segment**: Get segment details
+- **list_campaigns**: List marketing campaigns
 
 
 ## 💬 Prompt Examples

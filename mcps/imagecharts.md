@@ -35,9 +35,6 @@ Connect **ImageCharts** to any AI agent and generate data visualizations through
 
 
 ## Available Tools (10)
-- **generate_bar_chart**: Generate a bar chart image
-- **generate_bubble_chart**: Generate a bubble chart image
-- **generate_doughnut_chart**: Generate a doughnut chart image
 - **generate_line_chart**: Generate a line chart image
 - **generate_pie_chart**: Generate a pie chart image
 - **generate_polar_area_chart**: Generate a polar area chart image
@@ -45,6 +42,9 @@ Connect **ImageCharts** to any AI agent and generate data visualizations through
 - **generate_radar_chart**: Generate a radar chart image
 - **generate_scatter_plot**: Generate a scatter plot image
 - **generate_venn_diagram**: Generate a Venn diagram image
+- **generate_bar_chart**: Generate a bar chart image
+- **generate_bubble_chart**: Generate a bubble chart image
+- **generate_doughnut_chart**: Generate a doughnut chart image
 
 
 ## 💬 Prompt Examples

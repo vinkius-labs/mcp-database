@@ -28,7 +28,6 @@ Connect your **PDF Munk** account to any AI agent and simplify your document gen
 
 
 ## Available Tools (12)
-- **add_watermark**: Add watermark
 - **check_pdfmunk_status**: Verify connectivity
 - **compress_pdf**: Compress PDF
 - **generate_pdf_from_html**: Generate PDF from HTML
@@ -40,6 +39,7 @@ Connect your **PDF Munk** account to any AI agent and simplify your document gen
 - **list_templates**: List templates
 - **merge_pdfs**: Merge PDFs
 - **split_pdf**: Split PDF
+- **add_watermark**: Add watermark
 
 
 ## 💬 Prompt Examples

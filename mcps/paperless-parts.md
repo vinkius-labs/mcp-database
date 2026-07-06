@@ -35,12 +35,6 @@ No more wrestling with multiple browser windows to verify an order's status. You
 
 
 ## Available Tools (12)
-- **create_account**: Requires a JSON string containing the account details.
-
-Create a new account
-- **create_contact**: Requires a JSON string containing the contact details.
-
-Create a new contact
 - **get_account**: Get a specific account by ID
 - **get_contact**: Get a specific contact by ID
 - **get_order**: Get a specific order by ID
@@ -51,6 +45,12 @@ Create a new contact
 - **list_orders**: List orders from Paperless Parts
 - **list_quotes**: List quotes from Paperless Parts
 - **update_quote_status**: Update the status of a specific quote
+- **create_account**: Requires a JSON string containing the account details.
+
+Create a new account
+- **create_contact**: Requires a JSON string containing the contact details.
+
+Create a new contact
 
 
 ## 💬 Prompt Examples

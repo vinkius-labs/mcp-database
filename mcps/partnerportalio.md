@@ -36,8 +36,6 @@ No more manual status checking in the portal. Your AI acts as a dedicated channe
 
 
 ## Available Tools (11)
-- **check_api_status**: Verify API connectivity and account status
-- **create_lead**: Create a new lead
 - **get_account**: Get details for a specific account
 - **get_deal**: Get details for a specific deal
 - **get_lead**: Get details for a specific lead
@@ -49,6 +47,8 @@ No more manual status checking in the portal. Your AI acts as a dedicated channe
 List leads in PartnerPortal.io
 - **list_partners**: List partners in PartnerPortal.io
 - **update_lead**: Update an existing lead
+- **check_api_status**: Verify API connectivity and account status
+- **create_lead**: Create a new lead
 
 
 ## 💬 Prompt Examples

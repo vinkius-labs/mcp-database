@@ -36,16 +36,16 @@ No more manual payment processing for small incentives. Your AI acts as your ded
 
 
 ## Available Tools (6)
-- **add_reward_lead**: Pass data in JSON.
-
-Add a lead to a reward campaign
-- **get_wallet_balance**: Check current rewards wallet balance
-- **get_campaign_details**: Get specific campaign details
 - **list_reward_campaigns**: List active reward campaigns
 - **list_reward_history**: List history of sent rewards
 - **send_reward**: Pass data as a JSON string.
 
 Send a reward or incentive
+- **add_reward_lead**: Pass data in JSON.
+
+Add a lead to a reward campaign
+- **get_wallet_balance**: Check current rewards wallet balance
+- **get_campaign_details**: Get specific campaign details
 
 
 ## 💬 Prompt Examples

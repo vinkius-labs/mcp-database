@@ -37,11 +37,11 @@ Connect your **Kylas** account to any AI agent and manage your sales CRM through
 - **create_lead**: Pass data as a JSON string.
 
 Create a new lead
-- **get_lead**: Get specific lead details
 - **list_contacts**: List all CRM contacts
 - **list_deals**: List all CRM deals
 - **list_leads**: List all Kylas leads
 - **list_tasks**: List CRM tasks
+- **get_lead**: Get specific lead details
 
 
 ## 💬 Prompt Examples

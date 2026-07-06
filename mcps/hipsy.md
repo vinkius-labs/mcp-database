@@ -37,11 +37,6 @@ Connect your **Hipsy** account to any AI agent and manage your event ticketing o
 
 
 ## Available Tools (16)
-- **check_hipsy_status**: Verify connectivity
-- **get_event_revenue**: Get event revenue
-- **get_event**: Get event details
-- **get_order**: Get order details
-- **get_organisation**: Get organisation details
 - **get_scan_stats**: Get scan statistics
 - **list_attendees**: List attendees
 - **list_events**: List all events
@@ -53,6 +48,11 @@ Connect your **Hipsy** account to any AI agent and manage your event ticketing o
 - **list_ticket_types**: List ticket types
 - **list_upcoming_events**: List upcoming events
 - **list_webhooks**: List webhooks
+- **check_hipsy_status**: Verify connectivity
+- **get_event_revenue**: Get event revenue
+- **get_event**: Get event details
+- **get_order**: Get order details
+- **get_organisation**: Get organisation details
 
 
 ## 💬 Prompt Examples

@@ -34,7 +34,6 @@ Connect your **Maildroppa** account to any AI agent and manage email marketing t
 
 
 ## Available Tools (12)
-- **add_tag_to_subscriber**: Apply a tag to a subscriber
 - **create_segment**: Create a new subscriber segment
 - **create_subscriber**: Add a new subscriber
 - **create_tag**: Create a new tag type
@@ -46,6 +45,7 @@ Connect your **Maildroppa** account to any AI agent and manage email marketing t
 - **list_tags**: List all available tags
 - **update_subscriber_field**: Update a specific field for a subscriber
 - **update_subscriber**: Update subscriber information
+- **add_tag_to_subscriber**: Apply a tag to a subscriber
 
 
 ## 💬 Prompt Examples

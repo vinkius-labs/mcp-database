@@ -36,7 +36,6 @@ No more manual scrubbing through shipping logs or complex warehouse tables. Your
 
 
 ## Available Tools (12)
-- **check_api_health**: Verify Fizzpa API connectivity
 - **create_new_order**: Requires customer name and line items.
 
 Add a new order to the system
@@ -52,6 +51,7 @@ List all customer orders
 - **list_catalog_products**: List all products in the catalog
 - **list_configured_webhooks**: List active webhooks
 - **update_order_info**: Modify an existing order
+- **check_api_health**: Verify Fizzpa API connectivity
 
 
 ## 💬 Prompt Examples

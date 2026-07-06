@@ -34,12 +34,6 @@ Connect your **Megaventory** account to any AI agent and manage inventory and or
 
 
 ## Available Tools (14)
-- **check_megaventory_status**: Verify connectivity
-- **list_categories**: List product categories
-- **list_supplier_clients**: List suppliers and clients
-- **list_locations**: List inventory locations
-- **get_product**: Get product by SKU
-- **list_products**: List products
 - **list_purchase_orders**: List purchase orders
 - **get_sales_order**: Get sales order details
 - **list_sales_orders**: List sales orders
@@ -48,6 +42,12 @@ Connect your **Megaventory** account to any AI agent and manage inventory and or
 - **update_supplier_client**: Update supplier/client
 - **update_product**: Update a product
 - **update_sales_order**: Update sales order
+- **check_megaventory_status**: Verify connectivity
+- **list_categories**: List product categories
+- **list_supplier_clients**: List suppliers and clients
+- **list_locations**: List inventory locations
+- **get_product**: Get product by SKU
+- **list_products**: List products
 
 
 ## 💬 Prompt Examples

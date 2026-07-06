@@ -40,12 +40,12 @@ No more manual logging into complex legal dashboards or missing case updates. Yo
 - **get_matter**: Get details for a specific matter
 - **list_companies**: List companies/clients
 - **list_contacts**: List contacts
+- **list_tasks**: List legal tasks
+- **list_time_logs**: List time entries
 - **list_documents**: List uploaded documents
 - **list_invoices**: List legal invoices
 - **list_litigation**: List litigation cases
 - **list_matters**: List legal matters
-- **list_tasks**: List legal tasks
-- **list_time_logs**: List time entries
 
 
 ## 💬 Prompt Examples

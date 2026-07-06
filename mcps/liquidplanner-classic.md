@@ -34,12 +34,6 @@ Connect your **LiquidPlanner Classic** workspace to any AI agent and manage proj
 
 
 ## Available Tools (10)
-- **create_project**: Create a new project in the default workspace
-- **create_task**: Requires parent_id if it should be nested under a project or folder.
-
-Create a new task in the default workspace
-- **get_project**: Get details of a specific project
-- **get_task**: Get details of a specific task
 - **get_workspace**: Uses the default configured workspace if no ID is provided.
 
 Get details of a specific workspace or the default workspace
@@ -48,6 +42,12 @@ Get details of a specific workspace or the default workspace
 - **list_tasks**: List tasks in the default workspace
 - **list_workspaces**: List workspaces from LiquidPlanner Classic
 - **update_task**: Update an existing task in the default workspace
+- **create_project**: Create a new project in the default workspace
+- **create_task**: Requires parent_id if it should be nested under a project or folder.
+
+Create a new task in the default workspace
+- **get_project**: Get details of a specific project
+- **get_task**: Get details of a specific task
 
 
 ## 💬 Prompt Examples

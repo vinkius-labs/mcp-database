@@ -36,12 +36,6 @@ No more manual status checking or complex form navigation in the fax dashboard. 
 
 
 ## Available Tools (8)
-- **get_account_info**: Use this to determine the current identity and account context.
-
-Retrieve current Fax.Plus account details
-- **cancel_outbox_job**: Requires the unique outbox job ID.
-
-Cancel a pending fax job
 - **get_fax_details**: Includes information about the recipient, sender, and delivery status.
 
 Get details for a specific fax
@@ -60,6 +54,12 @@ Search for available fax numbers
 - **send_fax**: Requires the recipient phone number in E.164 format and allows for optional comments. Files are typically managed via the Fax.Plus outbox logic.
 
 Send a new digital fax
+- **get_account_info**: Use this to determine the current identity and account context.
+
+Retrieve current Fax.Plus account details
+- **cancel_outbox_job**: Requires the unique outbox job ID.
+
+Cancel a pending fax job
 
 
 ## 💬 Prompt Examples

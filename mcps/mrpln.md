@@ -34,7 +34,6 @@ Connect your **MRPLN** account to any AI agent to streamline your marketing auto
 
 
 ## Available Tools (10)
-- **create_customer**: Create a new customer/lead
 - **get_customer**: Get details for a specific customer
 - **get_tactic_performance**: Get performance analytics for a tactic
 - **list_customers**: List all customers/leads
@@ -46,6 +45,7 @@ Connect your **MRPLN** account to any AI agent to streamline your marketing auto
 
 Send a WhatsApp message
 - **update_customer**: Update an existing customer
+- **create_customer**: Create a new customer/lead
 
 
 ## 💬 Prompt Examples

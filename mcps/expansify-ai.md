@@ -36,14 +36,14 @@ No more manual copy-pasting or switching between tools to check SEO rankings. Yo
 
 
 ## Available Tools (6)
+- **list_campaigns**: List all AI content campaigns
+- **list_generated_content**: List generated AI content
+- **list_tracked_keywords**: List tracked SEO keywords
 - **analyze_keyword_seo**: Analyze a keyword for SEO
 - **create_campaign**: Create a new content campaign
 - **generate_ai_content**: ).
 
 Generate new AI content
-- **list_campaigns**: List all AI content campaigns
-- **list_generated_content**: List generated AI content
-- **list_tracked_keywords**: List tracked SEO keywords
 
 
 ## 💬 Prompt Examples

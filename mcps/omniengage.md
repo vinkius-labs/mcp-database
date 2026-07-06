@@ -36,12 +36,6 @@ No more manual status checking in the portal. Your AI acts as a dedicated sales 
 
 
 ## Available Tools (12)
-- **create_prospect**: Pass data as a JSON string.
-
-Add a new prospect
-- **delete_prospect**: Remove a prospect from the system
-- **get_campaign_details**: Get details for a specific campaign
-- **get_prospect_details**: Get specific prospect details
 - **check_api_status**: Verify API connectivity and account status
 - **launch_campaign**: Pass data as a JSON string.
 
@@ -52,6 +46,12 @@ Launch a new outreach campaign
 - **list_tags**: List all prospect tags
 - **list_webhooks**: List configured synchronization webhooks
 - **update_prospect**: Update an existing prospect
+- **create_prospect**: Pass data as a JSON string.
+
+Add a new prospect
+- **delete_prospect**: Remove a prospect from the system
+- **get_campaign_details**: Get details for a specific campaign
+- **get_prospect_details**: Get specific prospect details
 
 
 ## 💬 Prompt Examples

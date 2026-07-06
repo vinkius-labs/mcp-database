@@ -29,7 +29,6 @@ Ideal for project managers and teams needing instant, conversational access to t
 
 
 ## Available Tools (16)
-- **check_peerbie_status**: Verify connectivity
 - **create_post**: Create a feed post
 - **create_project**: Create a project
 - **create_task**: Create a task
@@ -42,9 +41,10 @@ Ideal for project managers and teams needing instant, conversational access to t
 - **list_members**: List workspace members
 - **list_projects**: List projects
 - **list_tasks_by_project**: List tasks by project
-- **list_tasks**: List all tasks
 - **list_teams**: List teams
 - **update_task**: Update a task
+- **check_peerbie_status**: Verify connectivity
+- **list_tasks**: List all tasks
 
 
 ## 💬 Prompt Examples

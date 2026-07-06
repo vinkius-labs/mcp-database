@@ -36,8 +36,6 @@ No more manual data entry into the live chat dashboard. Your AI acts as your ded
 
 
 ## Available Tools (12)
-- **check_formilla_status**: Verify connectivity
-- **delete_contact**: Delete a contact
 - **get_contact_by_email**: Get contact by email
 - **get_contact**: Get contact details
 - **get_conversation**: Get conversation details
@@ -48,6 +46,8 @@ No more manual data entry into the live chat dashboard. Your AI acts as your ded
 - **search_contacts**: Search contacts
 - **update_contact**: Update a contact
 - **upsert_contact**: Create or update contact
+- **check_formilla_status**: Verify connectivity
+- **delete_contact**: Delete a contact
 
 
 ## 💬 Prompt Examples
