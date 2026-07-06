@@ -33,13 +33,13 @@ Integrate the industry-leading API design and documentation capabilities of **St
 
 
 ## Available Tools (7)
-- **get_node_details**: Retrieves details for a specific documentation node
 - **get_project_details**: Retrieves details for a specific Stoplight project
 - **list_workspace_activity**: Lists recent activity logs for a Stoplight workspace
-- **list_workspace_members**: Lists all members of a Stoplight workspace
 - **list_project_nodes**: Lists all documentation nodes (files, endpoints, models) within a project
 - **list_projects**: Lists all projects in a specific Stoplight workspace
 - **list_workspaces**: Lists all accessible Stoplight workspaces
+- **get_node_details**: Retrieves details for a specific documentation node
+- **list_workspace_members**: Lists all members of a Stoplight workspace
 
 
 ## 💬 Prompt Examples

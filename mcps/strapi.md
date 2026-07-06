@@ -33,13 +33,6 @@ Integrate the robust headless architecture of **Strapi** seamlessly into your co
 
 
 ## Available Tools (9)
-- **create_entry**: Provide the plural ID and a JSON string of fields.
-
-Creates a new entry for a specific content type
-- **delete_entry**: This action is irreversible.
-
-Permanently deletes a content entry
-- **get_entry_details**: Retrieves details for a specific content entry
 - **list_assets**: Lists media assets stored in the Strapi Media Library
 - **list_content_types**: Lists all content types (collections and single types) defined in Strapi
 - **list_entries**: Provide the plural ID of the content type (e.g., "articles").
@@ -52,6 +45,13 @@ Updates fields of an existing content entry
 - **upload_media_asset**: Provide the public file URL to be fetched and uploaded.
 
 Uploads a new file to the Media Library
+- **create_entry**: Provide the plural ID and a JSON string of fields.
+
+Creates a new entry for a specific content type
+- **delete_entry**: This action is irreversible.
+
+Permanently deletes a content entry
+- **get_entry_details**: Retrieves details for a specific content entry
 
 
 ## 💬 Prompt Examples

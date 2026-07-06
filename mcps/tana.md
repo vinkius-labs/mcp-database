@@ -33,9 +33,6 @@ Translate your AI conversation into structured personal knowledge management sea
 
 
 ## Available Tools (10)
-- **add_checkbox_task**: Optionally set initial done status.
-
-Creates a checkbox/todo item in the Tana inbox
 - **add_date_node**: Format: YYYY-MM-DD.
 
 Creates a date-typed node in the Tana inbox
@@ -59,6 +56,9 @@ Creates a supertagged node with structured field values
 - **define_supertag**: Provide a name and description.
 
 Defines a new supertag in the Tana schema
+- **add_checkbox_task**: Optionally set initial done status.
+
+Creates a checkbox/todo item in the Tana inbox
 
 
 ## 💬 Prompt Examples

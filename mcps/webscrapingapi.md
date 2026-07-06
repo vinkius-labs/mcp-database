@@ -42,6 +42,7 @@ No more manual selector debugging or proxy management. Your AI agent becomes you
 - **custom_api_scrape**: g. country, session, wait_for).
 
 Execute a scrape using advanced custom parameters
+- **search_bing_serp**: Retrieve structured search engine results from Bing
 - **scrape_and_auto_extract**: g. for news or product pages).
 
 Scrape with automatic structured data extraction
@@ -56,7 +57,6 @@ Scrape raw HTML from any URL using WebScrapingAPI datacenter proxies
 Scrape JS-rendered HTML using WebScrapingAPI headless browser
 - **scrape_as_mobile**: Scrape as a mobile device using WebScrapingAPI device emulation
 - **scrape_via_residential_proxy**: Scrape using residential proxies for high anonymity and bypass
-- **search_bing_serp**: Retrieve structured search engine results from Bing
 - **search_google_serp**: Provide a query string.
 
 Retrieve structured search engine results from Google

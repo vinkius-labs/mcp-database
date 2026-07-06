@@ -34,7 +34,6 @@ Connect your **Telnyx** account to any AI agent and manage your voice and messag
 
 
 ## Available Tools (10)
-- **create_messaging_profile**: Creates a new messaging profile
 - **delete_messaging_profile**: This action is irreversible.
 
 Permanently deletes a messaging profile
@@ -49,6 +48,7 @@ Lists all phone numbers owned by the account
 - **send_text_message**: Provide a registered Telnyx from_number and a target to_number in E.164 format.
 
 Sends an outbound SMS message via Telnyx
+- **create_messaging_profile**: Creates a new messaging profile
 - **send_media_message**: Provide from/to numbers and a 100% public JPEG/PNG URL.
 
 Sends an outbound MMS message with a media URL

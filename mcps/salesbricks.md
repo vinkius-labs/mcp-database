@@ -29,9 +29,6 @@ Connect your conversational assistant natively to **Salesbricks**, the fastest w
 
 
 ## Available Tools (10)
-- **create_customer**: Specify company name and email.
-
-Creates a new customer in Salesbricks
 - **create_subscription**: Provide a JSON object with customerId and plan details.
 
 Creates a new subscription for a customer
@@ -47,6 +44,9 @@ Deletes a customer from Salesbricks
 
 Records a usage event for a customer
 - **update_customer**: Updates an existing customer's name
+- **create_customer**: Specify company name and email.
+
+Creates a new customer in Salesbricks
 
 
 ## 💬 Prompt Examples

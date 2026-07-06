@@ -27,6 +27,7 @@ Power users, multi-disciplinary analysts, data scientists, and anyone building O
 
 
 ## Available Tools (30)
+- **search_regions**: List World Bank geographic regions
 - **get_indicator_data**: g. SP.POP.TOTL) and country code (e.g. BRA, WLD).
 
 Get any World Bank indicator for any country/region
@@ -58,7 +59,6 @@ Search the catalog of 29,506 World Bank indicators
 - **list_topics**: List all World Bank Topics (Categories)
 - **get_agriculture_gdp**: Get Agriculture, forestry, and fishing, value added (% of GDP)
 - **list_countries**: List World Bank countries
-- **search_regions**: List World Bank geographic regions
 - **search_income_levels**: g., HIC, LIC).
 
 List World Bank income levels

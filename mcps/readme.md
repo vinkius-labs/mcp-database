@@ -33,7 +33,6 @@ Connect your **ReadMe** documentation hub directly to your AI agent. Enabling th
 
 
 ## Available Tools (10)
-- **list_categories**: Lists all documentation categories on ReadMe
 - **get_category**: Retrieves details for a specific documentation category
 - **get_category_docs**: Lists all documentation pages under a specific category
 - **get_doc**: Retrieves the full content of a documentation page
@@ -43,6 +42,7 @@ Connect your **ReadMe** documentation hub directly to your AI agent. Enabling th
 - **list_custom_pages**: Lists all custom standalone pages
 - **get_custom_page**: Retrieves the full content of a custom page
 - **get_project**: Retrieves details about the ReadMe project
+- **list_categories**: Lists all documentation categories on ReadMe
 
 
 ## 💬 Prompt Examples

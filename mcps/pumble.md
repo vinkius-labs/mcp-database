@@ -33,14 +33,6 @@ Connect your **Pumble** workspace to any AI agent and bring powerful automation 
 
 
 ## Available Tools (10)
-- **chat_add_reaction**: Adds an emoji reaction to a message
-- **chat_delete_message**: This action is irreversible.
-
-Deletes a message from a Pumble channel
-- **chat_history_messages**: Retrieves recent messages from a channel
-- **chat_post_message**: Specify the channel ID and the message text.
-
-Sends a message to a Pumble channel
 - **chat_update_message**: Updates a pre-existing message
 - **create_chat_channel**: Specify name and whether it should be private.
 
@@ -49,6 +41,14 @@ Creates a new communication channel
 - **get_user_info**: Retrieves detailed information for a specific user
 - **list_all_channels**: Lists all public and private channels available in the workspace
 - **list_workspace_users**: Lists all users in the Pumble workspace
+- **chat_add_reaction**: Adds an emoji reaction to a message
+- **chat_delete_message**: This action is irreversible.
+
+Deletes a message from a Pumble channel
+- **chat_history_messages**: Retrieves recent messages from a channel
+- **chat_post_message**: Specify the channel ID and the message text.
+
+Sends a message to a Pumble channel
 
 
 ## 💬 Prompt Examples

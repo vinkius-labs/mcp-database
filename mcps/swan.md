@@ -31,7 +31,6 @@ The **Swan MCP Server** embeds a complete European Banking-as-a-Service architec
 
 
 ## Available Tools (9)
-- **swan_add_virtual_card**: Provisions a robust Mastercard Virtual Debit
 - **swan_cancel_card**: Permanently cancel a specific corporate card
 - **swan_create_account**: Requires an existing AccountHolderId.
 
@@ -42,6 +41,7 @@ Dynamically provision a European Account under your ledger
 - **swan_get_transactions**: Retrieve the ledger history for a specific Account
 - **swan_list_cards**: List all physical and virtual cards
 - **swan_simulate_incoming_transfer**: Sandbox Only - Inject fake money
+- **swan_add_virtual_card**: Provisions a robust Mastercard Virtual Debit
 
 
 ## 💬 Prompt Examples

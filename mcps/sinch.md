@@ -33,9 +33,6 @@ Connect your AI to **Sinch**, the global cloud communications platform for SMS m
 
 
 ## Available Tools (10)
-- **cancel_sms_batch**: This action is irreversible for the remaining messages.
-
-Cancels a pending SMS batch
 - **create_sms_group**: Creates a new contact group
 - **delete_sms_group**: This action is irreversible.
 
@@ -49,6 +46,9 @@ Permanently deletes a contact group
 
 Sends a text message (SMS) to one or more recipients
 - **update_sms_batch**: Updates parameters of an existing SMS batch
+- **cancel_sms_batch**: This action is irreversible for the remaining messages.
+
+Cancels a pending SMS batch
 
 
 ## 💬 Prompt Examples

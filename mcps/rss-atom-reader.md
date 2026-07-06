@@ -31,10 +31,10 @@ Connect your conversational assistant to read and analyze data natively from any
 
 
 ## Available Tools (2)
-- **read_default_feed**: Reads the default configured RSS feed
 - **read_feed**: Specify the URL and an optional limit.
 
 Reads and parses an RSS or Atom feed from a provided URL
+- **read_default_feed**: Reads the default configured RSS feed
 
 
 ## 💬 Prompt Examples

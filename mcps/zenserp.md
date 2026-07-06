@@ -39,7 +39,6 @@ No more manual search scraping or proxy management. Your AI agent becomes your g
 
 
 ## Available Tools (10)
-- **search_bing**: Retrieves organic search results from Microsoft Bing
 - **search_duckduckgo**: Retrieves organic search results from DuckDuckGo
 - **search_images**: Retrieves image search results from Google
 - **search_maps**: Retrieves local business listings and reviews from Google Maps
@@ -50,9 +49,10 @@ Retrieves current news articles from Google News
 
 Retrieves organic search results from Google
 - **search_shopping**: Retrieves product prices and availability from Google Shopping
-- **search_videos**: Retrieves video search results from Google Video search
 - **search_yandex**: Retrieves search results from the Yandex search engine
 - **search_youtube**: Retrieves search results directly from the YouTube platform
+- **search_bing**: Retrieves organic search results from Microsoft Bing
+- **search_videos**: Retrieves video search results from Google Video search
 
 
 ## 💬 Prompt Examples

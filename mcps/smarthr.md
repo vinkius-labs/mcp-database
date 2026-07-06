@@ -35,14 +35,14 @@ Stop clicking through countless profiles on the SmartHR platform just to find ou
 
 
 ## Available Tools (8)
-- **list_crews**: Lists all employees (crews) in SmartHR
-- **get_crew_details**: Retrieves details for a specific employee
-- **list_departments**: Lists all organizational departments
 - **list_positions**: Lists all job positions or roles
 - **list_employment_types**: Lists all employment types
 - **list_payrolls**: Lists employee payroll records
 - **list_establishments**: Lists business establishments or office locations
 - **list_crew_dependents**: Lists dependents for a specific employee
+- **list_crews**: Lists all employees (crews) in SmartHR
+- **get_crew_details**: Retrieves details for a specific employee
+- **list_departments**: Lists all organizational departments
 
 
 ## 💬 Prompt Examples

@@ -32,15 +32,15 @@ Connect your AI agent to **Spider.cloud** — the fastest web scraping API in th
 
 
 ## Available Tools (3)
+- **spider_search**: Combines search + scrape in one API call for maximum efficiency.
+
+Search the web and scrape results in a single high-performance request via Spider.cloud
 - **spider_crawl**: Spider.cloud Rust engine follows internal links and scrapes each page. Configure depth and page limits to control scope.
 
 Crawl an entire website at blazing speed — up to 100K+ pages/second. Returns content from multiple pages following internal links
 - **spider_scrape**: cloud Rust-powered engine to scrape a single URL. Handles JavaScript rendering, anti-bot protection, and proxy rotation automatically. Supports multiple output formats: markdown (default), html, text.
 
 Scrape a single web page at high speed using Spider.cloud. Returns clean content in Markdown, HTML, or plain text format
-- **spider_search**: Combines search + scrape in one API call for maximum efficiency.
-
-Search the web and scrape results in a single high-performance request via Spider.cloud
 
 
 ## 💬 Prompt Examples

@@ -34,15 +34,6 @@ Teamwork is a comprehensive project management platform used by agencies and pro
 
 
 ## Available Tools (17)
-- **create_message**: Body should include title and body content.
-
-Post a new message in a project
-- **create_milestone**: Body should include title and deadline date.
-
-Create a new milestone in a project
-- **create_project**: Body should include name and optional settings.
-
-Create a new project
 - **create_task**: Body should include content, tasklist_id, assignee_ids, and due dates.
 
 Create a new task
@@ -67,6 +58,15 @@ List all task lists in a project
 - **list_tasks**: List all tasks in a project
 - **list_time_entries**: List all time entries in a project
 - **update_task**: Update an existing task
+- **create_message**: Body should include title and body content.
+
+Post a new message in a project
+- **create_milestone**: Body should include title and deadline date.
+
+Create a new milestone in a project
+- **create_project**: Body should include name and optional settings.
+
+Create a new project
 
 
 ## 💬 Prompt Examples

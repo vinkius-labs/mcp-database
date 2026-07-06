@@ -36,12 +36,6 @@ Stop interrupting engineers to ask where a specific document lives. Your AI agen
 
 
 ## Available Tools (12)
-- **list_posts**: Returns post IDs and titles.
-
-List all wiki posts/articles in the Slab workspace
-- **get_post_details**: Retrieve the full content and metadata of a specific Slab post
-- **search_posts**: Full-text search across all Slab posts
-- **list_topics**: List all topics organizing posts in the Slab workspace
 - **get_topic_details**: Retrieve details and list of posts for a specific Slab topic
 - **list_users**: List all members of the Slab organization
 - **get_organization**: Retrieve the Slab organization profile
@@ -54,6 +48,12 @@ Create a new wiki post in Slab
 
 Archive an existing Slab post
 - **list_recent_posts**: List the most recently updated posts
+- **list_posts**: Returns post IDs and titles.
+
+List all wiki posts/articles in the Slab workspace
+- **get_post_details**: Retrieve the full content and metadata of a specific Slab post
+- **search_posts**: Full-text search across all Slab posts
+- **list_topics**: List all topics organizing posts in the Slab workspace
 
 
 ## 💬 Prompt Examples

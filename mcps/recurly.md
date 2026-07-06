@@ -32,6 +32,12 @@ Connect your **Recurly** subscription billing and management platform securely t
 
 
 ## Available Tools (10)
+- **get_subscription_details**: Retrieves details for a specific subscription
+- **list_accounts**: Lists all customer accounts in Recurly
+- **list_catalog_plans**: Lists all available subscription plans in the product catalog
+- **list_invoices**: Lists all generated invoices
+- **list_subscriptions**: Lists all subscriptions managed by Recurly
+- **reactivate_subscription**: Reactivates a previously cancelled or expired subscription
 - **cancel_subscription**: This action is irreversible.
 
 Cancels an active subscription
@@ -40,12 +46,6 @@ Cancels an active subscription
 Creates a new customer account
 - **create_subscription**: Creates a new subscription for an account
 - **get_account_details**: Retrieves details for a specific customer account
-- **get_subscription_details**: Retrieves details for a specific subscription
-- **list_accounts**: Lists all customer accounts in Recurly
-- **list_catalog_plans**: Lists all available subscription plans in the product catalog
-- **list_invoices**: Lists all generated invoices
-- **list_subscriptions**: Lists all subscriptions managed by Recurly
-- **reactivate_subscription**: Reactivates a previously cancelled or expired subscription
 
 
 ## 💬 Prompt Examples
