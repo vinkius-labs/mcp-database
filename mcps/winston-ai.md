@@ -34,11 +34,6 @@ Connect your **Winston AI** account to any AI agent and simplify how you verify 
 
 
 ## Available Tools (11)
-- **detect_ai_file**: Detect AI content in a document file (via URL)
-- **detect_ai_image**: Detect if an image is AI-generated (via URL)
-- **detect_ai_text**: Higher score means more likely human.
-
-Detect AI content in a string of text
 - **detect_ai_url**: Detect AI content on a website URL
 - **fact_checker_file**: Verify facts in a document (via URL)
 - **fact_checker**: Verify facts in a text
@@ -47,6 +42,11 @@ Detect AI content in a string of text
 - **check_plagiarism_text**: Check text for plagiarism
 - **check_plagiarism_url**: Check a website URL for plagiarism
 - **text_compare**: Compare two texts for similarity
+- **detect_ai_file**: Detect AI content in a document file (via URL)
+- **detect_ai_image**: Detect if an image is AI-generated (via URL)
+- **detect_ai_text**: Higher score means more likely human.
+
+Detect AI content in a string of text
 
 
 ## 💬 Prompt Examples

@@ -35,12 +35,6 @@ Connect your **WorkflowMax by BlueRock** account to any AI agent to automate you
 
 
 ## Available Tools (12)
-- **create_client_contact**: Requires the client UUID and contact details.
-
-Create a new client contact
-- **create_client**: Requires a company or individual name.
-
-Create a new client
 - **create_job**: Requires essential details like name, client ID, and start date.
 
 Create a new job
@@ -61,6 +55,12 @@ List all tasks
 
 List timesheet entries
 - **update_job**: Update an existing job
+- **create_client_contact**: Requires the client UUID and contact details.
+
+Create a new client contact
+- **create_client**: Requires a company or individual name.
+
+Create a new client
 
 
 ## 💬 Prompt Examples

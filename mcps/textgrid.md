@@ -35,8 +35,6 @@ Connect your **TextGrid** account to any AI agent and simplify how you manage yo
 
 
 ## Available Tools (12)
-- **check_api_health**: Verify Textgrid API status
-- **initiate_voice_call**: Start a new voice call
 - **get_account_details**: Get account profile and balance
 - **get_message_details**: Get details for a specific message
 - **get_usage_statistics**: Retrieve usage and cost records
@@ -47,6 +45,8 @@ Connect your **TextGrid** account to any AI agent and simplify how you manage yo
 - **list_api_keys**: List account API keys
 - **list_sms_messages**: List sent and received SMS messages
 - **send_sms_message**: Send a new SMS or MMS
+- **check_api_health**: Verify Textgrid API status
+- **initiate_voice_call**: Start a new voice call
 
 
 ## 💬 Prompt Examples

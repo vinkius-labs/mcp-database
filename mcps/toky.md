@@ -35,8 +35,6 @@ Connect your **Toky** cloud phone system account to any AI agent and simplify ho
 
 
 ## Available Tools (10)
-- **create_contact**: Create a new Toky contact
-- **get_agent**: Get details for a specific Toky agent
 - **get_call**: Get details for a specific Toky call
 - **get_contact**: Get details for a specific Toky contact
 - **get_voicemail**: Get details for a specific Toky voicemail
@@ -53,6 +51,8 @@ List Toky contacts
 
 List Toky voicemails
 - **send_sms**: Send an SMS via Toky
+- **create_contact**: Create a new Toky contact
+- **get_agent**: Get details for a specific Toky agent
 
 
 ## 💬 Prompt Examples

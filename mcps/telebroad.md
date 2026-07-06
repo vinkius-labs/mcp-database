@@ -35,7 +35,6 @@ Connect your **Telebroad** business communication account to any AI agent and si
 
 
 ## Available Tools (12)
-- **get_profile**: Get the current Telebroad user profile
 - **get_sms_messages**: Get messages from a specific SMS conversation
 - **hangup_call**: Hang up an active call
 - **list_active_calls**: List currently active calls
@@ -47,6 +46,7 @@ Connect your **Telebroad** business communication account to any AI agent and si
 - **send_call**: Initiate a voice call
 - **send_fax**: Send a fax
 - **send_sms**: Send an SMS message
+- **get_profile**: Get the current Telebroad user profile
 
 
 ## 💬 Prompt Examples

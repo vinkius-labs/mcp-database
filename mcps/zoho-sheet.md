@@ -30,9 +30,6 @@ Essential for data analysts, operations teams, and administrative staff who requ
 
 
 ## Available Tools (13)
-- **add_row**: Add a data row
-- **create_workbook**: Create a workbook
-- **create_worksheet**: Create a worksheet
 - **delete_worksheet**: Delete a worksheet
 - **get_cells**: g. A1:D10).
 
@@ -45,6 +42,9 @@ Get cell contents
 - **list_worksheets**: List worksheets
 - **search_workbooks**: Search workbooks
 - **update_cells**: Update cells
+- **add_row**: Add a data row
+- **create_workbook**: Create a workbook
+- **create_worksheet**: Create a worksheet
 
 
 ## 💬 Prompt Examples

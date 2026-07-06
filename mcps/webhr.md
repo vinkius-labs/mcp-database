@@ -34,7 +34,6 @@ Connect your **WebHR** account to any AI agent to automate your human resource m
 
 
 ## Available Tools (11)
-- **get_attendance_summary**: Get aggregated attendance metrics
 - **get_employee_details**: Get details for an employee
 - **list_attendance_logs**: List clock-in/out records
 - **list_job_candidates**: List applicants for positions
@@ -47,6 +46,7 @@ List organizational departments
 - **list_available_leave_types**: List categories of leave
 - **list_leave_requests**: List employee leave history
 - **list_office_locations**: List company offices
+- **get_attendance_summary**: Get aggregated attendance metrics
 
 
 ## 💬 Prompt Examples

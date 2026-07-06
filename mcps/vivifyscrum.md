@@ -34,10 +34,6 @@ Connect your **VivifyScrum** account to any AI agent and simplify how you manage
 
 
 ## Available Tools (12)
-- **create_item**: Create a new task/story
-- **get_account_info**: Get account details
-- **get_board**: Get board details
-- **get_item**: Get item details
 - **get_worklogs**: Get board worklogs
 - **list_boards**: List all boards
 - **list_board_items**: List items on a board
@@ -46,6 +42,10 @@ Connect your **VivifyScrum** account to any AI agent and simplify how you manage
 - **list_teams**: List all teams
 - **list_webhooks**: List configured webhooks
 - **update_item**: Update an item
+- **create_item**: Create a new task/story
+- **get_account_info**: Get account details
+- **get_board**: Get board details
+- **get_item**: Get item details
 
 
 ## 💬 Prompt Examples

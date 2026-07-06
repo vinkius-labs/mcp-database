@@ -14,16 +14,16 @@ This MCP server allows you to manage users, groups, forums, and threads within V
 
 
 ## Available Tools (10)
-- **create_reply**: Reply to a forum thread
-- **create_thread**: Create a new forum thread
-- **get_group**: Get details for a specific group
-- **get_user**: Get details for a specific user
-- **list_forums**: List community forums
 - **list_groups**: List Verint Community groups
 - **list_replies**: List replies to a thread
 - **list_threads**: List threads in a forum
 - **list_users**: List Verint Community users
 - **search**: Search the community
+- **create_reply**: Reply to a forum thread
+- **create_thread**: Create a new forum thread
+- **get_group**: Get details for a specific group
+- **get_user**: Get details for a specific user
+- **list_forums**: List community forums
 
 
 ## 💬 Prompt Examples

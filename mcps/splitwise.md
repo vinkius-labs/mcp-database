@@ -25,18 +25,18 @@ Perfect for roommates, travel groups, and everyday individuals using AI tools li
 
 
 ## Available Tools (10)
-- **create_expense**: Expects a stringified JSON object containing details like cost, description, format details (e.g. users__0__user_id=123, users__0__paid_share=5.00, etc. or JSON).
-
-Create an expense
-- **delete_expense**: Delete an expense
-- **get_current_user**: Get current user details
-- **get_expense**: Get a specific expense
 - **get_expenses**: List expenses
 - **get_friend**: Get friend details
 - **get_friends**: List all friends
 - **get_group**: Get group details
 - **get_groups**: List all groups
 - **get_user**: Get user details by ID
+- **create_expense**: Expects a stringified JSON object containing details like cost, description, format details (e.g. users__0__user_id=123, users__0__paid_share=5.00, etc. or JSON).
+
+Create an expense
+- **delete_expense**: Delete an expense
+- **get_current_user**: Get current user details
+- **get_expense**: Get a specific expense
 
 
 ## 💬 Prompt Examples

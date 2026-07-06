@@ -27,13 +27,13 @@ Connect your **WA Smart Business** account to any AI agent and simplify your Wha
 
 
 ## Available Tools (7)
+- **list_groups**: List WhatsApp groups
+- **list_templates**: List message templates
+- **send_message**: Send a WhatsApp message
 - **create_contact**: Create a new WhatsApp contact
 - **get_contact**: Get details for a specific contact
 - **list_agents**: List support agents
 - **list_contacts**: List WA Smart Business contacts
-- **list_groups**: List WhatsApp groups
-- **list_templates**: List message templates
-- **send_message**: Send a WhatsApp message
 
 
 ## 💬 Prompt Examples

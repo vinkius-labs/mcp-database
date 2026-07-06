@@ -34,6 +34,11 @@ Connect your **Sproof** account to any AI agent to automate your European-compli
 
 
 ## Available Tools (11)
+- **list_audit_trail**: Get the audit trail for a signature request
+- **list_contacts**: List all contacts
+- **list_documents**: List all documents
+- **list_signature_requests**: List all signature requests
+- **list_signers**: List all signers for a signature request
 - **cancel_signature_request**: Cancel a pending signature request
 - **create_contact**: Create a new contact for signing
 - **create_signature_request**: Pass data as a JSON string.
@@ -42,11 +47,6 @@ Create a new signature request
 - **get_document**: Get document details
 - **get_profile**: Get account profile details
 - **get_signature_request**: Get details for a signature request
-- **list_audit_trail**: Get the audit trail for a signature request
-- **list_contacts**: List all contacts
-- **list_documents**: List all documents
-- **list_signature_requests**: List all signature requests
-- **list_signers**: List all signers for a signature request
 
 
 ## 💬 Prompt Examples

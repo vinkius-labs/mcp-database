@@ -38,13 +38,13 @@ Connect your **VBOUT** marketing automation account to any AI agent and simplify
 
 Add a contact to a list
 - **add_ecommerce_order**: Add an e-commerce order
-- **get_contact**: Get contact details
 - **list_campaigns**: List marketing campaigns
 - **list_email_lists**: List VBOUT email marketing lists
 - **list_workflows**: List automation workflows
 - **search_contacts**: Search for contacts
 - **create_social_post**: Create a social media post
 - **trigger_workflow**: Trigger a workflow for a contact
+- **get_contact**: Get contact details
 
 
 ## 💬 Prompt Examples

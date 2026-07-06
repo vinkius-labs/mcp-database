@@ -35,12 +35,12 @@ Connect your **UserEcho** account to any AI agent and simplify how you manage yo
 
 
 ## Available Tools (6)
+- **list_account_users**: List account users
 - **create_support_ticket**: Add a new ticket
 - **get_ticket_details**: Get details for a specific ticket
 - **list_kb_articles**: List knowledge base articles
 - **list_forums**: List UserEcho forums
 - **list_tickets**: List helpdesk tickets
-- **list_account_users**: List account users
 
 
 ## 💬 Prompt Examples

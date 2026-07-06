@@ -33,8 +33,6 @@ Empower your AI agent with access to the **TNZ Group** messaging gateway to auto
 
 
 ## Available Tools (12)
-- **check_api_health**: Verify TNZ API connectivity
-- **create_tnz_contact**: Add a new contact to TNZ
 - **get_account_balance**: Check account credit balance
 - **get_messaging_usage_report**: Retrieve usage and cost reports
 - **get_message_delivery_status**: Check delivery status of a message
@@ -45,6 +43,8 @@ Empower your AI agent with access to the **TNZ Group** messaging gateway to auto
 - **send_digital_fax**: Send a document as a fax
 - **send_sms_message**: Send an SMS message
 - **send_tts_voice_call**: Send a voice call (Text-to-Speech)
+- **check_api_health**: Verify TNZ API connectivity
+- **create_tnz_contact**: Add a new contact to TNZ
 
 
 ## 💬 Prompt Examples

@@ -35,7 +35,6 @@ Connect your **Tingg (Cellulant)** payments account to any AI agent and simplify
 
 
 ## Available Tools (12)
-- **check_api_health**: Verify Tingg API connectivity
 - **create_checkout_request**: Initiate a new payment request
 - **get_account_performance_metrics**: Retrieve performance stats
 - **get_payout_status**: Check status of a payout
@@ -47,6 +46,7 @@ Connect your **Tingg (Cellulant)** payments account to any AI agent and simplify
 - **list_configured_webhooks**: List active webhooks
 - **send_engagement_notification**: Send SMS or Email alert
 - **initiate_payment_refund**: Request a refund
+- **check_api_health**: Verify Tingg API connectivity
 
 
 ## 💬 Prompt Examples
