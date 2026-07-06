@@ -34,9 +34,6 @@ Connect **Symbl.ai** to your AI agent to unlock deep insights from your meetings
 
 
 ## Available Tools (9)
-- **create_tracker**: Create a tracker to detect specific keywords or phrases
-- **get_action_items**: Get action items from a processed conversation
-- **get_follow_ups**: Get follow-ups from a processed conversation
 - **get_questions**: Get questions from a processed conversation
 - **get_summary**: Get summary of a processed conversation
 - **get_topics**: Get topics from a processed conversation
@@ -49,6 +46,9 @@ Process text conversations to extract insights
 - **process_video**: ai for processing. Returns a conversation ID.
 
 Process a video file to extract insights
+- **create_tracker**: Create a tracker to detect specific keywords or phrases
+- **get_action_items**: Get action items from a processed conversation
+- **get_follow_ups**: Get follow-ups from a processed conversation
 
 
 ## 💬 Prompt Examples

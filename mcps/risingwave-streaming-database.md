@@ -33,6 +33,9 @@ Connect your **RisingWave** streaming database to any AI agent and take full con
 
 
 ## Available Tools (6)
+- **list_tables**: tables to list user tables.
+
+List tables in RisingWave
 - **execute_sql**: Execute a SQL statement on RisingWave
 - **ingest_events**: Body can be a single JSON object or an array of objects.
 
@@ -46,9 +49,6 @@ List sinks in RisingWave
 - **list_sources**: rw_sources to list all external data sources.
 
 List sources in RisingWave
-- **list_tables**: tables to list user tables.
-
-List tables in RisingWave
 
 
 ## 💬 Prompt Examples

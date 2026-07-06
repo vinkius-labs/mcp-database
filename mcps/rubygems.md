@@ -34,11 +34,11 @@ Connect to the **RubyGems** ecosystem to streamline your Ruby development workfl
 
 
 ## Available Tools (30)
-- **add_gem_owner**: Add an owner to a gem
 - **create_webhook**: Use * for gem_name to apply to all gems.
 
 Create a webhook
 - **exchange_oidc_token**: Exchange an OIDC ID token for a short-lived API key
+- **add_gem_owner**: Add an owner to a gem
 - **fire_webhook**: Test fire a webhook
 - **get_api_key**: Retrieve your API key using HTTP Basic Auth
 - **get_compact_index_info**: Returns a text-based format listing all versions of a specific gem

@@ -34,13 +34,13 @@ Connect your **RescueTime** account to any AI agent to gain deep insights into y
 
 
 ## Available Tools (54)
-- **add_offline_focus_work**: Add offline focus time (accumulates)
-- **archive_project**: Archive or restore a project
 - **cancel_or_stop_focus_session**: End active focus session
 - **create_alert**: Create an alert
 - **create_extra_work**: Create an extra-work entry
 - **create_goal**: Create a goal
 - **create_project**: Create a project
+- **add_offline_focus_work**: Add offline focus time (accumulates)
+- **archive_project**: Archive or restore a project
 - **delete_timeline_activities**: Bulk delete tracked time in a range
 - **end_focus_time**: End the current Focus Session (Premium only)
 - **extend_focus_session**: Extend active session duration

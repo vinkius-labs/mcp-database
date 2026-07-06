@@ -35,7 +35,6 @@ No more manual searching through web explorers. Your AI acts as a dedicated bloc
 
 
 ## Available Tools (17)
-- **get_account_coins**: List all coins owned by an account
 - **get_account_objects**: List all objects owned by an account
 - **get_account_overview**: Get account overview and balance
 - **get_account_transactions**: List transactions associated with a specific account address
@@ -54,6 +53,7 @@ No more manual searching through web explorers. Your AI acts as a dedicated bloc
 
 List recent transactions on the Sui network
 - **list_validators**: List current network validators
+- **get_account_coins**: List all coins owned by an account
 
 
 ## 💬 Prompt Examples

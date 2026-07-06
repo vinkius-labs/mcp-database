@@ -33,8 +33,6 @@ Connect to the **Theta Network** ecosystem to manage decentralized infrastructur
 
 
 ## Available Tools (30)
-- **ai_create_deployment**: Launch a new AI model or Jupyter Notebook
-- **ai_delete_deployment**: Delete an AI deployment
 - **ai_list_deployments**: List all deployments in a project
 - **ai_list_standard_templates**: List built-in AI templates
 - **ai_list_vm_resources**: g., vm_gt1 for NVIDIA T4).
@@ -65,6 +63,8 @@ List available machine types
 - **video_select_ingestor**: Assign an ingestor to a stream
 - **video_transcode**: Transcode a video
 - **video_unselect_ingestor**: Release an ingestor
+- **ai_create_deployment**: Launch a new AI model or Jupyter Notebook
+- **ai_delete_deployment**: Delete an AI deployment
 
 
 ## 💬 Prompt Examples

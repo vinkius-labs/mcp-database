@@ -34,8 +34,6 @@ Connect your **Replicate** account to any AI agent to run powerful machine learn
 
 
 ## Available Tools (20)
-- **cancel_prediction**: Cancel a running prediction
-- **create_deployment_prediction**: Create a prediction using a dedicated deployment
 - **create_deployment**: Create a new private deployment with custom autoscaling
 - **create_model**: Create a new model on Replicate
 - **create_prediction**: Create a new prediction to run a model
@@ -54,6 +52,8 @@ Connect your **Replicate** account to any AI agent to run powerful machine learn
 - **list_predictions**: List recent predictions
 - **search_models**: Search for public models on Replicate
 - **update_model**: Update metadata for an existing model
+- **cancel_prediction**: Cancel a running prediction
+- **create_deployment_prediction**: Create a prediction using a dedicated deployment
 
 
 ## 💬 Prompt Examples

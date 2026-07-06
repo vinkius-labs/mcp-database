@@ -34,11 +34,11 @@ Connect your **SpyFu** account to any AI agent and perform deep SEO and PPC comp
 
 
 ## Available Tools (5)
+- **get_organic_keywords**: List the keywords for which a domain ranks organically
 - **get_ad_history**: View the history of Google Ads run by a competitor
 - **get_domain_competitors**: Identify the top organic and paid competitors for a given domain
 - **get_domain_overview**: Retrieve high-level SEO and PPC metrics for a specific domain
 - **get_keyword_stats**: Get data for specific keywords
-- **get_organic_keywords**: List the keywords for which a domain ranks organically
 
 
 ## 💬 Prompt Examples

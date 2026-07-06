@@ -34,7 +34,6 @@ Connect your **PropelAuth** dashboard to any AI agent to streamline B2B identity
 
 
 ## Available Tools (42)
-- **add_user_to_org**: Add a user to an organization immediately
 - **allow_saml**: Allow or disallow SAML for an organization
 - **change_user_role_in_org**: Change a user role within an organization
 - **clear_user_password**: Clear a user password
@@ -75,6 +74,7 @@ Connect your **PropelAuth** dashboard to any AI agent to streamline B2B identity
 - **update_user_email**: Update a user email address
 - **update_user_password**: Update a user password
 - **update_user**: Update user metadata
+- **add_user_to_org**: Add a user to an organization immediately
 - **validate_api_key**: Validate an end-user API key
 
 

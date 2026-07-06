@@ -34,10 +34,7 @@ Connect your **Upstash QStash** account to any AI agent to orchestrate serverles
 
 
 ## Available Tools (38)
-- **batch_messages**: Send multiple messages in a single request
 - **bulk_cancel_messages**: Cancel multiple messages based on filters
-- **bulk_delete_dlq**: Delete all messages from the DLQ
-- **bulk_retry_dlq**: Retry all messages in the DLQ
 - **cancel_message**: Stop a pending message from being delivered
 - **delete_dlq_message**: Delete a message from the DLQ
 - **delete_queue**: Delete a queue
@@ -53,7 +50,6 @@ Connect your **Upstash QStash** account to any AI agent to orchestrate serverles
 - **get_schedule**: Get details of a specific schedule
 - **get_url_group**: Get details of a specific URL Group
 - **list_dlq**: List messages in the Dead Letter Queue (DLQ)
-- **list_flow_control_keys**: List all flow control keys
 - **list_logs**: Retrieve QStash logs/events
 - **list_queues**: List all queues
 - **list_schedules**: List all schedules
@@ -72,6 +68,10 @@ Connect your **Upstash QStash** account to any AI agent to orchestrate serverles
 - **unpin_flow_control**: Unpin configuration for a flow control key
 - **upsert_queue**: Create or update a queue
 - **upsert_url_group**: Create or update a URL Group (Topic)
+- **batch_messages**: Send multiple messages in a single request
+- **bulk_delete_dlq**: Delete all messages from the DLQ
+- **bulk_retry_dlq**: Retry all messages in the DLQ
+- **list_flow_control_keys**: List all flow control keys
 
 
 ## 💬 Prompt Examples

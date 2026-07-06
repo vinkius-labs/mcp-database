@@ -34,7 +34,6 @@ Connect your AI agent to **Tenor** to bring visual expression to your workflows.
 
 
 ## Available Tools (8)
-- **get_autocomplete**: Retrieve autocomplete suggestions for a partial search term
 - **list_categories**: Retrieve a list of GIF categories
 - **get_featured_gifs**: Retrieve the current global featured GIFs
 - **get_posts**: Retrieve specific GIFs by their IDs
@@ -44,6 +43,7 @@ Register a share event when a user selects a GIF
 - **get_search_suggestions**: Retrieve alternative search terms for a query
 - **search_gifs**: Search for GIFs on Tenor
 - **get_trending_terms**: Retrieve the current trending search terms
+- **get_autocomplete**: Retrieve autocomplete suggestions for a partial search term
 
 
 ## 💬 Prompt Examples

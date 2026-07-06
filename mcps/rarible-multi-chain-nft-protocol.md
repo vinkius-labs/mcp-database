@@ -34,9 +34,6 @@ Connect to the **Rarible Multi-chain NFT Protocol** and empower your AI agent wi
 
 
 ## Available Tools (20)
-- **get_activities_by_collection**: Get activities for a collection
-- **get_activities_by_item**: Get activities for an item
-- **get_activities_by_user**: Get activities for a user
 - **get_all_activities**: ).
 
 Get all activities
@@ -58,6 +55,9 @@ Get all activities
 - **search_items**: Uses POST under the hood but is a read-only query.
 
 Complex search for NFT items
+- **get_activities_by_collection**: Get activities for a collection
+- **get_activities_by_item**: Get activities for an item
+- **get_activities_by_user**: Get activities for a user
 
 
 ## 💬 Prompt Examples

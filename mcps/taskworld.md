@@ -34,9 +34,6 @@ Integrate **Taskworld** with your AI workflow to streamline project management a
 
 
 ## Available Tools (12)
-- **list_comments**: Get all comments on a task
-- **complete_task**: Mark a task as finished
-- **create_comment**: Post a new comment to a task or project
 - **create_project**: Create a new project
 - **create_task**: Create a new task
 - **get_workspace**: Get details for a specific workspace
@@ -50,6 +47,9 @@ Update project details or mark as completed
 
 Update task properties
 - **list_workspaces**: List all Taskworld workspaces
+- **list_comments**: Get all comments on a task
+- **complete_task**: Mark a task as finished
+- **create_comment**: Post a new comment to a task or project
 
 
 ## 💬 Prompt Examples

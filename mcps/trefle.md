@@ -33,12 +33,6 @@ Connect to the **Trefle API** to empower your AI agent with comprehensive botani
 
 
 ## Available Tools (12)
-- **get_distribution_plants**: Use query_params to filter by establishment (e.g. {"filter[establishment]": "native"}).
-
-List plants found in a specific distribution zone
-- **get_genus**: Get details for a specific genus
-- **get_plant**: Get details for a specific plant
-- **get_species**: Get details for a specific species
 - **list_distributions**: List all distribution zones
 - **list_genera**: List all genera
 - **list_plants**: Excludes forms, varieties, and subspecies.
@@ -49,6 +43,12 @@ List all main plant species
 - **search_plants**: Search through main plants
 - **search_species**: Search through all species
 - **submit_species_correction**: Submit a data correction for a species
+- **get_distribution_plants**: Use query_params to filter by establishment (e.g. {"filter[establishment]": "native"}).
+
+List plants found in a specific distribution zone
+- **get_genus**: Get details for a specific genus
+- **get_plant**: Get details for a specific plant
+- **get_species**: Get details for a specific species
 
 
 ## 💬 Prompt Examples

@@ -33,12 +33,12 @@ Connect **Token Terminal** to your AI agent to unlock deep financial insights in
 
 
 ## Available Tools (4)
+- **list_projects**: List all projects tracked by Token Terminal
 - **get_market_metrics**: Get aggregated market data metrics
 - **get_project_metrics**: g., revenue, tvl, active_users) for a project.
 
 Get historical time series metrics for a project
 - **get_project**: Get detailed metadata for a specific project
-- **list_projects**: List all projects tracked by Token Terminal
 
 
 ## 💬 Prompt Examples

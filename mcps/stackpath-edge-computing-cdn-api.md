@@ -33,12 +33,12 @@ Connect your **StackPath** account to any AI agent to orchestrate edge infrastru
 
 
 ## Available Tools (6)
-- **create_cdn_site**: Create a new CDN site
-- **create_workload**: Create a new edge workload
-- **list_cdn_sites**: List CDN sites in a stack
 - **list_stacks**: List all StackPath stacks
 - **list_workloads**: List edge workloads in a stack
 - **purge_content**: Purge CDN content
+- **create_cdn_site**: Create a new CDN site
+- **create_workload**: Create a new edge workload
+- **list_cdn_sites**: List CDN sites in a stack
 
 
 ## 💬 Prompt Examples

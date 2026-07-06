@@ -34,9 +34,6 @@ Connect your **Polar AccessLink** account to any AI agent to analyze your fitnes
 
 
 ## Available Tools (27)
-- **activate_webhook**: Re-activate a deactivated webhook
-- **create_webhook**: Create a webhook
-- **delete_user**: De-register a user and revoke access
 - **delete_webhook**: Remove a webhook
 - **get_activity_by_date**: Get activity for a specific date
 - **get_biosensing_body_temperature**: Get body temperature data
@@ -61,6 +58,9 @@ Connect your **Polar AccessLink** account to any AI agent to analyze your fitnes
 - **list_nightly_recharge**: List Nightly Recharge status
 - **list_sleep**: List sleep data
 - **register_user**: Register a user after authorization
+- **delete_user**: De-register a user and revoke access
+- **activate_webhook**: Re-activate a deactivated webhook
+- **create_webhook**: Create a webhook
 
 
 ## 💬 Prompt Examples
