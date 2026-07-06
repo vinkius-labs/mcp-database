@@ -35,18 +35,18 @@ Connect your **Flexport** account to any AI agent and automate your global trade
 
 
 ## Available Tools (12)
-- **create_purchase_order**: Create a new purchase order
-- **download_document**: Get document download link
-- **get_document**: Get document metadata
-- **get_invoice**: Get invoice details
-- **get_purchase_order**: Get purchase order details
-- **get_shipment**: Get shipment details
 - **list_commercial_invoices**: List commercial invoices
 - **list_documents**: List logistics documents
 - **list_invoices**: List freight invoices
 - **list_purchase_orders**: List purchase orders
 - **list_shipment_invoices**: List invoices for shipment
 - **list_shipments**: List freight shipments
+- **create_purchase_order**: Create a new purchase order
+- **download_document**: Get document download link
+- **get_document**: Get document metadata
+- **get_invoice**: Get invoice details
+- **get_purchase_order**: Get purchase order details
+- **get_shipment**: Get shipment details
 
 
 ## 💬 Prompt Examples

@@ -37,9 +37,6 @@ Connect your **Gitea** instance to any AI agent and take full control of your se
 
 
 ## Available Tools (10)
-- **list_repos**: Returns repo full names, descriptions, clone URLs, stars, forks, private/public status, and default branches.
-
-List all repositories accessible to the authenticated Gitea user
 - **get_repo**: Get full details of a Gitea repository
 - **list_issues**: List all issues in a Gitea repository
 - **get_issue**: Get full details of a Gitea issue
@@ -49,6 +46,9 @@ List all repositories accessible to the authenticated Gitea user
 - **list_pulls**: List all pull requests in a Gitea repository
 - **list_branches**: List all branches in a Gitea repository
 - **get_me**: Get the authenticated Gitea user profile
+- **list_repos**: Returns repo full names, descriptions, clone URLs, stars, forks, private/public status, and default branches.
+
+List all repositories accessible to the authenticated Gitea user
 
 
 ## 💬 Prompt Examples

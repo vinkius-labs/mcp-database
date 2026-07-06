@@ -23,9 +23,6 @@ The **ultimate Brazil Central Bank Mega-Server** — 22 tools across 4 domains.
 
 
 ## Available Tools (21)
-- **get_cotacao_dolar**: Inclui valores de compra e venda. O PTAX é a taxa de referência oficial do câmbio brasileiro, calculada a partir de consultas aos dealers de câmbio.
-
-Obter a cotação do dólar americano (PTAX) em uma data específica
 - **get_dolar_periodo**: Formato de data: MM-DD-YYYY. Máximo de 1 ano por consulta. Inclui valores de compra, venda e boletins (abertura, intermediário, fechamento).
 
 Obter a série histórica do dólar PTAX em um período
@@ -86,6 +83,9 @@ Obter a taxa CDI (Certificado de Depósito Interbancário)
 - **get_expectativas_selic**: Inclui mediana, média, mínimo e máximo das projeções das instituições financeiras. O Focus é publicado toda segunda-feira pelo BCB.
 
 Obter as expectativas do mercado para a taxa Selic (Relatório Focus)
+- **get_cotacao_dolar**: Inclui valores de compra e venda. O PTAX é a taxa de referência oficial do câmbio brasileiro, calculada a partir de consultas aos dealers de câmbio.
+
+Obter a cotação do dólar americano (PTAX) em uma data específica
 
 
 ## 💬 Prompt Examples

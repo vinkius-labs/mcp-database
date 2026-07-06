@@ -33,9 +33,9 @@ The **Attio MCP Server** brings powerful CRM capabilities directly to your AI ag
 - **create_record**: Create a new record in an object
 - **get_account_check**: Verify Attio account connection
 - **get_object**: Get metadata for a specific object
+- **list_objects**: List all objects (tables) in the Attio workspace
 - **get_record**: Retrieve a specific record by ID
 - **list_attributes**: List all attributes (columns) for a specific object
-- **list_objects**: List all objects (tables) in the Attio workspace
 - **query_records**: Query and filter records for a specific object
 - **search_records**: Global fuzzy search across all objects (Beta)
 

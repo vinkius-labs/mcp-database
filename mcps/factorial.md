@@ -37,14 +37,14 @@ Connect your **Factorial HR** account to any AI agent and take full control of y
 
 
 ## Available Tools (12)
-- **clock_in**: Clock in for a shift
 - **clock_out**: Clock out from a shift
 - **get_employee**: Get a specific Factorial employee by ID
 - **get_me**: Get current company identity info
-- **list_documents**: List all company documents
 - **list_employees**: List all Factorial employees
 - **list_folders**: List all company folders
 - **list_holidays**: List all holidays for a given year
+- **clock_in**: Clock in for a shift
+- **list_documents**: List all company documents
 - **list_leaves**: List all leaves for a given year
 - **list_payslips**: List all payslips for a given year and month
 - **list_shifts**: List all shifts for a given year and month

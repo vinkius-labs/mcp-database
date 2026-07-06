@@ -34,9 +34,9 @@ Integrate **Drift**, the leading conversational marketing and sales platform, di
 
 ## Available Tools (10)
 - **get_drift_platform_metadata**: Retrieve metadata for the current authenticated Drift account
+- **quick_agent_availability_audit**: Retrieve a high-level summary of active agent availability statuses
 - **get_contact_profile**: Get full profile data and interaction history for a specific contact
 - **get_conversation_details**: Get detailed information and full transcript for a specific conversation
-- **quick_agent_availability_audit**: Retrieve a high-level summary of active agent availability statuses
 - **list_drift_contacts**: List all contacts synchronized or identified in your Drift account
 - **list_drift_conversations**: List all active and recent customer conversations in Drift
 - **list_drift_playbooks**: List all configured conversational playbooks (bots)

@@ -27,12 +27,6 @@ Quantitative analysts, economists, financial advisors, portfolio managers, data 
 
 
 ## Available Tools (5)
-- **search_series**: Returns matching series with title, frequency, units, popularity. Use order_by=popularity to find the most-used series. Examples: "GDP", "unemployment rate", "inflation CPI".
-
-Search 816,000+ economic time series by keyword
-- **get_series**: Use well-known IDs like GDP, UNRATE, CPIAUCSL, FEDFUNDS, DGS10, SP500, M2SL.
-
-Get metadata for a specific FRED series
 - **get_observations**: Supports date filtering, unit transformations (percent change, log, etc.), and frequency aggregation. This is the primary tool for retrieving economic data.
 
 Get actual data values for a FRED time series
@@ -42,6 +36,12 @@ Get recently updated FRED series
 - **get_vintage_dates**: Essential for ALFRED-style vintage analysis and understanding data revisions.
 
 Get historical revision dates for a series
+- **search_series**: Returns matching series with title, frequency, units, popularity. Use order_by=popularity to find the most-used series. Examples: "GDP", "unemployment rate", "inflation CPI".
+
+Search 816,000+ economic time series by keyword
+- **get_series**: Use well-known IDs like GDP, UNRATE, CPIAUCSL, FEDFUNDS, DGS10, SP500, M2SL.
+
+Get metadata for a specific FRED series
 
 
 ## 💬 Prompt Examples

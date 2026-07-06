@@ -35,10 +35,6 @@ Connect your **Front** account to any AI agent to automate your customer communi
 
 
 ## Available Tools (12)
-- **verify_api_status**: Verify connection
-- **get_conversation_details**: Get conversation metadata
-- **get_inbox_details**: Get inbox metadata
-- **list_address_book**: List contacts
 - **list_all_conversations**: List all conversations
 - **list_inbox_threads**: List inbox conversations
 - **list_shared_inboxes**: List shared inboxes
@@ -51,6 +47,10 @@ Search all conversations
 - **update_conversation_status**: g., archived, open) or assignee of a conversation.
 
 Update conversation
+- **verify_api_status**: Verify connection
+- **get_conversation_details**: Get conversation metadata
+- **get_inbox_details**: Get inbox metadata
+- **list_address_book**: List contacts
 
 
 ## 💬 Prompt Examples

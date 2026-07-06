@@ -37,15 +37,6 @@ Connect your **Drata** account to any AI agent and take full control of your con
 
 
 ## Available Tools (10)
-- **drata_get_control**: Returns passing/failing status, which automated tests provide evidence for this control, the explicit auditor language defining the risk logic, and any manual evidence uploads. Use to investigate why a control is failing, what evidence supports it, or to prepare for auditor questions about a specific requirement.
-
-Get detailed status of a specific Drata control — pass/fail state, automated test evidence, and auditor-facing risk language
-- **drata_get_person**: Returns MDM (Jamf/Intune) enrollment status, background check clearance date, onboarding milestone completion, linked IdP (Okta/Google Workspace) groups for access control mapping, security training completion date, and any compliance gaps. Use when investigating a specific employee compliance issue.
-
-Get the compliance onboarding state of a specific employee — MDM enrollment, background checks, IdP grouping, and training milestones
-- **drata_get_policy**: Essential for assessing audit readiness regarding mandatory annual document refreshes.
-
-Get detailed status of a specific Drata policy — renewal dates, employee acknowledgment rates, owner assignment, and version history
 - **drata_list_assets**: Each asset shows: resource type, resource ID, compliance status against linked controls, encryption-at-rest verification, network boundary adherence, and associated region/VPC. Use when the user asks about infrastructure compliance, unencrypted resources, or needs an asset inventory for audit evidence.
 
 List cloud infrastructure assets monitored by Drata — EC2 instances, RDS databases, S3 buckets, and other resources with compliance status
@@ -67,6 +58,15 @@ List Drata automated continuous compliance tests — real-time monitors checking
 - **drata_list_vendors**: Each vendor includes: company name, data risk classification (Critical/High/Medium/Low), security questionnaire completion status, SOC 2 report review status, last assessment date, data categories shared, and assigned risk owner. Use for vendor risk assessment, subprocessor audits, or evaluating the security posture of your supply chain.
 
 List third-party vendors in Drata vendor risk management — risk classification, security questionnaire status, and SOC 2 report reviews
+- **drata_get_control**: Returns passing/failing status, which automated tests provide evidence for this control, the explicit auditor language defining the risk logic, and any manual evidence uploads. Use to investigate why a control is failing, what evidence supports it, or to prepare for auditor questions about a specific requirement.
+
+Get detailed status of a specific Drata control — pass/fail state, automated test evidence, and auditor-facing risk language
+- **drata_get_person**: Returns MDM (Jamf/Intune) enrollment status, background check clearance date, onboarding milestone completion, linked IdP (Okta/Google Workspace) groups for access control mapping, security training completion date, and any compliance gaps. Use when investigating a specific employee compliance issue.
+
+Get the compliance onboarding state of a specific employee — MDM enrollment, background checks, IdP grouping, and training milestones
+- **drata_get_policy**: Essential for assessing audit readiness regarding mandatory annual document refreshes.
+
+Get detailed status of a specific Drata policy — renewal dates, employee acknowledgment rates, owner assignment, and version history
 
 
 ## 💬 Prompt Examples

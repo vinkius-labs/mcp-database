@@ -36,11 +36,9 @@ Connect your **FreeAgent** account to any AI agent to automate your accounting a
 
 
 ## Available Tools (12)
-- **get_company_details**: Get company metadata
 - **get_contact_details**: Get contact metadata
 - **get_invoice_details**: Get invoice metadata
 - **get_profit_and_loss**: Get P&L summary
-- **list_bank_accounts**: List bank accounts
 - **list_bank_transactions**: List transactions for an account
 - **list_purchase_bills**: List purchase invoices (bills)
 - **list_chart_of_accounts**: List accounting categories
@@ -48,6 +46,8 @@ Connect your **FreeAgent** account to any AI agent to automate your accounting a
 - **list_out_of_pocket_expenses**: List employee expenses
 - **list_invoices**: List sales invoices
 - **list_projects**: List active projects
+- **get_company_details**: Get company metadata
+- **list_bank_accounts**: List bank accounts
 
 
 ## 💬 Prompt Examples

@@ -29,12 +29,12 @@ Connect to the exact datasets used by Wall Street and the Federal Reserve to mon
 
 
 ## Available Tools (2)
-- **get_nonfarm_payrolls**: Key metric for forecasting Federal Reserve interest rate movements.
-
-Get Total Nonfarm Payroll employment (CES0000000001)
 - **query_bls**: Use this instead of specific endpoints if you intimately know the underlying numerical code. Up to 50 concurrent lookbacks allowed.
 
 Generic BLS v2 api timeseries query. Requires explicit BLS Series IDs
+- **get_nonfarm_payrolls**: Key metric for forecasting Federal Reserve interest rate movements.
+
+Get Total Nonfarm Payroll employment (CES0000000001)
 
 
 ## 💬 Prompt Examples

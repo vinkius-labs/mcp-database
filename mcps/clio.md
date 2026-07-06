@@ -44,36 +44,33 @@ List legal cases/matters
 
 Get case details
 - **list_contacts**: List firm contacts
-- **list_activities**: Optionally filter by matter. Includes date, hours, rate, notes, and billing status.
+- **create_activity**: Provide date (YYYY-MM-DD), quantity in seconds, and the type (TimeEntry or ExpenseEntry).
 
-List time entries and expenses
+Log a time entry or expense
 - **list_tasks**: Filter by matter for case-specific tasks. Critical for tracking court deadlines and firm-wide to-dos.
 
 List tasks and deadlines
+- **list_notes**: Optionally filter by matter ID. Includes subject, detail, date, and linked matter.
+
+List case notes
+- **create_task**: Optionally link to a matter and set a due date. Use for court deadlines, filing reminders, and internal follow-ups.
+
+Create a new task or deadline
+- **create_note**: Use for documenting conversations, strategy decisions, or research findings.
+
+Add a note to a matter
 - **list_bills**: Use to monitor firm revenue and outstanding receivables.
 
 List invoices
+- **get_bill**: Returns line items, totals, balance, due date, and associated matter.
+
+Get invoice details
 - **list_calendar_entries**: Includes summary, start/end times, location, and linked matter.
 
 List calendar events
 - **list_documents**: Filter by matter. Includes filename, category, creation date, and linked matter.
 
 List case documents
-- **create_activity**: Provide date (YYYY-MM-DD), quantity in seconds, and the type (TimeEntry or ExpenseEntry).
-
-Log a time entry or expense
-- **create_task**: Optionally link to a matter and set a due date. Use for court deadlines, filing reminders, and internal follow-ups.
-
-Create a new task or deadline
-- **list_notes**: Optionally filter by matter ID. Includes subject, detail, date, and linked matter.
-
-List case notes
-- **create_note**: Use for documenting conversations, strategy decisions, or research findings.
-
-Add a note to a matter
-- **get_bill**: Returns line items, totals, balance, due date, and associated matter.
-
-Get invoice details
 - **list_practice_areas**: g., Civil Litigation, Corporate, Family Law). Useful for matter categorization and firm structure overview.
 
 List practice areas
@@ -102,6 +99,9 @@ Get contact details
 - **create_contact**: Provide first and last name for persons. For companies, set type to "Company" and use first_name as the company name.
 
 Create a new contact
+- **list_activities**: Optionally filter by matter. Includes date, hours, rate, notes, and billing status.
+
+List time entries and expenses
 
 
 ## 💬 Prompt Examples

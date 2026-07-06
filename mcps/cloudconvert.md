@@ -39,13 +39,13 @@ Connect your **CloudConvert** account to any AI agent and take full control of y
 - **create_conversion_job**: Supports over 200 formats.
 
 Create a new file conversion or processing job
-- **get_conversion_job_details**: Get the status and result of a specific job
 - **get_my_cloudconvert_profile**: Retrieve information about the authenticated user and credits
 - **get_conversion_task_details**: Get detailed information for a specific task
 - **list_conversion_jobs**: List all recent conversion jobs
 - **list_available_conversion_ops**: List common operations supported by the CloudConvert API
 - **list_conversion_tasks**: List all individual tasks across jobs
 - **list_cloudconvert_webhooks**: List configured webhooks for job completion notifications
+- **get_conversion_job_details**: Get the status and result of a specific job
 
 
 ## 💬 Prompt Examples

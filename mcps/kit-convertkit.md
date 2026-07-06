@@ -32,10 +32,10 @@ Integrate your AI assistant with **Kit** (formerly ConvertKit), the email market
 
 
 ## Available Tools (10)
+- **list_optin_forms**: List all opt-in forms
 - **add_subscriber_to_form**: Subscribe a person to a form
 - **get_account_growth_summary**: Retrieve a high-level summary of your subscriber count
 - **get_subscriber_details**: Get details for a specific subscriber
-- **list_optin_forms**: List all opt-in forms
 - **list_email_sequences**: List automated email sequences
 - **list_subscribers**: List your email subscribers
 - **list_all_tags**: List all audience tags

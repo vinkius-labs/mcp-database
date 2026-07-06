@@ -35,9 +35,6 @@ Connect your **Formstack** account to any AI agent to automate your professional
 
 
 ## Available Tools (12)
-- **create_form**: Create a new form
-- **create_webhook**: Add a webhook
-- **delete_form**: Remove a form
 - **get_form_html**: Get form raw HTML
 - **get_form_stats**: Get form submissions count
 - **get_form_details**: Get form metadata
@@ -47,6 +44,9 @@ Connect your **Formstack** account to any AI agent to automate your professional
 - **list_submissions**: List form submissions
 - **list_form_webhooks**: List form webhooks
 - **update_form**: Update form settings
+- **create_form**: Create a new form
+- **create_webhook**: Add a webhook
+- **delete_form**: Remove a form
 
 
 ## 💬 Prompt Examples

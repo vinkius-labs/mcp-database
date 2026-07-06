@@ -36,9 +36,9 @@ Connect your **Clockwise** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
+- **get_preferences**: Retrieve the exact structural matching verifying explicit user settings
 - **get_calendar_events**: Identify bounded logical arrays managing top-level calendar blocks
 - **get_focus_time**: Perform structural extraction of properties driving active Deep Work limits
-- **get_preferences**: Retrieve the exact structural matching verifying explicit user settings
 - **update_preferences**: Provision a highly-available override payload updating Clockwise configurations
 - **get_team_availability**: Identify explicit Cloud calculations tracking absolute team free times
 - **get_autopilot_status**: Extracts explicitly attached internal structural states pulling logic engine mappings

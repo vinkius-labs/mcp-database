@@ -34,16 +34,16 @@ Connect your **Better Stack (formerly Better Uptime)** account to any AI agent a
 
 
 ## Available Tools (10)
-- **create_monitor**: Create a new uptime monitor
-- **delete_monitor**: Delete a monitor
-- **get_incident**: Get details of a specific incident
-- **get_monitor**: Get specific monitor details
-- **list_heartbeats**: List all heartbeat monitors
 - **list_incidents**: List recent uptime incidents
 - **list_monitors**: List all uptime monitors
 - **list_on_calls**: List on-call schedules and rotations
 - **list_status_pages**: List public status pages
 - **update_monitor**: Update an existing monitor
+- **create_monitor**: Create a new uptime monitor
+- **delete_monitor**: Delete a monitor
+- **get_incident**: Get details of a specific incident
+- **get_monitor**: Get specific monitor details
+- **list_heartbeats**: List all heartbeat monitors
 
 
 ## 💬 Prompt Examples
