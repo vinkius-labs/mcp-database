@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,523 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,533 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,12 +10,12 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (866 servers)
+- [productivity](categories/productivity.md) (868 servers)
 - [industry-titans](categories/industry-titans.md) (585 servers)
 - [developer-tools](categories/developer-tools.md) (515 servers)
 - [data-analytics](categories/data-analytics.md) (330 servers)
 - [marketing-automation](categories/marketing-automation.md) (234 servers)
-- [finance](categories/finance.md) (214 servers)
+- [finance](categories/finance.md) (220 servers)
 - [ecommerce](categories/ecommerce.md) (206 servers)
 - [loved-by-devs](categories/loved-by-devs.md) (134 servers)
 - [communication-messaging](categories/communication-messaging.md) (127 servers)
@@ -33,8 +33,8 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [artificial-intelligence](categories/artificial-intelligence.md) (54 servers)
 - [finance-accounting](categories/finance-accounting.md) (52 servers)
 - [cloud-infrastructure](categories/cloud-infrastructure.md) (51 servers)
+- [health](categories/health.md) (50 servers)
 - [ship-it](categories/ship-it.md) (49 servers)
-- [health](categories/health.md) (48 servers)
 - [real-estate](categories/real-estate.md) (44 servers)
 - [utilities](categories/utilities.md) (44 servers)
 - [document-management](categories/document-management.md) (39 servers)

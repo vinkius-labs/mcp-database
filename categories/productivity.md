@@ -76,6 +76,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Automate.io](../mcps/automateio.md) | Manage Automate.io workflows seamlessly — audit your bots, connections, and execution runs directly from your AI agent. |
 | [AwardWallet](../mcps/awardwallet.md) | Manage loyalty points, travel rewards, and itineraries via AwardWallet — monitor your miles and trips directly via AI. |
 | [B5 Arena](../mcps/b5-arena.md) | Automate Counter-Strike intelligence via B5 Arena — scan matchmaking leaderboards, track player ELO, and fetch competitive match logs natively from any AI agent. |
+| [Baby Sleep Schedule Generator](../mcps/baby-sleep-schedule-generator.md) | Generate age-appropriate nap schedules and feeding routines based on your baby's developmental stage. |
 | [BallotReady](../mcps/ballotready.md) | Civic data and election information — track upcoming elections, candidates, and districts via AI. |
 | [BambooHR](../mcps/bamboohr-alternative.md) | Human Resources management platform — organize employee data, track time off, and audit HR workflows via AI. |
 | [BambooHR](../mcps/bamboohr.md) | Official HR software automation — manage employee directories, time off requests, and company reports via AI. |
@@ -590,6 +591,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [OPM Operating Status](../mcps/opm-operating-status.md) | Get real-time Washington, DC federal government operating status and dismissal procedures directly from the U.S. Office of Personnel Management. |
 | [OPML Podcast & RSS Parser](../mcps/opml-podcast-rss-parser.md) | Turn standard OPML export files from your podcast app or RSS reader into clean JSON data. Let your AI analyze your subscriptions and become your personal content curator. |
 | [Orderry](../mcps/orderry.md) | Manage your repair shop, orders, and inventory with Orderry and AI agents. |
+| [Overlapping Utility Splitter](../mcps/overlapping-utility-splitter.md) | Splits utility bills between two residents when one moves out mid-cycle. |
 | [Overtime Calculator](../mcps/overtime-calculator.md) | Calculate overtime pay, night shift premiums, and time bank balances. |
 | [Ovulation and Fertile Window Calculator](../mcps/ovulation-and-fertile-window-calculator.md) | Predict ovulation dates, fertile windows, and peak conception days based on your menstrual cycle. |
 | [PagePixels](../mcps/pagepixels.md) | Capture website screenshots and generate visual previews programmatically with an API that handles rendering at any resolution. |

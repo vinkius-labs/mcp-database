@@ -48,10 +48,12 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Day-by-Day Burn Simulator](../mcps/day-by-day-burn-simulator.md) | Simulate daily bank balance fluctuations to predict cash runway and overdraft events. |
 | [DECORE Simulator](../mcps/decore-simulator.md) | Calculate and validate income declarations for regulatory compliance. |
 | [Depreciation Calculator](../mcps/depreciation-calculator.md) | Calculate asset depreciation using straight-line, sum-of-the-years' digits, and declining balance methods. |
+| [Diaper Consumption Forecaster](../mcps/diaper-consumption-forecaster.md) | Estimate monthly diaper needs and costs based on baby age and product pricing. |
 | [Dilution Calculator](../mcps/dilution-calculator.md) | Simulate equity dilution, cap table evolution, and anti-dilution adjustments during investment rounds. |
 | [Discount Stack Calculator](../mcps/discount-stack-calculator.md) | Calculate final transaction totals by compounding multiple discount types and applying regional tax logic. |
 | [Dividend Discount Model](../mcps/dividend-discount-model.md) | Calculate intrinsic equity value using Gordon Growth and Two-Stage DDM models. |
 | [Dollar Cost Averaging Simulator](../mcps/dollar-cost-averaging-simulator.md) | Simulate and compare DCA vs Lump Sum investment strategies using historical price data. |
+| [Early Lease Break Penalty Calculator](../mcps/early-lease-break-penalty-calculator.md) | Calculate the total financial cost of breaking a lease early. |
 | [EBITDA Calculator](../mcps/ebitda-calculator.md) | Calculate EBITDA, margins, and EV/EBITDA multiples with industry benchmark comparisons. |
 | [EBITDA Multiple Valuator](../mcps/ebitda-multiple-valuator.md) | Calculate Enterprise and Equity Value using sector-specific EBITDA multiples. |
 | [Efficient Frontier Calculator](../mcps/efficient-frontier-calculator.md) | Calculate optimal asset weights and performance metrics along the efficient frontier. |
@@ -89,6 +91,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Headcount Efficiency Metrics](../mcps/headcount-efficiency-metrics.md) | Evaluate SaaS operational efficiency by comparing unit economics and spend ratios against public company benchmarks. |
 | [Hedge Bet Calculator](../mcps/hedge-bet-calculator.md) | Calculate the exact hedge wager needed to guarantee profit and eliminate risk. |
 | [Hedge Ratio Calculator](../mcps/hedge-ratio-calculator.md) | Calculate commodity futures contracts and quantify price volatility exposure. |
+| [Home Affordability Calculator](../mcps/home-affordability-calculator.md) | Estimate your maximum home purchase price and verify mortgage DTI compliance. |
 | [ICMS Calculator](../mcps/icms-calculator.md) | Calculate Brazilian ICMS taxes, including tax substitution (ST), tax differentials (DIFAL), and tax-inclusive base calculations. |
 | [IFRS Depreciation Calculator](../mcps/ifrs-depreciation-calculator.md) | Calculate asset depreciation schedules using IFRS/IAS 16 standards (Straight-Line, Units of Production, and SYD). |
 | [Implied Probability Extractor](../mcps/implied-probability-extractor.md) | Convert American odds to true implied probability by removing the bookmaker margin. |
@@ -138,6 +141,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Prevailing Wage Calculator](../mcps/prevailing-wage-calculator.md) | Lookup Davis-Bacon Act compliant wage rates and fringe benefits for construction trades. |
 | [Pricing Strategy Calculator](../mcps/pricing-strategy-calculator.md) | Calculate optimal price points using Cost-Plus, Value-Based, and Competitive methodologies. |
 | [Pro-Labore Tax Calculator](../mcps/pro-labore-tax-calculator.md) | Calculate INSS, IRRF, and compare compensation strategies for business partners. |
+| [Prorated Rent Calculator](../mcps/prorated-rent-calculator.md) | Calculate exact rent for partial months. |
 | [ProUni Eligibility Calculator](../mcps/prouni-eligibility-calculator.md) | Instantly calculate scholarship eligibility (Full or Partial) for ProUni by inputting family income, household size, and ENEM scores. |
 | [R&D Tax Credit Calculator](../mcps/rd-tax-credit-calculator.md) | Calculate US R&D tax credits using Regular and ASC methodologies. |
 | [Rainwater Harvesting Estimator](../mcps/rainwater-harvesting-estimator.md) | Estimate monthly rainwater collection volume and potential water bill savings based on roof area and local rainfall. |
@@ -158,6 +162,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Safe Note Converter](../mcps/safe-note-converter.md) | Calculate equity conversion, share issuance, and ownership dilution from SAFE conversions. |
 | [Salary Net Calculator](../mcps/salary-net-calculator.md) | Calculate net salary, INSS, IRRF, and FGTS deductions based on gross pay. |
 | [Scholarship Eligibility Checker](../mcps/scholarship-eligibility-checker.md) | Calculate household per capita income and determine eligibility for scholarship programs like ProUni and FIES. |
+| [Security Deposit Deductor](../mcps/security-deposit-deductor.md) | Calculate security deposit refunds by itemizing repair costs. |
 | [Setel Malaysia](../mcps/setel-malaysia.md) | Orchestrate Setel Malaysia payments — manage payment intents, parking sessions, and EV charging directly from any AI agent. |
 | [Settlement Value Estimator](../mcps/settlement-value-estimator.md) | Quantify legal settlement ranges using Expected Monetary Value and risk-adjusted negotiation boundaries. |
 | [Sharpe Ratio Calculator](../mcps/sharpe-ratio-calculator.md) | Calculate advanced risk-adjusted performance metrics like Sharpe, Sortino, and Calmar ratios. |
@@ -169,6 +174,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [SOX Compliance Cost Estimator](../mcps/sox-compliance-cost-estimator.md) | Estimate the annual costs of Sarbanes-Oxley (SOX) compliance for pre-IPO companies. |
 | [Spain IRPF Calculator](../mcps/spain-irpf-calculator.md) | Calculate Spanish Personal Income Tax (IRPF) liabilities, including taxable base determination and regional tax application. |
 | [Split-Bill Grace Period Calculator](../mcps/split-bill-grace-period-calculator.md) | Calculate adjusted repayment amounts for shared expenses when one party covers the cost upfront and the other delays their contribution. |
+| [Square Footage Rent Comparer](../mcps/square-footage-rent-comparer.md) | Fairly split monthly rent between roommates based on room square footage. |
 | [Standby Energy Waste Calculator](../mcps/standby-energy-waste-calculator.md) | Calculate the energy waste, financial cost, and carbon footprint of electronics in standby mode. |
 | [Startup Financial Model](../mcps/startup-financial-model.md) | Generate 12, 24, or 36-month financial projections including P&L, Cash Flow, and Break-even analysis. |
 | [Startup Health Score](../mcps/startup-health-score.md) | Quantify startup operational health (0-100) across Finance, Product, Growth, Team, and Market dimensions using stage-specific benchmarks. |

@@ -6,6 +6,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Advanced BMI & Anthropometric Analyzer](../mcps/advanced-bmi-anthropometric-analyzer.md) | Precision body composition and physiological metric analyzer for fitness and clinical assessment. |
 | [Allergen Checker](../mcps/allergen-checker.md) | Scan ingredients and recipes for the 14 mandatory allergens. |
+| [Baby Bottle Feeding Scheduler](../mcps/baby-bottle-feeding-scheduler.md) | Generate precise 24-hour infant feeding schedules and monthly formula inventory predictions. |
 | [Blood Pressure Classifier](../mcps/blood-pressure-classifier.md) | Classify blood pressure readings, detect trends, and identify hypertensive alerts using AHA/WHO standards. |
 | [Breathing Timer](../mcps/breathing-timer.md) | Accurately track structured breathing cycles (Box Breathing, 4-7-8, Coherence Heart Rate) for guided respiratory practice. |
 | [Calorie & Macro Calculator](../mcps/calorie-macro-calculator.md) | Calculate daily caloric needs and macronutrient split based on physiological metrics and activity levels. |
@@ -39,6 +40,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Pill Fraction Simplifier](../mcps/pill-fraction-simplifier.md) | Converts decimal pill doses into the easiest physical way to cut them. |
 | [Pregnancy Due Date Engine](../mcps/pregnancy-due-date-engine.md) | Calculate gestational age, due dates, and prenatal schedules using LMP, IVF, or ultrasound data. |
 | [Pregnancy Week Calculator](../mcps/pregnancy-week-calculator.md) | Track your pregnancy progress, from gestational age to weekly fetal milestones. |
+| [Pregnancy Weight Gain Tracker](../mcps/pregnancy-weight-gain-tracker.md) | Monitor maternal weight trends against IOM guidelines. |
 | [Protein Needs Calculator](../mcps/protein-needs-calculator.md) | Calculate your daily protein requirements based on weight, activity level, and goals. |
 | [PSS-10 Stress Assessment](../mcps/pss-10-stress-assessment.md) | Calculate and analyze perceived stress levels using the PSS-10 scale. |
 | [Raw Diet Ratio Calculator](../mcps/raw-diet-ratio-calculator.md) | Calculate precise daily food weights for BARF and PMR raw diets based on pet weight and activity level. |
