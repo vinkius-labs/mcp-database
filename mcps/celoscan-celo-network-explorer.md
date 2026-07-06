@@ -33,17 +33,9 @@ Connect your **Celoscan** API key to any AI agent to explore the Celo blockchain
 
 
 ## Available Tools (18)
-- **get_erc20_token_balance**: Get ERC20-Token Account Balance by ContractAddress
-- **get_erc20_token_supply**: Get ERC20-Token Total Supply by ContractAddress
 - **get_account_balance**: Get CELO Balance for a Single Address
 - **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
-- **get_block_number_by_time**: Get Block Number by Timestamp
-- **get_block_reward**: Get Block Rewards by BlockNo
-- **get_contract_abi**: Get Contract ABI for Verified Smart Contracts
-- **get_contract_source_code**: Get Contract Source Code for Verified Smart Contracts
-- **get_account_balance_multi**: Get CELO Balance for Multiple Addresses
-- **get_erc20_transfers**: Get a List of ERC20 Token Transfer Events By Address
-- **get_erc721_transfers**: Get a List of ERC721 Token Transfer Events By Address
+- **get_erc20_token_balance**: Get ERC20-Token Account Balance by ContractAddress
 - **get_internal_transactions**: Get a List of Internal Transactions By Address
 - **get_last_celo_price**: Get Last Price of CELO
 - **get_mined_blocks**: Get list of Blocks Mined by Address
@@ -51,6 +43,14 @@ Connect your **Celoscan** API key to any AI agent to explore the Celo blockchain
 - **get_total_celo_supply**: Get Total Supply of CELO on the Celo Network
 - **get_transaction_execution_status**: Check Contract Execution Status
 - **get_transaction_receipt_status**: Check Transaction Receipt Status
+- **get_erc20_token_supply**: Get ERC20-Token Total Supply by ContractAddress
+- **get_block_number_by_time**: Get Block Number by Timestamp
+- **get_block_reward**: Get Block Rewards by BlockNo
+- **get_contract_abi**: Get Contract ABI for Verified Smart Contracts
+- **get_contract_source_code**: Get Contract Source Code for Verified Smart Contracts
+- **get_account_balance_multi**: Get CELO Balance for Multiple Addresses
+- **get_erc20_transfers**: Get a List of ERC20 Token Transfer Events By Address
+- **get_erc721_transfers**: Get a List of ERC721 Token Transfer Events By Address
 
 
 ## 💬 Prompt Examples

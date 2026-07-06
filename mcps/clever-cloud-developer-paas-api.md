@@ -34,14 +34,6 @@ Connect your **Clever Cloud** account to any AI agent and take full control of y
 
 
 ## Available Tools (14)
-- **create_application**: Provide necessary configuration in the body.
-
-Create a new Clever Cloud application
-- **create_organization**: Provide configuration in the body.
-
-Create a new organization
-- **delete_application**: Delete an application
-- **get_addon**: Get details of a specific add-on
 - **get_application_logs**: Fetch application logs
 - **get_application**: Get details of a specific application
 - **get_current_user**: Get information about the current user
@@ -56,6 +48,14 @@ List all your add-ons
 
 Provision a new add-on
 - **trigger_deployment**: Trigger a deployment
+- **create_application**: Provide necessary configuration in the body.
+
+Create a new Clever Cloud application
+- **create_organization**: Provide configuration in the body.
+
+Create a new organization
+- **delete_application**: Delete an application
+- **get_addon**: Get details of a specific add-on
 
 
 ## 💬 Prompt Examples

@@ -34,14 +34,14 @@ Connect your **Countly** analytics instance to any AI agent to monitor user beha
 
 
 ## Available Tools (8)
-- **begin_session**: Starts a new session for a user
-- **end_session**: Ends the current session
-- **read_drill**: Perform advanced segmentation and filtering (Enterprise Edition)
-- **read_events**: Retrieve data for specific custom events
 - **read_metrics**: Retrieve standard metrics like sessions, users, or countries
 - **record_events**: Records specific actions within the app
 - **update_session**: Extends an existing session
 - **update_user_details**: Updates information about a specific user
+- **begin_session**: Starts a new session for a user
+- **end_session**: Ends the current session
+- **read_drill**: Perform advanced segmentation and filtering (Enterprise Edition)
+- **read_events**: Retrieve data for specific custom events
 
 
 ## 💬 Prompt Examples

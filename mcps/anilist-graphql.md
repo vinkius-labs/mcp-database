@@ -33,6 +33,8 @@ Connect your **AniList** account to any AI agent to explore the vast world of an
 
 
 ## Available Tools (15)
+- **toggle_follow**: Toggle following a user
+- **update_user**: Update authenticated user settings
 - **delete_media_list_entry**: Delete a media list entry
 - **get_airing_schedule**: Query airing schedule data
 - **get_character**: Query a specific character
@@ -48,8 +50,6 @@ Query a specific staff member
 - **search_media**: Search for anime or manga
 - **search_staff**: Search for staff members
 - **toggle_favourite**: Toggle favorite status
-- **toggle_follow**: Toggle following a user
-- **update_user**: Update authenticated user settings
 
 
 ## 💬 Prompt Examples

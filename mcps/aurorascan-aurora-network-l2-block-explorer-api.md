@@ -34,6 +34,11 @@ Connect your AI agent to **Aurorascan** and gain deep visibility into the Aurora
 
 
 ## Available Tools (30)
+- **proxy_get_code**: eth_getCode
+- **proxy_get_storage_at**: eth_getStorageAt
+- **proxy_get_transaction_by_hash**: eth_getTransactionByHash
+- **proxy_get_transaction_receipt**: eth_getTransactionReceipt
+- **verify_source_code**: Verify Source Code
 - **get_abi**: Get Contract ABI for Verified Source Codes
 - **get_balance_multi**: Get Ether Balance for Multiple Addresses
 - **get_balance**: Get Ether Balance for a Single Address
@@ -59,11 +64,6 @@ Connect your AI agent to **Aurorascan** and gain deep visibility into the Aurora
 - **proxy_estimate_gas**: eth_estimateGas
 - **proxy_gas_price**: eth_gasPrice
 - **proxy_get_block_by_number**: eth_getBlockByNumber
-- **proxy_get_code**: eth_getCode
-- **proxy_get_storage_at**: eth_getStorageAt
-- **proxy_get_transaction_by_hash**: eth_getTransactionByHash
-- **proxy_get_transaction_receipt**: eth_getTransactionReceipt
-- **verify_source_code**: Verify Source Code
 
 
 ## 💬 Prompt Examples

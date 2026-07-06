@@ -34,12 +34,6 @@ Connect to the **CurseForge** API and empower your AI agent to navigate the vast
 
 
 ## Available Tools (17)
-- **list_categories**: Get all available classes and categories for a game
-- **get_files_batch**: Get a list of files by their IDs
-- **get_fingerprints_matches_fuzzy**: Get matches for a list of file fingerprints using fuzzy matching
-- **get_fingerprints_matches**: Used for identifying mods from local files.
-
-Get matches for a list of file fingerprints
 - **get_game**: Get details for a specific game
 - **list_games**: List all games available to the API key
 - **get_mod_description**: Get the HTML description of a mod
@@ -50,9 +44,15 @@ Get matches for a list of file fingerprints
 - **get_mod**: Get details for a specific mod
 - **get_mods_batch**: Get a list of mods by their IDs
 - **search_mods**: Search for mods based on criteria
-- **list_game_version_types**: Get all available version types for a game
 - **list_game_versions_v1**: Get all available versions for a game (V1)
 - **list_game_versions_v2**: Get detailed version information for a game (V2)
+- **list_categories**: Get all available classes and categories for a game
+- **get_files_batch**: Get a list of files by their IDs
+- **get_fingerprints_matches_fuzzy**: Get matches for a list of file fingerprints using fuzzy matching
+- **get_fingerprints_matches**: Used for identifying mods from local files.
+
+Get matches for a list of file fingerprints
+- **list_game_version_types**: Get all available version types for a game
 
 
 ## 💬 Prompt Examples

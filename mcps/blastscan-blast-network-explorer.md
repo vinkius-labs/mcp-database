@@ -37,10 +37,10 @@ Connect to **Blastscan**, the leading block explorer for the Blast Network, and 
 - **get_contract_abi**: Get Contract ABI for Verified Source Codes
 - **get_ether_balance_multi**: Get Ether Balance for Multiple Addresses
 - **get_ether_balance**: Get Ether Balance for a Single Address
+- **get_eth_price**: Get Last Price of Ether
 - **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
 - **get_block_number_by_time**: Get Block Number by Timestamp
 - **get_block_reward**: Get Block Rewards by BlockNo
-- **get_eth_price**: Get Last Price of Ether
 - **get_eth_supply**: Get Total Supply of Ether on Blast
 - **get_logs**: Get Event Logs
 - **get_mined_blocks**: Get list of Blocks Mined by Address
@@ -49,6 +49,7 @@ Connect to **Blastscan**, the leading block explorer for the Blast Network, and 
 - **get_erc20_token_balance**: Get ERC20-Token Account Balance by ContractAddress
 - **get_erc721_transfers**: Get a list of ERC721 - Token Transfer Events by Address
 - **get_erc20_token_supply**: Get ERC20-Token TotalSupply by ContractAddress
+- **proxy_eth_estimategas**: eth_estimateGas
 - **get_erc20_transfers**: Get a list of ERC20 - Token Transfer Events by Address
 - **get_internal_transactions**: Get a list of Internal Transactions by Address
 - **get_normal_transactions**: Get a list of Normal Transactions By Address
@@ -56,7 +57,6 @@ Connect to **Blastscan**, the leading block explorer for the Blast Network, and 
 - **get_transaction_status**: Check Contract Execution Status
 - **proxy_eth_blocknumber**: eth_blockNumber
 - **proxy_eth_call**: eth_call
-- **proxy_eth_estimategas**: eth_estimateGas
 - **proxy_eth_gasprice**: eth_gasPrice
 - **proxy_eth_getblockbynumber**: eth_getBlockByNumber
 - **proxy_eth_getcode**: eth_getCode

@@ -35,12 +35,6 @@ Connect any **Blockscout** explorer instance to your AI agent for deep on-chain 
 
 
 ## Available Tools (14)
-- **get_account_balance**: Get native balance for an address (Etherscan API)
-- **get_account_internal_transactions**: Get internal transactions by address (Etherscan API)
-- **get_account_transactions**: Get transactions by address (Etherscan API)
-- **get_address**: Retrieve address details
-- **get_block**: Get block details
-- **get_contract_abi**: Get contract ABI (Etherscan API)
 - **get_contract_source_code**: Get contract source code (Etherscan API)
 - **get_indexing_status**: Get indexing status
 - **get_logs**: Get event logs (Etherscan API)
@@ -49,6 +43,12 @@ Connect any **Blockscout** explorer instance to your AI agent for deep on-chain 
 - **get_transaction**: Get transaction details
 - **json_rpc**: Execute a standard Ethereum JSON-RPC 2.0 method
 - **list_token_balances**: List token balances for an address
+- **get_address**: Retrieve address details
+- **get_block**: Get block details
+- **get_contract_abi**: Get contract ABI (Etherscan API)
+- **get_account_balance**: Get native balance for an address (Etherscan API)
+- **get_account_internal_transactions**: Get internal transactions by address (Etherscan API)
+- **get_account_transactions**: Get transactions by address (Etherscan API)
 
 
 ## 💬 Prompt Examples

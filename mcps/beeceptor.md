@@ -34,6 +34,8 @@ Connect **Beeceptor** to your AI agent to build, manage, and monitor mock APIs a
 
 
 ## Available Tools (29)
+- **delete_state**: Delete state items (Bulk)
+- **list_state**: Get all state
 - **add_certificate**: Add mTLS certificate
 - **bulk_replace_rules**: Bulk replace mock rules
 - **create_rule**: Create mock rule
@@ -44,7 +46,6 @@ Connect **Beeceptor** to your AI agent to build, manage, and monitor mock APIs a
 - **delete_rule**: Delete mock rule
 - **delete_spec**: Delete specification
 - **delete_state_item**: Delete single state item
-- **delete_state**: Delete state items (Bulk)
 - **download_multipart**: Download multipart file
 - **get_job_status**: Get spec upload job status
 - **get_request**: Get single request
@@ -55,7 +56,6 @@ Connect **Beeceptor** to your AI agent to build, manage, and monitor mock APIs a
 - **list_certificates**: List mTLS certificates
 - **list_requests**: Get request history
 - **list_rules**: Get all mock rules
-- **list_state**: Get all state
 - **reorder_rules**: Reorder mock rules
 - **update_rule_full**: Update mock rule (Full)
 - **update_rule_partial**: Update mock rule (Partial)

@@ -33,8 +33,6 @@ Connect your **Cloud DNS** account to any AI agent to manage global Anycast DNS 
 
 
 ## Available Tools (7)
-- **create_record**: Create a new DNS record
-- **create_zone**: Create a new DNS zone
 - **delete_record**: Delete a DNS record
 - **delete_zone**: Delete a DNS zone
 - **list_records**: ) within a specific zone.
@@ -42,6 +40,8 @@ Connect your **Cloud DNS** account to any AI agent to manage global Anycast DNS 
 List all records for a specific zone
 - **list_zones**: List all DNS zones
 - **update_record**: Update an existing DNS record
+- **create_record**: Create a new DNS record
+- **create_zone**: Create a new DNS zone
 
 
 ## 💬 Prompt Examples

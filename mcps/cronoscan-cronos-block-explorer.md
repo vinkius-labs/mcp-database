@@ -53,11 +53,11 @@ Connect to **Cronoscan** to analyze the Cronos blockchain through natural conver
 - **proxy_eth_get_transaction_by_hash**: Proxy: eth_getTransactionByHash
 - **proxy_eth_get_transaction_receipt**: Proxy: eth_getTransactionReceipt
 - **get_token_balance**: Get ERC20-Token Account Balance by ContractAddress
-- **get_token_nft_tx**: Get ERC721 Token Transfer Events by Address
-- **get_token_supply**: Get ERC20-Token Total Supply by ContractAddress
 - **get_token_tx**: Get ERC20 Token Transfer Events by Address
 - **get_tx_list_internal**: Get a List of Internal Transactions By Address
 - **get_tx_list**: Get a List of Normal Transactions By Address
+- **get_token_nft_tx**: Get ERC721 Token Transfer Events by Address
+- **get_token_supply**: Get ERC20-Token Total Supply by ContractAddress
 
 
 ## 💬 Prompt Examples

@@ -34,14 +34,14 @@ Connect your AI agent to the **CardanoScan API** to explore the Cardano blockcha
 
 
 ## Available Tools (12)
-- **get_address**: Get detailed information about a specific Cardano address
-- **get_asset**: Get information about a specific native asset
 - **get_block**: Get information about a specific block by its hash or number
 - **get_epoch**: Get information about a specific epoch
 - **get_latest_blocks**: Get a list of the most recent blocks added to the blockchain
 - **get_latest_epoch**: Get details about the current/latest epoch
 - **get_pool**: Get information about a specific stake pool
 - **get_transaction**: Get comprehensive details for a specific transaction hash
+- **get_address**: Get detailed information about a specific Cardano address
+- **get_asset**: Get information about a specific native asset
 - **get_transaction_utxos**: Get the inputs and outputs (UTXOs) for a specific transaction
 - **list_address_transactions**: Get a list of transactions associated with a specific address
 - **list_asset_transactions**: Get transactions involving a specific native asset

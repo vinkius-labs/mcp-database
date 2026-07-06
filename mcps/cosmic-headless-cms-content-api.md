@@ -34,7 +34,6 @@ Connect your **Cosmic** headless CMS to any AI agent to manage your content infr
 
 
 ## Available Tools (21)
-- **batch_objects**: Perform batch operations on Objects (Max 25)
 - **create_media**: Create/Upload Media
 - **create_object**: Create a new Object
 - **create_object_type**: Create a new Object Type
@@ -57,6 +56,7 @@ List Objects in a Cosmic Bucket
 - **update_media**: Update Media metadata
 - **update_object**: Update an existing Object
 - **update_object_type**: Update an Object Type
+- **batch_objects**: Perform batch operations on Objects (Max 25)
 
 
 ## 💬 Prompt Examples

@@ -34,10 +34,7 @@ Connect your **Civo** account to any AI agent to manage your cloud-native infras
 
 
 ## Available Tools (33)
-- **add_team_member**: Add a member to a team
-- **attach_volume**: Attach a volume to an instance
 - **create_cluster**: Create a new Kubernetes cluster
-- **create_domain_record**: Create a DNS record
 - **create_domain**: Create a DNS domain
 - **create_firewall_rule**: Create a firewall rule
 - **create_firewall**: Create a firewall
@@ -48,7 +45,6 @@ Connect your **Civo** account to any AI agent to manage your cloud-native infras
 - **create_webhook**: Create a webhook
 - **detach_volume**: Detach a volume
 - **get_charges**: Get hourly usage report for chargeable resources
-- **get_quota**: Get account quota and usage
 - **list_clusters**: List Kubernetes clusters
 - **list_disk_images**: List disk images
 - **list_domains**: List DNS domains
@@ -56,7 +52,6 @@ Connect your **Civo** account to any AI agent to manage your cloud-native infras
 - **list_networks**: List private networks
 - **list_regions**: List available regions
 - **list_sizes**: List available instance sizes
-- **list_ssh_keys**: List SSH keys
 - **reboot_instance**: Hard reboot an instance
 - **recycle_cluster_node**: Recycle a node in a Kubernetes cluster
 - **resize_instance**: Upgrade or resize an instance
@@ -67,6 +62,11 @@ Connect your **Civo** account to any AI agent to manage your cloud-native infras
 - **test_webhook**: Test a webhook
 - **update_team_member_status**: Update team member status
 - **upload_ssh_key**: Upload an SSH key
+- **add_team_member**: Add a member to a team
+- **attach_volume**: Attach a volume to an instance
+- **create_domain_record**: Create a DNS record
+- **get_quota**: Get account quota and usage
+- **list_ssh_keys**: List SSH keys
 
 
 ## 💬 Prompt Examples

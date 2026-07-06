@@ -35,17 +35,17 @@ Connect to the **CoinLore** API to empower your AI agent with comprehensive cryp
 
 
 ## Available Tools (11)
-- **list_assets**: Get a lightweight list of all coins
-- **get_coin_info**: Get static metadata for a specific coin
-- **get_coin_markets**: Get top 50 exchanges and markets for a coin
-- **get_exchange**: Get exchange details and top 100 trading pairs
-- **list_exchanges**: Get all exchanges listed on CoinLore
 - **get_global_stats**: Get overall cryptocurrency market statistics
 - **get_movers**: Get top 20 winners and losers
 - **get_ohlcv**: Get 365 days of daily OHLCV history
 - **get_social_stats**: Get social media metrics for a coin
 - **get_ticker**: Retrieve detailed tick data for specific coins
 - **list_tickers**: Retrieve tick data for multiple coins
+- **list_assets**: Get a lightweight list of all coins
+- **get_coin_info**: Get static metadata for a specific coin
+- **get_coin_markets**: Get top 50 exchanges and markets for a coin
+- **get_exchange**: Get exchange details and top 100 trading pairs
+- **list_exchanges**: Get all exchanges listed on CoinLore
 
 
 ## 💬 Prompt Examples

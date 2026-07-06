@@ -33,14 +33,14 @@ Connect the **CountryStateCity** database to your AI agent and instantly retriev
 
 
 ## Available Tools (6)
+- **list_cities_by_state**: List all cities within a specific state
+- **list_countries**: List all countries
+- **list_states**: List all states/provinces within a specific country
 - **get_country**: Get details for a specific country
 - **get_state**: Get details for a specific state
 - **list_cities_by_country**: Note: Requires Supporter+ tier.
 
 List all cities within a specific country
-- **list_cities_by_state**: List all cities within a specific state
-- **list_countries**: List all countries
-- **list_states**: List all states/provinces within a specific country
 
 
 ## 💬 Prompt Examples

@@ -34,10 +34,6 @@ Connect to the **BTC.com API** to integrate comprehensive Bitcoin blockchain exp
 
 
 ## Available Tools (13)
-- **get_account_stats**: Requires BTC_COM_ACCESS_KEY.
-
-Get account hashrate and stats
-- **get_address_summary**: Get address summary
 - **get_address_transactions**: Get address transactions
 - **get_address_utxo**: Get unspent transaction outputs (UTXO) for an address
 - **get_block**: Get block information by hash or height
@@ -57,6 +53,10 @@ Get worker list
 - **get_worker_stats**: Requires BTC_COM_ACCESS_KEY.
 
 Get worker stats
+- **get_account_stats**: Requires BTC_COM_ACCESS_KEY.
+
+Get account hashrate and stats
+- **get_address_summary**: Get address summary
 
 
 ## 💬 Prompt Examples
