@@ -37,13 +37,13 @@ Connect your **Pipeliner CRM** space to any AI agent and take full control of yo
 - **get_pipeliner_lead**: Get details for a specific lead
 - **get_pipeliner_opportunity**: Get details for a specific opportunity
 - **list_pipeliner_accounts**: List all company accounts
-- **list_pipeliner_activities**: List sales activities and tasks
-- **list_pipeliner_contacts**: List all business contacts
 - **list_pipeliner_leads**: List all sales leads
 - **list_pipeliner_opportunities**: List all sales opportunities
 - **list_pipeliner_pipelines**: List available sales pipelines
 - **list_pipeliner_tasks**: List all assigned tasks
 - **list_pipeliner_users**: List users in the Pipeliner space
+- **list_pipeliner_activities**: List sales activities and tasks
+- **list_pipeliner_contacts**: List all business contacts
 
 
 ## 💬 Prompt Examples

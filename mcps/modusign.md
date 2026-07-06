@@ -35,8 +35,6 @@ Connect your **Modusign** account to your AI agent and streamline your document 
 
 
 ## Available Tools (10)
-- **create_document_from_template**: Create document from template
-- **get_audit_logs**: Get document audit logs
 - **get_document**: Get specific document details
 - **get_org_info**: Get organization metadata
 - **list_automations**: List signature automations
@@ -45,6 +43,8 @@ Connect your **Modusign** account to your AI agent and streamline your document 
 - **list_folders**: List document folders
 - **list_templates**: List contract templates
 - **list_webhooks**: List active webhooks
+- **create_document_from_template**: Create document from template
+- **get_audit_logs**: Get document audit logs
 
 
 ## 💬 Prompt Examples

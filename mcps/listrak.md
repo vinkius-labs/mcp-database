@@ -35,7 +35,6 @@ Connect your **Listrak** account to any AI agent to automate your cross-channel 
 
 
 ## Available Tools (7)
-- **send_sms_broadcast**: Send an immediate SMS broadcast
 - **create_sms_contact**: Add a new SMS contact
 - **list_email_campaigns**: List all email campaigns
 - **get_email_contact_details**: Get details for a specific email contact
@@ -44,6 +43,7 @@ Connect your **Listrak** account to any AI agent to automate your cross-channel 
 
 Send a transactional email
 - **subscribe_to_sms_list**: Subscribe a contact to an SMS list
+- **send_sms_broadcast**: Send an immediate SMS broadcast
 
 
 ## 💬 Prompt Examples

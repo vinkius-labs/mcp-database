@@ -33,12 +33,12 @@ The Loyverse MCP Server allows you to seamlessly integrate your point-of-sale sy
 
 
 ## Available Tools (4)
-- **l_list_customers**: List your registered store customers from Loyverse POS
-- **l_list_items**: List inventory items in your Loyverse account with optional pagination parameters
-- **l_list_locations**: List all store locations in your Loyverse account
 - **l_list_receipts**: Can filter by creation date min and max parameters.
 
 List generated receipts from your Loyverse POS system. Can be filtered by date range and pagination limit
+- **l_list_customers**: List your registered store customers from Loyverse POS
+- **l_list_items**: List inventory items in your Loyverse account with optional pagination parameters
+- **l_list_locations**: List all store locations in your Loyverse account
 
 
 ## 💬 Prompt Examples

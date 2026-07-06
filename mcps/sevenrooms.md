@@ -30,9 +30,6 @@ List restaurant reservations
 
 Search guest profiles
 - **get_guest**: Get guest profile
-- **list_waitlist**: For real-time host management.
-
-List waitlist
 - **list_venues**: For multi-location restaurant groups.
 
 List restaurant venues
@@ -42,6 +39,9 @@ Check table availability
 - **list_events**: With date, capacity, pricing, and availability.
 
 List restaurant events
+- **list_waitlist**: For real-time host management.
+
+List waitlist
 
 
 ## 💬 Prompt Examples

@@ -33,13 +33,13 @@ Inject precision quality assurance workflows directly bounding LLM models via th
 
 
 ## Available Tools (10)
-- **list_projects**: List all projects on Percy (BrowserStack). Percy is the leading visual regression testing platform that captures snapshots and detects pixel-level UI differences across builds. Uses JSON:API format. Returns project names, slugs, and browser configs
-- **get_project_details**: Get full details of a Percy project including name, slug, default branch, auto-approve enabled, browser targets, and build count
 - **list_builds**: List builds for a Percy project. Each build contains snapshots from a test run. Returns build IDs, states (processing/finished/failed), branch names, commit SHAs, and snapshot counts
 - **get_build_details**: Get full details of a Percy build including state, total/unreviewed snapshot counts, approved/rejected snapshots, branch, commit SHA, and finalized timestamp
 - **approve_build**: /approve` moving the test suite to green.
 
 Approve all unreviewed snapshots in a Percy build. Marks the entire build as visually approved for deployment
+- **list_projects**: List all projects on Percy (BrowserStack). Percy is the leading visual regression testing platform that captures snapshots and detects pixel-level UI differences across builds. Uses JSON:API format. Returns project names, slugs, and browser configs
+- **get_project_details**: Get full details of a Percy project including name, slug, default branch, auto-approve enabled, browser targets, and build count
 - **list_snapshots**: List snapshots in a Percy build. Each snapshot is a captured page/component at specific widths and browsers. Returns snapshot names, review states (unreviewed/approved/rejected), and diff percentages
 - **get_snapshot_details**: Get full details of a Percy snapshot including name, review state, widths, fingerprint, and comparison count
 - **approve_snapshot**: Approve a single Percy snapshot. Marks it as visually correct, updating the baseline for future comparisons

@@ -34,14 +34,14 @@ Explicitly designed mapping towards **Security Engineering Leads**, **Enterprise
 
 
 ## Available Tools (8)
-- **mintmcp_eval_guardrail**: Pass structural parameter string checking via unified security AI PI-redaction guardrail engines
-- **mintmcp_fetch_audit_logs**: Dump systematic telemetries logging SOC2 matrix accesses tracking execution
-- **mintmcp_get_tool_policy**: Fetch the definitive SOC2 governance and RBAC parameters restricting one logic integration
-- **mintmcp_get_virtual_server**: Extract exact configuration patterns of one unique Virtual Server schema
 - **mintmcp_list_available_tools**: Audit underlying tools currently approved locally inside a Virtual Server
 - **mintmcp_list_virtual_servers**: List all Virtual Server proxy abstractions grouping tools functionally
 - **mintmcp_revoke_access_token**: Sunder seamlessly a runtime session abstraction resolving an active OAuth flow
 - **mintmcp_run_tool_action**: Proxy explicitly an execution logic stream safely hitting the native integrations running behind the gateway
+- **mintmcp_eval_guardrail**: Pass structural parameter string checking via unified security AI PI-redaction guardrail engines
+- **mintmcp_fetch_audit_logs**: Dump systematic telemetries logging SOC2 matrix accesses tracking execution
+- **mintmcp_get_tool_policy**: Fetch the definitive SOC2 governance and RBAC parameters restricting one logic integration
+- **mintmcp_get_virtual_server**: Extract exact configuration patterns of one unique Virtual Server schema
 
 
 ## 💬 Prompt Examples

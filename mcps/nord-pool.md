@@ -40,12 +40,12 @@ Your AI agent becomes a real-time energy market analyst — no spreadsheets, no 
 
 
 ## Available Tools (10)
-- **get_auction_flows**: Requires both source and destination area codes. Flows reflect the scheduled energy exchange determined during the day-ahead market coupling process. Optionally filter by delivery date (YYYY-MM-DD).
-
-Retrieve auction flows between two delivery areas
 - **get_auction_volumes**: Use standard bidding zone codes separated by commas. Optionally filter by delivery date (YYYY-MM-DD). Volumes indicate the total cleared energy quantity per Market Time Unit in each area.
 
 Retrieve day-ahead auction volumes for specified delivery areas
+- **get_auction_flows**: Requires both source and destination area codes. Flows reflect the scheduled energy exchange determined during the day-ahead market coupling process. Optionally filter by delivery date (YYYY-MM-DD).
+
+Retrieve auction flows between two delivery areas
 - **get_transmission_capacities**: Requires both source and destination area codes (e.g. NO1 to SE3). ATC represents the maximum commercial power transfer capacity allocated for the day-ahead market coupling. Optionally filter by delivery date (YYYY-MM-DD).
 
 Retrieve Available Transmission Capacities (ATC) between two delivery areas

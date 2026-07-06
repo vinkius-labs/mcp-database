@@ -28,16 +28,16 @@ Connect your **Medallia** experience management instance to any AI agent and tak
 
 
 ## Available Tools (10)
-- **get_alert**: Get details for a specific alert
-- **get_program_details**: Get details for a specific program
-- **get_response**: Get details for a specific response
-- **get_survey**: Get details for a specific survey
-- **list_alerts**: List feedback alerts
 - **list_programs**: List experience management programs
 - **list_responses**: List survey responses
 - **list_surveys**: List all customer surveys
 - **list_users**: List Medallia users
 - **search_responses**: Search survey responses by term
+- **get_alert**: Get details for a specific alert
+- **get_program_details**: Get details for a specific program
+- **get_response**: Get details for a specific response
+- **get_survey**: Get details for a specific survey
+- **list_alerts**: List feedback alerts
 
 
 ## 💬 Prompt Examples

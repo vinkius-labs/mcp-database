@@ -35,9 +35,6 @@ No exporting CSVs or navigating XML trees manually. When a customer complains ab
 
 
 ## Available Tools (10)
-- **list_products**: Use the `limit` parameter string to bound results (e.g., `0,20`). Native XML responses are parsed and converted to structured arrays.
-
-List PrestaShop products with full details, retrieving items from the open-source eCommerce catalog
 - **get_product**: Get an individual PrestaShop product by ID, returning full pricing, descriptions, and category associations
 - **list_orders**: Limits response arrays via bounds (e.g., `0,20`). Critical for scanning recent sales history mapped directly against specific customer IDs.
 
@@ -57,6 +54,9 @@ List physical PrestaShop customer/order addresses mapping delivery logistics lin
 List PrestaShop available stock quantities mapping exact units over specific complex item structures
 - **get_stock**: Get PrestaShop specific stock quantity node explicitly by constrained resource ID
 - **list_currencies**: List all active currencies configured and accepted implicitly within the target store interface
+- **list_products**: Use the `limit` parameter string to bound results (e.g., `0,20`). Native XML responses are parsed and converted to structured arrays.
+
+List PrestaShop products with full details, retrieving items from the open-source eCommerce catalog
 
 
 ## 💬 Prompt Examples

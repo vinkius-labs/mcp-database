@@ -33,9 +33,11 @@ Connect your **PHC GO** enterprise ecosystem to your AI agent and manage operati
 
 
 ## Available Tools (16)
-- **list_customers**: Listar todas as entidades/clientes registados no PHC GO
-- **get_customer_details**: Obter detalhes completos de um cliente/entidade pelo ID
-- **search_customers**: Pesquisar clientes por nome, NIF ou código
+- **list_current_accounts**: Consultar a conta corrente de clientes (saldos e movimentos pendentes)
+- **list_taxes**: Listar taxas de IVA e impostos configurados no PHC GO
+- **list_series**: Listar séries de numeração de documentos (FT 2026/, NC 2026/, etc)
+- **list_payment_methods**: Listar métodos de pagamento configurados (Transferência, MB, MBWay, Cheque)
+- **list_warehouses**: Listar armazéns configurados para gestão de stock
 - **create_customer**: Criar um novo cliente/entidade no PHC GO
 - **list_products**: Listar todos os artigos e serviços registados no PHC GO
 - **get_product_details**: Obter detalhes de um artigo/serviço pelo ID
@@ -44,11 +46,9 @@ Connect your **PHC GO** enterprise ecosystem to your AI agent and manage operati
 - **get_document_details**: Obter detalhes completos de um documento comercial (fatura, nota crédito, recibo, etc) incluindo linhas
 - **create_document**: Criar um novo documento comercial no PHC GO (fatura, orçamento, encomenda, etc)
 - **list_stocks**: Consultar movimentos de stock. Opcionalmente filtrar por artigo
-- **list_current_accounts**: Consultar a conta corrente de clientes (saldos e movimentos pendentes)
-- **list_taxes**: Listar taxas de IVA e impostos configurados no PHC GO
-- **list_series**: Listar séries de numeração de documentos (FT 2026/, NC 2026/, etc)
-- **list_payment_methods**: Listar métodos de pagamento configurados (Transferência, MB, MBWay, Cheque)
-- **list_warehouses**: Listar armazéns configurados para gestão de stock
+- **list_customers**: Listar todas as entidades/clientes registados no PHC GO
+- **get_customer_details**: Obter detalhes completos de um cliente/entidade pelo ID
+- **search_customers**: Pesquisar clientes por nome, NIF ou código
 
 
 ## 💬 Prompt Examples

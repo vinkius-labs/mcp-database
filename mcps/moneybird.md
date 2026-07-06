@@ -37,7 +37,6 @@ Connect your **Moneybird** administration to your AI agent and take full control
 
 ## Available Tools (10)
 - **create_contact**: Create a new contact in Moneybird
-- **get_invoice**: Get specific invoice details
 - **list_contacts**: List Moneybird contacts
 - **list_estimates**: List business estimates
 - **list_financial_mutations**: List financial transactions
@@ -46,6 +45,7 @@ Connect your **Moneybird** administration to your AI agent and take full control
 - **list_purchase_invoices**: List purchase invoices
 - **list_recurring_invoices**: List recurring invoices
 - **list_workflows**: List accounting workflows
+- **get_invoice**: Get specific invoice details
 
 
 ## 💬 Prompt Examples

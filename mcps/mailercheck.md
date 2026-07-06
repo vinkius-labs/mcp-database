@@ -34,8 +34,6 @@ Connect your **MailerCheck** account to any AI agent to automate your email hygi
 
 
 ## Available Tools (5)
-- **get_account_info**: Get account details and credit balance
-- **get_batch_results**: Retrieve the results for a specific batch
 - **list_verification_batches**: List all recent verification batches
 - **create_verification_batch**: Requires a name and a list of emails.
 
@@ -43,6 +41,8 @@ Upload a list of emails for batch verification
 - **verify_single_email**: Requires an email string.
 
 Verify a single email address in real-time
+- **get_account_info**: Get account details and credit balance
+- **get_batch_results**: Retrieve the results for a specific batch
 
 
 ## 💬 Prompt Examples

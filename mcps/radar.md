@@ -33,8 +33,6 @@ Integrate **Radar** with an AI agent to bring enterprise-level location intellig
 
 
 ## Available Tools (10)
-- **autocomplete**: Provides address or place suggestions as a user types
-- **calculate_route_distance**: Calculates travel distance and duration between two points
 - **calculate_routing_matrix**: Calculates travel times and distances between multiple origins and destinations
 - **forward_geocode**: Converts a human-readable address into geographic coordinates (latitude and longitude)
 - **get_location_context**: Retrieves contextual information for a location, such as geofences and weather
@@ -43,6 +41,8 @@ Integrate **Radar** with an AI agent to bring enterprise-level location intellig
 - **search_geofences**: Searches for active geofences near a specific location
 - **search_places**: Searches for nearby places (POIs) based on coordinates
 - **validate_address**: Validates and cleans up a structured address
+- **autocomplete**: Provides address or place suggestions as a user types
+- **calculate_route_distance**: Calculates travel distance and duration between two points
 
 
 ## 💬 Prompt Examples

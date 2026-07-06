@@ -32,12 +32,6 @@ Connect your conversational assistant directly to **Robin**, the leading workpla
 
 
 ## Available Tools (10)
-- **book_space**: Specify space ID, title, and start/end times.
-
-Books a meeting room by creating an event
-- **cancel_desk_reservation**: You must provide the unique reservation ID.
-
-Cancels an existing desk reservation
 - **get_free_busy**: Provide a JSON array of space IDs.
 
 Checks availability for multiple spaces within a time range
@@ -48,6 +42,12 @@ Checks availability for multiple spaces within a time range
 - **list_space_events**: Lists all events booked in a specific meeting space
 - **list_spaces**: Lists all bookable meeting rooms at a location
 - **reserve_desk**: Reserves a hot desk for a specific date
+- **book_space**: Specify space ID, title, and start/end times.
+
+Books a meeting room by creating an event
+- **cancel_desk_reservation**: You must provide the unique reservation ID.
+
+Cancels an existing desk reservation
 
 
 ## 💬 Prompt Examples
