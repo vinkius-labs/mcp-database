@@ -36,9 +36,6 @@ No more manual logging into dashboards to check message delivery. Your AI acts a
 
 
 ## Available Tools (11)
-- **get_number_details**: Get details for a specific phone number
-- **get_recording**: Get details for a specific recording
-- **list_recordings**: List all call recordings
 - **get_account_info**: Retrieve current Plivo account details
 - **get_call_details**: Get details for a specific call
 - **get_message_details**: Get details for a specific message
@@ -49,6 +46,9 @@ No more manual logging into dashboards to check message delivery. Your AI acts a
 - **send_sms**: Requires a verified Plivo source number or Sender ID and the recipient number in E.164 format.
 
 Send a new SMS message
+- **get_number_details**: Get details for a specific phone number
+- **get_recording**: Get details for a specific recording
+- **list_recordings**: List all call recordings
 
 
 ## 💬 Prompt Examples

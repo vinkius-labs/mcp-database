@@ -36,6 +36,7 @@ No more manual scrubbing through filtered charts or exporting CSVs for reporting
 
 
 ## Available Tools (12)
+- **list_subscription_plans**: List billing plans
 - **create_customer_record**: Add new customer
 - **get_summary_metrics**: Get key SaaS metrics
 - **get_api_status**: Check connection
@@ -49,7 +50,6 @@ No more manual scrubbing through filtered charts or exporting CSVs for reporting
 - **list_data_sources**: ) connected to ChartMogul.
 
 List connected sources
-- **list_subscription_plans**: List billing plans
 
 
 ## 💬 Prompt Examples

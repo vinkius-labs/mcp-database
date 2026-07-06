@@ -28,7 +28,6 @@ Connect your **Recharge** account to any AI agent and simplify your subscription
 
 
 ## Available Tools (11)
-- **cancel_subscription**: Cancel a subscription
 - **get_customer**: Get details for a specific customer
 - **get_order**: Get details for a specific order
 - **list_products**: List all subscription products
@@ -39,6 +38,7 @@ Connect your **Recharge** account to any AI agent and simplify your subscription
 - **list_subscription_orders**: List processed orders
 - **list_subscriptions**: List Recharge subscriptions
 - **update_subscription**: Update an existing subscription
+- **cancel_subscription**: Cancel a subscription
 
 
 ## 💬 Prompt Examples

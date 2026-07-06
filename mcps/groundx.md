@@ -14,10 +14,6 @@ The GroundX MCP server enables your AI agent to search across enterprise data st
 
 
 ## Available Tools (12)
-- **create_bucket**: Create a new bucket
-- **create_group**: Create a new group
-- **get_customer_info**: Retrieve account and customer details
-- **get_ingest_status**: Check the processing status of an ingestion task
 - **ingest_documents**: Ingest documents into GroundX from URLs or local paths
 - **ingest_website**: Crawl and ingest content from a website URL
 - **list_buckets**: List all buckets (containers for documents)
@@ -26,6 +22,10 @@ The GroundX MCP server enables your AI agent to search across enterprise data st
 - **list_workflows**: List all RAG workflows
 - **search_content**: Perform semantic search across all content
 - **search_documents**: Search for specific documents based on metadata or content
+- **create_bucket**: Create a new bucket
+- **create_group**: Create a new group
+- **get_customer_info**: Retrieve account and customer details
+- **get_ingest_status**: Check the processing status of an ingestion task
 
 
 ## 💬 Prompt Examples

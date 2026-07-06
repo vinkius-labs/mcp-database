@@ -36,14 +36,14 @@ No more manual checking of Slack channels for missing standups. Your AI acts as 
 
 
 ## Available Tools (6)
+- **list_standups**: List your Geekbot standups
+- **list_team_members**: List workspace members
 - **submit_standup_report**: Programmatically submit a report
 - **get_user_profile**: Check account connection
 - **get_standup_details**: Get metadata for a standup
 - **list_standup_reports**: Can filter by date or user.
 
 List submitted reports
-- **list_standups**: List your Geekbot standups
-- **list_team_members**: List workspace members
 
 
 ## 💬 Prompt Examples

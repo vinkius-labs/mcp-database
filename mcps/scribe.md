@@ -35,8 +35,6 @@ Connect your **Scribe** organization to any AI agent and access your process doc
 
 
 ## Available Tools (10)
-- **check_scribe_status**: Verify Scribe API connectivity
-- **get_documentation_stats**: Get documentation statistics
 - **get_team_documents**: Useful for auditing team documentation.
 
 Get all documents for a specific team
@@ -49,6 +47,8 @@ Search documents by creation date range
 - **search_pages**: Search only Knowledge Pages
 - **get_recent_documents**: Get documents created in the last 30 days
 - **search_scribes**: Search only Scribe guides
+- **check_scribe_status**: Verify Scribe API connectivity
+- **get_documentation_stats**: Get documentation statistics
 
 
 ## 💬 Prompt Examples

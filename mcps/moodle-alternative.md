@@ -37,15 +37,6 @@ Connect your **Moodle** instance to any AI agent and manage your learning platfo
 
 
 ## Available Tools (12)
-- **create_courses**: Requires fullname, shortname, and categoryid.
-
-Create new courses
-- **create_users**: Requires username, password, firstname, lastname, and email.
-
-Create new users in Moodle
-- **enrol_users**: Enrol users into a course
-- **get_course_contents**: Get contents of a specific course
-- **get_enrolled_users**: Get users enrolled in a course
 - **get_site_info**: Get Moodle site information
 - **get_user_grades**: Get grades for a user in a course
 - **list_assignments**: List assignments for courses
@@ -55,6 +46,15 @@ Create new users in Moodle
 - **list_users**: g., username, email) and value.
 
 Search for users in Moodle
+- **create_courses**: Requires fullname, shortname, and categoryid.
+
+Create new courses
+- **create_users**: Requires username, password, firstname, lastname, and email.
+
+Create new users in Moodle
+- **enrol_users**: Enrol users into a course
+- **get_course_contents**: Get contents of a specific course
+- **get_enrolled_users**: Get users enrolled in a course
 
 
 ## 💬 Prompt Examples

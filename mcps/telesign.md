@@ -24,7 +24,6 @@ Connect your **TeleSign** account to any AI agent and manage phone verification 
 
 
 ## Available Tools (10)
-- **check_deactivation**: Check number deactivation
 - **check_telesign_status**: Verify API connectivity
 - **check_verification**: Check verification status
 - **get_phone_id**: Get phone identity
@@ -34,6 +33,7 @@ Connect your **TeleSign** account to any AI agent and manage phone verification 
 - **send_sms**: Send an SMS message
 - **send_verification**: Send verification code
 - **send_voice_verification**: Send voice verification
+- **check_deactivation**: Check number deactivation
 
 
 ## 💬 Prompt Examples

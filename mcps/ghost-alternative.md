@@ -36,15 +36,6 @@ No more manual dashboard navigation to check post statuses or member counts. You
 
 
 ## Available Tools (10)
-- **create_post**: Requires a title and supports optional HTML content. The post is created as a "draft" by default but can be set to "published" immediately.
-
-Create a new Ghost post or draft
-- **get_post_details**: Essential for reviewing the full content of an article.
-
-Get details for a specific post
-- **get_site_settings**: Essential for verifying site identity.
-
-Get Ghost site settings and configuration
 - **list_members**: Includes emails, status, and join dates.
 
 List all site members
@@ -64,6 +55,15 @@ List all content tags
 - **list_membership_tiers**: g., Free, Premium) available on the site. Useful for understanding the subscription structure.
 
 List membership tiers and plans
+- **create_post**: Requires a title and supports optional HTML content. The post is created as a "draft" by default but can be set to "published" immediately.
+
+Create a new Ghost post or draft
+- **get_post_details**: Essential for reviewing the full content of an article.
+
+Get details for a specific post
+- **get_site_settings**: Essential for verifying site identity.
+
+Get Ghost site settings and configuration
 
 
 ## 💬 Prompt Examples

@@ -36,7 +36,6 @@ No more manual logging into the dashboard to check order status or inventory lev
 
 
 ## Available Tools (11)
-- **create_store_order**: Create a new order
 - **create_order_shipment**: ) to an existing order.
 
 Add a shipment to an order
@@ -49,6 +48,7 @@ Add a shipment to an order
 - **list_order_shipments**: List shipments for an order
 - **test_orderdesk_connection**: Verify API connection
 - **update_store_order**: Update an existing order
+- **create_store_order**: Create a new order
 
 
 ## 💬 Prompt Examples

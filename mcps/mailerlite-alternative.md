@@ -34,9 +34,6 @@ Connect your **MailerLite** account to any AI agent and manage email marketing t
 
 
 ## Available Tools (10)
-- **create_group**: Use this to organize and segment your audience.
-
-Create a new subscriber group
 - **get_subscriber**: Get details for a specific subscriber
 - **list_campaigns**: Useful for monitoring marketing activity.
 
@@ -58,6 +55,9 @@ List all email subscribers
 - **upsert_subscriber**: Requires the email address and supports optional first/last name fields.
 
 Create or update a subscriber
+- **create_group**: Use this to organize and segment your audience.
+
+Create a new subscriber group
 
 
 ## 💬 Prompt Examples

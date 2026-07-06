@@ -40,9 +40,9 @@ No more manual profile scraping or guessing email formats. Your AI acts as your 
 - **enrich_contact**: Enrich contact data
 - **find_email_by_linkedin**: Find email by LinkedIn profile
 - **find_linkedin_by_email**: Find LinkedIn profile by email
+- **search_people**: Search for people
 - **get_api_usage**: Get API usage statistics
 - **search_companies**: Search for companies
-- **search_people**: Search for people
 
 
 ## 💬 Prompt Examples

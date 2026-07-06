@@ -36,9 +36,6 @@ No more jumping between disparate tools for support and billing. Your AI acts as
 
 
 ## Available Tools (12)
-- **create_person**: Provide email and optionally name.
-
-Create a new person in the CRM
 - **create_ticket**: Create a new support ticket
 - **get_account**: Get details of a specific account
 - **get_person**: Get details of a specific person
@@ -50,6 +47,9 @@ Create a new person in the CRM
 - **list_plans**: List all billing plans
 - **list_subscriptions**: List all billing subscriptions
 - **list_tickets**: List all support tickets
+- **create_person**: Provide email and optionally name.
+
+Create a new person in the CRM
 
 
 ## 💬 Prompt Examples

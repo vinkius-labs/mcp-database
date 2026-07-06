@@ -46,32 +46,15 @@ Create a new legal matter
 - **get_contact**: Returns name, type, email addresses, phone numbers, and physical addresses.
 
 Get contact details
-- **get_matter**: Includes client, practice area, responsible attorney, dates, and status.
-
-Get case details
-- **get_user_profile**: Get current user profile
-- **list_activities**: Optionally filter by matter. Includes date, hours, rate, notes, and billing status.
-
-List time entries and expenses
-- **list_bills**: Use to monitor firm revenue and outstanding receivables.
-
-List invoices
-- **list_communications**: Includes subject, body, type, date, and linked matter/contact.
-
-List firm communications
-- **list_contacts**: List firm contacts
-- **list_matter_stages**: g., Intake, Discovery, Trial, Closed). Used for understanding matter lifecycle.
-
-List matter stages
 - **list_matters**: Filter by status: open, closed, pending. Includes case number, description, client, and dates.
 
 List legal cases/matters
-- **list_tasks**: Filter by matter for case-specific tasks. Critical for tracking court deadlines and firm-wide to-dos.
-
-List tasks and deadlines
 - **create_activity**: Provide date (YYYY-MM-DD), quantity in seconds, and the type (TimeEntry or ExpenseEntry).
 
 Log a time entry or expense
+- **list_tasks**: Filter by matter for case-specific tasks. Critical for tracking court deadlines and firm-wide to-dos.
+
+List tasks and deadlines
 - **create_task**: Optionally link to a matter and set a due date. Use for court deadlines, filing reminders, and internal follow-ups.
 
 Create a new task or deadline
@@ -81,6 +64,9 @@ List case notes
 - **create_note**: Use for documenting conversations, strategy decisions, or research findings.
 
 Add a note to a matter
+- **list_bills**: Use to monitor firm revenue and outstanding receivables.
+
+List invoices
 - **get_bill**: Returns line items, totals, balance, due date, and associated matter.
 
 Get invoice details
@@ -96,12 +82,26 @@ List practice areas
 - **search_matters**: Use for finding specific cases when the user provides a keyword or partial name.
 
 Search legal matters by keyword
+- **list_matter_stages**: g., Intake, Discovery, Trial, Closed). Used for understanding matter lifecycle.
+
+List matter stages
+- **list_communications**: Includes subject, body, type, date, and linked matter/contact.
+
+List firm communications
+- **get_user_profile**: Get current user profile
 - **list_users**: Useful for team management and workload distribution.
 
 List firm users and attorneys
+- **get_matter**: Includes client, practice area, responsible attorney, dates, and status.
+
+Get case details
+- **list_contacts**: List firm contacts
 - **search_contacts**: Use this tool when looking for a specific person or organization.
 
 Search contacts by name or email
+- **list_activities**: Optionally filter by matter. Includes date, hours, rate, notes, and billing status.
+
+List time entries and expenses
 
 
 ## 💬 Prompt Examples

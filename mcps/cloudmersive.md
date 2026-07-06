@@ -35,7 +35,6 @@ Connect your **Cloudmersive** API account to any AI agent and simplify how you p
 
 
 ## Available Tools (12)
-- **analyze_text_sentiment**: Analyze text sentiment
 - **check_cloudmersive_status**: Verify connectivity
 - **convert_doc_to_pdf**: Convert document to PDF
 - **convert_html_to_text**: Convert HTML to text
@@ -47,6 +46,7 @@ Connect your **Cloudmersive** API account to any AI agent and simplify how you p
 - **validate_email**: Validate an email
 - **validate_phone**: Validate a phone number
 - **validate_url**: Validate a URL
+- **analyze_text_sentiment**: Analyze text sentiment
 
 
 ## 💬 Prompt Examples

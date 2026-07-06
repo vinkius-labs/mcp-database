@@ -36,9 +36,6 @@ No more manual report generation or searching through folders. Your AI acts as a
 
 
 ## Available Tools (8)
-- **get_employee_details**: Essential for reviewing detailed profile information and roles.
-
-Get details for a specific employee
 - **list_employee_contracts**: Essential for auditing and compliance reviews.
 
 List all employment contracts
@@ -60,6 +57,9 @@ List all attendance shifts
 - **list_company_teams**: Useful for understanding the organizational hierarchy.
 
 List all organizational teams
+- **get_employee_details**: Essential for reviewing detailed profile information and roles.
+
+Get details for a specific employee
 
 
 ## 💬 Prompt Examples

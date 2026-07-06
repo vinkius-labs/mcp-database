@@ -36,16 +36,16 @@ No more manual scrolling through endless articles. Your AI acts as your dedicate
 
 
 ## Available Tools (10)
-- **subscribe_to_feed**: Follow a new news source
-- **get_article_details**: Get full content of an article
-- **get_feed_metadata**: Get metadata for a specific feed
-- **get_user_profile**: Get your Feedly profile
 - **get_stream_contents**: Retrieve articles from a stream
 - **list_categories**: List your Feedly categories
 - **list_subscriptions**: List all subscribed feeds
 - **list_tags**: List your personal tags
 - **mark_articles_as_read**: Mark one or more articles as read
 - **unsubscribe_from_feed**: Stop following a news source
+- **subscribe_to_feed**: Follow a new news source
+- **get_article_details**: Get full content of an article
+- **get_feed_metadata**: Get metadata for a specific feed
+- **get_user_profile**: Get your Feedly profile
 
 
 ## 💬 Prompt Examples
