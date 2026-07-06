@@ -34,10 +34,6 @@ Connect your **Qualtrics** account to any AI agent and take full control of your
 
 
 ## Available Tools (15)
-- **create_contact**: Create a new contact in an XM Directory
-- **create_distribution**: Create a new distribution for a survey
-- **create_event_subscription**: Create a webhook event subscription
-- **create_response_export**: Start a response export for a survey
 - **create_survey**: Create a new survey
 - **get_distribution**: Get details for a specific distribution
 - **get_export_file**: Get the exported file for a survey response export
@@ -49,6 +45,10 @@ Connect your **Qualtrics** account to any AI agent and take full control of your
 - **list_surveys**: List all Qualtrics surveys
 - **update_contact**: Update an existing contact in an XM Directory
 - **update_survey**: Update an existing survey
+- **create_contact**: Create a new contact in an XM Directory
+- **create_distribution**: Create a new distribution for a survey
+- **create_event_subscription**: Create a webhook event subscription
+- **create_response_export**: Start a response export for a survey
 
 
 ## 💬 Prompt Examples

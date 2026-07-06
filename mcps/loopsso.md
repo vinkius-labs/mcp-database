@@ -35,9 +35,6 @@ Connect your **Loops.so** account to any AI agent to streamline your email marke
 
 
 ## Available Tools (24)
-- **check_api_key**: Check if the Loops API key is valid
-- **check_suppression**: Check suppression status for a contact
-- **create_campaign**: Create a new campaign (Alpha)
 - **create_contact_property**: Create a new contact property
 - **create_contact**: Create a new contact in Loops
 - **delete_contact**: Delete a contact from Loops
@@ -59,6 +56,9 @@ Connect your **Loops.so** account to any AI agent to streamline your email marke
 - **update_campaign**: Update an existing campaign (Alpha)
 - **update_contact**: Update an existing contact or create one if it does not exist
 - **update_email_message**: Update an email message (Alpha)
+- **check_api_key**: Check if the Loops API key is valid
+- **check_suppression**: Check suppression status for a contact
+- **create_campaign**: Create a new campaign (Alpha)
 
 
 ## 💬 Prompt Examples

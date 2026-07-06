@@ -36,7 +36,6 @@ No more navigating complex dashboards to check a sensor value or trigger a maint
 
 
 ## Available Tools (38)
-- **clone_application**: Clone a Losant application
 - **create_application**: Create a new Losant application
 - **create_data_table**: Create a new data table
 - **create_device**: Create a new device
@@ -74,6 +73,7 @@ No more navigating complex dashboards to check a sensor value or trigger a maint
 - **update_device**: Update a device
 - **update_workflow**: Update a workflow
 - **upload_file**: Upload a file to an application
+- **clone_application**: Clone a Losant application
 
 
 ## 💬 Prompt Examples

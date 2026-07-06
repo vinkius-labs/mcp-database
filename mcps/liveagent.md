@@ -34,23 +34,6 @@ Connect your **LiveAgent** helpdesk to any AI agent and manage your customer sup
 
 
 ## Available Tools (16)
-- **get_settings**: Retrieve account settings (v3)
-- **list_ticket_history**: Uses cursor-based pagination.
-
-Retrieve ticket history (v3)
-- **list_tickets**: Supports simple or advanced JSON filters (e.g. {"status":"N"} or [["date_created","DP","TW"]]).
-
-Retrieve a list of tickets (v3)
-- **list_time_reports**: Uses cursor-based pagination.
-
-Retrieve time reports (v3)
-- **update_conversation_status**: Change conversation status (v1)
-- **add_customer_fields**: Add custom field values to a customer (v1)
-- **add_conversation_message**: Add a new message or note to a conversation (v1)
-- **list_calls**: Uses cursor-based pagination.
-
-Retrieve call records (v3)
-- **list_companies**: List all companies (v1)
 - **list_conversations**: Supports optional filtering parameters.
 
 List all conversations/tickets (v1)
@@ -62,6 +45,23 @@ List all conversations/tickets (v1)
 - **list_phone_numbers**: Uses cursor-based pagination.
 
 Retrieve phone numbers (v3)
+- **get_settings**: Retrieve account settings (v3)
+- **list_tickets**: Supports simple or advanced JSON filters (e.g. {"status":"N"} or [["date_created","DP","TW"]]).
+
+Retrieve a list of tickets (v3)
+- **list_ticket_history**: Uses cursor-based pagination.
+
+Retrieve ticket history (v3)
+- **list_time_reports**: Uses cursor-based pagination.
+
+Retrieve time reports (v3)
+- **update_conversation_status**: Change conversation status (v1)
+- **add_customer_fields**: Add custom field values to a customer (v1)
+- **add_conversation_message**: Add a new message or note to a conversation (v1)
+- **list_calls**: Uses cursor-based pagination.
+
+Retrieve call records (v3)
+- **list_companies**: List all companies (v1)
 
 
 ## 💬 Prompt Examples

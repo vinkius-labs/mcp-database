@@ -33,11 +33,6 @@ Connect your **Logz.io** observability platform to any AI agent to streamline yo
 
 
 ## Available Tools (31)
-- **create_alert**: Create a new alert
-- **create_deployment_markers**: Add deployment markers to annotate Exception graphs in Kibana
-- **create_lookup_list**: g., blacklisted IPs) for use in SIEM rules.
-
-Create a lookup list for SIEM rules
 - **create_metrics_account**: Create a Metrics account
 - **create_security_rule**: Create a new SIEM security rule
 - **create_siem_account**: Creates a new SIEM account associated with your main logs account
@@ -72,6 +67,11 @@ Search account data using Elasticsearch Search API DSL
 - **update_alert**: Update an existing alert
 - **update_security_rule**: Update a SIEM security rule
 - **update_user**: Update a user
+- **create_alert**: Create a new alert
+- **create_deployment_markers**: Add deployment markers to annotate Exception graphs in Kibana
+- **create_lookup_list**: g., blacklisted IPs) for use in SIEM rules.
+
+Create a lookup list for SIEM rules
 
 
 ## 💬 Prompt Examples

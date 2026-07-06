@@ -34,7 +34,6 @@ Connect your **mod.io** account to any AI agent and take full control of game mo
 
 
 ## Available Tools (35)
-- **add_mod_comment**: Add a comment to a mod
 - **add_mod_dependencies**: Add dependencies to a mod
 - **add_mod_metadata**: Add metadata key-value pairs to a mod
 - **add_mod_rating**: Submit a rating for a mod
@@ -62,15 +61,16 @@ List all games on mod.io
 - **list_mod_dependencies**: List dependencies for a mod
 - **get_mod_file**: Get details for a specific mod file
 - **list_mod_files**: List all files for a mod
-- **list_mod_metadata**: List metadata key-value pairs for a mod
-- **get_mod_stats**: Get statistics for a specific mod
-- **list_mod_tags**: List tags for a mod
 - **list_mod_team**: List team members for a mod
 - **get_mod**: Get details for a specific mod
 - **list_mods**: List all mods for a specific game
 - **subscribe_mod**: Subscribe to a mod
 - **list_token_packs**: Get available token packs for a game
 - **unsubscribe_mod**: Unsubscribe from a mod
+- **add_mod_comment**: Add a comment to a mod
+- **list_mod_metadata**: List metadata key-value pairs for a mod
+- **get_mod_stats**: Get statistics for a specific mod
+- **list_mod_tags**: List tags for a mod
 
 
 ## 💬 Prompt Examples

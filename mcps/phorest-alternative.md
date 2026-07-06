@@ -34,9 +34,9 @@ Connect your **Phorest** account to any AI agent to streamline your salon or spa
 
 
 ## Available Tools (17)
+- **create_break**: Create a staff break
 - **checkin_appointment**: Check-in a client for an appointment
 - **confirm_appointments**: Confirm one or more appointments
-- **create_break**: Create a staff break
 - **create_client**: Create a new client
 - **create_csv_export_job**: Create a CSV export job
 - **get_appointment**: Get specific appointment details

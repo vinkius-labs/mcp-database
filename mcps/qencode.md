@@ -34,6 +34,9 @@ Connect your **Qencode** account to any AI agent to handle high-performance vide
 
 
 ## Available Tools (11)
+- **stop_live_stream**: Stop a live stream
+- **add_simulcast_target**: Add a simulcast target to a live stream
+- **create_domain**: Create a custom CDN domain
 - **create_live_stream**: Requires a live access token.
 
 Create a new live stream
@@ -46,9 +49,6 @@ Get a session-based access token for transcoding
 - **start_encode**: Start a transcoding task with specific parameters
 - **start_live_stream**: Start a live stream
 - **update_live_stream**: Update a live stream configuration
-- **add_simulcast_target**: Add a simulcast target to a live stream
-- **create_domain**: Create a custom CDN domain
-- **stop_live_stream**: Stop a live stream
 
 
 ## 💬 Prompt Examples

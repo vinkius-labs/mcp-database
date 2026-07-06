@@ -30,19 +30,6 @@ Connect your **OpenNode** account to any AI agent to seamlessly integrate Bitcoi
 - **list_activity**: List account activity
 - **create_address**: Create a static on-chain address
 - **list_addresses**: List static on-chain addresses
-- **create_charge**: Create a new OpenNode charge (Bitcoin payment request)
-- **get_charge**: Get charge info
-- **list_charges**: List paid charges
-- **get_currencies**: Get supported originating currencies
-- **initiate_exchange**: Initiate an exchange between BTC and Fiat
-- **create_lnurl_pay**: Create a static LN address (LNURL-Pay)
-- **list_lnurl_pay**: List static LN addresses (LNURL-Pay)
-- **initiate_lnurl_withdrawal**: Initiate LNURL withdrawal
-- **get_rates**: Get exchange rates
-- **create_refund**: Create a refund for an underpaid charge
-- **get_refund**: Get refund info
-- **list_refunds**: List refunds
-- **set_scheduled_withdrawals**: Set scheduled bank withdrawals status
 - **confirm_chain_withdrawal**: Confirm a previewed chain withdrawal request
 - **confirm_ln_withdrawal**: Confirm a previewed Lightning withdrawal request
 - **get_withdrawal**: Get withdrawal info
@@ -50,6 +37,19 @@ Connect your **OpenNode** account to any AI agent to seamlessly integrate Bitcoi
 
 Initiate a withdrawal (Paying via Lightning / Chain)
 - **list_withdrawals**: List withdrawals
+- **get_currencies**: Get supported originating currencies
+- **get_refund**: Get refund info
+- **list_refunds**: List refunds
+- **set_scheduled_withdrawals**: Set scheduled bank withdrawals status
+- **create_charge**: Create a new OpenNode charge (Bitcoin payment request)
+- **get_charge**: Get charge info
+- **list_charges**: List paid charges
+- **initiate_exchange**: Initiate an exchange between BTC and Fiat
+- **create_lnurl_pay**: Create a static LN address (LNURL-Pay)
+- **list_lnurl_pay**: List static LN addresses (LNURL-Pay)
+- **initiate_lnurl_withdrawal**: Initiate LNURL withdrawal
+- **get_rates**: Get exchange rates
+- **create_refund**: Create a refund for an underpaid charge
 
 
 ## 💬 Prompt Examples

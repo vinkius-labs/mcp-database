@@ -74,8 +74,8 @@ Connect your **Qgiv** account to any AI agent to streamline your nonprofit fundr
 - **list_events**: List custom events and ticket packages
 - **list_kiosks**: List kiosk settings and navigation menus
 - **list_pledges**: List pledges
-- **list_recurring_profiles_by_status**: List recurring donation profiles by status
 - **list_recurring_profiles**: List all recurring donation profiles
+- **list_recurring_profiles_by_status**: List recurring donation profiles by status
 - **list_report_mappings**: List report mappings for third-party integrations
 - **list_restrictions**: List fund restrictions (designations)
 - **list_statements**: List financial statements and payout summaries

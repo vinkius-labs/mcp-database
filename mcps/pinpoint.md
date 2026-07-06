@@ -62,7 +62,6 @@ Get public job postings for the company
 - **list_candidates**: List candidates in Pinpoint
 - **list_custom_attributes**: List custom attributes in Pinpoint
 - **list_departments**: List departments in Pinpoint
-- **list_divisions**: List divisions in Pinpoint
 - **list_interviews**: List interviews in Pinpoint
 - **list_job_seekers**: List job seekers in Pinpoint
 - **list_jobs**: Supports filtering by status, visibility, department, location, etc.
@@ -81,6 +80,7 @@ List jobs in Pinpoint
 - **update_job**: Update an existing job
 - **update_requisition**: Update an existing requisition
 - **update_user**: Update an existing user
+- **list_divisions**: List divisions in Pinpoint
 
 
 ## 💬 Prompt Examples

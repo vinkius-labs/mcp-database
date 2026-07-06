@@ -35,6 +35,11 @@ Connect your **Reamaze** account to any AI agent to streamline your customer sup
 ## Available Tools (34)
 - **create_article**: Create a new Help Article
 - **create_contact_note**: Attach a note to a contact
+- **update_contact_note**: Update a contact note
+- **get_article**: Retrieve a specific Help Article
+- **list_incidents**: Retrieve incidents for the Brand
+- **get_report**: Retrieve a specific report
+- **get_response_template**: Retrieve a specific Response Template
 - **create_contact**: Create a new contact
 - **create_conversation**: Create a new conversation on behalf of a customer
 - **create_identity**: Attach an identity to a contact
@@ -43,12 +48,9 @@ Connect your **Reamaze** account to any AI agent to streamline your customer sup
 - **create_response_template**: Create a new Response Template
 - **create_staff**: Create a new staff user
 - **delete_contact_note**: Delete a contact note
-- **get_article**: Retrieve a specific Help Article
 - **get_channel**: Retrieve a specific channel
 - **get_conversation**: Retrieve a specific conversation
 - **get_incident**: Retrieve a specific incident
-- **get_report**: Retrieve a specific report
-- **get_response_template**: Retrieve a specific Response Template
 - **list_articles**: Can be scoped to a topic slug, filtered by status, or searched.
 
 List Help Articles for the Brand
@@ -57,14 +59,12 @@ List Help Articles for the Brand
 - **list_contacts**: List contacts for the Account
 - **list_conversations**: List conversations for the Brand
 - **list_identities**: Retrieve identities for a contact
-- **list_incidents**: Retrieve incidents for the Brand
 - **list_messages**: Retrieve individual messages for all conversations
 - **list_response_templates**: Retrieve Response Templates for the Brand
 - **list_satisfaction_ratings**: Retrieve satisfaction survey ratings
 - **list_staff**: Retrieve staff users for the Account
 - **list_systems**: Retrieve systems for the Brand
 - **update_article**: Update a specific Help Article
-- **update_contact_note**: Update a contact note
 - **update_contact**: Update a specific contact
 - **update_conversation**: Update a conversation
 - **update_incident**: Update a specific incident
