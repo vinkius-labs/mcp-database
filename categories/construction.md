@@ -8,6 +8,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Area Program Calculator](../mcps/area-program-calculator.md) | Calculates minimum required total area for any project based on room functions and structural complexity. |
 | [Beam Span Estimator](../mcps/beam-span-estimator.md) | Quickly estimate concrete beam dimensions and compare with steel profiles. |
 | [Column Sizing Estimator](../mcps/column-sizing-estimator.md) | Preliminary sizing for reinforced concrete and steel columns based on vertical load accumulation. |
+| [Concrete Material Calculator](../mcps/concrete-material-calculator.md) | Estimate concrete volume, bag quantities, costs, and rebar requirements for any project. |
 | [Concrete Volume Calculator](../mcps/concrete-volume-calculator.md) | Calculate concrete volume and bag counts for slabs, footings, columns, stairs, and curved paths. |
 | [Concrete Yardage Calculator](../mcps/concrete-yardage-calculator.md) | Calculate concrete volume, 80lb bag requirements, and regional cost estimates for slabs, footings, walls, and columns. |
 | [Construction Cost Estimator](../mcps/construction-cost-estimator.md) | Instantly get a precise cost range estimate for any construction project using area, local region data, and desired quality standard. |
@@ -30,6 +31,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Plumbing Fixture Units Calculator](../mcps/plumbing-fixture-units-calculator.md) | Calculate DFU and WSFU loads and size plumbing pipe diameters according to IPC/UPCA standards. |
 | [Procore](../mcps/procore.md) | Manage construction projects via Procore — track RFIs, submittals, punch lists, daily logs, and drawings from any AI agent. |
 | [Roofing Squares Calculator](../mcps/roofing-squares-calculator.md) | Calculate roofing squares and material requirements based on roof pitch, area, and complexity. |
+| [Room Square Footage Calculator](../mcps/room-square-footage-calculator.md) | Calculate complex room areas and estimate material requirements with waste factors. |
 | [Shading Device Calculator](../mcps/shading-device-calculator.md) | Calculate precise dimensions for horizontal and vertical solar shading devices. |
 | [Slab Thickness Estimator](../mcps/slab-thickness-estimator.md) | Estimate minimum concrete slab thickness based on span and construction type. |
 | [Snow Load Calculator](../mcps/snow-load-calculator.md) | Calculate roof snow load (psf) based on ground snow load, environmental factors, and structural importance. |

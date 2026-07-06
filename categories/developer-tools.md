@@ -394,9 +394,11 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Raygun](../mcps/raygun.md) | Monitor application health, track deployments, and manage crash reports and RUM sessions directly from your AI agent. |
 | [ReadMe](../mcps/readme.md) | Equip your AI to directly search, read, and manage developer documentation stored in your ReadMe project. |
 | [Redox](../mcps/redox.md) | Connect to the Redox healthcare API to search patients, retrieve clinical conditions, and write back observations directly from your AI agent. |
+| [Regex Explainer Stepper](../mcps/regex-explainer-stepper.md) | Decompose complex regular expressions into a step-by-step AST walkthrough and perform safety audits. |
 | [Regex Extractor Engine](../mcps/regex-extractor-engine.md) | Stop LLM hallucination when extracting data. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction without missing a single match. |
 | [Regex High-Perf Parser](../mcps/regex-high-perf-parser.md) | Stop LLM hallucination when extracting entities. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction. |
 | [Regex High-Perf Parser](../mcps/regex-high-perf-parser-alternative.md) | Stop LLM hallucination when extracting entities. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction. |
+| [Regex Tester Batch](../mcps/regex-tester-batch.md) | High-performance batch regex testing and syntax validation. |
 | [Regex Toolkit](../mcps/regex-toolkit.md) | Equip your AI with strict Regular Expressions. Deterministically extract, validate, and redact Emails, URLs, and Phones without hallucinations. |
 | [Replicate](../mcps/replicate-extended.md) | Automate machine learning workflows via Replicate — run models, manage predictions, and search for AI assets directly from any AI agent. |
 | [ReqBin](../mcps/reqbin.md) | Test and verify API requests using ReqBin Echo — send JSON payloads and inspect the echoed response to debug request structures. |

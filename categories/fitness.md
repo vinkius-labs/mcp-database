@@ -6,6 +6,7 @@ Explore the open database of **fitness** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Progressive Overload Planner](../mcps/progressive-overload-planner.md) | Automate 12-week strength training schedules with safety-capped linear progression. |
 | [Sport-Specific Fitness Testing](../mcps/sport-specific-fitness-testing.md) | Generate standardized physical testing protocols, athletic benchmarks, and composite fitness scores for various sports. |
+| [Target Rep Divider](../mcps/target-rep-divider.md) | Split total repetition targets into equal sets and identify remaining reps. |
 
 
 ---
