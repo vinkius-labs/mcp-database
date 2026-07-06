@@ -38,6 +38,9 @@ Connect your **Invoice Ninja** account to any AI agent and take full control of 
 - **create_client**: Create a new client in InvoiceNinja
 - **create_invoice**: Create a new invoice for a client
 - **delete_client**: Delete a client from InvoiceNinja
+- **update_invoice**: g., from draft to sent). Provide modifications as a JSON string.
+
+Update an existing invoice
 - **delete_invoice**: Delete an invoice from InvoiceNinja
 - **get_client**: Get complete details of a specific InvoiceNinja client
 - **get_invoice**: Get details of a specific invoice
@@ -46,9 +49,6 @@ Connect your **Invoice Ninja** account to any AI agent and take full control of 
 - **update_client**: You must provide the fields to update encoded as a JSON string.
 
 Update an existing client in InvoiceNinja
-- **update_invoice**: g., from draft to sent). Provide modifications as a JSON string.
-
-Update an existing invoice
 
 
 ## 💬 Prompt Examples

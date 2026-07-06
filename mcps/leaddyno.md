@@ -32,8 +32,6 @@ Combine **LeadDyno** affiliate logic with your everyday AI tools. Automatically 
 
 
 ## Available Tools (9)
-- **create_affiliate**: Create a new affiliate in LeadDyno
-- **create_lead**: Record a new lead in LeadDyno
 - **create_purchase**: Record a new purchase in LeadDyno
 - **get_affiliate**: Retrieve details for a specific affiliate
 - **list_affiliates**: Retrieve a list of affiliates from LeadDyno
@@ -41,6 +39,8 @@ Combine **LeadDyno** affiliate logic with your everyday AI tools. Automatically 
 - **list_leads**: Retrieve a list of all tracked leads
 - **list_purchases**: Retrieve a list of all tracked purchases
 - **list_visitors**: Retrieve a list of website visitors
+- **create_affiliate**: Create a new affiliate in LeadDyno
+- **create_lead**: Record a new lead in LeadDyno
 
 
 ## 💬 Prompt Examples

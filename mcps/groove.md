@@ -35,18 +35,18 @@ Connect your **Groove** helpdesk account to any AI agent and take full control o
 
 
 ## Available Tools (12)
-- **create_message**: Add a reply or internal note to a ticket
-- **create_ticket**: Create a new helpdesk ticket
-- **get_agent**: Get details for a specific agent by email
-- **get_customer**: Get details for a specific customer by email
-- **get_mailbox**: Get details for a specific mailbox by ID
-- **get_ticket**: Get details for a specific ticket by its number
 - **list_agents**: List all agents in the Groove account
 - **list_customers**: List all customers in the Groove account
 - **list_mailboxes**: List all mailboxes in the account
 - **list_messages**: List all messages and comments in a ticket
 - **list_tickets**: List all helpdesk tickets
 - **update_ticket_state**: Change the status of a ticket
+- **create_message**: Add a reply or internal note to a ticket
+- **create_ticket**: Create a new helpdesk ticket
+- **get_agent**: Get details for a specific agent by email
+- **get_customer**: Get details for a specific customer by email
+- **get_mailbox**: Get details for a specific mailbox by ID
+- **get_ticket**: Get details for a specific ticket by its number
 
 
 ## 💬 Prompt Examples

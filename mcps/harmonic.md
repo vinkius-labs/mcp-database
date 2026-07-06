@@ -37,7 +37,6 @@ No more manual exporting of company lists. Your AI assistant acts as a dedicated
 
 
 ## Available Tools (11)
-- **enrich_company**: Enrich a company with firmographics, funding, and social signals
 - **enrich_person**: Enrich a person with professional history and social signals
 - **get_company_stats**: Get growth and headcount statistics for a company
 - **get_enrichment_status**: Check the status of a background enrichment request
@@ -48,6 +47,7 @@ No more manual exporting of company lists. Your AI assistant acts as a dedicated
 - **list_traction_signals**: List social and web traction signals for a company
 - **search_investors**: Search for investment firms and angels
 - **search_startups**: Search for startups using filters like industry, location, and headcount
+- **enrich_company**: Enrich a company with firmographics, funding, and social signals
 
 
 ## 💬 Prompt Examples

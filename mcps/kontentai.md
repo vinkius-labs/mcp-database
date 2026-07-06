@@ -33,7 +33,6 @@ Connect your AI agent to **Kontent.ai Delivery API** to fetch and analyze your m
 
 List all content items from Kontent.ai
 - **get_content_item**: Get a specific content item by codename
-- **list_content_types**: List all content types (schemas)
 - **get_content_type**: Get details for a content type
 - **list_taxonomies**: List taxonomy groups
 - **get_taxonomy_group**: Get details for a taxonomy group
@@ -45,6 +44,7 @@ Query assets from the content library
 - **get_content_type_element**: g., options for a multiple choice element).
 
 Get metadata for a specific element in a type
+- **list_content_types**: List all content types (schemas)
 
 
 ## 💬 Prompt Examples

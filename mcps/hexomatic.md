@@ -40,8 +40,8 @@ No more manual configuration in the web dashboard for every run. Your AI assista
 - **get_workflow_results**: Retrieve the output data from a completed workflow execution
 - **get_execution_logs**: Retrieve the execution logs for a specific workflow
 - **get_account_usage**: Retrieve current plan usage and automation credits
-- **get_workflow_details**: Get detailed configuration for a specific workflow
 - **list_automations**: List all built-in Hexomatic automations (e.g., Tech Stack Discovery)
+- **get_workflow_details**: Get detailed configuration for a specific workflow
 - **list_scraping_recipes**: List all point-and-click scraping recipes
 - **list_account_teams**: List teams and collaborators
 - **list_workflows**: Use this to identify the ID of the workflow you want to run.

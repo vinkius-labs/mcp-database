@@ -34,6 +34,10 @@ Your AI agent acts as a dedicated web analyst, transforming complex dashboards i
 
 
 ## Available Tools (11)
+- **get_trends_devices**: Get historical device breakdown data
+- **get_trends_overview**: Get historical aggregate data overview
+- **get_trends_pages**: Get historical aggregate data for pages
+- **get_trends_sources**: Get historical traffic sources data
 - **get_now_campaigns**: Get active campaigns currently driving traffic
 - **get_now_overview**: Get a top-level overview of concurrent active visitors
 - **get_now_pages**: Get a list of pages currently being viewed
@@ -41,10 +45,6 @@ Your AI agent acts as a dedicated web analyst, transforming complex dashboards i
 - **get_now_visitors**: Get a list of individual visitors currently online
 - **get_trends_browsers**: Get historical browser breakdown data
 - **get_trends_campaigns**: Get historical campaign performance data
-- **get_trends_devices**: Get historical device breakdown data
-- **get_trends_overview**: Get historical aggregate data overview
-- **get_trends_pages**: Get historical aggregate data for pages
-- **get_trends_sources**: Get historical traffic sources data
 
 
 ## 💬 Prompt Examples

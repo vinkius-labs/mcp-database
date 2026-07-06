@@ -37,15 +37,6 @@ Connect your **Karbon** account to any AI agent to streamline your accounting fi
 - **list_contacts**: Useful for a broad overview of clients and associates.
 
 List all contacts (Organizations and People)
-- **create_contact**: Requires a name and contact type (Person or Organization).
-
-Create a new contact in Karbon
-- **create_work_item**: Requires a title and a work type.
-
-Create a new work item (project)
-- **get_contact**: Get detailed information for a specific contact
-- **get_work_item**: Get details for a specific work item
-- **list_contact_notes**: List notes for a specific contact
 - **list_organizations**: ).
 
 List only organizational contacts
@@ -60,6 +51,15 @@ List all users in the Karbon firm
 - **list_work_items**: Use this to track firm workflows and engagements.
 
 List all work items (workflows)
+- **create_contact**: Requires a name and contact type (Person or Organization).
+
+Create a new contact in Karbon
+- **create_work_item**: Requires a title and a work type.
+
+Create a new work item (project)
+- **get_contact**: Get detailed information for a specific contact
+- **get_work_item**: Get details for a specific work item
+- **list_contact_notes**: List notes for a specific contact
 
 
 ## 💬 Prompt Examples

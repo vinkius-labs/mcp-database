@@ -33,7 +33,6 @@ Integrate **Lightcast** (formerly Emsi Burning Glass), the global leader in labo
 
 
 ## Available Tools (10)
-- **get_lightcast_api_metadata**: Retrieve metadata and authorization status for your Lightcast API connection
 - **quick_labor_market_audit**: Retrieve a high-level summary of skills and occupations in the index
 - **get_labor_market_region_summary**: Get a high-level labor market summary for a specific economic region
 - **get_skill_details**: Get detailed settings and definition for a specific skill
@@ -45,6 +44,7 @@ Integrate **Lightcast** (formerly Emsi Burning Glass), the global leader in labo
 - **list_labor_market_skills**: g., specialized, common) from the Lightcast API.
 
 List all technical and soft skills in the Lightcast taxonomy
+- **get_lightcast_api_metadata**: Retrieve metadata and authorization status for your Lightcast API connection
 
 
 ## 💬 Prompt Examples

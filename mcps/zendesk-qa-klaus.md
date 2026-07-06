@@ -34,10 +34,10 @@ Connect your **Zendesk QA** (formerly Klaus) account to any AI agent to automate
 
 
 ## Available Tools (7)
+- **list_all_reviews**: List all quality assurance reviews account-wide
 - **delete_qa_tickets**: Remove specific ticket data from the QA platform
 - **import_qa_tickets**: Import conversation data into Zendesk QA for review
 - **import_qa_users**: Sync agents and managers into Zendesk QA
-- **list_all_reviews**: List all quality assurance reviews account-wide
 - **search_qa_conversations**: Search for conversations in Zendesk QA
 - **list_workspace_reviews**: List reviews for a specific workspace
 - **list_qa_workspaces**: Use this to identify workspace IDs for exporting reviews.

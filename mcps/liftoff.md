@@ -34,7 +34,6 @@ Connect your **Liftoff** (formerly Vungle) advertising account to any AI agent t
 
 
 ## Available Tools (7)
-- **list_liftoff_apps**: List all applications in your Liftoff account
 - **list_liftoff_campaigns**: List all advertising campaigns
 - **request_performance_report**: Requires start and end dates.
 
@@ -43,6 +42,7 @@ Initialize a performance report request (v1)
 - **download_report_results**: Retrieve the data for a completed report
 - **get_report_status**: Check the status of a requested report
 - **get_spend_metrics**: Get a synchronous spend and performance report (v2)
+- **list_liftoff_apps**: List all applications in your Liftoff account
 
 
 ## 💬 Prompt Examples

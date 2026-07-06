@@ -32,14 +32,14 @@ Engage your conversational pipelines through **Landbot** instantly using your AI
 
 
 ## Available Tools (8)
-- **assign_agent**: Route conversation from bot to live agent status
-- **get_bot**: Get a single bot details by ID
-- **get_customer**: Retrieve specific metadata of one customer
 - **get_messages**: Fetch the chat sequence messages for a given customer context
 - **list_bots**: List all accessible bots in Landbot
 - **list_customers**: List recent customers interacting with bots
 - **search_customers**: Search for a particular customer by email
 - **send_text_message**: Send a message programmatically to a customer conversation
+- **assign_agent**: Route conversation from bot to live agent status
+- **get_bot**: Get a single bot details by ID
+- **get_customer**: Retrieve specific metadata of one customer
 
 
 ## 💬 Prompt Examples

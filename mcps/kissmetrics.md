@@ -39,10 +39,10 @@ Connect your **Kissmetrics** account to any AI agent to automate your user behav
 Link two identities together
 - **list_event_types**: List all event types defined in the account
 - **list_property_names**: List all property names used in the account
+- **query_people_count**: Get the count of people matching specific criteria
 - **query_metric_data**: Requires a metric ID and query parameters.
 
 Get data for a specific metric
-- **query_people_count**: Get the count of people matching specific criteria
 - **record_event**: Requires a person identity (email/ID) and an event name.
 
 Record a behavior event for a person

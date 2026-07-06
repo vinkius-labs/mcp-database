@@ -14,10 +14,10 @@ Connect your AI agents to Housecall Pro to streamline your home service business
 
 
 ## Available Tools (10)
+- **list_customers**: Lists customers
 - **get_company**: Gets your company information
 - **get_customer**: Retrieves details for a specific customer
 - **get_job**: Retrieves details for a specific job
-- **list_customers**: Lists customers
 - **list_estimates**: Lists estimates sent to customers
 - **list_invoices**: Lists invoices
 - **list_jobs**: Lists service jobs

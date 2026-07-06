@@ -19,8 +19,8 @@ Empower your AI agents to manage your email marketing with UseINBOX. This MCP se
 - **list_automations**: Lists all marketing automations
 - **list_campaigns**: Lists all email campaigns
 - **list_contact_lists**: Lists all contact lists
-- **list_contacts**: Lists contacts within a specific list
 - **list_newsletters**: Lists all newsletters
+- **list_contacts**: Lists contacts within a specific list
 - **list_senders**: Lists all authorized email senders
 - **list_templates**: Lists all email templates
 - **list_webhooks**: Lists all configured webhooks

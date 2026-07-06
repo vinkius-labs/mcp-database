@@ -37,17 +37,17 @@ No more manual exporting of vulnerability reports. Your AI assistant acts as a d
 
 
 ## Available Tools (11)
-- **add_target**: Add a new target for security monitoring
-- **get_issue**: Get detailed information about a specific security issue
-- **get_security_risk**: Get overall security risk scores and trends
-- **list_certificates**: List SSL/TLS certificates and their status
-- **list_dns_records**: List DNS records discovered for monitored targets
 - **list_issues**: List all discovered security issues and vulnerabilities
 - **list_open_ports**: List all discovered open ports across targets
 - **list_scans**: List history of security scans
 - **list_targets**: List all monitored targets (assets)
 - **list_technologies**: List detected technologies and libraries on targets
 - **trigger_scan**: Trigger a new security scan for a target
+- **add_target**: Add a new target for security monitoring
+- **get_issue**: Get detailed information about a specific security issue
+- **get_security_risk**: Get overall security risk scores and trends
+- **list_certificates**: List SSL/TLS certificates and their status
+- **list_dns_records**: List DNS records discovered for monitored targets
 
 
 ## 💬 Prompt Examples
