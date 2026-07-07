@@ -8,11 +8,13 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | [Count Words for Agents](../mcps/context-integrity-prover.md) | Text analysis tool that counts words, characters, sentences, and paragraphs. Validates maximum length constraints so AI agents can generate text that strictly respects exact limits. |
 | [Crop Coord Maximizer](../mcps/crop-coord-maximizer.md) | Calculate pixel-perfect crop coordinates for any aspect ratio while preserving subject focus. |
 | [Hreflang Generator](../mcps/hreflang-generator.md) | Generate and validate SEO-compliant HTML hreflang tags and XML sitemap entries for multi-regional websites. |
+| [Kid Table Auto-Detector](../mcps/kid-table-auto-detector.md) | Automatically isolates children and links their parents to adjacent tables for supervision. |
 | [Regex from Examples](../mcps/regex-from-examples.md) | Generate ranked regular expression candidates from input and extraction pairs. |
 | [Robots.txt Generator](../mcps/robotstxt-generator.md) | Generate syntactically valid robots.txt files by configuring user-agent rules, crawl delays, and sitemap URLs. |
 | [Schedule Interruption Handler](../mcps/schedule-interruption-handler.md) | Adjust medical or procedural schedules based on missed doses and interruptions. |
 | [Subtitle Readability Pacer](../mcps/subtitle-readability-pacer.md) | Calculate optimal subtitle block distribution and timing based on speaking rate. |
 | [Video Timeline Packer](../mcps/video-timeline-packer.md) | Precisely adjust video clip durations through trimming and speeding up to fit a target timeline duration. |
+| [VIP Proximity Placer](../mcps/vip-proximity-placer.md) | Automated event seating engine that prioritizes VIP constraints before distributing general attendees. |
 | [Water Hardener & Softener Balancer](../mcps/water-hardener-softener-balancer.md) | Precision calculator for mineral concentration adjustments in distilled water. |
 
 

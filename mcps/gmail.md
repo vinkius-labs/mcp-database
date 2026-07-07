@@ -33,43 +33,57 @@ Connect your **Gmail** enterprise or personal account to any AI agent and bring 
 
 
 ## Available Tools (30)
-- **batch_delete_messages**: This is NOT reversible — messages cannot be recovered. Use trash instead for safe deletion.
-
-Permanently delete multiple messages
-- **create_inbox_filter**: Criteria fields: from, to, subject, query, hasAttachment, negatedQuery. Action fields: addLabelIds, removeLabelIds, forward, star, markImportant. Provide criteria and action as JSON strings.
-
-Create an inbox filter rule
-- **list_mailbox_history**: Get the starting history ID from get_gmail_profile. Useful for incremental sync and change detection.
-
-Track mailbox changes since a point in time
-- **list_gmail_messages**: Use the "q" parameter for Gmail search syntax (e.g. "from:boss@company.com is:unread", "has:attachment", "newer_than:2d"). Returns message IDs and thread IDs — use get_message_content to read full details.
-
-List messages from the inbox
 - **get_message_content**: Use after list_gmail_messages to read specific emails.
 
 Read the full content of an email
+- **untrash_gmail_message**: Recover a message from the trash
+- **list_gmail_threads**: Supports Gmail search syntax via "q". Threads group related messages together.
+
+List conversation threads
+- **create_draft**: The user can review and modify the draft in Gmail or send it later using send_draft. Safer than sending directly.
+
+Create an email draft
+- **get_vacation_settings**: Check vacation auto-responder status
+- **get_gmail_profile**: Use historyId with list_mailbox_history for change tracking.
+
+Get mailbox identity and stats
+- **verify_api_connection**: Check Gmail API connectivity
+- **list_unread_emails**: Equivalent to searching with "is:unread".
+
+List the latest unread messages
+- **find_emails_from_sender**: Shortcut for the "from:" Gmail search operator.
+
+Search emails by sender address
+- **delete_draft**: This is not reversible.
+
+Delete a draft permanently
+- **update_vacation_settings**: Optionally restrict to contacts only or domain members. Dates are Unix timestamps in milliseconds.
+
+Toggle vacation auto-responder
+- **list_inbox_filters**: Filters automatically process incoming messages based on criteria (from, to, subject, query) and perform actions (add/remove labels, forward, archive, etc.).
+
+List inbox filter rules
+- **create_inbox_filter**: Criteria fields: from, to, subject, query, hasAttachment, negatedQuery. Action fields: addLabelIds, removeLabelIds, forward, star, markImportant. Provide criteria and action as JSON strings.
+
+Create an inbox filter rule
+- **list_gmail_messages**: Use the "q" parameter for Gmail search syntax (e.g. "from:boss@company.com is:unread", "has:attachment", "newer_than:2d"). Returns message IDs and thread IDs — use get_message_content to read full details.
+
+List messages from the inbox
 - **send_email**: Supports plain text and HTML body, CC, BCC, and reply threading via inReplyTo/references headers. The email is sent immediately.
 
 Compose and send an email
-- **send_draft**: The draft is removed after sending.
-
-Send an existing draft
-- **get_attachment**: Returns base64-encoded data and size. First use get_message_content to find attachment IDs in the message payload parts.
-
-Download an email attachment
 - **modify_message_labels**: Use label IDs (e.g. "UNREAD", "STARRED", "INBOX", or custom label IDs from list_mailbox_labels). Removing "UNREAD" marks as read.
 
 Add or remove labels from a message
 - **trash_gmail_message**: Messages in trash are auto-deleted after 30 days. Use untrash_gmail_message to recover.
 
 Move a message to the trash
-- **untrash_gmail_message**: Recover a message from the trash
 - **batch_modify_messages**: Useful for bulk operations like "mark all as read" (remove UNREAD) or "archive all" (remove INBOX). Provide message IDs as a JSON array string.
 
 Bulk-modify labels on multiple messages
-- **list_gmail_threads**: Supports Gmail search syntax via "q". Threads group related messages together.
+- **batch_delete_messages**: This is NOT reversible — messages cannot be recovered. Use trash instead for safe deletion.
 
-List conversation threads
+Permanently delete multiple messages
 - **get_thread_details**: Returns the complete email chain with headers, bodies, and metadata for each message.
 
 Read all messages in a thread
@@ -89,32 +103,18 @@ List email drafts
 - **get_draft**: Use this to review a draft before sending.
 
 Read a specific draft
-- **create_draft**: The user can review and modify the draft in Gmail or send it later using send_draft. Safer than sending directly.
-
-Create an email draft
 - **update_draft**: The draft ID is required — get it from list_drafts.
 
 Edit an existing draft
-- **delete_draft**: This is not reversible.
+- **send_draft**: The draft is removed after sending.
 
-Delete a draft permanently
-- **get_vacation_settings**: Check vacation auto-responder status
-- **update_vacation_settings**: Optionally restrict to contacts only or domain members. Dates are Unix timestamps in milliseconds.
+Send an existing draft
+- **get_attachment**: Returns base64-encoded data and size. First use get_message_content to find attachment IDs in the message payload parts.
 
-Toggle vacation auto-responder
-- **list_inbox_filters**: Filters automatically process incoming messages based on criteria (from, to, subject, query) and perform actions (add/remove labels, forward, archive, etc.).
+Download an email attachment
+- **list_mailbox_history**: Get the starting history ID from get_gmail_profile. Useful for incremental sync and change detection.
 
-List inbox filter rules
-- **get_gmail_profile**: Use historyId with list_mailbox_history for change tracking.
-
-Get mailbox identity and stats
-- **verify_api_connection**: Check Gmail API connectivity
-- **list_unread_emails**: Equivalent to searching with "is:unread".
-
-List the latest unread messages
-- **find_emails_from_sender**: Shortcut for the "from:" Gmail search operator.
-
-Search emails by sender address
+Track mailbox changes since a point in time
 
 
 ## 💬 Prompt Examples

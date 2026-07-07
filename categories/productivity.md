@@ -220,6 +220,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Customer.io](../mcps/customerio-alternative.md) | Send behavior-driven emails, push notifications, and in-app messages triggered by what your users actually do in your product. |
 | [Customers.ai](../mcps/customersai.md) | Identify anonymous website visitors by name and turn them into leads with AI-powered visitor identification and outreach automation. |
 | [Cyberimpact](../mcps/cyberimpact-alternative.md) | Email marketing automation with Cyberimpact. |
+| [Cycle Day Resolver](../mcps/cycle-day-resolver.md) | Identify specific tasks or states for any future date based on a repeating, variable-length sequence. |
 | [Cycling FTP Calculator](../mcps/cycling-ftp-calculator.md) | Calculate FTP, power zones, and training metrics like TSS and IF from cycling tests. |
 | [D2L Brightspace](../mcps/d2l-brightspace.md) | Manage your D2L Brightspace LMS — administer courses, track student grades, and manage enrollments directly through your AI agent. |
 | [DAS Payment Scheduler](../mcps/das-payment-scheduler.md) | Automated annual calendar generator for Brazilian Simples Nacional tax payments, handling holiday-based date shifts and overdue period alerts. |
@@ -278,6 +279,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Dribbble](../mcps/dribbble.md) | Manage your Dribbble portfolio—upload shots, organize projects, and update your profile directly from your AI agent. |
 | [Dropbox Sign](../mcps/dropbox-sign.md) | Equip your AI agent to manage e-signature requests, track document status, and monitor templates via the Dropbox Sign (HelloSign) API. |
 | [Dryfta](../mcps/dryfta.md) | Equip your AI agent to manage event attendees, track sessions, and monitor abstract submissions via the Dryfta API. |
+| [Dual-Phase Skincare Timer](../mcps/dual-phase-skincare-timer.md) | Calculates exact clock times for two-phase skincare steps. |
 | [Dub.co](../mcps/dubco.md) | Manage your short links via Dub.co — create, track, and analyze your link performance directly from any AI agent. |
 | [Dubsado](../mcps/dubsado.md) | Run your creative business with proposal templates, contract signing, invoicing, and client scheduling in one seamless flow. |
 | [Duda](../mcps/duda.md) | Equip your AI agent to manage websites, track templates, and monitor client accounts via the Duda API. |
@@ -636,6 +638,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Pricing Strategy Prover](../mcps/pricing-strategy-prover.md) | An AI recommended '$29/month per seat' because that is what three competitors charge. No value metric analysis — seat count has nothing to do with value delivered. No WTP research — the price was copied, not discovered. No segmentation — enterprise pays the same as a 3-person startup. No unit economics — CAC was $380 and LTV at $29/month with 14-month retention was $406. LTV/CAC of 1.07x. The company grew revenue 12% while burning 40% of cash on acquisition. This tool forces value metric definition, WTP research, segment pricing, unit economics, and packaging design. |
 | [ProcessOn](../mcps/processon.md) | Online flowchart and mind mapping platform — manage diagrams, collaborations, and exports via AI. |
 | [Product Discovery Prover](../mcps/product-discovery-prover.md) | Block engineering waste. This gatekeeper demands hard data, behavioral segments, and proven willingness-to-pay before a single line of code is written. |
+| [Product Empties Predictor](../mcps/product-empties-predictor.md) | Predict when your skincare or household products will run out based on usage patterns. |
 | [Proforms](../mcps/proforms.md) | Online form builder and data collection. |
 | [ProjectManager](../mcps/projectmanager.md) | Automate project planning and tracking via ProjectManager — manage projects, tasks, and timesheets directly from any AI agent. |
 | [PSPDFKit (Nutrient)](../mcps/pspdfkit-nutrient.md) | Professional PDF and document processing — generate, convert, OCR, and edit documents via the Nutrient API. |
@@ -665,8 +668,10 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Reflect](../mcps/reflect.md) | Equip your AI to read, write, and explore your networked thought graph in Reflect Notes securely via their API. |
 | [Requirement Decomposition Prover](../mcps/requirement-decomposition-prover.md) | AI generates the happy path but omits error handling, edge cases, security, and observability — the '80% Problem'. This tool forces complete requirement decomposition BEFORE code generation: specify inputs/outputs, map failure modes, cover boundary conditions, validate OWASP, plan logging. |
 | [RescueTime](../mcps/rescuetime.md) | Track productivity, manage Focus Sessions, and analyze time usage directly from your AI agent. |
+| [Rest Timer Accumulator](../mcps/rest-timer-accumulator.md) | Calculate total workout duration including rest periods. |
 | [Retable](../mcps/retable.md) | Organize data in smart spreadsheets with relational views, team collaboration, and workflow automation that goes beyond basic tables. |
 | [Rev.ai](../mcps/revai.md) | High-accuracy speech-to-text and transcription — submit media files, generate AI summaries, and create captions directly from your AI agent. |
+| [Reverse Sleep Calculator](../mcps/reverse-sleep-calculator.md) | Calculate your ideal bedtime by counting backwards from your wake-up time. |
 | [Review Session Scheduler](../mcps/review-session-scheduler.md) | Automate study schedules using the Ebbinghaus Forgetting Curve for long-term memory retention. |
 | [Robin](../mcps/robin.md) | Connect your AI assistant to Robin to seamlessly manage office locations, book meeting rooms, reserve hot desks, and monitor workplace availability directly from chat. |
 | [Roman Numeral Converter](../mcps/roman-numeral-converter.md) | Convert musical chord names to Roman numerals and vice-versa, with automatic transposition. |

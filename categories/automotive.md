@@ -5,6 +5,9 @@ Explore the open database of **automotive** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [CarAPI](../mcps/carapi.md) | Search 66,000+ vehicles — find cars by year, make, model, trim with engine specs, transmission and pricing data. |
+| [EV Range Anxiety Loop](../mcps/ev-range-anxiety-loop.md) | Simulate EV battery depletion and calculate necessary charging stops. |
+| [Fuel Tank Segment Simulator](../mcps/fuel-tank-segment-simulator.md) | Simulate fuel consumption and refueling events across multiple journey segments. |
+| [Speed vs Fuel Economy Tradeoff](../mcps/speed-vs-fuel-economy-tradeoff.md) | Calculate time saved vs extra fuel burned at higher speeds. |
 
 
 ---

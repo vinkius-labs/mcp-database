@@ -5,6 +5,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | Tool Name | Description |
 |-----------|-------------|
 | [Grain Direction Restrictor](../mcps/grain-direction-restrictor.md) | Enforce material grain orientation constraints for precise plywood cutting and bin packing. |
+| [Table Demographic Balancer](../mcps/table-demographic-balancer.md) | Prevent demographic clustering in seating arrangements by maintaining balanced personality traits and age groups. |
 
 
 ---

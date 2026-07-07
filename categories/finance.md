@@ -48,6 +48,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Day-by-Day Burn Simulator](../mcps/day-by-day-burn-simulator.md) | Simulate daily bank balance fluctuations to predict cash runway and overdraft events. |
 | [DECORE Simulator](../mcps/decore-simulator.md) | Calculate and validate income declarations for regulatory compliance. |
 | [Depreciation Calculator](../mcps/depreciation-calculator.md) | Calculate asset depreciation using straight-line, sum-of-the-years' digits, and declining balance methods. |
+| [Detour Gas Savings Evaluator](../mcps/detour-gas-savings-evaluator.md) | Determine if driving off-route for cheaper gas saves money. |
 | [Diaper Consumption Forecaster](../mcps/diaper-consumption-forecaster.md) | Estimate monthly diaper needs and costs based on baby age and product pricing. |
 | [Dilution Calculator](../mcps/dilution-calculator.md) | Simulate equity dilution, cap table evolution, and anti-dilution adjustments during investment rounds. |
 | [Discount Stack Calculator](../mcps/discount-stack-calculator.md) | Calculate final transaction totals by compounding multiple discount types and applying regional tax logic. |

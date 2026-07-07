@@ -4,6 +4,7 @@ Explore the open database of **transportation** Model Context Protocol (MCP) ser
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Driving Shift Planner](../mcps/driving-shift-planner.md) | Plan long-distance drives with mandatory rest periods. |
 | [J&T Express Malaysia](../mcps/jt-express-malaysia.md) | Orchestrate J&T Express Malaysia logistics — track parcels, manage orders, and calculate shipping directly from any AI agent. |
 | [Lalamove Malaysia](../mcps/lalamove-malaysia.md) | Orchestrate Lalamove Malaysia deliveries — get quotations, manage orders, and track drivers directly from any AI agent. |
 
