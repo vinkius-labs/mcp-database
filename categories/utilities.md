@@ -4,6 +4,8 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [2D Guillotine Packer](../mcps/2d-guillotine-packer.md) | Efficiently pack 2D rectangles into a container using the Guillotine split algorithm. |
+| [3D Box Fitter Estimator](../mcps/3d-box-fitter-estimator.md) | Determine if 3D boxes fit in a container using layered 2D projection. |
 | [Acoustic Reverberation Calculator](../mcps/acoustic-reverberation-calculator.md) | Estimate RT60 reverberation time and assess room acoustic suitability. |
 | [Advanced Timezone Engine](../mcps/advanced-timezone-engine.md) | Precise IANA timezone operations including historical DST transitions, ambiguity detection, and global time synchronization. |
 | [Audio Unit Converter](../mcps/audio-unit-converter.md) | Convert between musical frequencies, rhythmic durations, digital sample counts, and logarithmic amplitude levels. |

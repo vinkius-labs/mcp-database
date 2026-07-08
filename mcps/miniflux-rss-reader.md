@@ -42,13 +42,12 @@ Connect your **Miniflux** instance to any AI agent and transform how you consume
 - **delete_feed**: Remove a feed
 - **delete_user**: Delete a user (Admin only)
 - **discover_subscriptions**: Discover subscriptions from a URL
-- **export_opml**: OPML Export
 - **fetch_entry_content**: Fetch original article content
 - **flush_history**: Flush history
 - **get_entry**: Get a single entry
-- **get_feed**: Get a specific feed
 - **get_feed_counters**: Fetch unread and read counters
 - **get_feed_icon**: Get feed icon by feed ID
+- **get_feed**: Get a specific feed
 - **get_icon**: Get feed icon by icon ID
 - **get_integrations_status**: Check if any third-party integrations are enabled
 - **get_me**: Get current user information
@@ -57,7 +56,6 @@ Connect your **Miniflux** instance to any AI agent and transform how you consume
 - **healthcheck**: Healthcheck (checks DB)
 - **import_entry**: Import an entry manually
 - **import_opml**: OPML Import
-- **list_api_keys**: List API keys
 - **list_categories**: Get all categories
 - **list_category_entries**: Get entries for a specific category
 - **list_entries**: Get entries with filters
@@ -79,6 +77,8 @@ Connect your **Miniflux** instance to any AI agent and transform how you consume
 - **update_entry**: Update entry title or content
 - **update_feed**: Update a feed
 - **update_user**: Update a user (Admin only)
+- **export_opml**: OPML Export
+- **list_api_keys**: List API keys
 
 
 ## 💬 Prompt Examples

@@ -7,6 +7,7 @@ Explore the open database of **baking** Model Context Protocol (MCP) servers.
 | [Baker Percentage Calculator](../mcps/baker-percentage-calculator.md) | Convert baking recipes between absolute weights (grams) and professional Baker's percentages instantly, making scaling and comparison straightforward. |
 | [Chocolate Tempering Guide](../mcps/chocolate-tempering-guide.md) | Get precise, scientifically validated temperatures for dark, milk, and white chocolate tempering. |
 | [Hydration Calculator](../mcps/hydration-calculator.md) | Predict dough texture and hydration percentage instantly for bread, pizza, or focaccia. |
+| [Non-linear Ingredient Adjuster](../mcps/non-linear-ingredient-adjuster.md) | Scale baking recipes using non-linear rules for leavening, fats, and seasonings. |
 
 
 ---

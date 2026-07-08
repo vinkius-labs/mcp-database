@@ -33,15 +33,10 @@ Connect your **Zoho Billing** account to any AI agent to streamline your recurri
 
 
 ## Available Tools (101)
-- **accept_estimate**: Mark an estimate as accepted
-- **apply_credit_note_to_invoices**: Apply credits to multiple invoices
-- **associate_coupon**: Associate a coupon with a subscription
-- **buy_onetime_addon**: Buy a one-time addon for a subscription
 - **cancel_subscription**: Cancel a subscription
 - **collect_invoice**: Collect charge via card/bank for an invoice
 - **create_addon**: Create an addon
 - **create_contact_person**: Create a contact person
-- **create_coupon**: Create a coupon
 - **create_credit_note**: Create a credit note
 - **create_customer**: Create a customer
 - **create_estimate**: Create a quote/estimate
@@ -72,8 +67,8 @@ Connect your **Zoho Billing** account to any AI agent to streamline your recurri
 - **get_contact_person**: Retrieve a contact person
 - **get_coupon**: Retrieve a coupon
 - **get_credit_note**: Retrieve a credit note
-- **get_customer**: Retrieve a customer
 - **get_customer_by_reference**: Retrieve a customer using CRM reference
+- **get_customer**: Retrieve a customer
 - **get_estimate**: Retrieve a quote/estimate
 - **get_event**: Retrieve an event
 - **get_hosted_page**: Retrieve hosted page details
@@ -113,7 +108,6 @@ Connect your **Zoho Billing** account to any AI agent to streamline your recurri
 - **mark_product_active**: Mark a product as active
 - **mark_product_inactive**: Mark a product as inactive
 - **pause_subscription**: Pause a subscription
-- **reactivate_subscription**: Reactivate a subscription
 - **refund_credit_note**: Refund a credit note
 - **refund_payment**: Refund a payment
 - **resume_subscription**: Resume a subscription
@@ -125,7 +119,6 @@ Connect your **Zoho Billing** account to any AI agent to streamline your recurri
 - **update_hosted_page_card**: Update card via hosted page
 - **update_hosted_page_subscription**: Update a subscription via hosted page
 - **update_invoice**: Update an invoice
-- **update_item**: Update an item
 - **update_organization**: Update an organization
 - **update_payment**: Update a payment
 - **update_plan**: Update a plan
@@ -134,6 +127,13 @@ Connect your **Zoho Billing** account to any AI agent to streamline your recurri
 - **void_credit_note**: Void a credit note
 - **void_invoice**: Void an invoice
 - **writeoff_invoice**: Write off an invoice
+- **accept_estimate**: Mark an estimate as accepted
+- **apply_credit_note_to_invoices**: Apply credits to multiple invoices
+- **associate_coupon**: Associate a coupon with a subscription
+- **buy_onetime_addon**: Buy a one-time addon for a subscription
+- **create_coupon**: Create a coupon
+- **reactivate_subscription**: Reactivate a subscription
+- **update_item**: Update an item
 
 
 ## 💬 Prompt Examples

@@ -34,10 +34,6 @@ Connect your **Postmark** account to any AI agent to automate your transactional
 
 
 ## Available Tools (72)
-- **activate_bounce**: Reactivate a bounced email address
-- **add_domain**: Add a domain (Account level)
-- **archive_message_stream**: Archive a message stream
-- **bypass_inbound_message**: Bypass rules for a blocked inbound message
 - **create_message_stream**: Create a message stream
 - **create_sender_signature**: Create a sender signature (Account level)
 - **create_server**: Create a new server (Account level)
@@ -57,8 +53,8 @@ Connect your **Postmark** account to any AI agent to automate your transactional
 - **edit_server**: Edit server settings (Account level)
 - **edit_template**: Edit an existing template
 - **edit_webhook**: Edit a webhook
-- **get_bounce**: Get details for a specific bounce
 - **get_bounce_dump**: Get raw SMTP dump for a bounce
+- **get_bounce**: Get details for a specific bounce
 - **get_bulk_request_status**: Get bulk email request status
 - **get_current_server**: Get current server configuration (Server level)
 - **get_data_removal_status**: Check data removal request status
@@ -106,6 +102,10 @@ Connect your **Postmark** account to any AI agent to automate your transactional
 - **validate_template**: Validate template syntax
 - **verify_domain_dkim**: Trigger DKIM verification for a domain
 - **verify_domain_return_path**: Trigger Return-Path verification for a domain
+- **activate_bounce**: Reactivate a bounced email address
+- **add_domain**: Add a domain (Account level)
+- **archive_message_stream**: Archive a message stream
+- **bypass_inbound_message**: Bypass rules for a blocked inbound message
 
 
 ## 💬 Prompt Examples

@@ -34,6 +34,10 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 
 
 ## Available Tools (48)
+- **agent_expert**: Deep multi-step analysis and synthesis
+- **agent_fast**: Low-latency streamed answers for simple research questions
+- **perp_leaderboard**: Most profitable Hyperliquid traders
+- **points_address**: Tier lookup for a wallet on the Nansen points leaderboard
 - **points_leaderboard**: Paginated Nansen points leaderboard
 - **portfolio_defi_holdings**: Track DeFi positions across protocols
 - **prediction_address_summary**: Win rate, PnL, and wallet age in prediction markets
@@ -54,8 +58,8 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 - **profiler_labels**: Non-premium labels (ENS, behavioral)
 - **profiler_perp_positions**: Real-time Hyperliquid positions
 - **profiler_perp_trades**: Hyperliquid trade history
-- **profiler_pnl_summary**: Aggregate PnL and top profitable tokens
 - **profiler_pnl**: Detailed PnL for a specific address and token
+- **profiler_pnl_summary**: Aggregate PnL and top profitable tokens
 - **profiler_premium_labels**: All labels including Smart Money
 - **profiler_related_wallets**: Wallets related by on-chain behavior
 - **profiler_transactions**: Recent blockchain transactions for an address
@@ -78,10 +82,6 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 - **tgm_transfers**: Top token transfers (ERC-20)
 - **tgm_who_bought_sold**: Summary of net buyers/sellers
 - **token_screener**: Discover trending tokens across chains
-- **agent_expert**: Deep multi-step analysis and synthesis
-- **agent_fast**: Low-latency streamed answers for simple research questions
-- **perp_leaderboard**: Most profitable Hyperliquid traders
-- **points_address**: Tier lookup for a wallet on the Nansen points leaderboard
 
 
 ## 💬 Prompt Examples

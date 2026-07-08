@@ -50,21 +50,21 @@ No more switching between tabs to find a customer's ID or check a product's stat
 - **get_affiliate**: Retrieve a specific affiliate
 - **get_checkout**: Retrieve a specific checkout
 - **get_customer**: Retrieve a specific customer
-- **get_discount_redemption**: Retrieve a specific discount redemption
 - **get_discount**: Retrieve a specific discount
+- **get_discount_redemption**: Retrieve a specific discount redemption
 - **get_file**: Retrieve a specific file
-- **get_license_key_instance**: Retrieve a specific license key instance
 - **get_license_key**: Retrieve a specific license key
+- **get_license_key_instance**: Retrieve a specific license key instance
 - **get_me**: Retrieve the currently authenticated user
-- **get_order_item**: Retrieve a specific order item
 - **get_order**: Retrieve a specific order
+- **get_order_item**: Retrieve a specific order item
 - **get_price**: Retrieve a specific price
 - **get_product**: Retrieve a specific product
 - **get_store**: Retrieve a specific store
-- **get_subscription_invoice**: Retrieve a specific subscription invoice
-- **get_subscription_item_current_usage**: Retrieve current usage for a subscription item
-- **get_subscription_item**: Retrieve a specific subscription item
 - **get_subscription**: Retrieve a specific subscription
+- **get_subscription_invoice**: Retrieve a specific subscription invoice
+- **get_subscription_item**: Retrieve a specific subscription item
+- **get_subscription_item_current_usage**: Retrieve current usage for a subscription item
 - **get_usage_record**: Retrieve a specific usage record
 - **get_variant**: Retrieve a specific variant
 - **get_webhook**: Retrieve a specific webhook
@@ -91,8 +91,8 @@ No more switching between tabs to find a customer's ID or check a product's stat
 - **refund_subscription_invoice**: Issue a refund for a subscription invoice
 - **update_customer**: Update a customer
 - **update_license_key**: Update a license key
-- **update_subscription_item**: Update a subscription item
 - **update_subscription**: Update a subscription
+- **update_subscription_item**: Update a subscription item
 - **update_webhook**: Update a webhook
 - **validate_license**: Validate a license key
 

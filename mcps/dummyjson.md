@@ -33,16 +33,10 @@ Connect to **DummyJSON** to simulate real-world API interactions within your AI 
 
 
 ## Available Tools (61)
-- **add_cart**: Create a new cart
-- **add_comment**: Add a comment
-- **add_post**: Add a post
 - **add_product**: Add a new product (simulated)
 - **add_recipe**: Add a recipe
 - **add_todo**: Add a todo
 - **add_user**: Add a user
-- **auth_get_me**: Retrieve the profile of the currently authenticated user
-- **auth_login**: Authenticate a user and receive JWT tokens
-- **auth_refresh_token**: Extend the session using a refresh token
 - **delete_cart**: Delete a cart
 - **delete_comment**: Delete a comment
 - **delete_post**: Delete a post
@@ -54,8 +48,9 @@ Connect to **DummyJSON** to simulate real-world API interactions within your AI 
 - **get_cart**: Get a single cart by ID
 - **get_comment**: Get a single comment by ID
 - **get_comments_by_post**: Get comments for a specific post
-- **get_post**: Get a single post by ID
+- **auth_get_me**: Retrieve the profile of the currently authenticated user
 - **get_post_comments**: Get comments for a post
+- **get_post**: Get a single post by ID
 - **get_posts_by_user**: Get posts by user
 - **get_product**: Get a single product by ID
 - **get_products_by_category**: Get products by category
@@ -67,22 +62,24 @@ Connect to **DummyJSON** to simulate real-world API interactions within your AI 
 - **get_recipes_by_meal_type**: Get recipes by meal type
 - **get_recipes_by_tag**: Get recipes by tag
 - **get_todo**: Get a single todo by ID
-- **get_user**: Get a single user by ID
 - **get_user_carts**: Get carts belonging to a specific user
 - **get_user_posts**: Get posts by user
 - **get_user_todos**: Get todos by user
+- **get_user**: Get a single user by ID
 - **list_carts**: Get all carts
 - **list_categories**: Get all category objects
 - **list_category_list**: Get all category names
 - **list_comments**: Get all comments
-- **list_posts**: Get all posts
 - **list_post_tags**: Get all post tags
+- **list_posts**: Get all posts
 - **list_products**: Get all products
 - **list_quotes**: Get all quotes
-- **list_recipes**: Get all recipes
 - **list_recipe_tags**: Get all recipe tags
+- **list_recipes**: Get all recipes
 - **list_todos**: Get all todos
 - **list_users**: Get all users
+- **auth_login**: Authenticate a user and receive JWT tokens
+- **auth_refresh_token**: Extend the session using a refresh token
 - **search_posts**: Search posts
 - **search_products**: Search products
 - **search_recipes**: Search recipes
@@ -94,6 +91,9 @@ Connect to **DummyJSON** to simulate real-world API interactions within your AI 
 - **update_recipe**: Update a recipe
 - **update_todo**: Update a todo
 - **update_user**: Update a user
+- **add_cart**: Create a new cart
+- **add_comment**: Add a comment
+- **add_post**: Add a post
 
 
 ## 💬 Prompt Examples

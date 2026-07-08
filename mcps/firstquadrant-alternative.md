@@ -37,8 +37,8 @@ FirstQuadrant is an advanced platform for AI-driven outreach and campaign manage
 - **count_contacts**: Count contacts
 - **create_api_key**: Create a new API key
 - **create_auth**: Create or refresh an access token
-- **create_campaign_sequence**: Create a new sequence for a campaign
 - **create_campaign**: Create a new campaign
+- **create_campaign_sequence**: Create a new sequence for a campaign
 - **create_campaign_variant**: Create a new variant for a campaign
 - **create_company**: Create a new company
 - **create_contact**: Create a new contact
@@ -66,17 +66,17 @@ FirstQuadrant is an advanced platform for AI-driven outreach and campaign manage
 - **get_usage**: Get organization usage statistics
 - **hard_stop_campaign**: Hard stop a campaign
 - **list_api_keys**: List API keys
+- **list_campaigns**: List campaigns
 - **list_campaign_sequences**: List sequences for a campaign
 - **list_campaign_variants**: List variants for a campaign
-- **list_campaigns**: List campaigns
 - **list_companies**: List companies
 - **list_company_employees**: List employees of a company
 - **list_connections**: List active integrations
 - **list_contacts**: List contacts
 - **list_deals**: List deals
 - **list_generations**: List AI generations
-- **list_pipeline_stages**: List stages in a pipeline
 - **list_pipelines**: List pipelines
+- **list_pipeline_stages**: List stages in a pipeline
 - **list_variant_steps**: List steps for a variant
 - **receive_hubspot_webhook**: Receive HubSpot webhook events
 - **receive_nylas_webhook**: Receive Nylas webhook events

@@ -4,6 +4,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Aspect Ratio Cropper](../mcps/aspect-ratio-cropper.md) | Calculate precise center-crop coordinates and pixel loss for any target aspect ratio. |
 | [CPF/CNPJ Batch Processor](../mcps/cpfcnpj-batch-processor.md) | Validate, format, and clean Brazilian CPF and CNPJ identifiers in bulk. |
 | [Delay Time Compensator](../mcps/delay-time-compensator.md) | Calculate precise audio delay offsets to account for hardware latency and BPM. |
 | [Essential Oil Drop Calculator](../mcps/essential-oil-drop-calculator.md) | Calculate the exact number of essential oil drops needed for a specific dilution percentage in any carrier oil volume. |
@@ -12,6 +13,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Resin Volume Calculator](../mcps/resin-volume-calculator.md) | Calculate precise resin volumes, weights, and mixing ratios for epoxy casting projects. |
 | [Storage Bitrate Balancer](../mcps/storage-bitrate-balancer.md) | Calculate maximum allowed video bitrates and estimated file sizes with a 10% safety margin. |
 | [Timelapse Calculator](../mcps/timelapse-calculator.md) | Plan precise timelapse sequences, storage needs, and golden hour windows. |
+| [Unit Fraction Simplifier](../mcps/unit-fraction-simplifier.md) | Decomposes decimal measurements into the simplest combination of standard volume and length units. |
 | [Yarn Length Calculator](../mcps/yarn-length-calculator.md) | Estimate yarn length for knitting and crochet projects. |
 
 
