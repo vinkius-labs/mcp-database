@@ -28,6 +28,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Payback Period by Channel](../mcps/payback-period-by-channel.md) | Calculate marketing payback periods, channel efficiency rankings, and optimized budget allocation strategies. |
 | [Payback Period Calculator](../mcps/payback-period-calculator.md) | Calculate the time required to recover customer acquisition costs (CAC) across different marketing channels and optimize budget distribution. |
 | [Personalization Token Validator](../mcps/personalization-token-validator.md) | Validate syntax, fallback availability, and linguistic safety of dynamic merge fields in templates. |
+| [Persuasion Framework Scorer](../mcps/persuasion-framework-scorer.md) | Scans copy for structural and persuasive patterns using Cialdini's principles and copywriting frameworks. |
 | [Placer.ai](../mcps/placerai.md) | Access foot traffic analytics — track visit trends, demographics, and trade areas directly from any AI agent. |
 | [Pricing Psychology Calculator](../mcps/pricing-psychology-calculator.md) | Analyze price presentation strategies like charm pricing, anchoring, and the decoy effect. |
 | [Product Description FAB Analyzer](../mcps/product-description-fab-analyzer.md) | Audit your product copy for Feature-Advantage-Benefit (FAB) structural integrity and persuasive impact. |

@@ -673,6 +673,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [RandomUser API](../mcps/randomuser-api.md) | Generate random user data — audit personas and locations via AI. |
 | [RateUpdate](../mcps/rateupdate.md) | Manage hotel rates and availability across OTAs and booking channels with centralized distribution and pricing intelligence. |
 | [Raven Tools](../mcps/raven-tools.md) | Track SEO rankings, audit website health, and generate white-label marketing reports for your clients automatically. |
+| [Readability Score Analyzer](../mcps/readability-score-analyzer.md) | Analyze text complexity using standard linguistic formulas like Flesch-Kincaid and SMOG. |
 | [Reading Time Estimator](../mcps/reading-time-estimator.md) | Calculate reading duration and completion dates based on word count and speed. |
 | [Readwise](../mcps/readwise-alternative.md) | Connect your AI agents to Readwise to manage books, highlights, tags, and spaced repetition reviews directly through natural language. |
 | [Rebrandly](../mcps/rebrandly.md) | Link management platform to create and manage branded short URLs with AI. |

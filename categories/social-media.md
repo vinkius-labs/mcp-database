@@ -4,6 +4,7 @@ Explore the open database of **social-media** Model Context Protocol (MCP) serve
 
 | Tool Name | Description |
 |-----------|-------------|
+| [LinkedIn Scannability & Reading Time Scorer](../mcps/linkedin-scannability-reading-time-scorer.md) | Calculate exact scannability metrics for LinkedIn feeds, including reading time and mobile viewport impact. |
 | [Mastodon Intelligence](../mcps/mastodon-intelligence.md) | Monitor trending hashtags, viral posts, and community pulse across any Mastodon instance with authenticated API access. |
 | [Open Graph Generator](../mcps/open-graph-generator.md) | Generates standardized Open Graph and Twitter Card HTML meta tags from provided metadata. |
 
