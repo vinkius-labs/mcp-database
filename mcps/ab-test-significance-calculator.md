@@ -5,18 +5,19 @@
 
 ## Overview
 
-**Category:** [analytics](../categories/analytics.md)
+**Category:** [statistics](../categories/statistics.md)
 
-Calculate statistical significance, p-values, and uplift for A/B tests.
+Calculate statistical significance, required sample sizes, and power for A/B tests.
 
 ## Description
-This MCP server provides a specialized engine for evaluating A/B test results. By connecting your AI agent to this tool, you can instantly compute critical experimental metrics including p-values, confidence intervals (90%, 95%, and 99%), relative and absolute uplift, and statistical power. Use `calculate_significance_metrics` to determine the probability of observed differences occurring by chance, `calculate_uplift_analysis` to measure the magnitude of change between groups, and `generate_experiment_verdict` to receive actionable business recommendations on whether to end a test or continue collecting data.
+This MCP server provides a complete statistical engine for analyzing A/B test results. It allows you to determine if observed differences in conversion rates are statistically significant using the `analyze_conversion_difference` tool. You can plan future experiments by estimating necessary visitor counts with `calculate_required_sample_size`. Additionally, monitor your ongoing tests' strength via `calculate_statistical_power` and protect against false positives by using `check_peeking_risk` to detect the dangers of early data analysis.
 
 
-## Available Tools (3)
-- **generate_experiment_verdict**: Provides a business recommendation on whether to end the test or continue collecting data
-- **calculate_significance_metrics**: Calculates core probability metrics and confidence ranges for the experiment
-- **calculate_uplift_analysis**: Computes the magnitude of change between the control and variant groups
+## Available Tools (4)
+- **analyze_conversion_rab_difference**: Analyze the difference in conversion rates between two groups
+- **calculate_statistical_power**: Calculate the current power of an ongoing test
+- **calculate_required_sample_size**: Calculate the required sample size per group for a new A/B test
+- **check_peeking_risk**: Check the risk of peeking at A/B test results
 
 
 ## 💬 Prompt Examples
@@ -24,38 +25,38 @@ This MCP server provides a specialized engine for evaluating A/B test results. B
 Here are some examples of how you can interact with the **A/B Test Significance Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I have an A/B test where the control group had 1000 visitors and 50 conversions, while the variant group had 1100 visitors and 70 conversions. What is the significance?"
+> "Is the difference between 500 conversions in 10,000 visitors (Group A) and 550 conversions in 10,000 visitors (Group B) statistically significant at a 95% confidence level?"
 
 **🤖 AI Agent:**
-> The p-value for this test is approximately 0.145, which suggests that the observed difference is not statistically significant at the 95% confidence level.
+> Yes, the p-value is approximately 0.032, which is below the 0.05 threshold, indicating statistical significance.
 
 ---
 
 **👤 You:**
-> "Calculate the uplift for a control group with 5000 visitors and 200 conversions, and a variant group with 5200 visitors and 250 conversions."
+> "How many visitors do I need per group for a new test with a baseline conversion rate of 0.10, an MDE of 0.02, power of 0.80, and alpha of 0.05?"
 
 **🤖 AI Agent:**
-> The relative uplift is approximately 12.5%, and the absolute uplift is an increase of 0.96 percentage points.
+> You will need approximately 3,975 visitors per group to achieve the desired statistical power.
 
 ---
 
 **👤 You:**
-> "Based on a p-value of 0.03 and a statistical power of 0.85, should I end my experiment with a significance threshold of 0.05?"
+> "I have checked my A/B test results 5 times so far. The current sample size is 1,200 and the planned sample size was 5,000. What is my risk level?"
 
 **🤖 AI Agent:**
-> Yes, you should end the test. The result is conclusive because the p-value is below the threshold and the power meets the required level.
+> The risk level is high because you have performed multiple checks while only a small fraction of the planned sample size has been reached.
 
 
 ## ❓ FAQ
 
-**Q: How can I determine if my A/B test result is significant?**
-You can use the `calculate_significance_metrics` tool. It will return a p-value; if this value is below your significance threshold (typically 0.05), the result is considered statistically significant.
+**Q: How can I check if my current A/B test results are significant?**
+You can use the `analyze_conversion_difference` tool by providing the number of visitors and conversions for both your control and variant groups.
 
-**Q: What does 'relative uplift' mean in this context?**
-Relative uplift represents the percentage change in the conversion rate of your variant group compared to your control group, calculated using `calculate_uplift_analysis`.
+**Q: How do I know if I am checking my results too frequently?**
+Use the `check_peeking_risk` tool to assess the risk level associated with multiple data inspections before reaching the target sample size.
 
-**Q: Can this tool help me decide when to stop an experiment?**
-Yes. By using `generate_experiment_verdict`, you can provide the p-value and statistical power to receive a recommendation on whether to end the test or continue collecting data.
+**Q: Can I estimate how many users are needed for a new experiment?**
+Yes, use the `calculate_required_sample_size` tool by specifying your baseline conversion rate and desired minimum detectable effect.
 
 
 ## Installation & Usage

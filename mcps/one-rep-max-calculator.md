@@ -5,19 +5,18 @@
 
 ## Overview
 
-**Category:** [health](../categories/health.md)
+**Category:** [fitness](../categories/fitness.md)
 
-Estimate your maximum lifting capacity using Epley, Brzycki, and Lander models.
+Estimate 1RM using multiple models and generate structured warm-up routines.
 
 ## Description
-This MCP server provides specialized tools for strength athletes to predict their One Repetition Maximum (1RM) without the physical strain of a true max test. Use `get_epley_estimate` for a widely recognized method, `get_brzycki_estimate` for an alternative approach based on intensity ratios, or `get_lander_estimate` for a more complex statistical model. You can also use `get_lift_intensity` to determine the training load percentage of your sets.
+This MCP server provides advanced strength estimation tools for lifters. Use `estimate_one_rep_max` to predict your maximum lift based on submaximal sets using Epley, Brzycki, Lander, Lombardi, and O'Conner models. You can also use `generate_warmup_routine` to create progressive warm-up sets from 40% to 80% intensity, or `lookup_strength_standards` to find benchmarks for squat, bench press, deadlift, and overhead press (OHP).
 
 
-## Available Tools (4)
-- **get_epley_estimate**: Determine the estimated 1RM using the Epley method
-- **get_lift_intensity**: Calculate the percentage of a user's maximum capability used
-- **get_lander_estimate**: Determine the estimated 1RM using the Lander/Lombardi method
-- **get_brzycki_estimate**: Determine the estimated 1RM using the Brzycki method
+## Available Tools (3)
+- **lookup_strength_standards**: Lookup standardized strength benchmarks
+- **estimate_one_rep_max**: Estimate 1RM using multiple formulas
+- **generate_warmup_routine**: Generate a structured warmup routine
 
 
 ## 💬 Prompt Examples
@@ -25,38 +24,38 @@ This MCP server provides specialized tools for strength athletes to predict thei
 Here are some examples of how you can interact with the **One Rep Max Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is my estimated 1RM if I lifted 100kg for 5 reps using the Epley method?"
+> "Calculate my 1RM for 100kg at 5 reps."
 
 **🤖 AI Agent:**
-> Using `get_epley_estimate`, your estimated 1RM is 125kg.
+> Your average estimated 1RM is 114.6 kg. The intensity table ranges from 100% (114.6 kg) down to 50% (57.3 kg).
 
 ---
 
 **👤 You:**
-> "Calculate the intensity of a 80lb set if my max is 100lb."
+> "Generate a warm-up routine for a 300 lb target 1RM."
 
 **🤖 AI Agent:**
-> The `get_lift_intensity` tool shows your training intensity was 80%.
+> Your warm-up routine includes sets at 120 lbs, 150 lbs, 180 lbs, 210 lbs, and 240 lbs with increasing rest intervals.
 
 ---
 
 **👤 You:**
-> "Estimate my max using Brzycki with 200lbs for 3 reps."
+> "What is the strength standard for a 90kg male doing a deadlift?"
 
 **🤖 AI Agent:**
-> The `get_brzyck_estimate` tool predicts a 1RM of approximately 210.53lbs.
+> The benchmark for an intermediate lifter in the 90kg weight class is 165 kg.
 
 
 ## ❓ FAQ
 
-**Q: What is 1RM?**
-One Repetition Maximum (1RM) is the heaviest weight you can lift for a single repetition with proper form.
+**Q: How accurate are the 1RM estimates?**
+The tool averages five different mathematical models to provide a reliable prediction based on your submaximal performance.
 
-**Q: Which estimation model should I use?**
-It depends on your preference. `get_epley_estimate` is standard, while `get_brzycki_estimate` and `get_lander_estimate` offer alternative mathematical approaches.
+**Q: What lifting movements are supported?**
+You can look up standards for squat, bench press, deadlift, and overhead press (OHP).
 
-**Q: Can I calculate training intensity?**
-Yes, use the `get_lift_intensity` tool to find out what percentage of your estimated 1RM you used during a set.
+**Q: Can I generate a warm-up plan?**
+Yes, by providing your target 1RM, the tool generates five progressive sets from 40% to 80% intensity.
 
 
 ## Installation & Usage
