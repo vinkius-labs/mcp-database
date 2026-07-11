@@ -39,6 +39,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [BigMailer](../mcps/bigmailer.md) | Manage email marketing via BigMailer — list brands, contacts, and campaigns directly from any AI agent. |
 | [BlackTwist](../mcps/blacktwist.md) | Enrich B2B lead data with verified company information, technographics, and contact details for precision targeting. |
 | [Blueshift](../mcps/blueshift.md) | Orchestrate customer engagement via Blueshift — manage campaigns, track events, and sync customer data directly from any AI agent. |
+| [Brand Voice Consistency Checker](../mcps/brand-voice-consistency-checker.md) | Audit copy samples against brand voice profiles for linguistic and stylistic alignment. |
 | [BrandMentions](../mcps/brandmentions.md) | Monitor social listening and brand mentions via BrandMentions — track keywords, manage projects, and list influencers directly from any AI agent. |
 | [Brandwatch](../mcps/brandwatch.md) | Access consumer research via Brandwatch — list projects, track queries, and retrieve social mentions directly from any AI agent. |
 | [Brevo](../mcps/brevo-alternative.md) | Engage customers across email, SMS, and chat with marketing campaigns and transactional messaging that scale with you. |
@@ -65,6 +66,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Constant Contact](../mcps/constant-contact-alternative.md) | Manage your email marketing and contacts via Constant Contact — create campaigns, track engagement, and organize lists directly from your AI agent. |
 | [Contentdrips](../mcps/contentdrips.md) | Turn text into scroll-stopping social media carousels and visual content pieces that boost engagement on every platform. |
 | [Convertlab](../mcps/convertlab.md) | Marketing automation and customer data platform — manage customers, campaigns, and events via AI. |
+| [Countdown & Urgency Sync Checker](../mcps/countdown-urgency-sync-checker.md) | Audit marketing copy for consistency between urgency/scarcity claims and real-time data. |
 | [Creatomate](../mcps/creatomate.md) | Equip your AI agent to automate video generation, rendering, and asset management via the Creatomate API. |
 | [Curator.io](../mcps/curatorio.md) | Equip your AI agent to manage social media feeds, monitor posts, and audit sources directly via the Curator.io API. |
 | [Customer.io](../mcps/customerio.md) | Equip your AI agent to manage customer engagement, trigger automated campaigns, and track messaging metrics via the Customer.io API. |
@@ -137,6 +139,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Kissmetrics](../mcps/kissmetrics.md) | Track user behavior, set properties, and query analytics data via the Kissmetrics API. |
 | [Kitetags](../mcps/kitetags.md) | Generate optimized hashtags for Instagram and TikTok posts with AI that analyzes trending tags and maximizes reach. |
 | [KlickTipp](../mcps/klicktipp.md) | Grow your German-speaking audience with tag-based email marketing that segments subscribers by behavior and interest. |
+| [Kudosity](../mcps/kudosity.md) | Automate SMS & WhatsApp messaging via Kudosity — send and cancel SMS, send WhatsApp messages, manage contacts and lists, track delivery, and check account balance from any AI agent. |
 | [Lead Scoring Calculator](../mcps/lead-scoring-calculator.md) | Calculate a lead's conversion readiness score instantly using configurable firmographic and behavioral data points. |
 | [LeadConnector](../mcps/leadconnector.md) | Power up HighLevel/LeadConnector — fetch contacts, trace opportunities, and handle appointments seamlessly. |
 | [Leadfeeder](../mcps/leadfeeder.md) | Bring Leadfeeder B2B visit intelligence to your AI. Discover which companies visit your website natively. |

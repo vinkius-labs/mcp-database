@@ -7,6 +7,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [BaZi Basic Calculator](../mcps/bazi-basic-calculator.md) | Calculate the Four Pillars of Destiny (BaZi) using birth date and time. |
 | [BreezoMeter Air Quality & Pollen](../mcps/breezometer-air-quality-pollen.md) | Universal air quality intelligence — get real-time AQI, pollutants, and pollen data via AI. |
 | [Calendarific](../mcps/calendarific-alternative.md) | Universal holiday intelligence — get public, bank, and religious holidays worldwide via AI. |
+| [Carbon Footprint Personal Calculator](../mcps/carbon-footprint-personal-calculator.md) | Estimate your annual CO2e emissions from housing, transport, and lifestyle. |
 | [Cat Facts](../mcps/cat-facts.md) | Universal cat intelligence engine — get random cat facts and breed info via AI. |
 | [Cat Litter Box Capacity Calculator](../mcps/cat-litter-box-capacity-calculator.md) | Estimate litter volume, monthly usage, replacement frequency, and maintenance costs for your cats. |
 | [Dog CEO](../mcps/dog-ceo.md) | Universal dog intelligence engine — get random dog images and breed data via AI. |
@@ -16,8 +17,10 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Numerology Compatibility](../mcps/numerology-compatibility.md) | Discover the vibrational alignment between individuals using numerological profiles. |
 | [Numerology Life Path Calculator](../mcps/numerology-life-path-calculator.md) | Discover your spiritual purpose and personality traits through Pythagorean numerology calculation. |
 | [Pregnancy Week-by-Week Calculator](../mcps/pregnancy-week-by-week-calculator.md) | Track pregnancy progress, fetal development milestones, and trimester symptoms. |
+| [Skincare Routine Optimizer](../mcps/skincare-routine-optimizer.md) | Optimize your skincare routine order, ingredient safety, and product lifecycle management. |
 | [Sun Sign Calculator](../mcps/sun-sign-calculator.md) | Calculate precise zodiac signs with year-specific cusp transitions and astrological properties. |
 | [Sustainability Score Calculator](../mcps/sustainability-score-calculator.md) | Quantify your environmental footprint and discover actionable paths to a more sustainable lifestyle. |
+| [Valid Outfit Generator](../mcps/valid-outfit-generator.md) | Calculate and sample valid clothing combinations based on formality consistency rules. |
 | [Wine Pairing Matcher](../mcps/wine-pairing-matcher.md) | Get expert wine recommendations based on dish characteristics like protein, sauce weight, and intensity. |
 
 

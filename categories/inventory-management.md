@@ -4,6 +4,7 @@ Explore the open database of **inventory-management** Model Context Protocol (MC
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Alcohol Quantity Planner](../mcps/alcohol-quantity-planner.md) | Calculate exact alcohol inventory needed for events based on guests, duration, and preferences. |
 | [Asset Panda](../mcps/asset-panda.md) | Track and manage fixed assets with Asset Panda — audit groups, objects, and locations via AI. |
 | [Days of Supply Calculator](../mcps/days-of-supply-calculator.md) | Monitor inventory health by calculating stock coverage and identifying supply risks. |
 | [Envi Healthcare Supply Chain](../mcps/envi-healthcare-supply-chain.md) | Equip your AI agent to manage healthcare purchase orders, track medical inventory, and monitor vendors via the Envi API. |

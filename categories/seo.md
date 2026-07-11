@@ -13,6 +13,7 @@ Explore the open database of **seo** Model Context Protocol (MCP) servers.
 | [LSI Keyword Finder](../mcps/lsi-keyword-finder.md) | Extract semantically related keywords using co-occurrence, synonyms, and morphological variations. |
 | [Readability & SEO Scorer](../mcps/readability-seo-scorer.md) | Audit text for SEO performance using Flesch-Kincaid, sentence density, and passive voice analysis. |
 | [SEO Content Brief Scorer](../mcps/seo-content-brief-scorer.md) | Audit content briefs for SEO health, keyword placement, and heading hierarchy. |
+| [Voice Search Optimization Analyzer](../mcps/voice-search-optimization-analyzer.md) | Analyze content for featured snippet and voice search suitability. |
 
 
 ---

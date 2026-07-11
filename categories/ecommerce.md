@@ -73,6 +73,7 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Endorsal Testimonials](../mcps/endorsal-testimonials.md) | Equip your AI agent to manage testimonials, track display widgets, and approve reviews via the Endorsal API. |
 | [Enspire Commerce](../mcps/enspire-commerce.md) | Equip your AI agent to manage omni-channel orders, track inventory, and monitor shipments via the Enspire API. |
 | [Erply ERP & POS](../mcps/erply-erp-pos.md) | Equip your AI agent to manage retail products, track sales invoices, and monitor inventory via the Erply API. |
+| [Ethical Shopping Comparator](../mcps/ethical-shopping-comparator.md) | Compare products based on sustainability metrics like carbon footprint, repairability, and durability. |
 | [Eventbrite](../mcps/eventbrite.md) | Equip your AI agent to manage events, track attendees, and monitor ticket orders via the Eventbrite API. |
 | [Eventzilla](../mcps/eventzilla.md) | Equip your AI agent to manage event registrations, track ticket orders, and monitor discount codes via the Eventzilla API. |
 | [Expedia](../mcps/expedia.md) | Automate travel planning via Expedia — search hotels, compare flights, find rental cars, and build complete trip itineraries directly from any AI agent. |

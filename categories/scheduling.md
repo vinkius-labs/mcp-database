@@ -6,6 +6,7 @@ Explore the open database of **scheduling** Model Context Protocol (MCP) servers
 |-----------|-------------|
 | [Pet Worming Schedule](../mcps/pet-worming-schedule.md) | Calculate deworming intervals and product suitability for dogs and cats based on age and risk. |
 | [Recurring Event Expander](../mcps/recurring-event-expander.md) | Expands RFC 5545 RRULE strings into concrete lists of occurrence dates. |
+| [Timeline Cushion Calculator](../mcps/timeline-cushion-calculator.md) | Generate a synchronized wedding timeline with realistic logistical buffers and milestone timestamps. |
 
 
 ---

@@ -5,6 +5,7 @@ Explore the open database of **interior-design** Model Context Protocol (MCP) se
 | Tool Name | Description |
 |-----------|-------------|
 | [Room Layout Planner](../mcps/room-layout-planner.md) | Checks if furniture fits in a room by evaluating placement integrity, walkability, and clearance compliance. |
+| [Rug & Room Proportion Calculator](../mcps/rug-room-proportion-calculator.md) | Validate if rug dimensions follow professional interior design rules for floor borders and furniture anchoring. |
 | [Wall Art Arrangement Balancer](../mcps/wall-art-arrangement-balancer.md) | Calculate precise drill coordinates to perfectly center and balance wall art arrangements. |
 
 

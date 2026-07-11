@@ -4,6 +4,7 @@ Explore the open database of **health-fitness** Model Context Protocol (MCP) ser
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Weight Cut Calculator](../mcps/weight-cut-calculator.md) | Calculate safe water cut limits, daily weight loss pace, and hydration protocols for combat sports. |
 | [Weight Loss Compounder](../mcps/weight-loss-compounder.md) | Model non-linear weight loss trajectories by accounting for metabolic slowdown. |
 
 

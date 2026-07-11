@@ -4,6 +4,7 @@ Explore the open database of **web-development** Model Context Protocol (MCP) se
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Alt-Text Accessibility Checker](../mcps/alt-text-accessibility-checker.md) | Validate image alt-text against WCAG standards for length, redundancy, and descriptiveness. |
 | [Canonical Checker](../mcps/canonical-checker.md) | Identify the authoritative URL version and detect SEO duplicate content risks. |
 | [Heading Structure Validator](../mcps/heading-structure-validator.md) | Validates HTML heading hierarchy, keyword presence, and semantic density. |
 | [Redirect Chain Analyzer](../mcps/redirect-chain-analyzer.md) | Analyze URL redirect sequences to calculate PageRank decay and identify optimization opportunities. |

@@ -8,6 +8,7 @@ Explore the open database of **logistics** Model Context Protocol (MCP) servers.
 | [First-Fit Decreasing Cutter](../mcps/first-fit-decreasing-cutter.md) | Optimize material usage by calculating the most efficient cutting plans for raw stock. |
 | [Leftover Ratio Calculator](../mcps/leftover-ratio-calculator.md) | Minimize food waste by calculating optimal portions for events. |
 | [Storage Unit Picker](../mcps/storage-unit-picker.md) | Calculate the required storage unit size based on your items' volume and stacking efficiency. |
+| [Table Seating Optimizer](../mcps/table-seating-optimizer.md) | Calculate venue capacity, table layouts, and space requirements for events. |
 
 
 ---

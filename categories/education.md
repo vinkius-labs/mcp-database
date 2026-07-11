@@ -8,10 +8,13 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Chess.com Global Intelligence](../mcps/chesscom-global-intelligence.md) | The definitive server for Chess.com — track player ratings, historical games, and daily puzzles via AI. |
 | [Chinese Zodiac Calculator](../mcps/chinese-zodiac-calculator.md) | Discover your Chinese zodiac animal, element, and astrological compatibility. |
 | [Circle of Fifths Navigator](../mcps/circle-of-fifths-navigator.md) | Navigate musical keys, identify tonal relationships, and plan modulations using the Circle of Fifverts framework. |
+| [Class Rank Estimator](../mcps/class-rank-estimator.md) | Estimate your class rank percentile using GPA, mean, and standard deviation. |
 | [ENEM Score Calculator](../mcps/enem-score-calculator.md) | Calculate ENEM scores using simplified IRT, compute averages, and simulate university admission feasibility. |
+| [Final Grade Needed Calculator](../mcps/final-grade-needed-calculator.md) | Calculate the exact score needed on upcoming exams or assignments to reach your target course grade. |
 | [Global Scholarship Deadline Tracker](../mcps/global-scholarship-deadline-tracker.md) | Instantly calculate urgency and generate comprehensive document checklists for global scholarships (FUVEST, Erasmus+, DAAD). |
 | [GPA Calculator](../mcps/gpa-calculator.md) | Calculate weighted GPA for US (4.0) and Brazilian (10.0) scales, including honors classification. |
 | [GPA Converter](../mcps/gpa-converter.md) | Convert academic grades between different scales and calculate weighted averages. |
+| [GPA Cumulative Calculator](../mcps/gpa-cumulative-calculator.md) | Calculate and track semester and cumulative GPA using various grading scales. |
 | [IELTS Band Estimator](../mcps/ielts-band-estimator.md) | Estimate your IELTS band score, CEFR proficiency level, and discover matching visa and university requirements. |
 | [Interval Calculator](../mcps/interval-calculator.md) | Calculate musical intervals, properties, and note frequencies. |
 | [Language Proficiency Mapper](../mcps/language-proficiency-mapper.md) | Translate raw exam scores (IELTS, TOEFL, DELF, etc.) into CEFR levels and check visa/university requirements. |

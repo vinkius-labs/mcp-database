@@ -4,7 +4,6 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
-| [A/B Test Significance Calculator](../mcps/ab-test-significance-calculator.md) | Calculate statistical significance, p-values, and uplift for A/B tests. |
 | [AB Test Sample Size Calculator](../mcps/ab-test-sample-size-calculator.md) | Calculate required sample size, test duration, and peeking risk for A/B experiments. |
 | [Astrological Compatibility Engine](../mcps/astrological-compatibility-engine.md) | Analyze zodiac compatibility using elemental and modal synergy. |
 | [Bayesian A/B Testing Calculator](../mcps/bayesian-ab-testing-calculator.md) | Quantify conversion probability, expected loss, and uplift using Bayesian inference. |

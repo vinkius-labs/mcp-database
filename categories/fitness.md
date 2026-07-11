@@ -6,6 +6,7 @@ Explore the open database of **fitness** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Balanced Rep Calibrator](../mcps/balanced-rep-calibrator.md) | Distribute total repetitions across sets uniformly to avoid small final sets. |
 | [Drop Set Percentage Calculator](../mcps/drop-set-percentage-calculator.md) | Calculate exact weight reductions for consecutive drop sets. |
+| [One Rep Max Calculator](../mcps/one-rep-max-calculator.md) | Estimate 1RM using multiple models and generate structured warm-up routines. |
 | [Progressive Overload Planner](../mcps/progressive-overload-planner.md) | Automate 12-week strength training schedules with safety-capped linear progression. |
 | [Pyramid Scheme Builder](../mcps/pyramid-scheme-builder.md) | Generate and compare training repetition sequences using pyramidal progression. |
 | [Sport-Specific Fitness Testing](../mcps/sport-specific-fitness-testing.md) | Generate standardized physical testing protocols, athletic benchmarks, and composite fitness scores for various sports. |

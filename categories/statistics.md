@@ -4,6 +4,7 @@ Explore the open database of **statistics** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [A/B Test Significance Calculator](../mcps/ab-test-significance-calculator.md) | Calculate statistical significance, required sample sizes, and power for A/B tests. |
 | [Multivariate Test Analyzer](../mcps/multivariate-test-analyzer.md) | Perform 2k factorial analysis to identify optimal element combinations and interaction effects in multivariate experiments. |
 | [Test Duration Calculator](../mcps/test-duration-calculator.md) | Calculate required A/B test duration, sample sizes, and experiment risk levels. |
 

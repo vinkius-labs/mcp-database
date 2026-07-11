@@ -21,6 +21,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [api.video](../mcps/apivideo-alternative.md) | Automate video workflows via api.video — upload, stream, and analyze video content directly from any AI agent. |
 | [Apiary](../mcps/apiary.md) | Manage your API design-first workflows via Apiary — read blueprints, publish docs, and run tests directly from your AI agent. |
 | [Apideck](../mcps/apideck.md) | Unify your software stack with Apideck — manage CRM contacts, orchestrate Vault connections, and execute proxy requests across dozens of platforms through one API. |
+| [App Store Listing Optimizer](../mcps/app-store-listing-optimizer.md) | Validate and optimize App Store and Google Play metadata for maximum visibility. |
 | [AppGallery Connect](../mcps/appgallery-connect.md) | Manage your AppGallery Connect apps via AI — check stats, submit builds for review, monitor ratings, and reply to user comments. |
 | [AppVeyor](../mcps/appveyor.md) | Manage CI/CD pipelines, users, roles, and collaborators on AppVeyor directly from your AI agent. |
 | [Aptabase (Mobile Analytics)](../mcps/aptabase-mobile-analytics.md) | Send telemetry and custom events to Aptabase directly from your AI agent to track app usage and performance. |
@@ -114,6 +115,9 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Crowdin](../mcps/crowdin.md) | Equip your AI agent to manage localization projects, files, and translations directly via the Crowdin API. |
 | [Currency Math Engine](../mcps/currency-math-engine.md) | Stop financial calculation errors. Perform strict integer-based currency math for invoices, taxes, and cart totals. |
 | [CurseForge](../mcps/curseforge.md) | Access the world's largest repository of gaming mods — search for projects, fetch metadata, and manage mod files for Minecraft, WoW, and more. |
+| [Cursor Admin](../mcps/cursor-admin.md) | Manage your Cursor team — list members, audit logs, usage data, spending, repo blocklists, and team settings via the Cursor Admin API from any AI agent. |
+| [Cursor Analytics](../mcps/cursor-analytics.md) | Track team AI coding metrics from Cursor — agent edit acceptance rates, tab autocomplete stats, daily active users, model usage, MCP/command/plan/skill adoption, and team leaderboards from any AI agent. |
+| [Cursor Cloud Agent](../mcps/cursor-cloud-agent.md) | Create and manage Cursor cloud agents — spin up autonomous coding agents, track runs, monitor usage, and manage artifacts from any AI assistant. |
 | [Curve Fitting Engine](../mcps/curve-fitting-engine.md) | Perform exact Linear and Polynomial regression on scatter plot data local. Get mathematically perfect coefficients, equations, and R-squared scores. |
 | [DatoCMS](../mcps/datocms.md) | Manage headless content via DatoCMS — execute GraphQL queries, handle record CRUD, manage content models, and audit media uploads directly from any AI agent. |
 | [Daytona (Dev Workspaces)](../mcps/daytona-dev-workspaces.md) | Manage ephemeral development environments and sandboxes via Daytona — create, start, stop, and resize workspaces directly from your AI agent. |
@@ -329,6 +333,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Object Hash Engine](../mcps/object-hash-engine.md) | Generate deterministic SHA-256 fingerprints of any JSON object. Keys are automatically sorted so {b:2,a:1} and {a:1,b:2} always produce the exact same hash. Essential for deduplication. |
 | [Octoparse](../mcps/octoparse.md) | Connect your AI agent to Octoparse to trigger cloud web scraping tasks, monitor crawler statuses, and retrieve scraped data directly into chat. |
 | [OKLink (Multi-chain Web3 Blockchain Data API)](../mcps/oklink-multi-chain-web3-blockchain-data-api.md) | Access real-time blockchain data across multiple chains—query addresses, tokens, transactions, and blocks directly from your AI agent. |
+| [Ollama](../mcps/ollama.md) | Run LLM models via Ollama cloud API — generate completions, chat with multimodal models, create embeddings, and inspect model details from any AI agent. |
 | [Olostep](../mcps/olostep.md) | Scrape web pages at scale with a headless browser API that renders JavaScript and returns clean structured data instantly. |
 | [One-Hot Encoder Engine](../mcps/one-hot-encoder-engine.md) | Deterministically convert categorical text columns into dummy binary variables local. Essential machine learning data prep without LLM data corruption. |
 | [OneAI](../mcps/oneai.md) | Analyze text and media with OneAI Language Skills—summarize, extract entities, and transcribe audio directly through your AI agent. |
@@ -508,6 +513,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [WordPress Plugin Auditor](../mcps/wordpress-plugin-auditor.md) | This MCP gives your AI agent the ability to securely list and audit all installed plugins on a WordPress site. Perfect for security sweeps, maintenance reports, and identifying outdated or inactive plugins. |
 | [Writer (AI Enterprise LLM)](../mcps/writer-ai-enterprise-llm.md) | Access Writer's enterprise-grade LLMs and Knowledge Graph capabilities to generate content, manage files, and query RAG-based data. |
 | [Xray (Test Management)](../mcps/xray-test-management.md) | Manage test cases, executions, and plans on Xray — the leading quality assurance platform for Jira. |
+| [Z.AI](../mcps/zai.md) | Access the full Z.AI platform from any AI agent — chat completions with GLM models, image and video generation, audio transcription, OCR, web search, and agent tools. |
 | [Zeabur (PaaS Deployment)](../mcps/zeabur-paas-deployment.md) | Deploy services, manage containers, and send transactional emails via Zeabur PaaS directly from your AI agent. |
 | [ZEGO / 即构科技](../mcps/zego.md) | Leading global RTC and IM platform — manage rooms, users, and media streams via AI. |
 | [ZegoCloud](../mcps/zegocloud.md) | Manage real-time communication (RTC) and interactive messaging — kick users, stop streams, and send peer messages via AI. |
