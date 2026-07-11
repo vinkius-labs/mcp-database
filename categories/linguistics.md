@@ -5,6 +5,7 @@ Explore the open database of **linguistics** Model Context Protocol (MCP) server
 | Tool Name | Description |
 |-----------|-------------|
 | [Localization Readiness Checker](../mcps/localization-readiness-checker.md) | Identify linguistic, cultural, and structural risks in your source text to ensure high-quality localization. |
+| [Narrative Structure Analyzer](../mcps/narrative-structure-analyzer.md) | Detect storytelling frameworks, tension ratios, and compositional quality in long-form copy. |
 
 
 ---
