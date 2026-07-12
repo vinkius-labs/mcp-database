@@ -22,6 +22,9 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Headline Power Analyzer](../mcps/headline-power-analyzer.md) | Analyze headlines for power words, emotional impact, sentiment, and platform compliance. |
 | [Influencer ROI Calculator](../mcps/influencer-roi-calculator.md) | Calculate the financial impact, EMV, and profitability of influencer marketing campaigns. |
 | [Keyword Intent Classifier](../mcps/keyword-intent-classifier.md) | Categorize search keywords by intent, length, and marketing funnel stage. |
+| [LinkedIn Engagement Scorer](../mcps/linkedin-engagement-scorer.md) | Quantify the effectiveness of LinkedIn post Call-to-Actions (CT0As) and engagement triggers in text. |
+| [LinkedIn Hashtag Strategy Validator](../mcps/linkedin-hashtag-strategy-validator.md) | Analyze LinkedIn hashtag usage for density, accessibility, and strategic positioning. |
+| [LinkedIn Link Penalty and Placement Analyzer](../mcps/linkedin-link-penalty-and-placement-analyzer.md) | Analyzes LinkedIn post text to identify external link placement risks and bypass phrase detection. |
 | [Marketing ROI Calculator](../mcps/marketing-roi-calculator.md) | Calculate marketing Return on Investment (ROI), payback period, and efficiency across all campaigns using detailed cost and revenue attribution. |
 | [Meta Ad Creative Copy-Pairing Scorer](../mcps/meta-ad-creative-copy-pairing-scorer.md) | Score the alignment between Meta ad copy and visual descriptions to optimize performance. |
 | [Meta Tag Analyzer](../mcps/meta-tag-analyzer.md) | Validate HTML title and meta description tags for SEO optimization. |
@@ -46,6 +49,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Sympla](../mcps/sympla.md) | Orchestrate Sympla events — manage ticket orders, handle check-ins, and track event statistics directly from any AI agent. |
 | [Tagline Memorability Scorer](../mcps/tagline-memorability-scorer.md) | Analyze taglines for phonetic, rhythmic, and structural memorability. |
 | [Traffic Manager Prover](../mcps/traffic-manager-prover.md) | A startup spent $180K on Meta Ads and reported ROAS 4.2x. The board celebrated. Then someone ran an incrementality test — a 10% holdout that saw no ads. 38% of 'attributed' conversions were organic users who would have purchased anyway. True incremental ROAS: 2.6x. $68K spent on people who needed no convincing. Platform-reported ROAS is fiction. This tool forces five axes: unit economics per channel, attribution integrity with incrementality testing, funnel diagnostics at every stage, creative performance with fatigue analysis, and audience architecture with saturation awareness. |
+| [Twitter CTA and Engagement Scorer](../mcps/twitter-cta-and-engagement-scorer.md) | Analyze Twitter/X posts for engagement effectiveness, classifying CTAs and detecting algorithmic triggers. |
 | [Upsell & Cross-sell Copy Analyzer](../mcps/upsell-cross-sell-copy-analyzer.md) | Analyze up-sell and cross-sell copy for economic clarity, product relevance, and linguistic friction. |
 | [Viral Coefficient Calculator](../mcps/viral-coefficient-calculator.md) | Calculate K-factor, growth status, and project user base expansion through viral loops. |
 | [Webinar Registration Copy Analyzer](../mcps/webinar-registration-copy-analyzer.md) | Audit webinar registration pages for conversion optimization potential. |

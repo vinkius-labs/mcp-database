@@ -825,6 +825,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Troops](../mcps/troops.md) | Automate HR and recruitment workflows via Troops — manage job offers, candidates, contracts, and timesheets directly from your AI agent. |
 | [Tumblr](../mcps/tumblr.md) | Publish multimedia blog posts, follow creative communities, and engage with millions of users on the iconic blogging platform. |
 | [Tuya](../mcps/tuya.md) | Control and monitor your Tuya IoT ecosystem — query device status and send real-time commands to smart hardware via AI. |
+| [Twitter Thread Chunking Optimizer](../mcps/twitter-thread-chunking-optimizer.md) | Split long-form text into character-compliant Twitter/X threads with optimal sentence preservation. |
+| [Twitter/X Post Character & TCO Calculator](../mcps/twitterx-post-character-tco-calculator.md) | Calculate exact character usage for Twitter/X, accounting for URL normalization and emoji complexity. |
 | [Type.fit](../mcps/typefit.md) | Access a vast database of inspirational quotes to enhance your content, motivation, and daily workflows directly through your AI agent. |
 | [Typebot](../mcps/typebot.md) | Build conversational forms and chatbot flows with a beautiful open-source visual editor that creates engaging user experiences. |
 | [Typefully](../mcps/typefully.md) | Write, schedule, and grow your audience on Twitter and LinkedIn with an editor that helps you craft threads that go viral. |

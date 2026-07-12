@@ -4,9 +4,20 @@ Explore the open database of **social-media** Model Context Protocol (MCP) serve
 
 | Tool Name | Description |
 |-----------|-------------|
+| [LinkedIn Authority Signal Calculator](../mcps/linkedin-authority-signal-calculator.md) | Quantify thought-leadership and authority markers in LinkedIn posts. |
+| [LinkedIn Broetry Structure Validator](../mcps/linkedin-broetry-structure-validator.md) | Analyze LinkedIn posts for adherence to the 'broetry' writing style using structural metrics. |
+| [LinkedIn Document Carousel Parser](../mcps/linkedin-document-carousel-parser.md) | Analyze LinkedIn PDF carousels for readability, visual rhythm, and engagement. |
+| [LinkedIn Formatting Density Scanner](../mcps/linkedin-formatting-density-scanner.md) | Analyze LinkedIn post visual structure, whitespace ratio, and mobile scannability. |
+| [LinkedIn Hook Truncation Analyzer](../mcps/linkedin-hook-truncation-analyzer.md) | Analyze LinkedIn post hooks for visibility, truncation, and engagement potential. |
+| [LinkedIn Mention and Tag Distribution Checker](../mcps/linkedin-mention-and-tag-distribution-checker.md) | Quantify the strategic placement of @mentions and #hashtags in LinkedIn posts. |
 | [LinkedIn Scannability & Reading Time Scorer](../mcps/linkedin-scannability-reading-time-scorer.md) | Calculate exact scannability metrics for LinkedIn feeds, including reading time and mobile viewport impact. |
 | [Mastodon Intelligence](../mcps/mastodon-intelligence.md) | Monitor trending hashtags, viral posts, and community pulse across any Mastodon instance with authenticated API access. |
 | [Open Graph Generator](../mcps/open-graph-generator.md) | Generates standardized Open Graph and Twitter Card HTML meta tags from provided metadata. |
+| [Twitter Authority Signal Calculator](../mcps/twitter-authority-signal-calculator.md) | Quantify thought-leadership and authority markers in Twitter/X text. |
+| [Twitter Hook Truncation Analyzer](../mcps/twitter-hook-truncation-analyzer.md) | Analyze X/Twitter post truncation, hook types, and engagement scores. |
+| [Twitter Microcopy Density Analyzer](../mcps/twitter-microcopy-density-analyzer.md) | Analyze text density and impact for micro-blogging constraints. |
+| [Twitter Thread Structure Validator](../mcps/twitter-thread-structure-validator.md) | Analyze the structural architecture, engagement anchors, and rhythmic pacing of Twitter threads. |
+| [Twitter Virality and QT Bait Scorer](../mcps/twitter-virality-and-qt-bait-scorer.md) | Quantify the 'Quote Tweet' incentive and virality potential of a tweet using linguistic pattern matching. |
 
 
 ---
