@@ -274,6 +274,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [LicenseCheck API](../mcps/licensecheck-api.md) | Search software licenses — audit permissions and conditions via AI. |
 | [Lineascan](../mcps/lineascan.md) | Explore the Linea blockchain — check ETH balances, track ERC-20/NFT transfers, and inspect smart contract source code directly from your AI. |
 | [LLM ROUGE & BLEU Evaluator](../mcps/llm-rouge-bleu-evaluator.md) | Evaluate AI text generation quality. Compute exact mathematical BLEU and ROUGE scores comparing generated text to reference documents. |
+| [LLM Token Counter](../mcps/llm-token-counter.md) | Calculate exact and estimated token counts for GPT-4, GPT-4o, Claude, and Llama models. |
 | [LMNT (Ultra-low Latency Speech Synthesis)](../mcps/lmnt-ultra-low-latency-speech-synthesis.md) | Synthesize ultra-low latency AI speech, clone voices instantly, and manage your LMNT audio assets directly from any AI agent. |
 | [LoadNinja (Real-Browser Load Testing)](../mcps/loadninja-real-browser-load-testing.md) | Manage performance tests via LoadNinja — trigger load scenarios, monitor metrics, and audit virtual user (VU) limits. |
 | [Localazy (AI Translation & Localization API)](../mcps/localazy-ai-translation-localization-api.md) | Manage software localization and translations via Localazy — list projects, import content, manage source keys, and handle glossary terms directly from your AI agent. |

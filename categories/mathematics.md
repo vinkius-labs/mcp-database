@@ -7,6 +7,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Collision Detection Primitives](../mcps/collision-detection-primitives.md) | Calculate 3D intersections, penetrations, and impact timings for spheres, AABBs, rays, and planes. |
 | [Damage Formula Calculator](../mcps/damage-formula-calculator.md) | Evaluate and compare game damage scaling models including linear, multiplicative, and advanced RPG formulas. |
 | [Elemental Weakness Calculator](../mcps/elemental-weakness-calculator.md) | Calculate combat effectiveness and identify elemental imbalances using an interaction matrix. |
+| [Embedding Similarity Calculator](../mcps/embedding-similarity-calculator.md) | Calculate mathematical distances and similarity scores between multidimensional numerical vectors. |
 | [Equal Temperament Calculator](../mcps/equal-temperament-calculator.md) | Calculate MIDI frequencies, interval deviations, and tuning system comparisons. |
 | [FOV to Focal Length Converter](../mcps/fov-to-focal-length-converter.md) | Convert between Field of View (degrees) and Focal Length (mm) for various sensor formats. |
 | [Graph Analysis Toolkit](../mcps/graph-analysis-toolkit.md) | Deep structural analysis of directed and undirected graphs, providing metrics on connectivity, topology, and node importance. |

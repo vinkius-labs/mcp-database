@@ -534,6 +534,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [LiquidPlanner Classic](../mcps/liquidplanner-classic.md) | Plan projects with intelligent scheduling that automatically adjusts timelines based on team capacity and task dependencies. |
 | [Liveblocks](../mcps/liveblocks.md) | Manage real-time collaboration infrastructure—create rooms, authorize users, and inspect collaborative storage or threads directly from your AI agent. |
 | [Liveblocks (Collaborative)](../mcps/liveblocks-collaborative.md) | Manage real-time collaborative rooms, user presence, and shared storage via Liveblocks — list rooms, track active users, and handle threads directly from your AI agent. |
+| [LLM API Cost Calculator](../mcps/llm-api-cost-calculator.md) | Estimate and compare the financial impact of LLM usage across different providers. |
+| [LLM Context Window Budgeter](../mcps/llm-context-window-budgeter.md) | Monitor and predict LLM context window exhaustion with precision token forecasting. |
 | [Lokalise](../mcps/lokalise.md) | Automate translation and localization workflows via Lokalise — manage projects, keys, and translations directly from any AI agent. |
 | [Loom (Async Video Messaging)](../mcps/loom-async-video-messaging.md) | Manage video messages via Loom — retrieve metadata, handle timeline comments, and track viewer analytics. |
 | [Loopio](../mcps/loopio.md) | Connect your Loopio RFP platform to AI — search approved answers, manage proposal projects, and automate questionnaire responses naturally via chat. |
