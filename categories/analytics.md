@@ -22,6 +22,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
 | [Swimming Pace Calculator](../mcps/swimming-pace-calculator.md) | Calculate swimming training intensities, race predictions, and efficiency metrics based on Critical Swim Speed (CSS). |
 | [Vector Index Recall Estimator](../mcps/vector-index-recall-estimator.md) | Estimate ANN search performance, memory footprint, and optimal parameters. |
+| [Wasm Bundle Size Analyzer](../mcps/wasm-bundle-size-analyzer.md) | Analyze WebAssembly module size, compression savings, and execution latency across device tiers. |
 | [Weekly Training Load Calculator](../mcps/weekly-training-load-calculator.md) | Calculate physiological training stress using TRIMP and TSS methodologies to track athlete fatigue and fitness. |
 
 

@@ -88,6 +88,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Fuel Cost Calculator](../mcps/fuel-cost-calculator.md) | Calculate trip expenses and compare gasoline vs ethanol costs. |
 | [Fuel Cost Trip Calculator](../mcps/fuel-cost-trip-calculator.md) | Calculate road trip fuel costs using vehicle efficiency, regional distance adjustments, and localized fuel prices. |
 | [Fundraising Target Calculator](../mcps/fundraising-target-calculator.md) | Calculate optimal fundraising targets based on projected burn, runway needs, and safety buffers. |
+| [Gas Fee Estimator](../mcps/gas-fee-estimator.md) | Estimate blockchain transaction costs for EVM-compatible chains. |
 | [Gas vs EV Fuel Savings Calculator](../mcps/gas-vs-ev-fuel-savings-calculator.md) | Compare the long-term costs of gasoline and electric vehicles. |
 | [Global Effective Tax Rate & Pillar Two Compliance](../mcps/global-effective-tax-rate-pillar-two-compliance.md) | Calculate global effective tax rates and OECD Pillar Two top-up tax liabilities. |
 | [Grain Storage Cost Calculator](../mcps/grain-storage-cost-calculator.md) | Calculate grain storage expenses and determine optimal market timing. |

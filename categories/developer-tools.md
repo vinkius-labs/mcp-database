@@ -161,6 +161,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Faker](../mcps/faker.md) | Generate high-quality mock data for development and testing — including addresses, persons, companies, and products in multiple locales. |
 | [Fastn](../mcps/fastn.md) | Automate and execute low-code workflows via Fastn — manage flow definitions, monitor executions, and handle connector credentials directly. |
 | [Fauna (Serverless DB)](../mcps/fauna-serverless-db.md) | Execute FQL queries directly against your Fauna serverless database from any AI agent to manage collections, documents, and indexes. |
+| [Feature Flag Rollout Calculator](../mcps/feature-flag-rollout-calculator.md) | Calculate deterministic user assignment, rollout projections, and statistical sample sizes for feature flags. |
 | [Feature Scaler Engine](../mcps/feature-scaler-engine.md) | Standardize (Z-Score) or MinMax scale numeric columns with mathematical perfection local. Essential normalization for neural networks and clustering algorithms. |
 | [Fern](../mcps/fern.md) | Manage and interact with Fern documentation platforms — generate access tokens, index websites for AI, and query analytics directly from your agent. |
 | [Filebase (Web3 Storage)](../mcps/filebase-web3-storage.md) | Manage decentralized storage on IPFS via Filebase — upload files, pin CIDs, manage IPNS names, and track storage usage directly from any AI agent. |

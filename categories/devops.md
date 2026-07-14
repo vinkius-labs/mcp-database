@@ -4,8 +4,10 @@ Explore the open database of **devops** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Kubernetes HPA Scaling Simulator](../mcps/kubernetes-hpa-scaling-simulator.md) | Simulate Kubernetes Horizontal Pod Autoscaler behavior and stability. |
 | [Migration Strategy Prover](../mcps/migration-strategy-prover.md) | An AI recommended a big-bang database migration over the weekend. No dependency map — 7 services read from that database. No rollback plan — 'just restore from backup.' No data validation — 2.3 million records with timezone-dependent timestamps. The migration ran Saturday at 2 AM. By 4 AM, 3 downstream services were returning stale data, the backup was 6 hours old, and 14,000 customer records had corrupted timestamps. Monday morning: 72-hour incident. This tool forces risk assessment, rollback definition, data integrity verification, cutover planning, and stakeholder alignment. |
 | [Reversibility Architect Prover](../mcps/reversibility-architect-prover.md) | LLMs suggest irreversible architectural changes. This engine is a 6-pivot cognitive trap that forces the agent to map data rollbacks, blast radius, and canary deployments before executing. |
+| [Serverless Cold Start Estimator](../mcps/serverless-cold-start-estimator.md) | Estimate latency impact and cold start probabilities for serverless functions. |
 
 
 ---
