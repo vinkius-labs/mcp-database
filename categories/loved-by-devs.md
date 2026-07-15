@@ -68,7 +68,6 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [Jellyfin (Plex Alternative)](../mcps/jellyfin-plex-alternative.md) | Manage your media library via Jellyfin — list movies, shows, and music, track playback progress, and inspect server status directly from any AI agent. |
 | [JSBarcode Generator](../mcps/jsbarcode-generator.md) | Generate mathematically exact 1D barcodes (Code128, EAN-13, UPC, ITF, Codabar) as pure SVG vectors for shipping labels and inventory. |
 | [JSON Path Query Engine](../mcps/json-path-query-engine.md) | Extract specific data from massive JSON payloads using JSONPath expressions. |
-| [JSON Schema Validator](../mcps/json-schema-validator.md) | Prevent malformed JSON hallucination. Validates large LLM-generated JSON objects strictly against JSON Schema standards before sending to the client. |
 | [JSON5 Resilient Parser](../mcps/json5-resilient-parser.md) | Parse malformed JSON with trailing commas, comments, and single quotes into perfect strict JSON. Powered by JSON5 (32M+ weekly downloads). |
 | [LanceDB (Serverless Vector DB)](../mcps/lancedb-serverless-vector-db.md) | Manage vectorized data via LanceDB — perform similarity searches, create tables, and manage multi-modal embeddings. |
 | [Linear](../mcps/linear.md) | Streamline issue tracking and project management via Linear — list teams, query issues, create comments and inspect cycles directly from any AI agent. |

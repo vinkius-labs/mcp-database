@@ -10,8 +10,10 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Crypto Random String](../mcps/crypto-random-string.md) | Generate cryptographically secure random strings for API keys, tokens, and invite codes using Node.js crypto.randomBytes(). |
 | [Geetest](../mcps/geetest.md) | The ultimate anti-bot CAPTCHA API — validate users, detect bots, and protect your forms with Geetest v4. |
 | [GraphQL Query Complexity Analyzer](../mcps/graphql-query-complexity-analyzer.md) | Analyze GraphQL queries for structural complexity, depth, and token count. |
+| [JWT Decoder & Validator](../mcps/jwt-decoder-validator.md) | Decode JWT segments and verify cryptographic signatures and temporal claims. |
 | [Prompt Injection Pattern Scanner](../mcps/prompt-injection-pattern-scanner.md) | Scans user-supplied text for structural patterns associated with prompt-injection attempts. |
 | [Prompt Injection Shield Prover](../mcps/prompt-injection-shield-prover.md) | LLMs cannot distinguish system instructions from user input. This tool forces 5-layer injection defense analysis: intent isolation, privilege containment, indirect vector scanning, output sanitization, and scope enforcement. OWASP LLM Top 10 #1 compliance. |
+| [SBOM Dependency Risk Scorer](../mcps/sbom-dependency-risk-scorer.md) | Analyze SBOM files to quantify supply chain risk through dependency structure, package staleness, and vulnerability exposure. |
 | [Twitter Mention Spam and Cluster Checker](../mcps/twitter-mention-spam-and-cluster-checker.md) | Detects @-mention clustering and structural spam patterns to prevent shadowbans. |
 | [Webhook Payload Signature Validator](../mcps/webhook-payload-signature-validator.md) | Validate inbound webhook authenticity using HMAC signature verification and timestamp freshness checks. |
 

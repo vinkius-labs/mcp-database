@@ -12,6 +12,7 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Message Queue Throughput Calculator](../mcps/message-queue-throughput-calculator.md) | Plan capacity for Kafka, RabbitMQ, or SQS by calculating consumer needs, backlog drain time, and concurrency. |
 | [PiLAB](../mcps/pilab.md) | Manage infrastructure and security via PiLAB — control PiVirt virtual machines, inspect PiTrust certificates, and oversee 3SO OAuth clients directly from any AI agent. |
 | [Security Audit Prover](../mcps/security-audit-prover.md) | An AI agent committed a Stripe API key to git, built SQL queries with string concatenation, and deployed an admin endpoint with no authentication — all in 4 minutes. The key was scraped from GitHub within 90 seconds. This tool forces input sanitization validation, secret management auditing, authentication enforcement, injection prevention, and dependency supply chain checks against OWASP Top 10. |
+| [WebSocket Capacity Planner](../mcps/websocket-capacity-planner.md) | Estimate WebSocket connection limits, server fleet requirements, and network overhead. |
 
 
 ---

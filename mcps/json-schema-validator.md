@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+**Category:** [development](../categories/development.md)
 
-Prevent malformed JSON hallucination. Validates large LLM-generated JSON objects strictly against JSON Schema standards before sending to the client.
+Validate JSON documents and lint schemas for structural integrity.
 
 ## Description
-Validating JSON against strict OpenAPI schemas is a mathematical task, not a probabilistic one. This engine uses `Ajv` for zero-hallucination validation.
+The JSON Schema Validator MCP server provides high-precision validation of JSON documents against Draft-07 and 2020-12 specifications. Use `validate_json_document` to check if a document adheres to your schema, identifying exact paths to errors. The `lint_json_schema` tool detects unreachable constraints or conflicting definitions within the schema itself, while `evaluate_schema_compatibility` identifies breaking changes when evolving your schemas.
 
 
-## Available Tools (1)
-- **validate_json_schema**: Pass both as JSON strings. The engine returns whether the data is valid and lists all specific validation errors found.
-
-Validates a JSON string optionally against a JSON Schema
+## Available Tools (3)
+- **evaluate_schema_compatibility**: Evaluates if a new schema is compatible with a base schema
+- **lint_json_schema**: Performs structural linting on a JSON Schema
+- **validate_json_document**: Validates a JSON document against a JSON Schema
 
 
 ## 💬 Prompt Examples
@@ -24,40 +24,38 @@ Validates a JSON string optionally against a JSON Schema
 Here are some examples of how you can interact with the **JSON Schema Validator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Validate this deeply nested JSON payload against our Draft-07 OpenAPI customer schema."
+> "Is this JSON document valid against my schema?"
 
 **🤖 AI Agent:**
-> ✅ **Validation Status:** Valid.
-All 34 fields comply with the expected type and constraint definitions.
+> The document is valid. No errors were found at any path.
 
 ---
 
 **👤 You:**
-> "Check if this user payload is missing any required properties according to the strict schema."
+> "Check this schema for any linting errors."
 
 **🤖 AI Agent:**
-> ❌ **Error Detected:**
-`Missing required property 'billingAddress.zipCode' at root.user`
+> No structural or semantic errors were detected in the schema.
 
 ---
 
 **👤 You:**
-> "Ensure all strings in this array match the schema's maxLength of 50 characters."
+> "Will updating my schema break existing clients?"
 
 **🤖 AI Agent:**
-> ❌ **Validation Failed:** Item at index 4 (`companyName`) exceeds 50 characters.
+> No breaking changes were detected; the new schema is a valid superset of the base schema.
 
 
 ## ❓ FAQ
 
-**Q: Does it support Draft-07?**
-Yes, it perfectly implements JSON Schema Draft-07.
+**Q: What does `validate_json_document` do?**
+It checks a JSON document against a provided schema and returns validation errors with exact JSON Pointers.
 
-**Q: Will it point out specific errors?**
-Yes, it returns the exact path and validation failure reason.
+**Q: How can I find logical errors in my schema?**
+You can use the `lint_json_schema` tool to detect unreachable constraints or conflicting types within your schema definition.
 
-**Q: Can it validate OpenAPI specs?**
-Yes, it evaluates all nested types and definitions.
+**Q: Can I check if a new schema version breaks my existing integration?**
+Yes, the `evaluate_schema_compatibility` tool compares a base schema with a new one to identify any breaking changes.
 
 
 ## Installation & Usage

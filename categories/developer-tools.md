@@ -17,6 +17,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Allnodes (Staking and Web3 Hosting API)](../mcps/allnodes-staking-and-web3-hosting-api.md) | Manage staking, validators, and Web3 hosting infrastructure directly from any AI agent via Allnodes. |
 | [Ankr (Web3 Node API)](../mcps/ankr-web3-node-api.md) | Access high-performance Web3 RPC nodes via Ankr. Query block data, check wallet balances, and interact with smart contracts across multiple EVM chains. |
 | [ANOVA Calculator Engine](../mcps/anova-calculator-engine.md) | Run exact One-Way ANOVA tests to compare means across multiple groups local. Get CPU-guaranteed F-scores and p-values, not LLM guesses. |
+| [API Contract Diff Checker](../mcps/api-contract-diff-checker.md) | Detect breaking and additive changes in OpenAPI and GraphQL schemas. |
 | [api.video](../mcps/apivideo.md) | Host, encode, and stream video content with a developer-first API that handles everything from upload to playback. |
 | [api.video](../mcps/apivideo-alternative.md) | Automate video workflows via api.video — upload, stream, and analyze video content directly from any AI agent. |
 | [Apiary](../mcps/apiary.md) | Manage your API design-first workflows via Apiary — read blueprints, publish docs, and run tests directly from your AI agent. |
@@ -274,6 +275,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [LibreTranslate API](../mcps/libretranslate-api.md) | Translate and detect text — audit languages via AI. |
 | [LicenseCheck API](../mcps/licensecheck-api.md) | Search software licenses — audit permissions and conditions via AI. |
 | [Lineascan](../mcps/lineascan.md) | Explore the Linea blockchain — check ETH balances, track ERC-20/NFT transfers, and inspect smart contract source code directly from your AI. |
+| [LLM Fine-Tuning Dataset Validator](../mcps/llm-fine-tuning-dataset-validator.md) | Verify structural integrity, token distribution, and training costs of JSONL datasets. |
 | [LLM ROUGE & BLEU Evaluator](../mcps/llm-rouge-bleu-evaluator.md) | Evaluate AI text generation quality. Compute exact mathematical BLEU and ROUGE scores comparing generated text to reference documents. |
 | [LLM Token Counter](../mcps/llm-token-counter.md) | Calculate exact and estimated token counts for GPT-4, GPT-4o, Claude, and Llama models. |
 | [LMNT (Ultra-low Latency Speech Synthesis)](../mcps/lmnt-ultra-low-latency-speech-synthesis.md) | Synthesize ultra-low latency AI speech, clone voices instantly, and manage your LMNT audio assets directly from any AI agent. |
@@ -406,6 +408,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Regex High-Perf Parser](../mcps/regex-high-perf-parser.md) | Stop LLM hallucination when extracting entities. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction. |
 | [Regex High-Perf Parser](../mcps/regex-high-perf-parser-alternative.md) | Stop LLM hallucination when extracting entities. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction. |
 | [Regex Tester Batch](../mcps/regex-tester-batch.md) | High-performance batch regex testing and syntax validation. |
+| [Regex Tester Explainer](../mcps/regex-tester-explainer.md) | Validate, test, and deconstruct regular expressions across multiple flavors. |
 | [Regex Toolkit](../mcps/regex-toolkit.md) | Equip your AI with strict Regular Expressions. Deterministically extract, validate, and redact Emails, URLs, and Phones without hallucinations. |
 | [Replicate](../mcps/replicate-extended.md) | Automate machine learning workflows via Replicate — run models, manage predictions, and search for AI assets directly from any AI agent. |
 | [ReqBin](../mcps/reqbin.md) | Test and verify API requests using ReqBin Echo — send JSON payloads and inspect the echoed response to debug request structures. |
@@ -426,6 +429,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [ScraperAPI](../mcps/scraperapi.md) | Equip your AI agent with proxy rotation and headless browsers to extract HTML, Google SERPs, and Amazon data at scale. |
 | [Scrollscan](../mcps/scrollscan.md) | Explore the Scroll L2 blockchain — check account balances, track transactions (normal, internal, ERC20/721/1155), and inspect contract ABIs directly from your AI agent. |
 | [Semaphore](../mcps/semaphore.md) | Automate CI/CD workflows, manage pipelines, and monitor build jobs directly from your AI agent. |
+| [SemVer Calculator](../mcps/semver-calculator.md) | Validate, compare, and manipulate Semantic Versioning 2.0.0 strings. |
 | [SerpApi](../mcps/serpapi.md) | Equip your AI agent with real-time web search capabilities across Google, Bing, Baidu, Yahoo, and DuckDuckGo. |
 | [Serper](../mcps/serper.md) | Fast, affordable Google Search API — get real-time SERP results, news, and images with 2,500 free searches per month. |
 | [Shiden Scan (Shiden Network Block Explorer)](../mcps/shiden-scan-shiden-network-block-explorer.md) | Explore Shiden Network blockchain data—blocks, extrinsics, accounts, and EVM contracts—directly from your AI agent. |
