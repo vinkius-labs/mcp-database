@@ -5,7 +5,9 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Breadcrumb Generator](../mcps/breadcrumb-generator.md) | Automatically generates text, JSON-LD schema, and HTML breadcrumbs from URL paths. |
+| [Conventional Commit Linter](../mcps/conventional-commit-linter.md) | Validate commit messages against Conventional Commates spec and determine SemVer impact. |
 | [Count Words for Agents](../mcps/context-integrity-prover.md) | Text analysis tool that counts words, characters, sentences, and paragraphs. Validates maximum length constraints so AI agents can generate text that strictly respects exact limits. |
+| [Cron Expression Parser](../mcps/cron-expression-parser.md) | Validate, interpret, and calculate execution schedules from cron expressions. |
 | [Crop Coord Maximizer](../mcps/crop-coord-maximizer.md) | Calculate pixel-perfect crop coordinates for any aspect ratio while preserving subject focus. |
 | [Hreflang Generator](../mcps/hreflang-generator.md) | Generate and validate SEO-compliant HTML hreflang tags and XML sitemap entries for multi-regional websites. |
 | [Kid Table Auto-Detector](../mcps/kid-table-auto-detector.md) | Automatically isolates children and links their parents to adjacent tables for supervision. |

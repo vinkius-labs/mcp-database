@@ -10,6 +10,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Crypto Random String](../mcps/crypto-random-string.md) | Generate cryptographically secure random strings for API keys, tokens, and invite codes using Node.js crypto.randomBytes(). |
 | [Geetest](../mcps/geetest.md) | The ultimate anti-bot CAPTCHA API — validate users, detect bots, and protect your forms with Geetest v4. |
 | [GraphQL Query Complexity Analyzer](../mcps/graphql-query-complexity-analyzer.md) | Analyze GraphQL queries for structural complexity, depth, and token count. |
+| [Hash Checksum Calculator](../mcps/hash-checksum-calculator.md) | Generate, compare, and validate cryptographic and non-cryptographic hashes like MD5, SHA-256, and CRC32. |
 | [JWT Decoder & Validator](../mcps/jwt-decoder-validator.md) | Decode JWT segments and verify cryptographic signatures and temporal claims. |
 | [Prompt Injection Pattern Scanner](../mcps/prompt-injection-pattern-scanner.md) | Scans user-supplied text for structural patterns associated with prompt-injection attempts. |
 | [Prompt Injection Shield Prover](../mcps/prompt-injection-shield-prover.md) | LLMs cannot distinguish system instructions from user input. This tool forces 5-layer injection defense analysis: intent isolation, privilege containment, indirect vector scanning, output sanitization, and scope enforcement. OWASP LLM Top 10 #1 compliance. |

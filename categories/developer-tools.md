@@ -18,6 +18,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Ankr (Web3 Node API)](../mcps/ankr-web3-node-api.md) | Access high-performance Web3 RPC nodes via Ankr. Query block data, check wallet balances, and interact with smart contracts across multiple EVM chains. |
 | [ANOVA Calculator Engine](../mcps/anova-calculator-engine.md) | Run exact One-Way ANOVA tests to compare means across multiple groups local. Get CPU-guaranteed F-scores and p-values, not LLM guesses. |
 | [API Contract Diff Checker](../mcps/api-contract-diff-checker.md) | Detect breaking and additive changes in OpenAPI and GraphQL schemas. |
+| [API Rate Limit Calculator](../mcps/api-rate-limit-calculator.md) | Predict API exhaustion and simulate traffic-shaping algorithms. |
 | [api.video](../mcps/apivideo.md) | Host, encode, and stream video content with a developer-first API that handles everything from upload to playback. |
 | [api.video](../mcps/apivideo-alternative.md) | Automate video workflows via api.video — upload, stream, and analyze video content directly from any AI agent. |
 | [Apiary](../mcps/apiary.md) | Manage your API design-first workflows via Apiary — read blueprints, publish docs, and run tests directly from your AI agent. |
@@ -114,12 +115,14 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Cronitor (Cron Monitoring)](../mcps/cronitor-cron-monitoring.md) | Monitor cron jobs, heartbeats, and websites. Track performance, receive alerts, and manage uptime directly from your AI agent. |
 | [Cronoscan (Cronos Block Explorer)](../mcps/cronoscan-cronos-block-explorer.md) | Access Cronos blockchain data — check CRO balances, track transactions, inspect smart contracts, and monitor token transfers directly via AI. |
 | [Crowdin](../mcps/crowdin.md) | Equip your AI agent to manage localization projects, files, and translations directly via the Crowdin API. |
+| [CSS Specificity Calculator](../mcps/css-specificity-calculator.md) | Calculate, compare, and validate CSS selector specificity weights using W3C standards. |
 | [Currency Math Engine](../mcps/currency-math-engine.md) | Stop financial calculation errors. Perform strict integer-based currency math for invoices, taxes, and cart totals. |
 | [CurseForge](../mcps/curseforge.md) | Access the world's largest repository of gaming mods — search for projects, fetch metadata, and manage mod files for Minecraft, WoW, and more. |
 | [Cursor Admin](../mcps/cursor-admin.md) | Manage your Cursor team — list members, audit logs, usage data, spending, repo blocklists, and team settings via the Cursor Admin API from any AI agent. |
 | [Cursor Analytics](../mcps/cursor-analytics.md) | Track team AI coding metrics from Cursor — agent edit acceptance rates, tab autocomplete stats, daily active users, model usage, MCP/command/plan/skill adoption, and team leaderboards from any AI agent. |
 | [Cursor Cloud Agent](../mcps/cursor-cloud-agent.md) | Create and manage Cursor cloud agents — spin up autonomous coding agents, track runs, monitor usage, and manage artifacts from any AI assistant. |
 | [Curve Fitting Engine](../mcps/curve-fitting-engine.md) | Perform exact Linear and Polynomial regression on scatter plot data local. Get mathematically perfect coefficients, equations, and R-squared scores. |
+| [Cyclomatic Complexity Calculator](../mcps/cyclomatic-complexity-calculator.md) | Quantitatively analyze code maintainability using cyclomatic and cognitive complexity metrics. |
 | [DatoCMS](../mcps/datocms.md) | Manage headless content via DatoCMS — execute GraphQL queries, handle record CRUD, manage content models, and audit media uploads directly from any AI agent. |
 | [Daytona (Dev Workspaces)](../mcps/daytona-dev-workspaces.md) | Manage ephemeral development environments and sandboxes via Daytona — create, start, stop, and resize workspaces directly from your AI agent. |
 | [DBeaver (CloudBeaver)](../mcps/dbeaver-cloudbeaver.md) | Manage database connections, users, and server configurations via CloudBeaver's API — inspect drivers, manage teams, and query server status directly. |
@@ -142,6 +145,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [DeveloperHub](../mcps/developerhub.md) | Equip your AI agent to manage documentation projects, track pages, and monitor changelogs via the DeveloperHub API. |
 | [DevSkiller](../mcps/devskiller.md) | Equip your AI agent to manage technical assessments, track candidates, and monitor test results via the DevSkiller API. |
 | [DictionaryAPI.dev](../mcps/dictionaryapidev.md) | Access comprehensive English word definitions, phonetics, and usage examples directly through your AI agent. |
+| [Diff & Patch Calculator](../mcps/diff-patch-calculator.md) | Compute line-level and word-level diffs, generate unified patches, and calculate text similarity. |
 | [Distance Metrics Engine](../mcps/distance-metrics-engine.md) | Calculate mathematically perfect Cosine, Euclidean, Manhattan, and Chebyshev distances between high-dimensional vectors local. Essential for embedding comparisons. |
 | [DNSimple](../mcps/dnsimple.md) | Manage domains, DNSSEC, and email forwarding via DNSimple — list accounts, control domains, and manage DS records directly from your AI agent. |
 | [DocBreach](../mcps/docbreach.md) | Real-time documentation discovery for AI agents. Discover, read, and extract any API documentation without browser rendering or API keys. |
@@ -502,6 +506,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Userback](../mcps/userback.md) | Collect visual feedback from users with annotated screenshots, screen recordings, and bug reports embedded in your product. |
 | [Userfront](../mcps/userfront.md) | Manage users, multi-tenant structures, and authentication sessions directly through Userfront's identity platform. |
 | [UserStack User-Agent Lookup](../mcps/userstack-user-agent-lookup.md) | Universal User-Agent intelligence — detect devices, browsers, and OS via AI. |
+| [UUID & ULID Generator](../mcps/uuid-ulid-generator.md) | Generate and validate UUID (v1, v3, v4, v5, v7) and ULID identifiers with timestamp extraction. |
 | [UUID Generator API](../mcps/uuid-generator-api.md) | Generate unique identifiers — audit UUIDs and versions via AI. |
 | [Voyage AI (AI Embeddings API)](../mcps/voyage-ai-ai-embeddings-api.md) | Generate high-quality text, multimodal, and contextualized embeddings, plus high-precision reranking for RAG workflows. |
 | [Vultr](../mcps/vultr.md) | Manage Vultr cloud infrastructure, bare metal instances, and backups directly from your AI agent. |

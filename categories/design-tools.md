@@ -5,6 +5,7 @@ Explore the open database of **design-tools** Model Context Protocol (MCP) serve
 | Tool Name | Description |
 |-----------|-------------|
 | [Color Difference Engine](../mcps/color-difference-engine.md) | Calculate perceptual color differences using CIE76, CIEDE2000, and OKLAB models. |
+| [Color Format Converter](../mcps/color-format-converter.md) | Convert between HEX, RGB(A), HSL(A), HSV, and CMYK with precision. |
 | [Color Space Converter](../mcps/color-space-converter.md) | High-precision mathematical conversion between RGB, HSL, CMYK, LAB, OKLAB, and more. |
 
 

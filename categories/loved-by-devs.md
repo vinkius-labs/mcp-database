@@ -130,7 +130,6 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [Typesense Cloud](../mcps/typesense-cloud.md) | Automate search cluster workflows via Typesense Cloud — monitor performance metrics, check cluster health, manage aliases, and execute multi-searches. |
 | [Typesense Vector Search](../mcps/typesense-vector-search.md) | Automate vector similarity searches via Typesense — index documents, manage collections, and execute semantic queries directly from your AI agent. |
 | [Upstash](../mcps/upstash.md) | Manage serverless Redis via Upstash REST API — execute commands, manage data structures and monitor your database from any AI agent. |
-| [UUID & ULID Generator](../mcps/uuid-ulid-generator.md) | Stop LLMs from hallucinating fake or repeated IDs. Generate mathematically guaranteed v4 UUIDs and time-sortable ULIDs natively. |
 | [UUID Generator Engine](../mcps/uuid-generator-engine.md) | Generate enterprise-grade UUIDs v4, v5, and v7 conforming to RFC 9562. The standard that banks, healthcare, and Fortune 500 trust. 80M+ weekly downloads. |
 | [Vercel](../mcps/vercel.md) | Bring your Vercel deployment infrastructure into chat. Control project domains, trigger manual builds, and inspect deployment status natively. |
 | [Vercel](../mcps/vercel-alternative.md) | Manage Vercel deployments, projects and domains via API — inspect builds, track deployments, manage env vars and domains from any AI agent. |

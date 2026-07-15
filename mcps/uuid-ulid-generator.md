@@ -5,26 +5,21 @@
 
 ## Overview
 
-**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+**Category:** [developer-tools](../categories/developer-tools.md)
 
-Stop LLMs from hallucinating fake or repeated IDs. Generate mathematically guaranteed v4 UUIDs and time-sortable ULIDs natively.
+Generate and validate UUID (v1, v3, v4, v5, v7) and ULID identifiers with timestamp extraction.
 
 ## Description
-LLMs lack entropy. If you ask an AI to generate 50 unique UUIDs for a database insert, it will often hallucinate invalid formats or repeat the same IDs. This MCP provides true cryptographic randomness to your agents.
-
-### The Superpowers
-
-- **True Cryptographic Randomness:** Leverages native Node.js crypto libraries to ensure 100% collision-free v4 UUIDs.
-- **ULID Support:** Need IDs that are lexicographically sortable by time? Generate ULIDs instantly to optimize your database indexing.
+This MCP server provides a complete toolkit for working with modern unique identifiers. You can use `generate_uuid` to create specific UUID versions like the time-ordered v7 or random v4. The `generate_ulid` tool produces lexicographically sortable ULIDs using Crockford's Base32 encoding. For existing IDs, `validate_identifier` checks if a string is a valid UUID or ULID format, while `extract_timestamp` allows you to retrieve the embedded creation date from temporal identifiers like UUID v1, UUID v7, and ULID.
 
 
-## Available Tools (2)
-- **generate_uuid**: Returns a 128-bit universally unique identifier conforming to RFC 4122. Never attempt to fabricate UUIDs yourself.
+## Available Tools (4)
+- **extract_timestamp**: Retrieves the original creation timestamp embedded within time-based identifiers
+- **generate_uuid**: For v3 and v5, namespace and name are required.
 
-Generates a mathematically perfect v4 UUID using crypto randomness
-- **generate_ulid**: Returns a time-ordered, Crockford Base32 encoded ID ideal for database primary keys that need chronological sorting.
-
-Generates a time-sortable ULID (Universally Unique Lexicographically Sortable Identifier)
+Generates a new UUID based on a specified version
+- **validate_identifier**: Determines if a provided string is a valid UUID or ULID
+- **generate_ulid**: Generates a new, valid ULID
 
 
 ## 💬 Prompt Examples
@@ -32,38 +27,38 @@ Generates a time-sortable ULID (Universally Unique Lexicographically Sortable Id
 Here are some examples of how you can interact with the **UUID & ULID Generator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Generate a completely random, collision-proof v4 UUID for a new database record."
+> "Generate a random UUID v4."
 
 **🤖 AI Agent:**
-> ✅ **Secure Generation:** The crypto engine returned `f47ac10b-58cc-4372-a567-0e02b2c3d479`.
+> f47ac10b-58cc-4372-a567-0e02b2c3d479
 
 ---
 
 **👤 You:**
-> "I need a time-sortable ULID for high-performance PostgreSQL indexing."
+> "Is this a valid ULID: 01H7X9K6B5V8N2M4P7R3D5F6G7?"
 
 **🤖 AI Agent:**
-> ✅ **ULID Created:** `01ARZ3NDEKTSV4RRFFQ69G5FAV` (Lexicographically sortable based on the current millisecond).
+> Yes, the identifier is a valid ULID.
 
 ---
 
 **👤 You:**
-> "Please generate an array of 5 unique UUIDs to be used as API Keys."
+> "Extract the timestamp from this UUID v7: 018d2f3a-4b5c-7d6e-8f9a-0b1c2d3e4f5g"
 
 **🤖 AI Agent:**
-> ✅ **Keys Generated:** Successfully bridged V8 crypto randomness to create 5 distinct UUID values.
+> 2025-02-14T10:30:00Z
 
 
 ## ❓ FAQ
 
-**Q: Why not just ask the AI to generate a UUID?**
-Because LLMs guess characters based on patterns. They do not have access to a random number generator. The results are often mathematically invalid or non-unique.
+**Q: What UUID versions are supported?**
+The `generate_uuid` tool supports v1, v3, v4, v5, and v1.
 
-**Q: What is a ULID?**
-ULID stands for Universally Unique Lexicographically Sortable Identifier. It is compatible with UUIDs but is sortable by the time it was created.
+**Q: Can I extract the date from a ULID?**
+Yes, using the `extract_timestamp` tool on a valid ULID will return its creation time in ISO 8601 format.
 
-**Q: Are the UUIDs v4 standard?**
-Yes, 100% RFC 4122 compliant v4 UUIDs generated via secure math.
+**Q: How do I check if a string is a valid identifier?**
+You can use the `validate_identifier` tool to check if a string follows the UUID or ULID specification.
 
 
 ## Installation & Usage
