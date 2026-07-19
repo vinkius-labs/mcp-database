@@ -21,9 +21,11 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Password Entropy Calculator](../mcps/password-entropy-calculator.md) | Calculate password entropy, identify pattern risks, and verify security policy compliance. |
 | [Prompt Injection Pattern Scanner](../mcps/prompt-injection-pattern-scanner.md) | Scans user-supplied text for structural patterns associated with prompt-injection attempts. |
 | [Prompt Injection Shield Prover](../mcps/prompt-injection-shield-prover.md) | LLMs cannot distinguish system instructions from user input. This tool forces 5-layer injection defense analysis: intent isolation, privilege containment, indirect vector scanning, output sanitization, and scope enforcement. OWASP LLM Top 10 #1 compliance. |
+| [Resource Usage Leak Detector](../mcps/resource-usage-leak-detector.md) | Monitor agent resource consumption to detect file descriptor or connection leaks. |
 | [SBOM Dependency Risk Scorer](../mcps/sbom-dependency-risk-scorer.md) | Analyze SBOM files to quantify supply chain risk through dependency structure, package staleness, and vulnerability exposure. |
 | [Tool Output Entropy Sanitizer](../mcps/tool-output-entropy-sanitizer.md) | Detects and redacts high-entropy strings like API keys from tool outputs. |
 | [Twitter Mention Spam and Cluster Checker](../mcps/twitter-mention-spam-and-cluster-checker.md) | Detects @-mention clustering and structural spam patterns to prevent shadowbans. |
+| [Unicode Normalization and Homoglyph Detector](../mcps/unicode-normalization-and-homoglyph-detector.md) | Detects malicious Unicode homoglyph attacks and identifies invisible characters in strings. |
 | [Webhook Payload Signature Validator](../mcps/webhook-payload-signature-validator.md) | Validate inbound webhook authenticity using HMAC signature verification and timestamp freshness checks. |
 
 

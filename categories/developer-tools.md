@@ -152,6 +152,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [DevSkiller](../mcps/devskiller.md) | Equip your AI agent to manage technical assessments, track candidates, and monitor test results via the DevSkiller API. |
 | [DictionaryAPI.dev](../mcps/dictionaryapidev.md) | Access comprehensive English word definitions, phonetics, and usage examples directly through your AI agent. |
 | [Diff & Patch Calculator](../mcps/diff-patch-calculator.md) | Compute line-level and word-level diffs, generate unified patches, and calculate text similarity. |
+| [Diff Apply and Conflict Resolver](../mcps/diff-apply-and-conflict-resolver.md) | Apply unified diffs to text with deterministic conflict resolution. |
 | [Directory State Fingerprinter](../mcps/directory-state-fingerprinter.md) | Generate and verify deterministic cryptographic fingerprints of directory states. |
 | [Distance Metrics Engine](../mcps/distance-metrics-engine.md) | Calculate mathematically perfect Cosine, Euclidean, Manhattan, and Chebyshev distances between high-dimensional vectors local. Essential for embedding comparisons. |
 | [DNSimple](../mcps/dnsimple.md) | Manage domains, DNSSEC, and email forwarding via DNSimple — list accounts, control domains, and manage DS records directly from your AI agent. |
@@ -264,6 +265,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Jamendo](../mcps/jamendo.md) | Search and stream music from the Jamendo catalog — find tracks, albums, and artists, and explore playlists directly from your AI agent. |
 | [Jawg Maps (Location & Routing)](../mcps/jawg-maps-location-routing.md) | Build with location data via Jawg Maps — search places, calculate routes, compute distance matrices, and get elevation data. |
 | [JigsawStack](../mcps/jigsawstack.md) | Access a suite of AI utility APIs for web scraping, translation, OCR, and sentiment analysis in one developer-friendly platform. |
+| [JSON Payload Depth and Size Limiter](../mcps/json-payload-depth-and-size-limiter.md) | Validate JSON payloads against strict nesting depth and byte size constraints to prevent parser crashes. |
 | [JSON Schema Strict Validator](../mcps/json-schema-strict-validator.md) | Perform deterministic JSON validation against Draft-07 and 2020-12 schemas with strict property enforcement. |
 | [JSON-LD SEO Compiler](../mcps/json-ld-seo-compiler.md) | Compile 100% Google-compliant JSON-LD Schema blocks. Prevent AI hallucination of invalid SEO structured data. |
 | [JSONBin.io](../mcps/jsonbinio.md) | Store, manage, and retrieve JSON data effortlessly. Create bins, manage collections, and handle large datasets directly from your AI agent. |

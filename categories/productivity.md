@@ -336,6 +336,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Everhour Time Tracking](../mcps/everhour-time-tracking.md) | Equip your AI agent to track time, manage projects, and monitor budgets via the Everhour API. |
 | [Evernote](../mcps/evernote.md) | Manage personal notes via Evernote — create and search notes, handle notebooks and tags, and monitor account quotas directly from any AI agent. |
 | [Every.org](../mcps/everyorg.md) | Enable donations to over a million nonprofits through a single integration with tax-deductible receipts and giving widgets. |
+| [Exact Type Inference Validator](../mcps/exact-type-inference-validator.md) | Analyze TypeScript source code to detect implicit 'any', type assertions, and unannotated declarations. |
 | [Exam Notice Study Planner](../mcps/exam-notice-study-planner.md) | Transform exam notices into optimized study schedules and milestones. |
 | [Expensya](../mcps/expensya.md) | Submit and approve business expenses in seconds with receipt scanning, policy enforcement, and reimbursement workflows. |
 | [Fabric Yardage Calculator](../mcps/fabric-yardage-calculator.md) | Calculate precise fabric requirements for custom patterns, garments, and projects. |

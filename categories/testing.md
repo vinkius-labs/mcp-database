@@ -4,6 +4,7 @@ Explore the open database of **testing** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Deterministic Fuzzer Input Generator](../mcps/deterministic-fuzzer-input-generator.md) | Generate exact boundary-value test inputs for numeric, string, and enum types. |
 | [GraphQL Schema Breaking Change Detector](../mcps/graphql-schema-breaking-change-detector.md) | Identify breaking changes in GraphQL schemas by comparing SDL strings. |
 
 
