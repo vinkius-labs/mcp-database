@@ -25,7 +25,7 @@ This MCP server provides a specialized utility to inspect JSON Web Tokens (JWT).
 Here are some examples of how you can interact with the **JWT Decoder & Validator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Is this JWT valid: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+> "Is this JWT valid: [REDACTED]"
 
 **🤖 AI Agent:**
 > The token structure is valid, and the `parse_jwt_string` tool confirms it contains 3 segments.

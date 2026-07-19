@@ -38,7 +38,7 @@ Create an engagement note in HubSpot attached to a contact, company, or deal for
 - **hs_get_contact**: Returns full contact data including name, email, phone, company, lifecycle stage, lead status, last activity date, and all custom properties. Use after searching contacts to drill into a specific person for full details.
 
 Get the complete details of a specific HubSpot contact by their record ID
-- **hs_search_contacts**: Returns first name, last name, email, phone, associated company, lifecycle stage (subscriber/lead/MQL/SQL/opportunity/customer/evangelist), and assigned HubSpot owner. Use when the user wants to find a specific person, check contact details, verify lifecycle stage, or look up who is at a particular company.
+- **hs_search_contacts**: Returns first name, last name, email, phone, associated company, lifecycle stage (subscriber/lead[REDACTED]), and assigned HubSpot owner. Use when the user wants to find a specific person, check contact details, verify lifecycle stage, or look up who is at a particular company.
 
 Search HubSpot CRM contacts by name, email, phone, or company to find people in your database
 - **hs_update_company**: Only specified fields are updated. Use when the user wants to update company details, correct industry classification, or change the domain.

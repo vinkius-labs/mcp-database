@@ -66,7 +66,7 @@ Here are some examples of how you can interact with the **Sumsub** MCP server us
 > "Generate a WebSDK access token for user 'user_456' at the 'advanced-verification' level."
 
 **🤖 AI Agent:**
-> Generated token: 'sb:eyJhbG...'. You can use this token to initialize the Sumsub WebSDK for 'user_456'.
+> Generated [REDACTED]. You can use this token to initialize the Sumsub WebSDK for 'user_456'.
 
 
 ## ❓ FAQ

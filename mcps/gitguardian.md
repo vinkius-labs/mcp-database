@@ -108,7 +108,7 @@ Here are some examples of how you can interact with the **GitGuardian** MCP serv
 ---
 
 **👤 You:**
-> "Scan this code for secrets: 'const apiKey = "sk_live_51MzX..."'"
+> "Scan this code for secrets: 'const [REDACTED]'"
 
 **🤖 AI Agent:**
 > Scan complete. I detected a 'Stripe Live Secret Key' in the provided string. This is a high-severity finding. I recommend rotating this key immediately and removing it from your source code.

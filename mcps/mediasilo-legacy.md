@@ -55,7 +55,7 @@ Here are some examples of how you can interact with the **MediaSilo (Legacy)** M
 > "Search for the latest 'Director's Cut' asset and create a review link."
 
 **🤖 AI Agent:**
-> Found asset: 'Commercial_v3_Directors_Cut.mp4' (ID: 890, 450MB, Project: 'Summer Campaign'). Review link created ✅. URL: https://links.shift.io/review/abc123xyz. Password: 'Summer2024'. Expires in: 7 days.
+> Found asset: 'Commercial_v3_Directors_Cut.mp4' (ID: 890, 450MB, Project: 'Summer Campaign'). Review link created ✅. URL: https://links.shift.io/review/abc123xyz. [REDACTED]. Expires in: 7 days.
 
 ---
 

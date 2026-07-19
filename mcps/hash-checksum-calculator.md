@@ -32,7 +32,7 @@ Here are some examples of how you can interact with the **Hash Checksum Calculat
 ---
 
 **👤 You:**
-> "Compare these two SHA-256 hashes: 2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824 and 2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824."
+> "Compare these two SHA-256 hashes: [REDACTED] and [REDACTED]."
 
 **🤖 AI Agent:**
 > The hashes are identical.
@@ -40,7 +40,7 @@ Here are some examples of how you can interact with the **Hash Checksum Calculat
 ---
 
 **👤 You:**
-> "Is this string a valid SHA-256 hash: 2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824?"
+> "Is this string a valid SHA-256 hash: [REDACTED]?"
 
 **🤖 AI Agent:**
 > Yes, the string is a valid SHA-256 hash.

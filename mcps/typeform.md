@@ -48,7 +48,7 @@ Here are some examples of how you can interact with the **Typeform** MCP server 
 > "List all forms strictly tied to our marketing department running today."
 
 **🤖 AI Agent:**
-> Executed search. I found 2 forms actively listed on the primary token: 'End of Course Audit' (ID 98Ab) and 'Website UX Panel' (ID cc31). Do you want metadata on the UX panel specifically?
+> Executed search. I found 2 forms actively listed on the primary [REDACTED] (ID 98Ab) and 'Website UX Panel' (ID cc31). Do you want metadata on the UX panel specifically?
 
 ---
 

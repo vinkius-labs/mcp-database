@@ -49,7 +49,7 @@ Get all papers by a specific author
 - **get_multi_recommendations**: The algorithm finds papers similar to the positive set but dissimilar to the negative set. Ideal for focused literature discovery.
 
 Get recommendations from multiple seed papers with positive/negative signals
-- **get_paper**: Accepts multiple ID formats: Semantic Scholar ID (e.g. "649def34f8be52c8b66281af98ae884c09aef38b"), DOI (e.g. "10.1038/s41586-021-03819-2"), ArXiv ID (e.g. "arXiv:2106.09685"), PubMed ID (e.g. "PMID:34845388"), or ACL ID (e.g. "ACL:W12-3903"). Returns title, abstract, authors, venue, year, citation counts, open access PDF URL, and publication metadata.
+- **get_paper**: Accepts multiple ID formats: Semantic Scholar ID (e.g. "[REDACTED]"), DOI (e.g. "10.1038/s41586-021-03819-2"), ArXiv ID (e.g. "arXiv:2106.09685"), PubMed ID (e.g. "PMID:34845388"), or ACL ID (e.g. "ACL:W12-3903"). Returns title, abstract, authors, venue, year, citation counts, open access PDF URL, and publication metadata.
 
 Get full paper details by ID, DOI, ArXiv ID, or PubMed ID
 - **get_paper_authors**: Useful for identifying research leaders and collaboration networks.

@@ -68,7 +68,7 @@ Here are some examples of how you can interact with the **TomTom** MCP server us
 > "Get a basic map tile URL for zoom level 15 at x=17600, y=10700."
 
 **🤖 AI Agent:**
-> Here is the URL for the requested map tile: https://api.tomtom.com/map/1/tile/basic/main/15/17600/10700.png?key=YOUR_API_KEY
+> Here is the URL for the requested map tile: https://api.tomtom.[REDACTED].png?key=YOUR_API_KEY
 
 
 ## ❓ FAQ

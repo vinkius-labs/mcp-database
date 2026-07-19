@@ -32,7 +32,7 @@ Here are some examples of how you can interact with the **Crypto Hash Engine** M
 > "Generate a SHA-256 hash of this string: `user@example.com`."
 
 **🤖 AI Agent:**
-> Hash Generated: `b4c9a289323b21a01c3e940f150eb9b8c542587f1abfd8f0e1cc1ffc5e475514`
+> Hash Generated: `[REDACTED]`
 
 ---
 

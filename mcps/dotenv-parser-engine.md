@@ -31,7 +31,7 @@ Here are some examples of how you can interact with the **Dotenv Parser Engine**
 **👤 You:**
 > "Parse this .env content: DB_HOST=localhost
 DB_PORT=5432
-API_KEY="sk-abc123""
+[REDACTED]"
 
 **🤖 AI Agent:**
 > Parsed: 3 variables extracted — DB_HOST, DB_PORT, API_KEY.

@@ -54,7 +54,7 @@ Get complete details of a specific PandaDoc document by ID, including recipients
 List PandaDoc contacts with names, emails, companies, and associated document history
 - **pandadoc_list_documents**: Filter by status: draft (not yet sent), sent (awaiting signatures), completed (fully signed), viewed (opened by recipient), paid, voided, or declined. Returns document name, template used, status, total value, owner email, and dates. Use when the user asks about document pipeline, pending signatures, or completed agreements.
 
-List PandaDoc documents with name, status (draft/sent/completed/viewed/paid/voided/declined), creation date, and recipient info
+List PandaDoc documents with name, status ([REDACTED]declined), creation date, and recipient info
 - **pandadoc_list_members**: Returns member name, email, role, and status. Use when the user asks about team members, document ownership, or needs to audit workspace access.
 
 List workspace members (users) in your PandaDoc organization with their email, role, and access level

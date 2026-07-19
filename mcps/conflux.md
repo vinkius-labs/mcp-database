@@ -77,7 +77,7 @@ Here are some examples of how you can interact with the **Conflux** MCP server u
 ---
 
 **👤 You:**
-> "Check the balance and account state for address cfx:aak2rra2njvd77ezwjvx74749399393939393939."
+> "Check the balance and account state for address cfx:[REDACTED]."
 
 **🤖 AI Agent:**
 > The account has a balance of 1,250.45 CFX. The next available nonce is 42, and the account is currently active in the staking system.

@@ -67,7 +67,7 @@ Here are some examples of how you can interact with the **Rippling** MCP server 
 > "Show me all the companies associated with my account."
 
 **🤖 AI Agent:**
-> I found 2 companies associated with your token: 'Acme Corp' (ID: comp_987) and 'Acme Logistics' (ID: comp_654). Which one would you like to inspect further?
+> I found 2 companies associated with your [REDACTED] (ID: comp_987) and 'Acme Logistics' (ID: comp_654). Which one would you like to inspect further?
 
 
 ## ❓ FAQ

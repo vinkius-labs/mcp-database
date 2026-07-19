@@ -74,7 +74,7 @@ List all deal or ticket pipelines in HubSpot with their stages, display order, a
 - **hs_search_companies**: Returns matching companies with name, website domain, industry, annual revenue, employee count, and assigned owner. Use when the user wants to find a specific company, look up organizational details, check revenue/size data, or find companies in a particular industry.
 
 Search HubSpot companies by name, domain, or industry to find organizations in your CRM
-- **hs_search_contacts**: Returns matching contacts with first name, last name, email, phone, associated company, lifecycle stage (subscriber/lead/MQL/SQL/opportunity/customer/evangelist), and assigned owner. Use when the user wants to find a specific person, look up contact details, check which lifecycle stage someone is in, or find contacts at a particular company.
+- **hs_search_contacts**: Returns matching contacts with first name, last name, email, phone, associated company, lifecycle stage (subscriber/lead[REDACTED]), and assigned owner. Use when the user wants to find a specific person, look up contact details, check which lifecycle stage someone is in, or find contacts at a particular company.
 
 Search HubSpot contacts by name, email, phone, or company name to find people in your CRM
 

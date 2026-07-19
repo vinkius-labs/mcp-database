@@ -25,7 +25,7 @@ AI agents produce interfaces that function but fail to reach the quality bar of 
 
 1. **Spatial Hierarchy** — Elevation 0-5, Liquid Glass materiality, dark mode via surface lightness
 2. **Motion System** — Spring physics (stiffness/damping), purpose-only, motion tokens, 60fps
-3. **Microinteraction Polish** — 8 states per element (idle/hover/active/focus/disabled/loading/success/error)
+3. **Microinteraction Polish** — 8 states per element ([REDACTED]/success/error)
 4. **Visual Rhythm** — 8px grid, modular typographic scale, macro/micro spacing, optical alignment
 5. **Neuro-Inclusive A11y** — WCAG 2.2 AAA, prefers-reduced-motion, low-stimulus mode, progressive disclosure
 6. **Agency & Calm UI** — Zero dark patterns, intentional friction, natural stopping points
@@ -45,7 +45,7 @@ Here are some examples of how you can interact with the **UI/UX Excellence Prove
 > "I'll build a dashboard with cards using box-shadow, CSS ease-in-out animations, buttons with hover color change only, random padding values, and a dark mode toggle."
 
 **🤖 AI Agent:**
-> Verdict: FLAT_DECORATION. Shadows are decorative — define elevation 0-5 with semantic roles. Replace ease-in-out with spring physics. Buttons need 8 states (idle/hover/active/focus/disabled/loading/success/error). Standardize to 8px grid. Dark mode needs surface lightness, not just color swap.
+> Verdict: FLAT_DECORATION. Shadows are decorative — define elevation 0-5 with semantic roles. Replace ease-in-out with spring physics. Buttons need 8 states ([REDACTED]/success/error). Standardize to 8px grid. Dark mode needs surface lightness, not just color swap.
 
 ---
 
