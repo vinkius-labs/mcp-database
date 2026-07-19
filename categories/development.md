@@ -4,6 +4,7 @@ Explore the open database of **development** Model Context Protocol (MCP) server
 
 | Tool Name | Description |
 |-----------|-------------|
+| [CSS Class Usage & Collision Analyzer](../mcps/css-class-usage-collision-analyzer.md) | Identify orphaned, missing, or colliding CSS classes in your project. |
 | [JSON Schema Validator](../mcps/json-schema-validator.md) | Validate JSON documents and lint schemas for structural integrity. |
 
 

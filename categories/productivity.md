@@ -54,6 +54,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [AMcards](../mcps/amcards.md) | Send personalized greeting cards and handwritten notes to clients and prospects that feel genuinely personal at scale. |
 | [Amilia](../mcps/amilia.md) | Recreation and activity management — manage programs, accounts, and registrations via AI. |
 | [Amplenote](../mcps/amplenote.md) | Connect your Amplenote workspace to your AI agent — search notes, manage tasks, and organize ideas via natural language. |
+| [Annotation Extractor and Tracker](../mcps/annotation-extractor-and-tracker.md) | Automatically detect, track, and report code annotations like FIXME, HACK, and XXX in your codebase. |
 | [AntEater](../mcps/anteater.md) | Monitor website changes, detect content updates, and receive alerts when key pages are modified across your digital properties. |
 | [Anxiety Management Tracker](../mcps/anxiety-management-tracker.md) | Track anxiety patterns, identify triggers, and evaluate coping strategy effectiveness. |
 | [API Design Prover](../mcps/api-design-prover.md) | An AI agent designed an API with GET /users/create. That single endpoint broke HTTP caching for 200 consumer services. No versioning. No error contract. Raw arrays on one route, wrapped objects on another. This tool forces semantic HTTP verbs, explicit versioning strategy, unified response envelopes, bounded pagination, and RFC 7807 error structures — before any code is written. |
@@ -829,6 +830,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Tuya](../mcps/tuya.md) | Control and monitor your Tuya IoT ecosystem — query device status and send real-time commands to smart hardware via AI. |
 | [Twitter Thread Chunking Optimizer](../mcps/twitter-thread-chunking-optimizer.md) | Split long-form text into character-compliant Twitter/X threads with optimal sentence preservation. |
 | [Twitter/X Post Character & TCO Calculator](../mcps/twitterx-post-character-tco-calculator.md) | Calculate exact character usage for Twitter/X, accounting for URL normalization and emoji complexity. |
+| [Type Definition Consistency Checker](../mcps/type-definition-consistency-checker.md) | Ensure structural and type-level synchronization between TypeScript interfaces, Zod schemas, and Pydantic models. |
 | [Type.fit](../mcps/typefit.md) | Access a vast database of inspirational quotes to enhance your content, motivation, and daily workflows directly through your AI agent. |
 | [Typebot](../mcps/typebot.md) | Build conversational forms and chatbot flows with a beautiful open-source visual editor that creates engaging user experiences. |
 | [Typefully](../mcps/typefully.md) | Write, schedule, and grow your audience on Twitter and LinkedIn with an editor that helps you craft threads that go viral. |

@@ -9,6 +9,7 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | [Count Words for Agents](../mcps/context-integrity-prover.md) | Text analysis tool that counts words, characters, sentences, and paragraphs. Validates maximum length constraints so AI agents can generate text that strictly respects exact limits. |
 | [Cron Expression Parser](../mcps/cron-expression-parser.md) | Validate, interpret, and calculate execution schedules from cron expressions. |
 | [Crop Coord Maximizer](../mcps/crop-coord-maximizer.md) | Calculate pixel-perfect crop coordinates for any aspect ratio while preserving subject focus. |
+| [Git Branch Naming Linter](../mcps/git-branch-naming-linter.md) | Validates git branch names against specific naming conventions and structural patterns. |
 | [Hreflang Generator](../mcps/hreflang-generator.md) | Generate and validate SEO-compliant HTML hreflang tags and XML sitemap entries for multi-regional websites. |
 | [Kid Table Auto-Detector](../mcps/kid-table-auto-detector.md) | Automatically isolates children and links their parents to adjacent tables for supervision. |
 | [Regex from Examples](../mcps/regex-from-examples.md) | Generate ranked regular expression candidates from input and extraction pairs. |

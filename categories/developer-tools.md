@@ -18,6 +18,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Ankr (Web3 Node API)](../mcps/ankr-web3-node-api.md) | Access high-performance Web3 RPC nodes via Ankr. Query block data, check wallet balances, and interact with smart contracts across multiple EVM chains. |
 | [ANOVA Calculator Engine](../mcps/anova-calculator-engine.md) | Run exact One-Way ANOVA tests to compare means across multiple groups local. Get CPU-guaranteed F-scores and p-values, not LLM guesses. |
 | [API Contract Diff Checker](../mcps/api-contract-diff-checker.md) | Detect breaking and additive changes in OpenAPI and GraphQL schemas. |
+| [API Pagination Logic Verifier](../mcps/api-pagination-logic-verifier.md) | Audit API endpoints for correct pagination patterns to prevent memory exhaustion. |
 | [API Rate Limit Calculator](../mcps/api-rate-limit-calculator.md) | Predict API exhaustion and simulate traffic-shaping algorithms. |
 | [api.video](../mcps/apivideo.md) | Host, encode, and stream video content with a developer-first API that handles everything from upload to playback. |
 | [api.video](../mcps/apivideo-alternative.md) | Automate video workflows via api.video — upload, stream, and analyze video content directly from any AI agent. |
@@ -34,6 +35,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Aserto](../mcps/aserto.md) | Manage authorization policies and evaluate access control decisions via Aserto — run Rego queries, check user permissions, and audit decision logs. |
 | [Aspose.Words](../mcps/asposewords.md) | Generate, convert, and manipulate Word documents programmatically with enterprise-grade document processing capabilities. |
 | [Assertible](../mcps/assertible.md) | Automate API testing and monitoring via Assertible — trigger deployments, run service tests, and sync specifications directly from any AI agent. |
+| [AST Cyclomatic Complexity Calculator](../mcps/ast-cyclomatic-complexity-calculator.md) | Measure code maintainability by calculating exact cyclomatic complexity using regex-based decision point counting. |
 | [Aurorascan (Aurora Network L2 Block Explorer API)](../mcps/aurorascan-aurora-network-l2-block-explorer-api.md) | Access Aurora Network L2 blockchain data—query balances, transaction history, and token transfers directly from your AI agent. |
 | [BaconIpsum](../mcps/baconipsum.md) | Generate meaty placeholder text for designs and development — customize paragraphs, sentences, and meat-to-filler ratios directly from your AI agent. |
 | [Baserow](../mcps/baserow-alternative.md) | Build no-code databases, create custom views, and collaborate on structured data with an open-source Airtable alternative. |
@@ -75,6 +77,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Celoscan (Celo Network Explorer)](../mcps/celoscan-celo-network-explorer.md) | Access Celo network data via Celoscan — check account balances, track transactions, and inspect smart contracts directly from your AI agent. |
 | [Cerbos](../mcps/cerbos.md) | Decouple authorization logic from your application. Evaluate permissions, generate query plans, and manage access control via AI. |
 | [Cerbos (Access Control)](../mcps/cerbos-access-control.md) | Decouple authorization from your code. Manage policies, check permissions, and audit access control directly through your AI agent. |
+| [Circular Code Dependency Detector](../mcps/circular-code-dependency-detector.md) | Identify import cycles and measure module interdependence in JavaScript, TypeScript, and Python projects. |
 | [Civo (Cloud-native Kubernetes Cloud Provider API)](../mcps/civo-cloud-native-kubernetes-cloud-provider-api.md) | Manage Civo cloud infrastructure — provision Kubernetes clusters, control compute instances, and monitor usage directly via AI. |
 | [Clever Cloud (Developer PaaS API)](../mcps/clever-cloud-developer-paas-api.md) | Manage your Clever Cloud infrastructure—apps, add-ons, and deployments—directly from your AI agent. |
 | [Cloud DNS (Anycast DNS Provider API)](../mcps/cloud-dns-anycast-dns-provider-api.md) | Manage your Anycast DNS infrastructure — list zones, configure records, and automate domain management directly through AI. |
@@ -83,6 +86,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Cockpit (Self-hosted Headless CMS API)](../mcps/cockpit-self-hosted-headless-cms-api.md) | Manage your self-hosted Cockpit CMS content, assets, and menus directly from any AI agent. |
 | [Codacy](../mcps/codacy.md) | Manage code quality and automated reviews via Codacy — track grades, monitor issues, and audit repository analysis directly from any AI agent. |
 | [Code Climate](../mcps/code-climate.md) | Manage code quality and engineering metrics via Code Climate — track repository grades, monitor snapshots, and audit test coverage directly from any AI agent. |
+| [Code Clone Detector](../mcps/code-clone-detector.md) | Identifies duplicate or highly similar code blocks within a project using AST normalization and deterministic hashing. |
 | [Codecov](../mcps/codecov.md) | Manage test coverage and engineering metrics via Codecov — track coverage reports, monitor commit totals, and audit code quality directly from any AI agent. |
 | [Codemagic](../mcps/codemagic.md) | Automate mobile CI/CD workflows — trigger builds, manage artifacts, and update environment variables directly from your AI agent. |
 | [CoderPad](../mcps/coderpad.md) | Manage technical interviews and assessments via CoderPad — create pads, track interview events, and audit the question bank directly from any AI agent. |
@@ -123,9 +127,11 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Cursor Cloud Agent](../mcps/cursor-cloud-agent.md) | Create and manage Cursor cloud agents — spin up autonomous coding agents, track runs, monitor usage, and manage artifacts from any AI assistant. |
 | [Curve Fitting Engine](../mcps/curve-fitting-engine.md) | Perform exact Linear and Polynomial regression on scatter plot data local. Get mathematically perfect coefficients, equations, and R-squared scores. |
 | [Cyclomatic Complexity Calculator](../mcps/cyclomatic-complexity-calculator.md) | Quantitatively analyze code maintainability using cyclomatic and cognitive complexity metrics. |
+| [Database Migration Safety Analyzer](../mcps/database-migration-safety-analyzer.md) | Detect destructive SQL and ORM migration patterns to prevent production data loss. |
 | [DatoCMS](../mcps/datocms.md) | Manage headless content via DatoCMS — execute GraphQL queries, handle record CRUD, manage content models, and audit media uploads directly from any AI agent. |
 | [Daytona (Dev Workspaces)](../mcps/daytona-dev-workspaces.md) | Manage ephemeral development environments and sandboxes via Daytona — create, start, stop, and resize workspaces directly from your AI agent. |
 | [DBeaver (CloudBeaver)](../mcps/dbeaver-cloudbeaver.md) | Manage database connections, users, and server configurations via CloudBeaver's API — inspect drivers, manage teams, and query server status directly. |
+| [Dead Code & Export Auditor](../mcps/dead-code-export-auditor.md) | Identify unused exports and unreachable code paths using deterministic AST-driven reference counting. |
 | [Decodo (Smartproxy)](../mcps/decodo-smartproxy.md) | Manage your Decodo (formerly Smartproxy) network infrastructure — list proxy endpoints, monitor bandwidth, and fetch residential proxy configurations with your AI. |
 | [DeepInfra (Serverless LLM Inference)](../mcps/deepinfra-serverless-llm-inference.md) | Run top-tier LLMs, image generation, and embeddings via DeepInfra's serverless infrastructure directly from your AI agent. |
 | [DeepOpinion (No-code NLP & Text AI API)](../mcps/deepopinion-no-code-nlp-text-ai-api.md) | Automate NLP and text analysis with DeepOpinion — list custom models, run single predictions, and process text batches directly from your AI agent. |
@@ -146,6 +152,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [DevSkiller](../mcps/devskiller.md) | Equip your AI agent to manage technical assessments, track candidates, and monitor test results via the DevSkiller API. |
 | [DictionaryAPI.dev](../mcps/dictionaryapidev.md) | Access comprehensive English word definitions, phonetics, and usage examples directly through your AI agent. |
 | [Diff & Patch Calculator](../mcps/diff-patch-calculator.md) | Compute line-level and word-level diffs, generate unified patches, and calculate text similarity. |
+| [Directory State Fingerprinter](../mcps/directory-state-fingerprinter.md) | Generate and verify deterministic cryptographic fingerprints of directory states. |
 | [Distance Metrics Engine](../mcps/distance-metrics-engine.md) | Calculate mathematically perfect Cosine, Euclidean, Manhattan, and Chebyshev distances between high-dimensional vectors local. Essential for embedding comparisons. |
 | [DNSimple](../mcps/dnsimple.md) | Manage domains, DNSSEC, and email forwarding via DNSimple — list accounts, control domains, and manage DS records directly from your AI agent. |
 | [DocBreach](../mcps/docbreach.md) | Real-time documentation discovery for AI agents. Discover, read, and extract any API documentation without browser rendering or API keys. |
@@ -201,6 +208,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [GetBlock (Web3 RPC Provider)](../mcps/getblock-web3-rpc-provider.md) | Access 50+ blockchain networks (Ethereum, Solana, Bitcoin) via RPC. Query balances, blocks, and transactions directly from your AI agent. |
 | [Getform](../mcps/getform.md) | Automate form submissions and manage responses via Getform — submit data to endpoints and list submissions directly from your AI agent. |
 | [GeTui / 个推](../mcps/getui.md) | Massive notification push and LBS platform in China — manage campaigns, devices, and reports via AI. |
+| [Git Merge Conflict Resolver](../mcps/git-merge-conflict-resolver.md) | Automatically identify and resolve Git merge conflict markers using deterministic strategies. |
 | [GitBook](../mcps/gitbook.md) | Manage technical documentation via GitBook — list organizations and spaces, handle document pages, search content, and audit collections directly from any AI agent. |
 | [Gitee](../mcps/gitee.md) | Collaborative code hosting and development platform — manage repositories, issues, and pull requests via AI. |
 | [Gnosisscan (Gnosis Chain Explorer)](../mcps/gnosisscan-gnosis-chain-explorer.md) | Access Gnosis Chain data directly—query account balances, transaction history, and smart contract details via Gnosisscan. |
@@ -235,10 +243,12 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Hudu](../mcps/hudu-alternative.md) | Document your IT infrastructure with password vaults, knowledge bases, and asset tracking built for managed service providers. |
 | [Humanloop (LLM Prompt Management API)](../mcps/humanloop-llm-prompt-management-api.md) | Manage, version, and deploy LLM prompts directly from your AI agent using the Humanloop API. |
 | [Hygraph (Headless CMS)](../mcps/hygraph-headless-cms.md) | Manage headless content via Hygraph — execute GraphQL queries, introspect schemas, and manage documents. |
+| [i18n Hardcoded String Detector](../mcps/i18n-hardcoded-string-detector.md) | An AST-powered auditing tool that identifies un-internationalized text literals in source code by cross-referencing them against translation dictionary keys. |
 | [IBAN Bank Validator](../mcps/iban-bank-validator.md) | Validate international bank accounts instantly using Modulus 97 checksums. Prevent failed transactions with 100% local precision. |
 | [ImageKit (Media Optimization & DAM)](../mcps/imagekit-media-optimization-dam.md) | Manage and optimize media via ImageKit — list files, purge CDN cache, and audit image metadata. |
 | [imgix (Real-time Image Processing)](../mcps/imgix-real-time-image-processing.md) | Optimize and transform images via imgix — manage CDN sources, purge assets, and monitor origin connections. |
 | [Immutable X](../mcps/immutable-x.md) | Interact with the Immutable blockchain — list activities, manage NFT collections, mint assets, and handle orderbook listings directly from your AI agent. |
+| [Import Order Enforcer](../mcps/import-order-enforcer.md) | Enforce deterministic import ordering and detect unused imports using AST analysis. |
 | [Import.io (Web Data Extraction)](../mcps/importio-web-data-extraction.md) | Extract structured data from any website via Import.io — run extractors, manage bulk crawls, and monitor API usage. |
 | [Infisical](../mcps/infisical.md) | Manage secrets infrastructure via AI — list, create, update, and audit secrets across environments with end-to-end encryption. |
 | [Infura (Ethereum Node RPC Provider)](../mcps/infura-ethereum-node-rpc-provider.md) | Access Ethereum blockchain data via Infura — query blocks, check balances, estimate gas, and interact with smart contracts directly from any AI agent. |
@@ -254,6 +264,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Jamendo](../mcps/jamendo.md) | Search and stream music from the Jamendo catalog — find tracks, albums, and artists, and explore playlists directly from your AI agent. |
 | [Jawg Maps (Location & Routing)](../mcps/jawg-maps-location-routing.md) | Build with location data via Jawg Maps — search places, calculate routes, compute distance matrices, and get elevation data. |
 | [JigsawStack](../mcps/jigsawstack.md) | Access a suite of AI utility APIs for web scraping, translation, OCR, and sentiment analysis in one developer-friendly platform. |
+| [JSON Schema Strict Validator](../mcps/json-schema-strict-validator.md) | Perform deterministic JSON validation against Draft-07 and 2020-12 schemas with strict property enforcement. |
 | [JSON-LD SEO Compiler](../mcps/json-ld-seo-compiler.md) | Compile 100% Google-compliant JSON-LD Schema blocks. Prevent AI hallucination of invalid SEO structured data. |
 | [JSONBin.io](../mcps/jsonbinio.md) | Store, manage, and retrieve JSON data effortlessly. Create bins, manage collections, and handle large datasets directly from your AI agent. |
 | [Juhe Data / 聚合数据](../mcps/juhe-data.md) | China's leading API aggregator — access weather, ID verification, IP lookup, and news via AI. |
@@ -277,6 +288,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Levenshtein Distance Engine](../mcps/levenshtein-distance-engine.md) | Calculate the exact edit distance between two strings. Essential for fuzzy matching, spell checking, and deduplication. Stop LLMs from guessing string similarity. |
 | [Levo.ai (API Security & Observability)](../mcps/levoai-api-security-observability.md) | Secure your APIs via Levo.ai — audit endpoints, monitor sensitive data (PII/PHI), and manage OWASP vulnerabilities. |
 | [LibreTranslate API](../mcps/libretranslate-api.md) | Translate and detect text — audit languages via AI. |
+| [License Header Injector and Verifier](../mcps/license-header-injector-and-verifier.md) | Enforce, audit, and repair mandatory copyright headers in source files. |
 | [LicenseCheck API](../mcps/licensecheck-api.md) | Search software licenses — audit permissions and conditions via AI. |
 | [Lineascan](../mcps/lineascan.md) | Explore the Linea blockchain — check ETH balances, track ERC-20/NFT transfers, and inspect smart contract source code directly from your AI. |
 | [LLM Fine-Tuning Dataset Validator](../mcps/llm-fine-tuning-dataset-validator.md) | Verify structural integrity, token distribution, and training costs of JSONL datasets. |
@@ -301,6 +313,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Makeswift](../mcps/makeswift.md) | Build stunning Next.js websites with a visual editor that lets marketers update pages without touching code or deployments. |
 | [Mapbox](../mcps/mapbox-alternative.md) | Integrate Mapbox mapping and location services into your AI agent—access vector/raster tiles, static images, directions, and manage datasets. |
 | [Markdown Frontmatter Harvester](../mcps/markdown-frontmatter-harvester.md) | Scan local Obsidian or Hugo vaults and extract all YAML frontmatter (tags, dates, status) into a single structured JSON. Let your AI query your scattered notes metadata instantly. |
+| [Markdown Lint Analyzer](../mcps/markdown-lint-analyzer.md) | Automated structural and formatting validation for Markdown documents. |
 | [Math Evaluation Engine](../mcps/math-evaluation-engine.md) | Stop LLMs from hallucinating math. Evaluate complex mathematical expressions and handle exact float rounding deterministically. |
 | [Matrix Operations Engine](../mcps/matrix-operations-engine.md) | Perform exact linear algebra — multiply, transpose, invert, and compute determinants of massive matrices local. Zero LLM math hallucinations. |
 | [Merge (Unified Integration API)](../mcps/merge-unified-integration-api.md) | Manage unified B2B data via Merge — list HRIS employees, ATS candidates, CRM contacts, and support tickets. |
@@ -347,6 +360,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [OneAI](../mcps/oneai.md) | Analyze text and media with OneAI Language Skills—summarize, extract entities, and transcribe audio directly through your AI agent. |
 | [OneSky (App & Web Localization API)](../mcps/onesky-app-web-localization-api.md) | Automate app and web localization via OneSky — manage project groups, track translation progress, and handle projects directly from your AI agent. |
 | [Open5e](../mcps/open5e.md) | Access the comprehensive Open5e database for D&D 5th Edition — search monsters, spells, classes, and magic items directly from your AI agent. |
+| [OpenAPI Spec Validator](../mcps/openapi-spec-validator.md) | Validate OpenAPI 3.x documents for structural compliance, orphaned components, and path parameter consistency. |
 | [OpenAPI Validator Engine](../mcps/openapi-validator-engine.md) | Validate any OpenAPI or Swagger spec (2.0, 3.0, 3.1, 3.2) local before generating code from it. Returns version, validity, and every schema error with exact paths. Your spec quality gate. |
 | [OpenCage](../mcps/opencage.md) | Geocode addresses and reverse-geocode coordinates via OpenCage — convert locations to lat/lng and back with country, language, and privacy filters from any AI agent. |
 | [OpenCage Geocoder](../mcps/opencage-geocoder.md) | Convert addresses to coordinates and coordinates to addresses worldwide with the OpenCage Geocoding API. |
@@ -411,6 +425,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Regex Extractor Engine](../mcps/regex-extractor-engine.md) | Stop LLM hallucination when extracting data. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction without missing a single match. |
 | [Regex High-Perf Parser](../mcps/regex-high-perf-parser.md) | Stop LLM hallucination when extracting entities. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction. |
 | [Regex High-Perf Parser](../mcps/regex-high-perf-parser-alternative.md) | Stop LLM hallucination when extracting entities. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction. |
+| [Regex Safety & Performance Analyzer](../mcps/regex-safety-performance-analyzer.md) | Detects catastrophic backtracking and ReDoS vulnerabilities in regular expressions using AST traversal. |
 | [Regex Tester Batch](../mcps/regex-tester-batch.md) | High-performance batch regex testing and syntax validation. |
 | [Regex Tester Explainer](../mcps/regex-tester-explainer.md) | Validate, test, and deconstruct regular expressions across multiple flavors. |
 | [Regex Toolkit](../mcps/regex-toolkit.md) | Equip your AI with strict Regular Expressions. Deterministically extract, validate, and redact Emails, URLs, and Phones without hallucinations. |
@@ -453,6 +468,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [SolanaFM (Solana FM Block Explorer API)](../mcps/solanafm-solana-fm-block-explorer-api.md) | Access Solana blockchain data via SolanaFM — inspect blocks, transactions, account metadata, and token balances directly from any AI agent. |
 | [SparkPost](../mcps/sparkpost.md) | Bring your SparkPost email delivery platform into your AI. Manage templates, send campaigns, and audit deliverability directly from your editor. |
 | [SQL Parser AST Engine](../mcps/sql-parser-ast-engine.md) | Parse any SQL query into a structured AST — extract tables, columns, JOINs, and WHERE clauses programmatically. Supports 15+ dialects including MySQL, PostgreSQL, and BigQuery. Your SQL injection firewall. |
+| [SQL Query Complexity Analyzer](../mcps/sql-query-complexity-analyzer.md) | Analyze SQL query complexity, join structures, and safety risks. |
+| [SQL Static Query Analyzer](../mcps/sql-static-query-analyzer.md) | Perform deterministic static analysis on SQL query strings to detect inefficient, destructive, or insecure patterns. |
 | [SQL Syntax Validator](../mcps/sql-syntax-validator.md) | Audit SQL queries for syntax errors before executing them. Prevent DB crashes and deadlocks with local AST parsing. |
 | [Statamic](../mcps/statamic.md) | Manage your Statamic CMS content—list entries, fetch taxonomy terms, inspect global sets, and explore site navigation directly from your AI agent. |
 | [StatHat](../mcps/stathat.md) | Track custom metrics and statistics effortlessly via StatHat — post counters, values, and batch updates directly from your AI agent. |
@@ -471,6 +488,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Targetprocess](../mcps/targetprocess.md) | Connect your AI to Apptio Targetprocess. Agile portfolio management natively from the terminal: track user stories, active bugs, and sprint iterations seamlessly. |
 | [Tatum (Blockchain Infra)](../mcps/tatum-blockchain-infra.md) | Simplify blockchain development with Tatum — estimate fees, track portfolios, and manage real-time webhook subscriptions across multiple chains. |
 | [Tenderly (Ethereum Dev Platform)](../mcps/tenderly-ethereum-dev-platform.md) | Simulate Ethereum transactions, create Virtual TestNets, and monitor on-chain events directly from your AI agent. |
+| [Test Assertion Density Calculator](../mcps/test-assertion-density-calculator.md) | Measure the ratio of test assertions to test cases to identify ineffective or empty test scaffolding. |
 | [Testim](../mcps/testim.md) | Trigger automated AI tests, inspect execution logs, and manage branches natively via your AI agent. |
 | [TestLink](../mcps/testlink.md) | Navigate your self-hosted TestLink instance to inspect test plans, suites, cases, and builds natively via your AI agent. |
 | [TestMonitor](../mcps/testmonitor.md) | List QA projects, extract test runs, read user assignments, and fetch tracked issues strictly from your AI chat. |
@@ -482,6 +500,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Togai (Usage Metering & Pricing)](../mcps/togai-usage-metering-pricing.md) | Automate usage-based billing and metering — ingest events, manage customers, and track entitlements directly from your AI agent. |
 | [TOML Parser Engine](../mcps/toml-parser-engine.md) | Convert TOML config files to JSON and back. Essential for Rust (Cargo.toml), Python (pyproject.toml), and Cloudflare (wrangler.toml). |
 | [ToolJet](../mcps/tooljet.md) | Manage ToolJet databases and trigger workflows directly from your AI agent—query tables, insert data, and automate processes. |
+| [Transactional File Write Simulator](../mcps/transactional-file-write-simulator.md) | Simulates atomic file writes with rollback capabilities to prevent corruption. |
 | [Transifex](../mcps/transifex.md) | Localize your projects efficiently using AI Agents with the official Transifex integration. |
 | [Transloadit](../mcps/transloadit-alternative.md) | Versatile file uploading and processing API. |
 | [Transloadit](../mcps/transloadit.md) | Manage your media processing pipelines, encode videos, resize images, and oversee your file cloud instantly via an AI agent. |

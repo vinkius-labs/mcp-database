@@ -27,6 +27,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Deterministic Cron Schedule Engine](../mcps/deterministic-cron-schedule-engine.md) | Equip your AI with precise cron job parsing. Deterministically translate cron to natural language, format schedules, and calculate exact next execution times. |
 | [Dimensional Weight Calculator](../mcps/dimensional-weight-calculator.md) | Calculate dimensional weights, billable weight, and shipping weight discrepancies for major global carriers. |
 | [Exposure Triangle Calculator](../mcps/exposure-triangle-calculator.md) | Calculate missing exposure parameters, ND filter compensation, and film reciprocity corrections. |
+| [File Encoding & BOM Normalizer](../mcps/file-encoding-bom-normalizer.md) | Detects and removes Byte Order Marks (BOM) and normalizes file encodings and line endings to a standard UTF-8 LF format. |
 | [Flash Power Calculator](../mcps/flash-power-calculator.md) | Calculate aperture, flash power levels, and motion freeze potential. |
 | [Fraction Exact Calculator](../mcps/fraction-exact-calculator.md) | Perform exact rational number arithmetic, continued fraction analysis, and decimal expansion without floating-point errors. |
 | [Frequency & Note Converter](../mcps/frequency-note-converter.md) | Convert between musical frequencies and notes with precision. |
@@ -47,6 +48,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Roman Numeral Engine](../mcps/roman-numeral-engine.md) | Convert between Arabic integers and Roman numerals with support for large-scale values using vinculum notation. |
 | [RPM & Speed Gear Calculator](../mcps/rpm-speed-gear-calculator.md) | Calculate engine RPM at specific vehicle speeds or predict speed from a given RPM. |
 | [Running Pace Converter](../mcps/running-pace-converter.md) | Convert running paces, predict race times using Riegel formula, and generate training zones. |
+| [SemVer Compatibility Checker](../mcps/semver-compatibility-checker.md) | Verify if a target version satisfies a semantic versioning constraint and detect breaking changes. |
 | [Shower Water Calculator](../mcps/shower-water-calculator.md) | Calculate water usage, costs, and carbon emissions for showers. |
 | [String Tension Calculator](../mcps/string-tension-calculator.md) | Calculate string tension, instrument total tension, and gauge requirements for musicians. |
 | [Temperature Converter for Cooking](../mcps/temperature-converter-for-cooking.md) | Convert oven temperatures between Celsius, Fahrenheit, and the European Gas scale with heat intensity classification. |

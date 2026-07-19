@@ -7,6 +7,7 @@ Explore the open database of **web-development** Model Context Protocol (MCP) se
 | [Alt-Text Accessibility Checker](../mcps/alt-text-accessibility-checker.md) | Validate image alt-text against WCAG standards for length, redundancy, and descriptiveness. |
 | [Canonical Checker](../mcps/canonical-checker.md) | Identify the authoritative URL version and detect SEO duplicate content risks. |
 | [Heading Structure Validator](../mcps/heading-structure-validator.md) | Validates HTML heading hierarchy, keyword presence, and semantic density. |
+| [HTTP Endpoint Collision Detector](../mcps/http-endpoint-collision-detector.md) | Detect overlapping or conflicting HTTP route definitions in your codebase. |
 | [Redirect Chain Analyzer](../mcps/redirect-chain-analyzer.md) | Analyze URL redirect sequences to calculate PageRank decay and identify optimization opportunities. |
 | [URL Structure Analyzer](../mcps/url-structure-analyzer.md) | Evaluate web URLs for SEO health, analyzing path depth, keyword relevance, and parameter noise. |
 | [WCAG Contrast Checker](../mcps/wcag-contrast-checker.md) | Evaluate color contrast compliance against WCAG 2.1 and WCAG 3.0 (APCA) standards. |

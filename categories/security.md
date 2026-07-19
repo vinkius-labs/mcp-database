@@ -6,15 +6,23 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [4399 Open Platform](../mcps/4399-open-platform.md) | Manage 4399 Open Platform game distribution — validate logins, query orders, and handle leaderboards directly from any AI agent. |
 | [Bcrypt Hash Engine](../mcps/bcrypt-hash-engine.md) | Hash and verify passwords with the industry-standard bcrypt algorithm. Two tools in one: hash with configurable salt rounds, and verify against stored hashes. Pure JS — zero compilation. |
+| [CI/CD Pipeline Config Validator](../mcps/cicd-pipeline-config-validator.md) | Deterministic validator for GitHub Actions and GitLab CI configuration files. |
 | [Crypto Hash Engine](../mcps/crypto-hash-engine.md) | Sign API requests and Webhooks deterministically. Instantly generate mathematical HMAC, SHA-256, or MD5 hashes without AI hallucinations. |
 | [Crypto Random String](../mcps/crypto-random-string.md) | Generate cryptographically secure random strings for API keys, tokens, and invite codes using Node.js crypto.randomBytes(). |
+| [Cryptographic Action Attestor](../mcps/cryptographic-action-attestor.md) | Creates a tamper-proof audit trail of every agent action using SHA-256 hashing. |
+| [Env Variable Config Validator](../mcps/env-variable-config-validator.md) | Validate .env files for structural integrity, type accuracy, and security hygiene. |
+| [Environment Variable Usage Auditor](../mcps/environment-variable-usage-auditor.md) | Cross-references environment variable usage against declaration files to find missing or unused keys. |
+| [Filesystem Sandbox Boundary Enforcer](../mcps/filesystem-sandbox-boundary-enforcer.md) | Enforces strict path boundaries and prevents traversal attacks. |
 | [Geetest](../mcps/geetest.md) | The ultimate anti-bot CAPTCHA API — validate users, detect bots, and protect your forms with Geetest v4. |
 | [GraphQL Query Complexity Analyzer](../mcps/graphql-query-complexity-analyzer.md) | Analyze GraphQL queries for structural complexity, depth, and token count. |
 | [Hash Checksum Calculator](../mcps/hash-checksum-calculator.md) | Generate, compare, and validate cryptographic and non-cryptographic hashes like MD5, SHA-256, and CRC32. |
 | [JWT Decoder & Validator](../mcps/jwt-decoder-validator.md) | Decode JWT segments and verify cryptographic signatures and temporal claims. |
+| [License Compatibility Checker](../mcps/license-compatibility-checker.md) | Audit software licenses and check compatibility between dependencies. |
+| [Password Entropy Calculator](../mcps/password-entropy-calculator.md) | Calculate password entropy, identify pattern risks, and verify security policy compliance. |
 | [Prompt Injection Pattern Scanner](../mcps/prompt-injection-pattern-scanner.md) | Scans user-supplied text for structural patterns associated with prompt-injection attempts. |
 | [Prompt Injection Shield Prover](../mcps/prompt-injection-shield-prover.md) | LLMs cannot distinguish system instructions from user input. This tool forces 5-layer injection defense analysis: intent isolation, privilege containment, indirect vector scanning, output sanitization, and scope enforcement. OWASP LLM Top 10 #1 compliance. |
 | [SBOM Dependency Risk Scorer](../mcps/sbom-dependency-risk-scorer.md) | Analyze SBOM files to quantify supply chain risk through dependency structure, package staleness, and vulnerability exposure. |
+| [Tool Output Entropy Sanitizer](../mcps/tool-output-entropy-sanitizer.md) | Detects and redacts high-entropy strings like API keys from tool outputs. |
 | [Twitter Mention Spam and Cluster Checker](../mcps/twitter-mention-spam-and-cluster-checker.md) | Detects @-mention clustering and structural spam patterns to prevent shadowbans. |
 | [Webhook Payload Signature Validator](../mcps/webhook-payload-signature-validator.md) | Validate inbound webhook authenticity using HMAC signature verification and timestamp freshness checks. |
 
