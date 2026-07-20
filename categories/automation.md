@@ -16,6 +16,7 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | [Regex from Examples](../mcps/regex-from-examples.md) | Generate ranked regular expression candidates from input and extraction pairs. |
 | [Robots.txt Generator](../mcps/robotstxt-generator.md) | Generate syntactically valid robots.txt files by configuring user-agent rules, crawl delays, and sitemap URLs. |
 | [Schedule Interruption Handler](../mcps/schedule-interruption-handler.md) | Adjust medical or procedural schedules based on missed doses and interruptions. |
+| [Semantic Version Compatibility Checker](../mcps/semantic-version-compatibility-checker.md) | Verify if a target version satisfies semver constraints and identify breaking changes. |
 | [Subtitle Readability Pacer](../mcps/subtitle-readability-pacer.md) | Calculate optimal subtitle block distribution and timing based on speaking rate. |
 | [Video Timeline Packer](../mcps/video-timeline-packer.md) | Precisely adjust video clip durations through trimming and speeding up to fit a target timeline duration. |
 | [VIP Proximity Placer](../mcps/vip-proximity-placer.md) | Automated event seating engine that prioritizes VIP constraints before distributing general attendees. |

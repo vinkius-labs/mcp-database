@@ -21,6 +21,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Prime Number Engine](../mcps/prime-number-engine.md) | Advanced computational engine for primality testing, integer factorization, and prime distribution analysis. |
 | [Stretch Factor Calculator](../mcps/stretch-factor-calculator.md) | Calculate exact pixel stretching, aspect ratio matching, and pixel footprint when scaling resolutions. |
 | [Time Signature Calculator](../mcps/time-signature-calculator.md) | Calculate measure duration, rhythmic feeling, and polyrhythms for any time signature. |
+| [Vector Similarity Threshold Enforcer](../mcps/vector-similarity-threshold-enforcer.md) | Compute exact vector similarity scores and enforce strict relevance thresholds for RAG pipelines. |
 | [Waveform Generator](../mcps/waveform-generator.md) | Generate high-fidelity digital audio waveforms and noise profiles. |
 
 

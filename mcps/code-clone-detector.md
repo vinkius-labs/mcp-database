@@ -7,16 +7,16 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Identifies duplicate or highly similar code blocks within a project using AST normalization and deterministic hashing.
+Identify exact and near-duplicate code blocks within your project.
 
 ## Description
-The Code Clone Detector identifies identical and structurally similar code blocks within your codebase to prevent logic duplication. By utilizing AST Normalization, the system strips comments and whitespace while anonymizing identifiers (e.g., renaming variables to `v1`, `v2`). It uses Deterministic Hashing to find exact matches via `find_exact_clones` and calculates Levenshtein Distance for near-misses using `find_near_clones`. You can also assess technical debt with `calculate_duplication_metrics` to see the duplication percentage across your files.
+The Code Clone Detector MCP server connects AI agents to your codebase to prevent logic duplication. It uses deterministic hashing and Levenshtein distance to find `identify_exact_duplicates` and `identify_near_matches`. By stripping comments, whitespace, and anonymizing variables via `generate_normalized_signature`, it ensures that even if variable names differ, the underlying structural similarity is detected.
 
 
 ## Available Tools (3)
-- **calculate_duplication_metrics**: Provides a quantitative overview of redundancy within the analyzed files
-- **find_exact_clones**: Identifies clusters of code that are functionally and structurally identical after normalization
-- **find_near_clones**: Identifies code blocks that are structurally similar but contain slight variations
+- **generate_normalized_signature**: Provides a normalized, anonymized version of a code block
+- **identify_exact_duplicates**: Finds blocks of code that are structurally identical after normalization
+- **identify_near_matches**: Finds code blocks that are highly similar but not exact duplicates
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Code Clone Detector identifies identical and structurally similar code block
 Here are some examples of how you can interact with the **Code Clone Detector** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Find all exact code clones in these files: ['src/index.ts', 'src/utils.ts']"
+> "Find all exact duplicate code blocks in these files."
 
 **🤖 AI Agent:**
-> { "exactMatches": [ { "clusterId": "cluster-123", "occurrences": [ { "path": "src/index.ts", "lineRanges": ["10-25"] }, { "path": "src/utils.ts", "lineRanges": ["5-20"] } ] } ] }
+> I found 2 clusters of exact matches in the provided file contents.
 
 ---
 
 **👤 You:**
-> "Check for near-matches in 'src/logic.ts' with a similarity threshold of 0.8."
+> "Are there any near-matches in this code with a similarity of at least 0.9?"
 
 **🤖 AI Agent:**
-> { "nearMatches": [ { "originalFile": "src/logic.ts", "cloneFile": "src/helper.ts", "similarityScore": 0.85 } ] }
+> No near-matches were found above the 0.9 threshold.
 
 ---
 
 **👤 You:**
-> "What is the duplication percentage for the files in 'src/components/'?"
+> "Show me the normalized signature for this function."
 
 **🤖 AI Agent:**
-> { "duplicationPercentage": 12.5, "totalLinesAnalyzed": 1500, "redundantLinesDetected": 187.5 }
+> $v_1 = $v_2 + 1
 
 
 ## ❓ FAQ
 
-**Q: How does the tool identify exact duplicates?**
-The `find_exact_clones` tool uses AST Normalization to strip non-functional elements and then applies Deterministic Hashing to identify identical subtrees.
+**Q: How does the tool detect duplicates?**
+It uses `identify_exact_duplicates` to find identical structures via hashing and `identify_near_matches` for similar blocks using Levenshtein distance.
 
-**Q: Can I detect code that is similar but not identical?**
-Yes, the `find_near_clones` tool calculates the Levenshtein Distance between normalized code strings to find pairs with high structural similarity.
+**Q: Can I see the normalized version of my code?**
+Yes, you can use the `generate_normalized_signature` tool to see how your code looks after stripping comments and renaming variables.
 
-**Q: What metrics does the system provide?**
-Using `calculate_duplication_metrics`, you can obtain the duplication percentage, total lines analyzed, and the number of redundant lines detected.
+**Q: What is the similarity threshold?**
+The default threshold for `identify_near_matches` is 0.8, but you can adjust it between 0 and 1.
 
 
 ## Installation & Usage

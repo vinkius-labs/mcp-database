@@ -86,7 +86,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Cockpit (Self-hosted Headless CMS API)](../mcps/cockpit-self-hosted-headless-cms-api.md) | Manage your self-hosted Cockpit CMS content, assets, and menus directly from any AI agent. |
 | [Codacy](../mcps/codacy.md) | Manage code quality and automated reviews via Codacy — track grades, monitor issues, and audit repository analysis directly from any AI agent. |
 | [Code Climate](../mcps/code-climate.md) | Manage code quality and engineering metrics via Code Climate — track repository grades, monitor snapshots, and audit test coverage directly from any AI agent. |
-| [Code Clone Detector](../mcps/code-clone-detector.md) | Identifies duplicate or highly similar code blocks within a project using AST normalization and deterministic hashing. |
+| [Code Clone Detector](../mcps/code-clone-detector.md) | Identify exact and near-duplicate code blocks within your project. |
 | [Codecov](../mcps/codecov.md) | Manage test coverage and engineering metrics via Codecov — track coverage reports, monitor commit totals, and audit code quality directly from any AI agent. |
 | [Codemagic](../mcps/codemagic.md) | Automate mobile CI/CD workflows — trigger builds, manage artifacts, and update environment variables directly from your AI agent. |
 | [CoderPad](../mcps/coderpad.md) | Manage technical interviews and assessments via CoderPad — create pads, track interview events, and audit the question bank directly from any AI agent. |
@@ -96,6 +96,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Color Converter Engine](../mcps/color-converter-engine.md) | Convert any color between HEX, RGB, HSL, and CMYK with mathematical precision. The AI guesses color codes — this engine knows them. |
 | [Color Converter Engine](../mcps/color-converter-engine-alternative.md) | Convert any color between HEX, RGB, HSL, and CMYK with mathematical precision. The AI guesses color codes — this engine knows them. |
 | [CometAPI](../mcps/cometapi.md) | Connect to real-time financial market data with APIs for stocks, forex, and crypto that power trading applications. |
+| [Concurrent File Locking Simulator](../mcps/concurrent-file-locking-simulator.md) | Prevents race conditions in multi-agent environments by managing advisory file locks. |
 | [Conduit](../mcps/conduit.md) | Equip your AI agent to observe data streams, manage integration pipelines, and monitor nodes on the Conduit platform. |
 | [Conflux](../mcps/conflux.md) | Query Conflux Network (Core & eSpace) data — check balances, inspect blocks, and track transactions directly from your AI agent. |
 | [Confusion Matrix Engine](../mcps/confusion-matrix-engine.md) | Deterministically calculate True Positives, FP, Precision, Recall, F1-Score, and Accuracy local. Stop LLM hallucinations when evaluating model metrics. |
@@ -362,6 +363,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [OneAI](../mcps/oneai.md) | Analyze text and media with OneAI Language Skills—summarize, extract entities, and transcribe audio directly through your AI agent. |
 | [OneSky (App & Web Localization API)](../mcps/onesky-app-web-localization-api.md) | Automate app and web localization via OneSky — manage project groups, track translation progress, and handle projects directly from your AI agent. |
 | [Open5e](../mcps/open5e.md) | Access the comprehensive Open5e database for D&D 5th Edition — search monsters, spells, classes, and magic items directly from your AI agent. |
+| [OpenAPI Context Window Packer](../mcps/openapi-context-window-packer.md) | Prune massive OpenAPI specs to fit within LLM context windows. |
 | [OpenAPI Spec Validator](../mcps/openapi-spec-validator.md) | Validate OpenAPI 3.x documents for structural compliance, orphaned components, and path parameter consistency. |
 | [OpenAPI Validator Engine](../mcps/openapi-validator-engine.md) | Validate any OpenAPI or Swagger spec (2.0, 3.0, 3.1, 3.2) local before generating code from it. Returns version, validity, and every schema error with exact paths. Your spec quality gate. |
 | [OpenCage](../mcps/opencage.md) | Geocode addresses and reverse-geocode coordinates via OpenCage — convert locations to lat/lng and back with country, language, and privacy filters from any AI agent. |
@@ -490,7 +492,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Targetprocess](../mcps/targetprocess.md) | Connect your AI to Apptio Targetprocess. Agile portfolio management natively from the terminal: track user stories, active bugs, and sprint iterations seamlessly. |
 | [Tatum (Blockchain Infra)](../mcps/tatum-blockchain-infra.md) | Simplify blockchain development with Tatum — estimate fees, track portfolios, and manage real-time webhook subscriptions across multiple chains. |
 | [Tenderly (Ethereum Dev Platform)](../mcps/tenderly-ethereum-dev-platform.md) | Simulate Ethereum transactions, create Virtual TestNets, and monitor on-chain events directly from your AI agent. |
-| [Test Assertion Density Calculator](../mcps/test-assertion-density-calculator.md) | Measure the ratio of test assertions to test cases to identify ineffective or empty test scaffolding. |
+| [Test Assertion Density Calculator](../mcps/test-assertion-density-calculator.md) | Detects empty or ineffective test scaffolding by calculating the ratio of assertions to test blocks. |
 | [Testim](../mcps/testim.md) | Trigger automated AI tests, inspect execution logs, and manage branches natively via your AI agent. |
 | [TestLink](../mcps/testlink.md) | Navigate your self-hosted TestLink instance to inspect test plans, suites, cases, and builds natively via your AI agent. |
 | [TestMonitor](../mcps/testmonitor.md) | List QA projects, extract test runs, read user assignments, and fetch tracked issues strictly from your AI chat. |

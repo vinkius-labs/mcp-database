@@ -7,16 +7,16 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Measure the ratio of test assertions to test cases to identify ineffective or empty test scaffolding.
+Detects empty or ineffective test scaffolding by calculating the ratio of assertions to test blocks.
 
 ## Description
-The Test Assertion Density Calculator is a specialized tool designed to improve test suite reliability. It analyzes source code files to calculate the mathematical relationship between test blocks (like `it`, `test`, or `decribe`) and assertion calls (such as `expect`, `assert`, or `should`). By identifying 'empty' tests that execute without verifying any behavior, it helps developers prevent the growth of ineffective test scaffolding. Use `calculate_assertion_metrics` to quantify density and `summarize_empty_test_locations` to find specific gaps in your coverage.
+This MCP server provides a way to identify 'hollow' tests in JavaScript and TypeScript suites. By analyzing file content, it uses `calculate_test_metrics` to quantify the density of assertions within test blocks like `it`, `test`, or `describe`. It can also use `find_empty_tests` to pinpoint specific lines where assertion-less code exists, and `assess_density_health` to compare your current metrics against industry standards. This helps prevent false confidence in test coverage caused by empty scaffolding.
 
 
 ## Available Tools (3)
-- **get_standard_threshold_presets**: Allows users to select from predefined density standards
-- **summarize_empty_test_locations**: Provides a human-readable report of where test cases are currently failing to provide coverage
-- **calculate_assertion_metrics**: Quantifies the relationship between tests and assertions within specific source code files
+- **assess_density_health**: Evaluates the overall "health" or quality of a test file by comparing its density against predefined industry standards
+- **calculate_test_metrics**: Quantifies the number of tests, assertions, and the resulting density ratio within a specific file
+- **find_empty_tests**: Specifically isolates and locates only the segments of code that represent ineffective, assertion-less tests
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Test Assertion Density Calculator is a specialized tool designed to improve 
 Here are some examples of how you can interact with the **Test Assertion Density Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Analyze this test file for assertion density: 'test("math", () => { expect(1+1).toBe(2); });'"
+> "Analyze this test file for assertion density: `it('works', () => { expect(true).toBe(true); });`"
 
 **🤖 AI Agent:**
-> The analysis shows a total of 1 test case and 1 assertion, resulting in an assertion density of 1.0.
+> The analysis shows a total of 1 test and 1 assertion, resulting in an assertion density of 1.0.
 
 ---
 
 **👤 You:**
-> "Check if my tests are empty using this content: 'it("empty test", () => { });'"
+> "Find all empty tests in this code: `test('empty', () => {});`"
 
 **🤖 AI Agent:**
-> The tool identified 1 empty test case at line 1 with zero assertions.
+> One empty test was located at line 1.
 
 ---
 
 **👤 You:**
-> "What are the standard density presets available?"
+> "Is my test file healthy? Content: `it('test', () => { expect(1).toBe(1); });`"
 
 **🤖 AI Agent:**
-> The available presets are: strict, balanced, and loose.
+> The current density is 1.0, which falls into the Standard range.
 
 
 ## ❓ FAQ
 
-**Q: What is assertion density?**
-Assertion density is the ratio of the number of assertions to the number of test cases. A higher density indicates more thorough verification.
+**Q: How does the tool identify empty tests?**
+The tool uses deterministic regex to find test blocks (`it`, `test`, `dscribe`) and checks if they contain any assertion keywords like `expect`, `assert`, or `should`.
 
-**Q: How can I find empty tests in my suite?**
-You can use the `summarize_empty_test_locations` tool after running `calculate_assertion_metrics` to get a report of specific line numbers where tests lack assertions.
+**Q: What is a good assertion density?**
+A density of 2.0 or higher is considered robust, while anything below 0.5 indicates a high probability of ineffective test structures.
 
-**Q: What is the default density threshold?**
-The default minimum density threshold is 1.0 assertion per test case.
+**Q: Can I use this with Vitest or Jest?**
+Yes, as long as your test files use standard keywords like `it`, `test`, `expect`, or `assert`, the tool will accurately calculate metrics.
 
 
 ## Installation & Usage

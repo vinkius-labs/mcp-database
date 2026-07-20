@@ -18,11 +18,14 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Hash Checksum Calculator](../mcps/hash-checksum-calculator.md) | Generate, compare, and validate cryptographic and non-cryptographic hashes like MD5, SHA-256, and CRC32. |
 | [JWT Decoder & Validator](../mcps/jwt-decoder-validator.md) | Decode JWT segments and verify cryptographic signatures and temporal claims. |
 | [License Compatibility Checker](../mcps/license-compatibility-checker.md) | Audit software licenses and check compatibility between dependencies. |
+| [Outbound Network Firewall Validator](../mcps/outbound-network-firewall-validator.md) | Validates outbound network requests against allowed domains and ports to prevent data exfiltration. |
 | [Password Entropy Calculator](../mcps/password-entropy-calculator.md) | Calculate password entropy, identify pattern risks, and verify security policy compliance. |
+| [Prompt Injection Pattern Detector](../mcps/prompt-injection-pattern-detector.md) | Identify and score malicious instruction overrides and system metadata extraction attempts in user text. |
 | [Prompt Injection Pattern Scanner](../mcps/prompt-injection-pattern-scanner.md) | Scans user-supplied text for structural patterns associated with prompt-injection attempts. |
 | [Prompt Injection Shield Prover](../mcps/prompt-injection-shield-prover.md) | LLMs cannot distinguish system instructions from user input. This tool forces 5-layer injection defense analysis: intent isolation, privilege containment, indirect vector scanning, output sanitization, and scope enforcement. OWASP LLM Top 10 #1 compliance. |
 | [Resource Usage Leak Detector](../mcps/resource-usage-leak-detector.md) | Monitor agent resource consumption to detect file descriptor or connection leaks. |
 | [SBOM Dependency Risk Scorer](../mcps/sbom-dependency-risk-scorer.md) | Analyze SBOM files to quantify supply chain risk through dependency structure, package staleness, and vulnerability exposure. |
+| [SQL Migration Safety Analyzer](../mcps/sql-migration-safety-analyzer.md) | Validate SQL migrations for structural risks, rollback integrity, and unbounded deletions. |
 | [Tool Output Entropy Sanitizer](../mcps/tool-output-entropy-sanitizer.md) | Detects and redacts high-entropy strings like API keys from tool outputs. |
 | [Twitter Mention Spam and Cluster Checker](../mcps/twitter-mention-spam-and-cluster-checker.md) | Detects @-mention clustering and structural spam patterns to prevent shadowbans. |
 | [Unicode Normalization and Homoglyph Detector](../mcps/unicode-normalization-and-homoglyph-detector.md) | Detects malicious Unicode homoglyph attacks and identifies invisible characters in strings. |
