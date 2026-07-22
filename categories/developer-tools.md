@@ -272,6 +272,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [JSONBin.io](../mcps/jsonbinio.md) | Store, manage, and retrieve JSON data effortlessly. Create bins, manage collections, and handle large datasets directly from your AI agent. |
 | [Juhe Data / 聚合数据](../mcps/juhe-data.md) | China's leading API aggregator — access weather, ID verification, IP lookup, and news via AI. |
 | [JWT & Base64 Decoder](../mcps/jwt-base64-decoder.md) | Stop hallucinating Base64 translations. Instantly decode complex JWT tokens into readable headers and payloads with exact expiration mathematics. |
+| [JWT Claims Validator](../mcps/jwt-claims-validator.md) | Validate JWT structure and expiration claims without signature verification. |
+| [JWT Claims Validator Alternative](../mcps/jwt-claims-validator-alternative.md) | Validate JWT structure and expiration claims without signature verification. |
 | [K-Fold Split Engine](../mcps/k-fold-split-engine.md) | Generate rigorous, leak-proof cross-validation indices for train and test splits in machine learning pipelines. |
 | [K-Means Cluster Engine](../mcps/k-means-cluster-engine.md) | Group complex data points into optimal clusters with deterministic, high-speed Euclidean K-Means classification. |
 | [Kameleoon](../mcps/kameleoon.md) | Manage A/B testing, personalization, and experimentation workflows via AI agents. |

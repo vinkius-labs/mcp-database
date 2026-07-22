@@ -29,6 +29,8 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Tool Output Entropy Sanitizer](../mcps/tool-output-entropy-sanitizer.md) | Detects and redacts high-entropy strings like API keys from tool outputs. |
 | [Twitter Mention Spam and Cluster Checker](../mcps/twitter-mention-spam-and-cluster-checker.md) | Detects @-mention clustering and structural spam patterns to prevent shadowbans. |
 | [Unicode Normalization and Homoglyph Detector](../mcps/unicode-normalization-and-homoglyph-detector.md) | Detects malicious Unicode homoglyph attacks and identifies invisible characters in strings. |
+| [Webhook HMAC Signature Validator](../mcps/webhook-hmac-signature-validator.md) | Verify the authenticity of incoming webhook payloads by validating their HMAC signatures. |
+| [Webhook HMAC Signature Validator Alternative](../mcps/webhook-hmac-signature-validator-alternative.md) | Verify the authenticity of incoming webhook payloads by validating their HMAC signatures. |
 | [Webhook Payload Signature Validator](../mcps/webhook-payload-signature-validator.md) | Validate inbound webhook authenticity using HMAC signature verification and timestamp freshness checks. |
 
 
