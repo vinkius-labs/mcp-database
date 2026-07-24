@@ -208,6 +208,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Scale SERP](../mcps/scale-serp.md) | Equip your AI agent with real-time Google Search data — run organic, news, shopping, and scholar queries effortlessly. |
 | [Searchspring](../mcps/searchspring.md) | Empower your AI to search, filter, and recommend e-commerce products using the Searchspring (Athos Commerce) catalog API. |
 | [SendPulse](../mcps/sendpulse.md) | Manage email marketing and automation via SendPulse — handle mailing lists, manage contacts, and track campaigns directly from your AI agent. |
+| [Sequenzy](../mcps/sequenzy.md) | Operate permissioned lifecycle, campaign, and transactional email workflows from AI agents. |
 | [Siteimprove](../mcps/siteimprove.md) | Monitor and improve your website quality — track accessibility, SEO, content QA, and broken links across your domains with AI agents. |
 | [SleekFlow](../mcps/sleekflow.md) | Manage omnichannel customer conversations — read messages, check contacts, and send replies across WhatsApp, Instagram, and more directly from your AI agent. |
 | [Smaily](../mcps/smaily-alternative.md) | Manage email marketing campaigns, subscribers, and automations directly through Smaily. |
