@@ -5,6 +5,8 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [4399 Open Platform](../mcps/4399-open-platform.md) | Manage 4399 Open Platform game distribution — validate logins, query orders, and handle leaderboards directly from any AI agent. |
+| [Base64 Charset Normalizer](../mcps/base64-charset-normalizer.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |
+| [Base64 Charset Normalizer Alternative](../mcps/base64-charset-normalizer-alternative.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |
 | [Bcrypt Hash Engine](../mcps/bcrypt-hash-engine.md) | Hash and verify passwords with the industry-standard bcrypt algorithm. Two tools in one: hash with configurable salt rounds, and verify against stored hashes. Pure JS — zero compilation. |
 | [CI/CD Pipeline Config Validator](../mcps/cicd-pipeline-config-validator.md) | Deterministic validator for GitHub Actions and GitLab CI configuration files. |
 | [Crypto Hash Engine](../mcps/crypto-hash-engine.md) | Sign API requests and Webhooks deterministically. Instantly generate mathematical HMAC, SHA-256, or MD5 hashes without AI hallucinations. |

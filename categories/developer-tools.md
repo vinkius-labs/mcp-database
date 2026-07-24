@@ -240,6 +240,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Honeybadger (Error Tracking)](../mcps/honeybadger-error-tracking.md) | Monitor app exceptions and uptime via Honeybadger — list projects, resolve faults, and track deployments. |
 | [Hookdeck](../mcps/hookdeck.md) | Manage and monitor webhooks with Hookdeck — list connections, create sources, and control event routing directly from your AI agent. |
 | [Hookdeck (Webhook Gateway)](../mcps/hookdeck-webhook-gateway.md) | Manage your webhook infrastructure via Hookdeck — monitor connections, route events, and control sources directly from any AI agent. |
+| [HTML DOM Path Generator](../mcps/html-dom-path-generator.md) | Generate robust, deterministic CSS selectors from HTML snippets to prevent brittle web scraping. |
+| [HTML DOM Path Generator Alternative](../mcps/html-dom-path-generator-alternative.md) | Generate robust, deterministic CSS selectors from HTML snippets to prevent brittle web scraping. |
 | [HTMLCSSToImage](../mcps/htmlcsstoimage.md) | Generate high-quality images and PDFs from HTML/CSS or URLs directly from your AI agent. |
 | [Huddle01 (Web3 Video API)](../mcps/huddle01-web3-video-api.md) | Build and manage Web3 video meetings with Huddle01 — create rooms, track live sessions, and retrieve meeting recordings directly from your AI agent. |
 | [Hudu](../mcps/hudu-alternative.md) | Document your IT infrastructure with password vaults, knowledge bases, and asset tracking built for managed service providers. |
@@ -247,6 +249,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Hygraph (Headless CMS)](../mcps/hygraph-headless-cms.md) | Manage headless content via Hygraph — execute GraphQL queries, introspect schemas, and manage documents. |
 | [i18n Hardcoded String Detector](../mcps/i18n-hardcoded-string-detector.md) | An AST-powered auditing tool that identifies un-internationalized text literals in source code by cross-referencing them against translation dictionary keys. |
 | [IBAN Bank Validator](../mcps/iban-bank-validator.md) | Validate international bank accounts instantly using Modulus 97 checksums. Prevent failed transactions with 100% local precision. |
+| [ICU MessageFormat Validator](../mcps/icu-messageformat-validator.md) | A deterministic validator for ICU MessageFormat strings to prevent i18n breakage from unbalanced braces or incorrect syntax. |
+| [ICU MessageFormat Validator Alternative](../mcps/icu-messageformat-validator-alternative.md) | A deterministic validator for ICU MessageFormat strings to prevent i18n breakage from unbalanced braces or incorrect syntax. |
 | [ImageKit (Media Optimization & DAM)](../mcps/imagekit-media-optimization-dam.md) | Manage and optimize media via ImageKit — list files, purge CDN cache, and audit image metadata. |
 | [imgix (Real-time Image Processing)](../mcps/imgix-real-time-image-processing.md) | Optimize and transform images via imgix — manage CDN sources, purge assets, and monitor origin connections. |
 | [Immutable X](../mcps/immutable-x.md) | Interact with the Immutable blockchain — list activities, manage NFT collections, mint assets, and handle orderbook listings directly from your AI agent. |
