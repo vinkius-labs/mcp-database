@@ -117,6 +117,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Crafter CMS](../mcps/crafter-cms.md) | Manage headless content via Crafter CMS — execute GraphQL queries, write Git-based XML content, and publish to delivery engines directly from any AI agent. |
 | [CrafterCMS](../mcps/craftercms.md) | Manage and query content from CrafterCMS — fetch pages, components, and trees, execute GraphQL/OpenSearch queries, and manage engine cache directly from your AI agent. |
 | [Cron Expression Engine](../mcps/cron-expression-engine.md) | Parse, validate, convert, and generate cron expressions across multiple standards. |
+| [Cron Expression Validator](../mcps/cron-expression-validator.md) | Validate and calculate next execution times for standard and extended cron expressions. |
+| [Cron Expression Validator Alternative](../mcps/cron-expression-validator-alternative.md) | Validate and calculate next execution times for standard and extended cron expressions. |
 | [Cronitor (Cron Monitoring)](../mcps/cronitor-cron-monitoring.md) | Monitor cron jobs, heartbeats, and websites. Track performance, receive alerts, and manage uptime directly from your AI agent. |
 | [Cronoscan (Cronos Block Explorer)](../mcps/cronoscan-cronos-block-explorer.md) | Access Cronos blockchain data — check CRO balances, track transactions, inspect smart contracts, and monitor token transfers directly via AI. |
 | [Crowdin](../mcps/crowdin.md) | Equip your AI agent to manage localization projects, files, and translations directly via the Crowdin API. |
@@ -161,6 +163,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Dogechain Explorer (Dogechain Block Explorer API)](../mcps/dogechain-explorer-dogechain-block-explorer-api.md) | Automate Dogecoin blockchain analysis via Dogechain — check address balances, inspect transactions, and query block data directly from any AI agent. |
 | [Dopplio](../mcps/dopplio.md) | Send personalized video messages at scale that use AI to customize each clip for the recipient and boost response rates. |
 | [Dot Object Transformer](../mcps/dot-object-transformer.md) | Flatten deeply nested JSON objects into dot-notation keys, or reconstruct nested objects from flat dictionaries. |
+| [Dot-Notation Object Flattener](../mcps/dot-notation-object-flattener.md) | Convert deeply nested JSON objects into flat structures using dot-separated keys. |
 | [DummyImage](../mcps/dummyimage.md) | Generate dynamic placeholder images for web development and design directly from your AI agent. |
 | [DummyJSON](../mcps/dummyjson.md) | Access a comprehensive suite of dummy data for testing and prototyping — products, carts, and user authentication directly from your AI agent. |
 | [Duo Security (Two-Factor Authentication API)](../mcps/duo-security-two-factor-authentication-api.md) | Manage Duo Security users, trigger 2FA authentication, and handle account administration directly from any AI agent. |
@@ -412,6 +415,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Privy](../mcps/privy.md) | Manage users and wallets via Privy — create users, search profiles, and manage embedded wallets directly from any AI agent. |
 | [Product Hunt](../mcps/product-hunt-alternative-1.md) | Access Product Hunt data directly — browse daily posts, execute custom GraphQL queries, and manage your viewer profile via AI. |
 | [PropelAuth (B2B Authentication)](../mcps/propelauth-b2b-authentication.md) | Manage B2B authentication, users, and organizations via PropelAuth — handle user provisioning, org management, and API keys directly from your AI agent. |
+| [Protobuf to JSON Schema Transpiler](../mcps/protobuf-to-json-schema-transpiler.md) | Convert Protocol Buffer (.proto) definitions into valid JSON Schema objects deterministically. |
 | [Prowlarr (Indexers)](../mcps/prowlarr-indexers.md) | Manage Prowlarr indexers—list, add, test, and monitor health status of your Usenet and Torrent indexers directly from your AI agent. |
 | [Public Suffix Extractor](../mcps/public-suffix-extractor.md) | Extract the true root domain, TLD, and subdomain from any URL using the official Mozilla Public Suffix List. |
 | [Punk](../mcps/punk.md) | Explore the BrewDog beer catalog — search by ingredients, food pairings, and technical specs like ABV or IBU. |
@@ -429,6 +433,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Rapid URL Indexer](../mcps/rapid-url-indexer.md) | Fast URL indexing and SEO tools. |
 | [Rarible (Multi-chain NFT Protocol)](../mcps/rarible-multi-chain-nft-protocol.md) | Access multi-chain NFT data — query items, collections, activities, and market statistics across Ethereum, Polygon, and more via Rarible. |
 | [Raygun](../mcps/raygun.md) | Monitor application health, track deployments, and manage crash reports and RUM sessions directly from your AI agent. |
+| [React Server Action Route Mapper](../mcps/react-server-action-route-mapper.md) | Extracts Next.js Server Actions and maps them to deterministic API routes. |
 | [ReadMe](../mcps/readme.md) | Equip your AI to directly search, read, and manage developer documentation stored in your ReadMe project. |
 | [Redox](../mcps/redox.md) | Connect to the Redox healthcare API to search patients, retrieve clinical conditions, and write back observations directly from your AI agent. |
 | [Regex Explainer Stepper](../mcps/regex-explainer-stepper.md) | Decompose complex regular expressions into a step-by-step AST walkthrough and perform safety audits. |

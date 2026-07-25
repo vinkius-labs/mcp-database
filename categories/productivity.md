@@ -455,6 +455,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Hurma](../mcps/hurma.md) | Manage your HR processes with employee records, leave tracking, and performance reviews designed for growing teams. |
 | [Hypertrophy Rep Range Calculator](../mcps/hypertrophy-rep-range-calculator.md) | Track and optimize muscle hypertrophy by monitoring training volume, RIR targets, and effective stimulus. |
 | [iCal Calendar Parser](../mcps/ical-calendar-parser.md) | Parse exported .ics calendar files from Google Calendar, Apple Calendar, or Outlook local. Let your AI find free slots, count meetings, and manage your schedule. |
+| [iCalendar RRULE Iterator](../mcps/icalendar-rrule-iterator.md) | Expand iCalendar recurrence rules into exact, deterministic event sequences. |
 | [Ideanote](../mcps/ideanote.md) | Manage ideas, missions, and innovation workspaces via Ideanote API. |
 | [idloom](../mcps/idloom.md) | Manage events, attendees, and invoices via idloom.events API. |
 | [IgnitePOST](../mcps/ignitepost.md) | Manage hand-written note orders and outreach campaigns via IgnitePOST API. |

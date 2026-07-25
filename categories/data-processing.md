@@ -6,6 +6,8 @@ Explore the open database of **data-processing** Model Context Protocol (MCP) se
 |-----------|-------------|
 | [Markdown Semantic Chunker](../mcps/markdown-semantic-chunker.md) | A deterministic engine for splitting Markdown text into semantically coherent chunks based on header hierarchy and paragraph boundaries. |
 | [Markdown Semantic Chunker Alternative](../mcps/markdown-semantic-chunker-alternative.md) | A deterministic engine for splitting Markdown text into semantically coherent chunks based on header hierarchy and paragraph boundaries. |
+| [SSE Stream Reassembler](../mcps/sse-stream-reassembler.md) | Reassembles fragmented Server-Sent Events (SSE) streams into a single coherent payload. |
+| [SSE Stream Reassembler Alternative](../mcps/sse-stream-reassembler-alternative.md) | Reassembles fragmented Server-Sent Events (SSE) streams into a single coherent payload. |
 
 
 ---
