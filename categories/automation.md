@@ -5,6 +5,7 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Breadcrumb Generator](../mcps/breadcrumb-generator.md) | Automatically generates text, JSON-LD schema, and HTML breadcrumbs from URL paths. |
+| [Claude Computer Use Coordinate Normalizer](../mcps/claude-computer-use-coordinate-normalizer.md) | Transforms absolute pixel coordinates into the standardized 1024x768 viewport space for Anthropic's Computer Use API. |
 | [Conventional Commit Linter](../mcps/conventional-commit-linter.md) | Validate commit messages against Conventional Commates spec and determine SemVer impact. |
 | [Count Words for Agents](../mcps/context-integrity-prover.md) | Text analysis tool that counts words, characters, sentences, and paragraphs. Validates maximum length constraints so AI agents can generate text that strictly respects exact limits. |
 | [Cron Expression Parser](../mcps/cron-expression-parser.md) | Validate, interpret, and calculate execution schedules from cron expressions. |
@@ -12,11 +13,14 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | [Git Atomic Operations Validator](../mcps/git-atomic-operations-validator.md) | Prevent destructive Git operations and enforce commit standards. |
 | [Git Branch Naming Linter](../mcps/git-branch-naming-linter.md) | Validates git branch names against specific naming conventions and structural patterns. |
 | [Hreflang Generator](../mcps/hreflang-generator.md) | Generate and validate SEO-compliant HTML hreflang tags and XML sitemap entries for multi-regional websites. |
+| [JSONPath Query Executor](../mcps/jsonpath-query-executor.md) | Execute deterministic JSONPath queries against any JSON data. |
 | [Kid Table Auto-Detector](../mcps/kid-table-auto-detector.md) | Automatically isolates children and links their parents to adjacent tables for supervision. |
+| [Postgres Migration Dependency Resolver](../mcps/postgres-migration-dependency-resolver.md) | Resolves the execution order of SQL migrations using graph theory to prevent deployment errors. |
 | [Regex from Examples](../mcps/regex-from-examples.md) | Generate ranked regular expression candidates from input and extraction pairs. |
 | [Robots.txt Generator](../mcps/robotstxt-generator.md) | Generate syntactically valid robots.txt files by configuring user-agent rules, crawl delays, and sitemap URLs. |
 | [Schedule Interruption Handler](../mcps/schedule-interruption-handler.md) | Adjust medical or procedural schedules based on missed doses and interruptions. |
 | [Semantic Version Compatibility Checker](../mcps/semantic-version-compatibility-checker.md) | Verify if a target version satisfies semver constraints and identify breaking changes. |
+| [Semantic Version Constraint Solver](../mcps/semantic-version-constraint-solver.md) | Resolves complex SemVer ranges against available versions. |
 | [Subtitle Readability Pacer](../mcps/subtitle-readability-pacer.md) | Calculate optimal subtitle block distribution and timing based on speaking rate. |
 | [Video Timeline Packer](../mcps/video-timeline-packer.md) | Precisely adjust video clip durations through trimming and speeding up to fit a target timeline duration. |
 | [VIP Proximity Placer](../mcps/vip-proximity-placer.md) | Automated event seating engine that prioritizes VIP constraints before distributing general attendees. |

@@ -4,6 +4,7 @@ Explore the open database of **observability** Model Context Protocol (MCP) serv
 
 | Tool Name | Description |
 |-----------|-------------|
+| [OpenTelemetry Trace Context Extractor](../mcps/opentelemetry-trace-context-extractor.md) | Extracts W3C TraceContext fields from HTTP headers. |
 | [OpenTelemetry Trace Latency Analyzer](../mcps/opentelemetry-trace-latency-analyzer.md) | Analyze OpenTelemetry traces to identify latency bottlenecks and critical path inefficiencies. |
 | [OpenTelemetry TraceContext Validator](../mcps/opentelemetry-tracecontext-validator.md) | Validates W3C TraceContext and OpenTelemetry headers for distributed agent tracing. |
 | [OpenTelemetry TraceContext Validator Alternative](../mcps/opentelemetry-tracecontext-validator-alternative.md) | Validates W3C TraceContext and OpenTelemetry headers for distributed agent tracing. |

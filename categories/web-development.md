@@ -5,7 +5,9 @@ Explore the open database of **web-development** Model Context Protocol (MCP) se
 | Tool Name | Description |
 |-----------|-------------|
 | [Alt-Text Accessibility Checker](../mcps/alt-text-accessibility-checker.md) | Validate image alt-text against WCAG standards for length, redundancy, and descriptiveness. |
+| [Astro Server Island Detector](../mcps/astro-server-island-detector.md) | Extracts Astro Server Island directives from HTML/JSX to prevent misconfigured streaming SSR components. |
 | [Canonical Checker](../mcps/canonical-checker.md) | Identify the authoritative URL version and detect SEO duplicate content risks. |
+| [CSS Grid Template Area Validator](../mcps/css-grid-template-area-validator.md) | Validates CSS Grid template-areas strings for exact rectangularity and area integrity. |
 | [Heading Structure Validator](../mcps/heading-structure-validator.md) | Validates HTML heading hierarchy, keyword presence, and semantic density. |
 | [HTTP Endpoint Collision Detector](../mcps/http-endpoint-collision-detector.md) | Detect overlapping or conflicting HTTP route definitions in your codebase. |
 | [Redirect Chain Analyzer](../mcps/redirect-chain-analyzer.md) | Analyze URL redirect sequences to calculate PageRank decay and identify optimization opportunities. |

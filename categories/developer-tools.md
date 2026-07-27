@@ -164,6 +164,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Dopplio](../mcps/dopplio.md) | Send personalized video messages at scale that use AI to customize each clip for the recipient and boost response rates. |
 | [Dot Object Transformer](../mcps/dot-object-transformer.md) | Flatten deeply nested JSON objects into dot-notation keys, or reconstruct nested objects from flat dictionaries. |
 | [Dot-Notation Object Flattener](../mcps/dot-notation-object-flattener.md) | Convert deeply nested JSON objects into flat structures using dot-separated keys. |
+| [Drizzle Schema to TypeScript Generator](../mcps/drizzle-schema-to-typescript-generator.md) | Automatically generate exact TypeScript interfaces from Drizzle ORM schema definitions. |
 | [DummyImage](../mcps/dummyimage.md) | Generate dynamic placeholder images for web development and design directly from your AI agent. |
 | [DummyJSON](../mcps/dummyjson.md) | Access a comprehensive suite of dummy data for testing and prototyping — products, carts, and user authentication directly from your AI agent. |
 | [Duo Security (Two-Factor Authentication API)](../mcps/duo-security-two-factor-authentication-api.md) | Manage Duo Security users, trigger 2FA authentication, and handle account administration directly from any AI agent. |
@@ -222,6 +223,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Gotenberg](../mcps/gotenberg.md) | Convert URLs, HTML, and Markdown to PDF or screenshots, and manage PDF files with tools for merging, splitting, and metadata editing. |
 | [Gradient AI (LLM API & Finetuning)](../mcps/gradient-ai-llm-api-finetuning.md) | Access powerful LLMs, fine-tune models on your own data, and generate embeddings directly through your AI agent. |
 | [GraphHopper](../mcps/graphhopper.md) | Empower routing and geocoding via GraphHopper — calculate optimal routes, perform reverse geocoding, solve vehicle routing problems, and analyze reachability directly from any AI agent. |
+| [GraphQL Fragment Merger](../mcps/graphql-fragment-merger.md) | Deterministically inlines GraphQL fragments into a single query string. |
 | [Grepsr](../mcps/grepsr.md) | Automate web scraping via Grepsr — manage reports, trigger crawls, and retrieve data directly via AI. |
 | [Greptile](../mcps/greptile.md) | Search and understand any codebase instantly with AI that reads your repositories and answers technical questions accurately. |
 | [Gridscale (IaaS & PaaS Cloud Hosting API)](../mcps/gridscale-iaas-paas-cloud-hosting-api.md) | Manage your Gridscale cloud infrastructure — provision servers, monitor metrics, and control PaaS services directly from any AI agent. |
@@ -241,8 +243,10 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Hexometer](../mcps/hexometer.md) | Automate website monitoring via Hexometer — monitor uptime, performance, and health directly from any AI agent. |
 | [Highlight (Session Replay & UX)](../mcps/highlight-session-replay-ux.md) | Streamline observability by ingesting raw logs, OTLP logs, and OTLP traces directly into Highlight for session replay and UX monitoring. |
 | [Honeybadger (Error Tracking)](../mcps/honeybadger-error-tracking.md) | Monitor app exceptions and uptime via Honeybadger — list projects, resolve faults, and track deployments. |
+| [Hono Router Pattern Matcher](../mcps/hono-router-pattern-matcher.md) | Deterministic Hono-style route pattern matching for edge computing. |
 | [Hookdeck](../mcps/hookdeck.md) | Manage and monitor webhooks with Hookdeck — list connections, create sources, and control event routing directly from your AI agent. |
 | [Hookdeck (Webhook Gateway)](../mcps/hookdeck-webhook-gateway.md) | Manage your webhook infrastructure via Hookdeck — monitor connections, route events, and control sources directly from any AI agent. |
+| [HTML DOM Depth Calculator](../mcps/html-dom-depth-calculator.md) | Calculate the exact maximum nesting depth and structural integrity of HTML strings. |
 | [HTML DOM Path Generator](../mcps/html-dom-path-generator.md) | Generate robust, deterministic CSS selectors from HTML snippets to prevent brittle web scraping. |
 | [HTML DOM Path Generator Alternative](../mcps/html-dom-path-generator-alternative.md) | Generate robust, deterministic CSS selectors from HTML snippets to prevent brittle web scraping. |
 | [HTMLCSSToImage](../mcps/htmlcsstoimage.md) | Generate high-quality images and PDFs from HTML/CSS or URLs directly from your AI agent. |
@@ -273,6 +277,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Jamendo](../mcps/jamendo.md) | Search and stream music from the Jamendo catalog — find tracks, albums, and artists, and explore playlists directly from your AI agent. |
 | [Jawg Maps (Location & Routing)](../mcps/jawg-maps-location-routing.md) | Build with location data via Jawg Maps — search places, calculate routes, compute distance matrices, and get elevation data. |
 | [JigsawStack](../mcps/jigsawstack.md) | Access a suite of AI utility APIs for web scraping, translation, OCR, and sentiment analysis in one developer-friendly platform. |
+| [jmespath-query-executor](../mcps/jmespath-query-executor.md) | Deterministic JSON querying using simplified JMESPath syntax. |
 | [JSON Payload Depth and Size Limiter](../mcps/json-payload-depth-and-size-limiter.md) | Validate JSON payloads against strict nesting depth and byte size constraints to prevent parser crashes. |
 | [JSON Schema Strict Validator](../mcps/json-schema-strict-validator.md) | Perform deterministic JSON validation against Draft-07 and 2020-12 schemas with strict property enforcement. |
 | [JSON-LD SEO Compiler](../mcps/json-ld-seo-compiler.md) | Compile 100% Google-compliant JSON-LD Schema blocks. Prevent AI hallucination of invalid SEO structured data. |
@@ -281,6 +286,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [JWT & Base64 Decoder](../mcps/jwt-base64-decoder.md) | Stop hallucinating Base64 translations. Instantly decode complex JWT tokens into readable headers and payloads with exact expiration mathematics. |
 | [JWT Claims Validator](../mcps/jwt-claims-validator.md) | Validate JWT structure and expiration claims without signature verification. |
 | [JWT Claims Validator Alternative](../mcps/jwt-claims-validator-alternative.md) | Validate JWT structure and expiration claims without signature verification. |
+| [JWT Payload Extractor](../mcps/jwt-payload-extractor.md) | Extract and decode JWT payloads deterministically without cryptographic verification. |
 | [K-Fold Split Engine](../mcps/k-fold-split-engine.md) | Generate rigorous, leak-proof cross-validation indices for train and test splits in machine learning pipelines. |
 | [K-Means Cluster Engine](../mcps/k-means-cluster-engine.md) | Group complex data points into optimal clusters with deterministic, high-speed Euclidean K-Means classification. |
 | [Kameleoon](../mcps/kameleoon.md) | Manage A/B testing, personalization, and experimentation workflows via AI agents. |
@@ -380,6 +386,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [OpenFGA (Fine-Grained Auth)](../mcps/openfga-fine-grained-auth.md) | Manage fine-grained authorization with OpenFGA — create stores, define authorization models, and manage relationship tuples directly from your AI agent. |
 | [OpenReplay](../mcps/openreplay.md) | Debug web applications by inspecting user sessions, technical events, and project data directly from your AI agent. |
 | [OpenRouteService](../mcps/openrouteservice.md) | Plan routes and analyze spatial data via OpenRouteService — calculate directions, isochrones, distance matrices, VRP optimization, and geocoding from any AI agent. |
+| [Orama Hybrid Search Query Builder](../mcps/orama-hybrid-search-query-builder.md) | Generate syntactically perfect Orama search payloads with deterministic JSON structure. |
 | [Oxylabs](../mcps/oxylabs.md) | Scrape any website via Oxylabs — extract Google SERPs, Amazon products, Bing and Yandex results, or any arbitrary URL with JS rendering from any AI agent. |
 | [ParseHub](../mcps/parsehub.md) | Control advanced cloud scraping projects via ParseHub — list targets, dispatch headless runs, trace crawler status, and fetch extracted datasets directly via AI. |
 | [Particle Network](../mcps/particle-network.md) | Manage Web3 infrastructure via Particle Network — handle Account Abstraction, UserOperations, and identity management directly through AI. |
@@ -514,6 +521,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Tingyun / 听云](../mcps/tingyun.md) | Leading APM and observability platform — manage applications, alerts, and performance metrics via AI. |
 | [Togai (Usage Metering & Pricing)](../mcps/togai-usage-metering-pricing.md) | Automate usage-based billing and metering — ingest events, manage customers, and track entitlements directly from your AI agent. |
 | [TOML Parser Engine](../mcps/toml-parser-engine.md) | Convert TOML config files to JSON and back. Essential for Rust (Cargo.toml), Python (pyproject.toml), and Cloudflare (wrangler.toml). |
+| [TOML Strict Config Parser](../mcps/toml-strict-config-parser.md) | A deterministic, dependency-free parser that transforms TOML strings into structured JSON objects. |
 | [ToolJet](../mcps/tooljet.md) | Manage ToolJet databases and trigger workflows directly from your AI agent—query tables, insert data, and automate processes. |
 | [Transactional File Write Simulator](../mcps/transactional-file-write-simulator.md) | Simulates atomic file writes with rollback capabilities to prevent corruption. |
 | [Transifex](../mcps/transifex.md) | Localize your projects efficiently using AI Agents with the official Transifex integration. |
@@ -542,6 +550,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [UserStack User-Agent Lookup](../mcps/userstack-user-agent-lookup.md) | Universal User-Agent intelligence — detect devices, browsers, and OS via AI. |
 | [UUID & ULID Generator](../mcps/uuid-ulid-generator.md) | Generate and validate UUID (v1, v3, v4, v5, v7) and ULID identifiers with timestamp extraction. |
 | [UUID Generator API](../mcps/uuid-generator-api.md) | Generate unique identifiers — audit UUIDs and versions via AI. |
+| [Vercel AI SDK Stream Parser](../mcps/vercel-ai-sdk-stream-parser.md) | Deterministic parser for Vercel AI SDK 3.0 Data Stream protocol chunks. |
 | [Voyage AI (AI Embeddings API)](../mcps/voyage-ai-ai-embeddings-api.md) | Generate high-quality text, multimodal, and contextualized embeddings, plus high-precision reranking for RAG workflows. |
 | [Vultr](../mcps/vultr.md) | Manage Vultr cloud infrastructure, bare metal instances, and backups directly from your AI agent. |
 | [WCAG.com Accessibility](../mcps/wcagcom-accessibility.md) | Audit web accessibility — check compliance and guidelines via AI. |

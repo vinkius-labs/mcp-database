@@ -45,6 +45,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Pet Lifespan Estimator](../mcps/pet-lifespan-estimator.md) | Estimate pet longevity and identify life stages based on species, breed, and size. |
 | [Pet Medication Dose Splitter](../mcps/pet-medication-dose-splitter.md) | Calculate the exact number and fraction of tablets needed for pet medication dosing. |
 | [Pitch Shift Speed Ratio Calculator](../mcps/pitch-shift-speed-ratio-calculator.md) | Calculate playback speed multipliers, adjusted durations, and new BPM for pitch shifting via varispeed. |
+| [PostgreSQL Connection String Parser](../mcps/postgresql-connection-string-parser.md) | Deconstructs PostgreSQL URIs into precise connection parameters. |
 | [Rank Percentile Calculator](../mcps/rank-percentile-calculator.md) | Discover exactly what percentage of players you've surpassed in games like Valorant, League of Legends, and CS2. |
 | [Realistic Dog Age Calculator](../mcps/realistic-dog-age-calculator.md) | Convert dog years to human years using a size-dependent logarithmic aging model. |
 | [Roman Numeral Engine](../mcps/roman-numeral-engine.md) | Convert between Arabic integers and Roman numerals with support for large-scale values using vinculum notation. |
@@ -58,6 +59,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Time Difference Calculator](../mcps/time-difference-calculator.md) | Calculate exact duration between two clock times, handling midnight transitions. |
 | [Tire Size Converter](../mcps/tire-size-converter.md) | Calculate tire dimensions, speedometer error, and clearance risks. |
 | [Transport Carbon Calculator](../mcps/transport-carbon-calculator.md) | Calculate CO2 emissions for various transport modes including cars, planes, and trains. |
+| [URL Query String Deep Parser](../mcps/url-query-string-deep-parser.md) | Transforms flat URL query strings into deeply nested JSON objects and arrays. |
 | [Water Heater Comparator](../mcps/water-heater-comparator.md) | Compare the operational costs and carbon footprint of electric, gas, and solar thermal water heating systems. |
 | [Water Usage Optimizer](../mcps/water-usage-optimizer.md) | Calculate household water consumption and identify savings opportunities. |
 
