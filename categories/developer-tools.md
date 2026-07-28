@@ -378,6 +378,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [OneAI](../mcps/oneai.md) | Analyze text and media with OneAI Language Skills—summarize, extract entities, and transcribe audio directly through your AI agent. |
 | [OneSky (App & Web Localization API)](../mcps/onesky-app-web-localization-api.md) | Automate app and web localization via OneSky — manage project groups, track translation progress, and handle projects directly from your AI agent. |
 | [Open5e](../mcps/open5e.md) | Access the comprehensive Open5e database for D&D 5th Edition — search monsters, spells, classes, and magic items directly from your AI agent. |
+| [OpenAI Realtime Audio Delta Merger](../mcps/openai-realtime-audio-delta-merger.md) | Deterministically merge fragmented OpenAI Realtime API audio deltas into a single, continuous base64 string. |
 | [OpenAPI Context Window Packer](../mcps/openapi-context-window-packer.md) | Prune massive OpenAPI specs to fit within LLM context windows. |
 | [OpenAPI Spec Validator](../mcps/openapi-spec-validator.md) | Validate OpenAPI 3.x documents for structural compliance, orphaned components, and path parameter consistency. |
 | [OpenAPI Validator Engine](../mcps/openapi-validator-engine.md) | Validate any OpenAPI or Swagger spec (2.0, 3.0, 3.1, 3.2) local before generating code from it. Returns version, validity, and every schema error with exact paths. Your spec quality gate. |
@@ -489,6 +490,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Snipcart](../mcps/snipcart.md) | Connect your headless e-commerce store to your AI. List orders, update fulfillment statuses, and manage customers seamlessly from your environment. |
 | [SolanaFM (Solana FM Block Explorer API)](../mcps/solanafm-solana-fm-block-explorer-api.md) | Access Solana blockchain data via SolanaFM — inspect blocks, transactions, account metadata, and token balances directly from any AI agent. |
 | [SparkPost](../mcps/sparkpost.md) | Bring your SparkPost email delivery platform into your AI. Manage templates, send campaigns, and audit deliverability directly from your editor. |
+| [Spreads Database Branch Name Normalizer](../mcps/spreads-database-branch-name-normalizer.md) | Transforms git branch names into safe, SQL-compliant identifiers for Spreads database branching. |
 | [SQL Parser AST Engine](../mcps/sql-parser-ast-engine.md) | Parse any SQL query into a structured AST — extract tables, columns, JOINs, and WHERE clauses programmatically. Supports 15+ dialects including MySQL, PostgreSQL, and BigQuery. Your SQL injection firewall. |
 | [SQL Query Complexity Analyzer](../mcps/sql-query-complexity-analyzer.md) | Analyze SQL query complexity, join structures, and safety risks. |
 | [SQL Static Query Analyzer](../mcps/sql-static-query-analyzer.md) | Perform deterministic static analysis on SQL query strings to detect inefficient, destructive, or insecure patterns. |
@@ -507,6 +509,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [SwaggerHub](../mcps/swaggerhub.md) | Connect your AI to SwaggerHub. Read OpenAPI specifications, explore domains, and manage your API design lifecycle natively from the terminal. |
 | [Swiftype](../mcps/swiftype.md) | Connect your AI to Elastic Swiftype. Query your search engines, manage documents, and retrieve deep analytical insights natively from the terminal. |
 | [T-Test Statistics Engine](../mcps/t-test-statistics-engine.md) | Run exact Student's, Welch's, and Paired t-tests local. Get CPU-guaranteed p-values instead of LLM-hallucinated guesses. |
+| [Tailwind v4 Theme Variable Extractor](../mcps/tailwind-v4-theme-variable-extractor.md) | Extracts CSS variables from Tailwind v4 @theme blocks. |
+| [Tailwind v4 Theme Variable Extractor Alternative](../mcps/tailwind-v4-theme-variable-extractor-alternative.md) | Extracts CSS variables from Tailwind v4 @theme blocks. |
 | [Targetprocess](../mcps/targetprocess.md) | Connect your AI to Apptio Targetprocess. Agile portfolio management natively from the terminal: track user stories, active bugs, and sprint iterations seamlessly. |
 | [Tatum (Blockchain Infra)](../mcps/tatum-blockchain-infra.md) | Simplify blockchain development with Tatum — estimate fees, track portfolios, and manage real-time webhook subscriptions across multiple chains. |
 | [Tenderly (Ethereum Dev Platform)](../mcps/tenderly-ethereum-dev-platform.md) | Simulate Ethereum transactions, create Virtual TestNets, and monitor on-chain events directly from your AI agent. |
@@ -557,6 +561,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Web Scraper](../mcps/web-scraper.md) | Equip your AI agent with the ability to read web pages, extract metadata, and crawl documentation sites as clean Markdown. |
 | [Webflow](../mcps/webflow-alternative-1.md) | Manage Webflow sites, CMS collections, pages, and assets directly from your AI agent. |
 | [Webflow](../mcps/webflow.md) | Equip your AI agent with direct access to Webflow — manage CMS collections, publish sites, and query site analytics without opening the Webflow designer. |
+| [WebGPU WGSL Syntax Linter](../mcps/webgpu-wgsl-syntax-linter.md) | Verify the structural integrity and entry points of your Webbr GPU shaders. |
+| [WebGPU WGSL Syntax Linter Alternative](../mcps/webgpu-wgsl-syntax-linter-alternative.md) | Verify the structural integrity and entry points of your Webbr GPU shaders. |
 | [Webhook.site](../mcps/webhooksite.md) | Test and debug webhooks and HTTP requests. Create custom URLs, inspect incoming payloads, and automate responses via AI. |
 | [Webiny CMS](../mcps/webiny-cms.md) | Manage content models, entries, and GraphQL workflows on Webiny — the enterprise open-source headless CMS. |
 | [Weblate](../mcps/weblate.md) | Automate localization workflows via Weblate — manage projects, components, languages, and users directly from any AI agent. |

@@ -7,6 +7,8 @@ Explore the open database of **development** Model Context Protocol (MCP) server
 | [CSS Class Usage & Collision Analyzer](../mcps/css-class-usage-collision-analyzer.md) | Identify orphaned, missing, or colliding CSS classes in your project. |
 | [JSON Schema Validator](../mcps/json-schema-validator.md) | Validate JSON documents and lint schemas for structural integrity. |
 | [React 19 useActionState Validator](../mcps/react-19-useactionstate-validator.md) | Validates React 19 `useActionState` hook implementations in JSX snippets. |
+| [shadcn/ui Dependency Resolver](../mcps/shadcnui-dependency-resolver.md) | Resolves exact shadcn/ui component dependencies from JSX snippets. |
+| [shadcn/ui Dependency Resolver Alternative](../mcps/shadcnui-dependency-resolver-alternative.md) | Resolves exact shadcn/ui component dependencies from JSX snippets. |
 | [Svelte 5 Rune Syntax Validator](../mcps/svelte-5-rune-syntax-validator.md) | Ensure your Svelte components strictly adhere to the new Runes API syntax. |
 
 
