@@ -14,11 +14,11 @@ The TOML Strict Config Parser provides a reliable way to convert raw TOML text i
 
 
 ## Available Tools (3)
-- **get_toml_structural_summary**: Provides a summary of the TOML structure
 - **parse_toml_string**: Returns parsed JSON, section count, and errors.
 
 Parses a TOML string into a JSON object
 - **validate_toml_syntax**: Validates the syntax of a TOML string
+- **get_toml_structural_summary**: Provides a summary of the TOML structure
 
 
 ## 💬 Prompt Examples

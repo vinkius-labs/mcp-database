@@ -14,8 +14,8 @@ The Sliding Window Rate Limiter MCP server provides a deterministic mechanism fo
 
 
 ## Available Tools (3)
-- **analyze_window_saturation**: Analyzes the saturation trend of the window
 - **evaluate_request**: Evaluates if a request is allowed within the sliding window
+- **analyze_window_saturation**: Analyzes the saturation trend of the window
 - **get_window_density**: Calculates the density of requests within the window
 
 

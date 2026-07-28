@@ -14,9 +14,9 @@ The LLM XML Tag Parser MCP server provides a deterministic way to parse structur
 
 
 ## Available Tools (3)
+- **validate_tag_integrity**: Validate the integrity of XML tag nesting
 - **extract_all_tags**: Extract all top-level occurrences of a specific XML tag
 - **extract_single_tag**: Extract the first occurrence of a specific XML tag
-- **validate_tag_integrity**: Validate the integrity of XML tag nesting
 
 
 ## 💬 Prompt Examples
