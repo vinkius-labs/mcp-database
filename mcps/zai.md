@@ -48,6 +48,12 @@ Run Z.AI agents for translation, slide generation, or poster creation
 - **audio_transcription**: AI's ASR model. Supports .wav and .mp3 files up to 25MB and 30 seconds. Can provide hotwords for domain-specific vocabulary and context prompts for long-form transcription. Supports streaming output.
 
 Transcribe audio files to text using the GLM-ASR-2512 model
+- **get_async_result**: Returns task_status (PROCESSING, SUCCESS, FAIL) and the generated image or video URLs when complete. Use this after generate_image_async or generate_video returns a task ID.
+
+Retrieve the result of an asynchronous image or video generation task
+- **layout_parsing**: Returns recognized text in Markdown format, detailed layout information (bounding boxes for text, images, formulas, tables), and optional visualization results. Supports PDF, JPG, PNG formats. PDF up to 50MB/30 pages, images up to 10MB.
+
+Parse document layouts and extract text using the GLM-OCR model
 - **chat_completion**: 2, GLM-4.7, or other available models. Supports multimodal inputs (text, images, audio, video, files), configurable parameters (temperature, max_tokens, tools), and both streaming and non-streaming modes. Pass the full request body as JSON including model, messages, and optional parameters.
 
 Generate AI chat completions using Z.AI GLM models
@@ -63,12 +69,6 @@ Generate high-quality images from text prompts using GLM-Image models
 - **generate_video**: Supports text-to-video, image-to-video, and first/last frame-to-video. Returns a task ID — use get_async_result to check status and retrieve the video URL. Specify model, prompt, and optional quality/size/fps/duration.
 
 Generate videos from text prompts or images using CogVideoX or Vidu models
-- **get_async_result**: Returns task_status (PROCESSING, SUCCESS, FAIL) and the generated image or video URLs when complete. Use this after generate_image_async or generate_video returns a task ID.
-
-Retrieve the result of an asynchronous image or video generation task
-- **layout_parsing**: Returns recognized text in Markdown format, detailed layout information (bounding boxes for text, images, formulas, tables), and optional visualization results. Supports PDF, JPG, PNG formats. PDF up to 50MB/30 pages, images up to 10MB.
-
-Parse document layouts and extract text using the GLM-OCR model
 - **tokenize**: Returns prompt_tokens, image_tokens, video_tokens, and total_tokens. Useful for text length evaluation, model input estimation, context truncation, and cost calculation. Supports glm-4.6, glm-4.6v, and glm-4.5 models.
 
 Count tokens for given messages using Z.AI models
