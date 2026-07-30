@@ -22,6 +22,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [License Compatibility Checker](../mcps/license-compatibility-checker.md) | Audit software licenses and check compatibility between dependencies. |
 | [Outbound Network Firewall Validator](../mcps/outbound-network-firewall-validator.md) | Validates outbound network requests against allowed domains and ports to prevent data exfiltration. |
 | [Password Entropy Calculator](../mcps/password-entropy-calculator.md) | Calculate password entropy, identify pattern risks, and verify security policy compliance. |
+| [Prompt Injection Detection Engine](../mcps/prompt-injection-detection-engine.md) | Scans user inputs and retrieved documents for prompt injection attacks using static pattern matching. |
 | [Prompt Injection Pattern Detector](../mcps/prompt-injection-pattern-detector.md) | Identify and score malicious instruction overrides and system metadata extraction attempts in user text. |
 | [Prompt Injection Pattern Scanner](../mcps/prompt-injection-pattern-scanner.md) | Scans user-supplied text for structural patterns associated with prompt-injection attempts. |
 | [Prompt Injection Shield Prover](../mcps/prompt-injection-shield-prover.md) | LLMs cannot distinguish system instructions from user input. This tool forces 5-layer injection defense analysis: intent isolation, privilege containment, indirect vector scanning, output sanitization, and scope enforcement. OWASP LLM Top 10 #1 compliance. |

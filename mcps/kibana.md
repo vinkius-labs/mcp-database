@@ -34,10 +34,6 @@ Connect your **Kibana** instance to any AI agent to streamline your Elastic Stac
 
 
 ## Available Tools (55)
-- **add_case_comment**: Add a comment to a case
-- **bulk_create_saved_objects**: Create multiple saved objects
-- **bulk_get_saved_objects**: Get multiple saved objects
-- **bulk_update_saved_objects**: Update multiple saved objects
 - **copy_saved_objects**: Copy saved objects between spaces
 - **create_agent_policy**: Create an agent policy
 - **create_case**: Create a case
@@ -89,6 +85,10 @@ Connect your **Kibana** instance to any AI agent to streamline your Elastic Stac
 - **update_rule**: Update an alerting rule
 - **update_saved_object**: Update a saved object
 - **update_space**: Update an existing Kibana space
+- **add_case_comment**: Add a comment to a case
+- **bulk_create_saved_objects**: Create multiple saved objects
+- **bulk_get_saved_objects**: Get multiple saved objects
+- **bulk_update_saved_objects**: Update multiple saved objects
 
 
 ## 💬 Prompt Examples

@@ -77,6 +77,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Celoscan (Celo Network Explorer)](../mcps/celoscan-celo-network-explorer.md) | Access Celo network data via Celoscan — check account balances, track transactions, and inspect smart contracts directly from your AI agent. |
 | [Cerbos](../mcps/cerbos.md) | Decouple authorization logic from your application. Evaluate permissions, generate query plans, and manage access control via AI. |
 | [Cerbos (Access Control)](../mcps/cerbos-access-control.md) | Decouple authorization from your code. Manage policies, check permissions, and audit access control directly through your AI agent. |
+| [Chain-of-Thought Skeleton Verifier](../mcps/chain-of-thought-skeleton-verifier.md) | Validates the structural integrity and parsing patterns of ReAct and Chain-of-Thought agent outputs. |
+| [Chain-of-Thought Skeleton Verifier Alternative](../mcps/chain-of-thought-skeleton-verifier-alternative.md) | Validates the structural integrity and parsing patterns of ReAct and Chain-of-Thought agent outputs. |
 | [Circular Code Dependency Detector](../mcps/circular-code-dependency-detector.md) | Identify import cycles and measure module interdependence in JavaScript, TypeScript, and Python projects. |
 | [Civo (Cloud-native Kubernetes Cloud Provider API)](../mcps/civo-cloud-native-kubernetes-cloud-provider-api.md) | Manage Civo cloud infrastructure — provision Kubernetes clusters, control compute instances, and monitor usage directly via AI. |
 | [Clever Cloud (Developer PaaS API)](../mcps/clever-cloud-developer-paas-api.md) | Manage your Clever Cloud infrastructure—apps, add-ons, and deployments—directly from your AI agent. |
@@ -301,6 +303,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Kontent.ai](../mcps/kontentai-alternative.md) | Manage content items, types, and taxonomies via Kontent.ai's Delivery and Management APIs directly from your AI agent. |
 | [LambdaTest](../mcps/lambdatest.md) | Test your website and apps across thousands of real browsers and devices in the cloud with automated and manual testing tools. |
 | [Langflow (Visual Multi-agent Orchestrator)](../mcps/langflow-visual-multi-agent-orchestrator.md) | Orchestrate multi-agent AI workflows visually — execute flows, manage projects, and trigger webhooks directly from any AI agent. |
+| [Langfuse Trace URL Extractor](../mcps/langfuse-trace-url-extractor.md) | Extract trace IDs and construct observability URLs from Langfuse payloads. |
 | [Lanhu](../mcps/lanhu.md) | Product design collaboration platform — manage design files, handoffs, and team feedback via AI. |
 | [LeanCloud](../mcps/leancloud.md) | Scalable backend-as-a-service platform — manage data classes, users, and push notifications via AI. |
 | [Levenshtein Distance Engine](../mcps/levenshtein-distance-engine.md) | Calculate the exact edit distance between two strings. Essential for fuzzy matching, spell checking, and deduplication. Stop LLMs from guessing string similarity. |
@@ -508,6 +511,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Svix](../mcps/svix.md) | Manage your webhook infrastructure via Svix — orchestrate applications, configure endpoints, and monitor message delivery directly from any AI agent. |
 | [SwaggerHub](../mcps/swaggerhub.md) | Connect your AI to SwaggerHub. Read OpenAPI specifications, explore domains, and manage your API design lifecycle natively from the terminal. |
 | [Swiftype](../mcps/swiftype.md) | Connect your AI to Elastic Swiftype. Query your search engines, manage documents, and retrieve deep analytical insights natively from the terminal. |
+| [System Prompt Leakage Detector](../mcps/system-prompt-leakage-detector.md) | Detects verbatim leaks of system prompts within agent outputs using LCS algorithms. |
+| [System Prompt Leakage Detector Alternative](../mcps/system-prompt-leakage-detector-alternative.md) | Detects verbatim leaks of system prompts within agent outputs using LCS algorithms. |
 | [T-Test Statistics Engine](../mcps/t-test-statistics-engine.md) | Run exact Student's, Welch's, and Paired t-tests local. Get CPU-guaranteed p-values instead of LLM-hallucinated guesses. |
 | [Tailwind v4 Theme Variable Extractor](../mcps/tailwind-v4-theme-variable-extractor.md) | Extracts CSS variables from Tailwind v4 @theme blocks. |
 | [Tailwind v4 Theme Variable Extractor Alternative](../mcps/tailwind-v4-theme-variable-extractor-alternative.md) | Extracts CSS variables from Tailwind v4 @theme blocks. |
@@ -586,6 +591,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Zesty.io](../mcps/zestyio.md) | Manage content models, items, and instances via the Zesty.io API. |
 | [Zetachain Explorer (ZetaChain Block Explorer API)](../mcps/zetachain-explorer-zetachain-block-explorer-api.md) | Explore ZetaChain blockchain data — inspect blocks, transactions, addresses, and tokens directly through any AI agent. |
 | [Zippopotam.us](../mcps/zippopotamus-alternative.md) | Free geocoding and postal code lookup — retrieve city, state, and coordinates for any zip code or find postal codes by city. |
+| [Zod Schema Error Flattener](../mcps/zod-schema-error-flattener.md) | Transforms complex, deeply nested ZodError objects into flat, field-centric error dictionaries for UI consumption. |
 | [zrok (Open-Source Tunnel)](../mcps/zrok-open-source-tunnel.md) | Securely share local resources with the world using zrok — manage environments, create public/private shares, and monitor tunnels directly from your AI agent. |
 
 
