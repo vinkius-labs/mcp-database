@@ -281,6 +281,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [JigsawStack](../mcps/jigsawstack.md) | Access a suite of AI utility APIs for web scraping, translation, OCR, and sentiment analysis in one developer-friendly platform. |
 | [jmespath-query-executor](../mcps/jmespath-query-executor.md) | Deterministic JSON querying using simplified JMESPath syntax. |
 | [JSON Payload Depth and Size Limiter](../mcps/json-payload-depth-and-size-limiter.md) | Validate JSON payloads against strict nesting depth and byte size constraints to prevent parser crashes. |
+| [JSON Schema Function Call Validator](../mcps/json-schema-function-call-validator.md) | Verify that LLM-generated JSON function calls strictly adhere to your defined JSON Schemas. |
 | [JSON Schema Strict Validator](../mcps/json-schema-strict-validator.md) | Perform deterministic JSON validation against Draft-07 and 2020-12 schemas with strict property enforcement. |
 | [JSON-LD SEO Compiler](../mcps/json-ld-seo-compiler.md) | Compile 100% Google-compliant JSON-LD Schema blocks. Prevent AI hallucination of invalid SEO structured data. |
 | [JSONBin.io](../mcps/jsonbinio.md) | Store, manage, and retrieve JSON data effortlessly. Create bins, manage collections, and handle large datasets directly from your AI agent. |
@@ -313,6 +314,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [LicenseCheck API](../mcps/licensecheck-api.md) | Search software licenses — audit permissions and conditions via AI. |
 | [Lineascan](../mcps/lineascan.md) | Explore the Linea blockchain — check ETH balances, track ERC-20/NFT transfers, and inspect smart contract source code directly from your AI. |
 | [LLM Fine-Tuning Dataset Validator](../mcps/llm-fine-tuning-dataset-validator.md) | Verify structural integrity, token distribution, and training costs of JSONL datasets. |
+| [LLM Output JSON Extractor](../mcps/llm-output-json-extractor.md) | Isolates valid JSON objects from mixed markdown/text LLM outputs using deterministic bracket-matching. |
 | [LLM ROUGE & BLEU Evaluator](../mcps/llm-rouge-bleu-evaluator.md) | Evaluate AI text generation quality. Compute exact mathematical BLEU and ROUGE scores comparing generated text to reference documents. |
 | [LLM Token Counter](../mcps/llm-token-counter.md) | Calculate exact and estimated token counts for GPT-4, GPT-4o, Claude, and Llama models. |
 | [LMNT (Ultra-low Latency Speech Synthesis)](../mcps/lmnt-ultra-low-latency-speech-synthesis.md) | Synthesize ultra-low latency AI speech, clone voices instantly, and manage your LMNT audio assets directly from any AI agent. |
@@ -425,6 +427,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Prismatic](../mcps/prismatic.md) | Manage your Prismatic integration platform — list customers, create instances, deploy integrations, and fetch execution logs via AI. |
 | [Privy](../mcps/privy.md) | Manage users and wallets via Privy — create users, search profiles, and manage embedded wallets directly from any AI agent. |
 | [Product Hunt](../mcps/product-hunt-alternative-1.md) | Access Product Hunt data directly — browse daily posts, execute custom GraphQL queries, and manage your viewer profile via AI. |
+| [Prompt Template Variable Injector Checker](../mcps/prompt-template-variable-injector-checker.md) | Validates prompt templates for correct variable syntax, undeclared variables, and potential injection vectors. |
+| [Prompt Template Variable Injector Checker Alternative](../mcps/prompt-template-variable-injector-checker-alternative.md) | Validates prompt templates for correct variable syntax, undeclared variables, and potential injection vectors. |
 | [PropelAuth (B2B Authentication)](../mcps/propelauth-b2b-authentication.md) | Manage B2B authentication, users, and organizations via PropelAuth — handle user provisioning, org management, and API keys directly from your AI agent. |
 | [Protobuf to JSON Schema Transpiler](../mcps/protobuf-to-json-schema-transpiler.md) | Convert Protocol Buffer (.proto) definitions into valid JSON Schema objects deterministically. |
 | [Prowlarr (Indexers)](../mcps/prowlarr-indexers.md) | Manage Prowlarr indexers—list, add, test, and monitor health status of your Usenet and Torrent indexers directly from your AI agent. |
@@ -577,6 +581,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Wemix Explorer](../mcps/wemix-explorer.md) | Explore Wemix blockchain data — query accounts, track token transfers, and inspect blocks or extrinsics directly from your AI agent. |
 | [WordPress Plugin Auditor](../mcps/wordpress-plugin-auditor.md) | This MCP gives your AI agent the ability to securely list and audit all installed plugins on a WordPress site. Perfect for security sweeps, maintenance reports, and identifying outdated or inactive plugins. |
 | [Writer (AI Enterprise LLM)](../mcps/writer-ai-enterprise-llm.md) | Access Writer's enterprise-grade LLMs and Knowledge Graph capabilities to generate content, manage files, and query RAG-based data. |
+| [XML Tag Structure Compliance Checker](../mcps/xml-tag-structure-compliance-checker.md) | Validate XML tag integrity, nesting hierarchy, and tag-to-text density. |
 | [Xray (Test Management)](../mcps/xray-test-management.md) | Manage test cases, executions, and plans on Xray — the leading quality assurance platform for Jira. |
 | [Z.AI](../mcps/zai.md) | Access the full Z.AI platform from any AI agent — chat completions with GLM models, image and video generation, audio transcription, OCR, web search, and agent tools. |
 | [Zeabur (PaaS Deployment)](../mcps/zeabur-paas-deployment.md) | Deploy services, manage containers, and send transactional emails via Zeabur PaaS directly from your AI agent. |
