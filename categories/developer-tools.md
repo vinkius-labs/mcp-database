@@ -535,6 +535,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Togai (Usage Metering & Pricing)](../mcps/togai-usage-metering-pricing.md) | Automate usage-based billing and metering — ingest events, manage customers, and track entitlements directly from your AI agent. |
 | [TOML Parser Engine](../mcps/toml-parser-engine.md) | Convert TOML config files to JSON and back. Essential for Rust (Cargo.toml), Python (pyproject.toml), and Cloudflare (wrangler.toml). |
 | [TOML Strict Config Parser](../mcps/toml-strict-config-parser.md) | A deterministic, dependency-free parser that transforms TOML strings into structured JSON objects. |
+| [Tool Description Semantic Density Scorer](../mcps/tool-description-semantic-density-scorer.md) | Analyze LLM tool descriptions for linguistic precision and structural integrity. |
 | [ToolJet](../mcps/tooljet.md) | Manage ToolJet databases and trigger workflows directly from your AI agent—query tables, insert data, and automate processes. |
 | [Transactional File Write Simulator](../mcps/transactional-file-write-simulator.md) | Simulates atomic file writes with rollback capabilities to prevent corruption. |
 | [Transifex](../mcps/transifex.md) | Localize your projects efficiently using AI Agents with the official Transifex integration. |
@@ -592,6 +593,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Zentitle2](../mcps/zentitle2.md) | Manage software licenses and entitlements with a cloud platform that handles activation, metering, and feature gating for ISVs. |
 | [Zephyr Scale (SmartBear)](../mcps/zephyr-scale-smartbear.md) | Manage test cases, cycles, and executions on Zephyr Scale — the high-performance test management tool for Jira. |
 | [Zeplo (Queue & Background Job API)](../mcps/zeplo-queue-background-job-api.md) | Schedule, queue, and manage background jobs and webhooks via Zeplo directly from your AI agent. |
+| [Zero-Shot vs Few-Shot Ratio Calculator](../mcps/zero-shot-vs-few-shot-ratio-calculator.md) | Analyze prompt structures to classify learning approaches and evaluate example density. |
 | [ZeroTier](../mcps/zerotier.md) | Manage ZeroTier virtual networks, authorize members, and monitor local node status directly from your AI agent. |
 | [Zesty.io](../mcps/zestyio.md) | Manage content models, items, and instances via the Zesty.io API. |
 | [Zetachain Explorer (ZetaChain Block Explorer API)](../mcps/zetachain-explorer-zetachain-block-explorer-api.md) | Explore ZetaChain blockchain data — inspect blocks, transactions, addresses, and tokens directly through any AI agent. |

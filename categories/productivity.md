@@ -554,6 +554,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [MakePlans](../mcps/makeplans-alternative.md) | Online booking and appointment scheduling via MakePlans MCP. |
 | [Marilyn vos Savant Probabilistic Clarity Prover](../mcps/marilyn-vos-savant-probabilistic-clarity-prover.md) | Stop your AI from trusting its gut — force it to check intuition against actual probability before every conclusion. |
 | [Markdown HTML Compiler](../mcps/markdown-html-compiler.md) | Stop wasting AI tokens converting text. Compile Markdown into clean, minified HTML instantly for emails and CMS platforms. |
+| [Markdown Structure Compliance Validator](../mcps/markdown-structure-compliance-validator.md) | Enforce strict markdown formatting rules for LLM outputs. |
+| [Markdown Structure Compliance Validator Alternative](../mcps/markdown-structure-compliance-validator-alternative.md) | Enforce strict markdown formatting rules for LLM outputs. |
 | [Markdown Task Extractor](../mcps/markdown-task-extractor.md) | Instantly scan any local folder of Markdown notes (Obsidian, Notion, Logseq) and aggregate every scattered '- [ ]' to-do item into a single, structured list for your AI. |
 | [Markdown Utilities Engine](../mcps/markdown-utilities-engine.md) | Equip your AI with programmatic Markdown tools. Deterministically generate Table of Contents (TOC) with correct anchor links and format perfect Markdown tables from JSON. |
 | [Markup Calculator](../mcps/markup-calculator.md) | Calculate markup divisor and suggested selling price based on costs, taxes, and profit margins. |
