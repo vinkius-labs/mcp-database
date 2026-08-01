@@ -11,6 +11,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Adafruit IO](../mcps/adafruit-io.md) | Manage Adafruit IO feeds, data points, dashboards, and triggers. |
 | [AddSearch](../mcps/addsearch.md) | Equip your AI agent with AddSearch to query your indexed site content, push new documents, and retrieve search analytics instantly. |
 | [AdGuard Home](../mcps/adguard-home.md) | Manage your AdGuard Home instance — control protection, DNS settings, and filtering rules directly from any AI agent. |
+| [Agent Error Recovery Rate Calculator](../mcps/agent-error-recovery-rate-calculator.md) | Analyze execution logs to calculate error recovery rates and identify failure patterns. |
 | [AgentOps (Agent Telemetry and Monitoring)](../mcps/agentops-agent-telemetry-and-monitoring.md) | Monitor and observe your AI agents with AgentOps — track traces, spans, and project metrics directly from your agent. |
 | [Agify](../mcps/agify.md) | Predict the age of a person based on their first name using the Agify.io API. |
 | [Agility CMS](../mcps/agility-cms.md) | Manage and query your Agility CMS content through AI — navigate sitemaps, search lists, and fetch layouts. |
@@ -283,6 +284,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [JSON Payload Depth and Size Limiter](../mcps/json-payload-depth-and-size-limiter.md) | Validate JSON payloads against strict nesting depth and byte size constraints to prevent parser crashes. |
 | [JSON Schema Function Call Validator](../mcps/json-schema-function-call-validator.md) | Verify that LLM-generated JSON function calls strictly adhere to your defined JSON Schemas. |
 | [JSON Schema Strict Validator](../mcps/json-schema-strict-validator.md) | Perform deterministic JSON validation against Draft-07 and 2020-12 schemas with strict property enforcement. |
+| [JSON Schema Validator and Flattener](../mcps/json-schema-validator-and-flattener.md) | Strictly validate JSON against schemas and flatten nested structures using dot notation. |
 | [JSON-LD SEO Compiler](../mcps/json-ld-seo-compiler.md) | Compile 100% Google-compliant JSON-LD Schema blocks. Prevent AI hallucination of invalid SEO structured data. |
 | [JSONBin.io](../mcps/jsonbinio.md) | Store, manage, and retrieve JSON data effortlessly. Create bins, manage collections, and handle large datasets directly from your AI agent. |
 | [Juhe Data / 聚合数据](../mcps/juhe-data.md) | China's leading API aggregator — access weather, ID verification, IP lookup, and news via AI. |
@@ -450,7 +452,9 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Raygun](../mcps/raygun.md) | Monitor application health, track deployments, and manage crash reports and RUM sessions directly from your AI agent. |
 | [React Server Action Route Mapper](../mcps/react-server-action-route-mapper.md) | Extracts Next.js Server Actions and maps them to deterministic API routes. |
 | [ReadMe](../mcps/readme.md) | Equip your AI to directly search, read, and manage developer documentation stored in your ReadMe project. |
+| [Reasoning Step Word Count Analyzer](../mcps/reasoning-step-word-count-analyzer.md) | Analyze ReAct traces to audit reasoning verbosity and detect zero-shot behavior. |
 | [Redox](../mcps/redox.md) | Connect to the Redox healthcare API to search patients, retrieve clinical conditions, and write back observations directly from your AI agent. |
+| [Regex Execution and Group Extractor](../mcps/regex-execution-and-group-extractor.md) | Executes regular expressions against text to extract matches, groups, and indices. |
 | [Regex Explainer Stepper](../mcps/regex-explainer-stepper.md) | Decompose complex regular expressions into a step-by-step AST walkthrough and perform safety audits. |
 | [Regex Extractor Engine](../mcps/regex-extractor-engine.md) | Stop LLM hallucination when extracting data. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction without missing a single match. |
 | [Regex High-Perf Parser](../mcps/regex-high-perf-parser.md) | Stop LLM hallucination when extracting entities. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction. |
@@ -535,6 +539,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Togai (Usage Metering & Pricing)](../mcps/togai-usage-metering-pricing.md) | Automate usage-based billing and metering — ingest events, manage customers, and track entitlements directly from your AI agent. |
 | [TOML Parser Engine](../mcps/toml-parser-engine.md) | Convert TOML config files to JSON and back. Essential for Rust (Cargo.toml), Python (pyproject.toml), and Cloudflare (wrangler.toml). |
 | [TOML Strict Config Parser](../mcps/toml-strict-config-parser.md) | A deterministic, dependency-free parser that transforms TOML strings into structured JSON objects. |
+| [Tool Argument Completeness Checker](../mcps/tool-argument-completeness-checker.md) | Extracts and validates tool arguments from LLM action text. |
 | [Tool Description Semantic Density Scorer](../mcps/tool-description-semantic-density-scorer.md) | Analyze LLM tool descriptions for linguistic precision and structural integrity. |
 | [ToolJet](../mcps/tooljet.md) | Manage ToolJet databases and trigger workflows directly from your AI agent—query tables, insert data, and automate processes. |
 | [Transactional File Write Simulator](../mcps/transactional-file-write-simulator.md) | Simulates atomic file writes with rollback capabilities to prevent corruption. |
