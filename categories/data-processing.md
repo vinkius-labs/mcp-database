@@ -4,6 +4,8 @@ Explore the open database of **data-processing** Model Context Protocol (MCP) se
 
 | Tool Name | Description |
 |-----------|-------------|
+| [CSV Structural Scan and Deduplicator](../mcps/csv-structural-scan-and-deduplicator.md) | Analyze CSV structure, detect delimiters, find empty cells, and remove duplicate rows. |
+| [CSV Structural Scan and Deduplicator Alternative](../mcps/csv-structural-scan-and-deduplicator-alternative.md) | Analyze CSV structure, detect delimiters, find empty cells, and remove duplicate rows. |
 | [Markdown Semantic Chunker](../mcps/markdown-semantic-chunker.md) | A deterministic engine for splitting Markdown text into semantically coherent chunks based on header hierarchy and paragraph boundaries. |
 | [Markdown Semantic Chunker Alternative](../mcps/markdown-semantic-chunker-alternative.md) | A deterministic engine for splitting Markdown text into semantically coherent chunks based on header hierarchy and paragraph boundaries. |
 | [SSE Stream Reassembler](../mcps/sse-stream-reassembler.md) | Reassembles fragmented Server-Sent Events (SSE) streams into a single coherent payload. |

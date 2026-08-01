@@ -39,6 +39,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [AST Cyclomatic Complexity Calculator](../mcps/ast-cyclomatic-complexity-calculator.md) | Measure code maintainability by calculating exact cyclomatic complexity using regex-based decision point counting. |
 | [Aurorascan (Aurora Network L2 Block Explorer API)](../mcps/aurorascan-aurora-network-l2-block-explorer-api.md) | Access Aurora Network L2 blockchain data—query balances, transaction history, and token transfers directly from your AI agent. |
 | [BaconIpsum](../mcps/baconipsum.md) | Generate meaty placeholder text for designs and development — customize paragraphs, sentences, and meat-to-filler ratios directly from your AI agent. |
+| [Base64 and Hex Encoder/Decoder](../mcps/base64-and-hex-encoderdecoder.md) | Encode and decode strings between Base64, Base64URL, and Hexadecimal formats with byte size calculation. |
+| [Base64 and Hex Encoder/Decoder Alternative](../mcps/base64-and-hex-encoderdecoder-alternative.md) | Encode and decode strings between Base64, Base64URL, and Hexadecimal formats with byte size calculation. |
 | [Baserow](../mcps/baserow-alternative.md) | Build no-code databases, create custom views, and collaborate on structured data with an open-source Airtable alternative. |
 | [Basin](../mcps/basin.md) | Form backend and lead capture automation — manage form submissions, filter spam, and trigger webhooks via AI. |
 | [Beagle Security](../mcps/beagle-security.md) | Automate security testing via Beagle Security — list projects, start tests, and retrieve results directly from any AI agent. |
@@ -121,6 +123,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [CrafterCMS](../mcps/craftercms.md) | Manage and query content from CrafterCMS — fetch pages, components, and trees, execute GraphQL/OpenSearch queries, and manage engine cache directly from your AI agent. |
 | [Cron Expression Engine](../mcps/cron-expression-engine.md) | Parse, validate, convert, and generate cron expressions across multiple standards. |
 | [Cron Expression Validator](../mcps/cron-expression-validator.md) | Validate and calculate next execution times for standard and extended cron expressions. |
+| [Cron Expression Validator & Next Run Calculator](../mcps/cron-expression-validator-next-run-calculator.md) | Validate cron syntax and calculate exact future execution timestamps. |
+| [Cron Expression Validator & Next Run Calculator Alternative](../mcps/cron-expression-validator-next-run-calculator-alternative.md) | Validate cron syntax and calculate exact future execution timestamps. |
 | [Cron Expression Validator Alternative](../mcps/cron-expression-validator-alternative.md) | Validate and calculate next execution times for standard and extended cron expressions. |
 | [Cronitor (Cron Monitoring)](../mcps/cronitor-cron-monitoring.md) | Monitor cron jobs, heartbeats, and websites. Track performance, receive alerts, and manage uptime directly from your AI agent. |
 | [Cronoscan (Cronos Block Explorer)](../mcps/cronoscan-cronos-block-explorer.md) | Access Cronos blockchain data — check CRO balances, track transactions, inspect smart contracts, and monitor token transfers directly via AI. |
@@ -149,6 +153,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Deterministic Base Converter](../mcps/deterministic-base-converter.md) | Equip your AI with infinite-precision mathematical conversion between any numerical bases (2 through 36), including Binary, Hexadecimal, and Octal. |
 | [Deterministic Codec Engine](../mcps/deterministic-codec-engine.md) | Empower your AI to perfectly serialize and deserialize data. Effortlessly switch between URL Encoding, HTML Entities, Unicode Escapes, and DNS Punycode with a native V8 engine. |
 | [Deterministic Color Engine](../mcps/deterministic-color-engine.md) | Equip your AI with precise UI design capabilities. Deterministically convert HEX/RGB/HSL, manipulate luminance, and generate mathematically perfect palettes. |
+| [Deterministic Logic Gate Evaluator](../mcps/deterministic-logic-gate-evaluator.md) | Evaluate complex boolean logic expressions with precise truth value computation. |
+| [Deterministic Logic Gate Evaluator Alternative](../mcps/deterministic-logic-gate-evaluator-alternative.md) | Evaluate complex boolean logic expressions with precise truth value computation. |
 | [Deterministic Math Expression Evaluator](../mcps/deterministic-math-expression-evaluator.md) | Equip your AI with flawless algebraic parsing. Safely evaluate complex mathematical string expressions without using vulnerable `eval()` execution. |
 | [DEV.to](../mcps/devto.md) | Manage your DEV.to presence — publish articles, fetch latest posts, and update content directly from your AI agent. |
 | [Dev.to (Forem Developer Community API)](../mcps/devto-forem-developer-community-api.md) | Manage your Dev.to presence — publish articles, track engagement, and interact with the developer community directly through AI. |
@@ -178,6 +184,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Elemeno](../mcps/elemeno.md) | Equip your AI agent to manage content collections, track singletons, and monitor items via the Elemeno CMS API. |
 | [Equixly](../mcps/equixly.md) | Automate API security testing via Equixly — manage target services, trigger autonomous AI pentests, and audit vulnerability findings directly from any AI agent. |
 | [Evil Insult](../mcps/evil-insult.md) | Generate creative and random insults from the Evil Insult Generator API directly within your AI agent. |
+| [Exact Text Diff and Patch Generator](../mcps/exact-text-diff-and-patch-generator.md) | A deterministic engine for generating unified diffs and applying patches between text strings. |
+| [Exact Text Diff and Patch Generator Alternative](../mcps/exact-text-diff-and-patch-generator-alternative.md) | A deterministic engine for generating unified diffs and applying patches between text strings. |
 | [Exponential Smoothing Engine](../mcps/exponential-smoothing-engine.md) | Apply Simple Exponential Smoothing (Holt-Winters family) for local deterministic time-series forecasting. |
 | [Faker](../mcps/faker.md) | Generate high-quality mock data for development and testing — including addresses, persons, companies, and products in multiple locales. |
 | [Fastn](../mcps/fastn.md) | Automate and execute low-code workflows via Fastn — manage flow definitions, monitor executions, and handle connector credentials directly. |

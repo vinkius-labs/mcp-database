@@ -35,6 +35,8 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Groove Quantize Calculator](../mcps/groove-quantize-calculator.md) | Calculate precise millisecond-based quantization grids, swing offsets, and latency compensation for DAWs. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [JSONL Strict Parser Alternative](../mcps/jsonl-strict-parser-alternative.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
+| [Markdown to Plain Text Extractor](../mcps/markdown-to-plain-text-extractor.md) | Strips Markdown syntax and measures content reduction. |
+| [Markdown to Plain Text Extractor Alternative](../mcps/markdown-to-plain-text-extractor-alternative.md) | Strips Markdown syntax and measures content reduction. |
 | [Menstrual Cycle Calculator](../mcps/menstrual-cycle-calculator.md) | Track menstrual cycle phases and identify fertile windows using historical period data. |
 | [Moon Phase Calculator](../mcps/moon-phase-calculator.md) | Calculate exact lunar phases, illumination percentages, and monthly schedules using astronomical algorithms. |
 | [Moving Truck Sizer](../mcps/moving-truck-sizer.md) | Calculate the exact truck size needed for your move based on home type and bulky items. |

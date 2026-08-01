@@ -24,6 +24,8 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Multi-Agent Communication Protocol Validator Alternative](../mcps/multi-agent-communication-protocol-validator-alternative.md) | Analyze and verify the structural integrity of autonomous agent communication logs. |
 | [Outbound Network Firewall Validator](../mcps/outbound-network-firewall-validator.md) | Validates outbound network requests against allowed domains and ports to prevent data exfiltration. |
 | [Password Entropy Calculator](../mcps/password-entropy-calculator.md) | Calculate password entropy, identify pattern risks, and verify security policy compliance. |
+| [PII Redaction Deterministic Scrubber](../mcps/pii-redaction-deterministic-scrubber.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
+| [PII Redaction Deterministic Scrubber Alternative](../mcps/pii-redaction-deterministic-scrubber-alternative.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
 | [Prompt Injection Detection Engine](../mcps/prompt-injection-detection-engine.md) | Scans user inputs and retrieved documents for prompt injection attacks using static pattern matching. |
 | [Prompt Injection Pattern Detector](../mcps/prompt-injection-pattern-detector.md) | Identify and score malicious instruction overrides and system metadata extraction attempts in user text. |
 | [Prompt Injection Pattern Scanner](../mcps/prompt-injection-pattern-scanner.md) | Scans user-supplied text for structural patterns associated with prompt-injection attempts. |
