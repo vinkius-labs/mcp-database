@@ -35,6 +35,7 @@ Connect your **7shifts** account to your AI agent to streamline restaurant workf
 
 
 ## Available Tools (6)
+- **list_time_off**: Retrieve pending or approved employee time-off requests from 7shifts
 - **list_employees**: Retrieve all employees registered in the 7shifts company account
 - **create_employee**: Requires name and email.
 
@@ -43,7 +44,6 @@ Create a new staff profile inside 7shifts with basic contact information
 - **create_shift**: Requires user_id, location_id, and ISO 8601 start/end times.
 
 Assign a new work shift to a 7shifts employee for a specific date and time
-- **list_time_off**: Retrieve pending or approved employee time-off requests from 7shifts
 - **list_locations**: Retrieve all locations, departments, and roles configured in the 7shifts account
 
 

@@ -14,7 +14,7 @@ When asked to find 'all IPv4 addresses' or 'all order IDs' in a 10,000-line log 
 
 
 ## Available Tools (1)
-- **regex_parser_extract**: You provide the text and the regex, and this tool returns an exact array of matches.
+- **extract_regex_matches**: You provide the text and the regex, and this tool returns an exact array of matches.
 
 Extracts exact string matches from a large text using Regular Expressions (Regex)
 

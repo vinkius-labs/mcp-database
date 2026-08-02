@@ -35,7 +35,6 @@ Connect your **ActiveTrail** account to your AI agent to unlock professional ema
 
 
 ## Available Tools (5)
-- **list_contacts**: Retrieve the full directory of subscribers from the ActiveTrail account
 - **create_contact**: Email is required.
 
 Add a new subscriber to the ActiveTrail system with email and personal details
@@ -44,6 +43,7 @@ Add a new subscriber to the ActiveTrail system with email and personal details
 - **send_sms**: Requires the phone number and SMS body text.
 
 Send an immediate SMS text message notification via the ActiveTrail gateway
+- **list_contacts**: Retrieve the full directory of subscribers from the ActiveTrail account
 
 
 ## 💬 Prompt Examples

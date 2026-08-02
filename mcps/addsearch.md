@@ -33,6 +33,15 @@ Connect your **AddSearch** account to your AI agent and turn your site's search 
 
 
 ## Available Tools (10)
+- **search_sorted**: Search indexed content with custom sort
+- **stats_queries**: Requires Secret Key.
+
+Retrieve search query analytics
+- **search_keyword**: Search indexed content by keyword
+- **stats_clicks**: Requires Secret Key.
+
+Retrieve click-through analytics
+- **autosuggest**: Get autocomplete suggestions
 - **delete_document**: Requires Secret Key.
 
 Permanently delete a document
@@ -46,15 +55,6 @@ Add or update an indexed document
 
 List all indexed documents
 - **search_pagination**: Retrieve a specific page of search results
-- **search_keyword**: Search indexed content by keyword
-- **search_sorted**: Search indexed content with custom sort
-- **stats_clicks**: Requires Secret Key.
-
-Retrieve click-through analytics
-- **stats_queries**: Requires Secret Key.
-
-Retrieve search query analytics
-- **autosuggest**: Get autocomplete suggestions
 
 
 ## 💬 Prompt Examples

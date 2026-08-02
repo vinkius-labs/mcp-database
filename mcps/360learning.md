@@ -35,9 +35,6 @@ Empower your corporate education strategy with **360Learning**, the collaborativ
 
 
 ## Available Tools (6)
-- **list_users**: Use this to find specific learner profiles.
-
-List all active learners and administrators in the 360Learning platform
 - **create_user**: Requires the email, first name, and last name of the user.
 
 Register a new learner, author, or administrator account
@@ -51,6 +48,9 @@ Retrieve training completion rates and assessment scores
 - **list_groups**: Useful for finding a specific Group ID for reporting strategies.
 
 List all training groups, departments, or cohorts in the platform
+- **list_users**: Use this to find specific learner profiles.
+
+List all active learners and administrators in the 360Learning platform
 
 
 ## 💬 Prompt Examples

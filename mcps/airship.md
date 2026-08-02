@@ -35,11 +35,11 @@ Connect your **Airship (formerly Urban Airship)** account to your AI agent to un
 
 
 ## Available Tools (10)
-- **send_push_notification**: Send a push alert
-- **list_segments**: List audience segments
 - **get_segment_details**: Get segment criteria
 - **list_named_users**: List named users
 - **associate_named_user**: Link device to user
+- **send_push_notification**: Send a push alert
+- **list_segments**: List audience segments
 - **list_channels**: List app channels
 - **get_channel_details**: Get device metadata
 - **list_static_lists**: g. CSV uploads) in your account.

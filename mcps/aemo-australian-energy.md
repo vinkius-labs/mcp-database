@@ -46,9 +46,6 @@ Your AI becomes an Australian energy analyst, helping you understand the grid, t
 
 
 ## Available Tools (12)
-- **list_facilities**: Filter by fuel technology, status, network, or facility code.
-
-List energy facilities and generation units
 - **get_facility_data**: g. "ER01" for Eraring, "BNGSF1" for Bungala Solar). Shows actual output over time.
 
 Get generation data for a specific energy facility
@@ -72,6 +69,9 @@ Get pollution and emissions data from NPI (National Pollutant Inventory)
 Get renewable energy proportion data
 - **get_market_updates**: Get market updates and social posts from OpenElectricity
 - **get_user_profile**: Get current user profile and API account details
+- **list_facilities**: Filter by fuel technology, status, network, or facility code.
+
+List energy facilities and generation units
 
 
 ## 💬 Prompt Examples

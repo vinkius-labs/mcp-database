@@ -29,17 +29,17 @@ The **Appfigures MCP Server** provides your AI agent with direct access to your 
 
 
 ## Available Tools (11)
-- **get_account_check**: Verify Appfigures account connection
 - **get_external_accounts**: List linked store accounts
-- **get_ranks**: Get daily category and keyword rankings
-- **get_revenue_report**: Get revenue and proceeds data
-- **get_sales_report**: Get sales data (downloads, updates, returns)
 - **get_subscriptions_report**: Get subscription metrics (active, churn, etc.)
 - **get_user_info**: Retrieve authenticated user information
 - **list_featured**: Track when apps are featured on app stores
 - **list_my_products**: List all mobile apps in your Appfigures account
 - **list_reviews**: List app reviews for your products
 - **search_products**: Search for any mobile app across all supported stores
+- **get_account_check**: Verify Appfigures account connection
+- **get_ranks**: Get daily category and keyword rankings
+- **get_revenue_report**: Get revenue and proceeds data
+- **get_sales_report**: Get sales data (downloads, updates, returns)
 
 
 ## 💬 Prompt Examples

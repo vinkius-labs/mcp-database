@@ -34,24 +34,6 @@ Connect your **Umami** instance to any AI agent to monitor your privacy-focused 
 
 
 ## Available Tools (53)
-- **add_team_user**: Add user to team
-- **admin_list_teams**: Returns all teams (Admin only)
-- **admin_list_users**: Returns all users (Admin only)
-- **list_teams**: Returns all teams
-- **delete_website**: Deletes a website
-- **get_me_teams**: Get all teams for the current user
-- **get_me**: Get information about the current session
-- **get_me_websites**: Get all websites for the current user
-- **get_realtime_stats**: Realtime stats within the last 30 minutes
-- **join_team**: Join a team via access code
-- **list_links**: Returns all user links
-- **list_pixels**: Returns all user pixels
-- **list_reports**: Get all reports by website ID
-- **list_websites**: Returns all user websites
-- **login**: Login to self-hosted Umami to get a token
-- **reset_website**: Removes all data related to the website
-- **admin_list_websites**: Returns all websites (Admin only)
-- **create_attribution_report**: Marketing attribution report
 - **create_funnel_report**: Conversion funnel report
 - **create_link**: Creates a link
 - **create_pixel**: Creates a pixel
@@ -62,7 +44,10 @@ Connect your **Umami** instance to any AI agent to monitor your privacy-focused 
 - **create_user**: Creates a user (Admin only)
 - **create_website**: Creates a website
 - **delete_user**: Deletes a user (Admin only)
-- **get_session_activity**: Activity for a session
+- **delete_website**: Deletes a website
+- **get_me_teams**: Get all teams for the current user
+- **get_me**: Get information about the current session
+- **get_me_websites**: Get all websites for the current user
 - **get_session**: Individual session details
 - **get_team_users**: Get team members
 - **get_team_websites**: Get team websites
@@ -74,7 +59,6 @@ Connect your **Umami** instance to any AI agent to monitor your privacy-focused 
 - **get_website_event_data_events**: Event data names and counts
 - **get_website_event_data_fields**: Property and value counts
 - **get_website_event_data**: Event data grouped by event
-- **get_website_events_stats**: Aggregated event statistics
 - **get_website_events**: Website event details
 - **get_website_metrics_expanded**: Expanded metrics including bounces and total time
 - **get_website_metrics**: Metrics for a given time range (type: path, browser, os, etc.)
@@ -83,10 +67,26 @@ Connect your **Umami** instance to any AI agent to monitor your privacy-focused 
 - **get_website_sessions**: Website session details
 - **get_website_stats**: Summarized website statistics (pageviews, visitors, etc.)
 - **get_website**: Gets a website by ID
+- **join_team**: Join a team via access code
+- **list_links**: Returns all user links
 - **send_event**: Send an event to Umami
 - **update_user**: Updates a user (Admin only)
 - **update_website**: Updates a website
 - **verify_token**: Verify if the current token is still valid
+- **add_team_user**: Add user to team
+- **admin_list_teams**: Returns all teams (Admin only)
+- **admin_list_users**: Returns all users (Admin only)
+- **list_teams**: Returns all teams
+- **get_realtime_stats**: Realtime stats within the last 30 minutes
+- **list_pixels**: Returns all user pixels
+- **list_reports**: Get all reports by website ID
+- **list_websites**: Returns all user websites
+- **login**: Login to self-hosted Umami to get a token
+- **reset_website**: Removes all data related to the website
+- **admin_list_websites**: Returns all websites (Admin only)
+- **create_attribution_report**: Marketing attribution report
+- **get_session_activity**: Activity for a session
+- **get_website_events_stats**: Aggregated event statistics
 
 
 ## 💬 Prompt Examples

@@ -37,14 +37,14 @@ Connect your **Airparser** account to your AI agent to unlock professional unstr
 ## Available Tools (10)
 - **list_inboxes**: List Airparser inboxes
 - **get_inbox_details**: Get inbox metadata
-- **parse_document_sync**: Parse document immediately
-- **parse_document_async**: Parse document in background
 - **list_documents**: List documents in inbox
 - **get_document_details**: Get extracted JSON data
 - **get_inbox_schema**: Get extraction field definitions
 - **list_webhooks**: List inbox webhooks
 - **create_webhook**: Add automated data export
 - **delete_webhook**: Remove automated export
+- **parse_document_sync**: Parse document immediately
+- **parse_document_async**: Parse document in background
 
 
 ## 💬 Prompt Examples

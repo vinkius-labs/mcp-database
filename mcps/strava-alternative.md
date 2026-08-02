@@ -36,10 +36,7 @@ Connect your **Strava** account to any AI agent to analyze your fitness data and
 ## Available Tools (31)
 - **explore_segments**: Explore segments by bounds
 - **export_route_gpx**: Export route as GPX
-- **export_route_tcx**: Export route as TCX
-- **list_athlete_clubs**: List athlete clubs
 - **get_activity_streams**: Get activity streams
-- **get_activity**: Get activity details
 - **get_activity_zones**: Get zones for an activity
 - **get_athlete_stats**: Get athlete stats
 - **get_authenticated_athlete**: Get the currently authenticated athlete
@@ -52,17 +49,20 @@ Connect your **Strava** account to any AI agent to analyze your fitness data and
 - **get_segment**: Get segment details
 - **list_activity_comments**: List comments for an activity
 - **list_activity_kudos**: List kudoers for an activity
-- **list_activity_laps**: List laps for an activity
 - **list_athlete_activities**: List athlete activities
 - **list_athlete_routes**: List athlete routes
 - **list_club_activities**: List club activities
 - **list_club_admins**: List club administrators
 - **list_club_members**: List club members
 - **list_segment_efforts**: List segment efforts
-- **list_starred_segments**: List starred segments
 - **star_segment**: Star or unstar a segment
 - **update_activity**: Update an activity
 - **update_athlete**: Update the authenticated athlete
+- **list_athlete_clubs**: List athlete clubs
+- **list_starred_segments**: List starred segments
+- **export_route_tcx**: Export route as TCX
+- **get_activity**: Get activity details
+- **list_activity_laps**: List laps for an activity
 - **create_activity**: Create a manual activity
 - **get_athlete_zones**: Get athlete heart rate and power zones
 

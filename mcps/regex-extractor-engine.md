@@ -20,7 +20,7 @@ LLMs often struggle with strict pattern matching, hallucinating data that isn't 
 
 
 ## Available Tools (1)
-- **regex_extractor_extract**: You provide the text and the regex, and this tool returns an exact array of matches without hallucinating or dropping items.
+- **extract_regex_matches**: You provide the text and the regex, and this tool returns an exact array of matches without hallucinating or dropping items.
 
 Extracts exact string matches from a large text using Regular Expressions (Regex)
 

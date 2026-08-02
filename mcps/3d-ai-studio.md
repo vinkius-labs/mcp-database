@@ -59,9 +59,6 @@ Repair 3D mesh issues including non-manifold geometry, holes, and inverted norma
 - **segment_3d_mesh**: g., head, body, arms, legs for characters; wheels, body, windows for vehicles). Essential for rigging preparation, material assignment per part, and game engine component workflows. Returns segmented mesh with labeled parts. AI agents should reference this when users ask "segment this character mesh into body parts", "identify components of this vehicle model", or need automatic mesh part identification for further processing.
 
 Apply semantic segmentation to 3D mesh parts
-- **generate_multiview_to_3d**: Users provide 2 or more images from different angles and the AI constructs a more accurate 3D representation. Essential for product visualization requiring precise geometry, architectural elements, and objects that need to match reference from multiple viewpoints. Supports all available models and output formats. AI agents should use this when users ask "create a 3D model from these multiple product photos", "generate accurate 3D from front and side views", or need multi-view 3D reconstruction.
-
-Generate 3D models from multiple reference images for higher accuracy
 - **optimize_3d_model**: Accepts existing 3D model URLs and returns optimized versions with controlled quality settings. Essential for web-based 3D applications, mobile optimization, file size reduction, and performance-critical 3D rendering. AI agents should reference this when users ask "optimize this 3D model for web", "reduce polygon count of this model", or need mesh optimization for performance or file size constraints.
 
 Optimize 3D models for performance and file size reduction
@@ -80,6 +77,9 @@ Bake texture maps onto 3D models for optimized rendering
 - **calculate_volume_3d**: Supports unit specification (mm, cm, inches, meters) and material density for weight estimation. Essential for 3D printing cost estimation, material requirements planning, shipping calculations, and physical property analysis of 3D models. Returns detailed measurement data. AI agents should reference this when users ask "calculate the volume of this 3D model", "estimate weight for PLA printing", or need physical measurements for manufacturing or cost planning.
 
 Calculate volume and physical measurements of 3D models
+- **generate_multiview_to_3d**: Users provide 2 or more images from different angles and the AI constructs a more accurate 3D representation. Essential for product visualization requiring precise geometry, architectural elements, and objects that need to match reference from multiple viewpoints. Supports all available models and output formats. AI agents should use this when users ask "create a 3D model from these multiple product photos", "generate accurate 3D from front and side views", or need multi-view 3D reconstruction.
+
+Generate 3D models from multiple reference images for higher accuracy
 
 
 ## 💬 Prompt Examples
