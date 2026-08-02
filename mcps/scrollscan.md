@@ -38,6 +38,7 @@ Connect to **Scrollscan** and bring real-time Scroll L2 blockchain data into you
 - **check_verify_status**: Check Source Code Verification Status
 - **get_account_balance_multi**: Get Ether Balance for Multiple Addresses
 - **get_account_balance**: Get Ether Balance for a Single Address
+- **proxy_get_storage_at**: eth_getStorageAt
 - **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
 - **get_block_number_by_time**: Get Block Number by Timestamp
 - **get_block_reward**: Get Block Rewards by BlockNo
@@ -64,7 +65,6 @@ Connect to **Scrollscan** and bring real-time Scroll L2 blockchain data into you
 - **proxy_gas_price**: eth_gasPrice
 - **proxy_get_block_by_number**: eth_getBlockByNumber
 - **proxy_get_code**: eth_getCode
-- **proxy_get_storage_at**: eth_getStorageAt
 - **proxy_get_transaction_by_hash**: eth_getTransactionByHash
 - **proxy_get_transaction_receipt**: eth_getTransactionReceipt
 

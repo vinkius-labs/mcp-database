@@ -33,6 +33,7 @@ Connect to the **Nearblocks API** to inspect the Near Protocol blockchain. This 
 
 
 ## Available Tools (11)
+- **get_token_details**: Get details of a specific token contract
 - **get_account_details**: Get basic information about a specific Near account
 - **get_account_inventory**: Get NFTs owned by a Near account
 - **get_account_tokens**: Get tokens owned by a Near account
@@ -41,7 +42,6 @@ Connect to the **Nearblocks API** to inspect the Near Protocol blockchain. This 
 - **get_latest_blocks**: Get a list of the most recent blocks
 - **get_network_stats**: Get general network statistics
 - **get_recent_transactions**: Get a list of the most recent transactions
-- **get_token_details**: Get details of a specific token contract
 - **get_token_list**: Get a list of tokens on the network
 - **get_transaction_details**: Get details of a specific transaction
 

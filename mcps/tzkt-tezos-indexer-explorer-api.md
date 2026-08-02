@@ -34,6 +34,13 @@ Connect to the **TzKT API**, the most advanced indexer for the Tezos blockchain.
 
 
 ## Available Tools (25)
+- **get_statistics**: Get network-wide statistics (TPS, volume, etc.)
+- **list_accounts**: Supports filtering by balance, activity, and type.
+
+List accounts with filters
+- **list_bigmap_keys**: List keys in a specific big map
+- **list_contracts**: List smart contracts with filters
+- **list_delegations**: List delegation operations
 - **get_account_balance_history**: Get historical balance changes for an account
 - **get_account_report**: Generate a JSON report of account activity
 - **get_account**: Get detailed information for a specific account
@@ -45,16 +52,9 @@ Connect to the **TzKT API**, the most advanced indexer for the Tezos blockchain.
 - **get_delegator_rewards**: Get delegator rewards per cycle
 - **get_head**: Get the current state of the indexer and blockchain head
 - **get_operations_by_hash**: Get operations by transaction hash
-- **get_statistics**: Get network-wide statistics (TPS, volume, etc.)
-- **list_accounts**: Supports filtering by balance, activity, and type.
-
-List accounts with filters
-- **list_bigmap_keys**: List keys in a specific big map
 - **list_bigmap_updates**: Get update history for a big map
 - **list_bigmaps**: List all big maps
 - **list_blocks**: List blocks with filters
-- **list_contracts**: List smart contracts with filters
-- **list_delegations**: List delegation operations
 - **list_originations**: List contract origination operations
 - **list_staking**: List staking-related operations
 - **list_token_balances**: Get token balances for specific accounts

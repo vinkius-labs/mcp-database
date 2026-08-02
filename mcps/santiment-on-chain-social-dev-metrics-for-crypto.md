@@ -33,16 +33,16 @@ Connect **Santiment** to your AI agent to unlock institutional-grade crypto mark
 
 
 ## Available Tools (4)
-- **filter_projects_by_metric**: g., top 10 projects with DAA > 1000).
-
-Filter projects based on a specific metric threshold
-- **get_metric_multiple_slugs**: Fetch timeseries data for a metric across multiple asset slugs
 - **get_metric_timeseries**: g., daily_active_addresses, price_usd) and asset slug (e.g., bitcoin).
 
 Fetch timeseries data for a specific metric and asset slug
 - **list_projects**: Use this to find valid slugs for metric queries.
 
 List all available projects and their slugs
+- **filter_projects_by_metric**: g., top 10 projects with DAA > 1000).
+
+Filter projects based on a specific metric threshold
+- **get_metric_multiple_slugs**: Fetch timeseries data for a metric across multiple asset slugs
 
 
 ## 💬 Prompt Examples

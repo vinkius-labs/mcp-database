@@ -36,17 +36,17 @@ No more manual searching through web explorers. Your AI acts as a blockchain ana
 
 
 ## Available Tools (11)
-- **list_blocks**: Get a list of recent blocks
+- **get_account_info**: Get basic information for a specific account
+- **list_account_tokens**: List tokens held by an account
+- **list_account_transfers**: Get a list of transfers associated with an account
+- **get_block**: Get detailed information for a specific block
 - **get_event**: Get detailed information for a specific event
 - **list_events**: Get a list of events
 - **get_extrinsic**: Get detailed information for a specific extrinsic
 - **list_extrinsics**: Get a list of recent extrinsics (transactions)
 - **get_token**: Get detailed information for a specific token
 - **list_tokens**: Get a list of tokens on the network
-- **get_account_info**: Get basic information for a specific account
-- **list_account_tokens**: List tokens held by an account
-- **list_account_transfers**: Get a list of transfers associated with an account
-- **get_block**: Get detailed information for a specific block
+- **list_blocks**: Get a list of recent blocks
 
 
 ## 💬 Prompt Examples

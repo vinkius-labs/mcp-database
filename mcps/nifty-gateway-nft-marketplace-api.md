@@ -36,10 +36,10 @@ Connect the **Nifty Gateway** NFT marketplace to your AI agent to explore digita
 - **get_collection**: Get detailed information about a specific collection
 - **get_nifty**: Get detailed information about a specific Nifty
 - **list_collections**: List all collections on the platform
+- **list_user_nifties**: List Nifties owned by the authenticated user
 - **list_nifties**: Supports pagination.
 
 List all Nifties available on the platform
-- **list_user_nifties**: List Nifties owned by the authenticated user
 
 
 ## 💬 Prompt Examples

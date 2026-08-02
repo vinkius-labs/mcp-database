@@ -34,11 +34,9 @@ Connect to the **Rarible Multi-chain NFT Protocol** and empower your AI agent wi
 
 
 ## Available Tools (20)
-- **get_all_activities**: ).
-
-Get all activities
-- **get_all_collections**: Get all NFT collections
-- **get_bid_orders_by_item**: Get bid orders for an NFT
+- **get_activities_by_collection**: Get activities for a collection
+- **get_activities_by_item**: Get activities for an item
+- **get_activities_by_user**: Get activities for a user
 - **get_bid_orders_by_maker**: Get user bid orders
 - **get_buyers_stats**: Get collection buyer stats
 - **get_collection**: Get collection by ID
@@ -51,13 +49,15 @@ Get all activities
 - **get_sell_orders_by_maker**: Get user sell orders
 - **get_sellers_stats**: Get collection seller stats
 - **get_user_ranking**: Get user volume ranking
-- **get_volume_ranking**: Get collection volume ranking
 - **search_items**: Uses POST under the hood but is a read-only query.
 
 Complex search for NFT items
-- **get_activities_by_collection**: Get activities for a collection
-- **get_activities_by_item**: Get activities for an item
-- **get_activities_by_user**: Get activities for a user
+- **get_all_activities**: ).
+
+Get all activities
+- **get_all_collections**: Get all NFT collections
+- **get_bid_orders_by_item**: Get bid orders for an NFT
+- **get_volume_ranking**: Get collection volume ranking
 
 
 ## 💬 Prompt Examples

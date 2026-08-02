@@ -34,6 +34,12 @@ Connect to the **Theta Network** ecosystem to manage decentralized infrastructur
 
 ## Available Tools (30)
 - **ai_list_deployments**: List all deployments in a project
+- **rpc_call_smart_contract**: Simulate a smart contract execution locally
+- **video_list_ingestors**: List available Edge Ingestors
+- **video_list**: List all videos for a service account
+- **video_search**: Search videos by metadata
+- **ai_create_deployment**: Launch a new AI model or Jupyter Notebook
+- **ai_delete_deployment**: Delete an AI deployment
 - **ai_list_standard_templates**: List built-in AI templates
 - **ai_list_vm_resources**: g., vm_gt1 for NVIDIA T4).
 
@@ -50,21 +56,15 @@ List available machine types
 - **rpc_get_block**: Get block details by hash
 - **rpc_broadcast_raw_transaction_async**: Submit a signed transaction asynchronously
 - **rpc_broadcast_raw_transaction**: Submit a signed transaction synchronously
-- **rpc_call_smart_contract**: Simulate a smart contract execution locally
 - **rpc_get_pending_transactions**: Get pending transactions
 - **rpc_get_transaction**: Get transaction details by hash
 - **rpc_get_version**: Get Theta blockchain version
 - **video_create_livestream**: Create a livestream object
 - **video_create_upload_url**: Create a Video Upload URL
 - **video_get**: Get video details
-- **video_list_ingestors**: List available Edge Ingestors
-- **video_list**: List all videos for a service account
-- **video_search**: Search videos by metadata
 - **video_select_ingestor**: Assign an ingestor to a stream
 - **video_transcode**: Transcode a video
 - **video_unselect_ingestor**: Release an ingestor
-- **ai_create_deployment**: Launch a new AI model or Jupyter Notebook
-- **ai_delete_deployment**: Delete an AI deployment
 
 
 ## 💬 Prompt Examples
