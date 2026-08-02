@@ -7,23 +7,39 @@
 
 **Category:** [ecommerce](../categories/ecommerce.md)
 
-Manage sales, products, and subscriptions via Hotmart API.
+Sell online courses, digital products, and memberships on the leading platform for digital creators in Latin America and beyond.
 
 ## Description
-Empower your AI agents to manage your digital products business on Hotmart. This MCP server provides tools to list products, track sales history, manage subscriptions, view commissions, and monitor affiliates directly through the Hotmart API. Perfect for automating creator workflows.
+Connect your **Hotmart** account to any AI agent and manage your digital product business through natural conversation.
+
+### What you can do
+
+- **Product Catalog** — List all your digital products (courses, ebooks, memberships) with pricing and status
+- **Sales History** — Browse all transactions with status, buyer details, and commission breakdowns
+- **Revenue Summary** — Get aggregated sales data including total revenue, number of sales, and average ticket
+- **Subscription Management** — List all active subscriptions with renewal dates and payment status
+- **Student Tracking** — Browse all enrolled students and inspect individual course completion progress
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Hotmart Client ID and Client Secret from the developer portal
+3. Start managing your products from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Digital Creators** — monitor product sales, track student engagement, and review revenue without opening the Hotmart dashboard
+- **Course Authors** — check student progress, identify drop-off points, and manage subscriber lists
+- **Affiliate Managers** — review sales commissions, track affiliate performance, and audit transaction histories
 
 
-## Available Tools (10)
-- **get_sale_by_user**: Finds sales associated with a specific user email
-- **list_affiliates**: Lists affiliates for your products
-- **list_commissions**: Lists commissions for sales
-- **list_payments**: Lists payments received
-- **list_products**: Lists products in your Hotmart account
-- **list_sales_history**: Lists sales history
-- **list_subscriptions**: Lists product subscriptions
-- **list_webhooks**: Lists configured webhooks
-- **get_me**: Gets current authenticated user info
-- **get_sales_report**: Retrieves a sales report
+## Available Tools (6)
+- **get_sales_history**: Get sales history
+- **get_sales_summary**: Get sales summary
+- **get_student_progress**: Get progress for a student
+- **list_products**: List all your products
+- **list_students**: List students (members)
+- **list_subscriptions**: List active subscriptions
 
 
 ## 💬 Prompt Examples
@@ -31,38 +47,38 @@ Empower your AI agents to manage your digital products business on Hotmart. This
 Here are some examples of how you can interact with the **Hotmart** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Show me the last 10 sales in my Hotmart account."
+> "Show all my products with sales data and the revenue summary for this month."
 
 **🤖 AI Agent:**
-> I've pulled the recent sales data. Over the last 10 transactions, you've accumulated $425.50 in net commissions. Your top-selling product was 'Advanced AI Prompting Course' with 6 conversions this week alone.
+> Your products: 1) 'AI Mastery Course' — R$ 297, Active, 1,240 total sales. 2) 'Python Bootcamp' — R$ 197, Active, 890 total sales. 3) 'Data Science eBook' — R$ 47, Active, 2,100 total sales. Revenue summary (April 2025): Total revenue: R$ 48,230. Number of sales: 312. Average ticket: R$ 154.58. Top performer: 'AI Mastery Course' (R$ 28,710, 58.5% of revenue). Active subscriptions: 89. Would you like to see the sales history or student progress?
 
 ---
 
 **👤 You:**
-> "List all my products on Hotmart."
+> "Show student progress for the AI Mastery Course — who is falling behind?"
 
 **🤖 AI Agent:**
-> You have 3 active digital products registered: 1. 'Masterclass SEO' (ID: 99120), 2. 'Email Templates' (ID: 99144), 3. 'Consulting Calls' (ID: 99201). Let me know if you would like me to list their individual conversion rates.
+> AI Mastery Course: 1,240 enrolled students. Completion breakdown: Completed (100%): 312 students (25.2%). Active (50-99%): 456 students (36.8%). At risk (10-49%): 289 students (23.3%). Inactive (<10%): 183 students (14.8%). Students falling behind (inactive >30 days): 1) Maria Silva (student_891) — 12% complete, last activity 45 days ago. 2) João Santos (student_902) — 8% complete, 38 days. 3) Ana Costa (student_915) — 22% complete, 35 days. Module with highest drop-off: Module 4 'Neural Networks' (42% abandon rate). Would you like to check subscriptions or get the full sales history?
 
 ---
 
 **👤 You:**
-> "Check for active subscriptions."
+> "Show the last 5 sales transactions and list all active subscriptions."
 
 **🤖 AI Agent:**
-> Scanning subscriptions... You currently stand at 145 active recurring subscribers, generating approximately $2,900 MRR. There were 2 new signups today and 1 cancellation.
+> Last 5 sales: 1) 'AI Mastery Course' — R$ 297, buyer: pedro@email.com, status: approved, commission: R$ 89.10 (30%). 2) 'Data Science eBook' — R$ 47, buyer: lucas@email.com, approved. 3) 'Python Bootcamp' — R$ 197, buyer: carla@email.com, approved. 4) 'AI Mastery Course' — R$ 297, buyer: fernanda@email.com, approved. 5) 'Data Science eBook' — R$ 47, buyer: rafael@email.com, refunded. Active subscriptions: 89 total. Monthly: 52 (avg R$ 49/mo). Annual: 37 (avg R$ 397/yr). Next renewals this week: 8 subscriptions. Churn rate: 4.2% monthly. Would you like a detailed revenue breakdown?
 
 
 ## ❓ FAQ
 
-**Q: How do I get my Hotmart API credentials?**
-You can find your Client ID and Client Secret in the Hotmart Developers platform under 'Credentials'.
+**Q: Can I track how many students completed my course?**
+Yes. Use `list_students` to see all enrolled students across your products. Then use `get_student_progress` with a Student ID to see their course completion percentage, modules accessed, and last activity date. This helps identify students at risk of dropping off.
 
-**Q: Can I track affiliate sales?**
-Yes, the list_affiliates and list_sales_history tools allow you to monitor affiliate performance.
+**Q: Does Hotmart require two credentials for authentication?**
+Yes. Hotmart uses OAuth 2.0 Client Credentials flow. You need a **Client ID** and a **Client Secret**, generated in the Hotmart Developer Portal. These are used to obtain a Bearer token automatically — the server handles token exchange internally.
 
-**Q: Is the sales report real-time?**
-Yes, all data is retrieved directly from Hotmart's servers in real-time.
+**Q: Can I view a detailed breakdown of my sales revenue?**
+Yes. Use `get_sales_summary` for aggregated data including total revenue, number of sales, and average ticket. Use `get_sales_history` for individual transactions with status, price breakdowns, commissions, and buyer information. Combine with `list_products` to correlate revenue per product.
 
 
 ## Installation & Usage

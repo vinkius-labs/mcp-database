@@ -38,8 +38,8 @@ Connect your AI agent to the **GetYourGuide** global marketplace to automate tra
 
 ## Available Tools (12)
 - **check_activity_availability**: Check open slots
-- **search_by_destination**: Filter by city
 - **search_travel_activities**: Search tours/activities
+- **search_by_destination**: Filter by city
 - **get_partner_details**: Get account identity
 - **get_booking_status**: Check booking details
 - **get_cart_details**: Get cart metadata

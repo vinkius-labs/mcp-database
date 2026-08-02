@@ -7,45 +7,63 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Manage blog posts, track authors, and oversee static pages via AI agents with Ghost CMS.
+Publish and monetize your content with a modern headless CMS built for newsletters, memberships, and independent creators.
 
 ## Description
-Connect your **Ghost** publication to any AI agent to automate your content management workflows through the Model Context Protocol (MCP). Ghost is a powerful headless Node.js CMS tailored for modern publishing. This MCP server enables you to retrieve published posts, manage taxonomy tags, and fetch site configurations directly through natural conversation using the Ghost Content API.
+Connect your **Ghost** publishing account to any AI agent and take full control of your content management and membership workflows through natural conversation.
 
-### Key Features
+### What you can do
 
-- **Content Discovery** — List all published blog posts and static pages, retrieving detailed HTML content and metadata.
-- **Taxonomy Oversight** — Retrieve and list all categorization tags to understand your content architecture.
-- **Author Management** — Fetch profile details for active writers and contributors across the publication.
-- **Site Configuration** — Access global settings, routing rules, and title schemas programmatically.
-- **Subscription Insights** — Retrieve active membership tiers to understand paywall rules and pricing layers.
-- **Real-time Synchronization** — Keep your headless CMS content accessible to your AI assistant without leaving your primary workspace.
+- **Content Orchestration** — List and manage all blog posts (published, draft, scheduled) and retrieve detailed HTML content and metadata programmatically
+- **Member Intelligence** — Query your subscriber directory and retrieve detailed profiles, including join dates and membership tiers to monitor audience growth
+- **Site Navigation** — List and oversee static site pages (About, Contact) and manage content tags to maintain a perfectly organized site taxonomy
+- **Publishing Control** — Create new posts or drafts and update publishing statuses directly through your agent to streamline your editorial pipeline
+- **Site Visibility** — Retrieve general site settings, newsletter configurations, and active membership offers using natural language commands
 
 ### How it works
 
-1. Subscribe to this server through the Vinkius Marketplace
-2. Enter your Ghost Base URL and Content API Key (found in Integrations)
-3. Start managing your publication from Claude, Cursor, or any MCP client
+1. Subscribe to this server
+2. Retrieve your **Admin API Key** and **Admin Domain** from Ghost (Settings > Integrations > Custom Integration)
+3. Start managing your digital publication from Claude, Cursor, or any MCP client
+
+No more manual dashboard navigation to check post statuses or member counts. Your AI acts as your dedicated content strategist and site manager.
 
 ### Who is this for?
 
-- **Content Managers** — quickly retrieve published post data or list active authors without manual dashboard navigation.
-- **Frontend Developers** — automate the retrieval of taxonomy tags and site configuration via simple AI commands.
-- **Editorial Leads** — get a real-time overview of the static pages and subscription tiers active on the site.
+- **Content Managers** — instantly retrieve post details and manage drafts without opening the Ghost admin panel
+- **Digital Publishers** — monitor membership tiers and verify newsletter configurations using natural language
+- **Marketing Teams** — automate site settings querying to orchestrate cross-platform content strategies
 
 
-## Available Tools (11)
-- **verify_api_connection**: Check connection
-- **get_post_by_slug**: Get post details
-- **get_author_details**: Get author profile
-- **get_page_by_slug**: Get page details
-- **get_site_settings**: Get site settings
-- **get_tag_details**: Get tag metadata
-- **list_subscription_tiers**: List subscription tiers
-- **list_blog_authors**: List authors
-- **list_static_pages**: List static pages
-- **list_published_posts**: List published posts
-- **list_content_tags**: List categories/tags
+## Available Tools (10)
+- **create_post**: Requires a title and supports optional HTML content. The post is created as a "draft" by default but can be set to "published" immediately.
+
+Create a new Ghost post or draft
+- **get_post_details**: Essential for reviewing the full content of an article.
+
+Get details for a specific post
+- **get_site_settings**: Essential for verifying site identity.
+
+Get Ghost site settings and configuration
+- **list_members**: Includes emails, status, and join dates.
+
+List all site members
+- **list_newsletters**: Newsletters are used to send content updates to members.
+
+List all configured newsletters
+- **list_offers**: List active membership offers
+- **list_pages**: g., About, Contact) defined on the Ghost site. Pages are similar to posts but used for non-blog content.
+
+List all static site pages
+- **list_posts**: Includes basic metadata and post IDs for detailed retrieval.
+
+List all Ghost blog posts
+- **list_tags**: Useful for organizing and filtering posts.
+
+List all content tags
+- **list_membership_tiers**: g., Free, Premium) available on the site. Useful for understanding the subscription structure.
+
+List membership tiers and plans
 
 
 ## 💬 Prompt Examples
@@ -53,41 +71,38 @@ Connect your **Ghost** publication to any AI agent to automate your content mana
 Here are some examples of how you can interact with the **Ghost** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List the 5 most recent published posts."
+> "List all my draft posts in Ghost."
 
 **🤖 AI Agent:**
-> Retrieving posts... I found 5 recent articles, including 'Welcome to Ghost' and 'Writing with Markdown'. Would you like to read the full content of any of them?
+> I've retrieved your drafts. You have 3 posts in progress: 'AI Roadmap 2026', 'New Feature Launch', and 'Community Spotlight'. Would you like the full HTML content for any of these?
 
 ---
 
 **👤 You:**
-> "Get the content of the post with the slug 'welcome'."
+> "Create a new draft titled 'Welcome to our MCP Blog'."
 
 **🤖 AI Agent:**
-> Fetching post... The post 'Welcome' was published on October 1st. The main content is: 'Welcome, it's great to have you here...'.
+> Draft created! 'Welcome to our MCP Blog' is now live in your Ghost admin panel (ID: 654321). It is currently set to 'draft' status. Should I add some initial content for you?
 
 ---
 
 **👤 You:**
-> "List all active subscription tiers."
+> "Show me a list of all site members and their emails."
 
 **🤖 AI Agent:**
-> Fetching tiers... Your publication has 2 active tiers: 'Free' ($0/month) and 'Premium' ($5/month).
+> Fetching member directory... You have 150 registered members. Recent subscribers include 'Alice' (alice@example.com) and 'Bob' (bob@example.com). Would you like to check their membership tiers?
 
 
 ## ❓ FAQ
 
-**Q: How do I get a Content API Key for Ghost?**
-Log in to your Ghost Admin dashboard, navigate to Settings > Integrations, and add a Custom Integration. You will find the Content API Key there.
+**Q: How do I find my Ghost Admin API Key?**
+Log in to your Ghost admin panel, navigate to **Settings** > **Integrations**, click **Add custom integration**, and copy the Admin API Key and API URL.
 
-**Q: Can I publish new posts using this integration?**
-No, this integration uses the Content API which is read-only. It is designed to safely retrieve and query your published content.
+**Q: What is the Admin Domain?**
+It is the API URL provided in your custom integration settings (e.g., `https://your-site.ghost.io`). Do not include the `/ghost/api/admin/` part.
 
-**Q: What is the Base URL format?**
-Your Base URL is the root domain where your Ghost site is hosted, for example: 'https://demo.ghost.io'. Do not include '/ghost/api/'.
-
-**Q: How do I fetch related tags and authors for a post?**
-Use the 'include' parameter in the 'get_post_by_slug' tool and pass the string 'tags,authors'.
+**Q: Can I publish a post immediately via AI?**
+Yes! When using the `create_post` tool, set the `status` parameter to 'published' to make your content live instantly.
 
 
 ## Installation & Usage

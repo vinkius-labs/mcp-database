@@ -36,7 +36,6 @@ Connect your **HERE Technologies** account to any AI agent and take full control
 
 
 ## Available Tools (10)
-- **autosuggest_query**: Identify precise active arrays spanning native Location suggestions
 - **calculate_v8_isoline**: router` optimizing where a user can travel within a set `time` or `distance` limit.
 
 Dispatch an automated validation check routing explicit Reachability Polygons
@@ -48,6 +47,7 @@ Dispatch an automated validation check routing explicit Reachability Polygons
 
 Retrieve the exact structural matching verifying Delivery Flow speeds
 - **get_weather_observation**: Enumerate explicitly attached structured rules exporting active Meteorology
+- **autosuggest_query**: Identify precise active arrays spanning native Location suggestions
 - **lookup_place_id**: Irreversibly vaporize explicit App nodes dropping live Place contexts
 - **reverse_geocode**: Perform structural extraction of properties driving active Pin boundaries
 

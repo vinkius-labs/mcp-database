@@ -7,53 +7,49 @@
 
 **Category:** [erp-operations](../categories/erp-operations.md)
 
-Automate business management via Holded — manage invoices, contacts, and projects directly from any AI agent.
+Run your business in Spain and Latin America with invoicing, accounting, CRM, and inventory that speaks your language natively.
 
 ## Description
-Connect your **Holded** ERP platform to any AI agent and take full control of your invoicing, CRM, and project management through natural conversation.
+Connect your **Holded** account to any AI agent and take full control of your business operations and ERP workflows through natural conversation.
 
 ### What you can do
 
-- **Invoicing Oversight** — List all documents, retrieve detailed invoice data, and monitor payment statuses efficiently.
-- **CRM & Contact Management** — Access lists of clients, suppliers, and leads, and retrieve full profile information for better relationship management.
-- **Project & Task Tracking** — List active projects and monitor tasks across your entire portfolio to ensure deadlines are met.
-- **Inventory & Products** — Access your product catalog and update stock levels directly from the chat interface.
-- **Business Intelligence** — Retrieve account and organization metadata to maintain a high-level overview of your business operations.
-- **Unified ERP** — Bridge the gap between your accounting and operations using the comprehensive Holded API.
+- **Sales Lifecycle** — Manage everything from quotes and sales orders to invoices and credit notes programmatically
+- **Purchase Tracking** — Monitor supplier relationships and manage purchase orders and invoices with ease
+- **CRM & Contacts** — Organize your customer base, inventory products, and business expenses in one centralized hub
+- **Treasury & Payments** — Monitor payments, treasury accounts, and financial health directly through your agent
+- **Inventory Control** — List and manage products and stock levels to ensure your business never misses a beat
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Holded API Key (found in Settings > Developers)
-3. Start managing your business from Claude, Cursor, or any MCP-compatible client
+2. Generate an API Key in your Holded settings (Settings > Developers)
+3. Start managing your business accounting and CRM from Claude, Cursor, or any MCP client
 
-No more manual navigating through complex ERP modules for simple data lookups. Your AI assistant acts as a dedicated Business Operations Manager or Project Coordinator.
+No more digging through complex ERP menus to find a customer balance or create a quick invoice. Your AI acts as your dedicated business administrator.
 
 ### Who is this for?
 
-- **Business Owners** — instantly retrieve invoice statuses and company performance data.
-- **Project Managers** — automate the oversight of tasks and project lifecycles across multiple teams.
-- **Operations Leads** — maintain a real-time overview of inventory levels and customer contact data.
+- **Small to Medium Businesses** — streamline daily operations and billing without manually entering every record
+- **Accountants & Controllers** — quickly retrieve financial reports, unpaid invoices, and expense summaries
+- **Operations Managers** — maintain inventory levels and manage supplier relationships through automated queries
 
 
-## Available Tools (11)
-- **get_contact_details**: Get detailed profile information for a specific contact
-- **get_invoice_details**: Get detailed information about a specific invoice
-- **get_api_profile**: Retrieve information about the authenticated account
-- **get_product_details**: Get detailed information for a specific product
-- **get_project_details**: Get detailed configuration and status for a project
-- **list_contacts**: Useful for finding the contact ID required for documents.
+## Available Tools (12)
+- **list_purchase_orders**: List purchase orders
+- **list_contacts**: List CRM contacts
+- **create_invoice**: Requires contact ID and items.
 
-List all contacts (clients, suppliers, leads) in Holded
-- **list_invoices**: Use this to monitor billing and find IDs for specific document actions.
-
-List all invoices in your Holded account
-- **list_products**: List all products and services in your Holded inventory
-- **list_projects**: List all active and past projects
-- **list_all_tasks**: List tasks across all projects
-- **update_product_stock**: Pass details as a JSON string in "body_json" (requires warehouseId and new quantity).
-
-Update the stock level for a specific product
+Create a new invoice
+- **list_credit_notes**: List all credit notes
+- **list_expenses**: List business expenses
+- **list_invoices**: List all sales invoices
+- **list_payments**: List recent payments
+- **list_products**: List inventory products
+- **list_purchase_invoices**: List purchase invoices
+- **list_quotes**: List all quotes
+- **list_sales_orders**: List all sales orders
+- **list_webhooks**: List active webhooks
 
 
 ## 💬 Prompt Examples
@@ -61,41 +57,38 @@ Update the stock level for a specific product
 Here are some examples of how you can interact with the **Holded** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active projects and show the last task for each."
+> "List all my unpaid sales invoices from Holded."
 
 **🤖 AI Agent:**
-> I've retrieved your projects. You have 3 active workflows: 'Website Launch' (ID: proj_102), 'Q2 Campaign', and 'Product Beta'. For the Website Launch, the latest task is 'Final QA Check' (ID: task_992). Would you like to see the details for any of these?
+> I've retrieved 8 unpaid invoices. The largest one is for 'Global Tech Solutions' (€1,200.00) and is 5 days overdue. Would you like to see the full list or the details for this specific invoice?
 
 ---
 
 **👤 You:**
-> "Find contact 'Acme Corp' and show their recent invoices."
+> "Create a new contact 'John Doe' as a lead with email 'john@example.com'."
 
 **🤖 AI Agent:**
-> I've found Acme Corp (ID: contact_552). They have 2 recent invoices: INV-2024-01 ($1,250.00 - Paid) and INV-2024-05 ($3,000.00 - Pending). Would you like to see the items included in the pending invoice?
+> Contact 'John Doe' has been successfully created as a Lead in your Holded CRM (ID: 654321). I've also mapped their email address. What's the next step for this lead?
 
 ---
 
 **👤 You:**
-> "Show me the details for product ID 'prod_992' and its stock level."
+> "Show me the last 5 business expenses."
 
 **🤖 AI Agent:**
-> Accessing inventory... Product 'prod_992' (Wireless Mouse) currently has 45 units in stock across 2 warehouses. The main warehouse has 30 units and the secondary has 15. Should I update the stock level for any specific location?
+> Fetching recent expenses... Here are the last 5: 'Office Supplies' (€45.00), 'Software Subscription' (€29.99), 'Travel' (€120.00), 'Utilities' (€85.50), and 'Marketing' (€200.00). Total for these entries is €480.49.
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Holded API Key?**
-Log in to your Holded account, click on the **Settings** icon (top right), go to **Developers**, and you will find your unique **API Key** listed there. You can create multiple keys for different integrations.
+**Q: Where do I find my API Key?**
+You can generate your API key inside your Holded account under **Settings** > **Developers**.
 
-**Q: What document types are supported in the invoicing tools?**
-This integration currently focuses on the `invoice` document type. For other types like sales orders or purchase orders, you can use the generic `list_invoices` logic if they are mapped under the same module in your instance.
+**Q: Does the integration support inventory management?**
+Yes, you can list and manage products, variants, and stock levels using the `list_products` and related tools.
 
-**Q: Can I update stock levels through this integration?**
-Yes! Use the `update_product_stock` tool. You must provide the product ID and a JSON string containing the warehouse ID and the new quantity to update your inventory.
-
-**Q: Is the integration secure for ERP data?**
-Absolutely. The integration uses official Holded API keys in the request header over HTTPS. Your credentials and business data are encrypted and stored securely within the Vinkius Cloud infrastructure.
+**Q: Can I create invoices automatically with my AI agent?**
+Yes, the server includes tools to create sales invoices, quotes, and credit notes by providing the necessary customer and item details.
 
 
 ## Installation & Usage

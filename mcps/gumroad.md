@@ -5,48 +5,47 @@
 
 ## Overview
 
-**Category:** [money-moves](../categories/money-moves.md)
+**Category:** [ecommerce](../categories/ecommerce.md)
 
-Automate e-commerce via Gumroad — manage products, sales, and license verification directly from any AI agent.
+Sell digital products, memberships, and physical goods directly to your audience with a checkout that handles everything.
 
 ## Description
-Connect your **Gumroad** creator account to any AI agent and take full control of your digital store and sales data through natural conversation.
+Connect your **Gumroad** account to any AI agent and take full control of your digital products and e-commerce workflows through natural conversation.
 
 ### What you can do
 
-- **Product Management** — List all products in your store, retrieve detailed descriptions, and check pricing information.
-- **Sales Monitoring** — Access your sales history, inspect individual transactions, and track revenue growth.
-- **License Verification** — Instantly verify license keys for software, courses, or digital assets directly from the chat.
-- **Refund Handling** — Process refunds for specific sales efficiently without manual dashboard navigation.
-- **Subscriber Insights** — Retrieve your subscriber lists to better understand your audience and growth.
-- **Payout Tracking** — Monitor your payout history and account balances seamlessly.
+- **Product Management** — List all your digital products and retrieve detailed metadata, pricing, and shareable URLs programmatically
+- **Sales Intelligence** — Monitor transaction history with precise date filters to track revenue and customer acquisition trends
+- **Offer Code Automation** — Create and manage discount codes (fixed or percentage-based) to drive marketing campaigns and sales
+- **Customer Relationships** — List and manage product-specific subscribers to maintain direct communication with your audience
+- **Store Performance** — Retrieve complete transaction details for any sale ID to provide high-fidelity customer support
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Gumroad Access Token
-3. Start managing your e-commerce store from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your Application Token from your Gumroad Dashboard (Settings > Advanced > Application tokens)
+3. Start managing your creator business from Claude, Cursor, or any MCP client
 
-No more manual exporting of CSVs or jumping between store tabs. Your AI assistant acts as a dedicated store manager or operations specialist.
+No more manual status checking or complex store management through different tabs. Your AI acts as your dedicated store manager.
 
 ### Who is this for?
 
-- **Digital Creators** — instantly retrieve product performance and verify student/customer licenses.
-- **E-commerce Managers** — automate the process of handling refund requests and monitoring daily sales.
-- **Customer Support Agents** — quickly check transaction details and license statuses during customer interactions.
+- **Digital Creators** — automate discount code generation and monitor sales performance through natural language
+- **Customer Success Managers** — quickly retrieve customer transaction data to verify purchases and handle support requests
+- **Growth Marketers** — track subscriber lists and campaign performance across multiple products without leaving your workspace
 
 
-## Available Tools (10)
-- **list_payers**: List customers who have purchased from you
-- **list_payouts**: List your Gumroad payouts history
-- **list_products**: List all products in your Gumroad account
-- **list_sales**: List all sales/transactions
-- **list_subscribers**: List all subscribers to your products or newsletters
-- **refund_sale**: Refund a specific sale
-- **verify_license**: Verify a license key for a specific product
-- **get_my_profile**: Get information about your Gumroad user profile
-- **get_product**: Get detailed information about a specific product
-- **get_sale**: Get detailed information about a specific sale
+## Available Tools (8)
+- **list_products**: List your Gumroad products
+- **get_product_details**: Get details for a product
+- **get_sale_details**: Get details for a specific sale
+- **create_offer_code**: Create a new discount code
+- **get_user_profile**: Get your Gumroad account details
+- **list_offer_codes**: List discount codes for a product
+- **list_sales**: Supports date filtering.
+
+List recent sales
+- **list_product_subscribers**: List subscribers for a product
 
 
 ## 💬 Prompt Examples
@@ -54,41 +53,38 @@ No more manual exporting of CSVs or jumping between store tabs. Your AI assistan
 Here are some examples of how you can interact with the **Gumroad** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all products in my Gumroad store."
+> "List all my products on Gumroad."
 
 **🤖 AI Agent:**
-> I've retrieved your products. You have 5 active items: 'Mastering AI' ($49.00), 'DevOps Toolkit' ($29.00), 'Python Course' ($99.00), and 2 more. Which one would you like to see more details for?
+> I've retrieved your digital products. You have 5 active items, including 'Advanced AI Guide' ($49.00) and 'MCP Templates' ($19.00). Would you like the shareable URLs for any of these?
 
 ---
 
 **👤 You:**
-> "Show me the sales history for the last 24 hours."
+> "Show me the sales from the last 7 days."
 
 **🤖 AI Agent:**
-> Fetching recent transactions... You've had 12 sales in the last 24 hours, totaling $588.00 in gross revenue. The most recent purchase was 'Mastering AI' by customer@example.com. Should I list all individual transactions?
+> Scanning transaction history... In the last 7 days, you've had 12 sales totaling $345.00. The best-selling product was 'MCP Templates'. Would you like a breakdown of each transaction?
 
 ---
 
 **👤 You:**
-> "Verify license key ABC-123 for the DevOps Toolkit."
+> "Create a 20% discount code named 'SUMMER26' for my AI Guide product."
 
 **🤖 AI Agent:**
-> Checking license key... The key ABC-123 for 'DevOps Toolkit' is VALID. It has been used 1 time out of a maximum of 3 allowed activations. The customer email is buyer@example.com.
+> Done! I've created the offer code 'SUMMER26' for your 'Advanced AI Guide'. It provides a 20% discount and is ready for use on your checkout page.
 
 
 ## ❓ FAQ
 
-**Q: How do I get my Gumroad Access Token?**
-Log in to your Gumroad account, navigate to **Settings > Advanced**, and scroll down to the 'Application' section to create an application or generate a personal access token.
+**Q: How do I find my Application Token for Gumroad?**
+Log in to your Gumroad account, navigate to **Settings** > **Advanced**, and scroll down to the **Application tokens** section to create a new one.
 
-**Q: Can I verify customer license keys through this integration?**
-Yes! Use the `verify_license` tool by providing the `product_id` and the `license_key` provided by the customer. The agent will confirm if the key is valid and how many times it has been used.
+**Q: Can I create discount codes with my AI agent?**
+Yes! The `create_offer_code` tool allows your agent to generate new coupons for any of your products with fixed or percentage discounts.
 
-**Q: Does this integration support processing refunds?**
-Yes, you can use the `refund_sale` tool with a specific sale ID to initiate a refund directly from your AI agent.
-
-**Q: Is my sales data secure?**
-Absolutely. The integration uses OAuth 2.0 Bearer tokens and communicates only with Gumroad's official API over HTTPS. Your token is encrypted and stored securely in the Vinkius Cloud.
+**Q: Does the integration support checking specific customer info?**
+The `get_sale_details` tool provides comprehensive data for any transaction, including the customer's email and purchase metadata.
 
 
 ## Installation & Usage

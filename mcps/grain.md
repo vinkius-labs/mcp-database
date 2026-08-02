@@ -40,17 +40,17 @@ Connect your **Grain.com** account to any AI agent and take full control of your
 
 ## Available Tools (12)
 - **list_recordings**: List all meeting recordings in the Grain workspace
-- **get_recording**: Retrieve full details of a specific meeting recording
 - **list_highlights**: List all highlights (curated clips) from a recording
-- **get_transcript**: Retrieve the full timestamped transcript of a meeting with speaker names
-- **list_tags**: List all tags used across recordings and highlights
-- **search_recordings**: Search across all meeting recordings by keyword
-- **get_action_items**: Extract all action items identified from a recording
 - **list_shared_clips**: List all clips that have been shared from the workspace
 - **get_current_user**: Retrieve the authenticated Grain user profile
 - **list_workspace_members**: List all members of the Grain workspace
+- **get_recording**: Retrieve full details of a specific meeting recording
+- **get_transcript**: Retrieve the full timestamped transcript of a meeting with speaker names
+- **search_recordings**: Search across all meeting recordings by keyword
+- **get_action_items**: Extract all action items identified from a recording
 - **upload_video**: Upload an external video URL for processing by Grain
 - **get_insights**: Retrieve AI-generated insights from a recording
+- **list_tags**: List all tags used across recordings and highlights
 
 
 ## 💬 Prompt Examples

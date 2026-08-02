@@ -36,18 +36,6 @@ Search items within a specific Internet Archive collection
 - **search_by_creator**: Creator names should match item metadata. Examples: "George Orwell", "NASA", "Charlie Chaplin", "Project Gutenberg". Use this to find the complete works of an author or content from an organization.
 
 Search for all items by a specific creator or author
-- **search_by_date_range**: Combines a text query with year filtering. Example: query="science fiction", startYear="1950", endYear="1959" finds 1950s sci-fi. Use this for historical content discovery.
-
-Search for items within a specific year range
-- **search_fulltext**: Returns identifier, title, and description. Use this when you need to find items containing specific terms in their descriptions. Limited to 25 results by default.
-
-Full-text search across item descriptions and metadata
-- **search_by_language**: Examples: "English", "French", "Spanish", "Portuguese", "German". Use this to find content in a specific language.
-
-Search for items in a specific language
-- **search_by_mediatype**: Use this to filter by format type.
-
-Search for items of a specific media type
 - **search_by_publisher**: Examples: "Penguin Books", "Marvel Comics", "National Geographic". Use this to find all content from a specific publisher.
 
 Search for items by publisher name
@@ -63,6 +51,18 @@ Universal search across 40M+ items in the Internet Archive
 - **search_top_downloads**: Optional mediatype filter narrows to a specific format (texts, movies, audio, software). Use this to find popular content.
 
 Get the most downloaded items from the Internet Archive
+- **search_by_date_range**: Combines a text query with year filtering. Example: query="science fiction", startYear="1950", endYear="1959" finds 1950s sci-fi. Use this for historical content discovery.
+
+Search for items within a specific year range
+- **search_fulltext**: Returns identifier, title, and description. Use this when you need to find items containing specific terms in their descriptions. Limited to 25 results by default.
+
+Full-text search across item descriptions and metadata
+- **search_by_language**: Examples: "English", "French", "Spanish", "Portuguese", "German". Use this to find content in a specific language.
+
+Search for items in a specific language
+- **search_by_mediatype**: Use this to filter by format type.
+
+Search for items of a specific media type
 
 
 ## 💬 Prompt Examples

@@ -37,6 +37,9 @@ No more manual exporting of time reports. Your AI assistant acts as a dedicated 
 
 
 ## Available Tools (11)
+- **list_projects**: List all projects in the account
+- **list_time_entries**: List tracked time entries
+- **update_client**: Update an existing client name
 - **delete_client**: Permanently delete a client
 - **create_client**: Create a new client in Harvest
 - **create_invoice**: Create a new invoice for a client
@@ -45,9 +48,6 @@ No more manual exporting of time reports. Your AI assistant acts as a dedicated 
 - **get_my_profile**: Get information about the current authenticated user
 - **list_clients**: List all clients in your Harvest account
 - **list_invoices**: List all invoices, including drafts and sent ones
-- **list_projects**: List all projects in the account
-- **list_time_entries**: List tracked time entries
-- **update_client**: Update an existing client name
 
 
 ## 💬 Prompt Examples

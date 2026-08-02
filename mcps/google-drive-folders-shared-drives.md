@@ -37,18 +37,18 @@ This version is optimized for administrative organizational tasks and large-scal
 
 
 ## Available Tools (12)
-- **add_folder_permission**: Share a folder with a user or group
-- **create_folder**: Create a new folder
 - **create_shortcut**: Create a shortcut to a file or folder
 - **get_drive_about**: Get Drive storage and quota info
-- **get_folder_metadata**: Get detailed metadata for a folder
 - **list_folder_contents**: List files and subfolders within a specific folder
 - **list_shared_drives**: List accessible Shared Drives
+- **get_folder_metadata**: Get detailed metadata for a folder
 - **list_shortcuts**: List all shortcuts within a folder
 - **list_team_drives**: List legacy Team Drives
 - **move_file_to_folder**: Move a file or folder to a different parent folder
 - **remove_folder_permission**: Remove a specific permission from a folder
 - **search_folders**: Search for folders by name
+- **add_folder_permission**: Share a folder with a user or group
+- **create_folder**: Create a new folder
 
 
 ## 💬 Prompt Examples

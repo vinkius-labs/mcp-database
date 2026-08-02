@@ -40,23 +40,23 @@ No more manual configuration of complex query DSLs for simple status checks. You
 - **create_marker**: Pass details as a JSON string in "body_json" (requires message). Use "__all__" for team-wide markers.
 
 Create a new marker (e.g., deploy, maintenance) on a dataset timeline
+- **get_dataset_details**: Get metadata for a specific dataset
+- **get_team_details**: Retrieve information about the Honeycomb team
+- **get_query_result**: Retrieve the results of an executed query
+- **list_dataset_columns**: List all columns (fields) defined in a specific dataset
+- **list_datasets**: Use this to find the "slug" required for markers and queries.
+
+List all datasets in your Honeycomb team
+- **list_queries**: List query specifications for a specific dataset
+- **list_triggers**: List triggers (alerts) defined for a dataset
 - **create_query_specification**: Pass the specification as a JSON string in "query_json". Returns a query ID for execution.
 
 Create a new query specification for a dataset
 - **run_query**: Poll for results using "get_query_result" with the returned result ID.
 
 Execute a query specification and return a result ID
-- **get_dataset_details**: Get metadata for a specific dataset
-- **get_team_details**: Retrieve information about the Honeycomb team
-- **get_query_result**: Retrieve the results of an executed query
 - **list_honeycomb_boards**: List all boards (dashboards) shared with the team
-- **list_dataset_columns**: List all columns (fields) defined in a specific dataset
-- **list_datasets**: Use this to find the "slug" required for markers and queries.
-
-List all datasets in your Honeycomb team
 - **list_markers**: List markers (annotations) for a dataset
-- **list_queries**: List query specifications for a specific dataset
-- **list_triggers**: List triggers (alerts) defined for a dataset
 
 
 ## 💬 Prompt Examples
