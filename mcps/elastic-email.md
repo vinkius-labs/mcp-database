@@ -34,15 +34,15 @@ Integrate **Elastic Email**, the powerful email marketing and delivery platform,
 
 ## Available Tools (10)
 - **get_elastic_email_metadata**: Retrieve metadata and usage limits for your Elastic Email account
-- **get_campaign_performance**: Get detailed performance metrics for a specific email campaign
-- **get_contact_profile**: Get full profile and history for a specific contact by email
-- **quick_marketing_volume_audit**: Retrieve a high-level summary of campaign activity and contact counts
 - **list_contact_address_lists**: List all contact lists configured in your account
 - **list_marketing_campaigns**: List all email marketing campaigns in your Elastic Email account
 - **list_marketing_contacts**: List all contacts registered in your organization
 - **list_delivery_logs**: List recent email delivery logs and statuses
 - **list_email_designs**: List all available email message templates and designs
 - **search_contacts_by_email**: Search for a contact using their email address
+- **get_campaign_performance**: Get detailed performance metrics for a specific email campaign
+- **get_contact_profile**: Get full profile and history for a specific contact by email
+- **quick_marketing_volume_audit**: Retrieve a high-level summary of campaign activity and contact counts
 
 
 ## 💬 Prompt Examples

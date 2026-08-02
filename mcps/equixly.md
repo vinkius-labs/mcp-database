@@ -43,6 +43,12 @@ Register a new API target service for autonomous pentesting
 - **delete_service**: Use when decommissioning an API or cleaning up test environments. This action is irreversible.
 
 Remove an API service and all its scan history from Equixly
+- **list_scans**: Each scan entry includes its status (running, completed, failed), timestamps, and the total count of vulnerabilities detected in that session.
+
+List all pentest scan sessions for an API service
+- **list_services**: A Service represents a single API base URL that the autonomous AI pentester continuously attacks. Each service contains its unique ID, name, base URL, and the number of discovered endpoints.
+
+List all registered API services in Equixly
 - **get_scan_findings**: Each finding includes a severity rating, OWASP category, affected endpoint path, HTTP method, request/response evidence of exploitation, and actionable remediation guidance.
 
 Download all exploitable vulnerabilities found in a pentest scan
@@ -52,12 +58,6 @@ Get detailed status and summary of a specific pentest scan
 - **get_service**: Required before modifying scan behavior.
 
 Get detailed configuration of a specific API service
-- **list_scans**: Each scan entry includes its status (running, completed, failed), timestamps, and the total count of vulnerabilities detected in that session.
-
-List all pentest scan sessions for an API service
-- **list_services**: A Service represents a single API base URL that the autonomous AI pentester continuously attacks. Each service contains its unique ID, name, base URL, and the number of discovered endpoints.
-
-List all registered API services in Equixly
 - **list_api_specs**: The AI Hacker uses these specs to understand the full attack surface, so keeping them updated maximizes vulnerability discovery coverage.
 
 List uploaded API specifications for a service

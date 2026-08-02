@@ -34,6 +34,8 @@ Integrate **Enverus**, the leading energy SaaS company, directly into your AI wo
 
 ## Available Tools (10)
 - **get_enverus_api_metadata**: Retrieve metadata and authorization status for your Enverus API connection
+- **list_active_drilling_rigs**: List all active drilling rigs currently tracked in the Enverus database
+- **list_oil_and_gas_wells**: List oil and gas wells within the selected criteria
 - **get_energy_market_intelligence_summary**: Retrieve a high-level summary of current energy market trends
 - **quick_energy_asset_audit**: Retrieve a high-level summary of rig and well counts
 - **get_rig_technical_details**: Get detailed settings and current activity for a specific rig
@@ -41,8 +43,6 @@ Integrate **Enverus**, the leading energy SaaS company, directly into your AI wo
 - **list_basin_specific_activity**: List rigs and wells active within a specific geological basin
 - **list_drilling_permits**: List recently issued drilling permits
 - **list_energy_m_and_a_deals**: List recent mergers, acquisitions, and asset transactions in the energy sector
-- **list_active_drilling_rigs**: List all active drilling rigs currently tracked in the Enverus database
-- **list_oil_and_gas_wells**: List oil and gas wells within the selected criteria
 
 
 ## 💬 Prompt Examples

@@ -36,6 +36,9 @@ Connect your **Flexport Logistics** account to any AI agent and automate your e-
 
 
 ## Available Tools (12)
+- **get_logistics_order**: Get order details
+- **get_product**: Get product details
+- **get_return**: Get return details
 - **get_warehouse_network**: List warehouses
 - **list_inbounds**: List inbound shipments
 - **list_inventory**: Check stock levels
@@ -45,9 +48,6 @@ Connect your **Flexport Logistics** account to any AI agent and automate your e-
 - **list_returns**: List customer returns
 - **create_logistics_order**: Create fulfillment order
 - **get_inbound**: Get inbound details
-- **get_logistics_order**: Get order details
-- **get_product**: Get product details
-- **get_return**: Get return details
 
 
 ## 💬 Prompt Examples

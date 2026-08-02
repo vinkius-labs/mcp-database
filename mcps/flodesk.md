@@ -7,47 +7,47 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Manage email subscribers, segments, and workflows via AI agents with Flodesk.
+Design gorgeous email campaigns with intuitive templates that grow your audience and reflect your brand without design skills.
 
 ## Description
-Connect your **Flodesk** account to any AI agent and automate your email marketing and audience management through the Model Context Protocol (MCP). Flodesk is designed for creators and businesses that want to build stunning emails and automate their sales funnels with ease. Now, you can manage your subscribers, organize your segments, and trigger automated workflows directly through natural conversation.
+Connect your **Flodesk** account to any AI agent and take full control of your email marketing and subscriber workflows through natural conversation.
 
 ### What you can do
 
-- **Subscriber Management** — List all email subscribers, fetch detailed profile data, and create or update subscriber records instantly.
-- **Audience Segmentation** — Access and list your segments, and add subscribers to specific groups to ensure targeted messaging.
-- **Workflow Automation** — List your automated email sequences and trigger specific workflows for new or existing subscribers.
-- **Opt-out Handling** — Unsubscribe users directly through the agent to maintain a clean and compliant mailing list.
-- **Custom Data Fields** — List and create custom subscriber fields to store specific metadata (e.g., interests, purchase history).
-- **Form Oversight** — Retrieve a list of all your opt-in forms to monitor where your audience is coming from.
-- **Account Insights** — Fetch your Flodesk account metadata to ensure your agent has the correct context for your branding.
+- **Audience Orchestration** — List and manage your complete database of email subscribers, including retrieving detailed metadata and performing search lookups
+- **Segment Intelligence** — Create and manage subscriber segments (lists) programmatically to maintain a high-fidelity organization of your audience
+- **Automation Control** — Monitor your marketing workflows and programmatically add subscribers to automated sequences directly through your agent
+- **Subscriber Lifecycle** — Create or update subscriber profiles and manage their opt-in status to ensure compliance and engagement
+- **CRM Personalization** — Access and manage custom fields to store unique data points for every subscriber in your account
 
 ### How it works
 
-1. Subscribe to this server through the Vinkius Marketplace
-2. Enter your Flodesk API Key (found in your Settings > Integrations)
-3. Start managing your email marketing operations from Claude, Cursor, or any MCP client
+1. Subscribe to this server
+2. Retrieve your **API Key** from your Flodesk account (Settings > Integrations > API keys)
+3. Start managing your email marketing and automation from Claude, Cursor, or any MCP client
+
+No more manual subscriber lookups or complex segment navigation. Your AI acts as your dedicated email marketing and automation coordinator.
 
 ### Who is this for?
 
-- **Creators & Solopreneurs** — quickly add a new lead to a specific segment or trigger a welcome sequence after a meeting.
-- **Marketing Managers** — get a real-time overview of subscriber counts and active workflows through simple AI commands.
-- **E-commerce Brands** — automate the synchronization of customer data and segments for more personalized outreach.
+- **Content Creators & Influencers** — instantly check subscriber growth and manage newsletters using natural language queries
+- **Marketing Managers** — automate lead nurturing by adding new subscribers to specific workflows without leaving your workspace
+- **SaaS Founders** — monitor audience segments and update subscriber details through simple AI commands
 
 
-## Available Tools (12)
-- **add_to_segment**: Add subscriber to segment
-- **trigger_workflow**: Start workflow for user
-- **create_subscriber**: Add a subscriber
-- **get_account_details**: Get account info
-- **get_subscriber**: Get subscriber details
-- **list_custom_fields**: List custom subscriber fields
-- **list_forms**: List opt-in forms
-- **list_segments**: List segments
-- **list_subscribers**: List email subscribers
-- **list_workflows**: List automation workflows
-- **unsubscribe_subscriber**: Unsubscribe a user
-- **create_custom_field**: Create custom field
+## Available Tools (10)
+- **add_subscriber_to_segment**: Add a subscriber to a segment
+- **get_segment**: Get details for a segment
+- **add_subscriber_to_workflow**: Trigger a workflow for a subscriber
+- **create_segment**: Create a new segment
+- **get_subscriber**: Get details for a subscriber
+- **list_custom_fields**: List subscriber custom fields
+- **list_segments**: List all subscriber segments
+- **list_subscribers**: List all Flodesk subscribers
+- **list_workflows**: List all workflows
+- **upsert_subscriber**: Requires email.
+
+Create or update a subscriber
 
 
 ## 💬 Prompt Examples
@@ -55,38 +55,38 @@ Connect your **Flodesk** account to any AI agent and automate your email marketi
 Here are some examples of how you can interact with the **Flodesk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List my 10 most recent email subscribers."
+> "List all my Flodesk segments."
 
 **🤖 AI Agent:**
-> Fetching subscribers... I found your 10 most recent contacts, including 'alice@example.com' and 'bob@test.com'. Would you like to see the segments they belong to?
+> I've retrieved your segments. You have 3 active lists: 'Weekly Newsletter' (ID: seg_1), 'Beta Testers' (ID: seg_2), and 'Lead Magnet' (ID: seg_3). Which one should I provide details for?
 
 ---
 
 **👤 You:**
-> "Add 'hello@newlead.com' to my 'Welcome' segment and trigger the 'Onboarding' workflow."
+> "Find subscriber details for 'hello@example.com'."
 
 **🤖 AI Agent:**
-> Actions completed! I've added the subscriber to your 'Welcome' segment and successfully triggered the 'Onboarding' email sequence for them.
+> I've located the profile for hello@example.com. They are an 'Active' subscriber and belong to the 'Weekly Newsletter' segment. Would you like to see their custom field values?
 
 ---
 
 **👤 You:**
-> "Show me all my active automation workflows."
+> "Add subscriber 'user@example.com' to the 'Welcome Flow' workflow."
 
 **🤖 AI Agent:**
-> Retrieving workflows... You have 3 active workflows: 'Weekly Newsletter', 'Post-Purchase Survey', and 'Holiday Special'. Which one should I manage for you?
+> Action complete! I've successfully added 'user@example.com' to the 'Welcome Flow' (ID: wflow_123). They will start receiving your automation sequence immediately.
 
 
 ## ❓ FAQ
 
-**Q: How do I add a new subscriber to a specific segment using the agent?**
-You can use the 'add_to_segment' tool. Provide the subscriber's email or ID and the specific Segment ID. The agent will immediately associate the contact with that segment in your Flodesk account.
+**Q: How do I find my Flodesk API Key?**
+Log in to your Flodesk account, navigate to **Settings** > **Integrations** > **API keys**, and click **Generate new key**.
 
-**Q: Can I trigger an automated email sequence for a user?**
-Yes! The 'trigger_workflow' tool allows you to start a subscriber on any of your active Flodesk workflows. Simply provide the Workflow ID and the subscriber's email address.
+**Q: Can I search for a subscriber by email?**
+Yes! Use the `get_subscriber` tool and provide the email address to retrieve their profile, segments, and status.
 
-**Q: How do I check if a contact is active or unsubscribed?**
-Use the 'get_subscriber' tool and provide the contact's email address. The agent will retrieve the profile details, including their current status (e.g., 'active', 'unsubscribed', or 'bounced').
+**Q: How do I trigger an automation for a subscriber?**
+Use the `add_subscriber_to_workflow` tool by providing the unique `workflow_id` and the subscriber's ID or email address.
 
 
 ## Installation & Usage

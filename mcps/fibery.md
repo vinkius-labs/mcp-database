@@ -32,16 +32,16 @@ Fibery is a work management platform that adapts to your unique processes. This 
 
 ## Available Tools (11)
 - **add_comment**: Add a comment to an entity
+- **list_users**: List all users in the Fibery workspace
+- **query_entities**: Query entities from a specific database (type)
+- **search_entities**: Search for entities by keyword across all databases
+- **list_apps**: List all Fibery apps (spaces)
+- **update_entity**: Update an existing entity
 - **create_entity**: Create a new entity in a specific database
 - **delete_entity**: Delete an entity
 - **get_comments**: Retrieve comments for a specific entity
 - **get_entity**: Get a specific entity by its UUID
 - **get_schema**: Retrieve the full schema of the workspace, including all databases (types) and fields
-- **list_apps**: List all Fibery apps (spaces)
-- **list_users**: List all users in the Fibery workspace
-- **query_entities**: Query entities from a specific database (type)
-- **search_entities**: Search for entities by keyword across all databases
-- **update_entity**: Update an existing entity
 
 
 ## 💬 Prompt Examples

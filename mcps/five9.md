@@ -36,19 +36,19 @@ Connect your **Five9** account to any AI agent and automate your contact center 
 
 
 ## Available Tools (11)
-- **get_agent_state**: Get specific agent state
-- **get_statistics**: Get real-time statistics
 - **list_active_interactions**: List active interactions
 - **list_agent_states**: List all agent states
 - **list_campaigns**: List all campaigns
+- **logout_session**: Logout supervisor session
+- **get_statistics**: Get real-time statistics
+- **list_agent_groups**: List agent groups
+- **get_agent_state**: Get specific agent state
 - **list_skills**: List all skills
 - **list_users**: List all users
-- **logout_session**: Logout supervisor session
 - **terminate_interaction**: Terminate an interaction
 - **update_agent_state**: g., READY, NOT_READY, LOGOUT).
 
 Force update agent state
-- **list_agent_groups**: List agent groups
 
 
 ## 💬 Prompt Examples

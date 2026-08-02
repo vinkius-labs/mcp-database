@@ -28,12 +28,6 @@ Utility companies, grid operators, renewable energy developers, energy traders, 
 - **get_electricity_prices**: Source: EIA-826, EIA-861.
 
 Get retail electricity prices by state and sector
-- **get_power_generation**: Source: EIA-923.
-
-Get electric power generation by state, sector, and fuel source
-- **get_grid_demand**: Covers all major U.S. grid operators. Source: EIA-930.
-
-Get real-time hourly/daily electric grid demand
 - **get_state_electricity_profiles**: Get comprehensive state electricity profiles
 - **get_generator_inventory**: Over 100,000 generators. Source: EIA-860.
 
@@ -41,6 +35,12 @@ Get inventory of every operable generator in the U.S
 - **get_plant_generation**: Includes net generation (MWh), fuel consumption, and heat rates. Source: EIA-923.
 
 Get individual power plant operations by fuel and prime mover
+- **get_power_generation**: Source: EIA-923.
+
+Get electric power generation by state, sector, and fuel source
+- **get_grid_demand**: Covers all major U.S. grid operators. Source: EIA-930.
+
+Get real-time hourly/daily electric grid demand
 
 
 ## 💬 Prompt Examples

@@ -5,46 +5,53 @@
 
 ## Overview
 
-**Category:** [marketing-automation](../categories/marketing-automation.md)
+**Category:** [productivity](../categories/productivity.md)
 
-Equip your AI agent to manage email campaigns, track contact lists, and monitor reports via the EmailOctopus API.
+Send beautiful email campaigns at a fraction of the cost with a platform built for startups and growing businesses.
 
 ## Description
-Integrate **EmailOctopus**, the affordable and powerful email marketing platform, directly into your AI workflow. Manage your marketing lists and subscriber profiles, track email campaigns and their real-time statuses, monitor detailed performance reports, and oversee your entire marketing operation using natural language.
+Connect your **EmailOctopus** (v2) account to any AI agent and take full control of your email marketing and subscriber engagement workflows through natural conversation.
 
 ### What you can do
 
-- **Campaign Oversight** — List and retrieve detailed information and status for all your email marketing campaigns.
-- **Contact Intelligence** — Monitor contact address lists, individual profile details, and subscription statuses across your organization.
-- **Performance Monitoring** — Access real-time campaign performance summaries, resolving sent, open, and click-through counts via chat.
-- **Marketing Auditing** — Retrieve high-level summaries of list volumes, campaign activity, and organizational marketing health instantly.
+- **Audience Orchestration** — List and manage your email marketing lists programmatically, including creating new lists and monitoring subscriber counts
+- **Subscriber Lifecycle** — Programmatically add, update, or remove subscribers from lists and manage detailed profiles, tags, and custom fields
+- **Campaign Management** — Monitor sent and draft campaigns and retrieve high-fidelity performance reports including open and click rates
+- **Workflow Automation** — Programmatically trigger automated sequences (workflows) for specific contacts to coordinate complex customer journeys
+- **Operational Visibility** — Retrieve complete list metadata and individual contact details directly through your agent for instant marketing reporting
 
 ### How it works
 
-1. Connect the EmailOctopus integration to your AI assistant.
-2. Authorize using your EmailOctopus API Key (found in your account settings).
-3. Orchestrate your email marketing and subscriber management through intuitive conversation.
+1. Subscribe to this server
+2. Retrieve your **API Key** from your EmailOctopus settings (Integrations > API)
+3. Start managing your marketing lists and campaigns from Claude, Cursor, or any MCP client
+
+No more manual scrubbing through subscriber exports or slow UI navigation. Your AI acts as your dedicated email marketing and automation coordinator.
 
 ### Who is this for?
 
-- **Email Marketers** — Quickly check campaign performance and list subscriber counts on the go.
-- **CRM Managers** — Research contact profiles and list memberships via chat during segmentation.
-- **Operations Teams** — Monitor marketing volumes and organizational campaign metadata instantly.
+- **Marketing Managers** — instantly retrieve campaign results and update subscriber segments using natural language commands
+- **Growth Marketers** — automate lead ingestion and trigger onboarding sequences without leaving your workspace
+- **Business Owners** — monitor audience growth and manage subscriber lists through simple AI queries
 
 
-## Available Tools (10)
-- **get_campaign_details**: Get detailed settings for a specific email campaign
-- **get_contact_profile**: Get full profile and history for a specific contact
-- **get_list_details**: unsubscribed counts and organizational markers.
+## Available Tools (12)
+- **add_contact_to_list**: Add a new contact to a list
+- **create_email_list**: Create a new subscriber list
+- **remove_contact_from_list**: Delete a contact from a list
+- **get_contact_details**: Get details for a contact
+- **get_campaign_summary_report**: Get performance metrics for a campaign
+- **get_campaign_details**: Get details for a campaign
+- **list_email_campaigns**: List all sent and draft campaigns
+- **list_contacts_in_list**: Can filter by status.
 
-Get detailed settings and subscriber counts for a specific list
-- **quick_marketing_volume_audit**: Retrieve a high-level summary of list and campaign activity
-- **list_marketing_lists**: List all contact lists in your EmailOctopus account
-- **list_email_campaigns**: List all email marketing campaigns in your account
-- **list_list_contacts**: List all contacts within a specific marketing list
-- **list_successfully_sent_campaigns**: Identify campaigns that have already been sent to subscribers
-- **search_contacts_by_email**: Search for a contact within a list using their email address
-- **get_campaign_performance_summary**: Get a summary of performance metrics for a specific campaign
+List contacts in a specific list
+- **list_email_lists**: List all subscriber lists
+- **trigger_automation_for_contact**: Requires API trigger to be enabled.
+
+Start an automation for a contact
+- **update_contact_profile**: Update an existing contact
+- **get_list_details**: Get details for an email list
 
 
 ## 💬 Prompt Examples
@@ -52,38 +59,38 @@ Get detailed settings and subscriber counts for a specific list
 Here are some examples of how you can interact with the **EmailOctopus** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my marketing lists."
+> "List all my email subscriber lists in EmailOctopus."
 
 **🤖 AI Agent:**
-> I've found 3 lists, including 'Product Updates' (1,200 subscribers) and 'Weekly Newsletter' (5,500 subscribers). Would you like to see the details for the Weekly Newsletter?
+> I've retrieved your email marketing lists. You have 3 active lists: 'Weekly Newsletter' (ID: l_123), 'Product Updates' (ID: l_456), and 'Lead Magnet'. Which one should we manage?
 
 ---
 
 **👤 You:**
-> "Show me the performance report for campaign 'Q1 Promo'."
+> "Add subscriber 'john.doe@example.com' to list 'l_123' with tag 'Customer'."
 
 **🤖 AI Agent:**
-> Campaign 'Q1 Promo' was sent to 5,450 recipients. It has 1,230 opens (22.5%) and 450 clicks (8.2%). Status is 'Sent'. Should I check which links were clicked the most?
+> Done! John Doe has been successfully added to the 'Weekly Newsletter' list (ID: l_123) and tagged as a 'Customer'. Your team can now track their engagement in the dashboard.
 
 ---
 
 **👤 You:**
-> "Search for contact 'jane@example.com' in the Weekly Newsletter list."
+> "Show me the report summary for campaign ID 'c_987'."
 
 **🤖 AI Agent:**
-> Jane is a member of 'Weekly Newsletter' and is currently 'Subscribed'. They joined on February 10th. Should I pull their complete field data?
+> Fetching report... Campaign c_987 ('Spring Promo') has a 22% open rate and a 4% click-through rate so far. Total successful deliveries: 1,200. Shall I check for any bounced addresses?
 
 
 ## ❓ FAQ
 
-**Q: How do I get an EmailOctopus API Key?**
-Log in to your EmailOctopus account, navigate to **Account > API**, and you can generate or retrieve your unique API Key from there.
+**Q: How do I find my EmailOctopus API Key?**
+Log in to your account, navigate to **Integrations** > **API**, and click **Create Key** to generate your unique access token.
 
-**Q: Can the agent send new email campaigns?**
-This integration currently focuses on listing and auditing campaigns, lists, and contacts. Creating or sending new email campaigns should be managed via the EmailOctopus dashboard.
+**Q: Can I update custom fields for a contact?**
+Yes! The `update_contact_profile` tool allows you to modify tags and any custom data fields associated with a subscriber.
 
-**Q: Does the integration show open rates?**
-Yes, you can use the get_campaign_performance_summary tool to retrieve specific counts for opens and clicks for any sent campaign.
+**Q: How do I check the performance of a sent campaign?**
+Use the `get_campaign_summary_report` tool with a campaign ID to retrieve real-time metrics including open and click rates.
 
 
 ## Installation & Usage

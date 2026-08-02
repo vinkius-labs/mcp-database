@@ -22,12 +22,12 @@ Free developer tier available. Requires app_id and app_key from the Edamam devel
 
 
 ## Available Tools (2)
-- **analyze_nutrition**: g. "1 cup brown rice", "200g chicken breast", "1 large avocado") and get instant calorie, protein, fat, carb, and fiber breakdown. Powered by Edamam's NLP nutrition engine.
-
-Analyze the nutritional content of any food or ingredient using natural language
 - **search_edamam_recipes**: Supports filtering by cuisine type (American, Asian, Chinese, French, Indian, Italian, Japanese, Mediterranean, Mexican), diet (balanced, high-fiber, high-protein, low-carb, low-fat, low-sodium), and health labels (alcohol-free, dairy-free, gluten-free, keto-friendly, peanut-free, vegan, vegetarian).
 
 Search the Edamam recipe database with advanced dietary and health filters
+- **analyze_nutrition**: g. "1 cup brown rice", "200g chicken breast", "1 large avocado") and get instant calorie, protein, fat, carb, and fiber breakdown. Powered by Edamam's NLP nutrition engine.
+
+Analyze the nutritional content of any food or ingredient using natural language
 
 
 ## 💬 Prompt Examples

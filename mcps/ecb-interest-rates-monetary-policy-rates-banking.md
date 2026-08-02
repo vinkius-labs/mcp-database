@@ -21,6 +21,9 @@ ECB monetary policy rates.
 
 
 ## Available Tools (5)
+- **get_mfi_rates**: Shows what banks actually charge/pay for loans and deposits. Key indicator of monetary policy transmission.
+
+Get MFI interest rates — bank lending and deposit rates in the eurozone
 - **get_key_rates**: This is the rate at which banks can borrow from the ECB for one week. It's the most important eurozone interest rate for monetary policy.
 
 Get the ECB's key interest rates — the main refinancing rate (MRO)
@@ -33,9 +36,6 @@ Get the ECB marginal lending facility rate — the ceiling of the rate corridor
 - **get_all_key_rates**: Shows the full rate corridor.
 
 Get all 3 ECB key interest rates together: MRO, deposit, and marginal lending
-- **get_mfi_rates**: Shows what banks actually charge/pay for loans and deposits. Key indicator of monetary policy transmission.
-
-Get MFI interest rates — bank lending and deposit rates in the eurozone
 
 
 ## 💬 Prompt Examples

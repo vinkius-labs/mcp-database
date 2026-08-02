@@ -23,12 +23,12 @@ Completely open and unrestricted.
 
 
 ## Available Tools (3)
-- **get_exchange_rate**: Daily, monthly, or annual frequency. The ECB publishes reference rates for ~40 currencies against the euro at around 16:00 CET each business day.
-
-Get the EUR exchange rate against a specific currency from the ECB
 - **get_multiple_rates**: Separate currency codes with commas. Useful for comparing EUR strength across multiple currencies.
 
 Get EUR exchange rates against multiple currencies simultaneously
+- **get_exchange_rate**: Daily, monthly, or annual frequency. The ECB publishes reference rates for ~40 currencies against the euro at around 16:00 CET each business day.
+
+Get the EUR exchange rate against a specific currency from the ECB
 - **get_latest_rates**: Published daily at ~16:00 CET. Includes USD, GBP, JPY, CHF, CNY, AUD, CAD, and more.
 
 Get the latest ECB reference exchange rates for all currencies

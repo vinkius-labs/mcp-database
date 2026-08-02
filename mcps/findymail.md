@@ -37,6 +37,9 @@ Connect your **Findymail** account to any AI agent and supercharge your sales pr
 
 ## Available Tools (12)
 - **get_credits_summary**: Get credits usage summary
+- **enrich_company**: Enrich company data
+- **find_email**: Find a verified email address
+- **find_phone**: Find direct phone numbers
 - **get_credits**: Check credit balance
 - **get_lead_search_data**: Get lead search results
 - **get_lead_search_status**: Check lead search status
@@ -44,9 +47,6 @@ Connect your **Findymail** account to any AI agent and supercharge your sales pr
 - **search_leads**: Find companies and contacts
 - **verify_email**: Verify an email address
 - **create_contact_list**: Create a new contact list
-- **enrich_company**: Enrich company data
-- **find_email**: Find a verified email address
-- **find_phone**: Find direct phone numbers
 - **get_contact**: Get contact details
 
 
