@@ -23,7 +23,9 @@ This integration is perfect for customer support teams needing reliable notifica
 
 
 ## Available Tools (12)
+- **send_bulk**: Send bulk messages
 - **check_messaggio_status**: Verify connectivity
+- **list_templates**: List templates
 - **get_message_status**: Get message status
 - **get_sender**: Get sender details
 - **get_template**: Get template details
@@ -31,8 +33,6 @@ This integration is perfect for customer support teams needing reliable notifica
 - **list_project_senders**: List project senders
 - **list_projects**: List projects
 - **list_senders**: List senders
-- **list_templates**: List templates
-- **send_bulk**: Send bulk messages
 - **send_message**: Send a message
 - **send_simple_sms**: Send SMS
 

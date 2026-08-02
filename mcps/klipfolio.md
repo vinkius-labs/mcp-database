@@ -33,11 +33,11 @@ Connect your **Klipfolio** account to any AI agent and manage analytics dashboar
 
 
 ## Available Tools (6)
-- **list_individual_klips**: List all individual Klips
+- **get_dashboard_details**: Get details for a specific dashboard
 - **list_account_clients**: List sub-clients
 - **list_dashboards**: List Klipfolio dashboards
 - **list_data_sources**: List data source instances
-- **get_dashboard_details**: Get details for a specific dashboard
+- **list_individual_klips**: List all individual Klips
 - **refresh_data_source**: Trigger data source refresh
 
 

@@ -36,6 +36,7 @@ No more manual data entry into reporting tools. Your AI acts as a dedicated data
 
 
 ## Available Tools (12)
+- **test_octoboard_auth**: Verify credentials
 - **check_api_usage**: Check data limits
 - **list_agency_clients**: List managed clients
 - **list_active_dashboards**: List dashboards
@@ -48,7 +49,6 @@ No more manual data entry into reporting tools. Your AI acts as a dedicated data
 - **push_variation_metric**: g. 10.5) to a widget.
 
 Update value + change
-- **test_octoboard_auth**: Verify credentials
 - **get_api_status**: Check connection
 
 

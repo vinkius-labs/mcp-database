@@ -37,11 +37,8 @@ Connect your **Mio** account to any AI agent and manage automated phone calls th
 
 
 ## Available Tools (12)
-- **start_ai_call**: Start an AI phone call
 - **create_webhook**: Add new notification
-- **delete_webhook**: Remove a webhook
 - **get_account_info**: Get user profile
-- **get_call_details**: Get specific call info
 - **get_credit_balance**: Check account funds
 - **get_call_summary**: Get AI call summary
 - **get_call_transcript**: Get call text log
@@ -49,6 +46,9 @@ Connect your **Mio** account to any AI agent and manage automated phone calls th
 - **list_available_voices**: List AI voices
 - **list_webhooks**: Get active webhooks
 - **terminate_call**: Stop active call
+- **start_ai_call**: Start an AI phone call
+- **delete_webhook**: Remove a webhook
+- **get_call_details**: Get specific call info
 
 
 ## 💬 Prompt Examples

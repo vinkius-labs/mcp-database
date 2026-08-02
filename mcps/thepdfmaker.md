@@ -37,9 +37,7 @@ No more manual editing in document processors for repetitive tasks. Your AI acts
 
 ## Available Tools (12)
 - **create_webhook**: Add new notification
-- **delete_pdf_template**: Remove a template
 - **generate_pdf**: Create PDF from template
-- **get_credit_balance**: Check API credits
 - **get_pdf_status**: Get document link
 - **get_user_profile**: Get account info
 - **get_api_status**: Check connectivity
@@ -48,6 +46,8 @@ No more manual editing in document processors for repetitive tasks. Your AI acts
 - **list_recent_pdfs**: List recent generations
 - **list_pdf_templates**: List all templates
 - **list_webhooks**: List active webhooks
+- **delete_pdf_template**: Remove a template
+- **get_credit_balance**: Check API credits
 
 
 ## 💬 Prompt Examples

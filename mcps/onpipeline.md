@@ -36,13 +36,13 @@ No more jumping between browser tabs to update a deal's status. Your AI acts as 
 
 
 ## Available Tools (11)
+- **get_contact_details**: Get details for a specific contact
+- **list_activities**: List all CRM activities
+- **list_crm_deals**: List all sales deals
 - **create_crm_deal**: Create a new deal
 - **create_crm_organization**: Create a new organization
 - **create_crm_contact**: Create a new contact
 - **get_deal_details**: Get details for a specific deal
-- **get_contact_details**: Get details for a specific contact
-- **list_activities**: List all CRM activities
-- **list_crm_deals**: List all sales deals
 - **list_crm_events**: List calendar events
 - **list_crm_organizations**: List CRM organizations (companies)
 - **list_crm_contacts**: List CRM contacts (persons)

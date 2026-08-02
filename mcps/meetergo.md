@@ -36,18 +36,18 @@ No more manual status checking in the dashboard for new bookings. Your AI acts a
 
 
 ## Available Tools (12)
-- **get_me**: Get my profile
+- **check_meetergo_status**: Verify connectivity
+- **list_users**: List users
+- **cancel_booking**: Cancel a booking
+- **create_booking**: Create a booking
+- **get_availability**: Get user availability
+- **get_booking**: Get booking details
 - **get_meeting_type**: Get meeting type
 - **get_user**: Get user details
 - **list_availability**: List availability
 - **list_bookings**: List bookings
 - **list_meeting_types**: List meeting types
-- **list_users**: List users
-- **cancel_booking**: Cancel a booking
-- **check_meetergo_status**: Verify connectivity
-- **create_booking**: Create a booking
-- **get_availability**: Get user availability
-- **get_booking**: Get booking details
+- **get_me**: Get my profile
 
 
 ## 💬 Prompt Examples

@@ -36,6 +36,7 @@ No more manual SIREN searching on government portals. Your AI acts as a dedicate
 
 
 ## Available Tools (12)
+- **get_api_account_info**: Get Pappers account details
 - **get_french_company_details**: Get details for a French company
 - **get_company_document**: Access legal documents (Articles of Association)
 - **get_establishment_details**: Get details for a specific establishment
@@ -49,7 +50,6 @@ No more manual SIREN searching on government portals. Your AI acts as a dedicate
 - **check_api_health**: fr service API.
 
 Verify Pappers API status
-- **get_api_account_info**: Get Pappers account details
 
 
 ## 💬 Prompt Examples

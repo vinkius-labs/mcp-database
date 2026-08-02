@@ -36,9 +36,9 @@ No more manual spreadsheet tracking for user consent. Your AI acts as a dedicate
 
 
 ## Available Tools (13)
-- **get_agreement**: Get agreement details
-- **get_consent**: Get consent details
 - **get_dsar**: Get DSAR details
+- **get_consent**: Get consent details
+- **get_agreement**: Get agreement details
 - **get_vendor**: Get vendor details
 - **list_agreements**: List agreements
 - **list_audit_logs**: List audit logs
