@@ -36,7 +36,6 @@ No more jumping between project boards and CRM lists. Your AI acts as a dedicate
 
 
 ## Available Tools (12)
-- **get_bill**: Get details for a Scoro bill
 - **get_contact**: Get details for a Scoro contact
 - **get_invoice**: Get details for a Scoro invoice
 - **get_project**: Get details for a Scoro project
@@ -47,6 +46,7 @@ No more jumping between project boards and CRM lists. Your AI acts as a dedicate
 - **list_invoices**: List sales invoices
 - **list_projects**: List all Scoro projects
 - **list_quotes**: List sales quotes/proposals
+- **get_bill**: Get details for a Scoro bill
 - **list_tasks**: List all Scoro tasks
 
 

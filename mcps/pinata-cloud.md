@@ -36,14 +36,14 @@ No more manual dashboard uploading or CID tracking. Your AI acts as a dedicated 
 
 
 ## Available Tools (12)
-- **list_pin_groups**: List pin collections
-- **list_api_keys**: List account keys
 - **list_ipfs_pins**: List pinned files
-- **pin_json_to_ipfs**: Pin NFT metadata/JSON
 - **revoke_api_key**: Disable an API key
 - **verify_pinata_auth**: Check connection
-- **remove_ipfs_pin**: Unpin file/hash
+- **list_pin_groups**: List pin collections
+- **list_api_keys**: List account keys
 - **update_pin_metadata**: Modify pin name/tags
+- **pin_json_to_ipfs**: Pin NFT metadata/JSON
+- **remove_ipfs_pin**: Unpin file/hash
 - **create_pin_group**: Add new collection
 - **remove_pin_group**: Delete collection
 - **get_pinning_stats**: Check data usage

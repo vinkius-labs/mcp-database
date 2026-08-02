@@ -39,8 +39,6 @@ No more manual dashboard navigation for simple replies. Your AI acts as a dedica
 - **create_contact**: Create a new customer contact
 - **get_contact_details**: Get details for a specific contact
 - **get_location_details**: Get details for a specific location
-- **get_current_user**: Get authenticated user profile
-- **get_organization_info**: Get current organization details
 - **send_review_invitation**: Send a review invitation
 - **list_contacts**: List customers contacts
 - **list_conversations**: List conversations for a location
@@ -50,6 +48,8 @@ No more manual dashboard navigation for simple replies. Your AI acts as a dedica
 - **send_message**: Requires location ID and message body.
 
 Send a message to a contact
+- **get_current_user**: Get authenticated user profile
+- **get_organization_info**: Get current organization details
 
 
 ## 💬 Prompt Examples

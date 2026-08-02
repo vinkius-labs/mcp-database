@@ -36,11 +36,7 @@ Connect your **Mailinator** account to any AI agent and manage email testing thr
 
 ## Available Tools (12)
 - **list_message_attachments**: Get email attachments
-- **get_domain_details**: Get domain metadata
 - **extract_message_links**: Get links from email
-- **get_message_content**: Read email content
-- **get_usage_statistics**: Check API usage
-- **inject_test_message**: Simulate incoming email
 - **list_private_domains**: List your domains
 - **list_inbox_messages**: List messages in inbox
 - **list_routing_rules**: g. forward, click-all).
@@ -49,6 +45,10 @@ Get inbox rules
 - **list_private_sms**: Check SMS inbox
 - **list_active_webhooks**: Get notification configs
 - **remove_message**: Delete an email
+- **get_message_content**: Read email content
+- **get_usage_statistics**: Check API usage
+- **get_domain_details**: Get domain metadata
+- **inject_test_message**: Simulate incoming email
 
 
 ## 💬 Prompt Examples

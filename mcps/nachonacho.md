@@ -27,10 +27,7 @@ Connect your **NachoNacho** account to any AI agent and manage SaaS spend throug
 
 
 ## Available Tools (12)
-- **create_card**: Create a virtual card
-- **freeze_card**: Freeze a card
-- **get_card**: Get card details
-- **get_subscription**: Get subscription details
+- **check_nachonacho_status**: Verify connectivity
 - **get_transaction**: Get transaction details
 - **list_balances**: List balances
 - **list_cards**: List virtual cards
@@ -38,7 +35,10 @@ Connect your **NachoNacho** account to any AI agent and manage SaaS spend throug
 - **list_transactions**: List transactions
 - **unfreeze_card**: Unfreeze a card
 - **update_card**: Update a card
-- **check_nachonacho_status**: Verify connectivity
+- **create_card**: Create a virtual card
+- **freeze_card**: Freeze a card
+- **get_card**: Get card details
+- **get_subscription**: Get subscription details
 
 
 ## 💬 Prompt Examples

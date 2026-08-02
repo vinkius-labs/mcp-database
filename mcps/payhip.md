@@ -36,6 +36,13 @@ No more manual license checking or spreadsheet coupon tracking. Your AI acts as 
 
 
 ## Available Tools (11)
+- **get_customer_details**: Get details for a specific customer
+- **get_product_details**: Get details for a specific product
+- **list_coupons**: List all Payhip coupons
+- **list_customers**: List all store customers
+- **list_products**: List all digital products
+- **update_license_usage**: Update license usage count
+- **verify_license**: Verify a software license key
 - **create_coupon**: Requires code, discount type, and amount.
 
 Create a new coupon
@@ -44,13 +51,6 @@ Create a new coupon
 Disable a license key
 - **enable_license**: Enable a license key
 - **get_coupon**: Get details for a specific coupon
-- **get_customer_details**: Get details for a specific customer
-- **get_product_details**: Get details for a specific product
-- **list_coupons**: List all Payhip coupons
-- **list_customers**: List all store customers
-- **list_products**: List all digital products
-- **update_license_usage**: Update license usage count
-- **verify_license**: Verify a software license key
 
 
 ## 💬 Prompt Examples

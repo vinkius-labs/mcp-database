@@ -36,7 +36,6 @@ No more manual order checking or searching for captions. Your AI acts as a dedic
 
 
 ## Available Tools (11)
-- **get_attachment_metadata**: Get metadata of a specific attachment
 - **cancel_order**: Cancel a pending order
 - **create_order**: Create a new transcription or captioning order
 - **get_attachment_content**: Get the content of a finished transcript or caption file
@@ -51,6 +50,7 @@ Get current user profile
 - **list_orders**: com orders.
 
 List all transcription and captioning orders
+- **get_attachment_metadata**: Get metadata of a specific attachment
 
 
 ## 💬 Prompt Examples

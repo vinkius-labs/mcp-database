@@ -26,15 +26,15 @@ Connect your **MyHR** account to any AI agent and manage human resources through
 
 
 ## Available Tools (10)
-- **create_absence_request**: Create a new absence request
 - **create_employee**: Create a new employee
-- **get_employee_details**: Get employee details
 - **list_absences**: List all employee absences
+- **list_offices**: List organization offices
+- **create_absence_request**: Create a new absence request
+- **get_employee_details**: Get employee details
 - **list_departments**: List organization departments
 - **list_employees**: List all employees
 - **list_gender_options**: List gender options
 - **list_marital_statuses**: List marital status options
-- **list_offices**: List organization offices
 - **list_timesheets**: List all timesheets
 
 

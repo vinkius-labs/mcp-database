@@ -36,14 +36,14 @@ No more manual dashboard testing or complex webhook setups for simple alerts. Yo
 
 
 ## Available Tools (12)
-- **grant_app_license**: Assign license to user
-- **stop_emergency_alert**: Cancel repeated retries
 - **update_glances_data**: Set watch glance info
 - **get_message_limits**: Check account quotas
-- **get_emergency_receipt**: Check alert status
-- **list_registered_devices**: List user hardware
 - **list_available_sounds**: Get alert sound names
 - **list_user_subscriptions**: List active plans
+- **grant_app_license**: Assign license to user
+- **stop_emergency_alert**: Cancel repeated retries
+- **get_emergency_receipt**: Check alert status
+- **list_registered_devices**: List user hardware
 - **send_emergency_alert**: Send urgent repeated alert
 - **send_push_notification**: Send real-time alert
 - **test_pushover_auth**: Check connection

@@ -36,17 +36,17 @@ No more manual logging into dashboards to check post status. Your AI acts as a d
 
 
 ## Available Tools (11)
-- **delete_schedule**: Delete a scheduled post
-- **finish_media_upload**: Finalize a media upload
-- **get_schedule**: Get details for a specific scheduled post
-- **list_analytics**: Get analytics for a social media channel
 - **list_channels**: List connected social media channels
-- **list_schedules**: List all scheduled posts
-- **list_teams**: List all teams
-- **start_media_upload**: Initiate a media upload
+- **delete_schedule**: Delete a scheduled post
 - **ai_generate_content**: Generate post content using AI
 - **create_draft**: Create a post draft
 - **create_schedule**: Create a new scheduled post
+- **finish_media_upload**: Finalize a media upload
+- **get_schedule**: Get details for a specific scheduled post
+- **list_analytics**: Get analytics for a social media channel
+- **list_schedules**: List all scheduled posts
+- **list_teams**: List all teams
+- **start_media_upload**: Initiate a media upload
 
 
 ## 💬 Prompt Examples

@@ -37,14 +37,14 @@ No more manual status checks in the dashboard. Your AI acts as a dedicated payme
 
 ## Available Tools (11)
 - **check_api_status**: Verify API connectivity and signature
-- **list_subscriptions**: List recurring subscriptions
-- **list_transactions**: List recent transactions
+- **list_gateways**: List all payment gateways
 - **create_gateway**: Create a new payment gateway (hosted payment page)
 - **get_gateway**: Get details of a specific gateway
 - **get_transaction**: Get details of a specific transaction
-- **list_gateways**: List all payment gateways
 - **list_payment_methods**: List available payment methods
 - **list_payouts**: List payouts
+- **list_subscriptions**: List recurring subscriptions
+- **list_transactions**: List recent transactions
 - **list_webhooks**: List configured webhooks
 - **list_invoices**: List invoices
 

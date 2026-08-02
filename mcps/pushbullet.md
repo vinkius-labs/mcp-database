@@ -36,20 +36,20 @@ No more manual copy-pasting between devices or missing mobile notifications. You
 
 
 ## Available Tools (12)
-- **subscribe_to_channel**: Follow a channel
-- **remove_device**: Delete a device
 - **remove_push_record**: Delete a push
-- **unsubscribe_from_channel**: Unfollow a channel
-- **get_api_status**: Check connection
-- **list_push_contacts**: List friends
-- **list_connected_devices**: List your hardware
 - **list_recent_pushes**: Get push history
-- **list_channel_subscriptions**: Get channel feeds
-- **test_pushbullet_auth**: Verify credentials
 - **register_new_device**: g. a script) to receive pushes.
 
 Add a target device
 - **send_push_notification**: Send data to devices
+- **subscribe_to_channel**: Follow a channel
+- **remove_device**: Delete a device
+- **unsubscribe_from_channel**: Unfollow a channel
+- **get_api_status**: Check connection
+- **list_push_contacts**: List friends
+- **list_connected_devices**: List your hardware
+- **list_channel_subscriptions**: Get channel feeds
+- **test_pushbullet_auth**: Verify credentials
 
 
 ## 💬 Prompt Examples

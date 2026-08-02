@@ -29,18 +29,18 @@ Ideal for sales teams, marketers, and developers looking to clean and enrich B2B
 
 
 ## Available Tools (12)
+- **bulk_enrich_people**: Bulk enrich people
+- **clean_company**: Clean a company name
+- **clean_location**: Clean a location
 - **clean_name**: Clean a name
-- **enrich_company**: Enrich a company
 - **enrich_person**: Enrich a person
 - **get_balance**: Check credit balance
 - **identify_person**: Identify a person
 - **search_companies**: Search companies
-- **search_people**: Search people
 - **verify_email**: Verify an email
 - **autocomplete**: Autocomplete field values
-- **bulk_enrich_people**: Bulk enrich people
-- **clean_company**: Clean a company name
-- **clean_location**: Clean a location
+- **search_people**: Search people
+- **enrich_company**: Enrich a company
 
 
 ## 💬 Prompt Examples

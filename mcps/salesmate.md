@@ -36,11 +36,11 @@ No more manual CRM entry or pipeline searching. Your AI acts as a dedicated sale
 
 
 ## Available Tools (12)
+- **get_account_info**: Get current profile
+- **get_contact**: Get contact details
 - **create_activity**: Log a new activity
 - **create_contact**: Create a new contact
 - **create_deal**: Create a new deal
-- **get_account_info**: Get current profile
-- **get_contact**: Get contact details
 - **get_deal**: Get deal details
 - **list_activities**: List CRM activities
 - **list_contacts**: List all CRM contacts
