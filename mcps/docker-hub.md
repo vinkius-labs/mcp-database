@@ -36,21 +36,18 @@ No more navigating the Docker Hub website to check tags or manage repositories. 
 
 
 ## Available Tools (10)
+- **get_user**: Returns username, email, full name, location, company and account type. Use this to verify your access token is working correctly.
+
+Get the authenticated Docker Hub user info
 - **create_repository**: Requires the namespace (your username or org) and repository name. Optionally set a description and visibility (public/private). Returns the created repository.
 
 Create a new Docker Hub repository
-- **delete_repository**: Provide the namespace and repository name. WARNING: this action is irreversible.
-
-Delete a Docker Hub repository
 - **get_repository**: Provide the namespace (username/org) and repository name.
 
 Get details for a specific Docker Hub repository
 - **get_tag**: Provide the namespace, repository name and tag name (e.g. "latest", "v1.2.3").
 
 Get details for a specific image tag
-- **get_user**: Returns username, email, full name, location, company and account type. Use this to verify your access token is working correctly.
-
-Get the authenticated Docker Hub user info
 - **list_organizations**: Each organization includes its name, full name, type and creation date.
 
 List organizations the user belongs to
@@ -66,6 +63,9 @@ Search for Docker Hub repositories
 - **update_repository**: Provide the namespace, repository name and a JSON object with fields to update (e.g. {"description": "New description", "is_private": true}). Only provided fields will be modified.
 
 Update a Docker Hub repository
+- **delete_repository**: Provide the namespace and repository name. WARNING: this action is irreversible.
+
+Delete a Docker Hub repository
 
 
 ## 💬 Prompt Examples

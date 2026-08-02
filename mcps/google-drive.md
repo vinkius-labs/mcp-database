@@ -38,11 +38,6 @@ Stop digging through nested folders. Your AI agent acts as your personal file li
 
 ## Available Tools (15)
 - **copy_file**: Create a copy of a file
-- **update_file**: Update file metadata or content
-- **create_file_comment**: Add a comment to a file
-- **list_file_comments**: List all comments on a file
-- **create_file**: Create a new file (metadata only, or folder)
-- **create_permission**: Share a file with an email or group
 - **delete_file**: Move a file to trash
 - **empty_trash**: Permanently delete all files in the trash
 - **export_file**: Export a Google Doc/Sheet to a specific format (e.g. application/pdf)
@@ -54,6 +49,11 @@ Stop digging through nested folders. Your AI agent acts as your personal file li
 - **search_files**: g. "name contains 'report' and mimeType='application/pdf'"
 
 Search for files using Google Drive query syntax
+- **update_file**: Update file metadata or content
+- **create_file_comment**: Add a comment to a file
+- **list_file_comments**: List all comments on a file
+- **create_file**: Create a new file (metadata only, or folder)
+- **create_permission**: Share a file with an email or group
 
 
 ## 💬 Prompt Examples

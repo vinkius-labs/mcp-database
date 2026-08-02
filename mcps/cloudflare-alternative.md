@@ -40,12 +40,12 @@ Stop clicking through the Cloudflare dashboard to check a DNS record or audit fi
 
 
 ## Available Tools (15)
-- **get_zone_analytics**: Use to audit CDN performance, identify traffic spikes and review threat mitigation.
-
-Get analytics data for a Cloudflare zone
 - **create_dns_record**: Requires the record type (A, AAAA, CNAME, MX, TXT, etc.), name (hostname) and content (IP address, target hostname, etc.). Optionally set TTL and whether to proxy through Cloudflare CDN (proxied=true enables the orange cloud).
 
 Create a new DNS record in a Cloudflare zone
+- **get_zone_analytics**: Use to audit CDN performance, identify traffic spikes and review threat mitigation.
+
+Get analytics data for a Cloudflare zone
 - **delete_dns_record**: Provide the zone ID and DNS record ID. This action cannot be undone — the record will be immediately removed from Cloudflare nameservers.
 
 Delete a DNS record from a Cloudflare zone

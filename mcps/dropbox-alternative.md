@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your entire cloud storage ecosystem with **
 
 
 ## Available Tools (10)
+- **list_folder**: Use an empty string for the root.
+
+List contents of a DropBox folder
 - **copy_item**: Copy a file or folder
 - **create_folder**: Create a new folder in DropBox
 - **create_shared_link**: Create a shared link for a path
 - **delete_item**: Delete a file or folder
 - **get_current_user**: Get current DropBox account details
 - **get_metadata**: Get metadata for a file or folder
-- **list_folder**: Use an empty string for the root.
-
-List contents of a DropBox folder
 - **list_shared_links**: List shared links
 - **move_item**: Move a file or folder
 - **search_files**: Search for files or folders

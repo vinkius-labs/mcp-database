@@ -14,6 +14,15 @@ Empower your AI agents with Jira Cloud's powerful project management platform. T
 
 
 ## Available Tools (17)
+- **list_users**: Use this to identify assignees, reporters, or team members by their display names or account IDs.
+
+Lists all users in Jira
+- **search_issues**: JQL allows powerful filtering (e.g., "project = MYPROJ AND status = Open"). Returns issue keys, summaries, and statuses. Use this as the main tool for finding tasks or bugs based on flexible criteria.
+
+Searches for issues using Jira Query Language (JQL)
+- **update_issue**: Provide only the fields you want to change as a JSON string.
+
+Update fields on an existing Jira issue
 - **transition_issue**: g., "To Do" → "In Progress" → "Done"). Requires a transition ID — use list_transitions to discover valid IDs for the current issue state.
 
 Move a Jira issue to a different workflow status
@@ -56,15 +65,6 @@ Lists all issue types
 - **list_priorities**: g., "High", "Medium", "Low") configured in Jira. Useful for understanding task urgency and filtering search results.
 
 Lists all issue priorities
-- **list_users**: Use this to identify assignees, reporters, or team members by their display names or account IDs.
-
-Lists all users in Jira
-- **search_issues**: JQL allows powerful filtering (e.g., "project = MYPROJ AND status = Open"). Returns issue keys, summaries, and statuses. Use this as the main tool for finding tasks or bugs based on flexible criteria.
-
-Searches for issues using Jira Query Language (JQL)
-- **update_issue**: Provide only the fields you want to change as a JSON string.
-
-Update fields on an existing Jira issue
 
 
 ## 💬 Prompt Examples

@@ -7,82 +7,47 @@
 
 **Category:** [industry-titans](../categories/industry-titans.md)
 
-Manage your Shopify store via AI — list products, process orders, search customers, track inventory, and manage discounts from any agent.
+Build and grow your online store with the e-commerce platform that powers millions of businesses from first sale to global scale.
 
 ## Description
-Connect your **Shopify** store to any AI agent and run your entire ecommerce operation through natural conversation.
+Connect your **Shopify** store to any AI agent and take full control of your e-commerce operations and storefront management through natural conversation. Shopify provides a premier commerce platform, and this integration allows you to retrieve product metadata, monitor orders, and manage customer records directly from your chat interface.
 
 ### What you can do
 
-- **Product Management** — List, search, and create products with variants, images, and pricing
-- **Order Processing** — View all orders, inspect details with line items and shipping, close fulfilled orders
-- **Customer Intelligence** — Browse customers, view profiles with purchase history, search by name or email
-- **Inventory Tracking** — Check stock levels per location and variant
-- **Collections & Discounts** — Browse product collections and active price rules
+- **Product & Inventory Orchestration** — List all managed products and retrieve detailed metadata, including variants and stock status programmatically.
+- **Order Lifecycle Management** — Access and monitor sales orders to keep your fulfillment pipeline synchronized directly from the AI interface.
+- **Customer CRM Control** — List and search through your customer database and retrieve profile metadata to ensure personalized engagement via natural language.
+- **Collection & Catalog Oversight** — Access smart and custom collections to maintain a clear overview of your digital storefront's organization.
+- **Store Intelligence** — Retrieve shop metadata and monitor system usage to ensure your commerce operations are always optimized.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Shopify store name and Admin API access token
-3. Start managing your store from Claude, Cursor, or any MCP-compatible client
+2. Enter your Shopify Shop Name and Admin API Access Token from your app settings
+3. Start managing your e-commerce store from Claude, Cursor, or any MCP-compatible client
+
+No more manual order checking or customer searching. Your AI acts as a dedicated store manager or support assistant.
 
 ### Who is this for?
 
-- **Ecommerce Managers** — instant access to orders and inventory without the dashboard
-- **Customer Support** — look up orders and customer profiles in seconds
-- **Marketing Teams** — manage products and discounts through AI workflows
+- **Store Owners & E-commerce Managers** — quickly retrieve product details and monitor recent orders without switching apps.
+- **Support Teams** — automate the retrieval of customer profiles and order history via natural conversation.
+- **Operations Teams** — streamline the monitoring of inventory levels and coordinate fulfillment directly within the chat.
 
 
-## Available Tools (23)
-- **list_products**: Use limit to control results.
+## Available Tools (10)
+- **create_customer**: Register a new customer
+- **get_customer_details**: Get details for a customer
+- **get_order_details**: Get details for an order
+- **get_product_details**: Get metadata for a product
+- **get_shop_info**: Get store information
+- **list_custom_collections**: List manual collections
+- **list_customers**: List store customers
+- **list_orders**: List recent store orders
+- **list_smart_collections**: List automated collections
+- **list_products**: Supports filtering by title or vendor.
 
-List all products in the Shopify store
-- **list_inventory_levels**: Get inventory levels for a location
-- **list_collections**: List product collections
-- **list_price_rules**: List discount price rules
-- **get_product**: Get detailed product information
-- **create_product**: Returns the created product with its ID.
-
-Create a new product in the store
-- **list_orders**: Filter by status: open, closed, cancelled, any.
-
-List orders from the store
-- **get_order**: Get detailed order information
-- **close_order**: Useful after manual fulfillment or resolution.
-
-Close an existing order
-- **list_customers**: List all customers
-- **get_customer**: Get detailed customer profile
-- **search_customers**: Use queries like "email:john@example.com" or plain text.
-
-Search customers by name, email, or other fields
-- **update_product**: Pass only the fields you want to change.
-
-Update an existing product
-- **delete_product**: This action is irreversible — the product and all its variants are permanently deleted.
-
-Permanently delete a product
-- **count_products**: Useful for inventory audits and dashboard metrics.
-
-Get total product count
-- **cancel_order**: Cannot be undone after cancellation processing.
-
-Cancel an existing order
-- **count_orders**: Filter by status: open, closed, cancelled, or any.
-
-Get total order count
-- **create_customer**: Returns the created customer record with its unique ID.
-
-Create a new customer profile
-- **list_locations**: Location IDs are required for inventory queries.
-
-List all store locations
-- **list_smart_collections**: List automated smart collections
-- **list_fulfillments**: List fulfillments for an order
-- **list_themes**: List store themes
-- **list_pages**: ) with titles, content, and publication status.
-
-List store pages
+List your Shopify products
 
 
 ## 💬 Prompt Examples
@@ -90,59 +55,38 @@ List store pages
 Here are some examples of how you can interact with the **Shopify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Show me the last 10 orders and their status."
+> "List the last 5 orders from my Shopify store."
 
 **🤖 AI Agent:**
-> Here are your last 10 orders:
-
-1. **#1042** — $89.99 — Fulfilled ✅
-2. **#1041** — $245.00 — Pending ⏳
-3. **#1040** — $32.50 — Shipped 📦
-...
-
-Would you like details on any specific order?
+> I've retrieved your recent orders. Your last 5 include #1001 (Fulfilled), #1002 (Pending), and three others. Would you like to see the customer details for the pending order?
 
 ---
 
 **👤 You:**
-> "Create a new product called 'Premium Wireless Earbuds' for $79.99"
+> "Search for a customer named 'John Doe' in Shopify."
 
 **🤖 AI Agent:**
-> ✅ Product created successfully!
-
-- **Title**: Premium Wireless Earbuds
-- **ID**: 8234567890
-- **Status**: Draft
-
-Would you like to add variants, images, or publish it?
+> Searching customers... I found one match for 'John Doe' (ID: 987654). He has made 3 orders and is a member of your 'VIP' group. Should I retrieve his full order history?
 
 ---
 
 **👤 You:**
-> "Check inventory levels at our main warehouse."
+> "Show me the details for product ID 123456."
 
 **🤖 AI Agent:**
-> Inventory at Location #12345:
-
-| Product | SKU | Available |
-|---------|-----|----------|
-| Wireless Earbuds | WE-001 | 142 |
-| Phone Case | PC-100 | 87 |
-| USB Cable | UC-200 | 334 |
-
-3 items are below reorder point.
+> Fetching product info... Product 123456 ('Organic Cotton T-Shirt') has 3 variants (Small, Medium, Large) with a total of 45 units in stock. Would you like to see the pricing for each variant?
 
 
 ## ❓ FAQ
 
-**Q: Can I create products directly from my AI agent?**
-Yes! Use the `create_product` tool with a title, description, vendor, and product type. The product will be created in your store instantly.
+**Q: Can my AI automatically find the details and status for a specific order by providing its ID?**
+Yes! Use the `get_order` tool with the Order ID. Your agent will respond with the complete metadata, including payment status, fulfillment status, and customer notes in seconds.
 
-**Q: How do I track which orders need fulfillment?**
-Run `list_orders` with status 'open' to see all unfulfilled orders. Then use `get_order` for details.
+**Q: How do I check the stock level for a specific product in my Shopify store?**
+Simply ask the agent to run the `get_product` action with the Product ID. It will retrieve the detailed metadata for all variants, including current inventory counts.
 
-**Q: Can I search for a specific customer by email?**
-Yes! Use `search_customers` with query 'email:customer@example.com' for exact email matches.
+**Q: How do I find my Shopify Admin API Access Token?**
+Log in to your Shopify admin, navigate to **Settings** > **Apps and sales channels** > **Develop apps**, create an app, and configure Admin API scopes to reveal your access token.
 
 
 ## Installation & Usage

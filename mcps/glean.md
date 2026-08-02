@@ -5,53 +5,51 @@
 
 ## Overview
 
-**Category:** [brain-trust](../categories/brain-trust.md)
+**Category:** [productivity](../categories/productivity.md)
 
-Empower enterprise search via Glean — search across all SaaS apps, retrieve AI answers, manage custom indexing, and handle chat directly from any AI agent.
+Search across all your company apps and docs with AI that understands your organization and surfaces the right answer instantly.
 
 ## Description
-Connect your **Glean** enterprise account to any AI agent and take full control of your corporate-wide knowledge discovery and AI-powered workspace through natural conversation.
+Connect your **Glean** workspace to any AI agent and unlock enterprise knowledge through natural conversation.
 
 ### What you can do
 
-- **Corporate Discovery Orchestration** — Identify bounded CRM records and extract explicitly attached REST arrays targeting `/search` to find knowledge mapped across all SaaS applications natively
-- **Live AI Answer Retrieval** — Enumerate explicitly attached structured rules to fire RAG mechanisms, returning pure AI-generated blocks distilled from your company data limitlessly
-- **Multi-Source Filtering** — Perform structural extraction of properties by hardcoding explicit filters parsing only specific datasources like Jira, Confluence, or Slack nodes synchronousy
-- **People & Identity Discovery** — Retrieve corporate active directory information, matching user skills, roles, and names directly to generate hard customer bindings natively
-- **Intelligent Chat Orchestration** — Commands explicit REST targets checking `/chat` to manage ongoing text streams while maintaining historical thread mapping for complex reasoning
-- **Knowledge Ingestion & Indexing** — Upload massive custom text properties directly routing into corporate search logic to verify internal documentation boundaries securely
-- **Predictive Autocomplete** — Discovers disconnected physical limits executing `/autocomplete` to predict precise page destinations from partial prefixes flawlessly
-- **Data Deletion Oversight** — Explains explicitly mapped arrays checking `/delete` to remove indexed documents permanently and block future retrieval vectors
+- **Universal Search** — Search across all connected data sources (Confluence, Slack, Google Drive, Jira, and more) from a single query
+- **Datasource Filtering** — Focus searches on a specific connected platform for targeted results
+- **People Search** — Find employees by name, role, expertise, or department across your organization
+- **Document Management** — Index new documents, bulk-index batches, retrieve document metadata, and remove outdated content
+- **Curated Collections** — Browse and inspect curated content collections for onboarding, policies, and shared knowledge
+- **AI Chat** — Ask questions to Glean's AI assistant, which generates answers grounded in your organization's knowledge base
+- **Autocomplete** — Get intelligent search suggestions based on organizational knowledge as you type
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Glean Domain (e.g., 'yourcompany') and API Token (found in your Glean Admin Settings)
-3. Start searching your company's knowledge from Claude, Cursor, or any MCP-compatible client
+2. Enter your Glean API Token from the Admin Console
+3. Start searching your enterprise knowledge from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Knowledge Workers & Researchers** — quickly find documentation and answers across all company apps without manual searching
-- **HR & Ops Teams** — search for people by skills or roles and monitor trending company content using natural language
-- **Developers** — index custom documentation and test AI chat workflows directly from the IDE or chat interface
-- **Leadership Teams** — audit organizational knowledge and verify AI-generated answers in real-time
+- **Knowledge Workers** — find answers across Confluence, Slack, Drive, and Jira without switching between tools
+- **IT Administrators** — index custom documents and manage curated collections programmatically
+- **Engineering Teams** — search codebases, wikis, and design docs through a single conversational interface
 
 
-## Available Tools (10)
-- **custom_request**: ` merging physical POST arrays strictly.
+## Available Tools (12)
+- **autocomplete**: Autocomplete suggestions
+- **chat**: AI chat
+- **check_glean_status**: Verify connectivity
+- **delete_document**: Delete a document
+- **get_collection**: Get collection details
+- **get_document**: Get document details
+- **index_document**: Index a document
+- **list_collections**: List collections
+- **search_by_datasource**: g., Confluence, Slack, Google Drive).
 
-Identify precise active arrays spanning native Hold parsing
-- **delete_document**: Inspect deep internal arrays mitigating specific Plan Math
-- **search_datasource**: g.
-
-Perform structural extraction of properties driving active Account logic
-- **index_document**: Identify precise active arrays spanning native Gateway auth
-- **search_people**: Provision a highly-available JSON Payload generating hard Customer bindings
-- **search_docs**: Identify bounded CRM records inside the Headless Glean Platform
-- **get_suggestions**: Irreversibly vaporize explicit validations extracting rich Churn flags
-- **get_answer**: Enumerate explicitly attached structured rules exporting active Billing
-- **autocomplete**: Retrieve explicit Cloud logging tracing explicit Vault limits
-- **chat_completion**: Dispatch an automated validation check routing explicit Gateway history
+Search in specific datasource
+- **search_people**: Search people
+- **search**: Search across all content
+- **bulk_index_documents**: Bulk index documents
 
 
 ## 💬 Prompt Examples
@@ -59,38 +57,38 @@ Perform structural extraction of properties driving active Account logic
 Here are some examples of how you can interact with the **Glean** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Search for 'Q2 hiring plan' in all apps"
+> "Search for our deployment runbook and the on-call rotation schedule."
 
 **🤖 AI Agent:**
-> Searching corporate knowledge... I found 3 documents across Google Drive and Confluence. The most relevant is 'Final Hiring Plan Q2' (ID: doc_abc). Would you like me to get an AI-generated summary of its contents?
+> Found 2 relevant results across your connected sources. 1) 'Production Deployment Runbook v3.2' — Confluence (Engineering wiki), last updated 3 days ago. Steps: pre-deploy checklist, rollback procedure, monitoring dashboards. 2) 'On-Call Rotation Q2 2025' — Google Sheets, shared by Sarah Chen. Current on-call: Mike Torres (Backend), Lisa Park (Frontend), expires May 2. Would you like to search for related incident reports or ask the AI assistant for a deployment summary?
 
 ---
 
 **👤 You:**
-> "Who knows about 'React Native' in my company?"
+> "Ask the AI assistant: What is our company's refund policy for enterprise customers?"
 
 **🤖 AI Agent:**
-> Searching people... I found 2 colleagues with 'React Native' listed in their skills: Alice Smith (Mobile Lead) and Bob Johnson (Senior Engineer). Would you like their contact details or recent Slack activity?
+> Based on your organization's knowledge base, the Glean AI assistant responds: 'Enterprise customers are eligible for a full refund within 30 days of contract signing. After 30 days, refunds are prorated based on remaining contract months. Refund requests must be submitted through the Customer Success team via Zendesk. All enterprise refunds require VP-level approval. Source: Customer Policy Handbook (Confluence, updated Feb 2025).' Would you like to see the full policy document or search for recent refund requests in Zendesk?
 
 ---
 
 **👤 You:**
-> "Get AI answer for: 'What is our expense policy for business travel?'"
+> "Find the engineering lead for the payments team and search Slack for recent discussions about PCI compliance."
 
 **🤖 AI Agent:**
-> Synthesizing answer... According to the Employee Handbook in Confluence, our business travel policy allows for $50/day in meal reimbursements and requires all flights to be booked via the Corporate Portal at least 2 weeks in advance.
+> People search result: James Rodriguez (james@company.com) — Senior Engineering Manager, Payments Team. Reports to: VP Engineering. Located: San Francisco. Expertise: payment processing, PCI-DSS, Stripe integration. Slack search results for 'PCI compliance': 3 relevant threads in #payments-eng. 1) 'PCI audit prep checklist' — 2 days ago, 12 replies. 2) 'TLS 1.3 migration timeline' — 5 days ago, 8 replies. 3) 'Tokenization vendor review' — 1 week ago, 15 replies. Would you like to read a specific thread or ask the AI for a PCI compliance summary?
 
 
 ## ❓ FAQ
 
-**Q: Can my agent get direct AI answers based on my company's data via Glean?**
-Yes. Use the 'get_answer' tool. It fires Glean's internal RAG mechanisms to retrieve a pure AI-generated response distilled from your indexed company knowledge flawlessly.
+**Q: Can I search across multiple data sources like Confluence, Slack, and Google Drive simultaneously?**
+Yes! The `search` tool queries all connected data sources in a single request. If you want to narrow results to a specific platform, use `search_by_datasource` with the datasource name (e.g., 'Confluence', 'Slack', 'Google Drive'). Use `autocomplete` to get intelligent suggestions as you refine your query.
 
-**Q: How do I search for experts in my company by their skills via chat?**
-Use the 'search_people' tool. The agent will retrieve information from your corporate active directory, matching user profiles, skills, and names to help you find the right colleague natively.
+**Q: Can I ask the Glean AI assistant questions about my organization's knowledge?**
+Yes. The `chat` tool sends a natural language question to Glean's AI assistant, which generates an answer grounded in your organization's indexed knowledge — including documents, wikis, Slack conversations, and Jira tickets. This is ideal for getting synthesized answers rather than just search results.
 
-**Q: Can I index my own custom documents in Glean through the agent?**
-Absolutely. Use the 'index_document' tool. Provide a JSON object defining the ID, Title, and text content. The agent will route the payload into Glean's search logic synchronously.
+**Q: Can I index custom documents into Glean programmatically?**
+Yes. Use `index_document` to add a single document with a JSON payload containing title, body, URL, and metadata. For large batches, use `bulk_index_documents` to index multiple documents in one request. Use `delete_document` to remove outdated content and `get_document` to verify indexing status.
 
 
 ## Installation & Usage

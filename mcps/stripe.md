@@ -37,7 +37,9 @@ Take full control of your payment operations with **Stripe**, the global payment
 - **customers_list**: Optionally filter by email. Returns customer details including name, email, balance, and delinquency status.
 
 List Stripe customers
-- **refunds_list**: List Stripe refunds
+- **balance_get**: Shows available and pending amounts by currency. Amounts are in smallest currency unit (divide by 100 for dollars).
+
+Get Stripe account balance
 - **customers_create**: Name and email are required. Returns the created customer with their Stripe ID.
 
 Create a new Stripe customer
@@ -50,9 +52,6 @@ List Stripe subscriptions
 - **invoices_list**: Optionally filter by customer or status (draft, open, paid, uncollectible, void).
 
 List Stripe invoices
-- **balance_get**: Shows available and pending amounts by currency. Amounts are in smallest currency unit (divide by 100 for dollars).
-
-Get Stripe account balance
 - **products_list**: Use to browse your product offerings.
 
 List Stripe products
@@ -62,6 +61,7 @@ Create a new Stripe product
 - **prices_list**: Filter by product to see all price tiers.
 
 List Stripe prices
+- **refunds_list**: List Stripe refunds
 - **refund_create**: Specify amount in cents for partial refunds.
 
 Create a refund for a payment

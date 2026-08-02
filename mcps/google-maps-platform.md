@@ -34,6 +34,9 @@ Google Maps provides the gold standard in global mapping data, used by millions 
 
 
 ## Available Tools (9)
+- **search_nearby_places**: You can filter by "type" (e.g., "restaurant", "gas_station") or "keyword". Radius is in meters.
+
+Search for places of interest near a specific coordinate
 - **get_directions**: Supports modes: "driving" (default), "walking", "bicycling", "transit".
 
 Get travel directions between two points
@@ -49,9 +52,6 @@ Find a place based on a text query
 - **geocode_address**: g., "1600 Amphitheatre Parkway, Mountain View, CA") and need the exact GPS coordinates. Returns the formatted address and the place_id.
 
 Convert a physical address into geographic coordinates (latitude/longitude)
-- **search_nearby_places**: You can filter by "type" (e.g., "restaurant", "gas_station") or "keyword". Radius is in meters.
-
-Search for places of interest near a specific coordinate
 - **get_place_details**: Requires a valid Place ID obtained from other search tools.
 
 Get detailed information about a specific place using its Place ID

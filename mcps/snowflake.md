@@ -7,44 +7,46 @@
 
 **Category:** [industry-titans](../categories/industry-titans.md)
 
-Bring your absolute data cloud into your AI editor. Execute queries, list warehouses, and map complex schemas natively.
+Execute SQL queries, manage databases, and analyze data on Snowflake with AI agents.
 
 ## Description
-Connect your **Snowflake** AI Data Cloud with your AI agent to radically accelerate the way you query large datasets and audit cloud data warehouses. Navigate through deep hierarchical trees of databases, tables, and internal stages natively by chatting with your IDE. Keep your SQL robust by validating commands directly against the live engine.
+Connect your **Snowflake** account to any AI agent to automate your data cloud operations and analytical workflows. Snowflake provides a premier platform for data warehousing and analysis, and this integration allows you to execute SQL statements, browse database schemas, and monitor session contexts through natural conversation.
 
 ### What you can do
 
-- **Execute Queries in Chat** — Tell your bot to `execute_sql` based on human prompts or test new complex table joins safely right inside Cursor or Claude
-- **Map Infrastructures** — Quickly retrieve spatial contexts by pulling `list_databases`, traversing downwards through `list_schemas` to target specific columns
-- **Audit Compute Cost** — Keep a firm grip on active clusters running by auditing running instances using `list_warehouses`
-- **Diagnose Operations** — Monitor long-tail data workloads or data engineering pipelines using the `get_query_status` method asynchronously
+- **SQL Query Orchestration** — Execute any SQL statement programmatically and retrieve real-time data results for immediate analysis.
+- **Database & Schema Oversight** — List and search through databases, schemas, and tables to maintain a clear overview of your data architecture directly from the AI interface.
+- **Warehouse & Resource Control** — Access and monitor available warehouses and user roles to ensure your analytical environment is properly configured.
+- **Metadata Intelligence** — Describe table structures and retrieve session context metadata via natural language commands to facilitate data exploration.
+- **Operational Monitoring** — Track statement execution status and cancel long-running queries to ensure your data cloud resources are used efficiently.
 
 ### How it works
 
-1. Subscribe to this AI integration server
-2. Introduce your explicit Snowflake Account identifier (e.g. `abc123.us-east-1`)
-3. Inject your Snowflake OAuth token or JWT Token (key pair) authentication string
-4. Ask Claude or Cursor to look into the Sales Database schema
-
-Stop juggling browser instances to paste a quick query in Snowflake Snowsight. Stay strictly inside your local codebase while examining the exact table data types.
+1. Subscribe to this server
+2. Enter your Snowflake Account Identifier and Token (JWT or OAuth2)
+3. Start managing your data cloud from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Data Engineers** — validate that raw datasets correctly land in internal environments (`list_stages`) straight from your IDE window
-- **Analytics Engineers / dbt** — generate highly accurate SQL modeling by letting your agent examine the `list_tables` definitions live
-- **Software Architects** — write an agentic script pulling raw diagnostic query metrics without downloading hefty SDK kits locally
+- **Data Analysts** — quickly retrieve query results and explore table schemas without switching between SQL editors.
+- **BI Engineers** — automate the retrieval of database metadata and monitor warehouse usage via natural conversation.
+- **Data Scientists** — streamline the exploration of large datasets and track session contexts directly within the chat.
 
 
-## Available Tools (7)
-- **list_warehouses**: Lists all virtual warehouses
-- **list_stages**: Lists all internal and external stages
-- **get_query_status**: Retrieves the status of an asynchronous query
-- **list_databases**: Lists all databases in the Snowflake account
-- **list_schemas**: Lists all schemas within a specific database
-- **list_tables**: Lists all tables within a specific schema
-- **execute_sql**: Prefers read-only statements whenever possible.
+## Available Tools (11)
+- **cancel_sql**: Cancel a running SQL statement
+- **describe_table**: Get table schema details
+- **execute_sql**: Returns the first partition of results or a handle for long-running queries.
 
-Executes a SQL query on Snowflake
+Execute a SQL statement in Snowflake
+- **get_session_context**: Get current session context
+- **get_statement_status**: Check the status of a SQL statement
+- **list_databases**: List all accessible databases
+- **list_roles**: List security roles
+- **list_schemas**: List schemas in a database
+- **list_tables**: List tables in a schema or database
+- **list_users**: List Snowflake users
+- **list_warehouses**: List compute warehouses
 
 
 ## 💬 Prompt Examples
@@ -52,64 +54,32 @@ Executes a SQL query on Snowflake
 Here are some examples of how you can interact with the **Snowflake** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all running virtual warehouses I can access in my Snowflake account."
+> "List all tables in the 'SALES' schema of the 'PROD' database."
 
 **🤖 AI Agent:**
-> I've called `list_warehouses` for your targeted Snowflake footprint.
-
-**Running Clusters Detected**:
-1. `COMPUTE_WH` – Size: X-Small | State: SUSPENDED
-2. `ANALYTICS_WH` – Size: Large | State: STARTED
-3. `ETL_LOAD_WH` – Size: Medium | State: STARTED
-
-Would you like me to run an analytical snippet under `ANALYTICS_WH` now?
+> I've retrieved the tables for you. The 'SALES' schema contains 5 tables: 'ORDERS', 'CUSTOMERS', 'INVOICES', 'PRODUCTS', and 'TRANSACTIONS'. Which one would you like to describe?
 
 ---
 
 **👤 You:**
-> "Write a query to grab the top 5 most engaged users from our schema and execute it."
+> "Show me the warehouse usage and query performance metrics for all active Snowflake warehouses."
 
 **🤖 AI Agent:**
-> No problem! I constructed this query to target exactly that and executed it against the system:
-`SELECT user_id, email, activity_score FROM prod_schema.users ORDER BY activity_score DESC LIMIT 5;`
-
-**Snowflake Output Data**:
-1. alice@example.com (Score: 980)
-2. john84@test.io (Score: 964)
-3. m_reyes@corp.com (Score: 941)
-[...]
-
-Do you want me to format this as a markdown table or save the dataset?
+> 4 active warehouses. "ANALYTICS_WH" (X-Large): 78% utilization, 234 queries today, avg execution 4.2s, $89 credit usage. "ETL_WH" (Large): 45% utilization, 56 queries, avg 12.3s, $34 credits. "REPORTING_WH" (Medium): 23% utilization, 890 queries, avg 1.8s, $12 credits. "DEV_WH" (Small): 12% utilization, 45 queries, avg 3.4s, $4 credits. Total credits today: $139. Auto-suspend: all enabled (5 min idle). Queued queries: 0. Failed queries: 3 (timeout on ANALYTICS_WH). Storage: 12.4 TB used.
 
 ---
 
 **👤 You:**
-> "Retrieve the schema mapping for the MASTER_DB. I need to know all nested tables before doing table joints."
+> "Run a SQL query to get the top 10 customers by revenue from the sales table this quarter."
 
 **🤖 AI Agent:**
-> Using `list_schemas`, `MASTER_DB` contains main partitions:
-1. `PUBLIC`
-2. `ANALYTICS_GOLD`
-
-Digging into `ANALYTICS_GOLD` using `list_tables`:
-- `dim_customers` (Type: BASE TABLE)
-- `dim_geography` (Type: BASE TABLE)
-- `fct_sales_records` (Type: BASE TABLE)
-- `vw_live_revenue` (Type: VIEW)
-
-I am ready to help build your exact JOINS. For example, `fct_sales_records.customer_id` directly joins on `dim_customers.id`.
+> Query executed on ANALYTICS_WH (1.2s). Top 10 customers by Q2 2025 revenue: 1) Meridian Corp: $234,000 (45 orders). 2) TechVentures: $189,000 (23 orders). 3) DataFlow: $156,000 (67 orders). 4) ScaleUp: $123,000 (34 orders). 5) CloudBridge: $98,000 (12 orders). 6-10: combined $345,000. Total Q2 revenue: $1.45M. Top 10 = 78% of total revenue. Rows scanned: 45,678. Credits used: 0.02. Query ID: 01abc-def-234.
 
 
 ## ❓ FAQ
 
-**Q: Can my AI actually read the raw table rows via an execute statement?**
-Yes. When the AI uses `execute_sql` with something like `SELECT * FROM schema.users LIMIT 10`, the MCP integration parses the exact row outputs. The LLM consumes the tabular data back into context so you can converse naturally about the dataset findings.
-
-**Q: Is it completely safe to give AI power over a Data Warehouse?**
-Safety stems from principle of least privilege. Supply a Snowflake Token tied strictly to a read-only role or a heavily scoped down service account. This allows the AI to navigate schemas and extract data without risking destructive schema mutations like DROPs or DELETEs.
-
-**Q: Can it search for a column name if I don't know the exact schema?**
-Yes! Tell your agent: 'Find which table in the SALES_DB database has a column named customer_churn_score'. Due to its autonomous workflow, the bot will pull schemas, subsequently loop over `list_tables`, query Snowflake’s internal information_schema if necessary, and deduce it entirely for you.
+**Q: How do I find my Snowflake Account Identifier?**
+Your Account Identifier is the part of your Snowflake URL before '.snowflakecomputing.com'. It typically looks like `xy12345.us-east-2.aws`.
 
 
 ## Installation & Usage

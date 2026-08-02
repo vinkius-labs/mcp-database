@@ -32,24 +32,6 @@ Connect **HubSpot CRM** to any AI agent — instant access to your full CRM data
 - **hs_associate_objects**: Common association type IDs: Contact→Company=1, Company→Contact=2, Deal→Contact=3, Contact→Deal=4, Deal→Company=5, Company→Deal=6. Use when attaching a contact to a company, linking a deal to a contact, etc.
 
 Create an association between two HubSpot CRM objects
-- **hs_get_company**: Returns name, domain, industry, revenue, and employee count. Use when you need to inspect a specific company record.
-
-Retrieve a specific HubSpot company by its unique CRM ID
-- **hs_update_deal**: Use hs_list_pipelines to find valid stage IDs before updating dealstage.
-
-Update properties on an existing HubSpot deal
-- **hs_get_deal**: Returns deal name, pipeline stage, amount, close date, and assigned owner. Use when inspecting a specific opportunity.
-
-Retrieve a specific HubSpot deal by its unique CRM ID
-- **hs_search_deals**: Returns matching deals with deal name, pipeline stage, monetary amount, pipeline name, expected close date, and assigned owner. Use when the user asks about pipeline status, wants to find a specific deal, check deal amounts, or review upcoming closes.
-
-Search HubSpot deals by name to find opportunities in your sales pipeline with stage, amount, and close date
-- **hs_search_tickets**: Returns matching tickets with subject, ticket status/stage, priority (HIGH/MEDIUM/LOW), pipeline, category, and creation date. Use when the user asks about open support tickets, needs to find a specific customer issue, or wants to check ticket status.
-
-Search HubSpot Service Hub tickets by subject or keyword to find customer support requests
-- **hs_update_contact**: Provide only the fields you want to change as key-value pairs in the properties JSON.
-
-Update properties on an existing HubSpot contact
 - **hs_create_contact**: Email is the primary identifier — provide a unique email address. HubSpot will auto-deduplicate by email. The lifecycle stage can be set to control where the contact enters the funnel (subscriber, lead, marketingqualifiedlead, salesqualifiedlead, opportunity, customer, evangelist). Returns the created contact with its new HubSpot ID.
 
 Create a new contact in HubSpot CRM with email, name, phone, and company association
@@ -62,6 +44,9 @@ Create an engagement note in HubSpot attached to a contact, company, or deal for
 - **hs_create_ticket**: The subject is required. Optionally set the pipeline stage (hs_pipeline_stage) and priority (hs_ticket_priority: HIGH, MEDIUM, LOW). The ticket enters the default support pipeline. Returns the created ticket with its new ID.
 
 Create a new support ticket in HubSpot Service Hub with subject, pipeline stage, and priority
+- **hs_get_company**: Returns name, domain, industry, revenue, and employee count. Use when you need to inspect a specific company record.
+
+Retrieve a specific HubSpot company by its unique CRM ID
 - **hs_get_contact**: Returns all standard properties including name, email, phone, company, lifecycle stage, and assigned owner. Use when you already have the contact ID from a search or association lookup.
 
 Retrieve a specific HubSpot contact by its unique CRM ID
@@ -77,6 +62,21 @@ Search HubSpot companies by name, domain, or industry to find organizations in y
 - **hs_search_contacts**: Returns matching contacts with first name, last name, email, phone, associated company, lifecycle stage (subscriber/lead[REDACTED]), and assigned owner. Use when the user wants to find a specific person, look up contact details, check which lifecycle stage someone is in, or find contacts at a particular company.
 
 Search HubSpot contacts by name, email, phone, or company name to find people in your CRM
+- **hs_update_deal**: Use hs_list_pipelines to find valid stage IDs before updating dealstage.
+
+Update properties on an existing HubSpot deal
+- **hs_get_deal**: Returns deal name, pipeline stage, amount, close date, and assigned owner. Use when inspecting a specific opportunity.
+
+Retrieve a specific HubSpot deal by its unique CRM ID
+- **hs_search_deals**: Returns matching deals with deal name, pipeline stage, monetary amount, pipeline name, expected close date, and assigned owner. Use when the user asks about pipeline status, wants to find a specific deal, check deal amounts, or review upcoming closes.
+
+Search HubSpot deals by name to find opportunities in your sales pipeline with stage, amount, and close date
+- **hs_search_tickets**: Returns matching tickets with subject, ticket status/stage, priority (HIGH/MEDIUM/LOW), pipeline, category, and creation date. Use when the user asks about open support tickets, needs to find a specific customer issue, or wants to check ticket status.
+
+Search HubSpot Service Hub tickets by subject or keyword to find customer support requests
+- **hs_update_contact**: Provide only the fields you want to change as key-value pairs in the properties JSON.
+
+Update properties on an existing HubSpot contact
 
 
 ## 💬 Prompt Examples

@@ -7,56 +7,40 @@
 
 **Category:** [industry-titans](../categories/industry-titans.md)
 
-Manage posts, pages, and media on WordPress — the world's most popular open-source content management system.
+Build and manage websites with the CMS that powers over 40 percent of the web through posts, pages, plugins, and themes.
 
 ## Description
-Connect your **WordPress** site to any AI agent and take control of your content infrastructure through natural conversation.
+Connect your **WordPress** site to any AI agent and simplify how you publish content, manage users, and organize your blog through natural conversation.
 
 ### What you can do
 
-- **Post Management** — List all blog articles, create new posts with HTML/Block content, and update metadata or status (draft, publish, private)
-- **Static Pages** — Browse and manage hierarchical content like 'About Us' or 'Contact' pages directly from your agent
-- **Media Library** — List all uploaded assets (images, documents) and retrieve their direct public URLs for content distribution
-- **Taxonomy Auditing** — List and browse all categories and tags used across your site to ensure consistent content organization
-- **User Discovery** — Retrieve a list of all registered site users and their associated numeric IDs for author attribution
-- **Content Insights** — Get comprehensive details for specific posts, including full content, featured media, and technical status
-- **Data Integrity** — Safely trash or permanently delete obsolete posts through simple chat commands
+- **Content Publishing** — Create and manage blog posts and static pages with full HTML support and status control (publish, draft).
+- **User Directory** — List and inspect site users, authors, and contributors to understand your editorial team.
+- **Taxonomy Management** — List categories and tags used to organize your website content.
+- **Content Maintenance** — Fetch detailed metadata for specific posts or delete unwanted content instantly via AI.
+- **Remote Control** — Access your site's REST API to monitor activity without opening the WP Admin dashboard.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your WordPress Base URL, Username, and Application Password
-3. Start managing your content through Claude, Cursor, or any MCP-compatible client
-
-No more manual logging into the WP-Admin dashboard to fix a typo. Your AI agent becomes your WordPress content editor.
+2. Enter your WordPress URL, Username, and Application Password
+3. Start managing your content from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Blogging Teams** — quickly draft and publish articles and manage post status through simple conversation
-- **CMS Administrators** — audit site users, monitor categories, and manage media attachments without manual navigation
-- **Marketing Managers** — verify publication status and retrieve media URLs for social sharing and campaigns
-- **Web Developers** — test REST API responses and verify content structure for headless WordPress applications
+- **Blogger & Content Creators** — quickly draft or publish articles and check post metadata via simple AI commands.
+- **Site Administrators** — monitor user lists and manage site pages directly from the workspace.
+- **Digital Agencies** — coordinate content updates and category organization across multiple client sites via AI.
 
 
-## Available Tools (10)
-- **delete_cms_post**: Set force to true for permanent deletion, otherwise it goes to Trash.
-
-Permanently deletes a WordPress post
-- **create_cms_post**: Provide a title, content, and initial status (draft, publish, private).
-
-Creates a new post in WordPress
-- **get_post_details**: Retrieves details for a specific WordPress post
-- **list_site_categories**: Lists all categories defined in WordPress
-- **list_media_attachments**: Lists media files (images, documents) from the WordPress library
-- **list_static_pages**: Lists static pages from the WordPress site
-- **list_site_posts**: Supports standard WP query parameters like per_page and categories.
-
-Lists posts from the WordPress site
-- **list_site_tags**: Lists all tags used in the WordPress site
-- **list_site_users**: Lists all registered WordPress users
-- **update_cms_post**: Provide the post ID and a JSON object of fields to update.
-
-Updates an existing WordPress post
+## Available Tools (7)
+- **list_static_pages**: List static site pages
+- **list_blog_posts**: List WordPress blog posts
+- **list_site_users**: List site users
+- **create_new_post**: Create a new blog post
+- **delete_post**: Delete a blog post
+- **list_blog_categories**: List blog categories
+- **get_post_details**: Get details for a specific post
 
 
 ## 💬 Prompt Examples
@@ -64,38 +48,38 @@ Updates an existing WordPress post
 Here are some examples of how you can interact with the **WordPress** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List the last 5 posts on my WordPress site."
+> "List the most recent blog posts on my site."
 
 **🤖 AI Agent:**
-> I found your 5 most recent posts: 1. 'Welcome to 2026' (ID: 101, Status: publish), 2. 'New Product Features' (ID: 102, Status: draft), 3. 'Our Vision' (ID: 103, Status: publish), and 2 others. Which one would you like to see the details for?
+> I've retrieved your latest posts. You have: 'Introduction to MCP', 'Why WordPress is King', and 'AI in Content Curation'. Which one would you like to inspect?
 
 ---
 
 **👤 You:**
-> "Create a new draft post titled 'AI in Marketing' with content '<p>AI is changing everything...</p>'."
+> "Create a draft post titled 'Benefits of Remote Work' with some placeholder text."
 
 **🤖 AI Agent:**
-> Success! I've created a new draft post titled 'AI in Marketing' (ID: 155). It is currently saved as a draft. Would you like me to add any tags or categories to it?
+> Success! The draft 'Benefits of Remote Work' has been created on your site (ID: 5521). You can find it in your WordPress dashboard under Posts > All Posts.
 
 ---
 
 **👤 You:**
-> "List all categories on my WordPress site."
+> "Who are the registered authors on my WordPress site?"
 
 **🤖 AI Agent:**
-> I found 4 categories: 'News' (ID: 1), 'Tutorials' (ID: 2), 'Product Updates' (ID: 3), and 'Case Studies' (ID: 4). Would you like to see how many posts are assigned to each?
+> Fetching user list... I found 3 active users: 'admin' (Administrator), 'jane_doe' (Editor), and 'bob_smith' (Author). Let me know if you need details on any of them.
 
 
 ## ❓ FAQ
 
-**Q: Can I draft a new blog post using chat?**
-Yes. The `create_cms_post` tool allows your AI agent to create a new post. You can provide the title and content, and set the status to 'draft'. Once you are ready, you can update it to 'publish' using the same agent.
+**Q: How do I create a new post as a draft?**
+Use the `create_new_post` action. Provide the title and content, and set the optional status parameter to `draft`. The post will appear in your WP Admin for final review.
 
-**Q: How do I get the direct URL for an image in my WordPress library?**
-Use the `list_media_attachments` tool. Your AI agent will return a list of recently uploaded media files, including their filenames and the direct public source URLs for easy sharing or embedding.
+**Q: Can I see a list of all static pages like 'About Us'?**
+Yes! Use the `list_static_pages` query. Your agent will retrieve all static pages from your WordPress site, including their IDs and current status.
 
-**Q: Is it possible to permanently delete a post instead of sending it to Trash?**
-Yes. When using the `delete_cms_post` tool, you can set the `force` parameter to true. This will bypass the WordPress Trash and permanently remove the post from your database.
+**Q: Is it possible to delete a post via the AI?**
+Absolutely. Use the `delete_post` tool and provide the unique ID of the post you want to remove. The content will be permanently deleted from your site.
 
 
 ## Installation & Usage

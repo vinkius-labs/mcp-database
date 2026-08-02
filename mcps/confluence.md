@@ -32,6 +32,7 @@ Connect your **Atlassian Confluence** workspace to your AI assistant. Easily que
 
 
 ## Available Tools (12)
+- **list_spaces**: Retrieve a list of all spaces in Confluence
 - **add_label**: Labels help organize and filter wiki content.
 
 Add a label to a Confluence page
@@ -61,7 +62,6 @@ Retrieve all comments for a specific Confluence page
 - **list_pages**: Optionally filter by space key. Supports pagination via start offset and limit.
 
 Retrieve a list of pages from Confluence
-- **list_spaces**: Retrieve a list of all spaces in Confluence
 
 
 ## 💬 Prompt Examples
