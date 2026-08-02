@@ -35,18 +35,18 @@ Connect your **Later** account to any AI agent and take full control of your vis
 
 
 ## Available Tools (10)
-- **list_media**: Takes standard page index pagination.
-
-List Later media library items
+- **list_profiles**: List connected Later social profiles (Instagram, TikTok, Pinterest, etc)
 - **list_scheduled_posts**: List pending scheduled posts for a specific Later profile
 - **list_published_posts**: List completed published posts including basic performance bounds
 - **create_post**: Create and schedule a brand new Later post
 - **delete_post**: Delete a Later scheduled post actively pending publication
 - **get_analytics**: Get Later aggregated profile analytics spanning an explicit date slice
+- **get_calendar**: Get the Later globalThis content calendar for a multi-profile date slice
+- **list_media**: Takes standard page index pagination.
+
+List Later media library items
 - **list_labels**: List Later content labels active across the media library
-- **get_calendar**: Get the Later global content calendar for a multi-profile date slice
 - **get_me**: Get authenticated Later user info and workspace details
-- **list_profiles**: List connected Later social profiles (Instagram, TikTok, Pinterest, etc)
 
 
 ## 💬 Prompt Examples

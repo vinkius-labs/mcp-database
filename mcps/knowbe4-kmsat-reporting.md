@@ -29,6 +29,17 @@ Connect your AI agent to **KnowBe4 KMSAT** to get real-time visibility into your
 
 
 ## Available Tools (10)
+- **get_account_risk_score**: Critical for executive security reporting.
+
+Get the overall account risk score
+- **list_user_groups**: List groups for a specific user
+- **list_groups**: Useful for auditing training assignments.
+
+List all groups in KnowBe4
+- **list_users**: Includes user IDs, names, emails, and current status. Essential for auditing user enrollment.
+
+List all users in KnowBe4 KMSAT
+- **get_user_details**: Get details for a specific user
 - **list_phishing_tests**: Returns test IDs, names, and high-level results.
 
 List phishing security tests
@@ -38,17 +49,6 @@ List phishing security tests
 List security awareness training campaigns
 - **get_training_campaign_details**: Get details for a training campaign
 - **list_phishing_store_results**: List results for phishing store items
-- **get_account_risk_score**: Critical for executive security reporting.
-
-Get the overall account risk score
-- **list_user_groups**: List groups for a specific user
-- **list_users**: Includes user IDs, names, emails, and current status. Essential for auditing user enrollment.
-
-List all users in KnowBe4 KMSAT
-- **get_user_details**: Get details for a specific user
-- **list_groups**: Useful for auditing training assignments.
-
-List all groups in KnowBe4
 
 
 ## 💬 Prompt Examples

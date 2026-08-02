@@ -21,20 +21,20 @@ Connect **Impala** to any AI agent — the Stripe of hotel booking.
 
 
 ## Available Tools (8)
+- **search_hotels_by_city**: "Show hotels in Barcelona."
+
+Search hotels by city
 - **search_hotels**: "Find hotels near the Eiffel Tower."
 
 Search hotels near coordinates
 - **get_hotel**: Get hotel details
+- **get_photos**: Get hotel photos
 - **get_room_types**: Get hotel room types
 - **check_availability**: Check hotel availability
 - **get_rates**: Get hotel rates
 - **get_reviews**: For reputation management.
 
 Get hotel reviews
-- **get_photos**: Get hotel photos
-- **search_hotels_by_city**: "Show hotels in Barcelona."
-
-Search hotels by city
 
 
 ## 💬 Prompt Examples

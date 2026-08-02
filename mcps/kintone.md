@@ -7,51 +7,44 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Manage custom business apps, records, and workflows via Kintone.
+Build custom business apps without code using drag-and-drop forms, workflow automation, and team collaboration spaces.
 
 ## Description
-Connect your **Kintone** platform to any AI agent to automate your business operations. This MCP server enables your agent to interact with custom apps, manage data records, and query organizational metadata directly.
+Connect your **Kintone** instance to any AI agent and manage business applications through natural conversation.
 
 ### What you can do
 
-- **Record Management** — List, retrieve, add, and update records in any of your Kintone apps
-- **App Discovery** — List all available applications and retrieve detailed configurations and field mappings
-- **Data Querying** — Use Kintone's powerful query language to filter records based on complex criteria
-- **Form Inspection** — Access form field settings and layouts to understand data structures
-- **Space Visibility** — List members and participants within your Kintone collaboration spaces
+- **App Management** — List all apps and inspect their field configurations
+- **Record Operations** — Create, read, update, and query records in any app
+- **Data Queries** — Search records using Kintone query syntax with field filters
+- **Field Access** — Browse app fields and their types for data modeling
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Kintone Subdomain and API Token
-3. Start managing your business data from Claude, Cursor, or any MCP-compatible client
+2. Enter your Kintone domain and API Token
+3. Start managing apps from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Operations Teams** — Automate data entry and record updates via natural language commands
-- **Project Managers** — Quickly query project statuses and task records from your IDE
-- **Business Analysts** — Retrieve and analyze app data without manually exporting CSV files
+- **Operations Teams** — manage business data without opening each app
+- **Developers** — integrate Kintone data into AI workflows
+- **Managers** — query records and track metrics across apps
 
 
-## Available Tools (10)
-- **list_form_fields**: List form fields for an app
-- **get_app_details**: Get details for a specific app
-- **add_record**: Requires a JSON object mapping field codes to values.
+## Available Tools (8)
+- **add_records**: Input should be a JSON array of record objects.
 
-Add a new record to an app
-- **get_app_layout**: Get the field layout of an app
-- **list_apps**: Use this to identify App IDs for record operations.
+Add one or more records to an app
+- **delete_records**: Delete records from an app
+- **list_records**: You can provide an optional query string.
 
-List all Kintone apps
-- **delete_records**: Requires an array of record IDs.
-
-Delete records from an app
-- **get_record**: Get a specific record from an app
-- **list_records**: You can optionally provide a query string for filtering.
-
-List records from an app
-- **list_space_members**: List members of a Kintone space
-- **update_record**: Update an existing record
+List records from a Kintone app
+- **get_app_fields**: Get app field settings
+- **get_record**: Get details for a specific record
+- **get_space_details**: Get details for a space
+- **list_apps**: List all accessible Kintone apps
+- **update_records**: Update one or more records
 
 
 ## 💬 Prompt Examples
@@ -59,38 +52,38 @@ List records from an app
 Here are some examples of how you can interact with the **Kintone** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my Kintone apps."
+> "List all apps and show the latest 5 records from the 'Sales Pipeline' app."
 
 **🤖 AI Agent:**
-> I've retrieved your apps. You have 5 applications, including 'Sales Pipeline' (ID: 10), 'Employee Directory' (ID: 12), and 'Project Tracker' (ID: 15).
+> Apps: 6. Sales Pipeline (234 records), Customer DB (456), Inventory (89), HR Requests (34), Bug Tracker (123), Expenses (67). Latest Sales Pipeline: 1) Acme Corp — $45K, Stage: Proposal. 2) TechCo — $28K, Negotiation. 3) StartupXYZ — $12K, Demo. 4) GlobalInc — $67K, Closing. 5) MediCorp — $33K, Qualification.
 
 ---
 
 **👤 You:**
-> "Show records from app ID 10 where status is 'Pending'."
+> "Create a new deal in Sales Pipeline and query all deals over $50K."
 
 **🤖 AI Agent:**
-> I found 3 records in app 10 with 'Pending' status: 'Opportunity A', 'Opportunity B', and 'Opportunity C'. Would you like to see details for any of them?
+> Record created! 'NovaTech Partnership' — $85K, Stage: Proposal, Owner: Sarah. Pipeline: 235 records. Deals over $50K: 4 records. 1) NovaTech — $85K (Proposal). 2) GlobalInc — $67K (Closing). 3) EntCorp — $120K (Negotiation). 4) MegaGroup — $55K (Demo). Total pipeline value >$50K: $327K.
 
 ---
 
 **👤 You:**
-> "Add a new record to app 12 with name 'Jane Doe' and role 'Designer'."
+> "Show the field configuration for the Customer DB app."
 
 **🤖 AI Agent:**
-> Successfully added the record for 'Jane Doe' to app 12. The new record ID is '105'.
+> Customer DB fields: 10. Company Name (text, required), Contact Email (email), Phone (phone), Industry (dropdown: SaaS, Healthcare, Finance, Retail), Size (number), Annual Revenue (currency), Status (dropdown: Active, Prospect, Churned), Last Contact (date), Notes (textarea), Attachments (file). 456 records total.
 
 
 ## ❓ FAQ
 
-**Q: How do I find the App ID for a specific application?**
-Use the `list_apps` tool to see a comprehensive list of all applications in your environment along with their unique App IDs.
+**Q: Can I query records across Kintone apps?**
+Yes. Query records using Kintone's query syntax with field filters, sorting, and pagination. Works across any app in your instance.
 
-**Q: Can I filter records using custom criteria?**
-Yes, the `list_records` tool accepts an optional Kintone query string, allowing you to filter data based on field values, status, and more.
+**Q: Does Kintone require a custom domain?**
+Yes. Each Kintone account has a unique domain (e.g., `your-company.cybozu.com`). Provide the domain and an API Token generated for the specific app.
 
-**Q: Is it possible to update an existing record via the agent?**
-Absolutely. Use the `update_record` tool with the App ID and Record ID, providing a JSON object with the fields you wish to modify.
+**Q: Can I create and update records?**
+Yes. Create new records with field values, update existing records, and manage data across all your Kintone apps.
 
 
 ## Installation & Usage

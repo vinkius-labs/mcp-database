@@ -34,13 +34,13 @@ Connect your **Leadfeeder** tracking system to an AI agent to analyze high-quali
 ## Available Tools (9)
 - **get_tracking_script**: Get the tracking script for the account
 - **list_account_visits**: Get aggregate visits data across the entire account
+- **get_account**: Get details for a specific Leadfeeder account
+- **get_custom_feed**: Get details for a specific custom feed filter
+- **get_lead**: Get details for a specific lead
 - **list_accounts**: Retrieve a list of accounts from Leadfeeder
 - **list_custom_feeds**: Retrieve the custom feeds active within a specific account
 - **list_lead_visits**: Get the website visits directly associated with a specific lead
 - **list_leads**: Retrieve a list of discovered leads within an account
-- **get_account**: Get details for a specific Leadfeeder account
-- **get_custom_feed**: Get details for a specific custom feed filter
-- **get_lead**: Get details for a specific lead
 
 
 ## 💬 Prompt Examples

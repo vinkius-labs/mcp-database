@@ -5,41 +5,48 @@
 
 ## Overview
 
-**Category:** [communication-messaging](../categories/communication-messaging.md)
+**Category:** [customer-support](../categories/customer-support.md)
 
-Empower your AI to generate, route, and interact with conversational chatbots and customers naturally.
+Build conversational landing pages and chatbot flows with a visual builder that replaces boring forms with engaging conversations.
 
 ## Description
-Engage your conversational pipelines through **Landbot** instantly using your AI assistant. Route leads, send custom programmatic messages to open channels, or check active interactions without checking external software tools.
+Connect your **Landbot** account to any AI agent and manage chatbots through natural conversation.
 
 ### What you can do
 
-- **Bot Management:** Oversee and pull active bot matrices.
-- **Customer Operations:** Send automated text messages securely to connected accounts.
-- **Lead Routing:** Reassign critical pipeline threads directly to live agents programmatically.
+- **Bot Management** — List bots, inspect configurations, and track performance
+- **Conversation Tracking** — Browse conversations, read messages, and send replies
+- **Customer Database** — List customers with engagement data and conversation history
+- **Flow Monitoring** — Track chatbot flows and their conversion metrics
+- **Channel Management** — Monitor WhatsApp, Web, and API channels
+- **Analytics** — Access conversation metrics, response rates, and bot performance
 
 ### How it works
 
-1. Authorize the plugin connection
-2. Provide your Landbot API Token in Vinkius credentials
-3. Engage conversational commands locally or through llm interfaces
+1. Subscribe to this server
+2. Enter your Landbot API Token
+3. Start managing chatbots from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **DevOps Support** — manage conversational states from your terminal
-- **Sales Marketers** — view chat history of high value funnels
-- **Product Teams** — examine customer journeys natively
+- **Marketing** — manage lead-generation bots and track conversions
+- **Support** — monitor customer conversations and response quality
+- **Growth** — analyze chatbot performance and optimize flows
 
 
-## Available Tools (8)
-- **get_messages**: Fetch the chat sequence messages for a given customer context
-- **list_bots**: List all accessible bots in Landbot
-- **list_customers**: List recent customers interacting with bots
-- **search_customers**: Search for a particular customer by email
-- **send_text_message**: Send a message programmatically to a customer conversation
-- **assign_agent**: Route conversation from bot to live agent status
-- **get_bot**: Get a single bot details by ID
-- **get_customer**: Retrieve specific metadata of one customer
+## Available Tools (12)
+- **trigger_bot_flow**: Start bot flow
+- **get_account_info**: Check API status
+- **get_customer_details**: Get user profile
+- **list_team_agents**: List support agents
+- **list_active_bots**: List available bots
+- **list_landbot_customers**: List chatbot users
+- **list_message_hooks**: Get event configs
+- **send_proactive_image**: Send chat image
+- **send_proactive_text**: Send chat message
+- **send_whatsapp_template**: Send WA template
+- **update_customer_field**: Set user property
+- **handoff_to_agent**: Assign to human
 
 
 ## 💬 Prompt Examples
@@ -47,38 +54,38 @@ Engage your conversational pipelines through **Landbot** instantly using your AI
 Here are some examples of how you can interact with the **Landbot** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List standard bots running active pipelines right now."
+> "Show all bots with conversation counts and the latest customer conversations."
 
 **🤖 AI Agent:**
-> Loading Landbot configurations. There are currently 3 standard matrix bots running active logic mapping sequences.
+> Bots: 4. 'Lead Qualifier' (1.2K conversations, Web, 34% conversion ⭐). 'Support Bot' (890, Web+WhatsApp, 4.2 min avg). 'Onboarding' (345, Web). 'WhatsApp Sales' (567, WhatsApp, 28% conversion). Latest: 1) Ana — Lead Qualifier, 'Interested in Pro plan' (5 min ago). 2) Mike — Support, 'Password reset help' (12 min ago). 3) Lisa — WhatsApp Sales, 'Pricing question' (20 min ago).
 
 ---
 
 **👤 You:**
-> "Fetch the entire transcription log for customer ID 98453."
+> "Show the conversation flow and analytics for the Lead Qualifier bot."
 
 **🤖 AI Agent:**
-> Extracted session log for 98453. The prospect answered 4 initial screening questions mentioning 'Price points'.
+> Lead Qualifier flow: 6 steps. 1) Welcome (98% reach). 2) Company Size (92%). 3) Budget Range (85%). 4) Timeline (78%). 5) Contact Info (62%). 6) Meeting Booking (34% ✅). Drop-off: Step 4→5 (16%, budget sensitivity). Avg completion: 2.1 min. Leads captured: 408 this month. Qualified: 246 (60%). MQL→SQL conversion: 42%.
 
 ---
 
 **👤 You:**
-> "Force assign the highest severity angry customer ticket to Agent Sarah."
+> "List all customers and send a reply to Ana's conversation."
 
 **🤖 AI Agent:**
-> Operation complete. I've intercepted the live interaction and injected the routing update pointing to Agent Sarah gracefully.
+> Customers: 2,834 total. Active (7 days): 145. Channels: Web (1,890), WhatsApp (944). Top by conversations: Ana Costa (8 conversations), Mike Torres (5), Lisa Park (4). Reply sent to Ana! ✅ 'Hi Ana, great to hear you are interested in Pro! I will have our sales team reach out within the hour. In the meantime, here is our pricing page.'
 
 
 ## ❓ FAQ
 
-**Q: How do I authenticate?**
-Grab the main API Access Integration token located centrally in settings inside Landbot App context.
+**Q: Can I manage bots and read conversations?**
+Yes. List all bots with performance metrics, browse conversations with full message history, and send replies to customers.
 
-**Q: Can I route chats to human agents?**
-Yes, standard endpoints enable you to extract active sessions and invoke assignment APIs gracefully.
+**Q: How does Landbot authentication work?**
+Landbot uses a **Token** header for authentication against `api.landbot.io/v1`. This differs from standard Bearer authentication.
 
-**Q: Do bots answer incoming queries automatically?**
-No interruption occurs. Read functionalities passively pull context without disconnecting current funnels.
+**Q: Can I track chatbot conversion metrics?**
+Yes. Monitor flow completion rates, drop-off points, lead capture rates, and conversation-to-conversion metrics per bot.
 
 
 ## Installation & Usage

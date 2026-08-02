@@ -35,18 +35,18 @@ Connect your **ImageKit** account to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
+- **purge_cdn_cache**: Enumerate explicitly attached structured rules exporting active clear layers
+- **patch_file_details**: Mutate globalThis Web CRM boundaries substituting Draft Document schemas
 - **create_custom_schema**: Provision a highly-available JSON Payload generating new Resource boundaries
 - **wipe_batch_assets**: Dispatch an automated validation check routing explicit Disk removals
 - **wipe_media_asset**: Irreversibly vaporize explicit App nodes dropping live Database bytes
-- **get_file_details**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
-- **get_exif_metadata**: Retrieve the exact structural matching verifying File properties
 - **get_purge_status**: Identify precise active arrays spanning native CDN status
 - **list_custom_fields**: Perform structural extraction of properties driving active Extensibility
 - **list_media_files**: ` listing uploaded visual assets cleanly.
 
 Identify bounded routing spaces inside the Headless ImageKit Vault
-- **purge_cdn_cache**: Enumerate explicitly attached structured rules exporting active clear layers
-- **patch_file_details**: Mutate global Web CRM boundaries substituting Draft Document schemas
+- **get_file_details**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
+- **get_exif_metadata**: Retrieve the exact structural matching verifying File properties
 
 
 ## 💬 Prompt Examples

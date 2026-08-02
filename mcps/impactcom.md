@@ -14,7 +14,6 @@ Empower your AI agents to manage your partnership ecosystem with Impact.com (for
 
 
 ## Available Tools (10)
-- **list_actions**: Lists all actions (conversions, clicks)
 - **list_ads**: Lists all ads in your account
 - **list_campaigns**: Lists all partnership campaigns
 - **list_contracts**: Lists all partnership contracts
@@ -24,6 +23,7 @@ Empower your AI agents to manage your partnership ecosystem with Impact.com (for
 - **list_queued_notifications**: Lists all queued action notifications
 - **list_transactions**: Lists all financial transactions
 - **list_webhooks**: Lists all configured webhooks
+- **list_actions**: Lists all actions (conversions, clicks)
 
 
 ## 💬 Prompt Examples

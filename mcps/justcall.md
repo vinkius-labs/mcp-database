@@ -7,43 +7,46 @@
 
 **Category:** [customer-support](../categories/customer-support.md)
 
-Manage phone calls, SMS, and recordings via JustCall API.
+Make and receive business calls from any device with a cloud phone system that logs every interaction in your CRM automatically.
 
 ## Description
-Empower your AI agents with JustCall's cloud phone system. This MCP server allows you to list and retrieve phone calls, track SMS/MMS messages, manage contacts, and access call recordings directly through the JustCall API. Ideal for automating communication workflows and sales engagement.
+Connect your **JustCall** account to any AI agent and manage phone communications through natural conversation.
+
+### What you can do
+
+- **Call Management** — Make outbound calls, track call logs with duration and status
+- **SMS Messaging** — Send text messages to contacts and track delivery
+- **Contact Database** — List contacts, create new entries, and inspect profiles
+- **Call Recordings** — Access call recordings with metadata
+- **Phone Numbers** — List available and assigned phone numbers
+- **Agent Monitoring** — Track agent performance, call volumes, and availability
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your JustCall API Key and API Secret
+3. Start managing calls from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Sales Teams** — make calls, send follow-up SMS, and track communication history
+- **Support Teams** — manage call queues and monitor agent performance
+- **Operations** — automate phone outreach and SMS campaigns
 
 
-## Available Tools (10)
-- **get_call**: Includes timestamps, participants, and associated notes. Use this for deep investigation of a specific communication event.
-
-Retrieves details for a specific call
-- **get_contact**: Returns associated phone numbers, email addresses, and metadata. Use this for detailed customer vetting before or after a call.
-
-Retrieves details for a specific contact
-- **list_calls**: Returns call direction (inbound/outbound), duration, status, and IDs. Use this to audit communication activity or track call volumes.
-
-Lists all phone calls
-- **list_campaigns**: g., dialer campaigns). Useful for monitoring sales outreach and telemarketing efforts.
-
-Lists all calling campaigns
-- **list_contacts**: Returns names, phone numbers, and IDs. Use this to search for customers or provide contact information to the user.
-
-Lists all contacts in JustCall
-- **list_messages**: Includes message content, sender/receiver, and delivery status. Essential for monitoring text-based customer interactions.
-
-Lists all SMS/MMS messages
-- **list_numbers**: Useful for identifying which numbers are available for specific campaigns or teams.
-
-Lists all phone numbers in your JustCall account
-- **list_recordings**: Use this when the user wants to audit call quality or retrieve a specific conversation record.
-
-Lists all call recordings
-- **list_users**: Useful for identifying which agent handled a specific call or message.
-
-Lists all users in your organization
-- **list_webhooks**: Useful for auditing system integrations.
-
-Lists all configured webhooks
+## Available Tools (12)
+- **create_contact**: Create a new contact
+- **get_account_profile**: Get my profile
+- **get_call_details**: Get call details
+- **get_contact**: Get contact details
+- **get_message_details**: Get message details
+- **list_account_numbers**: List JustCall numbers
+- **list_team_users**: List team members
+- **send_message**: Send SMS/MMS
+- **list_calls**: List phone calls
+- **list_contacts**: List phone contacts
+- **list_messages**: List SMS/MMS messages
+- **list_webhooks**: List active webhooks
 
 
 ## 💬 Prompt Examples
@@ -51,38 +54,38 @@ Lists all configured webhooks
 Here are some examples of how you can interact with the **JustCall** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all recent phone calls in JustCall."
+> "Show today's call log and send a follow-up SMS to the last caller."
 
 **🤖 AI Agent:**
-> I'll fetch the history of your recent phone calls from JustCall.
+> Today's calls: 34 total. Inbound: 22 (avg 4.2 min). Outbound: 12 (avg 6.1 min). Missed: 3. Last caller: Ana Costa (+1-555-0123, 5 min call, 10:15 AM). SMS sent! ✅ To: +1-555-0123. Content: 'Hi Ana, thanks for calling! I wanted to follow up on our conversation about the Pro plan. Happy to schedule a demo at your convenience.' Delivery: confirmed.
 
 ---
 
 **👤 You:**
-> "Show me the latest SMS messages."
+> "List all agents, their call volumes, and available phone numbers."
 
 **🤖 AI Agent:**
-> I'll retrieve the list of recent text messages from your JustCall account.
+> Agents: 6. Sarah Chen — 145 calls this week (avg 5.2 min, available). Mike Torres — 128 calls (avg 4.8 min, on call). Lisa Park — 112 calls (avg 6.1 min, available). 3 others. Phone numbers: 8 assigned, 3 available. US: +1-555-0100 to 0107. UK: +44-20-7123-4567. Available: +1-555-0108, 0109, 0110.
 
 ---
 
 **👤 You:**
-> "Check the details for contact ID '123'."
+> "Show call recordings from this week and the contact database."
 
 **🤖 AI Agent:**
-> I'll look up the full profile and history for that specific contact in JustCall.
+> Recordings: 28 this week. Longest: 'Enterprise Deal — Acme Corp' (22 min, Sarah Chen). Shortest: 'Quick Follow-up' (1 min). Total recording time: 4h 15m. Contacts: 456 total. New this week: 12. By tag: Leads (89), Customers (234), Partners (45), Prospects (88). Would you like to play a recording or create a contact?
 
 
 ## ❓ FAQ
 
-**Q: How do I get JustCall API credentials?**
-Log in to your JustCall account, navigate to Settings > Developers > API, and copy your API Key and Secret.
+**Q: Can I make calls and send SMS through the AI agent?**
+Yes. Make outbound calls with destination number and track status. Send SMS messages to any contact with delivery tracking. Use contact management tools to find recipient numbers.
 
-**Q: Can I see call recordings?**
-Yes, the list_recordings tool allows you to retrieve a list of all call recordings in your account.
+**Q: Does JustCall require two credentials?**
+Yes. JustCall uses an **API Key** and **API Secret** pair for authentication. Both are sent as Bearer credentials against `api.justcall.io/v1`.
 
-**Q: Does it support SMS messages?**
-Yes, you can list and track SMS and MMS messages using the list_messages tool.
+**Q: Can I listen to call recordings and track agent performance?**
+Yes. Access call recordings with duration and metadata. Monitor agent call volumes, average handle time, and availability status.
 
 
 ## Installation & Usage

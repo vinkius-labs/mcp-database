@@ -14,13 +14,13 @@ Empower your AI agents to manage your customer relationships with Insightly. Thi
 
 
 ## Available Tools (10)
+- **list_opportunities**: Lists all sales opportunities
+- **list_organisations**: Lists all registered organisations
+- **list_projects**: Lists all active and past projects
 - **get_contact**: Retrieves details for a specific contact
 - **list_contacts**: Lists all contacts in Insightly
 - **list_events**: Lists all calendar events
 - **list_leads**: Lists all marketing leads
-- **list_opportunities**: Lists all sales opportunities
-- **list_organisations**: Lists all registered organisations
-- **list_projects**: Lists all active and past projects
 - **list_tasks**: Lists all tasks across projects
 - **list_teams**: Lists all defined teams
 - **list_users**: Lists all users in the system
