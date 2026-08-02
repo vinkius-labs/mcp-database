@@ -34,8 +34,8 @@ Connect your **LeadsRx** account to your AI agent and gain deep insights into yo
 
 
 ## Available Tools (10)
-- **add_conversion**: Add a new conversion event
-- **get_campaign_results**: Get attribution results for a campaign
+- **list_conversions**: List all LeadsRx conversions
+- **list_touchpoints**: List marketing touchpoints
 - **get_conversion_details**: Get specific conversion info
 - **get_touchpoint_details**: Get specific touchpoint details
 - **list_advertisers**: List connected advertisers
@@ -44,8 +44,8 @@ Connect your **LeadsRx** account to your AI agent and gain deep insights into yo
 - **list_channels**: g., Social, Search, Email) defined in your account.
 
 List marketing channels
-- **list_conversions**: List all LeadsRx conversions
-- **list_touchpoints**: List marketing touchpoints
+- **add_conversion**: Add a new conversion event
+- **get_campaign_results**: Get attribution results for a campaign
 
 
 ## 💬 Prompt Examples

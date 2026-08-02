@@ -29,13 +29,13 @@ Connect your AI agent to **kvCORE**, the primary platform for real estate profes
 
 
 ## Available Tools (10)
-- **list_agent_tasks**: List pending tasks for the agent
-- **get_agent_profile**: Get current agent information
 - **update_lead_info**: g., status, phone). Provide data as a JSON string.
 
 Update an existing lead
 - **list_lead_activity**: List recent activity for a lead
 - **create_lead_note**: Add a note to a lead profile
+- **get_agent_profile**: Get current agent information
+- **list_agent_tasks**: List pending tasks for the agent
 - **search_kvcore_leads**: Returns lead IDs and basic contact info.
 
 Search for leads in kvCORE

@@ -14,13 +14,13 @@ Empower your AI agents to analyze and manage workforce productivity with Insight
 
 
 ## Available Tools (10)
-- **get_attendance**: Retrieves aggregated attendance and time tracking reports
 - **get_employee**: Retrieves details for a specific employee
 - **get_productivity**: Retrieves aggregated productivity reports
 - **list_activity**: Lists recent employee activity logs
 - **list_employees**: Lists all employees in the organization
 - **list_locations**: Lists all registered organization locations
 - **list_projects**: Lists all active and past projects
+- **get_attendance**: Retrieves aggregated attendance and time tracking reports
 - **list_tasks**: Lists all tasks across projects
 - **list_teams**: Lists all organization teams
 - **list_webhooks**: Lists all configured webhooks

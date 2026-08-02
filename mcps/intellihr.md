@@ -14,16 +14,16 @@ Connect your AI agents to intelliHR, the strategic people management platform. T
 
 
 ## Available Tools (10)
-- **get_person**: Retrieves details for a specific person
-- **list_business_entities**: Lists all legal business entities
 - **list_jobs**: Lists all jobs/positions currently assigned
 - **list_locations**: Lists all registered office locations
 - **list_people**: Lists all people/employees in intelliHR
-- **list_positions**: Lists all defined position titles
-- **list_remuneration**: Lists employee remuneration and pay details
 - **list_skills**: Lists all skills defined in the organization
 - **list_training**: Lists all employee training and development records
 - **list_users**: Lists all users with platform access
+- **get_person**: Retrieves details for a specific person
+- **list_business_entities**: Lists all legal business entities
+- **list_positions**: Lists all defined position titles
+- **list_remuneration**: Lists employee remuneration and pay details
 
 
 ## 💬 Prompt Examples

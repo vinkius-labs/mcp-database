@@ -41,17 +41,17 @@ Create a new experiment
 - **list_experiments**: Use this to monitor campaign statuses and identify active experiments.
 
 List all experiments in Kameleoon
-- **list_sites**: List all sites in the account
-- **list_variations**: ) associated with a specific experiment ID.
-
-List variations for an experiment
-- **get_experiment**: Get details for a specific experiment
 - **get_site**: Get details for a specific site
 - **get_experiment_results**: This is an asynchronous process in the Kameleoon API.
 
 Request a results report for an experiment
 - **list_targeting_rules**: List targeting rules
 - **list_segments**: List audience segments
+- **list_sites**: List all sites in the account
+- **list_variations**: ) associated with a specific experiment ID.
+
+List variations for an experiment
+- **get_experiment**: Get details for a specific experiment
 
 
 ## 💬 Prompt Examples

@@ -47,7 +47,7 @@ Search the Klevu catalog with specific facet filters applied
 - **search_raw**: Execute a custom JSON search payload against the Klevu API
 - **search_recs**: Fetch Klevu AI product recommendations
 - **search_sorted**: Perform a keyword search with a custom sorting order
-- **search_trending**: View currently trending and most relevant global products
+- **search_trending**: View currently trending and most relevant globalThis products
 
 
 ## 💬 Prompt Examples

@@ -23,16 +23,16 @@ Connect your **Lightspeed Restaurant** to any AI agent — the premium POS for m
 
 ## Available Tools (10)
 - **get_business**: Get restaurant info
-- **list_orders**: "What sold in the last hour?"
-
-List restaurant orders
-- **get_order**: Get order details
 - **list_menu_items**: For menu engineering.
 
 List menu items
 - **list_categories**: With item counts and display order.
 
 List menu categories
+- **list_orders**: "What sold in the last hour?"
+
+List restaurant orders
+- **get_order**: Get order details
 - **list_floors**: With table count and capacity.
 
 List floor plans

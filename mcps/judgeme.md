@@ -14,9 +14,6 @@ Empower your AI agents with Judge.me's comprehensive product review platform. Th
 
 
 ## Available Tools (10)
-- **get_product**: Essential for providing a summary of a product's performance.
-
-Retrieves details for a specific product
 - **get_question**: Use this before preparing an official answer.
 
 Retrieves details for a specific question
@@ -44,6 +41,9 @@ Lists all customer questions
 - **list_reviews**: me platform. Returns reviewer names, ratings, review titles, and bodies. Use this to monitor customer sentiment and analyze product feedback.
 
 Lists all product reviews
+- **get_product**: Essential for providing a summary of a product's performance.
+
+Retrieves details for a specific product
 
 
 ## 💬 Prompt Examples

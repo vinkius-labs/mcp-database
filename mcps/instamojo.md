@@ -14,16 +14,16 @@ Empower your AI agents to manage your Indian payment ecosystem with Instamojo. T
 
 
 ## Available Tools (10)
-- **get_payment**: Retrieves details for a specific payment
-- **get_payment_request**: Retrieves details for a specific payment request
-- **get_refund**: Retrieves details for a specific refund
-- **list_disputes**: Lists all active and past disputes
 - **list_gateways**: Lists configured payment gateways
 - **list_links**: Lists all generated payment links
 - **list_payment_requests**: Lists all payment requests created
 - **list_payments**: Lists all payments received
 - **list_payouts**: Lists all payouts to your bank account
 - **list_refunds**: Lists all refunds processed
+- **get_payment**: Retrieves details for a specific payment
+- **get_payment_request**: Retrieves details for a specific payment request
+- **get_refund**: Retrieves details for a specific refund
+- **list_disputes**: Lists all active and past disputes
 
 
 ## 💬 Prompt Examples

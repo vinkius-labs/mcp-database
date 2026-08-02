@@ -36,9 +36,6 @@ Integrate **Livestorm**, the leading browser-based webinar and video events plat
 
 
 ## Available Tools (10)
-- **create_event**: Provide at minimum the event title. Optionally specify description, start/end times, and event type (live, replay, or on-demand).
-
-Create a new webinar or event in Livestorm
 - **create_registration**: Creates a new registration record for the specified webinar. The registration email must be unique for that webinar.
 
 Register a new attendee for a Livestorm webinar
@@ -66,6 +63,9 @@ Retrieve a list of all rooms (webinar rooms) in your Livestorm workspace
 - **send_replay**: Sends the replay link to everyone who attended the specified event. Use after live events to share the recording with attendees.
 
 Send a replay email to all attendees of a completed Livestorm webinar
+- **create_event**: Provide at minimum the event title. Optionally specify description, start/end times, and event type (live, replay, or on-demand).
+
+Create a new webinar or event in Livestorm
 
 
 ## 💬 Prompt Examples

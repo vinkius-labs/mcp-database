@@ -33,18 +33,18 @@ Integrate **Lightcast** (formerly Emsi Burning Glass), the global leader in labo
 
 
 ## Available Tools (10)
-- **quick_labor_market_audit**: Retrieve a high-level summary of skills and occupations in the index
-- **get_labor_market_region_summary**: Get a high-level labor market summary for a specific economic region
-- **get_skill_details**: Get detailed settings and definition for a specific skill
-- **list_standardized_job_titles**: List standardized job titles from the Lightcast index
-- **list_standardized_occupations**: List occupations categorized by Lightcast (SOC/O*NET compatible)
-- **list_economic_regions**: List economic regions and geographies supported by Lightcast
-- **list_taxonomically_related_skills**: Identify skills that are taxonomically related to a target skill
-- **list_skill_taxonomic_categories**: List high-level taxonomic categories for skills
 - **list_labor_market_skills**: g., specialized, common) from the Lightcast API.
 
 List all technical and soft skills in the Lightcast taxonomy
+- **quick_labor_market_audit**: Retrieve a high-level summary of skills and occupations in the index
+- **get_skill_details**: Get detailed settings and definition for a specific skill
+- **list_economic_regions**: List economic regions and geographies supported by Lightcast
+- **list_taxonomically_related_skills**: Identify skills that are taxonomically related to a target skill
+- **list_skill_taxonomic_categories**: List high-level taxonomic categories for skills
 - **get_lightcast_api_metadata**: Retrieve metadata and authorization status for your Lightcast API connection
+- **get_labor_market_region_summary**: Get a high-level labor market summary for a specific economic region
+- **list_standardized_job_titles**: List standardized job titles from the Lightcast index
+- **list_standardized_occupations**: List occupations categorized by Lightcast (SOC/O*NET compatible)
 
 
 ## 💬 Prompt Examples

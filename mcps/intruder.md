@@ -14,21 +14,6 @@ Empower your AI agents to manage your cybersecurity posture with Intruder.io. Th
 
 
 ## Available Tools (10)
-- **list_licences**: Useful for verifying subscription status and capacity.
-
-Lists all account licences
-- **get_account**: Use to verify identity and account settings.
-
-Gets your Intruder account details
-- **get_issue**: Returns detailed descriptions, remediation advice, and affected targets. Essential for investigating and fixing security flaws.
-
-Retrieves details for a specific issue
-- **get_scan**: Returns the list of targets included, scan duration, and a summary of findings. Use this to audit the results of a specific security assessment.
-
-Retrieves details for a specific scan
-- **get_target**: Returns metadata and associated tags. Use this to deep-dive into the security status of a specific asset.
-
-Retrieves details for a specific target
 - **list_cloud_integrations**: Essential for auditing how Intruder discovers new targets in the cloud infrastructure.
 
 Lists all configured cloud integrations (AWS, Azure, Google Cloud)
@@ -44,6 +29,21 @@ Lists all infrastructure and application targets
 - **list_teams**: Useful for understanding organizational access controls.
 
 Lists all organization teams
+- **list_licences**: Useful for verifying subscription status and capacity.
+
+Lists all account licences
+- **get_issue**: Returns detailed descriptions, remediation advice, and affected targets. Essential for investigating and fixing security flaws.
+
+Retrieves details for a specific issue
+- **get_scan**: Returns the list of targets included, scan duration, and a summary of findings. Use this to audit the results of a specific security assessment.
+
+Retrieves details for a specific scan
+- **get_target**: Returns metadata and associated tags. Use this to deep-dive into the security status of a specific asset.
+
+Retrieves details for a specific target
+- **get_account**: Use to verify identity and account settings.
+
+Gets your Intruder account details
 
 
 ## 💬 Prompt Examples

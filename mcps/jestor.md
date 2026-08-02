@@ -14,21 +14,15 @@ Empower your AI agents with Jestor's low-code internal tools platform. This MCP 
 
 
 ## Available Tools (10)
-- **get_me**: Use this to verify connection status and current permissions.
-
-Gets current authenticated user info
-- **get_object**: Useful for understanding field types and relationships within a specific table.
-
-Retrieves details/schema for a specific object
-- **get_record**: Essential for deep-diving into a specific entry in the database.
-
-Retrieves details for a specific record
 - **list_apps**: Useful for discovering high-level toolsets available to the user.
 
 Lists all installed internal apps
 - **list_dashboards**: Use this to identify where aggregated data visualizations are located.
 
 Lists all configured dashboards
+- **get_record**: Essential for deep-diving into a specific entry in the database.
+
+Retrieves details for a specific record
 - **list_objects**: Returns object names and labels. Use this to discover available datasets before querying specific records.
 
 Lists all objects (tables) in your Jestor account
@@ -44,6 +38,12 @@ Lists all configured webhooks
 - **list_workflows**: Useful for auditing system logic and event-driven actions.
 
 Lists all automated workflows
+- **get_me**: Use this to verify connection status and current permissions.
+
+Gets current authenticated user info
+- **get_object**: Useful for understanding field types and relationships within a specific table.
+
+Retrieves details/schema for a specific object
 
 
 ## 💬 Prompt Examples
