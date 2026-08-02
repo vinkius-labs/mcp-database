@@ -34,9 +34,9 @@ Connect your **Jitbit** instance to any AI agent and manage your helpdesk throug
 
 
 ## Available Tools (6)
+- **list_kb_articles**: List knowledge base articles
 - **create_support_ticket**: Add a new ticket
 - **get_ticket_details**: Get details for a specific ticket
-- **list_kb_articles**: List knowledge base articles
 - **list_ticket_categories**: List helpdesk categories
 - **list_tickets**: List helpdesk tickets
 - **list_account_users**: List helpdesk users

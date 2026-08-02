@@ -36,13 +36,13 @@ No more manual reviewing of video frames or missing critical object detections. 
 
 
 ## Available Tools (5)
-- **analyze_video**: Analyze a video with computer vision
 - **analyze_image**: Follows the official 2-step flow: fetches the Pop worker, then sends the image for processing.
 
 Analyze an image with computer vision
-- **create_pop**: Create a visual pipeline
 - **get_pop_config**: Get pipeline configuration
 - **list_pops**: List all visual analysis pipelines
+- **analyze_video**: Analyze a video with computer vision
+- **create_pop**: Create a visual pipeline
 
 
 ## 💬 Prompt Examples

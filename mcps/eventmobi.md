@@ -38,16 +38,16 @@ No more manual session updates or complex attendee lookups. Your AI acts as your
 ## Available Tools (12)
 - **create_agenda_session**: Add a new session to the agenda
 - **create_webhook**: Subscribe to event triggers
-- **list_gamification_challenges**: List gamification challenges
-- **list_events**: List all managed events
-- **list_attendees**: List event participants (attendees)
 - **list_live_polls**: List event polls
-- **list_sessions**: List event agenda sessions
-- **list_event_tracks**: List session tracks
-- **list_webhooks**: List event webhooks
 - **attendee_checkin**: Check in an attendee
 - **register_attendee**: Create a new attendee profile
 - **get_event_details**: Get metadata for an event
+- **list_gamification_challenges**: List gamification challenges
+- **list_events**: List all managed events
+- **list_attendees**: List event participants (attendees)
+- **list_sessions**: List event agenda sessions
+- **list_event_tracks**: List session tracks
+- **list_webhooks**: List event webhooks
 
 
 ## 💬 Prompt Examples

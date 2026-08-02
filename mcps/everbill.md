@@ -36,13 +36,13 @@ No more manual deal logging or digging through fragmented tables. Your AI acts a
 
 
 ## Available Tools (7)
-- **create_customer**: Create a new customer
-- **create_invoice**: Create a new invoice
 - **get_customer**: Get customer details
 - **get_invoice**: Get invoice details
+- **create_customer**: Create a new customer
+- **create_invoice**: Create a new invoice
+- **list_products**: List products
 - **list_customers**: List all customers in everbill
 - **list_invoices**: List all invoices
-- **list_products**: List products
 
 
 ## 💬 Prompt Examples

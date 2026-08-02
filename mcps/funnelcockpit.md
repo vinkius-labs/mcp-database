@@ -36,6 +36,8 @@ No more manual exporting of lead lists or missing webinar sign-ups. Your AI acts
 
 
 ## Available Tools (10)
+- **create_contact**: Create a CRM contact
+- **get_account**: Get account info
 - **get_contact**: Get contact details
 - **get_funnel**: Get funnel details
 - **list_campaigns**: List all campaigns
@@ -46,8 +48,6 @@ No more manual exporting of lead lists or missing webinar sign-ups. Your AI acts
 
 Update a CRM contact
 - **check_funnelcockpit_status**: Verify FunnelCockpit API connectivity
-- **create_contact**: Create a CRM contact
-- **get_account**: Get account info
 
 
 ## 💬 Prompt Examples

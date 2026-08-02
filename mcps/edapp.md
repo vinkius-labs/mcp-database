@@ -36,17 +36,17 @@ No more manual status checking or digging through student lists in the portal. Y
 
 
 ## Available Tools (12)
-- **create_new_learner**: Add learner to EdApp
-- **remove_learner**: Delete learner
-- **get_lesson_attempts_log**: Check lesson interactions
-- **list_course_lessons**: List course content
-- **get_account_info**: Get admin info
-- **get_course_progress_report**: Check learner progress
-- **get_catalog_statistics**: Check training stats
 - **get_learner_details**: Get user profile
 - **list_course_collections**: List grouped content
 - **list_training_courses**: List all courses
 - **list_learners**: List EdApp users
+- **create_new_learner**: Add learner to EdApp
+- **list_course_lessons**: List course content
+- **remove_learner**: Delete learner
+- **get_lesson_attempts_log**: Check lesson interactions
+- **get_account_info**: Get admin info
+- **get_course_progress_report**: Check learner progress
+- **get_catalog_statistics**: Check training stats
 - **list_active_webhooks**: Get event notifications
 
 

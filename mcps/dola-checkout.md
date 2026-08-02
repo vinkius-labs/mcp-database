@@ -39,17 +39,17 @@ No more manual order searching or complex checkout URL generation in the dashboa
 - **get_account_info**: Get account profile
 - **get_checkout**: Get checkout details
 - **get_customer**: Get customer details
-- **get_order**: Get order details
-- **list_checkouts**: List active checkouts
-- **list_customers**: List all customers
-- **list_orders**: List all checkout orders
 - **list_webhooks**: List active webhooks
 - **update_order**: Update order status
+- **list_customers**: List all customers
+- **list_orders**: List all checkout orders
 - **create_checkout**: Create a checkout session
 - **create_order**: Create a new order
 - **create_webhook**: created.
 
 Create a new webhook
+- **get_order**: Get order details
+- **list_checkouts**: List active checkouts
 
 
 ## 💬 Prompt Examples

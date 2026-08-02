@@ -37,16 +37,16 @@ No more manual watermarking or complex invitation tracking in the web portal. Yo
 
 ## Available Tools (12)
 - **create_dataroom**: Create a new Data Room
+- **list_files**: List protected files
+- **list_dataroom_guests**: List Data Room participants
+- **list_webhooks**: List configured webhooks
+- **list_activities**: Track document activities
 - **get_account_info**: Get account status
 - **get_dataroom_stats**: Get Data Room engagement stats
 - **get_dataroom**: Get Data Room details
 - **get_file**: Get file details
 - **invite_guest**: Invite a guest to a Data Room
-- **list_activities**: Track document activities
 - **list_datarooms**: List Virtual Data Rooms
-- **list_files**: List protected files
-- **list_dataroom_guests**: List Data Room participants
-- **list_webhooks**: List configured webhooks
 - **protect_file**: Securely share a file
 
 

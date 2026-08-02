@@ -41,7 +41,6 @@ Add a new activity/follow-up
 
 Add a new lead/opportunity via Data Entry
 - **list_crm_activities**: List CRM activities and tasks
-- **list_crm_custom_fields**: List defined custom fields
 - **list_sales_funnels**: List configured sales methodologies (funnels)
 - **list_loss_motives**: List motives for losing deals
 - **list_crm_opportunities**: Can be filtered by funnel code, date, or text search.
@@ -53,6 +52,7 @@ List lead source origins
 - **list_crm_products**: List registered products/services
 - **list_sales_vendors**: List CRM users (vendors)
 - **update_crm_activity**: Modify an existing activity
+- **list_crm_custom_fields**: List defined custom fields
 
 
 ## 💬 Prompt Examples

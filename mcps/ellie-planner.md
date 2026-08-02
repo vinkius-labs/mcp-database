@@ -36,6 +36,7 @@ No more manual toggling between browser tabs to check your todo list. Your AI ac
 
 
 ## Available Tools (8)
+- **update_task**: Update an existing task
 - **complete_task**: Mark a task as completed
 - **create_task**: Provide title and optionally date/labels.
 
@@ -45,7 +46,6 @@ Create a new task
 - **list_labels**: List all task labels
 - **list_lists**: List all task lists
 - **list_tasks**: List all tasks
-- **update_task**: Update an existing task
 
 
 ## 💬 Prompt Examples
