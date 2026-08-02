@@ -25,12 +25,12 @@ Real estate analysts, location intelligence platforms, regional economists, poli
 
 
 ## Available Tools (3)
-- **get_regional_data**: Use get_series_group first to find the series_group ID for a FRED series. Region types: state, county, msa, bea, frb, necta, country, censusregion.
-
-Get cross-sectional regional economic data
 - **get_series_group**: Enter a FRED series ID (e.g., UNRATE for unemployment) to discover the series_group ID, available region types, units, and seasonality.
 
 Get series group info for GeoFRED mapping
+- **get_regional_data**: Use get_series_group first to find the series_group ID for a FRED series. Region types: state, county, msa, bea, frb, necta, country, censusregion.
+
+Get cross-sectional regional economic data
 - **get_geo_shapes**: Shape values: bea, msa, frb, necta, state, country, county, censusregion.
 
 Get geographic shape files for mapping

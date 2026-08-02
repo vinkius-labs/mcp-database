@@ -35,13 +35,13 @@ Connect your **Freshmarketer** account (part of the Freshsales Suite) to any AI 
 
 
 ## Available Tools (10)
-- **create_mailing_list**: Create new mailing list
 - **check_account_status**: Verify API status
+- **create_mailing_list**: Create new mailing list
+- **list_mailing_lists**: List mailing lists
 - **get_contact_details**: Get contact metadata
 - **list_contacts**: List marketing contacts
 - **list_custom_events**: List configured events
 - **list_journeys**: List marketing journeys
-- **list_mailing_lists**: List mailing lists
 - **post_custom_event**: Trigger custom event
 - **send_transactional_email**: Trigger an email
 - **upsert_contact**: Create or update contact

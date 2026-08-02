@@ -32,13 +32,13 @@ Connect **Focus Logística** to any AI agent and manage your Brazilian cargo tra
 
 
 ## Available Tools (7)
+- **consult_cte**: Consult CT-e status
 - **consult_mdfe**: Consult MDF-e status
 - **emit_mdfe**: Emit Manifesto de Carga (MDF-e)
 - **close_mdfe**: Close/Finish a MDF-e
-- **consult_cte**: Consult CT-e status
 - **download_xml**: Download XML for CT-e or MDF-e
-- **emit_cte**: Emit a Conhecimento de Transporte (CT-e)
 - **cancel_cte**: Cancel a CT-e
+- **emit_cte**: Emit a Conhecimento de Transporte (CT-e)
 
 
 ## 💬 Prompt Examples
