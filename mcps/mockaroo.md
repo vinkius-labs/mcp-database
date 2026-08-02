@@ -36,10 +36,10 @@ Empower your AI agent to orchestrate your entire data synthesis workflow with **
 
 ## Available Tools (5)
 - **generate_mock_data**: Generate dummy data based on a list of fields
-- **generate_from_schema**: Generate data using a saved schema name
-- **list_datasets**: List uploaded datasets in Mockaroo
 - **list_schemas**: List saved schemas in your Mockaroo account
 - **list_field_types**: List all available field types for generation
+- **generate_from_schema**: Generate data using a saved schema name
+- **list_datasets**: List uploaded datasets in Mockaroo
 
 
 ## 💬 Prompt Examples

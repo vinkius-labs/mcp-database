@@ -50,9 +50,6 @@ Get all libraries (sections) on the Plex server
 - **get_library_content**: Filter by type: type=1 for movies, type=2 for TV shows, type=8 for artists, type=13 for photos. Requires the library key from get_libraries.
 
 Get all content from a specific library
-- **get_metadata**: Returns title, summary, year, runtime, rating, genres, director, cast, media streams, file path and more.
-
-Get detailed metadata for a specific item
 - **get_on_deck**: Returns the next unwatched episode for each in-progress show.
 
 Get "On Deck" items (continue watching)
@@ -68,9 +65,6 @@ Get recently added media to the library
 - **get_server_info**: Useful for verifying server connectivity and checking server health.
 
 Get Plex Media Server information
-- **get_sessions**: Each session includes the user, the media being watched (movie/episode), playback progress, player device, bandwidth and transcoding info.
-
-Get currently active streaming sessions
 - **mark_unwatched**: This resets the item's watch status. Requires the item's rating key.
 
 Mark a media item as unwatched
@@ -80,6 +74,12 @@ Mark a media item as watched
 - **refresh_library**: Useful after adding or removing files from your media folders. Requires the library key.
 
 Trigger a library scan/refresh
+- **get_metadata**: Returns title, summary, year, runtime, rating, genres, director, cast, media streams, file path and more.
+
+Get detailed metadata for a specific item
+- **get_sessions**: Each session includes the user, the media being watched (movie/episode), playback progress, player device, bandwidth and transcoding info.
+
+Get currently active streaming sessions
 - **search_library**: Returns matching movies, shows, episodes, artists and albums with their titles, types and metadata.
 
 Search the Plex media library

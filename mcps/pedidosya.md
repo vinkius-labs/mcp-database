@@ -34,19 +34,23 @@ Connect your **PedidosYa** partner account to any AI agent and manage the full d
 
 
 ## Available Tools (14)
-- **accept_order**: Once accepted, the restaurant commits to preparing the items within the estimated preparation time. The PedidosYa system will begin assigning a delivery courier.
+- **get_order**: Get full details of a specific order
+- **request_courier**: Used for scheduling on-demand courier pickups, ideal for B2B deliveries outside the regular order flow. Specify the pickup and dropoff addresses and package details.
 
-Accept a pending order
+Request a PedidosYa courier for a delivery
+- **track_shipment**: Track a courier shipment in real-time
 - **update_product_price**: Price changes take effect immediately on the marketplace listing. The price should be in the local currency of the venue's country.
 
 Update the price of a menu product
 - **update_product_status**: Use this to mark items as temporarily unavailable (sold out) or to bring them back online without editing the full menu.
 
 Toggle a menu product on or off
+- **accept_order**: Once accepted, the restaurant commits to preparing the items within the estimated preparation time. The PedidosYa system will begin assigning a delivery courier.
+
+Accept a pending order
 - **create_webhook**: g., new_order, order_cancelled, courier_assigned, order_delivered).
 
 Create a new webhook subscription
-- **get_order**: Get full details of a specific order
 - **get_restaurant**: Get details of a specific restaurant
 - **list_menu_sections**: g., Entradas, Platos Principales, Bebidas, Postres). Each section contains its products with prices, descriptions, and availability status.
 
@@ -66,10 +70,6 @@ Mark an order as ready for courier pickup
 - **reject_order**: Valid rejection reasons include: out_of_stock, closing_soon, too_busy, item_unavailable. Frequent rejections may affect your venue's ranking on the platform.
 
 Reject a pending order
-- **request_courier**: Used for scheduling on-demand courier pickups, ideal for B2B deliveries outside the regular order flow. Specify the pickup and dropoff addresses and package details.
-
-Request a PedidosYa courier for a delivery
-- **track_shipment**: Track a courier shipment in real-time
 
 
 ## 💬 Prompt Examples

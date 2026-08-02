@@ -35,9 +35,9 @@ Empower your AI agent to orchestrate your entire macroeconomic research and poli
 
 
 ## Available Tools (3)
+- **list_oecd_dataflows**: List all available dataflows and datasets in the OECD catalog
 - **check_api_status**: Check if the OECD Data service is operational
 - **get_oecd_dataset**: Get specific economic or social data from an OECD dataset ID
-- **list_oecd_dataflows**: List all available dataflows and datasets in the OECD catalog
 
 
 ## 💬 Prompt Examples

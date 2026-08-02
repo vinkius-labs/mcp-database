@@ -35,9 +35,9 @@ Empower your AI agent to orchestrate your entire visual content and media auditi
 
 
 ## Available Tools (3)
-- **check_api_status**: Check if the Pixabay service is operational
 - **search_pixabay_images**: Search for free high-quality images on Pixabay
 - **search_pixabay_videos**: Search for free high-quality videos on Pixabay
+- **check_api_status**: Check if the Pixabay service is operational
 
 
 ## 💬 Prompt Examples

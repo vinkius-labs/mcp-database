@@ -36,13 +36,13 @@ Equip your AI agent with the most comprehensive US state-level legislative intel
 
 
 ## Available Tools (7)
-- **list_committees**: List committees in a jurisdiction
-- **list_jurisdictions**: List all jurisdictions
-- **search_bills**: Search for legislative bills
-- **search_legislators**: Search for legislators
 - **get_bill_details**: Get bill details
 - **get_committee_details**: Get committee details
 - **get_legislator_details**: Get legislator details
+- **search_bills**: Search for legislative bills
+- **search_legislators**: Search for legislators
+- **list_committees**: List committees in a jurisdiction
+- **list_jurisdictions**: List all jurisdictions
 
 
 ## 💬 Prompt Examples

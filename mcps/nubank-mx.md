@@ -50,6 +50,10 @@ Get spending analytics and insights
 Get a credit card statement
 - **get_transaction**: Get full details of a specific transaction
 - **list_bills**: List pending bills and service payments
+- **list_transfers**: List outgoing transfers
+- **pay_bill**: If no amount is specified, the full outstanding amount is paid. Supports partial payments for eligible billers.
+
+Pay a bill or service
 - **list_credit_card_transactions**: settled status.
 
 List recent credit card transactions
@@ -57,10 +61,6 @@ List recent credit card transactions
 - **list_transactions**: Use limit and offset for pagination through large histories.
 
 List recent account transactions
-- **list_transfers**: List outgoing transfers
-- **pay_bill**: If no amount is specified, the full outstanding amount is paid. Supports partial payments for eligible billers.
-
-Pay a bill or service
 
 
 ## 💬 Prompt Examples

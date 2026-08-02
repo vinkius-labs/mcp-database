@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your food delivery operations with **Meitua
 
 ## Available Tools (10)
 - **cancel_order**: Cancel an order
+- **list_recent_orders**: List recent orders
+- **set_store_offline**: Close the store
+- **track_delivery**: Track delivery status
+- **list_categories**: List food categories
 - **confirm_order**: Confirm a new order
 - **get_order_detail**: Get order details
 - **get_store_comments**: Get store reviews
 - **get_store_info**: Get store metadata
-- **list_categories**: List food categories
-- **list_recent_orders**: List recent orders
-- **set_store_offline**: Close the store
 - **set_store_online**: Open the store
-- **track_delivery**: Track delivery status
 
 
 ## 💬 Prompt Examples

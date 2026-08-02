@@ -35,8 +35,8 @@ Equip your AI agent with the industry-standard terminology for clinical drugs th
 
 ## Available Tools (3)
 - **get_drug_properties**: Get all properties for an RxCUI
-- **get_rxcui_by_name**: Get RxCUI for a drug name
 - **get_drug_spelling_suggestions**: Get spelling suggestions for a drug name
+- **get_rxcui_by_name**: Get RxCUI for a drug name
 
 
 ## 💬 Prompt Examples

@@ -35,9 +35,6 @@ Empower your AI agent to orchestrate your digital communication with **SendCloud
 
 
 ## Available Tools (10)
-- **list_address_members**: List address members
-- **list_addresses**: List mailing addresses
-- **list_templates**: List email templates
 - **send_email**: Send an email
 - **add_address_member**: Add member to address list
 - **create_address**: Create address list
@@ -45,6 +42,9 @@ Empower your AI agent to orchestrate your digital communication with **SendCloud
 - **get_email_status**: Get email delivery status
 - **get_stats**: Get email statistics
 - **get_user_info**: Get account information
+- **list_address_members**: List address members
+- **list_addresses**: List mailing addresses
+- **list_templates**: List email templates
 
 
 ## 💬 Prompt Examples

@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your entire database infrastructure with **
 
 
 ## Available Tools (10)
+- **get_workspaces**: Get account workspaces
+- **list_tenants**: List cluster tenants
 - **get_cluster_details**: Get cluster details
 - **get_instance_details**: Get instance details
 - **get_resource_stats**: Get resource statistics
-- **get_workspaces**: Get account workspaces
 - **list_projects**: List OB projects
 - **get_tenant_details**: Get tenant details
 - **list_clusters**: List OceanBase clusters
 - **list_databases**: List tenant databases
 - **list_instances**: List OB instances
-- **list_tenants**: List cluster tenants
 
 
 ## 💬 Prompt Examples

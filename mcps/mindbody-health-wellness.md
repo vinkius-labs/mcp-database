@@ -38,13 +38,13 @@ Connect your AI agent to **MINDBODY**, the world's leading technology platform f
 - **get_class_visits**: Retrieve the list of clients attending a specific class
 - **get_client_details**: Get comprehensive information for a specific client
 - **get_site_info**: Retrieve information about the MINDBODY site
-- **get_client_purchases**: Retrieve the purchase history for a specific client
-- **get_client_visits**: Retrieve the visit history for a specific client
-- **list_classes**: Retrieve the class schedule for the business
 - **list_locations**: Retrieve a list of all physical locations for the business
 - **list_resources**: Retrieve a list of resources (rooms, equipment) used by the business
 - **list_staff**: Retrieve a list of employees/instructors for the business
 - **search_clients**: Search for clients by name or email
+- **get_client_purchases**: Retrieve the purchase history for a specific client
+- **get_client_visits**: Retrieve the visit history for a specific client
+- **list_classes**: Retrieve the class schedule for the business
 
 
 ## 💬 Prompt Examples

@@ -35,12 +35,12 @@ Equip your AI agent with the wonders of the universe through the **NASA Open Dat
 
 
 ## Available Tools (8)
+- **get_mars_rover_manifest**: Get the mission manifest and photo details for a Mars Rover
+- **get_mars_rover_photos**: Get photos from Mars rovers (Curiosity, Opportunity, Spirit)
 - **get_astronomy_picture**: Get the NASA Astronomy Picture of the Day (APOD)
 - **get_coronal_mass_ejections**: Get records of Coronal Mass Ejections (CME) from the Space Weather Database
 - **get_solar_flares**: Get records of Solar Flares from the Space Weather Database
 - **get_earth_polychromatic_images**: Get Earth Polychromatic Imaging Camera (EPIC) images
-- **get_mars_rover_manifest**: Get the mission manifest and photo details for a Mars Rover
-- **get_mars_rover_photos**: Get photos from Mars rovers (Curiosity, Opportunity, Spirit)
 - **get_near_earth_objects_feed**: Get a list of Near Earth Objects (asteroids) for a specific date range
 - **lookup_asteroid**: Lookup details for a specific Near Earth Object (Asteroid)
 
