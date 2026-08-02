@@ -5,20 +5,20 @@
 
 ## Overview
 
-**Category:** [customer-support](../categories/customer-support.md)
+**Category:** [marketing-automation](../categories/marketing-automation.md)
 
-Social media monitoring and alerts via Mention — track mentions and monitor brand sentiment.
+Monitor brand mentions across the web, social media, and news in real time to protect your reputation and spot trends early.
 
 ## Description
-Connect your **Mention** account to any AI agent and take full control of your social monitoring and brand alerts through natural conversation.
+Connect your **Mention** account to any AI agent and manage brand monitoring through natural conversation.
 
 ### What you can do
 
-- **Alert Management** — List all active monitoring alerts and fetch detailed configuration metadata
-- **Mention Tracking** — Retrieve recent social media mentions, filter for favorites, and search by text
-- **Deep Inspection** — Fetch full content, metadata, and sentiment analysis for specific mentions
-- **Brand Analytics** — Access volume and sentiment statistics for your monitoring alerts instantly
-- **Account Visibility** — List authorized users and connected external social media accounts
+- **Brand Monitoring** — Track mentions across social media, blogs, and news
+- **Alert Management** — Create and configure keyword monitoring alerts
+- **Sentiment Analysis** — Analyze the sentiment (positive/negative) of mentions
+- **Social Listening** — Browse recent mentions and filter by source or language
+- **Competitor Tracking** — Monitor competitor share of voice
 
 ### How it works
 
@@ -26,20 +26,26 @@ Connect your **Mention** account to any AI agent and take full control of your s
 2. Enter your Mention Access Token and Account ID
 3. Start monitoring your brand from Claude, Cursor, or any MCP-compatible client
 
+### Who is this for?
 
-## Available Tools (10)
-- **get_account_info**: Get account information
-- **get_alert**: Get details for a specific alert
-- **get_alert_statistics**: Get statistics for an alert
-- **get_mention_details**: Get details for a specific mention
-- **list_account_users**: List users associated with the account
-- **list_alerts**: List all monitoring alerts
-- **list_connected_external_accounts**: ) linked.
+- **PR Teams** — track media coverage and brand reputation
+- **Marketing** — monitor campaign hashtags and social engagement
+- **Customer Support** — identify unhappy customers complaining online
 
-List connected social accounts
-- **list_favorite_mentions**: List favorite mentions for an alert
-- **list_mentions**: List mentions for an alert
-- **search_mentions**: Search mentions by text
+
+## Available Tools (12)
+- **create_monitoring_alert**: Add new alert
+- **remove_monitoring_alert**: Delete an alert
+- **favorite_mention**: Mark as favorite
+- **get_alert_details**: Get alert info
+- **get_my_profile**: Get account info
+- **get_mention_content**: Read mention details
+- **list_monitoring_alerts**: List your alerts
+- **list_recent_mentions**: List findings
+- **list_active_webhooks**: Get event configs
+- **mark_mention_as_read**: Mark as seen
+- **search_mentions_by_keyword**: Find mentions
+- **get_alert_statistics**: Check reach metrics
 
 
 ## 💬 Prompt Examples
@@ -47,38 +53,38 @@ List connected social accounts
 Here are some examples of how you can interact with the **Mention** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active alerts in my Mention account."
+> "Show recent mentions for the 'Vinkius Launch' alert."
 
 **🤖 AI Agent:**
-> Retrieving alerts... I found 3 active alerts including 'Brand Monitor', 'Competitor A', and 'Industry Trends'.
+> Alert 'Vinkius Launch': 145 mentions in 24h. Sources: Twitter (89), News (34), Blogs (22). Sentiment: 78% Positive 🟢, 20% Neutral ⚪, 2% Negative 🔴. Top mention: TechCrunch article ('Vinkius redefines AI agents').
 
 ---
 
 **👤 You:**
-> "Search mentions for 'artificial intelligence' in alert ID 123."
+> "List all active alerts and their mention volumes."
 
 **🤖 AI Agent:**
-> Searching mentions... I found 5 recent posts mentioning AI in your brand alert stream.
+> Active Alerts: 4. 1) 'Brand Name' (1,240 mentions/week). 2) 'Competitor X' (3,400 mentions/week). 3) '#IndustryConf2024' (890 mentions). 4) 'CEO Name' (45 mentions). Total volume: 5,575. Unread mentions: 342.
 
 ---
 
 **👤 You:**
-> "Show volume statistics for my primary brand alert."
+> "Show negative mentions from the last 2 days."
 
 **🤖 AI Agent:**
-> Calculating statistics... You had 150 mentions today, a 10% increase compared to yesterday.
+> Found 12 negative mentions. 1) @user (Twitter): 'Support is taking too long to reply.' 2) Reddit (/r/saas): 'Pricing update is confusing.' 3) Blog review: 'Great features, but UX needs work.' Would you like to read the full Reddit thread?
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Mention Access Token and Account ID?**
-Log in to Mention, navigate to Developer settings to generate a Personal Access Token. Your Account ID is shown in your account settings.
+**Q: Can I monitor specific keywords and brands?**
+Yes. Create alerts with boolean queries to track specific brand names, competitors, or industry hashtags.
 
-**Q: What social platforms are monitored?**
-Mention monitors news, blogs, forums, Twitter, Instagram, Facebook, and various other web sources.
+**Q: How does Mention authentication work?**
+Mention requires both an **Access Token** (Bearer) and an **Account ID** against `api.mention.net/api/v1`.
 
-**Q: Is my monitoring data secure?**
-Absolutely. Your token is encrypted at rest and injected securely at runtime.
+**Q: Does Mention provide sentiment analysis?**
+Yes. Mentions are automatically tagged with positive, negative, or neutral sentiment scores.
 
 
 ## Installation & Usage

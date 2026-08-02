@@ -34,7 +34,13 @@ Connect your **LeadSquared** account to any AI agent to automate your sales exec
 
 
 ## Available Tools (10)
-- **create_opportunity**: Create a new sales opportunity
+- **list_activity_types**: g., Phone Call, Meeting) configured in LeadSquared.
+
+List all lead activity types
+- **capture_lead**: Capture or update a lead
+- **create_prospect_activity**: g., call log, email sent) to a lead profile.
+
+Record a new activity for a lead
 - **create_or_update_lead**: Uses email or phone as the matching criteria.
 
 Create or update a lead profile
@@ -43,13 +49,7 @@ Create or update a lead profile
 - **list_opportunities**: List sales opportunities
 - **list_opportunity_activities**: List activities for a specific opportunity
 - **search_leads**: Search for leads with criteria
-- **list_activity_types**: g., Phone Call, Meeting) configured in LeadSquared.
-
-List all lead activity types
-- **capture_lead**: Capture or update a lead
-- **create_prospect_activity**: g., call log, email sent) to a lead profile.
-
-Record a new activity for a lead
+- **create_opportunity**: Create a new sales opportunity
 
 
 ## 💬 Prompt Examples

@@ -39,6 +39,9 @@ Connect your **Lexware Office (lexoffice)** account to any AI agent and take ful
 - **create_contact**: Berücksichtigt hierbei standardisierte Formatierung für Kontaktpersonen (Vorname Nachname) und Rollenzuweisungen.
 
 Neuen Geschäftsdatensatz (Kunde oder Lieferant) in Lexoffice anlegen
+- **list_contacts**: Nützlich zur Verwaltung der Stammdaten.
+
+Alle Kontakte (Kunden, Lieferanten) in Lexoffice strukturieren und auflisten
 - **list_invoices**: Verwendet standardmäßig die paginierte Ansicht.
 
 Alle abgerechneten Rechnungen auflisten, chronologisch sortiert
@@ -48,21 +51,18 @@ Detaillierte Informationen sowie Positionen einer bestimmten Rechnung abrufen
 - **list_credit_notes**: Gutschriftsbelegen zur buchhalterischen Prüfung nach Datum absteigend strukturiert.
 
 Historie aller in Lexoffice verzeichneten Gutschriften anzeigen
-- **get_credit_note**: Exakte Betragsdetails und Positionen einer spezifischen Gutschrift abfragen
 - **list_quotations**: Zusammenstellung offener und abgeschlossener Angebote auflisten
 - **get_quotation**: Umfangreiche Einzelheiten (Beträge, Positionen) eines bestimmten Angebots betrachten
-- **list_order_confirmations**: Strukturiertes Register aller bisherigen Auftragsbestätigungen aufrufen
 - **list_delivery_notes**: Sammlung ausgestellter Lieferscheine (Versanddokumente) abrufen
 - **list_vouchers**: Deckt Rechnungen, Gutschriften und Ausgaben in einem gebündelten Datenstrom ab.
 
 Gesamtübersicht aller Arten verbuchter Belege (Ausgaben, Einnahmen) betrachten
-- **list_payment_conditions**: Stammdaten zu global hinterlegten Zahlungsbedingungen (Zahlungsziele, Skonto) abfragen
+- **list_payment_conditions**: Stammdaten zu globalThis hinterlegten Zahlungsbedingungen (Zahlungsziele, Skonto) abfragen
 - **list_posting_categories**: Dies regelt in der Zuordnung, auf welches DATEV- oder Interne-Konto ein Vorfall verbucht wird.
 
 Definierte Buchungskategorien / Kontorahmen für Einnahmen und Ausgaben anzeigen
-- **list_contacts**: Nützlich zur Verwaltung der Stammdaten.
-
-Alle Kontakte (Kunden, Lieferanten) in Lexoffice strukturieren und auflisten
+- **get_credit_note**: Exakte Betragsdetails und Positionen einer spezifischen Gutschrift abfragen
+- **list_order_confirmations**: Strukturiertes Register aller bisherigen Auftragsbestätigungen aufrufen
 
 
 ## 💬 Prompt Examples

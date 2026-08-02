@@ -36,14 +36,6 @@ Connect your **Logseq** instance to any AI agent and take full control of your p
 
 
 ## Available Tools (10)
-- **list_pages**: List all pages in the current Logseq graph
-- **get_page**: Retrieve metadata for a specific Logseq page by mapping name or UUID limits
-- **create_page**: Editor.createPage` deploying new pages including native markdown contents inside the local map.
-
-Create explicitly a new organized page in the Logseq target Graph
-- **delete_page**: Editor.deletePage` removing content arrays destroying metadata loops.
-
-Delete an entire explicit active Logseq page irreversibly
 - **get_page_blocks**: Extract the hierarchical explicit native tree limit array block from a page map
 - **insert_block**: Editor.insertBlock` natively adding outliner chunks executing explicit properties updating nodes immediately.
 
@@ -56,6 +48,14 @@ Modify raw properties explicitly bound inside a given Logseq tracked block
 Delete an explicit active Block target removing explicit nodes safely
 - **search_content**: Execute local queries extracting explicitly bound text targets crossing Graph indices
 - **get_current_graph**: Validate environment limits identifying explicit current graph arrays parsed natively
+- **list_pages**: List all pages in the current Logseq graph
+- **get_page**: Retrieve metadata for a specific Logseq page by mapping name or UUID limits
+- **create_page**: Editor.createPage` deploying new pages including native markdown contents inside the local map.
+
+Create explicitly a new organized page in the Logseq target Graph
+- **delete_page**: Editor.deletePage` removing content arrays destroying metadata loops.
+
+Delete an entire explicit active Logseq page irreversibly
 
 
 ## 💬 Prompt Examples

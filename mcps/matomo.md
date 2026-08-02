@@ -28,7 +28,6 @@ Connect your **Matomo** analytics instance to any AI agent and gain deep insight
 
 
 ## Available Tools (10)
-- **get_live_last_visits**: Get last visits in real-time
 - **get_site_details**: Get details for a specific website
 - **get_top_pages**: Get the most visited pages
 - **get_top_referrers**: Get the top referrer types
@@ -36,8 +35,9 @@ Connect your **Matomo** analytics instance to any AI agent and gain deep insight
 - **get_top_websites**: Get the top referring websites
 - **get_visitor_profile**: Get a detailed profile for a visitor
 - **get_visits_summary**: Get a summary of visits
-- **list_sites**: List all websites in Matomo
 - **get_goals**: Get the list of goals
+- **get_live_last_visits**: Get last visits in real-time
+- **list_sites**: List all websites in Matomo
 
 
 ## 💬 Prompt Examples

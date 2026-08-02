@@ -18,6 +18,12 @@ Lob MCP Server enables AI agents to send physical mail directly from your applic
 - **cancel_letter**: Only works if status is still "processing".
 
 Cancel a letter before it enters production
+- **list_bank_accounts**: Use optional limit to control result count.
+
+List bank accounts in your Lob account
+- **list_checks**: Track payments, audit disbursements.
+
+List physical checks sent through Lob
 - **create_address**: Requires name and address_line1.
 
 Create a new address in your Lob address book
@@ -34,14 +40,6 @@ Create and mail a physical letter through Lob
 
 Create and mail a physical postcard through Lob
 - **create_template**: Create a reusable HTML template for mailings
-- **list_letters**: Each letter includes status, tracking number, and expected delivery date. Use optional limit to control result count.
-
-List physical letters sent through Lob. Track mailings, check delivery status, and review letter history
-- **list_postcards**: Use optional limit to control result count.
-
-List physical postcards sent through Lob
-- **list_templates**: List HTML templates for mailings
-- **verify_us_address**: Verify and standardize a US address
 - **delete_address**: Delete an address from your Lob address book
 - **get_address**: Get details of a specific address
 - **get_check**: Get details of a specific check by ID
@@ -51,12 +49,14 @@ List physical postcards sent through Lob
 - **list_addresses**: Use optional limit to control result count.
 
 List addresses in your Lob address book
-- **list_bank_accounts**: Use optional limit to control result count.
+- **list_letters**: Each letter includes status, tracking number, and expected delivery date. Use optional limit to control result count.
 
-List bank accounts in your Lob account
-- **list_checks**: Track payments, audit disbursements.
+List physical letters sent through Lob. Track mailings, check delivery status, and review letter history
+- **list_postcards**: Use optional limit to control result count.
 
-List physical checks sent through Lob
+List physical postcards sent through Lob
+- **list_templates**: List HTML templates for mailings
+- **verify_us_address**: Verify and standardize a US address
 
 
 ## 💬 Prompt Examples

@@ -28,6 +28,9 @@ Connect your **Metaplane** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
+- **list_monitors**: List all data monitors
+- **list_connection_schemas**: List schemas for a connection
+- **trigger_monitor_run**: Trigger a monitor run
 - **get_account_info**: Get account information
 - **get_incident**: Get details for a specific incident
 - **get_monitor**: Get details for a specific monitor
@@ -35,9 +38,6 @@ Connect your **Metaplane** account to any AI agent and take full control of your
 - **list_configured_alerts**: List configured alerts
 - **list_data_connections**: List all data source connections
 - **list_incidents**: List data incidents
-- **list_monitors**: List all data monitors
-- **list_connection_schemas**: List schemas for a connection
-- **trigger_monitor_run**: Trigger a monitor run
 
 
 ## 💬 Prompt Examples

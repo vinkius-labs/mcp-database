@@ -7,46 +7,48 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Send transactional emails and manage domains via the MailerSend REST API.
+Send transactional and marketing emails with templates, analytics, and deliverability tools built for developers and businesses.
 
 ## Description
-Connect your **MailerSend** account to any AI agent to automate your transactional messaging and domain management. This MCP server enables your agent to send single or bulk emails, monitor domain verification, and track email activity directly from natural language interfaces.
+Connect your **MailerSend** account to any AI agent and manage transactional email through natural conversation.
 
 ### What you can do
 
-- **Email Delivery** — Send transactional emails instantly with support for HTML, text, and templates
-- **Bulk Operations** — Send up to 500 emails in a single batch request for high-volume communications
-- **Domain Oversight** — List sender domains, retrieve DNS settings, and trigger ownership verification checks
-- **Recipient Management** — List and query recipients from your account database to track engagement
-- **Activity Auditing** — Access real-time logs of email events (sent, delivered, opened, clicked) for any domain
-- **Message Insight** — Retrieve complete metadata and lifecycle history for individual sent messages
+- **Email Sending** — Send transactional and bulk emails with templates
+- **Template Management** — Create and manage email templates with variables
+- **Delivery Analytics** — Track opens, clicks, bounces, and delivery rates
+- **Domain Management** — Configure sending domains and DNS records
+- **Recipient Management** — Manage suppression lists and blocklists
+- **Activity Logs** — Browse detailed email activity and event logs
 
 ### How it works
 
 1. Subscribe to this server
 2. Enter your MailerSend API Token
-3. Start managing your transactional emails from Claude, Cursor, or any MCP-compatible client
+3. Start sending email from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Developers** — Quickly test email sending and verify domain configurations from your IDE
-- **Operations Teams** — Monitor email delivery performance and audit activities via natural language commands
-- **Marketing Engineers** — Automate the synchronization of recipient data and track campaign-level interactions
+- **Developers** — integrate transactional email with rich analytics
+- **Product Teams** — manage email templates and delivery
+- **DevOps** — monitor domain health and deliverability
 
 
-## Available Tools (10)
-- **list_domain_activity**: List email activity for a specific domain
-- **list_sender_domains**: List all verified and unverified sender domains
-- **list_sent_messages**: List all sent email messages
-- **list_email_recipients**: List all recipients in the account database
-- **send_bulk_transactional_emails**: Send multiple transactional emails in one batch
-- **send_transactional_email**: Requires a JSON body with sender, recipient, and content (text/html) or template ID.
+## Available Tools (12)
+- **get_date_analytics**: Check usage stats
+- **get_domain_details**: Get domain info
+- **get_message_info**: Get message status
+- **get_template_details**: Get template info
+- **list_email_activities**: ).
 
-Send a single transactional email
-- **verify_sender_domain**: Trigger a DNS verification check for a domain
-- **get_sender_domain_details**: Get details for a specific domain
-- **get_sent_message_details**: Get details for a specific sent message
-- **get_recipient_details**: Get details for a specific recipient
+Check email logs
+- **list_sending_domains**: List verified domains
+- **list_email_templates**: List saved templates
+- **list_domain_webhooks**: Get notification configs
+- **send_templated_email**: Send with template
+- **get_account_limits**: Check plan quotas
+- **send_transactional_email**: Send custom email
+- **list_sent_messages**: List specific messages
 
 
 ## 💬 Prompt Examples
@@ -54,38 +56,38 @@ Send a single transactional email
 Here are some examples of how you can interact with the **MailerSend** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Send a transactional email to 'user@example.com' with subject 'Welcome' and body 'Hello!'."
+> "Show sending analytics and domain health status."
 
 **🤖 AI Agent:**
-> I've sent the email to user@example.com. The message ID is '64f1abcde12345'. MailerSend has queued the delivery.
+> Sending (7 days): 4,560 emails. Delivered: 4,468 (98% ✅). Opens: 1,824 (41%). Clicks: 456 (10%). Bounced: 68 (1.5%). Spam complaints: 4 (0.09%). Domains: 2. 'app.company.com' — Verified ✅, SPF ✅, DKIM ✅, DMARC ✅. 'notify.company.com' — Verified ✅, DMARC ⚠️ (policy: none).
 
 ---
 
 **👤 You:**
-> "List all active sender domains in my account."
+> "List email templates and send a password reset email."
 
 **🤖 AI Agent:**
-> I've retrieved your domains. You have 2 verified domains: 'mail.example.com' and 'updates.myfirm.io'. Would you like to check the DNS settings for any of them?
+> Templates: 6. 'Welcome' (used 1,200x), 'Password Reset' (890x), 'Invoice' (456x), 'Shipping Notification' (334x), 'Verification' (1,500x), 'Feedback Request' (220x). Email sent! ✅ Template: 'Password Reset'. To: sarah@company.com. Variables: {name: 'Sarah', reset_link: 'https://...'}. Delivered in 0.8s.
 
 ---
 
 **👤 You:**
-> "Show recent opened events for domain ID '98765'."
+> "Show suppression list and recent bounce details."
 
 **🤖 AI Agent:**
-> I found 15 'opened' events for domain 98765 in the last 7 days. Most recent interactions were from 'customer@corp.com' and 'alice@test.io'.
+> Suppression list: 145 addresses. Hard bounces: 89. Spam complaints: 34. Manual: 22. Recent bounces (48h): 12. Hard: 'user@oldomain.com' (domain expired), 'test@fake.io' (mailbox not found). Soft: 'info@bigcorp.com' (mailbox full, retry in 4h). Bounce rate trend: 1.5% → 1.2% (improving ⬇️).
 
 
 ## ❓ FAQ
 
-**Q: Can I use templates with the send_transactional_email tool?**
-Yes, you can specify a `template_id` within the `email_json` body to use pre-defined designs created in your MailerSend account.
+**Q: Can I send transactional emails with templates?**
+Yes. Send emails using pre-built templates with dynamic variables, or send raw HTML content with full delivery tracking.
 
-**Q: How do I filter activity for a specific event like 'opened'?**
-Use the `list_domain_activity` tool and provide the `params` string with the desired event types (e.g., `event[]=opened`).
+**Q: Can I manage domains and DNS records?**
+Yes. Configure sending domains, verify DNS records (SPF, DKIM, DMARC), and monitor domain health and reputation.
 
-**Q: Is there a limit to bulk email requests?**
-The `send_bulk_transactional_emails` tool supports up to 500 email objects per single request as per MailerSend API limits.
+**Q: What API does MailerSend use?**
+Bearer authentication against `api.mailersend.com/v1`.
 
 
 ## Installation & Usage

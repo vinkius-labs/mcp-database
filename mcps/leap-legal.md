@@ -94,14 +94,10 @@ EXAMPLES:
 - "Add 30 minute phone call with client" → call with matter_id="123", description="Phone call with client", duration_minutes=30
 
 Create a new time entry for billing
-- **get_leap_bill**: Get detailed information for a specific bill/invoice
 - **get_client_leap_matters**: Useful for understanding a client's full legal portfolio.
 
 Get all matters/cases for a specific client/contact
 - **get_leap_contact**: Get detailed information for a specific contact/client
-- **get_leap_matter**: Get detailed information for a specific matter/case
-- **list_leap_bills**: List bills/invoices in LEAP Legal
-- **list_leap_calendar_events**: List calendar events in LEAP Legal
 - **list_leap_contacts**: USE WHEN:
 - User wants to see all their clients and contacts
 - User needs to find a client by name or email
@@ -166,6 +162,10 @@ EXAMPLES:
 List time entries in LEAP Legal
 - **search_leap_matters**: Search matters/cases by keyword query
 - **update_leap_matter**: Update an existing matter/case in LEAP Legal
+- **get_leap_bill**: Get detailed information for a specific bill/invoice
+- **get_leap_matter**: Get detailed information for a specific matter/case
+- **list_leap_bills**: List bills/invoices in LEAP Legal
+- **list_leap_calendar_events**: List calendar events in LEAP Legal
 
 
 ## 💬 Prompt Examples

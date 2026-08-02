@@ -5,46 +5,50 @@
 
 ## Overview
 
-**Category:** [crm-sales](../categories/crm-sales.md)
+**Category:** [lead-generation](../categories/lead-generation.md)
 
-Manage cold outreach campaigns, leads, and prospects via the Mailshake REST API.
+Run cold email outreach campaigns with personalization, automated follow-ups, and reply detection that fills your sales pipeline.
 
 ## Description
-Connect your **Mailshake** account to any AI agent to automate your cold outreach and sales engagement workflows. This MCP server enables your agent to manage campaigns, promote prospects to lead status, and track email interactions directly from natural language interfaces.
+Connect your **Mailshake** account to any AI agent and manage sales outreach through natural conversation.
 
 ### What you can do
 
-- **Campaign Management** — List all outreach campaigns, retrieve detailed sequences, and pause or unpause sending
-- **Lead Tracking** — Monitor qualified leads, retrieve interaction histories, and update prospect statuses
-- **Prospect Ingestion** — Programmatically add new recipients to existing campaigns to keep your pipeline full
-- **Message Insights** — List sent and received messages and retrieve full content for automated sentiment analysis or follow-up planning
-- **Audience Oversight** — List all recipients in a campaign and monitor their individual engagement stages (Sent, Opened, Replied)
+- **Campaign Management** — Create and manage outreach campaigns
+- **Lead Tracking** — Browse leads with engagement status and activity
+- **Sequence Management** — Configure multi-step email sequences
+- **Reply Monitoring** — Track replies, opens, and click activity
+- **Team Performance** — Monitor team outreach metrics and quotas
+- **Lead Lists** — Import and manage prospect lists
 
 ### How it works
 
 1. Subscribe to this server
 2. Enter your Mailshake API Key
-3. Start managing your sales outreach from Claude, Cursor, or any MCP-compatible client
+3. Start managing outreach from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Sales Representatives** — Quickly check campaign statuses and lead updates without opening the dashboard
-- **Growth Marketers** — Automate the process of adding new prospects from research tools into active campaigns
-- **Sales Operations** — Monitor outreach performance and audit message sequences via natural language commands
+- **SDRs** — manage outbound campaigns and track engagement
+- **Sales Teams** — monitor reply rates and lead quality
+- **Growth** — scale cold outreach with analytics
 
 
-## Available Tools (9)
-- **list_outreach_campaigns**: List all outreach campaigns
-- **get_campaign_details**: Get details for a specific campaign
-- **get_lead_history**: Get history for a specific lead
-- **get_message_content**: Get content for a specific email message
-- **list_campaign_leads**: List qualified leads
-- **list_outreach_messages**: List sent and received messages
-- **pause_outreach_campaign**: Pause a running campaign
-- **list_campaign_recipients**: List all recipients in a campaign
-- **add_prospects_to_campaign**: Requires a JSON body with recipient details.
+## Available Tools (12)
+- **add_prospects**: Add new prospects
+- **get_campaign_details**: Get campaign info
+- **get_user_profile**: Get profile info
+- **get_team_details**: Get account team
+- **list_engagement_activity**: Get open/click activity
+- **list_campaigns**: List cold email campaigns
+- **list_sales_leads**: List qualified leads
+- **list_campaign_recipients**: List recipients
+- **pause_campaign**: Stop campaign sending
+- **pause_prospect**: Stop outreach for user
+- **resume_campaign**: Resume campaign sending
+- **update_lead_status**: g., Reply, Won, Lost, Ignored).
 
-Add new prospects to an existing campaign
+Set lead stage
 
 
 ## 💬 Prompt Examples
@@ -52,38 +56,38 @@ Add new prospects to an existing campaign
 Here are some examples of how you can interact with the **Mailshake** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my active outreach campaigns in Mailshake."
+> "Show all campaigns and reply rates."
 
 **🤖 AI Agent:**
-> I've retrieved your campaigns. You have 3 active campaigns: 'Q3 SaaS Outreach (ID: 123)', 'Webinar Follow-up', and 'Partnership Requests'.
+> Campaigns: 5 active. 'Q2 Outbound' (450 leads, 42% open, 8% reply ⭐). 'Product Demo' (200, 38% open, 12% reply ⭐). 'Follow-up Series' (150, 35% open, 6% reply). 'Partner Outreach' (80, 45% open, 10%). 'Re-engagement' (120, 28% open, 4%). Total sent: 3,200. Avg reply: 7.8%. Interested: 89 leads.
 
 ---
 
 **👤 You:**
-> "Show recent leads for the 'Partnership' campaign."
+> "Show leads from Q2 Outbound and their engagement."
 
 **🤖 AI Agent:**
-> I found 5 recent leads for the Partnership campaign. Notable responses from 'John Smith' (Acme Corp) and 'Jane Doe' (Global Tech) are awaiting your follow-up.
+> Q2 Outbound: 450 leads. Replied: 36 (8%). Interested: 18 (4%). Meeting booked: 8 (1.8%). Not interested: 12. No reply: 414. Step breakdown: Step 1 (450 sent, 42% open), Step 2 (380, 35%), Step 3 (320, 30%). Top engaged: sarah@acme.com (opened 3x, clicked 2x, replied ✅).
 
 ---
 
 **👤 You:**
-> "Pause the campaign with ID '12345'."
+> "Show team performance and daily sending quotas."
 
 **🤖 AI Agent:**
-> Successfully paused campaign 12345. No more messages will be sent until you unpause the campaign.
+> Team: 3 reps. Sarah — 180 leads, 12% reply ⭐, 6 meetings. Mike — 150 leads, 8% reply, 4 meetings. Lisa — 120 leads, 6% reply, 2 meetings. Daily quota: 200/rep (600 total). Used today: 145 (24%). Best day: Tuesday (highest open rates). Best time: 9-10 AM EST.
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Mailshake API Key?**
-Log in to Mailshake, navigate to 'Extensions' in the main menu, and select 'API' to generate or copy your personal API key.
+**Q: Can I manage outreach campaigns and sequences?**
+Yes. Create campaigns with multi-step sequences, personalize emails, and track engagement through each step.
 
-**Q: What is the difference between a Lead and a Recipient?**
-A Recipient is anyone added to a campaign. A Lead is a recipient who has met specific engagement criteria (like replying) and is tracked in the 'Lead Catcher'.
+**Q: How does Mailshake authentication work?**
+Mailshake uses **HTTP Basic Auth** with the API Key against `api.mailshake.com/2017-04-01`.
 
-**Q: Can I add multiple prospects at once?**
-Yes, the `add_prospects_to_campaign` tool accepts a JSON body where you can provide a list of multiple recipients to be added in a single request.
+**Q: Can I track replies and lead engagement?**
+Yes. Monitor replies, categorize as interested/not interested, and track opens and clicks per lead.
 
 
 ## Installation & Usage
