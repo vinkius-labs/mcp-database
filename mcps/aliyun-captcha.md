@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your application security and bot protectio
 
 
 ## Available Tools (2)
-- **create_captcha_scene**: g., Login, Checkout). Returns a Scene ID for client-side SDK initialization.
-
-Create a new CAPTCHA verification scenario
 - **verify_captcha**: Returns verification result (pass/fail).
 
 Verify a CAPTCHA response
+- **create_captcha_scene**: g., Login, Checkout). Returns a Scene ID for client-side SDK initialization.
+
+Create a new CAPTCHA verification scenario
 
 
 ## 💬 Prompt Examples

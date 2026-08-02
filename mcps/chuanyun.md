@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your enterprise digital infrastructure with
 
 
 ## Available Tools (10)
-- **create_biz_object**: Create a new business object
 - **delete_biz_object**: Delete a business object
-- **get_biz_object_details**: Get object detailed data
 - **get_form_schema**: Get form field schema
+- **list_workflows**: List form workflows
+- **update_biz_object**: Update an existing business object
+- **create_biz_object**: Create a new business object
+- **get_biz_object_details**: Get object detailed data
 - **get_workflow_history**: Get workflow instance history
 - **list_biz_objects**: List business objects (records)
 - **list_forms**: List all forms in the application
 - **list_users**: List application users
-- **list_workflows**: List form workflows
-- **update_biz_object**: Update an existing business object
 
 
 ## 💬 Prompt Examples

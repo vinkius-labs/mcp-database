@@ -33,13 +33,13 @@ Equip your AI agent with deep intelligence from the world's leading chess platfo
 
 
 ## Available Tools (12)
+- **get_global_leaderboards**: com.
+
+Get current top player rankings
 - **get_chess_club_details**: Get metadata for a specific chess club
 - **get_country_details_chess**: com identifier using a 2-letter ISO code.
 
 Get details for a specific country by ISO code
-- **get_global_leaderboards**: com.
-
-Get current top player rankings
 - **get_player_monthly_games**: Get games played by a user in a specific month
 - **get_player_profile**: Get basic information about a Chess.com player
 - **get_daily_chess_puzzle**: com.
@@ -48,11 +48,11 @@ Get the official daily chess puzzle
 - **get_random_chess_puzzle**: com database for tactical training.
 
 Get a random chess tactic/puzzle
-- **list_active_streamers**: List active Chess.com streamers
-- **list_titled_players**: List players with a specific title (GM, IM, etc)
-- **get_tournament_metadata**: Get details for a specific tournament
 - **get_player_stats**: Get ratings and statistics for a player
+- **list_active_streamers**: List active Chess.com streamers
+- **get_tournament_metadata**: Get details for a specific tournament
 - **get_player_game_archives**: List available monthly game archives for a player
+- **list_titled_players**: List players with a specific title (GM, IM, etc)
 
 
 ## 💬 Prompt Examples

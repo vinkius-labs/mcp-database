@@ -39,9 +39,6 @@ No more manual browsing through massive asset libraries. Your AI agent becomes y
 
 
 ## Available Tools (10)
-- **delete_media_asset**: This action is irreversible and removes the asset from all collections.
-
-Permanently removes an asset from the Acquia DAM
 - **get_asset_details**: Retrieves comprehensive metadata and technical properties for a specific asset
 - **get_category_contents**: Retrieves the assets and sub-nodes within a specific category
 - **list_collection_assets**: Lists all assets contained within a specific user collection
@@ -55,6 +52,9 @@ Search for assets in Acquia DAM (Widen) using the internal search syntax
 - **update_asset_metadata**: Provide the asset ID and a JSON object mapping field keys to values.
 
 Updates the metadata fields of an existing asset
+- **delete_media_asset**: This action is irreversible and removes the asset from all collections.
+
+Permanently removes an asset from the Acquia DAM
 
 
 ## 💬 Prompt Examples

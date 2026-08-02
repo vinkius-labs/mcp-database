@@ -5,60 +5,47 @@
 
 ## Overview
 
-**Category:** [erp-operations](../categories/erp-operations.md)
+**Category:** [productivity](../categories/productivity.md)
 
-Automate cloud accounting via Alegra — issue invoices, manage contacts, track inventory, and monitor bank accounts from any AI agent.
+Handle your Latin American business accounting with electronic invoicing, expense tracking, and tax-ready financial reports.
 
 ## Description
-Connect your **Alegra** cloud accounting platform to any AI agent and manage your entire financial operation through natural conversation.
+Connect your **Alegra** account to any AI agent and simplify how you manage your professional billing, customer directory, and inventory through natural conversation.
 
 ### What you can do
 
-- **Invoice Management** — Create, list, and inspect sales invoices with DIAN electronic invoicing compliance for Colombia, including tax breakdowns and payment tracking
-- **Contact Directory** — Manage your complete client and supplier database with NIT/CC identification, fiscal regime classification, and outstanding balances
-- **Inventory Control** — Browse products and services, check stock per warehouse, manage pricing, and create new catalog items
-- **Expense Tracking** — List supplier bills, purchase invoices, and track payable obligations across your accounting periods
-- **Payment Monitoring** — Query received payments, bank account balances, and reconciliation status in real-time
-- **Tax Configuration** — Access IVA rates, retention types, ICA taxes, and country-specific tax parameters
+- **Billing Management** — Create, list, and inspect sales invoices with detailed status tracking (open, paid, overdue).
+- **Customer & Supplier CRM** — Manage your contacts, update profile data, and check individual transaction histories.
+- **Inventory Control** — Query your product and service catalog to monitor stock levels and pricing metadata.
+- **Financial Oversight** — Monitor received payments and track sales estimates/quotes sent to potential clients.
+- **Organization Insights** — Retrieve company metadata and verify account configurations directly from the agent.
+- **Operational Monitoring** — Check connectivity and manage your commercial ecosystem without leaving your workspace.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Alegra email and API token
-3. Start managing your accounting from Claude, Cursor, or any MCP-compatible client
-
-Your AI becomes a dedicated virtual accountant — instantly answering financial queries that would normally require navigating multiple dashboard screens.
+2. Enter your Alegra Email and API Token (found in your account settings)
+3. Start managing your business finances from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **Small Business Owners** — issue invoices and check cash flow without opening the accounting dashboard
-- **Accountants** — query client data, tax configurations, and payment histories programmatically
-- **Operations Managers** — track inventory levels and supplier bills across multiple warehouses
+- **Small Business Owners** — quickly create invoices and check client balances via simple AI commands.
+- **Finance & Admin Teams** — monitor payments and manage the contact directory directly from the workspace.
+- **Operations Managers** — track inventory levels and verify service availability via the AI assistant.
 
 
-## Available Tools (14)
-- **create_contact**: For Colombian tax compliance (DIAN), include the identification type (NIT, CC, CE) and number. The contact can be tagged as client, supplier, or both.
-
-Create a new contact (client or supplier)
-- **create_invoice**: For Colombian DIAN electronic invoicing compliance, the invoice is automatically validated and stamped. Requires a client ID and at least one line item with the product/service details.
-
-Create a new sales invoice
-- **create_item**: The item can be used in future invoices, purchase orders, and inventory tracking. Set the type to "product" for physical goods with stock management or "service" for intangible services.
-
-Create a new inventory item
-- **get_contact**: Get full details of a specific contact
-- **get_invoice**: Get full details of a specific invoice
-- **get_item**: Get full details of a specific inventory item
-- **list_bank_accounts**: List all bank accounts
-- **list_bills**: List supplier bills and purchase invoices
-- **list_contacts**: Each contact includes their legal name, NIT/CC identification, address, phone, email, and whether they are classified as a client, supplier, or both.
-
-List all contacts (clients and suppliers)
-- **list_invoices**: List sales invoices
-- **list_items**: List all inventory items
-- **list_payments**: List received payments
-- **list_taxes**: List configured tax rates
-- **list_warehouses**: List all warehouses
+## Available Tools (11)
+- **create_contact**: Create a new contact in Alegra
+- **get_item_details**: Get details of an inventory item
+- **create_invoice**: Create a new sales invoice
+- **get_contact_details**: Get details of a specific contact
+- **get_invoice_details**: Get details of a specific invoice
+- **get_company_info**: Get Alegra company information
+- **list_contacts**: List Alegra contacts (clients and suppliers)
+- **list_estimates**: List estimates/quotes
+- **list_invoices**: List sales invoices in Alegra
+- **list_inventory_items**: List products and services
+- **list_payments**: List recorded payments
 
 
 ## 💬 Prompt Examples
@@ -66,38 +53,38 @@ List all contacts (clients and suppliers)
 Here are some examples of how you can interact with the **Alegra** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List the last 5 invoices and show me which ones are still unpaid."
+> "List all active invoices in my Alegra account."
 
 **🤖 AI Agent:**
-> I found 5 recent invoices. 3 are fully paid: #FE-1204 ($2,350,000 COP), #FE-1203 ($890,000 COP), #FE-1200 ($1,560,000 COP). 2 remain unpaid: #FE-1202 ($3,200,000 COP, due in 3 days — client: Tech Solutions SAS) and #FE-1201 ($750,000 COP, overdue by 5 days — client: Distribuidora Norte Ltda). Should I pull the contact details for the overdue client?
+> I've retrieved your invoices. You have 3 active sales documents: #INV-001 ($150.00, Paid), #INV-002 ($450.00, Open), and #INV-003 ($1,200.00, Overdue). Which one would you like more details on?
 
 ---
 
 **👤 You:**
-> "Create an invoice for client ID 42 with 3 units of item 15 at $50,000 COP each."
+> "Show me the details for contact 'John Doe' (ID: 10293)."
 
 **🤖 AI Agent:**
-> Invoice created successfully! Factura Electrónica #FE-1205 has been issued to 'Importadora Global SAS' (NIT: 900.123.456-7) for $150,000 COP + IVA 19% = $178,500 COP total. DIAN electronic validation is pending and will complete within minutes. Would you like to send it by email?
+> I've fetched John Doe's profile. He is a 'Client' and has an outstanding balance of $450.00 from invoice #INV-002. Shall I retrieve his full contact history?
 
 ---
 
 **👤 You:**
-> "Show me all IVA tax rates configured in my Alegra account."
+> "What is the stock level for 'Professional Desk'?"
 
 **🤖 AI Agent:**
-> Your account has 5 tax configurations: IVA General (19%), IVA Reducido (5%), IVA Excluido (0%), ReteFuente (3.5% — applied on purchases over $1,165,000 COP), and ReteICA Bogotá (0.414%). All are active and properly mapped to their DIAN codes. Need me to check which items have which taxes assigned?
+> Checking inventory... The 'Professional Desk' (ID: item_8823) currently has 15 units in stock. The unit price is $250.00. Would you like to create an invoice for this item?
 
 
 ## ❓ FAQ
 
-**Q: Can my AI agent issue a DIAN-compliant electronic invoice for Colombia?**
-Yes! Use the `create_invoice` tool with the client ID, line items, and dates. Alegra automatically handles DIAN electronic validation and stamping for Colombian tax compliance. The invoice number sequence is managed by Alegra's configured resolution.
+**Q: Can I check the stock level of an item via AI?**
+Yes! Use the `get_item_details` tool and provide the Item ID. Your agent will retrieve the complete metadata, including current stock levels for that product.
 
-**Q: How do I look up a client's outstanding balance and contact details?**
-Use the `get_contact` tool with the client's Alegra ID. You'll receive their complete profile including legal name, NIT or CC number, fiscal regime, address, phone, email, and any outstanding receivable balance.
+**Q: How do I create a new invoice for a client?**
+Use the `create_invoice` action. You'll need to provide the Contact ID, date, due date, and a JSON string of items to register the new sale in Alegra.
 
-**Q: Can I manage inventory across multiple warehouses through my AI agent?**
-Yes. Use `list_warehouses` to see all your configured locations, then use `list_items` to browse your catalog with stock levels per warehouse. You can also create new items with `create_item` specifying their type (product or service) and pricing.
+**Q: Is it possible to list all my recent payments?**
+Absolutely. Use the `list_payments` query. The agent will retrieve a list of all recorded income payments received in your account.
 
 
 ## Installation & Usage

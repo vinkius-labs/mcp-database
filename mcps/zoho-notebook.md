@@ -39,9 +39,6 @@ No more manual digging through cards to find a meeting note. Your AI agent becom
 
 
 ## Available Tools (10)
-- **list_notecards**: Notebook ID is required.
-
-List notecards in notebook
 - **create_notecard**: Create notecard
 - **create_notebook**: Useful for organizing notecards.
 
@@ -55,6 +52,9 @@ Create notebook
 List all notebooks
 - **search_notecards**: Search notecards
 - **update_notecard**: Update notecard
+- **list_notecards**: Notebook ID is required.
+
+List notecards in notebook
 
 
 ## 💬 Prompt Examples

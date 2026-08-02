@@ -28,15 +28,6 @@ Connect **Zoho CRM** to any AI agent — manage your entire CRM without switchin
 
 
 ## Available Tools (7)
-- **zoho_get_user**: Returns full profile: name, email, role, profile (permissions), locale, timezone, created date, and last activity. Use to get detailed info about a specific team member or administrator.
-
-Get complete details of a specific Zoho CRM user by ID, including role, profile, locale, and activity info
-- **zoho_list_layouts**: Returns layout name, status (active/inactive), and section structure. Layouts define how the record form appears in the UI — which fields are shown, their grouping into sections, and display order. Different layouts can be assigned to different profiles. Use when the user asks about form configuration or field arrangement.
-
-List page layouts for a Zoho CRM module, showing the form structure with sections and field arrangement
-- **zoho_list_profiles**: Returns profile name, description, and whether it is the default. Profiles are permission sets controlling module access, field-level visibility, and feature availability (e.g., Administrator, Standard, Marketing). While roles control data visibility, profiles control feature access. Use to audit permissions or understand what different user groups can do.
-
-List Zoho CRM profiles (permission sets) that control what features, modules, and actions users can access
 - **zoho_list_roles**: Returns role name, reporting role (parent in the hierarchy), and description. Roles control data visibility — users can see records of their subordinate roles. Use to understand the organizational hierarchy, access control structure, or when the user asks about role assignments.
 
 List all roles in Zoho CRM with their hierarchy structure, showing who reports to whom in the organization
@@ -49,6 +40,15 @@ List sales territories in Zoho CRM with territory names, managers, and hierarchy
 - **zoho_list_users**: Returns user name, email, role, profile (permission set), active/inactive status, and timezone. Filter by type: AllUsers, ActiveUsers, DeactiveUsers, AdminUsers. Use when the user asks about team members, needs user IDs for record assignment, or wants to audit CRM access.
 
 List Zoho CRM users with name, email, role, profile, status, and timezone for team management visibility
+- **zoho_get_user**: Returns full profile: name, email, role, profile (permissions), locale, timezone, created date, and last activity. Use to get detailed info about a specific team member or administrator.
+
+Get complete details of a specific Zoho CRM user by ID, including role, profile, locale, and activity info
+- **zoho_list_layouts**: Returns layout name, status (active/inactive), and section structure. Layouts define how the record form appears in the UI — which fields are shown, their grouping into sections, and display order. Different layouts can be assigned to different profiles. Use when the user asks about form configuration or field arrangement.
+
+List page layouts for a Zoho CRM module, showing the form structure with sections and field arrangement
+- **zoho_list_profiles**: Returns profile name, description, and whether it is the default. Profiles are permission sets controlling module access, field-level visibility, and feature availability (e.g., Administrator, Standard, Marketing). While roles control data visibility, profiles control feature access. Use to audit permissions or understand what different user groups can do.
+
+List Zoho CRM profiles (permission sets) that control what features, modules, and actions users can access
 
 
 ## 💬 Prompt Examples

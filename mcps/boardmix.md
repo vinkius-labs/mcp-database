@@ -36,7 +36,6 @@ Empower your AI agent to orchestrate your visual collaboration with **BoardMix**
 
 
 ## Available Tools (10)
-- **get_file_versions**: Get file version history
 - **create_file**: Create a new whiteboard
 - **get_comments**: Get whiteboard comments
 - **get_file**: Get whiteboard file details
@@ -46,6 +45,7 @@ Empower your AI agent to orchestrate your visual collaboration with **BoardMix**
 - **list_team_projects**: List team projects
 - **list_teams**: List available teams
 - **list_templates**: List whiteboard templates
+- **get_file_versions**: Get file version history
 
 
 ## 💬 Prompt Examples

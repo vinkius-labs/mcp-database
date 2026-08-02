@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your entire video ecosystem on **Dailymotio
 
 
 ## Available Tools (9)
+- **list_videos**: List videos for a user
+- **search_videos**: Search for public videos on Dailymotion
+- **list_playlists**: List playlists for a user
 - **delete_video**: Delete a video from Dailymotion
 - **get_me**: Get authenticated user info from Dailymotion
 - **get_video**: Get details for a specific video
 - **list_followers**: List followers for a user
 - **list_following**: List following for a user
-- **list_playlists**: List playlists for a user
-- **list_videos**: List videos for a user
-- **search_videos**: Search for public videos on Dailymotion
 - **update_video**: Update video metadata
 
 

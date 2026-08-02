@@ -34,13 +34,13 @@ Connect your **Zenkit** account to any AI agent to streamline your productivity 
 
 
 ## Available Tools (8)
+- **get_list_details**: Get details for a specific list
 - **create_entry**: Requires a JSON object with field values.
 
 Create a new entry in a list
 - **delete_entry**: Delete an entry from a list
 - **list_elements**: List all elements (fields) defined in a list
 - **list_entries**: List all entries (items) in a list
-- **get_list_details**: Get details for a specific list
 - **get_workspace_details**: Get details for a specific workspace
 - **update_entry**: Update an existing entry
 - **list_workspaces**: List all workspaces and their lists

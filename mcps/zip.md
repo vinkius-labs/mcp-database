@@ -35,6 +35,11 @@ Connect your **Zip** (formerly Quadpay) merchant account to any AI agent to auto
 
 
 ## Available Tools (8)
+- **get_zip_order_status**: g., Authorized, Captured, Cancelled) for a target order.
+
+Check the status of a Zip order
+- **refund_zip_payment**: Process a refund for an order
+- **void_zip_payment**: Void an authorized but uncaptured payment
 - **authorize_zip_order**: Typically used in US gateway integrations.
 
 Authorize a payment order
@@ -44,11 +49,6 @@ Authorize a payment order
 
 Initialize a new Zip checkout session
 - **get_zip_merchant_config**: Retrieve merchant account configuration
-- **get_zip_order_status**: g., Authorized, Captured, Cancelled) for a target order.
-
-Check the status of a Zip order
-- **refund_zip_payment**: Process a refund for an order
-- **void_zip_payment**: Void an authorized but uncaptured payment
 
 
 ## 💬 Prompt Examples

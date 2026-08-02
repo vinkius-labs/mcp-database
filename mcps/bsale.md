@@ -36,15 +36,10 @@ Your AI becomes a dedicated retail operations assistant — no more navigating m
 
 
 ## Available Tools (15)
+- **list_offices**: List all office branches and locations
 - **create_client**: The client can then be associated with future invoices and sales documents. For Chilean tax compliance, include the RUT and business activity (giro) when available.
 
 Register a new client in the system
-- **create_document**: Requires the document type ID and at minimum one line item with product details. The document is automatically sent to the Chilean SII (Servicio de Impuestos Internos) for validation.
-
-Issue a new electronic tax document
-- **create_product**: The product will be available for inclusion in future documents and can be associated with variants (SKUs), price lists, and stock management across multiple offices.
-
-Create a new product in the catalog
 - **get_client**: Get full details of a specific client
 - **get_document**: Get full details of a specific tax document
 - **get_product**: Get full details of a specific product
@@ -55,11 +50,6 @@ List all registered clients
 - **list_documents**: Documents are returned with their SII-compliant folio numbers, emission dates, and net/tax/total breakdowns. Use optional limit and offset parameters for pagination.
 
 List tax documents (invoices, boletas, credit notes)
-- **list_offices**: List all office branches and locations
-- **list_payment_types**: List accepted payment methods
-- **list_price_lists**: g., retail, wholesale, distributor). Each price list can have different pricing for the same product variants.
-
-List all configured price lists
 - **list_products**: Use limit and offset for paginated browsing of large catalogs.
 
 List all products and services in your catalog
@@ -69,6 +59,16 @@ Check stock levels across offices
 - **list_variants**: Each variant has its own barcode, cost, and pricing configuration across different price lists.
 
 List all SKU variants for a product
+- **create_document**: Requires the document type ID and at minimum one line item with product details. The document is automatically sent to the Chilean SII (Servicio de Impuestos Internos) for validation.
+
+Issue a new electronic tax document
+- **create_product**: The product will be available for inclusion in future documents and can be associated with variants (SKUs), price lists, and stock management across multiple offices.
+
+Create a new product in the catalog
+- **list_payment_types**: List accepted payment methods
+- **list_price_lists**: g., retail, wholesale, distributor). Each price list can have different pricing for the same product variants.
+
+List all configured price lists
 
 
 ## 💬 Prompt Examples

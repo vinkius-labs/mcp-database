@@ -35,10 +35,6 @@ Empower your AI agent to orchestrate your entire digital asset research and mark
 
 
 ## Available Tools (10)
-- **list_all_tickers**: List current prices and ticker data for all active coins
-- **get_coin_details**: Get full metadata and project details for a specific coin by ID
-- **get_coin_events**: Get recent and upcoming events for a specific cryptocurrency
-- **get_coin_exchanges**: Get all exchanges where a specific coin is traded
 - **get_coin_markets**: Get all active trading markets and pairs for a specific coin
 - **get_coin_ohlcv_latest**: Get the latest OHLCV (Open, High, Low, Close, Volume) data for a coin
 - **get_global_market_overview**: Get an overview of the entire cryptocurrency market performance
@@ -46,6 +42,10 @@ Empower your AI agent to orchestrate your entire digital asset research and mark
 - **list_all_coins**: Useful for mapping coin IDs.
 
 List all available cryptocurrencies in the CoinPaprika database
+- **list_all_tickers**: List current prices and ticker data for all active coins
+- **get_coin_details**: Get full metadata and project details for a specific coin by ID
+- **get_coin_events**: Get recent and upcoming events for a specific cryptocurrency
+- **get_coin_exchanges**: Get all exchanges where a specific coin is traded
 - **list_crypto_exchanges**: List all cryptocurrency exchanges supported by CoinPaprika
 
 
