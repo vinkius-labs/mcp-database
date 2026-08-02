@@ -36,15 +36,15 @@ Connect your **Notion Calendar** (formerly Cron) account to any AI agent and tak
 
 
 ## Available Tools (10)
-- **list_events**: Identify bounded CRM records inside the Headless Cron Engine
-- **get_event**: Perform structural extraction of properties driving active Event targets
-- **create_event**: Provision a highly-available Event Payload generating hard Schedule binds
+- **list_calendars**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
 - **update_event**: Dissect precise variables checking active state matching payload targets
 - **delete_event**: Irreversibly vaporize explicit validations extracting rich Schedule drops
-- **list_calendars**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
 - **get_availability**: Dispatch an automated validation check routing explicit Availability
 - **get_scheduling_links**: Identify precise active arrays spanning native Gateway limits
 - **get_free_busy**: Enumerate explicitly attached structured rules exporting active Graph overlaps
+- **list_events**: Identify bounded CRM records inside the Headless Cron Engine
+- **get_event**: Perform structural extraction of properties driving active Event targets
+- **create_event**: Provision a highly-available Event Payload generating hard Schedule binds
 - **get_profile**: Inspect deep internal arrays mitigating specific Math Logic limits
 
 

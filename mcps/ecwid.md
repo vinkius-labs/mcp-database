@@ -38,6 +38,8 @@ Connect your **Ecwid by Lightspeed** store to any AI agent and take full control
 
 
 ## Available Tools (10)
+- **get_profile**: Get Ecwid store profile configuration
+- **get_app_storage**: Get application storage value from Ecwid by key (useful for custom app state)
 - **search_products**: Returns product IDs, names, prices, SKUs, inventory, and images.
 
 Search Ecwid products
@@ -47,13 +49,11 @@ Get Ecwid product by ID
 - **search_orders**: Returns order numbers, totals, fulfillment status, payment status, and buyer details.
 
 Search Ecwid orders
-- **get_order**: Get Ecwid order by ID/Number
 - **search_customers**: Search Ecwid customers
 - **list_categories**: List Ecwid product categories
-- **get_profile**: Get Ecwid store profile configuration
 - **list_coupons**: List Ecwid discount coupons
 - **update_inventory**: Update Ecwid product inventory quantity
-- **get_app_storage**: Get application storage value from Ecwid by key (useful for custom app state)
+- **get_order**: Get Ecwid order by ID/Number
 
 
 ## 💬 Prompt Examples

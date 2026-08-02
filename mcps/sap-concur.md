@@ -32,15 +32,15 @@ Connect your AI assistant to **SAP Concur**, the leading platform for expense ma
 
 
 ## Available Tools (9)
-- **get_expense**: Retrieve detailed information about a specific expense
 - **list_pending_expenses**: Quickly list all expenses that have not yet been assigned to a report
 - **get_expense_report**: Retrieve detailed information about a specific expense report
+- **get_expense**: Retrieve detailed information about a specific expense
+- **list_expenses**: Retrieve a list of your expenses from Concur
+- **list_expense_reports**: Retrieve a list of your expense reports from Concur
 - **get_report_summaries**: Calculate basic totals for a list of recent expense reports
 - **get_user_profile**: Retrieve the profile details of the currently authenticated Concur user
 - **list_attendees**: Retrieve a list of expense attendees (for business meals, etc.)
 - **list_expense_types**: Retrieve a list of valid expense types configured in your organization
-- **list_expenses**: Retrieve a list of your expenses from Concur
-- **list_expense_reports**: Retrieve a list of your expense reports from Concur
 
 
 ## 💬 Prompt Examples

@@ -5,64 +5,54 @@
 
 ## Overview
 
-**Category:** [marketing-automation](../categories/marketing-automation.md)
+**Category:** [productivity](../categories/productivity.md)
 
-Equip your AI agent to manage customer engagement, trigger automated campaigns, and track messaging metrics via the Customer.io API.
+Send behavior-driven emails, push notifications, and in-app messages triggered by what your users actually do in your product.
 
 ## Description
-Integrate **Customer.io**, the platform for sending personalized messages based on customer behavior, directly into your AI workflow. Manage your customer profiles, monitor automated campaigns, and track engagement metrics using natural language.
+Connect your **Customer.io** account to any AI agent and take full control of your automated lifecycle marketing and customer engagement workflows through natural conversation.
 
 ### What you can do
 
-- **Customer Identification** — Create or update customer profiles with behavioral attributes via the Identify API.
-- **Campaign Monitoring** — List automated campaigns and retrieve real-time performance and engagement metrics.
-- **Broadcast & Newsletter Tracking** — Track one-to-many broadcast messages and newsletter statuses.
-- **Segment Oversight** — Explore dynamic and manual customer segments to understand your audience composition.
+- **Audience Orchestration** — List and manage customer profiles programmatically, retrieving detailed attributes, traits, and segment memberships to coordinate personalized journeys
+- **Segment Intelligence** — Access your complete directory of data-driven and manual segments to understand audience distributions and monitor real-time membership counts
+- **Campaign Architecture** — Monitor automated marketing campaigns and retrieve high-fidelity performance reports including delivery, open, and click metrics
+- **Message Dispatch** — Programmatically trigger manual broadcasts or send specific transactional emails to individuals using pre-defined message templates
+- **Regional Flexibility** — Connect to both US and EU regions using specialized app API keys and regional base URLs directly through your agent
 
 ### How it works
 
-1. Connect the Customer.io integration to your AI assistant.
-2. Authorize using your Customer.io Site ID and API Key (found in Settings > API Keys).
-3. Orchestrate your customer engagement strategy through intuitive conversation.
+1. Subscribe to this server
+2. Retrieve your **App API Key** from Customer.io (Settings > Account Settings > API Keys)
+3. Identify your **Region** (US or EU) to ensure correct endpoint routing
+4. Start managing your lifecycle marketing from Claude, Cursor, or any MCP client
+
+No more manual scrubbing through people tables or checking individual campaign logs in the portal. Your AI acts as your dedicated growth marketer and automation coordinator.
 
 ### Who is this for?
 
-- **Retention Marketers** — Quickly audit campaign performance and customer segment sizes.
-- **Growth Engineers** — Identify and update customer profiles with behavioral data via chat.
-- **Support Teams** — Retrieve full customer profiles and messaging history to provide personalized assistance.
+- **Growth Marketers** — instantly retrieve campaign results and check user segment memberships using natural language commands
+- **Product Managers** — monitor customer engagement metrics and verify profile attributes without leaving your workspace
+- **Developers & Ops** — automate transactional messaging and manage app-level metadata through simple AI queries
 
 
-## Available Tools (10)
-- **identify_customer**: Resolves the identification status and profile state. Mutates the workspace identity database.
+## Available Tools (12)
+- **list_transactional_messages**: g. password resets).
 
-Create or update a customer profile with attributes
-- **get_campaign_performance**: Resolves sent, opened, clicked, and converted counts. Interacts with the analytics and reporting engine.
+List 1-to-1 messages
+- **get_connection_status**: Check API health
+- **get_campaign_performance**: Check campaign stats
+- **list_segment_members**: Get people in segment
+- **list_scheduled_broadcasts**: List one-to-many messages
+- **list_active_campaigns**: List automated campaigns
+- **list_newsletters**: List saved newsletters
+- **list_audience_segments**: List user segments
+- **send_transactional_email**: Send individual email
+- **dispatch_broadcast**: Trigger manual broadcast
+- **get_customer_details**: Get person profile
+- **list_customers**: io.
 
-Get delivery and engagement metrics for a campaign
-- **get_engagement_summary**: Resolves high-level engagement KPIs. Interacts with the global analytics boundary.
-
-Retrieve a high-level summary of campaign and broadcast performance
-- **get_customer_details**: Resolves custom attributes, device tokens, and segment memberships. Touches the granular profile and behavioral data boundary.
-
-Get full profile, attributes, and devices for a specific customer
-- **list_broadcast_messages**: Resolves broadcast identifiers and scheduling metadata. Interacts with the bulk messaging boundary.
-
-List all one-to-many broadcast messages
-- **list_automated_campaigns**: Resolves campaign IDs, names, and trigger types. Interacts with the automation and messaging boundary.
-
-List all automated messaging campaigns
-- **list_newsletters**: Resolves newsletter IDs and status. Touches the content distribution and newsletter management boundary.
-
-List all newsletter campaigns
-- **list_customers**: Resolves unique identifiers, email addresses, and last-seen timestamps. Interacts with the core identity and profile boundary.
-
-List all customers/people in your Customer.io workspace
-- **list_customer_segments**: Resolves segment IDs, types (manual/dynamic), and membership counts. Touches the audience segmentation and filtering boundary.
-
-List all dynamic and manual segments
-- **search_customers_by_email**: Resolves the associated customer identifiers. Touches the identity lookup and search boundary.
-
-Search for a customer profile by email address
+List audience people
 
 
 ## 💬 Prompt Examples
@@ -70,38 +60,38 @@ Search for a customer profile by email address
 Here are some examples of how you can interact with the **Customer.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active automated campaigns in my workspace."
+> "List all active marketing campaigns in Customer.io."
 
 **🤖 AI Agent:**
-> I've found 5 active campaigns, including 'Welcome Sequence', 'Abandoned Cart Recovery', and 'Monthly Retention'. Would you like to see the performance metrics for any of these?
+> I've retrieved your active campaigns. You currently have 3 automated journeys running, including 'Welcome Sequence' and 'Re-engagement Flow'. Would you like the performance metrics for any of these?
 
 ---
 
 **👤 You:**
-> "Show me the performance metrics for the 'Welcome Sequence' campaign."
+> "Show me the audience segments and their member counts."
 
 **🤖 AI Agent:**
-> The 'Welcome Sequence' (ID: 456) has an open rate of 45% and a click rate of 8% this month. A total of 1,200 people entered the sequence. Should I compare this to last month's performance?
+> Accessing segments... Your 'Premium Users' segment has 1,240 members, and 'Trial Expired' has 450. I can provide the detailed profile attributes for specific members if needed.
 
 ---
 
 **👤 You:**
-> "Identify a new customer with ID 'user_789' and email 'new.user@example.com'."
+> "Send a transactional email to 'jane@example.com' (ID: 'trans_123')."
 
 **🤖 AI Agent:**
-> Customer 'user_789' has been successfully identified and updated in Customer.io with the provided email. I've also noted their signup date as today. Would you like to add any custom attributes?
+> Message dispatched! I've successfully triggered the transactional email 'trans_123' for Jane Doe. The delivery is now being tracked in your performance logs.
 
 
 ## ❓ FAQ
 
-**Q: How do I get a Customer.io API Key?**
-Log in to your Customer.io workspace, navigate to **Settings > API Keys**, and you will find your Site ID and API Key there. You can create different keys for tracking and management purposes.
+**Q: How do I find my Customer.io App API Key?**
+Log in to Customer.io, navigate to **Settings** > **Account Settings** > **API Keys**, and select the **App API Keys** tab to generate a new token.
 
-**Q: Can the agent trigger a campaign manually?**
-This integration currently focuses on identifying customers and monitoring campaign data. Triggering campaigns is typically done via behavioral events or within the Customer.io workflow builder.
+**Q: Does it support EU regional accounts?**
+Yes! You can specify your region ('us' or 'eu') via the `CUSTOMER_IO_REGION` credential to ensure the agent connects to the correct data center.
 
-**Q: Does the integration support SMS and Push notifications?**
-Yes, Customer.io is a multi-channel platform. The agent can monitor campaigns and broadcasts that include Email, SMS, Push, and Webhook actions.
+**Q: Can I trigger a broadcast via AI?**
+Yes! Use the `dispatch_broadcast` tool with a specific broadcast ID. You can optionally provide JSON parameters for Liquid data injection.
 
 
 ## Installation & Usage

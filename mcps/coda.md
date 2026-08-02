@@ -7,41 +7,48 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Enable your AI agent to manage docs, tables, formulas, and rows via the Coda API.
+Combine docs, spreadsheets, and apps into powerful all-in-one documents that grow with your team and automate routine work.
 
 ## Description
-Connect your AI to **Coda**, the collaborative document platform that brings together words, data, and teams.
+Connect your **Coda** account to any AI agent and take full control of your collaborative workspace and structured data workflows through natural conversation.
 
 ### What you can do
 
-- **Document Browsing** — List your recent docs and navigate their sections, tables, and pages.
-- **Table Data** — Read rows from any Coda table, filter by column values, and update records.
-- **Formula Values** — Retrieve the live value of any named formula in a doc for real-time reporting.
+- **Document Orchestration** — List and manage your Coda documents programmatically, retrieving detailed metadata and ownership information
+- **Table & View Intelligence** — Access and monitor table structures (columns) and row data in real-time to maintain a high-fidelity database directly through your agent
+- **Data Manipulation** — Programmatically insert, update, or delete rows in any table to coordinate your relational data and project trackers
+- **Formula Automation** — Retrieve named formula values and workspace insights to leverage Coda's computational power within your AI workflows
+- **Account Visibility** — Access your Coda profile and workspace metadata directly through your agent for instant operational reporting
 
 ### How it works
 
-1. Add the Coda integration to your AI toolset.
-2. Provide your API Token (from Account Settings in Coda).
-3. Manage your docs and data via natural language.
+1. Subscribe to this server
+2. Retrieve your **API Token** from Coda (Account Settings > API Settings)
+3. Start managing your collaborative docs from Claude, Cursor, or any MCP client
+
+No more manual toggling between browser tabs to check row statuses. Your AI acts as your dedicated document operations coordinator and data architect.
 
 ### Who is this for?
 
-- **Product Managers** — Pull table data and formula results without opening the doc.
-- **Operations Teams** — Update tracker tables and check statuses from chat.
-- **Developers** — Automate data sync between Coda docs and other systems.
+- **Project Managers** — instantly retrieve task lists and update row statuses using natural language commands
+- **Operations Teams** — automate lead tracking and high-volume relational data management without leaving your workspace
+- **Product Leads** — monitor project hub activity and retrieve formula-driven metrics through simple AI queries
 
 
-## Available Tools (10)
-- **delete_rows**: Delete one or more rows from a Coda table
-- **insert_rows**: Insert new rows into a Coda table
-- **get_doc_details**: Retrieve detailed information about a specific Coda document
-- **get_formula_value**: Retrieve the current calculated value of a named formula
-- **list_columns**: Retrieve a list of columns in a Coda table
-- **list_docs**: Retrieve a list of Coda documents available to you
-- **list_formulas**: Retrieve a list of named formulas in a Coda document
-- **list_rows**: Retrieve rows from a specific table in a Coda document
-- **list_tables**: Retrieve a list of tables within a specific Coda document
-- **update_row**: Update an existing row in a Coda table
+## Available Tools (11)
+- **delete_rows**: Remove rows from a table
+- **get_table_details**: Get details for a table
+- **insert_rows**: Add new rows to a table
+- **get_user_profile**: Get your Coda profile
+- **get_doc_details**: Get metadata for a doc
+- **list_columns**: List columns for a table
+- **list_docs**: List your Coda documents
+- **list_formulas**: List formulas in a document
+- **list_rows**: Supports filtering.
+
+List rows from a table
+- **list_tables**: List tables in a document
+- **update_row**: Update fields in a row
 
 
 ## 💬 Prompt Examples
@@ -49,42 +56,38 @@ Connect your AI to **Coda**, the collaborative document platform that brings tog
 Here are some examples of how you can interact with the **Coda** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Show me my recent documents in Coda."
+> "List all tables in Coda document ID 'doc_123'."
 
 **🤖 AI Agent:**
-> You have 8 docs:
-1. 'Project Tracker' — last edited 1h ago, 3 tables
-2. 'Q1 OKRs' — last edited yesterday, 2 tables
-3. 'Sprint Board' — last edited 3 days ago, 5 tables
-Would you like to read data from any of these?
+> I've retrieved the tables for your doc. You have 3 active tables: 'Task_List' (ID: grid-abc), 'Project_Timeline', and 'Team_Resources'. Which one should we inspect for rows?
 
 ---
 
 **👤 You:**
-> "Get the current value of formula 'TotalBudget' in doc 'doc-yyyy'."
+> "Add a row to 'Tasks' with Title 'Design API' and Priority 'High'."
 
 **🤖 AI Agent:**
-> Formula 'TotalBudget' in doc 'doc-yyyy': **$142,500.00**. Last recalculated: 3 minutes ago.
+> Action complete! I've inserted the new row into the 'Tasks' table. The record is now visible in your Coda doc with the specified title and priority metadata.
 
 ---
 
 **👤 You:**
-> "Check the status of task 'Q3 Launch' in our Sprint Board table."
+> "Retrieve the value of the named formula 'Total_Project_Budget'."
 
 **🤖 AI Agent:**
-> Scanning the 'Sprint Board' table. Task 'Q3 Launch' is currently marked as 'In Progress'. It is assigned to Sarah and has a targeted delivery of this coming Friday.
+> Fetching formula... The current value of 'Total_Project_Budget' in your document is $15,420.00. Shall I list all other named formulas in this workspace for you?
 
 
 ## ❓ FAQ
 
-**Q: How do I find my doc and table IDs?**
-You can find IDs in the document's URL, or use the 'list_docs' and 'list_tables' tools to discover them.
+**Q: How do I find my Coda API Token?**
+Log in to Coda, navigate to **Account Settings** > **API Settings**, and generate a new token for your integration.
 
-**Q: What does 'HTTP 202 Accepted' mean?**
-Coda processes many changes asynchronously. This status means your request was queued and will be applied shortly.
+**Q: Where do I find my Doc ID?**
+The Doc ID is the string of characters in your Coda document's URL after the '/d/'.
 
-**Q: Can I trigger buttons in Coda?**
-Many Coda buttons are column actions that can be triggered by updating a row value. So yes, indirectly.
+**Q: Can I filter rows using natural language?**
+Yes! The `list_rows` tool supports a `query` parameter where the agent can apply filters like `Status:"Done"` to find specific data.
 
 
 ## Installation & Usage

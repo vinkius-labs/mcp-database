@@ -5,47 +5,49 @@
 
 ## Overview
 
-**Category:** [ship-it](../categories/ship-it.md)
+**Category:** [image-video](../categories/image-video.md)
 
-Manage file conversions via CloudConvert — track jobs, monitor tasks, and automate file processing directly from any AI agent.
+Convert files between 200+ formats including PDF, images, video, and documents with a fast cloud-based processing engine.
 
 ## Description
-Connect your **CloudConvert** account to any AI agent and take full control of your file conversion and processing through natural conversation. Streamline how you transform over 200 formats including PDF, DOCX, and more.
+Connect your **CloudConvert** account to any AI agent and take full control of your cloud-based file processing and document automation workflows through natural conversation.
 
 ### What you can do
 
-- **Job Oversight** — Create and retrieve details for complex file processing jobs with multiple tasks natively
-- **Conversion Intelligence** — Access status and results for specific tasks flawlessly to handle async workflows
-- **Multi-format Logistics** — Automate conversions between hundreds of different file formats securely
-- **Account Visibility** — Retrieve information about your authenticated user profile and remaining credits flawlessly
-- **Operation Auditing** — List available AI-powered operations like optimization and website capture securely
-- **Webhook Logistics** — Monitor configured webhooks for real-time job completion notifications directly within your workspace flawlessly
+- **Multimodal Conversion Orchestration** — Convert files between 200+ supported formats, including video (MP4, MKV), audio (MP3, WAV), documents (PDF, DOCX), and images programmatically
+- **Job & Task Architecture** — Create and manage complex conversion jobs with multiple tasks (import, convert, export) to coordinate high-fidelity processing pipelines
+- **Automated Workflow** — Programmatically import files from public URLs and retrieve secure download links for the finalized converted assets
+- **Administrative Visibility** — Monitor your account profile, remaining credits, and conversion progress in real-time directly through your agent
+- **Format Intelligence** — Retrieve complete directories of supported conversion formats and import/export operations to ensure the perfect processing strategy
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your CloudConvert API Key (obtained from Dashboard > API v2)
-3. Start converting your files from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API Key** from the CloudConvert dashboard (Dashboard > API)
+3. Set the **'Use Sandbox'** option to 'true' for testing without consuming credits
+4. Start automating your file processing from Claude, Cursor, or any MCP client
+
+No more manual file uploading or searching for specialized converter apps. Your AI acts as your dedicated document engineer and media production coordinator.
 
 ### Who is this for?
 
-- **Content Creators** — automate image and video conversions using natural language
-- **Developers** — audit conversion job statuses and verify task outputs without opening the dashboard
-- **Office Teams** — quickly transform documents and optimize PDFs straight from their chat interface
-- **Automation Specialists** — verify webhook delivery and monitor conversion quotas
+- **Developers & Engineers** — instantly automate on-the-fly file processing and document workflows using natural language commands
+- **Content Creators** — convert media assets between high-fidelity formats without leaving your creative workspace
+- **Operations Leads** — automate bulk document conversions and monitor credit utilization through simple AI queries
 
 
-## Available Tools (8)
-- **create_conversion_job**: Supports over 200 formats.
-
-Create a new file conversion or processing job
-- **get_my_cloudconvert_profile**: Retrieve information about the authenticated user and credits
-- **get_conversion_task_details**: Get detailed information for a specific task
-- **list_conversion_jobs**: List all recent conversion jobs
-- **list_available_conversion_ops**: List common operations supported by the CloudConvert API
-- **list_conversion_tasks**: List all individual tasks across jobs
-- **list_cloudconvert_webhooks**: List configured webhooks for job completion notifications
-- **get_conversion_job_details**: Get the status and result of a specific job
+## Available Tools (11)
+- **list_tasks**: List all tasks
+- **cancel_job**: Cancel a conversion job
+- **create_simple_job**: Create a simple conversion job (URL to Output format)
+- **get_job**: Get details of a specific job
+- **get_task**: Get details of a specific task
+- **get_task_status**: Check the status of a specific task
+- **get_user**: Get current user profile and credits
+- **list_conversion_formats**: List supported conversion formats
+- **list_export_operations**: List supported export operations
+- **list_import_operations**: List supported import operations
+- **list_jobs**: List all conversion jobs
 
 
 ## 💬 Prompt Examples
@@ -53,38 +55,38 @@ Create a new file conversion or processing job
 Here are some examples of how you can interact with the **CloudConvert** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List my last 5 conversion jobs in CloudConvert."
+> "Convert the DOCX file at 'https://example.com/spec.docx' to PDF."
 
 **🤖 AI Agent:**
-> Retrieving your recent jobs... I found 5 items including 'invoice-pdf', 'profile-image-optimize', and 'video-transcode'. All are currently in 'finished' status.
+> Conversion job triggered! I've started the process to convert your DOCX specification into a high-fidelity PDF. The job ID is 'job_123'. I'll retrieve the secure download link for you once it's ready.
 
 ---
 
 **👤 You:**
-> "What is the status of conversion task 'task_12345'?"
+> "List my last 5 conversion jobs and their statuses."
 
 **🤖 AI Agent:**
-> Checking status for task_12345... The task is 'finished'. You can download the result from this URL: [Download URL].
+> I've retrieved your recent jobs. Highlights include a successful MP4 to MKV conversion (ID: job_402) and two completed PDF exports. Would you like the download links for any of these finalized files?
 
 ---
 
 **👤 You:**
-> "How many credits do I have left in CloudConvert?"
+> "Check my remaining CloudConvert credits."
 
 **🤖 AI Agent:**
-> Checking your account balance... You currently have 450 credits remaining in your CloudConvert account. This covers approximately 450 minutes of conversion time.
+> Scanning account... You currently have 1,240 conversion credits remaining in your profile. Your connection is active and healthy. Need help starting a new high-fidelity media conversion?
 
 
 ## ❓ FAQ
 
-**Q: Can I convert a document to PDF through the agent?**
-Yes! Use the `create_conversion_job` tool. You can define an import task for your file and a convert task with `output_format: 'pdf'`. The agent will handle the submission to CloudConvert.
+**Q: How do I find my CloudConvert API Key?**
+Log in to your account, navigate to the **Dashboard**, click on **API** in the sidebar, and generate or copy your secret key.
 
-**Q: How do I know when my conversion task is finished?**
-Use the `get_conversion_task_details` tool with your task ID. Your agent will return the current status, and once it shows 'finished', it will provide the download URL.
+**Q: Which formats are supported for conversion?**
+CloudConvert supports over 200 formats including PDF, DOCX, XLSX, MP4, MKV, MP3, JPG, PNG, and many more.
 
-**Q: Where do I find my CloudConvert API Key?**
-Log in to your CloudConvert dashboard and navigate to **API v2 > API Keys**. You can generate and copy your personal API key from there.
+**Q: What is the 'Sandbox' mode?**
+The Sandbox is a testing environment that allows you to run conversion jobs for free. Note that files processed in Sandbox are not actual conversions.
 
 
 ## Installation & Usage

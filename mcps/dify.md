@@ -36,12 +36,12 @@ Connect your **Dify.ai** application to any AI agent and take full control of yo
 
 
 ## Available Tools (6)
-- **chat**: Send a chat message
 - **list_conversations**: List conversations
 - **list_messages**: List messages in conversation
 - **get_parameters**: Get app parameters
 - **upload_file**: Upload a file
 - **feedback**: Submit message feedback
+- **chat**: Send a chat message
 
 
 ## 💬 Prompt Examples

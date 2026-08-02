@@ -39,13 +39,13 @@ No more context-switching to the terminal or web console. Your AI agent becomes 
 - **create_build**: Trigger a new build for a pipeline
 - **get_access_token_info**: Retrieve information about the current API token
 - **get_build**: Get details of a specific build
-- **get_pipeline**: Get details of a specific pipeline
-- **list_agents**: List all build agents in the organization
 - **list_all_builds**: List all builds across the entire organization
 - **list_organizations**: List all organizations the token has access to
 - **list_pipeline_builds**: List builds for a specific pipeline
 - **list_pipelines**: List all pipelines in the organization
 - **rebuild**: Rebuild a specific build
+- **get_pipeline**: Get details of a specific pipeline
+- **list_agents**: List all build agents in the organization
 
 
 ## 💬 Prompt Examples

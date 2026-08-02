@@ -36,9 +36,6 @@ Connect your AI to **Confluent Cloud**, the fully managed data streaming platfor
 
 Retrieve detailed information about a specific Kafka cluster
 - **list_cloud_api_keys**: Retrieve API keys in the Confluent Cloud account
-- **list_clusters**: Returns all Kafka clusters with their status, cloud provider, and region.
-
-Retrieve Kafka clusters in a specific environment
 - **list_connectors**: Returns configured source and sink connectors with their status.
 
 Retrieve Kafka Connect connectors in an environment and cluster
@@ -51,6 +48,9 @@ Retrieve service accounts in the Confluent Cloud organization
 - **list_topics**: Returns all topics with partition count and replication configuration.
 
 Retrieve topics in a specific Kafka cluster
+- **list_clusters**: Returns all Kafka clusters with their status, cloud provider, and region.
+
+Retrieve Kafka clusters in a specific environment
 
 
 ## 💬 Prompt Examples

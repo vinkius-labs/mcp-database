@@ -35,6 +35,7 @@ Connect your **Cal.com** account to any AI agent and orchestrate your scheduling
 
 
 ## Available Tools (10)
+- **list_memberships**: List organization and team memberships
 - **cancel_booking**: This action cannot be undone.
 
 Cancel an existing booking
@@ -56,7 +57,6 @@ List all bookings on your Cal.com account
 - **list_event_types**: Use to discover bookable event types.
 
 List all event types (meeting templates)
-- **list_memberships**: List organization and team memberships
 
 
 ## 💬 Prompt Examples

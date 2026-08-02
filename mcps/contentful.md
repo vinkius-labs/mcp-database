@@ -33,17 +33,17 @@ Integrate the **Contentful** content management platform directly into your conv
 
 ## Available Tools (12)
 - **get_content_type**: Get details of a specific content type
-- **update_entry**: Update an existing entry
-- **create_entry**: Create a new entry in draft state
-- **get_entry**: Get details of a specific entry
-- **list_assets**: List all assets in the current environment
-- **list_spaces**: List all Contentful spaces available
-- **publish_entry**: Publish a draft entry
-- **unpublish_entry**: Unpublish an entry (return to draft)
 - **list_content_types**: List all content types in the current environment
 - **list_entries**: List entries in the current environment
 - **list_environments**: List environments in the current space
 - **list_organizations**: List all Contentful organizations
+- **list_spaces**: List all Contentful spaces available
+- **publish_entry**: Publish a draft entry
+- **unpublish_entry**: Unpublish an entry (return to draft)
+- **update_entry**: Update an existing entry
+- **create_entry**: Create a new entry in draft state
+- **get_entry**: Get details of a specific entry
+- **list_assets**: List all assets in the current environment
 
 
 ## 💬 Prompt Examples

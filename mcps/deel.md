@@ -33,24 +33,6 @@ Integrate **Deel**, the all-in-one global people platform, directly into your AI
 
 
 ## Available Tools (10)
-- **list_tasks**: Returns task descriptions, due dates, and completion status for milestone-based engagements.
-
-List tasks for a contract
-- **get_person**: Resolves personal metadata, active and historical contract links, and cumulative payment history within the Deel platform.
-
-Get person details
-- **list_invoices**: Returns invoice metadata including billing amounts, issue dates, and current payment status (e.g., paid, pending, overdue).
-
-List all invoices
-- **list_payments**: Returns data on disbursement amounts, recipient identifiers, and the technical status of each transfer.
-
-List all payments
-- **list_time_off**: Returns a collection of time-off requests including requested dates, leave categories, and the current approval status for each entry.
-
-List time-off requests
-- **list_milestones**: Returns identifiers, payment amounts, and projected achievement dates for defined project stages.
-
-List contract milestones
 - **list_contracts**: Returns contract metadata including legal type (e.g., fixed, PAYG, milestone), current status, and high-level compensation structures.
 
 List all contracts
@@ -63,6 +45,24 @@ Get contract details
 - **list_people**: Returns a list of team members including their professional roles, geographical locations, and the nature of their Deel integration (employee vs. contractor).
 
 List all people (employees and contractors)
+- **list_invoices**: Returns invoice metadata including billing amounts, issue dates, and current payment status (e.g., paid, pending, overdue).
+
+List all invoices
+- **list_payments**: Returns data on disbursement amounts, recipient identifiers, and the technical status of each transfer.
+
+List all payments
+- **list_tasks**: Returns task descriptions, due dates, and completion status for milestone-based engagements.
+
+List tasks for a contract
+- **list_milestones**: Returns identifiers, payment amounts, and projected achievement dates for defined project stages.
+
+List contract milestones
+- **get_person**: Resolves personal metadata, active and historical contract links, and cumulative payment history within the Deel platform.
+
+Get person details
+- **list_time_off**: Returns a collection of time-off requests including requested dates, leave categories, and the current approval status for each entry.
+
+List time-off requests
 
 
 ## 💬 Prompt Examples

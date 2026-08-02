@@ -33,15 +33,15 @@ Connect **Carta** to your AI agent and manage your company's equity operations, 
 
 
 ## Available Tools (10)
-- **list_stakeholders**: List all stakeholders
-- **list_companies**: List all companies
 - **list_valuations**: List 409A valuations
-- **get_company**: Get company details
-- **list_securities**: List all securities
+- **list_companies**: List all companies
 - **list_share_classes**: with liquidation preferences and conversion rights.
 
 List share classes
 - **list_option_plans**: List stock option plans
+- **get_company**: Get company details
+- **list_stakeholders**: List all stakeholders
+- **list_securities**: List all securities
 - **list_funding_rounds**: List funding rounds
 - **list_convertibles**: List convertible notes and SAFEs
 - **get_cap_table**: Get the full cap table

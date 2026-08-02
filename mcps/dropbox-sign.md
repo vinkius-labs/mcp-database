@@ -7,42 +7,47 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Equip your AI agent to manage e-signature requests, track document status, and monitor templates via the Dropbox Sign (HelloSign) API.
+Get documents signed electronically with legally binding e-signatures, templates, and audit trails your business can trust.
 
 ## Description
-Integrate **Dropbox Sign** (formerly HelloSign), the intuitive e-signature platform, directly into your AI workflow. Manage your outbound signature requests, track signer status and document completion, monitor your reusable signature templates, and oversee your document workflows using natural language.
+Connect your **Dropbox Sign** (formerly HelloSign) account to any AI agent and take full control of your electronic signature and document automation workflows through natural conversation.
 
 ### What you can do
 
-- **Request Oversight** — List and retrieve detailed information and completion status for all your e-signature requests.
-- **Signer Intelligence** — Monitor real-time signer statuses, email addresses, and event logs for every document in your pipeline.
-- **Template Management** — Access and monitor all reusable signature templates configured in your account, including role definitions and merge fields.
-- **Workflow Auditing** — Retrieve high-level summaries of signature volumes, completion rates, and outstanding documents requiring attention.
+- **Request Orchestration** — List and manage signature requests programmatically, including monitoring signer status and document completion in real-time
+- **Automated Sending** — Programmatically create new signature requests using file URLs or predefined templates to streamline your legal operations
+- **Template Intelligence** — Access your directory of document templates and retrieve detailed metadata about roles and fields to maintain high-fidelity automation
+- **Asset Retrieval** — Programmatically generate secure download links or retrieve Base64 Data URIs for finalized signed PDF documents
+- **Operational Visibility** — Monitor bulk sending jobs, manage unclaimed drafts, and check account usage limits directly through your agent
 
 ### How it works
 
-1. Connect the Dropbox Sign integration to your AI assistant.
-2. Authorize using your Dropbox Sign (HelloSign) API Key (found in your account settings).
-3. Orchestrate your document signing and e-signature workflows through intuitive conversation.
+1. Subscribe to this server
+2. Retrieve your **API Key** from the Dropbox Sign dashboard (Settings > API)
+3. Start managing your e-signature pipeline from Claude, Cursor, or any MCP client
+
+No more manual status checking or digging through contract folders. Your AI acts as your dedicated legal and document operations coordinator.
 
 ### Who is this for?
 
-- **Operations Managers** — Quickly check signature statuses and outstanding document volumes on the go.
-- **HR & Legal Teams** — Monitor employee onboarding documents and contract completions via chat.
-- **Sales Operations** — Research specific request details and signer history to accelerate deals instantly.
+- **Legal & Compliance Teams** — instantly track the status of critical agreements and retrieve signed copies using natural language
+- **HR Operations** — automate the dispatch of onboarding documents and monitor signer progress without leaving your workspace
+- **Sales Teams** — create and send contract templates directly through simple AI queries to close deals faster
 
 
-## Available Tools (10)
-- **get_dropbox_sign_account_metadata**: Retrieve metadata and usage limits for your Dropbox Sign account
-- **quick_signature_volume_audit**: Retrieve a high-level summary of signature request activity and completion rates
-- **get_signature_request_details**: Get detailed information and signature status for a specific request
-- **get_template_configuration**: Get detailed settings and field definitions for a specific template
-- **list_outstanding_signatures**: Identify signature requests that are currently awaiting signatures
-- **list_latest_signature_requests**: Identify the most recently created signature requests
-- **list_signature_requests**: List all signature requests in your Dropbox Sign account
-- **list_signature_templates**: List all reusable signature templates configured in your account
-- **list_templates_by_signer_role**: Identify templates that include specific signer roles (mock logic)
-- **search_signature_requests**: Search for signature requests using a keyword or query string
+## Available Tools (12)
+- **get_account_info**: Get Dropbox Sign account details
+- **cancel_signature_request**: Cancel a pending signature request
+- **create_unclaimed_draft**: Create an unclaimed draft
+- **get_files_data_uri**: Get document as Data URI
+- **get_files_download_url**: Get temporary download link for files
+- **get_template_details**: Get template metadata
+- **list_bulk_send_jobs**: List bulk sending jobs
+- **list_templates**: List available signature templates
+- **send_signature_request**: Send a document for signature
+- **send_with_template**: Send signature request using templates
+- **get_signature_request_details**: Get details for a signature request
+- **list_signature_requests**: List all signature requests
 
 
 ## 💬 Prompt Examples
@@ -50,38 +55,38 @@ Integrate **Dropbox Sign** (formerly HelloSign), the intuitive e-signature platf
 Here are some examples of how you can interact with the **Dropbox Sign** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all outstanding signature requests."
+> "List all my pending signature requests and their status."
 
 **🤖 AI Agent:**
-> I've found 4 outstanding requests, including 'Sales Contract - Tech Corp' and 'Employee Onboarding - Jane Doe'. Would you like to see the signer status for the Tech Corp contract?
+> I've retrieved your active requests. You have 3 documents awaiting signature, including 'NDA - Project Alpha' and 'Sales Agreement #402'. Would you like the signer details for any of these?
 
 ---
 
 **👤 You:**
-> "Show me the details for signature request 'REQ-12345'."
+> "Send the 'Agreement' template to 'john.doe@example.com'."
 
 **🤖 AI Agent:**
-> Request 'REQ-12345' (Title: Partnership Agreement) is 'Awaiting Signatures'. Signer 1 (John Smith) has signed, but Signer 2 (Alice Jones) has only viewed the document. Should I send a reminder to Alice?
+> Signature request dispatched! I've successfully sent the 'Agreement' template to John Doe. The request ID is 'req_123'. I'll alert you as soon as they view or sign the document.
 
 ---
 
 **👤 You:**
-> "List all reusable signature templates."
+> "Get the download link for the signed document 'req_123'."
 
 **🤖 AI Agent:**
-> You have 5 active templates, including 'Standard NDA', 'Service Level Agreement', and 'Consulting Contract'. Would you like to see the signer roles defined for the NDA template?
+> Link generated! You can download the finalized PDF for request req_123 here: [download_url]. The link is secure and will expire in 24 hours.
 
 
 ## ❓ FAQ
 
-**Q: How do I get a Dropbox Sign API Key?**
-Log in to your Dropbox Sign (HelloSign) account, navigate to **Settings > API**, and you can generate or retrieve your unique API Key from there. Note that API access may require a specific plan.
+**Q: How do I find my Dropbox Sign API Key?**
+Log in to your account, navigate to **Settings** > **API**, and generate or copy your unique API Key from the dashboard.
 
-**Q: Can the agent send new signature requests?**
-This integration currently focuses on listing and auditing signature requests and templates. Sending new requests with document uploads should be managed via the Dropbox Sign web portal or mobile app.
+**Q: Can I use existing templates with the agent?**
+Yes! Use the `send_with_template` tool to dispatch requests based on your predefined document templates in Dropbox Sign.
 
-**Q: Does the integration show specific signer statuses?**
-Yes, you can use the get_signature_request_details tool to see exactly who has signed, who is pending, and any specific events like views or declines.
+**Q: How do I retrieve the signed PDF document?**
+Use the `get_files_download_url` tool to generate a temporary secure link to download the finalized PDF directly.
 
 
 ## Installation & Usage
