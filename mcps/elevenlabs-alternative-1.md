@@ -35,7 +35,6 @@ Connect your **ElevenLabs** account to any AI agent to generate high-quality aud
 
 
 ## Available Tools (34)
-- **add_dictionary_from_file**: Add pronunciation dictionary from a PLS file
 - **add_dictionary_from_rules**: Add pronunciation dictionary from rules
 - **isolate_audio**: Remove background noise from audio
 - **convert_speech**: Voice Changer (Speech to Speech)
@@ -57,6 +56,7 @@ Connect your **ElevenLabs** account to any AI agent to generate high-quality aud
 - **get_voice**: Get details for a specific voice
 - **list_agent_branches**: List branches for a Conversational AI agent
 - **list_agents**: List Conversational AI agents
+- **add_dictionary_from_file**: Add pronunciation dictionary from a PLS file
 - **list_dictionaries**: List pronunciation dictionaries
 - **list_dubs**: List dubbing projects
 - **list_history**: Get generated items history

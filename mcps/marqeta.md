@@ -29,6 +29,9 @@ Connect your **Marqeta** account to any AI agent to manage your card issuing inf
 
 
 ## Available Tools (31)
+- **create_auth_control**: Create an authorization control
+- **perform_kyc**: Perform KYC verification for a user
+- **provision_apple_pay**: Provision a card for Apple Pay
 - **create_business**: Create a new Marqeta business
 - **create_card_product**: Create a new Marqeta card product
 - **create_card**: Create a new Marqeta card
@@ -55,8 +58,6 @@ Create a user transition
 - **get_user**: Retrieve a Marqeta user by token
 - **list_cards_by_user**: List all cards for a specific user
 - **list_users**: List Marqeta users
-- **perform_kyc**: Perform KYC verification for a user
-- **provision_apple_pay**: Provision a card for Apple Pay
 - **provision_google_pay**: Provision a card for Google Pay
 - **reveal_pin**: Reveal a card PIN
 - **simulate_authorization**: Simulate an authorization
@@ -64,7 +65,6 @@ Create a user transition
 - **simulate_reversal**: Simulate a reversal
 - **update_pin**: Set or update a card PIN
 - **create_ach_funding_source**: Create an ACH funding source
-- **create_auth_control**: Create an authorization control
 - **ping_webhook**: Ping a webhook
 
 

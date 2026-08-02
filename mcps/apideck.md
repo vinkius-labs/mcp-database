@@ -36,11 +36,11 @@ Connect **Apideck** to your AI agent to streamline how you interact with multipl
 - **list_crm_contacts**: g., salesforce, hubspot) using the Unified CRM API.
 
 List CRM contacts from a unified integration
-- **delete_vault_connection**: Delete a Vault connection
 - **get_vault_connection**: Get a specific Vault connection
 - **execute_proxy**: Execute a Proxy API request
 - **list_vault_connections**: List Vault connections
 - **create_vault_session**: Create a Vault session
+- **delete_vault_connection**: Delete a Vault connection
 
 
 ## 💬 Prompt Examples

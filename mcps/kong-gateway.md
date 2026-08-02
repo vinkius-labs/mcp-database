@@ -37,6 +37,20 @@ No more manual cURL commands or navigating complex dashboards to check a route c
 
 
 ## Available Tools (40)
+- **create_target**: Create a new Target for an Upstream
+- **create_upstream**: Create a new Kong Upstream
+- **delete_certificate**: Delete a Kong Certificate
+- **delete_plugin**: Delete a Kong Plugin
+- **delete_route**: Delete a Kong Route
+- **delete_service**: Delete a Kong Service
+- **delete_sni**: Delete a Kong SNI
+- **delete_consumer**: Delete a Kong Consumer
+- **delete_target**: Delete a Target from an Upstream
+- **get_route**: Get details for a specific Kong Route
+- **update_consumer**: Update an existing Kong Consumer
+- **update_plugin**: Update an existing Kong Plugin
+- **update_route**: Update an existing Kong Route
+- **update_service**: Update an existing Kong Service
 - **create_certificate**: Create a new Kong Certificate
 - **list_certificates**: List all Kong Certificates
 - **create_consumer**: Create a new Kong Consumer
@@ -44,21 +58,11 @@ No more manual cURL commands or navigating complex dashboards to check a route c
 - **create_route**: Create a new Kong Route
 - **create_service**: Create a new Kong Service
 - **create_sni**: Create a new Kong SNI
-- **create_target**: Create a new Target for an Upstream
-- **create_upstream**: Create a new Kong Upstream
-- **delete_certificate**: Delete a Kong Certificate
-- **delete_consumer**: Delete a Kong Consumer
-- **delete_plugin**: Delete a Kong Plugin
-- **delete_route**: Delete a Kong Route
-- **delete_service**: Delete a Kong Service
-- **delete_sni**: Delete a Kong SNI
-- **delete_target**: Delete a Target from an Upstream
 - **delete_upstream**: Delete a Kong Upstream
 - **get_certificate**: Get details for a specific Kong Certificate
 - **get_consumer**: Get details for a specific Kong Consumer
 - **get_info**: Retrieve general information about the Kong node
 - **get_plugin**: Get details for a specific Kong Plugin
-- **get_route**: Get details for a specific Kong Route
 - **get_service**: Get details for a specific Kong Service
 - **get_sni**: Get details for a specific Kong SNI
 - **get_status**: Retrieve the status of the Kong node
@@ -71,10 +75,6 @@ No more manual cURL commands or navigating complex dashboards to check a route c
 - **list_targets**: List all Targets for an Upstream
 - **list_upstreams**: List all Kong Upstreams
 - **update_certificate**: Update an existing Kong Certificate
-- **update_consumer**: Update an existing Kong Consumer
-- **update_plugin**: Update an existing Kong Plugin
-- **update_route**: Update an existing Kong Route
-- **update_service**: Update an existing Kong Service
 - **update_sni**: Update an existing Kong SNI
 - **update_upstream**: Update an existing Kong Upstream
 

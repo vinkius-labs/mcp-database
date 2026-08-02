@@ -7,51 +7,42 @@
 
 **Category:** [document-management](../categories/document-management.md)
 
-Securely manage Files.com storage, users, and permissions. List folders, move files, and automate workflows through natural language.
+Sync, share, and automate file workflows across teams with secure cloud storage that integrates with your existing tools.
 
 ## Description
-Connect your **Files.com** account to any AI agent to streamline enterprise file management and user administration through natural conversation.
+Connect your **Files.com** secure storage account to any AI agent and simplify how you manage your enterprise files, coordinate folder structures, and monitor audit logs through natural conversation.
 
 ### What you can do
 
-- **File & Folder Control** — List directory contents, retrieve metadata, and perform file operations like move, copy, or delete.
-- **User Management** — List, create, update, or delete users and manage group assignments directly.
-- **Security & Permissions** — Audit folder permissions and grant access to specific users or groups programmatically.
-- **Workflow Automation** — List active automations and create webhooks to integrate with your existing tech stack.
+- **Folder Oversight** — List files and directories at any path and coordinate your organizational storage hierarchy.
+- **File Intelligence** — Retrieve detailed metadata and direct download links for specific files using their unique paths.
+- **Access Control** — List account users, groups, and detailed permissions to ensure your data security is ready.
+- **Audit Monitoring** — Query real-time and historical activity logs to track file uploads, downloads, and deletions.
+- **Operational Utility** — Create new folders and remove outdated assets programmatically via simple AI commands.
+- **Data Insights** — Fetch complete file metadata and permission distributions directly from the agent.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Files.com API Key
-3. Start managing your enterprise storage from Claude, Cursor, or any MCP-compatible client
+2. Enter your Files.com API Key and Subdomain (e.g., yourcompany.files.com)
+3. Start managing your secure ecosystem from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **IT Administrators** — quickly manage user access, audit permissions, and organize directory structures without the web UI.
-- **DevOps Engineers** — automate file movements and monitor webhooks/automations directly from the terminal or IDE.
-- **Data Managers** — organize large datasets, move files between environments, and verify file metadata via chat.
+- **IT Administrators** — quickly check folder permissions and verify user access via simple AI queries.
+- **Operations Teams** — monitor file activity history and coordinate folder creation directly from the workspace.
+- **Compliance Officers** — verify audit logs and track file lifecycle changes via the AI assistant.
 
 
-## Available Tools (17)
-- **add_user_to_group**: Add a user to a group
-- **copy_file**: Copy a file or folder
-- **create_group**: Create a new group
-- **create_permission**: Create a new permission
-- **create_user**: Create a new user
-- **create_webhook**: Create a new webhook
+## Available Tools (8)
 - **delete_file**: Delete a file or folder
-- **delete_permission**: Delete a permission
-- **delete_user**: Delete a user
-- **get_file_metadata**: Get metadata for a specific file
-- **list_automations**: List all automations
-- **list_folder**: List contents of a folder
-- **list_groups**: List all groups
-- **list_permissions**: List all permissions
-- **list_users**: com site.
-
-List all users
-- **move_file**: Move a file or folder
-- **update_user**: Update an existing user
+- **create_folder**: Create a new folder
+- **get_file_details**: Get details for a specific file
+- **list_folders**: List Files.com folders
+- **list_user_groups**: List organizational groups
+- **list_activity_history**: List file activity history
+- **list_permissions**: List file permissions
+- **list_users**: List Files.com users
 
 
 ## 💬 Prompt Examples
@@ -59,38 +50,38 @@ List all users
 Here are some examples of how you can interact with the **Files.com** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all files and folders inside the /marketing/2024 directory."
+> "List all files in the '/Client-Projects' folder."
 
 **🤖 AI Agent:**
-> I've scanned the /marketing/2024 folder. It contains 3 subfolders (Campaigns, Assets, Reports) and 2 files: 'strategy_v1.pdf' and 'budget.xlsx'.
+> I've retrieved the folder contents. Inside '/Client-Projects' you have: 'Contract_v1.pdf', 'Design_Mockup.png', and 'Project_Brief.docx'. Which one would you like more details on?
 
 ---
 
 **👤 You:**
-> "Create a new user with username 'dev_team_lead' and email 'lead@company.com'."
+> "Show me the activity history for the last 24 hours."
 
 **🤖 AI Agent:**
-> User 'dev_team_lead' has been successfully created with ID 88291. Would you like me to add them to any specific groups now?
+> Fetching audit logs... In the last 24 hours, there were 15 activities: 10 uploads, 3 downloads by Mike Ross, and 2 folder deletions. Would you like a detailed report on the deletions?
 
 ---
 
 **👤 You:**
-> "Move 'invoice_99.pdf' from /uploads to /finance/invoices."
+> "Create a new folder called '/Archive-2023'."
 
 **🤖 AI Agent:**
-> The file 'invoice_99.pdf' has been moved to /finance/invoices. The operation was successful.
+> Success! The folder '/Archive-2023' has been created in your Files.com account. You can now start moving your legacy assets into this directory.
 
 
 ## ❓ FAQ
 
-**Q: Can I move or copy files between different folders using the AI?**
-Yes. You can use the `move_file` and `copy_file` tools. Just provide the source path and the destination path, and the agent will handle the transfer within your Files.com site.
+**Q: Can I see who downloaded a specific file via AI?**
+Yes! Use the `list_activity_history` tool. Your agent will retrieve the audit logs, which you can filter to find download events for a particular file or user.
 
-**Q: Is it possible to manage user permissions for specific folders?**
-Absolutely. You can use `list_permissions` to audit current access and `create_permission` to grant new access levels to specific users or groups for any folder path.
+**Q: How do I create a new folder in my secure storage?**
+Use the `create_folder` action. Provide the path where you want the new directory to be created (e.g., '/projects/2024') and the agent will register it in Files.com instantly.
 
-**Q: Can I see a list of all active automations on my site?**
-Yes, the `list_automations` tool allows your agent to retrieve all configured automations, helping you monitor scheduled tasks and sync processes.
+**Q: Is it possible to list all users in my Files.com instance via AI?**
+Absolutely. Use the `list_users` query. The agent will retrieve the complete directory of users configured for your company's instance.
 
 
 ## Installation & Usage

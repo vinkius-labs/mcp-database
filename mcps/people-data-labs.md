@@ -34,12 +34,12 @@ Connect **People Data Labs** to your AI agent to access one of the most comprehe
 
 
 ## Available Tools (14)
-- **pdl_autocomplete**: Get autocomplete suggestions for Search API query values
-- **pdl_bulk_enrich_company**: Bulk enrich up to 100 companies
-- **pdl_bulk_enrich_person**: Bulk enrich up to 100 persons
 - **pdl_clean_company**: Clean and standardize raw company data
 - **pdl_clean_location**: Clean and standardize raw location data
 - **pdl_clean_school**: Clean and standardize raw school data
+- **pdl_autocomplete**: Get autocomplete suggestions for Search API query values
+- **pdl_bulk_enrich_company**: Bulk enrich up to 100 companies
+- **pdl_bulk_enrich_person**: Bulk enrich up to 100 persons
 - **pdl_enrich_company**: Enrich a company profile
 - **pdl_enrich_ip**: Enrich an IP address
 - **pdl_enrich_job_title**: Enrich a job title to find similar titles and relevant skills

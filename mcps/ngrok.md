@@ -34,13 +34,13 @@ Connect your **ngrok** account to any AI agent and take full control of your ing
 
 
 ## Available Tools (7)
-- **list_api_keys**: List ngrok API keys
-- **list_endpoints**: List ngrok endpoints
 - **list_https_edges**: List ngrok HTTPS edges
 - **list_ip_policies**: List ngrok IP policies
 - **list_ip_restrictions**: List ngrok IP restrictions
 - **list_reserved_domains**: List ngrok reserved domains
 - **list_vaults**: List ngrok vaults
+- **list_api_keys**: List ngrok API keys
+- **list_endpoints**: List ngrok endpoints
 
 
 ## 💬 Prompt Examples

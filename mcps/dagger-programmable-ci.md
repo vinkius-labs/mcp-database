@@ -41,13 +41,13 @@ Execute a raw GraphQL query against the Dagger engine
 - **query_container**: Creates a scratch container and returns its ID
 - **query_current_module**: Queries the current module
 - **query_directory**: Creates an empty directory and returns its ID
-- **query_git**: Queries a Git repository
 - **query_host**: Queries the host environment
 - **query_http**: Returns a file from a URL
 - **query_secret**: g., env://VAR_NAME, file://PATH, cmd://COMMAND).
 
 Creates a new secret
 - **query_version**: Get the Dagger Engine version
+- **query_git**: Queries a Git repository
 
 
 ## 💬 Prompt Examples

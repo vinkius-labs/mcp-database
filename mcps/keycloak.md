@@ -34,10 +34,15 @@ Connect your **Keycloak** instance to any AI agent to streamline your Identity a
 
 
 ## Available Tools (34)
-- **create_auth_flow**: Create an authentication flow
-- **create_client**: Create a new client
 - **create_group**: Create a top-level group
 - **create_role**: Create a realm-level role
+- **list_users**: Get users in a realm
+- **logout_all_users**: Remove all user sessions in a realm
+- **partial_export_realm**: Partial export of a realm
+- **regenerate_client_secret**: Regenerate client secret
+- **reset_user_password**: Reset user password
+- **create_auth_flow**: Create an authentication flow
+- **create_client**: Create a new client
 - **update_client**: Update a client
 - **update_group**: Update a group
 - **update_realm**: Update realm information
@@ -63,11 +68,6 @@ Connect your **Keycloak** instance to any AI agent to streamline your Identity a
 - **list_required_actions**: Get required actions
 - **list_roles**: Get realm-level roles
 - **list_user_groups**: Get user groups
-- **list_users**: Get users in a realm
-- **logout_all_users**: Remove all user sessions in a realm
-- **partial_export_realm**: Partial export of a realm
-- **regenerate_client_secret**: Regenerate client secret
-- **reset_user_password**: Reset user password
 
 
 ## 💬 Prompt Examples

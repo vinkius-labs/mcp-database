@@ -34,6 +34,15 @@ Integrate **Pangea** into your AI workflows to provide a robust security layer f
 
 
 ## Available Tools (40)
+- **file_scan**: Scan a file for malware
+- **intel_reputation**: Retrieve reputation scores for domains, URLs, or file hashes
+- **ip_geolocate**: Retrieve location data for an IP
+- **ip_proxy**: Detect if an IP is a proxy
+- **ip_reputation**: Get reputation score and verdict for an IP
+- **ip_vpn**: Detect if an IP is a VPN
+- **password_breached**: Check if a password hash prefix appears in breach data
+- **share_list**: List objects in a bucket or folder with filtering
+- **unredact**: Decrypt data previously redacted using FPE
 - **ai_guard_text**: Scan text for PII, malicious content, and prompt injections
 - **aidr_chat_completions**: Guard LLM chat completions with integrated logging and tracing
 - **audit_log_bulk**: Create multiple secure audit log entries
@@ -52,21 +61,12 @@ Integrate **Pangea** into your AI workflows to provide a robust security layer f
 - **domain_whois**: Get WHOIS details for a domain
 - **embargo_ip_check**: Check if an IP originates from an embargoed country
 - **embargo_iso_check**: Check a 2-character ISO country code against embargo lists
-- **file_scan**: Scan a file for malware
-- **intel_reputation**: Retrieve reputation scores for domains, URLs, or file hashes
-- **ip_geolocate**: Retrieve location data for an IP
-- **ip_proxy**: Detect if an IP is a proxy
-- **ip_reputation**: Get reputation score and verdict for an IP
-- **ip_vpn**: Detect if an IP is a VPN
-- **password_breached**: Check if a password hash prefix appears in breach data
 - **redact_structured**: Redact specific fields in a JSON object using JSONPath
 - **redact_text**: Redact sensitive data from plain text
 - **sanitize_file**: Apply sanitization rules to a file and receive a cleaned version
 - **share_delete**: Delete files or folders
 - **share_folder_create**: Create folders in Secure Share
 - **share_get**: Download a file or retrieve metadata
-- **share_list**: List objects in a bucket or folder with filtering
-- **unredact**: Decrypt data previously redacted using FPE
 - **user_breached**: Check if an email, phone, or username appears in known data breaches
 - **vault_decrypt**: Perform cryptographic decryption
 - **vault_encrypt**: Perform cryptographic encryption

@@ -20,15 +20,15 @@ LLMs suffer from 'calendar blindness'. Because they lack a continuous clock and 
 
 
 ## Available Tools (4)
-- **diff_dates**: Pass both ISO date strings and receive the delta in days, hours, minutes, and seconds.
-
-Calculates the exact number of calendar days between two dates
 - **parse_date**: Pass the raw date string and receive a confirmed valid date object.
 
 Parses an ISO date string safely to ensure it is valid
 - **to_timezone**: Pass the ISO date string and the IANA timezone identifier (e.g. "America/Sao_Paulo", "Europe/London"). Accounts for daylight saving time automatically.
 
 Converts a UTC or ISO date string to a specific IANA timezone safely accounting for daylight savings
+- **diff_dates**: Pass both ISO date strings and receive the delta in days, hours, minutes, and seconds.
+
+Calculates the exact number of calendar days between two dates
 - **add_days**: Pass the base ISO date and the number of days (negative to subtract). Receives the exact resulting date.
 
 Adds or subtracts a specific number of calendar days from a date deterministically

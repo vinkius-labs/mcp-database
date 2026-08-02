@@ -34,28 +34,28 @@ Connect your **Fly.io** account to any AI agent to orchestrate your cloud infras
 
 
 ## Available Tools (28)
+- **extend_volume**: Increase volume size
+- **start_machine**: Start a Machine
+- **delete_app**: Delete a Fly App
+- **delete_certificate**: Remove hostname and certificates
+- **delete_machine**: Delete a Machine
+- **delete_volume**: Delete a volume
+- **get_app**: Get details about a Fly App
+- **get_certificate**: Get certificate details
+- **get_machine**: Get Machine details
+- **get_volume**: Get volume details
+- **request_oidc_token**: Request an OpenID Connect (OIDC) token
 - **create_lease**: Create a lease for a Machine
 - **create_machine**: Requires a config object containing at least the image.
 
 Create a new Fly Machine
 - **create_volume**: Create a new volume
-- **delete_app**: Delete a Fly App
-- **delete_certificate**: Remove hostname and certificates
-- **delete_machine**: Delete a Machine
-- **delete_volume**: Delete a volume
-- **extend_volume**: Increase volume size
-- **get_app**: Get details about a Fly App
-- **get_certificate**: Get certificate details
-- **get_machine**: Get Machine details
-- **get_volume**: Get volume details
 - **list_apps**: List Fly Apps
 - **list_certificates**: List all certificates for an app
 - **list_machines**: List all Machines in an app
 - **list_volume_snapshots**: List volume snapshots
 - **list_volumes**: List all volumes in an app
 - **release_lease**: Release a lease for a Machine
-- **request_oidc_token**: Request an OpenID Connect (OIDC) token
-- **start_machine**: Start a Machine
 - **stop_machine**: Stop a Machine
 - **suspend_machine**: Suspend a Machine
 - **update_machine**: Update Machine configuration

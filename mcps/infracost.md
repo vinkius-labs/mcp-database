@@ -34,13 +34,8 @@ Connect **Infracost** to your AI agent to bring financial visibility and governa
 
 
 ## Available Tools (13)
-- **list_guardrails**: List all guardrails for an organization
-- **query_pricing**: Provide a valid GraphQL query string.
-
-Query the Cloud Pricing API using GraphQL
-- **create_guardrail**: Create a new guardrail
-- **create_price_book**: Create a custom price book for an enterprise
 - **delete_guardrail**: Delete a guardrail
+- **create_price_book**: Create a custom price book for an enterprise
 - **get_guardrail**: Get a specific guardrail by ID
 - **get_price_book_files_url**: Use the returned URL to PUT the CSV file.
 
@@ -51,7 +46,9 @@ Get the status and details of a price book
 - **ingest_price_book**: Call this after uploading the CSV to the presigned URL.
 
 Trigger ingestion of an uploaded price book CSV
-- **update_guardrail**: Update an existing guardrail
+- **query_pricing**: Provide a valid GraphQL query string.
+
+Query the Cloud Pricing API using GraphQL
 - **update_organization**: Pass the customPriceBookId to activate it.
 
 Update organization settings, such as activating a custom price book
@@ -59,6 +56,9 @@ Update organization settings, such as activating a custom price book
 - **upload_custom_properties**: g., from ServiceNow or Backstage) for cost attribution. Provide raw CSV data.
 
 Upload custom business properties via CSV
+- **list_guardrails**: List all guardrails for an organization
+- **create_guardrail**: Create a new guardrail
+- **update_guardrail**: Update an existing guardrail
 
 
 ## 💬 Prompt Examples

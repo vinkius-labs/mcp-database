@@ -36,20 +36,20 @@ Connect your **LocalAI** instance to any AI agent and leverage powerful multimod
 
 ## Available Tools (19)
 - **open_responses**: Generate open responses
+- **chat_completions**: Generate chat completions (OpenAI compatible)
+- **face_analyze**: Analyze face demographics
+- **get_auth_status**: Check authentication state and providers
+- **rerank_documents**: Rerank documents based on a query
 - **anthropic_messages**: Generate messages (Anthropic compatible)
 - **apply_model**: Install a model from the gallery
-- **chat_completions**: Generate chat completions (OpenAI compatible)
 - **create_embeddings**: Create text embeddings
 - **detect_objects**: Detect objects in an image
-- **face_analyze**: Analyze face demographics
 - **face_identify**: Identify faces (1:N)
 - **face_register**: Enroll a face into the store
 - **face_verify**: Verify faces (1:1)
 - **generate_image**: Supports negative prompts using | separator.
 
 Generate images from text prompts
-- **get_auth_status**: Check authentication state and providers
-- **rerank_documents**: Rerank documents based on a query
 - **text_to_speech**: Convert text to audio (TTS)
 - **transcribe_audio**: Pass the file data or path as required by your LocalAI setup.
 

@@ -35,14 +35,14 @@ No more manual navigation through the cloud console for routine checks. Your AI 
 
 
 ## Available Tools (38)
-- **list_certificates**: List all certificates
 - **create_certificate**: Create a new certificate
-- **get_storage_box**: Get details of a specific Storage Box
-- **list_images**: List all images
-- **create_firewall**: Create a new firewall
-- **create_floating_ip**: Create a new floating IP
 - **create_load_balancer**: Create a new load balancer
 - **create_network**: Create a new network
+- **delete_load_balancer**: Delete a load balancer
+- **get_storage_box**: Get details of a specific Storage Box
+- **create_firewall**: Create a new firewall
+- **list_certificates**: List all certificates
+- **create_floating_ip**: Create a new floating IP
 - **create_server**: Create a new server
 - **create_ssh_key**: Create a new SSH key
 - **create_storage_box_snapshot**: Create a manual snapshot for a Storage Box
@@ -50,12 +50,12 @@ No more manual navigation through the cloud console for routine checks. Your AI 
 - **create_volume**: Create a new volume
 - **create_zone**: Create a new DNS zone
 - **list_datacenters**: List all datacenters
-- **delete_load_balancer**: Delete a load balancer
 - **delete_server**: Delete a server
 - **list_firewalls**: List all firewalls
 - **list_floating_ips**: List all floating IPs
 - **get_action**: Get details of a specific action
 - **get_server**: Get details of a specific server
+- **list_images**: List all images
 - **list_load_balancers**: List all load balancers
 - **list_locations**: List all locations
 - **list_networks**: List all networks

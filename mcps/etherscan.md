@@ -34,6 +34,7 @@ Connect your **Etherscan** API key to any AI agent and gain instant access to on
 
 
 ## Available Tools (19)
+- **get_eth_supply**: Get total supply of Ether
 - **get_balance_multi**: Get native token balances for multiple addresses
 - **get_balance**: Get native token balance for an address
 - **get_abi**: Get Contract ABI
@@ -41,7 +42,6 @@ Connect your **Etherscan** API key to any AI agent and gain instant access to on
 - **get_block_no_by_time**: Get block number by timestamp
 - **get_block_number**: Get latest block number
 - **get_eth_price**: Get Ether last price
-- **get_eth_supply**: Get total supply of Ether
 - **get_gas_oracle**: Get Gas Oracle
 - **get_logs**: Get event logs
 - **get_source_code**: Get Contract Source Code
