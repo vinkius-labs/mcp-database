@@ -5,56 +5,43 @@
 
 ## Overview
 
-**Category:** [ai-frontier](../categories/ai-frontier.md)
+**Category:** [friends-mcp](../categories/friends-mcp.md)
 
-Automate LLM and ML observability via Arize — monitor models, track telemetry, run evaluations, and analyze data drift directly from any AI agent.
+Monitor ML model performance, detect data drift, and troubleshoot prediction quality with real-time observability dashboards.
 
 ## Description
-Connect your **Arize AI** observability platform to any AI agent and take full control of your Machine Learning and LLM telemetry workflows through natural conversation.
+Connect your **Arize AI** account to any AI agent and take full control of your machine learning observability and automated model monitoring workflows through natural conversation.
 
 ### What you can do
 
-- **Model Monitoring & Metrics** — List all tracked ML models, extract deep configuration schemas, and fetch real-time metrics (performance, data quality, and prediction drift)
-- **Evaluation & Alignment** — Launch and list automated LLM evaluation runs (e.g., Toxicity, Hallucination, PII filtering) against static datasets and ground truth baselines
-- **Telemetry Ingestion** — Push programmatic raw logs, predictions, and inferences straight into Arize for immediate visualization and tracking
-- **Space & Environment Management** — Browse organizational spaces and segregated deployment environments (Production, Training, Verification)
+- **Project & Trace Orchestration** — List and monitor active ML tracing projects programmatically, retrieving detailed high-fidelity execution spans and telemetry data in real-time
+- **Dataset Lifecycle Management** — Programmatically create and manage datasets for model evaluation and validation to maintain a perfectly coordinated ML infrastructure
+- **Experiment Monitoring** — Access and track ML experiments to understand high-fidelity model performance, drift, and data quality across different environments
+- **Model Intelligence Discovery** — Retrieve detailed metadata for specific ML models to coordinate your organizational AI strategy directly through your agent
+- **Operational Monitoring** — Access account-level settings and verify API connectivity directly through your agent for instant performance reporting
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Arize API Key and Space ID Key
-3. Start monitoring your prediction health from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API Key** from your Arize dashboard (Settings > API)
+3. Start orchestrating your ML observability pipeline from Claude, Cursor, or any MCP client
 
-No more context-switching into heavily graphical dashboards to figure out why an LLM prompt hallucinated. Your AI acts as a dedicated ML Ops engineer.
+No more manual logging into observability portals to check model drift or trace spans. Your AI acts as your dedicated ML engineer and observability coordinator.
 
 ### Who is this for?
 
-- **Machine Learning Engineers** — rapidly push inference telemetry and query performance degradation flags without leaving your terminal
-- **AI Product Managers** — instantly monitor output toxicity, drift rates, and usage metrics across multiple LLM integrations
-- **Data Scientists** — manage baseline evaluation datasets and trigger custom scoring loops asynchronously
+- **ML Engineers** — instantly retrieve span details and analyze model traces using natural language commands
+- **Data Scientists** — monitor experiment results and manage datasets for validation without leaving your creative workspace
+- **AI Developers** — automate the oversight of LLM and ML model health through simple AI queries
 
 
-## Available Tools (10)
-- **get_dataset**: Get a specific evaluation dataset
-- **get_model**: It defines the inputs, outputs, and features.
-
-Get details and metadata for a specific tracked model
-- **list_spaces**: Spaces separate different models and telemetry datasets.
-
-List accessible workspaces within the Arize platform
-- **list_datasets**: List static evaluation datasets
-- **list_environments**: g., Production, Training, Verification) used to segregate model inferences and baseline datasets.
-
-List configured environments within Arize
-- **list_evals**: g., Toxicity, Hallucination, PII filtering).
-
-List automated evaluation runs
-- **ingest_log**: payload_json must contain valid Arize payload structures.
-
-Ingest raw telemetry logs into Arize
-- **get_metrics**: Fetch observability metrics for an ML model
-- **list_models**: List tracked ML models or LLMs
-- **run_eval**: Trigger a custom LLM evaluation run
+## Available Tools (6)
+- **list_datasets**: List datasets
+- **create_dataset**: Create a dataset
+- **get_model**: Get model details
+- **list_experiments**: List experiments
+- **list_projects**: List projects
+- **list_spans**: List spans
 
 
 ## 💬 Prompt Examples
@@ -62,38 +49,38 @@ Ingest raw telemetry logs into Arize
 Here are some examples of how you can interact with the **Arize AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active Machine Learning models monitored in my workspace."
+> "List all active ML projects in my Arize account."
 
 **🤖 AI Agent:**
-> I've fetched your models from the Arize Space. You currently have 3 connected models: 'Fraud-Detection-v2' (Classification), 'Customer-Churn-XGB' (Score), and 'OpenAI-Customer-Service-Bot' (LLM). Would you like to see the recent drift metrics for any of them?
+> I've retrieved your tracing projects. You currently have 3 active projects, including 'Production Classifier' (ID: 1024) and 'Beta Recommender'. Which one would you like to inspect for recent traces?
 
 ---
 
 **👤 You:**
-> "Get the evaluation baseline datasets available for our LLM checks."
+> "Show the recent execution spans for project '1024'."
 
 **🤖 AI Agent:**
-> You have two static evaluation datasets loaded in Arize: 'Support-Tickets-Q2-GroundTruth' (1400 rows) and 'Toxicity-Benchmark' (250 rows). I can trigger an automated `run_eval` check targeting these datasets against your active LLM logs if needed.
+> Accessing telemetry data... I found 5 recent spans for project 1024. Most executions are showing low latency (avg 120ms). One span is flagged with a 'Schema Mismatch' warning. Shall I retrieve the detailed metadata for that trace?
 
 ---
 
 **👤 You:**
-> "Push these 3 mocked prompt responses as telemetry logs to the 'OpenAI-Customer-Service-Bot' model."
+> "Create a new dataset 'Q2_Eval_Data' for model evaluation."
 
 **🤖 AI Agent:**
-> I successfully structured your 3 prompts into valid ingestion payloads and pushed them via the `ingest_log` tool. They should now be available for analysis and drift observation in the Arize telemetry dashboard.
+> Dataset orchestrated! I've successfully created 'Q2_Eval_Data' in your Arize environment. The dataset ID is 'ds_456'. You can now begin uploading model versions for automated high-fidelity validation. Shall I list your available models?
 
 
 ## ❓ FAQ
 
-**Q: Can my AI automatically trigger a hallucination evaluation on a new dataset?**
-Yes! You can ask your agent to retrieve the specific Ground Truth dataset ID, formulate a testing payload, and invoke the `run_eval` tool natively. Arize will process the asynchronous scoring internally and log the evaluation securely.
+**Q: How do I find my Arize API Key?**
+Log in to your account, navigate to **Settings** > **API**, and generate or copy your unique secret key.
 
-**Q: How can I quickly check if a production model is experiencing data drift?**
-Just tell your agent: 'Fetch the primary metrics for model X'. The AI uses the `get_metrics` query to immediately surface latency degradation, prediction drift flags, and incoming data quality indexes without opening the browser.
+**Q: Can I track model drift via AI?**
+Yes! Use the `list_experiments` tool to retrieve data on active model evaluations and track performance variations programmatically.
 
-**Q: Is it possible to track telemetry simultaneously for both local development and production environments?**
-Absolutely. Arize enforces strict separation using Spaces and Environments. You can instruct your AI agent to query the `list_environments` tool, figure out the sandbox ID, and push manual test logs strictly to the sandbox scope during debugging sessions, keeping production metrics clean.
+**Q: How do I retrieve telemetry traces?**
+Use the `list_spans` tool to retrieve high-fidelity execution spans and traces for your ML projects directly from the platform.
 
 
 ## Installation & Usage

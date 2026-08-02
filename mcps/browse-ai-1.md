@@ -38,14 +38,6 @@ No more manual downloads or periodic checks. Your AI agent serves as your pipeli
 
 
 ## Available Tools (10)
-- **run_bulk_task**: Each set typically contains a different "originUrl". All extractions run concurrently on Browse AI infrastructure.
-
-Run a Browse AI robot in bulk mode across multiple URLs
-- **download_bulk_data**: Returns a JSON array where each element contains the capturedData from one task.
-
-Download all extracted results from a completed Browse AI bulk run
-- **get_bulk_task**: Get bulk task execution status from Browse AI
-- **get_robot**: Get detailed configuration of a specific Browse AI robot
 - **get_task_data**: Only meaningful when the task status is "successful". Fields match the column names configured in the Browse AI robot builder hitting internal task references.
 
 Retrieve the final extracted JSON data from a successful Browse AI task
@@ -60,6 +52,14 @@ List all Browse AI extraction and monitoring robots
 - **run_robot**: Pass a JSON string of input parameters (typically including "originUrl" for the target page and any variable fields the robot expects). Returns a taskId.
 
 Trigger a Browse AI robot to extract data from a target URL
+- **run_bulk_task**: Each set typically contains a different "originUrl". All extractions run concurrently on Browse AI infrastructure.
+
+Run a Browse AI robot in bulk mode across multiple URLs
+- **download_bulk_data**: Returns a JSON array where each element contains the capturedData from one task.
+
+Download all extracted results from a completed Browse AI bulk run
+- **get_bulk_task**: Get bulk task execution status from Browse AI
+- **get_robot**: Get detailed configuration of a specific Browse AI robot
 
 
 ## 💬 Prompt Examples

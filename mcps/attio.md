@@ -7,37 +7,59 @@
 
 **Category:** [sales-automation](../categories/sales-automation.md)
 
-Manage your CRM data with Attio — track objects, records, and relationships via AI.
+Build powerful CRM workflows with flexible data models, relationship tracking, and deal management tailored to your process.
 
 ## Description
-The **Attio MCP Server** brings powerful CRM capabilities directly to your AI agent. Seamlessly manage your relationship data, from standard objects like People and Companies to custom entities and complex record attributes using simple natural language.
+Connect your **Attio** account to any AI agent and take full control of your relationship management orchestration and automated CRM workflows through natural conversation.
 
-### Key Features
+### What you can do
 
-- **Object Oversight** — List all data objects (tables) in your workspace and retrieve detailed metadata for any specific entity.
-- **Record Management** — Query, create, and update records for any object, including people, companies, and deals.
-- **Smart Assert (Upsert)** — Use the `assert_record` tool to automatically create or update records based on unique matching attributes (e.g., email).
-- **Attribute Intelligence** — Access available fields (attributes) for any object to understand your data structure.
-- **Global Search** — Perform fuzzy searches across multiple objects simultaneously to find relevant records instantly.
-- **Secure API Integration** — Uses secure Bearer Token authentication with your Attio Personal Access Token (PAT).
+- **Object & Record Orchestration** — List and manage your entire database of CRM objects (Companies, People) programmatically, retrieving detailed attribute metadata
+- **Relationship Intelligence Architecture** — Programmatically query and monitor customer interactions and connection signals to maintain a perfectly coordinated sales strategy
+- **Workflow & View Monitoring** — Access your complete directory of CRM views and pipelines to coordinate your organizational resource allocation in real-time
+- **Metadata Management** — Programmatically retrieve field identifiers and record history to maintain a perfectly coordinated audit trail
+- **Operational Monitoring** — Verify account-level API connectivity and monitor CRM activity volume directly through your agent for perfectly coordinated service scaling
+
+### How it works
+
+1. Subscribe to this server
+2. Retrieve your **API Key** from your Attio dashboard (Settings > API Keys)
+3. Start orchestrating your business growth from Claude, Cursor, or any MCP client
+
+No more manual updating of individual CRM records or missing critical relationship updates. Your AI acts as your dedicated relationship coordinator and CRM architect.
 
 ### Who is this for?
 
-- **Sales Teams** — Quickly search for prospect details and update deal statuses during conversations.
-- **Account Managers** — Retrieve company information and relationship history without manual dashboard navigation.
-- **Growth Marketers** — Programmatically assert records from new leads and enrich CRM data using AI-assisted tools.
+- **Sales & Success Managers** — instantly retrieve relationship summaries and monitor pipeline health using natural language commands
+- **Operations Leads** — verify individual record metadata and track CRM updates without leaving your creative workspace
+- **Developers** — integrate high-speed Attio data into custom internal tools and communication channels through simple AI queries
 
 
-## Available Tools (9)
-- **assert_record**: Upsert a record (update if exists, create otherwise)
-- **create_record**: Create a new record in an object
-- **get_account_check**: Verify Attio account connection
-- **get_object**: Get metadata for a specific object
-- **list_objects**: List all objects (tables) in the Attio workspace
-- **get_record**: Retrieve a specific record by ID
-- **list_attributes**: List all attributes (columns) for a specific object
-- **query_records**: Query and filter records for a specific object
-- **search_records**: Global fuzzy search across all objects (Beta)
+## Available Tools (14)
+- **create_record**: Pass attribute values as JSON (e.g., {"name": [{"value": "Acme Corp"}]}).
+
+Create a new record
+- **get_object**: Get object schema
+- **list_objects**: List all CRM objects
+- **create_task**: Create a new task
+- **delete_record**: This action is irreversible.
+
+Delete a record
+- **get_list_entries**: Get entries from a list
+- **list_lists**: List all lists
+- **list_notes**: List notes on a record
+- **list_records**: Use "companies" for companies, "people" for contacts, "deals" for deals.
+
+List records for any object
+- **list_tasks**: List all tasks
+- **update_record**: Only provided attributes are changed.
+
+Update an existing record
+- **check_attio_status**: Verify Attio API connectivity
+- **create_note**: Useful for logging meeting notes, call summaries, or updates.
+
+Create a note on a record
+- **get_record**: Get a specific record
 
 
 ## 💬 Prompt Examples
@@ -45,38 +67,38 @@ The **Attio MCP Server** brings powerful CRM capabilities directly to your AI ag
 Here are some examples of how you can interact with the **Attio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Search for any companies named 'Acme' in my CRM."
+> "List all records in the 'Companies' object in my Attio account and show the last 5 entries."
 
 **🤖 AI Agent:**
-> I've found 2 companies matching 'Acme': 'Acme Corp' and 'Acme Logistics'. Would you like to see the details for one of them?
+> I've retrieved your company records. You currently have 100 companies. The last 5 entries include 'Global Corp' and 'Startup X'. Would you like the detailed attribute metadata for any of them?
 
 ---
 
 **👤 You:**
-> "Assert a person record for 'Jane Doe' with email 'jane@example.com'."
+> "Show the recent updates for 'John Doe' in the 'People' object."
 
 **🤖 AI Agent:**
-> The record for Jane Doe has been successfully asserted. If she already existed, her information was updated; otherwise, a new person was created.
+> Relationship intelligence orchestrated! For John Doe, I've identified the last 3 updates, including a job title change and a new interaction log at 2:00 PM today. I've retrieved the technical attribute metadata for your review. Need help notifying the success team?
 
 ---
 
 **👤 You:**
-> "List all deal stages and attributes for 'Deals'."
+> "Check for any active pipelines with zero updates this week."
 
 **🤖 AI Agent:**
-> I've retrieved 12 attributes for the 'Deals' object, including 'Stage' (select), 'Amount' (currency), and 'Closing Date' (date).
+> Operational monitoring orchestrated! I've identified 2 pipelines with zero activity this week, including 'Partnership Beta' and 'Outreach Alpha'. I've retrieved the technical status for your review. Shall I check for any pending record updates in these pipelines?
 
 
 ## ❓ FAQ
 
-**Q: How do I get my Attio Personal Access Token?**
-Log in to your Attio account, go to **Workspace Settings > Developers**, and you can create a new Personal Access Token (PAT) there.
+**Q: How do I find my Attio API Key?**
+Log in to your account, navigate to **Settings** > **API Keys**, and create or copy your unique Access Token.
 
-**Q: What are 'Attributes' in Attio?**
-Attributes are the columns or fields on an object (e.g., Name, Email, Deal Value). You can list them using the `list_attributes` tool.
+**Q: Can I retrieve records from a specific object via AI?**
+Yes! The `list_records` tool allows your agent to retrieve metadata for all entries in a specific CRM object (e.g., 'people' or 'companies').
 
-**Q: How does 'assert_record' work?**
-The `assert_record` tool performs an 'upsert'. It checks if a record with a specific matching attribute (like an email address) already exists. If it does, it updates it; if not, it creates a new record.
+**Q: How do I list my active CRM objects?**
+Use the `list_objects` tool to retrieve your complete directory along with the unique identifiers for all managed CRM schemas.
 
 
 ## Installation & Usage

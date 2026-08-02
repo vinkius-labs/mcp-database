@@ -5,42 +5,53 @@
 
 ## Overview
 
-**Category:** [growth-engine](../categories/growth-engine.md)
+**Category:** [productivity](../categories/productivity.md)
 
-Manage your Appcues flows, segments, and user experiences with AI — track activity and publish content effortlessly.
+Guide users through your product with in-app onboarding flows, feature announcements, and usage analytics without code.
 
 ## Description
-The **Appcues MCP Server** empowers your AI agent to interact directly with your Appcues account. Whether you need to audit your current onboarding flows, manage user segments, or track real-time user activity, this integration provides a seamless natural language interface to your product experience platform.
+Connect your **Appcues** account to any AI agent and take full control of your in-app onboarding and automated user experience orchestration through natural conversation.
 
-### Key Features
+### What you can do
 
-- **Flow Management** — List, view, publish, and unpublish flows (in-app experiences) across web and mobile.
-- **User Segmentation** — Retrieve and analyze your targeting segments to understand who is seeing your content.
-- **Activity Tracking** — Send real-time events and profile updates for immediate targeting and personalization.
-- **Mobile Support** — Access specific experiences designed for your mobile applications.
-- **Auditing & Reporting** — Quickly check account status, checklists, and experience metadata.
+- **Experience Portfolio Orchestration** — List and manage your entire portfolio of flows and checklists programmatically, retrieving detailed engagement metadata
+- **User & Event Intelligence** — Programmatically monitor real-time user events and access behavioral metadata to coordinate your engagement strategy
+- **Segment & Targeting Architecture** — Access your complete directory of user segments to coordinate your organizational resource allocation
+- **Performance Monitoring** — Access real-time status updates for active flows and track individual completion metrics directly through your agent for instant reporting
+- **Operational Monitoring** — Verify account-level API connectivity and monitor event ingestion volume directly through your agent for perfectly coordinated service scaling
 
-### Benefits for Teams
+### How it works
 
-- **Product Managers** — Quickly audit which onboarding flows are active and make changes without leaving your AI workspace.
-- **Growth Engineers** — Programmatically track user events to trigger personalized in-app journeys.
-- **Customer Success** — View user profiles and segment membership to provide better support and guidance.
+1. Subscribe to this server
+2. Retrieve your **API Key** and **API Secret** from your Appcues dashboard (Settings > API)
+3. Start orchestrating your user growth from Claude, Cursor, or any MCP client
+
+No more manual checking of individual flow completion rates or missing critical onboarding drop-offs. Your AI acts as your dedicated experience coordinator and user architect.
+
+### Who is this for?
+
+- **Product Managers** — instantly retrieve experience performance recaps and monitor onboarding health using natural language commands
+- **Growth Leads** — verify individual user metadata and track event history without leaving your creative workspace
+- **Developers** — integrate high-speed Appcues engagement data into custom analytics and CRM tools through simple AI queries
 
 
-## Available Tools (11)
-- **get_account_details**: Verify Appcues account connection
-- **get_flow**: Get details for a specific flow
-- **get_segment**: Get details for a specific segment
-- **get_user_profile**: Retrieve the profile of a specific user
-- **list_checklists**: List all checklists configured in the account
-- **list_flows**: List all Appcues flows (experiences) for the account
-- **list_mobile_experiences**: List mobile-specific experiences
-- **list_segments**: List all user segments defined in Appcues
-- **publish_flow**: Publish a draft flow
-- **track_user_activity**: Use JSON strings for profileUpdate and events.
+## Available Tools (10)
+- **check_appcues_status**: Verify Appcues API connectivity
+- **delete_user**: This action is irreversible.
 
-Track real-time events and profile updates for a user
-- **unpublish_flow**: Unpublish an active flow
+Delete a user from Appcues
+- **get_flow**: Get flow details
+- **get_segment**: Get segment details
+- **get_user**: Get user profile from Appcues
+- **list_checklists**: List all checklists
+- **list_flows**: List all onboarding flows
+- **list_segments**: List all user segments
+- **publish_flow**: The flow must be in draft or unpublished state.
+
+Publish a flow
+- **unpublish_flow**: Users will no longer see it until republished.
+
+Unpublish a flow
 
 
 ## 💬 Prompt Examples
@@ -48,38 +59,38 @@ Track real-time events and profile updates for a user
 Here are some examples of how you can interact with the **Appcues** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my active Appcues flows."
+> "List all active flows in my Appcues account."
 
 **🤖 AI Agent:**
-> I've retrieved your flows. You have 5 active flows, including 'New User Onboarding', 'Feature Announcement v2', and 'NPS Survey'.
+> I've retrieved your experiences. You currently have 10 active flows, including 'New User Onboarding' and 'Feature Highlight B'. Would you like the detailed engagement metadata for any of them?
 
 ---
 
 **👤 You:**
-> "Track a 'clicked_checkout' event for user 'user_123'."
+> "Show the completion rate for the 'Welcome Flow' from this week."
 
 **🤖 AI Agent:**
-> The 'clicked_checkout' event has been successfully tracked for user 'user_123'.
+> Experience intelligence orchestrated! For Welcome Flow, I've identified a completion rate of 70% from this week's users. I've retrieved the technical drop-off metadata for your review. Need help identifying where users are getting stuck?
 
 ---
 
 **👤 You:**
-> "Show me the details of the segment with ID '998877'."
+> "Check for any active segments with zero engaged users this month."
 
 **🤖 AI Agent:**
-> Segment '998877' is named 'High Value Customers' and currently contains 1,250 users.
+> Operational monitoring orchestrated! I've identified 2 segments with zero engagement this month, including 'Trial Expired' and 'Inactive Beta'. I've retrieved the technical targeting metadata for your review. Shall I check for any pending experience updates for these groups?
 
 
 ## ❓ FAQ
 
-**Q: How do I get my Appcues API Key and Secret?**
-You can generate API keys in the Appcues Studio. Go to **Settings > Integrations > API Keys** to create a new set of credentials.
+**Q: How do I find my Appcues API Key?**
+Log in to your account, navigate to **Settings** > **API**, and copy your unique API Key and Secret from the credentials section.
 
-**Q: What is my Appcues Account ID?**
-Your Account ID is a unique numeric identifier for your Appcues account. You can find it in the URL of your Appcues Studio (e.g., studio.appcues.com/accounts/YOUR_ID) or in your Account Settings.
+**Q: Can I check flow completion rates via AI?**
+Yes! The `list_flows` tool allows your agent to retrieve completion and interaction metadata for all your active experiences.
 
-**Q: Does this server support the EU region?**
-Yes, you can configure the `APPCUES_REGION` environment variable to `eu` if your account is hosted in the Appcues European data center.
+**Q: How do I list my user segments?**
+Use the `list_segments` tool to retrieve your complete directory along with the unique identifiers for all managed targeting groups.
 
 
 ## Installation & Usage

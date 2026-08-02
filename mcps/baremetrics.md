@@ -35,6 +35,8 @@ Unlock the pulse of your subscription business with **Baremetrics**, the leading
 
 
 ## Available Tools (12)
+- **list_plans**: List all defined plans
+- **get_account_check**: Verify Baremetrics connection
 - **get_active_customers**: Convenience tool to get active customer count
 - **get_churn_rate**: Convenience tool to get user churn rate
 - **get_customer**: Get details for a specific customer
@@ -43,10 +45,8 @@ Unlock the pulse of your subscription business with **Baremetrics**, the leading
 - **get_mrr**: Convenience tool to get Monthly Recurring Revenue (MRR)
 - **list_customers**: List all customers in Baremetrics
 - **list_metrics**: List high-level financial metrics summary
-- **list_plans**: List all defined plans
 - **list_sources**: List all available data sources
 - **list_subscriptions**: List all user subscriptions
-- **get_account_check**: Verify Baremetrics connection
 
 
 ## 💬 Prompt Examples

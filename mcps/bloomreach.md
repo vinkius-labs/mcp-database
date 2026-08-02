@@ -35,15 +35,15 @@ Connect your **Bloomreach Engagement** account to any AI agent and orchestrate y
 
 
 ## Available Tools (10)
-- **get_catalog_items**: Retrieve items from a specific data catalog
-- **get_customer_properties**: Export properties for a specific registered customer
-- **list_segmentations**: List all customer segmentations
-- **list_attributes**: List all customer attributes
-- **list_campaigns**: List all marketing campaigns
 - **list_catalogs**: List all Bloomreach data catalogs
+- **get_customer_properties**: Export properties for a specific registered customer
+- **list_campaigns**: List all marketing campaigns
 - **list_event_types**: List all tracked event types
 - **list_properties**: List all catalog properties
 - **list_segments**: List all customer segments
+- **get_catalog_items**: Retrieve items from a specific data catalog
+- **list_segmentations**: List all customer segmentations
+- **list_attributes**: List all customer attributes
 - **list_webhooks**: List configured webhooks
 
 

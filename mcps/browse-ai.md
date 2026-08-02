@@ -7,44 +7,47 @@
 
 **Category:** [data-management](../categories/data-management.md)
 
-Automate web data extraction via Browse AI — run robots, monitor websites, and retrieve captured data directly from any AI agent.
+Extract data from any website without code using trained robots that monitor pages and deliver structured results automatically.
 
 ## Description
-Connect your **Browse AI** account to any AI agent and orchestrate your web scraping, data extraction, and website monitoring workflows through natural conversation.
+Connect your **Browse AI** account to any AI agent and take full control of your no-code web scraping and automated monitoring workflows through natural conversation.
 
 ### What you can do
 
-- **Robot Oversight** — List all your approved robots and retrieve detailed metadata for each scraper.
-- **Task Execution** — Trigger robot runs (tasks) on specific URLs and monitor their progress in real-time.
-- **Data Retrieval** — Retrieve structured data captured by your robots directly into your workspace.
-- **Website Monitoring** — List and create monitor schedules to track changes on any website automatically.
-- **Bulk Operations** — Manage and inspect bulk runs to extract data from multiple sources at once.
-- **System Status** — Check the health and queue status of the Browse AI infrastructure.
+- **Robot Orchestration** — List and manage all web scraping robots in your account programmatically, retrieving detailed configuration and high-fidelity extraction history
+- **Automated Task Execution** — Programmatically trigger new robot runs with custom parameters (e.g., origin URL) to coordinate high-fidelity data collection in real-time
+- **Website Monitoring Intelligence** — Create and manage monitoring schedules to track changes on any website and maintain a perfectly coordinated data pipeline
+- **Event Architecture** — Access and monitor robot webhooks for instant notifications and retrieve detailed log metadata directly through your agent
+- **Financial Visibility** — Programmatically track your account subscription status and credit usage to coordinate your automated data quotas efficiently
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Browse AI Secret API Key
-3. Start extracting web data from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **Secret API Key** from your Browse AI dashboard (Account > API)
+3. Start collecting web data and monitoring sites from Claude, Cursor, or any MCP client
+
+No more manual logging into the dashboard to check individual extraction tasks. Your AI acts as your dedicated data engineer and monitoring coordinator.
 
 ### Who is this for?
 
-- **Data Analysts & Researchers** — quickly trigger data extractions and retrieve results without manual dashboard exports.
-- **Growth Marketers** — monitor competitor prices or new listings straight from their workflow tools.
-- **Developers** — integrate web extraction logic into their coding environment using natural language.
+- **Market Researchers** — instantly trigger price scraping and competitive monitoring using natural language commands
+- **Growth Marketers** — automate lead generation from public directories and track site changes without leaving your workspace
+- **Developers** — integrate high-speed no-code scraping data into custom workflows through simple AI queries
 
 
-## Available Tools (10)
-- **create_monitor**: Create a new monitor schedule for a robot
-- **get_robot**: Get details of a specific robot
-- **get_bulk_run**: Get details of a specific bulk run
-- **get_system_status**: Check Browse AI system and queue status
-- **get_task**: Get status and extracted data for a task
-- **list_bulk_runs**: List all bulk runs for a robot
-- **list_monitors**: List all monitors for a specific robot
-- **list_robots**: List all approved robots
-- **list_tasks**: List all tasks for a specific robot
-- **run_robot**: Run a robot to extract data (creates a task)
+## Available Tools (12)
+- **create_monitor**: Add new schedule
+- **remove_webhook**: Delete robot webhook
+- **get_user_profile**: Get account info
+- **get_robot_details**: Get robot info
+- **get_usage_quotas**: Check credit balance
+- **get_run_status**: Check task progress
+- **list_bulk_operations**: List bulk task runs
+- **list_active_monitors**: List scheduled scrapers
+- **list_robot_history**: List past runs
+- **list_robot_webhooks**: Get event configs
+- **trigger_robot_run**: Start scraping task
+- **list_robots**: List scraping robots
 
 
 ## 💬 Prompt Examples
@@ -52,38 +55,38 @@ Connect your **Browse AI** account to any AI agent and orchestrate your web scra
 Here are some examples of how you can interact with the **Browse AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my approved web scraping robots."
+> "List all available scraping robots in my account."
 
 **🤖 AI Agent:**
-> I've retrieved your robots. You have 3 active robots: 'Amazon Price Tracker' (ID: rob_1), 'LinkedIn Lead Extractor' (ID: rob_2), and 'Real Estate Monitor' (ID: rob_3).
+> I've retrieved your robots. You currently have 5 active scrapers, including 'Price Monitor' (ID: rob_123) and 'Lead Extractor'. Which one would you like to execute or inspect?
 
 ---
 
 **👤 You:**
-> "Run robot rob_123 on https://example.com/product."
+> "Trigger robot 'rob_123' to scrape 'https://vinkius.com/pricing'."
 
 **🤖 AI Agent:**
-> Task created! Robot rob_123 is now processing the URL. You can check the progress and results using task ID task_998877.
+> Scraping task triggered! I've initiated a new run for robot rob_123 with your custom URL. The task ID is 'task_456'. I'll monitor the progress and notify you once the results are ready.
 
 ---
 
 **👤 You:**
-> "Retrieve the data from task task_99283."
+> "Check the status and results for task 'task_456'."
 
 **🤖 AI Agent:**
-> Task task_99283 is successful. Captured data includes: Product Name: 'Modern Lamp', Price: '$45.00', Stock: 'In Stock'. Would you like the full JSON?
+> Fetching results... Task task_456 has successfully 'Finished'. I've retrieved 12 data points including plan names and monthly prices. Would you like the full high-fidelity JSON export?
 
 
 ## ❓ FAQ
 
-**Q: Can I trigger a data extraction for a specific URL?**
-Yes! Use the `run_robot` tool with the Robot ID and the target URL (`origin_url`). Your agent will create a new task in Browse AI to extract the data instantly.
+**Q: How do I find my Browse AI Secret API Key?**
+Log in to your account, navigate to **Account** > **API**, and copy your Secret API Key.
 
-**Q: How do I retrieve the data once a robot finishes its task?**
-Simply ask the agent to `get_task` and provide the Task ID. If the status is 'successful', it will return the JSON structure containing all the captured data fields.
+**Q: Can I override the origin URL via AI?**
+Yes! The `trigger_robot_run` tool accepts a `jsonInput` parameter where you can provide an `originUrl` to override the robot's default settings.
 
-**Q: Can I list all the robots I have trained in my account?**
-Yes. Use the `list_robots` tool. It will retrieve all the approved robots currently available in your Browse AI dashboard, including their names and unique IDs.
+**Q: How do I check my remaining credits?**
+Use the `get_usage_quotas` tool to retrieve information about your current subscription and remaining credits directly from the platform.
 
 
 ## Installation & Usage

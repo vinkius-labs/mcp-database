@@ -33,18 +33,18 @@ Connect your **AWeber** account to any AI agent and manage your entire email mar
 
 
 ## Available Tools (12)
-- **add_subscriber**: Add a new subscriber to a list
 - **find_subscriber**: Find a subscriber by email across the entire account
 - **get_account_check**: Verify AWeber connection and list available accounts
 - **get_account**: Get details for a specific AWeber account
 - **get_broadcast_stats**: Get engagement statistics for a specific broadcast
-- **get_list**: Get details for a specific mailing list
-- **list_accounts**: List all accounts associated with the authenticated user
 - **list_broadcasts**: List all sent or scheduled broadcasts
 - **list_campaigns**: List automated campaigns
 - **list_lists**: List all mailing lists for an account
 - **list_subscribers**: List subscribers for a specific list
 - **update_subscriber**: Update an existing subscriber details
+- **add_subscriber**: Add a new subscriber to a list
+- **get_list**: Get details for a specific mailing list
+- **list_accounts**: List all accounts associated with the authenticated user
 
 
 ## 💬 Prompt Examples

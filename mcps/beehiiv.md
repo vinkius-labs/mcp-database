@@ -37,9 +37,9 @@ Eliminate the friction of switching tabs between IDEs and your ESP. Keep writing
 
 ## Available Tools (10)
 - **list_publications**: List active Beehiiv publications
+- **get_subscription**: Get exact details of a Beehiiv subscription
 - **get_publication**: Get specific Beehiiv publication metadata
 - **list_subscriptions**: List specific Beehiiv active subscribers
-- **get_subscription**: Get exact details of a Beehiiv subscription
 - **create_subscription**: Register a new subscriber explicitly
 - **list_posts**: List explicit newsletter posts natively published
 - **get_post**: Retrieve explicit content of a specific Post

@@ -35,6 +35,7 @@ Connect your **Aporia** workspace to any AI agent to enforce strict guardrails, 
 
 
 ## Available Tools (7)
+- **list_dashboards**: List custom dashboards configured in the Aporia workspace
 - **list_models**: List Aporia monitored machine learning and LLM models
 - **get_model**: Get specific details for a monitored Aporia model
 - **list_monitors**: List configured Aporia monitors for a specific model
@@ -42,7 +43,6 @@ Connect your **Aporia** workspace to any AI agent to enforce strict guardrails, 
 - **validate_guardrails**: g. toxicity, PII, off-topic). Pass an array of messages.
 
 Validate LLM interactions against Aporia guardrails
-- **list_dashboards**: List custom dashboards configured in the Aporia workspace
 - **get_metrics**: Get performance and drift metrics for an Aporia monitored model
 
 

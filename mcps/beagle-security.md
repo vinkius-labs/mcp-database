@@ -34,14 +34,14 @@ Connect your **Beagle Security** account to any AI agent and integrate automated
 
 
 ## Available Tools (10)
+- **get_vulnerabilities**: List vulnerabilities for a test
+- **list_applications**: List security applications
+- **list_projects**: List Beagle Security projects
 - **get_application_details**: Get details of an application
 - **get_project_details**: Get details of a specific project
 - **get_test_results**: Retrieve security test results
 - **get_test_status**: Check status of a security test
 - **get_user_profile**: Get Beagle account profile
-- **get_vulnerabilities**: List vulnerabilities for a test
-- **list_applications**: List security applications
-- **list_projects**: List Beagle Security projects
 - **start_test**: Start a new security test
 - **stop_test**: Stop an active security test
 

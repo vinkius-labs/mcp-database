@@ -7,46 +7,43 @@
 
 **Category:** [sales-automation](../categories/sales-automation.md)
 
-Sales automation and lead generation — manage sequences, leads, and custom signals via AI.
+Supercharge your outbound sales with AI-driven prospecting, multi-channel sequences, and smart lead scoring that closes deals.
 
 ## Description
-Connect your **Amplemarket** account to your AI agent to unlock professional sales automation and lead orchestration. Amplemarket is an all-in-one sales platform that helps B2B teams find and engage their next customers. By integrating Amplemarket with your AI agent, you can automate complex outbound strategies through simple natural language commands. From searching for high-intent B2B contacts to managing outreach sequences and triggering custom Duo Copilot signals, your agent handles your outbound sales strategy seamlessly.
-
-Using this Amplemarket MCP server, your AI agent gains the ability to discover new leads based on specific firmographic or intent criteria. You can search for people by job title, company name, or other professional attributes. Once discovered, your agent can manage these leads by creating lead lists and adding contacts to them, keeping your prospecting efforts organized. This powerful integration between Amplemarket and your AI agent ensures that your sales pipeline is always full of high-quality prospects.
-
-Furthermore, the Amplemarket integration allows your AI agent to orchestrate outreach sequences. You can list available sequences and programmatically add new leads to them, ensuring consistent follow-ups without manual intervention. For advanced sales playbooks, your agent can trigger custom signals in Duo Copilot by pushing dynamic data entries via webhook tokens. This enables highly personalized and automated engagement strategies that adapt to your leads' behavior in real-time.
+Connect your **Amplemarket** account to any AI agent and take full control of your outbound sales engagement and high-fidelity lead enrichment workflows through natural conversation.
 
 ### What you can do
 
-- **Lead Discovery** — Search for people and retrieve detailed contact profiles using specific firmographic or intent criteria directly through your AI agent.
-- **List Management** — Create and manage lead lists to organize your prospecting efforts within Amplemarket effortlessly.
-- **Sequence Orchestration** — List available outreach sequences and add new leads to them programmatically using natural language.
-- **Custom Signals (Duo Copilot)** — Trigger custom automated playbooks by pushing dynamic data entries via webhook tokens to Amplemarket's Duo Copilot.
-- **Sales Insights** — Quickly look up contact details or identify active sequences directly from your chat interface with the help of your AI agent.
+- **Lead & Company Enrichment** — Programmatically retrieve verified email addresses and deep firmographic data for any B2B contact or company domain in real-time
+- **Outbound Sequence Intelligence** — Monitor the status and performance of your active sales sequences and retrieve high-fidelity campaign metrics directly through your agent
+- **CRM Discovery** — Access complete directories of your saved sales contacts and retrieve granular profile metadata to coordinate your outreach strategy perfectly
+- **Deliverability Oversight** — Access and monitor your exclusion lists and opt-out directories to maintain high-fidelity email health and sender reputation
+- **Infrastructure Monitoring** — Verify API connectivity and retrieve account-level metadata directly through your agent for instant operational reporting
 
 ### How it works
 
-1. **Subscribe** — Add the Amplemarket MCP server to your AI agent's workspace.
-2. **Authenticate** — Enter your Amplemarket API Key to securely connect your account.
-3. **Engage** — Start managing your sales outreach and prospecting through Claude, Cursor, or any MCP-compatible client using natural conversation.
+1. Subscribe to this server
+2. Retrieve your **API Key** from your Amplemarket dashboard (Settings > API)
+3. Start orchestrating your outbound growth from Claude, Cursor, or any MCP client
+
+No more manual toggling between sales tools or digging through complex CSV exports. Your AI acts as your dedicated sales analyst and outreach coordinator.
 
 ### Who is this for?
 
-- **Sales Development Reps (SDRs)** — Automate lead addition to sequences and research prospects effortlessly using an AI agent.
-- **Sales Managers** — Monitor active sequences and manage lead lists on the fly within Amplemarket.
-- **Growth Hackers** — Trigger Custom Signals based on external intent data to launch personalized playbooks via your AI agent.
-- **RevOps Specialists** — Verify API integrations and inspect JSON lead profiles using simple commands in your chat interface.
+- **Sales Development (SDRs)** — instantly enrich prospect profiles and verify sequence statuses using natural language commands
+- **Revenue Operations (RevOps)** — monitor global exclusion lists and campaign performance without leaving your creative workspace
+- **Growth Marketers** — automate lead enrichment into custom data pipelines through simple AI queries
 
 
-## Available Tools (8)
-- **search_people**: Search for B2B contacts
-- **find_person**: Find specific person
-- **list_lead_lists**: List lead lists
-- **create_lead_list**: Create a lead list
-- **add_leads_to_list**: Add leads to a list
+## Available Tools (6)
+- **enrich_company**: Enrich a company
+- **enrich_person**: Provide at least one.
+
+Enrich a person
+- **get_contact**: Get contact details
+- **list_contacts**: List all contacts
+- **list_exclusions**: List excluded emails
 - **list_sequences**: List active sequences
-- **add_leads_to_sequence**: Add leads to sequence
-- **trigger_custom_signal**: Trigger custom signal
 
 
 ## 💬 Prompt Examples
@@ -54,38 +51,38 @@ Furthermore, the Amplemarket integration allows your AI agent to orchestrate out
 Here are some examples of how you can interact with the **Amplemarket** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Search for people with job title 'VP of Sales'."
+> "Enrich the B2B contact info for 'jane.smith@example.com'."
 
 **🤖 AI Agent:**
-> I've searched for 'VP of Sales' in Amplemarket. I found 15 matching profiles. The top results include executives from tech companies. Would you like me to add these profiles to a specific lead list?
+> Enrichment complete! For Jane Smith, I've identified a verified LinkedIn profile and her current role as 'Head of Sales'. Would you like the detailed firmographic metadata for her company?
 
 ---
 
 **👤 You:**
-> "List my active outreach sequences."
+> "List all active outbound sequences and their engagement rates."
 
 **🤖 AI Agent:**
-> I've retrieved your Amplemarket sequences. You currently have 3 active sequences: 'Q1 Enterprise Outreach', 'Inbound Demo Follow-up', and 'Webinar Attendees'. Which sequence would you like to inspect?
+> I've retrieved your active sequences. You currently have 3 campaigns running, with 'Founder Outreach' showing a 15% reply rate. Shall I retrieve the high-fidelity detailed logs for that sequence?
 
 ---
 
 **👤 You:**
-> "Trigger custom signal 'sig_123' with email 'lead@example.com' and variable 'Product A'."
+> "Check if 'competitor.com' is on my exclusion list."
 
 **🤖 AI Agent:**
-> I've successfully pushed the data entry to Amplemarket's custom signal sig_123. Duo Copilot will now evaluate the signal and automatically generate the personalized sequence for lead@example.com based on your playbook rules.
+> Scanning exclusion architecture... Yes, 'competitor.com' is currently on your opt-out list and is excluded from all automated outreach. Need help managing any other B2B exclusions?
 
 
 ## ❓ FAQ
 
-**Q: Can I target specific industries with my lead search?**
-Yes! You can use your AI agent to search for people by job title, company name, and other intent-based signals within the Amplemarket database.
+**Q: How do I find my Amplemarket API Key?**
+Log in to your account, navigate to **Settings** > **API**, and generate or copy your unique secret key.
 
-**Q: How does the Duo Copilot signal work?**
-Duo Copilot uses Custom Signals to trigger automated playbooks. Your agent sends dynamic data to a specific signal token, and Amplemarket handles the personalized engagement logic.
+**Q: Can I enrich a person using LinkedIn?**
+Yes! The `enrich_person` tool allows you to provide either an email or a LinkedIn URL to retrieve the most current B2B metadata.
 
-**Q: Does adding a lead to a sequence update existing data?**
-No, the sequence orchestration tool only adds new leads to the specified sequence. It does not modify existing lead information already present in Amplemarket.
+**Q: How do I check my exclusion list?**
+Use the `list_exclusions` tool to retrieve all emails and domains currently blocked from your automated sales engagement program.
 
 
 ## Installation & Usage

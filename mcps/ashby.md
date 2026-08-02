@@ -7,40 +7,45 @@
 
 **Category:** [human-resources](../categories/human-resources.md)
 
-Manage your recruiting pipeline with Ashby — track jobs, candidates, and applications via AI.
+Hire top talent faster with an all-in-one recruiting platform that combines ATS, scheduling, and hiring analytics.
 
 ## Description
-The **Ashby MCP Server** provides a direct natural language interface to your Ashby recruiting platform. Empower your AI agent to manage your hiring pipeline, from job listing analysis to candidate search and application tracking.
+Connect your **Ashby** account to any AI agent and take full control of your recruiting pipeline and candidate experience through natural conversation.
 
-### Key Features
+### What you can do
 
-- **Job Management** — List all open, closed, and archived jobs, and retrieve detailed metadata for any specific position.
-- **Candidate Sourcing** — Search for candidates by name or email and access full profiles, including tags and contact details.
-- **Application Tracking** — Monitor the status of job applications and filter by job ID or workflow stage (e.g., Hired, Lead).
-- **Interview Oversight** — Retrieve lists of scheduled interviews to stay on top of your recruiting calendar.
-- **Search Intelligence** — Use powerful search tools to quickly find the right talent or job openings in your organization.
-- **Secure Integration** — Uses secure HTTP Basic Authentication with your Ashby API key.
+- **Candidate Orchestration** — List and manage candidate profiles programmatically, including creating new records and retrieving high-fidelity profile metadata
+- **Application Lifecycle Management** — Monitor job applications and retrieve detailed status metrics for specific candidates to coordinate your hiring funnel in real-time
+- **Interview Intelligence** — Access scheduled interviews and retrieve submitted high-fidelity feedback reports to summarize performance and sentiment
+- **Job & Department Visibility** — Retrieve complete directories of open jobs, departments, and hiring managers to maintain a perfectly coordinated organizational view
+- **User & Location Monitoring** — Access your internal recruiter directory and physical office locations directly through your agent for instant operational reporting
+
+### How it works
+
+1. Subscribe to this server
+2. Retrieve your **API Key** from the Ashby dashboard (Admin > API Keys)
+3. Start managing your talent pipeline from Claude, Cursor, or any MCP client
+
+No more manual toggling between browser tabs to check a candidate's status or feedback. Your AI acts as your dedicated talent coordinator and recruiting architect.
 
 ### Who is this for?
 
-- **Recruiters** — Quickly audit your pipeline and candidate statuses without switching between multiple tabs.
-- **Hiring Managers** — Review candidate profiles and job details using AI-assisted summaries during your planning sessions.
-- **Talent Ops** — Monitor hiring trends and ensure all applications are being processed efficiently.
+- **Recruiters & Sourcers** — instantly retrieve candidate summaries and update application stages using natural language commands
+- **Hiring Managers** — check interview feedback and pipeline health across departments without leaving your creative workspace
+- **HR Operations** — automate the oversight of job postings and user permissions through simple AI queries
 
 
 ## Available Tools (10)
-- **get_account_check**: Verify Ashby account connection
-- **get_application_info**: Get details for a specific application
-- **list_candidates**: List all candidates in Ashby
-- **get_candidate_info**: Get detailed information for a specific candidate
-- **get_job_info**: Get detailed information for a specific job
-- **list_applications**: List all job applications
-- **list_interviews**: List all interviews
-- **list_jobs**: Supports status filtering.
-
-List all job listings in Ashby
-- **search_candidates**: Search for candidates by email or name
-- **search_jobs**: Search for jobs by title
+- **create_ashby_candidate**: Create candidate
+- **list_ashby_feedback**: List feedback
+- **list_ashby_interviews**: List interviews
+- **get_ashby_application**: Get application details
+- **get_ashby_candidate**: Get candidate details
+- **get_ashby_job**: Get job details
+- **list_ashby_applications**: List applications
+- **list_ashby_candidates**: List candidates
+- **list_ashby_jobs**: List jobs
+- **list_ashby_users**: List users
 
 
 ## 💬 Prompt Examples
@@ -48,38 +53,38 @@ List all job listings in Ashby
 Here are some examples of how you can interact with the **Ashby** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all currently opened jobs in Ashby."
+> "List all active candidates in my Ashby recruiting pipeline."
 
 **🤖 AI Agent:**
-> I've retrieved your open jobs. You have 4 opened positions: 'Senior Frontend Engineer', 'Product Designer', 'Customer Success Manager', and 'Sales Lead'.
+> I've retrieved your candidate directory. You currently have 12 active candidates, including @user1 and @user2. Would you like to see the application status for a specific person?
 
 ---
 
 **👤 You:**
-> "Search for a candidate named 'John Doe'."
+> "Show the latest interview feedback for candidate ID 'cand_123'."
 
 **🤖 AI Agent:**
-> I found 1 candidate matching 'John Doe' (ID: cand_123). He is currently tagged with 'Engineering' and 'Referral'.
+> Fetching feedback records... For candidate cand_123, the last interview report from @user3 highlights strong technical skills and a 'Recommend' rating. Need the high-fidelity detailed summary?
 
 ---
 
 **👤 You:**
-> "Show me the details of application 'app_998877'."
+> "Create a new candidate profile for 'Jane Smith' (jane@example.com)."
 
 **🤖 AI Agent:**
-> Application 'app_998877' is for the 'Senior Frontend Engineer' role. The current status is 'Technical Interview' and it was created on Feb 1st.
+> Candidate created! Jane Smith has been successfully added to your Ashby account (ID: cand_456). She is now available for job linking and interview scheduling. Shall I list your open jobs for her?
 
 
 ## ❓ FAQ
 
 **Q: How do I find my Ashby API Key?**
-Log in to Ashby, go to **Admin > API Keys**, and click **Create API Key**. Ensure you grant the necessary permissions (e.g., `jobsRead`, `candidatesRead`).
+Log in as an Admin, navigate to **Admin** > **API Keys**, and generate a new key for your integration.
 
-**Q: Why does this server use POST for all requests?**
-The Ashby API is designed as an RPC-style API where even data retrieval (reading) endpoints require a POST request with a JSON body.
+**Q: Can I retrieve interview feedback via AI?**
+Yes! The `list_ashby_feedback` tool allows your agent to retrieve high-fidelity feedback reports submitted by interviewers.
 
-**Q: Can I search for candidates by email?**
-Yes, use the `search_candidates` tool and provide the `email` parameter to find a specific candidate in your database.
+**Q: How do I create a new candidate record?**
+Use the `create_ashby_candidate` tool and provide a JSON object with the candidate's name and contact details programmatically.
 
 
 ## Installation & Usage

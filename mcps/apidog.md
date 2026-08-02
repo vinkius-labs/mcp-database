@@ -33,10 +33,10 @@ Connect your **Apidog** account to your AI agent and seamlessly access your API 
 
 
 ## Available Tools (5)
-- **list_projects**: List all API projects in the connected Apidog organization
 - **list_endpoints**: List all API endpoints defined within a specific Apidog project
 - **get_endpoint**: Fetch the complete schema of a single API endpoint
 - **list_schemas**: List all data model schemas (DTOs, entities) defined in an Apidog project
+- **list_projects**: List all API projects in the connected Apidog organization
 - **export_openapi**: Export the full OpenAPI 3.0 specification of an Apidog project as JSON
 
 
