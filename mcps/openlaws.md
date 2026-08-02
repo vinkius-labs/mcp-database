@@ -39,23 +39,25 @@ No more manual legal research across fragmented government websites. Your AI act
 
 
 ## Available Tools (14)
-- **get_caselaw_opinion**: Use this to get the complete court opinion after finding it via search_caselaw.
-The response includes the full opinion text, court details, date, citations, and parties involved.
-
-Get a specific case law opinion by its ID
 - **get_constitution**: Use this to get the complete provision content after finding it via search_constitutions.
 The response includes rich text content, article/section information, and amendments history.
 
 Get a specific constitution provision by its ID
-- **get_jurisdiction**: Use the jurisdiction_id from list_jurisdictions to inspect details before scoping searches.
+- **get_statute_history**: This allows you to see how the law has changed over time.
+Currently available for federal laws only (USC - United States Code).
+Use the statute_id from search_statutes to view the legislative history and amendments.
 
-Get details of a specific jurisdiction
-- **get_recent_updates**: You can view updates across all jurisdictions or filter to a specific state/federal level.
-This is useful for compliance monitoring and staying current with legislative changes.
-Optionally specify jurisdiction ID and limit the number of results.
-Example: check what changed in California employment law this month, or monitor federal regulatory updates.
+Get historical versions of a federal statute
+- **validate_citation**: This tool helps identify malformed citations and find the authoritative source document.
+Supports citations from all 50 states, DC, Puerto Rico, and federal sources.
+The citation parameter should be a standard legal citation format (e.g., "42 U.S.C. § 1983", "Brown v. Board of Education, 347 U.S. 483").
+Use this to validate citations in legal documents, spreadsheets, or databases before relying on them.
 
-Get recent legal updates across jurisdictions or in a specific jurisdiction
+Validate a legal citation and find its original source
+- **get_caselaw_opinion**: Use this to get the complete court opinion after finding it via search_caselaw.
+The response includes the full opinion text, court details, date, citations, and parties involved.
+
+Get a specific case law opinion by its ID
 - **get_redline_comparison**: This shows exactly what changed between legislative sessions or amendment cycles.
 Currently available for federal laws only (USC).
 Optionally specify from and to version dates. If not specified, compares the two most recent versions.
@@ -66,11 +68,15 @@ Get redline comparison between two versions of a federal statute
 The response includes rich text content, citations, and regulatory context.
 
 Get a specific regulation by its ID
-- **get_statute_history**: This allows you to see how the law has changed over time.
-Currently available for federal laws only (USC - United States Code).
-Use the statute_id from search_statutes to view the legislative history and amendments.
+- **get_jurisdiction**: Use the jurisdiction_id from list_jurisdictions to inspect details before scoping searches.
 
-Get historical versions of a federal statute
+Get details of a specific jurisdiction
+- **get_recent_updates**: You can view updates across all jurisdictions or filter to a specific state/federal level.
+This is useful for compliance monitoring and staying current with legislative changes.
+Optionally specify jurisdiction ID and limit the number of results.
+Example: check what changed in California employment law this month, or monitor federal regulatory updates.
+
+Get recent legal updates across jurisdictions or in a specific jurisdiction
 - **get_statute**: Use this to get the complete statute content after finding it via search_statutes.
 The response includes rich text content, citations, effective dates, and annotations.
 
@@ -105,12 +111,6 @@ Results include statute text, citations, effective dates, and jurisdiction infor
 Example: search for "data privacy" across all jurisdictions, or "employment" in California only.
 
 Search statutes by keyword across jurisdictions
-- **validate_citation**: This tool helps identify malformed citations and find the authoritative source document.
-Supports citations from all 50 states, DC, Puerto Rico, and federal sources.
-The citation parameter should be a standard legal citation format (e.g., "42 U.S.C. § 1983", "Brown v. Board of Education, 347 U.S. 483").
-Use this to validate citations in legal documents, spreadsheets, or databases before relying on them.
-
-Validate a legal citation and find its original source
 
 
 ## 💬 Prompt Examples

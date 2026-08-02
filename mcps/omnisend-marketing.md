@@ -47,8 +47,8 @@ Get account usage metrics
 - **list_contacts**: List marketing contacts
 - **list_custom_events**: List custom tracking events
 - **list_signup_forms**: List signup and popup forms
-- **list_ecommerce_orders**: List e-commerce orders
 - **list_audience_segments**: List audience segments
+- **list_ecommerce_orders**: List e-commerce orders
 
 
 ## 💬 Prompt Examples

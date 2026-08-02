@@ -34,7 +34,6 @@ Connect your **PhantomBuster** account to any AI agent and take full control of 
 
 
 ## Available Tools (10)
-- **abort_phantom**: Stop a running Phantom
 - **get_phantombuster_account**: Get account settings and usage info
 - **get_phantom_setup**: Get configuration arguments for a Phantom
 - **get_phantom_output**: Get output/results from a Phantom
@@ -44,6 +43,7 @@ Connect your **PhantomBuster** account to any AI agent and take full control of 
 - **list_containers**: List all Phantom containers
 - **list_phantoms**: List all Phantom agents
 - **list_workflows**: List all automation workflows
+- **abort_phantom**: Stop a running Phantom
 
 
 ## 💬 Prompt Examples

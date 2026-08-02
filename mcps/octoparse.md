@@ -7,58 +7,45 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Connect your AI agent to Octoparse to trigger cloud web scraping tasks, monitor crawler statuses, and retrieve scraped data directly into chat.
+Scrape data from any website visually with a no-code web scraper that handles pagination, login, and JavaScript rendering.
 
 ## Description
-Connect your **Octoparse** framework to your AI agent and turn cloud-based web scraping into a fully conversational command center.
+Connect your **Octoparse** account to any AI agent and take full control of your web data orchestration through natural conversation. Octoparse is the premier no-code web scraping tool, and this integration allows you to retrieve task metadata, trigger cloud extractions, and ingest structured web data directly from your chat interface.
 
 ### What you can do
 
-- **Task Execution** — Trigger the launch engine using `start_task` whenever data refresh is needed, or invoke `stop_task` to halt runaway crawlers instantly.
-- **Status Monitoring** — Keep a pulse on active bots by calling `get_task_status`, or systematically drill down through your project taxonomy via `list_task_groups` and `list_tasks`.
-- **Data Ingestion** — Dump the latest extracted web rows natively into the AI's context using `get_task_data`, allowing the LLM to format, structure, or summarize the results immediately.
-- **Token Operations** — Authenticate dynamically utilizing `get_token` with your core credentials.
+- **Task & Group Orchestration** — List all managed scraping tasks and retrieve detailed group metadata programmatically to ensure your data foundation is always synchronized.
+- **Cloud Extraction Control** — Start and stop cloud-based scraping tasks directly from the AI interface to rapidly gather real-time data from any website.
+- **Extraction Intelligence** — Retrieve extracted data in bulk or filter for 'non-exported' records via natural language to drive better research efficiency.
+- **Status Monitoring Oversight** — Access real-time task statuses (Running, Completed, Stopped) using simple AI commands to ensure your data collection is always optimized.
+- **Operational Monitoring** — Track system responses and manage data status updates to maintain a high-fidelity interaction history.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Premium Octoparse API Credentials (Username/Email and Password)
-3. Command your agent (e.g., Claude or Cursor) to spin up scrapers and read the downloaded data directly onto your IDE
+2. Enter your Octoparse OpenAPI Access Token from your profile settings
+3. Start managing your web scrapers from Claude, Cursor, or any MCP-compatible client
+
+No more manual exporting of CSV results for basic checks. Your AI acts as a dedicated data researcher or extraction lead.
 
 ### Who is this for?
 
-- **Data Engineers** — trigger scheduled pipelines, check extraction states, and dump JSON samples to debug schemas without leaving your terminal.
-- **Growth Hackers** — quickly spin up an Amazon or LinkedIn scraper, grab the extracted table data, and have the AI formulate email lists simultaneously.
-- **Business Analysts** — fetch the competitive pricing matrices scraped overnight and ask the AI to summarize price drops directly in the conversation.
+- **Market Researchers** — quickly retrieve competitor data and monitor pricing trends without switching apps.
+- **Data Analysts** — automate the ingestion of web data and track extraction health via natural conversation.
+- **Developers** — integrate real-time web scraping and data retrieval directly within the chat.
 
 
-## Available Tools (10)
-- **clear_task_data**: Done to purge testing footprints before production crawls.
+## Available Tools (8)
+- **stop_task**: Stop a scraping task
+- **get_task_status**: Get status of a scraping task
+- **list_task_groups**: List all task groups
+- **list_tasks**: Can be filtered by task group ID.
 
-Delete all securely stored data for an Octoparse task
-- **get_task_data**: Use offset-based pagination strictly to prevent memory crash exceptions (max 1000 limit).
-
-Export un-exported data from a completed Octoparse scraping task
-- **get_task_status**: Get the current running status of an Octoparse cloud task
-- **get_token**: 0 password grant. Returns an access_token. The access_token must be stored and reused for API calls until expiration.
-
-Obtain an OAuth 2.0 access token from Octoparse
-- **list_task_groups**: Use these IDs to filter executing scraping tasks nested inside a specific folder limit.
-
-List all task groups (folders) in the Octoparse account
-- **list_tasks**: Each task includes a taskId, status, and creation date. Use the taskId for starting or polling data.
-
-List all configured cloud scraping tasks on Octoparse
-- **mark_data_exported**: Execute this immediately after a successful `get_task_data`.
-
-Mark all currently stored data in an Octoparse task as extracted
-- **start_task**: Task changes status to Running instantly.
-
-Start a cloud scraping task on Octoparse
-- **stop_task**: Stop a running Octoparse cloud task
-- **update_task_params**: g. changing the core search URL or injected keywords) without opening the Octoparse IDE cleanly scaling parameterized bots.
-
-Dynamically update URL or parameter constraints driving a task
+List tasks
+- **get_new_data**: Get new (non-exported) data from a task
+- **get_task_data**: Get extracted data from a task by offset
+- **start_task**: Start a scraping task
+- **update_data_status**: Mark data as exported
 
 
 ## 💬 Prompt Examples
@@ -66,38 +53,38 @@ Dynamically update URL or parameter constraints driving a task
 Here are some examples of how you can interact with the **Octoparse** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Look up task 'LinkedIn Profiles Q4' and tell me how many rows it extracted."
+> "List all my scraping tasks in Octoparse."
 
 **🤖 AI Agent:**
-> The Cloud Agent confirms the task 'LinkedIn Profiles Q4' finished running successfully and acquired `4523` rows of active data.
+> I've retrieved your tasks. You have 5 active scrapers including 'Amazon Monitor' and 'Real Estate Leads'. Which one would you like to start or retrieve data for?
 
 ---
 
 **👤 You:**
-> "Start my Amazon Price Monitor crawler task now."
+> "Start running my Amazon product scraping task and check its current status."
 
 **🤖 AI Agent:**
-> Task started. Your 'Amazon Price Monitor' has been queued to the cloud servers and will begin fetching targeted DOM elements shortly.
+> Task "Amazon Electronics Scraper" (ID: tsk_8921) has been started successfully. Current status: Running. It is processing page 12 of an estimated 85 pages. 264 product records have been extracted so far. Estimated completion: approximately 45 minutes based on current crawl speed.
 
 ---
 
 **👤 You:**
-> "Get the data extracted from task 'Real Estate NYC' and format it as a markdown table."
+> "Get the extracted data from my latest completed scraping task."
 
 **🤖 AI Agent:**
-> I've fetched the rows successfully. Here is the structured breakdown highlighting the `Address`, `Square Footage`, `Beds`, and estimated `Asking Price`...
+> Fetching results from task "Competitor Pricing Monitor" (ID: tsk_8905), completed 3 hours ago. Retrieved 1,247 records with fields: Product Name, Price, Rating, Review Count, and URL. The first batch of 100 records is ready. Shall I export the full dataset or retrieve the next page of results?
 
 
 ## ❓ FAQ
 
-**Q: Can I have my AI format the scraped JSON into a clean Markdown table?**
-Absolutely. Because Octoparse MCP connects natively via the `get_task_data` capability directly into the AI's isolated context window, the language model can instantly translate cumbersome JSON fields into polished, structured, and legible tabular outputs on demand.
+**Q: Can my AI automatically find the latest extracted data for a specific task?**
+Yes! Use the `get_not_exported_data` tool with the Task ID. Your agent will respond with complete metadata for the newest records that haven't been marked as exported yet in seconds.
 
-**Q: Is it possible to track task progress percentage in the chat?**
-Yes. When you instruct your agent to run `get_task_status`, it fetches the real-time runtime progress metrics from Octoparse's cloud. You'll see whether it's Waiting, Running, or Completed, along with how many rows have been extracted so far.
+**Q: How do I find my Octoparse OpenAPI Access Token?**
+Log in to Octoparse, navigate to the **OpenAPI** section in your profile or developer portal, and follow the instructions to generate a Bearer token using your account credentials.
 
-**Q: Do I need a paid Octoparse plan for API capabilities to work?**
-Yes. Octoparse explicitly limits their Advanced Cloud APIs strictly to their paid subscription levels. A Free tier account will reject the authentication tokens when attempting to fetch the runtime data.
+**Q: Can I start a scraper via the AI?**
+Absolutely. Use the `start_task` tool with your Task ID. The AI will command Octoparse to begin the extraction in the cloud immediately.
 
 
 ## Installation & Usage

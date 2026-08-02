@@ -28,11 +28,11 @@ Connect your **Ordergroove** account to empower your AI agents with advanced sub
 
 
 ## Available Tools (9)
-- **list_customers**: List Ordergroove customers
 - **list_products**: List Ordergroove products
 - **list_subscriptions**: You can filter by customer_id or status.
 
 List Ordergroove subscriptions
+- **list_customers**: List Ordergroove customers
 - **reactivate_subscription**: Reactivate a cancelled subscription
 - **update_subscription**: Update subscription details
 - **cancel_subscription**: Requires a reason.

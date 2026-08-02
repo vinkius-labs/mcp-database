@@ -34,10 +34,9 @@ Connect your **Plausible Analytics** account to any AI agent and take full contr
 
 
 ## Available Tools (10)
-- **get_custom_breakdown**: g., "visit:source", "event:page").
+- **get_aggregate_stats**: , for a period (e.g., "30d", "7d", "day").
 
-Get breakdown by custom property
-- **get_realtime_visitors**: Get current active visitors
+Get aggregate site statistics
 - **get_timeseries_stats**: Get site stats over time
 - **get_top_browsers**: Get visitors by browser
 - **get_top_countries**: Get visitors by country
@@ -45,9 +44,10 @@ Get breakdown by custom property
 - **get_top_os**: Get visitors by operating system
 - **get_top_pages**: Get most visited pages
 - **get_top_sources**: Get top traffic sources
-- **get_aggregate_stats**: , for a period (e.g., "30d", "7d", "day").
+- **get_custom_breakdown**: g., "visit:source", "event:page").
 
-Get aggregate site statistics
+Get breakdown by custom property
+- **get_realtime_visitors**: Get current active visitors
 
 
 ## 💬 Prompt Examples

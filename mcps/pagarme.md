@@ -32,13 +32,13 @@ Connect **Pagar.me** to any AI agent and unlock a powerful Brazilian payment inf
 
 
 ## Available Tools (11)
-- **create_boleto_order**: Create an order paid via Boleto
 - **cancel_order**: Cancel an order
 - **capture_order**: Capture an authorized order
 - **create_customer**: Document can be CPF or CNPJ.
 
 Register a new customer
 - **get_customer**: Get customer details
+- **create_boleto_order**: Create an order paid via Boleto
 - **get_order**: Get details of a specific order
 - **get_subscription**: Get subscription details
 - **list_orders**: List recent orders

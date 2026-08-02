@@ -33,15 +33,12 @@ Bring **ParseHub Cloud Scraping** directly into your AI workflows. Manage pre-co
 
 
 ## Available Tools (10)
-- **cancel_run**: If the run was already scraping pages, partial data may be available. Data from already-scraped pages is preserved and can be retrieved with get_run_data. Use this to stop long-running scrapes or free up queue slots.
-
-Cancel a queued or actively running ParseHub run
-- **delete_run**: Cannot be undone. Use this to clean up old runs and free up storage quota on your account.
-
-Permanently delete a ParseHub run and its extracted data
 - **get_project**: The project_token can be found via list_projects or in the ParseHub desktop client settings tab.
 
 Get detailed configuration of a specific ParseHub project
+- **list_projects**: Each project includes a project_token (unique identifier), title, last_run timestamp, and template configuration. Use the project_token for all subsequent run management operations.
+
+List all ParseHub web scraping projects
 - **get_run_data**: Only works when the run status is "complete" and data_ready is true. The JSON structure mirrors the template selection configuration set up in the ParseHub desktop client.
 
 Download the raw JSON data extracted from a completed ParseHub run
@@ -51,9 +48,12 @@ Check the status of a specific ParseHub run
 - **get_last_ready_data**: Ideal for dashboards or integrations that always want the freshest available data without managing individual run tokens.
 
 Instantly get the latest completed data for a ParseHub project
-- **list_projects**: Each project includes a project_token (unique identifier), title, last_run timestamp, and template configuration. Use the project_token for all subsequent run management operations.
+- **cancel_run**: If the run was already scraping pages, partial data may be available. Data from already-scraped pages is preserved and can be retrieved with get_run_data. Use this to stop long-running scrapes or free up queue slots.
 
-List all ParseHub web scraping projects
+Cancel a queued or actively running ParseHub run
+- **delete_run**: Cannot be undone. Use this to clean up old runs and free up storage quota on your account.
+
+Permanently delete a ParseHub run and its extracted data
 - **list_runs**: Useful for auditing or finding a specific completed run to fetch data from.
 
 Get the history of all runs for a ParseHub project

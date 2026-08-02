@@ -34,12 +34,12 @@ Connect your **Orkes Conductor** cluster to any AI agent and get full visibility
 
 
 ## Available Tools (6)
-- **list_workflow_defs**: List all registered overarching Workflow Definitions via Orkes API
-- **get_workflow_def**: Get a specific Workflow Definition explicitly by name
-- **list_task_defs**: List all explicitly registered Task Definitions via Conductor API
 - **list_running**: List active, running workflow instances by explicit workflow name
 - **get_execution**: Get deep state details of a specific Workflow Execution
 - **search_workflows**: Perform an elastic Search across all Workflow executions
+- **list_workflow_defs**: List all registered overarching Workflow Definitions via Orkes API
+- **get_workflow_def**: Get a specific Workflow Definition explicitly by name
+- **list_task_defs**: List all explicitly registered Task Definitions via Conductor API
 
 
 ## 💬 Prompt Examples
