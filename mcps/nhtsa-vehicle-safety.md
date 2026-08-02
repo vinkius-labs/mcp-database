@@ -34,6 +34,27 @@ Connect to **NHTSA** (National Highway Traffic Safety Administration) and access
 
 
 ## Available Tools (13)
+- **get_complaints_by_vehicle**: Returns complaints filed by vehicle owners including component, failure description, consequences, mileage at failure and date. At least one parameter recommended.
+
+Search consumer complaints by make, model and year
+- **get_makes_for_year**: Useful for discovering which brands were active in a particular year.
+
+Get all manufacturers for a specific model year
+- **get_models_for_make_year**: Useful for discovering what models a brand offered in a particular year.
+
+Get models for a manufacturer in a specific year
+- **get_recalls_by_vehicle**: Returns recall details including campaign number, component affected, summary, remedy, manufacturer, dates and affected vehicle count. At least one parameter (make, model, year) is recommended.
+
+Search safety recalls by make, model and year
+- **get_safety_rating_by_vehicle_id**: Returns overall rating and detailed breakdown by crash type.
+
+Get safety rating for a specific vehicle by NHTSA ID
+- **get_safety_ratings**: Returns overall rating and breakdown by frontal crash, side crash and rollover. If only year provided, returns all vehicles for that year. Add make and model for specific vehicle ratings.
+
+Get NHTSA safety ratings for vehicles
+- **get_vehicle_types_for_make**: g. Passenger Car, Truck, SUV, Motorcycle, Trailer). Useful for discovering what categories a manufacturer produces.
+
+Get vehicle types for a specific manufacturer
 - **get_models_for_make**: Useful for discovering the full lineup of a brand.
 
 Get all models for a specific manufacturer
@@ -49,30 +70,9 @@ Find car seat inspection stations by ZIP code
 - **get_complaint_by_odi**: Returns failure description, consequences, remedy, component, mileage and dates.
 
 Get complaint details by ODI number
-- **get_complaints_by_vehicle**: Returns complaints filed by vehicle owners including component, failure description, consequences, mileage at failure and date. At least one parameter recommended.
-
-Search consumer complaints by make, model and year
-- **get_makes_for_year**: Useful for discovering which brands were active in a particular year.
-
-Get all manufacturers for a specific model year
-- **get_models_for_make_year**: Useful for discovering what models a brand offered in a particular year.
-
-Get models for a manufacturer in a specific year
 - **get_recalls_by_campaign**: Returns component, summary, consequence, remedy, manufacturer notes, dates and affected vehicle count.
 
 Get recall details by campaign number
-- **get_recalls_by_vehicle**: Returns recall details including campaign number, component affected, summary, remedy, manufacturer, dates and affected vehicle count. At least one parameter (make, model, year) is recommended.
-
-Search safety recalls by make, model and year
-- **get_safety_rating_by_vehicle_id**: Returns overall rating and detailed breakdown by crash type.
-
-Get safety rating for a specific vehicle by NHTSA ID
-- **get_safety_ratings**: Returns overall rating and breakdown by frontal crash, side crash and rollover. If only year provided, returns all vehicles for that year. Add make and model for specific vehicle ratings.
-
-Get NHTSA safety ratings for vehicles
-- **get_vehicle_types_for_make**: g. Passenger Car, Truck, SUV, Motorcycle, Trailer). Useful for discovering what categories a manufacturer produces.
-
-Get vehicle types for a specific manufacturer
 
 
 ## 💬 Prompt Examples

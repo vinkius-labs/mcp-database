@@ -38,13 +38,13 @@ Empower your AI agent to orchestrate your enterprise workflows with **Mingdao Cl
 - **add_row**: Add a new record to a worksheet
 - **delete_row**: Delete a record from a worksheet
 - **get_app_info**: Get application summary
-- **get_row_details**: Get row detailed data
 - **get_worksheet_schema**: Get worksheet field schema
 - **list_rows**: List records in a worksheet
 - **list_users**: List application users
 - **list_workflows**: List application workflows
-- **list_worksheets**: List all worksheets in the application
 - **update_row**: Update an existing record
+- **list_worksheets**: List all worksheets in the application
+- **get_row_details**: Get row detailed data
 
 
 ## 💬 Prompt Examples

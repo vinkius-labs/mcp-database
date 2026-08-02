@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire nutritional research workflow w
 
 
 ## Available Tools (6)
-- **get_food_by_barcode**: Get food details by barcode (UPC/EAN)
 - **get_food_details**: Get detailed nutrient information for a specific food ID
 - **get_recipe_details**: Get full details for a specific recipe ID
-- **list_food_categories**: List high-level food categories
 - **search_foods**: Search for food items in the FatSecret database
+- **list_food_categories**: List high-level food categories
+- **get_food_by_barcode**: Get food details by barcode (UPC/EAN)
 - **search_recipes**: Search for recipes by keywords
 
 

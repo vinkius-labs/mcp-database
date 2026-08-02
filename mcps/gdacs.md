@@ -38,9 +38,6 @@ Connect to **GDACS** (Global Disaster Alert and Coordination System) and monitor
 
 
 ## Available Tools (8)
-- **get_latest_droughts**: Returns drought locations, start dates, severity levels, alert levels and affected populations.
-
-Get latest drought events worldwide
 - **get_event_data**: Use the eventid and eventtype from event list results.
 
 Get detailed data for a specific disaster event
@@ -50,6 +47,9 @@ Search disaster events
 - **get_latest_cyclones**: Returns cyclone names, categories, wind speeds, locations, alert levels and forecast tracks.
 
 Get latest tropical cyclones worldwide
+- **get_latest_droughts**: Returns drought locations, start dates, severity levels, alert levels and affected populations.
+
+Get latest drought events worldwide
 - **get_latest_earthquakes**: Returns magnitude, depth, location, alert level and affected countries. Optionally filter by minimum magnitude, alert level and date range.
 
 Get latest earthquakes worldwide

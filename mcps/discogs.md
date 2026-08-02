@@ -59,18 +59,18 @@ Get all versions (pressings) of a master release
 - **get_release**: Returns the release title, artist, tracklist, formats, labels, catalog numbers, release date, country, genres, styles, credits, notes, and marketplace data. This is the most detailed view of a specific physical or digital release. Use this to get complete metadata for cataloging or research.
 
 Get detailed information about a specific release
-- **get_release_stats**: Returns the lowest, median, and highest sale prices, as well as the number of active listings. Useful for understanding rarity, market demand, and fair pricing for collectors.
-
-Get community statistics and marketplace data for a release
 - **get_user_collection**: Returns each release with basic metadata including artist, title, year, and format. Note: only the collection owner can see detailed information including condition, notes, and custom fields. Public collections show limited data. Use pagination to navigate large collections.
 
 Get a user's collection of releases
-- **get_user_profile**: Returns the user's location, homepage, bio, member since date, number of contributions, and collection/wantlist counts. Use this to verify user identity or get an overview of a collector's activity on the platform.
-
-Get a Discogs user's public profile
 - **database_search**: Use the query parameter for free-text search across artists, releases, labels, and tracks. Refine results by type (artist, release, master, label, genre) and filters like genre, style, year, or country. Returns paginated results with basic metadata. Use this as the starting point for most queries. Type parameter accepts: artist, release, master, label, genre.
 
 Search the Discogs database for artists, releases, labels, and more
+- **get_release_stats**: Returns the lowest, median, and highest sale prices, as well as the number of active listings. Useful for understanding rarity, market demand, and fair pricing for collectors.
+
+Get community statistics and marketplace data for a release
+- **get_user_profile**: Returns the user's location, homepage, bio, member since date, number of contributions, and collection/wantlist counts. Use this to verify user identity or get an overview of a collector's activity on the platform.
+
+Get a Discogs user's public profile
 - **get_master_release**: A master release represents the "canonical" version of a release, grouping together all individual pressings and variants. Returns the main artist, title, year, genres, styles, tracklist, and notes. Use this to understand the core creative work independent of specific pressings.
 
 Get information about a master release

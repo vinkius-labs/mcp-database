@@ -37,18 +37,18 @@ Empower your AI agent with the ultimate gaming intelligence via **IGDB**. This u
 - **list_collections**: Get details for a game collection or series
 - **search_covers**: Get cover art for a game
 - **list_release_dates**: Get release dates for a game
-- **get_franchise**: Get details for a game franchise
-- **get_game**: Get full details for a specific game ID
 - **search_games**: Search for video games on IGDB
 - **list_age_ratings**: List common age ratings
 - **list_genres**: g., RPG, Shooter) available in the IGDB database.
 
 List common game genres
-- **list_keywords**: List descriptive keywords
+- **get_franchise**: Get details for a game franchise
+- **get_game**: Get full details for a specific game ID
 - **list_platforms**: g., PS5, Xbox, PC) and their abbreviations.
 
 List gaming platforms
 - **list_themes**: List game themes
+- **list_keywords**: List descriptive keywords
 
 
 ## 💬 Prompt Examples

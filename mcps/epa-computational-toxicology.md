@@ -38,13 +38,13 @@ This tool is essential for toxicologists, environmental scientists, and regulato
 
 
 ## Available Tools (10)
+- **get_exposure_summary**: Retrieve predicted exposure levels and product use data (ExpoCast/CPDat)
+- **get_hazard_summary**: Retrieve a summary of toxicity values and hazard assessment data from ToxValDB
 - **get_bioactivity_summary**: Retrieve a summary of high-throughput screening results from ToxCast/Tox21 assays
 - **get_chemical_details**: Get comprehensive metadata and identification details for a specific chemical using its DTXSID
 - **get_chemical_lists**: Identify which chemical lists (regulatory, research, or commercial) this chemical belongs to
 - **get_chemical_synonyms**: Retrieve all known synonyms and alternative names for a specific chemical
-- **get_exposure_summary**: Retrieve predicted exposure levels and product use data (ExpoCast/CPDat)
 - **get_fate_and_transport**: Retrieve environmental fate and transport data (e.g., half-life, bioconcentration)
-- **get_hazard_summary**: Retrieve a summary of toxicity values and hazard assessment data from ToxValDB
 - **get_physicochemical_properties**: Retrieve predicted and experimental physicochemical properties (e.g., melting point, logP, solubility) for a chemical
 - **search_chemical_by_casrn**: Search for chemicals by their CAS Registry Number (CASRN)
 - **search_chemical_by_name**: Search for chemicals by common, IUPAC, or synonym names in the EPA CompTox database

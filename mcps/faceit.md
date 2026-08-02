@@ -35,6 +35,12 @@ Connect to **Faceit** and access the world's largest competitive gaming platform
 
 
 ## Available Tools (12)
+- **get_hub**: Returns hub name, game, player count, rules, settings and organizer info.
+
+Get details for a specific Faceit hub
+- **get_hub_leaderboard**: Returns player rankings with nicknames, ELO, Faceit level and position.
+
+Get the leaderboard for a specific hub
 - **get_hub_matches**: Returns match IDs, teams, scores, status and timestamps. Filter by type: "all", "upcoming", "ongoing", "past".
 
 Get matches for a specific hub
@@ -63,12 +69,6 @@ Search for tournaments on Faceit
 - **get_games**: Returns game IDs, names, icons and player counts.
 
 Get all supported games on Faceit
-- **get_hub**: Returns hub name, game, player count, rules, settings and organizer info.
-
-Get details for a specific Faceit hub
-- **get_hub_leaderboard**: Returns player rankings with nicknames, ELO, Faceit level and position.
-
-Get the leaderboard for a specific hub
 
 
 ## 💬 Prompt Examples

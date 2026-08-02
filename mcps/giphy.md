@@ -30,8 +30,6 @@ Connect **GIPHY**, the world's largest GIF library, to any AI agent and instantl
 
 ## Available Tools (11)
 - **get_gif_by_id**: Get a specific GIF by its ID
-- **get_gifs_by_ids**: Get multiple GIFs by their IDs
-- **list_gif_categories**: List available GIF categories
 - **random_gif**: Optionally filter by tag or rating.
 
 Get a random GIF
@@ -52,6 +50,8 @@ Convert text to a relevant GIF
 Get currently trending GIFs
 - **trending_searches**: Get currently trending search terms
 - **trending_stickers**: Get currently trending stickers
+- **get_gifs_by_ids**: Get multiple GIFs by their IDs
+- **list_gif_categories**: List available GIF categories
 
 
 ## 💬 Prompt Examples

@@ -34,9 +34,9 @@ Equip your AI agent with real-time legislative intelligence through the **LegiSc
 
 
 ## Available Tools (3)
-- **get_bill_details**: Get details for a specific bill
 - **get_state_master_list**: Get the current master list for a state
 - **search_bills**: Search for legislative bills
+- **get_bill_details**: Get details for a specific bill
 
 
 ## 💬 Prompt Examples

@@ -34,6 +34,9 @@ Connect your AI agent to **Duffel**, the modern infrastructure for travel. This 
 
 
 ## Available Tools (8)
+- **list_aircraft**: Retrieve a list of aircraft used by airlines
+- **list_airlines**: Retrieve a list of airlines
+- **list_flight_orders**: Retrieve a list of all flight bookings (orders)
 - **create_flight_offer_request**: Provide passengers as a JSON array string.
 
 Search for flight offers by specifying origin, destination, and passengers
@@ -41,11 +44,8 @@ Search for flight offers by specifying origin, destination, and passengers
 
 Book a flight by selecting an offer and providing passenger details
 - **pay_for_flight_order**: Process payment for a flight order that was previously put on hold
-- **list_aircraft**: Retrieve a list of aircraft used by airlines
-- **list_airlines**: Retrieve a list of airlines
 - **list_airports**: Retrieve a list of airports
 - **list_flight_offers**: Retrieve all available flight offers for a specific offer request
-- **list_flight_orders**: Retrieve a list of all flight bookings (orders)
 
 
 ## 💬 Prompt Examples

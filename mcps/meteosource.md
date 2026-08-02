@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire meteorological research and wea
 
 
 ## Available Tools (5)
-- **check_api_status**: Check if the MeteoSource service is operational
-- **get_point_forecast**: Get weather forecast for a specific place_id
+- **search_weather_places**: Search for a place by name to get its place_id for forecasts
 - **get_nearest_weather_place**: Find the nearest monitored place by latitude and longitude
 - **get_place_timezone**: Get timezone information for a specific place_id
-- **search_weather_places**: Search for a place by name to get its place_id for forecasts
+- **check_api_status**: Check if the MeteoSource service is operational
+- **get_point_forecast**: Get weather forecast for a specific place_id
 
 
 ## 💬 Prompt Examples
