@@ -34,11 +34,6 @@ Connect your **ZeroHash** API credentials to any AI agent to orchestrate digital
 
 
 ## Available Tools (12)
-- **create_customer**: Create a new customer participant
-- **create_transfer**: Use a unique client_transfer_id for idempotency.
-
-Create an internal transfer between participants/accounts
-- **list_crypto_deposits**: List incoming crypto deposits
 - **execute_quote**: Execute a previously requested quote
 - **get_trade**: Retrieve detailed information for a specific trade
 - **link_external_account**: Link a bank account or blockchain address
@@ -47,6 +42,11 @@ Create an internal transfer between participants/accounts
 
 Get current ZeroHash server time
 - **list_trades**: List trades
+- **create_customer**: Create a new customer participant
+- **create_transfer**: Use a unique client_transfer_id for idempotency.
+
+Create an internal transfer between participants/accounts
+- **list_crypto_deposits**: List incoming crypto deposits
 - **list_accounts**: List accounts and current balances
 - **list_assets**: List supported assets on ZeroHash
 - **request_quote**: Request a quote for a trade
