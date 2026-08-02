@@ -35,7 +35,12 @@ Connect your **Blackboard Learn** environment to any AI agent to streamline educ
 
 
 ## Available Tools (20)
+- **list_courses**: List courses
+- **create_calendar_item**: Create a calendar item
+- **create_course_announcement**: Create a course announcement
+- **create_meeting**: Create a new attendance meeting
 - **create_user**: Create a new user
+- **delete_calendar_item**: Delete a calendar item
 - **enroll_user**: Enroll a user in a course
 - **get_column_grades**: Get grades for a column
 - **get_course**: Get course details
@@ -44,17 +49,12 @@ Connect your **Blackboard Learn** environment to any AI agent to streamline educ
 - **list_system_announcements**: List system announcements
 - **list_calendar_items**: List calendar items
 - **list_course_memberships**: List course memberships
-- **list_courses**: List courses
 - **list_gradebook_columns**: List gradebook columns
 - **list_meetings**: List all attendance meetings for a course
 - **list_user_courses**: List courses for a specific user
 - **list_users**: List users
 - **mark_attendance**: Mark attendance for a user
 - **update_course_announcement**: Update a course announcement
-- **create_calendar_item**: Create a calendar item
-- **create_course_announcement**: Create a course announcement
-- **create_meeting**: Create a new attendance meeting
-- **delete_calendar_item**: Delete a calendar item
 
 
 ## 💬 Prompt Examples

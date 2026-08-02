@@ -36,14 +36,14 @@ Your AI acts as a virtual operator, capable of spinning up meeting rooms for sup
 
 
 ## Available Tools (50)
+- **delete_room**: Delete a room
+- **delete_webhook**: Delete a webhook
 - **create_batch_job**: Submit a batch processor job
 - **create_meeting_token**: Create a meeting token
 - **create_room**: Create a new room
 - **create_webhook**: Create a webhook
 - **delete_batch_job**: Delete a batch job
 - **delete_recording**: Delete a recording reference
-- **delete_room**: Delete a room
-- **delete_webhook**: Delete a webhook
 - **eject_participants**: Kick participants from a room
 - **get_batch_job_access_link**: Get download links for finished jobs
 - **get_batch_job**: Get batch job status

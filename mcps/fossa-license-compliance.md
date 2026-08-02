@@ -34,11 +34,11 @@ Connect your **FOSSA** account to any AI agent to automate open-source license c
 
 
 ## Available Tools (6)
+- **list_revisions**: List revisions of a project
 - **list_projects**: Supports filtering and pagination.
 
 List all projects in your organization
 - **get_revision_dependencies**: Get dependencies for a specific revision
-- **list_revisions**: List revisions of a project
 - **check_vulnerabilities**: Uses a POST request but only reads data.
 
 Check vulnerabilities by dependency locators

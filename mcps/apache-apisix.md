@@ -34,6 +34,37 @@ Connect your **Apache APISIX** instance to any AI agent to orchestrate high-perf
 
 
 ## Available Tools (50)
+- **delete_ssl**: Delete an APISIX SSL certificate
+- **delete_upstream**: Delete an APISIX Upstream
+- **dump_control_discovery**: Memory dump of discovered service endpoints
+- **dump_control_routes**: Dump all configured Routes from the Control API
+- **dump_control_services**: Dump all configured Services from the Control API
+- **get_consumer_group**: Get a specific APISIX Consumer Group by ID
+- **get_consumer**: Get a specific APISIX Consumer by username
+- **get_control_schema**: Get JSON schemas for all resources and enabled plugins
+- **get_plugin_config**: Get a specific APISIX Plugin Config by ID
+- **get_proto**: Get a specific APISIX Proto by ID
+- **get_ssl**: Get a specific APISIX SSL certificate by ID
+- **list_consumers**: List APISIX Consumers
+- **list_global_rules**: List APISIX Global Rules
+- **list_plugin_configs**: List APISIX Plugin Configs
+- **list_protos**: List APISIX Protos (Protocol Buffers)
+- **list_routes**: List APISIX Routes
+- **list_services**: List APISIX Services
+- **list_ssls**: List APISIX SSL certificates
+- **list_stream_routes**: List APISIX Stream Routes (L4 routing)
+- **put_route**: Create or update an APISIX Route
+- **put_service**: Create or update an APISIX Service
+- **put_ssl**: Create or update an APISIX SSL certificate
+- **put_upstream**: Create or update an APISIX Upstream
+- **trigger_control_gc**: Trigger full garbage collection in the HTTP Lua VM
+- **delete_stream_route**: Delete an APISIX Stream Route
+- **dump_control_plugin_metadatas**: Dump all plugin metadata from the Control API
+- **get_control_resource_healthcheck**: Get health status for a specific resource
+- **list_consumer_groups**: List APISIX Consumer Groups
+- **list_upstreams**: List APISIX Upstreams
+- **put_proto**: Create or update an APISIX Proto
+- **reload_control_plugins**: Trigger a hot reload of plugins
 - **dump_control_upstreams**: Dump all configured Upstreams from the Control API
 - **get_global_rule**: Get a specific APISIX Global Rule by ID
 - **get_route**: Get a specific APISIX Route by ID
@@ -50,40 +81,9 @@ Connect your **Apache APISIX** instance to any AI agent to orchestrate high-perf
 - **put_consumer**: Create or update an APISIX Consumer
 - **put_global_rule**: Create or update an APISIX Global Rule
 - **put_plugin_config**: Create or update an APISIX Plugin Config
-- **put_proto**: Create or update an APISIX Proto
-- **put_route**: Create or update an APISIX Route
-- **put_service**: Create or update an APISIX Service
-- **put_ssl**: Create or update an APISIX SSL certificate
 - **delete_service**: Delete an APISIX Service
-- **delete_ssl**: Delete an APISIX SSL certificate
-- **delete_stream_route**: Delete an APISIX Stream Route
-- **delete_upstream**: Delete an APISIX Upstream
-- **dump_control_discovery**: Memory dump of discovered service endpoints
-- **dump_control_plugin_metadatas**: Dump all plugin metadata from the Control API
-- **dump_control_routes**: Dump all configured Routes from the Control API
-- **dump_control_services**: Dump all configured Services from the Control API
-- **get_consumer_group**: Get a specific APISIX Consumer Group by ID
-- **get_consumer**: Get a specific APISIX Consumer by username
 - **get_control_healthcheck**: Get health status of all upstream nodes
-- **list_stream_routes**: List APISIX Stream Routes (L4 routing)
-- **list_upstreams**: List APISIX Upstreams
-- **get_control_resource_healthcheck**: Get health status for a specific resource
-- **get_control_schema**: Get JSON schemas for all resources and enabled plugins
-- **get_plugin_config**: Get a specific APISIX Plugin Config by ID
-- **get_proto**: Get a specific APISIX Proto by ID
-- **get_ssl**: Get a specific APISIX SSL certificate by ID
-- **list_consumer_groups**: List APISIX Consumer Groups
-- **list_consumers**: List APISIX Consumers
-- **list_global_rules**: List APISIX Global Rules
-- **list_plugin_configs**: List APISIX Plugin Configs
-- **list_protos**: List APISIX Protos (Protocol Buffers)
-- **list_routes**: List APISIX Routes
-- **list_services**: List APISIX Services
-- **list_ssls**: List APISIX SSL certificates
 - **put_stream_route**: Create or update an APISIX Stream Route
-- **put_upstream**: Create or update an APISIX Upstream
-- **reload_control_plugins**: Trigger a hot reload of plugins
-- **trigger_control_gc**: Trigger full garbage collection in the HTTP Lua VM
 
 
 ## 💬 Prompt Examples

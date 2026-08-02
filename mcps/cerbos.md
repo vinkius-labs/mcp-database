@@ -33,6 +33,9 @@ Connect your **Cerbos** instance to any AI agent to manage complex authorization
 
 
 ## Available Tools (6)
+- **get_server_info**: Returns the version and build details of the Cerbos instance
+- **get_authzen_config**: Returns endpoint URLs for the AuthZEN APIs
+- **authzen_evaluation**: Single action evaluation using the AuthZEN entity model
 - **authzen_evaluations**: Supports execute_all, deny_on_first_deny, and permit_on_first_permit semantics.
 
 Batch evaluation of multiple access requests using AuthZEN
@@ -40,9 +43,6 @@ Batch evaluation of multiple access requests using AuthZEN
 
 Evaluates permissions for a principal on a set of resources
 - **plan_resources**: Produces a query plan for obtaining a list of resources a principal is allowed to access
-- **get_server_info**: Returns the version and build details of the Cerbos instance
-- **get_authzen_config**: Returns endpoint URLs for the AuthZEN APIs
-- **authzen_evaluation**: Single action evaluation using the AuthZEN entity model
 
 
 ## 💬 Prompt Examples

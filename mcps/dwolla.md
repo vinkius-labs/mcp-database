@@ -38,34 +38,34 @@ Connect your **Dwolla** account to any AI agent and take full control of your pa
 - **create_customer_funding_source**: Create a funding source for a customer
 - **create_customer**: Create a new customer
 - **create_document**: Create a document for a customer
-- **create_funding_source**: Create a funding source
-- **create_label**: Create a label for a customer
-- **create_webhook_subscription**: Create a webhook subscription
-- **get_account**: Retrieve Dwolla account details
 - **get_customer**: Retrieve a customer
 - **get_document**: Retrieve a document
 - **get_event**: Retrieve an event
 - **get_funding_source**: Retrieve a funding source
 - **get_mass_payment**: Retrieve a mass payment
-- **get_transfer**: Retrieve a transfer
 - **initiate_kba**: Initiate a KBA session for a customer
 - **initiate_mass_payment**: Initiate a mass payment
 - **initiate_transfer**: Requires HAL _links in the payload.
 
 Initiate a transfer
-- **list_account_transfers**: List transfers for an account
-- **list_beneficial_owners**: List beneficial owners for a customer
-- **list_customers**: List or search customers
-- **list_events**: List events
-- **list_labels**: List labels for a customer
 - **list_webhook_subscriptions**: List webhook subscriptions
 - **retry_webhook**: Retry a webhook
-- **update_customer**: Update a customer
 - **update_funding_source**: g., passing { removed: true }).
 
 Update or remove a funding source
 - **verify_kba**: Verify KBA answers
 - **verify_micro_deposits**: Verify micro-deposits for a funding source
+- **list_events**: List events
+- **update_customer**: Update a customer
+- **create_funding_source**: Create a funding source
+- **create_label**: Create a label for a customer
+- **create_webhook_subscription**: Create a webhook subscription
+- **get_account**: Retrieve Dwolla account details
+- **get_transfer**: Retrieve a transfer
+- **list_account_transfers**: List transfers for an account
+- **list_beneficial_owners**: List beneficial owners for a customer
+- **list_customers**: List or search customers
+- **list_labels**: List labels for a customer
 - **list_account_funding_sources**: List funding sources for an account
 - **cancel_transfer**: Cancel a pending transfer
 

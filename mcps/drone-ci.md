@@ -34,6 +34,7 @@ Connect your **Drone CI** server to any AI agent to streamline your DevOps lifec
 
 
 ## Available Tools (39)
+- **update_cron_job**: Update a cron job
 - **approve_build**: Approve a blocked build
 - **chown_repo**: Change repository ownership to current user
 - **create_build**: Create a custom build for a branch
@@ -47,34 +48,33 @@ Connect your **Drone CI** server to any AI agent to streamline your DevOps lifec
 - **delete_template**: Delete a template
 - **delete_user**: Delete a user account (Admin)
 - **disable_repo**: Disable or delete a repository
-- **enable_repo**: Enable/register a repository in Drone
 - **get_build_logs**: Get logs for a specific step in a build stage
 - **get_build**: Get specific build info including stages and steps
 - **get_cron_job**: Get cron job details
-- **get_current_user_repos**: Get current user repositories
-- **get_current_user**: Get current authenticated user info
 - **get_repo**: Get repository info
 - **get_secret**: Get repository secret details
 - **get_template**: Get template details
 - **get_user**: Get user info by login (Admin)
 - **list_builds**: List recent builds for a repository
-- **list_cron_jobs**: List cron jobs for a repository
-- **list_secrets**: List repository secrets
-- **list_templates**: List organization templates
 - **list_users**: Requires administrative privileges.
 
 List all registered users (Admin)
 - **promote_build**: Promote a build to a target environment
-- **repair_repo**: Repair repository webhooks
-- **restart_build**: Restart a specific build
 - **stop_build**: Stop a running build (Admin)
 - **sync_user_repos**: Synchronize user repositories
 - **trigger_cron_job**: Manually trigger an existing cron task
-- **update_cron_job**: Update a cron job
 - **update_repo**: Update repository configuration
-- **update_secret**: Update a repository secret
 - **update_template**: Update a template
 - **update_user**: Update a user account (Admin)
+- **enable_repo**: Enable/register a repository in Drone
+- **get_current_user_repos**: Get current user repositories
+- **get_current_user**: Get current authenticated user info
+- **list_cron_jobs**: List cron jobs for a repository
+- **list_secrets**: List repository secrets
+- **list_templates**: List organization templates
+- **repair_repo**: Repair repository webhooks
+- **restart_build**: Restart a specific build
+- **update_secret**: Update a repository secret
 
 
 ## 💬 Prompt Examples

@@ -34,25 +34,25 @@ Connect your **Cerbos** instance to any AI agent to streamline authorization man
 
 
 ## Available Tools (19)
-- **check_resources**: Check permissions for a set of resources
-- **delete_policy**: Delete a policy by ID
-- **disable_policy**: Disable a policy
-- **enable_policy**: Enable a policy
-- **get_authzen_config**: Get AuthZEN configuration metadata
 - **get_health**: Get Cerbos health status
 - **get_metrics**: Get Prometheus metrics from Cerbos
 - **get_policy**: Get a specific policy by ID
 - **get_schema**: Get a specific schema by ID
+- **add_policy**: Add a new policy
+- **get_authzen_config**: Get AuthZEN configuration metadata
+- **add_schema**: Add or update a schema
+- **authzen_evaluation**: Perform a single AuthZEN access evaluation
+- **authzen_evaluations**: Perform batch AuthZEN access evaluations
+- **check_resources**: Check permissions for a set of resources
+- **delete_policy**: Delete a policy by ID
+- **disable_policy**: Disable a policy
+- **enable_policy**: Enable a policy
 - **get_server_info**: Get Cerbos server version and build information
 - **list_audit_logs**: List audit logs
 - **list_policies**: List all policies
 - **list_schemas**: List all schemas
 - **plan_resources**: Produce a query plan (AST) for filtering resources
 - **update_policy**: Update an existing policy
-- **add_policy**: Add a new policy
-- **add_schema**: Add or update a schema
-- **authzen_evaluation**: Perform a single AuthZEN access evaluation
-- **authzen_evaluations**: Perform batch AuthZEN access evaluations
 
 
 ## 💬 Prompt Examples

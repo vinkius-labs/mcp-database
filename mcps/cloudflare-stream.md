@@ -34,19 +34,7 @@ Connect your **Cloudflare Stream** account to any AI agent to manage your video 
 
 
 ## Available Tools (26)
-- **copy_audio_track**: Add an audio track via URL
-- **create_live_input**: Can specify metadata and recording options.
-
-Creates a live input for streaming video to Cloudflare
 - **create_live_output**: Create a simulcast output for a live input
-- **create_m4a_download**: Enable M4A audio downloads for a video
-- **create_mp4_download**: Enable MP4 downloads for a video
-- **create_signing_key**: Create a Stream Signing Key
-- **create_watermark**: Create a watermark profile
-- **delete_live_input**: Delete a live input
-- **delete_live_output**: Delete a simulcast output
-- **delete_video**: Deletes a video and its copies
-- **edit_video**: Update metadata or settings for a video
 - **generate_caption**: Generate AI captions for a video
 - **get_storage_usage**: Retrieve account-wide storage statistics
 - **get_video**: Retrieve details for a single video
@@ -62,12 +50,24 @@ Initiates a video upload using the TUS protocol
 
 List simulcast outputs for a live input
 - **list_signing_keys**: List Stream Signing Keys
+- **upload_caption**: Upload a VTT caption file
+- **copy_audio_track**: Add an audio track via URL
+- **create_live_input**: Can specify metadata and recording options.
+
+Creates a live input for streaming video to Cloudflare
+- **create_m4a_download**: Enable M4A audio downloads for a video
+- **create_mp4_download**: Enable MP4 downloads for a video
+- **create_signing_key**: Create a Stream Signing Key
+- **create_watermark**: Create a watermark profile
+- **delete_live_input**: Delete a live input
+- **delete_live_output**: Delete a simulcast output
+- **delete_video**: Deletes a video and its copies
+- **edit_video**: Update metadata or settings for a video
 - **list_videos**: Can filter by status, type, or search term.
 
 List videos in your Cloudflare Stream account
 - **list_watermarks**: List watermark profiles
 - **update_webhook**: Create or update webhook configuration
-- **upload_caption**: Upload a VTT caption file
 
 
 ## 💬 Prompt Examples

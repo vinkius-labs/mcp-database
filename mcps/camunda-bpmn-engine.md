@@ -36,6 +36,9 @@ No more jumping between the Camunda Modeler and Operate dashboard to check task 
 
 
 ## Available Tools (25)
+- **get_user_task_form**: Retrieve the linked form for a user task
+- **get_variable**: Get a specific variable value
+- **search_groups**: Search for user groups
 - **activate_jobs**: Activate (poll) jobs for workers
 - **assign_user_task**: Assign a user task to a specific user
 - **complete_job**: Complete an activated job
@@ -46,10 +49,7 @@ No more jumping between the Camunda Modeler and Operate dashboard to check task 
 - **get_process_definition_xml**: Retrieve the BPMN XML of a process definition
 - **get_process_instance**: Get details of a specific process instance
 - **get_topology**: Get cluster topology and partition status
-- **get_user_task_form**: Retrieve the linked form for a user task
 - **get_user_task**: Get details of a specific user task
-- **get_variable**: Get a specific variable value
-- **search_groups**: Search for user groups
 - **search_incidents**: Search for process incidents
 - **search_jobs**: Search for job instances
 - **search_process_definitions**: Search for deployed process definitions

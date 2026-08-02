@@ -36,45 +36,51 @@ No more jumping between dashboards to pause a failing webhook or check a source 
 
 
 ## Available Tools (75)
-- **cancel_event**: Cancel a scheduled retry for an event
-- **count_connections**: Count connections
+- **bulk_retry_events**: Bulk retry events based on a query
+- **bulk_retry_requests**: Bulk retry rejected requests
+- **get_bulk_retry_events**: Get status of a bulk retry
+- **get_event_raw**: Get event raw body data
+- **get_issue**: Retrieve an issue
 - **count_destinations**: Count destinations
-- **count_issues**: Get issue count
 - **count_sources**: Count sources
-- **count_transformations**: Count transformations
+- **cancel_bulk_retry_events**: Cancel an ongoing bulk retry
+- **cancel_event**: Cancel a scheduled retry for an event
 - **create_bookmark**: Create a bookmark
+- **count_connections**: Count connections
+- **count_issues**: Get issue count
+- **count_transformations**: Count transformations
 - **create_connection**: Can include inline source/destination.
 
 Create a connection
 - **create_destination**: Create a destination
 - **create_issue_trigger**: Create an issue trigger
+- **delete_destination**: Delete a destination
+- **delete_source**: Delete a source
+- **disable_destination**: Disable a destination
+- **get_attempt**: Retrieve a specific attempt
+- **get_metrics_events**: Event processing and success rate metrics
+- **list_bookmarks**: Retrieve bookmarks
+- **list_issue_triggers**: Retrieve issue triggers
+- **publish_event**: Send events directly to Hookdeck
 - **create_source**: Create a source
 - **create_transformation**: Create a transformation
 - **delete_bookmark**: Delete a bookmark
 - **delete_connection**: Delete a connection
-- **delete_destination**: Delete a destination
 - **delete_issue**: Dismiss an issue
 - **delete_issue_trigger**: Delete an issue trigger
-- **delete_source**: Delete a source
 - **delete_transformation**: Delete a transformation
 - **disable_connection**: Disable a connection
-- **disable_destination**: Disable a destination
 - **disable_source**: Disable a source
 - **enable_connection**: Enable a connection
 - **enable_destination**: Enable a destination
 - **enable_source**: Enable a source
-- **get_attempt**: Retrieve a specific attempt
 - **get_bookmark**: Retrieve a bookmark
-- **get_bulk_retry_events**: Get status of a bulk retry
 - **get_connection**: Retrieve a specific connection
 - **get_destination**: Retrieve a destination
-- **get_event_raw**: Get event raw body data
 - **get_event**: Retrieve a specific event
-- **get_issue**: Retrieve an issue
 - **get_issue_trigger**: Retrieve an issue trigger
 - **get_metrics_attempts**: Delivery attempt pattern metrics
 - **get_metrics_events_by_issue**: Failures grouped by issue metrics
-- **get_metrics_events**: Event processing and success rate metrics
 - **get_metrics_queue_depth**: Monitor processing backlogs
 - **get_metrics_requests**: Request volume and status metrics
 - **get_metrics_transformations**: Transformation performance metrics
@@ -85,11 +91,9 @@ Create a connection
 - **get_source**: Retrieve a source
 - **get_transformation_execution**: Get a specific transformation execution
 - **list_attempts**: Retrieve delivery attempts
-- **list_bookmarks**: Retrieve bookmarks
 - **list_connections**: Retrieve connections
 - **list_destinations**: Retrieve destinations
 - **list_events**: Retrieve events
-- **list_issue_triggers**: Retrieve issue triggers
 - **list_issues**: Retrieve issues
 - **list_requests**: Retrieve requests
 - **list_sources**: Retrieve sources
@@ -98,7 +102,6 @@ Create a connection
 - **pause_connection**: Events will be marked as HOLD.
 
 Pause a connection
-- **publish_event**: Send events directly to Hookdeck
 - **retry_event**: Retry a specific event
 - **retry_request**: Retry a rejected request
 - **test_transformation**: Test a transformation
@@ -112,9 +115,6 @@ Pause a connection
 - **update_source**: Update a source
 - **update_transformation**: Update a transformation
 - **bulk_cancel_events**: Bulk cancel events
-- **bulk_retry_events**: Bulk retry events based on a query
-- **bulk_retry_requests**: Bulk retry rejected requests
-- **cancel_bulk_retry_events**: Cancel an ongoing bulk retry
 
 
 ## 💬 Prompt Examples
