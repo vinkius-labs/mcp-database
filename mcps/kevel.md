@@ -35,6 +35,7 @@ Connect your **Kevel** (formerly Adzerk) account to any AI agent to streamline y
 
 ## Available Tools (11)
 - **get_campaign**: Get details for a specific campaign
+- **list_sites**: List all sites
 - **list_zones**: List all zones
 - **list_ad_types**: g., banner, native).
 
@@ -48,7 +49,6 @@ List available ad types
 List all creatives
 - **get_advertiser**: Get details for a specific advertiser
 - **list_flights**: List all flights
-- **list_sites**: List all sites
 
 
 ## 💬 Prompt Examples

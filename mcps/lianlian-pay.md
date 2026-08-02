@@ -35,6 +35,8 @@ Empower your AI agent to orchestrate your international financial infrastructure
 
 
 ## Available Tools (10)
+- **create_payment**: Create a new payment
+- **get_account_info**: Get merchant account info
 - **get_balance**: Get account balance
 - **get_bank_list**: Get supported banks
 - **get_exchange_rates**: Get current FX rates
@@ -43,8 +45,6 @@ Empower your AI agent to orchestrate your international financial infrastructure
 - **list_withdrawals**: List fund withdrawals
 - **query_order**: Query order status
 - **refund_order**: Refund a payment
-- **create_payment**: Create a new payment
-- **get_account_info**: Get merchant account info
 
 
 ## 💬 Prompt Examples

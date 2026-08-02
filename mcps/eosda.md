@@ -47,9 +47,6 @@ No more manual satellite data analysis or complex GIS workflows. Your AI acts as
 - **get_ndmi_timeseries**: NDMI is sensitive to vegetation water content and is used for drought monitoring, irrigation scheduling, and fire risk assessment. Returns NDMI values per satellite overpass date. Essential for water stress detection, irrigation optimization, drought impact assessment, and harvest timing. AI agents should use this when users ask "show me crop water stress trends", "how is the moisture content changing", or need moisture index analysis for irrigation planning.
 
 Get NDMI time series data for crop water stress monitoring
-- **create_field**: Accepts field boundary as GeoJSON polygon or coordinates, field name, crop type, and planting date. Returns the created field with ID, calculated area, and monitoring activation status. Essential for onboarding new fields into the monitoring system, expanding farm coverage, and setting up new crop seasons. AI agents should use this when users ask "add a new field for monitoring", "register this field boundary", or need to set up satellite monitoring for a new agricultural area.
-
-Register a new agricultural field for satellite monitoring
 - **get_evi_timeseries**: EVI is more sensitive in high-biomass regions and less affected by atmospheric conditions than NDVI. Returns EVI values per satellite overpass date for trend analysis. Essential for monitoring dense canopies, tropical crops, and areas with high atmospheric interference. AI agents should reference this when users ask "show me EVI trends for this field", "how is the canopy developing", or need enhanced vegetation index analysis for high-biomass crops.
 
 Get EVI time series data for enhanced vegetation monitoring over a growing season
@@ -80,6 +77,9 @@ Get weather forecasts (15 days to 7 months) for agricultural fields
 - **get_zoning_map**: Returns zone boundaries, average index values per zone, area percentages, and management recommendations. Essential for variable rate application (VRA), precision fertilization, targeted irrigation, and yield optimization. AI agents should use this when users ask "create a zoning map for my field", "generate productivity zones", or need management zone maps for precision agriculture.
 
 Generate productivity and vegetation health zoning maps for fields
+- **create_field**: Accepts field boundary as GeoJSON polygon or coordinates, field name, crop type, and planting date. Returns the created field with ID, calculated area, and monitoring activation status. Essential for onboarding new fields into the monitoring system, expanding farm coverage, and setting up new crop seasons. AI agents should use this when users ask "add a new field for monitoring", "register this field boundary", or need to set up satellite monitoring for a new agricultural area.
+
+Register a new agricultural field for satellite monitoring
 
 
 ## 💬 Prompt Examples

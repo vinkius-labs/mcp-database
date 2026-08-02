@@ -36,11 +36,11 @@ Empower your AI agent to orchestrate your entire aviation research and logistics
 
 ## Available Tools (6)
 - **check_api_status**: Check if the IATA API is operational
+- **search_airports**: Search for airports by IATA code
 - **get_city_details**: Get details for a specific city by IATA city code
 - **search_airlines**: Search for airlines by IATA code
 - **list_iata_countries**: List all countries supported by IATA
 - **search_aircraft**: Search for aircraft by IATA code
-- **search_airports**: Search for airports by IATA code
 
 
 ## 💬 Prompt Examples

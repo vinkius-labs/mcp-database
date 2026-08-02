@@ -31,14 +31,10 @@ The **Column MCP Server** effectively bypasses standard FinTech wrappers and tie
 
 
 ## Available Tools (12)
-- **column_create_ach_transfer**: Fire an ACH to an external routing/account number
 - **column_create_bank_account**: Establish a DDA (Demand Deposit Account)
 - **column_create_check**: Very useful for legacy vendor systems.
 
 Generate and mail a paper check
-- **column_create_entity**: In production, this goes through compliance screening.
-
-Register a business or person KYC target inside Column
 - **column_create_wire_transfer**: Fire an immediate Wire transfer
 - **column_get_balance**: Audit settled funds inside a Bank Account
 - **column_get_bank_account**: Fetch specific DDA details (Routing info)
@@ -46,6 +42,10 @@ Register a business or person KYC target inside Column
 - **column_list_entities**: View all active KYC profiles under the charter
 - **column_list_transfers**: Sweep historical ACH payment operations
 - **column_list_webhooks**: View all registered listening streams
+- **column_create_ach_transfer**: Fire an ACH to an external routing/account number
+- **column_create_entity**: In production, this goes through compliance screening.
+
+Register a business or person KYC target inside Column
 - **column_simulate_ach**: Trigger Sandbox inbound money movement
 
 

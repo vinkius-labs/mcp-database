@@ -43,10 +43,10 @@ Connect your **Griffin** Banking-as-a-Service account to any AI agent and take f
 - **get_transaction**: Get details for a specific transaction
 - **get_verification**: Get details for a specific verification
 - **list_accounts**: List bank accounts for an organization
-- **list_organizations**: List all accessible organizations
 - **list_payees**: List saved payees for an organization
 - **list_transactions**: Retrieve transaction history for a bank account
 - **list_verifications**: List KYC/KYB verifications for an organization
+- **list_organizations**: List all accessible organizations
 
 
 ## 💬 Prompt Examples

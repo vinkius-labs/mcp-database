@@ -35,9 +35,9 @@ Empower your AI agent to orchestrate your entire audio ecosystem on **SoundCloud
 
 
 ## Available Tools (8)
+- **list_favorites**: List favorited tracks for a user
 - **get_me**: Get authenticated user info from SoundCloud
 - **get_track**: Get details for a specific track
-- **list_favorites**: List favorited tracks for a user
 - **list_followers**: List followers for a user
 - **list_following**: List users followed by a user
 - **list_playlists**: List playlists for a user

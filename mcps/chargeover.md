@@ -7,43 +7,43 @@
 
 **Category:** [finance-accounting](../categories/finance-accounting.md)
 
-Manage recurring billing and invoicing via ChargeOver — track customers, monitor subscriptions, and analyze transactions directly from any AI agent.
+Bill your customers with flexible recurring invoicing, automated dunning, and payment collection that keeps revenue flowing.
 
 ## Description
-Connect your **ChargeOver** account to any AI agent and take full control of your recurring billing and invoicing operations through natural conversation. Streamline how you manage subscriptions and customer payments.
+Connect your **ChargeOver** account to any AI agent and take full control of your recurring revenue and subscription billing workflows through natural conversation.
 
 ### What you can do
 
-- **Customer Oversight** — List and retrieve details for all customer profiles and their contact information natively
-- **Invoice Management** — Monitor generated invoices and their current payment status flawlessly
-- **Subscription Tracking** — List and retrieve details for active and inactive customer packages securely
-- **Transaction Auditing** — Access and monitor all billing transactions and payment history flawlessly
-- **Quote Control** — List and review sales quotes to manage your revenue pipeline securely
-- **Account Visibility** — Retrieve core account and user information directly within your workspace
+- **Billing Profile Orchestration** — List and manage customer billing profiles programmatically, retrieving detailed high-fidelity account metadata and payment history
+- **Subscription Lifecycle Management** — Create and update recurring billing packages programmatically to maintain perfectly coordinated subscriber journeys
+- **Invoice & Statement Architecture** — Monitor real-time invoice history and programmatically generate new billing statements to streamline your accounts receivable
+- **Transaction Intelligence** — Track payment transactions, refunds, and credits in real-time to maintain a high-fidelity overview of your financial health
+- **Operational Monitoring** — Access high-level billing summaries and manage account-level metadata directly through your agent for instant financial reporting
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your ChargeOver Public Key, Private Key, and Subdomain
-3. Start managing your recurring billing from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API Key** (Username) and **API Secret** (Private Key) from ChargeOver (Settings > Developers > REST API)
+3. Identify your **Subdomain** (e.g., 'acme' from acme.chargeover.com)
+4. Start managing your recurring revenue from Claude, Cursor, or any MCP client
+
+No more manual entry into billing tables or digging through subscription lists. Your AI acts as your dedicated billing coordinator and revenue analyst.
 
 ### Who is this for?
 
-- **Billing Managers** — monitor subscription health and review invoice statuses using natural language
-- **Accounts Receivable Teams** — audit transaction history and customer balances without opening the dashboard
-- **Sales Ops** — quickly look up quote details and customer profiles straight from their chat interface
-- **Business Owners** — verify total recurring revenue and transaction volumes
+- **Finance & Billing Teams** — instantly retrieve payment statuses and update customer billing data using natural language commands
+- **SaaS Founders** — monitor recurring revenue trends and manage subscription packages without leaving your workspace
+- **Operations Leads** — automate invoice generation and track transaction histories through simple AI queries
 
 
-## Available Tools (8)
-- **get_customer_details**: Get detailed information for a specific customer
-- **get_invoice_details**: Get detailed information for a specific invoice
-- **list_chargeover_customers**: List all customers
-- **list_chargeover_invoices**: List all invoices
-- **list_billing_quotes**: List all sales quotes
-- **list_billing_subscriptions**: List all customer subscriptions (packages)
-- **list_billing_transactions**: List all billing transactions
-- **get_chargeover_account**: Retrieve core account and user information
+## Available Tools (7)
+- **create_billing_customer**: Create a new customer
+- **create_billing_invoice**: Create a new invoice
+- **create_subscription**: Create a new subscription
+- **list_billing_customers**: List all customers
+- **list_billing_invoices**: List all invoices
+- **list_subscriptions**: List all subscriptions (packages)
+- **list_billing_transactions**: List all transactions
 
 
 ## 💬 Prompt Examples
@@ -51,38 +51,38 @@ Connect your **ChargeOver** account to any AI agent and take full control of you
 Here are some examples of how you can interact with the **ChargeOver** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Show me the last 5 invoices in ChargeOver."
+> "List all active billing customers in ChargeOver."
 
 **🤖 AI Agent:**
-> Retrieving your recent invoices... I found 5 items totaling $2,100.00. 4 are 'Paid' and 1 is 'Overdue'. Would you like to see the details for the overdue invoice?
+> I've retrieved your billing directory. You currently have 150 active customers, including 'Acme Corp' (ID: 1024) and 'Global Logistics'. Which one would you like to check for outstanding invoices?
 
 ---
 
 **👤 You:**
-> "List all customers with active subscriptions."
+> "Show the last 5 payment transactions and their status."
 
 **🤖 AI Agent:**
-> Checking subscriptions... I found 12 customers with active packages, including 'Acme Corp' and 'Global Industries'. I can list their contact details for you.
+> Accessing transaction logs... Out of the last 5, four were 'Successful' and one is 'Pending' ($250.00 from @user1). Shall I retrieve the detailed metadata for the pending payment?
 
 ---
 
 **👤 You:**
-> "What was my total transaction volume today?"
+> "Create a new subscription for 'Acme Corp' (ID: '1024') titled 'Pro Plan'."
 
 **🤖 AI Agent:**
-> Retrieving today's transactions... You had 8 successful transactions totaling $1,245.50. There were no failed attempts recorded today.
+> Subscription created! I've successfully initialized the 'Pro Plan' for Acme Corp. The new billing package ID is 'pkg_789'. The customer will be automatically billed according to your account's default cycle.
 
 
 ## ❓ FAQ
 
-**Q: Can I check the status of a specific invoice?**
-Yes! Use the `get_invoice_details` tool with the unique invoice ID. The agent will return the full record, including the current balance and payment status.
+**Q: How do I find my ChargeOver API credentials?**
+Log in to your account, navigate to **Settings** > **Developers** > **REST API**, and copy your API Key (Username) and API Secret (Private Key).
 
-**Q: How do I see all active subscriptions?**
-Use the `list_billing_subscriptions` tool. Your agent will fetch all customer packages, allowing you to filter for those that are currently in an active state.
+**Q: Can I create a new subscription via AI?**
+Yes! Use the `create_subscription` tool and provide the customer ID and a nickname for the billing package to initialize a new recurring plan.
 
-**Q: Where do I find my API Public and Private keys?**
-Log in to your ChargeOver account and navigate to **Settings > Developer > REST API**. You can generate and copy your keys from that section.
+**Q: How do I check a customer's payment history?**
+The `list_billing_transactions` tool retrieves a detailed history of all payments, refunds, and credits associated with your account.
 
 
 ## Installation & Usage

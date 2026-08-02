@@ -39,16 +39,16 @@ Connect your **Belvo** account to any AI agent and orchestrate your financial da
 - **get_investments**: Use for wealth management and investment analysis.
 
 List investment portfolios and holdings across linked brokerage and investment accounts
-- **get_link**: Returns institution, access mode, status, refresh rates, and credential storage details.
-
-Get detailed status and metadata for a specific Belvo link connection
 - **get_transaction**: Get complete details for a specific financial transaction
-- **list_accounts**: Each account includes balance, currency, institution, type, and account number. Filter by link if needed.
-
-List all financial accounts across all Belvo links — checking, savings, credit, loans
 - **list_balances**: Use for cash position monitoring.
 
 List current and available balances for all linked accounts
+- **get_link**: Returns institution, access mode, status, refresh rates, and credential storage details.
+
+Get detailed status and metadata for a specific Belvo link connection
+- **list_accounts**: Each account includes balance, currency, institution, type, and account number. Filter by link if needed.
+
+List all financial accounts across all Belvo links — checking, savings, credit, loans
 - **list_incomes**: Use for credit risk assessment and affordability checks.
 
 List income insights derived from transaction analysis across linked accounts
