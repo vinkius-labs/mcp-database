@@ -34,6 +34,7 @@ Connect **Inworld AI** to your agent to unlock advanced multimodal capabilities.
 
 
 ## Available Tools (19)
+- **chat_completions**: Generate chat completions via LLM Router
 - **clone_voice**: Clone a voice from audio samples
 - **create_realtime_call**: Create a WebRTC realtime call
 - **create_router**: Create an LLM Router
@@ -42,7 +43,6 @@ Connect **Inworld AI** to your agent to unlock advanced multimodal capabilities.
 - **design_voice**: Design a voice from a text prompt
 - **get_router**: Get details for a specific LLM Router
 - **get_voice**: Get details for a specific voice
-- **list_models**: List available LLM models
 - **list_routers**: List all LLM Routers
 - **list_tts_voices**: Use list_voices instead for newer Voice API.
 
@@ -54,7 +54,7 @@ List TTS voices (Deprecated)
 - **transcribe_audio**: Transcribe audio to text (Sync)
 - **update_router**: Update an LLM Router
 - **update_voice**: Update a voice
-- **chat_completions**: Generate chat completions via LLM Router
+- **list_models**: List available LLM models
 
 
 ## 💬 Prompt Examples

@@ -33,14 +33,14 @@ Connect to **DeepInfra** to access a massive library of open-source models inclu
 
 
 ## Available Tools (4)
+- **run_native_inference**: Useful for models not covered by OpenAI spec (e.g., speech-to-text, OCR, video generation, or private deployments).
+
+Run native inference for a specific model on DeepInfra
 - **create_embedding**: Create embeddings for text via DeepInfra
 - **generate_image**: Generate an image from a text prompt via DeepInfra
 - **create_chat_completion**: Provide model name (e.g., deepseek-ai/DeepSeek-V3) and messages array.
 
 Create a chat completion using an LLM via DeepInfra
-- **run_native_inference**: Useful for models not covered by OpenAI spec (e.g., speech-to-text, OCR, video generation, or private deployments).
-
-Run native inference for a specific model on DeepInfra
 
 
 ## 💬 Prompt Examples

@@ -35,7 +35,6 @@ Connect the **BlockCypher** multi-chain API to your AI agent to interact with ma
 
 
 ## Available Tools (15)
-- **fund_bcy_test_address**: Fund an address on the BCY test chain
 - **fund_beth_test_address**: Fund an address on the BETH test chain
 - **call_eth_contract_method**: Requires token.
 
@@ -52,7 +51,6 @@ Generate a new address and keypair
 - **get_address_balance**: Get address balance only
 - **get_address**: Get address details and transaction references
 - **get_block_by_hash**: Get block details by hash
-- **get_block_by_height**: Get block details by height
 - **get_blockchain**: Get current state of a blockchain
 - **get_transaction**: Get transaction details by hash
 - **new_transaction**: Requires token for POST.
@@ -62,6 +60,8 @@ Create a skeleton transaction for signing
 
 Send a signed transaction to the network
 - **get_token_info**: Get information about an API token
+- **fund_bcy_test_address**: Fund an address on the BCY test chain
+- **get_block_by_height**: Get block details by height
 
 
 ## 💬 Prompt Examples

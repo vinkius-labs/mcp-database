@@ -34,15 +34,6 @@ Connect your **CoreWeave** account to any AI agent to manage specialized GPU clo
 
 
 ## Available Tools (24)
-- **get_vpc**: Get details for a specific VPC
-- **create_capacity_claim**: Create a new Inference Capacity Claim
-- **create_cluster**: Create a new CKS cluster
-- **update_cluster**: Requires an updateMask in the payload.
-
-Update a CKS cluster
-- **update_deployment**: Update an Inference Deployment
-- **update_gateway**: Update an Inference Gateway
-- **update_vpc**: Update a VPC
 - **create_deployment**: Create a new Inference Deployment
 - **create_gateway**: Create a new Inference Gateway
 - **create_vpc**: Create a new VPC
@@ -60,6 +51,15 @@ Update a CKS cluster
 - **query_logs**: Query Loki logs
 - **query_metrics**: Query Prometheus metrics
 - **update_capacity_claim**: Update an Inference Capacity Claim
+- **update_cluster**: Requires an updateMask in the payload.
+
+Update a CKS cluster
+- **update_deployment**: Update an Inference Deployment
+- **update_gateway**: Update an Inference Gateway
+- **update_vpc**: Update a VPC
+- **get_vpc**: Get details for a specific VPC
+- **create_capacity_claim**: Create a new Inference Capacity Claim
+- **create_cluster**: Create a new CKS cluster
 
 
 ## 💬 Prompt Examples

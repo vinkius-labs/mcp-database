@@ -36,6 +36,8 @@ Connect to the **Boba Network** (L2) through Bobascan's API. This MCP server all
 ## Available Tools (25)
 - **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
 - **get_block_reward**: Get Block Rewards by BlockNo
+- **proxy_block_number**: eth_blockNumber
+- **get_abi**: Get Contract ABI for Verified Source Codes
 - **get_contract_execution_status**: Check Contract Execution Status
 - **get_eth_price**: Get Ether Last Price
 - **get_eth_supply**: Get Total Supply of Ether on Boba Network
@@ -50,7 +52,6 @@ Connect to the **Boba Network** (L2) through Bobascan's API. This MCP server all
 - **get_tx_list_internal**: Get a List of Internal Transactions By Address
 - **get_tx_list**: Get a List of Normal Transactions By Address
 - **get_tx_receipt_status**: Check Transaction Receipt Status
-- **proxy_block_number**: eth_blockNumber
 - **proxy_call**: eth_call
 - **proxy_estimate_gas**: eth_estimateGas
 - **proxy_gas_price**: eth_gasPrice
@@ -58,7 +59,6 @@ Connect to the **Boba Network** (L2) through Bobascan's API. This MCP server all
 - **proxy_get_code**: eth_getCode
 - **proxy_get_transaction_by_hash**: eth_getTransactionByHash
 - **proxy_get_transaction_receipt**: eth_getTransactionReceipt
-- **get_abi**: Get Contract ABI for Verified Source Codes
 
 
 ## 💬 Prompt Examples

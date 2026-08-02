@@ -34,10 +34,10 @@ No more manual video editing for simple social media clips or voiceovers. Your A
 
 
 ## Available Tools (3)
+- **get_video**: Get the status and download link for a generated video
 - **generate_video**: Provide the script content and optional voice, aspect ratio, and background music.
 
 Generate a video based on a provided script or text
-- **get_video**: Get the status and download link for a generated video
 - **list_voices**: List available AI voices
 
 
