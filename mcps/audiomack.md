@@ -41,7 +41,6 @@ Connect your **Audiomack** account to any AI agent and explore a vast library of
 - **flag_music_unplayable**: Flag a track or album as unplayable
 - **follow_artist**: Follow an artist (Requires Auth)
 - **get_artist_favorites**: Get artist favorites
-- **get_artist_followers**: Get followers of an artist
 - **get_artist_following**: Get users an artist is following
 - **get_artist_playlists**: Get artist playlists
 - **get_artist**: Get artist profile info
@@ -51,7 +50,6 @@ Connect your **Audiomack** account to any AI agent and explore a vast library of
 - **get_music_by_slug**: Get song or album info by slug
 - **get_playlist_by_id**: Get playlist info by ID
 - **get_playlist_by_slug**: Get playlist info by slug
-- **get_recent_music**: Get most recent music
 - **get_trending_music**: Get trending music
 - **play_music**: Play a track (Requires Auth)
 - **remove_track_from_playlist**: Remove a track from a playlist (Requires Auth)
@@ -62,6 +60,8 @@ Connect your **Audiomack** account to any AI agent and explore a vast library of
 - **unfollow_artist**: Unfollow an artist (Requires Auth)
 - **unrepost_music**: Remove a reposted track or album (Requires Auth)
 - **update_playlist**: Edit an existing playlist (Requires Auth)
+- **get_artist_followers**: Get followers of an artist
+- **get_recent_music**: Get most recent music
 
 
 ## 💬 Prompt Examples

@@ -35,21 +35,19 @@ No more manual toggling between chat interfaces or complex API configuration. Yo
 - **Product Leads** — integrate low-cost, high-intelligence AI models into custom workflows through simple AI queries
 
 
-## Available Tools (12)
-- **chat_prefix_completion**: Guide model response
-- **chat_completion**: Generate AI response
-- **deep_reasoning**: Includes internal thinking process.
+## Available Tools (6)
+- **chat_prefix_completion**: Useful for structured output generation.
 
-Advanced logic reasoning
-- **get_account_info**: Get account profile
-- **get_balance**: Get account balance
-- **get_billing_details**: Get billing info
-- **get_model_details**: Get model metadata
-- **get_token_usage**: Get usage stats
-- **list_models**: List available models
-- **list_request_history**: List request history
-- **list_api_tokens**: List API tokens
-- **check_api_status**: Check API health
+Guide model response with a prefix (Beta)
+- **chat_completion**: Generate an AI response using DeepSeek V3
+- **deep_reasoning**: Includes internal chain-of-thought reasoning.
+
+Solve complex problems with DeepSeek Reasoner
+- **fill_in_middle**: Ideal for code completion tasks.
+
+Complete code between a prefix and suffix (Beta)
+- **get_balance**: Get account credit balance and usage
+- **list_models**: List all available DeepSeek models
 
 
 ## 💬 Prompt Examples

@@ -7,42 +7,41 @@
 
 **Category:** [money-moves](../categories/money-moves.md)
 
-Automate recurring billing via Chargebee — manage subscriptions, customers, invoices, and hosted checkouts natively with any AI agent.
+Manage recurring subscriptions, automate billing cycles, and reduce churn with revenue operations built for SaaS growth.
 
 ## Description
-Connect your **Chargebee** environment to any AI agent and take absolute control of your SaaS revenue operations by simply chatting. Bypass massive spreadsheets and complex financial dashboards.
+Connect your **Chargebee** site to any AI agent and take full control of your billing workflows through natural conversation.
 
 ### What you can do
 
-- **Customers** — List existing accounts, retrieve specific financial details (outstanding balances), or create brand new B2B accounts instantly
-- **Subscriptions** — Inspect active, trailing, or cancelled plans. Pause renewals, trace MRR, or irreversibly cancel subscriptions mid-term
-- **Invoices** — Retrieve active billing logs and check if a payment gateway approved or declined a specific charge
-- **Checkout & Catalog** — Enumerate product lines and generate ephemeral, secure Hosted Checkout URLs to capture customer cards on the fly
+- **Subscription Lifecycle** — List active, trialing, or cancelled subscriptions and inspect their metadata
+- **Customer Management** — Query profiles, billing info, and contact details for any customer in your database
+- **Invoicing & Payments** — Track paid, pending, and overdue invoices to stay on top of your revenue
+- **Product Catalog** — List available plans and addons to understand your current offerings
+- **Actionable Workflows** — Create customers, start new subscriptions, or cancel existing ones programmatically
 
 ### How it works
 
 1. Subscribe to this server
-2. Provide your Chargebee Site ID and API Key
-3. Start managing your revenue pipelines natively via Claude, Cursor, or any MCP-compatible platform
-
-### Who is this for?
-
-- **Support agents** — easily verify if a user's subscription is paused, cancelled, or in trial without opening the billing platform
-- **Sales teams** — generate an instant, exact checkout URL for a specific product plan while still talking to the prospect
-- **Founders & Ops** — ask your agent to pull a list of recent failed invoices or immediately pause a delinquent account
+2. Enter your Chargebee Site name and API Key
+3. Start managing your recurring revenue from Claude, Cursor, or any MCP-compatible client
 
 
 ## Available Tools (10)
-- **cancel_subscription**: Irreversibly vaporize explicit validations extracting rich Churn flags
-- **create_customer**: Provision a highly-available JSON Payload generating hard Customer records
-- **generate_hosted_checkout**: Dispatch an automated validation check routing explicit Payment UI
-- **get_customer_details**: Perform structural extraction of properties driving active Account logic
-- **get_subscription_details**: Inspect deep internal arrays mitigating specific Plan Math
-- **list_customers**: Identify bounded CRM records inside the Headless Chargebee Platform
-- **list_invoices**: Enumerate explicitly attached structured rules exporting active Billing
-- **list_catalog_items**: Retrieve the exact structural matching verifying Product mapping
-- **list_subscriptions**: Retrieve explicit Cloud logging tracing explicit Recurring limits
-- **pause_subscription**: Identify precise active arrays spanning native Pause tracking
+- **cancel_subscription**: Cancel an existing subscription
+- **create_subscription**: Create a new subscription for a customer
+- **get_customer**: Get details for a specific customer
+- **get_subscription**: Get details for a specific subscription
+- **list_addons**: List available product addons
+- **list_customers**: List Chargebee customers
+- **list_invoices**: Can be filtered by status or customer.
+
+List Chargebee invoices
+- **list_plans**: List available product plans
+- **list_subscriptions**: Supports filtering via optional parameters.
+
+List Chargebee subscriptions
+- **create_customer**: Create a new customer profile
 
 
 ## 💬 Prompt Examples
@@ -50,38 +49,38 @@ Connect your **Chargebee** environment to any AI agent and take absolute control
 Here are some examples of how you can interact with the **Chargebee** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Create a new customer profile for John Doe at john@acme.com."
+> "List all active subscriptions in Chargebee."
 
 **🤖 AI Agent:**
-> Customer 'John Doe' (john@acme.com) successfully provisioned into your Chargebee vault! The new Customer ID generated is 'cust_9AxYv23L'. Do you wish to generate a hosted checkout URL for them?
+> I've fetched the subscriptions. You have 12 active subscriptions, including 'sub_123' (Premium Plan) and 'sub_456' (Standard Plan).
 
 ---
 
 **👤 You:**
-> "Cancel subscription sub_4001, but wait until the end of the term."
+> "Show me details for customer 'cust_789'."
 
 **🤖 AI Agent:**
-> Executed! Subscription `sub_4001` has received the irreversible boolean 'end_of_term' cancellation switch. Service remains active precisely until the current billing period expires, avoiding prorated refunds.
+> Customer 'cust_789' is John Doe (john@example.com), based in New York. They have an active payment source on file.
 
 ---
 
 **👤 You:**
-> "Review my invoices and point out any recent declines."
+> "Find all overdue invoices."
 
 **🤖 AI Agent:**
-> I iterated through your active billing ledger. I found 1 out of the 10 recent limits flagged as 'Payment Declined'. It belongs to customer 'cust_0102'. The gateway declined their card due to insufficient funds. Should I pause their software subscription?
+> I've analyzed your invoices. There are currently 3 overdue invoices totaling $450. Would you like the list of customer IDs for these invoices?
 
 
 ## ❓ FAQ
 
-**Q: Can my AI automatically detect a declining card and cancel the recurring subscription?**
-Yes. Ask the agent to pull the most recent invoices and find the specific declined charges. Once identified, command the agent to cancel the associated subscription ID completely, putting an end to the service. All done natively through chat.
+**Q: Can I automatically list all active subscriptions for a site?**
+Yes! Use the `list_subscriptions` tool to retrieve all recorded subscriptions. You can then ask the agent to filter them by status if needed.
 
-**Q: How does the Hosted Checkout generation work?**
-When asked, the AI fetches your catalog items, finds the needed Plan ID, and hits the `generate_hosted_checkout` endpoint. It replies instantly with an ephemeral, safe URL you can copy-paste to your customer, capturing their payment securely before destroying the link lifespan.
+**Q: How do I fetch details for a specific customer?**
+Simply provide the Customer ID to the `get_customer_details` tool. It will return the full profile, including contact info and billing preferences.
 
-**Q: Can I halt billing charges for a specific timeframe?**
-Certainly. The `pause_subscription` command instructs Chargebee to freeze active charges and renewals on the provided subscription ID until you deliberately tell the AI to resume it later. Brilliant for seasonal B2B accounts.
+**Q: Does this integration allow for creating new subscriptions?**
+Yes, you can use the `create_subscription` tool by providing the Customer ID and the Plan ID.
 
 
 ## Installation & Usage

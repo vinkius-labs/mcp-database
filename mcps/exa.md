@@ -7,40 +7,54 @@
 
 **Category:** [ai-frontier](../categories/ai-frontier.md)
 
-Semantic search engine built for AI — find conceptually relevant web content, not just keyword matches. Powered by neural search technology.
+Find exactly the web content you need with semantic search that understands context and returns high-quality curated results.
 
 ## Description
-Connect your AI agent to **Exa** — the semantic search engine built from the ground up for AI applications.
+Connect **Exa (formerly Metaphor)** to any AI agent and simplify how you discover relevant web data, research topics using neural embeddings, and extract cleaned content through natural conversation.
 
 ### What you can do
 
-- **Semantic Search** — Search the web using natural language. Unlike Google, Exa understands concepts and meaning, returning results that are semantically relevant even without exact keyword matches
-- **Find Similar** — Provide any URL and discover web pages with similar content. Perfect for competitive analysis, research expansion, and content discovery
-- **Extract Contents** — Get clean text, highlights, and summaries from any list of URLs. Ideal for building knowledge bases from curated sources
+- **Neural Search** — Perform AI-powered searches that understand the meaning and intent of your query, not just keywords.
+- **Semantic Similarity** — Find web pages and articles that are semantically similar to a specific seed URL.
+- **Content Extraction** — Fetch cleaned, readable text and metadata from multiple URLs or page IDs in a single request.
+- **Research Automation** — Discover high-quality sources and analyze web content programmatically via AI.
+- **Data Insights** — retrieve comprehensive metadata for search results to identify top-performing resources.
+- **Intelligent Discovery** — Use 'Autoprompt' to automatically optimize your queries for neural search accuracy.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Exa API key (1,000 free searches/month)
-3. Your agent can now search the web with semantic understanding
+2. Enter your Exa API Key (found in your account dashboard)
+3. Start searching the web for your AI projects from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **AI Agent Developers** — give agents web search that truly understands context and meaning
-- **Research Teams** — find related papers, articles, and resources that keyword search would miss
-- **Content Teams** — discover competitors, alternatives, and related content at scale
+- **AI Developers & Researchers** — quickly find semantically relevant data and clean web content via simple AI commands.
+- **Content Strategists** — discover similar articles and research topics across the web directly from the workspace.
+- **Knowledge Workers** — automate information discovery and extract key insights via the AI assistant.
 
 
-## Available Tools (3)
-- **exa_find_similar**: Useful for finding competitors, related articles, or alternative sources on the same subject.
+## Available Tools (10)
+- **answer**: Get an AI answer
+- **find_similar**: Great for competitive analysis and research.
 
-Find web pages semantically similar to a given URL. Perfect for competitive analysis and content discovery
-- **exa_get_contents**: Useful when you already know which pages you want to read and need their content in a structured format.
+Find similar pages
+- **find_similar_with_contents**: Find similar pages with content
+- **get_contents**: Extract page contents
+- **search_domain**: Useful for site-specific research or documentation lookups.
 
-Extract clean text content from specific URLs. Provide comma-separated URLs to retrieve their content
-- **exa_search**: Returns page text, highlights, and relevance scores. Supports search types: auto (default), instant (fastest), fast, deep (most thorough).
+Search within a domain
+- **search_keyword**: Traditional keyword search
+- **search_neural**: Ideal for conceptual queries and research topics.
 
-Search the web using Exa semantic search engine. Finds conceptually relevant results, not just keyword matches
+Neural semantic search
+- **search_recent**: Ideal for news and trending topics.
+
+Search recent content
+- **search**: Returns titles, URLs, and relevance scores for matching pages.
+
+Search the web with AI
+- **search_with_contents**: Search and extract page content
 
 
 ## 💬 Prompt Examples
@@ -48,61 +62,38 @@ Search the web using Exa semantic search engine. Finds conceptually relevant res
 Here are some examples of how you can interact with the **Exa** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Search for companies building memory infrastructure for AI agents."
+> "Neural search for 'the latest breakthroughs in room-temperature superconductors'."
 
 **🤖 AI Agent:**
-> Found 10 semantically relevant results:
-
-1. **Mem0** (mem0.ai) — Score: 0.94
-   Leading memory layer for AI agents with hybrid KV+vector+graph storage...
-
-2. **Zep** (getzep.com) — Score: 0.91
-   Long-term conversational memory with temporal knowledge graphs...
-
-3. **Letta** (letta.com) — Score: 0.88
-   OS-inspired agent runtime with self-managed memory hierarchy...
+> I've performed a neural search for you. I found 10 high-quality links including recent pre-prints from arXiv, specialized science blogs, and official university press releases. Which source would you like me to extract the content from?
 
 ---
 
 **👤 You:**
-> "Find pages similar to https://docs.langchain.com/docs/get_started/introduction"
+> "Find 5 links similar to 'https://openai.com/blog/instruction-following'."
 
 **🤖 AI Agent:**
-> Found 10 pages similar to LangChain's introduction:
-
-1. **LlamaIndex Documentation** (docs.llamaindex.ai) — Score: 0.92
-2. **CrewAI Getting Started** (docs.crewai.com) — Score: 0.89
-3. **AutoGen Documentation** (microsoft.github.io/autogen) — Score: 0.86
-4. **Haystack Introduction** (docs.haystack.deepset.ai) — Score: 0.83
+> Fetching similar content... I've identified 5 semantically related articles, including papers on RLHF from Anthropic, Google DeepMind's blog on fine-tuning, and technical breakdowns from HuggingFace. Shall I retrieve the metadata for these?
 
 ---
 
 **👤 You:**
-> "Extract the content from these 3 URLs: https://arxiv.org/abs/2401.00001, https://openai.com/blog, https://anthropic.com/research"
+> "Extract the cleaned text content from 'https://arxiv.org/abs/2312.00752'."
 
 **🤖 AI Agent:**
-> Extracted content from 3 URLs:
-
-### 1. arxiv.org — Research Paper
-> Key highlights: Novel approach to multi-agent coordination using graph neural networks...
-
-### 2. openai.com — Blog Post
-> Full text extracted: 4,200 words covering latest research developments...
-
-### 3. anthropic.com — Research Page
-> Highlights: Constitutional AI methodology and safety-first approach...
+> Extraction complete! I've retrieved the cleaned text content for the arXiv paper (ID: 2312.00752). It contains the abstract, full body text, and author metadata. Would you like me to summarize the key findings for you?
 
 
 ## ❓ FAQ
 
-**Q: How is Exa different from Google Search?**
-Exa uses neural embedding models to understand the meaning of your query, not just keywords. When you search 'startups building AI infrastructure', Google returns pages containing those exact words. Exa returns companies that match that concept — even if their pages use completely different terminology. It also provides specialized search indexes for people, companies, code, and academic papers.
+**Q: Can I perform a meaning-based search instead of keywords via AI?**
+Yes! Use the `search` tool. Provide your query and enable `useAutoprompt`. Exa will use its neural embeddings to find links that match the intent of your question.
 
-**Q: What does the free tier include?**
-Exa's free tier includes 1,000 searches per month with content extraction included for up to 10 results per search at no additional cost. No credit card required. For higher volumes, paid plans offer increased quotas and priority support.
+**Q: How do I find articles similar to a specific URL?**
+Use the `find_similar` tool. Provide the seed URL, and the agent will retrieve a list of pages that are semantically related to that content.
 
-**Q: Can I filter results by domain, date, or category?**
-Yes! Exa supports powerful filtering options: include/exclude specific domains, filter by publication date range, search within specific categories (news, blog, academic, etc.), and even use domain path filtering to search within specific sections of a website.
+**Q: Is it possible to extract cleaned text from multiple pages via AI?**
+Absolutely. Use the `get_contents` query. Provide an array of URLs or Exa IDs, and the agent will return the cleaned text content and metadata for each page.
 
 
 ## Installation & Usage

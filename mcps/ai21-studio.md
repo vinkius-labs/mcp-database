@@ -34,22 +34,10 @@ Connect **AI21 Studio** to your AI agent and unlock access to the powerful Jamba
 - **Researchers** — generate robust summaries of enormous walls of text using specialized endpoints rather than generic LLM prompts
 
 
-## Available Tools (7)
-- **chat_completion**: g., jamba-1.5-large, jamba-1.5-mini) and the conversation messages as a JSON array.
+## Available Tools (1)
+- **chat_completion**: Use models like jamba-1.5-large or jamba-1.5-mini. Messages must be a JSON array of objects with "role" and "content" fields.
 
 Generate chat completions using AI21 Jamba models
-- **text_completion**: Generate text completions using AI21 Studio models
-- **paraphrase**: Available styles: general, casual, formal, long, short.
-
-Paraphrase text using AI21 Studio
-- **summarize**: Text length must depend on API limits.
-
-Summarize long texts using AI21 Studio process
-- **segmentation**: Segment texts into sentences using AI21 Studio process
-- **grammar_corrections**: Perform Grammatical Error Correction (GEC) on text
-- **embed_texts**: Pass a JSON array of texts and specify whether they are for "query" or "document".
-
-Generate text embeddings using AI21 Studio embeddings
 
 
 ## 💬 Prompt Examples

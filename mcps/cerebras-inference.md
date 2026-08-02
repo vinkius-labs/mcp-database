@@ -35,7 +35,6 @@ Connect to the **Cerebras Inference** platform to leverage the world's fastest A
 
 ## Available Tools (15)
 - **cancel_batch**: Cancel a batch job
-- **upload_file**: Upload a JSONL file for Batch processing
 - **create_chat_completion**: Generate conversational responses using a structured message format
 - **create_completion**: Generate text continuations from a single prompt string
 - **create_batch**: Create a batch job for asynchronous processing
@@ -49,6 +48,7 @@ Connect to the **Cerebras Inference** platform to leverage the world's fastest A
 - **list_files**: List uploaded files
 - **list_models**: Lists all currently available models
 - **list_public_models**: Retrieve model details without an API key
+- **upload_file**: Upload a JSONL file for Batch processing
 
 
 ## 💬 Prompt Examples
