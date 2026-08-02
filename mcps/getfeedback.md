@@ -41,13 +41,13 @@ Connect your **GetFeedback** account to any AI agent to automate your customer f
 - **get_response_details**: Get response metadata
 - **get_survey_stats**: Get response count
 - **get_survey_details**: Get survey metadata
-- **list_completed_feedback**: Filter for completed
 - **list_feedback_page**: Paginated responses
 - **list_recent_feedback**: Filter by date
 - **list_survey_responses**: List feedback data
-- **list_surveys**: List all surveys
 - **send_survey_invites**: Trigger survey email
+- **list_completed_feedback**: Filter for completed
 - **check_api_limits**: Verify connectivity
+- **list_surveys**: List all surveys
 
 
 ## 💬 Prompt Examples

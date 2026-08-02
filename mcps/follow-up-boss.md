@@ -7,47 +7,49 @@
 
 **Category:** [real-estate](../categories/real-estate.md)
 
-Manage real estate leads, track deals, and oversee follow-up tasks via AI agents with Follow Up Boss.
+Convert real estate leads into closings with a CRM that routes inquiries, automates follow-ups, and tracks agent performance.
 
 ## Description
-Connect your **Follow Up Boss** (FUB) account to any AI agent to automate your real estate lead management and sales pipelines through the Model Context Protocol (MCP). Follow Up Boss is the central hub for high-growth real estate teams to convert more leads into closings. This MCP server enables you to manage your contacts, track deals, and handle follow-up tasks directly through natural conversation.
+Connect your **Follow Up Boss** account to any AI agent and take full control of your real estate lead management and follow-up workflows through natural conversation.
 
 ### What you can do
 
-- **Lead Management** — List all contacts, fetch detailed profile metadata, and create new leads or people instantly.
-- **Deal Tracking** — Monitor sales opportunities and pipelines by listing and retrieving specific deal metadata.
-- **Task Oversight** — Create and manage follow-up tasks and reminders to ensure no lead falls through the cracks.
-- **Engagement Insights** — Retrieve notes attached to contacts and add new updates to lead timelines from your chat interface.
-- **Smart Filters** — Access your 'Smart Lists' to quickly identify which leads require immediate attention.
-- **Activity Tracking** — Monitor website activity events such as property views and registrations.
-- **Team Coordination** — List all CRM users and agents to maintain full context of your team's assignments.
+- **Lead Orchestration** — List and manage your complete database of people and leads, including retrieving detailed contact profiles and communication history
+- **Activity Monitoring** — Track real-time events such as website registrations, property inquiries, and inquiries from integrated portals like Zillow or Realtor.com
+- **Team Collaboration** — Programmatically add internal team notes to lead profiles and manage follow-up tasks to ensure no opportunity falls through the cracks
+- **Deal & Appointment Oversight** — Monitor real estate transactions, commissions, and upcoming property showings directly through your agent
+- **System Automation** — List and manage configured webhooks and account settings to maintain high-fidelity synchronization with your other tools
 
 ### How it works
 
-1. Subscribe to this server through the Vinkius Marketplace
-2. Enter your Follow Up Boss API Key (found in Admin > API)
-3. Start managing your real estate leads from Claude, Cursor, or any MCP client
+1. Subscribe to this server
+2. Retrieve your **API Key** from your Follow Up Boss admin settings (Admin > API)
+3. Start managing your real estate business from Claude, Cursor, or any MCP client
+
+No more manual status checking or digging through CRM lists on the go. Your AI acts as your dedicated real estate operations assistant.
 
 ### Who is this for?
 
-- **Real Estate Agents** — quickly pull contact details or add notes while on the go via simple AI commands.
-- **Team Leaders** — get an overview of team assignments and deal progress across the entire pipeline.
-- **Lead Coordinators** — automate the organization of new inquiries and follow-up tasks without switching apps.
+- **Real Estate Agents** — instantly retrieve lead details and log field activity using natural language commands
+- **Team Leaders** — monitor team-wide lead engagement and pipeline health without opening the web dashboard
+- **Inside Sales Agents (ISAs)** — automate lead triaging and task management through simple AI queries
 
 
 ## Available Tools (12)
-- **create_task**: Add a new task
-- **get_deal**: Get deal details
-- **get_person**: Get contact details
-- **list_deals**: List sales opportunities (deals)
-- **list_events**: List website activity events
-- **list_person_notes**: List notes for a contact
-- **list_people**: List contacts (people)
-- **list_smart_lists**: List smart filters (Smart Lists)
-- **list_tasks**: List follow-up tasks
-- **list_crm_users**: List team members
-- **add_note**: Add a note to a contact
-- **create_person**: Create a new contact
+- **log_lead_activity**: Log a new activity event
+- **add_internal_note**: Add a note to a lead profile
+- **create_new_lead**: Requires essential details like email or name.
+
+Add a new lead to the CRM
+- **create_followup_task**: Create a new task
+- **get_lead_details**: Get details for a specific lead
+- **list_calendar_appointments**: List showings and appointments
+- **list_real_estate_deals**: List transactions and deals
+- **list_recent_events**: List website and activity events
+- **list_person_notes**: List notes for a specific person
+- **list_leads**: List lead profiles (people)
+- **list_followup_tasks**: List CRM tasks
+- **list_configured_webhooks**: List active webhooks
 
 
 ## 💬 Prompt Examples
@@ -55,41 +57,38 @@ Connect your **Follow Up Boss** (FUB) account to any AI agent to automate your r
 Here are some examples of how you can interact with the **Follow Up Boss** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List the last 5 people added to my CRM."
+> "List all my new leads from the last 24 hours."
 
 **🤖 AI Agent:**
-> Retrieving contacts... I found 5 recent people, including 'John Smith' and 'Jane Doe'. Would you like the full profile for any of them?
+> Scanning your CRM... I've found 3 new leads from the last 24 hours: 'John Doe' (from Zillow), 'Sarah Smith' (Direct), and 'Acme Corp'. Would you like the full profile for any of them?
 
 ---
 
 **👤 You:**
-> "Create a task for John Smith (ID: 123) to 'Follow up on contract' for tomorrow."
+> "Add an internal note to lead 'p_123': 'Interested in 3-bedroom houses in North London'."
 
 **🤖 AI Agent:**
-> Task created! I've added a follow-up reminder for John Smith for tomorrow. You'll see it in your FUB dashboard.
+> Note added! I've successfully posted your comment to lead p_123's activity feed. Your team will see this update in the Follow Up Boss dashboard immediately.
 
 ---
 
 **👤 You:**
-> "Add a note to Jane Doe (ID: 456): 'Interested in waterfront properties'."
+> "Show me my upcoming property showings for today."
 
 **🤖 AI Agent:**
-> Note added! I've successfully posted the update to Jane Doe's timeline. Your team will see this interest recorded.
+> Checking your calendar... You have 2 showings today: '123 Maple St' at 2 PM with Jane Doe, and '456 Oak Ave' at 4:30 PM. I can provide the lead details for either session if needed.
 
 
 ## ❓ FAQ
 
-**Q: How do I get an API Key for Follow Up Boss?**
-Admins can generate API keys in the Follow Up Boss dashboard under Admin > API.
+**Q: How do I find my API Key in Follow Up Boss?**
+Log in as an Admin, navigate to **Admin** > **API**, and click **Create API Key** to generate your unique token.
 
-**Q: Can I see notes for a specific contact?**
-Yes, the 'list_person_notes' tool allows you to retrieve all notes associated with a specific person by their ID.
+**Q: Can I filter leads by their recent activity?**
+Yes! Use the `list_recent_events` tool to see who has registered or inquired lately across all your integrated channels.
 
-**Q: What are Smart Lists?**
-Smart Lists are saved filters in Follow Up Boss that automatically group leads based on specific criteria (e.g., 'Leads to call today').
-
-**Q: Can I update a lead's status via the agent?**
-You can use the 'updateTask' or other modification tools to manage engagement. Status updates are pushed directly to the FUB core CRM.
+**Q: How do I get a specific person's ID?**
+Use the `list_leads` tool to retrieve your contact list. Each result includes a unique `id` which you can use for granular details or notes.
 
 
 ## Installation & Usage

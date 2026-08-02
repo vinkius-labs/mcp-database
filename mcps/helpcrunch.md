@@ -7,55 +7,53 @@
 
 **Category:** [customer-support](../categories/customer-support.md)
 
-Automate customer support via HelpCrunch — manage chats, customers, and team assignments directly from any AI agent.
+Engage customers with live chat, email automation, and a knowledge base that reduces support workload and boosts satisfaction.
 
 ## Description
-Connect your **HelpCrunch** account to any AI agent and take full control of your customer communication and support workflows through natural conversation.
+Connect your **HelpCrunch** account to any AI agent and take full control of your customer support and multi-channel communication workflows through natural conversation.
 
 ### What you can do
 
-- **Chat Oversight** — List all active and past conversations, retrieve full transcripts, and monitor response times.
-- **Customer Management** — Access detailed customer profiles, add descriptive tags, and track user interaction history.
-- **Team Coordination** — Reassign chats to specific team members or departments to ensure the right person handles every query.
-- **Proactive Support** — Search through chats using complex filters to identify trends or urgent customer issues.
-- **Workflow Automation** — Update chat statuses (closed, open, snoozed) directly from the chat interface.
-- **Operational Efficiency** — List support departments and monitor the overall health of your customer service operations.
+- **Unified Chat Management** — List and manage all customer conversations and retrieve detailed chat metadata and history
+- **Proactive CRM** — Create and update customer profiles programmatically to maintain a high-fidelity database of user attributes and activities
+- **Real-time Messaging** — Send and receive messages within chats directly through your agent to provide instant customer assistance
+- **Support Orchestration** — Update chat statuses (open, pending, closed) and monitor department workloads for efficient team routing
+- **Agent Visibility** — Retrieve team agent directories and status to understand support capacity across your organization
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your HelpCrunch API Key (found in Settings > Developers)
-3. Start managing your customer support from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your API Key from your HelpCrunch dashboard (Settings > Developers > Public API)
+3. Start managing your customer communications from Claude, Cursor, or any MCP client
 
-No more jumping between multiple dashboard tabs. Your AI assistant acts as a dedicated Support Lead or Customer Success Manager.
+No more manual toggling between chat windows or searching for customer emails. Your AI acts as your dedicated support coordinator.
 
 ### Who is this for?
 
-- **Support Managers** — instantly retrieve chat summaries and check team workloads without digging through reports.
-- **Customer Success Teams** — check client history and add updates or tags during follow-ups.
-- **Sales Development Reps** — monitor new inbound chats and qualify leads directly from the communication flow.
+- **Support Teams** — instantly triage chat queues and respond to high-priority queries using natural language
+- **Customer Success Managers** — update user attributes and retrieve interaction history without leaving your workspace
+- **Sales Representatives** — identify and manage new leads from live chat interactions through automated queries
 
 
-## Available Tools (11)
-- **add_customer_tag**: Add a label/tag to a customer profile
-- **send_message**: Pass the payload as a JSON string in "body_json" (e.g., {"chat": 123, "text": "Hello"}).
+## Available Tools (12)
+- **create_customer**: Requires email and name.
 
-Send a message to a chat
-- **get_chat_details**: Get detailed information about a specific chat
-- **get_customer_details**: Get detailed profile information for a specific customer
-- **list_chats**: Each chat includes basic metadata and status.
+Create a new customer profile
+- **get_conversation_details**: Get details for a specific chat
+- **get_customer_details**: Get details for a specific customer
+- **list_team_agents**: List all agents/team members
+- **list_conversations**: List all customer chats
+- **list_customers**: List all customers
+- **list_departments**: List all departments
+- **list_messages_in_chat**: List messages from a specific chat
+- **list_active_webhooks**: List configured webhooks
+- **search_customers**: Search for customers using filters
+- **send_chat_message**: Can be sent as an agent.
 
-List all conversations (chats) in HelpCrunch
-- **list_customers**: List all customers (contacts) in HelpCrunch
-- **list_departments**: List all support departments
-- **list_chat_messages**: Useful for understanding context or historical interactions.
+Post a message to a chat
+- **update_conversation_status**: g., open, pending, closed).
 
-List all messages within a specific chat
-- **search_chats**: Pass filter criteria as a JSON string in "filter_json" (e.g., {"status": "open"}).
-
-Search for chats using filters
-- **update_chat_assignee**: Assign a chat to a specific team member
-- **update_chat_status**: Update the status of a chat (e.g., closed, open)
+Change chat status
 
 
 ## 💬 Prompt Examples
@@ -63,41 +61,38 @@ Search for chats using filters
 Here are some examples of how you can interact with the **HelpCrunch** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all open chats and show the last message for each."
+> "List all active customer chats in HelpCrunch."
 
 **🤖 AI Agent:**
-> I've retrieved your open chats. You have 3 active conversations: 'Billing query' from Sarah, 'API Issue' from Mark, and 'Feedback' from Elena. Sarah's last message was 'When is my next invoice?'. Would you like to see the full transcript for any of these?
+> I've found 5 active conversations. Notable chats include an inquiry from 'John' (ID: c_101) about pricing and a support request from 'Sarah' (ID: c_102). Which one should I open for you?
 
 ---
 
 **👤 You:**
-> "Search for all chats from the customer with email 'john.doe@example.com'."
+> "Search for customer with email 'jane.doe@example.com'."
 
 **🤖 AI Agent:**
-> Searching database... I found 2 historical chats for John Doe. The first was about 'Onboarding' (Closed) and the second is an 'Upgrade Request' (Pending). Should I retrieve the messages for the pending request?
+> I've located Jane Doe's profile (ID: 789). She is a 'VIP' customer based in London and has 3 previous interactions with our support team. Would you like to see her full activity history?
 
 ---
 
 **👤 You:**
-> "Tag customer ID 5592 with 'VIP' and 'Priority Support'."
+> "Send a message to chat ID 'c_101' saying 'I'm checking that for you right now'."
 
 **🤖 AI Agent:**
-> Tags added! I've successfully applied the 'VIP' and 'Priority Support' labels to customer 5592. They will now be clearly identified in your dashboard. Should I also check if they have any open chats?
+> Done! Message delivered to chat c_101. The customer will see your reply in the chat window immediately. I'll let you know if they respond.
 
 
 ## ❓ FAQ
 
-**Q: How do I find my HelpCrunch API Key?**
-Log in to your HelpCrunch dashboard, navigate to **Settings > Developers > Public API**. You will be able to generate and copy your unique Bearer token from there.
+**Q: How do I generate an API Key in HelpCrunch?**
+Log in to your HelpCrunch account, navigate to **Settings** > **Developers** > **Public API**, and click **Generate New API Key** to obtain your token.
 
-**Q: Can I reassign a chat to another team member?**
-Yes! Use the `update_chat_assignee` tool. You must provide the `chat_id` and the numeric `assignee_id` of the team member you wish to assign the conversation to.
+**Q: Can the agent respond to customers directly?**
+Yes! Use the `send_chat_message` tool to post replies into any active chat thread. The message will appear as coming from your agent account.
 
-**Q: How can I filter chats by status?**
-Use the `search_chats` tool and provide a JSON filter string. For example, to find open chats, pass `{"status": "open"}` in the `filter_json` parameter.
-
-**Q: Is it possible to tag customers through this integration?**
-Yes, you can use the `add_customer_tag` tool. Provide the `customer_id` and the name of the tag you want to add to their profile.
+**Q: How do I search for a customer by email?**
+The `search_customers` tool allows you to perform lookups using filters like email, name, or external ID to retrieve specific user profiles.
 
 
 ## Installation & Usage

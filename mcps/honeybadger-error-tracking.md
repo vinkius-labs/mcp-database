@@ -35,14 +35,9 @@ Connect your **Honeybadger** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
-- **list_projects**: Returns project names, IDs, tokens, language, environments, and fault/notice counts.
-
-List all projects in Honeybadger
-- **get_project**: Get full details of a Honeybadger project
 - **list_faults**: Returns class names, messages, environments, occurrence counts, and first/last noticed dates.
 
 List faults (error groups) for a Honeybadger project
-- **get_fault**: Get full details of a Honeybadger fault
 - **resolve_fault**: Irreversible matrix state change.
 
 Resolve a Honeybadger fault
@@ -50,6 +45,11 @@ Resolve a Honeybadger fault
 - **get_notice**: Get full details of a Honeybadger notice
 - **list_sites**: List uptime monitoring sites in a Honeybadger project
 - **list_members**: List team members on a Honeybadger project
+- **list_projects**: Returns project names, IDs, tokens, language, environments, and fault/notice counts.
+
+List all projects in Honeybadger
+- **get_project**: Get full details of a Honeybadger project
+- **get_fault**: Get full details of a Honeybadger fault
 - **list_deployments**: List recent deployments registered in a Honeybadger project
 
 

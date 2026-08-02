@@ -40,7 +40,6 @@ Connect your **Granola.ai** account to any AI agent and take full control of you
 
 ## Available Tools (12)
 - **list_documents**: List all meeting documents in the Granola workspace with pagination
-- **get_metadata**: Retrieve metadata for a specific meeting document
 - **get_transcript**: Retrieve the full transcript of a meeting with speaker detection
 - **get_documents_batch**: Fetch multiple documents by their IDs in a single request
 - **list_folders**: List all document lists (folders) in the Granola workspace
@@ -48,9 +47,10 @@ Connect your **Granola.ai** account to any AI agent and take full control of you
 - **list_by_date**: List meeting documents within a specific date range
 - **get_participants**: Retrieve the list of participants for a specific meeting
 - **get_summary**: Retrieve the AI-generated summary of a meeting document
-- **list_recent**: List the 20 most recent meeting documents
 - **get_action_items**: Extract action items identified from a meeting document
 - **search_documents**: Full-text search across all meeting documents
+- **get_metadata**: Retrieve metadata for a specific meeting document
+- **list_recent**: List the 20 most recent meeting documents
 
 
 ## 💬 Prompt Examples

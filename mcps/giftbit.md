@@ -37,6 +37,8 @@ Connect your **Giftbit** account to any AI agent to automate the delivery and tr
 
 ## Available Tools (12)
 - **verify_api_connection**: Verify connectivity
+- **list_delivery_regions**: List regions
+- **check_api_health**: Check API health
 - **order_email_rewards**: Send rewards via email
 - **create_reward_links**: Generate direct links
 - **create_embedded_links**: Generate embedded rewards
@@ -46,8 +48,6 @@ Connect your **Giftbit** account to any AI agent to automate the delivery and tr
 - **list_reward_brands**: List available brands
 - **list_reward_campaigns**: List sent campaigns
 - **list_gift_records**: List sent gifts
-- **list_delivery_regions**: List regions
-- **check_api_health**: Check API health
 
 
 ## 💬 Prompt Examples

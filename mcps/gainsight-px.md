@@ -36,12 +36,12 @@ Connect your **Gainsight PX** (Aptrinsic) account to any AI agent to automate yo
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Check connection
-- **get_account_details**: Get account metadata
 - **get_my_identity**: Get account profile
 - **get_user_details**: Get user metadata
 - **identify_px_account**: Sync account profile
 - **identify_px_user**: Sync user profile
+- **verify_api_connection**: Check connection
+- **get_account_details**: Get account metadata
 - **list_px_accounts**: Query PX accounts
 - **list_px_engagements**: List guides/surveys
 - **list_product_features**: List tracked features

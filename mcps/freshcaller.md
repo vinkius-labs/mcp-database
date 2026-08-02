@@ -36,9 +36,10 @@ Connect your **Freshcaller** (now Freshdesk Contact Center) account to any AI ag
 
 
 ## Available Tools (12)
+- **get_call_details**: Get call metadata
+- **get_team_details**: Get team metadata
 - **get_export_status**: Check export job
 - **get_call_recording**: Get recording link
-- **get_team_details**: Get team metadata
 - **get_agent_details**: Get agent metadata
 - **list_buyable_numbers**: Search for phone numbers
 - **list_calls**: List recent phone calls
@@ -47,7 +48,6 @@ Connect your **Freshcaller** (now Freshdesk Contact Center) account to any AI ag
 - **list_my_numbers**: List owned phone numbers
 - **list_agent_teams**: List agent teams
 - **list_agents**: List call center agents
-- **get_call_details**: Get call metadata
 
 
 ## 💬 Prompt Examples

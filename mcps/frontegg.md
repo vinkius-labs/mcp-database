@@ -38,7 +38,6 @@ Connect your **Frontegg** environment to any AI agent to automate your B2B SaaS 
 - **check_environment_status**: Verify API connection
 - **get_tenant_details**: Get tenant metadata
 - **get_user_details**: Get user metadata
-- **list_m2m_tokens**: List machine tokens
 - **list_permissions**: List granular permissions
 - **list_system_roles**: g. Admin, Read-Only) available for assignment.
 
@@ -49,6 +48,7 @@ List roles
 - **create_user**: Provision a user
 - **delete_tenant**: Delete a tenant
 - **delete_user**: Remove a user
+- **list_m2m_tokens**: List machine tokens
 
 
 ## 💬 Prompt Examples

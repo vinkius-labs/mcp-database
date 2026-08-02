@@ -38,13 +38,13 @@ Keep your business information up-to-date and your customers heard without manua
 
 ## Available Tools (12)
 - **answer_question**: Provide an answer to a customer question
+- **list_local_posts**: List posts (updates, events, offers) for a location
 - **create_review_reply**: Reply to a customer review
 - **get_location_details**: Get detailed info for a specific location
 - **get_location_insights**: Fetch performance metrics for a location
 - **get_review**: Get details of a specific review
 - **get_verification_status**: Check verification status for a location
 - **list_accounts**: List managed Google Business accounts
-- **list_local_posts**: List posts (updates, events, offers) for a location
 - **list_locations**: List business locations managed by the account
 - **list_questions**: List customer questions for a location
 - **list_reviews**: Fetch reviews for a location

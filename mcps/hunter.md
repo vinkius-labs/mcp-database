@@ -7,42 +7,47 @@
 
 **Category:** [sales-automation](../categories/sales-automation.md)
 
-Equip your AI agent with direct access to Hunter.io — find professional email addresses, verify deliverability, and enrich lead data without leaving your workflow.
+Find and verify professional email addresses with domain search, email finder, and deliverability verification for sales outreach.
 
 ## Description
-Connect **Hunter.io** to your AI agent and power your lead generation with verified email discovery and enrichment.
+Connect your **Hunter** account to any AI agent and power your email prospecting through natural conversation.
 
 ### What you can do
 
-- **Domain Search** — Find all professional email addresses associated with any company domain.
-- **Email Finder** — Locate a specific person's email using their name and company domain.
-- **Email Verification** — Verify if an email address is valid, deliverable, and safe to send to.
-- **Lead Lists** — Create and manage lead lists with verified contacts for outreach campaigns.
+- **Domain Search** — Find all professional email addresses associated with a domain or company name
+- **Email Finder** — Discover the most likely email address for a specific person by name and company
+- **Email Verification** — Check the validity and deliverability of any email address with confidence scores
+- **Email Count** — Check how many email addresses are available for a domain before searching
+- **Contact Enrichment** — Retrieve all available professional data (title, company, social profiles) for an email address
+- **Lead Management** — Create, list, update, and delete leads in your Hunter CRM with lead list organization
+- **Account Monitoring** — Track remaining API credits and account usage
 
 ### How it works
 
-1. Subscribe to the Hunter integration on the marketplace.
-2. Copy your API key from your Hunter.io dashboard (API section in the left sidebar).
-3. Ask your AI agent to find emails, verify addresses, or search domains.
+1. Subscribe to this server
+2. Enter your Hunter API Key from the account dashboard
+3. Start finding emails from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **SDR Teams** — Find decision-maker emails instantly and verify them before adding to outreach sequences.
-- **Growth Marketers** — Build targeted prospect lists by domain with verified, deliverable email addresses.
-- **Recruiters** — Locate candidate email addresses by name and company for direct outreach.
+- **Sales Teams** — find decision-maker emails, verify addresses before outreach, and save leads to your CRM
+- **Recruiters** — discover candidate contact information by name and company
+- **Marketing Teams** — build verified email lists, enrich contact databases, and manage prospecting pipelines
 
 
-## Available Tools (10)
-- **domain_search**: Search emails by domain
-- **list_recipients**: List campaign recipients
-- **email_finder**: Find specific email
-- **email_verifier**: Verify email address
-- **email_count**: Count emails for domain
-- **list_leads**: List saved leads
-- **list_lead_lists**: List lead lists
-- **get_account**: Get account info
-- **list_campaigns**: List campaigns
-- **get_campaign**: Get campaign details
+## Available Tools (12)
+- **get_domain_email_count**: Check email availability
+- **find_person_email**: Find personal email
+- **verify_email_address**: Check deliverability
+- **get_account_usage**: Check credits
+- **enrich_email_data**: Get contact intel
+- **get_lead_details**: Get lead info
+- **list_lead_folders**: List lead lists
+- **list_saved_leads**: List lead profiles
+- **update_lead_info**: Modify lead data
+- **create_new_lead**: Save lead to CRM
+- **remove_lead**: Delete lead record
+- **search_domain_emails**: Find emails for domain
 
 
 ## 💬 Prompt Examples
@@ -50,41 +55,38 @@ Connect **Hunter.io** to your AI agent and power your lead generation with verif
 Here are some examples of how you can interact with the **Hunter** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Find all email addresses at stripe.com."
+> "Find all emails at stripe.com and verify the CTO's email address."
 
 **🤖 AI Agent:**
-> I found 47 email addresses at stripe.com. Most common pattern: {first}@stripe.com. Top results: john@stripe.com (CEO, confidence: 95%), sarah@stripe.com (VP Engineering, confidence: 91%), and 45 more.
+> Domain search for 'stripe.com': 48 emails available. Top results: 1) patrick@stripe.com — Patrick Collison (CEO, confidence: 95%). Sources: 4 public web pages. 2) john@stripe.com — John Collison (President, confidence: 92%). 3) david@stripe.com — David Singleton (CTO, confidence: 88%). 4) claire@stripe.com — Claire Hughes Johnson (COO, confidence: 85%). Verifying CTO email: david@stripe.com — ✅ Status: deliverable. Confidence: 92%. MX records: valid (Google Workspace). SMTP check: passed. Accept-all: no. This email is safe for outreach. Would you like to save these as leads or enrich the contacts?
 
 ---
 
 **👤 You:**
-> "Find the email for Sarah Johnson at Acme Corp."
+> "Find the email for Sarah Chen at Acme Corp and enrich her contact data."
 
 **🤖 AI Agent:**
-> Found: sarah.johnson@acmecorp.com (confidence: 92%). Email pattern at acmecorp.com: {first}.{last}. Verified status: valid. Position: VP Marketing. Sources: 3 public pages.
+> Email found! sarah.chen@acmecorp.com — Confidence: 91%. Pattern used: {first}.{last}@acmecorp.com. Enrichment data: Full name: Sarah Chen. Title: VP of Engineering. Company: Acme Corp (acmecorp.com). Industry: SaaS. Employees: 250-500. LinkedIn: linkedin.com/in/sarahchen. Twitter: @sarahchen_tech. Location: San Francisco, CA. Previous: Senior Engineer at Google (2018-2022). Lead saved! ID: lead_4521. Added to 'Enterprise Prospects' list. Would you like to verify her email or search for more contacts at Acme Corp?
 
 ---
 
 **👤 You:**
-> "Verify if contact@oldstartup.io is still valid."
+> "Check my Hunter account credits and list all saved leads."
 
 **🤖 AI Agent:**
-> Verification result: INVALID. The MX records for oldstartup.io are not configured — the domain's email server is unreachable. Do not send to this address. I recommend removing it from your outreach list.
+> Account: john@company.com. Plan: Starter. Credits this month: Searches: 18 of 500 used (482 remaining). Verifications: 42 of 1,000 used (958 remaining). Resets: May 1, 2025. Saved leads: 34 total. Lead lists: 1) 'Enterprise Prospects' — 12 leads (8 verified, 4 unverified). 2) 'SMB Outreach' — 15 leads (12 verified, 3 risky). 3) 'Recruiting Pipeline' — 7 leads (all verified). Recent leads: sarah.chen@acmecorp.com (VP Engineering, added today). david@stripe.com (CTO, added today). mike@techco.com (Director Sales, added yesterday). Would you like to verify unverified leads or search a new domain?
 
 
 ## ❓ FAQ
 
-**Q: How do I get my Hunter.io API key?**
-Log in to your Hunter.io account at **hunter.io**. In the left sidebar, click the **API** section (or go directly to **hunter.io/api-keys**). Your API key is displayed on this page. Click the **copy** button to copy it. Paste it into the configuration field below. Free plans include 25 searches and 50 verifications per month.
+**Q: Can I find all professional email addresses for a specific company?**
+Yes. Use `search_domain_emails` with a domain (e.g., 'stripe.com') or company name (e.g., 'Stripe') to retrieve all professional emails found for that organization. Each result includes the email, confidence score, position, and source URLs. Use `get_domain_email_count` to preview how many emails are available before using search credits.
 
-**Q: Can I find the email of a specific person at a company?**
-Yes. Give your AI agent a person's first name, last name, and company domain, and it returns their most likely professional email address with a confidence score. Perfect for reaching out to specific decision-makers.
+**Q: Can I verify if an email address is valid before sending outreach?**
+Yes. The `verify_email_address` tool checks the validity and deliverability of any email address. It returns a status (deliverable, undeliverable, risky, unknown), confidence score, and details about the email server (MX records, SMTP check, accept-all detection). This prevents bounces and protects your sender reputation.
 
-**Q: How accurate is the email verification?**
-Hunter's verification checks MX records, SMTP responses, and catch-all configurations — returning a status of 'valid', 'invalid', 'accept_all', or 'unknown'. Valid emails have over 95% deliverability. Always verify before sending cold outreach to protect your sender reputation.
-
-**Q: Does it work with free plans?**
-Yes. Hunter offers a free plan with 25 email searches and 50 verifications per month. The API key works the same regardless of plan — the only difference is quota limits. Upgrade to a paid plan for higher volumes.
+**Q: How does Hunter API authentication work?**
+Hunter uses an API Key passed as a query parameter (`?api_key=YOUR_KEY`) in all requests to `api.hunter.io/v2`. This differs from the typical Bearer token pattern. Your API key is available in the Hunter dashboard under Account > API. Free accounts include 25 searches and 50 verifications per month.
 
 
 ## Installation & Usage

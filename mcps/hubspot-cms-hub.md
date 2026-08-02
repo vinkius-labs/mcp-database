@@ -50,12 +50,12 @@ List HubSpot landing pages designed for conversion with title, URL, publish stat
 - **hs_list_site_pages**: Returns page title, URL slug, current state (draft/published), and associated domain. Site pages are standard website pages (About, Contact, Pricing, etc.) — distinct from blog posts and landing pages. Use when the user asks about website content, page inventory, or publishing status.
 
 List website pages hosted in HubSpot CMS with title, URL slug, publish status, and domain
-- **hs_search_blog_posts**: Returns matching posts with title, slug, status, and date. Use when the user wants to find a specific article, check if a topic has been covered, or locate a post for updating.
-
-Search HubSpot blog posts by title or keyword to find specific articles in the content library
 - **hs_search_site_pages**: Returns matching pages with title, slug, status, and domain. Use when the user wants to find a specific website page or check if a topic has a dedicated page.
 
 Search HubSpot site pages by title or keyword to find specific web pages
+- **hs_search_blog_posts**: Returns matching posts with title, slug, status, and date. Use when the user wants to find a specific article, check if a topic has been covered, or locate a post for updating.
+
+Search HubSpot blog posts by title or keyword to find specific articles in the content library
 
 
 ## 💬 Prompt Examples

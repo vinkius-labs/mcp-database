@@ -39,6 +39,15 @@ Your AI becomes a smart home assistant, helping you manage climate, security, an
 
 
 ## Available Tools (12)
+- **list_rooms**: Useful for understanding device locations and room organization.
+
+List all rooms in a specific structure
+- **list_structures**: Each structure contains rooms and devices.
+
+List all structures (homes) in your Google Nest account
+- **set_fan_timer**: Turns the fan on for a specified duration. Duration is optional and defaults to the thermostat setting.
+
+Set the fan timer on a Nest thermostat
 - **generate_camera_stream**: The stream token is temporary and should be used immediately. Stop the stream when done.
 
 Generate a live camera stream URL from a Nest camera or doorbell
@@ -59,15 +68,6 @@ EXAMPLES:
 - "What Nest devices are connected?" → call with no params
 
 List all Google Nest devices in your home
-- **list_rooms**: Useful for understanding device locations and room organization.
-
-List all rooms in a specific structure
-- **list_structures**: Each structure contains rooms and devices.
-
-List all structures (homes) in your Google Nest account
-- **set_fan_timer**: Turns the fan on for a specified duration. Duration is optional and defaults to the thermostat setting.
-
-Set the fan timer on a Nest thermostat
 - **set_thermostat_range**: Useful for HEATCOOL mode to define the comfort range.
 
 Set both heating and cooling temperatures on a Nest thermostat

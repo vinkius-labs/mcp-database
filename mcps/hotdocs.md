@@ -38,6 +38,12 @@ No more repetitive clicking through the HotDocs web interface. Your AI acts as a
 
 
 ## Available Tools (14)
+- **list_template_packages**: Template packages define the structure of documents that can be assembled. 
+Each package contains interview questions and document output configurations.
+Use this to discover what templates are available for document assembly.
+The response includes package IDs which are required for creating work items.
+
+List all available template packages in HotDocs Advance
 - **complete_assembly**: This processes all collected answers and assembles the final documents based on the template configuration.
 After calling this, the assembled documents become available for download via list_documents and get_document_content.
 You must have already created a work item, created a version/session, and provided answers (via interview or update_answers).
@@ -91,12 +97,6 @@ and helps identify which version is currently live/active.
 Use the package_id from list_template_packages to query versions.
 
 List all versions of a template package
-- **list_template_packages**: Template packages define the structure of documents that can be assembled. 
-Each package contains interview questions and document output configurations.
-Use this to discover what templates are available for document assembly.
-The response includes package IDs which are required for creating work items.
-
-List all available template packages in HotDocs Advance
 - **list_work_items_by_date**: This is optimized for 
 date-based filtering and auditing. Both fromDate and toDate are required for this tool.
 Use ISO 8601 date format (e.g., 2024-01-01 or 2024-01-01T00:00:00 for datetime).

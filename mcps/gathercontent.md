@@ -37,9 +37,10 @@ Connect your **GatherContent** (by Bynder) account to any AI agent to automate y
 
 
 ## Available Tools (12)
+- **update_content_item**: Modify item metadata
 - **verify_api_connection**: Check connection
-- **get_item_content**: Get item metadata/content
 - **create_content_item**: Create new item
+- **get_item_content**: Get item metadata/content
 - **get_my_identity**: Get current user profile
 - **get_project_details**: Get project metadata
 - **get_template_schema**: Get template fields
@@ -50,7 +51,6 @@ Connect your **GatherContent** (by Bynder) account to any AI agent to automate y
 - **list_workflow_statuses**: ) for a project.
 
 List workflow states
-- **update_content_item**: Modify item metadata
 
 
 ## 💬 Prompt Examples
