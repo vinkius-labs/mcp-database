@@ -39,11 +39,11 @@ Connect your conversational assistant directly to **Retell AI**, a powerful plat
 Initiates an outbound phone call
 - **get_call_details**: Retrieves details for a specific call
 - **list_agents**: Lists all configured AI voice agents
-- **list_calls**: Lists all historical and active calls
-- **list_phone_numbers**: Lists all phone numbers associated with the account
 - **list_voices**: Lists all available text-to-speech voices
 - **register_web_call**: Registers a new web-based call
 - **update_agent**: Updates an existing AI voice agent
+- **list_calls**: Lists all historical and active calls
+- **list_phone_numbers**: Lists all phone numbers associated with the account
 
 
 ## 💬 Prompt Examples

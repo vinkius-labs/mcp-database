@@ -28,9 +28,9 @@ Connect your **Orderful** account to empower your AI agents with modern EDI capa
 
 
 ## Available Tools (8)
+- **list_transactions**: List EDI transactions
 - **list_relationships**: List trading partner relationships
 - **list_transaction_types**: List supported transaction types
-- **list_transactions**: List EDI transactions
 - **get_organization**: Get organization details
 - **get_transaction**: Get details for a specific transaction
 - **get_transaction_errors**: Get errors for a transaction

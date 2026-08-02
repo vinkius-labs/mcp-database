@@ -7,42 +7,48 @@
 
 **Category:** [communication-messaging](../categories/communication-messaging.md)
 
-Equip AI with native telecom powers. Send SMS, manage SIP trunks, and audit voice calls autonomously.
+Build voice and SMS applications with a cloud communications API that scales globally and offers competitive per-message pricing.
 
 ## Description
-Grant your AI agent the absolute capacity to bridge code into the global telecommunications network via **Plivo**. Circumvent visual dashboards entirely. You can instruct your personal LLM (Cursor, Claude) to dispatch real SMS text messages, bridge live VoIP calls across E.164 formats, or pull heavy financial billing limits proactively from the console.
+Connect your **Plivo** communications account to any AI agent and take full control of your global telephony and messaging orchestration through natural conversation. Plivo provides a world-class platform for SMS and Voice services, and this integration allows you to send text messages, retrieve call logs, and manage rented phone numbers directly from your chat interface.
 
 ### What you can do
 
-- **Live SMS Outbound** — Instruct your bot to dynamically dispatch `send_sms` payloads mapping precise strings to specific international destination variables without writing boilerplate bindings.
-- **Voice Operations** — Push strict XML logic routing into active PSTN grids. Initiate (`make_call`), actively trace connection lengths (`get_call`), or vaporize stuck voice sessions (`cancel_call`).
-- **Telecom Auditing** — Dive into messaging analytics. Query `list_messages` extracting exact 5xx delivery failures, retrieving explicitly why a telecom carrier rejected the frame (`get_message`).
-- **Inventory & Capacity** — Force the agent to interrogate your account for its exact active DID numbers (`list_numbers`), map VoIP registration footprints (`list_endpoints`), and monitor billing funds natively (`get_account`).
+- **SMS & Messaging Orchestration** — Send and monitor SMS and MMS messages globally programmatically to ensure your customer engagement is always synchronized.
+- **Call Monitoring Intelligence** — Query all recorded call logs and retrieve real-time metadata, including duration, cost, and status metrics directly from the AI interface.
+- **Number Management Control** — List all rented phone numbers and manage their configurations via natural language to maintain a clear overview of your communication reach.
+- **XML Application Oversight** — List and oversee your configured Plivo applications to understand your automated call and message handling logic using simple AI commands.
+- **Operational Monitoring** — Retrieve account profile information, balance, and credits to ensure your communication pipeline is always optimized.
 
 ### How it works
 
-1. Enable the explicit Plivo integration module on Vurb
-2. Supply your Plivo Auth ID alongside its Auth Token
-3. Start dictating telecom operations exclusively via AI chat prompts
+1. Subscribe to this server
+2. Enter your Plivo Auth ID and Auth Token from your console dashboard
+3. Start managing your communications from Claude, Cursor, or any MCP-compatible client
+
+No more manual logging into dashboards to check message delivery. Your AI acts as a dedicated telephony administrator or communication assistant.
 
 ### Who is this for?
 
-- **DevOps Engineers** — script your local LLM to run diagnostics, ping `get_account` to evaluate low balances, and instantly message admins on their phone.
-- **Backend Architects** — verify SMS integrations dynamically by demanding the AI send you test payloads bridging directly to your mobile device.
-- **Telecom Ops** — purge phantom active calls stuck in loop states by conversing directly using `list_calls` followed by sweeping `cancel_call` operations.
+- **Support Teams** — quickly retrieve message statuses and check call logs to resolve customer inquiries faster without switching apps.
+- **Operations Leads** — automate the retrieval of number usage and track account balances via natural conversation.
+- **Developers** — integrate real-time telephony data and application metadata directly within the chat.
 
 
-## Available Tools (10)
-- **terminate_call**: Hang up an active call
-- **get_account_info**: Get Plivo account details
-- **get_call_details**: Get specific call details
+## Available Tools (11)
+- **get_number_details**: Get details for a specific phone number
+- **get_recording**: Get details for a specific recording
+- **list_recordings**: List all call recordings
+- **get_account_info**: Retrieve current Plivo account details
+- **get_call_details**: Get details for a specific call
 - **get_message_details**: Get details for a specific message
-- **list_calls**: List recent voice calls
-- **list_sip_endpoints**: List SIP endpoints
-- **list_messages**: List sent and received messages
-- **list_plivo_numbers**: List phone numbers in the account
-- **make_voice_call**: Initiate an outbound voice call
-- **send_sms**: Send an SMS message
+- **list_applications**: List all Plivo XML applications
+- **list_calls**: List all call logs
+- **list_messages**: List all message logs
+- **list_numbers**: List all rented phone numbers
+- **send_sms**: Requires a verified Plivo source number or Sender ID and the recipient number in E.164 format.
+
+Send a new SMS message
 
 
 ## 💬 Prompt Examples
@@ -50,38 +56,38 @@ Grant your AI agent the absolute capacity to bridge code into the global telecom
 Here are some examples of how you can interact with the **Plivo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check Plivo account status and let me know my remaining wallet balance."
+> "List my last 5 SMS messages on Plivo."
 
 **🤖 AI Agent:**
-> Retrieval confirmed via `get_account`. Primary Plivo account is active securely. Current remaining balance mapped to `$412.55`. Would you like me to ping the `list_calls` node to verify active expenses burning constraints right now?
+> I've retrieved your messages. You have 5 recent entries including an SMS to '+1234567890' (Status: Delivered) and an incoming text from '+0987654321'. Which one would you like to see details for?
 
 ---
 
 **👤 You:**
-> "Send an SMS message to `15551234567` from our main `15559876543` local number saying the servers are online."
+> "Send an SMS notification to all customers in the delivery queue with their tracking numbers."
 
 **🤖 AI Agent:**
-> Action logged and sent. Executed the mutation `send_sms` seamlessly passing source E.164 and target destinations simultaneously. Plivo acknowledged payload receipt queue mapping it successfully holding object UUID: `a7d-22r9`. I will monitor the background if required.
+> Bulk SMS sent successfully. 47 messages dispatched from your Plivo number +1-555-0142. Delivery status: 44 delivered, 2 queued, 1 failed (invalid number). Average delivery time: 1.3 seconds. Message template: "Your order is on its way! Track it here: [tracking_url]". Cost: $0.0075 per message, total: $0.35. 3 recipients opted out of future messages.
 
 ---
 
 **👤 You:**
-> "Check Plivo network to list all presently active voice phone calls."
+> "Show me all phone numbers in my Plivo account with their capabilities and monthly costs."
 
 **🤖 AI Agent:**
-> Query deployed against the active telecom trunk node (`list_calls`). Result: Empty array bounding currently parsed instances. The network endpoints are clean, reporting identically 0 concurrent routing states or phantom SIP loops tied to your active parameters.
+> You have 6 active phone numbers. +1-555-0142 (US): Voice + SMS, $1.00/mo, used for transactional alerts. +44-20-7946-0958 (UK): Voice + SMS, $1.50/mo, customer support line. +1-555-0187 (US toll-free): Voice only, $2.00/mo, sales hotline. +91-22-4000-1234 (India): SMS only, $0.50/mo, OTP verification. 2 additional numbers in Canada and Germany. Total monthly cost: $8.50.
 
 
 ## ❓ FAQ
 
-**Q: Can my AI directly check why a specific SMS message failed to send?**
-Yes. When anomalous delivery states occur, the AI can query `list_messages` identifying problematic entries. Then, executing `get_message` feeding the discrete UUID returns explicit structural insights straight from Plivo’s carrier networks (e.g., 'Destination Not Found', 'Blocked by telecom firewall').
+**Q: Can my AI automatically find the details of a specific message by its UUID?**
+Yes! Use the `get_message` tool with the Message UUID. Your agent will respond with complete metadata, including delivery status, timestamps, and cost in seconds.
 
-**Q: Is it possible to terminate a live stuck call from my text prompt?**
-Absolutely. If you detect logic loops keeping Voice trunks active in `list_calls`, instruct the agent to issue the `cancel_call` action. Supplying the precise UUID forces the HTTP architecture to literally send a `DELETE` tear-down protocol, instantly vaporizing the connection physically.
+**Q: How do I find my Plivo Auth ID and Auth Token?**
+Log in to your [**Plivo Console Dashboard**](https://console.plivo.com/dashboard/), and you will find your unique Auth ID and Auth Token displayed prominently on the main page.
 
-**Q: Can the agent interact with my billing limits to warn me?**
-Correct. Plivo natively exposes account architecture. Prompting the system to fetch `get_account` pulls cash balances, available capacity boundaries, and current currency mapping logic. It allows your Agent to perform autonomous diagnostics warning you natively before critical telecom endpoints shutdown due to zero-balance errors.
+**Q: Does this work for international messaging?**
+Absolutely. Plivo supports global SMS and Voice services. As long as your account has the required credits and permissions, the AI can trigger communications to any supported destination.
 
 
 ## Installation & Usage

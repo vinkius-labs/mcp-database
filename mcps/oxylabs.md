@@ -44,15 +44,15 @@ Give your AI agent the ability to extract structured data from any website with 
 Scrape any arbitrary HTML website using Oxylabs Universal Scraper API
 - **scrape_google_serp**: Extract Google Search Engine Results Page (SERP) blocks structurally
 - **scrape_google_shopping**: Extract E-Commerce structures hitting Google Shopping engines
-- **scrape_google_images**: Parse and Scrape specific Google Image Search layout blocks
 - **scrape_google_news**: Export time-indexed News articles via Google News blocks
 - **scrape_amazon_search**: Perform structured data extraction looping over Amazon query listings
 - **scrape_amazon_product**: Extract deep E-Commerce retail arrays extracting arbitrary Amazon ASINs
-- **scrape_bing_serp**: Calculate and extract structured Bing Search Web mappings
-- **scrape_yandex_serp**: Execute structural analysis indexing Yandex Search instances
 - **scrape_custom_payload**: oxylabs.io/v1/queries` customizing Proxy Types, Locations and deeply nested config params.
 
 Dispatch entirely arbitrary strict Oxylabs Payload JSON structures
+- **scrape_google_images**: Parse and Scrape specific Google Image Search layout blocks
+- **scrape_bing_serp**: Calculate and extract structured Bing Search Web mappings
+- **scrape_yandex_serp**: Execute structural analysis indexing Yandex Search instances
 
 
 ## 💬 Prompt Examples

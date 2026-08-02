@@ -37,10 +37,10 @@ Connect your conversational assistant directly to **Rollbar**, the premier conti
 - **get_deploy**: Retrieves details for a specific deployment
 - **get_item**: Retrieves details for a specific error item
 - **get_occurrence**: Retrieves full details for a specific error occurrence
-- **list_deploys**: Lists all registered code deployments
 - **list_invites**: Lists pending team invitations
 - **list_items**: Lists all error items tracked by Rollbar
 - **list_occurrences**: Lists individual error occurrences for an item
+- **list_deploys**: Lists all registered code deployments
 - **report_deploy**: Specify environment and Git revision.
 
 Reports a new code deployment to Rollbar

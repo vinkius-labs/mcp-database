@@ -39,8 +39,8 @@ Creates a new GPU pod
 - **list_endpoints**: Lists all serverless endpoints
 - **list_gpu_types**: Lists available GPU hardware types
 - **list_pods**: Lists all GPU pods in the account
-- **list_templates**: Lists saved pod templates
 - **stop_pod**: Stops a running GPU pod
+- **list_templates**: Lists saved pod templates
 
 
 ## 💬 Prompt Examples

@@ -37,13 +37,13 @@ Connect your **Rapid7 InsightVM** (formerly Nexpose) platform directly to your A
 - **get_site**: Retrieves details for a specific network site
 - **get_vulnerability**: Retrieves details for a specific vulnerability ID
 - **list_assets**: Lists all discovered computing assets
-- **list_scans**: Lists chronological assessment scans
-- **list_sites**: Lists all configured network scan sites
-- **list_vulnerabilities**: Lists global vulnerability definitions
+- **list_vulnerabilities**: Lists globalThis vulnerability definitions
 - **trigger_scan**: Forces an immediate vulnerability scan for a site
 - **get_asset**: Retrieves detailed information for a specific asset
 - **get_asset_vulnerabilities**: Lists all vulnerabilities found on a specific asset
 - **get_scan**: Retrieves execution status and results for a specific scan
+- **list_scans**: Lists chronological assessment scans
+- **list_sites**: Lists all configured network scan sites
 
 
 ## 💬 Prompt Examples

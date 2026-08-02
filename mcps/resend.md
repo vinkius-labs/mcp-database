@@ -37,15 +37,10 @@ Your AI becomes a dedicated email operations center. No more switching between d
 
 
 ## Available Tools (10)
-- **send_email**: Returns email ID for tracking delivery status.
-
-Send a transactional email
 - **create_contact**: Add a contact to an audience
-- **get_email**: Get email delivery status
 - **send_batch_emails**: Each email needs from, to, subject, and html fields.
 
 Send batch of emails
-- **list_domains**: List verified sending domains
 - **get_domain**: Get domain details
 - **add_domain**: Returns DNS records to configure.
 
@@ -53,6 +48,11 @@ Add a new sending domain
 - **list_api_keys**: List all API keys
 - **list_audiences**: List email audiences
 - **list_contacts**: List contacts in an audience
+- **list_domains**: List verified sending domains
+- **send_email**: Returns email ID for tracking delivery status.
+
+Send a transactional email
+- **get_email**: Get email delivery status
 
 
 ## 💬 Prompt Examples

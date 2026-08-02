@@ -5,38 +5,50 @@
 
 ## Overview
 
-**Category:** [logistics-supply-chain](../categories/logistics-supply-chain.md)
+**Category:** [industry-titans](../categories/industry-titans.md)
 
-Order and inventory management — automate your fulfillment workflows via Order Desk.
+Route and manage orders from multiple sales channels to fulfillment providers with automation rules that handle the complexity.
 
 ## Description
-Connect your **Order Desk** account to empower your AI agents with multi-channel fulfillment capabilities. This server provides programmatic access to the Order Desk API for managing orders, inventory, and shipments across hundreds of integrations.
+Connect your **Order Desk** account to any AI agent and take full control of your e-commerce orchestration and order fulfillment through natural conversation. Order Desk is a multi-channel order management system that connects with hundreds of shopping carts and shipping providers, and this integration allows you to retrieve order metadata, manage inventory items, and track shipments directly from your chat interface.
 
 ### What you can do
 
-- **Order Orchestration** — List and inspect orders across all your sales channels
-- **Inventory Management** — Track stock levels and product details in real-time
-- **Shipment Monitoring** — Access tracking information and shipment details for your orders
-- **Workflow Automation** — Organize orders using folders and custom shipping methods
-- **Cross-Channel Visibility** — Monitor your entire commerce operation through simple natural language commands
+- **Order & Fulfillment Orchestration** — List and filter store orders in real-time and retrieve detailed metadata programmatically across all your connected channels.
+- **Inventory Lifecycle Management** — Access and monitor your centralized inventory database and create or update stock levels directly from the AI interface to ensure product availability.
+- **Shipment Tracking Intelligence** — Add shipment records and tracking numbers to existing orders via natural language to keep your customers informed.
+- **Custom Field Control** — Access and manage order-level custom data and checkout metadata using simple AI commands.
+- **Operational Monitoring** — Track system responses and verify connection health to ensure your e-commerce workflows are always optimized.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your **Order Desk Store ID** and **API Key**
-3. Start managing your fulfillment from Claude, Cursor, or any MCP client
+2. Enter your Order Desk Store ID and API Key from your store settings
+3. Start managing your orders and inventory from Claude, Cursor, or any MCP-compatible client
+
+No more manual logging into the dashboard to check order status or inventory levels. Your AI acts as a dedicated operations manager or fulfillment coordinator.
+
+### Who is this for?
+
+- **E-commerce Merchants** — quickly retrieve order summaries and monitor inventory health without switching apps.
+- **Operations Leads** — automate the management of shipments and track warehouse activity via natural conversation.
+- **Developers** — integrate real-time order data and store configuration directly within the chat.
 
 
-## Available Tools (7)
-- **get_inventory_item**: Get inventory item details
-- **get_order**: Get details for a specific order
-- **get_order_shipments**: Get shipments for an order
-- **list_folders**: List order folders
+## Available Tools (11)
+- **create_order_shipment**: ) to an existing order.
+
+Add a shipment to an order
+- **delete_store_order**: Delete an order from the store
+- **get_order_details**: Get details for a specific order
+- **list_order_items**: List line items within an order
+- **list_store_orders**: List orders from the store
+- **list_order_shipments**: List shipments for an order
+- **test_orderdesk_connection**: Verify API connection
+- **update_store_order**: Update an existing order
+- **create_store_order**: Create a new order
 - **list_inventory_items**: List inventory items
-- **list_orders**: You can optionally filter by folder_id.
-
-List all Order Desk orders
-- **list_shipping_methods**: List shipping methods
+- **get_inventory_item**: Get details for a specific inventory item
 
 
 ## 💬 Prompt Examples
@@ -44,16 +56,38 @@ List all Order Desk orders
 Here are some examples of how you can interact with the **Order Desk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List my latest Order Desk orders."
+> "List all active orders in Order Desk."
 
 **🤖 AI Agent:**
-> Fetching orders... I've found 10 recent orders. Here is the summary...
+> I've retrieved your orders. You have 15 active shipments across your channels. Notable recent orders include #1234 from Shopify and #5678 from Amazon. Which one would you like to see details for?
+
+---
+
+**👤 You:**
+> "Show me all orders placed today and their current fulfillment status."
+
+**🤖 AI Agent:**
+> You have 23 orders placed today. 8 are in Processing status, 11 have been Shipped (tracking numbers available), 2 are On Hold awaiting payment confirmation, and 2 are in Partial Fulfillment. Total revenue today: $4,287.50. The largest order is #ORD-9847 for $892 containing 6 line items.
+
+---
+
+**👤 You:**
+> "Check the inventory levels for SKU WIDGET-PRO-BLK and update the stock count to 250."
+
+**🤖 AI Agent:**
+> SKU WIDGET-PRO-BLK ("Widget Pro Black Edition") found. Previous stock: 47 units. I have updated the inventory count to 250 units. The item is mapped to 3 active sales channels and has a reorder point set at 25 units. Last shipment received: May 5th (200 units from supplier Acme Widgets).
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Store ID and API Key?**
-Log in to Order Desk, go to Store Settings in the sidebar, and click on the API tab.
+**Q: Can my AI automatically find the details for a specific order by its ID?**
+Yes! Use the `get_order` tool with the Order ID. Your agent will respond with complete metadata for the record, including customer information, items, and status in seconds.
+
+**Q: How do I find my Order Desk Store ID and API Key?**
+Log in to your Order Desk store, navigate to **Store Settings** > **API**, and you will find your unique Store ID and generate your secret API key there.
+
+**Q: Can I update inventory levels using the AI?**
+Absolutely. Use the `update_inventory` tool. Provide the Inventory Item ID and the new stock quantity, and the agent will sync the update to Order Desk immediately.
 
 
 ## Installation & Usage

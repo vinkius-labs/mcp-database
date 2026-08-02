@@ -36,9 +36,6 @@ Essential for **IT security teams**, **AI governance officers**, **platform engi
 
 
 ## Available Tools (27)
-- **create_api_key**: Returns the key value (shown only once) and metadata. Use this to create keys for integrations, CI/CD pipelines, or service accounts. Store the key value securely immediately after creation.
-
-Create a new API key for your Runlayer organization
 - **create_mcp_server**: Requires server name and connection details (URL, authentication method). Optionally assign skills, agents, and policies during registration. Returns the created server details including the new UUID. Use this to onboard new MCP servers to your enterprise control plane.
 
 Register a new MCP server in Runlayer
@@ -69,9 +66,6 @@ Get audit logs for your Runlayer organization
 - **get_mcp_server**: Requires the server UUID from list_mcp_servers results. Use this to review server configuration, verify security compliance, or troubleshoot connectivity issues.
 
 Get detailed information about a specific MCP server
-- **get_organization**: Use this to verify your organization configuration or get an overview of your MCP ecosystem.
-
-Get your Runlayer organization details
 - **get_scan_results**: Requires the scan ID from run_mcp_sweep_scan results. Use this to review shadow AI discoveries, identify policy violations, or generate compliance reports.
 
 Get results from an MCP sweep scan
@@ -102,9 +96,6 @@ Revoke an API key immediately
 - **run_mcp_sweep_scan**: Returns a scan ID which can be used with get_scan_results to retrieve findings. Use this for security assessments, compliance audits, or shadow AI detection.
 
 Run an MCP sweep scan to discover shadow AI across your organization
-- **update_agent**: Only pass the fields you want to change. Requires the agent ID. Use this to update agent assignments or modify metadata.
-
-Update an existing AI agent configuration
 - **update_mcp_server**: Only pass the fields you want to change. Requires the server UUID. Use this to update server endpoints, rotate credentials, or modify policy assignments.
 
 Update an existing MCP server configuration
@@ -114,6 +105,15 @@ Update an existing security or access policy
 - **update_skill**: Only pass the fields you want to change. Requires the skill ID. Use this to refine skill definitions or update documentation.
 
 Update an existing skill configuration
+- **create_api_key**: Returns the key value (shown only once) and metadata. Use this to create keys for integrations, CI/CD pipelines, or service accounts. Store the key value securely immediately after creation.
+
+Create a new API key for your Runlayer organization
+- **get_organization**: Use this to verify your organization configuration or get an overview of your MCP ecosystem.
+
+Get your Runlayer organization details
+- **update_agent**: Only pass the fields you want to change. Requires the agent ID. Use this to update agent assignments or modify metadata.
+
+Update an existing AI agent configuration
 - **create_agent**: Requires agent name and type (claude_desktop, cursor, vs_code, custom). Optionally assign MCP servers, skills, and policies during registration. Returns the created agent details. Use this to onboard new AI agents to your enterprise control plane with proper security guardrails.
 
 Register a new AI agent in Runlayer

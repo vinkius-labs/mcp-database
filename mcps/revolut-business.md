@@ -30,32 +30,6 @@ The **Revolut Business MCP Server** effectively bridges large-scale pan-European
 
 
 ## Available Tools (34)
-- **revolut_cancel_payout_link**: Funds are returned to the source account.
-
-Cancel an unclaimed payout link
-- **revolut_create_draft_payment**: The draft appears in the Revolut Business app where an authorized team member must approve it. This is the safest way to handle payments via the API.
-
-Create a payment draft for human approval
-- **revolut_create_payment**: For payments requiring human approval, use revolut_create_draft_payment instead.
-
-Make a direct payment to a counterparty
-- **revolut_create_payout_link**: The recipient receives a URL to claim the funds without sharing their banking details. The link expires after a set period.
-
-Create a payout link to send money
-- **revolut_get_transaction**: Get details of a specific transaction
-- **revolut_list_draft_payments**: Drafts require human approval in the Revolut Business app before funds are released.
-
-List all pending payment drafts
-- **revolut_list_expenses**: Use for accounts payable reconciliation and expense auditing. Note: not available in sandbox mode.
-
-List all submitted expenses
-- **revolut_list_payout_links**: Available in UK, EEA, AU, and SG.
-
-List all payout links
-- **revolut_list_roles**: List all available roles in the organisation
-- **revolut_list_team_members**: List all team members in the Revolut Business account
-- **revolut_list_webhooks**: List all configured webhooks
-- **revolut_update_webhook**: Update a webhook configuration
 - **revolut_create_counterparty**: Required before making payments to a new recipient.
 
 Add a new payment recipient (Counterparty)
@@ -102,6 +76,32 @@ Retrieve historical transactions
 - **revolut_rotate_webhook_secret**: The old secret is invalidated immediately.
 
 Rotate the signing secret for a webhook
+- **revolut_cancel_payout_link**: Funds are returned to the source account.
+
+Cancel an unclaimed payout link
+- **revolut_create_draft_payment**: The draft appears in the Revolut Business app where an authorized team member must approve it. This is the safest way to handle payments via the API.
+
+Create a payment draft for human approval
+- **revolut_create_payment**: For payments requiring human approval, use revolut_create_draft_payment instead.
+
+Make a direct payment to a counterparty
+- **revolut_create_payout_link**: The recipient receives a URL to claim the funds without sharing their banking details. The link expires after a set period.
+
+Create a payout link to send money
+- **revolut_get_transaction**: Get details of a specific transaction
+- **revolut_list_draft_payments**: Drafts require human approval in the Revolut Business app before funds are released.
+
+List all pending payment drafts
+- **revolut_list_expenses**: Use for accounts payable reconciliation and expense auditing. Note: not available in sandbox mode.
+
+List all submitted expenses
+- **revolut_list_payout_links**: Available in UK, EEA, AU, and SG.
+
+List all payout links
+- **revolut_list_roles**: List all available roles in the organisation
+- **revolut_list_team_members**: List all team members in the Revolut Business account
+- **revolut_list_webhooks**: List all configured webhooks
+- **revolut_update_webhook**: Update a webhook configuration
 
 
 ## 💬 Prompt Examples
