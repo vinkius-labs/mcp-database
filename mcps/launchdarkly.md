@@ -32,17 +32,17 @@ Connect your **LaunchDarkly** platform to any AI agent to monitor experiments an
 
 
 ## Available Tools (9)
-- **get_feature_flag**: Get in-depth specifics for a feature flag
 - **get_metric**: Get details for a specific metric
 - **get_project**: Get details for a specific project
-- **list_audit_logs**: Retrieve audit log entries for the account
 - **list_environments**: g. Test, Production).
 
 Retrieve all environments within a project
 - **list_feature_flags**: Retrieve feature flags within a project
 - **list_metrics**: Retrieve experimentation metrics within a project
-- **list_projects**: Retrieve a list of LaunchDarkly projects
 - **get_environment**: Get details regarding an environment
+- **list_audit_logs**: Retrieve audit log entries for the account
+- **list_projects**: Retrieve a list of LaunchDarkly projects
+- **get_feature_flag**: Get in-depth specifics for a feature flag
 
 
 ## 💬 Prompt Examples

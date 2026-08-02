@@ -27,9 +27,6 @@ The **Salesforce Admin** toolkit for AI agents.
 
 
 ## Available Tools (8)
-- **sf_describe_object**: Returns every field with: API name, label, data type (string/number/date/reference/picklist/boolean), whether required or nullable, max length, reference target objects (for lookups), and picklist values (for picklist fields). Essential for understanding the data model before creating or querying records. Use when the user asks "what fields does Account have?" or needs to know valid picklist values.
-
-Describe the full schema of a Salesforce object — all fields, data types, relationships, picklist values, and validation rules
 - **sf_execute_apex**: Returns compilation success/failure, execution result, and debug logs. Use for admin tasks (data cleanup, batch operations), testing hypotheses, or running one-off scripts. CAUTION: this executes real code on the org — can modify data. Example: System.debug('Hello World');
 
 Execute anonymous Apex code on the Salesforce org for admin tasks, data fixes, testing, or one-off operations
@@ -51,6 +48,9 @@ Search Salesforce metadata via the Tooling API — find Apex classes, triggers, 
 - **sf_search_users**: Returns user name, email, username, profile, role, and login info. Use to find a specific person in the org, look up who owns a record, or get user IDs for API operations.
 
 Search Salesforce users by name, email, or username to find specific team members or administrators
+- **sf_describe_object**: Returns every field with: API name, label, data type (string/number/date/reference/picklist/boolean), whether required or nullable, max length, reference target objects (for lookups), and picklist values (for picklist fields). Essential for understanding the data model before creating or querying records. Use when the user asks "what fields does Account have?" or needs to know valid picklist values.
+
+Describe the full schema of a Salesforce object — all fields, data types, relationships, picklist values, and validation rules
 
 
 ## 💬 Prompt Examples

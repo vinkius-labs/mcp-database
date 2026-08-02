@@ -39,8 +39,6 @@ Connect your **Make** account to any AI agent and take full control of your visu
 
 List Make scenarios
 - **get_scenario**: Get Make scenario details
-- **list_organizations**: List Make organizations for the current authenticated user
-- **list_connections**: List Make connections linked to an organization
 - **list_teams**: Needs org_id.
 
 List Make teams inside an organization
@@ -48,6 +46,8 @@ List Make teams inside an organization
 
 Get execution logs of a Make scenario
 - **list_data_stores**: List Make data stores
+- **list_connections**: List Make connections linked to an organization
+- **list_organizations**: List Make organizations for the current authenticated user
 
 
 ## 💬 Prompt Examples

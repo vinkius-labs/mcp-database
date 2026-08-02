@@ -35,23 +35,23 @@ Connect your **PagerDuty** account to any AI agent and take full control of inci
 
 
 ## Available Tools (11)
-- **create_incident**: Requires the From header email (your PagerDuty user email), service ID, and incident title.
-
-Create a new incident on a service
-- **get_incident**: Get detailed information about a specific incident
-- **get_service**: Get detailed configuration of a specific service
-- **get_user**: Get detailed information about a specific user
-- **list_oncalls**: List who is currently on-call across all schedules
 - **list_schedules**: List all on-call schedules
 - **list_services**: List all monitored services
 - **list_users**: List all users in the PagerDuty account
 - **update_incident**: Use to acknowledge, resolve, or reassign incidents programatically.
 
 Update an incident status (acknowledge, resolve, escalate)
+- **create_incident**: Requires the From header email (your PagerDuty user email), service ID, and incident title.
+
+Create a new incident on a service
+- **get_incident**: Get detailed information about a specific incident
+- **get_service**: Get detailed configuration of a specific service
+- **get_user**: Get detailed information about a specific user
 - **list_escalation_policies**: List all escalation policies
 - **list_incidents**: Optionally filter by status: triggered, acknowledged, resolved.
 
 List incidents across all services
+- **list_oncalls**: List who is currently on-call across all schedules
 
 
 ## 💬 Prompt Examples

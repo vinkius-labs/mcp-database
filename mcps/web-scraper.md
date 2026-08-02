@@ -33,6 +33,9 @@ Connect the **Web Scraper** utility to any AI agent to give it direct access to 
 
 
 ## Available Tools (7)
+- **batch_read**: All URLs are fetched in parallel. Maximum 10 URLs per batch.
+
+Fetch multiple web pages in parallel
 - **read**: Uses @mozilla/readability (Firefox Reader View) to extract the main article content, then converts to Markdown. Works best for articles, docs, blogs, and Wikipedia.
 
 Fetch any public web page and return its full content as clean Markdown
@@ -48,9 +51,6 @@ Fetch and parse a JSON response from a URL
 - **extract_jsonld**: org markup) from a web page.
 
 Extract JSON-LD blocks from a web page
-- **batch_read**: All URLs are fetched in parallel. Maximum 10 URLs per batch.
-
-Fetch multiple web pages in parallel
 - **crawl**: Maximum 10 pages to keep response size manageable.
 
 Crawl a website starting from a URL

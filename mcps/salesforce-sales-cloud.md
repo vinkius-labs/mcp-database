@@ -28,9 +28,6 @@ Connect **Salesforce Sales Cloud** to any AI agent — instant access to your CR
 
 
 ## Available Tools (10)
-- **sf_create_lead**: lastName and company are required fields in Salesforce. Status defaults to "Open - Not Contacted". Once qualified, leads can be converted to Contact + Account + Opportunity in the Salesforce UI. Returns the created lead with its 18-character Salesforce ID.
-
-Create a new lead in Salesforce Sales Cloud with name, company, email, phone, title, and initial status
 - **sf_opportunities_by_stage**: Returns deals sorted by amount descending. Standard stages: Prospecting, Qualification, Needs Analysis, Value Proposition, Id. Decision Makers, Perception Analysis, Proposal/Price Quote, Negotiation/Review, Closed Won, Closed Lost. Use for questions like "what deals are in Negotiation?" or "total value of Closed Won this quarter."
 
 Get all Salesforce opportunities at a specific pipeline stage for bottleneck analysis, forecasting, or stage review
@@ -40,6 +37,12 @@ Get an aggregate snapshot of the open sales pipeline — deal count and total va
 - **sf_log_activity**: Link to a person via whoId (Contact or Lead ID) and/or to a record via whatId (Account or Opportunity ID). Status defaults to "Completed". Priority: High, Normal, Low. Use to log completed calls, meetings, or emails for activity tracking and reporting.
 
 Log a call, meeting, or email as a completed Task in Salesforce linked to a contact, lead, account, or opportunity
+- **sf_update_opportunity**: Common operations: advance StageName when deal progresses, update Amount after negotiation, push CloseDate when timeline shifts, set StageName to "Closed Won"/"Closed Lost" to close. Only specified fields change.
+
+Update a Salesforce opportunity — advance stage, change amount, update close date, or add notes to reflect deal progress
+- **sf_create_lead**: lastName and company are required fields in Salesforce. Status defaults to "Open - Not Contacted". Once qualified, leads can be converted to Contact + Account + Opportunity in the Salesforce UI. Returns the created lead with its 18-character Salesforce ID.
+
+Create a new lead in Salesforce Sales Cloud with name, company, email, phone, title, and initial status
 - **sf_search_accounts**: Returns account name, industry, annual revenue, number of employees, phone, website, billing city/state/country, and owner. Accounts are the company-level records that contacts and opportunities are linked to. Use when the user asks about a company or needs account-level data.
 
 Search Salesforce accounts (companies) by name to find organizations with industry, revenue, employee count, and location
@@ -55,9 +58,6 @@ Search Salesforce opportunities by name to find deals with stage, amount, probab
 - **sf_update_lead**: Only specified fields are updated. Common operations: change Status to "Working" or "Closed - Converted", set Rating to Hot/Warm/Cold for prioritization, or update contact details. Requires the 18-character Salesforce ID.
 
 Update an existing Salesforce lead — change status, rating, contact info, or other fields to reflect qualification progress
-- **sf_update_opportunity**: Common operations: advance StageName when deal progresses, update Amount after negotiation, push CloseDate when timeline shifts, set StageName to "Closed Won"/"Closed Lost" to close. Only specified fields change.
-
-Update a Salesforce opportunity — advance stage, change amount, update close date, or add notes to reflect deal progress
 
 
 ## 💬 Prompt Examples

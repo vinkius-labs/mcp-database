@@ -23,6 +23,9 @@ Connect **QuickBooks Online** to any AI agent and manage your entire accounting 
 
 
 ## Available Tools (10)
+- **list_customers**: List all customers
+- **get_payment**: Get payment details
+- **get_company_info**: Get company information
 - **profit_and_loss**: Provide dates in YYYY-MM-DD format.
 
 Run Profit & Loss report
@@ -38,9 +41,6 @@ Execute a QuickBooks query
 - **create_customer**: Provide DisplayName and optional email/phone as JSON.
 
 Create a new customer
-- **list_customers**: List all customers
-- **get_payment**: Get payment details
-- **get_company_info**: Get company information
 
 
 ## 💬 Prompt Examples

@@ -36,20 +36,20 @@ Connect your **Mailgun** account to any AI agent and take full control of your t
 
 
 ## Available Tools (10)
-- **get_stats**: Get analytics and stats for a Mailgun domain
-- **get_templates**: List email HTML templates for a Mailgun domain
-- **list_domains**: List all configured domains on the Mailgun account
-- **list_logs**: List raw event logs (deliveries, opens, drop, bounces) for a domain
-- **list_unsubscribes**: List unsubscribed emails for a Mailgun domain
-- **send_email**: Send an email using Mailgun
-- **validate_email**: Validate an email address via the Mailgun Email Validation API
 - **list_bounces**: Useful to detect out of bounds sending or inactive audiences.
 
 Check bounced email logs and suppression list for a domain
 - **delete_bounce**: Irreversible action.
 
 Delete a bounced email from the suppression list
+- **list_unsubscribes**: List unsubscribed emails for a Mailgun domain
+- **send_email**: Send an email using Mailgun
+- **validate_email**: Validate an email address via the Mailgun Email Validation API
 - **get_domain**: Get domain details and DNS records for a Mailgun domain
+- **list_logs**: List raw event logs (deliveries, opens, drop, bounces) for a domain
+- **get_stats**: Get analytics and stats for a Mailgun domain
+- **get_templates**: List email HTML templates for a Mailgun domain
+- **list_domains**: List all configured domains on the Mailgun account
 
 
 ## 💬 Prompt Examples

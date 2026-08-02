@@ -35,23 +35,23 @@ Connect your **Linear** workspace to any AI agent and take full control of your 
 
 
 ## Available Tools (14)
-- **list_teams**: List all logical team segment boundaries mapping workspace access
+- **list_cycles**: List current tracking sprint cycle bounds mapping start/end limits
+- **list_labels**: List globalThis string metadata tags bounding issue categorization logic
+- **list_users**: List all explicitly mapped workspace members validating active access limits
+- **get_viewer**: Get active authenticated mapping validating explicit globalThis User boundaries
 - **create_issue**: Requires team_id from list_teams.
 
 Create a new issue in a Linear team
+- **update_issue**: Use list_workflow_states to get valid state IDs for transitions.
+
+Update an existing Linear issue
+- **list_teams**: List all logical team segment boundaries mapping workspace access
 - **search_issues**: Returns matching issues with state and assignee context.
 
 Search Linear issues by keyword
 - **list_issues**: List recent issues mapped on Linear workspace
 - **get_issue**: Get deep context for a specific identified Linear issue tracking limit
 - **list_projects**: List all explicit active mapped projects available in the workspace
-- **list_cycles**: List current tracking sprint cycle bounds mapping start/end limits
-- **list_labels**: List global string metadata tags bounding issue categorization logic
-- **list_users**: List all explicitly mapped workspace members validating active access limits
-- **get_viewer**: Get active authenticated mapping validating explicit global User boundaries
-- **update_issue**: Use list_workflow_states to get valid state IDs for transitions.
-
-Update an existing Linear issue
 - **list_workflow_states**: Use state IDs to transition issues via update_issue.
 
 List all workflow states (Backlog, Todo, In Progress, Done, Cancelled)

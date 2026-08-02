@@ -26,9 +26,6 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 
 
 ## Available Tools (7)
-- **odoo_create_contact**: partner record. Set is_company=true to create a company/organization, or false (default) for an individual person. For individuals, you can optionally set parent_id to link them to an existing company. Returns the created partner with its new ID.
-
-Create a new contact (person) or company in Odoo with name, email, phone, and optional parent company
 - **odoo_create_lead**: lead. Set type to "lead" for unqualified leads or "opportunity" for qualified prospects already in the pipeline. The name field is the lead title (e.g., "Website Redesign - Acme Corp"). partner_name is the company/organization name. Returns the created record with its new ID.
 
 Create a new CRM lead or opportunity in Odoo with contact details and expected revenue
@@ -47,6 +44,9 @@ Search individual contacts (people) in Odoo by name, email, or phone
 - **odoo_search_leads**: lead model for leads and opportunities matching the query. Returns id, name, email, phone, pipeline stage, expected revenue, type (lead vs opportunity), and assigned salesperson. Use this when the user wants to find prospects, check pipeline status, or look up a specific lead by name or company.
 
 Search CRM leads and opportunities in Odoo by name, company, or keyword
+- **odoo_create_contact**: partner record. Set is_company=true to create a company/organization, or false (default) for an individual person. For individuals, you can optionally set parent_id to link them to an existing company. Returns the created partner with its new ID.
+
+Create a new contact (person) or company in Odoo with name, email, phone, and optional parent company
 
 
 ## 💬 Prompt Examples

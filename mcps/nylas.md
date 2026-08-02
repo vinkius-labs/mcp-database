@@ -32,6 +32,12 @@ Connect your **Nylas** account to your AI agent and seamlessly interact with com
 
 
 ## Available Tools (10)
+- **list_messages**: Retrieve the unified inbox/messages stream for the authenticated grant
+- **send_message**: Dispatch an outbound email utilizing the native mail provider
+- **list_contacts**: List natively synced address book contacts from the user account
+- **create_contact**: Insert a brand new address book contact record
+- **list_folders**: Enumerate the organizational email directories tracking labels/files
+- **list_drafts**: Dump unsent email threads parked in the Drafts bound location
 - **list_calendars**: Returns internal calendar UUIDs required to execute event queries.
 
 List all user calendars connected via Nylas
@@ -40,12 +46,6 @@ List all user calendars connected via Nylas
 
 Create a new synchronized calendar event
 - **delete_event**: Delete a specific calendar event from the provider
-- **list_messages**: Retrieve the unified inbox/messages stream for the authenticated grant
-- **send_message**: Dispatch an outbound email utilizing the native mail provider
-- **list_contacts**: List natively synced address book contacts from the user account
-- **create_contact**: Insert a brand new address book contact record
-- **list_folders**: Enumerate the organizational email directories tracking labels/files
-- **list_drafts**: Dump unsent email threads parked in the Drafts bound location
 
 
 ## 💬 Prompt Examples

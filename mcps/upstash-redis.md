@@ -33,6 +33,13 @@ Connect your **Upstash Redis** serverless database securely to your conversation
 
 
 ## Available Tools (7)
+- **delete**: Provide a comma-separated list of keys.
+
+Deletes one or more keys from Redis
+- **increment**: Use negative numbers to decrement.
+
+Increments or decrements a numeric counter at a key
+- **get_key_info**: Retrieves the data type and TTL of a key
 - **list_keys**: Avoid broad patterns like "*" on large databases.
 
 Scans for keys matching a glob pattern
@@ -40,14 +47,7 @@ Scans for keys matching a glob pattern
 - **set**: You can specify expiry in seconds.
 
 Sets a string value at a key with an optional TTL
-- **delete**: Provide a comma-separated list of keys.
-
-Deletes one or more keys from Redis
 - **get**: Retrieves the string value stored at a key
-- **increment**: Use negative numbers to decrement.
-
-Increments or decrements a numeric counter at a key
-- **get_key_info**: Retrieves the data type and TTL of a key
 
 
 ## 💬 Prompt Examples

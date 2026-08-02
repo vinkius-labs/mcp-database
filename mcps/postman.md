@@ -7,40 +7,56 @@
 
 **Category:** [loved-by-devs](../categories/loved-by-devs.md)
 
-Bring your Postman API lifecycle to your AI — orchestrate collections, environments, API mocks, and check workspace health seamlessly.
+Design, test, and document APIs collaboratively with the world most popular API development platform used by millions of developers.
 
 ## Description
-Connect your **Postman** developer keys to any AI agent and bring the power of collaborative API design, testing, and monitoring into a pure LLM conversational context.
+Connect your **Postman** organizational account to any AI agent and take full control of your API development and documentation workflows through natural conversation.
 
 ### What you can do
 
-- **Collections & Endpoints** — Extract complete internal JSON schemas of your Postman Collections to teach your AI exactly how internal APIs work
-- **Workspaces & Environments** — Map development environments (Staging/Prod) and expose scoped variables autonomously
-- **Mock Servers** — List active API endpoints serving simulated JSON responses, crucial for checking decoupled front-ends
-- **Health Monitors** — Retrieve scheduled cron checks tracking test success and failure histories out-of-the-box
+- **Workspaces & Collections** — List all personal and team workspaces and fetch API collections directly from the Postman cloud
+- **Request Management** — Query all recorded requests (both headers and body) from any target collection using its unique ID
+- **Deep Environment Inspection** — Fetch complete variable sets, values, and precise configurations for specific environments
+- **API Documentation** — List API definitions and schemas to understand and integrate with internal or external services
+- **Infrastructure Monitoring** — Retrieve the status of scheduled monitors and mock servers to ensure service availability
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Postman Developer API Key
-3. Start mapping REST definitions natively in Claude, Cursor, or any MCP client
+2. Enter your Postman API Key from your account settings
+3. Start managing your API resources from Claude, Cursor, or any MCP-compatible client
 
-No exporting JSONs or jumping back and forth to read raw cURL formats. Ask the AI how to hit an endpoint, and it reads your collection.
+No more wrestling with complex UI tabs to find documentation or variable values. Your AI acts as a dedicated API architect or technical lead assistant.
 
 ### Who is this for?
 
-- **Backend Engineers** — quickly check if staging environment URLs differ from production without navigating the Postman app
-- **Frontend Devs** — ask the AI to retrieve exact HTTP payloads and Mock server URLs when building your UI bindings
-- **QA Testers** — monitor failing API scenarios actively reporting through Postman Scheduled Monitors
+- **Software Engineers** — instantly retrieve request details, check environment variables, and inspect schemas without leaving your IDE
+- **QA Teams** — verify monitor statuses and test collections straight from your communication hub
+- **Technical Leads** — automate organizational querying to orchestrate cross-functional API documentation smoothly
 
 
-## Available Tools (6)
-- **list_collections**: List all available API Collections on the connected Postman account
-- **list_workspaces**: List all available engineering team workspaces in Postman
-- **list_environments**: List development environments (Staging, Prod) and their variables configured in Postman
-- **list_mocks**: List configured Mock Servers on Postman to simulate API responses and test Front-Ends
-- **list_monitors**: List API health monitors, showing their schedules and last run status (Success/Failure)
-- **get_collection**: Download the complete internal schema of a Postman Collection. Exposes all API Endpoints, HTTP Methods, Headers, and Request Bodies for AI learning
+## Available Tools (9)
+- **get_workspace_details**: Get details and items for a specific workspace
+- **list_apis**: APIs represent a higher-level grouping that can include multiple versions and schemas.
+
+List all API definitions
+- **list_environments**: Environments allow for managing variables across different stages like development or production.
+
+List all environment variable sets
+- **list_workspaces**: Workspaces are the primary organizational unit in Postman.
+
+List all accessible Postman workspaces
+- **get_collection_details**: Get details and requests for a specific collection
+- **list_mocks**: Mock servers simulate API responses before the actual API is implemented.
+
+List all configured mock servers
+- **get_environment_details**: Get variables and details for an environment
+- **list_collections**: Collections are used to group and share related API requests.
+
+List all API collections
+- **list_monitors**: Monitors help ensure API performance and availability.
+
+List all scheduled collection monitors
 
 
 ## 💬 Prompt Examples
@@ -48,38 +64,38 @@ No exporting JSONs or jumping back and forth to read raw cURL formats. Ask the A
 Here are some examples of how you can interact with the **Postman** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Are there any Mock servers currently simulating our Auth API?"
+> "List all my Postman workspaces."
 
 **🤖 AI Agent:**
-> I checked your Postman configurations and found 1 active mock server tied to 'User Onboarding Flows'. It exposes exactly 4 static JSON responses for `/login` and `/token` and operates at URL `https://c123.mock.pstmn.io`. Shall I pull its schema details?
+> I've fetched your workspaces. You currently have access to: 'Core Payments API' (ID: ws-123) and 'Partner Integrations' (ID: ws-456). Which one would you like to explore?
 
 ---
 
 **👤 You:**
-> "Download our core API Collection. Tell me exactly what parameters I need to submit to the Create User endpoint."
+> "Show me the items in collection ID [ID]."
 
 **🤖 AI Agent:**
-> I extracted Collection `col-x71...`, the 'Create User' endpoint (POST `/api/v2/users`) expects a JSON body containing `email` (string, required), `role` (string, defaults to 'viewer'), and `department_id` (number, required). Would you like me to write a Javascript snippet invoking it?
+> Accessing collection... I found 8 requests inside. Key endpoints include 'POST /login' and 'GET /user/profile'. Would you like the full details of the '/user/profile' request?
 
 ---
 
 **👤 You:**
-> "Did any of our scheduled Postman monitors fail over the weekend?"
+> "Check the status of my API monitors."
 
 **🤖 AI Agent:**
-> Looking at the `list_monitors` data, your 'Checkout Flow Monitor' failed consecutively on Saturday morning. The internal log indicates an assertion error mapping a `502 Bad Gateway` status on step 3 (`POST /cart`). All other monitors are currently healthy and passing.
+> Running the check... All 3 monitors are currently active. 'Production Health' passed its last run, while 'Staging API' reported a minor latency warning. Should I drill down into the 'Staging' results?
 
 
 ## ❓ FAQ
 
-**Q: Can the AI automatically write code using my internal API documentation?**
-Absolutely. If you use `get_collection` the AI unpacks the entire Postman hierarchy. Combine this by asking the AI to 'write a Python script to hit my Users Endpoint' and it will natively respect your headers, payload requirements, and auth settings without any context copy-pasting.
+**Q: Can my AI automatically find the details of a specific collection just by providing its ID?**
+Yes! Use the `get_collection_details` tool with the unique ID. Your agent will respond with complete structure, requests, and metadata in seconds.
 
-**Q: How does the agent handle environments like production vs staging variables?**
-The agent can call `list_environments` exposing active configurations inside your workspace. If a collection points to `{{base_url}}`, the AI reads your environments array to resolve exactly what URLs or access keys map to staging versus production natively.
+**Q: How do I check my API monitors status?**
+Simply ask the agent to run the `list_monitors` tool. It will compile all scheduled monitors and their latest results configured for your environment.
 
-**Q: Can I query test success rates via AI instead of dashboards?**
-Yes. The `list_monitors` connection unrolls the cron checks tied to your Postman collections. The AI inherently sees whether the latest automated integration tests succeeded or failed, making status reports conversational.
+**Q: Does the integration permit modifying collections?**
+No. The core set of tools focuses strictly on querying and analyzing API context—listing workspaces, collections, and environments. State alteration operations are not currently exposed.
 
 
 ## Installation & Usage

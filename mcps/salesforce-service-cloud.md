@@ -31,9 +31,6 @@ Add a comment to a Salesforce case — internal note or customer-visible respons
 - **sf_create_case**: Subject is required. Status defaults to "New". Priority: High, Medium, Low. Origin: Web, Phone, Email. Link to a customer via contactId and their company via accountId (both use 18-char Salesforce IDs). Cases track the complete lifecycle of a customer support issue.
 
 Create a new support case in Salesforce Service Cloud with subject, description, priority, origin, and linked contact/account
-- **sf_case_comments**: Returns comment body, whether it is published (customer-visible), creator name, and creation date. Comments provide the full conversation history of a support case. Use to review case discussions or get context before responding.
-
-Get all comments (internal and customer-visible) on a specific Salesforce case for case history review
 - **sf_case_metrics**: Returns summary data: how many cases at each status × priority intersection. Perfect for support team dashboards, capacity planning, and identifying volume trends. Use when the user asks "how many open cases do we have?" or "what is the case breakdown by priority?"
 
 Get aggregate support case metrics — case counts grouped by status and priority for a team dashboard view
@@ -43,6 +40,9 @@ Get all Salesforce cases at a specific status for queue analysis — New, Workin
 - **sf_search_cases**: Returns case number, subject, status (New/Working/Escalated/Closed), priority (High/Medium/Low), origin channel (Web/Phone/Email), case owner, and description. Use when the user wants to find a specific support case, look up a case number, or review customer issues.
 
 Search Salesforce Service Cloud cases by subject or case number to find customer support issues
+- **sf_case_comments**: Returns comment body, whether it is published (customer-visible), creator name, and creation date. Comments provide the full conversation history of a support case. Use to review case discussions or get context before responding.
+
+Get all comments (internal and customer-visible) on a specific Salesforce case for case history review
 - **sf_search_knowledge**: Returns article title, summary, URL, and article type. Salesforce Knowledge is the built-in KB for self-service and agent-assist. Use when the user asks for help articles, documented solutions, or wants to check if an issue has been addressed in the knowledge base.
 
 Search the Salesforce Knowledge Base for published articles to find documented solutions and answers

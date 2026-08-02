@@ -39,21 +39,21 @@ List all Microsoft OneNote notebooks
 - **get_notebook**: Use this to dive deeper into a container's permissions or basic configurations.
 
 Get detailed properties of a specific notebook
-- **search_pages**: Useful when navigating deep, unindexed trees where discovering a particular keyword manually would exceed logic boundaries.
-
-Search page contents globally across all available notebooks
-- **list_section_groups**: Used for navigating highly complex, multi-layered textbook hierarchies inside OneNote.
-
-List section groups inside a specific notebook
-- **list_sections**: Sections act as the folders containing the raw pages. Requires passing the parent Notebook ID to query the correct topological children.
-
-List all sections contained within a specific notebook
 - **list_pages**: Results include the bare page metadata (IDs, titles, timestamps), but notably DO NOT include the heavy internal raw HTML content. Used for structural indexing.
 
 List all pages contained within a specific section
 - **get_page_content**: By default, OneNote pages are serialized using complex Microsoft Graph HTML formats with proprietary tags. Use this to ingest the actual written text or data.
 
 Retrieve the exact raw HTML content of a single page
+- **search_pages**: Useful when navigating deep, unindexed trees where discovering a particular keyword manually would exceed logic boundaries.
+
+Search page contents globally across all available notebooks
+- **list_sections**: Sections act as the folders containing the raw pages. Requires passing the parent Notebook ID to query the correct topological children.
+
+List all sections contained within a specific notebook
+- **list_section_groups**: Used for navigating highly complex, multi-layered textbook hierarchies inside OneNote.
+
+List section groups inside a specific notebook
 
 
 ## 💬 Prompt Examples

@@ -33,11 +33,11 @@ Connect your **Amazon Redshift** data warehouse securely to your AI agent utiliz
 
 
 ## Available Tools (7)
+- **get_results**: Retrieves the results of a completed SQL statement
 - **describe_table**: Retrieves column metadata for a table
 - **execute_sql**: This is an asynchronous operation that returns a statement ID.
 
 Executes a SQL statement using the Redshift Data API
-- **get_results**: Retrieves the results of a completed SQL statement
 - **statement_status**: Checks the execution status of a SQL statement
 - **list_schemas**: Lists all database schemas in Redshift
 - **list_statements**: Lists recent SQL statements executed in the cluster
