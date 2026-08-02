@@ -34,7 +34,21 @@ Connect the **ORCID** registry to your AI agent to seamlessly navigate the globa
 
 
 ## Available Tools (14)
+- **delete_item**: Requires Member API access token.
+
+Delete an item from an ORCID record (Member API only)
+- **expanded_search**: Search the ORCID registry (Expanded)
 - **get_works**: Get summary of research works for an ORCID record
+- **add_item**: Requires Member API access token with /activities/update or /person/update scope.
+
+Add a new item to an ORCID record (Member API only)
+- **get_activities**: Get summary of all activities for an ORCID record
+- **get_person**: Get biographical section of an ORCID record
+- **get_record**: Get full summary of an ORCID record
+- **get_section_item**: Get full details for a specific item in an ORCID record
+- **get_summary**: Requires Member API access token.
+
+Get validated trust markers (Member API only)
 - **register_webhook**: Requires /webhook scope.
 
 Register a webhook for an ORCID record (Premium Member API only)
@@ -43,20 +57,6 @@ Register a webhook for an ORCID record (Premium Member API only)
 - **update_item**: Requires Member API access token.
 
 Update an existing item in an ORCID record (Member API only)
-- **add_item**: Requires Member API access token with /activities/update or /person/update scope.
-
-Add a new item to an ORCID record (Member API only)
-- **delete_item**: Requires Member API access token.
-
-Delete an item from an ORCID record (Member API only)
-- **expanded_search**: Search the ORCID registry (Expanded)
-- **get_activities**: Get summary of all activities for an ORCID record
-- **get_person**: Get biographical section of an ORCID record
-- **get_record**: Get full summary of an ORCID record
-- **get_section_item**: Get full details for a specific item in an ORCID record
-- **get_summary**: Requires Member API access token.
-
-Get validated trust markers (Member API only)
 - **csv_search**: Search the ORCID registry and return CSV data
 
 

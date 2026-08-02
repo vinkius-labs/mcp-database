@@ -37,17 +37,16 @@ No more manual searching through folders. Your AI acts as a digital librarian th
 
 ## Available Tools (26)
 - **list_tags**: List all tags
-- **delete_tag**: Delete a tag
-- **download_document**: Download the actual document file
-- **get_correspondent**: Retrieve correspondent details
-- **get_document**: Retrieve details of a specific document
-- **get_document_type**: Retrieve document type details
-- **get_tag**: Retrieve tag details
-- **list_correspondents**: List all correspondents
-- **list_document_types**: List all document types
 - **list_documents**: Supports filtering and searching via query parameters.
 
 List all documents in Paperless-ngx
+- **create_correspondent**: Create a new correspondent
+- **delete_tag**: Delete a tag
+- **get_correspondent**: Retrieve correspondent details
+- **get_document**: Retrieve details of a specific document
+- **get_document_type**: Retrieve document type details
+- **list_correspondents**: List all correspondents
+- **list_document_types**: List all document types
 - **preview_document**: Get a preview of the document
 - **thumb_document**: Get the document thumbnail
 - **update_correspondent**: Update a correspondent
@@ -56,14 +55,15 @@ List all documents in Paperless-ngx
 - **update_tag**: Update a tag
 - **upload_document**: Upload a new document
 - **create_tag**: Create a new tag
-- **create_correspondent**: Create a new correspondent
+- **list_saved_views**: List all saved views
 - **create_document_type**: Create a new document type
 - **create_saved_view**: Create a new saved view
-- **list_saved_views**: List all saved views
 - **delete_correspondent**: Delete a correspondent
 - **delete_document**: Delete a document
 - **delete_document_type**: Delete a document type
 - **delete_saved_view**: Delete a saved view
+- **download_document**: Download the actual document file
+- **get_tag**: Retrieve tag details
 
 
 ## 💬 Prompt Examples

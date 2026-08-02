@@ -36,6 +36,17 @@ No more switching between your store backend and ShipBob dashboard to check if a
 
 
 ## Available Tools (30)
+- **get_receiving_labels**: Get PDF box labels for a WRO
+- **list_invoices**: List invoices by date range
+- **get_shipment**: Get specific shipment details
+- **list_inventory**: List all inventory items
+- **list_orders**: List orders with status/tracking filters
+- **list_products**: List products with filtering
+- **list_receiving**: List Warehouse Receiving Orders (WROs)
+- **list_transaction_fees**: List available fee types
+- **list_product_variants**: List all variants for a product
+- **query_inventory_history**: Query inventory movement events
+- **query_transactions**: Search transactions (charges, credits)
 - **batch_cancel_shipments**: Cancel multiple shipments at once
 - **batch_update_tracking**: Mark tracking as synced to your system
 - **list_returns**: List return orders
@@ -53,17 +64,6 @@ List all channels the user has access to
 - **get_inventory_levels**: Get aggregated inventory levels across all locations
 - **get_order**: Get order details and shipment status
 - **get_product**: Get details for a specific product
-- **get_receiving_labels**: Get PDF box labels for a WRO
-- **get_shipment**: Get specific shipment details
-- **list_inventory**: List all inventory items
-- **list_invoices**: List invoices by date range
-- **list_orders**: List orders with status/tracking filters
-- **list_products**: List products with filtering
-- **list_receiving**: List Warehouse Receiving Orders (WROs)
-- **list_transaction_fees**: List available fee types
-- **list_product_variants**: List all variants for a product
-- **query_inventory_history**: Query inventory movement events
-- **query_transactions**: Search transactions (charges, credits)
 - **set_external_sync_receiving**: Mark WROs as synced to your system
 - **update_product**: Update product details
 - **update_return**: Update an existing return

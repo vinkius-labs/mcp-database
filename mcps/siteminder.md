@@ -34,6 +34,10 @@ Connect your **Siteminder** account to any AI agent to streamline hotel distribu
 
 
 ## Available Tools (18)
+- **db_get_room_types**: Get room types for a property via Direct Booking API
+- **smx_get_rates**: Query pricing for a date range via SMX API
+- **db_list_properties**: List all properties in the group via Direct Booking API
+- **smx_get_availability**: Query inventory for a date range via SMX API
 - **cp_cancel_reservation**: Cancel an existing reservation
 - **cp_confirm_reservation**: Finalize booking with guest and payment details
 - **cp_get_property**: Get property details via Channels Plus API
@@ -44,10 +48,6 @@ Connect your **Siteminder** account to any AI agent to streamline hotel distribu
 - **db_get_property**: Get property details via Direct Booking API
 - **db_get_quotes**: Get pricing and availability for a specific stay
 - **db_get_room_rates**: Get room rates for a property via Direct Booking API
-- **db_get_room_types**: Get room types for a property via Direct Booking API
-- **db_list_properties**: List all properties in the group via Direct Booking API
-- **smx_get_availability**: Query inventory for a date range via SMX API
-- **smx_get_rates**: Query pricing for a date range via SMX API
 - **smx_list_hotels**: List connected properties for a publisher via SMX API
 - **smx_list_publishers**: List connected PMS providers via SMX API
 - **smx_list_rate_plans**: List rate plans for a hotel via SMX API

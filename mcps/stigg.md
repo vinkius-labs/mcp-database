@@ -35,6 +35,10 @@ No more jumping between dashboards to check a customer's entitlement or manually
 
 
 ## Available Tools (12)
+- **gql_provision_customer**: Provision a customer and optional subscription via GraphQL
+- **gql_report_usage**: Report usage via GraphQL
+- **rest_report_usage**: Report usage for metered features via REST API
+- **rest_update_customer**: Update a customer via REST API
 - **rest_cancel_subscription**: Cancel a subscription via REST API
 - **rest_create_customer**: Create a new customer via REST API
 - **rest_create_subscription**: Create a subscription via REST API
@@ -42,11 +46,7 @@ No more jumping between dashboards to check a customer's entitlement or manually
 - **rest_get_subscription**: Retrieve a subscription via REST API
 - **gql_get_customer**: Get customer details via GraphQL
 - **gql_get_entitlements_state**: Get entitlements state via GraphQL
-- **gql_provision_customer**: Provision a customer and optional subscription via GraphQL
 - **gql_provision_subscription**: Provision a subscription via GraphQL
-- **gql_report_usage**: Report usage via GraphQL
-- **rest_report_usage**: Report usage for metered features via REST API
-- **rest_update_customer**: Update a customer via REST API
 
 
 ## 💬 Prompt Examples

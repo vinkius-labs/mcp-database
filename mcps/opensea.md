@@ -36,10 +36,18 @@ No more manual searching through marketplace tabs. Your AI acts as a dedicated f
 
 
 ## Available Tools (35)
+- **get_account**: Get an OpenSea account profile
+- **list_events**: Get historical marketplace events
+- **list_listings_collection_all**: Get all active listings for a collection
+- **get_nfts_by_account**: Get NFTs owned by a specific wallet
 - **cancel_order**: Off-chain cancellation of an order
 - **generate_listing_fulfillment**: Get data to buy an NFT
 - **generate_offer_fulfillment**: Get data to accept an offer
-- **get_account**: Get an OpenSea account profile
+- **get_best_listing_nft**: Get the lowest price listing for a specific NFT
+- **get_best_offer_nft**: Get the highest offer for a specific NFT
+- **get_chains**: Get all blockchain chains supported by OpenSea
+- **get_collection_holders**: Get a list of wallet addresses holding items in a collection
+- **get_collection_stats**: Get comprehensive statistics for a collection
 - **get_collection**: Get detailed information about a collection
 - **get_collection_traits**: List all available traits in a collection
 - **get_drop_by_slug**: Get stages, supply, and minting details for a specific drop
@@ -47,30 +55,22 @@ No more manual searching through marketplace tabs. Your AI acts as a dedicated f
 - **get_nft_metadata**: Get detailed metadata including image URLs and external links for an NFT
 - **get_nft_owners**: List all owners of a specific NFT
 - **get_nft**: Get metadata, traits, ownership, and rarity for a single NFT
-- **get_swap_quote**: Get a price quote for swapping tokens
-- **get_token_balances**: Get fungible token balances for a specific wallet
-- **get_token**: Get metadata for a fungible token
-- **get_transaction_receipt**: Check the status of a submitted swap or fulfillment
-- **get_trending_collections**: Get trending collections
-- **list_collections**: List collections
-- **list_events**: Get historical marketplace events
-- **list_listings_collection_all**: Get all active listings for a collection
-- **list_offers_collection_all**: Get all active offers for a collection
-- **post_criteria_offer**: Create a collection or trait-wide offer
-- **post_listing**: Create a new listing
-- **post_swap_execute**: Get executable transaction data for a swap
-- **search**: Search across collections, NFTs, tokens, and accounts
-- **get_best_listing_nft**: Get the lowest price listing for a specific NFT
-- **get_best_offer_nft**: Get the highest offer for a specific NFT
-- **get_chains**: Get all blockchain chains supported by OpenSea
-- **get_collection_holders**: Get a list of wallet addresses holding items in a collection
-- **get_collection_stats**: Get comprehensive statistics for a collection
-- **get_nfts_by_account**: Get NFTs owned by a specific wallet
 - **get_nfts_by_collection**: Get all NFTs in a specific collection
 - **get_nfts_by_contract**: Get all NFTs for a specific smart contract
 - **get_order**: Retrieve order details
+- **get_swap_quote**: Get a price quote for swapping tokens
+- **get_token_balances**: Get fungible token balances for a specific wallet
+- **get_token**: Get metadata for a fungible token
 - **get_top_collections**: Get top collections
+- **get_transaction_receipt**: Check the status of a submitted swap or fulfillment
+- **get_trending_collections**: Get trending collections
+- **list_collections**: List collections
+- **list_offers_collection_all**: Get all active offers for a collection
+- **post_criteria_offer**: Create a collection or trait-wide offer
+- **post_listing**: Create a new listing
 - **post_offer**: Create an offer on a single item
+- **post_swap_execute**: Get executable transaction data for a swap
+- **search**: Search across collections, NFTs, tokens, and accounts
 
 
 ## 💬 Prompt Examples

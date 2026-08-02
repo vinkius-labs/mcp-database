@@ -34,6 +34,13 @@ Connect to **OpenAlex**, the world's most comprehensive open index of the global
 
 
 ## Available Tools (14)
+- **list_authors**: Always resolve names to IDs here before filtering works.
+
+List, search, or filter authors
+- **list_funders**: List, search, or filter funders
+- **list_institutions**: List, search, or filter institutions (universities, research orgs)
+- **list_publishers**: List, search, or filter publishers
+- **list_sources**: List, search, or filter sources (journals, repositories, conferences)
 - **get_author**: Get a single author by their OpenAlex ID
 - **get_funder**: Get a single funder by its OpenAlex ID
 - **get_institution**: Get a single institution by its OpenAlex ID
@@ -43,13 +50,6 @@ Connect to **OpenAlex**, the world's most comprehensive open index of the global
 - **get_work**: g., W2741809807).
 
 Get a single scholarly work by its OpenAlex ID
-- **list_authors**: Always resolve names to IDs here before filtering works.
-
-List, search, or filter authors
-- **list_funders**: List, search, or filter funders
-- **list_institutions**: List, search, or filter institutions (universities, research orgs)
-- **list_publishers**: List, search, or filter publishers
-- **list_sources**: List, search, or filter sources (journals, repositories, conferences)
 - **list_topics**: List, search, or filter research topics
 - **list_works**: Supports search, filter (e.g., author.id:A123, publication_year:>2020), sort, and group_by.
 

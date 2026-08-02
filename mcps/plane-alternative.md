@@ -33,20 +33,20 @@ Connect your **Plane** workspace to any AI agent to streamline your open-source 
 
 
 ## Available Tools (12)
-- **create_project_label**: Create a project label
-- **create_project**: Create a new project
-- **delete_project**: Delete a project
-- **get_project_features**: ) are enabled for a project.
-
-Get project features
 - **get_project_label**: Get a specific project label
 - **get_project**: Retrieve a specific project
 - **list_project_labels**: List project labels
 - **list_projects**: List all projects in a workspace
 - **unarchive_project**: Unarchive a project
-- **update_project_features**: Update project features
 - **update_project**: Update an existing project
 - **archive_project**: Archive a project
+- **delete_project**: Delete a project
+- **get_project_features**: ) are enabled for a project.
+
+Get project features
+- **update_project_features**: Update project features
+- **create_project_label**: Create a project label
+- **create_project**: Create a new project
 
 
 ## 💬 Prompt Examples

@@ -36,9 +36,8 @@ No more manual API calls to test your notification flows. Your AI acts as a dedi
 
 
 ## Available Tools (39)
-- **cancel_trigger**: Cancel active or pending workflows (e.g., digests, delays)
-- **check_topic_subscriber**: Check if a subscriber is subscribed to a topic
-- **create_environment_variable**: Create an environment variable
+- **update_topic**: Update a topic
+- **bulk_update_subscriber_preferences**: Bulk update subscriber preferences
 - **create_integration**: Create a new integration
 - **create_layout**: Create a new layout
 - **create_subscriber**: Create a new subscriber
@@ -47,7 +46,6 @@ No more manual API calls to test your notification flows. Your AI acts as a dedi
 - **create_workflow**: Create a new workflow
 - **delete_integration**: Delete an integration
 - **delete_message**: Delete a message
-- **delete_messages_by_transaction**: Delete messages by transaction ID
 - **delete_subscriber_credentials**: Delete subscriber credentials
 - **delete_subscriber**: Delete a subscriber
 - **delete_topic_subscriptions**: Delete subscriptions from a topic
@@ -56,8 +54,6 @@ No more manual API calls to test your notification flows. Your AI acts as a dedi
 - **get_subscriber_preferences**: Retrieve subscriber preferences
 - **get_subscriber**: Retrieve a subscriber by ID
 - **get_topic_subscription**: Retrieve a topic subscription
-- **get_topic**: Retrieve a topic by key
-- **list_environment_variables**: List all environment variables
 - **list_integrations**: List all integrations
 - **list_messages**: List messages
 - **list_topic_subscriptions**: List subscriptions for a topic
@@ -71,9 +67,13 @@ No more manual API calls to test your notification flows. Your AI acts as a dedi
 - **update_subscriber_credentials**: Update subscriber credentials
 - **update_subscriber_preference**: Update a subscriber preference
 - **update_subscriber**: Update an existing subscriber
-- **update_topic**: Update a topic
 - **upsert_subscriber_credentials**: Upsert subscriber credentials
-- **bulk_update_subscriber_preferences**: Bulk update subscriber preferences
+- **cancel_trigger**: Cancel active or pending workflows (e.g., digests, delays)
+- **check_topic_subscriber**: Check if a subscriber is subscribed to a topic
+- **create_environment_variable**: Create an environment variable
+- **delete_messages_by_transaction**: Delete messages by transaction ID
+- **get_topic**: Retrieve a topic by key
+- **list_environment_variables**: List all environment variables
 - **list_active_integrations**: List active integrations
 
 

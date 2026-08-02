@@ -33,17 +33,17 @@ Connect **Simple Analytics** to your AI agent for privacy-first insights. Simple
 
 
 ## Available Tools (5)
-- **send_server_event**: Submit a server-side event or pageview
-- **get_stats**: ) for a specific domain.
-
-Get aggregated statistics for a website
+- **list_websites**: List all websites associated with the user
 - **add_website**: Requires Business or Enterprise plan.
 
 Add a new website to Simple Analytics
 - **export_datapoints**: Requires User-Id credential to be set.
 
 Export raw, non-sampled data points
-- **list_websites**: List all websites associated with the user
+- **send_server_event**: Submit a server-side event or pageview
+- **get_stats**: ) for a specific domain.
+
+Get aggregated statistics for a website
 
 
 ## 💬 Prompt Examples

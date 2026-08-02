@@ -34,16 +34,16 @@ Connect your **Scopus** API credentials to any AI agent and unlock the power of 
 
 
 ## Available Tools (10)
-- **get_abstract**: Get detailed metadata for a specific document
-- **get_affiliation**: Get detailed profile for an institution
-- **get_author**: Get detailed profile for a specific author
-- **get_citation_count**: Get abstract citation count
-- **get_citation_overview**: Get citation counts and summaries by year
 - **get_plumx_metrics**: Get Altmetrics for Scopus documents
 - **get_serial_title**: Get metadata about journals (metrics like CiteScore, SJR, SNIP)
 - **search_affiliation**: Search Scopus institutional profiles
 - **search_author**: Search Scopus author profiles
 - **search_scopus**: Search Scopus abstracts and metadata
+- **get_abstract**: Get detailed metadata for a specific document
+- **get_affiliation**: Get detailed profile for an institution
+- **get_author**: Get detailed profile for a specific author
+- **get_citation_count**: Get abstract citation count
+- **get_citation_overview**: Get citation counts and summaries by year
 
 
 ## 💬 Prompt Examples

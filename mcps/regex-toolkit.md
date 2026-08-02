@@ -20,8 +20,8 @@ Parsing unstructured text to find contact information is a classic LLM vulnerabi
 
 
 ## Available Tools (3)
-- **mask_sensitive_data**: Redacts sensitive PII (emails, phones, URLs) from a text blob by replacing them with [REDACTED] tags
 - **validate_pattern**: Validates if a single string perfectly matches an email, URL, or phone format
+- **mask_sensitive_data**: Redacts sensitive PII (emails, phones, URLs) from a text blob by replacing them with [REDACTED] tags
 - **extract_pattern**: Extracts all unique emails, URLs, or phone numbers from a large body of text
 
 

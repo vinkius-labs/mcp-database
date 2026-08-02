@@ -34,9 +34,6 @@ Connect to the **ORCID** (Open Researcher and Contributor ID) registry to identi
 
 
 ## Available Tools (13)
-- **delete_item**: Requires Member API access.
-
-Delete an item from a section (Member API only)
 - **expanded_search**: Search the ORCID registry and return expanded metadata
 - **get_activities**: Get summary of all activities for an ORCID record
 - **get_item**: Get a specific item from a section using its put-code
@@ -46,6 +43,9 @@ Delete an item from a section (Member API only)
 - **get_summary**: Requires Member API access.
 
 Get validated and self-asserted summary (Member API only)
+- **delete_item**: Requires Member API access.
+
+Delete an item from a section (Member API only)
 - **register_webhook**: Requires Premium Member API.
 
 Register a webhook callback URL for an ORCID record (Premium only)

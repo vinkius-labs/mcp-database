@@ -36,22 +36,24 @@ No more jumping between dashboards to check if a user has submitted their ID. Yo
 
 
 ## Available Tools (27)
+- **get_verification**: Retrieve a Verification
+- **list_accounts**: List all Accounts
+- **list_inquiries**: List all Inquiries
+- **get_account**: Retrieve an Account
+- **get_case**: Retrieve a Case
 - **get_event**: Retrieve an Event
 - **get_inquiry**: Retrieve an Inquiry
 - **get_report**: Retrieve a Report
 - **get_transaction**: Retrieve a Transaction
-- **get_verification**: Retrieve a Verification
-- **list_accounts**: List all Accounts
+- **list_transactions**: List all Transactions
+- **redact_inquiry**: Redact an Inquiry
+- **list_webhooks**: List all Webhooks
+- **redact_account**: Redact an Account
 - **list_cases**: List all Cases
 - **list_events**: List all Events
-- **list_inquiries**: List all Inquiries
 - **list_reports**: g., Watchlists, Adverse Media).
 
 List all Reports
-- **list_transactions**: List all Transactions
-- **list_webhooks**: List all Webhooks
-- **redact_account**: Redact an Account
-- **redact_inquiry**: Redact an Inquiry
 - **redact_report**: Redact a Report
 - **redact_verification**: Redact a Verification
 - **set_case_status**: Set Status on a Case
@@ -62,8 +64,6 @@ List all Reports
 - **create_transaction**: Create a Transaction
 - **create_webhook**: Create a Webhook
 - **decline_inquiry**: Decline an Inquiry
-- **get_account**: Retrieve an Account
-- **get_case**: Retrieve a Case
 - **approve_inquiry**: Approve an Inquiry
 
 

@@ -35,6 +35,7 @@ Connect your **Syncthing** instance to any AI agent and take full control of you
 
 ## Available Tools (28)
 - **system_browse**: List directories matching a path
+- **system_shutdown**: Shutdown Syncthing
 - **system_connections**: Get configured devices and connection status
 - **get_db_completion**: Get folder/device completion status
 - **get_db_file**: Get detailed data about a specific file
@@ -68,7 +69,6 @@ Reset index database
 Resume devices
 - **set_config**: Replace entire configuration
 - **set_db_ignores**: Set ignore patterns for a folder
-- **system_shutdown**: Shutdown Syncthing
 - **system_status**: ).
 
 Get current system status and resource usage
