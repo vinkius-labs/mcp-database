@@ -35,6 +35,9 @@ Connect your **Namely** HRIS account to your AI agent and take full control of y
 
 
 ## Available Tools (10)
+- **list_jobs**: List job titles and info
+- **list_profiles**: List employee profiles
+- **list_reports**: List HR reports
 - **get_profile**: Get specific employee details
 - **get_team**: Get team details
 - **list_announcements**: List company announcements
@@ -45,9 +48,6 @@ List HR events
 - **list_groups**: g., departments, offices) in your organization.
 
 List organization groups
-- **list_jobs**: List job titles and info
-- **list_profiles**: List employee profiles
-- **list_reports**: List HR reports
 - **list_teams**: List organization teams
 
 

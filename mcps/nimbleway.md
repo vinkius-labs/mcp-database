@@ -35,16 +35,16 @@ Connect your **Nimbleway** account to your AI agent and leverage high-performanc
 
 
 ## Available Tools (10)
-- **extract_html**: Extract web page as HTML
+- **get_pipeline**: Get specific pipeline details
 - **extract_markdown**: Extract web page as Markdown
 - **get_job**: Get specific job details
 - **get_me**: Get current account info
-- **get_pipeline**: Get specific pipeline details
-- **get_account_usage**: Check account bandwidth and usage
 - **list_jobs**: List scraping jobs
 - **list_pipelines**: List scraping pipelines
 - **list_proxies**: List proxy configuration
 - **search_web**: Perform structured web search
+- **extract_html**: Extract web page as HTML
+- **get_account_usage**: Check account bandwidth and usage
 
 
 ## 💬 Prompt Examples

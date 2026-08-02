@@ -37,13 +37,13 @@ Connect your **Mode Analytics** workspace to any AI agent and take full control 
 - **run_mode_report**: Trigger a new run for a report
 - **get_mode_account**: Get authenticated account details
 - **get_mode_report_run**: Get details for a report run
+- **list_mode_members**: List workspace members
+- **list_mode_spaces**: List Mode Analytics spaces
 - **get_mode_report**: Get details for a specific report
 - **list_mode_definitions**: List calculated field definitions
-- **list_mode_members**: List workspace members
 - **list_mode_queries**: List SQL queries in a report
 - **list_mode_report_runs**: List runs for a report
 - **list_mode_reports**: List reports in a space
-- **list_mode_spaces**: List Mode Analytics spaces
 
 
 ## 💬 Prompt Examples

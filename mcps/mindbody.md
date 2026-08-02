@@ -65,15 +65,15 @@ List sales transactions
 - **list_services_pricing**: Shows price, session count, and expiration policy.
 
 List services and pricing options
-- **list_staff**: Includes name, bio, photo URL, certifications, and assigned services.
-
-List all staff and instructors
 - **list_staff_schedule**: Useful for viewing availability, managing bookings, or planning coverage.
 
 Get a staff member's appointment schedule
 - **search_clients**: Returns demographics, contact info, account balance, and membership status. The core CRM tool for studio owners.
 
 Search studio clients/members
+- **list_staff**: Includes name, bio, photo URL, certifications, and assigned services.
+
+List all staff and instructors
 
 
 ## 💬 Prompt Examples

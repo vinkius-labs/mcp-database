@@ -39,7 +39,6 @@ Capture a previously authorized card payment
 - **create_payment**: This initiates a real money authorization/charge network request. Returns the Nuvei transaction ID and status.
 
 Initialize a new payment intent with Nuvei
-- **create_card_token**: Tokenize plain card details into a vaulted payment token
 - **delete_token**: Stops future recurring charges or 1-click purchases immediately.
 
 Delete a vaulted payment token permanently
@@ -57,6 +56,7 @@ Mutate specific fields inside a vaulted token
 - **void_payment**: Note: Can only void pending auths.
 
 Cancel a pending authorized payment preventing capture
+- **create_card_token**: Tokenize plain card details into a vaulted payment token
 
 
 ## 💬 Prompt Examples

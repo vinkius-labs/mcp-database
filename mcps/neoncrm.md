@@ -39,7 +39,6 @@ Connect your **NeonCRM** account to your AI agent and take full control of your 
 - **get_donation**: Get donation details
 - **get_crm_event**: Get specific event details
 - **list_accounts**: List NeonCRM accounts
-- **list_contacts**: List CRM contacts
 - **list_custom_fields**: List CRM custom fields
 - **list_donations**: List all donations
 - **list_crm_events**: ) created in NeonCRM.
@@ -47,6 +46,7 @@ Connect your **NeonCRM** account to your AI agent and take full control of your 
 List CRM events
 - **list_grants**: List grant records
 - **list_memberships**: List account memberships
+- **list_contacts**: List CRM contacts
 
 
 ## 💬 Prompt Examples

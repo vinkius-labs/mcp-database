@@ -44,6 +44,15 @@ No more navigating multiple MTA apps or manually checking train and bus times. Y
 
 
 ## Available Tools (12)
+- **get_service_alerts**: Returns alert descriptions, affected lines and stations, severity levels, cause types (maintenance, incident, weather, special events, construction), start and end timestamps, and alternative service recommendations. Essential for service disruption awareness, alternative route planning, passenger communication, and understanding system reliability. AI agents should use this when users ask "are there any delays on the 4/5/6 line", "is LIRR running normally", or need to check service reliability before planning MTA journeys.
+
+Get current service alerts and disruptions across the MTA system
+- **get_bus_estimated_arrival**: Returns predicted arrival times, route information, destinations, wait times, and delay indicators for each expected bus. Supports both multi-route stop queries and single-route filtered queries. Essential for targeted arrival predictions, route-specific wait time estimation, and passenger trip timing. AI agents should reference this when users ask "when is the next M15 at this stop", "show arrival estimates for route B46 at stop 12345", or need route-filtered arrival data at a specific bus stop.
+
+Get estimated arrival times for buses at a stop, optionally filtered by route
+- **get_bus_predictions**: Returns predicted arrival times, route IDs, destination information, expected wait times, and whether buses are on schedule or delayed. Based on real-time vehicle tracking and schedule adherence. Essential for real-time bus arrival awareness, passenger waiting time estimation, trip timing, and connection coordination. AI agents should reference this when users ask "when is the next M15 bus at stop 12345", "show predictions for this stop", or need real-time arrival data for a specific bus stop. Stop IDs can be found using get_bus_stops.
+
+Get next bus arrival predictions for a specific bus stop
 - **get_bus_routes**: Returns route IDs, route names, operators (MTA New York City Bus, MTA Bus Company, private operators under MTA contract), and service area information. Covers local, limited-stop, and Select Bus Service (SBS) routes. Essential for route discovery, service area analysis, transit network understanding, and identifying route IDs for use in stop and prediction queries. AI agents should reference this when users ask "list all bus routes in Manhattan", "what routes serve Brooklyn", or need to identify route IDs for subsequent MTA Bus Time queries.
 
 List all MTA bus routes in New York City
@@ -62,9 +71,6 @@ Get real-time LIRR train data from the Long Island Rail Road
 - **get_metro_north_feed**: Returns train positions, trip updates, scheduled vs. real-time arrivals, delays, track information, and service disruptions across all Metro-North lines including Hudson, Harlem, New Haven, Port Jervis, Pascack Valley, and more. Essential for commuter rail tracking, arrival predictions at Grand Central Madison, and Metro-North service monitoring. AI agents should use this when users ask "when is the next Metro-North train from White Plains", "track Metro-North positions", or need real-time commuter rail data for trip planning from Westchester, Connecticut, or the Hudson Valley into NYC.
 
 Get real-time Metro-North Railroad train data
-- **get_service_alerts**: Returns alert descriptions, affected lines and stations, severity levels, cause types (maintenance, incident, weather, special events, construction), start and end timestamps, and alternative service recommendations. Essential for service disruption awareness, alternative route planning, passenger communication, and understanding system reliability. AI agents should use this when users ask "are there any delays on the 4/5/6 line", "is LIRR running normally", or need to check service reliability before planning MTA journeys.
-
-Get current service alerts and disruptions across the MTA system
 - **get_stations**: Returns station IDs, station names, complex IDs (for multi-line stations), borough information (Manhattan, Brooklyn, Queens, Bronx, Staten Island), structure types (underground, elevated, embankment, open cut), latitude/longitude coordinates, and North/East/South/West entrance coordinates. Essential for station discovery, rail network mapping, route planning, and identifying station codes for use in journey planning queries. AI agents should use this when users ask "list all stations in Manhattan", "what is the station code for Times Square", or need to understand the NYC Subway network geography.
 
 List all NYC Subway stations with details
@@ -74,12 +80,6 @@ Get real-time subway feed data for specific NYC Subway lines
 - **get_system_time**: Returns the official server timestamp in ISO 8601 format. Useful for synchronizing local clocks with the MTA system, verifying API connectivity, testing authentication, and timestamp alignment for real-time data correlation. AI agents should use this as a connectivity check before making more complex queries, or when users need to verify API responsiveness and authentication validity.
 
 Get the current MTA Bus Time system timestamp
-- **get_bus_estimated_arrival**: Returns predicted arrival times, route information, destinations, wait times, and delay indicators for each expected bus. Supports both multi-route stop queries and single-route filtered queries. Essential for targeted arrival predictions, route-specific wait time estimation, and passenger trip timing. AI agents should reference this when users ask "when is the next M15 at this stop", "show arrival estimates for route B46 at stop 12345", or need route-filtered arrival data at a specific bus stop.
-
-Get estimated arrival times for buses at a stop, optionally filtered by route
-- **get_bus_predictions**: Returns predicted arrival times, route IDs, destination information, expected wait times, and whether buses are on schedule or delayed. Based on real-time vehicle tracking and schedule adherence. Essential for real-time bus arrival awareness, passenger waiting time estimation, trip timing, and connection coordination. AI agents should reference this when users ask "when is the next M15 bus at stop 12345", "show predictions for this stop", or need real-time arrival data for a specific bus stop. Stop IDs can be found using get_bus_stops.
-
-Get next bus arrival predictions for a specific bus stop
 
 
 ## 💬 Prompt Examples

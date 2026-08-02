@@ -33,14 +33,14 @@ Connect **Mercado Livre Orders** to any AI agent and take full control of your o
 
 ## Available Tools (7)
 - **get_feedback**: Get buyer feedback/reputation for a sale
-- **get_order**: Get details of a specific sale
-- **search_orders**: Search for sales/orders
-- **get_shipments**: List shipments associated with an order
-- **get_shipping_info**: Get shipping details for an order
 - **set_tracking**: Set tracking number for a shipment
 - **cancel_order**: Requires a valid reason.
 
 Cancel a sale
+- **get_order**: Get details of a specific sale
+- **search_orders**: Search for sales/orders
+- **get_shipments**: List shipments associated with an order
+- **get_shipping_info**: Get shipping details for an order
 
 
 ## 💬 Prompt Examples

@@ -37,7 +37,6 @@ Connect your **NeverBounce** account to your AI agent and ensure your email list
 ## Available Tools (10)
 - **check_email**: Verify a single email address
 - **create_job_from_input**: Create a bulk job from raw input
-- **create_job_from_url**: Create a bulk job from a remote CSV URL
 - **delete_job**: Delete a bulk job
 - **get_account_info**: Get account credits and info
 - **get_job_results**: Get results of a completed bulk job
@@ -45,6 +44,7 @@ Connect your **NeverBounce** account to your AI agent and ensure your email list
 - **list_jobs**: List bulk verification jobs
 - **parse_job**: Parse a bulk job
 - **start_job**: Start a bulk job
+- **create_job_from_url**: Create a bulk job from a remote CSV URL
 
 
 ## 💬 Prompt Examples

@@ -30,8 +30,8 @@ Connect **Mercado Livre Interactions** to any AI agent and manage your seller re
 
 
 ## Available Tools (5)
-- **answer_question**: Reply to a buyer's question
 - **get_messages**: Get message history for a sale
+- **answer_question**: Reply to a buyer's question
 - **get_metrics**: Get detailed seller metrics
 - **get_questions**: Optional item_id to filter.
 

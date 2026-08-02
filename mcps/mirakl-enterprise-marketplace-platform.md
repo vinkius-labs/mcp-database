@@ -36,20 +36,20 @@ Connect your **Mirakl** instance to any AI agent and take full control of your e
 
 
 ## Available Tools (10)
-- **list_offers**: Represents the exact live inventory binding a specific product to a specific explicit price from a Shop.
-
-List global Marketplace offers created by multiple sellers
 - **get_offer**: Get an explicit Mirakl offer entity mapping seller limits
 - **list_orders**: List Mirakl marketplace multi-vendor checkout orders
 - **get_order**: Get deep details tracing a specific Marketplace Order transaction
 - **list_shops**: List third-party Seller accounts (Shops) operating
 - **get_shop**: Get deep configurations tracking an explicit Mirakl Seller Shop
-- **list_products**: List broad Platform Product Catalog nodes
 - **list_categories**: g. Electronics -> Computers).
 
 List static structural Mirakl marketplace Category Trees
 - **list_messages**: List internal Marketplace communication messages
 - **list_invoices**: List explicit Mirakl structural accounting invoices
+- **list_products**: List broad Platform Product Catalog nodes
+- **list_offers**: Represents the exact live inventory binding a specific product to a specific explicit price from a Shop.
+
+List globalThis Marketplace offers created by multiple sellers
 
 
 ## 💬 Prompt Examples

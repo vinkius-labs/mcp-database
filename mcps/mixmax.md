@@ -28,16 +28,16 @@ Connect **Mixmax** to your AI agent and manage your sales communication through 
 
 
 ## Available Tools (10)
-- **get_availability**: Check user calendar availability
-- **get_me**: Get current Mixmax user details
-- **list_appointment_links**: List calendar scheduling links
+- **add_recipient_to_sequence**: Add a recipient to an email sequence
+- **create_reminder**: Create a new email reminder
 - **list_contacts**: List Mixmax contacts
 - **list_events**: List email analytics events
 - **list_reminders**: List active email reminders
 - **list_sequences**: List Mixmax email sequences
 - **list_snippets**: List shared email snippets
-- **add_recipient_to_sequence**: Add a recipient to an email sequence
-- **create_reminder**: Create a new email reminder
+- **get_availability**: Check user calendar availability
+- **get_me**: Get current Mixmax user details
+- **list_appointment_links**: List calendar scheduling links
 
 
 ## 💬 Prompt Examples

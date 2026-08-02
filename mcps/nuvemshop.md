@@ -85,9 +85,6 @@ This action cannot be undone. Use this to remove webhook endpoints that are no l
 or to stop receiving notifications for specific events.
 
 Delete a webhook from your Nuvemshop store
-- **get_coupon**: Use the coupon_id obtained from list_coupons to inspect full coupon details.
-
-Get detailed information about a specific coupon
 - **get_customer**: Use the customer_id obtained from list_customers to inspect full customer details.
 This is useful for customer support, order management, or analyzing purchase history.
 
@@ -96,18 +93,10 @@ Get detailed information about a specific customer
 This is useful for verifying order status, preparing shipments, or reviewing customer purchases.
 
 Get detailed information about a specific order
-- **get_product**: Use the product_id obtained from list_products to inspect full product details.
-This is useful for verifying product data before updating or checking stock levels.
-
-Get detailed information about a specific product
 - **get_store**: Use this to verify your store
 setup and understand available features.
 
 Get details about your Nuvemshop store
-- **list_categories**: Each category includes name, description, and number of assigned products.
-Use this to understand your store's product organization and category structure.
-
-List all product categories in your Nuvemshop store
 - **list_coupons**: Each coupon includes code, type (percentage, absolute, shipping), value, validity dates,
 usage count, and minimum purchase requirements. Use this to review active promotions
 and analyze coupon performance.
@@ -162,6 +151,17 @@ Common updates include: changing price, updating stock quantity, modifying descr
 or changing product status. The product_id must exist in your store.
 
 Update an existing product in your Nuvemshop store
+- **get_coupon**: Use the coupon_id obtained from list_coupons to inspect full coupon details.
+
+Get detailed information about a specific coupon
+- **get_product**: Use the product_id obtained from list_products to inspect full product details.
+This is useful for verifying product data before updating or checking stock levels.
+
+Get detailed information about a specific product
+- **list_categories**: Each category includes name, description, and number of assigned products.
+Use this to understand your store's product organization and category structure.
+
+List all product categories in your Nuvemshop store
 
 
 ## 💬 Prompt Examples

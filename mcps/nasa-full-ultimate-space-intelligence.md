@@ -25,27 +25,15 @@ The **ultimate NASA Mega-Server** — 32+ tools across 7 domains from 10 data so
 
 
 ## Available Tools (32)
-- **get_random_apod**: Perfect for discovering amazing space imagery you might have missed. Default: 5 random images.
-
-Get random Astronomy Pictures of the Day from the 30-year archive
 - **get_apod**: Includes title, explanation, image URL, copyright, and media type (image or video). Running since June 16, 1995 — one of the most popular websites across all federal agencies.
 
 Get the Astronomy Picture of the Day — NASA's most popular API
 - **get_apod_range**: Great for exploring a week or month of astronomical imagery. Maximum range is about 30 days per request.
 
 Get APOD images for a date range
-- **get_neo_feed**: Includes estimated diameter, velocity, miss distance, and whether potentially hazardous. Source: NASA NeoWs.
+- **get_random_apod**: Perfect for discovering amazing space imagery you might have missed. Default: 5 random images.
 
-Get near-Earth asteroids approaching within a date range
-- **get_neo_lookup**: Use SPK-IDs from the feed endpoint.
-
-Get detailed information about a specific asteroid by its NASA SPK-ID
-- **get_neo_browse**: Returns 20 asteroids per page. Use for exploring the complete known catalog of near-Earth objects.
-
-Browse the complete catalog of known near-Earth asteroids
-- **get_close_approaches**: Filter by distance threshold, date range, and minimum size. Critical for planetary defense monitoring.
-
-Get future close approaches of asteroids to Earth from JPL CNEOS
+Get random Astronomy Pictures of the Day from the 30-year archive
 - **get_fireballs**: Includes location, velocity, energy (kilotons of TNT equivalent), and altitude. Covers events worldwide.
 
 Get atmospheric fireball (bolide) events detected by US government sensors
@@ -73,7 +61,7 @@ Get exoplanets discovered via the transit method (Kepler/TESS)
 Get exoplanets in the habitable zone — where liquid water could exist
 - **get_planet_stats**: Shows how exoplanet science has exploded since Kepler's launch in 2009.
 
-Get global exoplanet discovery statistics: totals, methods, yearly trends
+Get globalThis exoplanet discovery statistics: totals, methods, yearly trends
 - **get_mars_photos**: Filter by camera: FHAZ (front hazard), RHAZ (rear hazard), MAST (mast), CHEMCAM, MAHLI, MARDI, NAVCAM. Curiosity has 800K+ photos.
 
 Get Mars rover photos by sol number and camera
@@ -86,16 +74,6 @@ Get the mission manifest for a Mars rover
 - **get_mars_latest**: Curiosity is still active and sending new photos. Opportunity and Spirit missions have ended but their full archives are available.
 
 Get the most recent photos from a Mars rover
-- **search_media**: Covers every mission: Apollo, Space Shuttle, ISS, Hubble, Webb, Mars rovers, and more. Filter by media type and year range.
-
-Search NASA's image and video library — 140,000+ assets
-- **get_media_asset**: Use NASA IDs from search results.
-
-Get download URLs for a NASA media asset by its NASA ID
-- **get_media_metadata**: Get full metadata for a NASA media asset
-- **search_patents**: NASA technologies have been adapted into thousands of commercial products — from memory foam to water purification systems.
-
-Search NASA patents and technology spinoffs available for licensing
 - **get_cme**: CMEs are massive bursts of solar wind and magnetic fields from the Sun. Earth-directed CMEs cause geomagnetic storms and aurora. Default: last 30 days.
 
 Get Coronal Mass Ejection (CME) events from NASA DONKI
@@ -117,6 +95,28 @@ Get radiation belt enhancement events from NASA DONKI
 - **get_donki_notifications**: A unified feed of all space weather events: CMEs, flares, storms, shocks, and radiation events. Good for a quick overview of recent solar activity.
 
 Get all recent DONKI space weather notifications
+- **get_neo_feed**: Includes estimated diameter, velocity, miss distance, and whether potentially hazardous. Source: NASA NeoWs.
+
+Get near-Earth asteroids approaching within a date range
+- **get_neo_lookup**: Use SPK-IDs from the feed endpoint.
+
+Get detailed information about a specific asteroid by its NASA SPK-ID
+- **get_neo_browse**: Returns 20 asteroids per page. Use for exploring the complete known catalog of near-Earth objects.
+
+Browse the complete catalog of known near-Earth asteroids
+- **get_close_approaches**: Filter by distance threshold, date range, and minimum size. Critical for planetary defense monitoring.
+
+Get future close approaches of asteroids to Earth from JPL CNEOS
+- **search_media**: Covers every mission: Apollo, Space Shuttle, ISS, Hubble, Webb, Mars rovers, and more. Filter by media type and year range.
+
+Search NASA's image and video library — 140,000+ assets
+- **get_media_asset**: Use NASA IDs from search results.
+
+Get download URLs for a NASA media asset by its NASA ID
+- **get_media_metadata**: Get full metadata for a NASA media asset
+- **search_patents**: NASA technologies have been adapted into thousands of commercial products — from memory foam to water purification systems.
+
+Search NASA patents and technology spinoffs available for licensing
 
 
 ## 💬 Prompt Examples

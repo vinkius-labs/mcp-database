@@ -36,12 +36,12 @@ Connect your **Neptune.ai** account to any AI agent and take full control of you
 
 
 ## Available Tools (6)
+- **get_attributes**: Get parameters mapped within an experiment runtime bounds
 - **list_projects**: List accessible Neptune workspaces and projects
 - **get_project**: Get specific details for a targeted Neptune ML project
 - **search_runs**: Search explicitly tracked ML experimentation runs inside a project
-- **get_attributes**: Get parameters mapped within an experiment runtime bounds
-- **list_models**: List trained tracking models packaged natively within a project
 - **get_user**: Get specific user credentials and availability details
+- **list_models**: List trained tracking models packaged natively within a project
 
 
 ## 💬 Prompt Examples

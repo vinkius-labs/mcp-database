@@ -35,7 +35,6 @@ Mercado Livre is the largest e-commerce ecosystem in Latin America.
 
 ## Available Tools (9)
 - **get_domain_attributes**: Get required attributes for a category/domain
-- **get_categories**: List top-level categories of Mercado Livre Brasil
 - **create_item**: Create a new listing
 - **delete_item**: Deactivate a listing (close it)
 - **get_item**: Get details of a specific listing
@@ -45,6 +44,7 @@ Mercado Livre is the largest e-commerce ecosystem in Latin America.
 Search for listings belonging to the authenticated user
 - **update_stock**: Update available quantity for an item
 - **update_item**: Update a listing (title, description, attributes)
+- **get_categories**: List top-level categories of Mercado Livre Brasil
 
 
 ## 💬 Prompt Examples
