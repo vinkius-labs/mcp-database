@@ -39,8 +39,6 @@ No more manual filtering through complex CRM views to find a lead's phone number
 
 
 ## Available Tools (10)
-- **list_accounts**: List all accounts
-- **list_calls**: List all calls
 - **list_contacts**: List all contacts
 - **list_deals**: List all deals
 - **get_contact**: Get contact details
@@ -51,6 +49,8 @@ No more manual filtering through complex CRM views to find a lead's phone number
 List all CRM leads
 - **list_products**: List all products
 - **list_tasks**: List all tasks
+- **list_accounts**: List all accounts
+- **list_calls**: List all calls
 
 
 ## 💬 Prompt Examples

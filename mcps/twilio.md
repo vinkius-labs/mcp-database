@@ -36,31 +36,31 @@ No more bouncing between the Twilio Console and your dashboard. Your AI agent be
 
 
 ## Available Tools (15)
-- **cancel_active_call**: Immediately terminates an active voice call
-- **delete_message**: The message body becomes inaccessible after deletion. This action is irreversible.
-
-Permanently delete an SMS message record
-- **get_account_info**: Retrieves information about the master Twilio account status
-- **get_message_details**: Retrieves detailed metadata for a specific SMS message
 - **get_recording_details**: Requires the recording SID (starting with RE).
 
 Get detailed information about a specific call recording
 - **get_usage_records**: Retrieves usage statistics and billing records for the account
-- **list_calls**: Lists recent voice calls associated with the account
-- **list_api_keys**: Lists API keys configured for the account
-- **list_messages**: Lists recent SMS messages sent or received by the account
 - **list_phone_numbers**: List all incoming phone numbers owned by the account
 - **list_call_queues**: List all call queues configured for the account
 - **list_recordings**: Lists all voice recordings stored in the account
+- **send_sms**: Provide an E.164 sender number and target receiver number.
+
+Sends an SMS message using the Twilio API
+- **cancel_active_call**: Immediately terminates an active voice call
+- **get_account_info**: Retrieves information about the master Twilio account status
+- **get_message_details**: Retrieves detailed metadata for a specific SMS message
 - **lookup_phone_number**: Provide the number in E.164 format.
 
 Look up information about a phone number
 - **create_voice_call**: Provide a caller ID, receiver number, and a TwiML URL.
 
 Initiates an outbound voice call using TwiML instructions
-- **send_sms**: Provide an E.164 sender number and target receiver number.
+- **delete_message**: The message body becomes inaccessible after deletion. This action is irreversible.
 
-Sends an SMS message using the Twilio API
+Permanently delete an SMS message record
+- **list_calls**: Lists recent voice calls associated with the account
+- **list_api_keys**: Lists API keys configured for the account
+- **list_messages**: Lists recent SMS messages sent or received by the account
 
 
 ## 💬 Prompt Examples

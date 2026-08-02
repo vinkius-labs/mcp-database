@@ -7,50 +7,48 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Translate and audit text — manage multilingual communication via AI.
+Translate text between 30+ languages with neural machine translation that captures nuance and tone better than generic engines.
 
 ## Description
-Empower your AI agent to orchestrate your entire multilingual workflow with **DeepL**, the world's most accurate AI translator. By connecting DeepL to your agent, you transform complex translation tasks into a natural conversation. Your agent can instantly translate text between dozens of languages, audit available language pairs, and monitor API usage without you ever touching a technical dashboard. Whether you are localized content or communicating with international teams, your agent acts as a real-time linguistic bridge, ensuring your communication is always precise and professional.
+Connect your **DeepL** account to any AI agent and access neural machine translation through natural conversation.
 
 ### What you can do
 
-- **Text Auditing** — Translate text into target languages and retrieve detected source language metadata instantly.
-- **Linguistic Oversight** — List all supported source and target languages to maintain a clear view of translation options.
-- **Usage Intelligence** — Monitor your character count and API limits to maintain strict control over your translation budget.
-- **Glossary Management** — List and query configured translation glossaries to ensure consistent brand terminology.
-- **Contextual Tone Control** — Translate text enforcing strict formal, informal, or standard business tones instantly.
-- **Markup Preservation** — Translate HTML elements while safely preserving tag boundaries and web structure.
+- **Text Translation** — Translate text into 30+ languages with optional formality control (formal, informal, or default)
+- **Glossary-Powered Translation** — Apply custom glossaries to ensure consistent terminology across translations
+- **Glossary Management** — Create, list, inspect, and delete custom glossaries with TSV term pairs
+- **Language Discovery** — List all supported source and target languages, and glossary language pair combinations
+- **API Usage Monitoring** — Track character count consumed, remaining quota, and billing period
+- **Document Translation** — Monitor the progress of submitted document translations
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your DeepL API Key (Free or Pro)
-3. Start managing your multilingual intelligence through Claude, Cursor, or any MCP-compatible client
+2. Enter your DeepL API Key from your account dashboard
+3. Start translating from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Localization Managers** — monitor translation consistency and retrieve glossary metadata straight from your workflow.
-- **Content Writers** — verify translated segments and audit language support for global campaigns.
-- **International Teams** — perform rapid audits of project communications through natural language.
-- **Operations Leads** — automate translation data querying to orchestrate cross-functional global teams smoothly.
+- **Localization Teams** — translate marketing copy, product descriptions, and documentation with consistent terminology via glossaries
+- **Content Creators** — translate blog posts and social media content with appropriate formality for each market
+- **Developers** — integrate high-quality translation into AI workflows and monitor API consumption
 
 
-## Available Tools (9)
-- **translate_text_formal**: g., "Sie" in German, "vous" in French) suitable for business communications.
-
-Translate text using a formal/business tone
-- **translate_html_markup**: Translate HTML elements while preserving tag structure
-- **translate_text_informal**: g., "du" in German, "tu" in French) suitable for casual platforms.
-
-Translate text using an informal/casual tone
-- **get_account_glossaries**: List configured translation glossaries
-- **get_glossary_dictionary**: Get term mapping entries for a specific glossary ID
-- **get_source_languages**: List all supported source languages for translation
-- **get_target_languages**: g., EN-US, PT-BR) that DeepL can translate TO.
-
-List all supported target languages for translation
-- **get_api_usage**: Get current API usage and character limit constraints
-- **translate_text_standard**: Translate text into a target language using standard tone
+## Available Tools (14)
+- **create_glossary**: Create a glossary
+- **delete_glossary**: Delete a glossary
+- **get_document_status**: Check document translation status
+- **get_glossary_entries**: Get glossary entries
+- **get_glossary**: Get glossary details
+- **get_usage**: Check API usage
+- **list_glossaries**: List glossaries
+- **list_glossary_language_pairs**: List glossary language pairs
+- **list_source_languages**: List source languages
+- **list_target_languages**: List target languages
+- **translate_formal**: Translate with formal tone
+- **translate_informal**: Translate with informal tone
+- **translate_text**: Translate text
+- **translate_with_glossary**: Translate using glossary
 
 
 ## 💬 Prompt Examples
@@ -58,38 +56,38 @@ List all supported target languages for translation
 Here are some examples of how you can interact with the **DeepL** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Translate 'Hello world' into Portuguese using DeepL."
+> "Translate 'Welcome to our platform. We look forward to working with you.' into German (formal) and Brazilian Portuguese (informal)."
 
 **🤖 AI Agent:**
-> The translation for 'Hello world' into Portuguese is 'Olá mundo'. I've detected the source language as English. Would you like to translate more strings?
+> German (formal): 'Willkommen auf unserer Plattform. Wir freuen uns auf die Zusammenarbeit mit Ihnen.' Brazilian Portuguese (informal): 'Bem-vindo à nossa plataforma. Estamos ansiosos para trabalhar com você.' The formal version uses 'Ihnen' (Sie-form) while the informal Portuguese uses 'você' instead of 'o senhor'. Would you like to create a glossary for consistent terminology or translate more content?
 
 ---
 
 **👤 You:**
-> "Show me all supported target languages in DeepL."
+> "Create a glossary for EN→FR with our brand terms and then translate a marketing paragraph using it."
 
 **🤖 AI Agent:**
-> I've retrieved the list of 30+ supported target languages, including Spanish, French, Japanese, and Chinese. Would you like the language codes for any of them?
+> Glossary created! ID: gl_8a4f2c, Name: 'Brand Terms EN-FR', Source: EN, Target: FR, Entries: 5 term pairs. Terms mapped: 'Dashboard' → 'Tableau de Bord', 'Workspace' → 'Espace de Travail', 'Insights' → 'Analyses', 'Onboarding' → 'Intégration', 'Workflow' → 'Flux de Travail'. Now translating with glossary... Result: 'Découvrez notre nouveau Tableau de Bord avec des Analyses en temps réel. L'Intégration est simplifiée grâce à notre Flux de Travail guidé dans votre Espace de Travail.' All 5 glossary terms were applied consistently.
 
 ---
 
 **👤 You:**
-> "What is my current DeepL usage?"
+> "Check my DeepL API usage and list all available target languages."
 
 **🤖 AI Agent:**
-> You have used 15,000 characters out of your 500,000 monthly limit. You have 485,000 characters remaining. Would you like to check your configured glossaries as well?
+> API Usage: 142,800 of 500,000 characters used (28.6%). Remaining: 357,200 characters. Plan: DeepL API Free. Billing period resets: May 1, 2025. Target languages available (31): BG (Bulgarian), CS (Czech), DA (Danish), DE (German), EL (Greek), EN-GB, EN-US, ES (Spanish), ET (Estonian), FI (Finnish), FR (French), HU (Hungarian), ID (Indonesian), IT (Italian), JA (Japanese), KO (Korean), LT (Lithuanian), LV (Latvian), NB (Norwegian), NL (Dutch), PL (Polish), PT-BR, PT-PT, RO (Romanian), RU (Russian), SK (Slovak), SL (Slovenian), SV (Swedish), TR (Turkish), UK (Ukrainian), ZH (Chinese). Languages with formality support: DE, FR, ES, IT, NL, PL, PT-BR, PT-PT, RU, JA.
 
 
 ## ❓ FAQ
 
-**Q: How do I find my DeepL API Key?**
-Log in to your [**DeepL account**](https://www.deepl.com/pro-account/plan), and you will find your Authentication Key under the 'Account' tab. Copy and paste it below.
+**Q: Can I control the formality of translations (formal vs. informal)?**
+Yes! Use `translate_formal` for professional communications (e.g., contracts, official correspondence) or `translate_informal` for casual content (e.g., social media, chat). The standard `translate_text` tool also accepts an optional formality parameter ('more', 'less', or 'default'). Note: formality control is available for select target languages including DE, FR, ES, PT-BR, and others.
 
-**Q: Does this work with both Free and Pro API keys?**
-Yes. This server automatically detects if you are using a Free key (ending in `:fx`) or a Pro key and routes requests to the correct endpoint.
+**Q: Can I create custom glossaries to ensure consistent terminology?**
+Yes. Use `create_glossary` with a name, source language, target language, and TSV entries (tab-separated source→target pairs). Then use `translate_with_glossary` to apply the glossary during translation. Use `list_glossaries` to see all glossaries, `get_glossary_entries` to inspect term pairs, and `list_glossary_language_pairs` for supported combinations.
 
-**Q: Can the agent use glossaries?**
-Yes. You can list your existing glossaries via the `get_glossaries` tool and identify their IDs to maintain consistency in your agent-led translations.
+**Q: How does DeepL authentication differ from standard Bearer tokens?**
+DeepL uses a custom Authorization header format: `DeepL-Auth-Key YOUR_KEY` (not Bearer). Your API key is generated from the DeepL account dashboard. Free accounts use `api-free.deepl.com`, while Pro accounts use `api.deepl.com`. Use `get_usage` to check your current character consumption and plan limits.
 
 
 ## Installation & Usage

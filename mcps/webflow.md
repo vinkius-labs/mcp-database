@@ -7,42 +7,41 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Equip your AI agent with direct access to Webflow — manage CMS collections, publish sites, and query site analytics without opening the Webflow designer.
+Design and build professional websites visually with a no-code platform that generates clean, production-ready HTML and CSS.
 
 ## Description
-Connect **Webflow** to your AI agent and manage your websites, CMS content, and e-commerce data conversationally.
+Connect your **Webflow** account to any AI agent and simplify how you manage your web projects, dynamic content, and e-commerce operations through natural conversation.
 
 ### What you can do
 
-- **CMS Management** — List, create, update, and delete CMS collection items (blog posts, portfolio entries, product listings) from natural language.
-- **Site Publishing** — Trigger site publishes and check publish status across staging and production domains.
-- **Collection Schema** — Query collection structures, field types, and validation rules to understand your content model.
-- **E-commerce Data** — Retrieve orders, products, and inventory data from Webflow's built-in e-commerce engine.
+- **Site Management** — List all your Webflow sites and retrieve detailed metadata and status updates.
+- **CMS Operations** — Query CMS collections and list items to manage dynamic content without opening the Designer.
+- **E-commerce Tracking** — Monitor your online store by listing and inspecting recent orders and customer data.
+- **Asset Management** — List uploaded assets like images and files to keep track of your site's media library.
+- **User Coordination** — Manage registered site users and memberships directly via AI commands.
 
 ### How it works
 
-1. Subscribe to the Webflow integration on the marketplace.
-2. Generate an API token from your Webflow site (Site Settings → Apps & integrations → API access → Generate API token).
-3. Ask your AI agent to manage CMS items, publish your site, or query collections.
+1. Subscribe to this server
+2. Enter your Webflow API Access Token (found in your site or workspace settings)
+3. Start managing your web ecosystem from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **Content Teams** — Publish blog posts and update CMS collections without opening the Webflow designer or asking a developer.
-- **Agencies** — Manage multiple client sites, bulk-update CMS content, and trigger publishes from a single conversational interface.
-- **E-commerce Operators** — Monitor orders, update product inventory, and manage catalog data directly from your AI agent.
+- **Web Developers** — quickly verify CMS data and inspect site configurations during the build process.
+- **Content Managers** — list and update CMS items or verify asset availability via simple AI queries.
+- **Store Owners** — monitor e-commerce orders and customer growth directly from the workspace.
 
 
-## Available Tools (10)
-- **get_user**: Get authorized user info
-- **list_collection_items**: List items in a collection
-- **create_collection_item**: Create a CMS item
-- **list_pages**: List all site pages
+## Available Tools (8)
+- **get_site_details**: Get details for a specific site
+- **list_site_assets**: List uploaded site assets
+- **list_cms_collections**: List CMS collections for a site
+- **list_ecommerce_orders**: List e-commerce orders
+- **list_site_users**: List registered site users
+- **create_collection_item**: Create a new CMS item
+- **list_collection_items**: List items in a CMS collection
 - **list_sites**: List all Webflow sites
-- **get_site**: Get site details
-- **publish_site**: Publish site to production
-- **list_collections**: List CMS collections
-- **update_collection_item**: Update a CMS item
-- **list_domains**: List site domains
 
 
 ## 💬 Prompt Examples
@@ -50,41 +49,38 @@ Connect **Webflow** to your AI agent and manage your websites, CMS content, and 
 Here are some examples of how you can interact with the **Webflow** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all blog posts in my Webflow CMS."
+> "List all my Webflow sites."
 
 **🤖 AI Agent:**
-> I found 24 blog posts in your 'Blog Posts' collection. The 3 most recent are: 'AI in Marketing' (published 2 days ago), 'Product Update Q1' (published last week), and 'Customer Story: Acme Corp' (draft, unpublished).
+> I've retrieved your sites. You have access to: 'Portfolio 2024', 'Company Dashboard', and 'Marketing Landing Page'. Which one would you like to inspect?
 
 ---
 
 **👤 You:**
-> "Publish my Webflow site to production."
+> "Show me the items in the 'Blog Posts' collection for site 'site_12903'."
 
 **🤖 AI Agent:**
-> Site publish triggered successfully. Your changes are now live on mysite.com. Last publish time: 3 seconds ago. Published domains: mysite.com and mysite.webflow.io.
+> I've fetched the items from 'Blog Posts'. There are 5 entries including 'Intro to AI', 'Webflow Tips', and 'Case Study: Vinkius'. Would you like details on any specific post?
 
 ---
 
 **👤 You:**
-> "Create a new blog post titled 'How AI Transforms Marketing'."
+> "Check for any new e-commerce orders on site 'site_12903'."
 
 **🤖 AI Agent:**
-> Blog post created in your 'Blog Posts' collection. Title: 'How AI Transforms Marketing'. Slug: how-ai-transforms-marketing. Status: Draft (unpublished). You can ask me to add body content or publish the site when ready.
+> Inspecting recent orders... I found 2 new orders: #ORD-552 ($120.00) and #ORD-553 ($45.50). Both are marked as 'Processing'. Shall I retrieve the customer details?
 
 
 ## ❓ FAQ
 
-**Q: How do I get my Webflow API token?**
-Log in to your Webflow Dashboard. Open the site you want to connect and click the **gear icon** to access Site Settings. In the left sidebar, click **Apps & integrations**. Scroll to the **API access** section at the bottom and click **Generate API token**. Name your token, select the required permission scopes (e.g., CMS read/write, Sites publish), and click **Generate token**. Copy it immediately — Webflow will not show the full token again. Each site can have up to 5 tokens. Tokens expire after 365 days of inactivity.
+**Q: Can I see my e-commerce orders using the AI?**
+Yes! Use the `list_ecommerce_orders` tool with your Site ID. Your agent will retrieve all recent orders processed in your Webflow store.
 
-**Q: Can my AI agent publish a blog post to my Webflow site?**
-Yes. Your AI agent can create CMS collection items (like blog posts), set all fields including title, body, slug, thumbnail, and publish date, then trigger a site publish — all in one conversation. Perfect for content teams who want to skip the Webflow designer and go from draft to live in seconds.
+**Q: How do I add a new item to my blog collection?**
+Use the `create_collection_item` action. Provide the Collection ID and a JSON object with the field values for your new blog post.
 
-**Q: What if I manage multiple client sites as an agency?**
-Each Webflow site has its own API token, so you can configure multiple integrations — one per client site. This lets your AI agent switch between projects, bulk-update CMS content across sites, or publish changes to specific client domains without mixing data between accounts.
-
-**Q: Can I track e-commerce orders through my AI agent?**
-Yes. If you use Webflow's built-in e-commerce, your AI agent can retrieve orders, order details, fulfillment statuses, and product inventory — giving you a real-time view of sales activity without opening the Webflow dashboard or exporting reports.
+**Q: Is it possible to list all images uploaded to a site?**
+Absolutely. Use the `list_site_assets` query to retrieve a complete list of uploaded images, files, and media available in your site's library.
 
 
 ## Installation & Usage

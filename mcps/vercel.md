@@ -33,6 +33,13 @@ Embed your **Vercel** continuous integration ecosystem into the mind of your AI 
 
 
 ## Available Tools (10)
+- **delete_project**: This action is irreversible.
+
+Permanently removes a Vercel project
+- **get_deployment_details**: Retrieves details for a specific deployment execution
+- **get_project_details**: Retrieves detailed configuration for a specific project
+- **list_project_aliases**: Lists specific subdomain routing mappings for a project
+- **list_deployments**: Lists recent CI/CD builds for a specific project
 - **cancel_active_build**: Aborts an ongoing Vercel compilation pipeline
 - **trigger_github_deployment**: Provide the project name and Git ref.
 
@@ -42,13 +49,6 @@ Triggers a new Vercel build from a specific GitHub reference
 Creates a new Vercel project
 - **list_account_domains**: Lists high-level apex domains managed by Vercel
 - **list_projects**: Lists all Vercel projects in the account
-- **delete_project**: This action is irreversible.
-
-Permanently removes a Vercel project
-- **get_deployment_details**: Retrieves details for a specific deployment execution
-- **get_project_details**: Retrieves detailed configuration for a specific project
-- **list_project_aliases**: Lists specific subdomain routing mappings for a project
-- **list_deployments**: Lists recent CI/CD builds for a specific project
 
 
 ## 💬 Prompt Examples

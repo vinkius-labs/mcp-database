@@ -47,8 +47,8 @@ List or search Workday workers
 
 List supervisory organizations
 - **get_time_off_balances**: Get time off balances for a worker
-- **get_time_off_requests**: Get pending time off requests for a worker
 - **get_payroll_results**: Get payroll results for a worker
+- **get_time_off_requests**: Get pending time off requests for a worker
 - **list_job_requisitions**: List open job requisitions
 - **execute_raas_report**: Results are returned in JSON. The URL can include prompt parameters.
 

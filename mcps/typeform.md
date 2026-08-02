@@ -7,37 +7,54 @@
 
 **Category:** [marketing-automation](../categories/marketing-automation.md)
 
-Conversational form management — fetch submissions, inspect form layouts, and automate Typeform operations elegantly.
+Create beautifully designed forms and surveys that ask one question at a time and get dramatically higher completion rates.
 
 ## Description
-Bring your advanced **Typeform** dynamic responses directly to an autonomous LLM handler. Circumvent heavy web panels and fetch specific targeted questions arrays easily from external forms or parse unstructured textual feedback right inside your AI context globally effortlessly.
+Connect your **Typeform** account to any AI agent and simplify how you collect data, manage surveys, and analyze user responses through natural conversation.
 
 ### What you can do
 
-- **Workspace Search** — Browse through native environments listing out valid form ID references natively to hook onto campaigns successfully across different marketing vectors seamlessly aligned to goals immediately
-- **Response Extraction** — Absorb thousands of answers programmatically slicing and pulling them into memory securely without exposing them publicly avoiding manual CSV unreadable dumps constantly cluttering folders
+- **Form Management** — List all forms across your account and retrieve detailed field structures and logic.
+- **Response Analysis** — List and export individual submissions with filtering by date and completion status.
+- **Workspace Oversight** — Manage workspaces to keep your forms and surveys organized by project or team.
+- **Real-time Monitoring** — Create and manage webhooks to receive instant notifications for new form submissions.
+- **Design Control** — List available themes to ensure consistent branding across your surveys.
+- **Integration Maintenance** — Verify account configurations and regional settings directly from the agent.
 
 ### How it works
 
-1. Lock the connection token directly to this verified bridge implementation
-2. Procure an official Token locally within the Typeform platform
-3. Engage conversational commands querying specific fields or listing inputs simply exclusively via chat interfaces
+1. Subscribe to this server
+2. Enter your Typeform Personal Access Token and select your Region (US or EU)
+3. Start managing your forms and data from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **Customer Experience Planners** — condense gigantic open-ended surveys fetching sentiment immediately using aggregated response sets passed onto an LLM purely effortlessly
-- **Designers** — inspect structures, map flow branching logic without actually entering the dense visual edit modules heavily loaded inside modern browsers
+- **Researchers & Analysts** — quickly retrieve survey responses and analyze trends via simple AI commands.
+- **Marketing Teams** — monitor lead generation forms and verify submission counts directly from the workspace.
+- **Product Managers** — get instant bird's-eye views of user feedback and workspace organization via the AI assistant.
 
 
-## Available Tools (6)
-- **get_form_insights**: Retrieves analytics and completion insights for a specific form
-- **get_form_details**: Retrieves structure and metadata for a specific Typeform form
-- **get_form_responses**: Provide the form ID.
+## Available Tools (8)
+- **get_workspace_details**: Get details and forms for a workspace
+- **list_design_themes**: List all available design themes
+- **create_webhook**: Requires a unique tag and a destination URL.
 
-Retrieves submissions/responses for a specific form
-- **list_forms**: Lists all forms in the Typeform account
-- **list_form_themes**: Lists available visual themes for forms
-- **list_workspaces**: Lists all Typeform workspaces
+Create or update a form webhook
+- **list_forms**: Useful for obtaining form IDs for response retrieval.
+
+List all Typeforms in the account
+- **list_responses**: Supports filtering by date (since) and completion status.
+
+List all collected responses for a form
+- **list_webhooks**: Webhooks are used to receive real-time alerts when a form is submitted.
+
+List all webhooks for a specific form
+- **get_form_details**: Essential for understanding the questions asked in a form.
+
+Get details and structure for a specific form
+- **list_workspaces**: Workspaces are used to organize collections of forms.
+
+List all Typeform workspaces
 
 
 ## 💬 Prompt Examples
@@ -45,38 +62,38 @@ Retrieves submissions/responses for a specific form
 Here are some examples of how you can interact with the **Typeform** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all forms strictly tied to our marketing department running today."
+> "List all active forms in my Typeform account."
 
 **🤖 AI Agent:**
-> Executed search. I found 2 forms actively listed on the primary [REDACTED] (ID 98Ab) and 'Website UX Panel' (ID cc31). Do you want metadata on the UX panel specifically?
+> I've retrieved your forms. You have 5 active surveys including 'Customer Satisfaction 2024', 'Lead Intake Form', and 'Employee Engagement'. Which one would you like to see responses for?
 
 ---
 
 **👤 You:**
-> "Fetch the raw responses corresponding precisely to Form ID cc31 generated previously."
+> "Show me the last 5 responses for the 'Customer Satisfaction' form."
 
 **🤖 AI Agent:**
-> Awaiting extraction protocols... Process resolved. We have 15 answers collected. The general sentiment is quite enthusiastic (rating averages around '8/10'). A recurring comment notes 'The UI flows really cleanly for mobile users'. How else can I summarize this dataset?
+> I've fetched the latest submissions. There are 5 recent responses. Most users seem happy with the new UI, but 2 mentioned issues with the payment step. Shall I retrieve the detailed comments?
 
 ---
 
 **👤 You:**
-> "Get the questions mapping block describing Form XYZ natively inside our array structurally without reading real data yet."
+> "List all forms in the 'Marketing Campaign' workspace (ID: 10293)."
 
 **🤖 AI Agent:**
-> Extracted architectural blueprint correctly. The Form XYZ encompasses exactly 6 blocks. Notably, a multiple-choice element ('How did you know us?') and a large text-field entry block ('Give suggestions'). Would you like to dump its responses now securely inside the session locally purely unhindered natively without blocks?
+> Fetching forms... The 'Marketing Campaign' workspace contains 3 forms: 'Newsletter Sign-up', 'Product Interest Quiz', and 'Webinar Registration'. Shall I check the submission count for any of these?
 
 
 ## ❓ FAQ
 
-**Q: Can I publish a new dynamic Typeform directly from a conversational command?**
-No, this architecture specifically focuses purely and strictly on ingesting incoming feedback payloads and analyzing structures. Complex visual form generation natively lacks API flexibility conducive to safe autonomous LLM builders efficiently avoiding poor user interfaces natively constructed blindly.
+**Q: Can I see the individual responses for a specific form?**
+Yes! Use the `list_responses` tool and provide the 8-character Form ID. You can also filter by date using the `since` parameter to see only recent submissions.
 
-**Q: Are hidden variables pulled alongside standard answers when retrieving responses?**
-Yes! Extracted payloads contain an aggregated matrix detailing exact answers seamlessly mixed with tracking parameters natively gathered enabling profound correlation matching intelligently done effortlessly inside the AI model natively securely attached perfectly.
+**Q: How do I find the questions and fields defined in a form?**
+Use the `get_form_details` query. Your agent will retrieve the complete structure of the form, including all question texts, field types, and logic transitions.
 
-**Q: Does pagination protect aggressive limits natively for massive sets of answers?**
-Totally protected. Vurb's native egress filtering dynamically manages page streams safely avoiding out-of-context faults gracefully when looping through immense objects autonomously parsing inputs effortlessly natively correctly securely stably unified absolutely correctly.
+**Q: Is it possible to configure a webhook via AI to track new leads?**
+Absolutely. Use the `create_webhook` action. Provide the Form ID, a custom tag, and your destination URL to start receiving real-time notifications for each submission.
 
 
 ## Installation & Usage

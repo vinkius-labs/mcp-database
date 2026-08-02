@@ -36,22 +36,28 @@ No more wrestling with hundreds of open browser tabs to find out who is assigned
 
 
 ## Available Tools (16)
-- **add_checklist**: You can then add check items to it via the Trello UI.
-
-Add a new checklist to a Trello card
-- **add_comment**: Comments appear in the card activity feed and notify watchers.
-
-Add a comment to a Trello card
-- **add_label_to_card**: Use list_labels to get available label IDs for the board.
-
-Add a label to a Trello card
-- **create_card**: Create a new Trello card
 - **delete_card**: Prefer updating closed to true for archiving instead.
 
 Permanently delete a Trello card
 - **get_board**: Get details for a specific Trello board
 - **get_card**: Get details for a specific Trello card
 - **get_me**: Get current Trello user details
+- **list_lists**: List lists (columns) in a Trello board
+- **list_members**: List members of a Trello board
+- **search_cards**: Returns matching cards with board and list context.
+
+Search for Trello cards by keyword
+- **update_card**: Update an existing Trello card
+- **add_label_to_card**: Use list_labels to get available label IDs for the board.
+
+Add a label to a Trello card
+- **create_card**: Create a new Trello card
+- **add_checklist**: You can then add check items to it via the Trello UI.
+
+Add a new checklist to a Trello card
+- **add_comment**: Comments appear in the card activity feed and notify watchers.
+
+Add a comment to a Trello card
 - **list_board_cards**: Useful for getting a complete board overview.
 
 List all cards across all lists in a Trello board
@@ -60,12 +66,6 @@ List all cards across all lists in a Trello board
 - **list_labels**: Use label IDs with add_label_to_card.
 
 List all labels for a Trello board
-- **list_lists**: List lists (columns) in a Trello board
-- **list_members**: List members of a Trello board
-- **search_cards**: Returns matching cards with board and list context.
-
-Search for Trello cards by keyword
-- **update_card**: Update an existing Trello card
 
 
 ## 💬 Prompt Examples

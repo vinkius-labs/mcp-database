@@ -7,37 +7,48 @@
 
 **Category:** [money-moves](../categories/money-moves.md)
 
-Manage payments, orders, catalog, customers, inventory, locations, and team members for your Square business through natural conversation.
+Manage payments, customers, and inventory on Square with AI agents.
 
 ## Description
-Connect your **Square** business to any AI agent — the universal commerce platform.
+Connect your **Square** account to any AI agent to automate your omnichannel commerce and business management. Square provides a robust suite of APIs for processing payments, managing customer relationships, and tracking inventory across all your physical and digital locations through natural conversation.
 
 ### What you can do
-- **Payments** — Track transactions, tips, refunds, and card processing
-- **Orders** — Browse sales with line items, fulfillments, and discounts
-- **Catalog** — Menu/product management with pricing and variations
-- **Customers** — CRM with visit history, loyalty, and total spend
-- **Inventory** — Stock levels, alerts, and cross-location tracking
-- **Team** — Employee management with roles and locations
+
+- **Payment & Transaction Orchestration** — List recent payments and retrieve detailed metadata for specific transactions to ensure your revenue is always synchronized.
+- **Customer CRM Control** — List and search through your customer database and manage profile metadata directly from the AI interface.
+- **Order Lifecycle Management** — Search and monitor orders across your account to maintain a clear overview of your sales performance.
+- **Inventory & Stock Tracking** — Retrieve real-time inventory counts for catalog objects to ensure your product availability is always accurate.
+- **Location Oversight** — Access and monitor all business locations and their associated metadata via natural language commands.
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Square Personal Access Token from your developer dashboard
+3. Start managing your commerce operations from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Business Owners & Retailers** — quickly check recent sales and inventory levels without switching apps.
+- **Customer Success Teams** — automate the retrieval of customer order history and profile details via natural conversation.
+- **Operations Managers** — streamline the monitoring of multi-location data and track payment statuses directly within the chat.
 
 
-## Available Tools (10)
-- **list_team**: List team members
-- **get_payment**: Get payment details
-- **list_orders**: Core sales tool.
+## Available Tools (11)
+- **create_payment**: Create a new payment
+- **get_stock_count**: Retrieve stock levels
+- **get_order_details**: Get metadata for an order
+- **get_payment_details**: Get metadata for a payment
+- **list_customers**: List store customers
+- **list_store_locations**: List your business locations
+- **search_orders**: Requires location_ids.
 
-List orders
-- **list_payments**: "How much did we take in today?"
+Search for store orders
+- **list_payments**: Supports pagination.
 
-List recent payments
-- **list_catalog**: List catalog items
-- **get_catalog_item**: Get catalog item
-- **search_customers**: Returns profile, visit count, total spend, loyalty points, and notes. CRM intelligence.
-
-Search customers
-- **get_customer**: Get customer profile
-- **list_locations**: List business locations
-- **list_inventory**: List inventory counts
+List recent store payments
+- **list_catalog**: List all catalog items
+- **search_customers**: Search for specific customers
+- **get_customer**: Get details for a specific customer
 
 
 ## 💬 Prompt Examples
@@ -45,54 +56,32 @@ Search customers
 Here are some examples of how you can interact with the **Square** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Show me today's payments and total tips collected"
+> "List all active business locations in my Square account."
 
 **🤖 AI Agent:**
-> 🟦 **Today's Payments — Oct 18**
-
-💰 **Total**: $4,230 (67 transactions)
-💳 **Card**: $3,890 | 💵 **Cash**: $340
-💝 **Tips**: $487 (11.5% avg)
-
-📊 **Breakdown**: Dine-in 72% | Takeout 18% | Delivery 10%
+> I've retrieved your locations. You have 3 active ones: 'Main Street Boutique', 'Downtown Café', and 'Online Store'. Which one would you like to check inventory for?
 
 ---
 
 **👤 You:**
-> "What is the current stock level for medium T-shirts downtown?"
+> "Show me all payments from today with their status, amounts, and payment methods."
 
 **🤖 AI Agent:**
-> 📦 **Inventory Check: Downtown Location**
-
-Item: Logo T-Shirt (Medium)
-Current Quantity: **14 units**
-Status: Low stock alert (minimum threshold is 15)
+> 67 payments today totaling $12,340. Completed (62): $11,890. Pending (3): $340. Failed (2): $110 (insufficient funds). By method: Credit card (45, $8,900), Apple Pay (12, $2,100), Cash (8, $980), Gift card (2, $360). Average transaction: $184.18. Largest: $890 (order #SQ-4523). By location: "Downtown Store" (34 payments, $6,200), "Mall Kiosk" (23, $4,100), "Online" (10, $2,040). Tips collected: $456. Refunds processed: 2 ($89 total).
 
 ---
 
 **👤 You:**
-> "Show me a list of my top 5 customers by total spend."
+> "Search for all orders from customer David Chen and show his purchase history."
 
 **🤖 AI Agent:**
-> 🏆 **Top 5 Customers by Lifetime Spend**
-
-1. Elena Rodriguez — $4,250 (32 visits)
-2. Marcus Chen — $3,890 (24 visits)
-3. Sarah Jenkins — $3,100 (15 visits)
-4. David Smith — $2,750 (18 visits)
-5. Liam O'Connor — $2,420 (12 visits)
+> Customer: David Chen (ID: cust_abc123). Member since: March 2024. Total orders: 23. Lifetime value: $4,567. Last order: May 14 (order #SQ-4501, $234, 3 items). Favorite items: "Espresso Blend" (ordered 12 times), "Ceramic Mug" (3 times). Average order: $198.57. Payment methods on file: Visa ending 4521, Apple Pay. Loyalty points: 2,340. Rewards redeemed: 4 ($120 total). Last visit: Downtown Store (2 days ago). Preferred location: Downtown Store (18 of 23 orders).
 
 
 ## ❓ FAQ
 
-**Q: What businesses use Square?**
-Square serves millions of merchants worldwide — restaurants, retail, services, and online businesses. From food trucks to multi-location restaurant groups.
-
-**Q: Does Square support inventory management across multiple locations?**
-Yes, Square allows you to track and manage inventory levels across various locations in real-time.
-
-**Q: Can I track employee hours and roles?**
-Yes, you can manage team members, assign specific roles, and track their shifts and performance.
+**Q: How do I find my Square Personal Access Token?**
+Log in to your [**Square Developer Dashboard**](https://developer.squareup.com/apps), create or select an application, and you will find your Personal Access Token in the **Credentials** section. Ensure you use the Production token for live data.
 
 
 ## Installation & Usage

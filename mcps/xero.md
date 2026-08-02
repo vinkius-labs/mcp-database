@@ -39,11 +39,11 @@ No more manual navigation through complex accounting dashboards to check if a bi
 
 
 ## Available Tools (9)
-- **get_organisation_info**: Retrieves details about the Xero organization
 - **get_balance_sheet**: Returns assets, liabilities, and equity totals.
 
 Retrieves the balance sheet report for a specific date
 - **get_invoice_details**: Retrieves comprehensive details for a specific Xero invoice
+- **get_organisation_info**: Retrieves details about the Xero organization
 - **get_profit_and_loss**: Provide from_date and to_date.
 
 Retrieves the profit and loss (PnL) report for a specific date range

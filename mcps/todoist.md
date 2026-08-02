@@ -7,44 +7,48 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Manage tasks, organize projects, and streamline your personal or team workflows natively with your AI agent.
+Organize your personal and team tasks with the productivity app that millions trust to stay on top of everything that matters.
 
 ## Description
-Connect your **Todoist** account to any AI agent and bring your daily productivity directly into your chat. View your active tasks, manage projects, and quickly add new items to your workflow entirely through conversational commands without ever needing to open the app.
+Connect your **Todoist** account to any AI agent and simplify how you organize your life and work through natural conversation.
 
 ### What you can do
 
-- **Project Management** — List all your active project folders, retrieve their specific IDs, and view sections within specific projects
-- **Task Execution** — View your complete list of pending tasks and mark them as completed instantly
-- **Create Tasks** — Add new items to a specific project or your inbox naturally in plain conversation
-- **Organization** — Look up available labels/tags to categorize your work
-- **Collaboration** — Read through existing comments to catch up on discussion history for any particular task
+- **Task Control** — Create, update, and complete tasks with full support for due dates, priorities, and descriptions.
+- **Project Oversight** — List all your projects and manage sections to keep your workflows structured.
+- **Smart Filtering** — Query your tasks using Todoist's powerful filter syntax (e.g., 'today', 'p1') via AI.
+- **Categorization** — List and manage labels to tag your tasks across different projects.
+- **Collaboration** — List comments on tasks and projects to track discussions and notes.
+- **Workspace Maintenance** — Reopen completed tasks or fetch detailed metadata for specific to-do items.
 
 ### How it works
 
 1. Subscribe to this server
-2. Navigate to your Todoist integrations page and generate your personal API Token
-3. Plug the token into your setup and start executing task-management queries naturally
+2. Enter your Todoist API Personal Access Token (found in your developer settings)
+3. Start managing your to-do list from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **Productivity Enthusiasts** — Log and review pending actions directly from their command center
-- **Project Managers** — Keep track of tasks and labels actively across different contexts without switching contexts
-- **Software Developers** — Check off coding chores or track individual project issues directly from their connected IDEs
+- **Busy Professionals** — quickly add tasks and check your daily schedule via simple AI commands.
+- **Project Managers** — monitor project progress and verify task statuses across different boards directly from the workspace.
+- **Organized Individuals** — keep your life in sync by letting your AI assistant help you prioritize what truly matters.
 
 
-## Available Tools (7)
-- **complete_task**: Marks a task as completed
-- **create_task**: Provide content and an optional project ID.
+## Available Tools (12)
+- **create_project**: Create a new project
+- **get_project_details**: Get metadata for a project
+- **get_task_details**: Get details for a specific task
+- **list_all_labels**: List your personal labels
+- **list_project_sections**: List sections within a project
+- **list_active_tasks**: Can filter by project, label, or filter.
 
-Creates a new task in Todoist
-- **list_comments**: Lists all comments for a specific task
-- **list_labels**: Lists all user-defined labels
-- **list_projects**: Lists all active projects in Todoist
-- **list_sections**: Lists all sections within a specific project
-- **list_tasks**: Can filter by project_id.
-
-Lists active tasks, optionally filtered by project
+List active tasks
+- **reopen_task**: Mark a closed task as active
+- **update_task_details**: Modify an existing task
+- **complete_task**: Mark a task as finished
+- **create_task**: Add a new to-do item
+- **list_comments**: List comments for a task or project
+- **list_projects**: List your Todoist projects
 
 
 ## 💬 Prompt Examples
@@ -52,31 +56,38 @@ Lists active tasks, optionally filtered by project
 Here are some examples of how you can interact with the **Todoist** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check all my active tasks and projects."
+> "What are my high priority tasks for today?"
 
 **🤖 AI Agent:**
-> I've retrieved 3 projects (Personal, Work, Grocery). Under your Inbox, you have 1 active task:
-- Task: 'Summarize weekly sync', ID: 81229
+> I've checked your active tasks. You have 2 high priority items (P1) for today: 'Finalize presentation' and 'Call client about API update'. Would you like to mark either as complete?
 
 ---
 
 **👤 You:**
-> "Complete the task with ID 81229."
+> "Create a task in the 'Work' project: 'Submit expense report' due Friday at 5pm."
 
 **🤖 AI Agent:**
-> I have successfully marked the task 81229 as completed in your Todoist workspace.
+> Success! The task 'Submit expense report' has been added to your 'Work' project (ID: 10293) and is scheduled for this Friday at 5:00 PM.
+
+---
+
+**👤 You:**
+> "Show me all active tasks with the label '@errand'."
+
+**🤖 AI Agent:**
+> I've fetched the tasks. You have 3 active items with the '@errand' label: 'Buy groceries', 'Post office', and 'Pick up dry cleaning'. Shall I retrieve the details for the post office task?
 
 
 ## ❓ FAQ
 
-**Q: Where do I get my Todoist API Token?**
-You can locate your personal API Token securely via the web application by clicking your profile avatar, going to **Settings**, and selecting the **Integrations** tab. Your token will be visible at the bottom or in a dedicated Developer section. Alternatively, navigate directly to `https://todoist.com/prefs/integrations`.
+**Q: Can I filter tasks for today using the AI?**
+Yes! Use the `list_active_tasks` tool and provide the `filter` parameter set to 'today'. Your agent will retrieve all tasks scheduled for the current date.
 
-**Q: Can the agent delete projects or workspaces?**
-No. The integration exclusively lists resources (projects, items, labels) and supports only basic item modifications: creating tasks and marking tasks as completed. Destructive actions on structural settings are not supported.
+**Q: How do I add a new task to a specific project?**
+Use the `create_task` tool. Provide the content and the unique Project ID. You can also include a `due_string` like 'tomorrow at 10am' to set a deadline.
 
-**Q: Can the agent organize my tasks using sub-projects or sections?**
-Yes. The Todoist integration allows the agent to retrieve project IDs and navigate into their specific sections. When creating a new task, you can explicitly ask the agent to place it within a specific section to keep your work neatly organized.
+**Q: Is it possible to list all my labels via AI?**
+Absolutely. Run the `list_all_labels` query. The agent will retrieve the complete directory of labels you use to categorize tasks in your account.
 
 
 ## Installation & Usage

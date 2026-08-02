@@ -36,12 +36,12 @@ No more switching between API tools to interact with Cohere. Your AI acts as an 
 
 
 ## Available Tools (6)
-- **chat**: Requires the model ID (e.g. "command-r-plus", "command-r", "command-r7b") and messages array in JSON format. Each message must have a "role" ("user", "assistant", "system" or "tool") and "content" (text or array of content blocks). Optionally set max_tokens, temperature (0-1), p (nucleus sampling 0-1) and tools array for function calling. Returns the model's response with text, citations and tool calls.
-
-Send a chat message to a Cohere model
 - **detokenize**: Requires the token IDs array. Returns the reconstructed text. Useful for debugging and verifying tokenization.
 
 Detokenize token IDs back to text using Cohere
+- **chat**: Requires the model ID (e.g. "command-r-plus", "command-r", "command-r7b") and messages array in JSON format. Each message must have a "role" ("user", "assistant", "system" or "tool") and "content" (text or array of content blocks). Optionally set max_tokens, temperature (0-1), p (nucleus sampling 0-1) and tools array for function calling. Returns the model's response with text, citations and tool calls.
+
+Send a chat message to a Cohere model
 - **list_models**: Each model returns its name (e.g. "command-r-plus", "command-r", "embed-v4", "rerank-v3.5"), endpoint compatibility, context length and tokenization info. Use this to discover which models are available and their capabilities.
 
 List all available Cohere models

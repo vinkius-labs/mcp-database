@@ -33,16 +33,6 @@ Integrate the comprehensive backend infrastructure of **Supabase** straight into
 
 
 ## Available Tools (13)
-- **delete_auth_user**: Requires service_role key. This action is irreversible.
-
-Delete an authenticated user permanently
-- **create_storage_bucket**: Optionally make it public for unauthenticated reads.
-
-Create a new storage bucket
-- **delete_storage_file**: Provide a comma-separated list of file paths.
-
-Delete files from a storage bucket
-- **get_auth_user**: Get detailed information about a specific authenticated user
 - **list_auth_users**: List authenticated users from Supabase Auth
 - **db_count**: Useful for pagination and analytics.
 
@@ -63,6 +53,16 @@ Query records from any PostgreSQL database table using PostgREST syntax
 
 Update existing rows in a database table
 - **list_storage_buckets**: List all available storage buckets
+- **delete_auth_user**: Requires service_role key. This action is irreversible.
+
+Delete an authenticated user permanently
+- **create_storage_bucket**: Optionally make it public for unauthenticated reads.
+
+Create a new storage bucket
+- **delete_storage_file**: Provide a comma-separated list of file paths.
+
+Delete files from a storage bucket
+- **get_auth_user**: Get detailed information about a specific authenticated user
 - **list_storage_files**: List files inside a storage bucket
 
 
