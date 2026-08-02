@@ -37,18 +37,18 @@ No more manual copy-pasting or complex web scraping scripts. Your AI acts as you
 
 ## Available Tools (11)
 - **enhance_company_profile**: Enrich company data
+- **analyze_page_type**: Auto-detect page type
 - **enhance_person_profile**: Enrich person data
 - **extract_article_data**: Extract news/blog post
 - **extract_forum_thread**: Extract forum/comments
 - **extract_images**: Identify primary images
 - **extract_product_data**: Extract e-commerce info
-- **analyze_page_type**: Auto-detect page type
 - **extract_video_metadata**: Identify embedded videos
+- **list_active_crawls**: Check crawl status
 - **search_knowledge_graph**: g. type:Organization industries:"AI").
 
 Query world entities
 - **verify_api_credentials**: Verify your Diffbot API credentials
-- **list_active_crawls**: Check crawl status
 
 
 ## 💬 Prompt Examples

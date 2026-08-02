@@ -35,7 +35,6 @@ Connect your **AirOps** account to your AI agent to unlock professional AI workf
 
 
 ## Available Tools (10)
-- **upload_file**: Upload file for AI
 - **list_apps**: List AI applications
 - **get_app_details**: Get app metadata
 - **execute_workflow_sync**: Best for quick tasks.
@@ -47,6 +46,7 @@ Run workflow synchronously
 - **chat_with_agent**: Interact with AI agent
 - **search_memory_store**: Search vector database
 - **add_memory_document**: Enrich AI knowledge
+- **upload_file**: Upload file for AI
 
 
 ## 💬 Prompt Examples

@@ -34,6 +34,11 @@ Connect your **Metronome** account to any AI agent to streamline your usage-base
 
 
 ## Available Tools (31)
+- **add_rate**: Add a rate to a rate card
+- **archive_customer**: Voids invoices and archives contracts.
+
+Archive a customer
+- **create_alert**: Create a threshold notification alert
 - **create_billable_metric**: Create a billable metric
 - **create_commit**: Create a commit
 - **create_contract**: Create a contract
@@ -65,7 +70,6 @@ Ingest usage events into Metronome
 - **list_customers**: Supports filtering.
 
 List all customers
-- **list_invoices**: List invoices
 - **list_products**: List products
 - **regenerate_invoice**: Regenerate an invoice
 - **search_events**: Designed for sampling-based testing.
@@ -73,12 +77,8 @@ List all customers
 Search events by transaction ID
 - **set_custom_field_values**: Set custom field values
 - **void_invoice**: Void an invoice
+- **list_invoices**: List invoices
 - **add_custom_field_key**: Create a custom field key
-- **add_rate**: Add a rate to a rate card
-- **archive_customer**: Voids invoices and archives contracts.
-
-Archive a customer
-- **create_alert**: Create a threshold notification alert
 
 
 ## 💬 Prompt Examples

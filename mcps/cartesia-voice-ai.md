@@ -35,9 +35,6 @@ Connect **Cartesia** to your AI agent to unlock high-performance voice synthesis
 
 
 ## Available Tools (20)
-- **get_voice**: Get details for a specific voice
-- **list_agent_calls**: List calls and transcripts for a specific agent
-- **update_voice**: Update voice metadata
 - **clone_voice**: Clone a voice from a 5s audio clip
 - **create_pronunciation_dict**: Create a new pronunciation dictionary
 - **delete_pronunciation_dict**: Delete a pronunciation dictionary
@@ -46,10 +43,13 @@ Connect **Cartesia** to your AI agent to unlock high-performance voice synthesis
 - **get_agent**: Get details for a specific voice agent
 - **get_usage_credits**: Get credit usage statistics
 - **infill_bytes**: Generate audio to smoothly connect two existing segments
+- **list_agent_calls**: List calls and transcripts for a specific agent
 - **list_agents**: List all voice agents
 - **list_pronunciation_dicts**: List pronunciation dictionaries
 - **list_voices**: List available voices
 - **localize_voice**: Adapt a voice to a new language/dialect
+- **get_voice**: Get details for a specific voice
+- **update_voice**: Update voice metadata
 - **stt_batch**: Transcribe audio file to text (Batch STT)
 - **tts_bytes**: Generate text-to-speech audio bytes
 - **tts_sse**: Generate text-to-speech via Server-Sent Events

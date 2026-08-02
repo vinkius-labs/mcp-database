@@ -38,14 +38,12 @@ Connect **Roboflow** to your AI agent to streamline your computer vision pipelin
 - **auto_label**: Start an auto-labeling job using foundation models
 - **cancel_training**: Cancel an active training job
 - **create_annotation_job**: Assign a batch of images to a labeler and reviewer
-- **create_folder**: Create a project folder (Enterprise)
 - **create_project**: Create a new project in a workspace
 - **delete_images**: Delete multiple images from a project
 - **delete_project**: Delete a project or version (moves to Trash)
 - **download_dataset**: Retrieve a download link for a zipped dataset in a specific format
 - **fork_universe_project**: Fork a public project from Roboflow Universe
 - **get_async_task**: Track long-running operations like forking or large exports
-- **get_dataset_health**: Check dataset health (class distribution, missing annotations, etc)
 - **get_image**: Get details for a specific image
 - **get_project**: Get project details, metadata, and versions
 - **get_root**: Verify authentication and retrieve default workspace
@@ -60,9 +58,11 @@ Connect **Roboflow** to your AI agent to streamline your computer vision pipelin
 - **search_project_images**: Search and filter images within a specific project
 - **search_workspace_images**: Search and filter images within a workspace
 - **start_training**: Start training a model on a dataset version
-- **stop_training**: Early stop an active training job
 - **upload_annotation**: Attach an annotation file to an existing image
 - **upload_image**: Upload an image to a project
+- **create_folder**: Create a project folder (Enterprise)
+- **get_dataset_health**: Check dataset health (class distribution, missing annotations, etc)
+- **stop_training**: Early stop an active training job
 
 
 ## 💬 Prompt Examples

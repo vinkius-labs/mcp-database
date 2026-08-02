@@ -34,7 +34,6 @@ Connect your **Orb** account to any AI agent to streamline your revenue operatio
 
 
 ## Available Tools (10)
-- **cancel_subscription**: Cancel a subscription
 - **create_customer**: Requires name and email.
 
 Create a new customer in Orb
@@ -48,6 +47,7 @@ Ingest usage events into Orb
 - **list_customers**: List customers in Orb
 - **list_invoices**: List invoices
 - **update_subscription**: Update an existing subscription
+- **cancel_subscription**: Cancel a subscription
 
 
 ## 💬 Prompt Examples

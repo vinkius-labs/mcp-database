@@ -39,12 +39,6 @@ Essential for **IT security teams**, **AI governance officers**, **platform engi
 - **create_api_key**: Returns the key value (shown only once) and metadata. Use this to create keys for integrations, CI/CD pipelines, or service accounts. Store the key value securely immediately after creation.
 
 Create a new API key for your Runlayer organization
-- **create_agent**: Requires agent name and type (claude_desktop, cursor, vs_code, custom). Optionally assign MCP servers, skills, and policies during registration. Returns the created agent details. Use this to onboard new AI agents to your enterprise control plane with proper security guardrails.
-
-Register a new AI agent in Runlayer
-- **revoke_api_key**: This action cannot be undone. Requires the key ID. Use this for compromised keys, unused keys, or during security incidents.
-
-Revoke an API key immediately
 - **create_mcp_server**: Requires server name and connection details (URL, authentication method). Optionally assign skills, agents, and policies during registration. Returns the created server details including the new UUID. Use this to onboard new MCP servers to your enterprise control plane.
 
 Register a new MCP server in Runlayer
@@ -102,6 +96,9 @@ List all security and access policies in your Runlayer organization
 - **list_skills**: Returns skill names, descriptions, associated MCP servers, usage counts, and version information. Use this to discover available capabilities before assigning them to agents or MCP servers.
 
 List all skills registered in your Runlayer organization
+- **revoke_api_key**: This action cannot be undone. Requires the key ID. Use this for compromised keys, unused keys, or during security incidents.
+
+Revoke an API key immediately
 - **run_mcp_sweep_scan**: Returns a scan ID which can be used with get_scan_results to retrieve findings. Use this for security assessments, compliance audits, or shadow AI detection.
 
 Run an MCP sweep scan to discover shadow AI across your organization
@@ -117,6 +114,9 @@ Update an existing security or access policy
 - **update_skill**: Only pass the fields you want to change. Requires the skill ID. Use this to refine skill definitions or update documentation.
 
 Update an existing skill configuration
+- **create_agent**: Requires agent name and type (claude_desktop, cursor, vs_code, custom). Optionally assign MCP servers, skills, and policies during registration. Returns the created agent details. Use this to onboard new AI agents to your enterprise control plane with proper security guardrails.
+
+Register a new AI agent in Runlayer
 
 
 ## 💬 Prompt Examples

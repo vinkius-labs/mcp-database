@@ -42,6 +42,26 @@ Make a direct payment to a counterparty
 - **revolut_create_payout_link**: The recipient receives a URL to claim the funds without sharing their banking details. The link expires after a set period.
 
 Create a payout link to send money
+- **revolut_get_transaction**: Get details of a specific transaction
+- **revolut_list_draft_payments**: Drafts require human approval in the Revolut Business app before funds are released.
+
+List all pending payment drafts
+- **revolut_list_expenses**: Use for accounts payable reconciliation and expense auditing. Note: not available in sandbox mode.
+
+List all submitted expenses
+- **revolut_list_payout_links**: Available in UK, EEA, AU, and SG.
+
+List all payout links
+- **revolut_list_roles**: List all available roles in the organisation
+- **revolut_list_team_members**: List all team members in the Revolut Business account
+- **revolut_list_webhooks**: List all configured webhooks
+- **revolut_update_webhook**: Update a webhook configuration
+- **revolut_create_counterparty**: Required before making payments to a new recipient.
+
+Add a new payment recipient (Counterparty)
+- **revolut_create_exchange**: Settles immediately.
+
+Execute an FX currency exchange between accounts
 - **revolut_create_transfer**: Different from payments which go to external counterparties. Useful for moving money between currency pockets.
 
 Transfer money between your own Revolut accounts
@@ -67,7 +87,6 @@ Get live FX exchange rates
 - **revolut_get_expense**: Get details of a specific expense
 - **revolut_get_payout_link**: Get details of a specific payout link
 - **revolut_get_team_member**: Get details of a specific team member
-- **revolut_get_transaction**: Get details of a specific transaction
 - **revolut_get_transfer_reasons**: Use this to get the valid codes before creating a transfer.
 
 Get the list of valid transfer reason codes
@@ -77,31 +96,12 @@ Get the list of valid transfer reason codes
 Get failed delivery events for a webhook
 - **revolut_list_accounts**: List all Revolut Business accounts and balances
 - **revolut_list_counterparties**: List all saved payment recipients
-- **revolut_list_draft_payments**: Drafts require human approval in the Revolut Business app before funds are released.
-
-List all pending payment drafts
-- **revolut_list_expenses**: Use for accounts payable reconciliation and expense auditing. Note: not available in sandbox mode.
-
-List all submitted expenses
-- **revolut_list_payout_links**: Available in UK, EEA, AU, and SG.
-
-List all payout links
-- **revolut_list_roles**: List all available roles in the organisation
-- **revolut_list_team_members**: List all team members in the Revolut Business account
 - **revolut_list_transactions**: Use for reconciliation, auditing, and financial reporting.
 
 Retrieve historical transactions
-- **revolut_list_webhooks**: List all configured webhooks
 - **revolut_rotate_webhook_secret**: The old secret is invalidated immediately.
 
 Rotate the signing secret for a webhook
-- **revolut_update_webhook**: Update a webhook configuration
-- **revolut_create_counterparty**: Required before making payments to a new recipient.
-
-Add a new payment recipient (Counterparty)
-- **revolut_create_exchange**: Settles immediately.
-
-Execute an FX currency exchange between accounts
 
 
 ## 💬 Prompt Examples

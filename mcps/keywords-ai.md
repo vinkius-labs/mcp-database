@@ -23,8 +23,6 @@ Connect your **Keywords AI** account to any AI agent and monitor LLM performance
 
 
 ## Available Tools (11)
-- **check_keywordsai_status**: Verify API connectivity
-- **get_analytics**: Get analytics dashboard
 - **get_credits**: Get credit balance
 - **get_request**: Get request details
 - **get_usage_stats**: Get usage statistics
@@ -34,6 +32,8 @@ Connect your **Keywords AI** account to any AI agent and monitor LLM performance
 - **list_requests_by_model**: List requests by model
 - **list_requests**: List API request logs
 - **list_users**: List team users
+- **check_keywordsai_status**: Verify API connectivity
+- **get_analytics**: Get analytics dashboard
 
 
 ## 💬 Prompt Examples

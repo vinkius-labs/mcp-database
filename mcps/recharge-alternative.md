@@ -34,17 +34,12 @@ Connect your **Recharge** account to any AI agent to streamline your subscriptio
 
 
 ## Available Tools (70)
-- **activate_subscription**: Reactivate a cancelled subscription
-- **add_async_batch_tasks**: Add tasks to an async batch
-- **get_plan**: Retrieve a plan
 - **apply_charge_discount**: Apply a discount to a queued charge
 - **bulk_manage_product_plans**: Bulk manage plans for a product
 - **cancel_subscription**: Cancel a subscription
 - **change_subscription_address**: Update the associated address for a subscription
 - **clone_order**: Clone an order for prepaid subscriptions
 - **create_address**: Create a new address
-- **create_async_batch**: Create an async batch
-- **create_checkout**: Create a checkout
 - **create_customer**: Create a customer
 - **create_metafield**: Create a metafield
 - **create_payment_method**: Create a payment method
@@ -85,7 +80,6 @@ Delete an address
 - **list_orders**: List orders
 - **list_plans**: List plans
 - **list_subscriptions**: List subscriptions
-- **merge_addresses**: Merge up to 10 source addresses into 1 target
 - **process_async_batch**: Process an async batch
 - **process_charge**: Manually process a queued charge
 - **process_checkout**: Process the checkout
@@ -95,7 +89,6 @@ Delete an address
 - **skip_address_charges**: Skip a future charge for specific subscriptions on an address
 - **skip_charge**: Skip a charge
 - **test_webhook**: Test a webhook
-- **unskip_charge**: Unskip a charge
 - **update_address**: Update an address
 - **update_checkout**: Update a checkout
 - **update_customer**: Update a customer
@@ -103,9 +96,16 @@ Delete an address
 - **update_order**: Update an order
 - **update_payment_method**: Update a payment method
 - **update_plan**: Update a plan
-- **update_product**: Update a product
 - **update_subscription**: Update a subscription
 - **update_webhook**: Update a webhook
+- **activate_subscription**: Reactivate a cancelled subscription
+- **add_async_batch_tasks**: Add tasks to an async batch
+- **get_plan**: Retrieve a plan
+- **create_async_batch**: Create an async batch
+- **create_checkout**: Create a checkout
+- **merge_addresses**: Merge up to 10 source addresses into 1 target
+- **unskip_charge**: Unskip a charge
+- **update_product**: Update a product
 
 
 ## 💬 Prompt Examples
