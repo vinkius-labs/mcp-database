@@ -37,17 +37,17 @@ No more manual toggling between project tabs or missing task deadlines. Your AI 
 
 ## Available Tools (12)
 - **create_project**: Create a new project
+- **list_webhooks**: List active webhooks
 - **create_task**: Create a new task
 - **get_account_info**: Get my profile
 - **get_project**: Get project details
 - **get_task**: Get task details
+- **update_task**: Update a task
 - **list_task_messages**: List task messages
 - **list_projects**: List all BasicOps projects
 - **list_project_sections**: List project sections
 - **list_project_tasks**: List tasks in project
 - **list_team_users**: List team members
-- **list_webhooks**: List active webhooks
-- **update_task**: Update a task
 
 
 ## 💬 Prompt Examples

@@ -35,18 +35,18 @@ Empower your AI agent to orchestrate your data collection and research with **We
 
 
 ## Available Tools (10)
+- **get_account_info**: Get user account metadata
+- **list_surveys**: List questionnaires
+- **create_survey**: Create a new questionnaire
+- **get_report**: Get survey summary report
+- **get_stats**: Get survey statistics
+- **get_survey**: Get questionnaire details
 - **list_groups**: List survey groups
 - **list_responses**: List survey responses
-- **list_surveys**: List questionnaires
 - **query_surveys**: Search questionnaires by keyword
 - **update_survey_status**: g., publish, pause) of a specific survey.
 
 Update survey status
-- **create_survey**: Create a new questionnaire
-- **get_account_info**: Get user account metadata
-- **get_report**: Get survey summary report
-- **get_stats**: Get survey statistics
-- **get_survey**: Get questionnaire details
 
 
 ## 💬 Prompt Examples

@@ -38,10 +38,10 @@ No more manual chasing of missing time cards or digging through complex shift ta
 ## Available Tools (6)
 - **create_employee**: Create a new employee
 - **list_employees**: List all employees
+- **punch_in_out**: Perform a punch action
 - **list_pay_periods**: List pay periods
 - **list_work_schedules**: List work schedules
 - **list_time_entries**: List time entries
-- **punch_in_out**: Perform a punch action
 
 
 ## 💬 Prompt Examples

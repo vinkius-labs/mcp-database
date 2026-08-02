@@ -37,6 +37,8 @@ No more manual message tracking or digging through complex delivery reports. You
 
 ## Available Tools (12)
 - **check_bulksms_status**: Verify connectivity
+- **send_bulk_sms**: Send bulk SMS
+- **send_sms**: Send an SMS
 - **create_contact**: Create a contact
 - **delete_message**: Delete a message
 - **get_credits**: Get credits balance
@@ -46,8 +48,6 @@ No more manual message tracking or digging through complex delivery reports. You
 - **list_contacts**: List contacts
 - **list_groups**: List contact groups
 - **list_messages**: List messages
-- **send_bulk_sms**: Send bulk SMS
-- **send_sms**: Send an SMS
 
 
 ## 💬 Prompt Examples

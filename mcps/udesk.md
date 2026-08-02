@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your customer service operations with **Ude
 
 
 ## Available Tools (10)
-- **create_ticket**: Create a new ticket
 - **get_customer**: Get customer details
+- **create_ticket**: Create a new ticket
 - **get_organization**: Get organization details
 - **get_ticket**: Get ticket details
-- **get_ticket_replies**: Get ticket reply history
 - **list_agents**: List support agents
 - **list_articles**: List knowledge base articles
 - **list_customers**: List helpdesk customers
 - **list_groups**: List agent groups
 - **list_tickets**: List helpdesk tickets
+- **get_ticket_replies**: Get ticket reply history
 
 
 ## 💬 Prompt Examples

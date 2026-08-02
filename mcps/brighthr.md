@@ -37,23 +37,23 @@ No more manual toggling between HR dashboards or digging through complex holiday
 
 ## Available Tools (12)
 - **check_api_health**: Verify BrightHR API status
-- **record_absence**: g., sickness) for an employee.
-
-Log a new employee absence
 - **get_organization_info**: Get company details
-- **get_employee_details**: Get details for a specific employee
-- **get_employee_job_details**: Get job metadata
 - **get_employee_salary_info**: Get salary information
 - **list_absences**: Can be filtered by employee ID.
 
 List employee absences
 - **list_employee_benefits**: List benefits for an employee
-- **list_employees**: List all employees
 - **list_holiday_requests**: Can be filtered by employee ID.
 
 List holiday/leave requests
 - **list_training_records**: List training history
 - **list_configured_webhooks**: List active webhooks
+- **list_employees**: List all employees
+- **record_absence**: g., sickness) for an employee.
+
+Log a new employee absence
+- **get_employee_details**: Get details for a specific employee
+- **get_employee_job_details**: Get job metadata
 
 
 ## 💬 Prompt Examples

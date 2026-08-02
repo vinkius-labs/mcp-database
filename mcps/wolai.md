@@ -35,18 +35,18 @@ Empower your AI agent to orchestrate your knowledge base with **Wolai**, the ver
 
 
 ## Available Tools (10)
-- **create_database_row**: Add row to database
 - **create_page**: Create a new Wolai page
 - **get_database**: Get database schema
 - **get_page**: Get page details
-- **get_workspace_info**: Get workspace details
 - **list_blocks**: ) within a specific page.
 
 List page blocks
+- **query_database**: Query database rows
+- **create_database_row**: Add row to database
+- **get_workspace_info**: Get workspace details
 - **list_databases**: List all Wolai databases
 - **list_pages**: List all Wolai pages
 - **list_users**: List workspace users
-- **query_database**: Query database rows
 
 
 ## 💬 Prompt Examples

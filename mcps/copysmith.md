@@ -36,22 +36,22 @@ No more manual copy-pasting between chat windows. Your AI acts as your dedicated
 
 
 ## Available Tools (12)
-- **create_folder**: Create a new folder
-- **create_generation**: Generate AI content
-- **delete_file**: Delete a file
 - **delete_folder**: Delete a folder
-- **get_credits**: Check remaining credits
+- **delete_file**: Delete a file
 - **get_file**: Get file details
 - **get_generation**: Get generation status
 - **get_template**: Get template details
 - **get_user_info**: Get user details
+- **list_templates**: g., Product Description, Blog Intro).
+
+List all content templates
+- **create_folder**: Create a new folder
+- **create_generation**: Generate AI content
+- **get_credits**: Check remaining credits
 - **list_files**: Can be filtered by folder.
 
 List files
 - **list_folders**: List all folders
-- **list_templates**: g., Product Description, Blog Intro).
-
-List all content templates
 
 
 ## 💬 Prompt Examples

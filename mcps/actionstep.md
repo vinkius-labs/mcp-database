@@ -28,14 +28,14 @@ Connect your **Actionstep** account to any AI agent and simplify your legal oper
 
 
 ## Available Tools (8)
+- **list_action_types**: List available matter types
 - **get_matter_details**: Get details for a specific matter
 - **list_contacts**: List Actionstep contacts
 - **list_matters**: List Actionstep matters
 - **list_matter_notes**: List file notes for a matter
 - **list_legal_tasks**: List legal workflow tasks
 - **list_time_entries**: List billable time entries
-- **list_action_types**: List available matter types
-- **create_contact**: Register a new contact
+- **create_contact**: Create a new contact in Actionstep
 
 
 ## 💬 Prompt Examples
