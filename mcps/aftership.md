@@ -38,6 +38,9 @@ Delete a tracking entry
 - **detect_courier**: Useful when the user provides a tracking number but doesn't know which courier it belongs to. Returns a ranked list of likely couriers.
 
 Auto-detect courier from tracking number
+- **update_tracking**: Does not affect the tracking number or courier.
+
+Update an existing tracking
 - **get_tracking**: Get details of a specific tracking
 - **list_couriers**: ) that can be used for tracking packages.
 
@@ -51,9 +54,6 @@ Mark a tracking as completed
 - **retrack_tracking**: This restarts monitoring and will fetch new checkpoint updates.
 
 Retrack an expired tracking
-- **update_tracking**: Does not affect the tracking number or courier.
-
-Update an existing tracking
 
 
 ## 💬 Prompt Examples

@@ -39,11 +39,11 @@ No more manual digging through complex iPaaS dashboards to check if a recipe ran
 
 
 ## Available Tools (7)
-- **get_recipe_details**: Retrieves details for a specific Workato recipe
 - **get_api_collections**: Lists all API collections exposed by Workato
+- **get_recipe_details**: Retrieves details for a specific Workato recipe
 - **list_app_connections**: Lists all application connections configured in Workato
-- **list_managed_connectors**: Lists all managed connectors available in the tenant
 - **list_workato_folders**: Lists all organizational folders in the account
+- **list_managed_connectors**: Lists all managed connectors available in the tenant
 - **list_recipe_jobs**: Lists recent execution jobs for a specific recipe
 - **list_automation_recipes**: Lists all automation recipes in the Workato account
 

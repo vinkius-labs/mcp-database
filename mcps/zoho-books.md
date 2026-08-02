@@ -40,11 +40,11 @@ Connect your **Zoho Books** account to any AI agent to streamline your cloud acc
 Create a new invoice
 - **list_estimates**: List all estimates (quotes) for an organization
 - **get_invoice_details**: Get details for a specific invoice
-- **list_invoices**: List all invoices for an organization
-- **list_inventory_items**: List all items (products/services)
 - **list_organizations**: Use this to identify the organization ID for other calls.
 
 List all Zoho Books organizations
+- **list_invoices**: List all invoices for an organization
+- **list_inventory_items**: List all items (products/services)
 
 
 ## 💬 Prompt Examples

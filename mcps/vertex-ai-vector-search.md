@@ -33,7 +33,6 @@ Plug the sheer matching scale of Google Cloud's **Vertex AI Vector Search** dire
 
 
 ## Available Tools (6)
-- **get_index_details**: Retrieves metadata and configuration for a specific vector index
 - **list_deployed_indexes**: Lists all indexes deployed to a specific endpoint
 - **list_index_endpoints**: Lists all index endpoints in the project
 - **list_vector_indexes**: Lists all vector indexes in the Google Cloud project
@@ -41,6 +40,7 @@ Plug the sheer matching scale of Google Cloud's **Vertex AI Vector Search** dire
 - **search_nearest_neighbors**: Provide the endpoint ID, deployed index ID, and a query vector as a JSON array.
 
 Performs a nearest neighbor vector similarity search
+- **get_index_details**: Retrieves metadata and configuration for a specific vector index
 
 
 ## 💬 Prompt Examples

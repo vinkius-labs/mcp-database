@@ -38,6 +38,9 @@ No more manual digging through complex documentation systems. Your AI agent beco
 
 
 ## Available Tools (7)
+- **search_documents**: Provide a data store ID and the query text.
+
+Performs a search query across documents in a specific data store
 - **get_grounded_answer**: Returns a natural language response based on your private data.
 
 Retrieves an AI-generated answer grounded in the documents of a data store
@@ -50,9 +53,6 @@ Lists all indexed documents within a specific data store branch
 - **get_recommendations**: Provide a data store ID and user event data as a JSON object.
 
 Retrieves personalized recommendations based on user events
-- **search_documents**: Provide a data store ID and the query text.
-
-Performs a search query across documents in a specific data store
 
 
 ## 💬 Prompt Examples

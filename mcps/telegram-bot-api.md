@@ -33,6 +33,9 @@ Transform your local conversational window into a powerful global messaging dire
 
 
 ## Available Tools (14)
+- **get_chat_member_count**: Retrieves the total number of members in a specific chat
+- **get_chat_details**: Retrieves detailed information about a chat (user, group, or channel)
+- **get_bot_info**: Retrieves basic information about the bot (ID, username, etc.)
 - **delete_chat_message**: Bots can delete their own messages or those of users in groups they manage.
 
 Permanently deletes a message from a chat
@@ -44,13 +47,10 @@ Forward a message from one chat to another
 
 Pin a message in a chat
 - **unpin_chat_message**: Unpin a message from a chat
-- **get_chat_details**: Retrieves detailed information about a chat (user, group, or channel)
-- **get_bot_info**: Retrieves basic information about the bot (ID, username, etc.)
 - **edit_message_text**: Requires the chat_id and the original message_id.
 
 Edits the text of a previously sent message
 - **list_chat_administrators**: Lists the administrators of a specific group or channel
-- **get_chat_member_count**: Retrieves the total number of members in a specific chat
 - **list_bot_updates**: You can provide an offset_id to skip older records.
 
 Retrieves new messages and updates from users (Long Polling)

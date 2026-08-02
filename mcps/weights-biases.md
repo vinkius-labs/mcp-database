@@ -38,12 +38,12 @@ No more manual browsing through complex experiment dashboards to check model per
 
 
 ## Available Tools (6)
-- **get_run_details**: Retrieves full details for a specific W&B run, including summary metrics and config
 - **list_project_artifacts**: Lists all artifacts (datasets, models, etc.) in a project
 - **list_wandb_projects**: Lists all projects within a Weights & Biases entity (user or team)
-- **list_project_reports**: Lists all saved analysis reports in a project
 - **list_project_runs**: Lists all experiment runs within a specific W&B project
 - **list_project_sweeps**: Lists hyperparameter search sweeps within a project
+- **get_run_details**: Retrieves full details for a specific W&B run, including summary metrics and config
+- **list_project_reports**: Lists all saved analysis reports in a project
 
 
 ## 💬 Prompt Examples

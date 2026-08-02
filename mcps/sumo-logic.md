@@ -33,17 +33,17 @@ Empower your AI workflows with the powerful machine data analytics computing of 
 
 
 ## Available Tools (9)
+- **get_collector_details**: Retrieves details for a specific collector
+- **list_collectors**: Lists all data collectors configured in Sumo Logic
+- **get_account_billing**: Retrieves billing and usage metrics
 - **create_search_job**: Provide a query string, start time, and end time. Returns a search job ID for tracking.
 
 Creates a new log search job
-- **get_account_billing**: Retrieves billing and usage metrics
-- **list_account_users**: Lists all registered users in the account
-- **list_active_webhooks**: Lists configured alert webhooks
-- **get_collector_details**: Retrieves details for a specific collector
 - **get_search_results**: Retrieves the results of a completed search job
 - **get_search_status**: Retrieves the status of an existing search job
-- **list_collectors**: Lists all data collectors configured in Sumo Logic
 - **list_account_roles**: Lists all security roles in the account
+- **list_account_users**: Lists all registered users in the account
+- **list_active_webhooks**: Lists configured alert webhooks
 
 
 ## 💬 Prompt Examples

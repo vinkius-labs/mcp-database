@@ -32,21 +32,21 @@ Connect **Spotify** to any AI agent and turn your voice or text prompts into mus
 
 
 ## Available Tools (13)
+- **get_new_releases**: Get a list of new album releases
+- **get_track**: Get detailed information about a specific track
 - **get_album**: Get information about a specific album
-- **get_artist**: Get information about a specific artist
 - **get_current_track**: Returns empty if nothing is playing.
 
 Get the track currently playing on the user's device
-- **search**: Search for tracks, artists, albums, or playlists on Spotify
-- **get_track**: Get detailed information about a specific track
-- **get_user_playlists**: Get the current user's playlists
 - **get_audio_features**: Get audio features for a track (Danceability, Energy, Tempo, etc)
-- **get_new_releases**: Get a list of new album releases
 - **pause**: Pause playback on the user's device
 - **play**: Start or resume playback on the user's device
 - **get_playlist**: Get details of a specific playlist
 - **add_to_queue**: Add a track to the playback queue
 - **get_recommendations**: Get recommended tracks based on seed artists, genres, or tracks
+- **search**: Search for tracks, artists, albums, or playlists on Spotify
+- **get_user_playlists**: Get the current user's playlists
+- **get_artist**: Get information about a specific artist
 
 
 ## 💬 Prompt Examples

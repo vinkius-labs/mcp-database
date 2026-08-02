@@ -38,15 +38,6 @@ No more manual navigation through complex meeting dashboards to find a join link
 
 
 ## Available Tools (10)
-- **create_video_meeting**: Provide a title and ISO 8601 start/end timestamps.
-
-Schedules a new Webex video meeting
-- **create_webex_room**: Provide a descriptive title for the room.
-
-Creates a new Webex space
-- **delete_scheduled_meeting**: This action is irreversible.
-
-Permanently cancels and deletes a scheduled Webex meeting
 - **delete_webex_room**: This action is irreversible and removes all history for the room.
 
 Permanently deletes a Webex room
@@ -60,6 +51,15 @@ Updates the time or title of an existing Webex meeting
 - **update_room_title**: Provide the room ID and the new title.
 
 Updates the title of an existing Webex room
+- **create_video_meeting**: Provide a title and ISO 8601 start/end timestamps.
+
+Schedules a new Webex video meeting
+- **create_webex_room**: Provide a descriptive title for the room.
+
+Creates a new Webex space
+- **delete_scheduled_meeting**: This action is irreversible.
+
+Permanently cancels and deletes a scheduled Webex meeting
 
 
 ## 💬 Prompt Examples

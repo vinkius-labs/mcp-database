@@ -51,9 +51,6 @@ List outstanding audit evidence requests in Vanta — documents and screenshots 
 - **vanta_list_integrations**: ). Each integration shows: service name, connection status (connected/disconnected/error), last sync date, coverage metrics, and any configuration warnings. Use to check integration health, verify coverage, or troubleshoot sync issues.
 
 List all connected integrations in Vanta — cloud providers, identity providers, code repos, and their sync status
-- **vanta_list_people**: Each person includes: name, email, role, security awareness training status (completed/overdue), device compliance (encrypted/antivirus/updated), access review completion, and employment status. Use for "who has overdue training?", "which employees have non-compliant devices?", or pre-audit personnel reporting.
-
-List all personnel in Vanta with security training completion, device compliance, access review status, and onboarding/offboarding state
 - **vanta_list_policies**: ). Each policy shows: name, approval status (approved/draft/needs review), last review date, next review due, version number, and percentage of employees who have acknowledged. Use for policy management audits or compliance gap analysis.
 
 List all security and compliance policies in Vanta — approval status, review dates, version tracking, and employee acknowledgment rates
@@ -63,6 +60,9 @@ List the risk register — identified security risks with impact, likelihood, ri
 - **vanta_list_tests**: Each test maps to a specific control requirement (e.g., "MFA enabled for all users", "Encryption at rest"). Returns test name, associated framework (SOC 2/ISO/HIPAA/GDPR), current status (PASS/FAIL/WARNING), last run date, and any remediation notes. Use when the user asks about compliance posture, failing tests, or audit readiness.
 
 List all compliance monitoring tests in Vanta — SOC 2, ISO 27001, HIPAA, and GDPR controls with pass/fail status and last run dates
+- **vanta_list_people**: Each person includes: name, email, role, security awareness training status (completed/overdue), device compliance (encrypted/antivirus/updated), access review completion, and employment status. Use for "who has overdue training?", "which employees have non-compliant devices?", or pre-audit personnel reporting.
+
+List all personnel in Vanta with security training completion, device compliance, access review status, and onboarding/offboarding state
 - **vanta_list_vulnerabilities**: ). Each entry includes severity (CRITICAL/HIGH/MEDIUM/LOW), CVE identifier, affected resource/package, discovery date, and SLA deadline for remediation. Use when the user asks about security posture, open vulnerabilities, or needs to prioritize remediation work.
 
 List detected security vulnerabilities across your infrastructure — severity, CVE IDs, affected resources, and SLA deadlines

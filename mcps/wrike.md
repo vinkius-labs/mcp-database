@@ -7,46 +7,47 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Manage tasks, projects, and folders on Wrike — the most versatile work management platform for teams.
+Collaborative project management to manage tasks, projects, and team workflows with AI.
 
 ## Description
-Connect your **Wrike** account to any AI agent and manage your enterprise workflows through natural conversation.
+Connect your **Wrike** account to any AI agent to automate your complex project management workflows through natural conversation. Wrike provides a robust environment for enterprise-scale collaboration, task tracking, and resource management.
 
 ### What you can do
 
-- **Task Monitoring** — List and browse tasks across your entire account or filter by specific folder/project IDs
-- **Deep Task Analysis** — Retrieve comprehensive metadata for specific tasks, including descriptions, assignees, and custom fields
-- **Project Navigation** — Browse top-level project containers and monitor their current status and organization
-- **Folder Hierarchy** — Explore your organizational structure to understand how tasks are grouped and categorized
-- **Team Discovery** — List all users and contacts within your Wrike workspace to find IDs for task assignment
-- **Space Access** — List all available work areas (spaces) to navigate your team's different departments or functions
-- **Workflow Automation** — Quickly find unique task and folder IDs required for building automated project management flows
+- **Project Lifecycle** — List, create, and update tasks with granular control over importance levels, statuses, and custom metadata.
+- **Hierarchical Organization** — Navigate and manage the work using a structured system of folders and projects for different departments or clients.
+- **Team Collaboration** — Retrieve discussion threads and post comments directly to task feeds to keep your team aligned programmatically.
+- **Workspace Monitoring** — List contacts, track custom workflows, and manage task attachments to maintain a clear overview of operational progress.
+- **Operational Efficiency** — Automate task assignments and progress tracking to reduce manual coordination effort.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Wrike Access Token
-3. Start managing your tasks and projects through Claude, Cursor, or any MCP-compatible client
-
-No more manual digging through complex project folders to find an update. Your AI agent becomes your project operations assistant.
+2. Enter your Wrike Permanent Token from your account settings
+3. Start managing your enterprise projects from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Project Managers** — monitor task progress and audit project health through simple chat commands
-- **Team Leads** — lookup team member IDs and browse departmental spaces without manual navigation
-- **Operations Managers** — audit folder structures and verify task assignments across the workspace
-- **Executive Assistants** — quickly surface task details and project statuses for reporting and coordination
+- **Project Managers** — automate the coordination of large-scale projects and team assignments via natural language.
+- **Team Leads** — monitor progress across multiple folders and projects without switching applications.
+- **Operations Teams** — streamline task tracking and ensure all organizational workflows are following standard procedures.
 
 
-## Available Tools (6)
-- **get_task_details**: Retrieves comprehensive details for a specific Wrike task
-- **list_wrike_contacts**: Lists all users and contacts within the Wrike workspace
-- **list_wrike_folders**: Lists all folders and projects in the Wrike account
-- **list_wrike_projects**: Lists all active projects in the account
-- **list_wrike_spaces**: Lists all Wrike spaces available to the authenticated user
-- **list_wrike_tasks**: You can optionally provide a folder_id to scope the results.
+## Available Tools (12)
+- **add_task_comment**: Post comment to task
+- **create_folder**: Add new folder/project
+- **create_task**: Add new task
+- **get_user_profile**: Get current user
+- **get_task_details**: Get full task info
+- **list_task_comments**: Get task discussion
+- **list_team_members**: List workspace users
+- **list_task_attachments**: List task files
+- **list_tasks**: Can filter by status (Active, Completed, Deferred, Cancelled).
 
-Lists tasks in the Wrike account, optionally filtered by folder
+List project tasks
+- **update_task**: Modify task info
+- **list_folders_and_projects**: List hierarchy
+- **list_custom_workflows**: List task workflows
 
 
 ## 💬 Prompt Examples
@@ -54,38 +55,27 @@ Lists tasks in the Wrike account, optionally filtered by folder
 Here are some examples of how you can interact with the **Wrike** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my Wrike projects."
+> "List all my active tasks due this week."
 
 **🤖 AI Agent:**
-> I found 5 active projects in your account: 1. 'Product Launch 2026' (ID: IE...), 2. 'Q1 Marketing Campaign' (ID: IE...), 3. 'Internal Website Redesign' (ID: IE...), and 2 others. Which one would you like to explore?
+> I've retrieved your tasks for this week. You have 4 high-priority items, including 'Finalize Budget' and 'Team Sync'. Would you like more details on any of them?
 
 ---
 
 **👤 You:**
-> "Show me tasks in the 'Product Launch 2026' folder."
+> "Create a new high-priority task 'Draft Marketing Proposal' in project 'fld_123456'."
 
 **🤖 AI Agent:**
-> Searching folder 'Product Launch 2026' (ID: IE...)... I found 8 tasks. The most recent are: 1. 'Finalize Design Specs' (Status: Active), 2. 'Coordinate with Vendors' (Status: Active), and 3. 'Budget Approval' (Status: Completed). Would you like the details for any of these?
-
----
-
-**👤 You:**
-> "Get full details for task ID 'IEA...'."
-
-**🤖 AI Agent:**
-> Task 'Finalize Design Specs' (ID: IEA...): Description: 'Complete the UI/UX documentation for the mobile dashboard'. Status: Active, Priority: High, Assigned to: John Doe. Would you like me to check for any custom field values?
+> Successfully created the task 'Draft Marketing Proposal' (ID: tsk_882). I've set the priority to High as requested. Would you like to assign it to someone?
 
 
 ## ❓ FAQ
 
-**Q: Can I check the details of a specific task through the agent?**
-Yes. The `get_task_details` tool allows your AI agent to retrieve full metadata for any specific task ID, including its description, current status, assignees, and any custom fields you have configured.
+**Q: What is the difference between Folders and Projects in Wrike?**
+In Wrike, a Project is technically a Folder with added metadata such as owners, start/end dates, and project-specific statuses to help track deadlines and responsibility.
 
-**Q: How do I find tasks belonging to a specific folder or project?**
-You can use the `list_wrike_tasks` tool and provide the unique `folder_id`. Your agent will return all tasks contained within that specific organizational unit, helping you stay focused on a specific project.
-
-**Q: Is it possible to see all my team members' contact IDs via chat?**
-Absolutely. The `list_wrike_contacts` tool retrieves all users and contacts in your Wrike workspace, providing their names and unique contact IDs required for task assignment or mentions.
+**Q: Can I move a task to a different project via AI?**
+Yes, you can use the `update_task` tool and provide the `addParents` or `removeParents` parameters in the attributes to change which project or folder the task belongs to.
 
 
 ## Installation & Usage

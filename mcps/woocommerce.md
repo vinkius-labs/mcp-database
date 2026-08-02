@@ -39,10 +39,10 @@ No more manual logging into WordPress to check an order status. Your AI agent be
 
 
 ## Available Tools (10)
-- **list_store_products**: Lists WooCommerce products with pagination
 - **update_order_status**: Statuses: pending, processing, on-hold, completed, cancelled, refunded, failed.
 
 Updates the status of an existing WooCommerce order
+- **list_store_products**: Lists WooCommerce products with pagination
 - **get_customer_details**: Retrieves details for a specific store customer
 - **get_order_details**: Retrieves details for a specific store order
 - **get_product_details**: Retrieves details for a specific WooCommerce product

@@ -34,14 +34,14 @@ Connect your AI agent exclusively to your **Trend Micro Vision One** security in
 
 
 ## Available Tools (8)
+- **list_email_activity_logs**: Searches email activity logs for threat hunting
+- **list_managed_endpoints**: Lists managed endpoints (assets) connected to Vision One
+- **list_suspicious_objects**: Lists suspicious objects (URLs, IPs, files) from threat intelligence
 - **get_vision_one_account**: Retrieves Trend Micro account and connectivity status
 - **get_alert_details**: Retrieves details for a specific workbench alert
 - **list_security_alerts**: Lists security alerts from the Trend Micro Vision One workbench
 - **list_recent_detections**: Lists all recent security detections (XDR)
-- **list_email_activity_logs**: Searches email activity logs for threat hunting
 - **list_endpoint_activity_logs**: Searches endpoint activity telemetry
-- **list_managed_endpoints**: Lists managed endpoints (assets) connected to Vision One
-- **list_suspicious_objects**: Lists suspicious objects (URLs, IPs, files) from threat intelligence
 
 
 ## 💬 Prompt Examples

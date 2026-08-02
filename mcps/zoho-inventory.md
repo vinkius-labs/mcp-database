@@ -5,50 +5,54 @@
 
 ## Overview
 
-**Category:** [ecommerce](../categories/ecommerce.md)
+**Category:** [erp-operations](../categories/erp-operations.md)
 
-Manage inventory items, sales orders, and stock levels via the Zoho Inventory API.
+Manage inventory, orders, and contacts on Zoho Inventory with AI agents.
 
 ## Description
-Connect your **Zoho Inventory** account to any AI agent to automate your order management and stock control. This MCP server enables your agent to interact with products, sales orders, and purchase orders directly through natural language interfaces.
+Connect your **Zoho Inventory** account to any AI agent to automate your supply chain and order management workflows through natural conversation.
 
 ### What you can do
 
-- **Inventory Oversight** — List all items in your inventory and retrieve real-time stock levels and metadata
-- **Order Management** — List, retrieve, and create sales orders and purchase orders across your organizations
-- **Stock Tracking** — Monitor item availability and identify stockouts before they happen
-- **Bundle Visibility** — List composite items and bundles to understand your product kits and assemblies
-- **Multi-Org Support** — Manage multiple business entities by providing the required organization ID for all operations
+- **Inventory Monitoring** — List and monitor all inventory items with real-time stock levels and detailed product metadata.
+- **Order Lifecycle** — Retrieve and monitor sales orders, invoices, and purchase orders for a 360-degree business view.
+- **Item Management** — Programmatically create new items to keep your catalog updated with minimal manual effort.
+- **Contact Management** — Access and manage your database of customers and vendors to facilitate seamless order processing.
+- **Global Operations** — Full support for multiple regions (US, EU, IN, AU, CA) to automate logistics across international data centers.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Zoho Client ID, Client Secret, and Data Center Domain
-3. Start managing your inventory from Claude, Cursor, or any MCP-compatible client
+2. Enter your Zoho Inventory Access Token and Organization ID
+3. Select your hosting Region (e.g., 'US', 'EU')
+4. Start managing your inventory from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Inventory Managers** — Quickly check item availability and update stock notes via natural language commands
-- **Warehouse Operations** — Monitor incoming and outgoing orders without opening the administrative panel
-- **Developers** — Integrate real-time inventory data and order automation into your daily development workflow
+- **E-commerce Managers** — instantly retrieve stock levels, monitor sales orders, and manage vendors without opening the Zoho app.
+- **Warehouse Operations** — check item details and update inventory catalogs straight from the AI interface.
+- **Logistics Teams** — automate the tracking of purchase orders and invoices across global regions.
 
 
-## Available Tools (9)
-- **list_composite_items**: List all composite items (bundles)
-- **create_new_item**: Requires a JSON body with item details (name, rate, etc.).
+## Available Tools (8)
+- **create_item**: Requires the item name and sales rate. Optional description can be provided.
 
-Add a new item to the inventory
-- **create_sales_order**: Requires a JSON body with customer and line item details.
+Create a new inventory item
+- **get_item_details**: Get details for a specific inventory item
+- **list_invoices**: Useful for tracking billing and payment status.
 
-Create a new sales order
-- **get_item_details**: Get details for a specific item
-- **get_sales_order_details**: Get details for a specific sales order
-- **list_inventory_items**: List all items in the inventory
-- **list_organizations**: Use this to identify the organization ID for other calls.
+List all inventory invoices
+- **list_items**: Includes basic metadata and item IDs.
 
-List all Zoho Inventory organizations
+List all inventory items
+- **list_organizations**: This is necessary to obtain the organization ID required for other inventory tools.
+
+List associated Zoho organizations
 - **list_purchase_orders**: List all purchase orders
 - **list_sales_orders**: List all sales orders
+- **list_contacts**: Essential for identifying IDs for orders and invoices.
+
+List customers and vendors
 
 
 ## 💬 Prompt Examples
@@ -56,38 +60,35 @@ List all Zoho Inventory organizations
 Here are some examples of how you can interact with the **Zoho Inventory** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all organizations in my Zoho Inventory account."
+> "Create a new inventory item called 'Mechanical Keyboard Pro' with a sales rate of 129.99 and fetch the complete item list to verify."
 
 **🤖 AI Agent:**
-> I've retrieved your organizations. You have 2 entities: 'Main Store (ID: 123456)' and 'Secondary Warehouse (ID: 789012)'. Which one would you like to access?
+> I successfully created the 'Mechanical Keyboard Pro' with a rate of $129.99. Your total inventory now contains 156 items. Let me know if you need to update its stock levels.
 
 ---
 
 **👤 You:**
-> "Show the stock level for 'Professional Camera'."
+> "List the most recent purchase orders and show me the details of any that are marked as 'Pending Approval'."
 
 **🤖 AI Agent:**
-> For 'Professional Camera' (ID: 101) in organization 123456, there are currently 45 units available in stock.
+> I retrieved 5 recent purchase orders. There are 2 marked as 'Pending Approval': PO-1024 to 'TechSuppliers Inc' for $4,500 and PO-1025 to 'Global Logistics' for $850. Would you like me to approve them?
 
 ---
 
 **👤 You:**
-> "List my 5 most recent sales orders in organization '123456'."
+> "Search the contacts directory for the vendor 'Acme Corp' and fetch their outstanding invoice balance."
 
 **🤖 AI Agent:**
-> I've fetched your latest sales orders. Recent transactions include Order #SO-001 for 'Alice Smith' ($1,500.00) and Order #SO-002 for 'Bob Jones' ($850.50).
+> I found the contact 'Acme Corp' (Contact ID: 839201). They currently have 3 outstanding invoices with a total unpaid balance of $12,450.00.
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Organization ID?**
-Use the `list_organizations` tool to retrieve all businesses registered in your account along with their unique IDs.
+**Q: How do I find my Zoho Organization ID?**
+Your Organization ID is visible in the top right corner of your Zoho Inventory dashboard or under 'Settings' > 'Organization Profile'.
 
-**Q: Which Data Center domains are supported?**
-You can use Zoho domains such as `com` (US), `eu` (Europe), `in` (India), `com.au` (Australia), or `jp` (Japan).
-
-**Q: Can I create a sales order directly via the agent?**
-Yes, use the `create_sales_order` tool by providing the Organization ID and a JSON object containing the customer and line item details.
+**Q: Which Zoho regions are supported by this integration?**
+We support all major Zoho data centers: US, EU, IN, AU, and CA. Ensure you select the region where your account was created.
 
 
 ## Installation & Usage

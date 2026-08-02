@@ -7,44 +7,41 @@
 
 **Category:** [friends-mcp](../categories/friends-mcp.md)
 
-Manage your cloud automation — audit actors, tasks, and datasets via AI.
+Run web scraping actors, collect structured data, and manage storage datasets for large-scale data extraction projects.
 
 ## Description
-Empower your AI agent to orchestrate your entire cloud automation and web scraping ecosystem with **Apify**, the leading platform for scaleable automation. By connecting Apify to your agent, you transform complex actor management into a natural conversation. Your agent can instantly list your actors, audit task execution, and retrieve dataset items without you ever touching a technical console. Whether you are running data pipelines or managing automated workflows, your agent acts as a real-time automation operator, ensuring your cloud jobs are always monitored and your data is organized.
+Connect your **Apify** account to any AI agent and simplify how you manage your web scraping, automation actors, and data storage through natural conversation.
 
 ### What you can do
 
-- **Actor Auditing** — List all actors in your account and retrieve detailed metadata, including descriptions and status.
-- **Task Oversight** — Browse your configured actor tasks to maintain a clear view of your automated workflows.
-- **Execution Intelligence** — List recent runs for any actor or task to monitor performance and success rates in real-time.
-- **Data Management** — Query datasets and retrieve items instantly to audit the output of your automation jobs.
-- **Operational Monitoring** — List schedules, webhooks, and key-value stores to maintain strict organizational control.
+- **Actor Control** — List and trigger serverless actors for web scraping and automation directly from your agent.
+- **Dataset Retrieval** — Fetch the resulting data records (items) from your datasets to analyze or process values via AI.
+- **Run Monitoring** — Track the history and status of recent actor executions to ensure reliability.
+- **Task Management** — List and query configured actor tasks to reuse saved scraper settings.
+- **Data Insights** — Retrieve detailed metadata and logs for specific runs to debug complex automations.
+- **Storage Visibility** — List all datasets in your account to manage your collected web data.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Apify API Key
-3. Start managing your cloud automation through Claude, Cursor, or any MCP-compatible client
+2. Enter your Apify API Token (found in your account settings under Integrations)
+3. Start running your scrapers from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **Data Engineers** — monitor actor runs and dataset items straight from your workflow.
-- **Operations Managers** — verify if automated tasks are being correctly executed and scheduled.
-- **Growth Leads** — perform rapid audits of scraping outputs and extracted data without manual logins.
-- **Business Owners** — automate cloud querying to orchestrate your data-driven automation strategy smoothly.
+- **Data Scientists & Researchers** — quickly retrieve scraped data from datasets and analyze trends via simple AI commands.
+- **Automation Engineers** — trigger actor runs and monitor execution health directly from the workspace.
+- **Product Managers** — get instant bird's-eye views of automated data collection tasks and results.
 
 
-## Available Tools (10)
-- **list_webhooks**: List configured webhooks
-- **get_actor**: Get details for a specific actor
-- **get_dataset_items**: Get items from a specific dataset
-- **get_user_info**: Get details for the authenticated Apify user
+## Available Tools (7)
+- **list_actor_runs**: List recent actor executions
+- **list_actor_tasks**: List configured actor tasks
+- **get_dataset_results**: Get items from a dataset
+- **get_run_details**: Get details for a specific run
+- **run_actor**: Trigger an actor run
 - **list_actors**: List Apify actors
 - **list_datasets**: List Apify datasets
-- **list_key_value_stores**: List Apify key-value stores
-- **list_runs**: List runs for an actor
-- **list_schedules**: List Apify schedules
-- **list_tasks**: List Apify actor tasks
 
 
 ## 💬 Prompt Examples
@@ -52,38 +49,38 @@ Empower your AI agent to orchestrate your entire cloud automation and web scrapi
 Here are some examples of how you can interact with the **Apify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my Apify actors."
+> "List all actors in my Apify account."
 
 **🤖 AI Agent:**
-> I've retrieved your actors. You have 5 active actors, including 'Website Content Crawler' and 'Google Maps Scraper'. Which one would you like to audit for recent runs?
+> I've retrieved your actors. You have 3 active scrapers including 'Instagram Scraper', 'Google Maps Reviewer', and 'Custom CRM Sync'. Which one would you like to run or check datasets for?
 
 ---
 
 **👤 You:**
-> "Show me the last 5 runs for actor ID xxxx."
+> "Run the 'Instagram Scraper' with input { "hashtags": ["#AI"] }."
 
 **🤖 AI Agent:**
-> I've found the last 5 runs. The most recent one was completed successfully in 2 minutes. Two other runs had warnings. Would you like the full log details?
+> Actor run triggered! I've started the 'Instagram Scraper' (ID: act_10293) with your custom input. The execution ID is run_88231. I'll monitor it and let you know when the dataset is ready.
 
 ---
 
 **👤 You:**
-> "Get items from dataset ID yyyy."
+> "Show me the results from dataset 'ds_10293'."
 
 **🤖 AI Agent:**
-> I've retrieved the data from that dataset. It contains 50 items related to 'Competitor Pricing'. I can summarize the top findings or provide the full list.
+> I've fetched the dataset items. There are 25 records including profile URLs, post captions, and engagement counts. Would you like me to summarize the top performing posts?
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Apify API Key?**
-Log in to your [**Apify Console**](https://console.apify.com/account/integrations), and you will find your API Token under the **Integrations** tab. Copy and paste it below.
+**Q: Can I provide input parameters when running an actor?**
+Yes! Use the `run_actor` tool and provide the optional `input` JSON object to configure specific scraper settings for that run.
 
-**Q: Can the agent check the results of a scrape?**
-Yes. Use the `get_dataset_items` tool providing the Dataset ID. Your agent will retrieve the items from the cloud storage, allowing you to audit the output instantly.
+**Q: How do I see the items collected in a dataset?**
+Run the `get_dataset_results` query with your Dataset ID. The agent will retrieve the data records, which you can then ask the AI to summarize or analyze.
 
-**Q: Is it possible to list actor runs via the agent?**
-Yes. The `list_runs` tool allows your agent to retrieve the history of executions for any specific actor, including durations and final statuses.
+**Q: Is it possible to check the status of a specific actor run?**
+Absolutely. Use the `get_run_details` tool and provide the Run ID. Your agent will retrieve the status (RUNNING, SUCCEEDED, FAILED) and metadata for that specific execution.
 
 
 ## Installation & Usage

@@ -35,10 +35,10 @@ Stop digging through the SonarCloud UI just to see why an automated test or qual
 
 
 ## Available Tools (9)
+- **search_users**: Searches for users in the organization
 - **search_projects**: You can filter by organization key.
 
 Searches for projects in SonarCloud
-- **search_users**: Searches for users in the organization
 - **list_organizations**: Lists organizations for the current user
 - **get_analysis_status**: Retrieves the latest analysis status for a project
 - **get_quality_gate_status**: g., "OK", "ERROR").

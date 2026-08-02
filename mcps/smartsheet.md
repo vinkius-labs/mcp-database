@@ -7,40 +7,49 @@
 
 **Category:** [industry-titans](../categories/industry-titans.md)
 
-Empower your AI to read Smartsheet rows, list workspaces, and manage your spreadsheets effortlessly from your code editor.
+Manage sheets, reports, and rows on Smartsheet with AI agents.
 
 ## Description
-Connect your **Smartsheet** account to any AI agent and empower your team to query project configurations, internal spreadsheets, and custom reports seamlessly. Interact with your organization's grids through natural language without ever switching tabs.
+Connect your **Smartsheet** account to any AI agent to automate your enterprise work management and collaboration orchestration. Smartsheet provides a powerful platform for tracking projects and data, and this integration allows you to retrieve sheet metadata, manage rows, and search through workspaces through natural conversation.
 
 ### What you can do
 
-- **Project Navigation** — Easily map out your hierarchical structures calling `list_workspaces` and `list_folders` to find correct document locations
-- **Sheet Deep-Dives** — Browse all your active spreadsheets using `list_sheets` and extract raw rows/columns instantly via `get_sheet_details`
-- **Reporting Overviews** — Retrieve saved tabular aggregations automatically calling `list_reports` across all configured company sheets
-- **Identity Profiling** — Test the connectivity and query authorized scopes by requesting the internal `get_current_user` tool
+- **Sheet & Data Orchestration** — List all managed sheets and retrieve detailed profile metadata, including columns and structural definitions programmatically.
+- **Row Lifecycle Management** — Add, update, and delete rows within your sheets with full control over cell data directly from the AI interface.
+- **Workspace & Report Control** — Access and monitor your workspaces and reports to maintain a clear overview of your projects via natural language.
+- **Search & Discovery Intelligence** — Search through specific sheets to quickly find the information you need and retrieve filtered data results.
+- **Operational Monitoring** — Access user profiles and monitor system health to ensure reliable data synchronization between Smartsheet and your AI workflows.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Personal Smartsheet Access Token
-3. Start using Claude, Cursor, or any MCP-compatible client to query the state of your tabular data
-
-Stop manually hunting down the ID of a specific project table just to wire up your Python scripts. Let your AI agent read the workspace layout automatically.
+2. Enter your Smartsheet Access Token from your account settings
+3. Start managing your enterprise work from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Project Managers** — rapidly audit how many tasks are active across cross-functional sheets or pull report overviews without exporting CSVs
-- **Data Engineers** — query the actual sheet layout and row metadata directly from the code editor to build sturdy ETL scripts
-- **Team Leaders** — have the bot read specific spreadsheets to generate weekly summary drafts completely autonomously
+- **Project Managers** — quickly update project statuses and monitor report details without switching between sheets.
+- **Operations Teams** — automate the retrieval of resource data and manage team rows via natural conversation.
+- **Data Analysts** — streamline the retrieval of sheet metadata and monitor data collection directly within the chat.
 
 
-## Available Tools (6)
-- **list_sheets**: Lists all sheets available in Smartsheet
-- **get_sheet_details**: Retrieves details for a specific sheet
-- **list_workspaces**: Lists all workspaces in Smartsheet
-- **list_folders**: Lists all folders
-- **list_reports**: Lists all reports
-- **get_current_user**: Retrieves information about the current Smartsheet user
+## Available Tools (12)
+- **add_sheet_rows**: Rows must be provided as a JSON array.
+
+Append new rows
+- **list_available_reports**: List filtered reports
+- **list_sheets**: List Smartsheet sheets
+- **list_platform_users**: List company users
+- **list_workspaces**: List project workspaces
+- **search_within_sheet**: Find data in sheet
+- **update_sheet_rows**: Rows must be provided as a JSON array with IDs.
+
+Modify existing rows
+- **remove_sheet_row**: Delete a row
+- **get_my_profile**: Get user info
+- **get_sheet_details**: Get sheet data
+- **get_workspace_details**: Get workspace info
+- **list_sheet_columns**: List sheet fields
 
 
 ## 💬 Prompt Examples
@@ -48,57 +57,32 @@ Stop manually hunting down the ID of a specific project table just to wire up yo
 Here are some examples of how you can interact with the **Smartsheet** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all sheets available in my Smartsheet account."
+> "List all active sheets in my Smartsheet account."
 
 **🤖 AI Agent:**
-> I've invoked the listing call. Your account currently has access to the following 3 sheets:
-- Q1 Marketing Budget (ID: `10023`)
-- Employee Resource Registry (ID: `82910`)
-- Bug Triage Queue (ID: `15523`)
-
-Which sheet would you like me to inspect in more detail?
+> I've retrieved your sheets. You have 5 active ones including 'Project Roadmap', 'Budget Tracker', and 'Team Tasks'. Which one would you like to open?
 
 ---
 
 **👤 You:**
-> "Retrieve the details and rows for the 'Release Candidate Tracker' sheet."
+> "Show me all active project sheets with their task completion rates and upcoming deadlines."
 
 **🤖 AI Agent:**
-> I matched 'Release Candidate Tracker' to ID `85739`.
-**Columns Detected**:
-1. Status (Dropdown)
-2. Task Name (Text/Number)
-3. Assigned To (Contact List)
-
-**Rows retrieved**:
-- Row 1: Status: In Progress | Task: Implement API Docs | Assigned To: J. Doe
-- Row 2: Status: Complete | Task: Docker Upgrade | Assigned To: S. Smith
+> 8 active project sheets. "Product Launch Q2" (156 rows): 72% complete, 12 tasks due this week, 3 overdue (critical path items). "Website Redesign" (89 rows): 45% complete, on track, next milestone Friday. "Data Migration" (234 rows): 88% complete, final testing phase. "Marketing Campaign" (67 rows): 34% complete, 5 blocked tasks. "Office Relocation" (45 rows): 60% complete. 3 additional sheets at various stages. Total tasks across all sheets: 734. Overdue: 18 (2.5%). Resource conflicts: 4 team members over-allocated.
 
 ---
 
 **👤 You:**
-> "Summarize all our workspaces in a markdown table."
+> "Create a new project sheet from the Agile Sprint template and add the engineering team as collaborators."
 
 **🤖 AI Agent:**
-> Sure. Using `list_workspaces`, I've compiled this table:
-
-| Workspace Name | ID | Permission Level |
-| --- | --- | --- |
-| External Consultants | `W-2391` | Admin |
-| Core Engineering Team | `W-8472` | Owner |
-| Q3 Marketing Rollouts | `W-1102` | Viewer |
+> Project sheet created: "Sprint 14 - API Platform". Template: Agile Sprint (columns: Story, Points, Assignee, Status, Priority, Sprint, Epic). 6 team members added as editors: Sarah Chen, James Park, Alex Rivera, Lisa Wang, David Kim, Maria Santos. Default views created: Board (Kanban by Status), Gantt (timeline), Calendar (due dates). Automation rules: status change notifications, overdue alerts, sprint burndown chart updates. Sprint dates set: May 19-30. Ready for backlog import.
 
 
 ## ❓ FAQ
 
-**Q: Can the AI understand the raw tabular data of my spreadsheet?**
-Yes. When you call the `get_sheet_details` tool, the server returns the spreadsheet's metadata, including all column names, types (e.g., date, dropdown), and rows. The AI maps the internal IDs together to form a highly accurate contextual grid of your project.
-
-**Q: Does my agent need to use a sheet ID?**
-No manual hunting needed! While the underlying tool does require a sheet ID, you can just tell your bot, 'Find our Onboarding Spreadsheet and read the rows'. The AI will first scan via `list_sheets`, match the textual name to the ID, and then naturally pull the targeted entity.
-
-**Q: How do I list folders within a workspace?**
-Your AI agent will act autonomously. Ask it to 'check our Engineering workspace' and it will first fetch its workspace ID and intelligently map the nested sub-folders and sheets stored inside. You can instruct it to keep going deeper as needed.
+**Q: How do I find my Smartsheet Access Token?**
+Log in to Smartsheet, navigate to **Account** > **Personal Settings** > **API Access**, and generate a new access token for your integration.
 
 
 ## Installation & Usage

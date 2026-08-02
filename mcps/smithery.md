@@ -37,15 +37,6 @@ Essential for **AI application developers**, **agent architects**, **platform en
 
 
 ## Available Tools (11)
-- **create_connection**: Smithery handles OAuth, tokens, and sessions automatically. Requires the server namespace and connection configuration (mcpUrl, optional headers, metadata). Returns the connection ID, status, and server info. Use this to integrate MCP servers into your applications without managing authentication complexity.
-
-Create a new connection to an MCP server via Smithery Connect
-- **create_service_token**: The token has limited permissions defined by the policy (namespaces, resources, operations, metadata, TTL). Returns the token string. Use this to provide secure, time-limited access to MCP servers without exposing your main API key.
-
-Generate a scoped service token for frontend/agent access to MCP servers
-- **delete_connection**: This action cannot be undone. Requires namespace and connection ID. Use this to clean up unused connections or revoke access.
-
-Remove an MCP server connection
 - **get_connection**: Requires namespace and connection ID. Use this to review connection details or troubleshoot connectivity issues.
 
 Get detailed information about a specific MCP connection
@@ -70,6 +61,15 @@ List all connections for a specific MCP server namespace
 - **search_servers**: Returns matching servers with qualified names, descriptions, verification status, user counts, and deployment info. Use optional filters to narrow by namespace, verified status, or deployment state. Results include pagination metadata. Use this as the first step to discover available MCP servers before connecting or installing them.
 
 Search the Smithery registry for MCP servers by name, description, or tags
+- **create_connection**: Smithery handles OAuth, tokens, and sessions automatically. Requires the server namespace and connection configuration (mcpUrl, optional headers, metadata). Returns the connection ID, status, and server info. Use this to integrate MCP servers into your applications without managing authentication complexity.
+
+Create a new connection to an MCP server via Smithery Connect
+- **create_service_token**: The token has limited permissions defined by the policy (namespaces, resources, operations, metadata, TTL). Returns the token string. Use this to provide secure, time-limited access to MCP servers without exposing your main API key.
+
+Generate a scoped service token for frontend/agent access to MCP servers
+- **delete_connection**: This action cannot be undone. Requires namespace and connection ID. Use this to clean up unused connections or revoke access.
+
+Remove an MCP server connection
 
 
 ## 💬 Prompt Examples
