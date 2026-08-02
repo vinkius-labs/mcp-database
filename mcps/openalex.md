@@ -34,7 +34,7 @@ Connect your AI agent to the **world's largest fully open catalog of scholarly w
 
 
 ## Available Tools (5)
-- **get_openalex_trending_topics**: Essential for understanding global research trends.
+- **get_openalex_trending_topics**: Essential for understanding globalThis research trends.
 
 Discover the most researched scientific topics and concepts globally
 - **get_openalex_work**: Accepts OpenAlex ID (e.g. W2741809809 or full URL) or DOI (e.g. 10.1038/nature12373).

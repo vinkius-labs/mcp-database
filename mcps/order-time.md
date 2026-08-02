@@ -28,6 +28,7 @@ Connect your **Order Time** account to empower your AI agents with advanced inve
 
 
 ## Available Tools (9)
+- **list_sales_orders**: List sales orders
 - **get_customer**: Get customer details
 - **get_item**: Get item details
 - **get_purchase_order**: Get purchase order details
@@ -36,7 +37,6 @@ Connect your **Order Time** account to empower your AI agents with advanced inve
 - **list_customers**: List all customers
 - **list_items**: List inventory items
 - **list_purchase_orders**: List purchase orders
-- **list_sales_orders**: List sales orders
 
 
 ## 💬 Prompt Examples

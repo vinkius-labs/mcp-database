@@ -41,8 +41,8 @@ Connect your **Nimble CRM** account to your AI agent and streamline your relatio
 - **get_deal**: Get specific deal info
 - **get_me**: Get current user info
 - **list_activities**: List tasks and events
-- **list_contacts**: List Nimble contacts
 - **list_deals**: List Nimble deals
+- **list_contacts**: List Nimble contacts
 - **list_pipelines**: List deal pipelines
 - **search_contacts**: Search for contacts
 

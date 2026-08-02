@@ -24,6 +24,9 @@ Completely open and unrestricted.
 
 
 ## Available Tools (6)
+- **get_spending_cards**: Dataset: uk-spending-on-cards. Weekly data providing near real-time insight into consumer spending patterns.
+
+Get UK debit and credit card spending — experimental real-time indicator
 - **get_gdp**: Main datasets: regional-gdp-by-quarter (quarterly), regional-gdp-by-year (annual). Covers England, Wales, and 9 English regions. Use time=* for the full time series.
 
 Get UK GDP data — quarterly and annual, by region and sector
@@ -33,9 +36,6 @@ Get UK inflation (CPIH) — the official consumer prices index including housing
 - **get_retail_sales**: Dataset: retail-sales-index. Monthly data showing value and volume of retail sales in Great Britain. Base year 2019=100. Seasonally and non-seasonally adjusted.
 
 Get UK retail sales index — value and volume of consumer spending
-- **get_spending_cards**: Dataset: uk-spending-on-cards. Weekly data providing near real-time insight into consumer spending patterns.
-
-Get UK debit and credit card spending — experimental real-time indicator
 - **get_tax_benefits**: Dataset: tax-benefits-statistics. Shows redistribution effects of direct and indirect taxation and benefits in cash or kind.
 
 Get the effects of taxes and benefits on UK household income

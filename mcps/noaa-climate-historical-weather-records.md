@@ -24,12 +24,6 @@ GHCN-Daily has worldwide stations, with densest coverage in the US, Europe, and 
 
 
 ## Available Tools (5)
-- **get_daily_data**: This is the planet's largest archive of daily weather records. Filter by station, data types (TMAX, TMIN, PRCP, SNOW, SNWD), and date range. Stations are worldwide but densest coverage is in the US.
-
-Get daily weather data (GHCN-Daily): temperatures, precipitation, snow
-- **get_monthly_summary**: Monthly aggregates of temperature averages, precipitation totals, and degree days. Less granular than daily but ideal for climate trend analysis.
-
-Get monthly climate summary (GSOM): average temp, total precipitation, heating degree days
 - **get_yearly_summary**: Yearly temperature averages, precipitation totals, and extreme values. Perfect for long-term climate analysis spanning decades.
 
 Get annual climate summary (GSOY): yearly averages and extremes
@@ -39,6 +33,12 @@ Get 30-year climate normals — the baseline for what is "normal" weather
 - **search_stations**: Returns station IDs, names, and locations for use with other climate tools.
 
 Search NCEI weather stations by location bounding box or keyword
+- **get_daily_data**: This is the planet's largest archive of daily weather records. Filter by station, data types (TMAX, TMIN, PRCP, SNOW, SNWD), and date range. Stations are worldwide but densest coverage is in the US.
+
+Get daily weather data (GHCN-Daily): temperatures, precipitation, snow
+- **get_monthly_summary**: Monthly aggregates of temperature averages, precipitation totals, and degree days. Less granular than daily but ideal for climate trend analysis.
+
+Get monthly climate summary (GSOM): average temp, total precipitation, heating degree days
 
 
 ## 💬 Prompt Examples

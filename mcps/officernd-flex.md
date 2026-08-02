@@ -36,16 +36,16 @@ Connect your **OfficeRnD Flex** account to your AI agent and streamline your cow
 
 
 ## Available Tools (10)
-- **get_booking_details**: Get specific booking details
 - **get_member_details**: Get specific member info
-- **list_bookings**: List resource bookings
-- **list_member_contracts**: List member contracts
 - **list_billing_invoices**: List billing invoices
-- **list_members**: List workspace members
 - **list_billing_payments**: List received payments
 - **list_billing_plans**: List membership plans
 - **list_workspace_resources**: List available resources
 - **list_teams**: List workspace teams
+- **get_booking_details**: Get specific booking details
+- **list_bookings**: List resource bookings
+- **list_member_contracts**: List member contracts
+- **list_members**: List workspace members
 
 
 ## 💬 Prompt Examples

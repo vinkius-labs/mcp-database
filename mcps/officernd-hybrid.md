@@ -27,7 +27,6 @@ Connect your **OfficeRnD Hybrid** account to empower your AI agents with office 
 
 
 ## Available Tools (10)
-- **cancel_booking**: Cancel an existing booking
 - **create_booking**: Create a new booking
 - **get_booking**: Get a specific booking
 - **get_my_profile**: Get current user profile
@@ -37,6 +36,7 @@ Connect your **OfficeRnD Hybrid** account to empower your AI agents with office 
 - **list_locations**: List organization locations
 - **list_resources**: List all resources (desks, rooms, etc.)
 - **list_teams**: List organization teams
+- **cancel_booking**: Cancel an existing booking
 
 
 ## 💬 Prompt Examples

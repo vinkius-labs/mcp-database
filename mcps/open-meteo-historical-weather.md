@@ -22,7 +22,7 @@ Climate researchers, agricultural analysts, insurance underwriters, real estate 
 
 
 ## Available Tools (3)
-- **get_historical_weather**: Provide latitude, longitude, start_date and end_date in YYYY-MM-DD format. Covers 84 years of global data.
+- **get_historical_weather**: Provide latitude, longitude, start_date and end_date in YYYY-MM-DD format. Covers 84 years of globalThis data.
 
 Get historical weather for any date range (1940–present)
 - **get_historical_daily**: Get historical daily weather aggregates

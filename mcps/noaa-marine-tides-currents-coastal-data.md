@@ -25,15 +25,15 @@ Complete US coastal data from NOAA's Center for Operational Oceanographic Produc
 - **get_water_levels**: Data in meters relative to station datum. Provide a CO-OPS station ID (e.g., 8518750 for The Battery, NYC; 9414290 for San Francisco).
 
 Get observed water levels (tides) at a US coastal station
-- **get_tide_predictions**: Provides predicted high and low tide times and heights. Useful for fishing, boating, coastal activities. Default is next 48 hours.
-
-Get tide predictions (hi/lo) for a US coastal station
 - **get_currents**: Available at select CO-OPS stations with current meters.
 
 Get observed ocean current speed and direction at a US coastal station
 - **get_water_temperature**: Useful for marine biology, fishing, surfing, and coastal research.
 
 Get water temperature at a US coastal station
+- **get_tide_predictions**: Provides predicted high and low tide times and heights. Useful for fishing, boating, coastal activities. Default is next 48 hours.
+
+Get tide predictions (hi/lo) for a US coastal station
 - **get_meteorological**: Complements water-level data for a complete coastal picture.
 
 Get coastal meteorological data: air temp, wind, pressure at a station

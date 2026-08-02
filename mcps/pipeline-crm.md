@@ -34,16 +34,16 @@ Connect your **Pipeline CRM** account to any AI agent and take full control of y
 
 
 ## Available Tools (10)
-- **get_pipeline_account**: Get account settings and info
+- **list_pipeline_deals**: List sales deals
+- **list_pipeline_tasks**: List pending tasks
+- **list_pipeline_users**: List account users
 - **get_pipeline_deal**: Get details for a specific deal
 - **get_pipeline_person**: Get details for a specific person
 - **list_pipeline_companies**: List companies in the CRM
-- **list_pipeline_deals**: List sales deals
 - **list_pipeline_events**: List calendar events
 - **list_pipeline_notes**: List recent notes/comments
+- **get_pipeline_account**: Get account settings and info
 - **list_pipeline_people**: List people in Pipeline CRM
-- **list_pipeline_tasks**: List pending tasks
-- **list_pipeline_users**: List account users
 
 
 ## 💬 Prompt Examples

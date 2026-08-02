@@ -36,12 +36,12 @@ Connect to the **OFAC Sanctions List Service (SLS)** API through your AI agent a
 
 
 ## Available Tools (10)
-- **get_sls_about**: Get SLS API info
 - **get_delta_version_metadata**: Get delta version metadata
 - **get_entity_details**: Get specific entity metadata
 - **get_version_entry_count**: Get total entries in a version
 - **get_full_version_metadata**: Get full version metadata
 - **get_list_last_updated**: Check for list updates
+- **get_sls_about**: Get SLS API info
 - **list_version_entities**: List entities in a version
 - **list_sanctions_lists**: g. SDN, NONSDN).
 
