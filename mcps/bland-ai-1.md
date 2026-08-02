@@ -7,44 +7,47 @@
 
 **Category:** [superpower](../categories/superpower.md)
 
-Automate phone calls via Bland AI — send outbound calls, manage agents, and retrieve transcripts directly from any AI agent.
+Deploy AI phone agents that handle inbound and outbound calls with natural conversation for sales and customer support.
 
 ## Description
-Connect your **Bland AI** account to any AI agent and orchestrate your automated phone call workflows through natural conversation.
+Connect your **Bland AI** account to any AI agent and take full control of your hyper-realistic AI-driven phone communication and automated voice workflows through natural conversation.
 
 ### What you can do
 
-- **Outbound Automation** — Send AI-powered phone calls with custom tasks and specific voices.
-- **Call Monitoring** — List recent calls and retrieve detailed metadata, including transcripts and analysis.
-- **Agent Management** — Access and manage your AI 'personas' (agents) used for different call scenarios.
-- **Pathway Coordination** — Retrieve and utilize complex conversation pathways for branching logic during calls.
-- **Voice Discovery** — List all available AI voices to find the perfect fit for your brand.
-- **Operational Control** — Stop active or scheduled calls instantly if needed.
+- **Outbound Call Orchestration** — Programmatically initiate high-fidelity phone calls to over 200 countries, providing specific tasks and real-time instructions directly through your agent
+- **Voice Agent Architecture** — Create and manage persistent AI personas with fixed prompts, voices, and personality settings to maintain a perfectly coordinated brand voice
+- **Conversation Intelligence** — Access real-time call statuses, retrieve complete high-fidelity transcripts, and access secure recording links for every interaction
+- **Post-Call Discovery** — Programmatically analyze finished calls to extract specific variables, insights, or sentiment summaries using advanced post-processing tools
+- **Infrastructure Monitoring** — Access your directory of purchased phone numbers and high-fidelity AI voices to oversee your voice communication ecosystem programmatically
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Bland AI API Key
-3. Start automating your phone operations from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API Key** from your Bland AI dashboard (Settings > API Keys)
+3. Start orchestrating your automated voice outreach from Claude, Cursor, or any MCP client
+
+No more manual dialing or listening through hours of recordings to find insights. Your AI acts as your dedicated telephony engineer and voice interaction coordinator.
 
 ### Who is this for?
 
-- **Sales & Support Teams** — automate follow-ups and appointment reminders without manual dialing.
-- **Operations Leads** — monitor call performance and agent settings straight from their workflow tools.
-- **Developers** — integrate automated phone interactions into their agent-led business processes.
+- **Sales & Operations Leads** — instantly initiate lead qualification calls and monitor conversion trends using natural language commands
+- **Customer Success Managers** — automate appointment reminders and analyze customer sentiment without leaving your workspace
+- **Developers** — integrate high-speed AI voice interactions into custom business workflows through simple AI queries
 
 
-## Available Tools (10)
-- **get_agent**: Get details of a specific AI agent
-- **get_call**: Get details and metadata of a call
-- **get_pathway**: Get details of a specific pathway
-- **get_transcript**: Retrieve the transcript of a completed call
-- **list_agents**: List all AI agents
-- **list_calls**: List recent AI calls
-- **list_pathways**: List all conversation pathways
-- **list_voices**: List available AI voices
-- **send_call**: Send an AI phone call
-- **stop_call**: Stop an active or scheduled call
+## Available Tools (12)
+- **analyze_call_transcript**: Perform post-call analysis
+- **stop_active_call**: Stop an ongoing phone call
+- **create_voice_agent**: Create a persistent AI persona
+- **delete_voice_agent**: Remove an AI persona
+- **get_agent_config**: Get agent settings
+- **get_call_details**: Get details and transcript for a call
+- **list_voice_agents**: List configured AI personas
+- **list_recent_calls**: List recent phone calls
+- **list_phone_numbers**: List purchased phone numbers
+- **list_available_voices**: List high-fidelity AI voices
+- **send_phone_call**: Send an outbound phone call using an AI agent
+- **update_agent_config**: Modify agent settings
 
 
 ## 💬 Prompt Examples
@@ -52,38 +55,38 @@ Connect your **Bland AI** account to any AI agent and orchestrate your automated
 Here are some examples of how you can interact with the **Bland AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Call +15550199 and ask if they are still interested in our pricing plan."
+> "Call '+15551234567' and ask if they are still coming to the meeting today at 3 PM."
 
 **🤖 AI Agent:**
-> I've initiated the call to +15550199. Call ID is 'call_123'. I've instructed the AI to inquire about pricing interest. You can check the status or transcript once it's finished.
+> Call initiated! I've successfully triggered an outbound call via Bland AI to +15551234567. The agent is instructed to verify the 3 PM meeting. Shall I alert you when the transcript is ready?
 
 ---
 
 **👤 You:**
-> "List all AI agents in my account."
+> "Show the transcript and recording for call ID 'call_123'."
 
 **🤖 AI Agent:**
-> I've retrieved your agents. You have 'Sales Assistant' (ID: agent_1), 'Support Bot' (ID: agent_2), and 'Lead Qualifier' (ID: agent_3).
+> Fetching call data... I've retrieved the transcript for call_123. The recipient confirmed they are coming. You can access the high-fidelity recording here: [url]. Need any help with post-call analysis?
 
 ---
 
 **👤 You:**
-> "Show the transcript for call call_998877."
+> "List all my persistent voice agents in Bland AI."
 
 **🤖 AI Agent:**
-> Retrieving transcript... Here is the conversation log: [AI]: 'Hello, I'm calling from Acme...' [Customer]: 'Yes, tell me more about...' Would you like an analysis of this call?
+> Accessing voice personas... You currently have 3 configured agents, including 'Support Maya' (Voice: Maya) and 'Sales Mason'. Would you like the detailed prompt configuration for any of them?
 
 
 ## ❓ FAQ
 
-**Q: Can I send a phone call with specific instructions using the agent?**
-Yes! Use the `send_call` action with the target phone number and a 'task' string describing exactly what the AI should say and do during the call.
+**Q: How do I find my Bland AI API Key?**
+Log in to your account, navigate to **Settings** > **API Keys**, and generate a new key for your integration.
 
-**Q: How do I retrieve the transcript of a completed call?**
-Simply ask the agent to `get_transcript` and provide the Call ID. It will retrieve the full conversation log from the Bland AI engine.
+**Q: Can I use specific AI voices via agent?**
+Yes! The `send_phone_call` and `create_voice_agent` tools allow you to specify voice IDs (e.g., 'maya', 'mason') programmatically.
 
-**Q: Can I list all available voices before starting a call?**
-Yes. Use the `list_voices` tool to see all AI voices available in your Bland AI account, including their names and unique IDs.
+**Q: How do I retrieve call transcripts?**
+Use the `get_call_details` tool with a specific call ID to retrieve the high-fidelity transcript and recording link directly from the platform.
 
 
 ## Installation & Usage

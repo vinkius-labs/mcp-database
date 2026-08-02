@@ -38,12 +38,12 @@ Connect your **ChartMogul** account to any AI agent and take full control of you
 ## Available Tools (8)
 - **get_arr_metrics**: Retrieve Annualized Run Rate metrics
 - **get_subscription_metrics**: Retrieve all high-level subscription metrics (MRR, ARR, etc)
-- **get_customer_count_metrics**: Retrieve total customer count metrics over time
 - **get_mogul_customer_details**: Get detailed information for a specific customer
 - **get_mrr_metrics**: Retrieve Monthly Recurring Revenue metrics
 - **list_mogul_customers**: List all customers in ChartMogul
 - **list_mogul_data_sources**: List all data sources configured in the account
 - **ping_mogul_api**: Verify connectivity and authentication with the ChartMogul API
+- **get_customer_count_metrics**: Retrieve total customer count metrics over time
 
 
 ## 💬 Prompt Examples

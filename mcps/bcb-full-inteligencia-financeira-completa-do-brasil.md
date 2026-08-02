@@ -23,6 +23,12 @@ The **ultimate Brazil Central Bank Mega-Server** — 22 tools across 4 domains.
 
 
 ## Available Tools (21)
+- **get_selic_diaria**: Reflete a execução real da política monetária. Série SGS: 11.
+
+Obter a taxa Selic efetiva (diária)
+- **get_cotacao_dolar**: Inclui valores de compra e venda. O PTAX é a taxa de referência oficial do câmbio brasileiro, calculada a partir de consultas aos dealers de câmbio.
+
+Obter a cotação do dólar americano (PTAX) em uma data específica
 - **get_dolar_periodo**: Formato de data: MM-DD-YYYY. Máximo de 1 ano por consulta. Inclui valores de compra, venda e boletins (abertura, intermediário, fechamento).
 
 Obter a série histórica do dólar PTAX em um período
@@ -35,27 +41,15 @@ Listar todas as moedas disponíveis no sistema PTAX do Banco Central
 - **get_dolar_sgs**: Séries: 1 (compra), 10813 (venda). Mais flexível que PTAX para séries longas. Formato de data: DD/MM/YYYY.
 
 Obter a série histórica do dólar comercial (compra/venda) via SGS
-- **get_reservas**: Fundamental para avaliação da capacidade do país de honrar compromissos externos. Série SGS: 3546.
-
-Obter as reservas internacionais do Brasil em USD
-- **get_selic_diaria**: Reflete a execução real da política monetária. Série SGS: 11.
-
-Obter a taxa Selic efetiva (diária)
-- **get_cdi**: O CDI é a referência para a maioria dos investimentos em renda fixa no Brasil (CDBs, LCIs, LCAs, fundos DI). Geralmente fica muito próximo da Selic. Série SGS: 12.
-
-Obter a taxa CDI (Certificado de Depósito Interbancário)
-- **get_expectativas_selic**: Inclui mediana, média, mínimo e máximo das projeções das instituições financeiras. O Focus é publicado toda segunda-feira pelo BCB.
-
-Obter as expectativas do mercado para a taxa Selic (Relatório Focus)
-- **get_cotacao_dolar**: Inclui valores de compra e venda. O PTAX é a taxa de referência oficial do câmbio brasileiro, calculada a partir de consultas aos dealers de câmbio.
-
-Obter a cotação do dólar americano (PTAX) em uma data específica
 - **get_pib**: Este é o indicador IBC-Br (Índice de Atividade Econômica do Banco Central), uma proxy mensal do PIB. Série SGS: 4380.
 
 Obter o PIB mensal do Brasil — variação percentual
 - **get_divida_pib**: Indicador fundamental de sustentabilidade fiscal. Série SGS: 4513.
 
 Obter a dívida líquida do setor público como % do PIB
+- **get_reservas**: Fundamental para avaliação da capacidade do país de honrar compromissos externos. Série SGS: 3546.
+
+Obter as reservas internacionais do Brasil em USD
 - **get_balanca_comercial**: O Brasil é um grande exportador de commodities agrícolas, minério e petróleo. Série SGS: 22707.
 
 Obter o saldo da balança comercial brasileira
@@ -86,6 +80,12 @@ Obter as expectativas do mercado para a inflação (Relatório Focus)
 - **get_selic_meta**: A Selic é a taxa básica da economia brasileira e referência para todas as demais taxas de juros do país. Série SGS: 432.
 
 Obter a meta da taxa Selic definida pelo COPOM
+- **get_cdi**: O CDI é a referência para a maioria dos investimentos em renda fixa no Brasil (CDBs, LCIs, LCAs, fundos DI). Geralmente fica muito próximo da Selic. Série SGS: 12.
+
+Obter a taxa CDI (Certificado de Depósito Interbancário)
+- **get_expectativas_selic**: Inclui mediana, média, mínimo e máximo das projeções das instituições financeiras. O Focus é publicado toda segunda-feira pelo BCB.
+
+Obter as expectativas do mercado para a taxa Selic (Relatório Focus)
 
 
 ## 💬 Prompt Examples

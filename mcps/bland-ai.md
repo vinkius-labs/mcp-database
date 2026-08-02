@@ -37,12 +37,12 @@ Connect your **Bland AI** API key to your AI agent and take full programmatic co
 - **end_call**: Force an immediate disconnect disrupting a live AI call
 - **get_batch**: Retrieve aggregations profiling the concurrent status of a Bulk Batch
 - **get_call_details**: Retrieve explicit variables and exact transcript logic for a completed call
-- **list_inbound**: Identify available inbound phone numbers currently bridged to an AI agent
 - **list_calls**: Retrieve the full historical log of AI phone calls
 - **get_recording**: Retrieve raw native MP3/WAV links logging exact raw audio
+- **create_web_call**: Spawn a decoupled internet-based WebRTC signaling socket logic stream
+- **list_inbound**: Identify available inbound phone numbers currently bridged to an AI agent
 - **send_batch**: Dispatch multiple AI agents concurrently scaling bulk telecom arrays
 - **send_call**: Dispatch an automated conversational AI agent to a phone number
-- **create_web_call**: Spawn a decoupled internet-based WebRTC signaling socket logic stream
 
 
 ## 💬 Prompt Examples

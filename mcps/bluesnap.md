@@ -35,16 +35,16 @@ Connect your **BlueSnap** merchant account to any AI agent and orchestrate your 
 
 
 ## Available Tools (10)
-- **get_account_balance**: Check current payout balances
-- **get_plan**: Get specific plan details
-- **get_subscription**: Get specific subscription details
-- **get_transaction**: Get specific transaction details
+- **list_vendors**: List all marketplace vendors
 - **get_vaulted_shopper**: Get specific vaulted shopper details
 - **list_plans**: List all recurring billing plans
 - **list_subscriptions**: List all active subscriptions
 - **list_transactions**: List recent payment transactions
 - **list_vaulted_shoppers**: List all vaulted shoppers
-- **list_vendors**: List all marketplace vendors
+- **get_account_balance**: Check current payout balances
+- **get_plan**: Get specific plan details
+- **get_subscription**: Get specific subscription details
+- **get_transaction**: Get specific transaction details
 
 
 ## 💬 Prompt Examples

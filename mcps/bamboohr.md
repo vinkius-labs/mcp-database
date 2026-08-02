@@ -35,14 +35,14 @@ Orchestrate your human resources operations with **BambooHR**, the leading platf
 
 
 ## Available Tools (12)
-- **list_whos_out**: Helper to list who is out today
-- **add_time_off_request**: Submit a new time off request for an employee
-- **get_account_check**: Verify BambooHR connection
-- **get_company_report**: Get a specific company report by ID
 - **get_employee_details**: Get basic details for a specific employee
 - **list_employees_directory**: List active employees from the company directory
 - **list_time_off_policies**: List all defined time off policies
 - **list_time_off_requests**: List time off requests
+- **list_whos_out**: Helper to list who is out today
+- **add_time_off_request**: Submit a new time off request for an employee
+- **get_account_check**: Verify BambooHR connection
+- **get_company_report**: Get a specific company report by ID
 - **list_time_off_types**: List all defined time off types
 - **search_employee**: Search for an employee by name in the directory
 - **update_employee**: Update employee information

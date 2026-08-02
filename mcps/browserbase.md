@@ -33,6 +33,9 @@ Connect your AI agent to **Browserbase** — the serverless platform for running
 
 
 ## Available Tools (4)
+- **get_browser_session**: Useful for monitoring active sessions.
+
+Get details of a specific browser session by its ID
 - **create_browser_session**: The session provides a connectUrl (CDP WebSocket) that can be used with Playwright, Puppeteer, or Selenium to control the browser programmatically. Default timeout is 300 seconds.
 
 Create a new cloud browser session. Returns a CDP WebSocket URL for connecting automation frameworks like Playwright or Puppeteer
@@ -42,9 +45,6 @@ List all active browser sessions in your Browserbase account
 - **stop_browser_session**: Any unsaved state in the browser is lost.
 
 Stop a running browser session by its ID
-- **get_browser_session**: Useful for monitoring active sessions.
-
-Get details of a specific browser session by its ID
 
 
 ## 💬 Prompt Examples

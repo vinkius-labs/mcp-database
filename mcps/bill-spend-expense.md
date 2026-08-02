@@ -30,9 +30,9 @@ Connect your **BILL Spend & Expense (formerly Divvy)** account to any AI agent a
 ## Available Tools (5)
 - **list_budgets**: List all budgets
 - **list_cards**: List all cards
-- **list_reimbursements**: List all reimbursements
 - **list_transactions**: List recent transactions
 - **list_users**: List all users
+- **list_reimbursements**: List all reimbursements
 
 
 ## 💬 Prompt Examples

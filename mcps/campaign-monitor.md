@@ -7,44 +7,42 @@
 
 **Category:** [marketing-automation](../categories/marketing-automation.md)
 
-Manage email marketing via Campaign Monitor — track campaigns, manage subscribers, and monitor performance directly from any AI agent.
+Design branded email campaigns, segment subscriber lists, and measure engagement with professional marketing analytics.
 
 ## Description
-Connect your **Campaign Monitor** account to any AI agent and orchestrate your email marketing, subscriber management, and multi-channel campaigns through natural conversation.
+Connect your **Campaign Monitor** account to any AI agent and take full control of your professional email marketing and audience engagement workflows through natural conversation.
 
 ### What you can do
 
-- **Subscriber Oversight** — List all your active subscribers and retrieve detailed profiles, including contact information and history.
-- **Campaign Management** — List all email campaigns and retrieve detailed metadata, including subjects and statuses.
-- **Performance Tracking** — Retrieve real-time statistics for specific campaigns to monitor engagement, ROI, and delivery rates.
-- **List Coordination** — Access and list your contact lists and segments to ensure your audience is properly managed.
-- **Client & account Monitoring** — Access core client information and templates managed within the platform.
-- **Subscriber Growth** — Add new subscribers directly from your workspace with custom names and automated consent tracking.
+- **Audience Orchestration** — List and manage your subscriber lists programmatically, retrieving detailed metadata and health statistics (active, unsubscribed, bounced) in real-time
+- **Subscriber Lifecycle** — Programmatically add or update people in your lists, including managing custom fields and re-subscription status directly from your agent
+- **Campaign Architecture** — Monitor sent and scheduled email campaigns across multiple clients to maintain high-fidelity oversight of your digital outreach
+- **Performance Intelligence** — Access real-time campaign analytics including opens, clicks, and engagement metrics to coordinate your marketing strategy
+- **Multi-Tenant Visibility** — Retrieve complete directories of sub-accounts (clients) and their associated lists to perfectly coordinate agency or enterprise environments
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Campaign Monitor API Key
-3. Start managing your email marketing from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API Key** from Campaign Monitor (Account Settings > API Key)
+3. Start managing your email marketing pipeline from Claude, Cursor, or any MCP client
+
+No more manual scrubbing through subscriber exports or slow UI navigation. Your AI acts as your dedicated email operations and audience coordinator.
 
 ### Who is this for?
 
-- **Email Marketers** — quickly check campaign performance or subscriber details without manual dashboard exports.
-- **Digital Strategists** — retrieve campaign stats and segment data straight from their planning tools.
-- **Developers** — integrate email workflow and subscriber management into their environment using natural language.
+- **Marketing Managers** — instantly retrieve campaign results and update subscriber segments using natural language commands
+- **Growth Marketers** — automate the ingestion of new leads and monitor list health without leaving your workspace
+- **Agency Leads** — orchestrate email operations across multiple client accounts through simple AI queries
 
 
-## Available Tools (10)
-- **add_subscriber**: Add a new subscriber to a list
-- **get_account_info**: Retrieve core account information
-- **get_campaign_performance**: Retrieve performance summary for a specific campaign
-- **get_client_details**: Get details of a specific client
-- **get_contact_list**: Get details of a specific contact list
-- **list_campaigns**: List all campaigns for a client
-- **list_clients**: List all client accounts
-- **list_contact_lists**: List all contact lists for a specific client
-- **list_subscribers**: List active subscribers in a list
-- **list_email_templates**: List all templates for a client
+## Available Tools (7)
+- **add_subscriber**: Create or update a subscriber
+- **get_campaign_analytics**: Get campaign performance
+- **get_list_statistics**: Get subscriber list health
+- **get_subscriber_details**: Get profile for a subscriber
+- **list_sent_campaigns**: List recent email campaigns
+- **list_clients**: List your account clients
+- **list_subscriber_lists**: List lists for a client
 
 
 ## 💬 Prompt Examples
@@ -52,38 +50,38 @@ Connect your **Campaign Monitor** account to any AI agent and orchestrate your e
 Here are some examples of how you can interact with the **Campaign Monitor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my clients in Campaign Monitor."
+> "List all my clients and their associated subscriber lists."
 
 **🤖 AI Agent:**
-> I've retrieved your clients. You have 3 clients managed: 'Vinkius North' (ID: cli_1), 'Global Solutions' (ID: cli_2), and 'Tech Corp' (ID: cli_3).
+> I've retrieved your organization's directory. You have 2 main clients: 'Acme Corp' (ID: abc-123) and 'Global Tech'. Acme Corp has 3 lists, including 'Weekly Newsletter' and 'Product Beta'. Which one should we explore?
 
 ---
 
 **👤 You:**
-> "Show the lists for client cli_123."
+> "Add 'John Doe' (john@example.com) to the 'Weekly Newsletter' list (ID: 'l_456')."
 
 **🤖 AI Agent:**
-> Retrieving lists for client cli_123... You have 2 lists: 'Weekly Newsletter' (ID: list_1) and 'Event Attendees' (ID: list_2).
+> Subscriber added! I've successfully registered John Doe in the 'Weekly Newsletter' list. His profile is now active and he will receive your next scheduled broadcast.
 
 ---
 
 **👤 You:**
-> "Add Jane Smith (jane@example.com) to the 'Weekly Newsletter' list."
+> "What is the performance summary for campaign ID 'c_789'?"
 
 **🤖 AI Agent:**
-> Jane Smith has been successfully added to the 'Weekly Newsletter' list in your Campaign Monitor account.
+> Fetching analytics... Campaign c_789 ('Holiday Promo') has a 22% open rate and a 4% click-through rate. Total successful deliveries: 5,420. Shall I check for any bounced addresses?
 
 
 ## ❓ FAQ
 
-**Q: Can I check the statistics for a specific campaign using the agent?**
-Yes! Use the `get_campaign_performance` tool with the Campaign ID. Your agent will fetch the detailed performance data, including open rates, clicks, and bounces, directly from Campaign Monitor.
+**Q: How do I find my Campaign Monitor API Key?**
+Log in to your account, click on your profile (top right), navigate to **Account Settings** > **API Key**, and copy your unique token.
 
-**Q: How do I add a new subscriber to a list?**
-Simply ask the agent to `add_subscriber` and provide the List ID, name, and email address. The subscriber will be added to your Campaign Monitor list with consent tracking enabled automatically.
+**Q: Can I manage multiple clients via AI?**
+Yes! The `list_clients` tool retrieves all sub-accounts, and you can use their IDs to manage lists and campaigns specifically for each client.
 
-**Q: Does the integration allow listing all my clients?**
-Yes. Use the `list_clients` tool. It will retrieve all the client accounts managed under your Campaign Monitor account, making it easy to find the IDs needed for other operations.
+**Q: Does it support real-time campaign analytics?**
+The `get_campaign_analytics` tool retrieves the most current engagement metrics (opens, clicks, unsubscribes) directly from the platform.
 
 
 ## Installation & Usage

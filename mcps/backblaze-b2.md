@@ -35,15 +35,9 @@ Your AI agent now has the power to orchestrate secure and cost-effective object 
 
 
 ## Available Tools (10)
-- **authorize_account**: Uncovers the dynamically assigned apiUrl (e.g. api003.backblazeb2.com) natively orchestrating regional data ingress specifically assigned to your billing account.
-
-Verify and extract Backblaze global session routing endpoints
 - **create_bucket**: Bootstraps essential structures before assigning automated backup syncs overriding file lock retention bounds.
 
 Provision a fresh logical Storage Bucket partition
-- **delete_bucket**: Fails intentionally via 400 Bad Request if standard files or hidden object versions persist nested inside. Ensure all lifecycle rules completed purging prior to command.
-
-Irreversibly delete an entirely empty Backblaze Storage Bucket
 - **delete_file_version**: Instantly removes the storage footprint avoiding long-term retention hoarding.
 
 Irreversibly vaporize specific absolute chunk data from disk arrays
@@ -54,6 +48,12 @@ Mark an active B2 file as hidden leaving data for lifecycle sweep
 - **list_buckets**: Crucial to resolve immutable String Bucket IDs prerequisite to executing downstream CRUD operations strictly inside native borders.
 
 Retrieve the exact Storage Buckets existing globally on the B2 Account
+- **authorize_account**: Uncovers the dynamically assigned apiUrl (e.g. api003.backblazeb2.com) natively orchestrating regional data ingress specifically assigned to your billing account.
+
+Verify and extract Backblaze globalThis session routing endpoints
+- **delete_bucket**: Fails intentionally via 400 Bad Request if standard files or hidden object versions persist nested inside. Ensure all lifecycle rules completed purging prior to command.
+
+Irreversibly delete an entirely empty Backblaze Storage Bucket
 - **list_file_names**: Examines precise .pdf, .mp4 file locations avoiding hidden shadowed states produced by lifecycle overwrite semantics.
 
 Paginate primary surface-level object metadata from a specific Bucket
@@ -62,7 +62,7 @@ Paginate primary surface-level object metadata from a specific Bucket
 Scan B2 nodes for stalled Multipart Upload chunk aggregates
 - **update_bucket**: Use only for static asset endpoints.
 
-Mutate global ACL privacy settings for a bounded Bucket
+Mutate globalThis ACL privacy settings for a bounded Bucket
 
 
 ## 💬 Prompt Examples

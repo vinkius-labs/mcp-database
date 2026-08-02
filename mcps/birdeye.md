@@ -7,44 +7,41 @@
 
 **Category:** [customer-support](../categories/customer-support.md)
 
-Manage reputation and customer experience via Birdeye — list reviews, manage contacts, and trigger surveys directly from any AI agent.
+Grow your local business reputation with review management, customer surveys, and listings that drive more foot traffic.
 
 ## Description
-Connect your **Birdeye** account to any AI agent and orchestrate your customer experience and reputation management workflows through natural conversation.
+Connect your **Birdeye** account to any AI agent and take full control of your online reputation management and customer experience workflows through natural conversation.
 
 ### What you can do
 
-- **Review Management** — List and retrieve detailed customer reviews and fetch review summaries by source.
-- **Customer Interaction** — Reply to reviews directly from the agent to maintain high engagement.
-- **CX Automation** — Trigger customer check-ins to automatically send review or survey requests.
-- **Survey Insights** — List available surveys and retrieve customer responses for analysis.
-- **Contact Oversight** — Manage your business contacts and retrieve detailed profile information.
-- **Location Tracking** — Access and list all business locations managed within your account.
+- **Review Orchestration** — List and manage customer reviews across multiple platforms (Google, Facebook, etc.) programmatically, retrieving detailed high-fidelity comments and ratings in real-time
+- **Automated Check-ins** — Programmatically trigger review requests (check-ins) via SMS or Email to coordinate high-fidelity feedback collection from your recent visitors
+- **Sentiment Intelligence** — Access complete customer profiles and retrieve detailed sentiment history to maintain a perfectly coordinated overview of your brand health
+- **Survey & Feedback Architecture** — Programmatically dispatch custom surveys to specific customers and monitor their high-fidelity responses directly through your agent
+- **Multi-Location Visibility** — Retrieve complete directories of all your business branches and locations to coordinate your organizational reputation programmatically
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Birdeye API Key and Business ID
-3. Start managing your reputation from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API Key** and **Business ID (bid)** from your Birdeye dashboard (Settings > Integrations > API)
+3. Start managing your customer experience from Claude, Cursor, or any MCP client
+
+No more manual logging into individual review sites or missing critical feedback. Your AI acts as your dedicated reputation manager and customer success coordinator.
 
 ### Who is this for?
 
-- **Reputation Managers** — quickly check and respond to reviews without navigating multiple dashboards.
-- **Customer Success Teams** — monitor survey results and contact details straight from their workflow tools.
-- **Marketing Leads** — retrieve review summaries and location data for reporting.
+- **Marketing Managers** — instantly retrieve high-level review summaries and monitor brand sentiment using natural language commands
+- **Customer Success Teams** — automate the dispatch of review requests and track customer satisfaction without leaving your workspace
+- **Multi-Location Owners** — monitor reputation performance across all branches and coordinate surveys through simple AI queries
 
 
-## Available Tools (10)
-- **checkin_customer**: Check-in a customer to trigger review/survey requests
-- **get_business_info**: Retrieve core business information
-- **get_contact**: Get specific contact details
-- **get_review_summary**: Get a summary of review counts by source
-- **get_survey_responses**: Get responses for a specific survey
-- **list_contacts**: List customer contacts
-- **list_locations**: List all business locations
+## Available Tools (6)
+- **customer_checkin**: Trigger a review request (Check-in)
+- **get_customer_details**: Get full customer profile
+- **list_business_locations**: List all business locations
 - **list_reviews**: List customer reviews
-- **list_surveys**: List all surveys
-- **reply_to_review**: Reply to a specific customer review
+- **trigger_survey**: Send a custom survey to a customer
+- **create_customer**: Add a new customer profile
 
 
 ## 💬 Prompt Examples
@@ -52,38 +49,38 @@ Connect your **Birdeye** account to any AI agent and orchestrate your customer e
 Here are some examples of how you can interact with the **Birdeye** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List the last 5 reviews received on Birdeye."
+> "List the latest 5-star reviews for my business in Birdeye."
 
 **🤖 AI Agent:**
-> I've retrieved your recent reviews. You have 5 new entries, including a 5-star review from Alice Johnson on Google and a 4-star review on Facebook. Would you like to reply to any of them?
+> I've retrieved your top reviews. You recently received 10 new 5-star ratings across Google and Facebook. Highlights include high praise for your 'Fast Response Time'. Would you like to see the detailed metadata for these?
 
 ---
 
 **👤 You:**
-> "Check in a customer: John Doe, john@example.com."
+> "Send a review request to 'John Smith' (john@example.com)."
 
 **🤖 AI Agent:**
-> Customer 'John Doe' has been checked in successfully. Birdeye will now send the automated review request according to your settings.
+> Customer check-in complete! I've successfully triggered a review request for John Smith. He will receive an automated notification shortly. Shall I monitor the status for any response?
 
 ---
 
 **👤 You:**
-> "Show my survey responses for survey surv_123."
+> "Show the sentiment profile for customer ID '12345'."
 
 **🤖 AI Agent:**
-> Retrieving responses for survey surv_123... I found 3 recent responses. Most customers mentioned 'Excellent service' and 'Fast delivery'. Should I summarize the full feedback?
+> Accessing customer intelligence... John Doe (ID: 12345) has a consistently 'Positive' sentiment profile across 3 reviews and 1 survey response. His latest NPS score was 10. Need more historical context from his high-fidelity profile?
 
 
 ## ❓ FAQ
 
-**Q: Can I reply to a review using the agent?**
-Yes! Use the `reply_to_review` tool with the Review ID and your message. If the source allows API replies, your message will be posted to Birdeye instantly.
+**Q: How do I find my Birdeye API Key and Business ID?**
+Log in to your account, navigate to **Settings** > **Integrations** > **API**, and you will find your API Key and the Business ID (bid).
 
-**Q: How do I see the average rating for my business?**
-Simply ask the agent to `get_review_summary`. It will retrieve the overall counts and ratings aggregated across all supported platforms (Google, Facebook, etc.).
+**Q: Can I request a review via AI?**
+Yes! The `customer_checkin` tool allows your agent to record a customer visit and automatically send a review request via their preferred channel.
 
-**Q: Can I trigger a review request for a specific customer?**
-Yes. Use the `checkin_customer` action with the customer's name and email. This will trigger the automated review and survey sequence configured in your Birdeye account.
+**Q: How do I check review ratings programmatically?**
+Use the `list_reviews` tool and provide an optional `rating` filter (1-5) to retrieve specific categories of feedback directly from the platform.
 
 
 ## Installation & Usage

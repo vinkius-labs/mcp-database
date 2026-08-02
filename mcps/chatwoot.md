@@ -36,10 +36,10 @@ Connect your **Chatwoot** account to any AI agent and take full control of your 
 
 
 ## Available Tools (8)
-- **get_contact_details**: Get detailed information for a specific customer contact
-- **get_conversation_details**: Get detailed information for a specific conversation
 - **list_support_agents**: List all support agents in the account
 - **list_chatwoot_contacts**: List all customer contacts
+- **get_contact_details**: Get detailed information for a specific customer contact
+- **get_conversation_details**: Get detailed information for a specific conversation
 - **list_woot_conversations**: List all conversations in the account
 - **list_chatwoot_inboxes**: List all configured inboxes (Web, WhatsApp, etc)
 - **get_chat_history**: Retrieve the message history for a specific conversation

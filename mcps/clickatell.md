@@ -5,50 +5,53 @@
 
 ## Overview
 
-**Category:** [talk-to-me](../categories/talk-to-me.md)
+**Category:** [communication-messaging](../categories/communication-messaging.md)
 
-Manage mobile messaging via Clickatell — send SMS, track delivery status, monitor balance, and handle inbound rules directly from any AI agent.
+Deliver transactional and marketing messages over SMS, WhatsApp, and chat channels with global reach and high deliverability.
 
 ## Description
-Connect your **Clickatell** account to any AI agent and take full control of your global mobile messaging workflows through natural conversation.
+Connect your **Clickatell One API** account to any AI agent and take full control of your global business communication and automated notification workflows through natural conversation.
 
 ### What you can do
 
-- **SMS Dispatch** — Send single or bulk SMS messages natively with support for E.164 formatting and Unicode payloads
-- **Delivery Tracking** — Perform structural extraction of properties driving final carrier statuses to confirm your messages reached cellular towers
-- **Account Management** — Monitor your available API balance and check international network coverage for specific numbers
-- **Campaign Monitoring** — List scheduled text blasts and audit delivery timings strictly within Clickatell limits
-- **Inbound Reply Rules** — Create and manage keyword-based reply rules and webhooks to automate two-way messaging flows
+- **Multichannel Messaging Orchestration** — Instantly dispatch high-fidelity SMS and official WhatsApp messages to customers worldwide using a single unified interface
+- **Delivery Intelligence** — Monitor real-time status (sent, delivered, read) for all messages and retrieve detailed historical logs to maintain high-fidelity oversight
+- **WhatsApp Template Management** — Access and monitor pre-approved message templates and manage multimedia content to ensure perfectly coordinated business engagement
+- **Financial Visibility** — Programmatically track your account balance and credit utilization to coordinate your global messaging budget and quotas
+- **Source Architecture** — Access complete directories of your configured sending numbers and communication channels directly through your agent
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Clickatell API Key (found in the 'API Integrations' section of your Clickatell Portal)
-3. Start managing your mobile communications from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API Key** from your Clickatell Workspace (My Workspace > API Integrations)
+3. Start automating your customer notifications and engagement from Claude, Cursor, or any MCP client
+
+No more manual message tracking or toggling between different messaging portals. Your AI acts as your dedicated CPaaS engineer and communication coordinator.
 
 ### Who is this for?
 
-- **Marketing Teams** — monitor scheduled campaigns and check delivery success rates without leaving the workspace
-- **Customer Support** — send individual notifications and audit message statuses to resolve delivery inquiries
-- **Operations Managers** — track account balances and verify international carrier coverage for global operations
-- **Developers** — test and manage inbound reply rules and webhooks through natural conversation
+- **Customer Support Teams** — instantly send personalized order updates and verification codes using natural language commands
+- **Growth Marketers** — automate multichannel broadcast campaigns and monitor read rates without leaving your workspace
+- **Developers & Ops** — integrate high-speed SMS and WhatsApp features into custom workflows through simple AI queries
 
 
-## Available Tools (10)
-- **list_scheduled_campaigns**: Identify precise active arrays spanning Marketing boundaries
-- **upsert_inbound_rule**: Bootstrap an entirely empty structural parsing block allocating Webhooks
-- **test_carrier_coverage**: Dispatch an automated validation check routing MSISDN routes
-- **list_inbound_rules**: Enumerate explicitly attached structured rules traversing MO bounds
-- **dispatch_bulk_sms**: 164 boundaries optimizing Clickatell pipeline bandwidth directly avoiding API lag.
+## Available Tools (12)
+- **delete_whatsapp_template**: Remove template
+- **get_account_info**: Get profile details
+- **get_account_balance**: Check credit balance
+- **get_whatsapp_media**: Get media details
+- **get_message_status**: Check delivery status
+- **list_active_channels**: ) in the account.
 
-Identify bounded routing spaces bridging concurrent SMS arrays
-- **dispatch_sms_message**: 164 natively.
+List communication channels
+- **list_message_history**: List past messages
+- **list_source_numbers**: List sending numbers
+- **list_whatsapp_templates**: List WhatsApp templates
+- **send_bulk_messages**: Send multiple messages
+- **send_sms**: Send SMS message
+- **send_whatsapp**: Note: Templates required for business initiation.
 
-Provision a massively scalable JSON Payload rendering outbound SMS natively over Clickatell
-- **cancel_queued_message**: Irreversibly vaporize explicit SMS blocks deleting scheduled drops
-- **wipe_inbound_rule**: Obliterate mapped HTTP Logic bounds avoiding legacy routing
-- **get_account_balance**: Retrieve explicit Cloud metrics tracing active Funding Limits
-- **get_delivery_status**: Perform structural extraction of properties driving final Carrier statuses
+Send WhatsApp message
 
 
 ## 💬 Prompt Examples
@@ -56,10 +59,18 @@ Provision a massively scalable JSON Payload rendering outbound SMS natively over
 Here are some examples of how you can interact with the **Clickatell** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Send SMS to +1234567890: 'Your order #987 is ready for pickup!'"
+> "Send a WhatsApp notification to '+447911123456': 'Your package has been delivered'."
 
 **🤖 AI Agent:**
-> Message dispatched! Message ID: msg_abc123. The SMS has been sent to +1234567890 via the Clickatell gateway. I can check the delivery status for you in a few moments.
+> WhatsApp message dispatched! I've successfully sent the delivery notification to +447911123456. The status is currently 'Sent'. Shall I alert you as soon as it's delivered?
+
+---
+
+**👤 You:**
+> "Check the delivery status for message ID 'omni_12345'."
+
+**🤖 AI Agent:**
+> Fetching status... Message omni_12345 has been successfully 'Delivered' and was 'Read' by the recipient at 2:30 PM today. Would you like to see the full interaction history?
 
 ---
 
@@ -67,27 +78,19 @@ Here are some examples of how you can interact with the **Clickatell** MCP serve
 > "What is my current Clickatell account balance?"
 
 **🤖 AI Agent:**
-> Your current balance is $45.20. Based on your recent activity, this is enough for approximately 2,200 more domestic SMS messages.
-
----
-
-**👤 You:**
-> "Check delivery status for message ID msg_789"
-
-**🤖 AI Agent:**
-> Status for msg_789: 'Delivered to Gateway'. The message has successfully passed the Clickatell nodes and has been handed off to the local carrier for final delivery.
+> Scanning account... Your current balance is $25.50. Based on your recent usage, you have enough credits for approximately 1,200 SMS messages. Need a breakdown of recent sending costs?
 
 
 ## ❓ FAQ
 
-**Q: Can my agent confirm if an international number is reachable via Clickatell?**
-Yes. Use the 'test_carrier_coverage' tool. Provide the destination number in international format, and the agent will check Clickatell's network traces to confirm if the route is active and supported.
+**Q: How do I find my Clickatell API Key?**
+Log in to your Clickatell account, navigate to **My Workspace** > **API Integrations**, and create a new HTTP API integration to get your key.
 
-**Q: How do I monitor my remaining SMS credits through the agent?**
-Ask your agent to get the account balance. It retrieves the explicit funding limits from your Clickatell profile, helping you prevent zero-balance halts during critical messaging flows.
+**Q: Do I need templates for WhatsApp?**
+Yes, for business-initiated messages, WhatsApp requires the use of pre-approved templates. You can list them using the `list_whatsapp_templates` tool.
 
-**Q: Can I automate replies based on incoming keywords?**
-Absolutely. You can use the 'upsert_inbound_rule' tool to define keyword triggers and webhook URLs. This allows your agent to configure automated two-way communication schemas without manually editing portal settings.
+**Q: Can I check my remaining balance via AI?**
+Yes! The `get_account_balance` tool retrieves your current remaining funds directly from the Clickatell platform.
 
 
 ## Installation & Usage

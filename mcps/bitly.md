@@ -35,17 +35,17 @@ Connect your **Bitly** account to any AI agent and orchestrate your link managem
 
 
 ## Available Tools (10)
-- **list_groups**: List all Bitly groups
 - **shorten_url**: Optionally set custom domain and title.
 
 Shorten a URL
 - **create_qr_code**: Generate a QR code for a link
-- **get_bitlink**: Get link details
-- **update_bitlink**: Update link title
 - **get_clicks**: Get click analytics for a link
 - **get_countries**: Get click analytics by country
-- **get_referrers**: Get referrer analytics
+- **update_bitlink**: Update link title
+- **list_groups**: List all Bitly groups
 - **list_bitlinks**: List links in a group
+- **get_bitlink**: Get link details
+- **get_referrers**: Get referrer analytics
 - **get_user**: Get account info
 
 
