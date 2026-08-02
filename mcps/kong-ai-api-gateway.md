@@ -49,10 +49,10 @@ Create a new backend Service in Kong
 
 List all enabled Plugins on the Kong Gateway
 - **list_routes**: List all routing rules configured in the Kong API Gateway
-- **list_services**: List all Services registered in the Kong API Gateway
 - **update_plugin**: Useful for adjusting rate limits dynamically or swapping AI model providers under heavy load.
 
 Update the configuration of an existing Kong Plugin
+- **list_services**: List all Services registered in the Kong API Gateway
 
 
 ## 💬 Prompt Examples

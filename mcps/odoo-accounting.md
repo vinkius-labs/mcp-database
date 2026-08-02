@@ -26,12 +26,12 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 
 
 ## Available Tools (7)
-- **odoo_list_accounts**: account records ordered by code — the full General Ledger account structure. Returns account code + name (e.g., "1100 - Accounts Receivable"), account type (asset_receivable, liability_payable, income, expense, etc.), and whether the account supports reconciliation. Use when the user asks about the GL structure, needs an account code, or wants to understand the financial reporting hierarchy.
-
-List the Chart of Accounts in Odoo showing account codes, names, types, and reconciliation settings
 - **odoo_list_bills**: move records of type "in_invoice" (vendor bills). Returns bill number, vendor name, state, payment status, total amount, remaining balance, journal, and bill date. Use when the user asks about accounts payable, unpaid vendor bills, supplier invoices, or outstanding amounts owed to vendors.
 
 List vendor bills (supplier invoices) in Odoo with amounts owed, payment status, and due dates
+- **odoo_list_accounts**: account records ordered by code — the full General Ledger account structure. Returns account code + name (e.g., "1100 - Accounts Receivable"), account type (asset_receivable, liability_payable, income, expense, etc.), and whether the account supports reconciliation. Use when the user asks about the GL structure, needs an account code, or wants to understand the financial reporting hierarchy.
+
+List the Chart of Accounts in Odoo showing account codes, names, types, and reconciliation settings
 - **odoo_list_invoices**: move records of type "out_invoice" (customer invoices). Returns invoice number, customer name, state (draft/posted/cancel), payment status (not_paid/in_payment/paid), total amount, residual (remaining balance), journal, reference, and invoice date. Use when the user asks about outstanding invoices, accounts receivable, billing history, or unpaid customer balances.
 
 List customer invoices in Odoo with amounts, payment status, journal, and due dates

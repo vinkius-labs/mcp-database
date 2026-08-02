@@ -33,6 +33,19 @@ Connect **Jasper** to your AI agent and supercharge your marketing content produ
 
 
 ## Available Tools (20)
+- **list_voices**: Use voice IDs with run_command or run_task for brand-consistent content.
+
+List brand voices
+- **get_voice**: Get voice details
+- **list_knowledge**: Use knowledge IDs with run_command or run_task for grounded output.
+
+List knowledge items
+- **get_knowledge_item**: Get knowledge item details
+- **search_knowledge**: Matches by meaning and context, not just keywords.
+
+Search knowledge base
+- **list_styles**: List style guides
+- **get_style**: Get style guide details
 - **run_command**: Pass a command (prompt) and optional context for grounding. Supports voice IDs for brand-consistent output and output language selection.
 
 Generate AI content with Jasper
@@ -55,19 +68,6 @@ List content templates
 - **run_template**: Retrieve template input schemas via list_templates first, then pass the required inputs as JSON.
 
 Run a specific template
-- **list_voices**: Use voice IDs with run_command or run_task for brand-consistent content.
-
-List brand voices
-- **get_voice**: Get voice details
-- **list_knowledge**: Use knowledge IDs with run_command or run_task for grounded output.
-
-List knowledge items
-- **get_knowledge_item**: Get knowledge item details
-- **search_knowledge**: Matches by meaning and context, not just keywords.
-
-Search knowledge base
-- **list_styles**: List style guides
-- **get_style**: Get style guide details
 - **get_usage**: Requires start/end dates in ISO format and granularity (day, week, hour).
 
 Get API usage statistics

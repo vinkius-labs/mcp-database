@@ -28,12 +28,6 @@ The **ultimate NOAA Mega-Server** — 36 tools across 7 domains from 5 official 
 - **get_active_alerts**: Filter by state (2-letter code: TX, FL, CA), severity (Extreme, Severe, Moderate, Minor), urgency (Immediate, Expected, Future), or event type (Tornado Warning, Hurricane Warning, etc.).
 
 Get active weather alerts by US state or severity
-- **get_alerts_by_zone**: g., TXZ211, FLZ050). Zone IDs can be found via the get_point_metadata tool. Useful for focused monitoring of a specific area.
-
-Get active weather alerts for a specific NWS zone
-- **get_alerts_by_point**: Internally resolves the location to find active alerts in that area.
-
-Get active weather alerts for a specific US latitude/longitude
 - **get_alert_types**: ). Use this to discover valid event type values for filtering alerts.
 
 List all NWS weather alert types available
@@ -100,9 +94,6 @@ Get coastal meteorological data: air temp, wind, pressure at a station
 - **get_sea_level_trends**: Shows long-term relative sea level trends calculated from decades of tide gauge data. Critical for climate research.
 
 Get long-term sea level rise trends for a US coastal station
-- **get_stations**: Each station has a 4-character ID (e.g., KJFK, KLAX). US only. Use station IDs with get_latest_observation.
-
-Find nearby NWS weather observation stations by latitude/longitude
 - **get_latest_observation**: Provide a 4-character station ID such as KJFK, KLAX, KORD, KDFW.
 
 Get current weather conditions from a specific NWS station
@@ -112,7 +103,6 @@ Get recent observation history for a NWS station
 - **get_station_metadata**: Useful for understanding where a station is and what data it provides.
 
 Get metadata about a specific NWS weather station
-- **get_radar_stations**: List all NWS radar stations and their status
 - **get_planetary_k_index**: Kp ranges 0-9. Values ≥5 indicate geomagnetic storms with visible aurora at lower latitudes. Updated every 3 hours. Essential for aurora hunters, satellite operators, and power grid managers.
 
 Get the NOAA Planetary K-index — geomagnetic activity and aurora probability
@@ -131,6 +121,16 @@ Get the 10.7cm solar radio flux — a proxy for solar activity level
 - **get_dst_index**: Measures the intensity of the ring current around Earth. Values below -50 nT indicate a moderate storm, below -100 nT a strong storm, below -250 nT a severe storm. Critical for satellite operators and power grid monitoring.
 
 Get the Dst index — real-time geomagnetic storm intensity
+- **get_alerts_by_zone**: g., TXZ211, FLZ050). Zone IDs can be found via the get_point_metadata tool. Useful for focused monitoring of a specific area.
+
+Get active weather alerts for a specific NWS zone
+- **get_alerts_by_point**: Internally resolves the location to find active alerts in that area.
+
+Get active weather alerts for a specific US latitude/longitude
+- **get_stations**: Each station has a 4-character ID (e.g., KJFK, KLAX). US only. Use station IDs with get_latest_observation.
+
+Find nearby NWS weather observation stations by latitude/longitude
+- **get_radar_stations**: List all NWS radar stations and their status
 
 
 ## 💬 Prompt Examples

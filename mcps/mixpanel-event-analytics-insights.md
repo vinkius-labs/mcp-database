@@ -36,22 +36,22 @@ Connect your **Mixpanel** account to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
-- **list_cohorts**: List saved behavioral cohorts
+- **query_funnel**: Get conversion data for a specific funnel
 - **list_funnels**: List all saved funnel configurations
+- **query_insights**: Query complex dashboard insights
+- **query_profiles**: g., properties["plan"]=="pro").
+
+Search for specific user profiles
 - **query_retention**: Calculate user retention curves
+- **query_segmentation**: g., device or region).
+
+Break down an event by specific properties
 - **query_top_events**: Get the top 20 events by volume
 - **query_events**: Query aggregate Mixpanel event counts over time
 - **export_events**: Note: This API is rate-limited to 60 requests per hour.
 
 Export raw event data logs
-- **query_funnel**: Get conversion data for a specific funnel
-- **query_insights**: Query complex dashboard insights
-- **query_profiles**: g., properties["plan"]=="pro").
-
-Search for specific user profiles
-- **query_segmentation**: g., device or region).
-
-Break down an event by specific properties
+- **list_cohorts**: List saved behavioral cohorts
 
 
 ## 💬 Prompt Examples

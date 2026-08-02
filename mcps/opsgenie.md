@@ -37,15 +37,15 @@ Connect your **Opsgenie** account to any AI agent and take full control of your 
 ## Available Tools (11)
 - **acknowledge_alert**: Acknowledge an alert
 - **add_note**: Add a note to an alert
-- **close_alert**: Close an alert
 - **create_alert**: Create a new Opsgenie alert
-- **create_incident**: Create a new incident
 - **get_alert**: Get details for a specific alert
 - **get_incident**: Get details for a specific incident
-- **get_who_is_on_call**: Get current on-call users for a schedule
 - **list_alerts**: List Opsgenie alerts
-- **list_incidents**: List Opsgenie incidents
 - **list_schedules**: List all on-call schedules
+- **create_incident**: Create a new incident
+- **get_who_is_on_call**: Get current on-call users for a schedule
+- **list_incidents**: List Opsgenie incidents
+- **close_alert**: Close an alert
 
 
 ## 💬 Prompt Examples

@@ -27,14 +27,14 @@ Empower your AI agents with world-class financial intelligence. The **Moody's Ra
 
 
 ## Available Tools (8)
-- **get_issue_details**: Get detailed info for an issue
-- **get_issuer_details**: Get detailed info for an issuer
-- **get_market_segments**: List market segments
-- **get_rating_reference**: Get rating scale reference
 - **list_issue_ratings**: List credit ratings for specific issues
 - **list_issuer_ratings**: List credit ratings for issuers
 - **list_rating_actions**: List recent rating actions
 - **search_entities**: Search for issuers or organizations
+- **get_issue_details**: Get detailed info for an issue
+- **get_issuer_details**: Get detailed info for an issuer
+- **get_market_segments**: List market segments
+- **get_rating_reference**: Get rating scale reference
 
 
 ## 💬 Prompt Examples

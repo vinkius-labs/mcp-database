@@ -41,9 +41,6 @@ Get exact behavioral payloads and telemetry for an Alert
 - **list_host_vulnerabilities**: Identifies running processes strictly matched against Critical or High CVEs (e.g., Log4j, Polkit) directly active inside EC2 or GCE instances.
 
 List known vulnerabilities executing natively on Cloud Hosts/VMs
-- **search_cloud_inventory**: Used to dynamically enumerate running instances, active networking perimeters, or unrestricted S3 buckets discovered by cross-account role polling.
-
-Query the real-time Lacework Cloud Control-Plane Asset Inventory
 - **search_alerts**: Fetches events mapping to anomalous Kubernetes executions, AWS IAM brute-forcing attempts, and massive container network exfiltrations spanning the specified time filter.
 
 Search Cloud Security alerts dynamically across Lacework
@@ -52,7 +49,7 @@ Search Cloud Security alerts dynamically across Lacework
 Search all integrated Machines/Instances for a specific CVE
 - **list_security_policies**: Confirms whether Lacework will alert directly if an engineer violates structural norms (e.g., exposing port 22 directly to 0.0.0.0/0).
 
-List all global Cloud Security Policies enforced by Lacework
+List all globalThis Cloud Security Policies enforced by Lacework
 - **list_lql_queries**: These extract precise cloud telemetry fields mapping user-defined compliance checks directly against the underlying dataset.
 
 List all Lacework Query Language (LQL) structures
@@ -65,6 +62,9 @@ Execute an LQL Threat Hunting Query on-demand
 - **list_container_vulnerabilities**: Examines ECR/DockerHub registries or direct cluster deployments for images carrying critical inherited CVEs at the filesystem level before CI/CD promotion blocks.
 
 List static image vulnerabilities detected in Container Registries
+- **search_cloud_inventory**: Used to dynamically enumerate running instances, active networking perimeters, or unrestricted S3 buckets discovered by cross-account role polling.
+
+Query the real-time Lacework Cloud Control-Plane Asset Inventory
 
 
 ## 💬 Prompt Examples

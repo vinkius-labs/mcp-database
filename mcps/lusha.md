@@ -7,38 +7,47 @@
 
 **Category:** [sales-automation](../categories/sales-automation.md)
 
-Equip your AI agent with direct access to Lusha — find verified B2B contact details, enrich prospect data, and build lead lists without opening the Lusha platform.
+Enrich your prospect data with verified direct dials and email addresses from a B2B contact intelligence platform.
 
 ## Description
-Connect **Lusha** to your AI agent and access verified B2B contact data for your sales prospecting.
+Connect your **Lusha** account to any AI agent and take full control of your sales prospecting and data enrichment through natural conversation. Lusha provides a premier B2B database, and this integration allows you to retrieve high-fidelity contact details (email, phone), enrich company metadata, and search for new prospects directly from your chat interface.
 
 ### What you can do
 
-- **Contact Enrichment** — Find verified emails, direct dial phone numbers, and social profiles for any prospect.
-- **Company Data** — Pull firmographic data including industry, employee count, revenue range, and headquarters location.
-- **Prospect Search** — Build targeted prospect lists filtered by job title, seniority, company size, and geography.
-- **Bulk Enrichment** — Enrich multiple contacts at once from your existing CRM or lead lists.
+- **Contact & Person Enrichment** — Lookup detailed contact metadata programmatically using name, company, or LinkedIn URLs to ensure your CRM is always synchronized.
+- **Company & Firmographic Intelligence** — Access and monitor company data including industry, revenue, and headcount directly from the AI interface to qualify accounts in real-time.
+- **Prospecting & Search Control** — Search for new contacts and companies matching your Ideal Customer Profile (ICP) via natural language to drive better sales efficiency.
+- **Usage & Credit Oversight** — Access granular details for your credit consumption and remaining balance using simple AI commands to maintain a clear overview of your resources.
+- **Operational Monitoring** — Track system responses and manage data ingestion to ensure your sales workflows are always optimized.
 
 ### How it works
 
-1. Subscribe to the Lusha integration on the marketplace.
-2. Copy your API key from your Lusha dashboard (Settings → API → copy token).
-3. Ask your AI agent to find contacts, enrich records, or build prospect lists.
+1. Subscribe to this server
+2. Enter your Lusha API Key from your dashboard settings
+3. Start enriching your sales data from Claude, Cursor, or any MCP-compatible client
+
+No more manual copy-pasting from LinkedIn profiles. Your AI acts as a dedicated sales researcher or lead qualification assistant.
 
 ### Who is this for?
 
-- **SDR Teams** — Get direct dials and verified emails instantly for cold outreach campaigns.
-- **Sales Teams** — Enrich CRM records before outreach to increase connection and response rates.
-- **Recruiters** — Find candidate contact details quickly for direct sourcing.
+- **Sales Development Reps (SDRs)** — quickly retrieve phone numbers and monitor account health without switching apps.
+- **Account Executives** — automate the enrichment of new leads and track prospecting progress via natural conversation.
+- **Marketing Teams** — streamline the retrieval of firmographic metadata and monitor data quality directly within the chat.
 
 
-## Available Tools (6)
-- **get_credits**: Get credit balance
-- **find_person**: Find person
-- **find_company**: Find company
-- **bulk_enrich**: Bulk enrich emails
-- **find_by_linkedin**: Find by LinkedIn URL
-- **search_contacts**: Search contacts
+## Available Tools (12)
+- **bulk_enrich_persons**: Enrich multiple contacts
+- **enrich_company_info**: Get firmographics
+- **enrich_person_info**: Get contact details
+- **get_credit_balance**: Check account balance
+- **get_person_by_email**: Enrich by email
+- **get_person_by_linkedin**: Enrich by LinkedIn
+- **get_usage_stats**: Check API usage
+- **get_account_info**: Check connection
+- **prospect_new_companies**: Search for businesses
+- **prospect_new_leads**: Search for contacts
+- **test_lusha_auth**: Verify API key
+- **bulk_enrich_companies**: Enrich multiple companies
 
 
 ## 💬 Prompt Examples
@@ -46,41 +55,38 @@ Connect **Lusha** to your AI agent and access verified B2B contact data for your
 Here are some examples of how you can interact with the **Lusha** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Find the contact details for John Smith, VP Sales at TechCo."
+> "Enrich this contact: John Miller at Acme Corp."
 
 **🤖 AI Agent:**
-> Found: John Smith. Email: john.smith@techco.com (verified). Direct dial: +1-555-0147. Mobile: +1-555-0293. LinkedIn: linkedin.com/in/johnsmith-techco. Credits used: 1. Remaining: 149.
+> I've enriched the contact. John Miller is the 'VP of Sales' at Acme Corp. His verified email is j.miller@acme.com and I've also found a direct office number.
 
 ---
 
 **👤 You:**
-> "Enrich this list of 5 contacts from my CRM."
+> "Search for companies in New York with 500-1000 employees in the SaaS industry."
 
 **🤖 AI Agent:**
-> Bulk enrichment complete: 5 contacts processed. 4 found (emails + phone numbers verified), 1 not found (insufficient data). Credits used: 4. Total remaining: 146.
+> I've found 12 companies matching your criteria, including 'CloudStream' and 'DataVibe'. Would you like me to retrieve the LinkedIn URLs for their decision-makers?
 
 ---
 
 **👤 You:**
-> "Search for marketing directors at fintech companies in London."
+> "Check my Lusha credit balance."
 
 **🤖 AI Agent:**
-> Found 28 Marketing Directors at fintech companies in London. Top 3: Emma Clarke (Revolut, verified email + direct dial), David Park (Monzo, verified email), and Sarah Ahmed (Starling Bank, verified email + mobile).
+> You currently have 450 credits remaining in your monthly plan. Your next renewal is in 12 days.
 
 
 ## ❓ FAQ
 
-**Q: How do I get my Lusha API key?**
-Log in to your Lusha account at **dashboard.lusha.com**. Click the **Settings** (gear icon) in the left sidebar. Navigate to the **API** section. Your API key is displayed on this page — click **Copy** to copy it. Paste it into the configuration field below. API access is available on Lusha's **Premium** and **Scale** plans.
+**Q: Can my AI automatically find the phone number for a LinkedIn profile?**
+Yes! Use the `get_person_by_linkedin` tool. Provide the LinkedIn URL, and your agent will respond with complete metadata for the record, including verified emails and direct phone numbers in seconds.
 
-**Q: Can I find phone numbers and emails for a specific prospect?**
-Yes. Provide a person's name and company, and Lusha returns verified business email, personal email, direct dial, mobile number, and LinkedIn profile — all from its database of 100M+ business profiles.
+**Q: How do I find my Lusha API Key?**
+Log in to your Lusha account, navigate to **Settings** > **API & Integrations**, and you will find your unique secret token there.
 
-**Q: How many credits does each search consume?**
-Each contact enrichment uses 1 credit from your Lusha plan. Credits refresh monthly. Your AI agent reports remaining credits so you always know your usage — no surprises on your bill.
-
-**Q: Is the data GDPR compliant?**
-Yes. Lusha is ISO 27701 certified and GDPR/CCPA compliant. All contact data is sourced from publicly available information and community-contributed data with proper consent mechanisms.
+**Q: Does it support bulk enrichment?**
+Yes, use the `bulk_enrich_person` tool to provide an array of contacts. The AI will process the batch and return enriched metadata for all entries in a single operation.
 
 
 ## Installation & Usage

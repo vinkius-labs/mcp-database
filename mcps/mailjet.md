@@ -5,49 +5,50 @@
 
 ## Overview
 
-**Category:** [developer-tools](../categories/developer-tools.md)
+**Category:** [email-marketing](../categories/email-marketing.md)
 
-Send transactional emails and manage marketing campaigns via the Mailjet REST API.
+Deliver emails at scale with collaborative template editing, real-time monitoring, and deliverability analytics in one platform.
 
 ## Description
-Connect your **Mailjet** account to any AI agent to automate your transactional messaging and email marketing workflows. This MCP server enables your agent to send emails using the v3.1 Send API, manage subscriber lists, and track campaign performance directly from natural language interfaces.
+Connect your **Mailjet** account to any AI agent and manage email operations through natural conversation.
 
 ### What you can do
 
-- **Transactional Delivery** — Send single or batch emails with full support for HTML, attachments, and variables
-- **Audience Management** — List all contacts, create new subscriber records, and manage contact lists (address books)
-- **Subscription Control** — Add or remove contacts from specific lists and manage opt-in statuses programmatically
-- **Campaign Tracking** — List historical campaigns and retrieve real-time performance statistics (opens, clicks, bounces)
-- **Metadata Oversight** — Fetch detailed configuration and status for any campaign or subscriber collection
+- **Email Sending** — Send transactional and marketing emails at scale
+- **Contact Management** — Manage contact lists with properties and segmentation
+- **Template Management** — Browse, create, and manage email templates
+- **Delivery Analytics** — Track opens, clicks, bounces, and spam reports
+- **Campaign Management** — Create and monitor email campaigns
+- **Statistics** — Access detailed sending statistics and trends
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Mailjet API Public Key and Secret Key
-3. Start managing your communications from Claude, Cursor, or any MCP-compatible client
+2. Enter your Mailjet API Key and Secret Key
+3. Start managing email from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Email Marketers** — Monitor campaign results and manage subscriber segments via simple natural language commands
-- **Developers** — Quickly test email delivery and verify list logic directly from your IDE
-- **Operations Teams** — Automate the synchronization of contact data and audit delivery performance effortlessly
+- **Developers** — integrate email sending with rich APIs
+- **Marketers** — manage campaigns and contact lists
+- **Operations** — monitor deliverability and sender reputation
 
 
-## Available Tools (8)
-- **list_marketing_campaigns**: List all campaigns
-- **list_all_contacts**: List all contacts in the Mailjet account
-- **get_campaign_details**: Get details for a specific campaign
-- **list_subscriber_lists**: List all contact lists
-- **send_transactional_email**: Requires a JSON body matching Mailjet v3.1 Send API structure.
+## Available Tools (12)
+- **subscribe_to_list**: Add contact to list
+- **get_account_analytics**: Check account stats
+- **get_template_details**: Get template content
+- **list_contact_groups**: List contact lists
+- **list_sender_domains**: Check sending domains
+- **list_email_templates**: List saved templates
+- **send_plain_email**: Send transactional email
+- **send_template_email**: Send using template
+- **create_new_contact**: Add email to contacts
+- **list_sent_campaigns**: List past campaigns
+- **list_all_contacts**: List audience contacts
+- **get_campaign_performance**: ) for a specific campaign ID.
 
-Send an email using Mailjet Send API v3.1
-- **add_contact_to_list**: Requires list ID and contact ID/Email.
-
-Subscribe a contact to a specific list
-- **get_campaign_performance**: Get performance statistics for a campaign
-- **create_new_contact**: Requires at least an Email address.
-
-Add a new contact to the database
+Check campaign stats
 
 
 ## 💬 Prompt Examples
@@ -55,38 +56,38 @@ Add a new contact to the database
 Here are some examples of how you can interact with the **Mailjet** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Send a transactional email to 'passenger@example.com' with subject 'Boarding Pass'."
+> "Show sending statistics and contact list summary."
 
 **🤖 AI Agent:**
-> I've sent the email. The message has been queued by Mailjet. You can track the delivery status using the campaign tools.
+> Sending (7 days): 18,400 emails. Delivered: 18,032 (98% ✅). Opens: 6,624 (36%). Clicks: 1,472 (8%). Bounced: 184 (1%). Blocked: 92 (0.5%). Spam: 12 (0.07%). Contact lists: 5. 'Newsletter' (8,200), 'Customers' (3,400), 'Leads' (2,100), 'Partners' (450), 'Beta' (340). Total: 14,490.
 
 ---
 
 **👤 You:**
-> "List all active contact lists in my Mailjet account."
+> "List email templates and send a transactional email."
 
 **🤖 AI Agent:**
-> I've retrieved your contact lists. You have 3 active lists: 'Newsletter Subscribers', 'Product Updates', and 'Transactional Users'.
+> Templates: 8. 'Welcome Email' (ID: 1234, used 5.2K times). 'Order Confirmation' (ID: 1235, 3.8K). 'Password Reset' (ID: 1236, 2.1K). 'Invoice' (ID: 1237, 1.2K). 4 others. Email sent! ✅ Template: 'Welcome Email'. To: sarah@company.com. Variables: {name: 'Sarah', plan: 'Pro'}. Status: Queued → Sent (0.3s).
 
 ---
 
 **👤 You:**
-> "Show performance stats for campaign ID '12345'."
+> "Show campaign performance and bounce analysis."
 
 **🤖 AI Agent:**
-> I've fetched the statistics. For campaign 12345, you have an open rate of 22.5% and a click rate of 3.2% across 5,000 recipients.
+> Campaigns (last 5): 'April Newsletter' (8,200 sent, 38% open, 9% click ⭐). 'Product Launch' (3,400, 42% open, 12% click ⭐). 'Webinar Invite' (2,100, 35% open). 2 others. Bounce analysis: Total: 184 (1%). Hard: 45 (mailbox not found). Soft: 139 (temp issues). Top domains: gmail.com (8 bounces), outlook.com (12).
 
 
 ## ❓ FAQ
 
-**Q: Which version of the Mailjet API does this server use?**
-This server uses Mailjet REST API v3 for resource management (contacts, lists, campaigns) and the modern v3.1 Send API for reliable email delivery.
+**Q: Can I send both transactional and marketing emails?**
+Yes. Mailjet supports both transactional (triggered) and marketing (campaign) emails through the same API.
 
-**Q: Can I send bulk emails using the agent?**
-Yes, the `send_transactional_email` tool supports the full v3.1 structure, allowing you to include multiple message objects in a single call.
+**Q: Does Mailjet require two API keys?**
+Yes. Mailjet uses **API Key** and **Secret Key** pair with Basic Auth against `api.mailjet.com/v3`.
 
-**Q: How do I find my API Key and Secret?**
-Log in to your Mailjet account and navigate to Account Settings > API Key Management to find or generate your credentials.
+**Q: Can I manage contact lists and segments?**
+Yes. Create and manage contact lists, set contact properties, and build segments with dynamic conditions.
 
 
 ## Installation & Usage

@@ -35,18 +35,18 @@ Connect your **Merge.dev** account to any AI agent and take full control of your
 
 
 ## Available Tools (8)
-- **list_employees**: Be aware the list might be paginated or heavy.
-
-List employees from the linked HRIS integration
-- **list_companies**: List companies mapped inside the HRIS integration
-- **list_candidates**: List recruited candidates across the ATS integration
 - **list_applications**: List job applications inside the ATS integration
-- **list_contacts**: List external contacts mapped in the CRM integration
 - **list_accounts**: List customer accounts parsed from the CRM integration
 - **list_tickets**: List inbound/outbound support tickets inside the Ticketing integration
 - **get_account_details**: dev.
 
 Retrieve linked Account Details exposing integration boundaries
+- **list_contacts**: List external contacts mapped in the CRM integration
+- **list_employees**: Be aware the list might be paginated or heavy.
+
+List employees from the linked HRIS integration
+- **list_companies**: List companies mapped inside the HRIS integration
+- **list_candidates**: List recruited candidates across the ATS integration
 
 
 ## 💬 Prompt Examples

@@ -27,10 +27,10 @@ Connect your **Marketo** account to any AI agent and take full control of your m
 
 
 ## Available Tools (11)
+- **list_static_lists**: List static lists
 - **list_leads_by_list**: List leads in a static list
 - **list_programs**: List all programs
 - **list_smart_campaigns**: List all smart campaigns
-- **list_static_lists**: List static lists
 - **get_campaign_by_id**: Get campaign details by ID
 - **get_lead_by_email**: Get lead details by email
 - **get_lead_by_id**: Get lead details by ID

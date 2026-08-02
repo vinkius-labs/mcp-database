@@ -7,46 +7,46 @@
 
 **Category:** [ecommerce](../categories/ecommerce.md)
 
-Manage e-commerce stores, products, orders, and subscriptions via the Lemon Squeezy API.
+Sell software, subscriptions, and digital products globally with built-in tax compliance, billing, and licensing as your merchant of record.
 
 ## Description
-Connect your **Lemon Squeezy** account to any AI agent to automate your software sales and subscription management. This MCP server enables your agent to interact with stores, products, orders, and customer subscriptions directly from natural language interfaces using the JSON:API standard.
+Connect your **Lemon Squeezy** store to any AI agent and manage digital sales through natural conversation.
 
 ### What you can do
 
-- **Store Oversight** — List all your Lemon Squeezy stores and retrieve detailed configurations and metadata
-- **Product Management** — Query your entire product catalog, including pricing, status, and purchase URLs
-- **Order Tracking** — List and retrieve detailed information for customer orders, including financial totals and payment status
-- **Subscription Lifecycle** — Monitor active subscriptions, retrieve renewal dates, and cancel plans when necessary
-- **Customer CRM** — Manage customer profiles and retrieve their complete purchase and subscription history
+- **Product Management** — List products with variants, pricing, and sales data
+- **Order Tracking** — Browse orders with status, amounts, and customer data
+- **Subscription Monitoring** — Track active subscriptions, renewals, and churn
+- **Customer Database** — List customers with purchase history and LTV
+- **Revenue Analytics** — Monitor MRR, refund rates, and growth trends
+- **Store Management** — Access store settings, checkout links, and discount codes
 
 ### How it works
 
 1. Subscribe to this server
 2. Enter your Lemon Squeezy API Key
-3. Start managing your digital business from Claude, Cursor, or any MCP-compatible client
+3. Start managing sales from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **SaaS Founders** — Monitor sales performance and subscription health via natural language commands
-- **Operations Teams** — Quickly check order details and manage customer cancellations without opening the dashboard
-- **Developers** — Integrate e-commerce data and subscription management into your daily development workflow
+- **Indie Developers** — sell software and track revenue
+- **SaaS Founders** — manage subscriptions and monitor MRR
+- **Creators** — sell digital products and track customers
 
 
-## Available Tools (11)
-- **get_customer_details**: Get details for a specific customer
-- **get_order_details**: Get details for a specific order
-- **get_product_details**: Get details for a specific product
-- **get_store_details**: Get details for a specific store
-- **get_subscription_details**: Get details for a specific subscription
-- **list_all_orders**: List all orders
-- **list_all_products**: List all products available in your account
-- **list_stores**: List all stores in your Lemon Squeezy account
-- **list_all_subscriptions**: List all active and historical subscriptions
-- **cancel_subscription**: The customer will retain access until the end of the current billing cycle.
-
-Cancel an active subscription
-- **list_all_customers**: List all customers
+## Available Tools (12)
+- **get_account_info**: Get account profile
+- **get_order**: Get order details
+- **get_subscription**: Get subscription details
+- **list_customers**: List all customers
+- **list_discounts**: List promo codes
+- **list_orders**: List all orders
+- **list_products**: List all products
+- **list_stores**: List all stores
+- **list_subscriptions**: List all subscriptions
+- **list_variants**: List all product variants
+- **list_webhooks**: List configured webhooks
+- **get_product**: Get product details
 
 
 ## 💬 Prompt Examples
@@ -54,38 +54,38 @@ Cancel an active subscription
 Here are some examples of how you can interact with the **Lemon Squeezy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all products in my Lemon Squeezy account."
+> "Show all products with sales data and this month's revenue."
 
 **🤖 AI Agent:**
-> I've retrieved your products. You have 5 products, including 'SaaS Pro Plan ($49.00)', 'E-book: Mastering AI ($19.00)', and 3 others. Would you like to see the purchase URLs for any of them?
+> Products: 4. 'Pro License' ($49/one-time, 890 sales, $43.6K). 'Team Plan' ($29/mo, 234 active subs). 'Enterprise' ($99/mo, 45 active). 'Starter Kit' ($19, 1.2K sales, $22.8K). This month: $12,400 revenue. MRR: $8,850. One-time: $3,550. Orders: 68. Refunds: 2 ($98).
 
 ---
 
 **👤 You:**
-> "Show my 5 most recent orders."
+> "Show active subscriptions and churn analysis."
 
 **🤖 AI Agent:**
-> I found 5 recent orders. Notable ones include Order #12345 from 'John Smith' ($49.00) and Order #12344 from 'Alice Doe' ($19.00). Both are currently marked as 'paid'.
+> Active subscriptions: 279. Team Plan: 234 ($6,786/mo). Enterprise: 45 ($4,455/mo). MRR: $11,241. This month: +18 new, -6 cancelled. Churn: 2.1% (excellent). Net revenue retention: 108%. Upcoming renewals (7 days): 32. At-risk (payment failed): 3.
 
 ---
 
 **👤 You:**
-> "Get details for subscription ID '98765'."
+> "List customers sorted by LTV and show discount codes."
 
 **🤖 AI Agent:**
-> I've fetched the details for subscription 98765. The status is 'active', and the next renewal is scheduled for July 15th. The associated customer is 'jane@example.com'.
+> Top customers by LTV: 1) Acme Corp — $2,376 (Enterprise, 24 months). 2) TechCo — $1,740 (Team, 5 seats, 12 months). 3) StartupXYZ — $1,188 (Enterprise, 12 months). Total customers: 1,890. Discount codes: 3 active. 'LAUNCH20' (20% off, 45 uses). 'ANNUAL30' (30% annual, 12 uses). 'PARTNER50' (50%, partner only, 3 uses).
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Lemon Squeezy API Key?**
-Log in to your Lemon Squeezy dashboard and navigate to Settings > API to generate and copy your unique API Key.
+**Q: Can I track subscriptions and MRR?**
+Yes. Monitor active subscriptions, renewals, cancellations, churn rate, and MRR with growth trends.
 
-**Q: Can I cancel a customer subscription using the agent?**
-Yes, use the `cancel_subscription` tool with the unique subscription ID. The subscription will remain active until the end of the current billing cycle.
+**Q: Can I manage products and discount codes?**
+Yes. List products with variants and pricing. Access discount codes, checkout links, and store settings.
 
-**Q: Is it possible to see the formatted price of a product?**
-Yes, the tools retrieve the `total_formatted` or `price_formatted` attributes directly from the Lemon Squeezy API for easy reading.
+**Q: What API does Lemon Squeezy use?**
+Bearer authentication against `api.lemonsqueezy.com/v1`. JSON:API format.
 
 
 ## Installation & Usage

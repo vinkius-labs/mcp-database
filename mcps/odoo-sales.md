@@ -29,15 +29,15 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 - **odoo_confirm_order**: order, transitioning it from "draft"/"sent" to "sale" state. This triggers downstream operations like delivery order creation and inventory reservation. Use when the user says a quote is approved or wants to confirm an order.
 
 Confirm a draft quotation, converting it into an active sales order ready for fulfillment
+- **odoo_get_sales_order**: order record with all key fields: customer, status, amounts, salesperson, dates. Use after finding an order via list/search to drill down into its details. The ID is the numeric Odoo database ID (not the order number like S00042).
+
+Get the complete details of a specific sales order or quotation by its numeric ID
 - **odoo_create_quotation**: order in "draft" state with the specified customer and order lines. The partnerId must be an existing res.partner ID. Lines must be a JSON array where each element has product_id (existing product.template ID), product_uom_qty (quantity), and price_unit (unit price). Example lines: [{"product_id": 5, "product_uom_qty": 2, "price_unit": 100.00}]
 
 Create a new quotation for a customer with product lines, quantities, and unit prices
 - **odoo_get_order_lines**: order.line records for the given order. Returns each line with product name, quantity, unit price, and subtotal. Use when the user wants to see what products are in an order, verify quantities, or check line-level pricing.
 
 Get the individual line items (products, quantities, prices) of a specific sales order
-- **odoo_get_sales_order**: order record with all key fields: customer, status, amounts, salesperson, dates. Use after finding an order via list/search to drill down into its details. The ID is the numeric Odoo database ID (not the order number like S00042).
-
-Get the complete details of a specific sales order or quotation by its numeric ID
 - **odoo_list_pricelists**: pricelist records. Pricelists define pricing rules for different customer segments, currencies, or regions. Returns pricelist name, currency, and whether it is active. Use when the user asks about available pricing tiers or currency-specific pricing.
 
 List all configured pricelists in Odoo with their currencies and active status

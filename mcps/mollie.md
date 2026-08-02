@@ -7,50 +7,40 @@
 
 **Category:** [money-moves](../categories/money-moves.md)
 
-Manage payments, orders, and customers via Mollie — track transactions and manage your e-commerce finances directly from your AI agent.
+Accept online payments across Europe with a payment gateway that supports iDEAL, credit cards, PayPal, and local methods seamlessly.
 
 ## Description
-Connect your **Mollie** merchant account to your AI agent and take control of your payment workflows and e-commerce operations through natural conversation.
+Connect your **Mollie** account to any AI agent and manage European payments through natural conversation.
 
 ### What you can do
 
-- **Payment Tracking** — List all transactions and get real-time status updates, amounts, and metadata.
-- **Order Management** — View e-commerce orders, including line items and fulfillment status.
-- **Customer Insights** — Access customer profiles, payment history, and saved details.
-- **Refunds & Chargebacks** — Monitor your refund history and stay informed about disputed payments (chargebacks).
-- **Create Payments** — Generate new payment links with custom amounts, currencies, and descriptions.
-- **Deep Inspection** — Fetch complete details for specific payments, orders, or customers using their unique IDs.
+- **Payment Management** — Create, list, and inspect payments with full status details
+- **Refund Tracking** — Browse all processed refunds
+- **Customer Management** — List registered customers for recurring billing
+- **Subscriptions** — View active and cancelled subscriptions per customer
+- **Payment Methods** — List all enabled payment methods (iDEAL, Bancontact, cards, etc.)
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Mollie API Key (Live or Test)
-3. Start managing your finances from Claude, Cursor, or any MCP client
+2. Enter your Mollie API Key
+3. Start managing payments from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **E-commerce Owners** — quickly check if a customer's payment has been received without opening the Mollie dashboard.
-- **Support Teams** — verify order statuses and transaction details while assisting customers.
-- **Finance Teams** — automate the retrieval of payment and refund lists for reconciliation and reporting.
+- **E-commerce** — automate payment creation and status tracking
+- **Finance Teams** — monitor refunds and reconciliation
+- **Developers** — integrate European payment methods
 
 
-## Available Tools (10)
-- **create_payment**: Create a new Mollie payment
-- **get_customer**: g., cst_8wmqcHMN4U).
-
-Get specific customer details
-- **get_order**: g., ord_st9n7), including line items and shipping info.
-
-Get details for a specific order
-- **get_payment**: g., tr_7UhVrS0eba).
-
-Get details for a specific payment
-- **get_refund**: Get specific refund details
-- **list_chargebacks**: List payment chargebacks
+## Available Tools (7)
+- **create_payment**: Create a new payment
+- **get_payment_details**: Get details for a specific payment
 - **list_customers**: List Mollie customers
-- **list_orders**: List all e-commerce orders
-- **list_payments**: List all Mollie payments
-- **list_refunds**: List all payment refunds
+- **list_payment_methods**: List available payment methods
+- **list_payments**: List Mollie payments
+- **list_refunds**: List all refunds
+- **list_customer_subscriptions**: List subscriptions for a customer
 
 
 ## 💬 Prompt Examples
@@ -58,38 +48,38 @@ Get details for a specific payment
 Here are some examples of how you can interact with the **Mollie** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List my 5 most recent payments and their current status."
+> "List recent payments and their statuses."
 
 **🤖 AI Agent:**
-> I've retrieved your recent transactions. You have 5 recent payments: three are 'paid' (totaling €150.00), one is 'open' (waiting for payment), and one is 'expired'. Would you like more details on the open payment?
+> Recent payments: 5. 1) €45.00 — 'Pro Plan Monthly' (Status: Paid ✅, iDEAL). 2) €120.00 — 'Annual License' (Status: Paid ✅, Credit Card). 3) €25.00 — 'Addon Purchase' (Status: Open ⏳). 4) €10.00 — 'Donation' (Status: Expired ❌). 5) €89.00 — 'Enterprise Upgrade' (Status: Paid ✅, Bancontact).
 
 ---
 
 **👤 You:**
-> "Create a new payment link for €45.00 for 'Service Invoice #123'."
+> "Create a payment of €50 for a premium upgrade."
 
 **🤖 AI Agent:**
-> I've generated the payment link for 'Service Invoice #123'. The amount is €45.00 and you can send this URL to your customer: https://www.mollie.com/checkout/select-method/7PrMmS. The payment is currently in 'open' status.
+> Payment created! ✅ ID: tr_7UhSN1zuXS. Amount: €50.00. Description: 'Premium Upgrade'. Checkout URL: https://www.mollie.com/checkout/... Redirect URL: https://myapp.com/success. Status: Open. Waiting for customer to pay.
 
 ---
 
 **👤 You:**
-> "Show me my refund history."
+> "Show enabled payment methods and list refunds."
 
 **🤖 AI Agent:**
-> Retrieving your refunds... You have processed 3 refunds recently: two for 'Service Refund' (€20.00 each) and one for 'Returned Product' (€55.00). All are marked as 'succeeded'.
+> Enabled methods: 6. iDEAL ✅, Credit Card ✅, Bancontact ✅, PayPal ✅, SEPA Direct Debit ✅, Klarna ✅. Refunds (last 30 days): 3. 1) €12.00 (tr_abc, Refunded ✅). 2) €45.00 (tr_def, Processing). 3) €8.50 (tr_ghi, Refunded ✅).
 
 
 ## ❓ FAQ
 
-**Q: Does this server support Mollie's Test Mode?**
-Yes! Simply provide your Test API Key instead of your Live API Key during authentication. The agent will then interact with your test environment.
+**Q: Can I create payments and track their status?**
+Yes. Create payment links with amount, description, and redirect URL, then track status (open, paid, failed, expired).
 
-**Q: Can I see exactly what items were in a specific order?**
-Yes. Use the `get_order` tool with an Order ID (starting with `ord_`). Your agent will return the full breakdown of products, prices, and shipping details.
+**Q: How does Mollie authentication work?**
+Mollie uses Bearer authentication with your API Key against `api.mollie.com/v2`.
 
-**Q: How do I check for disputed payments?**
-Use the `list_chargebacks` tool to see a list of all transactions that have been disputed by customers through their banks.
+**Q: Which European payment methods are supported?**
+All methods enabled in your Mollie profile are accessible: iDEAL, Bancontact, SEPA, credit cards, PayPal, Klarna, and more.
 
 
 ## Installation & Usage

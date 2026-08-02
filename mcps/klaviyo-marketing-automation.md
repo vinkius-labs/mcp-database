@@ -35,6 +35,12 @@ Connect your **Klaviyo** account to any AI agent and take full control of your e
 
 
 ## Available Tools (10)
+- **add_profiles_to_list**: This tool is critical for managing subscriptions and segmenting customers for specific marketing campaigns. Input profile IDs as a comma-separated string.
+
+Add profiles to a Klaviyo list
+- **list_email_campaigns**: This tool allows you to monitor marketing activity, check which campaigns are currently active, and see scheduled send times for upcoming broadcasts.
+
+List Klaviyo email campaigns
 - **get_flow_details**: It returns the entry trigger conditions, the sequence of action steps (emails, SMS, delays), and the current operational status of the automation.
 
 Get details for a Klaviyo automation flow
@@ -50,12 +56,6 @@ Create a new Klaviyo profile
 - **list_lists**: Use this to identify target lists for profile orchestration or to audit your subscription groups. Returns list IDs, names, and total contact counts.
 
 List all Klaviyo audience lists
-- **add_profiles_to_list**: This tool is critical for managing subscriptions and segmenting customers for specific marketing campaigns. Input profile IDs as a comma-separated string.
-
-Add profiles to a Klaviyo list
-- **list_email_campaigns**: This tool allows you to monitor marketing activity, check which campaigns are currently active, and see scheduled send times for upcoming broadcasts.
-
-List Klaviyo email campaigns
 - **get_campaign_details**: Returns its current status (draft, sent, scheduled), the targeted audience list/segment IDs, and the message content being delivered.
 
 Get details for a Klaviyo campaign
