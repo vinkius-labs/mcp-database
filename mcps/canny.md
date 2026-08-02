@@ -35,8 +35,8 @@ Connect your **Canny** account to any AI agent and orchestrate your product feed
 
 
 ## Available Tools (11)
-- **add_comment**: Add a comment to a feedback post
 - **create_feedback_post**: Create a new feedback post (idea, bug, etc)
+- **add_comment**: Add a comment to a feedback post
 - **vote_on_post**: Add a vote to a feedback post
 - **get_account_info**: Retrieve core account information
 - **get_board_details**: Get details of a specific board

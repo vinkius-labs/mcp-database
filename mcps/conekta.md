@@ -41,6 +41,7 @@ Retrieve detailed information about a specific customer
 - **get_order**: Returns charges, line items, customer info, and payment status.
 
 Retrieve detailed information about a specific order
+- **list_subscription_plans**: Retrieve a list of subscription plans in Conekta
 - **list_customers**: Retrieve a list of customer records from Conekta
 - **list_events**: Useful for debugging integrations.
 
@@ -48,7 +49,6 @@ Retrieve a list of API events (webhook history)
 - **list_orders**: Use payment_status filter to narrow results. Supports limit for pagination.
 
 Retrieve a paginated list of orders from Conekta
-- **list_subscription_plans**: Retrieve a list of subscription plans in Conekta
 - **search_customer_by_email**: Returns matching customer profiles.
 
 Find a Conekta customer by their email address

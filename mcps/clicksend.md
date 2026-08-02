@@ -36,11 +36,11 @@ Connect your **ClickSend** account to any AI agent and take full control of your
 
 
 ## Available Tools (8)
+- **get_physical_mail_history**: Retrieve a history of physical letters sent via ClickSend Post
+- **list_clicksend_contact_lists**: List all contact lists stored in ClickSend
 - **get_clicksend_account_info**: Retrieve core account details and balance
 - **get_sms_outbound_history**: Retrieve a history of sent SMS messages
-- **list_clicksend_contact_lists**: List all contact lists stored in ClickSend
 - **list_received_sms**: List all inbound (received) SMS messages
-- **get_physical_mail_history**: Retrieve a history of physical letters sent via ClickSend Post
 - **list_sms_marketing_campaigns**: List all scheduled and sent SMS marketing campaigns
 - **get_voice_call_history**: Retrieve a history of automated voice calls sent
 - **send_clicksend_sms**: Numbers should be in E.164 format.

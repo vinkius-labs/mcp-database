@@ -33,15 +33,15 @@ Connect your AI to **Collibra**, the data intelligence platform that helps organ
 
 ## Available Tools (10)
 - **create_asset**: Create a new asset in Collibra
+- **list_domains**: Retrieve a list of domains in Collibra
+- **list_statuses**: Retrieve a list of available asset statuses
+- **search_assets**: Search for assets by name
 - **get_asset**: Retrieve detailed information about a specific asset
 - **get_community_details**: Retrieve detailed information about a specific community
 - **list_asset_types**: Retrieve a list of available asset types
 - **list_assets**: Retrieve a list of assets in Collibra
 - **list_communities**: Retrieve a list of communities in Collibra
 - **list_domain_types**: Retrieve a list of available domain types
-- **list_domains**: Retrieve a list of domains in Collibra
-- **list_statuses**: Retrieve a list of available asset statuses
-- **search_assets**: Search for assets by name
 
 
 ## 💬 Prompt Examples

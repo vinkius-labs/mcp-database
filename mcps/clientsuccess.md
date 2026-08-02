@@ -7,43 +7,42 @@
 
 **Category:** [customer-support](../categories/customer-support.md)
 
-Manage customer success and retention via ClientSuccess — track client health, monitor subscriptions, and manage success cycles directly from any AI agent.
+Reduce churn and grow accounts with health scoring, engagement tracking, and success playbooks built for customer success teams.
 
 ## Description
-Connect your **ClientSuccess** account to any AI agent and take full control of your customer success operations through natural conversation. Streamline how you manage account health and revenue retention natively.
+Connect your **ClientSuccess** customer success platform to any AI agent and simplify how you manage your client relationships, track account health, and monitor service contracts through natural conversation.
 
 ### What you can do
 
-- **Client Oversight** — List and retrieve details for all clients, including health scores and status natively
-- **Subscription Intelligence** — Access and monitor all subscriptions and contracts associated with specific clients flawlessly
-- **Success Cycle Tracking** — Monitor onboarding and success cycles to ensure customer goals are met securely
-- **Interaction Auditing** — List and review internal notes and tasks for any specific client flawlessly
-- **Contact Logistics** — Access all contacts associated with your clients to maintain relationships securely
-- **integrated Visibility** — Retrieve detailed client metadata and profile information directly within your workspace flawlessly
+- **Client Oversight** — List all managed clients and retrieve detailed metadata, including health scores and success status.
+- **Relationship Management** — Manage client contacts, query individual profiles, and create new client records programmatically.
+- **Contract Monitoring** — List active and historic service contracts to ensure your renewals and agreements are on track.
+- **Segmentation** — Query customer segments to understand your client distribution and categorization.
+- **Data Insights** — Fetch complete account metadata and health metrics to identify at-risk customers via AI.
+- **Operational Efficiency** — Track your customer success ecosystem directly from Claude, Cursor, or any MCP client.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your ClientSuccess API Key (found in Settings > API)
-3. Start managing your customer success from Claude, Cursor, or any MCP-compatible client
+2. Enter your ClientSuccess API Key (found in your account settings)
+3. Start managing your client relationships from your favorite AI assistant
 
 ### Who is this for?
 
-- **Customer Success Managers** — monitor account health and review success cycles using natural language
-- **Success Operations** — audit subscription data and team tasks without opening the dashboard
-- **Sales Teams** — quickly look up client profiles and interaction history straight from their chat interface
-- **Leadership** — verify portfolio health and retention metrics across the organization
+- **Customer Success Managers (CSMs)** — quickly check client health scores and retrieve contact info via simple AI commands.
+- **Success Operations** — monitor contract distributions and verify segment metadata directly from the workspace.
+- **Product & Leadership Teams** — get instant bird's-eye views of client status and account growth via the AI assistant.
 
 
-## Available Tools (8)
-- **get_client_success_details**: Get detailed information for a specific client
-- **get_my_success_profile**: Retrieve information about the authenticated success manager
-- **list_success_clients**: List all clients in ClientSuccess
-- **list_client_success_contacts**: List all contacts associated with a specific client
-- **list_client_success_notes**: List all internal notes for a specific client
-- **list_client_subscriptions**: List all subscriptions and contracts for a specific client
-- **list_client_success_cycles**: List all onboarding or success cycles for a client
-- **list_client_success_tasks**: List all tasks and to-dos for a specific client
+## Available Tools (6)
+- **create_client**: Create a new client
+- **get_client_details**: Get details for a specific client
+- **list_clients**: List ClientSuccess clients
+- **list_contacts**: Optionally filter by client ID.
+
+List client contacts
+- **list_contracts**: List client contracts
+- **list_segments**: List client segments
 
 
 ## 💬 Prompt Examples
@@ -51,38 +50,38 @@ Connect your **ClientSuccess** account to any AI agent and take full control of 
 Here are some examples of how you can interact with the **ClientSuccess** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my clients with a 'Risk' health status."
+> "List all active clients in my ClientSuccess account."
 
 **🤖 AI Agent:**
-> Retrieving clients at risk... I found 3 accounts with low health scores: 'Global Tech', 'Startup Inc', and 'Fast Logistics'. Would you like to see their last interaction notes?
+> I've retrieved your client directory. You have 35 active organizations including 'Acme Corp', 'Tech Giant', and 'Global Logistics'. Which one would you like to see the health score for?
 
 ---
 
 **👤 You:**
-> "Show me the subscriptions for 'Acme Corp'."
+> "Show me the details and health score for client 'Acme Corp' (ID: 10293)."
 
 **🤖 AI Agent:**
-> Checking subscriptions for Acme Corp... They have 1 active contract: 'Enterprise SaaS Plan' ($12,000/year) expiring on Dec 31, 2026. It is set to auto-renew.
+> Fetching data... Acme Corp currently has a Health Score of 85/100 (Stable). They have 2 active contracts and their primary contact is Sarah Smith. Shall I retrieve their contract details?
 
 ---
 
 **👤 You:**
-> "What are the pending tasks for the 'Global Tech' account?"
+> "List all my customer segments."
 
 **🤖 AI Agent:**
-> Retrieving tasks for Global Tech... There are 3 pending items: 'Quarterly Business Review' (Due tomorrow), 'Update Success Plan', and 'Schedule Training Session'.
+> Retrieving segments... You have 5 segments configured: 'Enterprise', 'Mid-Market', 'SMB', 'Strategic Accounts', and 'Beta Testers'. Which segment would you like to explore?
 
 
 ## ❓ FAQ
 
-**Q: Can I see the health score for a specific client?**
-Yes! Use the `get_client_success_details` tool with the client ID. The agent will return the success score, health status, and other key metrics for that account.
+**Q: Can I check a client's health score via AI?**
+Yes! Use the `get_client_details` tool and provide the Client ID. Your agent will retrieve the current health score, success status, and metadata.
 
-**Q: How do I check the active onboarding cycles for my accounts?**
-Use the `list_client_success_cycles` tool. Your agent will fetch all onboarding and success cycles, allowing you to monitor progress and identify any blocked steps.
+**Q: How do I list all the contracts associated with my clients?**
+Run the `list_contracts` query. The agent will retrieve a history of active and previous service contracts recorded in your ClientSuccess account.
 
-**Q: Where do I find my ClientSuccess API Key?**
-Log in to your ClientSuccess account and navigate to **Global Settings > API**. You can generate and copy your personal API key from that section.
+**Q: Is it possible to see the available customer segments via AI?**
+Absolutely. Use the `list_segments` query. The agent will retrieve the complete list of customer segments used to categorize your client base.
 
 
 ## Installation & Usage

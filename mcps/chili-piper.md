@@ -37,13 +37,13 @@ Connect your **Chili Piper** account to any AI agent and take full control of yo
 
 ## Available Tools (8)
 - **get_chili_account_info**: Retrieve core account and user information
-- **get_meeting_details**: Get detailed information for a specific meeting
 - **get_queue_details**: Get detailed information for a specific queue
 - **list_inbound_routers**: List all inbound routers used for form routing
 - **list_booked_meetings**: List recently booked meetings
+- **list_chili_teams**: List all teams configured in the account
+- **get_meeting_details**: Get detailed information for a specific meeting
 - **list_chili_queues**: List all routing queues
 - **list_meeting_reminders**: List configured meeting reminders and templates
-- **list_chili_teams**: List all teams configured in the account
 
 
 ## 💬 Prompt Examples

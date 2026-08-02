@@ -36,14 +36,14 @@ Connect your **ChargeDesk** account to any AI agent and take full control of you
 
 
 ## Available Tools (8)
+- **list_chargedesk_customers**: List all customers in your account
 - **get_charge_details**: Get detailed information for a specific charge
 - **get_customer_details**: Get detailed information for a specific customer
 - **list_chargedesk_charges**: List recent charges from all gateways
-- **list_chargedesk_customers**: List all customers in your account
-- **list_connected_gateways**: List all connected payment gateways
 - **list_chargedesk_subscriptions**: List active and inactive subscriptions
 - **list_chargedesk_webhooks**: List configured webhooks
 - **refund_chargedesk_payment**: Refund a specific charge
+- **list_connected_gateways**: List all connected payment gateways
 
 
 ## 💬 Prompt Examples

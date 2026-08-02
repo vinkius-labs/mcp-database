@@ -37,8 +37,8 @@ Connect your **Cin7 Omni** account to any AI agent and take full control of your
 
 ## Available Tools (8)
 - **get_sku_stock_level**: Get current stock level for a specific product ID
-- **get_product_details**: Get detailed information for a specific product
 - **get_sales_order_details**: Get detailed information for a specific sales order
+- **get_product_details**: Get detailed information for a specific product
 - **list_cin7_contacts**: List customer and supplier contacts
 - **list_cin7_products**: List products in the inventory
 - **list_purchase_orders**: List purchase orders and inbound shipments

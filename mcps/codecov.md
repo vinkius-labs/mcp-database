@@ -37,13 +37,13 @@ Connect your **Codecov** account to any AI agent and take full control of your t
 
 ## Available Tools (8)
 - **get_commit_coverage_totals**: Retrieve aggregate coverage totals for a specific commit SHA
-- **get_my_codecov_profile**: Retrieve information about the authenticated user
-- **get_repository_coverage_details**: Get detailed coverage information for a specific repository
-- **get_coverage_report_tree**: Retrieve a hierarchical view of the coverage report matching the file structure
 - **list_repository_branches**: List all branches tracked in Codecov
 - **list_repository_commits**: List recent commits and their coverage status
 - **list_coverage_flags**: List all coverage flags defined for a repository
 - **list_codecov_repositories**: List all repositories associated with an owner
+- **get_my_codecov_profile**: Retrieve information about the authenticated user
+- **get_repository_coverage_details**: Get detailed coverage information for a specific repository
+- **get_coverage_report_tree**: Retrieve a hierarchical view of the coverage report matching the file structure
 
 
 ## 💬 Prompt Examples

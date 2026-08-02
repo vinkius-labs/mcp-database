@@ -35,16 +35,16 @@ No manual searches inside cluttered visual portals. Your AI agent digs up the ex
 
 
 ## Available Tools (10)
-- **list_collections**: List all media collections
-- **list_tags**: List all asset tags
-- **get_download_link**: Get a direct download URL for an asset
 - **get_account_usage**: Retrieve account storage and traffic usage
-- **list_assets**: List digital assets from the DAM
-- **get_asset**: Get details of a specific asset
-- **get_collection**: Get details of a specific collection
 - **list_smart_filters**: List configured smart filters
+- **list_tags**: List all asset tags
 - **list_users**: List all portal users
 - **patch_asset_metadata**: Update metadata for an asset
+- **get_download_link**: Get a direct download URL for an asset
+- **list_assets**: List digital assets from the DAM
+- **list_collections**: List all media collections
+- **get_asset**: Get details of a specific asset
+- **get_collection**: Get details of a specific collection
 
 
 ## 💬 Prompt Examples
