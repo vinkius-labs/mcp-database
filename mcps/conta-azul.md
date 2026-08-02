@@ -41,18 +41,18 @@ Connect your **Conta Azul** account to any AI agent and take full control of you
 - **search_customers**: Pesquisar perfis corporativos/fiscais comparando documentos restritos via CPF/CNPJ
 - **create_customer**: Injetar novo registro financeiro PF/PJ definindo estrutura formal dentro do ERP
 - **list_products**: Mapear itens físicos catalogados incluindo valores de SKU extraídos estaticamente
-- **get_product**: Ler dados de um item físico individual incluindo limite e unidade de medida
-- **create_product**: Mapear bens tangíveis definindo novos componentes faturáveis em Real financeiro
 - **list_services**: Ler prestação categorizada cobrável na estrutura contábil faturada paginada
 - **create_service**: Inserir prestação ativa intangível estritamente precificada na contabilidade
 - **list_sales**: Listar logs contínuos extraídos avaliando faturas pendentes emitidas no fluxo
 - **get_sale**: Visualizar blocos confirmados incluindo matrizes exatas contábeis da venda UUID
 - **list_contracts**: Pesquisar recorrências atestando acordos automáticos limitando vencimentos
+- **list_bank_accounts**: Mapear bancos físicos conciliando integração extraindo posições monetárias
+- **get_product**: Ler dados de um item físico individual incluindo limite e unidade de medida
+- **create_product**: Mapear bens tangíveis definindo novos componentes faturáveis em Real financeiro
 - **list_nfe**: Buscar listagem governamental acoplada de emissões NF (Notas de Produto)
 - **list_categories**: g. Despesas, Receitas) que formam a espinha dorsal de DRE validada base ContaAzul.
 
 Determinar limites contábeis de Plano Analítico nativo classificando recursos
-- **list_bank_accounts**: Mapear bancos físicos conciliando integração extraindo posições monetárias
 
 
 ## 💬 Prompt Examples

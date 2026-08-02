@@ -36,8 +36,8 @@ Connect your **CoderPad** account to any AI agent and take full control of your 
 
 
 ## Available Tools (8)
-- **create_new_interview_pad**: Create a new live collaborative coding pad
 - **get_my_coderpad_profile**: Retrieve information about the authenticated user
+- **create_new_interview_pad**: Create a new live collaborative coding pad
 - **get_pad_event_log**: Retrieve a play-by-play log of all actions in a specific pad
 - **get_pad_session_details**: Get detailed information for a specific pad, including current code contents
 - **list_coderpad_org_users**: List all users and interviewers in the organization account

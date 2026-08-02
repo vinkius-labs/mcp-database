@@ -32,14 +32,14 @@ Connect your AI to **Coalesce**, the data transformation platform built for Snow
 
 
 ## Available Tools (8)
+- **trigger_job**: Trigger a specific job in an environment
+- **trigger_run**: Trigger a new run for a specific environment and optionally a job
 - **get_environment**: Retrieve detailed information about a specific environment
 - **get_job_details**: Retrieve detailed information about a specific job
 - **get_run_status**: Check the current status and progress of a triggered run
 - **list_environments**: Retrieve all environments configured in your Coalesce organization
 - **list_jobs**: Retrieve a list of jobs, optionally filtered by environment
 - **list_nodes**: Retrieve metadata about transformation nodes in a specific environment
-- **trigger_job**: Trigger a specific job in an environment
-- **trigger_run**: Trigger a new run for a specific environment and optionally a job
 
 
 ## 💬 Prompt Examples

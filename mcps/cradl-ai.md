@@ -33,9 +33,6 @@ Integrate **Cradl AI**, the advanced document data extraction platform, directly
 
 
 ## Available Tools (10)
-- **extract_data_from_url**: Touches OCR engine, model prediction, and data normalization boundary.
-
-Trigger a new data extraction prediction from a file URL
 - **get_batch_details**: Touches individual file statuses and batch-level processing summary boundaries.
 
 Get details for a specific batch of documents
@@ -51,9 +48,6 @@ Check the status and results of a document task
 - **list_batches**: Resolves batch identifiers, creation dates, and total document counts within each batch.
 
 List all document batches
-- **list_workflows**: Resolves flow IDs, triggers, and configured processing steps.
-
-List all document processing flows
 - **list_extraction_models**: Resolves model names, versions, and training statuses for document analysis.
 
 List all data extraction models in Cradl AI
@@ -63,6 +57,12 @@ List recent document processing tasks
 - **search_models_by_name**: Resolves model metadata based on a name keyword search.
 
 Search for extraction models by name
+- **extract_data_from_url**: Touches OCR engine, model prediction, and data normalization boundary.
+
+Trigger a new data extraction prediction from a file URL
+- **list_workflows**: Resolves flow IDs, triggers, and configured processing steps.
+
+List all document processing flows
 
 
 ## 💬 Prompt Examples

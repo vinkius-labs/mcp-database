@@ -36,11 +36,6 @@ Connect your **DealHub** account to any AI agent and take full control of your C
 
 
 ## Available Tools (10)
-- **create_opportunity**: Provision a highly-available JSON Payload generating hard Customer bindings
-- **create_quote**: 1/quote/create` generating a fresh CPQ sequence linked to a native CRM block.
-
-Identify bounded CRM records inside the Headless DealHub Platform
-- **get_opportunity**: Dispatch an automated validation check routing explicit Gateway history
 - **get_quote_status**: Retrieve explicit Cloud logging tracing explicit Vault limits
 - **list_opportunities**: Enumerate explicitly attached structured rules exporting active Billing
 - **list_quotes**: Identify precise active arrays spanning native Gateway auth
@@ -48,6 +43,11 @@ Identify bounded CRM records inside the Headless DealHub Platform
 - **open_quote**: Perform structural extraction of properties driving active Account logic
 - **sync_crm**: Irreversibly vaporize explicit validations extracting rich Churn flags
 - **update_opportunity**: Inspect deep internal arrays mitigating specific Plan Math
+- **create_opportunity**: Provision a highly-available JSON Payload generating hard Customer bindings
+- **create_quote**: 1/quote/create` generating a fresh CPQ sequence linked to a native CRM block.
+
+Identify bounded CRM records inside the Headless DealHub Platform
+- **get_opportunity**: Dispatch an automated validation check routing explicit Gateway history
 
 
 ## 💬 Prompt Examples

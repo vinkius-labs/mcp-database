@@ -37,11 +37,11 @@ Connect your **Classy.org (GoFundMe Pro)** account to any AI agent and take full
 
 ## Available Tools (8)
 - **get_activity_feed**: Retrieve a feed of recent interactions (donations, registrations)
+- **list_classy_members**: List community members and supporters
 - **get_campaign_details**: Get detailed information for a specific campaign
 - **list_fundraising_campaigns**: List all fundraising campaigns
 - **list_individual_fundraising_pages**: List individual supporter fundraising pages
 - **list_fundraising_teams**: List team-based fundraising pages
-- **list_classy_members**: List community members and supporters
 - **list_classy_organizations**: Retrieve organization data and settings
 - **list_donation_transactions**: List recent donation and registration transactions
 

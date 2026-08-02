@@ -45,12 +45,6 @@ Get full details for a specific sales invoice
 - **get_site_metadata**: Resolves site identifiers and organizational settings. Interacts with the system configuration boundary.
 
 Retrieve general settings and metadata for your Daftra site
-- **list_clients**: Resolves client IDs, business names, and contact emails. Interacts with the client management boundary.
-
-List all clients in your Daftra account
-- **list_estimates**: Resolves estimate IDs, dates, and amounts. Interacts with the sales pipeline and quoting boundary.
-
-List all price estimates and quotes
 - **list_expenses**: Resolves expense IDs, categories, and amounts. Touches the accounting and expense tracking boundary.
 
 List all recorded business expenses
@@ -63,6 +57,12 @@ List all products and services in the inventory
 - **search_clients_by_name**: Resolves matching client profiles. Touches the search and discovery boundary.
 
 Search for a client by name keyword
+- **list_clients**: Resolves client IDs, business names, and contact emails. Interacts with the client management boundary.
+
+List all clients in your Daftra account
+- **list_estimates**: Resolves estimate IDs, dates, and amounts. Interacts with the sales pipeline and quoting boundary.
+
+List all price estimates and quotes
 
 
 ## 💬 Prompt Examples

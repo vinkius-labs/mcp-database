@@ -5,64 +5,44 @@
 
 ## Overview
 
-**Category:** [customer-support](../categories/customer-support.md)
+**Category:** [productivity](../categories/productivity.md)
 
-Equip your AI agent to manage customer success, monitor health scores, and track churn probability directly via the Custify API.
+Predict and prevent customer churn with health scores, lifecycle tracking, and automated playbooks for your CS team.
 
 ## Description
-Integrate **Custify**, the comprehensive customer success platform, directly into your AI workflow. Monitor customer health, track churn risks, and manage your success tasks and notes using natural language.
+Connect your **Custify** customer success account to any AI agent and simplify how you manage your product users, track account health, and monitor churn risk through natural conversation.
 
 ### What you can do
 
-- **Customer Oversight** — List and retrieve detailed profiles, health scores, and churn probabilities for all customers.
-- **Company Monitoring** — Access company-level metrics and success data to manage B2B relationships effectively.
-- **Success Task Management** — List and track open tasks and internal CRM notes for your accounts.
-- **KPI Discovery** — Explore key performance indicators and metrics defined in your Custify account.
+- **User & Company Oversight** — List all managed people and organizations and retrieve detailed metadata and health scores.
+- **Health Monitoring** — Query health score metrics and values to identify at-risk customers and churn signals instantly.
+- **Event Tracking** — Record custom user actions and events programmatically to feed your success analytics.
+- **Segment Analysis** — List and query defined customer segments to understand your user distribution.
+- **CRM Control** — Create new person records and update profile data directly via AI commands.
+- **Engagement Insights** — Fetch engagement history and metadata for individual accounts directly from the agent.
 
 ### How it works
 
-1. Connect the Custify integration to your AI assistant.
-2. Authorize using your Custify API Key (found in Settings > API).
-3. Optimize your customer success operations through intuitive conversation.
+1. Subscribe to this server
+2. Enter your Custify API Key (found in your account settings)
+3. Start managing your customer success lifecycle from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **Customer Success Managers** — Quickly check account health and churn risk on the go.
-- **Account Executives** — Retrieve company metrics and recent notes during client reviews.
-- **Success Operations** — Audit tasks and KPIs across all customer segments via chat.
+- **Customer Success Managers (CSMs)** — quickly check account health and track recent user events via simple AI queries.
+- **Success Operations** — monitor segment distributions and verify company metadata directly from the workspace.
+- **Product Teams** — track custom feature adoption events and monitor user profile quality via the AI assistant.
 
 
-## Available Tools (10)
-- **create_customer_profile**: Resolves the newly generated customer ID and validation status. Mutates the customer database state.
-
-Create a new customer profile in Custify
-- **get_company_details**: Resolves organizational attributes and health metrics. Touches the core company repository.
-
-Get detailed settings and metrics for a specific company
-- **get_customer_details**: Resolves health scores, recent activity, and segment membership. Interacts with the behavioral analytics boundary.
-
-Get full profile and health metrics for a specific customer
-- **list_companies**: Resolves company IDs, domain information, and association metrics. Touches the account-level organization boundary.
-
-List all companies in Custify
-- **list_customers**: Resolves properties such as customer ID, name, email, and lifecycle stage. Interacts with the customer success management boundary.
-
-List all customers in Custify
-- **list_customer_kpis**: Resolves metric definitions and threshold values. Interacts with the performance monitoring boundary.
-
-List key performance indicators defined in the account
-- **list_customer_notes**: Resolves note content and authorship metadata. Touches the internal communications boundary.
-
-List internal CRM notes for a specific customer
-- **list_people**: Resolves contact details and account associations. Touches the relationship management boundary.
-
-List all people associated with accounts
-- **list_customer_success_tasks**: Resolves task priority, status, and assigned owners. Interacts with the workflow automation boundary.
-
-List open and completed customer success tasks
-- **search_customers_by_keyword**: Resolves matching customer profiles based on name or email. Touches the search and indexing boundary.
-
-Search for customers by name or email
+## Available Tools (8)
+- **get_company_details**: Get details for a specific company
+- **create_person**: Create a new person record
+- **get_person_details**: Get details for a specific person
+- **list_companies**: List customer companies
+- **list_health_scores**: List customer health scores
+- **list_user_segments**: List user segments
+- **track_user_event**: Track a custom event
+- **list_people**: List product users (people)
 
 
 ## 💬 Prompt Examples
@@ -70,38 +50,38 @@ Search for customers by name or email
 Here are some examples of how you can interact with the **Custify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all customers with a health score below 50."
+> "List all active companies in my Custify account."
 
 **🤖 AI Agent:**
-> I've found 8 customers with a health score below 50, including 'Alpha Corp' (Health: 35) and 'Beta Inc' (Health: 42). Both show a high probability of churn. Would you like to see their recent notes?
+> I've retrieved your companies list. You have 25 managed accounts including 'Acme Corp', 'Tech Giant', and 'Global Logistics'. Which one would you like to see the health score for?
 
 ---
 
 **👤 You:**
-> "Show me the success tasks for company 'Alpha Corp'."
+> "Show me the details and health for person 'john.doe@example.com'."
 
 **🤖 AI Agent:**
-> For 'Alpha Corp', there are 3 open tasks: 'Schedule Q2 Review', 'Update Technical Contact', and 'Follow up on support ticket #123'. One task is overdue. Should I assign these to a specific team member?
+> Fetching profile... John Doe currently has a Health Score of 92/100 (Healthy). His last recorded event was 'Feature X Usage' 2 hours ago. Would you like to see his full engagement history?
 
 ---
 
 **👤 You:**
-> "Search for customer 'john.doe@example.com'."
+> "Track a 'Button Clicked' event for user 'user_88231'."
 
 **🤖 AI Agent:**
-> I found John Doe (john.doe@example.com). He is associated with 'Global Logistics' and has a health score of 82. His churn probability is very low (2%). Would you like to see his full activity history?
+> Event tracked! I've recorded the 'Button Clicked' action for user user_88231 in Custify. This data will be used to update their health score and engagement metrics.
 
 
 ## ❓ FAQ
 
-**Q: How do I get a Custify API Key?**
-Log in to your Custify account, navigate to **Settings > API**, and you will find your API Key there. Ensure you have the necessary permissions to manage customer data.
+**Q: Can I check the health score of a company via AI?**
+Yes! Use the `get_company_details` tool and provide the Company ID. Your agent will retrieve the current health score, risk status, and account metadata.
 
-**Q: Can the agent update health scores?**
-This integration currently focuses on listing and retrieving data. Health scores are typically calculated automatically by Custify based on usage and interaction data.
+**Q: How do I track a custom user event using the agent?**
+Use the `track_user_event` action. Provide the User ID and the Event Name. You can also pass a JSON object with additional attributes for the action.
 
-**Q: Does Custify support B2B company tracking?**
-Yes, Custify allows you to track both individual customers and company-level entities, which is fully supported by this integration.
+**Q: Is it possible to see my defined customer segments via AI?**
+Absolutely. Use the `list_user_segments` query. The agent will retrieve the complete list of segments configured in your Custify account.
 
 
 ## Installation & Usage

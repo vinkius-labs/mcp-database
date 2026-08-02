@@ -40,14 +40,14 @@ Connect your **Contentsquare** account to any AI agent and take full control of 
 - **get_metrics**: Retrieve explicit UX logging tracing explicit bounce / engagement metrics
 - **list_segments**: Provision highly-available JSON arrays holding demographic limits
 - **list_mappings**: Discover explicit routing trees structuring specific URL paths
-- **list_zonings**: Inspect deep internal interaction arrays mitigating specific Click tracking constraints
-- **create_export_job**: Dispatch an automated validation check routing Raw Data Pipeline chunks
 - **get_export_job**: Validate Data Science object extraction execution state queues
 - **list_export_jobs**: Perform structural log extraction matching asynchronous Raw export payloads
 - **get_page_metrics**: Execute static generation targeting exactly formatted URL statistical bodies
 - **enrich_session**: g. Sales, Contact logs) binding native JSON payloads executing directly towards session arrays.
 
-Mutate global Web CRM boundaries appending headless Offline attributes to live sessions
+Mutate globalThis Web CRM boundaries appending headless Offline attributes to live sessions
+- **list_zonings**: Inspect deep internal interaction arrays mitigating specific Click tracking constraints
+- **create_export_job**: Dispatch an automated validation check routing Raw Data Pipeline chunks
 
 
 ## 💬 Prompt Examples

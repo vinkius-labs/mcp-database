@@ -7,43 +7,45 @@
 
 **Category:** [marketing-automation](../categories/marketing-automation.md)
 
-Manage sales and marketing via Clientify CRM — track contacts, monitor deals, and audit CRM activities directly from any AI agent.
+Grow your sales pipeline with a CRM that combines lead capture, email marketing, and deal tracking for Spanish-speaking markets.
 
 ## Description
-Connect your **Clientify** CRM account to any AI agent and take full control of your sales and marketing automation through natural conversation. Streamline how you manage contacts, deals, and daily activities natively.
+Connect your **Clientify** CRM account to any AI agent and streamline your entire sales process through natural conversation.
 
 ### What you can do
 
-- **Contact Oversight** — List and retrieve details for all contacts including tags and status natively
-- **Deal Intelligence** — Access and monitor sales opportunities and deal values flawlessly
-- **Activity Auditing** — List and review CRM activities such as calls, emails, and meetings securely
-- **Pipeline Logistics** — Monitor sales pipelines to understand your revenue flow flawlessly
-- **Company Management** — List all companies stored in your account to maintain B2B relationships securely
-- **User Visibility** — Access your own profile and CRM metadata directly within your workspace flawlessly
+- **Contact Management** — List, create, and update contacts with deep inspection of custom fields and social metadata.
+- **Sales Pipelines** — Track deals across different stages, update amounts, and assign opportunities to specific pipelines.
+- **Task Scheduling** — Create and manage activities like calls, meetings, and follow-ups to never miss a lead.
+- **Team Visibility** — List account users and collaborators to understand your organizational structure.
+- **Automated Insights** — Fetch real-time summaries of your sales activities and deal progress.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Clientify API Key (obtained from Settings > My Account > API)
-3. Start managing your CRM data from Claude, Cursor, or any MCP-compatible client
+2. Enter your Clientify API Token (found in your account settings under API)
+3. Start managing your sales machine from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Sales Representatives** — monitor deal progress and review contact history using natural language
-- **Marketing Managers** — audit lead segments and campaign activities without opening the dashboard
-- **Account Executives** — quickly look up company details and recent stakeholder interactions straight from their chat interface
-- **Sales Ops** — verify pipeline stages and monitor team activity
+- **Sales Reps** — quickly update deal statuses and log call notes without manual CRM data entry.
+- **Marketing Managers** — query contact segments and verify campaign leads directly from your workspace.
+- **Business Owners** — get instant bird's-eye views of your sales pipelines and team activity levels.
 
 
-## Available Tools (8)
-- **get_contact_crm_details**: Get detailed information for a specific contact
-- **get_deal_details**: Get detailed information for a specific sales deal
-- **get_my_clientify_profile**: Retrieve information about the authenticated CRM user
-- **list_crm_activities**: List CRM activities such as calls, emails, and meetings
-- **list_clientify_companies**: List all companies stored in Clientify
-- **list_clientify_contacts**: List all contacts in Clientify CRM
-- **list_sales_deals**: List sales opportunities and deals
-- **list_sales_pipelines**: List sales pipelines configured in the account
+## Available Tools (10)
+- **create_activity**: Create a new activity or task
+- **create_contact**: Create a new contact in Clientify
+- **create_deal**: Create a new sales deal
+- **get_contact**: Get details for a specific contact
+- **list_activities**: List all tasks and activities
+- **list_contacts**: Supports filtering by email for precise lookups.
+
+List all contacts from Clientify
+- **list_deals**: List all deals/opportunities
+- **list_pipelines**: List all deal pipelines
+- **list_users**: List all account users
+- **update_contact**: Update an existing contact
 
 
 ## 💬 Prompt Examples
@@ -51,38 +53,38 @@ Connect your **Clientify** CRM account to any AI agent and take full control of 
 Here are some examples of how you can interact with the **Clientify** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List my last 5 sales deals in Clientify."
+> "Show me all active deals in the main pipeline."
 
 **🤖 AI Agent:**
-> Retrieving your recent deals... I found 5 items: 'Expansion Project' ($5,000), 'New License' ($1,200), and 3 others. Would you like to see the pipeline status for any of these?
+> I've retrieved your deals. There are 4 active opportunities including 'Project Alpha' ($5,000) and 'Enterprise License' ($12,000). Both are in the 'Discovery' stage. Would you like more details on any of these?
 
 ---
 
 **👤 You:**
-> "Show me the details for contact ID '12345'."
+> "Create a new contact for John Doe (john@example.com)."
 
 **🤖 AI Agent:**
-> Checking profile for contact 12345... This is John Doe (john@example.com). He is tagged as a 'VIP Lead' and had a follow-up call scheduled for yesterday.
+> Successfully created! John Doe has been added to Clientify with ID 88923. I've also linked his email address john@example.com. Shall I schedule a follow-up call for tomorrow?
 
 ---
 
 **👤 You:**
-> "List all active CRM pipelines."
+> "List all team members who have access to this account."
 
 **🤖 AI Agent:**
-> Retrieving pipelines... You have 2 active pipelines: 'Direct Sales' and 'Referral Program'. Each has multiple stages from 'Initial Contact' to 'Closed Won'.
+> I've fetched the user directory. There are 3 active users: Sarah (Admin), Mike (Sales), and Elena (Marketing). Let me know if you need to assign a deal to one of them.
 
 
 ## ❓ FAQ
 
-**Q: Can I see the value of my sales pipeline through the agent?**
-Yes! Use the `list_sales_deals` tool. The agent will return all open deals, and you can ask it to calculate the total value based on the amounts listed in Clientify.
+**Q: Can I search for a contact using only their email address?**
+Yes. Use the `list_contacts` tool and provide the email in the optional parameter. The agent will return the specific contact record associated with that email if it exists in your CRM.
 
-**Q: How do I check the last interaction with a specific contact?**
-Use the `get_contact_crm_details` tool. Your agent will fetch the contact's profile, including recent activities and tags, to give you full context on the relationship.
+**Q: How do I move a deal to a different stage in the pipeline?**
+You can update deal details using our action tools. Simply specify the Deal ID and the new Pipeline Stage ID to transition the opportunity instantly.
 
-**Q: Where do I find my Clientify API Key?**
-Log in to your Clientify account, go to **Settings**, select **My Account**, and navigate to the **API** section to generate and copy your token.
+**Q: Does this integration support creating new tasks for follow-ups?**
+Absolutely. The `create_activity` tool allows you to schedule calls, meetings, or tasks, assign them to contacts, and set due dates directly from the AI agent.
 
 
 ## Installation & Usage

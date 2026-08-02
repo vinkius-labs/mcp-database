@@ -28,12 +28,12 @@ Retrieve a list of calls from CloudTalk
 - **list_contacts**: Supports pagination and filtering by email or phone number.
 
 Retrieve a list of contacts from CloudTalk
-- **make_call**: Provide the from/to numbers.
-
-Initiate a phone call between an agent and a destination number
 - **update_contact**: Provide the contactId and any fields to update.
 
 Update an existing contact in CloudTalk
+- **make_call**: Provide the from/to numbers.
+
+Initiate a phone call between an agent and a destination number
 
 
 ## 💬 Prompt Examples

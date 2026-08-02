@@ -33,10 +33,11 @@ Integrate **Design Pickle**, the world's leading unlimited graphic design servic
 
 
 ## Available Tools (10)
-- **complete_design_request**: Mark a design request as complete
 - **create_design_request**: Pass request data as a JSON string containing request_type_id, directions, and optional file_formats.
 
 Create a new design request
+- **cancel_design_request**: Cancel a design request that is in a cancellable status
+- **complete_design_request**: Mark a design request as complete
 - **get_design_request_details**: Get detailed information for a specific design request
 - **get_request_type_details**: Get details for a specific request type
 - **list_brands**: List all brands configured for your designs
@@ -48,7 +49,6 @@ List all graphic design requests in your Design Pickle account
 - **update_design_request**: Pass update data as a JSON string.
 
 Update an existing design request
-- **cancel_design_request**: Cancel a design request that is in a cancellable status
 
 
 ## 💬 Prompt Examples

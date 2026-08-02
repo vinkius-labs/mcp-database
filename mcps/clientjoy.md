@@ -7,43 +7,41 @@
 
 **Category:** [customer-relationship-management](../categories/customer-relationship-management.md)
 
-Manage agency CRM and invoicing via Clientjoy — track leads, monitor invoices, and manage client projects directly from any AI agent.
+Manage your entire client lifecycle from proposals and contracts through invoicing and payments in one streamlined platform.
 
 ## Description
-Connect your **Clientjoy** account to any AI agent and take full control of your agency operations through natural conversation. Streamline how you manage the entire lifecycle from lead capture to final invoicing natively.
+Connect your **Clientjoy** CRM and billing account to any AI agent and simplify how you coordinate your sales pipeline, client directory, and invoicing through natural conversation.
 
 ### What you can do
 
-- **Lead Oversight** — List and retrieve details for all sales leads and their capture status natively
-- **Contact Intelligence** — Access and monitor all client contacts and relationship history flawlessly
-- **Invoicing Logistics** — List all agency invoices and monitor their payment status flawlessly
-- **Project Management** — Access and monitor all client projects and their constituent tasks securely
-- **Sales Pipelines** — List and review quotes and proposals sent to potential clients flawlessly
-- **Profile Visibility** — Access your own user profile and core workspace metadata directly within your workspace flawlessly
+- **Lead Management** — List and query potential sales leads, and create new prospect profiles programmatically via AI.
+- **Client CRM** — List all customer organizations and retrieve detailed metadata, contact info, and transaction histories.
+- **Billing Oversight** — List and monitor generated invoices and their payment status to keep your finances organized.
+- **Sales Proposals** — Query your catalog of sent and drafted proposals to track your business development efforts.
+- **Service Catalog** — List available products and services defined in your account to verify pricing and offerings.
+- **Lifecycle Control** — Manage the entire journey from lead to paid customer directly from Claude, Cursor, or any MCP client.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Clientjoy API Token (obtained from Settings > API)
-3. Start managing your agency CRM from Claude, Cursor, or any MCP-compatible client
+2. Enter your Clientjoy API Token (found in your account settings under API)
+3. Start managing your business ecosystem from your favorite AI assistant
 
 ### Who is this for?
 
-- **Agency Owners** — monitor sales pipelines and revenue status using natural language
-- **Project Managers** — audit project progress and task lists without opening the dashboard
-- **Accountants** — quickly look up invoice status and payment history straight from their chat interface
-- **Sales Teams** — verify lead profiles and proposal statuses
+- **Agency Owners & Freelancers** — quickly retrieve client details and check invoice statuses via simple AI commands.
+- **Sales & BD Teams** — monitor lead progress and verify proposal availability directly from the workspace.
+- **Ops & Finance Leads** — track received payments and manage the service directory via the AI assistant.
 
 
-## Available Tools (8)
-- **get_contact_crm_details**: Get detailed information for a specific contact
-- **get_lead_crm_details**: Get detailed information for a specific lead
-- **get_my_clientjoy_profile**: Retrieve information about the authenticated workspace user
-- **list_clientjoy_contacts**: List all contacts and clients stored in the CRM
-- **list_agency_invoices**: List all invoices and their payment status
-- **list_clientjoy_leads**: List all sales leads captured in Clientjoy
-- **list_agency_projects**: List all client projects tracked in Clientjoy
-- **list_sales_quotes**: List sales quotes and proposals sent to clients
+## Available Tools (7)
+- **create_new_lead**: Register a new lead
+- **get_customer_details**: Get details for a specific customer
+- **list_billing_invoices**: List invoices
+- **list_service_items**: List items and services
+- **list_leads**: List Clientjoy leads
+- **list_sales_proposals**: List proposals
+- **list_customers**: List Clientjoy customers
 
 
 ## 💬 Prompt Examples
@@ -51,38 +49,38 @@ Connect your **Clientjoy** account to any AI agent and take full control of your
 Here are some examples of how you can interact with the **Clientjoy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my new leads in Clientjoy."
+> "List all active leads in my Clientjoy account."
 
 **🤖 AI Agent:**
-> Retrieving your leads... I found 5 items: John Doe (Qualified), Jane Smith (New), Mike Scott (Interested), and 2 others. Would you like the details for the new lead?
+> I've retrieved your sales pipeline. You have 3 active leads: 'Acme Corp Expansion', 'New Retail Project', and 'Tech Solutions Lead'. Which one would you like more details on?
 
 ---
 
 **👤 You:**
-> "Show me my unpaid invoices."
+> "Show me the details for customer 'John Miller' (ID: 10293)."
 
 **🤖 AI Agent:**
-> Checking invoices... You have 3 unpaid invoices: #INV-101 ($1,200), #INV-105 ($450), and #INV-108 ($2,100). The first two are currently overdue.
+> Fetching profile... John Miller is a 'VIP Client' from 'Miller Industries'. He has 2 paid invoices and 1 active proposal. Would you like to see his full transaction history?
 
 ---
 
 **👤 You:**
-> "What is the status of the 'Website Redesign' project?"
+> "Are there any overdue invoices?"
 
 **🤖 AI Agent:**
-> Checking projects... The 'Website Redesign' project for Acme Corp is 'In Progress'. It has 12 completed tasks and 5 pending items.
+> Checking billing... Yes, you have 1 overdue invoice: #INV-88231 ($450.00) from 'Global Logistics'. It was due 5 days ago. Shall I retrieve the contact info for follow-up?
 
 
 ## ❓ FAQ
 
-**Q: Can I see which invoices are still unpaid?**
-Yes! Use the `list_agency_invoices` tool. The agent will return all invoices, and you can ask it to filter for those with an 'Unpaid' or 'Overdue' status.
+**Q: Can I check the payment status of an invoice via AI?**
+Yes! Use the `list_billing_invoices` tool. Your agent will retrieve the history of invoices, including whether they are Paid, Overdue, or Unpaid.
 
-**Q: How do I check the status of a specific sales proposal?**
-Use the `list_sales_quotes` tool. Your agent will fetch all quotes and proposals, showing their current status (e.g., Sent, Viewed, Accepted).
+**Q: How do I add a new sales lead using the agent?**
+Use the `create_new_lead` action. Provide the lead's name and email address to register them instantly in your Clientjoy sales pipeline.
 
-**Q: Where do I find my Clientjoy API Token?**
-Log in to your Clientjoy account, navigate to **Settings**, and select **API**. You can generate and copy your API token from that section.
+**Q: Is it possible to list all my active customers via AI?**
+Absolutely. Use the `list_customers` query. The agent will retrieve the complete directory of organizations and clients managed in your account.
 
 
 ## Installation & Usage

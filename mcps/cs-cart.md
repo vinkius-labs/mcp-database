@@ -39,33 +39,33 @@ Connect your **CS-Cart** or **Multi-Vendor** store to any AI agent and take full
 - **list_products**: Resolves product IDs, names, prices, stock levels, and associated vendor identifiers.
 
 List CS-Cart products. CS-Cart is a popular multi-vendor B2B/B2C marketplace platform
-- **get_product**: Touches feature combinations, tax rules, delivery options, and multi-vendor pricing boundary data.
-
-Get CS-Cart product by ID. Returns full details: price, features, options
 - **list_orders**: Resolves order totals, payment statuses, shipping methods, and timestamps for recent transactions.
 
 List CS-Cart orders. Returns order details, totals, statuses, and vendor mappings
 - **get_order**: Touches line-item details, applied taxes, shipping costs, and customer billing boundary data.
 
 Get CS-Cart order by ID. Returns line items, billing/shipping addresses
-- **list_users**: Resolves user roles (Customer, Admin, Vendor), email addresses, and account creation dates.
-
-List CS-Cart users/customers
 - **list_categories**: Resolves category names, IDs, parent-child relationships, and SEO identifiers.
 
 List CS-Cart product categories
 - **list_vendors**: Resolves vendor names, company profiles, contact info, and current status boundaries.
 
 List CS-Cart vendors/companies (for Multi-Vendor edition)
-- **list_shippings**: Resolves shipping carrier names, configured rates, and supported delivery regions.
-
-List CS-Cart shipping methods
 - **list_taxes**: Resolves tax names, percentage rates, and geographic application rules boundary data.
 
 List CS-Cart tax rules and rates
 - **list_statuses**: Resolves human-readable status names and their internal system codes.
 
 List CS-Cart order statuses
+- **get_product**: Touches feature combinations, tax rules, delivery options, and multi-vendor pricing boundary data.
+
+Get CS-Cart product by ID. Returns full details: price, features, options
+- **list_users**: Resolves user roles (Customer, Admin, Vendor), email addresses, and account creation dates.
+
+List CS-Cart users/customers
+- **list_shippings**: Resolves shipping carrier names, configured rates, and supported delivery regions.
+
+List CS-Cart shipping methods
 
 
 ## 💬 Prompt Examples

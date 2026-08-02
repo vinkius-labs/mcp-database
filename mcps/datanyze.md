@@ -33,18 +33,6 @@ Integrate **Datanyze**, the leader in technographics and B2B intelligence, direc
 
 
 ## Available Tools (10)
-- **get_domain_contacts**: Resolves individual profiles including job titles, departments, and professional social links for identified decision-makers.
-
-List key decision-makers and contact profiles for a domain
-- **get_api_credit_balance**: Check your remaining Datanyze API credits
-- **get_domain_intelligence**: Returns a comprehensive profile including active software stacks, website metadata, and organizational technographic attributes.
-
-Retrieve technographics and metadata for a specific domain
-- **quick_tech_audit**: Identify core technologies used by a domain
-- **get_domain_traffic_rank**: Retrieve the global traffic rank for a specific domain
-- **list_technology_customers**: Returns a list of company domains currently identified as users of the specified platform.
-
-List companies currently using a specific technology ID
 - **list_industry_sectors**: List all industry categories available for filtering
 - **list_competitor_domains**: Returns a list of domains sharing similar technographic profiles or industry characteristics.
 
@@ -55,6 +43,18 @@ List all software technologies and platforms tracked by Datanyze
 - **search_b2b_companies**: Matches query terms against company names, industry sectors, and descriptive metadata to return a list of matching organizational entities.
 
 Search for companies matching a specific keyword or industry
+- **get_domain_contacts**: Resolves individual profiles including job titles, departments, and professional social links for identified decision-makers.
+
+List key decision-makers and contact profiles for a domain
+- **get_api_credit_balance**: Check your remaining Datanyze API credits
+- **get_domain_intelligence**: Returns a comprehensive profile including active software stacks, website metadata, and organizational technographic attributes.
+
+Retrieve technographics and metadata for a specific domain
+- **quick_tech_audit**: Identify core technologies used by a domain
+- **get_domain_traffic_rank**: Retrieve the globalThis traffic rank for a specific domain
+- **list_technology_customers**: Returns a list of company domains currently identified as users of the specified platform.
+
+List companies currently using a specific technology ID
 
 
 ## 💬 Prompt Examples

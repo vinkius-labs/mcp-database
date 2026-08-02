@@ -37,10 +37,10 @@ Connect your **ClearSale** account to any AI agent and take full control of your
 
 ## Available Tools (5)
 - **get_clearsale_account_info**: Retrieve core account connectivity information
-- **get_order_fraud_status**: Retrieve the current fraud analysis status for an order
-- **list_recent_fraud_analyses**: List recently analyzed orders
 - **submit_order_fraud_analysis**: Submit an order for real-time fraud analysis
 - **update_clearsale_order_status**: Update the status of an order in ClearSale (e.g. Cancelled, Approved)
+- **get_order_fraud_status**: Retrieve the current fraud analysis status for an order
+- **list_recent_fraud_analyses**: List recently analyzed orders
 
 
 ## 💬 Prompt Examples
