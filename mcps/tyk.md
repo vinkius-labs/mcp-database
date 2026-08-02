@@ -34,24 +34,9 @@ Connect your **Tyk** instance to any AI agent to streamline your API management 
 
 
 ## Available Tools (12)
-- **create_api_definition**: Requires TYK_DASHBOARD_TOKEN.
-
-Create a new API definition
-- **create_key**: Requires TYK_GATEWAY_SECRET.
-
-Create a new API key (Session Object)
 - **create_org_key**: Requires TYK_ADMIN_SECRET.
 
 Create an organization key
-- **get_policy**: Requires TYK_GATEWAY_SECRET.
-
-Get details of a single policy
-- **hot_reload**: Requires TYK_GATEWAY_SECRET.
-
-Force Gateway hot reload
-- **create_policy**: Requires TYK_GATEWAY_SECRET.
-
-Create a new security policy
 - **delete_key**: Requires TYK_GATEWAY_SECRET.
 
 Delete an API key
@@ -70,6 +55,21 @@ Update an existing API key
 - **update_policy**: Requires TYK_GATEWAY_SECRET.
 
 Update an existing policy
+- **create_api_definition**: Requires TYK_DASHBOARD_TOKEN.
+
+Create a new API definition
+- **create_key**: Requires TYK_GATEWAY_SECRET.
+
+Create a new API key (Session Object)
+- **get_policy**: Requires TYK_GATEWAY_SECRET.
+
+Get details of a single policy
+- **hot_reload**: Requires TYK_GATEWAY_SECRET.
+
+Force Gateway hot reload
+- **create_policy**: Requires TYK_GATEWAY_SECRET.
+
+Create a new security policy
 
 
 ## 💬 Prompt Examples

@@ -23,7 +23,7 @@ This MCP delegates the vector math to `ml-distance` locally, allowing the AI to 
 
 
 ## Available Tools (1)
-- **distance_metrics_calculate**: Calculate exact distances (Cosine, Euclidean, Manhattan) between high-dimensional vectors/embeddings offline
+- **calculate_distance**: Calculate exact distances (Cosine, Euclidean, Manhattan) between high-dimensional vectors/embeddings offline
 
 
 ## 💬 Prompt Examples

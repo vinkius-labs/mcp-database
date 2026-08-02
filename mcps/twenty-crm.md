@@ -34,31 +34,31 @@ Connect your **Twenty CRM** account to any AI agent and take full control of you
 
 
 ## Available Tools (25)
+- **create_opportunity**: Create a new opportunity
+- **create_person**: Create a new person
+- **delete_person**: Delete a person
+- **list_tasks**: List tasks in Twenty CRM
 - **update_person**: Update an existing person
+- **create_note**: Create a new note
+- **get_person**: Get a specific person by ID
+- **get_task**: Get a specific task by ID
+- **list_people**: List people in Twenty CRM
 - **update_task**: Update an existing task
 - **get_company**: Get a specific company by ID
 - **get_note**: Get a specific note by ID
 - **get_opportunity**: Get a specific opportunity by ID
-- **get_person**: Get a specific person by ID
-- **get_task**: Get a specific task by ID
 - **list_companies**: List companies in Twenty CRM
 - **list_notes**: List notes in Twenty CRM
 - **list_opportunities**: List opportunities in Twenty CRM
-- **list_people**: List people in Twenty CRM
-- **list_tasks**: List tasks in Twenty CRM
 - **update_company**: Update an existing company
 - **update_note**: Update an existing note
 - **update_opportunity**: Update an existing opportunity
-- **create_opportunity**: Create a new opportunity
-- **create_person**: Create a new person
 - **create_task**: Create a new task
 - **delete_company**: Delete a company
 - **delete_note**: Delete a note
 - **delete_opportunity**: Delete an opportunity
-- **delete_person**: Delete a person
 - **delete_task**: Delete a task
 - **create_company**: Create a new company
-- **create_note**: Create a new note
 
 
 ## 💬 Prompt Examples

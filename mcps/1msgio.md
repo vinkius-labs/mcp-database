@@ -38,19 +38,19 @@ Transform your **1msg.io** instance into a conversational powerhouse for your AI
 - **send_message**: Requires a recipient phone number and the message body. Do not use for media or templates.
 
 Send a simple WhatsApp text message
-- **send_file**: Optionally supports a caption or filename.
-
-Send a media file (image, PDF, video) to a WhatsApp number
 - **send_template**: Requires the template name.
 
 Send a pre-approved WhatsApp template message
-- **list_templates**: List all available and pre-approved WhatsApp templates
 - **get_status**: g. connected, disconnected). Use this to debug communication failures.
 
 Check the current connection status of the 1msg.io WhatsApp channel
 - **list_messages**: Use this to check previous communications or audit chat history.
 
 Retrieve recent incoming and outgoing WhatsApp message history
+- **send_file**: Optionally supports a caption or filename.
+
+Send a media file (image, PDF, video) to a WhatsApp number
+- **list_templates**: List all available and pre-approved WhatsApp templates
 
 
 ## 💬 Prompt Examples

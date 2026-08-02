@@ -37,22 +37,22 @@ Connect your **Vultr** account to any AI agent to manage your cloud infrastructu
 - **get_bare_metal_ipv6**: Get IPv6 info for a bare metal instance
 - **halt_bare_metal**: Halt a bare metal instance
 - **reboot_bare_metal**: Reboot a bare metal instance
-- **reinstall_bare_metal**: Reinstall a bare metal instance
-- **set_bare_metal_ipv4_reverse**: Set Reverse DNS for IPv4 on a bare metal instance
-- **setup_bgp**: Setup BGP for the account
 - **set_bare_metal_ipv6_reverse**: Set Reverse DNS for IPv6 on a bare metal instance
+- **setup_bgp**: Setup BGP for the account
+- **set_bare_metal_ipv4_reverse**: Set Reverse DNS for IPv4 on a bare metal instance
+- **get_account**: Get Vultr account info
+- **list_api_keys**: List API keys
+- **list_applications**: List Vultr applications
+- **get_bare_metal_ipv4**: Get IPv4 info for a bare metal instance
+- **reinstall_bare_metal**: Reinstall a bare metal instance
 - **start_bare_metal**: Start a bare metal instance
 - **delete_bare_metal**: Delete a bare metal instance
 - **list_backups**: List backups
 - **list_bare_metals**: List bare metal instances
 - **create_api_key**: Create a new API key
-- **get_bare_metal_ipv4**: Get IPv4 info for a bare metal instance
 - **get_backup**: Get a specific backup
 - **create_bare_metal**: Create a bare metal instance
 - **get_account_bgp**: Get Account BGP Info
-- **get_account**: Get Vultr account info
-- **list_api_keys**: List API keys
-- **list_applications**: List Vultr applications
 
 
 ## 💬 Prompt Examples

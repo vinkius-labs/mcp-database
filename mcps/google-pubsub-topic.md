@@ -22,7 +22,7 @@ By strictly scoping access, your AI can safely fan out notifications, trigger do
 
 
 ## Available Tools (1)
-- **pubsub_publish_message**: Publish a message to the configured Google Cloud Pub/Sub Topic
+- **publish_message**: Publish a message to the configured Google Cloud Pub/Sub Topic
 
 
 ## 💬 Prompt Examples

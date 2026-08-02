@@ -35,9 +35,9 @@ Connect your **Acunetix 360** account to your AI agent to automate your web appl
 
 
 ## Available Tools (3)
-- **list_scans**: List vulnerability scans
 - **launch_scan**: Start a new security scan
 - **list_vulnerabilities**: List all identified security issues
+- **list_scans**: List vulnerability scans
 
 
 ## 💬 Prompt Examples

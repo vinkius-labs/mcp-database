@@ -36,8 +36,8 @@ Transform your **8x8 Work** communications data into a strategic asset for your 
 
 ## Available Tools (3)
 - **list_call_records**: List call detail records (CDR)
-- **get_extension_summary**: Get extension call summary
 - **list_ring_groups**: List ring group analytics
+- **get_extension_summary**: Get extension call summary
 
 
 ## 💬 Prompt Examples

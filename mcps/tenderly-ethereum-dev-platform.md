@@ -33,12 +33,12 @@ Connect your **Tenderly** account to any AI agent to streamline your Ethereum de
 
 
 ## Available Tools (4)
-- **create_virtual_testnet**: Create a Virtual TestNet on Tenderly
-- **simulate_bundle**: Simulate a bundle of transactions on Tenderly
-- **simulate_transaction**: Simulate a transaction on Tenderly
 - **create_alert**: Expression types include method_call, state_change, tx_value, emitted_log, eth_balance.
 
 Create an alert on Tenderly
+- **create_virtual_testnet**: Create a Virtual TestNet on Tenderly
+- **simulate_bundle**: Simulate a bundle of transactions on Tenderly
+- **simulate_transaction**: Simulate a transaction on Tenderly
 
 
 ## 💬 Prompt Examples

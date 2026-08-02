@@ -35,14 +35,14 @@ Connect your **Traefik Proxy** instance to any AI agent and gain real-time visib
 
 
 ## Available Tools (18)
-- **get_entrypoint**: Get details for a specific entrypoint
 - **get_http_middleware**: Get details for a specific HTTP middleware
+- **get_entrypoint**: Get details for a specific entrypoint
+- **list_entrypoints**: List all entrypoints
 - **get_http_router**: Get details for a specific HTTP router
 - **get_http_service**: Get details for a specific HTTP service
 - **get_tcp_middleware**: Get details for a specific TCP middleware
 - **get_tcp_router**: Get details for a specific TCP router
 - **get_tcp_service**: Get details for a specific TCP service
-- **list_entrypoints**: List all entrypoints
 - **list_http_middlewares**: List all HTTP middlewares
 - **list_http_routers**: List all HTTP routers
 - **list_http_services**: List all HTTP services

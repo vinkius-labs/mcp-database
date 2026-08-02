@@ -33,12 +33,12 @@ Connect your **ToolJet** workspace to any AI agent to interact with your interna
 
 
 ## Available Tools (4)
-- **insert_row**: Insert a new row into a ToolJet Database table
 - **list_tables**: List all tables in the ToolJet Database
 - **query_table**: Use this for reading data (SELECT).
 
 Perform a SQL query on a ToolJet Database table
 - **trigger_workflow**: Trigger a ToolJet Workflow via Webhook
+- **insert_row**: Insert a new row into a ToolJet Database table
 
 
 ## 💬 Prompt Examples

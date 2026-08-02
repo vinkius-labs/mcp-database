@@ -34,7 +34,6 @@ Connect your **Wazuh SIEM** to any AI agent to streamline security operations an
 
 
 ## Available Tools (21)
-- **create_security_role**: Create a new Wazuh security role
 - **list_decoders**: Supports WQL filtering.
 
 List loaded Wazuh decoders
@@ -47,9 +46,6 @@ List all Wazuh agents
 - **get_logtest**: Test rules and decoders against logs
 - **get_manager_logs**: Retrieve Wazuh manager logs
 - **get_manager_status**: Get Wazuh manager daemon status
-- **get_mitre**: Supports WQL filtering.
-
-Get MITRE ATT&CK results
 - **restart_agents**: Restart Wazuh agents
 - **restart_cluster**: Restart the Wazuh cluster
 - **get_rootcheck**: Supports WQL filtering.
@@ -71,6 +67,10 @@ Get Syscollector inventory
 - **update_rule_file**: Update a Wazuh rule file
 - **update_security_config**: Update Wazuh security configuration
 - **upgrade_agents**: Upgrade Wazuh agents
+- **create_security_role**: Create a new Wazuh security role
+- **get_mitre**: Supports WQL filtering.
+
+Get MITRE ATT&CK results
 - **list_cluster_nodes**: List Wazuh cluster nodes
 - **create_agent**: Enroll a new Wazuh agent
 

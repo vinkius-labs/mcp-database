@@ -36,10 +36,10 @@ Connect your **Affinda** account to your AI agent to unlock powerful intelligent
 
 ## Available Tools (5)
 - **list_documents**: Retrieve all parsed documents in an Affinda workspace with their processing status
-- **get_document**: Retrieve the fully structured JSON data and status for a specific processed document in Affinda
 - **create_document**: Defaults to synchronous waiting for the output.
 
 Upload and parse a PDF or image into Affinda via its public URL for high-accuracy JSON extraction
+- **get_document**: Retrieve the fully structured JSON data and status for a specific processed document in Affinda
 - **list_workspaces**: Retrieve all container workspaces for documents created within your Affinda account
 - **list_document_types**: Retrieve exactly which parsing models the Affinda account supports (e.g. Resume, Invoice, Passport)
 

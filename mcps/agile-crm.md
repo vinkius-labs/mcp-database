@@ -7,38 +7,47 @@
 
 **Category:** [marketing-automation](../categories/marketing-automation.md)
 
-Sales and marketing automation — manage contacts, deals, tasks, and campaigns via AI.
+Manage contacts, deals, and marketing campaigns in one place with a CRM built for growing sales teams.
 
 ## Description
-Connect your **Agile CRM** account to your AI agent to unlock powerful CRM and marketing automation. From creating and managing contact profiles to auditing your sales pipeline and orchestrating task workflows, your agent handles your business interactions through natural conversation.
+Connect your **Agile CRM** account to any AI agent and take full control of your sales, marketing, and service automation workflows through natural conversation.
 
 ### What you can do
 
-- **Unified Contact Management** — Create, update, and search for contacts, including managing custom properties and tags
-- **Pipeline Orchestration** — List and audit sales deals, check pipeline stages, and retrieve technical metadata for opportunities
-- **Task & Activity Tracking** — List and create tasks to ensure your team stays on top of follow-ups and client meetings
-- **Account Intelligence** — Search for contacts by email and retrieve historical interaction logs to support sales outreach
-- **Workflow Monitoring** — Quickly identify high-value deals or overdue tasks directly from your chat interface
+- **Contact & Relationship Orchestration** — List and manage your entire high-fidelity contact directory programmatically, retrieving detailed profile metadata and interaction notes
+- **Deal Lifecycle Management** — Monitor your sales pipeline in real-time, create new high-fidelity opportunities, and track deal probability and values directly through your agent
+- **Task & Event Intelligence** — Programmatically organize your daily workflow by creating tasks and calendar events to maintain a perfectly coordinated team schedule
+- **Customer Discovery** — Access complete profile properties including custom tags and high-fidelity contact history to oversee your organizational relationship ecosystem
+- **Operational Monitoring** — Access account-level configuration and verify API connectivity directly through your agent for instant performance reporting
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Agile CRM Domain, Email, and REST API Key
-3. Start managing your CRM and monitoring your sales pipeline through Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API Key**, **Email**, and **Domain** from your Agile CRM dashboard (Admin Settings > Developers & API)
+3. Start orchestrating your business growth from Claude, Cursor, or any MCP client
+
+No more manual status checking across different CRM modules or digging through complex deal tables. Your AI acts as your dedicated sales coordinator and relationship architect.
 
 ### Who is this for?
 
-- **Sales Teams** — research prospects and update deal statuses without leaving the chat
-- **Marketing Managers** — audit contact lists and manage segment tags effortlessly
-- **Customer Success** — look up client history and create follow-up tasks using simple commands
-- **Business Owners** — retrieve sales performance summaries and identify bottlenecks in the pipeline
+- **Sales Executives** — instantly retrieve deal summaries and update contact records using natural language commands
+- **Marketing Teams** — monitor lead distribution and task priorities without leaving your workspace
+- **Operations Leads** — automate the oversight of sales pipelines and team calendars through simple AI queries
 
 
-## Available Tools (4)
-- **list_contacts**: List CRM contacts
-- **search_contact_by_email**: Search contact by email
-- **list_deals**: List sales opportunities
-- **list_tasks**: List CRM tasks
+## Available Tools (12)
+- **list_contacts**: List all contacts in Agile CRM
+- **list_deals**: List all deals (opportunities)
+- **list_events**: List all calendar events
+- **list_contact_notes**: List notes for a specific contact
+- **retrieve_contact**: Get details of a specific contact
+- **retrieve_deal**: Get details of a specific deal
+- **retrieve_task**: Get details of a specific task
+- **update_contact**: Update an existing contact
+- **list_tasks**: List all tasks
+- **create_contact**: Create a new contact
+- **create_deal**: Create a new deal
+- **delete_contact**: Delete a contact
 
 
 ## 💬 Prompt Examples
@@ -46,38 +55,38 @@ Connect your **Agile CRM** account to your AI agent to unlock powerful CRM and m
 Here are some examples of how you can interact with the **Agile CRM** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List the last 5 contacts created in Agile CRM."
+> "List all active sales deals in my Agile CRM pipeline."
 
 **🤖 AI Agent:**
-> I've retrieved the latest 5 contacts. They include John Smith, Maria Garcia, and 3 others. Would you like to see the active deals for any of these contacts?
+> I've retrieved your active deals. You currently have 10 opportunities in the pipeline, including 'Web Redesign' (Value: $5,000) and 'Enterprise License'. Would you like the detailed probability metadata for any of these?
 
 ---
 
 **👤 You:**
-> "Show me all deals worth more than $5,000."
+> "Create a new contact 'John Doe' (john@example.com) and add a note about our last meeting."
 
 **🤖 AI Agent:**
-> I've filtered your pipeline. You have 4 deals with values over $5,000, including 'Enterprise Software License' and 'Premium Support Plan'. Total potential revenue from these is $32,000.
+> Contact orchestrated! I've successfully created the profile for John Doe (ID: cont_123) and registered your high-fidelity meeting note in his profile. He is now active in your CRM. Need help creating a follow-up task?
 
 ---
 
 **👤 You:**
-> "Search for contact 'jane.doe@example.com' and show recent tasks."
+> "What are my pending tasks and events for today?"
 
 **🤖 AI Agent:**
-> I've found Jane Doe. She has 2 pending tasks: 'Send Proposal' (due today) and 'Follow-up Call' (due Friday). Would you like to mark any of these as completed?
+> Accessing schedule... Today you have 3 pending tasks, including 'Call Acme Corp', and a 'Project Sync' event at 2 PM. I've retrieved the high-fidelity due times for your organizational alignment. Need more historical context?
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Agile CRM REST API Key?**
-Log in to Agile CRM, go to **Admin Settings** > **Developers & API**. You will find your REST API Key listed there. Use this along with your account email for authentication.
+**Q: How do I find my Agile CRM API Key?**
+Log in to your dashboard, navigate to **Admin Settings** > **Developers & API**, and copy your REST API Key.
 
-**Q: Can I search for a contact by email?**
-Yes! Use the `search_contact_by_email` tool. It provides a direct way to find a contact profile using their email address, returning their full history and properties.
+**Q: Can I create new deals via AI?**
+Yes! The `create_deal` tool allows your agent to register new sales opportunities by providing deal name, value, and probability programmatically.
 
-**Q: Does this support custom properties?**
-Yes, custom properties are included in the contact details retrieved via the API. You can also update them by specifying the property name and value.
+**Q: How do I find my Agile CRM domain?**
+Your domain is the prefix of your Agile CRM URL. For example, if you log in at `vinkius.agilecrm.com`, your domain is `vinkius`.
 
 
 ## Installation & Usage

@@ -1,100 +1,89 @@
-# Oura MCP Server
+# Tencent TMT / 腾讯机器翻译 MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/aconex)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
 
-**Category:** [data-analytics](../categories/data-analytics.md)
+**Category:** [industry-titans](../categories/industry-titans.md)
 
-Access your Oura Ring health data — sleep, activity, readiness, HRV, heart rate and workout metrics from any AI agent.
+Tencent's professional machine translation — translate text and detect languages with high precision via AI.
 
 ## Description
-Connect your **Oura Ring** to any AI agent and access your personal health data through natural conversation.
+Empower your AI agent to orchestrate your global content and multilingual communication with **Tencent TMT** (机器翻译), the premier NLP platform by Tencent Cloud. By connecting TMT to your agent, you transform complex translation tasks, language identification, and technical localization into a natural conversation. Your agent can instantly translate text between dozens of languages, automatically identify source languages, and provide enterprise-grade localized results without you ever needing to navigate the Tencent Cloud Console. Whether you are translating technical documentation or coordinating global customer support, your agent acts as a real-time linguistic coordinator, providing accurate and reliable results from a single, authorized source.
 
 ### What you can do
 
-- **Sleep** — Analyze sleep scores, stages (REM/light/deep/wake), efficiency, latency and timing
-- **Activity** — Track daily steps, calories, MET minutes and activity goals
-- **Readiness** — Monitor readiness scores, HRV, resting heart rate, body temperature and recovery
-- **Tags** — Review your manual entries for mood, energy, behaviors and substances
-- **Workouts** — Browse logged workouts with type, duration, calories and heart rate zones
-- **Heart Rate** — Access detailed 5-minute heart rate samples and HRV data
+- **Precision Translation** — Translate text between major world languages including Chinese, English, Portuguese, Spanish, and French.
+- **Language Identification** — Automatically detect the source language of any text snippet with high confidence.
+- **Specialized Workflows** — Use dedicated tools for frequent language pairs (EN-ZH, ZH-EN) for faster processing.
+- **Global Localization** — Bridge linguistic gaps by localizing your content for the Chinese and global markets.
+- **Operational Monitoring** — Verify API connectivity and monitor service status to ensure consistent uptime.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Oura Personal Access Token
-3. Start exploring your health data from Claude, Cursor, or any MCP-compatible client
+2. Enter your Tencent Cloud SecretId, SecretKey, and Region
+3. Start managing your linguistic operations through Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Health Enthusiasts** — track sleep quality, daily readiness and activity trends over time
-- **Athletes** — monitor recovery, HRV and workout performance to optimize training
-- **Biohackers** — correlate tags (mood, energy, behaviors) with sleep and readiness scores
+- **Content & Localization Teams** — automate the translation of help articles and marketing copy through natural language queries.
+- **Global Business Operations** — translate cross-border communications and market reports directly from your AI-powered workspace.
+- **Developers** — integrate professional-grade machine translation into your AI-driven daily routines.
+- **Tencent Cloud Power Users** — integrate your existing TMT workflows into your AI-driven daily routines.
 
 
-## Available Tools (7)
-- **get_activity**: Supports date range filtering.
-
-Get your Oura activity data
-- **get_heart_rate**: Returns timestamp, heart rate value and HRV for each sample. Supports date range filtering. Note: This endpoint returns high-frequency data; use narrow date ranges.
-
-Get your Oura heart rate data
-- **get_readiness**: Supports date range filtering.
-
-Get your Oura readiness data
-- **get_sessions**: Includes overall scores, sleep metrics, activity data and readiness indicators. Supports date range filtering.
-
-Get your Oura session data
-- **get_sleep**: Supports date range filtering with start_date and end_date (YYYY-MM-DD). Pagination via nextToken.
-
-Get your Oura sleep data
-- **get_tags**: ). Tags are user-entered data points that correlate with sleep and readiness scores. Supports date range filtering.
-
-Get your Oura tags
-- **get_workouts**: Workouts can be manually logged or auto-detected by the Oura Ring. Supports date range filtering.
-
-Get your Oura workout data
+## Available Tools (10)
+- **detect_language**: Detect language of text
+- **translate_to_chinese**: Translate text to Chinese
+- **translate_to_english**: Translate text to English
+- **translate_to_french**: Translate text to French
+- **check_tmt_status**: Check TMT API status
+- **translate_text**: Translate text between languages
+- **translate_zh_to_en**: Translate Chinese to English
+- **translate_en_to_zh**: Translate English to Chinese
+- **translate_to_portuguese**: Translate text to Portuguese
+- **translate_to_spanish**: Translate text to Spanish
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Oura** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Tencent TMT / 腾讯机器翻译** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "How did I sleep last night?"
+> "Translate this to Portuguese using Tencent TMT: 'The system will be updated tonight at 10 PM'."
 
 **🤖 AI Agent:**
-> Last night: Sleep score 85/100. Total: 7h 42m. Deep: 2h 10m, REM: 1h 45m, Light: 3h 15m, Awake: 32m. Efficiency: 92%. Onset: 15min. Restlessness: Low.
+> I've translated your sentence to Portuguese using Tencent TMT. The result is: 'O sistema será atualizado hoje à noite, às 22h'. Would you like me to translate any other notifications?
 
 ---
 
 **👤 You:**
-> "What is my readiness score today?"
+> "Check what language this is: '系统升级中，请稍候'。"
 
 **🤖 AI Agent:**
-> Today's readiness: 82/100 (Good). HRV: 65ms, Resting HR: 51 bpm, Body temp: 36.6°C. Sleep balance: 8h 5min. Activity balance: Well recovered. Previous day strain: 14.
+> I've detected the language using Tencent TMT. The text is in **Chinese (zh)**. It means 'System upgrading, please wait'. Should I translate this into English for you?
 
 ---
 
 **👤 You:**
-> "Show me my activity from yesterday."
+> "Translate 'I am very happy to help you' from English to Simplified Chinese."
 
 **🤖 AI Agent:**
-> Yesterday's activity: Score 75/100. Steps: 8,450. Calories: 2,340 (active: 520). MET minutes: 145. Average HR: 72 bpm. Inactivity: 11h 20m. Daily goal: 85% achieved.
+> I've translated the phrase for you. In Simplified Chinese, it is: '我很高兴能帮助你' (Wǒ hěn gāoxìng néng bāngzhù nǐ). Should I check the status of the TMT service to ensure it is ready for more requests?
 
 
 ## ❓ FAQ
 
-**Q: How do I get an Oura Personal Access Token?**
-Log in to your Oura account at [**cloud.ouraring.com**](https://cloud.ouraring.com/oauth2/authorize), create a personal access token in your account settings. The token gives access to your sleep, activity, readiness and health data.
+**Q: How do I find my Tencent Cloud SecretId and SecretKey?**
+Log in to the [Tencent Cloud Console](https://console.cloud.tencent.com/), navigate to [Access Management] -> [API Key Management] to find or generate your unique SecretId and SecretKey.
 
-**Q: What health data is available?**
-Sleep (score, stages, efficiency), Activity (steps, calories, MET), Readiness (score, HRV, RHR, temperature), Tags (mood, energy, behaviors), Workouts (type, duration, HR zones) and Heart Rate (5-min samples).
+**Q: Which language pairs are supported?**
+TMT supports a wide range of pairs including ZH (Chinese), EN (English), PT (Portuguese), ES (Spanish), FR (French), JA (Japanese), and more. Use `auto` for the source to let TMT decide.
 
-**Q: How far back can I access data?**
-You can access all historical data recorded by your Oura Ring. Use start_date and end_date parameters to filter results. Data is paginated with a nextToken for large date ranges.
+**Q: Does this server handle signature calculation?**
+Yes! The server automatically calculates the required TC3-HMAC-SHA256 signature for every request using your provided SecretKey, ensuring secure authorized communication with Tencent Cloud TMT.
 
 
 ## Installation & Usage
@@ -111,7 +100,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Oura** under Connectors.
+5. Click the **+** button in any chat and enable **Tencent TMT / 腾讯机器翻译** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -119,7 +108,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `aconex` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Oura** tools.
+4. Click **Save** — Cursor will connect and list all **Tencent TMT / 腾讯机器翻译** tools.
 
 **Configuration:**
 ```json

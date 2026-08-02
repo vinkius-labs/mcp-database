@@ -7,40 +7,40 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Streamline recruitment via Workable — list job openings, manage candidate profiles, and track hiring stages directly from your AI agent.
+Recruit top talent with an ATS that posts to 200+ job boards, screens candidates with AI, and manages the entire hiring flow.
 
 ## Description
-Connect your **Workable** account to any AI agent to manage your entire recruitment pipeline through natural conversation.
+Connect your **Workable** recruiting account to any AI agent and simplify how you manage your hiring pipelines, track candidates, and coordinate with your team through natural conversation.
 
 ### What you can do
 
-- **Job Management** — List all active job postings and fetch detailed descriptions using job shortcodes
-- **Candidate Tracking** — Query candidate lists and retrieve full application details, including contact info and summaries
-- **Pipeline Creation** — Create new candidate profiles and applications directly from the chat interface
-- **Hiring Stages** — List and understand the different stages of your recruitment process to track progress
-- **Team Overview** — Retrieve information about recruiters and team members involved in the hiring process
+- **Job Management** — List all active and archived job openings and retrieve detailed job descriptions and requirements.
+- **Candidate Tracking** — List and inspect candidates across all jobs, and drill down into specific profiles for experience and status.
+- **Direct Sourcing** — Programmatically register new candidates to specific job openings to accelerate your hiring process.
+- **Team Coordination** — List account members and recruiters to understand your hiring team structure.
+- **Ecosystem Overview** — List linked accounts and verify your Workable instance configuration via AI.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Workable API Key and Subdomain
-3. Start managing your talent pipeline from Claude, Cursor, or any MCP-compatible client
+2. Enter your Workable Subdomain and API Key
+3. Start managing your recruitment machine from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **Recruiters & HR Managers** — quickly check candidate statuses and job details without switching between browser tabs
-- **Hiring Managers** — review candidate profiles and job descriptions directly while planning team growth
-- **Talent Acquisition Leads** — automate reporting on hiring stages and recruiter workloads
+- **Recruiters & HR Managers** — quickly check candidate statuses and job metadata via simple AI queries.
+- **Hiring Managers** — monitor the progress of specific pipelines and review new applicants without opening the dashboard.
+- **Operations Teams** — automate candidate registration and track team activity levels directly from the workspace.
 
 
 ## Available Tools (7)
-- **get_candidate**: Get details for a specific candidate
-- **get_job**: Get details for a specific job
-- **list_jobs**: List job postings in Workable
-- **list_recruiters**: List recruiters in Workable
-- **list_stages**: List hiring stages in Workable
-- **list_candidates**: List candidates in Workable
-- **create_candidate**: Create a new candidate in Workable
+- **get_candidate_profile**: Get details for a specific candidate
+- **get_job_details**: Get details for a specific job
+- **list_linked_accounts**: List connected accounts
+- **list_all_candidates**: List candidates across all jobs
+- **list_account_members**: List hiring team members
+- **list_jobs**: List active job openings
+- **create_candidate**: Register a new candidate to a job
 
 
 ## 💬 Prompt Examples
@@ -48,38 +48,38 @@ Connect your **Workable** account to any AI agent to manage your entire recruitm
 Here are some examples of how you can interact with the **Workable** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all current job openings in Workable."
+> "List all active job openings in our Workable account."
 
 **🤖 AI Agent:**
-> I've retrieved your active job postings. You have 3 open roles: 'Senior Backend Engineer' (Shortcode: BE-001), 'Product Designer' (Shortcode: PD-042), and 'Sales Lead' (Shortcode: SL-009).
+> I've retrieved your active jobs. You have 4 openings: 'Senior Frontend Engineer', 'Product Designer', 'DevOps Specialist', and 'Marketing Lead'. Which one would you like to see the details for?
 
 ---
 
 **👤 You:**
-> "Show me the profile for candidate ID 'cand_123'."
+> "Show me the details for the candidate 'John Smith'."
 
 **🤖 AI Agent:**
-> Fetching candidate details... This is Jane Doe. She is currently a 'Full Stack Developer' with 5 years of experience. Her application summary mentions expertise in React and Node.js.
+> I've fetched John Smith's profile. He is currently in the 'Interview' stage for the 'Senior Frontend Engineer' role. He has 8 years of experience and is marked as 'Highly Recommended'.
 
 ---
 
 **👤 You:**
-> "Create a candidate profile for John Smith (john@email.com) with the headline 'Senior Developer'."
+> "Add 'Jane Doe' (jane.doe@example.com) as a candidate for the job 'ENG-101'."
 
 **🤖 AI Agent:**
-> Candidate profile created successfully! John Smith has been added to your Workable account as a 'Senior Developer'.
+> Success! Jane Doe has been registered as a new candidate for job 'ENG-101' (shortcode: senior-frontend). I've added her email and initiated the application process.
 
 
 ## ❓ FAQ
 
-**Q: Can I retrieve the full details of a specific job posting?**
-Yes! Use the `get_job` tool with the job's shortcode. Your agent will return the full job description, requirements, and metadata associated with that posting.
+**Q: How do I find the shortcode for a specific job?**
+Use the `list_jobs` tool. It returns a list of all your openings, each with its unique shortcode required for more detailed queries or actions.
 
-**Q: Is it possible to add a new candidate directly through the AI?**
-Absolutely. Use the `create_candidate` action. You can provide the candidate's name, email, headline, and a summary to instantly create their profile in your Workable account.
+**Q: Can I add a new candidate directly to a job via AI?**
+Yes! Use the `create_candidate` action. Provide the job shortcode along with the candidate's name and email to register them in your Workable pipeline.
 
-**Q: How can I see the different steps in our recruitment process?**
-Simply ask the agent to run the `list_stages` tool. It will provide a list of all configured hiring stages, helping you understand where candidates are in the pipeline.
+**Q: Is it possible to see the recruiter assigned to an account?**
+Absolutely. Run the `list_account_members` query to retrieve the directory of all users and recruiters in your instance, including their roles.
 
 
 ## Installation & Usage

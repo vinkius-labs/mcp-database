@@ -34,6 +34,11 @@ Connect your **42Crunch** account to any AI agent to continuously test, audit, a
 
 ## Available Tools (10)
 - **get_audit_report**: Download the static security audit report for an API
+- **list_scans**: List dynamic conformance scans against a live API
+- **get_scan_report**: Get detailed results from a dynamic conformance scan
+- **trigger_audit**: Use this to trigger a scan after a specification gets updated.
+
+Run a fresh static security audit on an API definition
 - **delete_api**: Delete an API definition from the platform
 - **get_api**: Get detailed metadata and score for a specific API
 - **get_collection**: Get metadata and security score for a collection
@@ -44,11 +49,6 @@ List all API definitions within a collection
 - **list_collections**: Use this to find the Collection ID you need to import or list APIs.
 
 List all API collections in the platform
-- **list_scans**: List dynamic conformance scans against a live API
-- **get_scan_report**: Get detailed results from a dynamic conformance scan
-- **trigger_audit**: Use this to trigger a scan after a specification gets updated.
-
-Run a fresh static security audit on an API definition
 
 
 ## 💬 Prompt Examples
