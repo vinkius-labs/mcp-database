@@ -34,8 +34,11 @@ Connect your **Daytona** account to any AI agent to orchestrate cloud-based deve
 
 
 ## Available Tools (28)
-- **create_sandbox**: Create a new Daytona sandbox
+- **archive_sandbox**: Archive a sandbox
+- **list_snapshots**: List all Daytona snapshots
+- **create_api_key**: Create a new Daytona API key
 - **create_snapshot**: Create a new snapshot
+- **create_volume**: Create a new volume
 - **deactivate_snapshot**: Deactivate a snapshot
 - **delete_api_key**: Delete an API key by name
 - **delete_sandbox**: Delete a sandbox
@@ -43,8 +46,6 @@ Connect your **Daytona** account to any AI agent to orchestrate cloud-based deve
 - **delete_volume**: Delete a volume
 - **fork_sandbox**: Fork an existing sandbox
 - **get_api_key**: Get details of a specific API key by name
-- **get_current_api_key**: Get details of the currently authenticated API key
-- **get_sandbox_preview_url**: Get a signed preview URL for a specific port on a sandbox
 - **get_sandbox**: Get details of a specific sandbox
 - **get_snapshot**: Get details of a specific snapshot
 - **get_volume_by_name**: Get details of a specific volume by name
@@ -52,16 +53,15 @@ Connect your **Daytona** account to any AI agent to orchestrate cloud-based deve
 - **list_api_keys**: List Daytona API keys
 - **list_sandboxes_paginated**: List all Daytona sandboxes (paginated)
 - **list_sandboxes**: List all Daytona sandboxes
-- **list_snapshots**: List all Daytona snapshots
 - **list_volumes**: List all Daytona volumes
 - **recover_sandbox**: Recover a sandbox from an error state
 - **resize_sandbox**: Resize sandbox resources
 - **start_sandbox**: Start a stopped sandbox
 - **stop_sandbox**: Stop a running sandbox
+- **create_sandbox**: Create a new Daytona sandbox
+- **get_current_api_key**: Get details of the currently authenticated API key
+- **get_sandbox_preview_url**: Get a signed preview URL for a specific port on a sandbox
 - **activate_snapshot**: Activate a snapshot
-- **archive_sandbox**: Archive a sandbox
-- **create_api_key**: Create a new Daytona API key
-- **create_volume**: Create a new volume
 
 
 ## 💬 Prompt Examples

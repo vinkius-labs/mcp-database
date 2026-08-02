@@ -39,16 +39,12 @@ Connect your **BookStack** instance to any AI agent and turn your documentation 
 
 Create a new page in BookStack
 - **create_shelf**: Create a new shelf
-- **delete_attachment**: Delete an attachment
 - **delete_book**: Delete a book
 - **delete_chapter**: Delete a chapter
-- **delete_page**: Delete a page (moves to recycle bin)
 - **delete_shelf**: Delete a shelf
 - **export_book**: Export book content
 - **export_chapter**: Export chapter content
 - **export_page**: Export page content
-- **get_attachment**: Get details for a specific attachment
-- **get_book**: Get details for a specific book
 - **get_chapter**: Get details for a specific chapter
 - **get_page**: Get details for a specific page
 - **get_shelf**: Get details for a specific shelf
@@ -68,6 +64,10 @@ List all pages in BookStack
 - **update_chapter**: Update an existing chapter
 - **update_page**: Update an existing page
 - **update_shelf**: Update an existing shelf
+- **delete_attachment**: Delete an attachment
+- **delete_page**: Delete a page (moves to recycle bin)
+- **get_attachment**: Get details for a specific attachment
+- **get_book**: Get details for a specific book
 - **create_attachment**: Create a new attachment link
 - **create_book**: Create a new book
 - **create_chapter**: Create a new chapter

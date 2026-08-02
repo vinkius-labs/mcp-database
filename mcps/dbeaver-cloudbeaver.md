@@ -34,10 +34,7 @@ Connect your **CloudBeaver** (DBeaver Cloud) instance to any AI agent to streaml
 
 
 ## Available Tools (19)
-- **configure_server**: Updates the main server configuration
-- **create_team**: Creates a new team for access management
 - **create_user**: Creates a new user account (Admin only)
-- **data_transfer_available_stream_processors**: Lists available export formats (CSV, JSON, XLSX, etc.)
 - **data_transfer_export_data_from_container**: Starts an async task to export data from a table/schema
 - **data_transfer_export_data_from_results**: Exports data from a specific SQL query result set
 - **db_sm_terminate**: Terminates active database sessions for a connection
@@ -46,13 +43,16 @@ Connect your **CloudBeaver** (DBeaver Cloud) instance to any AI agent to streaml
 - **get_active_product_license**: Returns details of the active server license
 - **get_active_user**: Returns information about the currently authorized user
 - **get_admin_user_info**: Returns detailed admin-level info for a specific user
-- **get_ai_settings**: Returns global AI assistant configurations
+- **get_ai_settings**: Returns globalThis AI assistant configurations
 - **get_all_product_licenses**: Lists all licenses installed on the server
 - **get_auth_providers**: Lists all available authentication providers (local, SAML, etc.)
 - **get_connection_info**: Returns configuration and status for a specific database connection
-- **get_driver_list**: Lists all database drivers supported by the server
 - **add_connections_access**: Grants users or teams access to specific connections
 - **auth_login**: Authenticates a session using a provider and credentials
+- **configure_server**: Updates the main server configuration
+- **create_team**: Creates a new team for access management
+- **data_transfer_available_stream_processors**: Lists available export formats (CSV, JSON, XLSX, etc.)
+- **get_driver_list**: Lists all database drivers supported by the server
 
 
 ## 💬 Prompt Examples

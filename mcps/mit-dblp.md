@@ -33,9 +33,6 @@ Connect to the **DBLP Computer Science Bibliography** — the most comprehensive
 
 
 ## Available Tools (16)
-- **get_author**: The PID can be found in DBLP URLs (e.g. for "https://dblp.org/pid/b/YoshuaBengio" the PID is "b/YoshuaBengio").
-
-Get author profile by DBLP PID
 - **get_author_publications**: Returns up to 40 most recent publications with full metadata. Use the author name as it appears on DBLP.
 
 Get all publications by a specific author
@@ -75,6 +72,9 @@ Search 6M+ computer science publications on DBLP
 - **search_venues**: Returns venue names, DBLP URLs, and types.
 
 Search CS conferences and journals
+- **get_author**: The PID can be found in DBLP URLs (e.g. for "https://dblp.org/pid/b/YoshuaBengio" the PID is "b/YoshuaBengio").
+
+Get author profile by DBLP PID
 
 
 ## 💬 Prompt Examples

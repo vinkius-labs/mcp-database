@@ -36,12 +36,12 @@ Your AI agent gains direct access to the same data used by researchers, journali
 
 
 ## Available Tools (8)
-- **get_dataset_metadata**: Returns the dataset title, full description, publication date, last modification date, and publisher information. Use the dataset ID obtained from list_datasets.
+- **search_doctors**: Accepts names, specialties, cities, or states. Returns NPI numbers, full names, primary specialty, practice addresses, and Medicare enrollment IDs. The database covers 2.4 million+ active providers across the United States.
 
-Get detailed metadata for a specific CMS dataset
-- **get_doctor_by_npi**: Returns the provider's full name, primary and secondary specialties, practice address, city, state, ZIP code, and Medicare enrollment status. NPI is a unique 10-digit number (e.g. "1234567890").
+Search for doctors and clinicians enrolled in Medicare
+- **search_hospitals**: Accepts hospital names, cities, or states. Returns provider IDs, hospital names, types (Acute Care, Critical Access, etc.), overall quality ratings (1-5 stars), locations, and emergency services availability.
 
-Get detailed provider information by NPI number
+Search for hospitals by name or location
 - **get_hospital_ratings**: Filter by US state code (e.g. "CA", "NY", "TX") to see hospitals in that state. Returns overall ratings (1-5 stars), hospital type, and emergency services. Without a state filter, returns top-rated hospitals nationwide.
 
 Get hospital quality ratings, optionally by state
@@ -51,12 +51,12 @@ List available CMS open data datasets
 - **search_providers_by_specialty**: Examples: "Cardiology", "Internal Medicine", "Orthopedic Surgery", "Family Practice", "Dermatology", "Psychiatry". Returns matching providers with their NPI, name, practice location, and enrollment details.
 
 Search for healthcare providers by medical specialty
-- **search_doctors**: Accepts names, specialties, cities, or states. Returns NPI numbers, full names, primary specialty, practice addresses, and Medicare enrollment IDs. The database covers 2.4 million+ active providers across the United States.
+- **get_dataset_metadata**: Returns the dataset title, full description, publication date, last modification date, and publisher information. Use the dataset ID obtained from list_datasets.
 
-Search for doctors and clinicians enrolled in Medicare
-- **search_hospitals**: Accepts hospital names, cities, or states. Returns provider IDs, hospital names, types (Acute Care, Critical Access, etc.), overall quality ratings (1-5 stars), locations, and emergency services availability.
+Get detailed metadata for a specific CMS dataset
+- **get_doctor_by_npi**: Returns the provider's full name, primary and secondary specialties, practice address, city, state, ZIP code, and Medicare enrollment status. NPI is a unique 10-digit number (e.g. "1234567890").
 
-Search for hospitals by name or location
+Get detailed provider information by NPI number
 - **search_nursing_homes**: Returns facility names, provider IDs, locations, and overall quality ratings. Useful for finding elder care facilities in a specific area.
 
 Search nursing homes and long-term care facilities

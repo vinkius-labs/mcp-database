@@ -34,6 +34,17 @@ Connect your **Canvas LMS** instance to any AI agent to automate course administ
 
 
 ## Available Tools (45)
+- **get_activity_stream**: Get current user activity stream
+- **get_sub_accounts**: Get sub-accounts for a specific account
+- **get_todo**: Get current user todo items
+- **list_conversations**: List conversations (Inbox)
+- **list_discussion_topics**: List discussion topics in a course
+- **list_folders**: List sub-folders within a folder
+- **list_module_items**: List items in a specific module
+- **create_assignment**: Create a new assignment in a course
+- **create_conversation**: Create a new conversation
+- **create_course**: Create a new Canvas course
+- **create_discussion_topic**: Create a new discussion topic in a course
 - **create_quiz**: Create a new quiz in a course
 - **create_role**: Create a new role in an account
 - **create_sis_import**: Import SIS data
@@ -41,7 +52,6 @@ Connect your **Canvas LMS** instance to any AI agent to automate course administ
 - **delete_course**: Delete or conclude a Canvas course
 - **execute_graphql**: Execute a GraphQL query against Canvas
 - **get_account**: Get details for a specific Canvas account
-- **get_activity_stream**: Get current user activity stream
 - **get_assignment**: Get details for a specific assignment
 - **get_conversation**: Get details for a specific conversation
 - **get_course**: Get details for a specific Canvas course
@@ -50,20 +60,14 @@ Connect your **Canvas LMS** instance to any AI agent to automate course administ
 - **get_page**: Get details for a specific page
 - **get_quiz**: Get details for a specific quiz
 - **get_sis_import_status**: Get status of a SIS import
-- **get_sub_accounts**: Get sub-accounts for a specific account
-- **get_todo**: Get current user todo items
 - **get_user**: Show user details
 - **grade_submission**: Grade a submission
 - **list_accounts**: List Canvas accounts
 - **list_admins**: List admins in an account
 - **list_announcements**: List announcements
 - **list_assignments**: List assignments for a course
-- **list_conversations**: List conversations (Inbox)
 - **list_courses**: List your Canvas courses
-- **list_discussion_topics**: List discussion topics in a course
 - **list_files**: List files in a course
-- **list_folders**: List sub-folders within a folder
-- **list_module_items**: List items in a specific module
 - **list_modules**: List modules in a course
 - **list_pages**: List pages in a course
 - **list_quizzes**: List quizzes in a course
@@ -75,10 +79,6 @@ Connect your **Canvas LMS** instance to any AI agent to automate course administ
 - **update_course**: Update an existing Canvas course
 - **update_user**: Update an existing Canvas user
 - **create_admin**: Make a user an admin in an account
-- **create_assignment**: Create a new assignment in a course
-- **create_conversation**: Create a new conversation
-- **create_course**: Create a new Canvas course
-- **create_discussion_topic**: Create a new discussion topic in a course
 
 
 ## 💬 Prompt Examples

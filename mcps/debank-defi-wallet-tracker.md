@@ -39,12 +39,6 @@ No more manually checking multiple block explorers or DeFi dashboards. Your AI a
 - **get_protocol**: Get protocol information
 - **get_token_history_price**: Get token history price
 - **get_token**: Get token information
-- **explain_tx**: Explain Tx
-- **get_account_units**: Get API account units usage
-- **get_chain**: Get chain information
-- **get_gas_market**: Get gas prices
-- **get_pool**: Get pool information
-- **get_token_top_holders**: Get top holders of token
 - **get_user_all_complex_protocol_list**: Get user complex protocol list (all chains)
 - **get_user_complex_protocol_list**: Get user complex protocol list (single chain)
 - **get_user_history_list**: Get user history list
@@ -52,7 +46,6 @@ No more manually checking multiple block explorers or DeFi dashboards. Your AI a
 - **get_user_protocol_positions**: Get user protocol positions
 - **get_user_token_authorized_list**: Get user authorized token list
 - **get_user_token_list**: Get user token list
-- **get_user_total_balance**: Get user total balance
 - **get_user_used_chain_list**: Get user used chain list
 - **list_all_protocols**: Get all protocols of supported chains
 - **list_app_protocols**: Get list of app-protocol information
@@ -60,6 +53,13 @@ No more manually checking multiple block explorers or DeFi dashboards. Your AI a
 - **list_protocols**: Get list of protocol information
 - **list_tokens_by_ids**: Get list of token information
 - **pre_exec_tx**: Enhanced transaction pre-execution
+- **explain_tx**: Explain Tx
+- **get_account_units**: Get API account units usage
+- **get_chain**: Get chain information
+- **get_gas_market**: Get gas prices
+- **get_pool**: Get pool information
+- **get_token_top_holders**: Get top holders of token
+- **get_user_total_balance**: Get user total balance
 
 
 ## 💬 Prompt Examples

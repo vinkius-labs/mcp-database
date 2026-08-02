@@ -34,6 +34,11 @@ Connect your **D2L Brightspace** environment to any AI agent to streamline learn
 
 
 ## Available Tools (33)
+- **copy_course**: Initiate a course copy job
+- **create_course**: Create a course offering
+- **create_enrollment**: Enroll a user in an org unit
+- **create_lti_deployment**: Create an LTI Advantage tool deployment
+- **create_org_unit**: Create custom org units
 - **create_post**: Create a post in a discussion topic
 - **create_topic**: Create a discussion topic in a forum
 - **create_user**: Create a new user
@@ -51,22 +56,17 @@ Connect your **D2L Brightspace** environment to any AI agent to streamline learn
 - **list_my_enrollments**: List current user enrollments
 - **list_org_unit_children**: List child units of an org unit
 - **list_quiz_attempts**: List attempts for a specific quiz
-- **list_quizzes**: List quizzes in a course
 - **list_roles**: Retrieve system roles
 - **list_root_modules**: List root modules of course materials
 - **list_submissions**: List submissions for an assignment folder
 - **list_surveys**: List surveys in a course
 - **list_users**: Search or page through users
-- **provide_feedback**: Provide feedback for an assignment submission
-- **update_user_grade**: Update a user grade
 - **update_user**: Update user data
 - **upload_eportfolio_artifact**: Upload a file artifact to ePortfolio
 - **get_whoami**: Retrieve current user context
-- **copy_course**: Initiate a course copy job
-- **create_course**: Create a course offering
-- **create_enrollment**: Enroll a user in an org unit
-- **create_lti_deployment**: Create an LTI Advantage tool deployment
-- **create_org_unit**: Create custom org units
+- **list_quizzes**: List quizzes in a course
+- **provide_feedback**: Provide feedback for an assignment submission
+- **update_user_grade**: Update a user grade
 
 
 ## 💬 Prompt Examples

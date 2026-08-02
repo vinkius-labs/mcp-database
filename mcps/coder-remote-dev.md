@@ -35,8 +35,20 @@ Connect your **Coder** deployment to any AI agent to orchestrate remote developm
 
 ## Available Tools (84)
 - **get_agent_debug_magicsock**: Get Tailscale magicsock debug info (local agent API)
-- **get_agent_debug_manifest**: Get the startup manifest from the server (local agent API)
+- **get_app_auth_redirect**: Redirect to a URI with an encrypted API key
+- **list_ai_clients**: List connected AI Bridge clients
+- **list_ai_models**: List available AI models
+- **list_chats**: List user chat sessions
+- **list_groups**: List groups
+- **list_licenses**: List enterprise licenses
+- **list_org_provisioner_daemons**: List active provisioner daemons
+- **list_org_roles**: List assignable roles in an organization
+- **list_user_secrets**: List user secrets
+- **list_users**: List users
 - **check_auth**: Check if user has permission to perform actions
+- **list_workspaces**: g., owner:me).
+
+List workspaces
 - **create_chat_message**: Send a message to a chat session
 - **create_chat**: Start a new AI chat session
 - **create_group**: Create a group in an organization
@@ -53,19 +65,25 @@ Connect your **Coder** deployment to any AI agent to orchestrate remote developm
 - **get_agent_connection**: Get DERP and connection details for an agent
 - **get_agent_containers**: List running containers and devcontainers
 - **get_agent_debug_logs**: Get the last 10MiB of agent logs (local agent API)
+- **get_agent_debug_manifest**: Get the startup manifest from the server (local agent API)
 - **get_agent_external_auth**: Get external authentication tokens for the agent
 - **get_agent_logs**: Stream logs from a specific agent
 - **get_ai_session_threads**: Get threads for an AI session
 - **get_api_root**: Get basic API information
 - **get_app_host**: Get the base host for applications
 - **get_appearance**: Get dashboard branding and banners
+- **get_audit_logs**: Get a paginated list of audit logs
 - **get_build_info**: Get Coder build info
+- **get_chat_messages**: Get messages for a chat session
 - **get_deployment_config**: Get deployment configuration
 - **get_deployment_stats**: Get deployment statistics
+- **get_external_auth_device**: Initiate device-based OAuth
 - **get_insights_daus**: Get Daily Active User stats
 - **get_insights_templates**: Get usage data for templates
 - **get_insights_user_activity**: Get activity duration per user
 - **get_notifications_inbox**: List user notifications
+- **get_notifications_settings**: Get globalThis notification settings
+- **get_notifications_templates**: List available notification templates
 - **get_prebuild_settings**: Get prebuild settings
 - **get_ssh_config**: Get SSH configuration
 - **get_update_check**: Check for Coder updates
@@ -75,12 +93,15 @@ Connect your **Coder** deployment to any AI agent to orchestrate remote developm
 - **get_workspace_build_params**: List parameters used for the build
 - **get_workspace_build**: Get details of a specific build
 - **get_workspace**: Get workspace metadata
+- **list_ai_interceptions**: List AI interceptions
 - **list_ai_sessions**: List active AI Bridge sessions
 - **list_external_auth**: List linked external accounts (e.g., GitHub)
 - **list_org_members**: List members of an organization
+- **list_org_provisioner_jobs**: List jobs for the organization provisioners
 - **list_organizations**: List organizations
 - **list_tasks**: Manage long-running AI tasks
 - **list_template_examples**: List starter template examples
+- **list_template_versions**: List versions for a template
 - **list_templates**: List all templates
 - **list_user_tokens**: List user tokens
 - **list_workspace_port_shares**: List port shares for a workspace
@@ -93,27 +114,6 @@ Connect your **Coder** deployment to any AI agent to orchestrate remote developm
 - **update_prebuild_settings**: Update prebuild settings
 - **update_user_profile**: Update user profile
 - **update_workspace_acl**: Update workspace ACLs
-- **get_app_auth_redirect**: Redirect to a URI with an encrypted API key
-- **get_audit_logs**: Get a paginated list of audit logs
-- **get_chat_messages**: Get messages for a chat session
-- **get_external_auth_device**: Initiate device-based OAuth
-- **get_notifications_settings**: Get global notification settings
-- **get_notifications_templates**: List available notification templates
-- **list_ai_clients**: List connected AI Bridge clients
-- **list_ai_interceptions**: List AI interceptions
-- **list_ai_models**: List available AI models
-- **list_chats**: List user chat sessions
-- **list_groups**: List groups
-- **list_licenses**: List enterprise licenses
-- **list_org_provisioner_daemons**: List active provisioner daemons
-- **list_org_provisioner_jobs**: List jobs for the organization provisioners
-- **list_org_roles**: List assignable roles in an organization
-- **list_template_versions**: List versions for a template
-- **list_user_secrets**: List user secrets
-- **list_users**: List users
-- **list_workspaces**: g., owner:me).
-
-List workspaces
 - **update_workspace_autostart**: Update workspace autostart schedule
 - **update_workspace_autoupdates**: Update workspace autoupdates schedule
 - **upload_file**: Upload a file (tar or zip)

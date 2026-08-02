@@ -37,10 +37,11 @@ Your AI acts as a specialized DevOps assistant, handling complex DNS operations 
 
 ## Available Tools (77)
 - **accept_push**: Accept a domain push
+- **delete_zone_record**: Delete a zone record
+- **list_tlds**: List TLDs
 - **activate_zone_dns**: Activate DNS for a zone
 - **authorize_transfer_out**: Authorize domain transfer out
 - **batch_change_zone_records**: Batch change zone records
-- **change_domain_delegation**: Change name servers for a domain
 - **check_domain_availability**: Check domain availability
 - **check_zone_distribution**: Check zone distribution
 - **check_zone_record_distribution**: Check zone record distribution
@@ -60,7 +61,6 @@ Your AI acts as a specialized DevOps assistant, handling complex DNS operations 
 - **delete_email_forward**: Delete an email forward
 - **delete_template**: Delete a template
 - **delete_webhook**: Delete a webhook
-- **delete_zone_record**: Delete a zone record
 - **disable_auto_renewal**: Disable auto-renewal
 - **disable_dnssec**: Disable DNSSEC for a domain
 - **disable_whois_privacy**: Disable WHOIS privacy
@@ -85,10 +85,9 @@ Your AI acts as a specialized DevOps assistant, handling complex DNS operations 
 - **get_whoami**: Get details about the current authenticated entity
 - **get_zone_file**: Download a zone file
 - **get_zone_record**: Retrieve a zone record
-- **get_zone**: Retrieve a zone
-- **initiate_push**: Initiate a domain push
 - **issue_letsencrypt_certificate**: Issue a Let's Encrypt certificate
 - **list_accounts**: List accounts the authenticated entity has access to
+- **list_templates**: List templates in an account
 - **list_zone_records**: List records in a zone
 - **order_letsencrypt_renewal**: Order a Let's Encrypt certificate renewal
 - **register_domain**: Register a domain
@@ -99,6 +98,9 @@ Your AI acts as a specialized DevOps assistant, handling complex DNS operations 
 - **update_contact**: Update a contact
 - **update_template**: Update a template
 - **update_zone_record**: Update a zone record
+- **change_domain_delegation**: Change name servers for a domain
+- **get_zone**: Retrieve a zone
+- **initiate_push**: Initiate a domain push
 - **issue_letsencrypt_renewal**: Issue a Let's Encrypt certificate renewal
 - **list_billing_charges**: List billing charges for an account
 - **list_certificates**: List certificates for a domain
@@ -108,8 +110,6 @@ Your AI acts as a specialized DevOps assistant, handling complex DNS operations 
 - **list_email_forwards**: List email forwards for a domain
 - **list_pending_pushes**: List pending domain pushes
 - **list_services**: List services
-- **list_templates**: List templates in an account
-- **list_tlds**: List TLDs
 - **list_webhooks**: List webhooks in an account
 - **list_zones**: List zones in an account
 - **order_letsencrypt_certificate**: Order a Let's Encrypt certificate

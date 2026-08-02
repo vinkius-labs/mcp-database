@@ -34,9 +34,7 @@ Connect your **Netflix Conductor** instance to any AI agent to orchestrate compl
 
 
 ## Available Tools (49)
-- **add_task_log**: Add a log entry to a task
 - **bulk_pause**: Bulk pause workflows
-- **bulk_remove**: Bulk remove workflows
 - **bulk_restart**: Bulk restart workflows
 - **bulk_resume**: Bulk resume workflows
 - **bulk_retry**: Bulk retry workflows
@@ -51,6 +49,10 @@ Connect your **Netflix Conductor** instance to any AI agent to orchestrate compl
 - **execute_workflow**: Execute a workflow (Synchronous)
 - **get_all_queues**: Get pending counts for all queues
 - **get_correlated_workflows**: Get workflows by correlation ID
+- **resume_workflow**: Resume a paused workflow
+- **retry_workflow**: Retry the last failed task
+- **add_task_log**: Add a log entry to a task
+- **bulk_remove**: Bulk remove workflows
 - **get_event_handlers**: Get all event handlers
 - **get_queue_size**: Get queue depth for a task type
 - **get_running_workflows**: Get running workflow IDs by type
@@ -69,8 +71,6 @@ Connect your **Netflix Conductor** instance to any AI agent to orchestrate compl
 - **requeue_tasks**: Requeue pending tasks
 - **rerun_workflow**: Rerun a workflow from a specific task
 - **restart_workflow**: Restart a workflow from the beginning
-- **resume_workflow**: Resume a paused workflow
-- **retry_workflow**: Retry the last failed task
 - **search_workflows**: Search workflows (returns WorkflowSummary)
 - **search_workflows_v2**: Search workflows (returns full Workflow objects)
 - **skip_task**: Skip a task in a running workflow

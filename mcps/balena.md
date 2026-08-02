@@ -34,9 +34,6 @@ Connect your **BalenaCloud** account to any AI agent to orchestrate your IoT inf
 
 
 ## Available Tools (10)
-- **list_api_keys**: List Balena API keys
-- **create_device_env_var**: Create a device environment variable
-- **create_device_tag**: Create a device tag
 - **list_devices**: Use OData $filter, $select, and $expand for advanced querying (e.g., $filter=uuid eq '<UUID>').
 
 List devices in Balena fleets
@@ -52,6 +49,9 @@ List available balenaOS versions for a device type
 
 List Balena releases
 - **whoami**: Get current Balena user details
+- **list_api_keys**: List Balena API keys
+- **create_device_env_var**: Create a device environment variable
+- **create_device_tag**: Create a device tag
 
 
 ## 💬 Prompt Examples

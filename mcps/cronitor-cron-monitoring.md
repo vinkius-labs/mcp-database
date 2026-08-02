@@ -42,12 +42,10 @@ No more jumping between dashboards to check if your nightly backups finished or 
 - **create_group**: Create a new monitor group
 - **create_issue**: Create a new issue
 - **create_maintenance_window**: Schedule a maintenance window
-- **create_monitor**: Create a new monitor
 - **create_notification**: Create a notification list
 - **create_site**: Create a RUM site
 - **create_status_page**: Create a status page
 - **delete_api_key**: Delete an API key
-- **delete_status_page_component**: Delete status page components
 - **delete_group**: Delete a monitor group
 - **delete_monitor**: Delete a monitor
 - **delete_site**: Delete RUM sites
@@ -68,6 +66,13 @@ Retrieve performance metrics
 - **list_sites**: List RUM sites
 - **list_status_pages**: List status pages
 - **pause_group**: Bulk pause or resume a group of monitors
+- **update_environment**: Update an environment
+- **update_issue**: Update an issue state
+- **update_monitors**: Create or update monitors in bulk
+- **update_notification**: Update a notification list
+- **update_status_page**: Update status pages
+- **create_monitor**: Create a new monitor
+- **delete_status_page_component**: Delete status page components
 - **pause_monitor**: Use 0 to resume.
 
 Pause or resume a monitor
@@ -77,13 +82,8 @@ Pause or resume a monitor
 Send telemetry events (pings, metrics)
 - **update_api_key**: Update an API key
 - **update_status_page_component**: Update status page components
-- **update_environment**: Update an environment
 - **update_group**: Update a monitor group
-- **update_issue**: Update an issue state
-- **update_monitors**: Create or update monitors in bulk
-- **update_notification**: Update a notification list
 - **update_site**: Update RUM sites
-- **update_status_page**: Update status pages
 - **bulk_issues**: Perform bulk actions on issues
 - **clone_monitor**: Clone an existing monitor
 
