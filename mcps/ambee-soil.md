@@ -37,9 +37,6 @@ No more manual soil sensor deployment or complex data extraction. Your AI acts a
 
 
 ## Available Tools (5)
-- **get_grid_soil**: Returns gridded data points suitable for creating soil condition maps, GIS analysis, and spatial interpolation. Essential for precision agriculture mapping, variable rate application planning, and geospatial soil analysis. AI agents should use this when users ask "generate a soil moisture grid for mapping", "get gridded soil data for my field", or need structured spatial soil data for GIS integration.
-
-Get soil data on a structured grid for spatial analysis and mapping
 - **get_historical_soil**: Essential for analyzing soil condition trends, seasonal patterns, drought assessment, and long-term irrigation planning. AI agents should reference this when users ask "show me soil moisture trends over the past 30 days", "what was the soil temperature last week", or need historical soil data for agricultural analysis.
 
 Get historical soil moisture and temperature data for trend analysis
@@ -52,6 +49,9 @@ Get soil data for multiple points within a radius of a location
 - **get_soil_properties**: Essential for soil classification, crop suitability analysis, fertilizer planning, and long-term soil health monitoring. AI agents should reference this when users ask "what is the soil type and pH at my location", "show me soil organic carbon content", or need comprehensive soil property data for agricultural planning.
 
 Get detailed soil physical and chemical properties for a location
+- **get_grid_soil**: Returns gridded data points suitable for creating soil condition maps, GIS analysis, and spatial interpolation. Essential for precision agriculture mapping, variable rate application planning, and geospatial soil analysis. AI agents should use this when users ask "generate a soil moisture grid for mapping", "get gridded soil data for my field", or need structured spatial soil data for GIS integration.
+
+Get soil data on a structured grid for spatial analysis and mapping
 
 
 ## 💬 Prompt Examples

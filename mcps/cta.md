@@ -43,6 +43,9 @@ No more navigating multiple CTA apps or manually checking train and bus times. Y
 
 
 ## Available Tools (11)
+- **get_system_time**: Returns the official server timestamp in standard format. Useful for synchronizing local clocks with the CTA system, verifying API connectivity, testing authentication, and timestamp alignment for real-time data correlation. AI agents should use this as a connectivity check before making more complex queries, or when users need to verify API responsiveness and authentication validity.
+
+Get the current CTA Bus Tracker system timestamp
 - **get_bus_predictions**: Returns predicted arrival times in minutes and seconds, route IDs, destination descriptions, vehicle IDs, block IDs, trip designators, and whether buses are scheduled or real-time tracked. Based on real-time vehicle tracking and schedule adherence. Essential for real-time bus arrival awareness, passenger waiting time estimation, trip timing, and connection coordination. AI agents should use this when users ask "when is the next 22 Clark bus at stop 1234", "show predictions for this stop", or need real-time arrival data for a specific CTA bus stop. Stop IDs can be found using get_bus_stops.
 
 Get next bus arrival predictions for a specific CTA bus stop
@@ -67,9 +70,6 @@ Get current service alerts and disruptions across the CTA system
 - **get_stop_details**: Returns stop ID, stop name, geographic coordinates (latitude, longitude), and any associated route information. Essential for stop identification, accessibility planning, transit network analysis, and passenger information. AI agents should use this when users ask "tell me about stop 1234", "where is this bus stop located", or need detailed stop metadata to contextualize transit queries and trip planning.
 
 Get detailed information about a specific CTA bus stop
-- **get_system_time**: Returns the official server timestamp in standard format. Useful for synchronizing local clocks with the CTA system, verifying API connectivity, testing authentication, and timestamp alignment for real-time data correlation. AI agents should use this as a connectivity check before making more complex queries, or when users need to verify API responsiveness and authentication validity.
-
-Get the current CTA Bus Tracker system timestamp
 - **get_train_arrivals**: Returns predicted arrival times in minutes, train run numbers, destination stations, line colors (Red, Blue, Brown, Green, Orange, Purple, Pink, Yellow), operating status (on-time, delayed, scheduled, unscheduled, approaching, boarding, departing), and whether the train is approaching or at the station. Essential for real-time L tracking, passenger waiting time estimation, trip timing, and connection coordination. AI agents should use this when users ask "when is the next Red Line train at Clark/Lake", "show upcoming trains at this station", or need real-time arrival predictions for a specific CTA L station. MapIds are 5-digit station identifiers (e.g., 40360 for Clark/Lake, 40900 for Jackson). Station IDs can be found in the CTA GTFS static data feed.
 
 Get real-time train arrival predictions for a specific L station

@@ -38,7 +38,6 @@ Connect to the **Renfe Data** portal to monitor the Spanish railway network in r
 - **ckan_package_list**: List all dataset names in Renfe Data
 - **ckan_package_show**: Get metadata for a specific dataset
 - **ckan_resource_show**: Get metadata for a specific resource
-- **get_avisos**: Get planned service modifications (Avisos)
 - **get_static_datasets**: List URLs for static datasets (Schedules & Stations)
 - **rt_alerts_cercanias**: Updates every 20 seconds.
 
@@ -49,6 +48,7 @@ Get real-time trip updates for Cercanías
 - **rt_trip_updates_ld**: Updates every 30 seconds.
 
 Get real-time trip updates for AV / LD / MD
+- **get_avisos**: Get planned service modifications (Avisos)
 - **rt_vehicle_positions_cercanias**: Updates every 20 seconds.
 
 Get real-time vehicle positions for Cercanías

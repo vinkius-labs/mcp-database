@@ -44,6 +44,9 @@ Get information about USDA NASS surveys
 - **search_by_commodity**: Optionally filter by state, year and sector. This is a broad search that returns all available data for the commodity, including production, price, inventory and acreage statistics.
 
 Search Quick Stats by commodity name
+- **get_livestock_summary**: Requires a commodity name (e.g. CATTLE, HOGS, CHICKENS, MILK, EGGS). Optionally filter by state and year.
+
+Get livestock production summary from USDA NASS
 - **get_crop_summary**: Requires a commodity name (e.g. CORN, SOYBEANS, WHEAT, COTTON). Optionally filter by state and year. Returns detailed statistics with units, geographic scope and time period.
 
 Get crop production summary from USDA NASS
@@ -53,9 +56,6 @@ Get farm demographics data from USDA NASS
 - **get_economics_data**: Optionally filter by commodity, state and year. Sector is automatically set to ECONOMICS.
 
 Get agricultural economics data from USDA NASS
-- **get_livestock_summary**: Requires a commodity name (e.g. CATTLE, HOGS, CHICKENS, MILK, EGGS). Optionally filter by state and year.
-
-Get livestock production summary from USDA NASS
 - **get_param_values**: Parameters include: sector, group, commodity, commodity_desc, short_desc, source_desc, util_desc, unit_desc, freq_desc, domain_desc, state, county. Use this to discover what values you can filter by before making queries.
 
 Get valid values for a Quick Stats parameter

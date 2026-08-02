@@ -42,9 +42,6 @@ No more manual silo inspections or complex monitoring software. Your AI acts as 
 
 
 ## Available Tools (11)
-- **set_relay_state**: Accepts device ID, relay name, and desired state (true=on, false=off). Essential for remote grain management, automated ventilation scheduling, and responding to temperature/moisture alerts. AI agents should use this when users ask "turn on the fan for silo 3", "activate aeration for bin 2", or need to remotely control ventilation equipment based on sensor readings. WARNING: Always verify current conditions before changing relay states.
-
-Control relay outputs (fans, aeration, dryers) connected to an AgroLog device
 - **get_alarms**: Alarms are triggered by threshold breaches (high temperature, high moisture, elevated CO2, equipment failure) and indicate conditions requiring immediate attention. Returns alarm severity (critical, warning, info), alarm type, affected device, timestamp, and acknowledgment status. Essential for proactive grain management, quality issue detection, and operational response. AI agents should use this when users ask "show me all active alarms", "what alerts have been triggered", or need alarm data for operational monitoring. Optional device_id filters alarms for a specific device.
 
 Get active and historical alarms/alerts from the AgroLog monitoring system
@@ -66,6 +63,9 @@ List all AgroLog monitoring devices (temperature, moisture, weather sensors) in 
 - **get_moisture**: Moisture content is the most critical factor for safe grain storage — high moisture leads to mold, spoilage, and heating. Returns timestamped moisture value as percentage. Essential for grain quality assessment, drying decisions, and storage safety monitoring. AI agents should reference this when users ask "what is the moisture level in bin 5", "check grain moisture for device X", or need moisture data for storage management and drying planning.
 
 Get current grain moisture readings from a specific monitoring device
+- **set_relay_state**: Accepts device ID, relay name, and desired state (true=on, false=off). Essential for remote grain management, automated ventilation scheduling, and responding to temperature/moisture alerts. AI agents should use this when users ask "turn on the fan for silo 3", "activate aeration for bin 2", or need to remotely control ventilation equipment based on sensor readings. WARNING: Always verify current conditions before changing relay states.
+
+Control relay outputs (fans, aeration, dryers) connected to an AgroLog device
 - **get_device_telemetry**: Supports custom key selection (temperature, moisture, co2, humidity, etc.) and configurable data point limits for historical analysis. Essential for trend analysis, condition monitoring over time, and creating data visualizations. AI agents should reference this when users ask "show me temperature history for device X over the last 48 hours", "get moisture trend for this sensor", or need historical telemetry data for grain management analysis.
 
 Get time-series telemetry data from a specific monitoring device with customizable keys and limits

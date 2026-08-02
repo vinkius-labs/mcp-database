@@ -75,12 +75,12 @@ Search for individual track recordings
 - **search_release_groups**: Returns titles, artists, primary types (album, single, EP, etc.) and dates. Useful for finding the canonical album/single version. Pagination: max 100 results.
 
 Search for release groups (albums, singles, EPs)
-- **search_releases**: Returns release titles, artists, dates, countries, labels and track counts. Supports filtering by status (official, promotion, bootleg). Pagination: max 100 results.
-
-Search for album releases
 - **search_works**: Returns work titles, writers, types (song, opera, symphony, etc.) and ISWCs. Useful for finding composition metadata separate from specific recordings. Pagination: max 100 results.
 
 Search for musical works (compositions)
+- **search_releases**: Returns release titles, artists, dates, countries, labels and track counts. Supports filtering by status (official, promotion, bootleg). Pagination: max 100 results.
+
+Search for album releases
 
 
 ## 💬 Prompt Examples

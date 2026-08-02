@@ -36,6 +36,11 @@ No more manual data entry for every deck. Your AI acts as your dedicated investm
 
 
 ## Available Tools (12)
+- **submit_pitch_deck**: Submit a deck for AI analysis
+- **tag_submission**: Label a submission
+- **delete_submission**: Remove pitch deck
+- **generate_investment_memo**: Create investment memo
+- **get_api_status**: Get connectivity info
 - **get_deck_analysis**: Get AI triage results
 - **get_submission_audit**: Get audit trail
 - **get_submission_details**: Get full submission info
@@ -43,11 +48,6 @@ No more manual data entry for every deck. Your AI acts as your dedicated investm
 - **list_submissions**: List all analyzed decks
 - **list_submission_tags**: List available tags
 - **search_startups_semantically**: Find similar startups
-- **submit_pitch_deck**: Submit a deck for AI analysis
-- **tag_submission**: Label a submission
-- **delete_submission**: Remove pitch deck
-- **generate_investment_memo**: Create investment memo
-- **get_api_status**: Get connectivity info
 
 
 ## 💬 Prompt Examples

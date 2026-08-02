@@ -44,6 +44,9 @@ No more navigating the Metro website or manually checking train times. Your AI a
 
 
 ## Available Tools (12)
+- **get_station_entrances**: Returns entrance names, street addresses, latitude/longitude coordinates, entrance descriptions, and whether the entrance has escalator or elevator access. Essential for station navigation, first-time visitor guidance, street-level wayfinding, accessible entrance identification, and trip end planning. AI agents should reference this when users ask "where are the entrances to Metro Center", "find the closest entrance to Gallery Place", or need street-level navigation guidance for reaching a Metrorail station.
+
+Get entrance information for a specific Metrorail station
 - **get_bus_incidents**: Returns incident descriptions, affected route IDs, detour information, bus stop closures, incident types (accident, road closure, construction, mechanical), start timestamps, and alternative service recommendations. Essential for bus service disruption awareness, alternative route planning, and passenger communication. AI agents should use this when users ask "are there any bus delays", "is route 30N running normally", or need to check Metrobus service reliability.
 
 Get current incidents affecting Metrobus service
@@ -74,9 +77,6 @@ Get current incidents affecting Metrorail service
 - **get_rail_stations**: Can filter by line code (RD=Red, OR=Orange, SV=Silver, BL=Blue, YL=Yellow, GR=Green) to show only stations on that line. Essential for station discovery, route planning, understanding line structure, and mapping the Metrorail network. AI agents should reference this when users ask "list all stations on the Red Line", "what is the station code for Foggy Bottom", or need to understand station sequences and line geography. Station codes are required for subsequent queries like next trains, predictions, entrances, and parking.
 
 List all Metrorail stations, optionally filtered by line
-- **get_station_entrances**: Returns entrance names, street addresses, latitude/longitude coordinates, entrance descriptions, and whether the entrance has escalator or elevator access. Essential for station navigation, first-time visitor guidance, street-level wayfinding, accessible entrance identification, and trip end planning. AI agents should reference this when users ask "where are the entrances to Metro Center", "find the closest entrance to Gallery Place", or need street-level navigation guidance for reaching a Metrorail station.
-
-Get entrance information for a specific Metrorail station
 - **get_station_prediction**: Returns trains with destination names, line colors, predicted arrival times, car counts, and train direction. More targeted than system-wide next rail queries. Essential for passenger waiting at a specific station, connection planning, and real-time arrival boards. AI agents should use this when users ask "when is the next train at Silver Spring", "show trains coming to Shady Grove", or need station-specific arrival predictions. Requires station code from getRailStations results.
 
 Get next train predictions at a specific Metrorail station

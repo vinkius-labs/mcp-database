@@ -43,27 +43,6 @@ No more climbing silos to check fill levels or guessing when to order more grain
 
 
 ## Available Tools (12)
-- **create_delivery_order**: Accepts delivery quantity (tonnes), preferred delivery date, supplier information, and any special instructions. Returns order confirmation with order ID, estimated delivery date, and tracking information. Essential for proactive inventory replenishment, automated ordering based on predictions, and supply chain management. AI agents should use this when users ask "order 20 tonnes of wheat for silo 3", "schedule a delivery for silo 5 next week", or need to place delivery orders based on low stock predictions.
-
-Create a new grain delivery order for a specific silo
-- **get_current_level**: Returns fill percentage, remaining tonnes, current level height, and last update timestamp. Essential for real-time inventory tracking, delivery planning, and stock management. AI agents should use this when users ask "what is the current fill level in silo 2", "how much grain is left in silo 4", or need immediate stock level data for feed planning and delivery decisions.
-
-Get real-time grain fill level for a specific silo
-- **update_silo_settings**: Essential for customizing monitoring behavior, adjusting alert sensitivity, and maintaining accurate silo profiles. AI agents should use this when users ask "change the low stock threshold for silo 3 to 20 percent", "update silo 5 grain type to barley", or need to modify silo monitoring configuration.
-
-Update silo monitoring settings including alert thresholds and grain type
-- **get_days_to_empty**: Returns estimated days to empty, predicted empty date, confidence score, and usage rate assumptions. Essential for proactive delivery planning, preventing stock-outs, and optimizing supply chain timing. AI agents should use this when users ask "when will silo 3 run empty", "how many days of feed are left in silo 5", or need predictive supply data for delivery scheduling.
-
-Get AI-predicted days until a silo runs empty based on current usage patterns
-- **get_farm_overview**: Essential for executive reporting, farm-wide inventory assessment, and strategic supply planning. AI agents should use this when users ask "give me an overview of all my silos", "what is the total grain inventory across the farm", or need farm-level summaries for management reporting.
-
-Get comprehensive overview of all monitored silos on the farm
-- **get_silo_details**: Essential for understanding silo context before analyzing usage data, planning deliveries, or generating inventory reports. AI agents should reference this when users ask "tell me about silo 3", "what grain is stored in silo 5", or need detailed silo metadata for informed decisions.
-
-Get detailed information about a specific grain silo
-- **get_silos**: Returns silo IDs, names, locations, grain types, current fill levels, and monitoring status. Essential for farm overview, silo inventory management, and selecting specific silos for detailed analysis. AI agents should use this when users ask "show me all my silos", "list monitored storage units", or need to identify available silos before querying fill levels or usage data.
-
-List all grain silos monitored by GrainSure
 - **get_fill_level_history**: Returns time-series fill percentage data with timestamps showing how stock levels have changed over time. Essential for fill trend analysis, delivery effectiveness assessment, and consumption pattern identification. AI agents should use this when users ask "show me fill level trends for silo 1 over the past 60 days", "has silo 2 been filling or depleting", or need historical fill data for inventory management. Optional days parameter controls lookback period.
 
 Get historical fill level readings for a specific silo
@@ -76,9 +55,30 @@ Get delivery order history for a specific silo
 - **get_sensor_health**: Returns sensor battery level, signal strength, last communication time, calibration status, and operational status (active, low battery, offline, needs calibration). Essential for sensor maintenance, data continuity assurance, and monitoring system reliability. AI agents should reference this when users ask "is the sensor working in silo 5", "does silo 3 need sensor calibration", or need sensor health data for system administration.
 
 Get health status of the level monitoring sensor for a specific silo
+- **get_silo_details**: Essential for understanding silo context before analyzing usage data, planning deliveries, or generating inventory reports. AI agents should reference this when users ask "tell me about silo 3", "what grain is stored in silo 5", or need detailed silo metadata for informed decisions.
+
+Get detailed information about a specific grain silo
+- **get_silos**: Returns silo IDs, names, locations, grain types, current fill levels, and monitoring status. Essential for farm overview, silo inventory management, and selecting specific silos for detailed analysis. AI agents should use this when users ask "show me all my silos", "list monitored storage units", or need to identify available silos before querying fill levels or usage data.
+
+List all grain silos monitored by GrainSure
+- **update_silo_settings**: Essential for customizing monitoring behavior, adjusting alert sensitivity, and maintaining accurate silo profiles. AI agents should use this when users ask "change the low stock threshold for silo 3 to 20 percent", "update silo 5 grain type to barley", or need to modify silo monitoring configuration.
+
+Update silo monitoring settings including alert thresholds and grain type
 - **get_usage_history**: Returns time-series usage data (tonnes per day/week) with timestamps. Essential for consumption trend analysis, feed rate calculation, and delivery timing optimization. AI agents should reference this when users ask "show me grain usage trends for silo 3", "what is the daily consumption rate for silo 5", or need historical usage data for feed planning and inventory forecasting. Optional days parameter controls lookback period.
 
 Get historical grain usage data for a specific silo
+- **get_days_to_empty**: Returns estimated days to empty, predicted empty date, confidence score, and usage rate assumptions. Essential for proactive delivery planning, preventing stock-outs, and optimizing supply chain timing. AI agents should use this when users ask "when will silo 3 run empty", "how many days of feed are left in silo 5", or need predictive supply data for delivery scheduling.
+
+Get AI-predicted days until a silo runs empty based on current usage patterns
+- **get_farm_overview**: Essential for executive reporting, farm-wide inventory assessment, and strategic supply planning. AI agents should use this when users ask "give me an overview of all my silos", "what is the total grain inventory across the farm", or need farm-level summaries for management reporting.
+
+Get comprehensive overview of all monitored silos on the farm
+- **create_delivery_order**: Accepts delivery quantity (tonnes), preferred delivery date, supplier information, and any special instructions. Returns order confirmation with order ID, estimated delivery date, and tracking information. Essential for proactive inventory replenishment, automated ordering based on predictions, and supply chain management. AI agents should use this when users ask "order 20 tonnes of wheat for silo 3", "schedule a delivery for silo 5 next week", or need to place delivery orders based on low stock predictions.
+
+Create a new grain delivery order for a specific silo
+- **get_current_level**: Returns fill percentage, remaining tonnes, current level height, and last update timestamp. Essential for real-time inventory tracking, delivery planning, and stock management. AI agents should use this when users ask "what is the current fill level in silo 2", "how much grain is left in silo 4", or need immediate stock level data for feed planning and delivery decisions.
+
+Get real-time grain fill level for a specific silo
 
 
 ## 💬 Prompt Examples

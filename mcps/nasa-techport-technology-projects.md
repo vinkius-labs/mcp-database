@@ -34,14 +34,6 @@ Connect to **NASA TechPort** to explore the agency's comprehensive resource for 
 
 
 ## Available Tools (29)
-- **search_object_all_data**: Conduct a search for all objects with all fields included
-- **list_organization_types**: List available organization types
-- **list_organizations**: List organizations matching filters
-- **list_programs**: List all programs
-- **list_projects**: Requires updatedSince query parameter.
-
-List available technology project IDs
-- **list_taxonomies**: List taxonomy roots
 - **export_opportunities**: Export funding opportunities
 - **get_api_spec**: Get the Swagger/OpenAPI specification for the API
 - **get_enum**: Get enumerations for a specific field name
@@ -57,14 +49,22 @@ List available technology project IDs
 - **list_contacts**: List contacts in TechPort
 - **list_enums**: List enumerations for various fields used in the API
 - **list_opportunities**: List all funding opportunities
+- **list_organizations**: List organizations matching filters
+- **list_programs**: List all programs
+- **list_projects**: Requires updatedSince query parameter.
+
+List available technology project IDs
+- **list_taxonomies**: List taxonomy roots
 - **list_taxonomy_nodes**: List taxonomy nodes filtered by root ID, level, or code
 - **predict_drex**: Retrieve Destination Area recommendations for a project description
 - **predict_trex**: Retrieve taxonomy recommendations for a technology description
 - **search_object_advanced**: Search on an object type based on complex criteria
+- **search_object_all_data**: Conduct a search for all objects with all fields included
 - **search_object**: Search on a given object type using a query string
 - **search_opportunities**: Search funding opportunities based on passed criteria
 - **search_organizations**: Search organizations based on provided criteria
 - **submit_feedback**: Submit user feedback to the TechPort team
+- **list_organization_types**: List available organization types
 
 
 ## 💬 Prompt Examples

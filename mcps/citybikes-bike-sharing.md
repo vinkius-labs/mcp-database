@@ -33,8 +33,8 @@ Connect to the **CityBikes** API through your AI agent to retrieve live micromob
 
 
 ## Available Tools (2)
-- **get_network**: Get detailed information about a specific bike-sharing network
 - **list_networks**: List all bike-sharing networks
+- **get_network**: Get detailed information about a specific bike-sharing network
 
 
 ## 💬 Prompt Examples
