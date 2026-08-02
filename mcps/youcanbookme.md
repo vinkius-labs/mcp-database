@@ -39,7 +39,7 @@ No more manual filtering through booking dashboards to find an attendee's email.
 
 
 ## Available Tools (10)
-- **list_profiles**: Lists all booking pages (profiles) in the YouCanBook.me account
+- **get_account**: Retrieves details about the YouCanBook.me account and plan
 - **get_profile**: Retrieves detailed configuration for a specific booking page
 - **list_bookings**: Status options: tentative, upcoming, finished, cancelled.
 
@@ -53,8 +53,8 @@ Permanently cancels a booking and notifies the attendee
 Creates a booking intent to initiate the programmatic scheduling process
 - **get_availability**: Retrieves bookable time slots for an active booking intent
 - **confirm_intent**: Finalizes a booking intent, creating the official appointment
-- **get_account**: Retrieves details about the YouCanBook.me account and plan
 - **list_team_members**: Lists all team members assigned to a specific booking page
+- **list_profiles**: Lists all booking pages (profiles) in the YouCanBook.me account
 
 
 ## 💬 Prompt Examples

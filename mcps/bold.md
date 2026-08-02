@@ -37,6 +37,17 @@ Your AI becomes a dedicated payment operations assistant, eliminating context sw
 
 
 ## Available Tools (14)
+- **get_online_payment**: Get details of an online payment
+- **get_payment_link**: Get details of a specific payment link
+- **list_payment_methods**: List accepted payment methods
+- **list_terminals**: ) currently linked to your Bold merchant account, including their serial numbers and connectivity status.
+
+List all bound payment terminals
+- **list_transactions**: List recent payment transactions
+- **list_webhooks**: List configured webhooks
+- **refund_payment**: The refund is processed back to the original payment method and may take 5-10 business days to reflect on the cardholder's statement.
+
+Issue a refund for a processed payment
 - **create_online_payment**: Requires card tokenization details, the amount in COP, and payer information for Colombian anti-fraud compliance.
 
 Process an online card payment
@@ -48,21 +59,10 @@ Generate a shareable payment link
 Register a new webhook endpoint
 - **delete_webhook**: Remove a webhook endpoint
 - **get_account_balance**: Get current merchant account balance
-- **get_online_payment**: Get details of an online payment
-- **get_payment_link**: Get details of a specific payment link
 - **get_transaction**: Get details of a specific transaction
 - **initiate_terminal_payment**: This requires the terminal serial number and the payment amount in COP.
 
 Trigger a payment on a physical terminal
-- **list_payment_methods**: List accepted payment methods
-- **list_terminals**: ) currently linked to your Bold merchant account, including their serial numbers and connectivity status.
-
-List all bound payment terminals
-- **list_transactions**: List recent payment transactions
-- **list_webhooks**: List configured webhooks
-- **refund_payment**: The refund is processed back to the original payment method and may take 5-10 business days to reflect on the cardholder's statement.
-
-Issue a refund for a processed payment
 
 
 ## 💬 Prompt Examples

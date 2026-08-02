@@ -27,7 +27,6 @@ Power users, multi-disciplinary analysts, data scientists, and anyone building O
 
 
 ## Available Tools (30)
-- **search_regions**: List World Bank geographic regions
 - **get_indicator_data**: g. SP.POP.TOTL) and country code (e.g. BRA, WLD).
 
 Get any World Bank indicator for any country/region
@@ -51,20 +50,21 @@ Search the catalog of 29,506 World Bank indicators
 - **get_co2_emissions**: Get CO2 emissions (metric tons per capita)
 - **get_renewable_energy**: Get renewable energy consumption (% of total)
 - **get_electricity_access**: Get access to electricity (% of population)
-- **get_forest_area**: Get forest area (% of land area)
-- **get_internet_usage**: Get Individuals using the Internet (% of population)
 - **get_research_dev_expenditure**: Get Research and development expenditure (% of GDP)
-- **get_external_debt**: Get Total external debt stocks (% of GNI)
-- **get_women_in_parliament**: Get Proportion of seats held by women in national parliaments (%)
 - **list_topics**: List all World Bank Topics (Categories)
 - **get_agriculture_gdp**: Get Agriculture, forestry, and fishing, value added (% of GDP)
 - **list_countries**: List World Bank countries
+- **search_regions**: List World Bank geographic regions
 - **search_income_levels**: g., HIC, LIC).
 
 List World Bank income levels
 - **get_gdp**: Get Gross Domestic Product (GDP) in current US$
 - **get_gdp_growth**: Get annual GDP growth percentage
 - **get_inflation**: Get inflation rate (consumer prices, annual %)
+- **get_forest_area**: Get forest area (% of land area)
+- **get_internet_usage**: Get Individuals using the Internet (% of population)
+- **get_external_debt**: Get Total external debt stocks (% of GNI)
+- **get_women_in_parliament**: Get Proportion of seats held by women in national parliaments (%)
 
 
 ## 💬 Prompt Examples

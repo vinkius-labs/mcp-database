@@ -34,12 +34,12 @@ Connect your **Zilliz Cloud** cluster to any AI agent to automate your vector da
 
 
 ## Available Tools (10)
-- **list_collections**: List all collections in the Zilliz cluster
 - **create_collection**: Requires a JSON body.
 
 Create a new vector collection
 - **delete_entities**: Delete entities from a collection
 - **describe_collection**: Get details for a specific collection
+- **list_collections**: List all collections in the Zilliz cluster
 - **drop_collection**: Drop a collection
 - **insert_entities**: Insert data into a collection
 - **load_collection**: Load a collection into memory

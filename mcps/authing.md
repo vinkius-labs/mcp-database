@@ -37,8 +37,8 @@ Empower your AI agent to orchestrate your entire identity infrastructure with **
 ## Available Tools (10)
 - **create_user**: Create a new user
 - **get_audit_logs**: Get security audit logs
-- **get_security_settings**: Get pool security settings
 - **get_user**: Get user details
+- **get_security_settings**: Get pool security settings
 - **list_applications**: List registered applications
 - **list_groups**: List user groups
 - **list_organizations**: List organizations

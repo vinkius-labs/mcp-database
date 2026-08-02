@@ -37,9 +37,9 @@ Connect your **ZenHub** account to any AI agent to streamline your agile project
 - **get_repo_board**: Get the ZenHub board for a repository
 - **get_epic_data**: Get details for a specific epic
 - **list_repo_epics**: List all ZenHub epics for a repository
-- **set_issue_estimate**: Set the story point estimate for an issue
 - **get_zenhub_issue_data**: Get ZenHub-specific metadata for a GitHub issue
 - **move_issue_between_pipelines**: Move an issue to a different pipeline
+- **set_issue_estimate**: Set the story point estimate for an issue
 - **list_release_reports**: List release reports for a repository
 - **get_workspace_board**: Get the ZenHub board for a specific workspace and repository
 

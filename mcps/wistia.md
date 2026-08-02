@@ -7,58 +7,42 @@
 
 **Category:** [marketing-automation](../categories/marketing-automation.md)
 
-Manage video assets, projects, and engagement analytics on Wistia — the leading video marketing platform for business.
+Manage videos, projects, and performance analytics on Wistia with AI agents.
 
 ## Description
-Connect your **Wistia** account to any AI agent and take control of your video marketing infrastructure through natural conversation.
+Connect your **Wistia** video marketing account to any AI agent to automate your media library management and performance monitoring through natural conversation. Wistia provides a premier platform for B2B video hosting, delivery, and detailed engagement tracking.
 
 ### What you can do
 
-- **Media Management** — List all video and audio assets in your account, including their durations, play counts, and direct asset URLs
-- **Project Organization** — Create, browse, and manage folders (projects) to keep your media library organized across teams
-- **Engagement Insights** — Retrieve detailed play rates, average percent watched, and viewer statistics directly from your agent
-- **Metadata Control** — Update video titles and descriptions or permanently delete obsolete assets and all their derivatives
-- **Remote Ingestion** — Trigger Wistia to download and host video content from any public URL into a specific project
-- **Deep Discovery** — Quickly find unique hashed IDs for medias and projects required for automated marketing workflows
-- **Asset Auditing** — Browse organizational containers and retrieve technical metadata for high-quality content delivery
+- **Media Orchestration** — List and retrieve detailed metadata for your videos (medias), including titles, descriptions, and statuses.
+- **Project Management** — Organize your content by creating and managing hierarchical projects (folders) directly from the AI interface.
+- **Engagement Analytics** — Retrieve real-time performance stats for specific videos or get an aggregated overview of your account-wide metrics.
+- **Metadata Control** — Programmatically update video details and manage captions to ensure your media library is always optimized.
+- **Asset Delivery** — Fetch player configurations and thumbnail URLs to streamline content distribution across your digital channels.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Wistia API Token
-3. Start managing your videos and projects through Claude, Cursor, or any MCP-compatible client
-
-No more manual logging into the Wistia dashboard to find a video link. Your AI agent becomes your video operations manager.
+2. Enter your Wistia API Token from your account settings
+3. Start managing your video assets from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Marketing Teams** — automate video metadata updates and monitor campaign engagement through chat
-- **Content Managers** — organize large media libraries into projects and verify upload status from remote URLs
-- **Product Developers** — quickly retrieve hashed IDs and direct asset URLs for embedded video applications
-- **Data Analysts** — surface video performance metrics and viewer statistics without manual data exports
+- **Marketing Teams** — automate the monitoring of video engagement and organize media assets via natural language.
+- **Video Producers** — quickly update video titles and retrieve media links without leaving the project workspace.
+- **Business Analysts** — get instant account-wide video performance reports and visitor metrics straight through the chat.
 
 
-## Available Tools (10)
-- **create_new_project**: Provide a descriptive name.
-
-Creates a new project to organize media
-- **delete_media_asset**: This action is irreversible.
-
-Permanently deletes a Wistia media asset and all its derivatives
-- **delete_wistia_project**: Note: All videos in the project will be lost. This is irreversible.
-
-Permanently deletes a Wistia project and all media contained within it
-- **get_engagement_statistics**: Retrieves detailed engagement and viewer statistics for a video
-- **get_media_details**: Retrieves comprehensive metadata for a specific Wistia media asset
-- **get_project_details**: Retrieves details for a specific Wistia project, including all contained media
-- **list_wistia_medias**: Lists all media assets (videos, audios) in the Wistia account
-- **list_wistia_projects**: Lists all projects (folders) in the Wistia account
-- **update_media_metadata**: Provide the hashed ID and a JSON object of attributes.
-
-Updates the metadata (name, description) of a specific Wistia media
-- **upload_video_via_url**: Provide the source URL, target project ID, and a name.
-
-Triggers Wistia to download and host a video from a public URL
+## Available Tools (9)
+- **create_project**: Create a new project
+- **get_account_analytics**: Get account-wide stats
+- **get_video_details**: Get metadata for a video
+- **get_project_details**: Get metadata for a project
+- **get_video_stats**: Get video analytics
+- **list_video_captions**: List captions for a video
+- **list_projects**: List your Wistia projects
+- **list_videos**: List all videos (medias)
+- **update_video_details**: Modify video metadata
 
 
 ## 💬 Prompt Examples
@@ -66,38 +50,27 @@ Triggers Wistia to download and host a video from a public URL
 Here are some examples of how you can interact with the **Wistia** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my videos in Wistia."
+> "List all active projects in my Wistia account."
 
 **🤖 AI Agent:**
-> I found 12 videos in your account. The most recent are 'Spring Launch Overview' (ID: abc123def), 'Product Demo v2' (ID: ghi456jkl), and 'Customer Story' (ID: mno789pqr). Would you like to see the performance stats for any of these?
+> I've retrieved your projects. You have 4 active folders: 'Product Demos', 'Customer Testimonials', 'Internal Training', and '2024 Ad Campaign'. Which one should we check?
 
 ---
 
 **👤 You:**
-> "What are the engagement stats for the video with ID 'abc123def'?"
+> "Show the engagement stats for video ID 'vid123'."
 
 **🤖 AI Agent:**
-> Engagement summary for abc123def: Play rate is 42%, and the average watch time is 68%. Total plays: 1,250. The video is performing well compared to your project average.
-
----
-
-**👤 You:**
-> "Upload the video from 'https://example.com/promo.mp4' to my 'Campaigns' project."
-
-**🤖 AI Agent:**
-> Success! I've triggered Wistia to ingest 'promo.mp4' into your 'Campaigns' project (ID: proj-xyz). It will appear in your library once processing is complete. Is there anything else you need me to organize?
+> Fetching analytics... Video 'vid123' has 1,250 total plays, with an average engagement of 68% and 420 unique visitors. Would you like a more detailed breakdown?
 
 
 ## ❓ FAQ
 
-**Q: Can I check how many people finished watching a specific video?**
-Yes. The `get_engagement_statistics` tool provides the average percent watched and other deep engagement metrics for any video, allowing you to analyze audience retention through chat.
+**Q: How do I find my Wistia API Token?**
+Log in to Wistia, navigate to **Account Settings** > **API**, and generate a new token or copy an existing one from the list.
 
-**Q: How do I upload a video to Wistia if I only have a direct URL?**
-You can use the `upload_video_via_url` tool. Simply provide the source URL and the target project ID, and Wistia will handle the ingestion and hosting of that video for you.
-
-**Q: Is it possible to see the direct download link for my video files?**
-Absolutely. Using the `get_media_details` tool, your agent can retrieve full technical properties, including the direct URLs for original files and transcoded versions hosted on Wistia's CDN.
+**Q: What is a 'hashed_id'?**
+A `hashed_id` is a unique, short identifier assigned to every video and project in Wistia, typically found in the URL when viewing an asset.
 
 
 ## Installation & Usage

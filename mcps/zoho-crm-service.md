@@ -37,15 +37,15 @@ Create a new knowledge base article in Zoho CRM with title, question, answer, an
 - **zoho_list_cases**: Returns case subject, status (New/Assigned/Closed), priority (High/Medium/Low), case origin (Phone/Email/Web/Chat), case reason, and owner. Cases track customer support issues. Use when the user asks about open support cases, case workload, or support queue status.
 
 List support cases in Zoho CRM with subject, status, priority, origin channel, and assigned owner
-- **zoho_list_solutions**: Solutions are knowledge base articles with a Question and Answer format. Returns title, status (Draft/Reviewed/Published), and content. Use when the user asks about existing KB articles, wants to find documented solutions, or needs to audit the knowledge base.
-
-List knowledge base solutions/articles in Zoho CRM with title, question, status, and review information
 - **zoho_search_cases**: Returns matching cases with subject, status, priority, origin, and owner. Use when the user wants to find a specific support case, look up a customer issue, or check the status of a reported problem.
 
 Search Zoho CRM support cases by subject or keyword to find specific customer issues
 - **zoho_search_solutions**: Returns matching KB articles with title, status, and content. Use when the user asks "do we have a KB article about X?" or wants to find existing documentation before creating a new solution.
 
 Search the Zoho CRM knowledge base for solutions/articles by keyword to find documented answers to common issues
+- **zoho_list_solutions**: Solutions are knowledge base articles with a Question and Answer format. Returns title, status (Draft/Reviewed/Published), and content. Use when the user asks about existing KB articles, wants to find documented solutions, or needs to audit the knowledge base.
+
+List knowledge base solutions/articles in Zoho CRM with title, question, status, and review information
 - **zoho_update_case**: Only specified fields change. Common operations: set Status to "Closed" when resolved, escalate Priority to "High", or update Subject for clarity. Use when a case progresses or needs correction.
 
 Update an existing Zoho CRM case — change status, priority, or subject to reflect resolution progress

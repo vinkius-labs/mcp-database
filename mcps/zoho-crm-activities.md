@@ -28,9 +28,6 @@ Connect **Zoho CRM** to any AI agent — manage your entire CRM without switchin
 
 
 ## Available Tools (8)
-- **zoho_create_call**: Subject is required. Call_Type: Outbound or Inbound. Call_Purpose describes the reason (Prospecting, Follow-up, Demo, etc.). Call_Start_Time uses ISO format. Use to log completed calls or schedule upcoming ones.
-
-Log a call in Zoho CRM with subject, type (Inbound/Outbound), purpose, and start time for activity tracking
 - **zoho_create_event**: Event_Title, Start_DateTime, and End_DateTime are required (ISO format). Events appear in the Zoho CRM calendar and can be linked to contacts, leads, and deals. Use to schedule meetings, demos, or any time-bound activity.
 
 Create a calendar event in Zoho CRM with title, start/end times, and description for meetings and appointments
@@ -52,6 +49,9 @@ List Zoho CRM tasks with subject, due date, status (Not Started/In Progress/Comp
 - **zoho_update_task**: Only specified fields change. Common operations: set Status to "Completed" when done, change Priority for escalation, push Due_Date when rescheduling.
 
 Update an existing Zoho CRM task — change status, priority, due date, or subject to reflect progress
+- **zoho_create_call**: Subject is required. Call_Type: Outbound or Inbound. Call_Purpose describes the reason (Prospecting, Follow-up, Demo, etc.). Call_Start_Time uses ISO format. Use to log completed calls or schedule upcoming ones.
+
+Log a call in Zoho CRM with subject, type (Inbound/Outbound), purpose, and start time for activity tracking
 
 
 ## 💬 Prompt Examples

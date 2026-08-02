@@ -37,10 +37,10 @@ Empower your AI agent to orchestrate your entire data enrichment and verificatio
 ## Available Tools (6)
 - **get_exchange_rate**: Get current exchange rates between two currencies
 - **get_holidays**: List public holidays for a country and year
+- **geolocate_ip**: Get geographic details for an IP address
 - **get_timezone**: Get current time and timezone details for a location
 - **validate_vat**: Validate a VAT number and retrieve company details
 - **validate_email**: Verify if an email address is valid and deliverable
-- **geolocate_ip**: Get geographic details for an IP address
 
 
 ## 💬 Prompt Examples

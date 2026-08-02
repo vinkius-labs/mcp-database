@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your global communication and high-precisio
 
 
 ## Available Tools (10)
-- **check_caiyun_status**: Check API connectivity
-- **detect_language_via_auto**: Identify language of text
 - **translate_en_to_zh**: Translate English to Chinese
 - **translate_ja_to_zh**: Translate Japanese to Chinese
+- **check_caiyun_status**: Check API connectivity
+- **detect_language_via_auto**: Identify language of text
 - **translate_ko_to_zh**: Translate Korean to Chinese
 - **translate_multiple_lines**: Translate multiple text blocks
 - **translate_text**: Translate text list
