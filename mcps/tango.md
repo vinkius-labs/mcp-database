@@ -35,14 +35,14 @@ Connect your **Tango (formerly Tango Card)** reward platform account to any AI a
 
 
 ## Available Tools (12)
-- **create_account**: Create a new funding account
+- **get_exchange_rates**: Get currency exchange rates
 - **create_customer**: Create a new customer
+- **get_order**: Get order status
+- **create_account**: Create a new funding account
 - **create_order**: Place a reward order
 - **get_account**: Get account balance
 - **get_catalog**: List available reward brands
 - **get_customer**: Get customer details
-- **get_exchange_rates**: Get currency exchange rates
-- **get_order**: Get order status
 - **list_accounts**: List accounts for a customer
 - **list_customers**: List all customers
 - **list_funding_sources**: List funding sources

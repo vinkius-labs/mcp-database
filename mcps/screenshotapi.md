@@ -36,12 +36,6 @@ No more manual 'Print Screen' or browser debugging. Your AI acts as a dedicated 
 
 
 ## Available Tools (12)
-- **capture_clean_screenshot_no_ads**: Capture screenshot without ads or cookies
-- **capture_dark_mode_screenshot**: Capture screenshot in dark mode
-- **capture_delayed_screenshot**: Useful for lazy-loading elements.
-
-Capture screenshot after a delay
-- **capture_new_screenshot_no_cache**: Force a fresh screenshot bypass cache
 - **capture_full_length_screenshot**: Capture the entire length of a webpage
 - **capture_mobile_view_screenshot**: Capture a screenshot using a mobile viewport
 - **convert_webpage_to_pdf**: Save a webpage as a PDF file
@@ -54,6 +48,12 @@ Capture a standard screenshot of a URL
 
 Verify Screenshot API status
 - **get_api_quota_info**: Get account API usage information
+- **capture_clean_screenshot_no_ads**: Capture screenshot without ads or cookies
+- **capture_dark_mode_screenshot**: Capture screenshot in dark mode
+- **capture_delayed_screenshot**: Useful for lazy-loading elements.
+
+Capture screenshot after a delay
+- **capture_new_screenshot_no_cache**: Force a fresh screenshot bypass cache
 
 
 ## 💬 Prompt Examples

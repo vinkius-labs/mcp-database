@@ -28,8 +28,8 @@ Connect your **Short.io** account to any AI agent and simplify your branded link
 
 
 ## Available Tools (11)
-- **create_bulk_links**: Create multiple shortened links at once
 - **delete_link**: Delete a shortened link
+- **create_bulk_links**: Create multiple shortened links at once
 - **get_domain**: Get details for a custom domain
 - **get_link_clicks**: Get click analytics for a link
 - **list_tags**: List all link tags

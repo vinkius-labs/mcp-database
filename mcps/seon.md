@@ -36,20 +36,20 @@ No more manual background checks or complex fraud rule management. Your AI acts 
 
 
 ## Available Tools (12)
+- **get_account_info**: Get account details
+- **check_fraud**: Perform a comprehensive fraud check
+- **check_ip**: Get IP risk data
+- **check_phone**: Get phone intelligence
+- **get_transaction**: Get transaction details
+- **list_aml_monitors**: List AML monitors
+- **list_lists**: List custom blacklists/whitelists
+- **list_rules**: List fraud rules
 - **add_label**: Add a feedback label
 - **add_to_list**: ) to a specific blacklist or whitelist.
 
 Add an item to a list
 - **aml_screening**: Perform AML screening
 - **check_email**: Get email digital footprint
-- **check_fraud**: Perform a comprehensive fraud check
-- **check_ip**: Get IP risk data
-- **check_phone**: Get phone intelligence
-- **get_account_info**: Get account details
-- **get_transaction**: Get transaction details
-- **list_aml_monitors**: List AML monitors
-- **list_lists**: List custom blacklists/whitelists
-- **list_rules**: List fraud rules
 
 
 ## 💬 Prompt Examples

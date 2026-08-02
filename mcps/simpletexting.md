@@ -36,6 +36,8 @@ No more manual typing or list exporting. Your AI acts as a dedicated marketing m
 
 
 ## Available Tools (12)
+- **update_subscriber_info**: Modify contact data
+- **schedule_sms_delivery**: Schedule future SMS
 - **remove_subscriber**: Delete contact
 - **list_audience_segments**: List dynamic segments
 - **get_api_status**: Check connection
@@ -45,9 +47,7 @@ No more manual typing or list exporting. Your AI acts as a dedicated marketing m
 - **list_contact_lists**: List static groups
 - **list_active_webhooks**: Get event configs
 - **send_sms_message**: Send text message
-- **update_subscriber_info**: Modify contact data
 - **create_subscriber**: Add new contact
-- **schedule_sms_delivery**: Schedule future SMS
 
 
 ## 💬 Prompt Examples

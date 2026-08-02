@@ -34,13 +34,13 @@ Connect your **Ticket Tailor** account to any AI agent and simplify how you mana
 
 
 ## Available Tools (5)
-- **get_event_details**: Get details for a specific event
 - **list_events**: List Ticket Tailor events
 - **list_issued_tickets**: List individual issued tickets
 - **list_event_orders**: Optionally filter by event ID.
 
 List orders
 - **list_ticket_types**: List ticket types for an event
+- **get_event_details**: Get details for a specific event
 
 
 ## 💬 Prompt Examples

@@ -27,30 +27,30 @@ Localize your projects efficiently using AI Agents with the official Transifex i
 
 
 ## Available Tools (10)
-- **get_resource_string**: Get a specific resource string by ID
-- **get_resource**: g., o:org-slug:p:project-slug:r:resource-slug).
-
-Get a specific resource by ID
-- **list_languages**: List supported languages in Transifex
-- **list_organizations**: List all organizations the user belongs to
-- **list_projects**: Optionally filter by organization ID.
-
-List projects in Transifex
-- **list_resource_strings**: This requires the resource ID to filter the strings.
-
-List resource strings (source strings) for a specific resource
-- **list_resources**: Optionally filter by project ID.
-
-List resources in Transifex
-- **get_language**: g., l:en, l:pt_BR).
-
-Get a specific language by ID
 - **get_organization**: g., o:org-slug).
 
 Get a specific organization by ID
 - **get_project**: g., o:org-slug:p:project-slug).
 
 Get a specific project by ID
+- **get_resource**: g., o:org-slug:p:project-slug:r:resource-slug).
+
+Get a specific resource by ID
+- **list_organizations**: List all organizations the user belongs to
+- **list_resources**: Optionally filter by project ID.
+
+List resources in Transifex
+- **get_resource_string**: Get a specific resource string by ID
+- **list_languages**: List supported languages in Transifex
+- **list_projects**: Optionally filter by organization ID.
+
+List projects in Transifex
+- **list_resource_strings**: This requires the resource ID to filter the strings.
+
+List resource strings (source strings) for a specific resource
+- **get_language**: g., l:en, l:pt_BR).
+
+Get a specific language by ID
 
 
 ## 💬 Prompt Examples

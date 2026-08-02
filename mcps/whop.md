@@ -34,8 +34,9 @@ Connect your **Whop** account to any AI agent to automate your digital commerce 
 
 
 ## Available Tools (11)
-- **create_promo_code**: Create a new promo code
 - **get_membership**: Get details for a specific membership
+- **cancel_membership**: Cancel a user membership
+- **create_promo_code**: Create a new promo code
 - **list_invoices**: List customer invoices
 - **get_me**: Get current Whop user or company details
 - **list_memberships**: List user memberships
@@ -44,7 +45,6 @@ Connect your **Whop** account to any AI agent to automate your digital commerce 
 - **list_products**: List all Whop products
 - **list_promo_codes**: List promotional codes
 - **list_reviews**: List product reviews
-- **cancel_membership**: Cancel a user membership
 
 
 ## 💬 Prompt Examples

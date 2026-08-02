@@ -36,12 +36,12 @@ No more wrestling with multiple carrier websites to find your packages. Your AI 
 
 
 ## Available Tools (12)
-- **get_tracking_results**: Get package status
 - **list_bulk_trackers**: List bulk shipments
 - **list_couriers**: List supported carriers
 - **list_active_trackers**: List all trackers
 - **get_live_tracking**: Live package update
 - **find_tracker_by_number**: Lookup by tracking number
+- **get_tracking_results**: Get package status
 - **search_couriers**: g. FedEx, Correios).
 
 Find carrier codes

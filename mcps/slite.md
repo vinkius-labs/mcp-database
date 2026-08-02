@@ -28,6 +28,8 @@ Manage your Slite knowledge base, notes, and AI insights with AI agents.
 
 
 ## Available Tools (12)
+- **list_users**: List organization users
+- **search_notes**: Search for notes in your workspace
 - **ask_slite_ai**: Ask a question to Slite AI
 - **create_note**: Create a new note in Slite
 - **flag_outdated**: Flag a document as needing review
@@ -36,8 +38,6 @@ Manage your Slite knowledge base, notes, and AI insights with AI agents.
 - **list_note_children**: List sub-notes of a parent
 - **list_collections**: List all structured collections
 - **list_notes**: List all notes in Slite
-- **list_users**: List organization users
-- **search_notes**: Search for notes in your workspace
 - **update_note**: Update an existing note
 - **verify_note**: Mark a document as verified
 

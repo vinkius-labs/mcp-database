@@ -34,6 +34,15 @@ Connect your **Typebot** account to any AI agent and simplify how you build, man
 
 
 ## Available Tools (8)
+- **get_typebot_details**: Essential for reviewing the bot logic.
+
+Get details and structure for a specific typebot
+- **start_chat_session**: Useful for testing bot flows or automated interactions.
+
+Programmatically start a new bot conversation
+- **list_typebots**: Can be filtered by a specific workspace ID.
+
+List all conversational typebots
 - **list_folders**: Folders are used to group related typebots.
 
 List all folders in a workspace
@@ -46,16 +55,7 @@ List all accessible Typebot workspaces
 - **publish_typebot**: Requires the unique bot ID.
 
 Publish and deploy the latest bot changes
-- **start_chat_session**: Useful for testing bot flows or automated interactions.
-
-Programmatically start a new bot conversation
 - **delete_typebot**: Permanently delete a typebot
-- **get_typebot_details**: Essential for reviewing the bot logic.
-
-Get details and structure for a specific typebot
-- **list_typebots**: Can be filtered by a specific workspace ID.
-
-List all conversational typebots
 
 
 ## 💬 Prompt Examples

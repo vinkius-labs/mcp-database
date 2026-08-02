@@ -36,14 +36,14 @@ No more juggling spreadsheets or multiple browser tabs to see where your team is
 
 
 ## Available Tools (9)
+- **get_job**: Get details for a specific job
+- **list_categories**: List job categories
+- **list_contacts**: List all company contacts
 - **create_job**: Requires description and company_uuid.
 
 Create a new ServiceM8 job
 - **get_company**: Get details for a specific company
-- **get_job**: Get details for a specific job
-- **list_categories**: List job categories
 - **list_companies**: List all companies (clients)
-- **list_contacts**: List all company contacts
 - **list_job_activity**: Get activity history for a job
 - **list_jobs**: List all ServiceM8 jobs
 - **list_staff**: List ServiceM8 staff members
