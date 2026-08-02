@@ -35,6 +35,11 @@ Connect your **Zendesk Sell** (formerly Base CRM) account to any AI agent to aut
 
 ## Available Tools (11)
 - **list_sales_contacts**: List all sales contacts (qualified prospects)
+- **delete_sales_deal**: Remove a deal from the account
+- **get_sales_contact_details**: Get details for a specific contact
+- **get_deal_details**: Get details for a specific sales deal
+- **get_lead_details**: Get details for a specific lead
+- **list_sales_leads**: List all sales leads
 - **create_sales_contact**: Requires a JSON body with contact details.
 
 Create a new person or organization contact
@@ -45,11 +50,6 @@ Create a new sales opportunity (deal)
 
 Create a new sales lead
 - **list_sales_deals**: List all sales deals (opportunities)
-- **delete_sales_deal**: Remove a deal from the account
-- **get_sales_contact_details**: Get details for a specific contact
-- **get_deal_details**: Get details for a specific sales deal
-- **get_lead_details**: Get details for a specific lead
-- **list_sales_leads**: List all sales leads
 - **update_existing_deal**: Update details for an existing deal
 
 

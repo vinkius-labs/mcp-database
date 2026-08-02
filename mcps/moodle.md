@@ -35,16 +35,16 @@ Connect your **Moodle** LMS account to your AI agent and streamline your educati
 
 
 ## Available Tools (10)
-- **get_course_assignments**: List assignments in courses
-- **get_course_completion**: Get course completion status
-- **get_course_groups**: List groups in a course
-- **get_courses**: List Moodle courses
 - **get_enrolled_users**: List users in a course
 - **get_course_grades**: Get course grades
 - **get_course_quizzes**: List quizzes in courses
 - **get_users**: Search for Moodle users
 - **get_course_workshops**: List workshops in courses
 - **send_message**: Send an instant message
+- **get_course_assignments**: List assignments in courses
+- **get_course_completion**: Get course completion status
+- **get_course_groups**: List groups in a course
+- **get_courses**: List Moodle courses
 
 
 ## 💬 Prompt Examples

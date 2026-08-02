@@ -36,12 +36,6 @@ No more switching between browser tabs to compare hotels. Your AI agent handles 
 
 
 ## Available Tools (12)
-- **book_hotel**: This is a write action that results in an actual reservation. Required fields: property_id, check_in_date, check_out_date, room_id, rate_plan_id, guest first name, last name, and email. The room_id and rate_plan_id should be obtained from the check_availability or get_rate_plans tools. Include billing address and special requests if the user provides them. On success, returns an itinerary ID that can be used to retrieve or cancel the booking. ALWAYS confirm booking details with the user before executing this action.
-
-Book a hotel reservation through Expedia EAN
-- **cancel_itinerary**: This is a write action that modifies a real reservation. Whether a refund is available depends on the cancellation policy of the specific rate plan that was booked. Some rate plans are non-refundable. ALWAYS confirm the cancellation with the user and inform them of the applicable cancellation policy before executing this action. Returns the updated itinerary with cancellation status and any refund details.
-
-Cancel a hotel booking by itinerary ID
 - **check_availability**: Returns available room types, bed configurations, occupancy limits, cancellation policies, and pricing. Use this after a user has identified a hotel of interest to see what rooms are available for their desired stay dates. Required: property_id, check_in_date, check_out_date.
 
 Check room availability for a specific hotel property
@@ -72,6 +66,12 @@ Search for hotels using the Expedia EAN API
 - **search_regions**: This is the first step in a hotel search — you need a region_id to search for hotels. For example, searching for "Paris" returns the city region, specific neighborhoods, and nearby airports. Use this to help the user identify the correct destination before performing a hotel search. Returns region IDs, names, types, and hierarchy info.
 
 Search for destination regions by name
+- **book_hotel**: This is a write action that results in an actual reservation. Required fields: property_id, check_in_date, check_out_date, room_id, rate_plan_id, guest first name, last name, and email. The room_id and rate_plan_id should be obtained from the check_availability or get_rate_plans tools. Include billing address and special requests if the user provides them. On success, returns an itinerary ID that can be used to retrieve or cancel the booking. ALWAYS confirm booking details with the user before executing this action.
+
+Book a hotel reservation through Expedia EAN
+- **cancel_itinerary**: This is a write action that modifies a real reservation. Whether a refund is available depends on the cancellation policy of the specific rate plan that was booked. Some rate plans are non-refundable. ALWAYS confirm the cancellation with the user and inform them of the applicable cancellation policy before executing this action. Returns the updated itinerary with cancellation status and any refund details.
+
+Cancel a hotel booking by itinerary ID
 
 
 ## 💬 Prompt Examples

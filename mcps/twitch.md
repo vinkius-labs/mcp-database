@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your entire streaming ecosystem on **Twitch
 
 ## Available Tools (10)
 - **get_followed_channels**: Get channels followed by a user
-- **get_channel_followers**: Get followers for a channel
-- **get_channel_info**: Get channel information
-- **get_clips**: Get clips for a broadcaster
-- **get_streams**: Get live streams
 - **get_subscriptions**: Get broadcaster subscriptions
 - **get_top_games**: Get top games on Twitch
 - **get_users**: Get information about Twitch users
 - **get_videos**: Get videos for a user
 - **search_channels**: Search for Twitch channels
+- **get_channel_followers**: Get followers for a channel
+- **get_channel_info**: Get channel information
+- **get_clips**: Get clips for a broadcaster
+- **get_streams**: Get live streams
 
 
 ## 💬 Prompt Examples

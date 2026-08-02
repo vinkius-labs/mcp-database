@@ -37,8 +37,8 @@ Connect your AI agent to the world's largest travel platform. The TripAdvisor Co
 - **get_location_details**: Get comprehensive details for a specific location using its ID
 - **get_location_photos**: Retrieve professional and user photos for a specific location
 - **get_location_reviews**: Retrieve the latest user reviews for a specific location
-- **get_nearby_locations**: Search for locations near a specific geographic coordinate
 - **search_location**: Search for hotels, restaurants, and attractions by name or address
+- **get_nearby_locations**: Search for locations near a specific geographic coordinate
 
 
 ## 💬 Prompt Examples

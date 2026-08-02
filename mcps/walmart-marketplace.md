@@ -30,14 +30,14 @@ Specifically built for **3P Sellers**, **E-Commerce Operators**, and **Catalog I
 
 
 ## Available Tools (8)
-- **wm_bulk_price_update**: Trigger structural feed array proxies safely uploading bulk payload tracking parameters matrices seamlessly
-- **wm_get_taxonomy**: Poll safely dynamic category classification structures allocating explicitly Walmart structural node trees correctly
+- **wm_setup_promotions**: Execute explicitly markdown and clearance logical arrays explicitly resolving structured payloads safely
 - **wm_get_item_status**: Analyze explicit proxy validations parsing lifecycle, buy-box limits, and errors over specific SKU constraints
+- **wm_get_taxonomy**: Poll safely dynamic category classification structures allocating explicitly Walmart structural node trees correctly
 - **wm_list_items**: Extract actively published 3P seller catalog explicit arrays tracing cleanly Walmart hosted structures
 - **wm_retire_item**: Cleanly explicitly extract bounds unpublishing the active array securely masking from public constraints
 - **wm_set_price**: Execute explicitly pricing proxy limits mapping the retail structured limits dynamically bounding safely
-- **wm_setup_promotions**: Execute explicitly markdown and clearance logical arrays explicitly resolving structured payloads safely
 - **wm_update_inventory**: Allocate physical logistic stock actively resolving unit values evaluating gracefully proxy limits natively
+- **wm_bulk_price_update**: Trigger structural feed array proxies safely uploading bulk payload tracking parameters matrices seamlessly
 
 
 ## 💬 Prompt Examples

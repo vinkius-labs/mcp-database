@@ -36,9 +36,9 @@ Connect to **Hacker News** (Y Combinator) and take full control of your tech new
 
 
 ## Available Tools (3)
+- **get_item**: Read the detailed contents of a specific Hacker News item (a story, comment, or poll) by its ID. Returns HTML comments converted cleanly to Markdown
 - **top_stories**: Fetch the current Top stories on the Hacker News front page
 - **new_stories**: Fetch the most recently submitted stories on Hacker News
-- **get_item**: Read the detailed contents of a specific Hacker News item (a story, comment, or poll) by its ID. Returns HTML comments converted cleanly to Markdown
 
 
 ## 💬 Prompt Examples

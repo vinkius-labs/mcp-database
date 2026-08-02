@@ -35,18 +35,18 @@ Connect your **Amazon S3** environment to your AI agent to unlock professional c
 
 
 ## Available Tools (10)
-- **list_buckets**: List S3 buckets
-- **create_bucket**: Create an S3 bucket
 - **delete_bucket**: Delete an S3 bucket
 - **list_objects**: Can be filtered by prefix.
 
 List objects in bucket
+- **get_object_metadata**: Get object metadata
 - **get_object_data**: Get object content
 - **put_object**: Upload an object
 - **delete_object**: Delete an object
 - **get_bucket_policy**: Get bucket policy
 - **get_bucket_acl**: Get bucket ACL
-- **get_object_metadata**: Get object metadata
+- **list_buckets**: List S3 buckets
+- **create_bucket**: Create an S3 bucket
 
 
 ## 💬 Prompt Examples

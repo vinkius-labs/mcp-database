@@ -38,12 +38,12 @@ Empower your AI agent to orchestrate your entire video ecosystem on **Vimeo**, t
 - **delete_video**: Delete a video from Vimeo
 - **get_me**: Get authenticated user info from Vimeo
 - **get_video**: Get details for a specific video
-- **list_channels**: List channels followed by a user
-- **list_folders**: List folders (projects) for a user
 - **list_groups**: List groups followed by a user
-- **list_showcases**: List showcases (albums) for a user
 - **list_videos**: List videos for a user
+- **list_folders**: List folders (projects) for a user
+- **list_showcases**: List showcases (albums) for a user
 - **search_videos**: Search for public videos on Vimeo
+- **list_channels**: List channels followed by a user
 - **update_video**: Update video metadata
 
 

@@ -35,24 +35,24 @@ Essential for **restaurant owners**, **food delivery managers**, **ghost kitchen
 
 
 ## Available Tools (11)
-- **assign_driver**: Requires order ID and driver ID. Use this to manage your own delivery fleet and coordinate order fulfillment.
-
-Assign a delivery driver to an iFood order
-- **get_business_hours**: Use this to review or verify the current schedule before making changes.
-
-Get operating hours for an iFood store
 - **get_catalog**: Use this to review menu structure, check item availability, or prepare updates to pricing or descriptions.
 
 Get the menu catalog for an iFood store
 - **get_logistics**: Use this to track order fulfillment and coordinate with delivery personnel.
 
 Get logistics/delivery information for an iFood order
-- **get_order_details**: Use this to review order contents before accepting or preparing.
-
-Get complete details of a specific iFood order
 - **get_orders**: Can filter by status: PENDING, ACCEPTED, PREPARING, READY, DISPATCHED, DELIVERED, CANCELLED. Returns order number, customer info, items, totals, and timestamps. Use this to monitor order flow and track pending orders.
 
 List orders for an iFood store
+- **get_business_hours**: Use this to review or verify the current schedule before making changes.
+
+Get operating hours for an iFood store
+- **get_order_details**: Use this to review order contents before accepting or preparing.
+
+Get complete details of a specific iFood order
+- **assign_driver**: Requires order ID and driver ID. Use this to manage your own delivery fleet and coordinate order fulfillment.
+
+Assign a delivery driver to an iFood order
 - **get_store_details**: Use this to review store configuration before making updates.
 
 Get detailed information about a specific iFood store

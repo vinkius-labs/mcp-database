@@ -37,15 +37,6 @@ Specifically built for **Fleet Managers**, **Automotive Logistics Engineers**, a
 
 
 ## Available Tools (8)
-- **tesla_trigger_climate**: Trigger explicit wake_up first parsing.
-
-Engage explicitly the internal auto-conditioning climate system cleanly resolving temperature states before arrival
-- **tesla_control_charge_port**: Call wake_up securely first executing correctly.
-
-Engage explicitly the charging port relay actively isolating the power array bounds smoothly
-- **tesla_control_doors**: Wake up first safely implicitly executing physical relays.
-
-Actuate literal physical lock parameters securing or bounding native access inside the vehicle reliably
 - **tesla_flash_lights**: Use tesla_wake_up_vehicle first resolving safely.
 
 Trigger physical external headlight flash mechanisms securely bounding locating target implicitly
@@ -56,9 +47,18 @@ Extracts master telemetry matrices fetching explicitly SoC battery, Odometer, ex
 
 Actuate the physical hardware horn mechanism remotely triggering a loud alert locating the fleet proxy actively
 - **tesla_list_vehicles**: Dumps explicit physical vehicle structs enumerating the exact active fleet array native list
+- **tesla_trigger_climate**: Trigger explicit wake_up first parsing.
+
+Engage explicitly the internal auto-conditioning climate system cleanly resolving temperature states before arrival
 - **tesla_wake_up_vehicle**: Wait 10 seconds explicitly after calling this.
 
 CRITICAL FIRST STEP: Trigger Explicit ignition matrices asserting the physical vehicle wakes from idle sleep states bounding actively over SaaS proxies
+- **tesla_control_charge_port**: Call wake_up securely first executing correctly.
+
+Engage explicitly the charging port relay actively isolating the power array bounds smoothly
+- **tesla_control_doors**: Wake up first safely implicitly executing physical relays.
+
+Actuate literal physical lock parameters securing or bounding native access inside the vehicle reliably
 
 
 ## 💬 Prompt Examples
