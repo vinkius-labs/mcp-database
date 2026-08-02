@@ -38,8 +38,8 @@ Integrate **ExchangeRatesAPI.io**, the reliable foreign exchange rates and curre
 - **get_historical_exchange_rates**: Get historical exchange rates for a specific date
 - **get_latest_exchange_rates**: Get the latest foreign exchange reference rates
 - **get_exchange_rate_timeseries**: Get daily historical rates for a specific time period
-- **get_top_market_rates**: Retrieve the latest rates for top global market currencies (USD, GBP, JPY, CAD)
 - **list_supported_currencies**: List all available currency symbols and names
+- **get_top_market_rates**: Retrieve the latest rates for top globalThis market currencies (USD, GBP, JPY, CAD)
 
 
 ## 💬 Prompt Examples

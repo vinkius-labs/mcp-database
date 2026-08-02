@@ -37,12 +37,6 @@ Connect your **Fellow.app** account to any AI agent and take full control of you
 
 
 ## Available Tools (12)
-- **list_notes**: Use as the primary entry point to browse all meeting documentation.
-
-List all meeting notes in the Fellow workspace
-- **get_note**: Essential for reviewing a specific meeting.
-
-Retrieve the full content and metadata of a specific meeting note by ID
 - **delete_note**: Confirm with the user before executing — this cannot be undone.
 
 Permanently delete a meeting note by ID
@@ -64,6 +58,12 @@ List all action items across all meetings
 - **get_action_item**: Use to inspect a single task.
 
 Retrieve details of a specific action item by ID
+- **list_notes**: Use as the primary entry point to browse all meeting documentation.
+
+List all meeting notes in the Fellow workspace
+- **get_note**: Essential for reviewing a specific meeting.
+
+Retrieve the full content and metadata of a specific meeting note by ID
 - **complete_action_item**: Use when a task has been finished.
 
 Mark an action item as complete

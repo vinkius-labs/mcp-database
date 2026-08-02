@@ -38,12 +38,6 @@ Connect your **Extensiv** (formerly Skubana) account to any AI agent and take fu
 
 
 ## Available Tools (10)
-- **list_ship_methods**: Returns all shipping method codes accepted by the warehouse management system.
-
-List available WMS shipping methods
-- **list_alerts**: Returns all outstanding active alerts for the merchant, such as sync errors, failed orders, or inventory discrepancies.
-
-List active merchant alerts
 - **list_orders**: Returns all merchant orders matching the given status. Valid statuses: new, at_wms, shipped, cancelled, error, all.
 
 List Extensiv orders by status
@@ -68,6 +62,12 @@ List all configured warehouses
 - **list_carts**: Returns all shopping carts and integrations configured for this merchant, including connection status and settings.
 
 List connected shopping cart integrations
+- **list_ship_methods**: Returns all shipping method codes accepted by the warehouse management system.
+
+List available WMS shipping methods
+- **list_alerts**: Returns all outstanding active alerts for the merchant, such as sync errors, failed orders, or inventory discrepancies.
+
+List active merchant alerts
 
 
 ## 💬 Prompt Examples

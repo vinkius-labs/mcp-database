@@ -7,48 +7,59 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Manage HR operations via Factorial — list employees and teams, track leave requests, monitor shifts and payslips, and handle company documents directly from any AI agent.
+Modernize HR operations with time-off management, payroll processing, and performance reviews that employees actually enjoy using.
 
 ## Description
-Connect your **Factorial HR** account to any AI agent and take full control of your human resources management and organizational workflows through natural conversation.
+Connect your **Factorial HR** organizational account to any AI agent and take full control of your human resource management workflows through natural conversation.
 
 ### What you can do
 
-- **Employee & Team Orchestration** — List all registered employees and teams to retrieve detailed profiles, organizational roles, and department structures natively
-- **Leave & Absence Monitoring** — Fetch all holiday and leave requests for any given year to track team availability and upcoming time-off boundaries flawlessly
-- **Shift & Schedule Navigation** — Retrieve detailed shift scheduling information for specific months to audit team rotations and operational coverage securely
-- **Payroll Oversight** — List available payslips across the organization for specific months to verify compensation records and financial trail metadata
-- **Document Discovery** — Access stored company documents and folders to retrieve HR policies and internal documentation using natural language
-- **Company Data Auditing** — Fetch global company metadata and administrative configurations to verify workspace settings and organizational identities
-- **Personnel Intelligence** — Resolve specific employee contexts including contact details, manager relationships, and hiring dates limitlessly
+- **Employee Directory** — List all active employees and fetch detailed profile information directly from the Factorial cloud
+- **Time Off & Leaves** — Query all recorded leave requests (both pending and approved) to monitor staff availability
+- **Attendance Tracking** — Inspect chronological shift records and clock-in/out data to understand team working patterns
+- **Document Management** — List and navigate company HR documents and folder structures programmatically
+- **Team Hierarchy** — Retrieve the organizational structure, teams, and departments defined in your company
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Factorial API Key (found in Settings > Advanced configuration > API Keys)
-3. Start managing your HR operations from Claude, Cursor, or any MCP-compatible client
+2. Enter your Factorial API Key from your account settings
+3. Start managing your HR resources from Claude, Cursor, or any MCP-compatible client
+
+No more manual report generation or searching through folders. Your AI acts as a dedicated HR administrator or team lead assistant.
 
 ### Who is this for?
 
-- **HR Managers** — track leave requests and monitor employee directories without opening the Factorial dashboard
-- **Team Leads** — check team availability and audit shift schedules using natural language conversation
-- **Finance Teams** — verify payslip availability and audit company metadata in real-time
-- **Operations Teams** — manage company documents and verify organizational structures through the chat interface
+- **HR Managers** — instantly retrieve workforce reports, check leave balances, and inspect document statuses without opening the Factorial app
+- **Team Leads** — verify team availability and attendance shifts straight from your communication hub
+- **Operations Leads** — automate organizational querying to orchestrate company-wide structures smoothly
 
 
-## Available Tools (12)
-- **clock_out**: Clock out from a shift
-- **get_employee**: Get a specific Factorial employee by ID
-- **get_me**: Get current company identity info
-- **list_employees**: List all Factorial employees
-- **list_folders**: List all company folders
-- **list_holidays**: List all holidays for a given year
-- **clock_in**: Clock in for a shift
-- **list_documents**: List all company documents
-- **list_leaves**: List all leaves for a given year
-- **list_payslips**: List all payslips for a given year and month
-- **list_shifts**: List all shifts for a given year and month
-- **list_teams**: List all Factorial teams
+## Available Tools (8)
+- **list_hr_documents**: Includes document metadata and identification IDs.
+
+List all company HR documents
+- **list_document_folders**: Use this to navigate the document library.
+
+List HR document folders
+- **list_time_off_leaves**: Useful for monitoring attendance and staff availability.
+
+List employee leave requests
+- **list_attendance_shifts**: Essential for tracking employee working hours and productivity patterns.
+
+List all attendance shifts
+- **list_company_teams**: Useful for understanding the organizational hierarchy.
+
+List all organizational teams
+- **get_employee_details**: Essential for reviewing detailed profile information and roles.
+
+Get details for a specific employee
+- **list_employee_contracts**: Essential for auditing and compliance reviews.
+
+List all employment contracts
+- **list_employees**: Includes full names, email addresses, and basic profile metadata. Use this to identify staff IDs and contact information.
+
+List all active employees
 
 
 ## 💬 Prompt Examples
@@ -56,38 +67,38 @@ Connect your **Factorial HR** account to any AI agent and take full control of y
 Here are some examples of how you can interact with the **Factorial** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all employees in the 'Engineering' team"
+> "List all active employees in Factorial."
 
 **🤖 AI Agent:**
-> Retrieving 'Engineering' members... I found 15 employees including 'John Smith' (Lead), 'Jane Doe' (Senior Dev), and 'Alice Wong'. Would you like the contact details or manager info for any of them?
+> I've retrieved your employee directory. You currently have access to your active staff members, including 'Jane Doe' and 'John Smith'. Which employee would you like to view in detail?
 
 ---
 
 **👤 You:**
-> "Show me upcoming leave requests for June 2026"
+> "Show me recent leave requests."
 
 **🤖 AI Agent:**
-> Checking June 2026... There are 3 approved leave requests: 'Jane Doe' (June 1-5), 'Robert Brown' (June 15-20), and 'Sarah Connor' (June 22-26). Your team availability is currently at 80% for that month.
+> Running the query... I found the recent leave requests. Notable items include approved leaves for next week and pending requests for the next month. Would you like the specific dates?
 
 ---
 
 **👤 You:**
-> "Find HR policy documents in the company folders"
+> "List all employee contracts."
 
 **🤖 AI Agent:**
-> Searching company documents... I found 2 related files: '2024_Remote_Work_Policy.pdf' and 'Global_Benefits_Guide.pdf'. Would you like the download link or a summary of the remote work policy?
+> Fetching contracts... I've found the active employment contracts for all staff. Notable items include the recently signed agreements. Would you like me to provide specific details?
 
 
 ## ❓ FAQ
 
-**Q: Can my agent list all leave requests for the current year in Factorial?**
-Yes. Use the 'list_leaves' tool. You can specify the 'year' parameter, and the agent will fetch all absence and holiday requests, allowing you to track team availability flawlessly.
+**Q: Can my AI automatically find the details of a specific employee just by providing their ID?**
+Yes! Use the `get_employee` tool with the unique ID. Your agent will respond with complete metadata, contact information, and role details in seconds.
 
-**Q: How do I check the shift schedule for a specific month via chat?**
-Use the 'list_shifts' tool. Provide the 'year' and 'month' (numeric). The agent will retrieve the detailed scheduling information, providing you with a clear view of operational coverage.
+**Q: How do I monitor team leaves and availability?**
+Simply ask the agent to run the `list_leaves` tool. It will compile a list of all requested and approved absences, allowing you to see who is out of the office.
 
-**Q: Can I audit payslip availability through the agent?**
-Absolutely. Use the 'list_payslips' tool for a target year and month. Your agent will verify which employees have available compensation records without you needing to manually navigate the payroll section.
+**Q: Does the integration permit modifying employee data?**
+No. The core set of tools focuses strictly on querying and analyzing HR context—listing employees, leaves, and attendance. State alteration operations are not currently exposed, ensuring your records remain secure.
 
 
 ## Installation & Usage

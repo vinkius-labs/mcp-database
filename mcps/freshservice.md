@@ -46,8 +46,8 @@ Connect your **Freshservice** instance to any AI agent to automate your IT Servi
 - **list_change_requests**: List IT changes
 - **list_it_problems**: List problem records
 - **list_it_releases**: List release records
-- **list_requesters**: List end-users
 - **list_itsm_tickets**: List IT tickets
+- **list_requesters**: List end-users
 
 
 ## 💬 Prompt Examples

@@ -27,6 +27,15 @@ Demographers, labor economists, HR analysts, social policy researchers, and EU-f
 
 
 ## Available Tools (6)
+- **get_life_expectancy**: A key demographic and health policy indicator. Shows dramatic variation across EU: from ~74 years (Bulgaria) to ~84 years (Spain).
+
+Get life expectancy at birth by EU country and sex
+- **get_minimum_wages**: Shows EUR/month values. Not all EU countries have statutory minimums (e.g., Nordics use collective bargaining). Updated semi-annually.
+
+Get minimum wage levels across EU countries
+- **get_migration**: Critical data for understanding EU migration flows, asylum, and demographic change.
+
+Get EU immigration and emigration data by citizenship
 - **get_population**: Dataset: demo_pjan. Filter by age group and sex. Covers all 27 EU members + EEA + candidate countries.
 
 Get EU population by country, age, and sex
@@ -36,15 +45,6 @@ Get EU unemployment rates monthly by country, age, and sex
 - **get_employment**: Key indicators for labor market tightness and wage pressure analysis.
 
 Get EU employment rates and labor cost index
-- **get_migration**: Critical data for understanding EU migration flows, asylum, and demographic change.
-
-Get EU immigration and emigration data by citizenship
-- **get_life_expectancy**: A key demographic and health policy indicator. Shows dramatic variation across EU: from ~74 years (Bulgaria) to ~84 years (Spain).
-
-Get life expectancy at birth by EU country and sex
-- **get_minimum_wages**: Shows EUR/month values. Not all EU countries have statutory minimums (e.g., Nordics use collective bargaining). Updated semi-annually.
-
-Get minimum wage levels across EU countries
 
 
 ## 💬 Prompt Examples

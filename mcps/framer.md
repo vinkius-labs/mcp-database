@@ -33,7 +33,6 @@ Connect **Framer** to your AI agent and manage your website CMS content and publ
 
 
 ## Available Tools (8)
-- **list_projects**: List all Framer projects
 - **get_project**: Get project details
 - **list_collections**: List CMS collections
 - **list_collection_items**: List items in a CMS collection
@@ -42,6 +41,7 @@ Connect **Framer** to your AI agent and manage your website CMS content and publ
 
 Publish the website
 - **list_pages**: List all site pages
+- **list_projects**: List all Framer projects
 - **get_site_info**: Get site configuration
 
 
