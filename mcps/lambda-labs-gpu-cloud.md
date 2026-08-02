@@ -35,19 +35,19 @@ Connect your **Lambda Labs** account to any AI agent and take full control of yo
 
 
 ## Available Tools (7)
-- **launch_instance**: g., powerful H100 or A100 boxes). Injects explicit SSH keys into the runtime so it is securely accessible over port 22 immediately upon boot.
-
-Provision a new Lambda GPU virtual machine
 - **terminate_instances**: Any ephemeral drives attached will be vaporized immediately without backup. Extremely destructive; stops billing instantly.
 
 Permanently terminate and destroy Lambda GPU instances
+- **list_instances**: List running GPU instances on Lambda Cloud
+- **get_instance**: Get exact details and SSH connection string for a specific instance
+- **launch_instance**: g., powerful H100 or A100 boxes). Injects explicit SSH keys into the runtime so it is securely accessible over port 22 immediately upon boot.
+
+Provision a new Lambda GPU virtual machine
 - **list_instance_types**: Exposes exact catalog configurations of available GPU node types, identifying exactly which regions currently hold physical availability.
 
 Discover available Lambda GPU instance specifications and pricing
 - **list_ssh_keys**: Enumerate globally managed SSH public keys in Lambda
 - **list_filesystems**: Map persistent shared NAS volumes living in the Lambda ecosystem
-- **list_instances**: List running GPU instances on Lambda Cloud
-- **get_instance**: Get exact details and SSH connection string for a specific instance
 
 
 ## 💬 Prompt Examples

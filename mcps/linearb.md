@@ -45,8 +45,8 @@ Report a new incident
 - **query_software_metrics**: Requires a JSON body with requested_metrics and time_ranges.
 
 Query software engineering metrics (v2)
-- **list_connected_repos**: List all connected repositories
 - **list_engineering_teams**: List all teams defined in LinearB
+- **list_connected_repos**: List all connected repositories
 
 
 ## 💬 Prompt Examples

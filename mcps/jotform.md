@@ -14,12 +14,12 @@ Empower your AI agents with JotForm's powerful online form builder. This MCP ser
 
 
 ## Available Tools (10)
-- **get_account**: Use to verify account status or identity.
-
-Retrieves details about your JotForm account
 - **get_form**: Returns form properties and the list of questions/fields. Essential for understanding what data a form collects or before analyzing its submissions.
 
 Retrieves details/questions for a specific form
+- **get_account**: Use to verify account status or identity.
+
+Retrieves details about your JotForm account
 - **get_form_submissions**: Returns individual response details. Use this when the user wants to analyze the results of a particular survey or contact form.
 
 Retrieves all submissions for a specific form

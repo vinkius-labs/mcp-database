@@ -34,21 +34,21 @@ Connect your **Keap** (formerly Infusionsoft) account to any AI agent to optimiz
 
 
 ## Available Tools (11)
+- **list_tags**: List all available tags
 - **apply_tag_to_contact**: Apply a tag to a specific contact
 - **list_campaigns**: List all marketing campaigns
 - **list_contacts**: Use this to search for leads or customers.
 
 List all contacts in Keap
+- **list_opportunities**: List sales opportunities
+- **list_orders**: List ecommerce orders
+- **get_business_profile**: Get Keap business profile information
+- **list_users**: List all application users
 - **create_contact**: Requires at least a first name or email.
 
 Create a new contact in Keap
 - **get_contact**: Get details for a specific contact
 - **list_invoices**: List all invoices
-- **list_opportunities**: List sales opportunities
-- **list_orders**: List ecommerce orders
-- **get_business_profile**: Get Keap business profile information
-- **list_tags**: List all available tags
-- **list_users**: List all application users
 
 
 ## 💬 Prompt Examples

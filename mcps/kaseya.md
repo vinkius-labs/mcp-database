@@ -34,12 +34,12 @@ Connect your **Kaseya VSA 10** instance to your AI agent for comprehensive IT ma
 
 
 ## Available Tools (10)
-- **get_agent_details**: Get detailed information for a specific agent
 - **list_agents**: Use this to check device availability and status.
 
 List all managed agents (devices) in Kaseya
 - **list_alarms**: List active system alarms
 - **list_assets**: List managed assets
+- **get_agent_details**: Get detailed information for a specific agent
 - **list_organizations**: List all organizations in Kaseya
 - **list_scripts**: List agent scripts
 - **get_system_info**: Get VSA 10 system information

@@ -31,9 +31,9 @@ Unleash the full potential of your **LeadConnector** (GoHighLevel) CRM straight 
 
 
 ## Available Tools (3)
-- **list_appointments**: List calendar appointments
-- **list_contacts**: List contacts in LeadConnector
 - **list_opportunities**: List opportunities across pipelines
+- **list_contacts**: List contacts in LeadConnector
+- **list_appointments**: List calendar appointments
 
 
 ## 💬 Prompt Examples

@@ -17,12 +17,6 @@ Empower your AI agents with JumpCloud's open directory platform. This MCP server
 - **get_user**: Returns account metadata, group memberships, and security settings. Use this for detailed user vetting or before making administrative changes.
 
 Retrieves details for a specific user
-- **list_applications**: Useful for auditing software access and identifying which SaaS apps are integrated.
-
-Lists all configured SSO applications
-- **list_commands**: Useful for auditing automation scripts.
-
-Lists saved management commands
 - **list_directories**: Useful for auditing identity source configurations.
 
 Lists all configured directories (LDAP, AD, Google, etc)
@@ -38,6 +32,12 @@ Lists all system groups
 - **list_systems**: Returns hostnames, IDs, and OS versions. Use this to audit company hardware and device compliance.
 
 Lists all systems managed by JumpCloud
+- **list_commands**: Useful for auditing automation scripts.
+
+Lists saved management commands
+- **list_applications**: Useful for auditing software access and identifying which SaaS apps are integrated.
+
+Lists all configured SSO applications
 - **list_user_groups**: g., Marketing, Developers) configured in JumpCloud. Useful for understanding the organizational structure and access control policies.
 
 Lists all user groups

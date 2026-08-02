@@ -36,19 +36,19 @@ No more jumping between the Lokalise web console and your codebase. Your AI acts
 
 
 ## Available Tools (13)
-- **add_translation**: Add translations to one or more keys
-- **create_key**: Create translation keys in a Lokalise project
-- **create_project**: Create a new Lokalise project
 - **download_file**: Generate a download bundle of translations
 - **get_project**: Get details of a specific Lokalise project
 - **list_keys**: List translation keys in a Lokalise project
 - **list_languages**: List languages in a Lokalise project
 - **list_orders**: List translation orders in your Lokalise account
-- **list_projects**: List all Lokalise projects
 - **list_team_members**: List all team members in your Lokalise account
 - **list_translations**: List translations for a key in a Lokalise project
 - **upload_file**: Upload a localization file to a Lokalise project
+- **add_translation**: Add translations to one or more keys
+- **create_key**: Create translation keys in a Lokalise project
+- **create_project**: Create a new Lokalise project
 - **update_key**: Update an existing translation key
+- **list_projects**: List all Lokalise projects
 
 
 ## 💬 Prompt Examples

@@ -27,17 +27,17 @@ Connect your **ManyChat** account to any AI agent and take full control of your 
 
 
 ## Available Tools (11)
+- **get_subscriber_info**: Get subscriber information by ID
 - **add_tag**: Add a tag to a subscriber
+- **send_flow**: Send a flow to a subscriber
+- **set_custom_field**: Set a custom field value for a subscriber
 - **find_subscriber_by_custom_field**: Find subscribers by custom field value
 - **find_subscriber_by_name**: Find subscribers by name
 - **get_subscriber_flows**: Get all flows assigned to a subscriber
-- **get_subscriber_info**: Get subscriber information by ID
 - **get_subscriber_tags**: Get all tags assigned to a subscriber
 - **list_custom_fields**: List all custom fields on the page
 - **list_tags**: List all tags on the page
 - **remove_tag**: Remove a tag from a subscriber
-- **send_flow**: Send a flow to a subscriber
-- **set_custom_field**: Set a custom field value for a subscriber
 
 
 ## 💬 Prompt Examples

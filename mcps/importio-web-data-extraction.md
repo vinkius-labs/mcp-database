@@ -39,6 +39,9 @@ Connect your **Import.io** account to any AI agent and take full control of your
 - **get_crawl_status**: start_crawl to check progress (pages processed, success rate, current state).
 
 Check the status of an ongoing import.io crawl job
+- **account_usage**: No parameters required.
+
+Check import.io account API credit usage
 - **download_csv**: Returns the first 1000 characters and file stats. Ideal for spreadsheet processing.
 
 Download extraction data directly as CSV text
@@ -60,9 +63,6 @@ Trigger an import.io bulk crawl job
 - **get_extractor_status**: run_extractor. Returns the current state (running, completed, failed) and metadata about the run.
 
 Check the status of an active or past import.io extraction run
-- **account_usage**: No parameters required.
-
-Check import.io account API credit usage
 
 
 ## 💬 Prompt Examples

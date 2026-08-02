@@ -38,7 +38,6 @@ Connect your **TestMu AI (formerly LambdaTest)** account to any AI agent and tak
 - **list_builds**: Groups thousands of executed Selenium, Cypress, Playwright, or Appium browser tests into their respective parent CI/CD builds.
 
 List all test automation builds on LambdaTest Cloud
-- **get_build**: Get exact telemetry for a specific LambdaTest build
 - **list_sessions**: Provides OS, Browser version, execution duration, and final completion status of the Selenium/Playwright scripts.
 
 List recent automated test sessions executed on LambdaTest
@@ -50,6 +49,7 @@ Get deep context for a specific automated test session
 
 Fetch visual bug screenshots captured during a test session
 - **get_video**: Retrieve the full video recording URL for a test execution
+- **get_build**: Get exact telemetry for a specific LambdaTest build
 - **list_tunnels**: List all active secure Tunnels (UnderTest tunnels)
 - **list_platforms**: Returns exactly which combinations of macOS, Windows, iOS, and Android versions are actively available in the testing grid.
 

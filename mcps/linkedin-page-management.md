@@ -35,15 +35,15 @@ Connect your **LinkedIn Company Page** to any AI agent to automate your social m
 
 
 ## Available Tools (7)
-- **list_post_comments**: List all comments on a specific post
+- **list_post_likes**: List likes/reactions on a specific post
 - **create_post_comment**: Add a comment to a post as the organization
 - **create_page_post**: Create a new post on a Company Page
-- **list_post_likes**: List likes/reactions on a specific post
 - **list_managed_pages**: Use this to find organization IDs.
 
 List all LinkedIn Company Pages managed by the user
-- **delete_page_post**: Delete a specific post
 - **list_page_posts**: List recent posts from a Company Page
+- **list_post_comments**: List all comments on a specific post
+- **delete_page_post**: Delete a specific post
 
 
 ## 💬 Prompt Examples

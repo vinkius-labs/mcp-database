@@ -34,6 +34,7 @@ Connect your **Lever** account to any AI agent to streamline your recruitment an
 
 
 ## Available Tools (10)
+- **list_job_postings**: List all job postings
 - **archive_hiring_opportunity**: Archive a candidate opportunity
 - **create_hiring_opportunity**: Requires a JSON body with opportunity details.
 
@@ -41,17 +42,16 @@ Create a new candidate opportunity
 - **create_job_posting**: Requires a JSON body with posting details.
 
 Create a new job posting
-- **get_candidate_profile**: Get details for a specific candidate (person)
 - **get_opportunity_details**: Get details for a specific candidate opportunity
 - **get_posting_details**: Get details for a specific job posting
 - **list_hiring_opportunities**: List all candidate opportunities (applications)
-- **list_job_postings**: List all job postings
 - **list_hiring_stages**: g., Screen, Interview) configured in your Lever account.
 
 List all defined hiring pipeline stages
 - **update_opportunity_stage**: g., move to "Interview" or "Offer").
 
 Move a candidate to a different hiring stage
+- **get_candidate_profile**: Get details for a specific candidate (person)
 
 
 ## 💬 Prompt Examples

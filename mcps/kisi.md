@@ -7,44 +7,46 @@
 
 **Category:** [security-compliance](../categories/security-compliance.md)
 
-Manage cloud-based access control, locks, and users via the Kisi API.
+Control building access with cloud-managed smart locks, mobile credentials, and audit trails that replace traditional key cards.
 
 ## Description
-Connect your **Kisi** account to any AI agent to automate your physical access control and security workflows. This MCP server enables your agent to interact with locks (doors), manage users, and trigger remote unlocks directly from natural language interfaces.
+Connect your **Kisi** account to any AI agent and take full control of your facility's physical security and high-fidelity access orchestration through natural conversation.
 
 ### What you can do
 
-- **Remote Unlocking** — Trigger remote unlock commands for any managed door instantly
-- **Device Oversight** — List all locks and retrieve real-time status (online/offline, locked/unlocked)
-- **User Management** — List organization users and retrieve complete profile information
-- **Access Control Audit** — Query groups, places, and role assignments to monitor permissions
-- **Location Tracking** — List and inspect physical places configured in your Kisi environment
+- **Lock Portfolio Orchestration** — List all cloud-connected locks, retrieve detailed high-fidelity status metadata, and monitor door health programmatically
+- **Remote Unlock Operations** — Programmatically trigger high-fidelity remote unlocks for specific doors directly through your agent for perfectly coordinated visitor access
+- **Facility Lockdown Architecture** — Access high-fidelity emergency lockdown protocols for individual doors or entire places to ensure immediate site security
+- **Place & Site Discovery** — Access your complete directory of high-fidelity physical locations and places to understand and orchestrate your facility infrastructure
+- **User & Member Monitoring** — List organization users and access complete high-fidelity profile metadata to maintain perfect security alignment
+- **Operational Monitoring** — Verify account-level API connectivity and monitor access orchestration volume directly through your agent for perfectly coordinated security scaling
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Kisi API Key (Personal Access Token)
-3. Start managing your facility security from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API Key** from your Kisi dashboard (Settings > API Keys)
+3. Start managing your facility security from Claude, Cursor, or any MCP client
+
+No more manual checking of individual door logs or physical keycards. Your AI acts as your dedicated security coordinator and facility architect.
 
 ### Who is this for?
 
-- **Facilities Managers** — Monitor door statuses and manage access permissions via simple natural language commands
-- **Security Teams** — Quickly perform remote unlocks and audit user roles without opening the dashboard
-- **Developers** — Integrate physical access control logic and status monitoring into your custom applications
+- **Security Managers** — instantly retrieve lock statuses and monitor site health using natural language commands without leaving your creative workspace
+- **Facility Managers** — trigger high-fidelity remote unlocks and monitor door activity to ensure healthy and secure operations
+- **IT Admins** — verify technical API logs and user assignments to optimize access control through simple AI queries
 
 
-## Available Tools (9)
-- **get_lock_details**: Get details for a specific lock
-- **get_place_details**: Get details for a specific place
-- **list_access_groups**: List all access groups
-- **list_locks**: List all locks (doors)
-- **get_my_profile**: Get the current authenticated user profile
-- **list_places**: List all physical places (locations)
-- **list_role_assignments**: List all role assignments
-- **unlock_door**: Unlock a specific door (lock)
-- **list_users**: Use this to identify user IDs.
-
-List all users in the Kisi organization
+## Available Tools (10)
+- **get_kisi_lock**: Get lock details
+- **get_kisi_place**: Get place details
+- **get_kisi_user**: Get user details
+- **list_kisi_groups**: List access groups
+- **lockdown_kisi_lock**: Lockdown a door
+- **list_kisi_locks**: List cloud locks
+- **list_kisi_places**: List physical places
+- **check_kisi_status**: Check API Status
+- **unlock_kisi_lock**: Unlock a door
+- **list_kisi_users**: List organization users
 
 
 ## 💬 Prompt Examples
@@ -52,38 +54,38 @@ List all users in the Kisi organization
 Here are some examples of how you can interact with the **Kisi** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Unlock the 'Main Entrance' door (ID: '12345') in Kisi."
+> "List all cloud locks and show their current status."
 
 **🤖 AI Agent:**
-> I've sent the unlock command to 'Main Entrance'. The door should now be unlocked.
+> I've retrieved your locks. You currently have 12 active high-fidelity doors, including 'Front Entrance' (Online) and 'Server Room' (Locked). Would you like to see the detailed health metadata for any of them?
 
 ---
 
 **👤 You:**
-> "List all locks that are currently offline."
+> "Unlock the 'Front Entrance' door for 10 seconds."
 
 **🤖 AI Agent:**
-> I've checked your devices. Currently, 'Side Exit (ID: 6789)' and 'Storage Room (ID: 1011)' are reporting as offline.
+> Access orchestrated! I've triggered a high-fidelity remote unlock for 'Front Entrance' (ID: lock_123) for a duration of 10 seconds. Your security connection is healthy. Shall I monitor the activity log for this door?
 
 ---
 
 **👤 You:**
-> "Show me the details for the place 'Headquarters'."
+> "Check the team members in the 'HQ Office' place."
 
 **🤖 AI Agent:**
-> I've retrieved the details for Headquarters (ID: 9876). It currently has 12 active locks and 5 access groups associated with it.
+> Facility directory orchestrated! The 'HQ Office' place currently has 45 high-fidelity profiles assigned. Your API connection is healthy. Shall I retrieve the detailed resource access metadata for this site?
 
 
 ## ❓ FAQ
 
-**Q: How do I perform a remote unlock using the agent?**
-Use the `unlock_door` tool with the unique ID of the lock you wish to open. Make sure the authenticated user has the necessary permissions for that door.
+**Q: How do I find my Kisi API Key?**
+Log in to your account, navigate to **Settings** > **API Keys**, and generate a new high-fidelity **API Secret**.
 
-**Q: Can I see if a door is currently online?**
-Yes, the `list_locks` and `get_lock_details` tools return the real-time connectivity status (online/offline) for every device.
+**Q: Can I unlock a door via AI?**
+Yes! The `unlock_kisi_lock` tool allows your agent to trigger a high-fidelity remote unlock for any cloud-connected door in your organization.
 
-**Q: Is it possible to list all users in my organization?**
-Absolutely. Use the `list_users` tool to retrieve a comprehensive list of all members registered in your Kisi organization.
+**Q: How do I list my organization's places?**
+Use the `list_kisi_places` tool to retrieve the complete high-fidelity directory of physical locations along with their unique identifiers for precise orchestration.
 
 
 ## Installation & Usage

@@ -35,6 +35,12 @@ Connect your **Ironclad** account to any AI agent and manage your entire contrac
 
 
 ## Available Tools (10)
+- **ironclad_list_workflows**: Each workflow represents a contract moving through its lifecycle: drafting → internal review → approval → counterparty negotiation → signature → execution. Returns workflow name, current step/status, creator, counterparty, template used, and dates. Use when the user asks about contracts in progress, pending approvals, or the contract pipeline.
+
+List Ironclad contract workflows in progress — NDAs, MSAs, SOWs, and other agreements moving through approval and signature stages
+- **ironclad_search_records**: Matches contract names, counterparty names, descriptions, and attribute values. Use when the user asks "find our contract with Acme", "show all NDAs", or needs to locate a specific agreement by keyword.
+
+Search Ironclad contract records by keyword — find specific agreements, counterparties, or contract types across the repository
 - **ironclad_get_approvals**: Returns each approver with their status (approved/pending/rejected), approval date, and any comments. Essential for tracking where a contract is stuck in the approval process. Use when the user asks "who still needs to approve this contract?" or "why is this contract delayed?"
 
 Get the approval status of a specific Ironclad contract workflow — who approved, who is pending, and who rejected
@@ -59,12 +65,6 @@ List available Ironclad workflow templates — NDA, MSA, SOW, and other pre-conf
 - **ironclad_list_webhooks**: Webhooks are used to notify external systems when events occur in Ironclad (e.g., workflow launched, contract signed). Returns webhook ID, name, target URL, and events. Use when auditing integrations or checking connectivity.
 
 List all configured webhooks in Ironclad — monitor external notifications for workflow events
-- **ironclad_list_workflows**: Each workflow represents a contract moving through its lifecycle: drafting → internal review → approval → counterparty negotiation → signature → execution. Returns workflow name, current step/status, creator, counterparty, template used, and dates. Use when the user asks about contracts in progress, pending approvals, or the contract pipeline.
-
-List Ironclad contract workflows in progress — NDAs, MSAs, SOWs, and other agreements moving through approval and signature stages
-- **ironclad_search_records**: Matches contract names, counterparty names, descriptions, and attribute values. Use when the user asks "find our contract with Acme", "show all NDAs", or needs to locate a specific agreement by keyword.
-
-Search Ironclad contract records by keyword — find specific agreements, counterparties, or contract types across the repository
 
 
 ## 💬 Prompt Examples
