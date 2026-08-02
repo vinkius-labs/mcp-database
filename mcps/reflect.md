@@ -33,6 +33,12 @@ Connect your **Reflect** account securely to your AI agent via their developer A
 
 
 ## Available Tools (10)
+- **get_backlinks**: Retrieves all notes that link to a specific note
+- **get_current_user**: Retrieves profile details for the authenticated Reflect user
+- **get_note**: Retrieves the full content and metadata of a Reflect note
+- **list_books**: Lists all books saved or imported into Reflect
+- **list_graphs**: Lists all Reflect graphs (workspaces) accessible by the user
+- **list_links**: Lists all saved links (bookmarks) in a graph
 - **append_daily_note**: Optionally specify a list/heading name.
 
 Appends Markdown text to today's daily note
@@ -42,12 +48,6 @@ Saves a new web link/bookmark to a Reflect graph
 - **create_note**: Specify subject and Markdown content.
 
 Creates a new note in a Reflect graph
-- **get_backlinks**: Retrieves all notes that link to a specific note
-- **get_current_user**: Retrieves profile details for the authenticated Reflect user
-- **get_note**: Retrieves the full content and metadata of a Reflect note
-- **list_books**: Lists all books saved or imported into Reflect
-- **list_graphs**: Lists all Reflect graphs (workspaces) accessible by the user
-- **list_links**: Lists all saved links (bookmarks) in a graph
 - **list_notes**: Lists all notes within a specific Reflect graph
 
 

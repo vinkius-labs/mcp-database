@@ -20,7 +20,6 @@ Grant your AI agent (like Claude or Cursor) absolute visual acquisition dominanc
 
 
 ## Available Tools (9)
-- **get_image_details**: Get metadata for a specific image
 - **get_license_history**: Retrieve the history of licensed assets
 - **get_video_details**: Get metadata for a specific video
 - **list_collections**: List your image collections
@@ -32,6 +31,7 @@ Search for images in the Shutterstock library
 - **search_videos**: You can filter by quality, frame rate, and duration.
 
 Search for stock video footage
+- **get_image_details**: Get metadata for a specific image
 - **get_audio_details**: Get metadata for a specific audio track
 
 

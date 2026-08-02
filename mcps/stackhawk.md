@@ -33,6 +33,12 @@ Integrate the robust dynamic application security testing (DAST) capabilities of
 
 
 ## Available Tools (10)
+- **list_scans**: Includes scan IDs and high-level alert counts.
+
+List all DAST scan executions for a StackHawk application
+- **login**: This token is required for all subsequent StackHawk tool calls.
+
+Authenticate and obtain a Bearer access token from StackHawk
 - **get_application_details**: Get detailed configuration for a specific StackHawk application
 - **get_organization_details**: Get StackHawk organization details and subscription tier
 - **get_scan_alerts**: Download individual security alerts discovered by a DAST scan
@@ -46,12 +52,6 @@ List configured scan environments for a StackHawk application
 - **list_api_keys**: Useful for auditing and hygiene.
 
 List API keys configured for a StackHawk organization
-- **list_scans**: Includes scan IDs and high-level alert counts.
-
-List all DAST scan executions for a StackHawk application
-- **login**: This token is required for all subsequent StackHawk tool calls.
-
-Authenticate and obtain a Bearer access token from StackHawk
 - **triage_alert**: Valid statuses: RISK_ACCEPTED, FALSE_POSITIVE, IN_PROGRESS.
 
 Triage a DAST security alert (accept risk, false positive, etc.)

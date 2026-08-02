@@ -28,6 +28,13 @@ Empower your AI with direct connectivity to **SafeGraph**, the foundational geos
 
 
 ## Available Tools (10)
+- **lookup_parent_polygon**: Identifies the parent Placekey for a location (e.g., mall or airport)
+- **lookup_place_patterns**: Retrieves historical foot traffic patterns for a specific Placekey
+- **lookup_placekey**: Retrieves detailed attributes for a specific location by its Placekey
+- **search_brand_places**: g., "Starbucks") in a specific city.
+
+Searches for locations of a specific brand in a city
+- **search_industry_naics**: Searches for places by NAICS industry code and region
 - **batch_lookup_placekeys**: Provide them as a JSON array.
 
 Performs multiple Placekey lookups in a single request
@@ -35,16 +42,9 @@ Performs multiple Placekey lookups in a single request
 
 Executes a raw GraphQL query against the SafeGraph API
 - **lookup_building_geometry**: Retrieves the building footprint (polygon) for a specific Placekey
-- **lookup_parent_polygon**: Identifies the parent Placekey for a location (e.g., mall or airport)
-- **lookup_place_patterns**: Retrieves historical foot traffic patterns for a specific Placekey
-- **lookup_placekey**: Retrieves detailed attributes for a specific location by its Placekey
-- **search_brand_places**: g., "Starbucks") in a specific city.
-
-Searches for locations of a specific brand in a city
 - **search_distance_radius**: Specify lat, lon, and radius in meters.
 
 Searches for places within a specific radius from a point
-- **search_industry_naics**: Searches for places by NAICS industry code and region
 - **search_wkt_polygon**: Finds all places within a specific geometric polygon (WKT)
 
 

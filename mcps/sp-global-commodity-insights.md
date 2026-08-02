@@ -46,28 +46,6 @@ Your AI becomes a commodity analyst, helping you track prices, understand market
 
 
 ## Available Tools (12)
-- **get_agriculture_prices**: USE WHEN:
-- User asks about agriculture commodity prices
-- User needs wheat, corn, soybean, or other crop prices
-- User wants agricultural market benchmarks
-- User asks about food commodity pricing
-
-AVAILABLE COMMODITIES:
-- Wheat, Corn, Soybeans, Soybean Meal/Oil
-- Rice, Barley, Oats
-- Fertilizers (Urea, DAP, Potash)
-
-PARAMETERS:
-- date (OPTIONAL): Specific date (YYYY-MM-DD)
-- commodity (OPTIONAL): Specific commodity (e.g. "Wheat", "Corn")
-- region (OPTIONAL): Region of origin/destination
-
-EXAMPLES:
-- "Wheat prices today" → call with commodity="Wheat"
-- "Corn prices this week" → call with commodity="Corn"
-- "Urea fertilizer prices" → call with commodity="Urea"
-
-Get agriculture commodity price assessments from S&P Global Platts
 - **get_assessment_methodology**: USE WHEN:
 - User asks about how a specific price is calculated
 - User needs the methodology behind a benchmark
@@ -100,6 +78,28 @@ EXAMPLES:
 - "List all price assessment categories" → call with no params
 
 List all available commodity categories in S&P Global Commodity Insights
+- **get_agriculture_prices**: USE WHEN:
+- User asks about agriculture commodity prices
+- User needs wheat, corn, soybean, or other crop prices
+- User wants agricultural market benchmarks
+- User asks about food commodity pricing
+
+AVAILABLE COMMODITIES:
+- Wheat, Corn, Soybeans, Soybean Meal/Oil
+- Rice, Barley, Oats
+- Fertilizers (Urea, DAP, Potash)
+
+PARAMETERS:
+- date (OPTIONAL): Specific date (YYYY-MM-DD)
+- commodity (OPTIONAL): Specific commodity (e.g. "Wheat", "Corn")
+- region (OPTIONAL): Region of origin/destination
+
+EXAMPLES:
+- "Wheat prices today" → call with commodity="Wheat"
+- "Corn prices this week" → call with commodity="Corn"
+- "Urea fertilizer prices" → call with commodity="Urea"
+
+Get agriculture commodity price assessments from S&P Global Platts
 - **get_coal_prices**: USE WHEN:
 - User asks about coal prices
 - User needs Newcastle, API2, or other coal benchmark prices

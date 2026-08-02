@@ -33,7 +33,6 @@ Integrate your **Quip** (Salesforce) account with any AI agent to bring your rea
 
 
 ## Available Tools (12)
-- **get_current_user**: Retrieves the authenticated user profile
 - **get_thread**: Retrieves a single Quip document or thread by ID
 - **get_threads**: Provide a comma-separated list of IDs.
 
@@ -47,10 +46,11 @@ Batch-fetches multiple Quip folders by their IDs
 - **get_messages**: Lists chat messages or comments attached to a thread
 - **get_user**: Retrieves profile information for a specific user
 - **get_contacts**: Lists all collaborators of the authenticated user
-- **list_blobs**: Lists embedded files and images in a thread
 - **edit_document**: You must provide HTML content.
 
 Edits content in a Quip document
+- **get_current_user**: Retrieves the authenticated user profile
+- **list_blobs**: Lists embedded files and images in a thread
 
 
 ## 💬 Prompt Examples

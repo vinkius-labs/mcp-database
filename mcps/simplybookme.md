@@ -7,46 +7,46 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Enable your AI agent to manage appointments, browse staff calendars, and handle client records via the SimplyBook.me scheduling platform.
+Manage services, providers, and bookings on SimplyBook.me with AI agents.
 
 ## Description
-Connect your AI to **SimplyBook.me**, the online appointment scheduling platform for service-based businesses.
+Connect your **SimplyBook.me** account to any AI agent to automate your online booking system and resource orchestration. SimplyBook.me provides a powerful platform for managing appointment schedules, and this integration allows you to browse service lists, check provider availability, and handle full booking lifecycles through natural conversation.
 
 ### What you can do
 
-- **Booking Management** — Create, update, and cancel appointments directly from chat using `create_booking`, `update_booking`, and `cancel_booking`.
-- **Calendar Browsing** — View staff work calendars and available time slots with `get_work_calendar`.
-- **Client Records** — List and inspect client profiles to check booking history and contact details.
-- **Service Catalog** — Browse all services and events offered by the company, including pricing and duration.
+- **Resource & Service Orchestration** — List all managed services, categories, and providers to maintain a clear overview of your booking assets programmatically.
+- **Availability Intelligence** — Check real-time availability for specific services and providers to find the perfect appointment slot via natural language.
+- **Booking Lifecycle Management** — Create, retrieve, and monitor bookings directly from the AI interface to ensure your schedule is always synchronized.
+- **Client Management** — Access and monitor your client database to keep respondent metadata updated during the booking process.
+- **Operational Monitoring** — Track appointment statuses and monitor provider assignments using simple AI commands.
 
 ### How it works
 
-1. Add the SimplyBook.me integration to your AI toolset.
-2. Provide your API Key, API Secret, and Company Login.
-3. Manage your booking operations via natural language.
+1. Subscribe to this server
+2. Enter your SimplyBook.me Company Login and User API Token
+3. Start managing your appointment schedules from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Salon & Spa Owners** — Schedule client appointments and check staff availability from chat.
-- **Clinic Administrators** — Monitor upcoming consultations and manage patient bookings without opening the dashboard.
-- **Service Teams** — Track group classes, events, and provider calendars in real time.
+- **Service Business Owners** — quickly check upcoming appointments and provider schedules without switching apps.
+- **Operations Managers** — automate the process of checking real-time availability and managing client data via natural conversation.
+- **Customer Success Teams** — streamline the retrieval of booking details and coordinate service assignments directly within the chat.
 
 
-## Available Tools (10)
-- **get_work_calendar**: Retrieves the work calendar for a unit
-- **list_bookings**: Lists all scheduled bookings
-- **list_clients**: Lists company clients
-- **list_events**: Lists specific calendar events or classes
-- **list_services**: Lists all available services offered by the company
-- **list_units**: Lists all service units (providers or locations)
-- **create_booking**: Requires service ID, unit ID, and start time.
+## Available Tools (11)
+- **cancel_booking**: Cancel an existing booking
+- **list_providers**: List service providers (staff)
+- **get_client**: Get details for a specific client
+- **list_promotions**: List all active promotions and discounts
+- **check_availability**: Check available time slots
+- **list_all_bookings**: List recent appointments
+- **list_categories**: List service categories
+- **list_clients**: me account.
 
-Creates a new booking
-- **cancel_booking**: This action is irreversible.
-
-Cancels a scheduled booking
-- **update_booking**: Updates an existing booking
-- **get_booking_details**: Retrieves details for a specific booking
+List registered clients
+- **list_services**: List all bookable services
+- **create_booking**: Create a new appointment
+- **get_booking_details**: Get details for a specific booking
 
 
 ## 💬 Prompt Examples
@@ -54,47 +54,32 @@ Cancels a scheduled booking
 Here are some examples of how you can interact with the **SimplyBook.me** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all available services offered by my company."
+> "List all available services in my SimplyBook.me account."
 
 **🤖 AI Agent:**
-> Here are the 5 services currently offered:
-1. Haircut (30 min) — $25
-2. Full Color (90 min) — $120
-3. Manicure (45 min) — $35
-4. Facial Treatment (60 min) — $80
-5. Consultation (15 min) — Free
-
-Would you like to book an appointment for any of these?
+> I've retrieved your services. You have 5 active offerings including 'Consultation', 'Training Session', and 'Support Call'. Which one would you like to check availability for?
 
 ---
 
 **👤 You:**
-> "Show me all bookings for next week."
+> "Show me all bookings for this week with available time slots and staff schedules."
 
 **🤖 AI Agent:**
-> Found 8 bookings for April 7–11:
-- Mon 10:00 — Maria S. (Haircut)
-- Mon 14:30 — João P. (Full Color)
-- Tue 09:00 — Ana L. (Facial Treatment)
-- Wed 11:00 — Carlos M. (Consultation)
-- Thu 15:00 — Laura R. (Manicure)
-- Fri 10:00 — Pedro G. (Haircut)
-- Fri 13:00 — Sofia T. (Full Color)
-- Fri 16:00 — Diego A. (Facial Treatment)
+> 78 bookings this week across 5 services. Monday: 18 bookings (92% capacity). Tuesday: 16 (85% capacity). Wednesday: 14 (74%). Thursday: 15 (79%). Friday: 12 (63%). Saturday: 3 (25%). "Consultation" leads with 28 bookings (avg duration: 45 min). "Haircut" has 22. "Massage" has 15. "Facial" has 8. "Manicure" has 5. Available slots today: 6 (2 PM, 2:30, 3 PM, 3:30, 4 PM, 4:30). Staff: Sarah booked 89%, James 76%, Lisa 92% (highest utilization). No-show rate: 4.2%.
 
-Would you like details on any specific booking?
+---
+
+**👤 You:**
+> "Book a 60-minute consultation appointment for a new client next Thursday at 2 PM."
+
+**🤖 AI Agent:**
+> Booking confirmed. Service: Consultation (60 min). Date: Thursday, May 22, 2025 at 2:00 PM. Provider: Lisa (specialist, highest rated). Client: New client profile created. Confirmation email sent to client with booking details, location map, and cancellation policy. Reminder SMS scheduled: 24 hours before and 2 hours before. Google Calendar sync: event created. Buffer time: 15 min after appointment. Payment: deposit of $25 charged, remaining $75 due at appointment.
 
 
 ## ❓ FAQ
 
-**Q: Can the AI accidentally delete all my bookings?**
-No. The cancel_booking tool only cancels a single specific booking by its ID. It cannot perform bulk deletions or affect account settings. Each cancellation requires an explicit booking ID.
-
-**Q: How does authentication work?**
-You provide your API Key, API Secret, and Company Login. The integration automatically exchanges them for a session token (X-Token) on each request — no manual OAuth setup required.
-
-**Q: Can the AI create new bookings or only manage existing ones?**
-The AI can both create new bookings and manage existing ones. Use create_booking to schedule appointments and cancel_booking to cancel specific reservations by their ID.
+**Q: How do I find my SimplyBook.me User API Token?**
+Log in to your SimplyBook.me admin panel, enable the **API Custom Feature**, and navigate to **Settings** under that feature to find your User API Key.
 
 
 ## Installation & Usage

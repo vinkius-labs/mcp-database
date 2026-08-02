@@ -33,18 +33,18 @@ Integrate your conversational AI natively with **Runn**, the premier real-time r
 
 
 ## Available Tools (12)
-- **get_person**: Retrieves details for a specific person
 - **get_project**: Retrieves details for a specific project
-- **list_actuals**: Lists actual hours logged (timesheet data)
-- **list_assignments**: Lists all resource assignments across projects
-- **list_clients**: Lists all clients in the organization
-- **list_holidays**: Lists public holidays and non-working days
 - **list_milestones**: Lists milestones for a specific project
-- **list_people**: Lists all people and resources in Runn
 - **list_phases**: Lists project phases for a specific project
 - **list_projects**: Lists all projects managed in Runn
 - **list_roles**: Lists all defined roles/positions
 - **list_teams**: Lists all teams in the workspace
+- **get_person**: Retrieves details for a specific person
+- **list_actuals**: Lists actual hours logged (timesheet data)
+- **list_assignments**: Lists all resource assignments across projects
+- **list_clients**: Lists all clients in the organization
+- **list_holidays**: Lists public holidays and non-working days
+- **list_people**: Lists all people and resources in Runn
 
 
 ## 💬 Prompt Examples

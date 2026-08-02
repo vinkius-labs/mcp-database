@@ -36,15 +36,15 @@ Stop digging through separate Siteimprove dashboards to figure out why your DCI 
 
 
 ## Available Tools (9)
-- **get_site_details**: Retrieves details for a specific site
+- **list_sites**: Lists all monitored websites in Siteimprove
 - **get_site_summary**: Retrieves the Digital Certainty Index (DCI) overview for a site
+- **get_qa_summary**: Retrieves the Quality Assurance (QA) health overview for a site
+- **get_site_details**: Retrieves details for a specific site
+- **list_broken_links**: Lists all broken links found on a specific site
 - **list_crawled_pages**: Lists all crawled pages for a specific site
 - **get_accessibility_summary**: Retrieves the accessibility health overview for a site
 - **list_accessibility_issues**: Lists specific accessibility issues discovered on a site
 - **get_seo_summary**: Retrieves the SEO health overview for a site
-- **get_qa_summary**: Retrieves the Quality Assurance (QA) health overview for a site
-- **list_broken_links**: Lists all broken links found on a specific site
-- **list_sites**: Lists all monitored websites in Siteimprove
 
 
 ## 💬 Prompt Examples

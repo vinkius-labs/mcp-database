@@ -33,18 +33,18 @@ Connect your AI agent to the **world's most AI-enhanced academic knowledge graph
 
 
 ## Available Tools (4)
-- **get_semantic_citations**: Essential for literature reviews and impact analysis.
-
-Find papers that cite a specific work on Semantic Scholar
-- **get_semantic_paper**: Accepts Semantic Scholar paper ID, DOI, ArXiv ID (e.g. arXiv:2106.09685), or PMID (e.g. PMID:12345).
-
-Get full paper details from Semantic Scholar by paper ID or DOI
 - **search_semantic_author**: Returns paper count, total citations, and h-index for each researcher.
 
 Find researchers and their publication metrics on Semantic Scholar
 - **search_semantic_scholar**: Returns papers with AI-generated TLDR summaries, citation counts, influential citation counts, and fields of study. Covers Computer Science, Medicine, Biology, Physics, and all STEM fields.
 
 Search 200M+ academic papers with AI-powered TLDR summaries and influence scores
+- **get_semantic_citations**: Essential for literature reviews and impact analysis.
+
+Find papers that cite a specific work on Semantic Scholar
+- **get_semantic_paper**: Accepts Semantic Scholar paper ID, DOI, ArXiv ID (e.g. arXiv:2106.09685), or PMID (e.g. PMID:12345).
+
+Get full paper details from Semantic Scholar by paper ID or DOI
 
 
 ## 💬 Prompt Examples

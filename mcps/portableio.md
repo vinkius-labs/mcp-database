@@ -34,13 +34,13 @@ Connect your **Portable.io** account to your favorite AI agent and take orchestr
 
 ## Available Tools (6)
 - **get_flow**: Get complete configuration details of a specific data flow
-- **list_runs**: List historical execution runs for a specific data flow
 - **list_connectors**: List available pre-built API data source connectors
 - **list_destinations**: g., Snowflake, BigQuery) currently authorized to receive raw data writes from active flows.
 
 List all configured data warehouse destinations
 - **get_account**: Retrieve the exact workspace and account billing details
 - **list_flows**: List all integration flows configured in Portable
+- **list_runs**: List historical execution runs for a specific data flow
 
 
 ## 💬 Prompt Examples

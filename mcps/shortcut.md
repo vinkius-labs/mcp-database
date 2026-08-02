@@ -26,17 +26,17 @@ Grant your AI agent (like Claude or Cursor) absolute administrative dominion ove
 
 
 ## Available Tools (7)
-- **search_stories**: Useful for tracking specific tasks or features.
-
-Searches for stories in Shortcut
-- **get_story_details**: Retrieves details for a specific story
-- **list_epics**: Lists all epics in Shortcut
 - **list_iterations**: Lists all iterations (sprints)
+- **get_story_details**: Retrieves details for a specific story
 - **list_projects**: Lists all projects
 - **list_workflows**: g., "To Do", "Done") a story can be in.
 
 Lists all workflows and their states
 - **list_members**: Lists all workspace members
+- **search_stories**: Useful for tracking specific tasks or features.
+
+Searches for stories in Shortcut
+- **list_epics**: Lists all epics in Shortcut
 
 
 ## 💬 Prompt Examples
