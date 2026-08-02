@@ -36,14 +36,14 @@ No more manual editing in graphic design apps. Your AI acts as a dedicated photo
 
 
 ## Available Tools (8)
+- **advanced_image_edit**: Apply multiple AI edits in one request
+- **get_api_usage**: Check API credit usage
 - **add_realistic_shadow**: Add an AI shadow to the subject
 - **add_ai_background**: Replace background with AI-generated scene
-- **advanced_image_edit**: Apply multiple AI edits in one request
 - **expand_and_uncrop**: Expand image boundaries with AI
 - **remove_image_background**: Remove the background from an image
 - **remove_text_from_image**: Remove text overlays from an image
 - **upscale_image**: Increase image resolution with AI
-- **get_api_usage**: Check API credit usage
 
 
 ## 💬 Prompt Examples

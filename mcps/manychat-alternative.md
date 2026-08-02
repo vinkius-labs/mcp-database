@@ -34,10 +34,10 @@ Connect your **ManyChat** account to any AI agent and manage chat marketing thro
 
 
 ## Available Tools (12)
-- **create_subscriber**: Create new contact
 - **add_tag**: Add tag to user
-- **find_subscriber_by_phone**: Search by phone
+- **create_subscriber**: Create new contact
 - **find_subscriber_by_email**: Search by email
+- **find_subscriber_by_phone**: Search by phone
 - **trigger_flow**: Start automation
 - **remove_tag**: Remove tag from user
 - **set_custom_field**: Update user field

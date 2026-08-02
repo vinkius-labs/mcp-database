@@ -35,18 +35,18 @@ Connect your **Thinkific** LMS account to any AI agent and simplify how you mana
 
 
 ## Available Tools (10)
-- **get_user**: Get details for a specific user
+- **enroll_user**: Enroll a user in a product
+- **create_user**: Requires email, first name, and last name.
+
+Create a new user
+- **get_course**: Get details for a specific course
 - **list_categories**: List course categories
 - **list_courses**: List all courses
 - **list_enrollments**: List user enrollments
 - **list_orders**: List site orders
 - **list_products**: List all products (Courses and Bundles)
 - **list_users**: List Thinkific users
-- **enroll_user**: Enroll a user in a product
-- **create_user**: Requires email, first name, and last name.
-
-Create a new user
-- **get_course**: Get details for a specific course
+- **get_user**: Get details for a specific user
 
 
 ## 💬 Prompt Examples

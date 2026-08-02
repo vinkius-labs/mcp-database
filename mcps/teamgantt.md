@@ -35,9 +35,6 @@ Connect your **TeamGantt** account to any AI agent and simplify how you manage y
 
 
 ## Available Tools (12)
-- **link_tasks_dependency**: g. Task A must finish before Task B starts).
-
-Create Gantt link
 - **create_new_task**: Add task to project
 - **remove_task**: Delete task
 - **get_task_checklist**: List sub-tasks
@@ -51,6 +48,9 @@ Create Gantt link
 - **update_task_fields**: ).
 
 Update task status/dates
+- **link_tasks_dependency**: g. Task A must finish before Task B starts).
+
+Create Gantt link
 
 
 ## 💬 Prompt Examples

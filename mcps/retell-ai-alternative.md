@@ -39,7 +39,6 @@ No more manual call logs or complex agent configuration. Your AI acts as a dedic
 - **get_phone_number**: Get details for a specific phone number
 - **create_voice_agent**: Create a new AI voice agent
 - **start_phone_call**: Initiate an outbound phone call
-- **start_web_call**: Initialize a browser-based call
 - **get_agent_config**: Get details for a voice agent
 - **get_call_details**: Get details and transcript for a call
 - **get_llm_details**: Get metadata for a response engine
@@ -47,6 +46,7 @@ No more manual call logs or complex agent configuration. Your AI acts as a dedic
 - **list_recent_calls**: List call logs and history
 - **list_retell_llms**: List internal response engines
 - **list_retell_numbers**: List registered phone numbers
+- **start_web_call**: Initialize a browser-based call
 
 
 ## 💬 Prompt Examples

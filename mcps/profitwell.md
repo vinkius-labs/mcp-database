@@ -36,20 +36,20 @@ No more manual exporting of CSV results for basic churn checks. Your AI acts as 
 
 
 ## Available Tools (12)
-- **churn_subscription**: Mark churn event
-- **create_subscription**: Add new subscriber
 - **get_customer_history**: Get billing history
 - **get_daily_metrics**: Get daily growth stats
 - **exclude_customer**: g. test accounts).
 
 Exclude from metrics
 - **get_account_status**: Get API status
-- **list_subscription_plans**: List product plans
 - **get_customer_ltv**: Get Lifetime Value
 - **get_monthly_metrics**: Get monthly financial stats
 - **get_retention_stats**: Get churn metrics
 - **unchurn_subscription**: Reverse a cancellation
 - **update_subscription**: Update subscription
+- **churn_subscription**: Mark churn event
+- **create_subscription**: Add new subscriber
+- **list_subscription_plans**: List product plans
 
 
 ## 💬 Prompt Examples

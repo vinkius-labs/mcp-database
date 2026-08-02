@@ -35,23 +35,23 @@ Connect your **Uptime.com** monitoring account to any AI agent and simplify how 
 
 
 ## Available Tools (12)
-- **create_check**: g., HTTP, API).
-
-Create a new check
-- **delete_check**: Delete a monitor check
 - **get_account_info**: com account.
 
 Get account profile
 - **get_check**: Get check details
 - **get_root_cause_analysis**: Get alert RCA
-- **get_check_stats**: Get check statistics
-- **list_recent_alerts**: List recent monitor alerts
 - **list_checks**: List all monitor checks
 - **list_contact_groups**: List contact groups
 - **list_integrations**: ).
 
 List active integrations
-- **list_monitoring_nodes**: List global nodes
+- **list_monitoring_nodes**: List globalThis nodes
+- **create_check**: g., HTTP, API).
+
+Create a new check
+- **delete_check**: Delete a monitor check
+- **get_check_stats**: Get check statistics
+- **list_recent_alerts**: List recent monitor alerts
 - **update_check**: Update a check
 
 

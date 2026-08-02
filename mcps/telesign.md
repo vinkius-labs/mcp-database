@@ -24,9 +24,9 @@ Connect your **TeleSign** account to any AI agent and manage phone verification 
 
 
 ## Available Tools (10)
+- **get_phone_id**: Get phone identity
 - **check_telesign_status**: Verify API connectivity
 - **check_verification**: Check verification status
-- **get_phone_id**: Get phone identity
 - **get_phone_type**: Get phone type
 - **score_phone**: Score phone risk
 - **send_push_verification**: Send push verification

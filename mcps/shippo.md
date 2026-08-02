@@ -36,6 +36,13 @@ No more manual address checking or rate hunting. Your AI acts as a dedicated shi
 
 
 ## Available Tools (12)
+- **list_carrier_manifests**: List daily carrier manifests
+- **list_recent_shipments**: List recent shipping requests
+- **check_api_health**: Verify Shippo API connectivity
+- **create_and_validate_address**: Required for shipments.
+
+Add a new shipping address
+- **create_shipment_get_rates**: Get real-time shipping rates
 - **purchase_shipping_label**: Purchase and generate a label
 - **track_package_status**: Track a shipment in real-time
 - **list_saved_addresses**: List saved shipping addresses
@@ -44,14 +51,7 @@ No more manual address checking or rate hunting. Your AI acts as a dedicated shi
 List active carrier accounts
 - **list_customs_declarations**: List customs declarations
 - **list_customs_items**: List international customs items
-- **list_carrier_manifests**: List daily carrier manifests
-- **list_recent_shipments**: List recent shipping requests
 - **list_purchased_labels**: List all shipping transactions
-- **check_api_health**: Verify Shippo API connectivity
-- **create_and_validate_address**: Required for shipments.
-
-Add a new shipping address
-- **create_shipment_get_rates**: Get real-time shipping rates
 
 
 ## 💬 Prompt Examples

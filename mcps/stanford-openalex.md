@@ -39,18 +39,18 @@ Connect to the **OpenAlex API** — the fully open catalog of the global researc
 
 
 ## Available Tools (16)
-- **get_author**: Returns name, affiliations, paper count, citation count, h-index, i10-index, 2-year mean citedness, top research concepts, and publication trends by year. The definitive tool for assessing academic impact.
-
-Get author profile with h-index, citations, and impact metrics
-- **get_author_works**: Returns works with titles, DOIs, years, citation counts, open access status, and primary venues. Sort by "cited_by_count:desc" for most cited or "publication_date:desc" for most recent.
-
-Get all works by a specific author
 - **get_concept**: Essential for understanding the structure of a research field.
 
 Get concept details with ancestors, related concepts, and trends
 - **get_funder**: Use this to understand which organizations fund specific research areas.
 
 Get funder details and funded research statistics
+- **get_author**: Returns name, affiliations, paper count, citation count, h-index, i10-index, 2-year mean citedness, top research concepts, and publication trends by year. The definitive tool for assessing academic impact.
+
+Get author profile with h-index, citations, and impact metrics
+- **get_author_works**: Returns works with titles, DOIs, years, citation counts, open access status, and primary venues. Sort by "cited_by_count:desc" for most cited or "publication_date:desc" for most recent.
+
+Get all works by a specific author
 - **get_institution**: Get institution details with research metrics and collaborations
 - **get_source**: Essential for evaluating journal quality and coverage.
 
