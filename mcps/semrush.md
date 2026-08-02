@@ -38,17 +38,17 @@ Equip your conversational workflow with the raw data power of **Semrush**, the i
 
 Get related keywords with volume and difficulty
 - **get_backlinks**: Get backlink overview for a domain
-- **domain_vs_domain**: Compare two domains SEO side by side
-- **traffic_analytics**: Get traffic analytics: visits, bounce rate, pages/visit
-- **site_audit**: Requires a valid Semgrep project ID.
-
-Get site audit quality overview for a project
 - **domain_overview**: Specify the database (e.g., "us", "uk") if targeting a specific region.
 
 Get domain SEO overview: rank, organic traffic, paid traffic
 - **organic_keywords**: Useful for competitor analysis or performance tracking.
 
 Get domain organic keyword positions
+- **domain_vs_domain**: Compare two domains SEO side by side
+- **traffic_analytics**: Get traffic analytics: visits, bounce rate, pages/visit
+- **site_audit**: Requires a valid Semgrep project ID.
+
+Get site audit quality overview for a project
 
 
 ## 💬 Prompt Examples

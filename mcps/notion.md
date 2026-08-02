@@ -35,13 +35,9 @@ Unlock the full potential of your connected workspace by linking **Notion** to y
 
 
 ## Available Tools (14)
-- **create_database**: Properties define columns. Minimum: provide a title property with type "title".
-
-Create a new Notion database inside a page
 - **append_block_children**: ) to the end of a page or nested block. Provide blocks as a JSON array of Notion block objects. Example for a paragraph: [{"type":"paragraph","paragraph":{"rich_text":[{"type":"text","text":{"content":"Hello world"}}]}}]
 
 Append content blocks to a Notion page or block
-- **archive_page**: Archive/Delete a Notion Page
 - **get_blocks**: Read hierarchical textual content under a Page
 - **create_page**: Insert a new row/page inside a Database
 - **delete_block**: ) from a page. This action is irreversible — the block and all nested children are permanently deleted.
@@ -53,6 +49,14 @@ Retrieve the schema definition of a Database
 - **get_page**: Does NOT fetch body text.
 
 Retrieve metadata properties for a single Notion Page
+- **update_page_properties**: ) using the Notion properties schema. Provide the properties as a JSON object matching the Notion API property format.
+
+Update arbitrary properties on a Notion page
+- **update_page_title**: Update the title of a Notion Page
+- **create_database**: Properties define columns. Minimum: provide a title property with type "title".
+
+Create a new Notion database inside a page
+- **archive_page**: Archive/Delete a Notion Page
 - **list_users**: Enumerate workspace members and bots
 - **query_database**: Read structured data rows from a Notion Database
 - **search_databases**: Essential for tracking down Database UUIDs.
@@ -61,10 +65,6 @@ Fuzzy text search globally across Notion workspace Databases
 - **search_pages**: Necessary to locate Page UUIDs rapidly.
 
 Fuzzy text search globally across Notion workspace pages
-- **update_page_properties**: ) using the Notion properties schema. Provide the properties as a JSON object matching the Notion API property format.
-
-Update arbitrary properties on a Notion page
-- **update_page_title**: Update the title of a Notion Page
 
 
 ## 💬 Prompt Examples

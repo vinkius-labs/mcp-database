@@ -24,25 +24,16 @@ Connect your **Salesforce** CRM to any AI agent and manage your entire sales pip
 
 
 ## Available Tools (12)
+- **list_reports**: List available Salesforce reports
+- **run_report**: Use list_reports first to find the report ID.
+
+Execute a Salesforce report and get results
+- **list_accounts**: List Salesforce accounts
 - **list_contacts**: List Salesforce contacts
 - **list_opportunities**: List sales opportunities
 - **get_record**: Specify the SObject type (Account, Contact, Opportunity, Case, Lead) and the record ID.
 
 Get a specific Salesforce record by type and ID
-- **soql_query**: Example: SELECT Id, Name FROM Account WHERE Industry = 'Technology' LIMIT 10
-
-Execute a SOQL query against Salesforce
-- **describe_object**: Useful for understanding data structure.
-
-Get metadata about a Salesforce object
-- **list_reports**: List available Salesforce reports
-- **run_report**: Use list_reports first to find the report ID.
-
-Execute a Salesforce report and get results
-- **global_search**: Returns matches across Accounts, Contacts, Leads, and other objects simultaneously.
-
-Search across all Salesforce objects
-- **list_accounts**: List Salesforce accounts
 - **create_record**: Provide JSON fields as a string.
 
 Create a new Salesforce record
@@ -52,6 +43,15 @@ Update an existing Salesforce record
 - **delete_record**: This action is irreversible.
 
 Delete a Salesforce record
+- **soql_query**: Example: SELECT Id, Name FROM Account WHERE Industry = 'Technology' LIMIT 10
+
+Execute a SOQL query against Salesforce
+- **describe_object**: Useful for understanding data structure.
+
+Get metadata about a Salesforce object
+- **global_search**: Returns matches across Accounts, Contacts, Leads, and other objects simultaneously.
+
+Search across all Salesforce objects
 
 
 ## 💬 Prompt Examples

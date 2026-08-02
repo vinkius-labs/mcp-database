@@ -34,8 +34,8 @@ Equip your generative intelligent instances with strict orchestration boundaries
 
 ## Available Tools (10)
 - **authorize_order**: Authorize payment for an order
-- **capture_order**: Capture payment for an order
 - **create_order**: Create a new PayPal checkout order
+- **capture_order**: Capture payment for an order
 - **cancel_subscription**: Cancel an active subscription
 - **capture_authorization**: Capture a previously authorized payment
 - **get_order_details**: Get details for a specific order

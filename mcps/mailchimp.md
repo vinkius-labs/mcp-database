@@ -39,7 +39,6 @@ Add a new contact to a Mailchimp audience
 - **list_campaigns**: Can be used to find a campaign ID.
 
 List Mailchimp campaigns. Returns campaign IDs, types, subjects, send times, and open/click stats
-- **create_campaign**: Create a new Mailchimp campaign. Returns campaign ID
 - **delete_member**: Requires the list_id and the subscriber MD5 hash (lowercase MD5 of the email).
 
 Archive/remove a subscriber from an audience
@@ -50,9 +49,10 @@ Get details of a Mailchimp audience. Returns name, member count, open/click rate
 - **list_members**: Requires an audience ID.
 
 List members (contacts) in a Mailchimp audience. Returns email addresses, status, and tags
+- **list_segments**: List saved segments for an audience
+- **create_campaign**: Create a new Mailchimp campaign. Returns campaign ID
 - **get_report**: Get Mailchimp campaign performance report
 - **search_members**: Search Mailchimp contacts across all audiences by name or email
-- **list_segments**: List saved segments for an audience
 - **send_campaign**: This action is irreversible. Triggers live email send.
 
 Send a Mailchimp campaign immediately

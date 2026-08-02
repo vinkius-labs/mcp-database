@@ -7,42 +7,63 @@
 
 **Category:** [industry-titans](../categories/industry-titans.md)
 
-Manage files, folders, collaborations, and metadata on Box — the enterprise cloud content management platform.
+Store, share, and collaborate on files securely with enterprise-grade cloud content management and governance controls.
 
 ## Description
-Connect your **Box** enterprise account to any AI agent and manage cloud content through natural conversation.
+Connect your **Box** account to any AI agent and take full control of your cloud content management and enterprise collaboration workflows through natural conversation.
 
 ### What you can do
 
-- **Files** — Upload, download, search, and manage file metadata and permissions
-- **Folders** — Navigate, create, and list folder contents with recursive traversal
-- **Search** — Full-text search across all content with metadata filters
-- **Collaborations** — Manage shared access, invitations, and permission levels
-- **Metadata** — Apply and query custom metadata templates on files and folders
-- **Users** — List enterprise users and manage group memberships
+- **Folder Orchestration** — Navigate through your entire Box directory structure programmatically, listing folder items and retrieving high-fidelity metadata in real-time
+- **File Lifecycle Management** — Access detailed information about individual files, including version history, size, and high-fidelity descriptions directly through your agent
+- **Collaboration Intelligence** — Programmatically manage folder collaborations by inviting team members with specific roles (editor, viewer) to ensure perfectly coordinated access
+- **Search & Discovery** — Use semantic keywords to search for specific files and folders across your entire Box account to maintain a perfectly coordinated digital library
+- **User Visibility** — Retrieve complete profile information for the authenticated user and manage account-level metadata for instant operational reporting
+
+### How it works
+
+1. Subscribe to this server
+2. Retrieve your **Developer Token** (for testing) or **Access Token** (OAuth) from the Box Developer Console
+3. Start managing your enterprise content from Claude, Cursor, or any MCP client
+
+No more manual searching through browser tabs to find specific documents or check permissions. Your AI acts as your dedicated cloud content manager and digital librarian.
 
 ### Who is this for?
 
-- **Operations** — organize and search enterprise documents through chat
-- **Legal & Compliance** — query files with retention policies and metadata
-- **IT Admins** — manage user access and collaboration permissions
-- **Knowledge Workers** — find and share content without navigating the Box UI
+- **Project Managers** — instantly retrieve project files and manage team access using natural language commands
+- **Knowledge Workers** — verify document versions and search for internal resources without leaving your workspace
+- **IT & Admin Leads** — automate organizational file auditing and collaboration oversight through simple AI queries
 
 
-## Available Tools (7)
-- **list_folder_items**: Use folder ID "0" for the root. Returns names, sizes, types, and modified dates.
+## Available Tools (10)
+- **create_collaboration**: Requires the folder ID, the user's email (login), and an assigned role (e.g., "editor", "viewer", "previewer").
 
-List items in a Box folder
-- **get_folder_info**: Get folder details
-- **create_folder**: Default parent is root (ID "0").
+Share a folder with a collaborator
+- **create_folder**: Use parent ID "0" for the root folder.
 
-Create a new folder
-- **get_file_info**: Get file details
-- **search_content**: Filter by file extensions (pdf,docx,xlsx) or ancestor folder. Searches inside documents.
+Create a new folder in Box
+- **delete_folder**: If the folder is not empty, you must set the recursive flag to true to delete all its contents.
 
-Search files and folders
-- **get_folder_collaborations**: List collaborators on a folder
-- **list_users**: List enterprise users
+Delete a folder from Box
+- **get_file_info**: Includes size, SHA1 hash, version information, and parent folder details.
+
+Get details and metadata for a file
+- **search_content**: Useful for discovering items when the IDs are unknown.
+
+Search for files and folders
+- **update_file**: Can be used to rename the file or update its description.
+
+Update file attributes and metadata
+- **get_current_user**: Use this to verify the current identity.
+
+Retrieve current Box user details
+- **delete_file**: Delete a file from Box
+- **get_folder_info**: Includes information about the parent folder, creator, and modified dates.
+
+Get details and metadata for a folder
+- **list_folder_items**: Note: Use ID "0" for the root folder.
+
+List all items within a folder
 
 
 ## 💬 Prompt Examples
@@ -50,38 +71,38 @@ Search files and folders
 Here are some examples of how you can interact with the **Box** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Search for all contracts expiring in Q2 2026."
+> "List all items in my Box root folder."
 
 **🤖 AI Agent:**
-> Found 14 files matching 'contract': 1. 'MSA-ClientAlpha-2024.pdf' (Legal/Contracts, 2.3 MB, metadata: expires=2026-06-30). 2. 'SaaS-License-BetaCorp.docx' (Procurement, 890 KB, expires=2026-04-15). Showing top 5 of 14.
+> I've retrieved your root directory. You currently have 5 items, including 'Project Alpha' (Folder ID: 123) and 'Quarterly Reports'. Which one should we explore for details?
 
 ---
 
 **👤 You:**
-> "Who has access to the Board Reports folder?"
+> "Search for files containing 'Invoice' in my Box account."
 
 **🤖 AI Agent:**
-> 'Board Reports' folder collaborators: 1. CEO Jane Smith (Co-owner). 2. CFO Mike Chen (Editor). 3. Legal Team (Viewer, 5 members). 4. External Auditor Group (Viewer, 2 members, link expires Dec 2026). Total: 10 unique users.
+> Searching... I found 3 matching files: 'Invoice_April_2026.pdf' (ID: 456), 'Old_Invoice.docx', and 'Pending_Invoice'. Would you like the high-fidelity metadata for the April invoice?
 
 ---
 
 **👤 You:**
-> "List the 10 largest files in the Engineering folder."
+> "Invite @user1 to folder '123' as an editor."
 
 **🤖 AI Agent:**
-> Top 10 files by size in 'Engineering': 1. 'architecture-diagram-v12.fig' (245 MB). 2. 'load-test-results-march.zip' (189 MB). 3. 'database-backup-staging.sql' (156 MB). Total folder size: 2.1 GB across 847 files.
+> Collaboration created! I've successfully invited @user1 to collaborate on specified folder (ID: 123) with the 'editor' role. They will receive a notification to join. Need help with any other access controls?
 
 
 ## ❓ FAQ
 
-**Q: What authentication does Box use?**
-Box supports Client Credentials Grant (CCG) for server-to-server auth. Create a Custom App in the Box Developer Console, select 'Server Authentication (Client Credentials Grant)', and get the Client ID and Client Secret.
+**Q: How do I find my Box Access Token?**
+Log in to the [**Box Developer Console**](https://app.box.com/developers/console), select your app, and generate a Developer Token or use the OAuth settings to obtain an Access Token.
 
-**Q: Can I search file contents?**
-Yes. The search_content tool uses Box's full-text search engine. It searches inside documents, presentations, spreadsheets, and PDFs.
+**Q: Can I search for content via AI?**
+Yes! The `search_content` tool allows your agent to find files and folders across your entire account matching specific keywords.
 
-**Q: Does it support metadata queries?**
-Yes. The query_metadata tool supports Box metadata queries using SQL-like syntax against metadata templates applied to files and folders.
+**Q: How do I share a folder programmatically?**
+Use the `create_collaboration` tool and provide the folder ID, the recipient's email (login), and their assigned role (e.g., 'editor', 'viewer').
 
 
 ## Installation & Usage

@@ -35,18 +35,21 @@ Connect your **Instagram Business** account to any AI agent and take full contro
 
 
 ## Available Tools (10)
-- **get_profile**: Returns: username, display name, biography, followers, following, post count, website, profile picture, account type. For posts/media, use instagram.media. For post performance, use instagram.insights.
-
-Get the authenticated Instagram account profile: username, bio, follower count, following, post count, website
-- **get_media**: Returns media_type, caption, permalink, like_count, comments_count, timestamp. For post performance metrics, use instagram.insights with the media_id. For comments, use instagram.comments with the media_id.
-
-Get recent Instagram posts — images, videos, reels, carousels — with like and comment counts
 - **get_insights**: Requires a media_id — get it from instagram.media first. Only works for Business and Creator accounts. Returns: impressions (total views including repeats), reach (unique accounts), likes, comments, shares, saves.
 
 Get performance insights for an Instagram post: impressions, reach, likes, comments, shares, saves, and total interactions
 - **get_comments**: Requires a media_id — get it from instagram.media first. To reply to a comment, use instagram.comment.reply. To delete a comment, use instagram.comment.delete.
 
 Get comments on an Instagram post — text, username, timestamp, like count, and reply count
+- **refresh_token**: Can be called any time after the token has been active for at least 24 hours. After refreshing, ALWAYS show the new access token and instruct the user to update their INSTAGRAM_ACCESS_TOKEN credential in Vinkius. The old token becomes invalid.
+
+Refresh your Instagram access token — extends validity for another 60 days
+- **get_profile**: Returns: username, display name, biography, followers, following, post count, website, profile picture, account type. For posts/media, use instagram.media. For post performance, use instagram.insights.
+
+Get the authenticated Instagram account profile: username, bio, follower count, following, post count, website
+- **get_media**: Returns media_type, caption, permalink, like_count, comments_count, timestamp. For post performance metrics, use instagram.insights with the media_id. For comments, use instagram.comments with the media_id.
+
+Get recent Instagram posts — images, videos, reels, carousels — with like and comment counts
 - **get_media_children**: Requires a media_id.
 
 Get all photos/videos within an Instagram carousel album
@@ -62,9 +65,6 @@ Reply to an Instagram comment
 - **delete_comment**: Requires a comment_id.
 
 Delete an Instagram comment
-- **refresh_token**: Can be called any time after the token has been active for at least 24 hours. After refreshing, ALWAYS show the new access token and instruct the user to update their INSTAGRAM_ACCESS_TOKEN credential in Vinkius. The old token becomes invalid.
-
-Refresh your Instagram access token — extends validity for another 60 days
 
 
 ## 💬 Prompt Examples

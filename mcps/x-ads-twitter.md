@@ -46,12 +46,6 @@ All requests are signed with OAuth 1.0a at runtime. Your credentials are encrypt
 
 
 ## Available Tools (13)
-- **get_analytics**: Metric groups: ENGAGEMENT, BILLING, VIDEO, WEB_CONVERSION, MOBILE_CONVERSION. Dates must be ISO 8601 format (e.g., 2026-06-01T00:00:00Z).
-
-Pull performance analytics for campaigns, line items, or ads over a date range
-- **get_campaign**: Use list_campaigns first to find the campaign ID.
-
-Get full details for a specific campaign by its ID
 - **get_line_item**: Use list_line_items first to find the line item ID.
 
 Get full details for a specific line item by its ID
@@ -64,18 +58,24 @@ List all campaigns within an X Ads account
 - **list_funding_instruments**: Useful for verifying billing is set up before launching campaigns.
 
 List payment methods and billing sources attached to an X Ads account
-- **list_line_items**: Line items define the targeting and bidding strategy within a campaign.
-
-List all line items across campaigns in an X Ads account
 - **list_media_creatives**: Use this to audit which creative assets are currently active.
 
 List all media creative assets (images and videos) used in an X Ads account
-- **list_promoted_tweets**: Use this to verify which tweets are actively being promoted.
-
-List all promoted tweets currently running or paused in an X Ads account
 - **list_tailored_audiences**: Useful for understanding retargeting strategy.
 
 List custom audiences (tailored audiences) for retargeting and CRM matching
+- **get_analytics**: Metric groups: ENGAGEMENT, BILLING, VIDEO, WEB_CONVERSION, MOBILE_CONVERSION. Dates must be ISO 8601 format (e.g., 2026-06-01T00:00:00Z).
+
+Pull performance analytics for campaigns, line items, or ads over a date range
+- **get_campaign**: Use list_campaigns first to find the campaign ID.
+
+Get full details for a specific campaign by its ID
+- **list_line_items**: Line items define the targeting and bidding strategy within a campaign.
+
+List all line items across campaigns in an X Ads account
+- **list_promoted_tweets**: Use this to verify which tweets are actively being promoted.
+
+List all promoted tweets currently running or paused in an X Ads account
 - **list_targeting_criteria**: Requires both the account ID and line item ID.
 
 List all targeting criteria applied to a specific line item

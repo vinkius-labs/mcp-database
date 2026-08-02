@@ -35,17 +35,17 @@ Bring your **Oracle Database 23ai** vector capabilities directly into your AI ag
 
 
 ## Available Tools (7)
-- **list_tables**: List accessible tables in the current Oracle schema
 - **describe_table**: Describe table columns and explicit data types including VECTORs
 - **execute_sql_query**: WARNING: Output payload size is inherently limited, restrict rows fetched (FETCH FIRST 100 ROWS ONLY) to ensure stability.
 
 Execute arbitrary SQL query against the Oracle runtime via ORDS
+- **table_stats**: Get table cardinality and optimizer statistics
+- **get_database_version**: Get exact Oracle DB Runtime version banner
+- **list_tables**: List accessible tables in the current Oracle schema
 - **vector_search**: 1, -0.4, 0.5]` against a strict `VECTOR` column natively inside Oracle DB, sorting and fetching the nearest neighbors.
 
 Execute Vector similarity search via Oracle 23ai native VECTOR_DISTANCE
 - **list_vector_indexes**: List specialized AI Vector search indexes (HNSW, IVF) instantiated
-- **table_stats**: Get table cardinality and optimizer statistics
-- **get_database_version**: Get exact Oracle DB Runtime version banner
 
 
 ## 💬 Prompt Examples

@@ -39,16 +39,22 @@ No more manual typing into phone apps. Your AI agent becomes your WhatsApp commu
 
 
 ## Available Tools (9)
-- **get_business_profile**: Get the WhatsApp Business Profile for this phone number
 - **mark_as_read**: Provide the raw wamid message ID.
 
 Mark a WhatsApp message as read
-- **send_media_message**: Provide the recipient number, absolute file URL, and media type.
-
-Sends an image, video, document, or audio file via a public URL
 - **send_quick_reply_buttons**: Provide the explanation text and a comma-separated list of button labels (max 3).
 
 Sends up to 3 quick-reply buttons with a message block
+- **send_template_message**: Requires the exact template name and language code.
+
+Sends a Meta-approved Template message to initiate or resume a conversation
+- **send_text_message**: Provide the E.164 phone number and the message text.
+
+Sends a free-form conversational text message to a user on WhatsApp
+- **get_business_profile**: Get the WhatsApp Business Profile for this phone number
+- **send_media_message**: Provide the recipient number, absolute file URL, and media type.
+
+Sends an image, video, document, or audio file via a public URL
 - **send_contact_card**: Provide contacts as a JSON array with name and phone fields.
 
 Send a contact card via WhatsApp
@@ -58,12 +64,6 @@ Sends a physical location pin on the map
 - **send_emoji_reaction**: Provide the recipient number, the target message_id (starting with wamid...), and an emoji.
 
 Reacts to a specific WhatsApp message with an emoji
-- **send_template_message**: Requires the exact template name and language code.
-
-Sends a Meta-approved Template message to initiate or resume a conversation
-- **send_text_message**: Provide the E.164 phone number and the message text.
-
-Sends a free-form conversational text message to a user on WhatsApp
 
 
 ## 💬 Prompt Examples

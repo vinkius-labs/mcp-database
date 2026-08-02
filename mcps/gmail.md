@@ -33,45 +33,12 @@ Connect your **Gmail** enterprise or personal account to any AI agent and bring 
 
 
 ## Available Tools (30)
-- **get_message_content**: Use after list_gmail_messages to read specific emails.
-
-Read the full content of an email
-- **untrash_gmail_message**: Recover a message from the trash
-- **list_gmail_threads**: Supports Gmail search syntax via "q". Threads group related messages together.
-
-List conversation threads
-- **create_draft**: The user can review and modify the draft in Gmail or send it later using send_draft. Safer than sending directly.
-
-Create an email draft
-- **get_vacation_settings**: Check vacation auto-responder status
-- **get_gmail_profile**: Use historyId with list_mailbox_history for change tracking.
-
-Get mailbox identity and stats
-- **verify_api_connection**: Check Gmail API connectivity
 - **list_unread_emails**: Equivalent to searching with "is:unread".
 
 List the latest unread messages
-- **find_emails_from_sender**: Shortcut for the "from:" Gmail search operator.
-
-Search emails by sender address
-- **delete_draft**: This is not reversible.
-
-Delete a draft permanently
-- **update_vacation_settings**: Optionally restrict to contacts only or domain members. Dates are Unix timestamps in milliseconds.
-
-Toggle vacation auto-responder
-- **list_inbox_filters**: Filters automatically process incoming messages based on criteria (from, to, subject, query) and perform actions (add/remove labels, forward, archive, etc.).
-
-List inbox filter rules
-- **create_inbox_filter**: Criteria fields: from, to, subject, query, hasAttachment, negatedQuery. Action fields: addLabelIds, removeLabelIds, forward, star, markImportant. Provide criteria and action as JSON strings.
-
-Create an inbox filter rule
 - **list_gmail_messages**: Use the "q" parameter for Gmail search syntax (e.g. "from:boss@company.com is:unread", "has:attachment", "newer_than:2d"). Returns message IDs and thread IDs — use get_message_content to read full details.
 
 List messages from the inbox
-- **send_email**: Supports plain text and HTML body, CC, BCC, and reply threading via inReplyTo/references headers. The email is sent immediately.
-
-Compose and send an email
 - **modify_message_labels**: Use label IDs (e.g. "UNREAD", "STARRED", "INBOX", or custom label IDs from list_mailbox_labels). Removing "UNREAD" marks as read.
 
 Add or remove labels from a message
@@ -112,9 +79,42 @@ Send an existing draft
 - **get_attachment**: Returns base64-encoded data and size. First use get_message_content to find attachment IDs in the message payload parts.
 
 Download an email attachment
+- **list_inbox_filters**: Filters automatically process incoming messages based on criteria (from, to, subject, query) and perform actions (add/remove labels, forward, archive, etc.).
+
+List inbox filter rules
+- **create_inbox_filter**: Criteria fields: from, to, subject, query, hasAttachment, negatedQuery. Action fields: addLabelIds, removeLabelIds, forward, star, markImportant. Provide criteria and action as JSON strings.
+
+Create an inbox filter rule
 - **list_mailbox_history**: Get the starting history ID from get_gmail_profile. Useful for incremental sync and change detection.
 
 Track mailbox changes since a point in time
+- **get_gmail_profile**: Use historyId with list_mailbox_history for change tracking.
+
+Get mailbox identity and stats
+- **verify_api_connection**: Check Gmail API connectivity
+- **find_emails_from_sender**: Shortcut for the "from:" Gmail search operator.
+
+Search emails by sender address
+- **get_message_content**: Use after list_gmail_messages to read specific emails.
+
+Read the full content of an email
+- **untrash_gmail_message**: Recover a message from the trash
+- **list_gmail_threads**: Supports Gmail search syntax via "q". Threads group related messages together.
+
+List conversation threads
+- **create_draft**: The user can review and modify the draft in Gmail or send it later using send_draft. Safer than sending directly.
+
+Create an email draft
+- **get_vacation_settings**: Check vacation auto-responder status
+- **delete_draft**: This is not reversible.
+
+Delete a draft permanently
+- **update_vacation_settings**: Optionally restrict to contacts only or domain members. Dates are Unix timestamps in milliseconds.
+
+Toggle vacation auto-responder
+- **send_email**: Supports plain text and HTML body, CC, BCC, and reply threading via inReplyTo/references headers. The email is sent immediately.
+
+Compose and send an email
 
 
 ## 💬 Prompt Examples

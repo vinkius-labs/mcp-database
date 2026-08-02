@@ -39,7 +39,6 @@ No more manual navigation through complex automation dashboards to check if a wo
 
 
 ## Available Tools (5)
-- **get_zap**: Retrieves comprehensive configuration for a specific Zap
 - **list_apps**: g. Slack, Gmail) are authenticated and available for automation.
 
 Lists all third-party applications currently connected to the Zapier account
@@ -47,6 +46,7 @@ Lists all third-party applications currently connected to the Zapier account
 - **search_templates**: Provide a query string like "Slack to Trello".
 
 Searches the Zapier directory for pre-made workflow templates
+- **get_zap**: Retrieves comprehensive configuration for a specific Zap
 - **list_zaps**: Lists all Zaps (automated workflows) in the Zapier account
 
 

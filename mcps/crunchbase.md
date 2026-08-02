@@ -36,15 +36,15 @@ Essential for **venture capitalists**, **startup founders**, **business developm
 
 
 ## Available Tools (10)
+- **search_organizations**: Returns organization names, short descriptions, operational status (operating, acquired, closed), headquarters locations, and industry categories. Use this as the first step to find a company before getting detailed funding, acquisition, or personnel data. The search returns up to 20 matching organizations ranked by relevance.
+
+Search for companies and organizations by name keyword in Crunchbase
 - **get_acquisition_details**: Use this after list_acquisitions to understand the full context of a specific M&A deal.
 
 Get complete details of a specific acquisition transaction
 - **get_funding_round_details**: ), announced date, all participating investors with their investment roles (lead, participant), pre-money and post-money valuations if disclosed, number of investors, and associated press release links. Use this after list_funding_rounds to deep-dive into a specific funding event.
 
 Get detailed information about a specific funding round transaction
-- **get_ipo_details**: ), ticker symbol, IPO date, share price at offering, number of shares offered, total capital raised from IPO, and post-IPO valuation. Use this for companies that have gone public to understand their transition from private to public markets.
-
-Get IPO (Initial Public Offering) details for a public organization
 - **get_organization_details**: Returns the entity overview with all known metadata Crunchbase has on file. Use this after search_organizations to get the full company profile including funding totals, acquisition history, and key personnel.
 
 Get complete profile and metadata for a specific organization from Crunchbase
@@ -60,12 +60,12 @@ List all funding rounds (Seed, Series A/B/C, IPO, etc.) for a specific organizat
 - **list_investments**: Each investment entry includes the company invested in, funding round participated (Seed, Series A, etc.), investment date, co-investors in the same round, and whether this investor led the round. Use this to analyze a VC firm's investment thesis, portfolio diversity, recent deal activity, or find startups backed by a specific investor.
 
 List all investments made by a specific organization or investor
-- **search_organizations**: Returns organization names, short descriptions, operational status (operating, acquired, closed), headquarters locations, and industry categories. Use this as the first step to find a company before getting detailed funding, acquisition, or personnel data. The search returns up to 20 matching organizations ranked by relevance.
-
-Search for companies and organizations by name keyword in Crunchbase
 - **search_people**: Returns person names, current job titles, organizational affiliations, locations, and brief career summaries. Use this to find founders, CEOs, investors, or board members before getting their detailed profiles with investment history and professional relationships.
 
 Search for entrepreneurs, investors, executives, and board members by name in Crunchbase
+- **get_ipo_details**: ), ticker symbol, IPO date, share price at offering, number of shares offered, total capital raised from IPO, and post-IPO valuation. Use this for companies that have gone public to understand their transition from private to public markets.
+
+Get IPO (Initial Public Offering) details for a public organization
 
 
 ## 💬 Prompt Examples
