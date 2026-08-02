@@ -36,13 +36,14 @@ No more manual JSON-RPC requests or complex Postman setups. Your AI acts as a bl
 
 
 ## Available Tools (32)
+- **ankr_getTokenPrice**: Returns the current USD price of a token
+- **getTransaction**: Returns details for a confirmed transaction
 - **ankr_getAccountBalance**: Retrieves all token balances for a wallet
 - **ankr_getBlocks**: Retrieves full info for a range of blocks
 - **ankr_getInteractions**: Lists all blockchains a wallet has interacted with
 - **ankr_getNFTHolders**: Lists all holders of a specific NFT collection
 - **ankr_getNFTMetadata**: Retrieves metadata for a specific NFT
 - **ankr_getNFTsByOwner**: Retrieves all NFTs owned by an address across multiple chains
-- **ankr_getTokenPrice**: Returns the current USD price of a token
 - **ankr_getTokenTransfers**: Returns historical token transfer data
 - **eth_blockNumber**: Returns the most recent block number
 - **eth_call**: Executes a call without creating a transaction
@@ -65,7 +66,6 @@ No more manual JSON-RPC requests or complex Postman setups. Your AI acts as a bl
 - **getEpochInfo**: Returns information about the current epoch
 - **getLatestBlockhash**: Returns the latest blockhash for transaction building
 - **getProgramAccounts**: Returns all accounts owned by a program
-- **getTransaction**: Returns details for a confirmed transaction
 - **sendTransaction**: Submits a signed transaction
 - **simulateTransaction**: Simulates a transaction to check for errors
 

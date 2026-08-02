@@ -36,13 +36,13 @@ Connect your AI agents to **Coze** (扣子), the advanced bot orchestration plat
 
 ## Available Tools (11)
 - **create_chat**: Send a message to a Coze bot and get a response
-- **list_bots**: List published bots in a specific Coze Space
-- **list_datasets**: List knowledge base datasets in a Coze Space
-- **list_workspaces**: List available Coze workspaces/spaces
 - **publish_bot**: Publish a Coze Bot draft
 - **submit_tool_outputs**: Submit outputs for tools/plugins required by the bot
 - **upload_document**: Upload a raw text document to a Knowledge Base
 - **upload_file_url**: Upload an external file URL to Coze storage
+- **list_bots**: List published bots in a specific Coze Space
+- **list_datasets**: List knowledge base datasets in a Coze Space
+- **list_workspaces**: List available Coze workspaces/spaces
 - **clear_conversation**: Clear all messages from a conversation session
 - **delete_document**: Delete documents from a dataset by ID
 - **get_conversation_history**: Retrieve the message list from a conversation

@@ -35,10 +35,10 @@ Connect your AI agents to **Lingyi Wanwu** (01.AI), the high-performance AI lab 
 
 
 ## Available Tools (4)
-- **list_models**: List available Yi models
 - **chat_completions**: Send a message to a Yi model
 - **check_moderation**: Check content for policy violations
 - **get_embeddings**: Generate text embeddings
+- **list_models**: List available Yi models
 
 
 ## 💬 Prompt Examples

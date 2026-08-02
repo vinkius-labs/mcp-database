@@ -32,14 +32,11 @@ Connect your Vinkius agents directly to **Dify.AI**, the leading open-source LLM
 
 
 ## Available Tools (14)
-- **delete_conversation**: Delete a Dify conversation
 - **submit_feedback**: Submit feedback (like/dislike) for a message
-- **get_suggested_questions**: Use after receiving a chat response.
-
-Get next suggested questions for a message
 - **chat_message**: Send a chat message to a Dify Application
 - **get_app_meta**: Get application meta data configuration
 - **get_conversation_messages**: Get historical messages of a specific Dify conversation
+- **delete_conversation**: Delete a Dify conversation
 - **get_conversations**: List recent conversations for a user
 - **get_workflow_info**: Get basic App information
 - **get_workflow_parameters**: Get required application parameters
@@ -51,6 +48,9 @@ Send a text completion request to a Dify completion app
 - **stop_chat_generation**: Only supported for streaming mode responses.
 
 Stop an in-progress chat message generation
+- **get_suggested_questions**: Use after receiving a chat response.
+
+Get next suggested questions for a message
 - **upload_file**: Upload a file via URL for multimodal understanding
 
 

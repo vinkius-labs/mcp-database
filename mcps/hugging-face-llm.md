@@ -12,6 +12,16 @@ Connect Hugging Face LLM to any AI agent via MCP.
 
 
 ## Available Tools (8)
+- **answer_question**: Provide a context (text) and a question, and it extracts the answer.
+
+Answer a question based on a given context
+- **summarize_text**: Good for articles, reports, or long messages.
+
+Summarize a long text into a concise version
+- **translate_text**: The specific languages depend on the chosen model.
+
+Translate text from one language to another
+- **sentiment_analysis**: Analyze the sentiment of a text (Positive/Negative)
 - **classify_text**: No training required.
 
 Classify text into custom categories using Zero-Shot Classification
@@ -20,16 +30,6 @@ Classify text into custom categories using Zero-Shot Classification
 Generate text completions using open-source LLMs (Mistral, Zephyr, etc)
 - **fill_mask**: Fill in the blanks in a text using a masked language model
 - **extract_entities**: Extract named entities (People, Organizations, Locations) from text
-- **answer_question**: Provide a context (text) and a question, and it extracts the answer.
-
-Answer a question based on a given context
-- **sentiment_analysis**: Analyze the sentiment of a text (Positive/Negative)
-- **summarize_text**: Good for articles, reports, or long messages.
-
-Summarize a long text into a concise version
-- **translate_text**: The specific languages depend on the chosen model.
-
-Translate text from one language to another
 
 
 

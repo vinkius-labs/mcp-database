@@ -12,9 +12,6 @@ Connect Hugging Face Audio to any AI agent via MCP.
 
 
 ## Available Tools (4)
-- **classify_audio**: ) in an audio file from a URL.
-
-Classify the sounds in an audio file
 - **enhance_audio**: Enhance audio quality (remove noise)
 - **text_to_speech**: Returns the audio as Base64.
 
@@ -22,6 +19,9 @@ Generate speech audio from text
 - **transcribe_audio**: Supports multiple languages.
 
 Transcribe speech from an audio file to text
+- **classify_audio**: ) in an audio file from a URL.
+
+Classify the sounds in an audio file
 
 
 

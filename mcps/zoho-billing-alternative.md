@@ -5,135 +5,27 @@
 
 ## Overview
 
-**Category:** [industry-titans](../categories/industry-titans.md)
+**Category:** [finance-accounting](../categories/finance-accounting.md)
 
-Automate your subscription management with Zoho Billing — manage organizations, products, and plans directly from your AI agent.
+Comprehensive billing and subscription management platform.
 
 ## Description
-Connect your **Zoho Billing** account to any AI agent to streamline your recurring revenue operations. Manage your entire product catalog and subscription infrastructure through natural language.
-
-### What you can do
-
-- **Organization Management** — List, retrieve, and update organizational details to keep your business profile synchronized.
-- **Product Catalog** — Create and manage products, toggle their active status, or remove them from your inventory.
-- **Plan Configuration** — Handle subscription plans by creating new offerings, updating pricing structures, or retrieving specific plan codes.
-- **Lifecycle Control** — Instantly mark products or plans as active/inactive to control what is available to your customers.
-
-### How it works
-
-1. Subscribe to this server
-2. Provide your Zoho Billing Access Token and Organization ID
-3. Start managing your billing logic from Claude, Cursor, or any MCP client
-
-### Who is this for?
-
-- **Finance Teams** — Quickly audit plans and product statuses without navigating the Zoho dashboard.
-- **Product Managers** — Update plan details and product availability directly from the conversation.
-- **Developers** — Integrate billing metadata into your workflow to verify plan codes and product IDs while coding.
+The Zoho Billing MCP server integrates your financial operations with your AI agent. Retrieve invoice statuses, list customer subscriptions, and track payments seamlessly from the chat.
 
 
-## Available Tools (101)
-- **cancel_subscription**: Cancel a subscription
-- **collect_invoice**: Collect charge via card/bank for an invoice
-- **create_addon**: Create an addon
-- **create_contact_person**: Create a contact person
-- **create_credit_note**: Create a credit note
-- **create_customer**: Create a customer
-- **create_estimate**: Create a quote/estimate
-- **create_hosted_page_subscription**: Create a subscription via hosted page
-- **create_invoice**: Create an invoice
-- **create_item**: Create an item
-- **create_organization**: Create a new organization
-- **create_payment**: Create a payment
-- **create_plan**: Create a plan
-- **create_product**: Create a product
-- **create_subscription**: Create a subscription
-- **decline_estimate**: Mark an estimate as declined
-- **delete_addon**: Delete an addon
-- **delete_card**: Delete a card
-- **delete_contact_person**: Delete a contact person
-- **delete_coupon**: Delete a coupon
-- **delete_credit_note**: Delete a credit note
-- **delete_customer**: Delete a customer
-- **delete_estimate**: Delete a quote/estimate
-- **delete_invoice**: Delete an invoice
-- **delete_item**: Delete an item
-- **delete_payment**: Delete a payment
-- **delete_plan**: Delete a plan
-- **delete_product**: Delete a product
-- **delete_subscription**: Delete a subscription
-- **get_addon**: Retrieve an addon
-- **get_card**: Retrieve card info
-- **get_contact_person**: Retrieve a contact person
-- **get_coupon**: Retrieve a coupon
-- **get_credit_note**: Retrieve a credit note
-- **get_customer_by_reference**: Retrieve a customer using CRM reference
-- **get_customer**: Retrieve a customer
-- **get_estimate**: Retrieve a quote/estimate
-- **get_event**: Retrieve an event
-- **get_hosted_page**: Retrieve hosted page details
-- **get_invoice**: Retrieve an invoice
-- **get_item**: Retrieve an item
-- **get_organization**: Get organization details
-- **get_payment**: Retrieve a payment
-- **get_plan**: Retrieve a plan
-- **get_product**: Retrieve a product
-- **get_refund**: Retrieve refund details
-- **get_subscription**: Retrieve a subscription
-- **list_addons**: List all addons
-- **list_cards**: List all active cards for a customer
-- **list_contact_persons**: List all contact persons for a customer
-- **list_coupons**: List all coupons
+## Available Tools (12)
 - **list_customers**: List all customers
-- **list_estimates**: List quotes/estimates
-- **list_events**: List of events (last 180 days)
-- **list_hosted_pages**: List hosted pages
 - **list_invoices**: List all invoices
-- **list_items**: List items
-- **list_organizations**: List organizations
-- **list_payments**: List payments
-- **list_plans**: List all plans
 - **list_products**: List all products
 - **list_subscriptions**: List all subscriptions
-- **mark_addon_active**: Mark an addon as active
-- **mark_addon_inactive**: Mark an addon as inactive
-- **mark_coupon_active**: Mark a coupon as active
-- **mark_coupon_inactive**: Mark a coupon as inactive
-- **mark_customer_active**: Mark a customer as active
-- **mark_customer_inactive**: Mark a customer as inactive
-- **mark_item_active**: Mark an item as active
-- **mark_item_inactive**: Mark an item as inactive
-- **mark_plan_active**: Mark a plan as active
-- **mark_plan_inactive**: Mark a plan as inactive
-- **mark_product_active**: Mark a product as active
-- **mark_product_inactive**: Mark a product as inactive
-- **pause_subscription**: Pause a subscription
-- **refund_credit_note**: Refund a credit note
-- **refund_payment**: Refund a payment
-- **resume_subscription**: Resume a subscription
-- **update_addon**: Update an addon
-- **update_contact_person**: Update a contact person
-- **update_coupon**: Update a coupon
-- **update_customer**: Update a customer
-- **update_estimate**: Update a quote/estimate
-- **update_hosted_page_card**: Update card via hosted page
-- **update_hosted_page_subscription**: Update a subscription via hosted page
-- **update_invoice**: Update an invoice
-- **update_organization**: Update an organization
-- **update_payment**: Update a payment
-- **update_plan**: Update a plan
-- **update_product**: Update a product
-- **update_subscription**: Update a subscription
-- **void_credit_note**: Void a credit note
-- **void_invoice**: Void an invoice
-- **writeoff_invoice**: Write off an invoice
-- **accept_estimate**: Mark an estimate as accepted
-- **apply_credit_note_to_invoices**: Apply credits to multiple invoices
-- **associate_coupon**: Associate a coupon with a subscription
-- **buy_onetime_addon**: Buy a one-time addon for a subscription
-- **create_coupon**: Create a coupon
-- **reactivate_subscription**: Reactivate a subscription
-- **update_item**: Update an item
+- **get_events**: List recent audit events/triggers
+- **list_credit_notes**: List all credit notes
+- **list_estimates**: List all estimates (quotes)
+- **list_expenses**: List all recorded expenses
+- **list_payments**: List all payments received
+- **list_plans**: List all pricing plans
+- **list_projects**: List all billable projects
+- **retrieve_customer**: Get details of a specific customer
 
 
 ## 💬 Prompt Examples
@@ -141,38 +33,38 @@ Connect your **Zoho Billing** account to any AI agent to streamline your recurri
 Here are some examples of how you can interact with the **Zoho Billing** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all products in my Zoho Billing account."
+> "List all active subscriptions for customer 'Acme Corp' and fetch their detailed profile information."
 
 **🤖 AI Agent:**
-> I've retrieved your product list. You have 3 active products: 'Cloud Storage Pro' (ID: prd_123), 'API Access Tier' (ID: prd_456), and 'Legacy Support' (ID: prd_789).
+> Customer 'Acme Corp' (ID: cust_90382) currently has 1 active subscription: 'Pro Annual Plan', which renews on November 12th. Their primary contact is Jane Doe (jane@acme.com) with an unbilled balance of $0.
 
 ---
 
 **👤 You:**
-> "Show me the details for the plan with code 'GOLD-MONTHLY'."
+> "Fetch all recent payments and check the status of invoice INV-00123 to verify if it's paid."
 
 **🤖 AI Agent:**
-> Fetching plan details... The 'GOLD-MONTHLY' plan is currently active, priced at $49.00/month, and includes 500GB of storage and priority support.
+> I retrieved 8 recent payments totaling $4,500. Invoice INV-00123 for $450.00 was successfully paid today via credit card. Its status is now marked as 'PAID'.
 
 ---
 
 **👤 You:**
-> "Create a new plan for the product 'prd_123' using this JSON configuration."
+> "List all the active pricing plans and products configured in our billing system."
 
 **🤖 AI Agent:**
-> I've successfully created the new plan for 'Cloud Storage Pro'. The new plan code is 'SILVER-ANNUAL' and it is now available in your catalog.
+> You currently have 3 products configured: 'Cloud Storage', 'Analytics API', and 'Enterprise Dashboard'. There are 5 active pricing plans across these products, with the 'Analytics Pro' plan being the most frequently subscribed.
 
 
 ## ❓ FAQ
 
-**Q: Can I check the details of a specific subscription plan using its code?**
-Yes. Use the `get_plan` tool by providing the unique Plan Code. The agent will return the full configuration, including pricing and billing frequency.
+**Q: Can I query a customer's active subscriptions?**
+Yes, by providing the customer ID or email, the agent can fetch all their active, past due, or canceled subscriptions.
 
-**Q: Is it possible to deactivate a product that is no longer being sold?**
-Absolutely. You can use the `mark_product_inactive` tool with the Product ID to hide it from your active catalog without deleting the historical data.
+**Q: How do I check if an invoice has been paid?**
+Simply ask the AI to check the status of a specific Invoice Number to see if it's paid, sent, or overdue.
 
-**Q: How do I see all the organizations linked to my account?**
-Simply ask the agent to run the `list_organizations` query. It will provide a list of all organizations you have access to within Zoho Billing.
+**Q: Does it support creating new invoices?**
+Currently, the integration primarily focuses on securely retrieving and reporting financial data rather than generating new charges.
 
 
 ## Installation & Usage

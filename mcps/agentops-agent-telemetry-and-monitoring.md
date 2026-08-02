@@ -33,10 +33,10 @@ Connect **AgentOps** to your AI agent for comprehensive telemetry and observabil
 
 
 ## Available Tools (4)
+- **get_trace_metrics**: Get metrics for a specific trace
 - **get_trace**: Get details for a specific trace
 - **get_project**: Get AgentOps project details
 - **get_span**: Get details for a specific span
-- **get_trace_metrics**: Get metrics for a specific trace
 
 
 ## 💬 Prompt Examples
