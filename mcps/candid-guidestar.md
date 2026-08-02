@@ -37,10 +37,10 @@ Connect your **Candid (formerly GuideStar)** account to any AI agent and orchest
 ## Available Tools (10)
 - **get_charity_check_pdf**: Generate a PDF report for compliance record-keeping
 - **get_demographics**: Get DEI data for a nonprofit
-- **get_nonprofit_essentials**: Get core details for a nonprofit by EIN
-- **get_grant_details**: Get specific details for a grant
 - **get_nonprofit_eligibility**: Verify nonprofit eligibility for specific donation platforms
 - **get_nonprofit_news**: Get real-time social sector news related to a nonprofit
+- **get_nonprofit_essentials**: Get core details for a nonprofit by EIN
+- **get_grant_details**: Get specific details for a grant
 - **get_nonprofit_premier**: Get comprehensive deep-dive data for a nonprofit by EIN
 - **search_grants**: Search for grants awarded by foundations
 - **search_nonprofits**: Search for nonprofits using filters

@@ -26,14 +26,14 @@ Connect your **Brankas** Open Finance account to any AI agent and orchestrate yo
 
 
 ## Available Tools (8)
+- **get_transfer_status**: Get status of a Disburse transfer
+- **inter_bank_transfer**: Initiate an inter-bank disbursement (payout)
+- **intra_bank_transfer**: Initiate an intra-bank disbursement (payout)
 - **create_checkout**: Create a new Direct payment checkout session
 - **get_balance**: Retrieve linked bank account balances
 - **get_identities**: Retrieve linked identity data
 - **get_statement**: Retrieve linked bank statement data
 - **get_transaction**: Get status of a Direct payment transaction
-- **get_transfer_status**: Get status of a Disburse transfer
-- **inter_bank_transfer**: Initiate an inter-bank disbursement (payout)
-- **intra_bank_transfer**: Initiate an intra-bank disbursement (payout)
 
 
 ## 💬 Prompt Examples

@@ -35,8 +35,8 @@ Connect your **BulkSMS.com** account to any AI agent and orchestrate your global
 
 ## Available Tools (8)
 - **get_message**: Get details of a specific message
-- **get_profile**: Retrieve account profile and credit balance
 - **get_account_info**: Retrieve core account information
+- **get_profile**: Retrieve account profile and credit balance
 - **list_group_members**: List members of a specific contact group
 - **list_groups**: List contact groups
 - **list_messages**: List sent messages

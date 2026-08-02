@@ -37,14 +37,14 @@ Connect your **CallRail** account to any AI agent and orchestrate your call trac
 ## Available Tools (10)
 - **get_account_info**: Retrieve core account information
 - **get_call_details**: Get details of a specific phone call
+- **list_tags**: List all lead and call tags
+- **list_trackers**: List all tracking numbers and sources
+- **list_users**: List all users in the account
+- **list_form_submissions**: List leads generated via web forms
 - **get_company_details**: Get details of a specific company
 - **list_alerts**: List active account alerts
 - **list_calls**: List all tracked phone calls
 - **list_companies**: List all companies associated with the account
-- **list_form_submissions**: List leads generated via web forms
-- **list_tags**: List all lead and call tags
-- **list_trackers**: List all tracking numbers and sources
-- **list_users**: List all users in the account
 
 
 ## 💬 Prompt Examples

@@ -35,10 +35,10 @@ Connect your **Buy Me A Coffee** account to any AI agent and orchestrate your cr
 
 
 ## Available Tools (5)
-- **get_account_stats**: Retrieve core account statistics
-- **list_extras**: List digital products (extras) purchased
 - **list_posts**: List blog posts from your page
 - **list_memberships**: List all active and inactive memberships
+- **get_account_stats**: Retrieve core account statistics
+- **list_extras**: List digital products (extras) purchased
 - **list_supporters**: List all supporters (one-time and members)
 
 

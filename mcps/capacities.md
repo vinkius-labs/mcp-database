@@ -35,12 +35,12 @@ Connect your **Capacities** account to any AI agent and take full control of you
 
 
 ## Available Tools (10)
-- **list_spaces**: List all personal spaces in the Capacities account. Spaces are top-level containers for organizing objects, notes, and knowledge
-- **get_space_info**: Retrieve detailed information about a Capacities space including all object types (structures), their property definitions, and configuration
 - **get_structures**: Get all object type definitions (structures) within a Capacities space exposing exact metadata parameters limitlessly
 - **lookup**: Search for content across a specific Capacities space by title or explicit keywords tracking exact nodes
 - **save_weblink**: Save a web URL as a Weblink object dynamically tracking automatic preview generation natively
 - **save_to_daily_note**: Append strict Markdown textual payloads to the dynamically mapped daily note explicitly linking content blocks
+- **get_space_info**: Retrieve detailed information about a Capacities space including all object types (structures), their property definitions, and configuration
+- **list_spaces**: List all personal spaces in the Capacities account. Spaces are top-level containers for organizing objects, notes, and knowledge
 - **create_object**: Create a new typed object in a Capacities space bounded by specific graph rules instantiating entities
 - **get_object**: Retrieve a specific full explicit object by ID accessing its root graph data traversing properties internally
 - **save_media**: Locate and attach an explicit Media payload explicitly binding it directly onto existing specific record scopes

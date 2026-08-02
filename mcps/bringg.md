@@ -38,7 +38,6 @@ No more jumping between dispatch dashboards. Your AI agent handles the logistics
 
 
 ## Available Tools (10)
-- **assign_driver_to_task**: Manually override optimization and assign a specific driver to a task
 - **force_task_complete**: Force a delivery task status to COMPLETE (successfully delivered)
 - **create_delivery_task**: Create a new delivery task (order) in the Bringg Delivery Hub
 - **cancel_task_dispatch**: Cancel and permanently remove a delivery task from the dispatch schedule
@@ -50,6 +49,7 @@ No more jumping between dispatch dashboards. Your AI agent handles the logistics
 Retrieve a paginated list of active delivery tasks/orders
 - **force_task_start**: Force a delivery task status to START (driver en route)
 - **update_task_details**: Modify existing delivery task details such as customer notes or dropoff info
+- **assign_driver_to_task**: Manually override optimization and assign a specific driver to a task
 
 
 ## 💬 Prompt Examples

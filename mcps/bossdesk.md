@@ -35,16 +35,16 @@ Connect your **BOSSDesk** ITSM account to any AI agent and orchestrate your IT s
 
 
 ## Available Tools (10)
+- **list_locations**: List all physical locations
+- **list_tickets**: List all IT support tickets
+- **list_users**: List all system users
+- **update_ticket**: Update an existing ticket
 - **add_ticket_note**: Add a comment or note to a ticket
 - **create_ticket**: Create a new support ticket
 - **get_asset**: Get details of a specific asset
 - **get_ticket**: Get details of a specific ticket
 - **get_user**: Get details of a specific user
 - **list_assets**: List all managed IT assets
-- **list_locations**: List all physical locations
-- **list_tickets**: List all IT support tickets
-- **list_users**: List all system users
-- **update_ticket**: Update an existing ticket
 
 
 ## 💬 Prompt Examples

@@ -34,15 +34,15 @@ No manual database lookups mapping specific Markdown texts. Your AI agent explor
 
 
 ## Available Tools (10)
+- **list_butter_authors**: Dispatch an automated validation check routing CMS Writers
+- **list_custom_pages**: Inspect deep internal arrays mitigating specific Page configurations
+- **list_blog_posts**: Identify bounded routing spaces inside the Headless ButterCMS Post limit
 - **search_collection_field**: Identify precise active arrays spanning filtered Collections
 - **get_page_layout**: Retrieve the exact structural matching verifying explicit UI routing
 - **get_post_details**: Retrieve explicit Cloud logging tracing explicit Post Slugs
-- **list_butter_authors**: Dispatch an automated validation check routing CMS Writers
 - **list_butter_categories**: Irreversibly analyze explicit CMS structures routing groupings
 - **list_global_collections**: Enumerate explicitly attached structured rules exporting Content items
-- **list_custom_pages**: Inspect deep internal arrays mitigating specific Page configurations
-- **list_blog_posts**: Identify bounded routing spaces inside the Headless ButterCMS Post limit
-- **list_butter_tags**: Mutate global Web CRM boundaries mapping Taxonomy hits
+- **list_butter_tags**: Mutate globalThis Web CRM boundaries mapping Taxonomy hits
 - **search_blog_posts**: Perform structural extraction of properties driving active Keywords
 
 
