@@ -35,12 +35,12 @@ Connect your **Adobe Customer Journey Analytics (CJA)** account to your AI agent
 
 
 ## Available Tools (6)
-- **list_data_views**: List CJA data views
-- **get_data_view_dimensions**: List dimensions for a data view
 - **get_data_view_metrics**: List metrics for a data view
 - **get_report**: Retrieve an omnichannel report
-- **list_filters**: List journey filters
 - **list_connections**: List AEP connections
+- **list_data_views**: List CJA data views
+- **get_data_view_dimensions**: List dimensions for a data view
+- **list_filters**: List journey filters
 
 
 ## 💬 Prompt Examples

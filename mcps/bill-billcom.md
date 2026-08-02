@@ -35,15 +35,15 @@ Connect your **BILL (formerly Bill.com)** account to any AI agent and orchestrat
 
 ## Available Tools (10)
 - **get_invoice**: Get specific invoice details
+- **get_bill**: Get specific bill details
+- **get_customer**: Get specific customer details
+- **list_invoices**: List all invoices (accounts receivable)
 - **get_user_profile**: Get authenticated user profile
 - **get_vendor**: Get specific vendor details
 - **list_accounts**: List all chart of accounts
 - **list_bills**: List all bills (accounts payable)
 - **list_customers**: List all customers
-- **list_invoices**: List all invoices (accounts receivable)
 - **list_vendors**: List all vendors
-- **get_bill**: Get specific bill details
-- **get_customer**: Get specific customer details
 
 
 ## 💬 Prompt Examples

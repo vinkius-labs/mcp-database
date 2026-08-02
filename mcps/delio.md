@@ -36,28 +36,28 @@ Your AI acts as a dedicated wealth management operations assistant — no more s
 
 
 ## Available Tools (14)
-- **list_deal_investor_workflows**: List investor workflows for a deal
-- **list_deal_transactions**: Includes subscriptions, capital calls, distributions, fees, and adjustments.
-
-List all transactions across deals
-- **get_deal_workflow_status**: Shows where the investor is in the lifecycle from invitation to completed transaction.
-
-Get deal workflow status
-- **get_asset_details**: Get detailed information about a specific asset
 - **get_compliance_implementation**: Get a compliance implementation with submitted answers
 - **get_user**: Get a single user with their full data graph
 - **invite_user**: The body should include email, name, user type, and any required group or role assignments.
 
 Send a platform invitation to a new user
 - **list_portfolio_assets**: List all portfolio assets
-- **list_compliance_forms**: List all compliance form definitions
-- **list_portfolio_investors**: List all portfolio investors
-- **list_organisation_settings**: List tenant organisation settings
 - **list_portfolio_transactions**: List all portfolio transactions
 - **list_user_groups**: List all user groups in the tenant
 - **list_users**: Supports search by name or email, sorting, and pagination.
 
 List all platform users
+- **list_deal_investor_workflows**: List investor workflows for a deal
+- **list_deal_transactions**: Includes subscriptions, capital calls, distributions, fees, and adjustments.
+
+List all transactions across deals
+- **list_organisation_settings**: List tenant organisation settings
+- **get_deal_workflow_status**: Shows where the investor is in the lifecycle from invitation to completed transaction.
+
+Get deal workflow status
+- **get_asset_details**: Get detailed information about a specific asset
+- **list_compliance_forms**: List all compliance form definitions
+- **list_portfolio_investors**: List all portfolio investors
 
 
 ## 💬 Prompt Examples

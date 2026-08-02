@@ -38,15 +38,15 @@ Never break your context to build dashboards. Ask your agent, get real-time data
 
 
 ## Available Tools (10)
-- **export_events**: Amplitude is a product analytics platform. Pass start/end as YYYYMMDDTHH (e.g. 2026010100).
-
-Export raw Amplitude event data for a time range
 - **get_user_activity**: Useful for diagnosing individual user journeys.
 
 Get Amplitude user activity stream
 - **event_segmentation**: Pass event name, start/end as YYYYMMDD.
 
 Query Amplitude event segmentation
+- **export_events**: Amplitude is a product analytics platform. Pass start/end as YYYYMMDDTHH (e.g. 2026010100).
+
+Export raw Amplitude event data for a time range
 - **search_users**: Useful to find specific users before checking their activity.
 
 Search Amplitude users by user ID, device ID, or email

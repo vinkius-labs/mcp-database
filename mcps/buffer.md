@@ -7,47 +7,49 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Automate social media management via Buffer — schedule posts, track sent updates, shuffle queues, and manage multi-platform profiles with any AI agent.
+Plan, schedule, and publish social media content across all your channels with analytics that show what is working.
 
 ## Description
-Connect your **Buffer** account to any AI agent and take full control of your social media scheduling operations across Twitter, LinkedIn, Facebook, and Instagram through natural conversation.
+Connect your **Buffer** account to any AI agent and take full control of your social media strategy and automated content distribution through natural conversation.
 
 ### What you can do
 
-- **Post Generation & Scheduling** — Allow your agent to draft, format, and immediately schedule cross-platform posts
-- **Queue Management** — Review your pending scheduled posts, shuffle their order, or delete drafts before they go live
-- **Performance Tracking** — Retrieve historical data for sent updates, summarizing click and engagement metrics
-- **Profile Insights** — Check all connected social accounts, their IDs, and the precise timeslot schedules allocated to them
-- **Status Validation** — Query specific pending updates by ID to review text, media attachments, and exact airtimes
+- **Profile Orchestration** — List and manage all connected social media profiles (Twitter, Facebook, LinkedIn, etc.) programmatically, retrieving detailed metadata and follower statistics
+- **Content Lifecycle Management** — Programmatically schedule new posts (updates) across multiple platforms in real-time, including support for media links and high-fidelity text content
+- **Queue & History Intelligence** — Monitor your pending post queue and retrieve detailed historical records of successfully published updates to maintain a consistent online presence
+- **Engagement Architecture** — Access real-time engagement statistics for specific posts to coordinate your social media performance and ROI directly through your agent
+- **Schedule Optimization** — Access and monitor your posting times and frequency rules to perfectly coordinate your brand's digital voice programmatically
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Buffer API Token
-3. Start ideating and scheduling tweets/posts directly from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **Access Token** from your Buffer account (Settings > Personal Access Tokens)
+3. Start planning your social media growth from Claude, Cursor, or any MCP client
 
-No more switching tabs to copy-paste generated tweets. Your AI is now officially your publishing engine.
+No more manual toggling between different social platforms or digging through fragmented post histories. Your AI acts as your dedicated social media manager and content architect.
 
 ### Who is this for?
 
-- **Social Media Managers** — have your agent draft 10 tweets based on a blog post and instantly queue them to your Buffer
-- **Founders & Creators** — review your queued content for the week without leaving your favorite coding/writing environment
-- **Marketing Teams** — pull a summary of last week's sent posts' engagement directly into your strategy session chats
+- **Social Media Managers** — instantly retrieve post performance and schedule cross-platform updates using natural language commands
+- **Digital Marketers** — automate content distribution and monitor brand engagement without leaving your workspace
+- **Developers** — integrate high-speed social media automation into custom marketing workflows through simple AI queries
 
 
-## Available Tools (10)
-- **list_profiles**: List all connected social profiles
-- **get_config**: Get supported services configuration
-- **get_profile**: Get social profile details
-- **list_pending_updates**: List scheduled posts awaiting publication
-- **list_sent_updates**: List published posts
-- **create_update**: Supports text, links, and auto-shortening.
+## Available Tools (12)
+- **schedule_social_post**: Schedule a new post
+- **remove_social_post**: Delete a post
+- **modify_pending_post**: Edit scheduled post
+- **get_api_status**: Check connection
+- **list_pending_posts**: Check scheduled queue
+- **get_profile_details**: Get account info
+- **get_posting_schedules**: Check posting times
+- **list_published_posts**: Check post history
+- **get_post_details**: Get post info
+- **list_social_profiles**: ) connected to Buffer.
 
-Schedule a new social media post
-- **delete_update**: Delete a scheduled post
-- **reorder_updates**: Reorder scheduled posts
-- **shuffle_updates**: Shuffle the post queue randomly
-- **get_user**: Get Buffer account info
+List connected accounts
+- **test_buffer_auth**: Verify credentials
+- **modify_posting_schedules**: Set posting times
 
 
 ## 💬 Prompt Examples
@@ -55,47 +57,38 @@ Schedule a new social media post
 Here are some examples of how you can interact with the **Buffer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my social media profiles currently connected to Buffer."
+> "List all my connected social media profiles in Buffer."
 
 **🤖 AI Agent:**
-> You have 2 profiles connected to your Buffer account:
-1. Twitter (@TechVinkius) — Profile ID: 62a3f... 
-2. LinkedIn (Vinkius Labs Page) — Profile ID: 61e9b...
-
-Should I check the pending queue for any of these?
+> I've retrieved your social profiles. You currently have 3 connected accounts: Twitter (@user1), LinkedIn (ID: abc), and Facebook Page. Which one should we manage or check for scheduled posts?
 
 ---
 
 **👤 You:**
-> "How many pending posts do I have on my Twitter account?"
+> "Schedule a post: 'Excited to announce our new integration!' for Twitter and LinkedIn profiles."
 
 **🤖 AI Agent:**
-> You currently have 3 pending posts scheduled for Twitter (@TechVinkius). 
-The next one is scheduled to go live today at 14:00 GMT: "Understanding MCP architecture unlocks pure agentic scale..." 
-
-Would you like me to shuffle them or create a new one?
+> Content scheduled! I've successfully added your update to the queue for both Twitter and LinkedIn. It will be published according to your next available time slot. Shall I check your current posting schedule?
 
 ---
 
 **👤 You:**
-> "Write a short engaging tweet about our new launch and schedule it immediately."
+> "Show the engagement statistics for my last 5 published posts."
 
 **🤖 AI Agent:**
-> Drafted: "🚀 Boom! We just shipped the final feature set for our platform! The future of agentic ecosystems is live. #agents #ai"
-
-I have successfully injected this into the Buffer queue for your Twitter profile (ID: 62a3f). It will automatically take the next available time slot according to your predefined buffer schedule.
+> Fetching historical performance... Your last 5 posts received a total of 1,240 impressions and 85 clicks. Your post from yesterday was the top performer with a 5% engagement rate. Would you like the detailed metadata for it?
 
 
 ## ❓ FAQ
 
-**Q: Can my AI draft a post and immediately schedule it?**
-Yes! The `create_update` tool is specifically designed for this. You can list your profiles to fetch the correct profile IDs, and then instruct the agent to write a post. The agent will push the new content using the IDs as target destinations. If you omit the explicit time, it falls back to the next empty spot in the profile's schedule.
+**Q: How do I find my Buffer Access Token?**
+Log in to your Buffer account, navigate to **Settings** > **Personal Access Tokens**, and generate a new token for your integration.
 
-**Q: Can the agent shuffle my pending queue if I don't like the order?**
-Yes. If you have loaded 20 evergreen posts into your Buffer, you can simply ask the agent to "shuffle the queue for my Twitter profile." It will invoke the `shuffle_queue` endpoint to mix up all pending un-timed updates, keeping your timeline fresh.
+**Q: Can I post to multiple social profiles at once?**
+Yes! The `schedule_social_post` tool accepts a JSON array of profile IDs, allowing you to broadcast the same update across all your connected platforms.
 
-**Q: Is there a risk that my AI posts something to the wrong account?**
-The integration mandates profile IDs explicitly inside the payload. As a safety net, always instruct your AI to *list* your pending posts and verify the target profile string names *before* pulling the trigger on production updates. The agent behaves deterministically with tools.
+**Q: How do I check my scheduled queue?**
+Use the `list_pending_posts` tool with a specific profile ID to retrieve all updates currently waiting to be published.
 
 
 ## Installation & Usage

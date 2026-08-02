@@ -33,18 +33,18 @@ Connect your **Authorize.net** merchant account to any AI agent and manage your 
 
 
 ## Available Tools (10)
-- **get_batch_statistics**: Get statistics for a specific batch
 - **create_transaction**: You must provide the transaction type (e.g., authCaptureTransaction) and the request body.
 
 Create a new payment transaction
+- **get_batch_statistics**: Get statistics for a specific batch
 - **get_customer_profile**: Retrieve a customer profile by ID
-- **get_settled_batch_list**: Retrieve a list of settled batches for a date range
 - **get_transaction_details**: Get complete information for a specific transaction
 - **get_transaction_list**: List transactions for a specific settled batch
 - **get_unsettled_transaction_list**: List the most recent unsettled transactions
 - **list_customer_profiles**: Retrieve a list of all customer profile IDs
 - **refund_transaction**: Refund a settled transaction
 - **void_transaction**: Void an unsettled transaction
+- **get_settled_batch_list**: Retrieve a list of settled batches for a date range
 
 
 ## 💬 Prompt Examples

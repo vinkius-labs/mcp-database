@@ -39,14 +39,7 @@ Your AI acts as a dedicated infrastructure and security operations assistant —
 
 
 ## Available Tools (12)
-- **control_vm**: Valid actions: start, stop, restart, pause, resume. Use this to manage VM lifecycle from your AI agent.
-
-Start, stop, or restart a virtual machine
-- **get_certificate_details**: Get details for a specific certificate
 - **get_host_details**: Get details for a specific PiVirt host
-- **list_virtual_machines**: Optionally filter by host ID to see only VMs on a specific host.
-
-List all virtual machines across PiVirt hosts
 - **get_oauth_client**: Get details for a specific OAuth 2.0 client
 - **get_vm_details**: Get details for a specific virtual machine
 - **introspect_token**: Returns token validity, scopes, expiry, and associated client/user. Use this to verify tokens before trusting them.
@@ -57,6 +50,13 @@ Introspect an OAuth 2.0 access token
 - **list_oauth_clients**: List all registered OAuth 2.0 clients
 - **list_access_policies**: List all ZeroTrust access policies
 - **list_active_sessions**: List active user sessions in the 3SO identity system
+- **list_virtual_machines**: Optionally filter by host ID to see only VMs on a specific host.
+
+List all virtual machines across PiVirt hosts
+- **control_vm**: Valid actions: start, stop, restart, pause, resume. Use this to manage VM lifecycle from your AI agent.
+
+Start, stop, or restart a virtual machine
+- **get_certificate_details**: Get details for a specific certificate
 
 
 ## 💬 Prompt Examples

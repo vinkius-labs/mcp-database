@@ -37,15 +37,12 @@ No more switching between your messaging dashboard and your editor to check deli
 
 
 ## Available Tools (17)
-- **list_contact_lists**: Supports pagination.
+- **format_number**: Useful for cleaning CRM data before sending SMS.
 
-List all contact lists in your account
-- **remove_contact**: Number must be in E.164 format unless countrycode is provided.
+Format a phone number to E.164 international format
+- **get_sms_info**: Does not return individual messages with populated variables.
 
-Remove a contact from list(s)
-- **add_contact_to_list**: If the contact already exists, it will be ignored (not updated). Number must be in E.164 format unless countrycode is provided.
-
-Add a contact to a list
+Get message/campaign information
 - **get_sms_responses**: Filter by message_id, keyword, keyword_id, or virtual number. Supports date range filtering.
 
 Get SMS reply responses
@@ -53,30 +50,33 @@ Get SMS reply responses
 
 Get total SMS sent count in a timeframe
 - **get_sms_stats**: Get message/campaign delivery report
+- **opt_out_contact**: Required for marketing compliance — enables an unsubscribe method.
+
+Unsubscribe a contact from list(s)
 - **send_sms**: Numbers must be in E.164 international format unless countrycode is provided.
 
 Send an SMS message
-- **get_balance**: Get Kudosity account balance
+- **add_contact_to_list**: If the contact already exists, it will be ignored (not updated). Number must be in E.164 format unless countrycode is provided.
+
+Add a contact to a list
 - **cancel_sms**: Only messages that have been scheduled can be cancelled.
 
 Cancel a scheduled SMS
-- **format_number**: Useful for cleaning CRM data before sending SMS.
+- **list_contact_lists**: Supports pagination.
 
-Format a phone number to E.164 international format
+List all contact lists in your account
+- **remove_contact**: Number must be in E.164 format unless countrycode is provided.
+
+Remove a contact from list(s)
+- **get_balance**: Get Kudosity account balance
 - **get_whatsapp**: Returns message content, delivery status, and metadata.
 
 Get details of a sent WhatsApp message
 - **list_whatsapp**: Messages returned in reverse chronological order (newest first). Supports cursor-based pagination with 1-100 messages per page. 
 
 List WhatsApp messages for your account
-- **opt_out_contact**: Required for marketing compliance — enables an unsubscribe method.
-
-Unsubscribe a contact from list(s)
 - **get_contact_list**: Get detailed information about a contact list
 - **get_sms_delivery_status**: Get SMS delivery status for a specific recipient
-- **get_sms_info**: Does not return individual messages with populated variables.
-
-Get message/campaign information
 - **send_whatsapp**: Supports text, template, and custom content types. Templates must be pre-approved by WhatsApp. Recipient must have an active WhatsApp account and have opted in.
 
 Send a WhatsApp message

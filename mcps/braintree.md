@@ -28,15 +28,15 @@ Connect your **Braintree** gateway account to any AI agent and orchestrate your 
 
 ## Available Tools (8)
 - **capture_transaction**: Capture an authorized transaction
-- **charge_payment_method**: Charge a payment method
-- **get_customer**: Get details of a specific customer
+- **search_customers**: Search for customers
+- **search_transactions**: Search for recent transactions
+- **void_transaction**: Void an authorized transaction
 - **get_transaction**: Get details of a specific transaction
 - **refund_transaction**: Optionally provide a partial amount.
 
 Refund a settled transaction
-- **search_customers**: Search for customers
-- **search_transactions**: Search for recent transactions
-- **void_transaction**: Void an authorized transaction
+- **charge_payment_method**: Charge a payment method
+- **get_customer**: Get details of a specific customer
 
 
 ## 💬 Prompt Examples

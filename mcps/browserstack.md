@@ -38,15 +38,9 @@ No more context switching to the BrowserStack dashboard just to figure out why a
 
 
 ## Available Tools (10)
-- **list_projects**: json`. Returns project names, IDs, and build counts. Used to organize automation runs.
+- **list_browsers**: json`. Returns OS names/versions, browser names/versions required for configuring automation desired capabilities.
 
-List all projects on BrowserStack Automate
-- **delete_build**: json`.
-
-Delete a BrowserStack build by ID
-- **get_project**: json`. This includes name, group ID, and recent builds associated with the project.
-
-Get full details of a BrowserStack project including linked builds
+List all supported OS/browser combinations on BrowserStack
 - **list_builds**: json`. Returns build names, IDs, statuses (running/done/timeout/failed), durations, and session counts. Useful for tracking test suite execution.
 
 List recent builds on BrowserStack Automate
@@ -59,15 +53,21 @@ Get full details of a specific BrowserStack session
 - **get_session_logs**: Useful for debugging failed test steps.
 
 Get text execution logs of a BrowserStack session
-- **list_browsers**: json`. Returns OS names/versions, browser names/versions required for configuring automation desired capabilities.
-
-List all supported OS/browser combinations on BrowserStack
 - **get_plan**: json`, including parallel sessions allowed, team parallel sessions used, queued sessions, and plan name. Essential for managing execution concurrency.
 
 Get current BrowserStack plan details and parallel session usage
 - **delete_session**: json`.
 
 Delete a BrowserStack session by ID
+- **delete_build**: json`.
+
+Delete a BrowserStack build by ID
+- **list_projects**: json`. Returns project names, IDs, and build counts. Used to organize automation runs.
+
+List all projects on BrowserStack Automate
+- **get_project**: json`. This includes name, group ID, and recent builds associated with the project.
+
+Get full details of a BrowserStack project including linked builds
 
 
 ## 💬 Prompt Examples

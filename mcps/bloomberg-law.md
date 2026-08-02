@@ -47,9 +47,22 @@ Your AI becomes a legal research assistant, helping you find cases, track docket
 ## Available Tools (13)
 - **get_docket_alerts**: Get configured docket alerts for monitoring cases
 - **get_case_details**: Get detailed information for a specific legal case
+- **search_expert_witnesses**: Find experts by specialty, prior testimony, and jurisdiction.
+
+Search for expert witnesses in litigation
+- **search_state_dockets**: Coverage varies by state.
+
+Search state court dockets
 - **get_docket_details**: Use docket ID from search results.
 
 Get detailed information for a specific court docket
+- **search_court_dockets**: Returns docket numbers, case names, courts, filing dates, and status. Filter by court, date range, and keywords.
+
+Search federal and state court dockets across 200M+ case records
+- **search_federal_dockets**: Search federal court dockets specifically
+- **search_legal_news**: Filter by topic and date range.
+
+Search Bloomberg Law legal news articles
 - **get_docket_entries**: Each entry includes entry number, filing date, description, and document links.
 
 Get all entries/filings for a specific court docket
@@ -61,19 +74,6 @@ Get a specific filing document from a court docket
 
 Search for legal cases and case law
 - **search_companies**: Search company profiles and business intelligence
-- **search_court_dockets**: Returns docket numbers, case names, courts, filing dates, and status. Filter by court, date range, and keywords.
-
-Search federal and state court dockets across 200M+ case records
-- **search_expert_witnesses**: Find experts by specialty, prior testimony, and jurisdiction.
-
-Search for expert witnesses in litigation
-- **search_federal_dockets**: Search federal court dockets specifically
-- **search_legal_news**: Filter by topic and date range.
-
-Search Bloomberg Law legal news articles
-- **search_state_dockets**: Coverage varies by state.
-
-Search state court dockets
 
 
 ## 💬 Prompt Examples

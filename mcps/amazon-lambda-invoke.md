@@ -22,7 +22,7 @@ By strictly scoping access, your AI can safely offload complex math, heavy data 
 
 
 ## Available Tools (1)
-- **lambda_invoke_function**: The payload must be a valid JSON string.
+- **invoke_function**: The payload must be a valid JSON string.
 
 Invoke the configured AWS Lambda function
 

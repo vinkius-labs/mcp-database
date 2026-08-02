@@ -22,7 +22,7 @@ By strictly scoping access, your AI can safely offload complex math, heavy data 
 
 
 ## Available Tools (1)
-- **gcf_invoke_function**: Use this to execute remote business logic or heavy processing tasks.
+- **invoke_function**: Use this to execute remote business logic or heavy processing tasks.
 
 Invoke the configured Google Cloud Function
 
