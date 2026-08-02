@@ -7,39 +7,42 @@
 
 **Category:** [industry-titans](../categories/industry-titans.md)
 
-Access Steam gaming data — player profiles, owned games, achievements, and stats via AI.
+Access game data, player profiles, and community content from the world largest PC gaming platform and digital storefront.
 
 ## Description
-Connect the **Steam Web API** to any AI agent and retrieve gaming data including player profiles, game libraries, achievements, and statistics through natural language.
+Connect your **Steam** account to any AI agent and take full control of your gaming library and community interaction workflows through natural conversation.
 
 ### What you can do
 
-- **Player Profiles** — Retrieve public profile information including avatars, status, and account creation date
-- **Game Library** — List all games owned by a user with playtime statistics
-- **Recent Activity** — Check games played in the last 2 weeks with detailed session times
-- **Achievement Tracking** — View achievement unlock status and timestamps for any game
-- **Player Statistics** — Access in-game stats and performance metrics for specific titles
-- **Steam Level & Badges** — Check user level, equipped badges, and community progress
-- **App News** — Retrieve recent news articles and updates for any Steam app
+- **Library Orchestration** — List and manage your entire high-fidelity game collection programmatically, retrieving detailed playtimes and technical AppIDs
+- **Player Intelligence** — Access real-time player status and summaries to coordinate your gaming availability or monitor friends' activities
+- **Achievement Architecture** — Programmatically retrieve high-fidelity game achievements and progress for specific apps to maintain a perfectly coordinated gaming record
+- **Recent Activity Monitoring** — Access high-fidelity metadata for recently played games and session durations directly through your agent for instant performance reporting
+- **Operational Monitoring** — Verify account-level API connectivity and monitor service status directly through your agent for instant technical reporting
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Steam Web API Key
-3. Start querying Steam data from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **Web API Key** from the Steam Community Dev page (steamcommunity.com/dev/apikey)
+3. Start orchestrating your gaming data from Claude, Cursor, or any MCP client
+
+No more manual checking of Steam profiles for playtimes or friend status. Your AI acts as your dedicated gaming coordinator and achievement architect.
+
+### Who is this for?
+
+- **Gamers** — instantly retrieve personal library summaries and track achievements using natural language commands
+- **Content Creators** — monitor gaming sessions and verify playtime metadata without leaving your creative workspace
+- **Developers** — integrate high-speed Steam Web API data into custom gaming dashboards through simple AI queries
 
 
-## Available Tools (10)
-- **get_app_list**: Get complete list of Steam apps
-- **get_badge_progress**: Get community badge progress for a user
-- **get_app_news**: Get news articles for a Steam app
-- **get_owned_games**: Get list of games owned by a Steam user
-- **get_player_achievements**: Get achievement progress for a player in a specific game
-- **get_player_badges**: Get badges equipped by a Steam user
-- **get_player_summaries**: Get profile information for Steam users
-- **get_recently_played_games**: Get games recently played by a Steam user
-- **get_steam_level**: Get the Steam level of a user
-- **get_user_stats_for_game**: Get user's statistics for a specific game
+## Available Tools (7)
+- **get_global_achievements**: Get globalThis achievement percentages
+- **get_friend_list**: Get friend list for a Steam user
+- **get_game_news**: Get news for a specific game
+- **resolve_vanity_url**: Resolve a Steam vanity URL
+- **get_owned_games**: Get games owned by a Steam user
+- **get_player_summaries**: Get community profile data for Steam users
+- **get_recently_played_games**: Get recently played games
 
 
 ## 💬 Prompt Examples
@@ -47,38 +50,38 @@ Connect the **Steam Web API** to any AI agent and retrieve gaming data including
 Here are some examples of how you can interact with the **Steam** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Show me the profile of Steam user 76561197960287930."
+> "List all games in my Steam library and show my total playtime for 'Counter-Strike 2'."
 
 **🤖 AI Agent:**
-> Player 'Robin' is currently online. Account created in 2003, currently at Steam Level 80. Profile is public with avatar and location visible.
+> I've retrieved your library. You have 150 high-fidelity games. For 'Counter-Strike 2' (AppID: 730), your total playtime is 1,200 hours. Would you like to check your recent achievements for it?
 
 ---
 
 **👤 You:**
-> "What games does user 76561197960287930 own and how much have they played?"
+> "Check which of my friends are currently online and what they are playing."
 
 **🤖 AI Agent:**
-> This user owns 347 games. Top played: Counter-Strike 2 (257 hours), Dota 2 (833 hours), Team Fortress 2 (142 hours). Would you like details on any specific game?
+> Accessing player summaries... 5 friends are currently online. 'John_Doe' is playing 'Dota 2', and 'Jane_Smith' is Away. I've retrieved the high-fidelity session metadata for your review. Need help joining a lobby?
 
 ---
 
 **👤 You:**
-> "Get recent news updates for Cyberpunk 2077 (App ID 1091500)."
+> "Show my recent activity for the last 2 weeks."
 
 **🤖 AI Agent:**
-> Found 3 recent news articles for Cyberpunk 2077. Latest: 'Update 2.1 — Now Available' released yesterday with new features and bug fixes.
+> Activity orchestrated! In the last 2 weeks, you've played 3 games, including 'Elden Ring' for 15 high-fidelity hours. Your total gaming time across all apps is 25 hours. Shall I retrieve your progress on recent achievements?
 
 
 ## ❓ FAQ
 
-**Q: How do I get a Steam Web API Key?**
-Visit [**Steam Web API Key page**](https://steamcommunity.com/dev/apikey) while logged into your Steam account, agree to the terms, and you'll receive a unique key.
+**Q: How do I find my Steam Web API Key?**
+Log in to your account and navigate to [**steamcommunity.com/dev/apikey**](https://steamcommunity.com/dev/apikey) to generate or copy your unique key.
 
-**Q: Can I check someone's game achievements?**
-Yes! Use `get_player_achievements` with the user's Steam ID and the game's App ID. The user's profile and achievements must be public.
+**Q: Can I see my friends' status via AI?**
+Yes! The `list_steam_friends` tool allows your agent to retrieve high-fidelity status metadata and recently played games for your friend list.
 
-**Q: Is playtime data available for all games?**
-Yes. The `get_owned_games` endpoint returns `playtime_forever` in minutes for each game. Recent playtime (2 weeks) is available via `get_recently_played_games`.
+**Q: How do I check my total playtime for a game?**
+Use the `list_owned_games` tool to retrieve your complete high-fidelity library along with total playtimes (in minutes) for each app.
 
 
 ## Installation & Usage

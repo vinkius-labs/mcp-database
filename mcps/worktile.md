@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your team's collaboration with **Worktile**
 
 
 ## Available Tools (10)
+- **update_task**: Update an existing Worktile task
 - **create_task**: Create a new Worktile task
 - **get_project**: Get project details
 - **get_team_info**: Get team details
-- **list_channels**: List message channels
 - **list_members**: List organization members
 - **list_projects**: List all Worktile agile projects
 - **list_task_states**: List task states for a project
 - **list_tasks**: List tasks in a project
 - **send_message**: Send message to channel
-- **update_task**: Update an existing Worktile task
+- **list_channels**: List message channels
 
 
 ## 💬 Prompt Examples

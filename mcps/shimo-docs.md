@@ -35,6 +35,8 @@ Empower your AI agent to orchestrate your collaborative workflow with **Shimo Do
 
 
 ## Available Tools (10)
+- **list_folders**: List all Shimo folders
+- **list_users**: List organization users
 - **create_file**: Create a new Shimo file
 - **export_file**: Export a Shimo file
 - **get_file**: Get file details
@@ -43,8 +45,6 @@ Empower your AI agent to orchestrate your collaborative workflow with **Shimo Do
 - **import_file**: Import a document into Shimo
 - **list_audit_logs**: List audit logs
 - **list_files**: List all Shimo files
-- **list_folders**: List all Shimo folders
-- **list_users**: List organization users
 
 
 ## 💬 Prompt Examples

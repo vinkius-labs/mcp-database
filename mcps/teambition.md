@@ -35,8 +35,8 @@ Empower your AI agent to orchestrate your team's productivity with **Teambition*
 
 
 ## Available Tools (10)
-- **create_task**: Create a new Teambition task
 - **get_org_info**: Get organization details
+- **create_task**: Create a new Teambition task
 - **get_project**: Get Teambition project details
 - **list_members**: List project members
 - **list_projects**: List all Teambition projects

@@ -37,10 +37,10 @@ Empower your AI agent to orchestrate your entire visual rendering and website ca
 ## Available Tools (6)
 - **get_metadata**: Get metadata for a URL (Placeholder)
 - **generate_pdf**: Generate a PDF from a URL
-- **take_full_page_screenshot**: Take a full-page screenshot of a URL
 - **take_mobile_screenshot**: Take a screenshot with a mobile user agent
 - **take_retina_screenshot**: Take a high-resolution retina screenshot
 - **take_screenshot**: Take a PNG screenshot of a URL
+- **take_full_page_screenshot**: Take a full-page screenshot of a URL
 
 
 ## 💬 Prompt Examples

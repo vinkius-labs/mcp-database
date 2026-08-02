@@ -33,16 +33,16 @@ Equip your AI agent with the pulse of the world's largest PC gaming platform via
 
 
 ## Available Tools (11)
-- **get_app_details**: Get full store page details for a game
-- **search_all_steam_apps**: Get the full list of apps on Steam
 - **get_app_news**: Get latest news and patch notes for a game
 - **get_featured_categories**: Get current Steam Store featured categories
 - **get_friend_list**: Requires public profile.
 
 List friends for a Steam user
+- **get_player_summary**: Get basic player profile details
+- **get_app_details**: Get full store page details for a game
+- **search_all_steam_apps**: Get the full list of apps on Steam
 - **get_owned_games**: List all games owned by a player
 - **get_current_player_count**: Get live player count for a game
-- **get_player_summary**: Get basic player profile details
 - **get_recently_played**: List games played in the last 2 weeks
 - **list_featured_games**: List featured and trending games on Steam
 - **resolve_vanity_url**: g., /id/gaben) into a 64-bit Steam ID.

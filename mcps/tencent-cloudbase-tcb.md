@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your serverless infrastructure and backend 
 
 
 ## Available Tools (8)
+- **list_cloud_functions**: List cloud functions
+- **list_collections**: List database collections
+- **get_environment_info**: Get TCB environment details
 - **get_function_metadata**: Get function details
 - **invoke_cloud_function**: Trigger cloud function
 - **list_auth_users**: List authenticated users
-- **list_cloud_functions**: List cloud functions
-- **list_collections**: List database collections
 - **list_tcb_buckets**: List storage buckets
 - **query_cloud_db**: Query cloud database
-- **get_environment_info**: Get TCB environment details
 
 
 ## 💬 Prompt Examples
