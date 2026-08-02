@@ -14,9 +14,9 @@ This MCP server provides analytical tools to estimate the performance tradeoffs 
 
 
 ## Available Tools (3)
+- **get_parameter_recommendations**: Suggests optimal parameters for a target recall
 - **calculate_memory_usage**: Estimates memory usage for a vector index
 - **estimate_search_performance**: Estimates search performance tradeoff points
-- **get_parameter_recommendations**: Suggests optimal parameters for a target recall
 
 
 ## 💬 Prompt Examples

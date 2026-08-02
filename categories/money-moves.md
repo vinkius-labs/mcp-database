@@ -32,7 +32,7 @@ Explore the open database of **money-moves** Model Context Protocol (MCP) server
 | [Brex](../mcps/brex.md) | Equip your AI to navigate your Brex suite. Spin up virtual cards, route new team members, and check daily cash allocations through natural chat. |
 | [Bsale](../mcps/bsale.md) | Automate cloud POS operations via Bsale — issue electronic invoices, manage inventory, track stock levels, and register clients from any AI agent. |
 | [Carta](../mcps/carta.md) | Equip your AI agent with direct access to Carta — query cap tables, review equity grants, and monitor 409A valuations without opening the equity management dashboard. |
-| [Chargebee](../mcps/chargebee.md) | Automate recurring billing via Chargebee — manage subscriptions, customers, invoices, and hosted checkouts natively with any AI agent. |
+| [Chargebee](../mcps/chargebee.md) | Manage recurring subscriptions, automate billing cycles, and reduce churn with revenue operations built for SaaS growth. |
 | [Chargebee](../mcps/chargebee-alternative.md) | Manage recurring subscriptions, automate billing cycles, and reduce churn with revenue operations built for SaaS growth. |
 | [Chargify](../mcps/chargify.md) | Automate recurring billing via Chargify (Maxio) — manage subscriptions, customers, plans, and revenue holds directly via AI agents. |
 | [Checkbook.io](../mcps/checkbookio.md) | Manage digital and physical check payments via Checkbook — send money, track checks, and monitor invoices directly from any AI agent. |

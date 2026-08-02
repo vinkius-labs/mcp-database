@@ -21,7 +21,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [JWT Decoder & Validator](../mcps/jwt-decoder-validator.md) | Decode JWT segments and verify cryptographic signatures and temporal claims. |
 | [License Compatibility Checker](../mcps/license-compatibility-checker.md) | Audit software licenses and check compatibility between dependencies. |
 | [Multi-Agent Communication Protocol Validator](../mcps/multi-agent-communication-protocol-validator.md) | Analyze and verify the structural integrity of autonomous agent communication logs. |
-| [Multi-Agent Communication Protocol Validator Alternative](../mcps/multi-agent-communication-protocol-validator-alternative.md) | Analyze and verify the structural integrity of autonomous agent communication logs. |
+| [Multi-Agent Communication Protocol Validator](../mcps/multi-agent-communication-protocol-validator-alternative.md) | Analyze and verify the structural integrity of autonomous agent communication logs. |
 | [Outbound Network Firewall Validator](../mcps/outbound-network-firewall-validator.md) | Validates outbound network requests against allowed domains and ports to prevent data exfiltration. |
 | [Password Entropy Calculator](../mcps/password-entropy-calculator.md) | Calculate password entropy, identify pattern risks, and verify security policy compliance. |
 | [PII Redaction Deterministic Scrubber](../mcps/pii-redaction-deterministic-scrubber.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |

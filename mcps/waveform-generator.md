@@ -14,9 +14,9 @@ A mathematical engine for generating precise digital audio samples. Use `generat
 
 
 ## Available Tools (3)
-- **generate_periodic_wave**: Generates standard periodic waveforms (sine, square, sawtooth, or triangle)
 - **generate_harmonic_wave**: Generates a custom waveform by summing harmonics
 - **generate_noise_wave**: Generates non-periodic stochastic waveforms (white or pink noise)
+- **generate_periodic_wave**: Generates standard periodic waveforms (sine, square, sawtooth, or triangle)
 
 
 ## 💬 Prompt Examples

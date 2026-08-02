@@ -14,11 +14,11 @@ This MCP server provides essential tools for web accessibility testing by calcul
 
 
 ## Available Tools (3)
+- **find_compliant_suggestion**: Suggests a new background color that meets a specific accessibility target by minimally adjusting the current color's lightness
 - **audit_palette**: Validates a collection of colors to ensure they all satisfy a specific accessibility standard
 - **calculate_contrast**: 1 and APCA results.
 
 Determines the exact contrast ratio and accessibility pass/fail status for two specific colors
-- **find_compliant_suggestion**: Suggests a new background color that meets a specific accessibility target by minimally adjusting the current color's lightness
 
 
 ## 💬 Prompt Examples

@@ -580,7 +580,6 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Ziflow](../mcps/ziflow.md) | Enterprise online proofing and content review platform to manage creative workflows with AI. |
 | [Zillow](../mcps/zillow.md) | Search US residential and rental properties — find homes by address, city or zipcode with pricing and property details. |
 | [zipBoard](../mcps/zipboard.md) | Automate visual feedback and bug tracking via zipBoard — manage projects, files, and tasks with AI. |
-| [Zoho Billing](../mcps/zoho-billing-alternative.md) | Automate your subscription management with Zoho Billing — manage organizations, products, and plans directly from your AI agent. |
 | [Zoho Bookings](../mcps/zoho-bookings.md) | Automate appointment scheduling via Zoho Bookings — manage appointments, services, and staff with AI. |
 | [Zoho Creator](../mcps/zoho-creator.md) | Low-code platform to build applications and manage records with AI using Creator API v2.1. |
 | [Zoho CRM Activities](../mcps/zoho-crm-activities.md) | Create and manage tasks, calls, events, and notes — full activity tracking for your Zoho CRM. |

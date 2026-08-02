@@ -15,8 +15,8 @@ The Reasoning Step Word Count Analyzer MCP server provides a specialized auditin
 
 ## Available Tools (3)
 - **calculate_verbosity_ratio**: Calculates the ratio of thought text to action text
-- **detect_zero_shot_behavior**: Detects if the model exhibits zero-shot behavior based on thought word count
 - **parse_react_trace**: Parses a React trace string to extract structured information
+- **detect_zero_shot_behavior**: Detects if the model exhibits zero-shot behavior based on thought word count
 
 
 ## 💬 Prompt Examples

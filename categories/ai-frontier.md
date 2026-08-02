@@ -16,7 +16,6 @@ Explore the open database of **ai-frontier** Model Context Protocol (MCP) server
 | [Baseten](../mcps/baseten.md) | Manage your Baseten AI models — orchestrate deployments, list secrets, and run serverless inference predictions autonomously. |
 | [Cartesia (Voice AI)](../mcps/cartesia-voice-ai.md) | Generate lifelike AI voices, clone speech, and transcribe audio with Cartesia's state-of-the-art Sonic models directly from your AI agent. |
 | [Cerebras Inference](../mcps/cerebras-inference.md) | Access lightning-fast AI inference via Cerebras Wafer-Scale Engine — generate chat completions, manage models, and run batch jobs at record speeds. |
-| [Clarifai (Vision AI)](../mcps/clarifai-vision-ai.md) | Manage AI inference via Clarifai — list apps, models, and workflows, and perform computer vision predictions directly from any AI agent. |
 | [ClickHouse (Vector Search)](../mcps/clickhouse-vector-search.md) | Manage vector embeddings and SQL via ClickHouse — list databases, execute SQL, and perform high-speed vector searches directly from any AI agent. |
 | [Cloudflare](../mcps/cloudflare.md) | AI edge infrastructure: manage Workers, KV, D1, R2, routes, and deployments via agents. |
 | [CodeRabbit](../mcps/coderabbit.md) | Manage AI-powered code reviews via CodeRabbit — list users, track PR review metrics, audit admin actions, and control seat assignments from any AI agent. |
@@ -28,7 +27,7 @@ Explore the open database of **ai-frontier** Model Context Protocol (MCP) server
 | [Dataiku DSS](../mcps/dataiku-dss.md) | Manage data science via Dataiku — list projects and datasets, track pipeline jobs, run automation scenarios, and monitor ML models directly from any AI agent. |
 | [DataRobot](../mcps/datarobot.md) | Manage AutoML via DataRobot — monitor projects and models, track deployments, and audit ML datasets directly from any AI agent. |
 | [DataStax Astra DB Vector](../mcps/datastax-astra-db-vector.md) | Manage Astra DB collections, documents, and perform vector similarity searches via DataStax directly from your AI agent. |
-| [Deepgram](../mcps/deepgram.md) | Power audio AI via Deepgram — perform high-speed speech-to-text, generate lifelike text-to-speech, track usage, and manage API keys directly from any AI agent. |
+| [Deepgram](../mcps/deepgram.md) | Transcribe speech to text with blazing speed and accuracy using neural networks trained on real-world audio at scale. |
 | [Deepgram](../mcps/deepgram-alternative.md) | Transcribe speech to text with blazing speed and accuracy using neural networks trained on real-world audio at scale. |
 | [DeepL](../mcps/deepl-alternative.md) | Translate text between 30+ languages with neural machine translation that captures nuance and tone better than generic engines. |
 | [DeepSeek](../mcps/deepseek.md) | Access powerful open-weight language models for reasoning, code generation, and complex problem solving at competitive cost. |
@@ -38,12 +37,13 @@ Explore the open database of **ai-frontier** Model Context Protocol (MCP) server
 | [ElevenLabs](../mcps/elevenlabs.md) | Generate high-quality AI speech via ElevenLabs — use lifelike voices, manage text-to-speech, track usage, and handle audio dubbing directly from any AI agent. |
 | [ElevenLabs](../mcps/elevenlabs-alternative.md) | Generate lifelike speech from text with neural voice synthesis that clones voices and supports dozens of languages naturally. |
 | [ElevenLabs](../mcps/elevenlabs-alternative-1.md) | Generate lifelike speech, clone voices, and create sound effects using ElevenLabs' industry-leading AI audio technology. |
-| [Exa](../mcps/exa.md) | Semantic search engine built for AI — find conceptually relevant web content, not just keyword matches. Powered by neural search technology. |
+| [Exa](../mcps/exa.md) | Find exactly the web content you need with semantic search that understands context and returns high-quality curated results. |
 | [Exa](../mcps/exa-alternative.md) | Find exactly the web content you need with semantic search that understands context and returns high-quality curated results. |
 | [Exa AI](../mcps/exa-ai-alternative.md) | Search the web with neural embeddings that understand meaning, not just keywords, and return the most relevant results for any query. |
 | [fal.ai 3D](../mcps/falai-3d.md) | Generate 3D models via fal.ai — convert images and text to 3D assets using Rodin, TripoSR, Trellis, and 9+ AI models from any AI agent. |
 | [Fireworks AI](../mcps/fireworks-ai.md) | Empower LLM applications via Fireworks AI — perform ultra-fast chat completions, generate embeddings and images, and transcribe audio directly from any AI agent. |
 | [Flowise](../mcps/flowise.md) | Manage low-code AI workflows via Flowise — run predictions, track chatflows and agentflows, handle tools, and audit execution history directly from any AI agent. |
+| [Groq](../mcps/groq.md) | Run large language models at unprecedented speed with custom LPU hardware that delivers real-time AI inference at massive scale. |
 | [Groq](../mcps/groq-alternative.md) | Run large language models at unprecedented speed with custom LPU hardware that delivers real-time AI inference at massive scale. |
 | [H2O.ai](../mcps/h2oai.md) | Manage AI models via H2O.ai — track data frames, monitor machine learning models and training jobs, and audit cloud cluster status directly from any AI agent. |
 | [Helicone (LLM Observability)](../mcps/helicone-llm-observability.md) | Monitor LLM usage via Helicone — track requests, analyze costs, measure latency, and manage prompts. |
@@ -69,7 +69,7 @@ Explore the open database of **ai-frontier** Model Context Protocol (MCP) server
 | [Marqo AI (Vector Search & Embeddings)](../mcps/marqo-ai-vector-search-embeddings.md) | Manage semantic search via Marqo — execute tensor queries, index JSON documents, and audit vector indices. |
 | [Mem0](../mcps/mem0.md) | Give your AI agent persistent memory — store, search, and recall facts, preferences, and context across sessions using the leading agent memory platform. |
 | [Midjourney](../mcps/midjourney.md) | AI image generation — create, upscale, vary, and blend images using Midjourney's Imagine API. |
-| [Mistral AI](../mcps/mistral-ai.md) | Access Mistral AI models via API — chat with Claude alternatives, generate embeddings, moderate content and manage batch jobs from any AI agent. |
+| [Mistral AI](../mcps/mistral-ai.md) | Build with European open-weight language models that deliver strong reasoning, multilingual capability, and efficient inference. |
 | [Mistral AI](../mcps/mistral-ai-alternative.md) | Build with European open-weight language models that deliver strong reasoning, multilingual capability, and efficient inference. |
 | [Mistral AI (Frontier LLMs & Embeddings)](../mcps/mistral-ai-frontier-llms-embeddings.md) | Manage AI inference via Mistral — execute chat completions, generate RAG embeddings, and audit frontier models. |
 | [OpenAI](../mcps/openai-alternative.md) | Manage OpenAI resources via API — list models, monitor fine-tunes, manage batches and inspect Assistants from any AI agent. |

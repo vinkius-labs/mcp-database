@@ -8,10 +8,11 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Abyssale](../mcps/abyssale.md) | Automated creative production — generate dynamic images, banners, and personalized visuals via AI. |
 | [Acelle Mail](../mcps/acelle-mail.md) | Launch email campaigns, grow subscriber lists, and track open rates with a self-hosted email marketing platform built for scale. |
 | [Ad4Game](../mcps/ad4game.md) | Digital advertising for games — manage offers, retrieve creatives, and audit ad inventory via AI. |
-| [AdButler](../mcps/adbutler.md) | Ad serving and reporting — manage publishers, zones, campaigns, and ad performance via AI. |
+| [AdButler](../mcps/adbutler.md) | Serve and manage display ads, track impressions, and optimize ad zones across your digital properties with precision. |
 | [AdButler](../mcps/adbutler-alternative.md) | Serve and manage display ads, track impressions, and optimize ad zones across your digital properties with precision. |
 | [Adikteev](../mcps/adikteev.md) | App retargeting and churn prediction — manage audience segments and track campaign performance via AI. |
 | [Adjust](../mcps/adjust.md) | Mobile measurement and attribution — track app installs, events, and performance via AI. |
+| [AdRoll](../mcps/adroll.md) | Retarget customers, launch display ad campaigns, and measure conversion performance across web and social channels. |
 | [AdRoll](../mcps/adroll-alternative.md) | Retarget customers, launch display ad campaigns, and measure conversion performance across web and social channels. |
 | [AdsWizz](../mcps/adswizz.md) | Audio advertising platform — manage campaigns, inventory, and targeting via AI. |
 | [Adtelligent](../mcps/adtelligent.md) | Adtech orchestration — manage DSP campaigns, creatives, and SSP reporting via AI. |

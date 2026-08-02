@@ -1,4 +1,4 @@
-# Multi-Agent Communication Protocol Validator Alternative MCP Server
+# Multi-Agent Communication Protocol Validator MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/multi-agent-communication-protocol-validator-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -24,7 +24,7 @@ Assesses the efficiency of the protocol by comparing payload size to metadata si
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Multi-Agent Communication Protocol Validator Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Multi-Agent Communication Protocol Validator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "Check if this log follows the protocol: 'From: AgentA, To: AgentB, Subject: Hello, Payload: Hi'"
@@ -75,7 +75,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Multi-Agent Communication Protocol Validator Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **Multi-Agent Communication Protocol Validator** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -83,7 +83,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `multi-agent-communication-protocol-validator-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Multi-Agent Communication Protocol Validator Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **Multi-Agent Communication Protocol Validator** tools.
 
 **Configuration:**
 ```json

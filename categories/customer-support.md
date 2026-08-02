@@ -93,7 +93,7 @@ Explore the open database of **customer-support** Model Context Protocol (MCP) s
 | [Mention](../mcps/mention.md) | Social media monitoring and alerts via Mention — track mentions and monitor brand sentiment. |
 | [MiiTel](../mcps/miitel-alternative.md) | Automate MiiTel voice intelligence — list export queues, generate CSVs, and import call or meeting records via AI. |
 | [MiiTel](../mcps/miitel.md) | Analyze phone conversations with AI that scores call quality, identifies sentiment, and provides coaching insights for sales teams. |
-| [MonkeyLearn](../mcps/monkeylearn.md) | Analyze and extract data from text via MonkeyLearn — sentiment analysis and keyword extraction directly from your AI agent. |
+| [MonkeyLearn](../mcps/monkeylearn.md) | Analyze text data with custom machine learning models that classify sentiment, extract keywords, and tag topics automatically. |
 | [MonkeyLearn](../mcps/monkeylearn-alternative.md) | Analyze text data with custom machine learning models that classify sentiment, extract keywords, and tag topics automatically. |
 | [Nicereply](../mcps/nicereply.md) | Measure customer satisfaction via Nicereply — track survey responses, ratings, and stats directly from your AI agent. |
 | [Observe.AI](../mcps/observeai.md) | Analyze and evaluate contact center interactions via Observe.AI — track transcripts, QA scores, and coaching directly from your AI agent. |

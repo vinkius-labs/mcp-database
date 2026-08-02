@@ -12,7 +12,6 @@ Explore the open database of **superpower** Model Context Protocol (MCP) servers
 | [CrewAI Platform](../mcps/crewai-platform.md) | Orchestrate multi-agent workflows via CrewAI — list crews and agents, kickoff autonomous runs, and monitor task execution directly from any AI agent. |
 | [DJI Developer](../mcps/dji-developer.md) | Orchestrate DJI drones and payloads — manage flight logs, monitor device health, and handle firmware updates directly from any AI agent. |
 | [E2B](../mcps/e2b.md) | Secure cloud sandboxes for AI code execution — run Python, JavaScript, and shell commands in isolated Firecracker microVMs with ~150ms cold start. |
-| [Groq](../mcps/groq.md) | Empower LLM applications via Groq — perform ultra-fast LPU-accelerated chat completions, handle audio transcription and translation, and use JSON mode directly from any AI agent. |
 | [Home Assistant](../mcps/home-assistant.md) | Control smart home devices and automations via Home Assistant REST API — lights, climate, media, covers, sensors, and more. |
 | [Hyperbrowser (Web Infra for AI)](../mcps/hyperbrowser-web-infra-for-ai.md) | Cloud browsers for AI agents via Hyperbrowser — manage sessions, scrape pages, and extract structured data. |
 | [Lambda Labs (GPU Cloud)](../mcps/lambda-labs-gpu-cloud.md) | Manage AI infrastructure via Lambda Labs — launch GPU instances, monitor ML workloads, and manage SSH keys. |

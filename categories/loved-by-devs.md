@@ -58,7 +58,7 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [HTML DOM Query Engine](../mcps/html-dom-query-engine.md) | Extract specific text and attributes from massive HTML payloads instantly using CSS selectors. Fast, memory-efficient DOM parsing. |
 | [HTML to Markdown Converter](../mcps/html-to-markdown-converter.md) | Stop LLMs from skipping website content. Convert massive HTML files into clean Markdown deterministically without data loss. |
 | [HTML to Text Extractor](../mcps/html-to-text-extractor.md) | Stop wasting AI context on messy HTML code. Instantly strip CSS, tags, and scripts to extract perfectly readable Plain Text. |
-| [Hugging Face](../mcps/hugging-face.md) | Explore AI models, datasets and Spaces via Hugging Face — search models, inspect files, review discussions and track collections from any AI agent. |
+| [Hugging Face](../mcps/hugging-face.md) | Access thousands of pre-trained AI models for NLP, vision, and audio tasks with the largest open-source machine learning hub. |
 | [Hugging Face](../mcps/hugging-face-alternative.md) | Access thousands of pre-trained AI models for NLP, vision, and audio tasks with the largest open-source machine learning hub. |
 | [Infracost](../mcps/infracost.md) | Cloud cost estimates for Terraform — manage cost guardrails, tagging policies, and custom enterprise price books directly through your AI agent. |
 | [INI Parser Engine](../mcps/ini-parser-engine.md) | Convert INI config files (php.ini, my.cnf, .editorconfig) to JSON and back with absolute precision. 55M+ weekly downloads. |

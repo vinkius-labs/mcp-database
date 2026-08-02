@@ -14,8 +14,8 @@ The Topological Sort Engine provides specialized tools for managing directed acy
 
 
 ## Available Tools (3)
-- **calculate_dfs_sort**: Generate a valid execution order using DFS-based approach
 - **identify_cycles**: Isolate and list all nodes that are part of circular dependencies
+- **calculate_dfs_sort**: Generate a valid execution order using DFS-based approach
 - **calculate_kahn_sort**: Generate a valid linear execution order using Kahn's Algorithm
 
 

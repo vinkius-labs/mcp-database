@@ -7,7 +7,6 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [17Track](../mcps/17track.md) | Global package tracking platform — monitor shipments across 1500+ carriers via AI. |
 | [99Minutos Express](../mcps/99minutos-express.md) | Call physical couriers via AI using 99Minutos. Extract immediate Last-mile shipping quotes and trace vehicle checkpoints dynamically. |
 | [Adrecord](../mcps/adrecord.md) | Affiliate marketing network — manage programs, track transactions, and audit earnings via AI. |
-| [AdRoll](../mcps/adroll.md) | E-commerce marketing and retargeting — manage campaigns, ads, and performance via AI. |
 | [Adtraction](../mcps/adtraction.md) | Affiliate marketing network — manage programs, track transactions, and audit performance via AI. |
 | [Afosto](../mcps/afosto.md) | Retail and e-commerce engine — manage orders, inventory, products, and customers via AI. |
 | [AfterShip](../mcps/aftership.md) | Track packages worldwide — create, manage, and monitor shipments via AI. |

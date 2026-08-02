@@ -14,6 +14,7 @@ Explore the open database of **artificial-intelligence** Model Context Protocol 
 | [Autobound](../mcps/autobound.md) | Write hyper-personalized sales emails in seconds using AI that researches prospects and crafts messages that get replies. |
 | [CAMB.AI](../mcps/cambai.md) | Translate and dub audio content into dozens of languages using AI voices that sound natural and preserve speaker identity. |
 | [Chorus.ai (ZoomInfo)](../mcps/chorusai-zoominfo.md) | Analyze sales conversations and meetings via Chorus.ai — track transcripts, identify key moments, and monitor team performance directly from any AI agent. |
+| [Clarifai (Vision AI)](../mcps/clarifai-vision-ai.md) | Manage AI inference via Clarifai — list apps, models, and workflows, and perform computer vision predictions directly from any AI agent. |
 | [Convai](../mcps/convai.md) | Build and manage conversational AI characters with backstory, narrative design, and knowledge banks for games and apps. |
 | [Cradl AI](../mcps/cradl-ai.md) | Equip your AI agent to extract structured data from any document using Cradl AI's deep learning models. |
 | [Dalil AI](../mcps/dalil-ai.md) | Build AI assistants that understand Arabic natively and serve Middle Eastern markets with culturally aware conversational AI. |
@@ -22,7 +23,7 @@ Explore the open database of **artificial-intelligence** Model Context Protocol 
 | [DocSumo](../mcps/docsumo.md) | Equip your AI agent to automate document data extraction, manage IDP workflows, and audit processed files via the DocSumo API. |
 | [Edamam](../mcps/edamam.md) | Analyze nutrition from natural language, search recipes with dietary filters, and access a comprehensive food database with Edamam's AI-powered platform. |
 | [Evisort Contract Intelligence](../mcps/evisort-contract-intelligence.md) | Equip your AI agent to manage contract documents, track AI-extracted provisions, and monitor workflows via the Evisort API. |
-| [Exa AI](../mcps/exa-ai.md) | Search and discover the web — audit semantic results and similar links via AI. |
+| [Exa AI](../mcps/exa-ai.md) | Search the web with neural embeddings that understand meaning, not just keywords, and return the most relevant results for any query. |
 | [Extracta](../mcps/extracta.md) | Automate data extraction via Extracta — process documents into structured JSON, handle AI classification, and audit extraction history directly from any AI agent. |
 | [FirstQuadrant](../mcps/firstquadrant.md) | Let AI handle your outbound sales prospecting with autonomous research, personalized messaging, and smart follow-up sequences. |
 | [Fortnite Map, Playlists & Engine Intelligence](../mcps/fortnite-map-playlists-engine-intelligence.md) | The technical server for Fortnite engine data — track the island map, active gamemodes, and AES keys via AI. |

@@ -10,7 +10,7 @@ Explore the open database of **finance-accounting** Model Context Protocol (MCP)
 | [Buy Me A Coffee](../mcps/buy-me-a-coffee.md) | Manage your creator account via Buy Me A Coffee — track supporters, memberships, and digital products directly from any AI agent. |
 | [Cabify](../mcps/cabify.md) | AI ride management for business: book rides, track trips, and manage corporate mobility via agents. |
 | [Certify (Emburse)](../mcps/certify-emburse.md) | Manage expenses and invoices via Certify (Emburse) — track reports, receipts, and employee spend directly from any AI agent. |
-| [ChargeOver](../mcps/chargeover.md) | Manage recurring billing and invoicing via ChargeOver — track customers, monitor subscriptions, and analyze transactions directly from any AI agent. |
+| [ChargeOver](../mcps/chargeover.md) | Bill your customers with flexible recurring invoicing, automated dunning, and payment collection that keeps revenue flowing. |
 | [ChargeOver](../mcps/chargeover-alternative.md) | Bill your customers with flexible recurring invoicing, automated dunning, and payment collection that keeps revenue flowing. |
 | [CoinDesk Bitcoin Price Index](../mcps/coindesk-bitcoin-price-index.md) | Universal Bitcoin intelligence — get real-time BPI prices and supported currencies via AI. |
 | [CoinGate](../mcps/coingate.md) | Accept cryptocurrency payments from customers worldwide with instant fiat settlement and multi-coin checkout support. |
@@ -28,7 +28,7 @@ Explore the open database of **finance-accounting** Model Context Protocol (MCP)
 | [Fusebill (Enterprise Subscription Billing API)](../mcps/fusebill-enterprise-subscription-billing-api.md) | Automate enterprise subscription billing via Fusebill — manage customers, track subscriptions, and handle billing lifecycles directly from any AI agent. |
 | [Getpaid](../mcps/getpaid.md) | Manage billing, track payments, and initiate checkouts via AI agents with Getpaid.io. |
 | [Hiveage](../mcps/hiveage.md) | Automate online invoicing via Hiveage — manage invoices, estimates, and payments directly from any AI agent. |
-| [Invoiced](../mcps/invoiced.md) | Manage accounts receivable, invoices, and payments via Invoiced API. |
+| [Invoiced](../mcps/invoiced.md) | Get paid faster with automated invoicing, smart payment reminders, and accounts receivable workflows that reduce DSO. |
 | [InvoiceXpress (Online Invoicing)](../mcps/invoicexpress-online-invoicing.md) | Manage invoicing via InvoiceXpress — create clients, track payments, and manage invoices and estimates in Portugal. |
 | [isvat](../mcps/isvat.md) | Validate European VAT numbers — audit tax IDs via AI. |
 | [Ko-fi](../mcps/ko-fi.md) | Monitor your Ko-fi donations, subscriptions, and shop orders directly from your AI agent. |
@@ -54,6 +54,7 @@ Explore the open database of **finance-accounting** Model Context Protocol (MCP)
 | [Yodlee](../mcps/yodlee.md) | Access financial data via Yodlee — list accounts, fetch transactions, and verify banking details directly from any AI agent. |
 | [ZeroHash](../mcps/zerohash.md) | Manage digital asset infrastructure via ZeroHash — list assets, manage accounts, create customers, and execute trades directly from any AI agent. |
 | [Zoho Billing](../mcps/zoho-billing.md) | Comprehensive billing and subscription management platform. |
+| [Zoho Billing](../mcps/zoho-billing-alternative.md) | Comprehensive billing and subscription management platform. |
 | [Zoho Invoice](../mcps/zoho-invoice-1.md) | Manage customers, create invoices, and automate billing on Zoho Invoice — the clean and simple invoicing software for small business. |
 | [Zoho Invoice](../mcps/zoho-invoice-alternative.md) | Create and send professional invoices, track payments, and manage expenses with free invoicing software that scales with your business. |
 
