@@ -36,16 +36,16 @@ No more context-switching between your editor and the Sitecore backend. Your AI 
 
 
 ## Available Tools (9)
+- **get_item_details**: Retrieves details for a specific Sitecore item
+- **get_item_layout**: Retrieves the layout or presentation details for an item
+- **get_workflow_state**: Retrieves the current workflow state of an item
+- **list_item_children**: Lists the immediate children of a specific item
 - **create_content_item**: Requires parent ID, item name, and template ID.
 
 Creates a new item in the Sitecore content tree
 - **delete_content_item**: This action is irreversible.
 
 Permanently deletes a Sitecore item
-- **get_item_details**: Retrieves details for a specific Sitecore item
-- **get_item_layout**: Retrieves the layout or presentation details for an item
-- **get_workflow_state**: Retrieves the current workflow state of an item
-- **list_item_children**: Lists the immediate children of a specific item
 - **list_content_templates**: g., "Page", "Article") are available for creating new items.
 
 Lists available content templates

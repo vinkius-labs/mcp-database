@@ -43,6 +43,7 @@ Your AI becomes a transactional legal assistant, helping you draft clauses, revi
 
 
 ## Available Tools (13)
+- **check_spellbook_playbook**: Check contract compliance against a playbook
 - **analyze_spellbook_contract**: USE WHEN:
 - User wants to review a contract for risks
 - User needs to identify issues in a contract
@@ -58,7 +59,6 @@ EXAMPLES:
 - "Check clauses in document 456" → call with document_id="456", analysis_type="clause_check"
 
 Analyze a contract document for risks, issues, and suggestions
-- **check_spellbook_playbook**: Check contract compliance against a playbook
 - **compare_spellbook_contracts**: USE WHEN:
 - User wants to compare two versions of a contract
 - User needs to identify changes between drafts

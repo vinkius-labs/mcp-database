@@ -42,6 +42,7 @@ Marks an order as fulfilled and adds tracking information
 - **get_order_details**: Retrieves details for a specific order
 - **get_product_details**: Retrieves details for a specific product
 - **list_inventory**: Lists inventory levels for product variants
+- **list_webhooks**: Lists configured webhook subscriptions
 - **list_orders**: Supports pagination via cursor.
 
 Lists Squarespace Commerce orders
@@ -50,7 +51,6 @@ Lists Squarespace Commerce orders
 Lists Squarespace Commerce products
 - **list_customer_profiles**: Lists Squarespace customer profiles
 - **list_transactions**: Lists financial transactions
-- **list_webhooks**: Lists configured webhook subscriptions
 
 
 ## 💬 Prompt Examples

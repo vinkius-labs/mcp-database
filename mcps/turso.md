@@ -42,14 +42,14 @@ Provision a massively distributed Serverless SQLite database
 - **create_database_token**: Mint a secure connection Token tied strictly to a specific DB
 - **delete_database**: This action is irreversible.
 
-Permanently deletes a global libSQL database
+Permanently deletes a globalThis libSQL database
 - **get_database_details**: Introspect exact architectural traits of one target libSQL instance
-- **rotate_database_tokens**: Revoke all pre-existing Tokens for a database
 - **list_databases**: Enumerate the complete libSQL Edge Database registry
 - **list_database_groups**: Get Turso logical groups orchestrating DB locations
-- **list_edge_locations**: Lookup physical global Fly.io datacenter mappings (Locations)
+- **list_edge_locations**: Lookup physical globalThis Fly.io datacenter mappings (Locations)
 - **list_organizations**: Identify Turso Edge SQLite root organizational tenants
 - **list_database_tokens**: List active Database execution JWT Tokens
+- **rotate_database_tokens**: Revoke all pre-existing Tokens for a database
 
 
 ## 💬 Prompt Examples

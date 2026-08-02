@@ -37,14 +37,14 @@ Your AI agent becomes a command center for your entire RAG and knowledge base in
 
 
 ## Available Tools (6)
-- **list_data_destinations**: g. Vector DBs, SQL).
-
-Lists all configured target locations for processed data
-- **list_processing_workflows**: Lists all end-to-end document processing pipelines
 - **get_workflow_details**: Retrieves configuration details for a specific processing workflow
 - **trigger_workflow_execution**: Returns a job ID.
 
 Manually triggers an immediate execution of a processing workflow
+- **list_data_destinations**: g. Vector DBs, SQL).
+
+Lists all configured target locations for processed data
+- **list_processing_workflows**: Lists all end-to-end document processing pipelines
 - **list_workflow_jobs**: Lists all active and historical workflow execution jobs
 - **list_data_sources**: Lists all configured remote data connectors (e.g. S3, GCS)
 

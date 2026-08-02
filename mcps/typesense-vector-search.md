@@ -44,11 +44,11 @@ Creates a new search collection with a specific schema
 - **delete_document**: This action is irreversible.
 
 Permanently removes a document from a collection by its ID
+- **list_vector_collections**: Lists all collections in the Typesense instance
 - **get_collection_details**: Retrieves schema and metadata for a specific collection
 - **index_document**: Provide the collection name and the document data as a JSON object.
 
 Adds or updates a document in a search collection
-- **list_vector_collections**: Lists all collections in the Typesense instance
 
 
 ## 💬 Prompt Examples

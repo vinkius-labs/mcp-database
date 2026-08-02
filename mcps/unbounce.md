@@ -7,38 +7,44 @@
 
 **Category:** [marketing-automation](../categories/marketing-automation.md)
 
-Automate marketing tasks via Unbounce — retrieve landing pages, fetch captured leads, audit performance stats, and manage test variants easily.
+Build high-converting landing pages with AI-powered optimization that tests headlines, copies, and layouts automatically.
 
 ## Description
-Connect your **Unbounce** marketing workflows to any AI agent and take full enterprise control over global landing pages, captured leads routing, and real-time conversion monitoring natively via conversational commands.
+Connect your **Unbounce** account to any AI agent and simplify how you manage your conversion-focused landing pages, lead data, and custom domains through natural conversation.
 
 ### What you can do
 
-- **Project & Sub-Account Control** — Interrogate your organization's hierarchy grouping, natively verifying assigned domains before pushing any pages live
-- **Real-Time Lead Extraction** — Fetch form submission pipelines continuously directly from targeted pages without battling CSV exports
-- **Variant Auditing** — Read A/B testing splits mapped across single pages to identify statistically significant conversions rapidly
-- **Lead Obliteration** — Trigger raw data-privacy deletions directly across specific captured accounts dropping rogue leads off the servers 
+- **Landing Page Control** — List and inspect all landing pages across your sub-accounts and retrieve detailed configuration metadata.
+- **Lead Analysis** — List and query all leads submitted through your forms, and retrieve individual lead data for processing.
+- **Domain Oversight** — List custom domains registered in your account to verify connectivity and SSL status.
+- **Account Organization** — Manage sub-accounts and page groups to keep your marketing assets structured.
+- **Form Insight** — List all form fields across page variants to understand your data collection points.
+- **User Monitoring** — Fetch account details and verify your current Unbounce user profile.
 
 ### How it works
 
-1. Subscribe manually to this core server context
-2. Introduce your Personal Developer Unbounce API Auth Token into the connection setup
-3. Start mapping live conversion tracking or list pulling natively inside Claude or your specific IDE space
-
-Manage hundreds of lead generation funnels automatically by prompting the LLM instead of suffering visually heavy interface delays.
+1. Subscribe to this server
+2. Enter your Unbounce API Key (found in your account API management)
+3. Start managing your landing pages from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **Growth Marketers** — query the system directly inside chat windows pulling performance stats isolating top-performing split variations in 5 seconds
-- **Sales Development** — fetch new lead details natively triggering follow-ups faster checking EXACT form entries avoiding unformatted messy exports
-- **Marketing Agencies** — list hundreds of client specific domains spanning dynamic sub-accounts cleanly auditing deployment checks effortlessly
+- **Marketing Managers** — quickly check page performance and retrieve new leads via simple AI queries.
+- **Web Developers** — verify domain configurations and form field structures directly from the workspace.
+- **Conversion Optimizers** — get instant bird's-eye views of page groups and variant data via the AI assistant.
 
 
-## Available Tools (4)
-- **domains**: List custom domains configured in the account
-- **leads**: List leads/submissions for a specific landing page
-- **pages**: List landing pages in Unbounce
-- **sub_accounts**: List sub-accounts available to the user
+## Available Tools (10)
+- **list_accounts**: List all Unbounce accounts
+- **list_domains**: List custom domains
+- **list_form_fields**: List form fields for a page
+- **get_lead**: Get details for a specific lead
+- **get_page**: Get details for a specific landing page
+- **list_leads**: List leads for a page
+- **list_page_groups**: List page groups
+- **list_pages**: List pages for a sub-account
+- **list_sub_accounts**: List sub-accounts (clients)
+- **get_me**: Get current Unbounce user details
 
 
 ## 💬 Prompt Examples
@@ -46,38 +52,38 @@ Manage hundreds of lead generation funnels automatically by prompting the LLM in
 Here are some examples of how you can interact with the **Unbounce** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Please list the verified domains available for publication underneath the specific main active sub-account."
+> "List all landing pages in my sub-account '10293'."
 
 **🤖 AI Agent:**
-> I've fetched 3 attached domains securely: 'get.vinkius.cloud', 'campaigns.yourstack.com', and a root domain entry for 'product.marketing.io'. Need to list the active pages attached inside any?
+> I've retrieved your pages. You have 3 active landing pages: 'Summer Promo', 'E-book Download', and 'Product Beta Waitlist'. Which one would you like to see leads for?
 
 ---
 
 **👤 You:**
-> "Summarize the conversion metrics and variant splits for the 'Enterprise Launch Q3' LP ID."
+> "Show me the latest 5 leads from the 'Summer Promo' page."
 
 **🤖 AI Agent:**
-> Page Stats fetched! Total audience hits stand at 14,200. Variant A processed a miserable 1.2% conversion rate, but Variant B dominated at 11%, effectively gathering over 1,500 firm leads inherently. Drop Variant A when possible.
+> I've fetched the latest leads. There are 5 recent submissions including 'John Doe' (john@example.com) and 'Sarah Smith'. Shall I retrieve the full profile details for any of them?
 
 ---
 
 **👤 You:**
-> "Isolate the exact form submission metadata payload for lead ID 7709xxv-1123."
+> "Check the status of custom domains in my account."
 
 **🤖 AI Agent:**
-> Retrieved form values securely for Lead 7709xxv: User email marked 'john.doe@test.com'. Included an arbitrary internal company name input as 'Acme Global'. The request indicates no additional customized checkboxes were marked.
+> Fetching domains... You have 2 registered domains: 'promo.vinkius.com' (Ready/SSL Active) and 'offers.vinkius.com' (CNAME pending). Would you like instructions on how to finish the setup?
 
 
 ## ❓ FAQ
 
-**Q: Can it retrieve all form submission data (Leads) for a specific landing page in one go?**
-Absolutely. Just instruct the agent using the 'list_page_leads' capability, feeding it the specific landing page ID. It directly taps the records returning JSON-wrapped metadata of exactly what your visitors typed in.
+**Q: Can I see all the leads collected by a specific landing page?**
+Yes! Use the `list_leads` tool and provide the Page ID. Your agent will retrieve the complete list of submissions for that page.
 
-**Q: How can I check the performance and stats of a live landing page quickly?**
-Simply ask the agent to fetch the page statistics using 'get_page_statistics' with its respective ID. Data elements like bounce rates, overall views vs conversions naturally return into the AI context mapping easy charts.
+**Q: How do I list all landing pages in a sub-account?**
+Use the `list_pages` query with your Sub-Account ID. The agent will return all landing pages associated with that specific client or project area.
 
-**Q: Can it query sub-accounts dynamically finding out assigned domains on larger enterprise accounts?**
-Yes. First call 'list_sub_accounts' to get raw IDs, then orchestrate 'list_sub_account_domains' recursively across those IDs. In one prompt, your AI audits the entire organizational deployment topology natively.
+**Q: Is it possible to see the form fields used on a page via AI?**
+Absolutely. Run the `list_form_fields` query with your Page ID. The agent will retrieve all form fields defined across all variants of that landing page.
 
 
 ## Installation & Usage

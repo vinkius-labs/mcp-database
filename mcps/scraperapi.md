@@ -35,8 +35,8 @@ ScraperAPI abstracts away all the infrastructure logic, turning your agent into 
 
 
 ## Available Tools (10)
-- **get_account_stats**: Retrieves API usage statistics
 - **get_async_job**: Retrieves the status and result of an async job
+- **get_account_stats**: Retrieves API usage statistics
 - **get_screenshot_link**: Generates a URL to capture a full-page screenshot
 - **scrape_amazon**: Retrieves structured Amazon product details
 - **scrape_google_serp**: Retrieves structured Google Search results

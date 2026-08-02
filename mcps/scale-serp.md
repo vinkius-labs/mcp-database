@@ -35,11 +35,11 @@ Scale SERP handles the IP rotation and CAPTCHAs, allowing your agent to simply r
 
 
 ## Available Tools (10)
-- **google_related_questions**: Retrieves "People Also Ask" questions from Google
 - **google_organic**: You can specify a query and an optional geographic location.
 
 Performs a standard Google organic search
 - **google_places**: Searches for places and local businesses on Google Maps
+- **google_related_questions**: Retrieves "People Also Ask" questions from Google
 - **google_scholar**: Searches for scholarly articles and research papers
 - **google_shopping**: Searches for products on Google Shopping
 - **google_videos**: Searches for videos on Google

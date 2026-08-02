@@ -34,16 +34,16 @@ Connect your **ThoughtSpot** instance to any AI agent and bring your analytics w
 
 
 ## Available Tools (7)
+- **list_user_groups**: Lists all user groups
+- **list_data_connections**: g., Snowflake, BigQuery) are connected.
+
+Lists configured data source connections
 - **search_metadata**: Supported types include LIVEBOARD, ANSWER, LOGICAL_TABLE, etc.
 
 Search for metadata objects in ThoughtSpot by type
 - **list_liveboards**: Lists all available Liveboards (dashboards)
 - **list_answers**: Lists all saved Answers (individual charts or tables)
 - **list_account_users**: Lists all users in the ThoughtSpot instance
-- **list_user_groups**: Lists all user groups
-- **list_data_connections**: g., Snowflake, BigQuery) are connected.
-
-Lists configured data source connections
 - **list_metadata_tags**: Lists all tags used for classifying metadata objects
 
 
