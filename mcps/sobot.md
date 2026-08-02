@@ -36,11 +36,11 @@ Empower your AI agent to orchestrate your customer service with **Sobot** (æ™ºé½
 
 ## Available Tools (10)
 - **create_ticket**: Create a new ticket
+- **get_ticket_details**: Get ticket details
+- **list_agents**: List support agents
 - **get_agent_status**: Get agent online status
 - **get_knowledge_detail**: Get knowledge article details
 - **get_org_summary**: Get organization activity summary
-- **get_ticket_details**: Get ticket details
-- **list_agents**: List support agents
 - **list_chat_history**: List chat history
 - **list_knowledge**: List knowledge base articles
 - **list_tickets**: List customer support tickets

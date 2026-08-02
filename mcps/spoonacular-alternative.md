@@ -33,13 +33,15 @@ Connect **Spoonacular** food API to any AI agent and unlock powerful recipe sear
 - **extract_recipe**: Useful for importing recipes from blogs or recipe sites.
 
 Extract recipe from a URL
+- **get_recipe_instructions**: Get step-by-step analyzed instructions for a recipe
+- **search_grocery_products**: Search grocery food products
+- **analyze_recipe**: Analyze a recipe and get enrichment data
 - **recipes_by_ingredients**: Perfect for "what can I cook with what I have in my fridge?" scenarios. Returns recipes ranked by ingredient match.
 
 Find recipes based on available ingredients
 - **recipes_by_nutrients**: Perfect for diet-specific meal planning.
 
 Find recipes by nutritional requirements
-- **get_recipe_instructions**: Get step-by-step analyzed instructions for a recipe
 - **get_recipe_info**: Get detailed information about a specific recipe
 - **get_recipe_nutrition**: Get detailed nutrition data for a recipe
 - **get_recipe_taste**: Get taste profile for a recipe
@@ -48,11 +50,9 @@ Find recipes by nutritional requirements
 - **random_recipes**: Useful for meal inspiration. Can optionally filter by dietary tags.
 
 Get random recipe suggestions
-- **search_grocery_products**: Search grocery food products
 - **search_recipes**: Returns recipes with basic information including title, ready time, servings, and dietary badges.
 
 Search recipes with advanced filters
-- **analyze_recipe**: Analyze a recipe and get enrichment data
 
 
 ## 💬 Prompt Examples

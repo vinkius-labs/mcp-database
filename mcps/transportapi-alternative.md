@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire public transport research workf
 
 
 ## Available Tools (12)
-- **get_bus_service**: Get details of a bus service route
 - **get_bus_route_timetable**: Get the scheduled timetable for a bus route
 - **get_transport_by_postcode**: Useful when user only has a postcode, not coordinates.
 
 Find transport options by UK postcode
+- **get_bus_service**: Get details of a bus service route
 - **get_live_bus_departures**: Returns live departure times, destinations, and operators.
 
 Get real-time bus departures for a UK bus stop

@@ -35,18 +35,18 @@ Empower your AI agent to orchestrate your R&D lifecycle with **ONES**, the leadi
 
 
 ## Available Tools (10)
-- **create_task**: Create a new ONES task
 - **get_org_info**: Get organization summary
-- **list_workflows**: List project workflows
-- **update_task**: Update an existing ONES task
-- **get_project**: Get project details
 - **get_task_details**: Get task details
+- **create_task**: Create a new ONES task
 - **list_members**: List organization members
 - **list_projects**: List all ONES projects
 - **list_task_types**: g., bug, task, story).
 
 List task types
 - **list_tasks**: List tasks in a project
+- **list_workflows**: List project workflows
+- **update_task**: Update an existing ONES task
+- **get_project**: Get project details
 
 
 ## 💬 Prompt Examples

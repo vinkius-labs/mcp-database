@@ -40,10 +40,6 @@ Connect your AI agent to **Watchmode**, the most accurate streaming availability
 
 ## Available Tools (8)
 - **get_title_cast**: Get the cast and crew for a title
-- **get_title_details**: Get full details and streaming sources for a title
-- **get_title_sources**: Get all streaming sources where a title is available
-- **list_genres**: List all available genres
-- **list_releases**: List recently added or upcoming titles on streaming platforms
 - **list_sources**: ) optionally filtered by country.
 
 List all streaming services available in a region
@@ -53,6 +49,10 @@ Browse a catalog of titles with filters
 - **search_titles**: Returns matching titles with basic metadata.
 
 Search for a movie or TV show by name
+- **list_releases**: List recently added or upcoming titles on streaming platforms
+- **get_title_details**: Get full details and streaming sources for a title
+- **get_title_sources**: Get all streaming sources where a title is available
+- **list_genres**: List all available genres
 
 
 ## 💬 Prompt Examples

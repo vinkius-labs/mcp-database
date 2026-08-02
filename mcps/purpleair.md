@@ -38,27 +38,27 @@ Access the world's largest hyperlocal air quality dataset through **PurpleAir** 
 
 
 ## Available Tools (10)
-- **get_indoor_sensors**: These sensors measure air quality inside buildings, homes, and enclosed spaces. Useful for indoor air quality assessments, HVAC monitoring, and workspace health studies.
-
-Get all indoor PurpleAir sensors
-- **get_outdoor_sensors**: These are sensors measuring ambient outdoor air quality. Returns current PM2.5, temperature, humidity and other measurements for each sensor. Useful for regional air quality monitoring, wildfire smoke tracking, and urban pollution studies.
-
-Get all outdoor (outside) PurpleAir sensors
 - **get_pm25_sensors**: 5 (fine particulate matter) measurements. PM2.5 is the most important air quality indicator — particles smaller than 2.5 micrometers that can penetrate deep into lungs and bloodstream. Returns current PM2.5 concentrations along with location data. Essential for health advisories, wildfire smoke tracking, and urban pollution monitoring.
 
 Get sensors with PM2.5 measurements
 - **get_sensor_data**: Returns PM2.5, PM1.0, PM10.0 particle concentrations, temperature, humidity, pressure, VOC levels, and other measurements depending on the sensor model. Use the fields parameter to specify which measurements to return. Essential for monitoring air quality at a specific location.
 
 Get real-time data from a specific PurpleAir sensor
-- **get_sensor_history**: Returns time-series data for the requested fields (PM2.5, temperature, humidity, etc.) at regular intervals. Use start_timestamp and end_timestamp (Unix timestamps) to define the time range. The average parameter controls data aggregation (e.g. 60 for 1-minute averages, 3600 for hourly). Essential for analyzing air quality trends, identifying pollution events, and compliance reporting.
-
-Get historical air quality data from a PurpleAir sensor
 - **get_sensor_history_csv**: Same functionality as get_sensor_history but returns data as CSV instead of JSON. Use for offline analysis, charting, or compliance reporting. Requires start_timestamp and end_timestamp parameters.
 
 Get historical sensor data in CSV format for analysis
 - **get_sensors_by_bounding_box**: Provide the northwest (nwlat, nwlng) and southeast (selat, selng) corner coordinates. Perfect for mapping air quality across a city, neighborhood, or region. Returns all sensors in the area with current readings. Use with fields parameter to customize returned data.
 
 Get all sensors within a geographic bounding box
+- **get_indoor_sensors**: These sensors measure air quality inside buildings, homes, and enclosed spaces. Useful for indoor air quality assessments, HVAC monitoring, and workspace health studies.
+
+Get all indoor PurpleAir sensors
+- **get_outdoor_sensors**: These are sensors measuring ambient outdoor air quality. Returns current PM2.5, temperature, humidity and other measurements for each sensor. Useful for regional air quality monitoring, wildfire smoke tracking, and urban pollution studies.
+
+Get all outdoor (outside) PurpleAir sensors
+- **get_sensor_history**: Returns time-series data for the requested fields (PM2.5, temperature, humidity, etc.) at regular intervals. Use start_timestamp and end_timestamp (Unix timestamps) to define the time range. The average parameter controls data aggregation (e.g. 60 for 1-minute averages, 3600 for hourly). Essential for analyzing air quality trends, identifying pollution events, and compliance reporting.
+
+Get historical air quality data from a PurpleAir sensor
 - **get_sensors_by_index**: Provide comma-separated sensor indices in the show_only parameter. Useful when you already know the sensor indices from a previous query and want to get fresh readings without fetching all sensors.
 
 Get data for specific sensor(s) by their indices

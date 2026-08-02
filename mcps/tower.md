@@ -39,11 +39,11 @@ Empower your AI agent to orchestrate your team's productivity with **Tower**, th
 - **get_project**: Get project details
 - **get_task_details**: Get task details
 - **list_discussions**: List project discussions
-- **list_tasks**: List tasks in a project
 - **list_doc_folders**: List document folders
-- **list_members**: List team members
+- **list_tasks**: List tasks in a project
 - **list_projects**: List all Tower projects
 - **list_teams**: List available teams
+- **list_members**: List team members
 - **update_task**: Update an existing Tower task
 
 

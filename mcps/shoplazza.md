@@ -35,9 +35,6 @@ Empower your AI agent to orchestrate your global retail business with **Shoplazz
 
 
 ## Available Tools (10)
-- **list_collections**: List product collections
-- **list_customers**: List shop customers
-- **list_orders**: List shop orders
 - **list_products**: List shop products
 - **list_webhooks**: List store webhooks
 - **get_customer**: Get customer details
@@ -45,6 +42,9 @@ Empower your AI agent to orchestrate your global retail business with **Shoplazz
 - **get_order**: Get order details
 - **get_product**: Get product details
 - **get_shop_info**: Get shop information
+- **list_collections**: List product collections
+- **list_customers**: List shop customers
+- **list_orders**: List shop orders
 
 
 ## 💬 Prompt Examples

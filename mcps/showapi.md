@@ -35,6 +35,7 @@ Empower your AI agent to orchestrate your data retrieval with **ShowAPI** (æ˜“æº
 
 
 ## Available Tools (10)
+- **get_weather**: Get weather information for an area
 - **get_currency_rates**: Get current foreign exchange rates
 - **get_english_dictionary**: Lookup English word definitions
 - **get_history_today**: Get historical events for today
@@ -43,7 +44,6 @@ Empower your AI agent to orchestrate your data retrieval with **ShowAPI** (æ˜“æº
 - **get_ip_lookup**: Lookup IP address geographical information
 - **get_jokes**: Get funny jokes and short stories
 - **get_stock_info**: Get stock market information
-- **get_weather**: Get weather information for an area
 - **translate_text**: Translate text between languages
 
 
