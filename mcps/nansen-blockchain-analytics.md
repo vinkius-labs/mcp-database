@@ -37,6 +37,12 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 - **points_leaderboard**: Paginated Nansen points leaderboard
 - **portfolio_defi_holdings**: Track DeFi positions across protocols
 - **prediction_address_summary**: Win rate, PnL, and wallet age in prediction markets
+- **search_general**: Search for tokens and entities by name, symbol, or contract address
+- **tgm_pnl_leaderboard**: Rank traders by profit for a specific token
+- **agent_expert**: Deep multi-step analysis and synthesis
+- **agent_fast**: Low-latency streamed answers for simple research questions
+- **perp_leaderboard**: Most profitable Hyperliquid traders
+- **points_address**: Tier lookup for a wallet on the Nansen points leaderboard
 - **prediction_categories**: Stats for market categories (Politics, Crypto, etc.)
 - **prediction_event_screener**: Browse groups of related prediction markets
 - **prediction_market_screener**: Browse and filter all prediction markets
@@ -59,7 +65,6 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 - **profiler_premium_labels**: All labels including Smart Money
 - **profiler_related_wallets**: Wallets related by on-chain behavior
 - **profiler_transactions**: Recent blockchain transactions for an address
-- **search_general**: Search for tokens and entities by name, symbol, or contract address
 - **smart_money_dcas**: DCA strategies on Jupiter (Solana)
 - **smart_money_dex_trades**: Real-time DEX trading activity (last 24h)
 - **smart_money_historical_holdings**: Daily snapshots of smart money holdings (Beta)
@@ -72,16 +77,11 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 - **tgm_holders**: Top holders with balance change tracking
 - **tgm_indicators**: Risk and Reward scores for a token
 - **tgm_jup_dca**: Jupiter DCA orders for a token (Solana)
-- **tgm_pnl_leaderboard**: Rank traders by profit for a specific token
 - **tgm_token_information**: Metadata, market metrics, and spot trading stats
 - **tgm_token_ohlcv**: Unified price/volume candles (1m to 1M timeframes)
 - **tgm_transfers**: Top token transfers (ERC-20)
 - **tgm_who_bought_sold**: Summary of net buyers/sellers
 - **token_screener**: Discover trending tokens across chains
-- **agent_expert**: Deep multi-step analysis and synthesis
-- **agent_fast**: Low-latency streamed answers for simple research questions
-- **perp_leaderboard**: Most profitable Hyperliquid traders
-- **points_address**: Tier lookup for a wallet on the Nansen points leaderboard
 
 
 ## 💬 Prompt Examples

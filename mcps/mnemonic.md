@@ -36,12 +36,12 @@ Connect your **Mnemonic** account to your AI agent and unlock deep insights into
 
 ## Available Tools (12)
 - **get_collection_details**: Get NFT collection info
-- **get_collection_distribution**: Get ownership distribution
 - **get_collection_stats**: Get collection statistics
 - **get_contract_metadata**: Get smart contract metadata
 - **get_nft_details**: Get detailed NFT metadata
 - **get_nft_owners**: Get owners of an NFT
 - **get_nft_prices**: Get NFT market pricing data
+- **get_collection_distribution**: Get ownership distribution
 - **get_wallet_history**: Get wallet transaction history
 - **get_wallet_nfts**: Get all NFTs owned by a wallet
 - **list_collection_tokens**: List tokens in a collection

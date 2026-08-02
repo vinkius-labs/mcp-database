@@ -47,9 +47,6 @@ No more manual weather checking or complex satellite data processing. Your AI ac
 - **get_crop_health_index**: CHI provides a single metric for overall crop health, making it easier to track field conditions over time and compare across fields. Essential for quick field health assessment, prioritizing scouting missions, and communicating crop status to stakeholders. AI agents should use this when users ask "what is the overall crop health score for my field", "get a quick health assessment", or need a simplified crop condition metric. Date format: YYYY-MM-DD.
 
 Get Crop Health Index (CHI) for comprehensive crop condition assessment
-- **get_current_weather**: Essential for daily farming decisions, spray application timing, harvest planning, and frost protection. AI agents should use this when users ask "what is the weather like at my farm right now", "should I spray pesticides today", or need current weather data for agricultural operations.
-
-Get current weather conditions for agricultural decision making
 - **get_evi**: EVI is more sensitive than NDVI in high-biomass regions and less affected by atmospheric conditions and soil background. Essential for monitoring dense canopies, tropical crops, and areas with high vegetation cover. AI agents should reference this when users ask "what is the EVI for my dense crop area", "monitor high-biomass vegetation", or need enhanced vegetation index for areas where NDVI saturates. Date format: YYYY-MM-DD.
 
 Get EVI (Enhanced Vegetation Index) for high-biomass crop monitoring
@@ -80,6 +77,9 @@ Get multi-day weather forecast for agricultural planning
 - **get_weather_history**: Essential for comparing current conditions with historical patterns, analyzing crop performance under past weather conditions, and validating crop models. AI agents should use this when users ask "what was the weather like on this date last year", "show me historical weather for my field", or need past weather data for agricultural analysis. Date format: Unix timestamp (seconds since 1970).
 
 Get historical weather data for crop analysis and trend assessment
+- **get_current_weather**: Essential for daily farming decisions, spray application timing, harvest planning, and frost protection. AI agents should use this when users ask "what is the weather like at my farm right now", "should I spray pesticides today", or need current weather data for agricultural operations.
+
+Get current weather conditions for agricultural decision making
 
 
 ## 💬 Prompt Examples

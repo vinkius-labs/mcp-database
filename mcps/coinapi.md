@@ -35,12 +35,12 @@ Equip your AI agent with institutional-grade cryptocurrency market intelligence 
 
 
 ## Available Tools (9)
+- **get_exchange_rates**: Get exchange rates
 - **list_assets**: List all assets
 - **list_exchanges**: List all exchanges
 - **get_ohlcv**: Get OHLCV data
 - **get_latest_orderbooks**: Get latest orderbooks
 - **get_latest_quotes**: Get latest quotes
-- **get_exchange_rates**: Get exchange rates
 - **get_specific_rate**: Get specific exchange rate
 - **list_symbols**: Can be optionally filtered.
 

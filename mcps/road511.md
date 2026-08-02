@@ -41,9 +41,6 @@ No more navigating multiple state 511 websites or manually checking traffic came
 
 
 ## Available Tools (8)
-- **get_clearance**: Returns average resolution times by incident type, severity, jurisdiction, and time period. Essential for operational efficiency analysis, resource planning, performance benchmarking, and understanding how quickly traffic incidents are resolved in different regions. AI agents should use this when users ask "what is the median resolution time for incidents in California", "how long do major incidents take to clear in Texas", or need performance metrics for traffic incident management analysis.
-
-Get incident resolution time metrics (P50/P95) for operational analysis
 - **get_events_geojson**: Each feature contains event properties (type, severity, jurisdiction, road, times, status, descriptions) in the properties object and point/line geometry in the geometry object. Supports all the same filtering parameters as get_events. Essential for mapping applications, spatial analysis, GIS integration, and visualization dashboards. AI agents should use this when users need to plot traffic events on a map, perform spatial queries, or integrate with GeoJSON-based mapping tools.
 
 Get traffic events in GeoJSON format for mapping and spatial analysis
@@ -65,6 +62,9 @@ Get summary statistics and data source health across all jurisdictions
 - **get_trends**: Returns incident counts over time, severity distributions, trend directions (increasing, decreasing, stable), peak incident times, and comparative analysis between regions. Essential for traffic pattern analysis, operational planning, resource allocation, and understanding temporal traffic safety trends. AI agents should use this when users ask "are incidents increasing in Texas this week", "show me traffic incident trends for the past month", or need analytical data for traffic safety reporting.
 
 Get traffic incident trends and time-series analytics
+- **get_clearance**: Returns average resolution times by incident type, severity, jurisdiction, and time period. Essential for operational efficiency analysis, resource planning, performance benchmarking, and understanding how quickly traffic incidents are resolved in different regions. AI agents should use this when users ask "what is the median resolution time for incidents in California", "how long do major incidents take to clear in Texas", or need performance metrics for traffic incident management analysis.
+
+Get incident resolution time metrics (P50/P95) for operational analysis
 
 
 ## 💬 Prompt Examples

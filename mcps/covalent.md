@@ -33,9 +33,6 @@ Integrate **Covalent**, the unified API for blockchain data, directly into your 
 
 
 ## Available Tools (10)
-- **get_token_balances**: Resolves contract addresses, ticker symbols, token decimals, and current balances (formatted and raw) for the specified wallet and chain.
-
-Get token balances for a wallet address on a specific chain
 - **get_block_details**: Resolves block hashes, parent hashes, timestamps, and transaction counts for the specified chain.
 
 Get details for a specific block height
@@ -63,6 +60,9 @@ Get transaction history for a wallet address
 - **list_supported_chains**: Resolves chain IDs, human-readable names, and supported features (NFTs, Dex, etc.) for each blockchain.
 
 List all blockchains supported by Covalent
+- **get_token_balances**: Resolves contract addresses, ticker symbols, token decimals, and current balances (formatted and raw) for the specified wallet and chain.
+
+Get token balances for a wallet address on a specific chain
 
 
 ## 💬 Prompt Examples

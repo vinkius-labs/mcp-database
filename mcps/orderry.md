@@ -28,9 +28,8 @@ Manage your repair shop, orders, and inventory with Orderry and AI agents.
 
 
 ## Available Tools (12)
+- **create_lead**: Record a new sales lead
 - **create_order**: Create a new work order
-- **create_client**: Add a new individual client
-- **get_me**: Get account profile information
 - **get_order_details**: Get details of a specific order
 - **list_employees**: List staff members
 - **list_leads**: List sales leads
@@ -39,7 +38,8 @@ Manage your repair shop, orders, and inventory with Orderry and AI agents.
 - **list_clients**: List individual clients (people)
 - **list_inventory_stock**: List products in stock
 - **list_warehouses**: List facility warehouses
-- **create_lead**: Record a new sales lead
+- **create_client**: Add a new individual client
+- **get_me**: Get account profile information
 
 
 ## 💬 Prompt Examples

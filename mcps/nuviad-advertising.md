@@ -36,14 +36,14 @@ Connect your **Nuviad** mobile advertising account to your AI agent and take con
 
 
 ## Available Tools (10)
+- **list_geo_locations**: List available geographic locations
+- **get_report_content**: Retrieve generated report data
+- **get_reports_summary**: Get campaign performance summary
 - **list_campaigns**: List all mobile ad campaigns
 - **list_micro_bids**: List campaign micro-bids
 - **list_micro_margins**: List campaign micro-margins
 - **list_targeting_lists**: List all audience and targeting lists
 - **request_campaign_report**: Request a detailed campaign report
-- **get_reports_summary**: Get campaign performance summary
-- **list_geo_locations**: List available geographic locations
-- **get_report_content**: Retrieve generated report data
 - **get_report_status**: Check report request status
 - **list_creatives**: List all ad creatives
 

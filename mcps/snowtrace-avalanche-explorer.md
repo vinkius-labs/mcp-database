@@ -35,6 +35,7 @@ Connect to the **Snowtrace** explorer and bring real-time Avalanche blockchain d
 
 ## Available Tools (21)
 - **get_avax_balance_multi**: Get AVAX Balance for Multiple Addresses
+- **get_mined_blocks**: Get Blocks Mined by Address
 - **get_avax_balance**: Get AVAX Balance for a Single Address
 - **check_verify_status**: Check Verification Status
 - **get_avax_last_price**: Get AVAX Last Price
@@ -47,7 +48,6 @@ Connect to the **Snowtrace** explorer and bring real-time Avalanche blockchain d
 - **get_contract_source_code**: Get Contract Source Code
 - **check_contract_execution_status**: Check Contract Execution Status
 - **check_transaction_receipt_status**: Check Transaction Receipt Status
-- **get_mined_blocks**: Get Blocks Mined by Address
 - **get_token_balance**: Get ERC-20 Token Balance for Address
 - **get_erc721_transfers**: Get ERC-721 (NFT) Token Transfer Events
 - **get_token_total_supply**: Get ERC-20 Token Total Supply

@@ -28,13 +28,13 @@ Manage candidates, jobs, and client companies with Recruit CRM and AI agents.
 
 
 ## Available Tools (11)
+- **create_candidate**: Add a new candidate
+- **create_job**: Create a new job posting
 - **get_candidate_details**: Get details of a specific candidate
 - **get_company_details**: Get details of a specific company
 - **get_contact_details**: Get details of a specific contact
 - **get_job_details**: Get details of a specific job
 - **get_me**: Get account information
-- **create_candidate**: Add a new candidate
-- **create_job**: Create a new job posting
 - **list_candidates**: List recruitment candidates
 - **list_companies**: List client companies
 - **list_contacts**: List client contacts

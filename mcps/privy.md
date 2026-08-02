@@ -36,7 +36,6 @@ Connect your **Privy** application to any AI agent to streamline user onboarding
 ## Available Tools (12)
 - **batch_create_wallets**: Batch create wallets
 - **create_user**: Create a new user object with linked accounts
-- **create_wallet**: Create a new wallet
 - **delete_user**: Delete a user
 - **get_transaction_by_external_id**: Get a transaction by external ID
 - **get_transaction**: Get a transaction
@@ -45,6 +44,7 @@ Connect your **Privy** application to any AI agent to streamline user onboarding
 - **get_wallet**: Get wallet details
 - **search_users**: Search for users
 - **update_wallet**: Update a wallet
+- **create_wallet**: Create a new wallet
 - **wallet_rpc**: Perform a wallet RPC action
 
 
