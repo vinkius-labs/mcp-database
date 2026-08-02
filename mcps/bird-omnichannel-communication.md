@@ -36,16 +36,16 @@ Connect your **Bird (formerly MessageBird)** account to any AI agent and take fu
 
 
 ## Available Tools (10)
+- **get_message_details**: Get details for a specific SMS
+- **list_contacts**: List CRM contacts
+- **list_conversations**: List active omnichannel conversations
+- **send_omnichannel_message**: Send a message via WhatsApp or Telegram
+- **send_sms**: Send an SMS message
 - **create_contact**: Create a new CRM contact
 - **delete_contact**: Delete a CRM contact
 - **get_balance**: Get account balance
 - **get_contact_details**: Get specific contact details
-- **get_message_details**: Get details for a specific SMS
-- **list_contacts**: List CRM contacts
-- **list_conversations**: List active omnichannel conversations
 - **list_messages**: List sent SMS messages
-- **send_sms**: Send an SMS message
-- **send_omnichannel_message**: Send a message via WhatsApp or Telegram
 
 
 ## 💬 Prompt Examples

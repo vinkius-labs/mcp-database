@@ -35,14 +35,14 @@ Connect your **Marqo** instance to any AI agent and take full control of your se
 
 
 ## Available Tools (6)
-- **list_indexes**: Crucial before writing queries hitting arbitrary collections.
-
-List all Marqo vector indexes
 - **get_index_stats**: Get configuration and stats for an index
 - **tensor_search**: Perform natural language tensor search on Marqo
 - **add_documents**: Write new documents into Marqo
 - **delete_documents**: Delete specific documents from Marqo by targeting their IDs
 - **create_index**: Create an explicitly bounded new vector index
+- **list_indexes**: Crucial before writing queries hitting arbitrary collections.
+
+List all Marqo vector indexes
 
 
 ## 💬 Prompt Examples

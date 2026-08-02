@@ -28,10 +28,6 @@ Connect your **Cisco Meraki** dashboard to any AI agent and take full control of
 
 
 ## Available Tools (10)
-- **get_device**: Get details for a specific device
-- **get_device_statuses**: Get statuses for all devices in an organization
-- **get_organization**: Get details for a specific organization
-- **get_appliance_settings**: Get appliance settings for a network
 - **list_clients**: ) for a specific network.
 
 List clients on a network
@@ -40,6 +36,10 @@ List clients on a network
 - **list_organizations**: List all organizations
 - **list_wireless_ssids**: List SSIDs for a wireless network
 - **search_organizations**: Search organizations by name
+- **get_device**: Get details for a specific device
+- **get_device_statuses**: Get statuses for all devices in an organization
+- **get_organization**: Get details for a specific organization
+- **get_appliance_settings**: Get appliance settings for a network
 
 
 ## 💬 Prompt Examples

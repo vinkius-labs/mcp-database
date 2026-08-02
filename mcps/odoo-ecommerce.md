@@ -26,6 +26,12 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 
 
 ## Available Tools (6)
+- **odoo_list_shop_products**: template records where sale_ok=true. Returns product name, sale price, category, type, SKU, stock qty, and website publish status. Use when the user asks about the product catalog or shop inventory.
+
+List products available on the Odoo eCommerce shop with prices, stock, and publish status
+- **odoo_search_shop_products**: template by name where sale_ok=true. Returns matching products with price, category, type, SKU, stock, and publish status. Use to find a specific product in the online shop.
+
+Search the Odoo eCommerce product catalog by name with prices, stock, and category
 - **odoo_list_product_categories**: category records with full hierarchy path. Use when the user asks about product organization or needs category IDs for product creation.
 
 List the product category tree used to organize products in the Odoo shop and inventory
@@ -35,15 +41,9 @@ List eCommerce customers who have made purchases, with contact details and locat
 - **odoo_list_ecommerce_orders**: order records where website_id is set — online store orders only. Returns order number, customer, total, status, website, and date. Use when the user asks about online sales or eCommerce revenue.
 
 List orders placed through the Odoo Website storefront with customer, amount, and status
-- **odoo_list_shop_products**: template records where sale_ok=true. Returns product name, sale price, category, type, SKU, stock qty, and website publish status. Use when the user asks about the product catalog or shop inventory.
-
-List products available on the Odoo eCommerce shop with prices, stock, and publish status
 - **odoo_list_websites**: Returns website name, domain, and creation date. Use when the user asks about available storefronts.
 
 List all Odoo websites configured — useful for multi-website or multi-brand setups
-- **odoo_search_shop_products**: template by name where sale_ok=true. Returns matching products with price, category, type, SKU, stock, and publish status. Use to find a specific product in the online shop.
-
-Search the Odoo eCommerce product catalog by name with prices, stock, and category
 
 
 ## 💬 Prompt Examples

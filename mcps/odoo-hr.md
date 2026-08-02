@@ -26,6 +26,9 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 
 
 ## Available Tools (9)
+- **odoo_list_jobs**: job records — the defined job positions in the organization. Returns job title, department, number of open recruitments, and recruitment state. Use when the user asks about open positions, hiring pipeline, or workforce planning.
+
+List open job positions and recruitment status in Odoo HR with department and vacancy count
 - **odoo_create_leave**: leave record in "draft" state. Requires the employee ID (from odoo_search_employees), leave type ID (from odoo_list_leave_types), and date range in format "YYYY-MM-DD HH:MM:SS". The request goes through the standard approval workflow. Use when the user wants to request time off for an employee.
 
 Submit a leave request for an employee with specific leave type, start date, and end date
@@ -41,9 +44,6 @@ List all employees in the Odoo HR directory with departments, job titles, and co
 - **odoo_list_expenses**: expense records ordered by date. Returns expense description, employee, state (draft/reported/approved/done/refused), total amount, and date. Use when the user asks about pending expense reports, reimbursement requests, or wants to review recent employee expenses.
 
 List employee expense reports in Odoo with amounts, approval status, and submission dates
-- **odoo_list_jobs**: job records — the defined job positions in the organization. Returns job title, department, number of open recruitments, and recruitment state. Use when the user asks about open positions, hiring pipeline, or workforce planning.
-
-List open job positions and recruitment status in Odoo HR with department and vacancy count
 - **odoo_list_leave_types**: leave.type records — the categories of leave employees can request. Returns type name and configuration. Use to find the correct leave type ID before creating a leave request, or when the user asks what kinds of time off are available.
 
 List available leave types (Paid Time Off, Sick Leave, Unpaid, etc.) configured in Odoo HR

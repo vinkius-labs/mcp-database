@@ -35,9 +35,6 @@ Connect to high-performance network diagnostic tools through your AI agent and p
 
 
 ## Available Tools (10)
-- **dns_lookup**: ) for a specific domain.
-
-Forward DNS lookup
 - **geoip_lookup**: IP geolocation lookup
 - **get_http_headers**: Get HTTP response headers
 - **list_subdomains**: Search for subdomains
@@ -47,6 +44,9 @@ Forward DNS lookup
 - **reverse_dns**: Reverse DNS lookup
 - **traceroute**: Perform a network traceroute
 - **whois_lookup**: WHOIS lookup
+- **dns_lookup**: ) for a specific domain.
+
+Forward DNS lookup
 
 
 ## 💬 Prompt Examples

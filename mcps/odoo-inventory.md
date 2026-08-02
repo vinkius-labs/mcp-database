@@ -26,6 +26,9 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 
 
 ## Available Tools (9)
+- **odoo_search_inventory_products**: product records (variants) by name. Returns product name, internal reference (SKU), quantity on hand (qty_available), forecasted quantity (virtual_available), incoming qty, outgoing qty, category, and product type. Use when the user wants to check stock levels, find products with low inventory, or verify availability before fulfillment.
+
+Search products in Odoo Inventory with real-time stock quantities, including available, incoming, and outgoing
 - **odoo_product_stock**: quant records for the given product ID, showing quantity and reserved quantity at each internal location. Use when the user needs to know WHERE stock is located, not just the total — e.g., "how much of Product X is in Warehouse A vs Warehouse B?"
 
 Get detailed stock levels for a specific product broken down by warehouse location
@@ -50,9 +53,6 @@ List all configured warehouses in Odoo with their short codes and addresses
 - **odoo_search_lots**: lot records by name/number. Returns lot name, associated product, and total quantity in that lot. Use for traceability — when the user needs to find which products belong to a specific batch, or trace a serial number back to its origin.
 
 Search for lot numbers or serial numbers in Odoo to trace product batches
-- **odoo_search_inventory_products**: product records (variants) by name. Returns product name, internal reference (SKU), quantity on hand (qty_available), forecasted quantity (virtual_available), incoming qty, outgoing qty, category, and product type. Use when the user wants to check stock levels, find products with low inventory, or verify availability before fulfillment.
-
-Search products in Odoo Inventory with real-time stock quantities, including available, incoming, and outgoing
 
 
 ## 💬 Prompt Examples

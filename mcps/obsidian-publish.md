@@ -35,7 +35,7 @@ Connect your **Obsidian Publish** environment to your AI agent and construct an 
 ## Available Tools (5)
 - **list_files**: List all explicitly published raw file paths across the Obsidian workspace
 - **get_file**: Retrieve exact textual file content and binary assets
-- **site_info**: Identify global configuration and styling mapping the site
+- **site_info**: Identify globalThis configuration and styling mapping the site
 - **list_navigation**: Visualize structurally formatted Markdown navigation trees
 - **get_metadata**: Extract internal creation hashes mapping a specific Markdown page
 

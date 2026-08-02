@@ -7,45 +7,53 @@
 
 **Category:** [erp-operations](../categories/erp-operations.md)
 
-Manage your accounting via Moneybird — list invoices, track contacts, and oversee estimates directly from your AI agent.
+Handle Dutch and European accounting with automated invoicing, bank reconciliation, and tax-ready financial reports.
 
 ## Description
-Connect your **Moneybird** administration to your AI agent and take full control of your business accounting and invoicing through natural conversation.
+Connect your **Moneybird** administration to any AI agent and manage Dutch accounting through natural conversation.
 
 ### What you can do
 
-- **Invoicing & Sales** — List all sales invoices and get detailed info on specific ones, including amounts and due dates.
-- **Purchase Tracking** — Access your incoming purchase invoices from suppliers to keep track of expenses.
-- **Financial Mutations** — Monitor bank mutations and all financial transactions within your administration.
-- **Recurring Billing** — List and manage your recurring sales invoice templates for automated billing.
-- **Ledger & Bookkeeping** — View your chart of accounts (ledger accounts) and defined accounting workflows.
-- **Contact Management** — View and create customer or supplier contacts to keep your CRM updated.
-- **Estimates Oversight** — Access and list your business estimates to track potential sales.
+- **Sales Invoices** — Create, list, and send invoices to clients
+- **Contacts** — Browse customers and suppliers
+- **Products** — List product and service catalog
+- **Financial Mutations** — Track bank transactions for reconciliation
+- **Purchase Invoices** — List supplier invoices received
+- **Recurring Invoices** — View automated recurring templates
+- **Receipts** — List uploaded expense receipts
+- **Ledger Accounts** — Browse accounting categories
+- **Tax Rates** — List configured VAT/tax rates
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Moneybird Access Token and Administration ID
-3. Start managing your finances from Claude, Cursor, or any MCP client
+2. Enter your Moneybird API Key and Administration ID
+3. Start managing your books from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Entrepreneurs** — quickly check for overdue invoices or bank mutations without opening the Moneybird app.
-- **Accountants** — automate the retrieval of transaction, invoice, and ledger lists for reporting.
-- **Sales Teams** — verify estimate statuses and customer information during the sales cycle.
+- **Freelancers** — automate invoice creation and sending
+- **Accountants** — reconcile transactions and manage ledgers
+- **Small Businesses** — track expenses and VAT
 
 
-## Available Tools (10)
-- **create_contact**: Create a new contact in Moneybird
-- **list_contacts**: List Moneybird contacts
-- **list_estimates**: List business estimates
-- **list_financial_mutations**: List financial transactions
-- **list_invoices**: List sales invoices
-- **list_ledger_accounts**: List ledger accounts
-- **list_purchase_invoices**: List purchase invoices
-- **list_recurring_invoices**: List recurring invoices
-- **list_workflows**: List accounting workflows
-- **get_invoice**: Get specific invoice details
+## Available Tools (12)
+- **list_purchase_invoices**: List received purchase invoices
+- **list_recurring_invoices**: List recurring invoice templates
+- **check_api_health**: Verify Moneybird API connectivity
+- **list_crm_contacts**: List customers and suppliers
+- **create_sales_invoice**: Requires a contact ID and line items.
+
+Create a new draft invoice
+- **list_sales_invoices**: Can be filtered by status (e.g., draft, open, paid).
+
+List sales invoices
+- **list_ledger_accounts**: List accounting ledger categories
+- **list_financial_mutations**: List bank transactions
+- **list_catalog_products**: List products and services
+- **list_expense_receipts**: List uploaded receipts
+- **list_tax_rates**: List configured tax/VAT rates
+- **send_sales_invoice**: Send an invoice to the customer
 
 
 ## 💬 Prompt Examples
@@ -53,38 +61,38 @@ Connect your **Moneybird** administration to your AI agent and take full control
 Here are some examples of how you can interact with the **Moneybird** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my sales invoices from the last month."
+> "List recent sales invoices and their statuses."
 
 **🤖 AI Agent:**
-> I've fetched your sales invoices. You have 12 invoices for the last month, including 'INV-2024-001' (€1,200.00) and 'INV-2024-002' (€850.00). 3 invoices are still marked as 'unpaid'. Would you like to see the details for the unpaid ones?
+> Sales Invoices: 5. 1) INV-2024-045 — Acme Corp, €1,200.00 (Status: Paid ✅). 2) INV-2024-046 — Beta Ltd, €450.00 (Status: Open, Due: Apr 30). 3) INV-2024-047 — Gamma Inc, €2,800.00 (Status: Draft). 4) INV-2024-048 — Delta BV, €89.00 (Status: Paid ✅). 5) INV-2024-049 — Epsilon, €340.00 (Status: Late ⚠️, Overdue 5 days).
 
 ---
 
 **👤 You:**
-> "Check my recent bank mutations."
+> "Create a draft invoice for Beta Ltd with 2 line items."
 
 **🤖 AI Agent:**
-> Retrieving financial mutations... I found 5 recent movements, including a payout from Mollie (+€1,500.00) and an automated rent payment (-€900.00). Shall I show you the remaining 3 transactions?
+> Invoice created! ✅ ID: 890123456. Number: INV-2024-050. Contact: Beta Ltd. Items: 1) 'Consulting Hours' (10x €75.00 = €750.00). 2) 'Travel Expenses' (1x €120.00). Subtotal: €870.00. VAT 21%: €182.70. Total: €1,052.70. Status: Draft. Ready to send?
 
 ---
 
 **👤 You:**
-> "List my purchase invoices from suppliers."
+> "Show unreconciled bank transactions."
 
 **🤖 AI Agent:**
-> I've retrieved your purchase invoices. You have 8 incoming invoices this month, including 'Adobe Subscription' ($20.99) and 'AWS Cloud Services' ($145.50). 2 are currently awaiting payment. Shall I provide the due dates for those?
+> Financial Mutations (Unreconciled): 3. 1) +€1,200.00 from Acme Corp (Apr 20, Matches: INV-2024-045). 2) -€45.00 Office Supplies (Apr 18, No match ⚠️). 3) +€89.00 from Delta BV (Apr 15, Matches: INV-2024-048). Want to auto-reconcile the matched items?
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Moneybird Administration ID?**
-Log in to Moneybird via your browser. The ID is the numeric string in the URL immediately following 'moneybird.com/' (e.g., in moneybird.com/123456789/..., the ID is 123456789).
+**Q: Can I create and send invoices?**
+Yes. Create draft invoices with contact ID and line items, then send them directly to the customer via the API.
 
-**Q: Can I see my bank transactions through this server?**
-Yes! Use the `list_financial_mutations` tool to retrieve all bank mutations and financial movements recorded in your Moneybird administration.
+**Q: How does Moneybird authentication work?**
+Moneybird requires a Bearer **API Key** and an **Administration ID** against `moneybird.com/api/v2/{administrationId}/`.
 
-**Q: Does this support purchase invoices (expenses)?**
-Yes. The `list_purchase_invoices` tool allows you to see all incoming invoices from your suppliers and track your business expenses.
+**Q: Can I list bank transactions?**
+Yes. Financial mutations (bank transactions) can be listed for reconciliation purposes.
 
 
 ## Installation & Usage

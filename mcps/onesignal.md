@@ -35,8 +35,6 @@ Connect your **OneSignal** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **cancel_notification**: Cancel a scheduled notification
-- **create_notification**: Send a OneSignal notification
 - **delete_player**: Delete a registered device
 - **get_app**: Requires User Auth Key.
 
@@ -44,11 +42,13 @@ Get details for a specific OneSignal app
 - **get_notification**: Get specific notification status
 - **get_outcomes**: Get outcome data for the app
 - **get_player**: Get specific player details
+- **list_players**: List registered devices (players)
+- **create_notification**: Send a OneSignal notification
+- **cancel_notification**: Cancel a scheduled notification
 - **list_apps**: Requires User Auth Key.
 
 List all OneSignal apps
 - **list_notifications**: List notifications sent for the app
-- **list_players**: List registered devices (players)
 
 
 ## 💬 Prompt Examples
