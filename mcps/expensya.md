@@ -37,10 +37,8 @@ No more manual entry of every coffee receipt. Your AI acts as your dedicated fin
 
 
 ## Available Tools (12)
+- **export_expense_data**: Export expenses to a specific format
 - **get_authenticated_user_profile**: Get current user profile
-- **list_expense_categories**: g., Meals, Travel).
-
-List active expense categories
 - **list_supported_currencies**: List all supported currencies
 - **list_expenses**: Supports filtering by date, user, and status.
 
@@ -56,7 +54,9 @@ List defined payment methods
 - **create_new_expense**: Requires amount, currency, and category.
 
 Add a new expense record
-- **export_expense_data**: Export expenses to a specific format
+- **list_expense_categories**: g., Meals, Travel).
+
+List active expense categories
 
 
 ## 💬 Prompt Examples

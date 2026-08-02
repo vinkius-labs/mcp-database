@@ -37,7 +37,7 @@ No more manual searching through web interfaces to find the perfect GIF. Your AI
 
 ## Available Tools (10)
 - **get_random_sticker**: Get a random sticker
-- **search_channels**: Search for Giphy channels
+- **get_random_gif**: Get a random GIF
 - **search_gifs**: Supports limit, rating, and language.
 
 Search for GIFs
@@ -46,8 +46,8 @@ Search for GIFs
 - **translate_text_to_sticker**: Translate text to a sticker
 - **get_trending_gifs**: List trending GIFs
 - **get_trending_stickers**: List trending stickers
+- **search_channels**: Search for Giphy channels
 - **get_gif_details**: Get a specific GIF by ID
-- **get_random_gif**: Get a random GIF
 
 
 ## 💬 Prompt Examples

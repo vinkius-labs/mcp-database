@@ -36,11 +36,11 @@ Connect your **Geekflare** account to any AI agent and simplify how you monitor 
 
 
 ## Available Tools (7)
+- **take_website_screenshot**: Capture a website screenshot
 - **check_broken_links**: Identify broken links on a page
 - **get_dns_records**: Retrieve DNS records
 - **run_lighthouse_audit**: Run Lighthouse SEO/Performance audit
 - **measure_load_time**: Measure page speed and TTFB
-- **take_website_screenshot**: Capture a website screenshot
 - **scan_ssl_tls_cert**: Scan SSL/TLS certificate
 - **get_whois_data**: Retrieve Whois information
 

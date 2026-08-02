@@ -34,6 +34,9 @@ Connect your **Kissflow** account to any AI agent and manage workflows through n
 
 
 ## Available Tools (9)
+- **list_processes**: Processes are used to manage multi-step business logic.
+
+List all workflow processes
 - **get_user_details**: Essential for reviewing detailed profile information.
 
 Get details for a specific user
@@ -55,9 +58,6 @@ List user groups
 - **list_process_items**: Useful for tracking the progress of individual flow requests.
 
 List items within a process
-- **list_processes**: Processes are used to manage multi-step business logic.
-
-List all workflow processes
 - **list_users**: Use this to identify user IDs and email addresses.
 
 List all Kissflow users

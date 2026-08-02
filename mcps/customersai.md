@@ -36,12 +36,12 @@ No more manual scrubbing through identified visitor logs. Your AI acts as your d
 
 
 ## Available Tools (8)
+- **send_rich_message**: Send a structured JSON message
 - **add_tag_to_contact**: Add a tag to a contact
 - **get_contact**: Get contact profile details
 - **list_xray_leads**: List identified website visitors
 - **remove_tag_from_contact**: Remove a tag from a contact
 - **search_contacts**: Search for contacts in Customers.ai
-- **send_rich_message**: Send a structured JSON message
 - **send_text_message**: Send a text message to a contact
 - **update_contact_attributes**: Update attributes for a contact
 

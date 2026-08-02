@@ -37,15 +37,15 @@ No more manual status updates or jumping between shared inboxes. Your AI acts as
 
 
 ## Available Tools (9)
+- **create_gmelius_card**: Add a new card to a board
 - **get_gmelius_board**: Get details for a specific board
 - **get_gmelius_conversation**: Get details for a specific conversation
 - **list_gmelius_boards**: List collaborative Kanban boards
 - **list_gmelius_board_cards**: List cards on a Kanban board
 - **list_gmelius_conversations**: List Gmelius shared conversations
 - **list_gmelius_sequences**: List email sequences
-- **list_gmelius_templates**: List shared email templates
 - **check_gmelius_status**: Check API Status
-- **create_gmelius_card**: Add a new card to a board
+- **list_gmelius_templates**: List shared email templates
 
 
 ## 💬 Prompt Examples

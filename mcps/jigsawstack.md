@@ -37,11 +37,11 @@ Connect your **JigsawStack** account to any AI agent and access AI-powered utili
 ## Available Tools (7)
 - **ai_web_scrape**: Scrape a website using natural language
 - **check_nsfw_image**: Check if an image is NSFW
-- **check_profanity_text**: Check text for profanity
 - **summarize_text**: Summarize long text content
+- **ai_web_search**: Perform an AI-powered web search
+- **check_profanity_text**: Check text for profanity
 - **translate_text**: Translate text between languages
 - **extract_text_from_image**: Perform vOCR on an image URL
-- **ai_web_search**: Perform an AI-powered web search
 
 
 ## 💬 Prompt Examples

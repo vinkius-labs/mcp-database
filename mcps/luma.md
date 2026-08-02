@@ -38,8 +38,8 @@ No more manual logging into the dashboard for quick guest checks. Your AI acts a
 ## Available Tools (6)
 - **add_guests_to_event**: Manually add guests to an event
 - **create_event**: Create a new Luma event
-- **list_event_guests**: List guests for an event
 - **list_events**: List your Luma events
+- **list_event_guests**: List guests for an event
 - **list_organization_events**: List all events in your organization
 - **list_calendar_subscribers**: List subscribers to your calendar
 

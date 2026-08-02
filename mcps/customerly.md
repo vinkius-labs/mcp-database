@@ -36,18 +36,18 @@ No more manual ticket searching or digging through user tables in the portal. Yo
 
 
 ## Available Tools (8)
-- **get_conversation**: Get details of a specific conversation
-- **add_tag**: Provide tag name and contact identification.
-
-Add a tag to a contact
-- **create_update_lead**: Create or update a lead
 - **create_update_user**: Provide email and optionally user_id, name, and attributes.
 
 Create or update a user
 - **delete_user**: Delete a user
+- **get_conversation**: Get details of a specific conversation
 - **list_conversations**: List all conversations
 - **list_users**: List all users
 - **remove_tag**: Remove a tag from a contact
+- **create_update_lead**: Create or update a lead
+- **add_tag**: Provide tag name and contact identification.
+
+Add a tag to a contact
 
 
 ## 💬 Prompt Examples

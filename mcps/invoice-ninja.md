@@ -25,10 +25,10 @@ Freelancers, small businesses, and agencies who need a powerful, automated way t
 
 
 ## Available Tools (11)
-- **create_invoice**: Create a new invoice
 - **create_product**: Create a new product
-- **create_client**: Create a new client
 - **get_client**: Get details for a specific client
+- **create_client**: Create a new client
+- **create_invoice**: Create a new invoice
 - **get_invoice**: Get an invoice by ID
 - **get_payment**: Get a payment by ID
 - **get_product**: Get a product by ID

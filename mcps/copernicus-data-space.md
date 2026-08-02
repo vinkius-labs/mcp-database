@@ -37,15 +37,12 @@ Connect to the **Copernicus Data Space Ecosystem** and unlock the world's larges
 
 
 ## Available Tools (14)
-- **check_copernicus_status**: Returns the connection status. Use this to verify your client_id:client_secret credentials are working correctly.
+- **list_product_nodes**: Returns the hierarchy of files including measurement data, metadata XML, quicklook images, and auxiliary data. Essential for understanding product structure before selective download.
 
-Verify Copernicus Data Space API connectivity and authentication
+List all files contained within a satellite product
 - **count_products**: Useful for understanding data volume before executing a full search, or for monitoring data availability trends.
 
 Count total products available for a collection and date range
-- **get_collection**: Use collection names like "SENTINEL-2", "SENTINEL-1", or "SENTINEL-3".
-
-Get details about a specific Copernicus collection
 - **get_product_download_url**: Returns the direct download URL along with a Bearer token valid for approximately one hour. Use this to download raw satellite data products (typically in SAFE format for Sentinel data).
 
 Generate an authenticated download URL for a product
@@ -64,15 +61,18 @@ List all available Copernicus satellite data collections
 - **list_latest_products**: Useful for monitoring new data availability or checking processing pipeline status.
 
 List the most recently published satellite products
-- **list_product_nodes**: Returns the hierarchy of files including measurement data, metadata XML, quicklook images, and auxiliary data. Essential for understanding product structure before selective download.
-
-List all files contained within a satellite product
 - **search_by_bbox**: Combines spatial filtering with collection and temporal constraints. Ideal for region-specific analysis workflows.
 
 Search satellite products within a geographic bounding box
 - **search_by_name**: Useful for finding specific orbits, tiles (e.g., "T33UUP" for Sentinel-2 tile), or granule identifiers. Returns product metadata ordered by sensing date.
 
 Search satellite products by name pattern
+- **check_copernicus_status**: Returns the connection status. Use this to verify your client_id:client_secret credentials are working correctly.
+
+Verify Copernicus Data Space API connectivity and authentication
+- **get_collection**: Use collection names like "SENTINEL-2", "SENTINEL-1", or "SENTINEL-3".
+
+Get details about a specific Copernicus collection
 - **search_by_orbit_number**: Especially useful for Sentinel-1 (SAR) and Sentinel-2 (optical) repeat-pass analysis, interferometry, and change detection workflows where you need data from the exact same orbit geometry.
 
 Search satellite products by orbit number

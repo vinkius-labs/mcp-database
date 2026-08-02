@@ -35,6 +35,7 @@ Connect your **CUFinder** business intelligence account to any AI agent and simp
 
 
 ## Available Tools (13)
+- **find_email**: Find email address
 - **find_employees**: Find employees
 - **find_phone**: Find phone number
 - **get_account**: Get account info
@@ -47,7 +48,6 @@ Connect your **CUFinder** business intelligence account to any AI agent and simp
 - **bulk_enrich**: Bulk enrich
 - **check_cufinder_status**: Verify connectivity
 - **find_domain**: Find company domain
-- **find_email**: Find email address
 
 
 ## 💬 Prompt Examples

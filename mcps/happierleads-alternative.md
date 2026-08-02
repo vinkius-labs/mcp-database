@@ -36,23 +36,23 @@ Connect your **HappierLeads** account to any AI agent and turn anonymous website
 
 
 ## Available Tools (17)
-- **get_session**: Get session details
+- **check_happier_status**: Verify connectivity
+- **get_analytics**: Get analytics overview
+- **get_lead**: Get lead details
+- **get_top_pages**: Get top pages
+- **get_segment**: Get segment details
 - **get_visitor**: Get visitor details
 - **list_leads_by_industry**: Filter leads by industry
 - **list_leads**: List identified leads
 - **list_notifications**: List notifications
 - **list_page_views**: List page views
 - **list_qualified_leads**: List qualified leads
+- **list_visitors**: List website visitors
+- **search_visitors**: Search visitors
+- **get_session**: Get session details
 - **list_segments**: List segments
 - **list_sessions**: List visitor sessions
 - **list_visitors_by_country**: Filter visitors by country
-- **list_visitors**: List website visitors
-- **search_visitors**: Search visitors
-- **check_happier_status**: Verify connectivity
-- **get_analytics**: Get analytics overview
-- **get_lead**: Get lead details
-- **get_segment**: Get segment details
-- **get_top_pages**: Get top pages
 
 
 ## 💬 Prompt Examples

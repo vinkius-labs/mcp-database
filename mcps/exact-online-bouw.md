@@ -46,14 +46,14 @@ Create a new project in Exact Online
 
 Register hours (time entry) for a project
 - **get_me**: Get current authenticated user and division information
-- **get_project**: Get detailed information about a specific project
-- **list_accounts**: List accounts (CRM) from Exact Online
-- **list_cost_transactions**: List cost transactions registered in Exact Online
 - **list_employees**: List employees from Exact Online
 - **list_project_hour_budgets**: List hour budgets for projects
 - **list_project_wbs**: List the Work Breakdown Structure (WBS) for projects
 - **list_projects**: List all projects in Exact Online
 - **list_time_transactions**: List time transactions (hours) registered in Exact Online
+- **get_project**: Get detailed information about a specific project
+- **list_accounts**: List accounts (CRM) from Exact Online
+- **list_cost_transactions**: List cost transactions registered in Exact Online
 
 
 ## 💬 Prompt Examples

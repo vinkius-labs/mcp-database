@@ -42,8 +42,6 @@ No more manual ticket shuffling or digging through help center folders. Your AI 
 Open a new support ticket
 - **get_article_content**: Get details for a KB article
 - **get_ticket_details**: Get details for a specific ticket
-- **get_user_profile**: Get details for a specific user
-- **list_helpdesk_agents**: List helpdesk staff (agents)
 - **list_kb_articles**: List knowledgebase articles
 - **list_user_organizations**: List user organizations
 - **list_helpdesk_tickets**: Supports filtering by status and department.
@@ -52,6 +50,8 @@ List helpdesk tickets
 - **list_helpdesk_users**: List end-users
 - **list_configured_webhooks**: List active webhooks
 - **update_ticket_properties**: Modify an existing ticket
+- **get_user_profile**: Get details for a specific user
+- **list_helpdesk_agents**: List helpdesk staff (agents)
 
 
 ## 💬 Prompt Examples
