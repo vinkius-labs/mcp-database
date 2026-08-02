@@ -37,9 +37,6 @@ No more manual toggling between translation portals or waiting on slow dubbing p
 
 ## Available Tools (10)
 - **create_dubbing**: Create a dubbing or translation job
-- **create_tts**: Returns a task ID to track progress.
-
-Create a Text-to-Speech task
 - **create_voice_clone**: Create a custom voice clone
 - **get_job_status**: Check the status of a dubbing job
 - **get_tts_result**: Get the result of a completed TTS task
@@ -48,6 +45,9 @@ Create a Text-to-Speech task
 - **list_source_languages**: List supported source languages
 - **list_target_languages**: List supported target languages
 - **list_voices**: List all available voices
+- **create_tts**: Returns a task ID to track progress.
+
+Create a Text-to-Speech task
 
 
 ## 💬 Prompt Examples

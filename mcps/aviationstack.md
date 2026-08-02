@@ -37,15 +37,15 @@ Empower your AI agent with the world's most comprehensive aviation intelligence 
 
 
 ## Available Tools (9)
-- **list_flights**: List real-time flights
-- **list_routes**: List flight routes
-- **list_taxes**: List aviation taxes
 - **list_aircraft_types**: List aircraft types
 - **list_airlines**: List airlines
 - **list_airplanes**: List specific airplanes
 - **list_airports**: List airports
 - **list_cities**: List cities
 - **list_countries**: List countries
+- **list_flights**: List real-time flights
+- **list_routes**: List flight routes
+- **list_taxes**: List aviation taxes
 
 
 ## 💬 Prompt Examples

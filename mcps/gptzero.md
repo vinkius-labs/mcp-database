@@ -35,13 +35,9 @@ No more manual copy-pasting into web detectors. Your AI acts as your dedicated a
 - **Compliance Officers** — detect automated content in sensitive legal or regulatory documentation through automated scans
 
 
-## Available Tools (8)
-- **check_api_health**: Verify API connectivity and health
-- **get_interpretation_guide**: Retrieve guide for results interpretation
+## Available Tools (4)
 - **get_current_user**: Get authenticated user profile
-- **get_usage_policy**: Retrieve API usage and rate limit policies
 - **get_api_quotas**: Check remaining API credits
-- **list_available_models**: List supported model versions
 - **detect_ai_in_text**: Analyze text for AI generation
 - **submit_prediction_feedback**: Provide feedback on a prediction
 

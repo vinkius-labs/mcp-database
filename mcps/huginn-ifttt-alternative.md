@@ -34,19 +34,19 @@ Connect your self-hosted **Huginn** instance to any AI agent and take full contr
 
 
 ## Available Tools (13)
-- **list_events**: List recent Huginn events
-- **create_agent**: Create a new Huginn agent
-- **delete_agent**: Delete a Huginn agent
-- **export_scenario**: Export a Huginn scenario as JSON
 - **get_agent**: Get details for a specific Huginn agent
 - **get_event**: Get details for a specific Huginn event
 - **import_scenario**: Import a Huginn scenario from JSON
 - **list_agents**: List all Huginn agents
+- **list_events**: List recent Huginn events
 - **list_scenarios**: List all Huginn scenarios
 - **reemit_event**: Re-emit an existing Huginn event
 - **run_agent**: Manually trigger a Huginn agent to run
 - **trigger_webhook**: Trigger a Huginn Webhook Agent
 - **update_agent**: Update an existing Huginn agent
+- **create_agent**: Create a new Huginn agent
+- **delete_agent**: Delete a Huginn agent
+- **export_scenario**: Export a Huginn scenario as JSON
 
 
 ## 💬 Prompt Examples

@@ -37,17 +37,17 @@ No more manual status checking in the dashboard for new subscribers. Your AI act
 
 ## Available Tools (12)
 - **list_discounts**: List member discounts
+- **list_webhooks**: List configured webhooks
+- **create_member**: Create a new member
+- **list_coupons**: List active coupons
+- **get_account_info**: Get site info
+- **get_member**: Get member details
+- **get_order**: Get order details
 - **list_downloads**: List member downloads
 - **list_members**: List all members
 - **list_orders**: List recent orders
 - **list_plans**: List subscription plans
 - **list_subscriptions**: List all subscriptions
-- **list_webhooks**: List configured webhooks
-- **create_member**: Create a new member
-- **get_account_info**: Get site info
-- **get_member**: Get member details
-- **get_order**: Get order details
-- **list_coupons**: List active coupons
 
 
 ## 💬 Prompt Examples

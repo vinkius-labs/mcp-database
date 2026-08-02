@@ -53,12 +53,6 @@ Get current weather conditions for agricultural decision making
 - **get_evi**: EVI is more sensitive than NDVI in high-biomass regions and less affected by atmospheric conditions and soil background. Essential for monitoring dense canopies, tropical crops, and areas with high vegetation cover. AI agents should reference this when users ask "what is the EVI for my dense crop area", "monitor high-biomass vegetation", or need enhanced vegetation index for areas where NDVI saturates. Date format: YYYY-MM-DD.
 
 Get EVI (Enhanced Vegetation Index) for high-biomass crop monitoring
-- **get_soil_temperature**: Soil temperature is critical for seed germination timing, root activity assessment, and nutrient uptake optimization. Essential for planting decisions, irrigation scheduling, and soil health monitoring. AI agents should use this when users ask "what is the soil temperature for planting", "check if soil is warm enough for germination", or need soil thermal data for agricultural planning. Date format: YYYY-MM-DD.
-
-Get satellite-derived soil temperature for seed germination and root activity assessment
-- **get_weather_forecast**: Essential for planting schedules, harvest timing, spray application windows, and irrigation planning. AI agents should reference this when users ask "what is the weather forecast for my farm this week", "will it rain in the next 5 days", or need forward-looking weather data for agricultural planning.
-
-Get multi-day weather forecast for agricultural planning
 - **get_evapotranspiration**: ET combines soil evaporation and plant transpiration, providing the most accurate measure of crop water use. Essential for precision irrigation scheduling, water resource management, and drought assessment. AI agents should reference this when users ask "what is the evapotranspiration rate for my field", "calculate irrigation needs", or need crop water use data for irrigation planning. Date format: YYYY-MM-DD.
 
 Get evapotranspiration rates for irrigation scheduling and water management
@@ -77,6 +71,12 @@ Get NDVI (Normalized Difference Vegetation Index) for crop health assessment
 - **get_satellite_imagery**: Returns imagery metadata and access URLs for visual crop assessment, field boundary verification, and change detection analysis. Essential for remote field monitoring, damage assessment, and visual crop health evaluation. AI agents should use this when users ask "get satellite imagery for my field", "show me the latest satellite view of my farm", or need visual imagery for agricultural monitoring. Date format: YYYY-MM-DD. Zoom: 1-16.
 
 Get satellite imagery for visual crop assessment and field monitoring
+- **get_soil_temperature**: Soil temperature is critical for seed germination timing, root activity assessment, and nutrient uptake optimization. Essential for planting decisions, irrigation scheduling, and soil health monitoring. AI agents should use this when users ask "what is the soil temperature for planting", "check if soil is warm enough for germination", or need soil thermal data for agricultural planning. Date format: YYYY-MM-DD.
+
+Get satellite-derived soil temperature for seed germination and root activity assessment
+- **get_weather_forecast**: Essential for planting schedules, harvest timing, spray application windows, and irrigation planning. AI agents should reference this when users ask "what is the weather forecast for my farm this week", "will it rain in the next 5 days", or need forward-looking weather data for agricultural planning.
+
+Get multi-day weather forecast for agricultural planning
 - **get_weather_history**: Essential for comparing current conditions with historical patterns, analyzing crop performance under past weather conditions, and validating crop models. AI agents should use this when users ask "what was the weather like on this date last year", "show me historical weather for my field", or need past weather data for agricultural analysis. Date format: Unix timestamp (seconds since 1970).
 
 Get historical weather data for crop analysis and trend assessment

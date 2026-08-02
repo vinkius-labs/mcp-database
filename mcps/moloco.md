@@ -37,7 +37,6 @@ Connect your **Moloco Ads** account to your AI agent and manage your programmati
 ## Available Tools (10)
 - **get_account_balance**: Check AdAccount balance
 - **get_analytics_report**: Get performance analytics report
-- **get_campaign**: Get campaign details
 - **list_ad_accounts**: List Moloco AdAccounts
 - **list_ad_groups**: List ad groups in a campaign
 - **list_campaigns**: List campaigns in an AdAccount
@@ -47,6 +46,7 @@ Connect your **Moloco Ads** account to your AI agent and manage your programmati
 - **update_campaign_status**: g., ENABLED, PAUSED).
 
 Update campaign status
+- **get_campaign**: Get campaign details
 
 
 ## 💬 Prompt Examples

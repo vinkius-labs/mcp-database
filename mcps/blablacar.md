@@ -35,6 +35,15 @@ Ideal for **budget travelers**, **students**, **eco-conscious commuters**, **tra
 
 
 ## Available Tools (8)
+- **search_trips**: Requires latitude,longitude format for both points. Returns trip details including departure/arrival cities, times, price, driver info, and available seats. Use this for precise location-based searches when you know exact coordinates.
+
+Search carpool trips between two GPS coordinates on BlaBlaCar
+- **search_trips_with_radius**: Useful when exact pickup/dropoff locations are flexible. Larger radius returns more options but may require additional travel to reach departure points. Returns all rides within the specified radius.
+
+Search carpool trips with flexible radius around coordinates
+- **get_driver_profile**: Use this to verify driver credibility and read passenger reviews before booking a ride. Requires the driver user ID from a trip result.
+
+Get driver profile and ratings on BlaBlaCar
 - **get_trip_details**: Use this before booking to verify driver credibility, vehicle comfort, and exact pickup location.
 
 Get complete details of a specific BlaBlaCar trip including driver and vehicle info
@@ -50,15 +59,6 @@ Search international carpool trips between two countries on BlaBlaCar
 - **search_trips_by_city**: More user-friendly than coordinate-based search. Returns all matching trips with departure/arrival points, times, prices, driver ratings, and available seats. Best for general city-to-city searches without needing exact coordinates.
 
 Search carpool trips between two city names on BlaBlaCar
-- **search_trips**: Requires latitude,longitude format for both points. Returns trip details including departure/arrival cities, times, price, driver info, and available seats. Use this for precise location-based searches when you know exact coordinates.
-
-Search carpool trips between two GPS coordinates on BlaBlaCar
-- **search_trips_with_radius**: Useful when exact pickup/dropoff locations are flexible. Larger radius returns more options but may require additional travel to reach departure points. Returns all rides within the specified radius.
-
-Search carpool trips with flexible radius around coordinates
-- **get_driver_profile**: Use this to verify driver credibility and read passenger reviews before booking a ride. Requires the driver user ID from a trip result.
-
-Get driver profile and ratings on BlaBlaCar
 
 
 ## 💬 Prompt Examples

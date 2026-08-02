@@ -31,9 +31,7 @@ Built for **Advertising Agencies**, **Growth Managers**, and **E-Commerce Advert
 
 
 ## Available Tools (8)
-- **ads_add_keywords**: Each keyword needs a text, match type (exact, phrase, or broad), and a bid amount in dollars. Send keywords as a JSON array string, e.g. [{"keyword":"laptop stand","matchType":"broad","bid":1.50}].
-
-Add new keywords to a Sponsored Search ad group
+- **ads_create_ad_group**: Create a new ad group within a Sponsored Search campaign
 - **ads_get_cpc_metrics**: Data lag is approximately 1-3 hours. Optionally filter by a single campaign ID.
 
 Retrieve near real-time spend, impression, and click metrics for active campaigns
@@ -43,7 +41,6 @@ List keywords and their performance data for the advertiser account
 - **ads_get_item_health_report**: Supported report types: adGroup, adItem, keyword, itemHealth, placement, platform, category, brand, pageType, attributedPurchases, searchImpression, videoCampaigns, videoKeywords, outOfBudgetRecommendations, itemKeyword. A reportDate (yyyy-MM-dd) is optional for most types but required for date-bound reports.
 
 Generate a performance snapshot report for the advertiser account
-- **ads_create_ad_group**: Create a new ad group within a Sponsored Search campaign
 - **ads_list_campaigns**: Supports optional filtering by campaign ID or campaign name.
 
 List all Sponsored Search advertising campaigns for the authorized advertiser account
@@ -51,6 +48,9 @@ List all Sponsored Search advertising campaigns for the authorized advertiser ac
 - **ads_update_daily_budget**: Budget is in dollars.
 
 Update the daily budget for a specific Sponsored Search campaign
+- **ads_add_keywords**: Each keyword needs a text, match type (exact, phrase, or broad), and a bid amount in dollars. Send keywords as a JSON array string, e.g. [{"keyword":"laptop stand","matchType":"broad","bid":1.50}].
+
+Add new keywords to a Sponsored Search ad group
 
 
 ## 💬 Prompt Examples

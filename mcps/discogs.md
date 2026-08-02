@@ -53,9 +53,6 @@ Get releases published by a specific label
 - **get_marketplace_listings**: Returns seller information, price, currency, condition (media and sleeve), comments, and shipping location. Useful for finding the best deals, comparing conditions, or understanding market value. Sort by price, condition, or country. Filter by minimum/maximum condition.
 
 Get marketplace listings for a specific release
-- **get_master_release**: A master release represents the "canonical" version of a release, grouping together all individual pressings and variants. Returns the main artist, title, year, genres, styles, tracklist, and notes. Use this to understand the core creative work independent of specific pressings.
-
-Get information about a master release
 - **get_master_release_versions**: Each version represents a different pressing, reissue, or format of the same core release. Returns details including country, year, format, label, and catalog number for each version. Useful for collectors comparing different pressings or finding specific editions.
 
 Get all versions (pressings) of a master release
@@ -71,12 +68,15 @@ Get a user's collection of releases
 - **get_user_profile**: Returns the user's location, homepage, bio, member since date, number of contributions, and collection/wantlist counts. Use this to verify user identity or get an overview of a collector's activity on the platform.
 
 Get a Discogs user's public profile
-- **get_user_wantlist**: Returns each release with basic metadata. Only the wantlist owner can see this data unless they've made it public. Useful for tracking what collectors are seeking.
-
-Get a user's wantlist of desired releases
 - **database_search**: Use the query parameter for free-text search across artists, releases, labels, and tracks. Refine results by type (artist, release, master, label, genre) and filters like genre, style, year, or country. Returns paginated results with basic metadata. Use this as the starting point for most queries. Type parameter accepts: artist, release, master, label, genre.
 
 Search the Discogs database for artists, releases, labels, and more
+- **get_master_release**: A master release represents the "canonical" version of a release, grouping together all individual pressings and variants. Returns the main artist, title, year, genres, styles, tracklist, and notes. Use this to understand the core creative work independent of specific pressings.
+
+Get information about a master release
+- **get_user_wantlist**: Returns each release with basic metadata. Only the wantlist owner can see this data unless they've made it public. Useful for tracking what collectors are seeking.
+
+Get a user's wantlist of desired releases
 
 
 ## 💬 Prompt Examples

@@ -35,21 +35,14 @@ No more manual reviewing of video frames or missing critical object detections. 
 - **Developers** — integrate high-speed EyePop.ai vision data into custom monitoring and alerting tools through simple AI queries
 
 
-## Available Tools (10)
-- **analyze_video**: Returns temporal object detection results.
+## Available Tools (5)
+- **analyze_video**: Analyze a video with computer vision
+- **analyze_image**: Follows the official 2-step flow: fetches the Pop worker, then sends the image for processing.
 
-Analyze a video
+Analyze an image with computer vision
 - **create_pop**: Create a visual pipeline
-- **get_account**: Get account info
-- **get_model**: Get model details
-- **get_pop**: Get pipeline details
-- **list_detections**: List detections
-- **list_models**: List available models
-- **list_pops**: List all visual pipelines
-- **analyze_image**: Returns detected objects, labels, and bounding boxes.
-
-Analyze an image
-- **check_eyepop_status**: Verify EyePop API connectivity
+- **get_pop_config**: Get pipeline configuration
+- **list_pops**: List all visual analysis pipelines
 
 
 ## 💬 Prompt Examples
