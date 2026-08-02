@@ -34,13 +34,6 @@ Connect your **Patreon** creator account to any AI agent to streamline your memb
 
 
 ## Available Tools (10)
-- **get_identity**: Can include memberships and campaign data.
-
-Get the authenticated user profile
-- **list_campaign_members**: List members for a specific campaign
-- **list_campaign_posts**: List all posts for a campaign
-- **update_webhook**: Update an existing webhook
-- **list_webhooks**: List webhooks created by your client
 - **list_campaigns**: List campaigns owned by the user
 - **create_webhook**: g., members:create, posts:publish).
 
@@ -48,6 +41,13 @@ Create a new webhook
 - **delete_webhook**: Delete a webhook
 - **get_campaign**: Get details for a specific campaign
 - **get_member**: Get details for a specific member
+- **get_identity**: Can include memberships and campaign data.
+
+Get the authenticated user profile
+- **list_campaign_members**: List members for a specific campaign
+- **list_campaign_posts**: List all posts for a campaign
+- **update_webhook**: Update an existing webhook
+- **list_webhooks**: List webhooks created by your client
 
 
 ## 💬 Prompt Examples

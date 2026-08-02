@@ -28,10 +28,15 @@ Connect **FlightStats** to your AI agent to monitor global aviation data, track 
 
 
 ## Available Tools (22)
+- **get_route_status**: Get flight status for a specific route
+- **get_scheduled_flights_by_flight**: Get future scheduled flights by carrier and flight number
+- **get_weather**: Get weather (METAR/TAF) for an airport
 - **get_active_airlines**: Get all active airlines
 - **get_active_airports**: Get all active airports
 - **get_airport_by_code**: Get airport details by code
 - **get_airport_status**: Get flight status for departures or arrivals at an airport
+- **get_historical_flight_status**: Get historical flight status by flight
+- **get_scheduled_flights_by_route**: Get future scheduled flights by route
 - **get_connections**: Get connecting flight options between two airports
 - **create_multi_flight_alert**: Create an alert rule for all flights arriving at an airport
 - **create_single_flight_alert**: Requires a configured callback URL on the account.
@@ -48,14 +53,9 @@ Get real-time flight status by carrier and flight number
 - **get_flight_track**: Get real-time flight track and positional information
 - **get_flights_near**: Get flights near a geographic area
 - **get_historical_airport_status**: Get historical flight status for airport departures
-- **get_historical_flight_status**: Get historical flight status by flight
 - **get_historical_route_status**: Get historical flight status for a route
 - **get_ratings_by_flight**: Get on-time performance ratings for a flight
 - **get_ratings_by_route**: Get on-time performance ratings for a route
-- **get_route_status**: Get flight status for a specific route
-- **get_scheduled_flights_by_flight**: Get future scheduled flights by carrier and flight number
-- **get_scheduled_flights_by_route**: Get future scheduled flights by route
-- **get_weather**: Get weather (METAR/TAF) for an airport
 
 
 ## 💬 Prompt Examples

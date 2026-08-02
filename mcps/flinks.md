@@ -34,11 +34,11 @@ Connect your **Flinks** instance to any AI agent to access real-time banking dat
 
 
 ## Available Tools (15)
+- **delete_card**: Delete all data associated with a specific user account
 - **authorize_session**: Authenticate a session and fetch cached banking data
 - **create_transaction**: Requires FLINKS_CLIENT_ID credential.
 
 Create an EFT transaction (debit or credit)
-- **delete_card**: Delete all data associated with a specific user account
 - **field_match**: Verify customer identity by comparing details against bank data
 - **generate_authorize_token**: Valid for 30 minutes.
 

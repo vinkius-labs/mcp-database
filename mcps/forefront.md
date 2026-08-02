@@ -26,6 +26,12 @@ Connect your **Forefront** account to any AI agent to harness powerful language 
 
 
 ## Available Tools (10)
+- **create_fine_tune**: Creates a fine-tuning job
+- **create_pipeline_dataset**: Create a dataset from a pipeline selection
+- **create_pipeline**: Create a new pipeline to collect LLM outputs
+- **get_pipeline_count**: Get count of pipeline selection
+- **get_pipeline_samples**: Get data samples for a pipeline selection
+- **get_pipeline**: Returns a pipeline object by ID
 - **add_pipeline_data**: Add data samples to a pipeline
 - **list_pipelines**: Returns a list of your pipelines
 - **create_chat_completion**: Pass messages array in chat-ml format.
@@ -34,12 +40,6 @@ Creates a model response for the given chat conversation
 - **create_completion**: Pass a single prompt string.
 
 Creates a completion response for a given prompt
-- **create_fine_tune**: Creates a fine-tuning job
-- **create_pipeline_dataset**: Create a dataset from a pipeline selection
-- **create_pipeline**: Create a new pipeline to collect LLM outputs
-- **get_pipeline_count**: Get count of pipeline selection
-- **get_pipeline_samples**: Get data samples for a pipeline selection
-- **get_pipeline**: Returns a pipeline object by ID
 
 
 ## 💬 Prompt Examples

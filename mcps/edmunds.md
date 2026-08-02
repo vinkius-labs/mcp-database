@@ -33,10 +33,11 @@ Connect your **Edmunds** API key to any AI agent and unlock deep automotive inte
 
 
 ## Available Tools (41)
+- **get_editorial_model**: Get editorial model overview
+- **list_makes**: Get a list of car makes
 - **get_dealer_reviews**: Get dealer ratings and reviews by dealer ID
 - **get_dealership_franchises**: Find dealership franchises
 - **get_editorial_make**: Get editorial make overview
-- **get_editorial_model**: Get editorial model overview
 - **get_editorial_model_year**: Get editorial model/year overview
 - **get_editorial_road_tests**: Get editorial road tests overview
 - **get_engines**: Get engines for a car style
@@ -46,7 +47,6 @@ Connect your **Edmunds** API key to any AI agent and unlock deep automotive inte
 - **get_maintenance_schedule**: Get maintenance schedule by car model year ID
 - **get_make_details**: Get details on a specific car make
 - **get_makes_count**: Get total count of car makes
-- **list_makes**: Get a list of car makes
 - **list_model_years**: Get a list of model years
 - **list_models**: Get a list of models
 - **get_models_with_tco**: Get car models with TCO value

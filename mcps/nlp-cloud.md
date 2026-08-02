@@ -35,6 +35,9 @@ Integrate **NLP Cloud** into your AI workflows to leverage state-of-the-art Natu
 
 
 ## Available Tools (6)
+- **perform_asr**: Provide the required JSON payload as per NLP Cloud docs.
+
+Extract text from audio or video files (ASR)
 - **classify_text**: Categorize text into predefined labels
 - **extract_entities**: Extract named entities (NER) from text
 - **analyze_sentiment**: Determine the sentiment of text
@@ -42,9 +45,6 @@ Integrate **NLP Cloud** into your AI workflows to leverage state-of-the-art Natu
 - **translate_text**: Provide the required JSON payload as per NLP Cloud docs.
 
 Translate text between languages
-- **perform_asr**: Provide the required JSON payload as per NLP Cloud docs.
-
-Extract text from audio or video files (ASR)
 
 
 ## 💬 Prompt Examples

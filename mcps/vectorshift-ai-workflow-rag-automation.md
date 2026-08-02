@@ -33,13 +33,13 @@ Connect your **VectorShift** account to any AI agent and take full control of yo
 
 
 ## Available Tools (29)
+- **create_knowledge_base**: Create a new knowledge base
+- **delete_knowledge_base_documents**: Delete specific documents by ID from a knowledge base
 - **bulk_run_pipeline**: Execute multiple instances of a pipeline in parallel
 - **create_chatbot**: Create a new chatbot
-- **create_knowledge_base**: Create a new knowledge base
 - **create_pipeline**: Create a new pipeline
 - **create_transformation**: Create a new transformation (Python/JS)
 - **delete_chatbot**: Delete a chatbot
-- **delete_knowledge_base_documents**: Delete specific documents by ID from a knowledge base
 - **delete_knowledge_base**: Delete a knowledge base
 - **delete_pipeline**: Delete a pipeline by ID
 - **delete_transformation**: Delete a transformation

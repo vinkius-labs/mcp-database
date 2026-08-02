@@ -33,7 +33,6 @@ Connect your **Polar.sh** account to any AI agent to manage your open-source mon
 
 
 ## Available Tools (36)
-- **confirm_checkout_client**: Confirm a session from the client
 - **create_benefit**: Create a benefit
 - **create_checkout**: Create a checkout session
 - **create_customer_session**: Generate a customer session token
@@ -71,6 +70,7 @@ List products
 - **update_product**: Update a product
 - **update_subscription**: Update a subscription
 - **validate_portal_license_key**: Validate a license key
+- **confirm_checkout_client**: Confirm a session from the client
 
 
 ## 💬 Prompt Examples

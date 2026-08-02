@@ -34,6 +34,10 @@ Connect your **SoundCloud** account to any AI agent to discover music, manage yo
 
 
 ## Available Tools (9)
+- **like_track**: Like a track
+- **get_me**: Get current SoundCloud user details
+- **resolve_url**: Resolve a SoundCloud URL
+- **search_tracks**: Search for tracks on SoundCloud
 - **upload_track**: asset_data should be the raw file content or a placeholder for this MCP implementation.
 
 Upload a new track to SoundCloud
@@ -41,10 +45,6 @@ Upload a new track to SoundCloud
 - **follow_user**: Follow a user
 - **get_track_stream**: Get stream URLs for a track
 - **like_playlist**: Like a playlist
-- **like_track**: Like a track
-- **get_me**: Get current SoundCloud user details
-- **resolve_url**: Resolve a SoundCloud URL
-- **search_tracks**: Search for tracks on SoundCloud
 
 
 ## 💬 Prompt Examples

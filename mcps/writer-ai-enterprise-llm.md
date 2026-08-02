@@ -33,9 +33,9 @@ Connect to **Writer**, the full-stack generative AI platform for the enterprise.
 
 
 ## Available Tools (24)
+- **analyze_vision**: Analyze images or documents using a prompt
+- **ask_question**: Ask a question against one or more Knowledge Graphs (RAG)
 - **chat_completion**: Generate a chat completion using Writer models
-- **create_graph**: Create a new Knowledge Graph
-- **delete_file**: Permanently delete a file
 - **download_file**: Download the binary content of a file
 - **generate_application_content_async**: Asynchronous generation using a no-code application (returns job_id)
 - **generate_application_content**: Synchronous generation using a no-code application
@@ -47,16 +47,16 @@ Connect to **Writer**, the full-stack generative AI platform for the enterprise.
 - **list_files**: Retrieve a paginated list of uploaded files
 - **list_graphs**: List all Knowledge Graphs
 - **list_models**: Retrieve available Writer models
-- **parse_pdf**: Convert PDF to text or markdown (Deprecated)
 - **remove_file_from_graph**: Remove a file from a Knowledge Graph
 - **retry_application_job**: Retry a failed application job
 - **text_completion**: Generate text completions for a single prompt
 - **translate_text**: Translate text between supported languages
 - **upload_file**: Upload a file for Knowledge Graphs or Vision tasks
 - **web_search**: Search the web for a query
+- **create_graph**: Create a new Knowledge Graph
+- **delete_file**: Permanently delete a file
+- **parse_pdf**: Convert PDF to text or markdown (Deprecated)
 - **add_file_to_graph**: Add an uploaded file to a Knowledge Graph
-- **analyze_vision**: Analyze images or documents using a prompt
-- **ask_question**: Ask a question against one or more Knowledge Graphs (RAG)
 
 
 ## 💬 Prompt Examples

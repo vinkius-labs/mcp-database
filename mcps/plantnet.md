@@ -35,6 +35,15 @@ Connect the **Pl@ntNet** API to your AI agent to transform it into a powerful bo
 
 ## Available Tools (17)
 - **list_diseases**: List identifiable plant diseases
+- **list_species**: Can be scoped to a specific project or global.
+
+List species, optionally filtered by project
+- **list_varieties**: List identifiable cultivated plant varieties
+- **search_observations**: Search DarwinCore plant observations
+- **search_plots**: Search DarwinCore plots
+- **survey_tiles**: g., quadrat or drone imagery) to identify multiple species.
+
+Identify multiple species in a single high-resolution image (Beta)
 - **get_quota**: Check current API quota
 - **align_species_name**: Align a species name within a project
 - **estimate_survey_cost**: Estimate cost for a multi-species survey
@@ -48,15 +57,6 @@ Connect the **Pl@ntNet** API to your AI agent to transform it into a powerful bo
 
 Identify a plant species from images
 - **identify_variety**: Identify cultivated plant varieties from images
-- **list_species**: Can be scoped to a specific project or global.
-
-List species, optionally filtered by project
-- **list_varieties**: List identifiable cultivated plant varieties
-- **search_observations**: Search DarwinCore plant observations
-- **search_plots**: Search DarwinCore plots
-- **survey_tiles**: g., quadrat or drone imagery) to identify multiple species.
-
-Identify multiple species in a single high-resolution image (Beta)
 
 
 ## 💬 Prompt Examples
