@@ -31,15 +31,15 @@ Get natural gas prices: Henry Hub, citygate, wellhead, industrial, residential
 - **get_natgas_summary**: S. natural gas balance: total production, consumption, imports, exports, and storage changes.
 
 Get natural gas supply and demand overview
-- **get_natgas_reserves**: Get natural gas proved reserves and exploration data
-- **get_natgas_production**: Get natural gas production: gross withdrawals, marketed production
-- **get_natgas_trade**: Get natural gas imports, exports, and pipeline flows
 - **get_natgas_storage**: The weekly storage report is a major market-moving event for gas trading.
 
 Get underground natural gas storage levels
 - **get_natgas_consumption**: By state and nationally.
 
 Get natural gas consumption by sector
+- **get_natgas_reserves**: Get natural gas proved reserves and exploration data
+- **get_natgas_production**: Get natural gas production: gross withdrawals, marketed production
+- **get_natgas_trade**: Get natural gas imports, exports, and pipeline flows
 
 
 ## 💬 Prompt Examples

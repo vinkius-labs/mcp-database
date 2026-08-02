@@ -5,44 +5,45 @@
 
 ## Overview
 
-**Category:** [communication-messaging](../categories/communication-messaging.md)
+**Category:** [productivity](../categories/productivity.md)
 
-Equip your AI agent to manage WhatsApp conversations, track contacts, and monitor message delivery via the DoubleTick API.
+Scale your WhatsApp sales with bulk messaging, chatbot automation, and team inbox features built for growing businesses.
 
 ## Description
-Integrate **DoubleTick**, the official WhatsApp Business API-powered marketing and CRM platform, directly into your AI workflow. Manage your customer conversations, track contacts and opt-in statuses, monitor message delivery and templates, and oversee your team activity using natural language.
+Connect your **DoubleTick** account to any AI agent and take full control of your official WhatsApp Business marketing and sales workflows through natural conversation.
 
 ### What you can do
 
-- **Conversation Oversight** — List and retrieve detailed information and status for all your WhatsApp customer conversations.
-- **Contact Intelligence** — Monitor contact profiles, phone numbers, and opt-in statuses across your organization.
-- **Messaging Intelligence** — Monitor real-time message delivery statuses, approved templates, and interaction history via chat.
-- **Fulfillment Auditing** — Retrieve high-level summaries of messaging activity, success rates, and active in-progress communications.
+- **Template Orchestration** — List and manage approved WhatsApp message templates, including retrieving detailed metadata about languages and categories programmatically
+- **High-Engagement Messaging** — Programmatically send template messages with dynamic placeholders to coordinate personalized customer outreach at scale
+- **Delivery Intelligence** — Monitor real-time status (sent, delivered, read) for all messages to maintain high-fidelity communication oversight
+- **Contact Lifecycle** — Programmatically create and manage your WhatsApp contact list to maintain an organized and segmented audience
+- **Group & Team Visibility** — Access your directory of WhatsApp groups to understand team collaboration environments directly through your agent
 
 ### How it works
 
-1. Connect the DoubleTick integration to your AI assistant.
-2. Authorize using your DoubleTick API Key (found in your platform settings).
-3. Orchestrate your WhatsApp marketing and customer engagement through intuitive conversation.
+1. Subscribe to this server
+2. Retrieve your **API Key** from DoubleTick dashboard (Settings > Developer API)
+3. Start managing your WhatsApp Business growth from Claude, Cursor, or any MCP client
+
+No more manual template copy-pasting or slow message tracking in the dashboard. Your AI acts as your dedicated WhatsApp operations and engagement coordinator.
 
 ### Who is this for?
 
-- **Sales Managers** — Quickly check customer response rates and conversation history on the go.
-- **Marketing Teams** — Monitor template performance and contact opt-in volumes via chat.
-- **Customer Support** — Research specific contact details and previous message history to assist customers instantly.
+- **Sales Teams** — instantly send personalized order updates and follow-ups via WhatsApp using natural language commands
+- **Growth Marketers** — automate template-based broadcast campaigns and monitor read rates without leaving your workspace
+- **Support Leads** — track message delivery status and manage customer contact lists through simple AI queries
 
 
-## Available Tools (10)
-- **search_contacts_by_keyword**: Search for contacts using a name keyword or phone number
-- **list_latest_whatsapp_messages**: Identify the most recently received or sent messages across all conversations
-- **list_approved_templates**: List all approved WhatsApp message templates in your account
-- **get_doubletick_account_metadata**: Retrieve metadata and limits for your DoubleTick account
-- **get_contact_details**: Get detailed profile and conversation status for a specific contact
-- **quick_whatsapp_volume_audit**: Retrieve a high-level summary of messaging activity and success rates
-- **list_whatsapp_contacts**: List all contacts registered in your DoubleTick account
-- **list_conversation_messages**: List messages from a specific conversation
-- **list_opted_in_contacts**: Identify contacts that have explicitly opted in for WhatsApp communications
-- **send_whatsapp_template**: Send a pre-approved WhatsApp template message
+## Available Tools (6)
+- **list_contacts**: List WhatsApp contacts
+- **list_groups**: List WhatsApp groups
+- **list_templates**: List WhatsApp templates
+- **send_template_message**: Pass placeholders as a JSON string.
+
+Send a WhatsApp template message
+- **create_contact**: Create a new contact
+- **get_message_status**: Check message delivery status
 
 
 ## 💬 Prompt Examples
@@ -50,38 +51,38 @@ Integrate **DoubleTick**, the official WhatsApp Business API-powered marketing a
 Here are some examples of how you can interact with the **DoubleTick** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all our WhatsApp contacts."
+> "List all my approved WhatsApp templates in DoubleTick."
 
 **🤖 AI Agent:**
-> I've found several contacts, including 'John Doe' (+1 555-0123) and 'Jane Smith' (+1 555-9876). Would you like to see the last message for any of these?
+> I've retrieved your approved templates. You currently have 5 active designs, including 'order_confirmation' (en) and 'welcome_message' (pt). Which one would you like to use for a message?
 
 ---
 
 **👤 You:**
-> "Show me the approved WhatsApp templates."
+> "Send the 'order_update' template to +123456789 with value 'Shipped'."
 
 **🤖 AI Agent:**
-> I've retrieved your approved templates, including 'welcome_message', 'order_update', and 'appointment_reminder'. Would you like the full JSON structure for 'order_update' to send a message?
+> Message dispatched! I've sent the 'order_update' template to +123456789 with the placeholder 'Shipped'. The message ID is 'msg_123'. I'll monitor the delivery status for you.
 
 ---
 
 **👤 You:**
-> "Search for contact with phone number '+1 555-4444'."
+> "Check the delivery status for message ID 'msg_123'."
 
 **🤖 AI Agent:**
-> I've found a contact matching that number: 'Robert Brown'. He is currently 'Opted In' and his last interaction was yesterday. Should I pull his full conversation history?
+> Fetching status... Message msg_123 has been successfully 'Delivered' and was 'Read' by the recipient at 2:30 PM today. Would you like to view your full sent history?
 
 
 ## ❓ FAQ
 
-**Q: How do I get a DoubleTick API Key?**
-Log in to your DoubleTick dashboard, navigate to **Settings > API**, and you can generate or retrieve your unique API Key from there. Ensure you have an active WhatsApp Business account linked.
+**Q: How do I find my DoubleTick API Key?**
+Log in to your DoubleTick account, navigate to **Settings** > **Developer API**, and generate or copy your unique access token.
 
-**Q: Can the agent send custom text messages?**
-This integration primarily uses WhatsApp templates for automated messaging to ensure compliance with official API rules. Sending non-template messages may require an active 24-hour customer service window.
+**Q: Do I need approved templates to send messages?**
+Yes, for business-initiated conversations, the WhatsApp Business API requires using templates that have been approved by Meta.
 
-**Q: Does the integration support contact tags?**
-Yes, you can use the get_contact_details tool to retrieve any tags or custom fields associated with your WhatsApp contacts.
+**Q: How do I handle template placeholders?**
+The `send_template_message` tool accepts a `placeholders_json` string. Provide a JSON array containing the values for your template variables in order.
 
 
 ## Installation & Usage

@@ -33,17 +33,17 @@ Integrate **EmailListVerify**, the powerful bulk email verification platform, di
 
 
 ## Available Tools (9)
+- **get_emaillistverify_metadata**: Retrieve metadata and settings for your EmailListVerify account
 - **get_remaining_credits**: Retrieve the number of remaining verification credits in your account
+- **list_successfully_processed_files**: Identify bulk verification jobs that have finished processing
 - **get_verification_job_status**: invalid addresses.
 
 Get the current status and results summary for a specific bulk verification job
 - **quick_verification_health_audit**: Retrieve a high-level summary of verification activity and success rates
-- **list_successfully_processed_files**: Identify bulk verification jobs that have finished processing
 - **list_in_progress_verification_jobs**: Identify bulk verification jobs that are currently in the processing queue
 - **list_latest_verification_jobs**: Identify the most recently uploaded email verification files
 - **list_verification_jobs**: List all bulk email verification files/jobs in your account
 - **verify_single_email**: Verify a single email address for deliverability
-- **get_emaillistverify_metadata**: Retrieve metadata and settings for your EmailListVerify account
 
 
 ## 💬 Prompt Examples

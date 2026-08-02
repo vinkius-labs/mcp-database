@@ -36,8 +36,11 @@ Connect your **Fera.ai** account to any AI agent and take full control of your c
 
 
 ## Available Tools (12)
-- **get_customer**: Get details for a specific customer profile
+- **list_products**: List products being tracked by Fera
+- **list_reviews**: List all customer reviews for your store
+- **list_stores**: List stores managed under your account
 - **get_account_info**: Get Fera account and subscription details
+- **get_customer**: Get details for a specific customer profile
 - **get_me**: Get current API token identity info
 - **get_product_rating**: Get aggregated rating and review count for a product
 - **get_review**: Get details for a specific review
@@ -45,9 +48,6 @@ Connect your **Fera.ai** account to any AI agent and take full control of your c
 - **list_customers**: List customers who have submitted feedback
 - **list_external_integrations**: List active external integrations (Shopify, etc.)
 - **list_media**: List customer-submitted photos and videos (UGC)
-- **list_products**: List products being tracked by Fera
-- **list_reviews**: List all customer reviews for your store
-- **list_stores**: List stores managed under your account
 
 
 ## 💬 Prompt Examples

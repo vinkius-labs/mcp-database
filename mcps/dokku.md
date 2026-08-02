@@ -58,15 +58,15 @@ Bounce the application container dynamically
 - **ps_scale**: Determines whether the "web" container spins zero replicas (suspension), or if "worker" background tasks spool up to 10 endpoints.
 
 Scale structural internal application containers
-- **run_command**: Boots a brand new isolated Docker container cloning the production image layers for a single execution cycle. Useful for running `rake db:migrate`, `npm run script` safely disconnected from web traffic.
-
-Launch a raw one-off command inside an ephemeral container
 - **set_config**: Triggers a mandatory rolling app deployment unless the `--no-restart` daemon flag applies natively to the process. Critical for updating expired API auth tokens.
 
 Inject Environment Variables into a running Dokku Application
 - **unset_config**: Immediately triggers the executing Docker cluster to orchestrate a rapid replacement cycle to strip out the revoked value. Removes stale credentials safely.
 
 Remove sensitive Environment Variables disrupting App config
+- **run_command**: Boots a brand new isolated Docker container cloning the production image layers for a single execution cycle. Useful for running `rake db:migrate`, `npm run script` safely disconnected from web traffic.
+
+Launch a raw one-off command inside an ephemeral container
 
 
 ## 💬 Prompt Examples

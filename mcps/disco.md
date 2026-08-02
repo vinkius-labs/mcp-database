@@ -7,42 +7,46 @@
 
 **Category:** [business-intelligence](../categories/business-intelligence.md)
 
-Equip your AI agent to manage legal matters, track documents, and monitor review teams via the DISCO API.
+Query your DISCO eDiscovery datasets, data-usage changes, and review metrics directly from any AI agent via the official DISCO API.
 
 ## Description
-Integrate **DISCO**, the leading legal technology platform, directly into your AI workflow. Manage your legal matters, monitor document ingestion and metadata, track document tags for review, and oversee your authorized users using natural language.
+Connect **DISCO**, the leading legal technology platform, to any AI agent through the official DISCO API. Query your eDiscovery **datasets**, track **data-usage changes** (ingest, deletion, volume deltas), and pull **review metrics** — including review-database sizes and names — using natural language.
 
 ### What you can do
 
-- **Matter Oversight** — List and retrieve detailed settings and statuses for all your legal matters in DISCO.
-- **Document Intelligence** — Access full technical metadata for documents, including custodians and file properties.
-- **Tag Management** — List and review document tags and taxonomies used for legal review and organization.
-- **Review Team Monitoring** — Track authorized users and identify teams assigned to specific legal cases.
+- **Datasets** — List the datasets (matters) exposed to your API key, with optional name filtering.
+- **Data-Usage Changes** — Audit the history of data-volume changes across your datasets.
+- **Review Metrics** — Query review analytics, review-database sizes, and the list of available review-database names.
 
 ### How it works
 
-1. Connect the DISCO integration to your AI assistant.
-2. Authorize using your DISCO API Key and Client ID (found in your organization settings).
-3. Orchestrate your legal discovery and matter management through intuitive conversation.
+1. Subscribe to this server.
+2. Enter your **DISCO API Key** and **Organization ID** (from Organization Settings → API).
+3. Make sure the MCP's egress IP is **CIDR-allowlisted** in your DISCO org settings (DISCO enforces IP allowlisting).
+4. Query your discovery data and metrics through natural conversation.
 
 ### Who is this for?
 
-- **Legal Operations** — Quickly check matter statuses and document counts on the go.
-- **Litigation Support** — Monitor document ingestion and tag applications via chat.
-- **Attorneys & Paralegals** — Research document metadata and matter details during case planning.
+- **Legal Operations** — Audit data usage and review-database sizes at a glance.
+- **Litigation Support** — Track data ingest/deletion events across datasets.
+- **Attorneys & Paralegals** — Surface review metrics during case planning.
 
 
-## Available Tools (10)
-- **get_disco_account_metadata**: Retrieve metadata and usage limits for your DISCO account
-- **get_document_metadata**: Get the full technical metadata for a specific document
-- **get_matter_details**: Get detailed settings and information for a specific legal matter
-- **list_matter_documents**: List all documents associated with a specific legal matter
-- **list_matter_access_users**: List only the users who have explicit access to a specific matter
-- **list_legal_matters**: List all legal matters in your DISCO account
-- **list_recently_ingested_documents**: Identify documents that have been recently uploaded to a matter
-- **list_document_tags**: List all tags used to categorize documents in a specific matter
-- **list_authorized_users**: List all users with access to your DISCO account
-- **search_matter_documents**: Search for specific keywords or metadata across documents in a matter
+## Available Tools (6)
+- **get_data_usage_changes_metadata**: Retrieve the metadata schema for data-usage change events
+- **get_metrics**: Pass a JSON payload to scope the query (e.g. metric name, date range, review-db filter).
+
+Query review metrics from DISCO
+- **get_reviewdb_size**: Pass an optional JSON payload to filter by review-db name or date.
+
+Get the review database size metric
+- **list_datasets**: Use the optional search to filter by name.
+
+List datasets (matters) available in your DISCO organization
+- **list_reviewdb_names**: List the names of available review databases
+- **list_data_usage_changes**: g. ingest, deletion) across datasets.
+
+List data-usage change events recorded for your datasets
 
 
 ## 💬 Prompt Examples
@@ -50,38 +54,38 @@ Integrate **DISCO**, the leading legal technology platform, directly into your A
 Here are some examples of how you can interact with the **DISCO** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active legal matters."
+> "List all my datasets."
 
 **🤖 AI Agent:**
-> I've found 5 active matters in your DISCO account, including 'Smith vs. Jones' and 'Project Aurora Review'. Would you like to see the document count for the largest matter?
+> I've found your datasets exposed to the configured API key, including 'Smith vs. Jones' and 'Project Aurora Review'. Would you like to see the data-usage changes for the largest dataset?
 
 ---
 
 **👤 You:**
-> "Show me the metadata for document 'DOC-9988'."
+> "What are the data-usage change events for this month?"
 
 **🤖 AI Agent:**
-> Document 'DOC-9988' was ingested on June 12th. The custodian is 'John Doe'. It is currently tagged as 'Privileged' and 'Highly Confidential'. Should I pull the full audit trail for this document?
+> Here are the recent data-usage change events: two ingestions and one deletion across 'Project Aurora'. The total volume delta is +12.4 GB this month.
 
 ---
 
 **👤 You:**
-> "Search for documents in 'Project Aurora' containing 'contract termination'."
+> "Show me the review-database sizes and names."
 
 **🤖 AI Agent:**
-> I've found 3 documents in 'Project Aurora' matching 'contract termination'. They include an email thread and two PDF attachments. Would you like to see the tags applied to these results?
+> You have 3 review databases: 'Aurora-Review' (84 GB), 'Smith-Priv' (12 GB), and 'Acme-Merge' (6 GB). The 'list_reviewdb_names' tool returned the available names for scoping further queries.
 
 
 ## ❓ FAQ
 
 **Q: How do I get DISCO API credentials?**
-Log in to your DISCO account, navigate to the organization settings, and you can generate or retrieve your API Key and Client ID from the API management section.
+Log in to your DISCO account, navigate to Organization Settings → API, and copy your **API Key** and **Organization ID**. Both are required on every request (sent as the `disco-api-key` and `organization-id` headers).
+
+**Q: Why are my requests returning 403 Access Denied?**
+DISCO enforces CIDR block (IP allowlisting) verification per organization. You must add the MCP's egress IP address as a trusted source in Organization Settings → API, or every request will be rejected with 403 regardless of key correctness.
 
 **Q: Can the agent download legal documents?**
-This integration currently focuses on retrieving technical metadata and auditing document tags and statuses. Accessing full document content for download is managed via the DISCO platform.
-
-**Q: Is the integration secure for sensitive legal data?**
-Yes, it uses official DISCO API protocols and only accesses the matters and documents exposed via your API key permissions, ensuring enterprise-grade security.
+No. The public DISCO API is read-only and exposes dataset, data-usage-change, and review-metric endpoints — not document content or downloads. Managing document content is done via the DISCO platform itself.
 
 
 ## Installation & Usage

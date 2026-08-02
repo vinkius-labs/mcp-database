@@ -34,7 +34,6 @@ Integrate **DeveloperHub**, the specialized platform for developer documentation
 
 ## Available Tools (10)
 - **get_account_metadata**: Retrieve metadata and usage limits for your DeveloperHub account
-- **get_documentation_page_content**: Get the full content and metadata for a specific documentation page
 - **get_documentation_sitemap**: Retrieve a structural map of all pages in a project
 - **get_documentation_project_details**: Get detailed information for a specific documentation project
 - **list_product_changelogs**: List all changelog entries associated with a documentation project
@@ -43,6 +42,7 @@ Integrate **DeveloperHub**, the specialized platform for developer documentation
 - **list_recently_updated_pages**: Identify documentation pages that have been recently modified
 - **list_documentation_versions**: List all versions (e.g. v1.0, v2.0) available for a project
 - **search_documentation_portal**: Search for specific keywords across all pages in a documentation project
+- **get_documentation_page_content**: Get the full content and metadata for a specific documentation page
 
 
 ## 💬 Prompt Examples

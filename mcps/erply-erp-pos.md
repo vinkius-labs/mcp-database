@@ -33,16 +33,16 @@ Integrate **Erply**, the powerful enterprise resource planning (ERP) and point-o
 
 
 ## Available Tools (10)
+- **quick_retail_performance_audit**: Retrieve a high-level summary of products, sales, and stock
+- **list_latest_sales_transactions**: Identify the most recently recorded sales documents
+- **search_products_by_name**: Search for products using a name keyword
 - **get_erply_user_metadata**: Retrieve metadata and settings for the current Erply user
 - **list_inventory_stock_levels**: List real-time inventory levels across all products
 - **get_product_detailed_data**: Get detailed settings and information for a specific product
-- **quick_retail_performance_audit**: Retrieve a high-level summary of products, sales, and stock
 - **list_crm_customers**: List all customers registered in your ERP
 - **list_sales_documents**: List all sales invoices and documents
 - **list_retail_price_lists**: List all active price lists and promotion schemes
 - **list_retail_products**: List all products in your Erply retail account
-- **list_latest_sales_transactions**: Identify the most recently recorded sales documents
-- **search_products_by_name**: Search for products using a name keyword
 
 
 ## 💬 Prompt Examples

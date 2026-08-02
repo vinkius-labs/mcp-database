@@ -38,6 +38,12 @@ Connect your **Drip** account to any AI agent and take full control of your e-co
 
 ## Available Tools (10)
 - **list_tags**: List all tags in your Drip account
+- **list_campaigns**: Returns campaign IDs, names, statuses, and subscriber counts.
+
+List Drip email series campaigns
+- **list_workflows**: Returns workflow IDs, names, and statuses (active/paused/draft).
+
+List Drip automation workflows
 - **list_subscribers**: Returns emails, tags, custom fields, and lifecycle stage.
 
 List Drip subscribers. Drip is an e-commerce CRM/email platform
@@ -50,21 +56,15 @@ Create or update a Drip subscriber
 - **tag_subscriber**: Tags drive automation and segmentation.
 
 Apply a tag to a Drip subscriber
-- **remove_tag**: Drops the raw data tag relationship bypassing the standard UI triggers.
-
-Remove a tag from a Drip subscriber
-- **list_campaigns**: Returns campaign IDs, names, statuses, and subscriber counts.
-
-List Drip email series campaigns
-- **list_workflows**: Returns workflow IDs, names, and statuses (active/paused/draft).
-
-List Drip automation workflows
 - **start_workflow**: Starts a subscriber onto an executing node loop.
 
 Start a subscriber on a Drip automation workflow
 - **record_event**: Events trigger automations.
 
 Record a custom event for a Drip subscriber
+- **remove_tag**: Drops the raw data tag relationship bypassing the standard UI triggers.
+
+Remove a tag from a Drip subscriber
 
 
 ## 💬 Prompt Examples

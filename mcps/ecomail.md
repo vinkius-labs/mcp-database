@@ -33,10 +33,10 @@ Integrate **Ecomail**, the powerful marketing automation and email platform, dir
 
 
 ## Available Tools (10)
-- **get_ecomail_account_metadata**: Retrieve metadata and usage limits for your Ecomail account
 - **get_campaign_performance_details**: Get detailed information and metrics for a specific email campaign
 - **quick_marketing_volume_audit**: Retrieve a high-level summary of campaign and list activity
 - **get_subscriber_profile**: Get full profile and history for a specific subscriber by email
+- **get_ecomail_account_metadata**: Retrieve metadata and usage limits for your Ecomail account
 - **list_marketing_address_lists**: List all contact address lists configured in your Ecomail account
 - **list_email_marketing_campaigns**: List all email campaigns
 - **list_latest_marketing_campaigns**: Identify the most recently created or sent campaigns
