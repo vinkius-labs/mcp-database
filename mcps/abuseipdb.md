@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire network security and IP auditin
 
 
 ## Available Tools (4)
-- **check_ip_address**: Check an IP address against the AbuseIPDB database
 - **check_api_status**: Check if the AbuseIPDB service is operational
 - **get_abuse_blacklist**: Retrieve the current list of most reported IP addresses
 - **get_ip_abuse_reports**: Get a list of reports for a specific IP address
+- **check_ip_address**: Check an IP address against the AbuseIPDB database
 
 
 ## 💬 Prompt Examples

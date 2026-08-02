@@ -33,13 +33,13 @@ Connect **ZoomInfo** to your AI agent and access the world's largest B2B contact
 
 
 ## Available Tools (8)
-- **search_contacts**: Search contacts
 - **search_companies**: Search companies
 - **enrich_contact**: Enrich contact
+- **search_intent**: Search intent signals
 - **enrich_company**: Enrich company
 - **get_usage**: Get API usage
 - **list_intent_topics**: List intent topics
-- **search_intent**: Search intent signals
+- **search_contacts**: Search contacts
 - **get_company_news**: Get company news
 
 

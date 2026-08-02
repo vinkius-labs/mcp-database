@@ -36,6 +36,12 @@ Your AI agent becomes an elite cognitive search gateway to all your internal dat
 
 
 ## Available Tools (7)
+- **list_corpora**: Lists all corpora (searchable datasets) in the Vectara account
+- **perform_semantic_search**: Provide one or more comma-separated corpus keys and the query text.
+
+Executes a semantic search across one or more corpora
+- **list_chat_sessions**: Lists previous RAG chat sessions
+- **list_corpus_documents**: Lists all indexed documents within a specific corpus
 - **execute_rag_chat**: Provide corpus keys and the user query to get a summarized AI response with citations.
 
 Executes a RAG-powered chat completion
@@ -43,12 +49,6 @@ Executes a RAG-powered chat completion
 
 Permanently removes a document from a corpus
 - **get_corpus_details**: Retrieves metadata and configuration for a specific corpus
-- **list_chat_sessions**: Lists previous RAG chat sessions
-- **list_corpora**: Lists all corpora (searchable datasets) in the Vectara account
-- **list_corpus_documents**: Lists all indexed documents within a specific corpus
-- **perform_semantic_search**: Provide one or more comma-separated corpus keys and the query text.
-
-Executes a semantic search across one or more corpora
 
 
 ## 💬 Prompt Examples

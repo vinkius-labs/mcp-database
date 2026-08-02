@@ -33,13 +33,9 @@ Equip your AI agent with complete read and write access to your **Veracode** eco
 
 
 ## Available Tools (10)
-- **create_application**: Provide the app schema and profile name as a JSON string.
-
-Create a new Veracode application profile container
 - **delete_application**: This action is irreversible.
 
 Delete a Veracode application permanently
-- **get_api_health**: Check the health of Veracode connection
 - **get_application_details**: Information includes its Veracode compliance policy status, business criticality rating, deployment state, and risk scores.
 
 Get a detailed profile of a Veracode application
@@ -51,10 +47,14 @@ Get precise vulnerability details for a specific flaw/finding
 List all Veracode AppSec Applications
 - **list_dynamic_analyses**: List configured Dynamic Analysis (DAST) scans
 - **list_security_findings**: Retrieve the unified security findings for an application
+- **create_application**: Provide the app schema and profile name as a JSON string.
+
+Create a new Veracode application profile container
 - **list_sandboxes**: List all testing sandboxes linked to an application
 - **list_veracode_users**: Used to manage RBAC roles.
 
 List authorized Veracode identity users
+- **get_api_health**: Check the health of Veracode connection
 
 
 ## 💬 Prompt Examples

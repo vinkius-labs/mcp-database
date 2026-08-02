@@ -39,6 +39,11 @@ No more manual navigation through complex banking dashboards to verify a payment
 
 
 ## Available Tools (9)
+- **list_payment_settlements**: Lists funds that have been settled to your account
+- **list_webhook_endpoints**: Lists all registered webhook notification endpoints
+- **refund_payment_order**: Provide the order code and the amount to refund.
+
+Refunds a previously completed payment
 - **create_payment_order**: Provide the payment token, amount, currency, and order description.
 
 Creates a new payment order in Worldpay
@@ -47,11 +52,6 @@ Creates a new payment order in Worldpay
 - **get_order_details**: Retrieves details for a specific payment order
 - **get_settlement_details**: Retrieves granular details for a specific settlement
 - **get_token_details**: Retrieves metadata for a specific payment token
-- **list_payment_settlements**: Lists funds that have been settled to your account
-- **list_webhook_endpoints**: Lists all registered webhook notification endpoints
-- **refund_payment_order**: Provide the order code and the amount to refund.
-
-Refunds a previously completed payment
 
 
 ## 💬 Prompt Examples

@@ -5,7 +5,7 @@
 
 ## Overview
 
-**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+**Category:** [databases](../categories/databases.md)
 
 Manage no-code databases via Baserow — list tables, query rows, create records and manage schemas from any AI agent.
 
@@ -36,9 +36,6 @@ No more clicking through the Baserow UI to find a record or update a field value
 
 
 ## Available Tools (10)
-- **create_row**: Requires the table ID and a JSON object with field_name: value pairs matching the table schema. Use list_fields to discover available field names. Returns the created row with its ID and all field values.
-
-Create a new row in a Baserow table
 - **delete_row**: Provide the table ID and row ID. WARNING: this action is irreversible.
 
 Delete a row from a Baserow table
@@ -66,6 +63,9 @@ List views configured for a Baserow table
 - **update_row**: Requires the table ID, row ID and a JSON object with field_name: value pairs for the fields to update. Only provided fields will be modified. Use list_fields to discover available field names.
 
 Update an existing row in a Baserow table
+- **create_row**: Requires the table ID and a JSON object with field_name: value pairs matching the table schema. Use list_fields to discover available field names. Returns the created row with its ID and all field values.
+
+Create a new row in a Baserow table
 
 
 ## 💬 Prompt Examples

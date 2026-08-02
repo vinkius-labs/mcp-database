@@ -42,10 +42,6 @@ Your AI becomes a universal smart home assistant, translating your natural langu
 
 
 ## Available Tools (12)
-- **list_climate_actions**: List available climate/thermostat control actions
-- **get_zapier_config_link**: Use this link to expose new actions for AI control.
-
-Get the configuration link for setting up more smart home actions
 - **execute_zapier_action**: Primary method for controlling devices through Zapier NLA.
 
 Execute a specific exposed action by ID with natural language instructions
@@ -55,7 +51,6 @@ Execute a specific exposed action by ID with natural language instructions
 - **send_natural_language_command**: Zapier interprets the command and routes it to the best matching action automatically.
 
 Send any smart home command using natural language through Zapier
-- **preview_zapier_zap**: Preview a Zap from a natural language description
 - **search_zapier_actions**: Returns matching actions that can be executed via the NLA API.
 
 Search for available actions across 5000+ apps using natural language
@@ -64,6 +59,11 @@ Search for available actions across 5000+ apps using natural language
 
 List available smart home actions across 5000+ app integrations
 - **trigger_ai_zap**: Trigger/execute a specific AI-enabled zap
+- **preview_zapier_zap**: Preview a Zap from a natural language description
+- **list_climate_actions**: List available climate/thermostat control actions
+- **get_zapier_config_link**: Use this link to expose new actions for AI control.
+
+Get the configuration link for setting up more smart home actions
 
 
 ## 💬 Prompt Examples

@@ -38,8 +38,6 @@ No more manual JSON querying in complex database consoles. Your AI agent becomes
 
 
 ## Available Tools (7)
-- **get_class_schema**: Retrieves the schema definition for a specific class (collection)
-- **get_instance_metadata**: Retrieves metadata about the Weaviate instance
 - **get_cluster_nodes**: Retrieves operational information about the Weaviate cluster nodes
 - **get_object_details**: Retrieves a specific data object by its UUID
 - **get_full_schema**: Retrieves the complete Weaviate schema (all collections)
@@ -49,6 +47,8 @@ Lists data objects within a specific class
 - **search_near_vector**: Provide a class name and a query vector as a JSON array of floats.
 
 Performs a nearest neighbor vector similarity search
+- **get_class_schema**: Retrieves the schema definition for a specific class (collection)
+- **get_instance_metadata**: Retrieves metadata about the Weaviate instance
 
 
 ## 💬 Prompt Examples
