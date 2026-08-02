@@ -36,16 +36,16 @@ No more jumping between the Tailscale admin console and your terminal. Your AI a
 
 
 ## Available Tools (13)
-- **authorize_device**: Authorize Device
-- **create_auth_key**: Create Auth Key
-- **delete_auth_key**: Delete Auth Key
 - **delete_device**: Delete Device
+- **get_device**: Get Device Details
 - **get_tailnet_acl**: Get Tailnet Policy (ACL)
 - **get_auth_key**: Get Auth Key
-- **get_device**: Get Device Details
 - **get_user**: Get User
 - **list_auth_keys**: List Auth Keys
 - **list_tailnet_devices**: List Tailnet Devices
+- **authorize_device**: Authorize Device
+- **create_auth_key**: Create Auth Key
+- **delete_auth_key**: Delete Auth Key
 - **list_users**: List Users
 - **update_tailnet_acl**: Update Tailnet Policy (ACL)
 - **update_device_tags**: Update Device Tags

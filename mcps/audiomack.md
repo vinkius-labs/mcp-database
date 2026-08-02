@@ -34,7 +34,6 @@ Connect your **Audiomack** account to any AI agent and explore a vast library of
 
 
 ## Available Tools (28)
-- **add_track_to_playlist**: Add a track to a playlist (Requires Auth)
 - **create_playlist**: Create a new playlist (Requires Auth)
 - **delete_playlist**: Delete a playlist (Requires Auth)
 - **favorite_music**: Favorite a track or album (Requires Auth)
@@ -60,6 +59,7 @@ Connect your **Audiomack** account to any AI agent and explore a vast library of
 - **unfollow_artist**: Unfollow an artist (Requires Auth)
 - **unrepost_music**: Remove a reposted track or album (Requires Auth)
 - **update_playlist**: Edit an existing playlist (Requires Auth)
+- **add_track_to_playlist**: Add a track to a playlist (Requires Auth)
 - **get_artist_followers**: Get followers of an artist
 - **get_recent_music**: Get most recent music
 

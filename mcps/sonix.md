@@ -37,10 +37,6 @@ No more manual uploading and waiting in browser tabs. Your AI acts as a media as
 
 
 ## Available Tools (30)
-- **get_media**: Get media status and details
-- **get_transcript_json**: Get JSON transcript with word-level timestamps
-- **create_batch_summarization**: Create a batch summarization for a folder
-- **create_folder**: Create a new folder
 - **create_media_export**: Create a media export
 - **create_share**: Share a media file with a user
 - **create_summarization**: Create a summarization for a media file
@@ -50,7 +46,9 @@ No more manual uploading and waiting in browser tabs. Your AI acts as a media as
 - **delete_share**: Remove a share from a media file
 - **get_batch_summarization**: Get batch summarization details
 - **get_media_export**: Get media export status
+- **get_media**: Get media status and details
 - **get_summarization**: Get summarization details
+- **get_transcript_json**: Get JSON transcript with word-level timestamps
 - **get_transcript_srt**: Get SRT transcript file
 - **get_transcript_text**: Get plain text transcript
 - **get_transcript_vtt**: Get VTT transcript file
@@ -60,12 +58,14 @@ No more manual uploading and waiting in browser tabs. Your AI acts as a media as
 - **list_folders**: List all folders
 - **list_media**: List media files
 - **list_shares**: List shares for a media file
-- **list_users**: List all users in the account
-- **split_transcript**: Automatically split transcript into subtitles
-- **update_folder**: Update a folder
 - **update_media**: Update media attributes
 - **update_transcript**: Update transcript words and speakers
 - **update_user**: Update a user role
+- **create_batch_summarization**: Create a batch summarization for a folder
+- **create_folder**: Create a new folder
+- **list_users**: List all users in the account
+- **split_transcript**: Automatically split transcript into subtitles
+- **update_folder**: Update a folder
 - **submit_media**: Submit new media for transcription
 
 

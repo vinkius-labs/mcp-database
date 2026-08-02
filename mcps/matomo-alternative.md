@@ -36,6 +36,14 @@ No more digging through complex dashboards to find your conversion rates or top-
 
 
 ## Available Tools (7)
+- **track_bulk**: Send multiple tracking requests in bulk
+- **track_action**: Requires idsite.
+
+Track a page view, event, or ecommerce action in Matomo
+- **get_visits_summary**: get to retrieve metrics like nb_visits, nb_actions, bounce_count.
+
+Get visits summary metrics
+- **get_wp_processed_report**: Get processed report via WordPress REST API
 - **get_image_graph**: get for a specific site and period.
 
 Generate static PNG graph data
@@ -45,14 +53,6 @@ Get a processed human-readable report
 - **get_report_metadata**: getReportMetadata to list available API functions and their metadata.
 
 Get metadata for all available API reports
-- **track_bulk**: Send multiple tracking requests in bulk
-- **track_action**: Requires idsite.
-
-Track a page view, event, or ecommerce action in Matomo
-- **get_visits_summary**: get to retrieve metrics like nb_visits, nb_actions, bounce_count.
-
-Get visits summary metrics
-- **get_wp_processed_report**: Get processed report via WordPress REST API
 
 
 ## 💬 Prompt Examples

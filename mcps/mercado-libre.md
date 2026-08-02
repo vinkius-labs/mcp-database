@@ -38,7 +38,6 @@ Connect your **Mercado Libre** seller account to any AI agent to streamline your
 - **create_item**: Requires title, category_id, price, currency_id, available_quantity, buying_mode, condition, listing_type_id, and pictures.
 
 Publish a new item on Mercado Libre
-- **create_test_user**: Create a test user
 - **get_claim**: Get details of a post-purchase claim
 - **get_me**: Get current Mercado Libre user info
 - **get_order**: Get details for a specific order
@@ -53,6 +52,7 @@ Publish a new item on Mercado Libre
 - **search_orders**: Search orders for a seller
 - **search_questions**: Search questions for a seller
 - **send_post_sale_message**: Send a post-sale message
+- **create_test_user**: Create a test user
 - **answer_question**: Answer a buyer question
 
 

@@ -35,16 +35,16 @@ Connect **Together AI** to your AI agent to leverage the world's fastest inferen
 
 
 ## Available Tools (27)
-- **create_audio_speech**: Text-to-Speech (TTS) generation
 - **cancel_batch**: Cancel a running batch job
 - **create_chat_completion**: 3-70B-Instruct-Turbo.
 
 Generate a model response for a given chat conversation
 - **create_batch**: Create a new asynchronous batch job
-- **create_fine_tune**: Create a fine-tuning job
-- **create_image_generation**: Generate images from text prompts
+- **list_fine_tunes**: List all fine-tuning jobs
+- **create_audio_speech**: Text-to-Speech (TTS) generation
 - **create_audio_transcription**: Transcriptions (STT) from audio file
 - **create_endpoint**: Create a dedicated endpoint for predictable performance
+- **create_fine_tune**: Create a fine-tuning job
 - **delete_endpoint**: Delete a dedicated endpoint
 - **delete_file**: Delete an uploaded file
 - **delete_fine_tune**: Delete a fine-tuning job
@@ -53,10 +53,10 @@ Generate a model response for a given chat conversation
 - **get_endpoint**: Get details of a specific dedicated endpoint
 - **get_file**: Retrieve metadata for a specific file
 - **get_fine_tune**: Get details of a specific fine-tuning job
+- **create_image_generation**: Generate images from text prompts
 - **list_endpoints**: List all dedicated endpoints
 - **list_files**: List all uploaded files
 - **list_fine_tune_checkpoints**: List checkpoints for a fine-tuning job
-- **list_fine_tunes**: List all fine-tuning jobs
 - **list_models**: List all available models on Together AI
 - **create_rerank**: Reorder documents by relevance to a query
 - **create_text_completion**: Generate text completions for a given prompt

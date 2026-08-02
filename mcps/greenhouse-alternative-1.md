@@ -7,50 +7,52 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Manage your recruiting pipeline via Greenhouse — list applications, track candidate activity, and manage job board posts directly from any AI agent.
+Hire the right people with structured interviewing, customizable pipelines, and data-driven recruiting that scales with your team.
 
 ## Description
-Connect your **Greenhouse** account to any AI agent to streamline your hiring process and candidate management through natural conversation.
+Connect your **Greenhouse** account to any AI agent and take full control of your hiring pipeline and recruitment workflows through natural conversation.
 
 ### What you can do
 
-- **Application Management** — List all applications, retrieve specific details, and update or delete candidate records using the Harvest API.
-- **Candidate Insights** — Access the complete activity feed for any candidate to understand their journey and history.
-- **Job Board Integration** — List published jobs, offices, and departments, and even submit applications directly to your job boards.
-- **Candidate Ingestion** — Add new applications to existing candidates to keep your database up to date.
+- **Candidate Orchestration** — List and manage candidate records programmatically, including contact info, current company, and professional titles
+- **Application Lifecycle** — Monitor job applications and take immediate action by advancing candidates to the next stage or marking rejections with reasons
+- **Job Management** — Access detailed metadata for all active job openings, including hiring teams and department structures
+- **Organizational Visibility** — Retrieve complete company department lists and office locations to coordinate recruitment logistics
+- **System Monitoring** — Check API connectivity and Harvest API status directly through your agent for reliable data operations
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Greenhouse API Token
-3. Start managing your recruitment workflow from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **Harvest API Key** from Greenhouse (Configure > Dev Center > API Credential Management)
+3. Note a valid **User ID** to perform actions 'On-Behalf-Of' for auditing purposes
+4. Start managing your talent acquisition from Claude, Cursor, or any MCP client
+
+No more manual status updates or digging through candidates in the ATS. Your AI acts as your dedicated recruitment coordinator.
 
 ### Who is this for?
 
-- **Recruiters & Sourcers** — quickly check candidate statuses and activity feeds without switching tabs.
-- **Hiring Managers** — review job posts and application details directly within your workflow.
-- **HR Operations** — automate the maintenance of candidate records and application data.
+- **Recruiters & Sources** — instantly identify candidate statuses and advance top talent through the pipeline using natural language
+- **Hiring Managers** — retrieve job opening details and department structures without leaving your planning tools
+- **HR Operations** — manage office locations and department organization through automated queries
 
 
-## Available Tools (16)
-- **add_application_to_candidate**: Add an application to an existing candidate
-- **create_partner_tracking_link**: Create a source-tracked link for a job
-- **delete_application**: Delete a candidate application
-- **get_application**: Retrieve a specific application
-- **get_audit_log_events**: Retrieve audit log events
-- **get_board_job**: Retrieve a specific job post and its questions
-- **get_candidate_activity_feed**: Retrieve a candidate activity feed
-- **get_partner_candidates**: Retrieve candidate status via Partner API
-- **list_applications**: List all applications in Greenhouse
-- **list_board_departments**: List departments and their associated jobs
-- **list_board_jobs**: List all published job posts on a board
-- **list_board_offices**: List offices and their associated jobs
-- **list_partner_jobs**: List jobs visible to the partner user
-- **submit_board_application**: Requires Job Board API Key credential.
+## Available Tools (12)
+- **get_api_status**: Get account connectivity
+- **get_candidate_details**: Get candidate info
+- **get_job_details**: Get job metadata
+- **list_candidates**: List recruitment candidates
+- **advance_application**: Move candidate to next stage
+- **create_candidate**: Can include first name, last name, and company.
 
-Submit a job application to a board
-- **submit_partner_candidate**: Submit new candidates or prospects
-- **update_application**: Update an application
+Add new candidate
+- **list_departments**: List company departments
+- **list_open_jobs**: List active job openings
+- **list_offices**: List office locations
+- **reject_application**: Requires a reason ID.
+
+Reject job application
+- **update_candidate**: Modify candidate info
+- **list_applications**: List job applications
 
 
 ## 💬 Prompt Examples
@@ -58,38 +60,38 @@ Submit a job application to a board
 Here are some examples of how you can interact with the **Greenhouse** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all current applications in Greenhouse."
+> "Find candidate with email 'candidate@example.com' and show their status."
 
 **🤖 AI Agent:**
-> I've retrieved the applications. You have 12 active applications, including 'Software Engineer' for Jane Doe and 'Product Manager' for John Smith. Would you like details on a specific one?
+> I've located the candidate record for 'candidate@example.com' (ID: can_123). They are currently in the 'Technical Interview' stage for the 'Senior Engineer' role. Would you like to see their feedback history?
 
 ---
 
 **👤 You:**
-> "Show me the activity feed for candidate ID 98765."
+> "List all active job openings for the 'Engineering' department."
 
 **🤖 AI Agent:**
-> Fetching activity for candidate 98765... The latest activities include a 'Technical Interview' completed yesterday and a status change to 'Offer Pending'.
+> Scanning jobs... I found 5 active openings in Engineering: 'Full Stack Dev' (ID: job_401), 'Site Reliability Engineer' (ID: job_402), and 3 others. Which one should I provide details for?
 
 ---
 
 **👤 You:**
-> "What are the job posts currently listed on the 'tech-careers' board?"
+> "Advance application ID 'app_987' to the next stage."
 
 **🤖 AI Agent:**
-> I found 3 active posts on the 'tech-careers' board: Senior Backend Developer, UI/UX Designer, and DevOps Engineer. Do you need the full details for any of these?
+> Action complete! Application 'app_987' has been advanced to the 'Onsite Interview' stage. The hiring team has been notified of the stage change in Greenhouse.
 
 
 ## ❓ FAQ
 
-**Q: Can I see the history of interactions with a specific candidate?**
-Yes, you can use the `get_candidate_activity_feed` tool with a candidate's ID to retrieve their full activity history, including notes and status changes.
+**Q: What is the 'On-Behalf-Of' requirement?**
+Greenhouse requires write operations to be associated with a specific User ID for auditing. This ID is passed in the header to identify who performed the action.
 
-**Q: How do I list all open positions on our job board?**
-Use the `list_board_jobs` tool providing your job board token. This will return all active job posts currently published.
+**Q: Can I search for candidates by email?**
+Yes! Use the `list_candidates` tool and provide the `email` parameter to find a specific person's recruitment record and history.
 
-**Q: Is it possible to update application details directly through the AI?**
-Yes, the `update_application` tool allows you to modify existing application fields by providing the application ID and the data payload.
+**Q: How do I advance an application to the next stage?**
+The `advance_application` tool requires a valid application ID. It will automatically move the candidate to the next sequential stage defined in your job's workflow.
 
 
 ## Installation & Usage

@@ -34,6 +34,28 @@ Connect your **Fireblocks** workspace to any AI agent to orchestrate institution
 
 
 ## Available Tools (40)
+- **create_internal_wallet**: Create a new internal wallet container
+- **create_transaction**: Create a new transaction (Transfer, Mint, Burn, etc.)
+- **create_vault_account_asset_address**: Generate a new deposit address
+- **create_vault_account_asset**: Create a new wallet for an asset in a vault
+- **get_vault_account_asset**: Get balance for a specific asset in a vault
+- **get_vault_account**: Retrieve details for a specific vault account
+- **list_blockchains**: List all supported blockchains
+- **list_contracts**: List whitelisted contracts
+- **list_external_wallets**: List all external wallets
+- **list_internal_wallets**: List all internal wallets
+- **list_owned_nfts**: List all owned NFT tokens
+- **list_staking_chains**: List supported staking chains
+- **list_vault_account_asset_addresses**: List deposit addresses for an asset
+- **list_vault_accounts**: List vault accounts with pagination
+- **list_webhook_notifications**: List notifications sent to a webhook
+- **refresh_nfts**: Refresh NFT data for a vault account
+- **register_asset**: Register a custom asset (e.g., ERC-20)
+- **resend_webhooks**: Resend failed webhooks
+- **stake_position**: Initiate a staking position
+- **update_gas_station**: Update auto-fueling thresholds
+- **update_vault_account**: Rename a vault account
+- **validate_travel_rule**: Validate a transaction against Travel Rule requirements
 - **create_vault_account**: Create a new vault account
 - **create_webhook**: Create a new webhook subscription
 - **drop_transaction**: Drop an ETH/EVM transaction
@@ -49,31 +71,9 @@ Connect your **Fireblocks** workspace to any AI agent to orchestrate institution
 - **add_contract**: Add a new contract to the whitelist
 - **cancel_transaction**: Cancel a pending transaction
 - **create_external_wallet**: Create a new external wallet container
-- **create_internal_wallet**: Create a new internal wallet container
-- **create_transaction**: Create a new transaction (Transfer, Mint, Burn, etc.)
-- **create_vault_account_asset_address**: Generate a new deposit address
-- **create_vault_account_asset**: Create a new wallet for an asset in a vault
-- **get_vault_account_asset**: Get balance for a specific asset in a vault
-- **get_vault_account**: Retrieve details for a specific vault account
-- **list_blockchains**: List all supported blockchains
-- **list_contracts**: List whitelisted contracts
-- **list_external_wallets**: List all external wallets
-- **list_internal_wallets**: List all internal wallets
-- **list_owned_nfts**: List all owned NFT tokens
-- **list_staking_chains**: List supported staking chains
 - **list_staking_positions**: List active staking positions
 - **list_transactions**: Retrieve transaction history with filters
 - **list_vasps**: List Virtual Asset Service Providers (VASPs)
-- **list_vault_account_asset_addresses**: List deposit addresses for an asset
-- **list_vault_accounts**: List vault accounts with pagination
-- **list_webhook_notifications**: List notifications sent to a webhook
-- **refresh_nfts**: Refresh NFT data for a vault account
-- **register_asset**: Register a custom asset (e.g., ERC-20)
-- **resend_webhooks**: Resend failed webhooks
-- **stake_position**: Initiate a staking position
-- **update_gas_station**: Update auto-fueling thresholds
-- **update_vault_account**: Rename a vault account
-- **validate_travel_rule**: Validate a transaction against Travel Rule requirements
 
 
 ## 💬 Prompt Examples

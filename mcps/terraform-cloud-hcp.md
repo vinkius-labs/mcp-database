@@ -34,11 +34,32 @@ Connect your **Terraform Cloud (HCP)** account to any AI agent to orchestrate yo
 
 
 ## Available Tools (42)
-- **add_team_user**: Add a user to a team
-- **add_team_workspace_access**: Grant a team access to a workspace
 - **apply_run**: Apply a planned run
+- **get_state_version_outputs**: Get outputs for a state version
+- **add_team_workspace_access**: Grant a team access to a workspace
 - **apply_variable_set_to_workspace**: Apply a variable set to a workspace
 - **associate_run_task_to_workspace**: Associate a run task with a workspace
+- **create_team**: Create a new team
+- **create_variable_set**: Create a variable set
+- **create_workspace**: Create a new workspace
+- **discard_run**: Discard a run
+- **explorer_query**: Execute an explorer query across workspaces
+- **force_unlock_workspace**: Force unlock a workspace
+- **get_current_state_version**: Get current state version for a workspace
+- **get_plan_json**: Get JSON execution plan output
+- **list_audit_events**: List organization audit events
+- **list_organizations**: List HCP Terraform organizations
+- **list_projects**: List projects in an organization
+- **list_teams**: List teams in an organization
+- **safe_delete_workspace**: Safe delete a workspace
+- **show_apply**: Show details of an apply
+- **show_organization**: Show details of a specific organization
+- **show_plan**: Show details of a plan
+- **unlock_workspace**: Unlock a workspace
+- **update_organization**: Update an existing organization
+- **update_team**: Update a team
+- **upload_policy_code**: Upload code for a policy
+- **add_team_user**: Add a user to a team
 - **cancel_run**: Cancel a run
 - **create_notification_configuration**: Create a notification configuration for a workspace
 - **create_organization**: Create a new organization
@@ -50,32 +71,11 @@ Connect your **Terraform Cloud (HCP)** account to any AI agent to orchestrate yo
 - **create_run_task**: Create a run task
 - **create_run**: Create a new run (plan/apply)
 - **create_state_version**: Create a new state version
-- **create_team**: Create a new team
-- **create_variable_set**: Create a variable set
-- **create_workspace**: Create a new workspace
 - **create_workspace_variable**: Create a variable in a workspace
 - **destroy_organization**: Destroy an organization
-- **discard_run**: Discard a run
-- **explorer_query**: Execute an explorer query across workspaces
-- **force_unlock_workspace**: Force unlock a workspace
-- **get_current_state_version**: Get current state version for a workspace
-- **get_plan_json**: Get JSON execution plan output
-- **get_state_version_outputs**: Get outputs for a state version
-- **list_audit_events**: List organization audit events
-- **list_organizations**: List HCP Terraform organizations
-- **list_projects**: List projects in an organization
-- **list_teams**: List teams in an organization
 - **list_workspaces**: List workspaces in an organization
 - **lock_workspace**: Lock a workspace
 - **remove_team_user**: Remove a user from a team
-- **safe_delete_workspace**: Safe delete a workspace
-- **show_apply**: Show details of an apply
-- **show_organization**: Show details of a specific organization
-- **show_plan**: Show details of a plan
-- **unlock_workspace**: Unlock a workspace
-- **update_organization**: Update an existing organization
-- **update_team**: Update a team
-- **upload_policy_code**: Upload code for a policy
 
 
 ## 💬 Prompt Examples

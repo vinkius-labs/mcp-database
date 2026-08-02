@@ -36,6 +36,11 @@ No more manual logging into the CRM to check deal status. Your AI acts as a dedi
 
 
 ## Available Tools (12)
+- **get_api_status**: Check connection
+- **get_deal_details**: Get deal info
+- **get_organization_details**: Get company info
+- **get_person_details**: Get contact info
+- **list_user_activities**: List tasks and meetings
 - **list_sales_deals**: List CRM deals
 - **list_crm_organizations**: List client companies
 - **list_crm_persons**: List individual contacts
@@ -43,11 +48,6 @@ No more manual logging into the CRM to check deal status. Your AI acts as a dedi
 - **list_pipeline_stages**: List workflow stages
 - **search_deals_by_name**: Find deals
 - **create_new_deal**: Add new deal
-- **get_api_status**: Check connection
-- **get_deal_details**: Get deal info
-- **get_organization_details**: Get company info
-- **get_person_details**: Get contact info
-- **list_user_activities**: List tasks and meetings
 
 
 ## 💬 Prompt Examples

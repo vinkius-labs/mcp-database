@@ -22,11 +22,11 @@ By strictly scoping access, your AI can safely manage structured data, store cha
 
 
 ## Available Tools (5)
-- **delete_item**: Delete an item from the DynamoDB table
 - **get_item**: Get an item from the DynamoDB table
 - **put_item**: Put an item into the DynamoDB table
 - **query_table**: Query the DynamoDB table
 - **scan_table**: Scan the DynamoDB table
+- **delete_item**: Delete an item from the DynamoDB table
 
 
 ## 💬 Prompt Examples

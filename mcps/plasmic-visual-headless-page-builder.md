@@ -35,12 +35,12 @@ No more switching between the Plasmic Studio and your terminal to check project 
 
 
 ## Available Tools (9)
-- **count_cms_items**: Count items in a Plasmic CMS database table
-- **create_cms_item**: Create a new item in a Plasmic CMS database table
-- **delete_cms_item**: Delete an item from a Plasmic CMS database table
 - **get_model**: Provides a JSON representation (SDUI) of the project element tree
 - **publish_cms_item**: Publish a draft item in a Plasmic CMS database table
 - **query_cms_items**: Fetch items from a Plasmic CMS database table
+- **count_cms_items**: Count items in a Plasmic CMS database table
+- **create_cms_item**: Create a new item in a Plasmic CMS database table
+- **delete_cms_item**: Delete an item from a Plasmic CMS database table
 - **render_html**: Fetches generated HTML for a specific component
 - **update_cms_item**: Update an existing item in a Plasmic CMS database table
 - **update_project**: Programmatically updates Plasmic projects
