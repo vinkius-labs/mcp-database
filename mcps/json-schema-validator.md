@@ -14,9 +14,9 @@ The JSON Schema Validator MCP server provides high-precision validation of JSON 
 
 
 ## Available Tools (3)
-- **evaluate_schema_compatibility**: Evaluates if a new schema is compatible with a base schema
 - **lint_json_schema**: Performs structural linting on a JSON Schema
 - **validate_json_document**: Validates a JSON document against a JSON Schema
+- **evaluate_schema_compatibility**: Evaluates if a new schema is compatible with a base schema
 
 
 ## 💬 Prompt Examples

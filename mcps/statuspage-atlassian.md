@@ -42,10 +42,10 @@ Connect your **Statuspage (Atlassian)** account to any AI agent to monitor and m
 - **get_page**: Get a specific page
 - **get_status_embed_config**: Get status embed config settings
 - **get_user_permissions**: Get a user's permissions
-- **list_page_access_users**: Get a list of page access users
-- **list_pages**: Get a list of pages
 - **update_page_access_user_components**: Add/Replace components for page access user
 - **update_page_access_user_metrics**: Add/Replace metrics for page access user
+- **list_page_access_users**: Get a list of page access users
+- **list_pages**: Get a list of pages
 - **update_page_access_user**: Update page access user
 - **update_page**: ).
 

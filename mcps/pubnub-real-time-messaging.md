@@ -35,10 +35,14 @@ Connect your **PubNub** account to any AI agent to orchestrate real-time communi
 
 
 ## Available Tools (31)
+- **get_channel**: Get a specific channel (App Context)
+- **presence_here_now**: Get current channel occupancy (Here Now)
+- **presence_set_state**: Set presence state for a user in a channel
+- **presence_where_now**: Get channels a user is in (Where Now)
+- **publish_message**: Publish a message to a channel
 - **delete_message_history**: Delete message history for channels
 - **generate_file_upload_url**: Generate a file upload URL
 - **get_all_users**: Get all users (App Context)
-- **get_channel**: Get a specific channel (App Context)
 - **get_file_url**: Get a file URL
 - **get_memberships**: Get memberships for a user (App Context)
 - **get_user**: Get a specific user (App Context)
@@ -49,11 +53,7 @@ Connect your **PubNub** account to any AI agent to orchestrate real-time communi
 - **pam_revoke_token**: Revoke a PAM v3 token
 - **presence_get_state**: Get presence state for a user in a channel
 - **presence_heartbeat**: Send presence heartbeat
-- **presence_here_now**: Get current channel occupancy (Here Now)
 - **presence_leave**: Leave a channel (Presence)
-- **presence_set_state**: Set presence state for a user in a channel
-- **presence_where_now**: Get channels a user is in (Where Now)
-- **publish_message**: Publish a message to a channel
 - **push_manage**: Manage or list push notification channels for a device (APNS v2)
 - **push_remove_all**: Remove all push notification channels for a device (APNS v2)
 - **remove_user**: Remove a user (App Context)

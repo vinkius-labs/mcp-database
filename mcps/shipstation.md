@@ -34,6 +34,17 @@ Connect your **ShipStation** account to any AI agent and take full control of yo
 
 
 ## Available Tools (28)
+- **list_stores**: List stores
+- **list_tags**: List all account tags
+- **list_orders_by_tag**: List orders by status and tag
+- **list_orders**: List orders with filters
+- **list_packages**: List packages for a carrier
+- **list_services**: List services for a carrier
+- **list_shipments**: List shipments (generated labels)
+- **list_warehouses**: List warehouses (Ship From Locations)
+- **list_webhooks**: List webhooks
+- **mark_as_shipped**: Mark an order as shipped
+- **register_account**: Register a new ShipStation account
 - **add_funds**: Add funds to a carrier account
 - **add_tag_to_order**: Add a tag to an order
 - **create_label_for_order**: Create a shipping label for an order
@@ -46,17 +57,6 @@ Connect your **ShipStation** account to any AI agent and take full control of yo
 - **get_rates**: Get shipping rates
 - **list_carriers**: List all connected carriers
 - **list_customers**: List customers with filters
-- **list_orders_by_tag**: List orders by status and tag
-- **list_orders**: List orders with filters
-- **list_packages**: List packages for a carrier
-- **list_services**: List services for a carrier
-- **list_shipments**: List shipments (generated labels)
-- **list_stores**: List stores
-- **list_tags**: List all account tags
-- **list_warehouses**: List warehouses (Ship From Locations)
-- **list_webhooks**: List webhooks
-- **mark_as_shipped**: Mark an order as shipped
-- **register_account**: Register a new ShipStation account
 - **remove_tag_from_order**: Remove a tag from an order
 - **subscribe_webhook**: Subscribe to a webhook
 - **unsubscribe_webhook**: Unsubscribe from a webhook

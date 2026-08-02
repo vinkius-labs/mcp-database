@@ -34,6 +34,7 @@ Connect your **Nasdaq Data Link** (formerly Quandl) account to any AI agent to a
 
 
 ## Available Tools (4)
+- **get_datatable_metadata**: Get metadata for a Nasdaq datatable
 - **request_bulk_download**: Returns a status (PENDING, RUNNING, SUCCEEDED) and file URLs.
 
 Request a bulk download for a datatable
@@ -41,7 +42,6 @@ Request a bulk download for a datatable
 - **get_datatable**: Use filters to narrow down results.
 
 Get unsorted data from a Nasdaq datatable
-- **get_datatable_metadata**: Get metadata for a Nasdaq datatable
 
 
 ## 💬 Prompt Examples

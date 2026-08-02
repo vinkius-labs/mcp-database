@@ -34,6 +34,24 @@ Connect your **Statsig** project to any AI agent to manage feature rollouts and 
 
 
 ## Available Tools (12)
+- **list_gates**: Requires STATSIG_CONSOLE_API_KEY.
+
+List all feature gates in the project
+- **get_config**: Requires STATSIG_SERVER_SECRET_KEY.
+
+Fetches configuration values for a dynamic config or experiment
+- **get_dynamic_config**: Requires STATSIG_CONSOLE_API_KEY.
+
+Read a specific dynamic config
+- **get_gate**: Requires STATSIG_CONSOLE_API_KEY.
+
+Read a specific feature gate
+- **get_layer**: Requires STATSIG_SERVER_SECRET_KEY.
+
+Fetches parameter values from a layer
+- **log_event**: Requires STATSIG_SERVER_SECRET_KEY.
+
+Logs custom events for analytics and metric calculation
 - **list_dynamic_configs**: Requires STATSIG_CONSOLE_API_KEY.
 
 List all dynamic configs in the project
@@ -49,24 +67,6 @@ Create a new feature gate
 - **delete_gate**: Requires STATSIG_CONSOLE_API_KEY.
 
 Delete a feature gate
-- **get_config**: Requires STATSIG_SERVER_SECRET_KEY.
-
-Fetches configuration values for a dynamic config or experiment
-- **get_dynamic_config**: Requires STATSIG_CONSOLE_API_KEY.
-
-Read a specific dynamic config
-- **get_gate**: Requires STATSIG_CONSOLE_API_KEY.
-
-Read a specific feature gate
-- **get_layer**: Requires STATSIG_SERVER_SECRET_KEY.
-
-Fetches parameter values from a layer
-- **list_gates**: Requires STATSIG_CONSOLE_API_KEY.
-
-List all feature gates in the project
-- **log_event**: Requires STATSIG_SERVER_SECRET_KEY.
-
-Logs custom events for analytics and metric calculation
 - **update_gate**: Requires STATSIG_CONSOLE_API_KEY.
 
 Update an existing feature gate

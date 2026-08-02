@@ -34,6 +34,12 @@ Connect your **OpenFGA** instance to any AI agent to manage Relationship-Based A
 
 
 ## Available Tools (16)
+- **list_authorization_models**: List authorization models
+- **list_users**: List all users who have a relation to an object
+- **read_changes**: Read changes to relationship tuples
+- **read_tuples**: Query stored relationship tuples
+- **write_authorization_model**: Write a new authorization model
+- **write_tuples**: Add or delete relationship tuples
 - **check_relation**: Check if a user has a relation to an object
 - **create_store**: Create a new OpenFGA store
 - **delete_store**: Delete an OpenFGA store
@@ -41,14 +47,8 @@ Connect your **OpenFGA** instance to any AI agent to manage Relationship-Based A
 - **get_authorization_model**: Get a specific authorization model
 - **get_store**: Get OpenFGA store details
 - **health_check**: Check OpenFGA server health
-- **list_authorization_models**: List authorization models
 - **list_objects**: List all objects a user can access
 - **list_stores**: List all OpenFGA stores
-- **list_users**: List all users who have a relation to an object
-- **read_changes**: Read changes to relationship tuples
-- **read_tuples**: Query stored relationship tuples
-- **write_authorization_model**: Write a new authorization model
-- **write_tuples**: Add or delete relationship tuples
 - **batch_check_relations**: Perform multiple checks in one request
 
 

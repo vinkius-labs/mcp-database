@@ -33,10 +33,10 @@ Connect **Play.ht** to your AI agent to generate high-quality Text-to-Speech (TT
 
 
 ## Available Tools (2)
+- **generate_tts_stream**: Generate audio from text using Play.ht TTS
 - **create_instant_voice_clone**: Provide the audio file as a base64 encoded string.
 
 Create an instant voice clone from an audio sample
-- **generate_tts_stream**: Generate audio from text using Play.ht TTS
 
 
 ## 💬 Prompt Examples

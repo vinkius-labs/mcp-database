@@ -34,7 +34,6 @@ Connect **Lago** to your AI agent to automate your metering and billing infrastr
 
 
 ## Available Tools (12)
-- **batch_events**: Send a batch of usage events
 - **create_billable_metric**: Create a billable metric
 - **create_coupon**: Create a coupon
 - **create_plan**: Create a new billing plan
@@ -47,6 +46,7 @@ Connect **Lago** to your AI agent to automate your metering and billing infrastr
 - **upsert_customer**: Requires an external_id.
 
 Create or update a customer in Lago
+- **batch_events**: Send a batch of usage events
 - **apply_coupon**: Apply a coupon to a customer
 
 

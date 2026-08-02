@@ -33,11 +33,11 @@ Connect your **LibreChat** instance to any AI agent and gain programmatic contro
 
 
 ## Available Tools (4)
+- **login**: Login to LibreChat to get access and refresh tokens
 - **chat_completions**: Model corresponds to an Agent ID.
 
 Create a chat completion using the Agents API
 - **list_models**: List available LibreChat models/agents
-- **login**: Login to LibreChat to get access and refresh tokens
 - **open_responses**: Create a response using the Open Responses API
 
 

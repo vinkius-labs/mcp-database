@@ -36,13 +36,13 @@ Your AI can now act as a GIS specialist, helping you audit map data or contribut
 
 
 ## Available Tools (33)
+- **close_changeset**: Close a changeset
 - **close_note**: Close a map note
 - **comment_note**: Add a comment to an existing map note
 - **create_changeset**: Create a new changeset
 - **create_element**: Create a new node, way, or relation
 - **create_note**: Create a new map note
 - **delete_element**: Delete a node, way, or relation
-- **delete_message**: Delete a message
 - **download_changeset**: Download a changeset in OsmChange format
 - **get_auth_user_details**: Get details for the authenticated user
 - **get_changeset**: Read a changeset by ID
@@ -55,7 +55,6 @@ Your AI can now act as a GIS specialist, helping you audit map data or contribut
 - **get_map_data**: Get map data (nodes, ways, relations) within a bounding box
 - **get_message**: Read a specific message
 - **get_note**: Read a map note by ID
-- **get_outbox**: Get the authenticated user's message outbox
 - **get_permissions**: Get OAuth permissions for the authenticated user
 - **get_user_preferences**: Get preferences for the authenticated user
 - **get_user**: Get details for a specific user
@@ -68,7 +67,8 @@ Your AI can now act as a GIS specialist, helping you audit map data or contribut
 - **update_element**: Update an existing node, way, or relation
 - **update_message_status**: Update the read status of a message
 - **upload_gpx**: Upload a GPS trace (GPX)
-- **close_changeset**: Close a changeset
+- **delete_message**: Delete a message
+- **get_outbox**: Get the authenticated user's message outbox
 
 
 ## 💬 Prompt Examples
