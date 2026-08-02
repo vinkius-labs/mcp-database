@@ -37,6 +37,7 @@ No more manual deal logging or digging through complex accounting tables. Your A
 
 
 ## Available Tools (12)
+- **create_client**: Create a new client
 - **create_invoice**: Requires client_id and invoice items.
 
 Create a new invoice
@@ -50,7 +51,6 @@ Create a new invoice
 - **list_invoices**: List all invoices
 - **list_payments**: List recent payments
 - **list_products**: List all products
-- **create_client**: Create a new client
 
 
 ## 💬 Prompt Examples

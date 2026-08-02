@@ -44,21 +44,9 @@ No more manual satellite data analysis or complex GIS workflows. Your AI acts as
 
 
 ## Available Tools (12)
-- **get_soil_moisture**: Returns soil moisture levels at different depths (surface, root zone, deep soil), moisture anomalies, and irrigation recommendations. Essential for irrigation scheduling, drought monitoring, water stress detection, and water resource optimization. AI agents should use this when users ask "what is the soil moisture level in my field", "do I need to irrigate", or need soil moisture data for irrigation planning.
-
-Get soil moisture data for irrigation scheduling and drought monitoring
-- **get_weather_forecast**: Includes temperature, precipitation, humidity, wind, and solar radiation forecasts. Essential for planting schedule optimization, harvest timing, irrigation planning, frost protection, and seasonal crop management. AI agents should reference this when users ask "what is the weather forecast for my field next week", "get seasonal precipitation forecast", or need forward-looking weather data for agricultural planning.
-
-Get weather forecasts for agricultural planning and irrigation scheduling
-- **get_weather**: Includes temperature (air, soil), precipitation, humidity, wind speed/direction, solar radiation, evapotranspiration, and growing degree days. Essential for irrigation planning, frost risk assessment, disease/pest pressure modeling, and yield prediction. AI agents should use this when users ask "what was the weather like on my field last month", "get temperature and rainfall data", or need historical weather analysis for crop management decisions.
-
-Get historical and current weather data for agricultural fields
 - **add_field**: Accepts field boundary as GeoJSON polygon or coordinates, field name, crop type, and planting date. Returns the created field with ID, calculated area, and monitoring activation status. Essential for onboarding new fields into the monitoring system, expanding farm coverage, and setting up new crop seasons. AI agents should use this when users ask "add a new field for monitoring", "register this field boundary", or need to set up satellite monitoring for a new agricultural area.
 
 Register a new agricultural field for satellite monitoring
-- **get_crop_advisory**: Returns recommendations for irrigation, fertilization, pest control, harvest timing, and field operations. Essential for data-driven farm management, precision agriculture, and optimizing crop inputs. AI agents should use this when users ask "what should I do in my field this week", "get irrigation and fertilizer recommendations", or need AI-powered crop management advice.
-
-Get AI-powered crop management advisories and recommendations
 - **get_deforestation_alerts**: Uses satellite imagery to detect tree cover loss, land clearing, and vegetation changes over time. Essential for conservation compliance, environmental monitoring, carbon credit verification, and land use change detection. AI agents should reference this when users ask "show deforestation alerts in my area", "detect land use changes", or need environmental compliance monitoring.
 
 Get deforestation and land change detection alerts
@@ -80,6 +68,18 @@ Get Synthetic Aperture Radar (SAR) analysis for all-weather crop monitoring
 - **get_satellite_images**: Returns true-color and false-color composites, NDVI overlays, and raw spectral bands. Essential for visual crop assessment, change detection, damage assessment, and downloading imagery for further processing. AI agents should reference this when users ask "show me satellite images of my field from last week", "get latest Sentinel-2 imagery", or need satellite imagery for visual assessment.
 
 Retrieve satellite imagery for agricultural fields from multiple sources
+- **get_weather**: Includes temperature (air, soil), precipitation, humidity, wind speed/direction, solar radiation, evapotranspiration, and growing degree days. Essential for irrigation planning, frost risk assessment, disease/pest pressure modeling, and yield prediction. AI agents should use this when users ask "what was the weather like on my field last month", "get temperature and rainfall data", or need historical weather analysis for crop management decisions.
+
+Get historical and current weather data for agricultural fields
+- **get_soil_moisture**: Returns soil moisture levels at different depths (surface, root zone, deep soil), moisture anomalies, and irrigation recommendations. Essential for irrigation scheduling, drought monitoring, water stress detection, and water resource optimization. AI agents should use this when users ask "what is the soil moisture level in my field", "do I need to irrigate", or need soil moisture data for irrigation planning.
+
+Get soil moisture data for irrigation scheduling and drought monitoring
+- **get_crop_advisory**: Returns recommendations for irrigation, fertilization, pest control, harvest timing, and field operations. Essential for data-driven farm management, precision agriculture, and optimizing crop inputs. AI agents should use this when users ask "what should I do in my field this week", "get irrigation and fertilizer recommendations", or need AI-powered crop management advice.
+
+Get AI-powered crop management advisories and recommendations
+- **get_weather_forecast**: Includes temperature, precipitation, humidity, wind, and solar radiation forecasts. Essential for planting schedule optimization, harvest timing, irrigation planning, frost protection, and seasonal crop management. AI agents should reference this when users ask "what is the weather forecast for my field next week", "get seasonal precipitation forecast", or need forward-looking weather data for agricultural planning.
+
+Get weather forecasts for agricultural planning and irrigation scheduling
 
 
 ## 💬 Prompt Examples

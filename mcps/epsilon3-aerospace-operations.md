@@ -33,16 +33,16 @@ Integrate **Epsilon3**, the leading software platform for aerospace and complex 
 
 
 ## Available Tools (10)
-- **list_latest_procedure_executions**: Identify the most recently started or completed procedure runs
-- **get_run_execution_telemetry**: Get detailed execution data and telemetry for a specific procedure run
-- **list_successfully_completed_runs**: Identify procedure runs that have reached a "Completed" status
-- **list_operations_flagged_issues**: List all issues and discrepancies flagged during procedure runs
 - **list_active_procedure_runs**: List all active and historical procedure runs/executions
+- **list_latest_procedure_executions**: Identify the most recently started or completed procedure runs
 - **get_epsilon3_account_metadata**: Retrieve metadata and limits for your Epsilon3 account
 - **get_procedure_detailed_content**: Get detailed settings and steps for a specific procedure
 - **quick_operations_health_audit**: Retrieve a high-level summary of procedures and active runs
 - **list_operations_procedures**: List all operational procedures configured in your Epsilon3 account
 - **list_aerospace_projects**: List all high-level projects managed in Epsilon3
+- **get_run_execution_telemetry**: Get detailed execution data and telemetry for a specific procedure run
+- **list_successfully_completed_runs**: Identify procedure runs that have reached a "Completed" status
+- **list_operations_flagged_issues**: List all issues and discrepancies flagged during procedure runs
 
 
 ## 💬 Prompt Examples

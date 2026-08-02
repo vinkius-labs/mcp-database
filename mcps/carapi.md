@@ -34,9 +34,6 @@ Connect to **CarAPI** and explore the comprehensive vehicle database through nat
 
 
 ## Available Tools (8)
-- **get_bodies**: ).
-
-Get list of all body types
 - **get_drives**: Get list of all drive types
 - **get_engines**: ).
 
@@ -56,6 +53,9 @@ Search vehicles by year, make, model and more
 - **get_years**: Returns year values for filtering vehicle searches.
 
 Get list of all available years in the database
+- **get_bodies**: ).
+
+Get list of all body types
 
 
 ## 💬 Prompt Examples

@@ -33,16 +33,16 @@ Integrate **Delta Projects**, the efficient programmatic advertising platform, d
 
 
 ## Available Tools (10)
+- **list_managed_advertisers**: List all advertisers configured in the platform
+- **list_ad_campaigns**: List all programmatic advertising campaigns in your Delta Projects account
+- **list_ad_creatives**: List all creative assets (banners, videos) uploaded to the platform
+- **list_running_campaigns**: List only the ad campaigns that are currently active and serving
+- **list_target_audiences**: List all first-party and third-party audiences available for targeting
+- **list_media_placements**: List all configured ad placements and media sources
+- **search_campaigns_by_name**: Search for an ad campaign using a keyword
 - **get_platform_metadata**: Retrieve metadata and configuration for your Delta Projects account
 - **get_campaign_performance**: Get detailed settings and performance metrics for a specific campaign
 - **get_custom_ad_report**: Retrieve a custom performance report based on specific dimensions
-- **list_running_campaigns**: List only the ad campaigns that are currently active and serving
-- **list_managed_advertisers**: List all advertisers configured in the platform
-- **list_target_audiences**: List all first-party and third-party audiences available for targeting
-- **list_ad_campaigns**: List all programmatic advertising campaigns in your Delta Projects account
-- **list_ad_creatives**: List all creative assets (banners, videos) uploaded to the platform
-- **list_media_placements**: List all configured ad placements and media sources
-- **search_campaigns_by_name**: Search for an ad campaign using a keyword
 
 
 ## 💬 Prompt Examples

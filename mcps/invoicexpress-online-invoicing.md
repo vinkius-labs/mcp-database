@@ -35,28 +35,28 @@ Connect your **InvoiceXpress** account to any AI agent and take full control of 
 
 
 ## Available Tools (16)
+- **update_client**: Só os parâmetros enviados serão substituídos, os restantes mantêm-se inalterados.
+
+Atualizar os dados demográficos de um cliente existente
+- **list_items**: Listar todos os artigos e serviços configurados no InvoiceXpress
 - **list_clients**: Listar todos os clientes registados no InvoiceXpress
 - **get_client**: Obter detalhes completos de um cliente pelo seu ID
 - **find_client**: Pesquisar um cliente pelo nome empresarial
 - **create_client**: Se não for fornecido um NIF, usa o valor Consumer (ou similar requerido pelo portal).
 
 Registar um novo cliente no InvoiceXpress com dados fiscais completos
-- **update_client**: Só os parâmetros enviados serão substituídos, os restantes mantêm-se inalterados.
-
-Atualizar os dados demográficos de um cliente existente
-- **list_items**: Listar todos os artigos e serviços configurados no InvoiceXpress
 - **get_item**: Obter detalhes de um artigo ou serviço pelo seu ID
 - **create_item**: Precisas sempre de um ID de taxa legal (consulta a ferramenta list_taxes previamente).
 
 Criar um novo artigo ou serviço para ser faturado
 - **list_invoices**: Listar todas as faturas emitidas
 - **get_invoice**: Obter todos os detalhes e o link PDF de uma fatura
-- **list_estimates**: Listar todos os orçamentos emitidos de forma paginada
 - **list_credit_notes**: Listar todas as notas de crédito (devolução / acerto)
 - **list_receipts**: Listar todos os recibos de pagamento de clientes
 - **list_guides**: Listar guias de transporte
 - **list_taxes**: Listar as taxas de IVA e isenções ativas na conta
 - **list_sequences**: Listar as séries de faturas ativas, ex: FT 2026/
+- **list_estimates**: Listar todos os orçamentos emitidos de forma paginada
 
 
 ## 💬 Prompt Examples

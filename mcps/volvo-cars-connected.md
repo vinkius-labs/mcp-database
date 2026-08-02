@@ -34,9 +34,7 @@ Connect your AI agent to the **Volvo Cars Connected Vehicle API**. This integrat
 
 
 ## Available Tools (10)
-- **list_vehicles**: Retrieve a list of all vehicles associated with the Volvo ID
 - **get_battery_status**: Retrieve the current battery level and charging status
-- **get_doors_status**: Check if doors are locked or unlocked
 - **get_engine_status**: Check the current state of the engine
 - **get_fuel_status**: Retrieve the current fuel level and range
 - **get_odometer**: Retrieve the current odometer reading
@@ -44,6 +42,8 @@ Connect your AI agent to the **Volvo Cars Connected Vehicle API**. This integrat
 - **get_tires_status**: Check the pressure status of all tires
 - **get_vehicle_details**: Get comprehensive metadata for a specific vehicle
 - **get_windows_status**: Check if windows are open or closed
+- **list_vehicles**: Retrieve a list of all vehicles associated with the Volvo ID
+- **get_doors_status**: Check if doors are locked or unlocked
 
 
 ## 💬 Prompt Examples

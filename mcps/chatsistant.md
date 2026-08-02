@@ -38,12 +38,12 @@ Connect your **Chatsistant** account to any AI agent and manage your AI chatbot 
 - **get_bot**: Get details for a specific bot
 - **get_conversation**: Get details for a specific conversation
 - **list_bots**: List Chatsistant bots
-- **list_conversations**: Optionally filter by bot ID.
-
-List bot conversations
 - **list_data_sources**: List bot data sources
 - **list_webhooks**: List configured webhooks
 - **query_bot**: Query a bot knowledge base
+- **list_conversations**: Optionally filter by bot ID.
+
+List bot conversations
 
 
 ## 💬 Prompt Examples

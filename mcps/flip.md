@@ -36,13 +36,13 @@ Connect your **Flip** (Flip.id) account to any AI agent and automate your financ
 
 
 ## Available Tools (12)
+- **list_banks**: List supported banks
 - **create_bill**: Create payment link (Bill)
 - **create_disbursement**: Send money (payout)
 - **get_balance**: Check account balance
 - **get_bill**: Get bill details
 - **list_cities**: List supported cities
 - **get_disbursement**: Get payout details
-- **list_banks**: List supported banks
 - **list_bills**: List payment links
 - **list_disbursements**: List payouts
 - **list_payments**: List received payments
