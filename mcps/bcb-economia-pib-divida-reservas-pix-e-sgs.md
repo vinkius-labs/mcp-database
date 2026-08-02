@@ -29,6 +29,9 @@ Obter a dívida líquida do setor público como % do PIB
 - **get_reservas**: Fundamental para avaliação da capacidade do país de honrar compromissos externos. Série SGS: 3546.
 
 Obter as reservas internacionais do Brasil em USD
+- **get_pib**: Este é o indicador IBC-Br (Índice de Atividade Econômica do Banco Central), uma proxy mensal do PIB. Série SGS: 4380.
+
+Obter o PIB mensal do Brasil — variação percentual
 - **get_balanca_comercial**: O Brasil é um grande exportador de commodities agrícolas, minério e petróleo. Série SGS: 22707.
 
 Obter o saldo da balança comercial brasileira
@@ -41,9 +44,6 @@ Obter estatísticas do PIX — volume e quantidade de transações
 - **get_serie_bcb**: 000+ séries do Sistema Gerenciador de Séries Temporais (SGS). Pesquise códigos em bcb.gov.br/estabilidadefinanceira/seriestemporais. Exemplos: 11 (Selic), 433 (IPCA), 1 (Dólar).
 
 Consultar qualquer série temporal do BCB pelo código SGS
-- **get_pib**: Este é o indicador IBC-Br (Índice de Atividade Econômica do Banco Central), uma proxy mensal do PIB. Série SGS: 4380.
-
-Obter o PIB mensal do Brasil — variação percentual
 
 
 ## 💬 Prompt Examples

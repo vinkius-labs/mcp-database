@@ -35,9 +35,6 @@ No more wrestling with complex ANS JSON schemas or slow CMS interfaces. Your AI 
 
 
 ## Available Tools (10)
-- **create_ans_content**: The payload_json MUST strictly comply with the requested Arc Native Schema (ANS) version.
-
-Create new content in the Arc XP Content CMS
 - **delete_ans_content**: Use with extreme caution as this destroys datacenter assets irreversibly.
 
 Delete content from the Arc XP Content CMS
@@ -52,6 +49,9 @@ Fetch content from the Arc XP Content API
 
 Search for content residing in the Arc XP Newsroom
 - **search_photo_assets**: Search for photo assets in the Arc XP Media Library
+- **create_ans_content**: The payload_json MUST strictly comply with the requested Arc Native Schema (ANS) version.
+
+Create new content in the Arc XP Content CMS
 - **update_ans_content**: Required to publish revisions to articles.
 
 Update existing content in the Arc XP Content CMS

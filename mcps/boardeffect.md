@@ -38,12 +38,12 @@ Connect your **BoardEffect (Diligent)** account to any AI agent and orchestrate 
 - **get_account_info**: Get current user account information
 - **get_meeting**: Get specific meeting details
 - **get_member**: Get specific member details
-- **list_archives**: List archived board records
 - **list_documents**: List documents in a specific workroom
-- **list_meetings**: List all board meetings
 - **list_members**: List all board members
 - **list_polls**: List board polls
 - **list_surveys**: List board surveys
+- **list_archives**: List archived board records
+- **list_meetings**: List all board meetings
 - **list_workrooms**: List all workrooms
 
 

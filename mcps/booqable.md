@@ -34,12 +34,12 @@ Connect your **Booqable** rental management account to any AI agent and orchestr
 
 
 ## Available Tools (10)
-- **check_availability**: Check item availability for specific dates
-- **create_order**: Create a new rental order
-- **get_customer**: Get details of a specific customer
 - **get_order**: Get details of a specific order
+- **create_order**: Create a new rental order
 - **get_product_group**: Get details of a specific product group
 - **list_customers**: List all customers
+- **check_availability**: Check item availability for specific dates
+- **get_customer**: Get details of a specific customer
 - **list_orders**: List all rental orders
 - **list_product_groups**: List all rental product groups (catalog)
 - **start_order**: Mark an order as started (picked up)

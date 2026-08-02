@@ -34,15 +34,15 @@ Connect your **BIM 360 Field** account to any AI agent and orchestrate your cons
 
 
 ## Available Tools (9)
-- **get_project**: Get details of a specific project
 - **list_checklists**: List checklists for a project
 - **list_companies**: List companies associated with a project
 - **list_issue_types**: List configured issue types for a project
+- **list_projects**: List all accessible BIM 360 Field projects
+- **list_users**: List users associated with a project
+- **get_project**: Get details of a specific project
 - **list_issues**: List issues for a project
 - **list_locations**: List locations configured for a project
-- **list_projects**: List all accessible BIM 360 Field projects
 - **list_tasks**: List tasks/equipment for a project
-- **list_users**: List users associated with a project
 
 
 ## 💬 Prompt Examples

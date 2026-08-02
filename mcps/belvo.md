@@ -35,14 +35,6 @@ Connect your **Belvo** account to any AI agent and orchestrate your financial da
 
 
 ## Available Tools (12)
-- **get_account**: Get full details for a specific financial account by ID
-- **get_investments**: Use for wealth management and investment analysis.
-
-List investment portfolios and holdings across linked brokerage and investment accounts
-- **get_transaction**: Get complete details for a specific financial transaction
-- **list_balances**: Use for cash position monitoring.
-
-List current and available balances for all linked accounts
 - **get_link**: Returns institution, access mode, status, refresh rates, and credential storage details.
 
 Get detailed status and metadata for a specific Belvo link connection
@@ -67,6 +59,14 @@ List recurring expense patterns — subscriptions, utility bills, loan payments 
 - **list_transactions**: Returns paginated results. Use for spending analysis, reconciliation, or audit trails.
 
 List financial transactions across all linked accounts — debits, credits, transfers
+- **get_account**: Get full details for a specific financial account by ID
+- **get_investments**: Use for wealth management and investment analysis.
+
+List investment portfolios and holdings across linked brokerage and investment accounts
+- **get_transaction**: Get complete details for a specific financial transaction
+- **list_balances**: Use for cash position monitoring.
+
+List current and available balances for all linked accounts
 
 
 ## 💬 Prompt Examples

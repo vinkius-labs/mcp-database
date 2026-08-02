@@ -33,6 +33,7 @@ Connect your **Bling ERP** API token to any AI agent and integrate Brazil's lead
 
 
 ## Available Tools (18)
+- **consultar_nfe**: Consultar detalhes de uma NF-e (itens, valores, situação)
 - **listar_contatos**: Listar todos os contatos (clientes, fornecedores, transportadoras) cadastrados no Bling
 - **consultar_contato**: Consultar dados completos de um contato pelo ID
 - **incluir_contato**: Cadastrar novo contato (cliente/fornecedor) no Bling
@@ -44,7 +45,6 @@ Connect your **Bling ERP** API token to any AI agent and integrate Brazil's lead
 - **consultar_pedido**: Consultar detalhes completos de um pedido de venda (itens, valores, situação)
 - **listar_pedidos_compra**: Listar todos os pedidos de compra
 - **listar_nfe**: Listar NF-e (Notas Fiscais Eletrônicas de Produto) emitidas
-- **consultar_nfe**: Consultar detalhes de uma NF-e (itens, valores, situação)
 - **listar_nfce**: Listar NFC-e (Notas Fiscais de Consumidor Eletrônicas — cupom fiscal)
 - **listar_nfse**: Listar NFS-e (Notas Fiscais de Serviço Eletrônicas)
 - **contas_receber**: Listar contas a receber (cobranças, boletos, PIX)

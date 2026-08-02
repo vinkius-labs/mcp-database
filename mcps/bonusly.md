@@ -35,7 +35,6 @@ Connect your **Bonusly** employee recognition account to any AI agent and orches
 
 ## Available Tools (10)
 - **get_bonus**: Get details of a specific bonus
-- **get_leaderboard**: Get the recognition leaderboard
 - **get_my_profile**: Get the profile of the authenticated user
 - **get_user**: Get profile details for an employee
 - **give_bonus**: Give a recognition bonus to an employee
@@ -44,6 +43,7 @@ Connect your **Bonusly** employee recognition account to any AI agent and orches
 - **list_redemptions**: List recent reward redemptions
 - **list_users**: List all employees
 - **list_company_values**: List company values and hashtags
+- **get_leaderboard**: Get the recognition leaderboard
 
 
 ## 💬 Prompt Examples

@@ -34,7 +34,6 @@ Connect your **Bookeo** account to any AI agent and manage your booking-based bu
 - **list_bookings**: Includes participant count, time, product, price, and payment status. Filter by date range.
 
 List bookings and reservations
-- **get_booking**: Get booking details
 - **list_products**: Includes pricing, duration, and capacity.
 
 List bookable products
@@ -50,6 +49,7 @@ List payments
 Check available time slots
 - **get_business_info**: Get business info
 - **list_webhooks**: List active webhooks
+- **get_booking**: Get booking details
 
 
 ## 💬 Prompt Examples

@@ -7,36 +7,41 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Manage appointments and messaging with Apptoto — track events, contacts, and bookings via AI.
+Reduce no-shows with smart appointment reminders, automated confirmations, and two-way messaging for every booking.
 
 ## Description
-The **Apptoto MCP Server** connects your AI agent to your appointment scheduling and automated messaging platform. Streamline your calendar management, monitor client interactions, and track online bookings using simple natural language.
+Connect your **Apptoto** account to any AI agent and take full control of your automated appointment reminders and client communication workflows through natural conversation.
 
-### Key Features
+### What you can do
 
-- **Appointment Management** — List all upcoming and historical events, and retrieve full metadata for any specific appointment.
-- **Contact Oversight** — Access and search your client database, including names, phone numbers, and email addresses.
-- **Booking Tracking** — Monitor online bookings and check availability for new appointments directly from your chat.
-- **Messaging Lists** — Manage your opt-in and opt-out lists for automated SMS and email reminders.
-- **Account Verification** — Quickly check your API connection and account status using secure API keys.
-- **Workflow Integration** — Create new events and link them to your existing contacts and messaging sequences.
+- **Appointment Orchestration** — List and manage your entire calendar lifecycle programmatically, retrieving detailed high-fidelity metadata for upcoming and past bookings
+- **Communication Intelligence** — Monitor real-time message history and retrieve detailed logs for all sent SMS and email reminders to ensure perfectly coordinated client outreach
+- **Contact & Book Architecture** — Access complete directories of your connected address books and manage client profiles synced across all your scheduling platforms
+- **Calendar Lifecycle Monitoring** — Access and monitor your complete directory of connected calendars directly through your agent to maintain high-fidelity schedule oversight
+- **Operational Visibility** — Access high-level metadata for your account settings and verify API connectivity directly through your agent for instant reporting
+
+### How it works
+
+1. Subscribe to this server
+2. Retrieve your **API Key** and **API Secret** from your Apptoto dashboard (Settings > Advanced > API)
+3. Start orchestrating your client interactions and schedules from Claude, Cursor, or any MCP client
+
+No more manual status checking of reminder logs or digging through fragmented contact lists. Your AI acts as your dedicated scheduling coordinator and communication architect.
 
 ### Who is this for?
 
-- **Service Professionals** — Quickly check your daily schedule and client details without switching between apps.
-- **Office Managers** — Monitor booking trends and ensure all clients are receiving automated reminders.
-- **Sales Teams** — Track appointments and follow up with leads directly from your AI workspace.
+- **Service Providers** — instantly retrieve upcoming schedules and verify if reminders were sent using natural language commands
+- **Office Managers** — monitor client communication history and manage address books without leaving your creative workspace
+- **Developers** — integrate high-speed appointment and messaging intelligence into custom business workflows through simple AI queries
 
 
-## Available Tools (8)
-- **create_event**: Create a new appointment event
-- **get_account_check**: Verify Apptoto account connection
-- **get_contact**: Get details for a specific contact
-- **get_event**: Get details for a specific event
-- **list_bookings**: List all online bookings
-- **list_contacts**: List all contacts in Apptoto
-- **list_events**: List all appointment events
-- **list_lists**: List all opt-in/opt-out messaging lists
+## Available Tools (6)
+- **get_appointment**: Get appointment details
+- **list_address_books**: List all address books
+- **list_appointments**: List all appointments
+- **list_calendars**: List connected calendars
+- **list_contacts**: List contacts in an address book
+- **list_messages**: List recent messages
 
 
 ## 💬 Prompt Examples
@@ -44,38 +49,38 @@ The **Apptoto MCP Server** connects your AI agent to your appointment scheduling
 Here are some examples of how you can interact with the **Apptoto** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my appointments for today."
+> "List all my upcoming appointments for today in Apptoto."
 
 **🤖 AI Agent:**
-> I've retrieved your schedule for today. You have 4 appointments, including 'Consultation with John Smith' at 10:00 AM and 'Follow-up Call' at 2:00 PM.
+> I've retrieved your schedule for today. You currently have 5 appointments, including a 'Technical Consultation' at 2 PM and 4 other sessions. Would you like the detailed high-fidelity metadata for any of these?
 
 ---
 
 **👤 You:**
-> "Find contact details for 'Jane Doe'."
+> "Show the recent SMS reminders sent to my clients."
 
 **🤖 AI Agent:**
-> I've found Jane Doe in your contacts. Her phone number is (555) 123-4567 and her email is jane.doe@example.com.
+> Accessing message logs... I found 10 recent SMS reminders successfully sent today. Highlights include confirmation messages to @user1 and @user2. Need the high-fidelity delivery timestamps?
 
 ---
 
 **👤 You:**
-> "Create a new appointment 'Site Audit' for tomorrow at 9 AM."
+> "List the contacts in address book ID '1024'."
 
 **🤖 AI Agent:**
-> The appointment 'Site Audit' has been successfully created for tomorrow at 9:00 AM.
+> Retrieving contacts... I found 50 synced profiles in address book 1024. Your most active client is John Doe (ID: cont_789). Shall I retrieve his full high-fidelity profile for you?
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Apptoto API Key?**
-Log in to Apptoto, go to **Settings > API**, and you will find your API Key there. If you don't see it, contact Apptoto support.
+**Q: How do I find my Apptoto API Key and Secret?**
+Log in to your account, navigate to **Settings** > **Advanced** > **API**, and generate or copy your unique credentials.
 
-**Q: Can I create new appointments via the API?**
-Yes, you can use the `create_event` tool to add new appointments to your Apptoto calendar. Provide the subject, start time, and end time.
+**Q: Can I list my connected address books via AI?**
+Yes! The `list_address_books` tool allows your agent to retrieve all contact directories currently synced with your Apptoto account.
 
-**Q: Does Apptoto support two-way messaging?**
-Yes, Apptoto supports two-way SMS and email messaging. While this server focuses on event and contact management, the contacts you retrieve feed into your messaging workflows.
+**Q: How do I check sent reminder messages?**
+Use the `list_messages` tool to retrieve high-fidelity historical records of all SMS and email communications dispatched programmatically.
 
 
 ## Installation & Usage

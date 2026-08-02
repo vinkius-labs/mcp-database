@@ -35,7 +35,6 @@ Connect your **Beamer** account to any AI agent and streamline your product comm
 
 ## Available Tools (10)
 - **create_post**: Create a new Beamer post
-- **delete_post**: Delete a Beamer post
 - **get_analytics**: Retrieve Beamer analytics data
 - **get_feedback_details**: Get details of specific feedback
 - **get_post**: Get details of a specific Beamer post
@@ -44,6 +43,7 @@ Connect your **Beamer** account to any AI agent and streamline your product comm
 - **list_posts**: List all Beamer posts
 - **list_users**: List Beamer users
 - **update_post**: Update an existing Beamer post
+- **delete_post**: Delete a Beamer post
 
 
 ## 💬 Prompt Examples

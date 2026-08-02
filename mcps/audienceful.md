@@ -38,9 +38,6 @@ Connect your **Audienceful** account to any AI agent and transform how you manag
 
 Add a new person to your audience
 - **delete_custom_field**: Delete a custom field
-- **delete_person**: Use with caution.
-
-Permanently remove a person from your audience
 - **get_person**: Get details for a specific person by their UID
 - **list_custom_fields**: List all custom fields defined in your audience
 - **list_people**: You can filter by status or search for a specific email address.
@@ -48,6 +45,9 @@ Permanently remove a person from your audience
 List all people in your Audienceful audience
 - **list_send_reports**: List recent email send reports
 - **trigger_automation**: Manually trigger an automation for a person
+- **delete_person**: Use with caution.
+
+Permanently remove a person from your audience
 - **update_person**: Update an existing person profile
 
 

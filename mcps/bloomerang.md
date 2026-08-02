@@ -34,8 +34,8 @@ Connect your **Bloomerang** donor management system to any AI agent and orchestr
 
 
 ## Available Tools (10)
-- **create_constituent**: Create a new individual constituent
 - **list_campaigns**: List all fundraising campaigns
+- **create_constituent**: Create a new individual constituent
 - **list_constituents**: List all constituents (donors)
 - **list_tasks**: List constituent tasks
 - **list_transactions**: List all transactions
