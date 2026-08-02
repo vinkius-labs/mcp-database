@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your entire backend infrastructure with **A
 
 
 ## Available Tools (9)
-- **get_health_status**: Check project health
 - **list_storage_buckets**: List storage buckets
 - **list_collections**: List collections in a database
 - **list_databases**: List all databases
 - **list_documents**: List documents in a collection
+- **get_health_status**: Check project health
+- **list_function_executions**: List function executions
 - **list_bucket_files**: List files in a bucket
 - **list_functions**: List cloud functions
 - **list_users**: List project users
-- **list_function_executions**: List function executions
 
 
 ## 💬 Prompt Examples

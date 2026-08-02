@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your global communication and multilingual 
 
 
 ## Available Tools (10)
+- **check_baidu_status**: Check Baidu Translate API status
+- **translate_to_french**: Translate text to French
 - **detect_language**: Detect language of text
 - **translate_en_to_zh**: Translate English to Chinese
 - **translate_text**: Translate text between languages
 - **translate_to_chinese**: Translate text to Chinese
 - **translate_to_english**: Translate text to English
-- **translate_to_french**: Translate text to French
 - **translate_to_portuguese**: Translate text to Portuguese
 - **translate_to_spanish**: Translate text to Spanish
 - **translate_zh_to_en**: Translate Chinese to English
-- **check_baidu_status**: Check Baidu Translate API status
 
 
 ## 💬 Prompt Examples

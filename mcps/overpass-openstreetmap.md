@@ -36,6 +36,9 @@ Connect to **Overpass API** (OpenStreetMap) and query the world's largest free g
 
 
 ## Available Tools (16)
+- **search_schools**: Returns school names, addresses, phone numbers, websites, student capacity and operator info. Bbox format: lat_min,lon_min,lat_max,lon_max.
+
+Search for schools in a bounding box
 - **custom_query**: The query should be valid Overpass QL syntax. The output format is automatically set to JSON. If no out statement is included, "out geom;" is appended automatically. Example: `node["amenity"="cafe"](51.5,-0.15,51.51,-0.14); out geom;`
 
 Execute a custom Overpass QL query
@@ -78,9 +81,6 @@ Search for pharmacies in a bounding box
 - **search_restaurants**: Optional cuisine filter: "italian", "chinese", "japanese", "indian", "mexican", "thai", "french", "american", "pizza", "burger", "sushi", "vegan", "vegetarian". Bbox format: lat_min,lon_min,lat_max,lon_max.
 
 Search for restaurants in a bounding box
-- **search_schools**: Returns school names, addresses, phone numbers, websites, student capacity and operator info. Bbox format: lat_min,lon_min,lat_max,lon_max.
-
-Search for schools in a bounding box
 - **search_shops**: Optional shop type filter: "supermarket", "convenience", "clothes", "bakery", "butcher", "electronics", "furniture", "hardware", "jewelry", "mall", "bookmaker", "car", "car_repair", "chemist", "florist", "gift", "hairdresser", "mobile_phone", "shoes", "sports", "toys". Bbox format: lat_min,lon_min,lat_max,lon_max.
 
 Search for shops in a bounding box

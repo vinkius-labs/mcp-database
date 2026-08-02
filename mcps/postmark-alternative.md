@@ -5,49 +5,40 @@
 
 ## Overview
 
-**Category:** [industry-titans](../categories/industry-titans.md)
+**Category:** [email-marketing](../categories/email-marketing.md)
 
-Automate transactional email via Postmark — send emails, retrieve templates, inspect bounces, and manage your delivery analytics directly from any AI agent.
+Automate transactional email delivery via Postmark — manage servers, templates, and bounces directly from any AI agent.
 
 ## Description
-Connect your **Postmark** server to any AI agent to fully orchestrate and analyze your transactional email pipeline.
+Connect your **Postmark** account to any AI agent and simplify your transactional email management, deliverability tracking, and template orchestration through natural conversation.
 
 ### What you can do
 
-- **Send Emails & Templates** — Send transactional emails directly from the agent using pre-configured Postmark Templates or Raw HTML.
-- **Investigate Bounces** — Read the server bounce log to find out why specific recipients failed delivery (Hard Bounces, Blocks).
-- **Template Management** — Fetch and review the raw body of your templates to ensure dynamic variables align flawlessly with code.
-- **Outbound Analytics** — Review message stream stats, open rates, and general health metrics directly via chat.
+- **Email Delivery** — Send single or bulk transactional emails programmatically directly from your agent using verified signatures
+- **Template Management** — Query and manage your catalog of email templates to ensure consistent messaging across your server
+- **Bounce Tracking** — Access a history of bounced emails and monitor deliverability issues in real-time
+- **Server & Account Control** — List and manage your Postmark servers and account settings programmatically
+- **Engagement Insights** — Access aggregate performance analytics, including sent and open metrics
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Postmark Server Token
-3. Gain complete control of your application's email notifications from Claude, Cursor, or any MCP-compatible environment
-
-### Who is this for?
-
-- **Software Engineers** — Trigger template dispatches from the terminal and review server logs to debug application email flows seamlessly.
-- **Product Teams** — Monitor bounce rates and verify the visual layout of critical system emails without accessing the Postmark UI.
-- **System Admins** — Quickly query delivery analytics and trace email endpoints for quick operational overviews.
+2. Enter your Postmark Server Token (and optional Account Token) from your settings
+3. Start managing your transactional emails from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools (9)
-- **get_outbound_overview**: Get outbound overview analytics
-- **search_bounces**: You can filter by type, email, or message ID.
-
-Search email bounces
-- **search_outbound_messages**: You can filter by recipient, from email, or status.
-
-Search outbound messages history
-- **send_email**: Requires From, To, and either Subject/HtmlBody or Subject/TextBody.
-
-Send a transactional email
-- **send_email_with_template**: Send an email using a Postmark Template
-- **get_bounces_overview**: Get bounce overview analytics
-- **get_server**: Get Postmark server details
-- **get_template**: Get a specific Postmark template details
-- **list_templates**: List templates in the server
+## Available Tools (11)
+- **get_delivery_stats**: Get email delivery statistics
+- **get_outbound_stats**: Get outbound delivery stats
+- **get_template**: Get details for a specific email template
+- **list_bounces**: List recent email bounces
+- **list_domains**: List all verified sending domains
+- **list_outbound_messages**: List sent messages
+- **list_account_servers**: List account servers
+- **list_email_templates**: List email templates
+- **send_batch_email**: Send emails in batch
+- **send_email**: Send a single email
+- **get_server_info**: Get Postmark server configuration
 
 
 ## 💬 Prompt Examples
@@ -55,38 +46,32 @@ Send a transactional email
 Here are some examples of how you can interact with the **Postmark** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check the bouncing metrics for our transactional emails."
+> "Send a transactional email from support@example.com to john@doe.com with subject 'Reset Password'."
 
 **🤖 AI Agent:**
-> I've analyzed your bounce metrics. The server currently has 14 Hard Bounces and 3 Soft Bounces within the query scope. Overall health looks good! Want me to list the specific emails?
+> I've sent the email. The message ID is '123-abc-456' and it was successfully accepted by Postmark.
 
 ---
 
 **👤 You:**
-> "Can you fetch the HTML body layout of our 'Welcome' template?"
+> "Show me all email bounces from the last 7 days and identify the main failure patterns."
 
 **🤖 AI Agent:**
-> I found your 'Welcome' template (ID: 809214). It expects three variables: `first_name`, `action_url`, and `support_email`. The HTML renders a classic logo-centric email layout.
+> 47 bounces in the last 7 days (1.2% bounce rate). Hard bounces: 28 (invalid addresses), Soft bounces: 14 (mailbox full), Spam complaints: 5. Top offending domain: outlook.com with 12 bounces. 8 addresses were auto-suppressed after repeated failures. Your sender reputation score remains healthy at 97/100. Recommendation: clean 28 invalid addresses from your mailing list to maintain deliverability.
 
 ---
 
 **👤 You:**
-> "Send a standard test email to alice@example.com using our current Postmark setup."
+> "Send a transactional welcome email to new user sarah@meridian.io using the onboarding template."
 
 **🤖 AI Agent:**
-> The email has been processed! Postmark returned success mapping with a Message ID `f8a847a9-2169-45e0-...` indicating instantaneous dispatch.
+> Welcome email sent successfully via Postmark. Recipient: sarah@meridian.io. Template: "Onboarding Welcome v3" (ID: tpl_2847). Subject: "Welcome to the platform, Sarah!". Message ID: msg_9f3a2b. Delivery confirmed in 0.8 seconds. The template automatically personalized the greeting, included the quickstart guide link, and set the first follow-up email to trigger in 24 hours.
 
 
 ## ❓ FAQ
 
-**Q: Can I use this server to actually send operational emails from my account?**
-Yes! The `send_email` and `send_email_with_template` tools will dispatch active live emails using your Postmark server configuration.
-
-**Q: How can I debug a specific user reporting that they didn't receive an email?**
-You can ask the agent to execute `search_outbound_messages` or `search_bounces` using their exact email address. The agent will fetch the delivery log and status codes.
-
-**Q: Do I need the Account Token or the Server Token to use this?**
-You only need the **Server Token**. Postmark divides workflows by servers (environments). Supplying the server token isolates this specific operational environment perfectly.
+**Q: Can I send a transactional email using my AI agent?**
+Yes! Use the `send_email` action. Provide the sender and recipient details along with your subject and message body.
 
 
 ## Installation & Usage

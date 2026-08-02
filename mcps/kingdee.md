@@ -35,6 +35,9 @@ Empower your AI agent to orchestrate your entire enterprise operations with **Ki
 
 
 ## Available Tools (10)
+- **view_form**: View ERP form details
+- **audit_form**: Audit/Approve ERP form
+- **delete_form**: Delete ERP form record
 - **get_org_info**: Get organization metadata
 - **list_forms**: List common ERP forms
 - **query_data**: Execute business query
@@ -42,9 +45,6 @@ Empower your AI agent to orchestrate your entire enterprise operations with **Ki
 - **status_convert**: Convert form status
 - **submit_form**: Submit ERP form
 - **un_audit_form**: Un-audit/Revoke approval
-- **view_form**: View ERP form details
-- **audit_form**: Audit/Approve ERP form
-- **delete_form**: Delete ERP form record
 
 
 ## 💬 Prompt Examples

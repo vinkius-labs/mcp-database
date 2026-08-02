@@ -38,6 +38,9 @@ Stop clicking through the Railway dashboard to check deployment status or manage
 
 
 ## Available Tools (11)
+- **list_volumes**: Each volume has an ID, name, associated service ID and size in gigabytes. Volumes provide persistent storage that survives deployments and restarts.
+
+List persistent volumes in a Railway project
 - **delete_variable**: Provide the service_id, environment_id and variable name. WARNING: the variable will no longer be available to deployments after deletion.
 
 Delete an environment variable from a Railway service
@@ -68,9 +71,6 @@ List environment variables for a Railway service
 - **get_viewer**: Use this to verify which account the API token belongs to.
 
 Get current authenticated Railway user details
-- **list_volumes**: Each volume has an ID, name, associated service ID and size in gigabytes. Volumes provide persistent storage that survives deployments and restarts.
-
-List persistent volumes in a Railway project
 
 
 ## 💬 Prompt Examples

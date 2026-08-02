@@ -36,6 +36,18 @@ No more navigating the Sanity Studio to find documents or run GROQ queries. Your
 
 
 ## Available Tools (11)
+- **list_image_assets**: Each asset includes its _id, original filename, dimensions and metadata. Optionally set a limit. Useful for managing media library content.
+
+List image assets in Sanity
+- **list_users**: Useful for auditing project access and team management.
+
+List project members in Sanity
+- **search_documents**: Optionally filter by document types and set a result limit. Returns matching documents with their full content.
+
+Search documents in Sanity
+- **update_document**: Requires the document ID and a JSON object with the fields to set. For example: {"title": "Updated Title", "status": "published"}. Only provided fields will be modified.
+
+Update fields on a Sanity document
 - **create_dataset**: Provide the dataset name (e.g. "staging", "development"). The dataset will be empty and ready for content. Dataset names must be lowercase alphanumeric.
 
 Create a new Sanity dataset
@@ -54,21 +66,9 @@ List all datasets in the Sanity project
 - **list_documents**: g. "post", "product", "author") from the configured dataset. Each document returns its _id, content fields and metadata. Use this to browse content collections.
 
 List documents of a specific type in Sanity
-- **list_image_assets**: Each asset includes its _id, original filename, dimensions and metadata. Optionally set a limit. Useful for managing media library content.
-
-List image assets in Sanity
-- **list_users**: Useful for auditing project access and team management.
-
-List project members in Sanity
 - **query_documents**: Requires a GROQ query string. Optionally provide params as JSON for parameterized queries. Returns query results as an array. Example query: "*[_type == 'post' && publishedAt > $date]{title, slug}"
 
 Run a GROQ query against Sanity
-- **search_documents**: Optionally filter by document types and set a result limit. Returns matching documents with their full content.
-
-Search documents in Sanity
-- **update_document**: Requires the document ID and a JSON object with the fields to set. For example: {"title": "Updated Title", "status": "published"}. Only provided fields will be modified.
-
-Update fields on a Sanity document
 
 
 ## 💬 Prompt Examples

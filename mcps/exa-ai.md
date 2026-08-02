@@ -37,10 +37,10 @@ No more manual keyword-based searching or messy scraping scripts. Your AI acts a
 
 ## Available Tools (11)
 - **advanced_custom_search**: Complex search query
+- **extract_page_content**: Retrieve web page text
 - **find_similar_pages**: Note: this endpoint is deprecated by Exa AI.
 
 Find matching pages for a URL (deprecated — use search instead)
-- **extract_page_content**: Retrieve web page text
 - **get_query_highlights**: Extract relevant snippets
 - **keyword_search**: Search by exact keywords
 - **perform_live_crawl**: Fresh web extraction

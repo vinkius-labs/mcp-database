@@ -35,12 +35,12 @@ Connect to **Coinbase** and access real-time cryptocurrency market data through 
 
 
 ## Available Tools (8)
-- **get_buy_price**: Returns the total price including Coinbase fees. Common pairs: BTC-USD, ETH-USD, SOL-USD, USDC-USD. Prices update in real-time and are only valid for seconds.
-
-Get the current buy price for a cryptocurrency pair
 - **get_currencies**: Returns currency codes, names, min/max precision, sort order and whether the currency is a cryptocurrency or fiat.
 
 Get all supported cryptocurrencies and fiat currencies
+- **get_buy_price**: Returns the total price including Coinbase fees. Common pairs: BTC-USD, ETH-USD, SOL-USD, USDC-USD. Prices update in real-time and are only valid for seconds.
+
+Get the current buy price for a cryptocurrency pair
 - **get_exchange_rates**: Returns rates for crypto and fiat currencies. Useful for currency conversion.
 
 Get current exchange rates for a currency

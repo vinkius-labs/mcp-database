@@ -46,6 +46,12 @@ Get driving, walking or cycling directions
 - **get_distance_matrix**: Useful for logistics, delivery routing and travel planning. Returns a matrix of durations (seconds) and distances (meters) between all source-destination pairs. Coordinates are semicolon-separated "lon,lat" pairs. Supports driving, walking and cycling profiles.
 
 Get travel times between multiple origins and destinations
+- **reverse_geocode**: Returns the nearest address, city, state, country and other location details.
+
+Convert coordinates to an address
+- **search_nearby**: Returns nearby places with names, addresses, categories, distances and coordinates. Use query to search for specific types of places (e.g. "restaurant", "gas station", "hotel").
+
+Search for places near coordinates
 - **get_elevation**: Useful for hiking, aviation and geographic research. Coordinates are comma-separated "lon,lat" pairs.
 
 Get elevation for coordinates
@@ -55,12 +61,6 @@ Get reachable area within a time or distance
 - **get_static_map**: Returns a direct image URL that can be used in markdown, HTML or downloaded. Supports customizable zoom level and image dimensions.
 
 Generate a static map image for a location
-- **reverse_geocode**: Returns the nearest address, city, state, country and other location details.
-
-Convert coordinates to an address
-- **search_nearby**: Returns nearby places with names, addresses, categories, distances and coordinates. Use query to search for specific types of places (e.g. "restaurant", "gas station", "hotel").
-
-Search for places near coordinates
 
 
 ## 💬 Prompt Examples

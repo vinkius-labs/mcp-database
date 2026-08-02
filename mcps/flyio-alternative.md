@@ -52,7 +52,7 @@ Get details for a specific Fly.io app
 - **get_machine**: Provide both the app_name and machine_id.
 
 Get details for a specific Fly.io machine
-- **list_apps**: io account. Each app is a collection of machines (VMs) running your code across Fly.io's global edge network. Returns app name, status, region and creation date. Use the app name for all subsequent machine, volume and certificate operations.
+- **list_apps**: io account. Each app is a collection of machines (VMs) running your code across Fly.io's globalThis edge network. Returns app name, status, region and creation date. Use the app name for all subsequent machine, volume and certificate operations.
 
 List all Fly.io apps
 - **list_certificates**: io app. Each certificate has a hostname, status (issued, pending, failed) and source (lets_encrypt, self_signed, acme). Use this to audit HTTPS certificate status for your app's domains.
@@ -64,18 +64,18 @@ List machines (VMs) for a Fly.io app
 - **list_volumes**: io app. Each volume has an ID, name, state, size in GB, region and the machine it is attached to. Volumes provide persistent storage that survives machine restarts.
 
 List persistent volumes for a Fly.io app
-- **restart_machine**: Useful for applying configuration changes or recovering from issues. Provide the app_name and machine_id.
-
-Restart a Fly.io machine
-- **start_machine**: The machine will boot and begin running its configured image. Provide the app_name and machine_id.
-
-Start a stopped Fly.io machine
 - **stop_machine**: The machine will stop and release its compute resources but retains its configuration and data. Provide the app_name and machine_id.
 
 Stop a running Fly.io machine
 - **update_machine**: You can modify the Docker image, CPU/memory allocation, services config, mounts and more. Provide the app_name, machine_id and a JSON body with the fields to update.
 
 Update a Fly.io machine configuration
+- **restart_machine**: Useful for applying configuration changes or recovering from issues. Provide the app_name and machine_id.
+
+Restart a Fly.io machine
+- **start_machine**: The machine will boot and begin running its configured image. Provide the app_name and machine_id.
+
+Start a stopped Fly.io machine
 
 
 ## 💬 Prompt Examples

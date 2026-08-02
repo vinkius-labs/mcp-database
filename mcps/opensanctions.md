@@ -35,15 +35,18 @@ Connect to **OpenSanctions** and access the world's largest open sanctions and P
 
 
 ## Available Tools (8)
-- **get_entity**: Returns full entity details including names, aliases, dates of birth, nationalities, addresses, sanctions details, related entities and source datasets.
+- **get_datasets**: Returns dataset names, descriptions, publisher info and entity counts.
 
-Get detailed info for a specific entity by ID
+Get list of all sanctions datasets available
 - **match_pep**: Returns match scores, matched entities, political positions and source datasets. Useful for KYC/AML compliance checks.
 
 Screen a name against Politically Exposed Persons (PEP) lists
+- **get_entity**: Returns full entity details including names, aliases, dates of birth, nationalities, addresses, sanctions details, related entities and source datasets.
+
+Get detailed info for a specific entity by ID
 - **match_sanctions**: Uses fuzzy matching to find potential matches. Returns match scores, matched entities and sanction details. Use threshold parameter (0.0-1.0) to adjust sensitivity. Default 0.85.
 
-Screen a name against global sanctions lists
+Screen a name against globalThis sanctions lists
 - **search_company**: Returns company names, registration numbers, jurisdictions, addresses and sanctions status.
 
 Search for companies in the sanctions database
@@ -56,9 +59,6 @@ Search for persons in the sanctions database
 - **search_vessel**: Returns vessel names, IMO numbers, flags, owners and sanctions status.
 
 Search for vessels (ships) in the sanctions database
-- **get_datasets**: Returns dataset names, descriptions, publisher info and entity counts.
-
-Get list of all sanctions datasets available
 
 
 ## 💬 Prompt Examples
