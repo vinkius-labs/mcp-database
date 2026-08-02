@@ -32,10 +32,10 @@ Connect your **Hubstaff** tracking account to any AI agent and bring your entire
 
 
 ## Available Tools (9)
+- **get_user**: Fetch targeted user details
 - **get_organization**: Get parameters surrounding an organization
 - **get_project**: Retrieve single project structure
-- **get_user**: Fetch targeted user details
-- **list_activities**: Retrieve global organizational activities logged
+- **list_activities**: Retrieve globalThis organizational activities logged
 - **list_organizations**: Retrieve the parent organizations
 - **list_projects**: Retrieve all active projects linked to an organization
 - **list_tasks**: Retrieve operational sub-tasks per project

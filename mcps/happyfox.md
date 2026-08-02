@@ -37,19 +37,19 @@ No more manual navigating through complex ticketing tabs. Your AI assistant acts
 
 
 ## Available Tools (10)
+- **list_categories**: List all ticket categories
+- **list_contacts**: List all contacts (users) in the help desk
 - **add_staff_update**: Add a staff response/update to a ticket
 - **create_ticket**: Requires subject, text, category ID, and contact details.
 
 Create a new support ticket
 - **get_ticket**: Get detailed information about a specific ticket
-- **list_categories**: List all ticket categories
 - **list_priorities**: List all available ticket priorities
 - **list_staff**: List all staff members
 - **list_statuses**: List all available ticket statuses
 - **list_tickets**: Use query parameters for filtering/pagination.
 
 List all support tickets in HappyFox
-- **list_contacts**: List all contacts (users) in the help desk
 - **search_tickets**: Search for tickets using a text query
 
 

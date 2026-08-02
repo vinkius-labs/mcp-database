@@ -36,18 +36,18 @@ Bridge the gap between your daily work and high-level strategy. Your AI assistan
 
 
 ## Available Tools (10)
+- **get_key_result**: Get details for a specific key result
+- **get_my_profile**: Get information about the current authenticated user
 - **get_objective**: Get details for a specific OKR objective
 - **list_key_results**: List all key results (metrics) in Quantive
 - **list_objectives**: List all OKR objectives in Quantive (Gtmhub)
 - **list_sessions**: g., Q1, Annual) used to group OKRs.
 
 List all planning sessions (timeframes) in Quantive
-- **list_tasks**: List tasks associated with OKRs
-- **list_teams**: List all organizational teams
 - **list_users**: List user profiles in the Quantive account
 - **update_key_result**: Update the current value of a key result
-- **get_key_result**: Get details for a specific key result
-- **get_my_profile**: Get information about the current authenticated user
+- **list_tasks**: List tasks associated with OKRs
+- **list_teams**: List all organizational teams
 
 
 ## 💬 Prompt Examples

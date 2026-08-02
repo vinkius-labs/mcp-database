@@ -37,10 +37,6 @@ No more manual exporting of booking data. Your AI assistant acts as a dedicated 
 
 
 ## Available Tools (11)
-- **get_accounting_stats**: Retrieve business-level accounting summary and statistics
-- **get_calendar**: Get availability and pricing calendar for a listing
-- **get_listing_stats**: Retrieve performance statistics for a specific property listing
-- **get_listing**: Get detailed information for a specific property listing
 - **get_owner_revenue**: Returns owner statements: gross revenue, expenses, commissions, net payout
 - **get_reservation**: Get details for a specific reservation
 - **list_guests**: List guests or search by name/email
@@ -48,6 +44,10 @@ No more manual exporting of booking data. Your AI assistant acts as a dedicated 
 - **list_messages**: List communication messages/chats. Optionally filter by guest ID
 - **list_reservations**: List reservations. Filter by status (confirmed, stayed, cancelled)
 - **list_tasks**: List cleaning and operational tasks
+- **get_accounting_stats**: Retrieve business-level accounting summary and statistics
+- **get_calendar**: Get availability and pricing calendar for a listing
+- **get_listing_stats**: Retrieve performance statistics for a specific property listing
+- **get_listing**: Get detailed information for a specific property listing
 
 
 ## 💬 Prompt Examples

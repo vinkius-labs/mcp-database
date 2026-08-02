@@ -14,15 +14,15 @@ Empower your AI agents to manage your email marketing with UseINBOX. This MCP se
 
 
 ## Available Tools (10)
-- **get_account**: Gets your UseINBOX account details
 - **get_campaign_report**: Retrieves the performance report for a specific campaign
 - **list_automations**: Lists all marketing automations
 - **list_campaigns**: Lists all email campaigns
 - **list_contact_lists**: Lists all contact lists
-- **list_newsletters**: Lists all newsletters
 - **list_contacts**: Lists contacts within a specific list
+- **list_newsletters**: Lists all newsletters
 - **list_senders**: Lists all authorized email senders
 - **list_templates**: Lists all email templates
+- **get_account**: Gets your UseINBOX account details
 - **list_webhooks**: Lists all configured webhooks
 
 

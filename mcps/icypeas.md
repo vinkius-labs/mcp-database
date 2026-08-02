@@ -14,12 +14,12 @@ Empower your AI agents to build and verify your lead database with Icypeas. This
 
 
 ## Available Tools (9)
-- **count_people**: Uses same filter format as find_people.
-
-Count the number of people matching a query (does not consume credits)
 - **domain_scan**: Returns a search ID — use fetch_results to retrieve found emails.
 
 Scan a domain for all role-based email addresses (contact@, admin@, etc)
+- **count_people**: Uses same filter format as find_people.
+
+Count the number of people matching a query (does not consume credits)
 - **fetch_results**: Pass the _id returned by those tools. If mode=single, lists all single searches. Max 100 results per request.
 
 Retrieve results from previous searches by ID or list all single/bulk searches

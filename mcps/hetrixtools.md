@@ -37,6 +37,14 @@ No more manual checking of monitoring dashboards. Your AI assistant acts as a de
 
 
 ## Available Tools (11)
+- **list_uptime_monitors**: Use this to check the current health of your infrastructure.
+
+List all uptime monitors
+- **list_uptime_reports**: Retrieve detailed uptime reports for a monitor
+- **set_maintenance_mode**: Modes: 1 (Normal), 2 (Maint. with notifications), 3 (Maint. without notifications).
+
+Toggle maintenance mode for an uptime monitor
+- **list_blacklist_monitors**: List all IP and domain blacklist monitors
 - **add_uptime_monitor**: Pass the configuration as a JSON string in "body_json" (requires type, target, label, and contact ID).
 
 Create a new uptime monitor
@@ -48,16 +56,8 @@ Perform an on-demand blacklist check for a domain
 Perform an on-demand blacklist check for an IPv4 address
 - **delete_uptime_monitor**: Remove an uptime monitor
 - **get_account_usage**: Retrieve current API and resource usage statistics
-- **list_blacklist_monitors**: List all IP and domain blacklist monitors
 - **list_bulk_reports**: List all generated bulk reports
 - **list_contact_lists**: List notification contact lists
-- **list_uptime_monitors**: Use this to check the current health of your infrastructure.
-
-List all uptime monitors
-- **list_uptime_reports**: Retrieve detailed uptime reports for a monitor
-- **set_maintenance_mode**: Modes: 1 (Normal), 2 (Maint. with notifications), 3 (Maint. without notifications).
-
-Toggle maintenance mode for an uptime monitor
 
 
 ## 💬 Prompt Examples

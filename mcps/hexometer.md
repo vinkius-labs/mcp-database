@@ -37,12 +37,6 @@ No more manual checking of monitoring dashboards for performance updates. Your A
 
 
 ## Available Tools (11)
-- **check_broken_links**: List detected 404 errors and broken links for a property
-- **check_speed_mobile**: Analyze mobile page speed for a specific URL
-- **check_page_errors**: Scan a page for JS errors and heavy assets
-- **check_speed_desktop**: Returns scores and asset details.
-
-Analyze desktop page speed for a specific URL
 - **get_site_health**: Get the overall health status for a specific property
 - **get_security_status**: Retrieve SSL and general security health for a site
 - **get_uptime_stats**: Get historical uptime statistics for a site
@@ -50,6 +44,12 @@ Analyze desktop page speed for a specific URL
 - **list_monitored_sites**: List all websites (properties) tracked in Hexometer
 - **list_wordpress_syncs**: List active WordPress plugin syncs
 - **run_seo_audit**: Perform an on-demand SEO audit for a URL
+- **check_broken_links**: List detected 404 errors and broken links for a property
+- **check_speed_desktop**: Returns scores and asset details.
+
+Analyze desktop page speed for a specific URL
+- **check_speed_mobile**: Analyze mobile page speed for a specific URL
+- **check_page_errors**: Scan a page for JS errors and heavy assets
 
 
 ## 💬 Prompt Examples

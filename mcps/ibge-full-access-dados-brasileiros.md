@@ -27,7 +27,6 @@ Power users, data scientists, and AI agents that need comprehensive Brazilian in
 
 ## Available Tools (15)
 - **list_estados**: List all 27 Brazilian states
-- **get_nome_frequencia**: Get birth frequency by decade for a name
 - **get_ranking_nomes**: Filter by decade or sex.
 
 Get ranking of most popular Brazilian names
@@ -38,9 +37,10 @@ Get ranking of most popular Brazilian names
 
 Get socioeconomic indicators for any country
 - **get_municipios_por_uf**: List municipalities in a state
+- **list_agregados**: List SIDRA aggregate tables
+- **get_nome_frequencia**: Get birth frequency by decade for a name
 - **get_municipio**: Get municipality details by IBGE code
 - **list_regioes**: List the 5 macro-regions of Brazil
-- **list_agregados**: List SIDRA aggregate tables
 - **get_agregado_data**: Levels: N1=Brasil, N3=UF, N6=Município.
 
 Get data from a SIDRA aggregate table

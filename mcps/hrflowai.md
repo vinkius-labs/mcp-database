@@ -14,16 +14,16 @@ Empower your AI agents with HrFlow.ai's advanced talent acquisition capabilities
 
 
 ## Available Tools (10)
+- **search_jobs**: Searches for jobs with semantic filters
+- **unfold_profile**: Analyzes and unfolds the career path of a profile
+- **parse_profile**: Parses a resume file into a structured profile
+- **score_profiles**: Scores candidate profiles against a specific job
+- **search_profiles**: Searches for profiles with semantic filters
 - **ask_profile**: Asks a natural language question about a specific profile
 - **list_boards**: Lists job boards
 - **list_jobs**: Lists jobs stored in HrFlow boards
 - **list_profiles**: Lists candidate profiles stored in HrFlow
 - **list_sources**: Lists profile sources
-- **parse_profile**: Parses a resume file into a structured profile
-- **score_profiles**: Scores candidate profiles against a specific job
-- **search_jobs**: Searches for jobs with semantic filters
-- **search_profiles**: Searches for profiles with semantic filters
-- **unfold_profile**: Analyzes and unfolds the career path of a profile
 
 
 ## 💬 Prompt Examples

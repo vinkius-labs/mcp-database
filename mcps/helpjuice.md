@@ -37,6 +37,7 @@ No more manual navigating through complex CMS folders. Your AI assistant acts as
 
 
 ## Available Tools (12)
+- **list_kb_groups**: List user groups defined for permissions
 - **create_article**: Requires a name/title. Pass body fields as a JSON string in "body_json".
 
 Create a new article in the knowledge base
@@ -49,7 +50,6 @@ Create a new article in the knowledge base
 List all articles in the Helpjuice knowledge base
 - **list_categories**: List all categories in the knowledge base
 - **list_kb_users**: List all internal users/authors in Helpjuice
-- **list_kb_groups**: List user groups defined for permissions
 - **search_kb**: Useful for finding existing answers to customer questions.
 
 Search the knowledge base for articles matching a query

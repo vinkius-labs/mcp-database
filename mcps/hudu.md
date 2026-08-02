@@ -7,23 +7,55 @@
 
 **Category:** [knowledge-management](../categories/knowledge-management.md)
 
-Manage IT documentation, assets, and passwords via Hudu API.
+Document your IT infrastructure with password vaults, knowledge bases, and asset tracking built for managed service providers.
 
 ## Description
-Empower your AI agents to interact with your Hudu IT documentation. This MCP server allows you to list companies, retrieve asset details, manage contacts, view knowledge base articles, and access stored passwords directly through the Hudu API. Ideal for automating MSP workflows and IT management.
+Connect your **Hudu** instance to any AI agent and manage your IT documentation through natural conversation.
+
+### What you can do
+
+- **Company Management** — List all client companies, inspect profiles, and create new company records
+- **Asset Tracking** — Browse all assets (servers, workstations, network devices), filter by company, inspect details, and create new asset records with tags
+- **Password Vault** — List stored passwords filtered by company, and securely retrieve individual password entries with secrets
+- **Knowledge Base** — Browse all articles and read full content with metadata for any specific article
+- **Procedures & Checklists** — List all procedures filtered by company and inspect detailed steps for operational checklists
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Hudu Instance URL and API Key
+3. Start managing IT documentation from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **MSPs (Managed Service Providers)** — access client documentation, passwords, and asset inventories without opening the Hudu portal
+- **IT Administrators** — track assets, review procedures, and manage knowledge base articles through AI
+- **Support Engineers** — quickly retrieve client passwords, asset details, and troubleshooting procedures during incidents
 
 
-## Available Tools (10)
-- **get_company**: Retrieves details for a specific company
-- **list_activity_logs**: Lists activity logs
-- **list_articles**: Lists knowledge base articles
-- **list_assets**: Lists documented assets
-- **list_companies**: Lists all companies in Hudu
-- **list_contacts**: Lists contacts across all companies
-- **list_networks**: Lists documented networks
-- **list_passwords**: Lists stored passwords
-- **list_procedures**: Lists documented procedures
-- **list_websites**: Lists monitored websites
+## Available Tools (12)
+- **create_company**: Requires a name.
+
+Create a new company
+- **create_asset**: Requires asset name and company ID.
+
+Create a new asset
+- **get_article**: Get details for a specific article
+- **get_asset**: Get details for a specific asset
+- **get_company**: Get details for a specific company
+- **get_password**: Get details for a specific password
+- **get_procedure**: Get details for a specific procedure
+- **list_articles**: List knowledge base articles
+- **list_assets**: Can be filtered by company ID.
+
+List assets
+- **list_companies**: List all companies in Hudu
+- **list_passwords**: Can be filtered by company ID.
+
+List passwords
+- **list_procedures**: Can be filtered by company ID.
+
+List procedures
 
 
 ## 💬 Prompt Examples
@@ -31,38 +63,38 @@ Empower your AI agents to interact with your Hudu IT documentation. This MCP ser
 Here are some examples of how you can interact with the **Hudu** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all companies documented in Hudu."
+> "Show all companies and the assets for 'Acme Corp', then retrieve the admin password."
 
 **🤖 AI Agent:**
-> I'll fetch the list of companies for you.
+> Companies: 18 clients managed. Acme Corp (company_12): 14 assets. Assets: 1) 'DC-SRV-01' (Server, Windows Server 2022, tag: DC). 2) 'DC-SRV-02' (Server, Ubuntu 22.04, tag: Backup). 3) 'FW-01' (Firewall, Fortinet, tag: Core). 4) 'SW-CORE-01' (Switch, Cisco 9300). 5-14) 10 workstations. Passwords for Acme Corp: 6 entries. 'Domain Admin' password (pwd_089): Username: admin@acmecorp.local, Password: ●●●●●●●●●●●●, Last rotated: Apr 1, 2025. ⚠️ Password is 25 days old — consider rotating. Would you like to see procedures or knowledge base articles for Acme?
 
 ---
 
 **👤 You:**
-> "Show me assets for company ID 123."
+> "Search the knowledge base for articles about VPN setup and show the firewall procedures."
 
 **🤖 AI Agent:**
-> I'll retrieve the assets documented for that company.
+> Knowledge base articles: 34 total. VPN-related: 1) 'Site-to-Site VPN Configuration — Fortinet' (article_045, updated Mar 15). Content: Step-by-step guide for configuring IPsec VPN tunnels between Fortinet firewalls, including Phase 1/2 parameters, routing, and NAT traversal. 2) 'Remote Access VPN — FortiClient Setup' (article_046). 3) 'VPN Troubleshooting Guide' (article_052). Firewall procedures: 1) 'Monthly Firewall Rule Audit' (proc_012, 8 steps, company: All clients). Steps: 1. Export current ruleset → 2. Review unused rules → 3. Check expired policies → 4. Validate NAT rules → 5. Test connectivity → 6. Document changes → 7. Backup config → 8. Sign off. Would you like to read a full article or create a new asset?
 
 ---
 
 **👤 You:**
-> "Find knowledge base articles related to backup procedures."
+> "Create a new company 'TechStart Inc' and add a server asset to it."
 
 **🤖 AI Agent:**
-> I'll search your knowledge base for backup procedures.
+> Company created! Name: TechStart Inc, ID: company_19. You now have 19 managed clients. Asset created! Name: 'TS-SRV-01', Company: TechStart Inc (company_19), Tag: 'Production', ID: asset_287. The asset is now linked to TechStart Inc. Next steps: you may want to add passwords for this client and create onboarding procedures. Would you like to add passwords or create more assets?
 
 
 ## ❓ FAQ
 
-**Q: How do I get Hudu API credentials?**
-You can generate an API key in your Hudu dashboard under Account Settings > API. You also need your Hudu instance domain.
+**Q: Can I retrieve stored passwords for a specific client?**
+Yes. Use `list_passwords` with an optional `company_id` to filter passwords by client. Then use `get_password` with a specific password ID to retrieve the full entry including the secret. Use `list_companies` to find the company ID first.
 
-**Q: Can I see passwords with this MCP?**
-Yes, the list_passwords tool provides access to documented passwords in your Hudu instance.
+**Q: Does Hudu require a custom instance URL?**
+Yes. Hudu is self-hosted or uses dedicated instances, so you need to provide your **Instance URL** (e.g., `https://your-company.huducloud.com`) along with the **API Key**. The API Key is sent via the `x-api-key` header (not Bearer), and all API calls are routed to `{instanceUrl}/api/v1`.
 
-**Q: Does it support self-hosted Hudu?**
-Yes, as long as your Hudu instance is accessible via the internet and the domain provided is correct.
+**Q: Can I track all assets for a specific company?**
+Yes. Use `list_assets` with the `company_id` parameter to retrieve all assets (servers, workstations, network devices) for a specific client. Use `get_asset` for detailed specifications and tags. Use `create_asset` to add new assets with a name, company ID, and optional asset tag.
 
 
 ## Installation & Usage

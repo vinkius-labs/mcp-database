@@ -35,18 +35,18 @@ Your AI acts as your digital front-of-house manager, capable of instantly checki
 
 
 ## Available Tools (12)
+- **get_menu**: Get details for a specific menu
+- **list_categories**: List categories within a menu
+- **get_item**: Get details for a specific item
+- **get_location**: Get details for a specific location
 - **get_order**: Get details for a specific order
 - **get_tab**: Get details for a specific tab
-- **list_categories**: List categories within a menu
 - **list_items**: List catalog items for a location
 - **list_locations**: List all accessible locations
 - **list_menus**: List menus for a location
 - **list_orders**: List recent orders for a location
 - **list_tabs**: List active or closed tabs
 - **update_item_status**: Update the availability status of an item
-- **get_item**: Get details for a specific item
-- **get_location**: Get details for a specific location
-- **get_menu**: Get details for a specific menu
 
 
 ## 💬 Prompt Examples

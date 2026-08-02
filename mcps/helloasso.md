@@ -37,11 +37,11 @@ No more manual exporting of transaction CSVs. Your AI assistant acts as a dedica
 
 
 ## Available Tools (11)
+- **get_member_details**: Get details for a specific member ID
+- **get_order_details**: Get details for a specific order ID
 - **create_checkout_intent**: Pass the amount in cents (EUR) and other required fields as a JSON string in "body_json". Returns a redirect URL for the payer.
 
 Generate a checkout link to receive a payment
-- **get_member_details**: Get details for a specific member ID
-- **get_order_details**: Get details for a specific order ID
 - **get_organization_details**: Get detailed information about a specific organization by its slug
 - **get_payment_details**: Get details for a specific payment ID
 - **list_forms**: Each form has a "formType" and "formSlug" used for detailed lookups.

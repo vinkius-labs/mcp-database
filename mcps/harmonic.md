@@ -37,17 +37,17 @@ No more manual exporting of company lists. Your AI assistant acts as a dedicated
 
 
 ## Available Tools (11)
+- **get_enrichment_status**: Check the status of a background enrichment request
+- **search_startups**: Search for startups using filters like industry, location, and headcount
+- **enrich_company**: Enrich a company with firmographics, funding, and social signals
 - **enrich_person**: Enrich a person with professional history and social signals
 - **get_company_stats**: Get growth and headcount statistics for a company
-- **get_enrichment_status**: Check the status of a background enrichment request
 - **get_investor_portfolio**: Get the list of portfolio companies for an investor
 - **get_api_profile**: Get information about the current API user
 - **list_company_news**: List recent news and press releases for a company
 - **list_funding_rounds**: List funding rounds for a specific company
 - **list_traction_signals**: List social and web traction signals for a company
 - **search_investors**: Search for investment firms and angels
-- **search_startups**: Search for startups using filters like industry, location, and headcount
-- **enrich_company**: Enrich a company with firmographics, funding, and social signals
 
 
 ## 💬 Prompt Examples

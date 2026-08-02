@@ -37,12 +37,14 @@ No more manual exporting of issue logs. Your AI assistant acts as a dedicated Su
 
 
 ## Available Tools (11)
-- **add_issue_message**: Pass the message details as a JSON string in "body_json".
-
-Add a message to an existing issue
 - **bulk_user_action**: Pass the actions array as a JSON string in "body_json".
 
 Perform bulk profile operations (v2)
+- **list_faq_sections**: List FAQ categories/sections
+- **update_issue_status**: Update the status of an issue (e.g., Resolved, Rejected)
+- **add_issue_message**: Pass the message details as a JSON string in "body_json".
+
+Add a message to an existing issue
 - **create_issue**: Pass the payload as a JSON string in "body_json" (requires app_id, title, body).
 
 Create a new support issue
@@ -54,8 +56,6 @@ Create a new support issue
 - **list_issues**: Useful for monitoring support volume and identifying urgent cases.
 
 List support issues/tickets in Helpshift
-- **list_faq_sections**: List FAQ categories/sections
-- **update_issue_status**: Update the status of an issue (e.g., Resolved, Rejected)
 
 
 ## 💬 Prompt Examples
