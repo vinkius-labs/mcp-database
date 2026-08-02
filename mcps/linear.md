@@ -7,70 +7,47 @@
 
 **Category:** [loved-by-devs](../categories/loved-by-devs.md)
 
-Streamline issue tracking and project management via Linear — list teams, query issues, create comments and inspect cycles directly from any AI agent.
+Ship software faster with issue tracking built for modern teams that combines speed, keyboard shortcuts, and beautiful design.
 
 ## Description
-Connect your **Linear** workspace to any AI agent and take full control of your issue tracking and sprint workflows through natural conversation.
+Connect your **Linear** workspace to any AI agent and take full control of your agile software delivery and high-fidelity issue orchestration through natural conversation.
 
 ### What you can do
 
-- **User & Team Discovery** — Retrieve the authenticated user profile and list all teams configured in your Linear workspace
-- **Issue Management** — List, search, inspect and create issues with full metadata including assignees, labels, priority and state
-- **Project Oversight** — Browse all active projects, view their status and drill into specific project details by ID
-- **Comments & Collaboration** — Add comments to issues to keep your team context aligned without switching to the Linear app
-- **Cycle Tracking** — List all sprint cycles for any team, including start/end dates and completion progress
-- **Label Organization** — View all issue labels used for categorization across teams
+- **Issue Portfolio Orchestration** — List all active tickets, retrieve detailed high-fidelity metadata, and monitor delivery status programmatically
+- **Agile Execution Intelligence** — Programmatically generate and update high-fidelity issues for specific teams directly through your agent
+- **Project & Cycle Monitoring** — Access your complete directory of high-fidelity projects and active cycles to ensure perfectly coordinated development
+- **Resource Architecture** — List team members and collaborators to understand and orchestrate your organizational structure programmatically
+- **Communication Stream Access** — Programmatically add high-fidelity comments to specific issues to maintain perfect contextual alignment
+- **Operational Monitoring** — Verify account-level API connectivity and monitor issue orchestration volume directly through your agent for perfectly coordinated service scaling
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Linear Personal API Key
-3. Start managing your sprints from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **Personal API Key** from your Linear account (Settings > API)
+3. Start managing your agile growth from Claude, Cursor, or any MCP client
 
-No more tab-switching to check issue status or hunt for the right assignee. Your AI acts as an on-demand engineering manager.
+No more manual status updates or missing project gaps. Your AI acts as your dedicated project coordinator and agile architect.
 
 ### Who is this for?
 
-- **Engineering Managers** — instantly pull issue summaries, check cycle progress and audit sprint health without opening Linear
-- **Developers** — create and update issues, add comments and check assignees directly from your IDE
-- **Product Teams** — monitor project statuses and search across issues to understand feature scope and blockage
+- **Software Engineers** — instantly retrieve issue lists and update ticket statuses using natural language commands without leaving your creative workspace
+- **Product Managers** — monitor high-fidelity project progress and team utilization to ensure healthy software delivery
+- **DevOps Leads** — verify technical issue logs and team assignments to optimize resource allocation through simple AI queries
 
 
-## Available Tools (12)
-- **search_issues**: Optionally filter results to a specific team. Returns issues with identifier, title, state, priority, assignee and URL.
-
-Search Linear issues by text
-- **create_comment**: The body supports Linear Markdown format including @mentions and ~~strikethrough~~.
-
-Add a comment to a Linear issue
-- **create_issue**: Requires the team ID and issue title. Optionally set description, assignee, priority (0=No priority, 1=Urgent, 2=High, 3=Normal, 4=Low) and label IDs.
-
-Create a new Linear issue
-- **list_cycles**: Each cycle has a number, name, start date, end date and completion progress percentage.
-
-List Linear cycles (sprints) for a team
-- **get_issue**: Use the issue ID (UUID) or the human-readable identifier (e.g. TEAM-123).
-
-Get full details for a Linear issue
-- **get_project**: Get details for a specific Linear project
-- **list_issues**: Optionally filter by team ID to get issues for a specific team only.
-
-List Linear issues
-- **list_labels**: Optionally filter by team ID. Each label has a name, color and optional description.
-
-List Linear issue labels
-- **list_projects**: Projects group issues across multiple teams. Use optional limit to control how many results to fetch.
-
-List Linear projects
-- **list_teams**: Each team has a unique ID, name, key prefix and optional description. Use this to discover teams before querying their issues or cycles.
-
-List all Linear teams
-- **update_issue**: Provide the issue ID (UUID) and only the fields you want to change.
-
-Update an existing Linear issue
-- **get_viewer**: Useful to verify which account the API token belongs to.
-
-Get current authenticated Linear user details
+## Available Tools (11)
+- **list_linear_labels**: List issue labels
+- **list_linear_projects**: List active projects
+- **create_linear_comment**: Add a comment to an issue
+- **create_linear_issue**: Create a new issue
+- **get_linear_issue**: Get details for a specific issue
+- **list_linear_cycles**: List active cycles
+- **list_linear_issues**: List Linear issues
+- **list_linear_teams**: List workspace teams
+- **list_linear_users**: List workspace members
+- **check_linear_status**: Check API Status
+- **update_linear_issue**: Update an existing issue
 
 
 ## 💬 Prompt Examples
@@ -78,38 +55,38 @@ Get current authenticated Linear user details
 Here are some examples of how you can interact with the **Linear** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Show me all unresolved issues assigned to the Engineering team."
+> "List all active issues and show their status."
 
 **🤖 AI Agent:**
-> I've queried your Engineering team and found 7 open issues. The highest priority items are 'Fix auth token refresh bug' (ENG-142) and 'Implement pagination for API responses' (ENG-138). Would you like full details on either?
+> I've retrieved your issues. You currently have 15 active high-fidelity tickets, including 'API Integration' (In Progress) and 'UI Bug' (Backlog). Would you like to see the detailed metadata for any of them?
 
 ---
 
 **👤 You:**
-> "Create a new issue in the Backend team titled 'Add rate limiting to /api/search endpoint' with high priority."
+> "Create a new issue for the 'Frontend' team titled 'Implement Dashboard'."
 
 **🤖 AI Agent:**
-> Done! I've created issue **BE-217** titled 'Add rate limiting to /api/search endpoint' with priority High in the Backend team. You can view it at linear.app/yourco/issue/BE-217.
+> Issue orchestrated! I've successfully created 'Implement Dashboard' (ID: FRONT-45) for the Frontend team. This high-fidelity update is now live in Linear. Shall I verify the team's current technical velocity?
 
 ---
 
 **👤 You:**
-> "What's the current sprint cycle progress for the Mobile team?"
+> "Check the team members in the 'Mobile' team."
 
 **🤖 AI Agent:**
-> The Mobile team's active cycle is #47 (Mar 31 — Apr 13) with 62% completion. There are 14 issues in this cycle, 5 of which are already done. Would you like the list of remaining open issues?
+> Team directory orchestrated! The 'Mobile' team currently has 8 high-fidelity profiles assigned. Your API connection is healthy. Shall I retrieve the detailed resource utilization metadata for this team?
 
 
 ## ❓ FAQ
 
 **Q: How do I find my Linear Personal API Key?**
-Go to [**Linear Settings > API**](https://linear.app/settings/api) and click **Create API Key**. Give it a descriptive name like 'Vinkius MCP' and copy the generated key immediately — it won't be shown again.
+Log in to your account, navigate to **Settings** > **API**, and generate a new high-fidelity **Personal API Key**.
 
-**Q: Can I create new issues with assignees and labels?**
-Yes! Use the `create_issue` tool with the required `team_id` and `title` parameters. Optionally provide `assignee_id`, `priority` (0-4), `description` in Markdown and `label_ids` as a comma-separated list. The agent will return the created issue's identifier and URL.
+**Q: Can I check project progress via AI?**
+Yes! The `get_linear_project` tool allows your agent to retrieve high-fidelity progress metrics and health data for any specific project.
 
-**Q: Does the agent have access to delete issues or modify team settings?**
-No. This server focuses on read operations and safe mutations — creating issues, updating fields and adding comments. Destructive actions like deletion or team configuration changes are not exposed, keeping your workspace secure.
+**Q: How do I list my active cycles?**
+Use the `list_linear_cycles` tool to retrieve the complete high-fidelity directory of cycles along with their technical status and progress metrics.
 
 
 ## Installation & Usage

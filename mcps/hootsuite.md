@@ -40,6 +40,15 @@ No more manual posting across different tabs. Your AI acts as your dedicated soc
 - **create_media_upload**: Requires the file size in bytes and the correct MIME type (e.g., image/jpeg or video/mp4).
 
 Generate a media upload URL
+- **list_social_profiles**: ) that the authenticated member has permission to manage. This is required to obtain profile IDs for scheduling messages.
+
+List all accessible social profiles
+- **list_organization_teams**: Teams are used to group members and social profiles for collaborative management.
+
+List teams within an organization
+- **get_member_info**: Use this to verify the identity and permissions of the current user.
+
+Retrieve current Hootsuite member details
 - **create_message**: Requires the message text and a list of target social profile IDs. Optional: scheduledSendTime in ISO 8601 format.
 
 Send or schedule a new social media message
@@ -58,15 +67,6 @@ List all Hootsuite organizations
 - **list_outbound_messages**: Useful for monitoring sent posts or reviewing upcoming scheduled content.
 
 Retrieve a list of outbound messages
-- **list_social_profiles**: ) that the authenticated member has permission to manage. This is required to obtain profile IDs for scheduling messages.
-
-List all accessible social profiles
-- **list_organization_teams**: Teams are used to group members and social profiles for collaborative management.
-
-List teams within an organization
-- **get_member_info**: Use this to verify the identity and permissions of the current user.
-
-Retrieve current Hootsuite member details
 
 
 ## 💬 Prompt Examples

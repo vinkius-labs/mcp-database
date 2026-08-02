@@ -5,7 +5,7 @@
 
 ## Overview
 
-**Category:** [loved-by-devs](../categories/loved-by-devs.md)
+**Category:** [developer-tools](../categories/developer-tools.md)
 
 Send emails and manage domains via Resend — send transactional emails, track deliveries, manage domains and API keys from any AI agent.
 
@@ -37,15 +37,12 @@ No more switching to the Resend dashboard to check delivery status or add a new 
 
 
 ## Available Tools (14)
-- **verify_domain**: Use this after adding or updating SPF/DKIM records in your DNS provider. Returns the updated domain status.
-
-Verify a domain's DNS records
-- **cancel_email**: The email must be in "scheduled" status. Provide the email ID.
-
-Cancel a scheduled email
 - **create_api_key**: Requires a name and optionally the permission scope (full_access, sending, domains). Returns the key value which is shown ONLY ONCE — make sure to copy it immediately.
 
 Create a new API key in Resend
+- **cancel_email**: The email must be in "scheduled" status. Provide the email ID.
+
+Cancel a scheduled email
 - **create_domain**: Requires the domain name (e.g. "example.com"). Optionally set the AWS SES region. Returns the domain ID and the DNS records (SPF, DKIM) you need to configure for verification.
 
 Add a new domain to Resend
@@ -79,6 +76,9 @@ Send an email via Resend
 - **update_email**: The email must be in "scheduled" status. Provide the email ID and the new scheduled_at timestamp (ISO 8601).
 
 Update a scheduled email
+- **verify_domain**: Use this after adding or updating SPF/DKIM records in your DNS provider. Returns the updated domain status.
+
+Verify a domain's DNS records
 
 
 ## 💬 Prompt Examples

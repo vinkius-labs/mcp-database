@@ -37,6 +37,15 @@ Stop switching between PostHog dashboards to check flag status or review event d
 
 
 ## Available Tools (13)
+- **list_cohorts**: Each cohort is a dynamic group of users defined by event-based or property-based filters. Returns cohort ID, name, description, whether it is calculated or static.
+
+List behavioral cohorts in PostHog
+- **list_events**: Optionally filter by event name (e.g. "pageview", "signup", "purchase") and set a limit. Each event includes the event name, timestamp, person distinct ID and properties.
+
+List events tracked in PostHog
+- **list_feature_flags**: Each flag has a key, name, enabled status, rollout percentage, filters and release conditions. Returns flag ID, key, name, whether it is active, and the targeting configuration. Use this to audit feature flag coverage.
+
+List all feature flags in PostHog
 - **create_annotation**: Annotations appear on insights graphs and help correlate metric changes with deployments, launches or incidents. Requires the content text. Optionally set a date_marker (ISO 8601 date).
 
 Create a new annotation in PostHog
@@ -58,15 +67,6 @@ Get the current PostHog user details
 - **list_annotations**: Annotations are markers on timeline graphs that highlight important events like deployments, feature launches or incidents. Returns annotation ID, content, date marker and whether it is pinned.
 
 List annotations in PostHog
-- **list_cohorts**: Each cohort is a dynamic group of users defined by event-based or property-based filters. Returns cohort ID, name, description, whether it is calculated or static.
-
-List behavioral cohorts in PostHog
-- **list_events**: Optionally filter by event name (e.g. "pageview", "signup", "purchase") and set a limit. Each event includes the event name, timestamp, person distinct ID and properties.
-
-List events tracked in PostHog
-- **list_feature_flags**: Each flag has a key, name, enabled status, rollout percentage, filters and release conditions. Returns flag ID, key, name, whether it is active, and the targeting configuration. Use this to audit feature flag coverage.
-
-List all feature flags in PostHog
 - **list_persons**: Each person has distinct IDs, properties, creation date and last event timestamp. Optionally set limit (default 20) and offset for pagination.
 
 List persons (users) tracked in PostHog

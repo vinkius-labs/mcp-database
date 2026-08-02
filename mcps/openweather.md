@@ -40,9 +40,27 @@ No more checking weather apps — just ask your AI.
 
 
 ## Available Tools (11)
+- **get_sun_times**: Returns the exact times and the sun's elevation angle at sunrise/sunset. Requires lat/lon coordinates.
+
+Get sunrise and sunset times for a location
 - **geocode**: Returns the top 5 matching locations with their coordinates, country codes and state names. Use these coordinates with other weather tools.
 
 Convert a city name to coordinates
+- **get_current_weather**: Requires either city name (e.g. "London", "São Paulo") or latitude/longitude coordinates.
+
+Get current weather conditions for a location
+- **get_daily_forecast**: Each day includes min/max temperature, humidity, wind, UV index, precipitation probability and weather description. Requires lat/lon coordinates.
+
+Get daily weather forecast for up to 16 days
+- **get_hourly_forecast**: Each hour includes temperature, humidity, wind, UV index, precipitation probability and weather description. Requires lat/lon coordinates. Use geocode to find coordinates for a city name.
+
+Get hourly weather forecast using One Call API
+- **get_weather_alerts**: Returns alert type, severity, description, start and end times. Requires lat/lon coordinates. Useful for monitoring severe weather conditions.
+
+Get active weather alerts for a location
+- **reverse_geocode**: Returns the city, state, country and postal code for the given coordinates.
+
+Convert coordinates to a city name
 - **get_air_quality**: 5, PM10, O3, NO2, SO2, CO, NH3). AQI scale: 1=Good, 2=Fair, 3=Moderate, 4=Poor, 5=Very Poor. Requires lat/lon coordinates.
 
 Get current air quality index for a location
@@ -55,24 +73,6 @@ Get 5-day/3-hour weather forecast
 - **get_historical_weather**: Returns temperature, humidity, wind, pressure and weather description for the requested date. Requires lat/lon and date in YYYY-MM-DD format.
 
 Get historical weather data for a specific date
-- **get_current_weather**: Requires either city name (e.g. "London", "São Paulo") or latitude/longitude coordinates.
-
-Get current weather conditions for a location
-- **get_daily_forecast**: Each day includes min/max temperature, humidity, wind, UV index, precipitation probability and weather description. Requires lat/lon coordinates.
-
-Get daily weather forecast for up to 16 days
-- **get_hourly_forecast**: Each hour includes temperature, humidity, wind, UV index, precipitation probability and weather description. Requires lat/lon coordinates. Use geocode to find coordinates for a city name.
-
-Get hourly weather forecast using One Call API
-- **get_sun_times**: Returns the exact times and the sun's elevation angle at sunrise/sunset. Requires lat/lon coordinates.
-
-Get sunrise and sunset times for a location
-- **get_weather_alerts**: Returns alert type, severity, description, start and end times. Requires lat/lon coordinates. Useful for monitoring severe weather conditions.
-
-Get active weather alerts for a location
-- **reverse_geocode**: Returns the city, state, country and postal code for the given coordinates.
-
-Convert coordinates to a city name
 
 
 ## 💬 Prompt Examples

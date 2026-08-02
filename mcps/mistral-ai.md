@@ -34,16 +34,16 @@ Connect your **Mistral AI** account to any AI agent and leverage Mistral's open 
 
 
 ## Available Tools (10)
-- **list_models**: List all available Mistral models
 - **chat_completion**: Generate text using Mistral models
+- **list_models**: List all available Mistral models
+- **analyze_sentiment**: Analyze text sentiment
+- **summarize_text**: Summarize long documents
+- **translate_text**: Translate text between languages
 - **fix_grammar**: Correct grammar and spelling
 - **create_embeddings**: Generate vector embeddings
 - **explain_code**: Explain logic in code
 - **extract_entities**: Extract data as JSON
 - **generate_code**: Write code snippets
-- **analyze_sentiment**: Analyze text sentiment
-- **summarize_text**: Summarize long documents
-- **translate_text**: Translate text between languages
 
 
 ## 💬 Prompt Examples

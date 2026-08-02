@@ -36,24 +36,24 @@ No more manual logging into the dashboard to check task status or project progre
 
 
 ## Available Tools (12)
-- **get_board_schema**: Get board columns
+- **list_item_updates**: Get row comments
+- **remove_item**: Delete row
 - **get_my_profile**: com user.
 
 Get user info
-- **list_boards**: List Monday.com boards
 - **list_board_groups**: List board sections
 - **list_board_items**: Get board rows
-- **list_item_updates**: Get row comments
+- **create_new_item**: Optional column values must be JSON.
+
+Add row to board
+- **post_item_update**: Add comment to row
+- **get_board_schema**: Get board columns
+- **list_boards**: List Monday.com boards
 - **list_account_users**: com account.
 
 List team members
 - **list_workspaces**: List project containers
 - **update_item_columns**: Modify row values
-- **create_new_item**: Optional column values must be JSON.
-
-Add row to board
-- **post_item_update**: Add comment to row
-- **remove_item**: Delete row
 
 
 ## 💬 Prompt Examples

@@ -35,8 +35,10 @@ Empower your AI agent to orchestrate your entire productivity ecosystem with **T
 
 
 ## Available Tools (10)
-- **create_task**: Create a new task
 - **delete_task**: Delete a task
+- **update_task**: Update an existing task
+- **create_task**: Create a new task
+- **close_task**: Complete a task
 - **get_project**: Get details for a specific project
 - **get_task**: Get details for a specific task
 - **list_labels**: List all user labels
@@ -45,8 +47,6 @@ Empower your AI agent to orchestrate your entire productivity ecosystem with **T
 - **list_tasks**: Supports filtering by project_id, section_id, label, or filter string.
 
 List Todoist tasks
-- **update_task**: Update an existing task
-- **close_task**: Complete a task
 
 
 ## 💬 Prompt Examples

@@ -35,7 +35,8 @@ Connect your **Mattermost** workspace to any AI agent and manage team collaborat
 
 
 ## Available Tools (12)
-- **get_server_config**: Check server settings
+- **create_new_channel**: Create a channel
+- **post_message**: Send chat message
 - **get_my_profile**: Get user info
 - **test_server_ping**: Check API health
 - **get_team_details**: Get team info
@@ -45,8 +46,7 @@ Connect your **Mattermost** workspace to any AI agent and manage team collaborat
 - **list_teams**: List your teams
 - **list_server_users**: List all users
 - **list_incoming_webhooks**: Get event configs
-- **create_new_channel**: Create a channel
-- **post_message**: Send chat message
+- **get_server_config**: Check server settings
 
 
 ## 💬 Prompt Examples

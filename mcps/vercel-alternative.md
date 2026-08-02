@@ -38,6 +38,9 @@ No more checking the Vercel dashboard for build status or hunting for environmen
 
 
 ## Available Tools (14)
+- **list_domains**: Each domain includes its verification status, DNS records, SSL certificate status and redirect configuration. Optionally filter by teamId.
+
+List domains configured for a Vercel team
 - **cancel_deployment**: The deployment status will change to CANCELED. Provide the deployment ID and optionally the teamId.
 
 Cancel a running Vercel deployment
@@ -47,15 +50,18 @@ Create an environment variable for a Vercel project
 - **delete_env_var**: Provide the project ID and the variable ID (from list_env_vars). WARNING: the variable cannot be recovered.
 
 Delete an environment variable from a Vercel project
-- **get_deployment**: Provide the deployment ID.
-
-Get details for a specific Vercel deployment
 - **get_domain**: Provide the domain name (e.g. "example.com").
 
 Get details for a specific domain in Vercel
 - **get_logs**: Optionally filter by projectId, since/until timestamps (Unix ms). Returns log entries with timestamps, messages and source. Useful for debugging deployment issues and monitoring runtime behavior.
 
 Get runtime logs for a Vercel deployment
+- **list_aliases**: Each alias maps a URL to a specific deployment. Optionally filter by teamId and projectId.
+
+List deployment aliases (URLs) in Vercel
+- **list_deployments**: Each deployment includes its ID, URL, status (READY, BUILDING, ERROR, CANCELED, INITIALIZING), creation date, git commit info and framework. Optionally filter by teamId and projectId.
+
+List deployments for a Vercel account or project
 - **list_env_vars**: Returns variable keys, target environments (production, preview, development) and types. Variable VALUES are NOT returned for security. Provide the project ID.
 
 List environment variables for a Vercel project
@@ -65,21 +71,15 @@ List Vercel projects
 - **list_teams**: Each team has its own set of projects, deployments and members. Returns team ID, name, slug and creation date. Use the team ID as the teamId parameter in other tools.
 
 List Vercel teams
-- **get_user**: Returns user ID, username, email, avatar and account metadata. Use this to verify your token is working correctly.
+- **get_deployment**: Provide the deployment ID.
 
-Get the authenticated Vercel user
+Get details for a specific Vercel deployment
 - **get_project**: Provide the project ID (or name) and optionally the teamId.
 
 Get details for a specific Vercel project
-- **list_aliases**: Each alias maps a URL to a specific deployment. Optionally filter by teamId and projectId.
+- **get_user**: Returns user ID, username, email, avatar and account metadata. Use this to verify your token is working correctly.
 
-List deployment aliases (URLs) in Vercel
-- **list_deployments**: Each deployment includes its ID, URL, status (READY, BUILDING, ERROR, CANCELED, INITIALIZING), creation date, git commit info and framework. Optionally filter by teamId and projectId.
-
-List deployments for a Vercel account or project
-- **list_domains**: Each domain includes its verification status, DNS records, SSL certificate status and redirect configuration. Optionally filter by teamId.
-
-List domains configured for a Vercel team
+Get the authenticated Vercel user
 
 
 ## 💬 Prompt Examples

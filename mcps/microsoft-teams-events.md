@@ -36,18 +36,18 @@ No more manual copy-pasting of meeting links or digging through chat history for
 
 
 ## Available Tools (10)
+- **list_events**: List calendar events
+- **check_teams_status**: Verify Microsoft Graph API connectivity
 - **create_meeting**: Pass attendee emails as comma-separated values.
 
 Create a Teams meeting
 - **get_attendance_report**: Get attendance report
+- **cancel_event**: Cancel a calendar event
 - **get_event**: Get event details
 - **get_profile**: Get user profile
 - **get_webinar**: Get webinar details
-- **list_events**: List calendar events
 - **list_online_meetings**: List online meetings
 - **list_webinars**: List webinars
-- **cancel_event**: Cancel a calendar event
-- **check_teams_status**: Verify Microsoft Graph API connectivity
 
 
 ## 💬 Prompt Examples

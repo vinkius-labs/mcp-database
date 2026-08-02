@@ -38,15 +38,18 @@ No more switching to the Figma app to check comments, find a file key or export 
 
 
 ## Available Tools (16)
+- **get_comment_reactions**: Each reaction includes the emoji, the user who reacted and the creation date.
+
+Get reactions on a Figma comment
+- **get_comments**: Each comment includes the message, author, creation date, position on canvas (client_meta) and resolved status. Use this to review feedback, design discussions and review threads.
+
+Get comments on a Figma file
 - **get_component**: Returns the component name, description, owning file and node ID.
 
 Get a published component by key
 - **get_file**: Returns the file name, version, nodes hierarchy, styles, components and component sets. The file key is found in the file URL: figma.com/file/<FILE_KEY>/<name>. Optionally set depth to limit how many levels of the node tree are returned. Use this to explore the full structure of a design file.
 
 Get a Figma file by key
-- **get_file_nodes**: Returns the node tree, styles and components for each requested node. Use this to inspect individual frames or components without loading the entire file. Node IDs can be found in the file URL when selecting a node or from the file document tree.
-
-Get specific nodes from a Figma file
 - **get_file_versions**: Each version includes its ID, label, description, creation date, creator and whether it is the current version. Useful for tracking design changes and restoring previous versions.
 
 Get version history of a Figma file
@@ -59,33 +62,30 @@ Render Figma nodes as images
 - **get_user**: Returns user ID, email, handle, avatar URL and account type. Use this to verify your token is working correctly.
 
 Get the authenticated Figma user
-- **get_project_files**: Each file includes its key, name, creation date, last modified date and version. Optionally set branch_data to "true" to include branch information.
-
-Get files in a Figma project
-- **get_recent_files**: Returns file key, name, last modified date, thumbnail URL and associated project. Useful for quickly finding files you've been working on.
-
-Get recently accessed Figma files
 - **get_team_component_sets**: Useful for understanding the structure of the team's design system libraries.
 
 Get published component sets for a Figma team
 - **get_team_components**: Each component includes its key, name, description, owning file and creation metadata. Useful for auditing the team's design system.
 
 Get published components for a Figma team
-- **get_team_projects**: Each project has an ID, name and creation date. Use the team ID from the team URL or from get_user.
-
-Get projects in a Figma team
 - **post_comment**: Requires the file key and message text. Optionally set a position on the canvas using x/y coordinates to pin the comment to a specific location, or reply to an existing comment using comment_id.
 
 Post a comment on a Figma file
+- **get_file_nodes**: Returns the node tree, styles and components for each requested node. Use this to inspect individual frames or components without loading the entire file. Node IDs can be found in the file URL when selecting a node or from the file document tree.
+
+Get specific nodes from a Figma file
+- **get_project_files**: Each file includes its key, name, creation date, last modified date and version. Optionally set branch_data to "true" to include branch information.
+
+Get files in a Figma project
+- **get_recent_files**: Returns file key, name, last modified date, thumbnail URL and associated project. Useful for quickly finding files you've been working on.
+
+Get recently accessed Figma files
+- **get_team_projects**: Each project has an ID, name and creation date. Use the team ID from the team URL or from get_user.
+
+Get projects in a Figma team
 - **post_comment_reaction**: Provide the file key, comment ID and the emoji character (e.g. "👍", "❤️", "🔥").
 
 Add a reaction to a Figma comment
-- **get_comment_reactions**: Each reaction includes the emoji, the user who reacted and the creation date.
-
-Get reactions on a Figma comment
-- **get_comments**: Each comment includes the message, author, creation date, position on canvas (client_meta) and resolved status. Use this to review feedback, design discussions and review threads.
-
-Get comments on a Figma file
 
 
 ## 💬 Prompt Examples

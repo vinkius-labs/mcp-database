@@ -7,40 +7,43 @@
 
 **Category:** [friends-mcp](../categories/friends-mcp.md)
 
-Scrape and crawl the web — audit website content and maps via AI.
+Crawl and scrape entire websites into clean LLM-ready markdown with a single API call that handles JavaScript rendering.
 
 ## Description
-Empower your AI agent to orchestrate your entire web extraction workflow with **Firecrawl**, the engine that turns websites into LLM-ready markdown. By connecting Firecrawl to your agent, you transform complex scraping tasks into a natural conversation. Your agent can instantly scrape specific URLs, audit website structure through mapping, and manage long-running crawl jobs without you ever touching a technical dashboard. Whether you are building a knowledge base or monitoring competitor updates, your agent acts as a real-time web curator, ensuring your data is always structured and up-to-date.
+Connect your **Firecrawl** account to any AI agent and take full control of your web data acquisition and recursive crawling workflows through natural conversation.
 
 ### What you can do
 
-- **Web Auditing** — Scrape any URL and retrieve cleaned markdown content to maintain a structured view of site information.
-- **Crawl Oversight** — Start multi-page crawl jobs and monitor their progress to ensure comprehensive data collection.
-- **Structural Intelligence** — Map out a website's hierarchy to understand site depth and page distribution instantly.
-- **Execution Management** — List and delete crawl jobs to maintain strict organizational control over your scraping tasks.
-- **Format Customization** — Retrieve data in markdown or HTML formats optimized for different LLM requirements.
+- **Web Scrape Orchestration** — Scrape any single URL programmatically into high-fidelity Markdown, excluding boilerplate content like headers and footers automatically
+- **Recursive Crawling** — Programmatically discover and scrape all subpages starting from a root URL to build comprehensive knowledge bases and RAG pipelines
+- **Site Mapping** — Quickly identify all reachable links on a domain without full content extraction to understand website structures and hierarchies
+- **Visual Capture** — Capture full-page screenshots of any URL directly through your agent to maintain a visual record of web data
+- **Usage Monitoring** — Track your Firecrawl credit usage, remaining limits, and active crawl job statuses in real-time
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Firecrawl API Key
-3. Start managing your web extraction through Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API Key** from the Firecrawl dashboard (API Keys section)
+3. Start scraping and crawling the web from Claude, Cursor, or any MCP client
+
+No more manual copy-pasting from websites or complex BeautifulSoup scripts. Your AI acts as your dedicated web data engineer.
 
 ### Who is this for?
 
-- **Data Scientists** — monitor website content and retrieve structured data straight from your workflow.
-- **SEO Specialists** — verify website maps and page hierarchies without manual crawling.
-- **Content Marketers** — perform rapid audits of competitor blogs and landing pages through natural language.
-- **Growth Engineers** — automate web extraction querying to orchestrate cross-functional data teams smoothly.
+- **AI Developers** — build RAG applications by programmatically ingesting clean, structured web data via natural language
+- **Research Teams** — automate data gathering from across the web for market analysis and competitor monitoring
+- **Content Creators** — instantly convert articles into Markdown and capture website screenshots without leaving your workspace
 
 
 ## Available Tools (6)
-- **crawl_url**: Start a crawl job for a website
-- **delete_crawl_job**: Delete a crawl job
-- **get_crawl_status**: Get the status of a crawl job
-- **list_crawl_jobs**: List all active and past crawl jobs
-- **map_website**: Get a map of a website structure
-- **scrape_url**: Scrape a single URL and return markdown
+- **get_api_usage**: Check Firecrawl credit usage
+- **cancel_active_crawl**: Stop an ongoing crawl
+- **start_crawl**: Returns a job ID.
+
+Recursively crawl a website
+- **map_website_structure**: Discover all URLs on a site
+- **get_crawl_status**: Check the status of a crawl job
+- **scrape_url**: Turn a single URL into clean Markdown
 
 
 ## 💬 Prompt Examples
@@ -48,38 +51,38 @@ Empower your AI agent to orchestrate your entire web extraction workflow with **
 Here are some examples of how you can interact with the **Firecrawl** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Scrape https://vinkius.com/about and give me the markdown content."
+> "Turn 'https://stripe.com/docs/api' into clean Markdown."
 
 **🤖 AI Agent:**
-> I've scraped the page! I've retrieved the cleaned markdown which details Vinkius's mission and team. Would you like a summary of the core sections?
+> Scraping in progress... I've successfully converted the Stripe API documentation into high-fidelity Markdown, excluding the navigation and footers. Would you like me to summarize the main endpoints for you?
 
 ---
 
 **👤 You:**
-> "Start a crawl job for https://docs.firecrawl.dev with a limit of 10 pages."
+> "Crawl 'https://docs.firecrawl.dev' recursively with a limit of 10 pages."
 
 **🤖 AI Agent:**
-> Crawl job started! The Job ID is `job_12345`. I'll monitor the status for you. So far, it has identified the main documentation categories. Would you like me to notify you when it's done?
+> Crawl job started! I've initiated a recursive crawl of the Firecrawl documentation (ID: crl_123). I'll monitor the progress for you and notify you as soon as the 10 pages are indexed.
 
 ---
 
 **👤 You:**
-> "Map the website structure of https://github.com."
+> "Map all internal links for 'https://github.com/vinkius'."
 
 **🤖 AI Agent:**
-> I've mapped out the hierarchy for GitHub. It includes major sections like /features, /pricing, and /trending. Would you like the full list of identified subdirectories?
+> Mapping site structure... I've identified all reachable links for the requested domain. I found 25 internal URLs, including various repository and profile paths. Would you like the full list of mapped URLs?
 
 
 ## ❓ FAQ
 
 **Q: How do I find my Firecrawl API Key?**
-Log in to your [**Firecrawl.dev dashboard**](https://www.firecrawl.dev/app/settings/api-keys), and you will find your API Key under the settings. Copy and paste it below.
+Log in to your [**Firecrawl dashboard**](https://www.firecrawl.dev/app/dashboard), and navigate to the **API Keys** section to copy your unique token.
 
-**Q: Can the agent crawl multiple pages at once?**
-Yes. Use the `crawl_url` tool providing the base URL. Firecrawl will start a job to extract all subpages, and you can monitor the status via `get_crawl_status`.
+**Q: Can I scrape content excluding headers and footers?**
+Yes! The `scrape_url` tool includes an `onlyMainContent` parameter. When set to true, Firecrawl uses AI to extract only the core article or page content.
 
-**Q: Is it possible to see the website structure before scraping?**
-Yes. The `map_website` tool allows your agent to retrieve a hierarchy of the site, giving you an audit of the structure before performing a full scrape or crawl.
+**Q: How long does a recursive crawl take?**
+Crawl time depends on the site size and depth. Use the `get_crawl_status` tool to monitor progress and retrieve results once the job is complete.
 
 
 ## Installation & Usage
