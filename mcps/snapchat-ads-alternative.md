@@ -39,10 +39,10 @@ Empower your AI agent to orchestrate your entire advertising ecosystem on Snapch
 - **get_ad_account**: Get details for a specific ad account
 - **get_campaign_stats**: Get statistics for a campaign
 - **list_ad_accounts**: List Snapchat ad accounts
-- **list_ad_squads**: List ad squads for a campaign
-- **list_ads**: List ads for an ad squad
 - **list_campaigns**: List campaigns for an ad account
 - **list_media**: List media assets for an ad account
+- **list_ad_squads**: List ad squads for a campaign
+- **list_ads**: List ads for an ad squad
 - **list_organizations**: List Snapchat organizations
 
 

@@ -39,14 +39,14 @@ Empower your AI agent to orchestrate your messaging workflows with the **Telegra
 - **get_updates**: Get recent Telegram updates
 - **get_webhook_info**: Get webhook status
 - **leave_chat**: Leave a chat
-- **send_message**: Send a message via Telegram
-- **send_photo**: Send a photo via Telegram
-- **set_webhook**: Set Telegram webhook
 - **delete_webhook**: Delete Telegram webhook
 - **get_chat_administrators**: Get chat admins
 - **get_chat_member_count**: Get chat member count
 - **get_chat**: Get chat details
 - **get_file**: Get file info
+- **send_message**: Send a message via Telegram
+- **send_photo**: Send a photo via Telegram
+- **set_webhook**: Set Telegram webhook
 
 
 ## 💬 Prompt Examples

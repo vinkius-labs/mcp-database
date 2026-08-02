@@ -39,12 +39,12 @@ Empower your AI agent to access a vast array of essential data services with **J
 - **get_calendar_month**: Get holiday info for a month
 - **get_constellation_horoscope**: Get constellation horoscope
 - **get_driving_test_questions**: Get random driving test questions
+- **get_oil_price**: Get latest oil prices in China
+- **get_weather**: Get weather information for a city
 - **get_exchange_rate**: Get currency exchange rate
 - **get_id_card_info**: Get ID card basic information
 - **get_ip_lookup**: Lookup IP address location
 - **get_latest_news**: Get latest news headlines
-- **get_oil_price**: Get latest oil prices in China
-- **get_weather**: Get weather information for a city
 
 
 ## 💬 Prompt Examples

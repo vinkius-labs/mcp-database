@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire search engine research workflow
 
 
 ## Available Tools (6)
-- **get_google_shopping**: Search Google Shopping results
-- **search_baidu**: Search Baidu results
 - **search_bing**: Search Bing organic results
 - **search_google**: Search Google organic results
 - **search_yahoo**: Search Yahoo results
+- **get_google_shopping**: Search Google Shopping results
+- **search_baidu**: Search Baidu results
 - **search_youtube**: Search YouTube videos
 
 

@@ -34,14 +34,15 @@ Connect any **Telegram Bot** to your AI agent and automate messaging, broadcasti
 
 
 ## Available Tools (13)
-- **forward_message**: Forward a message in Telegram
-- **get_chat_admins**: Get list of chat administrators
-- **get_chat_members_count**: Get the number of chat members
 - **get_chat_info**: Get information about a Telegram chat
 - **get_bot_info**: Get information about the Telegram bot
 - **get_updates**: Useful for seeing what users have sent.
 
 Get updates for the Telegram bot
+- **delete_message**: Delete a message from Telegram
+- **forward_message**: Forward a message in Telegram
+- **get_chat_admins**: Get list of chat administrators
+- **get_chat_members_count**: Get the number of chat members
 - **get_user_profile_photos**: Returns a list of photo sizes.
 
 Get user profile photos
@@ -54,7 +55,6 @@ Send a text message to a Telegram chat
 
 Send a photo to a Telegram chat
 - **send_video**: Send a video to a Telegram chat
-- **delete_message**: Delete a message from Telegram
 
 
 ## 💬 Prompt Examples

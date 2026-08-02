@@ -39,8 +39,8 @@ Empower your AI agent to orchestrate your entire cinematic research and media au
 - **get_imdb_movie_details**: g., tt1234567).
 
 Get full metadata and synopsis for a specific IMDB title by ID
-- **search_imdb_movies**: Search for movies and TV shows on IMDB
 - **check_api_status**: Check if the IMDB service is operational
+- **search_imdb_movies**: Search for movies and TV shows on IMDB
 
 
 ## 💬 Prompt Examples

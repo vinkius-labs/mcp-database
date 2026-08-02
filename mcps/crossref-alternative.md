@@ -37,6 +37,21 @@ Connect to **CrossRef** and explore the world's largest scholarly metadata datab
 
 
 ## Available Tools (13)
+- **get_works_by_doi_list**: Provide a comma-separated list of DOIs. Returns metadata for each work including title, authors, publication date and journal.
+
+Get metadata for multiple works by their DOIs
+- **search_funders**: Returns funder names, IDs, country codes, URIs and work counts.
+
+Search research funders by name
+- **search_journals**: Returns journal titles, ISSNs, publisher names and work counts.
+
+Search academic journals by name
+- **search_members**: Returns member names, IDs, prefixes and work counts.
+
+Search CrossRef member organizations
+- **search_publishers**: Returns publisher names, work counts, journal counts and organization names.
+
+Search academic publishers by name
 - **get_funder**: Returns funder name, country, URI, work count and location info.
 
 Get details for a specific research funder
@@ -58,21 +73,6 @@ Get list of academic work types
 - **get_work**: Returns title, authors, abstract, publication date, journal, publisher, license, references, citation count and full citation info.
 
 Get metadata for a specific academic work by DOI
-- **get_works_by_doi_list**: Provide a comma-separated list of DOIs. Returns metadata for each work including title, authors, publication date and journal.
-
-Get metadata for multiple works by their DOIs
-- **search_funders**: Returns funder names, IDs, country codes, URIs and work counts.
-
-Search research funders by name
-- **search_journals**: Returns journal titles, ISSNs, publisher names and work counts.
-
-Search academic journals by name
-- **search_members**: Returns member names, IDs, prefixes and work counts.
-
-Search CrossRef member organizations
-- **search_publishers**: Returns publisher names, work counts, journal counts and organization names.
-
-Search academic publishers by name
 - **search_works**: Supports free-text query and advanced filtering by type, publication date, author, journal, publisher, funder, license and more. Returns titles, authors, publication dates, DOIs, citation counts and abstracts.
 
 Search academic works by title, author, DOI or keywords

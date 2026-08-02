@@ -7,52 +7,57 @@
 
 **Category:** [marketing-automation](../categories/marketing-automation.md)
 
-Manage your email marketing campaigns, subscribers, and automation via MailerLite.
+Design beautiful emails, grow your subscriber base, and sell digital products with marketing tools that put simplicity first.
 
 ## Description
-Empower your AI agent to orchestrate your entire email marketing ecosystem with **MailerLite**, the simple yet powerful platform for growing your business. By connecting MailerLite to your agent, you transform complex subscriber management into a natural conversation. Your agent can instantly list active subscribers, create targeted groups, and audit campaign performance without you ever touching a dashboard. Whether you are managing a small newsletter or a large-scale marketing operation, your agent acts as a real-time marketing manager, ensuring your communication is always precise and effective.
+Connect your **MailerLite** account to any AI agent and manage email marketing through natural conversation.
 
 ### What you can do
 
-- **Subscriber Management** — List, retrieve, create, and update subscribers using email or ID to keep your list healthy.
-- **Groups & Segments** — Organize your audience into targeted groups and segments for highly personalized marketing.
-- **Campaign Insights** — List sent and draft campaigns to stay on top of your marketing efforts and audit content.
-- **Form Tracking** — Monitor your popups and embedded forms to understand lead generation performance in real-time.
-- **Account Auditing** — Quickly retrieve account details and authorized access to maintain organizational control.
+- **Campaign Management** — Create, schedule, and track email campaigns
+- **Subscriber Management** — Add, segment, and manage subscriber groups
+- **Automation Workflows** — Browse and monitor automated email sequences
+- **Analytics** — Track open rates, click rates, and subscriber growth
+- **Form & Landing Pages** — Access signup forms and landing page data
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your MailerLite API Token
-3. Start managing your email marketing through Claude, Cursor, or any MCP-compatible client
+2. Enter your MailerLite API Key and API version
+3. Start managing email from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Marketing Managers** — instantly retrieve campaign statuses and subscriber counts without opening the MailerLite app.
-- **Customer Support Teams** — verify subscriber details and group memberships directly from the support chat.
-- **Content Creators** — check if new newsletters have been correctly drafted and scheduled for distribution.
-- **Operations Leads** — automate audience querying to orchestrate cross-functional marketing teams smoothly.
+- **Marketers** — run email campaigns with advanced analytics
+- **Small Businesses** — manage subscriber lists and automations
+- **Creators** — grow audiences with landing pages and forms
 
 
-## Available Tools (12)
-- **add_subscriber_to_group**: Add a subscriber to a group
-- **create_group**: Create a new subscriber group
-- **create_subscriber**: Mandatory: email is required.
+## Available Tools (10)
+- **create_group**: Use this to organize and segment your audience.
 
-Create or update a MailerLite subscriber
-- **delete_subscriber**: Delete a MailerLite subscriber
-- **get_me**: Get MailerLite account details
+Create a new subscriber group
 - **get_subscriber**: Get details for a specific subscriber
-- **list_campaigns**: List MailerLite campaigns
-- **list_forms**: Default is popup.
+- **list_campaigns**: Useful for monitoring marketing activity.
 
-List MailerLite forms
-- **list_groups**: List all MailerLite groups
-- **list_segments**: List all MailerLite segments
-- **list_subscribers**: Supports filtering by status (active, unsubscribed, unconfirmed, bounced, junk).
+List email campaigns
+- **list_custom_fields**: Essential for identifying which fields can be mapped during subscriber upserts.
 
-List MailerLite subscribers
-- **remove_subscriber_from_group**: Remove a subscriber from a group
+List all custom subscriber fields
+- **list_forms**: List all signup forms
+- **list_groups**: Groups are used to organize subscribers for targeted mailings.
+
+List all subscriber groups
+- **list_segments**: Useful for identifying high-engagement subsets of your audience.
+
+List all subscriber segments
+- **list_subscribers**: Includes email addresses, statuses, and basic engagement metadata.
+
+List all email subscribers
+- **list_webhooks**: List active account webhooks
+- **upsert_subscriber**: Requires the email address and supports optional first/last name fields.
+
+Create or update a subscriber
 
 
 ## 💬 Prompt Examples
@@ -60,38 +65,38 @@ List MailerLite subscribers
 Here are some examples of how you can interact with the **MailerLite** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List the last 5 active subscribers in MailerLite."
+> "Show all campaigns and subscriber growth this month."
 
 **🤖 AI Agent:**
-> I've retrieved your recent subscribers. You have 5 new active members, including 'john@doe.com' and 'jane@smith.net'. Would you like the full details for any of them?
+> Campaigns: 12 total. Active: 2 ('Weekly Digest', 'Product Update'). Sent this month: 4. Best: 'Feature Announcement' (42% open, 11% click ⭐). Subscribers: 8,450 total. Growth (30 days): +320 new, -45 unsubscribes. Net: +275. Groups: 'Newsletter' (5,200), 'Product Updates' (3,800), 'Beta' (890).
 
 ---
 
 **👤 You:**
-> "Show me all my subscriber groups."
+> "Show automation workflows and their conversion metrics."
 
 **🤖 AI Agent:**
-> I've found 3 subscriber groups in your account: 'VIP Customers', 'Newsletter Leads', and 'Event Attendees'. Which group would you like to inspect?
+> Automations: 5 active. 'Welcome Series' (7 emails, 48% open, 14% click, 10% conversion ⭐). 'Cart Recovery' (3 emails, 35% open, 18% click). 'Lead Nurture' (5 emails, 32% open, 8% click). 'Re-engagement' (2 emails, 20% open). 'Upgrade Prompt' (1 email, 28% open, 12% conversion). Total triggered (30 days): 1,240.
 
 ---
 
 **👤 You:**
-> "Check if there are any sent campaigns this week."
+> "Create a subscriber segment and show signup form analytics."
 
 **🤖 AI Agent:**
-> I've scanned your campaigns. You have 2 sent campaigns this week: 'Weekly Update #42' and 'Flash Sale October'. I can provide performance metrics for both if needed.
+> Segment created! 'Active Buyers' — opened 5+ emails AND clicked 2+ times (30 days): 1,450 subscribers (17% of total). Forms: 4 active. 'Homepage Popup' (340 signups/mo, 4.2% conversion). 'Blog Sidebar' (180, 2.8%). 'Footer' (90, 1.5%). 'Landing Page' (210, 8.5% ⭐).
 
 
 ## ❓ FAQ
 
-**Q: How do I find my MailerLite API token?**
-Log in to MailerLite, go to **Integrations**, and click **API** to generate a new token. Copy and paste it into the token field below.
+**Q: Can I create campaigns and track performance?**
+Yes. Create and schedule campaigns, send to groups or segments, and track opens, clicks, bounces, and conversions in real time.
 
-**Q: Can I add subscribers to specific groups using the AI agent?**
-Yes. Use the `add_subscriber_to_group` tool with the specific Group ID and Subscriber ID. Your agent will link them instantly and confirm the association.
+**Q: Does MailerLite require an API version parameter?**
+Yes. MailerLite requires an **API Key** and **API Version** (v1 or v2) for configuration. Bearer auth against `api.mailerlite.com/api/v2`.
 
-**Q: Is it possible to monitor campaign drafts?**
-Yes. You can list all campaigns, including those in draft status, using the `list_campaigns` tool. This allows your agent to audit content before it is finalized.
+**Q: Can I manage automation workflows?**
+Yes. Browse active automations, monitor trigger rates, and view email sequence performance.
 
 
 ## Installation & Usage

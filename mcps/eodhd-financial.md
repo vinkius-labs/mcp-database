@@ -36,21 +36,12 @@ Connect to **EODHD Financial Data** and access professional-grade stock market d
 
 
 ## Available Tools (10)
-- **get_dividends**: Returns ex-dividend date, payment date, record date, declaration date and dividend amount per share. Symbol format: TICKER.EXCHANGE. Supports date range filtering.
-
-Get dividend history for a stock
-- **get_eod_data**: Supports daily, weekly and monthly periods. Symbol format: TICKER.EXCHANGE (e.g. "AAPL.US"). Use date_from and date_to for date range filtering.
-
-Get historical end-of-day stock data
 - **get_exchange_symbols**: Returns symbol codes, names, country and exchange info. Common exchanges: "US" (NYSE/NASDAQ), "XETRA" (Germany), "LSE" (London), "TO" (Tokyo), "PA" (Paris).
 
 Get all symbols for a specific exchange
 - **get_fundamentals**: Symbol format: TICKER.EXCHANGE. Use filter parameter to request specific sections (e.g. "General,Highlights,Valuation").
 
 Get fundamental data for a stock
-- **get_historical_dividends**: Provide comma-separated symbols (e.g. "AAPL.US,MSFT.US,GOOGL.US"). Returns dividend dates and amounts for all matching tickers.
-
-Get historical dividends for multiple tickers
 - **get_historical_splits**: Provide comma-separated symbols. Returns split dates and ratios for all matching tickers.
 
 Get historical stock splits for multiple tickers
@@ -63,6 +54,15 @@ Get real-time stock price
 - **get_splits**: Returns split date and split ratio (e.g. "2:1" for a 2-for-1 split). Symbol format: TICKER.EXCHANGE.
 
 Get stock split history for a stock
+- **get_dividends**: Returns ex-dividend date, payment date, record date, declaration date and dividend amount per share. Symbol format: TICKER.EXCHANGE. Supports date range filtering.
+
+Get dividend history for a stock
+- **get_eod_data**: Supports daily, weekly and monthly periods. Symbol format: TICKER.EXCHANGE (e.g. "AAPL.US"). Use date_from and date_to for date range filtering.
+
+Get historical end-of-day stock data
+- **get_historical_dividends**: Provide comma-separated symbols (e.g. "AAPL.US,MSFT.US,GOOGL.US"). Returns dividend dates and amounts for all matching tickers.
+
+Get historical dividends for multiple tickers
 - **search_tickers**: Returns matching symbols with exchange, name, country and type. Useful for finding the correct symbol format for other API calls.
 
 Search for stock tickers by name or symbol

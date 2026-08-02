@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your entire cloud communication infrastruct
 
 
 ## Available Tools (10)
-- **get_account**: Get Plivo account details
-- **get_call**: Get details for a specific call
+- **list_messages**: List recent SMS messages
 - **get_message**: Get details for a specific message
 - **list_applications**: List Plivo applications
 - **list_calls**: List recent voice calls
-- **list_messages**: List recent SMS messages
 - **list_phone_numbers**: List Plivo phone numbers
 - **list_pricing**: Get pricing for a country
 - **make_call**: Start an outbound call
+- **get_account**: Get Plivo account details
+- **get_call**: Get details for a specific call
 - **send_sms**: Send an SMS message
 
 
