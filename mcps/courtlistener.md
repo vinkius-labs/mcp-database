@@ -35,13 +35,13 @@ Empower your AI agent to orchestrate your entire legal research workflow with **
 
 
 ## Available Tools (10)
+- **get_opinion**: Get details for a specific opinion
+- **search_dockets**: Search for court dockets
 - **get_judge**: Get details for a specific judge
 - **list_citations**: List citations for an opinion
 - **list_financial_disclosures**: List judge financial disclosures
 - **list_judges**: List judges
 - **list_opinions**: List opinions
-- **get_opinion**: Get details for a specific opinion
-- **search_dockets**: Search for court dockets
 - **search_opinions**: Search for legal opinions
 - **get_court**: Get details for a specific court
 - **list_courts**: List all courts

@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire software development lifecycle 
 
 
 ## Available Tools (10)
-- **get_commit**: Get commit details
 - **get_issue**: Get issue details
+- **get_user**: Get current user profile
+- **get_commit**: Get commit details
 - **get_project**: Get project details
 - **get_repo**: Get repository details
-- **get_user**: Get current user profile
 - **list_branches**: List repository branches
 - **list_issues**: List project issues
 - **list_mrs**: List merge requests

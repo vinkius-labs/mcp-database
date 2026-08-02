@@ -45,13 +45,13 @@ Calculate emissions using industry classification codes (ISIC, NACE, etc.)
 Calculate carbon emissions for a specific activity
 - **list_categories**: Retrieve a list of all available emission categories
 - **list_regions**: Retrieve a list of all supported regions
+- **search_emission_factors**: Search for emission factors in the Climatiq database
 - **list_sectors**: Retrieve a list of all available emission sectors
 - **list_sources**: Retrieve a list of all data sources for emission factors
 - **list_units**: ) accepted by the API.
 
 Retrieve a list of all supported units of measure
 - **list_years**: Retrieve a list of all years for which emission factors are available
-- **search_emission_factors**: Search for emission factors in the Climatiq database
 
 
 ## 💬 Prompt Examples

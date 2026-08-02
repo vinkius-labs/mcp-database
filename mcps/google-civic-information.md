@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire civic participation and politic
 
 
 ## Available Tools (5)
-- **check_api_status**: Check if the Google Civic Information API is operational
+- **get_voter_information**: Get voter information (polling sites, ballots) for an address and election
 - **get_google_civic_elections**: List upcoming and past elections supported by Google Civic
 - **get_representatives_by_address**: Find political representatives for a specific street address
-- **get_voter_information**: Get voter information (polling sites, ballots) for an address and election
 - **search_civic_divisions**: Search for electoral divisions (OCD-IDs) by name or location
+- **check_api_status**: Check if the Google Civic Information API is operational
 
 
 ## 💬 Prompt Examples

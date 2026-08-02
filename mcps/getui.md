@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your push notification infrastructure with 
 
 
 ## Available Tools (10)
+- **push_to_all**: Broadcast push to all users
+- **get_push_status**: Check push task status
 - **bind_user_alias**: g., username) with a Client ID.
 
 Bind alias to user
 - **get_app_user_stats**: Get application user stats
-- **get_push_status**: Check push task status
 - **get_cid_status**: Check user online status
 - **get_daily_push_report**: Get daily push report
 - **get_user_tags**: Get user tags
-- **push_to_all**: Broadcast push to all users
 - **push_to_list**: Send push to multiple users
 - **push_to_single**: Send push to single user
 - **query_user_alias**: Query user alias

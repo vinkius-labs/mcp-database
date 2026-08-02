@@ -33,6 +33,7 @@ Connect your **Facturama / SAT Mexico** corporative tax backend to any LLM and n
 
 
 ## Available Tools (14)
+- **list_invoices**: List issued CFDIs (Tax Invoices)
 - **create_client**: Register a new B2B invoice receiver
 - **delete_client**: Remove receiver context
 - **get_tax_status**: Read internal SAT compliance tax state
@@ -45,7 +46,6 @@ Connect your **Facturama / SAT Mexico** corporative tax backend to any LLM and n
 - **get_invoice_file**: Extract an invoice graphic representation (Base64 file)
 - **get_product**: Fetch targeted product SAT specifics
 - **list_clients**: List registered clients with tax details (RFC)
-- **list_invoices**: List issued CFDIs (Tax Invoices)
 - **list_products**: List tax-mapped registered products
 
 

@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your data collection workflows with **Jinsh
 
 
 ## Available Tools (10)
-- **get_entry_count**: Get total entry count
-- **get_form**: Get form details
 - **get_form_fields**: Get form field definitions
-- **list_entries**: List form entries
 - **list_forms**: List all forms
-- **list_webhooks**: List form webhooks
-- **update_entry**: Update an entry
 - **create_entry**: Submit a new entry
 - **delete_entry**: Delete an entry
 - **get_entry**: Get entry details
+- **get_entry_count**: Get total entry count
+- **get_form**: Get form details
+- **list_entries**: List form entries
+- **list_webhooks**: List form webhooks
+- **update_entry**: Update an entry
 
 
 ## 💬 Prompt Examples

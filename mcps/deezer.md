@@ -29,7 +29,6 @@ Connect **Deezer** music catalog to any AI agent and search millions of tracks, 
 
 
 ## Available Tools (14)
-- **get_album_tracks**: Get tracks from an album
 - **get_artist_radio**: Get artist radio tracks
 - **get_artist**: Get detailed artist information
 - **get_artist_top_tracks**: Get top tracks for an artist
@@ -43,6 +42,7 @@ Get Deezer charts
 - **search_artists**: Returns artist info including fan count, album count, and profile links.
 
 Search for artists on Deezer
+- **get_album_tracks**: Get tracks from an album
 - **search_playlists**: Returns playlist info including creator, track count, and fan count.
 
 Search for playlists on Deezer

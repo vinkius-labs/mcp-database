@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire financial auditing and banking 
 
 
 ## Available Tools (6)
-- **calculate_iban**: Calculate an IBAN from local account details
-- **get_api_balance**: Check remaining API request balance
-- **get_bank_details**: Get detailed bank information from an IBAN
 - **validate_card_luhn**: Validate a credit card number using the Luhn algorithm
 - **validate_iban**: Verify if an IBAN code is valid and retrieve bank metadata
 - **validate_swift_bic**: Verify if a SWIFT/BIC code is valid
+- **calculate_iban**: Calculate an IBAN from local account details
+- **get_api_balance**: Check remaining API request balance
+- **get_bank_details**: Get detailed bank information from an IBAN
 
 
 ## 💬 Prompt Examples
