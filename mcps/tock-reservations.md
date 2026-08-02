@@ -34,9 +34,9 @@ Integrate **Tock**, the leading reservation and hospitality management platform,
 
 ## Available Tools (10)
 - **get_tock_account_metadata**: Retrieve metadata and limits for your Tock account
+- **quick_hospitality_volume_audit**: Retrieve a high-level summary of reservations, guests, and events
 - **get_business_performance_metrics**: Get a summary of performance metrics for a specific business
 - **get_business_detailed_data**: Get detailed settings and information for a specific business
-- **quick_hospitality_volume_audit**: Retrieve a high-level summary of reservations, guests, and events
 - **get_reservation_details**: Get full content and status for a specific reservation
 - **list_managed_businesses**: List all businesses and venues managed in your Tock account
 - **list_business_special_events**: List all special events and pop-ups for a specific business

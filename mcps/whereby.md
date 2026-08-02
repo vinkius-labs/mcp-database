@@ -52,8 +52,8 @@ Permanently deletes a cloud recording file
 - **get_meeting_details**: Retrieves details for a specific video meeting, including its join URL and expiration date
 - **get_recording_details**: Retrieves download links and metadata for a specific cloud recording
 - **get_room_theme**: Retrieves the visual theme settings (colors, logo) for a specific room name
-- **list_active_meetings**: Lists all currently active or pending video meeting rooms created via the API
 - **list_cloud_recordings**: Lists all cloud recordings stored in the Whereby account
+- **list_active_meetings**: Lists all currently active or pending video meeting rooms created via the API
 - **update_room_theme**: Provide the room name and a hex color code.
 
 Updates the primary branding color for a specific meeting room

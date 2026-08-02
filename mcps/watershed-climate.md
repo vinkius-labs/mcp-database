@@ -39,32 +39,12 @@ No more manual CSV uploads or navigating complex dashboards. Your AI acts as a d
 
 
 ## Available Tools (16)
-- **submit_upload**: This triggers Watershed's calculation 
-engine to convert activity data into emissions measurements using appropriate emission factors.
-The upload must be validated successfully before submission. 
-The response includes a task_id that can be used to track processing status via get_task_status.
-Processing may take some time depending on data volume.
+- **create_upload**: An upload is required before you can add data records to Watershed.
+After creating an upload, you add data records to it, validate the data, and then submit it for processing.
+The upload acts as a batch grouping mechanism for related activity data.
+You can optionally provide a name and description to identify the upload purpose.
 
-Submit a validated upload for emissions processing
-- **delete_upload_data_record**: Use this to remove 
-incorrect or unwanted data before validating and submitting the upload.
-This action cannot be undone. The record_id is obtained from list_upload_data_records.
-
-Delete a specific data record from an upload
-- **get_inventory**: Use the inventory_id from list_inventories to inspect detailed carbon footprint results
-and understand your organization's emissions composition.
-
-Get detailed information about a specific GHG inventory
-- **get_report**: Use the report_id from list_reports to access the full report details including
-generated files, disclosure frameworks covered, and emissions data summarized.
-Reports are typically generated after inventories are complete and validated.
-
-Get detailed information about a specific report
-- **get_task_status**: When you submit an upload for processing, a task is created and returns a task_id.
-Use this tool to check if the processing is complete, still in progress, or failed.
-Task status is useful for monitoring large data submissions that may take time to process.
-
-Check status of a processing task (e.g., upload submission)
+Create a new data upload container in Watershed
 - **get_upload**: Use the upload_id from list_uploads to inspect details 
 before adding data or submitting for validation.
 
@@ -99,6 +79,13 @@ Each upload can contain multiple data records representing activities like elect
 Use this to see all existing uploads and their IDs before adding data or submitting for processing.
 
 List all data uploads in your Watershed organization
+- **submit_upload**: This triggers Watershed's calculation 
+engine to convert activity data into emissions measurements using appropriate emission factors.
+The upload must be validated successfully before submission. 
+The response includes a task_id that can be used to track processing status via get_task_status.
+Processing may take some time depending on data volume.
+
+Submit a validated upload for emissions processing
 - **update_upload_data_record**: Use this to correct errors 
 or modify activity data before validation and submission.
 The record_id is obtained from list_upload_data_records. The body should contain the complete 
@@ -118,12 +105,25 @@ The response includes validation results with any errors or warnings that need t
 Always validate before submitting to ensure successful processing.
 
 Validate data in an upload before submission
-- **create_upload**: An upload is required before you can add data records to Watershed.
-After creating an upload, you add data records to it, validate the data, and then submit it for processing.
-The upload acts as a batch grouping mechanism for related activity data.
-You can optionally provide a name and description to identify the upload purpose.
+- **delete_upload_data_record**: Use this to remove 
+incorrect or unwanted data before validating and submitting the upload.
+This action cannot be undone. The record_id is obtained from list_upload_data_records.
 
-Create a new data upload container in Watershed
+Delete a specific data record from an upload
+- **get_inventory**: Use the inventory_id from list_inventories to inspect detailed carbon footprint results
+and understand your organization's emissions composition.
+
+Get detailed information about a specific GHG inventory
+- **get_report**: Use the report_id from list_reports to access the full report details including
+generated files, disclosure frameworks covered, and emissions data summarized.
+Reports are typically generated after inventories are complete and validated.
+
+Get detailed information about a specific report
+- **get_task_status**: When you submit an upload for processing, a task is created and returns a task_id.
+Use this tool to check if the processing is complete, still in progress, or failed.
+Task status is useful for monitoring large data submissions that may take time to process.
+
+Check status of a processing task (e.g., upload submission)
 
 
 ## 💬 Prompt Examples

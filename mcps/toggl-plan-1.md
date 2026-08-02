@@ -34,7 +34,6 @@ Connect your **Toggl Plan** workspaces to an AI agent entirely bypassing the com
 
 
 ## Available Tools (10)
-- **create_milestone**: Creates a new milestone diamond on the timeline
 - **create_timeline_task**: Provide name, start_date, and end_date (YYYY-MM-DD).
 
 Creates a new task/segment on the Toggl Plan timeline
@@ -45,9 +44,10 @@ Permanently deletes a task from the timeline
 - **get_timeline_view**: Provide since and until dates (YYYY-MM-DD).
 
 Get the visual timeline view from Toggl Plan within a date range
-- **list_workspace_members**: Lists all team members in the workspace
 - **list_milestones**: Lists all milestones markers on the timeline
 - **list_workspace_projects**: Lists all projects in the workspace
+- **create_milestone**: Creates a new milestone diamond on the timeline
+- **list_workspace_members**: Lists all team members in the workspace
 - **list_workspace_tags**: Lists all tags used for task categorization
 - **update_timeline_task**: Provide updates as a JSON object.
 

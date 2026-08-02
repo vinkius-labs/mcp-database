@@ -42,6 +42,18 @@ No more navigating multiple TfL apps or manually checking arrival boards. Your A
 
 
 ## Available Tools (12)
+- **get_road_disruptions**: Returns disruption descriptions, affected road segments, cause types (roadworks, incidents, events, utility works), start and end dates, severity levels, and alternative route recommendations. Can query all disruptions system-wide or filter by specific road. Essential for driving disruption awareness, alternative route planning, delivery logistics, and understanding road reliability. AI agents should reference this when users ask "are there any roadworks on the A4", "what disruptions affect my drive to Heathrow", or need to check road conditions before planning driving journeys in London.
+
+Get current road disruptions and closures across London
+- **get_road_status**: Returns road IDs, road names, status descriptions, corridor details, and operational information. Can query all roads system-wide or filter by a specific road ID (e.g., "A1", "A40", "A205" South Circular). Essential for driving route planning, road closure awareness, understanding London road network conditions, and commuter driving decisions. AI agents should use this when users ask "what is the status of the A40", "are there any road closures on the North Circular", or need to check road conditions before driving journeys in London.
+
+Get current status of London roads, optionally filtered by specific road
+- **get_stop_point_details**: Returns stop ID, common name, station type, modes served, geographic coordinates, address, accessibility information (step-free access, lift availability), fare zone, hub station affiliations, and parent/child station relationships. Essential for stop identification, accessibility planning, fare zone awareness, station navigation, and understanding station hierarchy in the TfL network. AI agents should use this when users ask "tell me about King's Cross station", "is this station step-free", or need detailed stop metadata to contextualise transit queries.
+
+Get detailed information about a specific TfL stop point
+- **get_vehicle_details**: Returns vehicle registration, make, model, compliance status, charge exemptions, and registration dates. Essential for London driving compliance checks, ULEZ awareness, congestion charge planning, and vehicle registration verification. AI agents should use this when users ask "check if vehicle AB12 CDE is ULEZ compliant", "is my car exempt from Congestion Charge", or need to verify vehicle compliance before driving in central London.
+
+Get vehicle details for a registered vehicle in London (ULEZ/congestion charge)
 - **get_arrivals**: g., 940GZZLUSCL for Oxford Circus Underground, or 490007653 for a bus stop). Returns predicted arrival times, line names, destination stations, time to station in minutes, vehicle IDs, expected arrival timestamps, and service types (tube, bus, dlr, elizabeth-line, overground, tram, river, cable-car). Essential for real-time arrival awareness, passenger waiting time estimation, trip timing, and connection coordination across the entire London transport network. AI agents should reference this when users ask "when is the next Northern Line train at Bank", "show upcoming buses at stop 490007653", or need real-time arrival predictions for any TfL stop point. Stop IDs can be found using search_stop_point.
 
 Get real-time arrival predictions for a specific TfL stop point
@@ -63,21 +75,9 @@ List all available transport modes in the TfL network
 - **get_place_search**: Returns place IDs, names, categories, geographic coordinates, address information, and related links. Can optionally filter by place type (e.g., "TubeStation", "BusStation", "Park", "Museum", "Hospital"). Essential for place discovery, tourist planning, accessibility research, and understanding London's infrastructure. AI agents should use this when users ask "find parks near Westminster", "search for museums in South Bank", or need to identify places and points of interest for comprehensive London trip planning.
 
 Search for places and points of interest across London
-- **get_road_disruptions**: Returns disruption descriptions, affected road segments, cause types (roadworks, incidents, events, utility works), start and end dates, severity levels, and alternative route recommendations. Can query all disruptions system-wide or filter by specific road. Essential for driving disruption awareness, alternative route planning, delivery logistics, and understanding road reliability. AI agents should reference this when users ask "are there any roadworks on the A4", "what disruptions affect my drive to Heathrow", or need to check road conditions before planning driving journeys in London.
-
-Get current road disruptions and closures across London
-- **get_road_status**: Returns road IDs, road names, status descriptions, corridor details, and operational information. Can query all roads system-wide or filter by a specific road ID (e.g., "A1", "A40", "A205" South Circular). Essential for driving route planning, road closure awareness, understanding London road network conditions, and commuter driving decisions. AI agents should use this when users ask "what is the status of the A40", "are there any road closures on the North Circular", or need to check road conditions before driving journeys in London.
-
-Get current status of London roads, optionally filtered by specific road
 - **search_stop_point**: Returns matching stop points with their IDs, common names, modes served (tube, bus, dlr, overground, tram, river, cable-car, elizabeth-line), geographic coordinates (lat/lon), and station hierarchy information. Can optionally filter by transport mode. Essential for stop discovery, journey planning interfaces, stop identification, and building location-based transit features. AI agents should use this when users ask "find the tube station near Covent Garden", "search for stops called Victoria", or need to identify stop IDs for use in arrival queries.
 
 Search for TfL stop points by name or location
-- **get_stop_point_details**: Returns stop ID, common name, station type, modes served, geographic coordinates, address, accessibility information (step-free access, lift availability), fare zone, hub station affiliations, and parent/child station relationships. Essential for stop identification, accessibility planning, fare zone awareness, station navigation, and understanding station hierarchy in the TfL network. AI agents should use this when users ask "tell me about King's Cross station", "is this station step-free", or need detailed stop metadata to contextualise transit queries.
-
-Get detailed information about a specific TfL stop point
-- **get_vehicle_details**: Returns vehicle registration, make, model, compliance status, charge exemptions, and registration dates. Essential for London driving compliance checks, ULEZ awareness, congestion charge planning, and vehicle registration verification. AI agents should use this when users ask "check if vehicle AB12 CDE is ULEZ compliant", "is my car exempt from Congestion Charge", or need to verify vehicle compliance before driving in central London.
-
-Get vehicle details for a registered vehicle in London (ULEZ/congestion charge)
 
 
 ## 💬 Prompt Examples

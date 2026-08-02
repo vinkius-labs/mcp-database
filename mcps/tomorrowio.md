@@ -34,22 +34,22 @@ Connect your **Tomorrow.io** account to any AI agent and integrate institutional
 
 
 ## Available Tools (10)
-- **get_air_quality_index**: Retrieve current and forecast air quality data
-- **get_custom_timelines**: Query weather data for custom time ranges and arbitrary intervals
 - **get_daily_forecast**: Returns up to 15 days of daily intervals.
 
 Retrieve daily weather forecast extremes and totals
 - **get_wildfire_risk**: Retrieve wildfire risk index and weather conditions
+- **get_pollen_forecast**: Retrieve daily pollen count indices
+- **get_air_quality_index**: Retrieve current and forecast air quality data
+- **get_custom_timelines**: Query weather data for custom time ranges and arbitrary intervals
+- **get_minutely_precipitation**: Retrieve minute-by-minute precipitation nowcast
+- **get_realtime_weather**: Provide a location (lat,lon, city name, or zip) and field list.
+
+Retrieve current real-time weather conditions for any globalThis location
+- **get_road_weather_risk**: Retrieve assessments for driving and road hazards
 - **get_historical_weather**: Retrieve actual recorded historical weather observations
 - **get_hourly_forecast**: Returns up to 120 hours of predictions.
 
 Retrieve hour-by-hour weather forecast for a location
-- **get_minutely_precipitation**: Retrieve minute-by-minute precipitation nowcast
-- **get_pollen_forecast**: Retrieve daily pollen count indices
-- **get_realtime_weather**: Provide a location (lat,lon, city name, or zip) and field list.
-
-Retrieve current real-time weather conditions for any global location
-- **get_road_weather_risk**: Retrieve assessments for driving and road hazards
 
 
 ## 💬 Prompt Examples

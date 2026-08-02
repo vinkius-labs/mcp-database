@@ -35,12 +35,6 @@ No more switching contexts and scrambling to find important threads on standard 
 
 
 ## Available Tools (10)
-- **create_comment**: Provide the thread_id and your message.
-
-Posts a reply to an existing thread
-- **send_direct_message**: Provide conversation_id and content.
-
-Sends a private message to a specific conversation
 - **create_thread**: Provide channel_id, title, and initial content.
 
 Creates a new asynchronous discussion thread in a channel
@@ -61,6 +55,12 @@ Modifies a previously sent direct message
 - **update_thread**: Provide the thread_id.
 
 Updates the title or content of an existing thread
+- **create_comment**: Provide the thread_id and your message.
+
+Posts a reply to an existing thread
+- **send_direct_message**: Provide conversation_id and content.
+
+Sends a private message to a specific conversation
 
 
 ## 💬 Prompt Examples

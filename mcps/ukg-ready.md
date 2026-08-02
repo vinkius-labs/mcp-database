@@ -15,9 +15,9 @@ The UKG Ready MCP Server connects AI agents to the unified UKG Ready HCM suite, 
 
 ## Available Tools (4)
 - **applicants**: List job applicants
+- **timesheets**: List timesheets for employees
 - **employees**: List employees in UKG Ready
 - **payroll**: List payroll history for employees
-- **timesheets**: List timesheets for employees
 
 
 ## 💬 Prompt Examples

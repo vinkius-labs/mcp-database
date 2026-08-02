@@ -31,10 +31,6 @@ Built for **Advertising Agencies**, **Growth Managers**, and **E-Commerce Advert
 
 
 ## Available Tools (8)
-- **ads_create_ad_group**: Create a new ad group within a Sponsored Search campaign
-- **ads_get_cpc_metrics**: Data lag is approximately 1-3 hours. Optionally filter by a single campaign ID.
-
-Retrieve near real-time spend, impression, and click metrics for active campaigns
 - **ads_get_keyword_performance**: Optionally filter by campaign ID or ad group ID to narrow results.
 
 List keywords and their performance data for the advertiser account
@@ -45,6 +41,10 @@ Generate a performance snapshot report for the advertiser account
 
 List all Sponsored Search advertising campaigns for the authorized advertiser account
 - **ads_pause_campaign**: Pause an active Sponsored Search campaign
+- **ads_create_ad_group**: Create a new ad group within a Sponsored Search campaign
+- **ads_get_cpc_metrics**: Data lag is approximately 1-3 hours. Optionally filter by a single campaign ID.
+
+Retrieve near real-time spend, impression, and click metrics for active campaigns
 - **ads_update_daily_budget**: Budget is in dollars.
 
 Update the daily budget for a specific Sponsored Search campaign

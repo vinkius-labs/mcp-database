@@ -41,7 +41,6 @@ Creates a new task on the Toggl Plan timeline
 
 Permanently deletes a task from the timeline
 - **get_project_details**: Retrieves details for a specific project
-- **get_task_details**: Retrieves details for a specific timeline task
 - **list_milestones**: Lists all project milestones
 - **list_workspace_projects**: Lists all projects in a specific Toggl Plan workspace
 - **list_workspace_tags**: Lists all tags used for task categorization
@@ -52,6 +51,7 @@ Lists all tasks on the Toggl Plan timeline for a specific workspace
 - **update_timeline_task**: Provide updates as a JSON object.
 
 Updates an existing timeline task
+- **get_task_details**: Retrieves details for a specific timeline task
 
 
 ## 💬 Prompt Examples

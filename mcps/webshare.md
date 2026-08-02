@@ -39,7 +39,6 @@ No more manual logging into the Webshare dashboard to whitelist an IP or cycle a
 
 
 ## Available Tools (10)
-- **authorize_new_ip**: Whitelists a new IP address for proxy access
 - **export_proxy_list**: Generates a temporary token to download the entire proxy list in a single request
 - **get_account_profile**: Retrieves Webshare user profile, including plan limits and bandwidth quotas
 - **get_proxy_configuration**: Retrieves current proxy rotation and backbone network settings
@@ -55,6 +54,7 @@ Removes an IP address from the authorized whitelist
 - **request_proxy_replacement**: Subject to account quotas.
 
 Requests an immediate replacement for a specific proxy IP
+- **authorize_new_ip**: Whitelists a new IP address for proxy access
 
 
 ## 💬 Prompt Examples

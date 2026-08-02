@@ -44,11 +44,21 @@ No more navigating the Traction dashboard for every visitor action. Your AI acts
 Example: { "name": "Campus Tour", "scheduledDate": "2026-04-15", "expectedAttendees": 15, "hostId": "host_123", "locationId": "loc_456" }
 
 Create a new group visit (group appointment)
+- **create_signin**: Provide sign-in data as JSON including visitor information, host, location, and purpose of visit.
+Example: { "visitorName": "Alice Johnson", "hostId": "host_123", "locationId": "loc_456", "purpose": "Interview" }
+
+Create a new visitor sign-in (check-in a visitor on-site)
 - **create_host**: Hosts are employees who can receive and host visitors.
 You must provide host data as JSON including name, email, department, and optionally phone number and location assignment.
 Example: { "firstName": "John", "lastName": "Doe", "email": "john@company.com", "department": "Engineering" }
 
 Create a new host (employee) in Traction Guest
+- **get_signin**: Use the signin_id obtained from list_signins to inspect full visit details.
+
+Get detailed information about a specific visitor sign-in
+- **list_audit_logs**: Use this for compliance reporting, security investigations, and operational auditing.
+
+List audit logs for compliance and security tracking
 - **create_hosts_batch**: Provide an array of host objects as JSON. Each host must include firstName, lastName, and email.
 This is useful for bulk onboarding new employees or importing host lists from HR systems.
 Example: [{ "firstName": "John", "lastName": "Doe", "email": "john@company.com" }, { "firstName": "Jane", "lastName": "Smith", "email": "jane@company.com" }]
@@ -59,10 +69,6 @@ and invite data as JSON including visitor name, email, host, and scheduled date/
 Example: { "firstName": "Alice", "lastName": "Johnson", "email": "alice@example.com", "hostId": "host_123", "scheduledDate": "2026-04-10", "scheduledTime": "10:00" }
 
 Create a new visitor invite for a location
-- **create_signin**: Provide sign-in data as JSON including visitor information, host, location, and purpose of visit.
-Example: { "visitorName": "Alice Johnson", "hostId": "host_123", "locationId": "loc_456", "purpose": "Interview" }
-
-Create a new visitor sign-in (check-in a visitor on-site)
 - **create_watchlist**: Provide watchlist data as JSON including name, description, and optionally entries.
 Example: { "name": "Restricted Visitors", "description": "Individuals not permitted on-site" }
 
@@ -86,12 +92,6 @@ Get detailed information about a specific visitor invite
 This is useful for verifying location configuration before creating invites or managing visitors.
 
 Get detailed information about a specific location
-- **get_signin**: Use the signin_id obtained from list_signins to inspect full visit details.
-
-Get detailed information about a specific visitor sign-in
-- **list_audit_logs**: Use this for compliance reporting, security investigations, and operational auditing.
-
-List audit logs for compliance and security tracking
 - **list_group_visits**: Each group visit includes name, scheduled date, expected attendees, host, and location.
 Use this to manage tours, training sessions, interviews, and other group events.
 

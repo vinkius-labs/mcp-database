@@ -43,8 +43,8 @@ Creates a new task in Structured
 - **delete_task**: This action is irreversible.
 
 Permanently deletes a task
-- **get_plan_details**: Retrieves details for a specific plan
 - **create_plan**: Creates a new plan
+- **get_plan_details**: Retrieves details for a specific plan
 - **get_user_profile**: Retrieves the current user profile
 
 

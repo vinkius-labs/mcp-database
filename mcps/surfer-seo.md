@@ -33,19 +33,19 @@ Bring industry-leading organic search optimization strategies dynamically into y
 
 
 ## Available Tools (10)
+- **create_serp_analyzer**: Creates a SERP Analyzer query to identify ranking factors
+- **get_content_score**: Retrieves the current optimization score for a Content Editor entry
+- **get_serp_results**: Retrieves SERP Analyzer search results
+- **get_prominent_terms**: Retrieves NLP-extracted prominent terms from SERP analysis
+- **list_seo_audits**: Lists all SEO audits performed in the account
 - **create_seo_audit**: Provide the full URL and target keyword.
 
 Creates a Surfer SEO Audit for a live URL
 - **create_content_editor**: Provide a keyword and country code. This is an async operation.
 
 Create a Surfer SEO Content Editor query
-- **create_serp_analyzer**: Creates a SERP Analyzer query to identify ranking factors
 - **get_audit_details**: Retrieves details for a specific SEO audit
-- **get_content_score**: Retrieves the current optimization score for a Content Editor entry
 - **get_content_editor_details**: Retrieves Content Editor content and guidelines
-- **get_serp_results**: Retrieves SERP Analyzer search results
-- **get_prominent_terms**: Retrieves NLP-extracted prominent terms from SERP analysis
-- **list_seo_audits**: Lists all SEO audits performed in the account
 - **list_content_editors**: Lists all Content Editor queries in the account
 
 

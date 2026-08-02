@@ -31,7 +31,6 @@ The **Stark Bank MCP Server** brings highest-end Brazilian financial tech direct
 
 
 ## Available Tools (9)
-- **stark_create_boleto**: Efetuar a emissão de Lote de Boletos Bancários Oficiais (Stark Bank)
 - **stark_create_corporate_card**: Tecnologia Enterprise: Criar novo Cartão de Crédito Corporativo on-the-fly
 - **stark_create_pix_charge**: Criar uma Cobrança Pix dinâmica imediata (Stark Bank)
 - **stark_create_transfer**: INICIAR PAGAMENTOS: Emissão de TED ou Pix para fornecedores/funcionários
@@ -40,6 +39,7 @@ The **Stark Bank MCP Server** brings highest-end Brazilian financial tech direct
 - **stark_list_boletos**: Listar progressão contábil e status dos Boletos
 - **stark_list_pix_charges**: Listar histórico das Cobranças Pix originadas
 - **stark_list_transfers**: Descobrir rastreio de pagamentos de saída finalizados (Transfers)
+- **stark_create_boleto**: Efetuar a emissão de Lote de Boletos Bancários Oficiais (Stark Bank)
 
 
 ## 💬 Prompt Examples
