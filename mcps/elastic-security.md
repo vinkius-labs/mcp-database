@@ -37,6 +37,9 @@ Connect your **Elastic Security** (SIEM) deployment to any AI agent and take ful
 
 
 ## Available Tools (10)
+- **find_detection_rules**: Expedites SOC auditing when evaluating coverage for newly reported CVEs or specific localized threats.
+
+Search for specific Elastic rules by name, tag or MITRE tactic
 - **add_exception**: name value to the target exception container, implicitly ignoring telemetry matched on this field for any rule bound to the list. Use explicitly to resolve false positives.
 
 Whitelist a hostname inside an existing Exception List
@@ -48,10 +51,7 @@ Create a new Log Detection Rule tracking malicious Elastic telemetry
 Hard-delete a custom Elastic detection rule completely
 - **list_exceptions**: These lists logically bypass specific rules, preventing SIEM alerts from triggering on known-good administrative behavior like vulnerability scanners.
 
-List global exception lists managing detection bypass logic
-- **find_detection_rules**: Expedites SOC auditing when evaluating coverage for newly reported CVEs or specific localized threats.
-
-Search for specific Elastic rules by name, tag or MITRE tactic
+List globalThis exception lists managing detection bypass logic
 - **get_rule**: Displays run intervals, severity assignment, index scopes, and explicit reference URLs matching threat intel reports.
 
 Get exact details, intervals, and query logic for a distinct Rule

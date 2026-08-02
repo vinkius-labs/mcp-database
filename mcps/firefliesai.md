@@ -40,14 +40,14 @@ Connect your **Fireflies.ai** account to any AI agent and unlock the power of me
 - **create_ask_fred_thread**: Ask a question to AskFred
 - **delete_transcript**: Delete a transcript
 - **get_analytics**: Get meeting analytics
-- **get_ask_fred_thread**: Get AskFred thread messages
-- **get_transcript**: Get transcript details
 - **get_user**: Get user details
-- **list_active_meetings**: List meetings currently being recorded
 - **list_ask_fred_threads**: List AskFred threads
 - **list_transcripts**: List recent transcripts
 - **list_users**: List team users
 - **update_meeting_title**: Rename a meeting
+- **list_active_meetings**: List meetings currently being recorded
+- **get_ask_fred_thread**: Get AskFred thread messages
+- **get_transcript**: Get transcript details
 
 
 ## 💬 Prompt Examples

@@ -7,57 +7,47 @@
 
 **Category:** [ai-frontier](../categories/ai-frontier.md)
 
-Automate AI video generation via HeyGen — manage avatars, videos, and templates directly from any AI agent.
+Create AI-generated videos with realistic digital avatars that speak in any language for training, marketing, and communication.
 
 ## Description
-Connect your **HeyGen** account to any AI agent and take full control of your AI-powered video production and avatar management through natural conversation.
+Connect your **HeyGen** account to any AI agent and take full control of your AI video production and avatar workflows through natural conversation.
 
 ### What you can do
 
-- **Avatar Oversight** — List all available avatars, including public, instant, and custom photo avatars.
-- **Video Generation** — Trigger studio-quality video generation tasks by providing scenes and avatar configurations.
-- **Template Automation** — Create personalized videos at scale by replacing variables in pre-designed templates.
-- **Status Tracking** — Monitor the progress of your video generation tasks and retrieve final URLs when ready.
-- **Video Translation** — Automatically translate existing videos into multiple languages with seamless lip-syncing.
-- **History & Analytics** — Browse your history of generated videos and interactive streaming sessions.
+- **Avatar Video Generation** — Create high-quality videos by selecting from a diverse range of AI avatars and professional voices
+- **One-Shot Production** — Use the AI Video Agent to generate complete videos from a single text prompt automatically
+- **Template Automation** — Generate personalized videos at scale by replacing variables in your predefined HeyGen templates
+- **Asset Management** — Upload media assets (images, audio, video) and manage your creation library programmatically
+- **Status Monitoring** — Track the progress of video generation jobs and retrieve instant download links upon completion
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your HeyGen API Key (found in User Settings > Developer)
-3. Start generating AI videos from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your API Key from your HeyGen Dashboard (Settings > API)
+3. Start generating and managing AI videos from Claude, Cursor, or any MCP client
 
-No more manual configuration in the studio for every video. Your AI assistant acts as a dedicated Video Producer or Creative Director.
+No more manual editing or complex timeline management for simple avatar videos. Your AI acts as your dedicated video producer.
 
 ### Who is this for?
 
-- **Content Creators** — instantly generate talking head videos for social media or training without a camera.
-- **Marketing Teams** — automate personalized video outreach at scale using templates.
-- **Learning & Development** — quickly update and translate training content for global teams.
+- **Content Marketers** — scale video content production for social media and ads using automated avatar generation
+- **Sales Teams** — create personalized video outreach at scale by automating template-based video creation
+- **Educational Designers** — convert text lessons into engaging avatar-led videos without filming or recording
 
 
-## Available Tools (11)
-- **generate_from_template**: Pass the variable mapping as a JSON string in "variables_json".
-
-Create a video by replacing variables in a template
-- **generate_video**: Pass the scenes and avatar configuration as a JSON string in "body_json" (e.g., {"video_inputs": [...]}).
-
-Manually trigger studio video generation
-- **get_api_profile**: Get information about the current API account
-- **get_template_details**: Get structure and variable definitions for a specific template
-- **get_video_status**: Returns "completed" with a "video_url" when ready.
-
-Check the status and retrieve the URL of a generated video
-- **list_avatar_groups**: List categorized groups of avatars
-- **list_avatars**: Use this to find the "avatar_id" for video generation.
-
-List all available HeyGen avatars
-- **list_streaming_history**: List history of interactive streaming sessions
-- **list_templates**: List all video templates
-- **list_videos**: List history of generated videos
-- **translate_video**: Pass the configuration as a JSON string in "body_json".
-
-Translate an existing video into another language with lip-sync
+## Available Tools (12)
+- **remove_video_record**: Delete video
+- **create_from_template**: Use template for video
+- **generate_ai_video**: Create avatar video
+- **get_api_status**: Check connection
+- **get_video_progress**: Check video status
+- **list_available_avatars**: List AI actors
+- **list_video_templates**: List design templates
+- **list_generated_videos**: List past creations
+- **list_available_voices**: List AI voices
+- **test_heygen_auth**: Verify credentials
+- **upload_media_asset**: Add image/audio source
+- **generate_from_prompt**: One-shot prompt to video
 
 
 ## 💬 Prompt Examples
@@ -65,41 +55,38 @@ Translate an existing video into another language with lip-sync
 Here are some examples of how you can interact with the **HeyGen** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all available avatars and find one named 'Joshua'."
+> "Generate a video from prompt: 'A professional man introducing our new AI cloud services'."
 
 **🤖 AI Agent:**
-> I've retrieved the list of avatars. I found 'Joshua in Suit' (ID: joshua_v3) and 'Joshua Casual'. Would you like to use one of these for a video generation task?
+> Triggering Video Agent... I've started a new generation job with your prompt. The task ID is 'v123456789'. I'll monitor it for you and provide the download link as soon as it's ready.
 
 ---
 
 **👤 You:**
-> "Show me the status of video ID 'vid_99283'."
+> "Show me a list of all available English voices in HeyGen."
 
 **🤖 AI Agent:**
-> Checking video status... Your video 'vid_99283' is currently COMPLETED. You can watch it or download it here: [Watch Video](https://heygen.com/video/...) Should I retrieve your full video history?
+> Fetching English voices... I found 15 high-quality options. Popular choices include 'Aria' (Female, Professional) and 'Davis' (Male, Narrative). Which one would you like to use for your next video?
 
 ---
 
 **👤 You:**
-> "Generate a video from template 'welcome_v1' with variable {'name': 'John Doe'}."
+> "Check the status of video job 'v123456789'."
 
 **🤖 AI Agent:**
-> Template generation triggered! I've started the production of your video using the 'welcome_v1' template. This usually takes 2-5 minutes. I'll monitor the status for you. Should I notify you once the URL is ready?
+> Checking status... Video 'v123456789' is now 100% complete! You can download it here: [download_url]. The video features a professional avatar with high-fidelity synthesis.
 
 
 ## ❓ FAQ
 
-**Q: How do I find my HeyGen API Key?**
-Log in to your HeyGen account, navigate to **User Settings**, and select the **Developer** tab. You will be able to generate and copy your unique API key from there.
+**Q: How do I choose the right avatar for my video?**
+Use the `list_available_avatars` tool to browse all options. Your agent will provide the names and unique `avatar_id` for each character, which you can then use in your generation requests.
 
-**Q: How can I generate a video using a template?**
-First, use `list_templates` to find the template you want. Then, use the `generate_from_template` tool by providing the template ID and a JSON string mapping the variables (like text or image URLs) you want to replace.
+**Q: Can I generate a video without specifying an avatar or voice?**
+Yes! Use the `generate_from_prompt` tool (Video Agent). Simply describe what you want, and HeyGen will automatically select the best-matching avatar and voice for your content.
 
-**Q: Can I translate existing videos into other languages?**
-Yes! Use the `translate_video` tool. You must provide the source video URL and the target language code. HeyGen will generate a new version of the video with the translated audio and lip-syncing.
-
-**Q: Is the integration secure for creative data?**
-Absolutely. The integration uses official HeyGen API keys over HTTPS. Your credentials are encrypted and stored securely within the Vinkius Cloud infrastructure.
+**Q: Is it possible to automate personalized videos for multiple customers?**
+Absolutely. Use the `create_from_template` tool by providing a `templateId` and a set of variables. Your AI agent can iterate through your customer list and trigger unique videos for each person.
 
 
 ## Installation & Usage

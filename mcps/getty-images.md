@@ -37,9 +37,14 @@ Connect your **Getty Images** account to any AI agent and take full control of y
 
 
 ## Available Tools (10)
+- **download_image**: Returns download URL and consumes corporate quota limits. Pass asset ID.
+
+Download a Getty image
 - **search_images**: Returns asset IDs, titles, captions, preview URLs. Pass phrase and page.
 
 Search Getty Images stock photos
+- **get_video**: Get full details of a Getty video
+- **list_collections**: List your Getty lightbox collections
 - **search_creative**: Search Getty creative (commercial-use) images only
 - **search_editorial**: Not for commercial use.
 
@@ -47,12 +52,7 @@ Search Getty editorial images
 - **get_image**: Get full details of a Getty image
 - **get_images_batch**: Get details for multiple Getty images at once
 - **search_videos**: Search Getty stock videos
-- **get_video**: Get full details of a Getty video
-- **download_image**: Returns download URL and consumes corporate quota limits. Pass asset ID.
-
-Download a Getty image
 - **get_similar**: Find visually similar Getty images
-- **list_collections**: List your Getty lightbox collections
 
 
 ## 💬 Prompt Examples

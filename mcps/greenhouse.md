@@ -34,6 +34,7 @@ Connect your **Greenhouse Recruiting** account to any AI agent and take control 
 
 
 ## Available Tools (12)
+- **create_candidate**: Create a new candidate profile
 - **get_candidate**: Get details for a specific candidate
 - **get_job**: Get details for a specific job
 - **get_user**: Get details for a specific user
@@ -43,9 +44,8 @@ Connect your **Greenhouse Recruiting** account to any AI agent and take control 
 - **list_job_stages**: List hiring stages for a specific job
 - **list_jobs**: List jobs in Greenhouse
 - **list_offices**: List company offices
-- **list_users**: List Greenhouse users
-- **create_candidate**: Create a new candidate profile
 - **get_application**: Get details for a specific application
+- **list_users**: List Greenhouse users
 
 
 ## 💬 Prompt Examples

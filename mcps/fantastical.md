@@ -37,15 +37,7 @@ Connect your **Fantastical** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
-- **create_event**: Fantastical excels at parsing natural language — "Lunch with Bob tomorrow at noon".
-
-Create a new event in Fantastical using natural language parsing
 - **delete_event**: Delete a Fantastical event permanently
-- **list_calendars**: Fantastical unifies calendars from multiple providers into one view.
-
-List all calendars connected to Fantastical
-- **list_openings**: List all Openings (scheduling pages) in Fantastical
-- **get_opening**: Get details of a specific Fantastical Opening
 - **list_proposals**: Returns proposal titles, suggested times, responses, and finalized slots.
 
 List all Proposals in Fantastical
@@ -59,6 +51,14 @@ List all calendar events in Fantastical within a date range
 - **update_event**: Changes sync to the underlying calendar provider.
 
 Update an existing Fantastical event
+- **create_event**: Fantastical excels at parsing natural language — "Lunch with Bob tomorrow at noon".
+
+Create a new event in Fantastical using natural language parsing
+- **list_calendars**: Fantastical unifies calendars from multiple providers into one view.
+
+List all calendars connected to Fantastical
+- **list_openings**: List all Openings (scheduling pages) in Fantastical
+- **get_opening**: Get details of a specific Fantastical Opening
 
 
 ## 💬 Prompt Examples

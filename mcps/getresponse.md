@@ -7,48 +7,47 @@
 
 **Category:** [marketing-automation](../categories/marketing-automation.md)
 
-Manage email marketing campaigns, track subscribers, and oversee newsletters via AI agents with GetResponse.
+Grow your audience with email marketing, landing pages, webinars, and marketing automation that works together seamlessly.
 
 ## Description
-Connect your **GetResponse** account to any AI agent to automate your email marketing and audience engagement workflows through the Model Context Protocol (MCP). GetResponse is a scalable email marketing platform that helps businesses grow their lists and automate communication. This MCP server enables you to manage your mailing lists (campaigns), track subscriber profiles, and monitor newsletter performance directly through natural conversation.
+Connect your **GetResponse** account to any AI agent and take full control of your email marketing and automation workflows through natural conversation.
 
-### Key Features
+### What you can do
 
-- **Campaign & List Oversight** — List all mailing lists (campaigns) in your account and fetch detailed configuration metadata for each.
-- **Subscriber Management** — Search and list contacts, retrieve detailed profile metadata, and programmatically add new subscribers to your lists.
-- **Newsletter Tracking** — Access your history of sent and scheduled newsletters to monitor your broadcast strategy.
-- **Performance Analytics** — Retrieve high-level statistics (opens, clicks, bounces) for your newsletters to measure engagement.
-- **Automation Discovery** — List configured marketing automation workflows and signup forms to understand your lead acquisition funnel.
-- **Webhook Monitoring** — List active webhooks to ensure your internal systems are receiving real-time campaign notifications.
-- **Account Identity** — Fetch metadata for the authenticated GetResponse account to verify permissions and settings.
-- **Real-time Synchronization** — Keep your marketing data accessible to your AI assistant without leaving your primary workspace.
+- **Audience Orchestration** — List and manage your email subscribers programmatically, including retrieving detailed metadata and performing lookups by email
+- **Campaign Management** — Monitor your marketing lists and campaigns and retrieve detailed configuration data to track performance
+- **Automation Intelligence** — Access autoresponder sequences and workflow settings to coordinate automated customer journeys
+- **Lead Generation** — Monitor published landing pages and manage subscriber registrations directly through your agent to drive growth
+- **Custom CRM Fields** — Retrieve and manage custom contact fields to maintain a structured and personalized marketing ecosystem
 
 ### How it works
 
-1. Subscribe to this server through the Vinkius Marketplace
-2. Enter your GetResponse API Key (found in Integrations and API)
-3. Start managing your email marketing from Claude, Cursor, or any MCP client
+1. Subscribe to this server
+2. Retrieve your **API Key** from your GetResponse account (Tools > Integrations and API > API)
+3. Start managing your marketing automation from Claude, Cursor, or any MCP client
+
+No more manual subscriber lookups or complex campaign navigation. Your AI acts as your dedicated marketing operations assistant.
 
 ### Who is this for?
 
-- **Email Marketers** — quickly check newsletter performance or list recent subscribers without manual dashboard navigation.
-- **Growth Engineers** — automate the synchronization of new leads and verify campaign settings via simple AI commands.
-- **Account Managers** — get a real-time overview of client engagement and mailing list health seamlessly.
+- **Digital Marketers** — instantly retrieve campaign details and update subscriber lists using natural language queries
+- **E-commerce Owners** — monitor lead generation from landing pages and manage autoresponders without leaving your workspace
+- **Customer Success Managers** — verify subscriber data and manage custom fields through automated AI searches
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Check connection
-- **add_new_subscriber**: Sync a contact
-- **get_account_details**: Get account metadata
-- **get_campaign_details**: Get campaign metadata
-- **get_contact_details**: Get contact metadata
-- **get_newsletter_analytics**: Get broadcast stats
-- **list_marketing_campaigns**: List campaigns/lists
-- **list_marketing_contacts**: List subscribers
-- **list_marketing_forms**: List signup forms
-- **list_marketing_newsletters**: List newsletters
-- **list_marketing_webhooks**: List webhook configs
-- **list_marketing_workflows**: List automation flows
+- **add_new_subscriber**: Register new contact
+- **remove_subscriber**: Delete a contact
+- **get_api_status**: Check connection
+- **get_list_details**: Get campaign info
+- **get_contact_details**: Get subscriber info
+- **list_active_sequences**: Get autoresponders
+- **list_marketing_lists**: List email campaigns
+- **list_email_contacts**: List your subscribers
+- **list_contact_fields**: Get custom fields
+- **list_published_pages**: Get landing pages
+- **list_active_webhooks**: Get event configs
+- **find_contact_by_email**: Search subscribers
 
 
 ## 💬 Prompt Examples
@@ -56,41 +55,38 @@ Connect your **GetResponse** account to any AI agent to automate your email mark
 Here are some examples of how you can interact with the **GetResponse** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my email campaigns/lists in GetResponse."
+> "List all my marketing campaigns in GetResponse."
 
 **🤖 AI Agent:**
-> Retrieving campaigns... I found 3 active lists: 'Main Newsletter' (ID: V), 'Product Updates' (ID: X), and 'Lead Magnets'. Which list would you like to see subscribers for?
+> I've retrieved your marketing lists. You have 3 active campaigns: 'Weekly Newsletter' (ID: abc), 'Product Updates' (ID: def), and 'Lead Magnet' (ID: ghi). Which one would you like to manage?
 
 ---
 
 **👤 You:**
-> "Show me the performance stats for my last newsletter."
+> "Add 'john.doe@example.com' to my 'Product Updates' campaign."
 
 **🤖 AI Agent:**
-> Fetching analytics... Your last newsletter 'October Update' had an Open Rate of 24.5% and a Click-Through Rate of 3.2% from 1,200 recipients.
+> Done! I've registered John Doe (john.doe@example.com) to the 'Product Updates' campaign (ID: def). They will now receive your scheduled emails for this list.
 
 ---
 
 **👤 You:**
-> "Add 'John Doe' (john@example.com) to the 'Newsletter' list (ID: abc123)."
+> "Find subscriber details for 'sarah@example.com'."
 
 **🤖 AI Agent:**
-> Subscriber added! I have successfully synchronized John Doe (john@example.com) to the 'Newsletter' list. He is now active in that campaign.
+> I've located Sarah's profile. She joined the 'Weekly Newsletter' on 2024-03-15 and is currently an active subscriber. Would you like to see her custom field values or activity status?
 
 
 ## ❓ FAQ
 
-**Q: How do I get an API Key for GetResponse?**
-Log in to your GetResponse account, go to Menu > Integrations and API > API, and you can generate a new API key there.
+**Q: How do I find my GetResponse API Key?**
+Log in to your account, navigate to **Tools** > **Integrations and API**, and select the **API** tab to generate or copy your key.
 
-**Q: Are 'Campaigns' and 'Lists' the same thing?**
-Yes, in GetResponse API v3, mailing lists are referred to as 'campaigns'. You manage your subscribers within these campaign objects.
+**Q: Can I add a contact to a specific list?**
+Yes! Use the `add_new_subscriber` tool and provide the `campaignId` of the target list along with the contact's email.
 
-**Q: Can I see newsletter open rates via the agent?**
-Yes! The 'get_newsletter_analytics' tool retrieves high-level performance metrics, including opens, clicks, and bounce data for your sent broadcasts.
-
-**Q: How do I add a new contact to a specific list?**
-Use the 'add_new_subscriber' tool. You will need to provide the contact's email and the specific Campaign ID where they should be added.
+**Q: How do I search for a subscriber by email?**
+The `find_contact_by_email` tool allows you to perform a direct lookup to retrieve a specific subscriber's profile and metadata.
 
 
 ## Installation & Usage

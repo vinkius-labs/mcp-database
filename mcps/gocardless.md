@@ -7,47 +7,48 @@
 
 **Category:** [money-moves](../categories/money-moves.md)
 
-Manage direct debit payments, track mandates, and oversee customers via AI agents with GoCardless.
+Collect recurring payments directly from bank accounts with automated direct debit that reduces failed payment rates.
 
 ## Description
-Connect your **GoCardless** merchant account to any AI agent to automate your direct debit payments and customer mandates through the Model Context Protocol (MCP). GoCardless is the global leader in bank-to-bank payments, simplifying the collection of recurring and one-off payments. This MCP server enables you to retrieve customer records, track mandate authorizations, manage payment collections, and monitor bank payouts directly through natural conversation.
+Connect your **GoCardless** account to any AI agent and take full control of your Direct Debit collections and recurring billing workflows through natural conversation.
 
-### Key Features
+### What you can do
 
-- **Customer & Bank Oversight** — List all customers registered in your system and fetch detailed profile and bank account metadata instantly.
-- **Mandate Management** — Access and track customer authorizations (mandates) to ensure you have the legal right to collect payments.
-- **Payment Orchestration** — List all direct debit collections, track their status (confirmed, failed), and programmatically initiate new payments against active mandates.
-- **Subscription Insights** — Retrieve active and inactive recurring payment plans to understand your predictable revenue health.
-- **Payout Tracking** — Access a complete list of funds being sent from GoCardless to your own bank account for easy reconciliation.
-- **Refund Visibility** — Monitor processed refunds and reversed payments to maintain an accurate financial audit trail.
-- **Real-time Synchronization** — Keep your bank-to-bank payment data accessible to your AI assistant without leaving your primary workspace.
+- **Customer Orchestration** — List and manage bank payers programmatically, including contact info and payment history retrieval
+- **Mandate Management** — Monitor and retrieve detailed status for customer payment authorizations to ensure collection reliability
+- **Payment Automation** — Trigger one-off bank debit collections or manage complex recurring subscription plans directly through your agent
+- **Financial Visibility** — Access payout creditor details and monitor system events to maintain high-fidelity oversight of your cash flow
+- **Operations Control** — Programmatically cancel pending payments and check individual transaction states (confirmed, failed) in real-time
 
 ### How it works
 
-1. Subscribe to this server through the Vinkius Marketplace
-2. Enter your GoCardless Access Token (found in Developers > Access Tokens)
-3. Start managing your direct debits from Claude, Cursor, or any MCP client
+1. Subscribe to this server
+2. Retrieve your **Access Token** from GoCardless (Developers > Create > Access Token)
+3. Specify your environment (live or sandbox) in the configuration
+4. Start managing your bank payments from Claude, Cursor, or any MCP client
+
+No more manual payment tracking or digging through bank files. Your AI acts as your dedicated payment operations assistant.
 
 ### Who is this for?
 
-- **Finance & Billing Ops** — quickly check if a mandate is active or verify if a payout has been initiated without manual portal navigation.
-- **Account Managers** — get a real-time overview of a customer's payment history and subscription status via simple AI commands.
-- **Operations Leads** — automate the retrieval of failed payment logs and mandate status reports seamlessly.
+- **Finance Teams** — instantly check payment statuses and reconcile payouts using natural language
+- **Billing Managers** — automate customer creation and mandate verification without leaving your workspace
+- **SaaS Founders** — monitor subscription health and manage failed payments through automated queries
 
 
 ## Available Tools (12)
-- **get_customer_details**: Get customer metadata
-- **get_mandate_status**: Check mandate details
-- **get_payment_details**: Get payment metadata
-- **list_payment_customers**: List all customers
-- **list_payment_mandates**: List active mandates
-- **list_direct_debit_payments**: List all payments
-- **list_merchant_payouts**: List bank payouts
-- **list_payment_refunds**: List reversed payments
-- **list_recurring_subscriptions**: List recurring plans
-- **verify_api_connection**: Check connection
-- **create_new_payment**: Initiate a collection
-- **get_account_details**: Get account identity
+- **stop_pending_payment**: Cancel payment
+- **create_new_customer**: Add payer to account
+- **collect_payment**: Trigger new payment
+- **get_customer_details**: Get payer info
+- **get_mandate_details**: Get authorization info
+- **get_payment_status**: Check transaction state
+- **list_account_creditors**: List payout recipients
+- **list_customers**: List bank payers
+- **list_system_events**: Get activity log
+- **list_active_mandates**: List payment authorizations
+- **list_payment_history**: List all transactions
+- **list_recurring_payments**: List all subscriptions
 
 
 ## 💬 Prompt Examples
@@ -55,41 +56,38 @@ Connect your **GoCardless** merchant account to any AI agent to automate your di
 Here are some examples of how you can interact with the **GoCardless** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my payments that are currently 'pending_submission'."
+> "List my last 5 GoCardless customers with their email addresses."
 
 **🤖 AI Agent:**
-> Retrieving payments... I found 5 payments pending submission, including a $50.00 collection for customer 'Acme Corp'. Would you like the full list?
+> I've retrieved your latest customers. Notable entries include 'John Smith' (john@example.com) and 'Sarah Jane' (sarah@example.com). Would you like to check the active mandates for any of them?
 
 ---
 
 **👤 You:**
-> "Check the status of mandate 'MD12345'."
+> "Collect 25.00 EUR from mandate 'MD_123' for 'Monthly Fee'."
 
 **🤖 AI Agent:**
-> Fetching mandate... Mandate MD12345 is 'Active'. It was authorized by John Doe on October 1st and is valid for both one-off and recurring payments.
+> Payment triggered! I've initiated a collection of 25.00 EUR from mandate MD_123. The transaction ID is 'PM_987'. I'll monitor the status and let you know when it's confirmed.
 
 ---
 
 **👤 You:**
-> "Show me the last 3 payouts sent to my bank account."
+> "Check the status of payment ID 'PM_987'."
 
 **🤖 AI Agent:**
-> Retrieving payouts... I found 3 recent payouts: $1,250.00 (Oct 5th), $850.00 (Oct 2nd), and $2,100.00 (Sept 28th). All have been 'Paid' successfully.
+> Checking status... Payment PM_987 is currently 'Pending Submission'. It's scheduled to be sent to the banks tomorrow. Would you like me to alert you if the status changes to 'Confirmed'?
 
 
 ## ❓ FAQ
 
-**Q: How do I get an Access Token for GoCardless?**
-Log in to your GoCardless dashboard, navigate to Developers > Access Tokens, and you can generate a new token for either Sandbox or Live use there.
+**Q: How do I find my Access Token?**
+Log in to your GoCardless dashboard, navigate to **Developers** > **Create** > **Access Token**, and generate a token with the required permissions.
 
-**Q: What is a 'Mandate' in GoCardless?**
-A mandate is an authorization from your customer that allows you to collect payments from their bank account automatically in the future.
+**Q: Can I collect a payment in a different currency?**
+Yes! The `collect_payment` tool accepts a `currency` parameter (e.g., GBP, EUR, USD). Ensure the customer's mandate supports the requested currency.
 
-**Q: In what units should I provide the payment amount?**
-The API uses minor units for currency. For example, to collect $1.00 USD (or £1.00 GBP), you must provide the value 100 (cents/pence).
-
-**Q: Can I test this without using real money?**
-Yes! Use the 'sandbox' environment by setting the 'Environment' credential and providing a Sandbox Access Token from your GoCardless account.
+**Q: What happens if I try to cancel a payment that was already submitted?**
+If a payment has already been submitted to the banking system, the `stop_pending_payment` tool will return an error as the transaction can no longer be halted.
 
 
 ## Installation & Usage

@@ -38,7 +38,6 @@ Connect your **Fathom.video** account to any AI agent and take full control of y
 
 
 ## Available Tools (12)
-- **get_action_items**: Get AI-identified action items for a meeting
 - **get_attendees**: Get the list of participants for a meeting
 - **get_highlights**: Get important moments flagged in a meeting
 - **get_me**: Get current API token user profile
@@ -50,6 +49,7 @@ Connect your **Fathom.video** account to any AI agent and take full control of y
 - **get_webhooks**: List configured webhooks
 - **list_meetings**: List all Fathom meetings
 - **search_meetings**: Search for meetings by keyword
+- **get_action_items**: Get AI-identified action items for a meeting
 
 
 ## 💬 Prompt Examples

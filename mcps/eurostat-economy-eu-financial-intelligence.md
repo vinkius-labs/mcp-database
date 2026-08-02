@@ -31,21 +31,21 @@ ECB watchers, sovereign debt analysts, EU policy researchers, macro strategists,
 - **get_gdp**: Dataset: namq_10_gdp (quarterly) or nama_10_gdp (annual). Filter by country, unit (CLV10_MEUR, CP_MEUR, PC_GDP), and GDP component (B1GQ=GDP, P3=consumption, P5G=investment).
 
 Get EU GDP data by country — quarterly or annual
-- **get_government_debt**: Dataset: gov_10dd_edpt1 (annual EDP). Critical for Maastricht criteria monitoring (60% debt, 3% deficit).
-
-Get EU government debt and deficit by country
 - **get_inflation**: Datasets: prc_hicp_manr (annual rate, monthly), prc_hicp_mmor (monthly rate), prc_hicp_aind (annual average). The ECB targets 2% HICP inflation. Filter by country and COICOP category.
 
 Get EU inflation (HICP) — the official measure used by the ECB
 - **get_interest_rates**: Datasets: irt_st_m (short-term, monthly), irt_lt_mcby_m (long-term government bond yields). Key for ECB policy analysis.
 
 Get EU short-term and long-term interest rates
-- **get_exchange_rates**: Dataset: ert_bil_eur_m (monthly) or ert_bil_eur_d (daily).
-
-Get EUR bilateral exchange rates against major currencies
 - **get_economic_dataset**: Use the Eurostat Data Browser to find codes. Common: nama_10_gdp, gov_10q_ggnfa, tec00115, teina225.
 
 Query any Eurostat economy/finance dataset by code
+- **get_government_debt**: Dataset: gov_10dd_edpt1 (annual EDP). Critical for Maastricht criteria monitoring (60% debt, 3% deficit).
+
+Get EU government debt and deficit by country
+- **get_exchange_rates**: Dataset: ert_bil_eur_m (monthly) or ert_bil_eur_d (daily).
+
+Get EUR bilateral exchange rates against major currencies
 
 
 ## 💬 Prompt Examples

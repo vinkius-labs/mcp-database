@@ -7,50 +7,49 @@
 
 **Category:** [communication-messaging](../categories/communication-messaging.md)
 
-Manage shared inboxes, track conversations, and collaborate on emails via AI agents with Front.
+Manage shared inboxes across email, SMS, and social with team collaboration tools that keep customer conversations organized.
 
 ## Description
-Connect your **Front** account to any AI agent to automate your customer communication and shared inbox workflows through the Model Context Protocol (MCP). Front is a customer operations platform that enables teams to manage shared emails, SMS, and chats collaboratively. This MCP server enables you to track active conversations, assign messages, and fetch thread histories directly through natural conversation.
+Connect your **Front** account to any AI agent and take full control of your team's customer communication and shared inbox workflows through natural conversation.
 
-### Key Features
+### What you can do
 
-- **Shared Inbox Management** — List all accessible shared inboxes and retrieve the specific conversations routed to them.
-- **Conversation Tracking** — Search and list all customer conversations, checking their current status (open, archived) and assigned owners.
-- **Message Threading** — Fetch the complete message history for any specific conversation to maintain context before replying.
-- **Collaborative Replies** — Draft and send replies to active conversations directly from your chat interface on behalf of a teammate.
-- **Status Automation** — Programmatically update conversation statuses (e.g., archiving resolved issues) to keep inboxes clean.
-- **Team & Contact Discovery** — List all workspace teammates and customer contacts to ensure accurate routing and messaging.
+- **Conversation Orchestration** — List and manage customer conversations programmatically, including updating statuses (open, archived, spam) and assigning teammates
+- **Message Intelligence** — Retrieve complete message histories and metadata for any conversation to perform deep analysis and sentiment tracking
+- **Omnichannel Support** — Monitor multiple communication streams including Email, Chat, and SMS from a single unified AI interface
+- **Team Collaboration** — Manage team contacts and retrieve teammate profiles to coordinate internal routing and workload distribution
+- **Operational Visibility** — Get a comprehensive overview of shared inboxes and active channels using natural language commands
 
 ### How it works
 
-1. Subscribe to this server through the Vinkius Marketplace
-2. Enter your Front API Token (found in your Developer Settings)
-3. Start managing your shared inboxes from Claude, Cursor, or any MCP client
+1. Subscribe to this server
+2. Retrieve your **API Token** from Front (Settings > Developers > API Tokens)
+3. Start managing your unified inbox from Claude, Cursor, or any MCP client
+
+No more manual toggling between different communication channels. Your AI acts as your dedicated support and communication coordinator.
 
 ### Who is this for?
 
-- **Customer Support** — quickly check open conversations in the support inbox and fetch message history without leaving your agent.
-- **Operations Teams** — automate the archiving of specific conversation types or verify teammate assignments.
-- **Account Managers** — get a real-time overview of client communications and send quick follow-ups via simple AI commands.
+- **Support Teams** — instantly triage high-volume inboxes and assign urgent conversations using natural language
+- **Customer Success Managers** — retrieve full interaction histories and update contact details without leaving your workspace
+- **Operations Leads** — monitor channel activity and manage team assignments across shared mailboxes
 
 
 ## Available Tools (12)
-- **list_all_conversations**: List all conversations
-- **list_inbox_threads**: List inbox conversations
-- **list_shared_inboxes**: List shared inboxes
-- **list_conversation_messages**: List thread messages
-- **list_inbox_teammates**: List Front teammates
-- **search_conversations**: g. "inbox:inb_123 is:open").
+- **reply_to_conversation**: Send a message
+- **get_contact_info**: Get contact details
+- **get_conversation_details**: Get conversation info
+- **get_api_status**: Check connection
+- **get_message_content**: Read message details
+- **list_active_channels**: ).
 
-Search all conversations
-- **send_inbox_reply**: Send a reply
-- **update_conversation_status**: g., archived, open) or assignee of a conversation.
-
-Update conversation
-- **verify_api_status**: Verify connection
-- **get_conversation_details**: Get conversation metadata
-- **get_inbox_details**: Get inbox metadata
-- **list_address_book**: List contacts
+List communication channels
+- **list_team_contacts**: List your contacts
+- **list_conversations**: List team conversations
+- **list_shared_inboxes**: List team inboxes
+- **list_conversation_messages**: Get message history
+- **search_conversations_by_query**: Find conversations
+- **update_conversation_status**: Modify conversation
 
 
 ## 💬 Prompt Examples
@@ -58,41 +57,38 @@ Update conversation
 Here are some examples of how you can interact with the **Front** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all shared inboxes in my Front account."
+> "List all open conversations in my shared inbox."
 
 **🤖 AI Agent:**
-> Retrieving inboxes... I found 3 shared inboxes: 'Support' (ID: inb_123), 'Sales' (ID: inb_456), and 'General Info' (ID: inb_789).
+> I've retrieved 5 open conversations. Notable threads include 'Issue with pricing' (ID: cnv_123) and 'New feature request' (ID: cnv_456). Which one should I provide details for?
 
 ---
 
 **👤 You:**
-> "Search for open conversations in the Support inbox."
+> "Show me the message history for conversation 'cnv_123'."
 
 **🤖 AI Agent:**
-> Searching conversations... I found 4 open conversations matching your query. Two are currently assigned to 'John', and two remain unassigned.
+> Scanning cnv_123... I found 4 messages. The latest was an email from 'John Doe' asking about Enterprise discounts. Would you like the full content of the last message?
 
 ---
 
 **👤 You:**
-> "Archive conversation 'cnv_987'."
+> "Reply to conversation 'cnv_123' saying 'I will check that for you right now'."
 
 **🤖 AI Agent:**
-> Conversation updated! I have successfully changed the status of conversation cnv_987 to 'archived'. It will no longer appear in the open queue.
+> Done! I've sent your reply to conversation cnv_123. The customer will see your message in their inbox immediately.
 
 
 ## ❓ FAQ
 
-**Q: How do I get an API Token for Front?**
-Log in to your Front account, click the gear icon (Settings), go to 'Developers' > 'API Tokens', and create a new token with 'Shared Resources' scope.
+**Q: How do I create an API Token in Front?**
+Log in to Front, go to **Settings** > **Developers** > **API Tokens**, and click **Create Token**. Ensure you select the appropriate scopes for your needs.
 
-**Q: Can I search for specific types of conversations?**
-Yes, use the 'search_conversations' tool. It accepts standard Front search syntax, such as 'is:open' or 'inbox:support'.
+**Q: Can I search for conversations by status?**
+Yes! The `list_conversations` tool allows you to filter results by statuses like 'open', 'archived', 'deleted', or 'spam'.
 
-**Q: Is it possible to reply to an email via the agent?**
-Yes! Use the 'send_inbox_reply' tool. You must provide the Conversation ID, the message body, and the Teammate ID of the sender.
-
-**Q: How do I archive a conversation?**
-Use the 'update_conversation_status' tool and set the status parameter to 'archived'. This updates the global status for the shared inbox.
+**Q: How do I send a reply via AI?**
+Use the `reply_to_conversation` tool by providing the `conversationId` and your message body. You can also specify an `author_id` to send as a specific teammate.
 
 
 ## Installation & Usage

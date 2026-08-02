@@ -37,7 +37,7 @@ Connect your **Heroku** account to any AI agent and take full control of your cl
 - **delete_app**: Traffic routing instantly yields persistent 404/no web-dynos responses. Highly destructive.
 
 Permanently wipe an active App from Heroku servers
-- **get_app_info**: g. heroku-22, heroku-24). Confirms exact application routing URL mapping, total slug (code) size in memory, and regional datacenter placements (US or EU) verifying global latency strategies.
+- **get_app_info**: g. heroku-22, heroku-24). Confirms exact application routing URL mapping, total slug (code) size in memory, and regional datacenter placements (US or EU) verifying globalThis latency strategies.
 
 Fetch intricate runtime constraints and framework details of an App
 - **list_addons**: Retrieve third-party Platform Add-ons mapping to an App

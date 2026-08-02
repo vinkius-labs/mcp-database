@@ -27,10 +27,13 @@ Power users, macro analysts, and AI agents that need comprehensive U.S. economic
 
 
 ## Available Tools (19)
-- **get_geo_shapes**: Shapes: bea, msa, frb, necta, state, country, county, censusregion.
-
-Get geographic shape files for mapping
 - **list_releases**: List all FRED economic data releases
+- **get_vintage_dates**: Essential for ALFRED-style vintage analysis.
+
+Get historical revision dates for a series
+- **get_release**: IDs: 10 (Employment), 53 (GDP), 46 (CPI).
+
+Get details for a specific release
 - **search_series**: Returns matching series with title, frequency, units, popularity. Use order_by=popularity to find the most-used series.
 
 Search 816,000+ economic time series by keyword
@@ -50,6 +53,9 @@ Get cross-sectional regional economic data
 - **get_series_group**: Enter a FRED series ID to discover the group ID.
 
 Get series group info for GeoFRED
+- **get_geo_shapes**: Shapes: bea, msa, frb, necta, state, country, county, censusregion.
+
+Get geographic shape files for mapping
 - **search_tags**: Search or browse FRED tags
 - **get_series_by_tags**: Example: usa;gdp returns US GDP series.
 
@@ -64,12 +70,6 @@ Get actual data values for a FRED time series
 - **get_series_updates**: Filter by macro or regional.
 
 Get recently updated FRED series
-- **get_vintage_dates**: Essential for ALFRED-style vintage analysis.
-
-Get historical revision dates for a series
-- **get_release**: IDs: 10 (Employment), 53 (GDP), 46 (CPI).
-
-Get details for a specific release
 - **get_release_dates**: Omit release_id for full economic calendar.
 
 Get release dates for economic data

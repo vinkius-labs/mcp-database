@@ -37,17 +37,17 @@ Connect your **Fastly** account to any AI agent and take full control of your ed
 
 
 ## Available Tools (12)
-- **activate_service_version**: Activate a specific configuration version for a service
 - **create_service**: Create a new Fastly service
 - **delete_service**: Delete a specific Fastly service
 - **get_me**: Get current API token identity info
 - **get_service**: Get details for a specific Fastly service
-- **get_service_stats**: Get usage statistics for a specific service
-- **get_service_version**: Get details for a specific service version
 - **list_version_backends**: List all backend origins for a specific service version
 - **list_version_domains**: List all domains for a specific service version
 - **list_services**: List all Fastly services
 - **list_service_versions**: List all configuration versions for a service
+- **activate_service_version**: Activate a specific configuration version for a service
+- **get_service_stats**: Get usage statistics for a specific service
+- **get_service_version**: Get details for a specific service version
 - **purge_all_cache**: Purge all cached content for a specific service
 
 
