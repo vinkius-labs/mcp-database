@@ -34,13 +34,13 @@ Connect your **Airbyte** data integration instance to your AI agent to unlock co
 
 
 ## Available Tools (7)
-- **list_sources**: List all Airbyte sources
-- **get_source**: Get details of a specific Airbyte source
 - **list_destinations**: List all Airbyte destinations
 - **list_connections**: List all Airbyte sync connections
 - **get_connection**: Get details of a specific Airbyte connection
 - **list_jobs**: List synchronization jobs for a connection
 - **list_workspaces**: List workspaces
+- **get_source**: Get details of a specific Airbyte source
+- **list_sources**: List all Airbyte sources
 
 
 ## 💬 Prompt Examples

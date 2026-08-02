@@ -37,9 +37,9 @@ Connect your **Checkout.com** account to any AI agent and take full control of y
 
 ## Available Tools (8)
 - **capture_checkout_payment**: Capture an authorized payment
+- **list_checkout_webhooks**: List configured webhooks
 - **get_checkout_account_info**: Retrieve core account and user information
 - **list_payment_actions**: List all lifecycle actions for a specific payment
-- **list_checkout_webhooks**: List configured webhooks
 - **get_payment_details**: Get detailed information for a specific payment
 - **list_checkout_payments**: List recent payments
 - **refund_checkout_payment**: Refund a captured payment

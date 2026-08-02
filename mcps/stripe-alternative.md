@@ -39,9 +39,9 @@ No more switching to the Stripe dashboard to check a payment status or audit ref
 
 
 ## Available Tools (13)
-- **create_payment_intent**: Requires the amount (in smallest currency unit, e.g. cents for USD) and currency (e.g. "usd"). Optionally associate with a customer. Returns the payment intent with its client_secret for use with Stripe.js.
+- **create_customer**: Optionally set the email, name and description. Returns the created customer with its ID.
 
-Create a new payment intent in Stripe
+Create a new Stripe customer
 - **get_balance**: Returns available and pending balances broken down by currency and type (card, bank_transfer, etc.). Useful for checking your Stripe payout status.
 
 Get current Stripe account balance
@@ -75,9 +75,9 @@ List refunds in Stripe
 - **list_subscriptions**: Each subscription has an ID, customer, status (trialing, active, past_due, canceled, unpaid, incomplete), items (prices) and billing cycle details. Optionally filter by customer, status and set a limit.
 
 List subscriptions in Stripe
-- **create_customer**: Optionally set the email, name and description. Returns the created customer with its ID.
+- **create_payment_intent**: Requires the amount (in smallest currency unit, e.g. cents for USD) and currency (e.g. "usd"). Optionally associate with a customer. Returns the payment intent with its client_secret for use with Stripe.js.
 
-Create a new Stripe customer
+Create a new payment intent in Stripe
 
 
 ## 💬 Prompt Examples

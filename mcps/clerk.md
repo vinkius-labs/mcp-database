@@ -5,45 +5,43 @@
 
 ## Overview
 
-**Category:** [fort-knox](../categories/fort-knox.md)
+**Category:** [developer-tools](../categories/developer-tools.md)
 
-Manage authentication and users via Clerk — track active sessions, monitor organizations, and manage invitations directly from any AI agent.
+Add production-ready authentication to your app with user management, SSO, multi-factor auth, and session handling out of the box.
 
 ## Description
-Connect your **Clerk** account to any AI agent and take full control of your authentication and user management through natural conversation. Streamline how you monitor your user base and B2B organizations natively.
+Connect your **Clerk** account to any AI agent and take full control of your user authentication and multi-tenant management workflows through natural conversation.
 
 ### What you can do
 
-- **User Oversight** — List and retrieve details for all users in your application, including metadata and status natively
-- **Session Intelligence** — Access and monitor all active user sessions across your platforms flawlessly
-- **Organization Logistics** — List and manage B2B organizations and their member rosters securely
-- **Invitation Tracking** — Access and review all pending and completed user invitations flawlessly
-- **Allowlist Management** — List identifiers like emails and domains on your authentication allowlist flawlessly
-- **Dashboard Visibility** — Retrieve a high-level summary of user counts and system health directly within your workspace
+- **User Orchestration** — List and manage all users registered in your application programmatically, including retrieving detailed high-fidelity profiles and contact info
+- **Organization Architecture** — Access and monitor organizations and multi-tenant environments to coordinate team collaboration and access control in real-time
+- **Invitation Lifecycle** — Programmatically send and track user invitations via email with custom redirect URLs to streamline your onboarding pipeline
+- **Account Integrity** — Retrieve detailed user metadata and manage authentication status directly through your agent for instant operational reporting
+- **Developer Visibility** — Access complete directories of auth-related resources to maintain a perfectly coordinated and secure development ecosystem
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Clerk Secret Key (obtained from your dashboard API Keys)
-3. Start managing your authentication from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **Secret Key** from the Clerk Dashboard (API Keys section)
+3. Start managing your user-centric applications from Claude, Cursor, or any MCP client
+
+No more manual status checking or digging through user tables in the portal. Your AI acts as your dedicated auth architect and user management coordinator.
 
 ### Who is this for?
 
-- **Developers** — monitor user signups and verify session status using natural language
-- **Customer Support** — quickly look up user profiles and organization memberships without opening the dashboard
-- **Product Managers** — audit invitation success rates and active user counts straight from their chat interface
-- **Operations Teams** — verify authentication allowlists and system health
+- **Developers & Admins** — instantly retrieve user profiles and manage multi-tenant setups using natural language commands
+- **Operations Teams** — automate the dispatch of invitations and monitor organization growth without leaving your workspace
+- **Customer Success** — check user authentication history and manage invitations through simple AI queries
 
 
-## Available Tools (8)
-- **get_auth_dashboard_summary**: Retrieve a summary of user counts and system health
-- **get_user_auth_details**: Get detailed information for a specific user
-- **list_auth_allowlist**: List identifiers (emails, domains) on the authentication allowlist
-- **list_clerk_clients**: List all tracking clients (browser/device instances)
-- **list_sent_invitations**: List all pending and completed user invitations
-- **list_clerk_organizations**: List all organizations (B2B) in the application
-- **list_active_sessions**: List all active user sessions
-- **list_clerk_users**: List all users in your Clerk application
+## Available Tools (6)
+- **create_auth_invitation**: Send an invitation
+- **create_auth_organization**: Create an organization
+- **get_auth_user_details**: Get user details
+- **list_auth_invitations**: List invitations
+- **list_auth_organizations**: List organizations
+- **list_auth_users**: List all users
 
 
 ## 💬 Prompt Examples
@@ -51,38 +49,38 @@ Connect your **Clerk** account to any AI agent and take full control of your aut
 Here are some examples of how you can interact with the **Clerk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my users in Clerk."
+> "List all registered users in my Clerk application."
 
 **🤖 AI Agent:**
-> Retrieving your user list... I found 150 total users. The most recent signup was John Doe (john@example.com) yesterday. Would you like to see more details?
+> I've retrieved your user directory. You currently have 5 registered users, including 'John Doe' (ID: user_123) and 'Jane Smith'. Would you like the full profile metadata for any of them?
 
 ---
 
 **👤 You:**
-> "Show me the dashboard summary for my auth system."
+> "Send an invitation to 'newuser@example.com' with redirect to 'https://vinkius.com/start'."
 
 **🤖 AI Agent:**
-> Analyzing auth dashboard... You have 150 total users, 12 active sessions right now, and 5 pending invitations. The system health is optimal.
+> Invitation dispatched! I've successfully sent an email invite to newuser@example.com. The invitation ID is 'inv_456'. I'll alert you as soon as they complete their registration.
 
 ---
 
 **👤 You:**
-> "Check the status of invitation ID 'inv_12345'."
+> "Show all active organizations and their slugs."
 
 **🤖 AI Agent:**
-> Checking invitation inv_12345... This invitation was sent to sarah@example.com and is currently 'Pending'. It has not been accepted yet.
+> Accessing multi-tenant data... You have 2 active organizations: 'Vinkius Enterprise' (Slug: vinkius-ent) and 'Beta Testers'. Would you like me to check for any pending invites within these teams?
 
 
 ## ❓ FAQ
 
-**Q: Can I see how many users are currently logged in?**
-Yes! Use the `list_active_sessions` tool. The agent will return a list of all current sessions, allowing you to gauge real-time platform activity.
+**Q: How do I find my Clerk Secret Key?**
+Log in to the [**Clerk Dashboard**](https://dashboard.clerk.com/), select your application, and navigate to **API Keys** in the sidebar.
 
-**Q: How do I check if a specific user belongs to an organization?**
-Use the `list_clerk_organizations` tool to find the organization and then review its members, or use `get_user_auth_details` to see the user's specific organization memberships.
+**Q: Can I manage organizations via AI?**
+Yes! The `create_auth_organization` and `list_auth_organizations` tools allow your agent to manage B2B tenants and teams programmatically.
 
-**Q: Where do I find my Clerk Secret Key?**
-Log in to your Clerk Dashboard, select your application, and navigate to **API Keys**. You can find your Secret Key starting with `sk_` there.
+**Q: How do I send a user invitation?**
+Use the `create_auth_invitation` tool and provide the recipient's email address. You can also specify an optional redirect URL for the signup flow.
 
 
 ## Installation & Usage

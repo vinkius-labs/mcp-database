@@ -35,14 +35,14 @@ Connect your **Bitbucket Cloud** account to any AI agent and orchestrate your so
 
 
 ## Available Tools (10)
-- **get_pull_request**: Get details of a specific pull request
 - **list_commits**: List commits for a repository
+- **get_pull_request**: Get details of a specific pull request
+- **list_pull_requests**: List pull requests for a repository
 - **get_repository**: Get details of a specific repository
 - **get_user_profile**: Get authenticated user profile
 - **list_branches**: List branches for a repository
 - **list_issues**: List issues for a repository (if tracker is enabled)
 - **list_pipelines**: List CI/CD pipelines for a repository
-- **list_pull_requests**: List pull requests for a repository
 - **list_repositories**: List repositories in a workspace
 - **list_workspaces**: List all accessible workspaces
 

@@ -7,43 +7,61 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Manage tasks and projects via ClickUp — track work, monitor spaces, and manage team productivity directly from any AI agent.
+Bring tasks, docs, goals, and team communication together in one workspace that replaces scattered project management tools.
 
 ## Description
-Connect your **ClickUp** account to any AI agent and take full control of your project management and productivity through natural conversation. Streamline how you manage tasks, subtasks, and complex workflows natively.
+Connect your **ClickUp** account to any AI agent and take full control of your project hierarchy and task management workflows through natural conversation.
 
 ### What you can do
 
-- **Workspace Oversight** — List and retrieve details for all workspaces (teams) you belong to natively
-- **Hierarchy Intelligence** — Access and monitor spaces, folders, and lists to understand project structures flawlessly
-- **Task Management** — List and retrieve detailed information for tasks, including statuses and priorities, securely
-- **Workflow Logistics** — Create new tasks and manage subtasks to keep your team organized flawlessly
-- **Productivity Tracking** — Access your own user profile and team member information securely
-- **Integrated Visibility** — Retrieve detailed task metadata including descriptions and due dates directly within your workspace
+- **Hierarchy Orchestration** — Navigate through your entire ClickUp structure, from Workspaces and Spaces to Folders and Lists programmatically
+- **Task Lifecycle Management** — Create, update, and manage tasks in real-time, including monitoring status, priority, and detailed metadata directly through your agent
+- **Deep Task Intelligence** — Retrieve complete task details, including descriptions, assigned users, and custom fields to maintain high-fidelity project records
+- **Workflow Automation** — Programmatically list tasks within specific lists or filter folderless lists to understand your team's progress and individual workloads
+- **Administrative Oversight** — List all accessible workspaces and team members to ensure perfectly coordinated collaboration and permission management
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your ClickUp Personal API Token (obtained from Settings > Apps)
-3. Start managing your projects from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **Personal API Token** from the ClickUp dashboard (Settings > Apps)
+3. Start managing your productivity pipeline from Claude, Cursor, or any MCP client
+
+No more manual toggling between lists or digging through complex status folders. Your AI acts as your dedicated project coordinator and task architect.
 
 ### Who is this for?
 
-- **Project Managers** — monitor task progress and team capacity using natural language
-- **Team Leads** — audit project hierarchies and task statuses without opening the complex dashboard
-- **Developers** — quickly look up task details and create new to-dos straight from their chat interface
-- **Ops Teams** — verify workspace configurations and monitor organizational productivity
+- **Project Managers** — instantly retrieve task lists and update project statuses using natural language commands
+- **Software Teams** — manage complex sprints and automate task assignment without leaving your creative workspace
+- **Operations Leads** — monitor team capacity and orchestrate folder structures through simple AI queries
 
 
-## Available Tools (8)
-- **create_new_task**: Create a new task in a specific list
-- **get_my_clickup_profile**: Retrieve information about the authenticated user
-- **get_task_details**: Get detailed information for a specific task
-- **list_space_folders**: List all folders within a space
-- **list_space_lists**: List all lists within a space
-- **list_workspace_spaces**: List all spaces within a workspace
-- **list_list_tasks**: List all tasks in a specific list
-- **list_clickup_workspaces**: List all workspaces (teams) the user belongs to
+## Available Tools (10)
+- **list_lists**: Lists contain the actual tasks.
+
+List all Lists in a Folder
+- **list_spaces**: Spaces are large groupings of folders and lists.
+
+List all Spaces in a Workspace
+- **list_tasks**: Supports pagination to handle large numbers of tasks.
+
+List tasks within a List
+- **list_workspaces**: Workspaces are the top-level unit in ClickUp.
+
+List all ClickUp Workspaces
+- **update_task**: Can update the name, description, or status.
+
+Update an existing task
+- **create_task**: Requires a task name. Optional status and description can be provided.
+
+Create a new task in a List
+- **delete_task**: Delete a specific task
+- **get_task_details**: Note: Do not include the # prefix.
+
+Get details for a specific task
+- **list_folderless_lists**: List Lists not contained in a Folder
+- **list_folders**: Folders help organize multiple lists.
+
+List all Folders in a Space
 
 
 ## 💬 Prompt Examples
@@ -51,38 +69,38 @@ Connect your **ClickUp** account to any AI agent and take full control of your p
 Here are some examples of how you can interact with the **ClickUp** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my ClickUp workspaces."
+> "List all ClickUp Workspaces I have access to."
 
 **🤖 AI Agent:**
-> Retrieving your ClickUp workspaces... I found 2: 'Product Team' (ID: 1234) and 'Marketing Dept' (ID: 5678). Which one would you like to see the spaces for?
+> I've retrieved your accessible workspaces. You currently belong to: 'Vinkius Global' (ID: 123) and 'Personal Tasks' (ID: 456). Which one should we explore for project spaces?
 
 ---
 
 **👤 You:**
-> "Show me the tasks in the 'Q2 Launch' list."
+> "Show the tasks in list ID '789' and their current statuses."
 
 **🤖 AI Agent:**
-> Checking tasks in Q2 Launch... I found 5 items: 'Update Landing Page' (To Do), 'Finalize Copy' (In Progress), 'Security Audit' (Closed), and 2 others. Should I include subtasks?
+> Scanning list 789... I found 5 active tasks, including 'Redesign UI' (In Progress) and 'API Documentation' (To Do). Would you like the detailed metadata for the 'In Progress' task?
 
 ---
 
 **👤 You:**
-> "Create a new task called 'Prepare presentation' in list 'wf_123'."
+> "Create a high-priority task 'Fix Login Bug' in list '789'."
 
 **🤖 AI Agent:**
-> Creating task 'Prepare presentation'... The task has been successfully created in ClickUp. You can find it under the ID 'task_abc123'. Would you like to add a description or a due date?
+> Action complete! I've created the high-priority task 'Fix Login Bug' in specified list (ID: 789). It's now visible on your dashboard for your team to address. Need help assigning a crew member?
 
 
 ## ❓ FAQ
 
-**Q: Can I see the subtasks for a specific task?**
-Yes! Use the `get_task_details` tool with the task ID. The agent will fetch the full task record, which includes all subtasks nested within it.
+**Q: How do I find my ClickUp Personal API Token?**
+Log in to ClickUp, navigate to **Settings** > **Apps**, and click **Generate** under the Personal API Token section.
 
-**Q: How do I find all the tasks in a specific list?**
-Use the `list_list_tasks` tool. Provide the list ID, and your agent will return all tasks in that list, including their current statuses and priorities.
+**Q: What is the difference between a Space and a List?**
+A Space is a top-level grouping for high-level organization, while a List contains the actual individual tasks you want to track.
 
-**Q: Where do I find my ClickUp API Token?**
-Log in to ClickUp, go to your **Personal Settings**, select **Apps**, and generate a **Personal API Token** under the API section.
+**Q: Can I filter for archived tasks?**
+The current toolset is optimized for active project management and typically retrieves non-archived tasks to maintain workflow focus.
 
 
 ## Installation & Usage

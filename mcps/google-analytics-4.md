@@ -38,13 +38,10 @@ Connect your **Google Analytics 4** property to any AI agent and access web anal
 
 
 ## Available Tools (12)
-- **get_metadata**: Get available dimensions and metrics
 - **get_page_views**: Get top pages by views
 - **get_traffic_sources**: Get traffic sources
 - **get_user_demographics**: Get user demographics
-- **list_audience_exports**: List audience exports
 - **run_pivot_report**: Run pivot report
-- **run_realtime_report**: Run realtime report
 - **run_report**: Data JSON must include dateRanges, dimensions, and metrics arrays.
 
 Run a custom report
@@ -52,6 +49,9 @@ Run a custom report
 - **check_compatibility**: Check report compatibility
 - **get_conversions**: Get conversions
 - **get_device_breakdown**: Get device breakdown
+- **get_metadata**: Get available dimensions and metrics
+- **list_audience_exports**: List audience exports
+- **run_realtime_report**: Run realtime report
 
 
 ## 💬 Prompt Examples

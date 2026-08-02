@@ -34,14 +34,14 @@ Connect your **Canva** account to any AI agent and take full control of your cre
 
 
 ## Available Tools (10)
-- **list_designs**: List all designs on Canva. Canva is the leading online design platform. Returns design IDs, titles, types, and thumbnails
-- **get_design**: Get full details of a Canva design including title, type, page count, dimensions, and created/updated timestamps
 - **create_design**: Create a new Canva design. Supports preset types like Presentation, Poster, InstagramPost
 - **export_design**: Export a Canva design to a file format. Supports PDF, JPEG, PNG, GIF, PPTX, MP4. Returns an export job ID
 - **get_export**: Get the status of a Canva export job tracking completion progress returning a native physical download URL
 - **list_assets**: List uploaded standard image or video graphical assets stored in the user Canva asset pipeline
 - **upload_asset**: Upload an asset directly into the Canva storage context for future embedding into complex native designs
 - **delete_asset**: Irreversibly delete an existing custom asset from the Canva platform structure
+- **list_designs**: List all designs on Canva. Canva is the leading online design platform. Returns design IDs, titles, types, and thumbnails
+- **get_design**: Get full details of a Canva design including title, type, page count, dimensions, and created/updated timestamps
 - **list_templates**: Retrieve the organizationally explicit Canva branded layout templates isolating core structural configurations
 - **get_user**: Get standard metadata describing the authenticated Canva user and organizational bounds
 

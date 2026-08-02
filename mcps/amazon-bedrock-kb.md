@@ -36,12 +36,12 @@ Eliminate the need to build custom vector pipelines. Your agent queries massive 
 
 
 ## Available Tools (6)
-- **list_knowledge_bases**: List AWS Bedrock knowledge bases
-- **get_knowledge_base**: Get an explicit AWS Bedrock knowledge base
-- **retrieve**: Query a vector index securely via AWS Bedrock
-- **retrieve_and_generate**: Generate explicitly grounded LLM responses using Bedrock KB
 - **list_data_sources**: List Data Sources bound explicitly to an AWS Bedrock KB
 - **list_ingestion_jobs**: List AWS Bedrock KB explicit sync operations
+- **get_knowledge_base**: Get an explicit AWS Bedrock knowledge base
+- **list_knowledge_bases**: List AWS Bedrock knowledge bases
+- **retrieve**: Query a vector index securely via AWS Bedrock
+- **retrieve_and_generate**: Generate explicitly grounded LLM responses using Bedrock KB
 
 
 ## 💬 Prompt Examples

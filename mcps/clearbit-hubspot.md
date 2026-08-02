@@ -36,14 +36,14 @@ Connect your **Clearbit (HubSpot)** account to any AI agent and take full contro
 
 
 ## Available Tools (8)
+- **get_prospects**: Get prospects
+- **get_watchlist**: Get watchlist companies
 - **find_person**: Find person by email
 - **find_company**: Find company by domain
 - **find_person_and_company**: Find person & company
 - **autocomplete_company**: Autocomplete company
 - **reveal_ip**: Reveal IP address
 - **find_risk**: Calculate risk
-- **get_prospects**: Get prospects
-- **get_watchlist**: Get watchlist companies
 
 
 ## 💬 Prompt Examples

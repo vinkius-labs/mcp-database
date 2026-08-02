@@ -34,11 +34,6 @@ Connect your **Stripe** account to any AI agent to automate your basic payment p
 
 
 ## Available Tools (11)
-- **create_charge**: Pass data as a JSON string.
-
-Create a new charge
-- **create_customer**: Create a new Stripe customer
-- **create_refund**: Create a refund for a charge
 - **create_token**: Pass data as a JSON string.
 
 Create a single-use token
@@ -49,6 +44,11 @@ Create a single-use token
 - **list_customers**: List all Stripe customers
 - **list_invoices**: List all invoices
 - **list_subscriptions**: List all active subscriptions
+- **create_charge**: Pass data as a JSON string.
+
+Create a new charge
+- **create_customer**: Create a new Stripe customer
+- **create_refund**: Create a refund for a charge
 
 
 ## 💬 Prompt Examples

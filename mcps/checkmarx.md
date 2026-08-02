@@ -34,9 +34,9 @@ Connect your **Checkmarx One** enterprise environment to any AI agent and take p
 
 
 ## Available Tools (10)
-- **cancel_scan**: Prevents unnecessary engine resource consumption and drops the scanning context if the developer pushed a new commit overlapping the running job.
+- **list_projects**: A Project represents a specific codebase. Includes project metadata, IDs, and assigned application linkages.
 
-Cancel an actively running Checkmarx scan
+List all Checkmarx One Projects
 - **get_project**: Essential for ensuring the correct branch and source control context is selected before triggering new scans.
 
 Get details for a specific Checkmarx project
@@ -46,12 +46,6 @@ Get specialized Infrastructure as Code (KICS) findings
 - **list_applications**: An Application acts as an overarching container for multiple individual microservices or projects, providing aggregated risk reporting and security metric visibility across a logical product.
 
 List Checkmarx One Applications
-- **list_bfl**: Provide the scan ID and the specific query (rule) ID string.
-
-Get Best Fix Location (BFL) for a specific vulnerability node
-- **list_projects**: A Project represents a specific codebase. Includes project metadata, IDs, and assigned application linkages.
-
-List all Checkmarx One Projects
 - **list_scans**: Includes the scan ID, current status (Completed, Running, Failed, Canceled), branch targeted, and timestamps. Use the scan ID to fetch the actual vulnerability results.
 
 List all historical and active scans for a Checkmarx project
@@ -64,6 +58,12 @@ Check the precise status and configuration of a Checkmarx scan
 - **get_scan_results**: Each result includes the vulnerability severity, state (To Verify, Confirmed, Urgent), description, and the exact lines of code where the flaw was detected. Requires a completed scan ID.
 
 Download SAST and security vulnerability findings for a scan
+- **cancel_scan**: Prevents unnecessary engine resource consumption and drops the scanning context if the developer pushed a new commit overlapping the running job.
+
+Cancel an actively running Checkmarx scan
+- **list_bfl**: Provide the scan ID and the specific query (rule) ID string.
+
+Get Best Fix Location (BFL) for a specific vulnerability node
 
 
 ## 💬 Prompt Examples

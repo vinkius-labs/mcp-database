@@ -35,12 +35,21 @@ Connect your **HashiCorp Vault** instance to any AI agent to automate secrets ma
 
 ## Available Tools (50)
 - **approle_login**: Login using AppRole authentication
+- **create_aws_role**: Create an AWS role
+- **generate_database_creds**: Generate dynamic database credentials
+- **read_kv_metadata**: Read metadata for a KV v2 secret
+- **read_kv_secret**: Read a secret from KV v2 engine
 - **configure_aws_root**: Configure AWS root credentials
-- **configure_database**: Configure a database connection
 - **configure_kubernetes_auth**: Configure Kubernetes authentication
+- **github_login**: Login using GitHub personal access token
+- **issue_pki_cert**: Issue a new PKI certificate
+- **kubernetes_login**: Login using Kubernetes authentication
+- **list_audit_devices**: List enabled audit devices
+- **list_auth_methods**: List enabled auth methods
+- **list_kv_secrets**: List secrets in a KV v2 engine path
+- **configure_database**: Configure a database connection
 - **create_acl_policy**: Create or update an ACL policy
 - **create_approle_role**: Create or update an AppRole role
-- **create_aws_role**: Create an AWS role
 - **create_database_role**: Create a database role
 - **create_pki_role**: Create a PKI role
 - **create_token**: Create a new Vault token
@@ -54,25 +63,16 @@ Connect your **HashiCorp Vault** instance to any AI agent to automate secrets ma
 - **encrypt_transit**: Encrypt data using Transit engine
 - **generate_approle_secret_id**: Generate a new Secret ID for an AppRole
 - **generate_aws_creds**: Generate dynamic AWS credentials
-- **generate_database_creds**: Generate dynamic database credentials
 - **generate_pki_root**: Generate a new PKI root certificate
 - **get_init_status**: Check Vault initialization status
 - **get_openapi_spec**: Generate OpenAPI V3 document of mounted backends
 - **get_system_health**: Check Vault system health
-- **github_login**: Login using GitHub personal access token
 - **initialize_vault**: Initialize a new Vault cluster
-- **issue_pki_cert**: Issue a new PKI certificate
-- **kubernetes_login**: Login using Kubernetes authentication
-- **list_audit_devices**: List enabled audit devices
-- **list_auth_methods**: List enabled auth methods
-- **list_kv_secrets**: List secrets in a KV v2 engine path
 - **list_mounts**: List mounted secrets engines
 - **list_token_accessors**: List token accessors (requires sudo)
 - **lookup_lease**: Lookup a lease by ID
 - **lookup_self_token**: Lookup details about the current Vault token
 - **map_github_team**: Map a GitHub team to Vault policies
-- **read_kv_metadata**: Read metadata for a KV v2 secret
-- **read_kv_secret**: Read a secret from KV v2 engine
 - **renew_lease**: Renew a lease
 - **renew_self_token**: Renew the current Vault token
 - **revoke_lease**: Revoke a lease

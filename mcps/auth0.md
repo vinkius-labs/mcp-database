@@ -35,6 +35,18 @@ Your AI agent eliminates the need to navigate the verbose Auth0 dashboard while 
 
 
 ## Available Tools (10)
+- **list_connections**: Shows configurations targeting pure Auth0 Databases, external Google/Facebook Social wrappers, and rigid AD/LDAP infrastructure synced behind restrictive corporate firewalls.
+
+List all Identity Provider (IdP) connections attached to Auth0
+- **list_logs**: Captures successful logings, failed JWT validations, aggressive rate limits tripped, silent user migrations executed, and administrative mutations made continuously within the console dashboard.
+
+Retrieve the chronological stream of all executed Auth0 tenant logs
+- **list_roles**: Used to securely decouple authorization scopes from standard authentication, allowing APIs to restrict backend mutations securely via verified RBAC permission tokens attached intrinsically into emitted JWTs.
+
+List RBAC roles defined intrinsically within the Auth0 Core Engine
+- **list_users**: Includes core Auth0 attributes, creation timestamps, and customized app_metadata mappings securely controlled globally by the backend.
+
+List all users registered in the Auth0 tenant
 - **delete_user**: Vaporizes all bound external identity links, MFA setups, and locally-held database credentials instantly, ensuring complete privacy compliance during active right-to-be-forgotten regulatory requests.
 
 Permanently delete a user profile directly from Auth0
@@ -53,18 +65,6 @@ List serverless Javascript logic executing dynamically in pipelines
 - **list_clients**: Crucial for auditing grant types enforced globally on specific app boundaries.
 
 List all logical applications/clients spanning this Auth0 tenant
-- **list_connections**: Shows configurations targeting pure Auth0 Databases, external Google/Facebook Social wrappers, and rigid AD/LDAP infrastructure synced behind restrictive corporate firewalls.
-
-List all Identity Provider (IdP) connections attached to Auth0
-- **list_logs**: Captures successful logings, failed JWT validations, aggressive rate limits tripped, silent user migrations executed, and administrative mutations made continuously within the console dashboard.
-
-Retrieve the chronological stream of all executed Auth0 tenant logs
-- **list_roles**: Used to securely decouple authorization scopes from standard authentication, allowing APIs to restrict backend mutations securely via verified RBAC permission tokens attached intrinsically into emitted JWTs.
-
-List RBAC roles defined intrinsically within the Auth0 Core Engine
-- **list_users**: Includes core Auth0 attributes, creation timestamps, and customized app_metadata mappings securely controlled globally by the backend.
-
-List all users registered in the Auth0 tenant
 
 
 ## 💬 Prompt Examples
