@@ -7,42 +7,40 @@
 
 **Category:** [finance-accounting](../categories/finance-accounting.md)
 
-Manage recurring payments and customers via MoonClerk — track transactions and view payment forms directly from your AI agent.
+Accept recurring and one-time payments with beautifully designed checkout pages that embed anywhere on your website.
 
 ## Description
-Connect your **MoonClerk** account to your AI agent and take control of your recurring revenue and customer billing through natural conversation.
+Connect your **MoonClerk** account to any AI agent to streamline your payment monitoring and customer oversight. MoonClerk provides a robust API for programmatically retrieving your payment records, customer plan details, and active payment forms.
 
 ### What you can do
 
-- **Payment Tracking** — List all transactions and get real-time status updates, amounts, and currency info.
-- **Customer & Plan Management** — Access customer profiles, recurring payment plans, and active subscriptions.
-- **Form Oversight** — List and inspect your payment forms to stay organized.
-- **Deep Data Inspection** — Fetch complete metadata for specific customers, payments, or plans using their unique IDs.
+- **Customer Monitoring** — List all your customers (plans) and retrieve detailed metadata including status and plan types
+- **Payment Tracking** — Access your full payment history and monitor the status of recurring and one-time transactions
+- **Form Orchestration** — List all your active payment forms and retrieve their public URLs and configurations
+- **Coupon Intelligence** — Access your list of active coupons to understand your promotional landscape
+- **Real-time Oversight** — Get a comprehensive overview of your payment volume and customer growth using natural language commands
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your MoonClerk API Key
-3. Start managing your billing from Claude, Cursor, or any MCP client
+2. Enter your MoonClerk API Key from your account settings
+3. Start monitoring your payments from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **Subscription-based Businesses** — quickly check if a subscriber's payment has cleared or verify plan details.
-- **Support Teams** — verify customer billing status and subscription info while providing assistance.
-- **Finance Operations** — automate the retrieval of transaction and plan lists for reporting.
+- **Finance Managers** — monitor transaction statuses and payment volumes using natural language
+- **Business Owners** — get a real-time overview of customer growth and form performance
+- **Developers** — integrate real-time payment data into custom financial dashboards
 
 
-## Available Tools (10)
-- **get_customer**: Get specific customer details
-- **get_form**: Get specific form details
-- **get_payment**: Get details for a specific payment
-- **get_plan**: Get specific plan details
-- **get_subscription**: Get specific subscription info
-- **list_customers**: List MoonClerk customers
-- **list_forms**: List payment forms
+## Available Tools (7)
+- **list_coupons**: List all coupons
+- **list_customers**: List all MoonClerk customers
+- **list_forms**: List all payment forms
 - **list_payments**: List all payments
-- **list_plans**: List available payment plans
-- **list_subscriptions**: List active subscriptions
+- **get_customer**: Get customer details
+- **get_form**: Get form details
+- **get_payment**: Get payment details
 
 
 ## 💬 Prompt Examples
@@ -50,38 +48,38 @@ Connect your **MoonClerk** account to your AI agent and take control of your rec
 Here are some examples of how you can interact with the **MoonClerk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List my last 5 payments received on MoonClerk."
+> "List all active customers in my MoonClerk account."
 
 **🤖 AI Agent:**
-> I've retrieved your recent payments. You have 5 recent transactions: three for $50.00 (Status: Succeeded) and two for $25.00. Would you like details on the customer for the most recent one?
+> I've retrieved your customer list. You have 50 active customers (plans), including 'John Doe' and 'Maria Garcia'. Would you like to see the payment history for any of them?
 
 ---
 
 **👤 You:**
-> "What recurring payment plans do I have configured?"
+> "Show the last 5 payments received today."
 
 **🤖 AI Agent:**
-> Retrieving your plans... You have 3 recurring plans: 'Monthly Membership' ($29/mo), 'Annual Pro' ($290/yr), and 'Starter Kit' (One-time). Shall I list the active subscribers for the Monthly Membership?
+> I've fetched today's payments. You have 5 new transactions totaling $450.00 USD, with all transactions marked as 'Successful'.
 
 ---
 
 **👤 You:**
-> "Show me the details for the payment form with ID form_123."
+> "List all my active payment forms."
 
 **🤖 AI Agent:**
-> Inspecting form_123... This form is titled 'Donation Page', it is currently 'active', and has been used for 45 successful transactions. Would you like the checkout URL for this form?
+> I've retrieved your payment forms. You have 3 active forms: 'Basic Subscription', 'Premium Monthly', and 'Annual Pass'. Which URL would you like to retrieve?
 
 
 ## ❓ FAQ
 
-**Q: Is the MoonClerk API read-only?**
-Yes, as per their official documentation, the MoonClerk API currently only supports retrieving information. Creating or modifying records must be done via their dashboard or forms.
+**Q: How do I get my MoonClerk API Key?**
+Log in to your MoonClerk account, navigate to the **Settings** > **API** section, and generate a new API token.
 
-**Q: Can I see details about recurring plans?**
-Yes! Use the `list_plans` tool to see all your payment plans and `get_plan` for detailed information about a specific one.
+**Q: Is the API read-only?**
+Yes, currently the MoonClerk API is primarily for retrieving data (customers, payments, forms). For creating records, please use the MoonClerk dashboard.
 
-**Q: How do I find a specific subscription's status?**
-The `list_subscriptions` and `get_subscription` tools allow you to check the current state and recurrence details for any active customer subscription.
+**Q: Can I track recurring payments?**
+Absolutely. The `list_payments` tool retrieves both one-time and recurring payments, allowing you to monitor your subscription health.
 
 
 ## Installation & Usage

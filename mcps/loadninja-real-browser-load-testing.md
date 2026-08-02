@@ -35,8 +35,6 @@ Connect your **LoadNinja** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **get_account**: Get precise LoadNinja bound subscription account details and strict runtime VU limits
-- **list_scenarios**: List all load test scenarios on LoadNinja
 - **get_scenario**: Get full details of a specific LoadNinja scenario including target URL and configuration
 - **run_scenario**: Run a LoadNinja scenario with specified virtual users and duration explicitly in minutes
 - **list_test_runs**: List all test executions reporting active completion status on LoadNinja
@@ -44,6 +42,8 @@ Connect your **LoadNinja** account to any AI agent and take full control of your
 - **get_test_run_stats**: Get raw performance statistics for a specific LoadNinja test run
 - **stop_test_run**: Irreversibly vaporize an active running LoadNinja test immediately
 - **list_browsers**: List available explicit native browsers configured on LoadNinja
+- **list_scenarios**: List all load test scenarios on LoadNinja
+- **get_account**: Get precise LoadNinja bound subscription account details and strict runtime VU limits
 - **list_locations**: List available explicit physical data center load injection locations
 
 

@@ -35,16 +35,16 @@ Connect your **Moosend** account to any AI agent and take full control of your e
 
 
 ## Available Tools (10)
-- **add_subscriber**: Add a subscriber to a mailing list
 - **create_campaign**: Create a new email campaign
 - **create_mailing_list**: Create a new mailing list
 - **get_campaign_stats**: Get performance metrics for a campaign
 - **get_mailing_list**: Get details for a specific mailing list
 - **list_campaigns**: List all email campaigns
-- **list_mailing_lists**: List all mailing lists in Moosend
-- **list_subscribers**: List subscribers in a mailing list
 - **remove_subscriber**: Remove a subscriber from a mailing list
 - **send_campaign**: Trigger the delivery of a campaign
+- **list_mailing_lists**: List all mailing lists in Moosend
+- **list_subscribers**: List subscribers in a mailing list
+- **add_subscriber**: Add a subscriber to a mailing list
 
 
 ## 💬 Prompt Examples

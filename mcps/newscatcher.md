@@ -33,13 +33,13 @@ NewsCatcher uses AI to normalize and cluster news from diverse sources, making i
 
 
 ## Available Tools (4)
-- **get_news_clusters**: Get grouped news stories (clusters)
 - **get_latest_news**: Use "q" for keywords, "topic" (e.g., "sports"), "countries" (e.g., "US"), or "sources" (e.g., "cnn.com").
 
 Get the latest news articles for a topic or source
 - **search_news**: Use "q" for keywords, "lang" for language (e.g., "en"), "countries" for country codes (e.g., "US"), and "sort_by" (relevancy, date).
 
 Search for news articles using keywords and filters
+- **get_news_clusters**: Get grouped news stories (clusters)
 - **list_sources**: Filter by "topic", "countries", or "lang".
 
 List available news sources

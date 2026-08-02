@@ -35,18 +35,18 @@ Connect your **Mobile Action** account to your AI agent and gain a competitive e
 
 
 ## Available Tools (12)
-- **get_ad_creatives**: Get app advertising creatives
 - **get_app_info**: Get detailed app store information
 - **get_app_reviews**: Get app customer reviews
 - **get_cpp_details**: Get Custom Product Page details
 - **get_keyword_ranking**: Get keyword ranking history
 - **get_market_estimations**: Get download and revenue estimations
 - **get_rating_history**: Get app rating history
+- **get_tracked_keywords**: List keywords tracked in the dashboard
+- **search_apps**: Search for apps in store
+- **get_ad_creatives**: Get app advertising creatives
 - **get_related_keywords**: Get related ASO keywords
 - **get_top_apps**: Get top charts by category
 - **get_tracked_apps**: List apps tracked in the dashboard
-- **get_tracked_keywords**: List keywords tracked in the dashboard
-- **search_apps**: Search for apps in store
 
 
 ## 💬 Prompt Examples

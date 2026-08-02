@@ -36,11 +36,12 @@ Connect your **Moloni** account to any AI agent and take full control of your ce
 
 
 ## Available Tools (20)
+- **list_products**: Listar todos os artigos e stock de serviços Moloni
 - **list_customers**: Listar todos os clientes registados na empresa Moloni
+- **list_receipts**: Listar RCs (Recibos líquidos de regularização liquidados)
 - **get_customer_by_vat**: Pesquisar exato cliente pelo seu NIF fiscal
 - **create_customer**: Registar formalmente novo cliente no Moloni
 - **update_customer**: Atualizar registo de dados fiscais num cliente existente
-- **list_products**: Listar todos os artigos e stock de serviços Moloni
 - **get_product**: Obter pormenores unitários e ID de taxas de um serviço
 - **create_product**: Criar registo de novo artigo faturável base
 - **list_product_categories**: Listar hierarquia de categorias guardando os produtos
@@ -48,7 +49,6 @@ Connect your **Moloni** account to any AI agent and take full control of your ce
 - **list_invoices**: Listar faturas simples já finalizadas ou abertas AT
 - **get_invoice**: Obter detalhe intrínseco (items e IVAs) duma exata Fatura
 - **list_invoice_receipts**: Listar FRV (Fatura-Recibo equivalentes portugueses)
-- **list_receipts**: Listar RCs (Recibos líquidos de regularização liquidados)
 - **list_credit_notes**: Listar NCs legais (Notas de Crédito estornos)
 - **list_delivery_notes**: Listar GTs puras (Guias de Transporte físicas)
 - **list_estimates**: Listar orçamentos simulados (Proformas/Orçamentos)

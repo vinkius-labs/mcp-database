@@ -35,21 +35,21 @@ Connect your **ManoMano Seller** account to any AI agent and take full control o
 
 
 ## Available Tools (11)
+- **get_order**: Get full order details including customer, addresses, and order lines
+- **list_brands**: List available brands on ManoMano
+- **list_fulfillment_stock**: Check stock maintained through ManoFulfillment (ManoMano warehouse)
 - **list_offers**: List all published offers on ManoMano
 - **get_offer**: Get details for a specific ManoMano offer (price, stock, SKU)
-- **update_offer_price**: This is a reversible operation.
-
-Change the price of a specific offer
 - **update_offer_stock**: This is a reversible operation.
 
 Update the available stock count for a specific offer
 - **list_orders**: List all received ManoMano orders
-- **get_order**: Get full order details including customer, addresses, and order lines
+- **update_offer_price**: This is a reversible operation.
+
+Change the price of a specific offer
 - **accept_order**: Accept a pending ManoMano order
 - **ship_order**: Ship an order by supplying a valid tracking number and carrier
 - **list_categories**: List ManoMano catalog categories
-- **list_brands**: List available brands on ManoMano
-- **list_fulfillment_stock**: Check stock maintained through ManoFulfillment (ManoMano warehouse)
 
 
 ## 💬 Prompt Examples

@@ -34,12 +34,12 @@ Connect your **Lucidya** account to any AI agent to automate your social listeni
 
 
 ## Available Tools (7)
-- **list_cdp_customers**: List customer profiles from CDP
 - **detect_arabic_dialect**: Detect the specific Arabic dialect of a text
 - **get_customer_profile**: Get complete details for a customer profile
 - **get_monitor_details**: Get details for a specific monitor
-- **list_social_monitors**: List all social media monitors
 - **analyze_text_sentiment**: Analyze the sentiment of a given text
+- **list_cdp_customers**: List customer profiles from CDP
+- **list_social_monitors**: List all social media monitors
 - **get_omniserve_analytics**: Query customer service analytics KPIs
 
 

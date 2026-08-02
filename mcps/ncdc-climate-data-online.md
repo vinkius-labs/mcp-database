@@ -35,9 +35,6 @@ Connect to the **National Climatic Data Center (NCDC)** API through your AI agen
 
 
 ## Available Tools (10)
-- **list_stations**: List weather stations
-- **list_locations**: List specific locations
-- **get_climate_data**: Retrieve actual climate records
 - **get_dataset**: Get specific dataset details
 - **get_station**: Get specific station details
 - **list_data_categories**: g., Temperature, Precipitation).
@@ -49,6 +46,9 @@ List data classes
 - **list_data_types**: g., Max Temperature, Snowfall).
 
 List specific data types
+- **list_locations**: List specific locations
+- **list_stations**: List weather stations
+- **get_climate_data**: Retrieve actual climate records
 - **list_datasets**: g., GHCND, GSOD).
 
 List NCDC climate datasets

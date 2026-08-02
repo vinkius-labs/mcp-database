@@ -28,16 +28,16 @@ Connect your **Middesk** account to automate Business Identity (KYB) and complia
 
 
 ## Available Tools (9)
-- **autocomplete_identity**: Autocomplete business identity
-- **create_business**: Requires legal name.
-
-Create a new business verification
-- **get_business**: Get a specific business
 - **get_document**: Get a specific document
 - **get_tax_registration**: Get a specific tax registration
 - **list_businesses**: List all businesses
 - **list_documents**: List documents for a business
 - **list_tax_registrations**: List tax registrations
+- **autocomplete_identity**: Autocomplete business identity
+- **create_business**: Requires legal name.
+
+Create a new business verification
+- **get_business**: Get a specific business
 - **prefill_business**: g., website).
 
 Prefill business details

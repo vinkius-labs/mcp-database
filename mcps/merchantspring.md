@@ -28,10 +28,7 @@ Connect your **MerchantSpring** account to any AI agent and take full control of
 
 
 ## Available Tools (10)
-- **list_merchant_alerts**: List all marketplace alerts
-- **list_marketplaces**: g. Amazon, eBay).
-
-List all supported marketplaces
+- **get_store_details**: Get details for a specific store
 - **list_store_orders**: List orders for a specific store
 - **list_store_products**: List products for a specific store
 - **list_store_promotions**: List active store promotions
@@ -39,7 +36,10 @@ List all supported marketplaces
 - **get_store_health**: Get store health status
 - **get_inventory_report**: Get inventory status report
 - **get_sales_summary**: Get aggregated sales summary
-- **get_store_details**: Get details for a specific store
+- **list_merchant_alerts**: List all marketplace alerts
+- **list_marketplaces**: g. Amazon, eBay).
+
+List all supported marketplaces
 
 
 ## 💬 Prompt Examples

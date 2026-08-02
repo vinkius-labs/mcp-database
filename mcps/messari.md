@@ -29,17 +29,17 @@ Connect your **Messari** account to any AI agent and access deep insights into t
 
 ## Available Tools (10)
 - **get_asset_profile**: Get asset profile
-- **get_asset_market_data**: Get market data for an asset
 - **get_crypto_news**: Get crypto news feed
 - **list_assets**: List crypto assets
+- **list_crypto_exchanges**: List supported exchanges
 - **list_governance_events**: List governance events
 - **list_crypto_markets**: List all crypto markets
 - **search_assets**: Search for crypto assets
+- **get_asset_market_data**: Get market data for an asset
 - **get_asset_details**: g. btc, eth).
 
 Get details for a crypto asset
 - **get_asset_metrics**: Get metrics for a crypto asset
-- **list_crypto_exchanges**: List supported exchanges
 
 
 ## 💬 Prompt Examples

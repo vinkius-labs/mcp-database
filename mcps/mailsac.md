@@ -37,8 +37,6 @@ Connect your **Mailsac** account to any AI agent to automate your email testing 
 ## Available Tools (9)
 - **list_reserved_addresses**: List all reserved (enhanced) email addresses
 - **delete_inbox_message**: Permanently remove a message from an inbox
-- **list_custom_domains**: List custom domains linked to the account
-- **get_html_message_body**: Get the sanitized HTML body of a specific message
 - **get_plain_text_body**: Get the plain text body of a specific message
 - **list_inbox_messages**: List messages in a specific inbox
 - **release_reserved_address**: Delete/Release a reserved email address
@@ -46,6 +44,8 @@ Connect your **Mailsac** account to any AI agent to automate your email testing 
 - **search_account_messages**: Requires a paid Mailsac tier. Use query params like to, from, subject.
 
 Search for messages across all addresses
+- **get_html_message_body**: Get the sanitized HTML body of a specific message
+- **list_custom_domains**: List custom domains linked to the account
 
 
 ## 💬 Prompt Examples
