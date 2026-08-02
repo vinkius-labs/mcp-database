@@ -36,24 +36,24 @@ No more SSH-ing into your controller just to check if a node is online or to gen
 
 
 ## Available Tools (18)
-- **create_api_key**: Create a new API key
+- **expire_api_key**: Expire an API key
+- **expire_node**: Force expiration of a node session
+- **expire_preauth_key**: Expire a pre-auth key
 - **create_preauth_key**: Create a new pre-auth key
 - **create_user**: Create a new user in Headscale
 - **delete_node**: Remove a node from the Headscale network
 - **delete_user**: Delete a user from Headscale
 - **disable_route**: Disable a specific route
 - **enable_route**: Enable a specific route
-- **expire_api_key**: Expire an API key
-- **expire_node**: Force expiration of a node session
-- **expire_preauth_key**: Expire a pre-auth key
 - **get_node**: Get details for a specific node
 - **list_api_keys**: List all API keys
 - **list_nodes**: List all nodes (machines) connected to Headscale
 - **list_preauth_keys**: List pre-auth keys
 - **list_routes**: List all subnet routes and exit nodes
 - **list_users**: List all users in Headscale
-- **move_node**: Move a node to a different user
 - **rename_node**: Rename a node in Headscale
+- **create_api_key**: Create a new API key
+- **move_node**: Move a node to a different user
 
 
 ## 💬 Prompt Examples

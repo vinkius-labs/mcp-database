@@ -34,9 +34,8 @@ Connect your **Legito** workspace to any AI agent to streamline your legal and d
 
 
 ## Available Tools (31)
-- **list_countries**: List countries (laws)
-- **create_document_version_data**: Create document version data from a template suite
-- **create_user**: Create a new user
+- **list_categories**: List categories (groups)
+- **create_user_group**: Create a new user group
 - **list_currencies**: List supported currencies
 - **delete_document_record**: Delete a document record
 - **delete_user_group**: Delete a user group
@@ -48,11 +47,9 @@ Connect your **Legito** workspace to any AI agent to streamline your legal and d
 - **remove_share_from_user_group**: Remove a document share from a user group
 - **remove_share_from_user**: Remove a document share from a user
 - **remove_user_from_group**: Remove a user from a user group
-- **share_with_user_group**: Share a document with a user group
 - **share_with_user**: Share a document with a user
 - **get_shares**: Get shares for a document
 - **list_template_suites**: List Legito template suites
-- **list_timezones**: List timezones
 - **update_document_record**: Update a document record
 - **update_document_version_data**: Update document version data
 - **update_user_group**: Update a user group
@@ -63,8 +60,11 @@ Connect your **Legito** workspace to any AI agent to streamline your legal and d
 - **list_users**: List users
 - **add_user_to_group**: Add a user to a user group
 - **list_advanced_styles**: List advanced styles
-- **list_categories**: List categories (groups)
-- **create_user_group**: Create a new user group
+- **list_countries**: List countries (laws)
+- **create_document_version_data**: Create document version data from a template suite
+- **create_user**: Create a new user
+- **share_with_user_group**: Share a document with a user group
+- **list_timezones**: List timezones
 
 
 ## 💬 Prompt Examples

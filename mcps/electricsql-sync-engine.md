@@ -34,10 +34,10 @@ Connect your **ElectricSQL** sync engine to any AI agent to stream data directly
 
 
 ## Available Tools (2)
+- **post_shape**: Sync a shape of data out of Postgres via POST (Subset Snapshots)
 - **get_shape**: Use offset=-1 for initial sync.
 
 Sync a shape of data out of Postgres via GET
-- **post_shape**: Sync a shape of data out of Postgres via POST (Subset Snapshots)
 
 
 ## 💬 Prompt Examples

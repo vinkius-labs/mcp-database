@@ -41,13 +41,16 @@ No more manual tracking of pending contracts. Your AI acts as a digital legal as
 - **create_public_form**: Create a public form
 - **create_task**: Create a new DottedSign task
 - **delete_public_form**: Delete a public form
-- **discard_task**: Discard a DottedSign task
-- **get_file_mission_download_link**: Get a download link for mission files
 - **get_file_mission**: Get file mission details
 - **get_groups**: Get group info
 - **get_me**: Get current member info
 - **get_public_form**: Get details of a specific public form
 - **get_task**: Get detailed information about a specific task
+- **update_groups**: Update group info
+- **update_public_form**: Update a public form
+- **void_task**: Void a DottedSign task
+- **discard_task**: Discard a DottedSign task
+- **get_file_mission_download_link**: Get a download link for mission files
 - **get_template**: Get details of a specific template
 - **list_public_forms**: Get a list of active public forms
 - **list_tasks**: Get a list of DottedSign tasks
@@ -56,11 +59,8 @@ No more manual tracking of pending contracts. Your AI acts as a digital legal as
 - **renew_file_mission**: Renew a file mission
 - **restore_task**: Restore a DottedSign task
 - **unarchive_task**: Unarchive a DottedSign task
-- **update_groups**: Update group info
 - **update_me**: Update current member info
-- **update_public_form**: Update a public form
 - **update_task**: Update a DottedSign task
-- **void_task**: Void a DottedSign task
 
 
 ## 💬 Prompt Examples

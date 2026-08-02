@@ -34,11 +34,11 @@ Connect your **Dynamic** environment to any AI agent to streamline Web3 user man
 
 
 ## Available Tools (8)
-- **get_embedded_wallet_versions**: Get active embedded wallet versions
-- **get_event_types**: Get available event types
 - **get_token_balances**: Get token balances for a user
 - **get_user**: Get a user by ID in an environment
 - **get_webhooks**: Get configured webhooks
+- **get_embedded_wallet_versions**: Get active embedded wallet versions
+- **get_event_types**: Get available event types
 - **check_sanctions**: Check wallet sanctions
 - **delete_user**: Delete a user from an environment
 - **revoke_session**: Revoke an active user session

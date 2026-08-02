@@ -34,6 +34,7 @@ Connect your **Glassnode** account to any AI agent to analyze crypto markets wit
 
 
 ## Available Tools (6)
+- **get_pit_metric**: Get Point-in-Time (PIT) metric data
 - **get_bulk_metric**: Use a="*" for all assets.
 
 Get bulk metric data for multiple assets
@@ -41,7 +42,6 @@ Get bulk metric data for multiple assets
 - **get_metric**: Path should be the metric name like "addresses/active_count" or "market/price_usd_close".
 
 Get time-series data for a specific metric
-- **get_pit_metric**: Get Point-in-Time (PIT) metric data
 - **list_assets**: List all supported assets on Glassnode
 - **list_metrics**: Can be filtered by asset, interval, etc.
 

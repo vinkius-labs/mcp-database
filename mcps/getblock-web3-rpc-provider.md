@@ -34,7 +34,6 @@ Connect your **GetBlock** account to any AI agent and interact with dozens of bl
 
 
 ## Available Tools (26)
-- **btc_analyzepsbt**: Analyze and provide information about a PSBT
 - **btc_createpsbt**: Create a transaction in the Partially Signed Bitcoin Transaction format
 - **btc_getbestblockhash**: Get the hash of the best (tip) block
 - **btc_getblockcount**: Get the number of blocks in the longest blockchain
@@ -47,8 +46,6 @@ Connect your **GetBlock** account to any AI agent and interact with dozens of bl
 - **eth_block_number**: Get the number of the most recent block
 - **eth_call**: Execute a new message call immediately without creating a transaction
 - **eth_estimate_gas**: Estimate gas necessary to allow the transaction to complete
-- **eth_get_balance**: Get the balance of an Ethereum account
-- **eth_get_block_by_hash**: Get information about a block by hash
 - **eth_get_block_by_number**: Get information about a block by block number
 - **eth_get_code**: Get code at a given address
 - **eth_get_transaction_by_hash**: Get information about a transaction by hash
@@ -60,6 +57,9 @@ Connect your **GetBlock** account to any AI agent and interact with dozens of bl
 - **sol_get_token_account_balance**: Get the token balance of an SPL Token account
 - **sol_get_transaction**: Get transaction details for a confirmed transaction signature
 - **sol_send_transaction**: Submit a signed transaction to the cluster for processing
+- **btc_analyzepsbt**: Analyze and provide information about a PSBT
+- **eth_get_balance**: Get the balance of an Ethereum account
+- **eth_get_block_by_hash**: Get information about a block by hash
 
 
 ## 💬 Prompt Examples

@@ -36,12 +36,12 @@ Connect your **Liveblocks** account to any AI agent to orchestrate multiplayer e
 ## Available Tools (18)
 - **authorize_user**: Obtain an access token for a client to enter a room
 - **broadcast_event**: Broadcast a JSON event to a room
+- **get_thread**: Get a specific thread
 - **create_room**: Create a new room
 - **create_thread**: Create a thread and the first comment
 - **delete_room**: Delete a room
 - **get_room**: Retrieve room details
 - **get_storage**: Get the room's Storage tree
-- **get_thread**: Get a specific thread
 - **get_ydoc**: Get a JSON representation of the Yjs document
 - **identify_user**: Permissions are managed on the backend.
 

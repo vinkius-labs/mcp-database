@@ -34,6 +34,24 @@ Connect your **Mastodon** account to any AI agent and manage your decentralized 
 
 
 ## Available Tools (32)
+- **favourite_status**: The post author receives a notification. Use to acknowledge or endorse content. Requires the status ID from a previous tool result.
+
+Like a post to show appreciation
+- **get_notifications_v2**: Only available on Mastodon 4.3 or newer instances. Falls back to v1 if the instance does not support v2.
+
+View grouped notifications (Mastodon 4.3+)
+- **get_trending_statuses**: These are posts with high organic engagement. Use to find popular conversations where your reply will have maximum visibility and impact.
+
+View posts that are trending right now
+- **get_trending_tags**: Mastodon trends are algorithm-free and purely based on real usage, making them a reliable signal of genuine community interest. Use to discover active topics for engagement.
+
+View hashtags that are trending right now
+- **post_status**: There is no other way to send content — if you want to reply to someone, you MUST call this tool. To reply to an existing post, set "in_reply_to_id" to the status ID of the post you are replying to. To create an original post, omit "in_reply_to_id". The "status" parameter is the full text content you want to publish. Never compose text without calling this tool — text only exists on Mastodon after this tool is called.
+
+Publish or reply on Mastodon. This is the ONLY way to send a message
+- **register_account**: Requires an approved OAuth application first. Most instances require manual admin approval after registration.
+
+Register a new user account on the Mastodon instance
 - **clear_notifications**: This is irreversible. Use with caution.
 
 Clear all notifications at once
@@ -61,9 +79,6 @@ Delete one of your own posts by status ID
 - **dismiss_notification**: Does not undo the action that caused it.
 
 Dismiss a single notification
-- **favourite_status**: The post author receives a notification. Use to acknowledge or endorse content. Requires the status ID from a previous tool result.
-
-Like a post to show appreciation
 - **block_account**: They will not be able to see your posts or interact with you. Use only for spam, harassment, or abusive accounts.
 
 Block a user by account ID
@@ -94,21 +109,9 @@ View posts from a curated list of accounts
 - **get_notifications_v1**: Use to discover who is interacting with you and respond to mentions.
 
 View your recent notifications — mentions, follows, favourites, boosts
-- **post_status**: There is no other way to send content — if you want to reply to someone, you MUST call this tool. To reply to an existing post, set "in_reply_to_id" to the status ID of the post you are replying to. To create an original post, omit "in_reply_to_id". The "status" parameter is the full text content you want to publish. Never compose text without calling this tool — text only exists on Mastodon after this tool is called.
-
-Publish or reply on Mastodon. This is the ONLY way to send a message
-- **register_account**: Requires an approved OAuth application first. Most instances require manual admin approval after registration.
-
-Register a new user account on the Mastodon instance
 - **get_public_timeline**: This is the broadest discovery tool — shows posts from all users across all connected instances. Use when you want to find new conversations and people to interact with.
 
 View the public timeline — recent posts from all users
-- **get_trending_statuses**: These are posts with high organic engagement. Use to find popular conversations where your reply will have maximum visibility and impact.
-
-View posts that are trending right now
-- **get_notifications_v2**: Only available on Mastodon 4.3 or newer instances. Falls back to v1 if the instance does not support v2.
-
-View grouped notifications (Mastodon 4.3+)
 - **search**: Use to find specific conversations, users, or topics. Set "type" to narrow results: "statuses" for posts, "accounts" for users, "hashtags" for tags. Without a type filter, returns all three. This is the primary discovery tool for finding content to interact with.
 
 Search for accounts, posts, or hashtags by keyword
@@ -127,9 +130,6 @@ Fetch a single post by its status ID
 - **get_tag_timeline**: Use to find conversations about a specific topic. Pass the hashtag without the # symbol (e.g. "AI" not "#AI"). Great for discovering posts about specific technologies, events, or communities.
 
 View recent posts containing a specific hashtag
-- **get_trending_tags**: Mastodon trends are algorithm-free and purely based on real usage, making them a reliable signal of genuine community interest. Use to discover active topics for engagement.
-
-View hashtags that are trending right now
 
 
 ## 💬 Prompt Examples

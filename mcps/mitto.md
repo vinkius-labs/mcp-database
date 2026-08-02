@@ -34,8 +34,13 @@ Connect your **Mitto** account to any AI agent to handle global communication wo
 
 
 ## Available Tools (27)
+- **list_masking_participants**: List masking participants
 - **add_masked_number**: Add a masked number
 - **add_masking_participant**: Add a masking participant
+- **set_2fa_workflows**: g., SMS to Voice) for 2FA.
+
+Set 2FA workflows
+- **track_sms_conversion**: Track SMS conversion
 - **cancel_2fa**: Cancel a 2FA OTP request
 - **create_masking_application**: Create a number masking application
 - **create_masking_context**: Create a masking context
@@ -48,7 +53,6 @@ Connect your **Mitto** account to any AI agent to handle global communication wo
 - **list_masking_applications**: List number masking applications
 - **list_masking_contexts**: List masking contexts
 - **list_masked_numbers**: List masked numbers
-- **list_masking_participants**: List masking participants
 - **lookup_number**: Lookup mobile number information
 - **search_2fa**: Search 2FA SDRs
 - **search_masking_interactions**: Search masking interactions
@@ -56,10 +60,6 @@ Connect your **Mitto** account to any AI agent to handle global communication wo
 - **send_bulk_sms**: Send bulk SMS messages
 - **send_sms**: Send a single SMS message
 - **set_2fa_limits**: Set 2FA limits
-- **set_2fa_workflows**: g., SMS to Voice) for 2FA.
-
-Set 2FA workflows
-- **track_sms_conversion**: Track SMS conversion
 - **update_masking_application**: Update a number masking application
 - **update_masking_context**: Update a masking context
 - **verify_2fa**: Verify a 2FA OTP code

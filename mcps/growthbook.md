@@ -34,13 +34,7 @@ Connect your **GrowthBook** account to any AI agent to streamline your experimen
 
 
 ## Available Tools (15)
-- **create_environment**: Create a new GrowthBook environment
-- **create_feature**: Create a new GrowthBook feature flag (v2)
-- **create_project**: Create a new GrowthBook project
-- **delete_environment**: Delete a GrowthBook environment
-- **delete_feature**: Delete a GrowthBook feature flag (v2)
 - **delete_project**: Delete a GrowthBook project
-- **get_feature**: Get a single GrowthBook feature flag (v2)
 - **get_project**: Get a single GrowthBook project by ID
 - **list_environments**: g., production, staging) used for per-environment feature flag control.
 
@@ -51,6 +45,12 @@ List all GrowthBook environments
 - **update_environment**: Update an existing GrowthBook environment
 - **update_feature**: Partially update a GrowthBook feature flag (v2)
 - **update_project**: Edit an existing GrowthBook project
+- **create_environment**: Create a new GrowthBook environment
+- **create_feature**: Create a new GrowthBook feature flag (v2)
+- **create_project**: Create a new GrowthBook project
+- **delete_environment**: Delete a GrowthBook environment
+- **delete_feature**: Delete a GrowthBook feature flag (v2)
+- **get_feature**: Get a single GrowthBook feature flag (v2)
 
 
 ## 💬 Prompt Examples

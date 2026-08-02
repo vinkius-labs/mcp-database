@@ -34,11 +34,6 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 
 
 ## Available Tools (48)
-- **points_leaderboard**: Paginated Nansen points leaderboard
-- **portfolio_defi_holdings**: Track DeFi positions across protocols
-- **prediction_address_summary**: Win rate, PnL, and wallet age in prediction markets
-- **search_general**: Search for tokens and entities by name, symbol, or contract address
-- **tgm_pnl_leaderboard**: Rank traders by profit for a specific token
 - **agent_expert**: Deep multi-step analysis and synthesis
 - **agent_fast**: Low-latency streamed answers for simple research questions
 - **perp_leaderboard**: Most profitable Hyperliquid traders
@@ -57,9 +52,6 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 - **profiler_counterparties**: Top addresses/entities interacted with
 - **profiler_current_balance**: Current token balances for an address or entity
 - **profiler_historical_balances**: Historical holding snapshots for an address
-- **profiler_labels**: Non-premium labels (ENS, behavioral)
-- **profiler_perp_positions**: Real-time Hyperliquid positions
-- **profiler_perp_trades**: Hyperliquid trade history
 - **profiler_pnl_summary**: Aggregate PnL and top profitable tokens
 - **profiler_pnl**: Detailed PnL for a specific address and token
 - **profiler_premium_labels**: All labels including Smart Money
@@ -82,6 +74,14 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 - **tgm_transfers**: Top token transfers (ERC-20)
 - **tgm_who_bought_sold**: Summary of net buyers/sellers
 - **token_screener**: Discover trending tokens across chains
+- **points_leaderboard**: Paginated Nansen points leaderboard
+- **portfolio_defi_holdings**: Track DeFi positions across protocols
+- **prediction_address_summary**: Win rate, PnL, and wallet age in prediction markets
+- **search_general**: Search for tokens and entities by name, symbol, or contract address
+- **tgm_pnl_leaderboard**: Rank traders by profit for a specific token
+- **profiler_labels**: Non-premium labels (ENS, behavioral)
+- **profiler_perp_positions**: Real-time Hyperliquid positions
+- **profiler_perp_trades**: Hyperliquid trade history
 
 
 ## 💬 Prompt Examples
