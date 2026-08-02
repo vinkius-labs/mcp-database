@@ -37,13 +37,13 @@ Connect your **FlowiseAI** instance to any AI agent and take full control of you
 
 
 ## Available Tools (7)
+- **list_credentials**: List credentials
+- **get_history**: Get chat execution history
 - **list_chatflows**: List chatflows
 - **get_chatflow**: Get chatflow details
 - **predict**: Run prediction on chatflow
 - **list_agentflows**: List agentflows
 - **list_tools**: List available tools
-- **list_credentials**: List credentials
-- **get_history**: Get chat execution history
 
 
 ## 💬 Prompt Examples

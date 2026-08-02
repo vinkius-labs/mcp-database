@@ -45,15 +45,6 @@ No more navigating flight tracking websites or manually parsing aviation data fe
 - **get_aircraft_info**: g., "N12345" for US-registered, "G-EUUU" for UK). Returns aircraft type (manufacturer and model), registration country, owner/operator information, registration status, year built, engine type (jet, turboprop, piston), number of engines, and category (airline, business jet, private, cargo, military). Critical for aviation enthusiasts, fleet tracking, aircraft utilization analysis, and private aviation monitoring. AI agents should reference this when users ask "tell me about aircraft N12345", "who owns this tail number", or need aircraft specifications to contextualize flight data.
 
 Get registration details and specifications for a specific aircraft
-- **get_airport_arrivals**: Returns a list of inbound flights with airline/operator, flight number, aircraft type, origin airport, scheduled and estimated/actual arrival times, arrival runway and gate, and current flight status (en-route, landed, delayed, cancelled, diverted). Essential for airport operations management, passenger pickup coordination, ground handling planning, and arrival delay monitoring. AI agents should reference this when users ask "what flights are arriving at X", "show me arrivals at Y airport", or need to track inbound flights for a specific destination.
-
-List arriving flights at a specific airport
-- **get_airport_departures**: Returns a list of outbound flights with airline/operator, flight number, aircraft type, destination airport, scheduled and estimated/actual departure times, departure runway and gate, and current flight status (scheduled, boarding, departed, delayed, cancelled, diverted). Critical for airport operations coordination, passenger departure monitoring, gate management, and departure delay tracking. AI agents use this when users ask "what flights are leaving from X", "show me departures at Y airport", or need to track outbound flights from a specific origin.
-
-List departing flights from a specific airport
-- **search_flights**: The query can be a flight number (e.g., "UAL123"), aircraft tail number/registration (e.g., "N12345"), or origin-destination pair (e.g., "KJFK-KLAX"). Returns complete flight identification, airline/operator, aircraft type, departure and arrival airports, scheduled and actual times, current position (if airborne), altitude, ground speed, and flight status (en-route, landed, diverted, cancelled). Essential for real-time flight tracking, passenger pick-up coordination, logistics planning, and aviation operations monitoring. AI agents should use this when users ask "where is flight X", "what flights are flying from A to B", or "show me all flights by tail number N".
-
-Search for active and recent flights by flight number, tail number, or route
 - **get_airport_info**: g., "KJFK" for New York JFK, "KLAX" for Los Angeles International). Returns airport name, location (city, state, country), ICAO/IATA/FAA/LID codes, geographic coordinates (latitude, longitude, elevation), timezone, runway information, and canonical FlightAware ID. Essential for airport identification, travel planning, flight briefing preparation, and geographic reference. AI agents should use this when users ask "tell me about airport X", "what is the ICAO code for Y", or need airport metadata to contextualize flight queries.
 
 Get static information and details for a specific airport
@@ -78,6 +69,15 @@ Get historical flight data and track for a specific flight
 - **get_operator_flights**: g., "UAL" for United Airlines, "DAL" for Delta, "BAW" for British Airways). Returns flight numbers, aircraft types, origin-destination pairs, scheduled and actual times, and current status for all flights in the operator fleet. Essential for airline operations monitoring, fleet utilization analysis, competitor intelligence, and passenger rebooking during disruptions. AI agents use this when users ask "show me all United flights", "what is Delta flying right now", or need to track an entire airline operational picture.
 
 List all flights operated by a specific airline or operator
+- **search_flights**: The query can be a flight number (e.g., "UAL123"), aircraft tail number/registration (e.g., "N12345"), or origin-destination pair (e.g., "KJFK-KLAX"). Returns complete flight identification, airline/operator, aircraft type, departure and arrival airports, scheduled and actual times, current position (if airborne), altitude, ground speed, and flight status (en-route, landed, diverted, cancelled). Essential for real-time flight tracking, passenger pick-up coordination, logistics planning, and aviation operations monitoring. AI agents should use this when users ask "where is flight X", "what flights are flying from A to B", or "show me all flights by tail number N".
+
+Search for active and recent flights by flight number, tail number, or route
+- **get_airport_arrivals**: Returns a list of inbound flights with airline/operator, flight number, aircraft type, origin airport, scheduled and estimated/actual arrival times, arrival runway and gate, and current flight status (en-route, landed, delayed, cancelled, diverted). Essential for airport operations management, passenger pickup coordination, ground handling planning, and arrival delay monitoring. AI agents should reference this when users ask "what flights are arriving at X", "show me arrivals at Y airport", or need to track inbound flights for a specific destination.
+
+List arriving flights at a specific airport
+- **get_airport_departures**: Returns a list of outbound flights with airline/operator, flight number, aircraft type, destination airport, scheduled and estimated/actual departure times, departure runway and gate, and current flight status (scheduled, boarding, departed, delayed, cancelled, diverted). Critical for airport operations coordination, passenger departure monitoring, gate management, and departure delay tracking. AI agents use this when users ask "what flights are leaving from X", "show me departures at Y airport", or need to track outbound flights from a specific origin.
+
+List departing flights from a specific airport
 
 
 ## 💬 Prompt Examples

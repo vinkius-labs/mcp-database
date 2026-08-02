@@ -36,11 +36,6 @@ Connect your **LocalAI** instance to any AI agent and leverage powerful multimod
 
 ## Available Tools (19)
 - **open_responses**: Generate open responses
-- **get_auth_status**: Check authentication state and providers
-- **get_auth_usage**: View personal token usage
-- **get_system_info**: View system and backend info
-- **get_version**: Get LocalAI version
-- **list_models**: List available models
 - **anthropic_messages**: Generate messages (Anthropic compatible)
 - **apply_model**: Install a model from the gallery
 - **chat_completions**: Generate chat completions (OpenAI compatible)
@@ -53,11 +48,16 @@ Connect your **LocalAI** instance to any AI agent and leverage powerful multimod
 - **generate_image**: Supports negative prompts using | separator.
 
 Generate images from text prompts
+- **get_auth_status**: Check authentication state and providers
 - **rerank_documents**: Rerank documents based on a query
 - **text_to_speech**: Convert text to audio (TTS)
 - **transcribe_audio**: Pass the file data or path as required by your LocalAI setup.
 
 Transcribe audio to text
+- **get_auth_usage**: View personal token usage
+- **get_system_info**: View system and backend info
+- **get_version**: Get LocalAI version
+- **list_models**: List available models
 
 
 ## 💬 Prompt Examples

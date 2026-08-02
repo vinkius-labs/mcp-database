@@ -5,7 +5,7 @@
 
 ## Overview
 
-**Category:** [ai-frontier](../categories/ai-frontier.md)
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
 
 Manage AI inference via Clarifai — list apps, models, and workflows, and perform computer vision predictions directly from any AI agent.
 
@@ -35,14 +35,14 @@ Connect your **Clarifai** account to any AI agent and take full control of your 
 
 
 ## Available Tools (6)
-- **list_apps**: Identify bounded Clarifai apps managing global compute limits
+- **list_workflows**: Retrieve the exact structural matching verifying chained AI limits
+- **list_apps**: Identify bounded Clarifai apps managing globalThis compute limits
 - **list_models**: Perform structural extraction of computer vision parameters driving AI features
+- **list_concepts**: Extracts explicitly attached semantic bounds tagging datasets matching limits
 - **predict_model**: /models/{model_id}/outputs` parsing exactly what the AI limit evaluated bounding image classifications.
 
 Dispatch an automated validation inference routing explicit network predictions
-- **list_workflows**: Retrieve the exact structural matching verifying chained AI limits
 - **list_datasets**: Identify precise physical bounds mapping data structures resolving visual nodes
-- **list_concepts**: Extracts explicitly attached semantic bounds tagging datasets matching limits
 
 
 ## 💬 Prompt Examples

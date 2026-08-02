@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire web3 research and blockchain au
 
 
 ## Available Tools (6)
-- **check_api_status**: Check if the Alchemy service is operational
 - **get_wallet_balance**: Get the balance of an Ethereum address in wei
 - **get_latest_block_number**: Get the number of the most recent block
 - **get_owned_nfts**: Get all NFTs owned by a specific address
+- **check_api_status**: Check if the Alchemy service is operational
 - **get_token_balances**: Get all ERC-20 token balances for a specific address
 - **get_transaction_receipt**: Get the receipt of a transaction by hash
 

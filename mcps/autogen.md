@@ -36,16 +36,16 @@ Your primary agent can now command and debug secondary swarms of specialized age
 
 
 ## Available Tools (10)
-- **create_agent**: Define a new customized AutoGen agent
 - **create_message**: Send a user message to initiate or continue an AutoGen session
-- **list_skills**: List Python skill functions available to AutoGen agents
-- **create_session**: Create a new blank AutoGen session
+- **create_agent**: Define a new customized AutoGen agent
 - **delete_session**: Permanently delete an AutoGen session
 - **list_agents**: List all configured AutoGen agents available
 - **list_messages**: Retrieve the message history for a specific AutoGen session
 - **list_models**: List Large Language Models configured for use in AutoGen
 - **list_sessions**: List AutoGen Studio conversation sessions
+- **list_skills**: List Python skill functions available to AutoGen agents
 - **list_workflows**: List all predefined AutoGen multi-agent workflows
+- **create_session**: Create a new blank AutoGen session
 
 
 ## 💬 Prompt Examples

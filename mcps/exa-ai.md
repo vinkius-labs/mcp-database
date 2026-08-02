@@ -7,42 +7,48 @@
 
 **Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
 
-Search and discover the web — audit semantic results and similar links via AI.
+Search the web with neural embeddings that understand meaning, not just keywords, and return the most relevant results for any query.
 
 ## Description
-Empower your AI agent to orchestrate your entire web discovery and semantic search workflow with **Exa AI**, the search engine built for the future of AI. By connecting Exa to your agent, you transform complex information gathering into a natural conversation. Your agent can instantly search the web using semantic embeddings, audit similar websites through URL matching, and retrieve cleaned page content without you ever touching a browser. Whether you are conducting deep market research or monitoring niche industry trends, your agent acts as a real-time web analyst, ensuring your intelligence is always grounded in contextually relevant data.
+Connect your **Exa AI** (formerly Metaphor) account to any AI agent and take full control of your web research and data extraction workflows through natural conversation.
 
 ### What you can do
 
-- **Semantic Auditing** — Query the web using natural language and retrieve results based on meaning rather than just keywords.
-- **Similar Discovery** — Find websites similar to any provided URL to identify competitors or related sources instantly.
-- **Content Oversight** — Retrieve cleaned HTML or text content for any search result to maintain a structured view of web data.
-- **Usage Intelligence** — Monitor your API usage and crawl statistics to maintain strict control over your research budget.
-- **Unified Search** — Perform search and content retrieval in a single request to optimize agent response times.
+- **Semantic Search Orchestration** — Perform AI-native searches that understand intent and meaning to retrieve the most relevant web pages programmatically
+- **Content Intelligence** — Programmatically extract clean, parsed text or highlights from any URL, excluding ads and boilerplate automatically
+- **Similarity Discovery** — Find pages semantically similar to a source URL to build comprehensive and high-fidelity research datasets
+- **Deep Data Mapping** — Discover all reachable links on a domain and retrieve discovery metadata to understand site structures programmatically
+- **Search Filtering** — Restricted searches by domain, category (company, blog, news), or discovery date directly through your agent
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Exa API Key
-3. Start managing your web discovery through Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API Key** from the Exa AI dashboard (Settings > API Keys)
+3. Start searching the web semantically from Claude, Cursor, or any MCP client
+
+No more manual keyword-based searching or messy scraping scripts. Your AI acts as your dedicated neural research assistant.
 
 ### Who is this for?
 
-- **Research Analysts** — monitor semantic search results and competitor links straight from your workflow.
-- **AI Developers** — verify content extraction and audit search relevancy for your agentic applications.
-- **Knowledge Workers** — perform rapid audits of related sources and retrieve site summaries through natural language.
-- **Operations Leads** — automate web discovery querying to orchestrate cross-functional research teams smoothly.
+- **AI Developers** — build RAG pipelines by programmatically ingesting semantically relevant web data using natural language
+- **Market Researchers** — instantly identify competitors and find similar companies across the web using semantic discovery
+- **Content Analysts** — automate the extraction of highlights and clean text from technical blogs and news without leaving your workspace
 
 
-## Available Tools (4)
-- **find_similar**: Note: this endpoint is deprecated by Exa and may be removed in the future.
+## Available Tools (11)
+- **advanced_custom_search**: Complex search query
+- **find_similar_pages**: Note: this endpoint is deprecated by Exa AI.
 
-Find websites similar to a given URL (deprecated — use search instead)
-- **get_contents**: Retrieve cleaned text content for specific page IDs
-- **search_with_contents**: Search the web and retrieve page contents in one request
-- **search_web**: Returns URLs, titles, and metadata.
-
-Search the web semantically using Exa AI
+Find matching pages for a URL (deprecated — use search instead)
+- **extract_page_content**: Retrieve web page text
+- **get_query_highlights**: Extract relevant snippets
+- **keyword_search**: Search by exact keywords
+- **perform_live_crawl**: Fresh web extraction
+- **search_with_contents**: Search and extract text
+- **search_by_category**: Search by site type
+- **search_by_crawl_date**: Search by discovery date
+- **search_specific_domains**: Search within sites
+- **semantic_search**: Perform AI-native search
 
 
 ## 💬 Prompt Examples
@@ -50,38 +56,38 @@ Search the web semantically using Exa AI
 Here are some examples of how you can interact with the **Exa AI** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Find 5 high-quality research papers about 'Climate Change mitigation' using Exa."
+> "Search for the latest research on room-temperature superconductors using Exa."
 
 **🤖 AI Agent:**
-> I've retrieved 5 highly relevant research papers. Notable results include studies on carbon capture and renewable energy adoption. Would you like the links and summaries for each?
+> Running semantic search... I've found 5 high-quality research papers and articles from the last 3 months. Notable results include a study from Nature and a detailed technical blog from MIT. Would you like the highlights for any of these?
 
 ---
 
 **👤 You:**
-> "Find sites similar to https://techcrunch.com."
+> "Find pages similar to 'https://openai.com/blog/sora/' from news domains."
 
 **🤖 AI Agent:**
-> I've found 10 sites similar to TechCrunch. Top matches include VentureBeat, The Verge, and Wired. I can provide the relevancy scores for each if you'd like.
+> Discovery complete! I've located 3 semantically similar articles on news platforms like TechCrunch and The Verge. They discuss generative video trends and competitor reactions. Shall I extract the clean text from these links?
 
 ---
 
 **👤 You:**
-> "Search for 'future of AI robotics' and give me the full content of the best result."
+> "Get the clean text content from 'https://en.wikipedia.org/wiki/Artificial_intelligence'."
 
 **🤖 AI Agent:**
-> Search complete! The top result is a detailed analysis from MIT. I've retrieved the cleaned content, which discusses embodied AI and humanoid developments. Would you like a summary?
+> Extraction complete! I've retrieved the clean Markdown content for the AI Wikipedia page. It includes the history, definitions, and main research areas, excluding all sidebars and ads. Would you like a summary?
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Exa API Key?**
-Log in to your [**Exa.ai dashboard**](https://dashboard.exa.ai/), and you will find your API Key on the API Keys page. Copy and paste it below.
+**Q: How do I find my Exa AI API Key?**
+Log in to your [**Exa AI dashboard**](https://dashboard.exa.ai/), and copy your unique API Key from the settings section.
 
-**Q: What makes Exa search 'semantic'?**
-Exa uses neural embeddings to understand the meaning behind your query, allowing it to find results that are contextually related even if they don't share exact keywords.
+**Q: What makes semantic search different?**
+Traditional search uses keywords. Semantic search uses neural embeddings to understand the meaning and context of your query, finding better matches.
 
-**Q: Can the agent find sites similar to a blog post?**
-Yes. Use the `find_similar` tool providing the URL of the blog post. Your agent will return a list of sources with similar topics or writing styles instantly.
+**Q: Can I extract text from multiple URLs at once?**
+Yes! The `extract_page_content` tool accepts a JSON array of URLs and retrieves the parsed content for all of them programmatically.
 
 
 ## Installation & Usage

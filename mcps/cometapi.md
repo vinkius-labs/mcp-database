@@ -35,21 +35,14 @@ No more manual toggling between dozens of provider dashboards or managing multip
 - **Product Leads** — monitor AI model performance and costs across the entire organization through simple AI queries
 
 
-## Available Tools (10)
-- **create_ai_chat_completion**: Supports GPT-4, Claude, Gemini, etc.
+## Available Tools (5)
+- **create_ai_chat_completion**: ) and retrieves the generated text through the CometAPI unified gateway.
 
-Generate AI text response
-- **check_api_health**: Verify API status
+Generate AI text response via OpenAI-compatible API
 - **convert_text_to_speech**: Convert text to audio
-- **transcribe_audio_to_text**: Transcribe audio files
-- **generate_ai_image**: Generate an image from a prompt
-- **get_current_user**: Get authenticated user profile
-- **get_pricing_information**: Retrieve model pricing info
-- **get_api_usage_statistics**: Get account usage and costs
-- **list_available_ai_models**: List all supported AI models
-- **list_supported_ai_providers**: ) supported by the aggregator.
-
-List integrated AI providers
+- **transcribe_audio_to_text**: Transcribe audio files to text
+- **generate_ai_image**: Generate an image from a text prompt
+- **list_available_ai_models**: List all available AI models
 
 
 ## 💬 Prompt Examples

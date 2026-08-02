@@ -36,27 +36,19 @@ Connect your **ElevenLabs** account to any AI agent to generate high-quality aud
 
 ## Available Tools (34)
 - **add_dictionary_from_file**: Add pronunciation dictionary from a PLS file
-- **create_designed_voice**: Save a designed voice
-- **get_character_stats**: Get character usage statistics
-- **create_agent**: Create a Conversational AI agent
-- **create_dub**: Create a dubbing project
-- **create_project**: Create a Studio project
-- **create_single_use_token**: Create a single-use token
 - **add_dictionary_from_rules**: Add pronunciation dictionary from rules
 - **isolate_audio**: Remove background noise from audio
 - **convert_speech**: Voice Changer (Speech to Speech)
-- **list_projects**: List Studio projects
-- **list_voices**: List available voices
-- **stream_isolate_audio**: Stream audio isolation
-- **stream_convert_speech**: Stream Voice Changer (Speech to Speech)
-- **stream_speech**: Stream text to speech
-- **create_speech**: Convert text to speech
+- **create_dub**: Create a dubbing project
+- **create_project**: Create a Studio project
+- **create_single_use_token**: Create a single-use token
 - **delete_history_item**: Delete a history item
 - **delete_voice**: Delete a custom voice
 - **design_voice**: Design a new voice from a prompt
 - **edit_voice**: Edit a custom voice
 - **find_similar_voices**: Find similar voices in the library
 - **generate_sound**: Generate sound effects from text
+- **get_character_stats**: Get character usage statistics
 - **get_dub_status**: Get status of a dubbing project
 - **get_history_audio**: Download audio for a history item
 - **get_history_item**: Get details of a history item
@@ -71,6 +63,14 @@ Connect your **ElevenLabs** account to any AI agent to generate high-quality aud
 - **list_models**: ).
 
 List available models
+- **list_voices**: List available voices
+- **stream_isolate_audio**: Stream audio isolation
+- **stream_convert_speech**: Stream Voice Changer (Speech to Speech)
+- **stream_speech**: Stream text to speech
+- **create_designed_voice**: Save a designed voice
+- **create_agent**: Create a Conversational AI agent
+- **list_projects**: List Studio projects
+- **create_speech**: Convert text to speech
 
 
 ## 💬 Prompt Examples

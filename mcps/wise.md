@@ -35,14 +35,14 @@ Connect your **Wise** Business account to your AI agent and manage international
 ## Available Tools (10)
 - **list_profiles**: List Wise business profiles
 - **get_currencies**: List supported currencies
+- **create_quote**: Create a transfer quote
+- **get_exchange_rate**: Get live exchange rate
+- **list_statements**: List account statements
 - **list_balances**: List multi-currency balances
 - **get_balance**: Get specific balance details
 - **list_recipients**: List payment recipients
-- **create_quote**: Create a transfer quote
 - **list_transfers**: List all transfers
 - **get_transfer**: Get transfer details
-- **get_exchange_rate**: Get live exchange rate
-- **list_statements**: List account statements
 
 
 ## 💬 Prompt Examples

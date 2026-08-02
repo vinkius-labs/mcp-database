@@ -36,9 +36,9 @@ Connect your **CrewAI Platform** (AMP) account to any AI agent and take full con
 
 
 ## Available Tools (3)
-- **get_inputs**: Identify bounded inputs required to kickoff a crew
 - **get_status**: Retrieve explicit execution state tracing limits
 - **kickoff_crew**: Provision a highly-available JSON Payload generating hard execution bindings
+- **get_inputs**: Identify bounded inputs required to kickoff a crew
 
 
 ## 💬 Prompt Examples
