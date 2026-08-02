@@ -36,7 +36,6 @@ No more manual status checking or duplicate lead entry. Your AI acts as a dedica
 
 
 ## Available Tools (12)
-- **create_new_lead**: Add a person
 - **get_account_info**: Get company details
 - **get_cadence_details**: Get workflow info
 - **get_api_status**: Check connection
@@ -46,6 +45,7 @@ No more manual status checking or duplicate lead entry. Your AI acts as a dedica
 - **list_recent_activity**: Get engagement history
 - **list_outreach_cadences**: List workflows
 - **list_sales_people**: List lead profiles
+- **create_new_lead**: Add a person
 - **list_user_tasks**: Get scheduled tasks
 - **test_salesloft_auth**: Verify credentials
 

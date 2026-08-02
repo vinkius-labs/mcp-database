@@ -34,6 +34,15 @@ Connect to **Skyscanner** and explore flight prices worldwide through natural co
 
 
 ## Available Tools (6)
+- **search_flights_indicative**: Useful for exploring flight options and comparing prices. Use originPlaceId and destinationPlaceId as IATA codes (e.g. "NYCA" for New York, "LOND" for London) or place IDs. Returns cheapest quotes with carrier info.
+
+Search for flight quotes (indicative prices)
+- **search_direct_flights**: Useful for travelers who prefer no layovers.
+
+Search for direct flights only
+- **autosuggest_places**: Useful for finding the correct place IDs to use in flight searches. Returns place names, IATA codes and types.
+
+Search for places (airports, cities) by name
 - **browse_dates**: Useful for finding the cheapest days to fly. Returns prices for multiple dates at once.
 
 Browse flight prices by date
@@ -43,15 +52,6 @@ Browse flight prices in a date grid
 - **get_geo_places**: Useful for discovering available place IDs.
 
 Get a list of all supported places
-- **search_direct_flights**: Useful for travelers who prefer no layovers.
-
-Search for direct flights only
-- **search_flights_indicative**: Useful for exploring flight options and comparing prices. Use originPlaceId and destinationPlaceId as IATA codes (e.g. "NYCA" for New York, "LOND" for London) or place IDs. Returns cheapest quotes with carrier info.
-
-Search for flight quotes (indicative prices)
-- **autosuggest_places**: Useful for finding the correct place IDs to use in flight searches. Returns place names, IATA codes and types.
-
-Search for places (airports, cities) by name
 
 
 ## 💬 Prompt Examples

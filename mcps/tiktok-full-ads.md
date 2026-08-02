@@ -35,6 +35,8 @@ Empower your AI agent to orchestrate your entire advertising ecosystem on TikTok
 
 
 ## Available Tools (17)
+- **list_ad_videos**: List uploaded video assets for an advertiser
+- **get_advertiser_balance**: Get the current balance and spending of an advertiser
 - **get_performance_report**: ) and dimensions (campaign_id, adgroup_id, ad_id, stat_time_day) for granular analysis.
 
 Get advanced performance reports with custom metrics
@@ -44,12 +46,10 @@ Get advanced performance reports with custom metrics
 
 List all campaigns for an advertiser
 - **list_ad_images**: List uploaded image assets for an advertiser
-- **list_ad_videos**: List uploaded video assets for an advertiser
 - **track_pixel_event**: g., CompletePayment, AddToCart, ViewContent, SubmitForm) via server-to-server tracking.
 
 Send a server-side pixel event to TikTok
 - **update_ad_group_status**: Enable, disable, or delete ad groups
-- **get_advertiser_balance**: Get the current balance and spending of an advertiser
 - **create_campaign**: Objective types: TRAFFIC, CONVERSIONS, APP_INSTALL, REACH, VIDEO_VIEWS, LEAD_GENERATION, CATALOG_SALES.
 
 Create a new TikTok Ads campaign

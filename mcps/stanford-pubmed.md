@@ -38,6 +38,9 @@ Connect to the **PubMed E-utilities API** from the National Library of Medicine 
 - **batch_get_articles**: Useful for building reading lists, comparing studies, or analyzing a collection of articles from a reference list.
 
 Retrieve multiple articles by PMID list
+- **search_drugs**: Uses the Substance Name field for precise matching. Examples: "metformin", "pembrolizumab", "remdesivir", "aspirin", "dexamethasone".
+
+Search articles mentioning specific drugs or compounds
 - **get_abstract**: For structured abstracts, returns all sections (Background, Methods, Results, Conclusions). Essential for quickly evaluating whether a paper is relevant without accessing the full text.
 
 Get the full abstract text of a PubMed article
@@ -62,9 +65,6 @@ Search using MeSH controlled vocabulary terms
 - **search_clinical**: This includes Phase I-IV trials, randomized controlled trials, and clinical study reports. Essential for evidence-based medicine and systematic reviews.
 
 Search for clinical trial publications
-- **search_drugs**: Uses the Substance Name field for precise matching. Examples: "metformin", "pembrolizumab", "remdesivir", "aspirin", "dexamethasone".
-
-Search articles mentioning specific drugs or compounds
 - **search_free_full_text**: This filters to only return open access or author-deposited articles where the complete manuscript can be read for free. Essential for researchers without institutional journal subscriptions.
 
 Search for articles with free full-text available

@@ -37,16 +37,16 @@ Connect your **Greptile** account to any AI agent and unlock AI-powered codebase
 
 ## Available Tools (11)
 - **delete_repository**: Delete indexed repository
+- **query_with_context**: Query with session context
+- **reindex_repository**: Reindex a repository
+- **search_by_filepath**: Search in specific file
+- **search_codebase**: Search codebase
 - **get_file_info**: Get file info
 - **get_repository_status**: Get repository status
 - **get_greptile_usage**: Check API usage
 - **index_repository**: Index a repository
 - **list_repositories**: List indexed repositories
 - **query_codebase**: Query codebase with AI
-- **query_with_context**: Query with session context
-- **reindex_repository**: Reindex a repository
-- **search_by_filepath**: Search in specific file
-- **search_codebase**: Search codebase
 
 
 ## 💬 Prompt Examples

@@ -35,8 +35,8 @@ Empower your AI agent to orchestrate your enterprise operations with **WeCom** (
 
 
 ## Available Tools (10)
-- **get_app_details**: Get application agent details
 - **get_attendance_data**: Get employee attendance/checkin data
+- **get_app_details**: Get application agent details
 - **get_department**: Get department info
 - **get_tag_users**: Get users with a specific tag
 - **get_user**: Get user details

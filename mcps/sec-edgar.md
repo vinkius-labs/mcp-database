@@ -34,13 +34,13 @@ Empower your AI agent with the primary source for US corporate intelligence thro
 
 
 ## Available Tools (3)
+- **get_submissions**: ) for a company using its Central Index Key (CIK).
+
+Get recent submissions for a company
 - **get_company_concept**: g., Assets, Liabilities).
 
 Get a specific financial concept for a company
 - **get_company_facts**: Get financial facts for a company
-- **get_submissions**: ) for a company using its Central Index Key (CIK).
-
-Get recent submissions for a company
 
 
 ## 💬 Prompt Examples

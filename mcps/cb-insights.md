@@ -35,9 +35,6 @@ Connect your **CB Insights** enterprise account to any AI agent and take full co
 
 
 ## Available Tools (13)
-- **chat_cbi**: CB Insights AI chat
-- **check_cbi_status**: Verify connectivity
-- **get_deal**: Get deal details
 - **get_investor**: Get investor details
 - **get_org_competitors**: Get competitors
 - **get_org_funding**: Get organization funding
@@ -48,6 +45,9 @@ Connect your **CB Insights** enterprise account to any AI agent and take full co
 - **list_industries**: List industries
 - **list_investors**: List investors
 - **list_organizations**: Search organizations
+- **chat_cbi**: CB Insights AI chat
+- **get_deal**: Get deal details
+- **check_cbi_status**: Verify connectivity
 
 
 ## 💬 Prompt Examples

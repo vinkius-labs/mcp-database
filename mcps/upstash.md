@@ -88,9 +88,6 @@ Publish a message to a Redis channel
 - **rpush**: If the key does not exist, a new list is created. Returns the length of the list after the push.
 
 Push values to the right of a Redis list
-- **sadd**: Duplicate members are ignored. If the key does not exist, a new set is created. Returns the number of members that were added.
-
-Add members to a Redis set
 - **set**: Optionally set an expiry time in seconds using the ex parameter. Overwrites any existing value at the key. Returns "OK" on success. This is the primary write operation for string data.
 
 Set a value in Upstash Redis
@@ -107,6 +104,9 @@ Remove members from a Redis set
 
 Get the TTL of a key in Upstash Redis
 - **key_type**: Get the data type of a key in Upstash Redis
+- **sadd**: Duplicate members are ignored. If the key does not exist, a new set is created. Returns the number of members that were added.
+
+Add members to a Redis set
 
 
 ## 💬 Prompt Examples

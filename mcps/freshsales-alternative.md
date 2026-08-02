@@ -37,18 +37,18 @@ No more manual deal logging or digging through CRM menus. Your AI acts as your d
 
 
 ## Available Tools (10)
-- **create_lead**: Requires last_name and optionally email.
-
-Create a new lead
-- **get_contact**: Get details for a specific contact
-- **get_lead**: Get details for a specific lead
-- **list_sales_accounts**: List all sales accounts (companies)
-- **list_appointments**: List scheduled appointments
-- **list_contacts**: List all Freshsales contacts
 - **list_deals**: List all sales deals
 - **list_leads**: List all Freshsales leads
 - **list_notes**: List CRM notes
 - **list_tasks**: List CRM tasks
+- **create_lead**: Requires last_name and optionally email.
+
+Create a new lead
+- **get_contact**: Get details for a specific contact
+- **list_sales_accounts**: List all sales accounts (companies)
+- **list_appointments**: List scheduled appointments
+- **list_contacts**: List all Freshsales contacts
+- **get_lead**: Get details for a specific lead
 
 
 ## 💬 Prompt Examples
