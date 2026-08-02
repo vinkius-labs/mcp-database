@@ -35,19 +35,33 @@ No more manual metric logging or digging through complex SQL transformations in 
 - **Operations Leads** — track API activity logs and manage data source connections through simple AI queries
 
 
-## Available Tools (12)
-- **create_data_source**: Create a new data source
-- **create_dataset**: Create a new dataset
-- **delete_dataset**: Delete a dataset
-- **get_dataset_details**: Get details for a specific dataset
-- **get_current_user**: Get authenticated user profile
-- **get_storage_statistics**: Get data storage stats
-- **list_accounts**: List all Databox accounts
-- **list_data_sources**: List data sources for an account
-- **list_datasets**: List all datasets
-- **list_activity_logs**: List API activity logs
-- **list_dataset_metrics**: List metrics in a dataset
-- **push_metrics_data**: Ingest data into a dataset
+## Available Tools (10)
+- **list_datasets**: Datasets are containers for your raw metrics — create one before pushing data.
+
+List all datasets (data tables) in your Databox account
+- **create_data_source**: Use service "custom" for push-based data sources.
+
+Create a new data source connection in a Databox account
+- **create_dataset**: Requires a title, data source ID to link to, and primary key columns. Use this before pushing data.
+
+Create a new dataset (data table) for storing metrics in Databox
+- **delete_dataset**: This cannot be undone. Use with extreme caution.
+
+Permanently delete a Databox dataset and all its ingested data
+- **get_dataset_details**: Get metadata and schema details for a specific Databox dataset
+- **list_accounts**: Use the returned accountId for data source operations.
+
+List all Databox accounts accessible with your API key
+- **list_data_sources**: Each data source represents an integration like Google Analytics, HubSpot, or a custom push source.
+
+List data sources (integrations) for a specific Databox account
+- **list_dataset_metrics**: List metrics discovered in a Databox dataset after data ingestion
+- **push_metrics_data**: Each record should be a JSON object matching the dataset schema. Data becomes available in dashboards after ingestion.
+
+Ingest data records into a Databox dataset for visualization
+- **validate_authentication**: Use this to verify credentials before performing other operations.
+
+Validate your Databox API key and check authentication status
 
 
 ## 💬 Prompt Examples

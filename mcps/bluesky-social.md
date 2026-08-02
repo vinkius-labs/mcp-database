@@ -37,6 +37,7 @@ No more manual toggling between social apps or missing important mentions in the
 
 ## Available Tools (12)
 - **follow_user**: Follow an account
+- **unmute_user**: Unmute an account
 - **list_muted_users**: List muted users
 - **list_notifications**: Get notifications
 - **list_timeline**: Get your home feed
@@ -47,7 +48,6 @@ No more manual toggling between social apps or missing important mentions in the
 - **get_user_posts**: List user posts
 - **mute_user**: Mute an account
 - **search_profiles**: Search for users
-- **unmute_user**: Unmute an account
 
 
 ## 💬 Prompt Examples

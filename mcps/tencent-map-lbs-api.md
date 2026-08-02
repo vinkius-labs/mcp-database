@@ -35,7 +35,6 @@ Empower your AI agent to orchestrate your geographic operations and location-bas
 
 
 ## Available Tools (10)
-- **direction_bicycling**: Get bicycling directions
 - **direction_driving**: Get driving directions
 - **direction_transit**: Get transit directions
 - **direction_walking**: Get walking directions
@@ -45,6 +44,7 @@ Empower your AI agent to orchestrate your geographic operations and location-bas
 - **poi_search**: Search for Points of Interest
 - **poi_suggestion**: Get place suggestions
 - **reverse_geocoding**: Convert coordinates to address
+- **direction_bicycling**: Get bicycling directions
 
 
 ## 💬 Prompt Examples

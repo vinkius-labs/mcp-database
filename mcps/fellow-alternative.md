@@ -34,6 +34,9 @@ Connect your **Fellow** workspace to any AI agent and manage your entire meeting
 
 
 ## Available Tools (12)
+- **list_action_items**: Optionally filter by status: "pending", "completed", or "archived".
+
+List action items from meetings
 - **check_fellow_status**: Verify Fellow API connectivity
 - **complete_action_item**: Mark an action item as completed
 - **create_action_item**: Optionally link it to a meeting, assign to a user by email, and set a due date.
@@ -43,9 +46,6 @@ Create a new action item from a meeting
 - **get_meeting**: Get full details of a specific meeting
 - **get_note**: Get full content of a specific note
 - **get_stream**: Get details of a specific meeting stream
-- **list_action_items**: Optionally filter by status: "pending", "completed", or "archived".
-
-List action items from meetings
 - **list_meetings**: List recent meetings from Fellow
 - **list_notes**: Optionally filter by a specific meeting ID to get notes for that meeting only.
 

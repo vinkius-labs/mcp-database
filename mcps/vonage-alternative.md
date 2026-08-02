@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your entire cloud communication infrastruct
 
 
 ## Available Tools (10)
+- **list_conversations**: List recent conversations
 - **get_balance**: Get Vonage account balance
 - **get_pricing**: Get pricing for a country
 - **list_account_secrets**: List account secrets
 - **list_applications**: List Vonage applications
-- **list_conversations**: List recent conversations
+- **list_voice_calls**: List recent voice calls
+- **send_sms**: Send an SMS message
 - **list_phone_numbers**: List Vonage phone numbers
 - **list_search_numbers**: Search for available phone numbers
 - **list_users**: List Vonage users
-- **list_voice_calls**: List recent voice calls
-- **send_sms**: Send an SMS message
 
 
 ## 💬 Prompt Examples

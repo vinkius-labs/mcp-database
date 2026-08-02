@@ -36,18 +36,18 @@ No more manual status checking or digging through complex JSON API tables. Your 
 
 
 ## Available Tools (12)
-- **create_order**: Create a new draft order
-- **get_order**: Get order details
 - **list_addresses**: List organization addresses
 - **list_customers**: List registered customers
 - **list_markets**: List available markets
+- **list_shipments**: List order shipments
+- **list_skus**: List all products (SKUs)
+- **list_webhooks**: List active webhooks
+- **create_order**: Create a new draft order
+- **get_order**: Get order details
 - **list_orders**: List all sales orders
 - **list_payment_methods**: List payment methods
 - **list_prices**: List SKU prices
 - **list_promotions**: List active promotions
-- **list_shipments**: List order shipments
-- **list_skus**: List all products (SKUs)
-- **list_webhooks**: List active webhooks
 
 
 ## 💬 Prompt Examples

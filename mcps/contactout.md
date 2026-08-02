@@ -36,10 +36,10 @@ No more manual profile scraping or guessing email formats. Your AI acts as your 
 
 
 ## Available Tools (7)
+- **find_linkedin_by_email**: Find LinkedIn profile by email
 - **enrich_company**: Enrich company data
 - **enrich_contact**: Enrich contact data
 - **find_email_by_linkedin**: Find email by LinkedIn profile
-- **find_linkedin_by_email**: Find LinkedIn profile by email
 - **search_people**: Search for people
 - **get_api_usage**: Get API usage statistics
 - **search_companies**: Search for companies
