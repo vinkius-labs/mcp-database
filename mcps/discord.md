@@ -37,12 +37,24 @@ Connect your **Discord** bot to any AI agent and take full control of your commu
 
 
 ## Available Tools (15)
-- **add_reaction**: Use URL-encoded custom emojis (name:id) or standard Unicode emojis (e.g., 👍).
+- **delete_message**: Drops the raw chat out of the Channel history permanently replacing it with visual space on all clients natively.
 
-Add an emoji reaction to a Discord message
+Purge an existing Chat Payload out of the visible memory
+- **list_guild_channels**: Returns crucial Snowflake Channel IDs prerequisite to performing all downstream messaging actions.
+
+Identify explicitly assigned routing text/voice Channels within a Server
+- **list_guild_roles**: Use role IDs with member management.
+
+List all roles configured in a Discord server
 - **create_guild_channel**: Default `type=0` maps to standard Text Channels.
 
 Provision a radically fast new structural Channel sandbox
+- **get_guild**: Fetches explicit Snowflake IDs configuring precisely the total member approximations natively bypassing localized channel scopes.
+
+Perform structural extraction of metadata linked to a Discord Server
+- **list_guild_members**: Restricted heavily by `GUILD_MEMBERS` Privileged Intent inside the developer portal securely.
+
+Enumerate explicitly attached user accounts active within the Server
 - **create_message**: Capable of mapping Markdown `<@user_id>` tags natively forcing push notifications instantly.
 
 Dispatch an automated text Payload resolving towards a Channel
@@ -52,32 +64,20 @@ Create a new thread in a Discord channel
 - **delete_channel**: Vaporizes all nested historical chat payloads, pinned messages, and file attachments natively dropping active connections entirely returning 404s.
 
 Irreversibly delete an entirely active Discord Channel mapping
-- **delete_message**: Drops the raw chat out of the Channel history permanently replacing it with visual space on all clients natively.
-
-Purge an existing Chat Payload out of the visible memory
 - **edit_message**: Ideal for updating dynamic progress bars inside a live Chat context.
 
 Mutate pre-existing textual strings tied to a Bot Message
-- **get_channel**: Inspect deep properties identifying a precise Discord Channel
 - **get_guild_member**: Get details for a specific server member
-- **get_guild**: Fetches explicit Snowflake IDs configuring precisely the total member approximations natively bypassing localized channel scopes.
-
-Perform structural extraction of metadata linked to a Discord Server
 - **list_channel_messages**: Extracts string contents, nested attachments mapping binary sizes, and embed payloads.
 
 Read recent structural Chat payloads targeting a Channel
-- **list_guild_channels**: Returns crucial Snowflake Channel IDs prerequisite to performing all downstream messaging actions.
-
-Identify explicitly assigned routing text/voice Channels within a Server
-- **list_guild_members**: Restricted heavily by `GUILD_MEMBERS` Privileged Intent inside the developer portal securely.
-
-Enumerate explicitly attached user accounts active within the Server
-- **list_guild_roles**: Use role IDs with member management.
-
-List all roles configured in a Discord server
 - **pin_message**: Channels have a maximum of 50 pins.
 
 Pin a message in a Discord channel
+- **add_reaction**: Use URL-encoded custom emojis (name:id) or standard Unicode emojis (e.g., 👍).
+
+Add an emoji reaction to a Discord message
+- **get_channel**: Inspect deep properties identifying a precise Discord Channel
 
 
 ## 💬 Prompt Examples

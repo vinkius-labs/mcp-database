@@ -7,47 +7,50 @@
 
 **Category:** [industry-titans](../categories/industry-titans.md)
 
-Manage customer support via Freshdesk — track tickets, handle contacts, and oversee agent groups via AI agents.
+Resolve customer tickets faster with omnichannel helpdesk tools, smart automation, and self-service portals your users will love.
 
 ## Description
-Connect your **Freshdesk** instance to any AI agent to automate your customer service operations and helpdesk workflows through the Model Context Protocol (MCP). Freshdesk is an award-winning customer support software that enables businesses of all sizes to deliver exceptional service. This MCP server enables you to manage your support tickets, track agent performance, and retrieve detailed contact metadata directly through natural conversation.
+Connect your **Freshdesk** account to any AI agent and take full control of your customer support ecosystem and helpdesk workflows through natural conversation.
 
-### Key Features
+### What you can do
 
-- **Ticket Orchestration** — List all support tickets, fetch detailed metadata including priority and status, and open new tickets instantly.
-- **Contact & Company Oversight** — Access your database of end-users and company organizations to maintain full context of customer relationships.
-- **Collaborative Threads** — Retrieve full conversation histories and internal notes associated with any specific support ticket.
-- **Workforce Insights** — List all support agents and team members to verify who is online and handling the helpdesk volume.
-- **Group & Queue Monitoring** — Access configured agent groups and routing queues to understand your support structure.
-- **Product Discovery** — List all products mapped in your helpdesk instance for multi-product support environments.
-- **Real-time Performance** — Fetch high-level helpdesk metadata to verify connectivity and account health.
+- **Ticket Orchestration** — List and manage support tickets programmatically, including updating statuses (Open, Pending, Resolved, Closed) and priorities
+- **Relationship Management** — Access your complete directory of contacts and companies to retrieve detailed profiles and interaction histories
+- **Support Intelligence** — Monitor agent groups and individual staff status to coordinate internal routing and manage team workload
+- **Knowledge Navigation** — Explore knowledge base folders and organizational structures to assist with customer self-service and internal research
+- **Real-time Monitoring** — Retrieve granular metadata for specific tickets, including complete conversation threads and audit logs
 
 ### How it works
 
-1. Subscribe to this server through the Vinkius Marketplace
-2. Enter your Freshdesk Domain prefix and API Key (found in Profile Settings > Your API Key)
-3. Start managing your helpdesk from Claude, Cursor, or any MCP client
+1. Subscribe to this server
+2. Retrieve your **API Key** from Freshdesk (Profile Settings)
+3. Identify your **Account Subdomain** (e.g., 'vinkius' from vinkius.freshdesk.com)
+4. Start managing your helpdesk from Claude, Cursor, or any MCP client
+
+No more manual status checking or complex navigation through support queues. Your AI acts as your dedicated support operations and helpdesk coordinator.
 
 ### Who is this for?
 
-- **Support Managers** — quickly monitor ticket volumes or list agent workloads without manual dashboard navigation.
-- **Customer Success Teams** — get a real-time overview of customer support history and organization metadata via simple AI commands.
-- **Agents & Technicians** — automate the retrieval of ticket threads and requester profiles while focused on resolution.
+- **Support Teams** — instantly triage ticket queues and update statuses using natural language commands
+- **Customer Success Managers** — retrieve full interaction histories and verify contact details without leaving your workspace
+- **Ops Leads** — monitor agent availability and manage organizational records across the helpdesk
 
 
-## Available Tools (12)
-- **list_helpdesk_agents**: List support agents
-- **create_ticket**: Open a new ticket
-- **check_freshdesk_status**: Verify helpdesk status
-- **get_agent_details**: Get agent metadata
-- **get_company_details**: Get company metadata
-- **get_contact_details**: Get customer metadata
-- **get_ticket_details**: Get ticket metadata
-- **list_helpdesk_companies**: List client companies
-- **list_helpdesk_contacts**: List customers
-- **list_ticket_thread**: List ticket interactions
-- **list_tickets**: List support tickets
-- **update_ticket**: Modify ticket properties
+## Available Tools (10)
+- **create_ticket**: Create a new ticket
+- **get_contact_details**: Get details for a contact
+- **get_ticket_details**: Get details for a ticket
+- **list_support_agents**: List support staff
+- **list_support_companies**: List organization records
+- **list_contacts**: List helpdesk contacts
+- **list_help_folders**: List knowledge base folders
+- **list_support_groups**: g. Support, Billing).
+
+List support agent groups
+- **update_ticket_details**: Modify an existing ticket
+- **list_tickets**: Supports filtering by status or priority.
+
+List helpdesk tickets
 
 
 ## 💬 Prompt Examples
@@ -55,41 +58,38 @@ Connect your **Freshdesk** instance to any AI agent to automate your customer se
 Here are some examples of how you can interact with the **Freshdesk** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all open support tickets in my Freshdesk."
+> "List all my open tickets in Freshdesk."
 
 **🤖 AI Agent:**
-> Retrieving tickets... I found 5 open requests, including 'Broken Login' (Priority: Urgent) and 'Billing Inquiry'. Would you like the full details for the urgent one?
+> I've retrieved 5 open tickets. Notable requests include 'Login issues' (ID: 101) and 'Billing question' (ID: 102). Would you like the full details for any specific ticket?
 
 ---
 
 **👤 You:**
-> "Show me the conversation thread for ticket '12345'."
+> "Show me the details for ticket ID '101'."
 
 **🤖 AI Agent:**
-> Fetching thread... For ticket 12345, I found 3 replies and 1 private note. The last update was from Agent Mike stating 'investigating the server logs'.
+> Fetching metadata for ticket 101... The issue is reported by 'john@example.com'. It's currently 'Open' with 'High' priority. The latest message says the user can't access the dashboard. Shall I list the full conversation?
 
 ---
 
 **👤 You:**
-> "Create a new ticket: 'API Access Problem' from 'user@example.com'."
+> "Create a new ticket 'Feature suggestion' for 'sarah@example.com'."
 
 **🤖 AI Agent:**
-> Ticket created! I've successfully opened ticket ID 67890 regarding 'API Access Problem' for user@example.com. It has been assigned to the general support queue.
+> Done! I've created the new ticket for Sarah. The ID is 103 and I've set the priority to 'Low'. Your team will see this in the Freshdesk queue immediately.
 
 
 ## ❓ FAQ
 
-**Q: How do I get an API Key for Freshdesk?**
-Log in to your Freshdesk instance, click on your profile picture in the top-right, and select 'Profile Settings' to find your API Key.
+**Q: How do I find my Freshdesk API Key?**
+Log in to Freshdesk, click your profile icon (top right), and select **Profile Settings**. Your API Key is displayed on the right sidebar.
 
-**Q: What is my 'Domain prefix'?**
-Your domain prefix is the first part of your Freshdesk URL (e.g. if your URL is 'acme.freshdesk.com', the prefix is 'acme').
+**Q: Can I filter tickets by specific status codes?**
+Yes! Use the `list_tickets` tool and specify filters like 'open', 'pending', or use json for granular status values (e.g. 2 for Open, 5 for Closed).
 
-**Q: Can I see private notes on a ticket?**
-Yes, the 'list_ticket_thread' tool retrieves all interactions associated with a ticket, including public replies and private notes for full agent context.
-
-**Q: Is it possible to filter tickets by status?**
-Yes, the 'list_tickets' tool accepts an optional 'filter' parameter (e.g., 'open', 'pending') to help you focus on specific sets of requests.
+**Q: Is it possible to list knowledge base folders via AI?**
+Absolutely. Use the `list_help_folders` tool to retrieve the organizational structure of your Freshdesk help center.
 
 
 ## Installation & Usage

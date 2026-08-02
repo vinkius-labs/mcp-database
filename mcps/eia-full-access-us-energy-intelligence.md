@@ -25,15 +25,25 @@ Power users, energy consultants, and AI agents that need cross-commodity U.S. en
 
 
 ## Available Tools (34)
-- **get_coal_production**: Get coal production by state, mine type, and rank
+- **get_coal_trade**: Get coal imports and exports by country, quantity, and price
 - **get_mine_production**: Source: EIA-7A and MSHA-7000-2.
 
 Get individual mine-level coal production data
+- **get_plant_generation**: Includes net generation (MWh), fuel consumption, and heat rates. Source: EIA-923.
+
+Get individual power plant operations by fuel and prime mover
+- **get_crude_production**: Get U.S. crude oil production and reserves data
+- **get_crude_imports**: Source: EIA-814.
+
+Get crude oil imports by country, company, type, and grade
+- **get_total_energy**: Includes total production, consumption, stocks, trade, prices, and CO2 emissions for petroleum, natural gas, coal, electricity, nuclear, and renewables.
+
+Get comprehensive U.S. total energy overview (Monthly Energy Review)
+- **get_coal_production**: Get coal production by state, mine type, and rank
 - **get_coal_prices**: Also includes price-by-rank breakdown for bituminous, subbituminous, lignite, and anthracite.
 
 Get coal market prices by rank, region, and mine type
 - **get_coal_quality**: Get coal consumption and quality data: heat content, sulfur, ash
-- **get_coal_trade**: Get coal imports and exports by country, quantity, and price
 - **get_coal_reserves**: Get coal reserves, productive capacity, and stocks
 - **get_electricity_prices**: Source: EIA-826, EIA-861.
 
@@ -48,9 +58,6 @@ Get real-time hourly/daily electric grid demand
 - **get_generator_inventory**: Over 100,000 generators. Source: EIA-860.
 
 Get inventory of every operable generator in the U.S
-- **get_plant_generation**: Includes net generation (MWh), fuel consumption, and heat rates. Source: EIA-923.
-
-Get individual power plant operations by fuel and prime mover
 - **get_natgas_prices**: Henry Hub spot price is the benchmark for North American gas trading.
 
 Get natural gas prices: Henry Hub, citygate, wellhead, industrial, residential
@@ -72,7 +79,7 @@ Get STEO: 18-month U.S. energy price and supply projections
 - **get_annual_outlook**: S. energy production, consumption, prices, and emissions using the National Energy Modeling System (NEMS). Includes reference case and side cases.
 
 Get AEO: 30-year U.S. energy projections
-- **get_international_outlook**: Covers global production, consumption, and emissions by region and fuel.
+- **get_international_outlook**: Covers globalThis production, consumption, and emissions by region and fuel.
 
 Get IEO: international energy projections
 - **get_international_data**: Get country-level energy production, consumption, and emissions
@@ -82,20 +89,13 @@ Get petroleum product prices: WTI, Brent, gasoline, diesel, heating oil
 - **get_petroleum_summary**: S. petroleum supply/demand balance including production, imports, exports, stocks, and consumption. The weekly petroleum status report data.
 
 Get petroleum supply and demand balance
-- **get_crude_production**: Get U.S. crude oil production and reserves data
 - **get_refinery_operations**: Get refinery capacity, utilization, and processing data
 - **get_petroleum_trade**: Get petroleum imports, exports, and movements
 - **get_petroleum_stocks**: Get petroleum stocks: commercial + Strategic Petroleum Reserve
 - **get_petroleum_consumption**: Get petroleum consumption and sales by product and sector
-- **get_crude_imports**: Source: EIA-814.
-
-Get crude oil imports by country, company, type, and grade
 - **get_state_energy_data**: Data from 1960 to present. The definitive source for state-level energy analysis.
 
 Get comprehensive state-level energy data (SEDS): production, consumption, prices, expenditures
-- **get_total_energy**: Includes total production, consumption, stocks, trade, prices, and CO2 emissions for petroleum, natural gas, coal, electricity, nuclear, and renewables.
-
-Get comprehensive U.S. total energy overview (Monthly Energy Review)
 - **get_nuclear_outages**: S. nuclear reactors.
 
 Get nuclear power plant outage data

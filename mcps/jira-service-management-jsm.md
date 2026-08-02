@@ -14,6 +14,15 @@ Empower your AI agents with Jira Service Management's leading ITSM platform. Thi
 
 
 ## Available Tools (10)
+- **list_queues**: g., "All Open", "Unassigned") defined for a service desk. Useful for understanding how tickets are triaged and identifying backlog counts.
+
+Lists all queues for a specific service desk
+- **list_request_types**: g., "IT Help", "Hardware Request") available in a portal. Useful for understanding the service catalog of a specific team.
+
+Lists all request types for a specific service desk
+- **list_organizations**: Useful for understanding which business entities are being supported and grouping support data by customer.
+
+Lists all organizations in JSM
 - **get_info**: Use for system health monitoring.
 
 Retrieves system information for the JSM instance
@@ -29,15 +38,6 @@ Lists all customers for a specific service desk
 - **list_knowledge_bases**: Essential for identifying available documentation that might help resolve common customer issues.
 
 Lists all knowledge base articles for a specific service desk
-- **list_organizations**: Useful for understanding which business entities are being supported and grouping support data by customer.
-
-Lists all organizations in JSM
-- **list_queues**: g., "All Open", "Unassigned") defined for a service desk. Useful for understanding how tickets are triaged and identifying backlog counts.
-
-Lists all queues for a specific service desk
-- **list_request_types**: g., "IT Help", "Hardware Request") available in a portal. Useful for understanding the service catalog of a specific team.
-
-Lists all request types for a specific service desk
 - **list_requests**: Includes request keys, summaries, and current status. Essential for monitoring the support queue and identifying urgent issues.
 
 Lists all customer requests

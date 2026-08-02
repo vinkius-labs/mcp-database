@@ -5,44 +5,62 @@
 
 ## Overview
 
-**Category:** [industry-titans](../categories/industry-titans.md)
+**Category:** [loved-by-devs](../categories/loved-by-devs.md)
 
-Equip your AI agent to manage cloud infrastructure, track Droplets, and monitor managed databases via the DigitalOcean API.
+Deploy and manage cloud infrastructure with simple virtual servers, managed databases, and Kubernetes clusters built for developers.
 
 ## Description
-Integrate **DigitalOcean**, the leading cloud infrastructure provider, directly into your AI workflow. Manage your compute instances (Droplets), monitor block storage and DNS domains, track managed databases, and oversee your App Platform services using natural language.
+Connect your **DigitalOcean** cloud account to any AI agent and take full control of your infrastructure management and monitoring workflows through natural conversation.
 
 ### What you can do
 
-- **Compute Oversight** — List and retrieve detailed configuration for all your Droplets, including IP addresses and resource status.
-- **Storage & Networking** — Monitor block storage volumes and manage DNS domains directly via chat.
-- **Managed Databases** — Track your database clusters (Postgres, MySQL, Redis) and their technical metadata.
-- **App Platform Monitoring** — Oversee your deployed applications and their active deployment states across projects.
+- **Droplet Management** — List all virtual machines (Droplets) and retrieve detailed metadata including status, IP addresses, and hardware specs programmatically
+- **Domain & DNS Control** — Query and manage your domain names and DNS configurations to ensure service availability and correct routing in real-time
+- **Database Monitoring** — Track the status and connection endpoints of your managed PostgreSQL, MySQL, and Redis clusters directly through your agent
+- **Kubernetes Insights** — List all DOKS (DigitalOcean Kubernetes Service) clusters and retrieve health metadata to oversee your containerized deployments
+- **Resource Inventory** — Access account-wide actions, disk images, snapshots, and block storage volumes for a comprehensive high-fidelity overview
 
 ### How it works
 
-1. Connect the DigitalOcean integration to your AI assistant.
-2. Authorize using your DigitalOcean Personal Access Token (found in your API settings).
-3. Orchestrate your cloud infrastructure and resources through intuitive conversation.
+1. Subscribe to this server
+2. Retrieve your **Personal Access Token** from the DigitalOcean dashboard (API > Tokens)
+3. Start managing your cloud resources from Claude, Cursor, or any MCP client
+
+No more manual dashboard navigation or searching for IP addresses. Your AI acts as your dedicated cloud architect and SRE coordinator.
 
 ### Who is this for?
 
-- **DevOps Engineers** — Quickly check Droplet status and network configurations on the go.
-- **Cloud Architects** — Monitor resource allocation and database health via chat.
-- **System Administrators** — Audit cloud projects and firewall rules during maintenance or incident response.
+- **DevOps Engineers** — instantly retrieve droplet specs and check database health using natural language commands
+- **System Administrators** — monitor account actions and manage DNS records without leaving your communication tools
+- **Technical Founders** — orchestrate your startup's cloud infrastructure and monitor snapshots through simple AI queries
 
 
-## Available Tools (10)
-- **get_account_metadata**: Retrieve metadata and limits for your DigitalOcean account
-- **get_droplet_details**: Get detailed information for a specific Droplet
-- **list_app_platform_services**: List all applications deployed on DigitalOcean App Platform
-- **list_managed_databases**: List all managed database clusters (Postgres, MySQL, Redis, etc.)
-- **list_dns_domains**: List all DNS domains managed in DigitalOcean
-- **list_compute_droplets**: List all compute instances (Droplets) in your DigitalOcean account
-- **list_cloud_firewalls**: List all cloud firewalls and their associated rules
-- **list_cloud_projects**: List all logical projects used to group resources
-- **list_block_storage_volumes**: List all block storage volumes across your account
-- **search_droplets_by_name**: Search for a Droplet using a name keyword
+## Available Tools (9)
+- **list_domains**: Essential for reviewing web configurations.
+
+List all managed DNS domains
+- **get_account_info**: Useful for verifying resource availability.
+
+Get DigitalOcean account details
+- **get_droplet_details**: Get details for a specific Droplet
+- **list_actions**: Useful for auditing and monitoring changes.
+
+List historical account actions
+- **list_kubernetes_clusters**: Includes information about cluster health, versions, and nodes.
+
+List all Kubernetes clusters
+- **list_databases**: Includes cluster status, engine versions, and endpoints.
+
+List managed database clusters
+- **list_droplets**: Includes metadata such as status, IP addresses, and specs.
+
+List all active Droplets
+- **list_images**: Useful for resource recovery and deployment.
+
+List snapshots and disk images
+- **list_volumes**: Includes size, region, and current attachment status.
+
+List block storage volumes
 
 
 ## 💬 Prompt Examples
@@ -50,38 +68,38 @@ Integrate **DigitalOcean**, the leading cloud infrastructure provider, directly 
 Here are some examples of how you can interact with the **DigitalOcean** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active Droplets and their IP addresses."
+> "List all my active Droplets on DigitalOcean."
 
 **🤖 AI Agent:**
-> I've found 3 active Droplets: 'web-server-01' (IP: 192.168.1.10), 'db-master' (IP: 192.168.1.20), and 'worker-node' (IP: 192.168.1.30). All are currently 'Active'. Would you like to see the resource specs for db-master?
+> I've retrieved your virtual machines. You have 3 active Droplets: 'Web-Server-01' (IP: 192.168.1.1), 'DB-Primary', and 'Staging'. Which one should we inspect for more details?
 
 ---
 
 **👤 You:**
-> "Show me our managed database clusters."
+> "Show me my domain names and DNS configurations."
 
 **🤖 AI Agent:**
-> You have 2 managed database clusters: 'Production-Postgres' (v15, 3 nodes) and 'Staging-Redis' (v7, 1 node). Both are reported as 'Online'. Should I check the connection parameters for the production cluster?
+> Accessing DNS... I've found 2 domains: 'vinkius.com' and 'app-test.io'. Both point to DigitalOcean name servers. Would you like to see the individual A or CNAME records for 'vinkius.com'?
 
 ---
 
 **👤 You:**
-> "What is the status of our App Platform services?"
+> "What is the status of my database clusters?"
 
 **🤖 AI Agent:**
-> I've retrieved 2 active services on App Platform: 'Marketing-Site' (Status: Active, Last Deploy: 2 hours ago) and 'Customer-API' (Status: Active, Last Deploy: yesterday). Would you like to see the source repositories for these apps?
+> Scanning databases... Your primary PostgreSQL cluster (ID: 456) is 'Online' and healthy. Your Redis cache is also 'Online'. Shall I retrieve the connection endpoints for you?
 
 
 ## ❓ FAQ
 
-**Q: How do I get a DigitalOcean Personal Access Token?**
-Log in to your DigitalOcean account, navigate to the **API** section in the sidebar, and under the **Tokens/Keys** tab, click **Generate New Token**. Ensure you select the 'read' or 'write' scopes as needed.
+**Q: How do I find my DigitalOcean Access Token?**
+Log in to the Cloud Control Panel, navigate to **API** in the sidebar, and click **Generate New Token** under Personal Access Tokens.
 
-**Q: Can the agent reboot a Droplet?**
-This integration currently focuses on listing and auditing infrastructure resources. Power actions like rebooting or resizing should be managed via the DigitalOcean control panel or CLI.
+**Q: Can I perform destructive actions like deleting droplets?**
+No. The current toolset is focused on querying and monitoring resources. Destructive or state-altering commands are not exposed via the agent.
 
-**Q: Is the App Platform supported?**
-Yes, you can use the list_app_platform_services tool to monitor your applications deployed on DigitalOcean's App Platform and check their current deployment status.
+**Q: How do I get technical details for a specific Droplet?**
+Use the `get_droplet_details` tool with the Droplet's numeric ID to retrieve full networking and configuration metadata.
 
 
 ## Installation & Usage

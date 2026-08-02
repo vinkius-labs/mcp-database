@@ -28,6 +28,12 @@ Connect AI agents to the **DHL Express Enterprise API** for global supply chain 
 
 
 ## Available Tools (6)
+- **track_shipment**: Returns current status, delivery estimate, and detailed checkpoints (origin, destination, customs, etc.). Requires the 10-digit tracking number (e.g., 1234567890). Use this to monitor international or domestic deliveries.
+
+Track a DHL shipment by tracking number
+- **validate_address**: Returns standardized address format and suggestions if the address is incorrect. Use this to prevent delivery failures before creating a shipment.
+
+Validate a DHL shipping address
 - **create_shipment**: Requires shipper/recipient details, package weight, and service type. Use this to generate labels for outbound shipments. Returns the tracking number and label document URL.
 
 Create a DHL shipment and generate a shipping label
@@ -40,12 +46,6 @@ Retrieve the proforma invoice document for a DHL shipment
 - **get_rates**: g., Express Worldwide, Economy Select) between origin and destination. Requires origin/recipient addresses and package details (weight, dimensions). Use this to compare shipping costs and delivery speeds.
 
 Get shipping rates and transit times for DHL services
-- **track_shipment**: Returns current status, delivery estimate, and detailed checkpoints (origin, destination, customs, etc.). Requires the 10-digit tracking number (e.g., 1234567890). Use this to monitor international or domestic deliveries.
-
-Track a DHL shipment by tracking number
-- **validate_address**: Returns standardized address format and suggestions if the address is incorrect. Use this to prevent delivery failures before creating a shipment.
-
-Validate a DHL shipping address
 
 
 ## 💬 Prompt Examples

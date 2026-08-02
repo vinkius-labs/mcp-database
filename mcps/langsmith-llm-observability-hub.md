@@ -35,16 +35,16 @@ Connect your **LangSmith** account to any AI agent and take full control of your
 
 
 ## Available Tools (6)
-- **list_projects**: Maps out the boundaries of distinct AI pipelines currently monitored by LangSmith.
-
-List all active LangSmith tracing projects/sessions
+- **list_annotation_queues**: List active human-in-the-loop annotation queues
 - **list_runs**: Isolates the raw interactions containing prompts sent to and responses received from the AI models.
 
 List explicit LLM invocation runs within a specific project
 - **get_run**: Get precise telemetry for a single LLM invocation run
 - **list_datasets**: List all evaluation and fine-tuning datasets mapped in LangSmith
 - **list_prompts**: Extract prompt templates hosted in the LangChain Hub
-- **list_annotation_queues**: List active human-in-the-loop annotation queues
+- **list_projects**: Maps out the boundaries of distinct AI pipelines currently monitored by LangSmith.
+
+List all active LangSmith tracing projects/sessions
 
 
 ## 💬 Prompt Examples

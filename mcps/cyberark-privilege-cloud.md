@@ -39,9 +39,6 @@ Connect your **CyberArk Privilege Cloud** account to any AI agent and take full 
 - **delete_account**: Requires high authorization. Used during system decommissioning so the CPM stops attempting failed password rotations.
 
 Delete a privileged account from the CyberArk Vault
-- **add_account**: Requires precise mapping to an underlying Platform ID (e.g., WinDesktopLocal, UnixSSH) which dictates how CyberArk rotates and verifies the credential moving forward.
-
-Provision a new privileged account into a Vault Safe
 - **get_account**: Necessary before rotating or interacting with an account.
 
 Get detailed properties for a specific vaulted account
@@ -64,6 +61,9 @@ Retrieve the clear-text password for an account (check-out)
 - **terminate_session**: Used as an active incident response mechanism if a SOC analyst or anomalous behavior engine detects unauthorized actions mid-session.
 
 Forcibly terminate an active Privileged Session (PSM/PSMP)
+- **add_account**: Requires precise mapping to an underlying Platform ID (e.g., WinDesktopLocal, UnixSSH) which dictates how CyberArk rotates and verifies the credential moving forward.
+
+Provision a new privileged account into a Vault Safe
 
 
 ## 💬 Prompt Examples

@@ -37,12 +37,6 @@ Connect your **Adobe Firefly** developer account to any AI agent and take full c
 
 
 ## Available Tools (10)
-- **text_to_image**: Model 5 offers photorealistic output. Instructions: Pass prompt and count (1-4).
-
-Generate images from a text prompt using Adobe Firefly
-- **generative_fill**: Instructions: Upload image first, get image_id and mask_id.
-
-Fill masked areas of an image using Adobe Firefly Generative Fill
 - **generative_expand**: Instructions: Pass image_id, target width/height.
 
 Expand an image beyond its borders using Adobe Firefly
@@ -64,6 +58,12 @@ Generate an object composite image using Adobe Firefly
 - **text_effects**: Instructions: Pass the text and a style prompt.
 
 Apply AI text effects using Adobe Firefly
+- **text_to_image**: Model 5 offers photorealistic output. Instructions: Pass prompt and count (1-4).
+
+Generate images from a text prompt using Adobe Firefly
+- **generative_fill**: Instructions: Upload image first, get image_id and mask_id.
+
+Fill masked areas of an image using Adobe Firefly Generative Fill
 - **list_models**: List available Firefly models
 
 

@@ -59,6 +59,10 @@ Get status of a specific audience export
 Use this to discover what data is available before building reports. The propertyId is required and can be found in your GA4 admin settings.
 
 Get available metrics and dimensions for a GA4 property
+- **list_accounts**: This is the top-level container for properties. Each account can contain multiple properties.
+Use this to discover what accounts are available before drilling down into properties.
+
+List all Google Analytics accounts accessible to the user
 - **get_property**: Use the property_id obtained from list_properties to inspect property configuration.
 
 Get detailed information about a specific GA4 property
@@ -67,10 +71,6 @@ Use this for user-level analysis, journey mapping, or support investigations.
 The userId must match the one sent with your tracking events.
 
 Get activity history for a specific user
-- **list_accounts**: This is the top-level container for properties. Each account can contain multiple properties.
-Use this to discover what accounts are available before drilling down into properties.
-
-List all Google Analytics accounts accessible to the user
 - **list_audience_exports**: Audience exports are used to extract user lists matching specific audience criteria for activation in other platforms.
 Shows status (CREATING, ACTIVE, FAILED) and configuration of each export job.
 

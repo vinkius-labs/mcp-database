@@ -26,21 +26,12 @@ The **definitive Mega-Server** for EU statistical intelligence.
 - **search_datasets**: Returns matching dataset codes and names. Use this to find the right dataset code before querying data.
 
 Search Eurostat dataset catalog by keyword
-- **get_employment**: Key indicators for labor market tightness and wage pressure analysis.
-
-Get EU employment rates and labor cost index
 - **get_dataset_metadata**: Shows all available dimensions, code lists, and possible filter values. Use this before querying to understand what filters are available.
 
 Get metadata for a Eurostat dataset: dimensions, codes, frequencies
 - **get_dataset**: Provide the dataset code and optional dimension filters. Find codes via search_datasets or the Eurostat Data Browser.
 
 Query any Eurostat dataset by code with flexible filters
-- **get_industrial_production**: Base year 2015=100. Breakdown by NACE sector. A leading indicator of economic activity.
-
-Get EU industrial production index by country and sector
-- **get_retail_trade**: Consumer spending proxy. Covers food, non-food, and online retail.
-
-Get EU retail trade volume index
 - **get_gdp**: Dataset: namq_10_gdp (quarterly) or nama_10_gdp (annual). Filter by country, unit (CLV10_MEUR, CP_MEUR, PC_GDP), and GDP component (B1GQ=GDP, P3=consumption, P5G=investment).
 
 Get EU GDP data by country — quarterly or annual
@@ -74,9 +65,6 @@ Get EU renewable energy share by country
 - **get_waste_statistics**: Treatment: landfill, incineration, recycling. Key for circular economy policy.
 
 Get EU waste generation and treatment data
-- **get_agriculture_data**: Covers cereals, fruits, vegetables, wine grapes, olive oil. Essential for Common Agricultural Policy (CAP) analysis.
-
-Get EU agriculture production data
 - **get_population**: Dataset: demo_pjan. Filter by age group and sex. Covers all 27 EU members + EEA + candidate countries.
 
 Get EU population by country, age, and sex
@@ -86,21 +74,33 @@ Get EU unemployment rates monthly by country, age, and sex
 - **get_migration**: Critical data for understanding EU migration flows, asylum, and demographic change.
 
 Get EU immigration and emigration data by citizenship
-- **get_life_expectancy**: A key demographic and health policy indicator. Shows dramatic variation across EU: from ~74 years (Bulgaria) to ~84 years (Spain).
-
-Get life expectancy at birth by EU country and sex
-- **get_minimum_wages**: Shows EUR/month values. Not all EU countries have statutory minimums (e.g., Nordics use collective bargaining). Updated semi-annually.
-
-Get minimum wage levels across EU countries
 - **get_trade_balance**: Dataset: ext_lt_maineu. Key partners: US, CN, UK, JP, CH.
 
 Get EU international trade balance by partner country
 - **get_trade_by_product**: Dataset: ext_st_eu27_2020sitc. Covers food, raw materials, fuels, chemicals, machinery, manufactured goods.
 
 Get EU trade by product classification (SITC)
+- **get_industrial_production**: Base year 2015=100. Breakdown by NACE sector. A leading indicator of economic activity.
+
+Get EU industrial production index by country and sector
+- **get_retail_trade**: Consumer spending proxy. Covers food, non-food, and online retail.
+
+Get EU retail trade volume index
 - **get_trade_dataset**: Common codes: ext_tec01, sts_inpr_m, sts_trtu_m, sbs_na_ind_r2.
 
 Query any Eurostat trade/industry dataset by code
+- **get_agriculture_data**: Covers cereals, fruits, vegetables, wine grapes, olive oil. Essential for Common Agricultural Policy (CAP) analysis.
+
+Get EU agriculture production data
+- **get_employment**: Key indicators for labor market tightness and wage pressure analysis.
+
+Get EU employment rates and labor cost index
+- **get_life_expectancy**: A key demographic and health policy indicator. Shows dramatic variation across EU: from ~74 years (Bulgaria) to ~84 years (Spain).
+
+Get life expectancy at birth by EU country and sex
+- **get_minimum_wages**: Shows EUR/month values. Not all EU countries have statutory minimums (e.g., Nordics use collective bargaining). Updated semi-annually.
+
+Get minimum wage levels across EU countries
 
 
 ## 💬 Prompt Examples

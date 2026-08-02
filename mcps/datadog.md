@@ -35,12 +35,12 @@ Connect your **Datadog** account to any AI agent and take full control of your i
 
 
 ## Available Tools (11)
-- **list_dashboards**: Returns a list of dashboard identifiers, titles, layout types (timeboard/screenboard), and direct access URLs.
-
-List all dashboards
 - **query_metrics**: Resolves time-series data within the specified UNIX timestamp range. Returns metric points, scope tags, and unit metadata for infrastructure and application monitoring.
 
 Query time-series metrics
+- **mute_monitor**: Interacts with the alerting boundary to set temporary silence periods, optionally with an automatic expiration timestamp.
+
+Mute a monitor
 - **list_downtimes**: Returns scope tags, recurring schedules, and current status to identify planned maintenance periods.
 
 List scheduled downtimes
@@ -56,12 +56,12 @@ List monitors by state
 - **get_monitor**: Resolves notification settings, threshold values, and historical status changes for the given monitor ID.
 
 Get monitor details
-- **mute_monitor**: Interacts with the alerting boundary to set temporary silence periods, optionally with an automatic expiration timestamp.
-
-Mute a monitor
 - **list_events**: Returns a collection of events including titles, priority levels, and source identifiers (e.g., monitor alerts, deployment events).
 
 List events
+- **list_dashboards**: Returns a list of dashboard identifiers, titles, layout types (timeboard/screenboard), and direct access URLs.
+
+List all dashboards
 - **get_dashboard**: Resolves all widget configurations, template variables, and layout structures for visualization rendering.
 
 Get dashboard details

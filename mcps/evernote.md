@@ -37,18 +37,13 @@ Connect your **Evernote** account to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
+- **list_notebooks**: Use this to discover available notebooks before listing notes within them.
+
+Retrieve all Evernote notebooks for the authenticated account
+- **get_notebook**: Fetch detailed metadata for a specific Evernote notebook by its GUID
 - **create_notebook**: Returns the newly created notebook GUID and metadata.
 
 Create a new Evernote notebook
-- **list_notes**: Use en.get_note to fetch full content.
-
-List up to 50 notes inside a specific Evernote notebook
-- **get_note**: The content is returned in Evernote Markup Language (ENML).
-
-Retrieve the full content and metadata of a single Evernote note by GUID
-- **create_note**: The note is immediately synced and available across all Evernote clients.
-
-Create a new note inside a specified Evernote notebook
 - **update_note**: This triggers a sync and increments the updateSequenceNum.
 
 Update the title and/or content of an existing Evernote note
@@ -59,10 +54,15 @@ Search across all Evernote notes using Evernote's powerful query syntax
 
 Retrieve all tags defined in the Evernote account
 - **get_user**: Get profile information for the currently authenticated Evernote user
-- **list_notebooks**: Use this to discover available notebooks before listing notes within them.
+- **list_notes**: Use en.get_note to fetch full content.
 
-Retrieve all Evernote notebooks for the authenticated account
-- **get_notebook**: Fetch detailed metadata for a specific Evernote notebook by its GUID
+List up to 50 notes inside a specific Evernote notebook
+- **get_note**: The content is returned in Evernote Markup Language (ENML).
+
+Retrieve the full content and metadata of a single Evernote note by GUID
+- **create_note**: The note is immediately synced and available across all Evernote clients.
+
+Create a new note inside a specified Evernote notebook
 
 
 ## 💬 Prompt Examples

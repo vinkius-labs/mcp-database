@@ -7,53 +7,46 @@
 
 **Category:** [talk-to-me](../categories/talk-to-me.md)
 
-Equip your AI agent with direct access to Intercom — manage conversations, search contacts, and track customer data without opening the Intercom inbox.
+Connect with customers through AI-powered chat, targeted messages, and product tours that drive engagement and reduce churn.
 
 ## Description
-Connect **Intercom** to your AI agent and manage your customer communications and support operations conversationally.
+Connect your **Intercom** account to any AI agent and manage customer communications through natural conversation.
 
 ### What you can do
 
-- **Conversation Management** — List, search, and manage customer conversations with status, assignment, and SLA data.
-- **Contact Search** — Query your customer database by email, name, company, or custom attributes to find specific users.
-- **Company Data** — Retrieve company profiles, plan information, and aggregate usage metrics.
-- **Support Analytics** — Pull conversation counts, response times, and resolution metrics for team performance reviews.
+- **Contact Management** — List contacts, inspect profiles with tags and custom attributes, and search by email or name
+- **Conversation Tracking** — Browse all conversations, inspect threads with full message history, and monitor status
+- **Messaging** — Send messages to contacts and reply to active conversations
+- **Company Records** — List companies, inspect profiles with user counts and custom data
+- **CRM Search** — Search contacts and companies using Intercom's query syntax
+- **Admin Management** — List all team members and their roles
 
 ### How it works
 
-1. Subscribe to the Intercom integration on the marketplace.
-2. Create a private app in the Intercom Developer Hub and copy the Access Token.
-3. Ask your AI agent to search contacts, list conversations, or pull customer data.
+1. Subscribe to this server
+2. Enter your Intercom Access Token from the developer hub
+3. Start managing customers from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Customer Support Teams** — Get instant answers about customer history and conversation context without switching between tools.
-- **Customer Success Managers** — Look up account health, usage patterns, and recent support interactions from your AI agent.
-- **Sales Teams** — Pull contact and company data from Intercom to enrich leads and inform outreach strategies.
+- **Support Teams** — manage conversations and reply to customers through AI
+- **Sales Teams** — search leads, inspect company profiles, and track engagement
+- **Customer Success** — monitor conversations and contact activity
 
 
-## Available Tools (15)
-- **create_contact**: Pass role (user/lead), email, and optional name. Returns the new contact ID.
-
-Create a new contact/lead in Intercom
-- **update_contact**: Pass the contact ID and a JSON body of fields to update.
-
-Update an existing Intercom contact
-- **assign_conversation**: Assign a conversation to a team member
-- **close_conversation**: Requires the admin ID who is closing it.
-
-Close/resolve a support conversation
-- **list_conversations**: List all conversations
-- **list_contacts**: List all contacts/leads
-- **list_tags**: List all tags
-- **list_segments**: List all user segments
-- **get_contact**: Get contact details
-- **search_contacts**: Search contacts by criteria
-- **get_conversation**: Get conversation thread
+## Available Tools (12)
+- **create_contact**: Register a new contact
+- **create_conversation**: Start a new conversation
+- **get_contact_details**: Get details for a contact
+- **get_conversation_details**: Get conversation history
+- **list_admins**: List workspace admins
+- **list_help_articles**: List help center articles
+- **list_conversations**: List recent conversations
+- **search_contacts**: Search contacts with filters
+- **list_data_attributes**: List custom attributes
 - **reply_to_conversation**: Reply to a conversation
-- **list_companies**: List all companies
-- **list_articles**: List help center articles
-- **list_admins**: List team members
+- **list_contacts**: List Intercom contacts
+- **list_segments**: List workspace segments
 
 
 ## 💬 Prompt Examples
@@ -61,41 +54,38 @@ Close/resolve a support conversation
 Here are some examples of how you can interact with the **Intercom** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Find the contact record for sarah@startup.io."
+> "Show all open conversations and the contact details for the most recent one."
 
 **🤖 AI Agent:**
-> Found: Sarah Chen (sarah@startup.io). Company: Startup.io (Growth plan). Last seen: 2 hours ago. Total conversations: 12 (3 open). Custom attributes: MRR $2,400, Account Manager: James.
+> 18 open conversations. Latest: Conv #4521 — 'Ana Costa' (ana@company.com) asking about pricing, 10 min ago, 3 messages. Contact: Ana Costa, Company: TechCorp (50 employees), Plan: Pro, Last seen: 2 min ago, Tags: enterprise-lead. Would you like to reply or search contacts?
 
 ---
 
 **👤 You:**
-> "How many open conversations do we have right now?"
+> "Search for all contacts at acmecorp.com and list their companies."
 
 **🤖 AI Agent:**
-> You currently have 23 open conversations. Breakdown: 8 unassigned, 10 assigned to support agents, and 5 snoozed. The oldest open conversation is 4 hours old (assigned to Maria).
+> 4 contacts at acmecorp.com: John Smith (CTO), Lisa Park (VP Eng), Mike Torres (Director), Sarah Chen (PM). Company: Acme Corp — 250 employees, Enterprise plan, $12K MRR, 4 active users, last activity today. Tags: enterprise, high-value. Would you like to send a message or view conversations?
 
 ---
 
 **👤 You:**
-> "List all companies on our Enterprise plan."
+> "Send a follow-up message to Ana Costa and list all team admins."
 
 **🤖 AI Agent:**
-> I found 14 companies on the Enterprise plan. Top 5 by user count: Acme Corp (250 users), GlobalTech (180 users), DataFlow Inc (95 users), CloudFirst (72 users), and SecureStack (45 users).
+> Message sent! ✅ To: Ana Costa. Content: 'Hi Ana, following up on your pricing question. Our Pro plan at $99/mo includes all features you mentioned. Happy to schedule a demo!' Team admins: 6. Sarah (Owner), Mike (Admin), Lisa (Admin), James (Member), Chen (Member), David (Member).
 
 
 ## ❓ FAQ
 
-**Q: How do I get my Intercom Access Token?**
-Go to the **Intercom Developer Hub** at **app.intercom.com/a/developer-hub/**. Click **New app**, give it a name, and select the workspace to install it in. Once created, click on your app, then navigate to **Authentication** in the left sidebar. Your **Access Token** will be displayed on this page. Configure the required permissions (scopes) — such as Read/Write People, Conversations, or Companies — and click **Save**. Copy the token and paste it below.
+**Q: Can I search for contacts and send messages through the AI agent?**
+Yes. Use `search_contacts` to find contacts by email, name, or custom attributes. Then use `send_message` to send a message to a specific contact, or reply to an active conversation thread.
 
-**Q: Can I look up a customer's full conversation history instantly?**
-Yes. Just ask your AI agent 'Show me all conversations with john@acme.com' and it retrieves every conversation — open, closed, and snoozed — including message content, agent assignments, tags, and resolution times. Perfect for getting full context before a customer call.
+**Q: Can I view full conversation histories?**
+Yes. `list_conversations` shows all conversations with status. Use `get_conversation` with a conversation ID to retrieve the full message thread including sender, timestamps, and content.
 
-**Q: Can I track support team performance metrics?**
-Yes. Your AI agent can pull conversation counts, average response times, resolution rates, and open ticket volumes — giving managers instant visibility into team workload and SLA compliance without building custom reports or opening the Intercom analytics dashboard.
-
-**Q: Is my customer data secure?**
-Your Access Token is a private app token that only accesses data in your own Intercom workspace. It respects your workspace's permission model — the token only has access to the scopes you explicitly grant. All API calls are made over HTTPS, and the token is never shared with third parties.
+**Q: What type of Intercom token do I need?**
+You need an **Access Token** from a Private App in the Intercom Developer Hub. This provides scoped API access with Bearer authentication against `api.intercom.io`.
 
 
 ## Installation & Usage

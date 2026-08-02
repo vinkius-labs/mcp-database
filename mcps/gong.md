@@ -5,49 +5,51 @@
 
 ## Overview
 
-**Category:** [brain-trust](../categories/brain-trust.md)
+**Category:** [sales-automation](../categories/sales-automation.md)
 
-Unlock revenue intelligence by analyzing calls, transcripts, and customer interactions.
+Analyze sales conversations with AI that reveals winning patterns, coach reps with data, and forecast revenue with precision.
 
 ## Description
-Connect your **Gong** organizational account to your AI agent and gain deep insights into your sales conversations and customer interactions. Use natural language to query transcripts, analyze team performance, and track deal progress.
+Connect your **Gong** account to any AI agent and unlock conversation intelligence insights through natural conversation.
 
 ### What you can do
 
-- **Call Analysis** — List recent calls, search for specific keywords, and retrieve full transcripts for deep-dive analysis
-- **User & Team Insights** — Monitor team activity and retrieve interaction statistics to understand coaching opportunities
-- **Account Management** — Access CRM accounts linked in Gong to see the full context of every deal and relationship
-- **Tracker Monitoring** — List and monitor configured trackers to identify recurring themes and competitive mentions in real-time
-- **Scorecards & Reviews** — Access call scorecards to see how conversations align with your organization's sales methodology
+- **Call Management** — List all recorded calls, filter by user or date range, and inspect individual call metadata with participants and topics
+- **Transcripts** — Retrieve full speaker-labeled transcripts for any recorded call
+- **Team Analytics** — List all team members with roles and activity metrics, and drill into per-user call statistics
+- **Scorecard Evaluation** — Browse scoring rubrics and retrieve call quality scores for coaching
+- **Deal Pipeline** — View deal stages, amounts, and associated calls for pipeline visibility
+- **Coaching Library** — Access curated calls saved to the Gong coaching library for training
+- **Aggregate Statistics** — Retrieve org-wide call metrics: total calls, duration, talk ratios
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Gong Access Key and Access Key Secret (found in your Gong API settings)
-3. Start querying your revenue intelligence data from Claude, Cursor, or any MCP-compatible client
-
-Your AI acts as a dedicated sales analyst, helping you identify what separates your top closers from the rest of the team without manual auditing.
+2. Enter your Gong Access Key and Access Key Secret from Company Settings > API
+3. Start analyzing your conversations from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Sales Managers** — instantly summarize recent high-stakes calls and check team compliance with sales scripts
-- **Revenue Operations** — audit account interactions and track the adoption of new messaging across the organization
-- **Enablement Teams** — identify coaching moments by analyzing interaction stats and scorecard results at scale
+- **Sales Managers** — review call recordings, track rep performance, and identify coaching opportunities
+- **Revenue Operations** — correlate deal pipeline data with conversation patterns to forecast accurately
+- **Sales Enablement** — curate best-practice calls in the coaching library and evaluate with scorecards
 
 
-## Available Tools (12)
-- **get_call**: Get details for a specific call
-- **get_user**: Get details for a specific user
-- **list_accounts**: List CRM accounts linked in Gong
-- **list_calls**: List Gong calls
-- **list_scorecards**: List scorecards used for call reviews
-- **list_trackers**: List configured trackers (keywords/phrases)
-- **list_users**: List Gong users
-- **search_calls**: Search for calls with complex filters
-- **get_account**: Get details for a specific account
-- **get_call_media**: Get the media/recording details for a call
-- **get_interaction_stats**: Get aggregated interaction statistics
-- **get_transcript**: Retrieve the transcript of a call
+## Available Tools (14)
+- **check_gong_status**: Verify connectivity
+- **get_call**: Get call details
+- **get_call_stats**: Get call statistics
+- **get_user_stats**: Get user stats
+- **list_call_scores**: Get call scores
+- **list_calls_by_date**: List calls by date range
+- **list_calls_by_user**: List calls by user
+- **list_deals**: List deals
+- **list_library_calls**: List library calls
+- **list_scorecards**: List scorecards
+- **list_users**: List users
+- **get_user**: Get user details
+- **list_calls**: List calls
+- **get_transcript**: Get call transcript
 
 
 ## 💬 Prompt Examples
@@ -55,38 +57,38 @@ Your AI acts as a dedicated sales analyst, helping you identify what separates y
 Here are some examples of how you can interact with the **Gong** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Summarize the transcript for call ID 839201."
+> "Show me all calls from this week and the transcript for the longest one."
 
 **🤖 AI Agent:**
-> Analyzing transcript... The call involved a discussion about pricing tiers and API integration. The customer expressed interest in the Enterprise plan but requested more details on the security audit process. Key takeaway: Follow up with the SOC2 report.
+> Found 28 calls this week. The longest was 'Enterprise Demo — Acme Corp' (call_7891, 52 minutes, 4 participants). Speakers: Sarah Chen (rep, 58% talk time), John Miller (prospect, 35%), Lisa Park (SE, 7%). Key topics discussed: pricing tiers, SSO integration, data migration timeline. Action items: 1) Send SOW by Friday. 2) Schedule security review. 3) Provide reference customers. Would you like to see the scorecard evaluation or the full transcript?
 
 ---
 
 **👤 You:**
-> "Which calls last week mentioned our competitor 'CompetitorX'?"
+> "Compare the call performance of Sarah and Mike this quarter using their stats and scorecards."
 
 **🤖 AI Agent:**
-> Searching trackers... I found 3 calls where 'CompetitorX' was mentioned. In call #93021, the customer compared their feature set to ours. Would you like me to pull the specific snippets from those transcripts?
+> Sarah Chen (user_201): 89 calls, avg duration 34 min, talk ratio 52/48 (ideal), avg scorecard: 8.4/10. Top strength: discovery questions (9.1). Area to improve: closing technique (7.2). Mike Torres (user_205): 72 calls, avg duration 28 min, talk ratio 65/35 (over-talking), avg scorecard: 7.1/10. Top strength: product knowledge (8.8). Area to improve: active listening (5.9). Recommendation: Mike could benefit from Sarah's coaching library calls on discovery methodology. Would you like to see the library calls?
 
 ---
 
 **👤 You:**
-> "Show me the interaction stats for user Marcus R. for the last 30 days."
+> "Show the deal pipeline and highlight deals that have had no calls in the last 2 weeks."
 
 **🤖 AI Agent:**
-> Retrieving metrics... Marcus R. had 45 calls with an average duration of 22 minutes. His 'Talk-to-Listen' ratio was 45%, which is within the target range. However, his longest monologue increased by 10% compared to last month.
+> Deal pipeline: 24 active deals totaling $1.2M. Stage breakdown: Prospecting (8, $280K), Discovery (6, $340K), Demo (5, $290K), Negotiation (3, $190K), Closing (2, $100K). ⚠️ 4 deals have had no calls in 14+ days: 1) 'DataFlow Inc' ($45K, Negotiation, last call 18 days ago). 2) 'CloudSync' ($30K, Discovery, 16 days). 3) 'FinTrack' ($25K, Demo, 15 days). 4) 'LogiPro' ($20K, Prospecting, 21 days). These are at risk of going cold. Would you like to check the last call transcripts?
 
 
 ## ❓ FAQ
 
-**Q: Can I search for specific keywords across all my company's recorded calls?**
-Yes! Use the `search_calls` tool to filter calls by content, participants, or specific trackers. You can then use `get_transcript` to analyze exactly how those terms were used in context.
+**Q: Can I access the full transcript of a recorded sales call?**
+Yes. Use `list_calls` to browse all recorded calls, then call `get_transcript` with the Call ID to retrieve the full speaker-labeled transcript. Each segment includes the speaker name, timestamp, and spoken text. Use `get_call` for additional metadata like topics discussed and action items.
 
-**Q: Does this integration provide access to the actual audio or video recording?**
-The `get_call_media` tool provides details about the media associated with a call. For security reasons, the AI primarily analyzes the text-based transcript and metadata, but it can provide links to the recording on the Gong platform.
+**Q: Does Gong require two separate credentials?**
+Yes. Gong uses HTTP Basic Authentication with an **Access Key** and an **Access Key Secret**. Both are generated in **Company Settings > Ecosystem > API > API Keys**. The credentials are Base64-encoded and sent in the Authorization header. You must be a Technical Administrator to generate API keys.
 
-**Q: How current is the data retrieved by the AI agent?**
-The integration queries Gong's API in real-time. As soon as a call is processed and available in your Gong dashboard, it can be retrieved and analyzed by your AI agent.
+**Q: Can I track deal pipeline data alongside call recordings?**
+Yes. The `list_deals` tool retrieves your deal pipeline with stages, amounts, and associated calls. Cross-reference with `list_calls` and `get_call` to understand which conversations influenced deal progression. Use `get_call_stats` for aggregate metrics like total call volume and talk ratios.
 
 
 ## Installation & Usage

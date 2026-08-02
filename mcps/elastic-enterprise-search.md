@@ -36,11 +36,11 @@ Connect your **Elastic Enterprise Search** deployment to any AI agent and take f
 
 
 ## Available Tools (6)
-- **list_engines**: List engines
 - **get_engine**: Get engine
 - **search**: Search documents within an engine
 - **list_documents**: List indexed documents in an engine
 - **index_documents**: Index newly created JSON documents targeting specific schemas
+- **list_engines**: List engines
 - **analytics**: Get search analytics
 
 

@@ -37,9 +37,17 @@ Connect your **GitLab** instance to any AI agent to automate your DevSecOps life
 
 ## Available Tools (16)
 - **verify_api_connection**: Check connection
+- **get_my_gitlab_profile**: Get user identity
+- **list_visible_groups**: List accessible groups
+- **list_project_issues**: List project issues
 - **create_project_issue**: Open an issue
 - **get_repository_file**: Read file content
-- **get_my_gitlab_profile**: Get user identity
+- **get_project_details**: Get project metadata
+- **list_merge_requests**: List merge requests
+- **list_project_pipelines**: List CI/CD pipelines
+- **list_project_forks**: List forks
+- **list_visible_projects**: List accessible projects
+- **search_gitlab_global**: Search all GitLab
 - **create_merge_request**: Requires title.
 
 Create a new merge request
@@ -48,14 +56,6 @@ Create a new merge request
 Get details for a specific merge request
 - **list_branches**: List all branches in a project repository
 - **list_project_members**: List all members of a project
-- **get_project_details**: Get project metadata
-- **list_visible_groups**: List accessible groups
-- **list_project_issues**: List project issues
-- **list_merge_requests**: List merge requests
-- **list_project_pipelines**: List CI/CD pipelines
-- **list_project_forks**: List forks
-- **list_visible_projects**: List accessible projects
-- **search_gitlab_global**: Search all GitLab
 
 
 ## 💬 Prompt Examples

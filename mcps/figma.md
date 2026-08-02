@@ -32,15 +32,9 @@ Figma is the leading collaborative interface design tool. This MCP server allows
 
 
 ## Available Tools (15)
-- **delete_comment**: Requires file key and comment ID.
-
-Delete a comment from a Figma file
-- **get_component_set**: Get metadata for a published component set
-- **get_team_info**: Get metadata about a Figma team
 - **get_images**: Render nodes from a Figma file as images
 - **get_local_variables**: List design tokens/variables in a Figma file
 - **list_components**: List published team components
-- **get_me**: Get details for the authorized Figma user
 - **get_comments**: Get comments on a Figma file
 - **get_file_nodes**: Get specific nodes from a Figma file
 - **get_file**: Use depth to limit node traversal (1=pages only, 2=pages+top frames).
@@ -51,6 +45,12 @@ Get a Figma file
 - **list_styles**: List published team styles
 - **list_team_projects**: List projects in a Figma team
 - **post_comment**: Post a comment on a Figma file
+- **delete_comment**: Requires file key and comment ID.
+
+Delete a comment from a Figma file
+- **get_component_set**: Get metadata for a published component set
+- **get_team_info**: Get metadata about a Figma team
+- **get_me**: Get details for the authorized Figma user
 
 
 ## 💬 Prompt Examples

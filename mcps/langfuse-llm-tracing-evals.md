@@ -35,18 +35,18 @@ Connect your **Langfuse** account to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
+- **create_score**: g. 1-5 stars) or automated pipeline metrics bounding exactly onto the specified Trace or Observation.
+
+Attach human feedback or evaluation metrics to a trace/observation
+- **list_sessions**: List high-level user session entities encapsulating multiple traces
+- **list_traces**: List all traces tracking LLM API sessions
 - **get_trace**: Get complete telemetry and nested graph for a single trace
 - **get_daily_metrics**: Generate rolled-up USD cost and aggregated latency statistics
 - **create_observation**: Create a new LLM observation (span, event, generation) inside a trace
 - **get_observation**: Retrieve explicit span or generation context within a trace
 - **list_observations**: List raw observation objects spanning across traces
 - **list_prompts**: Extract actively managed prompt templates and versions
-- **create_score**: g. 1-5 stars) or automated pipeline metrics bounding exactly onto the specified Trace or Observation.
-
-Attach human feedback or evaluation metrics to a trace/observation
 - **list_scores**: List all explicit scores mapping quality or cost algorithms
-- **list_sessions**: List high-level user session entities encapsulating multiple traces
-- **list_traces**: List all traces tracking LLM API sessions
 
 
 ## 💬 Prompt Examples
