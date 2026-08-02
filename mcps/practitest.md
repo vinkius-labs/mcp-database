@@ -7,44 +7,46 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Bring your end-to-end QA management to your AI — list tests, instances, test sets, requirements, and trace logical software defects natively.
+Manage your PractiTest projects, tests, and runs directly using AI Agents.
 
 ## Description
-Connect your **PractiTest** workspaces to any AI agent and empower it to orchestrate the entire QA lifecycle from physical requirements tracing to defect mapping natively via chat conversations.
+Empower your AI Agents with full access to your PractiTest workspace. This MCP Server allows AI to manage quality assurance processes, fetching project details, tests, runs, instances, and requirements in real-time. Whether you need to run specific tests or aggregate QA metrics, this integration seamlessly connects PractiTest to AI Agents.
 
 ### What you can do
-
-- **Test Cases & Sets** — Tell the AI to investigate any Test Case or Test Set, discovering exact preconditions and expected results (`list_tests`, `get_test`, `list_sets`)
-- **Test Instances & Runs** — Retrieve deep execution histories pinpointing exactly which step caused a regression bounding PASSED/FAILED statuses (`list_runs`)
-- **Requirements Tracking** — Audit physical system compliance extracting arrays dictating QA delivery thresholds (`list_requirements`)
-- **Issue Mapping** — Find exact Software Defects bound natively to QA traces verifying complex failure logic (`list_issues`)
+* List and get details of PractiTest projects.
+* Create and manage tests, test runs, and test instances directly from AI.
+* Fetch requirements to ensure full QA coverage.
+* Automate report generation by pulling live QA data.
 
 ### How it works
-
-1. Subscribe to this server
-2. Supply your PractiTest Personal API Token and Project ID
-3. Launch Claude, Cursor, or any compatible MCP client to instruct the AI with full test management autonomy
-
-Forget moving between dashboard views trying to identify where a trace broke down. Simply ask the agent 'Why did the latest Payment flow fail?'
+1. Subscribe and install the PractiTest integration.
+2. Provide your PractiTest API Token.
+3. Your AI Agent instantly gains the ability to query, analyze, and manage your testing data.
 
 ### Who is this for?
+* QA Engineers looking to automate test management through chat.
+* Project Managers tracking software quality without leaving their AI interface.
+* Developers validating requirements and run results on the fly.
 
-- **QA Automation Engineers** — verify integration outputs traversing test run histories instantaneously
-- **Product Owners** — read live requirement statuses cross-referencing execution states mapped in the chat window
-- **Software Developers** — dive into reported Issues parsing exact test execution failures natively before diving into code
 
+## Available Tools (11)
+- **create_run**: Provide the data as a JSON string.
 
-## Available Tools (10)
-- **list_sets**: List all test sets in a PractiTest project. Test sets group test instances for execution. Returns set names, statuses, planned/actual dates, and assigned testers
-- **get_set**: Get full details of a PractiTest test set including name, status, instances count, and execution summary
-- **list_instances**: List all test instances in a PractiTest test set. Instances are test-set-specific copies of test cases. Returns instance IDs, test references, and last run statuses
-- **list_runs**: List all runs for a PractiTest test instance. Runs record actual test execution results. Returns run IDs, statuses (PASSED/FAILED/BLOCKED/NOT_RUN/N_A), durations, and timestamps
-- **list_requirements**: List all requirements in a PractiTest project. Requirements provide traceability to test cases and defects. Returns names, statuses, and linked test counts
-- **list_issues**: List all issues (defects) in a PractiTest project. Returns issue names, statuses, severities, and linked test references
-- **list_custom_fields**: List all custom fields in a PractiTest project. Returns field names, types, applicable entities, and possible values
-- **list_users**: List all users in the PractiTest account. Returns user names, emails, roles, and statuses
-- **list_tests**: List all test cases in a PractiTest project. PractiTest is an end-to-end test management platform with traceability from requirements to defects. Returns test names, IDs, statuses, custom fields, and traceability links. Uses JSON:API format
-- **get_test**: Get full details of a PractiTest test case including name, description, preconditions, steps, expected results, custom fields, and requirement links
+Create a new run in a PractiTest project
+- **create_test**: Provide the data as a JSON string.
+
+Create a new test in a PractiTest project
+- **get_project**: Get details of a specific PractiTest project
+- **get_requirement**: Get details of a specific requirement in a PractiTest project
+- **list_requirements**: List requirements within a specific PractiTest project
+- **create_instance**: Provide the data as a JSON string.
+
+Create a new instance in a PractiTest project
+- **list_instances**: List instances within a specific PractiTest project
+- **list_projects**: List all PractiTest projects accessible by the API token
+- **list_runs**: List runs within a specific PractiTest project
+- **list_tests**: List tests within a specific PractiTest project
+- **get_test**: Get details of a specific test in a PractiTest project
 
 
 ## 💬 Prompt Examples
@@ -52,38 +54,38 @@ Forget moving between dashboard views trying to identify where a trace broke dow
 Here are some examples of how you can interact with the **PractiTest** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all tests inside our active QA regression instance and find the ones mapped as failed."
+> "List all projects available in PractiTest."
 
 **🤖 AI Agent:**
-> I queried `list_runs` pulling executions. Exactly 3 Test Runs crashed the regression suite: Run ID `1202` (Login Flow Bypass), Run ID `1203` (Cart State Mismatch), and Run ID `1209` (Payment Fallback Failed). Should I extract step histories for #1209 using `get_test`?
+> Here is the list of projects I found in your PractiTest account...
 
 ---
 
 **👤 You:**
-> "Do we have any new custom fields we should be aware of inside the requirements area?"
+> "Create a new test named 'Login Verification' in project ID 123."
 
 **🤖 AI Agent:**
-> I analyzed `list_custom_fields` crossing your dictionaries. Let's see... a new custom List field 'GDPR Category' (ID 402) was instantiated targeting Requirement entities with possible values strings: ['P1', 'P2', 'Ignore'].
+> The test 'Login Verification' has been successfully created in project ID 123.
 
 ---
 
 **👤 You:**
-> "Are there any open defects (issues) linked directly to testing scenarios surrounding multi-currency operations?"
+> "Fetch the details of test run ID 456 in project 123."
 
 **🤖 AI Agent:**
-> Investigating `list_issues`, I see one highly relevant defect: 'EUR vs GBP Cart Rounding Error' (Issue ID #91). It carries a `High` severity and it strictly ties to instances in your 'Multicurrency V2' test cluster. Current status: UNRESOLVED.
+> I've retrieved the details for test run ID 456. Here is the current status...
 
 
 ## ❓ FAQ
 
-**Q: Can the AI provide the exact step where a test case failed?**
-Yes. If an execution failed, the agent uses `list_runs` for the instance. Since an instance maps directly to test steps, the AI inherently decodes the exact execution traces to show you the failing parameters.
+**Q: Can the AI Agent execute tests inside PractiTest?**
+While the agent cannot run automated testing scripts directly in PractiTest, it can create Test Runs, log results into Instances, and manage the administrative side of QA efficiently.
 
-**Q: Is PractiTest's requirement and issue tracing accessible to the AI?**
-Yes. Tools like `list_requirements` and `list_issues` expose full traceability trees. You can ask exactly how many QA instances are mapped to Requirement 5.
+**Q: Are custom fields supported when creating new tests?**
+Yes! The AI agent formats API requests dynamically. If your workspace requires custom fields, simply instruct the agent on which attributes to include during the test creation.
 
-**Q: Do I need to copy the project ID separately?**
-Yes. In PractiTest, APIs execute cleanly isolated within specific Project instances. You must provide the numeric Project ID alongside your Personal Token so the underlying `pt-engine` binds queries strictly to that project.
+**Q: Is there a limit on how many tests the agent can list at once?**
+The agent adheres to PractiTest API pagination limits. By default, it returns a single page of results, but you can explicitly ask the AI to query a different page number or limit.
 
 
 ## Installation & Usage

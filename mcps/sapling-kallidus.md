@@ -14,6 +14,9 @@ Empower your AI agents with Sapling's (by Kallidus) HR and onboarding platform. 
 
 
 ## Available Tools (10)
+- **list_job_titles**: Useful for standardized role auditing.
+
+Lists all configured job titles
 - **get_account**: Use to verify connection status and account settings.
 
 Retrieves details about your Sapling account
@@ -27,21 +30,18 @@ Lists all departments
 
 Lists all employees in Sapling
 - **list_groups**: Lists all custom employee groups
-- **list_job_titles**: Useful for standardized role auditing.
-
-Lists all configured job titles
-- **list_locations**: Useful for auditing site-based employee distribution.
-
-Lists all office locations
-- **list_offboarding_tasks**: Essential for ensuring secure and compliant offboarding workflows.
-
-Lists all offboarding tasks
 - **list_onboarding_tasks**: Essential for monitoring the progress of new hire integrations.
 
 Lists all onboarding tasks
 - **list_teams**: Useful for understanding internal team organization beyond departments.
 
 Lists all internal teams
+- **list_locations**: Useful for auditing site-based employee distribution.
+
+Lists all office locations
+- **list_offboarding_tasks**: Essential for ensuring secure and compliant offboarding workflows.
+
+Lists all offboarding tasks
 
 
 ## 💬 Prompt Examples

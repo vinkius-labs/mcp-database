@@ -35,16 +35,16 @@ Connect your **Planhat** workspace to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **get_planhat_company**: Get details for a specific company
-- **get_planhat_me**: Get current user info
-- **list_planhat_assets**: List all assets
-- **list_planhat_companies**: List all companies in Planhat
 - **list_planhat_conversations**: List all conversations
 - **list_planhat_end_users**: List all end users
 - **list_planhat_licenses**: List all licenses
 - **list_planhat_notes**: List all notes
-- **list_planhat_projects**: List all projects
 - **list_planhat_tasks**: List all tasks
+- **get_planhat_company**: Get details for a specific company
+- **get_planhat_me**: Get current user info
+- **list_planhat_assets**: List all assets
+- **list_planhat_companies**: List all companies in Planhat
+- **list_planhat_projects**: List all projects
 
 
 ## 💬 Prompt Examples

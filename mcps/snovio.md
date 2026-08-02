@@ -33,17 +33,17 @@ Connect **Snov.io** to your AI agent and manage your email finder, verifier, and
 
 
 ## Available Tools (8)
+- **get_balance**: io credits.
+
+Get credit balance
+- **list_prospect_lists**: List prospect lists
+- **get_prospect_by_email**: Get prospect
 - **domain_search**: Domain email search
 - **email_finder**: Find email
 - **email_verifier**: Verify emails
 - **add_prospect**: io list.
 
 Add prospect
-- **list_prospect_lists**: List prospect lists
-- **get_prospect_by_email**: Get prospect
-- **get_balance**: io credits.
-
-Get credit balance
 - **tech_checker**: Check domain technologies
 
 

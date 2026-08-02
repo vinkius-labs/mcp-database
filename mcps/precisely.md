@@ -35,12 +35,6 @@ Stop managing external map APIs or relying on outdated geocoders. Simply tell th
 
 
 ## Available Tools (10)
-- **autocomplete_address**: Returns up to 10 candidate addresses ranked by relevance. Designed for keystroke-by-keystroke usage in address input forms.
-
-Provide real-time address suggestions as users type using the Precisely Typeahead Autocomplete API, drawing from a comprehensive global address database to accelerate form completion and reduce entry errors
-- **enrich_crime_risk**: Returns crime indices normalized to a national average of 100 — values above 100 indicate higher-than-average risk.
-
-Assess the crime risk index for a specific location using the Precisely Risks API, returning normalized risk scores across categories like burglary, assault, vehicle theft, and overall crime relative to national averages
 - **enrich_demographics**: Returns rich socio-economic profiles for the census block or postal zone containing the coordinates.
 
 Retrieve detailed demographic segmentation data for a geographic coordinate using the Precisely Demographics API, including household income brackets, population density, education levels, age distribution, and consumer spending patterns
@@ -49,7 +43,7 @@ Retrieve detailed demographic segmentation data for a geographic coordinate usin
 Evaluate flood risk exposure for a specific location using the Precisely Environmental Risks API, returning FEMA flood zone designations, proximity to water bodies, elevation data, and flood risk scores
 - **geocode_address**: precisely.com. The API returns a ranked list of candidates with latitude, longitude, precision code, and match confidence. Always pass the most complete address string available to maximize match quality. The response includes PrecisionCode indicating match depth (S8 = rooftop, S5 = street-level).
 
-Forward-geocode a full or partial address string into geographic coordinates using the Precisely Geocoding API v1, which resolves against a world-class global address reference database covering 250+ countries and territories
+Forward-geocode a full or partial address string into geographic coordinates using the Precisely Geocoding API v1, which resolves against a world-class globalThis address reference database covering 250+ countries and territories
 - **get_local_tax**: Returns the combined tax rate and individual components (state, county, city, special district).
 
 Determine the applicable sales tax rate and tax jurisdiction for a geographic location using the Precisely Local Tax API, resolving complex overlapping US tax jurisdictions down to the rooftop level
@@ -58,13 +52,19 @@ Determine the applicable sales tax rate and tax jurisdiction for a geographic lo
 Retrieve comprehensive property attribute data for a US address using the Precisely Property API v2, including lot size, building square footage, year built, number of bedrooms/bathrooms, assessed value, and ownership information
 - **reverse_geocode**: Note the parameter order: x = longitude, y = latitude. Returns the closest matching address with full components (street, city, state, postal code, country).
 
-Convert geographic coordinates (latitude/longitude) back into a structured postal address using the Precisely Reverse Geocoding API, resolving the nearest rooftop-level address from the global reference database
+Convert geographic coordinates (latitude/longitude) back into a structured postal address using the Precisely Reverse Geocoding API, resolving the nearest rooftop-level address from the globalThis reference database
 - **get_timezone**: Returns the IANA timezone identifier (e.g. America/New_York), current UTC offset, and DST status.
 
 Resolve the timezone and current UTC offset for any geographic coordinate using the Precisely Timezone API, accounting for daylight saving time transitions and political boundary changes
 - **verify_address**: Returns a verified, standardized address with a verification status indicating if the address is deliverable, if components were corrected, or if the address is invalid.
 
 Validate and standardize a postal address against authoritative reference datasets using the Precisely Address Verification API, returning USPS/Royal Mail/local postal authority standardized formatting and deliverability status
+- **autocomplete_address**: Returns up to 10 candidate addresses ranked by relevance. Designed for keystroke-by-keystroke usage in address input forms.
+
+Provide real-time address suggestions as users type using the Precisely Typeahead Autocomplete API, drawing from a comprehensive globalThis address database to accelerate form completion and reduce entry errors
+- **enrich_crime_risk**: Returns crime indices normalized to a national average of 100 — values above 100 indicate higher-than-average risk.
+
+Assess the crime risk index for a specific location using the Precisely Risks API, returning normalized risk scores across categories like burglary, assault, vehicle theft, and overall crime relative to national averages
 
 
 ## 💬 Prompt Examples

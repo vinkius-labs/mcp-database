@@ -33,13 +33,13 @@ Connect your AI to **Sirv**, the image CDN and digital asset management platform
 
 
 ## Available Tools (9)
+- **get_account_stats**: Retrieves Sirv account storage and traffic statistics
+- **get_billing_info**: Retrieves billing details
+- **get_detailed_usage**: Retrieves detailed usage metrics
+- **get_file_details**: Retrieves details for a specific file
 - **delete_file**: This action is irreversible.
 
 Permanently deletes a file
-- **get_account_stats**: Retrieves Sirv account storage and traffic statistics
-- **get_billing_info**: Retrieves billing details
-- **get_file_details**: Retrieves details for a specific file
-- **get_detailed_usage**: Retrieves detailed usage metrics
 - **list_custom_domains**: Lists custom domains configured for the account
 - **list_account_users**: Lists all users in the Sirv account
 - **read_directory**: Requires the absolute path starting with "/".

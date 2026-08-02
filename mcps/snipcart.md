@@ -37,8 +37,8 @@ Stop digging through dashboard menus to figure out if your discount script is wo
 ## Available Tools (9)
 - **get_order_details**: Retrieves details for a specific order
 - **get_subscription_details**: Retrieves details for a specific subscription
-- **list_customers**: Lists all registered customers
 - **list_discounts**: Lists all active discount codes and promotions
+- **list_customers**: Lists all registered customers
 - **list_orders**: Lists all e-commerce orders in Snipcart
 - **list_products**: Lists all products configured in Snipcart
 - **list_subscriptions**: Lists all active and inactive subscriptions
