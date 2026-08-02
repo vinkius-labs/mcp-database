@@ -40,9 +40,6 @@ No API key required for public data — completely free.
 - **get_24h_ticker**: Includes last price, 24h change (price and %), high/low, volume (base and quote), number of trades and open interest. Useful for market overview and scanning.
 
 Get 24-hour rolling window price change statistics
-- **get_server_time**: Returns Unix timestamp in milliseconds and ISO string. Useful for synchronizing with the exchange server.
-
-Get Binance server time
 - **get_agg_trades**: Each aggregated trade includes trade ID, price, quantity, first/last trade IDs, timestamp and whether buyer was maker. More efficient than individual trades for high-volume pairs. Returns up to 500 (default) or 1000 trades.
 
 Get compressed/aggregated trades for a trading pair
@@ -55,12 +52,15 @@ Get candlestick (OHLCV) chart data for a trading pair
 - **get_order_book**: Each level includes price and quantity. The limit parameter controls the number of levels (5, 10, 20, 50, 100, 500, 1000, 5000). Useful for analyzing market depth, spread and liquidity.
 
 Get current order book (bids and asks) for a trading pair
-- **get_ticker_price**: Returns symbol and current price. If no symbol is specified, returns all pairs. Fastest way to get current prices.
+- **get_server_time**: Returns Unix timestamp in milliseconds and ISO string. Useful for synchronizing with the exchange server.
 
-Get latest price for trading pair(s)
+Get Binance server time
 - **get_trades**: Each trade includes trade ID, price, quantity, time, whether buyer was maker and if it was the best price match. Returns up to 500 trades (default 500, max 1000 via limit). Useful for analyzing recent market activity.
 
 Get recent individual trades for a trading pair
+- **get_ticker_price**: Returns symbol and current price. If no symbol is specified, returns all pairs. Fastest way to get current prices.
+
+Get latest price for trading pair(s)
 
 
 ## 💬 Prompt Examples

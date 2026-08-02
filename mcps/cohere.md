@@ -42,9 +42,6 @@ Send a chat message to a Cohere model
 - **detokenize**: Requires the token IDs array. Returns the reconstructed text. Useful for debugging and verifying tokenization.
 
 Detokenize token IDs back to text using Cohere
-- **embed**: Requires the model ID (e.g. "embed-v4", "embed-v3"), texts array and input_type ("search_document", "search_query", "classification", "clustering"). Returns embedding vectors for each input text. Useful for semantic search, similarity comparison and vector database storage.
-
-Generate embeddings using Cohere
 - **list_models**: Each model returns its name (e.g. "command-r-plus", "command-r", "embed-v4", "rerank-v3.5"), endpoint compatibility, context length and tokenization info. Use this to discover which models are available and their capabilities.
 
 List all available Cohere models
@@ -54,6 +51,9 @@ Rerank documents by relevance to a query
 - **tokenize**: Requires the text to tokenize and optionally the model. Returns the list of token IDs and token strings. Useful for estimating token counts before sending to chat or embed endpoints.
 
 Tokenize text using Cohere
+- **embed**: Requires the model ID (e.g. "embed-v4", "embed-v3"), texts array and input_type ("search_document", "search_query", "classification", "clustering"). Returns embedding vectors for each input text. Useful for semantic search, similarity comparison and vector database storage.
+
+Generate embeddings using Cohere
 
 
 ## 💬 Prompt Examples

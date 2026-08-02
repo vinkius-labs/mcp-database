@@ -34,19 +34,13 @@ Connect your Microsoft **Bing Search** API key to any AI agent and empower it wi
 
 
 ## Available Tools (10)
-- **search_local**: Force explicit Local Business listing extraction over standard web nodes
-- **search_news**: 0/news/search` resolving syndicated global PR articles grouped by timestamp clusters.
-
-Query explicitly syndicated News articles across global PR sources
-- **custom_search**: 0/custom/search` restricting queries strictly into pre-built whitelist domains.
-
-Perform search locked explicitly to a predefined Configuration ID
-- **search_entities**: 0/entities` bounding rich structured data resolving Famous Persons, Places, or Objects.
-
-Retrieve deeply structured Entity graphs (Knowledge Graph mappings)
 - **search_images**: 0/images/search` filtering explicit image thumbnails parsing pixel dimensions natively.
 
 Search for explicit Image results matching a keyword string
+- **search_local**: Force explicit Local Business listing extraction over standard web nodes
+- **search_news**: 0/news/search` resolving syndicated globalThis PR articles grouped by timestamp clusters.
+
+Query explicitly syndicated News articles across globalThis PR sources
 - **spellcheck**: 0/spellcheck` correcting string tokens natively via semantic NLP boundaries.
 
 Execute explicit semantic NLP spell checking on short strings
@@ -62,6 +56,12 @@ Retrieve explicitly indexed Video stream links and metadata
 - **search_web**: 0/search` scraping up to 50 organic results mapped directly from the Microsoft Graph.
 
 Perform an explicit Web search using the Microsoft Bing Graph
+- **custom_search**: 0/custom/search` restricting queries strictly into pre-built whitelist domains.
+
+Perform search locked explicitly to a predefined Configuration ID
+- **search_entities**: 0/entities` bounding rich structured data resolving Famous Persons, Places, or Objects.
+
+Retrieve deeply structured Entity graphs (Knowledge Graph mappings)
 
 
 ## 💬 Prompt Examples

@@ -33,6 +33,9 @@ Connect your AI agent to **Mem0** — the industry-standard memory layer that en
 
 
 ## Available Tools (4)
+- **add_memory**: The system automatically extracts structured facts from the provided content and stores them as searchable, persistent memories associated with the given user ID.
+
+Store a new memory for a user. The AI extracts key facts and preferences from the content and stores them as persistent memories
 - **delete_memory**: Use with caution — this action cannot be undone.
 
 Delete a specific memory by its ID
@@ -42,9 +45,6 @@ List all stored memories for a specific user
 - **search_memories**: Returns results ranked by relevance score, enabling the agent to recall past preferences, facts, and context.
 
 Semantically search stored memories for a specific user. Returns the most relevant memories matching your query
-- **add_memory**: The system automatically extracts structured facts from the provided content and stores them as searchable, persistent memories associated with the given user ID.
-
-Store a new memory for a user. The AI extracts key facts and preferences from the content and stores them as persistent memories
 
 
 ## 💬 Prompt Examples

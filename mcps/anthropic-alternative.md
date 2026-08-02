@@ -35,15 +35,6 @@ No more switching between API tools to interact with Claude. Your AI acts as an 
 
 
 ## Available Tools (6)
-- **cancel_batch_message**: Requests that have already been completed cannot be cancelled. Provide the batch ID. This is useful if you submitted a large batch by mistake and want to stop further processing to save costs.
-
-Cancel an in-progress batch message request
-- **count_tokens**: Requires the model ID and messages array. Returns the total input token count. Useful for estimating API costs and ensuring messages fit within context limits.
-
-Count tokens in a message before sending to Claude
-- **create_batch_message**: Each request in the batch has its own model, messages, max_tokens, etc. This is more cost-effective than individual requests when you have many independent prompts to process. Returns a batch ID for tracking. Use get_batch_message to check progress.
-
-Create a batch of message requests to Claude
 - **get_batch_message**: Returns the batch status (in_progress, succeeded, expired, canceling, canceled, failed), request counts (total, succeeded, errored) and individual results. Use the batch ID returned from create_batch_message.
 
 Get the status of a batch message request
@@ -53,6 +44,15 @@ List all available Anthropic Claude models
 - **send_message**: Requires the model ID (e.g. "claude-sonnet-4-20250514") and messages array in JSON format. Each message must have a "role" ("user" or "assistant") and "content" (text or array of content blocks). Optionally set max_tokens (default 1024), system prompt and temperature (0-1). Returns the assistant's response text.
 
 Send a message to Claude (Messages API)
+- **cancel_batch_message**: Requests that have already been completed cannot be cancelled. Provide the batch ID. This is useful if you submitted a large batch by mistake and want to stop further processing to save costs.
+
+Cancel an in-progress batch message request
+- **count_tokens**: Requires the model ID and messages array. Returns the total input token count. Useful for estimating API costs and ensuring messages fit within context limits.
+
+Count tokens in a message before sending to Claude
+- **create_batch_message**: Each request in the batch has its own model, messages, max_tokens, etc. This is more cost-effective than individual requests when you have many independent prompts to process. Returns a batch ID for tracking. Use get_batch_message to check progress.
+
+Create a batch of message requests to Claude
 
 
 ## 💬 Prompt Examples

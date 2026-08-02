@@ -35,6 +35,8 @@ Connect your **Jina AI** account to any AI agent and take full control of state-
 
 
 ## Available Tools (6)
+- **classify_texts**: Perform zero-shot text classification
+- **segment_content**: Semantically segment and chunk long text content
 - **generate_embeddings**: The input must be a JSON array of strings.
 
 Generate vector embeddings from text
@@ -45,8 +47,6 @@ Read and extract clean text from a URL
 - **search_web_jina**: Returns context-rich structured search results, suitable for RAG pipelines.
 
 Perform a semantic web search
-- **classify_texts**: Perform zero-shot text classification
-- **segment_content**: Semantically segment and chunk long text content
 
 
 ## 💬 Prompt Examples

@@ -25,10 +25,6 @@ Connect the **OpenAI** API to any AI agent and unlock the full power of GPT mode
 
 
 ## Available Tools (10)
-- **create_fine_tune**: Requires a previously uploaded JSONL training file ID.
-
-Create a fine-tuning job
-- **list_fine_tunes**: List fine-tuning jobs
 - **chat_completion**: Specify model (gpt-4o, gpt-4o-mini, etc.) and messages array as JSON.
 
 Generate a chat completion using OpenAI models
@@ -37,6 +33,10 @@ Generate a chat completion using OpenAI models
 Generate structured JSON output from a prompt
 - **list_models**: List available OpenAI models
 - **create_embedding**: Create text embeddings
+- **create_fine_tune**: Requires a previously uploaded JSONL training file ID.
+
+Create a fine-tuning job
+- **list_fine_tunes**: List fine-tuning jobs
 - **generate_image**: Returns the image URL.
 
 Generate an image with DALL-E 3

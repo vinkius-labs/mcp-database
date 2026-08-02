@@ -5,48 +5,49 @@
 
 ## Overview
 
-**Category:** [superpower](../categories/superpower.md)
+**Category:** [ai-frontier](../categories/ai-frontier.md)
 
-Empower LLM applications via Groq — perform ultra-fast LPU-accelerated chat completions, handle audio transcription and translation, and use JSON mode directly from any AI agent.
+Run large language models at unprecedented speed with custom LPU hardware that delivers real-time AI inference at massive scale.
 
 ## Description
-Connect your **Groq** account to any AI agent and take full control of your high-speed generative AI inference and LPU-accelerated LLM workflows through natural conversation.
+Connect your **Groq Cloud** account to any AI agent and leverage the incredible speed of LPU™ (Language Processing Unit) technology for real-time inference and content generation.
 
 ### What you can do
 
-- **LPU Chat Orchestration** — Execute blazing-fast text generation against hardware-accelerated Groq endpoints, utilizing Llama 3, Mixtral, and more flawlessly
-- **Intelligent Audio Transcription** — Parse audio streams into high-accuracy language transcripts utilizing hardware-optimized Whisper models natively
-- **Cross-Lingual Translation** — Evaluate non-English audio files and retrieve immediate translations exclusively into English text synchronousy
-- **Structured JSON Mode** — Constrain AI text inference explicitly to rigid valid JSON formatting to automate data population and system integrations flawlessly
-- **Tool & Function Calling** — Bind external definitions resolving explicit function call JSON architectures to enable your AI agents to interact with tools securely
-- **Model Discovery** — Enumerate available high-speed models and retrieve specific model IDs and versions for precise active inference boundaries natively
-- **Inference Auditing** — Monitor model capabilities and metadata properties to ensure your AI agents are utilizing the most efficient architectural instances synchronousy
+- **Chat Orchestration** — Generate high-speed chat completions using state-of-the-art models like Llama 3.3 and Mixtral with sub-second latency
+- **Model Intelligence** — List all available high-performance models and retrieve detailed metadata regarding ownership and capabilities
+- **Text Processing** — Programmatically summarize long documents, analyze sentiment, and translate text between languages instantly
+- **Developer Automation** — Generate optimized code snippets, explain complex logic, and perform grammar correction through natural language
+- **Entity Extraction** — Identify and extract structured information (names, dates, locations) from unstructured text as JSON objects
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Groq API Key (found in your Groq Cloud Dashboard > API Keys)
-3. Start managing your ultra-fast AI inference from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your API Key from the Groq Cloud console (API Keys section)
+3. Start leveraging high-speed LLM inference from Claude, Cursor, or any MCP client
+
+No more waiting for slow model responses. Your AI acts as a real-time intelligence engine delivering results in milliseconds.
 
 ### Who is this for?
 
-- **AI Developers** — test and debug LLM prompts and tool-calling logic with sub-second latency
-- **Software Engineers** — generate structured JSON data and transcribe audio files directly from the IDE or chat
-- **Product Teams** — monitor model availability and test generative AI features with real-time speed
-- **Data Scientists** — evaluate different open-source model performances on Groq's LPU architecture through natural conversation
+- **AI Developers** — build low-latency applications and experiment with different high-performance models programmatically
+- **Data Analysts** — process large volumes of text for sentiment and entity extraction without the friction of traditional LLM speeds
+- **Technical Writers** — instantly summarize technical docs and explain code snippets for documentation workflows
 
 
-## Available Tools (8)
-- **chat_completion**: Supports Llama, Mixtral, Gemma models.
+## Available Tools (10)
+- **fix_grammar**: Correct grammar and spelling errors
+- **create_chat_completion**: Supports models like llama-3.3-70b-versatile.
 
-Generate a chat completion with ultra-fast inference
-- **list_models**: List available models
-- **get_model**: Get model details
-- **create_embedding**: Create text embeddings
-- **transcribe_audio**: Transcribe audio to text
-- **translate_audio**: Translate audio to English text
-- **moderate_content**: Check content for safety
-- **structured_output**: Generate structured JSON output
+Generate a response using Groq LLM
+- **explain_code**: Explain how a code snippet works
+- **extract_entities**: Extract named entities from text
+- **generate_code**: Generate code snippets from natural language
+- **get_model_details**: Get metadata for a specific model
+- **list_available_models**: List all available high-performance models
+- **analyze_sentiment**: Analyze sentiment of a text
+- **summarize_text**: Summarize long text using Llama 3
+- **translate_text**: Translate text between languages
 
 
 ## 💬 Prompt Examples
@@ -54,38 +55,38 @@ Generate a chat completion with ultra-fast inference
 Here are some examples of how you can interact with the **Groq** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Ask llama3-70b: 'Write a python function to scrape a website.'"
+> "Summarize this long technical document: [text]"
 
 **🤖 AI Agent:**
-> Inference complete! Llama 3 response: 'Here is a simple python function using BeautifulSoup and requests to scrape data...' [Blazing-fast response delivered via Groq LPU].
+> Processing with Groq... I've summarized the document into 5 key points. The main focus is on decentralized architecture and latency optimization. Would you like a more detailed breakdown of the second section?
 
 ---
 
 **👤 You:**
-> "Transcribe this audio meeting: https://example.com/meeting.mp3"
+> "Generate a Python script for real-time data visualization."
 
 **🤖 AI Agent:**
-> Transcription started! I'm using Groq optimized Whisper large-v3 model to parse your meeting audio. I'll provide the full timestamped text for you in just a few seconds.
+> Generating code... I've written a Python script using Matplotlib and FuncAnimation for real-time visualization. It includes a mock data generator and a smooth updating plot. Shall I explain how it handles the animation loop?
 
 ---
 
 **👤 You:**
-> "Get model info for 'mixtral-8x7b-32768'"
+> "Analyze the sentiment of this user feedback: 'The speed is amazing but the UI needs work'."
 
 **🤖 AI Agent:**
-> Retrieving model metadata... Mixtral-8x7b-32768 is a high-performance LLM with a context window of 32,768 tokens. It supports chat completions and tool-calling on Groq's LPU architecture.
+> Analyzing sentiment... The overall sentiment is 'Neutral' to 'Positive'. The user is highly satisfied with performance (speed) but expresses a specific pain point regarding the user interface. I've logged this as a potential UI improvement task.
 
 
 ## ❓ FAQ
 
-**Q: How fast are Groq's chat completions compared to standard GPUs?**
-Groq's LPU architecture is designed for extreme low-latency inference, often delivering hundreds of tokens per second. Your agent uses the 'chat' tool to execute these blazing-fast requests, returning AI responses almost instantly.
+**Q: How do I get a Groq API Key?**
+Log in to your [**Groq Cloud account**](https://console.groq.com/), navigate to the **API Keys** section, and click **Create API Key**.
 
-**Q: Can my agent transcribe long audio files using Groq Whisper?**
-Yes. Use the 'transcribe' tool. Provide the public URL of your audio file and select a Whisper model (e.g., 'whisper-large-v3'). The agent will parse the stream and return the full text transcript flawlessly.
+**Q: Which models provide the best performance?**
+Models like `llama-3.3-70b-versatile` and `mixtral-8x7b-32768` provide an excellent balance of high-fidelity reasoning and speed on Groq.
 
-**Q: How do I ensure the AI response is formatted as valid JSON via chat?**
-Use the 'chat_json' tool. This activates Groq's JSON mode, which explicitly constrains the text inference to rigid, valid JSON formatting, making it perfect for direct system integrations.
+**Q: Can I use Groq for code generation?**
+Yes! Use the `generate_code` and `explain_code` tools to ask the models to write snippets or provide step-by-step logic explanations.
 
 
 ## Installation & Usage

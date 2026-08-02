@@ -38,6 +38,8 @@ Connect your **ElevenLabs** account to any AI agent and take full control of you
 
 ## Available Tools (10)
 - **get_voice**: Get voice details
+- **list_voices**: List all available voices
+- **list_pronunciation_dictionaries**: List pronunciation dictionaries
 - **text_to_speech**: Returns audio metadata. Supports 29+ languages.
 
 Convert text to speech audio
@@ -47,8 +49,6 @@ Convert text to speech audio
 - **get_user_info**: Get user profile info
 - **get_subscription**: Get subscription details
 - **list_projects**: List dubbing/voice projects
-- **list_voices**: List all available voices
-- **list_pronunciation_dictionaries**: List pronunciation dictionaries
 
 
 ## 💬 Prompt Examples

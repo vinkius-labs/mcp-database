@@ -35,12 +35,12 @@ Connect your **LlamaIndex (LlamaCloud)** account to any AI agent and take full c
 
 
 ## Available Tools (6)
-- **list_pipelines**: List LlamaCloud deployed data pipelines
 - **get_pipeline**: Get configuration details for a specific pipeline
 - **list_indexes**: List LlamaCloud active indexes
 - **query_pipeline**: Execute a natural language query against a specific Pipeline
 - **list_files**: List raw source files currently ingested by a pipeline
 - **list_projects**: List active LlamaCloud projects
+- **list_pipelines**: List LlamaCloud deployed data pipelines
 
 
 ## 💬 Prompt Examples

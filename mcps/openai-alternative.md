@@ -48,9 +48,6 @@ Create a new batch processing job
 - **delete_file**: Provide the file ID from list_files. WARNING: this action is irreversible and will break any fine-tunes or assistants using this file.
 
 Delete an uploaded file from OpenAI
-- **get_assistant**: Provide the assistant ID.
-
-Get details for a specific OpenAI Assistant
 - **get_batch**: Provide the batch ID.
 
 Get details for a specific batch job
@@ -75,6 +72,9 @@ List fine-tuning jobs
 - **list_models**: 5, DALL-E, Whisper, Embedding and fine-tuned models. Each model returns its ID, owned_by (organization), creation date and permissions. Use this to discover which models are available for your account and their capabilities.
 
 List all available OpenAI models
+- **get_assistant**: Provide the assistant ID.
+
+Get details for a specific OpenAI Assistant
 
 
 ## 💬 Prompt Examples

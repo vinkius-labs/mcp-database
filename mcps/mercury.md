@@ -33,16 +33,16 @@ Connect your **Mercury** business banking account to your AI agent and manage yo
 
 
 ## Available Tools (10)
+- **list_recipients**: List payment recipients
+- **list_payments**: List sent payments
 - **list_accounts**: List all Mercury bank accounts
 - **list_team_members**: List all team members
 - **get_account**: Get bank account details
 - **list_transactions**: List recent transactions
 - **get_transaction**: Get transaction details
-- **list_recipients**: List payment recipients
 - **create_recipient**: Required for sending payments.
 
 Create a new payment recipient
-- **list_payments**: List sent payments
 - **list_statements**: List bank statements
 - **get_treasury_balance**: Get treasury balance overview
 

@@ -35,16 +35,16 @@ Connect your natural language AI directly to the **Boeing Developer Tools (BDT)*
 
 
 ## Available Tools (10)
-- **get_runway_monitor**: Real-time airport runway congestion monitor
-- **check_part_availability**: Check Boeing part stock availability & pricing
-- **get_aerodrome_details**: Get thorough Jeppesen data for an airport/aerodrome
 - **get_aircraft_specs**: Get detailed Boeing aircraft model specifications
+- **search_notams**: Search for Notice to Air Missions (NOTAMs)
+- **get_aerodrome_details**: Get thorough Jeppesen data for an airport/aerodrome
 - **get_airspace_info**: Retrieve airspace restrictions and metadata
 - **get_flight_events**: Get real-time flight tracking events and status
+- **get_runway_monitor**: Real-time airport runway congestion monitor
 - **get_taxi_time**: Get real-time taxi times for an airport
-- **search_notams**: Search for Notice to Air Missions (NOTAMs)
-- **search_boeing_parts**: Search the Boeing global aviation supply chain
+- **search_boeing_parts**: Search the Boeing globalThis aviation supply chain
 - **search_runways**: Search for runways and parameters of an airport
+- **check_part_availability**: Check Boeing part stock availability & pricing
 
 
 ## 💬 Prompt Examples
