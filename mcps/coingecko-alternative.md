@@ -36,14 +36,11 @@ No more manual searching through charts. Your AI can now calculate portfolio val
 
 
 ## Available Tools (29)
+- **list_asset_platforms**: List all asset platforms
+- **get_coin_history**: Get historical data at a given date
 - **get_coin_market_chart_range**: Get historical market data within a range of timestamp
-- **get_coin_market_chart**: Get historical market data
 - **get_coin_ohlc**: Get coin OHLC data
 - **get_coin_tickers**: Get coin tickers
-- **get_coin**: including exchange tickers) for a coin.
-
-Get current data for a coin
-- **list_coins**: List all supported coins id, name and symbol
 - **list_coins_markets**: List all supported coins price, market cap, volume, and market related data
 - **get_exchange_tickers**: Get exchange tickers
 - **get_exchange**: Get exchange volume in BTC and tickers
@@ -53,24 +50,27 @@ Get current data for a coin
 - **get_global_defi**: Get top 100 cryptocurrencies global DeFi data
 - **get_global**: Get cryptocurrency global data
 - **get_nft_by_contract**: Get NFT data by contract address
-- **get_nft**: ) for an NFT collection.
-
-Get current data for an NFT collection
 - **list_nfts**: List all supported NFT collections
 - **list_onchain_dexes**: List supported DEXes on a network
 - **list_onchain_networks**: List all supported networks on GeckoTerminal
 - **get_onchain_pool**: Get liquidity pool data by address
 - **get_onchain_pool_trades**: Get latest trades from a pool
 - **get_onchain_token**: Get token data by contract address
-- **get_public_treasury**: g., bitcoin, ethereum).
-
-Get public companies holdings for a specific coin
 - **get_simple_price**: Get current price of cryptocurrencies
 - **get_simple_token_price**: Get current price of tokens for a given platform
 - **get_supported_vs_currencies**: Get list of supported vs currencies
 - **get_trending**: Get trending search coins
-- **list_asset_platforms**: List all asset platforms
-- **get_coin_history**: Get historical data at a given date
+- **get_coin_market_chart**: Get historical market data
+- **get_coin**: including exchange tickers) for a coin.
+
+Get current data for a coin
+- **list_coins**: List all supported coins id, name and symbol
+- **get_nft**: ) for an NFT collection.
+
+Get current data for an NFT collection
+- **get_public_treasury**: g., bitcoin, ethereum).
+
+Get public companies holdings for a specific coin
 
 
 ## 💬 Prompt Examples

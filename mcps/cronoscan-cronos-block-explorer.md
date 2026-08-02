@@ -34,14 +34,15 @@ Connect to **Cronoscan** to analyze the Cronos blockchain through natural conver
 
 
 ## Available Tools (24)
-- **get_balance_multi**: Get CRO Balance for Multiple Addresses
 - **get_balance**: Get CRO Balance for a Single Address
+- **get_logs**: Get Logs
+- **get_source_code**: Get Contract Source Code for Verified Source Codes
+- **get_tx_list**: Get a List of Normal Transactions By Address
+- **get_balance_multi**: Get CRO Balance for Multiple Addresses
 - **get_eth_price**: Get CRO Last Price
 - **get_eth_supply**: Get Total Supply of CRO on Cronos
 - **get_abi**: Get Contract ABI for Verified Source Codes
 - **get_block_reward**: Get Block Rewards by BlockNo
-- **get_logs**: Get Logs
-- **get_source_code**: Get Contract Source Code for Verified Source Codes
 - **get_tx_receipt_status**: Check Transaction Receipt Status
 - **proxy_eth_block_number**: Proxy: eth_blockNumber
 - **proxy_eth_call**: Proxy: eth_call
@@ -53,11 +54,10 @@ Connect to **Cronoscan** to analyze the Cronos blockchain through natural conver
 - **proxy_eth_get_transaction_by_hash**: Proxy: eth_getTransactionByHash
 - **proxy_eth_get_transaction_receipt**: Proxy: eth_getTransactionReceipt
 - **get_token_balance**: Get ERC20-Token Account Balance by ContractAddress
-- **get_token_tx**: Get ERC20 Token Transfer Events by Address
-- **get_tx_list_internal**: Get a List of Internal Transactions By Address
-- **get_tx_list**: Get a List of Normal Transactions By Address
 - **get_token_nft_tx**: Get ERC721 Token Transfer Events by Address
 - **get_token_supply**: Get ERC20-Token Total Supply by ContractAddress
+- **get_token_tx**: Get ERC20 Token Transfer Events by Address
+- **get_tx_list_internal**: Get a List of Internal Transactions By Address
 
 
 ## 💬 Prompt Examples

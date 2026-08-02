@@ -34,21 +34,21 @@ Connect to **Corescan**, the premier block explorer for the Core DAO network, an
 
 
 ## Available Tools (15)
-- **get_block_reward**: Get block rewards by block number
+- **get_account_balance**: Get CORE balance for a single address
+- **get_block_countdown**: Get estimated block countdown time
 - **get_contract_abi**: Get Contract ABI for verified source codes
 - **get_contract_source_code**: Get Contract Source Code for verified source codes
 - **get_erc20_transfers**: Get ERC20 token transfer events by address
 - **get_erc721_transfers**: Get ERC721 token transfer events by address
 - **get_internal_transactions**: Get a list of internal transactions by address
-- **get_last_price**: Get CORE last price
 - **get_logs**: Get event logs
 - **get_normal_transactions**: Get a list of normal transactions by address
 - **get_total_supply**: Get total supply of CORE
+- **get_block_reward**: Get block rewards by block number
+- **get_last_price**: Get CORE last price
 - **get_tx_receipt_status**: Check transaction receipt status
 - **get_tx_status**: Check contract execution status
 - **get_account_balance_multi**: Get CORE balance for multiple addresses
-- **get_account_balance**: Get CORE balance for a single address
-- **get_block_countdown**: Get estimated block countdown time
 
 
 ## 💬 Prompt Examples
