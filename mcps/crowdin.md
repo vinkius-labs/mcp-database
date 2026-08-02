@@ -33,24 +33,6 @@ Integrate **Crowdin**, the leading localization management platform, directly in
 
 
 ## Available Tools (10)
-- **list_project_screenshots**: Resolves screenshot IDs, tags, and linked string identifiers used for visual context.
-
-List all screenshots uploaded to a project for context
-- **get_file_details**: Touches file structure, revision history, and per-language translation status boundaries.
-
-Get metadata for a specific file in a project
-- **get_project_details**: Touches source/target language settings and project-level activity summary boundaries.
-
-Get detailed settings and status for a project
-- **list_project_files**: Resolves file names, IDs, paths, and current translation progress metrics.
-
-List all files within a specific project
-- **list_glossaries**: Resolves glossary names, IDs, and language pairs used for terminology management.
-
-List all glossaries available in the account
-- **list_translation_memories**: Resolves TM names, IDs, and segment counts for reuse in future translations.
-
-List all translation memories (TMs) available
 - **list_supported_languages**: Resolves language codes, human-readable names, and locale identifiers.
 
 List all languages supported by Crowdin
@@ -63,6 +45,24 @@ List generated reports for a specific project
 - **list_project_tasks**: Resolves task titles, types (Translation, Proofreading), status, and assigned linguist references.
 
 List translation and proofreading tasks for a project
+- **get_file_details**: Touches file structure, revision history, and per-language translation status boundaries.
+
+Get metadata for a specific file in a project
+- **get_project_details**: Touches source/target language settings and project-level activity summary boundaries.
+
+Get detailed settings and status for a project
+- **list_project_files**: Resolves file names, IDs, paths, and current translation progress metrics.
+
+List all files within a specific project
+- **list_glossaries**: Resolves glossary names, IDs, and language pairs used for terminology management.
+
+List all glossaries available in the account
+- **list_project_screenshots**: Resolves screenshot IDs, tags, and linked string identifiers used for visual context.
+
+List all screenshots uploaded to a project for context
+- **list_translation_memories**: Resolves TM names, IDs, and segment counts for reuse in future translations.
+
+List all translation memories (TMs) available
 
 
 ## 💬 Prompt Examples

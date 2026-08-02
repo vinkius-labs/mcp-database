@@ -36,16 +36,16 @@ Connect your **D-ID** account to any AI agent and take full control of your AI v
 
 
 ## Available Tools (10)
-- **create_talk**: Create a talking avatar video using D-ID. An AI avatar speaks your text with lip-sync and natural expressions
-- **create_talk_audio**: Create a D-ID talking avatar from a pre-recorded audio file. Avatar lip-syncs to your audio
 - **get_talk**: Wait for creation to finish.
 
 Get status of a D-ID talk. Returns status (created/started/done/error), result_url when done
 - **list_talks**: List all D-ID talks. Returns talk IDs, statuses, and creation timestamps
+- **list_presenters**: List available D-ID presenters. Returns presenter IDs, names, and preview images
+- **create_talk**: Create a talking avatar video using D-ID. An AI avatar speaks your text with lip-sync and natural expressions
+- **create_talk_audio**: Create a D-ID talking avatar from a pre-recorded audio file. Avatar lip-syncs to your audio
 - **delete_talk**: Delete a D-ID talk
 - **create_clip**: Create a D-ID clip using a stock presenter (no image needed). Pre-built digital humans with backgrounds
 - **get_clip**: Get status of a D-ID clip. Returns status and result URL
-- **list_presenters**: List available D-ID presenters. Returns presenter IDs, names, and preview images
 - **upload_image**: Upload a face image to D-ID for use as avatar source. Returns image URL
 - **get_credits**: Get current D-ID credit balance and plan info
 

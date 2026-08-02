@@ -33,9 +33,6 @@ Integrate **Copper**, the CRM designed for Google Workspace, directly into your 
 
 
 ## Available Tools (10)
-- **create_lead**: Creates a new lead record with identity properties and prepares it for pipeline entry.
-
-Create a new lead in the CRM
 - **get_lead_details**: Resolves granular profile data including contact history, custom field values, and system-level metadata.
 
 Get detailed information for a specific lead
@@ -60,6 +57,9 @@ List all projects in Copper
 - **list_tasks**: Resolves actionable item properties including task descriptions, due dates, and associated CRM records.
 
 List tasks and follow-ups
+- **create_lead**: Creates a new lead record with identity properties and prepares it for pipeline entry.
+
+Create a new lead in the CRM
 - **log_activity**: Resolves and links activity details, types, and parent entity identifiers across the CRM interaction boundary.
 
 Log a new activity (call, email, meeting) for a record

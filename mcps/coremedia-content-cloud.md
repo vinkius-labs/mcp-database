@@ -40,13 +40,13 @@ Connect your **CoreMedia Content Cloud** headless server to any AI agent and tak
 - **execute_graphql_payload**: Identify bounded routing spaces inside the Headless CoreMedia Delivery Schema
 - **get_cmarticle_path**: Perform structural extraction of properties driving active CMArticle nodes
 - **get_cmpicture_asset**: Retrieve explicit Cloud logging tracing explicit Image Assets
+- **search_global_content**: Inspect deep internal arrays mitigating specific Content constraints
 - **get_navigation_tree**: Identify precise active arrays spanning native navigation hierarchies
 - **get_cmchannel_page**: Enumerate explicitly attached structured rules exporting active CMChannel layouts
 - **get_site_context**: Retrieve the exact structural matching verifying Multi-brand environments
 - **get_cmviewtypes**: Irreversibly vaporize explicit App nodes dropping live Database bytes
 - **get_introspection_query**: Dispatch an automated validation check routing explicit Schema limits
-- **execute_persisted_query**: Mutate global Web CRM boundaries substituting Draft Document schemas
-- **search_global_content**: Inspect deep internal arrays mitigating specific Content constraints
+- **execute_persisted_query**: Mutate globalThis Web CRM boundaries substituting Draft Document schemas
 
 
 ## 💬 Prompt Examples

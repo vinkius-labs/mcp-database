@@ -48,6 +48,12 @@ List accounts associated with your organization
 - **list_analytics_datasets**: Resolves dataset identifiers and types. Touches the reporting data-warehouse boundary.
 
 List available analytics datasets for reporting
+- **list_employees**: Resolves properties such as user ID, email, and employee status. Interacts with the employee directory boundary.
+
+List all employees in Culture Amp
+- **search_employees_by_name**: Resolves matched employee profiles. Touches the search and discovery boundary.
+
+Search for employees by name or email keyword
 - **list_demographic_fields**: Resolves demographic field names and identifiers. Touches the metadata and segmentation boundary.
 
 List demographics used for reporting segments
@@ -57,12 +63,6 @@ List groups and teams defined in Culture Amp
 - **list_engagement_surveys**: Resolves survey IDs, titles, and lifecycle statuses (active, closed). Interacts with the feedback analytics boundary.
 
 List all engagement and experience surveys
-- **list_employees**: Resolves properties such as user ID, email, and employee status. Interacts with the employee directory boundary.
-
-List all employees in Culture Amp
-- **search_employees_by_name**: Resolves matched employee profiles. Touches the search and discovery boundary.
-
-Search for employees by name or email keyword
 
 
 ## 💬 Prompt Examples

@@ -45,7 +45,7 @@ Connect your **DatoCMS** project to any AI agent and take full control of your h
 - **list_global_models**: Enumerate explicitly attached structured rules exporting Item Types
 - **list_cma_records**: Retrieve explicit Cloud logging tracing explicit JSON:API arrays
 - **list_media_uploads**: Inspect deep internal arrays mitigating specific Image storage
-- **patch_cms_record**: Mutate global Web CRM boundaries substituting Item parameters safely
+- **patch_cms_record**: Mutate globalThis Web CRM boundaries substituting Item parameters safely
 
 
 ## 💬 Prompt Examples

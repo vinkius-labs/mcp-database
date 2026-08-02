@@ -33,6 +33,12 @@ Integrate **Degreed**, the leading upskilling and learning experience platform (
 
 
 ## Available Tools (10)
+- **list_degreed_users**: Returns a list of users with metadata including system IDs, professional titles, and organizational affiliations.
+
+List all users registered in your Degreed organization
+- **search_learning_catalog**: Matches terms against titles, descriptions, and skill tags to return a ranked list of relevant learning materials.
+
+Search for learning content by keyword or term
 - **get_content_details**: Resolves detailed descriptions, associated skill tags, and duration metadata.
 
 Get detailed metadata for a specific learning item
@@ -57,12 +63,6 @@ List the skills taxonomy defined in your organization
 - **list_user_completions**: Returns a history of all learned items with completion timestamps and earned skill points.
 
 List all learning content completed by a specific user
-- **list_degreed_users**: Returns a list of users with metadata including system IDs, professional titles, and organizational affiliations.
-
-List all users registered in your Degreed organization
-- **search_learning_catalog**: Matches terms against titles, descriptions, and skill tags to return a ranked list of relevant learning materials.
-
-Search for learning content by keyword or term
 
 
 ## 💬 Prompt Examples

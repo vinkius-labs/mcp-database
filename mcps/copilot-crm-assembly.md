@@ -32,21 +32,6 @@ Integrate **Copilot** (now rebranding to **Assembly**), the leading client porta
 
 
 ## Available Tools (10)
-- **create_client**: Creates a new client record with identity properties (name, email) and optional company linkages.
-
-Create a new client in the portal
-- **get_client_details**: Resolves granular profile data, including contact information, associated company linkages, and system-level metadata.
-
-Get detailed information about a specific client
-- **list_clients**: Resolves client identity properties including unique identifiers, names, emails, and account status across the portal system boundary.
-
-List all clients in your Copilot CRM
-- **list_companies**: Resolves corporate entity properties such as company IDs, legal names, and primary contact associations.
-
-List all companies in your Copilot CRM
-- **list_custom_fields**: Resolves custom field definitions, including field keys, data types, and display labels used across various entities.
-
-Retrieve definitions for custom fields used in CRM
 - **list_files**: Resolves file metadata including filenames, storage paths, upload timestamps, and access permissions.
 
 List files uploaded to the Copilot portal
@@ -56,12 +41,27 @@ List intake or feedback forms available
 - **list_invoices**: Resolves billing data including amounts, due dates, payment status, and client/company bill-to associations.
 
 List all invoices and their statuses
-- **list_portal_messages**: Resolves portal message threads, including sender/receiver identity, message content summary, and timestamps.
-
-List messages sent through the client portal
 - **update_client**: Modifies specific attributes like name or account status while preserving other entity properties.
 
 Update existing client details
+- **list_companies**: Resolves corporate entity properties such as company IDs, legal names, and primary contact associations.
+
+List all companies in your Copilot CRM
+- **list_custom_fields**: Resolves custom field definitions, including field keys, data types, and display labels used across various entities.
+
+Retrieve definitions for custom fields used in CRM
+- **list_portal_messages**: Resolves portal message threads, including sender/receiver identity, message content summary, and timestamps.
+
+List messages sent through the client portal
+- **create_client**: Creates a new client record with identity properties (name, email) and optional company linkages.
+
+Create a new client in the portal
+- **get_client_details**: Resolves granular profile data, including contact information, associated company linkages, and system-level metadata.
+
+Get detailed information about a specific client
+- **list_clients**: Resolves client identity properties including unique identifiers, names, emails, and account status across the portal system boundary.
+
+List all clients in your Copilot CRM
 
 
 ## 💬 Prompt Examples

@@ -37,10 +37,13 @@ Connect your **Doodle** account to any AI agent and take full control of your gr
 
 
 ## Available Tools (10)
+- **get_poll**: Retrieve detailed information for a specific Doodle poll by ID
+- **close_poll**: Overrides the core settings dictating finally which exact option value string won.
+
+Close a Doodle poll and set the final chosen option
 - **list_polls**: Returns poll titles, states (OPEN/CLOSED), creation dates, number of participants, and chosen final options.
 
 List all Doodle polls created by the authenticated user
-- **get_poll**: Retrieve detailed information for a specific Doodle poll by ID
 - **create_poll**: Participants will be invited to vote on their preferred options.
 
 Create a new Doodle poll for group scheduling
@@ -56,9 +59,6 @@ Add a participant vote to a Doodle poll programmatically
 Remove a participant and their votes from a Doodle poll
 - **get_comments**: Retrieve all comments on a Doodle poll
 - **add_comment**: Add a comment to a Doodle poll
-- **close_poll**: Overrides the core settings dictating finally which exact option value string won.
-
-Close a Doodle poll and set the final chosen option
 
 
 ## 💬 Prompt Examples

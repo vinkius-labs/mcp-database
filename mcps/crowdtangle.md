@@ -33,6 +33,15 @@ Integrate **CrowdTangle**, the public insights tool from Meta, directly into you
 
 
 ## Available Tools (10)
+- **get_account_leaderboard**: Resolves account rankings, total interactions, and average engagement rates.
+
+Get engagement leaderboard for accounts in your lists
+- **search_posts_by_keyword**: Resolves relevant posts, associated accounts, and comparative performance data.
+
+Search for posts across platforms using a keyword
+- **get_post_details**: Touches reaction breakdowns, share history, and platform-specific metadata boundaries.
+
+Get full engagement details for a specific post ID
 - **list_monitored_lists**: Resolves list IDs, names, platform affiliations, and the number of accounts within each list.
 
 List all account lists you are tracking
@@ -45,21 +54,12 @@ List recent social media posts tracked by CrowdTangle
 - **search_tracking_lists**: Resolves list metadata matching the specified title filter.
 
 Search for specific tracking lists by title
-- **search_posts_by_keyword**: Resolves relevant posts, associated accounts, and comparative performance data.
-
-Search for posts across platforms using a keyword
 - **get_link_shares**: Resolves which tracked accounts shared the link, their follower counts, and total interactions generated per share.
 
 See which accounts have shared a specific URL
 - **get_account_details**: Touches dashboard settings, API rate limits, and workspace configuration boundaries.
 
 Retrieve metadata for your CrowdTangle account
-- **get_account_leaderboard**: Resolves account rankings, total interactions, and average engagement rates.
-
-Get engagement leaderboard for accounts in your lists
-- **get_post_details**: Touches reaction breakdowns, share history, and platform-specific metadata boundaries.
-
-Get full engagement details for a specific post ID
 - **get_top_performing_posts**: Resolves "score" metrics (actual vs expected interactions) and associated social media metadata.
 
 Get the highest performing posts based on actual vs. expected interaction

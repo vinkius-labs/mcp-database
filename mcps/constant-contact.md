@@ -32,12 +32,6 @@ Integrate the expansive architecture of **Constant Contact** seamlessly within y
 
 
 ## Available Tools (10)
-- **create_contact**: Creates a new subscriber record with identity properties (email, name) and prepares it for list assignment.
-
-Add a new contact to your mailing list
-- **get_campaign_details**: Resolves campaign configuration, including email content, subject lines, and sender profiles.
-
-Get full content and settings for a specific campaign
 - **get_contact_details**: Resolves granular profile data including custom fields, mailing list memberships, and system-level metadata.
 
 Get detailed profile for a specific contact
@@ -53,15 +47,21 @@ List recent and active email marketing campaigns
 - **list_contacts**: Resolves contact identity properties including email addresses, names, and subscriber status across the marketing platform boundary.
 
 List all contacts in your Constant Contact account
-- **list_mailing_lists**: Resolves list identity properties such as list IDs, names, and contact counts used for segmentation.
-
-List all contact segments and mailing lists
 - **list_recent_campaigns**: Resolves identity and status for the most recently created campaigns.
 
 Quickly list the 5 most recent campaigns
 - **search_contacts_by_email**: Resolves contact profiles matching the specified email address across the system boundary.
 
 Search for a contact by their email address
+- **create_contact**: Creates a new subscriber record with identity properties (email, name) and prepares it for list assignment.
+
+Add a new contact to your mailing list
+- **get_campaign_details**: Resolves campaign configuration, including email content, subject lines, and sender profiles.
+
+Get full content and settings for a specific campaign
+- **list_mailing_lists**: Resolves list identity properties such as list IDs, names, and contact counts used for segmentation.
+
+List all contact segments and mailing lists
 
 
 ## 💬 Prompt Examples
