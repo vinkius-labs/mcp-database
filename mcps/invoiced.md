@@ -7,43 +7,47 @@
 
 **Category:** [finance-accounting](../categories/finance-accounting.md)
 
-Manage accounts receivable, invoices, and payments via Invoiced API.
+Get paid faster with automated invoicing, smart payment reminders, and accounts receivable workflows that reduce DSO.
 
 ## Description
-Empower your AI agents to manage your billing and payments lifecycle with Invoiced. This MCP server allows you to list customers, retrieve invoice details, track payments, and view subscription plans directly through the Invoiced API. Ideal for automating accounts receivable and financial operations.
+Connect your **Invoiced** account to any AI agent and take full control of your accounts receivable orchestration and automated billing workflows through natural conversation.
+
+### What you can do
+
+- **Invoice Portfolio Orchestration** â€” List and manage all issued invoices programmatically, retrieving detailed payment metadata and aging statuses
+- **Customer & Payment Intelligence** â€” Programmatically retrieve directories of customers and access complete credit profiles and payment history in real-time
+- **A/R Workflow Architecture** â€” Access your complete directory of payment plans and auto-pay settings to coordinate your organizational revenue
+- **Operational Monitoring** â€” Access real-time status updates for paid invoices and track collection metrics directly through your agent for instant reporting
+- **Infrastructure Verification** â€” Verify account-level API connectivity and monitor transaction volume directly through your agent for perfectly coordinated service scaling
+
+### How it works
+
+1. Subscribe to this server
+2. Retrieve your **API Key** from your Invoiced dashboard (Settings > API)
+3. Start orchestrating your revenue growth from Claude, Cursor, or any MCP client
+
+No more manual following up on overdue payments or missing billing updates. Your AI acts as your dedicated finance coordinator and accounts receivable architect.
+
+### Who is this for?
+
+- **Finance Managers** â€” instantly retrieve invoice summaries and monitor collection goals using natural language commands
+- **Accounts Receivable Leads** â€” verify individual customer metadata and track payment history without leaving your creative workspace
+- **Developers** â€” integrate high-speed Invoiced billing data into custom ERP and accounting pipelines through simple AI queries
 
 
 ## Available Tools (10)
-- **get_customer**: Returns contact info, balance data, and payment settings. Use for deep intelligence on a customer before billing interactions.
+- **check_invoiced_status**: Verify Invoiced API connectivity
+- **list_credit_notes**: List all credit notes
+- **create_customer**: Create a customer
+- **create_invoice**: Pass line items as JSON array with name, quantity, and unit_cost.
 
-Retrieves details for a specific customer
-- **get_invoice**: Essential for auditing specific billings or providing customer support.
-
-Retrieves details for a specific invoice
-- **list_coupons**: Useful for auditing marketing incentives.
-
-Lists all active discount coupons
-- **list_customers**: Returns customer names, account numbers, and IDs. Use this as the main starting point for managing receivables or identifying specific clients.
-
-Lists all customers in Invoiced
-- **list_invoices**: Includes invoice numbers, amounts, and statuses. Essential for monitoring accounts receivable and overall revenue flow.
-
-Lists all invoices
-- **list_items**: Includes item codes, descriptions, and unit prices. Useful for auditing the available billing inventory.
-
-Lists all items in your catalog
-- **list_payments**: Returns payment methods, amounts, and transaction IDs. Use this to audit revenue collection and reconcile bank statements.
-
-Lists all payments received
-- **list_plans**: g., Monthly SaaS, Annual Support). Useful for auditing subscription-based business models.
-
-Lists all defined subscription plans
-- **list_subscriptions**: Essential for monitoring long-term customer commitments and MRR (Monthly Recurring Revenue).
-
-Lists all active customer subscriptions
-- **list_tax_rates**: Essential for auditing compliance and understanding how taxes are applied to invoices.
-
-Lists all defined tax rates
+Create an invoice
+- **get_customer**: Get customer details
+- **get_invoice**: Get invoice details
+- **list_customers**: List all customers
+- **list_estimates**: List all estimates
+- **list_invoices**: List all invoices
+- **list_payments**: List all payments
 
 
 ## 💬 Prompt Examples
@@ -51,38 +55,38 @@ Lists all defined tax rates
 Here are some examples of how you can interact with the **Invoiced** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active customers in Invoiced."
+> "Show all unpaid invoices in my Invoiced account."
 
 **🤖 AI Agent:**
-> I'll fetch the list of your Invoiced customers for you.
+> You have 7 unpaid invoices totaling ,450. The largest is INV-1042 for ,200 (due in 3 days). Would you like to see the customer details or send a payment reminder?
 
 ---
 
 **👤 You:**
-> "Show me the last 5 invoices generated."
+> "Create an invoice for customer 5001 with 2 items."
 
 **🤖 AI Agent:**
-> I'll retrieve the most recent invoices from your account.
+> Invoice INV-1098 created for customer 5001. Total:  (Web Design: , SEO Audit: ). The invoice is ready to send. Would you like to add a due date?
 
 ---
 
 **👤 You:**
-> "Check the status of invoice number 'INV-789'."
+> "List all estimates waiting for approval."
 
 **🤖 AI Agent:**
-> I'll look up the details and current payment status for that specific invoice.
+> You have 4 pending estimates totaling ,000. The oldest is EST-0034 (,500) sent 12 days ago. Would you like to follow up with the customer?
 
 
 ## ❓ FAQ
 
-**Q: How do I get Invoiced API credentials?**
-Log in to your Invoiced dashboard, navigate to Settings > Developers > API Keys, and copy your API Key.
+**Q: Can I create invoices directly from my AI agent?**
+Yes. Use the `create_invoice` tool with a customer ID and line items. The invoice is created instantly in your Invoiced account.
 
-**Q: Does it support Sandbox mode?**
-Yes, you can use your Invoiced sandbox API key to test all functionality without moving real money.
+**Q: How do I track outstanding payments?**
+Use `list_payments` to see all payment transactions or `list_invoices` to review invoices with their payment status and outstanding balances.
 
-**Q: Can I see real-time payments?**
-Yes, the list_payments tool provides access to all payment transactions recorded in your Invoiced account.
+**Q: Can I manage customers and credit notes?**
+Absolutely. Use `create_customer` to add new accounts, `list_customers` to browse, and `list_credit_notes` to review all issued credits.
 
 
 ## Installation & Usage

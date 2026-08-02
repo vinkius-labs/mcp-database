@@ -37,12 +37,12 @@ Connect your **H2O.ai** instance to any AI agent and take full control of your m
 
 
 ## Available Tools (6)
-- **list_frames**: List frames
 - **get_frame**: Get frame
 - **list_models**: List models
 - **get_model**: Get model
 - **list_jobs**: List jobs
 - **cloud_status**: Get cloud status
+- **list_frames**: List frames
 
 
 ## 💬 Prompt Examples

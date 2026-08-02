@@ -34,6 +34,7 @@ Integrate **Ragas** with your AI agent to bring professional grade RAG (Retrieva
 
 ## Available Tools (7)
 - **list_datasets**: Lists available evaluation datasets
+- **get_results**: Retrieves the results of a completed experiment
 - **get_dataset**: Retrieves details for a specific evaluation dataset
 - **list_experiments**: Lists experiments associated with a specific dataset
 - **get_experiment**: Retrieves detailed information for a specific experiment
@@ -41,7 +42,6 @@ Integrate **Ragas** with your AI agent to bring professional grade RAG (Retrieva
 
 Triggers a new evaluation run for a dataset
 - **list_metrics**: Lists all available evaluation metrics
-- **get_results**: Retrieves the results of a completed experiment
 
 
 ## 💬 Prompt Examples

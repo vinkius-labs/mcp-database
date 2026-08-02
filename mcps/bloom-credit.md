@@ -35,15 +35,15 @@ Connect your **Bloom Credit** account to any AI agent and orchestrate your credi
 
 ## Available Tools (10)
 - **create_consumer**: Create a new consumer profile
-- **create_order**: Order credit data for a consumer
 - **get_account_info**: Get authenticated account profile info
 - **get_consumer**: Get specific consumer details
 - **get_order**: Get specific order details
+- **list_furnishments**: List credit reporting furnishment accounts
+- **list_organizations**: List all accessible organizations
+- **create_order**: Order credit data for a consumer
 - **get_report_data**: Get detailed credit report data for an order
 - **list_consumers**: List all consumers in the system
-- **list_furnishments**: List credit reporting furnishment accounts
 - **list_orders**: List all credit data orders
-- **list_organizations**: List all accessible organizations
 
 
 ## 💬 Prompt Examples

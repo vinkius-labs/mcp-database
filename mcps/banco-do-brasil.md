@@ -36,14 +36,14 @@ Connect your **Banco do Brasil** account to any AI agent and perform essential b
 - **get_statement**: Dates in YYYY-MM-DD format.
 
 Get account statement (transactions) by date range
-- **get_accounts**: Usually returns one active account.
-
-Get list of checking accounts
 - **get_balance**: Get current account balance and limits
 - **create_pix**: Send a Pix payment to a key
 - **get_credit_card_invoices**: Get credit card invoices
 - **pay_barcode**: Pay a barcode/boleto bill
 - **pay_utility_bill**: Pay a utility bill via barcode
+- **get_accounts**: Usually returns one active account.
+
+Get list of checking accounts
 - **get_pix_history**: Type can be RECEIVED or SENT.
 
 Get history of Pix transfers (Sent/Received)

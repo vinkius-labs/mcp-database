@@ -36,15 +36,9 @@ Essential for **MCP server developers**, **DevOps engineers**, **platform teams*
 
 
 ## Available Tools (18)
-- **add_variable**: Use this to set API keys, database URLs, feature flags, or any configuration needed by your MCP server. Requires project ID, environment ID, variable key, and value. Variable values are stored securely.
+- **update_project**: Only pass the fields you want to change. Requires the project ID from list_projects results. Use this to rename projects, update descriptions, or point to a new repository branch.
 
-Add a new environment variable to an Alpic environment
-- **create_environment**: Requires environment name and project ID. Optionally set initial variables and configuration. Each environment gets a unique URL for MCP client connections. Returns the created environment details.
-
-Create a new deployment environment (dev, staging, prod) for an Alpic project
-- **get_tunnel_ticket**: Returns the tunnel URL and ticket token. Use this during development to test your MCP server before deploying to a production environment.
-
-Get a tunnel ticket for local development and testing of an MCP server
+Update an existing Alpic MCP server project configuration
 - **create_project**: Requires project name and team ID. Optionally set description, repository URL, and initial configuration. Returns the created project details including the new project ID needed for subsequent operations.
 
 Create a new MCP server project in Alpic
@@ -87,9 +81,15 @@ List all environment variables configured for an Alpic environment
 - **publish_to_registry**: Requires project ID and optionally a server description and category. Use this to make your MCP server publicly available.
 
 Publish an MCP server to the official MCP registry via Alpic
-- **update_project**: Only pass the fields you want to change. Requires the project ID from list_projects results. Use this to rename projects, update descriptions, or point to a new repository branch.
+- **add_variable**: Use this to set API keys, database URLs, feature flags, or any configuration needed by your MCP server. Requires project ID, environment ID, variable key, and value. Variable values are stored securely.
 
-Update an existing Alpic MCP server project configuration
+Add a new environment variable to an Alpic environment
+- **create_environment**: Requires environment name and project ID. Optionally set initial variables and configuration. Each environment gets a unique URL for MCP client connections. Returns the created environment details.
+
+Create a new deployment environment (dev, staging, prod) for an Alpic project
+- **get_tunnel_ticket**: Returns the tunnel URL and ticket token. Use this during development to test your MCP server before deploying to a production environment.
+
+Get a tunnel ticket for local development and testing of an MCP server
 
 
 ## 💬 Prompt Examples

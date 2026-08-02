@@ -36,9 +36,6 @@ Automate LLM regression analyses effortlessly. Rather than scrolling tables, you
 
 
 ## Available Tools (10)
-- **create_experiment**: Establish a new historical experiment trace to record LLM pipeline tests
-- **create_project**: Create a new project environment for tracking AI evaluations and datasets
-- **list_datasets**: List isolated Ground Truth text banks used for automated evaluation scoring
 - **list_env_vars**: Probe the Braintrust AI Gateway configurations managing model API keys securely
 - **list_experiments**: Retrieve all evaluation experiments mapping model test scores and metrics
 - **get_dataset**: Retrieve a specific dataset containing exact schemas bounding LLM outputs
@@ -46,6 +43,9 @@ Automate LLM regression analyses effortlessly. Rather than scrolling tables, you
 - **insert_dataset_row**: Append new test cases into a dataset matrix targeting specific evaluations
 - **list_projects**: Retrieve the list of all AI evaluation projects in Braintrust
 - **list_prompts**: Retrieve explicitly version-controlled system prompts isolated in Braintrust
+- **create_experiment**: Establish a new historical experiment trace to record LLM pipeline tests
+- **create_project**: Create a new project environment for tracking AI evaluations and datasets
+- **list_datasets**: List isolated Ground Truth text banks used for automated evaluation scoring
 
 
 ## 💬 Prompt Examples

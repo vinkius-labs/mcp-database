@@ -39,14 +39,14 @@ No more manual navigation through complex billing dashboards to verify a charge.
 
 
 ## Available Tools (10)
+- **get_order**: Get order details
+- **list_subscriptions**: List account subscriptions
 - **create_account**: Create a new billing account
 - **create_order**: Create a Zuora unified Order
 - **get_account**: Get account details
 - **get_invoices**: Get invoices for an account
-- **get_order**: Get order details
 - **get_subscription**: Get subscription details
 - **list_products**: List product catalog
-- **list_subscriptions**: List account subscriptions
 - **preview_subscription**: Preview subscription charges
 - **update_account**: Update account details
 

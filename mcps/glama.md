@@ -33,14 +33,6 @@ Empower your local Vinkius terminal intelligence with the **Glama.ai** infrastru
 
 
 ## Available Tools (8)
-- **glama_get_gateway_model_details**: g. "anthropic/claude-3-5-sonnet") to fetch the specific configurations exposed by the Glama unified API proxy.
-
-Investigate granular attributes (prices, context window, parameters) of a specific proxied Gateway Model
-- **glama_get_gateway_models**: Audit the complete list of AI models supported natively by the Glama OpenAI-compatible gateway
-- **glama_list_mcp_servers**: Capable of loose text matching to discover new agentic capabilities.
-
-Search and list MCP servers directly from the global Glama directory
-- **glama_run_gateway_chat**: Bifurcate an isolated conversational prompt using a specific model through the Glama proxy network
 - **glama_get_hosted_instances**: Cannot access public instances natively from here.
 
 Fetch all Private Hosted MCP instances assigned to your specific Glama account
@@ -51,6 +43,14 @@ Extract detailed parameters and installation instructions for a specific Glama M
 - **glama_send_telemetry**: Can be triggered after your AI uses a specific external server.
 
 Report semantic usage execution metrics back to the Glama Telemetry backend
+- **glama_get_gateway_model_details**: g. "anthropic/claude-3-5-sonnet") to fetch the specific configurations exposed by the Glama unified API proxy.
+
+Investigate granular attributes (prices, context window, parameters) of a specific proxied Gateway Model
+- **glama_get_gateway_models**: Audit the complete list of AI models supported natively by the Glama OpenAI-compatible gateway
+- **glama_list_mcp_servers**: Capable of loose text matching to discover new agentic capabilities.
+
+Search and list MCP servers directly from the globalThis Glama directory
+- **glama_run_gateway_chat**: Bifurcate an isolated conversational prompt using a specific model through the Glama proxy network
 
 
 ## 💬 Prompt Examples

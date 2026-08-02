@@ -36,8 +36,8 @@ Connect your **deepset Cloud** account to any AI agent and manage your Haystack-
 ## Available Tools (7)
 - **list_workspaces**: List workspaces
 - **list_pipelines**: List pipelines
-- **get_pipeline**: Get pipeline details
 - **run_pipeline**: Run a pipeline search
+- **get_pipeline**: Get pipeline details
 - **list_files**: List uploaded files
 - **get_file**: Get file metadata
 - **search_documents**: Search documents in index

@@ -33,14 +33,14 @@ Connect your **GPTBots** account to your AI agent and manage your enterprise AI 
 
 
 ## Available Tools (8)
-- **list_databases**: List tables in the platform database
-- **create_knowledge_document**: Upload or create a document in the Knowledge Base
-- **get_conversation**: Get details and history of a specific conversation
 - **list_conversations**: List chat conversations with a bot
+- **list_databases**: List tables in the platform database
 - **list_knowledge_documents**: List documents in a Knowledge Base
 - **query_workflow**: Check the execution status of a triggered workflow
 - **send_bot_message**: Send a message to a GPTBots Agent
 - **trigger_workflow**: Trigger an automated workflow
+- **create_knowledge_document**: Upload or create a document in the Knowledge Base
+- **get_conversation**: Get details and history of a specific conversation
 
 
 ## 💬 Prompt Examples

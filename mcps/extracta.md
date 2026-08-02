@@ -37,11 +37,10 @@ Connect your **Extracta.ai** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
+- **get_batch_results**: Get bulk historical results from an Extraction process
 - **create_classification**: g. invoice, receipt, contract). Pass JSON schema defining categories.
 
 Create a new Extracta document classification setup
-- **view_classification**: View details of an existing document classification process
-- **get_batch_results**: Get bulk historical results from an Extraction process
 - **get_classification_results**: Get the predicted document category from Extracta
 - **create_extraction**: g. language, format, expected fields like invoice_date, total_amount). Returns a new extractionId used for subsequent document processing.
 
@@ -59,6 +58,7 @@ Update an existing Extracta extraction configuration
 
 Upload a document URL to Extracta for processing
 - **view_extraction**: View configuration of an existing Extracta extraction process
+- **view_classification**: View details of an existing document classification process
 
 
 ## 💬 Prompt Examples
