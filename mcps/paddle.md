@@ -41,10 +41,10 @@ Cancel an active subscription
 - **get_transaction_details**: Get details for a specific transaction
 - **list_customers**: List all customers in Paddle
 - **list_catalog_prices**: List all pricing definitions
-- **list_catalog_products**: List all products
 - **list_subscriptions**: List all subscriptions
 - **list_transactions**: List all billing transactions
 - **pause_subscription**: Pause an active subscription
+- **list_catalog_products**: List all products
 
 
 ## 💬 Prompt Examples

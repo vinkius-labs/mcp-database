@@ -7,45 +7,38 @@
 
 **Category:** [money-moves](../categories/money-moves.md)
 
-Equip your AI to directly manage subscriptions, billing accounts, and invoices within your Recurly ecosystem without shifting interfaces.
+Automate subscription billing and management via Recurly — manage subscriptions, accounts, and invoices directly from any AI agent.
 
 ## Description
-Connect your **Recurly** subscription billing and management platform securely to your conversational AI agent. Activating this integration transforms your AI into a dynamic revenue operations assistant, giving it the autonomy to look up accounts, adjust active subscription states, and analyze invoice pipelines directly from the terminal.
+Connect your **Recurly** account to any AI agent and simplify your subscription billing, revenue management, and customer orchestration through natural conversation.
 
 ### What you can do
 
-- **Account Management** — Quickly list your customer directory, view detailed billing profiles, or instantly create a new account mapping without opening the vendor console.
-- **Subscription Operations** — Easily search and read subscription lifecycle states, enroll users in fresh catalog plans, un-cancel previous subscriptions, or permanently cancel an ongoing billing mandate.
-- **Invoice & Plan Catalogs** — Retrieve the list of historical generated invoices to verify successful automated payments or pull all active billing models (Catalog Plans) to review available products.
+- **Subscription Management** — List all active and expired product subscriptions, and retrieve detailed metadata and plan info
+- **Account Coordination** — Query your database of billing accounts and retrieve detailed metadata, balance, and status
+- **Billing Tracking** — Access a history of generated invoices and monitor their payment status directly from your agent
+- **Plan catalog** — Query available subscription plans and their pricing to choose the right context for each interaction
+- **Direct Enrollment** — Register new customer accounts programmatically directly from your agent
 
 ### How it works
 
-1. Add the Recurly MCP server to your authorized module list.
-2. Configure the server using your specific Recurly subdomain alongside your Private API Key.
-3. Chat seamlessly with your AI to process operations like revoking a subscription instance or querying for a customer's missing invoice.
-
-### Who is this for?
-
-- **RevOps & Finance Teams** — Pull billing analytics, track active subscription statuses, and instantly generate plan insights via conversational commands during reviews.
-- **Customer Support Agents** — Quickly verify if an account holds a successful invoice payment or pause/cancel client subscriptions mid-chat without escalating to billing engineers.
-- **Software Developers** — Interact safely with Recurly limits, list the ID structures of catalog plans, and test provisioning logic endpoints directly from the code editor.
+1. Subscribe to this server
+2. Enter your Recurly API v3 Key from your account settings
+3. Start managing your subscription commerce from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools (10)
-- **cancel_subscription**: This action is irreversible.
-
-Cancels an active subscription
-- **create_account**: Specify code, email, and name.
-
-Creates a new customer account
-- **create_subscription**: Creates a new subscription for an account
-- **get_account_details**: Retrieves details for a specific customer account
-- **list_accounts**: Lists all customer accounts in Recurly
-- **list_catalog_plans**: Lists all available subscription plans in the product catalog
-- **list_invoices**: Lists all generated invoices
-- **list_subscriptions**: Lists all subscriptions managed by Recurly
-- **reactivate_subscription**: Reactivates a previously cancelled or expired subscription
-- **get_subscription_details**: Retrieves details for a specific subscription
+## Available Tools (11)
+- **get_subscription_details**: Get details for a specific subscription
+- **get_invoice**: Get details for a specific invoice
+- **get_revenue_summary**: Get revenue export dates
+- **list_coupons**: List all active coupons
+- **list_transactions**: List recent transactions
+- **create_billing_account**: Register a new account
+- **get_account_details**: Get details for a specific account
+- **list_billing_invoices**: List invoices
+- **list_subscription_plans**: List available plans
+- **list_subscriptions**: List Recurly subscriptions
+- **list_billing_accounts**: List billing accounts
 
 
 ## 💬 Prompt Examples
@@ -53,38 +46,32 @@ Creates a new customer account
 Here are some examples of how you can interact with the **Recurly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List the last 5 invoices generated in our account."
+> "List all active subscriptions in Recurly."
 
 **🤖 AI Agent:**
-> I executed `list_invoices` restricted to 5 items. The returned set includes invoice IN_UUID_1012 ($59.00 - Paid) and IN_UUID_1013 ($199.00 - Pending).
+> I've retrieved your subscriptions. You have 10 active subscriptions, including 'Premium Plan' and 'Standard Tier'.
 
 ---
 
 **👤 You:**
-> "Cancel the subscription with ID 'sub_39xjd82kw0'."
+> "Show me the subscription revenue breakdown by plan for the current billing period."
 
 **🤖 AI Agent:**
-> Running the `cancel_subscription` tool. The subscription 'sub_39xjd82kw0' has been set to cancel. It will not renew at the end of the current billing cycle.
+> Revenue by plan this billing period. "Enterprise Annual" leads with $234,000 (42% of total, 78 subscribers). "Professional Monthly" at $156,000 (28%, 520 subscribers). "Starter Monthly" at $89,000 (16%, 1,780 subscribers). "Team Annual" at $67,000 (12%, 134 subscribers). "Free Trial" has 234 active trials, 34% conversion rate. Total MRR: $546,000. Growth vs last period: +8.2%. 12 enterprise accounts renewed this month with an average 15% uplift.
 
 ---
 
 **👤 You:**
-> "Retrieve the billing details for account code 'cus_alpha_92'."
+> "List all failed invoice payments from the last 14 days that need follow-up."
 
 **🤖 AI Agent:**
-> I invoked `get_account_details` for 'cus_alpha_92'. The account corresponds to 'Alpha Corp'. It currently has an active subscription to the 'Enterprise Tier' and zero past due payments.
+> 34 failed payments in the last 14 days totaling $18,200. By reason: Card declined (18), Insufficient funds (9), Expired card (5), Network error (2). Retry status: 12 recovered after automatic retry (35% recovery). 22 still outstanding. High-value failures: Acme Corp $2,400 (card expired), TechVentures $1,800 (declined). 8 accounts are past the 3rd retry attempt and need manual outreach. Dunning emails sent: 67 total, 23% updated their payment method.
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Subdomain and API Key?**
-Your subdomain is the first part of your Recurly portal URL (e.g., if you log in at `myproject.recurly.com`, your subdomain is `myproject`). To get your API Key, navigate inside Recurly to Integrations > API Credentials and generate or copy your 'Private API Key'.
-
-**Q: Can it accidentally charge my customers?**
-While the server can manage subscriptions (e.g., setting up a customer with a plan), it strictly follows the billing logic predefined in your Recurly catalog settings. It doesn't bypass credit card validation or execute arbitrary charges directly without a plan context.
-
-**Q: Does cancelling a subscription remove the account entirely?**
-No, using `cancel_subscription` stops future renewals for that specific plan item instance. The underlying user billing account remains intact and can hold other valid subscriptions or past invoices.
+**Q: Can I list all my active subscriptions using my AI agent?**
+Yes! Use the `list_subscriptions` tool to retrieve a comprehensive list of all subscriptions registered in your Recurly account.
 
 
 ## Installation & Usage

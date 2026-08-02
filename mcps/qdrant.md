@@ -33,7 +33,6 @@ Connect your **Qdrant** vector database (Cloud or Self-Hosted) to any AI agent a
 
 
 ## Available Tools (7)
-- **list_collections**: Lists all collections in the Qdrant instance
 - **get_collection**: Retrieves detailed information about a specific collection
 - **search**: You must provide a JSON array of floats for the query vector.
 
@@ -43,6 +42,7 @@ Performs a nearest neighbor vector search in a collection
 
 Scrolls through points in a collection, useful for pagination
 - **count**: Counts the total number of points in a collection
+- **list_collections**: Lists all collections in the Qdrant instance
 - **delete**: This action is irreversible.
 
 Deletes specific points from a collection

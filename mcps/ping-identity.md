@@ -39,9 +39,6 @@ Hard delete a user identity and purge related credentials
 - **list_groups**: Allows mapping high-level RBAC scopes dynamically injected into ID tokens returned via SSO channels upon successful client authorization flows.
 
 List identity Groups utilized for aggregate permissions
-- **get_application**: Determines configured Implicit/Authorization Code grants, token lifespan definitions, embedded sign-on policies, and allowed callback URIs required for stringent redirection security mapping.
-
-Get configuration for a single federated Ping Identity application
 - **get_group**: View explicit details encompassing a standard Ping Group
 - **get_user**: Get complete contextual metadata for a specific Ping Identity user
 - **list_applications**: Crucial to verify application exposure footprint.
@@ -59,6 +56,9 @@ List active Risk Management rules dictating real-time MFA
 - **list_sign_on_policies**: Sign-on policies chain distinct rules together enforcing explicit MFA prompts, enforcing complex password structures based on population assignment, or mandating implicit biometric validation prior to releasing environment tokens.
 
 List logical Sign-on flows and strict authentication conditions
+- **get_application**: Determines configured Implicit/Authorization Code grants, token lifespan definitions, embedded sign-on policies, and allowed callback URIs required for stringent redirection security mapping.
+
+Get configuration for a single federated Ping Identity application
 
 
 ## 💬 Prompt Examples

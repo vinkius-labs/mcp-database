@@ -33,6 +33,18 @@ Unleash your AI agent over **Twilio SendGrid's** trusted enterprise email platfo
 
 
 ## Available Tools (16)
+- **search_contact_by_email**: Returns full contact profile including custom fields, lists, and segments.
+
+Look up a marketing contact by email address
+- **get_delivery_stats**: Use YYYY-MM-DD format.
+
+Get globalThis email delivery statistics
+- **list_blocked_emails**: Different from bounces — blocks are typically temporary server-level rejections.
+
+List all blocked email addresses
+- **dispatch_email**: Ensure you use a verified sender email in "from_email".
+
+Sends an email via SendGrid SMTP relay
 - **list_single_sends**: List all marketing single-send campaigns
 - **delete_bounce**: This action is destructive on the suppression record.
 
@@ -47,25 +59,13 @@ Lists all bounced email records
 
 List all verified sender identities
 - **list_dynamic_templates**: List all Dynamic Transactional Templates
-- **dispatch_email**: Ensure you use a verified sender email in "from_email".
-
-Sends an email via SendGrid SMTP relay
 - **delete_spam_report**: Use with caution — sending to users who report spam can damage your sender reputation.
 
 Remove an email from the spam report suppression list
-- **search_contact_by_email**: Returns full contact profile including custom fields, lists, and segments.
-
-Look up a marketing contact by email address
-- **get_delivery_stats**: Use YYYY-MM-DD format.
-
-Get global email delivery statistics
-- **list_blocked_emails**: Different from bounces — blocks are typically temporary server-level rejections.
-
-List all blocked email addresses
 - **create_marketing_contact**: Merges data if the contact already exists.
 
 Creates or updates a marketing contact
-- **list_global_unsubscribes**: Lists global unsubscribes
+- **list_global_unsubscribes**: Lists globalThis unsubscribes
 - **list_spam_reports**: Lists user-reported spam complaints
 
 

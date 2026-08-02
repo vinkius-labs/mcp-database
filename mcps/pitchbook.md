@@ -37,6 +37,21 @@ Essential for **venture capitalists**, **private equity professionals**, **inves
 
 
 ## Available Tools (13)
+- **get_deal**: ), announced date, deal size (if disclosed), all participating companies, investors, funds, and financial advisors, deal terms and structure, and any publicly available valuation data. Requires the deal ID from get_deals results. Use this for deep analysis of specific transactions, competitive deal intelligence, or investment thesis validation.
+
+Get detailed information about a specific deal/transaction
+- **get_deals**: Returns deal names, types (VC Deal, M&A, IPO, LBO, etc.), announced dates, deal sizes (if disclosed), and participating entities. Use optional filters to narrow by deal type, industry, location, or date range. Results follow JSON:API format with pagination metadata. Use this to track recent deal activity, identify active investors, or monitor M&A trends.
+
+Search and list deals (VC investments, M&A, offerings) in PitchBook
+- **get_funds**: Returns fund names, types, sizes (if disclosed), vintages (year), investor/firm names, and key identifiers. Use optional filters to narrow by fund type, vintage year, fund size, or investor. Use this to analyze fund raising trends, identify active funds in a vintage, or research fund managers for LP due diligence.
+
+Search and list investment funds in PitchBook
+- **get_investors**: Returns investor names, types (VC, PE, Angel, Corporate VC, etc.), headquarters locations, fund counts, total AUM (if disclosed), and key identifiers. Use optional filters to narrow by investor type, location, or fund size. Use this to find potential investors, research competitor firms, or map the investment landscape.
+
+Search and list investors (VC firms, angels, PE firms) in PitchBook
+- **get_limited_partners**: Returns LP names, types, locations, total commitments (if disclosed), and key identifiers. Use optional filters to narrow by LP type, location, or commitment size. Use this for LP fundraising research, understanding LP allocation trends, or identifying potential fund investors.
+
+Search and list limited partners (LPs) in PitchBook
 - **get_companies**: Returns company names, statuses, industries, locations, and key identifiers. Use optional filters to narrow results by industry, location, company status (Active, Acquired, Closed, IPO), or other attributes. Results follow JSON:API format with pagination metadata. Use this to find startups, established companies, or emerging players in specific sectors.
 
 Search and list companies in the PitchBook private market database
@@ -46,27 +61,12 @@ Get complete funding/financing history for a specific company
 - **get_company**: Requires the company ID from get_companies results. Use this for comprehensive company due diligence and background research.
 
 Get detailed profile for a specific company in PitchBook
-- **get_deal**: ), announced date, deal size (if disclosed), all participating companies, investors, funds, and financial advisors, deal terms and structure, and any publicly available valuation data. Requires the deal ID from get_deals results. Use this for deep analysis of specific transactions, competitive deal intelligence, or investment thesis validation.
-
-Get detailed information about a specific deal/transaction
-- **get_deals**: Returns deal names, types (VC Deal, M&A, IPO, LBO, etc.), announced dates, deal sizes (if disclosed), and participating entities. Use optional filters to narrow by deal type, industry, location, or date range. Results follow JSON:API format with pagination metadata. Use this to track recent deal activity, identify active investors, or monitor M&A trends.
-
-Search and list deals (VC investments, M&A, offerings) in PitchBook
 - **get_fund**: Requires the fund ID from get_funds results. Use this for fund-level due diligence, LP allocation decisions, or understanding fund investment strategies.
 
 Get detailed information about a specific investment fund
-- **get_funds**: Returns fund names, types, sizes (if disclosed), vintages (year), investor/firm names, and key identifiers. Use optional filters to narrow by fund type, vintage year, fund size, or investor. Use this to analyze fund raising trends, identify active funds in a vintage, or research fund managers for LP due diligence.
-
-Search and list investment funds in PitchBook
 - **get_investor**: ), sector focus areas, geographic focus, notable portfolio companies, and key personnel. Requires the investor ID from get_investors results. Use this for thorough investor due diligence, LP fundraising research, or understanding investment firm strategies.
 
 Get detailed profile for a specific investor/firm
-- **get_investors**: Returns investor names, types (VC, PE, Angel, Corporate VC, etc.), headquarters locations, fund counts, total AUM (if disclosed), and key identifiers. Use optional filters to narrow by investor type, location, or fund size. Use this to find potential investors, research competitor firms, or map the investment landscape.
-
-Search and list investors (VC firms, angels, PE firms) in PitchBook
-- **get_limited_partners**: Returns LP names, types, locations, total commitments (if disclosed), and key identifiers. Use optional filters to narrow by LP type, location, or commitment size. Use this for LP fundraising research, understanding LP allocation trends, or identifying potential fund investors.
-
-Search and list limited partners (LPs) in PitchBook
 - **get_professional**: Requires the professional ID from get_professionals results. Use this for thorough individual due diligence, founder background checks, or mapping professional deal flow networks.
 
 Get detailed profile for a specific professional

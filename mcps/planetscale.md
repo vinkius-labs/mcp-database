@@ -32,9 +32,6 @@ Empower your AI agents to manage your **PlanetScale** serverless infrastructure 
 
 
 ## Available Tools (10)
-- **create_branch**: Does *not* duplicate data (creates an empty schema clone of the parent) for secure CI testing uncoupled entirely from `main` load balancing layers.
-
-Fork a PlanetScale schema mapping to a new isolated Branch
 - **create_database**: Creates empty environments ready to execute explicit DDL definitions via non-blocking Deploy Requests.
 
 Provision a radically scalable Serverless Database instance
@@ -54,6 +51,9 @@ List Development Database Branches mirroring Prod architectures
 - **list_databases**: Retrieves explicitly mapping IDs orchestrating distributed Vitess backend shards.
 
 List high-availability PlanetScale MySQL DB distributions
+- **create_branch**: Does *not* duplicate data (creates an empty schema clone of the parent) for secure CI testing uncoupled entirely from `main` load balancing layers.
+
+Fork a PlanetScale schema mapping to a new isolated Branch
 - **list_organizations**: Used solely to resolve the foundational string key prerequisite for all subsequent MySQL endpoint management.
 
 List root PlanetScale organizational identifiers

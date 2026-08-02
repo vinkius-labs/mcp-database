@@ -34,12 +34,12 @@ Connect your **Twilio Segment** CDP to any AI agent to interact with your custom
 
 ## Available Tools (7)
 - **get_source**: Retrieves details for a specific data source
-- **get_tracking_plan**: Retrieves details for a specific tracking plan
-- **get_workspace**: Retrieves information about the current Segment workspace
 - **list_destinations**: Lists all destinations configured for a specific source
 - **list_sources**: Lists all data sources in the Segment workspace
+- **get_tracking_plan**: Retrieves details for a specific tracking plan
 - **list_tracking_plans**: Lists all tracking plans in the workspace
 - **list_warehouses**: Lists all data warehouses configured in the workspace
+- **get_workspace**: Retrieves information about the current Segment workspace
 
 
 ## 💬 Prompt Examples

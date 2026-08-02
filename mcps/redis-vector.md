@@ -32,18 +32,18 @@ Connect your **Redis** database (equipped with the RediSearch module) to your AI
 
 
 ## Available Tools (6)
+- **search_vectors**: Provide the query vector as a JSON array of floats.
+
+Performs a KNN similarity search in a vector index
+- **get_index_info**: Retrieves details for a specific vector index
+- **list_indexes**: Lists all RediSearch vector indexes
+- **upsert_vector**: Specify the document key and the vector as a JSON array.
+
+Inserts or updates a vector in a Redis hash
 - **create_vector_index**: Specify the name and vector dimensions.
 
 Creates a new RediSearch vector index
 - **delete_vector**: Deletes a vector document from Redis
-- **get_index_info**: Retrieves details for a specific vector index
-- **list_indexes**: Lists all RediSearch vector indexes
-- **search_vectors**: Provide the query vector as a JSON array of floats.
-
-Performs a KNN similarity search in a vector index
-- **upsert_vector**: Specify the document key and the vector as a JSON array.
-
-Inserts or updates a vector in a Redis hash
 
 
 ## 💬 Prompt Examples

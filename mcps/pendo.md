@@ -5,47 +5,48 @@
 
 ## Overview
 
-**Category:** [growth-engine](../categories/growth-engine.md)
+**Category:** [data-analytics](../categories/data-analytics.md)
 
-Manage product engagement via Pendo — list guides, track page views, and analyze visitor behavior directly from any AI agent.
+Understand product usage, guide users with in-app walkthroughs, and collect feedback that shapes your roadmap with precision.
 
 ## Description
-Connect your **Pendo** subscription to any AI agent and take full control of your product adoption and user engagement workflows through natural conversation.
+Connect your **Pendo** account to any AI agent and take full control of your product orchestration and user engagement through natural conversation. Pendo provides a world-class platform for understanding how users interact with your software, and this integration allows you to retrieve usage metadata, manage in-app guides, and run complex aggregations directly from your chat interface.
 
 ### What you can do
 
-- **Guide Management** — List all in-app guides and retrieve detailed metadata and performance metrics.
-- **User & Account Insights** — Look up detailed profiles for visitors and accounts to understand their journey.
-- **Product Tagging Auditing** — List defined pages and features to verify your product instrumentation.
-- **Metadata Schema Discovery** — Retrieve schemas for visitor and account metadata to understand available data points.
-- **Segment Overview** — List saved user segments to maintain visibility over your audience targeting.
+- **Usage & Analytics Orchestration** — Run powerful aggregations programmatically to understand feature adoption and user behavior via natural language.
+- **Metadata & Profile Control** — Update custom visitor and account metadata directly from the AI interface to ensure your CRM and success data are always synchronized.
+- **Guide Lifecycle Management** — List all managed guides and retrieve detailed metadata to maintain a clear overview of your in-app messaging strategy.
+- **Feature & Page Intelligence** — Access and monitor tagged features and pages to track engagement and identify bottlenecks using simple AI commands.
+- **Operational Monitoring** — Track system responses and manage regional data centers (US, EU, JPN, AU) to ensure your analytics pipeline is always optimized.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Pendo Integration Key
-3. Start optimizing your product experience from Claude, Cursor, or any MCP client
+2. Enter your Pendo Integration Key and regional Base URL from your settings
+3. Start managing your product analytics from Claude, Cursor, or any MCP-compatible client
+
+No more manual exporting of usage reports or context switching for user profiles. Your AI acts as a dedicated product analyst or customer success manager.
 
 ### Who is this for?
 
-- **Product Managers** — quickly check guide performance or verify if a feature is correctly tagged.
-- **Customer Success Managers** — lookup visitor activity and account metadata during high-pressure support cases.
-- **Growth Engineers** — audit segments and metadata schemas while implementing new tracking events.
+- **Product Managers** — quickly retrieve feature adoption summaries and monitor guide performance without switching apps.
+- **Customer Success Teams** — automate the update of account health metadata and track visitor activity via natural conversation.
+- **Growth Marketers** — streamline the retrieval of user segments and monitor engagement trends directly within the chat.
 
 
-## Available Tools (10)
-- **get_pendo_account**: Get details for a specific account
-- **list_pendo_features**: List tagged features
-- **get_pendo_guide_metrics**: Get performance metrics for a guide
-- **get_pendo_guide**: Get details for a specific guide
-- **get_pendo_visitor**: Get details for a specific visitor
-- **list_pendo_applications**: List applications tracked in the Pendo subscription
-- **list_pendo_guides**: ) defined in Pendo.
-
-List Pendo guides
-- **list_pendo_metadata_schema**: List metadata schema definitions
+## Available Tools (11)
+- **get_pendo_account_details**: Get details for a specific account
+- **get_pendo_guide_details**: Get details for a specific guide
+- **get_pendo_visitor_details**: Get details for a specific visitor
+- **list_pendo_guides**: List all in-app guides
 - **list_pendo_pages**: List tagged pages
-- **list_pendo_segments**: List saved user segments
+- **list_reports**: List all analytics reports
+- **list_segments**: List all user segments
+- **run_pendo_aggregation**: Perform complex analytics and grouping
+- **update_account_metadata**: Update custom account metadata
+- **update_visitor_metadata**: Update custom visitor metadata
+- **list_pendo_features**: List tagged features
 
 
 ## 💬 Prompt Examples
@@ -53,38 +54,38 @@ List Pendo guides
 Here are some examples of how you can interact with the **Pendo** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active guides in my Pendo account."
+> "List all active in-app guides in my Pendo account."
 
 **🤖 AI Agent:**
-> I've retrieved 12 guides. Notable ones include 'New Feature Announcement', 'Onboarding Checklist', and 'Satisfaction Survey'. Which one would you like to see metrics for?
+> I've retrieved your guides. You have 5 active environments including 'Onboarding Flow' and 'Release Announcement'. Which one would you like to see details for?
 
 ---
 
 **👤 You:**
-> "Get metadata for visitor 'user@example.com'."
+> "Show me the feature adoption analytics for the new dashboard module launched last month."
 
 **🤖 AI Agent:**
-> Visitor 'user@example.com' is associated with account 'Global Corp'. Their properties include role: 'admin', trial_end: '2026-12-01', and they have viewed 45 pages in the last 30 days.
+> Dashboard module adoption metrics since launch (April 15): 2,847 unique visitors out of 5,200 active users (54.7% adoption). Daily active usage peaked at 1,234 on April 28. Average session duration: 4.2 minutes. Most used features: "Custom Widgets" (78% of visitors), "Data Export" (45%), "Saved Views" (34%). 3 in-app guides triggered 892 times with 67% completion rate.
 
 ---
 
 **👤 You:**
-> "Show me the performance metrics for the guide 'guide_98765'."
+> "List all active in-app guides and their completion metrics."
 
 **🤖 AI Agent:**
-> Guide 'guide_98765' has been viewed by 1,250 unique visitors with a 68% click-through rate and 45% completion rate.
+> You have 7 active guides. "Onboarding Tour" has the highest completion at 82% (3,421 starts, 2,805 completions). "Feature Discovery" runs at 71% completion. "Upgrade Prompt" shows 45% engagement with 12% click-through to pricing. "NPS Survey" collected 1,247 responses (average score: 8.2). The lowest performer is "Advanced Settings Tour" at 38% completion, suggesting it may need simplification.
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Pendo Integration Key?**
-In Pendo, navigate to **Settings** > **Integrations**. There you can find or generate your Integration Key for API access.
+**Q: Can my AI automatically run a data aggregation for unique visitors?**
+Yes! Use the `run_aggregation` tool. Provide the aggregation logic (following Pendo's JSON syntax), and your agent will respond with complete metadata and result sets in seconds.
 
-**Q: Can I see real-time statistics for my guides?**
-Yes! Use the `get_pendo_guide_metrics` tool with a Guide ID to retrieve live data on views, clicks, and completion rates.
+**Q: Where do I find my Pendo Integration Key?**
+Log in as an Admin, navigate to **Settings** > **Integrations**, select the **Integration Keys** tab, and create a new key with the required permissions.
 
-**Q: Does this support looking up individual user metadata?**
-Absolutely. Use the `get_pendo_visitor` tool to retrieve all identified properties, account association, and activity history for a specific user ID.
+**Q: Does this work with EU or Japan instances?**
+Yes! During setup, you can specify your regional base URL (e.g., `app.eu.pendo.io` or `app.jpn.pendo.io`) to ensure the MCP server connects to the correct data center.
 
 
 ## Installation & Usage

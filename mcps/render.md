@@ -33,20 +33,20 @@ Connect your AI assistant directly to your **Render** cloud infrastructure via t
 
 
 ## Available Tools (10)
-- **create_service**: Specify type, name, owner, and repository.
-
-Creates a new Render service from a GitHub repository
+- **list_deploys**: Lists recent deployments for a service
 - **delete_service**: This action is irreversible.
 
 Permanently deletes a Render service
 - **get_deploy**: Retrieves details for a specific deployment
 - **get_service**: Retrieves details for a specific Render service
-- **list_deploys**: Lists recent deployments for a service
 - **list_services**: Lists all services (web apps, databases, cron jobs) in the Render account
 - **resume_service**: Resumes a previously suspended service
 - **suspend_service**: Suspends a service to stop execution and billing
 - **trigger_deploy**: Triggers a manual deployment for a service
 - **update_service_branch**: Updates the tracked GitHub branch for a service
+- **create_service**: Specify type, name, owner, and repository.
+
+Creates a new Render service from a GitHub repository
 
 
 ## 💬 Prompt Examples

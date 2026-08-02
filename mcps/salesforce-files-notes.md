@@ -26,11 +26,11 @@ Connect **Salesforce Files & Notes** to any AI agent.
 
 
 ## Available Tools (7)
+- **sf_recent_files**: List the most recently modified files in Salesforce
 - **sf_create_note**: Create a new Note attached to a record
 - **sf_get_attachments**: Get attachments on a specific record
 - **sf_file_details**: Get all versions of a specific file (ContentDocument)
 - **sf_linked_files**: Get files linked to a specific record
-- **sf_recent_files**: List the most recently modified files in Salesforce
 - **sf_search_files**: Returns file type, size, owner, and modification date.
 
 Search files (ContentVersion) in Salesforce by title

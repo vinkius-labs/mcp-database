@@ -36,26 +36,26 @@ Your AI agent becomes a headless CMS power-user, perfectly capable of navigating
 
 
 ## Available Tools (10)
+- **get_document_details**: Retrieves full details for a specific document by ID
 - **list_typed_documents**: g., "post", "author").
 
 Lists all documents of a specific type
-- **count_entity_nodes**: Counts the number of documents of a specific type
-- **list_unique_schema_types**: Retrieves a list of all unique document types present in the dataset
-- **create_cms_document**: Specify the type and provide attributes as a JSON object.
-
-Creates a new document in the CMS
-- **get_document_details**: Retrieves full details for a specific document by ID
-- **list_media_assets**: Lists all image and file assets uploaded to Sanity
-- **patch_cms_document**: Provide a JSON object of fields to set.
-
-Updates specific fields of an existing document
-- **run_groq_query**: Executes a GROQ (Graph-Relational Object Queries) query
 - **run_raw_mutation**: Provide a JSON array of mutation objects.
 
 Executes a raw Sanity mutation
 - **wipe_cms_document**: This action is irreversible.
 
 Permanently deletes a document from the CMS
+- **count_entity_nodes**: Counts the number of documents of a specific type
+- **list_unique_schema_types**: Retrieves a list of all unique document types present in the dataset
+- **create_cms_document**: Specify the type and provide attributes as a JSON object.
+
+Creates a new document in the CMS
+- **list_media_assets**: Lists all image and file assets uploaded to Sanity
+- **patch_cms_document**: Provide a JSON object of fields to set.
+
+Updates specific fields of an existing document
+- **run_groq_query**: Executes a GROQ (Graph-Relational Object Queries) query
 
 
 ## 💬 Prompt Examples

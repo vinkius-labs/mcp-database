@@ -31,9 +31,6 @@ Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline 
 - **pd_create_activity**: Subject and type are required. Type must be one of: call, meeting, email, task, lunch, deadline. Optionally set due_date (YYYY-MM-DD) and link to deal_id, person_id, or both. Add a note for context. Activities appear in the Pipedrive calendar and task queue.
 
 Schedule a sales activity in Pipedrive — a call, meeting, email, task, lunch, or deadline linked to deals or contacts
-- **pd_create_deal**: Title is required. Optionally specify monetary value, currency (USD/EUR/GBP/etc.), linked person_id and org_id (use search tools to find these), and pipeline/stage placement (use pd_list_pipelines and pd_list_stages to find IDs). If no pipeline is specified, the deal enters the default pipeline at its first stage.
-
-Create a new deal in your Pipedrive sales pipeline with title, value, currency, and linked contact/organization
 - **pd_create_note**: Notes appear in the timeline/history of the linked record. Link to exactly one of: deal_id, person_id, or org_id. Use to log meeting summaries, call notes, or internal context on any CRM record.
 
 Create a note in Pipedrive attached to a deal, person, or organization for activity logging
@@ -46,9 +43,6 @@ List recent Pipedrive activities (calls, meetings, tasks, emails) with due dates
 - **pd_list_pipelines**: Returns pipeline name, total deal count, and whether it is active. Most Pipedrive accounts have one default pipeline, but larger teams may have separate pipelines for different sales processes (e.g., New Business vs Renewals). Use to find pipeline IDs before creating deals or filtering by pipeline.
 
 List all sales pipelines configured in Pipedrive with their names, deal counts, and order
-- **pd_list_stages**: Returns stage name, display order, number of deals at each stage, and rotten days (warning threshold). Use to find stage IDs for creating or moving deals, or to understand the sales process flow.
-
-List the stages within a Pipedrive pipeline showing stage names, order, deal counts, and win probability
 - **pd_search_deals**: Returns deal title, monetary value, currency, pipeline stage, pipeline name, linked person (contact), and organization. Use when the user wants to find a specific deal, check pipeline status, look up deal values, or see which stage a deal is in.
 
 Search Pipedrive deals by name or keyword to find opportunities in your sales pipeline with value, stage, and contact info
@@ -61,6 +55,12 @@ Search Pipedrive contacts (persons) by name, email, or phone to find people in y
 - **pd_update_deal**: Only specified fields are updated. Common use: advance stage_id when a deal progresses, update value after negotiation, or set status to "won"/"lost" to close a deal. Available statuses: open, won, lost, deleted.
 
 Update an existing Pipedrive deal — change stage, value, title, or mark as won/lost to reflect pipeline progress
+- **pd_create_deal**: Title is required. Optionally specify monetary value, currency (USD/EUR/GBP/etc.), linked person_id and org_id (use search tools to find these), and pipeline/stage placement (use pd_list_pipelines and pd_list_stages to find IDs). If no pipeline is specified, the deal enters the default pipeline at its first stage.
+
+Create a new deal in your Pipedrive sales pipeline with title, value, currency, and linked contact/organization
+- **pd_list_stages**: Returns stage name, display order, number of deals at each stage, and rotten days (warning threshold). Use to find stage IDs for creating or moving deals, or to understand the sales process flow.
+
+List the stages within a Pipedrive pipeline showing stage names, order, deal counts, and win probability
 
 
 ## 💬 Prompt Examples

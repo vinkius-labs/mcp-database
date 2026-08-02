@@ -42,17 +42,17 @@ Create a customized Semgrep security rule within the platform
 List Semgrep organizational deployments
 - **list_findings**: Findings provide snippet details, file line numbers, severity, and rule types.
 
-Fetch global static analysis security findings for a deployment
+Fetch globalThis static analysis security findings for a deployment
 - **get_finding_details**: Explains the exact malicious code block, suggests semantic fixes, states whether it is blocking PRs in CI, and links to CVE data (if an SCA supply chain defect).
 
 Get atomic details for a specific Semgrep flaw
 - **get_project**: Search for a precise Semgrep project by exact repository name
-- **list_rules**: The rules are structured YAML definitions that search for semantic anti-patterns in codebases (e.g., unparameterized SQL queries, hardcoded AWS keys).
-
-List Semgrep semantic rules deployed globally
 - **get_metrics**: Typically consumed to render executive security dashboards.
 
 Get AppSec metrics and compliance stats for Semgrep
+- **list_rules**: The rules are structured YAML definitions that search for semantic anti-patterns in codebases (e.g., unparameterized SQL queries, hardcoded AWS keys).
+
+List Semgrep semantic rules deployed globally
 - **list_projects**: Projects maintain a link between developers and static security scan outputs over time.
 
 List Semgrep projects (repositories) monitored in a deployment
