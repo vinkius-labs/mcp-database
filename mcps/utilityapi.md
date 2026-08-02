@@ -66,18 +66,18 @@ Get detailed usage interval data (hourly/15-min) for authorized meters
 - **get_meter_data**: This is a convenience tool that combines results from get_bills and get_intervals for one meter. Returns: complete bill history (dates, costs, usage) plus granular interval data (time-series readings). Use this when you need a complete picture of a customer's utility data — both the financial (billing) and technical (usage patterns) aspects — for comprehensive energy analysis. The meterUid must be a valid meter UID from list_meters.
 
 Get combined billing and interval data for a specific meter in one call
-- **list_authorizations**: Each authorization represents a customer who has granted access to their utility data. Optional referrals parameter filters by a specific referral code (from test submissions). Set includeMeters=true to also return associated meter data with each authorization. Use this to track which customers have authorized data access and get their referral codes for meter queries.
-
-List all customer data sharing authorizations
-- **list_meters**: Each meter represents a specific utility service connection (electricity or gas) at a customer location. Meter data includes: utility name, service address, fuel type (electric/gas), collection status, and the unique meter_uid used for fetching bills and intervals. Optional authorizationId filters meters to a specific customer authorization. Use the meter_uid with get_bills and get_intervals to retrieve usage data.
-
-List all authorized utility meters (service points)
 - **list_utilities**: Each utility includes its name, utility code (used for form submissions), and supported data types. Use this to find the correct utility code when creating authorization forms or querying utility-specific data. Common utilities include: PG&E (Pacific Gas & Electric), SCE (Southern California Edison), Con Edison, National Grid, and many others across the US.
 
 List all supported utility companies available through UtilityAPI
 - **test_form_submission**: Returns a referral_code that can be used to retrieve the test authorization and associated meter data. Use this during development and testing to verify form configurations work correctly before deploying to production. The formId is the uid returned by create_auth_form. The referral_code returned can be used with list_authorizations to retrieve test data.
 
 Test an authorization form to simulate customer authorization and get a referral code
+- **list_authorizations**: Each authorization represents a customer who has granted access to their utility data. Optional referrals parameter filters by a specific referral code (from test submissions). Set includeMeters=true to also return associated meter data with each authorization. Use this to track which customers have authorized data access and get their referral codes for meter queries.
+
+List all customer data sharing authorizations
+- **list_meters**: Each meter represents a specific utility service connection (electricity or gas) at a customer location. Meter data includes: utility name, service address, fuel type (electric/gas), collection status, and the unique meter_uid used for fetching bills and intervals. Optional authorizationId filters meters to a specific customer authorization. Use the meter_uid with get_bills and get_intervals to retrieve usage data.
+
+List all authorized utility meters (service points)
 
 
 ## 💬 Prompt Examples

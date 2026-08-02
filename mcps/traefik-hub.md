@@ -33,13 +33,13 @@ Explicitly targeted bridging **Cloud Infrastructure Teams**, **Kubernetes Operat
 
 
 ## Available Tools (8)
-- **traefik_approve_subscription**: Deploy a manual accept bridging logic tokens successfully granting ingress traversal
 - **traefik_get_agent_health**: Evaluate the operational execution limits testing liveness probes across ingress hubs
+- **traefik_list_apis**: Dumps the central directory of published internal and external HTTP APIs routing across the Gateway
+- **traefik_list_workspaces**: Enumerate active logic scopes organizing namespaces and API Portals inside Traefik Hub
+- **traefik_approve_subscription**: Deploy a manual accept bridging logic tokens successfully granting ingress traversal
 - **traefik_get_api_metrics**: Observe structured execution telemetries aggregating error traces and explicit API latencies
 - **traefik_list_active_agents**: Locate explicitly hosted Traefik Ingress deployment pods mapped dynamically onto the hub
-- **traefik_list_apis**: Dumps the central directory of published internal and external HTTP APIs routing across the Gateway
 - **traefik_list_subscriptions**: Map explicitly tracked external identities attempting logic access over proxy portals
-- **traefik_list_workspaces**: Enumerate active logic scopes organizing namespaces and API Portals inside Traefik Hub
 - **traefik_revoke_subscription**: Ban and completely tear down an active API consumer token gracefully
 
 

@@ -7,53 +7,25 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Manage your media processing pipelines, encode videos, resize images, and oversee your file cloud instantly via an AI agent.
+Versatile file uploading and processing API.
 
 ## Description
-Transform your AI agent into a full-scale media orchestration engine by connecting it to your **Transloadit** application. Eliminate complicated dashboards and rely entirely upon conversational instructions to launch, monitor, or abort heavy "Assemblies" (media jobs), track operational bills, and register scalable JSON templates without manual interactions.
-
-### What you can do
-
-- **Assembly Execution** — Feed a JSON steps configuration directly into your agent to prompt complex file encodings, resizing jobs, or transmutations natively
-- **Live Monitoring** — Interrogate the agent to retrieve exact results, completion statuses, or outputs parameters for any active or past processing task (Assembly)
-- **Template Management** — Build reusable encoding architectures (Templates) through chat instructions, list available pipelines, or delete deprecated presets
-- **Error Recovery** — Immediately command the AI to cancel heavily hung/unnecessary processing batches or instruct a strict "job replay" to re-attempt a failed cycle
-- **Resource Tracking** — Access your precise billing usage and operational costs per specific month natively without hunting reports on the dashboard
-
-### How it works
-
-1. Attach this specialized component to your current AI runtime
-2. Provide both your distinct Transloadit Auth Key and Secret
-3. Start communicating to orchestrate large media transcoding instructions natively
-
-### Who is this for?
-
-- **Media Developers** — Construct JSON encoding pipelines dynamically using natural language and inject them efficiently to their environment
-- **Content Engineers** — Track progress metrics or selectively replay media items that corrupted during manual upload procedures
-- **Technical Leaders** — Verify the overall usage of external media APIs auditing operational expenses explicitly by requested month
+The Transloadit MCP server allows your AI agent to orchestrate complex file processing pipelines. Trigger encodings, convert documents, resize images, and monitor assembly statuses right from your conversation.
 
 
-## Available Tools (10)
-- **delete_template**: This action is irreversible.
-
-Permanently deletes a processing template
-- **cancel_assembly**: This action is final.
-
-Aborts a running Transloadit assembly
-- **create_assembly**: Provide a steps JSON defining the pipeline.
-
-Creates a Transloadit assembly for automated file processing
-- **create_processing_template**: Provide a name and the steps JSON.
-
-Creates a reusable JSON template for file processing
-- **get_assembly_details**: Retrieves the status and results of a specific Transloadit assembly
-- **get_billing_usage**: Pass the month in YYYY-MM format.
-
-Retrieves file processing usage and costs for a specific month
-- **get_template_details**: Retrieves the configuration of a specific Transloadit template
-- **list_assemblies**: Lists recent Transloadit assemblies in the account
-- **list_templates**: Lists all saved processing templates
-- **replay_assembly**: Re-runs a completed Transloadit assembly
+## Available Tools (12)
+- **create_assembly**: Start a new file processing assembly
+- **list_templates**: List all reusable processing templates
+- **create_template**: Create a new processing template
+- **get_bill**: Retrieve billing information for a specific month
+- **get_me**: Check API connectivity and get account context
+- **get_template**: Retrieve details for a specific template
+- **list_assemblies**: List all file processing assemblies
+- **update_template**: Update an existing template
+- **cancel_assembly**: Stop a currently running assembly
+- **delete_template**: Permanently remove a template
+- **get_assembly**: Retrieve status and results for a specific assembly
+- **replay_assembly**: Re-run a completed assembly
 
 
 ## 💬 Prompt Examples
@@ -61,30 +33,38 @@ Retrieves file processing usage and costs for a specific month
 Here are some examples of how you can interact with the **Transloadit** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Fetch the billing usage details for January 2026."
+> "List all available Transloadit templates."
 
 **🤖 AI Agent:**
-> I've pulled the billing usage for 2026-01. Total processing measured: 14.5 GB out of included 100 GB tier. Accrued overage cost: $0.00.
+> You have 2 templates: 'Video to MP4' (ID: 99a1) and 'Image Resize 500px' (ID: 99a2).
 
 ---
 
 **👤 You:**
-> "Cancel the running assembly calculation currently at ID b13a4x2."
+> "Check the status of Assembly ID 88392."
 
 **🤖 AI Agent:**
-> Assembly b13a4x2 cancellation confirmed. Processing nodes have been immediately stopped.
+> Assembly 88392 is 'COMPLETED'. The processed file is available at the output URL.
+
+---
+
+**👤 You:**
+> "Cancel the processing for Assembly ID 99120."
+
+**🤖 AI Agent:**
+> Assembly ID 99120 has been successfully canceled and removed from the queue.
 
 
 ## ❓ FAQ
 
-**Q: Where do I find my Auth Key and Auth Secret credentials?**
-Navigate directly directly to the Transloadit web frontend. Open your Account settings. On the sidebar, click on **Credentials**. You will spot your public `Auth Key` directly exposed, and right next to it the option to reveal your `Auth Secret`. Both strings are required parameters here.
+**Q: Can I check the status of a specific file assembly?**
+Yes, just provide the Assembly ID to the agent, and it will return the real-time processing status and output URLs.
 
-**Q: Does `cancel_assembly` action cost money if triggered early?**
-Yes, absolutely. Halting an assembly stops Transloadit servers from expending gigabytes processing irrelevant files immediately. Consequently, acting rapidly prevents unnecessary overuse charges and quotas from draining. Use it when observing logical JSON mistakes.
+**Q: Does it support triggering new conversions?**
+You can trigger new pipelines if you supply a valid Template ID and the source file URLs.
 
-**Q: Do I need Signature Authentication for Transloadit?**
-Yes. For production environments, it is strongly recommended to use Signature Authentication to prevent unauthorized use. Your Transloadit MCP integration handles this internally using the provided Auth Secret to sign requests securely.
+**Q: How do I list my active templates?**
+Ask the AI to 'List all Transloadit templates' and it will retrieve your available processing recipes.
 
 
 ## Installation & Usage

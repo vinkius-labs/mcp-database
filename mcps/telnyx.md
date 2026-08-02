@@ -34,12 +34,10 @@ Connect your **Telnyx** account to any AI agent and manage your voice and messag
 
 
 ## Available Tools (10)
+- **get_account_balance**: Retrieves the current Telnyx account credit balance
 - **delete_messaging_profile**: This action is irreversible.
 
 Permanently deletes a messaging profile
-- **get_account_balance**: Retrieves the current Telnyx account credit balance
-- **get_message_details**: Retrieves details and delivery status for a specific message
-- **get_number_settings**: Retrieves configuration and capability details for a specific phone number
 - **get_messaging_profile_details**: Retrieves details for a specific messaging profile
 - **list_phone_numbers**: 164 numbers and retrieve their unique IDs.
 
@@ -48,10 +46,12 @@ Lists all phone numbers owned by the account
 - **send_text_message**: Provide a registered Telnyx from_number and a target to_number in E.164 format.
 
 Sends an outbound SMS message via Telnyx
-- **create_messaging_profile**: Creates a new messaging profile
 - **send_media_message**: Provide from/to numbers and a 100% public JPEG/PNG URL.
 
 Sends an outbound MMS message with a media URL
+- **create_messaging_profile**: Creates a new messaging profile
+- **get_message_details**: Retrieves details and delivery status for a specific message
+- **get_number_settings**: Retrieves configuration and capability details for a specific phone number
 
 
 ## 💬 Prompt Examples

@@ -34,6 +34,13 @@ Connect your **Tettra** internal knowledge base to any AI agent and bring your c
 
 
 ## Available Tools (12)
+- **search_pages**: Returns up to 5 matching pages.
+
+Full-text search across all Tettra wiki pages
+- **suggest_new_page**: Suggests a new wiki page to the team
+- **update_wiki_page**: Provide the page ID and the new fields.
+
+Updates the title or content of an existing Tettra page
 - **verify_wiki_page**: Marks a Tettra page as verified and up-to-date
 - **create_wiki_page**: Provide title, content, and category ID.
 
@@ -47,13 +54,6 @@ Retrieves the full content and metadata of a specific Tettra page
 - **list_pages_in_category**: Lists all wiki pages within a specific category
 - **list_qa_questions**: Lists all questions posted in the Tettra Q&A system
 - **list_subcategories**: Lists all subcategories under a specific parent category
-- **search_pages**: Returns up to 5 matching pages.
-
-Full-text search across all Tettra wiki pages
-- **suggest_new_page**: Suggests a new wiki page to the team
-- **update_wiki_page**: Provide the page ID and the new fields.
-
-Updates the title or content of an existing Tettra page
 
 
 ## 💬 Prompt Examples

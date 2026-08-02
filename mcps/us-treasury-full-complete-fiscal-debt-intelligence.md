@@ -22,24 +22,27 @@ The **ultimate U.S. Treasury Mega-Server** — 13 tools.
 
 
 ## Available Tools (13)
-- **get_federal_spending**: Shows current month gross outlays vs. prior year.
-
-Get federal government spending by department and agency
-- **get_deficit_surplus**: The U.S. fiscal year runs October 1 through September 30.
-
-Get the federal budget deficit or surplus — fiscal year to date
-- **get_federal_revenue**: Shows current month and fiscal-year-to-date totals vs. prior year.
-
-Get federal government revenue — tax receipts by source
-- **get_daily_cash_balance**: This is the government's daily bank statement — how much cash the U.S. has on hand.
-
-Get the daily operating cash balance of the U.S. Treasury
-- **get_daily_debt_transactions**: Shows today, month-to-date, and fiscal-year-to-date amounts. Reveals the daily mechanics of how the U.S. finances its operations.
-
-Get daily public debt transactions — issuance and redemptions
 - **get_national_debt**: S. national debt (Total Public Debt Outstanding) updated daily by the Treasury Department. Breaks down into Debt Held by the Public (marketable securities) and Intragovernmental Holdings (trust funds like Social Security). As of 2026, the national debt exceeds $39 trillion.
 
 Get the U.S. national debt to the penny — updated daily
+- **get_federal_spending**: Shows current month gross outlays vs. prior year.
+
+Get federal government spending by department and agency
+- **get_daily_debt_transactions**: Shows today, month-to-date, and fiscal-year-to-date amounts. Reveals the daily mechanics of how the U.S. finances its operations.
+
+Get daily public debt transactions — issuance and redemptions
+- **get_treasury_exchange_rates**: Updated quarterly. Covers 170+ currencies against the U.S. dollar. These are the official rates used for government accounting and reporting.
+
+Get official Treasury exchange rates for 170+ currencies
+- **get_federal_revenue**: Shows current month and fiscal-year-to-date totals vs. prior year.
+
+Get federal government revenue — tax receipts by source
+- **get_deficit_surplus**: The U.S. fiscal year runs October 1 through September 30.
+
+Get the federal budget deficit or surplus — fiscal year to date
+- **get_daily_cash_balance**: This is the government's daily bank statement — how much cash the U.S. has on hand.
+
+Get the daily operating cash balance of the U.S. Treasury
 - **get_debt_history**: Format: YYYY-MM-DD. Useful for tracking debt growth over specific periods — fiscal years, election cycles, presidencies, economic crises.
 
 Get national debt for a specific date range
@@ -52,9 +55,6 @@ Get average interest rates on U.S. Treasury securities
 - **get_treasury_auctions**: The bid-to-cover ratio indicates investor demand — higher ratios = stronger demand for U.S. debt.
 
 Get results of Treasury securities auctions — Bills, Notes, Bonds
-- **get_treasury_exchange_rates**: Updated quarterly. Covers 170+ currencies against the U.S. dollar. These are the official rates used for government accounting and reporting.
-
-Get official Treasury exchange rates for 170+ currencies
 - **get_exchange_rate_for_currency**: Use the currency name or country (e.g., "Euro", "Japan-Yen", "Brazil-Real", "United Kingdom-Pound"). Updated quarterly.
 
 Get Treasury exchange rate history for a specific currency

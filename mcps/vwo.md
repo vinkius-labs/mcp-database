@@ -38,22 +38,22 @@ No more jumping between experiment dashboards to check test results. Your AI age
 
 
 ## Available Tools (10)
-- **get_vwo_account_info**: Retrieves details about the authenticated VWO account
 - **get_campaign_details**: Retrieves details for a specific VWO campaign
 - **get_feature_flag_details**: Retrieves configuration for a specific VWO feature flag
 - **get_campaign_results**: Retrieves statistical results for a VWO campaign
-- **list_optimization_campaigns**: Lists all VWO A/B test and personalization campaigns
 - **list_vwo_environments**: g. Production, Staging) for feature flag management.
 
 Lists all configured VWO environments
-- **list_feature_flags**: Lists all VWO feature flags
-- **list_conversion_goals**: g. clicks, revenue) are being tracked.
-
-Lists all conversion goals and metrics
 - **list_audience_segments**: Lists all audience segments
 - **toggle_feature_flag**: Provide the feature ID and the desired enabled status (true/false).
 
 Enables or disables a VWO feature flag
+- **list_optimization_campaigns**: Lists all VWO A/B test and personalization campaigns
+- **get_vwo_account_info**: Retrieves details about the authenticated VWO account
+- **list_feature_flags**: Lists all VWO feature flags
+- **list_conversion_goals**: g. clicks, revenue) are being tracked.
+
+Lists all conversion goals and metrics
 
 
 ## 💬 Prompt Examples

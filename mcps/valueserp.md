@@ -39,10 +39,6 @@ Your AI agent becomes a robust, unblockable search intelligence engine.
 - **custom_serp_search**: Provide parameters as a JSON object.
 
 Executes a highly customized Google search with advanced parameters
-- **get_search_suggestions**: Retrieves predictive search suggestions from Google autocomplete
-- **google_image_search**: Returns direct URLs to image files.
-
-Searches for images on Google
 - **google_news_search**: Searches for news articles on Google
 - **google_search**: Provide a query string and optional location.
 
@@ -56,6 +52,10 @@ Searches for local businesses and places on Google Maps
 Searches for products and prices on Google Shopping
 - **google_video_search**: Searches for video content on Google
 - **get_related_questions**: Retrieves "People Also Ask" questions and answers from Google
+- **get_search_suggestions**: Retrieves predictive search suggestions from Google autocomplete
+- **google_image_search**: Returns direct URLs to image files.
+
+Searches for images on Google
 
 
 ## 💬 Prompt Examples

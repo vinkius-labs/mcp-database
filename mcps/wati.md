@@ -5,50 +5,48 @@
 
 ## Overview
 
-**Category:** [talk-to-me](../categories/talk-to-me.md)
+**Category:** [communication-messaging](../categories/communication-messaging.md)
 
-Send WhatsApp template and session messages, and manage contacts on Wati — the leading WhatsApp Business API solution.
+Send WhatsApp messages at scale with official API access, chatbot automation, and shared team inbox for business conversations.
 
 ## Description
-Connect your **Wati** account to any AI agent and power your customer communication on WhatsApp through natural conversation.
+Connect your **Wati** WhatsApp Business account to any AI agent and simplify how you engage with your customers through natural conversation and automated messaging workflows.
 
 ### What you can do
 
-- **Unified Messaging** — Send approved WhatsApp template messages or free-text session replies to your customers
-- **Contact Management** — List all WhatsApp contacts in your Wati CRM and retrieve full profile details by phone number
-- **Chat History** — Retrieve the recent message history for any contact to provide personalized support or sales follow-ups
-- **Template Discovery** — List all approved and pending WhatsApp message templates available for outbound messaging
-- **Broadcast Campaigns** — Monitor previous and active WhatsApp broadcast campaigns and track their delivery status
-- **Customer Roster** — Quickly browse your customer list and their associated phone numbers directly from your agent
+- **Direct Messaging** — Send instant WhatsApp session messages to active contacts for real-time support and engagement.
+- **Template Automation** — Send pre-approved WhatsApp templates to start conversations or send notifications with dynamic parameters.
+- **Contact Management** — List and inspect your WhatsApp subscribers and contacts to keep your directory up-to-date.
+- **Chat History** — Retrieve the complete message history for any specific contact to understand the conversation context.
+- **Template Catalog** — List all available message templates to identify the best options for your communication strategy.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Wati API URL and API Token
-3. Start managing your WhatsApp business communication through Claude, Cursor, or any MCP-compatible client
-
-No more manual logging into the Wati dashboard to reply to a single message. Your AI agent becomes your WhatsApp communication hub.
+2. Enter your Wati API Key and API Endpoint (found in your Wati API dashboard)
+3. Start managing your WhatsApp communication from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **Customer Support Teams** — quickly reply to user messages and check chat history for better context
-- **Sales Professionals** — send template messages to prospects and manage WhatsApp leads through chat
-- **Marketing Managers** — monitor broadcast campaigns and verify template approval status
-- **Account Managers** — lookup customer profiles and maintain active communication within the 24-hour window
+- **Customer Support Teams** — quickly respond to inquiries and retrieve chat history via simple AI commands.
+- **Sales & Marketing** — automate the sending of template-based notifications and manage lead contacts directly.
+- **Operations Managers** — monitor communication flows and verify template availability without leaving the workspace.
 
 
-## Available Tools (7)
-- **get_whatsapp_contact_details**: Retrieves profile details for a specific WhatsApp contact by phone number
-- **get_whatsapp_chat_history**: Provide the contact’s phone number.
-
-Retrieves the recent message history for a specific contact
-- **list_broadcast_campaigns**: Lists previous and active WhatsApp broadcast campaigns
-- **list_whatsapp_contacts**: Lists all WhatsApp contacts in the Wati CRM
-- **list_whatsapp_templates**: Lists all approved and pending WhatsApp message templates
-- **send_session_message**: Sends a free-text session message to a user
-- **send_template_message**: Requires the template name and target phone number.
-
-Sends an approved WhatsApp template message
+## Available Tools (13)
+- **add_contact**: Add a contact
+- **get_contact**: Get contact details
+- **get_template**: Get template details
+- **list_templates**: List message templates
+- **list_broadcasts**: List broadcasts
+- **list_contacts**: List contacts
+- **list_messages**: List messages
+- **list_tags**: List tags
+- **send_media_message**: Send media message
+- **update_contact**: Update contact attributes
+- **send_session_message**: Send a session message
+- **send_template_message**: Send a template message
+- **check_wati_status**: Verify connectivity
 
 
 ## 💬 Prompt Examples
@@ -56,38 +54,38 @@ Sends an approved WhatsApp template message
 Here are some examples of how you can interact with the **Wati** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my WhatsApp contacts in Wati."
+> "List all my WhatsApp templates."
 
 **🤖 AI Agent:**
-> I found 150 contacts. The most recent ones are 'John Doe' (+123456789), 'Jane Smith' (+987654321), and 'Robert Brown' (+112233445). Would you like the full profile details for any of them?
+> I've retrieved your message templates. You have 5 approved templates including 'Welcome Message', 'Order Confirmation', and 'Shipping Update'. Which one would you like to use?
 
 ---
 
 **👤 You:**
-> "Send the 'order_confirmation' template to +123456789."
+> "Send the 'order_ready' template to 5511999999999."
 
 **🤖 AI Agent:**
-> I've successfully sent the 'order_confirmation' template message to +123456789 via Wati. The message has been queued for delivery.
+> Template message sent! I've triggered the 'order_ready' template to the recipient 5511999999999. The message ID is WATI_8823.
 
 ---
 
 **👤 You:**
-> "What was my last conversation with +123456789 about?"
+> "Show me the chat history for the number 5511888888888."
 
 **🤖 AI Agent:**
-> Retrieving history for +123456789… The last 3 messages were: 1. Customer: 'Is my package arriving today?' 2. You: 'Yes, it's out for delivery.' 3. Customer: 'Thanks!'. Would you like me to pull more history?
+> I've fetched the history. The last 3 messages show the customer asking about pricing, followed by your response and a confirmation of payment. Would you like to see the full transcript?
 
 
 ## ❓ FAQ
 
-**Q: Can I send a WhatsApp message to a customer who hasn't messaged me first?**
-Yes, but you must use an approved template message. The `send_template_message` tool allows you to initiate communication using these templates. If the user has messaged you in the last 24 hours, you can use `send_session_message` for free-text replies.
+**Q: What is the difference between a session message and a template message?**
+Session messages can only be sent if the user has messaged you in the last 24 hours. Template messages are pre-approved by WhatsApp and can be used to initiate a conversation at any time.
 
-**Q: How do I see what templates are available to send?**
-Use the `list_whatsapp_templates` tool. It will return all your approved and pending message templates, allowing you to choose the right one for your communication needs.
+**Q: How do I see the approved templates in my account?**
+Use the `list_message_templates` query. Your agent will retrieve the complete list of pre-approved WhatsApp templates available in your Wati dashboard.
 
-**Q: Can I check the delivery status of my broadcast campaigns via chat?**
-Yes. The `list_broadcast_campaigns` tool provides a list of your previous and active WhatsApp broadcasts, including their delivery statistics, so you can track performance directly from your agent.
+**Q: Can I retrieve the last messages from a specific customer?**
+Yes! Use the `list_chat_history` tool and provide the customer's WhatsApp number. The agent will return the message history for that specific conversation.
 
 
 ## Installation & Usage

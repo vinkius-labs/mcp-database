@@ -38,9 +38,6 @@ No more manual navigation through complex storage consoles to check your files. 
 
 
 ## Available Tools (10)
-- **create_storage_bucket**: Provide a globally unique lower-kebab-case name.
-
-Creates a new high-availability storage bucket in the configured Wasabi region
 - **delete_storage_bucket**: Note: The bucket must be completely empty first. This action is irreversible.
 
 Permanently removes an empty storage bucket
@@ -56,6 +53,9 @@ Permanently deletes a specific file from a bucket
 
 Lists the files (objects) stored within a specific bucket
 - **list_pending_multipart_uploads**: Lists incomplete multipart uploads in a bucket
+- **create_storage_bucket**: Provide a globally unique lower-kebab-case name.
+
+Creates a new high-availability storage bucket in the configured Wasabi region
 
 
 ## 💬 Prompt Examples
