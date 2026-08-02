@@ -33,7 +33,6 @@ Connect your **QuickNode** account to any AI agent to orchestrate Web3 infrastru
 
 
 ## Available Tools (18)
-- **create_kv_list**: Create a new KV Store list
 - **create_kv_set**: Create a KV Store key-value pair
 - **create_stream**: Create a new QuickNode stream
 - **create_webhook**: Create a webhook from a template
@@ -51,6 +50,7 @@ Connect your **QuickNode** account to any AI agent to orchestrate Web3 infrastru
 - **rpc_eth_gettransactionreceipt**: Returns the receipt of a transaction by hash
 - **update_kv_list**: Add or remove items from a KV Store list
 - **update_stream**: Update an existing QuickNode stream
+- **create_kv_list**: Create a new KV Store list
 
 
 ## 💬 Prompt Examples

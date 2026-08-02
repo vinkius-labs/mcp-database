@@ -36,15 +36,6 @@ Connect your AI agent to the **Binance** public API and take full control of you
 
 
 ## Available Tools (7)
-- **get_price**: Accept natural names: "bitcoin", "BTC", "eth", "SOLUSDT". Returns current price + 24h change percentage. For full stats (volume, high/low, trades), use crypto.ticker instead.
-
-Get the current price of any cryptocurrency in USDT with 24h trend
-- **get_ticker**: Accept natural names (e.g. "bitcoin", "BTC", "btcusdt"). For just a quick price, use crypto.price instead.
-
-Get full 24h statistics for any cryptocurrency trading pair on Binance
-- **list_market**: Returns USDT trading pairs ranked by 24h volume. Limit is 1–50 coins. Default to 10 if the user does not specify.
-
-Get the top cryptocurrencies by trading volume on Binance, ranked by 24h USDT volume
 - **get_candles**: Supported intervals: 1m, 5m, 15m, 30m, 1h, 4h, 1d, 1w. Limit is 1–100 candles. Default to 30 daily candles (interval=1d, limit=30) unless the user specifies. Do NOT use for just a current price — use crypto.price for that.
 
 Get OHLCV candlestick chart data for a cryptocurrency pair on Binance
@@ -57,6 +48,15 @@ Get the top gaining and/or losing cryptocurrencies on Binance in the last 24 hou
 - **get_volatility**: Fetches the last N candles and computes: amplitude %, trend direction, bull/bear ratio. Do NOT use for a simple price check — use crypto.price instead. Default: interval=1h, periods=24 (last 24 hours).
 
 Analyse the price volatility and trend of a cryptocurrency over a given number of candles
+- **get_price**: Accept natural names: "bitcoin", "BTC", "eth", "SOLUSDT". Returns current price + 24h change percentage. For full stats (volume, high/low, trades), use crypto.ticker instead.
+
+Get the current price of any cryptocurrency in USDT with 24h trend
+- **get_ticker**: Accept natural names (e.g. "bitcoin", "BTC", "btcusdt"). For just a quick price, use crypto.price instead.
+
+Get full 24h statistics for any cryptocurrency trading pair on Binance
+- **list_market**: Returns USDT trading pairs ranked by 24h volume. Limit is 1–50 coins. Default to 10 if the user does not specify.
+
+Get the top cryptocurrencies by trading volume on Binance, ranked by 24h USDT volume
 
 
 ## 💬 Prompt Examples

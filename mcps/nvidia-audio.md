@@ -37,6 +37,11 @@ Connect **NVIDIA Audio** to any AI agent and unlock professional-grade audio pro
 - **list_audio_models**: List available audio models on NVIDIA API Catalog
 - **speaker_diarization**: Identify different speakers in an audio file
 - **punctuate_text**: Add punctuation and capitalization to raw text
+- **classify_audio**: ) with confidence scores.
+
+Classify the type of sound in an audio file
+- **clone_voice**: Clone a voice from a reference audio and generate speech
+- **cancel_noise**: Remove background noise from audio
 - **speech_to_text**: Supports multiple languages. Provide a public audio URL (MP3, WAV, etc).
 
 Transcribe speech from audio to text (Whisper-style)
@@ -47,11 +52,6 @@ Convert text to natural-sounding speech
 - **audio_translation**: Provide target language.
 
 Translate spoken audio to another language
-- **classify_audio**: ) with confidence scores.
-
-Classify the type of sound in an audio file
-- **clone_voice**: Clone a voice from a reference audio and generate speech
-- **cancel_noise**: Remove background noise from audio
 
 
 ## 💬 Prompt Examples

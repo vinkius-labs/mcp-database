@@ -34,18 +34,18 @@ Connect your **MonkeyLearn** account to any AI agent and run NLP text analysis t
 
 
 ## Available Tools (12)
-- **list_classifiers**: List text classifiers
-- **list_extractors**: List text extractors
 - **classify_text**: Classify text data
 - **extract_text_entities**: Extract entities
-- **get_api_status**: Get account status
 - **get_classifier_details**: Get classifier info
 - **get_extractor_details**: Get extractor info
 - **list_classifier_tags**: List model tags
+- **list_classifiers**: List text classifiers
 - **list_extractor_tags**: List extractor tags
+- **list_extractors**: List text extractors
 - **list_model_versions**: List model versions
 - **list_nlp_workflows**: List account workflows
 - **run_workflow**: Run NLP workflow
+- **get_api_status**: Get account status
 
 
 ## 💬 Prompt Examples

@@ -54,13 +54,13 @@ List active or past Hyperbrowser sessions
 - **run_script**: The browser will execute and return the evaluation result.
 
 Execute JS script inside a running Hyperbrowser session
-- **start_scrape**: Returns a job ID. Use get_scrape_job to poll for completion. Pass target URL and optional JSON config.
-
-Start a Hyperbrowser async scraping job
 - **page_screenshot**: Returns image metadata or URL.
 
 Take a managed screenshot via Hyperbrowser
 - **stop_session**: Terminate an active Hyperbrowser session
+- **start_scrape**: Returns a job ID. Use get_scrape_job to poll for completion. Pass target URL and optional JSON config.
+
+Start a Hyperbrowser async scraping job
 
 
 ## 💬 Prompt Examples

@@ -33,14 +33,14 @@ Connect **Meta Ads** to your AI agent and manage Facebook and Instagram advertis
 
 
 ## Available Tools (10)
+- **list_creatives**: List ad creatives
+- **activate_campaign**: Activate a paused campaign
 - **list_ads**: List ads in an ad set
 - **get_account_insights**: Get account-level performance
 - **list_audiences**: List custom audiences
-- **list_creatives**: List ad creatives
 - **pause_campaign**: Can be reactivated later.
 
 Pause a campaign
-- **activate_campaign**: Activate a paused campaign
 - **list_campaigns**: List all Meta ad campaigns
 - **get_account_info**: Get ad account details
 - **get_campaign_insights**: Get campaign performance metrics

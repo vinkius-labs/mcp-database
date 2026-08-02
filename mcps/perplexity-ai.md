@@ -50,6 +50,10 @@ This is essential for research, fact-checking, and academic work where sources m
 The response includes a citations array with URLs of all referenced sources.
 
 Ask Perplexity AI and get answers with source citations
+- **chat_with_images**: The response includes an images array with URLs to related images found during the search.
+Use this for visual topics, product searches, or when you need images to accompany the answer.
+
+Ask Perplexity AI and get relevant images with the answer
 - **chat_with_domain_filter**: Provide domains as a comma-separated list (e.g., "arxiv.org,nih.gov,github.com").
 Only sources from the specified domains will be used in generating the answer.
 Use this for domain-specific research, academic papers, or trusted sources only.
@@ -62,10 +66,6 @@ Use this for complex queries that build on previous answers or require contextua
 Example: [{ "role": "user", "content": "What is quantum computing?" }, { "role": "assistant", "content": "Quantum computing uses quantum bits..." }, { "role": "user", "content": "How does it differ from classical computing?" }]
 
 Ask Perplexity AI with multi-turn conversation history
-- **chat_with_images**: The response includes an images array with URLs to related images found during the search.
-Use this for visual topics, product searches, or when you need images to accompany the answer.
-
-Ask Perplexity AI and get relevant images with the answer
 - **chat_with_recency_filter**: Available recency filters: "hour", "day", "week", "month", "year".
 This ensures the answer is based on recent information only.
 Use this for news, recent events, or time-sensitive queries where outdated info is not useful.

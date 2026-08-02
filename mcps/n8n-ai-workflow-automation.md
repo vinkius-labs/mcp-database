@@ -36,8 +36,8 @@ Connect your **n8n** instance to any AI agent and take full control of your node
 
 
 ## Available Tools (7)
-- **get_workflow_details**: Get details for a specific workflow
 - **list_workflow_tags**: List workflow organizational tags
+- **get_workflow_details**: Get details for a specific workflow
 - **list_instance_users**: List collaborators on the n8n instance
 - **list_workflows**: List n8n automation workflows
 - **list_stored_credentials**: List metadata for saved credentials

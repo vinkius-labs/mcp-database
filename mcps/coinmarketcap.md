@@ -33,12 +33,12 @@ Connect your AI to **CoinMarketCap**, the world's most-referenced crypto price-t
 
 ## Available Tools (8)
 - **get_global_metrics**: Retrieve aggregate market data for the entire cryptocurrency market
+- **list_listings**: Retrieve a paginated list of all active cryptocurrencies with latest market data
 - **get_id_map**: Retrieve a mapping of symbols/names to unique CMC IDs
 - **get_key_info**: Check your API keys usage, remaining credits, and rate limits
 - **get_metadata**: Retrieve static metadata for one or more cryptocurrencies (logo, description, etc.)
 - **get_quotes**: Retrieve the latest market quotes for one or more cryptocurrencies
 - **list_exchanges**: Retrieve a ranked list of all cryptocurrency exchanges
-- **list_listings**: Retrieve a paginated list of all active cryptocurrencies with latest market data
 - **price_conversion**: Convert an amount of one currency to another using latest market prices
 
 

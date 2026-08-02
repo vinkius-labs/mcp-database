@@ -25,9 +25,6 @@ Connect the **OpenAI** API to any AI agent and unlock the full power of GPT mode
 
 
 ## Available Tools (10)
-- **chat_completion**: Specify model (gpt-4o, gpt-4o-mini, etc.) and messages array as JSON.
-
-Generate a chat completion using OpenAI models
 - **structured_output**: Provide a system prompt and user message.
 
 Generate structured JSON output from a prompt
@@ -36,6 +33,9 @@ Generate structured JSON output from a prompt
 - **create_fine_tune**: Requires a previously uploaded JSONL training file ID.
 
 Create a fine-tuning job
+- **chat_completion**: Specify model (gpt-4o, gpt-4o-mini, etc.) and messages array as JSON.
+
+Generate a chat completion using OpenAI models
 - **list_fine_tunes**: List fine-tuning jobs
 - **generate_image**: Returns the image URL.
 

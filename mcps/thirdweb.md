@@ -34,31 +34,31 @@ Connect your **ThirdWeb** account to any AI agent to build and manage Web3 appli
 
 ## Available Tools (29)
 - **broadcast_solana_transaction**: Broadcast a transaction on Solana
-- **complete_auth**: Verify challenge and complete login
-- **create_solana_wallet**: Create a Solana wallet
 - **list_solana_wallets**: List Solana wallets
 - **deploy_contract**: Deploy a contract using bytecode and ABI
-- **execute_solana_swap**: Execute a token swap on Solana Mainnet
-- **fetch_with_payment**: Proxy a request to a paid API using x402
 - **get_payment_requirements**: Generate payment requirements for a resource (x402)
 - **get_solana_balance**: Get Solana wallet balance
-- **get_solana_swap_quote**: Get a token swap quote on Solana Mainnet
 - **get_transaction_status**: Get status of a transaction
-- **get_user_details**: Search for users in your project
 - **get_wallet_me**: Retrieve details of the authenticated user
 - **initiate_auth**: Start authentication process for email, phone, passkey, or SIWE
 - **link_profile**: Tie multiple social identities to a single wallet address
+- **send_solana_tokens**: Send Solana tokens
+- **settle_payment**: Submit the payment on-chain (x402)
+- **sign_solana_message**: Sign a message on Solana
+- **social_auth**: OAuth flow for social providers
+- **complete_auth**: Verify challenge and complete login
+- **create_solana_wallet**: Create a Solana wallet
+- **execute_solana_swap**: Execute a token swap on Solana Mainnet
+- **fetch_with_payment**: Proxy a request to a paid API using x402
+- **get_solana_swap_quote**: Get a token swap quote on Solana Mainnet
+- **get_user_details**: Search for users in your project
 - **list_transactions**: List transactions
 - **pregenerate_wallet**: Create a wallet for a user before they first log in
 - **query_events**: Fetch historical events for a contract
 - **query_transactions**: Fetch transaction history for a contract
 - **read_contract**: Execute one or more read-only calls (multicall)
 - **send_raw_transactions**: Broadcast encoded transactions
-- **send_solana_tokens**: Send Solana tokens
-- **settle_payment**: Submit the payment on-chain (x402)
-- **sign_solana_message**: Sign a message on Solana
 - **sign_solana_transaction**: Sign a transaction on Solana
-- **social_auth**: OAuth flow for social providers
 - **unlink_profile**: Unlink a social identity from a wallet address
 - **verify_payment**: Validate a signed payment payload (x402)
 - **write_contract**: Execute one or more state-changing calls atomically
