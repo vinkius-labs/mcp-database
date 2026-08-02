@@ -34,6 +34,13 @@ Connect to **Travelport**, the world's leading travel commerce platform, and emp
 
 
 ## Available Tools (21)
+- **retrieve_flight_reservation**: Retrieve an existing flight reservation
+- **search_flights**: Search for flight catalog product offerings
+- **search_next_leg**: Search for the next leg of a flight itinerary
+- **retrieve_hotel_reservation**: Retrieve an existing hotel reservation
+- **reverse_authorization**: Reverse a payment card authorization
+- **search_flight_specific**: Perform a flight specific search
+- **search_stays_complete**: Perform a complete hotel search (v12)
 - **add_offer_to_workbench**: Add an air offer to an existing workbench
 - **add_traveler_to_workbench**: Add a traveler to an existing workbench
 - **authorize_card**: Authorize a payment card
@@ -44,13 +51,6 @@ Connect to **Travelport**, the world's leading travel commerce platform, and emp
 - **get_hotel_rules**: Get hotel rules (v11)
 - **price_offer_full**: Price an air offer fully from products
 - **price_offer_reference**: Price an air offer from a catalog reference
-- **retrieve_flight_reservation**: Retrieve an existing flight reservation
-- **retrieve_hotel_reservation**: Retrieve an existing hotel reservation
-- **reverse_authorization**: Reverse a payment card authorization
-- **search_flight_specific**: Perform a flight specific search
-- **search_flights**: Search for flight catalog product offerings
-- **search_next_leg**: Search for the next leg of a flight itinerary
-- **search_stays_complete**: Perform a complete hotel search (v12)
 - **search_stays_by_id**: Search for hotel properties by ID (v11)
 - **search_stays_by_location**: Search for hotel properties by location (v11)
 - **validate_card**: Validate a payment card

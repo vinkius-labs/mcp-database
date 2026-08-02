@@ -35,7 +35,6 @@ Connect your **Ada** account to your AI agent to unlock advanced customer servic
 
 
 ## Available Tools (4)
-- **list_conversations**: Retrieve active and past customer support conversations handled by the Ada bot
 - **get_end_user**: Requires the End User ID.
 
 Retrieve profile information and custom metavariables for a specific Ada end user
@@ -43,6 +42,7 @@ Retrieve profile information and custom metavariables for a specific Ada end use
 - **create_article**: Needs title and text content.
 
 Add a new text article to the Ada knowledge base to immediately improve AI bot responses
+- **list_conversations**: Retrieve active and past customer support conversations handled by the Ada bot
 
 
 ## 💬 Prompt Examples

@@ -22,7 +22,7 @@ By strictly scoping access, your AI can safely offload complex math, heavy data 
 
 
 ## Available Tools (1)
-- **azure_functions_invoke**: The tool waits for the function to execute and returns the result (JSON or text).
+- **invoke_function**: The tool waits for the function to execute and returns the result (JSON or text).
 
 Synchronously invoke the configured Azure Function
 

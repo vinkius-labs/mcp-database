@@ -35,16 +35,16 @@ Connect to **Wikidata**, the central storage for structured data of Wikimedia pr
 
 
 ## Available Tools (8)
-- **get_item_statements**: Retrieve statements for a Wikidata Item
-- **get_item**: g., Q42) via the Wikibase REST API.
-
-Retrieve a specific Wikidata Item
 - **get_similarity_score**: Compute similarity between text and an entity
 - **search_items_vector**: Hybrid vector/keyword search for Items
 - **search_properties_vector**: Hybrid vector/keyword search for Properties
 - **set_item_description**: Requires OAuth 2.0 Access Token.
 
 Set an Item description
+- **get_item_statements**: Retrieve statements for a Wikidata Item
+- **get_item**: g., Q42) via the Wikibase REST API.
+
+Retrieve a specific Wikidata Item
 - **create_statement**: Requires OAuth 2.0 Access Token.
 
 Create a new statement for an Item

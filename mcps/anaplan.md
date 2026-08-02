@@ -38,9 +38,9 @@ Connect your **Anaplan** account to your AI agent to automate financial planning
 - **list_files**: List files in a model (exports/imports)
 - **list_imports**: List import actions for a model
 - **list_models**: List Anaplan models. Optionally filter by workspaceId
+- **run_export**: Run an Anaplan export action
 - **list_processes**: List processes for a model
 - **list_workspaces**: List available Anaplan workspaces
-- **run_export**: Run an Anaplan export action
 - **run_import**: Run an Anaplan import action
 - **run_process**: Run an Anaplan process
 

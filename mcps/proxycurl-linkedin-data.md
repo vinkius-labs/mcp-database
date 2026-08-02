@@ -34,14 +34,12 @@ Connect **Proxycurl** to your AI agent to access real-time B2B intelligence and 
 
 
 ## Available Tools (18)
-- **add_monitor_target**: Add a target to an existing monitor feed
 - **check_disposable_email**: Detect temporary or throwaway email addresses
 - **get_company_details**: Retrieve comprehensive company metadata and leadership teams
 - **get_company_employee_count**: Retrieve the estimated headcount range for a company
 - **get_company_funding**: It may take up to 5 minutes.
 
 Retrieve full funding history, rounds, and participating investors
-- **get_company_logo**: Retrieve a 128x128 PNG logo URL for any company
 - **get_company_updates**: Aggregate blog posts and X/Twitter updates into a mixed timeline
 - **company_website_lookup**: Resolve a company name to its canonical website URL
 - **get_competitor_listing**: Find competitors and the reasoning (keyword overlap or product similarity)
@@ -55,6 +53,8 @@ Retrieve full funding history, rounds, and participating investors
 - **get_similar_employees**: Repeat queries are served free from cache.
 
 Find counterparts in similar roles at competing companies
+- **add_monitor_target**: Add a target to an existing monitor feed
+- **get_company_logo**: Retrieve a 128x128 PNG logo URL for any company
 - **get_credit_balance**: Check your remaining API credit balance
 
 

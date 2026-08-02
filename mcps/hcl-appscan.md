@@ -30,10 +30,10 @@ The **HCL AppScan MCP Server** brings powerful application security testing capa
 
 ## Available Tools (10)
 - **get_account_check**: Verify AppScan account connection
-- **get_account_info**: Retrieve authenticated user information
 - **get_app**: Get details for a specific application
 - **get_issue**: Get detailed information about a specific vulnerability
 - **get_scan**: Get details and status for a specific scan
+- **get_account_info**: Retrieve authenticated user information
 - **list_apps**: List all applications in your AppScan inventory
 - **list_issues**: List vulnerabilities found for a specific application
 - **list_presence**: List AppScan Presences (local agents)

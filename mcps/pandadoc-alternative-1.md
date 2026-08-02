@@ -5,53 +5,60 @@
 
 ## Overview
 
-**Category:** [document-management](../categories/document-management.md)
+**Category:** [industry-titans](../categories/industry-titans.md)
 
-Automate document workflows—create from templates, send for signature, and track status directly from your AI agent.
+Close deals faster with proposals, contracts, and e-signatures in one platform that tracks document engagement in real time.
 
 ## Description
-Connect your **PandaDoc** account to any AI agent to automate your entire document lifecycle—from generation to e-signature—using natural language.
+Connect your **PandaDoc** account to any AI agent and take full control of your document orchestration and e-signature workflows through natural conversation. PandaDoc provides a premier platform for creating, sending, and tracking business documents, and this integration allows you to retrieve document metadata, monitor signature statuses, and generate new contracts directly from your chat interface.
 
 ### What you can do
 
-- **Document Creation** — Generate new documents from existing templates or public PDF URLs with custom tokens and fields.
-- **Sending & Delivery** — Send documents to recipients with custom email subjects and messages once they are ready.
-- **Status Tracking** — Monitor the real-time progress of documents (draft, sent, viewed, completed) and fetch full metadata.
-- **Template Management** — List and inspect available templates to ensure you are using the correct version for your contracts.
-- **Organization** — Create folders to keep your document workspace structured and manageable.
+- **Document & Signature Orchestration** — List all managed documents and retrieve detailed status metadata programmatically to ensure your sales closing is always synchronized.
+- **Template Lifecycle Management** — Access and monitor your centralized template library and retrieve detailed metadata for dynamic field mapping directly from the AI interface.
+- **Contract & Proposal Control** — Create new documents from existing templates and send them to multiple recipients with personalized messages via natural language.
+- **Embedded Signing Intelligence** — Generate embedded signing sessions for real-time customer signatures and retrieve direct download links for final PDFs using simple AI commands.
+- **Operational Monitoring** — Track system responses and manage document folders to ensure your administrative workflows are always optimized.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your PandaDoc API Key
-3. Start generating and sending contracts from Claude, Cursor, or any MCP-compatible client
+2. Enter your PandaDoc API Key from your integration settings
+3. Start managing your document automation from Claude, Cursor, or any MCP-compatible client
+
+No more manual status checking or template searching. Your AI acts as a dedicated document coordinator or sales operations assistant.
 
 ### Who is this for?
 
-- **Sales Teams** — generate and send proposals or quotes instantly after a meeting without leaving the chat.
-- **Legal & HR** — track the status of NDAs or employment contracts and download signed versions automatically.
-- **Operations** — automate repetitive document workflows by connecting your AI agent to your template library.
+- **Sales Teams** — quickly retrieve contract statuses and send new proposals without switching apps.
+- **HR Managers** — automate the issuance of onboarding documents and track signing progress via natural conversation.
+- **Operations Teams** — streamline the retrieval of document metadata and monitor organizational health directly within the chat.
 
 
-## Available Tools (14)
-- **create_embedded_session**: Create an embedded signing session for a document
-- **create_template_folder**: Create a new folder for templates
-- **create_webhook_subscription**: Create a webhook subscription for document events
-- **download_document**: Download the final signed PDF of a document
-- **get_document_details**: Get full document data including fields, tokens, and recipient info
-- **get_document_status**: Get current status and basic metadata of a document
-- **get_template_details**: Get details of a specific template
-- **list_document_folders**: List document folders
-- **list_documents**: List PandaDoc documents
-- **list_template_folders**: List template folders
-- **list_templates**: List PandaDoc templates
-- **send_document**: draft status.
+## Available Tools (11)
+- **list_folders**: Useful for navigating the account structure.
 
-Send a PandaDoc document to recipients
-- **create_document_folder**: Create a new folder for documents
-- **create_document**: Wait for document.draft status before sending.
+List document organization folders
+- **create_signing_session**: Create an embedded signing session
+- **create_document**: Requires a JSON string containing "template_uuid" and "recipients" list. Use this to initiate the document creation process.
 
-Create a new PandaDoc document from a template or URL
+Create a new PandaDoc document
+- **send_document**: Can include an optional message to be sent in the notification email.
+
+Send a document for signing
+- **delete_document**: Delete a PandaDoc document
+- **get_download_link**: Get the download link for a completed document
+- **get_template_details**: Get details for a specific template
+- **list_contacts**: List all contacts in PandaDoc
+- **list_documents**: Supports searching by query (q) and filtering by status (e.g., document.draft, document.sent). Useful for monitoring the status of multiple agreements.
+
+List all PandaDoc documents
+- **list_templates**: Essential for obtaining the template IDs required for document creation.
+
+List all document templates
+- **get_document_details**: Essential for tracking the progress of an individual signature request.
+
+Get details for a specific document
 
 
 ## 💬 Prompt Examples
@@ -59,38 +66,38 @@ Create a new PandaDoc document from a template or URL
 Here are some examples of how you can interact with the **PandaDoc** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my available PandaDoc templates."
+> "List all my PandaDoc documents and their statuses."
 
 **🤖 AI Agent:**
-> I've retrieved your templates. You have 3 active templates: 'Sales Proposal' (ID: tp_123), 'NDA Standard' (ID: tp_456), and 'Service Agreement' (ID: tp_789). Which one would you like to use?
+> I've retrieved your documents. You have 15 active files including 'Acme Contract' (Status: draft) and 'Renewal Proposal' (Status: sent). Would you like to check the recipient for any of them?
 
 ---
 
 **👤 You:**
-> "Create a document named 'Project Alpha Agreement' using template tp_123 for recipient john@example.com."
+> "Send the contract document doc_3847 to the client for electronic signature."
 
 **🤖 AI Agent:**
-> The document 'Project Alpha Agreement' has been created in draft mode (ID: doc_987). Once you're ready, I can send it to John for signature.
+> Document doc_3847 "Service Agreement 2025" has been sent for signature. Recipients: John Martinez (CEO) at john@acmecorp.com and Lisa Park (Legal) at lisa@acmecorp.com. Both received email notifications with unique signing links. The document status has changed from Draft to Sent. Average completion time for similar documents is 2.3 days.
 
 ---
 
 **👤 You:**
-> "Download the final signed PDF for document doc_987."
+> "List all available document templates I can use to create new proposals."
 
 **🤖 AI Agent:**
-> I've processed the download request for the completed document. You can access the final signed PDF here: [Link].
+> You have 12 templates available. Top 5 by usage: "Standard SaaS Agreement" (used 34 times), "Consulting Proposal" (28 uses), "NDA Mutual" (22 uses), "Statement of Work" (18 uses), and "Sales Quote" (15 uses). 3 templates were updated in the last 30 days. All templates support dynamic field merging with recipient and company data.
 
 
 ## ❓ FAQ
 
-**Q: Can I create a document from a specific template using its ID?**
-Yes. Use the `create_document` tool and provide the `template_uuid`. You can also pass `recipients` and `tokens` to pre-fill the document automatically.
+**Q: Can my AI automatically find the details for a specific document by its ID?**
+Yes! Use the `get_document` tool with the Document ID. Your agent will respond with complete metadata, including signature status, expiration dates, and recipient info in seconds.
 
-**Q: How do I check if a client has signed the document?**
-You can use the `get_document_status` tool with the Document ID. It will return the current status, such as 'document.completed' if everyone has signed.
+**Q: How do I find my PandaDoc API Key?**
+Log in to your PandaDoc account, navigate to **Settings** > **Integrations** > **API**, and click 'Generate API Key' to create your unique secret token.
 
-**Q: Can I organize my documents into folders via the AI?**
-Yes, the `create_document_folder` tool allows you to create new folders and even nest them using a `parent_uuid` to keep your workspace organized.
+**Q: Can I generate a signing link for my app?**
+Absolutely. Use the `create_session` tool to generate an embedded signing session for a specific document. The agent will return a unique URL for your recipient to sign immediately.
 
 
 ## Installation & Usage

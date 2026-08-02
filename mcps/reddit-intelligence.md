@@ -38,12 +38,6 @@ Connect any AI agent to Reddit's live public data and transform community conver
 
 
 ## Available Tools (9)
-- **get_post_comments**: Invaluable for sentiment analysis, understanding community reactions, identifying objections, and surfacing authentic user opinions about products, brands, or topics. Extract the post ID from the permalink URL (the alphanumeric segment after /comments/).
-
-Get comments from a Reddit post for sentiment and opinion analysis
-- **search_subreddits**: Use to identify target communities for marketing analysis — e.g., search "crypto" to find r/cryptocurrency, r/Bitcoin, r/altcoins, etc. Returns subscriber counts so you can prioritize.
-
-Discover relevant subreddits by keyword or topic
 - **get_posts_by_flair**: Highly useful for filtering by content category — e.g., in r/marketing get only posts with flair "Case Study", "Question", or "Resource". Flairs are community-defined content categories.
 
 Get top posts filtered by a specific flair tag within a subreddit
@@ -56,6 +50,12 @@ Get the most popular subreddits on Reddit right now
 - **search_reddit**: Essential for competitive intelligence, brand monitoring, topic discovery, and sentiment analysis. Use sort="relevance" for best match, sort="top" with time="week" for most engaged recent content.
 
 Search Reddit posts across all communities or within a specific subreddit
+- **get_post_comments**: Invaluable for sentiment analysis, understanding community reactions, identifying objections, and surfacing authentic user opinions about products, brands, or topics. Extract the post ID from the permalink URL (the alphanumeric segment after /comments/).
+
+Get comments from a Reddit post for sentiment and opinion analysis
+- **search_subreddits**: Use to identify target communities for marketing analysis — e.g., search "crypto" to find r/cryptocurrency, r/Bitcoin, r/altcoins, etc. Returns subscriber counts so you can prioritize.
+
+Discover relevant subreddits by keyword or topic
 - **get_subreddit_info**: Use to evaluate community size and relevance before targeting it for marketing analysis.
 
 Get metadata and statistics for a subreddit community

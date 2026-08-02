@@ -36,11 +36,11 @@ Connect your **Aircall** account to your AI agent to unlock professional voice o
 
 ## Available Tools (10)
 - **list_calls**: List call logs
-- **get_call_details**: Get call technical details
-- **list_contacts**: List Aircall contacts
 - **search_contacts**: Search contacts by phone
 - **create_contact**: Add a new contact
 - **list_users**: List team members
+- **get_call_details**: Get call technical details
+- **list_contacts**: List Aircall contacts
 - **get_user_details**: Get user availability
 - **list_numbers**: List phone numbers
 - **get_number_details**: Get number configuration

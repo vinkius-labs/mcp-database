@@ -49,6 +49,19 @@ The Vinkius platform handles OAuth 2.0 PKCE, token refresh, and secure storage a
 
 
 ## Available Tools (16)
+- **get_user_followers**: Requires the user numeric ID. Returns up to 50 followers with their profiles.
+
+Retrieve the followers of a specific user
+- **get_my_profile**: Returns the user's name, bio, follower count, and numeric ID.
+
+Retrieve the authenticated user's own X (Twitter) profile details
+- **get_tweet_details**: Retrieve the text and engagement metrics of a specific Tweet by its numeric ID
+- **get_tweet_volume**: Returns time-series buckets showing how many tweets match a query.
+
+Get the volume of tweets matching a search query over the last 7 days, broken down by hour or day
+- **like_tweet**: Requires both the authenticated user's numeric ID and the tweet ID. Use get_my_profile to find your user ID.
+
+Like a tweet from the authenticated account
 - **get_user_liked_tweets**: Requires the user numeric ID.
 
 Retrieve tweets that a specific user has liked
@@ -58,19 +71,6 @@ Delete a tweet from the authenticated account
 - **follow_user**: Requires your own user ID and the target user ID. Use get_my_profile for your ID and lookup_user_by_username for theirs.
 
 Follow another user from the authenticated account
-- **get_my_profile**: Returns the user's name, bio, follower count, and numeric ID.
-
-Retrieve the authenticated user's own X (Twitter) profile details
-- **get_tweet_details**: Retrieve the text and engagement metrics of a specific Tweet by its numeric ID
-- **get_tweet_volume**: Returns time-series buckets showing how many tweets match a query.
-
-Get the volume of tweets matching a search query over the last 7 days, broken down by hour or day
-- **get_user_followers**: Requires the user numeric ID. Returns up to 50 followers with their profiles.
-
-Retrieve the followers of a specific user
-- **like_tweet**: Requires both the authenticated user's numeric ID and the tweet ID. Use get_my_profile to find your user ID.
-
-Like a tweet from the authenticated account
 - **get_user_mentions**: Requires the user numeric ID.
 
 Retrieve recent tweets that mention a specific user (public @mentions)

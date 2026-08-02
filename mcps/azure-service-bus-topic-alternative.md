@@ -22,7 +22,7 @@ By strictly scoping access, your AI can safely fan out notifications, trigger do
 
 
 ## Available Tools (1)
-- **servicebus_publish_message**: You can optionally include a customProperties JSON object to define routing metadata for the subscriptions.
+- **publish_message**: You can optionally include a customProperties JSON object to define routing metadata for the subscriptions.
 
 Publish a new message to the configured Azure Service Bus Topic
 

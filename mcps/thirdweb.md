@@ -33,6 +33,20 @@ Connect your **ThirdWeb** account to any AI agent to build and manage Web3 appli
 
 
 ## Available Tools (29)
+- **execute_solana_swap**: Execute a token swap on Solana Mainnet
+- **fetch_with_payment**: Proxy a request to a paid API using x402
+- **get_solana_swap_quote**: Get a token swap quote on Solana Mainnet
+- **get_user_details**: Search for users in your project
+- **list_transactions**: List transactions
+- **pregenerate_wallet**: Create a wallet for a user before they first log in
+- **query_events**: Fetch historical events for a contract
+- **query_transactions**: Fetch transaction history for a contract
+- **read_contract**: Execute one or more read-only calls (multicall)
+- **send_raw_transactions**: Broadcast encoded transactions
+- **sign_solana_transaction**: Sign a transaction on Solana
+- **unlink_profile**: Unlink a social identity from a wallet address
+- **verify_payment**: Validate a signed payment payload (x402)
+- **write_contract**: Execute one or more state-changing calls atomically
 - **broadcast_solana_transaction**: Broadcast a transaction on Solana
 - **list_solana_wallets**: List Solana wallets
 - **deploy_contract**: Deploy a contract using bytecode and ABI
@@ -48,20 +62,6 @@ Connect your **ThirdWeb** account to any AI agent to build and manage Web3 appli
 - **social_auth**: OAuth flow for social providers
 - **complete_auth**: Verify challenge and complete login
 - **create_solana_wallet**: Create a Solana wallet
-- **execute_solana_swap**: Execute a token swap on Solana Mainnet
-- **fetch_with_payment**: Proxy a request to a paid API using x402
-- **get_solana_swap_quote**: Get a token swap quote on Solana Mainnet
-- **get_user_details**: Search for users in your project
-- **list_transactions**: List transactions
-- **pregenerate_wallet**: Create a wallet for a user before they first log in
-- **query_events**: Fetch historical events for a contract
-- **query_transactions**: Fetch transaction history for a contract
-- **read_contract**: Execute one or more read-only calls (multicall)
-- **send_raw_transactions**: Broadcast encoded transactions
-- **sign_solana_transaction**: Sign a transaction on Solana
-- **unlink_profile**: Unlink a social identity from a wallet address
-- **verify_payment**: Validate a signed payment payload (x402)
-- **write_contract**: Execute one or more state-changing calls atomically
 
 
 ## 💬 Prompt Examples

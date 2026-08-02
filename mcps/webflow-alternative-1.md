@@ -34,6 +34,8 @@ Connect your **Webflow** account to any AI agent to automate your web design and
 
 
 ## Available Tools (19)
+- **list_collections**: List CMS collections for a site
+- **create_items**: Create items in a CMS collection
 - **create_webhook**: Create a webhook for a site
 - **delete_asset**: Delete an asset from a site
 - **delete_items**: Delete items from a CMS collection
@@ -55,8 +57,6 @@ Publish a Webflow site
 - **list_assets**: ) uploaded to a specific site.
 
 List assets for a site
-- **list_collections**: List CMS collections for a site
-- **create_items**: Create items in a CMS collection
 
 
 ## 💬 Prompt Examples

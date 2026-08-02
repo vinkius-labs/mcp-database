@@ -35,19 +35,19 @@ Connect your **QuickNode** account to any AI agent to orchestrate Web3 infrastru
 ## Available Tools (18)
 - **create_kv_set**: Create a KV Store key-value pair
 - **create_stream**: Create a new QuickNode stream
+- **get_kv_list**: Retrieve items from a KV Store list
+- **rpc_eth_call**: Executes a new message call immediately without creating a transaction
+- **rpc_eth_getlogs**: Returns an array of all logs matching a given filter object
+- **rpc_eth_gettransactionreceipt**: Returns the receipt of a transaction by hash
 - **create_webhook**: Create a webhook from a template
 - **delete_kv_set**: Delete a KV Store key-value pair
 - **delete_stream**: Delete a QuickNode stream
 - **delete_webhook**: Delete a QuickNode webhook
-- **get_kv_list**: Retrieve items from a KV Store list
 - **get_kv_set**: Retrieve a value from KV Store sets
 - **get_stream**: Retrieve details of a specific QuickNode stream
 - **list_streams**: List all active QuickNode streams
 - **list_webhooks**: Retrieve all QuickNode webhooks
 - **rpc_eth_blocknumber**: Returns the number of the most recent block
-- **rpc_eth_call**: Executes a new message call immediately without creating a transaction
-- **rpc_eth_getlogs**: Returns an array of all logs matching a given filter object
-- **rpc_eth_gettransactionreceipt**: Returns the receipt of a transaction by hash
 - **update_kv_list**: Add or remove items from a KV Store list
 - **update_stream**: Update an existing QuickNode stream
 - **create_kv_list**: Create a new KV Store list

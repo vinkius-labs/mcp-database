@@ -22,7 +22,7 @@ By strictly scoping access, your AI can safely fan out notifications, trigger do
 
 
 ## Available Tools (1)
-- **sns_publish_message**: Useful for notifications or pub/sub.
+- **publish_message**: Useful for notifications or pub/sub.
 
 Publish a message to the SNS topic
 
