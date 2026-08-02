@@ -33,16 +33,16 @@ Integrate **Discourse**, the open-source platform for community discussion, dire
 
 
 ## Available Tools (10)
-- **get_site_configuration**: Retrieve general settings and metadata for the Discourse instance
-- **get_topic_details**: Get the full content and post list for a specific topic
-- **get_user_profile**: Get detailed profile information for a specific user by username
-- **list_active_members**: List currently active users in the community (admin access required)
 - **list_forum_categories**: List all public categories available in the Discourse instance
 - **list_group_members**: List all users belonging to a specific community group
 - **list_community_groups**: List all user groups configured in the community
 - **list_latest_topics**: List the most recent topics across all categories in the community
 - **list_trending_discussions**: Identify topics with the highest engagement recently (mock logic)
 - **search_community_content**: Search for topics, posts, or users matching a keyword
+- **get_site_configuration**: Retrieve general settings and metadata for the Discourse instance
+- **get_topic_details**: Get the full content and post list for a specific topic
+- **get_user_profile**: Get detailed profile information for a specific user by username
+- **list_active_members**: List currently active users in the community (admin access required)
 
 
 ## 💬 Prompt Examples

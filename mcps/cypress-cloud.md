@@ -36,11 +36,6 @@ Connect your **Cypress Cloud** enterprise account to any AI agent and take full 
 
 
 ## Available Tools (10)
-- **list_projects**: Useful for finding the `project_id`.
-
-List all projects on Cypress Cloud. Cypress is the leading JavaScript E2E testing framework. Returns project names, IDs, and org info via the Enterprise Data Extract API
-- **get_runs**: List recent test runs for a Cypress Cloud project. Returns run IDs, commit info, branch, CI build IDs, statuses (passed/failed/running), durations, and spec counts
-- **get_run**: Get full details of a Cypress Cloud run including status, total tests, passed/failed/pending counts, duration, parallelization, groups, and commit info
 - **get_instances**: List spec instances within a Cypress run. Each instance represents one spec file execution. Returns instance IDs, spec names, statuses, and durations
 - **get_instance**: Get full details of a Cypress spec instance including spec name, status, error messages, screenshots, video URLs, and browser info
 - **get_tests**: List individual tests within a Cypress spec instance. Returns test titles, states (passed/failed/pending/skipped), durations, and error messages
@@ -49,6 +44,11 @@ List all projects on Cypress Cloud. Cypress is the leading JavaScript E2E testin
 Get enterprise run summary report from Cypress Cloud. Aggregated data for BI dashboards. Requires start_date (YYYY-MM-DD)
 - **report_tests**: Get enterprise test results report from Cypress Cloud. Individual test-level data with statuses and error messages
 - **report_flaky**: Get flaky test report from Cypress Cloud. Identifies tests that intermittently pass/fail. Returns test names, flake rates, and last flake dates
+- **list_projects**: Useful for finding the `project_id`.
+
+List all projects on Cypress Cloud. Cypress is the leading JavaScript E2E testing framework. Returns project names, IDs, and org info via the Enterprise Data Extract API
+- **get_runs**: List recent test runs for a Cypress Cloud project. Returns run IDs, commit info, branch, CI build IDs, statuses (passed/failed/running), durations, and spec counts
+- **get_run**: Get full details of a Cypress Cloud run including status, total tests, passed/failed/pending counts, duration, parallelization, groups, and commit info
 - **report_slow**: Get slow test report from Cypress Cloud. Identifies slowest tests by average duration. Returns test names, avg/p95/max durations
 
 

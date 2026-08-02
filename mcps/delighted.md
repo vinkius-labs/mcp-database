@@ -42,16 +42,9 @@ Retrieve overall NPS metrics, including promoter and detractor counts
 - **get_person_feedback_history**: Resolves all previous survey responses, cumulative NPS contribution, and associated person attributes.
 
 Get all feedback and metadata for a specific person
-- **get_recent_customer_comments**: List the most recent survey responses that include a text comment
 - **get_response_details**: Resolves customer details, specific survey channel, and the full text of the feedback comment.
 
 Get full details for a specific survey response
-- **list_recent_detractors**: Identifies "detractors" based on an NPS score between 0 and 6.
-
-Identify customers who provided a low NPS score (0-6)
-- **list_feedback_contacts**: Returns a list of people who have interacted with Delighted, including their email addresses and survey history metadata.
-
-List people who have been sent surveys or provided feedback
 - **list_top_promoters**: Identifies "promoters" based on an NPS score of 9 or 10.
 
 Identify customers who provided a high NPS score (9-10)
@@ -61,6 +54,13 @@ List all customer survey responses in Delighted
 - **search_responses_by_comment**: Identifies survey responses where the text matches the provided search term.
 
 Search for survey responses containing specific keywords in comments
+- **get_recent_customer_comments**: List the most recent survey responses that include a text comment
+- **list_recent_detractors**: Identifies "detractors" based on an NPS score between 0 and 6.
+
+Identify customers who provided a low NPS score (0-6)
+- **list_feedback_contacts**: Returns a list of people who have interacted with Delighted, including their email addresses and survey history metadata.
+
+List people who have been sent surveys or provided feedback
 
 
 ## 💬 Prompt Examples

@@ -40,8 +40,6 @@ Connect your **Crawlbase** (formerly ProxyCrawl) account to any AI agent and tak
 - **scrape_html**: crawlbase.com` datacenter proxies.
 
 Identify bounded routing spaces inside the Headless Crawlbase Engine
-- **scrape_js_rendered**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
-- **scrape_json_format**: Perform structural extraction of properties driving active Fields
 - **get_screenshot_link**: Dispatch an automated validation check routing explicit Web Snapshot domains
 - **scrape_amazon**: Inspect deep internal arrays mitigating specific E-Commerce constraints
 - **scrape_linkedin**: Retrieve the exact structural matching verifying Blueprint constraints
@@ -49,6 +47,8 @@ Identify bounded routing spaces inside the Headless Crawlbase Engine
 - **scrape_google_serp**: Identify precise active arrays spanning rented Context domains for Search
 - **scrape_twitter**: Fetch elaborate explicit mapped limits via Crawlbase X extraction
 - **custom_scrape**: Provision a highly-available Request Payload generating Custom proxies
+- **scrape_js_rendered**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
+- **scrape_json_format**: Perform structural extraction of properties driving active Fields
 
 
 ## 💬 Prompt Examples

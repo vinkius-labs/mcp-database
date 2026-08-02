@@ -36,9 +36,6 @@ Integrate **Cornerstone OnDemand**, the leading human capital management and lea
 - **get_course_details**: Touches content metadata and availability rule boundaries.
 
 Get details for a specific training course
-- **get_user_details**: Touches organizational hierarchy, contact information, and account settings boundaries.
-
-Get full profile for a specific employee
 - **list_courses**: Resolves course metadata, duration, and delivery method.
 
 List available training courses
@@ -48,6 +45,15 @@ List organizational departments
 - **list_job_postings**: Resolves job title, location, department, and posting date.
 
 List internal and external job openings
+- **list_user_transcripts**: Resolves course enrollment status, completion dates, and scores.
+
+List learning history and courses for a user
+- **list_users**: Resolves properties such as user ID, name, email, department, and employment status.
+
+List users in the Cornerstone portal
+- **get_user_details**: Touches organizational hierarchy, contact information, and account settings boundaries.
+
+Get full profile for a specific employee
 - **list_catalog**: Resolves learning object IDs, titles, descriptions, and training types.
 
 List all learning objects in the catalog
@@ -57,12 +63,6 @@ List active or past performance reviews
 - **list_skills_inventory**: Resolves skill names, descriptions, and categories.
 
 List all skills defined in the system
-- **list_user_transcripts**: Resolves course enrollment status, completion dates, and scores.
-
-List learning history and courses for a user
-- **list_users**: Resolves properties such as user ID, name, email, department, and employment status.
-
-List users in the Cornerstone portal
 
 
 ## 💬 Prompt Examples

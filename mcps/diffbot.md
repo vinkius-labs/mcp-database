@@ -37,6 +37,7 @@ Connect your **Diffbot** account to any AI agent and take full control of your a
 
 
 ## Available Tools (10)
+- **extract_product**: Extract e-commerce product details using Diffbot Product API
 - **analyze_page**: Diffbot uses ML to determine if the page is an article, product, image, video, event, list, or job, and returns the appropriate structured JSON. Excellent generalized entry point.
 
 Automatically classify and extract page data using Diffbot Analyze API
@@ -51,7 +52,6 @@ Extract using a user-defined custom Diffbot API
 - **extract_image**: Extract main images from a page using Diffbot Image API
 - **extract_job**: Extract job postings using Diffbot Job API
 - **extract_list**: Extract lists or search results using Diffbot List API
-- **extract_product**: Extract e-commerce product details using Diffbot Product API
 - **extract_video**: Extract video content and metadata using Diffbot Video API
 
 

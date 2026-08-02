@@ -36,10 +36,10 @@ Connect your **Clockify** account to any AI agent and take full control of your 
 
 
 ## Available Tools (8)
-- **add_new_time_entry**: Add a new time entry to a workspace
 - **get_my_clockify_profile**: Retrieve information about the authenticated user
 - **list_workspace_clients**: List all clients configured in a workspace
 - **list_workspace_projects**: List all projects within a specific workspace
+- **add_new_time_entry**: Add a new time entry to a workspace
 - **list_user_time_entries**: List time entries for a specific user in a workspace
 - **list_workspace_users**: List all users within a specific workspace
 - **list_clockify_workspaces**: List all workspaces the user has access to

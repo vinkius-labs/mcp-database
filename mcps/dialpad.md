@@ -33,9 +33,9 @@ Integrate **Dialpad**, the AI-powered cloud communications platform, directly in
 
 
 ## Available Tools (10)
+- **get_person_details**: Perform structural extraction of properties driving an explicit Extension
 - **upsert_business_contact**: Bootstrap an entirely mutable Contact array resolving Dialpad directories
 - **wipe_directory_entry**: Irreversibly vaporize explicit contact constraints destroying Dialpad DB links
-- **get_person_details**: Perform structural extraction of properties driving an explicit Extension
 - **list_team_contacts**: 164 capacities directly.
 
 Identify bounded routing spaces verifying explicit Business Directories
@@ -46,7 +46,7 @@ Identify bounded routing spaces verifying explicit Business Directories
 - **dispatch_office_sms**: 164.
 
 Provision a massively scalable JSON Payload rendering outbound Business Texts
-- **update_presence_status**: Mutate global Web boundaries substituting identifying Desktop status strings
+- **update_presence_status**: Mutate globalThis Web boundaries substituting identifying Desktop status strings
 
 
 ## 💬 Prompt Examples

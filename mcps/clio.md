@@ -5,35 +5,35 @@
 
 ## Overview
 
-**Category:** [project-management](../categories/project-management.md)
+**Category:** [finance-accounting](../categories/finance-accounting.md)
 
-Manage legal practice and matters via Clio — track cases, monitor contacts, and manage firm tasks directly from any AI agent.
+Practice law more efficiently with legal case management, time tracking, billing, and document organization in one system.
 
 ## Description
-Connect your **Clio** account to any AI agent and take full control of your legal practice management through natural conversation. Streamline how you manage matters, contacts, and billing natively.
+Connect your **Clio** (v4) account to any AI agent and take full control of your legal practice management and firm operations through natural conversation.
 
 ### What you can do
 
-- **Matter Oversight** — List and retrieve details for all legal matters and cases under your administration natively
-- **Contact Intelligence** — Access and monitor all contacts, including people and companies, flawlessly
-- **Task Management** — List and review firm tasks and to-dos to keep your practice organized securely
-- **Billing Logistics** — Access generated bills and monitor their payment status to manage cash flow flawlessly
-- **Firm Management** — List all internal users and attorneys within your law firm flawlessly
-- **Integrated Visibility** — Retrieve detailed matter metadata including status and responsible attorneys directly within your workspace flawlessly
+- **Matter & Case Orchestration** — List and manage legal matters programmatically, monitoring their entire lifecycle from intake to resolution in real-time
+- **Billing & Activity Intelligence** — Track billable time and expenses associated with specific matters and retrieve detailed high-fidelity invoice summaries
+- **Relationship CRM** — Access complete profiles for individuals and company contacts (clients, counsel) to maintain a perfectly coordinated relationship ecosystem
+- **Communication Architecture** — Access logged calls, emails, and firm-wide task lists to ensure high-fidelity oversight of all firm interactions
+- **Regional Flexibility** — Connect across multiple data centers (US, CA, EU, AU) using secure OAuth and regional endpoint routing directly through your agent
 
 ### How it works
 
 1. Subscribe to this server
 2. Create a Developer Application in your Clio account (one-time setup, takes about 5 minutes)
 3. Enter your Client ID and Client Secret, then click **Connect with Clio** to authorize access
-4. Start managing your legal practice from Claude, Cursor, or any MCP-compatible client
+4. Start managing your law firm's workload from Claude, Cursor, or any MCP client
+
+No more manual deal logging or digging through complex matter tables in the portal. Your AI acts as your dedicated legal operations specialist and billing coordinator.
 
 ### Who is this for?
 
-- **Attorneys** — monitor case status and review recent matter updates using natural language
-- **Legal Assistants** — audit firm task lists and verify contact details without opening the dashboard
-- **Practice Managers** — quickly look up billing history and attorney assignments straight from their chat interface
-- **Law Firm Ops** — verify matter structures and monitor user roles
+- **Attorneys & Partners** — instantly retrieve case summaries and check billable hour targets using natural language commands
+- **Legal Administrators** — monitor firm-wide tasks and manage client contact directories without leaving your communication tools
+- **Legal Tech Developers** — integrate automated matter tracking and expense reporting into custom workflows through simple AI queries
 
 
 ## Available Tools (23)
@@ -43,7 +43,22 @@ List legal cases/matters
 - **get_matter**: Includes client, practice area, responsible attorney, dates, and status.
 
 Get case details
+- **create_matter**: Requires a display number (case reference), description, and client contact ID. The client must exist before creating a matter.
+
+Create a new legal matter
 - **list_contacts**: List firm contacts
+- **search_contacts**: Use this tool when looking for a specific person or organization.
+
+Search contacts by name or email
+- **get_contact**: Returns name, type, email addresses, phone numbers, and physical addresses.
+
+Get contact details
+- **create_contact**: Provide first and last name for persons. For companies, set type to "Company" and use first_name as the company name.
+
+Create a new contact
+- **list_activities**: Optionally filter by matter. Includes date, hours, rate, notes, and billing status.
+
+List time entries and expenses
 - **create_activity**: Provide date (YYYY-MM-DD), quantity in seconds, and the type (TimeEntry or ExpenseEntry).
 
 Log a time entry or expense
@@ -87,21 +102,6 @@ List firm communications
 - **list_users**: Useful for team management and workload distribution.
 
 List firm users and attorneys
-- **create_matter**: Requires a display number (case reference), description, and client contact ID. The client must exist before creating a matter.
-
-Create a new legal matter
-- **search_contacts**: Use this tool when looking for a specific person or organization.
-
-Search contacts by name or email
-- **get_contact**: Returns name, type, email addresses, phone numbers, and physical addresses.
-
-Get contact details
-- **create_contact**: Provide first and last name for persons. For companies, set type to "Company" and use first_name as the company name.
-
-Create a new contact
-- **list_activities**: Optionally filter by matter. Includes date, hours, rate, notes, and billing status.
-
-List time entries and expenses
 
 
 ## 💬 Prompt Examples
@@ -109,26 +109,26 @@ List time entries and expenses
 Here are some examples of how you can interact with the **Clio** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all my open matters in Clio."
+> "List all active legal matters in my Clio account."
 
 **🤖 AI Agent:**
-> Retrieving your open matters... I found 5 items: Case #2026-001 (Civil Litigation), #2026-002 (Corporate Setup), and 3 others. Which one would you like to see the details for?
+> I've retrieved your active matters. You currently have 4 ongoing cases, including 'Estate Planning - John Smith' (ID: m_123) and 'Corporate Acquisition'. Which one should we check activities for?
 
 ---
 
 **👤 You:**
-> "Show me the tasks for the 'City Refurb' matter."
+> "Create a new company contact 'Acme Legal' in Clio."
 
 **🤖 AI Agent:**
-> Checking tasks for City Refurb... I found 3 items: 'File Motion' (Due Today), 'Witness Deposition' (Completed), and 'Review Contract' (Pending). Would you like to update any of these?
+> Contact created! Acme Legal has been successfully added to your Clio directory (ID: c_456). They are now available for matter association and billing. Shall I create a new legal case for them?
 
 ---
 
 **👤 You:**
-> "Who is the contact for the 'Jones v. Smith' case?"
+> "Show my billable activities and outstanding invoices."
 
 **🤖 AI Agent:**
-> Retrieving contact for Jones v. Smith... The primary client is Alice Jones. I can provide her email or phone number if needed.
+> Retrieving financial overview... You have 15 unbilled activities totaling $2,450.00 and 3 outstanding invoices. Your largest pending bill is for 'Global Tech' (ID: b_789). Would you like the detailed breakdown?
 
 
 ## ❓ FAQ
@@ -142,11 +142,11 @@ When creating your Developer Application in Clio, set the **Redirect URI** to: `
 **Q: How do I get my Client ID and Client Secret?**
 Sign in to Clio and go to **Settings → Developer Applications** (direct link: `https://app.clio.com/settings/developer_applications`). Click **New Application**, give it a name, and set the **Redirect URI** to `https://api.vinkius.com/marketplace/oauth/callback`. Save the app and copy the **Client ID** and **Client Secret** (the secret is shown only once — copy it immediately).
 
-**Q: Can I see the status of a specific legal matter?**
-Yes! Use the `get_matter` tool with the matter ID. The agent will return the current status (Open, Closed, etc.), the client name, and the responsible attorney.
+**Q: Can I create new legal cases via AI?**
+Yes! The `create_matter` tool allows the agent to register new legal cases by providing a display number, description, and client ID.
 
-**Q: How do I check if a bill has been paid?**
-Use the `list_bills` tool. Your agent will fetch the list of generated bills, which includes their amounts and payment statuses, directly from Clio.
+**Q: Do I need to refresh my tokens manually?**
+No. The platform automatically refreshes your access token in the background. You only need to click **Connect with Clio** once during setup, and the integration will keep working indefinitely.
 
 
 ## Installation & Usage

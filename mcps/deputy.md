@@ -34,15 +34,15 @@ Integrate **Deputy**, the ultimate workforce management solution, directly into 
 
 ## Available Tools (10)
 - **get_employee_profile**: Get detailed information for a specific employee
+- **list_pending_leave_approvals**: List only the leave requests that are awaiting manager approval
+- **list_active_rosters**: List all current and upcoming shift rosters
+- **list_completed_timesheets**: List timesheets submitted by employees
+- **search_employees_by_name**: Search for an employee by their display name
 - **get_authenticated_user**: Retrieve metadata for the current authenticated API user
 - **list_currently_active_shifts**: Identify employees who are currently clocked in (mock logic)
 - **list_workforce_employees**: List all employees in your Deputy organization
 - **list_leave_requests**: List all employee leave and time-off requests
 - **list_business_locations**: List all physical business locations (companies) configured in Deputy
-- **list_pending_leave_approvals**: List only the leave requests that are awaiting manager approval
-- **list_active_rosters**: List all current and upcoming shift rosters
-- **list_completed_timesheets**: List timesheets submitted by employees
-- **search_employees_by_name**: Search for an employee by their display name
 
 
 ## 💬 Prompt Examples

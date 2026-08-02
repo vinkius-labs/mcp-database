@@ -7,46 +7,51 @@
 
 **Category:** [loved-by-devs](../categories/loved-by-devs.md)
 
-Manage any SQL database via Directus — handle collection items, audit schemas and fields, manage users, and track media storage directly from any AI agent.
+Turn any SQL database into a powerful headless CMS with instant REST and GraphQL APIs for your custom content models.
 
 ## Description
-Connect your **Directus** instance to any AI agent and take full control of your open-source data platform and headless CMS through natural conversation.
+Connect your **Directus** instance to any AI agent and manage your content database through natural conversation.
 
 ### What you can do
 
-- **Collection Orchestration** — Identify bounded routing spaces inside headless Directus SQL mappers and extract database tables traversing collections natively
-- **Item Management** — Provision highly-available JSON payloads to write or update Directus rows, or irreversibly wipe records to clear internal database allocations
-- **Schema Auditing** — Enumerate explicitly attached structured rules defining your PostgreSQL tables and execute bulk iterations to track registered system types
-- **Metadata Inspection** — Analyze specific localized variables decoding native collection boundaries and extracting hidden tracking configurations seamlessly
-- **Field Discovery** — Inspect deep internal arrays defining precisely which fields accept formatting and validate payloads strictly against your DB links
-- **Identity Oversight** — Explains explicitly mapped profile arrays iterating the exact users authorized within the DB layer enforcing RBAC boundaries securely
-- **Media Storage** — Retrieve the exact structural matching verifying file uploads and generating download routes for active frontends
+- **Collection Management** — List all data collections with field counts and inspect individual collection schemas
+- **Content CRUD** — Create, read, update, and delete items in any collection using JSON payloads
+- **Search & Query** — Search items within collections by keyword to find specific content quickly
+- **Schema Inspection** — List all fields and their data types for any collection to understand your data model
+- **File Management** — Browse uploaded files and retrieve metadata for specific assets
+- **User & Role Management** — List all users with roles and status, view role configurations, and check your own profile
+- **Audit Trail** — Access the activity log of recent database operations for compliance and debugging
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Directus Base URL and Static Token (found in User Directory > User > Token)
-3. Start managing your data platform from Claude, Cursor, or any MCP-compatible client
+2. Enter your Directus Static Token from your user profile in the Data Studio
+3. Start managing your content from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Database Administrators** — audit schemas and manage users without writing complex SQL or using the Studio interface
-- **Full-stack Developers** — create and update records and manage digital assets directly from the IDE or chat
-- **Product Teams** — monitor collection data and verify field configurations across different environments
-- **Content Editors** — manage headless content and digital assets through natural language conversation
+- **Content Teams** — create, update, and search content items across collections without opening the Directus dashboard
+- **Developers** — inspect collection schemas, manage fields, and debug data issues through conversational AI
+- **Administrators** — audit user activity, manage roles, and monitor database operations
 
 
-## Available Tools (10)
-- **create_cms_record**: Provision a highly-available JSON Payload writing Directus Rows
-- **wipe_cms_record**: Irreversibly vaporize explicit App nodes dropping live Rows
-- **get_collection_details**: Perform structural extraction of properties driving active Tables
-- **list_collection_fields**: Inspect deep internal arrays mitigating specific Column configurations
-- **get_single_item**: Retrieve explicit Cloud logging tracing explicit DB Row UUIDs
-- **list_schema_collections**: Enumerate explicitly attached structured rules defining PostgreSQL tables
-- **list_directus_files**: Retrieve the exact structural matching verifying Media storage
-- **list_collection_items**: Identify bounded routing spaces inside Headless Directus SQL mappers
-- **list_directus_users**: Identify precise active arrays spanning rented Admin identities
-- **patch_cms_record**: Mutate global Web CRM boundaries substituting Database values via ID
+## Available Tools (16)
+- **create_item**: Create an item
+- **delete_item**: Delete an item
+- **get_collection**: Get collection details
+- **get_file**: Get file details
+- **get_item**: Get item details
+- **list_activity**: List recent activity
+- **list_collections**: List collections
+- **list_fields**: List fields
+- **list_files**: List files
+- **list_items**: List items
+- **list_users**: List users
+- **search_items**: Search items
+- **update_item**: Update an item
+- **check_directus_status**: Verify connectivity
+- **get_me**: Get current user
+- **list_roles**: List roles
 
 
 ## 💬 Prompt Examples
@@ -54,38 +59,38 @@ Connect your **Directus** instance to any AI agent and take full control of your
 Here are some examples of how you can interact with the **Directus** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all items in the 'articles' collection"
+> "Show me all collections in my Directus instance and the fields for the 'articles' collection."
 
 **🤖 AI Agent:**
-> Retrieving items from 'articles'... I found 12 records. The top ones include 'Intro to Directus' (ID: 1) and 'Database Design' (ID: 2). I can retrieve the full details for any of these.
+> Your Directus instance has 8 collections: 'articles' (24 fields), 'categories' (6 fields), 'authors' (12 fields), 'media' (8 fields), 'pages' (15 fields), 'settings' (10 fields), 'comments' (9 fields), and 'tags' (4 fields). Fields for 'articles': id (uuid), title (string), slug (string), body (text), status (string: draft/published/archived), featured_image (file), author (m2o → authors), category (m2o → categories), tags (m2m → tags), date_published (datetime), sort (integer). Would you like to list items or create a new article?
 
 ---
 
 **👤 You:**
-> "Create a new record in 'products': {'name': 'Gaming Mouse', 'price': 50}"
+> "Create a new article titled 'AI in Healthcare 2025' with status 'draft' and search for existing articles about AI."
 
 **🤖 AI Agent:**
-> Record created! 'Gaming Mouse' has been added to the 'products' collection with ID: 'mouse_123'. The database has been updated with your JSON attributes.
+> Article created! ID: a3f8c291, Title: 'AI in Healthcare 2025', Status: draft, Slug: ai-in-healthcare-2025. Searching existing articles for 'AI'... Found 3 matches: 1) 'AI-Driven Drug Discovery' (published, 2024-11-15). 2) 'Machine Learning in Diagnostics' (published, 2024-09-22). 3) 'AI Ethics Framework' (draft, 2025-01-08). Would you like to update the new article's body or assign it to an author?
 
 ---
 
 **👤 You:**
-> "Show me the schema for the 'orders' table"
+> "Show me the recent activity log and list all users with their roles."
 
 **🤖 AI Agent:**
-> Retrieving fields for 'orders'... This collection includes columns like 'customer_id' (UUID), 'order_date' (Timestamp), 'total_amount' (Decimal), and 'status' (String). I can provide the detailed configuration for each field.
+> Recent activity (last 24h): 14 operations. Top actions: 8 item updates (articles, pages), 3 item creates (articles, media), 2 logins, 1 role change. Most active user: 'editor@example.com' (9 operations). Users: 1) Admin User (admin role, active). 2) Sarah Editor (editor role, active). 3) Mike Writer (writer role, active). 4) API Bot (api-readonly role, active). 3 roles configured: admin (full access), editor (content CRUD), writer (create/read only). Would you like to inspect a specific user or see more activity?
 
 
 ## ❓ FAQ
 
-**Q: Can my agent list all collections and their fields in Directus?**
-Yes. Use the 'list_schema_collections' tool to see all tables, and then use 'list_collection_fields' for a specific collection. The agent retrieves the absolute structural details defining precisely which fields accept formatting.
+**Q: Can I create, update, and delete content items in any collection?**
+Yes! Use `create_item` with a collection name and JSON payload to add new items. Use `update_item` with the collection, item ID, and updated fields to modify existing items. Use `delete_item` to remove items. All operations respect the permissions assigned to your Static Token's user role.
 
-**Q: How do I create a new record in a specific Directus collection?**
-Use the 'create_cms_record' tool. Provide the collection name and a JSON payload mapping the columns. Your agent will orchestrate the request to drop the formatted endpoint into your database and return the new UUID.
+**Q: How does Directus authentication work with a Static Token?**
+Directus uses a non-expiring Static Token associated with a specific user account. Generate it from your **User Profile** in the Data Studio. The token is sent as a `Bearer` token in the Authorization header. Its permissions match the role assigned to that user — use an admin role for full access or a restricted role for read-only operations.
 
-**Q: Can I audit authorized users and their roles via the agent?**
-Absolutely. The 'list_directus_users' tool retrieves the explicitly mapped profile arrays iterating the exact users authorized within the database layer. This helps you monitor RBAC boundaries and organizational identities.
+**Q: Can I audit what changes have been made to my database?**
+Yes. The `list_activity` tool retrieves the audit log of recent database operations, showing who made changes, which collections were affected, timestamps, and the type of operation (create, update, delete). Combine with `list_users` and `list_roles` for full accountability tracking.
 
 
 ## Installation & Usage
