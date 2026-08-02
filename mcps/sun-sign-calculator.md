@@ -14,8 +14,8 @@ The Sun Sign Calculator provides highly accurate astrological data by calculatin
 
 
 ## Available Tools (2)
-- **get_sign_details**: Get elemental and modal properties of a zodiac sign
 - **calculate_cusp**: Calculate the zodiac sign cusp for a given date
+- **get_sign_details**: Get elemental and modal properties of a zodiac sign
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides an astronomical calculation engine to translate a speci
 
 
 ## Available Tools (3)
-- **calculate_sky_map**: Calculate planetary positions for a specific time and location
 - **find_bodies_in_sign**: Find all planets currently in a specific zodiac sign
 - **interpret_longitude**: Interpret ecliptic longitude into zodiac sign and degrees
+- **calculate_sky_map**: Calculate planetary positions for a specific time and location
 
 
 ## 💬 Prompt Examples

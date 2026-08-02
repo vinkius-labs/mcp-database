@@ -14,9 +14,9 @@ The Moon Phase Calculator provides high-precision astronomical data for any give
 
 
 ## Available Tools (3)
+- **calculate_phase**: Retrieve the exact name of the lunar phase and its current brightness
 - **compare_brightness**: Determine which of two provided dates features a more brightly illuminated Moon
 - **generate_monthly_schedule**: Provide a full calendar of lunar events and phases for a specific month and year
-- **calculate_phase**: Retrieve the exact name of the lunar phase and its current brightness
 
 
 ## 💬 Prompt Examples

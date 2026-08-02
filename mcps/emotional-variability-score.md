@@ -14,9 +14,6 @@ This MCP server provides specialized tools to analyze emotional patterns over ti
 
 
 ## Available Tools (4)
-- **compare_weekly_volatility**: Returns delta and trend.
-
-Determine if emotional instability is worsening or improving by comparing two consecutive weeks
 - **calculate_mood_amplitude**: Returns peak, valley, and total range.
 
 Identify the extremes of the emotional range experienced during a period
@@ -26,6 +23,9 @@ Quantify how erratic or frequent the mood swings are within a specific date rang
 - **get_comprehensive_emotional_report**: Returns aggregated stability status, range, and rating.
 
 Generate a high-level summary of all emotional metrics for a given period
+- **compare_weekly_volatility**: Returns delta and trend.
+
+Determine if emotional instability is worsening or improving by comparing two consecutive weeks
 
 
 ## 💬 Prompt Examples

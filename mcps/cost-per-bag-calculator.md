@@ -14,10 +14,10 @@ The Cost-per-Bag Calculator is an agricultural economics engine designed to help
 
 
 ## Available Tools (4)
-- **calculate_total_area_cost**: Calculate the total cost per hectare
 - **analyze_cost_distribution**: Analyze the distribution of costs
 - **compare_regional_benchmark**: Compare user costs and yields against regional industry averages
 - **calculate_unit_cost**: Calculate the cost per single bag of production
+- **calculate_total_area_cost**: Calculate the total cost per hectare
 
 
 ## 💬 Prompt Examples

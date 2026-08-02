@@ -14,9 +14,9 @@ This MCP server provides precision agriculture tools to calculate plant density.
 
 
 ## Available Tools (3)
+- **evaluate_population_status**: Evaluate if planting density is within recommended range
 - **calculate_hectare_density**: Calculate theoretical and real population per hectare
 - **calculate_linear_density**: Calculate plants per meter based on plant spacing
-- **evaluate_population_status**: Evaluate if planting density is within recommended range
 
 
 ## 💬 Prompt Examples

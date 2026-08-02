@@ -14,9 +14,9 @@ The Retention Curve Analyzer is a specialized tool for product managers and grow
 
 
 ## Available Tools (3)
+- **verify_benchmark_compliance**: Compares cohort metrics against industry benchmarks
 - **analyze_retention_trend**: Determines if a retention sequence is flattening or declining
 - **classify_curve_pattern**: Classifies the retention curve pattern
-- **verify_benchmark_compliance**: Compares cohort metrics against industry benchmarks
 
 
 ## 💬 Prompt Examples

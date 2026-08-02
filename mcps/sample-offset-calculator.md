@@ -14,8 +14,8 @@ The Sample Offset Calculator is a specialized tool for digital audio engineers. 
 
 
 ## Available Tools (3)
-- **ms_to_samples**: Convert milliseconds to audio samples
 - **samples_to_ms**: Convert audio samples to milliseconds
+- **ms_to_samples**: Convert milliseconds to audio samples
 - **verify_alignment**: Verify if a sample count aligns with millisecond boundaries
 
 

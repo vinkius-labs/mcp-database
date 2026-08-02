@@ -14,11 +14,11 @@ An essential tool for automotive enthusiasts and professionals to precisely calc
 
 
 ## Available Tools (3)
+- **evaluate_clearance_compatibility**: Checks for potential tire rubbing/interference
 - **calculate_speedometer_deviation**: Calculates speedometer error when changing tire sizes
 - **calculate_tire_dimensions**: Returns width, sidewall height, diameter, circumference, and revs per mile.
 
 Calculates physical dimensions of a tire
-- **evaluate_clearance_compatibility**: Checks for potential tire rubbing/interference
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ This MCP server provides specialized tools for agricultural professionals to man
 
 ## Available Tools (4)
 - **get_application_sequence**: Determine the correct order of treatment application
-- **compute_material_requirements**: Calculate required amounts of fungicide, insecticide, and inoculant
 - **estimate_solution_volume**: Estimate the required spray solution volume
+- **compute_material_requirements**: Calculate required amounts of fungicide, insecticide, and inoculant
 - **calculate_treatment_cost**: Calculate the total cost for a seed treatment batch
 
 

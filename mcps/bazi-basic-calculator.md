@@ -15,8 +15,8 @@ This MCP server provides tools to calculate the Four Pillars of Destiny (BaZi). 
 
 ## Available Tools (3)
 - **calculate_four_pillars**: Derive the complete Four Pillars (Stem and Branch for each) from a specific birth date and time
-- **lookup_component_properties**: Find the elemental nature and polarity of a specific Heavenly Stem or Earthly Branch
 - **identify_elemental_interaction**: Determine the relationship between two different elemental components
+- **lookup_component_properties**: Find the elemental nature and polarity of a specific Heavenly Stem or Earthly Branch
 
 
 ## 💬 Prompt Examples
