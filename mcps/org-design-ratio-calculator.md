@@ -14,8 +14,8 @@ This MCP server provides a quantitative analysis engine for identifying structur
 
 
 ## Available Tools (4)
-- **evaluate_cs_coverage**: Verify if CS headcount is sufficient for the customer segment
 - **evaluate_ga_overhead**: Monitor G&A growth relative to total headcount
+- **evaluate_cs_coverage**: Verify if CS headcount is sufficient for the customer segment
 - **evaluate_gtm_efficiency**: Assess Engineering vs Sales balance based on GTM motion
 - **evaluate_span_of_control**: Determine if the current manager-to-IC ratio is healthy
 

@@ -14,9 +14,9 @@ The Compensation Band Generator connects AI agents to precise market data for pr
 
 
 ## Available Tools (3)
+- **calculate_equity_range**: Calculate the annual equity grant range
 - **calculate_base_salary**: Calculate the annual base salary for a role
 - **calculate_bonus_target**: Calculate the annual variable cash bonus target
-- **calculate_equity_range**: Calculate the annual equity grant range
 
 
 ## 💬 Prompt Examples

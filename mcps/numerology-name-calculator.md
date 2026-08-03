@@ -17,6 +17,13 @@ This MCP server connects AI agents to the power of Pythagorean Numerology. Use t
 `your_tool_name`
 
 
+## Available Tools (4)
+- **calculate_expression_number**: Reduces to a single digit or Master Number (11, 22, 33).
+
+Calculate the Expression Number from a full name
+- **calculate_personality_number**: Calculate the Personality Number from a full name
+- **calculate_soul_urge_number**: Calculate the Soul Urge Number from a full name
+- **get_number_interpretation**: Get the numerological interpretation of a specific number
 
 
 ## 💬 Prompt Examples

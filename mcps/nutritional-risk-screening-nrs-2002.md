@@ -14,9 +14,9 @@ This MCP server implements the validated NRS-2002 (Nutritional Risk Screening 20
 
 
 ## Available Tools (3)
+- **perform_full_nrs_screening**: Perform a complete NRS-2002 nutritional risk screening
 - **evaluate_disease_impact**: Calculate the disease impact score (S component) of NRS-20 $	ext{02}$
 - **evaluate_nutritional_status**: Calculate the nutritional status score (N component) of NRS-20 $	ext{02}$
-- **perform_full_nrs_screening**: Perform a complete NRS-2002 nutritional risk screening
 
 
 ## 💬 Prompt Examples

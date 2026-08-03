@@ -15,10 +15,10 @@ An essential engine for managing European Union Value Added Tax (VAT) complexity
 
 ## Available Tools (3)
 - **check_vat_compliance**: Identify the VAT rule applied to a transaction
+- **compute_transaction_tax**: Calculate VAT amount and total for a transaction
 - **lookup_vat_rate**: g., DE, FR) and a product category (Standard Goods, Reduced Goods, or Essential Goods).
 
 Look up the VAT rate for a country and product category
-- **compute_transaction_tax**: Calculate VAT amount and total for a transaction
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server allows AI agents to evaluate US employee equity packages. By pro
 
 
 ## Available Tools (3)
-- **get_exit_share_price**: Calculate the estimated price per share at a specific exit multiplier
 - **calculate_grant_projected_value**: Calculate the total projected liquid value of an equity grant
+- **get_exit_share_price**: Calculate the estimated price per share at a specific exit multiplier
 - **compare_equity_to_cash_annualized**: Compare annualized equity value against annual cash compensation across scenarios
 
 

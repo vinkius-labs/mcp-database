@@ -34,36 +34,12 @@ Publish, manage, and deeply analyze Dev.to content with 22 tools — including p
 
 
 ## Available Tools (23)
-- **get_my_drafts**: Use to review pending content, resume unfinished articles, or decide what to publish next.
-
-Get your unpublished draft articles on Dev.to (requires API key)
-- **analyze_engagement**: Use to evaluate content performance, benchmark against competitors, and identify what drives engagement. The engagement score weights comments 3x higher than reactions (comments = deeper engagement) and unique commenters 5x (community breadth).
-
-Deep engagement analysis of a Dev.to article — reactions, comments, unique commenters, estimated reach, and engagement score
-- **content_gap_analysis**: Computes an opportunity score: tags with high average engagement but low article volume represent content gaps. Use for strategic content planning — publish in high-opportunity tags to maximize reach with less competition.
-
-Analyze content gaps across multiple tags — find high-engagement topics with low competition
-- **get_followers**: Use for audience analysis, engagement planning, and community growth tracking.
-
-Get your Dev.to followers (requires API key)
-- **discover_top_authors**: Returns up to 15 top authors with their article count, engagement metrics, and best-performing article. Use for competitive intelligence — understand who dominates specific topics and what content style performs best.
-
-Discover the most influential authors for a specific tag on Dev.to
-- **toggle_reaction**: Categories: "like" (heart), "unicorn" (special appreciation), "readinglist" (bookmark/save). If the reaction already exists, it will be removed. Use to engage with community content — liking articles boosts their visibility.
-
-Toggle a reaction (like, unicorn, or bookmark) on an article or comment (requires API key)
-- **update_article**: You can modify the title, body, tags, description, canonical URL, or series. Use to fix typos, update content, add canonical URLs, or unpublish articles.
-
-Update an existing Dev.to article (requires API key)
-- **audience_crossover**: Reveals hidden audience connections. If your #mcp audience also writes #ai-agents and #devtools, cross-posting to those tags reaches the same people. This operation makes 20-40 API calls — genuine competitive intelligence that requires orchestration.
-
-Map audience overlap — trace commenters in a tag to discover which OTHER tags they write about
 - **content_blueprint**: Produces a data-driven "content recipe" that tells you exactly what to write and how to structure it. Unlike generic advice, this is derived from real engagement data.
 
 Extract the structural recipe of top-performing articles in a tag — title patterns, optimal reading time, best tag combos
-- **get_article_by_slug**: Use when you have the URL path (e.g. "ben/my-article-slug") instead of the numeric ID.
+- **content_gap_analysis**: Computes an opportunity score: tags with high average engagement but low article volume represent content gaps. Use for strategic content planning — publish in high-opportunity tags to maximize reach with less competition.
 
-Get the full content of a Dev.to article by username and slug
+Analyze content gaps across multiple tags — find high-engagement topics with low competition
 - **get_article**: Use to analyze article structure, read full content, or prepare updates.
 
 Get the full content of a single Dev.to article by ID
@@ -97,6 +73,30 @@ Get a Dev.to user profile by username
 - **publish_article**: Provide the title, full Markdown body, and up to 4 tags. Optionally set a canonical URL (for SEO), series name (for multi-part content), and description (for meta). The article will be published immediately unless you set published to false (creates a draft).
 
 Publish a new article on Dev.to (requires API key)
+- **get_my_drafts**: Use to review pending content, resume unfinished articles, or decide what to publish next.
+
+Get your unpublished draft articles on Dev.to (requires API key)
+- **analyze_engagement**: Use to evaluate content performance, benchmark against competitors, and identify what drives engagement. The engagement score weights comments 3x higher than reactions (comments = deeper engagement) and unique commenters 5x (community breadth).
+
+Deep engagement analysis of a Dev.to article — reactions, comments, unique commenters, estimated reach, and engagement score
+- **get_followers**: Use for audience analysis, engagement planning, and community growth tracking.
+
+Get your Dev.to followers (requires API key)
+- **discover_top_authors**: Returns up to 15 top authors with their article count, engagement metrics, and best-performing article. Use for competitive intelligence — understand who dominates specific topics and what content style performs best.
+
+Discover the most influential authors for a specific tag on Dev.to
+- **toggle_reaction**: Categories: "like" (heart), "unicorn" (special appreciation), "readinglist" (bookmark/save). If the reaction already exists, it will be removed. Use to engage with community content — liking articles boosts their visibility.
+
+Toggle a reaction (like, unicorn, or bookmark) on an article or comment (requires API key)
+- **update_article**: You can modify the title, body, tags, description, canonical URL, or series. Use to fix typos, update content, add canonical URLs, or unpublish articles.
+
+Update an existing Dev.to article (requires API key)
+- **audience_crossover**: Reveals hidden audience connections. If your #mcp audience also writes #ai-agents and #devtools, cross-posting to those tags reaches the same people. This operation makes 20-40 API calls — genuine competitive intelligence that requires orchestration.
+
+Map audience overlap — trace commenters in a tag to discover which OTHER tags they write about
+- **get_article_by_slug**: Use when you have the URL path (e.g. "ben/my-article-slug") instead of the numeric ID.
+
+Get the full content of a Dev.to article by username and slug
 - **publish_timing_analysis**: Outputs: best/worst day of the week, day-by-day breakdown, optimal reading time range. This is a multi-call statistical analysis that cannot be replicated with a single API request. Use to time your content for maximum visibility.
 
 Analyze optimal publishing times for a tag — best/worst days, reading time sweet spot, statistical breakdown

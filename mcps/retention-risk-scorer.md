@@ -14,9 +14,9 @@ The Retention Risk Scorer is a predictive analytics tool designed to help organi
 
 
 ## Available Tools (3)
-- **estimate_replacement_cost**: Estimate the financial cost of replacing an employee
 - **get_retention_levers**: Get recommended management actions to improve retention
 - **calculate_risk_score**: Calculate the turnover risk score for an employee
+- **estimate_replacement_cost**: Estimate the financial cost of replacing an employee
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides a specialized financial calculation engine for analyzin
 
 
 ## Available Tools (3)
+- **calculate_segment_payback**: Calculate the CAC payback period for a specific customer segment
 - **evaluate_expansion_impact**: Evaluate the impact of expansion revenue on CAC payback
 - **retrieve_segment_benchmarks**: Retrieve industry standard CAC payback benchmarks
-- **calculate_segment_payback**: Calculate the CAC payback period for a specific customer segment
 
 
 ## 💬 Prompt Examples

@@ -14,11 +14,11 @@ This MCP server provides a specialized calculation engine for determining person
 
 
 ## Available Tools (3)
+- **assess_marginal_pressure**: Analyze tax pressure from marginal vs average rates
+- **calculate_tax_burden**: Calculate total tax burden and net income
 - **compute_fiscal_parts**: 5 for first two, 1.0 for others).
 
 Calculate the number of fiscal parts based on children
-- **assess_marginal_pressure**: Analyze tax pressure from marginal vs average rates
-- **calculate_tax_burden**: Calculate total tax burden and net income
 
 
 ## 💬 Prompt Examples

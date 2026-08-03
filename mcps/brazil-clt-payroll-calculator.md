@@ -14,10 +14,10 @@ This MCP server provides a specialized engine for calculating all essential comp
 
 
 ## Available Tools (4)
+- **calculate_employee_net_pay**: Calculate the employee net pay
 - **calculate_employer_total_cost**: Calculate the total employer cost
 - **get_income_tax_deduction**: Calculate the IRRF deduction
 - **get_social_security_deduction**: Calculate the progressive INSS deduction
-- **calculate_employee_net_pay**: Calculate the employee net pay
 
 
 ## 💬 Prompt Examples

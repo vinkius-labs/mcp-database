@@ -33,9 +33,6 @@ Empower your AI agent to orchestrate your entire data community interaction on K
 
 
 ## Available Tools (10)
-- **list_dataset_files**: Required to understand the data schema before analysis.
-
-List files within a Kaggle dataset
 - **create_dataset**: Use this to share synthesized or processed data back with the community.
 
 Create a new Kaggle dataset
@@ -45,9 +42,9 @@ Get a competition leaderboard
 - **get_notebook_status**: Use this to poll until a notebook finishes running.
 
 Get the execution status of a Kaggle notebook
-- **pull_notebook**: Extremely useful to read other developers code and learn their strategy.
+- **list_dataset_files**: Required to understand the data schema before analysis.
 
-Pull code from a Kaggle notebook/kernel
+List files within a Kaggle dataset
 - **push_notebook**: Use this to actively engage the community by sharing code or analysis.
 
 Push a notebook/script to Kaggle
@@ -63,6 +60,9 @@ Search Kaggle models
 - **search_notebooks**: Useful for finding code examples, data exploration, or winning competition strategies.
 
 Search Kaggle notebooks/kernels
+- **pull_notebook**: Extremely useful to read other developers code and learn their strategy.
+
+Pull code from a Kaggle notebook/kernel
 
 
 ## 💬 Prompt Examples

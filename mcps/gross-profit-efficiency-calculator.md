@@ -14,10 +14,10 @@ The Gross Profit Efficiency Calculator is a specialized financial modeling tool 
 
 
 ## Available Tools (4)
+- **project_margin_attainment**: Simulate changes required to reach a target gross margin
 - **calculate_customer_profitability**: Calculate gross profit and margin percentage for a customer
 - **evaluate_leverage_impact**: Predict the impact of a cost reduction lever on the P&L
 - **get_cogs_breakdown**: Identify the distribution of costs across COGS components
-- **project_margin_attainment**: Simulate changes required to reach a target gross margin
 
 
 ## 💬 Prompt Examples
