@@ -28,8 +28,6 @@ Connect your **MessageFlow** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
-- **get_account_balance**: Get account balance
-- **get_delivery_status**: Get message delivery status
 - **get_template**: Get template details
 - **list_channels**: ).
 
@@ -40,6 +38,8 @@ List all communication channels
 - **send_generic_message**: Send a message through any channel
 - **send_sms**: Send an SMS message
 - **send_whatsapp**: Send a WhatsApp message
+- **get_delivery_status**: Get message delivery status
+- **get_account_balance**: Get account balance
 
 
 ## 💬 Prompt Examples

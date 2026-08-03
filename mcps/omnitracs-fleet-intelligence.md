@@ -40,12 +40,12 @@ Connect your **Omnitracs** account to your AI agent and streamline your fleet ma
 - **get_route_stops**: List stops for a specific route
 - **get_shipment_status**: Get specific shipment status
 - **get_vehicle_location**: Get vehicle GPS location
-- **list_fleet_drivers**: List all registered drivers
 - **list_fleet_messages**: List recent fleet messages
 - **get_fleet_performance**: Get fleet performance metrics
-- **list_active_routes**: List active fleet routes
 - **list_fleet_shipments**: List active shipments
 - **list_fleet_vehicles**: List all fleet vehicles
+- **list_active_routes**: List active fleet routes
+- **list_fleet_drivers**: List all registered drivers
 
 
 ## 💬 Prompt Examples

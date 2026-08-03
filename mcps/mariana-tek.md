@@ -35,7 +35,6 @@ Connect your **Mariana Tek** studio to any AI agent and manage your premium bout
 
 List studio class sessions
 - **list_reservations**: List class reservations
-- **get_class_detail**: Get full class session details
 - **list_class_types**: Includes description, duration, and intensity.
 
 List class types
@@ -50,6 +49,7 @@ Search members
 - **list_memberships**: Shows pricing and terms.
 
 List membership plans
+- **get_class_detail**: Get full class session details
 - **list_pricing**: Includes promotional and corporate rates.
 
 List pricing options

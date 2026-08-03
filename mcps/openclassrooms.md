@@ -37,11 +37,11 @@ Connect your **OpenClassrooms** partner account to any AI agent and get full vis
 - **lister_cours**: Lister les cours disponibles sur OpenClassrooms (Pagination active)
 - **consulter_cours**: Consulter le détail profond d'un cours spécifique
 - **rechercher_cours**: Rechercher des cours OpenClassrooms dynamiquement par mots-clés
+- **sessions_mentorat**: Lister les sessions de mentorat vidéo programmées
 - **lister_parcours**: Lister l'intégralité des parcours diplômants OpenClassrooms
 - **consulter_parcours**: Consulter la taxonomie détaillée d'un parcours diplômant spécifique
 - **lister_etudiants**: Lister les étudiants inscrits sous cette clé d'API (Partenaires)
 - **progression_etudiant**: Consulter la progression précise d'un étudiant métier
-- **sessions_mentorat**: Lister les sessions de mentorat vidéo programmées
 - **certificats_etudiant**: Consulter les certificats de réussite obtenus par un étudiant
 
 

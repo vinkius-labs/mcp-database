@@ -28,16 +28,16 @@ Connect your **Megaventory** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
-- **get_product**: Get details for a specific product SKU
 - **get_purchase_order**: Get details for a specific purchase order
 - **get_sales_order**: Get details for a specific sales order
 - **get_product_stock**: Get stock levels for a product SKU
-- **list_suppliers_clients**: List all suppliers and clients
 - **list_inventory_locations**: List all inventory locations
 - **list_products**: List all products
 - **list_purchase_orders**: List all purchase orders
 - **list_sales_orders**: List all sales orders
 - **search_products**: Search for products by description
+- **list_suppliers_clients**: List all suppliers and clients
+- **get_product**: Get details for a specific product SKU
 
 
 ## 💬 Prompt Examples

@@ -31,6 +31,10 @@ Connect your **Momence** studio to any AI agent and manage your fitness business
 
 
 ## Available Tools (10)
+- **list_sessions**: Filter by date range.
+
+List scheduled sessions
+- **list_products**: List products/retail
 - **get_session**: Get session details
 - **list_session_types**: with description, default duration, and default teacher.
 
@@ -38,15 +42,11 @@ List class types
 - **search_members**: Returns profile, active memberships, credits, and visit history.
 
 Search studio members
+- **list_teachers**: List teachers/instructors
+- **list_locations**: List studio locations
 - **get_member**: Get member profile
 - **list_memberships**: List membership plans
 - **list_bookings**: List session bookings
-- **list_teachers**: List teachers/instructors
-- **list_locations**: List studio locations
-- **list_sessions**: Filter by date range.
-
-List scheduled sessions
-- **list_products**: List products/retail
 
 
 ## 💬 Prompt Examples

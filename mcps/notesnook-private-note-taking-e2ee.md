@@ -42,16 +42,12 @@ Trigger a full sync with the Notesnook server resolving vault state
 - **list_notes**: Indispensable for discovering target node IDs prior to fetching decryption contexts.
 
 List all encrypted notes securely stored in the Notesnook vault
-- **get_note**: Retrieve the underlying encrypted cipher payload of a single note
 - **create_note**: This will securely push plaintext into an encrypted envelope stored persistently in the Notesnook sync server.
 
 Create and inject a brand new encrypted note into the vault
 - **update_note**: Updates synchronization timelines and forces re-encryption across the specific item payload.
 
 Modify partial strings within a pre-existing encrypted vault note
-- **delete_note**: Destroys the node logic completely inside the encrypted persistence layer.
-
-Irreversibly delete a specific encrypted note from the server
 - **list_notebooks**: Critical for correlating hierarchical IDs before exploring note clusters.
 
 List boundary organizing Notebooks spanning the vault
@@ -59,9 +55,13 @@ List boundary organizing Notebooks spanning the vault
 - **list_trash**: Identifies tracking records physically slated for permanent erasure.
 
 List nodes trapped inside the local vault waste bin
+- **get_user**: Validate the authenticated Notesnook user security identity
+- **get_note**: Retrieve the underlying encrypted cipher payload of a single note
+- **delete_note**: Destroys the node logic completely inside the encrypted persistence layer.
+
+Irreversibly delete a specific encrypted note from the server
 - **list_favorites**: List high-priority specific notes flagged as favorites
 - **list_attachments**: List encapsulated binary attachments mapped against notes
-- **get_user**: Validate the authenticated Notesnook user security identity
 
 
 ## 💬 Prompt Examples

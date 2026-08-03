@@ -27,6 +27,10 @@ Connect your **Marketaux** account to any AI agent and stay on top of the financ
 
 
 ## Available Tools (10)
+- **get_entities**: ) tracked by Marketaux.
+
+Get entity data
+- **get_indices**: List stock indices
 - **get_latest_news**: Get the latest financial news
 - **get_sentiment_analysis**: Get news with sentiment analysis
 - **get_stock_market_status**: Get stock market status
@@ -34,11 +38,7 @@ Connect your **Marketaux** account to any AI agent and stay on top of the financ
 - **get_trending_news**: Get trending financial news
 - **list_industries**: List industries
 - **search_exchanges**: Search for stock exchanges
-- **search_news**: Search for global financial news
-- **get_entities**: ) tracked by Marketaux.
-
-Get entity data
-- **get_indices**: List stock indices
+- **search_news**: Search for globalThis financial news
 
 
 ## 💬 Prompt Examples

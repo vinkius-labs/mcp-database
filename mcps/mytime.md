@@ -36,9 +36,7 @@ Connect your **MyTime** partner account to your AI agent and take control of you
 
 
 ## Available Tools (10)
-- **get_appointment**: Get specific appointment details
 - **get_availability**: Check staff availability
-- **get_business_info**: Get high-level business info
 - **list_appointments**: List scheduled appointments
 - **list_customers**: List business customers
 - **list_locations**: List business locations
@@ -46,6 +44,8 @@ Connect your **MyTime** partner account to your AI agent and take control of you
 - **list_reviews**: List customer reviews
 - **list_services**: List available services
 - **list_staff**: List staff members
+- **get_appointment**: Get specific appointment details
+- **get_business_info**: Get high-level business info
 
 
 ## 💬 Prompt Examples

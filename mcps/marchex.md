@@ -27,16 +27,16 @@ Connect your **Marchex** account to any AI agent and take full control of your c
 
 
 ## Available Tools (10)
-- **get_account_details**: Get details for a specific account
-- **get_call_analytics**: Get call analytics
 - **get_call_details**: Get details for a specific call
 - **get_campaign_details**: Get details for a specific campaign
+- **list_campaigns**: List all campaigns
 - **get_number_details**: Get details for a specific number
 - **list_accounts**: List all accounts
-- **list_campaigns**: List all campaigns
 - **list_numbers**: List all tracking numbers
 - **list_users**: List all users
 - **search_calls**: Search for phone calls
+- **get_account_details**: Get details for a specific account
+- **get_call_analytics**: Get call analytics
 
 
 ## 💬 Prompt Examples

@@ -7,50 +7,27 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Manage appointments, services, and customers via the MakePlans REST API.
+Online booking and appointment scheduling via MakePlans MCP.
 
 ## Description
-Connect your **MakePlans** account to any AI agent to automate your scheduling and appointment management. This MCP server enables your agent to list bookings, find available time slots, manage services and resources, and create customer records directly from natural language interfaces.
-
-### What you can do
-
-- **Appointment Control** — List all scheduled bookings and retrieve detailed metadata and status updates
-- **Availability Check** — Query specific services to find available time slots within defined date ranges
-- **Resource Oversight** — Manage bookable resources such as staff members, rooms, or specialized equipment
-- **Service Catalog** — List all service definitions and appointment types configured in your account
-- **Customer CRM** — Create new customer profiles and manage the 'people' database for your business
-- **Real-time Scheduling** — Programmatically create new appointments by linking people, services, and time slots
-
-### How it works
-
-1. Subscribe to this server
-2. Enter your MakePlans API Key and your Account Name (subdomain)
-3. Start managing your calendar from Claude, Cursor, or any MCP-compatible client
-
-### Who is this for?
-
-- **Service-Based Businesses** — Monitor your appointment calendar and manage availability via simple natural language commands
-- **Operations Teams** — Quickly retrieve customer booking histories and update resource assignments without opening the portal
-- **Developers** — Integrate scheduling logic and slot availability into your custom internal dashboards
+Connect your MakePlans account to your AI agent. Manage bookings, list services, check staff availability, and create appointments directly using natural language.
 
 
-## Available Tools (8)
-- **list_appointments**: Use optional params for filtering.
+## Available Tools (10)
+- **delete_booking**: Delete/Cancel a booking
+- **create_booking**: Create a new booking
+- **get_booking**: Get details for a specific booking
+- **get_resource**: Get details for a specific resource
+- **get_service**: Get details for a specific service
+- **list_bookings**: List all bookings in MakePlans
+- **list_people**: List people (staff)
+- **list_resources**: g., rooms, equipment).
 
-List all bookings/appointments
-- **create_new_appointment**: Requires person_id, service_id, and start_at.
+List resources
+- **list_services**: g., "Consultation", "Haircut").
 
-Schedule a new booking
-- **create_new_customer**: Requires name.
-
-Add a new customer profile
-- **get_appointment_details**: Get details for a specific booking
-- **list_customers**: List all registered customers
-- **list_booking_resources**: List booking resources (staff, rooms, etc.)
-- **list_available_services**: List all offered services (appointment types)
-- **find_available_slots**: Requires service_id and date parameters.
-
-Find available time slots for a service
+List available services
+- **list_available_slots**: List available time slots for a service
 
 
 ## 💬 Prompt Examples
@@ -58,38 +35,38 @@ Find available time slots for a service
 Here are some examples of how you can interact with the **MakePlans** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all appointments scheduled for next week in MakePlans."
+> "List all my bookings for this month."
 
 **🤖 AI Agent:**
-> I've retrieved your bookings for next week. You have 8 appointments scheduled, including 'Consultation with John Smith' and 'Yoga Class'. Would you like the full details for any of them?
+> I've fetched your bookings. You have 3 appointments this month: 'Consultation' on the 12th, 'Follow-up' on the 15th, and 'Review' on the 20th.
 
 ---
 
 **👤 You:**
-> "Find available slots for service ID '123' between tomorrow and Friday."
+> "What services are available for booking?"
 
 **🤖 AI Agent:**
-> I've checked the availability for service 123. There are 5 open slots available tomorrow morning and 3 slots available on Thursday afternoon.
+> Currently, you offer 2 services: 'General Consultation' (ID: 101) and 'Advanced Therapy' (ID: 102).
 
 ---
 
 **👤 You:**
-> "Create a new customer profile for 'Alice Doe' with email 'alice@example.com'."
+> "Show available slots for service ID '123'."
 
 **🤖 AI Agent:**
-> Successfully created the profile for Alice Doe in MakePlans. The new person ID is 'pers-987'. You can now use this ID to schedule bookings for her.
+> I found 4 available slots for service '123' today, starting from 14:00 to 17:00 at 1-hour intervals.
 
 
 ## ❓ FAQ
 
-**Q: How do I find my MakePlans API Key?**
-Log in to your MakePlans admin dashboard, navigate to Settings > API to find or generate your Private API Key. Your token is encrypted at rest and injected securely at runtime.
+**Q: Where do I find my API Key?**
+In your MakePlans account, go to Setup > Integrations > API. You must enable the API to see your key.
 
 **Q: What is the Account Name?**
-The account name is the subdomain used in your MakePlans URL, for example: `mycompany.makeplans.com`. Enter only `mycompany`.
+It is the subdomain of your MakePlans URL (e.g., if your URL is https://mybiz.makeplans.com, the account name is 'mybiz').
 
-**Q: Can I search for available slots for a specific date range?**
-Yes, use the `find_available_slots` tool and provide `params` such as `from=2024-01-01&to=2024-01-07` along with the service ID.
+**Q: Can I use the MakePlans MCP server for a public website?**
+The MCP server uses the Private API and requires an API key, so it is intended for internal or authenticated use rather than direct exposure to unauthenticated public users.
 
 
 ## Installation & Usage

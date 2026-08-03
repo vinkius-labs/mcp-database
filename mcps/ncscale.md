@@ -35,14 +35,14 @@ Connect your **ncScale** observability platform to your AI agent and gain full v
 
 
 ## Available Tools (10)
-- **get_alert**: Get specific alert info
-- **get_node**: Get specific node details
-- **get_workspace_info**: Get workspace metadata
 - **list_alerts**: List active monitoring alerts
 - **list_dashboards**: List observability dashboards
 - **list_integrations**: g., Bubble, Airtable) connected to ncScale.
 
 List active integrations
+- **get_alert**: Get specific alert info
+- **get_node**: Get specific node details
+- **get_workspace_info**: Get workspace metadata
 - **list_logs**: List monitoring logs
 - **list_nodes**: List monitored no-code nodes
 - **list_tickets**: List monitoring tickets

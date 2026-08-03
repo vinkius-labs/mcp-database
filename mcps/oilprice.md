@@ -45,20 +45,6 @@ Your AI becomes an energy analyst, helping you track commodity prices, understan
 
 
 ## Available Tools (10)
-- **get_brent_price**: Prices update every 5 minutes.
-
-USE WHEN:
-- User asks specifically about Brent oil price
-- User needs the international crude oil benchmark
-- User wants to check European/global oil prices
-- User asks "what is Brent price"
-
-EXAMPLES:
-- "What is Brent price?" → call with no params
-- "Current Brent crude oil price" → call with no params
-- "Brent oil benchmark" → call with no params
-
-Get current Brent crude oil price
 - **list_commodities**: USE WHEN:
 - User wants to explore what commodities are available
 - User needs to find commodity codes for querying prices
@@ -200,6 +186,20 @@ EXAMPLES:
 - "West Texas Intermediate price" → call with no params
 
 Get current WTI (West Texas Intermediate) crude oil price
+- **get_brent_price**: Prices update every 5 minutes.
+
+USE WHEN:
+- User asks specifically about Brent oil price
+- User needs the international crude oil benchmark
+- User wants to check European/globalThis oil prices
+- User asks "what is Brent price"
+
+EXAMPLES:
+- "What is Brent price?" → call with no params
+- "Current Brent crude oil price" → call with no params
+- "Brent oil benchmark" → call with no params
+
+Get current Brent crude oil price
 
 
 ## 💬 Prompt Examples
