@@ -35,6 +35,8 @@ Connect your **Loops.so** account to any AI agent to streamline your email marke
 
 
 ## Available Tools (24)
+- **list_transactional_emails**: List transactional emails
+- **update_email_message**: Update an email message (Alpha)
 - **create_contact_property**: Create a new contact property
 - **create_contact**: Create a new contact in Loops
 - **delete_contact**: Delete a contact from Loops
@@ -49,13 +51,11 @@ Connect your **Loops.so** account to any AI agent to streamline your email marke
 - **list_ips**: List dedicated sending IPs
 - **list_mailing_lists**: List all mailing lists
 - **list_themes**: List all themes (Alpha)
-- **list_transactional_emails**: List transactional emails
 - **remove_suppression**: Remove suppression for a contact
 - **send_event**: Send an event to Loops
 - **send_transactional_email**: Send a transactional email
 - **update_campaign**: Update an existing campaign (Alpha)
 - **update_contact**: Update an existing contact or create one if it does not exist
-- **update_email_message**: Update an email message (Alpha)
 - **check_api_key**: Check if the Loops API key is valid
 - **check_suppression**: Check suppression status for a contact
 - **create_campaign**: Create a new campaign (Alpha)

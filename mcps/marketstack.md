@@ -37,7 +37,6 @@ Connect **MarketStack** to your AI agent to access a massive database of global 
 - **get_eod**: Use symbols parameter for comma-separated tickers.
 
 Retrieve end-of-day data for one or multiple stock tickers
-- **get_cik_code**: Find the CIK for a company
 - **get_company_concepts**: g., accounts_payable) for a company using its CIK code.
 
 Retrieve specific financial concepts for a company
@@ -58,6 +57,7 @@ Retrieve intraday data points for one or multiple stock tickers
 - **list_splits**: Retrieve historical stock split data
 - **list_tickers**: List all available stock tickers
 - **list_timezones**: List supported timezones
+- **get_cik_code**: Find the CIK for a company
 
 
 ## 💬 Prompt Examples

@@ -39,15 +39,17 @@ No more navigating complex dashboards to check a sensor value or trigger a maint
 - **create_application**: Create a new Losant application
 - **create_data_table**: Create a new data table
 - **create_device**: Create a new device
-- **create_workflow**: Create a new workflow
-- **delete_application**: Delete a Losant application
-- **delete_data_table_rows**: Delete rows from a data table
 - **delete_device**: Delete a device
 - **delete_workflow**: Delete a workflow
 - **execute_notebook**: Execute a notebook
+- **get_application**: Get a specific Losant application
+- **update_application**: Update a Losant application
+- **send_device_command**: Send a command to a device
+- **create_workflow**: Create a new workflow
+- **delete_application**: Delete a Losant application
+- **delete_data_table_rows**: Delete rows from a data table
 - **export_application**: Export a Losant application
 - **export_data**: Export device data
-- **get_application**: Get a specific Losant application
 - **get_dashboard**: Get a specific dashboard
 - **get_data_table_rows**: Get rows from a data table
 - **get_device**: Get a specific device
@@ -66,10 +68,8 @@ No more navigating complex dashboards to check a sensor value or trigger a maint
 - **query_last_value**: Query last value data
 - **query_time_series**: Query time series data
 - **send_dashboard_report**: Send a dashboard report
-- **send_device_command**: Send a command to a device
 - **send_device_state**: Send state data for a device
 - **set_device_connection_status**: Set connection status for a device
-- **update_application**: Update a Losant application
 - **update_device**: Update a device
 - **update_workflow**: Update a workflow
 - **upload_file**: Upload a file to an application

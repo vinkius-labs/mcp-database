@@ -53,8 +53,8 @@ List Translation Memories (TMs)
 - **tb_search**: Search for expressions in a Termbase
 - **tm_concordance**: Perform a concordance search in a TM
 - **tm_lookup_segments**: Lookup segments in a TM
-- **update_tb_entry**: Update an existing entry in a Termbase
 - **update_tm_entry**: Update an existing entry in a TM
+- **update_tb_entry**: Update an existing entry in a Termbase
 
 
 ## 💬 Prompt Examples

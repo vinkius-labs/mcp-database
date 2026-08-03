@@ -37,18 +37,18 @@ Connect your **Immutable** developer account to any AI agent to manage Web3 gami
 - **list_listings**: List all orderbook listings
 - **list_mint_requests**: List mint requests for a collection
 - **list_nfts**: List all NFTs
-- **list_tokens**: List ERC20 tokens
-- **mint_nfts**: Mint NFTs (requires Secret API Key)
-- **update_passport_username**: Update Passport username (requires Access Token)
 - **fulfill_order**: Fulfill an orderbook order
 - **get_activity**: Get a specific activity by ID
+- **list_activities**: List all activities on an Immutable chain
+- **list_collections**: List all NFT collections
 - **get_collection**: Get collection details by contract address
 - **get_nft**: Get NFT details by token ID
 - **get_passport_profile**: Get Passport user profile (requires Access Token)
 - **get_token**: Get ERC20 token by contract address
-- **list_activities**: List all activities on an Immutable chain
-- **list_collections**: List all NFT collections
+- **list_tokens**: List ERC20 tokens
+- **mint_nfts**: Mint NFTs (requires Secret API Key)
 - **refresh_collection_metadata**: Refresh metadata for a collection
+- **update_passport_username**: Update Passport username (requires Access Token)
 - **create_bid**: Create an orderbook bid
 - **create_listing**: Create an orderbook listing
 

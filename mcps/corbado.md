@@ -67,15 +67,15 @@ Connect your **Corbado** project to any AI agent to streamline your identity and
 - **refresh_me**: Refresh session
 - **reset_auth_process**: Reset authentication process
 - **revoke_session**: Revoke a session
-- **skip_auth_block**: Skip authentication block
-- **start_connect_login**: Start Connect login
-- **start_identifier_verify**: Start identifier verification
 - **start_passkey_append**: Start passkey append
 - **start_passkey_login**: Start passkey login
 - **start_sso**: Start SSO (SAML2)
 - **update_auth_identifier**: Update authentication identifier
 - **update_identifier**: Update a login identifier
 - **update_me**: Update current user
+- **skip_auth_block**: Skip authentication block
+- **start_connect_login**: Start Connect login
+- **start_identifier_verify**: Start identifier verification
 - **update_user**: Update a Corbado user
 - **verify_signed_data**: Verify signed passkey data
 

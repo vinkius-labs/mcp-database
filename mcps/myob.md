@@ -45,7 +45,6 @@ Connect your **MYOB** business account to any AI agent and take full control of 
 - **list_gl_tax_codes**: List General Ledger Tax Codes
 - **list_inventory_adjustments**: List Inventory Adjustments
 - **list_inventory_item_price_matrices**: List Inventory Item Price Matrices
-- **list_inventory_items**: List Inventory Items
 - **list_inventory_locations**: List Inventory Locations
 - **list_payroll_categories**: List Payroll Categories
 - **list_payroll_superannuation_funds**: List Payroll Superannuation Funds
@@ -53,10 +52,11 @@ Connect your **MYOB** business account to any AI agent and take full control of 
 - **list_purchase_bills**: List Purchase Bills
 - **list_purchase_orders**: List Purchase Orders
 - **list_purchase_supplier_payments**: List Purchase Supplier Payments
-- **list_sale_customer_payments**: List Sale Customer Payments
 - **list_sale_invoices**: List Sale Invoices
 - **list_sale_orders**: List Sale Orders
 - **list_sale_quotes**: List Sale Quotes
+- **list_sale_customer_payments**: List Sale Customer Payments
+- **list_inventory_items**: List Inventory Items
 
 
 ## 💬 Prompt Examples

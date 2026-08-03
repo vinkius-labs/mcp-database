@@ -53,7 +53,6 @@ Connect your **mod.io** account to any AI agent and take full control of game mo
 List all games on mod.io
 - **list_my_mods**: Get mods added by the user or where they are a team member
 - **list_my_purchased**: Get mods purchased by the authenticated user
-- **list_my_ratings**: Get ratings submitted by the authenticated user
 - **list_my_subscriptions**: Get mods the authenticated user is subscribed to
 - **get_me**: Get authenticated user details
 - **list_my_wallets**: Get user wallets and balances
@@ -62,11 +61,12 @@ List all games on mod.io
 - **get_mod_file**: Get details for a specific mod file
 - **list_mod_files**: List all files for a mod
 - **list_mod_team**: List team members for a mod
-- **get_mod**: Get details for a specific mod
-- **list_mods**: List all mods for a specific game
 - **subscribe_mod**: Subscribe to a mod
 - **list_token_packs**: Get available token packs for a game
 - **unsubscribe_mod**: Unsubscribe from a mod
+- **list_my_ratings**: Get ratings submitted by the authenticated user
+- **get_mod**: Get details for a specific mod
+- **list_mods**: List all mods for a specific game
 - **add_mod_comment**: Add a comment to a mod
 - **list_mod_metadata**: List metadata key-value pairs for a mod
 - **get_mod_stats**: Get statistics for a specific mod

@@ -34,14 +34,14 @@ Connect your **Kontent.ai** project to any AI agent to streamline your headless 
 
 ## Available Tools (22)
 - **manage_create_item**: Create a content item via Management API
+- **manage_delete_item**: Delete a content item via Management API
+- **manage_list_items**: List content items via Management API
 - **manage_create_taxonomy**: Create a taxonomy via Management API
 - **manage_create_type**: Create a content type via Management API
 - **manage_delete_asset**: Delete an asset via Management API
-- **manage_delete_item**: Delete a content item via Management API
 - **manage_delete_taxonomy**: Delete a taxonomy via Management API
 - **manage_delete_type**: Delete a content type via Management API
 - **manage_get_variant**: Get a language variant of a content item
-- **manage_list_items**: List content items via Management API
 - **manage_list_taxonomies**: List taxonomies via Management API
 - **manage_list_types**: List content types via Management API
 - **manage_update_asset**: Update an asset via Management API

@@ -34,13 +34,13 @@ Connect your **OneSpan Sign** account to any AI agent to streamline your digital
 
 
 ## Available Tools (5)
-- **configure_callback**: Configure or receive event notifications
-- **create_package**: Create a new transaction package
-- **download_documents_zip**: Download all signed documents in a zip file
 - **update_package**: g., to SENT).
 
 Update package status
 - **upload_document**: Upload a document to a package
+- **configure_callback**: Configure or receive event notifications
+- **create_package**: Create a new transaction package
+- **download_documents_zip**: Download all signed documents in a zip file
 
 
 ## 💬 Prompt Examples

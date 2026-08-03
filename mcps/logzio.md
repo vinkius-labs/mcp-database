@@ -33,24 +33,24 @@ Connect your **Logz.io** observability platform to any AI agent to streamline yo
 
 
 ## Available Tools (31)
+- **create_user**: Create a new user
+- **disable_alert**: Disable an alert
+- **enable_alert**: Enable an alert
+- **list_insights**: io.
+
+Retrieves LOGCEPTION and PUBLIC_CI insights detected in your logs
 - **create_metrics_account**: Create a Metrics account
 - **create_security_rule**: Create a new SIEM security rule
 - **create_siem_account**: Creates a new SIEM account associated with your main logs account
 - **create_snapshot**: Create a Kibana snapshot
-- **create_user**: Create a new user
 - **delete_alert**: Delete an alert
 - **delete_security_rule**: Delete a SIEM security rule
 - **delete_user**: Delete a user
-- **disable_alert**: Disable an alert
-- **enable_alert**: Enable an alert
 - **get_lookup_list**: Get a lookup list by ID
 - **get_snapshot**: Get a Kibana snapshot
 - **list_alerts**: io account.
 
 Returns a list of all configured alerts
-- **list_insights**: io.
-
-Retrieves LOGCEPTION and PUBLIC_CI insights detected in your logs
 - **list_triggered_alerts**: Returns a paged, filtered list of triggered alert events
 - **list_users_recursive**: List all users in main account and sub-accounts
 - **list_users**: List users for a single account

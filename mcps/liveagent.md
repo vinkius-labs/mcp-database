@@ -34,6 +34,7 @@ Connect your **LiveAgent** helpdesk to any AI agent and manage your customer sup
 
 
 ## Available Tools (16)
+- **get_conversation**: Retrieve conversation details (v1)
 - **list_conversations**: Supports optional filtering parameters.
 
 List all conversations/tickets (v1)
@@ -41,7 +42,6 @@ List all conversations/tickets (v1)
 - **delete_conversation**: Delete a conversation (v1)
 - **get_agent**: Retrieve agent info and auth token (v1)
 - **get_company**: Retrieve company info (v1)
-- **get_conversation**: Retrieve conversation details (v1)
 - **list_phone_numbers**: Uses cursor-based pagination.
 
 Retrieve phone numbers (v3)

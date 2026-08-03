@@ -33,21 +33,21 @@ The web is hostile to AI agents. DocBreach brings a crowbar. Discover, read, and
 
 
 ## Available Tools (5)
-- **docs_search**: Always provide the "site" parameter when searching within a known domain. Example: docs.search({ query: "authentication headers", site: "docs.stripe.com" })
-
-Search for specific topics within a documentation site
 - **docs_discover**: Use specific, descriptive queries. Example: "stripe API webhooks" instead of just "stripe". Combine your search intents into a single query. Do NOT call this tool in rapid loops — refine your query instead.
 
 Find documentation sources for any service, library, or API
+- **docs_extract**: read has identified an OpenAPI/Swagger spec URL or Postman Collection. Provide a tag to filter endpoints by API group. If no tag is provided, returns a summary of all tags with endpoint counts.
+
+Extract structured endpoint information from an OpenAPI, Swagger, or Postman spec
 - **docs_map**: Provide a domain (e.g., "stripe.com") and receive a complete table of contents with every documentation page organized by section. Then use docs.read on specific pages from the map.
 
 Map the complete documentation structure of any domain
 - **docs_read**: Handles HTML, JSON, YAML, OpenAPI specs, Postman Collections, PDFs (<5MB), and llms.txt. The response includes a "Related Documentation Links" section extracted from page navigation. ALWAYS check these links for authentication and getting-started pages before generating code.
 
 Read any documentation URL and return clean, LLM-ready Markdown
-- **docs_extract**: read has identified an OpenAPI/Swagger spec URL or Postman Collection. Provide a tag to filter endpoints by API group. If no tag is provided, returns a summary of all tags with endpoint counts.
+- **docs_search**: Always provide the "site" parameter when searching within a known domain. Example: docs.search({ query: "authentication headers", site: "docs.stripe.com" })
 
-Extract structured endpoint information from an OpenAPI, Swagger, or Postman spec
+Search for specific topics within a documentation site
 
 
 ## 💬 Prompt Examples

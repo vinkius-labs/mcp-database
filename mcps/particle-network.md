@@ -35,6 +35,10 @@ Connect your **Particle Network** project to any AI agent to streamline your Web
 
 ## Available Tools (16)
 - **aa_get_smart_account**: Get smart account info (BICONOMY, SIMPLE, etc)
+- **is_project_user**: Check if a wallet address belongs to a user in your project
+- **aa_create_sessions**: Generates transactions to initialize session keys
+- **aa_create_user_op**: Constructs a UserOperation from transactions
+- **aa_get_fee_quotes**: Returns UserOp objects for different gas payment methods
 - **aa_send_user_op**: Pushes a signed UserOperation to the network
 - **aa_validate_session**: Checks the validity of a session key
 - **eth_estimate_user_operation_gas**: Returns gas estimates for a UserOp
@@ -44,12 +48,8 @@ Connect your **Particle Network** project to any AI agent to streamline your Web
 - **eth_supported_entry_points**: Returns supported EntryPoint addresses
 - **get_user_info_by_identity**: Retrieve user details using a social identity
 - **get_user_info**: Retrieve user details using UUID and Token
-- **is_project_user**: Check if a wallet address belongs to a user in your project
 - **pm_paymaster_balance**: Returns the USD balance of the project's Paymaster
 - **pm_sponsor_user_operation**: Returns a Paymaster signature for sponsorship
-- **aa_create_sessions**: Generates transactions to initialize session keys
-- **aa_create_user_op**: Constructs a UserOperation from transactions
-- **aa_get_fee_quotes**: Returns UserOp objects for different gas payment methods
 
 
 ## 💬 Prompt Examples

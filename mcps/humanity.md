@@ -34,26 +34,26 @@ Connect your **Humanity** account to any AI agent to streamline your workforce m
 
 
 ## Available Tools (20)
-- **create_location**: Create a new location
-- **create_message**: Send a message
-- **create_position**: Create a new position
-- **create_shift**: Create a new shift
-- **create_timeclock_event**: ) to a timeclock.
-
-Add an event to a timeclock
-- **create_wall_message**: Post a wall message
 - **get_employee**: Get a specific employee
 - **list_employees**: List employees
 - **list_locations**: List locations or remote sites
-- **get_me**: Get current Humanity user details
 - **list_positions**: List positions
 - **list_shifts**: List shifts
 - **terminal_clockin**: Clock in an employee via a terminal
 - **list_timeclocks**: List timeclock records
 - **get_training_progress**: Get training progress
 - **get_training_sections**: Get training sections
-- **update_weekly_availability**: Update weekly availability
 - **get_weekly_availability**: Get weekly availability
+- **create_location**: Create a new location
+- **create_message**: Send a message
+- **create_shift**: Create a new shift
+- **update_weekly_availability**: Update weekly availability
+- **create_position**: Create a new position
+- **create_timeclock_event**: ) to a timeclock.
+
+Add an event to a timeclock
+- **create_wall_message**: Post a wall message
+- **get_me**: Get current Humanity user details
 - **list_companies**: List companies
 - **get_company**: Get details for a specific company
 

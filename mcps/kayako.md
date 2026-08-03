@@ -34,11 +34,13 @@ Connect your **Kayako** helpdesk to any AI agent to streamline your customer sup
 
 
 ## Available Tools (21)
+- **list_endpoints**: List Kayako automation endpoints
+- **list_teams**: List Kayako teams
+- **list_views**: List Kayako views
 - **list_categories**: List Kayako Help Center categories
 - **create_case**: Create a new Kayako case
 - **create_file**: Upload a file to Kayako
 - **create_user**: Create a new Kayako user
-- **list_endpoints**: List Kayako automation endpoints
 - **list_locales**: List Kayako locales
 - **list_macros**: List Kayako macros
 - **get_me**: Get current Kayako user details
@@ -46,12 +48,10 @@ Connect your **Kayako** helpdesk to any AI agent to streamline your customer sup
 - **list_organizations**: List Kayako organizations
 - **list_sections**: List Kayako Help Center sections
 - **list_team_members**: List members of a specific Kayako team
-- **list_teams**: List Kayako teams
 - **list_triggers**: List Kayako automation triggers
 - **list_users**: Supports pagination and partial output.
 
 List Kayako users
-- **list_views**: List Kayako views
 - **list_article_comments**: List comments for a specific Kayako article
 - **list_articles**: List Kayako Help Center articles
 - **list_brands**: List Kayako brands

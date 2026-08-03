@@ -26,30 +26,30 @@ Connect your **OpenNode** account to any AI agent to seamlessly integrate Bitcoi
 
 
 ## Available Tools (22)
+- **create_charge**: Create a new OpenNode charge (Bitcoin payment request)
+- **get_charge**: Get charge info
+- **create_refund**: Create a refund for an underpaid charge
+- **set_scheduled_withdrawals**: Set scheduled bank withdrawals status
+- **initiate_withdrawal**: Can also be used to preview payouts.
+
+Initiate a withdrawal (Paying via Lightning / Chain)
 - **get_account_balance**: Get account balance
 - **list_activity**: List account activity
 - **create_address**: Create a static on-chain address
 - **list_addresses**: List static on-chain addresses
-- **confirm_chain_withdrawal**: Confirm a previewed chain withdrawal request
-- **confirm_ln_withdrawal**: Confirm a previewed Lightning withdrawal request
-- **get_withdrawal**: Get withdrawal info
-- **initiate_withdrawal**: Can also be used to preview payouts.
-
-Initiate a withdrawal (Paying via Lightning / Chain)
-- **list_withdrawals**: List withdrawals
-- **get_currencies**: Get supported originating currencies
-- **get_refund**: Get refund info
-- **list_refunds**: List refunds
-- **set_scheduled_withdrawals**: Set scheduled bank withdrawals status
-- **create_charge**: Create a new OpenNode charge (Bitcoin payment request)
-- **get_charge**: Get charge info
 - **list_charges**: List paid charges
 - **initiate_exchange**: Initiate an exchange between BTC and Fiat
 - **create_lnurl_pay**: Create a static LN address (LNURL-Pay)
 - **list_lnurl_pay**: List static LN addresses (LNURL-Pay)
 - **initiate_lnurl_withdrawal**: Initiate LNURL withdrawal
 - **get_rates**: Get exchange rates
-- **create_refund**: Create a refund for an underpaid charge
+- **list_withdrawals**: List withdrawals
+- **confirm_chain_withdrawal**: Confirm a previewed chain withdrawal request
+- **confirm_ln_withdrawal**: Confirm a previewed Lightning withdrawal request
+- **get_withdrawal**: Get withdrawal info
+- **get_currencies**: Get supported originating currencies
+- **get_refund**: Get refund info
+- **list_refunds**: List refunds
 
 
 ## 💬 Prompt Examples
