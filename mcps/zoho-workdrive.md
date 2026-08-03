@@ -34,17 +34,17 @@ Integrate your **Zoho WorkDrive** cloud storage into your AI workflows to stream
 
 
 ## Available Tools (12)
+- **list_recent_files**: List recently accessed files
 - **create_folder**: Create a new folder
 - **create_share_link**: Create a new share link
-- **delete_file**: Delete a file or folder
-- **get_file_metadata**: Get file or folder metadata
 - **get_my_profile**: Get current user profile
 - **list_files**: List files and folders
 - **list_file_permissions**: List file permissions
-- **list_recent_files**: List recently accessed files
 - **list_share_links**: List external share links
-- **list_team_folders**: List team folders (workspaces)
 - **list_teams**: List all teams
+- **delete_file**: Delete a file or folder
+- **get_file_metadata**: Get file or folder metadata
+- **list_team_folders**: List team folders (workspaces)
 - **rename_file**: Rename a file or folder
 
 

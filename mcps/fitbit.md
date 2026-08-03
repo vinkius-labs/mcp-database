@@ -36,15 +36,9 @@ Connect your **Fitbit** account to any AI agent and gain instant access to your 
 
 
 ## Available Tools (14)
-- **get_cardio_fitness_score**: Returns VO2 Max values and percentile rankings. Date format: YYYY-MM-DD.
+- **get_activities_date**: Returns steps, calories burned, distance walked, active minutes, floors climbed, elevation and sedentary minutes. Date format: YYYY-MM-DD or "today".
 
-Get cardio fitness score (VO2 Max) for a date range
-- **get_devices**: Returns device version, MAC address, battery level, last sync time and device type.
-
-Get all Fitbit devices connected to the user's account
-- **get_foods_date**: Returns total calories consumed, macros (carbs, protein, fat), water intake and list of logged foods with meal times. Date format: YYYY-MM-DD or "today".
-
-Get food log summary for a specific date
+Get activity summary for a specific date
 - **get_activities_timeseries**: Resource paths: "steps", "calories", "distance", "floors", "elevation", "minutesSedentary", "minutesLightlyActive", "minutesFairlyActive", "minutesVeryActive", "activityCalories". Period: 1d, 7d, 30d, 1w, 1m, 3m, 6m, 1y, max or startDate/endDate (YYYY-MM-DD). Detail level: "1min", "5min", "15min", "1day" for intraday data.
 
 Get activity time series data over a date range
@@ -54,9 +48,21 @@ Get body weight log entries for a specific date
 - **get_breathing_rate**: Returns breathing rate in breaths per minute. Available on Fitbit devices with SpO2 sensors. Date format: YYYY-MM-DD.
 
 Get breathing rate for a specific date
-- **get_activities_date**: Returns steps, calories burned, distance walked, active minutes, floors climbed, elevation and sedentary minutes. Date format: YYYY-MM-DD or "today".
+- **get_cardio_fitness_score**: Returns VO2 Max values and percentile rankings. Date format: YYYY-MM-DD.
 
-Get activity summary for a specific date
+Get cardio fitness score (VO2 Max) for a date range
+- **get_devices**: Returns device version, MAC address, battery level, last sync time and device type.
+
+Get all Fitbit devices connected to the user's account
+- **get_spo2**: Returns average SpO2 percentage and min/max values. Available on Fitbit devices with SpO2 sensors. Date format: YYYY-MM-DD.
+
+Get blood oxygen saturation (SpO2) for a specific date
+- **get_foods_date**: Returns total calories consumed, macros (carbs, protein, fat), water intake and list of logged foods with meal times. Date format: YYYY-MM-DD or "today".
+
+Get food log summary for a specific date
+- **get_sleep_timeseries**: Returns daily sleep summaries with start time, duration, minutes asleep, efficiency and sleep stages. Date range format: startDate/endDate (YYYY-MM-DD).
+
+Get sleep log over a date range
 - **get_water**: Returns water consumption in milliliters and timestamps. Date format: YYYY-MM-DD.
 
 Get water intake log for a specific date
@@ -72,12 +78,6 @@ Get the authenticated user's Fitbit profile
 - **get_sleep_date**: Returns sleep start time, duration, minutes asleep, minutes awake, minutes in each sleep stage (light, deep, REM, awake), efficiency score and number of awakenings. Date format: YYYY-MM-DD or "today".
 
 Get sleep log for a specific date
-- **get_sleep_timeseries**: Returns daily sleep summaries with start time, duration, minutes asleep, efficiency and sleep stages. Date range format: startDate/endDate (YYYY-MM-DD).
-
-Get sleep log over a date range
-- **get_spo2**: Returns average SpO2 percentage and min/max values. Available on Fitbit devices with SpO2 sensors. Date format: YYYY-MM-DD.
-
-Get blood oxygen saturation (SpO2) for a specific date
 
 
 ## 💬 Prompt Examples

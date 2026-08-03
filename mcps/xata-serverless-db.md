@@ -35,9 +35,6 @@ No more switching between your IDE and the Xata dashboard to check schema or run
 
 
 ## Available Tools (30)
-- **create_project**: Create a new project
-- **delete_branch**: Delete a branch
-- **delete_invitation**: Delete an organization invitation
 - **request_organization_deletion**: Request organization deletion
 - **delete_project**: Delete a project
 - **execute_sql_batch**: Execute a batch of SQL queries in a single transaction
@@ -59,10 +56,13 @@ No more switching between your IDE and the Xata dashboard to check schema or run
 - **remove_member**: Remove a member from an organization
 - **resend_invitation**: Resend an organization invitation
 - **rotate_branch_credentials**: Rotate branch credentials
+- **update_project**: Update project details
+- **create_project**: Create a new project
+- **delete_branch**: Delete a branch
+- **delete_invitation**: Delete an organization invitation
 - **send_invitation**: Send an invitation to join an organization
 - **update_branch**: Update branch details
 - **update_organization**: Update organization details
-- **update_project**: Update project details
 - **create_branch**: Create a new database branch
 - **create_organization**: Create a new organization
 

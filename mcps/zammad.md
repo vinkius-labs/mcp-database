@@ -36,6 +36,7 @@ Connect your **Zammad** helpdesk to any AI agent to streamline your customer sup
 - **create_ticket**: Create a new Zammad ticket
 - **create_user**: Create a new Zammad user
 - **data_privacy_delete_user**: Delete a user via Data Privacy task (Recommended over direct delete)
+- **delete_ticket**: Delete a Zammad ticket
 - **delete_user**: Delete a Zammad user
 - **get_group**: Get details for a specific Zammad group
 - **get_links**: Get links for a specific object
@@ -60,19 +61,18 @@ Connect your **Zammad** helpdesk to any AI agent to streamline your customer sup
 - **list_ticket_states**: List ticket states
 - **list_tickets**: List Zammad tickets
 - **list_time_accountings**: List time accountings for a ticket
-- **list_users**: List all Zammad users
 - **remove_tag**: Remove a tag from an object
 - **search_groups**: Search for groups in Zammad
 - **search_organizations**: Search for organizations in Zammad
-- **search_roles**: Search for roles in Zammad
 - **search_tickets**: Search for tickets in Zammad
 - **search_users**: Search for users in Zammad
 - **summarize_ticket**: Trigger async generation of a ticket summary
 - **update_ticket**: Update an existing Zammad ticket
+- **search_roles**: Search for roles in Zammad
 - **update_user**: Update an existing Zammad user
 - **add_tag**: Add a tag to an object
 - **create_ticket_article**: Create a new article on a ticket
-- **delete_ticket**: Delete a Zammad ticket
+- **list_users**: List all Zammad users
 - **get_me**: Get current Zammad user details
 
 

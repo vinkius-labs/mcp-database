@@ -37,22 +37,22 @@ No more manual searching on block explorers. Your AI acts as a personal crypto a
 
 
 ## Available Tools (16)
-- **list_chains**: List supported blockchains and metadata
-- **list_dapps**: List metadata for decentralized applications
-- **get_fungible**: Get token metadata, prices, and charts
-- **list_gas_prices**: Get real-time gas estimates across chains
 - **get_nft**: Look up specific NFTs by reference
 - **get_swap_quotes**: Get quotes for same-chain swaps or cross-chain bridges
 - **get_wallet_nft_collections**: Get NFT holdings grouped by collection for a wallet
 - **get_wallet_nft_portfolio**: Get NFT value summary for a wallet
-- **get_wallet_nft_positions**: Get individual NFT holdings for a wallet
-- **get_wallet_pnl**: Get realized and unrealized gains (PnL) for a wallet
-- **get_wallet_portfolio**: Get total value and distribution for a wallet
 - **get_wallet_positions**: Get list of tokens and DeFi positions for a wallet
 - **get_wallet_set_portfolio**: Get aggregated portfolio for multiple wallets
 - **get_wallet_set_positions**: Get aggregated positions for multiple wallets
 - **get_wallet_set_transactions**: Get aggregated transactions for multiple wallets
 - **get_wallet_transactions**: Get human-readable transaction history for a wallet
+- **list_chains**: List supported blockchains and metadata
+- **list_dapps**: List metadata for decentralized applications
+- **get_fungible**: Get token metadata, prices, and charts
+- **list_gas_prices**: Get real-time gas estimates across chains
+- **get_wallet_nft_positions**: Get individual NFT holdings for a wallet
+- **get_wallet_pnl**: Get realized and unrealized gains (PnL) for a wallet
+- **get_wallet_portfolio**: Get total value and distribution for a wallet
 
 
 ## 💬 Prompt Examples

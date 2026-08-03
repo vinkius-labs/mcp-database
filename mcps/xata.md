@@ -33,12 +33,9 @@ Connect your **Xata** account to any AI agent to manage your serverless data inf
 
 
 ## Available Tools (28)
-- **cancel_organization_invitation**: Cancel a pending organization invitation
 - **create_branch**: Create a new database branch
 - **create_org_api_key**: Create an API key for the organization
 - **create_organization**: Create a new Xata organization
-- **create_project**: Create a new project in an organization
-- **create_user_api_key**: Create a new user API key
 - **delete_user_api_keys**: Bulk delete user API keys by ID
 - **execute_sql**: Execute single or batch SQL queries over HTTP
 - **get_branch_credentials**: Retrieve database username and password for a branch
@@ -46,9 +43,6 @@ Connect your **Xata** account to any AI agent to manage your serverless data inf
 - **get_github_repository_mapping**: Retrieve the current GitHub repository mapping for a branch
 - **get_organization**: Get detailed information about a specific organization
 - **get_project_limits**: Get resource limits for projects in an organization
-- **install_github_app**: Link a GitHub App installation to an organization
-- **invite_organization_member**: Invite a user to an organization via email
-- **list_branches**: List all branches in a project
 - **list_images**: List available PostgreSQL versions/images
 - **list_org_api_keys**: List organization-scoped API keys
 - **list_organization_invitations**: List pending or expired invitations for an organization
@@ -61,6 +55,12 @@ Connect your **Xata** account to any AI agent to manage your serverless data inf
 - **remove_organization_member**: Remove a member from an organization
 - **rotate_branch_credentials**: Trigger a password rotation for a branch
 - **update_organization**: Update organization information
+- **cancel_organization_invitation**: Cancel a pending organization invitation
+- **install_github_app**: Link a GitHub App installation to an organization
+- **invite_organization_member**: Invite a user to an organization via email
+- **list_branches**: List all branches in a project
+- **create_project**: Create a new project in an organization
+- **create_user_api_key**: Create a new user API key
 
 
 ## 💬 Prompt Examples

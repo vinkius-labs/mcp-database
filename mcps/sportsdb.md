@@ -35,9 +35,7 @@ Connect **SportsDB** (sportdb.dev) to your AI agent for comprehensive sports int
 
 
 ## Available Tools (12)
-- **search_players**: Returns player metadata including team and nationality.
-
-Search for players by name
+- **search_events**: Search for sports events by name
 - **get_last_events**: Get last results for a team
 - **get_league_details**: Get detailed information about a league
 - **get_league_table**: Get league standings/table
@@ -47,7 +45,9 @@ Search for players by name
 - **list_all_countries**: List all countries with sports data
 - **list_all_leagues**: List all available leagues
 - **list_all_sports**: List all available sports
-- **search_events**: Search for sports events by name
+- **search_players**: Returns player metadata including team and nationality.
+
+Search for players by name
 - **search_teams**: Returns team metadata including ID, sport, league, and country.
 
 Search for sports teams by name

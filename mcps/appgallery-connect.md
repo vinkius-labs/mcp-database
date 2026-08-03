@@ -37,25 +37,25 @@ Connect **AppGallery Connect** to your AI agent and manage your mobile app lifec
 - **get_app_language_info**: g. "en-US", "zh-CN", "pt-BR").
 
 Get localized app information for a specific language
+- **list_apps**: List all applications in the AppGallery Connect account
+- **get_comments**: Get user comments and reviews for an application
+- **get_rating_info**: Get rating and review summary for an application
+- **get_submission_status**: Check the review status of a submitted application
+- **get_upload_url**: Specify the file suffix (e.g. "apk", "png").
+
+Get a pre-signed upload URL for app binaries or assets
+- **reply_to_comment**: Use get_comments to find comment IDs.
+
+Reply to a user comment on the AppGallery
 - **get_download_stats**: Dates must be in YYYYMMDD format.
 
 Get download statistics for an application
 - **get_install_stats**: Dates must be in YYYYMMDD format.
 
 Get installation statistics for an application
-- **get_rating_info**: Get rating and review summary for an application
-- **get_submission_status**: Check the review status of a submitted application
-- **get_upload_url**: Specify the file suffix (e.g. "apk", "png").
-
-Get a pre-signed upload URL for app binaries or assets
-- **list_apps**: List all applications in the AppGallery Connect account
-- **reply_to_comment**: Use get_comments to find comment IDs.
-
-Reply to a user comment on the AppGallery
 - **get_app_info**: The appId can be found via list_apps.
 
 Get detailed information for a specific application
-- **get_comments**: Get user comments and reviews for an application
 - **submit_for_review**: The app must have all required metadata and at least one valid binary uploaded.
 
 Submit an application for review and publication

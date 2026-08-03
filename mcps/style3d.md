@@ -36,9 +36,9 @@ Connect **Style3D** to your AI agent and manage your entire digital fashion pipe
 
 
 ## Available Tools (9)
-- **get_fabric**: Get details of a specific fabric
 - **get_garment**: Get details of a specific garment
 - **get_project**: Get details of a specific project
+- **get_fabric**: Get details of a specific fabric
 - **list_assets**: List assets in a project
 - **list_fabrics**: List available fabrics
 - **list_garments**: List garments in a project

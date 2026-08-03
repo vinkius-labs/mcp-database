@@ -36,6 +36,7 @@ No more manual navigation through complex forms to update a dataset description 
 
 
 ## Available Tools (14)
+- **list_depositions**: List Zenodo depositions
 - **create_deposition**: You can optionally provide metadata.
 
 Create a new Zenodo deposition
@@ -43,7 +44,6 @@ Create a new Zenodo deposition
 - **get_deposition**: Retrieve a Zenodo deposition by ID
 - **get_record**: Retrieve a published Zenodo record by ID
 - **list_deposition_files**: List files in a Zenodo deposition
-- **list_depositions**: List Zenodo depositions
 - **list_records**: Search published Zenodo records
 - **new_version_deposition**: Create a new version of a Zenodo deposition
 - **publish_deposition**: WARNING: Once published, a deposition cannot be deleted.
