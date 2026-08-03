@@ -44,6 +44,9 @@ No more manual 3D modeling or expensive artist time. Your AI acts as a dedicated
 
 
 ## Available Tools (12)
+- **convert_3d_format**: Preserves geometry, textures, materials, and rigging data during conversion. Essential for pipeline integration, platform compatibility, and format standardization. AI agents should use this when users ask "convert this GLB model to FBX", "change this 3D file to USDZ for AR", or need 3D format conversion for specific platform or software requirements.
+
+Convert 3D models between different file formats
 - **generate_hunyuan_3d**: Hunyuan excels at producing detailed geometry with accurate proportions and realistic textures from single or multiple reference images. Accepts image URLs or base64 image data. Returns 3D model files with PBR textures in formats like GLB, OBJ, or FBX. Essential for product visualization, character creation, and asset generation requiring high geometric accuracy. AI agents should use this when users need production-quality 3D models from product photos, concept art, or reference images with precise detail reproduction.
 
 Generate 3D models using Hunyuan 3D model from images
@@ -62,9 +65,6 @@ Optimize 3D meshes for performance and file size reduction
 - **generate_pbr_textures_3d**: PBR textures ensure realistic material appearance under any lighting condition in game engines and 3D renderers. Accepts reference images and returns 3D models with texture map sets. Essential for game asset creation, product visualization requiring realistic materials, and applications needing physically accurate rendering. AI agents should reference this when users need game-ready assets with full PBR materials, product visualizations with realistic surface appearance, or models with complete texture map sets.
 
 Generate 3D models with full PBR texture maps (albedo, normal, roughness, metallic, AO)
-- **generate_rigged_3d**: Supports character models, creatures, and articulated objects. The generated rigs include bone hierarchies and weight painting suitable for standard animation workflows. Accepts character reference images and returns rigged 3D files. Essential for game character creation, animated content pipelines, and applications requiring animation-ready 3D assets. AI agents should use this when users ask "create an animated-ready 3D character", "generate a rigged model from this character image", or need animation-ready 3D output.
-
-Generate 3D models with automatic skeletal rigging for animation
 - **generate_styled_3d**: Users provide a reference image and select the desired output style. Essential for stylized game assets, anime character creation, cartoon visualization, and artistic 3D content. AI agents should use this when users ask "create an anime-style 3D character from this image", "generate a cartoon 3D model", or need stylized 3D output matching specific artistic direction.
 
 Generate 3D models with specific artistic styles
@@ -77,9 +77,9 @@ Generate structured 3D models using Trellis3D with clean topology
 - **generate_tripo_3d**: Tripo3D is ideal for rapid prototyping, batch processing, and applications where generation time is important. Accepts image URLs and returns 3D models with reasonable geometry and textures. Essential for quick 3D previews, iterative design workflows, and content pipelines requiring fast turnaround. AI agents should use this when users need fast 3D generation, quick previews, or batch processing of multiple images.
 
 Generate 3D models using Tripo3D for fast generation
-- **convert_3d_format**: Preserves geometry, textures, materials, and rigging data during conversion. Essential for pipeline integration, platform compatibility, and format standardization. AI agents should use this when users ask "convert this GLB model to FBX", "change this 3D file to USDZ for AR", or need 3D format conversion for specific platform or software requirements.
+- **generate_rigged_3d**: Supports character models, creatures, and articulated objects. The generated rigs include bone hierarchies and weight painting suitable for standard animation workflows. Accepts character reference images and returns rigged 3D files. Essential for game character creation, animated content pipelines, and applications requiring animation-ready 3D assets. AI agents should use this when users ask "create an animated-ready 3D character", "generate a rigged model from this character image", or need animation-ready 3D output.
 
-Convert 3D models between different file formats
+Generate 3D models with automatic skeletal rigging for animation
 
 
 ## 💬 Prompt Examples

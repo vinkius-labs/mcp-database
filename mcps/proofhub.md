@@ -46,9 +46,9 @@ Lists all to-do lists within a ProofHub project
 Creates a new task in a ProofHub to-do list
 - **list_discussions**: Lists all discussions (topics) in a ProofHub project
 - **list_files**: Lists all files uploaded to a ProofHub project
+- **list_timesheets**: Lists all timesheet entries for a project
 - **list_people**: Lists all team members in ProofHub
 - **list_notes**: Lists all notes/notebooks in a ProofHub project
-- **list_timesheets**: Lists all timesheet entries for a project
 
 
 ## 💬 Prompt Examples

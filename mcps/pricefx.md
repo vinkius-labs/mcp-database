@@ -35,6 +35,11 @@ Forget executing long, structured JSON payloads through Postman. Just tell your 
 
 
 ## Available Tools (10)
+- **create_customer**: Ensure JSON format is robust.
+
+Provision a highly-available JSON Payload generating hard Customer bindings
+- **create_quote**: Retrieve the exact structural matching verifying CPQ Generation
+- **delete_quote**: Irreversibly vaporize explicit validations extracting rich Churn flags
 - **fetch_customers**: Identify bounded CRM records inside the Headless Pricefx Platform
 - **fetch_products**: Enumerate explicitly attached structured rules exporting active pricing Catalog
 - **fetch_quotes**: Identify precise active arrays spanning native Gateway auth
@@ -44,11 +49,6 @@ Forget executing long, structured JSON payloads through Postman. Just tell your 
 - **update_customer**: Provide bulk bounds strictly formatted.
 
 Inspect deep internal arrays mitigating specific Plan Math
-- **create_customer**: Ensure JSON format is robust.
-
-Provision a highly-available JSON Payload generating hard Customer bindings
-- **create_quote**: Retrieve the exact structural matching verifying CPQ Generation
-- **delete_quote**: Irreversibly vaporize explicit validations extracting rich Churn flags
 
 
 ## 💬 Prompt Examples

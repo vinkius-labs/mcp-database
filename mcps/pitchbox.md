@@ -34,16 +34,16 @@ Connect your **PitchBox** account to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
-- **get_pitchbox_campaign**: Get details for a specific campaign
-- **get_pitchbox_me**: Get current user profile info
-- **get_pitchbox_opportunity**: Get details for a specific opportunity
-- **get_pitchbox_project**: Get details for a specific project
 - **list_pitchbox_campaigns**: List campaigns in a project
 - **list_pitchbox_contacts**: List contacts for an opportunity
 - **list_pitchbox_emails**: List emails sent for an opportunity
 - **list_pitchbox_opportunities**: List outreach opportunities (leads) in a campaign
-- **list_pitchbox_projects**: List all PitchBox projects
 - **list_pitchbox_tasks**: List active tasks
+- **get_pitchbox_campaign**: Get details for a specific campaign
+- **get_pitchbox_me**: Get current user profile info
+- **get_pitchbox_opportunity**: Get details for a specific opportunity
+- **get_pitchbox_project**: Get details for a specific project
+- **list_pitchbox_projects**: List all PitchBox projects
 
 
 ## 💬 Prompt Examples

@@ -28,6 +28,9 @@ Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline 
 
 
 ## Available Tools (8)
+- **pd_list_activities**: Returns subject, type (call/meeting/email/task/lunch/deadline), due date and time, whether it is done, and linked deal/person/org. Filter by done status: "true" for completed, "false" for pending/upcoming. Use when the user asks about tasks to do, scheduled meetings, overdue items, or recent sales activity.
+
+List Pipedrive activities (calls, meetings, tasks, emails) with due dates, types, and completion status
 - **pd_create_activity**: Subject and type are required. Type must be: call, meeting, email, task, lunch, or deadline (use pd_activity_types to see custom types). Set due_date (YYYY-MM-DD), due_time (HH:MM), and duration (HH:MM). Link to deals, persons, or orgs. Activities appear in the Pipedrive calendar and task queue for the assigned user.
 
 Schedule a sales activity in Pipedrive — a call, meeting, email follow-up, task, lunch, or deadline linked to deals or contacts
@@ -40,9 +43,6 @@ Permanently delete a Pipedrive activity — this removes it from history and can
 - **pd_get_activity**: Returns subject, type, dates/times, duration, notes, linked deal/person/org, and completion status. Use after listing activities to drill into a specific item.
 
 Get complete details of a specific Pipedrive activity by ID including notes, duration, and linked records
-- **pd_list_activities**: Returns subject, type (call/meeting/email/task/lunch/deadline), due date and time, whether it is done, and linked deal/person/org. Filter by done status: "true" for completed, "false" for pending/upcoming. Use when the user asks about tasks to do, scheduled meetings, overdue items, or recent sales activity.
-
-List Pipedrive activities (calls, meetings, tasks, emails) with due dates, types, and completion status
 - **pd_activity_types**: Default types: call, meeting, task, deadline, email, lunch. Teams can add custom types. Use to discover available activity types before creating activities, especially in accounts with custom configurations.
 
 List all activity types configured in Pipedrive — both default types (call, meeting) and custom types defined by the team

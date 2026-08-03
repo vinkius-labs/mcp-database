@@ -40,14 +40,14 @@ Creates a new route optimization problem
 - **delete_dispatched_route**: This action is irreversible.
 
 Deletes a dispatched route
-- **geocode_address**: Converts a freeform address string into geographic coordinates
-- **get_optimization_problem**: Retrieves details for a specific route optimization problem
 - **get_route_gps_tracking**: Retrieves real-time or historical GPS tracking data for a route
 - **get_route_manifest**: Retrieves the manifest (list of stops) for a specific route
 - **insert_stop_into_route**: Inserts a new stop into an existing route
 - **list_dispatched_routes**: Lists all dispatched routes
 - **list_fleet_vehicles**: Lists all vehicles registered in the account
 - **list_optimizations**: Lists historical and active route optimization problems
+- **geocode_address**: Converts a freeform address string into geographic coordinates
+- **get_optimization_problem**: Retrieves details for a specific route optimization problem
 
 
 ## 💬 Prompt Examples
