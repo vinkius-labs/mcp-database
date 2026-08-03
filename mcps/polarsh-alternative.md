@@ -33,8 +33,9 @@ Connect your **Polar.sh** account to any AI agent to manage your open-source mon
 
 
 ## Available Tools (36)
-- **create_benefit**: Create a benefit
 - **create_checkout**: Create a checkout session
+- **revoke_subscription**: Revoke/cancel a subscription immediately
+- **create_benefit**: Create a benefit
 - **create_customer_session**: Generate a customer session token
 - **create_customer**: Create a customer
 - **create_product**: Create a product
@@ -63,7 +64,6 @@ Connect your **Polar.sh** account to any AI agent to manage your open-source mon
 List products
 - **list_subscriptions**: List subscriptions
 - **list_webhook_deliveries**: List and monitor webhook deliveries
-- **revoke_subscription**: Revoke/cancel a subscription immediately
 - **update_checkout**: Update a session
 - **update_order**: Update order (e.g., billing details)
 - **update_product_benefits**: Update benefits granted by a product

@@ -39,13 +39,13 @@ Connect to **Rev AI** to transform your audio and video files into actionable te
 - **get_sentiment_analysis_result**: Get sentiment scores for a job
 - **get_stt_job**: Get status and details of a transcription job
 - **get_topic_extraction_result**: Get extracted topics and scores for a job
+- **list_stt_jobs**: Get a list of transcription jobs from the last 30 days
+- **list_vocabularies**: List recent custom vocabularies
+- **submit_language_id_job**: Submit an audio file/URL for language identification
 - **get_transcript_summary**: Get the summary for a completed transcript job
 - **get_transcript**: Get the transcript for a completed job
 - **get_vocabulary**: Check processing status of a custom vocabulary
-- **list_stt_jobs**: Get a list of transcription jobs from the last 30 days
-- **list_vocabularies**: List recent custom vocabularies
 - **submit_alignment_job**: Submit audio and transcript for forced alignment
-- **submit_language_id_job**: Submit an audio file/URL for language identification
 - **submit_sentiment_analysis_job**: Submit a transcript for sentiment analysis
 - **submit_stt_job**: Submit a media file for asynchronous transcription
 - **submit_topic_extraction_job**: Submit a transcript for topic extraction

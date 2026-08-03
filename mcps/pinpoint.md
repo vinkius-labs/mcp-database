@@ -36,11 +36,6 @@ No more jumping between browser tabs to check candidate statuses or job requirem
 
 
 ## Available Tools (41)
-- **create_application**: Create a new application
-- **create_job_seeker**: Create a new job seeker
-- **create_job**: Create a new job
-- **create_requisition**: Create a new requisition
-- **delete_application**: Delete an application
 - **delete_job_seeker**: Delete a job seeker
 - **delete_job**: Delete a job
 - **delete_requisition**: Delete a requisition
@@ -48,10 +43,6 @@ No more jumping between browser tabs to check candidate statuses or job requirem
 - **get_application**: Get details for a specific application
 - **get_candidate**: Get details for a specific candidate
 - **get_department**: Get details for a specific department
-- **get_division**: Get details for a specific division
-- **get_interview**: Get details for a specific interview
-- **get_job_seeker**: Get details for a specific job seeker
-- **get_job**: Get details for a specific job
 - **get_location**: Get details for a specific location
 - **get_public_postings**: Does not require API key, but requires the subdomain.
 
@@ -60,7 +51,6 @@ Get public job postings for the company
 - **get_user**: Get details for a specific user
 - **list_applications**: List applications in Pinpoint
 - **list_candidates**: List candidates in Pinpoint
-- **list_custom_attributes**: List custom attributes in Pinpoint
 - **list_departments**: List departments in Pinpoint
 - **list_interviews**: List interviews in Pinpoint
 - **list_job_seekers**: List job seekers in Pinpoint
@@ -73,13 +63,23 @@ List jobs in Pinpoint
 - **list_requisitions**: List requisitions in Pinpoint
 - **list_scorecards**: List scorecards in Pinpoint
 - **list_users**: List users in Pinpoint
-- **update_application**: Update an existing application
 - **update_candidate**: Update an existing candidate
 - **update_interview**: Update an existing interview
 - **update_job_seeker**: Update an existing job seeker
 - **update_job**: Update an existing job
 - **update_requisition**: Update an existing requisition
 - **update_user**: Update an existing user
+- **create_application**: Create a new application
+- **get_division**: Get details for a specific division
+- **list_custom_attributes**: List custom attributes in Pinpoint
+- **update_application**: Update an existing application
+- **create_job_seeker**: Create a new job seeker
+- **create_job**: Create a new job
+- **create_requisition**: Create a new requisition
+- **delete_application**: Delete an application
+- **get_interview**: Get details for a specific interview
+- **get_job_seeker**: Get details for a specific job seeker
+- **get_job**: Get details for a specific job
 - **list_divisions**: List divisions in Pinpoint
 
 

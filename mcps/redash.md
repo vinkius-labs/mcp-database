@@ -34,6 +34,8 @@ Connect your **Redash** instance to any AI agent to interact with your data thro
 
 
 ## Available Tools (17)
+- **list_queries**: List Redash queries
+- **test_data_source**: Test connection for a data source
 - **archive_dashboard**: Archive the specified dashboard
 - **archive_query**: Archive the specified query
 - **create_dashboard**: Create a new dashboard object
@@ -49,8 +51,6 @@ Initiates a new query execution or returns a cached result
 Returns the status of a query task (job)
 - **get_query_result**: Returns a query result by its result ID
 - **get_query**: Get an individual query object
-- **list_queries**: List Redash queries
-- **test_data_source**: Test connection for a data source
 - **update_dashboard**: Edit an existing dashboard object
 - **update_data_source**: Configure a data source (e.g., SSH tunnel)
 - **update_query**: Edit an existing query object

@@ -35,13 +35,14 @@ No more manual navigation through complex CMS hierarchies. Your AI acts as a con
 
 
 ## Available Tools (17)
-- **update_user**: Update a user
-- **delete_user**: Delete a user
-- **create_content**: Create new content in Plone
+- **update_content**: Supports partial updates.
+
+Update existing content in Plone
 - **create_group**: Create a new group
 - **create_user**: Create a new user
 - **delete_content**: Delete content from Plone
 - **delete_group**: Delete a group
+- **delete_user**: Delete a user
 - **get_content**: Get a specific content object by path
 - **get_group**: Get details for a specific group
 - **get_user**: Get details for a specific user
@@ -52,10 +53,9 @@ No more manual navigation through complex CMS hierarchies. Your AI acts as a con
 List users in Plone
 - **search_content**: Search for content in Plone
 - **transition_workflow**: Trigger a workflow transition on content
-- **update_content**: Supports partial updates.
-
-Update existing content in Plone
 - **update_group**: Update a group
+- **update_user**: Update a user
+- **create_content**: Create new content in Plone
 
 
 ## 💬 Prompt Examples

@@ -34,7 +34,13 @@ Connect your **Permify** instance to any AI agent to orchestrate complex authori
 
 
 ## Available Tools (21)
-- **bulk_check_permissions**: Check multiple permissions in a single request
+- **list_tenants**: List all Permify tenants
+- **lookup_entity**: Find which resources a user can perform an action on
+- **lookup_subject**: Find which subjects can do an action on an entity
+- **read_attributes**: Query stored attributes
+- **read_bundle**: Retrieve details of a specific bundle
+- **read_relationships**: Query stored relational tuples
+- **read_schema**: Inspect a specific schema version
 - **check_permission**: Perform a resource-based authorization check
 - **create_tenant**: Create a new Permify tenant
 - **delete_bundle**: Delete a predefined bundle
@@ -42,19 +48,13 @@ Connect your **Permify** instance to any AI agent to orchestrate complex authori
 - **delete_tenant**: Delete a Permify tenant
 - **expand_permissions**: Retrieve all subjects that have a relationship with an entity
 - **list_schemas**: List all schema versions for a tenant
-- **list_tenants**: List all Permify tenants
-- **lookup_entity**: Find which resources a user can perform an action on
-- **lookup_subject**: Find which subjects can do an action on an entity
-- **partial_write_schema**: Partially update an authorization model
-- **read_attributes**: Query stored attributes
-- **read_bundle**: Retrieve details of a specific bundle
-- **read_relationships**: Query stored relational tuples
-- **read_schema**: Inspect a specific schema version
 - **run_bundle**: Execute a predefined bundle
 - **subject_permission**: List which permissions a user can perform on an entity
 - **write_bundle**: Define or update data bundles
 - **write_data**: Create relation tuples and attribute data
 - **write_schema**: Write an authorization model schema
+- **bulk_check_permissions**: Check multiple permissions in a single request
+- **partial_write_schema**: Partially update an authorization model
 
 
 ## 💬 Prompt Examples

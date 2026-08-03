@@ -36,6 +36,7 @@ Connect your **Rentvine** account to any AI agent and take full control of your 
 ## Available Tools (20)
 - **update_lease**: Update lease terms or status
 - **update_property**: Update property details
+- **list_tenants**: List all tenants
 - **create_property**: Create a new property
 - **create_tenant**: Create a new tenant record
 - **create_unit**: Add a unit to a property
@@ -50,7 +51,6 @@ Connect your **Rentvine** account to any AI agent and take full control of your 
 - **list_leases**: List all leases
 - **list_payments**: List payments received
 - **list_properties**: List all properties
-- **list_tenants**: List all tenants
 - **list_units**: List all units
 - **list_work_orders**: List all work orders
 - **create_lease**: Create a new lease

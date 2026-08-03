@@ -35,7 +35,7 @@ Connect your **Rewardful** account to any AI agent to automate your affiliate ma
 
 ## Available Tools (24)
 - **get_affiliate**: Retrieve a specific Rewardful affiliate
-- **update_affiliate_link**: Update an affiliate link token
+- **list_payouts**: List all payouts
 - **create_affiliate**: Create a new Rewardful affiliate
 - **create_campaign**: Create a new Rewardful campaign
 - **delete_commission**: Delete a commission
@@ -50,9 +50,9 @@ Connect your **Rewardful** account to any AI agent to automate your affiliate ma
 - **list_affiliates**: List Rewardful affiliates
 - **list_campaigns**: List all Rewardful campaigns
 - **list_commissions**: List all commissions
-- **list_payouts**: List all payouts
 - **list_referrals**: List Rewardful referrals
 - **pay_payout**: Mark a payout as paid
+- **update_affiliate_link**: Update an affiliate link token
 - **update_affiliate**: Update an existing Rewardful affiliate
 - **update_campaign**: Update an existing Rewardful campaign
 - **update_commission**: Update a commission

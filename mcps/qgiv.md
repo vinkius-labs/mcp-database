@@ -34,6 +34,16 @@ Connect your **Qgiv** account to any AI agent to streamline your nonprofit fundr
 
 ## Available Tools (58)
 - **get_refunds_by_dates**: Get refunds by date range
+- **list_dedication_fields**: List custom dedication fields
+- **list_dedication_types**: List dedication types (e.g., In Honor Of)
+- **list_events**: List custom events and ticket packages
+- **list_recurring_profiles_by_status**: List recurring donation profiles by status
+- **update_kiosk**: Update a specific kiosk
+- **update_pledge**: Update a specific pledge
+- **get_widget**: Get a specific widget by ID
+- **list_custom_amounts**: List custom suggested donation amounts
+- **list_custom_fields**: List custom fields on donation forms
+- **list_pledges**: List pledges
 - **get_registration**: Get a specific Peer-to-Peer registration by ID
 - **get_registrations_by_dates**: Get Peer-to-Peer registrations by date range
 - **get_report_mapping**: Get a specific report mapping by ID
@@ -41,15 +51,7 @@ Connect your **Qgiv** account to any AI agent to streamline your nonprofit fundr
 - **get_statement**: Get a specific statement by ID
 - **get_transactions_after**: Get transactions after a specific Transaction ID
 - **get_transactions_by_dates**: Get transactions by date range
-- **get_widget**: Get a specific widget by ID
-- **list_custom_amounts**: List custom suggested donation amounts
-- **list_custom_fields**: List custom fields on donation forms
-- **list_dedication_fields**: List custom dedication fields
-- **list_dedication_types**: List dedication types (e.g., In Honor Of)
-- **list_events**: List custom events and ticket packages
 - **list_kiosks**: List kiosk settings and navigation menus
-- **list_pledges**: List pledges
-- **list_recurring_profiles_by_status**: List recurring donation profiles by status
 - **list_recurring_profiles**: List all recurring donation profiles
 - **list_report_mappings**: List report mappings for third-party integrations
 - **list_restrictions**: List fund restrictions (designations)
@@ -62,8 +64,6 @@ Connect your **Qgiv** account to any AI agent to streamline your nonprofit fundr
 - **update_dedication_type**: Update a dedication type
 - **update_event**: Update a specific event
 - **update_form_wording**: Update custom wording on organization forms
-- **update_kiosk**: Update a specific kiosk
-- **update_pledge**: Update a specific pledge
 - **update_report_mapping**: Update a specific report mapping
 - **update_restriction**: Update a specific restriction
 - **create_custom_amount**: Create custom suggested donation amounts

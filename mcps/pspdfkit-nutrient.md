@@ -36,14 +36,14 @@ Connect **PSPDFKit (Nutrient)** to your AI agent and handle complex document wor
 
 ## Available Tools (7)
 - **autotag_pdf**: Auto-tag a PDF for accessibility (PDF/UA)
+- **ocr_document**: Perform OCR on an image or PDF
+- **upload_viewer_document**: Upload a document to the Viewer API
 - **build_document**: Advanced document processing (redact, watermark, etc)
 - **convert_to_pdf**: ) to PDF.
 
 Convert Office or Image files to PDF
 - **create_viewer_session**: Generate a session token for the Viewer API
 - **generate_pdf**: Generate a PDF from HTML content
-- **ocr_document**: Perform OCR on an image or PDF
-- **upload_viewer_document**: Upload a document to the Viewer API
 
 
 ## 💬 Prompt Examples
