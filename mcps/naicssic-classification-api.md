@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire market research and industry au
 
 
 ## Available Tools (4)
+- **get_classification_details**: Get full metadata and description for a specific NAICS or SIC code
+- **search_naics_codes**: Search for NAICS (North American Industry Classification System) codes
 - **check_api_status**: dev Classification API.
 
 Check if the NAICS/SIC service is operational
-- **get_classification_details**: Get full metadata and description for a specific NAICS or SIC code
-- **search_naics_codes**: Search for NAICS (North American Industry Classification System) codes
 - **search_sic_codes**: Search for SIC (Standard Industrial Classification) codes
 
 

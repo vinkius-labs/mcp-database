@@ -52,14 +52,14 @@ Get a trade-in value estimate for your current car
 
 Find Kavak showroom locations
 - **list_makes**: List all available car manufacturers
+- **search_vehicles**: All vehicles listed on Kavak come with a 240-point mechanical inspection and Kavak warranty.
+
+Search available used cars in the Kavak inventory
 - **list_models**: List models available for a specific make
 - **list_reservations**: List all your active reservations
 - **schedule_test_drive**: Kavak also offers home test drives in select cities where the vehicle is delivered to the buyer's address.
 
 Schedule a test drive for a vehicle
-- **search_vehicles**: All vehicles listed on Kavak come with a 240-point mechanical inspection and Kavak warranty.
-
-Search available used cars in the Kavak inventory
 
 
 ## 💬 Prompt Examples

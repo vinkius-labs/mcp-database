@@ -41,9 +41,6 @@ Connect to **MobyGames** and explore the world's largest video game database thr
 - **get_attributes**: g. "Educational", "Free-to-play", "Open world", "Multiplayer"). Returns attribute names and IDs.
 
 Get game attributes/special attributes
-- **get_companies**: Returns company names, game counts and profile info.
-
-Search for game publishers and companies by name
 - **get_developers**: Returns developer names, game counts and profile info.
 
 Search for game developers by name
@@ -59,15 +56,18 @@ Get details for a specific game group (series/franchise)
 - **get_game_groups**: Returns group names, game counts and descriptions.
 
 Get list of game groups (series/franchises)
-- **get_genres**: Returns genre names and IDs for filtering game searches.
-
-Get list of all game genres
 - **get_platforms**: Returns platform names and IDs for filtering game searches.
 
 Get list of all gaming platforms
 - **get_reviews**: Optionally filter by game ID. Returns review scores, reviewer names, publications and review excerpts.
 
 Get game reviews from the MobyGames database
+- **get_companies**: Returns company names, game counts and profile info.
+
+Search for game publishers and companies by name
+- **get_genres**: Returns genre names and IDs for filtering game searches.
+
+Get list of all game genres
 - **search_games**: Supports filtering by title, platform, genre and developer. Returns game titles, release years, platforms, genres, MobyScores and developer/publisher info.
 
 Search for video games in the MobyGames database

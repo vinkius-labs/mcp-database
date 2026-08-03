@@ -34,6 +34,7 @@ Connect your **Zakeke** account to any AI agent to streamline your visual produc
 
 
 ## Available Tools (9)
+- **list_orders**: List all customized product orders
 - **get_cart_info**: Get cart information for a 3D configuration
 - **list_compositions**: List all 3D product configurations
 - **get_design_print_files**: Get ZIP file of print-ready outputs for a design
@@ -41,7 +42,6 @@ Connect your **Zakeke** account to any AI agent to streamline your visual produc
 - **get_composition_details**: Get details for a specific 3D configuration
 - **get_design_details**: Get details for a specific design
 - **get_order_details**: Get details for a specific order
-- **list_orders**: List all customized product orders
 - **list_products**: List all products available for customization
 
 

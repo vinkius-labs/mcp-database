@@ -36,16 +36,16 @@ Equip your AI agent with the most comprehensive art intelligence available via *
 
 
 ## Available Tools (8)
+- **list_artworks**: List artworks
+- **list_shows**: List art shows
 - **get_artist_details**: Get artist details
 - **get_artwork_details**: Get artwork details
 - **get_gene_details**: Get gene details
-- **list_artworks**: List artworks
+- **search_artsy**: Search Artsy for anything
 - **list_fairs**: List art fairs
 - **list_genes**: g., Abstract, Cubism).
 
 List art genes
-- **list_shows**: List art shows
-- **search_artsy**: Search Artsy for anything
 
 
 ## 💬 Prompt Examples

@@ -33,6 +33,8 @@ Equip your AI agent with the most transparent and real-time chess intelligence v
 
 
 ## Available Tools (10)
+- **get_users_online_status**: Check if multiple users are online
+- **list_live_streamers**: List chess streamers currently live
 - **get_leaderboards**: Get top player rankings for all variants
 - **get_daily_puzzle**: Get the Lichess puzzle of the day
 - **get_player_data**: Get public data for a Lichess player
@@ -42,9 +44,7 @@ See who is playing live on Lichess TV
 - **get_team_members**: List members of a Lichess team
 - **get_user_activity**: Get recent activity log for a player
 - **get_user_games**: Get match history for a player
-- **get_users_online_status**: Check if multiple users are online
 - **list_broadcasts**: List ongoing official tournament broadcasts
-- **list_live_streamers**: List chess streamers currently live
 
 
 ## 💬 Prompt Examples

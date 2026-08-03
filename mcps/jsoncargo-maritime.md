@@ -37,7 +37,7 @@ Empower your AI agent to orchestrate your entire maritime research and vessel au
 ## Available Tools (4)
 - **check_api_status**: Check if the JSONCargo service is operational
 - **get_current_voyage_details**: Get full metadata for the current voyage of a specific vessel ID
-- **list_maritime_ports**: List global ports registered in the JSONCargo database
+- **list_maritime_ports**: List globalThis ports registered in the JSONCargo database
 - **search_maritime_vessels**: Search for maritime vessels by name or IMO number
 
 

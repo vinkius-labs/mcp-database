@@ -33,7 +33,6 @@ Transform your AI agent into a professional Cartola FC strategist with this dedi
 
 
 ## Available Tools (12)
-- **list_top_average_players**: List players with the highest season averages
 - **list_cheap_players**: List players with low prices (Bargains)
 - **list_players_by_club**: List all players from a specific club
 - **list_clubs**: List all club names and IDs
@@ -45,6 +44,7 @@ Transform your AI agent into a professional Cartola FC strategist with this dedi
 - **get_market_status**: Check if the Cartola FC market is open
 - **get_user_team_by_slug**: Retrieve details for a specific user team by slug
 - **list_top_scaled_players**: List the most selected players for the current round
+- **list_top_average_players**: List players with the highest season averages
 
 
 ## 💬 Prompt Examples

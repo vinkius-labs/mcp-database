@@ -36,11 +36,11 @@ Empower your AI agent to orchestrate your entire art history research and collec
 
 ## Available Tools (6)
 - **check_api_status**: Check if the Harvard Art Museums API is operational
-- **get_object_details**: Get full details for a specific art object by ID
-- **list_museum_galleries**: List all galleries within the Harvard Art Museums
 - **search_exhibitions**: Search for exhibitions hosted by the Harvard Art Museums
 - **search_museum_objects**: Search for art objects in the Harvard Art Museums collection
 - **search_museum_people**: Search for artists and people related to the museum collection
+- **get_object_details**: Get full details for a specific art object by ID
+- **list_museum_galleries**: List all galleries within the Harvard Art Museums
 
 
 ## 💬 Prompt Examples

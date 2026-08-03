@@ -36,9 +36,6 @@ No more navigating the Marvel website or wikis to find character bios or comic d
 
 
 ## Available Tools (10)
-- **get_character**: Returns the character name, description, thumbnail image URL, comics appearances, series, events and related creators. Use list_characters to find character IDs by name first.
-
-Get a Marvel character by ID
 - **get_comic**: Returns the comic title, description, issue number, format, publication date, prices, creators and characters. Use list_comics to find comic IDs first.
 
 Get a Marvel comic by ID
@@ -57,15 +54,18 @@ Search Marvel characters by name
 - **list_comics**: Returns comic titles, issue numbers, formats, publication dates and cover images. Optionally filter by a specific character using their ID. Set limit (max 100) and offset for pagination.
 
 Search Marvel comics by title or character
-- **list_creators**: ) by first or last name prefix. Returns creator IDs, full names, thumbnails and their primary roles. Useful for discovering who worked on specific comics. Set limit (max 100) for pagination.
-
-Search Marvel creators by name
 - **list_events**: Returns event titles, descriptions, start/end dates and number of involved comics/series. Useful for discovering major story arcs. Set limit (max 100) for pagination.
 
 Search Marvel events by name or character
 - **list_series**: Returns series titles, start/end years, issue counts and thumbnails. Useful for finding ongoing series and limited runs. Set limit (max 100) for pagination.
 
 Search Marvel series by title or character
+- **get_character**: Returns the character name, description, thumbnail image URL, comics appearances, series, events and related creators. Use list_characters to find character IDs by name first.
+
+Get a Marvel character by ID
+- **list_creators**: ) by first or last name prefix. Returns creator IDs, full names, thumbnails and their primary roles. Useful for discovering who worked on specific comics. Set limit (max 100) for pagination.
+
+Search Marvel creators by name
 
 
 ## 💬 Prompt Examples

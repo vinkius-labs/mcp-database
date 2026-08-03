@@ -33,18 +33,7 @@ Equip your AI agent with professional-grade strategic intelligence for **Clash o
 
 
 ## Available Tools (14)
-- **get_cwl_group**: Get Clan War League group status
-- **get_capital_raid_seasons**: Get Clan Capital raid history
-- **get_clan_details**: Use the clan tag with #.
-
-Get full profile for a Clash of Clans clan
-- **get_gold_pass_season**: Get current Gold Pass season info
-- **get_clan_members**: List all members of a clan with roles and stats
-- **get_current_war**: Get live status of an ongoing clan war
 - **get_player_profile**: Get detailed stats for a Clash of Clans player
-- **get_location_rankings**: Use locationId 32000006 for International. Type: clans or players.
-
-Get top players or clans for a location
 - **get_clan_war_log**: Get war history for a clan
 - **list_official_labels**: Type: clans or players.
 
@@ -53,6 +42,17 @@ List official clan or player labels/tags
 - **list_locations**: List all available location/country IDs
 - **list_war_leagues**: List all CWL league tiers
 - **search_clans**: Search for clans by name
+- **get_cwl_group**: Get Clan War League group status
+- **get_capital_raid_seasons**: Get Clan Capital raid history
+- **get_clan_details**: Use the clan tag with #.
+
+Get full profile for a Clash of Clans clan
+- **get_current_war**: Get live status of an ongoing clan war
+- **get_gold_pass_season**: Get current Gold Pass season info
+- **get_location_rankings**: Use locationId 32000006 for International. Type: clans or players.
+
+Get top players or clans for a location
+- **get_clan_members**: List all members of a clan with roles and stats
 
 
 ## 💬 Prompt Examples

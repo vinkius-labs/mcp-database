@@ -43,9 +43,6 @@ Get details for a specific ban
 - **get_game**: Returns details such as the game name, the number of tracked servers and players, and game-specific metadata. Use this to get an overview of a game's ecosystem on BattleMetrics.
 
 Get details about a specific tracked game
-- **get_player**: Returns the player name, associated identifiers (Steam, EOS, etc.), time played statistics, linked servers, and recent activity. Use this after identifying a player ID from list_players or session history.
-
-Get detailed profile for a specific player
 - **get_server**: Returns the server name, IP address, port, current player count, max players, rank, game details, map, status, and detailed metadata. Use this when the user already has a server ID and wants deep information.
 
 Get detailed information about a specific game server
@@ -73,6 +70,9 @@ Search game servers with advanced filters
 - **get_server_player_count_history**: Useful for analyzing population trends, peak hours, and server activity patterns over a given time range. If start and stop are omitted, the API returns recent history. Use ISO 8601 timestamps for the date range.
 
 Get player count history for a game server over time
+- **get_player**: Returns the player name, associated identifiers (Steam, EOS, etc.), time played statistics, linked servers, and recent activity. Use this after identifying a player ID from list_players or session history.
+
+Get detailed profile for a specific player
 
 
 ## 💬 Prompt Examples

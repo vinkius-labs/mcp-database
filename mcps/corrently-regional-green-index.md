@@ -34,10 +34,10 @@ Equip your AI agent with hyper-local energy intelligence through the **Corrently
 
 
 ## Available Tools (2)
+- **get_energy_market_data**: Get latest energy market prices
 - **get_regional_green_index**: Returns a forecast of when the grid is cleanest.
 
 Get green electricity index for a ZIP code
-- **get_energy_market_data**: Get latest energy market prices
 
 
 ## 💬 Prompt Examples

@@ -33,17 +33,17 @@ Never miss a free game again with **GamerPower**. This server connects your AI a
 
 
 ## Available Tools (11)
-- **list_active_giveaways**: List all currently active gaming giveaways
-- **list_beta_giveaways**: List giveaways for beta keys and early access
-- **list_console_giveaways**: List giveaways for PlayStation, Xbox, and Switch
 - **get_giveaway_details**: Get full instructions and metadata for a specific giveaway ID
 - **list_epic_giveaways**: List active giveaways for Epic Games Store
 - **list_latest_giveaways**: List the most recently released giveaways
 - **list_loot_giveaways**: List giveaways for DLC, skins, and in-game loot
 - **list_mobile_giveaways**: List giveaways for Android and iOS
 - **list_popular_giveaways**: List the most popular giveaways based on community claims
-- **list_steam_giveaways**: List active giveaways for Steam keys
 - **list_high_value_giveaways**: List giveaways with the highest monetary value
+- **list_steam_giveaways**: List active giveaways for Steam keys
+- **list_active_giveaways**: List all currently active gaming giveaways
+- **list_beta_giveaways**: List giveaways for beta keys and early access
+- **list_console_giveaways**: List giveaways for PlayStation, Xbox, and Switch
 
 
 ## 💬 Prompt Examples
