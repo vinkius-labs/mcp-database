@@ -15,8 +15,8 @@ The iCalendar RRULE Iterator is a precision engine designed to expand complex re
 
 ## Available Tools (3)
 - **audit_rule_syntax**: Audits the syntax of an RRULE
-- **calculate_event_dates**: Calculates event dates based on an RRULE
 - **decompose_rrule**: Decomposes an RRULE into its constituent parts
+- **calculate_event_dates**: Calculates event dates based on an RRULE
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ The Exact Decimal Currency Calculator MCP server provides a deterministic engine
 
 
 ## Available Tools (4)
-- **add_currency**: Adds two currency amounts without precision loss
 - **divide_currency**: Divides one currency amount by another
+- **add_currency**: Adds two currency amounts without precision loss
 - **multiply_currency**: Multiplies two currency amounts while managing scale shifts
 - **subtract_currency**: Subtracts one currency amount from another without precision loss
 

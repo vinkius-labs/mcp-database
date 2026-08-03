@@ -14,9 +14,9 @@ The React Server Action Route Mapper bridges the gap between your Next.js applic
 
 
 ## Available Tools (3)
+- **validate_component_syntax**: Validates the structural syntax of a JSX string
 - **map_server_actions**: Maps server actions found in a JSX string
 - **preview_route_hash**: Previews a route hash for a given input string
-- **validate_component_syntax**: Validates the structural syntax of a JSX string
 
 
 ## 💬 Prompt Examples

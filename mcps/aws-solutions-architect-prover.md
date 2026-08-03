@@ -75,26 +75,26 @@ Structured reflection tool that forces execution of the 5-Step AWS Well-Architec
 Here are some examples of how you can interact with the **AWS Solutions Architect Prover** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "We are building our new internal reporting tool on AWS. High performance, scalable, cloud-native. Stack: EKS for containers, MSK for events, Kinesis Data Streams for analytics, Aurora Global Database across us-east-1 and eu-west-1, Lambda for glue code because serverless is cheap. Security: IAM policies with `Action: 's3:*', Resource: '*'` for simplicity, we will lock it down later."
+> "New AWS reporting tool. Scalable, cloud-native. Stack: EKS + MSK + Kinesis + Aurora Global + Lambda. IAM: `s3:*` on `*`, lock down later."
 
 **🤖 AI Agent:**
-> REQUIREMENT_HALLUCINATION + SERVICE_SPRAWL + SECURITY_AFTERTHOUGHT — Three gates failed in one paragraph. Gate 1: 'high performance, scalable, cloud-native' are marketing words. Give me RPS, p99 latency, availability SLO, RTO, RPO, and the actual user count. For an internal reporting tool this is almost certainly 100 RPS peak and 99.9% availability — which does NOT justify multi-region. Gate 3: EKS + MSK + Kinesis + Aurora Global + Lambda is five services doing overlapping jobs. Fargate + a single SQS queue + Aurora single-region would ship in two weeks and cost 60% less. Gate 5: `Action: 's3:*', Resource: '*'` is not simplicity — it is a breach waiting to happen. Scope to specific bucket ARNs. Use IAM roles, not access keys. Delete 'we will lock it down later' from the vocabulary. Security is Day 0.
+> Verdict: REQUIREMENT_HALLUCINATION + SERVICE_SPRAWL + SECURITY_AFTERTHOUGHT. 'Scalable' is not a requirement — give me RPS, p99, SLO. Aurora Global for internal reporting is theater; multi-AZ meets 99.9%. Collapse to Fargate + SQS + Aurora single-region: ships in 2 weeks, ~60% cheaper. `s3:*` on `*` is the #1 breach root cause — scope to bucket ARN, use IAM roles, GuardDuty on Day 0.
 
 ---
 
 **👤 You:**
-> "Payment reconciliation service. Requirements: 250 RPS peak, p99 < 400ms, 99.95% availability, RTO 30 min, RPO 5 min, PCI-DSS scoped. Blast radius: multi-AZ within us-east-1 (three AZs), account-level isolation (payment-prod AWS account, no other workloads), RDS Aurora with cross-region read replica in us-west-2 for RPO 5min (async, warm standby, not active-active). Rejected multi-region active-active because 99.95% is met by multi-AZ and PCI scope grows with regions. Services: ECS Fargate (rejected EKS: no k8s-specific need, adds control plane cost and ops burden), Aurora PostgreSQL Serverless v2 (rejected DynamoDB: relational reconciliation needs joins), SQS FIFO (rejected Kinesis: no need for replay > 24h, no need for consumer parallelism > shards). TCO monthly: Fargate 4 vCPU x 4 tasks = $180, Aurora Serverless v2 avg 2 ACU = $195, SQS = $5, ALB = $22, VPC endpoints (S3, KMS, Secrets Manager) 3 x $22 = $66, CloudWatch = $30, cross-AZ replication ~50GB/day x $0.01 = $15, egress ~2GB/day x $0.09 = $5.4, AWS Business Support = $100 minimum, total ~$620/mo. Security: IAM roles for tasks, no access keys, KMS CMK per data domain with annual rotation, S3 Block Public Access on all buckets, GuardDuty enabled Day 0, AWS Config with PCI-DSS conformance pack, CloudTrail organization trail, Security Hub enabled, no `Action: '*'` in any policy, Secrets Manager for credentials with 30-day rotation."
+> "Payment reconciliation. 250 RPS, p99 < 400ms, 99.95%, RTO 30min, RPO 5min, PCI-DSS. Multi-AZ + async Aurora cross-region replica. Fargate (over EKS), Aurora Serverless v2 (over DynamoDB), SQS FIFO (over Kinesis). TCO $620/mo itemized. IAM roles, KMS CMK, GuardDuty/Config Day 0, zero wildcards."
 
 **🤖 AI Agent:**
-> WELL_ARCHITECTED — All five gates passed. Gate 1: SLIs and SLOs quantified (250 RPS, p99 < 400ms, 99.95%, RTO 30min, RPO 5min) with PCI-DSS scope. Gate 2: blast radius mapped at AZ, account, and region levels — multi-AZ earns the 99.95% SLO and cross-region async replica earns RPO 5min without inflating PCI scope. Gate 3: single choice per role (Fargate over EKS, Aurora Serverless v2 over DynamoDB, SQS FIFO over Kinesis) with rejected alternatives named. Gate 4: itemized $620/mo including VPC endpoints, cross-AZ, egress, and support — no hidden line items. Gate 5: IAM roles not keys, scoped policies with no wildcards, KMS CMK with rotation, Block Public Access, GuardDuty/Config/CloudTrail/Security Hub Day 0. Ship it.
+> Verdict: WELL_ARCHITECTED. All five gates pass. Requirements quantified, blast radius earns the SLO without doubling PCI scope, one primitive per role with rejected alternatives named, TCO defensible to the CFO, security is Day 0. Ship it.
 
 ---
 
 **👤 You:**
-> "We will use Lambda + API Gateway + DynamoDB for our new API. It handles 40 million requests per month, sustained load. Serverless is cheap so we do not need to calculate TCO in detail."
+> "Lambda + API Gateway + DynamoDB. 40M requests/month sustained. Serverless is cheap, skipping TCO."
 
 **🤖 AI Agent:**
-> COST_HALLUCINATION — 'Serverless is cheap' is a slogan, not an architectural argument. At 40M requests/month sustained, here is the real invoice: API Gateway REST at $3.50/million = $140/mo, Lambda 512MB average 200ms = ~$8/mo compute (cheap here), DynamoDB on-demand at ~$1.25 per million writes and $0.25 per million reads for a 4:1 read/write ratio = $50/mo minimum plus storage, plus VPC endpoints if Lambda calls other services ($22/mo per endpoint per AZ x 3 AZs x 2 endpoints = $132/mo), plus NAT Gateway if any Lambda leaves the VPC to the internet ($32/mo + $0.045/GB). Realistic total: $380-$500/mo minimum. Compare: two Fargate tasks (1 vCPU, 2GB) behind an ALB with the same DynamoDB = ~$120/mo. At sustained load, 'serverless is cheap' inverts. Enumerate every line item before you sign off.
+> Verdict: COST_HALLUCINATION. At 40M req/mo sustained: API Gateway $140 + DynamoDB $50 + VPC endpoints $132 + NAT $32 + logs $30 = ~$400+/mo. Two Fargate tasks + same DynamoDB = ~$120/mo. Under flat 24/7 load, serverless loses. Enumerate every line item before signing.
 
 
 ## ❓ FAQ

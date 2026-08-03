@@ -15,10 +15,10 @@ The LWW CRDT State Resolver provides a deterministic engine to resolve state con
 
 ## Available Tools (3)
 - **calculate_tiebreak_frequency**: Calculates frequency of timestamp tie-breaks in a list
-- **validate_entry_format**: Validates the format of an LWW entry
 - **resolve_lww_conflict**: Returns the winning entry.
 
 Resolves conflict between two LWW entries
+- **validate_entry_format**: Validates the format of an LWW entry
 
 
 ## 💬 Prompt Examples

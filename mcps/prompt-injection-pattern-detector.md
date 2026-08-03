@@ -10,7 +10,7 @@
 Identify and score malicious instruction overrides and system metadata extraction attempts in user text.
 
 ## Description
-The Prompt Injection Pattern Detector is a security utility designed to identify and score malicious instruction overrides and system metadata extraction attempts within user-provided text. It uses deterministic regex matching to scan for common injection patterns like 'ignore previous instructions' or 'you are now'. By using tools like `find_injection_patterns` and `detect_system_leakleakage_attempts`, AI agents can proactively assess the security risk of incoming prompts, calculating an Injection Risk Score between 0.0 and 1.0 to prevent unauthorized instruction overrides.
+The Prompt Injection Pattern Detector is a security utility designed to identify and score malicious instruction overrides and system metadata extraction attempts within user-provided text. It uses deterministic regex matching to scan for common injection patterns like 'ignore previous instructions' or 'you are now'. By using tools like `find_injection_patterns` and `detect_system_leak<0xC2><0xA0>leakage_attempts`, AI agents can proactively assess the security risk of incoming prompts, calculating an Injection Risk Score between 0.0 and 1.0 to prevent unauthorized instruction overrides.
 
 
 ## Available Tools (3)

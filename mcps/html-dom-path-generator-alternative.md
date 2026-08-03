@@ -1,4 +1,4 @@
-# HTML DOM Path Generator Alternative MCP Server
+# HTML DOM Path Generator MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/html-dom-path-generator-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -14,14 +14,14 @@ The HTML DOM Path Generator is a specialized MCP server designed to solve the pr
 
 
 ## Available Tools (3)
-- **generate_css_selector**: Generates a CSS selector for an element with a specific ID within an HTML snippet
 - **get_selector_complexity**: Calculates a complexity score for a CSS selector
 - **validate_selector_integrity**: Validates if a CSS selector correctly resolves to an element in the provided HTML
+- **generate_css_selector**: Generates a CSS selector for an element with a specific ID within an HTML snippet
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **HTML DOM Path Generator Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **HTML DOM Path Generator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "Generate a CSS selector for the element with ID 'submit-btn' in this HTML: '<div class="container"><button id="submit-btn" class="primary">Click Me</button></div>'"
@@ -72,7 +72,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **HTML DOM Path Generator Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **HTML DOM Path Generator** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `html-dom-path-generator-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **HTML DOM Path Generator Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **HTML DOM Path Generator** tools.
 
 **Configuration:**
 ```json

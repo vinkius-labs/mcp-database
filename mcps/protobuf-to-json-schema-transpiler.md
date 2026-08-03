@@ -14,11 +14,11 @@ The Protobuf to JSON Schema Transpiler bridges the gap between gRPC/Protobuf sch
 
 
 ## Available Tools (3)
-- **scan_for_complex_elements**: Identifies the presence of advanced Protobuf features
 - **summarize_message_definitions**: Provides a high-level summary of all messages found within a schema
 - **transpile_proto_to_json_schema**: proto definitions and maps them to standard JSON Schema types.
 
 Converts a Protobuf schema string into a JSON Schema object
+- **scan_for_complex_elements**: Identifies the presence of advanced Protobuf features
 
 
 ## 💬 Prompt Examples

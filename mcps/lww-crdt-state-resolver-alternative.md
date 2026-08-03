@@ -1,4 +1,4 @@
-# LWW CRDT State Resolver Alternative MCP Server
+# LWW CRDT State Resolver MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lww-crdt-state-resolver-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -15,15 +15,15 @@ The LWW CRDT State Resolver provides a deterministic engine to resolve state con
 
 ## Available Tools (3)
 - **calculate_tiebreak_frequency**: Calculates frequency of timestamp tie-breaks in a list
-- **validate_entry_format**: Validates the format of an LWW entry
 - **resolve_lww_conflict**: Returns the winning entry.
 
 Resolves conflict between two LWW entries
+- **validate_entry_format**: Validates the format of an LWW entry
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **LWW CRDT State Resolver Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **LWW CRDT State Resolver** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "Resolve a conflict between entry A (value: 'v1', timestamp: 100, nodeId: 'node-b') and entry B (value: 'v2', timestamp: 100, nodeId: 'node-a')."
@@ -74,7 +74,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **LWW CRDT State Resolver Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **LWW CRDT State Resolver** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -82,7 +82,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `lww-crdt-state-resolver-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **LWW CRDT State Resolver Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **LWW CRDT State Resolver** tools.
 
 **Configuration:**
 ```json

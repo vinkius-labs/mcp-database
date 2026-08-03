@@ -14,9 +14,9 @@ The Concurrent File Locking Simulator provides a mechanism for managing advisory
 
 
 ## Available Tools (3)
+- **release_lock**: Allows an agent to voluntarily relinquish their held lock
 - **acquire_lock**: Attempts to claim exclusive ownership of a file for a specific agent
 - **check_file_lock**: Provides visibility into the current locking state of a specific file
-- **release_lock**: Allows an agent to voluntarily relinquish their held lock
 
 
 ## 💬 Prompt Examples

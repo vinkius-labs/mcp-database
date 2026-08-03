@@ -14,9 +14,9 @@ The HTML DOM Path Generator is a specialized MCP server designed to solve the pr
 
 
 ## Available Tools (3)
-- **generate_css_selector**: Generates a CSS selector for an element with a specific ID within an HTML snippet
 - **get_selector_complexity**: Calculates a complexity score for a CSS selector
 - **validate_selector_integrity**: Validates if a CSS selector correctly resolves to an element in the provided HTML
+- **generate_css_selector**: Generates a CSS selector for an element with a specific ID within an HTML snippet
 
 
 ## 💬 Prompt Examples

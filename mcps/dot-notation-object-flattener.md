@@ -14,9 +14,9 @@ This MCP server provides a deterministic way to transform hierarchical JSON data
 
 
 ## Available Tools (3)
-- **calculate_nesting_metrics**: Calculates nesting metrics for a JSON object
 - **flatten_json_object**: Flattens a JSON object into dot-notation keys
 - **verify_flattening_safety**: Verifies if a JSON object can be safely flattened
+- **calculate_nesting_metrics**: Calculates nesting metrics for a JSON object
 
 
 ## 💬 Prompt Examples

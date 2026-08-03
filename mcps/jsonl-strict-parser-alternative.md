@@ -1,4 +1,4 @@
-# JSONL Strict Parser Alternative MCP Server
+# JSONL Strict Parser MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/jsonl-strict-parser-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -23,7 +23,7 @@ Parses a JSON Lines (.jsonlan) string into structured objects
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **JSONL Strict Parser Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **JSONL Strict Parser** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "Parse this JSONL string and tell me if there are any errors: '{"id": 1}\n{"id": 2, invalid}\n{"id": 3}'"
@@ -74,7 +74,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **JSONL Strict Parser Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **JSONL Strict Parser** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -82,7 +82,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `jsonl-strict-parser-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **JSONL Strict Parser Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **JSONL Strict Parser** tools.
 
 **Configuration:**
 ```json

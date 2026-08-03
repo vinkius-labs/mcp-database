@@ -7,16 +7,16 @@
 
 **Category:** [rate-limiting](../categories/rate-limiting.md)
 
-Enforce precise API rate limits using sliding window counters to prevent quota exhaustion.
+Enforce precise API rate limits using a continuous sliding window mechanism.
 
 ## Description
-The Sliding Window Rate Limiter MCP server provides a deterministic mechanism for managing request frequency in multi-agent environments. By tracking exact timestamps of successful requests, it prevents the 'burst' problem common in fixed-window approaches where limits are breached at window boundaries. Using tools like `evaluate_request`, `get_window_density`, and `analyze_window_saturation`, agents can proactively manage their usage against providers like OpenAI or Anthropic. The system calculates exactly how much time must pass before a new request slot becomes available, ensuring your agentic workflows remain within established quotas without manual intervention.
+The Sliding Window Rate Limiter MCP server provides a high-precision mechanism for managing request quotas in multi-agent environments. Unlike fixed-window algorithms that reset at arbitrary intervals, this server uses a continuous sliding window to track active requests within a moving timeframe. By using `validate_request`, agents can determine if an incoming call is permitted, calculate remaining quota, and identify the exact `time_to_wait_ms` before capacity becomes available. The `summarize_usage` tool offers real-time visibility into usage percentages, while `prune_history` ensures system efficiency by removing expired timestamps from your history tracking.
 
 
 ## Available Tools (3)
-- **evaluate_request**: Evaluates if a request is allowed within the sliding window
-- **analyze_window_saturation**: Analyzes the saturation trend of the window
-- **get_window_density**: Calculates the density of requests within the window
+- **prune_history**: Maintains system efficiency by removing timestamps that have aged out of the sliding window
+- **validate_request**: Determines if an incoming request is permitted and quantifies the current state of the quota
+- **summarize_usage**: Provides a high-level analysis of how much of the allocated capacity is currently being utilized
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Sliding Window Rate Limiter MCP server provides a deterministic mechanism fo
 Here are some examples of how you can interact with the **Sliding Window Rate Limiter** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I have a limit of 10 requests per 60,000ms. Here are my recent timestamps: [1715856000000, 1715856005000]. Can I send a new request at 1715856061000?"
+> "I have a list of timestamps from my last 5 requests: [1715600000000, 1715600005000, 1715600010000, 1715600015000, 1715600020000]. The current time is 1715600030000. My limit is 4 requests per 60000ms. Can I make another request?"
 
 **🤖 AI Agent:**
-> Yes, the request is allowed. The window starting at 1715856001000 has only 0 active requests from that period.
+> No, the request is not allowed. Your current active count within the window is 5, which exceeds your limit of 4 requests.
 
 ---
 
 **👤 You:**
-> "Check if my current request window is saturated using `analyze_window_saturation` with a limit of 5 requests and a 10-second window."
+> "Check my current API usage. My window is 300000ms, max requests is 100, and I have these timestamps: [1715600000000, 1715600010000, 1715600020000]."
 
 **🤖 AI Agent:**
-> The system indicates that the window is not saturated, but usage is increasing based on recent activity.
+> Your current usage is 3.0%. You are well below the limit of 100 requests.
 
 ---
 
 **👤 You:**
-> "Calculate how long I need to wait if my limit of 100 requests per minute has been reached at timestamp 1715856000000."
+> "Clean up my request history for a 60 second window. Current time is 1715600120000 and history is [1715600000000, 1715600110000, 1715600115000]."
 
 **🤖 AI Agent:**
-> You must wait 4500ms before the oldest request expires and a new slot becomes available.
+> The cleaned history contains [1715600110000, 1715600115000]. The timestamp 1715600000000 was removed because it fell outside the window.
 
 
 ## ❓ FAQ
 
-**Q: How does the sliding window approach differ from a fixed window?**
-Unlike fixed windows that reset at specific intervals, the sliding window tracks individual request timestamps. This prevents 'bursting' where double the allowed limit is processed right at the boundary of two windows.
+**Q: How does the sliding window differ from a fixed window?**
+A fixed window resets at specific clock intervals (e.g., every hour), which can allow bursts of traffic at the boundary. A sliding window uses a continuous timeframe, ensuring that the number of requests is always measured against the most recent duration.
 
-**Q: Can I use this to manage OpenAI API limits?**
-Yes. By using `evaluate_request` with your provider's specific window and request limit, you can ensure your agents never trigger a 429 Too Many Requests error.
+**Q: Can I use `validate_request` to prevent API key exhaustion?**
+Yes. By tracking your request timestamps and using `validate_request`, you can proactively check if a new request will exceed your quota before actually making the call, saving both time and resources.
 
-**Q: What does `get_window_density` tell me?**
-It provides a percentage of how much of your current window capacity is currently occupied by active requests, helping you monitor usage intensity.
+**Q: What is the purpose of `prune_history`?**
+`prune_history` removes timestamps that have moved past the sliding boundary into the expired zone, keeping your request history array small and efficient for subsequent calculations.
 
 
 ## Installation & Usage
