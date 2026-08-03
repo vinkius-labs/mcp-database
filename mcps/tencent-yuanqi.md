@@ -35,13 +35,13 @@ Connect your AI agents to **Tencent Yuanqi** (腾讯元器), the official intell
 
 
 ## Available Tools (7)
-- **get_assistant_info**: Get details about a specific assistant
 - **get_file_info**: Get metadata for a specific file
 - **get_file_status**: Check file processing status
-- **list_files**: List uploaded files
 - **upload_file**: ) to the Yuanqi platform for use in assistant knowledge bases.
 
 Upload a document for assistant context
+- **get_assistant_info**: Get details about a specific assistant
+- **list_files**: List uploaded files
 - **chat**: Requires assistant_id and user_id.
 
 Chat with a Tencent Yuanqi assistant

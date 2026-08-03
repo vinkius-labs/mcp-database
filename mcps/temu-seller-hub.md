@@ -37,9 +37,13 @@ Eliminate the daily grind of refreshing seller dashboards. Your AI agent now pro
 
 
 ## Available Tools (12)
+- **get_aftersale_list**: List after-sale / return requests
 - **get_goods_detail**: Get full product details for a specific item
 - **get_goods_list**: List published products on Temu store
 - **get_goods_sku**: Get SKU-level details for a product
+- **create_ship_order**: Uses the v2 ship order creation API.
+
+Create a shipping order to fulfill a delivery
 - **get_inventory**: List inventory levels across all SKUs
 - **get_logistics_companies**: Get supported shipping carriers on Temu
 - **get_order_detail**: Get full details for a specific Temu order
@@ -51,10 +55,6 @@ Get a list of Temu orders by creation date range
 Get restocking / purchase orders from Temu
 - **get_ship_order_list**: List existing shipping orders
 - **sync_inventory**: Update inventory stock quantity for a specific SKU
-- **create_ship_order**: Uses the v2 ship order creation API.
-
-Create a shipping order to fulfill a delivery
-- **get_aftersale_list**: List after-sale / return requests
 
 
 ## 💬 Prompt Examples

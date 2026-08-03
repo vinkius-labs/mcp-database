@@ -43,13 +43,13 @@ Active liveness detection with action verification
 - **create_face_repo**: Create a new facial repository
 - **delete_face_repo**: Delete a facial repository
 - **detect_face**: Detect faces in an image
+- **search_face_in_repo**: Returns top matches with confidence.
+
+Search for a face in a repository (1:N)
 - **list_repos**: List all facial repositories
 - **moderate_image**: Content moderation for images
 - **ocr_id_card**: Extract text from an ID card image
 - **remove_face_from_repo**: Remove a face from a repository
-- **search_face_in_repo**: Returns top matches with confidence.
-
-Search for a face in a repository (1:N)
 - **detect_silent_liveness**: Detects photos, screens, and 3D masks.
 
 Silent liveness detection (anti-spoofing)

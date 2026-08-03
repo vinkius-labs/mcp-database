@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your entire entertainment research and triv
 
 
 ## Available Tools (6)
-- **get_category_question_count**: Get the number of questions available in a specific category
-- **get_global_question_count**: Get total number of questions in the entire OpenTDB database
 - **get_trivia_questions**: Supports category, difficulty, and type filters. No API key required.
 
 Get random trivia questions from the Open Trivia Database
 - **list_categories**: List all available trivia categories with their IDs
+- **reset_session_token**: Reset a session token to start receiving all questions again
+- **get_category_question_count**: Get the number of questions available in a specific category
+- **get_global_question_count**: Get total number of questions in the entire OpenTDB database
 - **request_session_token**: Use the token in subsequent get_trivia_questions calls to guarantee unique questions. Tokens expire after 6 hours of inactivity.
 
 Request a new session token to avoid duplicate questions
-- **reset_session_token**: Reset a session token to start receiving all questions again
 
 
 ## 💬 Prompt Examples

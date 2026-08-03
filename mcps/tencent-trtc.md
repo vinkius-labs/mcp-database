@@ -32,19 +32,19 @@ Equip your AI agent with **Tencent TRTC** (Tencent Real-Time Communication), the
 
 
 ## Available Tools (11)
+- **describe_call_detail_info**: Get granular call quality metrics
+- **start_mcu_mix**: Start MCU mix transcoding for a room
+- **stop_cloud_recording**: Stop an active cloud recording task
+- **stop_mcu_mix**: Stop MCU mix transcoding for a room
 - **describe_user_info**: Requires CommId format: SdkAppId_CreateTime.
 
 Query user list for a specific call session
+- **describe_room_info**: Get TRTC room session details
+- **describe_trtc_usage**: Get aggregated TRTC usage statistics
 - **dismiss_room**: Terminate a TRTC room session
 - **remove_user**: Remove users from a TRTC room
 - **remove_user_by_str_room_id**: Remove users from a TRTC room by string room ID
 - **start_cloud_recording**: Start cloud recording for a TRTC room
-- **start_mcu_mix**: Start MCU mix transcoding for a room
-- **stop_cloud_recording**: Stop an active cloud recording task
-- **stop_mcu_mix**: Stop MCU mix transcoding for a room
-- **describe_call_detail_info**: Get granular call quality metrics
-- **describe_room_info**: Get TRTC room session details
-- **describe_trtc_usage**: Get aggregated TRTC usage statistics
 
 
 ## 💬 Prompt Examples

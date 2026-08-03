@@ -37,13 +37,13 @@ Connect your AI agents to **Setel Malaysia**, the first e-wallet for fuel, parki
 
 ## Available Tools (11)
 - **capture_payment**: Capture an authorized payment
+- **get_merchant_summary**: Get merchant account overview
 - **create_charging_session**: Start an EV charging session
 - **create_parking_session**: Start a new parking session
 - **create_payment_intent**: Returns a paymentIntentId for authorization.
 
 Create a new payment intent for a transaction
 - **end_charging_session**: Stop an active EV charging session
-- **get_merchant_summary**: Get merchant account overview
 - **get_mesra_points**: Retrieve loyalty points for a user
 - **get_parking_session**: Retrieve details for an active or past parking session
 - **get_payment_intent**: Retrieve details for a specific payment intent

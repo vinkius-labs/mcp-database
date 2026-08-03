@@ -37,17 +37,6 @@ When generating exercises, note that video and thumbnail URLs are temporary pre-
 
 
 ## Available Tools (12)
-- **generate_workout**: Use this when the user wants a routine for today.
-
-Generate a custom single-session workout
-- **get_food_by_barcode**: Look up a specific food product by its UPC/EAN barcode
-- **get_food_details**: Get detailed nutritional breakdown for a specific food
-- **get_recipe_details**: Get full recipe details including ingredients and instructions
-- **list_exercise_types**: List all valid exercise types (e.g. strength, cardio, stretching)
-- **list_muscle_groups**: List all available muscle groups
-- **search_exercises**: It returns a list of matching exercises with their IDs, which you need for get_exercise_details.
-
-Search for specific exercises in the YMovE database
 - **search_foods**: Search the food database for nutritional values
 - **search_recipes**: g. vegan, keto), or maximum calories.
 
@@ -56,7 +45,18 @@ Search for recipes based on diet or calories
 - **generate_program**: g. "hypertrophy", "weight_loss", "strength").
 
 Generate a multi-week training program
+- **generate_workout**: Use this when the user wants a routine for today.
+
+Generate a custom single-session workout
 - **get_exercise_details**: Get complete details and instructions for a specific exercise
+- **get_food_by_barcode**: Look up a specific food product by its UPC/EAN barcode
+- **get_food_details**: Get detailed nutritional breakdown for a specific food
+- **get_recipe_details**: Get full recipe details including ingredients and instructions
+- **list_exercise_types**: List all valid exercise types (e.g. strength, cardio, stretching)
+- **list_muscle_groups**: List all available muscle groups
+- **search_exercises**: It returns a list of matching exercises with their IDs, which you need for get_exercise_details.
+
+Search for specific exercises in the YMovE database
 
 
 ## 💬 Prompt Examples

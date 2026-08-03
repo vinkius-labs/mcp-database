@@ -34,11 +34,11 @@ Integrate the world's largest card network directly into your operations. **Unio
 ## Available Tools (7)
 - **cancel_card_token**: Unbind or cancel an existing UnionPay card token
 - **check_card_risk_status**: Query UnionPay risk status for a card
+- **request_card_token**: Tokenize a UnionPay card for secure future payments
+- **verify_card_kyc**: Verify identity and card binding (KYC)
 - **generate_qr_code**: Generate a UnionPay QR Code for payment
 - **get_qr_transaction_status**: Check the payment status of a QR code transaction
 - **init_secure_payment**: Initialize a Secure Pay (Online Payment) checkout session
-- **request_card_token**: Tokenize a UnionPay card for secure future payments
-- **verify_card_kyc**: Verify identity and card binding (KYC)
 
 
 ## 💬 Prompt Examples

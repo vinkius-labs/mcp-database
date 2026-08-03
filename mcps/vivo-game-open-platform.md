@@ -36,14 +36,14 @@ Connect your AI agents to the **Vivo Game Open Platform** (vivo 开放平台), t
 
 
 ## Available Tools (9)
+- **report_game_data**: Submit player progress and scores to Vivo Game Center
+- **report_role_info**: Report character or role information
 - **get_app_config**: Retrieve application configuration from Vivo platform
 - **get_server_time**: Synchronize with Vivo platform server time
 - **get_user_info**: Retrieve basic profile data for a Vivo user
 - **list_game_servers**: Query the list of game servers
 - **list_items**: Query available virtual items for the app
 - **query_order**: Check the status of a specific payment order
-- **report_game_data**: Submit player progress and scores to Vivo Game Center
-- **report_role_info**: Report character or role information
 - **validate_login**: Verify a user login token from Vivo SDK
 
 

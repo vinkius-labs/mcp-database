@@ -36,6 +36,8 @@ Connect your AI agents to **ShadowBot** (影刀RPA), the leading Robotic Process
 
 
 ## Available Tools (10)
+- **list_task_logs**: Retrieve logs for a specific task
+- **stop_task**: Stop a running ShadowBot task
 - **get_robot_details**: Get detailed information for a specific robot
 - **get_task_details**: Retrieve the status and results of a ShadowBot task
 - **list_apps**: List all RPA applications in your ShadowBot account
@@ -43,9 +45,7 @@ Connect your AI agents to **ShadowBot** (影刀RPA), the leading Robotic Process
 - **list_department_members**: List members in a specific department
 - **list_online_robots**: List currently online robots
 - **list_robots**: List all robots associated with the account
-- **list_task_logs**: Retrieve logs for a specific task
 - **start_task**: Remote trigger a ShadowBot RPA application
-- **stop_task**: Stop a running ShadowBot task
 
 
 ## 💬 Prompt Examples
