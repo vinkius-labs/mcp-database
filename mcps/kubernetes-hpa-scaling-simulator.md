@@ -14,10 +14,10 @@ This MCP server provides a high-fidelity simulation engine for Kubernetes Horizo
 
 
 ## Available Tools (4)
-- **identify_thrashing_patterns**: Analyzes a scaling timeline to detect frequent oscillations (thrashing)
-- **validate_hpa_config**: Validates the HPA configuration parameters
 - **calculate_target_replicas**: Calculates the target number of replicas based on current metric and utilization
+- **identify_thrashing_patterns**: Analyzes a scaling timeline to detect frequent oscillations (thrashing)
 - **simulate_scaling_timeline**: Simulates how the replica count evolves over a series of metric observations
+- **validate_hpa_config**: Validates the HPA configuration parameters
 
 
 ## 💬 Prompt Examples

@@ -15,10 +15,10 @@ This MCP server provides a specialized toolkit for auditing large-scale JSONL da
 
 ## Available Tools (5)
 - **analyze_tokens**: Analyzes token usage metrics in a dataset
-- **validate_schema**: Validates a dataset against a schema format
 - **audit_labels**: Audits label distribution and imbalance
 - **detect_duplicates**: Detects duplicate entries in a dataset
 - **estimate_cost**: Estimates processing cost for a dataset
+- **validate_schema**: Validates a dataset against a schema format
 
 
 ## 💬 Prompt Examples

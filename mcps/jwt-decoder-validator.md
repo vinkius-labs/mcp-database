@@ -14,10 +14,10 @@ This MCP server provides a specialized utility to inspect JSON Web Tokens (JWT).
 
 
 ## Available Tools (4)
-- **verify_jwt_signature**: Cryptographically validates that the signature matches the provided header and payload using a specified key
 - **decode_jwt_components**: Extracts and decodes the readable JSON content from the JWT header and payload
 - **parse_jwt_string**: Verifies if a provided string adheres to the fundamental three-part format of a JWT
 - **validate_jwt_temporal_claims**: Checks the validity of standard time-based claims against the current system time
+- **verify_jwt_signature**: Cryptographically validates that the signature matches the provided header and payload using a specified key
 
 
 ## 💬 Prompt Examples

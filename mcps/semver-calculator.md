@@ -15,12 +15,12 @@ The SemVer Calculator provides a set of tools to handle Semantic Versioning 2.0.
 
 ## Available Tools (5)
 - **sort_version_list**: Orders an array of version strings from lowest precedence to highest precedence
-- **calculate_next_version**: Computes a new version string based on an existing version and a requested change type
 - **check_range_satisfaction**: 2.3 or ~1.2.0.
 
 Checks if a single version string falls within a defined range of allowed versions
-- **compare_versions**: Determines the precedence relationship between two specific version strings
 - **validate_version**: Verifies that a given string strictly adheres to the SemVer 2.0.0 syntax
+- **calculate_next_version**: Computes a new version string based on an existing version and a requested change type
+- **compare_versions**: Determines the precedence relationship between two specific version strings
 
 
 ## 💬 Prompt Examples

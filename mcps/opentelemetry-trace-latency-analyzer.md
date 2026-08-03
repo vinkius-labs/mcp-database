@@ -14,9 +14,9 @@ This MCP server provides a diagnostic engine for deconstructing OpenTelemetry-st
 
 
 ## Available Tools (3)
-- **get_service_distribution**: Calculate average latency per service/span name
 - **analyze_trace_latency**: Analyze trace spans for latency metrics
 - **identify_bottlenecks**: Identify spans that exceed a latency threshold
+- **get_service_distribution**: Calculate average latency per service/span name
 
 
 ## 💬 Prompt Examples

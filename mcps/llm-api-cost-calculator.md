@@ -15,9 +15,9 @@ The LLM API Cost Calculator provides a precise way to project expenditures for A
 
 ## Available Tools (4)
 - **compute_request_cost**: Calculates the exact monetary cost of a single LLM API call
-- **estimate_monthly_spend**: Projects total expenditure over a 30-day period
 - **calculate_cache_impact**: Calculates how prompt caching reduces the cost of a request
 - **compare_providers**: Provides a comparative analysis of multiple pricing tiers
+- **estimate_monthly_spend**: Projects total expenditure over a 30-day period
 
 
 ## 💬 Prompt Examples

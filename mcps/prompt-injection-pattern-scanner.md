@@ -14,10 +14,10 @@ The Prompt Injection Pattern Scanner is a specialized security engine designed t
 
 
 ## Available Tools (4)
-- **evaluate_security_risk**: Aggregates all detected patterns and calculates a final risk score and classification
 - **detect_instruction_overrides**: Identifies specific phrases that represent an attempt to bypass existing system instructions
 - **examine_encoded_segments**: Scans for embedded payloads such as Base64 or Hexadecimal blocks
 - **find_structural_anomalies**: Detects the presence of role-mimicking text and structural delimiters
+- **evaluate_security_risk**: Aggregates all detected patterns and calculates a final risk score and classification
 
 
 ## 💬 Prompt Examples

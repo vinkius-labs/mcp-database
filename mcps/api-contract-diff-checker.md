@@ -10,13 +10,13 @@
 Detect breaking and additive changes in OpenAPI and GraphQL schemas.
 
 ## Description
-The API Contract Diff Checker is a specialized utility for identifying structural changes between two versions of API contracts. By comparing OpenAPI specifications or GraphQL SDL, it detects breaking changes like removed endpoints or type narrowing, as well as additive changes such as new fields. Use `diff_openapi` to analyze RESTful APIs, `diff_graphql` for GraphQL schemas, and `evaluate_version_bump` to receive a SemVer recommendation (MAJOR, MINOR, or PATCH) based on the detected impact.
+The API Contract Diff Checker is a specialized utility for identifying structural changes between two versions of API contracts. By comparing OpenAPI specifications or GraphQL SDL, it detects breaking changes like removed endpoints or type narrowing, as well as additive changes such as new fields. Use `diff_openapi` to analyze RESTful APIs, `diff_graphql` for GraphQL schemas, and `evaluate_version_</em>bump` to receive a SemVer recommendation (MAJOR, MINOR, or PATCH) based on the detected impact.
 
 
 ## Available Tools (3)
+- **evaluate_version_bump**: Analyzes a collection of identified changes to recommend a Semantic Versioning increment
 - **diff_graphql**: Compares two GraphQL Schema Definition Language (SDL) strings to identify breaking and additive changes
 - **diff_openapi**: Detects structural differences and compatibility impacts between two OpenAPI specification documents
-- **evaluate_version_bump**: Analyzes a collection of identified changes to recommend a Semantic Versioning increment
 
 
 ## 💬 Prompt Examples

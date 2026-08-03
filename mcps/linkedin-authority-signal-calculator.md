@@ -14,11 +14,11 @@ This MCP server provides a suite of linguistic analysis tools to measure profess
 
 
 ## Available Tools (4)
+- **get_data_point_density**: Quantify the evidence-based nature of the text
+- **get_definitive_statement_count**: Measure the level of conviction and certainty in the writing
 - **get_customer_centricity_ratio**: Returns a ratio.
 
 Determine if the content focuses on the reader or the author
-- **get_data_point_density**: Quantify the evidence-based nature of the text
-- **get_definitive_statement_count**: Measure the level of conviction and certainty in the writing
 - **get_self_promotion_ratio**: Identify if the post is primarily promotional or educational
 
 

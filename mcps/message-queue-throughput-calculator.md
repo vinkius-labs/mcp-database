@@ -14,10 +14,10 @@ This MCP server provides essential mathematical utilities for distributed messag
 
 
 ## Available Tools (4)
-- **calculate_consumer_needs**: Determines how many consumers or partitions are required to satisfy a specific throughput target
 - **validate_system_capacity**: Checks if the current number of active consumers can actually handle the incoming workload
-- **calculate_inflight_concurrency**: Calculates the average number of messages being processed simultaneously (in-flight) using Little's Law
+- **calculate_consumer_needs**: Determines how many consumers or partitions are required to satisfy a specific throughput target
 - **estimate_backlog_drain**: Predicts how long it will take to clear the current queue backlog
+- **calculate_inflight_concurrency**: Calculates the average number of messages being processed simultaneously (in-flight) using Little's Law
 
 
 ## 💬 Prompt Examples

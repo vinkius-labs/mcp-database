@@ -14,10 +14,10 @@ The SBOM Dependency Risk Scorer is an analytical engine designed to evaluate the
 
 
 ## Available Tools (4)
-- **analyze_dependency_structure**: Analyzes the dependency tree structure of an SBOM
-- **calculate_composite_risk_score**: Calculates the final security risk score
 - **evaluate_package_stalness**: Evaluates how outdated packages are based on release dates
 - **tally_vulnerability_exposure**: Counts known vulnerabilities in the SBOM
+- **analyze_dependency_structure**: Analyzes the dependency tree structure of an SBOM
+- **calculate_composite_risk_score**: Calculates the final security risk score
 
 
 ## 💬 Prompt Examples

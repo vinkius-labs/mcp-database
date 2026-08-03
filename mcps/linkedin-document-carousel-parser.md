@@ -15,11 +15,11 @@ This MCP server provides a specialized toolkit for auditing LinkedIn document ca
 
 ## Available Tools (4)
 - **analyze_density**: Identifies slides that exceed word or character limits
-- **detect_hooks**: Quantifies engagement-driving language at the end of slides
 - **evaluate_rhythm**: Assesses the consistency of content length across slides
 - **extract_slides**: Returns an array of slides.
 
 Extracts individual slides from a raw text stream
+- **detect_hooks**: Quantifies engagement-driving language at the end of slides
 
 
 ## 💬 Prompt Examples

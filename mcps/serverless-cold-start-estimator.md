@@ -18,11 +18,11 @@ This MCP server provides specialized tools to help developers predict performanc
 
 
 ## Available Tools (3)
+- **compare_cost_models**: Compares the monthly financial impact of On-Demand vs Provisioned Concurrency
 - **estimate_latency_delta**: g., nodejs, java), memory allocation in MB, and bundle size in MB.
 
 Calculates the estimated time difference between a cold start and a warm start
 - **calculate_cold_start_probability**: Estimates the percentage of requests that will trigger a cold start
-- **compare_cost_models**: Compares the monthly financial impact of On-Demand vs Provisioned Concurrency
 
 
 ## 💬 Prompt Examples

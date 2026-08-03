@@ -14,12 +14,12 @@ The Gas Fee Estimator provides precise calculations for Ethereum Virtual Machine
 
 
 ## Available Tools (4)
-- **compare_chain_costs**: Compare transaction costs across different blockchains
 - **convert_gas_to_fiat**: g., USD).
 
 Convert a native token cost into its fiat currency value
 - **calculate_gas_cost**: Calculate the total cost of a transaction in native tokens
 - **recommend_priority_fee**: Suggest a priority fee based on recent network activity
+- **compare_chain_costs**: Compare transaction costs across different blockchains
 
 
 ## 💬 Prompt Examples
