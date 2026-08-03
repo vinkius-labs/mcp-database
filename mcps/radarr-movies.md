@@ -37,22 +37,22 @@ Connect your **Radarr** instance to any AI agent to take full control of your mo
 - **add_movie**: Requires TMDB ID, quality profile, and root folder path.
 
 Add a new movie to Radarr
-- **delete_movie**: Remove a movie from Radarr
-- **delete_queue_item**: Remove an item from the download queue
-- **execute_command**: g., RescanMovie, MovieSearch, RefreshMovie, RenameMovie).
-
-Execute a specific system command
-- **get_commands**: List active or recently completed commands
 - **get_disk_space**: Get disk space information
 - **get_history**: View the history of grabs and imports
 - **get_movie**: Get details for a specific movie
 - **get_quality_profiles**: g., HD-1080p, Ultra-HD) configured in Radarr.
 
 Get available quality profiles
-- **get_queue**: Get the current download queue
 - **get_root_folders**: Get configured root folders
 - **get_system_status**: Get Radarr system status
 - **list_movies**: List all movies in the Radarr library
+- **delete_movie**: Remove a movie from Radarr
+- **delete_queue_item**: Remove an item from the download queue
+- **execute_command**: g., RescanMovie, MovieSearch, RefreshMovie, RenameMovie).
+
+Execute a specific system command
+- **get_commands**: List active or recently completed commands
+- **get_queue**: Get the current download queue
 - **lookup_movie**: g., "term=Inception" or "term=tmdb:27205").
 
 Search for movies to add to Radarr

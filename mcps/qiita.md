@@ -37,12 +37,6 @@ No more switching between your editor and the browser. Your AI acts as a technic
 
 
 ## Available Tools (29)
-- **delete_article**: This action cannot be undone. All associated comments, likes, and stocks will also be removed.
-
-Permanently delete an article from Qiita
-- **delete_comment**: This action cannot be undone. You can only delete comments you have authored.
-
-Permanently delete a comment from Qiita
 - **edit_comment**: You can only edit comments you have authored.
 
 Update an existing comment on Qiita
@@ -52,9 +46,6 @@ Follow a tag on Qiita
 - **follow_user**: Their new articles will appear in your feed. Following active community members helps discover quality content.
 
 Follow a user on Qiita
-- **get_article**: Use to analyze article structure, read full content, or prepare updates.
-
-Get the full content of a single Qiita article by ID
 - **get_comments**: Use for community feedback review, sentiment analysis, and engagement tracking.
 
 Get all comments on a Qiita article
@@ -64,9 +55,6 @@ Get your own published articles on Qiita
 - **get_my_profile**: Use to verify your identity, audit your community presence, or retrieve your user ID for further operations.
 
 Get the authenticated user profile on Qiita
-- **unfollow_tag**: Articles with this tag will no longer appear in your personalized feed.
-
-Unfollow a tag on Qiita
 - **get_tag_articles**: Use for content discovery within specific topics, competitive analysis, and trend monitoring within the Japanese developer community.
 
 Get articles with a specific tag on Qiita
@@ -76,9 +64,6 @@ Get details of a specific Qiita tag
 - **get_tags**: Use for content strategy — understand which topics have the most engagement and readership on the Japanese developer platform.
 
 Get popular tags on Qiita sorted by follower count
-- **get_teams**: Qiita Team is the enterprise knowledge sharing platform for organizations.
-
-Get Qiita Team organizations you belong to
 - **get_user_articles**: Use for competitive analysis, content research, or auditing an author's publication history.
 
 Get articles published by a specific Qiita user
@@ -88,9 +73,6 @@ Get users followed by a specific Qiita user
 - **get_user_followers**: Use for audience analysis, engagement planning, and community growth tracking.
 
 Get followers of a specific Qiita user
-- **stock_article**: Stocked articles can be accessed from your profile page. Similar to saving/bookmarking a post.
-
-Add an article to your stock (bookmarks)
 - **get_user_stocks**: Use to understand a user's interests, discover curated content, or research what content resonates with specific community members.
 
 Get articles stocked (bookmarked) by a specific user
@@ -112,9 +94,12 @@ Publish a new article on Qiita
 - **search_articles**: Use the query parameter with Qiita search syntax: "tag:python", "user:username", "title:keyword", "created:>2024-01-01". Combine filters freely. Results include LGTM count, stock count, and comment count for engagement evaluation.
 
 Search Qiita articles by keyword, tag, or user
-- **unfollow_user**: Their articles will no longer appear in your feed.
+- **stock_article**: Stocked articles can be accessed from your profile page. Similar to saving/bookmarking a post.
 
-Unfollow a user on Qiita
+Add an article to your stock (bookmarks)
+- **unfollow_tag**: Articles with this tag will no longer appear in your personalized feed.
+
+Unfollow a tag on Qiita
 - **unlike_article**: The article's like count will decrease by one.
 
 Remove like (LGTM) from an article
@@ -124,6 +109,21 @@ Remove an article from your stock (bookmarks)
 - **update_article**: You can modify the title, body, tags, or visibility. Use to fix typos, update content, change tags, or toggle public/private status.
 
 Update an existing article on Qiita
+- **delete_article**: This action cannot be undone. All associated comments, likes, and stocks will also be removed.
+
+Permanently delete an article from Qiita
+- **delete_comment**: This action cannot be undone. You can only delete comments you have authored.
+
+Permanently delete a comment from Qiita
+- **get_article**: Use to analyze article structure, read full content, or prepare updates.
+
+Get the full content of a single Qiita article by ID
+- **get_teams**: Qiita Team is the enterprise knowledge sharing platform for organizations.
+
+Get Qiita Team organizations you belong to
+- **unfollow_user**: Their articles will no longer appear in your feed.
+
+Unfollow a user on Qiita
 
 
 ## 💬 Prompt Examples

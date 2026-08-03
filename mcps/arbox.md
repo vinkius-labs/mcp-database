@@ -27,15 +27,15 @@ Arbox is a CRM-first studio management platform popular in Israel and growing gl
 - **search_members**: Returns profile, membership, attendance, and engagement score.
 
 Search studio members
-- **get_member**: Get member profile
-- **list_schedule**: List class schedule
-- **list_memberships**: List membership plans
 - **list_coaches**: List coaches/trainers
 - **list_leads**: Key for studio sales pipeline.
 
 List sales leads
 - **list_payments**: List payments
 - **list_products**: List products/retail
+- **get_member**: Get member profile
+- **list_schedule**: List class schedule
+- **list_memberships**: List membership plans
 - **get_branch_info**: Get branch info
 
 

@@ -33,32 +33,13 @@ Connect your **mod.io** account to any AI agent to manage your gaming library an
 
 
 ## Available Tools (22)
-- **add_collection**: Requires OAuth 2 Access Token.
-
-Create a new mod collection
-- **add_mod**: Requires OAuth 2 Access Token.
-
-Add a new mod to a game
-- **get_collection_mods**: Get mods within a collection
 - **get_collections**: Get all mod collections for a game
-- **delete_mod**: Requires OAuth 2 Access Token.
-
-Delete a mod
-- **edit_mod**: Requires OAuth 2 Access Token.
-
-Edit details of an existing mod
-- **get_game_stats**: Get statistics for a game
-- **get_game**: Get details for a specific game
-- **get_games**: io platform.
-
-Get all games on mod.io
 - **get_me**: Requires OAuth 2 Access Token.
 
 Get authenticated user details
 - **get_mod_file**: Get a specific modfile
 - **get_mod_files**: Get all files for a mod
 - **get_mod**: Get details for a specific mod
-- **get_mods**: Get all mods for a game
 - **get_my_purchases**: Requires OAuth 2 Access Token.
 
 Get mods purchased by the user
@@ -78,6 +59,25 @@ Get mods the user is subscribed to
 - **unsubscribe_mod**: Requires OAuth 2 Access Token.
 
 Unsubscribe from a mod
+- **get_collection_mods**: Get mods within a collection
+- **delete_mod**: Requires OAuth 2 Access Token.
+
+Delete a mod
+- **get_mods**: Get all mods for a game
+- **add_collection**: Requires OAuth 2 Access Token.
+
+Create a new mod collection
+- **add_mod**: Requires OAuth 2 Access Token.
+
+Add a new mod to a game
+- **edit_mod**: Requires OAuth 2 Access Token.
+
+Edit details of an existing mod
+- **get_game_stats**: Get statistics for a game
+- **get_game**: Get details for a specific game
+- **get_games**: io platform.
+
+Get all games on mod.io
 - **get_my_wallets**: Requires OAuth 2 Access Token.
 
 Get user wallets for monetization

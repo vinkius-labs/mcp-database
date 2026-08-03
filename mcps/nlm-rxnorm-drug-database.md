@@ -34,9 +34,6 @@ Connect your AI agent to the **National Library of Medicine (NLM) RxNorm** datab
 
 
 ## Available Tools (21)
-- **find_similar_classes_by_drug_list**: Identify classes with drug members similar to a provided list of RxCUIs
-- **get_all_properties**: Return detailed properties for an RxNorm concept
-- **get_all_related_info**: Retrieve all concepts related to a specified RxCUI
 - **get_all_rxterm_info**: Return display names, synonyms, strengths, and routes for an RxCUI
 - **get_approximate_match**: Find concepts and atom IDs that approximately match a query string
 - **get_class_by_rxnorm_drug_id**: Return the classes containing a specific drug
@@ -48,7 +45,6 @@ Return all drug members of a specified class
 Return drug products related to a specified name
 - **get_ndc_properties**: Return detailed metadata for an NDC
 - **get_ndc_status**: Return the status and history of an NDC
-- **get_ndcs**: Return active NDCs associated with an RxNorm concept
 - **get_related_by_relationship**: g., tradename_of).
 
 Retrieve concepts directly related by a specific relationship type
@@ -57,6 +53,10 @@ Retrieve concepts directly related by a specific relationship type
 Retrieve related concepts of specific term types
 - **get_rx_concept_properties**: Return basic properties for an RxNorm concept
 - **get_rx_property**: Retrieve a specific property value for a concept
+- **get_ndcs**: Return active NDCs associated with an RxNorm concept
+- **find_similar_classes_by_drug_list**: Identify classes with drug members similar to a provided list of RxCUIs
+- **get_all_properties**: Return detailed properties for an RxNorm concept
+- **get_all_related_info**: Retrieve all concepts related to a specified RxCUI
 - **get_rxterm_display_name**: Return the RxTerms display name for a concept
 - **get_rxcui_history_status**: Return the status, attributes, and history of a concept
 - **get_spelling_suggestions**: Return strings similar to a specified string for auto-correction

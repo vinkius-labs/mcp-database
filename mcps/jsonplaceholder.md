@@ -34,16 +34,16 @@ Connect to **JSONPlaceholder**, the industry-standard fake REST API, to simulate
 
 
 ## Available Tools (21)
+- **get_post_comments**: Get comments for a specific post
+- **get_post**: Get a specific post by ID
+- **get_todo**: Get a specific todo by ID
+- **get_user_albums**: Get albums for a specific user
 - **create_post**: Create a new post
 - **delete_post**: Delete a post
 - **get_album_photos**: Get photos for a specific album
 - **get_album**: Get a specific album by ID
 - **get_comment**: Get a specific comment by ID
 - **get_photo**: Get a specific photo by ID
-- **get_post_comments**: Get comments for a specific post
-- **get_post**: Get a specific post by ID
-- **get_todo**: Get a specific todo by ID
-- **get_user_albums**: Get albums for a specific user
 - **get_user_posts**: Get posts for a specific user
 - **get_user_todos**: Get todos for a specific user
 - **get_user**: Get a specific user by ID

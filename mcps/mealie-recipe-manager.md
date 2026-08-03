@@ -35,10 +35,10 @@ Connect your **Mealie** instance to any AI agent and take full control of your k
 ## Available Tools (13)
 - **delete_recipe**: Remove a recipe
 - **get_recipe**: Retrieve a specific recipe by its slug
+- **update_recipe**: Update an existing recipe
 - **list_categories**: List all categories
 - **list_meal_plans**: Retrieve current meal plans
 - **list_recipes**: List all recipes
-- **update_recipe**: Update an existing recipe
 - **list_shopping_lists**: List all shopping lists
 - **list_tags**: List all tags
 - **toggle_shopping_list_item**: Toggle shopping list item completion

@@ -41,9 +41,9 @@ The **ApparelMagic MCP Server** provides powerful integration with your ApparelM
 - **list_customers**: List customers from ApparelMagic
 - **list_inventory**: List inventory levels from ApparelMagic
 - **list_orders**: List sales orders from ApparelMagic
-- **list_products**: List products/styles from ApparelMagic
 - **list_shipments**: List shipments from ApparelMagic
 - **list_styles**: List styles from ApparelMagic
+- **list_products**: List products/styles from ApparelMagic
 
 
 ## 💬 Prompt Examples

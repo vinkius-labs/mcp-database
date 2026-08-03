@@ -34,8 +34,8 @@ No more digging through deep settings menus to find webhook URLs or clean up old
 
 
 ## Available Tools (2)
-- **delete_group**: Delete a group in Thinkific
 - **list_webhooks**: List Thinkific webhooks
+- **delete_group**: Delete a group in Thinkific
 
 
 ## 💬 Prompt Examples

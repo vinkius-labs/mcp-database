@@ -35,6 +35,9 @@ Connect your **AccuLynx** account to your AI agent to streamline your roofing bu
 
 
 ## Available Tools (4)
+- **list_payments**: Requires a valid Job ID.
+
+Retrieve all payments and financial records associated with a specific AccuLynx job
 - **list_leads**: Retrieve a list of recent inquiries and prospective roofing projects in AccuLynx
 - **create_lead**: Requires first and last name.
 
@@ -42,9 +45,6 @@ Add a prospective customer to the AccuLynx sales pipeline
 - **get_job_details**: Requires a valid Job ID.
 
 Retrieve technical milestones and metadata for a specific AccuLynx roofing job ID
-- **list_payments**: Requires a valid Job ID.
-
-Retrieve all payments and financial records associated with a specific AccuLynx job
 
 
 ## 💬 Prompt Examples

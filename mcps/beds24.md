@@ -21,14 +21,14 @@ Connect **Beds24** to any AI agent — the ultra-flexible European channel manag
 
 
 ## Available Tools (8)
+- **get_calendar**: Get room calendar
+- **get_availability**: Get room availability
+- **get_account**: Get account info
 - **list_properties**: List properties
 - **get_property**: Get property details
 - **list_bookings**: List bookings
 - **get_booking**: Get booking details
 - **list_rooms**: List rooms for property
-- **get_calendar**: Get room calendar
-- **get_availability**: Get room availability
-- **get_account**: Get account info
 
 
 ## 💬 Prompt Examples
