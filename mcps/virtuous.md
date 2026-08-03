@@ -35,7 +35,6 @@ Connect your **Virtuous** CRM to any AI agent and take full control of your nonp
 
 ## Available Tools (18)
 - **create_contact**: Create a new contact
-- **create_gift**: Create a new gift
 - **create_individual**: Create a new individual
 - **create_project**: Create a new project
 - **delete_contact**: Delete a contact
@@ -52,6 +51,7 @@ Connect your **Virtuous** CRM to any AI agent and take full control of your nonp
 - **update_contact**: Update an existing contact
 - **update_gift**: Update an existing gift
 - **update_individual**: Update an existing individual
+- **create_gift**: Create a new gift
 
 
 ## 💬 Prompt Examples

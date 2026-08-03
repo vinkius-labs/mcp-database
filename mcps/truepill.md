@@ -34,6 +34,8 @@ Connect your **Truepill** account to any AI agent to streamline pharmacy and pat
 
 
 ## Available Tools (7)
+- **find_patient**: Find patients by demographic details
+- **get_patient_prescriptions**: Get all prescriptions for a patient
 - **get_webhook_events**: g., NOTIFY_RX, ORDER, SHIPMENT, TRANSFER).
 
 Retrieve webhook events
@@ -43,8 +45,6 @@ Update an existing patient record
 - **create_patient**: Returns a patient_token.
 
 Create a new patient record
-- **find_patient**: Find patients by demographic details
-- **get_patient_prescriptions**: Get all prescriptions for a patient
 - **get_patient**: Get a specific patient by token
 - **get_prescription**: Get details for a specific prescription
 

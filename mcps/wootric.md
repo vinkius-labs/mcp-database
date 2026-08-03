@@ -33,24 +33,24 @@ Connect **Wootric** to your AI agent to streamline your customer experience work
 
 
 ## Available Tools (22)
-- **create_end_user**: Create a new end user
-- **create_import**: Create an import
 - **create_project**: Create a project
 - **create_response**: Create a response for an end user
 - **create_tag**: Create a tag
 - **delete_decline**: Delete a decline
 - **delete_end_user**: Delete an end user
 - **delete_response**: Delete a response
-- **delete_tag**: Delete a tag
+- **list_responses**: Get all responses
+- **list_tags**: Get all tags
+- **onboard_cxi**: Onboard account for CXI features
+- **update_end_user**: Update an end user
 - **get_end_user**: Get a specific end user by ID
 - **list_declines**: Get all declines
 - **list_end_user_responses**: Get responses for a specific end user
 - **list_end_users**: Get all end users
 - **list_projects**: Get all projects
-- **list_responses**: Get all responses
-- **list_tags**: Get all tags
-- **onboard_cxi**: Onboard account for CXI features
-- **update_end_user**: Update an end user
+- **create_end_user**: Create a new end user
+- **create_import**: Create an import
+- **delete_tag**: Delete a tag
 - **update_project**: Update a project
 - **update_response**: Update a response
 - **update_tag**: Update a tag

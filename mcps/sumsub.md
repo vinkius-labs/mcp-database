@@ -35,8 +35,8 @@ No more manual status checks in the dashboard. Your AI acts as a compliance assi
 
 
 ## Available Tools (5)
-- **get_applicant_status**: Get applicant verification status
 - **get_applicant**: Get applicant data
+- **get_applicant_status**: Get applicant verification status
 - **add_document**: Upload a document for an applicant
 - **create_applicant**: Create a new Sumsub applicant
 - **generate_access_token**: Generate WebSDK access token

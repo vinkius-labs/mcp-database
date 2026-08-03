@@ -34,15 +34,22 @@ Connect **Sensible** to your AI agent to seamlessly extract structured data from
 ## Available Tools (37)
 - **classify_sync**: Classify a document into one of the document types synchronously
 - **create_configuration**: Create a new configuration for a document type
+- **delete_configuration**: Delete a configuration
+- **extract_portfolio_from_url**: Extract data from a portfolio document at a URL asynchronously
+- **generate_portfolio_upload_url**: Generate a pre-signed upload URL for portfolio extraction
+- **generate_upload_url_with_config**: Generate a pre-signed upload URL for asynchronous extraction using a specified config
+- **get_configuration**: Get a specific configuration
+- **list_configuration_versions**: List versions of a configuration
+- **list_configurations**: List configurations for a document type
+- **update_configuration**: Update a configuration
+- **update_document_type**: Update a document type
 - **create_document_type**: Create a new document type
 - **create_golden**: Create a reference document (Golden). Returns an upload URL
-- **delete_configuration**: Delete a configuration
 - **delete_configuration_version**: Delete a draft or unpublish a configuration version
 - **delete_document_type**: Delete a document type
 - **delete_golden**: Delete a reference document
 - **extract_from_url_with_config**: Extract data from a document at a URL using a specified config asynchronously
 - **extract_from_url**: Extract data from a document at a URL asynchronously
-- **extract_portfolio_from_url**: Extract data from a portfolio document at a URL asynchronously
 - **extract_sync_with_config**: Extract data from a document using a specified config synchronously
 - **extract_sync**: Provide the document as a Base64 string.
 
@@ -50,25 +57,18 @@ Extract data from a document synchronously
 - **extract_text_from_golden**: Extract all text lines and positioning coordinates from a reference document
 - **generate_csv**: Compile JSON document extractions into a CSV spreadsheet
 - **generate_excel**: Compile JSON document extractions into an Excel spreadsheet
-- **generate_portfolio_upload_url**: Generate a pre-signed upload URL for portfolio extraction
-- **generate_upload_url_with_config**: Generate a pre-signed upload URL for asynchronous extraction using a specified config
 - **generate_upload_url**: Generate a pre-signed upload URL for asynchronous extraction
 - **get_auth_tokens**: Generates a temporary authorization token for external reviewers
-- **get_configuration**: Get a specific configuration
 - **get_configuration_version**: Get a specific version of a configuration
 - **get_document_type**: Get a specific document type
 - **get_document**: Retrieve extraction results by ID
 - **get_extraction_statistics**: Returns daily extraction coverage statistics
 - **get_golden**: Get reference document metadata
-- **list_configuration_versions**: List versions of a configuration
-- **list_configurations**: List configurations for a document type
 - **list_document_types**: List all document types
 - **list_extractions**: Retrieve a filtered, paginated list of past extractions
 - **list_goldens**: List reference documents for a document type
 - **publish_configuration**: Publish a configuration version to an environment
 - **unassociate_golden**: Unassociate a reference document from its configuration
-- **update_configuration**: Update a configuration
-- **update_document_type**: Update a document type
 - **update_golden**: Update reference document metadata
 - **classify_async**: Classify a document into one of the document types asynchronously
 

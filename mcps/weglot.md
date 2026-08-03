@@ -33,7 +33,6 @@ Connect your **Weglot** account to any AI agent to streamline your multilingual 
 
 
 ## Available Tools (4)
-- **check_language_support**: Check if a specific translation pair is supported
 - **list_languages**: List all available languages supported by Weglot
 - **get_status**: Do not spam this endpoint.
 
@@ -41,6 +40,7 @@ Check Weglot API status
 - **translate_text**: Requires WEGLOT_API_KEY.
 
 Translate an array of sentences
+- **check_language_support**: Check if a specific translation pair is supported
 
 
 ## 💬 Prompt Examples

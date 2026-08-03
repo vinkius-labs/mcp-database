@@ -34,9 +34,6 @@ Connect your **Veryfi** account to any AI agent and automate document data extra
 
 
 ## Available Tools (57)
-- **delete_business_cards**: Delete a business_cards
-- **delete_checks**: Delete a checks
-- **delete_contracts**: Delete a contracts
 - **delete_documents**: Delete a documents
 - **delete_parse_documents**: Delete a parse_documents
 - **delete_w2s**: Delete a w2s
@@ -45,7 +42,6 @@ Connect your **Veryfi** account to any AI agent and automate document data extra
 - **get_bank_statements**: Get a specific bank_statements by ID
 - **get_business_cards**: Get a specific business_cards by ID
 - **get_checks**: Get a specific checks by ID
-- **get_contracts**: Get a specific contracts by ID
 - **get_documents**: Get a specific documents by ID
 - **get_parse_documents**: Get a specific parse_documents by ID
 - **get_w2s**: Get a specific w2s by ID
@@ -54,23 +50,17 @@ Connect your **Veryfi** account to any AI agent and automate document data extra
 - **list_bank_statements**: List bank_statements
 - **list_business_cards**: List business_cards
 - **list_checks**: List checks
-- **list_contracts**: List contracts
 - **list_documents**: List documents
 - **list_parse_documents**: List parse_documents
 - **list_w2s**: List w2s
 - **list_w8ben_e**: List w8ben_e
 - **list_w9s**: List w9s
-- **process_bank_statements**: Process a new bank_statements
-- **process_business_cards**: Process a new business_cards
-- **process_checks**: Process a new checks
-- **process_contracts**: Process a new contracts
 - **process_documents**: Process a new documents
 - **process_parse_documents**: Process a new parse_documents
 - **process_w2s**: Process a new w2s
 - **process_w8ben_e**: Process a new w8ben_e
 - **process_w9s**: Process a new w9s
 - **update_bank_statements**: Update a bank_statements
-- **update_business_cards**: Update a business_cards
 - **update_checks**: Update a checks
 - **update_contracts**: Update a contracts
 - **update_documents**: Update a documents
@@ -89,6 +79,16 @@ Connect your **Veryfi** account to any AI agent and automate document data extra
 - **list_client_keys**: Retrieve client keys list
 - **list_webhooks**: Get configured webhooks
 - **process_any_document**: Process any unstructured document using a blueprint
+- **delete_checks**: Delete a checks
+- **delete_contracts**: Delete a contracts
+- **list_contracts**: List contracts
+- **update_business_cards**: Update a business_cards
+- **delete_business_cards**: Delete a business_cards
+- **get_contracts**: Get a specific contracts by ID
+- **process_bank_statements**: Process a new bank_statements
+- **process_business_cards**: Process a new business_cards
+- **process_checks**: Process a new checks
+- **process_contracts**: Process a new contracts
 - **reset_client_keys**: Regenerate all API keys
 - **delete_bank_statements**: Delete a bank_statements
 

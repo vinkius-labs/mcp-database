@@ -32,26 +32,17 @@ No more jumping between tabs to check stock levels, assembly statuses, or custom
 - **create_customer**: Create a new customer
 - **create_product**: Create a new product
 - **create_purchase_order**: Create a new purchase order
-- **create_sales_order**: Create a new sales order
 - **list_credit_notes**: List credit notes
 - **list_currencies**: List currencies
 - **list_customer_delivery_addresses**: List customer delivery addresses
 - **list_customers**: List customers
-- **get_assembly**: Get a specific assembly
-- **get_bom**: Get a specific Bill of Materials
 - **get_customer**: Get a specific customer
 - **get_invoice**: Get a specific sales invoice
 - **get_product**: Get a specific product
-- **get_purchase_order**: Get a specific purchase order
-- **get_sales_order**: Get a specific sales order
-- **get_stock_on_hand**: Get stock on hand for a specific product
-- **get_supplier**: Get a specific supplier
-- **list_invoices**: List sales invoices
 - **list_product_brands**: List product brands
 - **list_product_groups**: List product groups
 - **list_product_prices**: List product prices
 - **list_products**: List products
-- **list_purchase_orders**: List purchase orders
 - **list_recost_adjustments**: List recost adjustments
 - **list_sales_orders**: List sales orders
 - **list_sales_quotes**: List sales quotes
@@ -64,7 +55,16 @@ No more jumping between tabs to check stock levels, assembly statuses, or custom
 - **list_supplier_returns**: List supplier returns
 - **list_suppliers**: List suppliers
 - **list_unit_of_measures**: List unit of measures
+- **get_purchase_order**: Get a specific purchase order
+- **get_sales_order**: Get a specific sales order
+- **get_stock_on_hand**: Get stock on hand for a specific product
+- **get_supplier**: Get a specific supplier
+- **list_invoices**: List sales invoices
 - **list_warehouse_stock_transfers**: List warehouse stock transfers
+- **create_sales_order**: Create a new sales order
+- **get_assembly**: Get a specific assembly
+- **get_bom**: Get a specific Bill of Materials
+- **list_purchase_orders**: List purchase orders
 - **list_warehouses**: List warehouses
 - **list_accounts**: List financial accounts
 - **list_assemblies**: List assemblies

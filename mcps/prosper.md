@@ -34,16 +34,16 @@ Connect your **Prosper** investment account to any AI agent to automate your pee
 
 
 ## Available Tools (10)
-- **get_accounts**: Retrieve account balance and investment summaries
-- **create_offer**: Generate personalized loan offers for potential borrowers
+- **list_notes**: View specific Note investments
+- **list_payments**: Retrieve payment history for loans
 - **get_loan**: View details of a specific originated loan
 - **get_note**: View details of a specific Note investment
 - **get_order**: g., BID_SUCCEEDED, INSUFFICIENT_FUNDS).
 
 Check the status of a submitted order
 - **list_loans**: View originated loans you have invested in
-- **list_notes**: View specific Note investments
-- **list_payments**: Retrieve payment history for loans
+- **get_accounts**: Retrieve account balance and investment summaries
+- **create_offer**: Generate personalized loan offers for potential borrowers
 - **search_listings**: Search for active loan listings to invest in
 - **submit_order**: Submit bids on listings
 

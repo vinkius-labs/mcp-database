@@ -43,7 +43,6 @@ No more switching between dashboards to find that one error log. Your AI acts as
 - **delete_source**: Delete a Source
 - **delete_user**: Delete a user
 - **execute_metrics_query**: Execute metrics query and retrieve time-series data
-- **get_collector**: Get details for a specific Collector by ID
 - **get_search_job_messages**: Get raw log messages from a completed search job
 - **get_search_job_records**: Get aggregated records from a completed search job
 - **get_search_job_status**: Poll the status of a search job
@@ -52,6 +51,7 @@ No more switching between dashboards to find that one error log. Your AI acts as
 - **list_users**: List all users in the organization
 - **update_collector**: Update an existing Collector
 - **update_source**: Update an existing Source
+- **get_collector**: Get details for a specific Collector by ID
 - **create_hosted_collector**: Create a new Hosted Collector
 - **create_search_job**: Returns a SEARCH_JOB_ID which must be polled for status.
 

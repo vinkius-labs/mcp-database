@@ -34,10 +34,10 @@ Connect your **Stitch Data** account to any AI agent to orchestrate your ETL wor
 
 
 ## Available Tools (21)
-- **create_destination**: Configure a destination for an account
 - **create_ephemeral_session**: Generate a temporary token for the Connect JavaScript client
-- **create_source**: Create a new data source
 - **delete_destination**: Remove a destination
+- **create_destination**: Configure a destination for an account
+- **create_source**: Create a new data source
 - **delete_source**: Delete a source
 - **get_import_status**: Does not require authentication.
 

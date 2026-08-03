@@ -33,10 +33,10 @@ Connect **Vatlayer** to your AI agent to automate VAT number validation and tax 
 
 
 ## Available Tools (4)
-- **calculate_price**: Perform country-specific and VAT compliant price calculations
 - **get_rate_list**: Request a full set of VAT rates for all EU member states
 - **get_rate**: Request VAT rates for a specific EU member state
 - **validate_vat**: Validate an EU VAT number
+- **calculate_price**: Perform country-specific and VAT compliant price calculations
 
 
 ## 💬 Prompt Examples

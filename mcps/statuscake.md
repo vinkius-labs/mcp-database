@@ -46,7 +46,6 @@ No more manually checking dashboards to see if your site is down. Your AI acts a
 - **delete_uptime**: Delete an uptime check
 - **get_heartbeat**: Retrieve a heartbeat check
 - **get_pagespeed_history**: Get pagespeed check history
-- **get_pagespeed**: Retrieve a pagespeed check
 - **get_ssl_check**: Retrieve an SSL check
 - **get_uptime**: Retrieve an uptime check
 - **list_contact_groups**: Get all contact groups
@@ -54,15 +53,16 @@ No more manually checking dashboards to see if your site is down. Your AI acts a
 - **list_heartbeats**: Get all heartbeat checks
 - **list_maintenance_windows**: Get all maintenance windows
 - **list_pagespeed_locations**: Get Page Speed Locations
-- **list_pagespeeds**: Get all pagespeed checks
-- **list_ssl_locations**: Get SSL Locations
 - **list_ssl_checks**: Get all SSL checks
 - **list_uptime_locations**: Get Uptime Locations
 - **list_uptimes**: Get all uptime checks
 - **update_heartbeat**: Update a heartbeat check
-- **update_pagespeed**: Update a pagespeed check
 - **update_ssl_check**: Update an SSL check
 - **update_uptime**: Update an uptime check
+- **list_pagespeeds**: Get all pagespeed checks
+- **list_ssl_locations**: Get SSL Locations
+- **update_pagespeed**: Update a pagespeed check
+- **get_pagespeed**: Retrieve a pagespeed check
 
 
 ## 💬 Prompt Examples

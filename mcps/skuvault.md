@@ -33,9 +33,6 @@ Connect your **SkuVault** account to any AI agent to streamline your warehouse a
 - **add_shipments**: Add shipment records
 - **create_brands**: Create new product brands
 - **create_holds**: Create inventory holds
-- **create_kit**: Create product kits/bundles
-- **create_lot**: Create product lots
-- **create_po**: Create Purchase Orders
 - **create_product**: Create a single product
 - **create_products**: Bulk create products
 - **create_suppliers**: Create product suppliers
@@ -48,6 +45,9 @@ Connect your **SkuVault** account to any AI agent to streamline your warehouse a
 - **get_incoming_items**: Retrieve incoming items (e.g., from POs or shipments)
 - **get_lot_inventory_by_location**: Retrieve lot inventory details filtered by location
 - **get_lots**: Retrieve product lots
+- **create_kit**: Create product kits/bundles
+- **create_po**: Create Purchase Orders
+- **create_lot**: Create product lots
 
 
 ## 💬 Prompt Examples

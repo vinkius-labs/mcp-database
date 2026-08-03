@@ -37,13 +37,13 @@ No more manually searching through session lists. Your AI acts as a support engi
 ## Available Tools (5)
 - **get_session**: Retrieve metadata for a single session
 - **list_projects**: List all projects associated with your account
-- **list_session_events**: ).
-
-Retrieve all technical and user events recorded during a session
 - **list_sessions**: Can filter by userId, limit, and page.
 
 Retrieve a list of sessions for a specific project
 - **search_users**: Find users identified within a project
+- **list_session_events**: ).
+
+Retrieve all technical and user events recorded during a session
 
 
 ## 💬 Prompt Examples

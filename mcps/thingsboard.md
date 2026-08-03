@@ -38,11 +38,11 @@ Connect your **ThingsBoard** instance to any AI agent to orchestrate your IoT in
 - **save_attributes**: g., SERVER_SCOPE, SHARED_SCOPE) for an entity.
 
 Save attributes for an entity
+- **send_oneway_rpc**: Send a one-way RPC command to a device
+- **send_twoway_rpc**: Send a two-way RPC command to a device
 - **save_telemetry**: g., DEVICE, ASSET).
 
 Save time series telemetry data for an entity
-- **send_oneway_rpc**: Send a one-way RPC command to a device
-- **send_twoway_rpc**: Send a two-way RPC command to a device
 - **find_alarms**: Search alarms with severity and status filters
 
 

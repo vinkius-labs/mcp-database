@@ -34,14 +34,9 @@ Connect your **Xsolla** merchant account to any AI agent to streamline your gami
 
 
 ## Available Tools (30)
-- **create_order**: Requires User JWT.
-
-Create an order for an item
 - **get_bundles**: Get bundles
 - **get_events**: Get events
 - **get_payment_accounts**: Get user payment accounts
-- **get_promotions_admin**: Get promotions (Admin)
-- **invalidate_token**: Invalidate a Pay Station token
 - **register_user_oauth**: 0 protocol.
 
 Register a new user (OAuth 2.0)
@@ -52,6 +47,11 @@ Register a new user (OAuth 2.0)
 - **verify_promo_code**: Requires User JWT.
 
 Verify a promo code
+- **get_promotions_admin**: Get promotions (Admin)
+- **invalidate_token**: Invalidate a Pay Station token
+- **create_order**: Requires User JWT.
+
+Create an order for an item
 - **get_social_login_url**: Get social login URL
 - **get_subscription_plans**: Get subscription plans
 - **get_transaction_details**: Get transaction details

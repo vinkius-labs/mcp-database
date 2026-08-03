@@ -34,11 +34,17 @@ Connect your **Semaphore CI/CD** account to any AI agent and take full control o
 
 
 ## Available Tools (36)
+- **delete_deployment_target**: Delete a deployment target
 - **create_agent_type**: Create a self-hosted agent type
+- **get_workflow**: Describe a specific workflow
+- **list_agent_types**: List self-hosted agent types
+- **rerun_workflow**: Rerun a specific workflow
+- **run_workflow**: Run a new Semaphore workflow
+- **update_agent_type**: Update a self-hosted agent type
+- **update_deployment_target**: Update a deployment target
 - **create_deployment_target**: Create a deployment target
 - **deactivate_deployment_target**: Deactivate a deployment target
 - **delete_agent_type**: Delete a self-hosted agent type
-- **delete_deployment_target**: Delete a deployment target
 - **disable_all_agent_types**: Disable all agents of a specific type
 - **get_agent**: Describe a specific self-hosted agent
 - **get_agent_type**: Describe a self-hosted agent type
@@ -49,8 +55,6 @@ Connect your **Semaphore CI/CD** account to any AI agent and take full control o
 - **get_job_logs**: Get logs for a specific job
 - **get_job**: Describe a specific job
 - **get_pipeline**: Describe a specific pipeline
-- **get_workflow**: Describe a specific workflow
-- **list_agent_types**: List self-hosted agent types
 - **list_agents**: List self-hosted agents by type
 - **list_artifacts**: List artifacts for a scope
 - **list_deployment_targets**: List deployment targets for a project
@@ -58,15 +62,11 @@ Connect your **Semaphore CI/CD** account to any AI agent and take full control o
 - **list_promotions**: List promotions for a pipeline
 - **list_workflows**: List workflows for a project
 - **rebuild_pipeline**: Rebuild failed blocks in a pipeline
-- **rerun_workflow**: Rerun a specific workflow
-- **run_workflow**: Run a new Semaphore workflow
 - **stop_job**: Stop a running job
 - **stop_pipeline**: Stop a running pipeline
 - **stop_workflow**: Stop a running workflow
 - **trigger_promotion**: Trigger a promotion
 - **trigger_task**: Trigger a task to run now
-- **update_agent_type**: Update a self-hosted agent type
-- **update_deployment_target**: Update a deployment target
 - **validate_yaml**: Validate a Semaphore pipeline YAML definition
 - **activate_deployment_target**: Activate a deployment target
 - **configure_artifact_retention**: Configure artifact retention policies

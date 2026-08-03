@@ -34,6 +34,7 @@ Connect **PropertyData** to your AI agent to unlock professional-grade UK real e
 
 
 ## Available Tools (68)
+- **george**: AI-powered property research assistant
 - **aonb**: Check if a location is within an AONB
 - **area_type**: Determine area type (e.g., rural or urban)
 - **build_cost**: Calculate building costs for construction
@@ -41,7 +42,6 @@ Connect **PropertyData** to your AI agent to unlock professional-grade UK real e
 - **council_tax**: Average council tax bills in an area
 - **crime**: Analytics data on local crime
 - **demand**: Determine local property sales demand
-- **demand_rent**: Determine local property rental demand
 - **demographics**: Local population demographics
 - **development_calculator**: Calculate potential profit for a development
 - **development_gdv**: Estimate gross development value
@@ -49,17 +49,13 @@ Connect **PropertyData** to your AI agent to unlock professional-grade UK real e
 - **flood_risk**: Risk of flooding from rivers/sea
 - **floor_areas**: Known internal floor areas for a full UK postcode
 - **freeholds**: Local freehold titles with headline info
-- **george**: AI-powered property research assistant
 - **green_belt**: Check if a postcode is within the green belt
-- **growth**: Up to 7-year capital growth
 - **growth_psf**: Up to 7-year growth per square foot
 - **household_income**: Average household income for an area
 - **internet_speed**: Internet speeds for a postcode
 - **land_registry_documents**: Purchase Land Registry documents
 - **lha_rate**: The LHA rate for a given postcode / property size
 - **listed_buildings**: Local listed buildings
-- **mortgage_calculator**: Calculate monthly mortgage payments
-- **mortgage_rates**: Average mortgage interest rates
 - **national_data**: National property market data and economic indicators
 - **national_hmo_register**: Search the national register of HMOs
 - **national_park**: Check if a postcode is within a national park
@@ -69,7 +65,6 @@ Connect **PropertyData** to your AI agent to unlock professional-grade UK real e
 - **postcode_key_stats**: Key stats for all postcode districts in a region
 - **prices**: Live local asking prices
 - **prices_per_sqf**: Live local asking £/sqft
-- **property_types**: ONS breakdown of local property stock by type
 - **ptal**: PTAL score (Greater London only)
 - **rebuild_cost**: Estimate the approximate rebuild cost of a house
 - **rents**: Live local long-let asking rents
@@ -87,7 +82,6 @@ Connect **PropertyData** to your AI agent to unlock professional-grade UK real e
 - **title**: Address, type, and ownership information by title number
 - **title_use_class**: Predicted planning use class
 - **titles_by_company**: Search land titles by company ownership
-- **uprn**: Property information from UPRN
 - **uprn_title**: Lookup a title number from a UPRN
 - **uprns**: Find UPRNs in a given postcode area
 - **valuation_commercial_rent**: Rental valuation for a commercial property
@@ -96,6 +90,12 @@ Connect **PropertyData** to your AI agent to unlock professional-grade UK real e
 - **valuation_hmo**: Sale and gross rental valuations for an HMO
 - **valuation_rent**: Rental valuation for a property
 - **valuation_sale**: Sale valuation for a property
+- **demand_rent**: Determine local property rental demand
+- **growth**: Up to 7-year capital growth
+- **mortgage_calculator**: Calculate monthly mortgage payments
+- **mortgage_rates**: Average mortgage interest rates
+- **property_types**: ONS breakdown of local property stock by type
+- **uprn**: Property information from UPRN
 - **yields**: Determine local rental yields
 - **account_credits**: API account credits used/remaining
 - **account_documents**: Summary of previous document purchases
