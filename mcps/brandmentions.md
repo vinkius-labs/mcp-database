@@ -37,8 +37,8 @@ Connect your **BrandMentions** social listening account to any AI agent and orch
 - **add_project**: Create a new project for daily tracking
 - **delete_project**: Delete a project
 - **get_influencers**: List influencers for a specific project
-- **get_mentions**: Get full results for a completed search job
 - **get_remaining_credits**: Get current API credits limit/usage
+- **get_mentions**: Get full results for a completed search job
 - **get_processed_mentions**: Get partial results for a running search job
 - **get_project_mentions**: Retrieve mentions for a specific project
 - **list_projects**: List all active campaigns/projects

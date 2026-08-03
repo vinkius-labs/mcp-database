@@ -38,6 +38,7 @@ Empower your AI agent to orchestrate your entire logistics operation with **Axle
 - **get_account_check**: Verify Axle connection and system health
 - **get_driver_availability**: Check a driver remaining hours of service (HOS)
 - **get_driver**: Get specific profile details for a driver
+- **update_load**: Update a load/shipment details
 - **get_load**: Get details for a specific load
 - **get_vehicle_location**: Get the last known GPS location of a vehicle
 - **get_vehicle**: Get specific details for a single vehicle
@@ -46,7 +47,6 @@ Empower your AI agent to orchestrate your entire logistics operation with **Axle
 - **list_loads**: List all shipments/loads
 - **list_vehicles**: List all vehicles in the fleet
 - **update_driver_status**: Update a driver current duty status
-- **update_load**: Update a load/shipment details
 
 
 ## 💬 Prompt Examples

@@ -36,17 +36,17 @@ Empower your AI agent to orchestrate your entire lead capture workflow with **Ba
 
 ## Available Tools (12)
 - **delete_submission**: Permanently delete a submission
-- **get_form**: Get details for a specific form
-- **get_latest_submission**: Retrieve the single most recent submission
+- **get_account_check**: Verify Basin connection
 - **get_submission**: Get full details for a specific submission
 - **list_form_submissions**: Helper to list submissions for a specific form
-- **list_forms**: List all forms in your Basin account
 - **list_submissions**: List all submissions across all forms
 - **mark_as_not_spam**: Convenience tool to unmark a submission as spam
+- **get_form**: Get details for a specific form
+- **get_latest_submission**: Retrieve the single most recent submission
+- **list_forms**: List all forms in your Basin account
 - **mark_as_spam**: Convenience tool to mark a submission as spam
 - **refire_webhooks**: Manually trigger webhooks for a specific submission
 - **update_submission**: Update submission metadata (e.g. mark as spam)
-- **get_account_check**: Verify Basin connection
 
 
 ## 💬 Prompt Examples

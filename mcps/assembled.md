@@ -29,13 +29,13 @@ The **Assembled MCP Server** provides your AI agent with direct access to your w
 
 
 ## Available Tools (7)
-- **get_account_check**: Verify Assembled account connection
 - **list_agent_states**: List real-time agent states
 - **list_forecasts**: List contact volume forecasts
+- **get_account_check**: Verify Assembled account connection
 - **list_queues**: List all support queues
-- **list_schedules**: List agent schedules for a time range
 - **list_teams**: List all teams
 - **list_users**: List all users in Assembled
+- **list_schedules**: List agent schedules for a time range
 
 
 ## 💬 Prompt Examples

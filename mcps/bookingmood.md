@@ -38,10 +38,10 @@ Connect your **Bookingmood** rental management account to any AI agent and orche
 - **create_booking**: Create a new booking
 - **delete_booking**: Delete/cancel a booking permanently
 - **get_product**: Get details of a specific rental product
+- **list_products**: List all rental products
 - **list_bookings**: List all current bookings
 - **list_calendar_events**: List raw calendar events (blocks)
 - **list_contacts**: List guest contacts
-- **list_products**: List all rental products
 - **query_availability**: Check availability for a list of products
 - **search_availability**: Search for available products across dates
 - **update_booking**: Update an existing booking

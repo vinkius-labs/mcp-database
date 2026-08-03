@@ -35,6 +35,7 @@ Orchestrate your global mobile communication with **AvoSMS**, the high-performan
 
 
 ## Available Tools (11)
+- **list_responses**: List incoming SMS responses
 - **add_contact**: Add a contact to a list
 - **create_list**: Create a new contact list
 - **create_sender**: Request a new sender ID
@@ -42,7 +43,6 @@ Orchestrate your global mobile communication with **AvoSMS**, the high-performan
 - **delete_sender**: Delete a sender ID
 - **get_account_check**: Verify AvoSMS account connection
 - **get_balance**: Check remaining SMS credits balance
-- **list_responses**: List incoming SMS responses
 - **list_lists**: List all contact lists
 - **list_senders**: List all approved sender IDs
 - **send_sms**: Send an SMS message

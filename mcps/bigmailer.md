@@ -35,16 +35,16 @@ Connect your **BigMailer** account to any AI agent and orchestrate your email ma
 
 
 ## Available Tools (10)
-- **add_contact**: Add or update a contact in a brand
-- **get_brand_properties**: List custom properties for a brand
-- **get_brand**: Get specific brand details
-- **get_bulk_campaign**: Get specific bulk campaign details
 - **get_contact_list**: Get specific contact list details
 - **list_brands**: List all brands in the account
 - **list_bulk_campaigns**: List bulk campaigns for a brand
 - **list_contact_lists**: List contact lists for a brand
 - **list_contacts**: List contacts for a brand
 - **list_templates**: List email templates for a brand
+- **add_contact**: Add or update a contact in a brand
+- **get_brand_properties**: List custom properties for a brand
+- **get_brand**: Get specific brand details
+- **get_bulk_campaign**: Get specific bulk campaign details
 
 
 ## 💬 Prompt Examples

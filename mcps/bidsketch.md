@@ -5,45 +5,45 @@
 
 ## Overview
 
-**Category:** [productivity](../categories/productivity.md)
+**Category:** [document-management](../categories/document-management.md)
 
-Automate proposal creation via Bidsketch — list proposals, clients, and templates directly from any AI agent.
+Win more clients with beautiful proposals that track views, collect e-signatures, and accelerate your sales cycle.
 
 ## Description
-Connect your **Bidsketch** account to any AI agent and orchestrate your professional proposal workflows through natural conversation.
+Connect your **Bidsketch** account to any AI agent and take full control of your professional sales proposals and client management workflows through natural conversation.
 
 ### What you can do
 
-- **Proposal Management** — List, retrieve, and create proposals to speed up your sales process.
-- **Client Oversight** — Manage your client directory, including contact details and history.
-- **Template Discovery** — Access and list your saved proposal templates for consistent document generation.
-- **Fee Auditing** — List and verify the fees and line items associated with your proposals.
-- **User Profiles** — Retrieve account and user information directly from your workspace.
+- **Proposal Orchestration** — List and manage all sales proposals programmatically, retrieving detailed status, high-fidelity values, and associated client metadata in real-time
+- **Client Relationship Management** — Programmatically create and manage your directory of prospects and organizations to maintain a perfectly coordinated sales database
+- **Template Intelligence** — Access and monitor your library of proposal templates to ensure your high-fidelity brand styling and content are consistently applied
+- **Deal Tracking Architecture** — Retrieve granular details for specific proposals, including pricing components and high-fidelity descriptions directly through your agent
+- **Sales Visibility Monitoring** — Access comprehensive overviews of your active proposal pipeline and client growth to coordinate your revenue operations efficiently
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Bidsketch Subdomain and API Token
-3. Start winning more bids from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **API Token** from your Bidsketch account settings (Settings > API)
+3. Start orchestrating your sales documents and clients from Claude, Cursor, or any MCP client
+
+No more manual status checking or missing high-intent buyer views. Your AI acts as your dedicated sales operations coordinator and proposal architect.
 
 ### Who is this for?
 
-- **Freelancers & Agencies** — quickly check proposal statuses and client details without manual dashboard navigation.
-- **Sales Professionals** — create new proposals and clients straight from their workflow tools.
-- **Consultants** — manage templates and audit proposal fees using natural language.
+- **Account Executives** — instantly retrieve proposal summaries and update client records using natural language commands
+- **Freelancers & Agencies** — automate the creation of professional quotes and monitor prospect engagement without leaving your workspace
+- **Sales Managers** — monitor the active proposal pipeline and coordinate client databases through simple AI queries
 
 
-## Available Tools (10)
-- **list_clients**: List all clients
-- **list_fees**: List fees for a specific proposal
-- **list_proposals**: List all proposals
-- **list_templates**: List all proposal templates
-- **update_proposal**: Update an existing proposal
+## Available Tools (6)
 - **create_client**: Create a new client
-- **create_proposal**: Create a new proposal
-- **get_client**: Get specific client details
-- **get_proposal**: Get specific proposal details
-- **get_user_details**: Get current user details
+- **list_proposals**: List all sales proposals
+- **list_templates**: List all proposal templates
+- **create_proposal**: Pass data as a JSON string.
+
+Create a new proposal
+- **get_proposal_details**: Get specific proposal details
+- **list_clients**: List all clients
 
 
 ## 💬 Prompt Examples
@@ -51,38 +51,38 @@ Connect your **Bidsketch** account to any AI agent and orchestrate your professi
 Here are some examples of how you can interact with the **Bidsketch** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active proposals in Bidsketch."
+> "List all my active sales proposals in Bidsketch."
 
 **🤖 AI Agent:**
-> I've retrieved your proposals. You have 3 documents: 'Web Design Project' (ID: prop_1), 'Content Strategy' (ID: prop_2), and 'Marketing Audit' (ID: prop_3).
+> I've retrieved your proposals. You currently have 5 active documents, including 'Website Redesign' (Status: Sent) and 'SEO Strategy'. Would you like the high-fidelity pricing metadata for any of these?
 
 ---
 
 **👤 You:**
-> "Find the contact ID for 'Acme Corp'."
+> "Create a new client 'John Doe' (john@example.com) for 'Acme Corp'."
 
 **🤖 AI Agent:**
-> I found one matching client: 'Acme Corporation' (ID: client_992). You can use this ID to create new proposals for them.
+> Client created! John Doe has been successfully added to your Bidsketch directory (ID: cli_789). He is now available for proposal association. Shall I list your available templates for him?
 
 ---
 
 **👤 You:**
-> "Show my last 5 proposal templates."
+> "Show the status and value for proposal ID 'prop_123'."
 
 **🤖 AI Agent:**
-> Retrieving templates... I found 5 templates, including 'Basic Design Services', 'Consulting Agreement', and 'SEO Retainer'. Which one would you like to use?
+> Fetching proposal details... Proposal prop_123 ('Global Logistics Pilot') is currently 'Viewed' with a total value of $5,400.00. Shall I retrieve the high-fidelity fee breakdown for you?
 
 
 ## ❓ FAQ
 
-**Q: Can I check the status of a specific proposal using the agent?**
-Yes! Use the `get_proposal` tool with the Proposal ID. Your agent will fetch the latest status, such as whether it has been viewed or accepted.
+**Q: How do I find my Bidsketch API Token?**
+Log in to your account, navigate to **Settings** > **API**, and copy your unique personal token.
 
-**Q: How do I list all my clients in Bidsketch?**
-Simply ask the agent to `list_clients`. It will retrieve the directory of all companies and persons registered in your Bidsketch account.
+**Q: Can I use specific templates via AI?**
+Yes! Use the `list_templates` tool to identify the correct ID, and then specify it when creating a new proposal programmatically.
 
-**Q: Does the integration allow me to create a new client?**
-Yes! Use the `create_client` action with the name and optionally the email. Your agent will register the new client in your Bidsketch account instantly.
+**Q: How do I track if a proposal was sent?**
+Use the `list_proposals` or `get_proposal_details` tools to retrieve the current status (Draft, Sent, Viewed, Won) of any document.
 
 
 ## Installation & Usage

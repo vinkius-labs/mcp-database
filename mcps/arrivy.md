@@ -29,15 +29,15 @@ The **Arrivy MCP Server** empowers your AI agent to coordinate field operations 
 
 
 ## Available Tools (9)
-- **get_task**: Get details for a specific task
-- **create_customer**: Create a new customer record
 - **create_task**: Create a new service task in Arrivy
-- **get_account_check**: Verify Arrivy account connection
+- **get_task**: Get details for a specific task
 - **list_crews**: List all field crews and personnel
-- **list_customers**: List all customers in the system
-- **list_locations**: List all tracked locations
 - **list_tasks**: List all service tasks in Arrivy
 - **update_task**: Update an existing service task
+- **create_customer**: Create a new customer record
+- **get_account_check**: Verify Arrivy account connection
+- **list_customers**: List all customers in the system
+- **list_locations**: List all tracked locations
 
 
 ## 💬 Prompt Examples

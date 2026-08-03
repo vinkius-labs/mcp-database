@@ -33,6 +33,13 @@ Connect your **Apaleo** hotel to any AI agent — the API-first PMS built for mo
 - **list_reservations**: The front-desk dashboard.
 
 List hotel reservations
+- **list_rate_plans**: List rate plans
+- **list_folios**: Filter by reservation for guest billing.
+
+List guest folios
+- **list_invoices**: For accounting and audit.
+
+List invoices
 - **check_availability**: Shows sellable units per room type per day.
 
 Check room availability
@@ -45,13 +52,6 @@ List hotel properties
 
 List room types
 - **list_rooms**: List rooms
-- **list_rate_plans**: List rate plans
-- **list_folios**: Filter by reservation for guest billing.
-
-List guest folios
-- **list_invoices**: For accounting and audit.
-
-List invoices
 
 
 ## 💬 Prompt Examples

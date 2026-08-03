@@ -34,6 +34,7 @@ Connect your **BatchDialer** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
+- **list_phone_numbers**: List managed phone numbers
 - **add_lead**: Add a new lead/contact
 - **get_call_details**: Get details of a specific call
 - **get_campaign**: Get specific campaign details
@@ -43,7 +44,6 @@ Connect your **BatchDialer** account to any AI agent and take full control of yo
 - **list_campaigns**: List all BatchDialer campaigns
 - **list_dispositions**: List call outcomes/dispositions
 - **list_leads**: List contacts/leads
-- **list_phone_numbers**: List managed phone numbers
 
 
 ## 💬 Prompt Examples

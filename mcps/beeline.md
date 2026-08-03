@@ -35,15 +35,15 @@ Connect your **Beeline Vendor Management System (VMS)** account to any AI agent 
 
 ## Available Tools (10)
 - **get_requisition**: Get details of a job requisition
+- **get_assignment**: Get details of a specific assignment
 - **get_timesheet**: Get details of a specific timesheet
-- **get_user_info**: Get Beeline user profile
-- **list_assignments**: List active work assignments
 - **list_expenses**: List expense reports
 - **list_requisitions**: List job requisitions
+- **search_requisitions**: Search job requisitions by keyword
+- **get_user_info**: Get Beeline user profile
+- **list_assignments**: List active work assignments
 - **list_suppliers**: List vendors/suppliers
 - **list_timesheets**: List submitted timesheets
-- **search_requisitions**: Search job requisitions by keyword
-- **get_assignment**: Get details of a specific assignment
 
 
 ## 💬 Prompt Examples

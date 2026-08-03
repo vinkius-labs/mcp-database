@@ -7,42 +7,47 @@
 
 **Category:** [communication-messaging](../categories/communication-messaging.md)
 
-Manage business messaging, contacts, and broadcasts via Avochato — orchestrate SMS and MMS directly via AI.
+Text your customers on the channels they prefer with two-way business messaging that integrates into your existing workflows.
 
 ## Description
-Connect your **Avochato** account to any AI agent and manage your business messaging workflows through natural conversation.
+Connect your **Avochato** account to any AI agent and take full control of your high-fidelity business texting and customer engagement workflows through natural conversation.
 
 ### What you can do
 
-- **Business Messaging** — Send and receive SMS/MMS messages with full delivery status tracking and conversation history
-- **Contact Organization** — Create, update, and search for contacts and manage tags to segment your audience
-- **Broadcast Management** — Coordinate and audit mass messaging campaigns and broadcasts across your target inboxes
-- **Inbox Auditing** — Monitor specific subdomains and verify current API user details for secure communication
+- **Multichannel Messaging Orchestration** — Instantly dispatch high-fidelity SMS and MMS messages to customers and leads with automatic link and media handling
+- **Relationship Intelligence** — Sync and manage your entire business contact directory programmatically, retrieving detailed high-fidelity profiles and interaction history
+- **Ticket Lifecycle Management** — Organize team workflows by creating and updating tickets, monitoring status transitions, and assigning ownership in real-time
+- **Communication Architecture** — Access complete conversation logs and message threads to maintain high-fidelity oversight of your organizational digital voice
+- **Operational Monitoring** — Configure real-time webhooks for incoming messages and retrieve account-level metadata directly through your agent for instant reporting
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Avochato Auth ID and Auth Secret
-3. Start managing your business messaging from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **Auth ID** and **Auth Secret** from your Avochato settings (API Access)
+3. Start automating your customer notifications and engagement from Claude, Cursor, or any MCP client
+
+No more manual logging of text interactions or missing critical client messages. Your AI acts as your dedicated communication coordinator and support architect.
 
 ### Who is this for?
 
-- **Support & Sales Teams** — instantly respond to customer messages and update contact details without leaving the workspace
-- **Marketing Leads** — coordinate SMS broadcasts and monitor campaign results through natural language
-- **Operations Teams** — automate localized messaging workflows and audit conversation logs directly from the IDE
+- **Sales Teams** — instantly send personalized order updates and follow-up messages using natural language commands
+- **Support Agents** — manage high-volume ticket queues and update customer statuses without leaving your workspace
+- **Marketing Managers** — orchestrate SMS broadcasts and monitor audience engagement through simple AI queries
 
 
-## Available Tools (10)
-- **create_broadcast**: Schedule or send a message broadcast
-- **create_contact**: Add a new contact to Avochato
-- **get_account_check**: Verify Avochato account connection
-- **get_contact**: Get details for a specific contact
-- **list_broadcasts**: List message broadcasts
-- **list_contacts**: List and search contacts
-- **list_messages**: List message history in Avochato
-- **send_message**: Send an SMS/MMS message
-- **update_contact**: Update an existing contact
-- **who_am_i**: Get current API user and inbox information
+## Available Tools (12)
+- **create_contact**: Create a new contact
+- **create_webhook**: Create a new webhook
+- **delete_webhook**: Delete a webhook
+- **get_contact**: Get contact details
+- **get_account_info**: Get account identity
+- **list_contacts**: List SMS contacts
+- **list_messages**: List SMS/MMS messages
+- **list_tickets**: List conversation tickets
+- **list_webhooks**: List active webhooks
+- **send_message**: Send an SMS/MMS
+- **update_contact**: Update contact info
+- **update_ticket**: Update ticket status
 
 
 ## 💬 Prompt Examples
@@ -50,38 +55,38 @@ Connect your **Avochato** account to any AI agent and manage your business messa
 Here are some examples of how you can interact with the **Avochato** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Send a message to '555-0199': 'Hi there, your order is ready for pickup!'"
+> "Send a SMS 'Your order is ready!' to '+14155550123'."
 
 **🤖 AI Agent:**
-> Sending message to 555-0199... Success! The SMS has been transmitted. The current status is 'sent'. Would you like me to notify you when it's delivered?
+> Message dispatched! I've successfully sent the notification to +14155550123 via Avochato. The status is currently 'Sent'. Shall I alert you as soon as the recipient replies?
 
 ---
 
 **👤 You:**
-> "List the last 10 messages from today."
+> "List all active tickets in my Avochato inbox."
 
 **🤖 AI Agent:**
-> I've retrieved your recent message history. I found 10 messages from today, including 4 outgoing SMS and 6 incoming responses. Most are related to 'Pickup Notifications'. Shall I summarize the incoming replies for you?
+> I've retrieved your inbox. You currently have 5 active tickets, including @user1 and @user2. One ticket is flagged as high priority. Would you like the detailed conversation history for any of these?
 
 ---
 
 **👤 You:**
-> "Find all contacts with the tag 'High-Value'."
+> "Update ticket '12345' status to 'closed'."
 
 **🤖 AI Agent:**
-> Searching contacts... I found 5 contacts matching the 'High-Value' tag: John D., Sarah M., Robert P., Emily W., and Kevin S. Would you like to schedule a broadcast message for this group?
+> Ticket updated! I've successfully closed ticket 12345 in your organization's workflow. It's now moved to the historical records. Need help with any other organizational tasks?
 
 
 ## ❓ FAQ
 
-**Q: Can the AI automatically send an SMS to a new contact?**
-Yes! Use the `send_message` tool. You'll need to provide the phone number and the message body. Your agent will instantly transmit the SMS through your Avochato inbox.
+**Q: How do I find my Avochato API credentials?**
+Log in to your account, navigate to **Settings** > **API Access**, and copy your unique Auth ID and Auth Secret.
 
-**Q: How do I find all contacts that have been tagged with a specific label?**
-Simply ask the agent to run the `get_contacts` tool with the target tag. It will return a list of matching contact profiles, including their names and phone numbers.
+**Q: Can I send media files via AI?**
+Yes! The `send_message` tool accepts a `media_url` parameter, allowing your agent to dispatch high-fidelity MMS content programmatically.
 
-**Q: Does the integration allow for sending images through MMS?**
-Yes. The `send_message` tool supports a `media_url` parameter, allowing you to include images or other media files in your outgoing messages.
+**Q: How do I check active tickets?**
+Use the `list_tickets` tool to retrieve your complete directory of active and pending support tickets directly through your agent.
 
 
 ## Installation & Usage

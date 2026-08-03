@@ -34,16 +34,16 @@ Connect your **OvationCXM (BoomTown)** account to any AI agent and orchestrate y
 
 
 ## Available Tools (10)
+- **list_customers**: List all customers/end-users
+- **list_teams**: List all support teams
 - **get_customer**: Get details of a specific customer
 - **get_issue**: Get details of a specific issue
 - **get_journey**: Get details of a specific journey
 - **get_organization**: Get details of a specific organization
 - **get_team**: Get details of a specific team
-- **list_customers**: List all customers/end-users
 - **list_issues**: List all support issues/cases
 - **list_journeys**: List all customer journeys
 - **list_organizations**: List all organizations
-- **list_teams**: List all support teams
 
 
 ## 💬 Prompt Examples

@@ -30,8 +30,8 @@ The **Aspire MCP Server** empowers your AI agent to manage your influencer marke
 
 ## Available Tools (8)
 - **get_account_check**: Verify Aspire account connection
-- **get_member**: Get detailed profile for a specific creator/member
 - **get_post**: Get engagement metrics for a specific post
+- **get_member**: Get detailed profile for a specific creator/member
 - **get_project**: Get details for a specific project
 - **list_campaigns**: Alias for list_projects. Lists marketing campaigns
 - **list_posts**: List social posts and content performance

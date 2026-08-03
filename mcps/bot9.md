@@ -28,13 +28,13 @@ Connect your **Bot9** account to any AI agent and orchestrate your customer supp
 
 ## Available Tools (8)
 - **add_data_source**: Add a URL to train the bot
-- **create_bot**: Create a new AI chatbot
-- **get_bot**: Get details of a specific bot
 - **get_conversation_history**: Retrieve message history of a conversation
 - **list_bots**: List all AI bots
 - **list_conversations**: List active conversations for a bot
 - **list_data_sources**: List knowledge base sources for a bot
 - **send_message**: Send a message to a bot and get a response
+- **create_bot**: Create a new AI chatbot
+- **get_bot**: Get details of a specific bot
 
 
 ## 💬 Prompt Examples

@@ -40,10 +40,10 @@ Connect your **Bright Pattern** contact center account to any AI agent and orche
 - **get_user**: Get details of a specific user
 - **list_campaigns**: List all outbound campaigns
 - **list_interactions**: List recent interactions (calls, chats)
-- **list_services**: List all contact center services
-- **list_skills**: List all configured agent skills
 - **list_teams**: List all agent teams
 - **list_users**: List all contact center users
+- **list_services**: List all contact center services
+- **list_skills**: List all configured agent skills
 
 
 ## 💬 Prompt Examples

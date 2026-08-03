@@ -35,11 +35,11 @@ Orchestrate your team's rhythm with **Ayanza**, the AI-first project management 
 
 
 ## Available Tools (10)
+- **get_project**: Get details for a specific Ayanza project
+- **list_projects**: List projects in Ayanza
 - **create_task**: Create a new task in Ayanza
 - **delete_task**: Delete an Ayanza task
 - **get_me**: Get current authenticated user info
-- **get_project**: Get details for a specific Ayanza project
-- **list_projects**: List projects in Ayanza
 - **get_task**: Get details for a specific Ayanza task
 - **list_tasks**: List tasks in Ayanza
 - **list_users**: List users in the Ayanza workspace
