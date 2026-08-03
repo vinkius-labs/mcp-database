@@ -14,9 +14,9 @@ This MCP server provides high-precision parsing for PostgreSQL connection string
 
 
 ## Available Tools (3)
-- **identify_auth_mechanisms**: Identifies available authentication mechanisms
 - **parse_connection_string**: Parses a PostgreSQL connection URI
 - **validate_port_configuration**: Validates the provided port and host configuration
+- **identify_auth_mechanisms**: Identifies available authentication mechanisms
 
 
 ## 💬 Prompt Examples

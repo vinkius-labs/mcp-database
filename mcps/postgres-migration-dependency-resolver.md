@@ -14,9 +14,9 @@ The Postgres Migration Dependency Resolver uses Kahn's algorithm and directed ac
 
 
 ## Available Tools (3)
-- **analyze_downstream_impact**: Analyzes the downstream impact of a migration change
 - **resolve_migration_order**: Resolves the execution order of migrations
 - **validate_dependency_integrity**: Validates that all dependencies exist
+- **analyze_downstream_impact**: Analyzes the downstream impact of a migration change
 
 
 ## 💬 Prompt Examples

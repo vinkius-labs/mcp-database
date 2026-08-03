@@ -14,9 +14,9 @@ This MCP server provides a deterministic utility to bridge the gap between varyi
 
 
 ## Available Tools (3)
-- **calculate_coordinate**: Calculate normalized viewport coordinates
 - **get_viewport_constants**: Retrieve viewport constants
 - **verify_dimensions**: Verify if dimensions are valid
+- **calculate_coordinate**: Calculate normalized viewport coordinates
 
 
 ## 💬 Prompt Examples

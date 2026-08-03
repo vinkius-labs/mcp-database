@@ -14,9 +14,9 @@ The Langfuse Trace URL Extractor automates the process of finding execution trac
 
 
 ## Available Tools (3)
-- **construct_langfuse_url**: Constructs a direct Langfuse trace URL
 - **extract_trace_identifiers**: Extracts trace and project IDs from a Langfuse payload JSON
 - **validate_payload_schema**: Validates if a JSON payload contains required Langfuse fields
+- **construct_langfuse_url**: Constructs a direct Langfuse trace URL
 
 
 ## 💬 Prompt Examples

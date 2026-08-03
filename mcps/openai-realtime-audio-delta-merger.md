@@ -14,11 +14,11 @@ The OpenAI Realtime Audio Delta Merger is an essential utility for developers wo
 
 
 ## Available Tools (3)
-- **check_sequence_integrity**: Analyzes the input stream to detect if any audio chunks were lost or duplicated
 - **merge_audio_deltas**: Returns total chunks merged and estimated byte size.
 
 Merges multiple audio delta chunks into a single base64 string
 - **validate_base64_structure**: Represents the structural health of the reconstructed payload
+- **check_sequence_integrity**: Analyzes the input stream to detect if any audio chunks were lost or duplicated
 
 
 ## 💬 Prompt Examples

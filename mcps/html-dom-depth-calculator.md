@@ -14,9 +14,9 @@ The HTML DOM Depth Calculator is a precision utility designed to prevent memory 
 
 
 ## Available Tools (3)
-- **analyze_tag_metrics**: Analyzes HTML for total tags parsed and structural errors
 - **assess_scraping_complexity**: Assesses the risk of scraping a given HTML string
 - **compute_max_nesting_depth**: Calculates the exact maximum nesting depth of HTML tags
+- **analyze_tag_metrics**: Analyzes HTML for total tags parsed and structural errors
 
 
 ## 💬 Prompt Examples

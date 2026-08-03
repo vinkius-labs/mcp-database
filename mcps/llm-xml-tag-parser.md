@@ -10,13 +10,13 @@
 Extract and validate content within XML-style tags from LLM outputs.
 
 ## Description
-The LLM XML Tag Parser MCP server provides a deterministic way to parse structured data embedded in unstructured text. It is specifically designed for handling the output of models like Claude that use XML tags (e.g., ``, ``) to separate reasoning from final responses. Using robust regex-based extraction and depth tracking, it can handle nested tags and verify structural integrity. You can use `extract_single_tag` to find specific blocks, `extract_all_tags` to retrieve all instances of a tag, or `validate_tag_integrity` to ensure your XML structure is balanced.
+The LLM XML Tag Parser MCP server provides a deterministic way to parse structured data embedded in unstructured text. It is specifically designed for handling the output of models like Claude that use XML tags (e.g., `<think>`, `<answer>`) to separate reasoning from final responses. Using robust regex-based extraction and depth tracking, it can handle nested tags and verify structural integrity. You can use `extract_single_tag` to find specific blocks, `extract_all_tags` to retrieve all instances of a tag, or `validate_tag_integrity` to ensure your XML structure is balanced.
 
 
 ## Available Tools (3)
+- **extract_single_tag**: Extract the first occurrence of a specific XML tag
 - **validate_tag_integrity**: Validate the integrity of XML tag nesting
 - **extract_all_tags**: Extract all top-level occurrences of a specific XML tag
-- **extract_single_tag**: Extract the first occurrence of a specific XML tag
 
 
 ## 💬 Prompt Examples

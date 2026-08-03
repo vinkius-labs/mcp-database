@@ -51,12 +51,6 @@ Here are some examples of how you can interact with the **Chain-of-Thought Skele
 **Q: What does it mean if `check_structural_integrity` returns broken loops?**
 A broken loop indicates that an action segment was detected in the text, but it was not followed by a corresponding observation segment, meaning the agent's execution cycle was interrupted.
 
-**Q: What does it mean if `check_structural_integrity` returns broken loops?**
-A broken loop indicates that an action segment was detected in the text, but it was not followed by a corresponding observation segment, meaning the agent's execution cycle was interrupted.
-
-**Q: Can I use this to detect if an agent is using XML tags or keyword prefixes?**
-Yes, the `verify_parsing_pattern` tool specifically identifies whether the input text follows the XML-style tag family or the keyword-based prefix family.
-
 **Q: Can I use this to detect if an agent is using XML tags or keyword prefixes?**
 Yes, the `verify_parsing_pattern` tool specifically identifies whether the input text follows the XML-style tag family or the keyword-based prefix family.
 

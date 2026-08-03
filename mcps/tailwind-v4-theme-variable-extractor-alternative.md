@@ -1,4 +1,4 @@
-# Tailwind v4 Theme Variable Extractor Alternative MCP Server
+# Tailwind v4 Theme Variable Extractor MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/tailwind-v4-theme-variable-extractor-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -21,7 +21,7 @@ Extracts CSS variables from a Tailwind v04 @theme block
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Tailwind v4 Theme Variable Extractor Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Tailwind v4 Theme Variable Extractor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "Extract variables from this CSS: @theme { --color-primary: #000; --spacing-md: 1rem; }"
@@ -72,7 +72,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Tailwind v4 Theme Variable Extractor Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **Tailwind v4 Theme Variable Extractor** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `tailwind-v4-theme-variable-extractor-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Tailwind v4 Theme Variable Extractor Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **Tailwind v4 Theme Variable Extractor** tools.
 
 **Configuration:**
 ```json

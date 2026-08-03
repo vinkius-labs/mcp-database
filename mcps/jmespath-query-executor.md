@@ -15,10 +15,10 @@ The `jmespath-query-executor` provides a reliable way to extract specific data f
 
 ## Available Tools (3)
 - **execute_jmespath_query**: Executes a JMESPath-like query on JSON data
-- **inspect_json_schema**: Analyzes the top-leveled structure of JSON data
 - **validate_query_syntax**: ", "[]", and "*".
 
 Validates the syntax of a JMESPath-like query string
+- **inspect_json_schema**: Analyzes the top-leveled structure of JSON data
 
 
 ## 💬 Prompt Examples

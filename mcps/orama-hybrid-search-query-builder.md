@@ -14,9 +14,9 @@ The Orama Hybrid Search Query Builder acts as a specialized bridge for AI agents
 
 
 ## Available Tools (3)
-- **build_orama_query**: Constructs a nested JSON object for Orama
 - **get_operator_mapping_summary**: Returns a summary of Orama operator mapping rules
 - **validate_filter_syntax**: Validates the syntax of a filter dictionary
+- **build_orama_query**: Constructs a nested JSON object for Orama
 
 
 ## 💬 Prompt Examples

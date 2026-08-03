@@ -14,16 +14,16 @@ The URL Query String Deep Parser is a specialized utility designed to bridge the
 
 
 ## Available Tools (4)
-- **flatten_to_pairs**: Returns array of "key=value" strings.
-
-Extracts all decoded key-value pairs into a simple, flat list for inspection
-- **get_nesting_complexity**: Analyzes the structural depth and complexity of the parsed query string
 - **lookup_deep_value**: g., "user.profile.id"). Returns found value and if access was nested.
 
 Retrieves the value of a specific property located at any depth within the query string
 - **parse_query_string**: Returns parsed object, total count, and nested keys count.
 
 Converts a raw query string into its fully structured, nested JSON representation
+- **flatten_to_pairs**: Returns array of "key=value" strings.
+
+Extracts all decoded key-value pairs into a simple, flat list for inspection
+- **get_nesting_complexity**: Analyzes the structural depth and complexity of the parsed query string
 
 
 ## 💬 Prompt Examples

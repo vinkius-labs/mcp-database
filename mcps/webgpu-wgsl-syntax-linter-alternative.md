@@ -1,4 +1,4 @@
-# WebGPU WGSL Syntax Linter Alternative MCP Server
+# WebGPU WGSL Syntax Linter MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/webgpu-wgsl-syntax-linter-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -14,14 +14,14 @@ The WebGPU WGSL Syntax Linter MCP server provides a deterministic way to validat
 
 
 ## Available Tools (3)
+- **verify_bracket_balance**: Verifies if brackets are balanced in the provided WGSL code
 - **detect_entry_points**: Detects entry points in the provided WGGL code
 - **generate_lint_report**: Generates a lint report for the provided WGGL code
-- **verify_bracket_balance**: Verifies if brackets are balanced in the provided WGSL code
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **WebGPU WGSL Syntax Linter Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **WebGPU WGSL Syntax Linter** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "Check if this WGSL code is structurally sound: @vertex fn main() { }"
@@ -72,7 +72,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **WebGPU WGSL Syntax Linter Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **WebGPU WGSL Syntax Linter** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `webgpu-wgsl-syntax-linter-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **WebGPU WGSL Syntax Linter Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **WebGPU WGSL Syntax Linter** tools.
 
 **Configuration:**
 ```json

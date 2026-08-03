@@ -1,4 +1,4 @@
-# shadcn/ui Dependency Resolver Alternative MCP Server
+# shadcn/ui Dependency Resolver MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/shadcnui-dependency-resolver-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -10,7 +10,7 @@
 Resolves exact shadcn/ui component dependencies from JSX snippets.
 
 ## Description
-This MCP server solves the problem of 'dependency blindness' in AI coding agents. When an agent generates a JSX snippet using a component like ``, it often forgets that the project also requires the `dialog` component package and its associated sub-components (like `DialogContent`) to be properly installed. By using the `extract_dependencies` tool, you can provide any JSX/TSX code snippet to identify all required shadcn/ui base components and detect if essential sub-components are missing from your implementation.
+This MCP server solves the problem of 'dependency blindness' in AI coding agents. When an agent generates a JSX snippet using a component like `<DialogTrigger>`, it often forgets that the project also requires the `dialog` component package and its associated sub-components (like `DialogContent`) to be properly installed. By using the `extract_dependencies` tool, you can provide any JSX/TSX code snippet to identify all required shadcn/ui base components and detect if essential sub-components are missing from your implementation.
 
 
 ## Available Tools (3)
@@ -25,7 +25,7 @@ Verifies if a specific string corresponds to a known shadcn/ui sub-component or 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **shadcn/ui Dependency Resolver Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **shadcn/ui Dependency Resolver** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "Analyze this JSX: <Button>Click me</Button>"
@@ -76,7 +76,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **shadcn/ui Dependency Resolver Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **shadcn/ui Dependency Resolver** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -84,7 +84,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `shadcnui-dependency-resolver-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **shadcn/ui Dependency Resolver Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **shadcn/ui Dependency Resolver** tools.
 
 **Configuration:**
 ```json

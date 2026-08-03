@@ -18,9 +18,9 @@ The `jwt-payload-extractor` implements a deterministic decoding pipeline for ins
 
 
 ## Available Tools (3)
+- **extract_token_identity**: Extracts a specific identity claim from a JWT token
 - **check_token_expiry**: Checks the expiration of a JWT token
 - **decode_jwt_payload**: Decodes the payload of a JWT string
-- **extract_token_identity**: Extracts a specific identity claim from a JWT token
 
 
 ## 💬 Prompt Examples

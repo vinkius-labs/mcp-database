@@ -1,4 +1,4 @@
-# SSE Stream Reassembler Alternative MCP Server
+# SSE Stream Reassembler MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sse-stream-reassembler-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -21,7 +21,7 @@ The SSE Stream Reassembler is designed to solve the problem of fragmented LLM re
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **SSE Stream Reassembler Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **SSE Stream Reassembler** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "I have these SSE chunks: 'data: {"id": 1}\n\ndata: {"id": 2}'. Reassemble them."
@@ -72,7 +72,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **SSE Stream Reassembler Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **SSE Stream Reassembler** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -80,7 +80,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `sse-stream-reassembler-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **SSE Stream Reassembler Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **SSE Stream Reassembler** tools.
 
 **Configuration:**
 ```json

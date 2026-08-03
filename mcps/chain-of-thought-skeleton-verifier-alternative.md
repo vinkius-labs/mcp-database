@@ -1,4 +1,4 @@
-# Chain-of-Thought Skeleton Verifier Alternative MCP Server
+# Chain-of-Thought Skeleton Verifier MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/chain-of-thought-skeleton-verifier-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -10,7 +10,7 @@
 Validates the structural integrity and parsing patterns of ReAct and Chain-of-Thought agent outputs.
 
 ## Description
-The Chain-of-Thought Skeleton Verifier MCP server provides a specialized toolkit for auditing the 'anatomy' of AI reasoning processes. It allows developers to programmatically verify if agent outputs adhere to specific structural families, such as XML-style tags (e.g., ``) or keyword-based prefixes (e.g., `Thought:`). By using tools like `verify_parsing_pattern`, you can detect pattern mismatches, while `check_structural_integrity` identifies broken reasoning loops where actions are initiated without corresponding observations. Additionally, `get_reasoning_stats` provides quantitative metrics, including thought step counts and efficiency scores, to measure the reasoning density of your agentic workflows.
+The Chain-of-Thought Skeleton Verifier MCP server provides a specialized toolkit for auditing the 'anatomy' of AI reasoning processes. It allows developers to programmatically verify if agent outputs adhere to specific structural families, such as XML-style tags (e.g., `<thought>`) or keyword-based prefixes (e.g., `Thought:`). By using tools like `verify_parsing_pattern`, you can detect pattern mismatches, while `check_structural_integrity` identifies broken reasoning loops where actions are initiated without corresponding observations. Additionally, `get_reasoning_stats` provides quantitative metrics, including thought step counts and efficiency scores, to measure the reasoning density of your agentic workflows.
 
 
 ## Available Tools (3)
@@ -21,7 +21,7 @@ The Chain-of-Thought Skeleton Verifier MCP server provides a specialized toolkit
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Chain-of-Thought Skeleton Verifier Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Chain-of-Thought Skeleton Verifier** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "Analyze this agent output: <thought>I need to check the weather.</thought><action>get_weather()</action>"
@@ -51,12 +51,6 @@ Here are some examples of how you can interact with the **Chain-of-Thought Skele
 **Q: What does it mean if `check_structural_integrity` returns broken loops?**
 A broken loop indicates that an action segment was detected in the text, but it was not followed by a corresponding observation segment, meaning the agent's execution cycle was interrupted.
 
-**Q: What does it mean if `check_structural_integrity` returns broken loops?**
-A broken loop indicates that an action segment was detected in the text, but it was not followed by a corresponding observation segment, meaning the agent's execution cycle was interrupted.
-
-**Q: Can I use this to detect if an agent is using XML tags or keyword prefixes?**
-Yes, the `verify_parsing_pattern` tool specifically identifies whether the input text follows the XML-style tag family or the keyword-based prefix family.
-
 **Q: Can I use this to detect if an agent is using XML tags or keyword prefixes?**
 Yes, the `verify_parsing_pattern` tool specifically identifies whether the input text follows the XML-style tag family or the keyword-based prefix family.
 
@@ -78,7 +72,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Chain-of-Thought Skeleton Verifier Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **Chain-of-Thought Skeleton Verifier** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -86,7 +80,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `chain-of-thought-skeleton-verifier-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Chain-of-Thought Skeleton Verifier Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **Chain-of-Thought Skeleton Verifier** tools.
 
 **Configuration:**
 ```json

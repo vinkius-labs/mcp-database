@@ -10,7 +10,7 @@
 Resolves complex SemVer ranges against available versions.
 
 ## Description
-The Semantic Version Constraint Solver is a specialized MCP server designed for DevOps and release engineering workflows. It allows AI agents to programmatically resolve complex Semantic Versioning (SemVer) ranges—such as ">=1.2.0
+The Semantic Version Constraint Solver is a specialized MCP server designed for DevOps and release engineering workflows. It allows AI agents to programmatically resolve complex Semantic Versioning (SemVer) ranges—such as ">=1.2.0 <2.0.0 || 3.0.0"—against a provided list of available versions. By using tools like `solve_semver_range`, `verify_version_format`, and `decompose_constraint_logic`, agents can ensure deployment compatibility, automate dependency checks, and prevent breaking changes in CI/CD pipelines.
 
 
 ## Available Tools (3)

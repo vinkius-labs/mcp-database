@@ -10,13 +10,13 @@
 Ensure your Svelte components strictly adhere to the new Runes API syntax.
 
 ## Description
-The Svelte 5 Rune Syntax Validator is a specialized tool for developers transitioning from Svelte 4 to Svelte 5. It performs deep structural audits of your component strings to ensure that reactive primitives like `$state`, `$derived`, `$effect`, and `$props` are used correctly. The validator enforces critical rules, such as ensuring all runes reside within `` tags and verifying that `$props` follows the required destructuring pattern. By using `validate_component_syntax`, you can catch isolation breaches and boundary errors before they reach production.
+The Svelte 5 Rune Syntax Validator is a specialized tool for developers transitioning from Svelte 4 to Svelte 5. It performs deep structural audits of your component strings to ensure that reactive primitives like `$state`, `$derived`, `$effect`, and `$props` are used correctly. The validator enforces critical rules, such as ensuring all runes reside within `<script>` tags and verifying that `$props` follows the required destructuring pattern. By using `validate_component_syntax`, you can catch isolation breaches and boundary errors before they reach production.
 
 
 ## Available Tools (3)
 - **rune_inventory**: Checks for the presence of required runes in a Svelte component
-- **script_boundary**: Identifies the boundaries of a script block in a Svelte component
 - **syntax_validation**: Validates the syntax of a Svelte component
+- **script_boundary**: Identifies the boundaries of a script block in a Svelte component
 
 
 ## 💬 Prompt Examples

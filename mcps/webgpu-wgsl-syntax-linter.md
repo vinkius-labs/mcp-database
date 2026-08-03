@@ -14,9 +14,9 @@ The WebGPU WGSL Syntax Linter MCP server provides a deterministic way to validat
 
 
 ## Available Tools (3)
+- **verify_bracket_balance**: Verifies if brackets are balanced in the provided WGSL code
 - **detect_entry_points**: Detects entry points in the provided WGGL code
 - **generate_lint_report**: Generates a lint report for the provided WGGL code
-- **verify_bracket_balance**: Verifies if brackets are balanced in the provided WGSL code
 
 
 ## 💬 Prompt Examples
