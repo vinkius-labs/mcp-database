@@ -36,16 +36,16 @@ No more manual logging into complex legal dashboards or missing case updates. Yo
 
 
 ## Available Tools (10)
-- **create_matter**: Create a new legal matter
-- **get_matter**: Get details for a specific matter
 - **list_companies**: List companies/clients
+- **get_matter**: Get details for a specific matter
 - **list_contacts**: List contacts
-- **list_tasks**: List legal tasks
-- **list_time_logs**: List time entries
 - **list_documents**: List uploaded documents
 - **list_invoices**: List legal invoices
 - **list_litigation**: List litigation cases
 - **list_matters**: List legal matters
+- **create_matter**: Create a new legal matter
+- **list_tasks**: List legal tasks
+- **list_time_logs**: List time entries
 
 
 ## 💬 Prompt Examples

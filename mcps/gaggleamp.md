@@ -36,10 +36,10 @@ No more manual status checking or complex activity creation through slow web das
 
 
 ## Available Tools (12)
+- **get_account_details**: Get user profile
 - **create_activity**: Add new task for members
 - **get_activity_engagement**: Get stats for activity
 - **get_top_advocates**: Get rankings
-- **get_account_details**: Get user profile
 - **get_member_points**: Check point balance
 - **invite_new_advocate**: Invite to Gaggle
 - **list_activities**: List available activities

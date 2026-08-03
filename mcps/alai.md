@@ -36,7 +36,7 @@ No more manual creation of individual marketing posts or missing critical genera
 
 
 ## Available Tools (12)
-- **check_getalai_status**: Verify connectivity
+- **list_generations**: List generations
 - **create_asset**: Create an asset
 - **create_campaign**: Create a campaign
 - **delete_asset**: Delete an asset
@@ -46,8 +46,8 @@ No more manual creation of individual marketing posts or missing critical genera
 - **get_generation**: Get generation details
 - **list_assets**: List assets
 - **list_campaigns**: List campaigns
-- **list_generations**: List generations
 - **list_templates**: List templates
+- **check_getalai_status**: Verify connectivity
 
 
 ## 💬 Prompt Examples

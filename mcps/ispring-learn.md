@@ -38,9 +38,9 @@ Connect your **iSpring Learn** instance to any AI agent and manage training thro
 - **create_new_learner**: Register a new user
 - **get_course_details**: Get details for a specific course
 - **get_learning_report**: Get training report
-- **list_learning_courses**: List LMS courses
 - **list_course_enrollments**: List course enrollments
 - **list_user_groups**: List organizational groups
+- **list_learning_courses**: List LMS courses
 - **list_learners**: List iSpring Learn users
 
 

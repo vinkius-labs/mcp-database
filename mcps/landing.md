@@ -33,6 +33,7 @@ Connect your **Landing** account to any AI agent and manage landing pages throug
 
 
 ## Available Tools (7)
+- **list_landing_webhooks**: List active webhooks
 - **create_landing_webhook**: g., lead.created).
 
 Create a new webhook
@@ -41,7 +42,6 @@ Create a new webhook
 - **list_landing_leads**: List captured leads
 - **list_landing_pages**: List landing pages
 - **list_landing_projects**: List all landing projects
-- **list_landing_webhooks**: List active webhooks
 
 
 ## 💬 Prompt Examples

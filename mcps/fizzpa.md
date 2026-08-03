@@ -36,13 +36,14 @@ No more manual scrubbing through shipping logs or complex warehouse tables. Your
 
 
 ## Available Tools (12)
-- **create_new_order**: Requires customer name and line items.
-
-Add a new order to the system
 - **cancel_order**: Delete/Cancel an order
 - **get_shipping_label**: Generate shipping label for an order
 - **get_account_profile**: Get authenticated account info
 - **get_order_details**: Get details for a specific order
+- **check_api_health**: Verify Fizzpa API connectivity
+- **create_new_order**: Requires customer name and line items.
+
+Add a new order to the system
 - **list_inventory_levels**: List stock levels for items
 - **list_warehouse_locations**: List warehouse storage locations
 - **list_fizzpa_orders**: Supports filtering by status or date.
@@ -51,7 +52,6 @@ List all customer orders
 - **list_catalog_products**: List all products in the catalog
 - **list_configured_webhooks**: List active webhooks
 - **update_order_info**: Modify an existing order
-- **check_api_health**: Verify Fizzpa API connectivity
 
 
 ## 💬 Prompt Examples

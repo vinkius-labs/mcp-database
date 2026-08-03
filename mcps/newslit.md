@@ -36,14 +36,14 @@ No more manual browsing through news sites for industry updates. Your AI acts as
 
 
 ## Available Tools (6)
+- **list_stories**: Retrieve news stories from a report
+- **update_report**: Update an existing report
 - **create_report**: Pass report data as a JSON string.
 
 Create a new news report
 - **delete_report**: Delete a news report
 - **get_report**: Get report details
 - **list_reports**: List all news reports
-- **list_stories**: Retrieve news stories from a report
-- **update_report**: Update an existing report
 
 
 ## 💬 Prompt Examples

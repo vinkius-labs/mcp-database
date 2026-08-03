@@ -36,13 +36,13 @@ No more manual searching for meeting notes in your inbox. Your AI acts as a dedi
 
 
 ## Available Tools (12)
-- **create_task**: Create a new task
 - **get_current_user**: Get authenticated user profile
 - **get_meeting_details**: Get details for a specific meeting
 - **get_meeting_minutes**: Retrieve the minutes or agenda of a meeting
 - **get_task_details**: Get details for a specific task
-- **list_meeting_attendees**: List attendees for a meeting
 - **list_contacts**: List all contacts
+- **create_task**: Create a new task
+- **list_meeting_attendees**: List attendees for a meeting
 - **list_folders**: List folders and structure
 - **list_meetings**: List all meetings
 - **list_tasks**: List all tasks and action items

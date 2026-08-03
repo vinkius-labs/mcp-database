@@ -27,14 +27,14 @@ Connect your **KlickTipp** account to any AI agent and simplify your email marke
 
 
 ## Available Tools (8)
-- **list_subscription_processes**: List opt-in processes
-- **list_tags**: List KlickTipp tags
+- **get_contact**: Get details for a specific contact
 - **subscribe_contact**: Subscribe a contact to a list
 - **tag_contact**: Apply a tag to a contact
-- **unsubscribe_contact**: Unsubscribe a contact
 - **untag_contact**: Remove a tag from a contact
-- **get_contact**: Get details for a specific contact
 - **list_fields**: List custom fields
+- **unsubscribe_contact**: Unsubscribe a contact
+- **list_subscription_processes**: List opt-in processes
+- **list_tags**: List KlickTipp tags
 
 
 ## 💬 Prompt Examples

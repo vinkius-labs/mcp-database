@@ -36,10 +36,10 @@ No more manual logging into the CMS for quick staff or office checks. Your AI ac
 
 
 ## Available Tools (10)
+- **get_agent**: Get agent details by ID
 - **create_agent**: Pass agent data as a JSON string.
 
 Create a new agent profile
-- **get_agent**: Get agent details by ID
 - **get_lead**: Get lead details
 - **get_office**: Get office details
 - **get_team**: Get team details
