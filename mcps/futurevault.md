@@ -36,15 +36,15 @@ Connect your **FutureVault** account to any AI agent to automate your document m
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Check connection
-- **get_document_metadata**: Get document details
-- **get_folder_details**: Get folder metadata
-- **get_member_details**: Get member metadata
-- **get_my_identity**: Get current user profile
-- **get_vault_details**: Get vault metadata
-- **list_folder_documents**: List documents in folder
 - **list_vault_folders**: List folders in a vault
 - **list_vault_members**: List vault members
+- **verify_api_connection**: Check connection
+- **get_document_metadata**: Get document details
+- **get_my_identity**: Get current user profile
+- **get_vault_details**: Get vault metadata
+- **get_folder_details**: Get folder metadata
+- **get_member_details**: Get member metadata
+- **list_folder_documents**: List documents in folder
 - **list_system_roles**: List accessible roles
 - **list_digital_vaults**: List all accessible vaults
 - **search_vault_content**: Search documents/folders

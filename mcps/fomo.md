@@ -29,9 +29,10 @@ Connect your **Fomo** account to any AI agent to automate your social proof mark
 
 
 ## Available Tools (11)
+- **get_application_info**: Get account attributes
+- **create_event**: Push a new event to feed
 - **create_template**: Create a new template
 - **delete_event**: Remove event from feed
-- **get_application_info**: Get account attributes
 - **get_event**: Get event details
 - **get_template**: Get template details
 - **list_events**: List recent social proof events
@@ -39,7 +40,6 @@ Connect your **Fomo** account to any AI agent to automate your social proof mark
 - **list_push_messages**: List sent messages
 - **list_templates**: List notification templates
 - **update_event**: Modify an existing event
-- **create_event**: Push a new event to feed
 
 
 ## 💬 Prompt Examples

@@ -34,13 +34,13 @@ Connect your **GrazeCart** ecommerce account to any AI agent and take control of
 
 
 ## Available Tools (12)
-- **charge_order**: Trigger a payment charge for an order
-- **create_customer**: Create a new customer profile
-- **get_customer**: Get profile details for a specific customer
 - **get_order**: Get details for a specific order
 - **get_product**: Get details for a specific product
 - **list_customers**: List all customers registered in the store
 - **list_delivery_zones**: List configured delivery zones
+- **charge_order**: Trigger a payment charge for an order
+- **create_customer**: Create a new customer profile
+- **get_customer**: Get profile details for a specific customer
 - **list_orders**: List all orders from the GrazeCart store
 - **list_pickup_locations**: List all active pickup locations for the store
 - **list_products**: List all products in the catalog

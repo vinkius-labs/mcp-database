@@ -30,10 +30,10 @@ List CNAE divisions within a section
 - **list_classes_cnae**: g., 62 for IT activities).
 
 List CNAE classes within a division
-- **get_subclasse_cnae**: Get CNAE subclass details
 - **list_subclasses_por_classe**: g., 62015).
 
 List all subclasses within a CNAE class
+- **get_subclasse_cnae**: Get CNAE subclass details
 
 
 ## 💬 Prompt Examples

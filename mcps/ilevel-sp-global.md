@@ -15,15 +15,15 @@ Empower your AI agents to interact with your iLEVEL private equity data. This MC
 
 ## Available Tools (10)
 - **get_investment**: Retrieves details for a specific investment
-- **get_status**: Gets the iLEVEL system status
-- **get_version**: Gets the iLEVEL API version
-- **list_assets**: Lists all assets
 - **list_contacts**: Lists all contacts
 - **list_entities**: Lists all legal entities
 - **list_funds**: Lists all funds
 - **list_investments**: Lists all investments
 - **list_portfolios**: Lists all portfolios
 - **list_users**: Lists all users in the system
+- **get_status**: Gets the iLEVEL system status
+- **get_version**: Gets the iLEVEL API version
+- **list_assets**: Lists all assets
 
 
 ## 💬 Prompt Examples

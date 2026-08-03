@@ -35,18 +35,18 @@ Connect your **GlassFrog** organization to any AI agent to automate your Holacra
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Check connection
-- **create_new_project**: Add a project
 - **find_member_by_email**: Search member
 - **get_circle_summary**: Get circle overview
 - **list_role_assignments**: List assignments
 - **list_checklist_items**: List checklists
 - **list_holacracy_circles**: List all circles
 - **list_circle_metrics**: List metrics
+- **list_holacracy_roles**: List role definitions
+- **verify_api_connection**: Check connection
 - **list_org_members**: List people
 - **list_circle_policies**: List policies
+- **create_new_project**: Add a project
 - **list_tactical_projects**: List all projects
-- **list_holacracy_roles**: List role definitions
 
 
 ## 💬 Prompt Examples

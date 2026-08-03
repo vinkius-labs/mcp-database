@@ -34,9 +34,6 @@ Connect your **Glofox** gym or studio to any AI agent and manage your fitness bu
 
 Search gym members
 - **get_member**: Get member details
-- **list_classes**: Filter by date to see a specific day.
-
-List scheduled classes
 - **list_courses**: Shows sessions, pricing, and enrollment.
 
 List multi-week courses
@@ -50,6 +47,9 @@ List class bookings
 - **list_purchases**: Filter by member for individual spending.
 
 List member purchases
+- **list_classes**: Filter by date to see a specific day.
+
+List scheduled classes
 
 
 ## 💬 Prompt Examples

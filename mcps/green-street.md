@@ -35,12 +35,12 @@ Connect your **Green Street** account to any AI agent and take full control of y
 
 
 ## Available Tools (12)
-- **get_company_summary**: Get financial summary for a specific company by symbol
-- **get_earnings_metrics**: Get FFO/FAD earnings data for a company
 - **get_forecast_scenarios**: Retrieve forward-looking market and sector projections
 - **get_historical_transactions**: Retrieve historical transaction summaries
 - **get_market_grades**: Get grades and rankings for a specific market
 - **get_market_projections**: Get forward-looking NOI projections for a market
+- **get_company_summary**: Get financial summary for a specific company by symbol
+- **get_earnings_metrics**: Get FFO/FAD earnings data for a company
 - **get_market_sector_summary**: Get analytics and grades for a specific market sector
 - **get_nav_estimates**: Get Net Asset Value (NAV) estimates for a company
 - **get_news_articles**: Search and retrieve commercial real estate news

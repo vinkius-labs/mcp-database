@@ -7,46 +7,47 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Automate mobile app content management via Guidebook — manage guides, sessions, speakers, and custom lists directly from any AI agent.
+Create branded mobile apps for events, conferences, and organizations with schedules, maps, and attendee engagement features.
 
 ## Description
-Connect your **Guidebook Builder** account to any AI agent and manage your mobile event or organization app content through natural conversation.
+Connect your **Guidebook Builder** account to any AI agent and take full control of your mobile event guides and scheduling workflows through natural conversation.
 
 ### What you can do
 
-- **Guide Oversight** — List all mobile guides in your account and retrieve detailed metadata for each.
-- **Schedule Management** — Browse, list, and inspect schedule sessions to keep your event timeline up to date.
-- **Speaker Coordination** — Access speaker profiles and presenter details to ensure all bio information is accurate.
-- **Custom Lists** — Manage Exhibitors, Sponsors, or any other custom data lists within your app.
-- **Venue & Locations** — Retrieve all defined locations and map data for your event.
-- **Rate Limit Tracking** — Monitor your API usage to stay within your daily quota.
+- **Guide Orchestration** — List and manage all mobile guides in your account and retrieve detailed guide metadata
+- **Schedule Management** — Access and monitor event schedules and sessions programmatically to keep your attendees updated
+- **Location Mapping** — List and search for mapped event locations to ensure precise spatial coordination for your attendees
+- **Custom Lists** — Manage and retrieve custom lists (speakers, exhibitors, sponsors) to organize your event's intellectual capital
+- **Activity Monitoring** — Check guide details and status directly through your agent for instant event reporting
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Guidebook API Key (JWT token)
-3. Start managing your app content from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your API Key from the Guidebook Builder (Manage your account > API Key)
+3. Start managing your mobile guides from Claude, Cursor, or any MCP client
 
-No more manual data entry in the Builder interface. Your AI assistant acts as a dedicated content coordinator for your mobile apps.
+No more manual editing of sessions or locations through complex web builders. Your AI acts as your dedicated event mobile coordinator.
 
 ### Who is this for?
 
-- **Event Organizers** — quickly verify session times and speaker assignments without digging through the CMS.
-- **Content Managers** — automate the retrieval and auditing of custom lists like exhibitors or sponsors.
-- **App Developers** — integrate Guidebook content flows into your development environment seamlessly.
+- **Event Organizers** — scale mobile guide management and session coordination for large-scale conferences
+- **Marketing Teams** — update exhibitor and sponsor lists across multiple guides through natural language queries
+- **Onboarding Leads** — keep employees updated on company training schedules and locations without leaving your workspace
 
 
-## Available Tools (10)
-- **get_guide**: Get detailed information about a specific guide
-- **get_rate_limit**: Check current API usage and rate limits
-- **get_session**: Get details for a specific schedule session
-- **get_speaker**: Get details for a specific speaker profile
-- **list_custom_lists**: List custom list items (e.g., Exhibitors, Sponsors) for a guide
-- **list_guides**: List all guides available in the account
-- **list_locations**: List all locations/venues defined for a guide
-- **list_schedules**: List schedules for a specific guide
-- **list_sessions**: List all schedule sessions for a specific guide
-- **list_speakers**: List all speakers/presenters for a specific guide
+## Available Tools (12)
+- **get_guide**: Get guide details
+- **check_guidebook_status**: Verify connectivity
+- **create_custom_list_item**: Add list item
+- **create_guide**: Create a guide
+- **get_event**: Get session details
+- **list_attendees**: List attendees
+- **list_custom_list_items**: List custom list items
+- **list_custom_lists**: List custom lists
+- **list_events**: List sessions
+- **list_guides**: List guides
+- **list_locations**: List locations
+- **update_guide**: Update a guide
 
 
 ## 💬 Prompt Examples
@@ -54,41 +55,38 @@ No more manual data entry in the Builder interface. Your AI assistant acts as a 
 Here are some examples of how you can interact with the **Guidebook** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active mobile guides in my account."
+> "List all my mobile guides in Guidebook."
 
 **🤖 AI Agent:**
-> I've retrieved your guides. You have 3 active projects: 'Global Tech Summit 2024' (ID: 8821), 'Internal Sales Kickoff' (ID: 8825), and 'Partner Conference Q2' (ID: 8830). Which guide would you like to inspect?
+> I've retrieved your mobile guides. You have 3 active guides: 'Global Tech Expo 2026' (ID: g_123), 'Internal Sales Kickoff' (ID: g_456), and 'Partner Summit' (ID: g_789). Which one would you like to inspect?
 
 ---
 
 **👤 You:**
-> "Show the schedule sessions for guide ID 8821."
+> "Show the schedule for the 'Global Tech Expo 2026' guide."
 
 **🤖 AI Agent:**
-> Fetching sessions for Guide 8821... I found 5 main sessions for today, including 'Opening Keynote' at 09:00 AM, 'Cloud Infrastructure Workshop' at 11:30 AM, and 'Networking Lunch' at 01:00 PM. Should I get more details on any of these?
+> Fetching schedule for Global Tech Expo (ID: g_123)... I found 12 scheduled sessions. Notable highlights include 'AI in Industry' at 10 AM and the 'Cloud Keynote' at 2 PM. Would you like the location details for any of these?
 
 ---
 
 **👤 You:**
-> "Who are the speakers for the Global Tech Summit?"
+> "List all speakers for the guide ID 'g_123'."
 
 **🤖 AI Agent:**
-> Accessing speakers for Guide 8821... I've identified 12 profiles, including Dr. Sarah Chen (AI Research), Marcus Viera (DevOps Lead), and Jane Doe (UX Design). Would you like to see a specific speaker's full bio?
+> Scanning custom lists for 'g_123'... I've retrieved the speaker list. You have 25 speakers registered, including keynote presenters and technical leads. I can provide the full list or search for a specific name.
 
 
 ## ❓ FAQ
 
-**Q: How do I generate my Guidebook API Key?**
-Log in to Guidebook Builder, click your profile dropdown in the top right, select 'Manage your account', and then navigate to the 'API Key' section to generate your token.
+**Q: How do I find a Guide ID?**
+You can use the `list_guides` tool to retrieve all mobile guides in your account along with their unique identifiers and names.
 
-**Q: Can I see the schedules for multiple guides?**
-Yes! You can use `list_guides` to find the IDs for all your guides, and then use `list_sessions` or `list_schedules` with the specific guide ID to see its agenda.
+**Q: Can I see the speakers or exhibitors for an event?**
+Yes! Use the `list_custom_lists` tool with a specific `guide_id` to retrieve all custom directories like speakers, exhibitors, or sponsors.
 
-**Q: How many requests can I make to the Guidebook API?**
-The Guidebook Open API typically has a limit of 10,000 requests per day per account. You can use the `get_rate_limit` tool to check your current usage.
-
-**Q: What format should the API Key be in?**
-The API Key should be the raw JWT token provided by the Guidebook Builder. The integration will automatically handle the 'JWT' prefix for authorization.
+**Q: Does the integration support viewing the event map?**
+The `list_guide_locations` tool provides the metadata for all mapped locations within a guide, helping you identify precisely where sessions take place.
 
 
 ## Installation & Usage

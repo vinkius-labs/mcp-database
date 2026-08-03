@@ -14,6 +14,15 @@ Empower your AI agents to manage your warehouse and inventory with ItemPath. Thi
 
 
 ## Available Tools (10)
+- **list_orders**: Includes order IDs, types, and current status. Essential for monitoring warehouse throughput and workflow.
+
+Lists all orders
+- **list_transactions**: Returns timestamps, material IDs, quantity changes, and user IDs. Essential for auditing inventory accuracy and identifying recent stock changes.
+
+Lists all inventory transactions
+- **list_users**: Useful for identifying who performed specific inventory transactions.
+
+Lists all system users
 - **get_material**: Returns SKU details, storage rules, and quantity-on-hand. Essential for analyzing the status of specific inventory items.
 
 Retrieves details for a specific material
@@ -35,15 +44,6 @@ Lists all storage locations
 - **list_materials**: Returns material names, descriptions, and IDs. Use this to identify products for inventory auditing or order analysis.
 
 Lists all materials in ItemPath
-- **list_orders**: Includes order IDs, types, and current status. Essential for monitoring warehouse throughput and workflow.
-
-Lists all orders
-- **list_transactions**: Returns timestamps, material IDs, quantity changes, and user IDs. Essential for auditing inventory accuracy and identifying recent stock changes.
-
-Lists all inventory transactions
-- **list_users**: Useful for identifying who performed specific inventory transactions.
-
-Lists all system users
 
 
 ## 💬 Prompt Examples

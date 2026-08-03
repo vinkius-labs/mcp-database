@@ -23,6 +23,7 @@ Urban planners, public policy researchers, ESG analysts, journalists, and data s
 
 
 ## Available Tools (4)
+- **get_ranking_indicador**: Rank municipalities by a specific indicator
 - **list_pesquisas**: List all IBGE surveys and research programs
 - **get_indicadores**: Use survey ID (e.g., 33 for Censo Demográfico, 38 for Produção Agrícola Municipal).
 
@@ -30,7 +31,6 @@ Get indicators from a specific IBGE survey
 - **get_resultados**: Localities can be: BR (Brazil), UF code (e.g., 33 for RJ), or municipality IBGE code.
 
 Get survey results for specific municipalities
-- **get_ranking_indicador**: Rank municipalities by a specific indicator
 
 
 ## 💬 Prompt Examples

@@ -28,13 +28,13 @@ Fintechs, logistics companies, CRM systems, address validation services, market 
 
 
 ## Available Tools (5)
+- **get_municipio**: Use the 7-digit IBGE code.
+
+Get municipality details by IBGE code
 - **list_estados**: List all Brazilian states (UFs)
 - **get_municipios_por_uf**: Use the 2-letter UF abbreviation (e.g., SP, RJ, MG, BA).
 
 List all municipalities in a Brazilian state
-- **get_municipio**: Use the 7-digit IBGE code.
-
-Get municipality details by IBGE code
 - **list_regioes**: List the 5 macro-regions of Brazil
 - **list_regioes_metropolitanas**: List metropolitan regions by state
 

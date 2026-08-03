@@ -36,18 +36,18 @@ Connect your **Franchimp** account to any AI agent to automate your franchise ma
 
 
 ## Available Tools (12)
+- **list_franchises**: List all franchisors
 - **get_account_info**: Get account attributes
-- **get_fdd_metadata**: Get FDD information
 - **get_investment_stats**: Get investment data
 - **get_franchise_details**: Get franchisor metadata
 - **get_franchisee_details**: Get franchisee contact info
 - **list_available_credits**: Check document credits
 - **list_fdd_documents**: List disclosure documents
 - **list_franchisees**: List specific franchisees
-- **list_franchises**: List all franchisors
 - **list_multi_unit_operators**: List multi-unit franchisors
 - **find_franchisee_by_email**: Search franchisee by email
 - **search_franchisors**: Search franchisor database
+- **get_fdd_metadata**: Get FDD information
 
 
 ## 💬 Prompt Examples
