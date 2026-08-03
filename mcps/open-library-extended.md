@@ -34,6 +34,8 @@ Connect to the **Open Library** database and turn your AI into a master libraria
 
 
 ## Available Tools (17)
+- **get_list_editions**: Get editions in a specific user list
+- **get_list_seeds**: Get seeds (items) in a specific user list
 - **get_author**: g., "OL23919A").
 
 Get details for a specific Author
@@ -44,9 +46,7 @@ Look up books by identifiers (ISBN, OCLC, LCCN, OLID)
 - **get_edition**: g., "OL7353617M").
 
 Get details for a specific Edition (Book)
-- **get_list_editions**: Get editions in a specific user list
 - **get_list_metadata**: Get metadata for a specific user list
-- **get_list_seeds**: Get seeds (items) in a specific user list
 - **get_recent_changes_by_date**: Access modifications to the Open Library database for a specific date
 - **get_recent_changes**: Access a stream of modifications to the Open Library database
 - **get_subject**: g., "love", "science_fiction").

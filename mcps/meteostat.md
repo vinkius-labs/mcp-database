@@ -39,14 +39,14 @@ Connect to **Meteostat** to empower your AI agent with one of the largest databa
 - **stations_daily**: Max 10 years per request.
 
 Get historical daily statistics for a station
-- **stations_hourly**: Max 30 days per request.
-
-Get historical hourly observations for a station
 - **stations_meta**: Specify at least one identifier (id, wmo, or icao).
 
 Get metadata for a specific weather station
 - **stations_monthly**: Get historical monthly statistics for a station
 - **stations_nearby**: Find nearby weather stations by geo location
+- **stations_hourly**: Max 30 days per request.
+
+Get historical hourly observations for a station
 - **stations_normals**: Get climate normals for a station
 - **point_daily**: Get historical daily point data
 - **point_hourly**: Get historical hourly point data

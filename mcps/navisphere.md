@@ -35,6 +35,9 @@ Connect your **Navisphere** (C.H. Robinson) account to any AI agent to streamlin
 
 
 ## Available Tools (11)
+- **search_available_loads**: Search for available freight loads
+- **submit_bid**: Submit a bid for an available load
+- **subscribe_webhooks**: Subscribe to real-time visibility events
 - **accept_offer**: Accept a freight offer
 - **create_shipment**: Create a new shipment (Customer API)
 - **get_load_details**: Get details for a specific available load
@@ -42,9 +45,6 @@ Connect your **Navisphere** (C.H. Robinson) account to any AI agent to streamlin
 
 Get a rate estimate for a shipment
 - **get_tracking_events**: Get high-frequency tracking events for a shipment
-- **search_available_loads**: Search for available freight loads
-- **submit_bid**: Submit a bid for an available load
-- **subscribe_webhooks**: Subscribe to real-time visibility events
 - **track_shipment**: Track a customer shipment
 - **update_shipment_status**: g., Arrived, Loaded, Departed).
 

@@ -34,8 +34,8 @@ Connect the **OpenCage Geocoder** to your AI agent for high-precision global geo
 
 
 ## Available Tools (2)
-- **forward_geocode**: Forward geocode an address or placename to coordinates
 - **reverse_geocode**: Reverse geocode coordinates to an address
+- **forward_geocode**: Forward geocode an address or placename to coordinates
 
 
 ## 💬 Prompt Examples

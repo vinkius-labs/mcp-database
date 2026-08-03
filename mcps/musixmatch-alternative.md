@@ -37,7 +37,6 @@ Connect your **Musixmatch** developer account to any AI agent and unlock deep ac
 - **get_chart_artists**: Get the list of top artists of a given country
 - **get_chart_tracks**: Get the list of top tracks of a given country
 - **get_album**: Get album metadata
-- **get_album_tracks**: Get the list of tracks for an album
 - **get_artist_albums**: Get the list of albums for an artist
 - **get_artist**: Get artist metadata
 - **get_lyrics_translation**: Get the translation of a track lyrics
@@ -47,12 +46,13 @@ Connect your **Musixmatch** developer account to any AI agent and unlock deep ac
 - **get_track_richsync**: Get the rich synchronized lyrics (word-by-word)
 - **get_track_snippet**: Get a snippet (short excerpt) of the lyrics
 - **get_track_subtitle**: Get the synchronized lyrics (subtitles) for a track
-- **get_track**: Get a track metadata by ID
 - **match_lyrics**: Match a track and get its lyrics in one call
-- **match_subtitle**: Match a track and get its subtitles
 - **post_work**: Submit or update publishing data for a musical work
 - **post_work_validity**: Submit the validity end date for a work
 - **search_artists**: Search for an artist
+- **get_album_tracks**: Get the list of tracks for an album
+- **get_track**: Get a track metadata by ID
+- **match_subtitle**: Match a track and get its subtitles
 - **search_tracks**: Search for a track in the Musixmatch catalogue
 - **match_track**: Match a track and get its metadata
 

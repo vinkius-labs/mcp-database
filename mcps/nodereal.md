@@ -34,6 +34,15 @@ Connect to **NodeReal**, the ultimate high-performance blockchain infrastructure
 
 
 ## Available Tools (24)
+- **eth_get_logs**: Get logs matching a given filter object (EVM)
+- **eth_get_transaction_receipt**: Get the receipt of a transaction (EVM)
+- **eth_send_raw_transaction**: Creates new message call transaction or a contract creation for signed transactions (EVM)
+- **nr_get_asset_transfers**: Get asset transfers for an address (NodeReal Enhanced)
+- **nr_get_nft_holders**: Get holders of an NFT collection (NodeReal Enhanced)
+- **nr_get_nft_inventory**: Get NFT inventory for an address (NodeReal Enhanced)
+- **nr_get_token_balance_20**: Get ERC20 token balance (NodeReal Enhanced)
+- **nr_get_token_holders**: Get list of token holders (NodeReal Enhanced)
+- **nr_get_transaction_receipts_by_block_number**: Get all receipts in a block (NodeReal Enhanced)
 - **aptos_get_transaction_by_hash**: Get an Aptos transaction by its hash
 - **aptos_get_account_modules**: Get all Move modules for a specific Aptos account
 - **aptos_get_account_resources**: Get all resources for a specific Aptos account
@@ -49,15 +58,6 @@ Connect to **NodeReal**, the ultimate high-performance blockchain infrastructure
 - **eth_estimate_gas**: Generates and returns an estimate of how much gas is necessary to allow the transaction to complete (EVM)
 - **eth_get_balance**: Get the balance of an address (EVM)
 - **eth_get_block_by_number**: Get a block by its number (EVM)
-- **eth_get_logs**: Get logs matching a given filter object (EVM)
-- **eth_get_transaction_receipt**: Get the receipt of a transaction (EVM)
-- **eth_send_raw_transaction**: Creates new message call transaction or a contract creation for signed transactions (EVM)
-- **nr_get_asset_transfers**: Get asset transfers for an address (NodeReal Enhanced)
-- **nr_get_nft_holders**: Get holders of an NFT collection (NodeReal Enhanced)
-- **nr_get_nft_inventory**: Get NFT inventory for an address (NodeReal Enhanced)
-- **nr_get_token_balance_20**: Get ERC20 token balance (NodeReal Enhanced)
-- **nr_get_token_holders**: Get list of token holders (NodeReal Enhanced)
-- **nr_get_transaction_receipts_by_block_number**: Get all receipts in a block (NodeReal Enhanced)
 
 
 ## 💬 Prompt Examples

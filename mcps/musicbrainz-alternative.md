@@ -40,15 +40,15 @@ Connect to the **MusicBrainz** database to empower your AI agent with comprehens
 
 Browse entities linked to another entity
 - **lookup_discid**: Lookup a CD by its discid
-- **lookup_isrc**: Lookup recordings by ISRC
-- **lookup_iswc**: Lookup works by ISWC
-- **remove_collection_item**: Remove an item from a collection (Requires Auth)
+- **lookup_entity**: Lookup a specific MusicBrainz entity by its MBID
 - **search_entities**: Use Lucene syntax (e.g., "we will rock you" AND arid:0383dadf-2a4e-4d10-a46a-e9e041da8eb3).
 
 Search for entities using Lucene query syntax
+- **lookup_isrc**: Lookup recordings by ISRC
+- **lookup_iswc**: Lookup works by ISWC
+- **remove_collection_item**: Remove an item from a collection (Requires Auth)
 - **submit_ratings**: Submit ratings via XML POST (Requires Auth)
 - **submit_tags**: Submit tags via XML POST (Requires Auth)
-- **lookup_entity**: Lookup a specific MusicBrainz entity by its MBID
 
 
 ## 💬 Prompt Examples

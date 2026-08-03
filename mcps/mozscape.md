@@ -34,12 +34,15 @@ Connect your **Mozscape** account to any AI agent to perform deep SEO analysis a
 
 
 ## Available Tools (24)
-- **fetch_histories**: Get daily or monthly metric histories
-- **fetch_link_intersect**: Find sites linking to multiple targets
 - **fetch_link_status**: Check if a specific link exists
 - **fetch_multiple_site_metrics**: Get metrics for up to 50 URLs
-- **fetch_site_metrics**: Get metrics (DA, PA, Spam Score) for a single URL
 - **filter_links_by_anchor**: Get links matching a specific anchor text
+- **v2_final_redirect**: V2: Follow known redirects to find final destination
+- **v2_global_top_root_domains**: V2: Get top 500 root domains in the Moz index
+- **v2_url_metrics**: V2: Bulk retrieval of URL metrics
+- **fetch_histories**: Get daily or monthly metric histories
+- **fetch_link_intersect**: Find sites linking to multiple targets
+- **fetch_site_metrics**: Get metrics (DA, PA, Spam Score) for a single URL
 - **filter_links_by_domain**: Get links originating from a specific root domain
 - **filter_recently_gained_domains**: Get recently gained linking root domains
 - **filter_recently_lost_domains**: Get recently lost linking root domains
@@ -48,13 +51,10 @@ Connect your **Mozscape** account to any AI agent to perform deep SEO analysis a
 - **list_links**: Get a list of links to a target
 - **lookup_quota**: Check Moz API V3 quota usage
 - **v2_anchor_text**: V2: Get normalized anchor text strings
-- **v2_final_redirect**: V2: Follow known redirects to find final destination
 - **v2_global_top_pages**: V2: Get top 500 pages in the entire Moz index
-- **v2_global_top_root_domains**: V2: Get top 500 root domains in the Moz index
 - **v2_link_intersect**: V2: Identify sites linking to competitors but not to you
 - **v2_link_status**: V2: Verify if a link exists
 - **v2_top_pages**: V2: List the most linked-to pages on a domain
-- **v2_url_metrics**: V2: Bulk retrieval of URL metrics
 - **v2_usage_data**: V2: Get usage data for the current billing period
 - **fetch_brand_authority**: Get Brand Authority score for a site
 - **fetch_distributions**: Get link distribution data

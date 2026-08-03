@@ -35,6 +35,11 @@ Connect your **Moonscan** API key to any AI agent to explore the Moonbeam Networ
 
 ## Available Tools (26)
 - **get_block_countdown**: Get Estimated Block Countdown Time
+- **proxy_eth_call**: Proxy: eth_call
+- **proxy_eth_gas_price**: Proxy: eth_gasPrice
+- **proxy_eth_get_block_by_number**: Proxy: eth_getBlockByNumber
+- **proxy_eth_get_transaction_by_hash**: Proxy: eth_getTransactionByHash
+- **proxy_eth_get_transaction_receipt**: Proxy: eth_getTransactionReceipt
 - **get_block_number_by_time**: Get Block Number by Timestamp
 - **get_block_reward**: Get Block Rewards
 - **get_contract_abi**: Get Contract ABI
@@ -51,12 +56,7 @@ Connect your **Moonscan** API key to any AI agent to explore the Moonbeam Networ
 - **get_normal_transactions**: Get List of Normal Transactions
 - **get_tx_receipt_status**: Check Transaction Receipt Status
 - **proxy_eth_block_number**: Proxy: eth_blockNumber
-- **proxy_eth_call**: Proxy: eth_call
 - **proxy_eth_estimate_gas**: Proxy: eth_estimateGas
-- **proxy_eth_gas_price**: Proxy: eth_gasPrice
-- **proxy_eth_get_block_by_number**: Proxy: eth_getBlockByNumber
-- **proxy_eth_get_transaction_by_hash**: Proxy: eth_getTransactionByHash
-- **proxy_eth_get_transaction_receipt**: Proxy: eth_getTransactionReceipt
 - **get_glmr_total_supply**: Get Total Supply of GLMR
 - **get_internal_transactions**: Get List of Internal Transactions
 - **get_logs**: Get Logs

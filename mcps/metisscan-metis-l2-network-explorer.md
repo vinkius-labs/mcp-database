@@ -34,11 +34,8 @@ Connect your AI agent to the **Metis L2** ecosystem through Metisscan. Gain real
 
 
 ## Available Tools (26)
-- **graphql_query**: Execute a GraphQL query on Metisscan
-- **eth_block_number**: Get the most recent block number (RPC)
 - **eth_call**: Execute a message call (RPC)
 - **eth_estimate_gas**: Estimate gas for a transaction (RPC)
-- **eth_get_balance**: Get address balance (RPC)
 - **eth_get_block_by_number**: Get block by number (RPC)
 - **eth_get_code**: Get code at address (RPC)
 - **eth_get_transaction_by_hash**: Get transaction by hash (RPC)
@@ -54,6 +51,9 @@ Get transaction and token counters for an address
 - **get_smart_contract**: Get details for a smart contract
 - **get_smart_contract_verification_config**: Get verification configuration for a smart contract
 - **get_token_holders**: List token holders
+- **graphql_query**: Execute a GraphQL query on Metisscan
+- **eth_block_number**: Get the most recent block number (RPC)
+- **eth_get_balance**: Get address balance (RPC)
 - **get_token**: Get details for a specific token
 - **get_token_transfers**: List token transfers
 - **get_transaction_internal_transactions**: g., contract calls) triggered by a specific transaction.
