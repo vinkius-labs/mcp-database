@@ -42,9 +42,9 @@ Connect your **BunnyDoc** account to any AI agent and orchestrate your eSignatur
 - **get_usage_stats**: Retrieve API usage statistics
 - **list_envelopes**: List all signature requests
 - **list_team_members**: List all members of the team
-- **list_templates**: List all available document templates
 - **subscribe_webhook**: Subscribe to signature events via webhook
 - **unsubscribe_webhook**: Remove a webhook subscription
+- **list_templates**: List all available document templates
 
 
 ## 💬 Prompt Examples

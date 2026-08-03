@@ -35,11 +35,11 @@ Connect your AI to **Cometly**, the ad attribution platform for Meta, Google, Ti
 - **get_campaign_stats**: Retrieve performance stats for a specific campaign
 - **list_ad_accounts**: Retrieve a list of connected ad accounts (Meta, Google, etc.)
 - **list_campaigns**: Retrieve a list of all tracked ad campaigns
-- **list_contacts**: Retrieve a list of attributed contacts and their customer journey data
-- **list_events**: Retrieve a list of tracked events in Cometly
 - **track_event**: Send a conversion event (Purchase, Lead, etc.) to Cometly for attribution
 - **track_lead**: Quickly track a lead event
 - **track_purchase**: Quickly track a purchase event
+- **list_contacts**: Retrieve a list of attributed contacts and their customer journey data
+- **list_events**: Retrieve a list of tracked events in Cometly
 
 
 ## 💬 Prompt Examples

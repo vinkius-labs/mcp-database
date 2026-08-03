@@ -36,14 +36,14 @@ Connect your **Chatham Financial (ChathamDirect)** account to any AI agent and t
 
 
 ## Available Tools (8)
-- **get_trade_accounting**: Get hedge accounting details for a transaction
-- **get_hedge_effectiveness**: Retrieve hedge effectiveness test results
-- **get_chatham_market_data**: Retrieve benchmark rates and forward curves
 - **get_trade_valuations**: Get current and historical valuations for a trade
 - **list_chatham_entities**: List legal entities configured in the account
 - **list_trade_payments**: List payment schedules and history for a transaction
 - **list_chatham_portfolios**: List all managed portfolios
 - **list_chatham_transactions**: List financial transactions and trades
+- **get_trade_accounting**: Get hedge accounting details for a transaction
+- **get_hedge_effectiveness**: Retrieve hedge effectiveness test results
+- **get_chatham_market_data**: Retrieve benchmark rates and forward curves
 
 
 ## 💬 Prompt Examples

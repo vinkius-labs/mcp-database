@@ -32,15 +32,15 @@ Connect your AI to **CoinMarketCal**, the leading economic calendar for the cryp
 
 
 ## Available Tools (9)
+- **list_popular_events**: Retrieve the most popular cryptocurrency events
+- **list_trending_events**: Retrieve the most trending cryptocurrency events
+- **search_events_by_coin**: Find events related to specific cryptocurrencies
+- **search_events_by_date**: Find events within a specific date range
 - **list_categories**: Retrieve the list of event categories (e.g., Roadmap, Release)
 - **list_events**: Retrieve a list of cryptocurrency events from the calendar
 - **get_coin_id**: Find the CoinMarketCal ID for a coin by its name or symbol
 - **get_event_details**: Retrieve detailed information about a specific event by its ID
 - **list_coins**: Retrieve the list of coins supported by CoinMarketCal
-- **list_popular_events**: Retrieve the most popular cryptocurrency events
-- **list_trending_events**: Retrieve the most trending cryptocurrency events
-- **search_events_by_coin**: Find events related to specific cryptocurrencies
-- **search_events_by_date**: Find events within a specific date range
 
 
 ## 💬 Prompt Examples

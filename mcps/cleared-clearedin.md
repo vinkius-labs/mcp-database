@@ -36,11 +36,11 @@ Connect your **Cleared (ClearedIn)** account to any AI agent and take full contr
 
 
 ## Available Tools (8)
-- **get_cleared_account_info**: Retrieve core account and user metadata
 - **get_screening_details**: Get detailed results for a specific screening
 - **get_signature_details**: Get detailed status for a specific signature request
 - **get_verification_details**: Get detailed information for a specific verification
 - **list_cleared_audit_logs**: List security audit logs for the account
+- **get_cleared_account_info**: Retrieve core account and user metadata
 - **list_background_screenings**: List all background screening requests
 - **list_digital_signatures**: List all digital signature requests
 - **list_identity_verifications**: List all identity verification requests

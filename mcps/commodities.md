@@ -56,7 +56,7 @@ EXAMPLES:
 - "Agriculture market today" → call with no params
 
 Get current prices for major agriculture commodities
-- **get_brent_crude_oil_price**: Brent is the international oil benchmark used for global pricing.
+- **get_brent_crude_oil_price**: Brent is the international oil benchmark used for globalThis pricing.
 
 USE WHEN:
 - User asks about Brent oil prices
@@ -201,7 +201,7 @@ EXAMPLES:
 - "Silver spot price today" → call with no params
 
 Get current silver futures price
-- **get_wheat_price**: Wheat is a key agricultural commodity for global food security.
+- **get_wheat_price**: Wheat is a key agricultural commodity for globalThis food security.
 
 USE WHEN:
 - User asks about wheat prices

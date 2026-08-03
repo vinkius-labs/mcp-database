@@ -38,12 +38,12 @@ Connect your **CloudCart** account to any AI agent and take full control of your
 ## Available Tools (8)
 - **get_abandoned_carts**: Retrieve a list of abandoned shopping carts
 - **get_order_store_details**: Get detailed information for a specific order
-- **get_product_store_details**: Get detailed information for a specific product
 - **list_store_brands**: List all product brands configured in the store
-- **list_store_categories**: List all product categories in the store
 - **list_store_customers**: List all registered customers in the store
 - **list_store_orders**: List all customer orders in the store
 - **list_store_products**: List all products in the store catalog
+- **get_product_store_details**: Get detailed information for a specific product
+- **list_store_categories**: List all product categories in the store
 
 
 ## 💬 Prompt Examples

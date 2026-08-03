@@ -36,12 +36,12 @@ Connect your **Castmagic** account to any AI agent and take full control of your
 
 
 ## Available Tools (8)
-- **create_new_transcript**: Submit a new audio or video URL for transcription
 - **delete_transcript**: Delete a transcript and its associated data
 - **get_castmagic_account**: Retrieve core account and quota information
 - **get_magic_content**: Retrieve AI-generated content (show notes, social posts) for a transcript
-- **get_transcript_details**: Get details and text for a specific transcript
 - **list_castmagic_recordings**: List all uploaded recordings
+- **create_new_transcript**: Submit a new audio or video URL for transcription
+- **get_transcript_details**: Get details and text for a specific transcript
 - **list_transcript_speakers**: List identified speakers in a transcript
 - **list_transcripts**: List all audio/video transcripts
 

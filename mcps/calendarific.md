@@ -36,11 +36,11 @@ Connect your **Calendarific** account to any AI agent and orchestrate your globa
 
 ## Available Tools (6)
 - **get_account_info**: Check the status of the integration
-- **list_supported_countries**: List all supported countries and their ISO codes
 - **list_holidays_by_location**: List holidays for a specific state or region
 - **list_holidays_by_type**: List holidays filtered by type (e.g. national, religious)
 - **list_holidays**: List holidays for a specific country and year
 - **list_supported_languages**: List all supported languages
+- **list_supported_countries**: List all supported countries and their ISO codes
 
 
 ## 💬 Prompt Examples

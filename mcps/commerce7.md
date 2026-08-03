@@ -31,10 +31,6 @@ Connect your **Commerce7** winery to any AI agent and run your entire direct-to-
 
 
 ## Available Tools (12)
-- **search_customers**: Returns customer profile, lifetime value, wine club status, order history, and tasting room visits. Essential for DTC relationship management.
-
-Search wine customers
-- **list_inventory**: List wine inventory
 - **list_collections**: Used for organizing the wine catalog.
 
 List wine collections
@@ -53,10 +49,14 @@ List wine products
 - **list_clubs**: The backbone of winery DTC revenue.
 
 List wine clubs
-- **list_club_members**: List club members
 - **list_reservations**: Filter by date for daily planning.
 
 List tasting reservations
+- **search_customers**: Returns customer profile, lifetime value, wine club status, order history, and tasting room visits. Essential for DTC relationship management.
+
+Search wine customers
+- **list_inventory**: List wine inventory
+- **list_club_members**: List club members
 
 
 ## 💬 Prompt Examples

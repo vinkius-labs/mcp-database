@@ -7,44 +7,43 @@
 
 **Category:** [communication-messaging](../categories/communication-messaging.md)
 
-Manage voice and SMS communications via CallFire — track calls, send texts, and monitor campaigns directly from any AI agent.
+Run voice broadcasts, send bulk text messages, and manage call tracking campaigns for high-volume outreach at scale.
 
 ## Description
-Connect your **CallFire** account to any AI agent and orchestrate your voice and SMS communications, campaign tracking, and contact engagement through natural conversation.
+Connect your **CallFire** account to any AI agent and manage your voice and SMS communication workflows through natural conversation.
 
 ### What you can do
 
-- **SMS Dispatch** — Send single or bulk SMS messages to your customers directly from your workspace.
-- **Voice Call Management** — Trigger individual voice calls and monitor the status of sent calls in real-time.
-- **Campaign Oversight** — List and retrieve metadata for your campaign sounds and verify your communication setups.
-- **Keyword Management** — List and monitor your rented keywords for SMS interaction.
-- **Automation Tracking** — Access and monitor your active webhooks to ensure your integrations are healthy.
-- **Account Insights** — Retrieve core profile and site information straight from your workspace.
+- **Contact Management** — List all contacts and retrieve individual contact profiles with phone numbers and metadata
+- **Call Tracking** — Browse all inbound and outbound calls with duration, status, and call recording details
+- **SMS History** — Review sent and received text messages with delivery status and timestamps
+- **Campaign Monitoring** — List all broadcast campaigns (voice and text) and inspect individual campaign configurations and performance
+- **Webhook Management** — View all configured webhooks and inspect their delivery settings and event triggers
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your CallFire API Username and Password
+2. Enter your CallFire API Login (username) and API Password from your account settings
 3. Start managing your communications from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Marketing Teams** — quickly send SMS notifications or alerts without manual portal work.
-- **Sales & Support** — trigger follow-up calls or check message statuses straight from their workflow tools.
-- **Ops Managers** — monitor campaign assets and webhook health using natural language.
+- **Sales Teams** — check call history, review SMS delivery rates, and monitor campaign reach without leaving the AI workspace
+- **Marketing Operations** — monitor broadcast campaign performance and contact engagement metrics
+- **Customer Support** — quickly search for calls and messages by contact ID for case investigation
 
 
 ## Available Tools (10)
-- **get_account_info**: Retrieve core account information
-- **get_call_details**: Get details of a specific call
-- **get_sms_details**: Get details of a specific SMS
-- **list_calls**: List made voice calls
-- **list_campaign_sounds**: List configured campaign sounds
-- **list_keywords**: List rented keywords
-- **list_sent_sms**: List sent SMS messages
-- **list_webhooks**: List active webhooks
-- **send_voice_call**: Trigger a single voice call
-- **send_sms**: Send an SMS message
+- **get_call**: Get a specific call
+- **get_campaign**: Get a specific broadcast campaign
+- **get_contact**: Get a specific contact
+- **get_text**: Get a specific text message
+- **get_webhook**: Get a specific webhook
+- **list_calls**: List all calls
+- **list_campaigns**: List all broadcast campaigns
+- **list_contacts**: List all contacts
+- **list_texts**: List all text messages
+- **list_webhooks**: List all webhooks
 
 
 ## 💬 Prompt Examples
@@ -52,38 +51,38 @@ Connect your **CallFire** account to any AI agent and orchestrate your voice and
 Here are some examples of how you can interact with the **CallFire** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Send an SMS to +1234567890 saying 'Hi from Vinkius'."
+> "Show me all active broadcast campaigns and their delivery rates."
 
 **🤖 AI Agent:**
-> I've sent the SMS to +1234567890. The message ID is msg_123 and it's currently marked as 'READY'.
+> You have 3 active campaigns. 1) 'Spring Promo SMS' (campaign_4201) — 12,400 messages sent, 98.2% delivery rate, 340 replies received. 2) 'Appointment Reminders' (campaign_4189) — 3,200 calls completed, 67% answered. 3) 'Survey Follow-up' (campaign_4195) — 1,800 texts sent, 94% delivered. Would you like to inspect a specific campaign or check the associated webhooks?
 
 ---
 
 **👤 You:**
-> "List my last 5 voice calls in CallFire."
+> "List all text messages sent in the last 24 hours and highlight any that failed delivery."
 
 **🤖 AI Agent:**
-> I've retrieved your calls. You have 5 recent calls, including a finished call to +1987654321 and a failed attempt to +15550199.
+> Retrieved 847 text messages in the last 24 hours. Delivery breakdown: 812 delivered (95.8%), 28 pending (3.3%), 7 failed (0.8%). Failed messages: 3 to invalid numbers (text_90112, text_90178, text_90234), 2 carrier-blocked (text_90301, text_90445), 2 opt-out recipients (text_90389, text_90501). Would you like to inspect the full content of any failed message?
 
 ---
 
 **👤 You:**
-> "Show the details for SMS with ID 99283."
+> "How many contacts do I have and are there any with missing phone numbers?"
 
 **🤖 AI Agent:**
-> SMS 99283 was sent to +1234567890 on March 20th. The status is 'FINISHED' and the message body was 'Your code is 1234'.
+> You have 4,231 contacts total. 4,189 have valid phone numbers (99.0%). 42 contacts are missing phone numbers — these were imported from a CSV on March 15. The top 5 contacts by interaction volume: 'Apex Industries' (contact_8901, 47 calls), 'Green Valley Corp' (contact_8234, 38 calls), and 'Metro Health' (contact_7912, 31 calls). Would you like to view details for any contact?
 
 
 ## ❓ FAQ
 
-**Q: Can I send an SMS using the agent?**
-Yes! Use the `send_sms` tool with the recipient's phone number and your message content. Your agent will trigger the dispatch through CallFire instantly.
+**Q: Can I review the full history of calls and text messages for a specific contact?**
+Yes. Use `list_calls` to browse all call records and `get_call` with a specific Call ID for full details including duration, recording URL, and disposition. For SMS, use `list_texts` to browse messages and `get_text` for individual message content and delivery status.
 
-**Q: How do I check the status of a specific call?**
-Simply ask the agent to `get_call_details` and provide the Call ID. It will retrieve the latest status, such as 'finished' or 'failed', directly from CallFire.
+**Q: Does CallFire require two separate credentials?**
+Yes. CallFire uses HTTP Basic Authentication with an **API Login** (username) and an **API Password**. Both are generated in your CallFire account under Settings > API Access. They are separate from your dashboard login credentials.
 
-**Q: Does the integration allow creating a new voice broadcast?**
-The current toolset is focused on individual actions and querying (Read-Only/Individual Dispatch) for operational control. Massive broadcasts should be configured via the CallFire web dashboard.
+**Q: Can I monitor my active broadcast campaigns and their delivery status?**
+Yes. The `list_campaigns` tool retrieves all voice and text broadcast campaigns with their status (active, paused, finished). Use `get_campaign` with a Campaign ID to inspect configuration details, delivery rates, and audience targeting. Combine with `list_webhooks` to verify event-driven notifications are configured correctly.
 
 
 ## Installation & Usage

@@ -36,14 +36,14 @@ Connect your **ClickTime** account to any AI agent and take full control of your
 
 
 ## Available Tools (8)
-- **get_my_clicktime_profile**: Retrieve information about the currently authenticated user
-- **get_high_volume_time_report**: Retrieve a high-volume report of time entries (up to 2500 records)
-- **list_clicktime_clients**: List all clients configured in ClickTime
-- **list_clicktime_jobs**: List all jobs (active and inactive) in the system
 - **list_clicktime_projects**: List all projects configured in ClickTime
 - **list_clicktime_tasks**: List all tasks (work types) available for time tracking
 - **list_time_entries**: List time tracking entries
 - **list_clicktime_users**: List all people and users in the company
+- **get_my_clicktime_profile**: Retrieve information about the currently authenticated user
+- **get_high_volume_time_report**: Retrieve a high-volume report of time entries (up to 2500 records)
+- **list_clicktime_clients**: List all clients configured in ClickTime
+- **list_clicktime_jobs**: List all jobs (active and inactive) in the system
 
 
 ## 💬 Prompt Examples

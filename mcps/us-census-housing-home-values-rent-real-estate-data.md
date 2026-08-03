@@ -24,16 +24,16 @@ Requires a free API key from the Census Bureau.
 
 
 ## Available Tools (5)
-- **get_housing_by_state**: renter-occupied, and vacant units for every state. The #1 dataset for real estate market analysis.
-
-Get housing data for all states — home values, rent, ownership rates, vacancies
-- **get_housing_by_county**: Essential for real estate investors, developers, and market researchers.
-
-Get housing data for all counties in a state — values, rent, ownership
 - **get_state_profile**: One query = complete state intelligence.
 
 Get a comprehensive socioeconomic profile for a state — population, income, housing, demographics
 - **get_county_profile**: Get a comprehensive profile for a specific county
+- **get_housing_by_county**: Essential for real estate investors, developers, and market researchers.
+
+Get housing data for all counties in a state — values, rent, ownership
+- **get_housing_by_state**: renter-occupied, and vacant units for every state. The #1 dataset for real estate market analysis.
+
+Get housing data for all states — home values, rent, ownership rates, vacancies
 - **query_census**: Specify ACS variables (e.g., B01003_001E for population), geography (state:*, county:*, place:*), optional in-clause for filtering, year, and dataset path. See api.census.gov/data.html for all available datasets and variables.
 
 Run a custom Census API query — any dataset, variables, and geography
