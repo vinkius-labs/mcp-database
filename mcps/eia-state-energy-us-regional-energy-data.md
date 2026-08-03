@@ -22,15 +22,15 @@ State energy offices, regional planners, utility regulators, academic researcher
 
 
 ## Available Tools (3)
+- **get_nuclear_outages**: S. nuclear reactors.
+
+Get nuclear power plant outage data
 - **get_state_energy_data**: Data from 1960 to present. The definitive source for state-level energy analysis.
 
 Get comprehensive state-level energy data (SEDS): production, consumption, prices, expenditures
 - **get_total_energy**: Includes total production, consumption, stocks, trade, prices, and CO2 emissions for petroleum, natural gas, coal, electricity, nuclear, and renewables.
 
 Get comprehensive U.S. total energy overview (Monthly Energy Review)
-- **get_nuclear_outages**: S. nuclear reactors.
-
-Get nuclear power plant outage data
 
 
 ## 💬 Prompt Examples

@@ -7,42 +7,47 @@
 
 **Category:** [customer-support](../categories/customer-support.md)
 
-Equip your AI agent to manage customer conversations, track agents, and monitor support queues via the Dixa API.
+Route customer conversations to the right agent across phone, email, chat, and messaging with intelligent prioritization.
 
 ## Description
-Integrate **Dixa**, the customer friendship platform, directly into your AI workflow. Manage your multi-channel support conversations, monitor agent presence and performance, track service queues, and oversee your support teams using natural language.
+Connect your **Dixa** account to any AI agent and take full control of your omnichannel customer service and team coordination workflows through natural conversation.
 
 ### What you can do
 
-- **Conversation Oversight** — List and retrieve detailed information for all customer conversations and their current processing status.
-- **Agent Intelligence** — Monitor real-time agent presence, profile details, and team assignments across your organization.
-- **Queue Monitoring** — Track active service queues and routing settings to ensure efficient support delivery.
-- **Team Management** — List all support teams and identify members assigned to specific organizational units.
+- **Conversation Orchestration** — List and manage active support tickets programmatically, including retrieving detailed metadata and historical context
+- **Agent & Team Coordination** — Assign conversations to yourself or specific team members and monitor agent availability in real-time to optimize response times
+- **Customer Profile Intelligence** — Access and manage end-user (customer) profiles programmatically to maintain a high-fidelity record of contact information and interaction history
+- **Lifecycle Management** — Programmatically create new support requests or mark existing conversations as resolved/closed to maintain a structured support pipeline
+- **Operational Monitoring** — Check API connectivity and monitor active webhooks directly through your agent for reliable service operations
 
 ### How it works
 
-1. Connect the Dixa integration to your AI assistant.
-2. Authorize using your Dixa API Token (found in your organization settings).
-3. Orchestrate your customer service and support operations through intuitive conversation.
+1. Subscribe to this server
+2. Retrieve your **API Token** from the Dixa dashboard (Settings > Integrations > API Tokens)
+3. Start managing your customer interactions from Claude, Cursor, or any MCP client
+
+No more manual ticket shuffling or digging through agent lists in the portal. Your AI acts as your dedicated support strategist and CX coordinator.
 
 ### Who is this for?
 
-- **Support Managers** — Quickly check queue volumes and agent availability on the go.
-- **Customer Success Leads** — Research conversation history and agent performance via chat.
-- **Operations Teams** — Monitor support team structures and organizational metadata instantly.
+- **Support Leads & Managers** — instantly retrieve ticket summaries and reassign high-priority conversations using natural language commands
+- **Customer Success Teams** — monitor customer profiles and interaction history without leaving your communication tools
+- **Operations Leads** — verify system health and manage webhook configurations through simple AI queries
 
 
-## Available Tools (10)
-- **get_service_account_metadata**: Retrieve metadata and usage limits for your Dixa account
-- **get_agent_profile**: Get full profile and performance data for a specific agent
-- **get_conversation_details**: Get detailed information for a specific customer conversation
-- **quick_agent_presence_audit**: Retrieve a high-level summary of active agent presence statuses
-- **list_service_agents**: List all support agents registered in your Dixa organization
-- **list_customer_conversations**: List all customer service conversations in your Dixa account
-- **list_open_support_tickets**: Identify conversations that are currently in an "Open" or "Unassigned" status
-- **list_service_queues**: List all active service queues configured in Dixa
-- **list_support_teams**: List all configured support teams and their members
-- **search_conversations_by_subject**: Search for conversations using a keyword in the subject
+## Available Tools (12)
+- **assign_to_self**: Claim a conversation
+- **resolve_conversation**: Close a conversation
+- **create_conversation**: Add new support chat
+- **create_customer_profile**: Add new customer
+- **get_connection_status**: Check API health
+- **get_agent_info**: Get agent details
+- **get_conversation_details**: Get ticket info
+- **list_support_agents**: List active agents
+- **list_conversations**: List customer tickets
+- **list_end_users**: List Dixa customers
+- **list_active_webhooks**: Get event configs
+- **list_support_teams**: List agent teams
 
 
 ## 💬 Prompt Examples
@@ -50,38 +55,38 @@ Integrate **Dixa**, the customer friendship platform, directly into your AI work
 Here are some examples of how you can interact with the **Dixa** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all open support conversations."
+> "List all active conversations in Dixa."
 
 **🤖 AI Agent:**
-> I've found 8 open conversations, including 'Issues with Payment' and 'Feature Request: Dark Mode'. Would you like to see the assigned agent for any of these?
+> I've retrieved your active conversations. You currently have 4 tickets needing attention, including 'Refund Request' (ID: conv_1) and 'Login Issue'. Which one would you like to reassign or resolve?
 
 ---
 
 **👤 You:**
-> "Show me the details for conversation '12345'."
+> "Find the customer profile for 'jane.doe@example.com'."
 
 **🤖 AI Agent:**
-> Conversation '12345' (Subject: Login Issue) is currently 'Open' and assigned to 'John Doe'. It was created 2 hours ago via Email. Should I pull the latest message from this conversation?
+> I've located Jane Doe's profile (ID: usr_123). She has a history of 3 past conversations and is currently assigned to the 'VIP' queue. Shall I retrieve her full interaction history?
 
 ---
 
 **👤 You:**
-> "Who is currently available in the 'Sales' team?"
+> "Mark conversation ID 'conv_456' as resolved."
 
 **🤖 AI Agent:**
-> In the Sales team, 3 agents are currently 'Available': 'Alice Johnson', 'Bob Miller', and 'Kenji Tanaka'. 2 other members are 'Away'. Would you like to see the current load for the available agents?
+> Action complete! Conversation conv_456 has been successfully marked as resolved in Dixa. The status is now updated on your dashboard. Need help with any other tickets?
 
 
 ## ❓ FAQ
 
-**Q: How do I get a Dixa API Token?**
-Log in to your Dixa account as an administrator, navigate to **Settings > Integrations > API Tokens**, and click **Create Token**. Note that you may need a specific plan for API access.
+**Q: How do I find my Dixa API Token?**
+Log in to Dixa, navigate to **Settings** > **Integrations** > **API Tokens**, and generate a new token for your integration.
 
-**Q: Can the agent reply to customers?**
-This integration currently focuses on listing and auditing conversations, agents, and queues. Sending replies to customers should be managed via the Dixa agent interface.
+**Q: Can I assign tickets to myself via AI?**
+Yes! Use the `assign_to_self` tool with a specific conversation ID to take ownership of a support ticket.
 
-**Q: Does the integration show real-time agent presence?**
-Yes, you can use the list_service_agents or quick_agent_presence_audit tools to see the current presence status of your support team.
+**Q: How do I check which agents are online?**
+The `list_support_agents` tool retrieves all agent profiles and their current status directly from the Dixa platform.
 
 
 ## Installation & Usage

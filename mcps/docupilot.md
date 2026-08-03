@@ -34,15 +34,15 @@ Integrate **Docupilot**, the powerful document automation platform, directly int
 
 ## Available Tools (10)
 - **trigger_document_merge**: Create a new document by merging data into a specific template
+- **list_latest_document_merges**: Identify the most recently merged documents
+- **list_docupilot_templates**: List all document templates available in your Docupilot account
 - **get_docupilot_account_metadata**: Retrieve metadata and usage limits for your Docupilot account
 - **get_document_generation_status**: Get the current status and output URL for a specific generated document
 - **get_template_merge_field_audit**: Identify exactly which merge fields are required to populate a template
+- **list_failed_document_merges**: Identify document merges that failed due to data or template errors (mock logic)
+- **search_docupilot_templates**: Search for a document template using a name keyword
 - **get_template_schema**: Get detailed information and field schema for a specific template
 - **list_generated_documents**: List all documents that have been generated/merged in Docupilot
-- **list_failed_document_merges**: Identify document merges that failed due to data or template errors (mock logic)
-- **list_latest_document_merges**: Identify the most recently merged documents
-- **list_docupilot_templates**: List all document templates available in your Docupilot account
-- **search_docupilot_templates**: Search for a document template using a name keyword
 
 
 ## 💬 Prompt Examples

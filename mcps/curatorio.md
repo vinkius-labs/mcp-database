@@ -33,6 +33,9 @@ Integrate **Curator.io**, the modern social media aggregator, directly into your
 
 
 ## Available Tools (10)
+- **list_social_feeds**: Resolves feed IDs, names, and current statuses. Interacts with the feed management system.
+
+List all social media feeds configured in Curator.io
 - **get_account_details**: Resolves usage limits and account identifiers. Interacts with the account and billing boundary.
 
 Retrieve metadata for your Curator.io account
@@ -48,9 +51,6 @@ Quickly list only the feeds that are currently active
 - **list_social_connections**: Resolves account identifiers and authentication states. Touches the OAuth and external API integration boundary.
 
 List connected social media accounts (Instagram, Twitter, etc.)
-- **list_social_feeds**: Resolves feed IDs, names, and current statuses. Interacts with the feed management system.
-
-List all social media feeds configured in Curator.io
 - **list_moderation_rules**: Resolves keyword filters and exclusion patterns. Touches the content moderation logic boundary.
 
 List active moderation and filtering rules for a feed

@@ -33,16 +33,16 @@ Integrate **Dialog Insight**, the powerful relationship marketing and CRM platfo
 
 
 ## Available Tools (10)
+- **search_contacts_by_email**: Search for a contact record by their email address
 - **add_new_marketing_contact**: Add a new contact record to the Dialog Insight database
 - **get_account_metadata**: Retrieve settings and limits for your Dialog Insight account
 - **get_campaign_performance**: Get detailed performance metrics for a specific campaign
+- **list_audience_segments**: List all configured audience segments for targeting
+- **list_high_performing_campaigns**: Identify campaigns with the highest engagement rates (mock logic)
 - **get_contact_profile**: Get detailed profile and history for a specific contact
 - **list_active_automations**: List active marketing automation workflows
 - **list_marketing_campaigns**: List all email and SMS marketing campaigns
 - **list_marketing_contacts**: List all contacts in your Dialog Insight organization
-- **list_audience_segments**: List all configured audience segments for targeting
-- **list_high_performing_campaigns**: Identify campaigns with the highest engagement rates (mock logic)
-- **search_contacts_by_email**: Search for a contact record by their email address
 
 
 ## 💬 Prompt Examples

@@ -33,16 +33,16 @@ Integrate **Durianpay**, the fully integrated payment platform, directly into yo
 
 
 ## Available Tools (10)
-- **get_durianpay_account_metadata**: Retrieve metadata and usage limits for your Durianpay account
-- **get_payment_order_details**: Get detailed information for a specific checkout order
-- **get_payment_details**: Get detailed information and lifecycle status for a specific payment
-- **quick_revenue_health_audit**: Retrieve a high-level summary of payment activity and success rates
-- **list_registered_customers**: List all customers registered in your Durianpay organization
 - **list_failed_transactions**: Identify payments that were declined or failed (mock logic)
 - **list_payment_orders**: List all checkout orders created in your Durianpay account
 - **list_durianpay_payments**: List all payments received in your Durianpay account
 - **list_latest_transactions**: Identify the most recently received payments
 - **search_payment_orders**: Search for orders using an order ID or customer name keyword
+- **get_durianpay_account_metadata**: Retrieve metadata and usage limits for your Durianpay account
+- **get_payment_order_details**: Get detailed information for a specific checkout order
+- **list_registered_customers**: List all customers registered in your Durianpay organization
+- **get_payment_details**: Get detailed information and lifecycle status for a specific payment
+- **quick_revenue_health_audit**: Retrieve a high-level summary of payment activity and success rates
 
 
 ## 💬 Prompt Examples

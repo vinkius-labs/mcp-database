@@ -33,16 +33,16 @@ Integrate **Didacte** (by **Workleap**), the powerful and user-friendly learning
 
 
 ## Available Tools (10)
-- **get_account_metadata**: Retrieve metadata and usage limits for your Didacte organization
-- **get_course_details**: Get detailed settings and information for a specific course
+- **list_lms_courses**: List all available courses in your Didacte organization
 - **get_user_learning_profile**: Get full profile and summary for a specific user
 - **list_active_learning_progress**: Identify enrollments where learners have made recent progress (mock logic)
 - **list_course_enrollments**: List all users currently enrolled in a specific course
-- **list_lms_courses**: List all available courses in your Didacte organization
 - **list_user_enrollments**: List all courses a specific user is enrolled in
-- **list_course_curriculum**: List all lessons and modules within a specific course
 - **list_organization_users**: List all users and learners registered in your organization
 - **search_courses_by_title**: Search for a course using a title keyword
+- **get_account_metadata**: Retrieve metadata and usage limits for your Didacte organization
+- **get_course_details**: Get detailed settings and information for a specific course
+- **list_course_curriculum**: List all lessons and modules within a specific course
 
 
 ## 💬 Prompt Examples

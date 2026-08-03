@@ -33,13 +33,13 @@ Integrate **Denim**, the specialized marketing automation platform for financial
 
 
 ## Available Tools (10)
+- **list_marketing_campaigns**: List all marketing campaigns in your Denim account
+- **list_active_automations**: List active automated marketing workflows
+- **list_crm_contacts**: List all contacts and leads in the system
 - **add_new_contact**: Add a new contact to your Denim database
 - **get_account_metadata**: Retrieve settings and limits for your Denim account
 - **get_campaign_analytics**: Retrieve performance metrics for a specific campaign
 - **get_campaign_details**: Get detailed settings for a specific campaign
-- **list_active_automations**: List active automated marketing workflows
-- **list_marketing_campaigns**: List all marketing campaigns in your Denim account
-- **list_crm_contacts**: List all contacts and leads in the system
 - **list_audience_segments**: List configured audience segments for targeting
 - **list_email_templates**: List all available marketing templates
 - **search_active_campaigns**: Search for running campaigns by keyword

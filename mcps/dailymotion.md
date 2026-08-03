@@ -36,17 +36,17 @@ Connect your **Dailymotion** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
+- **delete_video**: Delete a Dailymotion video permanently
+- **get_upload_url**: Get a temporary upload URL from Dailymotion. Used as the first step in the upload flow
+- **publish_video**: g. shortfilms, music), and comma-separated tags.
+
+Publish a video to Dailymotion. Creates a new video entry from a previously uploaded file
 - **list_videos**: List your uploaded Dailymotion videos. Returns video IDs, titles, channels, durations, view counts, and thumbnail URLs
 - **get_video**: Get full details of a Dailymotion video. Returns title, description, channel, tags, duration, views, and stream URLs
 - **search_videos**: Search all public Dailymotion videos by keyword. Returns matching videos with metadata
 - **update_video**: g. title=New Title&tags=cat,funny).
 
 Update video metadata on Dailymotion. Modify title, description, tags, channel, or published status
-- **delete_video**: Delete a Dailymotion video permanently
-- **get_upload_url**: Get a temporary upload URL from Dailymotion. Used as the first step in the upload flow
-- **publish_video**: g. shortfilms, music), and comma-separated tags.
-
-Publish a video to Dailymotion. Creates a new video entry from a previously uploaded file
 - **get_user**: Get your Dailymotion account info. Returns username, email, total videos, and total views
 - **list_playlists**: List your Dailymotion playlists. Returns playlist IDs, names, and video counts
 - **list_channels**: List Dailymotion content channels. Returns channel IDs, names, and descriptions
