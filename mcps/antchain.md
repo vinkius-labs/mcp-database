@@ -57,6 +57,9 @@ Query account information on AntChain
 - **query_block**: Returns block metadata including timestamp, transaction count, hash, and previous block reference. Use either blockHeight or blockHash to identify the block.
 
 Query block details from an AntChain blockchain
+- **query_transaction**: Returns transaction status, sender, receiver, gas used, block inclusion, and execution result. Useful for verifying transaction finality and inspecting transaction details.
+
+Query a transaction on AntChain
 - **query_contract**: Useful for inspecting contract configuration before invocation.
 
 Query smart contract information on AntChain
@@ -66,9 +69,6 @@ Query the latest transactions on an AntChain blockchain
 - **query_network_info**: Useful for monitoring blockchain infrastructure health.
 
 Query blockchain network information on AntChain
-- **query_transaction**: Returns transaction status, sender, receiver, gas used, block inclusion, and execution result. Useful for verifying transaction finality and inspecting transaction details.
-
-Query a transaction on AntChain
 
 
 ## 💬 Prompt Examples

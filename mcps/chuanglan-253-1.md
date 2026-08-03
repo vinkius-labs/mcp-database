@@ -39,21 +39,12 @@ Your AI agent becomes your SMS operations center, handling verification flows, d
 
 
 ## Available Tools (10)
-- **create_template**: The template must be approved before it can be used. Template content should include variable placeholders like {1}, {2} for dynamic content. Approval typically takes a few minutes to hours.
-
-Create a new SMS template in Chuanglan 253
-- **get_account_info**: ).
-
-Get Chuanglan 253 account information and settings
 - **get_sms_balance**: Use this to monitor available messaging capacity before sending campaigns.
 
 Check SMS account balance on Chuanglan 253
 - **query_batch_sms_status**: This is useful for checking the status of bulk SMS campaigns where multiple messages were sent with the same tracking identifier.
 
 Query delivery status for a batch of SMS messages
-- **query_sms_status**: Returns whether the message was delivered, is pending, or failed, along with timestamps.
-
-Query delivery status of a specific SMS message
 - **query_template_list**: Templates are pre-approved message formats that can be used for sending. Each template has an ID, name, content, and approval status.
 
 List all SMS templates in your Chuanglan account
@@ -69,6 +60,15 @@ Send a verification code SMS (1-click login style)
 - **send_voice_verification**: This is an alternative to SMS verification, useful when SMS delivery fails or for enhanced security. The code will be spoken in the call.
 
 Send a voice verification call with a code
+- **create_template**: The template must be approved before it can be used. Template content should include variable placeholders like {1}, {2} for dynamic content. Approval typically takes a few minutes to hours.
+
+Create a new SMS template in Chuanglan 253
+- **get_account_info**: ).
+
+Get Chuanglan 253 account information and settings
+- **query_sms_status**: Returns whether the message was delivered, is pending, or failed, along with timestamps.
+
+Query delivery status of a specific SMS message
 
 
 ## 💬 Prompt Examples

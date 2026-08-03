@@ -37,6 +37,12 @@ Procore is the leading cloud-based construction management software, connecting 
 
 
 ## Available Tools (8)
+- **list_rfis**: Includes subject, status, assignee, due date, and response history.
+
+List RFIs for a project
+- **list_submittals**: Includes title, spec section, status, and approver.
+
+List submittals
 - **list_observations**: Includes type, priority, assignee, photos, and status.
 
 List field observations
@@ -53,12 +59,6 @@ List project drawings
 - **get_project**: Includes budget, schedule, team, and project settings.
 
 Get project details
-- **list_rfis**: Includes subject, status, assignee, due date, and response history.
-
-List RFIs for a project
-- **list_submittals**: Includes title, spec section, status, and approver.
-
-List submittals
 
 
 ## 💬 Prompt Examples

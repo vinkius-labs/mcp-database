@@ -36,17 +36,17 @@ Connect your AI agents to **AcademyOfMine (AOM)**, the all-in-one platform for t
 
 
 ## Available Tools (11)
-- **create_course**: Create a new course profile
 - **create_user**: Create a new user account
 - **enroll_student**: Enroll a student in a course
-- **get_course_curriculum**: Retrieve the curriculum structure of a course
-- **get_course_details**: Get detailed information for a specific course
 - **get_portal_settings**: Retrieve LMS portal default settings
 - **get_user_details**: Get detailed information for a specific user
 - **list_courses**: List all courses available in the LMS
 - **list_users**: List learners and instructors in the portal
 - **unenroll_student**: Remove a student from a course
 - **update_course**: Update an existing course
+- **create_course**: Create a new course profile
+- **get_course_curriculum**: Retrieve the curriculum structure of a course
+- **get_course_details**: Get detailed information for a specific course
 
 
 ## 💬 Prompt Examples

@@ -36,16 +36,16 @@ Connect your AI agents to the **DJI Developer Platform**, the industry standard 
 
 
 ## Available Tools (10)
-- **create_mission**: Create a new flight mission for a drone or dock
-- **get_device_osd**: Retrieve real-time flight data (OSD)
-- **get_device_status**: Get the online status and basic state of a drone
-- **get_firmware_info**: Check firmware versions for a device
-- **get_hms_stats**: Retrieve health management system (HMS) alerts
 - **get_media_upload_url**: Request a cloud storage upload URL for media
 - **get_mission_status**: Check the progress of an active flight mission
 - **list_devices**: List all drones and docks bound to your account
 - **list_media_files**: List photos and videos captured by a drone
 - **list_waylines**: List available flight wayline files
+- **get_firmware_info**: Check firmware versions for a device
+- **get_hms_stats**: Retrieve health management system (HMS) alerts
+- **create_mission**: Create a new flight mission for a drone or dock
+- **get_device_osd**: Retrieve real-time flight data (OSD)
+- **get_device_status**: Get the online status and basic state of a drone
 
 
 ## 💬 Prompt Examples

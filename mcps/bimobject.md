@@ -34,16 +34,16 @@ Connect your AI agents to **BIMobject**, the world's leading BIM content platfor
 
 
 ## Available Tools (10)
+- **get_product_details**: Get detailed information for a specific product
+- **list_brands**: List manufacturers and brands
 - **list_categories**: List product categories
+- **list_classifications**: List classification systems
+- **search_products**: Search for BIM products in the marketplace
 - **get_brand_details**: Get details for a specific brand
 - **get_me**: Get current user profile
 - **get_product_files**: List files available for a product
-- **get_product_details**: Get detailed information for a specific product
-- **list_brands**: List manufacturers and brands
-- **list_classifications**: List classification systems
 - **list_featured_products**: List featured marketplace products
 - **list_latest_products**: List latest added products
-- **search_products**: Search for BIM products in the marketplace
 
 
 ## 💬 Prompt Examples

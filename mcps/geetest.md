@@ -32,6 +32,9 @@ Connect **Geetest** (极验) CAPTCHA v4 to any AI agent and manage bot protectio
 
 
 ## Available Tools (6)
+- **set_policy**: Changes take effect immediately.
+
+Configure CAPTCHA policy settings
 - **get_blocked_ips**: Useful for investigating false positives and monitoring attack sources.
 
 Get list of IPs blocked by CAPTCHA system
@@ -41,9 +44,6 @@ Get current CAPTCHA configuration and settings
 - **get_validation_stats**: Useful for monitoring bot attack patterns and CAPTCHA effectiveness.
 
 Get CAPTCHA validation statistics
-- **set_policy**: Changes take effect immediately.
-
-Configure CAPTCHA policy settings
 - **validate_captcha**: Requires lot_number, captcha_output, pass_token, and gen_time from the frontend. Returns whether the captcha passed and risk assessment details.
 
 Validate a Geetest v4 CAPTCHA response

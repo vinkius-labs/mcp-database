@@ -35,16 +35,16 @@ Say goodbye to missing massive interactions under heavy traffic. You now possess
 
 
 ## Available Tools (10)
-- **get_danmu_config**: Get WebSockets configuration for Danmu (bullet chat)
-- **get_fans_medal_info**: Check a users fan medal level in the current room
 - **get_gift_history**: View recent virtual items gifted in the room
 - **get_guard_list**: Get a list of active "Guards" (Captains/Admirals) in the room
 - **get_room_info**: Start the app connection and get high-level room config
 - **get_room_play_info**: Get stream playback URLs and live status
 - **get_streamer_info**: Retrieve the broadcasters public account details
 - **get_super_chats**: Extract actively purchased Super Chats
-- **send_danmu**: Send a message into the broadcast as the developer account
 - **update_room_title**: Change the streamers live room title
+- **get_danmu_config**: Get WebSockets configuration for Danmu (bullet chat)
+- **get_fans_medal_info**: Check a users fan medal level in the current room
+- **send_danmu**: Send a message into the broadcast as the developer account
 
 
 ## 💬 Prompt Examples

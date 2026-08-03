@@ -34,18 +34,18 @@ Directly empower your intelligent agents with the **Clip API**, the undisputed c
 
 
 ## Available Tools (10)
-- **add_product_to_catalog**: Add a new item to the Clip Point of Sale catalog
 - **cancel_payment_link**: Void an active payment link
-- **create_payment_link**: Generate a Clip payment link to charge customers via card
-- **create_subscription_plan**: Build a recurring billing cycle charging clients periodically
-- **get_balance_summary**: Retrieve cash balance awaiting settlement
 - **get_settlement_reports**: Fetch detailed historical settlement reports
 - **get_transaction_status**: Retrieve the status of a payment transaction
-- **list_products_catalog**: Pull the complete inventory catalog registered in Clip
 - **list_terminals**: List all registered physical POS Clip terminals
 - **refund_transaction**: Omit amount for full refund.
 
 Execute a full or partial refund for a settled transaction
+- **list_products_catalog**: Pull the complete inventory catalog registered in Clip
+- **add_product_to_catalog**: Add a new item to the Clip Point of Sale catalog
+- **create_payment_link**: Generate a Clip payment link to charge customers via card
+- **create_subscription_plan**: Build a recurring billing cycle charging clients periodically
+- **get_balance_summary**: Retrieve cash balance awaiting settlement
 
 
 ## 💬 Prompt Examples

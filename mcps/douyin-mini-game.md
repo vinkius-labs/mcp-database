@@ -32,15 +32,12 @@ Connect your **Douyin Mini-Game** (抖音小游戏) developer account to any AI 
 
 
 ## Available Tools (10)
-- **get_analytics**: Useful for tracking game performance, understanding player retention, and identifying trends.
+- **check_content_security**: ) against Douyin's content policies. Returns whether the content is safe or contains prohibited material. Essential for games with user-generated content features.
 
-Get game analytics data (DAU, retention, etc.)
-- **get_game_rank**: Supports different rank scenes (different leaderboards). Useful for showing players their standing and competitive position.
+Check user-generated content for policy violations
+- **get_access_token**: This token is required for all subsequent API calls including user authentication, cloud storage, analytics, and game features. Tokens expire after a set period (typically 2 hours) and must be refreshed.
 
-Get user's game rank and leaderboard data
-- **get_user_info**: Requires the access token and openid obtained from code2session. Note: Some fields require explicit user authorization.
-
-Get Douyin user profile information
+Get server access token for Douyin mini-game API
 - **get_user_storage**: Specify keys to fetch specific fields, or omit keys to fetch all stored data. Useful for loading saved game progress, settings, or user preferences.
 
 Retrieve user data from Douyin cloud storage
@@ -53,15 +50,18 @@ Save user data to Douyin cloud storage (key-value)
 - **submit_score**: The score is a numeric value. The rank_scene parameter identifies which leaderboard (default 1001). Scores are used for ranking and competitive features.
 
 Submit a game score to the leaderboard
-- **check_content_security**: ) against Douyin's content policies. Returns whether the content is safe or contains prohibited material. Essential for games with user-generated content features.
-
-Check user-generated content for policy violations
 - **code2session**: This is the standard Douyin login flow: the mini-game client calls tt.login() to get a code, then the server exchanges it for the user session.
 
 Exchange login code for user session (openid/session_key)
-- **get_access_token**: This token is required for all subsequent API calls including user authentication, cloud storage, analytics, and game features. Tokens expire after a set period (typically 2 hours) and must be refreshed.
+- **get_analytics**: Useful for tracking game performance, understanding player retention, and identifying trends.
 
-Get server access token for Douyin mini-game API
+Get game analytics data (DAU, retention, etc.)
+- **get_game_rank**: Supports different rank scenes (different leaderboards). Useful for showing players their standing and competitive position.
+
+Get user's game rank and leaderboard data
+- **get_user_info**: Requires the access token and openid obtained from code2session. Note: Some fields require explicit user authorization.
+
+Get Douyin user profile information
 
 
 ## 💬 Prompt Examples

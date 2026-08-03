@@ -12,18 +12,18 @@ Connect Zulip to any AI agent via MCP.
 
 
 ## Available Tools (9)
-- **zulip_add_reaction**: Add an emoji reaction to a message
 - **zulip_get_messages**: Use anchor "newest" for latest messages.
 
 Retrieve message history from Zulip
-- **zulip_get_own_profile**: Get the authenticated bot/user profile
-- **zulip_get_stream_topics**: List topics within a specific Zulip stream
 - **zulip_get_streams**: List all available Zulip streams (channels)
+- **zulip_add_reaction**: Add an emoji reaction to a message
 - **zulip_get_users**: List all users in the Zulip organisation
 - **zulip_send_message**: Use type "stream" for channels or "direct" for DMs.
 
 Send a message to a stream or direct to a user
 - **zulip_set_presence**: Update the user presence status
+- **zulip_get_own_profile**: Get the authenticated bot/user profile
+- **zulip_get_stream_topics**: List topics within a specific Zulip stream
 - **zulip_subscribe_to_stream**: Subscribe the authenticated user to a stream
 
 

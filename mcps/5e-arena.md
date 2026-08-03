@@ -34,8 +34,6 @@ No more refreshing bloated leaderboards checking for a friend's rank fluctuation
 
 
 ## Available Tools (10)
-- **get_leaderboard**: Fetch the Top 500 Radiant/Global leaderboard
-- **get_live_matches**: Get a list of currently ongoing high-ELO matches
 - **get_map_stats**: Get a players map-specific win rates
 - **get_match_detail**: Get full scoreboard and telemetry for a specific 5E match
 - **get_match_history**: Get a players recent match history
@@ -44,6 +42,8 @@ No more refreshing bloated leaderboards checking for a friend's rank fluctuation
 - **get_tournament_schedule**: Get active 5E Arena official tournament bracket matches
 - **get_weapon_stats**: Get a players proficiency layout per weapon
 - **search_player**: Search the 5E user database by partial name
+- **get_leaderboard**: Fetch the Top 500 Radiant/Global leaderboard
+- **get_live_matches**: Get a list of currently ongoing high-ELO matches
 
 
 ## 💬 Prompt Examples
