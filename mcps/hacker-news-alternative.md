@@ -34,15 +34,15 @@ Connect to the **Hacker News** API to browse the pulse of the developer communit
 
 
 ## Available Tools (10)
+- **get_top_stories**: Get up to 500 top stories
+- **get_updates**: Get item and profile changes
+- **get_new_stories**: Get up to 500 new stories
+- **get_show_stories**: Get up to 200 latest Show HN stories
 - **get_ask_stories**: Get up to 200 latest Ask HN stories
 - **get_best_stories**: Get up to 500 best stories
 - **get_item**: Get details for a specific Hacker News item
 - **get_job_stories**: Get up to 200 latest Job stories
 - **get_max_item**: Get the current largest item ID
-- **get_new_stories**: Get up to 500 new stories
-- **get_show_stories**: Get up to 200 latest Show HN stories
-- **get_top_stories**: Get up to 500 top stories
-- **get_updates**: Get item and profile changes
 - **get_user**: Get details for a specific Hacker News user
 
 

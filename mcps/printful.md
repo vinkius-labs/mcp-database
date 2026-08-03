@@ -33,10 +33,10 @@ Connect your **Printful** account to any AI agent to browse the extensive Print-
 
 
 ## Available Tools (4)
-- **get_product**: Get details for a specific Printful product
 - **list_products**: Can be filtered by category ID.
 
 List Printful products
+- **get_product**: Get details for a specific Printful product
 - **get_product_sizes**: Get size guides for a Printful product
 - **get_variant**: Always use Variant IDs for orders.
 

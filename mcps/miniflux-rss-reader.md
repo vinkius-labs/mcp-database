@@ -33,7 +33,6 @@ Connect your **Miniflux** instance to any AI agent and transform how you consume
 
 
 ## Available Tools (46)
-- **create_api_key**: Create a new API key
 - **create_category**: Create a category
 - **create_feed**: Create a new feed
 - **create_user**: Create a user (Admin only)
@@ -45,7 +44,6 @@ Connect your **Miniflux** instance to any AI agent and transform how you consume
 - **fetch_entry_content**: Fetch original article content
 - **flush_history**: Flush history
 - **get_entry**: Get a single entry
-- **get_feed_counters**: Fetch unread and read counters
 - **get_feed_icon**: Get feed icon by feed ID
 - **get_feed**: Get a specific feed
 - **get_icon**: Get feed icon by icon ID
@@ -56,17 +54,19 @@ Connect your **Miniflux** instance to any AI agent and transform how you consume
 - **healthcheck**: Healthcheck (checks DB)
 - **import_entry**: Import an entry manually
 - **import_opml**: OPML Import
-- **list_categories**: Get all categories
 - **list_category_entries**: Get entries for a specific category
 - **list_entries**: Get entries with filters
 - **list_feed_entries**: Get entries for a specific feed
 - **list_feeds**: Get all feeds
-- **list_users**: Get all users (Admin only)
 - **liveness**: Liveness probe
 - **mark_category_as_read**: Mark all entries in a category as read
 - **mark_feed_as_read**: Mark all entries of a feed as read
 - **mark_user_as_read**: Mark all entries for a user as read
 - **readiness**: Readiness probe
+- **create_api_key**: Create a new API key
+- **get_feed_counters**: Fetch unread and read counters
+- **list_categories**: Get all categories
+- **list_users**: Get all users (Admin only)
 - **refresh_all_feeds**: Refresh all feeds (background)
 - **refresh_category**: Refresh all feeds in a category
 - **refresh_feed**: Refresh a specific feed (synchronous)

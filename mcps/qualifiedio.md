@@ -36,9 +36,9 @@ No more jumping between your ATS and assessment platform to check if a candidate
 
 
 ## Available Tools (20)
-- **archive_assessment**: Archive an assessment
-- **cancel_invitation**: Cancel an assessment invitation
 - **create_assessment_result_review**: Create a review for an assessment result
+- **cancel_invitation**: Cancel an assessment invitation
+- **archive_assessment**: Archive an assessment
 - **unarchive_assessment**: Unarchive an assessment
 - **create_assessment**: Create a new assessment
 - **get_assessment_result_exhibit**: Retrieve streamlined exhibit data for an assessment result

@@ -34,6 +34,7 @@ Connect your **Listmonk** instance to any AI agent and take full control of your
 
 
 ## Available Tools (28)
+- **list_bounces**: Retrieve bounce records
 - **create_campaign**: Create a new campaign
 - **create_list**: Create a new list
 - **create_public_subscription**: Create a public subscription
@@ -46,9 +47,7 @@ Connect your **Listmonk** instance to any AI agent and take full control of your
 - **delete_subscriber**: Delete a specific subscriber
 - **delete_template**: Delete a template
 - **get_campaign**: Retrieve a specific campaign
-- **get_import_status**: Retrieve import status
 - **get_subscriber**: Retrieve a specific subscriber
-- **list_bounces**: Retrieve bounce records
 - **list_campaigns**: Retrieve all campaigns
 - **list_lists**: Retrieve all lists
 - **list_media**: Get uploaded media files
@@ -60,10 +59,11 @@ Query and retrieve subscribers
 - **patch_subscriber**: Partially update a subscriber
 - **send_transactional_message**: Send transactional messages to one or more subscribers using a template
 - **stop_import**: Stop an ongoing import
-- **update_campaign_status**: Change campaign status
-- **update_list**: Update a list
 - **update_subscriber**: Update a specific subscriber
 - **update_template**: Update a template
+- **get_import_status**: Retrieve import status
+- **update_campaign_status**: Change campaign status
+- **update_list**: Update a list
 
 
 ## 💬 Prompt Examples

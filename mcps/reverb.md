@@ -40,9 +40,6 @@ Connect your **Reverb** seller account to any AI agent to manage your musical ge
 
 Create a new Reverb listing
 - **delete_draft**: Delete a draft listing
-- **view_seller_sales**: View seller sales
-- **delete_listing_image**: Delete an image from a listing
-- **disable_vacation_mode**: Disable vacation mode for the shop
 - **enable_vacation_mode**: Enable vacation mode for the shop
 - **end_listing**: End an active Reverb listing
 - **find_listings**: Can filter by SKU or state.
@@ -56,18 +53,21 @@ Find seller listings
 - **get_payment_methods**: Get eligible payment methods
 - **get_payout_line_items**: Get line items for a payout
 - **get_vacation_status**: Get vacation mode status
-- **leave_feedback**: Leave feedback for a buyer
 - **list_conversations**: List messages and conversations
 - **list_drafts**: List all draft listings
 - **list_payouts**: List earnings payouts
 - **mark_order_picked_up**: Mark an order as picked up
 - **publish_listing**: Publish a draft Reverb listing
 - **remove_bump**: Remove a bump from a listing
+- **ship_order**: Mark an order as shipped
+- **update_listing**: Update an existing Reverb listing
+- **view_seller_sales**: View seller sales
+- **delete_listing_image**: Delete an image from a listing
+- **disable_vacation_mode**: Disable vacation mode for the shop
+- **leave_feedback**: Leave feedback for a buyer
 - **remove_from_sale**: Remove listings from a sale
 - **reply_to_conversation**: Reply to a conversation
 - **retrieve_orders**: Retrieve selling orders
-- **ship_order**: Mark an order as shipped
-- **update_listing**: Update an existing Reverb listing
 
 
 ## 💬 Prompt Examples

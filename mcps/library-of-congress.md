@@ -43,13 +43,13 @@ Search items of a specific format
 
 Get technical metadata about an image (IIIF)
 - **get_item**: Get detailed bibliographic data for a single item
-- **get_resource**: g., a specific page of a newspaper) using resource_id.
-
-Get access to discrete digitized files
 - **search**: using a keyword query.
 
 Search the entire Library of Congress website
 - **get_text_service**: Access full-text OCR, word coordinates, and context snippets
+- **get_resource**: g., a specific page of a newspaper) using resource_id.
+
+Get access to discrete digitized files
 - **get_collection_items**: List items within a specific collection
 
 

@@ -34,11 +34,7 @@ Connect **Pirsch Analytics** to your AI agent to monitor your website traffic an
 
 
 ## Available Tools (14)
-- **get_statistics_overview**: Get overview statistics for a domain
-- **get_statistics_page**: Get page statistics
-- **get_statistics_referrer**: Get referrer statistics
-- **get_statistics_utm_source**: Get UTM source statistics
-- **get_statistics_visitor**: Get visitor statistics
+- **list_domains**: List all domains
 - **send_event**: Send an event to Pirsch
 - **send_hit_batch**: Send a batch of page views (hits)
 - **send_hit**: Send as much information as possible for accurate analytics.
@@ -47,8 +43,12 @@ Send a page view (hit) to Pirsch
 - **get_statistics_active**: Get active visitors statistics
 - **get_statistics_events**: Get events list statistics
 - **get_statistics_goals**: Get conversion goals statistics
+- **get_statistics_page**: Get page statistics
+- **get_statistics_referrer**: Get referrer statistics
+- **get_statistics_utm_source**: Get UTM source statistics
+- **get_statistics_visitor**: Get visitor statistics
+- **get_statistics_overview**: Get overview statistics for a domain
 - **create_domain**: Create a new domain
-- **list_domains**: List all domains
 - **send_event_batch**: Send a batch of events
 
 

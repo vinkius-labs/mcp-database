@@ -34,11 +34,6 @@ Connect your **Hanko** instance to any AI agent to streamline passkey-based auth
 
 
 ## Available Tools (15)
-- **admin_create_user**: Create a new user via Admin API
-- **admin_get_user**: Get a user by ID via Admin API
-- **admin_list_user_credentials**: List WebAuthn credentials for a user via Admin API
-- **admin_list_users**: List users via Admin API
-- **flow_execute**: Execute a Hanko Flow action
 - **passkey_delete_credential**: Delete a WebAuthn credential
 - **passkey_list_credentials**: List WebAuthn credentials for a user
 - **passkey_login_finalize**: Finalize a passkey login
@@ -49,6 +44,11 @@ Initialize a passkey login
 - **passkey_registration_init**: Returns publicKey options for navigator.credentials.create().
 
 Initialize a passkey registration
+- **admin_create_user**: Create a new user via Admin API
+- **admin_get_user**: Get a user by ID via Admin API
+- **admin_list_user_credentials**: List WebAuthn credentials for a user via Admin API
+- **admin_list_users**: List users via Admin API
+- **flow_execute**: Execute a Hanko Flow action
 - **passkey_transaction_finalize**: Finalize a passkey transaction
 - **passkey_transaction_init**: g., payment confirmation) for an existing user.
 

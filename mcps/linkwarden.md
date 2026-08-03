@@ -34,6 +34,10 @@ Connect your **Linkwarden** instance to any AI agent and take full control of yo
 
 
 ## Available Tools (32)
+- **archive_link**: Archive a link (triggers an update of the link's archive files)
+- **create_collection**: Create a new collection
+- **create_highlight**: Create or update a highlight
+- **create_link**: Create a new link
 - **delete_collection**: Delete a collection
 - **delete_highlight**: Delete a highlight
 - **auth_forgot_password**: Send password reset email
@@ -46,10 +50,6 @@ Connect your **Linkwarden** instance to any AI agent and take full control of yo
 - **get_link_highlights**: Get highlights for a link
 - **get_link**: Get a link by ID
 - **get_logins**: Get login configuration
-- **get_migration**: Retrieve migration data (user info, collections, links for export)
-- **get_preserved_token**: Create short-lived preserved format URL token
-- **get_public_collection_links**: Retrieve links from a specific collection (public)
-- **get_public_collection_tags**: Get tags for a collection (public)
 - **import_migration**: Import data for migration
 - **list_collections**: Get all collections
 - **list_rss**: List RSS subscriptions
@@ -61,11 +61,11 @@ Connect your **Linkwarden** instance to any AI agent and take full control of yo
 - **upload_archive_for_link**: Upload or replace a client-side archive file for a specific link
 - **upload_standalone_archive**: Upload an archive file, create a new link, and store it in the default collection
 - **auth_verify_email**: Verify email address
-- **archive_link**: Archive a link (triggers an update of the link's archive files)
+- **get_migration**: Retrieve migration data (user info, collections, links for export)
+- **get_preserved_token**: Create short-lived preserved format URL token
+- **get_public_collection_links**: Retrieve links from a specific collection (public)
+- **get_public_collection_tags**: Get tags for a collection (public)
 - **bulk_update_links**: Bulk update links (tags/collections)
-- **create_collection**: Create a new collection
-- **create_highlight**: Create or update a highlight
-- **create_link**: Create a new link
 
 
 ## 💬 Prompt Examples

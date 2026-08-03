@@ -35,12 +35,12 @@ No more manual link generation or checking dashboards to see if a client opened 
 
 
 ## Available Tools (6)
-- **create_link**: Create a new shareable link for a specific document
 - **delete_link**: Permanently remove a shareable link
 - **get_link_views**: Retrieve a list of views and engagement data for a specific link
 - **list_documents**: List all documents in your Papermark account
 - **update_link**: Modify the settings of an existing link
 - **upload_document**: Upload a new document to Papermark
+- **create_link**: Create a new shareable link for a specific document
 
 
 ## 💬 Prompt Examples
