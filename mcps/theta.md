@@ -33,13 +33,11 @@ Connect to the **Theta Network** ecosystem to manage decentralized infrastructur
 
 
 ## Available Tools (30)
-- **ai_list_deployments**: List all deployments in a project
 - **rpc_call_smart_contract**: Simulate a smart contract execution locally
 - **video_list_ingestors**: List available Edge Ingestors
-- **video_list**: List all videos for a service account
-- **video_search**: Search videos by metadata
 - **ai_create_deployment**: Launch a new AI model or Jupyter Notebook
 - **ai_delete_deployment**: Delete an AI deployment
+- **ai_list_deployments**: List all deployments in a project
 - **ai_list_standard_templates**: List built-in AI templates
 - **ai_list_vm_resources**: g., vm_gt1 for NVIDIA T4).
 
@@ -48,12 +46,6 @@ List available machine types
 - **ai_stop_deployment**: Stop a running GPU Node
 - **cli_list_keys**: List local account addresses
 - **cli_lock_key**: Lock local accounts
-- **cli_new_key**: Create a new encrypted account locally
-- **cli_send**: Send Theta/TFuel
-- **cli_unlock_key**: Unlock a local account for sending
-- **rpc_get_account**: Get Theta account details
-- **rpc_get_block_by_height**: Get finalized block at a given height
-- **rpc_get_block**: Get block details by hash
 - **rpc_broadcast_raw_transaction_async**: Submit a signed transaction asynchronously
 - **rpc_broadcast_raw_transaction**: Submit a signed transaction synchronously
 - **rpc_get_pending_transactions**: Get pending transactions
@@ -62,9 +54,17 @@ List available machine types
 - **video_create_livestream**: Create a livestream object
 - **video_create_upload_url**: Create a Video Upload URL
 - **video_get**: Get video details
+- **video_list**: List all videos for a service account
+- **video_search**: Search videos by metadata
 - **video_select_ingestor**: Assign an ingestor to a stream
 - **video_transcode**: Transcode a video
 - **video_unselect_ingestor**: Release an ingestor
+- **cli_new_key**: Create a new encrypted account locally
+- **cli_send**: Send Theta/TFuel
+- **cli_unlock_key**: Unlock a local account for sending
+- **rpc_get_account**: Get Theta account details
+- **rpc_get_block_by_height**: Get finalized block at a given height
+- **rpc_get_block**: Get block details by hash
 
 
 ## 💬 Prompt Examples

@@ -34,6 +34,9 @@ Access the comprehensive **Star Wars API (SWAPI)** through your AI agent and div
 
 
 ## Available Tools (8)
+- **list_people**: Use the search parameter to filter by name.
+
+List or search Star Wars people/characters
 - **get_resource_by_url**: g., from a homeworld, films, or species attribute).
 
 Get a specific SWAPI resource by its URL
@@ -41,9 +44,6 @@ Get a specific SWAPI resource by its URL
 - **list_films**: Use the search parameter to filter by title.
 
 List or search Star Wars films
-- **list_people**: Use the search parameter to filter by name.
-
-List or search Star Wars people/characters
 - **list_planets**: Use the search parameter to filter by name.
 
 List or search Star Wars planets

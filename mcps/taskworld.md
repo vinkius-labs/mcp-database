@@ -37,16 +37,16 @@ Integrate **Taskworld** with your AI workflow to streamline project management a
 - **create_project**: Create a new project
 - **create_task**: Create a new task
 - **get_workspace**: Get details for a specific workspace
+- **update_task**: Can be used to change assignee, set due date, update title, etc.
+
+Update task properties
+- **list_workspaces**: List all Taskworld workspaces
 - **login**: Login to Taskworld to obtain an access token
 - **list_projects**: List all projects in a workspace
 - **list_tasks**: Retrieve all tasks within a project
 - **update_project**: Can be used to change the title, description, or mark it as completed.
 
 Update project details or mark as completed
-- **update_task**: Can be used to change assignee, set due date, update title, etc.
-
-Update task properties
-- **list_workspaces**: List all Taskworld workspaces
 - **list_comments**: Get all comments on a task
 - **complete_task**: Mark a task as finished
 - **create_comment**: Post a new comment to a task or project

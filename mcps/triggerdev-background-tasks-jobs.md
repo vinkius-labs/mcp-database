@@ -34,11 +34,12 @@ Connect your **Trigger.dev** account to any AI agent to orchestrate complex back
 
 
 ## Available Tools (19)
+- **create_env_var**: Create an environment variable
+- **replay_run**: Replay a run
 - **batch_trigger_tasks**: Trigger multiple tasks in a single request
 - **cancel_run**: Cancel an in-progress run
 - **complete_waitpoint**: Complete a waitpoint
 - **create_batch**: Create a batch (Phase 1)
-- **create_env_var**: Create an environment variable
 - **create_schedule**: Create an IMPERATIVE schedule (cron)
 - **create_waitpoint_token**: Create a waitpoint token
 - **delete_env_var**: Delete an environment variable
@@ -49,7 +50,6 @@ Connect your **Trigger.dev** account to any AI agent to orchestrate complex back
 - **list_schedules**: List schedules
 - **override_queue_concurrency**: Override queue concurrency
 - **pause_resume_queue**: Pause or resume a queue
-- **replay_run**: Replay a run
 - **trigger_task**: dev.
 
 Trigger a task by its identifier

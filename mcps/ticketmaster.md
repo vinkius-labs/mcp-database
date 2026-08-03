@@ -34,6 +34,9 @@ Connect your AI agent to the **Ticketmaster** ecosystem to discover live enterta
 
 
 ## Available Tools (22)
+- **search_intl_events**: Search events in international markets (EU)
+- **search_venues**: Search for venues
+- **suggest**: Find search suggestions
 - **add_billing**: Add billing to a cart (Partner API)
 - **add_shipping**: Add shipping to a cart (Partner API)
 - **commit_purchase**: Commit a ticket purchase (Partner API)
@@ -52,9 +55,6 @@ Connect your AI agent to the **Ticketmaster** ecosystem to discover live enterta
 - **search_attractions**: Search for artists, sports teams, etc
 - **search_classifications**: Search for genres, segments, and sub-genres
 - **search_events**: Find events by location, date, keyword, etc
-- **search_intl_events**: Search events in international markets (EU)
-- **search_venues**: Search for venues
-- **suggest**: Find search suggestions
 - **update_published_event**: Update an existing published event
 
 

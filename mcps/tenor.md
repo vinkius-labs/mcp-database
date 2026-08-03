@@ -35,7 +35,7 @@ Connect your AI agent to **Tenor** to bring visual expression to your workflows.
 
 ## Available Tools (8)
 - **list_categories**: Retrieve a list of GIF categories
-- **get_featured_gifs**: Retrieve the current global featured GIFs
+- **get_featured_gifs**: Retrieve the current globalThis featured GIFs
 - **get_posts**: Retrieve specific GIFs by their IDs
 - **register_share**: Use this when a user explicitly selects/shares a GIF.
 

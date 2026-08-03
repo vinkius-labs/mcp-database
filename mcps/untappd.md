@@ -45,10 +45,7 @@ Obtain the friend check-in feed of the authenticated user
 - **reject_friend**: Reject a friend request
 - **remove_comment**: Remove a comment from a checkin
 - **remove_friend**: Remove a friend
-- **remove_from_wishlist**: Remove a beer from the authenticated user's wish list
-- **request_friend**: Send a friend request
 - **search_beer**: Search for beers
-- **search_brewery**: Search for breweries
 - **toggle_toast**: Toast or Untoast a checkin
 - **get_trending_beers**: Returns macro and micro trending beers globally
 - **get_user_activity**: If username is omitted, returns authenticated user feed.
@@ -59,8 +56,11 @@ Obtain the check-in feed of a selected user
 - **get_user_friends**: Get a list of friends for a user
 - **get_user_info**: Get user profile information
 - **get_user_wishlist**: Get a user's wish list
-- **get_venue_activity**: Activity feed for a single venue
 - **get_venue_info**: Get detailed information about a venue
+- **remove_from_wishlist**: Remove a beer from the authenticated user's wish list
+- **request_friend**: Send a friend request
+- **search_brewery**: Search for breweries
+- **get_venue_activity**: Activity feed for a single venue
 - **accept_friend**: Accept a friend request
 - **add_checkin**: Check-in to a beer
 - **add_comment**: Add a comment to a checkin

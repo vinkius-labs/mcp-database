@@ -33,10 +33,12 @@ Connect your **VectorShift** account to any AI agent and take full control of yo
 
 
 ## Available Tools (29)
-- **create_knowledge_base**: Create a new knowledge base
 - **delete_knowledge_base_documents**: Delete specific documents by ID from a knowledge base
+- **list_knowledge_bases**: List all available knowledge bases
+- **upload_chatbot_files**: Upload files to a chatbot session
 - **bulk_run_pipeline**: Execute multiple instances of a pipeline in parallel
 - **create_chatbot**: Create a new chatbot
+- **create_knowledge_base**: Create a new knowledge base
 - **create_pipeline**: Create a new pipeline
 - **create_transformation**: Create a new transformation (Python/JS)
 - **delete_chatbot**: Delete a chatbot
@@ -50,7 +52,6 @@ Connect your **VectorShift** account to any AI agent and take full control of yo
 - **index_knowledge_base**: Add data (files, URLs, etc.) to a knowledge base
 - **list_chatbots**: List all available chatbots
 - **list_knowledge_base_documents**: Find documents within a knowledge base
-- **list_knowledge_bases**: List all available knowledge bases
 - **list_pipelines**: List all available pipelines
 - **list_transformations**: List all available transformations
 - **pause_pipeline**: Pause a currently running pipeline instance
@@ -61,7 +62,6 @@ Connect your **VectorShift** account to any AI agent and take full control of yo
 - **run_transformation**: Execute a transformation with inputs
 - **terminate_chatbot**: Terminate an active chatbot session
 - **terminate_pipeline**: Stop a currently running pipeline instance
-- **upload_chatbot_files**: Upload files to a chatbot session
 
 
 ## 💬 Prompt Examples

@@ -42,6 +42,11 @@ No more manual searching through web explorers. Your AI acts as a dedicated bloc
 - **get_object_details**: Get details of a specific on-chain object
 - **get_package_details**: Get details of a Move package
 - **get_package_transactions**: List transactions that interacted with a package
+- **list_epochs**: List recent network epochs
+- **list_transactions**: Supports pagination and ordering.
+
+List recent transactions on the Sui network
+- **list_validators**: List current network validators
 - **get_account_coins**: List all coins owned by an account
 - **get_account_objects**: List all objects owned by an account
 - **get_account_overview**: Get account overview and balance
@@ -49,11 +54,6 @@ No more manual searching through web explorers. Your AI acts as a dedicated bloc
 - **get_checkpoint**: Get details of a specific checkpoint
 - **get_transaction**: Get detailed information about a specific transaction
 - **list_checkpoints**: List recent network checkpoints
-- **list_epochs**: List recent network epochs
-- **list_transactions**: Supports pagination and ordering.
-
-List recent transactions on the Sui network
-- **list_validators**: List current network validators
 
 
 ## 💬 Prompt Examples

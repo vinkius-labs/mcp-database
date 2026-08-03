@@ -35,34 +35,34 @@ Connect to **The One API** and bring the vast world of J.R.R. Tolkien to your AI
 
 ## Available Tools (13)
 - **get_book**: Get a specific book by ID
+- **get_movie**: Get a specific movie by ID
 - **get_chapter**: Requires authentication.
 
 Get a specific chapter by ID
 - **get_character**: Requires authentication.
 
 Get a specific character by ID
-- **get_movie**: Get a specific movie by ID
 - **get_quote**: Requires authentication.
 
 Get a specific quote by ID
 - **list_book_chapters**: Get all chapters of a specific book
-- **list_books**: List all The Lord of the Rings books
 - **list_chapters**: Requires authentication.
 
 List all book chapters
 - **list_character_quotes**: Requires authentication.
 
 Get all quotes by a specific character
+- **list_movies**: List all movies (LOTR and The Hobbit)
+- **list_quotes**: Requires authentication.
+
+List all movie quotes
+- **list_books**: List all The Lord of the Rings books
 - **list_characters**: Requires authentication.
 
 List all characters
 - **list_movie_quotes**: Requires authentication.
 
 Get all quotes from a specific movie
-- **list_movies**: List all movies (LOTR and The Hobbit)
-- **list_quotes**: Requires authentication.
-
-List all movie quotes
 
 
 ## 💬 Prompt Examples

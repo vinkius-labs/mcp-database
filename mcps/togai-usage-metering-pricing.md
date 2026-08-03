@@ -34,16 +34,6 @@ Connect **Togai** to any AI agent to orchestrate complex usage-based pricing mod
 
 
 ## Available Tools (19)
-- **check_entitlement**: Check entitlement for a specific feature
-- **create_account**: Create a new account
-- **create_customer**: Create a new customer
-- **create_price_plan**: Create a price plan (V2)
-- **create_usage_meter**: Requires type, aggregation, and computations.
-
-Create a usage meter
-- **get_account**: Get details for a specific account
-- **get_customer**: Get details for a specific customer
-- **get_entitlements**: Get entitlements for an account
 - **get_metrics**: Get aggregated metrics
 - **get_wallet_balance**: Get wallet balance for an account
 - **grant_credit**: Grant credits to an account
@@ -56,6 +46,16 @@ Ingest a single usage event
 - **list_invoices**: List invoices with optional filters
 - **list_rate_cards**: List rate cards for a price plan
 - **update_account**: Update an existing account
+- **check_entitlement**: Check entitlement for a specific feature
+- **create_account**: Create a new account
+- **create_customer**: Create a new customer
+- **create_price_plan**: Create a price plan (V2)
+- **create_usage_meter**: Requires type, aggregation, and computations.
+
+Create a usage meter
+- **get_account**: Get details for a specific account
+- **get_customer**: Get details for a specific customer
+- **get_entitlements**: Get entitlements for an account
 - **update_customer**: Update an existing customer
 
 

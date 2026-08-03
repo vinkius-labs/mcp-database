@@ -35,6 +35,7 @@ No more searching through disorganized recipe blogs. Your AI acts as a dedicated
 
 
 ## Available Tools (18)
+- **list_ingredients**: List all available ingredients
 - **filter_by_alcoholic**: Filter by alcoholic or non-alcoholic status
 - **filter_by_category**: Filter by cocktail category
 - **filter_by_glass**: Filter by glass type
@@ -50,17 +51,16 @@ List the most recently added cocktails (Premium Only)
 - **get_popular_cocktails**: Requires a Premium API key.
 
 List the most popular cocktails (Premium Only)
-- **get_random_cocktail**: Fetch a single random cocktail
 - **get_random_selection**: Requires a Premium API key.
 
 Fetch 10 random cocktails (Premium Only)
 - **list_alcoholic_filters**: List all available alcoholic filters
 - **list_categories**: List all available cocktail categories
 - **list_glasses**: List all available glass types
-- **list_ingredients**: List all available ingredients
 - **search_cocktail_by_first_letter**: List all cocktails starting with a specific letter
 - **search_cocktail_by_name**: Search for cocktails by their name
 - **search_ingredient_by_name**: Search for ingredient details by name
+- **get_random_cocktail**: Fetch a single random cocktail
 
 
 ## 💬 Prompt Examples

@@ -34,10 +34,10 @@ Connect your **SugarCRM** instance to any AI agent to streamline your customer s
 
 
 ## Available Tools (10)
+- **delete_record**: Delete a specific SugarCRM record
 - **bulk_request**: Execute multiple API calls in a single request
 - **count_records**: Count records matching a filter in a module
 - **create_record**: Create a new record in a SugarCRM module
-- **delete_record**: Delete a specific SugarCRM record
 - **get_record**: Retrieve a specific SugarCRM record by ID
 - **link_record**: Create a relationship to an existing record
 - **list_records**: g., Accounts, Contacts). Supports complex filtering via JSON.
