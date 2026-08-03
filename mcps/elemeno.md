@@ -33,15 +33,15 @@ Integrate **Elemeno**, the headless CMS designed for developers, directly into y
 
 
 ## Available Tools (10)
-- **get_elemeno_account_metadata**: Retrieve metadata and limits for your Elemeno account
 - **get_collection_details**: Get detailed settings and field schema for a specific collection
-- **get_collection_item_details**: Get full content and metadata for a specific item in a collection
-- **quick_content_volume_audit**: Retrieve a high-level summary of collection and singleton activity
 - **get_singleton_content**: Get the full content data for a specific singleton
 - **list_content_collections**: List all content collections configured in your Elemeno account
 - **list_collection_items**: List all content items within a specific collection
+- **get_elemeno_account_metadata**: Retrieve metadata and limits for your Elemeno account
+- **get_collection_item_details**: Get full content and metadata for a specific item in a collection
+- **quick_content_volume_audit**: Retrieve a high-level summary of collection and singleton activity
 - **list_published_content**: Identify items that are currently in a "Published" status
-- **list_content_singletons**: List all singleton content blocks (unique global pages/settings)
+- **list_content_singletons**: List all singleton content blocks (unique globalThis pages/settings)
 - **search_collection_content**: Search for items within a collection using a title or slug keyword
 
 

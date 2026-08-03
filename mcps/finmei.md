@@ -35,18 +35,18 @@ Connect your **Finmei** account to any AI agent and automate your financial oper
 
 
 ## Available Tools (12)
-- **get_profile**: Get business profile
-- **list_categories**: List expense categories
-- **list_currencies**: List supported currencies
-- **list_expenses**: List expenses
-- **list_payments**: List payments
-- **list_tax_types**: List tax rates
-- **update_expense**: Update an expense
-- **create_expense**: Create a new expense
 - **delete_expense**: Delete an expense
 - **delete_payment**: Delete a payment
 - **get_expense**: Get expense details
 - **get_payment**: Get payment details
+- **get_profile**: Get business profile
+- **list_categories**: List expense categories
+- **list_currencies**: List supported currencies
+- **list_expenses**: List expenses
+- **list_tax_types**: List tax rates
+- **update_expense**: Update an expense
+- **create_expense**: Create a new expense
+- **list_payments**: List payments
 
 
 ## 💬 Prompt Examples

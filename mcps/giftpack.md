@@ -7,49 +7,53 @@
 
 **Category:** [human-resources](../categories/human-resources.md)
 
-Manage AI-curated corporate gifting, track campaigns, and oversee recipients via AI agents with Giftpack AI.
+Send corporate gifts at scale with AI-curated selections that match recipient preferences and company budget guidelines.
 
 ## Description
-Connect your **Giftpack** account to any AI agent to automate your corporate gifting and employee recognition workflows through the Model Context Protocol (MCP). Giftpack AI uses advanced algorithms to curate the perfect gifts for your recipients based on their preferences and milestones. This MCP server enables you to manage your recipient database (members), create AI-powered gifting campaigns (orders), and track the entire gifting lifecycle directly through natural conversation.
+Connect your **Giftpack** account to any AI agent and take full control of your corporate gifting and employee recognition workflows through natural conversation.
 
-### Key Features
+### What you can do
 
-- **Recipient Management** — List all members in your workspace, retrieve detailed profile metadata, and programmatically add new recipients (employees, clients, or friends).
-- **AI Order Orchestration** — Create new AI gifting campaigns with specific budgets and recipients, and retrieve detailed configuration metadata for each order.
-- **Launch Automation** — Formally launch gifting campaigns once budgets are verified directly from your chat interface.
-- **Gift Discovery** — Retrieve the list of AI-curated gift options for any specific receiver to understand what's being offered.
-- **Milestone Tracking** — List available gifting purposes (onboarding, anniversaries, birthdays) to align your campaigns with business events.
-- **Workspace Oversight** — Access metadata for your authenticated workspace to verify connectivity and authorized scopes.
-- **Real-time Synchronization** — Keep your relationship-driven gifting data accessible to your AI assistant without leaving your primary workspace.
+- **Gifting Orchestration** — Send curated, personalized gifts to employees or clients globally and retrieve detailed metadata and real-time tracking programmatically
+- **Campaign Management** — Create and monitor corporate gifting drives and retrieve comprehensive engagement statistics and fulfillment status
+- **Catalog Intelligence** — Search through millions of high-quality gift options filtered by category and region directly through your agent
+- **Recipient CRM** — Manage and retrieve detailed recipient profiles and their complete gifting history to maintain high-fidelity relationships
+- **Order Monitoring** — Check order statuses and manage delivery logistics programmatically to ensure a perfect gifting experience
 
 ### How it works
 
-1. Subscribe to this server through the Vinkius Marketplace
-2. Enter your Giftpack Workspace ID and API Key (found in Integration Hub)
-3. Start managing your corporate gifting from Claude, Cursor, or any MCP client
+1. Subscribe to this server
+2. Retrieve your **API Key** from your Giftpack dashboard (Settings / API)
+3. Start managing your corporate incentives from Claude, Cursor, or any MCP client
+
+No more manual ordering or complex shipping tracking through fragmented emails. Your AI acts as your dedicated gifting and logistics coordinator.
 
 ### Who is this for?
 
-- **HR & Ops Managers** — quickly check if an employee's onboarding gift has been curated or launch a birthday campaign without manual dashboard navigation.
-- **Customer Success Leads** — automate the management of client appreciation gifts via simple AI commands.
-- **Executive Assistants** — get a real-time overview of active gifting campaigns and recipient statuses.
+- **HR Managers** — instantly automate welcome kits and work anniversary gifts using natural language queries
+- **Sales Teams** — send personalized thank-you gifts to clients and monitor delivery without leaving your workspace
+- **Marketing Leaders** — coordinate large-scale brand ambassador gifting campaigns and track budget utilization
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Check connection
-- **create_gifting_campaign**: Start AI order
-- **create_gifting_member**: Add new recipient
-- **get_gifting_campaign_details**: Get order metadata
-- **get_member_details**: Get recipient metadata
-- **list_curated_gift_options**: List AI gifts
-- **launch_gifting_campaign**: Activate AI order
-- **list_gifting_campaigns**: List AI orders
-- **list_gifting_milestones**: g. onboarding, birthday).
+- **create_campaign**: Requires a title and campaign details.
 
-List gifting purposes
-- **list_gifting_members**: List all recipients
-- **list_campaign_receivers**: List order recipients
-- **modify_gifting_campaign**: Update AI order
+Start a new gifting campaign
+- **trigger_gift_send**: Send a gift to a recipient
+- **create_recipient**: Requires name and email.
+
+Add a new recipient
+- **get_campaign_statistics**: Get analytics for a campaign
+- **get_order_fulfillment_status**: Track a gift order
+- **get_product_details**: Get details for a specific gift product
+- **get_recipient_details**: Get details for a specific recipient
+- **list_gift_orders**: List recent gift orders
+- **list_recipients**: List gift recipients
+- **list_active_webhooks**: List gift event webhooks
+- **search_gift_catalog**: g., category or region).
+
+Search the Giftpack product catalog
+- **list_gifting_campaigns**: List all gifting campaigns
 
 
 ## 💬 Prompt Examples
@@ -57,41 +61,38 @@ List gifting purposes
 Here are some examples of how you can interact with the **Giftpack** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active members in my Giftpack workspace."
+> "List all active gifting campaigns in my Giftpack account."
 
 **🤖 AI Agent:**
-> Retrieving members... I found 5 active recipients, including 'Jane Doe' (Employee) and 'Acme Corp' (Client). Would you like to see the profile details for any of them?
+> I've retrieved your active campaigns. You have 2 drives running: 'New Hire Welcome 2026' (ID: camp_123) and 'Global Client Rewards' (ID: camp_456). Would you like the engagement stats for either of these?
 
 ---
 
 **👤 You:**
-> "Check the status of AI Order 'ord_12345'."
+> "Send a 'Wellness Kit' to Jane Doe (ID: rec_789)."
 
 **🤖 AI Agent:**
-> Fetching order... AI Order ord_12345 is currently in 'Draft' status with a budget of $500. It has 10 recipients assigned. Would you like to launch it?
+> Gifting triggered! I've initiated a new order for Jane Doe (ID: rec_789) with the product 'Wellness Kit' (ID: prod_001). The order ID is 'ord_101'. I'll alert you as soon as the fulfillment status changes.
 
 ---
 
 **👤 You:**
-> "Create a new gifting campaign for 'Holiday Rewards' with a $1000 budget."
+> "Check the delivery status of order 'ord_101'."
 
 **🤖 AI Agent:**
-> Campaign created! I've successfully set up the 'Holiday Rewards' AI order with a budget of $1000 USD. You can now add recipients and launch the campaign.
+> Tracking order ord_101... The gift is currently 'In Transit' via FedEx and is expected to arrive at the recipient's location in London by tomorrow. Here is the tracking link: [link].
 
 
 ## ❓ FAQ
 
-**Q: How do I get an API Key for Giftpack?**
-Log in to your Giftpack dashboard, navigate to the Integration Hub, and select 'API Keys' to generate or copy your active key.
+**Q: How do I find my Giftpack API Key?**
+Log in to your Giftpack business dashboard and navigate to the **Settings** or **API** section to generate your unique key.
 
-**Q: What is an 'AI Order'?**
-An AI Order is a gifting campaign where Giftpack's AI curates gift options based on the recipient's profile and your set budget.
+**Q: Can I search for gifts in a specific region?**
+Yes! The `search_gift_catalog` tool allows you to include regional filters in your query to find products available for specific countries.
 
-**Q: Can I launch a campaign directly via the agent?**
-Yes! Use the 'launch_gifting_campaign' tool. Once you provide the Order ID, the system will formally activate the campaign for fulfillment.
-
-**Q: How do I add multiple recipients to one order?**
-When using 'create_gifting_campaign', pass a JSON array of Member IDs in the 'receiverIdsJson' parameter to include multiple recipients at once.
+**Q: How do I track the delivery status of a gift?**
+Use the `get_order_fulfillment_status` tool with the unique order ID to retrieve real-time shipping updates and tracking links.
 
 
 ## Installation & Usage

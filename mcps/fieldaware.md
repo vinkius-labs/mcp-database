@@ -32,6 +32,8 @@ FieldAware is a comprehensive field service management platform. This MCP server
 
 
 ## Available Tools (12)
+- **list_quotes**: List all quotes
+- **get_invoice**: Get details for a specific invoice
 - **get_job**: Get details for a specific job
 - **get_whoami**: Identify the user associated with the current API key
 - **list_assets**: List all assets
@@ -40,10 +42,8 @@ FieldAware is a comprehensive field service management platform. This MCP server
 - **list_invoices**: List all invoices
 - **list_items**: List all items (products/services)
 - **list_jobs**: List all jobs
-- **list_quotes**: List all quotes
 - **create_job**: Create a new job
 - **get_customer**: Get details for a specific customer
-- **get_invoice**: Get details for a specific invoice
 
 
 ## 💬 Prompt Examples

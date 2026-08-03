@@ -40,12 +40,12 @@ Connect to the **OpenFEMA** public database through any AI agent and gain instan
 - **get_fema_regions**: List official FEMA regions
 - **get_fema_web_centers**: List FEMA web center locations
 - **get_hazard_mitigation_grants**: Get data on hazard mitigation assistance projects
+- **get_registration_intake**: Get data from individual and household program registrations
+- **list_disaster_declarations**: List recent official FEMA disaster declarations
 - **get_housing_assistance**: Get data regarding FEMA housing assistance programs
 - **get_individuals_program**: Get data on individuals and households program registrations
 - **get_me**: Get current API status
 - **get_public_assistance_applicants**: List applicants for FEMA public assistance
-- **get_registration_intake**: Get data from individual and household program registrations
-- **list_disaster_declarations**: List recent official FEMA disaster declarations
 
 
 ## 💬 Prompt Examples

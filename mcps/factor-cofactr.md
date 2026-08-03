@@ -34,17 +34,17 @@ Connect your **Factor (now Cofactr)** supply chain account to any AI agent and t
 
 
 ## Available Tools (11)
-- **get_supplier**: Get details for a specific supplier
-- **create_purchase_order**: Create a new purchase order
-- **get_item**: Get details for a specific part or component
-- **get_me**: Get current API user profile
 - **get_purchase_order**: Get details for a specific purchase order
 - **get_rfq**: Get details for a specific RFQ
+- **get_supplier**: Get details for a specific supplier
 - **list_inventory**: List current stock levels across warehouses
 - **list_items**: List all parts and components in the Factor/Cofactr catalog
 - **list_purchase_orders**: List all purchase orders
 - **list_rfqs**: List all requests for quotes
 - **list_suppliers**: List all suppliers
+- **create_purchase_order**: Create a new purchase order
+- **get_me**: Get current API user profile
+- **get_item**: Get details for a specific part or component
 
 
 ## 💬 Prompt Examples

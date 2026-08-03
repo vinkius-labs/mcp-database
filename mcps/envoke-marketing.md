@@ -40,9 +40,9 @@ Integrate **Envoke**, the powerful and intuitive email marketing and communicati
 - **list_contact_address_lists**: List all contact lists configured in your account
 - **list_email_campaigns**: List all email marketing campaigns in your Envoke account
 - **list_marketing_contacts**: List all contacts registered in your organization
+- **get_envoke_account_metadata**: Retrieve metadata and limits for your Envoke account
 - **list_successfully_sent_campaigns**: Identify campaigns that have already been sent to subscribers
 - **search_contacts_by_email**: Search for a contact using their email address
-- **get_envoke_account_metadata**: Retrieve metadata and limits for your Envoke account
 
 
 ## 💬 Prompt Examples
