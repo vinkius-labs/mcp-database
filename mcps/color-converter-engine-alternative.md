@@ -23,7 +23,7 @@ Powered by colord (4M+ weekly downloads), every conversion is mathematically exa
 
 
 ## Available Tools (1)
-- **color_converter_convert**: Pass any valid color string: HEX (#ff5733), RGB (rgb(255,87,51)), HSL (hsl(11,100%,60%)), CMYK, or CSS named colors (tomato, cornflowerblue). The engine returns ALL representations simultaneously so you never need multiple calls.
+- **convert_color**: Pass any valid color string: HEX (#ff5733), RGB (rgb(255,87,51)), HSL (hsl(11,100%,60%)), CMYK, or CSS named colors (tomato, cornflowerblue). The engine returns ALL representations simultaneously so you never need multiple calls.
 
 Converts colors between HEX, RGB, HSL, CMYK formats. Also returns luminance, dark/light detection, closest CSS name, and alpha. CSS Color Level 4 precision
 

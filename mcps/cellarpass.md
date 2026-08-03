@@ -29,6 +29,9 @@ Connect your **CellarPass** tasting room to any AI agent and transform how you m
 
 
 ## Available Tools (8)
+- **search_guests**: Returns visit history, favorite experiences, spending, and VIP status. For personalized hospitality.
+
+Search guests
 - **list_reservations**: Filter by date for daily planning. THE core tool for tasting room managers — "Who's coming today?"
 
 List tasting reservations
@@ -46,9 +49,6 @@ Check booking availability
 
 List tasting venues
 - **get_venue**: Get venue details
-- **search_guests**: Returns visit history, favorite experiences, spending, and VIP status. For personalized hospitality.
-
-Search guests
 
 
 ## 💬 Prompt Examples

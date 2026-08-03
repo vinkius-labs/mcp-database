@@ -20,7 +20,7 @@ AI agents frequently struggle with visual engineering. When asked to convert a C
 
 
 ## Available Tools (1)
-- **color_conversion_convert**: Pass the color value, the source format (rgb, hex, hsl, cmyk), and the desired target format. The engine performs exact mathematical matrix conversion.
+- **convert_color**: Pass the color value, the source format (rgb, hex, hsl, cmyk), and the desired target format. The engine performs exact mathematical matrix conversion.
 
 Converts colors between different formats mathematically (HEX, RGB, HSL, CMYK)
 

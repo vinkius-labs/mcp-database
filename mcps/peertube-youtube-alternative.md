@@ -35,6 +35,13 @@ Connect your **PeerTube** instance to any AI agent to explore the decentralized 
 
 
 ## Available Tools (10)
+- **get_video_comments_feed**: Get video comments feed
+- **get_video_feeds**: Get video feeds
+- **get_public_hls_playlist**: Get public HLS playlist file
+- **get_public_web_video**: Get public Web Video file
+- **get_user_token**: 0 access token.
+
+Get user access token
 - **generate_video_download**: Generate video download
 - **get_completed_jobs**: Requires authentication.
 
@@ -43,13 +50,6 @@ Get completed jobs
 - **get_private_web_video**: Requires a videoFileToken.
 
 Get private Web Video file
-- **get_public_hls_playlist**: Get public HLS playlist file
-- **get_public_web_video**: Get public Web Video file
-- **get_user_token**: 0 access token.
-
-Get user access token
-- **get_video_comments_feed**: Get video comments feed
-- **get_video_feeds**: Get video feeds
 - **register_user**: Register a new user
 
 

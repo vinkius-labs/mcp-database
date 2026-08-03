@@ -33,16 +33,16 @@ Integrate **Craftboxx**, the specialized software for craft businesses, directly
 
 
 ## Available Tools (10)
+- **list_tasks**: List all open and completed tasks
 - **create_order**: Create a new craft order
+- **list_orders**: List all craft orders in Craftboxx
+- **list_vehicles_resources**: List vehicles, machines, and other resources
 - **get_business_stats**: Retrieve high-level statistics for your business
 - **get_order_details**: Get details for a specific craft order
 - **list_appointments**: List scheduled appointments and field work
 - **list_customers**: List customers and business partners
 - **list_employees**: List all employees and team members
 - **list_materials**: List materials and inventory items
-- **list_orders**: List all craft orders in Craftboxx
-- **list_vehicles_resources**: List vehicles, machines, and other resources
-- **list_tasks**: List all open and completed tasks
 
 
 ## 💬 Prompt Examples

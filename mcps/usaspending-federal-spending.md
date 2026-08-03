@@ -34,12 +34,17 @@ Connect to the official **USAspending** database and gain unprecedented transpar
 
 
 ## Available Tools (32)
+- **get_agency_budgetary_resources**: Get budgetary resources and obligations by fiscal year
+- **get_subawards**: Subawards related to a specific parent award
+- **get_agency_overview**: Get agency overview for details page
+- **get_recipient**: Individual recipient details
+- **autocomplete_glossary**: Glossary terms matching search text
+- **autocomplete_location**: Locations based on search text
+- **autocomplete_recipient**: Recipient names and UEI based on search text
 - **bulk_download_awards**: Generates ZIP file of award data in CSV
 - **download_search**: ZIP file for Awards, Subawards, and Transactions
 - **get_agency_awards_count**: Count of award types for agencies in a fiscal year
 - **get_agency_awards**: Get summary of transactions and obligations for an agency
-- **get_agency_budgetary_resources**: Get budgetary resources and obligations by fiscal year
-- **get_agency_overview**: Get agency overview for details page
 - **get_agency_sub_agencies**: List sub-agencies and offices with obligated amounts
 - **get_award_funding**: Federal account and agency funding info for an award
 - **get_award**: Get details about a specific award
@@ -52,8 +57,6 @@ Connect to the official **USAspending** database and gain unprecedented transpar
 - **get_glossary**: List of glossary terms and definitions
 - **get_recipient_children**: Recipient details based on identifier
 - **get_recipient_state**: Basic information about a specified state
-- **get_recipient**: Individual recipient details
-- **get_subawards**: Subawards related to a specific parent award
 - **get_toptier_agencies**: All toptier agencies and relevant data
 - **get_transactions**: Transactions related to a specific parent award
 - **list_recipients**: List of recipients in the database
@@ -65,9 +68,6 @@ Grouped spending data for visualizations
 - **search_spending_by_geography**: Spending by state, county, or congressional district
 - **search_spending_over_time**: Aggregated transaction amounts over time
 - **autocomplete_awarding_agency**: Awarding agencies matching search text
-- **autocomplete_glossary**: Glossary terms matching search text
-- **autocomplete_location**: Locations based on search text
-- **autocomplete_recipient**: Recipient names and UEI based on search text
 
 
 ## 💬 Prompt Examples

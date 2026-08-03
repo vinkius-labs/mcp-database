@@ -37,18 +37,18 @@ No more manual data entry or ordering through the web interface. Your AI assista
 
 
 ## Available Tools (10)
-- **list_cards**: List all available cards/stationery
 - **list_categories**: List all card categories
 - **list_fonts**: List all available handwriting fonts
+- **get_credit_balance**: Check current account credit balance
+- **get_order**: Get details for a specific order
+- **list_address_book**: List recipients in your address book
+- **list_cards**: List all available cards/stationery
 - **list_gifts**: List available gifts that can be included with cards
 - **list_orders**: List history of card orders
 - **list_templates**: List message templates
 - **send_card**: Requires card_id, font_id, message, and recipient details.
 
 Send a single handwritten card
-- **get_credit_balance**: Check current account credit balance
-- **get_order**: Get details for a specific order
-- **list_address_book**: List recipients in your address book
 
 
 ## 💬 Prompt Examples

@@ -34,12 +34,6 @@ Connect your **InnoVint** winery to any AI agent and transform how your cellar t
 - **search_lots**: Returns lot details including volume, vessel assignment, varietal composition, and current status. Essential for tracking individual batches through the winemaking process — from harvest intake to bottling.
 
 Search wine lots
-- **list_wineries**: Multi-winery operations can manage several facilities from one account.
-
-List wineries
-- **get_lot**: The primary data point for any winemaking question.
-
-Get full lot details
 - **list_vessels**: Shows capacity, current contents, fill level, and location. Critical for cellar management and space planning.
 
 List tanks and barrels
@@ -61,6 +55,12 @@ List cellar actions
 - **list_additives**: With regulatory limits and typical dosage.
 
 List additives
+- **list_wineries**: Multi-winery operations can manage several facilities from one account.
+
+List wineries
+- **get_lot**: The primary data point for any winemaking question.
+
+Get full lot details
 
 
 ## 💬 Prompt Examples

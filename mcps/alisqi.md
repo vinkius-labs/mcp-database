@@ -43,10 +43,10 @@ List quality results
 - **get_result_details**: Get specific result
 - **store_results**: Create or update results
 - **list_fields**: List dynamic fields
-- **list_choice_lists**: List selection menus
-- **get_result_attachments**: List document attachments
 - **list_active_webhooks**: List active triggers
 - **get_api_info**: Check API status
+- **list_choice_lists**: List selection menus
+- **get_result_attachments**: List document attachments
 
 
 ## 💬 Prompt Examples

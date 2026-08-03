@@ -34,12 +34,7 @@ IP Parking is a Dutch developer of web-based PARCS hardware and software, enabli
 
 
 ## Available Tools (10)
-- **register_anpr**: Used for testing or manual override of entry/exit.
-
-Simulate or register an ANPR (License Plate Recognition) event
-- **control_gate**: Remotely open or close a barrier gate.. Actions: default
 - **list_hardware**: List hardware status (ANPR cameras, ticket machines, gates)
-- **get_site_status**: Get real-time occupancy and revenue status for a site
 - **list_sites**: List all managed parking sites
 - **get_system_health**: Get overall system health and connectivity status
 - **list_tariffs**: List active tariff rules
@@ -48,6 +43,11 @@ Simulate or register an ANPR (License Plate Recognition) event
 - **update_tariff**: Use this to adjust hourly rates or caps.
 
 Update tariff rules or rates
+- **register_anpr**: Used for testing or manual override of entry/exit.
+
+Simulate or register an ANPR (License Plate Recognition) event
+- **control_gate**: Remotely open or close a barrier gate.. Actions: default
+- **get_site_status**: Get real-time occupancy and revenue status for a site
 
 
 ## 💬 Prompt Examples

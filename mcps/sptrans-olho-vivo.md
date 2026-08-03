@@ -34,18 +34,18 @@ Connect to the **SPTrans Olho Vivo** API to bring real-time urban mobility intel
 
 
 ## Available Tools (13)
-- **get_forecast_by_line**: Get arrival forecast for all stops on a specific line
 - **get_forecast_by_stop**: Get arrival forecast for all lines arriving at a specific stop
 - **get_forecast**: Get arrival forecast for a specific stop and line
 - **get_positions_by_line**: Get real-time GPS positions for buses on a specific line
-- **get_positions_in_garage**: Get real-time GPS positions for buses currently in the garage
 - **get_all_positions**: Get real-time GPS positions for all active buses
 - **list_companies**: List bus operating companies by area
 - **list_corridors**: List all intelligent bus corridors in São Paulo
 - **search_lines_by_direction**: Search for bus lines filtered by direction
-- **search_lines**: Search for bus lines by number or name
-- **search_stops_by_corridor**: Get all stops in a specific intelligent corridor
 - **search_stops_by_line**: Get all stops for a specific bus line
+- **get_forecast_by_line**: Get arrival forecast for all stops on a specific line
+- **search_stops_by_corridor**: Get all stops in a specific intelligent corridor
+- **get_positions_in_garage**: Get real-time GPS positions for buses currently in the garage
+- **search_lines**: Search for bus lines by number or name
 - **search_stops**: Search for bus stops by name or address
 
 

@@ -33,7 +33,7 @@ Integrate **Dryfta**, the all-in-one event management platform, directly into yo
 
 
 ## Available Tools (10)
-- **get_dryfta_account_metadata**: Retrieve metadata and limits for your Dryfta account
+- **search_attendees_by_keyword**: Search for attendees using a name or email keyword
 - **get_attendee_details**: Get detailed profile and registration status for a specific attendee
 - **quick_event_enrollment_audit**: Retrieve a high-level summary of attendee registration volumes
 - **get_session_details**: Get detailed information and speaker list for a specific session
@@ -42,7 +42,7 @@ Integrate **Dryfta**, the all-in-one event management platform, directly into yo
 - **list_event_exhibitors**: List all exhibitors and sponsors registered for the event
 - **list_event_sessions**: List all scheduled sessions and workshops in the event program
 - **list_upcoming_sessions**: Identify sessions that are scheduled to start soon (mock logic)
-- **search_attendees_by_keyword**: Search for attendees using a name or email keyword
+- **get_dryfta_account_metadata**: Retrieve metadata and limits for your Dryfta account
 
 
 ## 💬 Prompt Examples

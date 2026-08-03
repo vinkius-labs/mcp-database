@@ -37,6 +37,12 @@ Connect to the **Portal da Transparência (CGU)** and audit Brazilian public spe
 - **get_auxilio_emergencial_por_cpf_ou_nis**: Restricted API limit applies.
 
 Get Auxilio Emergencial by CPF or NIS
+- **get_bolsa_familia_por_municipio**: Restricted API limit applies.
+
+Get Bolsa Familia by municipality
+- **get_seguro_defeso_codigo**: Restricted API limit applies.
+
+Get Seguro Defeso by code
 - **get_auxilio_emergencial_por_municipio**: Restricted API limit applies.
 
 Get Auxilio Emergencial by municipality
@@ -46,9 +52,6 @@ Get Auxilio Emergencial beneficiaries by municipality
 - **get_bolsa_familia_disponivel_por_cpf_ou_nis**: Restricted API limit applies.
 
 Get available Bolsa Familia by CPF or NIS
-- **get_bolsa_familia_por_municipio**: Restricted API limit applies.
-
-Get Bolsa Familia by municipality
 - **get_bolsa_familia_sacado_por_nis**: Restricted API limit applies.
 
 Get withdrawn Bolsa Familia by NIS
@@ -58,9 +61,6 @@ Get expense documents by beneficiary
 - **get_orgaos_siafi**: Supports pagination.
 
 List SIAFI organizations
-- **get_seguro_defeso_codigo**: Restricted API limit applies.
-
-Get Seguro Defeso by code
 
 
 ## 💬 Prompt Examples

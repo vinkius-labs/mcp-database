@@ -35,6 +35,8 @@ Connect your **Belong Australia** account to any AI agent and manage your teleco
 
 ## Available Tools (10)
 - **get_invoice_pdf**: Retrieve a specific invoice PDF link
+- **get_account_balance**: Check current account balance
+- **list_services**: List active mobile and broadband services
 - **get_order_details**: Get details of a specific order
 - **get_service_details**: Get details of a specific service
 - **get_usage_data**: Retrieve data usage for a service
@@ -42,8 +44,6 @@ Connect your **Belong Australia** account to any AI agent and manage your teleco
 - **list_invoices**: List recent invoices
 - **list_orders**: List recent orders
 - **list_payment_methods**: List saved payment methods
-- **list_services**: List active mobile and broadband services
-- **get_account_balance**: Check current account balance
 
 
 ## 💬 Prompt Examples

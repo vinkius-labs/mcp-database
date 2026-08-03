@@ -19,7 +19,7 @@ LLMs lack spatial and geometric reasoning. If an AI agent attempts to calculate 
 
 
 ## Available Tools (1)
-- **haversine_calculate_distance**: Pass latitude and longitude for both points. The engine uses the Haversine formula to return the distance in kilometers and miles.
+- **calculate_distance**: Pass latitude and longitude for both points. The engine uses the Haversine formula to return the distance in kilometers and miles.
 
 Calculates the exact geographic distance between two GPS coordinates using the mathematical Haversine formula
 

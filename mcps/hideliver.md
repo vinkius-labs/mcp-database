@@ -33,13 +33,13 @@ Connect your **HiDeliver** broadcasting account to an AI agent to execute bulk e
 
 ## Available Tools (9)
 - **cancel_delivery**: Cancel a mapped delivery trace
+- **list_deliveries**: Retrieve active or listed delivery requests
 - **create_delivery**: Log and schedule a fresh pickup delivery
 - **get_account_balance**: Evaluate remaining tokens or cash thresholds
-- **list_deliveries**: Retrieve active or listed delivery requests
 - **get_delivery**: Get parameters surrounding an explicit delivery
 - **get_profile**: Get HiDeliver authenticated account logic
 - **get_transaction**: Isolate a single API key transaction
-- **list_transactions**: Check global ledger events
+- **list_transactions**: Check globalThis ledger events
 - **update_delivery**: Adjust active route parameters
 
 
