@@ -34,7 +34,6 @@ Connect your **Amberdata** account to any AI agent to access comprehensive digit
 
 
 ## Available Tools (28)
-- **get_options_ohlcv**: Get aggregated OHLCV for options
 - **get_address_token_balances_latest**: Get current ERC-20 token holdings
 - **get_address_token_transfers**: Get historical token transfer events for an address
 - **get_blockchain_metrics_latest**: Get latest block and transaction metrics
@@ -48,6 +47,7 @@ Connect your **Amberdata** account to any AI agent to access comprehensive digit
 - **get_futures_order_book_snapshots**: Get order book snapshots for futures
 - **get_futures_tickers**: Get historical/latest tickers for futures/perpetuals
 - **get_futures_trades**: Get tick-by-tick trades for futures
+- **get_options_ohlcv**: Get aggregated OHLCV for options
 - **get_options_tickers**: Get tickers including Greeks and Implied Volatility for options
 - **get_options_trades**: Get tick-by-tick trades for options
 - **get_spot_bid_ask_spread**: Get absolute and percentage spread analytics

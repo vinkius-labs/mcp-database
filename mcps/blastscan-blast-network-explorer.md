@@ -34,8 +34,6 @@ Connect to **Blastscan**, the leading block explorer for the Blast Network, and 
 
 
 ## Available Tools (29)
-- **get_contract_abi**: Get Contract ABI for Verified Source Codes
-- **get_ether_balance_multi**: Get Ether Balance for Multiple Addresses
 - **get_ether_balance**: Get Ether Balance for a Single Address
 - **get_block_number_by_time**: Get Block Number by Timestamp
 - **get_block_reward**: Get Block Rewards by BlockNo
@@ -55,13 +53,15 @@ Connect to **Blastscan**, the leading block explorer for the Blast Network, and 
 - **get_transaction_status**: Check Contract Execution Status
 - **proxy_eth_blocknumber**: eth_blockNumber
 - **proxy_eth_call**: eth_call
-- **proxy_eth_estimategas**: eth_estimateGas
-- **proxy_eth_gasprice**: eth_gasPrice
 - **proxy_eth_getblockbynumber**: eth_getBlockByNumber
 - **proxy_eth_getcode**: eth_getCode
 - **proxy_eth_getstorageat**: eth_getStorageAt
 - **proxy_eth_gettransactionbyhash**: eth_getTransactionByHash
 - **proxy_eth_gettransactionreceipt**: eth_getTransactionReceipt
+- **get_contract_abi**: Get Contract ABI for Verified Source Codes
+- **get_ether_balance_multi**: Get Ether Balance for Multiple Addresses
+- **proxy_eth_estimategas**: eth_estimateGas
+- **proxy_eth_gasprice**: eth_gasPrice
 - **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
 
 

@@ -34,6 +34,7 @@ Access one of the world's most impressive art collections directly through your 
 
 
 ## Available Tools (31)
+- **search_products**: Search products
 - **get_article**: Get details for a specific article
 - **get_artwork_manifest**: Get IIIF Manifest for a specific artwork
 - **get_artwork**: Get details for a specific artwork
@@ -59,7 +60,6 @@ Access one of the world's most impressive art collections directly through your 
 - **search_exhibitions**: Search exhibitions
 - **search_galleries**: Search galleries
 - **search_places**: Search places
-- **search_products**: Search products
 - **search_publications**: Search publications
 - **search_tours**: Search tours
 - **get_agent**: Get details for a specific agent (artist)

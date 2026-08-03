@@ -34,15 +34,12 @@ Connect your **Allnodes** account to any AI agent to automate your blockchain in
 
 
 ## Available Tools (20)
-- **get_servers**: Get all bare-metal servers
-- **get_ssh_keys**: Get all SSH Keys
-- **get_delegation**: Get a specific delegation
-- **get_delegations**: Get all delegations
-- **get_fullnode**: Get a specific full node
 - **get_fullnodes**: Get all full nodes
 - **get_instant_server_profiles**: Get all available Instant server installation profiles
 - **get_instant_server_upgrades**: Get all available Instant server upgrades
 - **get_instant_servers**: Get all available Instant servers
+- **get_servers**: Get all bare-metal servers
+- **get_ssh_keys**: Get all SSH Keys
 - **get_validators**: Get all validators
 - **host_instant_server**: Host an Instant server
 - **host_node**: g., ETH validator, Masternode). Provide required fields based on the currency.
@@ -56,6 +53,9 @@ Host a validator or masternode
 
 Perform a staking action
 - **submit_deterministic**: Submit deterministic registration
+- **get_delegation**: Get a specific delegation
+- **get_delegations**: Get all delegations
+- **get_fullnode**: Get a specific full node
 - **add_ssh_key**: Add a new SSH Key
 - **get_validator**: Get a specific validator
 

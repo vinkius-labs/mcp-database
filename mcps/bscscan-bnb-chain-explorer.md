@@ -36,9 +36,6 @@ Connect your AI agent to **BscScan** to explore the BNB Chain ecosystem with unp
 ## Available Tools (16)
 - **get_bep20_transfers**: Get List of BEP-20 Token Transfer Events by Address
 - **get_bep721_transfers**: Get List of BEP-721 (NFT) Token Transfer Events by Address
-- **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
-- **get_block_reward**: Get Block Rewards by BlockNo
-- **get_bnb_balance_multi**: Get BNB Balance for Multiple Addresses
 - **get_bnb_balance**: Get BNB Balance for a Single Address
 - **get_bsc_price**: Get Last Price of BNB
 - **get_bsc_supply**: Get Total Supply of BNB on BSC
@@ -50,6 +47,9 @@ Connect your AI agent to **BscScan** to explore the BNB Chain ecosystem with unp
 - **get_internal_transactions**: Get List of Internal Transactions by Address
 - **get_normal_transactions**: Get List of Normal Transactions by Address
 - **get_transaction_receipt_status**: Check Transaction Receipt Status
+- **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
+- **get_block_reward**: Get Block Rewards by BlockNo
+- **get_bnb_balance_multi**: Get BNB Balance for Multiple Addresses
 
 
 ## 💬 Prompt Examples

@@ -34,10 +34,6 @@ Connect your **AppDynamics** Controller to any AI agent to gain deep visibility 
 
 
 ## Available Tools (13)
-- **list_applications**: List all applications monitored by the Controller
-- **list_business_transactions**: List business transactions for an application
-- **create_event**: Create a custom event
-- **create_user**: Create a new Controller user
 - **list_custom_match_rules**: Manage custom match rules
 - **export_health_rules**: Export health rules for an application
 - **list_health_rule_violations**: List health rule violations
@@ -47,6 +43,10 @@ Connect your **AppDynamics** Controller to any AI agent to gain deep visibility 
 - **list_nodes**: List nodes within an application
 - **list_snapshots**: Retrieve transaction snapshots
 - **list_tiers**: List tiers within an application
+- **list_applications**: List all applications monitored by the Controller
+- **list_business_transactions**: List business transactions for an application
+- **create_event**: Create a custom event
+- **create_user**: Create a new Controller user
 
 
 ## 💬 Prompt Examples

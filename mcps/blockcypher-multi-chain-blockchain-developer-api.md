@@ -35,10 +35,6 @@ Connect the **BlockCypher** multi-chain API to your AI agent to interact with ma
 
 
 ## Available Tools (15)
-- **fund_beth_test_address**: Fund an address on the BETH test chain
-- **call_eth_contract_method**: Requires token.
-
-Call an Ethereum contract method
 - **create_eth_contract**: Requires token.
 
 Create an Ethereum contract
@@ -60,6 +56,10 @@ Create a skeleton transaction for signing
 
 Send a signed transaction to the network
 - **get_token_info**: Get information about an API token
+- **fund_beth_test_address**: Fund an address on the BETH test chain
+- **call_eth_contract_method**: Requires token.
+
+Call an Ethereum contract method
 - **fund_bcy_test_address**: Fund an address on the BCY test chain
 - **get_block_by_height**: Get block details by height
 

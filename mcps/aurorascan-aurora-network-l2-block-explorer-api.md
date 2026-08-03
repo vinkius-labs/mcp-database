@@ -51,7 +51,6 @@ Connect your AI agent to **Aurorascan** and gain deep visibility into the Aurora
 - **get_token_nft_tx**: Get a List of ERC721 Token Transfer Events
 - **get_token_supply**: Get ERC20-Token Total Supply by ContractAddress
 - **get_token_tx**: Get a List of ERC20 Token Transfer Events
-- **get_tx_list_internal**: Get a List of Internal Transactions
 - **get_tx_list**: Get a List of Normal Transactions By Address
 - **get_tx_receipt_status**: Check Transaction Receipt Status
 - **proxy_block_number**: eth_blockNumber
@@ -59,6 +58,7 @@ Connect your AI agent to **Aurorascan** and gain deep visibility into the Aurora
 - **proxy_estimate_gas**: eth_estimateGas
 - **proxy_gas_price**: eth_gasPrice
 - **proxy_get_block_by_number**: eth_getBlockByNumber
+- **get_tx_list_internal**: Get a List of Internal Transactions
 - **proxy_get_code**: eth_getCode
 - **proxy_get_storage_at**: eth_getStorageAt
 - **proxy_get_transaction_by_hash**: eth_getTransactionByHash

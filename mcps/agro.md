@@ -40,9 +40,9 @@ Connect the **AgroMonitoring API** to your AI agent to transform how you manage 
 - **get_historical_weather**: Get historical weather data
 - **get_ndvi_history**: Get NDVI and EVI historical data
 - **get_polygon**: Get info for one polygon
-- **list_polygons**: Get list of polygons
 - **search_imagery**: Search for satellite imagery
 - **update_polygon**: Update polygon info
+- **list_polygons**: Get list of polygons
 - **get_current_uvi**: Get current UV Index
 - **create_polygon**: Create a new polygon for an area of interest
 - **get_accumulated_precipitation**: Get accumulated precipitation

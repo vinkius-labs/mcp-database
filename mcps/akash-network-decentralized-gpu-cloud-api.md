@@ -34,23 +34,23 @@ Connect to **Akash Network**, the world's first decentralized open-source cloud,
 
 
 ## Available Tools (13)
-- **close_deployment**: Close a deployment
-- **add_deposit**: Add USD funds to a deployment escrow
-- **create_deployment**: 50 USD).
-
-Create a new deployment from an SDL manifest
 - **create_lease**: Accept bids and create a lease
-- **enable_auto_top_up**: Enable auto top-up for deployments
 - **get_deployment_settings**: Get auto top-up settings for a deployment
 - **get_deployment**: Get full details of a deployment
 - **get_provider**: Get details for a specific provider
+- **update_deployment_settings**: Update deployment settings
+- **update_deployment**: Update an active deployment
+- **create_deployment**: 50 USD).
+
+Create a new deployment from an SDL manifest
 - **list_bids**: Bids typically arrive in 30-60 seconds.
 
 Poll for provider bids for a deployment
 - **list_deployments**: List all deployments
 - **list_providers**: List network-wide providers
-- **update_deployment_settings**: Update deployment settings
-- **update_deployment**: Update an active deployment
+- **close_deployment**: Close a deployment
+- **add_deposit**: Add USD funds to a deployment escrow
+- **enable_auto_top_up**: Enable auto top-up for deployments
 
 
 ## 💬 Prompt Examples

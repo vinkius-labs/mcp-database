@@ -34,16 +34,16 @@ Connect to the **Aptoscan API** to inspect the Aptos blockchain in real-time. Th
 
 
 ## Available Tools (10)
-- **get_account_balance**: Get the current balance of the specified account
-- **get_account_modules**: Get all Move modules published under the specified account
 - **get_account_resources**: Get all resources owned by the specified account
 - **get_account_tokens**: List all tokens (NFTs and Fungible Assets) held by an account
 - **get_account_transactions**: Get a list of transactions associated with a specific account
-- **get_block_by_height**: Get block details by its height
 - **get_block_by_version**: Get block details containing a specific transaction version
 - **get_token_data**: Get metadata and supply information for a specific token
 - **get_transaction_by_hash**: Get details of a specific transaction using its hash
 - **get_transaction_by_version**: Get details of a transaction using its ledger version
+- **get_account_balance**: Get the current balance of the specified account
+- **get_account_modules**: Get all Move modules published under the specified account
+- **get_block_by_height**: Get block details by its height
 
 
 ## 💬 Prompt Examples

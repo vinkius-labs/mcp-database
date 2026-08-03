@@ -40,7 +40,7 @@ Connect your **AerisWeather** account to any AI agent and access professional-gr
 Query multiple endpoints in a single request for efficiency
 - **get_conditions**: Supports minutely precipitation forecasts (filter=minutelyprecip). Range: 2004 to +15 days.
 
-Get interpolated global current, forecast, and historical conditions
+Get interpolated globalThis current, forecast, and historical conditions
 - **get_forecasts**: Get weather forecasts
 - **get_observations**: Action can be an ID (e.g., minneapolis,mn), closest, search, or within.
 

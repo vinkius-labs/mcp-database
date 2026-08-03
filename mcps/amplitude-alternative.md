@@ -34,23 +34,23 @@ Connect your **Amplitude** analytics account to any AI agent to ingest events, q
 
 
 ## Available Tools (21)
-- **create_annotation**: Annotate charts with important dates
-- **create_category**: Create a new event category (Taxonomy)
-- **list_event_types**: Get all event types (Taxonomy)
-- **list_user_properties**: Get all user properties (Taxonomy)
-- **map_user**: Map one user ID to another (Global User ID)
-- **list_event_properties**: Get all event properties (Taxonomy)
 - **create_release**: Create a release to track feature impact
 - **delete_users**: Submit data deletion requests (GDPR/CCPA)
 - **export_data**: Export raw event data in JSON format
 - **get_audit_logs**: Export administrative activity logs
 - **get_experiment_variant**: Retrieve variant assignments for users (Experiment API)
-- **get_segmentation**: Query metrics displayed in Amplitude charts
 - **get_user_profile**: Fetch real-time user data and properties
 - **group_identify**: Set or update properties for specific groups
 - **identify_user**: Update user properties without sending an event
 - **list_categories**: Get all event categories (Taxonomy)
 - **list_cohorts**: Get all behavioral cohorts
+- **list_user_properties**: Get all user properties (Taxonomy)
+- **map_user**: Map one user ID to another (Global User ID)
+- **get_segmentation**: Query metrics displayed in Amplitude charts
+- **list_event_types**: Get all event types (Taxonomy)
+- **create_annotation**: Annotate charts with important dates
+- **create_category**: Create a new event category (Taxonomy)
+- **list_event_properties**: Get all event properties (Taxonomy)
 - **send_attribution**: Send attribution data from partners
 - **send_batch_events**: Send high-volume data to Amplitude (Batch API)
 - **send_events**: Requires an array of event objects.
