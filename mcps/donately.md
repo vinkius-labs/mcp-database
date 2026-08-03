@@ -7,42 +7,40 @@
 
 **Category:** [payment-processing](../categories/payment-processing.md)
 
-Equip your AI agent to manage donations, track donors, and monitor fundraising campaigns via the Donately API.
+Manage Donately fundraising and donor data using AI agents.
 
 ## Description
-Integrate **Donately**, the simplest online fundraising platform, directly into your AI workflow. Manage your donations and recurring contributions, track donor profiles and lifetime giving, monitor fundraising campaigns and progress, and oversee your fundraisers using natural language.
-
 ### What you can do
-
-- **Donation Oversight** — List and retrieve detailed information and payment status for all your received contributions.
-- **Donor Intelligence** — Monitor real-time donor profiles, contact details, and lifetime giving history across your organization.
-- **Campaign Monitoring** — Track fundraising campaigns, goals, and current progress metrics to ensure successful outcomes.
-- **Contribution Auditing** — Retrieve high-level summaries of fundraising performance and identify your most impactful contributors instantly.
+- Retrieve and list incoming donations.
+- Manage and list your fundraising campaigns.
+- Access donor information and contacts.
+- Keep track of recurring subscriptions and peer-to-peer fundraisers.
 
 ### How it works
-
-1. Connect the Donately integration to your AI assistant.
-2. Authorize using your Donately API Key (found in your account settings).
-3. Orchestrate your fundraising operations and donor relations through intuitive conversation.
+1. Subscribe to Donately.
+2. Insert your API Token and Account ID.
+3. Let the AI Agent fetch and manage your fundraising data.
 
 ### Who is this for?
-
-- **Non-Profit Managers** — Quickly check campaign progress and recent donations on the go.
-- **Development Officers** — Research donor history and lifetime giving via chat during outreach.
-- **Operations Teams** — Monitor donation volumes and organizational fundraising metadata instantly.
+Ideal for non-profits, NGOs, and fundraising teams who want to seamlessly query their Donately data through AI Agents.
 
 
-## Available Tools (10)
-- **get_donately_account_metadata**: Retrieve metadata and limits for your Donately account
-- **get_campaign_performance_summary**: Retrieve a high-level summary of a specific campaigns performance
-- **get_donation_details**: Get detailed information for a specific donation
-- **get_donor_profile**: Get full profile and giving history for a specific donor
-- **list_fundraising_campaigns**: List all fundraising campaigns configured in Donately
-- **list_all_donations**: List all donations received in your Donately account
-- **list_active_donors**: List all donors registered in your Donately organization
-- **list_latest_contributions**: Identify the most recently received donations
-- **list_highest_lifetime_donors**: Identify donors with the highest lifetime contribution totals (mock logic)
-- **search_donations_by_email**: Search for donations matching a specific donor email address
+## Available Tools (11)
+- **get_campaign**: Get details of a specific campaign
+- **list_campaigns**: Campaigns are the primary way to organize fundraising efforts.
+
+List campaigns for the Donately account
+- **list_donations**: Useful to track incoming contributions and donor activities. Supports pagination and filtering.
+
+List donations for the Donately account
+- **list_fundraisers**: List peer-to-peer fundraisers for the Donately account
+- **create_donation**: Create a new donation
+- **get_donation**: Get details of a specific donation
+- **get_fundraiser**: Get details of a specific peer-to-peer fundraiser
+- **get_person**: Get details of a specific person (donor)
+- **get_subscription**: Get details of a specific recurring donation (subscription)
+- **list_people**: List people (donors/contacts) for the Donately account
+- **list_subscriptions**: List recurring donations (subscriptions) for the Donately account
 
 
 ## 💬 Prompt Examples
@@ -50,38 +48,38 @@ Integrate **Donately**, the simplest online fundraising platform, directly into 
 Here are some examples of how you can interact with the **Donately** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List the latest donations received."
+> "List my recent donations from Donately."
 
 **🤖 AI Agent:**
-> I've found 5 recent donations, including $50.00 from 'John Doe' and $100.00 from 'Jane Smith'. All were successfully processed. Would you like to see the associated campaign for any of these?
+> Here are your most recent donations...
 
 ---
 
 **👤 You:**
-> "Show me the progress for our 'Summer Relief' campaign."
+> "Find details about a specific campaign."
 
 **🤖 AI Agent:**
-> The 'Summer Relief' campaign has raised $8,500 towards its $10,000 goal (85% complete). There have been 45 unique donors so far. Should I list the top contributors for this campaign?
+> I found the following details for your campaign...
 
 ---
 
 **👤 You:**
-> "Research the donor profile for 'robert.brown@example.com'."
+> "Retrieve a list of our recurring subscriptions."
 
 **🤖 AI Agent:**
-> Robert Brown is a regular donor with a lifetime total of $1,250.00 across 12 donations. Their last contribution was $100.00 on March 15th. Would you like to see their complete giving history?
+> Here is the list of active recurring subscriptions...
 
 
 ## ❓ FAQ
 
-**Q: How do I get a Donately API Key?**
-Log in to your Donately dashboard, navigate to **Settings > API Key**, and you can retrieve your unique API Key from there. Ensure you have the necessary permissions within your organization.
+**Q: Does the AI agent process payments directly?**
+No, the AI agent retrieves and manages data from your Donately account, it does not act as a payment gateway itself.
 
-**Q: Can the agent process new donations?**
-This integration currently focuses on listing and auditing donations, donors, and campaigns. Processing new donations with credit card details should be managed via your Donately forms or donation pages.
+**Q: Can the AI agent create new fundraising campaigns?**
+Currently, the agent can list and retrieve information about existing campaigns, but campaign creation should be done in the Donately dashboard.
 
-**Q: Does the integration show recurring donations?**
-Yes, you can use the list_all_donations or get_donation_details tools to identify and retrieve information for both one-time and recurring contributions.
+**Q: Is donor data safe with the AI agent?**
+Yes, the agent only accesses the data necessary to answer your prompts and does not store personal donor information permanently.
 
 
 ## Installation & Usage

@@ -33,6 +33,9 @@ Integrate **DealMachine**, the leading CRM for real estate investors, directly i
 
 
 ## Available Tools (10)
+- **list_marketing_campaigns**: Returns campaign summaries including send dates, recipient counts, and engagement metrics.
+
+List all direct mail and marketing campaigns
 - **add_new_lead**: Persists a new lead based on property address, initiating property data resolution and owner identification.
 
 Add a new real estate lead to your CRM
@@ -45,9 +48,6 @@ Get detailed information for a specific real estate lead
 - **get_property_details**: Resolves technical data such as estimated equity, mortgage information, deed history, and detailed owner metadata.
 
 Get full data for a specific property including owner and equity
-- **list_marketing_campaigns**: Returns campaign summaries including send dates, recipient counts, and engagement metrics.
-
-List all direct mail and marketing campaigns
 - **list_real_estate_leads**: Returns lead metadata including property addresses, owner names, and current lead status (e.g., potential, contacted).
 
 List all real estate leads in your DealMachine account

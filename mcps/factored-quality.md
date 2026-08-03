@@ -41,10 +41,10 @@ Connect your **Factored Quality** account to any AI agent and take full control 
 - **get_inspection**: Get details for a specific inspection
 - **get_lab_test**: Get details for a specific lab test
 - **get_me**: Get current API user profile info
-- **get_supplier**: Get details for a specific supplier
 - **list_audits**: List all factory audits
-- **list_bookings**: List all QC service bookings
 - **list_inspections**: List all quality control inspections
+- **get_supplier**: Get details for a specific supplier
+- **list_bookings**: List all QC service bookings
 - **list_lab_tests**: List all lab tests
 - **list_suppliers**: List all suppliers
 

@@ -33,16 +33,16 @@ Integrate **Dynamo Software**, the industry-leading platform for alternative inv
 
 
 ## Available Tools (10)
-- **get_dynamo_account_metadata**: Retrieve metadata and usage limits for your Dynamo Software account
-- **get_fund_details**: Get detailed settings and information for a specific investment fund
 - **quick_portfolio_valuation_audit**: Retrieve a high-level summary of portfolio valuations and activity
 - **list_active_investors_only**: Identify investors that are currently in an "Active" or "Funded" status
 - **list_investment_funds**: List all investment funds managed in Dynamo
 - **list_dynamo_investors**: List all investors registered in your Dynamo Software account
-- **list_high_valuation_funds**: Identify funds with a valuation above a certain threshold (mock logic)
 - **list_dynamo_portfolios**: List all investment portfolios configured in your account
 - **list_latest_dynamo_activities**: Identify the most recently recorded activities and notes across the platform
 - **search_investment_funds**: Search for funds using a name keyword or category
+- **get_dynamo_account_metadata**: Retrieve metadata and usage limits for your Dynamo Software account
+- **get_fund_details**: Get detailed settings and information for a specific investment fund
+- **list_high_valuation_funds**: Identify funds with a valuation above a certain threshold (mock logic)
 
 
 ## 💬 Prompt Examples

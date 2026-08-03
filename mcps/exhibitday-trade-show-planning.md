@@ -38,13 +38,13 @@ Integrate **ExhibitDay**, the leading trade show planning and exhibition managem
 
 Get a high-level summary of the budget and expenses for a specific event
 - **get_event_detailed_planning_data**: Get detailed settings and logistical information for a specific trade show
+- **list_event_travel_records**: List all travel and lodging arrangements
+- **list_future_scheduled_trade_shows**: Identify trade shows that are scheduled for a future date
 - **quick_event_logistics_audit**: Retrieve a high-level summary of tasks, shipments, and travel for an event
 - **list_event_booth_staff**: List all team members assigned to staff the booth at a specific event
 - **list_trade_show_events**: List all trade shows and exhibitions managed in your ExhibitDay account
 - **list_booth_shipments**: List all shipments and freight tracking for booth materials
 - **list_planning_tasks**: List all planning and logistical tasks
-- **list_event_travel_records**: List all travel and lodging arrangements
-- **list_future_scheduled_trade_shows**: Identify trade shows that are scheduled for a future date
 
 
 ## 💬 Prompt Examples

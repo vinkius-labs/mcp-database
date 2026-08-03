@@ -45,9 +45,9 @@ Connect your **Fee Navigator** account to any AI agent and take full control of 
 - **list_audits**: List all statement audits
 - **list_merchants**: List all merchants in your Fee Navigator account
 - **list_proposals**: List all savings proposals
+- **analyze_statement**: Trigger AI analysis for an uploaded statement
 - **list_recent_activities**: List recent merchant analysis activities
 - **upload_statement**: Upload a merchant statement for analysis
-- **analyze_statement**: Trigger AI analysis for an uploaded statement
 
 
 ## 💬 Prompt Examples
