@@ -14,11 +14,11 @@ The Microcopy UX Friction Analyzer helps designers and writers identify linguist
 
 
 ## Available Tools (5)
-- **assess_reading_complexity**: Ensure microcopy aligns with the target demographic's reading proficiency
 - **check_element_redundancy**: Prevent information overlap between different UI microcopy components
 - **detect_linguistic_friction**: Identify if microcopy is blaming the user or has a tone mismatch
 - **evaluate_clarity_metrics**: Determine how difficult a specific text string is to understand
 - **verify_actionability**: Check if an error message or instruction provides a clear path forward
+- **assess_reading_complexity**: Ensure microcopy aligns with the target demographic's reading proficiency
 
 
 ## 💬 Prompt Examples

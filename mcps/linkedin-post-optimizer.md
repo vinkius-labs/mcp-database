@@ -14,9 +14,9 @@ Maximize your reach on LinkedIn by ensuring every post is structurally sound and
 
 
 ## Available Tools (3)
-- **verify_engagement_triggers**: Verify engagement triggers in a LinkedIn post
 - **audit_structural_integrity**: Audit the structural integrity of a LinkedIn post
 - **evaluate_hook_effectiveness**: Evaluate the effectiveness of a post hook
+- **verify_engagement_triggers**: Verify engagement triggers in a LinkedIn post
 
 
 ## 💬 Prompt Examples

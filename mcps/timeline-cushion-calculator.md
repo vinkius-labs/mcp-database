@@ -14,9 +14,9 @@ The Timeline Cushion Calculator is a professional planning engine designed to pr
 
 
 ## Available Tools (3)
-- **cocktail_transition_tool**: Calculates the transition period between ceremony and cocktail hour
 - **dinner_sequence_tool**: Calculates the timeline for the dinner phase
 - **reception_milestones_tool**: Calculates key wedding milestones during the reception
+- **cocktail_transition_tool**: Calculates the transition period between ceremony and cocktail hour
 
 
 ## 💬 Prompt Examples

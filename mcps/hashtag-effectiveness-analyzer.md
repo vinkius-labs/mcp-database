@@ -14,11 +14,11 @@ The Hashtag Effectiveness Analyzer provides a comprehensive suite of tools to op
 
 
 ## Available Tools (5)
-- **validate_platform_fit**: Validates if the total number of hashtags is optimal for a platform
 - **calculate_composition_ratio**: Calculates the ratio of branded vs generic tags
 - **detect_redundancy**: Detects exact and near-duplicate hashtags
 - **evaluate_tag_structure**: Evaluates structural readability and length standards of hashtags
 - **scan_for_spam_patterns**: Scans for banned words or suspicious patterns in hashtags
+- **validate_platform_fit**: Validates if the total number of hashtags is optimal for a platform
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ The Keyword Intent Classifier connects AI agents to a rule-based engine that ana
 
 
 ## Available Tools (2)
-- **classify_keywords_batch**: Classify a list of keywords in bulk
 - **classify_keyword**: Classify a single keyword into an intent category
+- **classify_keywords_batch**: Classify a list of keywords in bulk
 
 
 ## 💬 Prompt Examples

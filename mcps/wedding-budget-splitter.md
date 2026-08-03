@@ -14,9 +14,9 @@ The Wedding Budget Splitter helps you distribute your total wedding investment a
 
 
 ## Available Tools (3)
-- **custom_allocation**: Calculate a custom wedding budget allocation
 - **estimate_hidden_costs**: Estimate additional wedding expenses
 - **standard_allocation**: Get a standard wedding budget allocation
+- **custom_allocation**: Calculate a custom wedding budget allocation
 
 
 ## 💬 Prompt Examples

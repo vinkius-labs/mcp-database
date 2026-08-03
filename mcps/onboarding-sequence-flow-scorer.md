@@ -14,10 +14,10 @@ The Onboarding Sequence Flow Scorer evaluates the UX efficiency of your onboardi
 
 
 ## Available Tools (4)
-- **analyze_efficiency**: Analyze the efficiency of an onboarding sequence
+- **check_progression**: Check for cognitive progression in the sequence
 - **evaluate_consistency**: Evaluate CTA label consistency
 - **identify_friction**: Identify friction risks in the sequence
-- **check_progression**: Check for cognitive progression in the sequence
+- **analyze_efficiency**: Analyze the efficiency of an onboarding sequence
 
 
 ## 💬 Prompt Examples

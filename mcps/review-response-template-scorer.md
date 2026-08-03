@@ -14,11 +14,11 @@ This MCP server provides a suite of tools to measure the effectiveness of busine
 
 
 ## Available Tools (5)
-- **calculate_length_efficiency**: Calculate length efficiency ratio
 - **score_personalization**: Score how personalized a response is
 - **verify_resolution_adequacy**: Verify if negative reviews have a resolution
 - **evaluate_tone_alignment**: Check if response tone matches review sentiment
 - **assess_template_uniqueness**: Assess template uniqueness
+- **calculate_length_efficiency**: Calculate length efficiency ratio
 
 
 ## 💬 Prompt Examples

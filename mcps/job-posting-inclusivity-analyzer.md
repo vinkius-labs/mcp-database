@@ -14,9 +14,9 @@ The Job Posting Inclusivity Analyzer helps recruiters and hiring managers identi
 
 
 ## Available Tools (3)
+- **analyze_text_accessibility**: Determines if the posting is readable for a general audience
 - **analyze_demand_stringency**: Measures the intensity of candidate requirements and use of hyperbole
 - **analyze_gender_bias**: Evaluates the posting for masculine or feminine language influence
-- **analyze_text_accessibility**: Determines if the posting is readable for a general audience
 
 
 ## 💬 Prompt Examples

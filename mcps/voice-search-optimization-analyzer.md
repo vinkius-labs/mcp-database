@@ -14,11 +14,11 @@ This MCP server provides specialized analysis to evaluate text content for its s
 
 
 ## Available Tools (4)
-- **evaluate_directness**: Assess the directness of an answer
 - **analyze_query_patterns**: , to determine voice search suitability.
 
 Detect conversational query patterns
 - **check_snippet_window**: Analyze if a text block is optimized for featured snippets
+- **evaluate_directness**: Assess the directness of an answer
 - **audit_long_tail_keywords**: Audit for long-tail keyword coverage
 
 

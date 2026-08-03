@@ -14,10 +14,10 @@ This MCP server provides a specialized engine to evaluate the rhythmic flow and 
 
 
 ## Available Tools (4)
-- **analyze_rhythm**: Analyzes the rhythmic cadence of prose
 - **calculate_structure**: Quantifies structural complexity and punctuation
 - **check_repetition**: Detects repetitive linguistic patterns
 - **evaluate_scannability**: Evaluates visual scannability of text
+- **analyze_rhythm**: Analyzes the rhythmic cadence of prose
 
 
 ## 💬 Prompt Examples

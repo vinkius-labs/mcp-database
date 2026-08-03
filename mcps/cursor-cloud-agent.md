@@ -39,9 +39,6 @@ Your AI acts as a control plane for Cursor's autonomous coding agents — create
 
 
 ## Available Tools (12)
-- **unarchive_agent**: This operation is idempotent — unarchiving an already-active agent succeeds without error.
-
-Restore an archived Cursor cloud agent. Idempotent operation
 - **archive_agent**: The agent is no longer active but can be restored with unarchive_agent. This operation is idempotent — archiving an already-archived agent succeeds without error.
 
 Archive (soft delete) a Cursor cloud agent. Idempotent operation
@@ -66,15 +63,18 @@ Get information about the authenticated Cursor API user
 - **get_run**: Use this to check if a run completed, see its output, or inspect git branches it created.
 
 Get details and status of a specific Cursor cloud agent run
-- **list_agents**: Supports limit (default 20, max 100), cursor for pagination, prUrl to filter by PR, and includeArchived (default true). Returns items array and nextCursor for pagination.
-
-List all Cursor cloud agents with pagination and filtering
 - **list_artifacts**: Use this to discover what files the agent created or modified.
 
 List all artifacts produced by a Cursor cloud agent
 - **list_runs**: Supports limit and cursor for pagination. Returns items array with run summaries.
 
 List all runs for a specific Cursor cloud agent
+- **unarchive_agent**: This operation is idempotent — unarchiving an already-active agent succeeds without error.
+
+Restore an archived Cursor cloud agent. Idempotent operation
+- **list_agents**: Supports limit (default 20, max 100), cursor for pagination, prUrl to filter by PR, and includeArchived (default true). Returns items array and nextCursor for pagination.
+
+List all Cursor cloud agents with pagination and filtering
 
 
 ## 💬 Prompt Examples

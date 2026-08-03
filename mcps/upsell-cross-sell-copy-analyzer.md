@@ -14,9 +14,9 @@ The Upsell & Cross-sell Copy Analyzer evaluates marketing text to ensure high co
 
 
 ## Available Tools (3)
-- **analyze_offer_economics**: Determines if the economic benefits and comparison points of an offer are clearly communicated
 - **analyze_purchase_relevance**: Evaluates how well the copy links the new offer to the consumer's previous purchase history
 - **audit_copy_sentiment**: Identifies linguistic resistance and assesses the balance of the Call-to-Action
+- **analyze_offer_economics**: Determines if the economic benefits and comparison points of an offer are clearly communicated
 
 
 ## 💬 Prompt Examples

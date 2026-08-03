@@ -14,9 +14,9 @@ The Headline Power Analyzer is a specialized linguistic engine designed to optim
 
 
 ## Available Tools (3)
+- **analyze_headline_linguistics**: Analyzes the linguistic composition and word-type balance of a headline
 - **check_platform_compliance**: Checks if a headline will be truncated on major platforms
 - **get_sentiment_analysis**: Analyzes the emotional tone and sentiment polarity of a headline
-- **analyze_headline_linguistics**: Analyzes the linguistic composition and word-type balance of a headline
 
 
 ## 💬 Prompt Examples

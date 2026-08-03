@@ -14,11 +14,11 @@ The Ethical Shopping Comparator allows AI agents to evaluate product sustainabil
 
 
 ## Available Tools (3)
+- **rank_products_by_sustainability**: Ranks products based on a weighted composite score
 - **get_category_benchmarks**: g., Apparel, Electronics, Home Goods).
 
 Retrieves standard sustainability thresholds for a particular product category
 - **calculate_product_metrics**: Analyzes a single product to determine its economic and environmental efficiency metrics
-- **rank_products_by_sustainability**: Ranks products based on a weighted composite score
 
 
 ## 💬 Prompt Examples
