@@ -34,20 +34,20 @@ Integrate **Geoapify** into your AI workflows to provide your agent with advance
 
 
 ## Available Tools (17)
-- **calculate_route**: Calculate routes for various modes (drive, truck, bicycle, walk, transit)
-- **create_batch_job**: Process up to 1000 requests in a single asynchronous job
-- **geocode_autocomplete**: Get real-time suggestions for address input fields
-- **geocode_reverse**: Find the address for a specific GPS coordinate
 - **geocode_search**: Convert free-form or structured addresses into coordinates
 - **geometry_operation**: Perform spatial operations on GeoJSON data (union, intersection, buffer, etc.)
-- **get_boundaries_consists_of**: Retrieve sub-boundaries within an area
-- **get_boundaries_part_of**: Retrieve administrative, postal, or political boundaries containing a point
-- **get_elevation**: Get elevation data for specific coordinates
 - **get_place_details**: Get detailed info (contact, opening hours, building geometry) for a place
 - **get_ip_info**: Detect user location based on IP address
 - **map_matching**: Snap GPS tracks to the road network
 - **route_planner**: Solve Vehicle Routing Problems (VRP), including TSP and delivery optimization
+- **geocode_reverse**: Find the address for a specific GPS coordinate
 - **search_places**: Find points of interest (POIs) by category
+- **calculate_route**: Calculate routes for various modes (drive, truck, bicycle, walk, transit)
+- **create_batch_job**: Process up to 1000 requests in a single asynchronous job
+- **geocode_autocomplete**: Get real-time suggestions for address input fields
+- **get_boundaries_consists_of**: Retrieve sub-boundaries within an area
+- **get_boundaries_part_of**: Retrieve administrative, postal, or political boundaries containing a point
+- **get_elevation**: Get elevation data for specific coordinates
 - **calculate_isoline**: Calculate areas reachable within a certain time (isochrones) or distance (isodistances)
 - **calculate_route_matrix**: Calculate travel times and distances between multiple sources and targets
 - **get_batch_job**: Get results for an asynchronous batch job

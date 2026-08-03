@@ -33,26 +33,12 @@ Connect to the **GoRest** API to interact with a full suite of RESTful resources
 
 
 ## Available Tools (23)
-- **create_post**: Requires authentication.
-
-Create a new post
-- **delete_post**: Requires authentication.
-
-Delete a post
-- **list_todos**: Supports pagination.
-
-List all todos
-- **list_user_posts**: Posts authored by a specific user
-- **list_user_todos**: Todos owned by a specific user
-- **list_posts**: Supports pagination.
-
-List all posts
-- **create_comment**: Requires authentication.
-
-Add a comment
 - **create_post_comment**: Requires authentication.
 
 Add a comment to a specific post
+- **create_post**: Requires authentication.
+
+Create a new post
 - **create_todo**: Requires authentication.
 
 Create a new todo
@@ -86,6 +72,20 @@ Update a post
 - **update_user**: Requires authentication.
 
 Update a user (partial)
+- **delete_post**: Requires authentication.
+
+Delete a post
+- **list_todos**: Supports pagination.
+
+List all todos
+- **list_user_posts**: Posts authored by a specific user
+- **list_user_todos**: Todos owned by a specific user
+- **list_posts**: Supports pagination.
+
+List all posts
+- **create_comment**: Requires authentication.
+
+Add a comment
 
 
 ## 💬 Prompt Examples

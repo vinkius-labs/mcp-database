@@ -34,7 +34,6 @@ Connect your **Freesound** account to any AI agent and access the world's larges
 
 
 ## Available Tools (10)
-- **describe_sound**: Add metadata to an uploaded sound
 - **download_sound**: Triggers a download of the original file.
 
 Download the original high-quality sound file
@@ -47,6 +46,7 @@ Download the original high-quality sound file
 - **search_sounds**: Supports Solr-style filters.
 
 Search for sounds on Freesound
+- **describe_sound**: Add metadata to an uploaded sound
 - **upload_sound**: Upload an audio file to Freesound
 
 

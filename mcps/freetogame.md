@@ -35,10 +35,10 @@ No more searching through endless lists manually. Your AI acts as a gaming scout
 
 
 ## Available Tools (3)
-- **get_game**: Get detailed information about a specific game
 - **list_games**: Can be filtered by platform, category, and sorted.
 
 List all available free-to-play games
+- **get_game**: Get detailed information about a specific game
 - **filter_games**: g., 3d.mmorpg.fantasy.pvp) and platform constraints.
 
 Filter games using multiple tags

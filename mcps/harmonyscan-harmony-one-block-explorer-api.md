@@ -36,6 +36,12 @@ No more manual searching through block explorers. Your AI acts as a blockchain a
 
 
 ## Available Tools (14)
+- **get_one_supply**: Total Supply of ONE
+- **get_source_code**: Get Contract Source Code
+- **get_tx_list_internal**: Get List of Internal Transactions
+- **get_tx_list**: Get List of Normal Transactions
+- **get_tx_receipt_status**: Check Transaction Receipt Status
+- **proxy_request**: Execute standard JSON-RPC methods via proxy
 - **get_status**: Check Transaction Execution Status
 - **get_token_tx**: Get List of HRC20 Token Transfer Events
 - **get_abi**: Get Contract ABI
@@ -44,12 +50,6 @@ No more manual searching through block explorers. Your AI acts as a blockchain a
 - **get_block_reward**: Get Block Rewards
 - **get_logs**: Get Event Logs
 - **get_one_price**: ONE Last Price
-- **get_one_supply**: Total Supply of ONE
-- **get_source_code**: Get Contract Source Code
-- **get_tx_list_internal**: Get List of Internal Transactions
-- **get_tx_list**: Get List of Normal Transactions
-- **get_tx_receipt_status**: Check Transaction Receipt Status
-- **proxy_request**: Execute standard JSON-RPC methods via proxy
 
 
 ## 💬 Prompt Examples

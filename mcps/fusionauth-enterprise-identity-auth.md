@@ -34,9 +34,7 @@ Connect your **FusionAuth** instance to any AI agent to streamline identity mana
 
 
 ## Available Tools (50)
-- **create_application**: Optionally provide a specific applicationId.
-
-Create a new Application
+- **get_system_configuration**: Retrieve System Configuration
 - **create_group**: Create a new Group
 - **create_lambda**: Create a new Lambda
 - **create_tenant**: Create a new Tenant
@@ -55,13 +53,11 @@ Create a new User in FusionAuth
 - **generate_mfa_secret**: Generate an MFA Secret
 - **get_api_key**: Retrieve an API Key
 - **list_application_roles**: Retrieve all Roles for an Application
-- **get_application**: Retrieve a specific Application
 - **list_applications**: Retrieve all Applications
 - **get_group**: Retrieve a Group
 - **get_identity_provider**: Retrieve an Identity Provider
 - **list_identity_providers**: Retrieve all Identity Providers
 - **get_lambda**: Retrieve a Lambda
-- **get_system_configuration**: Retrieve System Configuration
 - **get_system_health**: Retrieve System Health
 - **get_system_status**: Retrieve System Status
 - **get_system_version**: Retrieve System Version
@@ -75,7 +71,6 @@ Retrieve a User from FusionAuth
 - **login**: Authenticate a User
 - **mfa_login**: Complete Multi-Factor Authentication Login
 - **patch_user**: Partially update an existing User
-- **refresh_jwt**: Refresh a JWT
 - **register_user**: Register a User for an Application
 - **remove_group_member**: Remove a User from a Group
 - **revoke_refresh_tokens**: Revoke Refresh Tokens
@@ -84,9 +79,14 @@ Retrieve a User from FusionAuth
 - **update_group**: Update a Group
 - **update_lambda**: Update a Lambda
 - **update_system_configuration**: Update System Configuration
-- **update_tenant**: Update a Tenant
 - **update_user**: Update an existing User
 - **update_webhook**: Update a Webhook
+- **create_application**: Optionally provide a specific applicationId.
+
+Create a new Application
+- **get_application**: Retrieve a specific Application
+- **refresh_jwt**: Refresh a JWT
+- **update_tenant**: Update a Tenant
 - **add_group_member**: Add a User to a Group
 - **create_api_key**: Create a new API Key
 - **create_application_role**: Create a new Application Role

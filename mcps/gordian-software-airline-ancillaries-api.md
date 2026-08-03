@@ -43,7 +43,6 @@ Initialize a new trip
 
 Initiate the purchase of all valid items in the basket
 - **get_basket**: Get current basket items
-- **get_refund**: Get refund details for a trip
 - **get_search_results_by_product**: g., seat, bag).
 
 Get search results filtered by product type
@@ -53,10 +52,11 @@ Get search results by search ID
 - **get_trip**: Retrieve current trip state
 - **inform_cancelled**: Inform Gordian of an external flight cancellation
 - **inform_changed**: Inform Gordian of an external flight change
-- **request_refund**: Request an airline refund for a ticket
 - **start_search**: g., seat, bag).
 
 Start an asynchronous search for specific product types
+- **request_refund**: Request an airline refund for a ticket
+- **get_refund**: Get refund details for a trip
 - **add_to_basket**: Add products to the basket
 - **cancel_trip**: Execute the cancellation of a trip
 - **subscribe_callback**: Subscribe to asynchronous event callbacks

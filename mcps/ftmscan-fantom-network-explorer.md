@@ -34,13 +34,7 @@ Connect to the **Fantom Network** through FtmScan to inspect on-chain activity u
 
 
 ## Available Tools (19)
-- **get_transaction_status**: Check Transaction Execution Status
-- **get_block_countdown**: Get Estimated Block Countdown Time
-- **get_block_reward**: Get Block Rewards
-- **get_contract_abi**: Get Contract ABI
-- **get_contract_source_code**: Get Contract Source Code
 - **get_erc20_token_balance**: Get ERC20 Token Balance for Address
-- **get_erc20_token_supply**: Get ERC20 Token Total Supply
 - **get_erc20_transfers**: Get List of ERC20 Token Transfer Events
 - **get_erc721_transfers**: Get List of ERC721 Token Transfer Events
 - **get_eth_block_number**: Get Latest Block Number (Proxy)
@@ -48,6 +42,12 @@ Connect to the **Fantom Network** through FtmScan to inspect on-chain activity u
 - **get_ftm_balance_multi**: Get FTM Balance for Multiple Addresses
 - **get_ftm_balance**: Get FTM Balance for a Single Address
 - **get_ftm_last_price**: Get FTM Last Price
+- **get_transaction_status**: Check Transaction Execution Status
+- **get_block_countdown**: Get Estimated Block Countdown Time
+- **get_block_reward**: Get Block Rewards
+- **get_contract_abi**: Get Contract ABI
+- **get_contract_source_code**: Get Contract Source Code
+- **get_erc20_token_supply**: Get ERC20 Token Total Supply
 - **get_ftm_total_supply**: Get Total Supply of FTM
 - **get_internal_transactions**: Get List of Internal Transactions
 - **get_logs**: Get Event Logs

@@ -47,14 +47,14 @@ Browse or read public authors via Ghost Content API
 - **content_list_pages**: Supports NQL filtering and pagination.
 
 Browse or read public pages via Ghost Content API
-- **content_list_posts**: Supports NQL filtering, pagination, and inclusion of related data.
-
-Browse or read public posts via Ghost Content API
 - **content_get_settings**: Fetch site settings via Ghost Content API
 - **content_list_tags**: Supports NQL filtering and pagination.
 
 Browse or read public tags via Ghost Content API
 - **content_list_tiers**: Browse membership tiers via Ghost Content API
+- **content_list_posts**: Supports NQL filtering, pagination, and inclusion of related data.
+
+Browse or read public posts via Ghost Content API
 - **admin_create_member**: Create a new member via Ghost Admin API
 - **admin_delete_post**: Delete a post via Ghost Admin API
 

@@ -43,10 +43,10 @@ Connect your **Goldsky** account to any AI agent to orchestrate high-performance
 Get current runtime status of a pipeline
 - **get_pipeline**: Get details of a specific pipeline
 - **list_pipelines**: List all pipelines in the project
-- **resume_pipeline**: Resume a paused pipeline
-- **validate_pipeline**: Validate a pipeline definition
 - **pause_pipeline**: Pause a running pipeline
 - **restart_pipeline**: Restart a pipeline
+- **resume_pipeline**: Resume a paused pipeline
+- **validate_pipeline**: Validate a pipeline definition
 - **create_pipeline**: Create and deploy a new pipeline
 
 

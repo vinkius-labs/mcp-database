@@ -33,18 +33,18 @@ Connect the power of **Huddle01's Web3 Video SDK** to your AI agent. This server
 
 
 ## Available Tools (11)
-- **get_live_session_details**: Fetch details of a specific active room
 - **get_live_session_participants**: Fetch participants currently present in a live room
 - **get_live_sessions**: Fetch rooms that are currently active
 - **get_metrics**: Fetch usage statistics for your API key
 - **get_participant_list**: Retrieve participants who joined a specific session
+- **get_room_metadata**: Retrieve only the metadata for a specific room
+- **get_room_sessions**: Retrieve all sessions (meetings) held in a specific room
+- **get_rooms**: Fetch all rooms associated with your API key
 - **get_recordings**: Can be filtered by sessionId.
 
 Fetch recordings created using the SDK
 - **get_room_details**: Retrieve information about a specific room
-- **get_room_metadata**: Retrieve only the metadata for a specific room
-- **get_room_sessions**: Retrieve all sessions (meetings) held in a specific room
-- **get_rooms**: Fetch all rooms associated with your API key
+- **get_live_session_details**: Fetch details of a specific active room
 - **create_room**: You must specify if the room is locked.
 
 Create a new Huddle01 meeting room

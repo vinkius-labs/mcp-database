@@ -34,6 +34,8 @@ Connect your **Gridscale** account to any AI agent to manage your cloud infrastr
 
 
 ## Available Tools (17)
+- **list_storages**: List all storage volumes
+- **create_server**: Create a new cloud server
 - **get_server_metrics**: Get metrics for a specific server
 - **get_server_power**: Get the power status of a specific server
 - **link_ip_to_server**: Link an IP address to a server
@@ -52,11 +54,9 @@ List available datacenters/locations
 - **list_networks**: List all networks
 - **list_paas**: List all Platform Services (PaaS)
 - **list_servers**: List all servers in your Gridscale account
-- **list_storages**: List all storage volumes
 - **list_templates**: List all templates
 - **set_server_power**: Set the power status of a server
 - **shutdown_server**: Perform an ACPI shutdown on a server
-- **create_server**: Create a new cloud server
 
 
 ## 💬 Prompt Examples
