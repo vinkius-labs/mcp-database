@@ -14,13 +14,13 @@ This MCP server provides precise financial tools to evaluate investment quality 
 
 
 ## Available Tools (3)
+- **get_market_benchmark**: g., Fed Funds, ECB, or Selic) for USA, Europe, or Brazil markets.
+
+Retrieves the current risk-free rate for a selected geographic market
 - **calculate_asset_metrics**: g., [0.01, -0.02, 0.05]) and the market context to calculate risk-improved performance metrics.
 
 Calculates Sharpe, Sortino, and Calmar ratios for a single series of periodic returns
 - **calculate_portfolio_metrics**: Calculates aggregated performance metrics for a collection of assets with specific weightings
-- **get_market_benchmark**: g., Fed Funds, ECB, or Selic) for USA, Europe, or Brazil markets.
-
-Retrieves the current risk-free rate for a selected geographic market
 
 
 ## 💬 Prompt Examples

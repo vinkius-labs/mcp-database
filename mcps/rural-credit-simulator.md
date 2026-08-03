@@ -14,9 +14,9 @@ The Rural Credit Simulator is a specialized financial modeling tool designed to 
 
 
 ## Available Tools (3)
-- **compare_credit_options**: Compare different credit programs for a single loan request
 - **get_available_programs**: Retrieve a list of all supported agricultural credit programs
 - **simulate_repayment_plan**: Simulate a loan repayment plan
+- **compare_credit_options**: Compare different credit programs for a single loan request
 
 
 ## 💬 Prompt Examples

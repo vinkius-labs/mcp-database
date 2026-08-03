@@ -10,7 +10,7 @@
 Estimate pet longevity and identify life stages based on species, breed, and size.
 
 ## Description
-The Pet Lifespan Estimator provides biological insights into a pet's expected lifespan. By using tools like `estimate_lifespan`, you can determine the minimum, maximum, and average age for specific breeds. You can also use `verify_breed_validity` to check if a breed is supported or `list_breeds_by_species` to discover available breeds within a species. The tool calculates life stages such as juvenile, adult, and senior based on the pet's current age.
+The Pet Lifespan Estimator provides biological insights into a pet's expected lifespan. By using tools like `estimate_lifespan`, you can determine the minimum, maximum, and average age for specific breeds. You can also use `verify_breed_validity` to check if a breed is supported or `list_breeds_<0xE2><0x80><0x8A>by_species` to discover available breeds within a species. The tool calculates life stages such as juvenile, adult, and senior based on the pet's current age.
 
 
 ## Available Tools (3)

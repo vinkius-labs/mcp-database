@@ -14,11 +14,11 @@ The BPM Calculator is a precision utility for musicians. It allows you to conver
 
 
 ## Available Tools (3)
+- **calculate_all_durations**: Provides a complete breakdown of all supported note durations and their corresponding frequencies for a specific BPM
 - **get_tempo_classification**: g., "Moderato").
 
 Translates a numerical BPM value into its descriptive musical terminology
 - **list_supported_subdivisions**: Returns a registry of all note types supported by the calculator
-- **calculate_all_durations**: Provides a complete breakdown of all supported note durations and their corresponding frequencies for a specific BPM
 
 
 ## 💬 Prompt Examples

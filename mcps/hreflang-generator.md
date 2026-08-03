@@ -10,7 +10,7 @@
 Generate and validate SEO-compliant HTML hreflang tags and XML sitemap entries for multi-regional websites.
 
 ## Description
-The Hreflang Generator is a specialized utility designed to manage internationalized SEO. It automates the creation of HTML `` tags and XML sitemap entries, ensuring that every URL in your regional cluster maintains perfect reciprocity and correctly identifies an x-default version. Use `generate_html_tags` to inject tags into your ``, `generate_sitemap_entries` for your XML sitemaps, and `validate_hreflang_integrity` to audit your existing implementation for broken links or missing language pairings.
+The Hreflang Generator is a specialized utility designed to manage internationalized SEO. It automates the creation of HTML `<link>` tags and XML sitemap entries, ensuring that every URL in your regional cluster maintains perfect reciprocity and correctly identifies an x-default version. Use `generate_html_tags` to inject tags into your `<head>`, `generate_sitemap_entries` for your XML sitemaps, and `validate_hreflang_integrity` to audit your existing implementation for broken links or missing language pairings.
 
 
 ## Available Tools (3)

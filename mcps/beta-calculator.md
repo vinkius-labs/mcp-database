@@ -16,8 +16,8 @@ The Beta Calculator is a specialized financial engine designed to quantify syste
 ## Available Tools (4)
 - **calculate_jensen_alpha**: Identify if an asset has generated abnormal returns above its risk-adjusted expectation
 - **classify_asset_risk**: Provide a human-readable risk profile based on the asset's market sensitivity
-- **get_beta_coefficient**: Determine the sensitivity of an asset's volatility relative to a selected benchmark
 - **get_regression_goodness_of_fit**: Assess how reliably the benchmark can be used to predict the asset's behavior
+- **get_beta_coefficient**: Determine the sensitivity of an asset's volatility relative to a selected benchmark
 
 
 ## 💬 Prompt Examples

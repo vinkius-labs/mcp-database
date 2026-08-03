@@ -15,8 +15,8 @@ The Recovery Readiness Score engine provides a data-driven approach to training 
 
 ## Available Tools (3)
 - **calculate_readiness_score**: Calculate training readiness score and intensity
-- **get_soreness_impact_analysis**: Analyze muscle group soreness impact
 - **validate_recovery_metrics**: Validate recovery metrics
+- **get_soreness_impact_analysis**: Analyze muscle group soreness impact
 
 
 ## 💬 Prompt Examples

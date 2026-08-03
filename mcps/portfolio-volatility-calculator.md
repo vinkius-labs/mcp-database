@@ -14,9 +14,9 @@ This MCP server provides specialized tools for financial risk analysis. Use `get
 
 
 ## Available Tools (3)
-- **analyze_portfolio_risk**: Calculates aggregate portfolio risk and identifies the primary drivers of risk and diversification
 - **get_asset_volatilities**: Calculates the standalone volatility for every individual asset provided in the dataset
 - **get_covariance_matrix**: Generates a matrix showing the covariance between every possible pair of amounts in the portfolio
+- **analyze_portfolio_risk**: Calculates aggregate portfolio risk and identifies the primary drivers of risk and diversification
 
 
 ## 💬 Prompt Examples

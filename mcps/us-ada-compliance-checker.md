@@ -14,11 +14,11 @@ The US ADA Compliance Checker provides automated verification for critical archi
 
 
 ## Available Tools (5)
-- **check_restroom_maneuverability_compliance**: Checks if there is enough diameter within a restroom to allow for a wheelchair turn
 - **check_corridor_width_compliance**: Ensures corridors provide enough width for passage and passing
 - **check_door_clearance_compliance**: Verifies if a doorway provides enough width for unobstructed passage
-- **check_parking_access_compliance**: Validates that both the parking stall and the access aisle meet accessibility dimensions
 - **check_ramp_compliance**: Determines if a ramp's incline meets the maximum allowed steepness
+- **check_restroom_maneuverability_compliance**: Checks if there is enough diameter within a restroom to allow for a wheelchair turn
+- **check_parking_access_compliance**: Validates that both the parking stall and the access aisle meet accessibility dimensions
 
 
 ## 💬 Prompt Examples

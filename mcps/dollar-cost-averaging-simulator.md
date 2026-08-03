@@ -14,10 +14,10 @@ This MCP server provides a powerful financial simulation engine to evaluate Doll
 
 
 ## Available Tools (4)
+- **compare_strategies_performance**: Compare DCA vs Lump Sum strategy performance
+- **calculate_lump_sum_benchmark**: Calculate the performance of a single Lump Sum investment
 - **get_accumulation_history**: Get a chronological history of DCA accumulation
 - **calculate_dca_metrics**: Calculate current financial metrics for a DCA strategy
-- **calculate_lump_sum_benchmark**: Calculate the performance of a single Lump Sum investment
-- **compare_strategies_performance**: Compare DCA vs Lump Sum strategy performance
 
 
 ## 💬 Prompt Examples

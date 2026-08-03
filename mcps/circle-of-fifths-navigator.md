@@ -14,12 +14,12 @@ The Circle of Fifths Navigator is a specialized tool for musicians to explore mu
 
 
 ## Available Tools (4)
-- **get_enharmonic_mapping**: Answers "Is there a different way to write this key using different notation?"
+- **calculate_modulation_paths**: Answers "Which keys can I move to for a natural modulation, and how far away are they?"
 - **get_key_neighbors**: g., "G Major", "Eb Minor") and returns its dominant, subdominant, relative major, and relative minor.
 
 Answers "Who are the closest musical relatives and neighbors to this specific key?"
 - **get_key_signature_details**: Answers "What are the technical components of this key's scale and its available modes?"
-- **calculate_modulation_paths**: Answers "Which keys can I move to for a natural modulation, and how far away are they?"
+- **get_enharmonic_mapping**: Answers "Is there a different way to write this key using different notation?"
 
 
 ## 💬 Prompt Examples

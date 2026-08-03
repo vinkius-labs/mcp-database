@@ -14,10 +14,10 @@ The Polyrhythm Calculator is a precision engine designed to bridge the gap betwe
 
 
 ## Available Tools (4)
-- **get_grid_resolution**: Calculates the minimum subdivision grid resolution
-- **get_layer_attacks**: Calculates attack timestamps for each layer
 - **find_sync_point**: Finds the sync point for a polyrhythm
+- **get_layer_attacks**: Calculates attack timestamps for each layer
 - **get_rhythm_complexity**: Determines the complexity of a rhythm pattern
+- **get_grid_resolution**: Calculates the minimum subdivision grid resolution
 
 
 ## 💬 Prompt Examples

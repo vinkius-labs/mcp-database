@@ -14,13 +14,13 @@ The Relative & Parallel Key Finder is a powerful music theory utility that conne
 
 
 ## Available Tools (3)
-- **find_key_relationships**: Returns relative, parallel, antiparallel, homonymous, and third-distance keys.
-
-Provides a complete set of relations for a given key
 - **get_signature_details**: Returns accidental count, type (sharps/flats/none), and mode.
 
 Describes the technical composition of a key's signature
 - **lookup_modulation_guide**: Provides a comprehensive reference table of all key signatures
+- **find_key_relationships**: Returns relative, parallel, antiparallel, homonymous, and third-distance keys.
+
+Provides a complete set of relations for a given key
 
 
 ## 💬 Prompt Examples

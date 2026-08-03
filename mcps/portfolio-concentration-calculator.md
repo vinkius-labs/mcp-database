@@ -15,8 +15,8 @@ This MCP server provides a specialized engine for analyzing portfolio diversific
 
 ## Available Tools (3)
 - **calculate_concentration_metrics**: Calculates HHI and concentration metrics
-- **get_diversification_recommendation**: Gets diversification recommendations
 - **validate_portfolio_data**: Validates the input portfolio data
+- **get_diversification_recommendation**: Gets diversification recommendations
 
 
 ## 💬 Prompt Examples

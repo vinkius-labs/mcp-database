@@ -15,11 +15,11 @@ The Groove Quantize Calculator is an essential tool for music producers working 
 
 ## Available Tools (4)
 - **get_latency_recommendation**: Get recommended latency buffer based on BPM
+- **calculate_swing_offset**: Calculate millisecond displacement for swing
 - **calculate_note_durations**: g., "1/4", "1/8") to get millisecond values.
 
 Calculate standard, dotted, and triplet durations for a subdivision
 - **get_complete_rhythmic_map**: Generate a full rhythmic grid map
-- **calculate_swing_offset**: Calculate millisecond displacement for swing
 
 
 ## 💬 Prompt Examples

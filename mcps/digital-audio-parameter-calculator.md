@@ -14,11 +14,11 @@ This MCP server provides essential tools for analyzing digital audio configurati
 
 
 ## Available Tools (3)
+- **query_storage_impact**: Estimate the bandwidth and storage consumption for an audio project
 - **query_audio_physics**: Identify frequency limits and signal range of a specific digital audio configuration
 - **query_industry_presets**: g., CD, Streaming, Cinema) and returns standard settings.
 
 Retrieve recommended audio settings for specific professional applications
-- **query_storage_impact**: Estimate the bandwidth and storage consumption for an audio project
 
 
 ## 💬 Prompt Examples
