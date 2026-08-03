@@ -14,18 +14,6 @@ Empower your AI agents with Junip's scalable product review platform. This MCP s
 
 
 ## Available Tools (10)
-- **get_account**: Use to verify account identity and access levels.
-
-Retrieves details about your Junip account
-- **get_product**: Essential for providing a summary of a product's performance within the store.
-
-Retrieves details for a specific product
-- **get_question**: Use this before crafting an official response.
-
-Retrieves details for a specific question
-- **get_review**: Returns metadata, custom question responses, and photo/video links (if applicable). Use this when analyzing a specific customer testimonial.
-
-Retrieves details for a specific review
 - **list_answers**: Use this to audit response quality and ensure all customer queries are being addressed correctly.
 
 Lists all answers to questions
@@ -44,6 +32,18 @@ Lists all product reviews
 - **list_themes**: Useful for auditing the visual presentation of reviews on the storefront.
 
 Lists all review display themes
+- **get_account**: Use to verify account identity and access levels.
+
+Retrieves details about your Junip account
+- **get_product**: Essential for providing a summary of a product's performance within the store.
+
+Retrieves details for a specific product
+- **get_question**: Use this before crafting an official response.
+
+Retrieves details for a specific question
+- **get_review**: Returns metadata, custom question responses, and photo/video links (if applicable). Use this when analyzing a specific customer testimonial.
+
+Retrieves details for a specific review
 
 
 ## 💬 Prompt Examples

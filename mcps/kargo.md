@@ -35,10 +35,10 @@ Connect your **Kargo** logistics account to your AI agent and optimize your supp
 
 
 ## Available Tools (10)
-- **get_carrier_info**: Get carrier contact info
-- **get_device_status**: Get specific device status
 - **get_order**: Get specific order details
 - **get_shipment**: Get specific shipment details
+- **get_carrier_info**: Get carrier contact info
+- **get_device_status**: Get specific device status
 - **update_logistics**: Sync data to Kargo Unified Endpoint
 - **list_facilities**: List all business facilities
 - **list_orders**: List facility orders

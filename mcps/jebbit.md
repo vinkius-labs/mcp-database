@@ -17,6 +17,12 @@ Empower your AI agents with Jebbit's interactive experience platform. This MCP s
 - **get_account**: Use to verify account status.
 
 Retrieves account details
+- **list_users**: Useful for account auditing and permission checks.
+
+Lists all platform users
+- **list_webhooks**: Useful for auditing integrations.
+
+Lists all configured webhooks
 - **list_attributes**: g., "favorite_color", "purchase_intent") that have been captured across experiences. Essential for understanding what consumer insights are available.
 
 Lists all consumer attributes captured
@@ -38,12 +44,6 @@ Lists all recent reporting jobs
 - **list_segments**: Useful for identifying high-value cohorts for targeted marketing.
 
 Lists all audience segments
-- **list_users**: Useful for account auditing and permission checks.
-
-Lists all platform users
-- **list_webhooks**: Useful for auditing integrations.
-
-Lists all configured webhooks
 
 
 ## 💬 Prompt Examples

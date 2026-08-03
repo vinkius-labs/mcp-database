@@ -34,15 +34,18 @@ Connect your **Knack** application to any AI agent and take full control of your
 
 
 ## Available Tools (10)
+- **list_objects**: This is the first step to understand the database structure and find the "Object Key" needed for record operations.
+
+List all objects in the Knack application
+- **get_object_schema**: Returns metadata including the object name, key, and high-level structure. Use this to verify you are working with the correct database table.
+
+Get the schema of a specific Knack object
 - **list_records**: You must provide the object_key. Use this to browse the actual data stored in your database.
 
 List records for a specific Knack object
 - **get_record**: Requires both the object_key and the record_id. Use this for detailed auditing of a specific entry.
 
 Get a specific record by ID
-- **create_record**: You must provide the data as a JSON string where keys are the field keys (e.g., field_1). Ensure you have checked the object schema first to know which fields are required.
-
-Create a new record in a Knack object
 - **update_record**: Provide only the fields you wish to change in the JSON string data. This is a partial update.
 
 Update an existing record in a Knack object
@@ -58,12 +61,9 @@ Search for records using filters
 - **list_account_applications**: Use this to verify access or discover application IDs.
 
 List all applications in the account
-- **list_objects**: This is the first step to understand the database structure and find the "Object Key" needed for record operations.
+- **create_record**: You must provide the data as a JSON string where keys are the field keys (e.g., field_1). Ensure you have checked the object schema first to know which fields are required.
 
-List all objects in the Knack application
-- **get_object_schema**: Returns metadata including the object name, key, and high-level structure. Use this to verify you are working with the correct database table.
-
-Get the schema of a specific Knack object
+Create a new record in a Knack object
 
 
 ## 💬 Prompt Examples

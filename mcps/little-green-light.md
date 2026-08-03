@@ -35,6 +35,7 @@ Connect your **Little Green Light** account to any AI agent to automate your don
 
 ## Available Tools (9)
 - **list_fundraising_appeals**: List active fundraising appeals
+- **list_donation_gifts**: List recorded gifts and donations
 - **list_fundraising_campaigns**: List fundraising campaigns
 - **list_donor_constituents**: List donor constituents
 - **create_new_donor**: Requires first_name, last_name, or org_name.
@@ -46,7 +47,6 @@ Record a new donation gift
 - **list_organizational_funds**: List available organizational funds
 - **get_donor_details**: Get details for a specific constituent
 - **get_gift_details**: Get details for a specific gift
-- **list_donation_gifts**: List recorded gifts and donations
 
 
 ## 💬 Prompt Examples

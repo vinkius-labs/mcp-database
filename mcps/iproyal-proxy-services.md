@@ -35,9 +35,6 @@ Connect your **IPRoyal** account to any AI agent and take full control of your g
 
 
 ## Available Tools (10)
-- **add_whitelist_ip**: This is highly recommended for securely authenticating headless scrapers or servers where you do not want to expose proxy credentials in source code.
-
-Authorize a new IP for IPRoyal proxy access
 - **get_availability**: Useful to dynamically determine if a target region has sufficient IPs before initiating a geo-targeted crawl. By default targets "residential".
 
 Check proxy IP availability across different countries
@@ -62,6 +59,9 @@ Helper to generate a dynamic geo-targeted proxy string
 - **remove_whitelist_ip**: Required for security hygiene when scraping servers are decommissioned or IP addresses change.
 
 Revoke an IP from IPRoyal proxy access
+- **add_whitelist_ip**: This is highly recommended for securely authenticating headless scrapers or servers where you do not want to expose proxy credentials in source code.
+
+Authorize a new IP for IPRoyal proxy access
 - **get_traffic**: Residential proxies are billed by traffic, so regular monitoring with this endpoint prevents unexpected depletion of funds.
 
 Get precise proxy traffic consumption statistics for an order

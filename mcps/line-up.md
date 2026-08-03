@@ -35,10 +35,6 @@ Connect your **Line-Up** account to any AI agent to automate your event ticketin
 
 
 ## Available Tools (10)
-- **create_ticket_reservation**: Requires a JSON body.
-
-Reserve tickets temporarily
-- **list_ticket_customers**: List all customers in the database (Admin)
 - **list_available_events**: List all events available for booking
 - **get_customer_profile**: Get details for a specific customer
 - **get_event_details**: Get details for a specific event
@@ -49,6 +45,10 @@ Reserve tickets temporarily
 - **confirm_ticket_order**: Requires a JSON body.
 
 Finalize a booking and create an order
+- **create_ticket_reservation**: Requires a JSON body.
+
+Reserve tickets temporarily
+- **list_ticket_customers**: List all customers in the database (Admin)
 
 
 ## 💬 Prompt Examples

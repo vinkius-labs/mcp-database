@@ -14,6 +14,9 @@ Empower your AI agents with JobScore's comprehensive applicant tracking system. 
 
 
 ## Available Tools (10)
+- **list_sources**: g., "LinkedIn", "Referral", "Job Board") from which candidates are originating. Essential for analyzing the effectiveness of hiring channels.
+
+Lists all candidate sources
 - **get_candidate**: Returns contact history, resume highlights (if available), and current application status. Use this before an interview or when evaluating an applicant.
 
 Retrieves details for a specific candidate
@@ -38,9 +41,6 @@ Lists all jobs in JobScore
 - **list_locations**: Useful for understanding the geographical scope of hiring efforts.
 
 Lists all office locations
-- **list_sources**: g., "LinkedIn", "Referral", "Job Board") from which candidates are originating. Essential for analyzing the effectiveness of hiring channels.
-
-Lists all candidate sources
 - **list_users**: Useful for identifying team members and their roles.
 
 Lists all users in the account

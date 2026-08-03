@@ -39,14 +39,14 @@ Connect your **Mail-in-a-Box** instance to any AI agent to automate your private
 - **delete_mail_alias**: Remove a mail alias
 - **delete_mail_user**: Remove a mail user
 - **update_user_password**: Change the password for a mail user
+- **create_mail_user**: Requires a full email address and a password.
+
+Add a new mail user (mailbox)
 - **get_system_status**: Check the status of the Mail-in-a-Box system
 - **create_or_update_alias**: forwards_to should be a comma-separated list of emails.
 
 Add or update a mail alias
 - **list_mail_users**: List all mail users on the server
-- **create_mail_user**: Requires a full email address and a password.
-
-Add a new mail user (mailbox)
 
 
 ## 💬 Prompt Examples

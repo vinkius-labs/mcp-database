@@ -7,23 +7,44 @@
 
 **Category:** [human-resources](../categories/human-resources.md)
 
-Manage learners, courses, and results via Innform LMS API.
+Train your team with an LMS that creates courses from your content, tracks completion, and gamifies the learning experience.
 
 ## Description
-Empower your AI agents to manage your training platform with Innform. This MCP server allows you to list learners, track course completion, manage learning pathways, and view results directly through the Innform API. Ideal for automating corporate training and employee development.
+Connect your **Innform** training portal to any AI agent and take full control of your Learning Management System (LMS) and employee compliance workflows through natural conversation.
+
+### What you can do
+
+- **User Lifecycle Orchestration** — List all learners and admins, retrieve detailed high-fidelity profile metadata, and invite new users programmatically
+- **Assignment Intelligence** — Programmatically monitor completed and overdue training assignments to maintain a perfectly coordinated compliance overview
+- **Training Group Architecture** — Access your complete directory of learner groups and their properties to oversee your organizational training structure
+- **Access Control Management** — Programmatically freeze or unfreeze learner accounts to manage platform access dynamically based on organizational needs
+- **Operational Monitoring** — Verify API connectivity and monitor training progress directly through your agent for instant performance reporting
+
+### How it works
+
+1. Subscribe to this server
+2. Retrieve your **API Key** from your Innform dashboard (Account Settings > Integrations)
+3. Start orchestrating your training ecosystem from Claude, Cursor, or any MCP client
+
+No more manual checking of individual progress bars or digging through CSV reports. Your AI acts as your dedicated training coordinator and compliance architect.
+
+### Who is this for?
+
+- **L&D Managers** — instantly retrieve training completion recaps and manage user access using natural language commands
+- **Compliance Officers** — monitor overdue assignments and verify team progress without leaving your workspace
+- **HR Operations** — automate the onboarding of new learners into specific groups through simple AI queries
 
 
-## Available Tools (10)
-- **get_learner**: Retrieves details for a specific learner
-- **get_me**: Gets current authenticated user info
-- **list_courses**: Lists all courses
-- **list_departments**: Lists all departments
-- **list_learners**: Lists all learners in Innform
-- **list_locations**: Lists all organization locations
-- **list_modules**: Lists all training modules
-- **list_pathways**: Lists all learning pathways
-- **list_results**: Lists learner assessment and course results
-- **list_tags**: Lists all defined tags
+## Available Tools (9)
+- **freeze_user**: Freeze a user account
+- **get_user_details**: Get details for a specific user
+- **invite_user**: Invite a new learner
+- **list_completed_assignments**: List completed training assignments
+- **list_groups**: List learner groups
+- **list_overdue_assignments**: List overdue training assignments
+- **list_users**: List Innform users
+- **unfreeze_user**: Unfreeze a user account
+- **update_user**: Update an existing user
 
 
 ## 💬 Prompt Examples
@@ -31,38 +52,38 @@ Empower your AI agents to manage your training platform with Innform. This MCP s
 Here are some examples of how you can interact with the **Innform** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "List all active learners in my Innform account."
+> "List all active learners in my Innform portal."
 
 **🤖 AI Agent:**
-> I'll fetch the list of your active learners.
+> I've retrieved your learners. You currently have 50 active users, including 'Jane Smith' and 'John Doe'. Would you like the detailed high-fidelity metadata for any of them?
 
 ---
 
 **👤 You:**
-> "Show me the results for 'Cybersecurity Awareness' course."
+> "Show me all overdue training assignments for the Engineering team."
 
 **🤖 AI Agent:**
-> I'll retrieve the learner results for that specific course.
+> Accessing compliance data... I found 5 overdue assignments in Engineering, including 'Security 101'. I've retrieved the high-fidelity overdue dates for your review. Need help notifying these users?
 
 ---
 
 **👤 You:**
-> "Check for any new learning pathways."
+> "Freeze account for learner ID 'user_123' immediately."
 
 **🤖 AI Agent:**
-> I'll look up the list of available learning pathways in Innform.
+> Access orchestrated! I've successfully frozen the account for user_123. They will no longer be able to access the training portal until unfrozen. Need help managing other account statuses?
 
 
 ## ❓ FAQ
 
-**Q: How do I get Innform API credentials?**
-You can generate an API key in your Innform account under Account Settings > API. Ensure you have the necessary permissions.
+**Q: How do I find my Innform API Key?**
+Log in to your account, navigate to **Account Settings** > **Integrations**, and copy your unique API Key from the access section.
 
-**Q: Can I see learner results?**
-Yes, the list_results tool provides access to assessment and course completion data for your learners.
+**Q: Can I freeze a user account via AI?**
+Yes! The `freeze_user` tool allows your agent to temporarily disable platform access for a specific learner programmatically.
 
-**Q: Are learning pathways supported?**
-Yes, you can list all defined learning pathways using the list_pathways tool.
+**Q: How do I check for overdue assignments?**
+Use the `list_overdue_assignments` tool to retrieve a comprehensive list of all training items that have passed their high-fidelity deadlines.
 
 
 ## Installation & Usage

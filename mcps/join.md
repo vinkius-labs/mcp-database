@@ -14,12 +14,6 @@ Empower your AI agents with JOIN's modern recruiting platform. This MCP server a
 
 
 ## Available Tools (10)
-- **get_application**: Returns answers to form questions, internal notes, and application status. Use when evaluating a specific applicant or moving them through the pipeline.
-
-Retrieves details for a specific application
-- **get_candidate**: Use this for detailed candidate vetting and interview preparation.
-
-Retrieves details for a specific candidate
 - **get_job**: Returns descriptions, requirements, and internal metadata. Use this when the user needs to analyze the specifics of a particular role or prepare content related to it.
 
 Retrieves details for a specific job
@@ -38,6 +32,12 @@ Lists all organization departments
 - **list_jobs**: Returns job titles, IDs, and current status. Use this as the primary entry point to identify specific jobs or to provide an overview of the current hiring pipeline.
 
 Lists all job postings in JOIN
+- **get_application**: Returns answers to form questions, internal notes, and application status. Use when evaluating a specific applicant or moving them through the pipeline.
+
+Retrieves details for a specific application
+- **get_candidate**: Use this for detailed candidate vetting and interview preparation.
+
+Retrieves details for a specific candidate
 - **list_locations**: Use this when the user asks for jobs in specific regions or needs to audit location-based recruiting data.
 
 Lists all job locations

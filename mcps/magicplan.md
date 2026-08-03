@@ -35,16 +35,16 @@ Connect your **Magicplan** workspace to any AI agent to automate your architectu
 
 
 ## Available Tools (10)
-- **list_available_forms**: List all data collection forms (checklists)
-- **get_estimate_details**: Get full financial breakdown for an estimate
-- **get_project_floor_plan**: Get full spatial data for a project
-- **get_project_details**: Get metadata for a specific project
-- **get_plan_form_data**: Retrieve forms attached to a specific plan
 - **get_plan_measurements**: Get numeric measurements for a plan
 - **list_magicplan_projects**: List all floor plan projects
 - **list_workspace_users**: List all users in the Magicplan workspace
 - **get_workspace_info**: Get configuration for the current workspace
 - **list_project_estimates**: List all financial estimates for a project
+- **list_available_forms**: List all data collection forms (checklists)
+- **get_estimate_details**: Get full financial breakdown for an estimate
+- **get_project_floor_plan**: Get full spatial data for a project
+- **get_project_details**: Get metadata for a specific project
+- **get_plan_form_data**: Retrieve forms attached to a specific plan
 
 
 ## 💬 Prompt Examples
