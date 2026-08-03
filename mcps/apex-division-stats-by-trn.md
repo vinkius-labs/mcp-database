@@ -37,15 +37,15 @@ Transform your AI agent into a professional esports analyst with **Apex & Divisi
 
 
 ## Available Tools (9)
-- **get_apex_leaderboard**: ) on the specified platform.
-
-Get global Apex Legends rankings by stat category
 - **get_apex_legend_breakdown**: ) — kills, damage, wins per legend. Essential for identifying main legend and playstyle.
 
 Get per-legend performance breakdown for an Apex player
 - **get_apex_match_history**: Useful for tracking recent performance trends.
 
 Get recent match sessions for an Apex player
+- **get_apex_leaderboard**: ) on the specified platform.
+
+Get globalThis Apex Legends rankings by stat category
 - **get_apex_game_metadata**: Useful as reference data.
 
 Get current Apex Legends game metadata

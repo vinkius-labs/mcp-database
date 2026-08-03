@@ -38,9 +38,6 @@ Connect to **7digital** and access a global music catalog through natural conver
 
 
 ## Available Tools (11)
-- **add_to_basket**: Returns the updated basket contents with prices. Use the release ID from search_release results.
-
-Add a release to your 7digital shopping basket
 - **get_artist_details**: Use the artist ID from search_artist results.
 
 Get detailed info for a specific artist
@@ -71,6 +68,9 @@ Search for album releases by title or artist
 - **search_track**: Returns track titles, artists, durations, release info and explicit content flags.
 
 Search for individual tracks by title or artist
+- **add_to_basket**: Returns the updated basket contents with prices. Use the release ID from search_release results.
+
+Add a release to your 7digital shopping basket
 
 
 ## 💬 Prompt Examples

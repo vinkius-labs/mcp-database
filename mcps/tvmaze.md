@@ -41,6 +41,18 @@ No API key required — completely free with CC BY-SA license.
 - **get_schedule**: Each entry includes the show name, episode name, airtime, network and episode info. Optionally set country (ISO 3166-1 alpha-2 code, e.g. "US", "GB", "BR") and date (YYYY-MM-DD, default today).
 
 Get TV schedule for a specific date and country
+- **single_search**: Returns exactly one result or none. Includes embedded details like episodes, cast and network info. Use this when you want the best match for a specific show name.
+
+Search for a single TV show with full details
+- **get_episode**: Returns the episode name, season and number, air date, summary, runtime, image URL and show link.
+
+Get detailed info for a specific episode by ID
+- **get_full_schedule**: Returns all known future episodes across all shows and networks. This is a large response (multiple MB). Optionally filter by country code.
+
+Get the full future TV schedule
+- **get_person**: ) by their numeric ID. Returns the person's name, birthday, birthplace, gender, photo, bio and external IDs (IMDb, Wikipedia, TVRage).
+
+Get detailed info for a specific person
 - **get_show**: Returns the show name, genres, network, premiered date, ended date, rating, image URL, summary, runtime, status (running, ended, in development) and external IDs (IMDb, TheTVDB, TVRage).
 
 Get detailed info for a specific TV show by ID
@@ -53,9 +65,6 @@ Get the crew for a TV show
 - **get_show_episodes**: Each episode includes the season and episode number, air date, name, summary, runtime and image URL. By default, special episodes are excluded; set specials=true to include them.
 
 Get all episodes for a TV show
-- **get_show_images**: Each image includes its type, resolution, and URL.
-
-Get images for a TV show
 - **get_show_seasons**: Each season includes its number, name, episode order, premiere date, network and image URL.
 
 Get all seasons for a TV show
@@ -68,21 +77,12 @@ Search for actors and crew by name
 - **search_shows**: Uses fuzzy matching with tolerance for typos. Returns multiple results ranked by relevance. Each result includes the show's name, genres, network, premiered year, rating, image URL and summary. Use single_search for exact single match.
 
 Search for TV shows by name
-- **get_episode**: Returns the episode name, season and number, air date, summary, runtime, image URL and show link.
+- **get_show_images**: Each image includes its type, resolution, and URL.
 
-Get detailed info for a specific episode by ID
-- **single_search**: Returns exactly one result or none. Includes embedded details like episodes, cast and network info. Use this when you want the best match for a specific show name.
-
-Search for a single TV show with full details
+Get images for a TV show
 - **get_person_cast_credits**: Each credit includes the show name, character name, episode count and whether the role was main or recurring.
 
 Get all cast credits for a person
-- **get_full_schedule**: Returns all known future episodes across all shows and networks. This is a large response (multiple MB). Optionally filter by country code.
-
-Get the full future TV schedule
-- **get_person**: ) by their numeric ID. Returns the person's name, birthday, birthplace, gender, photo, bio and external IDs (IMDb, Wikipedia, TVRage).
-
-Get detailed info for a specific person
 
 
 ## 💬 Prompt Examples

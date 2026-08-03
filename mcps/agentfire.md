@@ -36,20 +36,20 @@ No more manual logging into WordPress or missing critical property inquiries. Yo
 
 
 ## Available Tools (10)
+- **check_agentfire_status**: Verify AgentFire API connectivity
 - **create_lead**: Email is required.
 
 Create a new lead
-- **get_listing**: Get listing details
+- **get_lead**: Get lead details
 - **get_profile**: Get your AgentFire profile
 - **list_contacts**: List all contacts
 - **list_leads**: List all leads
 - **list_listings**: List all property listings
 - **search_listings**: Search property listings
+- **get_listing**: Get listing details
 - **update_lead**: Only provided fields are changed.
 
 Update a lead
-- **check_agentfire_status**: Verify AgentFire API connectivity
-- **get_lead**: Get lead details
 
 
 ## 💬 Prompt Examples

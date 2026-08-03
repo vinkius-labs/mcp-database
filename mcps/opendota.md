@@ -60,6 +60,9 @@ Get player profile and stats
 - **get_player_heroes**: Useful for analyzing a player's hero pool and identifying their best heroes.
 
 Get a player's performance stats by hero
+- **list_recent_matches**: Each match includes the match ID, start time, duration, radiant/dire team average MMR and winner. Returns up to 500 matches. Useful for browsing recent games and finding match IDs to explore.
+
+Get recent public matches
 - **get_player_matches**: Each match includes the match ID, hero played, result (win/loss), kills, deaths, assists, duration, game mode, lobby type, league and start time. Sorted by most recent first. Returns thousands of matches for active players.
 
 Get a player's match history
@@ -84,9 +87,6 @@ Get the list of all Dota 2 heroes
 - **list_leagues**: Each league includes its ID, name, tier (premium, professional, amateur), region, start/end dates and logo URL. Useful for discovering tournaments and filtering matches by league.
 
 Get the list of professional leagues
-- **list_recent_matches**: Each match includes the match ID, start time, duration, radiant/dire team average MMR and winner. Returns up to 500 matches. Useful for browsing recent games and finding match IDs to explore.
-
-Get recent public matches
 - **list_teams**: Each team includes its ID, name, tag, logo URL, rating, number of wins/losses and last match time. Sorted by team rating. Useful for discovering pro teams and their IDs.
 
 Get the list of professional teams

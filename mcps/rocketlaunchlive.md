@@ -38,15 +38,6 @@ Connect to **RocketLaunch.Live** and explore the world's curated rocket launch d
 
 
 ## Available Tools (9)
-- **get_tags**: Returns tag text and IDs for filtering launches.
-
-Search launch tags
-- **get_vehicles**: Returns vehicle names, descriptions, families and manufacturers.
-
-Search launch vehicles (rockets)
-- **get_companies**: Returns company names, countries, logos and active status. Filter by name or country code.
-
-Search launch providers and manufacturers
 - **get_launch**: Returns vehicle, provider, location, pad, mission, launch time, status and webcast links.
 
 Get a specific launch by ID
@@ -65,6 +56,15 @@ Search launch pads
 - **search_launches**: Live database for rocket launches. Supports free-text search, date range filtering, and filtering by location, provider, vehicle and tag. Returns launches with vehicle info, provider, launch site, mission details and status.
 
 Search rocket launches
+- **get_tags**: Returns tag text and IDs for filtering launches.
+
+Search launch tags
+- **get_vehicles**: Returns vehicle names, descriptions, families and manufacturers.
+
+Search launch vehicles (rockets)
+- **get_companies**: Returns company names, countries, logos and active status. Filter by name or country code.
+
+Search launch providers and manufacturers
 
 
 ## 💬 Prompt Examples

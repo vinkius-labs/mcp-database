@@ -38,9 +38,6 @@ No more manual toggling between CRM tabs or digging through paper policy files. 
 ## Available Tools (12)
 - **check_api_health**: Verify Berg System API status
 - **create_new_company**: Add a new business client
-- **create_new_customer**: Supports forceAdd to bypass duplicates.
-
-Add a new customer
 - **get_customer_details**: Get details for a customer
 - **get_sales_custom_fields**: Retrieve custom sales fields
 - **list_crm_companies**: List corporate clients
@@ -50,6 +47,9 @@ Add a new customer
 - **list_insurance_policies**: List active insurance policies
 - **list_sales_opportunities**: List sales records
 - **list_crm_tasks**: List active tasks and reminders
+- **create_new_customer**: Supports forceAdd to bypass duplicates.
+
+Add a new customer
 
 
 ## 💬 Prompt Examples
