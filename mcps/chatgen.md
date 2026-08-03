@@ -30,12 +30,12 @@ Connect your **ChatGen** account to any AI agent and simplify your conversationa
 - **create_bot**: Create a new chatbot
 - **delete_bot**: Delete a bot
 - **list_bots**: List all ChatGen bots
+- **list_teams**: List organizational teams
+- **update_bot**: Update an existing bot
 - **get_bot**: Get details for a specific bot
 - **get_lead_details**: Get details for a specific lead
 - **list_conversations**: List recent bot conversations
 - **list_leads**: List captured leads
-- **list_teams**: List organizational teams
-- **update_bot**: Update an existing bot
 
 
 ## 💬 Prompt Examples

@@ -30,8 +30,8 @@ This integration is perfect for founders, developers, and project managers who w
 
 
 ## Available Tools (9)
-- **add_category**: Add a new category to Amazing Marvin
 - **add_project**: Add a new project to Amazing Marvin
+- **add_category**: Add a new category to Amazing Marvin
 - **add_task**: You can optionally specify a parent category/project ID and a date (YYYY-MM-DD) for when the task is scheduled.
 
 Add a new task to Amazing Marvin

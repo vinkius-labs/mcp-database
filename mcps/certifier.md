@@ -35,17 +35,9 @@ Connect your **Certifier** account to any AI agent and manage your entire digita
 
 ## Available Tools (12)
 - **check_certifier_status**: Verify Certifier API connectivity
-- **create_credential**: Requires recipient name, email, and template ID.
-
-Create a new credential for a recipient
-- **get_credential**: Get full details of a specific credential
-- **get_design_template**: Get details of a specific design template
-- **get_credential_template**: Get details of a specific credential template
 - **issue_credential**: Once issued, it gets a verification URL and cannot revert.
 
 Issue a draft credential to make it official
-- **list_credentials**: List all issued credentials
-- **list_design_templates**: List all design templates
 - **list_credential_templates**: Use template IDs when creating new credentials.
 
 List all credential templates
@@ -54,6 +46,14 @@ List all credential templates
 - **update_credential**: Only draft credentials can be modified.
 
 Update an existing credential
+- **create_credential**: Requires recipient name, email, and template ID.
+
+Create a new credential for a recipient
+- **get_credential**: Get full details of a specific credential
+- **get_design_template**: Get details of a specific design template
+- **get_credential_template**: Get details of a specific credential template
+- **list_credentials**: List all issued credentials
+- **list_design_templates**: List all design templates
 
 
 ## 💬 Prompt Examples

@@ -32,14 +32,14 @@ Connect your AI agent to **Calenso** to natively manage appointment scheduling, 
 
 
 ## Available Tools (8)
-- **cancel_calenso_appointment**: Cancel an appointment
-- **create_calenso_customer**: Create a new customer
-- **get_calenso_appointment**: Get appointment details
-- **list_calenso_appointments**: List all appointments
 - **list_calenso_branches**: List branches/locations
 - **list_calenso_customers**: List all customers
 - **list_calenso_services**: List available services
 - **list_calenso_staff**: List staff members
+- **cancel_calenso_appointment**: Cancel an appointment
+- **get_calenso_appointment**: Get appointment details
+- **create_calenso_customer**: Create a new customer
+- **list_calenso_appointments**: List all appointments
 
 
 ## 💬 Prompt Examples

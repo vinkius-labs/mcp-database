@@ -14,18 +14,18 @@ The DottedSign MCP server empowers your AI agent to manage electronic signatures
 
 
 ## Available Tools (12)
+- **cancel_task**: Cancel an active signing task
+- **list_tasks**: List all signing tasks
+- **list_templates**: List all available templates
+- **create_task_from_template**: Create a new signing task from a template
 - **create_task**: Create a new signing task
 - **delete_task**: Delete a signing task
 - **get_audit_trail**: Get the audit trail for a specific task
 - **get_me**: Get information about the current user/token
-- **list_tasks**: List all signing tasks
-- **list_templates**: List all available templates
 - **list_users**: List all users in the account
 - **list_webhooks**: List all configured webhooks
 - **retrieve_task**: Get details of a specific signing task
 - **update_task**: Update an existing signing task
-- **cancel_task**: Cancel an active signing task
-- **create_task_from_template**: Create a new signing task from a template
 
 
 ## 💬 Prompt Examples

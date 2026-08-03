@@ -39,7 +39,6 @@ No more manual dragging into web tools for repeatable editing tasks. Your AI act
 - **create_execution**: Returns the execution ID.
 
 Start an image processing execution
-- **get_batch**: Get details of a specific batch
 - **get_execution**: Get details of a specific execution
 - **get_image**: Get details of a specific image
 - **get_organization**: Get organization details
@@ -49,6 +48,7 @@ Start an image processing execution
 - **list_executions**: List recent executions
 - **list_images**: List uploaded images
 - **list_workflows**: List all image processing workflows
+- **get_batch**: Get details of a specific batch
 
 
 ## 💬 Prompt Examples

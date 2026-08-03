@@ -14,18 +14,18 @@ The eSputnik MCP server allows your AI agent to orchestrate marketing campaigns 
 
 
 ## Available Tools (12)
+- **search_contacts**: Search for contacts by email or phone
+- **send_smart_send**: Trigger an omnichannel message send
 - **create_contact**: Create a new contact in eSputnik
 - **detach_from_group**: Remove contacts from a group
 - **get_account_info**: Retrieve account and organization metadata
 - **get_contact**: Retrieve details for a specific contact
 - **get_message_status**: Check the delivery status of a sent message
 - **list_contacts**: List all contacts in eSputnik
-- **list_groups**: List all contact groups/segments
-- **list_unsubscribed**: List unsubscribed email addresses
-- **search_contacts**: Search for contacts by email or phone
-- **send_smart_send**: Trigger an omnichannel message send
 - **trigger_event**: Generate a system event to trigger workflows
 - **attach_to_group**: Add contacts to a specific group
+- **list_groups**: List all contact groups/segments
+- **list_unsubscribed**: List unsubscribed email addresses
 
 
 ## 💬 Prompt Examples

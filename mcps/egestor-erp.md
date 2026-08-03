@@ -34,16 +34,16 @@ Connect your **eGestor** ERP account to any AI agent and manage your Brazilian s
 
 
 ## Available Tools (10)
+- **get_contact**: Get a specific contact
 - **get_sale**: Get a specific sale
 - **get_service**: Get a specific service
+- **list_services**: List all services
+- **get_product**: Get a specific product
+- **get_purchase**: Get a specific purchase
 - **list_contacts**: List all eGestor contacts
 - **list_products**: List all products
 - **list_purchases**: List all purchases
 - **list_sales**: List all sales
-- **list_services**: List all services
-- **get_contact**: Get a specific contact
-- **get_product**: Get a specific product
-- **get_purchase**: Get a specific purchase
 
 
 ## 💬 Prompt Examples

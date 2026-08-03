@@ -36,14 +36,14 @@ No more manual subscriber management or complex CSV exports in the dashboard. Yo
 
 
 ## Available Tools (11)
-- **create_list**: Create a new subscriber list
-- **delete_list**: Delete a subscriber list
-- **delete_subscriber**: Delete a subscriber from a list
-- **get_list_fields**: Get custom fields/tags for a list
 - **get_subscriber_details**: Get details for a specific subscriber
 - **list_all_lists**: List all subscriber lists
 - **unsubscribe_user**: Unsubscribe a user from a list
 - **update_list**: Update an existing subscriber list
+- **create_list**: Create a new subscriber list
+- **delete_list**: Delete a subscriber list
+- **delete_subscriber**: Delete a subscriber from a list
+- **get_list_fields**: Get custom fields/tags for a list
 - **update_subscriber**: Update an existing subscriber
 - **add_multiple_subscribers**: Input should be an array of subscriber objects.
 

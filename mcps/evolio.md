@@ -34,6 +34,10 @@ Connect your **Evolio** account to any AI agent and manage your law firm operati
 
 
 ## Available Tools (14)
+- **list_tasks**: List all tasks
+- **list_client_files**: List client files
+- **list_clients**: List clients
+- **list_tasks_by_case**: List tasks by case
 - **check_evolio_status**: Verify connectivity
 - **create_case**: Create a case
 - **create_task**: Create a task
@@ -44,10 +48,6 @@ Connect your **Evolio** account to any AI agent and manage your law firm operati
 - **list_cases_by_status**: List cases by status
 - **list_case_files**: List case files
 - **list_cases**: List cases
-- **list_client_files**: List client files
-- **list_clients**: List clients
-- **list_tasks_by_case**: List tasks by case
-- **list_tasks**: List all tasks
 
 
 ## 💬 Prompt Examples

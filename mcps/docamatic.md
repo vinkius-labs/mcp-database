@@ -40,6 +40,7 @@ No more manual document formatting or complex rendering pipelines. Your AI acts 
 - **generate_pdf_from_template**: g. invoice1, packing_slip1) with JSON data.
 
 Generate a PDF from a predefined template
+- **generate_pdf_from_html**: Convert HTML or URL to PDF
 - **list_generation_history**: List recently generated documents
 - **list_available_builtin_templates**: List common document templates
 - **merge_multiple_pdfs**: Combine several PDF files into one
@@ -47,7 +48,6 @@ Generate a PDF from a predefined template
 
 Capture a full-page website screenshot
 - **add_elements_to_pdf**: Draw text or images onto an existing PDF
-- **generate_pdf_from_html**: Convert HTML or URL to PDF
 
 
 ## 💬 Prompt Examples
