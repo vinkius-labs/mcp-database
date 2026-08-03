@@ -34,6 +34,13 @@ Connect **QuickChart** to your AI agent to transform raw data into professional 
 
 
 ## Available Tools (9)
+- **get_qr_url**: Construct a GET URL for a QR code image
+- **get_wordcloud_url**: Construct a GET URL for a word cloud image
+- **render_apex_chart**: Render an Apex Chart and return as base64 data URI
+- **render_chart_post**: js configurations that exceed URL length limits.
+
+Render a complex chart and return as base64 data URI
+- **render_google_chart**: Render a Google Chart and return as base64 data URI
 - **create_chart_short_url**: js configuration.
 
 Generate a permanent short URL for a chart
@@ -42,13 +49,6 @@ Generate a permanent short URL for a chart
 
 Construct a GET URL for a chart image
 - **get_graphviz_url**: Construct a GET URL for a GraphViz diagram
-- **get_qr_url**: Construct a GET URL for a QR code image
-- **get_wordcloud_url**: Construct a GET URL for a word cloud image
-- **render_apex_chart**: Render an Apex Chart and return as base64 data URI
-- **render_chart_post**: js configurations that exceed URL length limits.
-
-Render a complex chart and return as base64 data URI
-- **render_google_chart**: Render a Google Chart and return as base64 data URI
 
 
 ## 💬 Prompt Examples

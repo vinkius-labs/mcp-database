@@ -34,6 +34,20 @@ Connect to the **RubyGems** ecosystem to streamline your Ruby development workfl
 
 
 ## Available Tools (30)
+- **list_webhooks**: List registered webhooks
+- **push_gem**: Pushes a new gem version using base64 encoded binary data.
+
+Submit a built .gem file to RubyGems.org
+- **remove_gem_owner**: Remove an owner from a gem
+- **remove_webhook**: Remove a webhook
+- **get_reverse_dependencies**: List gems that depend on the specified gem
+- **search_gems**: org for gems matching the query. Results are paginated (30 per page).
+
+Search for active gems
+- **update_gem_owner**: Update an owner's role on a gem
+- **yank_gem**: Yanks a specific version of a gem.
+
+Remove a gem version from the index
 - **create_webhook**: Use * for gem_name to apply to all gems.
 
 Create a webhook
@@ -62,20 +76,6 @@ Get versions created within a specific timeframe
 - **list_my_gems**: Lists gems the user has push access to.
 
 List all gems owned by the authenticated user
-- **list_webhooks**: List registered webhooks
-- **push_gem**: Pushes a new gem version using base64 encoded binary data.
-
-Submit a built .gem file to RubyGems.org
-- **remove_gem_owner**: Remove an owner from a gem
-- **remove_webhook**: Remove a webhook
-- **get_reverse_dependencies**: List gems that depend on the specified gem
-- **search_gems**: org for gems matching the query. Results are paginated (30 per page).
-
-Search for active gems
-- **update_gem_owner**: Update an owner's role on a gem
-- **yank_gem**: Yanks a specific version of a gem.
-
-Remove a gem version from the index
 
 
 ## 💬 Prompt Examples

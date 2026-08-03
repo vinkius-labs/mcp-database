@@ -34,6 +34,8 @@ Connect your **SignRequest** account to any AI agent to automate your document s
 
 
 ## Available Tools (12)
+- **list_teams**: List teams
+- **list_templates**: List available templates
 - **create_document**: You can provide a file URL or a template UUID, along with signers.
 
 Create a new document in SignRequest
@@ -44,8 +46,6 @@ Create a new document in SignRequest
 - **get_signrequest**: Retrieve a specific SignRequest by UUID
 - **get_template**: Retrieve a specific template by UUID
 - **list_documents**: List SignRequest documents
-- **list_teams**: List teams
-- **list_templates**: List available templates
 - **list_users**: List users
 - **list_webhooks**: List registered webhooks
 

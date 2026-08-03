@@ -34,12 +34,12 @@ The **RandomDuck** MCP server connects your AI agent to the internet's favorite 
 
 
 ## Available Tools (7)
+- **get_random_img_url**: Get a random duck image URL directly
 - **get_http_duck**: g., 404, 200, 500).
 
 Get a duck representing an HTTP status code
 - **list_ducks**: List all available duck filenames
 - **get_quack**: Get a random duck (alias for random)
-- **get_random_img_url**: Get a random duck image URL directly
 - **get_random_duck**: Get a random duck image or GIF
 - **get_specific_duck**: Get a specific duck image by number
 - **upload_duck**: Upload a new duck image for review

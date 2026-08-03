@@ -34,7 +34,6 @@ Connect to **Reqres**, the industry-standard hosted REST-API, to simulate real-w
 
 
 ## Available Tools (25)
-- **agent_users**: Get paginated users with cursor pagination from Agent Sandbox
 - **create_app_record**: Create a user-scoped record in an app collection
 - **create_record**: Create a record in a project collection
 - **create_user**: Create a user (echoed) in Demo API
@@ -46,15 +45,16 @@ Connect to **Reqres**, the industry-standard hosted REST-API, to simulate real-w
 - **list_colors**: List resource colors (Pantone) from Demo API
 - **list_records**: List records in a project collection
 - **list_users**: List users (paginated) from Demo API
-- **login_demo**: Login with fixture users (returns token)
-- **patch_record**: Partial update a record in a project collection
-- **patch_user**: Partial update a user (echoed) in Demo API
 - **register_demo**: Register with fixture users (returns id/token)
 - **request_magic_link**: Request a magic link for App User login
 - **trigger_scenario**: Trigger a specific failure scenario in Agent Sandbox
 - **update_record**: Update a record (full replace) in a project collection
 - **update_user**: Update a user (echoed) in Demo API
 - **verify_magic_link**: Verify a magic link token to get a session token
+- **agent_users**: Get paginated users with cursor pagination from Agent Sandbox
+- **login_demo**: Login with fixture users (returns token)
+- **patch_record**: Partial update a record in a project collection
+- **patch_user**: Partial update a user (echoed) in Demo API
 - **agent_health**: Get Agent Sandbox health probe and rate-limit status
 - **agent_orders**: Get orders with relational data from Agent Sandbox
 - **agent_scenarios**: List available failure scenarios in Agent Sandbox

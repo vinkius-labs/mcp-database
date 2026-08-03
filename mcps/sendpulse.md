@@ -34,12 +34,10 @@ Connect your **SendPulse** account to any AI agent to streamline your email mark
 
 
 ## Available Tools (28)
-- **add_contacts**: Add contacts to an address book
-- **add_smtp_unsubscribe**: Add to SMTP unsubscribe list
 - **get_balance**: Get SendPulse balance details
+- **list_crm_contacts**: List CRM contacts
+- **list_crm_deals**: List CRM deals
 - **create_address_book**: Create a new address book
-- **create_campaign**: Create a new email campaign
-- **create_crm_contact**: Create a CRM contact
 - **create_crm_deal**: Create a CRM deal
 - **delete_address_book**: Delete an address book
 - **delete_contacts**: Delete contacts from an address book
@@ -49,10 +47,6 @@ Connect your **SendPulse** account to any AI agent to streamline your email mark
 - **get_smtp_email_details**: Get SMTP email details
 - **get_invited_users**: Get invited users list
 - **list_address_books**: List all address books (mailing lists)
-- **list_campaigns**: Get list of campaigns
-- **list_chatbots**: List chatbots
-- **list_crm_contacts**: List CRM contacts
-- **list_crm_deals**: List CRM deals
 - **list_crm_pipelines**: List CRM pipelines
 - **list_smtp_emails**: List sent SMTP emails
 - **list_smtp_unsubscribes**: Get SMTP unsubscribe list
@@ -61,6 +55,12 @@ Connect your **SendPulse** account to any AI agent to streamline your email mark
 - **send_smtp_email**: Send an email via SMTP
 - **unsubscribe_contact**: Unsubscribe contacts from an address book
 - **update_address_book**: Edit an existing address book
+- **add_contacts**: Add contacts to an address book
+- **add_smtp_unsubscribe**: Add to SMTP unsubscribe list
+- **create_campaign**: Create a new email campaign
+- **create_crm_contact**: Create a CRM contact
+- **list_campaigns**: Get list of campaigns
+- **list_chatbots**: List chatbots
 - **get_user_info**: ).
 
 Get SendPulse account info

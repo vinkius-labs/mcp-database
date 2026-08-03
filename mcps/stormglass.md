@@ -34,11 +34,11 @@ Connect the **Stormglass** API to your AI agent to access professional-grade env
 
 
 ## Available Tools (5)
-- **get_astronomy_point**: Fetch astronomy data for a specific location
-- **get_bio_point**: Fetch biological marine data for a specific location
 - **get_tide_extremes_point**: Fetch high and low tides for a specific location
 - **get_tide_sea_level_point**: Fetch sea level height at specific intervals
 - **get_weather_point**: Fetch weather data for a specific coordinate
+- **get_astronomy_point**: Fetch astronomy data for a specific location
+- **get_bio_point**: Fetch biological marine data for a specific location
 
 
 ## 💬 Prompt Examples

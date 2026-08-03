@@ -34,6 +34,17 @@ Connect your **Upstash QStash** account to any AI agent to orchestrate serverles
 
 
 ## Available Tools (38)
+- **resume_queue**: Resume a paused queue
+- **get_schedule**: Get details of a specific schedule
+- **list_flow_control_keys**: List all flow control keys
+- **list_url_groups**: List all URL Groups (Topics)
+- **remove_endpoints**: Remove endpoints from a URL Group
+- **reset_flow_control_rate**: Reset the rate limit for a flow control key
+- **resume_flow_control**: Resume a paused flow control key
+- **resume_schedule**: Resume a paused schedule
+- **retry_dlq_message**: Retry a message from the DLQ
+- **unpin_flow_control**: Unpin configuration for a flow control key
+- **upsert_queue**: Create or update a queue
 - **bulk_cancel_messages**: Cancel multiple messages based on filters
 - **cancel_message**: Stop a pending message from being delivered
 - **delete_dlq_message**: Delete a message from the DLQ
@@ -43,35 +54,24 @@ Connect your **Upstash QStash** account to any AI agent to orchestrate serverles
 - **enqueue_message**: Add a message to a specific queue for FIFO or controlled parallelism
 - **get_dlq_message**: Get details of a specific DLQ message
 - **get_flow_control_key**: Get details of a specific flow control key
-- **get_global_parallelism**: Get global parallelism configuration
+- **get_global_parallelism**: Get globalThis parallelism configuration
 - **get_keys**: Retrieve QStash signing keys
 - **get_message**: Retrieve details of a message currently in flight or being retried
 - **get_queue**: Get details of a specific queue
-- **get_schedule**: Get details of a specific schedule
 - **get_url_group**: Get details of a specific URL Group
 - **list_dlq**: List messages in the Dead Letter Queue (DLQ)
 - **list_logs**: Retrieve QStash logs/events
 - **list_queues**: List all queues
 - **list_schedules**: List all schedules
-- **list_url_groups**: List all URL Groups (Topics)
 - **pause_flow_control**: Pause a flow control key
 - **pause_queue**: Pause a queue
 - **pause_schedule**: Pause a schedule
 - **pin_flow_control**: Pin configuration for a flow control key
 - **publish_message**: Publish a message to a destination URL or URL Group
-- **remove_endpoints**: Remove endpoints from a URL Group
-- **reset_flow_control_rate**: Reset the rate limit for a flow control key
-- **resume_flow_control**: Resume a paused flow control key
-- **resume_queue**: Resume a paused queue
-- **resume_schedule**: Resume a paused schedule
-- **retry_dlq_message**: Retry a message from the DLQ
-- **unpin_flow_control**: Unpin configuration for a flow control key
-- **upsert_queue**: Create or update a queue
 - **upsert_url_group**: Create or update a URL Group (Topic)
 - **batch_messages**: Send multiple messages in a single request
 - **bulk_delete_dlq**: Delete all messages from the DLQ
 - **bulk_retry_dlq**: Retry all messages in the DLQ
-- **list_flow_control_keys**: List all flow control keys
 
 
 ## 💬 Prompt Examples

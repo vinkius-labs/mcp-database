@@ -35,7 +35,6 @@ Connect your **ShipEngine** account to any AI agent to streamline your entire sh
 
 
 ## Available Tools (13)
-- **add_funds**: Add funds to a carrier balance
 - **connect_carrier**: Connect a carrier account
 - **create_label_rate_shopper**: Create a label using the rate shopper
 - **create_label**: Create a shipping label
@@ -52,6 +51,7 @@ Create a new shipment
 
 Validate shipping addresses
 - **void_label**: Void a shipping label
+- **add_funds**: Add funds to a carrier balance
 
 
 ## 💬 Prompt Examples

@@ -34,12 +34,9 @@ Connect to **Scrollscan** and bring real-time Scroll L2 blockchain data into you
 
 
 ## Available Tools (33)
-- **verify_source_code**: Verify Source Code
 - **check_verify_status**: Check Source Code Verification Status
 - **get_account_balance_multi**: Get Ether Balance for Multiple Addresses
 - **get_account_balance**: Get Ether Balance for a Single Address
-- **proxy_get_storage_at**: eth_getStorageAt
-- **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
 - **get_block_number_by_time**: Get Block Number by Timestamp
 - **get_block_reward**: Get Block Rewards by BlockNo
 - **get_contract_abi**: Get Contract ABI for Verified Source Codes
@@ -57,6 +54,12 @@ Connect to **Scrollscan** and bring real-time Scroll L2 blockchain data into you
 - **get_normal_tx_list**: Get Normal Transactions By Address
 - **get_token_balance**: Get ERC20-Token Balance for Address by ContractAddress
 - **get_token_supply**: Get ERC20-Token TotalSupply by ContractAddress
+- **proxy_get_code**: eth_getCode
+- **proxy_get_storage_at**: eth_getStorageAt
+- **proxy_get_transaction_by_hash**: eth_getTransactionByHash
+- **proxy_get_transaction_receipt**: eth_getTransactionReceipt
+- **verify_source_code**: Verify Source Code
+- **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
 - **get_tx_receipt_status**: Check Check Transaction Receipt Status
 - **get_tx_status**: Check Transaction Receipt Status
 - **proxy_block_number**: eth_blockNumber
@@ -64,9 +67,6 @@ Connect to **Scrollscan** and bring real-time Scroll L2 blockchain data into you
 - **proxy_estimate_gas**: eth_estimateGas
 - **proxy_gas_price**: eth_gasPrice
 - **proxy_get_block_by_number**: eth_getBlockByNumber
-- **proxy_get_code**: eth_getCode
-- **proxy_get_transaction_by_hash**: eth_getTransactionByHash
-- **proxy_get_transaction_receipt**: eth_getTransactionReceipt
 
 
 ## 💬 Prompt Examples

@@ -34,11 +34,11 @@ Connect to the **Shiden Network** (the multi-chain smart contract layer on Kusam
 
 
 ## Available Tools (10)
+- **get_token_price**: Retrieve the current price of the SDN token
 - **get_account_info**: Retrieve balance and metadata for a specific account
 - **get_block**: Retrieve details for a specific block
 - **list_extrinsics**: Retrieve a list of extrinsics
 - **get_metadata**: Retrieve metadata about the Shiden Network
-- **get_token_price**: Retrieve the current price of the SDN token
 - **list_blocks**: Retrieve a list of blocks
 - **get_evm_contract**: Retrieve information about a deployed smart contract
 - **list_evm_transactions**: Retrieve transactions related to a specific contract
