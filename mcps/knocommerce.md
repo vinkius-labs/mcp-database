@@ -36,6 +36,12 @@ List responses for surveys
 
 List customers associated with survey data
 - **get_customer_feedback_profile**: Get details for a specific customer feedback profile
+- **list_surveys**: Use this to identify survey IDs for analyzing specific campaigns or response sets.
+
+List all KnoCommerce surveys
+- **get_survey_details**: Returns survey title, status, and high-level configuration.
+
+Get details for a specific survey
 - **list_survey_questions**: Use this to understand the data structure of the responses.
 
 List all questions in a specific survey
@@ -44,12 +50,6 @@ List all questions in a specific survey
 Get the latest channel attribution report
 - **list_survey_templates**: List available survey templates
 - **check_knocommerce_api_status**: Check the status of the KnoCommerce API integration
-- **list_surveys**: Use this to identify survey IDs for analyzing specific campaigns or response sets.
-
-List all KnoCommerce surveys
-- **get_survey_details**: Returns survey title, status, and high-level configuration.
-
-Get details for a specific survey
 
 
 ## 💬 Prompt Examples

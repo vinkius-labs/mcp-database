@@ -27,16 +27,16 @@ Connect your **McLeod Software** LoadMaster or PowerBroker instance to any AI ag
 
 
 ## Available Tools (10)
+- **get_dispatch_details**: Get details for a specific dispatch
+- **list_drivers**: List all drivers
+- **list_orders**: List all transportation orders
+- **list_stops**: List stops for a movement
+- **search_orders**: Search for orders by term
 - **get_order**: Get details for a specific order
 - **list_carriers**: List master carrier records
 - **list_customers**: List master customer records
 - **list_dispatches**: List dispatch assignments
-- **list_drivers**: List all drivers
 - **list_movements**: List truckload movements
-- **list_orders**: List all transportation orders
-- **list_stops**: List stops for a movement
-- **search_orders**: Search for orders by term
-- **get_dispatch_details**: Get details for a specific dispatch
 
 
 ## 💬 Prompt Examples

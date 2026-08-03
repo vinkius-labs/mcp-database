@@ -14,18 +14,18 @@ Empower your AI agents with JobNimbus's specialized CRM for contractors. This MC
 
 
 ## Available Tools (10)
-- **get_contact**: Returns addresses, phone numbers, email, and custom fields. Use this for deep intelligence on a customer before an interaction.
-
-Retrieves details for a specific contact
-- **get_job**: Returns project descriptions, associated contact IDs, and current workflow status. Use this to analyze project specifics or provide an update on a job.
-
-Retrieves details for a specific job
 - **list_boards**: Useful for navigating the account structure.
 
 Lists all configured boards
 - **list_contacts**: Returns names, contact types, and IDs. Use this to identify clients or start a search for a specific customer.
 
 Lists all contacts in JobNimbus
+- **get_job**: Returns project descriptions, associated contact IDs, and current workflow status. Use this to analyze project specifics or provide an update on a job.
+
+Retrieves details for a specific job
+- **get_contact**: Returns addresses, phone numbers, email, and custom fields. Use this for deep intelligence on a customer before an interaction.
+
+Retrieves details for a specific contact
 - **list_jobs**: Includes job titles, status, and IDs. Essential for monitoring project flow and upcoming work.
 
 Lists all jobs in JobNimbus

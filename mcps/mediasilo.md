@@ -35,10 +35,10 @@ List all media assets
 - **list_projects**: List all projects
 - **list_quicklinks**: List all Quicklinks
 - **list_users**: List all users
-- **search_assets**: Search for assets by term
 - **get_asset**: Get details for a specific asset
 - **get_project**: Get details for a specific project
 - **get_project_assets**: List all assets within a project
+- **search_assets**: Search for assets by term
 
 
 ## 💬 Prompt Examples

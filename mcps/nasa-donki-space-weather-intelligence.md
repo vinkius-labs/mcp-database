@@ -23,6 +23,9 @@ DONKI (Database Of Notifications, Knowledge, Information) is NASA's comprehensiv
 
 
 ## Available Tools (7)
+- **get_solar_energetic_particles**: SEPs are dangerous to astronauts and can damage satellite electronics.
+
+Get Solar Energetic Particle (SEP) events from NASA DONKI
 - **get_cme**: CMEs are massive bursts of solar wind and magnetic fields from the Sun. Earth-directed CMEs cause geomagnetic storms and aurora. Default: last 30 days.
 
 Get Coronal Mass Ejection (CME) events from NASA DONKI
@@ -35,9 +38,6 @@ Get geomagnetic storm events from NASA DONKI
 - **get_interplanetary_shocks**: Shocks often precede geomagnetic storms and are caused by CME-driven disturbances in the solar wind.
 
 Get interplanetary shock wave events from NASA DONKI
-- **get_solar_energetic_particles**: SEPs are dangerous to astronauts and can damage satellite electronics.
-
-Get Solar Energetic Particle (SEP) events from NASA DONKI
 - **get_radiation_belt**: The Van Allen radiation belts can be energized during geomagnetic storms, posing risks to satellites in medium Earth orbit.
 
 Get radiation belt enhancement events from NASA DONKI

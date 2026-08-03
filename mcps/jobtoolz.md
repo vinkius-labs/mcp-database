@@ -20,15 +20,6 @@ Retrieves details for a specific candidate
 - **get_job**: Returns descriptions, requirements, and internal status. Essential for detailed analysis of a specific role.
 
 Retrieves details for a specific job
-- **list_candidates**: Includes candidate names, IDs, and current pipeline status. Use this to monitor applicant flow and identify recent entries.
-
-Lists all candidates
-- **list_departments**: Useful for filtering jobs and candidates by business unit (e.g., Sales, R&D).
-
-Lists all departments
-- **list_jobs**: Returns job titles, IDs, and departments. Use this to identify open positions and locate job IDs for candidate management.
-
-Lists all active jobs
 - **list_locations**: Useful for identifying jobs in specific geographical regions.
 
 Lists all office locations
@@ -44,6 +35,15 @@ Lists all configured tags
 - **list_users**: Useful for identifying account administrators or hiring managers.
 
 Lists all organization users
+- **list_candidates**: Includes candidate names, IDs, and current pipeline status. Use this to monitor applicant flow and identify recent entries.
+
+Lists all candidates
+- **list_departments**: Useful for filtering jobs and candidates by business unit (e.g., Sales, R&D).
+
+Lists all departments
+- **list_jobs**: Returns job titles, IDs, and departments. Use this to identify open positions and locate job IDs for candidate management.
+
+Lists all active jobs
 
 
 ## 💬 Prompt Examples

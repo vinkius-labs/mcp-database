@@ -37,7 +37,6 @@ Connect your **Mail Blaze** account to any AI agent to automate your email marke
 - **add_subscriber_to_list**: Requires a list UID and subscriber data.
 
 Add a new subscriber to a list
-- **list_email_campaigns**: List all email marketing campaigns
 - **create_new_campaign**: Requires a JSON body with campaign details.
 
 Create a new email marketing campaign
@@ -46,6 +45,7 @@ Create a new email marketing campaign
 - **list_list_subscribers**: List subscribers in a specific list
 - **list_subscriber_lists**: List all subscriber lists
 - **send_email_campaign**: Trigger the sending of a campaign
+- **list_email_campaigns**: List all email marketing campaigns
 - **update_list_subscriber**: Update an existing subscriber
 
 

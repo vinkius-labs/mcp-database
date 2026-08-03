@@ -27,12 +27,12 @@ Connect your **Mapulus** account to any AI agent and access deep Australian loca
 
 
 ## Available Tools (9)
-- **enrich_location**: Enrich a location with geographic context
 - **get_boundary_details**: g., "poa:2000").
 
 Get details for a specific boundary
-- **get_demographics**: Get demographics for a boundary
 - **get_h3_index**: Get H3 index for a location
+- **enrich_location**: Enrich a location with geographic context
+- **get_demographics**: Get demographics for a boundary
 - **get_isochrone**: Generate travel-time boundaries
 - **get_postcode_data**: Get data for a specific postcode
 - **list_data_topics**: List available data topics
