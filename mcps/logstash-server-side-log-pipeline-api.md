@@ -41,8 +41,8 @@ No more manual curl commands to port 9600. Your AI acts as a dedicated systems a
 Get Logstash hot threads
 - **get_node_info**: Get Logstash node information
 - **get_plugins_info**: Get Logstash plugins information
-- **get_root**: Get Logstash root information
 - **get_node_stats**: Get Logstash node statistics
+- **get_root**: Get Logstash root information
 - **get_health_report**: Get Logstash health report
 
 

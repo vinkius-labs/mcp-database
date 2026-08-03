@@ -35,13 +35,13 @@ Connect to **Lit Protocol** to orchestrate decentralized identity and access con
 
 ## Available Tools (20)
 - **confirm_payment**: Finalize credit top-up after payment
+- **get_billing_balance**: Check credit balance
 - **create_account**: Create a new Lit account
 - **create_payment_intent**: Create a Stripe PaymentIntent (min $5.00)
 - **create_wallet**: Request a new PKP for the account
 - **execute_lit_action**: Provide either code or ipfs_id.
 
 Execute a Lit Action
-- **get_billing_balance**: Check credit balance
 - **list_actions**: List registered actions
 - **list_api_keys**: List usage keys (metadata only)
 - **list_wallets**: List all PKPs owned by the account

@@ -34,8 +34,6 @@ Empower your AI agent with precise **IP Intelligence**. IPGeolocation.io provide
 
 
 ## Available Tools (11)
-- **bulk_security**: Bulk IP Security lookup
-- **bulk_user_agent**: Bulk parse User-Agent strings
 - **convert_timezone**: Convert time between timezones
 - **get_abuse**: Get Abuse Contact information
 - **get_asn**: Get ASN information
@@ -45,6 +43,8 @@ Empower your AI agent with precise **IP Intelligence**. IPGeolocation.io provide
 - **get_security**: Get IP Security information
 - **get_timezone**: Get Timezone information
 - **get_user_agent**: Parse User-Agent string
+- **bulk_security**: Bulk IP Security lookup
+- **bulk_user_agent**: Bulk parse User-Agent strings
 
 
 ## 💬 Prompt Examples

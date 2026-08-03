@@ -36,8 +36,6 @@ Connect your **Localazy** account to any AI agent to automate your localization 
 ## Available Tools (23)
 - **create_project**: Create a new project inside the given organization
 - **delete_glossary_term**: Delete a glossary term
-- **delete_screenshot**: Delete a screenshot
-- **delete_source_key**: Remove a key from the project
 - **download_file**: Download the raw file content in the specified language
 - **get_webhook_secret**: Get the webhook secret used for HMAC verification
 - **import_content**: Import supported file formats including translations
@@ -58,6 +56,8 @@ List projects accessible with the current token
 - **update_source_key**: Modify properties of a source key
 - **update_webhooks**: Update webhook configurations for a project
 - **upload_screenshot**: Upload a new screenshot (Base64 encoded image)
+- **delete_screenshot**: Delete a screenshot
+- **delete_source_key**: Remove a key from the project
 - **create_glossary_term**: Create a new glossary term
 
 

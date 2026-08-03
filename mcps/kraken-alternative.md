@@ -35,27 +35,27 @@ Connect your **Kraken** account to any AI agent to monitor the cryptocurrency ma
 
 ## Available Tools (28)
 - **futures_get_history**: Get Trade History (Futures)
+- **spot_cancel_all**: Cancel All Orders
+- **spot_get_system_status**: Get System Status
+- **spot_get_ticker**: Get Ticker Information
+- **spot_get_time**: Get Server Time
 - **futures_get_orderbook**: Get Orderbook (Futures)
 - **futures_get_tickers**: Get Tickers (Futures)
 - **futures_send_order**: Send Order (Futures)
 - **spot_add_order**: Add Order
 - **spot_cancel_all_orders_after**: Cancel All Orders After X
-- **spot_cancel_all**: Cancel All Orders
 - **spot_cancel_order**: Cancel Order
 - **spot_get_asset_pairs**: Get Tradable Asset Pairs
+- **spot_get_assets**: Get Asset Info
 - **spot_get_balance**: Get Account Balance
+- **spot_get_closed_orders**: Get Closed Orders
 - **spot_get_depth**: Get Order Book
 - **spot_get_ledgers**: Get Ledgers Info
 - **spot_get_ohlc**: Get OHLC Data
 - **spot_get_open_orders**: Get Open Orders
 - **spot_get_open_positions**: Get Open Positions
 - **spot_get_spread**: Get Recent Spreads
-- **spot_get_system_status**: Get System Status
-- **spot_get_ticker**: Get Ticker Information
-- **spot_get_time**: Get Server Time
 - **spot_get_trade_balance**: Get Trade Balance
-- **spot_get_assets**: Get Asset Info
-- **spot_get_closed_orders**: Get Closed Orders
 - **spot_get_trade_volume**: Get Trade Volume
 - **spot_get_trades_history**: Get Trades History
 - **spot_get_trades**: Get Recent Trades

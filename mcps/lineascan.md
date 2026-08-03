@@ -33,10 +33,6 @@ Connect to **Lineascan** and empower your AI agent with real-time access to the 
 
 
 ## Available Tools (25)
-- **balance_multi**: Get ETH balances for multiple addresses
-- **check_verify_status**: Check the status of a verification request
-- **eth_block_number**: Returns the number of the most recent block
-- **eth_call**: Executes a new message call immediately without creating a transaction
 - **eth_estimate_gas**: Generates an estimate of how much gas is needed for a transaction
 - **eth_get_block_by_number**: Returns information about a block by number
 - **eth_get_transaction_by_hash**: Returns information about a transaction by hash
@@ -47,7 +43,6 @@ Connect to **Lineascan** and empower your AI agent with real-time access to the 
 - **get_balance**: Get ETH balance for a single address
 - **get_block_countdown**: Get estimated time remaining until a block is mined
 - **get_block_no_by_time**: Get block number by timestamp
-- **get_block_reward**: Get block and uncle rewards by block number
 - **get_logs**: Get event logs with filtering options
 - **get_mined_blocks**: Get a list of blocks mined by an address
 - **get_source_code**: Get the Source Code for a verified smart contract
@@ -57,6 +52,11 @@ Connect to **Lineascan** and empower your AI agent with real-time access to the 
 - **token_tx**: Get a list of ERC-20 Token Transfer Events for an address
 - **tx_list_internal**: Get a list of Internal transactions for an address
 - **tx_list**: Get a list of Normal transactions for an address
+- **balance_multi**: Get ETH balances for multiple addresses
+- **check_verify_status**: Check the status of a verification request
+- **eth_block_number**: Returns the number of the most recent block
+- **eth_call**: Executes a new message call immediately without creating a transaction
+- **get_block_reward**: Get block and uncle rewards by block number
 - **verify_source_code**: Submit a contract for verification
 
 

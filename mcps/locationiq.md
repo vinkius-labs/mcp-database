@@ -36,11 +36,11 @@ Connect **LocationIQ** to your AI agent to access powerful location-based servic
 
 
 ## Available Tools (7)
-- **directions**: Directions API
 - **nearby**: ) around a given coordinate.
 
 Nearby POI (Points of Interest)
 - **reverse**: Reverse Geocoding
+- **directions**: Directions API
 - **search**: Search / Forward Geocoding
 - **static_map**: Static Maps
 - **timezone**: Timezone API

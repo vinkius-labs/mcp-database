@@ -34,15 +34,15 @@ Connect your AI agent to the **KEGG** (Kyoto Encyclopedia of Genes and Genomes) 
 
 
 ## Available Tools (7)
+- **kegg_list**: For pathway/brite, can specify organism/option. Use "organism" to list all KEGG organisms.
+
+Obtains a list of entry identifiers and associated names
 - **kegg_info**: g., kegg, pathway, brite, genes, hsa, compound).
 
 Displays database release information and statistics
 - **kegg_link**: g., pathways linked from human genes).
 
 Finds related entries using database cross-references
-- **kegg_list**: For pathway/brite, can specify organism/option. Use "organism" to list all KEGG organisms.
-
-Obtains a list of entry identifiers and associated names
 - **kegg_conv**: Converts KEGG identifiers to/from outside identifiers
 - **kegg_ddi**: Finds adverse drug-drug interactions
 - **kegg_find**: Finds entries matching a query keyword or chemical data

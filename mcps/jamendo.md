@@ -36,30 +36,30 @@ No more manual searching for royalty-free or independent music. Your AI acts as 
 
 
 ## Available Tools (25)
-- **get_feeds**: Editorial content and news from the Jamendo homepage
-- **set_user_playlist**: Create or update a user playlist. Requires OAuth2 access token
-- **get_similar_tracks**: Find tracks similar to a given track ID
-- **get_track_reviews**: Browse and filter community track reviews
 - **get_album_tracks**: Retrieve tracks belonging to specific albums
-- **search_albums**: Search and filter albums
-- **get_artist_albums**: Retrieve albums for specific artists
-- **get_artist_locations**: Filter artists by geographical location
-- **get_artist_tracks**: Retrieve tracks for specific artists
-- **search_artists**: Search and filter artists
 - **autocomplete_search**: Prefix-based search for tracks, albums, artists, and tags
 - **get_playlist_tracks**: Retrieve tracks within a playlist
 - **search_playlists**: Search and filter public or user playlists
-- **get_radio_stream**: Get stream URL and now playing info for a radio
 - **list_radios**: List Jamendo radio stations
-- **set_user_dislike**: Dislike a track. Requires OAuth2 access token
 - **set_user_fan**: Become a fan of an artist. Requires OAuth2 access token
 - **set_user_favorite**: Add a track to user favorites. Requires OAuth2 access token
 - **set_user_like**: Like a track. Requires OAuth2 access token
+- **set_user_playlist**: Create or update a user playlist. Requires OAuth2 access token
+- **get_similar_tracks**: Find tracks similar to a given track ID
+- **get_track_reviews**: Browse and filter community track reviews
 - **search_tracks**: Search and filter the Jamendo track catalog
 - **get_user_albums**: Retrieve albums a user has interacted with
 - **get_user_artists**: Retrieve artists a user has interacted with
 - **get_user_tracks**: Retrieve tracks a user has interacted with
 - **get_users**: Lookup user profile information
+- **get_feeds**: Editorial content and news from the Jamendo homepage
+- **search_albums**: Search and filter albums
+- **get_artist_albums**: Retrieve albums for specific artists
+- **get_artist_locations**: Filter artists by geographical location
+- **get_artist_tracks**: Retrieve tracks for specific artists
+- **search_artists**: Search and filter artists
+- **get_radio_stream**: Get stream URL and now playing info for a radio
+- **set_user_dislike**: Dislike a track. Requires OAuth2 access token
 - **get_album_reviews**: Browse and filter community album reviews
 
 

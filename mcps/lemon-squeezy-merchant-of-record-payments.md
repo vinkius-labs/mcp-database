@@ -35,6 +35,12 @@ No more switching between tabs to find a customer's ID or check a product's stat
 
 
 ## Available Tools (60)
+- **get_license_key_instance**: Retrieve a specific license key instance
+- **get_me**: Retrieve the currently authenticated user
+- **get_order**: Retrieve a specific order
+- **list_products**: List all products
+- **list_files**: List all files
+- **update_webhook**: Update a webhook
 - **activate_license**: Activate a license key
 - **cancel_subscription**: Cancel a subscription
 - **create_checkout**: Create a checkout
@@ -53,11 +59,8 @@ No more switching between tabs to find a customer's ID or check a product's stat
 - **get_discount_redemption**: Retrieve a specific discount redemption
 - **get_discount**: Retrieve a specific discount
 - **get_file**: Retrieve a specific file
-- **get_license_key_instance**: Retrieve a specific license key instance
 - **get_license_key**: Retrieve a specific license key
-- **get_me**: Retrieve the currently authenticated user
 - **get_order_item**: Retrieve a specific order item
-- **get_order**: Retrieve a specific order
 - **get_price**: Retrieve a specific price
 - **get_product**: Retrieve a specific product
 - **get_store**: Retrieve a specific store
@@ -73,13 +76,11 @@ No more switching between tabs to find a customer's ID or check a product's stat
 - **list_customers**: List all customers
 - **list_discount_redemptions**: List all discount redemptions
 - **list_discounts**: List all discounts
-- **list_files**: List all files
 - **list_license_key_instances**: List all license key instances
 - **list_license_keys**: List all license keys
 - **list_order_items**: List all order items
 - **list_orders**: List all orders
 - **list_prices**: List all prices
-- **list_products**: List all products
 - **list_stores**: List all stores
 - **list_subscription_invoices**: List all subscription invoices
 - **list_subscription_items**: List all subscription items
@@ -93,7 +94,6 @@ No more switching between tabs to find a customer's ID or check a product's stat
 - **update_license_key**: Update a license key
 - **update_subscription_item**: Update a subscription item
 - **update_subscription**: Update a subscription
-- **update_webhook**: Update a webhook
 - **validate_license**: Validate a license key
 
 

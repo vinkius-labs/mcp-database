@@ -46,6 +46,7 @@ OpenAI compatible responses endpoint
 - **get_logs**: Retrieve recent logs
 - **get_monitor_messages**: Retrieve chat history
 - **get_monitor_traces**: Retrieve execution traces and span trees
+- **get_monitor_transactions**: Retrieve component interaction logs
 - **get_project**: Get project details
 - **list_files_v1**: List files for a specific flow (v1)
 - **list_files_v2**: List user files (v2)
@@ -55,12 +56,11 @@ OpenAI compatible responses endpoint
 - **run_flow**: Supports chat or text inputs.
 
 Execute a Langflow flow
+- **run_workflow**: Run a workflow (v2 API)
 - **trigger_webhook**: Trigger a Langflow webhook
 - **update_flow**: Update an existing flow
-- **update_project**: Update project info
 - **whoami**: Get current authenticated user info
-- **get_monitor_transactions**: Retrieve component interaction logs
-- **run_workflow**: Run a workflow (v2 API)
+- **update_project**: Update project info
 - **create_flow**: Create a new flow
 
 

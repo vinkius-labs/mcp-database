@@ -33,15 +33,14 @@ Connect your **Instatus** account to any AI agent to streamline your incident co
 
 
 ## Available Tools (28)
-- **add_metric**: Add a new metric
 - **add_subscriber**: Add a new subscriber
+- **create_component**: Create a new component
+- **delete_component**: Delete a component
 - **add_subscribers_bulk**: Add multiple subscribers (max 100)
 - **add_teammate**: Add a team member
-- **create_component**: Create a new component
 - **create_incident_from_template**: Create an incident using a template
 - **create_incident**: Create a new incident
 - **create_maintenance**: Create a new maintenance
-- **delete_component**: Delete a component
 - **delete_incident**: Delete an incident
 - **delete_maintenance**: Delete a maintenance
 - **delete_metric_datapoints**: Delete datapoints from a metric
@@ -59,6 +58,7 @@ Connect your **Instatus** account to any AI agent to streamline your incident co
 - **update_component**: Update an existing component
 - **update_incident**: Update an existing incident
 - **update_maintenance**: Update an existing maintenance
+- **add_metric**: Add a new metric
 - **add_metric_datapoint**: Add a datapoint to a metric
 - **add_metric_datapoints_bulk**: Add multiple datapoints to a metric
 

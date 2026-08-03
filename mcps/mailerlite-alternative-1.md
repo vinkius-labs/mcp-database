@@ -34,32 +34,7 @@ Connect your **MailerLite** account to any AI agent to streamline your email mar
 
 
 ## Available Tools (51)
-- **create_automation**: Create a draft automation
-- **create_campaign**: Create a campaign
-- **create_field**: Create a custom field
-- **create_group**: Create a new group
-- **create_shop**: Create an e-commerce shop
-- **create_subscriber**: Create or upsert a subscriber
-- **create_webhook**: Create a webhook
-- **delete_automation**: Delete an automation
-- **delete_campaign**: Delete a campaign
-- **delete_field**: Delete a custom field
-- **delete_form**: Delete a form
-- **delete_group**: Delete a group
-- **delete_segment**: Delete a segment
-- **delete_shop**: Delete an e-commerce shop
 - **delete_subscriber**: Delete a subscriber
-- **delete_webhook**: Delete a webhook
-- **forget_subscriber**: Forget a subscriber (GDPR)
-- **get_automation_activity**: Get automation activity
-- **get_automation**: Get automation details
-- **get_campaign_activity**: Get campaign activity report
-- **get_campaign**: Get campaign details
-- **get_form**: Get form details
-- **get_subscriber_activity**: Get subscriber activity log
-- **get_subscriber**: Get a specific subscriber
-- **import_subscribers_to_group**: Import subscribers to a group
-- **list_automations**: List all automations
 - **list_campaign_languages**: List supported campaign languages
 - **list_campaigns**: List all campaigns
 - **list_fields**: List all custom fields
@@ -67,6 +42,28 @@ Connect your **MailerLite** account to any AI agent to streamline your email mar
 - **list_forms**: List forms by type
 - **list_group_subscribers**: List subscribers in a group
 - **list_groups**: List all groups
+- **create_automation**: Create a draft automation
+- **create_campaign**: Create a campaign
+- **create_field**: Create a custom field
+- **create_group**: Create a new group
+- **create_shop**: Create an e-commerce shop
+- **create_webhook**: Create a webhook
+- **delete_automation**: Delete an automation
+- **delete_campaign**: Delete a campaign
+- **delete_field**: Delete a custom field
+- **delete_form**: Delete a form
+- **delete_group**: Delete a group
+- **delete_segment**: Delete a segment
+- **delete_webhook**: Delete a webhook
+- **forget_subscriber**: Forget a subscriber (GDPR)
+- **get_automation_activity**: Get automation activity
+- **get_campaign_activity**: Get campaign activity report
+- **get_campaign**: Get campaign details
+- **get_form**: Get form details
+- **get_subscriber_activity**: Get subscriber activity log
+- **get_subscriber**: Get a specific subscriber
+- **import_subscribers_to_group**: Import subscribers to a group
+- **list_automations**: List all automations
 - **list_segment_subscribers**: List subscribers in a segment
 - **list_segments**: List all segments
 - **list_shops**: List all e-commerce shops
@@ -77,12 +74,15 @@ List all subscribers
 - **list_webhooks**: List all webhooks
 - **schedule_campaign**: Schedule a campaign
 - **unassign_subscriber_from_group**: Unassign subscriber from a group
-- **update_campaign**: Update a campaign
 - **update_field**: Update a custom field
 - **update_form**: Update a form
 - **update_group**: Update a group
 - **update_segment**: Update a segment
 - **update_shop**: Update an e-commerce shop
+- **create_subscriber**: Create or upsert a subscriber
+- **delete_shop**: Delete an e-commerce shop
+- **get_automation**: Get automation details
+- **update_campaign**: Update a campaign
 - **assign_subscriber_to_group**: Assign subscriber to a group
 - **cancel_campaign**: Cancel a campaign
 - **update_subscriber**: Update a subscriber

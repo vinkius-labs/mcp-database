@@ -50,8 +50,6 @@ Create an XL JSON bin (up to 10MB)
 - **delete_xl_bin**: Delete an XL JSON bin
 - **download_usage_logs**: Download usage logs for a specific date
 - **fetch_collection_bins**: Fetch bins within a collection
-- **fetch_uncategorized_bins**: Fetch all uncategorized bins
-- **list_access_keys**: List all access keys
 - **list_collections**: List all collections
 - **list_usage_log_dates**: List available dates for usage logs
 - **read_bin**: Can optionally fetch a specific version or filter via JSON Path.
@@ -64,6 +62,8 @@ Read a JSON bin
 - **update_bin_privacy**: Update the privacy setting of a JSON bin
 - **update_bin**: Update an existing JSON bin
 - **update_collection_name**: Update the name of a collection
+- **fetch_uncategorized_bins**: Fetch all uncategorized bins
+- **list_access_keys**: List all access keys
 - **add_schema_to_collection**: Add a schema to a collection for validation
 - **update_schema_name**: Update the name of a JSON schema document
 - **update_schema**: Update a JSON schema document
