@@ -35,28 +35,29 @@ Your agent handles the complete task lifecycle so you never need to context-swit
 
 
 ## Available Tools (28)
+- **update_task**: Update an existing task
 - **assign_member**: Assign a user to a task
 - **create_checklist_item**: Use parent_id to create sub-items.
 
 Add a checklist item to a task
+- **list_comments**: Comments support rich text.
+
+List comments on a task
+- **set_task_estimate**: Set story points / estimate for a task
+- **my_tasks**: Get all tasks assigned to me
+- **related_tasks**: Get tasks related to a task
+- **list_subtasks**: List subtasks of a task
 - **list_checklists**: List checklists on a task
 - **toggle_checklist_item**: Toggle a checklist item done/undone
 - **create_comment**: Supports rich text content.
 
 Add a comment to a task
 - **delete_comment**: Delete a comment
-- **list_comments**: Comments support rich text.
-
-List comments on a task
 - **update_comment**: Edit an existing comment
 - **duplicate_task**: Duplicate a task
 - **list_effort_levels**: List effort/priority levels
-- **set_task_estimate**: Set story points / estimate for a task
 - **move_task_to_project**: Move a task to a different project
-- **my_tasks**: Get all tasks assigned to me
-- **related_tasks**: Get tasks related to a task
 - **link_subtask**: Link an existing task as a subtask
-- **list_subtasks**: List subtasks of a task
 - **unlink_subtask**: Unlink a subtask
 - **get_task_by_code**: g., WEB-42) instead of UUID.
 
@@ -70,7 +71,6 @@ Delete a task permanently
 - **list_tasks**: Filter by status (todo, in-progress, done), sprint, user_story, users, labels, type, effort, workflow, is_blocker, is_archived, unassigned, created_at (YYYY-MM-DD=YYYY-MM-DD), closed_at, per_page.
 
 List tasks with advanced filters
-- **update_task**: Update an existing task
 - **my_today_tasks**: Get tasks due today
 - **create_task_type**: g., Chore, Tech Debt) with a hex color code.
 

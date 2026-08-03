@@ -36,11 +36,11 @@ Connect your AI agents to **J&T Express Malaysia**, the leading technology-drive
 
 
 ## Available Tools (10)
+- **get_shipping_rates**: Calculate estimated shipping costs
+- **get_waybill_image**: Get the waybill label image link
 - **cancel_order**: Cancel a previously created delivery order
 - **create_order**: Create a new J&T Express delivery order
 - **get_order_details**: Get details for a specific order
-- **get_shipping_rates**: Calculate estimated shipping costs
-- **get_waybill_image**: Get the waybill label image link
 - **list_area_codes**: Retrieve J&T internal area codes
 - **list_cities**: List cities within a state
 - **list_districts**: List districts within a city

@@ -36,16 +36,16 @@ Connect your AI agents to **Sensors Data** (神策数据), the leading professio
 
 
 ## Available Tools (10)
+- **list_events**: List all defined event names in the schema
 - **get_user_behavior_sequence**: Get the chronological sequence of events for a user
+- **list_user_properties**: List all defined user profile properties
+- **lookup_user**: Get profile information for a specific user
+- **query_behavior_list**: Retrieve a list of user behaviors/events
 - **analyze_events**: Perform complex event analysis
 - **analyze_funnel**: Calculate conversion funnel metrics
 - **analyze_retention**: Calculate user retention rates
 - **get_event_schema**: Retrieve the property schema for a specific event
 - **get_project_info**: Retrieve Sensors Data project metadata
-- **list_events**: List all defined event names in the schema
-- **list_user_properties**: List all defined user profile properties
-- **lookup_user**: Get profile information for a specific user
-- **query_behavior_list**: Retrieve a list of user behaviors/events
 
 
 ## 💬 Prompt Examples

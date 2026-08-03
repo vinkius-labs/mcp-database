@@ -34,15 +34,15 @@ Connect your AI agents directly to **JD Cloud** (京东云), the enterprise clou
 
 
 ## Available Tools (11)
-- **describe_cloud_disk**: Get detailed information about a specific cloud disk
 - **describe_vm_instance**: Get detailed information about a specific VM instance
+- **list_cloud_disks**: List all cloud disk volumes in your region
+- **describe_cloud_disk**: Get detailed information about a specific cloud disk
+- **reboot_vm_instance**: Reboot a VM instance
 - **describe_metric_data**: Query monitoring metric data for a cloud resource
 - **list_oss_buckets**: List all Object Storage Service buckets
-- **list_cloud_disks**: List all cloud disk volumes in your region
 - **list_elastic_ips**: List all Elastic IP addresses in your region
 - **list_vm_instances**: List all virtual machine instances in your JD Cloud region
 - **list_rds_instances**: List all RDS database instances in your region
-- **reboot_vm_instance**: Reboot a VM instance
 - **start_vm_instance**: Start a stopped VM instance
 - **stop_vm_instance**: Stop a running VM instance
 

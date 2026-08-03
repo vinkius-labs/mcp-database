@@ -35,11 +35,15 @@ Your agent eliminates the friction of manual time entry and gives you instant vi
 
 
 ## Available Tools (28)
-- **budget_overview**: Get project budget overview
-- **projects_at_risk**: Get projects at budget risk
 - **my_tasks**: Ideal for quickly finding what to track time on.
 
 Get tasks assigned to me across all workspaces
+- **budget_alerts**: Get budget threshold alerts
+- **budget_burndown**: Get budget burn-down chart data
+- **budget_consumption**: Get budget consumption breakdown
+- **budget_events**: Get budget event log
+- **budget_overview**: Get project budget overview
+- **projects_at_risk**: Get projects at budget risk
 - **standup_blockers**: Get current blockers
 - **completed_yesterday**: Get tasks completed yesterday
 - **contributors**: Filter by period (week, month, quarter, year).
@@ -75,10 +79,6 @@ Start a timer on a task
 - **stop_timer**: Stop the running timer
 - **team_time_report**: Get team time report
 - **time_timeline**: Get time entries timeline
-- **budget_alerts**: Get budget threshold alerts
-- **budget_burndown**: Get budget burn-down chart data
-- **budget_consumption**: Get budget consumption breakdown
-- **budget_events**: Get budget event log
 
 
 ## 💬 Prompt Examples

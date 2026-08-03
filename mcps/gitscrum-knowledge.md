@@ -34,9 +34,6 @@ Your agent becomes the central knowledge repository, bridging personal memory wi
 
 
 ## Available Tools (28)
-- **delete_note**: Delete a note permanently
-- **create_channel**: Create a discussion channel
-- **get_channel**: Get channel details
 - **list_channels**: List discussion channels
 - **list_discussions**: List all discussions in a project
 - **create_note_folder**: E.g., "Agent Memory", "Architecture Decisions", "Meeting Notes".
@@ -54,6 +51,7 @@ Send a message to a channel
 - **create_note**: Use this as persistent agent memory: store decisions, context, meeting notes, or ADRs. Content supports full markdown.
 
 Create a new note
+- **delete_note**: Delete a note permanently
 - **list_notes**: Perfect for agent memory — store context, decisions, and key information across sessions.
 
 List all notes in the workspace
@@ -61,13 +59,15 @@ List all notes in the workspace
 - **note_revisions**: Useful for tracking how knowledge evolved over time.
 
 Get note revision history
-- **toggle_note_share**: Useful for publishing agent findings to the team.
-
-Toggle note sharing visibility
 - **update_note**: Use to append context or refine agent memory over time.
 
 Update an existing note
+- **get_channel**: Get channel details
 - **reply_to_message**: Reply to a message in a thread
+- **create_channel**: Create a discussion channel
+- **toggle_note_share**: Useful for publishing agent findings to the team.
+
+Toggle note sharing visibility
 - **global_search**: Returns grouped results by resource type.
 
 Search across all workspace resources

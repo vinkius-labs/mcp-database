@@ -34,6 +34,7 @@ Your agent delivers sprint analytics and agile insights without requiring manual
 
 
 ## Available Tools (16)
+- **get_task**: Get task details by UUID
 - **all_sprints**: List sprints across all workspaces
 - **create_user_story**: Create a user story
 - **list_epics**: List epics in a project
@@ -51,7 +52,6 @@ Delete an existing sprint
 
 Get sprint reports with charts
 - **update_sprint**: Update an existing sprint
-- **get_task**: Get task details by UUID
 - **list_tasks**: Use the sprint_slug filter to see only tasks belonging to a specific sprint. Filter by status (todo, in-progress, done).
 
 List tasks in a project, optionally filtered by sprint

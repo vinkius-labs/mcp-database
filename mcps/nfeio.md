@@ -35,9 +35,9 @@ Connect your AI agents to **NFe.io**, the leading Brazilian platform for fiscal 
 
 
 ## Available Tools (10)
-- **cancel_merchandise_invoice**: Cancel an issued Merchandise Invoice (NF-e)
 - **cancel_service_invoice**: Cancel an issued Service Invoice (NFS-e)
 - **create_company**: Register a new company (issuer) in NFe.io
+- **cancel_merchandise_invoice**: Cancel an issued Merchandise Invoice (NF-e)
 - **get_company_details**: Get detailed info for a specific company issuer
 - **get_merchandise_invoice**: Retrieve details for a specific Merchandise Invoice (NF-e)
 - **get_service_invoice**: Retrieve details for a specific Service Invoice (NFS-e)

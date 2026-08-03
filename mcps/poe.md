@@ -32,18 +32,12 @@ Connect your **Poe** (Quora's AI platform) account to any AI agent and manage yo
 
 
 ## Available Tools (10)
-- **delete_bot**: This action cannot be undone. All conversation history and settings for the bot will be lost.
-
-Delete a Poe API bot
-- **update_bot**: Changes take effect immediately for new conversations.
-
-Update an existing Poe bot's configuration
 - **create_bot**: Requires a bot name, base URL for your API endpoint, and the model name. Optionally set a system prompt and description.
 
 Create a new API bot on Poe
-- **list_available_bots**: Useful for discovering which AI models and specialized bots are available for chaining in your bot workflows.
+- **delete_bot**: This action cannot be undone. All conversation history and settings for the bot will be lost.
 
-List publicly available bots on Poe that your bot can query
+Delete a Poe API bot
 - **get_bot_stats**: Essential for monitoring bot health, understanding user engagement, and identifying performance bottlenecks.
 
 Get usage statistics for a Poe bot
@@ -62,6 +56,12 @@ Query another bot on Poe from your bot
 - **send_message**: Useful for testing endpoint connectivity and validating bot responses. The bot will process the message and return a response via its configured endpoint.
 
 Send a message to a Poe bot (simulate user interaction)
+- **update_bot**: Changes take effect immediately for new conversations.
+
+Update an existing Poe bot's configuration
+- **list_available_bots**: Useful for discovering which AI models and specialized bots are available for chaining in your bot workflows.
+
+List publicly available bots on Poe that your bot can query
 
 
 ## 💬 Prompt Examples

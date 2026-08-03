@@ -33,12 +33,6 @@ Connect your **Kuaishou Mini-Game** (快手小游戏) developer account to any A
 
 
 ## Available Tools (10)
-- **check_content**: Essential for games with user-generated content.
-
-Check user-generated content for policy violations
-- **code2session**: This is the standard Kuaishou login flow: the mini-game client calls ks.login() to get a code, then the server exchanges it for the user session.
-
-Exchange login code for Kuaishou user session
 - **get_analytics**: Get game analytics data (DAU, retention, etc.)
 - **get_game_config**: Useful for remote config, feature flags, and game balancing parameters.
 
@@ -59,6 +53,12 @@ Save user game data to Kuaishou cloud storage
 - **submit_score**: The score is a numeric value. The leaderboard_id identifies which leaderboard to submit to.
 
 Submit a game score to the Kuaishou leaderboard
+- **code2session**: This is the standard Kuaishou login flow: the mini-game client calls ks.login() to get a code, then the server exchanges it for the user session.
+
+Exchange login code for Kuaishou user session
+- **check_content**: Essential for games with user-generated content.
+
+Check user-generated content for policy violations
 
 
 ## 💬 Prompt Examples

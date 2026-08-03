@@ -37,14 +37,14 @@ Connect your AI agents to the **4399 Open Platform** (4399开放平台), the lea
 
 ## Available Tools (9)
 - **query_order**: Check the status of a payment order
+- **get_game_status**: Check current operational status of the game
+- **list_friends**: List friends for a 4399 user
 - **submit_score**: Submit a new record to a leaderboard
 - **validate_login**: Verify a user login session
-- **get_game_status**: Check current operational status of the game
-- **get_server_time**: Get the current 4399 server timestamp
-- **get_user_info**: Retrieve basic profile for a user
-- **list_friends**: List friends for a 4399 user
 - **check_sensitive_words**: Filter content for prohibited or sensitive terms
 - **get_leaderboard**: Fetch the top players list
+- **get_server_time**: Get the current 4399 server timestamp
+- **get_user_info**: Retrieve basic profile for a user
 
 
 ## 💬 Prompt Examples
