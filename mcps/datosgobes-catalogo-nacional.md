@@ -34,7 +34,6 @@ Connect to the official **Datos.gob.es** API to explore Spain's vast repository 
 
 
 ## Available Tools (22)
-- **get_country_spain**: Get country-level information for Spain
 - **get_dataset**: Get a specific dataset by its URI identifier
 - **get_province**: g., Madrid).
 
@@ -56,9 +55,6 @@ Filter datasets by publisher ID
 - **list_datasets_by_spatial**: g., word1=Autonomia, word2=Pais-Vasco).
 
 Filter datasets by geographic scope
-- **list_datasets_by_theme**: g., hacienda).
-
-Filter datasets by theme/category
 - **list_datasets**: gob.es catalog.
 
 Get all datasets from the catalog
@@ -68,11 +64,15 @@ Get all datasets from the catalog
 Filter distributions by format
 - **list_distributions**: Get all data distributions
 - **list_provinces**: Get all provinces
-- **list_public_sectors**: Get the taxonomy of primary sectors
 - **list_publishers**: Get all publishers in the catalog
 - **list_regions**: Get all Autonomous Communities (Regions)
 - **list_spatial_options**: Get all geographic coverage options
 - **list_themes**: Get all categories/themes
+- **get_country_spain**: Get country-level information for Spain
+- **list_datasets_by_theme**: g., hacienda).
+
+Filter datasets by theme/category
+- **list_public_sectors**: Get the taxonomy of primary sectors
 - **search_datasets_by_title**: Search datasets by title
 
 

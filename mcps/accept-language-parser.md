@@ -21,7 +21,7 @@ When a global routing agent reads `Accept-Language: en-US,pt-BR;q=0.9,fr;q=0.8`,
 ## Available Tools (1)
 - **parse_accept_language**: Pass the raw header value (e.g. "en-US,pt-BR;q=0.9,fr;q=0.8") and receive a priority-ordered list of languages with their quality weights. Never try to parse quality weights manually.
 
-Parses HTTP Accept-Language headers into an ordered list of user language preferences with quality weights. Essential for global routing and i18n agents
+Parses HTTP Accept-Language headers into an ordered list of user language preferences with quality weights. Essential for globalThis routing and i18n agents
 
 
 ## 💬 Prompt Examples

@@ -34,9 +34,7 @@ Connect to the **National Archives Catalog (NARA)** and explore the history of t
 
 
 ## Available Tools (40)
-- **create_comment**: Add a new comment to a record
-- **create_tag**: Add a new tag to a record
-- **create_transcription**: Add a new transcription
+- **search_records_by_tag**: Search records by tags
 - **delete_comment**: Remove or deactivate a comment
 - **delete_contributions**: Deactivate or remove multiple contributions
 - **delete_tag**: Remove or deactivate a tag
@@ -58,22 +56,24 @@ Connect to the **National Archives Catalog (NARA)** and explore the history of t
 - **get_transcription**: Retrieve a single transcription by ID
 - **get_transcriptions_by_naid**: Retrieve transcriptions for a specific record
 - **get_transcriptions_by_userid**: Retrieve transcriptions by a specific contributor
-- **get_user_notifications**: Retrieve user notifications
 - **get_user**: Retrieve public data for a specific user
 - **get_users**: Retrieve public account data (filterable by email, username, role, etc.)
 - **search_comments**: Search for comment data
 - **search_contributions**: Search for contribution data
 - **search_records_by_comment**: Search records by comments
 - **search_records_by_contribution**: Search records related to user contributions
-- **search_records_by_tag**: Search records by tags
 - **search_records_by_text**: Search records by other extracted text
 - **search_records_by_transcription**: Search records by transcriptions
 - **search_records**: Search for records using URL parameters
 - **search_tags**: Search for tag data
 - **search_transcriptions**: Search for transcription data
 - **update_comment**: Update an existing comment
-- **update_transcription**: Add or update a transcription
 - **update_user**: Update user information
+- **create_comment**: Add a new comment to a record
+- **create_tag**: Add a new tag to a record
+- **create_transcription**: Add a new transcription
+- **get_user_notifications**: Retrieve user notifications
+- **update_transcription**: Add or update a transcription
 
 
 ## 💬 Prompt Examples

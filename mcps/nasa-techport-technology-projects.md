@@ -35,15 +35,15 @@ Connect to **NASA TechPort** to explore the agency's comprehensive resource for 
 
 ## Available Tools (29)
 - **export_opportunities**: Export funding opportunities
+- **get_opportunity**: Get data for a specific opportunity
+- **get_organization**: Get detailed information for a specific organization
+- **get_program**: Get detailed information for a specific program
+- **get_schema**: Get the object schema for a specific type
 - **get_api_spec**: Get the Swagger/OpenAPI specification for the API
 - **get_enum**: Get enumerations for a specific field name
 - **get_max_funding_amount**: Get the maximum funding amount available
 - **get_nonce**: Refresh the user nonce for secure sessions
-- **get_opportunity**: Get data for a specific opportunity
-- **get_organization**: Get detailed information for a specific organization
-- **get_program**: Get detailed information for a specific program
 - **get_project**: Get detailed information about a specific technology project
-- **get_schema**: Get the object schema for a specific type
 - **get_taxonomy**: Get a taxonomy root and its children
 - **get_taxonomy_tree**: Get a full taxonomy in a tree format
 - **list_contacts**: List contacts in TechPort

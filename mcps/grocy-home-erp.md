@@ -36,15 +36,7 @@ No more manual entry on a small screen. Your AI acts as your personal home manag
 
 
 ## Available Tools (21)
-- **add_product_stock**: Add a specific amount of a product to stock
-- **add_shopping_list_item**: Add an item to the shopping list
 - **charge_battery**: Mark a battery as charged
-- **clear_shopping_list**: Remove all items from the shopping list
-- **consume_product_stock**: Consume a specific amount of a product from stock
-- **consume_recipe**: Consume all ingredients for a specific recipe from stock
-- **create_task**: Create a new task
-- **delete_task**: Delete a task
-- **execute_chore**: Mark a chore as executed
 - **get_batteries**: Get a list of all batteries
 - **get_chores**: Get a list of all chores
 - **get_product**: Get details for a specific product
@@ -54,8 +46,16 @@ No more manual entry on a small screen. Your AI acts as your personal home manag
 - **get_stock**: Get all products currently in stock
 - **get_tasks**: Get a list of all tasks
 - **inventory_product_stock**: Set the stock amount of a product to a specific value
-- **remove_purchased_shopping_list**: Remove all items marked as purchased from the shopping list
 - **transfer_product_stock**: Transfer a product between locations
+- **add_product_stock**: Add a specific amount of a product to stock
+- **add_shopping_list_item**: Add an item to the shopping list
+- **clear_shopping_list**: Remove all items from the shopping list
+- **consume_product_stock**: Consume a specific amount of a product from stock
+- **consume_recipe**: Consume all ingredients for a specific recipe from stock
+- **create_task**: Create a new task
+- **delete_task**: Delete a task
+- **execute_chore**: Mark a chore as executed
+- **remove_purchased_shopping_list**: Remove all items marked as purchased from the shopping list
 - **update_task**: Update an existing task
 
 

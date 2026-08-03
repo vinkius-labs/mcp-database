@@ -34,13 +34,13 @@ Connect to the **USDA Economic Research Service (ERS)** and query the Agricultur
 
 
 ## Available Tools (7)
-- **get_arms_farmtypes**: Get all ARMS Farm Types
 - **get_arms_reports**: Get available ARMS reports and variables
 - **get_arms_states**: Get all ARMS States and available metadata
+- **get_arms_variables**: Get detailed metadata for ARMS variables
 - **get_arms_surveydata**: S. farms. Requires year AND at least one of report or variable.
 
 Retrieve ARMS survey results
-- **get_arms_variables**: Get detailed metadata for ARMS variables
+- **get_arms_farmtypes**: Get all ARMS Farm Types
 - **get_arms_years**: Get all available ARMS years
 - **get_arms_categories**: List ARMS categories and subcategories
 

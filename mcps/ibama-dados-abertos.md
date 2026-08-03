@@ -33,13 +33,13 @@ Connect to the **IBAMA Open Data Portal** (CKAN) to explore and analyze critical
 
 
 ## Available Tools (9)
-- **search_datasets**: Supports sorting and pagination.
-
-Search for datasets matching a query string
 - **search_resources**: Search for resources based on specific fields
 - **show_dataset**: Show full metadata for a specific dataset
 - **show_organization**: Show details and datasets of an organization
 - **show_resource**: Show metadata for a specific resource
+- **search_datasets**: Supports sorting and pagination.
+
+Search for datasets matching a query string
 - **datastore_search**: Query CSV/Tabular data directly
 - **list_datasets**: List all dataset names
 - **list_groups**: List all thematic groups

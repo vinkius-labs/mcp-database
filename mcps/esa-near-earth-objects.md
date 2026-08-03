@@ -36,18 +36,18 @@ Your AI agent becomes a planetary defence analyst with direct access to ESA miss
 
 
 ## Available Tools (12)
-- **check_esa_neocc_status**: Returns the connection status and service URL. Use this to verify the integration is working correctly.
-
-Verify ESA NEOCC API connectivity
-- **get_all_nea_list**: Returns designations only. Warning: this list contains thousands of entries. Use for comprehensive audits or when searching for a specific designation.
-
-Get the complete catalog of all known near-Earth asteroids
 - **get_impact_table**: Lists virtual impactors with their projected impact dates, impact probabilities, and Palermo Scale values. This is the primary ESA output for planetary defence risk assessment.
 
 Get impact monitoring data for potentially hazardous objects
 - **get_object_close_approaches**: g., "2024YR4", "99942 Apophis"). Returns miss distance, date, velocity, and brightness for each encounter. Use URL-encoded designations for objects with spaces.
 
 Get all close approaches for a specific asteroid
+- **check_esa_neocc_status**: Returns the connection status and service URL. Use this to verify the integration is working correctly.
+
+Verify ESA NEOCC API connectivity
+- **get_all_nea_list**: Returns designations only. Warning: this list contains thousands of entries. Use for comprehensive audits or when searching for a specific designation.
+
+Get the complete catalog of all known near-Earth asteroids
 - **get_object_ephemerides**: Returns right ascension, declination, distance, and visual magnitude at each timestep. Useful for planning telescope observations or determining current sky position.
 
 Get ephemerides for a specific asteroid

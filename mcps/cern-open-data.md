@@ -38,21 +38,9 @@ Your AI agent becomes a particle physics research assistant with direct access t
 
 
 ## Available Tools (16)
-- **check_cern_opendata_status**: Use this to verify the integration is working correctly before performing data queries. The API uses the InvenioRDM REST framework.
-
-Verify CERN Open Data API connectivity and portal status
-- **get_glossary**: Returns term names, definitions, and associated experiments. Covers fundamental particles, detector components, analysis techniques, and physics phenomena. Use this to explain technical physics terms like "luminosity", "transverse momentum", "pseudorapidity", "b-tagging", or "muon spectrometer". Invaluable for science communication and educational contexts.
-
-Search the CERN particle physics glossary for term definitions
 - **get_portal_statistics**: ), record types (Dataset, Documentation, Software, Glossary, Supplementaries), data-taking years, keywords, availability status, and event count distributions. This is the single most informative endpoint for understanding the scope and composition of available CERN data.
 
 Get comprehensive CERN Open Data portal statistics and facets
-- **get_record_by_doi**: Returns the resolved record ID, title, experiment, type, and direct link if found. Useful when you have a DOI from a publication or reference and need to find the corresponding open dataset. DOIs follow the format "10.7483/OPENDATA.CMS.XXX". Returns a "not found" result if the DOI does not match any record.
-
-Resolve a DOI to a CERN Open Data record
-- **get_record**: Returns the full title, abstract, experiment, authors with ORCID identifiers, collision parameters, publication dates, DOI, file distribution summary (number of files, events, size), usage instructions, and a direct link. Use this after finding a record via search to obtain complete details. Example: recid "1" returns the CMS BTau primary dataset.
-
-Get detailed metadata for a specific CERN Open Data record
 - **list_categories**: Returns category names and dataset counts. Categories span the full range of particle physics research: Higgs boson searches, exotic particles (Dark Matter, Extra Dimensions, Gravitons), B physics, heavy-ion collisions, and more. Subcategories within Exotica and Higgs Physics provide finer granularity.
 
 List all physics categories and subcategories with dataset counts
@@ -68,24 +56,36 @@ Search datasets filtered by physics category
 - **search_by_collision_energy**: Available energies include: 13TeV (~50,500 datasets, LHC Run 2), 181-210 GeV (~11,700, LEP2), 7TeV (~1,100, LHC Run 1), 8TeV (~900, LHC Run 1), 5.02TeV (~310, heavy-ion), 2.76TeV (~120, heavy-ion), 130-140 GeV (~120, LEP), 13.6TeV (LHC Run 3). The vast majority of data comes from 13 TeV proton-proton collisions at the LHC.
 
 Search datasets filtered by collision energy
-- **search_by_collision_type**: Available collision types: pp (proton-proton, ~52,000 datasets), e+e- (electron-positron, ~12,700), Pb-Pb (lead-lead, ~140), pPb (proton-lead, ~140). Proton-proton collisions from the LHC dominate the dataset. Electron-positron data comes primarily from the LEP era (DELPHI). Use this to focus on a specific collision topology.
-
-Search datasets filtered by particle collision type
-- **search_by_experiment**: Available experiments include CMS (~52,000 datasets), DELPHI (~12,700), ATLAS (~160), ALICE (~150), LHCb (~108), OPERA (~900), and TOTEM. Combine with a text query for targeted searches within an experiment. This is the fastest way to scope results to a single collaboration.
-
-Search datasets filtered by a specific LHC experiment
 - **search_datasets**: Supports full-text queries combined with filters for experiment, collision type, collision energy, physics category, file type, and year. Returns paginated results with metadata including record ID, title, abstract, event counts, file sizes, and direct links. Use this as the primary discovery tool for finding specific physics data. Example queries: "Higgs boson", "dark matter", "top quark pair production".
 
 Search CERN Open Data datasets with full-text query and filters
-- **search_documentation**: Returns document titles, abstracts, subtypes (Guide, Policy, About, Activities, Authors, Report, Help, Stripping), and direct links. Use this to find instructions on how to use specific datasets, understand detector configurations, or learn about data processing workflows.
-
-Search CERN guides, policies, and documentation
 - **search_software**: Returns software title, description, associated experiment, and subtypes (Analysis, Framework, Tool, Validation, Workflow). Use this to find reconstruction software, analysis frameworks like CMSSW, or specific analysis code associated with published physics results.
 
 Search CERN analysis software, frameworks, and tools
 - **search_supplementaries**: These ~5,900 records provide the technical context needed to reproduce physics analyses. Filter by subtype to find specific configuration types. Essential for researchers reproducing or extending published analyses.
 
 Search CERN supplementary materials and configurations
+- **check_cern_opendata_status**: Use this to verify the integration is working correctly before performing data queries. The API uses the InvenioRDM REST framework.
+
+Verify CERN Open Data API connectivity and portal status
+- **get_glossary**: Returns term names, definitions, and associated experiments. Covers fundamental particles, detector components, analysis techniques, and physics phenomena. Use this to explain technical physics terms like "luminosity", "transverse momentum", "pseudorapidity", "b-tagging", or "muon spectrometer". Invaluable for science communication and educational contexts.
+
+Search the CERN particle physics glossary for term definitions
+- **get_record_by_doi**: Returns the resolved record ID, title, experiment, type, and direct link if found. Useful when you have a DOI from a publication or reference and need to find the corresponding open dataset. DOIs follow the format "10.7483/OPENDATA.CMS.XXX". Returns a "not found" result if the DOI does not match any record.
+
+Resolve a DOI to a CERN Open Data record
+- **get_record**: Returns the full title, abstract, experiment, authors with ORCID identifiers, collision parameters, publication dates, DOI, file distribution summary (number of files, events, size), usage instructions, and a direct link. Use this after finding a record via search to obtain complete details. Example: recid "1" returns the CMS BTau primary dataset.
+
+Get detailed metadata for a specific CERN Open Data record
+- **search_by_collision_type**: Available collision types: pp (proton-proton, ~52,000 datasets), e+e- (electron-positron, ~12,700), Pb-Pb (lead-lead, ~140), pPb (proton-lead, ~140). Proton-proton collisions from the LHC dominate the dataset. Electron-positron data comes primarily from the LEP era (DELPHI). Use this to focus on a specific collision topology.
+
+Search datasets filtered by particle collision type
+- **search_by_experiment**: Available experiments include CMS (~52,000 datasets), DELPHI (~12,700), ATLAS (~160), ALICE (~150), LHCb (~108), OPERA (~900), and TOTEM. Combine with a text query for targeted searches within an experiment. This is the fastest way to scope results to a single collaboration.
+
+Search datasets filtered by a specific LHC experiment
+- **search_documentation**: Returns document titles, abstracts, subtypes (Guide, Policy, About, Activities, Authors, Report, Help, Stripping), and direct links. Use this to find instructions on how to use specific datasets, understand detector configurations, or learn about data processing workflows.
+
+Search CERN guides, policies, and documentation
 
 
 ## 💬 Prompt Examples

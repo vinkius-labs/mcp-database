@@ -20,12 +20,12 @@ Spatial reasoning and geometric calculations are frequent stumbling blocks for L
 
 
 ## Available Tools (3)
-- **calculate_2d_area**: For circle: {"radius": x}. For rectangle: {"width": x, "height": y}. For triangle: {"base": x, "height": y}.
-
-Calculates the exact area of 2D shapes (circle, rectangle, triangle)
 - **calculate_distance**: 2D example: {"x": 0, "y": 0}. 3D example: {"x": 1, "y": 2, "z": 3}.
 
 Calculates the Euclidean distance between two points in 2D or 3D space
+- **calculate_2d_area**: For circle: {"radius": x}. For rectangle: {"width": x, "height": y}. For triangle: {"base": x, "height": y}.
+
+Calculates the exact area of 2D shapes (circle, rectangle, triangle)
 - **calculate_3d_volume**: Sphere: {"radius": x}. Cube: {"side": x}. Cylinder: {"radius": x, "height": y}. Prism: {"width": x, "height": y, "depth": z}.
 
 Calculates the exact volume of 3D shapes (sphere, cube, cylinder, prism)

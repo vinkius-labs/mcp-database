@@ -33,13 +33,13 @@ Connect your **Calibre-Web** instance to any AI agent and interact with your dig
 
 
 ## Available Tools (3)
+- **get_opds_shelf**: Get the OPDS feed for a specific shelf
 - **sync_kobo_library**: Requires Kobo Token.
 
 Sync Kobo library
 - **get_opds_catalog**: Useful for browsing the library structure.
 
 Get the main OPDS catalog feed
-- **get_opds_shelf**: Get the OPDS feed for a specific shelf
 
 
 ## 💬 Prompt Examples

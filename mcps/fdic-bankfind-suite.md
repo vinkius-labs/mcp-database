@@ -34,6 +34,11 @@ Connect to the **FDIC BankFind Suite** to query public data on US banks and fina
 
 
 ## Available Tools (8)
+- **list_history**: List details on structure change events (mergers, acquisitions)
+- **list_locations**: Filter by ADDRESS, CITY, COUNTY, ZIP, etc.
+
+List details on financial institution locations and branches
+- **list_sod**: List Summary of Deposits (SOD) data
 - **list_failures**: Filter by FAILYR, SAVING, RESTYPE, etc.
 
 List details on failed financial institutions
@@ -42,11 +47,6 @@ List details on failed financial institutions
 List information on financial institutions (banks)
 - **list_demographics**: List demographic data related to financial institutions
 - **list_financials**: List detailed financial information for institutions
-- **list_history**: List details on structure change events (mergers, acquisitions)
-- **list_locations**: Filter by ADDRESS, CITY, COUNTY, ZIP, etc.
-
-List details on financial institution locations and branches
-- **list_sod**: List Summary of Deposits (SOD) data
 - **list_summary**: List historic aggregate financial and structure data
 
 

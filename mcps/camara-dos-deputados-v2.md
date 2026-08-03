@@ -34,6 +34,15 @@ Connect to the **Chamber of Deputies Open Data API** to monitor the Brazilian le
 
 
 ## Available Tools (49)
+- **list_deputado_eventos**: List events the deputy participated in
+- **list_deputado_frentes**: List parliamentary fronts the deputy belongs to
+- **list_deputado_historico**: List historical data of the deputy mandates
+- **list_deputado_ocupacoes**: List professional occupations of the deputy
+- **list_deputado_orgaos**: List committees and other organs the deputy is a member of
+- **list_orgao_votacoes**: List votings held within the organ
+- **list_orgaos**: List organs (Committees, Councils, Board of Directors)
+- **list_partido_membros**: List deputies currently or previously affiliated with the party
+- **list_partidos**: List political parties
 - **list_frentes**: List parliamentary fronts
 - **list_proposicao_votacoes**: List votings related to the proposition
 - **get_bloco**: Get details of a block
@@ -47,11 +56,6 @@ Connect to the **Chamber of Deputies Open Data API** to monitor the Brazilian le
 - **list_blocos**: List active parliamentary blocks
 - **list_deputado_despesas**: List expenses reimbursed via Parliamentary Quota for a deputy
 - **list_deputado_discursos**: List transcripts of speeches made by the deputy
-- **list_deputado_eventos**: List events the deputy participated in
-- **list_deputado_frentes**: List parliamentary fronts the deputy belongs to
-- **list_deputado_historico**: List historical data of the deputy mandates
-- **list_deputado_ocupacoes**: List professional occupations of the deputy
-- **list_deputado_orgaos**: List committees and other organs the deputy is a member of
 - **list_deputado_profissoes**: List declared professions of the deputy
 - **list_deputados**: List deputies (deputados)
 - **list_despesas_cota**: Search for expenses across multiple deputies (CEAP)
@@ -64,10 +68,6 @@ Connect to the **Chamber of Deputies Open Data API** to monitor the Brazilian le
 - **list_legislatura_mesa**: List members of the Board of Directors for that legislature
 - **list_legislaturas**: List legislatures (four-year periods of parliamentary work)
 - **list_orgao_membros**: List current members and their roles in the organ
-- **list_orgao_votacoes**: List votings held within the organ
-- **list_orgaos**: List organs (Committees, Councils, Board of Directors)
-- **list_partido_membros**: List deputies currently or previously affiliated with the party
-- **list_partidos**: List political parties
 - **list_proposicao_autores**: List authors of the proposition
 - **list_proposicao_relacionadas**: List other propositions related to this one
 - **list_proposicao_temas**: List areas of interest/themes associated with the proposition

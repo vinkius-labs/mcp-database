@@ -35,8 +35,8 @@ Connect to the official **ANVISA (Brazilian Health Regulatory Agency)** API port
 
 
 ## Available Tools (7)
-- **consultar_cosmeticos**: Search for registered cosmetic products
 - **consultar_medicamentos**: Search for medicines by name, active ingredient, or registration number
+- **consultar_cosmeticos**: Search for registered cosmetic products
 - **consultar_saneantes**: Search for registered sanitizing products
 - **monografias_farmacopeia**: Retrieve monographs for chemical substances
 - **notificacoes_alimentos**: Access food products that only require notification

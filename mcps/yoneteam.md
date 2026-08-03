@@ -34,15 +34,15 @@ Connect your **YoneTeam (Satin Alma)** account to any AI agent and streamline yo
 
 
 ## Available Tools (10)
-- **get_me**: Get account information
 - **get_offer_details**: Get details of a specific offer
 - **get_order_details**: Get details of a specific purchase order
 - **list_deliveries**: List scheduled deliveries
 - **list_demands**: List purchasing demands
+- **list_suppliers**: List approved suppliers
+- **get_me**: Get account information
 - **list_materials_catalog**: List material catalog
 - **list_offers**: List supplier offers
 - **list_purchase_orders**: List purchase orders
-- **list_suppliers**: List approved suppliers
 - **create_demand**: Create a new purchasing demand
 
 

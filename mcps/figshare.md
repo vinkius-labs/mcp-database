@@ -36,14 +36,14 @@ No more manual navigation through repository interfaces to check upload statuses
 
 ## Available Tools (20)
 - **create_collection**: Create a new collection
+- **delete_article**: Delete an article
+- **get_custom_fields**: Get custom metadata fields for the institution
+- **get_file_details**: Get file details
 - **create_private_article**: Create a new private article
 - **create_project**: Create a new project
-- **delete_article**: Delete an article
 - **get_article_downloads**: Get total downloads for an article
 - **get_article**: Get details of a specific article
 - **get_article_views**: Get total views for an article
-- **get_custom_fields**: Get custom metadata fields for the institution
-- **get_file_details**: Get file details
 - **get_hrfeed_upload**: Get HR feed upload details
 - **initiate_file_upload**: Initiate a file upload for an article
 - **list_article_files**: List files for an article
