@@ -14,9 +14,9 @@ The GraphQL Schema Breaking Change Detector is a specialized utility designed to
 
 
 ## Available Tools (3)
-- **compare_schemas**: Compare two GraphQL schemas for breaking changes
 - **inspect_schema**: Inspect GraphQL schema structure
 - **validate_syntax**: Validate GraphQL SDL syntax
+- **compare_schemas**: Compare two GraphQL schemas for breaking changes
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ The Annotation Extractor and Tracker MCP server provides a way to manage technic
 
 
 ## Available Tools (2)
-- **process_annotations**: Processes multiple files to extract and compare annotations
 - **scan_file**: Scans a single file for TODO, FIXME, HACK, or XXX annotations
+- **process_annotations**: Processes multiple files to extract and compare annotations
 
 
 ## 💬 Prompt Examples

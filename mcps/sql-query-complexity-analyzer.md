@@ -14,8 +14,8 @@ The SQL Query Complexity Analyzer provides a structural audit of your SQL statem
 
 
 ## Available Tools (2)
-- **analyze_join_structure**: Analyze the join structure of a SQL query
 - **assess_query_safety**: Assess the safety of a SQL query
+- **analyze_join_structure**: Analyze the join structure of a SQL query
 
 
 ## 💬 Prompt Examples

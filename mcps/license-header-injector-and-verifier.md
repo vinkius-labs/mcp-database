@@ -14,9 +14,9 @@ This MCP server provides tools to ensure legal compliance by managing file heade
 
 
 ## Available Tools (3)
-- **validate_template_integrity**: Ensures the provided template is a valid, usable copyright block
 - **apply_license_header**: Checks if a file is compliant and prepends the header if missing
 - **identify_header_drift**: Detects when a header exists but contains incorrect characters, spacing, or formatting
+- **validate_template_integrity**: Ensures the provided template is a valid, usable copyright block
 
 
 ## 💬 Prompt Examples

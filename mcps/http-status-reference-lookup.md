@@ -18,9 +18,9 @@ The HTTP Status Reference Lookup MCP server provides a deep dive into the semant
 
 
 ## Available Tools (3)
-- **list_all_statuses**: List all registered HTTP status codes
 - **lookup_status**: Look up details for a specific HTTP status and its semantics
 - **validate_status_scenario**: Validate if an HTTP status code is appropriate for a given response scenario
+- **list_all_statuses**: List all registered HTTP status codes
 
 
 ## 💬 Prompt Examples

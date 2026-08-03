@@ -15,8 +15,8 @@ This MCP server provides a way to identify 'hollow' tests in JavaScript and Type
 
 ## Available Tools (3)
 - **assess_density_health**: Evaluates the overall "health" or quality of a test file by comparing its density against predefined industry standards
-- **calculate_test_metrics**: Quantifies the number of tests, assertions, and the resulting density ratio within a specific file
 - **find_empty_tests**: Specifically isolates and locates only the segments of code that represent ineffective, assertion-less tests
+- **calculate_test_metrics**: Quantifies the number of tests, assertions, and the resulting density ratio within a specific file
 
 
 ## 💬 Prompt Examples

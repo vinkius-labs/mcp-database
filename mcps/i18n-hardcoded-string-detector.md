@@ -14,9 +14,9 @@ The i18n Hardcoded String Detector uses advanced Abstract Syntax Tree (AST) pars
 
 
 ## Available Tools (3)
-- **analyze_codebase**: Identify all candidate user-facing string literals within a given directory
 - **audit_strings**: Compare discovered candidate strings against the translation dictionary
 - **verify_dictionary_syntax**: Ensure the translation dictionary is structurally sound
+- **analyze_codebase**: Identify all candidate user-facing string literals within a given directory
 
 
 ## 💬 Prompt Examples

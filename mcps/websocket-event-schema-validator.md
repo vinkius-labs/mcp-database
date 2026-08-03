@@ -14,9 +14,9 @@ The WebSocket Event Schema Validator acts as a gatekeeper for socket communicati
 
 
 ## Available Tools (3)
-- **audit_schema_registry**: Audits the schema registry for integrity
 - **validate_event_payload**: Validates a WebSocket event payload against a registry
 - **verify_event_registration**: Checks if an event name is registered
+- **audit_schema_registry**: Audits the schema registry for integrity
 
 
 ## 💬 Prompt Examples

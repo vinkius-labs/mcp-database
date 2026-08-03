@@ -14,11 +14,11 @@ The Coverage Gate Evaluator MCP server provides a precise way to validate test c
 
 
 ## Available Tools (3)
-- **calculate_threshold_shortfall**: Calculates how much more coverage is needed to meet a threshold
 - **evaluate_coverage_report**: g., ["line_coverage >= 80", "branch_coverage >= 70"]).
 
 Evaluates a coverage report against a set of threshold rules
 - **parse_coverage_rule**: Parses a single threshold rule string into its constituent parts
+- **calculate_threshold_shortfall**: Calculates how much more coverage is needed to meet a threshold
 
 
 ## 💬 Prompt Examples

@@ -14,13 +14,13 @@ The Tool Output Entropy Sanitizer is a security-focused MCP server designed to p
 
 
 ## Available Tools (3)
-- **evaluate_segment_entropy**: Input must be at least 16 characters long.
-
-Audits the randomness of a specific piece of text
 - **sanitize_text_output**: Returns the sanitized text and metadata about redactions.
 
 Sanitizes text by redacting high-entropy segments
 - **verify_window_bounds**: Ensures a proposed window size adheres to constraints
+- **evaluate_segment_entropy**: Input must be at least 16 characters long.
+
+Audits the randomness of a specific piece of text
 
 
 ## 💬 Prompt Examples

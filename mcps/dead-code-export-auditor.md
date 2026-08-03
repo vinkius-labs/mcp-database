@@ -14,9 +14,9 @@ The Dead Code & Export Auditor connects AI agents to your codebase's structural 
 
 
 ## Available Tools (3)
-- **get_symbol_metadata**: Retrieves usage statistics for a specific identifier
 - **audit_file**: Analyzes a single file for unused exports and unreachable code
-- **audit_project**: Performs a global audit across an entire directory
+- **audit_project**: Performs a globalThis audit across an entire directory
+- **get_symbol_metadata**: Retrieves usage statistics for a specific identifier
 
 
 ## 💬 Prompt Examples

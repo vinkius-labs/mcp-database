@@ -14,13 +14,13 @@ This MCP server provides a zero-tolerance validation engine for JSON data. It en
 
 
 ## Available Tools (3)
+- **evaluate_compatibility**: Evaluates if a new JSON Schema is compatible with an old one
 - **validate_json**: The engine will parse them and perform strict validation, including checking for additional properties if specified.
 
 Validates a JSON instance against a provided JSON Schema
 - **verify_integrity**: ) and a JSON array of constraints [{key, expectedType}].
 
 Verifies that environment variables or a string of key-value pairs match expected types
-- **evaluate_compatibility**: Evaluates if a new JSON Schema is compatible with an old one
 
 
 ## 💬 Prompt Examples

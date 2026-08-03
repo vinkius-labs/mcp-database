@@ -14,13 +14,13 @@ This MCP server provides a security engine to prevent path traversal and unautho
 
 
 ## Available Tools (3)
+- **validate_path_access**: Returns permission status, resolved path, and violation reason if denied.
+
+Determines if a specific file system request is safe and permitted under current security policies
 - **analyze_root_integrity**: Audits a list of potentially allowed directories to ensure the configuration itself does not contain forbidden zones
 - **preview_path_expansion**: segments and redundant slashes in the input path.
 
 Demonstrates how a messy or complex path will be cleaned and resolved before any permission checks are applied
-- **validate_path_access**: Returns permission status, resolved path, and violation reason if denied.
-
-Determines if a specific file system request is safe and permitted under current security policies
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides a powerful engine for working with both standard and ex
 
 
 ## Available Tools (4)
-- **describe_schedule**: Translates a technical cron expression into a human-readable sentence
-- **detect_scheduling_anomalies**: Identifies logical flaws or operational risks in a schedule configuration
 - **get_next_runs**: Calculates the next specific timestamps when the schedule will trigger
 - **validate_cron**: Determines if a provided cron string follows correct syntax
+- **describe_schedule**: Translates a technical cron expression into a human-readable sentence
+- **detect_scheduling_anomalies**: Identifies logical flaws or operational risks in a schedule configuration
 
 
 ## 💬 Prompt Examples

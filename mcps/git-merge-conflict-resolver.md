@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine for handling Git merge conflicts
 
 
 ## Available Tools (3)
-- **identify_conflicts**: Locate Git merge conflict markers in a file
 - **resolve_conflicts**: Resolve Git merge conflicts using a specific strategy
 - **verify_integrity**: Verify that no Git conflict markers remain in a text block
+- **identify_conflicts**: Locate Git merge conflict markers in a file
 
 
 ## 💬 Prompt Examples

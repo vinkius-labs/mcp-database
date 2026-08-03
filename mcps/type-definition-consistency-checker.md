@@ -14,9 +14,9 @@ The Type Definition Consistency Checker is a deterministic auditing tool designe
 
 
 ## Available Tools (3)
-- **compare_definitions**: Compare two type definitions
 - **inspect_structure**: Inspect the structure of a type definition
 - **sync_definitions**: Synchronize multiple type definitions
+- **compare_definitions**: Compare two type definitions
 
 
 ## 💬 Prompt Examples
