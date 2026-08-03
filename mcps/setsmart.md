@@ -36,16 +36,16 @@ No more wrestling with multiple messaging tabs to reach your customers. Your AI 
 
 
 ## Available Tools (10)
-- **update_contact**: Update an existing contact
-- **add_tag_to_contact**: Add a tag to a contact
 - **create_contact**: Create a new contact
 - **delete_contact**: Delete a contact
 - **get_contact**: Get contact details by ID
 - **list_contacts**: List all contacts
+- **send_whatsapp_message**: Send a WhatsApp message
+- **update_contact**: Update an existing contact
+- **add_tag_to_contact**: Add a tag to a contact
 - **list_tags**: List all tags
 - **list_webhooks**: List all webhooks
 - **send_sms_message**: Send an SMS message
-- **send_whatsapp_message**: Send a WhatsApp message
 
 
 ## 💬 Prompt Examples

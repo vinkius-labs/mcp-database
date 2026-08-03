@@ -36,17 +36,17 @@ No more manual contact entry or searching through sequences. Your AI acts as a d
 
 
 ## Available Tools (11)
+- **get_campaign**: Get campaign details
 - **get_contact**: Get contact details by ID
 - **get_tag_details**: Get details for a specific tag
 - **list_campaigns**: List all campaigns
 - **list_contacts**: List all contacts
-- **list_tags**: List all tags/terms
-- **list_users**: List system users
-- **send_email**: Send an email to a contact
 - **update_contact**: Update an existing contact
+- **list_users**: List system users
+- **list_tags**: List all tags/terms
+- **send_email**: Send an email to a contact
 - **create_contact**: Create a new contact
 - **delete_contact**: Delete a contact
-- **get_campaign**: Get campaign details
 
 
 ## 💬 Prompt Examples

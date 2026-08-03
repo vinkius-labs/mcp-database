@@ -29,12 +29,12 @@ Connect your **Referrizer** account to any AI agent and simplify your referral m
 
 ## Available Tools (11)
 - **get_campaign**: Get details for a referral campaign
-- **get_referral**: Get details for a specific referral
 - **get_reward**: Get details for a specific reward
+- **list_marketing_campaigns**: List marketing campaigns
 - **list_transactions**: List all reward transactions
 - **create_contact**: Register a new contact
 - **get_contact_details**: Get details for a specific contact
-- **list_marketing_campaigns**: List marketing campaigns
+- **get_referral**: Get details for a specific referral
 - **list_contacts**: List Referrizer contacts
 - **list_referral_history**: List referrals
 - **list_loyalty_rewards**: List available rewards

@@ -42,11 +42,11 @@ No more manual spreadsheet updates or searching through disparate databases. You
 - **get_table_details**: Get details of a specific table
 - **get_workspace_details**: Get details of a specific workspace
 - **list_fields**: List all fields in a table
-- **list_table_records**: List records in a Pitchly table
 - **list_tables**: List tables in a workspace
 - **list_workspaces**: List all Pitchly workspaces
 - **search_records**: Search records within a table
 - **update_record**: Update an existing record
+- **list_table_records**: List records in a Pitchly table
 
 
 ## 💬 Prompt Examples

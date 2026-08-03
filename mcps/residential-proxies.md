@@ -36,11 +36,11 @@ No more manual copy-pasting of proxy strings or missing connectivity drops. Your
 
 
 ## Available Tools (10)
-- **get_br_proxies**: Get Brazil residential proxies
 - **get_proxies_by_country**: g., US, GB, DE, BR).
 
 Get residential proxies filtered by country
 - **get_de_proxies**: Get Germany residential proxies
+- **get_br_proxies**: Get Brazil residential proxies
 - **get_proxies_limited**: Useful for testing or sampling available proxies.
 
 Get a limited number of proxies

@@ -26,9 +26,9 @@ Marketing teams, social media managers, and developers looking to integrate Post
 
 
 ## Available Tools (11)
-- **getPost**: Get a specific post by ID in Postproxy
 - **hideComment**: Hide a comment on a post in Postproxy
 - **likeComment**: Like a comment on a post in Postproxy
+- **getPost**: Get a specific post by ID in Postproxy
 - **listComments**: List comments for a specific post in Postproxy
 - **listPosts**: List posts in Postproxy
 - **listProfileGroups**: List all profile groups in Postproxy

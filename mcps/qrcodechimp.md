@@ -36,11 +36,7 @@ No more manual dashboard navigation for simple updates. Your AI acts as a dedica
 
 
 ## Available Tools (11)
-- **get_analytics**: Get scan analytics for a QR code
-- **get_bulk_qr**: Get details for a bulk QR code generation job
-- **get_qrcode**: Get QR code details
-- **get_scan_stats**: Get scan analytics for a QR code
-- **list_campaigns**: List QR campaigns
+- **delete_qrcode**: Delete a QR code
 - **list_folders**: List all QR code folders
 - **list_qrcodes**: List all QR codes
 - **list_templates**: List all QR code design templates
@@ -48,7 +44,11 @@ No more manual dashboard navigation for simple updates. Your AI acts as a dedica
 - **create_qrcode**: Pass QR data as a JSON string.
 
 Create a new QR code
-- **delete_qrcode**: Delete a QR code
+- **get_analytics**: Get scan analytics for a QR code
+- **get_bulk_qr**: Get details for a bulk QR code generation job
+- **get_qrcode**: Get QR code details
+- **get_scan_stats**: Get scan analytics for a QR code
+- **list_campaigns**: List QR campaigns
 
 
 ## 💬 Prompt Examples

@@ -37,12 +37,12 @@ No more manual status checking in the ATS for candidate updates. Your AI acts as
 
 ## Available Tools (12)
 - **check_api_health**: Verify Ninehire API status
+- **get_authenticated_user_info**: Get current account profile
+- **get_applicant_profile**: Get details for a specific candidate
+- **get_job_details**: Get details for a specific job
 - **register_new_applicant**: Requires essential info like name and email.
 
 Add a candidate manually
-- **get_applicant_profile**: Get details for a specific candidate
-- **get_job_details**: Get details for a specific job
-- **get_authenticated_user_info**: Get current account profile
 - **list_job_postings**: Supports filtering by title, job group, and employment type.
 
 List all job openings
