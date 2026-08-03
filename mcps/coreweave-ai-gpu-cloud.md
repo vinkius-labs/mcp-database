@@ -36,25 +36,25 @@ Connect your **CoreWeave** account to any AI agent to manage specialized GPU clo
 ## Available Tools (24)
 - **create_deployment**: Create a new Inference Deployment
 - **create_gateway**: Create a new Inference Gateway
-- **create_vpc**: Create a new VPC
 - **delete_capacity_claim**: Delete an Inference Capacity Claim
-- **delete_cluster**: Delete a CKS cluster
 - **delete_deployment**: Delete an Inference Deployment
 - **delete_gateway**: Delete an Inference Gateway
-- **delete_vpc**: Delete a VPC
 - **get_cluster**: Get details for a specific CKS cluster
-- **list_capacity_claims**: List all Inference Capacity Claims
-- **list_clusters**: List all CoreWeave Kubernetes Service (CKS) clusters
 - **list_deployments**: List all Inference Deployments
 - **list_gateways**: List all Inference Gateways
 - **list_vpcs**: List all Virtual Private Clouds (VPCs)
-- **query_logs**: Query Loki logs
 - **query_metrics**: Query Prometheus metrics
 - **update_capacity_claim**: Update an Inference Capacity Claim
 - **update_cluster**: Requires an updateMask in the payload.
 
 Update a CKS cluster
 - **update_deployment**: Update an Inference Deployment
+- **create_vpc**: Create a new VPC
+- **delete_cluster**: Delete a CKS cluster
+- **delete_vpc**: Delete a VPC
+- **list_capacity_claims**: List all Inference Capacity Claims
+- **list_clusters**: List all CoreWeave Kubernetes Service (CKS) clusters
+- **query_logs**: Query Loki logs
 - **update_gateway**: Update an Inference Gateway
 - **update_vpc**: Update a VPC
 - **get_vpc**: Get details for a specific VPC

@@ -41,7 +41,6 @@ Connect your **Capsule CRM** account to any AI agent to streamline your sales an
 - **create_task**: Create a new task
 - **delete_party**: Delete a party
 - **delete_project**: Delete a project (kase)
-- **delete_task**: Delete a task
 - **get_current_user**: Show the authenticated user
 - **get_opportunity**: Get details for a specific opportunity
 - **get_party**: Get details for a specific party
@@ -56,14 +55,15 @@ Connect your **Capsule CRM** account to any AI agent to streamline your sales an
 - **list_projects**: List all projects (kases)
 - **list_tags**: List tag definitions for parties, opportunities, or kases
 - **list_tasks**: List tasks (default: open)
-- **list_teams**: List all teams
-- **list_users**: List all users
-- **search_opportunities**: Search for opportunities
 - **search_parties**: Search for parties
 - **update_opportunity**: Update an existing opportunity
 - **update_party**: Update an existing party
 - **update_project**: Update an existing project (kase)
 - **update_task**: Update an existing task
+- **delete_task**: Delete a task
+- **list_teams**: List all teams
+- **list_users**: List all users
+- **search_opportunities**: Search for opportunities
 - **delete_opportunity**: Delete an opportunity
 
 

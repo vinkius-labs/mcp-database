@@ -44,14 +44,14 @@ Connect your **Convai** account to any AI agent to orchestrate lifelike conversa
 - **get_prompt**: Fetch prompt data for debugging or advanced configuration
 - **get_response**: Get a response from a character
 - **list_characters**: Returns all characters associated with the account
-- **list_chat_sessions**: List chat sessions for a character
 - **list_knowledge_bank**: List Knowledge Bank status
-- **list_languages**: Returns supported languages
 - **list_narrative_sections**: List narrative sections
 - **list_narrative_triggers**: List narrative triggers
 - **list_voices**: Returns available voices categorized by provider
 - **toggle_narrative**: Toggle narrative driven mode for a character
 - **update_character**: Update an existing Convai character
+- **list_chat_sessions**: List chat sessions for a character
+- **list_languages**: Returns supported languages
 - **connect_live**: Connect to Live API via WebRTC
 - **create_character**: Create a new Convai character
 - **create_narrative_section**: Create a narrative section

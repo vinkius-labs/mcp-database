@@ -33,6 +33,7 @@ Connect your **Close CRM** account to any AI agent to streamline your sales work
 
 
 ## Available Tools (26)
+- **create_contact**: Create a new Contact
 - **create_lead**: Create a new Lead
 - **create_opportunity**: Create a new Opportunity
 - **create_task**: Create a new Task
@@ -48,7 +49,6 @@ Connect your **Close CRM** account to any AI agent to streamline your sales work
 - **list_leads**: Supports pagination and field selection.
 
 List Leads in Close CRM
-- **list_meetings**: List Meeting activities
 - **list_notes**: List Note activities
 - **list_opportunities**: List Opportunities
 - **list_sequences**: List Sequences (automated outreach workflows)
@@ -62,7 +62,7 @@ Update an existing Lead
 - **update_opportunity**: Update an existing Opportunity
 - **activity_report**: Generate an Activity Report
 - **bulk_email**: Initiate a mass email to a filtered list of leads
-- **create_contact**: Create a new Contact
+- **list_meetings**: List Meeting activities
 
 
 ## 💬 Prompt Examples

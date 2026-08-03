@@ -39,7 +39,6 @@ Connect your **Cosmic** headless CMS to any AI agent to manage your content infr
 - **create_object_type**: Create a new Object Type
 - **create_revision**: Add a Revision for an Object
 - **delete_media**: Delete Media
-- **delete_object**: Delete an Object
 - **delete_object_type**: Delete an Object Type
 - **get_agent_conversation_history**: Get history for a specific Agent conversation
 - **get_object**: Get a single Object by ID
@@ -54,6 +53,7 @@ List Objects in a Cosmic Bucket
 - **list_revisions**: Get Revisions for an Object
 - **send_agent_message**: Send a message to an AI Agent
 - **update_media**: Update Media metadata
+- **delete_object**: Delete an Object
 - **update_object**: Update an existing Object
 - **update_object_type**: Update an Object Type
 - **batch_objects**: Perform batch operations on Objects (Max 25)

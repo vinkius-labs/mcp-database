@@ -35,9 +35,6 @@ Connect your **Cockpit CMS** instance to any AI agent and take full control of y
 
 ## Available Tools (17)
 - **batch_content_items**: Batch request content from multiple models
-- **create_or_update_content_item**: If an _id is provided in the data, it updates the existing item.
-
-Create or update a content item
 - **delete_content_item**: Delete a content item by ID
 - **get_asset_image**: Generate thumbnails or resized images
 - **get_asset**: Get asset metadata by ID
@@ -52,9 +49,12 @@ Create or update a content item
 Fetch a list of items from a Cockpit content collection
 - **list_menus**: List all menus
 - **list_pages**: List all pages
-- **list_routes**: Get a lightweight list of all routes and slugs
 - **search_detektivo**: Search within a specific Detektivo index
 - **submit_inbox**: Submit form data to an Inbox
+- **create_or_update_content_item**: If an _id is provided in the data, it updates the existing item.
+
+Create or update a content item
+- **list_routes**: Get a lightweight list of all routes and slugs
 
 
 ## 💬 Prompt Examples

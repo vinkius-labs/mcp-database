@@ -34,9 +34,8 @@ Connect your **CryptoCompare** account to any AI agent to access institutional-g
 
 
 ## Available Tools (13)
-- **get_historical_daily**: Get daily historical OHLCV data
-- **get_historical_hourly**: Get hourly historical OHLCV data
 - **get_historical_minute**: Get minute historical OHLCV data
+- **get_historical_daily**: Get daily historical OHLCV data
 - **get_latest_news**: Get the latest cryptocurrency news
 - **get_price_multi_full**: Get full 24h market data for multiple cryptocurrencies
 - **get_price_multi**: Get the current price of multiple cryptocurrencies
@@ -47,6 +46,7 @@ Connect your **CryptoCompare** account to any AI agent to access institutional-g
 - **list_all_exchanges**: List all supported exchanges
 - **list_news_categories**: List available news categories
 - **list_news_feeds**: List available news feeds
+- **get_historical_hourly**: Get hourly historical OHLCV data
 
 
 ## 💬 Prompt Examples

@@ -39,12 +39,12 @@ Connect to the **CurseForge** API and empower your AI agent to navigate the vast
 - **get_mod_description**: Get the HTML description of a mod
 - **get_mod_file_changelog**: Get the HTML changelog for a specific file
 - **get_mod_file_download_url**: Get a signed download URL for a specific file
-- **get_mod_file**: Get details for a specific file of a mod
 - **list_mod_files**: Get all files for a specific mod
-- **get_mod**: Get details for a specific mod
-- **get_mods_batch**: Get a list of mods by their IDs
 - **search_mods**: Search for mods based on criteria
 - **list_game_versions_v1**: Get all available versions for a game (V1)
+- **get_mod_file**: Get details for a specific file of a mod
+- **get_mod**: Get details for a specific mod
+- **get_mods_batch**: Get a list of mods by their IDs
 - **list_game_versions_v2**: Get detailed version information for a game (V2)
 - **list_categories**: Get all available classes and categories for a game
 - **get_files_batch**: Get a list of files by their IDs
