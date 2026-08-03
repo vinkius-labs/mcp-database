@@ -8,6 +8,7 @@ Explore the open database of **shipping-logistics** Model Context Protocol (MCP)
 | [KeepTruckin](../mcps/keeptruckin.md) | Manage your fleet and assets via KeepTruckin — track locations, monitor reefer sensors, and analyze vehicle utilization directly from your AI agent. |
 | [Navisphere](../mcps/navisphere.md) | Automate freight logistics via Navisphere — search available loads, submit bids, track shipments, and manage documentation directly from your AI agent. |
 | [Road511 Trucking](../mcps/road511-trucking.md) | Access trucking data via Road511 — track truck routes, bridge clearances, weigh stations, truck stops, parking, and weight restrictions across US and Canada from any AI agent. |
+| [Route4Me](../mcps/route4me.md) | Connect your Route4Me account to AI agents to manage addresses, routes, optimizations, and vehicles. |
 
 
 ---

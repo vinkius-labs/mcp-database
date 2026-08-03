@@ -6,6 +6,7 @@ Explore the open database of **communication** Model Context Protocol (MCP) serv
 |-----------|-------------|
 | [BulkSMS](../mcps/bulksms.md) | Send and manage SMS messages via BulkSMS.com — track delivery, manage groups, and monitor credits directly from any AI agent. |
 | [LiveKit Real-Time Rooms](../mcps/tt-voice.md) | Manage LiveKit voice and video rooms — create sessions, control participants, mute tracks, and broadcast data from any AI agent. |
+| [LiveKit Real-Time Rooms Alternative](../mcps/livekit-real-time-rooms-alternative.md) | Manage LiveKit voice and video rooms — create sessions, control participants, mute tracks, and broadcast data from any AI agent. |
 | [Thoughtly](../mcps/thoughtly.md) | Deploy AI voice agents to make or receive calls, manage CRM contacts, and access call histories instantly. |
 
 

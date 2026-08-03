@@ -8,8 +8,8 @@ Explore the open database of **growth-engine** Model Context Protocol (MCP) serv
 | [Ahrefs](../mcps/ahrefs.md) | Professional SEO intelligence — audit backlinks, keywords, and domain health via AI. |
 | [Algolia Analytics](../mcps/algolia-analytics.md) | Search performance intelligence — audit CTR, conversions, and top searches via AI. |
 | [Amplitude](../mcps/amplitude.md) | Analyze product data via Amplitude — get user activity, calculate retention, analyze funnels, and track revenue directly from any AI agent. |
+| [Apollo.io](../mcps/apolloio.md) | Prospect smarter with verified contact data, enrich leads in real time, and build targeted sales sequences that convert. |
 | [Apollo.io](../mcps/apolloio-alternative.md) | Prospect smarter with verified contact data, enrich leads in real time, and build targeted sales sequences that convert. |
-| [Apollo.io](../mcps/apolloio.md) | Power your sales engagement with Apollo.io — search for prospects, enrich contact data, and manage sequences via AI. |
 | [Beehiiv](../mcps/beehiiv.md) | Automate newsletter management via Beehiiv — manage publications, subscribers, analytics, and posts natively with your AI agent. |
 | [Bloomreach](../mcps/bloomreach.md) | Manage your marketing automation via Bloomreach — list catalogs, campaigns, and customer segments directly from any AI agent. |
 | [Braze](../mcps/braze.md) | Manage customer engagement via Braze — track users, list campaigns, and trigger canvases directly from any AI agent. |

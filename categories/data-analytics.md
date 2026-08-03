@@ -262,7 +262,6 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [Reservoir (NFT Liquidity API)](../mcps/reservoir-nft-liquidity-api.md) | Access aggregated NFT liquidity, metadata, and real-time pricing across all major marketplaces via the Reservoir API. |
 | [Road511](../mcps/road511.md) | Access real-time US and Canada traffic data via Road511 — track incidents, monitor cameras, check road conditions, and analyze trends from any AI agent. |
 | [Rondônia Dados Abertos](../mcps/rondonia-dados-abertos.md) | Access official open data from the State of Rondônia — query datasets, transparency records, payroll, and public spending. |
-| [Route4Me](../mcps/route4me.md) | Connect your AI assistant to Route4Me to orchestrate complex fleet logistics, solve multi-stop route optimizations, and track real-time vehicle GPS directly via chat. |
 | [SafeCube Container Tracking](../mcps/safecube-container-tracking.md) | Track maritime containers — audit shipments and events via AI. |
 | [SafeGraph](../mcps/safegraph.md) | Integrate SafeGraph's premier geospatial dataset into your AI. Discover detailed POIs, analyze foot traffic patterns, and process precise building geometries seamlessly from conversational prompts. |
 | [SAMHSA Treatment Locator](../mcps/samhsa-treatment-locator.md) | Find substance use and mental health treatment facilities across the US using official SAMHSA locator data. |

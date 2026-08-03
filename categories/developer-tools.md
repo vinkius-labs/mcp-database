@@ -154,6 +154,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Deterministic Base Converter](../mcps/deterministic-base-converter.md) | Equip your AI with infinite-precision mathematical conversion between any numerical bases (2 through 36), including Binary, Hexadecimal, and Octal. |
 | [Deterministic Codec Engine](../mcps/deterministic-codec-engine.md) | Empower your AI to perfectly serialize and deserialize data. Effortlessly switch between URL Encoding, HTML Entities, Unicode Escapes, and DNS Punycode with a native V8 engine. |
 | [Deterministic Color Engine](../mcps/deterministic-color-engine.md) | Equip your AI with precise UI design capabilities. Deterministically convert HEX/RGB/HSL, manipulate luminance, and generate mathematically perfect palettes. |
+| [Deterministic JSON Schema Gatekeeper](../mcps/deterministic-json-schema-gatekeeper.md) | Transform your AI into a strict data gatekeeper. Validate JSON payloads instantly with a lightweight, native Javascript engine without Zod or Ajv bloat. |
 | [Deterministic Logic Gate Evaluator](../mcps/deterministic-logic-gate-evaluator.md) | Evaluate complex boolean logic expressions with precise truth value computation. |
 | [Deterministic Logic Gate Evaluator Alternative](../mcps/deterministic-logic-gate-evaluator-alternative.md) | Evaluate complex boolean logic expressions with precise truth value computation. |
 | [Deterministic Math Expression Evaluator](../mcps/deterministic-math-expression-evaluator.md) | Equip your AI with flawless algebraic parsing. Safely evaluate complex mathematical string expressions without using vulnerable `eval()` execution. |
@@ -480,6 +481,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Restpack](../mcps/restpack.md) | Convert any URL or HTML into professional PDFs and high-fidelity screenshots directly from your AI agent using the Restpack API. |
 | [RMSE & MAE Calculator](../mcps/rmse-mae-calculator.md) | Compute exact Root Mean Square Error (RMSE) and Mean Absolute Error (MAE) for regression models. Stop hallucinating model validation metrics. |
 | [Roboflow](../mcps/roboflow.md) | Manage computer vision workflows — upload images, train models, and manage datasets directly from your AI agent. |
+| [RoboHash](../mcps/robohash.md) | Generate unique robot, monster, or kitten avatars from any text string — perfect for profile pictures and placeholders. |
 | [ROC AUC Evaluator](../mcps/roc-auc-evaluator.md) | Compute the exact Area Under the ROC Curve for binary classification predictions. Local, mathematically perfect, zero LLM estimation. |
 | [Rollbar](../mcps/rollbar.md) | Connect your AI assistant to Rollbar to identify active bugs, review stack traces, trace code deployments, and manage error lifecycles without leaving the chat. |
 | [RubyGems](../mcps/rubygems.md) | Manage Ruby packages directly from your AI agent — search for gems, inspect versions, and track download statistics on RubyGems.org. |
@@ -570,6 +572,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Uptime.com](../mcps/uptimecom.md) | Monitor website and API uptime from 30+ global locations with instant alerts when downtime hits any of your services. |
 | [URL Metadata Scraper](../mcps/url-metadata-scraper.md) | Stop wasting tokens scraping entire websites. Instantly extract clean OpenGraph metadata (title, description, image) from any URL. |
 | [URL Slug Generator](../mcps/url-slug-generator-alternative.md) | Transliterate complex international text into 100% SEO-friendly URL slugs. Prevent AI hallucination of invalid characters in CMS routing. |
+| [Urlbox](../mcps/urlbox.md) | Render websites as high-quality screenshots and PDFs with a cloud API that handles responsive layouts and dynamic content. |
 | [Urlbox](../mcps/urlbox-alternative.md) | Render websites as high-quality screenshots and PDFs with a cloud API that handles responsive layouts and dynamic content. |
 | [User-Agent Parser](../mcps/user-agent-parser.md) | Decode raw HTTP User-Agent strings instantly. Extract structured Browser, OS, and Device data for accurate IT log analysis. |
 | [Userback](../mcps/userback.md) | Collect visual feedback from users with annotated screenshots, screen recordings, and bug reports embedded in your product. |

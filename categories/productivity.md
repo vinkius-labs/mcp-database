@@ -35,6 +35,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Affinda](../mcps/affinda.md) | Intelligent document processing — parse resumes, invoices, and IDs via AI. |
 | [AfterLogic Aurora](../mcps/afterlogic-aurora.md) | Email and webmail management — manage folders, messages, and accounts via AI. |
 | [Age Calculator](../mcps/age-calculator.md) | Calculate your exact age in years, months, days, hours, minutes, and seconds. |
+| [Age Calculator Alternative](../mcps/age-calculator-alternative.md) | Calculate your exact age in years, months, days, hours, minutes, and seconds. |
 | [Agendor](../mcps/agendor.md) | CRM for sales teams — manage leads, organizations, and pipelines via AI. |
 | [AgentMail](../mcps/agentmail.md) | Give your AI agents their own email inbox to read, send, and reply to messages natively. |
 | [AI Receptionist](../mcps/ai-receptionist.md) | Let AI answer your business calls, book appointments, and handle customer inquiries around the clock without missing a beat. |
@@ -206,6 +207,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Copy.ai](../mcps/copyai.md) | Equip your AI agent to automate content production and business processes using Copy.ai Workflows. |
 | [Copysmith](../mcps/copysmith.md) | Generate marketing copy, product descriptions, and ad variations at scale with AI trained on high-performing content. |
 | [COR](../mcps/cor.md) | Optimize creative agency profitability with project tracking, resource allocation, and real-time margin analysis for every job. |
+| [COR Alternative](../mcps/cor-alternative.md) | Optimize creative agency profitability with project tracking, resource allocation, and real-time margin analysis for every job. |
 | [Cornerstone OnDemand](../mcps/cornerstone-ondemand.md) | Equip your AI agent to manage training, performance, and employee transcripts via the Cornerstone LMS API. |
 | [Corporate Buzzword](../mcps/corporate-buzzword.md) | Generate random corporate buzzwords and professional phrases to elevate your business speak or add humor to your workflow. |
 | [Corsizio](../mcps/corsizio.md) | Sell event tickets and manage class registrations with a lightweight booking platform that handles payments and attendees. |
@@ -497,6 +499,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [JokeAPI](../mcps/jokeapi.md) | Universal humor engine — get random jokes, filter by category and safety flags via AI. |
 | [JokeAPI](../mcps/jokeapi-alternative.md) | Access thousands of jokes — audit categories and flags via AI. |
 | [Jokes API (API Ninjas)](../mcps/jokes-api-api-ninjas.md) | Access random jokes — audit content and limits via AI. |
+| [Jooble](../mcps/jooble.md) | Search millions of job vacancies across the globe from Jooble directly within your AI agent. |
 | [Joomla (Open-Source CMS)](../mcps/joomla-open-source-cms.md) | Manage content via Joomla — list and create articles, manage categories and tags, and audit site menus. |
 | [Jotform](../mcps/jotform-alternative.md) | Build powerful online forms with drag-and-drop ease, collect payments, gather signatures, and process submissions automatically. |
 | [JotForm](../mcps/jotform.md) | Manage forms, submissions, and reports via JotForm API. |
@@ -551,6 +554,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Loom (Async Video Messaging)](../mcps/loom-async-video-messaging.md) | Manage video messages via Loom — retrieve metadata, handle timeline comments, and track viewer analytics. |
 | [Loopio](../mcps/loopio.md) | Connect your Loopio RFP platform to AI — search approved answers, manage proposal projects, and automate questionnaire responses naturally via chat. |
 | [Lorem Ipsum Generator](../mcps/lorem-ipsum-generator.md) | Generate deterministic placeholder text by words, sentences, or paragraphs. When an AI writes filler text, it varies wildly every time — this engine delivers consistent, predictable lorem ipsum. |
+| [Loripsum](../mcps/loripsum.md) | Generate professional placeholder text (Lorem Ipsum) with customizable HTML formatting, lists, and headers for your mockups. |
 | [Lovo AI (Genny TTS & Voice Synthesis API)](../mcps/lovo-ai-genny-tts-voice-synthesis-api.md) | Generate high-quality AI voices and text-to-speech synthesis directly from your AI agent using Lovo AI's Genny API. |
 | [Lumber Cut List Generator](../mcps/lumber-cut-list-generator.md) | Optimize wood cutting from standard lumber and plywood stock. |
 | [Lunatask](../mcps/lunatask.md) | Manage tasks, habits, and notes via the Lunatask REST API (Encrypted Metadata Only). |
@@ -857,7 +861,6 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Universe](../mcps/universe.md) | Manage events, ticketing, and guestlists via Universe — list events, check in attendees, and handle access keys directly from your AI agent. |
 | [Unleash (Feature Toggles)](../mcps/unleash-feature-toggles.md) | Manage feature flags, strategies, and environments via Unleash — evaluate toggles, list projects, and monitor metrics directly from your AI agent. |
 | [Upper Route Planner](../mcps/upper-route-planner.md) | Plan delivery routes for multiple drivers with optimization algorithms that minimize drive time and maximize daily stops. |
-| [Urlbox](../mcps/urlbox.md) | Render website screenshots — audit high-fidelity visual content via AI. |
 | [US Equity Compensation Calculator](../mcps/us-equity-compensation-calculator.md) | Project the future value of RSUs and Stock Options across different exit scenarios. |
 | [US Filing Deadline Calculator](../mcps/us-filing-deadline-calculator.md) | Calculate US federal court filing deadlines with automatic weekend and holiday adjustments. |
 | [US W-4 Withholding Estimator](../mcps/us-w-4-withholding-estimator.md) | Calculate precise federal income tax withholding per pay period to avoid penalties. |

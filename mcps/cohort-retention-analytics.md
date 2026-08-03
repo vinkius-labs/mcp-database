@@ -14,10 +14,10 @@ This MCP server provides specialized analytical tools for processing month-over-
 
 
 ## Available Tools (4)
+- **calculate_retention_curve**: Generates a sequence of data points representing the decay of a cohort over．
 - **calculate_average_lifetime**: Determines the expected number of months a user stays active
 - **compare_performance_to_benchmark**: Compares a specific metric against the hardcoded industry standard for a chosen product category
 - **evaluate_retention_milestone**: Checks the specific retention percentage for a user at a requested point in time
-- **calculate_retention_curve**: Generates a sequence of data points representing the decay of a cohort over．
 
 
 ## 💬 Prompt Examples

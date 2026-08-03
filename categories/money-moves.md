@@ -74,7 +74,7 @@ Explore the open database of **money-moves** Model Context Protocol (MCP) server
 | [Marqeta](../mcps/marqeta.md) | Issue cards, manage users, and process payments via Marqeta's modern card issuing platform. |
 | [Maxio (SaaS Billing & FinOps)](../mcps/maxio-saas-billing-finops.md) | Manage SaaS billing via Maxio — audit customer contracts, track ARR/MRR metrics, and create invoices. |
 | [Mercado Pago](../mcps/mercado-pago.md) | Process payments, generate Pix QR codes, manage customers and refunds via Mercado Pago API. |
-| [Mercury](../mcps/mercury.md) | Equip your AI agent with direct access to Mercury — check account balances, review transactions, and manage recipients without opening the banking dashboard. |
+| [Mercury](../mcps/mercury.md) | Bank smarter for your startup with FDIC-insured accounts, treasury management, and business banking built for tech companies. |
 | [Mercury](../mcps/mercury-alternative.md) | Bank smarter for your startup with FDIC-insured accounts, treasury management, and business banking built for tech companies. |
 | [Modulr](../mcps/modulr.md) | Empowers algorithmic control over European Payment volumes. Execute massive HMAC-secured payment schedules, create internal ledgers natively. |
 | [Mollie](../mcps/mollie.md) | Accept online payments across Europe with a payment gateway that supports iDEAL, credit cards, PayPal, and local methods seamlessly. |

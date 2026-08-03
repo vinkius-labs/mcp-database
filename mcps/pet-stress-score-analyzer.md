@@ -25,8 +25,8 @@ This service bridges the gap between observation and actionable care. It uses ad
 
 
 ## Available Tools (3)
-- **calculate_stress_score**: Calculate estimated stress score for a pet based on observed behavioral signals
 - **generate_management_suggestions**: Generate environmental management recommendations to reduce pet stress
+- **calculate_stress_score**: Calculate estimated stress score for a pet based on observed behavioral signals
 - **query_probable_triggers**: Identify probable environmental triggers causing pet stress
 
 

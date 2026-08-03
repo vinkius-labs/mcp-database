@@ -5,7 +5,7 @@
 
 ## Overview
 
-**Category:** [animal behavior](../categories/animal-behavior.md)
+**Category:** [ethology](../categories/ethology.md)
 
 Determine a cat's emotional state instantly by describing observable body cues like posture, ear angle, tail movement, and pupil size.
 

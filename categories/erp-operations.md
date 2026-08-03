@@ -58,6 +58,7 @@ Explore the open database of **erp-operations** Model Context Protocol (MCP) ser
 | [Good Grants](../mcps/good-grants.md) | Discover and manage grant applications with a platform that matches your organization to the right funding opportunities. |
 | [GorillaDesk](../mcps/gorilladesk.md) | Manage field service operations — schedule jobs, invoice customers, and update notes via AI. |
 | [Grid](../mcps/grid.md) | Turn spreadsheet data into interactive dashboards and visual stories that make numbers accessible to every stakeholder. |
+| [Grid Alternative](../mcps/grid-alternative.md) | Turn spreadsheet data into interactive dashboards and visual stories that make numbers accessible to every stakeholder. |
 | [Guesty](../mcps/guesty.md) | Automate vacation rental management via Guesty — manage reservations, listings, guests, and calendars directly from any AI agent. |
 | [Guidewire ClaimCenter](../mcps/guidewire-claimcenter.md) | Manage insurance claims via ClaimCenter — track claim status, monitor exposures, and manage activities directly from any AI agent. |
 | [HCSS](../mcps/hcss.md) | Automate heavy construction management via HCSS — manage jobs, timecards, estimates, and equipment telematics directly from any AI agent. |

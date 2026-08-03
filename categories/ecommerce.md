@@ -137,6 +137,7 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Linnworks (E-commerce Ops)](../mcps/linnworks-e-commerce-ops.md) | Manage e-commerce operations via Linnworks — audit open orders, track inventory SKUs, and monitor multi-location stock levels. |
 | [Lodgify](../mcps/lodgify.md) | Manage vacation rental properties, bookings, availability, rates, quotes, and channel connections for your Lodgify account through natural conversation. |
 | [Loop](../mcps/loop.md) | Collect customer feedback through micro-surveys that measure NPS, CSAT, and product sentiment without disrupting the user experience. |
+| [Loop Alternative](../mcps/loop-alternative.md) | Collect customer feedback through micro-surveys that measure NPS, CSAT, and product sentiment without disrupting the user experience. |
 | [Loop Subscriptions](../mcps/loop-subscriptions.md) | Subscription management for Shopify — manage recurring orders and customers via Loop. |
 | [Loyverse](../mcps/loyverse.md) | Free POS and inventory management system. |
 | [MailboxPower](../mcps/mailboxpower.md) | Delight contacts with personalized physical gifts, greeting cards, and direct mail sent automatically from your CRM. |

@@ -85,7 +85,6 @@ Explore the open database of **customer-support** Model Context Protocol (MCP) s
 | [Landbot](../mcps/landbot-alternative.md) | Build conversational landing pages and chatbot flows with a visual builder that replaces boring forms with engaging conversations. |
 | [Language Detector Engine](../mcps/language-detector-engine.md) | Detect the language of any text local using exact n-gram analysis. Supports 400+ languages. When AI guesses wrong on short or mixed text, this engine proves it. |
 | [LiveAgent](../mcps/liveagent.md) | Manage customer support tickets, conversations, and call records directly through LiveAgent. |
-| [Lob](../mcps/lob.md) | Automate physical mail, postcards, checks, and address verification through Lob's print and mail API. |
 | [MaestroQA](../mcps/maestroqa.md) | Access quality assurance reviews, QA scores, and export performance data via the MaestroQA API. |
 | [ManyChat](../mcps/manychat.md) | Automate messenger marketing via ManyChat — manage subscribers, tags, and flows directly from any AI agent. |
 | [ManyChat](../mcps/manychat-alternative.md) | Engage followers on Instagram, WhatsApp, and Messenger with chatbot flows that qualify leads and drive sales conversations. |

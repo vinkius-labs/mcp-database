@@ -38,6 +38,7 @@ Explore the open database of **artificial-intelligence** Model Context Protocol 
 | [Maestra](../mcps/maestra.md) | Automate transcription, translation, and AI voiceovers via the Maestra.ai REST API. |
 | [Mapflow](../mcps/mapflow.md) | Extract geospatial features from satellite imagery with AI that detects buildings, roads, and vegetation patterns automatically. |
 | [Mav](../mcps/mav.md) | Conversational AI for SMS — automate lead qualification and engagement via Mav playbooks. |
+| [Mav](../mcps/mav-alternative.md) | Conversational AI for SMS — automate lead qualification and engagement via Mav playbooks. |
 | [MeaningCloud](../mcps/meaningcloud.md) | Advanced text analytics for sentiment analysis, topic extraction, language detection, and automatic summarization. |
 | [Namsor](../mcps/namsor-alternative.md) | Detect gender, origin, and ethnicity from names, parse full names, and format phone numbers with AI-powered onomastics. |
 | [NewsAPI](../mcps/newsapi.md) | Search breaking news and historical articles from 150,000+ sources via NewsAPI.org. |

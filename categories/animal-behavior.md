@@ -1,6 +1,6 @@
-# animal_behavior MCP Servers
+# animal-behavior MCP Servers
 
-Explore the open database of **animal_behavior** Model Context Protocol (MCP) servers.
+Explore the open database of **animal-behavior** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|

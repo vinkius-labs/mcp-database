@@ -24,6 +24,7 @@ Explore the open database of **document-management** Model Context Protocol (MCP
 | [eSignly Electronic Signature](../mcps/esignly-electronic-signature.md) | Equip your AI agent to manage e-signature documents, track templates, and monitor audit trails via the eSignly API. |
 | [Eversign (Cloud Electronic Signature)](../mcps/eversign-cloud-electronic-signature.md) | Manage electronic signatures via Eversign — list businesses, create documents, and handle templates directly from any AI agent. |
 | [Evolio](../mcps/evolio.md) | Transform your coaching practice with client tracking, session management, and progress analytics that help people grow. |
+| [FadaDa / 法大大](../mcps/fadada.md) | Leading digital signature and contract platform in China — manage sign flows, templates, and documents via AI. |
 | [Files.com](../mcps/filescom-alternative.md) | Sync, share, and automate file workflows across teams with secure cloud storage that integrates with your existing tools. |
 | [FutureVault](../mcps/futurevault.md) | Manage digital vaults, track documents, and oversee folder structures via AI agents with FutureVault. |
 | [GovInfo (GPO Legislative Docs)](../mcps/govinfo-gpo-legislative-docs.md) | Access official US government documents, legislative bills, and federal registers directly from the GPO. |

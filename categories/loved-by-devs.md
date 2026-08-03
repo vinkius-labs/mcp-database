@@ -48,7 +48,7 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [Fly.io](../mcps/flyio-alternative.md) | Manage edge compute infrastructure via Fly.io — list apps, control machines (VMs), manage volumes and certificates from any AI agent. |
 | [Forgejo (Gitea Fork)](../mcps/forgejo-gitea-fork.md) | Manage Forgejo and Gitea instances — check version compatibility, generate API tokens, and trigger CI/CD workflows directly from your AI agent. |
 | [Gitea](../mcps/gitea.md) | Manage self-hosted Git via Gitea — list and manage repositories, track issues and pull requests, handle organizations, and audit branches directly from any AI agent. |
-| [GitHub](../mcps/github-alternative.md) | Manage repositories, issues, pull requests and workflows via GitHub — search code, audit commits and track CI/CD from any AI agent. |
+| [GitHub](../mcps/github-alternative.md) | Manage repositories, pull requests, issues, and CI/CD workflows on the world largest developer collaboration platform. |
 | [GitHub](../mcps/github-extended.md) | Manage repositories, pull requests, issues, and CI/CD workflows on the world largest developer collaboration platform. |
 | [Gitpod](../mcps/gitpod.md) | Automate cloud development environments — create, start, and manage Gitpod workspaces and organizations directly from any AI agent. |
 | [Glob Pattern Tester](../mcps/glob-pattern-tester.md) | Test whether a file path matches a glob pattern using the same algorithm used by npm and git. 130M+ weekly downloads. |

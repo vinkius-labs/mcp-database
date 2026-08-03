@@ -1,6 +1,6 @@
-# business & strategy MCP Servers
+# data-analysis MCP Servers
 
-Explore the open database of **business & strategy** Model Context Protocol (MCP) servers.
+Explore the open database of **data-analysis** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|

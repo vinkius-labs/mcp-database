@@ -149,6 +149,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Listclean](../mcps/listclean.md) | Verify and validate email addresses in real-time or batch via the Listclean API. |
 | [Listmonk](../mcps/listmonk.md) | Automate your newsletter and mailing list management with Listmonk — manage subscribers, organize lists, and track campaigns directly from any AI agent. |
 | [Listrak](../mcps/listrak.md) | Manage email and SMS campaigns, contacts, and messaging via the Listrak REST API. |
+| [Lob](../mcps/lob.md) | Send physical mail programmatically with an API for postcards, letters, and checks that integrates into your digital workflows. |
 | [Lob](../mcps/lob-alternative.md) | Send physical mail programmatically with an API for postcards, letters, and checks that integrates into your digital workflows. |
 | [Local Falcon](../mcps/local-falcon.md) | Track your Google Maps rankings across geographic grids and monitor local SEO performance for every business location. |
 | [Loops](../mcps/loops.md) | Email marketing and transactional email platform with powerful automation, audience segmentation, and analytics. |
@@ -191,6 +192,7 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Ontraport](../mcps/ontraport.md) | Manage marketing and sales via Ontraport — list contacts, track campaigns, and monitor transactions directly from any AI agent. |
 | [OpenPanel](../mcps/openpanel.md) | Track events, identify users, and manage profile properties directly from your AI agent using OpenPanel analytics. |
 | [Orbit](../mcps/orbit.md) | Manage community relationships via Orbit — list members, track activities, and add notes directly from any AI agent. |
+| [Orbit Alternative](../mcps/orbit-alternative.md) | Manage community relationships via Orbit — list members, track activities, and add notes directly from any AI agent. |
 | [Ortto (formerly Autopilot)](../mcps/ortto-formerly-autopilot.md) | Manage your CDP, customer data, and marketing automations via Ortto — orchestrate journeys natively via AI. |
 | [Papermark (Docsend Alternative)](../mcps/papermark-docsend-alternative.md) | Securely share documents, track engagement, and manage links with Papermark — the open-source DocSend alternative for your AI agent. |
 | [PartnerStack](../mcps/partnerstack.md) | Manage affiliate and partner programs via PartnerStack — list partners, track leads, and monitor rewards directly from any AI agent. |

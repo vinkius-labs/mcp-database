@@ -103,6 +103,7 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [SMS Masivo](../mcps/sms-masivo.md) | Send bulk SMS campaigns across Latin America with delivery tracking, contact segmentation, and competitive local pricing. |
 | [Smsmobile](../mcps/smsmobile.md) | Turn your smartphone into an SMS/WhatsApp gateway — send messages, read incoming texts, and track call logs directly from any AI agent. |
 | [String](../mcps/string.md) | Engage mobile app users with targeted push notifications, in-app messages, and behavioral triggers that improve retention. |
+| [String Alternative](../mcps/string-alternative.md) | Engage mobile app users with targeted push notifications, in-app messages, and behavioral triggers that improve retention. |
 | [Submail / 赛邮云](../mcps/submail.md) | Powerful SMS, Email, and Voice communication platform — orchestrate multi-channel messaging via AI. |
 | [Swiftfox](../mcps/swiftfox.md) | Generate product mockups and marketing visuals instantly with AI that places your designs on real-world backgrounds. |
 | [Symbl.ai](../mcps/symblai.md) | Extract conversation intelligence from audio, video, and text — get summaries, action items, and topics directly from any AI agent. |

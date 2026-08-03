@@ -205,6 +205,7 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Hootsuite (Social Media Management)](../mcps/hootsuite-social-media-management.md) | Manage social media via Hootsuite — schedule posts, manage social profiles, and monitor outbound messages. |
 | [Huawei Push Kit / 华为推送服务](../mcps/huawei-push-kit.md) | Huawei's essential device push platform — send notifications to HMS devices via AI. |
 | [HubSpot](../mcps/hubspot.md) | Grow better with an integrated CRM that unifies marketing, sales, service, and operations in one powerful platform. |
+| [HubSpot Alternative](../mcps/hubspot-alternative.md) | Grow better with an integrated CRM that unifies marketing, sales, service, and operations in one powerful platform. |
 | [HubSpot Analytics](../mcps/hubspot-analytics.md) | View web analytics, track events, list reports, and get email campaign statistics through natural conversation. |
 | [HubSpot CMS Hub](../mcps/hubspot-cms-hub.md) | Manage blog posts, site pages, landing pages, authors, tags, and domains through natural conversation. |
 | [HubSpot CRM](../mcps/hubspot-crm.md) | Search, create, and manage HubSpot contacts, companies, notes, tasks, and associations through natural conversation. |
@@ -393,6 +394,7 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Rocketlane](../mcps/rocketlane.md) | Deliver customer onboarding projects on time with collaborative workspaces, task tracking, and time-to-value analytics. |
 | [RocketReach](../mcps/rocketreach.md) | Find accurate contact information for professionals and companies with a database of verified emails and direct phone numbers. |
 | [Rows](../mcps/rows.md) | Automate spreadsheets via Rows.com — manage tables, data values, and folders with AI agents. |
+| [Rows Alternative](../mcps/rows-alternative.md) | Automate spreadsheets via Rows.com — manage tables, data values, and folders with AI agents. |
 | [S&P Global Commodity Insights](../mcps/sp-global-commodity-insights.md) | Access global commodity price assessments — crude oil, natural gas, power, coal, metals, petrochemicals, and agriculture via S&P Global Platts benchmarks. |
 | [Safepoint](../mcps/safepoint.md) | Protect your business data with secure backup, disaster recovery, and cloud-to-cloud replication for critical SaaS applications. |
 | [Sage Accounting](../mcps/sage-accounting.md) | Automate business finances via Sage Accounting — manage invoices, banking, and contacts directly from any AI agent. |
