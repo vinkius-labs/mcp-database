@@ -36,14 +36,14 @@ No more manual check-in reading or missed status updates. Your AI acts as a dedi
 
 
 ## Available Tools (11)
-- **get_user**: Get details for a specific team member
-- **list_goals**: List all team goals
 - **list_objectives**: List team objectives
 - **list_teams**: List all teams
 - **list_updates**: Can be filtered by target_id or for_user_id.
 
 List team check-ins (updates)
 - **list_users**: List all users in the organization
+- **get_user**: Get details for a specific team member
+- **list_goals**: List all team goals
 - **create_update**: Post a new standup update
 - **get_objective**: Get details for a specific objective
 - **get_snippet**: Get details of a specific check-in snippet

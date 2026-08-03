@@ -30,8 +30,7 @@ Designed for marketing teams, e-commerce operators, and growth hackers who need 
 
 
 ## Available Tools (16)
-- **check_referralcandy_status**: Verify connectivity
-- **get_campaign**: Get campaign details
+- **send_invite**: Send a referral invite
 - **get_referral**: Get referral details
 - **get_referrer**: Get advocate profile
 - **get_stats**: Get program stats
@@ -41,11 +40,12 @@ Designed for marketing teams, e-commerce operators, and growth hackers who need 
 - **list_pending_rewards**: List pending rewards
 - **list_purchases**: List referred purchases
 - **list_referrals_by_period**: List referrals by period
-- **list_referrals**: List all referrals
 - **list_referrers**: List all advocates
 - **list_rewards**: List all rewards
 - **register_purchase**: Register a purchase
-- **send_invite**: Send a referral invite
+- **check_referralcandy_status**: Verify connectivity
+- **get_campaign**: Get campaign details
+- **list_referrals**: List all referrals
 
 
 ## 💬 Prompt Examples

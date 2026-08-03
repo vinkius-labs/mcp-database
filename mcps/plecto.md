@@ -28,6 +28,7 @@ Connect your **Plecto** account to any AI agent and simplify your KPI tracking, 
 
 
 ## Available Tools (11)
+- **get_registration**: Get details for a specific data registration
 - **list_formulas**: List all KPI formulas
 - **list_widgets**: List all widgets on a dashboard
 - **create_data_registration**: Add a new data entry
@@ -38,7 +39,6 @@ Connect your **Plecto** account to any AI agent and simplify your KPI tracking, 
 - **list_organizational_teams**: List teams
 - **get_dashboard**: Get details for a specific dashboard
 - **get_employee**: Get details for a specific employee
-- **get_registration**: Get details for a specific data registration
 
 
 ## 💬 Prompt Examples

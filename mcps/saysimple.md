@@ -44,11 +44,11 @@ No more manual dashboard refreshing or template searching. Your AI acts as a ded
 - **list_channels**: List all messaging channels
 - **list_chats**: List all messaging chats
 - **list_contacts**: List all contacts
-- **list_templates**: List message templates
 - **list_webhooks**: List configured webhooks
 - **send_message**: Requires a template for starting new WhatsApp conversations. Pass data as a JSON string.
 
 Send a message
+- **list_templates**: List message templates
 
 
 ## 💬 Prompt Examples

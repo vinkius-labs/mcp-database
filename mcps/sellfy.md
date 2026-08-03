@@ -42,14 +42,14 @@ No more manual dashboard navigation or spreadsheet order tracking. Your AI acts 
 - **get_subscription_details**: Get details for a specific subscription
 - **list_product_categories**: List product categories
 - **list_store_coupons**: List active discount coupons
-- **create_product**: Requires a title and price.
-
-Create a new product
-- **get_customer_details**: Get details for a specific customer
 - **list_customers**: List store customers
 - **list_orders**: List recent store orders
 - **list_products**: List all store products
 - **list_subscriptions**: List recurring subscriptions
+- **create_product**: Requires a title and price.
+
+Create a new product
+- **get_customer_details**: Get details for a specific customer
 
 
 ## 💬 Prompt Examples

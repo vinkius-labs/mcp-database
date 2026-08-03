@@ -36,6 +36,8 @@ No more manual data entry or missed follow-ups. Your AI acts as a dedicated mark
 
 
 ## Available Tools (12)
+- **add_note_to_contact**: Add a text note to a contact
+- **apply_tag_to_contact**: Add a tag to a contact
 - **create_new_sales_deal**: Create a new deal in a pipeline
 - **get_contact_details**: Get full info for a contact
 - **list_crm_contacts**: List contacts in a project
@@ -48,8 +50,6 @@ No more manual data entry or missed follow-ups. Your AI acts as a dedicated mark
 - **create_new_contact**: Requires project ID and email.
 
 Add a new contact to the CRM
-- **add_note_to_contact**: Add a text note to a contact
-- **apply_tag_to_contact**: Add a tag to a contact
 
 
 ## 💬 Prompt Examples

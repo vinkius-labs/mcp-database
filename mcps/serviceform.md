@@ -36,15 +36,15 @@ No more manual logging or data exports. Your AI acts as a dedicated marketing an
 
 
 ## Available Tools (7)
-- **get_lead**: Get lead details
+- **list_forms**: List all active forms
+- **list_spaces**: List flex spaces
 - **get_space_items**: Get items for a specific space
 - **list_chatbots**: List all configured chatbots
 - **list_chats**: Pass criteria as a JSON string.
 
 List chat histories
-- **list_forms**: List all active forms
+- **get_lead**: Get lead details
 - **list_leads**: List leads captured
-- **list_spaces**: List flex spaces
 
 
 ## 💬 Prompt Examples

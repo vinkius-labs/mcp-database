@@ -36,17 +36,17 @@ No more manual texting or switching between telephony tools. Your AI acts as a d
 
 
 ## Available Tools (11)
-- **conference_mute**: Mute or unmute a participant
-- **create_audio_from_tts**: Create audio from text
-- **create_lead**: Create a new lead
 - **create_voice_survey**: Create a voice survey
 - **get_campaign**: Get details for a specific campaign
 - **get_lead**: Get lead details
-- **list_campaigns**: List campaigns
 - **list_leads**: List all leads
-- **send_sms**: Send an SMS message
 - **send_voice_otp**: Send a Voice OTP
 - **validate_email**: Validate an email address
+- **conference_mute**: Mute or unmute a participant
+- **create_audio_from_tts**: Create audio from text
+- **list_campaigns**: List campaigns
+- **create_lead**: Create a new lead
+- **send_sms**: Send an SMS message
 
 
 ## 💬 Prompt Examples

@@ -27,18 +27,19 @@ Manage candidates, jobs, and client companies with Recruit CRM and AI agents.
 - Hiring managers tracking pipeline status and decision makers.
 
 
-## Available Tools (11)
-- **create_candidate**: Add a new candidate
-- **create_job**: Create a new job posting
-- **get_candidate_details**: Get details of a specific candidate
-- **get_company_details**: Get details of a specific company
-- **get_contact_details**: Get details of a specific contact
-- **get_job_details**: Get details of a specific job
-- **get_me**: Get account information
-- **list_candidates**: List recruitment candidates
-- **list_companies**: List client companies
-- **list_contacts**: List client contacts
-- **list_jobs**: List job vacancies
+## Available Tools (12)
+- **create_candidate**: Add new applicant
+- **get_candidate_details**: Get candidate info
+- **assign_candidate_to_job**: Link candidate to vacancy
+- **get_api_status**: Check connection
+- **get_company_info**: Get company details
+- **get_job_details**: Get job metadata
+- **list_crm_contacts**: List business contacts
+- **list_applicants_for_job**: List job pipeline
+- **list_job_vacancies**: List open positions
+- **get_contact_info**: Get contact metadata
+- **list_candidates**: List applicant profiles
+- **list_client_companies**: List hiring companies
 
 
 ## 💬 Prompt Examples

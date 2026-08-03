@@ -34,14 +34,14 @@ Empower your AI agent with the ability to generate high-quality images and PDFs 
 
 
 ## Available Tools (12)
-- **check_api_status**: Check RenderForm API status
 - **get_account_info**: Get account information and quotas
-- **get_request_status**: Get the status of a render request
-- **get_template_details**: Get details for a specific template
 - **list_assets**: List uploaded assets
 - **list_available_fonts**: List available fonts
 - **list_logos**: List uploaded logos
 - **list_projects**: List all projects
+- **check_api_status**: Check RenderForm API status
+- **get_request_status**: Get the status of a render request
+- **get_template_details**: Get details for a specific template
 - **list_render_requests**: List recent render requests
 - **list_templates**: List all available templates
 - **render_image**: Render an image from a template

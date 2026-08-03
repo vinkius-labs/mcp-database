@@ -28,13 +28,13 @@ Connect your **RentCast** account to any AI agent and simplify your real estate 
 
 
 ## Available Tools (8)
+- **get_rental_valuation**: Get rental price estimate (AVM)
+- **get_sale_valuation**: Get property sale valuation
+- **list_market_trends**: Get market trends by ZIP code
 - **get_property_by_id**: Get property details by ID
 - **get_rental_comparables**: Get comparable rental properties
 - **get_sale_comparables**: Get comparable sale properties
 - **get_property_details**: Get property data by address
-- **get_rental_valuation**: Get rental price estimate (AVM)
-- **get_sale_valuation**: Get property sale valuation
-- **list_market_trends**: Get market trends by ZIP code
 - **list_active_listings**: List active rental listings
 
 
