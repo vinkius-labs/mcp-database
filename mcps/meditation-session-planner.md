@@ -14,15 +14,15 @@ Get a structured meditation plan tailored to your time and mental goal, complete
 
 
 ## Available Tools (3)
-- **allocate_durations**: Minimum 5, maximum 60 minutes.
-
-Allocate time durations for meditation session phases
 - **get_practice_guidance**: Valid phases: Grounding, Core Practice, Integration.
 
 Get detailed practice guidance for a specific meditation phase and goal
 - **plan_session**: Valid goals are: focus, sleep, anxiety, self-awareness.
 
 Plan a meditation session based on the user's goal
+- **allocate_durations**: Minimum 5, maximum 60 minutes.
+
+Allocate time durations for meditation session phases
 
 
 ## 💬 Prompt Examples

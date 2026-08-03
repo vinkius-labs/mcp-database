@@ -14,13 +14,13 @@ This MCP server provides specialized tools for agricultural financial analysis. 
 
 
 ## Available Tools (3)
-- **calculate_cost_per_hectare**: You need the current market price, its unit type, the yield (productivity) of the land, and the unit of that yield.
-
-Calculates the total production cost in BRL per hectare based on commodity price and land productivity
 - **convert_price_units**: It will return a full list of converted prices.
 
 Converts a commodity price from one unit and currency to all other supported units and currencies
 - **get_historical_market_trends**: Retrieves the recorded historical price extremes and averages for a specific month and year
+- **calculate_cost_per_hectare**: You need the current market price, its unit type, the yield (productivity) of the land, and the unit of that yield.
+
+Calculates the total production cost in BRL per hectare based on commodity price and land productivity
 
 
 ## 💬 Prompt Examples

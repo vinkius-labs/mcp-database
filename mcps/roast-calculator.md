@@ -14,9 +14,9 @@ The Roast Calculator MCP server provides specialized culinary computations for p
 
 
 ## Available Tools (3)
+- **calculate_rest_duration**: Calculate the recommended resting time for a roast
 - **estimate_carryover_impact**: Estimate the temperature increase due to carryover cooking
 - **calculate_cooking_duration**: Calculate the estimated total cooking time for a roast
-- **calculate_rest_duration**: Calculate the recommended resting time for a roast
 
 
 ## 💬 Prompt Examples

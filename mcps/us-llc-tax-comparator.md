@@ -14,9 +14,9 @@ This MCP server provides AI agents with the ability to perform detailed tax liab
 
 
 ## Available Tools (3)
-- **calculate_tax_comparison**: Compare tax liabilities across different business structures
-- **evaluate_s_corp_savings_potential**: Quantify potential tax savings from S-Corp election
 - **get_state_tax_context**: Retrieve tax environment information for a specific state
+- **evaluate_s_corp_savings_potential**: Quantify potential tax savings from S-Corp election
+- **calculate_tax_comparison**: Compare tax liabilities across different business structures
 
 
 ## 💬 Prompt Examples

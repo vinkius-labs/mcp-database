@@ -15,8 +15,8 @@ This MCP server provides a specialized calculation engine for estimating US corp
 
 ## Available Tools (3)
 - **calculate_tax_liability**: Calculates the specific tax breakdown for a single profit amount in a given state
-- **compare_business_structures**: Provides a side-by-side comparison of tax burdens for different business structures
 - **get_state_tax_rate**: Retrieves the hardcoded corporate income tax rate for a specific US state
+- **compare_business_structures**: Provides a side-by-side comparison of tax burdens for different business structures
 
 
 ## 💬 Prompt Examples

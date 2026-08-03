@@ -14,10 +14,10 @@ This MCP server provides precise financial estimates for companies preparing for
 
 
 ## Available Tools (4)
+- **calculate_itgc_costs**: Estimates the costs associated with maintaining IT General Controls (ITGC)
 - **calculate_audit_costs**: Estimates the combined annual expenditure for both internal and external audit functions
 - **get_compliance_summary**: Provides a holistic financial breakdown of all estimated SOX compliance costs
 - **calculate_documentation_costs**: Estimates the cost of drafting, maintaining, and updating compliance documentation
-- **calculate_itgc_costs**: Estimates the costs associated with maintaining IT General Controls (ITGC)
 
 
 ## 💬 Prompt Examples

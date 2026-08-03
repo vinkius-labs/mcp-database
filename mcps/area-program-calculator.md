@@ -16,9 +16,9 @@ The Area Program Calculator solves this by providing a precise estimate of requi
 
 
 ## Available Tools (3)
-- **adjust_area_for_structure**: Adjust a base area for structural complexity overhead
 - **get_base_area_by_function**: Get minimum usable area for an environment by its function type
 - **calculate_programmatic_needs**: Calculate total programmatic area for all environments in a building program
+- **adjust_area_for_structure**: Adjust a base area for structural complexity overhead
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ Achieve professional results every time with precise cooking parameters. This MC
 
 
 ## Available Tools (3)
-- **verify_salinity**: Verify if the salt concentration in pasta water is optimal
 - **assess_texture_risk**: Assess the risk of pasta being overcooked or undercooked
 - **get_ideal_ratios**: Calculate ideal cooking parameters for a specific pasta shape and thickness
+- **verify_salinity**: Verify if the salt concentration in pasta water is optimal
 
 
 ## 💬 Prompt Examples

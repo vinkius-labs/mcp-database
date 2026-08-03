@@ -20,9 +20,9 @@ The MRR and ARR Calculator solves this by providing granular tracking for every 
 
 
 ## Available Tools (5)
+- **project_revenue**: Project revenue for a given time period
 - **get_metrics_summary**: Get a comprehensive SaaS metrics summary
 - **calculate_mrr**: Calculate Monthly Recurring Revenue from subscription data
-- **project_revenue**: Project revenue for a given time period
 - **calculate_arr**: Calculate Annual Recurring Revenue from MRR
 - **calculate_churn_impact**: Calculate the impact of customer churn on revenue
 

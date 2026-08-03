@@ -32,9 +32,9 @@ Connect to the **Adviceslip** API to empower your AI agent with a massive databa
 
 
 ## Available Tools (3)
-- **adviceslip_get_by_id**: Get a specific advice slip by ID
-- **adviceslip_get_random**: Get a random piece of advice
-- **adviceslip_search**: Search for advice slips containing a specific term
+- **search_advice**: Search for advice slips containing a specific term
+- **get_random_advice**: Get a random piece of advice
+- **get_advice_by_id**: Get a specific advice slip by ID
 
 
 ## 💬 Prompt Examples

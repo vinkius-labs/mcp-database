@@ -14,9 +14,9 @@ This MCP server provides precise conversions between volume and weight for over 
 
 
 ## Available Tools (3)
+- **search_ingredients**: Search for ingredients in the pantry
 - **convert_volume_to_weight**: Convert a volume measurement to weight in grams
 - **get_ingredient_density**: Retrieve the weight of one cup for a specific ingredient
-- **search_ingredients**: Search for ingredients in the pantry
 
 
 ## 💬 Prompt Examples

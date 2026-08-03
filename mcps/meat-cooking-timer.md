@@ -14,9 +14,9 @@ The Meat Cooking Timer MCP server provides AI agents with the ability to calcula
 
 
 ## Available Tools (3)
+- **get_target_temperature**: Get the required internal temperature for a meat type and doneness level
 - **validate_cooking_context**: Verify if a cut of meat is appropriate for a method
 - **calculate_cooking_time**: Estimate the total cooking time required
-- **get_target_temperature**: Get the required internal temperature for a meat type and doneness level
 
 
 ## 💬 Prompt Examples

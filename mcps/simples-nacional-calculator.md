@@ -14,10 +14,10 @@ This MCP server provides a precise calculation engine for the Brazilian Simples 
 
 
 ## Available Tools (4)
+- **get_bracket_parameters**: Retrieve taxation constants based on activity and revenue
 - **calculate_effective_rate**: Calculate the dynamic effective tax rate
 - **compute_monthly_tax_amount**: Calculate the final tax amount due
 - **evaluate_factor_r**: Check eligibility for Annex III via Fator R
-- **get_bracket_parameters**: Retrieve taxation constants based on activity and revenue
 
 
 ## 💬 Prompt Examples

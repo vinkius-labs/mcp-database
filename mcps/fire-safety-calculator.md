@@ -25,15 +25,15 @@ The resulting data provides a definitive compliance report, ensuring your design
 
 
 ## Available Tools (3)
-- **specify_extinguisher_requirement**: Returns distribution by type (A, B, C) and compliance notes for placement.
-
-Determine required fire extinguisher quantity and type distribution by area and risk class
 - **determine_min_stair_width**: Returns minimum required width, population ratio details, and safe design recommendation with safety buffer.
 
 Calculate minimum stair width based on population load and module definition
 - **calculate_max_walking_distance**: Returns compliance status and violation details.
 
 Calculate maximum walking distance compliance for evacuation paths
+- **specify_extinguisher_requirement**: Returns distribution by type (A, B, C) and compliance notes for placement.
+
+Determine required fire extinguisher quantity and type distribution by area and risk class
 
 
 ## 💬 Prompt Examples

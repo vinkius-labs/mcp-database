@@ -14,9 +14,9 @@ This MCP server provides essential tools for construction and project managers t
 
 
 ## Available Tools (3)
-- **assess_project_risk_level**: Categorizes the financial health of the project based on scope drift
 - **calculate_change_order_price**: Determines the total price charged to the client for a single specific scope change
 - **calculate_cumulative_impact**: Calculates the total financial and schedule impact on a project
+- **assess_project_risk_level**: Categorizes the financial health of the project based on scope drift
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides essential tools for managing US stock option compliance
 
 
 ## Available Tools (4)
-- **lookup_exercise_rules**: Provides regulatory window and tax implications for exercising options
 - **analyze_grant_compliance**: A comprehensive audit tool for evaluating a proposed grant scenario
 - **calculate_minimum_strike**: Determines the lowest legally permissible strike price
 - **estimate_tax_penalty**: Calculates the estimated financial burden if options are granted below FMV
+- **lookup_exercise_rules**: Provides regulatory window and tax implications for exercising options
 
 
 ## 💬 Prompt Examples

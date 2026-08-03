@@ -20,7 +20,7 @@ Retrieve scholarship opportunity details by ID and year
 - **calculate_deadline_calendar**: Returns events sorted by earliest deadline first, with days remaining calculated from today.
 
 Calculate deadline urgency and generate sorted calendar
-- **generate_document_checklist**: Mandatory global documents appear first in the list.
+- **generate_document_checklist**: Mandatory globalThis documents appear first in the list.
 
 Generate document checklist for a scholarship and region
 
