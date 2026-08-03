@@ -39,8 +39,8 @@ Empower your AI agent to orchestrate your entire genealogical research and ances
 - **get_person_pedigree**: Get the ancestry (pedigree) for a specific person
 - **get_person_details**: Get full details for a specific person in the family tree by ID
 - **list_historical_collections**: List historical record collections available on FamilySearch
-- **search_persons**: Search for persons in the FamilySearch Family Tree
 - **check_api_status**: Check if the FamilySearch API is operational
+- **search_persons**: Search for persons in the FamilySearch Family Tree
 
 
 ## 💬 Prompt Examples

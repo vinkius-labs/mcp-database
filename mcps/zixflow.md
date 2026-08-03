@@ -39,12 +39,12 @@ Connect your **Zixflow** workspace to any AI agent to automate your sales and CR
 
 Create a new record in a collection
 - **delete_collection_record**: Delete a record from a collection
+- **list_wallet_transactions**: List Zixflow wallet transactions
+- **update_collection_record**: Update an existing record
 - **get_record_details**: Get details for a specific record
 - **list_collection_records**: Requires a JSON body for filtering/sorting.
 
 List records within a specific collection
-- **list_wallet_transactions**: List Zixflow wallet transactions
-- **update_collection_record**: Update an existing record
 
 
 ## 💬 Prompt Examples

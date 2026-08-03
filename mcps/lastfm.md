@@ -44,8 +44,8 @@ Empower your AI agent to orchestrate your entire music data ecosystem with **Las
 - **get_top_tags**: fm based on the provided unique identifier or parameters.
 
 Get the top tags on Last.fm
-- **get_top_tracks**: Get the top tracks for a user
 - **get_track_info**: Get metadata for a track
+- **get_top_tracks**: Get the top tracks for a user
 - **get_user_info**: fm user.
 
 Get information about a Last.fm user

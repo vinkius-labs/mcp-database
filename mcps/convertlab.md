@@ -35,13 +35,13 @@ Empower your AI agent to orchestrate your marketing operations with **Convertlab
 
 
 ## Available Tools (8)
+- **get_campaign**: Get campaign details
+- **get_customer**: Get customer details
+- **list_campaigns**: List marketing campaigns
 - **list_events**: List marketing events
 - **list_member_groups**: List customer segments
 - **list_touchpoints**: List marketing touchpoints
 - **create_customer**: Create a new customer
-- **get_campaign**: Get campaign details
-- **get_customer**: Get customer details
-- **list_campaigns**: List marketing campaigns
 - **list_customers**: List DM Hub customers
 
 

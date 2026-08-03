@@ -39,7 +39,6 @@ Connect to **Bandsintown** and discover live music events worldwide through natu
 - **get_artist_events**: Use date parameter to filter: "upcoming", "past", "all" or a date range "YYYY-MM-DD,YYYY-MM-DD".
 
 Get upcoming and past events for an artist
-- **get_artist**: Get info for a specific artist
 - **get_artist_events_by_id**: Same as get_artist_events but uses numeric ID instead of name.
 
 Get events for an artist by Bandsintown ID
@@ -49,6 +48,7 @@ Get recommended events by location
 - **get_venue_events**: Returns event details with artists, dates, times and ticket links.
 
 Get upcoming events at a specific venue
+- **get_artist**: Get info for a specific artist
 
 
 ## 💬 Prompt Examples

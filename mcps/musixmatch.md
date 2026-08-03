@@ -37,15 +37,15 @@ Equip your AI agent with the most comprehensive music intelligence available via
 
 
 ## Available Tools (9)
-- **get_artist_albums**: Get artist albums
-- **get_artist_details**: Get artist metadata
-- **get_track_lyrics**: Get track lyrics
 - **get_track_snippet**: Get track snippet
 - **get_track_details**: Get track metadata
 - **match_track_lyrics**: Match lyrics by track and artist
 - **search_artists**: Search for artists
 - **search_tracks**: Search for music tracks
 - **get_top_tracks**: Get top tracks chart
+- **get_artist_albums**: Get artist albums
+- **get_artist_details**: Get artist metadata
+- **get_track_lyrics**: Get track lyrics
 
 
 ## 💬 Prompt Examples

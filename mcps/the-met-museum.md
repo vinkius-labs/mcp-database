@@ -45,9 +45,6 @@ Get detailed info for a specific artwork by object ID
 - **get_objects_by_department**: Use get_departments first to find the department ID. Returns list of object IDs which can be used with get_object for full details.
 
 Get all object IDs for a specific department
-- **search_by_century**: Returns object IDs which can be used with get_object for full artwork details including images.
-
-Search for objects created in a specific century
 - **search_highlights**: These represent some of the most significant and popular works in the collection.
 
 Search for highlighted (curator-selected) objects
@@ -60,6 +57,9 @@ Search for objects currently on view in the museum
 - **search_with_images**: Useful for finding visual artworks. Supports all standard search filters plus has_images=true.
 
 Search for objects that have images
+- **search_by_century**: Returns object IDs which can be used with get_object for full artwork details including images.
+
+Search for objects created in a specific century
 
 
 ## 💬 Prompt Examples

@@ -35,15 +35,6 @@ Connect to **Charity Navigator** and access ratings for over 175,000 US nonprofi
 
 
 ## Available Tools (6)
-- **get_all_advisories**: Useful for identifying charities with governance, financial or operational concerns.
-
-Get all organizations with active advisories
-- **get_categories**: Each category includes its ID, name, parent category and description. Use category IDs to filter charity searches by cause area (e.g. education, health, environment, animal welfare).
-
-Get all charity categories and causes
-- **get_charity**: Returns the charity name, EIN, mission statement, website, address, phone, financial data, tax filings and contact info. Use search_charities to find EINs.
-
-Get detailed info for a specific charity by EIN
 - **get_charity_advisories**: Advisories may include issues with financial management, governance or fundraising practices. Optionally filter by status (ALL, ACTIVE, REMOVED).
 
 Get advisories/warnings for a specific charity
@@ -53,6 +44,15 @@ Get rating history for a specific charity
 - **search_charities**: Supports powerful filters: free-text search, state, city, zip code, rating (0-4 scale), category/cause, organization size by expenses, and whether the org is rated. Sort by rating, name or relevance. Pagination with pageSize (max 1000) and pageNum (max 10). Returns charity names, EIN, mission, ratings and financial info.
 
 Search for charities and nonprofits by name, location or keyword
+- **get_all_advisories**: Useful for identifying charities with governance, financial or operational concerns.
+
+Get all organizations with active advisories
+- **get_categories**: Each category includes its ID, name, parent category and description. Use category IDs to filter charity searches by cause area (e.g. education, health, environment, animal welfare).
+
+Get all charity categories and causes
+- **get_charity**: Returns the charity name, EIN, mission statement, website, address, phone, financial data, tax filings and contact info. Use search_charities to find EINs.
+
+Get detailed info for a specific charity by EIN
 
 
 ## 💬 Prompt Examples

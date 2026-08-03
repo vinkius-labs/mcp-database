@@ -35,6 +35,9 @@ Connect to **Genius** and access the world's largest lyrics database through nat
 
 
 ## Available Tools (7)
+- **get_song**: Returns full title, artist, album, release date, producer info, song art, Genius page URL and full lyrics (in plain text and HTML formats). Use the song ID from search_songs results.
+
+Get detailed info for a specific song including lyrics
 - **get_album**: Returns album name, artist, cover art, release date and track list. Use the album ID from song results or search.
 
 Get album details including track list and artist
@@ -47,9 +50,6 @@ Get artist profile info including name, IQ and image
 - **get_artist_songs**: Returns song titles, pageview counts and Genius URLs. Paginated — use page parameter to navigate through results.
 
 Get all songs by a specific artist
-- **get_song**: Returns full title, artist, album, release date, producer info, song art, Genius page URL and full lyrics (in plain text and HTML formats). Use the song ID from search_songs results.
-
-Get detailed info for a specific song including lyrics
 - **get_song_annotations**: Annotations are community-written explanations of lyrics, references, wordplay and meaning. Returns annotated lyric fragments with explanation text, author info and vote counts. Use the song ID from search_songs.
 
 Get annotations (explainer text) for a specific song

@@ -40,9 +40,6 @@ Get details for a specific object detection
 - **get_image**: Returns image ID, capture date/time, GPS coordinates, compass angle, sequence ID, organization and thumbnail URL. Use fields parameter to request additional data like "geometry,compass_angle,captured_at,sequence,thumb_256_url,thumb_1024_url,altitude".
 
 Get details for a specific Mapillary image
-- **get_image_detections**: Returns detection values, types, geometry and confidence scores.
-
-Get object detections for a specific image
 - **get_map_features**: Returns feature type, value, GPS coordinates and detection confidence. Useful for traffic sign inventory and road infrastructure analysis.
 
 Search map features (traffic signs, objects) by area
@@ -55,6 +52,9 @@ Search street-level images by geographic area
 - **search_sequences**: Returns sequence IDs and metadata for all sequences that pass through the area.
 
 Search image sequences by geographic area
+- **get_image_detections**: Returns detection values, types, geometry and confidence scores.
+
+Get object detections for a specific image
 
 
 ## 💬 Prompt Examples

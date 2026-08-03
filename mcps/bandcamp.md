@@ -37,12 +37,6 @@ Connect to **Bandcamp** and discover independent music through natural conversat
 
 
 ## Available Tools (8)
-- **discover_music**: g. "electronic", "ambient", "hip-hop-rap", "rock", "jazz", "metal"). Returns albums with artist, title, art, and links. Use get_tags to see available genre tags.
-
-Discover music on Bandcamp by genre
-- **get_best_selling**: Returns titles, artists, artwork, and Bandcamp URLs.
-
-Get best selling releases on Bandcamp by genre
 - **get_featured**: Returns stories, albums, and curated picks.
 
 Get featured editorial content from the Bandcamp front page
@@ -58,6 +52,12 @@ Get available genre tags on Bandcamp
 - **search**: Returns names, types, URLs and artwork. Results include artists, albums, tracks, labels and fan profiles.
 
 Search Bandcamp for artists, albums, tracks, labels and fans
+- **discover_music**: g. "electronic", "ambient", "hip-hop-rap", "rock", "jazz", "metal"). Returns albums with artist, title, art, and links. Use get_tags to see available genre tags.
+
+Discover music on Bandcamp by genre
+- **get_best_selling**: Returns titles, artists, artwork, and Bandcamp URLs.
+
+Get best selling releases on Bandcamp by genre
 - **get_recommended**: Returns titles, artists, artwork, and Bandcamp URLs.
 
 Get recommended releases on Bandcamp by genre

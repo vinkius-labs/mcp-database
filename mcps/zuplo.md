@@ -41,7 +41,6 @@ No more manual navigation through complex cloud consoles to whitelist a consumer
 ## Available Tools (10)
 - **list_consumers**: List API key consumers
 - **create_consumer**: Create API key consumer
-- **create_deployment**: Create a new deployment
 - **delete_consumer**: Delete API key consumer
 - **list_custom_domains**: List custom domains
 - **list_environments**: g., working, production) for a Project.
@@ -51,6 +50,7 @@ List project environments
 - **list_deployments**: List deployments
 - **get_metrics**: Get edge metrics
 - **list_projects**: List Zuplo projects
+- **create_deployment**: Create a new deployment
 
 
 ## 💬 Prompt Examples

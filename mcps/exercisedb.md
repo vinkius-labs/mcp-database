@@ -35,12 +35,15 @@ Connect to **ExerciseDB** and explore a comprehensive exercise database through 
 
 
 ## Available Tools (9)
-- **get_all_exercises**: Returns exercise names, body parts, target muscles, equipment needed, GIF URLs and step-by-step instructions. Supports limit and offset parameters for pagination.
-
-Get all exercises with pagination
 - **get_body_part_list**: Useful for discovering valid body part values to use with get_exercises_by_body_part.
 
 Get list of all body parts
+- **get_exercises_by_target**: Common targets include: "abductors", "abs", "adductors", "biceps", "calves", "cardiovascular system", "delts", "forearms", "glutes", "hamstrings", "lats", "levator scapulae", "pectorals", "quads", "serratus anterior", "spine", "traps", "triceps", "upper back". Returns exercise details with body part, equipment and instructions.
+
+Get exercises by target muscle
+- **get_all_exercises**: Returns exercise names, body parts, target muscles, equipment needed, GIF URLs and step-by-step instructions. Supports limit and offset parameters for pagination.
+
+Get all exercises with pagination
 - **get_equipment_list**: Useful for discovering valid equipment values to use with get_exercises_by_equipment.
 
 Get list of all equipment types
@@ -56,9 +59,6 @@ Get exercises by equipment type
 - **get_exercises_by_name**: Returns matching exercises with full details including body part, target muscles, equipment, instructions and GIF URLs.
 
 Get exercises by name search
-- **get_exercises_by_target**: Common targets include: "abductors", "abs", "adductors", "biceps", "calves", "cardiovascular system", "delts", "forearms", "glutes", "hamstrings", "lats", "levator scapulae", "pectorals", "quads", "serratus anterior", "spine", "traps", "triceps", "upper back". Returns exercise details with body part, equipment and instructions.
-
-Get exercises by target muscle
 - **get_target_list**: Useful for discovering valid target values to use with get_exercises_by_target.
 
 Get list of all target muscles
