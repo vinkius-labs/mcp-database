@@ -35,11 +35,20 @@ Connect to the **Harvard Art Museums API** and turn your AI agent into a sophist
 
 
 ## Available Tools (35)
+- **get_iiif_gallery_manifest**: Get the IIIF presentation manifest for a gallery
+- **list_galleries**: List physical spaces within the museum building
+- **list_groups**: List curated groupings (Collection Highlights, etc.)
+- **list_images**: List metadata for images produced by the museums
+- **list_mediums**: List materials used (Watercolor, Resin, etc.)
+- **list_places**: List geographic locations
+- **list_publications**: List publications containing images or info about artworks
+- **list_sites**: List physical museum sites and facilities
+- **list_spectrums**: List colors in the museum branding spectrum
+- **get_gallery**: Get specific gallery details
+- **list_periods**: List art movements and time periods
 - **get_annotation**: Get specific annotation details
 - **get_audio**: Get specific audio details
 - **get_exhibition**: Get specific exhibition details
-- **get_gallery**: Get specific gallery details
-- **get_iiif_gallery_manifest**: Get the IIIF presentation manifest for a gallery
 - **get_iiif_object_manifest**: Get the IIIF presentation manifest for an object
 - **get_iiif_top_collection**: Get the top level IIIF collection manifest
 - **get_image**: Get specific image details
@@ -55,17 +64,8 @@ Connect to the **Harvard Art Museums API** and turn your AI agent into a sophist
 - **list_colors**: List CSS3 and extracted color terms
 - **list_cultures**: List cultural associations (Dutch, Greek, etc.)
 - **list_exhibitions**: List past, current, and upcoming exhibitions
-- **list_galleries**: List physical spaces within the museum building
-- **list_groups**: List curated groupings (Collection Highlights, etc.)
-- **list_images**: List metadata for images produced by the museums
-- **list_mediums**: List materials used (Watercolor, Resin, etc.)
 - **list_objects**: List objects in the Harvard Art Museums collection
 - **list_people**: List people associated with works (artists, donors, etc.)
-- **list_periods**: List art movements and time periods
-- **list_places**: List geographic locations
-- **list_publications**: List publications containing images or info about artworks
-- **list_sites**: List physical museum sites and facilities
-- **list_spectrums**: List colors in the museum branding spectrum
 - **list_supports**: List surfaces used (Wood, Slate, etc.)
 - **list_techniques**: List production processes (Red-figure, Etching, etc.)
 - **list_videos**: List videos produced by or associated with the museums

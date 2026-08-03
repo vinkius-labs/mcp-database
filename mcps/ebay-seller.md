@@ -18,12 +18,6 @@ Get your eBay seller account information and feedback score
 - **create_listing**: Requires SKU (from inventory), listing title, category ID, pricing, format (FIXED_PRICE or AUCTION), and return/shipping policies. Returns listingId for management. Use this to make your inventory products visible to buyers.
 
 Create a new eBay listing for an inventory item
-- **delete_inventory**: Note: you cannot delete inventory items that have active listings. Use this to clean up discontinued products.
-
-Delete an inventory item by SKU
-- **delete_listing**: If there are active bids (auction), this may violate eBay policies. For fixed-price, this simply removes the item from sale. Use this to quickly remove unwanted inventory from the marketplace.
-
-Delete/end an eBay listing
 - **get_inventory_item**: Use this to verify product details before updating or creating listings.
 
 Get detailed information for a specific inventory item by SKU
@@ -48,6 +42,12 @@ Update or create an inventory item with product details and stock quantity
 - **update_listing**: Note: certain fields cannot be changed once listing is active. Use this to adjust pricing or correct listing errors.
 
 Update an existing eBay listing (price, title, details)
+- **delete_inventory**: Note: you cannot delete inventory items that have active listings. Use this to clean up discontinued products.
+
+Delete an inventory item by SKU
+- **delete_listing**: If there are active bids (auction), this may violate eBay policies. For fixed-price, this simply removes the item from sale. Use this to quickly remove unwanted inventory from the marketplace.
+
+Delete/end an eBay listing
 
 
 

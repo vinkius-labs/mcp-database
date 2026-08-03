@@ -36,9 +36,6 @@ Your agent becomes a personal car rental assistant — finding the best deals ac
 
 
 ## Available Tools (8)
-- **book_car**: Requires the car offer ID from a previous search, driver details (first name, last name, email), and confirmation of rental terms. Returns the booking confirmation with itinerary ID, which is needed for future retrieval or cancellation of the reservation. Ensure all date/times match the original search parameters.
-
-Book a rental car for the specified dates and location
 - **cancel_itinerary**: Returns cancellation confirmation and any applicable refund details based on the rental supplier cancellation policy. Some bookings may incur cancellation fees if cancelled outside the free cancellation window. Always verify the itinerary details before cancelling.
 
 Cancel an existing car rental reservation
@@ -54,6 +51,9 @@ Retrieve details of a confirmed car rental reservation
 - **get_pickup_locations**: Returns detailed location information including address, operating hours, supplier counters available at each location, and special instructions. Useful for helping users find convenient rental locations near their travel destination.
 
 Search for available car rental pickup locations
+- **book_car**: Requires the car offer ID from a previous search, driver details (first name, last name, email), and confirmation of rental terms. Returns the booking confirmation with itinerary ID, which is needed for future retrieval or cancellation of the reservation. Ensure all date/times match the original search parameters.
+
+Book a rental car for the specified dates and location
 - **search_car_regions**: Returns region identifiers that can be used as pickup_location parameters in the search_cars tool. Useful for exploring rental options when the user knows a city or region name but not the specific location code. Supports partial text matching.
 
 Search for car rental regions and destinations

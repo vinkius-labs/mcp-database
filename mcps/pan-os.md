@@ -12,15 +12,15 @@ Connect PAN-OS to any AI agent via MCP.
 
 
 ## Available Tools (8)
-- **commit**: This validates the config and activates it. Returns the commit job ID and status. Use this after making configuration changes to activate them.
-
-Commit the candidate configuration to running configuration
 - **get_active_sessions**: Use this to monitor real-time activity, identify heavy users, or debug connection issues.
 
 List all active network sessions on the firewall
 - **get_nat_rules**: Use this to audit NAT configurations or troubleshoot connectivity issues.
 
 List all NAT rules configured on the firewall
+- **commit**: This validates the config and activates it. Returns the commit job ID and status. Use this after making configuration changes to activate them.
+
+Commit the candidate configuration to running configuration
 - **get_pending_changes**: Use this to verify if the running configuration matches the candidate configuration before committing.
 
 Check if there are uncommitted configuration changes

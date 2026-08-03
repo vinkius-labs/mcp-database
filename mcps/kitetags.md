@@ -45,9 +45,9 @@ No more manual checking of individual tag locations or missing critical asset mo
 - **list_group_tags**: List tags in group
 - **list_groups**: List groups
 - **list_tags**: List tags
+- **search_tags**: Search tags
 - **check_kitetags_status**: Verify connectivity
 - **create_group**: Create a group
-- **search_tags**: Search tags
 
 
 ## 💬 Prompt Examples

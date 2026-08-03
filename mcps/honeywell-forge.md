@@ -12,12 +12,6 @@ Connect Honeywell Forge to any AI agent via MCP.
 
 
 ## Available Tools (11)
-- **acknowledge_alarm**: Acknowledgment does not resolve or clear the underlying condition—it simply records that a human has reviewed the alarm and is aware of it. This updates the alarm state from "unacknowledged" to "acknowledged" in the Forge audit log, which is important for compliance and incident-tracking workflows. Provide the exact alarm ID as returned by get_alarms. Use this during incident response to track which alarms have been seen by the operations team.
-
-Acknowledge an active alarm in Honeywell Forge
-- **get_alarms**: Alarms cover a wide range of conditions: security breaches (door forced, tailgating), fire and life safety (smoke detector activation, pull station), HVAC faults, and system health warnings. Each alarm record includes severity level, timestamp, source device, description, and acknowledgment status. Optionally filter by building_id to scope results to a single site. Use this to triage active incidents, audit historical events, or identify recurring fault patterns.
-
-List active and historical alarms across all buildings or a specific building
 - **get_building_details**: Returns comprehensive metadata including HVAC zones, floor plans, linked subsystems (access control, fire life safety, video surveillance), energy targets, and operating schedules. Use this when you need a deep-dive view of a single site before performing operations like checking alarms or querying energy usage.
 
 Get detailed information about a specific Honeywell Forge building
@@ -45,6 +39,12 @@ Lock a specific door or access point in Honeywell Forge
 - **unlock_door**: The door will disengage its lock and enter a free-access state until explicitly re-locked or returned to its scheduled access control mode. Use this for emergency egress, visitor accommodation, or maintenance access. Always verify the correct access point ID before unlocking to avoid unintended security gaps.
 
 Unlock a specific door or access point in Honeywell Forge
+- **acknowledge_alarm**: Acknowledgment does not resolve or clear the underlying condition—it simply records that a human has reviewed the alarm and is aware of it. This updates the alarm state from "unacknowledged" to "acknowledged" in the Forge audit log, which is important for compliance and incident-tracking workflows. Provide the exact alarm ID as returned by get_alarms. Use this during incident response to track which alarms have been seen by the operations team.
+
+Acknowledge an active alarm in Honeywell Forge
+- **get_alarms**: Alarms cover a wide range of conditions: security breaches (door forced, tailgating), fire and life safety (smoke detector activation, pull station), HVAC faults, and system health warnings. Each alarm record includes severity level, timestamp, source device, description, and acknowledgment status. Optionally filter by building_id to scope results to a single site. Use this to triage active incidents, audit historical events, or identify recurring fault patterns.
+
+List active and historical alarms across all buildings or a specific building
 
 
 

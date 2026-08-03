@@ -42,7 +42,6 @@ Create a new dispute record
 - **list_deductions**: List all deductions in the system
 - **list_disputes**: List all disputes in the system
 - **get_customer**: Get details of a specific customer
-- **get_invoice**: Get details of a specific invoice
 - **get_payment**: Get details of a specific payment
 - **list_invoices**: Use this to get an overview of outstanding receivables.
 
@@ -51,6 +50,7 @@ List all invoices in the system
 - **reconcile_payment**: Provide the payment ID and an array of invoice IDs to reconcile.
 
 Reconcile a payment against one or more invoices
+- **get_invoice**: Get details of a specific invoice
 
 
 ## 💬 Prompt Examples

@@ -34,16 +34,8 @@ Connect to the **ANA (Agência Nacional de Águas e Saneamento Básico)** data m
 
 
 ## Available Tools (18)
-- **create_serie_cota**: Inclusion of Stage/Level (Cota) Series data
-- **create_serie_chuva**: Inclusion of Rainfall (Chuva) Series data
-- **create_serie_perfil_transversal**: Inclusion of Cross-Section Profile Series (Série Perfil Transversal) data
 - **create_serie_qa**: Inclusion of Water Quality (QA) Series data
-- **create_serie_resumo_descarga**: Inclusion of Discharge Summary Series (Série Resumo Descarga) data
 - **create_serie_vazao**: Inclusion of Flow Series (Série Vazão) data
-- **get_serie_chuva**: Search for Rainfall (Chuva) Series data
-- **get_serie_cota**: Search for Stage/Level (Cota) Series data
-- **get_serie_perfil_transversal**: Search for Cross-Section Profile Series (Série Perfil Transversal) data
-- **get_serie_qa**: Search for Water Quality (QA) Series data
 - **get_serie_resumo_descarga**: Search for Discharge Summary Series (Série Resumo Descarga) data
 - **get_serie_vazao**: No limitation on the number of searches per request.
 
@@ -54,6 +46,14 @@ Search for Flow Series (Série Vazão) data
 - **update_serie_qa**: Update/Modification of Water Quality (QA) Series data
 - **update_serie_resumo_descarga**: Update/Modification of Discharge Summary Series (Série Resumo Descarga) data
 - **update_serie_vazao**: Update/Modification of Flow Series (Série Vazão) data
+- **create_serie_cota**: Inclusion of Stage/Level (Cota) Series data
+- **create_serie_chuva**: Inclusion of Rainfall (Chuva) Series data
+- **create_serie_perfil_transversal**: Inclusion of Cross-Section Profile Series (Série Perfil Transversal) data
+- **create_serie_resumo_descarga**: Inclusion of Discharge Summary Series (Série Resumo Descarga) data
+- **get_serie_chuva**: Search for Rainfall (Chuva) Series data
+- **get_serie_cota**: Search for Stage/Level (Cota) Series data
+- **get_serie_perfil_transversal**: Search for Cross-Section Profile Series (Série Perfil Transversal) data
+- **get_serie_qa**: Search for Water Quality (QA) Series data
 
 
 ## 💬 Prompt Examples

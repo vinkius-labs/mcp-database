@@ -18,7 +18,7 @@ Connect Lancerkit to any AI agent via MCP.
 - **get_status**: Examine account and integration connection status overall
 - **get_time_logs**: Check the recorded time logs for hours spent
 - **list_clients**: List all clients associated with the workspace
-- **list_invoices**: Fetch global invoice pipeline statistics
+- **list_invoices**: Fetch globalThis invoice pipeline statistics
 - **list_projects**: List all standard projects
 - **list_services**: Fetch all specific billable service items configured online
 - **list_tasks**: Check current working tasks

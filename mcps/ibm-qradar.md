@@ -12,20 +12,20 @@ Connect IBM QRadar to any AI agent via MCP.
 
 
 ## Available Tools (10)
-- **execute_aql**: Returns a search ID for async retrieval.
-
-Execute an Ariel Query Language (AQL) search
-- **get_aql_results**: Get results from a completed AQL search
-- **get_aql_status**: Get the status of an AQL search
 - **get_log_sources**: List QRadar log sources
 - **get_network_hierarchy**: List QRadar network hierarchy
 - **get_offense_details**: Get details for a specific QRadar offense
-- **get_offenses**: List QRadar offenses
 - **get_reference_sets**: ).
 
 List QRadar reference sets
 - **get_rules**: List QRadar correlation rules
+- **execute_aql**: Returns a search ID for async retrieval.
+
+Execute an Ariel Query Language (AQL) search
+- **get_offenses**: List QRadar offenses
 - **update_offense**: Update a QRadar offense
+- **get_aql_results**: Get results from a completed AQL search
+- **get_aql_status**: Get the status of an AQL search
 
 
 

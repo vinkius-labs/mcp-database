@@ -15,6 +15,9 @@ Connect Honeywell Process to any AI agent via MCP.
 - **create_maintenance_ticket**: The ticket includes asset identification, problem description, priority level, requested completion date, and any relevant diagnostic data. Upon creation, the system assigns a work order number, routes the ticket to the appropriate maintenance team, and triggers notifications. Use this tool to formally log equipment issues, schedule preventive maintenance, or escalate asset health concerns to the maintenance workflow.
 
 Create a new maintenance work order or ticket for an asset
+- **get_scan_events**: Each event includes timestamp, device ID, scan type, decoded data, and success/failure status. Use this tool to audit scanning operations, trace barcode or RFID read events, investigate scan failures, or analyze throughput patterns for specific devices or across the entire facility. Optionally filter by a specific asset ID to focus on one device.
+
+Retrieve scan event history from Honeywell scanning and mobility devices
 - **list_assets**: Supports optional filtering by site, type, or status. Use this tool when you need to discover available assets, check device registration status, or build an overview of the industrial infrastructure. Returns asset IDs, names, types, locations, and current operational status for each registered device.
 
 List all registered assets and devices in the Honeywell Operational Intelligence platform
@@ -36,9 +39,6 @@ Get real-time and historical process performance metrics
 - **get_production_data**: Data is organized by production line, shift, or time period. Use this tool to analyze production trends, verify output targets, compare actual vs. planned production, or generate operational summaries. Filter by site, line, date range, or product type to focus the analysis on specific segments of the production operation.
 
 Retrieve production output and operational data from the Honeywell process system
-- **get_scan_events**: Each event includes timestamp, device ID, scan type, decoded data, and success/failure status. Use this tool to audit scanning operations, trace barcode or RFID read events, investigate scan failures, or analyze throughput patterns for specific devices or across the entire facility. Optionally filter by a specific asset ID to focus on one device.
-
-Retrieve scan event history from Honeywell scanning and mobility devices
 - **get_shift_reports**: Reports include output quantities, downtime events, quality metrics, safety observations, and operator notes. Use this tool to review historical shift performance, compare shift-to-shift results, identify recurring issues, or prepare management summaries. Optionally specify a shift ID to retrieve a single detailed report.
 
 Retrieve shift operation reports summarizing production activity

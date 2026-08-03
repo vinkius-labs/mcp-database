@@ -12,15 +12,18 @@ Connect Open Finance Brasil to any AI agent via MCP.
 
 
 ## Available Tools (7)
+- **get_credit_cards**: Returns brand, limits (total, available, used).
+
+Get credit card accounts and their limits
+- **get_transactions**: Needs an Account ID from get_accounts.
+
+Get transaction history for a specific account
 - **get_accounts**: Returns account type, agency, number, and available balance.
 
 Get list of payment accounts and their balances
 - **get_credit_card_bills**: Needs a Credit Card Account ID.
 
 Get credit card bills for a specific card account
-- **get_credit_cards**: Returns brand, limits (total, available, used).
-
-Get credit card accounts and their limits
 - **get_customer_data**: Returns basic identification info.
 
 Get personal data of the customer (Name, CPF, Address)
@@ -30,9 +33,6 @@ Get financing and loan contracts
 - **get_investments**: Returns treasury, funds, CDBs, etc.
 
 Get investment portfolio
-- **get_transactions**: Needs an Account ID from get_accounts.
-
-Get transaction history for a specific account
 
 
 
