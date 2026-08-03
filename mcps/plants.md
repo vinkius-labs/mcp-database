@@ -33,6 +33,12 @@ Connect to the **Trefle API** to explore global plant data. This server allows y
 
 
 ## Available Tools (11)
+- **list_species**: Use query_params for advanced filtering.
+
+List all species, subspecies, and varieties
+- **report_species_error**: Report an error in a species record
+- **search_plants**: Search for plants by name
+- **search_species**: Search for species by name
 - **correct_species**: Submit a data correction for a species
 - **get_plant**: Get details for a specific plant
 - **get_species**: Get details for a specific species
@@ -42,12 +48,6 @@ Connect to the **Trefle API** to explore global plant data. This server allows y
 - **list_plants**: Use query_params for filter[FIELD], range[FIELD], or order[FIELD].
 
 List all main plant species
-- **list_species**: Use query_params for advanced filtering.
-
-List all species, subspecies, and varieties
-- **report_species_error**: Report an error in a species record
-- **search_plants**: Search for plants by name
-- **search_species**: Search for species by name
 
 
 ## 💬 Prompt Examples

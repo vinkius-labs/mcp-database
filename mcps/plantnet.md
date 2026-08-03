@@ -35,7 +35,7 @@ Connect the **Pl@ntNet** API to your AI agent to transform it into a powerful bo
 
 ## Available Tools (17)
 - **list_diseases**: List identifiable plant diseases
-- **list_species**: Can be scoped to a specific project or global.
+- **list_species**: Can be scoped to a specific project or globalThis.
 
 List species, optionally filtered by project
 - **list_varieties**: List identifiable cultivated plant varieties

@@ -33,9 +33,9 @@ Connect your **Play.ht** account to any AI agent to generate high-quality, human
 
 
 ## Available Tools (3)
-- **convert_tts**: Convert text to speech instantly
 - **get_tts_status**: Get conversion status for a TTS request
 - **get_voices**: Get available Play.ht voices
+- **convert_tts**: Convert text to speech instantly
 
 
 ## 💬 Prompt Examples

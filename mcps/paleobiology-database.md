@@ -34,6 +34,18 @@ Connect to the **Paleobiology Database (PBDB)** and turn your AI agent into a sp
 
 
 ## Available Tools (27)
+- **list_intervals**: List geological time intervals (e.g., Cretaceous)
+- **get_specimen**: Get information about a single specimen
+- **get_taxon**: Get information about a single taxonomic name
+- **list_collections**: List fossil collections based on filters
+- **list_opinions**: List taxonomic opinions based on filters
+- **list_references**: List bibliographic references based on filters
+- **list_specimen_measurements**: List measurements associated with specimens
+- **list_specimens**: List specimens based on filters
+- **list_strata**: List geological strata (formations, groups, members)
+- **list_taxa**: List taxa, children, or parents
+- **list_timescales**: List available geological time scales
+- **match_reference**: Check for a matching reference in the PBDB database
 - **get_collections_summary**: Geographic summary of collections (clustering)
 - **get_config**: Returns database configuration info (ranks, continents, countries, lithologies, environments)
 - **get_occurrence**: Get information about a single fossil occurrence
@@ -44,19 +56,7 @@ Connect to the **Paleobiology Database (PBDB)** and turn your AI agent into a sp
 - **get_occurrences_taxa**: Get taxonomic hierarchy of a selected set of occurrences
 - **get_opinion**: Get information about a single taxonomic opinion
 - **get_reference**: Get information about a single bibliographic reference
-- **get_specimen**: Get information about a single specimen
-- **get_taxon**: Get information about a single taxonomic name
-- **list_collections**: List fossil collections based on filters
-- **list_intervals**: List geological time intervals (e.g., Cretaceous)
 - **list_occurrences**: List fossil occurrences based on filters
-- **list_opinions**: List taxonomic opinions based on filters
-- **list_references**: List bibliographic references based on filters
-- **list_specimen_measurements**: List measurements associated with specimens
-- **list_specimens**: List specimens based on filters
-- **list_strata**: List geological strata (formations, groups, members)
-- **list_taxa**: List taxa, children, or parents
-- **list_timescales**: List available geological time scales
-- **match_reference**: Check for a matching reference in the PBDB database
 - **autocomplete_combined**: General auto-completion across multiple record types (taxa, strata, intervals, people)
 - **autocomplete_strata**: Auto-completion for strata names
 - **autocomplete_taxa**: Auto-completion for taxonomic names

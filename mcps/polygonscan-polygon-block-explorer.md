@@ -36,18 +36,18 @@ Connect **Polygonscan** to your AI agent to gain real-time visibility into the P
 ## Available Tools (17)
 - **get_contract_abi**: Get Contract ABI for Verified Source Codes
 - **get_balance_multi**: Get MATIC Balance for Multiple Addresses
-- **get_balance**: Get MATIC Balance for a Single Address
 - **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
-- **get_block_no_by_time**: Get Block Number by Timestamp
-- **get_block_reward**: Get Block Rewards by BlockNo
 - **get_matic_price**: Get MATIC Last Price
 - **get_matic_supply**: Get Total Supply of MATIC on Polygon
+- **get_tx_receipt_status**: Check Transaction Receipt Status
+- **get_balance**: Get MATIC Balance for a Single Address
+- **get_block_no_by_time**: Get Block Number by Timestamp
+- **get_block_reward**: Get Block Rewards by BlockNo
 - **get_contract_source_code**: Get Contract Source Code for Verified Source Codes
 - **get_token_1155_tx**: Get List of ERC-1155 Transfer Events
 - **get_token_nft_tx**: Get List of ERC-721 (NFT) Transfer Events
 - **get_token_tx**: Get List of ERC-20 Token Transfer Events
 - **get_tx_list_internal**: Get List of Internal Transactions
-- **get_tx_receipt_status**: Check Transaction Receipt Status
 - **get_logs**: Get Logs
 - **get_tx_list**: Get List of Normal Transactions
 - **get_tx_status**: Check Contract Execution Status

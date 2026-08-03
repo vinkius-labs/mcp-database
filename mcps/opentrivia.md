@@ -34,14 +34,14 @@ Connect to the **Open Trivia Database** (OpenTDB) and transform any AI agent int
 
 
 ## Available Tools (6)
-- **get_categories**: Lookup all trivia categories
-- **get_category_count**: Get question count for a category
-- **get_global_count**: Get global question count
+- **reset_token**: Reset a session token
 - **get_questions**: Retrieve trivia questions
 - **request_token**: Tokens expire after 6 hours of inactivity.
 
 Retrieve a session token
-- **reset_token**: Reset a session token
+- **get_categories**: Lookup all trivia categories
+- **get_category_count**: Get question count for a category
+- **get_global_count**: Get globalThis question count
 
 
 ## 💬 Prompt Examples

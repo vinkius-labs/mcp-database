@@ -34,13 +34,6 @@ Connect your **Polygon.io** account to any AI agent to retrieve institutional-gr
 
 
 ## Available Tools (21)
-- **get_merchant_aggregates**: Retrieve aggregated European consumer spending data
-- **list_futures_contracts**: Discover listed futures contracts and specifications
-- **list_options_contracts**: Retrieve an index of options contracts (active and expired)
-- **list_ticker_types**: Retrieve a list of all ticker types supported
-- **list_tickers**: Retrieve a comprehensive list of ticker symbols across asset classes
-- **get_crypto_trades**: Retrieve tick-level trade data for crypto pairs
-- **get_custom_bars**: Retrieve aggregated historical OHLC and volume data for a stock
 - **get_dividends**: Retrieve historical dividends for stocks
 - **get_forex_conversion**: Retrieve real-time currency conversion rates
 - **get_indices_snapshot**: Retrieve snapshot data for one or more indices
@@ -53,6 +46,13 @@ Connect your **Polygon.io** account to any AI agent to retrieve institutional-gr
 - **get_sma**: Retrieve Simple Moving Average (SMA) technical indicator
 - **get_splits**: Retrieve historical stock splits
 - **get_trades**: Retrieve tick-level trade data for a specified stock
+- **get_merchant_aggregates**: Retrieve aggregated European consumer spending data
+- **list_futures_contracts**: Discover listed futures contracts and specifications
+- **list_options_contracts**: Retrieve an index of options contracts (active and expired)
+- **list_ticker_types**: Retrieve a list of all ticker types supported
+- **list_tickers**: Retrieve a comprehensive list of ticker symbols across asset classes
+- **get_crypto_trades**: Retrieve tick-level trade data for crypto pairs
+- **get_custom_bars**: Retrieve aggregated historical OHLC and volume data for a stock
 - **get_treasury_yields**: Retrieve historical U.S. Treasury yield data (1-month to 30-year)
 - **list_exchanges**: Retrieve a list of known exchanges and their identifiers
 
