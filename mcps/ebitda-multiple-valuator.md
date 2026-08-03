@@ -10,7 +10,7 @@
 Calculate Enterprise and Equity Value using sector-specific EBITDA multiples.
 
 ## Description
-This MCP server provides a specialized valuation engine for profitable scaleups. By leveraging industry-specific market multiples, it allows users to estimate Enterprise Value (EV) and Equity Value based on EBITDA TTM, sector context, and growth rates. Use `get_sector_multiples` to see current baseline multipliers for SaaS, Fintech, Marketplace, and Healthtech sectors. The engine also supports `calculate_enterprise_value` with growth rate adjustments and `calculate_equity_svalue` by accounting for net debt.
+This MCP server provides a specialized valuation engine for profitable scaleups. By leveraging industry-specific market multiples, it allows users to estimate Enterprise Value (EV) and Equity Value based on EBITDA TTM, sector context, and growth rates. Use `get_sector_multiples` to see current baseline multipliers for SaaS, Fintech, Marketplace, and Healthtech sectors. The engine also supports `calculate_enterprise_value` with growth rate adjustments and `calculate_equity_<0xC2>svalue` by accounting for net debt.
 
 
 ## Available Tools (3)

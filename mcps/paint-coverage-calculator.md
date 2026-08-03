@@ -15,8 +15,8 @@ The Paint Coverage Calculator is a precision estimation engine designed to deter
 
 ## Available Tools (3)
 - **calculate_ceiling_paint**: Calculates the required volume of paint for flat ceiling surfaces
-- **summarize_total_requirements**: Aggregates all calculated volumes into a single final order quantity
 - **calculate_wall_paint**: Calculates the required volume of paint for vertical wall surfaces
+- **summarize_total_requirements**: Aggregates all calculated volumes into a single final order quantity
 
 
 ## 💬 Prompt Examples

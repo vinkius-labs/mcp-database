@@ -14,9 +14,9 @@ The Drug Renal Dose Adjuster is a clinical decision support tool designed to ass
 
 
 ## Available Tools (3)
+- **list_all_drugs**: Lists all supported drugs
 - **calculate_renal_adjustment**: Calculates adjusted dose based on renal function
 - **get_drug_baseline**: Gets the baseline dose and interval for a drug
-- **list_all_drugs**: Lists all supported drugs
 
 
 ## 💬 Prompt Examples

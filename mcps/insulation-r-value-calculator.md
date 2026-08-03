@@ -14,9 +14,9 @@ This MCP server provides a specialized calculation engine for building insulatio
 
 
 ## Available Tools (3)
+- **lookup_zone_requirements**: Retrieves minimum R-values for a specific IECC climate zone
 - **calculate_material_thickness**: Calculates required insulation thickness
 - **estimate_material_cost**: Estimates insulation cost
-- **lookup_zone_requirements**: Retrieves minimum R-values for a specific IECC climate zone
 
 
 ## 💬 Prompt Examples

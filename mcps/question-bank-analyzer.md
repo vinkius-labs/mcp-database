@@ -15,10 +15,10 @@ The Question Bank Analyzer is a specialized performance engine that evaluates yo
 
 ## Available Tools (4)
 - **analyze_topic_performance**: Analyze accuracy rates across different subjects
-- **calculate_priority_gaps**: Find high-priority study areas by cross-referencing bad performance with board importance
 - **fetch_board_focus**: g., CESPE, FGV) and returns its focus areas.
 
 Retrieve predefined subject importance for a specific exam board
+- **calculate_priority_gaps**: Find high-priority study areas by cross-referencing bad performance with board importance
 - **track_mock_evolution**: Visualize performance changes across mock exam sessions
 
 

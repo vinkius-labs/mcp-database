@@ -14,10 +14,10 @@ The Loot Table Balancer MCP server provides a suite of specialized tools for gam
 
 
 ## Available Tools (4)
-- **audit_rarity_distribution**: Audit rarity distribution against benchmarks
-- **estimate_cadence**: Estimate drop frequency
 - **compute_expected_value**: Compute the expected value of a loot table
 - **normalize_weights**: Normalize item weights to drop rates
+- **audit_rarity_distribution**: Audit rarity distribution against benchmarks
+- **estimate_cadence**: Estimate drop frequency
 
 
 ## 💬 Prompt Examples

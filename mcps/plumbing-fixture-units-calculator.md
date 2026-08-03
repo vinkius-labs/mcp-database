@@ -14,13 +14,13 @@ This MCP server provides specialized tools for plumbing engineering calculations
 
 
 ## Available Tools (3)
+- **estimate_minimum_pipe_diameter**: The tool must find the lowest diameter where the specified load does not exceed the allowed threshold for that specific pipe type.
+
+Determines the smallest required pipe diameter to safely handle a specific drainage or water supply load
 - **aggregate_building_implements**: Calculates the total cumulative load for an entire building by summing multiple rooms
 - **calculate_room_fixture_load**: Multiply these values by the provided quantity, then sum these products to reach the final totals for the room.
 
 Calculates the combined drainage and water supply loads for a single room based on its fixtures
-- **estimate_minimum_pipe_diameter**: The tool must find the lowest diameter where the specified load does not exceed the allowed threshold for that specific pipe type.
-
-Determines the smallest required pipe diameter to safely handle a specific drainage or water supply load
 
 
 ## 💬 Prompt Examples

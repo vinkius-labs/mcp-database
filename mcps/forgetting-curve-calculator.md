@@ -14,9 +14,9 @@ The Forgetting Curve Calculator is a mathematical engine designed to help learne
 
 
 ## Available Tools (3)
-- **estimate_maintenance_effort**: Estimate required future reviews for long-term stability
 - **get_current_retention**: Calculate current memory retention percentage
 - **predict_decay_thresholds**: Predict when memory will drop below critical thresholds
+- **estimate_maintenance_effort**: Estimate required future reviews for long-term stability
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ The SAT Score Calculator is a specialized tool for students to estimate their Di
 
 
 ## Available Tools (4)
+- **evaluate_percentile_rank**: Determines the globalThis percentile tier
 - **calculate_aggregate_score**: Computes the total composite SAT score
-- **evaluate_percentile_rank**: Determines the global percentile tier
 - **get_section_scaled_score**: Converts a raw count of correct answers into the standardized scaled score for a specific section
 - **assess_university_competitiveness**: Compares score against Top 50 US university benchmarks
 

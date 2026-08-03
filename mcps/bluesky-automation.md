@@ -39,6 +39,17 @@ Connect your **Bluesky** account to your AI agent and unlock the most powerful A
 
 
 ## Available Tools (20)
+- **get_profile**: Get a Bluesky user profile details
+- **reply_to_post**: ) of the post. If you do not have the URL/URI, use search_posts or get_author_feed to find it first. Read the thread context via get_post_thread before engaging.
+
+Reply to a specific post on Bluesky
+- **repost**: ) of the post to share it on your own profile. If you do not have the URL/URI, use search_posts or get_author_feed to find it first.
+
+Repost (retweet) a specific post on Bluesky
+- **search_posts**: Sort by "top" for viral trends, or "latest" for real-time engagement.
+
+Search Bluesky network for posts matching specific keywords
+- **search_users**: Search for Bluesky users by keyword
 - **get_notifications**: Priority channel for defensive community management.
 
 Get notifications (mentions, replies, etc) for the authenticated user
@@ -50,9 +61,6 @@ Like a specific post on Bluesky using its public URL
 - **publish_post**: Keep text under 300 characters. Links and hashtags are automatically parsed.
 
 Publish a new top-level post to your Bluesky profile
-- **repost**: ) of the post to share it on your own profile. If you do not have the URL/URI, use search_posts or get_author_feed to find it first.
-
-Repost (retweet) a specific post on Bluesky
 - **delete_post**: Provide the full public URL or the AT Protocol URI (at://...) of your post to execute deletion.
 
 Delete a post you previously made on Bluesky
@@ -74,17 +82,9 @@ Get a list of users following a specific Bluesky handle
 - **get_post_thread**: Read this to analyze the thread environment before engaging. Provide the full public URL or the AT Protocol URI (at://...) of the target post.
 
 Get the full conversation/thread of replies for a specific post
-- **get_profile**: Get a Bluesky user profile details
 - **quote_post**: Provide the public URL or AT URI of the post to quote. More effective than plain repost for thought leadership and engagement.
 
 Quote a post on Bluesky with your own commentary
-- **reply_to_post**: ) of the post. If you do not have the URL/URI, use search_posts or get_author_feed to find it first. Read the thread context via get_post_thread before engaging.
-
-Reply to a specific post on Bluesky
-- **search_posts**: Sort by "top" for viral trends, or "latest" for real-time engagement.
-
-Search Bluesky network for posts matching specific keywords
-- **search_users**: Search for Bluesky users by keyword
 
 
 ## 💬 Prompt Examples
