@@ -36,15 +36,15 @@ Connect your physical **Last-Mile Logistic Console (99Minutos)** to the Vurb arc
 - **cancel_order**: Void an active courier run
 - **create_order**: Request a courier express delivery
 - **create_store**: Register a new dispatch warehouse
-- **create_webhook**: Inject an HTTP delivery ping receptor
-- **get_order**: Get express delivery details
-- **get_rates**: Check point-to-point same-day costs
-- **get_tracking**: Pull real-time vehicle geographical statuses
 - **list_coverage**: Check LatAm ZIP code active coverage
 - **list_orders**: List active express orders
 - **list_return_orders**: Watch reverse logistics flows
 - **list_stores**: List registered physical stores/nodes
 - **list_webhooks**: Scan infrastructure active webhooks
+- **create_webhook**: Inject an HTTP delivery ping receptor
+- **get_order**: Get express delivery details
+- **get_rates**: Check point-to-point same-day costs
+- **get_tracking**: Pull real-time vehicle geographical statuses
 
 
 ## 💬 Prompt Examples

@@ -36,15 +36,15 @@ No more manual logging into form portals to check for new leads or feedback. You
 
 
 ## Available Tools (12)
-- **check_aidaform_status**: Verify connectivity
-- **create_form**: Create a form
-- **delete_form**: Delete a form
-- **delete_response**: Delete a response
-- **export_responses**: Export responses
 - **get_form_analytics**: Get form analytics
 - **get_form**: Get form details
 - **get_response**: Get response details
 - **list_forms**: List forms
+- **create_form**: Create a form
+- **delete_form**: Delete a form
+- **delete_response**: Delete a response
+- **export_responses**: Export responses
+- **check_aidaform_status**: Verify connectivity
 - **list_responses**: List form responses
 - **list_workspaces**: List workspaces
 - **update_form**: Update a form

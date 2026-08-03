@@ -35,9 +35,9 @@ Empower your AI agent to orchestrate your entire food manufacturing and recipe a
 
 
 ## Available Tools (4)
+- **list_recipal_ingredients**: List all ingredients available in the ReciPal database
 - **check_api_status**: Check if the ReciPal service is operational
 - **get_recipe_details**: Get full nutritional and ingredient details for a specific recipe by ID
-- **list_recipal_ingredients**: List all ingredients available in the ReciPal database
 - **list_recipal_recipes**: List all recipes in your ReciPal account
 
 

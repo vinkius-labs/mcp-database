@@ -35,10 +35,10 @@ Equip your AI agent with the most reliable video game intelligence available via
 
 
 ## Available Tools (8)
-- **get_game_details**: Get game details
 - **get_game_reviews**: Get game reviews
 - **get_hall_of_fame**: Get Hall of Fame games
 - **search_games**: Search for video games
+- **get_game_details**: Get game details
 - **get_upcoming_games**: Get upcoming games
 - **get_popular_games**: Get popular games
 - **get_recent_reviews**: Get recent reviews
