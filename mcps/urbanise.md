@@ -35,20 +35,20 @@ Connect your **Urbanise** property management account to any AI agent and simpli
 
 
 ## Available Tools (12)
-- **check_api_health**: Verify Urbanise API connectivity
 - **create_maintenance_job**: Requires job title and description.
 
 Schedule a new maintenance task
-- **get_client_profile**: Get authenticated client details
 - **list_facility_assets**: List infrastructure equipment
 - **list_property_budgets**: List budgets for plans
 - **list_financial_data**: Retrieve ledger and billing info
 - **list_maintenance_jobs**: List facility maintenance tasks
 - **list_accounting_ledgers**: List chart of accounts
+- **list_configured_webhooks**: List active event webhooks
+- **check_api_health**: Verify Urbanise API connectivity
+- **list_managed_suppliers**: List property suppliers
+- **get_client_profile**: Get authenticated client details
 - **list_property_occupants**: List residents and owners
 - **list_property_plans**: List all property plans
-- **list_managed_suppliers**: List property suppliers
-- **list_configured_webhooks**: List active event webhooks
 
 
 ## 💬 Prompt Examples

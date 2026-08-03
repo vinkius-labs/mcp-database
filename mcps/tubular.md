@@ -46,11 +46,11 @@ Connect your **Tubular Labs** video intelligence account to any AI agent and sim
 - **search_creators**: g., name or keywords).
 
 Search for creators
+- **get_video_trends**: List trending videos
 - **get_video_demographics**: ) for a specific video.
 
 Get audience demographics for a video
 - **get_video_insights**: Get insights for a specific video
-- **get_video_trends**: List trending videos
 
 
 ## 💬 Prompt Examples

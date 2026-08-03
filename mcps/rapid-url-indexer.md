@@ -14,11 +14,11 @@ The Rapid URL Indexer MCP server allows your AI agent to submit URLs for immedia
 
 
 ## Available Tools (5)
-- **create_project**: Submit new URLs for indexing
 - **get_credit_balance**: Check your remaining indexing credits
-- **get_project_report**: Get the indexing report for a project
 - **list_projects**: List all indexing projects
 - **retrieve_project**: Get details and status of a specific project
+- **create_project**: Submit new URLs for indexing
+- **get_project_report**: Get the indexing report for a project
 
 
 ## 💬 Prompt Examples

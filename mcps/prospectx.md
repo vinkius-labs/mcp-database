@@ -29,23 +29,23 @@ Designed for real estate investors, wholesalers, and acquisitions teams looking 
 
 
 ## Available Tools (17)
+- **check_prospectx_status**: Verify connectivity
+- **get_lead**: Get lead details
+- **list_properties**: List properties
 - **create_lead**: Create a lead
 - **create_property_list**: Create a list
 - **get_campaign**: Get campaign details
 - **get_dashboard**: Get dashboard
-- **get_lead**: Get lead details
 - **get_property_list**: Get list details
 - **get_property**: Get property details
 - **list_campaigns**: List campaigns
 - **list_leads_by_status**: Filter leads by status
 - **list_leads**: List all leads
 - **list_properties_by_type**: Filter properties by type
-- **list_properties**: List properties
 - **list_property_lists**: List property lists
 - **search_properties**: Search properties
 - **skip_trace**: Skip trace a property
 - **update_lead**: Update a lead
-- **check_prospectx_status**: Verify connectivity
 
 
 ## 💬 Prompt Examples

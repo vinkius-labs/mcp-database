@@ -35,8 +35,8 @@ Connect your **Swarm** loyalty account to any AI agent and simplify how you mana
 
 
 ## Available Tools (5)
-- **get_customer_balance**: Check customer loyalty points
 - **list_available_rewards**: List redeemable rewards
+- **get_customer_balance**: Check customer loyalty points
 - **list_customer_vouchers**: List active customer vouchers
 - **process_loyalty_transaction**: Process a sale and award points
 - **redeem_customer_reward**: Redeem points for a reward

@@ -38,13 +38,13 @@ Connect your **Toket** account to any AI agent and simplify how you deploy NFT c
 - **create_collection**: Provide name, symbol, and owner wallet.
 
 Create a new NFT collection
-- **easy_mint**: Quickly mint an NFT
 - **get_collection**: Get details of a specific collection
 - **get_gas_tank_status**: Check Gas Tank balance
 - **get_mint_status**: Get status of a minting transaction
 - **list_collections**: List all NFT collections
 - **list_mints**: List all minted NFTs
 - **mint_nft**: Mint an NFT into a collection
+- **easy_mint**: Quickly mint an NFT
 
 
 ## 💬 Prompt Examples

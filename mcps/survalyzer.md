@@ -34,6 +34,8 @@ Connect your **Survalyzer** account to any AI agent to automate your advanced ma
 
 
 ## Available Tools (12)
+- **list_surveys**: List all surveys
+- **list_webhooks**: List active webhooks
 - **create_and_invite_members**: Bulk invite new members
 - **create_member**: Add member to panel
 - **get_account_info**: Get account profile
@@ -44,8 +46,6 @@ Connect your **Survalyzer** account to any AI agent to automate your advanced ma
 - **list_panel_members**: List members in panel
 - **list_panels**: List member panels
 - **list_samples**: List research samples
-- **list_surveys**: List all surveys
-- **list_webhooks**: List active webhooks
 
 
 ## 💬 Prompt Examples

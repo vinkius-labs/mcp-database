@@ -44,10 +44,10 @@ Create a new order or quote
 - **list_orders**: List all print shop orders
 - **list_order_statuses**: List configured order statuses
 - **get_customer_details**: Get details for a specific customer
-- **list_inquiries**: List all customer inquiries
 - **list_line_items**: List all line items on an order
 - **list_payments**: List payments for an order
 - **update_order**: Update an existing order
+- **list_inquiries**: List all customer inquiries
 - **create_customer**: Add a new customer
 
 

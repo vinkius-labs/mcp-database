@@ -34,16 +34,16 @@ Connect your **Videco** account to any AI agent and manage personalized videos, 
 
 
 ## Available Tools (10)
-- **check_videco_status**: Verify Videco API connectivity
 - **create_campaign**: Create a campaign
-- **create_video**: Create a personalized video
 - **get_video_analytics**: Get video analytics
-- **get_campaign**: Get campaign details
 - **get_lead**: Get lead details
 - **get_video**: Get video details
-- **list_campaigns**: List all campaigns
 - **list_leads**: List all leads
+- **create_video**: Create a personalized video
+- **list_campaigns**: List all campaigns
 - **list_videos**: List all videos
+- **check_videco_status**: Verify Videco API connectivity
+- **get_campaign**: Get campaign details
 
 
 ## 💬 Prompt Examples

@@ -23,16 +23,16 @@ Connect your **VolunteerHub** account to any AI agent and manage volunteer coord
 
 
 ## Available Tools (10)
-- **check_volunteerhub_status**: Verify API connectivity
-- **get_event**: Get event details
 - **get_group**: Get group details
 - **get_volunteer_hours**: Get volunteer hours
 - **get_volunteer**: Get volunteer details
 - **list_events**: List all events
 - **list_groups**: List volunteer groups
 - **list_opportunities**: List opportunities
-- **list_registrations**: List event registrations
 - **list_volunteers**: List all volunteers
+- **check_volunteerhub_status**: Verify API connectivity
+- **get_event**: Get event details
+- **list_registrations**: List event registrations
 
 
 ## 💬 Prompt Examples
