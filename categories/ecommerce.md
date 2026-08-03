@@ -87,7 +87,6 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Foodpanda](../mcps/foodpanda.md) | Automate food delivery operations via Foodpanda — manage vendor catalogs, track orders, and control restaurant status directly from any AI agent. |
 | [Fortnite Cosmetics & Item Shop](../mcps/fortnite-cosmetics-item-shop.md) | The definitive server for Fortnite cosmetics — track daily shop rotations, leaked skins, and rarity via AI. |
 | [Free Shipping Threshold Filler](../mcps/free-shipping-threshold-filler.md) | Calculate the exact items to add to your cart to hit free shipping with zero waste. |
-| [Gameball](../mcps/gameball-alternative.md) | Automate loyalty programs and gamification via Gameball — manage customer profiles, track points, and handle order rewards directly from any AI agent. |
 | [Gelato](../mcps/gelato.md) | Manage print-on-demand orders, track fulfillment, and get shipping quotes via AI agents with Gelato. |
 | [GetYourGuide](../mcps/getyourguide.md) | Search and book tours, activities, and travel experiences via AI agents with GetYourGuide. |
 | [Gift Up!](../mcps/gift-up.md) | Manage gift card orders, track balances, and process redemptions via AI agents with Gift Up!. |
@@ -101,12 +100,13 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Gorgias](../mcps/gorgias.md) | Manage your customer support tickets, messages, and user profiles via AI. |
 | [GoTab](../mcps/gotab.md) | Manage your restaurant operations — menus, orders, and tabs via AI. |
 | [GrazeCart](../mcps/grazecart.md) | Manage your GrazeCart store — track orders, update inventory, and manage customers directly via AI. |
+| [Gumroad](../mcps/gumroad.md) | Sell digital products, memberships, and physical goods directly to your audience with a checkout that handles everything. |
 | [Gumroad](../mcps/gumroad-alternative.md) | Sell digital products, memberships, and physical goods directly to your audience with a checkout that handles everything. |
 | [Hipsy](../mcps/hipsy.md) | Sell event tickets, manage registrations, and promote parties and festivals with a ticketing platform made for nightlife and entertainment. |
 | [HirePOS](../mcps/hirepos.md) | Manage your hire and rental business with inventory tracking, booking calendars, and invoice generation for equipment providers. |
 | [Hostaway](../mcps/hostaway.md) | Manage vacation rental listings, reservations, calendar, channels, guest conversations, and financials for your Hostaway properties through natural conversation. |
+| [Hotmart](../mcps/hotmart.md) | Sell online courses, digital products, and memberships on the leading platform for digital creators in Latin America and beyond. |
 | [Hotmart](../mcps/hotmart-alternative.md) | Sell online courses, digital products, and memberships on the leading platform for digital creators in Latin America and beyond. |
-| [Hotmart](../mcps/hotmart.md) | Manage sales, products, and subscriptions via Hotmart API. |
 | [Humanitix](../mcps/humanitix.md) | Manage events, tickets, and attendees via Humanitix API. |
 | [Imagine.io](../mcps/imagineio.md) | Create 3D product visualizations and room renders from photos using AI that turns concepts into photorealistic images. |
 | [Impala](../mcps/impala.md) | Search hotels, check availability, compare rates, and browse reviews through a unified global hotel data platform via natural conversation. |
@@ -132,7 +132,7 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [LeadDyno](../mcps/leaddyno.md) | Empower your AI to process LeadDyno affiliate links, manage program members, and track generated commission sales instantly. |
 | [LeafLink](../mcps/leaflink.md) | Manage cannabis wholesale orders, products, and inventory via the LeafLink API. |
 | [LearnWorlds](../mcps/learnworlds.md) | Build and sell online courses with a white-label LMS that includes interactive video, community forums, and built-in marketing tools. |
-| [Lemon Squeezy](../mcps/lemon-squeezy.md) | Manage e-commerce stores, products, orders, and subscriptions via the Lemon Squeezy API. |
+| [Lemon Squeezy](../mcps/lemon-squeezy.md) | Sell software, subscriptions, and digital products globally with built-in tax compliance, billing, and licensing as your merchant of record. |
 | [Lemon Squeezy (Merchant of Record & Payments)](../mcps/lemon-squeezy-merchant-of-record-payments.md) | Manage your Lemon Squeezy store, products, and customers directly through AI — handle payments and subscriptions via natural conversation. |
 | [Linnworks (E-commerce Ops)](../mcps/linnworks-e-commerce-ops.md) | Manage e-commerce operations via Linnworks — audit open orders, track inventory SKUs, and monitor multi-location stock levels. |
 | [Lodgify](../mcps/lodgify.md) | Manage vacation rental properties, bookings, availability, rates, quotes, and channel connections for your Lodgify account through natural conversation. |
@@ -208,7 +208,6 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Youzan / 有赞](../mcps/youzan.md) | Leading E-commerce and retail SaaS platform — manage products, orders, and customers via AI. |
 | [Zakeke](../mcps/zakeke.md) | Manage customized product designs, 3D configurations, and orders via Zakeke. |
 | [Zid](../mcps/zid.md) | Launch your Arabic e-commerce store with a platform built for Saudi and Gulf markets including local payment and shipping options. |
-| [Zoho Inventory](../mcps/zoho-inventory.md) | Manage inventory items, sales orders, and stock levels via the Zoho Inventory API. |
 | [Zoho Invoice](../mcps/zoho-invoice.md) | Manage billing invoices, estimates, and customer contacts via the Zoho Invoice API. |
 
 

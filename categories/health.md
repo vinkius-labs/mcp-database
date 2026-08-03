@@ -16,7 +16,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Fluid Requirement Calculator](../mcps/fluid-requirement-calculator.md) | Calculate personalized daily fluid intake needs based on weight, age, and environmental factors. |
 | [Glycemic Index Meal Calculator](../mcps/glycemic-index-meal-calculator.md) | Calculate the weighted average Glycemic Index of a meal based on ingredient proportions. |
 | [Heart Rate Zone Calculator](../mcps/heart-rate-zone-calculator.md) | Calculate personalized training zones using the Karvonen formula and sport-specific adjustments. |
-| [Heart Rate Zones Calculator](../mcps/heart-rate-zones-calculator.md) | Calculate precise physiological training zones using Simple % and Karvonen (HRR) methods. |
+| [Heart Rate Zones Calculator](../mcps/heart-rate-zones-calculator.md) | Calculate personalized aerobic training zones using the Karvonen formula. |
 | [HRV Coherence Calculator](../mcps/hrv-coherence-calculator.md) | Calculates key Heart Rate Variability (HRV) metrics (RMSSD, SDNN) to classify cardiorespiratory coherence level using R-R intervals. |
 | [Hydration & Sweat Rate Calculator](../mcps/hydration-sweat-rate-calculator.md) | Calculate sweat rates, dehydration levels, and precise fluid/electrolyte replacement strategies. |
 | [Ideal Weight Calculator](../mcps/ideal-weight-calculator.md) | Determine personalized healthy weight ranges and nutritional transition plans using physiological markers. |

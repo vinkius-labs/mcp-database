@@ -8,8 +8,8 @@ Explore the open database of **customer-relationship-management** Model Context 
 | [Avaza](../mcps/avaza.md) | Unified project management, time tracking, and invoicing via Avaza — orchestrate professional services natively via AI. |
 | [Blackbaud](../mcps/blackbaud.md) | Manage constituents, gifts, and academic data via Blackbaud — handle fundraising and education management directly from your AI agent. |
 | [Bloomerang](../mcps/bloomerang.md) | Manage donors and donations via Bloomerang — list constituents, transactions, and campaigns directly from any AI agent. |
+| [Clientjoy](../mcps/clientjoy.md) | Manage your entire client lifecycle from proposals and contracts through invoicing and payments in one streamlined platform. |
 | [Clientjoy](../mcps/clientjoy-alternative.md) | Manage your entire client lifecycle from proposals and contracts through invoicing and payments in one streamlined platform. |
-| [Clientjoy](../mcps/clientjoy.md) | Manage agency CRM and invoicing via Clientjoy — track leads, monitor invoices, and manage client projects directly from any AI agent. |
 | [Cliniko](../mcps/cliniko.md) | Manage your healthcare practice via Cliniko — handle appointments, patient records, practitioners, and treatment notes directly from any AI agent. |
 | [Donately](../mcps/donately-alternative.md) | Manage Donately fundraising and donor data using AI agents. |
 | [Donorbox](../mcps/donorbox-alternative.md) | Collect donations and manage fundraising campaigns with recurring giving, peer-to-peer pages, and donor management for nonprofits. |

@@ -10,11 +10,9 @@ Explore the open database of **growth-engine** Model Context Protocol (MCP) serv
 | [Amplitude](../mcps/amplitude.md) | Analyze product data via Amplitude — get user activity, calculate retention, analyze funnels, and track revenue directly from any AI agent. |
 | [Apollo.io](../mcps/apolloio-alternative.md) | Prospect smarter with verified contact data, enrich leads in real time, and build targeted sales sequences that convert. |
 | [Apollo.io](../mcps/apolloio.md) | Power your sales engagement with Apollo.io — search for prospects, enrich contact data, and manage sequences via AI. |
-| [Appcues](../mcps/appcues.md) | Manage your Appcues flows, segments, and user experiences with AI — track activity and publish content effortlessly. |
 | [Beehiiv](../mcps/beehiiv.md) | Automate newsletter management via Beehiiv — manage publications, subscribers, analytics, and posts natively with your AI agent. |
 | [Bloomreach](../mcps/bloomreach.md) | Manage your marketing automation via Bloomreach — list catalogs, campaigns, and customer segments directly from any AI agent. |
 | [Braze](../mcps/braze.md) | Manage customer engagement via Braze — track users, list campaigns, and trigger canvases directly from any AI agent. |
-| [Brevo](../mcps/brevo.md) | Automate marketing campaigns via Brevo — send transactional emails, dispatch SMS messages, and manage contacts natively. |
 | [Clearbit (HubSpot)](../mcps/clearbit-hubspot.md) | Enrich person and company data via Clearbit — track leads, monitor firmographics, and audit B2B intelligence directly from any AI agent. |
 | [Clearscope](../mcps/clearscope.md) | Optimize content via Clearscope — create SEO reports, grade drafts using NLP, perform keyword research, and audit SERP competitors directly from any AI agent. |
 | [CleverTap](../mcps/clevertap.md) | Manage customer engagement and analytics via CleverTap — track campaigns, monitor user segments, and audit event data directly from any AI agent. |
@@ -40,7 +38,6 @@ Explore the open database of **growth-engine** Model Context Protocol (MCP) serv
 | [MoEngage](../mcps/moengage.md) | Engage mobile app users with personalized push notifications, in-app messages, and AI-optimized customer journeys across channels. |
 | [Moz (SEO Metrics & Link Research)](../mcps/moz-seo-metrics-link-research.md) | Manage SEO metrics via Moz — audit Domain Authority (DA), analyze backlinks, and track site rankings. |
 | [OneSignal](../mcps/onesignal.md) | Automate push notifications via OneSignal — send messages, manage segments, and track delivery stats directly from any AI agent. |
-| [Pendo](../mcps/pendo.md) | Manage product engagement via Pendo — list guides, track page views, and analyze visitor behavior directly from any AI agent. |
 | [Pinterest Ads](../mcps/pinterest-ads.md) | Manage advertising and pins via Pinterest Ads — list campaigns, track analytics, and audit audiences directly from any AI agent. |
 | [Pinterest Ads](../mcps/pinterest-ads-1.md) | Equip your AI agent with direct access to Pinterest Ads — manage campaigns, track pin performance, and optimize shopping ad spend without opening Pinterest Ads Manager. |
 | [Reddit Ads](../mcps/reddit-ads.md) | Manage your Reddit Ads campaigns — audit accounts, ad groups, and reports via AI. |

@@ -12,7 +12,6 @@ Explore the open database of **ship-it** Model Context Protocol (MCP) servers.
 | [BlazeMeter](../mcps/blazemeter.md) | Automate continuous performance testing via BlazeMeter — manage workspaces, trigger load tests, and analyze active run metrics securely via AI. |
 | [Buildkite](../mcps/buildkite.md) | Automate CI/CD pipelines via Buildkite — manage builds, agents, and deployments directly from any AI agent. |
 | [CircleCI](../mcps/circleci.md) | Manage CI/CD pipelines and workflows via CircleCI — track jobs, trigger pipelines, and monitor build status directly from any AI agent. |
-| [CloudConvert](../mcps/cloudconvert.md) | Manage file conversions via CloudConvert — track jobs, monitor tasks, and automate file processing directly from any AI agent. |
 | [Cloudflare](../mcps/cloudflare-alternative.md) | Manage DNS, Workers, KV, Pages and firewall via Cloudflare — audit records, deploy config and inspect CDN analytics from any AI agent. |
 | [Codefresh](../mcps/codefresh.md) | Manage CI/CD and GitOps via Codefresh — track pipelines, trigger builds, and monitor delivery clusters directly from any AI agent. |
 | [Coding.net](../mcps/codingnet.md) | All-in-one DevOps platform — manage projects, repositories, and issues via AI. |

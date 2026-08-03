@@ -10,7 +10,7 @@
 Analyze execution logs to calculate error recovery rates and identify failure patterns.
 
 ## Description
-The Agent Error Recovery Rate Calculator is a specialized MCP server designed for developers monitoring AI agent performance. By parsing execution logs in the format 'SUCCESS: ' or 'PREVIOUSLY FAILED:  - ', it calculates critical metrics like the recovery rate—the frequency of a successful tool call immediately following a failed one. The `analyze_logs` tool extracts exact error signatures such as 'SyntaxError' or 'Timeout', providing a clear view of how resilient your agentic workflows are to transient failures.
+The Agent Error Recovery Rate Calculator is a specialized MCP server designed for developers monitoring AI agent performance. By parsing execution logs in the format 'SUCCESS: <name>' or 'PREVIOUSLY FAILED: <name> - <error>', it calculates critical metrics like the recovery rate—the frequency of a successful tool call immediately following a failed one. The `analyze_logs` tool extracts exact error signatures such as 'SyntaxError' or 'Timeout', providing a clear view of how resilient your agentic workflows are to transient failures.
 
 
 ## Available Tools (1)

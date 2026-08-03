@@ -5,6 +5,7 @@ Explore the open database of **collaboration** Model Context Protocol (MCP) serv
 | Tool Name | Description |
 |-----------|-------------|
 | [Ayanza](../mcps/ayanza.md) | AI-powered project management and team collaboration — manage tasks, projects, and wikis via AI. |
+| [Basecamp](../mcps/basecamp.md) | Keep your team aligned with project discussions, to-do lists, file sharing, and schedules all in one calm workspace. |
 | [Bevy Community](../mcps/bevy-community.md) | Manage your community events and chapters via Bevy — list events, attendees, and chapters directly from any AI agent. |
 | [Blackboard Learn](../mcps/blackboard-learn.md) | Manage courses, announcements, attendance, and grades directly from your AI agent via Blackboard Learn. |
 | [BlogIn](../mcps/blogin.md) | Keep your team informed with internal blog posts, company updates, and knowledge sharing that everyone actually reads. |

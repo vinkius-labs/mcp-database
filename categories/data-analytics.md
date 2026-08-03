@@ -232,13 +232,13 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [OpenWeatherMap](../mcps/openweathermap.md) | Access real-time weather data, 5-day forecasts, air quality metrics, and geocoding services globally via OpenWeatherMap. |
 | [Optimizely](../mcps/optimizely.md) | Manage A/B tests and feature flags via Optimizely — list projects, track experiments, and toggle features directly from any AI agent. |
 | [Oura](../mcps/oura.md) | Access your Oura Ring health data — sleep, activity, readiness, HRV, heart rate and workout metrics from any AI agent. |
-| [Oura](../mcps/aconex.md) | Access your Oura Ring health data — sleep, activity, readiness, HRV, heart rate and workout metrics from any AI agent. |
 | [Overpass](../mcps/overpass.md) | Access OpenStreetMap data via Overpass API — execute complex spatial queries, fetch raw map data, and monitor API status. |
 | [Overpass (OpenStreetMap)](../mcps/overpass-openstreetmap.md) | Search OpenStreetMap data — find restaurants, shops, hospitals, schools, parks, ATMs and more worldwide. |
 | [Paraíba Open Data](../mcps/paraiba-open-data.md) | Access official public spending, budget, and payroll data from the State of Paraíba, Brazil, directly through your AI agent. |
 | [Parknav](../mcps/parknav.md) | AI-powered predictive parking availability and street occupancy data via Parknav API. |
 | [PatentsView](../mcps/patentsview.md) | Universal US patent intelligence — search patents, inventors, and assignees via AI. |
 | [PBGC Pension Data](../mcps/pbgc-pension-data.md) | Access official US Pension Benefit Guaranty Corporation data — query single and multiemployer plans, ERISA 4044 rates, and financial assistance records. |
+| [Pendo](../mcps/pendo.md) | Understand product usage, guide users with in-app walkthroughs, and collect feedback that shapes your roadmap with precision. |
 | [People Data Labs](../mcps/people-data-labs.md) | Enrich person and company profiles with B2B data — access millions of records for lead generation, identity resolution, and market intelligence. |
 | [PG&E Data Portals](../mcps/pge-data-portals.md) | Search and query PG&E energy datasets: usage, EV adoption, solar, grid data. |
 | [PG&E Public Datasets](../mcps/pge-public-datasets.md) | Access PG&E public energy data: monthly usage, billing, savings, and regional comparisons. |

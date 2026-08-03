@@ -16,9 +16,9 @@ The Prompt Template Variable Injector Checker is a specialized security and inte
 ## Available Tools (5)
 - **analyze_complexity**: Analyzes template complexity
 - **calculate_ratio**: Calculates the ratio of dynamic to static characters
+- **validate_template**: Validates template syntax and variable declarations
 - **detect_vectors**: Detects potential injection vectors in the template
 - **summarize_template**: Summarizes the template content
-- **validate_template**: Validates template syntax and variable declarations
 
 
 ## 💬 Prompt Examples

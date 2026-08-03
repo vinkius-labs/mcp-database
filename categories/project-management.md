@@ -4,7 +4,6 @@ Explore the open database of **project-management** Model Context Protocol (MCP)
 
 | Tool Name | Description |
 |-----------|-------------|
-| [Clio](../mcps/clio.md) | Manage legal practice and matters via Clio — track cases, monitor contacts, and manage firm tasks directly from any AI agent. |
 | [Diese](../mcps/diese.md) | Equip your AI agent to manage ERP projects, track invoices, and monitor resource planning via the Diese API. |
 | [GitScrum ClientFlow](../mcps/gitscrum-clientflow.md) | Streamline client operations via GitScrum ClientFlow — manage clients, create invoices, draft proposals, and monitor project budgets directly from any AI agent. |
 | [NeetoInvoice](../mcps/neetoinvoice.md) | Automate billing and project management via NeetoInvoice — manage clients, track time, and generate invoices directly from any AI agent. |

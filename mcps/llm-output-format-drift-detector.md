@@ -14,11 +14,11 @@ The LLM Output Format Drift Detector is a specialized comparison engine designed
 
 
 ## Available Tools (3)
-- **calculate_drift_score**: Quantify the degree of structural deviation as a percentage
-- **detect_structural_anomalies**: Identify specific types of structural failures
 - **verify_compliance_truth**: Defaults to zero-tolerance (0% drift).
 
 Provide a definitive pass/fail verdict on structural integrity
+- **calculate_drift_score**: Quantify the degree of structural deviation as a percentage
+- **detect_structural_anomalies**: Identify specific types of structural failures
 
 
 ## 💬 Prompt Examples

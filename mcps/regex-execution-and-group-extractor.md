@@ -14,8 +14,8 @@ This MCP server provides a powerful interface for precise text manipulation and 
 
 
 ## Available Tools (4)
-- **detect_islands**: Detects "islands" in a string—tags that contain server:defer or server:only directives
 - **execute_regex**: Executes a regular expression against a target text and returns detailed match information
+- **detect_islands**: Detects "islands" in a string—tags that contain server:defer or server:only directives
 - **extract_substring_indices**: Extracts all occurrences of a specific substring and returns their indices
 - **match_route**: Matches a path against a route pattern and extracts parameters
 

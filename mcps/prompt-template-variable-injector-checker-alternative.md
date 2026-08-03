@@ -1,4 +1,4 @@
-# Prompt Template Variable Injector Checker Alternative MCP Server
+# Prompt Template Variable Injector Checker MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/prompt-template-variable-injector-checker-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -16,14 +16,14 @@ The Prompt Template Variable Injector Checker is a specialized security and inte
 ## Available Tools (5)
 - **analyze_complexity**: Analyzes template complexity
 - **calculate_ratio**: Calculates the ratio of dynamic to static characters
+- **validate_template**: Validates template syntax and variable declarations
 - **detect_vectors**: Detects potential injection vectors in the template
 - **summarize_template**: Summarizes the template content
-- **validate_template**: Validates template syntax and variable declarations
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Prompt Template Variable Injector Checker Alternative** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Prompt Template Variable Injector Checker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "Check the syntax of this template: 'Hello {{user_name}}, welcome to {{location}}!' with variables {'user_name': 'Alice', 'template_id': '123'}"
@@ -74,7 +74,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Prompt Template Variable Injector Checker Alternative** under Connectors.
+5. Click the **+** button in any chat and enable **Prompt Template Variable Injector Checker** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -82,7 +82,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `prompt-template-variable-injector-checker-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Prompt Template Variable Injector Checker Alternative** tools.
+4. Click **Save** — Cursor will connect and list all **Prompt Template Variable Injector Checker** tools.
 
 **Configuration:**
 ```json

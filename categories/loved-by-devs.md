@@ -11,7 +11,6 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [Appwrite](../mcps/appwrite.md) | Open-source backend-as-a-service — manage databases, storage, and users via AI. |
 | [Argo CD (GitOps)](../mcps/argo-cd-gitops.md) | Manage Kubernetes deployments via Argo CD — sync applications, check logs, and manage clusters/repositories directly from your AI agent. |
 | [Argo Workflows](../mcps/argo-workflows.md) | Automate Kubernetes orchestrations via Argo Workflows — monitor, list, and inspect active pods, crons, and workflow templates directly from any AI agent. |
-| [Baserow](../mcps/baserow.md) | Manage no-code databases via Baserow — list tables, query rows, create records and manage schemas from any AI agent. |
 | [BrowserStack](../mcps/browserstack.md) | Automate testing via BrowserStack — manage projects, track test builds, fetch session logs, and monitor execution pipelines from any AI agent. |
 | [Builder](../mcps/builder.md) | Automate Builder.io headless CMS workflows — generate content blocks, update models, and orchestrate visual components directly from any AI agent. |
 | [Builder.io](../mcps/builderio.md) | Manage your visual CMS via Builder.io — track content entries, models, and symbols directly from any AI agent. |
@@ -29,12 +28,13 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [Cypress Cloud](../mcps/cypress-cloud.md) | Audit E2E testing via Cypress — monitor test runs, inspect spec instances, track flaky tests, and generate enterprise reports directly from any AI agent. |
 | [Dagger (Programmable CI)](../mcps/dagger-programmable-ci.md) | Build, test, and deploy using Dagger's programmable CI engine. Execute GraphQL queries, manage containers, and orchestrate pipelines directly from your AI agent. |
 | [Dagster](../mcps/dagster.md) | Orchestrate data pipelines via Dagster — monitor jobs, track runs, manage software-defined assets, and audit schedules directly from any AI agent. |
-| [Datadog](../mcps/datadog-alternative.md) | Monitor infrastructure, APM and logs via Datadog — query metrics, audit monitors, search logs and track incidents from any AI agent. |
+| [Datadog](../mcps/datadog-alternative.md) | Monitor infrastructure, applications, and logs with unified observability that gives you full-stack visibility in real time. |
 | [Datadog](../mcps/datadog-extended.md) | Monitor infrastructure, applications, and logs with unified observability that gives you full-stack visibility in real time. |
 | [DataFrame Aggregator Engine](../mcps/dataframe-aggregator-engine.md) | Perform blazingly fast GroupBy and Aggregations on massive CSVs local. Save millions of AI tokens and get mathematically perfect sums, means, and counts. |
 | [Date Utils Engine](../mcps/date-utils-engine.md) | Stop AI from hallucinating dates, missing leap years, or failing timezone conversions. Offloads all calendar math to the deterministic date-fns engine. |
+| [DigitalOcean](../mcps/digitalocean.md) | Deploy and manage cloud infrastructure with simple virtual servers, managed databases, and Kubernetes clusters built for developers. |
 | [DigitalOcean](../mcps/digitalocean-alternative.md) | Deploy and manage cloud infrastructure with simple virtual servers, managed databases, and Kubernetes clusters built for developers. |
-| [Directus](../mcps/directus.md) | Manage any SQL database via Directus — handle collection items, audit schemas and fields, manage users, and track media storage directly from any AI agent. |
+| [Directus](../mcps/directus.md) | Turn any SQL database into a powerful headless CMS with instant REST and GraphQL APIs for your custom content models. |
 | [Directus](../mcps/directus-alternative.md) | Turn any SQL database into a powerful headless CMS with instant REST and GraphQL APIs for your custom content models. |
 | [Discourse](../mcps/discourse.md) | Equip your AI agent to manage forum topics, track community members, and monitor categories via the Discourse API. |
 | [Docker Hub](../mcps/docker-hub.md) | Manage Docker images on Docker Hub — list repositories, browse tags, create repos and search for community images from any AI agent. |
@@ -70,7 +70,7 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [JSON Path Query Engine](../mcps/json-path-query-engine.md) | Extract specific data from massive JSON payloads using JSONPath expressions. |
 | [JSON5 Resilient Parser](../mcps/json5-resilient-parser.md) | Parse malformed JSON with trailing commas, comments, and single quotes into perfect strict JSON. Powered by JSON5 (32M+ weekly downloads). |
 | [LanceDB (Serverless Vector DB)](../mcps/lancedb-serverless-vector-db.md) | Manage vectorized data via LanceDB — perform similarity searches, create tables, and manage multi-modal embeddings. |
-| [Linear](../mcps/linear.md) | Streamline issue tracking and project management via Linear — list teams, query issues, create comments and inspect cycles directly from any AI agent. |
+| [Linear](../mcps/linear.md) | Ship software faster with issue tracking built for modern teams that combines speed, keyboard shortcuts, and beautiful design. |
 | [Linear](../mcps/linear-alternative.md) | Ship software faster with issue tracking built for modern teams that combines speed, keyboard shortcuts, and beautiful design. |
 | [Linear (Issue Tracking & PM)](../mcps/linear-issue-tracking-pm.md) | Manage product development via Linear — track issues, monitor sprint cycles, and audit team projects. |
 | [Logseq (Knowledge Management)](../mcps/logseq-knowledge-management.md) | Manage your knowledge base via Logseq — create pages, insert outliner blocks, and search across your local graph. |
@@ -91,7 +91,7 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [ngrok](../mcps/ngrok.md) | Manage ngrok ingress infrastructure — list endpoints, API keys, reserved domains, and security policies directly from your AI agent. |
 | [Node-RED](../mcps/node-red.md) | Manage Node-RED flows, nodes, and system diagnostics directly from your AI agent. |
 | [Notion](../mcps/notion.md) | Unified AI interface for your Notion workspace — search pages, query databases, and manage blocks via AI. |
-| [Notion](../mcps/notion-alternative.md) | Manage Notion pages, databases and blocks via API — search content, query databases, create rows and append blocks from any AI agent. |
+| [Notion](../mcps/notion-alternative.md) | Manage your Notion workspace, databases, and pages via AI. |
 | [Notion Calendar (formerly Cron)](../mcps/notion-calendar-formerly-cron.md) | Manage scheduling via Notion Calendar — create events, track team availability, and manage scheduling links directly from any AI agent. |
 | [Open WebUI](../mcps/open-webui.md) | Manage your Open WebUI instance — list models, handle chat completions, and manage RAG collections directly from any AI agent. |
 | [OpenSearch Vector](../mcps/opensearch-vector.md) | Run k-NN vector searches on OpenSearch — create indexes, upsert embeddings, query similar documents, and manage your vector store from any AI agent. |
@@ -106,7 +106,7 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [Pinecone](../mcps/pinecone.md) | Equip your AI agent to manage your Pinecone vector databases. Query embeddings, fetch metrics, manage collections, and run stats natively via chat. |
 | [PlanetScale](../mcps/planetscale.md) | Provision, branch, and manage serverless MySQL databases dynamically via AI. |
 | [PostHog](../mcps/posthog-alternative.md) | Manage product analytics and feature flags via PostHog — query events, inspect cohorts, toggle flags and create annotations from any AI agent. |
-| [Postman](../mcps/postman.md) | Bring your Postman API lifecycle to your AI — orchestrate collections, environments, API mocks, and check workspace health seamlessly. |
+| [Postman](../mcps/postman.md) | Design, test, and document APIs collaboratively with the world most popular API development platform used by millions of developers. |
 | [Postman](../mcps/postman-alternative.md) | Design, test, and document APIs collaboratively with the world most popular API development platform used by millions of developers. |
 | [Prismic](../mcps/prismic.md) | Query and manage your Prismic headless CMS content — search documents, list custom types, and retrieve specific content directly from any AI agent. |
 | [Prometheus](../mcps/prometheus.md) | Monitor your infrastructure with Prometheus — run PromQL queries, analyze metrics, and manage time-series data directly from your AI agent. |
@@ -114,7 +114,6 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [Railway](../mcps/railway-alternative.md) | Manage cloud deployments via Railway — list projects, inspect services, track deployments and manage variables and volumes from any AI agent. |
 | [Railway](../mcps/railway.md) | Equip your AI with direct access to your Railway infrastructure — manage projects, deployments, services, and environment variables. |
 | [Redis Vector](../mcps/redis-vector.md) | Equip your AI to autonomously manage embeddings, run KNN similarity searches, and administrate vector indexes natively inside your Redis stack. |
-| [Resend](../mcps/resend-alternative.md) | Send emails and manage domains via Resend — send transactional emails, track deliveries, manage domains and API keys from any AI agent. |
 | [Saleor](../mcps/saleor.md) | Connect your AI to your headless Saleor e-commerce store. Seamlessly manage products, audit recent orders, and assist customers natively through your chat. |
 | [Sentry](../mcps/sentry.md) | Grant your AI agent full access to Sentry's Application Performance Monitoring tools to track raw exceptions, resolve error logs, and inspect crash stack traces dynamically. |
 | [Sentry](../mcps/sentry-alternative.md) | Monitor errors and application health via Sentry — query issues, inspect events, audit releases and check alert rules directly from any AI agent. |

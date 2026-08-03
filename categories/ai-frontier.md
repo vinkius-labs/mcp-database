@@ -10,7 +10,6 @@ Explore the open database of **ai-frontier** Model Context Protocol (MCP) server
 | [Anthropic](../mcps/anthropic-alternative.md) | Access Claude models via Anthropic API — send messages, count tokens, manage batches and discover models from any AI agent. |
 | [Anthropic](../mcps/anthropic.md) | Interact with Claude models via the Anthropic Messages API — send prompts, manage batches, and monitor rate limits directly. |
 | [Anyscale](../mcps/anyscale.md) | Orchestrate your Anyscale infrastructure — manage LLM queries, vectors, services, and cluster batch jobs directly from your AI agent. |
-| [Arize AI](../mcps/arize-ai.md) | Automate LLM and ML observability via Arize — monitor models, track telemetry, run evaluations, and analyze data drift directly from any AI agent. |
 | [AssemblyAI](../mcps/assemblyai.md) | Transcribe and audit audio — manage speech-to-text jobs via AI. |
 | [AssemblyAI](../mcps/assemblyai-alternative.md) | Transcribe audio and video files with industry-leading accuracy, detect speakers, and extract insights from spoken content. |
 | [Baseten](../mcps/baseten.md) | Manage your Baseten AI models — orchestrate deployments, list secrets, and run serverless inference predictions autonomously. |
@@ -47,8 +46,8 @@ Explore the open database of **ai-frontier** Model Context Protocol (MCP) server
 | [Groq](../mcps/groq-alternative.md) | Run large language models at unprecedented speed with custom LPU hardware that delivers real-time AI inference at massive scale. |
 | [H2O.ai](../mcps/h2oai.md) | Manage AI models via H2O.ai — track data frames, monitor machine learning models and training jobs, and audit cloud cluster status directly from any AI agent. |
 | [Helicone (LLM Observability)](../mcps/helicone-llm-observability.md) | Monitor LLM usage via Helicone — track requests, analyze costs, measure latency, and manage prompts. |
+| [HeyGen](../mcps/heygen.md) | Create AI-generated videos with realistic digital avatars that speak in any language for training, marketing, and communication. |
 | [HeyGen](../mcps/heygen-alternative.md) | Create AI-generated videos with realistic digital avatars that speak in any language for training, marketing, and communication. |
-| [HeyGen](../mcps/heygen.md) | Automate AI video generation via HeyGen — manage avatars, videos, and templates directly from any AI agent. |
 | [Hive AI](../mcps/hive-ai.md) | Automate content moderation via Hive AI — moderate text, images, video, and detect AI-generated content directly from any AI agent. |
 | [HrFlow.ai](../mcps/hrflowai.md) | AI-powered talent acquisition API for parsing, matching, and reasoning. |
 | [Hugging Face Audio](../mcps/hugging-face-audio.md) | Connect Hugging Face Audio to any AI agent via MCP. |

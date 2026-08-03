@@ -7,7 +7,6 @@ Explore the open database of **crm-sales** Model Context Protocol (MCP) servers.
 | [Happierleads](../mcps/happierleads.md) | Connect Happierleads to any AI agent via MCP. |
 | [Happyrobot](../mcps/happyrobot.md) | Connect Happyrobot to any AI agent via MCP. |
 | [Lancerkit](../mcps/lancerkit.md) | Connect Lancerkit to any AI agent via MCP. |
-| [Mailshake](../mcps/mailshake.md) | Manage cold outreach campaigns, leads, and prospects via the Mailshake REST API. |
 | [Mailsoftly](../mcps/mailsoftly.md) | Manage marketing campaigns and contacts via the Mailsoftly REST API. |
 | [Sellsy](../mcps/sellsy.md) | Equip your AI agent with full read access to your Sellsy CRM to audit deals, generate invoices overviews, and prospect natively. |
 | [Tripleseat](../mcps/tripleseat.md) | Manage event bookings, leads, contacts, venues, and accounts for your Tripleseat event management platform through natural conversation. |

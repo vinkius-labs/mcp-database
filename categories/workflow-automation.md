@@ -5,7 +5,7 @@ Explore the open database of **workflow-automation** Model Context Protocol (MCP
 | Tool Name | Description |
 |-----------|-------------|
 | [LlamaIndex Workflow Event Router Validator](../mcps/llamaindex-workflow-event-router-validator.md) | Prevent dead-end event loops in LlamaIndex workflows by validating event routing and coverage. |
-| [LlamaIndex Workflow Event Router Validator Alternative](../mcps/llamaindex-workflow-event-router-validator-alternative.md) | Prevent dead-end event loops in LlamaIndex workflows by validating event routing and coverage. |
+| [LlamaIndex Workflow Event Router Validator](../mcps/llamaindex-workflow-event-router-validator-alternative.md) | Prevent dead-end event loops in LlamaIndex workflows by validating event routing and coverage. |
 
 
 ---

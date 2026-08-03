@@ -14,23 +14,23 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [Aircall](../mcps/aircall.md) | Cloud business phone system — manage calls, contacts, and team availability via AI. |
 | [Airship](../mcps/airship.md) | Mobile engagement orchestration — manage push notifications, segments, and channels via AI. |
 | [Authkey](../mcps/authkey.md) | Send transactional SMS, voice OTPs, and WhatsApp messages through a unified communication gateway for user verification. |
-| [Avochato](../mcps/avochato.md) | Manage business messaging, contacts, and broadcasts via Avochato — orchestrate SMS and MMS directly via AI. |
+| [Avochato](../mcps/avochato.md) | Text your customers on the channels they prefer with two-way business messaging that integrates into your existing workflows. |
 | [Avochato](../mcps/avochato-alternative.md) | Text your customers on the channels they prefer with two-way business messaging that integrates into your existing workflows. |
 | [AvoSMS](../mcps/avosms.md) | Powerful SMS automation — send messages, manage sender IDs, and coordinate contact lists via AI. |
 | [Bandwidth](../mcps/bandwidth.md) | Automate telecom workflows via Bandwidth — send SMS/MMS, manage media, campaigns, and toll-free verification directly from any AI agent. |
-| [Basecamp](../mcps/basecamp.md) | Manage your Basecamp projects via AI — list tasks, read message boards, track campfire logs, and orchestrate to-dos seamlessly. |
 | [Beekeeper](../mcps/beekeeper.md) | Empower your frontline workforce via Beekeeper — manage users, streams, posts, and messages directly from any AI agent. |
 | [Blip](../mcps/blip.md) | Build intelligent chatbots for WhatsApp, Messenger, and web that engage customers with conversational commerce flows. |
 | [Bluesky Social](../mcps/bluesky-social.md) | Publish posts, follow accounts, and engage with the decentralized social network through your AI-powered workflow. |
 | [Bright Pattern](../mcps/bright-pattern.md) | Orchestrate your contact center via Bright Pattern — manage users, track interactions, and monitor real-time stats directly from any AI agent. |
 | [BulkSMS.com](../mcps/bulksmscom.md) | Reach customers worldwide with reliable bulk SMS delivery, contact list management, and real-time message status tracking. |
+| [CallFire](../mcps/callfire.md) | Run voice broadcasts, send bulk text messages, and manage call tracking campaigns for high-volume outreach at scale. |
 | [CallFire](../mcps/callfire-alternative.md) | Run voice broadcasts, send bulk text messages, and manage call tracking campaigns for high-volume outreach at scale. |
-| [CallFire](../mcps/callfire.md) | Manage voice and SMS communications via CallFire — track calls, send texts, and monitor campaigns directly from any AI agent. |
 | [Callpicker](../mcps/callpicker.md) | Track and analyze inbound calls with attribution data that shows which marketing channels drive your best phone leads. |
 | [Channels](../mcps/channels.md) | Manage live chat conversations, track customer interactions, and provide real-time support across your website and apps. |
 | [Chaport](../mcps/chaport.md) | Manage live chat and customer messaging via Chaport — track visitors, send messages, and monitor operator status directly from any AI agent. |
 | [ChatBot.com](../mcps/chatbotcom.md) | Manage conversational AI and bot workflows via ChatBot — track stories, interactions, and user data directly from any AI agent. |
 | [Chatwoot](../mcps/chatwoot.md) | Manage customer engagement via Chatwoot — track conversations, reply to messages, and manage contacts directly from any AI agent. |
+| [Clickatell](../mcps/clickatell.md) | Deliver transactional and marketing messages over SMS, WhatsApp, and chat channels with global reach and high deliverability. |
 | [Clickatell](../mcps/clickatell-alternative.md) | Deliver transactional and marketing messages over SMS, WhatsApp, and chat channels with global reach and high deliverability. |
 | [Cloopen / 容联云](../mcps/cloopen.md) | Leading cloud communication platform in China — manage SMS, voice calls, and applications via AI. |
 | [Close](../mcps/close.md) | Manage sales and pipelines via Close CRM — track leads, monitor opportunities, and manage tasks directly from any AI agent. |
@@ -41,7 +41,6 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [Daktela](../mcps/daktela.md) | Handle customer interactions across phone, email, chat, and social media from one omnichannel contact center platform. |
 | [Dexatel](../mcps/dexatel.md) | Equip your AI agent to send SMS messages, track communications, and manage contacts via the Dexatel API. |
 | [Dixa](../mcps/dixa-alternative.md) | Route customer conversations to the right agent across phone, email, chat, and messaging with intelligent prioritization. |
-| [DoubleTick](../mcps/doubletick.md) | Equip your AI agent to manage WhatsApp conversations, track contacts, and monitor message delivery via the DoubleTick API. |
 | [Dripcel](../mcps/dripcel.md) | Equip your AI agent to manage WhatsApp instances, track contacts, and monitor messaging automation via the Dripcel API. |
 | [Easemob / 环信](../mcps/easemob.md) | Pioneer massive scale IM Chat SDK and API — manage users, groups, and real-time messaging via AI. |
 | [Elastic Email](../mcps/elastic-email.md) | Equip your AI agent to manage email campaigns, track contacts, and monitor delivery logs via the Elastic Email API. |
@@ -51,8 +50,8 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [Farcaster (Decentralized Social Protocol)](../mcps/farcaster-decentralized-social-protocol.md) | Interact with the Farcaster protocol — manage channels, moderate casts, and explore social graphs directly from your AI agent. |
 | [Fax.Plus](../mcps/faxplus.md) | Send and receive faxes digitally through a modern API without physical machines, keeping your business compliant and paperless. |
 | [FreeScout](../mcps/freescout.md) | Manage your FreeScout helpdesk — list mailboxes, handle conversations, reply to customers, and manage users directly via AI. |
+| [Front](../mcps/front.md) | Manage shared inboxes across email, SMS, and social with team collaboration tools that keep customer conversations organized. |
 | [Front](../mcps/front-alternative.md) | Manage shared inboxes across email, SMS, and social with team collaboration tools that keep customer conversations organized. |
-| [Front](../mcps/front.md) | Manage shared inboxes, track conversations, and collaborate on emails via AI agents with Front. |
 | [Gallabox](../mcps/gallabox.md) | Automate WhatsApp Business communication, send templates, and manage chats via AI agents with Gallabox. |
 | [Giphy](../mcps/giphy-alternative.md) | Search, browse, and integrate the world largest library of animated GIFs and stickers into your apps and conversations. |
 | [Giphy](../mcps/giphy-alternative-1.md) | Enhance conversations with GIPHY — search millions of GIFs, stickers, and emojis, or translate text into visual expressions directly from your AI agent. |
@@ -67,7 +66,6 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [Jiguang Aurora / 极光](../mcps/jiguang-aurora.md) | Dominant push notification platform in China — manage device segments, schedules, and delivery reports via AI. |
 | [join.me](../mcps/joinme.md) | Start instant video meetings with screen sharing and recording that works in the browser with no downloads required. |
 | [Kontak](../mcps/kontak.md) | Manage communications — list messages, send SMS, and audit contacts. |
-| [Landbot](../mcps/landbot.md) | Empower your AI to generate, route, and interact with conversational chatbots and customers naturally. |
 | [LiveKit](../mcps/livekit.md) | Manage real-time video, audio, and data sessions via LiveKit — create rooms, manage participants, and trigger recordings directly from your AI agent. |
 | [Loops.so](../mcps/loopsso.md) | Manage email marketing and transactional emails via Loops.so — handle contacts, campaigns, and events directly from your AI agent. |
 | [Mail-in-a-Box](../mcps/mail-in-a-box.md) | Manage mail users, aliases, and system health via the Mail-in-a-Box REST API. |
@@ -89,8 +87,8 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [Peerbie](../mcps/peerbie.md) | Orchestrate your entire team's workspace, from Kanban boards to calendar events, completely driven by AI. |
 | [Pixelfed (Instagram Alternative)](../mcps/pixelfed-instagram-alternative.md) | Manage your Pixelfed presence — post photos, interact with the community, and track notifications directly from any AI agent. |
 | [Placetel](../mcps/placetel.md) | Manage Placetel users, devices, numbers, and calls. |
+| [Plivo](../mcps/plivo.md) | Build voice and SMS applications with a cloud communications API that scales globally and offers competitive per-message pricing. |
 | [Plivo](../mcps/plivo-alternative.md) | Manage your Plivo communications — send SMS and audit calls via AI. |
-| [Plivo](../mcps/plivo.md) | Equip AI with native telecom powers. Send SMS, manage SIP trunks, and audit voice calls autonomously. |
 | [Polaria](../mcps/polaria.md) | Unify your customer support with an AI agent that manages Polaria conversations, contacts, and FAQ retrieval. |
 | [Postmark](../mcps/postmark-extended-1.md) | Send transactional emails, manage templates, and track delivery status directly through Postmark's high-deliverability infrastructure. |
 | [Postmark](../mcps/postmark.md) | Equip your AI to send emails, monitor delivery stats, track bounces, and manage Postmark templates directly from your chat. |
@@ -122,6 +120,7 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [Uniphore Conversation AI](../mcps/uniphore-conversation-ai.md) | Access meeting transcripts, summaries, action items, and analytics via Uniphore API. |
 | [WA Smart Business](../mcps/wa-smart-business-alternative.md) | Scale your WhatsApp business communication with chatbots, bulk messaging, and team inbox features for growing companies. |
 | [WA Smart Business](../mcps/wa-smart-business.md) | Automate WhatsApp marketing and communication via WA Smart Business — manage contacts, groups, and messages directly from any AI agent. |
+| [Wati](../mcps/wati.md) | Send WhatsApp messages at scale with official API access, chatbot automation, and shared team inbox for business conversations. |
 | [Wati](../mcps/wati-alternative.md) | Send WhatsApp messages at scale with official API access, chatbot automation, and shared team inbox for business conversations. |
 | [Wati](../mcps/wati-alternative-1.md) | Automate WhatsApp communication via Wati — send template messages, manage contacts, list chatbots, and assign operators directly from your AI agent. |
 | [Wbiztool](../mcps/wbiztool.md) | Manage your WhatsApp Business account with bulk messaging, contact management, and campaign analytics for marketing teams. |

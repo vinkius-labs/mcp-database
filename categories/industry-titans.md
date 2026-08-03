@@ -39,7 +39,7 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [AppLovin](../mcps/applovin.md) | Manage your AppLovin and MAX advertising performance — track revenue, impressions, and campaigns via AI. |
 | [ArcGIS](../mcps/arcgis-alternative.md) | Access GIS services via ArcGIS — geocode addresses, search places, get routes, check elevation and discover basemap styles from any AI agent. |
 | [Asana](../mcps/asana.md) | Automate project management via Asana — list workspaces, query projects, and inspect tasks and sections directly from any AI agent. |
-| [Asana Alternative](../mcps/asana-alternative.md) | Automate project management via Asana — list workspaces, query projects, and inspect tasks and sections directly from any AI agent. |
+| [Asana](../mcps/asana-alternative.md) | Automate project management via Asana — list workspaces, query projects, and inspect tasks and sections directly from any AI agent. |
 | [AT&T 5G](../mcps/att-5g.md) | Access Open Gateway 5G Network APIs -- Number Verify, Device Location, SIM Swap detection, Quality on Demand, and Network Slicing via AT&T. |
 | [AT&T IoT](../mcps/att-iot.md) | IoT Control Center -- Manage SIM devices, activation, data pools, shared plans, and connectivity diagnostics via AT&T IoT API. |
 | [AT&T Messaging](../mcps/att-messaging.md) | CPaaS Messaging -- Send SMS/MMS, manage shortcodes, track delivery status, and run bulk campaigns via AT&T Messaging API. |
@@ -72,15 +72,15 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [BCB Juros — Selic, CDI e Expectativas Focus](../mcps/bcb-juros-selic-cdi-e-expectativas-focus.md) | Brazilian interest rates: Selic target rate (COPOM decisions), daily effective Selic rate, CDI (interbank deposit certificate rate), and Focus Survey market expectations for future Selic rates from Brazil's Central Bank. |
 | [Best Buy](../mcps/best-buy.md) | Search products, check store availability, read reviews, and explore categories via Best Buy — execute retail inquiries directly from any AI agent. |
 | [Betterfly](../mcps/betterfly.md) | Automate ESG and HR Wellness data via Betterfly — track global corporate steps, extract social donations, and orchestrate health engagement via agents. |
+| [BigCommerce](../mcps/bigcommerce.md) | Manage your online store with product catalogs, order fulfillment, and customer data for high-volume e-commerce operations. |
 | [BigCommerce](../mcps/bigcommerce-alternative.md) | Manage your online store with product catalogs, order fulfillment, and customer data for high-volume e-commerce operations. |
-| [BigCommerce](../mcps/bigcommerce.md) | Automate eCommerce native workflows via BigCommerce — manage full catalogs, orders, customers, and active coupons directly from your AI agent. |
 | [Bilibili Live](../mcps/bilibili-live.md) | Automate VTuber interaction parsing via Bilibili Live — monitor super-chats, extract danmaku streams, and manage host rooms natively from any AI agent. |
 | [BIM 360 Field](../mcps/bim-360-field.md) | Manage your construction projects via BIM 360 Field — list issues, checklists, and tasks directly from any AI agent. |
 | [Bing Search](../mcps/bing-search.md) | Empower your AI agent with real-time web, image, and news search via Bing. |
 | [Bing Search](../mcps/bing-search-1.md) | Power your AI agent with global web data via Bing Search — query web pages, images, news, videos, and local businesses in real-time. |
 | [Bloomberg Law](../mcps/bloomberg-law.md) | Access 200M+ court dockets, case law, and legal news via Bloomberg Law Enterprise Dockets API for comprehensive legal research. |
 | [Boeing Developer Tools](../mcps/boeing-developer-tools.md) | Global aviation intelligence, Jeppesen aerodromes, and aircraft models. |
-| [Box](../mcps/box.md) | Manage files, folders, collaborations, and metadata on Box — the enterprise cloud content management platform. |
+| [Box](../mcps/box.md) | Store, share, and collaborate on files securely with enterprise-grade cloud content management and governance controls. |
 | [Box](../mcps/box-alternative.md) | Store, share, and collaborate on files securely with enterprise-grade cloud content management and governance controls. |
 | [Buk](../mcps/buk.md) | Automate your HR and Payroll data via Buk — query employees, list vacations, extract company charts, and orchestrate talent operations directly from any AI agent. |
 | [Canva](../mcps/canva.md) | Empower your AI agents to manage Canva designs, upload branding assets, and trigger automatic exports directly from your chat. |
@@ -110,7 +110,6 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Datadog](../mcps/datadog.md) | Monitor applications via Datadog — query performance metrics, search logs, and list active monitors directly from any AI agent. |
 | [Deliveroo](../mcps/deliveroo.md) | Manage Deliveroo restaurant orders — accept deliveries, track preparation stages, and sync POS status directly from your AI agent. |
 | [DHL](../mcps/dhl.md) | AI logistics: track global shipments, audit delayed packages, and quote DHL worldwide rates. |
-| [DigitalOcean](../mcps/digitalocean.md) | Equip your AI agent to manage cloud infrastructure, track Droplets, and monitor managed databases via the DigitalOcean API. |
 | [DingTalk](../mcps/dingtalk.md) | Alibaba's B2B office platform — manage users, departments, send notifications, track attendance, and automate approval workflows. |
 | [DocuSign](../mcps/docusign.md) | Send documents for signature, manage envelopes, track signing status, and automate contract workflows with AI. |
 | [DOJ Civil Rights Data](../mcps/doj-civil-rights-data.md) | Access Department of Justice civil rights data, including blog entries and press releases, directly from your AI agent. |
@@ -154,8 +153,8 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Files.com](../mcps/filescom.md) | Sync, share, and automate file workflows across teams with secure cloud storage that integrates with your existing tools. |
 | [Five9](../mcps/five9.md) | Monitor agents, manage call states, and track real-time contact center stats via AI agents with Five9. |
 | [Five9 QM](../mcps/five9-qm.md) | Manage agent evaluations, review recorded interactions, and track quality metrics via AI agents with Five9 QM. |
+| [Freshdesk](../mcps/freshdesk.md) | Resolve customer tickets faster with omnichannel helpdesk tools, smart automation, and self-service portals your users will love. |
 | [Freshdesk](../mcps/freshdesk-alternative.md) | Resolve customer tickets faster with omnichannel helpdesk tools, smart automation, and self-service portals your users will love. |
-| [Freshdesk](../mcps/freshdesk.md) | Manage customer support via Freshdesk — track tickets, handle contacts, and oversee agent groups via AI agents. |
 | [Fusion Operations](../mcps/fusion-operations.md) | Optimize factory floor operations with real-time production tracking, worker scheduling, and quality control automation. |
 | [General Motors](../mcps/general-motors.md) | AI connected car: control GM vehicles, check diagnostics, and track location via agents. |
 | [GitHub](../mcps/github.md) | Manage repositories, track issues, and search code via AI agents with GitHub. |
@@ -317,12 +316,14 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Optum Eligibility](../mcps/optum-eligibility.md) | Verify patient active healthcare coverage, extract deductibles, and run real-time UHG demographics. |
 | [Oracle NetSuite](../mcps/oracle-netsuite.md) | Manage financials, sales orders, inventory, and customer records on Oracle NetSuite — the leading cloud ERP. |
 | [Oracle Vector DB](../mcps/oracle-vector-db.md) | Run vector similarity searches on Oracle 23ai — execute VECTOR_DISTANCE queries, inspect schemas, list vector indexes, and query tables from any AI agent. |
+| [Order Desk](../mcps/order-desk.md) | Route and manage orders from multiple sales channels to fulfillment providers with automation rules that handle the complexity. |
 | [Order Desk](../mcps/order-desk-alternative.md) | Route and manage orders from multiple sales channels to fulfillment providers with automation rules that handle the complexity. |
 | [Outreach](../mcps/outreach-alternative.md) | Execute sales engagement sequences with emails, calls, and social touches orchestrated by AI to maximize rep productivity. |
 | [Outseta](../mcps/outseta.md) | Launch your SaaS faster with billing, authentication, CRM, and email built into one platform that eliminates integration headaches. |
 | [PagerDuty](../mcps/pagerduty.md) | Manage incidents, services, on-call schedules, and escalation policies via PagerDuty — trigger, acknowledge, and resolve alerts from any AI agent. |
 | [PagerDuty Incident Trigger](../mcps/pagerduty-incident-trigger.md) | This MCP does exactly one thing: it triggers incidents in PagerDuty. That's its only function, and nothing else. Incredible for giving your AI agents the power to wake up engineers. |
 | [PandaDoc](../mcps/pandadoc-alternative.md) | Close deals faster with proposals, contracts, and e-signatures in one platform that tracks document engagement in real time. |
+| [PandaDoc](../mcps/pandadoc-alternative-1.md) | Close deals faster with proposals, contracts, and e-signatures in one platform that tracks document engagement in real time. |
 | [Pando](../mcps/pando.md) | Share large files and folders securely with clients using branded transfer portals and download analytics for creative teams. |
 | [Pappers](../mcps/pappers.md) | Access French company data, financial filings, and legal documents from official business registries for due diligence research. |
 | [Parsio](../mcps/parsio.md) | Extract structured data from emails and PDFs automatically with AI-powered parsing templates that learn from your documents. |
@@ -340,7 +341,7 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Pics.io](../mcps/picsio.md) | Organize and share creative assets with a digital asset management platform that tags, searches, and delivers files fast. |
 | [Pinata Cloud](../mcps/pinata-cloud.md) | Automate IPFS pinning and decentralized storage via Pinata — manage files, JSON, and groups directly with AI. |
 | [Pinduoduo Open Platform](../mcps/pinduoduo-open-platform.md) | Manage Pinduoduo (DDK) affiliate operations — search goods, generate promotion links, and track orders directly from any AI agent. |
-| [Pinterest](../mcps/pinterest.md) | Manage your Pinterest profile — audit boards and pins via AI. |
+| [Pinterest](../mcps/pinterest.md) | Automate visual discovery via Pinterest — manage boards, create pins, and track performance directly with AI. |
 | [Pinterest](../mcps/pinterest-alternative.md) | Automate visual discovery via Pinterest — manage boards, create pins, and track performance directly with AI. |
 | [Pipedrive](../mcps/pipedrive.md) | Automate sales CRM via Pipedrive — manage deals, persons, and activities directly from any AI agent. |
 | [Pitchly](../mcps/pitchly.md) | Turn your firm experience data into competitive deal sheets, credentials, and pitch materials with automated content generation. |
@@ -349,7 +350,6 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Plivo](../mcps/plivo-extended.md) | Build voice and SMS applications with a cloud communications API that scales globally and offers competitive per-message pricing. |
 | [Pocket](../mcps/pocket.md) | Save articles, videos, and web pages to read later with a personal content library that syncs across all your devices. |
 | [Podium](../mcps/podium.md) | Win more local customers with review generation, webchat, text marketing, and payment collection from one inbox. |
-| [Postmark](../mcps/postmark-alternative.md) | Automate transactional email via Postmark — send emails, retrieve templates, inspect bounces, and manage your delivery analytics directly from any AI agent. |
 | [Postscript](../mcps/postscript.md) | Drive Shopify revenue with SMS and MMS marketing that feels personal, converts browsers into buyers, and builds lasting loyalty. |
 | [PreciseFP](../mcps/precisefp.md) | Collect client financial data digitally with compliant intake forms designed for wealth management and financial planning firms. |
 | [Printavo](../mcps/printavo.md) | Manage your print shop with order tracking, production scheduling, and invoicing built for screen printing and custom apparel. |
@@ -436,8 +436,8 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Shipmondo](../mcps/shipmondo.md) | Ship packages across Scandinavia and Europe with multi-carrier label printing, tracking, and return management from one platform. |
 | [ShippingBo](../mcps/shippingbo.md) | Orchestrate your e-commerce logistics with order management, warehouse operations, and carrier integration for French retailers. |
 | [Shippo](../mcps/shippo.md) | Get the best shipping rates from top carriers, print labels, and track deliveries with an API that simplifies e-commerce shipping. |
+| [Shopify](../mcps/shopify.md) | Build and grow your online store with the e-commerce platform that powers millions of businesses from first sale to global scale. |
 | [Shopify](../mcps/shopify-alternative.md) | Build and grow your online store with the e-commerce platform that powers millions of businesses from first sale to global scale. |
-| [Shopify](../mcps/shopify.md) | Manage your Shopify store via AI — list products, process orders, search customers, track inventory, and manage discounts from any agent. |
 | [Shopify Discount Creator](../mcps/shopify-discount-creator.md) | This MCP does exactly one thing: it creates unique percentage discount codes in your Shopify store on the fly. Incredible for giving your AI agent the power to prevent cart abandonment during a chat. |
 | [Shotstack](../mcps/shotstack.md) | Render and edit videos programmatically with a cloud API that generates personalized video content at scale from templates. |
 | [Shutterstock](../mcps/shutterstock.md) | Equip your AI agent to radically sift through Shutterstock's immense media vault. Search high-quality images, videos, audio, and audit editorial licenses directly from your prompt. |
@@ -450,12 +450,12 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Skalin](../mcps/skalin.md) | Manage accounts, contacts, and customer health on Skalin with AI agents. |
 | [Slack](../mcps/slack-alternative.md) | Manage channels, users, and send messages on Slack with AI agents. |
 | [SmartChatAI](../mcps/smartchatai.md) | Manage AI bots, knowledge bases, and messaging on SmartChatAI with AI agents. |
-| [Smartsheet](../mcps/smartsheet.md) | Empower your AI to read Smartsheet rows, list workspaces, and manage your spreadsheets effortlessly from your code editor. |
+| [Smartsheet](../mcps/smartsheet.md) | Manage sheets, reports, and rows on Smartsheet with AI agents. |
 | [Smartsheet](../mcps/smartsheet-alternative.md) | Manage sheets, reports, and rows on Smartsheet with AI agents. |
 | [SMS Mobile API](../mcps/sms-mobile-api.md) | Send SMS and WhatsApp messages directly from your Android devices with AI agents. |
 | [SnapCall](../mcps/snapcall.md) | Embed voice, video, and screen sharing into any digital interaction on SnapCall with AI agents. |
 | [Snapchat Conversions](../mcps/snapchat-conversions.md) | Send conversion events to Snapchat Ads via the Conversions API with AI agents. |
-| [Snowflake](../mcps/snowflake.md) | Bring your absolute data cloud into your AI editor. Execute queries, list warehouses, and map complex schemas natively. |
+| [Snowflake](../mcps/snowflake.md) | Execute SQL queries, manage databases, and analyze data on Snowflake with AI agents. |
 | [Snowflake](../mcps/snowflake-alternative.md) | Execute SQL queries, manage databases, and analyze data on Snowflake with AI agents. |
 | [Speechnotes](../mcps/speechnotes.md) | Transcribe audio files, manage transcription jobs, and export text on Speechnotes with AI agents. |
 | [Spotify Listening History Parser](../mcps/spotify-listening-history-parser.md) | Parse your Spotify data export and discover your top artists, tracks, and total listening hours. Turn your AI into your personal music analyst local. |
@@ -467,7 +467,7 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Stammer.ai](../mcps/stammerai.md) | Manage white-label AI chatbots, knowledge bases, and sub-accounts on Stammer.ai with AI agents. |
 | [Starburst](../mcps/starburst.md) | Connect your AI to Starburst Enterprise. Query federated data lakes, manage access roles, and orchestrate complex data environments seamlessly. |
 | [Statuspage (Atlassian)](../mcps/statuspage-atlassian.md) | Manage Atlassian Statuspage — list pages, update configurations, and handle user permissions or access controls via AI. |
-| [Steam](../mcps/steam.md) | Access Steam gaming data — player profiles, owned games, achievements, and stats via AI. |
+| [Steam](../mcps/steam.md) | Access game data, player profiles, and community content from the world largest PC gaming platform and digital storefront. |
 | [Steam](../mcps/steam-alternative.md) | Access game data, player profiles, and community content from the world largest PC gaming platform and digital storefront. |
 | [Steam Economy & Market Intelligence](../mcps/steam-economy-market-intelligence.md) | The definitive server for Steam assets — track skin prices, inventory values, and market trends via AI. |
 | [Strava](../mcps/strava.md) | Manage activities, athlete stats, and routes on Strava with AI agents. |
@@ -489,6 +489,7 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Tencent Map LBS API](../mcps/tencent-map-lbs-api.md) | China's leading LBS platform — essential for WeChat Miniapps, providing precise mapping, routing, and POI data. |
 | [Tencent START](../mcps/tencent-start.md) | Orchestrate Tencent START Cloud Gaming (GS) — manage server sessions, monitor workers, and scale capacity directly from any AI agent. |
 | [Tencent TMT / 腾讯机器翻译](../mcps/tencent-tmt.md) | Tencent's professional machine translation — translate text and detect languages with high precision via AI. |
+| [Tencent TMT / 腾讯机器翻译](../mcps/aconex.md) | Tencent's professional machine translation — translate text and detect languages with high precision via AI. |
 | [Tencent TRTC](../mcps/tencent-trtc.md) | Bring Tencent's Dominant Real-Time Communications Engine to your AI workflow. Manage rooms, cloud recordings, and call metrics. |
 | [Tencent Youtu / 腾讯优图](../mcps/tencent-youtu.md) | China's leading computer vision platform — perform facial recognition, analysis, and liveness checks via AI. |
 | [Tencent Yuanqi](../mcps/tencent-yuanqi.md) | Orchestrate Tencent Yuanqi AI Agents — manage assistants, trigger conversations, and handle RAG documents directly from any AI agent. |
@@ -556,8 +557,8 @@ Explore the open database of **industry-titans** Model Context Protocol (MCP) se
 | [Wix eCommerce](../mcps/wix-ecommerce.md) | Manage products, orders, and inventory on Wix — the complete eCommerce platform for growing online businesses. |
 | [Wizehire](../mcps/wizehire.md) | Manage candidates, job postings, and hiring stages via Wizehire directly from your AI agent. |
 | [WooCommerce](../mcps/woocommerce.md) | Manage products, orders, and store analytics on WooCommerce — the most customizable open-source eCommerce platform. |
+| [WordPress](../mcps/wordpress.md) | Build and manage websites with the CMS that powers over 40 percent of the web through posts, pages, plugins, and themes. |
 | [WordPress](../mcps/wordpress-alternative.md) | Build and manage websites with the CMS that powers over 40 percent of the web through posts, pages, plugins, and themes. |
-| [WordPress](../mcps/wordpress.md) | Manage posts, pages, and media on WordPress — the world's most popular open-source content management system. |
 | [Workast](../mcps/workast.md) | Manage projects, tasks, and team collaboration with AI directly in your workflow. |
 | [Workday](../mcps/workday.md) | Manage workers, payroll data, org structures, and HR workflows on Workday — the enterprise HCM platform. |
 | [WorkflowMax](../mcps/workflowmax.md) | Manage jobs, clients, and timesheets via WorkflowMax by BlueRock directly from your AI agent. |

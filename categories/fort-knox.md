@@ -19,7 +19,6 @@ Explore the open database of **fort-knox** Model Context Protocol (MCP) servers.
 | [Censys](../mcps/censys.md) | Search internet-connected hosts, SSL certificates and attack surface — discover exposed services and vulnerabilities. |
 | [Checkmarx](../mcps/checkmarx.md) | Automate AppSec via Checkmarx One — trigger core scans, analyze vulnerabilities, discover Best Fix Locations (BFL), and monitor KICS results. |
 | [Cleared (ClearedIn)](../mcps/cleared-clearedin.md) | Manage identity verification and background screening via Cleared — track verifications, monitor screenings, and audit security logs directly from any AI agent. |
-| [Clerk](../mcps/clerk.md) | Manage authentication and users via Clerk — track active sessions, monitor organizations, and manage invitations directly from any AI agent. |
 | [CockroachDB Cloud](../mcps/cockroachdb-cloud.md) | Manage distributed SQL clusters via CockroachDB Cloud — track clusters, monitor nodes, and audit network allowlists directly from any AI agent. |
 | [CrowdSec](../mcps/crowdsec.md) | Automate threat intelligence via CrowdSec — query local decisions, stream security updates, and check global IP reputation directly from any AI agent. |
 | [CrowdStrike Falcon](../mcps/crowdstrike-falcon.md) | Detect threats, manage endpoints, investigate incidents, and query telemetry from CrowdStrike Falcon — the #1 endpoint detection and response platform. |

@@ -12,6 +12,7 @@ Explore the open database of **finance-accounting** Model Context Protocol (MCP)
 | [Certify (Emburse)](../mcps/certify-emburse.md) | Manage expenses and invoices via Certify (Emburse) — track reports, receipts, and employee spend directly from any AI agent. |
 | [ChargeOver](../mcps/chargeover.md) | Bill your customers with flexible recurring invoicing, automated dunning, and payment collection that keeps revenue flowing. |
 | [ChargeOver](../mcps/chargeover-alternative.md) | Bill your customers with flexible recurring invoicing, automated dunning, and payment collection that keeps revenue flowing. |
+| [Clio](../mcps/clio.md) | Practice law more efficiently with legal case management, time tracking, billing, and document organization in one system. |
 | [CoinDesk Bitcoin Price Index](../mcps/coindesk-bitcoin-price-index.md) | Universal Bitcoin intelligence — get real-time BPI prices and supported currencies via AI. |
 | [CoinGate](../mcps/coingate.md) | Accept cryptocurrency payments from customers worldwide with instant fiat settlement and multi-coin checkout support. |
 | [Confido Legal](../mcps/confido-legal.md) | Manage legal trust accounting, client payments, and compliance reporting with tools built specifically for law firms. |
@@ -39,7 +40,7 @@ Explore the open database of **finance-accounting** Model Context Protocol (MCP)
 | [Middesk](../mcps/middesk.md) | Business identity verification — verify entities, Secretary of State records, and tax registrations via Middesk. |
 | [Monnify](../mcps/monnify.md) | Manage payments and virtual accounts in Nigeria via Monnify — track transactions and reserve accounts directly from your AI agent. |
 | [Mono](../mcps/mono.md) | Automate financial data retrieval and payment orchestration via Mono — access account balances, transaction history, and initiate bank transfers directly from any AI agent. |
-| [MoonClerk](../mcps/moonclerk.md) | Manage recurring payments and customers via MoonClerk — track transactions and view payment forms directly from your AI agent. |
+| [MoonClerk](../mcps/moonclerk.md) | Accept recurring and one-time payments with beautifully designed checkout pages that embed anywhere on your website. |
 | [Nabis](../mcps/nabis.md) | Cannabis wholesale and distribution — manage orders, inventory, and retailers via Nabis. |
 | [OwnerRez](../mcps/ownerrez.md) | Manage vacation rental bookings, properties, guests, calendars, financials, inquiries, and channel connections for your OwnerRez account through natural conversation. |
 | [Prosper](../mcps/prosper.md) | Manage your Prosper peer-to-peer investments — check account balances, search loan listings, submit bids, and track your portfolio performance. |
@@ -55,7 +56,7 @@ Explore the open database of **finance-accounting** Model Context Protocol (MCP)
 | [ZeroHash](../mcps/zerohash.md) | Manage digital asset infrastructure via ZeroHash — list assets, manage accounts, create customers, and execute trades directly from any AI agent. |
 | [Zoho Billing](../mcps/zoho-billing.md) | Comprehensive billing and subscription management platform. |
 | [Zoho Billing](../mcps/zoho-billing-alternative.md) | Comprehensive billing and subscription management platform. |
-| [Zoho Invoice](../mcps/zoho-invoice-1.md) | Manage customers, create invoices, and automate billing on Zoho Invoice — the clean and simple invoicing software for small business. |
+| [Zoho Invoice](../mcps/zoho-invoice-1.md) | Create and send professional invoices, track payments, and manage expenses with free invoicing software that scales with your business. |
 | [Zoho Invoice](../mcps/zoho-invoice-alternative.md) | Create and send professional invoices, track payments, and manage expenses with free invoicing software that scales with your business. |
 
 

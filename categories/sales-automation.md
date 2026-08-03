@@ -6,9 +6,9 @@ Explore the open database of **sales-automation** Model Context Protocol (MCP) s
 |-----------|-------------|
 | [Adversus](../mcps/adversus.md) | Manage outbound sales calls, track lead pipelines, and boost call center productivity with intelligent dialing automation. |
 | [AeroLeads](../mcps/aeroleads.md) | Find verified business emails and phone numbers for any prospect and build targeted lead lists in seconds. |
-| [Amplemarket](../mcps/amplemarket.md) | Sales automation and lead generation — manage sequences, leads, and custom signals via AI. |
+| [Amplemarket](../mcps/amplemarket.md) | Supercharge your outbound sales with AI-driven prospecting, multi-channel sequences, and smart lead scoring that closes deals. |
 | [Amplemarket](../mcps/amplemarket-alternative.md) | Supercharge your outbound sales with AI-driven prospecting, multi-channel sequences, and smart lead scoring that closes deals. |
-| [Attio](../mcps/attio.md) | Manage your CRM data with Attio — track objects, records, and relationships via AI. |
+| [Attio](../mcps/attio.md) | Build powerful CRM workflows with flexible data models, relationship tracking, and deal management tailored to your process. |
 | [Attio](../mcps/attio-alternative.md) | Build powerful CRM workflows with flexible data models, relationship tracking, and deal management tailored to your process. |
 | [BatchDialer](../mcps/batchdialer.md) | Automate your outbound dialing workflows via BatchDialer — manage campaigns, leads, and call logs directly from any AI agent. |
 | [Berg System CRM](../mcps/berg-system-crm.md) | Close more deals with a CRM built for financial advisors that tracks client relationships, policies, and follow-ups. |
@@ -28,21 +28,23 @@ Explore the open database of **sales-automation** Model Context Protocol (MCP) s
 | [Datanyze](../mcps/datanyze.md) | Equip your AI agent to retrieve B2B lead intelligence, technographics, and company insights via the Datanyze API. |
 | [DealHub CPQ](../mcps/dealhub-cpq.md) | Manage CPQ and sales via DealHub — create quotes, track opportunity stages, manage users, and sync CRM data directly from any AI agent. |
 | [DebtPayPro](../mcps/debtpaypro.md) | Equip your AI agent to manage contacts, track payments, and monitor sales opportunities via the DebtPayPro API. |
+| [FirstQuadrant](../mcps/firstquadrant-alternative.md) | Let AI handle your outbound sales prospecting with autonomous research, personalized messaging, and smart follow-up sequences. |
 | [Franchimp](../mcps/franchimp.md) | Access franchise intelligence, lead gen data, and FDD metadata via AI agents with Franchimp. |
 | [Freshsales](../mcps/freshsales-alternative.md) | Close deals faster with AI-powered lead scoring, visual deal pipelines, and built-in phone and email in one sales CRM. |
 | [Freshsales (Sales CRM & Lead Scoring API)](../mcps/freshsales-sales-crm-lead-scoring-api.md) | Manage your sales pipeline via Freshsales — create leads, track contacts, manage deals, and automate CRM workflows directly from any AI agent. |
+| [Gong](../mcps/gong.md) | Analyze sales conversations with AI that reveals winning patterns, coach reps with data, and forecast revenue with precision. |
 | [Gong](../mcps/gong-alternative.md) | Analyze sales conversations with AI that reveals winning patterns, coach reps with data, and forecast revenue with precision. |
 | [HappierLeads](../mcps/happierleads-alternative.md) | Identify the companies visiting your website and match them to decision-makers for warm outbound prospecting that converts. |
 | [Harmonic](../mcps/harmonic.md) | Automate company and startup intelligence via Harmonic — enrich domains, track funding, and discover investors directly from any AI agent. |
 | [HeyReach](../mcps/heyreach.md) | Automate LinkedIn outreach via HeyReach — manage campaigns, leads, and connected accounts directly from any AI agent. |
 | [HigherGov](../mcps/highergov.md) | Find and track government contracts, grants, and procurement opportunities with intelligence built for public sector vendors. |
-| [Hunter](../mcps/hunter.md) | Equip your AI agent with direct access to Hunter.io — find professional email addresses, verify deliverability, and enrich lead data without leaving your workflow. |
+| [Hunter](../mcps/hunter.md) | Find and verify professional email addresses with domain search, email finder, and deliverability verification for sales outreach. |
 | [Hunter](../mcps/hunter-alternative.md) | Find and verify professional email addresses with domain search, email finder, and deliverability verification for sales outreach. |
 | [Icypeas](../mcps/icypeas.md) | Lead generation and email verification via Icypeas API. |
 | [Insightly](../mcps/insightly.md) | Manage CRM contacts, opportunities, and projects via Insightly API. |
 | [Instantly](../mcps/instantly.md) | Equip your AI agent with direct access to Instantly — manage cold email campaigns, track deliverability, and scale outreach across unlimited sending accounts. |
 | [Kylas](../mcps/kylas.md) | Scale your Indian SMB sales team with a CRM that combines lead management, pipeline tracking, and WhatsApp integration natively. |
-| [Lusha](../mcps/lusha.md) | Equip your AI agent with direct access to Lusha — find verified B2B contact details, enrich prospect data, and build lead lists without opening the Lusha platform. |
+| [Lusha](../mcps/lusha.md) | Enrich your prospect data with verified direct dials and email addresses from a B2B contact intelligence platform. |
 | [Mailshake](../mcps/mailshake-alternative.md) | Run cold email outreach campaigns with personalization, automated follow-ups, and reply detection that fills your sales pipeline. |
 | [Nimble CRM (Social Sales CRM & Contacts API)](../mcps/nimble-crm-social-sales-crm-contacts-api.md) | Manage your Nimble CRM contacts and user profile directly through AI — list, retrieve, and manage social sales data seamlessly. |
 | [Nutshell CRM](../mcps/nutshell-crm.md) | Manage sales and relationships via Nutshell CRM — track leads, contacts, and accounts directly from your AI agent. |
@@ -51,7 +53,7 @@ Explore the open database of **sales-automation** Model Context Protocol (MCP) s
 | [Proxycurl (LinkedIn Data)](../mcps/proxycurl-linkedin-data.md) | Enrich company and professional data via Proxycurl — lookup websites, funding history, employee profiles, and competitive intelligence directly from your AI agent. |
 | [Skylink](../mcps/skylink.md) | Connect your AI agents to Skylink to manage leads, deals, calls, contacts, tasks, and agent performance in a real estate CRM. |
 | [Snov.io](../mcps/snovio-alternative.md) | Find business emails, verify deliverability, and run multi-step drip campaigns that fill your outbound sales pipeline. |
-| [Snov.io](../mcps/snovio-alternative-1.md) | Find, verify, and manage leads with Snov.io — search domain emails, verify addresses, and add prospects to lists directly from your AI agent. |
+| [Snov.io](../mcps/snovio-alternative-1.md) | Find business emails, verify deliverability, and run multi-step drip campaigns that fill your outbound sales pipeline. |
 | [Snov.io](../mcps/snovio.md) | Equip your AI agent with direct access to Snov.io — find emails, verify addresses, automate drip campaigns, and manage prospect lists without opening the Snov dashboard. |
 | [SugarCRM](../mcps/sugarcrm.md) | Intelligent CRM platform for sales and marketing. |
 | [SugarCRM (Enterprise CRM & Customer Success API)](../mcps/sugarcrm-enterprise-crm-customer-success-api.md) | Manage SugarCRM records, relationships, and customer data directly from your AI agent. |

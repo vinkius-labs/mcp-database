@@ -15,8 +15,8 @@ Explore the open database of **customer-support** Model Context Protocol (MCP) s
 | [Atera](../mcps/atera.md) | Manage IT operations with Atera — track agents, tickets, and customers via AI. |
 | [Bazaarvoice](../mcps/bazaarvoice.md) | Analyze and manage user-generated content via Bazaarvoice — list products, reviews, and customer questions directly from any AI agent. |
 | [Belong Australia](../mcps/belong-australia.md) | Manage your Belong mobile and broadband services — track usage, list invoices, and check account balance directly from any AI agent. |
+| [Birdeye](../mcps/birdeye.md) | Grow your local business reputation with review management, customer surveys, and listings that drive more foot traffic. |
 | [Birdeye](../mcps/birdeye-alternative.md) | Grow your local business reputation with review management, customer surveys, and listings that drive more foot traffic. |
-| [Birdeye](../mcps/birdeye.md) | Manage reputation and customer experience via Birdeye — list reviews, manage contacts, and trigger surveys directly from any AI agent. |
 | [bluebarry.ai](../mcps/bluebarryai.md) | Optimize your website accessibility compliance with automated WCAG audits, issue detection, and remediation tracking. |
 | [BoomTown (OvationCXM)](../mcps/boomtown-ovationcxm.md) | Orchestrate customer journeys via OvationCXM — manage journeys, teams, and support issues directly from any AI agent. |
 | [Bot9](../mcps/bot9.md) | Manage your AI agents via Bot9 — orchestrate bots, train them, and automate conversations directly from any AI agent. |
@@ -32,13 +32,12 @@ Explore the open database of **customer-support** Model Context Protocol (MCP) s
 | [Chattermill](../mcps/chattermill.md) | Analyze customer feedback and sentiment via Chattermill — track AI-powered themes, monitor NPS and CSAT, and unify feedback from every channel directly from any AI agent. |
 | [ChurnZero](../mcps/churnzero.md) | Manage customer success and health via ChurnZero — track churn scores, monitor segments, and analyze account activity directly from any AI agent. |
 | [Cliengo](../mcps/cliengo.md) | Manage conversational marketing and leads via Cliengo — track chatbot conversations, monitor captured leads, and audit chat history directly from any AI agent. |
-| [ClientSuccess](../mcps/clientsuccess.md) | Manage customer success and retention via ClientSuccess — track client health, monitor subscriptions, and manage success cycles directly from any AI agent. |
+| [ClientSuccess](../mcps/clientsuccess.md) | Reduce churn and grow accounts with health scoring, engagement tracking, and success playbooks built for customer success teams. |
 | [ClientSuccess](../mcps/clientsuccess-alternative.md) | Reduce churn and grow accounts with health scoring, engagement tracking, and success playbooks built for customer success teams. |
 | [CloudTalk](../mcps/cloudtalk.md) | Modern cloud-based phone system designed for sales and support teams, offering seamless call center automation. |
 | [Cloutly](../mcps/cloutly.md) | All-in-one review management platform that helps businesses collect, manage, and respond to reviews from multiple sources. |
 | [Cody AI](../mcps/cody-ai.md) | Enable your AI agent to manage knowledge-base bots, import documents, and query trained AI assistants via the Cody AI API. |
 | [ConnectWise](../mcps/connectwise.md) | Equip your AI to seamlessly manage ConnectWise PSA tickets, clients, and technical documentation via text. |
-| [Custify](../mcps/custify.md) | Equip your AI agent to manage customer success, monitor health scores, and track churn probability directly via the Custify API. |
 | [CustomerGauge](../mcps/customergauge.md) | Equip your AI agent to manage B2B experience, monitor NPS scores, and track revenue impact directly via the CustomerGauge API. |
 | [Dashly](../mcps/dashly.md) | Convert more website visitors with targeted pop-ups, live chat triggers, and automated lead nurturing sequences. |
 | [Deep Talk](../mcps/deep-talk.md) | Equip your AI agent to analyze conversation datasets, extract topics, and monitor sentiment via the Deep Talk API. |
@@ -46,10 +45,10 @@ Explore the open database of **customer-support** Model Context Protocol (MCP) s
 | [Deskpro](../mcps/deskpro.md) | Deliver exceptional helpdesk support with ticket management, self-service portals, and SLA tracking across every channel. |
 | [Desku.io](../mcps/deskuio.md) | Unify customer support across email, chat, and social with AI-assisted ticket resolution that speeds up response times. |
 | [Dialpad](../mcps/dialpad.md) | Equip your AI agent to send office SMS, manage team contacts, and monitor call logs via the Dialpad API. |
-| [Dixa](../mcps/dixa.md) | Equip your AI agent to manage customer conversations, track agents, and monitor support queues via the Dixa API. |
+| [Dixa](../mcps/dixa.md) | Route customer conversations to the right agent across phone, email, chat, and messaging with intelligent prioritization. |
 | [DocsBot](../mcps/docsbot.md) | Equip your AI agent to manage AI-powered knowledge bases, track sources, and query your bots via the DocsBot API. |
 | [Emplifi](../mcps/emplifi.md) | Equip your AI agent to manage social profiles, track post metrics, and monitor care automation via the Emplifi API. |
-| [Formbricks](../mcps/formbricks.md) | Manage surveys, capture feedback, and oversee experience management via AI agents with Formbricks. |
+| [Formbricks](../mcps/formbricks.md) | Capture user feedback with open-source surveys that trigger at the right moment inside your product for actionable insights. |
 | [Formbricks](../mcps/formbricks-alternative.md) | Capture user feedback with open-source surveys that trigger at the right moment inside your product for actionable insights. |
 | [Formilla](../mcps/formilla.md) | Chat with website visitors in real time and use AI chatbots to qualify leads and answer common questions automatically. |
 | [Freshcaller](../mcps/freshcaller.md) | Manage your cloud phone system, track calls, and oversee agents via AI agents with Freshcaller. |
@@ -67,21 +66,22 @@ Explore the open database of **customer-support** Model Context Protocol (MCP) s
 | [GoZen Testimonials](../mcps/gozen-testimonials.md) | Collect and showcase video testimonials from happy customers with branded recording pages and embeddable display widgets. |
 | [Guestmeter](../mcps/guestmeter.md) | Automate guest feedback collection and reputation management via Guestmeter directly from any AI agent. |
 | [GUIDEcx](../mcps/guidecx.md) | Automate customer onboarding via GUIDEcx — manage projects, tasks, and time tracking directly from any AI agent. |
+| [HelpCrunch](../mcps/helpcrunch.md) | Engage customers with live chat, email automation, and a knowledge base that reduces support workload and boosts satisfaction. |
 | [HelpCrunch](../mcps/helpcrunch-alternative.md) | Engage customers with live chat, email automation, and a knowledge base that reduces support workload and boosts satisfaction. |
-| [HelpCrunch](../mcps/helpcrunch.md) | Automate customer support via HelpCrunch — manage chats, customers, and team assignments directly from any AI agent. |
 | [Helpjuice](../mcps/helpjuice.md) | Automate knowledge base management via Helpjuice — manage articles, categories, and analytics directly from any AI agent. |
 | [Helpshift](../mcps/helpshift.md) | Automate mobile and web support via Helpshift — manage issues, FAQs, and user profiles directly from any AI agent. |
 | [Hotjar](../mcps/hotjar.md) | Understand your users with heatmaps, session recordings, and feedback surveys that reveal exactly why visitors leave your site. |
 | [Hotjar (Behavior Analytics)](../mcps/hotjar-behavior-analytics.md) | Analyze user behavior via Hotjar — list sites, retrieve survey responses, and manage feedback widgets. |
 | [Howuku](../mcps/howuku.md) | Analyze user behavior via Howuku — track projects, recordings, and heatmaps. |
 | [Jaicob](../mcps/jaicob.md) | Add AI customer support to your website that answers questions from your docs, guides users, and escalates when needed. |
-| [JustCall](../mcps/justcall.md) | Manage phone calls, SMS, and recordings via JustCall API. |
+| [JustCall](../mcps/justcall.md) | Make and receive business calls from any device with a cloud phone system that logs every interaction in your CRM automatically. |
 | [JustCall](../mcps/justcall-alternative.md) | Make and receive business calls from any device with a cloud phone system that logs every interaction in your CRM automatically. |
 | [Kavkom](../mcps/kavkom.md) | Set up a professional cloud phone system with call routing, IVR menus, and analytics designed for European businesses. |
 | [Kayako](../mcps/kayako.md) | Manage support tickets, users, and knowledge base articles via Kayako — list cases, create users, and browse help center content directly from any AI agent. |
 | [Keepcon](../mcps/keepcon.md) | Automate content moderation and semantic analysis via Keepcon. |
 | [KnowledgeOwl](../mcps/knowledgeowl.md) | Manage your knowledge base — list articles, search help content, and audit categories. |
 | [Kustomer](../mcps/kustomer.md) | Manage customer service — list conversations, audit customers, and search timelines. |
+| [Landbot](../mcps/landbot.md) | Build conversational landing pages and chatbot flows with a visual builder that replaces boring forms with engaging conversations. |
 | [Landbot](../mcps/landbot-alternative.md) | Build conversational landing pages and chatbot flows with a visual builder that replaces boring forms with engaging conversations. |
 | [Language Detector Engine](../mcps/language-detector-engine.md) | Detect the language of any text local using exact n-gram analysis. Supports 400+ languages. When AI guesses wrong on short or mixed text, this engine proves it. |
 | [LiveAgent](../mcps/liveagent.md) | Manage customer support tickets, conversations, and call records directly through LiveAgent. |
@@ -90,7 +90,6 @@ Explore the open database of **customer-support** Model Context Protocol (MCP) s
 | [ManyChat](../mcps/manychat.md) | Automate messenger marketing via ManyChat — manage subscribers, tags, and flows directly from any AI agent. |
 | [ManyChat](../mcps/manychat-alternative.md) | Engage followers on Instagram, WhatsApp, and Messenger with chatbot flows that qualify leads and drive sales conversations. |
 | [MeiQia](../mcps/meiqia.md) | Leading live chat and customer CRM platform — manage conversations, messages, and customers via AI. |
-| [Mention](../mcps/mention.md) | Social media monitoring and alerts via Mention — track mentions and monitor brand sentiment. |
 | [MiiTel](../mcps/miitel-alternative.md) | Automate MiiTel voice intelligence — list export queues, generate CSVs, and import call or meeting records via AI. |
 | [MiiTel](../mcps/miitel.md) | Analyze phone conversations with AI that scores call quality, identifies sentiment, and provides coaching insights for sales teams. |
 | [MonkeyLearn](../mcps/monkeylearn.md) | Analyze text data with custom machine learning models that classify sentiment, extract keywords, and tag topics automatically. |

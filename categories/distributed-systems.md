@@ -5,7 +5,7 @@ Explore the open database of **distributed-systems** Model Context Protocol (MCP
 | Tool Name | Description |
 |-----------|-------------|
 | [LWW CRDT State Resolver](../mcps/lww-crdt-state-resolver.md) | Deterministic conflict resolution for distributed systems using Last-Writer-Wins logic. |
-| [LWW CRDT State Resolver Alternative](../mcps/lww-crdt-state-resolver-alternative.md) | Deterministic conflict resolution for distributed systems using Last-Writer-Wins logic. |
+| [LWW CRDT State Resolver](../mcps/lww-crdt-state-resolver-alternative.md) | Deterministic conflict resolution for distributed systems using Last-Writer-Wins logic. |
 | [Vector Clock Conflict Resolver](../mcps/vector-clock-conflict-resolver.md) | Detect and resolve state conflicts in distributed multi-agent systems using vector clock causality analysis. |
 
 

@@ -7,6 +7,7 @@ Explore the open database of **databases** Model Context Protocol (MCP) servers.
 | [Aiven](../mcps/aiven.md) | Manage Aiven cloud infrastructure — provision databases, manage projects, and monitor services directly from your AI agent. |
 | [Amiibo](../mcps/amiibo.md) | Search and filter the complete Amiibo database — access figures, cards, and series data directly from any AI agent. |
 | [An API of Ice And Fire](../mcps/an-api-of-ice-and-fire.md) | Explore the world of A Song of Ice and Fire — query books, characters, and noble houses of Westeros directly from any AI agent. |
+| [Baserow](../mcps/baserow.md) | Manage no-code databases via Baserow — list tables, query rows, create records and manage schemas from any AI agent. |
 | [CARTO](../mcps/carto.md) | Empower your AI agents to execute spatial SQL, generate routes, create driving isolines, and bulk geocode directly on CARTO. |
 | [Couchbase (Vector & NoSQL)](../mcps/couchbase-vector-nosql.md) | Manage vector search and NoSQL via Couchbase — execute N1QL queries, perform KNN vector searches, and audit documents directly from any AI agent. |
 | [Covalent](../mcps/covalent.md) | Equip your AI agent to query unified blockchain data including balances, transactions, and NFTs across 100+ chains. |

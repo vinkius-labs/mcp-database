@@ -53,10 +53,9 @@ Explore the open database of **money-moves** Model Context Protocol (MCP) server
 | [Efí Pay (Gerencianet)](../mcps/efi-pay-gerencianet.md) | Generate dynamic Pix charges, issue traditional bank slips (boletos), and check your account balance via Efí Pay. |
 | [FastSpring](../mcps/fastspring.md) | Manage digital commerce via FastSpring — track orders and subscriptions, handle accounts, and manage product catalogs directly from any AI agent. |
 | [Fireblocks](../mcps/fireblocks.md) | Securely manage digital assets, vault accounts, and blockchain transactions via the Fireblocks Digital Asset Platform directly from your AI agent. |
+| [GoCardless](../mcps/gocardless.md) | Collect recurring payments directly from bank accounts with automated direct debit that reduces failed payment rates. |
 | [GoCardless](../mcps/gocardless-alternative.md) | Collect recurring payments directly from bank accounts with automated direct debit that reduces failed payment rates. |
-| [GoCardless](../mcps/gocardless.md) | Manage direct debit payments, track mandates, and oversee customers via AI agents with GoCardless. |
 | [Griffin](../mcps/griffin.md) | Manage your banking & fintech operations via Griffin — list accounts, monitor transactions, and handle verifications via AI. |
-| [Gumroad](../mcps/gumroad.md) | Automate e-commerce via Gumroad — manage products, sales, and license verification directly from any AI agent. |
 | [Gusto](../mcps/gusto.md) | Manage employees, run payroll, view benefits and time-off policies — HR automation for AI agents. |
 | [Highnote](../mcps/highnote.md) | Automate card issuance and financial management via Highnote — manage account holders, cards, and transactions directly from any AI agent. |
 | [Hyperswitch](../mcps/hyperswitch.md) | Manage payments, customers, and refunds via Hyperswitch API. |
@@ -78,8 +77,8 @@ Explore the open database of **money-moves** Model Context Protocol (MCP) server
 | [Mercury](../mcps/mercury.md) | Equip your AI agent with direct access to Mercury — check account balances, review transactions, and manage recipients without opening the banking dashboard. |
 | [Mercury](../mcps/mercury-alternative.md) | Bank smarter for your startup with FDIC-insured accounts, treasury management, and business banking built for tech companies. |
 | [Modulr](../mcps/modulr.md) | Empowers algorithmic control over European Payment volumes. Execute massive HMAC-secured payment schedules, create internal ledgers natively. |
+| [Mollie](../mcps/mollie.md) | Accept online payments across Europe with a payment gateway that supports iDEAL, credit cards, PayPal, and local methods seamlessly. |
 | [Mollie](../mcps/mollie-alternative.md) | Accept online payments across Europe with a payment gateway that supports iDEAL, credit cards, PayPal, and local methods seamlessly. |
-| [Mollie](../mcps/mollie.md) | Manage payments, orders, and customers via Mollie — track transactions and manage your e-commerce finances directly from your AI agent. |
 | [Monzo Banking](../mcps/monzo-banking.md) | Universal Monzo intelligence — check balances, accounts, and transactions via AI. |
 | [MoonClerk](../mcps/moonclerk-alternative.md) | Accept recurring and one-time payments with beautifully designed checkout pages that embed anywhere on your website. |
 | [N26 Banking](../mcps/n26-banking.md) | Universal N26 intelligence — check balances, accounts, and spaces via AI. |
@@ -100,15 +99,15 @@ Explore the open database of **money-moves** Model Context Protocol (MCP) server
 | [Polygon.io](../mcps/polygonio.md) | Access real-time and historical stock market data, including trades, quotes, aggregates, and company metadata directly via AI. |
 | [Railz](../mcps/railz.md) | Financial data integration platform — connect accounting, banking, and commerce data via AI. |
 | [Recharge](../mcps/recharge.md) | Automate subscription commerce via Recharge — manage subscriptions, customers, and orders directly from any AI agent. |
-| [Recharge](../mcps/recharge-alternative.md) | Manage subscription commerce via Recharge — handle customers, subscriptions, addresses, and delivery schedules directly from your AI agent. |
+| [Recharge](../mcps/recharge-alternative.md) | Automate subscription commerce via Recharge — manage subscriptions, customers, and orders directly from any AI agent. |
+| [Recurly](../mcps/recurly.md) | Automate subscription billing and management via Recurly — manage subscriptions, accounts, and invoices directly from any AI agent. |
 | [Recurly](../mcps/recurly-alternative.md) | Automate subscription billing and management via Recurly — manage subscriptions, accounts, and invoices directly from any AI agent. |
-| [Recurly](../mcps/recurly.md) | Equip your AI to directly manage subscriptions, billing accounts, and invoices within your Recurly ecosystem without shifting interfaces. |
 | [Revolut Business](../mcps/revolut-business.md) | Grant your AI access to Europe's powerhouse treasury. Automate multi-currency exchange, mass payouts and real-time vendor bulk-payments. |
 | [Rong360 Open API](../mcps/rong360-open-api.md) | Bring high-level financial risk assessment and identity KYC directly to your agent. Evaluate credit scores and verify names. |
 | [Salesbricks](../mcps/salesbricks.md) | Integrate Salesbricks seamlessly into your AI. Quickly manage B2B customer billing, track active subscriptions, list available software plans, and audit invoices natively. |
 | [Snapchat Ads](../mcps/snapchat-ads.md) | Equip your AI agent with direct access to Snapchat Ads — manage campaigns, track ad performance, and optimize spend without opening Snapchat Ads Manager. |
 | [Spendesk](../mcps/spendesk.md) | Empower your AI with real-time spend management. Track budgets, audit invoices, and review expense claims directly from your IDE. |
-| [Square](../mcps/square.md) | Manage payments, orders, catalog, customers, inventory, locations, and team members for your Square business through natural conversation. |
+| [Square](../mcps/square.md) | Manage payments, customers, and inventory on Square with AI agents. |
 | [Stark Bank](../mcps/stark-bank.md) | Equip your AI with Brazil's enterprise Developer Bank. Automate corporate virtual cards, Boletos, Outbound Pix (Transfers), and statements inside chats. |
 | [Stripe](../mcps/stripe-alternative.md) | Manage payments, customers, products and subscriptions via Stripe — create payment intents, track invoices and audit refunds from any AI agent. |
 | [Stripe Payment Link Creator](../mcps/stripe-payment-link-creator.md) | This MCP does exactly one thing: it generates custom Stripe Checkout URLs on the fly for any amount negotiated in chat. That's its only function. Incredible for turning your AI into a real-time closer. |

@@ -22,7 +22,7 @@ Explore the open database of **security-compliance** Model Context Protocol (MCP
 | [IPinfo](../mcps/ipinfo-alternative.md) | Enrich IP addresses with geolocation, ASN, and WHOIS data directly from your AI agent using IPinfo's industry-leading intelligence. |
 | [Kandji](../mcps/kandji.md) | Manage Apple devices, blueprints, and security via Kandji MDM API. |
 | [Kaseya](../mcps/kaseya.md) | Manage IT infrastructure, devices, and automation via Kaseya VSA 10. |
-| [Kisi](../mcps/kisi.md) | Manage cloud-based access control, locks, and users via the Kisi API. |
+| [Kisi](../mcps/kisi.md) | Control building access with cloud-managed smart locks, mobile credentials, and audit trails that replace traditional key cards. |
 | [Lit Protocol (Decentralized Access Control)](../mcps/lit-protocol-decentralized-access-control.md) | Manage decentralized access control, Programmable Key Pairs (PKPs), and execute immutable Lit Actions within TEEs directly from your AI agent. |
 | [MailerCheck](../mcps/mailercheck.md) | Verify and validate email addresses in real-time or batch via the MailerCheck REST API. |
 | [OpenSanctions](../mcps/opensanctions.md) | Screen persons and companies against global sanctions lists and PEP databases for KYC/AML compliance. |

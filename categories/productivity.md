@@ -47,6 +47,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [airfocus](../mcps/airfocus.md) | Prioritize your product roadmap, score features by impact, and align your team on what to build next with strategic clarity. |
 | [AirMatch Pro](../mcps/airmatch-pro.md) | Match candidates to job openings with AI-powered recruitment scoring and talent pipeline management for faster hiring. |
 | [Albi Restoration](../mcps/albi-restoration.md) | Manage restoration projects from damage assessment through job completion with tools built for contractors and adjusters. |
+| [Alegra](../mcps/alegra-alternative.md) | Handle your Latin American business accounting with electronic invoicing, expense tracking, and tax-ready financial reports. |
 | [Alegra](../mcps/alegra-extended.md) | Handle your Latin American business accounting with electronic invoicing, expense tracking, and tax-ready financial reports. |
 | [Alphamoon](../mcps/alphamoon.md) | Extract data from documents using AI-powered OCR and intelligent document processing for contracts, invoices, and forms. |
 | [Altoviz](../mcps/altoviz.md) | Business management and invoicing — manage customers, invoices, and expenses via AI. |
@@ -59,10 +60,11 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Anxiety Management Tracker](../mcps/anxiety-management-tracker.md) | Track anxiety patterns, identify triggers, and evaluate coping strategy effectiveness. |
 | [API Design Prover](../mcps/api-design-prover.md) | An AI agent designed an API with GET /users/create. That single endpoint broke HTTP caching for 200 consumer services. No versioning. No error contract. Raw arrays on one route, wrapped objects on another. This tool forces semantic HTTP verbs, explicit versioning strategy, unified response envelopes, bounded pagination, and RFC 7807 error structures — before any code is written. |
 | [Apidog](../mcps/apidog.md) | Sync your Apidog workspace with your AI agent — list projects, fetch endpoint schemas, and export full OpenAPI specifications instantly. |
+| [Appcues](../mcps/appcues.md) | Guide users through your product with in-app onboarding flows, feature announcements, and usage analytics without code. |
 | [Appcues](../mcps/appcues-alternative.md) | Guide users through your product with in-app onboarding flows, feature announcements, and usage analytics without code. |
 | [ApplicantStack](../mcps/applicantstack.md) | Manage your hiring process with ApplicantStack — track jobs, candidates, and hires via AI. |
 | [Appointlet](../mcps/appointlet.md) | Bring Appointlet scheduling directly into your AI agent — list schedules, track bookings, cancel events, and manage attendees seamlessly. |
-| [Apptoto](../mcps/apptoto.md) | Manage appointments and messaging with Apptoto — track events, contacts, and bookings via AI. |
+| [Apptoto](../mcps/apptoto.md) | Reduce no-shows with smart appointment reminders, automated confirmations, and two-way messaging for every booking. |
 | [Apptoto](../mcps/apptoto-alternative.md) | Reduce no-shows with smart appointment reminders, automated confirmations, and two-way messaging for every booking. |
 | [ArcXP](../mcps/arcxp.md) | Automate newsroom publishing via ArcXP — manage, search, and update articles, photos, and videos directly from any AI agent. |
 | [Armano](../mcps/armano.md) | Connect your business systems through intelligent iPaaS integration that syncs data across apps without custom development. |
@@ -90,7 +92,6 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Beeminder](../mcps/beeminder.md) | Commit to your goals via Beeminder — track progress, add datapoints, and monitor your road status directly from any AI agent. |
 | [Bible API](../mcps/bible-api.md) | Search and retrieve scripture — audit Bible versions and verses via AI. |
 | [BibTeX Bibliography Parser](../mcps/bibtex-bibliography-parser.md) | Parse academic .bib bibliography files into structured JSON. Let your AI format citations in APA, IEEE, or Chicago style instantly local. |
-| [Bidsketch](../mcps/bidsketch.md) | Automate proposal creation via Bidsketch — list proposals, clients, and templates directly from any AI agent. |
 | [BigOven](../mcps/bigoven.md) | Access over a million recipes via BigOven — search dishes, read reviews, and explore collections directly from any AI agent. |
 | [Bill Due Date Shifter](../mcps/bill-due-date-shifter.md) | Align bill due dates with your payday to prevent overdrafts. |
 | [Biorhythm Calculator](../mcps/biorhythm-calculator.md) | Calculate and analyze the three primary biological cycles--physical, emotional, and intellectual. |
@@ -123,8 +124,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Browserbear](../mcps/browserbear.md) | Automate browser tasks via Browserbear — take screenshots, scrape data, and run multi-step automations directly from any AI agent. |
 | [Brushfire](../mcps/brushfire.md) | Manage events and attendees via Brushfire — track registrations, check-in guests, and monitor orders directly from any AI agent. |
 | [Buddy Punch](../mcps/buddy-punch.md) | Track employee hours with GPS-verified clock-ins, PTO management, and payroll-ready timesheet exports your team will love. |
+| [Buffer](../mcps/buffer.md) | Plan, schedule, and publish social media content across all your channels with analytics that show what is working. |
 | [Buffer](../mcps/buffer-alternative.md) | Plan, schedule, and publish social media content across all your channels with analytics that show what is working. |
-| [Buffer](../mcps/buffer.md) | Automate social media management via Buffer — schedule posts, track sent updates, shuffle queues, and manage multi-platform profiles with any AI agent. |
 | [Bureau24](../mcps/bureau24.md) | Never miss a business call with a live virtual receptionist service that answers, routes, and logs calls professionally. |
 | [Burnout Detector](../mcps/burnout-detector.md) | Assess burnout risk using the Maslach Burnout Inventory (MBI) model. |
 | [Business Day Calculator](../mcps/business-day-calculator.md) | Calculate workdays, holidays, and business day ranges across 50+ countries. |
@@ -160,7 +161,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Circle.so](../mcps/circleso.md) | Manage online communities via Circle — track members, monitor posts, and manage spaces directly from any AI agent. |
 | [Click2Mail](../mcps/click2mail.md) | Manage physical mail and printing via Click2Mail — track jobs, monitor credit balance, and submit mailings directly from any AI agent. |
 | [ClickTime](../mcps/clicktime.md) | Manage time tracking and resource planning via ClickTime — track entries, monitor projects, and audit client hours directly from any AI agent. |
-| [ClickUp](../mcps/clickup.md) | Manage tasks and projects via ClickUp — track work, monitor spaces, and manage team productivity directly from any AI agent. |
+| [ClickUp](../mcps/clickup.md) | Bring tasks, docs, goals, and team communication together in one workspace that replaces scattered project management tools. |
 | [ClickUp](../mcps/clickup-alternative.md) | Bring tasks, docs, goals, and team communication together in one workspace that replaces scattered project management tools. |
 | [Clinical Medication Schedule Generator](../mcps/clinical-medication-schedule-generator.md) | Empower your AI Agent with deterministic medication scheduling. Effortlessly orchestrate strict multi-day dosage timelines offline, guaranteeing absolute privacy and temporal precision. |
 | [Clinical Reasoning Prover](../mcps/clinical-reasoning-prover.md) | Forces AI to validate clinical treatment plans against US guidelines (AHA, ACC) using real differential exclusion, explicit pharmacokinetics, and objective triage scales instead of subjective descriptors and diagnostic anchoring. |
@@ -176,15 +177,15 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [cloudlayer.io](../mcps/cloudlayerio.md) | Generate PDFs and screenshots via cloudlayer.io — convert HTML or URLs to high-quality documents and images directly from any AI agent. |
 | [Cloze](../mcps/cloze.md) | Smart CRM that automatically tracks your interactions and provides AI-powered insights. |
 | [ClubPlanner](../mcps/clubplanner.md) | Manage fitness club memberships, class bookings, and member check-ins with tools designed for health and wellness businesses. |
-| [Clustdoc](../mcps/clustdoc.md) | Manage client onboarding and workflows via Clustdoc — track dossiers, monitor applications, and automate invitations directly from any AI agent. |
+| [Clustdoc](../mcps/clustdoc.md) | Collect client documents, track submission progress, and streamline onboarding with organized intake workflows. |
 | [Clustdoc](../mcps/clustdoc-alternative.md) | Collect client documents, track submission progress, and streamline onboarding with organized intake workflows. |
 | [Cnnect](../mcps/cnnect.md) | Streamline business networking with digital business cards, contact management, and relationship tracking for professionals. |
 | [Coassemble](../mcps/coassemble.md) | Manage online training and LMS via Coassemble — track courses, monitor enrolments, and manage student groups directly from any AI agent. |
 | [Cobot](../mcps/cobot.md) | Manage coworking spaces via Cobot — track memberships, monitor bookings, and manage resources directly from any AI agent. |
 | [Cocktail API](../mcps/cocktail-api.md) | Search cocktail recipes — audit ingredients and instructions via AI. |
 | [CocktailFyi](../mcps/cocktailfyi.md) | Explore cocktails, ingredients, and bartending techniques — get recipes and guides via AI. |
+| [Coda](../mcps/coda.md) | Combine docs, spreadsheets, and apps into powerful all-in-one documents that grow with your team and automate routine work. |
 | [Coda](../mcps/coda-alternative.md) | Combine docs, spreadsheets, and apps into powerful all-in-one documents that grow with your team and automate routine work. |
-| [Coda](../mcps/coda.md) | Enable your AI agent to manage docs, tables, formulas, and rows via the Coda API. |
 | [Code Integrity Prover](../mcps/code-integrity-prover.md) | AI agents default to type evasion (like any, void*, unsafe, or ignore), TODO stubs, timing/sleep hacks, and empty catch blocks. 96% of developers don't trust AI-generated code. This tool enforces zero-workaround integrity across all programming languages. |
 | [Coffee & Lunch Habit Cost Calculator](../mcps/coffee-lunch-habit-cost-calculator.md) | Quantify the long-term opportunity cost of daily habits like coffee or lunch. |
 | [Cognitive Load Estimator](../mcps/cognitive-load-estimator.md) | Quantify mental strain from workload metrics and get actionable mitigation strategies. |
@@ -207,7 +208,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [COR](../mcps/cor.md) | Optimize creative agency profitability with project tracking, resource allocation, and real-time margin analysis for every job. |
 | [Cornerstone OnDemand](../mcps/cornerstone-ondemand.md) | Equip your AI agent to manage training, performance, and employee transcripts via the Cornerstone LMS API. |
 | [Corporate Buzzword](../mcps/corporate-buzzword.md) | Generate random corporate buzzwords and professional phrases to elevate your business speak or add humor to your workflow. |
-| [Corsizio](../mcps/corsizio.md) | Equip your AI agent to manage event registrations, attendees, and payments through the Corsizio API. |
+| [Corsizio](../mcps/corsizio.md) | Sell event tickets and manage class registrations with a lightweight booking platform that handles payments and attendees. |
 | [Corsizio](../mcps/corsizio-alternative.md) | Sell event tickets and manage class registrations with a lightweight booking platform that handles payments and attendees. |
 | [Counterfactual-Variant Prover](../mcps/counterfactual-variant-prover.md) | AI models recite memorized answers to classic puzzles, failing when variables or rules are changed. This tool forces cognitive decontamination: isolate variables, compare prompt rules against standard puzzle templates, execute first-principles logic step-by-step, and prove decontaminated output. |
 | [Couple & Roommate Expense Splitter](../mcps/couple-roommate-expense-splitter.md) | Fairly split household expenses based on income proportions or assigned categories. |
@@ -223,10 +224,13 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Crossfade Time Subtractor](../mcps/crossfade-time-subtractor.md) | Calculate precise video durations and required raw footage lengths when using overlapping transitions. |
 | [CUFinder](../mcps/cufinder.md) | Discover verified B2B contact data including emails, phone numbers, and company info for targeted sales prospecting. |
 | [Culture Amp](../mcps/culture-amp.md) | Equip your AI agent to manage employee engagement surveys, monitor performance, and track development via the Culture Amp API. |
+| [Custify](../mcps/custify.md) | Predict and prevent customer churn with health scores, lifecycle tracking, and automated playbooks for your CS team. |
 | [Custify](../mcps/custify-alternative.md) | Predict and prevent customer churn with health scores, lifecycle tracking, and automated playbooks for your CS team. |
 | [Customer Discovery Prover](../mcps/customer-discovery-prover.md) | An AI defined the ICP as 'busy professionals aged 25-45 who value productivity.' It described the problem as 'everyone struggles with time management.' Interview questions: 'Would you pay $29/month for this?' The startup built for 14 months, launched to silence, and shut down. 42% of startups fail because of no market need — and the discovery process guaranteed it. This tool forces persona grounding in real interviews, problem evidence from specific conversations, Mom Test methodology, segment separation, and willingness-to-pay commitment signals. |
+| [Customer.io](../mcps/customerio.md) | Send behavior-driven emails, push notifications, and in-app messages triggered by what your users actually do in your product. |
 | [Customer.io](../mcps/customerio-alternative.md) | Send behavior-driven emails, push notifications, and in-app messages triggered by what your users actually do in your product. |
 | [Customers.ai](../mcps/customersai.md) | Identify anonymous website visitors by name and turn them into leads with AI-powered visitor identification and outreach automation. |
+| [Cyberimpact](../mcps/cyberimpact.md) | Email marketing automation with Cyberimpact. |
 | [Cyberimpact](../mcps/cyberimpact-alternative.md) | Email marketing automation with Cyberimpact. |
 | [Cycle Day Resolver](../mcps/cycle-day-resolver.md) | Identify specific tasks or states for any future date based on a repeating, variable-length sequence. |
 | [Cycling FTP Calculator](../mcps/cycling-ftp-calculator.md) | Calculate FTP, power zones, and training metrics like TSS and IF from cycling tests. |
@@ -242,7 +246,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Debt-Free Date Calculator](../mcps/debt-free-date-calculator.md) | Calculate your exact debt payoff date and total interest using Avalanche or Snowball strategies. |
 | [Deck of Cards](../mcps/deck-of-cards.md) | Simulate a full deck of cards via the Deck of Cards API — shuffle, draw, manage piles, and create custom decks for games or simulations. |
 | [Deep Analyst Prover](../mcps/deep-analyst-prover.md) | AI gives surface analysis — restates the question, misses hidden assumptions, uses single-lens thinking. This tool forces multi-model depth: First Principles decomposition, Second-Order cascades (3 levels), Steelmanning (Ideological Turing Test), Inversion, and Premortem risk mapping.... |
-| [DeepL](../mcps/deepl.md) | Translate and audit text — manage multilingual communication via AI. |
+| [DeepL](../mcps/deepl.md) | Translate text between 30+ languages with neural machine translation that captures nuance and tone better than generic engines. |
 | [Degreed](../mcps/degreed.md) | Equip your AI agent to discover learning content, track skills, and monitor user completions via the Degreed API. |
 | [Delivery Integrity Prover](../mcps/delivery-integrity-prover.md) | Forces AI agents to reflect on task execution, matching prompt requirements to actual changes, verifying logs, and declaring gaps before claiming completion. |
 | [Deload Week Inserter](../mcps/deload-week-inserter.md) | Automatically integrate recovery weeks into your training blocks by scaling weights and volume. |
@@ -282,10 +286,11 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [DottedSign](../mcps/dottedsign-alternative.md) | Automate e-signature workflows via DottedSign — create signing tasks, manage templates, and track document status directly from any AI agent. |
 | [DottedSign](../mcps/dottedsign.md) | E-signature and document management with DottedSign. |
 | [Double the Donation](../mcps/double-the-donation.md) | Maximize nonprofit revenue by identifying donors whose employers offer matching gift programs and automating match requests. |
+| [DoubleTick](../mcps/doubletick.md) | Scale your WhatsApp sales with bulk messaging, chatbot automation, and team inbox features built for growing businesses. |
 | [DoubleTick](../mcps/doubletick-alternative.md) | Scale your WhatsApp sales with bulk messaging, chatbot automation, and team inbox features built for growing businesses. |
 | [Dovetail](../mcps/dovetail.md) | Analyze qualitative research data with AI-powered tagging, theme discovery, and insight synthesis for product and UX teams. |
 | [Dribbble](../mcps/dribbble.md) | Manage your Dribbble portfolio—upload shots, organize projects, and update your profile directly from your AI agent. |
-| [Dropbox Sign](../mcps/dropbox-sign.md) | Equip your AI agent to manage e-signature requests, track document status, and monitor templates via the Dropbox Sign (HelloSign) API. |
+| [Dropbox Sign](../mcps/dropbox-sign.md) | Get documents signed electronically with legally binding e-signatures, templates, and audit trails your business can trust. |
 | [Dryfta](../mcps/dryfta.md) | Equip your AI agent to manage event attendees, track sessions, and monitor abstract submissions via the Dryfta API. |
 | [Dual-Phase Skincare Timer](../mcps/dual-phase-skincare-timer.md) | Calculates exact clock times for two-phase skincare steps. |
 | [Dub.co](../mcps/dubco.md) | Manage your short links via Dub.co — create, track, and analyze your link performance directly from any AI agent. |
@@ -309,6 +314,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Email (.eml) File Parser](../mcps/email-eml-file-parser.md) | Transform heavy raw email exports into crystal-clear text local. Let your AI act as your personal secretary, instantly summarizing threads without wasting context window tokens. |
 | [Email Marketing Performance Calculator](../mcps/email-marketing-performance-calculator.md) | Calculate and benchmark key email marketing metrics like delivery, engagement, and revenue. |
 | [Email Subject Line Optimizer](../mcps/email-subject-line-optimizer.md) | Analyze email subject lines for spam risk, engagement potential, and display truncation. |
+| [EmailOctopus](../mcps/emailoctopus.md) | Send beautiful email campaigns at a fraction of the cost with a platform built for startups and growing businesses. |
 | [EmailOctopus](../mcps/emailoctopus-alternative.md) | Send beautiful email campaigns at a fraction of the cost with a platform built for startups and growing businesses. |
 | [Emoji Name Resolver](../mcps/emoji-name-resolver.md) | Convert emoji shortcodes to Unicode and back (:rocket: ↔ 🚀). Essential for Slack, Discord, and GitHub cross-platform compatibility. |
 | [EmojisWorld](../mcps/emojisworld.md) | Universal emoji intelligence — search emojis, list categories, and get random icons via AI. |
@@ -322,8 +328,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Estimation Prover](../mcps/estimation-prover.md) | An AI estimated a database migration at 2 weeks. It took 11 weeks, cost $340K in delayed revenue, and left 3 engineers stuck in feature freeze. The estimate had no scope decomposition, no unknowns identified, no historical precedent, and no buffer. This tool forces granular scope breakdown, explicit unknown quantification, precedent mapping, and realistic buffer calculation before any timeline is committed. |
 | [EU Court Deadline Calculator](../mcps/eu-court-deadline-calculator.md) | Calculate legal procedural deadlines across European jurisdictions, accounting for national holidays and business day adjustments. |
 | [European Pension Estimator](../mcps/european-pension-estimator.md) | Estimate monthly public pension benefits and replacement rates for the UK, Germany, France, and Spain. |
+| [Eventbrite](../mcps/eventbrite-alternative.md) | Create events, sell tickets, and manage attendees with the world largest self-service ticketing platform for any occasion. |
 | [Eventbrite](../mcps/eventbrite-extended.md) | Create events, sell tickets, and manage attendees with the world largest self-service ticketing platform for any occasion. |
-| [Eventbrite](../mcps/eventbrite-alternative.md) | Manage your Eventbrite events — audit organizations, attendees, and orders via AI. |
 | [Eventcube](../mcps/eventcube.md) | Ticketing and event management with Eventcube. |
 | [Eventee](../mcps/eventee.md) | Equip your AI agent to manage events, track speakers, and monitor attendee engagement via the Eventee API. |
 | [Eventmaker](../mcps/eventmaker.md) | Equip your AI agent to manage events, track participants, and monitor check-ins via the Eventmaker API. |
@@ -340,7 +346,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Exam Notice Study Planner](../mcps/exam-notice-study-planner.md) | Transform exam notices into optimized study schedules and milestones. |
 | [Expensya](../mcps/expensya.md) | Submit and approve business expenses in seconds with receipt scanning, policy enforcement, and reimbursement workflows. |
 | [Fabric Yardage Calculator](../mcps/fabric-yardage-calculator.md) | Calculate precise fabric requirements for custom patterns, garments, and projects. |
-| [Factorial](../mcps/factorial.md) | Manage HR operations via Factorial — list employees and teams, track leave requests, monitor shifts and payslips, and handle company documents directly from any AI agent. |
+| [Factorial](../mcps/factorial.md) | Modernize HR operations with time-off management, payroll processing, and performance reviews that employees actually enjoy using. |
 | [Fair Chore Rotation Algorithm](../mcps/fair-chore-rotation-algorithm.md) | A deterministic scheduling system to rotate tasks among participants without consecutive repeats. |
 | [Fantastical](../mcps/fantastical.md) | Manage calendars via Fantastical — create events using natural language, handle scheduling openings and proposals, and monitor connected accounts directly from any AI agent. |
 | [Farming Efficiency Calculator](../mcps/farming-efficiency-calculator.md) | Optimize your gameplay by calculating Gold Per Hour and comparing farming routes. |
@@ -351,6 +357,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Fatigue Accumulation Tracker](../mcps/fatigue-accumulation-tracker.md) | Monitor sleep debt, estimate cognitive impact, and calculate recovery timelines. |
 | [FatSecret](../mcps/fatsecret.md) | Access millions of food items with calorie tracking, macro data, and serving sizes from the FatSecret platform used by 30M+ users worldwide. |
 | [Favqs](../mcps/favqs.md) | Discover and manage quotes — fetch the Quote of the Day, search by author or tag, and curate your favorites directly via AI. |
+| [Feedly](../mcps/feedly.md) | Stay ahead of industry trends by aggregating RSS feeds, tracking topics with AI, and organizing research in focused boards. |
 | [Feedly](../mcps/feedly-alternative.md) | Stay ahead of industry trends by aggregating RSS feeds, tracking topics with AI, and organizing research in focused boards. |
 | [Fellow](../mcps/fellow-alternative.md) | Run better meetings with collaborative agendas, action item tracking, and AI-generated summaries that keep teams accountable. |
 | [Feynman Radical Simplification Prover](../mcps/feynman-radical-simplification-prover.md) | Stop your AI from hiding behind jargon — force it to explain simply, build from scratch, and justify every piece of complexity. |
@@ -365,7 +372,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Flatwork ATS](../mcps/flatwork-ats.md) | Streamline your hiring pipeline with an applicant tracking system that organizes candidates, interviews, and offer management. |
 | [Float](../mcps/float.md) | Manage team scheduling, project allocations, and time off via AI agents with Float. |
 | [Flock](../mcps/flock.md) | Manage team collaboration via Flock — send rich messages with FlockML, handle public channels and private groups, and search rosters directly from any AI agent. |
-| [Flodesk](../mcps/flodesk.md) | Manage email subscribers, segments, and workflows via AI agents with Flodesk. |
+| [Flodesk](../mcps/flodesk.md) | Design gorgeous email campaigns with intuitive templates that grow your audience and reflect your brand without design skills. |
 | [Flodesk](../mcps/flodesk-alternative.md) | Design gorgeous email campaigns with intuitive templates that grow your audience and reflect your brand without design skills. |
 | [Flow](../mcps/flow.md) | Manage projects, tasks, and team collaboration via AI agents with Flow (getflow.com). |
 | [Flow XO](../mcps/flow-xo.md) | Automate chatbots, manage end users, and trigger workflows via AI agents with Flow XO. |
@@ -392,7 +399,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [GeekJoke](../mcps/geekjoke.md) | Get random geeky and programming-related jokes to lighten up your development workflow. |
 | [Germany Income Tax Calculator](../mcps/germany-income-tax-calculator.md) | Calculate German income tax, social security contributions, and net take-home pay. |
 | [GetStream](../mcps/getstream.md) | Build and manage scalable activity feeds and social networks. Manage activities, feeds, and follower relationships directly through your AI agent. |
-| [Ghost](../mcps/ghost.md) | Manage blog posts, track authors, and oversee static pages via AI agents with Ghost CMS. |
+| [Ghost](../mcps/ghost.md) | Publish and monetize your content with a modern headless CMS built for newsletters, memberships, and independent creators. |
 | [Ghost](../mcps/ghost-alternative.md) | Publish and monetize your content with a modern headless CMS built for newsletters, memberships, and independent creators. |
 | [Ghostfolio (Investment Tracker)](../mcps/ghostfolio-investment-tracker.md) | Track your wealth and manage investment portfolios via Ghostfolio — monitor holdings, record activities, and analyze performance through AI. |
 | [Giftpack](../mcps/giftpack-alternative.md) | Send corporate gifts at scale with AI-curated selections that match recipient preferences and company budget guidelines. |
@@ -401,6 +408,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [GitScrum Tasks](../mcps/gitscrum-tasks.md) | Master task execution via GitScrum — create, filter, assign, and track tasks with subtasks, checklists, and comments directly from any AI agent. |
 | [GitScrum Time Tracking](../mcps/gitscrum-time-tracking.md) | Track time and budgets via GitScrum — start timers, log hours, analyze productivity, monitor burn-down, and review standup summaries directly from any AI agent. |
 | [Gladia (Speech AI)](../mcps/gladia-speech-ai.md) | Transcribe, translate, and analyze audio with Gladia's high-speed Speech AI — support for pre-recorded files and live streaming. |
+| [Glean](../mcps/glean.md) | Search across all your company apps and docs with AI that understands your organization and surfaces the right answer instantly. |
 | [Glean](../mcps/glean-alternative.md) | Search across all your company apps and docs with AI that understands your organization and surfaces the right answer instantly. |
 | [GMAT Score Estimator](../mcps/gmat-score-estimator.md) | Calculate GMAT Focus Edition total scores, percentile rankings, and MBA competitiveness. |
 | [Gmelius](../mcps/gmelius.md) | Turn Gmail into a collaborative workspace with shared inboxes, email delegation, and workflow automation for teams. |
@@ -413,14 +421,14 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Gravity Forms](../mcps/gravity-forms.md) | Manage your WordPress Gravity Forms — list forms, retrieve entries, and handle submissions directly via AI. |
 | [GRE Score Calculator](../mcps/gre-score-calculator.md) | Convert raw GRE answers into scaled scores, percentiles, and check graduate program eligibility. |
 | [Greenhouse](../mcps/greenhouse-alternative.md) | Hire the right people with structured interviewing, customizable pipelines, and data-driven recruiting that scales with your team. |
+| [Greenhouse](../mcps/greenhouse-alternative-1.md) | Hire the right people with structured interviewing, customizable pipelines, and data-driven recruiting that scales with your team. |
 | [Greenhouse](../mcps/greenhouse.md) | Manage your recruiting pipeline via Greenhouse — list candidates, track applications, and audit jobs directly via AI. |
-| [Greenhouse](../mcps/greenhouse-alternative-1.md) | Manage your recruiting pipeline via Greenhouse — list applications, track candidate activity, and manage job board posts directly from any AI agent. |
 | [Greenspark](../mcps/greenspark.md) | Embed climate action into your product via Greenspark — plant trees, offset carbon, and track impact via AI. |
 | [Grocy (Home ERP)](../mcps/grocy-home-erp.md) | Automate your household management with Grocy — track inventory, manage shopping lists, and organize chores directly from your AI agent. |
 | [Growth Strategist](../mcps/growth-strategist.md) | AI agents asked for strategy always recommend the same five things: social media, engaging content, brand awareness. None of it is strategy — it's autocomplete. Growth Strategist demands specifics: name the person, prove channel fit, take a unique position, cite evidence, tie the outcome to revenue. |
 | [GrowthZone](../mcps/growthzone.md) | Automate association management via GrowthZone — manage contacts, memberships, events, and organizations directly from any AI agent. |
 | [Guerrilla Marketing](../mcps/guerrilla-marketing.md) | Real guerrilla costs nothing — only sweat equity. Most AI-generated tactics quietly sneak in paid spend and call it creative. This tool makes the agent prove zero cost, pinpoint the exact ambush moment, design a sharing trigger, assess risk, and trace every play back to revenue. |
-| [Guidebook](../mcps/guidebook.md) | Automate mobile app content management via Guidebook — manage guides, sessions, speakers, and custom lists directly from any AI agent. |
+| [Guidebook](../mcps/guidebook.md) | Create branded mobile apps for events, conferences, and organizations with schedules, maps, and attendee engagement features. |
 | [Guidebook](../mcps/guidebook-alternative.md) | Create branded mobile apps for events, conferences, and organizations with schedules, maps, and attendee engagement features. |
 | [Habitify](../mcps/habitify.md) | Automate habit tracking via Habitify — manage habits, logs, and personal growth directly from any AI agent. |
 | [Hacker News](../mcps/hacker-news.md) | Explore tech news via Hacker News — fetch top and new stories, retrieve detailed item contents, and read comments directly from any AI agent. |
@@ -498,7 +506,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [JSONPlaceholder](../mcps/jsonplaceholder.md) | Access fake online REST API for testing and prototyping — manage posts, comments, albums, photos, and todos directly from your AI agent. |
 | [KanbanTool](../mcps/kanbantool.md) | Visualize your workflow with Kanban boards that show bottlenecks, track cycle times, and help your team deliver consistently. |
 | [KanbanZone](../mcps/kanbanzone.md) | Manage projects visually with multi-board Kanban views, WIP limits, and process metrics that streamline team delivery. |
-| [Kintone](../mcps/kintone.md) | Manage custom business apps, records, and workflows via Kintone. |
+| [Kintone](../mcps/kintone.md) | Build custom business apps without code using drag-and-drop forms, workflow automation, and team collaboration spaces. |
 | [Kintone](../mcps/kintone-alternative.md) | Build custom business apps without code using drag-and-drop forms, workflow automation, and team collaboration spaces. |
 | [Kippy](../mcps/kippy.md) | Track GPS locations of pets and loved ones in real time with wearable devices that send alerts when they leave safe zones. |
 | [Kissflow](../mcps/kissflow.md) | Build low-code workflows, process apps, and case management solutions that digitize operations without heavy IT involvement. |
@@ -550,12 +558,12 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Maildroppa](../mcps/maildroppa.md) | Grow your email list and send targeted campaigns with a simple email marketing platform designed for solopreneurs and creators. |
 | [Mailinator](../mcps/mailinator.md) | Test email workflows with disposable inboxes that catch every message without touching production mailboxes or real addresses. |
 | [Mailosaur](../mcps/mailosaur.md) | Automate email and SMS testing and management via the Mailosaur REST API. |
-| [MakePlans](../mcps/makeplans.md) | Manage appointments, services, and customers via the MakePlans REST API. |
+| [MakePlans](../mcps/makeplans.md) | Online booking and appointment scheduling via MakePlans MCP. |
 | [MakePlans](../mcps/makeplans-alternative.md) | Online booking and appointment scheduling via MakePlans MCP. |
 | [Marilyn vos Savant Probabilistic Clarity Prover](../mcps/marilyn-vos-savant-probabilistic-clarity-prover.md) | Stop your AI from trusting its gut — force it to check intuition against actual probability before every conclusion. |
 | [Markdown HTML Compiler](../mcps/markdown-html-compiler.md) | Stop wasting AI tokens converting text. Compile Markdown into clean, minified HTML instantly for emails and CMS platforms. |
 | [Markdown Structure Compliance Validator](../mcps/markdown-structure-compliance-validator.md) | Enforce strict markdown formatting rules for LLM outputs. |
-| [Markdown Structure Compliance Validator Alternative](../mcps/markdown-structure-compliance-validator-alternative.md) | Enforce strict markdown formatting rules for LLM outputs. |
+| [Markdown Structure Compliance Validator](../mcps/markdown-structure-compliance-validator-alternative.md) | Enforce strict markdown formatting rules for LLM outputs. |
 | [Markdown Task Extractor](../mcps/markdown-task-extractor.md) | Instantly scan any local folder of Markdown notes (Obsidian, Notion, Logseq) and aggregate every scattered '- [ ]' to-do item into a single, structured list for your AI. |
 | [Markdown Utilities Engine](../mcps/markdown-utilities-engine.md) | Equip your AI with programmatic Markdown tools. Deterministically generate Table of Contents (TOC) with correct anchor links and format perfect Markdown tables from JSON. |
 | [Markup Calculator](../mcps/markup-calculator.md) | Calculate markup divisor and suggested selling price based on costs, taxes, and profit margins. |
@@ -727,7 +735,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [SignRequest](../mcps/signrequest.md) | Manage e-signatures and documents via SignRequest — create signing requests, track document status, and manage templates directly from any AI agent. |
 | [Simian](../mcps/simian.md) | Video sharing and collaboration platform. |
 | [Simplenote](../mcps/simplenote.md) | Manage your Simplenote notes directly from your AI assistant. Create, search, edit, and organize plain-text notes without leaving the conversation. |
-| [SimplyBook.me](../mcps/simplybookme.md) | Enable your AI agent to manage appointments, browse staff calendars, and handle client records via the SimplyBook.me scheduling platform. |
+| [SimplyBook.me](../mcps/simplybookme.md) | Manage services, providers, and bookings on SimplyBook.me with AI agents. |
 | [Skyscanner](../mcps/skyscanner.md) | Search flights worldwide — compare prices by date, find cheapest days to fly and discover flight routes. |
 | [Sleep Cycle Calculator](../mcps/sleep-cycle-calculator.md) | Optimize your rest by finding the perfect wake-up times based on natural 90-minute sleep cycles. |
 | [Sleep Debt Calculator](../mcps/sleep-debt-calculator.md) | Quantify accumulated sleep deficit, predict recovery timelines, and optimize nap schedules. |
@@ -815,8 +823,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [TimezoneDB](../mcps/timezonedb.md) | Manage global time — audit timezones and offsets via AI. |
 | [Tingg Insights](../mcps/tingg-insights.md) | Analyze mobile payment and fintech data across African markets with insights that reveal transaction trends and user behavior. |
 | [tl;dv](../mcps/tldv.md) | Record, transcribe, and clip key moments from Google Meet and Zoom calls so your team never misses important meeting insights. |
+| [Todoist](../mcps/todoist.md) | Organize your personal and team tasks with the productivity app that millions trust to stay on top of everything that matters. |
 | [Todoist](../mcps/todoist-alternative.md) | Manage your Todoist tasks and projects — audit productivity via AI. |
-| [Todoist](../mcps/todoist.md) | Manage tasks, organize projects, and streamline your personal or team workflows natively with your AI agent. |
 | [Toggl Plan](../mcps/toggl-plan.md) | Manage your team's visual timelines, track project phases, and balance workloads securely via your AI agent. |
 | [Toggl Plan](../mcps/toggl-plan-1.md) | Manage your team's visual timelines, track project phases, and balance workloads securely via your AI agent. |
 | [Tome (AI Storytelling)](../mcps/tome-ai-storytelling.md) | Generate and manage AI-powered presentations via Tome — list workspaces, manage tomes, and add pages directly from any AI agent. |
@@ -882,14 +890,14 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [WordPress Media Uploader](../mcps/wordpress-media-uploader.md) | This MCP does exactly one thing: it downloads images from a URL and uploads them directly to your WordPress Media Library. Incredible for giving Claude the ability to generate and deploy blog cover images instantly. |
 | [WordPress Post Drafter](../mcps/wordpress-post-drafter.md) | This MCP does exactly one thing: it takes content generated by the AI and saves it directly to your WordPress as a Draft. Incredible for turning Claude into an automated SEO content engine. |
 | [Workable](../mcps/workable.md) | Recruit top talent with an ATS that posts to 200+ job boards, screens candidates with AI, and manages the entire hiring flow. |
-| [Workable](../mcps/workable-alternative.md) | Streamline recruitment via Workable — list job openings, manage candidate profiles, and track hiring stages directly from your AI agent. |
+| [Workable](../mcps/workable-alternative.md) | Recruit top talent with an ATS that posts to 200+ job boards, screens candidates with AI, and manages the entire hiring flow. |
 | [WorkAdventure](../mcps/workadventure.md) | Create virtual office spaces where remote teams can walk around, bump into colleagues, and collaborate spontaneously. |
 | [Workflow Orchestrator Prover](../mcps/task-planner.md) | AI agents build fragile pipelines that fail silently, ignore rate limits, and double-process events. This prover enforces distributed systems discipline: mandatory dead-letter queues (DLQ), exponential backoff, stateful idempotency tracking, and secure credentials. |
 | [Workload](../mcps/workload.md) | Build visual workflow automations that connect your favorite apps and eliminate repetitive manual tasks across your business. |
 | [Worktile](../mcps/worktile.md) | Collaborative project management and team communication platform — manage tasks, projects, and messages via AI. |
 | [Workvivo](../mcps/workvivo.md) | Manage social posts, employee profiles, and collaboration spaces on Workvivo — the employee experience platform. |
 | [World Time (Keyless)](../mcps/world-time-keyless.md) | Get precise current atomic time, UTC offsets, and DST states for any timezone worldwide — no API key required. |
-| [Wrike](../mcps/wrike.md) | Manage tasks, projects, and folders on Wrike — the most versatile work management platform for teams. |
+| [Wrike](../mcps/wrike.md) | Collaborative project management to manage tasks, projects, and team workflows with AI. |
 | [XML <-> JSON Converter](../mcps/xml-json-converter.md) | Parse legacy systems easily. Deterministically convert massive XML, SOAP, or RSS feeds into clean JSON (and back) without LLM hallucinations. |
 | [Yakunashi-Safety Gate](../mcps/yakunashi-safety-gate.md) | LLMs hallucinate confidently when context is missing. This tool enforces epistemic calibration: map required preconditions, audit information sufficiency, detect speculation (yakunashi), and trigger safe folding (Beta-Ori) when data is missing. |
 | [YAML/JSON Converter](../mcps/yamljson-converter.md) | Prevent DevOps YAML hallucination. Convert complex YAML files to JSON for safe AI processing, and back to perfect YAML. |

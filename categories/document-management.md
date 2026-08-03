@@ -8,6 +8,7 @@ Explore the open database of **document-management** Model Context Protocol (MCP
 | [Adobe Sign](../mcps/adobe-sign.md) | Automate e-signatures and document workflows via Adobe Acrobat Sign — manage agreements, track audit trails, and handle library templates directly from your AI agent. |
 | [Autenti](../mcps/autenti.md) | Sign documents digitally with legal-grade electronic signatures that comply with European eIDAS regulations. |
 | [Better Proposals](../mcps/better-proposals.md) | Create and manage professional proposals via Better Proposals — list proposals, contacts, and templates directly from any AI agent. |
+| [Bidsketch](../mcps/bidsketch.md) | Win more clients with beautiful proposals that track views, collect e-signatures, and accelerate your sales cycle. |
 | [Bidsketch](../mcps/bidsketch-alternative.md) | Win more clients with beautiful proposals that track views, collect e-signatures, and accelerate your sales cycle. |
 | [Bleez](../mcps/bleez.md) | Power your Brazilian e-commerce with a platform that integrates payments, inventory, and logistics for the local market. |
 | [CloudLex Legal](../mcps/cloudlex-legal.md) | Manage personal injury cases via CloudLex — cases, clients, documents, medical records, liens, tasks, and communications. |
@@ -23,7 +24,7 @@ Explore the open database of **document-management** Model Context Protocol (MCP
 | [eSignly Electronic Signature](../mcps/esignly-electronic-signature.md) | Equip your AI agent to manage e-signature documents, track templates, and monitor audit trails via the eSignly API. |
 | [Eversign (Cloud Electronic Signature)](../mcps/eversign-cloud-electronic-signature.md) | Manage electronic signatures via Eversign — list businesses, create documents, and handle templates directly from any AI agent. |
 | [Evolio](../mcps/evolio.md) | Transform your coaching practice with client tracking, session management, and progress analytics that help people grow. |
-| [Files.com](../mcps/filescom-alternative.md) | Securely manage Files.com storage, users, and permissions. List folders, move files, and automate workflows through natural language. |
+| [Files.com](../mcps/filescom-alternative.md) | Sync, share, and automate file workflows across teams with secure cloud storage that integrates with your existing tools. |
 | [FutureVault](../mcps/futurevault.md) | Manage digital vaults, track documents, and oversee folder structures via AI agents with FutureVault. |
 | [GovInfo (GPO Legislative Docs)](../mcps/govinfo-gpo-legislative-docs.md) | Access official US government documents, legislative bills, and federal registers directly from the GPO. |
 | [LEAP Legal](../mcps/leap-legal.md) | Manage law practice via LEAP Legal Software — matters, contacts, time tracking, bills, payments, tasks, documents, and calendar. |
@@ -34,7 +35,6 @@ Explore the open database of **document-management** Model Context Protocol (MCP
 | [Nutrient Workflow](../mcps/nutrient-workflow.md) | Build document workflows with PDF viewing, editing, annotation, and digital signatures embedded directly into your applications. |
 | [OneSpan](../mcps/onespan.md) | Automate e-signature workflows via OneSpan Sign — create transaction packages, upload documents, and manage signing statuses directly from any AI agent. |
 | [PandaDoc](../mcps/pandadoc.md) | Create, send, and track documents, proposals, and e-signatures via PandaDoc — manage the entire document lifecycle from any AI agent. |
-| [PandaDoc](../mcps/pandadoc-alternative-1.md) | Automate document workflows—create from templates, send for signature, and track status directly from your AI agent. |
 | [PDF Invoice Data Extractor](../mcps/pdf-invoice-data-extractor.md) | Extract raw text directly from digital PDF invoices entirely local. Keeps your sensitive accounting data air-gapped while letting the AI classify NIFs, suppliers, and totals. |
 | [Plone](../mcps/plone.md) | Manage Plone CMS content, users, and workflows directly from your AI agent—search, create, and update resources effortlessly. |
 | [Plone](../mcps/plone-alternative.md) | Manage Plone CMS content, users, and workflows directly from your AI agent—search, create, and update resources effortlessly. |

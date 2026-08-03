@@ -5,7 +5,7 @@ Explore the open database of **database** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Qdrant Payload Filter Builder](../mcps/qdrant-payload-filter-builder.md) | Convert MongoDB-style filters to valid Qdrant JSON payload structures. |
-| [Qdrant Payload Filter Builder Alternative](../mcps/qdrant-payload-filter-builder-alternative.md) | Convert MongoDB-style filters to valid Qdrant JSON payload structures. |
+| [Qdrant Payload Filter Builder](../mcps/qdrant-payload-filter-builder-alternative.md) | Convert MongoDB-style filters to valid Qdrant JSON payload structures. |
 
 
 ---

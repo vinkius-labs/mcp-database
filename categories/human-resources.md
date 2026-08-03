@@ -7,7 +7,7 @@ Explore the open database of **human-resources** Model Context Protocol (MCP) se
 | [AcademyOcean](../mcps/academyocean.md) | LMS for smart corporate training — manage learners, courses, and training progress via AI. |
 | [Adzuna](../mcps/adzuna-alternative.md) | Search millions of job advertisements and access real-time labor market analytics, salary trends, and regional vacancy data. |
 | [Argyle](../mcps/argyle.md) | Verify employment and income with Argyle — track users, employments, and payouts via AI. |
-| [Ashby](../mcps/ashby.md) | Manage your recruiting pipeline with Ashby — track jobs, candidates, and applications via AI. |
+| [Ashby](../mcps/ashby.md) | Hire top talent faster with an all-in-one recruiting platform that combines ATS, scheduling, and hiring analytics. |
 | [Avionte](../mcps/avionte.md) | Manage staffing and recruiting workflows via Avionte — query talent profiles, work history, company details, and department data directly from your AI agent. |
 | [Beeline](../mcps/beeline.md) | Manage your external workforce via Beeline VMS — list assignments, requisitions, and timesheets directly from any AI agent. |
 | [Beisen (iTalentX)](../mcps/beisen-italentx.md) | Comprehensive HR cloud platform — manage employees, attendance, and recruitment via AI. |
@@ -35,10 +35,10 @@ Explore the open database of **human-resources** Model Context Protocol (MCP) se
 | [freee](../mcps/freee.md) | Manage Japanese accounting and business via freee — track deals and invoices, handle partners and expenses, and audit tax codes directly from any AI agent. |
 | [Freshteam](../mcps/freshteam.md) | Manage HR operations, track job applicants, and oversee employee records via AI agents with Freshteam. |
 | [Gem](../mcps/gem.md) | Manage recruitment CRM pipelines, track candidates, and oversee outreach via AI agents with Gem. |
-| [Giftpack](../mcps/giftpack.md) | Manage AI-curated corporate gifting, track campaigns, and oversee recipients via AI agents with Giftpack AI. |
+| [Giftpack](../mcps/giftpack.md) | Send corporate gifts at scale with AI-curated selections that match recipient preferences and company budget guidelines. |
 | [GlassFrog](../mcps/glassfrog.md) | Manage Holacracy circles, roles, and tactical projects via AI agents with GlassFrog. |
 | [InfoVetted](../mcps/infovetted.md) | Screen and verify candidate backgrounds with employment checks, education verification, and criminal record searches. |
-| [Innform](../mcps/innform.md) | Manage learners, courses, and results via Innform LMS API. |
+| [Innform](../mcps/innform.md) | Train your team with an LMS that creates courses from your content, tracks completion, and gamifies the learning experience. |
 | [iSpring Learn](../mcps/ispring-learn.md) | Train employees with a corporate LMS that delivers SCORM courses, tracks certifications, and generates compliance reports. |
 | [Jibble](../mcps/jibble.md) | Track time, attendance, and projects via Jibble API. |
 | [KeyPay](../mcps/keypay.md) | Manage payroll, employees, and pay runs via the Employment Hero Payroll (KeyPay) API. |

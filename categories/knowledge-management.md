@@ -42,7 +42,7 @@ Explore the open database of **knowledge-management** Model Context Protocol (MC
 | [Harry Potter API](../mcps/harry-potter-api.md) | Explore the wizarding world — search characters, students, staff, houses and spells from the Harry Potter universe. |
 | [Harvard Art Museums](../mcps/harvard-art-museums.md) | Search museum collections — audit art objects, artists, and exhibitions via AI. |
 | [Harvard Art Museums](../mcps/harvard-art-museums-alternative.md) | Explore the Harvard Art Museums' vast collection — search over 250,000 objects, research artists, and browse exhibitions directly via AI. |
-| [Hudu](../mcps/hudu.md) | Manage IT documentation, assets, and passwords via Hudu API. |
+| [Hudu](../mcps/hudu.md) | Document your IT infrastructure with password vaults, knowledge bases, and asset tracking built for managed service providers. |
 | [Hyrule Compendium](../mcps/hyrule-compendium.md) | Access the comprehensive Breath of the Wild and Tears of the Kingdom compendium — search creatures, monsters, materials, and equipment directly from your AI agent. |
 | [Internet Archive Metadata](../mcps/internet-archive-metadata.md) | Get detailed metadata, files, reviews, and stats for any Internet Archive item. |
 | [Internet Archive Search](../mcps/internet-archive-search.md) | Search 40M+ books, videos, audio, software across the Internet Archive. |

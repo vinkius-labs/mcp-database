@@ -14,10 +14,10 @@ The Agent Persona Consistency Scanner MCP server provides a precise engine for a
 
 
 ## Available Tools (4)
-- **analyze_pronouns**: Analyze the ratio of 1st person to 3rd person pronouns in text
-- **calculate_formality**: Calculate the formality score based on contraction count
 - **check_vocabulary**: Check for forbidden words in the provided text
+- **calculate_formality**: Calculate the formality score based on contraction count
 - **scan_persona**: Perform a comprehensive persona drift analysis
+- **analyze_pronouns**: Analyze the ratio of 1st person to 3rd person pronouns in text
 
 
 ## 💬 Prompt Examples

@@ -5,7 +5,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [13th Month Salary Provision Calculator](../mcps/13th-month-salary-provision-calculator.md) | Calculate monthly 13th-month salary accruals, employer taxes, and cumulative payroll liabilities. |
-| [Appliance Energy Calculator](../mcps/appliance-energy-calculator.md) | Calculate electricity running costs and the economic benefits of upgrading to energy-efficient appliances. |
+| [Appliance Energy Calculator](../mcps/appliance-energy-calculator.md) | Calculate electricity consumption in kWh and monthly costs for appliances. |
 | [ARR Bridge Calculator](../mcps/arr-bridge-calculator.md) | Quantify and visualize Annual Recurring Revenue (ARR) movements by detailing the specific drivers of revenue expansion and contraction over time. |
 | [Asset Correlation Matrix](../mcps/asset-correlation-matrix.md) | Calculate Pearson correlation between assets to identify diversification risks and hedging opportunities. |
 | [Balance Transfer Evaluator](../mcps/balance-transfer-evaluator.md) | Compare the total cost of credit card debt transfers against staying on your current plan. |
@@ -191,7 +191,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Standby Energy Waste Calculator](../mcps/standby-energy-waste-calculator.md) | Calculate the energy waste, financial cost, and carbon footprint of electronics in standby mode. |
 | [Startup Financial Model](../mcps/startup-financial-model.md) | Generate 12, 24, or 36-month financial projections including P&L, Cash Flow, and Break-even analysis. |
 | [Startup Health Score](../mcps/startup-health-score.md) | Quantify startup operational health (0-100) across Finance, Product, Growth, Team, and Market dimensions using stage-specific benchmarks. |
-| [Startup Valuation Engine](../mcps/startup-valuation-engine.md) | Calculate pre-money startup valuations using Berkus, Scorecard, Risk Factor Sum, and DCF methods. |
+| [Startup Valuation Engine](../mcps/startup-valuation-engine.md) | Calculate pre-money startup valuations using Berkus, Scorecard, Risk Factor Sum</strong>, and DCF methods. |
 | [Stock Profit/Loss Calculator](../mcps/stock-profitloss-calculator.md) | Calculate ROI, tax liabilities, and risk metrics for stock trades and options strategies. |
 | [Stock Valuation DCF](../mcps/stock-valuation-dcf.md) | Estimate intrinsic stock value using a multi-stage Discounted Cash Flow (DCF) model with sensitivity analysis. |
 | [Streaming Cost Per Hour Calculator](../mcps/streaming-cost-per-hour-calculator.md) | Calculate the real value of streaming services by determining cost per hour of entertainment. |
@@ -216,6 +216,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [US Benefits Cost Calculator](../mcps/us-benefits-cost-calculator.md) | Calculate the true total employer cost of US employees, including insurance, taxes, and PTO. |
 | [US Building Permit Fee Estimator](../mcps/us-building-permit-fee-estimator.md) | Estimate building permit, plan check, and inspection fees for major US cities. |
 | [US Capital Gains Tax Calculator](../mcps/us-capital-gains-tax-calculator.md) | Calculate US capital gains tax liability based on holding periods and taxable income. |
+| [US Construction Cost Estimator](../mcps/us-construction-cost-estimator.md) | Calculate construction costs per square foot across major US cities using regional indices and structural multipliers. |
 | [US Corporate Tax Calculator](../mcps/us-corporate-tax-calculator.md) | Estimate US federal and state corporate income taxes, providing comparative analysis between C-Corp, S-Corp, and LLC structures. |
 | [US Depreciation Calculator](../mcps/us-depreciation-calculator.md) | Calculate US asset depreciation using MACRS, Section 179, and Bonus Depreciation rules. |
 | [US GAAP & IFRS 15 Revenue Recognition](../mcps/us-gaap-ifrs-15-revenue-recognition.md) | Automate ASC 606 and IFRS 15 revenue recognition by identifying obligations, allocating prices, and calculating progress. |

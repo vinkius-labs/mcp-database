@@ -8,7 +8,7 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 | [Combat Balance Checker](../mcps/combat-balance-checker.md) | Quantify combat outcomes and attribute influence through large-scale simulations. |
 | [Crafting Cost Calculator](../mcps/crafting-cost-calculator.md) | Analyze production costs, profit margins, and optimal ingredient sourcing strategies. |
 | [D&D Character Stat Roller](../mcps/dd-character-stat-roller.md) | Statistical simulation engine for evaluating D&D attribute generation methods. |
-| [Dice Probability Calculator](../mcps/dice-probability-calculator.md) | Calculate exact and simulated probabilities for any dice combination, including sums, face frequencies, and drop mechanics. |
+| [Dice Probability Calculator](../mcps/dice-probability-calculator.md) | Calculate full probability distributions, statistical metrics, and success thresholds for any dice notation. |
 | [Drop Rate Calculator](../mcps/drop-rate-calculator.md) | Calculate item drop probabilities, pity mechanics, and expected resource usage for loot-based systems. |
 | [Encounter Difficulty Calculator](../mcps/encounter-difficulty-calculator.md) | Calculate D&D 5e/PF2e combat difficulty, lethality risk, and encounter adjustments. |
 | [FPS Hardware Bottleneck Estimator](../mcps/fps-hardware-bottleneck-estimator.md) | Predict gaming performance and identify hardware bottlenecks for specific games and resolutions. |

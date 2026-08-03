@@ -20,8 +20,6 @@ Explore the open database of **brain-trust** Model Context Protocol (MCP) server
 | [FRED GeoFRED — Regional Economic Data](../mcps/fred-geofred-regional-economic-data.md) | Access regional economic data for every U.S. state, county, metro area, and Federal Reserve district — unemployment by state, median income by MSA, GDP by county, all from the official GeoFRED database. |
 | [FRED Releases — Economic Calendar](../mcps/fred-releases-economic-calendar.md) | Track every U.S. economic data release: Employment Situation, GDP Advance, CPI, Federal Funds Rate, and hundreds more — with release schedules, historical dates, and the complete series within each release. |
 | [FRED Tags & Sources — Data Discovery](../mcps/fred-tags-sources-data-discovery.md) | Discover FRED series through intelligent tagging: search tags like 'gdp', 'inflation', 'monthly', combine multiple tags to find exactly the right series, and explore all 107 official data sources from BLS to the Census Bureau. |
-| [Glean](../mcps/glean.md) | Empower enterprise search via Glean — search across all SaaS apps, retrieve AI answers, manage custom indexing, and handle chat directly from any AI agent. |
-| [Gong](../mcps/gong.md) | Unlock revenue intelligence by analyzing calls, transcripts, and customer interactions. |
 | [Guru](../mcps/guru.md) | Manage enterprise knowledge cards, track collections, and search your wiki via AI agents with Guru. |
 | [Honeycomb](../mcps/honeycomb.md) | Automate observability via Honeycomb — manage datasets, queries, and markers directly from any AI agent. |
 | [Integrate.io (ETL & Data Integration)](../mcps/integrateio-etl-data-integration.md) | Manage data pipelines via Integrate.io — list pipelines, monitor job runs, and audit data transformations. |

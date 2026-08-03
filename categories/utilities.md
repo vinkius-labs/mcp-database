@@ -34,7 +34,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Geographic Distance Calculator](../mcps/geographic-distance-calculator.md) | Calculate precise distances, bearings, and waypoints using Haversine, Vincenty, and Euclidean models. |
 | [Groove Quantize Calculator](../mcps/groove-quantize-calculator.md) | Calculate precise millisecond-based quantization grids, swing offsets, and latency compensation for DAWs. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
-| [JSONL Strict Parser Alternative](../mcps/jsonl-strict-parser-alternative.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
+| [JSONL Strict Parser](../mcps/jsonl-strict-parser-alternative.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [Markdown to Plain Text Extractor](../mcps/markdown-to-plain-text-extractor.md) | Strips Markdown syntax and measures content reduction. |
 | [Markdown to Plain Text Extractor Alternative](../mcps/markdown-to-plain-text-extractor-alternative.md) | Strips Markdown syntax and measures content reduction. |
 | [Menstrual Cycle Calculator](../mcps/menstrual-cycle-calculator.md) | Track menstrual cycle phases and identify fertile windows using historical period data. |

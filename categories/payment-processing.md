@@ -5,7 +5,7 @@ Explore the open database of **payment-processing** Model Context Protocol (MCP)
 | Tool Name | Description |
 |-----------|-------------|
 | [Copperx](../mcps/copperx.md) | Equip your AI agent to manage crypto payments, invoices, and subscriptions directly with Copperx. |
-| [Donately](../mcps/donately.md) | Equip your AI agent to manage donations, track donors, and monitor fundraising campaigns via the Donately API. |
+| [Donately](../mcps/donately.md) | Manage Donately fundraising and donor data using AI agents. |
 | [Donorbox](../mcps/donorbox.md) | Equip your AI agent to manage donations, track recurring plans, and monitor fundraising campaigns via the Donorbox API. |
 | [Duffel](../mcps/duffel.md) | Search and book flights and stays directly through AI. Access real-time offers, manage orders, and explore travel metadata. |
 | [GiveForms](../mcps/giveforms.md) | Retrieve donation records and oversee fundraising data via AI agents with GiveForms. |

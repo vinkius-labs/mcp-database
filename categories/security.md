@@ -6,7 +6,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [4399 Open Platform](../mcps/4399-open-platform.md) | Manage 4399 Open Platform game distribution — validate logins, query orders, and handle leaderboards directly from any AI agent. |
 | [Base64 Charset Normalizer](../mcps/base64-charset-normalizer.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |
-| [Base64 Charset Normalizer Alternative](../mcps/base64-charset-normalizer-alternative.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |
+| [Base64 Charset Normalizer](../mcps/base64-charset-normalizer-alternative.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |
 | [Bcrypt Hash Engine](../mcps/bcrypt-hash-engine.md) | Hash and verify passwords with the industry-standard bcrypt algorithm. Two tools in one: hash with configurable salt rounds, and verify against stored hashes. Pure JS — zero compilation. |
 | [CI/CD Pipeline Config Validator](../mcps/cicd-pipeline-config-validator.md) | Deterministic validator for GitHub Actions and GitLab CI configuration files. |
 | [Crypto Hash Engine](../mcps/crypto-hash-engine.md) | Sign API requests and Webhooks deterministically. Instantly generate mathematical HMAC, SHA-256, or MD5 hashes without AI hallucinations. |
@@ -32,7 +32,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Prompt Injection Shield Prover](../mcps/prompt-injection-shield-prover.md) | LLMs cannot distinguish system instructions from user input. This tool forces 5-layer injection defense analysis: intent isolation, privilege containment, indirect vector scanning, output sanitization, and scope enforcement. OWASP LLM Top 10 #1 compliance. |
 | [Prompt System Override Resistance Scorer](../mcps/prompt-system-override-resistance-scorer.md) | Quantify the structural integrity and resistance of LLM system prompts against manipulation. |
 | [Regex ReDoS Vulnerability Detector](../mcps/regex-redos-vulnerability-detector.md) | Detects catastrophic backtracking and ReDoS vulnerabilities in regular expression patterns using deterministic structural analysis. |
-| [Regex ReDoS Vulnerability Detector Alternative](../mcps/regex-redos-vulnerability-detector-alternative.md) | Detects catastrophic backtracking and ReDoS vulnerabilities in regular expression patterns using deterministic structural analysis. |
+| [Regex ReDoS Vulnerability Detector](../mcps/regex-redos-vulnerability-detector-alternative.md) | Detects catastrophic backtracking and ReDoS vulnerabilities in regular expression patterns using deterministic structural analysis. |
 | [Resource Usage Leak Detector](../mcps/resource-usage-leak-detector.md) | Monitor agent resource consumption to detect file descriptor or connection leaks. |
 | [SBOM Dependency Risk Scorer](../mcps/sbom-dependency-risk-scorer.md) | Analyze SBOM files to quantify supply chain risk through dependency structure, package staleness, and vulnerability exposure. |
 | [SQL Migration Safety Analyzer](../mcps/sql-migration-safety-analyzer.md) | Validate SQL migrations for structural risks, rollback integrity, and unbounded deletions. |
@@ -40,7 +40,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Twitter Mention Spam and Cluster Checker](../mcps/twitter-mention-spam-and-cluster-checker.md) | Detects @-mention clustering and structural spam patterns to prevent shadowbans. |
 | [Unicode Normalization and Homoglyph Detector](../mcps/unicode-normalization-and-homoglyph-detector.md) | Detects malicious Unicode homoglyph attacks and identifies invisible characters in strings. |
 | [Webhook HMAC Signature Validator](../mcps/webhook-hmac-signature-validator.md) | Verify the authenticity of incoming webhook payloads by validating their HMAC signatures. |
-| [Webhook HMAC Signature Validator Alternative](../mcps/webhook-hmac-signature-validator-alternative.md) | Verify the authenticity of incoming webhook payloads by validating their HMAC signatures. |
+| [Webhook HMAC Signature Validator](../mcps/webhook-hmac-signature-validator-alternative.md) | Verify the authenticity of incoming webhook payloads by validating their HMAC signatures. |
 | [Webhook Payload Signature Validator](../mcps/webhook-payload-signature-validator.md) | Validate inbound webhook authenticity using HMAC signature verification and timestamp freshness checks. |
 
 

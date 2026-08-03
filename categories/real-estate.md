@@ -16,7 +16,7 @@ Explore the open database of **real-estate** Model Context Protocol (MCP) server
 | [Estated](../mcps/estated.md) | Access comprehensive US property data including ownership, assessment, and structural details directly from any AI agent. |
 | [Evernest Property Management](../mcps/evernest-property-management.md) | Equip your AI agent to manage rental properties, track tenants, and monitor maintenance via the Evernest API. |
 | [Floor Area Ratio Calculator](../mcps/floor-area-ratio-calculator.md) | Calculate maximum buildable footprint, total floor area, and green space compliance for any plot size in seconds. |
-| [Follow Up Boss](../mcps/follow-up-boss.md) | Manage real estate leads, track deals, and oversee follow-up tasks via AI agents with Follow Up Boss. |
+| [Follow Up Boss](../mcps/follow-up-boss.md) | Convert real estate leads into closings with a CRM that routes inquiries, automates follow-ups, and tracks agent performance. |
 | [Follow Up Boss](../mcps/follow-up-boss-alternative.md) | Convert real estate leads into closings with a CRM that routes inquiries, automates follow-ups, and tracks agent performance. |
 | [Green Street](../mcps/green-street.md) | Manage commercial real estate & REIT data via Green Street — list companies, retrieve market analytics, and track transaction summaries directly via AI. |
 | [Home River Group](../mcps/home-river-group.md) | Connect and manage Home River Group properties, units, and residents via Entrata API. |
@@ -45,7 +45,6 @@ Explore the open database of **real-estate** Model Context Protocol (MCP) server
 | [Shovels](../mcps/shovels.md) | Construction and permit data platform — search contractors and building permits via AI. |
 | [SimplyRETS](../mcps/simplyrets.md) | Access real-time MLS real estate listings, agent data, and property analytics directly through your AI agent. |
 | [U.S. Census Housing — Home Values, Rent & Real Estate Data](../mcps/us-census-housing-home-values-rent-real-estate-data.md) | Access the definitive source for U.S. residential real estate data. Extract median home values, median gross rent, ownership vs. renting rates, and vacancy data at the state and county level. Create full socioeconomic profiles. |
-| [US Construction Cost Estimator](../mcps/us-construction-cost-estimator.md) | Calculate construction costs per square foot across major US cities using regional indices and structural multipliers. |
 | [Zillow](../mcps/zillow-alternative.md) | Access real estate data, Zestimates, and property details directly from Zillow — search addresses, get valuations, and analyze market trends. |
 | [Zoopla](../mcps/zoopla.md) | Access real-time UK property market data — search listings, analyze sold prices, and explore local area statistics directly through your AI agent. |
 

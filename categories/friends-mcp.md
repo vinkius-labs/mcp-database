@@ -5,8 +5,9 @@ Explore the open database of **friends-mcp** Model Context Protocol (MCP) server
 | Tool Name | Description |
 |-----------|-------------|
 | [Alpic](../mcps/alpic.md) | AI MCP infrastructure: deploy, manage, and monitor MCP servers programmatically via agents. |
-| [Apify](../mcps/apify-alternative.md) | Manage your cloud automation — audit actors, tasks, and datasets via AI. |
+| [Apify](../mcps/apify-alternative.md) | Run web scraping actors, collect structured data, and manage storage datasets for large-scale data extraction projects. |
 | [Apify](../mcps/apify-extended.md) | Run web scraping actors, collect structured data, and manage storage datasets for large-scale data extraction projects. |
+| [Arize AI](../mcps/arize-ai.md) | Monitor ML model performance, detect data drift, and troubleshoot prediction quality with real-time observability dashboards. |
 | [Arize AI](../mcps/arize-ai-alternative.md) | Monitor ML model performance, detect data drift, and troubleshoot prediction quality with real-time observability dashboards. |
 | [Browserbase](../mcps/browserbase.md) | Cloud browser infrastructure for AI agents — create, control, and manage headless Chromium sessions via CDP for automated web interaction. |
 | [Chainlit](../mcps/chainlit.md) | Empower your AI agents to audit chat threads, analyze model steps, and track LLM observability metrics securely. |
@@ -15,8 +16,8 @@ Explore the open database of **friends-mcp** Model Context Protocol (MCP) server
 | [Context7](../mcps/context7.md) | Empower AI agents via Context7 — pull up-to-date documentation and code examples for any library or framework directly into your workspace. |
 | [Crawlbase](../mcps/crawlbase.md) | Scrape and crawl via Crawlbase — perform HTML extraction, handle JS-rendered pages, bypass CAPTCHAs, and scrape social profiles directly from any AI agent. |
 | [Firecrawl](../mcps/firecrawl.md) | Turn any website into clean, LLM-ready Markdown with a single API call — scrape, crawl, search, and map the entire web for your AI agent. |
+| [Firecrawl](../mcps/firecrawl-alternative.md) | Crawl and scrape entire websites into clean LLM-ready markdown with a single API call that handles JavaScript rendering. |
 | [Firecrawl](../mcps/firecrawl-extended.md) | Crawl and scrape entire websites into clean LLM-ready markdown with a single API call that handles JavaScript rendering. |
-| [Firecrawl](../mcps/firecrawl-alternative.md) | Scrape and crawl the web — audit website content and maps via AI. |
 | [FlowiseAI](../mcps/flowiseai.md) | Build LLM orchestration flows visually with a drag-and-drop interface for creating AI chatbots, agents, and RAG pipelines. |
 | [Glama](../mcps/glama.md) | Connect your AI agent to the Glama directory. Discover MCP servers dynamically, analyze attributes, and proxy external intelligence networks through a unified gateway natively. |
 | [Haystack (deepset Cloud)](../mcps/haystack-deepset-cloud.md) | Build and manage AI-powered search and RAG pipelines via deepset Cloud — search documents, run pipelines, and manage workspaces. |

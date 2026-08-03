@@ -7,7 +7,6 @@ Explore the open database of **erp-operations** Model Context Protocol (MCP) ser
 | [Accela](../mcps/accela.md) | Manage civic services, permits, and inspections via Accela — search records, schedule inspections, and manage land parcels directly from any AI agent. |
 | [AccuLynx](../mcps/acculynx.md) | Business management for roofing contractors — manage leads, jobs, and financial data via AI. |
 | [Alegra](../mcps/alegra.md) | Business management and e-invoicing — manage invoices, inventory, and contacts via AI. |
-| [Alegra](../mcps/alegra-alternative.md) | Automate cloud accounting via Alegra — issue invoices, manage contacts, track inventory, and monitor bank accounts from any AI agent. |
 | [AlisQI](../mcps/alisqi.md) | Quality management orchestration — manage analysis sets, results, and QMS data via AI. |
 | [Anvyl](../mcps/anvyl.md) | Streamline your supply chain with Anvyl — manage purchase orders, track shipments, and coordinate with suppliers via AI. |
 | [ApparelMagic](../mcps/apparelmagic.md) | ERP, PLM, and CRM for the apparel industry — manage styles, orders, inventory, and shipments via AI. |
@@ -62,8 +61,8 @@ Explore the open database of **erp-operations** Model Context Protocol (MCP) ser
 | [Guesty](../mcps/guesty.md) | Automate vacation rental management via Guesty — manage reservations, listings, guests, and calendars directly from any AI agent. |
 | [Guidewire ClaimCenter](../mcps/guidewire-claimcenter.md) | Manage insurance claims via ClaimCenter — track claim status, monitor exposures, and manage activities directly from any AI agent. |
 | [HCSS](../mcps/hcss.md) | Automate heavy construction management via HCSS — manage jobs, timecards, estimates, and equipment telematics directly from any AI agent. |
+| [Holded](../mcps/holded.md) | Run your business in Spain and Latin America with invoicing, accounting, CRM, and inventory that speaks your language natively. |
 | [Holded](../mcps/holded-alternative.md) | Run your business in Spain and Latin America with invoicing, accounting, CRM, and inventory that speaks your language natively. |
-| [Holded](../mcps/holded.md) | Automate business management via Holded — manage invoices, contacts, and projects directly from any AI agent. |
 | [Hostfully](../mcps/hostfully.md) | Manage vacation rental properties, leads, and bookings via Hostfully API. |
 | [Housecall Pro](../mcps/housecall-pro.md) | Manage home service jobs, customers, and invoices via Housecall Pro API. |
 | [HQBeds](../mcps/hqbeds.md) | Manage hostel and accommodation bookings with channel distribution, guest communication, and occupancy tracking in one system. |
@@ -90,8 +89,8 @@ Explore the open database of **erp-operations** Model Context Protocol (MCP) ser
 | [MOBIDI](../mcps/mobidi.md) | Manage your mobile advertising campaigns with real-time bidding, audience targeting, and performance analytics for app installs. |
 | [MoeGo](../mcps/moego.md) | Manage your pet care business via MoeGo — track appointments, pets, and customers directly from your AI agent. |
 | [Moloni (Cloud Invoicing & Fiscal Management)](../mcps/moloni-cloud-invoicing-fiscal-management.md) | Manage certified invoicing via Moloni — track customers by VAT/NIF, audit invoices, and monitor stock levels. |
+| [Moneybird](../mcps/moneybird.md) | Handle Dutch and European accounting with automated invoicing, bank reconciliation, and tax-ready financial reports. |
 | [Moneybird](../mcps/moneybird-alternative.md) | Handle Dutch and European accounting with automated invoicing, bank reconciliation, and tax-ready financial reports. |
-| [Moneybird](../mcps/moneybird.md) | Manage your accounting via Moneybird — list invoices, track contacts, and oversee estimates directly from your AI agent. |
 | [MPU-Manager](../mcps/mpu-manager.md) | Organize your media production workflow with asset tracking, schedule coordination, and crew management for broadcast teams. |
 | [MRPeasy](../mcps/mrpeasy.md) | Manage manufacturing and inventory via MRPeasy — track customer orders, MOs, and stock items directly from your AI agent. |
 | [MYOB](../mcps/myob.md) | Automate accounting and sales management via MYOB — list GL accounts, journal transactions, invoices, and customer payments directly from any AI agent. |
@@ -131,6 +130,7 @@ Explore the open database of **erp-operations** Model Context Protocol (MCP) ser
 | [YoneTeam](../mcps/yoneteam.md) | Manage your Turkish business operations with project tracking, task management, and team collaboration designed for local teams. |
 | [Zenoti](../mcps/zenoti.md) | Manage guests, appointments, therapists, invoices, memberships, and gift cards for your Zenoti-powered spa or salon enterprise through natural conversation. |
 | [Zoho Books](../mcps/zoho-books.md) | Manage invoices, estimates, and contacts via the Zoho Books API. |
+| [Zoho Inventory](../mcps/zoho-inventory.md) | Manage inventory, orders, and contacts on Zoho Inventory with AI agents. |
 
 
 ---

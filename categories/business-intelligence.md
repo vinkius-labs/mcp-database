@@ -9,7 +9,7 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | [AskNicely](../mcps/asknicely.md) | Manage customer experience and NPS surveys with AskNicely — track responses and audit sentiment via AI. |
 | [DecileHub](../mcps/decilehub.md) | Segment your customers by value and behavior with predictive analytics that reveal your most profitable audience segments. |
 | [Digital Turbine](../mcps/digital-turbine.md) | Equip your AI agent to manage mobile growth campaigns, track app monetization, and monitor performance via the Digital Turbine API. |
-| [DISCO](../mcps/disco.md) | Equip your AI agent to manage legal matters, track documents, and monitor review teams via the DISCO API. |
+| [DISCO](../mcps/disco.md) | Query your DISCO eDiscovery datasets, data-usage changes, and review metrics directly from any AI agent via the official DISCO API. |
 | [Growth Accounting Framework](../mcps/growth-accounting-framework.md) | Analyze user movement, retention patterns, and growth efficiency using the Growth Accounting Framework. |
 | [Mautic](../mcps/mautic.md) | Open-source marketing automation via Mautic — manage contacts, campaigns, and emails. |
 | [McLeod Software](../mcps/mcleod-software.md) | Transportation management via McLeod Software — manage orders, dispatches, and carriers. |

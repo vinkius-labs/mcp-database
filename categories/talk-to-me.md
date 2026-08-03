@@ -9,7 +9,6 @@ Explore the open database of **talk-to-me** Model Context Protocol (MCP) servers
 | [Bird (Omnichannel Communication)](../mcps/bird-omnichannel-communication.md) | Manage omnichannel communication via Bird (MessageBird) — send SMS, WhatsApp messages, and track delivery logs. |
 | [Chuanglan 253](../mcps/chuanglan-253-1.md) | Ultra-high volume SMS & 1-click login API — send verification codes, notifications, and bulk messages globally via Chuanglan 253. |
 | [Chuanglan 253 / 创蓝](../mcps/chuanglan-253.md) | Leading cloud communication and KYC platform in China — send ultra-high volume SMS and verify user identities via AI. |
-| [Clickatell](../mcps/clickatell.md) | Manage mobile messaging via Clickatell — send SMS, track delivery status, monitor balance, and handle inbound rules directly from any AI agent. |
 | [ClickSend](../mcps/clicksend.md) | Manage SMS and multi-channel messaging via ClickSend — send messages, track history, and monitor inbound SMS directly from any AI agent. |
 | [Discord](../mcps/discord.md) | Manage communities via Discord — list server channels and members, send and edit messages, and handle channel moderation directly from any AI agent. |
 | [Discord](../mcps/discord-alternative.md) | Manage Discord servers, post messages, organize channels, and moderate communities with full bot-level API access. |
@@ -17,7 +16,7 @@ Explore the open database of **talk-to-me** Model Context Protocol (MCP) servers
 | [Discord Webhook Notifier](../mcps/discord-webhook-notifier.md) | This MCP does exactly one thing: it sends messages to your Discord channels. That's its only function, and nothing else. Zero friction, incredible for giving your AI agents a voice. |
 | [Gupshup Messaging](../mcps/gupshup-messaging.md) | Send WhatsApp messages, templates, media, and reactions via Gupshup API. |
 | [Infobip (Omnichannel Communications)](../mcps/infobip-omnichannel-communications.md) | Send SMS, WhatsApp, and Email via Infobip — manage omnichannel messages and customer profiles in People CDP. |
-| [Intercom](../mcps/intercom.md) | Equip your AI agent with direct access to Intercom — manage conversations, search contacts, and track customer data without opening the Intercom inbox. |
+| [Intercom](../mcps/intercom.md) | Connect with customers through AI-powered chat, targeted messages, and product tours that drive engagement and reduce churn. |
 | [Intercom](../mcps/intercom-alternative.md) | Connect with customers through AI-powered chat, targeted messages, and product tours that drive engagement and reduce churn. |
 | [Mattermost](../mcps/mattermost.md) | Collaborate securely with an open-source messaging platform that gives your team full control over data and deployment. |
 | [Mattermost (Secure Team Collaboration)](../mcps/mattermost-secure-team-collaboration.md) | Manage team collaboration via Mattermost — send messages, search channels, and audit team activities. |
@@ -38,7 +37,6 @@ Explore the open database of **talk-to-me** Model Context Protocol (MCP) servers
 | [Twilio SMS Sender](../mcps/twilio-sms-sender.md) | This MCP does exactly one thing: it sends raw SMS messages using Twilio. That's its only function, and nothing else. Incredible for giving your AI agents out-of-band alerting capabilities. |
 | [Vonage](../mcps/vonage.md) | Send SMS, WhatsApp, and Viber messages, and manage virtual numbers and 2FA via Vonage communications platform. |
 | [Vonage](../mcps/vonage-alternative.md) | Manage your Vonage communications — send SMS and audit account data via AI. |
-| [Wati](../mcps/wati.md) | Send WhatsApp template and session messages, and manage contacts on Wati — the leading WhatsApp Business API solution. |
 | [WhatsApp Business](../mcps/whatsapp-business.md) | Send text, media, and interactive messages on WhatsApp — the world's most popular messaging platform. |
 | [WhatsApp Chat Export Parser](../mcps/whatsapp-chat-export-parser.md) | Turn messy WhatsApp chat exports into clean, structured JSON instantly. Let your AI search years of conversations, find lost addresses, and summarize long threads local. |
 | [Zoom](../mcps/zoom.md) | Manage video meetings, webinars, and users on Zoom — the world's leading collaboration and communication platform. |

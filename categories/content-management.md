@@ -8,7 +8,6 @@ Explore the open database of **content-management** Model Context Protocol (MCP)
 | [Artsy](../mcps/artsy.md) | Global art database — search artists, artworks, and shows via AI. |
 | [Cadmium Harvester](../mcps/cadmium-harvester.md) | Manage educational event content via Cadmium — track presentations, speakers, and assets directly from any AI agent. |
 | [Contentstack](../mcps/contentstack-1.md) | Manage headless CMS via Contentstack — list and create entries, audit content types, handle media assets, and publish to environments directly from any AI agent. |
-| [Feedly](../mcps/feedly.md) | Manage your news aggregation via Feedly — list collections, read streams, and search for feeds directly through your AI agent. |
 | [Kavita (eBook/Manga)](../mcps/kavita-ebookmanga.md) | Manage your Kavita media server—scan libraries, check API status, and authenticate sessions directly from your AI agent. |
 | [Marvel Comics](../mcps/marvel-comics.md) | Explore the Marvel universe — search characters, comics, series, events and creators with full metadata from any AI agent. |
 | [MediaSilo](../mcps/mediasilo.md) | Video collaboration and asset management via MediaSilo — manage projects, assets, and Quicklinks. |

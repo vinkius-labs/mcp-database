@@ -16,11 +16,11 @@ This MCP server provides deep insights into prompt efficiency by calculating the
 
 
 ## Available Tools (3)
-- **classify_prompt_type**: Determines if a provided prompt string should be classified as Zero-Shot, Few-Shot, or Multi-Shot based on the presence of demonstrations
 - **audit_demarcation_usage**: g., "Example:", "Input:") are present and how often they occur.
 
 Provides a detailed census of which specific anchor tokens are being used to structure the prompt
 - **calculate_composition_metrics**: Calculates the character weight and ratio between instruction text and example text
+- **classify_prompt_type**: Determines if a provided prompt string should be classified as Zero-Shot, Few-Shot, or Multi-Shot based on the presence of demonstrations
 
 
 ## 💬 Prompt Examples
