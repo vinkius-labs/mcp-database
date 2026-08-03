@@ -41,14 +41,14 @@ Connect your **Bureau24 (bureau24.fr)** virtual secretary account to any AI agen
 
 Get account information
 - **get_secretary_status**: Get your current secretary status
-- **get_message**: Get details of a specific message
-- **list_calls**: List recent calls received by bureau24.fr
 - **list_contacts**: List your address book contacts
 - **list_instructions**: List secretary handling instructions
 - **list_messages**: List messages from your virtual secretary
 - **update_secretary_status**: g., Available, In a Meeting, On Vacation) and provides a note for the secretary.
 
 Update your availability status
+- **get_message**: Get details of a specific message
+- **list_calls**: List recent calls received by bureau24.fr
 
 
 ## 💬 Prompt Examples

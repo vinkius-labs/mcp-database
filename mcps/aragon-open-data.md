@@ -41,10 +41,10 @@ Connect to the **Aragón Open Data** portal and unlock a wealth of public inform
 - **list_groups**: List all themes/groups
 - **list_organizations**: List all publishers/organizations
 - **list_datasets**: List all datasets (packages)
-- **list_tags**: List all tags
 - **list_views**: List all available views in Aragón Open Data
 - **most_downloaded_datasets**: Get most downloaded datasets
 - **newest_datasets**: Get newest datasets
+- **list_tags**: List all tags
 - **preview_data**: By default, it returns the first 1000 records.
 
 Preview data from a view or resource

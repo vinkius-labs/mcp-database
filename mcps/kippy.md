@@ -34,9 +34,6 @@ Connect your **Kippy** account to any AI agent and manage performance tracking t
 
 
 ## Available Tools (13)
-- **list_annual_scores**: List annual performance metrics
-- **list_appraisals**: List performance reviews and appraisals
-- **list_audit_logs**: List system audit logs
 - **list_competencies**: List skills and competency tracking
 - **list_feedback**: List feedback entries
 - **list_kpi_scores**: List KPIs with their current scores
@@ -46,6 +43,9 @@ Connect your **Kippy** account to any AI agent and manage performance tracking t
 - **list_projects**: List organizational projects
 - **list_team_scores**: List team performance scores
 - **list_teams**: List teams in the organization
+- **list_annual_scores**: List annual performance metrics
+- **list_appraisals**: List performance reviews and appraisals
+- **list_audit_logs**: List system audit logs
 - **list_users**: List users in Kippy
 
 

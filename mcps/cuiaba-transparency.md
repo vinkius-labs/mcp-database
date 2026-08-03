@@ -34,10 +34,10 @@ Connect to the **Cuiabá Transparency Portal** and explore municipal public data
 
 
 ## Available Tools (5)
-- **list_budget**: List municipal budget information for Cuiabá
-- **list_contracts**: List public tenders and contracts for Cuiabá
 - **list_expenses**: List municipal expenditures for Cuiabá
 - **list_personnel**: List public servants data for Cuiabá
+- **list_budget**: List municipal budget information for Cuiabá
+- **list_contracts**: List public tenders and contracts for Cuiabá
 - **list_revenues**: List municipal revenue collection for Cuiabá
 
 

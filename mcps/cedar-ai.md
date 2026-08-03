@@ -35,20 +35,20 @@ Connect your **Cedar AI** railway management account to any AI agent and simplif
 
 
 ## Available Tools (12)
-- **arrive_train**: Record train arrival
-- **depart_train**: Record train departure
-- **get_railcar_details**: Get details for a specific railcar
 - **get_waybill_details**: Get details for a specific waybill
+- **setout_cars**: Record placement of cars
+- **arrive_train**: Record train arrival
 - **get_work_order_details**: Get details for a specific work order
 - **list_inventory**: List railcars currently in inventory
 - **list_waybills**: List waybills
 - **list_work_orders**: List work orders
 - **pickup_cars**: Record removal of cars
-- **setout_cars**: Record placement of cars
 - **update_railcar_status**: g., Bad Order, Clean, Loaded/Empty).
 
 Update status of a railcar
 - **update_work_order**: Update a work order
+- **depart_train**: Record train departure
+- **get_railcar_details**: Get details for a specific railcar
 
 
 ## 💬 Prompt Examples

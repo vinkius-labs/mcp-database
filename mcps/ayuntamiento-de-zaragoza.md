@@ -40,6 +40,14 @@ Book an appointment (Cita Previa)
 - **create_map**: Requires authentication.
 
 Create a new collaborative map
+- **list_open311_requests**: List Open311 requests
+- **list_open311_services**: List Open311 services (Quejas y Sugerencias)
+- **list_public_maps**: List collaborative public maps
+- **list_user_maps**: List collaborative maps for a specific user
+- **query_dataset**: Query a generic Zaragoza dataset (e.g., restaurante, monumento)
+- **submit_open311_request**: Requires authentication credentials.
+
+Submit an Open311 request (Queja/Sugerencia)
 - **delete_map**: Requires authentication.
 
 Delete a collaborative map
@@ -53,14 +61,6 @@ Execute a SPARQL query against Zaragoza Semantic Web endpoint
 - **get_open311_request**: Get details of a specific Open311 request
 - **get_open311_service**: Get Open311 service definition
 - **list_agendas**: List Cita Previa (Appointment) agendas
-- **list_open311_requests**: List Open311 requests
-- **list_open311_services**: List Open311 services (Quejas y Sugerencias)
-- **list_public_maps**: List collaborative public maps
-- **list_user_maps**: List collaborative maps for a specific user
-- **query_dataset**: Query a generic Zaragoza dataset (e.g., restaurante, monumento)
-- **submit_open311_request**: Requires authentication credentials.
-
-Submit an Open311 request (Queja/Sugerencia)
 
 
 ## 💬 Prompt Examples

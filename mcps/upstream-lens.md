@@ -36,7 +36,6 @@ Connect your **Upstream Tech Lens** account to any AI agent and simplify how you
 
 ## Available Tools (8)
 - **get_property_details**: Get details for a specific property feature
-- **get_organization_info**: Get organization metadata
 - **check_api_health**: Check Lens API health
 - **list_property_imagery**: ) for a specific property.
 
@@ -46,6 +45,7 @@ List available imagery layers for a property
 List observations and notes for a project
 - **list_project_observations**: List detailed project observations
 - **list_portfolios**: List all portfolios
+- **get_organization_info**: Get organization metadata
 - **list_projects**: List all environmental projects
 
 

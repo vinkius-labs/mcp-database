@@ -34,12 +34,12 @@ Connect your AI agent to the **Comunidad de Madrid Open Data Portal** to access 
 
 
 ## Available Tools (5)
-- **get_resource**: Get metadata for a specific resource
 - **list_datasets**: List all dataset identifiers in the portal
 - **search_datasets**: g., transporte, salud).
 
 Search for datasets matching specific criteria
 - **search_datastore**: Query data directly from a resource in the DataStore
+- **get_resource**: Get metadata for a specific resource
 - **get_dataset**: Get full metadata for a specific dataset
 
 

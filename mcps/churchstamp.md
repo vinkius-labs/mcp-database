@@ -42,9 +42,9 @@ No more manual uploading of recipient CSVs or guessing mail delivery dates. Your
 Create a mail campaign
 - **create_contact**: Add a contact
 - **get_campaign**: Get campaign details
-- **get_design**: Get design details
 - **get_user_details**: Get your account
 - **list_campaigns**: List all mail campaigns
+- **get_design**: Get design details
 - **list_contacts**: List all contacts
 - **list_designs**: List all postcard designs
 - **send_mail**: Send a postcard

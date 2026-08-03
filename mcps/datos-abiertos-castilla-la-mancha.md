@@ -34,11 +34,11 @@ Connect to the **Castilla-La Mancha Open Data** portal and explore a wealth of p
 
 
 ## Available Tools (5)
+- **search_datastore**: Search records within a datastore resource
 - **get_dataset**: Get details for a specific dataset
 - **get_resource**: Get details for a specific resource
 - **list_datasets**: List all datasets in the portal
 - **list_tags**: List all tags in the portal
-- **search_datastore**: Search records within a datastore resource
 
 
 ## 💬 Prompt Examples

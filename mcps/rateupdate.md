@@ -24,14 +24,14 @@ Connect your **RateUpdate** account to any AI agent and monitor mortgage rates t
 
 ## Available Tools (10)
 - **check_rateupdate_status**: Verify API connectivity
-- **compare_rates**: Compare rates by program
 - **get_lender**: Get lender details
 - **get_program**: Get program details
 - **get_rate**: Get rate details
-- **get_trends**: Get rate trends
 - **list_alerts**: List rate alerts
 - **list_lenders**: List lenders
 - **list_programs**: List loan programs
+- **compare_rates**: Compare rates by program
+- **get_trends**: Get rate trends
 - **list_rates**: List current mortgage rates
 
 

@@ -33,12 +33,12 @@ The ClickBid integration empowers your AI agent to natively manage your charity 
 
 
 ## Available Tools (10)
+- **list_clickbid_donations**: List event donations
 - **create_clickbid_bidder**: Create a new bidder
 - **create_clickbid_item**: Create a new auction item
 - **get_clickbid_bidder**: Get specific bidder details
-- **get_clickbid_item**: Get auction item details
 - **list_clickbid_bidders**: List all registered bidders
-- **list_clickbid_donations**: List event donations
+- **get_clickbid_item**: Get auction item details
 - **list_clickbid_items**: List auction items
 - **list_clickbid_ticket_purchasers**: List ticket purchasers
 - **list_clickbid_tickets**: List available tickets
