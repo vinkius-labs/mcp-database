@@ -24,19 +24,19 @@ Zero authentication required. Perfect for meal planning assistants, cooking chat
 
 
 ## Available Tools (5)
-- **get_meals_by_cuisine**: Available areas: American, British, Canadian, Chinese, Croatian, Dutch, Egyptian, Filipino, French, Greek, Indian, Irish, Italian, Jamaican, Japanese, Kenyan, Malaysian, Mexican, Moroccan, Polish, Portuguese, Russian, Spanish, Thai, Tunisian, Turkish, Vietnamese.
-
-Browse meals by cuisine/country of origin
 - **get_meals_by_category**: Available categories: Beef, Chicken, Dessert, Lamb, Miscellaneous, Pasta, Pork, Seafood, Side, Starter, Vegan, Vegetarian, Breakfast, Goat.
 
 Browse meals by category such as Beef, Chicken, Dessert, Pasta, Seafood, or Vegetarian
+- **get_meal_details**: Get complete details of a specific meal by its TheMealDB ID
+- **get_meals_by_cuisine**: Available areas: American, British, Canadian, Chinese, Croatian, Dutch, Egyptian, Filipino, French, Greek, Indian, Irish, Italian, Jamaican, Japanese, Kenyan, Malaysian, Mexican, Moroccan, Polish, Portuguese, Russian, Spanish, Thai, Tunisian, Turkish, Vietnamese.
+
+Browse meals by cuisine/country of origin
 - **get_random_meal**: Great for inspiration or "what should I cook tonight?" scenarios.
 
 Get a random recipe from TheMealDB
 - **search_meals**: Returns full recipe details including ingredients, measures, instructions, and YouTube tutorials. Try queries like "Arrabiata", "Chicken", "Sushi", "Pad Thai".
 
 Search TheMealDB for recipes by name
-- **get_meal_details**: Get complete details of a specific meal by its TheMealDB ID
 
 
 ## 💬 Prompt Examples

@@ -32,11 +32,11 @@ Connect **TheMealDB** open database to any AI agent and instantly search recipes
 - **get_random_meal**: Perfect for meal inspiration or discovery.
 
 Get a random meal suggestion
-- **list_areas**: List all cuisine areas
-- **list_categories**: List all meal categories
 - **filter_by_area**: Filter meals by cuisine area
 - **filter_by_category**: Filter meals by category
 - **list_ingredients**: List all available ingredients
+- **list_areas**: List all cuisine areas
+- **list_categories**: List all meal categories
 - **lookup_meal**: Get full details of a meal by ID
 - **search_by_letter**: Search meals by first letter
 - **search_meals**: Returns up to 100 results with basic info.

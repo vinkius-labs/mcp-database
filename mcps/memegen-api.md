@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire visual humor and content creati
 
 
 ## Available Tools (5)
-- **check_api_status**: Check if the MemeGen service is operational
 - **create_custom_meme**: Generate a custom meme URL using a template ID and text
 - **list_meme_fonts**: List all available fonts for meme generation
 - **list_meme_templates**: List all available meme templates
 - **search_meme_templates**: Search for meme templates by name or keyword
+- **check_api_status**: Check if the MemeGen service is operational
 
 
 ## 💬 Prompt Examples

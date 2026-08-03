@@ -36,14 +36,14 @@ No more manual toggling between sales tools or missing critical follow-ups. Your
 
 
 ## Available Tools (10)
+- **list_customers**: List all customers
+- **list_estimates**: List all estimates
 - **create_proposal**: Optionally link to an existing customer.
 
 Create a new proposal
 - **get_lead**: Get lead details
 - **get_profile**: Get your AirMatch Pro profile
 - **get_proposal**: Get proposal details
-- **list_customers**: List all customers
-- **list_estimates**: List all estimates
 - **list_jobs**: List all jobs
 - **list_leads**: List all leads
 - **list_proposals**: List all proposals

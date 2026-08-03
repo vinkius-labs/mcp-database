@@ -31,9 +31,6 @@ Otreeba provides an open, transparent database of cannabis products and lab test
 
 
 ## Available Tools (6)
-- **get_flower_lab_data**: ) and terpene data for a specific strain.
-
-Get lab test results for cannabis flower
 - **get_brand**: Get details for a specific cannabis brand
 - **get_strain**: Get full details for a specific cannabis strain
 - **list_brands**: List all cannabis brands available in Otreeba
@@ -41,6 +38,9 @@ Get lab test results for cannabis flower
 - **search_strains**: Use this to discover available strains in the Otreeba database.
 
 Search for cannabis strains by name or keyword
+- **get_flower_lab_data**: ) and terpene data for a specific strain.
+
+Get lab test results for cannabis flower
 
 
 ## 💬 Prompt Examples

@@ -37,7 +37,7 @@ Empower your AI agent to orchestrate your entire maritime research and nautical 
 ## Available Tools (6)
 - **check_api_status**: Check if the NavAPI service is operational
 - **get_port_distance**: Calculate the nautical distance between two ports
-- **get_nautical_ports**: List global maritime ports with optional country filter
+- **get_nautical_ports**: List globalThis maritime ports with optional country filter
 - **get_port_vessel_traffic**: Get current vessel traffic statistics for a specific port
 - **list_nautical_charts**: List nautical charts available for a specific geographic area
 - **search_maritime_routes**: Search for maritime shipping routes

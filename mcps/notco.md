@@ -34,6 +34,8 @@ Connect your AI agent directly to **Giuseppe**, NotCo’s proprietary Food Tech 
 
 
 ## Available Tools (14)
+- **create_formulation**: Request a new AI formulation
+- **create_project**: Create a new R&D project
 - **estimate_cost**: Predict the mass production cost of a formulation
 - **get_formulation**: Get details of a specific AI formulation
 - **get_ingredient**: Get complete molecular profile of an ingredient
@@ -48,8 +50,6 @@ List plant-based AI formulations
 - **run_sensory_test**: Run an AI simulation of a sensory test
 - **search_flavor_matches**: Find plant combinations that mimic a target flavor
 - **analyze_nutrition**: Analyze the nutritional output of a formulation
-- **create_formulation**: Request a new AI formulation
-- **create_project**: Create a new R&D project
 
 
 ## 💬 Prompt Examples

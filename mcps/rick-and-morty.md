@@ -28,15 +28,15 @@ Connect the **Rick and Morty API** to any AI agent and explore the complete show
 
 
 ## Available Tools (9)
-- **get_character**: Get detailed character information
-- **get_characters**: Get multiple characters at once
-- **get_episode**: Get detailed episode information
-- **get_episodes**: Get multiple episodes at once
-- **get_location**: Get detailed location information
-- **get_locations**: Get multiple locations at once
 - **list_characters**: Supports filtering by name, status (alive/dead/unknown), species, type, and gender. Returns character names, species, status, and basic info.
 
 List Rick and Morty characters
+- **get_character**: Get detailed character information
+- **get_characters**: Get multiple characters at once
+- **get_episode**: Get detailed episode information
+- **get_locations**: Get multiple locations at once
+- **get_episodes**: Get multiple episodes at once
+- **get_location**: Get detailed location information
 - **list_episodes**: Supports filtering by episode name and episode code (e.g., "S01E01").
 
 List Rick and Morty episodes

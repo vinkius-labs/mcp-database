@@ -34,8 +34,8 @@ Empower your AI agent to orchestrate your entire entertainment research and humo
 
 
 ## Available Tools (2)
-- **check_api_status**: Check if the API Ninjas Jokes service is operational
 - **get_random_joke**: Get one or more random jokes from API Ninjas
+- **check_api_status**: Check if the API Ninjas Jokes service is operational
 
 
 ## 💬 Prompt Examples

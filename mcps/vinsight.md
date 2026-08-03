@@ -51,13 +51,6 @@ Get product details
 - **list_sales_orders**: Core revenue tracking for wineries and breweries.
 
 List sales orders
-- **get_sales_order**: Get order details
-- **search_contacts**: Returns contact profile, type, addresses, payment terms, and order history.
-
-Search contacts
-- **list_purchase_orders**: Supply chain tracking for production inputs.
-
-List purchase orders
 - **list_production_orders**: Tracks the winemaking or brewing process.
 
 List production orders
@@ -67,6 +60,13 @@ List production batches
 - **list_vessels**: With capacity, current contents, fill level, and location. For cellar space planning.
 
 List tanks and barrels
+- **get_sales_order**: Get order details
+- **search_contacts**: Returns contact profile, type, addresses, payment terms, and order history.
+
+Search contacts
+- **list_purchase_orders**: Supply chain tracking for production inputs.
+
+List purchase orders
 
 
 ## 💬 Prompt Examples

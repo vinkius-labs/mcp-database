@@ -41,11 +41,11 @@ Connect your **NMKR Studio** account to your AI agent and manage your Cardano NF
 - **get_nft_details**: Get specific NFT metadata
 - **get_project_counts**: Get project asset metrics
 - **list_payout_wallets**: List all registered payout wallets
-- **list_split_addresses**: List revenue split addresses
 - **list_project_nfts**: List NFTs in a project
-- **get_project_discounts**: List active project discounts
+- **list_split_addresses**: List revenue split addresses
 - **list_subcustomers**: List sub-customers for an account
 - **list_vesting_addresses**: List vesting/staking addresses
+- **get_project_discounts**: List active project discounts
 
 
 ## 💬 Prompt Examples

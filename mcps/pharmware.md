@@ -44,6 +44,15 @@ No more navigating complex LIMS interfaces or manually reconciling test queues. 
 
 
 ## Available Tools (12)
+- **list_clients**: Each client record contains company name, license number, contact information, client type (cultivation facility, processing plant, dispensary, or third-party tester), account status, and billing information. Essential for laboratory client management, sample intake workflows, and regulatory compliance reporting. AI agents should reference this when identifying sample ownership, generating client-specific reports, or verifying active testing contracts.
+
+List all clients (cultivators, processors, retailers) registered in PharmWare
+- **list_integrations**: Each integration record contains the platform name (WeedMaps, Metrc, BioTrack, Leaf Data Systems, state regulatory API), integration type (bidirectional data sync, CoA publishing, sample status updates, regulatory reporting), connection status, last synchronization timestamp, data mapping configuration, and error logs. Critical for multi-platform compliance, automated CoA distribution, and real-time regulatory reporting. AI agents reference this to verify integration health, troubleshoot sync failures, and ensure seamless data flow between laboratory systems and external platforms.
+
+List all external system integrations (WeedMaps, state APIs, seed-to-sale platforms)
+- **list_reports**: Each report entry includes the report type (monthly summary, regulatory submission, client statement, trend analysis, deviation investigation, corrective action report), generation date, reporting period, associated clients or samples, regulatory agency destination (if applicable), and distribution status. Essential for regulatory compliance documentation, client billing reconciliation, and laboratory performance analytics. AI agents use this to prepare state-mandated reports, analyze testing trends, and identify quality improvement opportunities.
+
+List all laboratory reports and compliance documents generated
 - **list_audit_logs**: Each audit log entry contains the timestamp, performing user, action type (sample created, result modified, CoA issued, workflow completed, user permission changed), affected record ID, previous and new values (for modifications), IP address, and justification comment (if required). Fundamental for regulatory inspections, data integrity investigations, deviation root cause analysis, and FDA 21 CFR Part 11 compliance. AI agents use this to reconstruct event sequences during quality investigations, identify unauthorized changes, and generate audit-ready documentation packages.
 
 List all audit trail entries for laboratory operations and data changes
@@ -53,18 +62,6 @@ List all cannabis batches tracked through laboratory testing
 - **list_certificates**: Each CoA record includes the certificate number, linked sample and batch, issuing laboratory accreditation details, comprehensive analytical results (potency profile, terpene fingerprint, contaminant screening), regulatory compliance statement, authorized signatory, issuance date, and QR code for consumer verification. Critical for product release decisions, regulatory audits, and consumer transparency programs. AI agents use this to verify CoA authenticity, batch compliance status, and generate client-facing documentation packages.
 
 List all Certificates of Analysis (CoA) issued by the laboratory
-- **list_clients**: Each client record contains company name, license number, contact information, client type (cultivation facility, processing plant, dispensary, or third-party tester), account status, and billing information. Essential for laboratory client management, sample intake workflows, and regulatory compliance reporting. AI agents should reference this when identifying sample ownership, generating client-specific reports, or verifying active testing contracts.
-
-List all clients (cultivators, processors, retailers) registered in PharmWare
-- **list_instruments**: Each instrument record contains the instrument name (HPLC system, GC-MS, ICP-MS, spectrophotometer), manufacturer, model, serial number, installation location, calibration status, last calibration date, next scheduled maintenance, qualification status (IQ/OQ/PQ), and associated test methods. Critical for instrument qualification, preventive maintenance scheduling, and analytical data integrity. AI agents should reference this to verify instrument readiness before assigning tests, schedule calibration activities, or troubleshoot analytical failures.
-
-List all laboratory instruments and equipment with calibration status
-- **list_integrations**: Each integration record contains the platform name (WeedMaps, Metrc, BioTrack, Leaf Data Systems, state regulatory API), integration type (bidirectional data sync, CoA publishing, sample status updates, regulatory reporting), connection status, last synchronization timestamp, data mapping configuration, and error logs. Critical for multi-platform compliance, automated CoA distribution, and real-time regulatory reporting. AI agents reference this to verify integration health, troubleshoot sync failures, and ensure seamless data flow between laboratory systems and external platforms.
-
-List all external system integrations (WeedMaps, state APIs, seed-to-sale platforms)
-- **list_reports**: Each report entry includes the report type (monthly summary, regulatory submission, client statement, trend analysis, deviation investigation, corrective action report), generation date, reporting period, associated clients or samples, regulatory agency destination (if applicable), and distribution status. Essential for regulatory compliance documentation, client billing reconciliation, and laboratory performance analytics. AI agents use this to prepare state-mandated reports, analyze testing trends, and identify quality improvement opportunities.
-
-List all laboratory reports and compliance documents generated
 - **list_results**: Each result contains the result ID, linked sample, test panel performed, analytical findings (THC/CBD potency percentages, terpene concentrations, pesticide residue levels, heavy metal concentrations, mycotoxin detection), pass/fail determination against regulatory limits, analyst who performed the test, review status, and date of completion. Fundamental for quality assurance, client notification workflows, and regulatory data submissions. AI agents should query this to verify sample compliance before releasing Certificates of Analysis or advising clients on product disposition.
 
 List all laboratory test results with analytical data
@@ -80,6 +77,9 @@ List all laboratory users with roles and permissions
 - **list_workflows**: Each workflow entry includes the workflow name (sample intake, potency testing, contaminant screening, CoA review, sample disposal), step definitions, assigned roles and responsibilities, quality control checkpoints, average completion time, and current instances in progress. Essential for laboratory operations management, staff task assignment, and process optimization. AI agents use this to guide technicians through testing procedures, identify workflow bottlenecks, and ensure ISO/IEC 17025 quality management system compliance.
 
 List all laboratory workflow templates and active processes
+- **list_instruments**: Each instrument record contains the instrument name (HPLC system, GC-MS, ICP-MS, spectrophotometer), manufacturer, model, serial number, installation location, calibration status, last calibration date, next scheduled maintenance, qualification status (IQ/OQ/PQ), and associated test methods. Critical for instrument qualification, preventive maintenance scheduling, and analytical data integrity. AI agents should reference this to verify instrument readiness before assigning tests, schedule calibration activities, or troubleshoot analytical failures.
+
+List all laboratory instruments and equipment with calibration status
 
 
 ## 💬 Prompt Examples

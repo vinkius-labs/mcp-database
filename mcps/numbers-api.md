@@ -36,10 +36,10 @@ Equip your AI agent with interesting facts and historical context for any number
 
 
 ## Available Tools (5)
+- **get_trivia_fact**: Get a trivia fact about a number
 - **get_date_fact**: Get a fact about a date
 - **get_math_fact**: Get a mathematical fact about a number
 - **get_random_fact**: Get a random fact
-- **get_trivia_fact**: Get a trivia fact about a number
 - **get_year_fact**: Get a fact about a year
 
 
