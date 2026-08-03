@@ -14,9 +14,9 @@ Determine the intensity of your tabletop RPG encounters using precise XP-based c
 
 
 ## Available Tools (3)
-- **analyze_encounter**: Performs a complete analysis of a combat encounter
 - **get_party_thresholds**: Retrieves the XP budget boundaries for different difficulty tiers
 - **lookup_encounter_multiplier**: Retrieves the specific scaling factor used to adjust XP
+- **analyze_encounter**: Performs a complete analysis of a combat encounter
 
 
 ## 💬 Prompt Examples

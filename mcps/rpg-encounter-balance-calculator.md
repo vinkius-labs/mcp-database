@@ -14,9 +14,9 @@ The RPG Encounter Balance Calculator is an analytical tool designed for Game Mas
 
 
 ## Available Tools (3)
-- **calculate_combat_duration**: Estimate how many turns each side will survive before being defeated
 - **assess_encounter_lethality**: Determine the probability of player victory and risk level
 - **generate_balancing_strategies**: Provide actionable advice to adjust encounter difficulty
+- **calculate_combat_duration**: Estimate how many turns each side will survive before being defeated
 
 
 ## 💬 Prompt Examples

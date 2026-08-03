@@ -15,10 +15,10 @@ The Footing Size Calculator is a structural engineering tool designed to determi
 
 ## Available Tools (3)
 - **calculate_footing_dimensions**: Determines the minimum width and thickness required for a square footing
-- **validate_engineering_params**: Verifies that input engineering parameters are within realistic and safe operational bounds
 - **retrieve_soil_capacity**: Clay, Sand, Gravel) and returns its capacity in ksf.
 
 Provides the standardized allowable bearing capacity for a known soil type
+- **validate_engineering_params**: Verifies that input engineering parameters are within realistic and safe operational bounds
 
 
 ## 💬 Prompt Examples

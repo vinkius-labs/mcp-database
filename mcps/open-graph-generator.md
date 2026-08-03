@@ -10,7 +10,7 @@
 Generates standardized Open Graph and Twitter Card HTML meta tags from provided metadata.
 
 ## Description
-The Open Graph Generator MCP server automates the creation of essential social SEO metadata. By using tools like `generate_html_tags_tool`, you can instantly produce complete blocks of HTML `` tags for Open Graph and Twitter Cards. This ensures that when your content is shared on platforms like Facebook, LinkedIn, or X (formerly Twitter), it renders with rich, professional previews including titles, descriptions, and images. Additionally, use `validate_metadata_tool` to check if your metadata meets best practices for length and engagement, and `get_content_types_tool` to discover all supported content categories like website, article, profile, and book.
+The Open Graph Generator MCP server automates the creation of essential social SEO metadata. By using tools like `generate_html_tags_tool`, you can instantly produce complete blocks of HTML `<meta>` tags for Open Graph and Twitter Cards. This ensures that when your content is shared on platforms like Facebook, LinkedIn, or X (formerly Twitter), it renders with rich, professional previews including titles, descriptions, and images. Additionally, use `validate_metadata_tool` to check if your metadata meets best practices for length and engagement, and `get_content_types_tool` to discover all supported content categories like website, article, profile, and book.
 
 
 ## Available Tools (3)

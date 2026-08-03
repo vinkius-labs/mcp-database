@@ -14,8 +14,8 @@ The Leftover Ratio Calculator is an estimation engine designed for event planner
 
 
 ## Available Tools (4)
-- **calculate_sides_and_starches**: Calculate required starch and vegetable amounts
 - **analyze_waste_risk**: Analyze potential food waste risk
+- **calculate_sides_and_starches**: Calculate required starch and vegetable amounts
 - **estimate_beverage_requirements**: Estimate required beverage amounts
 - **calculate_main_course_portions**: Calculate required main course portions
 

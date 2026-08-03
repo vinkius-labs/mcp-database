@@ -16,8 +16,8 @@ This MCP server provides structural engineering calculations for wood stud wall 
 ## Available Tools (4)
 - **calculate_axial_capacity**: Determines how much vertical weight a single stud can safely support
 - **calculate_lateral_capacity**: Determines the maximum horizontal pressure a wall can withstand
-- **get_material_properties**: Retrieates the hardcoded strength characteristics for a specific wood species
 - **validate_wall_configuration**: Validates that the provided construction parameters meet standard building practice
+- **get_material_properties**: Retrieates the hardcoded strength characteristics for a specific wood species
 
 
 ## 💬 Prompt Examples

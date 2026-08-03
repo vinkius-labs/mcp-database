@@ -14,9 +14,9 @@ This MCP server provides a specialized performance metric engine for quantifying
 
 
 ## Available Tools (3)
-- **calculate_wkg_ratio**: Calculates the power-to-weight ratio (W/kg) for endurance sports
 - **get_performance_rank**: Categorizes an athlete's performance into a tier
 - **calculate_relative_strength**: Computes standardized relative strength scores for powerlifting
+- **calculate_wkg_ratio**: Calculates the power-to-weight ratio (W/kg) for endurance sports
 
 
 ## 💬 Prompt Examples

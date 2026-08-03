@@ -14,8 +14,8 @@ This MCP server provides specialized tools for cyclists to quantify their perfor
 
 
 ## Available Tools (3)
-- **calculate_ftp_20min**: Calculate FTP from a 20-minute power test
 - **calculate_ftp_ramp**: Calculate FTP from a ramp test
+- **calculate_ftp_20min**: Calculate FTP from a 20-minute power test
 - **calculate_session_stress**: Calculate IF and TSS for a cycling session
 
 

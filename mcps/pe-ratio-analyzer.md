@@ -14,8 +14,8 @@ The PE Ratio Analyzer is a specialized tool for fundamental equity valuation. It
 
 
 ## Available Tools (4)
-- **calculate_earnings_ratios**: Determine current and projected price-to-earnings multiples
 - **calculate_growth_ratio**: Assess valuation relative to expected company expansion
+- **calculate_earnings_ratios**: Determine current and projected price-to-earnings multiples
 - **calculate_revenue_enterprise_ratios**: Compute valuation multiples based on top-line revenue and enterprise earnings
 - **evaluate_valuation_status**: Classify a stock as overvalued, undervalued, or fairly priced
 

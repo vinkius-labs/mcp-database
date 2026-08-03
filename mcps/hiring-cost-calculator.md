@@ -14,10 +14,10 @@ The Hiring Cost Calculator is a specialized financial tool designed to help comp
 
 
 ## Available Tools (4)
+- **calculate_compensation_package**: Determine total annual cash and benefit obligations
 - **calculate_onboarding_and_ramp_up**: Quantify training and productivity loss costs
 - **calculate_recruitment_impact**: Calculate upfront cost for talent acquisition
 - **get_total_first_year_cost**: Aggregate all hiring costs into a single figure
-- **calculate_compensation_package**: Determine total annual cash and benefit obligations
 
 
 ## 💬 Prompt Examples

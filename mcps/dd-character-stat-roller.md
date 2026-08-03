@@ -10,14 +10,14 @@
 Statistical simulation engine for evaluating D&D attribute generation methods.
 
 ## Description
-This MCP server provides a high-performance statistical simulation engine to compare different D&D character attribute generation methods. By executing 10,000 randomized iterations per method, it allows AI agents to analyze the mathematical 'power' and consistency of mechanics like `heroic_4d6`, `classic_33d6`, `point_buy`, and `standard_array`. Users can use tools like `simulate_method` to generate datasets, `analyze_attribute_averages` to find mean scores, and `evaluate_power_threshold` to determine the probability of high-strength character creation. It is an essential tool for tabletop RPG designers and players looking to understand the impact of different rolling mechanics on character strength.
+This MCP server provides a high-performance statistical simulation engine to compare different D&D character attribute generation methods. By executing 10,000 randomized iterations per method, it allows AI agents to analyze the mathematical 'power' and consistency of mechanics like `heroic_4d6`, `classic_3</strong>3d6`, `point_buy`, and `standard_array`. Users can use tools like `simulate_method` to generate datasets, `analyze_attribute_averages` to find mean scores, and `evaluate_power_threshold` to determine the probability of high-strength character creation. It is an essential tool for tabletop RPG designers and players looking to understand the impact of different rolling mechanics on character strength.
 
 
 ## Available Tools (4)
-- **simulate_method**: Executes a large-scale randomized simulation for a specific generation method
 - **analyze_attribute_averages**: Calculates the mean value for each attribute across a provided set of simulation results
 - **generate_method_comparison_report**: Produces a high-level comparative summary between two different simulation datasets
 - **evaluate_power_threshold**: Determines the probability of a character "outperforming" a specific power metric
+- **simulate_method**: Executes a large-scale randomized simulation for a specific generation method
 
 
 ## 💬 Prompt Examples

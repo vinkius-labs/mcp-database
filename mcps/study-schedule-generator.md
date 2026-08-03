@@ -14,10 +14,10 @@ The Study Schedule Generator is an automated planning engine that creates custom
 
 
 ## Available Tools (4)
+- **generate_weekly_plan**: Generate a detailed weekly study plan
 - **get_subject_distribution**: Get the subject importance distribution
 - **check_feasibility**: Check if the study plan is feasible
 - **get_schedule_overview**: Get a summary of the study schedule
-- **generate_weekly_plan**: Generate a detailed weekly study plan
 
 
 ## 💬 Prompt Examples

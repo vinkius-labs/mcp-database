@@ -15,8 +15,8 @@ The Strength Standards Checker is a performance analysis tool designed to help l
 
 ## Available Tools (3)
 - **get_supported_benchmarks**: Retrieve supported exercises and sexes
-- **calculate_next_milestone**: Calculate weight needed for next strength tier
 - **check_strength_level**: Check current strength level based on a lift
+- **calculate_next_milestone**: Calculate weight needed for next strength tier
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ This MCP server provides a complete implementation of the Perceived Stress Scale
 
 ## Available Tools (3)
 - **calculate_stress_score**: Calculate the total PSS-10 stress score
-- **get_pss_questions**: Retrieve the standard PSS-10 questions
 - **validate_pss_responses**: Validate the provided PSS-10 responses
+- **get_pss_questions**: Retrieve the standard PSS-10 questions
 
 
 ## 💬 Prompt Examples
