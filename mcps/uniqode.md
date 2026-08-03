@@ -36,12 +36,12 @@ Connect your **Uniqode (formerly Beaconstac)** account to any AI agent and simpl
 
 ## Available Tools (12)
 - **delete_qrcode**: Delete a QR code
-- **get_account_info**: Get account details
 - **get_analytics_location**: Get scan analytics by location
 - **get_analytics_time**: Get scan analytics by time
 - **get_qrcode**: Get QR code details
 - **list_campaigns**: List campaigns
 - **list_folders**: List folders
+- **get_account_info**: Get account details
 - **list_organizations**: List organizations
 - **list_qrcodes**: List all QR codes
 - **list_tags**: List tags

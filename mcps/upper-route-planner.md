@@ -39,10 +39,10 @@ No more manual route checking or missing stop updates. Your AI acts as your dedi
 ## Available Tools (6)
 - **list_upper_routes**: List delivery routes
 - **get_upper_stop_details**: Get stop details
-- **check_upper_status**: Check API Status
 - **create_upper_delivery_task**: Add a delivery task
 - **list_upper_drivers**: List delivery drivers
 - **get_upper_route_stop**: Get specific route stop
+- **check_upper_status**: Check API Status
 
 
 ## 💬 Prompt Examples

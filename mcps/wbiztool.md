@@ -36,18 +36,18 @@ No more manual typing of customer messages or missing critical read receipts. Yo
 
 
 ## Available Tools (12)
-- **list_groups**: List groups
+- **check_wbiztool_status**: Verify connectivity
+- **get_contact**: Get contact details
+- **get_message_history**: Get message history
+- **create_contact**: Create a contact
+- **list_contacts**: List contacts
 - **list_messages**: List messages
 - **list_templates**: List templates
 - **search_contacts**: Search contacts
 - **send_bulk_message**: Send bulk messages
 - **send_message**: Send a message
 - **send_template**: Send a template
-- **check_wbiztool_status**: Verify connectivity
-- **create_contact**: Create a contact
-- **get_contact**: Get contact details
-- **get_message_history**: Get message history
-- **list_contacts**: List contacts
+- **list_groups**: List groups
 
 
 ## 💬 Prompt Examples

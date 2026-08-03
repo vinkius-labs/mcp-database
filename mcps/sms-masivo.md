@@ -36,10 +36,10 @@ Connect your **SMS Masivo** account to any AI agent and automate your SMS commun
 
 
 ## Available Tools (10)
+- **get_delivery_report**: Get the delivery report for a specific message
 - **check_smsmasivo_status**: Verify SMS Masivo API connectivity
 - **create_contact**: Create a new contact
 - **get_balance**: Check your SMS credit balance
-- **get_delivery_report**: Get the delivery report for a specific message
 - **list_contacts**: List all contacts in your account
 - **list_delivery_reports**: List delivery reports by date range
 - **list_groups**: List all contact groups

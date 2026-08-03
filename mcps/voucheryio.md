@@ -35,10 +35,6 @@ Connect your **Vouchery.io** account to any AI agent to automate your promotiona
 
 
 ## Available Tools (12)
-- **create_campaign**: Provide name and type.
-
-Create a new marketing campaign
-- **create_customer**: Create or update a customer profile
 - **create_voucher**: Generate a new voucher code for a campaign
 - **delete_campaign**: Delete a campaign
 - **delete_voucher**: Delete a voucher code
@@ -49,6 +45,10 @@ Create a new marketing campaign
 - **list_customers**: List all customers
 - **list_redemptions**: List redemptions for a voucher
 - **redeem_voucher**: Redeem (claim) a voucher code
+- **create_campaign**: Provide name and type.
+
+Create a new marketing campaign
+- **create_customer**: Create or update a customer profile
 
 
 ## 💬 Prompt Examples

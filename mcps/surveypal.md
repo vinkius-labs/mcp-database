@@ -35,6 +35,9 @@ Connect your **Surveypal** account to any AI agent and simplify how you collect 
 
 
 ## Available Tools (12)
+- **list_folder_surveys**: List surveys in folder
+- **list_folders**: List survey folders
+- **list_surveys**: List all surveys
 - **send_sms_invitation**: Send SMS invitation
 - **get_account_info**: Get account info
 - **get_answer**: Get individual answer
@@ -43,9 +46,6 @@ Connect your **Surveypal** account to any AI agent and simplify how you collect 
 - **get_survey**: Get survey details
 - **list_survey_answers**: List survey answers
 - **list_contacts**: List survey contacts
-- **list_folder_surveys**: List surveys in folder
-- **list_folders**: List survey folders
-- **list_surveys**: List all surveys
 - **send_email_invitation**: Send email invitation
 
 

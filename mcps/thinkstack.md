@@ -37,10 +37,10 @@ Connect your **ThinkStack** account to any AI agent and manage your chatbots, kn
 - **add_source**: The content will be crawled and indexed automatically.
 
 Add a knowledge source
-- **check_thinkstack_status**: Verify ThinkStack API connectivity
 - **delete_source**: Remove a knowledge source
 - **get_bot**: Get chatbot details
 - **get_conversation**: Get conversation details
+- **check_thinkstack_status**: Verify ThinkStack API connectivity
 - **list_actions**: List bot actions
 - **list_bots**: List all chatbots
 - **list_conversations**: List conversations

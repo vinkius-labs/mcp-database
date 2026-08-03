@@ -35,6 +35,7 @@ Connect your **SnapCall** account to any AI agent to automate your real-time cus
 
 ## Available Tools (11)
 - **create_call**: Create an instant video/voice call
+- **get_call_details**: Get details for a call stream
 - **create_video_clip_request**: Request a video clip from customer
 - **create_webhook**: g., call.started, clip.created).
 
@@ -43,7 +44,6 @@ Create a new webhook
 - **delete_webhook**: Remove a webhook
 - **get_account_info**: Get SnapCall account details
 - **get_ai_insights_for_call**: Get AI insights for a specific call
-- **get_call_details**: Get details for a call stream
 - **list_ai_skills_data**: List AI call insights
 - **list_call_streams**: List recent call streams
 - **list_webhooks**: List registered webhooks

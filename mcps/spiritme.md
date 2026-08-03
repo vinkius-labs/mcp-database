@@ -36,18 +36,18 @@ No more manual recording of video updates or missing critical avatar generation 
 
 
 ## Available Tools (12)
+- **list_videos**: List videos
+- **generate_video**: Generate a video
 - **get_avatar**: Get avatar details
 - **get_job_status**: Get video job status
 - **get_template**: Get template details
 - **get_voice**: Get voice details
 - **list_avatars**: List avatars
 - **list_templates**: List templates
-- **list_videos**: List videos
 - **list_voices**: List voices
 - **check_spiritme_status**: Verify connectivity
 - **delete_video**: Delete a video
 - **generate_audio**: Generate audio
-- **generate_video**: Generate a video
 
 
 ## 💬 Prompt Examples

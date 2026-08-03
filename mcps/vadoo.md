@@ -34,11 +34,11 @@ Connect your **Vadoo AI** account to any AI agent and simplify how you generate,
 
 
 ## Available Tools (6)
-- **add_captions**: Add captions to a video
-- **create_clips**: Generate viral clips from a video
 - **generate_podcast**: Generate an AI podcast
 - **generate_video**: Generate a new AI video
 - **get_video_details**: Get details for a specific video
+- **add_captions**: Add captions to a video
+- **create_clips**: Generate viral clips from a video
 - **list_videos**: List your Vadoo AI videos
 
 
