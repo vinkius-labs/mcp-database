@@ -33,11 +33,6 @@ Bind the massive scale of **Veraset** geolocation data directly to your preferre
 
 
 ## Available Tools (10)
-- **cancel_running_query**: Immediately aborts a currently executing SQL task
-- **execute_sql_query**: Provide a dataset ID and ANSI SQL. Returns a query ID.
-
-Starts a new SQL query task against a Veraset dataset
-- **generate_download_link**: Generates a temporary pre-signed URL for an S3 file download
 - **get_dataset_metadata**: Retrieves technical metadata for a specific mobility dataset
 - **get_query_results**: Supports pagination.
 
@@ -46,6 +41,11 @@ Retrieves the result rows from a completed SQL query
 - **get_dataset_sample**: Retrieves a quick sample of the first few rows of a dataset
 - **get_dataset_schema**: Retrieves the column definitions and data types for a dataset
 - **list_mobility_datasets**: Identify accessible mobility datasets in Veraset
+- **cancel_running_query**: Immediately aborts a currently executing SQL task
+- **execute_sql_query**: Provide a dataset ID and ANSI SQL. Returns a query ID.
+
+Starts a new SQL query task against a Veraset dataset
+- **generate_download_link**: Generates a temporary pre-signed URL for an S3 file download
 - **list_s3_delivery_folders**: Lists S3 prefixes where scheduled data drops are delivered
 
 

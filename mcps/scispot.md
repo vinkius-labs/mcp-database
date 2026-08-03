@@ -59,9 +59,6 @@ List all clients (cultivators, processors, retailers) using laboratory services
 - **list_instruments**: Each instrument record contains the instrument name (HPLC system, GC-MS, ICP-MS, qPCR thermocycler, spectrophotometer), manufacturer, model number, serial number, installation location, calibration status, last calibration date, next scheduled maintenance, qualification status (IQ/OQ/PQ completion), associated test methods, and current operational status (active, under maintenance, offline, decommissioned). Critical for instrument qualification management, preventive maintenance scheduling, analytical data integrity verification, and regulatory inspection readiness. AI agents should reference this to verify instrument readiness before assigning tests, schedule calibration activities, troubleshoot analytical failures, and generate equipment utilization reports.
 
 List all laboratory instruments with calibration and maintenance status
-- **list_orders**: Each order record contains the order ID, requesting client company, order date, requested test panels, number of samples included, priority level (standard, rush, priority), order status (pending, in-progress, completed, invoiced), assigned laboratory team, estimated completion date, and billing information. Critical for order management, client communication, laboratory capacity planning, and revenue tracking. AI agents use this to monitor order progress, identify bottlenecks, prioritize workflow assignments, communicate status updates to clients, and generate order fulfillment reports.
-
-List all testing orders and service requests from clients
 - **list_plates**: Each plate entry contains the plate ID, plate format (96-well, 384-well), assay type assigned, number of samples loaded, number of standards and controls, run date, associated instrument, and processing status (prepared, in-run, completed, failed). Critical for managing high-volume testing operations, optimizing throughput, tracking reagent usage, and ensuring data integrity for multi-sample analytical runs. AI agents use this to monitor plate preparation status, identify incomplete runs, optimize well assignments, and troubleshoot analytical failures at the plate level.
 
 List all laboratory plates used for batch sample processing
@@ -80,6 +77,9 @@ List all analytical test panels and methods available in the laboratory
 - **list_workflows**: Each workflow entry contains the workflow name (sample intake and login, potency testing, contaminant screening, CoA review and approval, sample disposal, non-conformance investigation), step definitions with sequential order, assigned roles and responsibilities at each step, quality control checkpoints and decision gates, average completion time, current instances in progress, and bottleneck indicators. Essential for laboratory operations management, staff task assignment, process optimization, and ISO/IEC 17025 quality management system compliance. AI agents use this to guide technicians through standardized testing procedures, identify workflow bottlenecks causing delays, ensure quality checkpoints are not bypassed, and generate process efficiency reports.
 
 List all laboratory workflow templates and active processes
+- **list_orders**: Each order record contains the order ID, requesting client company, order date, requested test panels, number of samples included, priority level (standard, rush, priority), order status (pending, in-progress, completed, invoiced), assigned laboratory team, estimated completion date, and billing information. Critical for order management, client communication, laboratory capacity planning, and revenue tracking. AI agents use this to monitor order progress, identify bottlenecks, prioritize workflow assignments, communicate status updates to clients, and generate order fulfillment reports.
+
+List all testing orders and service requests from clients
 
 
 ## 💬 Prompt Examples

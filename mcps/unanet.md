@@ -14,10 +14,10 @@ The Unanet MCP Server connects AI agents to the Unanet project management and ER
 
 
 ## Available Tools (4)
-- **expenses**: List expense reports for a user
-- **projects**: List projects in Unanet
 - **timesheets**: List timesheets for a user
 - **users**: List users/employees in Unanet
+- **expenses**: List expense reports for a user
+- **projects**: List projects in Unanet
 
 
 ## 💬 Prompt Examples

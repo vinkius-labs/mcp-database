@@ -25,9 +25,6 @@ Aurora hunters, satellite operators, HF radio operators, power grid managers, ai
 
 
 ## Available Tools (6)
-- **get_planetary_k_index**: Kp ranges 0-9. Values ≥5 indicate geomagnetic storms with visible aurora at lower latitudes. Updated every 3 hours. Essential for aurora hunters, satellite operators, and power grid managers.
-
-Get the NOAA Planetary K-index — geomagnetic activity and aurora probability
 - **get_k_index_forecast**: Use this to plan for aurora viewing, satellite vulnerabilities, or HF radio propagation impacts.
 
 Get the 3-day Kp index forecast — predicted geomagnetic activity
@@ -43,6 +40,9 @@ Get the 10.7cm solar radio flux — a proxy for solar activity level
 - **get_dst_index**: Measures the intensity of the ring current around Earth. Values below -50 nT indicate a moderate storm, below -100 nT a strong storm, below -250 nT a severe storm. Critical for satellite operators and power grid monitoring.
 
 Get the Dst index — real-time geomagnetic storm intensity
+- **get_planetary_k_index**: Kp ranges 0-9. Values ≥5 indicate geomagnetic storms with visible aurora at lower latitudes. Updated every 3 hours. Essential for aurora hunters, satellite operators, and power grid managers.
+
+Get the NOAA Planetary K-index — geomagnetic activity and aurora probability
 
 
 ## 💬 Prompt Examples

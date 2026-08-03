@@ -35,9 +35,6 @@ Connect to the **National Renewable Energy Laboratory (NREL)** API through your 
 
 
 ## Available Tools (10)
-- **get_geothermal_resource**: Check geothermal resource potential
-- **get_nearest_stations**: Find nearest fuel stations
-- **get_pvwatts_estimates**: Estimate solar energy production
 - **get_solar_data_query**: Check solar dataset availability
 - **get_solar_resource**: Get solar radiation data
 - **get_station_details**: Get specific station details
@@ -47,6 +44,9 @@ Connect to the **National Renewable Energy Laboratory (NREL)** API through your 
 
 List all alternative fuel stations
 - **list_transportation_incentives**: List alternative fuel incentives
+- **get_geothermal_resource**: Check geothermal resource potential
+- **get_nearest_stations**: Find nearest fuel stations
+- **get_pvwatts_estimates**: Estimate solar energy production
 
 
 ## 💬 Prompt Examples

@@ -36,6 +36,8 @@ Connect to the **National Park Service (NPS)** API through your AI agent and exp
 
 
 ## Available Tools (10)
+- **list_places**: List significant park places
+- **list_visitor_centers**: List park visitor centers
 - **list_alerts**: List park alerts and closures
 - **list_articles**: List park articles
 - **list_campgrounds**: List park campgrounds
@@ -45,8 +47,6 @@ Connect to the **National Park Service (NPS)** API through your AI agent and exp
 - **list_parks**: Can filter by park code or state.
 
 List U.S. National Parks
-- **list_places**: List significant park places
-- **list_visitor_centers**: List park visitor centers
 - **list_webcams**: List park streaming webcams
 
 

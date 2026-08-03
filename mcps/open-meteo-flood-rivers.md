@@ -22,13 +22,13 @@ Disaster management agencies, civil engineers, flood insurance underwriters, env
 
 
 ## Available Tools (3)
-- **get_river_discharge**: Useful for flood monitoring and water resource management.
-
-Get river discharge data at 5km resolution
 - **get_flood_forecast**: Data from GloFAS covering up to 210 days of prediction.
 
 Get flood forecast up to 7 months ahead
 - **get_historical_discharge**: Get historical river discharge data (1984–present)
+- **get_river_discharge**: Useful for flood monitoring and water resource management.
+
+Get river discharge data at 5km resolution
 
 
 ## 💬 Prompt Examples

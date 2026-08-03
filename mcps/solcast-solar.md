@@ -82,20 +82,6 @@ EXAMPLES:
 - "GHI data for my location for March 2026" → call with latitude, longitude, start="2026-03-01", end="2026-03-31"
 
 Get historical solar irradiance data for a location
-- **list_rooftop_sites**: Shows site IDs, capacities, and locations for managing multiple solar installations.
-
-USE WHEN:
-- User wants to see all their registered solar sites
-- User needs to find site IDs for other queries
-- User is managing multiple rooftop installations
-- User asks "what solar sites do I have configured"
-
-EXAMPLES:
-- "List all my solar sites" → call with no params
-- "Show my registered rooftop PV systems" → call with no params
-- "What sites do I have in Solcast?" → call with no params
-
-List all configured rooftop PV sites in your Solcast account
 - **get_pv_power_forecasts**: Forecasts are derived from satellite cloud tracking and irradiance data.
 
 USE WHEN:
@@ -191,24 +177,6 @@ EXAMPLES:
 - "Solar forecast for my home system" → call with site_id="your-site-id"
 
 Get PV power forecasts for a specific registered rooftop site
-- **get_site_measured_actuals**: Requires the site to have real measurement integration. Shows exact production data.
-
-USE WHEN:
-- User has telemetry-enabled sites with real measurements
-- User needs exact measured production data (not estimates)
-- User is validating forecast accuracy
-- User asks "what was the exact measured output from my system"
-
-PARAMETERS:
-- site_id (REQUIRED): The site ID with telemetry enabled
-- hours (OPTIONAL): Number of hours of historical data
-
-EXAMPLES:
-- "Measured actuals for telemetry site xyz-789" → call with site_id="xyz-789"
-- "Exact production from my monitored system" → call with site_id="your-telemetry-site-id"
-- "Real production data last week" → call with site_id="xyz-789", hours=168
-
-Get measured PV power output from a registered rooftop site with telemetry
 - **get_solar_summary**: Provides a complete picture of solar resources.
 
 USE WHEN:
@@ -247,6 +215,38 @@ EXAMPLES:
 - "Temperature forecast for next week" → call with latitude, longitude, hours=168
 
 Get weather forecasts including temperature, cloud opacity, and snow depth
+- **list_rooftop_sites**: Shows site IDs, capacities, and locations for managing multiple solar installations.
+
+USE WHEN:
+- User wants to see all their registered solar sites
+- User needs to find site IDs for other queries
+- User is managing multiple rooftop installations
+- User asks "what solar sites do I have configured"
+
+EXAMPLES:
+- "List all my solar sites" → call with no params
+- "Show my registered rooftop PV systems" → call with no params
+- "What sites do I have in Solcast?" → call with no params
+
+List all configured rooftop PV sites in your Solcast account
+- **get_site_measured_actuals**: Requires the site to have real measurement integration. Shows exact production data.
+
+USE WHEN:
+- User has telemetry-enabled sites with real measurements
+- User needs exact measured production data (not estimates)
+- User is validating forecast accuracy
+- User asks "what was the exact measured output from my system"
+
+PARAMETERS:
+- site_id (REQUIRED): The site ID with telemetry enabled
+- hours (OPTIONAL): Number of hours of historical data
+
+EXAMPLES:
+- "Measured actuals for telemetry site xyz-789" → call with site_id="xyz-789"
+- "Exact production from my monitored system" → call with site_id="your-telemetry-site-id"
+- "Real production data last week" → call with site_id="xyz-789", hours=168
+
+Get measured PV power output from a registered rooftop site with telemetry
 
 
 ## 💬 Prompt Examples

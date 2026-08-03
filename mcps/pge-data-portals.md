@@ -41,6 +41,15 @@ Query PG&E grid infrastructure and distribution data
 - **list_all_datasets**: Each dataset includes name, description, ID, and metadata. Use this as a starting point to explore what data is available from PG&E — includes energy usage, EV adoption, solar generation, energy efficiency programs, and grid infrastructure datasets.
 
 List all available datasets in the PG&E Data Portals catalog
+- **query_dataset**: Optional filters can be passed as key-value pairs to narrow results (e.g., zip_code, year, region). Use this to retrieve actual data records from any dataset in the PG&E Data Portals. Dataset IDs are obtained from search_datasets or list_all_datasets.
+
+Query a specific PG&E dataset with optional filters
+- **search_datasets**: Use this to discover available datasets before querying specific data. Returns dataset names, descriptions, IDs, and metadata. Optional query parameter filters results by keyword.
+
+Search the PG&E Data Portals catalog for energy datasets
+- **query_solar_generation**: Use this to analyze solar adoption and production trends. Region can be a county name or service area identifier. Year is YYYY format.
+
+Query solar energy generation data by region and year
 - **query_by_date_range**: Specify the dataset ID and start/end dates to retrieve records within that time period. Use this for time-series analysis across any dataset type. Dataset ID from search_datasets. Dates in YYYY-MM-DD format. This is useful for year-over-year comparisons and trend analysis.
 
 Query any PG&E dataset filtered by a specific date range
@@ -56,15 +65,6 @@ Query PG&E energy efficiency program data
 - **query_energy_usage**: Returns electricity usage aggregated by customer segment (residential, commercial, industrial, agricultural). Use this to analyze energy consumption patterns in specific geographic areas over time. ZIP code format: 5-digit (e.g., "94102"). Dates in YYYY-MM-DD format.
 
 Query PG&E energy consumption data by ZIP code and date range
-- **query_dataset**: Optional filters can be passed as key-value pairs to narrow results (e.g., zip_code, year, region). Use this to retrieve actual data records from any dataset in the PG&E Data Portals. Dataset IDs are obtained from search_datasets or list_all_datasets.
-
-Query a specific PG&E dataset with optional filters
-- **search_datasets**: Use this to discover available datasets before querying specific data. Returns dataset names, descriptions, IDs, and metadata. Optional query parameter filters results by keyword.
-
-Search the PG&E Data Portals catalog for energy datasets
-- **query_solar_generation**: Use this to analyze solar adoption and production trends. Region can be a county name or service area identifier. Year is YYYY format.
-
-Query solar energy generation data by region and year
 
 
 ## 💬 Prompt Examples

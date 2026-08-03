@@ -22,10 +22,9 @@ Connect your **Tripleseat** account to any AI agent — the leading event manage
 
 
 ## Available Tools (8)
-- **list_events**: "What events this week?"
+- **search_contacts**: CRM for event planners.
 
-List events
-- **get_event**: Get event details
+Search contacts
 - **list_bookings**: For venue calendar.
 
 List bookings
@@ -33,9 +32,10 @@ List bookings
 - **list_leads**: For sales pipeline.
 
 List event leads
-- **search_contacts**: CRM for event planners.
+- **list_events**: "What events this week?"
 
-Search contacts
+List events
+- **get_event**: Get event details
 - **list_locations**: For multi-venue management.
 
 List event venues

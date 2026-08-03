@@ -28,14 +28,14 @@ Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline 
 
 
 ## Available Tools (8)
-- **pd_deal_files**: Get files attached to a deal
-- **pd_get_user**: Get user details
 - **pd_list_currencies**: List currencies
 - **pd_list_deal_fields**: List deal custom fields
 - **pd_list_files**: List recent files
 - **pd_list_goals**: List sales goals
-- **pd_list_users**: List Pipedrive users
 - **pd_list_webhooks**: List webhooks
+- **pd_deal_files**: Get files attached to a deal
+- **pd_get_user**: Get user details
+- **pd_list_users**: List Pipedrive users
 
 
 ## 💬 Prompt Examples

@@ -35,17 +35,17 @@ Connect your **NiftyImages** account to your AI agent and take control of your d
 
 
 ## Available Tools (10)
-- **add_datastore_record**: Add record to data store
-- **delete_datastore_record**: Delete record from data store
-- **get_image_stats**: Get image performance stats
 - **get_image**: Get specific image details
 - **get_widget_stats**: Get widget performance stats
-- **list_datastore_fields**: List fields for a data store
 - **list_images**: List all NiftyImages
 - **list_widgets**: ) created in your account.
 
 List all dynamic widgets
 - **update_psd_image**: Update Photoshop layers
+- **list_datastore_fields**: List fields for a data store
+- **add_datastore_record**: Add record to data store
+- **delete_datastore_record**: Delete record from data store
+- **get_image_stats**: Get image performance stats
 - **update_timer**: Update countdown timer date
 
 

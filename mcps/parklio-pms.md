@@ -37,15 +37,15 @@ Parklio is a forward-looking company dedicated to developing smart parking hardw
 - **create_gateway**: Requires lot_id, name, and type (e.g., entry_barrier, exit_camera, lpr_reader). Use this when installing new physical hardware.
 
 Register a new hardware gateway (barrier, reader) to a parking lot
+- **list_gateways**: Use this to audit hardware health and locate offline devices.
+
+List all hardware gateways (barriers, cameras) connected to Parklio
 - **list_displays**: Useful for auditing what drivers see when entering lots.
 
 List digital display screens deployed in parking lots
 - **run_gateway_operation**: Common operations: open_barrier, close_barrier, reboot, reset_error. Use this for remote troubleshooting or manual override of barriers.
 
 Execute a remote operation on a specific gateway device
-- **list_gateways**: Use this to audit hardware health and locate offline devices.
-
-List all hardware gateways (barriers, cameras) connected to Parklio
 - **pms_login**: Returns an authentication token valid for subsequent API calls. Use this to refresh your session token before making other requests.
 
 Authenticate with the Parklio Parking Management System to get a token

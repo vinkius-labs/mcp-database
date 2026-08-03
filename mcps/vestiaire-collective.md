@@ -38,10 +38,6 @@ No more manual price tracking or inventory spreadsheets. Your AI agent becomes y
 
 
 ## Available Tools (9)
-- **analyze_price_trends**: Analyser les tendances de prix pour une marque et catégorie (valorisation du luxe)
-- **get_item_details**: Consulter un article : marque, état, authentification, prix vs. neuf, taille, matière
-- **list_available_brands**: Lister les marques de luxe disponibles (Hermès, Chanel, Louis Vuitton, Dior, etc.)
-- **list_catalog_categories**: Lister les catégories (sacs, chaussures, vêtements, accessoires, bijoux, montres)
 - **list_available_designers**: Lister les créateurs et collections
 - **list_my_selling_items**: Consulter les articles en vente dans votre dressing
 - **search_by_brand**: ) et catégorie.
@@ -53,6 +49,10 @@ Recherche avancée avec filtres multiples : marque, état, prix, couleur, matiè
 - **search_luxury_items**: Fournissez une requête textuelle.
 
 Rechercher des articles de luxe par mots-clés (ex : "Hermès Birkin", "Chanel tweed")
+- **analyze_price_trends**: Analyser les tendances de prix pour une marque et catégorie (valorisation du luxe)
+- **get_item_details**: Consulter un article : marque, état, authentification, prix vs. neuf, taille, matière
+- **list_available_brands**: Lister les marques de luxe disponibles (Hermès, Chanel, Louis Vuitton, Dior, etc.)
+- **list_catalog_categories**: Lister les catégories (sacs, chaussures, vêtements, accessoires, bijoux, montres)
 
 
 ## 💬 Prompt Examples

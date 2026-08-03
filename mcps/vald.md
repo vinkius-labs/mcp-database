@@ -36,14 +36,14 @@ Your AI agent becomes the direct line to your massive vector knowledge base.
 
 
 ## Available Tools (6)
-- **get_engine_info**: Retrieves operational information and health of the Vald engine
-- **get_vector_details**: Retrieves the raw vector data for a specific ID
 - **insert_vector**: Provide a unique ID and the vector as a JSON array.
 
 Inserts a new vector into the Vald index
 - **delete_vector**: This action is irreversible.
 
 Permanently removes a vector from the Vald index
+- **get_engine_info**: Retrieves operational information and health of the Vald engine
+- **get_vector_details**: Retrieves the raw vector data for a specific ID
 - **update_vector**: Provide the existing ID and new vector array.
 
 Updates an existing vector in the Vald index
