@@ -34,16 +34,16 @@ Connect your **Brilliant Made** account to any AI agent and orchestrate your cor
 
 
 ## Available Tools (10)
-- **cancel_order**: Cancel an existing swag order
-- **create_gift_card**: Create a new storefront gift card
 - **create_order**: Place a new swag order
-- **get_inventory_status**: Retrieve real-time inventory status for all products
-- **get_order**: Get details of a specific order
 - **get_product_variant**: Get details of a specific product variant
 - **list_fulfillment_orders**: List all fulfillment orders
 - **list_gift_cards**: List all storefront gift cards
 - **list_orders**: List all swag orders
 - **list_products**: List all available products in the store
+- **cancel_order**: Cancel an existing swag order
+- **create_gift_card**: Create a new storefront gift card
+- **get_order**: Get details of a specific order
+- **get_inventory_status**: Retrieve real-time inventory status for all products
 
 
 ## 💬 Prompt Examples

@@ -36,10 +36,10 @@ Connect your **CartonCloud** account to any AI agent and orchestrate your WMS (W
 
 
 ## Available Tools (12)
-- **search_warehouse_products**: Returns product IDs, names, SKUs, and unit-of-measure metadata.
-
-Search warehouse products and master data
 - **get_consignment**: Get details for a specific transport consignment
+- **search_consignments**: Returns consignment IDs, statuses, and delivery run info.
+
+Search transport consignments in CartonCloud
 - **get_customer**: Get details for a specific customer
 - **get_inbound_order**: Get details for a specific inbound order (purchase order)
 - **get_outbound_order**: Returns full order details including items, references, and delivery info.
@@ -51,15 +51,15 @@ Get details for a specific outbound order (sale order)
 
 List all customers associated with the tenant
 - **list_transport_products**: List transport products available for consignments
-- **search_consignments**: Returns consignment IDs, statuses, and delivery run info.
-
-Search transport consignments in CartonCloud
 - **search_inbound_orders**: Returns order ID, status, customer, warehouse, and arrival date.
 
 Search inbound orders (purchase orders) in CartonCloud
 - **search_outbound_orders**: Returns order ID, status, customer, warehouse, and timestamps.
 
 Search outbound orders (sale orders) in CartonCloud
+- **search_warehouse_products**: Returns product IDs, names, SKUs, and unit-of-measure metadata.
+
+Search warehouse products and master data
 
 
 ## 💬 Prompt Examples

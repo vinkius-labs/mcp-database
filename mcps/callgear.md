@@ -35,16 +35,16 @@ Connect your **CallGear** account to any AI agent and orchestrate your communica
 
 
 ## Available Tools (10)
-- **get_account_info**: Retrieve core account information
-- **get_ad_campaigns_report**: Retrieve daily aggregated statistics for advertising campaigns
+- **list_call_scenarios**: List all configured call scenarios
+- **list_traffic_sources**: List all traffic sources configured in CallGear
+- **list_tags**: List all call and communication tags
 - **get_calls_report**: Retrieve a detailed report of calls for a specific period
 - **get_communications_report**: Retrieve a report covering various communication types (calls, chats, etc.)
 - **get_site_daily_stats**: Retrieve daily statistics for sites
 - **list_ad_campaigns**: List all advertising campaigns
-- **list_call_scenarios**: List all configured call scenarios
-- **list_traffic_sources**: List all traffic sources configured in CallGear
-- **list_tags**: List all call and communication tags
 - **list_users**: List all users in the CallGear account
+- **get_account_info**: Retrieve core account information
+- **get_ad_campaigns_report**: Retrieve daily aggregated statistics for advertising campaigns
 
 
 ## 💬 Prompt Examples

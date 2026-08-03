@@ -36,6 +36,7 @@ Connect your **Broadage Sports** account to any AI agent and orchestrate your sp
 
 ## Available Tools (10)
 - **get_match_events**: Get timeline of match events (goals, cards)
+- **list_tournaments**: List all available sports tournaments
 - **get_match_lineup**: Get starting lineups and substitutes for a match
 - **get_match_stats**: Get detailed match statistics (possession, shots)
 - **get_match_summary**: Get summary and score for a specific match
@@ -44,7 +45,6 @@ Connect your **Broadage Sports** account to any AI agent and orchestrate your sp
 - **list_team_players**: List players for a specific team
 - **list_sports**: List all supported sports
 - **list_match_statuses**: List possible match status definitions
-- **list_tournaments**: List all available sports tournaments
 
 
 ## 💬 Prompt Examples

@@ -32,14 +32,14 @@ Integrate **ContentGroove**, an intelligent video processing engine, directly in
 
 
 ## Available Tools (8)
+- **get_media_details**: Get details of a specific media project
+- **list_media**: List all media projects in ContentGroove
+- **get_media_status**: Check processing status of a media
+- **list_all_clips**: List all AI-generated clips
 - **create_media_from_url**: Import a video from a URL to generate AI highlights
 - **create_direct_upload**: Generate a signed URL for direct video upload
 - **get_clip_details**: Get details of a specific highlight clip
 - **get_media_clips**: List all clips for a specific video
-- **get_media_details**: Get details of a specific media project
-- **get_media_status**: Check processing status of a media
-- **list_all_clips**: List all AI-generated clips
-- **list_media**: List all media projects in ContentGroove
 
 
 ## 💬 Prompt Examples

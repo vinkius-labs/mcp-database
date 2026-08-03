@@ -45,24 +45,6 @@ Your AI becomes an energy analyst, helping you consume electricity when it's gre
 
 
 ## Available Tools (12)
-- **get_best_hour**: Perfect for scheduling energy-intensive activities.
-
-USE WHEN:
-- User asks when is the best time to use energy-intensive appliances
-- User wants to optimize energy consumption for green power or low emissions
-- User needs to schedule operations during clean energy peaks
-- User asks about optimal charging times for EVs or running machinery
-
-PARAMETERS:
-- zip (REQUIRED): German zip code (Postleitzahl) - exactly 5 digits
-- hours (OPTIONAL): Number of consecutive hours needed (default: 1, min: 1, max: 168)
-
-EXAMPLES:
-- "When is the best 3-hour window to run my dishwasher in Berlin 10115?" → call with zip="10115", hours=3
-- "Best time to charge my EV in Munich tonight" → call with zip="80331", hours=6
-- "When should I use high-power appliances today?" → call with zip="70173", hours=2
-
-Find the best hours for energy consumption based on renewable availability and low CO₂ emissions
 - **calculate_co2_offset**: Helps users understand how to neutralize their carbon footprint.
 
 USE WHEN:
@@ -98,21 +80,6 @@ EXAMPLES:
 - "Current CO₂ emissions from electricity in Cologne" → call with zip="50667"
 
 Get real-time CO₂ meter readings for a German zip code
-- **get_co2_prediction**: Shows how carbon-intensive the power grid will be over time.
-
-USE WHEN:
-- User asks about CO₂ emissions or carbon footprint of electricity
-- User wants to know when electricity is cleanest/lowest emissions
-- User needs carbon intensity data for a location
-
-PARAMETERS:
-- zip (REQUIRED): German zip code (Postleitzahl) - exactly 5 digits
-
-EXAMPLES:
-- "What are the CO₂ emissions for Hamburg 20095?" → call with zip="20095"
-- "Show carbon intensity for Frankfurt 60311" → call with zip="60311"
-
-Get CO₂ emissions forecast for electricity consumption in Germany
 - **create_energy_schedule**: Schedules are optimized based on electricity prices, solar generation peaks, CO₂ emissions, or comfort levels.
 
 USE WHEN:
@@ -132,6 +99,39 @@ EXAMPLES:
 - "Optimize my heat pump for 24 hours with lowest emissions in Hamburg" → call with zip="20095", hours=24, optMode="emission"
 
 Create an optimized energy schedule for appliances and devices
+- **get_best_hour**: Perfect for scheduling energy-intensive activities.
+
+USE WHEN:
+- User asks when is the best time to use energy-intensive appliances
+- User wants to optimize energy consumption for green power or low emissions
+- User needs to schedule operations during clean energy peaks
+- User asks about optimal charging times for EVs or running machinery
+
+PARAMETERS:
+- zip (REQUIRED): German zip code (Postleitzahl) - exactly 5 digits
+- hours (OPTIONAL): Number of consecutive hours needed (default: 1, min: 1, max: 168)
+
+EXAMPLES:
+- "When is the best 3-hour window to run my dishwasher in Berlin 10115?" → call with zip="10115", hours=3
+- "Best time to charge my EV in Munich tonight" → call with zip="80331", hours=6
+- "When should I use high-power appliances today?" → call with zip="70173", hours=2
+
+Find the best hours for energy consumption based on renewable availability and low CO₂ emissions
+- **get_co2_prediction**: Shows how carbon-intensive the power grid will be over time.
+
+USE WHEN:
+- User asks about CO₂ emissions or carbon footprint of electricity
+- User wants to know when electricity is cleanest/lowest emissions
+- User needs carbon intensity data for a location
+
+PARAMETERS:
+- zip (REQUIRED): German zip code (Postleitzahl) - exactly 5 digits
+
+EXAMPLES:
+- "What are the CO₂ emissions for Hamburg 20095?" → call with zip="20095"
+- "Show carbon intensity for Frankfurt 60311" → call with zip="60311"
+
+Get CO₂ emissions forecast for electricity consumption in Germany
 - **get_dispatch**: Shows how much renewable energy is being fed into the grid and its composition.
 
 USE WHEN:
