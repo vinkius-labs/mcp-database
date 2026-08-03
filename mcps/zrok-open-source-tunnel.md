@@ -35,18 +35,18 @@ No more manual CLI commands to check if your tunnel is still up. Your AI acts as
 
 
 ## Available Tools (10)
+- **get_account**: Get account details and limits
+- **create_share**: ).
+
+Create a new share (public or private)
+- **delete_share**: Delete a share
+- **register_account**: Register a new zrok account
 - **disable_environment**: Disable an environment
 - **enable_environment**: Enable a new environment
 - **get_share**: Get details for a specific share
 - **list_environments**: List all enabled environments
 - **list_shares**: List all active shares
 - **login_account**: Authenticate and receive a token
-- **register_account**: Register a new zrok account
-- **get_account**: Get account details and limits
-- **create_share**: ).
-
-Create a new share (public or private)
-- **delete_share**: Delete a share
 
 
 ## 💬 Prompt Examples

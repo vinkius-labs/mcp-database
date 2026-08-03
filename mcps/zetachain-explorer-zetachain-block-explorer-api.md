@@ -33,6 +33,7 @@ Connect to the **ZetaChain Explorer** and gain deep visibility into the ZetaChai
 
 
 ## Available Tools (17)
+- **get_transaction**: Get transaction details by hash
 - **get_address_internal_transactions**: Get internal transactions for an address
 - **get_address_token_balances**: Get token balances for an address
 - **get_address_tokens**: Get tokens owned by an address
@@ -48,7 +49,6 @@ Connect to the **ZetaChain Explorer** and gain deep visibility into the ZetaChai
 
 Get internal transactions for a specific transaction
 - **get_transaction_logs**: Get logs for a specific transaction
-- **get_transaction**: Get transaction details by hash
 - **list_blocks**: List recent blocks on ZetaChain
 - **list_tokens**: List tokens on ZetaChain
 - **list_transactions**: List recent transactions on ZetaChain

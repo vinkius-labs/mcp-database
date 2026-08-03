@@ -33,10 +33,10 @@ Connect to **Writer**, the full-stack generative AI platform for the enterprise.
 
 
 ## Available Tools (24)
+- **download_file**: Download the binary content of a file
 - **analyze_vision**: Analyze images or documents using a prompt
 - **ask_question**: Ask a question against one or more Knowledge Graphs (RAG)
 - **chat_completion**: Generate a chat completion using Writer models
-- **download_file**: Download the binary content of a file
 - **generate_application_content_async**: Asynchronous generation using a no-code application (returns job_id)
 - **generate_application_content**: Synchronous generation using a no-code application
 - **get_application_job**: Retrieve job status and result for an application job

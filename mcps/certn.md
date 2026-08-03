@@ -34,8 +34,6 @@ Connect your **Certn** account to any AI agent to streamline your background scr
 
 
 ## Available Tools (18)
-- **add_hr_packages**: Add checks to an existing HR application
-- **create_pm_property**: Create a new property
 - **get_hr_applicant**: Retrieve details/status of a specific HR application
 - **get_hr_report_link**: Create a hosted PDF link for an HR report (valid for 1 hour)
 - **get_hr_report_web**: Download HR report as HTML
@@ -44,13 +42,15 @@ Connect your **Certn** account to any AI agent to streamline your background scr
 - **list_hr_applicants**: List all HR applications
 - **list_listings**: List all rental listings
 - **list_packages**: List background check packages
+- **quick_pm_application**: Screen a tenant instantly for Property Management
+- **add_hr_packages**: Add checks to an existing HR application
+- **create_pm_property**: Create a new property
 - **list_pm_applicants**: List all PM applications
 - **list_pm_properties**: List all properties
 - **list_superteams**: List superteams
 - **list_teams**: List teams
 - **list_users**: List users
 - **quick_hr_application**: Screen an HR applicant instantly (Quickscreen)
-- **quick_pm_application**: Screen a tenant instantly for Property Management
 - **get_hr_report_pdf**: Download HR report as PDF
 
 

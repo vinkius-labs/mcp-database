@@ -34,6 +34,8 @@ Connect your **Assertible** account to any AI agent to streamline your API testi
 
 
 ## Available Tools (7)
+- **get_service_status_badge**: Get the status badge URL and markdown for a service
+- **create_deployment**: Create a deployment and trigger tests
 - **get_test_status_badge**: Get the status badge URL and markdown for a specific test
 - **run_service_tests**: Run all tests for a service
 - **run_specific_test**: Run a specific test
@@ -43,8 +45,6 @@ Sync a specification (OpenAPI, Swagger, Postman)
 - **validate_json**: No authentication required.
 
 Validate a JSON document against a JSON Schema Draft 4
-- **create_deployment**: Create a deployment and trigger tests
-- **get_service_status_badge**: Get the status badge URL and markdown for a service
 
 
 ## 💬 Prompt Examples

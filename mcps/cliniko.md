@@ -36,7 +36,6 @@ Stop switching between tabs to check patient details or practitioner availabilit
 
 
 ## Available Tools (14)
-- **update_appointment**: Update an appointment
 - **list_appointments**: Supports filtering via query parameters.
 
 List all appointments
@@ -46,6 +45,7 @@ List all appointments
 List all patients
 - **list_practitioners**: List all practitioners
 - **list_treatment_notes**: List treatment notes for a patient
+- **update_appointment**: Update an appointment
 - **update_patient**: Update patient details
 - **create_appointment**: Create a new appointment
 - **create_patient**: Create a new patient

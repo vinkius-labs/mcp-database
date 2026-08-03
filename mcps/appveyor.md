@@ -34,6 +34,9 @@ Connect your **AppVeyor** account to any AI agent to streamline your DevOps work
 
 
 ## Available Tools (28)
+- **update_role**: Update an existing role
+- **update_collaborator**: Update an existing collaborator
+- **update_user**: Update an existing user
 - **cancel_build**: Cancel a build
 - **cancel_deployment**: Cancel a deployment
 - **delete_collaborator**: Delete a collaborator
@@ -55,9 +58,6 @@ Connect your **AppVeyor** account to any AI agent to streamline your DevOps work
 - **rerun_build**: Re-run a build
 - **start_build**: Start a new build
 - **start_deployment**: Start a deployment
-- **update_collaborator**: Update an existing collaborator
-- **update_role**: Update an existing role
-- **update_user**: Update an existing user
 - **add_collaborator**: Add a new collaborator
 - **add_project**: Add a new project
 - **add_role**: Add a new role

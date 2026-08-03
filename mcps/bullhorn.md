@@ -35,11 +35,15 @@ No more manual searching through complex ATS interfaces. Your AI acts as a dedic
 
 
 ## Available Tools (14)
+- **upsert_data_hub_records**: Provide the payload as a JSON string.
+
+Upsert records into Bullhorn Data Hub
 - **create_entity**: The data must be a valid JSON string representing the entity properties.
 
 Create a new Bullhorn entity
 - **create_event_subscription**: Create an event subscription
 - **delete_entity**: Delete a Bullhorn entity
+- **delete_event_subscription**: Delete an event subscription
 - **find_data_hub_records**: Provide the criteria as a JSON string.
 
 Find records in Bullhorn Data Hub
@@ -61,10 +65,6 @@ Get to-many associations for an entity
 - **update_entity**: The data must be a valid JSON string containing the fields to update.
 
 Update an existing Bullhorn entity
-- **upsert_data_hub_records**: Provide the payload as a JSON string.
-
-Upsert records into Bullhorn Data Hub
-- **delete_event_subscription**: Delete an event subscription
 
 
 ## 💬 Prompt Examples

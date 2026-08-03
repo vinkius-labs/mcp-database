@@ -37,6 +37,7 @@ Connect your **Commerce.js** (Chec) account to any AI agent and take full contro
 - **get_order**: Requires Secret Key.
 
 Retrieve a specific order
+- **generate_checkout_token**: Generate a checkout token
 - **get_product**: Retrieve a specific product
 - **list_categories**: List categories
 - **list_orders**: Requires Secret Key.
@@ -46,10 +47,9 @@ List orders
 
 List products in the store
 - **update_cart_item**: Update a cart item
+- **create_cart**: Create or retrieve a cart
 - **add_to_cart**: Add an item to a cart
 - **capture_order**: Capture an order
-- **create_cart**: Create or retrieve a cart
-- **generate_checkout_token**: Generate a checkout token
 
 
 ## 💬 Prompt Examples

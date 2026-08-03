@@ -36,11 +36,11 @@ No more manual searching through wikis. Your AI acts as a master duelist with in
 
 
 ## Available Tools (6)
-- **list_archetypes**: List all card archetypes
-- **get_card_info**: Retrieve detailed information for one or multiple cards
 - **get_card_set_info**: Get information about a specific card set
 - **list_card_sets**: List all Yu-Gi-Oh card sets
 - **check_db_version**: Check database version
+- **list_archetypes**: List all card archetypes
+- **get_card_info**: Retrieve detailed information for one or multiple cards
 - **get_random_card**: Caching is disabled for this endpoint.
 
 Get a random Yu-Gi-Oh card

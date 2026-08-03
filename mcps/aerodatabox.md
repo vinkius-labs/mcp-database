@@ -34,6 +34,7 @@ Connect **AeroDataBox** to your AI agent to fetch comprehensive global aviation 
 
 ## Available Tools (23)
 - **get_airport_delays**: Get current airport delays
+- **get_nearest_flight**: Get real-time status of the nearest flight by flight number
 - **get_airport_routes_stats**: Get statistical route frequencies for an airport
 - **get_airport_runways**: Get detailed physical and operational runway data for an airport
 - **get_airports_by_ip**: Find closest airports based on IP address
@@ -44,10 +45,9 @@ Connect **AeroDataBox** to your AI agent to fetch comprehensive global aviation 
 - **get_flight_by_date**: Get flight status on a specific date
 - **get_flight_delays**: Get historical punctuality statistics for a specific flight number
 - **get_flight_history**: Get flight history and schedule
-- **get_nearest_flight**: Get real-time status of the nearest flight by flight number
 - **list_alert_subscriptions**: List all flight alert webhook subscriptions
 - **refill_alert_balance**: Refill flight alert credit balance
-- **get_global_delays**: Get current global delays
+- **get_global_delays**: Get current globalThis delays
 - **get_alert_subscription**: Get details of a specific flight alert subscription
 - **convert_alert_subscription**: Convert an old subscription to the credit-based system
 - **create_flight_alert**: Create a flight alert webhook subscription
@@ -55,7 +55,7 @@ Connect **AeroDataBox** to your AI agent to fetch comprehensive global aviation 
 - **get_airline_fleet**: Get active aircraft operated by a given airline
 - **get_airport_delays_historical**: Get historical airport delays for a specific date
 - **get_airport_delays_period**: Get historical airport delays for a period
-- **get_global_delays_historical**: Get historical global delays
+- **get_global_delays_historical**: Get historical globalThis delays
 
 
 ## 💬 Prompt Examples

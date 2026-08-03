@@ -34,6 +34,9 @@ Connect your **Zealy** community to any AI agent to streamline your Web3 and com
 
 
 ## Available Tools (23)
+- **list_secrets**: Fetches secrets configured for the community.
+
+Retrieve community secrets used in API tasks
 - **check_member**: Verify if a user belongs to a community
 - **create_quest**: Create a new quest
 - **create_secret**: Creates a new secret for the community.
@@ -49,9 +52,6 @@ Get the all-time or sprint leaderboard
 - **get_review**: Retrieve a specific review by ID
 - **get_user**: Fetch user details by Zealy ID
 - **list_modules**: List all modules (categories) in a community
-- **list_secrets**: Fetches secrets configured for the community.
-
-Retrieve community secrets used in API tasks
 - **search_users**: Search for users by social handles
 - **update_quest**: Update an existing quest
 - **list_quests**: List all quests in a community

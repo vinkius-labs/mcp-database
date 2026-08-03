@@ -40,12 +40,12 @@ Connect your **Vimeo** account to any AI agent to take full control of your vide
 - **get_me**: Get the authenticated user profile
 - **get_user**: Get a specific user profile
 - **get_video**: Retrieve metadata for a specific video
-- **list_my_videos**: List all videos belonging to the authenticated user
-- **list_user_albums**: List a user albums (showcases)
 - **list_user_followers**: List a user followers
 - **list_user_videos**: Get a list of videos uploaded by a user
 - **search_videos**: Search for videos on Vimeo
 - **update_video**: Update video metadata
+- **list_my_videos**: List all videos belonging to the authenticated user
+- **list_user_albums**: List a user albums (showcases)
 - **create_video_upload**: Create a video upload ticket
 
 

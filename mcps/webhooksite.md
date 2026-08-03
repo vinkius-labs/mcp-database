@@ -34,22 +34,22 @@ Connect **Webhook.site** to your AI agent to instantly create, manage, and inspe
 
 
 ## Available Tools (17)
-- **create_global_variable**: Create a global variable
 - **create_token**: Create a new Webhook.site token (URL)
+- **get_token**: Get details for a specific token
+- **list_actions**: List custom actions for a token
+- **list_global_variables**: List globalThis variables
+- **list_tokens**: List Webhook.site tokens
+- **update_global_variable**: Update a globalThis variable
+- **update_token**: Update an existing token
+- **create_global_variable**: Create a globalThis variable
 - **delete_action**: Delete a custom action
-- **delete_global_variable**: Delete a global variable
+- **delete_global_variable**: Delete a globalThis variable
 - **delete_requests**: Delete multiple requests for a token
 - **delete_token**: Delete a token
 - **execute_action**: Execute actions for a specific request
 - **get_requests**: Get requests captured by a token
-- **get_token**: Get details for a specific token
-- **list_actions**: List custom actions for a token
-- **list_global_variables**: List global variables
-- **list_tokens**: List Webhook.site tokens
 - **set_response**: Set dynamic response for a specific request
 - **update_action**: Update a custom action
-- **update_global_variable**: Update a global variable
-- **update_token**: Update an existing token
 - **create_action**: Create a custom action for a token
 
 
