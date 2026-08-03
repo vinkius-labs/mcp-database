@@ -14,11 +14,11 @@ This MCP server provides precise tools to calculate the elapsed time between two
 
 
 ## Available Tools (3)
-- **detect_day_transition**: Detect if a period crosses midnight
-- **summarize_time_difference**: Format duration into a string
 - **calculate_time_span**: Handles midnight transitions.
 
 Calculate exact duration between two times
+- **detect_day_transition**: Detect if a period crosses midnight
+- **summarize_time_difference**: Format duration into a string
 
 
 ## 💬 Prompt Examples

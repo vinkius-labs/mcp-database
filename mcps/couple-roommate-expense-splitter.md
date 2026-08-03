@@ -14,11 +14,11 @@ An essential tool for partners and roommates to manage shared finances equitably
 
 
 ## Available Tools (5)
-- **calculate_assignment_obligation**: Calculates individual responsibilities when partners are assigned specific categories of bills
 - **calculate_amortized_installment**: Calculates the monthly cost for a one-off large purchase to be spread across multiple months
-- **generate_monthly_reconciliation**: Determines exactly how much money must be transferred between partners to settle the month's expenses
+- **calculate_assignment_obligation**: Calculates individual responsibilities when partners are assigned specific categories of bills
 - **calculate_proportional_split_amount**: Determines the specific currency amount each person is responsible for based on their calculated income weights
 - **compute_income_weights**: Calculates the percentage share of total household income for each partner
+- **generate_monthly_reconciliation**: Determines exactly how much money must be transferred between partners to settle the month's expenses
 
 
 ## 💬 Prompt Examples

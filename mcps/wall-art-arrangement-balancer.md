@@ -14,8 +14,8 @@ The Wall Art Arrangement Balancer is a precision calculation engine designed to 
 
 
 ## Available Tools (3)
-- **arrangement_fit**: Check if a proposed wall art arrangement fits within the available wall width
 - **visual_balance**: Analyze the visual balance of an arrangement based on frame area differences
+- **arrangement_fit**: Check if a proposed wall art arrangement fits within the available wall width
 - **drill_coordinates**: Calculate exact drill hole coordinates for a wall art arrangement
 
 

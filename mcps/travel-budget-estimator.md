@@ -14,9 +14,9 @@ The Travel Budget Estimator provides a detailed breakdown of daily expenses for 
 
 
 ## Available Tools (3)
-- **fetch_city_cost_data**: Fetch cost data for a specific city
 - **compare_city_budgets**: Compare budgets between two cities
 - **calculate_personal_daily_budget**: Calculate a daily budget for a trip
+- **fetch_city_cost_data**: Fetch cost data for a specific city
 
 
 ## 💬 Prompt Examples

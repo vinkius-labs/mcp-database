@@ -14,9 +14,9 @@ This MCP server provides tools to calculate the feasibility of packing 3-dimensi
 
 
 ## Available Tools (3)
-- **calculate_utilization_efficiency**: Measure space usage efficiency
 - **check_single_item_compatibility**: Verify if one item fits in a container
 - **evaluate_packing_feasibility**: Determine if boxes can fit in a container
+- **calculate_utilization_efficiency**: Measure space usage efficiency
 
 
 ## 💬 Prompt Examples

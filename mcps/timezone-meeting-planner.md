@@ -14,9 +14,9 @@ A specialized utility for scheduling meetings across multiple cities. It analyze
 
 
 ## Available Tools (4)
+- **schedule_matrix**: Generate a 24-hour meeting availability matrix for multiple timezones
 - **dst_transitions**: Identify upcoming Daylight Saving Time transitions for specific timezones
 - **optimal_slots**: Find the best meeting time slots across multiple timezones
-- **schedule_matrix**: Generate a 24-hour meeting availability matrix for multiple timezones
 - **timezone_search**: Search for IANA timezones by city or region name
 
 

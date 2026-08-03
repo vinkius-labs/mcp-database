@@ -14,10 +14,10 @@ This MCP server provides a personalized orchestration engine for skincare. Use `
 
 
 ## Available Tools (4)
+- **optimize_skincare_routine**: Generates a structured morning and evening application sequence for a user
 - **predict_product_depletion**: Calculates when a user will run out of a specific product
 - **validate_ingredient_pairing**: Checks if two specific active ingredients can safely coexist in the same application session
 - **generate_patch_test_schedule**: Creates a monitoring timeline for testing new, high-potintency products
-- **optimize_skincare_routine**: Generates a structured morning and evening application sequence for a user
 
 
 ## 💬 Prompt Examples

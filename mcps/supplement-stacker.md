@@ -14,8 +14,8 @@ The Supplement Stacker MCP server helps you manage your wellness routine by iden
 
 
 ## Available Tools (4)
-- **validate_cumulative_intake**: Validate cumulative nutrient intake
 - **check_nutrient_interference**: Check for nutrient interactions
+- **validate_cumulative_intake**: Validate cumulative nutrient intake
 - **create_optimal_schedule**: Create an optimal supplement schedule
 - **fetch_substance_properties**: Fetch properties of a substance
 

@@ -15,9 +15,9 @@ This MCP server provides a comprehensive way to estimate energy expenditure. Use
 
 ## Available Tools (4)
 - **calculate_hr_burn**: Calculate calories burned based on heart rate
+- **list_activities**: List available physical activities and their MET values
 - **calculate_met_burn**: Calculate calories burned based on MET value and duration
 - **get_food_equivalence**: Find food equivalents for a specific calorie amount
-- **list_activities**: List available physical activities and their MET values
 
 
 ## 💬 Prompt Examples

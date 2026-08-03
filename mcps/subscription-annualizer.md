@@ -14,9 +14,9 @@ The Subscription Annualizer MCP server provides a precise way to calculate the s
 
 
 ## Available Tools (3)
-- **summarize_portfolio**: Calculates total aggregate expenditure for all subscriptions
 - **normalize_subscription**: Converts a single subscription frequency to monthly and annual costs
 - **rank_subscriptions**: Ranks subscriptions from most to least expensive
+- **summarize_portfolio**: Calculates total aggregate expenditure for all subscriptions
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ The Fuel Cost Trip Calculator is an estimation engine for planning multi-leg jou
 
 
 ## Available Tools (4)
+- **vehicle_efficiency**: Lookup efficiency for a specific vehicle
+- **trip_expenses**: Calculate total expenses for a multi-leg trip
 - **distance_adjustment**: Get regional road distance adjustment factor
 - **fuel_price**: Lookup fuel price for a location
-- **trip_expenses**: Calculate total expenses for a multi-leg trip
-- **vehicle_efficiency**: Lookup efficiency for a specific vehicle
 
 
 ## 💬 Prompt Examples

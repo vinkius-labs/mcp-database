@@ -14,9 +14,9 @@ This MCP server acts as a bridge between your time-tracking data and financial i
 
 
 ## Available Tools (4)
+- **get_complexity_tiers**: Retrieve complexity tier information
 - **calculate_payment**: Calculate total payment amount
 - **calculate_work_hours**: Calculate total work hours after breaks
-- **get_complexity_tiers**: Retrieve complexity tier information
 - **validate_shifts**: Validate work shifts for logical errors
 
 

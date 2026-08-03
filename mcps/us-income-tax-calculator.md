@@ -14,12 +14,12 @@ A specialized calculation engine for determining US federal, state, and local in
 
 
 ## Available Tools (4)
-- **apply_credits_and_deductions**: Calculate final tax adjustments
-- **calculate_federal_tax_layers**: Calculate split between ordinary, capital gains, and NIIT
 - **calculate_self_employment_impact**: Calculate SECA tax and deductible portion
 - **calculate_state_local_taxation**: g., NYC, DC).
 
 Compute combined state and local tax liability
+- **apply_credits_and_deductions**: Calculate final tax adjustments
+- **calculate_federal_tax_layers**: Calculate split between ordinary, capital gains, and NIIT
 
 
 ## 💬 Prompt Examples

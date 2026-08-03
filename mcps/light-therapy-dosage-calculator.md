@@ -14,10 +14,10 @@ The Light Therapy Dosage Calculator provides exact exposure durations, energy de
 
 
 ## Available Tools (4)
-- **generate_treatment_schedule**: Provides a recurring frequency recommendation
 - **compute_exposure_metrics**: Calculates required treatment duration and energy density
 - **lookup_device_specs**: Retrieves technical specifications for a known light therapy device
 - **validate_treatment_safety**: Evaluates a planned treatment against safety protocols
+- **generate_treatment_schedule**: Provides a recurring frequency recommendation
 
 
 ## 💬 Prompt Examples

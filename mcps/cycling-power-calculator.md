@@ -14,9 +14,9 @@ A professional utility for cyclists to estimate physiological power requirements
 
 
 ## Available Tools (4)
-- **calculate_power_requirement**: Calculate the power required to maintain a specific speed on given terrain
 - **get_ftp_zones**: Convert FTP into training intensity zones
 - **get_positional_cda**: Retrieve the CDA value for a specific riding posture
+- **calculate_power_requirement**: Calculate the power required to maintain a specific speed on given terrain
 - **calculate_training_stress**: Calculate the Training Stress Score (TSS)
 
 

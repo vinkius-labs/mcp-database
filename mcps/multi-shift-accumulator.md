@@ -14,9 +14,9 @@ The Multi-Shift Accumulator MCP server allows you to precisely calculate net wor
 
 
 ## Available Tools (3)
+- **format_minutes_to_hhmm**: Convert raw minutes into HH:MM format
 - **calculate_shift_duration**: Calculate the duration of a single shift in minutes
 - **calculate_total_net_time**: Calculate total net work time across multiple shifts minus breaks
-- **format_minutes_to_hhmm**: Convert raw minutes into HH:MM format
 
 
 ## 💬 Prompt Examples
