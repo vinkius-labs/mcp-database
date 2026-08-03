@@ -29,9 +29,6 @@ Connect **CocktailFyi**, the comprehensive cocktail database, to any AI agent an
 
 
 ## Available Tools (12)
-- **get_cocktail**: Get detailed cocktail information
-- **get_cocktails_by_category**: Get cocktails filtered by category
-- **get_ingredient**: Get detailed ingredient information
 - **get_cocktail_stats**: Get CocktailFyi database statistics
 - **list_categories**: List cocktail categories
 - **list_cocktails**: Each cocktail includes name, category, glass type, alcoholic status, difficulty, prep time, ABV, calories, flavor profile, ingredients, and instructions.
@@ -39,14 +36,17 @@ Connect **CocktailFyi**, the comprehensive cocktail database, to any AI agent an
 List cocktails with pagination
 - **list_faqs**: List frequently asked questions about cocktails
 - **list_glossary**: List cocktail glossary terms
+- **get_cocktail**: Get detailed cocktail information
+- **get_ingredient**: Get detailed ingredient information
 - **list_guides**: List cocktail-making guides
+- **search_cocktails**: Returns results matching the query term in cocktail names, ingredient names, or guide titles.
+
+Search cocktails by name or ingredients
+- **get_cocktails_by_category**: Get cocktails filtered by category
 - **list_ingredients**: List all cocktail ingredients
 - **list_techniques**: with descriptions of when and how to use each.
 
 List cocktail preparation techniques
-- **search_cocktails**: Returns results matching the query term in cocktail names, ingredient names, or guide titles.
-
-Search cocktails by name or ingredients
 
 
 ## 💬 Prompt Examples

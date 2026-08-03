@@ -34,17 +34,17 @@ Connect to the **Dados RS** portal and explore the public data infrastructure of
 
 
 ## Available Tools (11)
-- **search_datastore_sql**: SQL Query on DataStore
-- **search_datastore**: Search DataStore
 - **list_groups**: List groups
 - **show_group**: Show group details
+- **show_resource**: Show resource details
+- **search_datastore_sql**: SQL Query on DataStore
+- **search_datastore**: Search DataStore
 - **list_organizations**: List organizations
 - **show_organization**: Show organization details
 - **list_datasets**: List all datasets (packages)
 - **search_datasets**: Search datasets (packages)
 - **show_dataset**: Show dataset details
 - **search_resources**: Search resources
-- **show_resource**: Show resource details
 
 
 ## 💬 Prompt Examples

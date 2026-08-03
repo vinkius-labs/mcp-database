@@ -34,7 +34,6 @@ Connect to the **GSA Per Diem Rates** server to instantly retrieve federal trave
 
 
 ## Available Tools (6)
-- **get_conus_lodging**: Get CONUS lodging rates for a specific year
 - **get_mie_breakdown**: Get M&IE breakdown rates for a specific year
 - **get_rates_by_city**: Get per diem rates for a specific city and state
 - **get_rates_by_state**: Get per diem rates for all counties and cities in a state
@@ -42,6 +41,7 @@ Connect to the **GSA Per Diem Rates** server to instantly retrieve federal trave
 - **get_zip_mapping**: Useful for high volume requests.
 
 Get ZIP code to DID mapping for a specific year
+- **get_conus_lodging**: Get CONUS lodging rates for a specific year
 
 
 ## 💬 Prompt Examples

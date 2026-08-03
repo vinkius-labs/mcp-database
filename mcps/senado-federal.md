@@ -34,16 +34,8 @@ Connect to the **Senado Federal** Open Data API to monitor the Brazilian legisla
 
 
 ## Available Tools (21)
-- **get_comissao_composicao**: Get current members of a committee
-- **get_comissao**: Get detailed information about a specific committee
 - **get_legislatura_atual**: Get details of the current legislature
 - **get_legislatura**: Get details of a specific legislature
-- **list_agenda_reuniao**: List scheduled committee meetings
-- **list_materias_tipos**: g., PL, PEC).
-
-List types of legislative proposals
-- **get_materia_movimentacoes**: Get history of actions on a proposal
-- **get_materia_relatorias**: Get rapporteurs assigned to a proposal
 - **get_materia**: Get detailed information about a specific proposal
 - **get_senador_cargos**: Get positions held by a senator
 - **get_senador_filiacoes**: Get party affiliations of a senator
@@ -54,9 +46,17 @@ List types of legislative proposals
 - **list_comissoes**: List all committees
 - **list_legislaturas**: List all legislatures
 - **list_materias_atualizacoes**: List recently updated legislative proposals
+- **list_materias_tipos**: g., PL, PEC).
+
+List types of legislative proposals
+- **list_votacoes**: List recent votes
+- **get_comissao_composicao**: Get current members of a committee
+- **get_comissao**: Get detailed information about a specific committee
+- **list_agenda_reuniao**: List scheduled committee meetings
+- **get_materia_movimentacoes**: Get history of actions on a proposal
+- **get_materia_relatorias**: Get rapporteurs assigned to a proposal
 - **list_senadores_afastados**: List senators currently on leave
 - **list_senadores_atual**: List senators currently in office
-- **list_votacoes**: List recent votes
 
 
 ## 💬 Prompt Examples

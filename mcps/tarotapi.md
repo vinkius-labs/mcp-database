@@ -39,12 +39,12 @@ Get a random tarot card for a daily reading
 - **get_multiple_random_cards**: Useful for multi-card spreads like three-card past/present/future readings or Celtic Cross layouts. Returns up to 78 cards (full deck).
 
 Get multiple random tarot cards for a spread
-- **list_all_cards**: Returns card names, numbers, arcana types, suits, and short names. Use this to browse the full deck or find card identifiers for detailed lookups.
-
-List all 78 tarot cards
 - **search_cards**: Supports searching by upright meaning, reversed meaning, or general text query. Returns all cards that match the search criteria with full card details.
 
 Search tarot cards by meaning or keywords
+- **list_all_cards**: Returns card names, numbers, arcana types, suits, and short names. Use this to browse the full deck or find card identifiers for detailed lookups.
+
+List all 78 tarot cards
 
 
 ## 💬 Prompt Examples

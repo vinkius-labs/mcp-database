@@ -34,9 +34,9 @@ Equip your AI agent with a source of canine joy via the **Dog CEO** MCP server. 
 
 
 ## Available Tools (3)
-- **get_dog_by_breed**: Get a dog image by breed
 - **list_dog_breeds**: List all dog breeds
 - **get_random_dog_image**: Get a random dog image
+- **get_dog_by_breed**: Get a dog image by breed
 
 
 ## 💬 Prompt Examples

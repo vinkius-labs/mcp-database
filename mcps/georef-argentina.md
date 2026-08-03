@@ -34,19 +34,19 @@ Connect your AI agent to the official **Georef Argentina** service to access pre
 
 
 ## Available Tools (7)
-- **get_departamentos**: Get a list of departments in Argentina
-- **normalize_direccion**: g., "Av. Mayo 100").
-
-Normalize a full address string into its components
 - **get_localidades**: Get a list of localities in Argentina
-- **get_municipios**: Get a list of municipalities in Argentina
-- **get_provincias**: Can filter by ID or name.
-
-Get a list of provinces in Argentina
 - **reverse_geocoding**: ) for lat/lon.
 
 Get geographic location for a given set of coordinates
 - **get_vias**: Get a list of streets (vías) in Argentina
+- **get_departamentos**: Get a list of departments in Argentina
+- **normalize_direccion**: g., "Av. Mayo 100").
+
+Normalize a full address string into its components
+- **get_municipios**: Get a list of municipalities in Argentina
+- **get_provincias**: Can filter by ID or name.
+
+Get a list of provinces in Argentina
 
 
 ## 💬 Prompt Examples
