@@ -36,13 +36,13 @@ Connect your **Alchemer (formerly SurveyGizmo)** account to your AI agent to unl
 
 ## Available Tools (10)
 - **list_surveys**: List account surveys
+- **list_survey_reports**: List survey reports
+- **list_survey_campaigns**: List distribution campaigns
 - **get_survey_details**: Get survey metadata
 - **list_survey_questions**: List survey questions
 - **get_question_details**: Get question metadata
 - **list_survey_responses**: List survey submissions
 - **get_response_details**: Get response data
-- **list_survey_reports**: List survey reports
-- **list_survey_campaigns**: List distribution campaigns
 - **list_contact_lists**: List survey contacts
 - **get_account_usage**: Check account status
 

@@ -44,13 +44,8 @@ No more switching between your IDE and the Weblate dashboard to check translatio
 - **get_group**: Get group details (roles, projects, components)
 - **get_language**: Get language details (plural formulas, aliases)
 - **get_project**: Get project details
-- **get_role**: Get role details and permission codenames
-- **get_user**: Get detailed user information
-- **list_groups**: List Weblate groups
-- **get_language_statistics**: Global statistics for a language
 - **list_languages**: List all languages
 - **list_user_notifications**: List user notification subscriptions
-- **manage_user_notifications**: Manage user notification subscriptions
 - **list_project_components**: List components within a project
 - **get_project_file_url**: Get the URL to download all translations as a ZIP archive
 - **list_project_labels**: Manage project labels
@@ -60,12 +55,17 @@ No more switching between your IDE and the Weblate dashboard to check translatio
 - **list_projects**: List all projects
 - **list_roles**: List roles associated with the user
 - **get_root**: Get Weblate API root entry point
-- **update_user**: Update user details
-- **get_user_contributions**: List translations with user contributions
-- **get_user_statistics**: Get user translation statistics
 - **list_users**: Requires management permissions or returns self.
 
 List Weblate users
+- **get_role**: Get role details and permission codenames
+- **get_user**: Get detailed user information
+- **list_groups**: List Weblate groups
+- **get_language_statistics**: Global statistics for a language
+- **manage_user_notifications**: Manage user notification subscriptions
+- **update_user**: Update user details
+- **get_user_contributions**: List translations with user contributions
+- **get_user_statistics**: Get user translation statistics
 - **add_group_admins**: Add team administrators to a group
 - **add_group_roles**: Associate roles with a group
 - **create_group**: Create a new group

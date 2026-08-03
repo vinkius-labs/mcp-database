@@ -35,9 +35,9 @@ Connect your **AcademyOcean** account to your AI agent to streamline corporate e
 
 
 ## Available Tools (4)
+- **list_courses**: List all available courses
 - **list_learners**: List all academy learners
 - **invite_learner**: Invite a new learner
-- **list_courses**: List all available courses
 - **get_learner_progress**: Get course progress for learners
 
 

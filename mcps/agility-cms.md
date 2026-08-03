@@ -34,13 +34,13 @@ Connect your **Agility CMS** instance to your AI agent and turn it into the ulti
 
 
 ## Available Tools (10)
-- **get_page_layout**: Retrieve the layout and structural modules of a single Page
-- **get_site_flat_router**: Retrieve the exact flat list of all CMS routes/pages
 - **count_reference_items**: Get the total size/count of items in a specific Reference List
 - **get_media_gallery**: Retrieve a specific media gallery mapping containing photos
 - **get_single_item**: g., an article body) knowing its numeric content ID.
 
 Retrieve a single Agility CMS content item by its ID
+- **get_page_layout**: Retrieve the layout and structural modules of a single Page
+- **get_site_flat_router**: Retrieve the exact flat list of all CMS routes/pages
 - **get_site_tree**: Requires the target channel name.
 
 Retrieve the nested sitemap architecture of a digital channel

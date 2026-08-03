@@ -37,11 +37,11 @@ Connect your **Adrecord (powered by Adtraction)** affiliate account to your AI a
 ## Available Tools (5)
 - **list_programs**: List advertiser programs
 - **get_program_details**: Get program metadata
+- **list_channels**: List media channels
+- **get_product_feed**: Fetch advertiser product data
 - **list_transactions**: Filterable by status.
 
 List sales and leads
-- **list_channels**: List media channels
-- **get_product_feed**: Fetch advertiser product data
 
 
 ## 💬 Prompt Examples

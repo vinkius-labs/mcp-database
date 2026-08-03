@@ -21,7 +21,7 @@ Never trust an LLM to evaluate complex symbolic math. This MCP integrates the po
 
 
 ## Available Tools (1)
-- **advanced_evaluate_math**: Evaluate complex math expressions deterministically — algebra, calculus, symbolic math, complex numbers — without LLM hallucinations
+- **evaluate_math**: Evaluate complex math expressions deterministically (algebra, calculus, complex numbers) without LLM hallucinations
 
 
 ## 💬 Prompt Examples

@@ -20,10 +20,10 @@ While Large Language Models excel at generating natural text, they often struggl
 
 
 ## Available Tools (3)
-- **change_casing**: Converts text into specific programmatic casings (camelCase, PascalCase, snake_case, kebab-case, or URL slugify)
 - **get_text_stats**: g., SEO limits, Twitter character limits).
 
 Calculates exact word count, character count, and line count for a given text
+- **change_casing**: Converts text into specific programmatic casings (camelCase, PascalCase, snake_case, kebab-case, or URL slugify)
 - **truncate_text**: Safely truncates a string to a specific character length, appending an optional suffix
 
 

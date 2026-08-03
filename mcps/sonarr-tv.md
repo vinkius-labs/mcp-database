@@ -38,6 +38,7 @@ Connect your **Sonarr** instance to any AI agent to take full control of your TV
 - **delete_episode_file**: Deletes an episode file from disk
 - **delete_queue_item**: Removes an item from the queue
 - **delete_series**: Removes a series from the library
+- **list_series**: Returns all series in the library
 - **get_episode_file**: Returns a specific episode file
 - **get_episode**: Returns a specific episode by its ID
 - **get_health**: Returns any health check warnings or errors
@@ -48,7 +49,6 @@ Connect your **Sonarr** instance to any AI agent to take full control of your TV
 - **list_commands**: Returns all currently running commands
 - **list_episode_files**: Returns all episode files for a series
 - **list_episodes**: Returns all episodes for a specific series
-- **list_series**: Returns all series in the library
 - **start_command**: g., SeriesSearch, RescanSeries, RefreshSeries).
 
 Starts a new command

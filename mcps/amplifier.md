@@ -37,10 +37,10 @@ Connect your **Amplifier** account to your AI agent to unlock professional e-com
 ## Available Tools (7)
 - **list_orders**: List fulfillment orders
 - **get_order_details**: Get order metadata
-- **create_order**: Submit new order
-- **list_items**: List catalog items
 - **get_inventory_report**: Get inventory stock levels
 - **get_shipment_report**: Get shipment tracking
+- **create_order**: Submit new order
+- **list_items**: List catalog items
 - **get_item_details**: Get item metadata
 
 

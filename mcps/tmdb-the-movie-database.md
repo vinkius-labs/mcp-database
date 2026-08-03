@@ -32,8 +32,6 @@ No more manual searching through browser tabs to find release dates or cast list
 ## Available Tools (13)
 - **get_account_details**: Get TMDB account details
 - **get_configuration**: Get TMDB API configuration
-- **discover_movies**: Discover movies by filters
-- **create_guest_session**: Create a new guest session
 - **get_movie_certifications**: Get movie certifications
 - **get_movie_details**: Get details for a specific movie
 - **get_person_details**: Get details for a specific person
@@ -41,6 +39,8 @@ No more manual searching through browser tabs to find release dates or cast list
 - **search_movies**: Search for movies by text
 - **get_tv_certifications**: Get TV certifications
 - **get_tv_details**: Get details for a specific TV series
+- **discover_movies**: Discover movies by filters
+- **create_guest_session**: Create a new guest session
 - **get_tv_episode_details**: Get details for a specific TV episode
 - **get_tv_season_details**: Get details for a specific TV season
 

@@ -33,6 +33,7 @@ Connect your **Troops** account to any AI agent to streamline your recruitment a
 
 
 ## Available Tools (7)
+- **sign_contract**: Sign a contract
 - **create_candidate**: Register a new candidate
 - **get_candidate**: Get candidate details
 - **submit_timesheet**: Submit a time sheet
@@ -41,7 +42,6 @@ Connect your **Troops** account to any AI agent to streamline your recruitment a
 - **list_jobs**: Can be filtered by status.
 
 List job offers
-- **sign_contract**: Sign a contract
 
 
 ## 💬 Prompt Examples

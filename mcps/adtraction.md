@@ -35,11 +35,11 @@ Connect your **Adtraction** affiliate account to your AI agent to unlock profess
 
 
 ## Available Tools (5)
-- **list_programs**: List affiliate programs
-- **get_program_details**: Get program metadata
+- **list_channels**: List approved media channels
 - **list_transactions**: List affiliate transactions
 - **get_stats_by_program**: Get performance stats per program
-- **list_channels**: List approved media channels
+- **list_programs**: List affiliate programs
+- **get_program_details**: Get program metadata
 
 
 ## 💬 Prompt Examples

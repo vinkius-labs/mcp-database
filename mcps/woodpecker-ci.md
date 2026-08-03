@@ -34,29 +34,29 @@ Connect your **Woodpecker CI** server to any AI agent to automate your continuou
 
 
 ## Available Tools (34)
+- **get_pipeline_config**: Get the configuration files used for a pipeline
+- **list_org_secrets**: List organization-level secrets
+- **list_orgs**: List all organizations
+- **create_agent**: Create a new Woodpecker agent
+- **delete_agent**: Delete an agent
+- **get_org_permissions**: Get user permissions for an organization
+- **get_repo**: Get repository details
+- **list_agents**: List all Woodpecker agents
 - **cancel_pipeline**: Cancel a running pipeline
 - **chown_repo**: Change repository owner to the current user
-- **create_agent**: Create a new Woodpecker agent
-- **create_global_secret**: Create a global secret
+- **create_global_secret**: Create a globalThis secret
 - **create_repo_secret**: Create a repository secret
-- **delete_agent**: Delete an agent
 - **delete_pipeline**: Delete a pipeline
 - **delete_repo**: Deactivate/delete a repository
 - **get_agent**: Get details of a specific agent
 - **get_healthz**: Server health check
 - **get_metrics**: Prometheus metrics (requires WOODPECKER_PROMETHEUS_AUTH_TOKEN if configured)
-- **get_org_permissions**: Get user permissions for an organization
-- **get_pipeline_config**: Get the configuration files used for a pipeline
 - **get_pipeline**: Get details of a specific pipeline
-- **get_repo**: Get repository details
 - **get_user**: Get the currently authenticated user
 - **get_version**: Get server version information
 - **list_agent_tasks**: List tasks currently assigned to an agent
-- **list_agents**: List all Woodpecker agents
-- **list_global_secrets**: List global secrets (Admin only)
+- **list_global_secrets**: List globalThis secrets (Admin only)
 - **list_org_agents**: List agents scoped to an organization
-- **list_org_secrets**: List organization-level secrets
-- **list_orgs**: List all organizations
 - **list_pipelines**: List pipelines for a repository
 - **list_repo_secrets**: List repository-level secrets
 - **list_repos**: List all repositories on the server
