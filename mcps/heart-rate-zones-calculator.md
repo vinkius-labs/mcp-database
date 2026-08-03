@@ -7,16 +7,16 @@
 
 **Category:** [health](../categories/health.md)
 
-Calculate precise physiological training zones using Simple % and Karvonen (HRR) methods.
+Calculate personalized aerobic training zones using the Karvonen formula.
 
 ## Description
-This MCP server provides a precision fitness utility for calculating five distinct heart rate training zones. It supports two primary calculation methodologies: the Simple Percentage method, which uses your maximum heart rate as a baseline, and the Karvonen (Heart Rate Reserve) method, which incorporates your resting heart rate for a more personalized intensity range. The server also includes advanced estimation models like Tanaka and Gulati to predict your maximum heart rate based on age and gender. Use `estimate_max_hr` to find your predicted ceiling, then apply `calculate_simple_zones` or `calculate_karvonen_zones` to define your training boundaries.
+This MCP server provides specialized physiological tools to determine your optimal heart rate training zones. Using the scientifically recognized Karvonen method, you can calculate your Heart Rate Reserve (HRR) with `calculate_heart_rate_reserve`. The server also allows you to compute specific BPM boundaries for all five intensity levels using `calculate_zone_ranges`, and retrieve standard intensity descriptions via `get_zone_definitions`. Perfect for athletes looking to target specific metabolic responses like fat oxidation or anaerobic threshold improvement.
 
 
 ## Available Tools (3)
-- **estimate_max_hr**: Estimate maximum heart rate based on age and gender
-- **calculate_karvonen_zones**: Calculate training zones using the Karvonen (HRR) method
-- **calculate_simple_zones**: Calculate training zones using simple percentage of MaxHR
+- **get_zone_definitions**: Retrieve standard intensity descriptions for heart rate zones
+- **calculate_heart_rate_reserve**: Calculate the Heart Rate Reserve (HRR)
+- **calculate_zone_ranges**: Calculate the BPM boundaries for all five training zones
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides a precision fitness utility for calculating five distin
 Here are some examples of how you can interact with the **Heart Rate Zones Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I am a 30-year-old male. What is my estimated max heart rate?"
+> "Calculate my heart rate zones. I am 30 years old and my resting heart rate is 60 BPM."
 
 **🤖 AI Agent:**
-> Based on the Tanaka model for a 30-year-old male, your estimated maximum heart rate is 191 BPM.
+> Based on your age of 30 and RHR of 60, your training zones are: Zone 1 (120-132 BPM), Zone 2 (132-144 BPM), Zone 3 (144-156 BPM), Zone 4 (156-168 BPM), and Zone 5 (168-180 BPM).
 
 ---
 
 **👤 You:**
-> "My max HR is 180 and my resting HR is 60. What are my training zones using the Karvonen method?"
+> "What is my Heart Rate Reserve?"
 
 **🤖 AI Agent:**
-> Using the Karvonen method, your training zones are: Zone 1 (90-108 BPM), Zone 2 (108-126 BPM), Zone 3 (126-144 BPM), Zone 4 (144-162 BPM), and Zone 5 (162-180 BPM).
+> Please provide your age and resting heart rate so I can use `calculate_heart_rate_reserve` to find your value.
 
 ---
 
 **👤 You:**
-> "Calculate my simple training zones if my max HR is 190."
+> "Show me the definitions for all heart rate zones."
 
 **🤖 AI Agent:**
-> Based on a maximum heart rate of 190 BPM, your simple intensity zones are: Zone 1 (95-114 BPM), Zone 2 (114-133 BPM), Zone 3 (133-152 BPM), Zone 4 (152-171 BPM), and Zone 5 (171-190 BPM).
+> Using `get_zone_definitions`, I can confirm that Zone 1 is very light (50-60%), Zone 2 is light (60-70%), Zone 3 is moderate (70-80%), Zone 4 is hard (80-90%), and Zone 5 is maximum intensity (90-100%) of your HRR.
 
 
 ## ❓ FAQ
 
-**Q: What is the difference between the Simple and Karvonen methods?**
-The Simple method uses a fixed percentage of your maximum heart rate. The Karvonen method uses your Heart Rate Reserve (Max HR minus Resting HR), making it more personalized to your current fitness level.
+**Q: What is the Karvonen formula?**
+The Karvonen formula calculates Target Heart Rate (THR) by using your Heart Rate Reserve (HRR), which accounts for both your maximum heart rate and resting heart rate to provide a more personalized training intensity.
 
-**Q: How accurate are the maximum heart rate predictions?**
-The tool uses scientifically validated models like Tanaka and Gulati. While highly accurate for general populations, clinical testing remains the gold standard.
+**Q: How do I use the zone ranges tool?**
+To find your training boundaries, use `calculate_zone_ranges` by providing your current age and resting heart rate in BPM.
 
-**Q: Can I use this to plan my interval training?**
-Yes, by using `calculate_karvonen_zones`, you can identify the exact BPM ranges for Zone 4 (Anaerobic) and Zone 5 (Maximum Effort) to structure your intervals.
+**Q: Can I calculate my Heart Rate Reserve separately?**
+Yes, you can use the `calculate_heart_rate_reserve` tool to find exactly how many beats per minute are available for your training intensity.
 
 
 ## Installation & Usage

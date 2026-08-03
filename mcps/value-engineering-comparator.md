@@ -14,8 +14,8 @@ The Value Engineering Comparator MCP server provides specialized tools for const
 
 
 ## Available Tools (3)
-- **calculate_investment_efficiency**: 
 - **compute_total_lcc**: 
+- **calculate_investment_efficiency**: 
 - **calculate_net_savings**: 
 
 

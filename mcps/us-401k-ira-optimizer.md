@@ -14,9 +14,9 @@ This MCP server provides a specialized engine for maximizing retirement wealth t
 
 
 ## Available Tools (3)
+- **project_wealth_growth**: Project future growth of retirement assets
 - **determine_optimal_sequence**: Determine the optimal order of account contributions
 - **calculate_tax_savings**: Calculate estimated annual and cumulative tax savings
-- **project_wealth_growth**: Project future growth of retirement assets
 
 
 ## 💬 Prompt Examples

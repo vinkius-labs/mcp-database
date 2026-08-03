@@ -14,10 +14,10 @@ The Weighted Average Calculator MCP server connects AI agents to your academic d
 
 
 ## Available Tools (4)
-- **calculate_required_grade**: Calculate the grade needed in remaining assessments to hit a target threshold
-- **evaluate_subject_risk**: Assess the risk level of each assessment category
 - **run_performance_simulations**: Simulate potential final grades based on different performance scenarios
 - **get_subject_status**: Get current progress and standing for a subject
+- **calculate_required_grade**: Calculate the grade needed in remaining assessments to hit a target threshold
+- **evaluate_subject_risk**: Assess the risk level of each assessment category
 
 
 ## 💬 Prompt Examples

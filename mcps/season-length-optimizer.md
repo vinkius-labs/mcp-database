@@ -14,9 +14,9 @@ The Season Length Optimizer is a specialized tool for game designers to plan sea
 
 
 ## Available Tools (3)
+- **get_buffer_duration**: Calculate the recommended season duration with a safety buffer
 - **calculate_daily_xp_requirement**: Calculate the required daily XP to hit a seasonal deadline
 - **estimate_completion_days**: Estimate how many days it takes to finish the season
-- **get_buffer_duration**: Calculate the recommended season duration with a safety buffer
 
 
 ## 💬 Prompt Examples

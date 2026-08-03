@@ -14,9 +14,9 @@ The Yield Curve Analyzer is a specialized tool for financial professionals to in
 
 
 ## Available Tools (3)
-- **get_allocation_guidance**: Get investment allocation guidance
 - **calculate_curve_metrics**: Calculate yield curve metrics
 - **examine_recession_risk**: Examine yield curve inversion for recession risk
+- **get_allocation_guidance**: Get investment allocation guidance
 
 
 ## 💬 Prompt Examples

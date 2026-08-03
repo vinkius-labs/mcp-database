@@ -14,9 +14,9 @@ This MCP server provides specialized financial tools to value sovereign debt ins
 
 
 ## Available Tools (3)
-- **calculate_bond_valuation**: Calculate fair market price and annualized total return (YTM) of a bond
 - **calculate_currency_equivalent_yield**: Evaluate the yield of a foreign sovereign bond in a target currency
 - **calculate_inflation_adjusted_return**: Assess purchasing power preservation by adjusting nominal return for inflation
+- **calculate_bond_valuation**: Calculate fair market price and annualized total return (YTM) of a bond
 
 
 ## 💬 Prompt Examples

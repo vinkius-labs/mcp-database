@@ -14,8 +14,8 @@ This MCP server provides specialized tools to quantify the thermal performance o
 
 
 ## Available Tools (3)
-- **calculate_u_value**: Calculates the thermal transmittance (U-value) for a single layer of material
 - **estimate_thermal_behavior**: Estimates the thermal lag and amplitude damping factor for a wall layer
+- **calculate_u_value**: Calculates the thermal transmittance (U-value) for a single layer of material
 - **get_material_properties**: Retrieves the fundamental thermal properties for a specific building material
 
 

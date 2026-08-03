@@ -14,8 +14,8 @@ An essential utility for musicians and instrument makers to calculate the physic
 
 
 ## Available Tools (3)
-- **derive_alternative_gauge**: Determines what string thickness (gauge) is enough to keep tension constant when changing tuning
 - **analyze_instrument_set_profile**: Evaluates an entire set of strings to determine total instrument stress and tension uniformity
+- **derive_alternative_gauge**: Determines what string thickness (gauge) is enough to keep tension constant when changing tuning
 - **calculate_single_string_tension**: Calculates the physical tension for one individual string at a specific pitch
 
 

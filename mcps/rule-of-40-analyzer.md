@@ -14,11 +14,11 @@ The Rule of 40 Analyzer is a specialized financial tool designed to evaluate the
 
 
 ## Available Tools (3)
-- **compare_to_sector_peers**: Compares a company score against industry benchmarks
-- **compute_ttm_metrics**: Aggregates quarterly data to determine the TTM performance score
 - **calculate_rule_of_40**: g., 40 for 40%) and returns the score and performance tier.
 
 Calculates the Rule of 40 score for a single period
+- **compare_to_sector_peers**: Compares a company score against industry benchmarks
+- **compute_ttm_metrics**: Aggregates quarterly data to determine the TTM performance score
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ This MCP server provides specialized tools to determine if agricultural land lea
 
 ## Available Tools (3)
 - **evaluate_profitability**: Evaluate the profitability of the land lease
-- **identify_thresholds**: Identify the minimum productivity and price required for viability
 - **calculate_costs**: Calculate total production cost including land rent
+- **identify_thresholds**: Identify the minimum productivity and price required for viability
 
 
 ## 💬 Prompt Examples

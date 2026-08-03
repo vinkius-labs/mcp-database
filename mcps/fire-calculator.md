@@ -14,9 +14,9 @@ The FIRE Calculator is a specialized financial modeling tool designed to help yo
 
 
 ## Available Tools (3)
-- **calculate_milestones**: Calculate FIRE milestones
 - **get_lifestyle_targets**: Get FIRE lifestyle targets
 - **simulate_contribution_impact**: Simulate contribution impact
+- **calculate_milestones**: Calculate FIRE milestones
 
 
 ## 💬 Prompt Examples

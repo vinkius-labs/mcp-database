@@ -14,9 +14,9 @@ The EBITDA Calculator MCP server provides essential tools for financial analysis
 
 
 ## Available Tools (3)
-- **analyze_sector_variance**: Compares the company's calculated multiple against predefined industry averages
 - **calculate_earnings_metrics**: Calculates the fundamental EBITDA value and the resulting profitability margin
 - **calculate_enterprise_multiple**: Calculates the current EV/EBITDA valuation multiple
+- **analyze_sector_variance**: Compares the company's calculated multiple against predefined industry averages
 
 
 ## 💬 Prompt Examples

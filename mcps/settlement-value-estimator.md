@@ -14,9 +14,9 @@ The Settlement Value Estimator MCP server provides a mathematical framework for 
 
 
 ## Available Tools (3)
+- **perform_risk_sensitivity_analysis**: Perform sensitivity analysis on win probability
 - **calculate_emv**: Calculate Expected Monetary Value (EMV) of a legal claim
 - **derive_negotiation_surfaces**: Derive BATNA, WATNA, and ZOPA boundaries
-- **perform_risk_sensitivity_analysis**: Perform sensitivity analysis on win probability
 
 
 ## 💬 Prompt Examples

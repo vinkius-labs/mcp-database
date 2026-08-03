@@ -14,8 +14,8 @@ The Litter Size Estimator provides biological predictions for canine litters. By
 
 
 ## Available Tools (3)
-- **calculate_litter_estimate**: Predict the number of puppies based on breed and size
 - **list_supported_breeds**: List all supported breeds
+- **calculate_litter_estimate**: Predict the number of puppies based on breed and size
 - **lookup_breed_statistics**: Get general litter size statistics for a breed
 
 

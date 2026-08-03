@@ -5,7 +5,7 @@
 
 ## Overview
 
-**Category:** [real-estate](../categories/real-estate.md)
+**Category:** [finance](../categories/finance.md)
 
 Calculate construction costs per square foot across major US cities using regional indices and structural multipliers.
 
@@ -14,8 +14,8 @@ This MCP server provides a precise estimation engine for construction projects i
 
 
 ## Available Tools (4)
-- **city_base_index_lookup**: Lookup the baseline construction rate for a specific US city
 - **estimate_total_burden**: Calculate the total estimated construction cost for a project
+- **city_base_index_lookup**: Lookup the baseline construction rate for a specific US city
 - **material_multiplier_fetch**: g., wood, steel, concrete).
 
 Get the cost multiplier for a specific construction material
