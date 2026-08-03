@@ -33,6 +33,13 @@ Connect to **DummyJSON** to simulate real-world API interactions within your AI 
 
 
 ## Available Tools (61)
+- **get_quote**: Get a single quote by ID
+- **update_post**: Update a post
+- **delete_recipe**: Delete a recipe
+- **delete_todo**: Delete a todo
+- **delete_user**: Delete a user
+- **auth_get_me**: Retrieve the profile of the currently authenticated user
+- **update_recipe**: Update a recipe
 - **add_product**: Add a new product (simulated)
 - **add_recipe**: Add a recipe
 - **add_todo**: Add a todo
@@ -41,20 +48,15 @@ Connect to **DummyJSON** to simulate real-world API interactions within your AI 
 - **delete_comment**: Delete a comment
 - **delete_post**: Delete a post
 - **delete_product**: Delete a product (simulated)
-- **delete_recipe**: Delete a recipe
-- **delete_todo**: Delete a todo
-- **delete_user**: Delete a user
 - **filter_users**: Filter users by key and value
 - **get_cart**: Get a single cart by ID
 - **get_comment**: Get a single comment by ID
 - **get_comments_by_post**: Get comments for a specific post
-- **auth_get_me**: Retrieve the profile of the currently authenticated user
 - **get_post_comments**: Get comments for a post
 - **get_post**: Get a single post by ID
 - **get_posts_by_user**: Get posts by user
 - **get_product**: Get a single product by ID
 - **get_products_by_category**: Get products by category
-- **get_quote**: Get a single quote by ID
 - **get_random_quote**: Get a random quote
 - **get_random_quotes**: Get multiple random quotes (max 10)
 - **get_random_todo**: Get a random todo
@@ -86,9 +88,7 @@ Connect to **DummyJSON** to simulate real-world API interactions within your AI 
 - **search_users**: Search users
 - **update_cart**: Update cart items
 - **update_comment**: Update a comment
-- **update_post**: Update a post
 - **update_product**: Update a product (simulated)
-- **update_recipe**: Update a recipe
 - **update_todo**: Update a todo
 - **update_user**: Update a user
 - **add_cart**: Create a new cart

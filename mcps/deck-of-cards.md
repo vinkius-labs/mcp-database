@@ -44,8 +44,8 @@ No more manual randomization or complex state management for card games. Your AI
 - **draw_from_pile_random**: Draw random cards from a pile
 - **draw_from_pile**: Draw cards from a pile
 - **list_pile**: List cards in a pile
-- **reshuffle_deck**: Reshuffle an existing deck
 - **return_pile_to_deck**: Return cards from a pile to the main deck
+- **reshuffle_deck**: Reshuffle an existing deck
 - **return_to_deck**: Return cards to the main deck
 - **shuffle_new_deck**: Can optionally use multiple decks.
 

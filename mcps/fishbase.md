@@ -34,11 +34,11 @@ Connect to **FishBase** and **SeaLifeBase**, the premier global information syst
 
 
 ## Available Tools (5)
-- **get_docs_by_table**: Get documentation for a specific database table
 - **get_docs**: Get documentation metadata for the FishBase API
 - **get_heartbeat**: The root URL redirects here.
 
 Get the current status and time of the FishBase API
+- **get_docs_by_table**: Get documentation for a specific database table
 - **get_versions**: g., v3, v4) which correspond to specific dates.
 
 List available database versions

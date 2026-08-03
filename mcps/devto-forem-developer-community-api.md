@@ -34,6 +34,7 @@ Connect your **Dev.to** (Forem) account to your AI agent to streamline your tech
 
 
 ## Available Tools (36)
+- **list_videos**: List articles with videos
 - **create_article**: Create a new article
 - **create_page**: Create a page
 - **create_reaction**: Create a reaction
@@ -62,7 +63,6 @@ Connect your **Dev.to** (Forem) account to your AI agent to streamline your tech
 - **list_podcast_episodes**: List published podcast episodes
 - **list_reading_list**: List authenticated user's reading list
 - **list_tags**: List tags used in the community
-- **list_videos**: List articles with videos
 - **suspend_user**: Suspend a user (Admin)
 - **toggle_reaction**: Toggle a reaction
 - **unpublish_article**: Unpublish an article (Admin/Moderator)

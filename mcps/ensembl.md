@@ -34,6 +34,12 @@ Connect to the **Ensembl** REST API to perform advanced genomic research and bio
 
 
 ## Available Tools (27)
+- **get_info_assembly**: List available assemblies and chromosomes for a species
+- **get_info_rest**: Current version of the Ensembl REST API
+- **get_info_species**: Lists all available species and their metadata
+- **get_vep_id**: Fetch consequences for a variant identifier (e.g., rsID)
+- **get_xrefs_id**: Retrieve external references for an Ensembl identifier
+- **get_xrefs_symbol**: Look up an external symbol and return linked Ensembl objects
 - **get_alignment**: Retrieves genomic alignments for a specific region
 - **get_archive_bulk**: Retrieve the latest version for a set of identifiers
 - **get_archive_id**: Returns the latest version of a given identifier
@@ -41,9 +47,6 @@ Connect to the **Ensembl** REST API to perform advanced genomic research and bio
 - **search_ga4gh_variants**: Search for variants using GA4GH schema
 - **get_genetree**: Retrieves a gene tree for a stable identifier
 - **get_homology**: Retrieves homology information by species and gene ID
-- **get_info_assembly**: List available assemblies and chromosomes for a species
-- **get_info_rest**: Current version of the Ensembl REST API
-- **get_info_species**: Lists all available species and their metadata
 - **get_ld**: Compute Linkage Disequilibrium (LD) values
 - **get_lookup_bulk**: Bulk lookup for multiple identifiers
 - **get_lookup_id**: Find the species and database for a single identifier
@@ -60,9 +63,6 @@ Retrieve features overlapping a specific region
 - **get_variation**: Retrieve variant features, genotypes, and population data
 - **get_vep_bulk**: Bulk consequence prediction for multiple regions
 - **get_vep_hgvs**: Fetch consequences for a variant in HGVS notation
-- **get_vep_id**: Fetch consequences for a variant identifier (e.g., rsID)
-- **get_xrefs_id**: Retrieve external references for an Ensembl identifier
-- **get_xrefs_symbol**: Look up an external symbol and return linked Ensembl objects
 
 
 ## 💬 Prompt Examples

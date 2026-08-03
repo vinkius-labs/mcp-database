@@ -36,6 +36,16 @@ No more manual searching on web explorers. Your AI acts as a blockchain analyst,
 
 
 ## Available Tools (17)
+- **get_address_balance**: Get balance for a Dogecoin address
+- **get_address_unspent**: Results are paginated (10 per page).
+
+Get unspent outputs (UTXOs) for an address
+- **get_address_received**: Get total received amount for an address
+- **get_address_sent**: Get total sent amount for an address
+- **get_address_transaction_count**: Get transaction count for an address
+- **get_address_transactions**: Results are paginated (10 per page).
+
+Get recent transactions for an address
 - **get_best_block_hash**: Get the best block hash
 - **get_block**: Get detailed block information
 - **get_transaction**: Get detailed transaction information
@@ -47,16 +57,6 @@ No more manual searching on web explorers. Your AI acts as a blockchain analyst,
 - **q_get_difficulty**: Quick query: Get last block difficulty
 - **q_get_received_by_address**: Quick query: Get total amount ever received
 - **q_get_sent_by_address**: Quick query: Get total amount ever sent
-- **get_address_balance**: Get balance for a Dogecoin address
-- **get_address_received**: Get total received amount for an address
-- **get_address_sent**: Get total sent amount for an address
-- **get_address_transaction_count**: Get transaction count for an address
-- **get_address_transactions**: Results are paginated (10 per page).
-
-Get recent transactions for an address
-- **get_address_unspent**: Results are paginated (10 per page).
-
-Get unspent outputs (UTXOs) for an address
 
 
 ## 💬 Prompt Examples

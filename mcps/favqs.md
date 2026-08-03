@@ -35,31 +35,31 @@ Connect **Favqs** to your AI agent to access a world of inspiration and wisdom. 
 
 
 ## Available Tools (28)
-- **clearvote_quote**: Clear vote on a quote (User Session Required)
-- **get_followers**: Get followers of the current user
-- **add_quote**: Add a new quote (User Session Required)
 - **create_session**: Create a user session to obtain a User-Token
+- **favorite_quote**: Favorite a quote (User Session Required)
+- **get_following**: Get entities the current user is following
+- **hide_quote**: Hide a quote (User Session Required)
 - **create_user**: Create a new FavQs user
 - **delete_quote**: Delete a private quote (Pro only)
 - **destroy_session**: Destroy the current user session
 - **downvote_quote**: Downvote a quote (User Session Required)
-- **favorite_quote**: Favorite a quote (User Session Required)
 - **follow**: Follow a user, author, or tag
 - **forgot_password**: Request a password recovery email
 - **get_activity**: Get activity feed
-- **get_following**: Get entities the current user is following
 - **get_qotd**: Does not require authentication.
 
 Get the Quote of the Day
 - **get_quote**: Get a specific quote by ID
 - **get_typeahead**: Get a list of public Authors, Tags, and Users for autocomplete
 - **get_user**: Get a user profile
-- **hide_quote**: Hide a quote (User Session Required)
 - **list_quotes**: List and search quotes
 - **publicize_quote**: Make a private quote public (Pro only)
 - **reset_password**: Reset password using a recovery token
 - **tag_quote**: Add personal tags to a quote (User Session Required)
 - **unfavorite_quote**: Unfavorite a quote (User Session Required)
+- **clearvote_quote**: Clear vote on a quote (User Session Required)
+- **get_followers**: Get followers of the current user
+- **add_quote**: Add a new quote (User Session Required)
 - **unfollow**: Unfollow a user, author, or tag
 - **unhide_quote**: Unhide a quote (User Session Required)
 - **update_quote**: Update a private quote (Pro only)

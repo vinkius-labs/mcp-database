@@ -34,7 +34,6 @@ Connect your **Duffel** account to any AI agent to transform it into a powerful 
 
 
 ## Available Tools (29)
-- **change_order**: Request a change to an existing order
 - **create_offer_request**: Create a flight offer request
 - **create_order**: Create a flight order (booking)
 - **create_payment**: Create a payment for a hold order
@@ -46,8 +45,6 @@ Connect your **Duffel** account to any AI agent to transform it into a powerful 
 - **get_airport**: Get a specific airport
 - **get_offer_request**: Get a specific offer request
 - **get_offer**: Get a specific flight offer
-- **get_order**: Get a specific flight order
-- **get_payment**: Get a specific payment
 - **list_accommodation**: List accommodations
 - **list_aircraft**: List aircraft types
 - **list_airlines**: List airlines
@@ -57,10 +54,13 @@ Connect your **Duffel** account to any AI agent to transform it into a powerful 
 - **list_orders**: List all flight orders
 - **list_webhook_events**: List webhook events
 - **price_offer**: Verify final price and services for an offer
-- **quote_stay**: Create a quote for a stay
-- **search_stays**: Search for accommodation (Stays)
-- **get_seat_maps**: Get seat maps for an offer
 - **suggest_accommodation**: Suggest accommodations by name
+- **search_stays**: Search for accommodation (Stays)
+- **change_order**: Request a change to an existing order
+- **get_order**: Get a specific flight order
+- **get_payment**: Get a specific payment
+- **quote_stay**: Create a quote for a stay
+- **get_seat_maps**: Get seat maps for an offer
 - **book_stay**: Book a stay
 - **cancel_order**: Cancel a flight order
 

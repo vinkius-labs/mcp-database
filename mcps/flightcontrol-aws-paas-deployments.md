@@ -34,6 +34,8 @@ Connect your **Flightcontrol** account to any AI agent to orchestrate your AWS d
 
 
 ## Available Tools (24)
+- **create_aws_account_connection**: Create AWS Account Connection
+- **get_service_scaling**: Get Service Scaling Information
 - **create_cloudfront_invalidation**: Create CloudFront Cache Invalidation
 - **create_deployment**: Trigger a new deployment based on repository filters
 - **create_domain_group**: Create Domain Certificate Group
@@ -49,15 +51,13 @@ Connect your **Flightcontrol** account to any AI agent to orchestrate your AWS d
 - **get_deployment_status**: Get Deployment Status
 - **get_domain_details**: Get Single Domain Details
 - **get_domains_from_group**: Get Domains from Group
-- **get_job_execution_status**: Get Job Execution Status
-- **get_service_scaling**: Get Service Scaling Information
 - **get_service**: Retrieve details for a specific service
-- **list_projects**: List all projects owned by the team
 - **list_services**: Retrieve a paginated list of services
 - **swap_blue_green**: Trigger a swap between Blue and Green environments
 - **trigger_deploy_hook**: Trigger deployments via a secret URL
 - **update_service_scaling**: Manually scale service instances
-- **create_aws_account_connection**: Create AWS Account Connection
+- **get_job_execution_status**: Get Job Execution Status
+- **list_projects**: List all projects owned by the team
 
 
 ## 💬 Prompt Examples

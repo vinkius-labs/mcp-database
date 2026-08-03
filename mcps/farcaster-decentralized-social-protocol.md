@@ -42,12 +42,6 @@ Ban a user from a channel
 - **block_user**: Requires authentication.
 
 Block a user
-- **create_signed_key_request**: Create a signed key request
-- **follow_channel**: Requires authentication.
-
-Follow a Farcaster channel
-- **get_channel**: Get a single Farcaster channel
-- **get_current_fname_by_fid**: Get current fname of an FID
 - **get_current_fname_owner**: Get current owner of an fname
 - **get_primary_address**: Get a user primary wallet address
 - **get_signed_key_request**: Get signed key request status
@@ -74,6 +68,12 @@ Register or transfer an fname
 - **unfollow_channel**: Requires authentication.
 
 Unfollow a Farcaster channel
+- **create_signed_key_request**: Create a signed key request
+- **follow_channel**: Requires authentication.
+
+Follow a Farcaster channel
+- **get_channel**: Get a single Farcaster channel
+- **get_current_fname_by_fid**: Get current fname of an FID
 
 
 ## 💬 Prompt Examples

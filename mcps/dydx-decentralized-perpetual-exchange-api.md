@@ -35,6 +35,9 @@ Connect your **dYdX** account to any AI agent to monitor markets and execute tra
 ## Available Tools (16)
 - **v4_get_stats**: Get 24h statistics for a dYdX v4 market
 - **v4_get_trades**: Get recent public trades for a dYdX v4 market
+- **v4_list_markets**: List all available perpetual markets on dYdX v4
+- **v4_list_orders**: List active and historical orders for the account on dYdX v4
+- **v4_list_positions**: List all open positions on dYdX v4
 - **v3_create_order**: Requires authentication.
 
 Place a new order on dYdX v3
@@ -58,9 +61,6 @@ Get account balances, positions, and equity on dYdX v4
 Get details for a specific dYdX v4 market
 - **v4_get_orderbook**: Get the current L2 orderbook for a dYdX v4 market
 - **v4_list_fills**: List recent trade fills for the account on dYdX v4
-- **v4_list_markets**: List all available perpetual markets on dYdX v4
-- **v4_list_orders**: List active and historical orders for the account on dYdX v4
-- **v4_list_positions**: List all open positions on dYdX v4
 
 
 ## 💬 Prompt Examples

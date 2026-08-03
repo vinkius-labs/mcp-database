@@ -43,10 +43,10 @@ Store one or more items in Deta Base
 
 Search for items in Deta Base based on queries
 - **base_update_item**: Update specific attributes of an existing item in Deta Base
+- **drive_upload_file**: Upload a file to Deta Drive
 - **drive_delete_files**: Delete one or more files from Deta Drive
 - **drive_download_file**: Download a file from Deta Drive by its name
 - **drive_list_files**: List files in a Deta Drive
-- **drive_upload_file**: Upload a file to Deta Drive
 
 
 ## 💬 Prompt Examples

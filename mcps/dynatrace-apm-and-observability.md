@@ -35,6 +35,7 @@ Connect your **Dynatrace** environment to any AI agent to gain deep visibility i
 
 
 ## Available Tools (37)
+- **get_anomaly_detection_services**: Get anomaly detection configuration for services
 - **create_synthetic_location**: Create a synthetic location
 - **create_synthetic_monitor**: Create a synthetic monitor
 - **delete_dashboard**: Delete a dashboard
@@ -42,7 +43,6 @@ Connect your **Dynatrace** environment to any AI agent to gain deep visibility i
 - **delete_synthetic_monitor**: Delete a synthetic monitor
 - **get_anomaly_detection_apps**: Get anomaly detection configuration for applications
 - **get_anomaly_detection_hosts**: Get anomaly detection configuration for hosts
-- **get_anomaly_detection_services**: Get anomaly detection configuration for services
 - **get_calculated_metrics_service**: Get calculated service metrics configuration
 - **get_problem**: Get details of a specific problem
 - **ingest_metrics**: Push custom data points using the line protocol
