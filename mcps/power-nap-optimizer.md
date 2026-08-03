@@ -14,11 +14,11 @@ The Power Nap Optimizer is a precision tool designed to help you manage 'Sleep I
 
 
 ## Available Tools (3)
-- **assess_sleep_inertia_risk**: Provides a physiological risk assessment for a nap duration
-- **calculate_nap_strategy**: Determines the optimal nap category and safety status
 - **get_nap_alternatives**: g., 20 or 90 mins) when a nap plan falls in the 30-80 minute range.
 
 Generates actionable alarm targets for the danger zone
+- **assess_sleep_inertia_risk**: Provides a physiological risk assessment for a nap duration
+- **calculate_nap_strategy**: Determines the optimal nap category and safety status
 
 
 ## 💬 Prompt Examples

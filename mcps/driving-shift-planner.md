@@ -14,8 +14,8 @@ The Driving Shift Planner MCP server helps drivers manage long journeys by split
 
 
 ## Available Tools (3)
-- **verify_drive_compliance**: Verify if a planned drive time is compliant
 - **calculate_total_duration**: Calculate the total time for a journey
+- **verify_drive_compliance**: Verify if a planned drive time is compliant
 - **get_driving_itinerary**: Calculate a driving itinerary with rest periods
 
 

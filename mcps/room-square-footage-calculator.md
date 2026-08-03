@@ -14,9 +14,9 @@ This MCP server provides specialized tools for calculating the surface area of i
 
 
 ## Available Tools (3)
-- **calculate_geometric_area**: Calculate the total area of a space based on geometric primitives
-- **estimate_material_quantity**: Estimate the amount of material needed for a project
 - **convert_area_units**: Convert area measurements between different units
+- **estimate_material_quantity**: Estimate the amount of material needed for a project
+- **calculate_geometric_area**: Calculate the total area of a space based on geometric primitives
 
 
 ## 💬 Prompt Examples

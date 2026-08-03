@@ -14,14 +14,14 @@ The Pet Cost Lifetime Estimator helps pet owners plan for the long-term financia
 
 
 ## Available Tools (4)
-- **calculate_upfront_expenses**: Returns breakdown of adoption, supplies, and spay/neuter costs.
-
-Calculate the upfront costs for bringing a pet home
 - **calculate_annual_maintenance**: Returns breakdown of sustenance, enrichment, wellness, and prevention costs.
 
 Calculate the annual recurring costs for pet maintenance
 - **calculate_emergency_buffer_target**: Calculate the recommended emergency fund target
 - **generate_lifetime_financial_summary**: Generates a lifetime financial summary for the pet
+- **calculate_upfront_expenses**: Returns breakdown of adoption, supplies, and spay/neuter costs.
+
+Calculate the upfront costs for bringing a pet home
 
 
 ## 💬 Prompt Examples

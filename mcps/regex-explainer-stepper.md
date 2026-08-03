@@ -14,9 +14,9 @@ This MCP server provides a structured way to understand regular expressions. Usi
 
 
 ## Available Tools (3)
-- **audit_regex**: Audits a regex for safety risks
 - **explain_token**: Explains a specific regex token
 - **parse_regex**: Parses a regex pattern into tokens
+- **audit_regex**: Audits a regex for safety risks
 
 
 ## 💬 Prompt Examples

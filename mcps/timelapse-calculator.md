@@ -14,9 +14,9 @@ The Timelapse Calculator MCP server is a precision utility for photographers and
 
 
 ## Available Tools (3)
+- **compute_timelapse_plan**: Calculates how to configure a camera for a timelapse
 - **lookup_golden_hour_window**: Provides solar transition durations for specific regions
 - **compute_playback_duration**: Determines video playback duration based on captured images
-- **compute_timelapse_plan**: Calculates how to configure a camera for a timelapse
 
 
 ## 💬 Prompt Examples

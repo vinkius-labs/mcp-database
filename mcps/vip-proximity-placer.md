@@ -14,9 +14,9 @@ The VIP Proximity Placer MCP server manages complex event seating by prioritizin
 
 
 ## Available Tools (3)
-- **check_feasibility**: Check if VIP assignments are feasible for a given table size
 - **execute_seating_plan**: Execute the full seating algorithm
 - **simulate_vip_phase**: Simulate the VIP placement phase of seating
+- **check_feasibility**: Check if VIP assignments are feasible for a given table size
 
 
 ## 💬 Prompt Examples

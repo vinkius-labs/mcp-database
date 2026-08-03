@@ -10,7 +10,7 @@
 Calculate storage requirements for video files based on resolution, frame rate, codec, and duration.
 
 ## Description
-The Video Storage Calculator MCP server allows AI agents to estimate the disk space needed for various video configurations. By using tools like `calculate_storage_estimate`, users can predict storage usage for specific resolutions (from 720p to 8K) and codecs (such as H.264, ProRes, or AV1). The `compare_codec_profiles` tool enables side-by-side comparisons of different encoding settings, while `get_codec_capabilities` provides technical details on supported bit depths and chroma subsampling for a chosen codec.
+The Video Storage Calculator MCP server allows AI agents to estimate the disk space needed for various video configurations. By using tools like `calculate_storage_</em>estimate`, users can predict storage usage for specific resolutions (from 720p to 8K) and codecs (such as H.264, ProRes, or AV1). The `compare_codec_profiles` tool enables side-by-side comparisons of different encoding settings, while `get_codec_capabilities` provides technical details on supported bit depths and chroma subsampling for a chosen codec.
 
 
 ## Available Tools (3)

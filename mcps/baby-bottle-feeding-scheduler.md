@@ -14,8 +14,8 @@ This MCP server provides essential tools for parents and caregivers to manage in
 
 
 ## Available Tools (3)
-- **generate_feeding_schedule**: Generate a 24-hour feeding schedule
 - **calculate_monthly_supply**: Calculate formula cans needed per month
+- **generate_feeding_schedule**: Generate a 24-hour feeding schedule
 - **calculate_daily_volume_target**: Calculate the total daily feeding volume based on infant weight
 
 

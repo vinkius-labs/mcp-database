@@ -15,8 +15,8 @@ The Timezone Jetlag Shifter is a precision scheduling engine designed for travel
 
 ## Available Tools (3)
 - **generate_shift_schedule**: Generates a day-by-day circadian adjustment plan
-- **calculate_timezone_difference**: Calculates the magnitude of time shift between two timezones
 - **identify_light_window**: Provides light exposure instructions for a specific day
+- **calculate_timezone_difference**: Calculates the magnitude of time shift between two timezones
 
 
 ## 💬 Prompt Examples

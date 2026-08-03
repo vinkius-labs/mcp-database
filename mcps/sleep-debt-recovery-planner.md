@@ -14,9 +14,9 @@ The Sleep Debt Recovery Planner helps you manage accumulated sleep loss through 
 
 
 ## Available Tools (3)
+- **validate_recovery_parameters**: Validate if a recovery rate is safe
 - **estimate_days_until_debt_free**: Estimate the number of nights needed to clear sleep debt
 - **generate_recovery_schedule**: Generate a night-by-night sleep recovery schedule
-- **validate_recovery_parameters**: Validate if a recovery rate is safe
 
 
 ## 💬 Prompt Examples

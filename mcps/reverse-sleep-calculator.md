@@ -14,9 +14,9 @@ Determine the optimal time to go to bed based on your target wake-up time, accou
 
 
 ## Available Tools (3)
-- **calculate_bed_time_schedule**: Calculates ideal bedtime and a fallback time
 - **get_sleep_cycle_metrics**: Provides duration metrics for sleep cycles
 - **validate_sleep_constraints**: Validates if sleep parameters are realistic
+- **calculate_bed_time_schedule**: Calculates ideal bedtime and a fallback time
 
 
 ## 💬 Prompt Examples

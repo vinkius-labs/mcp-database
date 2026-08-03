@@ -14,8 +14,8 @@ Ensure precision in your chemical exfoliation or recovery routines. Using `gener
 
 
 ## Available Tools (3)
-- **calculate_total_routine_runtime**: Calculates total routine runtime in minutes
 - **generate_routine_timeline**: Generates a human-readable skincare routine timeline
+- **calculate_total_routine_runtime**: Calculates total routine runtime in minutes
 - **validate_time_format**: g., "8:00 PM") and returns whether it is valid.
 
 Validates if a time string is in a valid format

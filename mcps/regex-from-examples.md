@@ -14,9 +14,9 @@ This MCP server uses heuristic pattern analysis to generate the top 3 regex cand
 
 
 ## Available Tools (3)
+- **generate_regex_candidates**: Analyzes input-extraction pairs to produce regex candidates
 - **analyze_pattern_complexity**: Classifies a regex pattern into its structural category
 - **evaluate_pattern_coverage**: Provides a detailed breakdown of regex performance
-- **generate_regex_candidates**: Analyzes input-extraction pairs to produce regex candidates
 
 
 ## 💬 Prompt Examples

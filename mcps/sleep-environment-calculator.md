@@ -14,10 +14,10 @@ The Sleep Environment Calculator provides precise environmental recommendations 
 
 
 ## Available Tools (4)
-- **get_sensory_mitigation_settings**: Calculates blackout curtain coverage and white noise levels
-- **get_air_purification_requirement**: Calculates required CADR for an air purifier
 - **get_climate_optimization**: Calculates optimal thermostat and humidity settings for sleep
 - **calculate_earbud_endurance**: Estimates how long sleep earbuds will last through the night
+- **get_sensory_mitigation_settings**: Calculates blackout curtain coverage and white noise levels
+- **get_air_purification_requirement**: Calculates required CADR for an air purifier
 
 
 ## 💬 Prompt Examples
