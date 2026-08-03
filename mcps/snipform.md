@@ -30,14 +30,14 @@ Built for frontend developers, marketing teams, and static site operators who ne
 
 
 ## Available Tools (15)
+- **get_account**: Get account info
+- **get_form_analytics**: Get form analytics
+- **get_key**: Get form details
 - **check_snipform_status**: Verify connectivity
 - **create_key**: Create a form
 - **delete_key**: Delete a form
 - **delete_submission**: Delete a submission
 - **export_submissions**: Export submissions
-- **get_account**: Get account info
-- **get_form_analytics**: Get form analytics
-- **get_key**: Get form details
 - **get_submission**: Get submission details
 - **list_integrations**: List integrations
 - **list_keys**: List all forms

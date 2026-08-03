@@ -36,18 +36,18 @@ No more manual status checking or spreadsheet time logging. Your AI acts as a de
 
 
 ## Available Tools (12)
-- **get_my_organization_profile**: Get authenticated organization profile
-- **get_project_details**: Get details for a specific project
 - **get_sales_details**: Get details for a specific sales opportunity
+- **list_crm_organizations**: List all organizations/companies
+- **list_project_services**: List available project services
+- **log_time_registration**: Register new hours worked
+- **get_project_details**: Get details for a specific project
 - **list_employees**: List all company employees
 - **list_time_registrations**: List time entries
 - **list_invoices**: List all invoices
-- **list_crm_organizations**: List all organizations/companies
+- **get_my_organization_profile**: Get authenticated organization profile
 - **list_crm_persons**: List all individual contacts
 - **list_projects**: List all projects
 - **list_sales_opportunities**: List all sales opportunities
-- **list_project_services**: List available project services
-- **log_time_registration**: Register new hours worked
 
 
 ## 💬 Prompt Examples

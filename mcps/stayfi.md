@@ -30,9 +30,9 @@ Tailor-made for vacation rental managers, boutique hoteliers, and hospitality op
 
 
 ## Available Tools (17)
+- **get_analytics**: Get analytics overview
 - **check_stayfi_status**: Verify connectivity
 - **export_guests**: Export guest data
-- **get_analytics**: Get analytics overview
 - **get_device_status**: Get device status
 - **get_email_stats**: Get email collection stats
 - **get_guest**: Get guest details

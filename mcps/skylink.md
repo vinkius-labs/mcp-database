@@ -30,9 +30,13 @@ Specifically built for real estate brokerages, property managers, and high-volum
 
 
 ## Available Tools (22)
-- **create_task**: Create a task
+- **check_skylink_status**: Verify connectivity
+- **create_lead**: Create a lead
 - **get_account**: Get account info
 - **get_call_analytics**: Get call analytics
+- **create_contact**: Create a contact
+- **create_deal**: Create a deal
+- **create_task**: Create a task
 - **get_call**: Get call details
 - **get_contact**: Get contact details
 - **get_deal**: Get deal details
@@ -48,10 +52,6 @@ Specifically built for real estate brokerages, property managers, and high-volum
 - **list_tasks**: List tasks
 - **update_deal**: Update a deal
 - **update_lead**: Update a lead
-- **check_skylink_status**: Verify connectivity
-- **create_contact**: Create a contact
-- **create_deal**: Create a deal
-- **create_lead**: Create a lead
 
 
 ## 💬 Prompt Examples

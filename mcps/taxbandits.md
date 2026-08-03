@@ -35,7 +35,6 @@ Connect your **TaxBandits** account to any AI agent and simplify how you manage 
 
 
 ## Available Tools (6)
-- **list_transmissions**: List form transmissions
 - **create_business**: Pass data as a JSON string.
 
 Create a new business entity
@@ -45,6 +44,7 @@ Create a new business entity
 - **list_tax_forms**: Pass filters as a JSON string.
 
 List tax forms (e.g. 1099)
+- **list_transmissions**: List form transmissions
 
 
 ## 💬 Prompt Examples

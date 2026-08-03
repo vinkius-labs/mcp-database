@@ -29,11 +29,11 @@ No more manual carrier portal logins. Your AI acts as a dedicated logistics coor
 
 
 ## Available Tools (11)
+- **get_order**: Get sales order details
 - **create_shipment**: Pass data as a JSON string.
 
 Create a new shipment
 - **get_account_balance**: Check account balance
-- **get_order**: Get sales order details
 - **get_shipping_quote**: Get a shipping rate quote
 - **get_shipment**: Get details for a specific shipment
 - **list_carriers**: List all available shipping carriers

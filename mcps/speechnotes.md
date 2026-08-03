@@ -36,12 +36,12 @@ Connect your **Speechnotes** account to any AI agent to automate your profession
 ## Available Tools (12)
 - **generate_webhook_signature**: Sign payload
 - **get_transcription_status**: Check job progress
+- **list_configured_webhooks**: Get delivery endpoints
+- **test_speechnotes_auth**: Check connection
 - **transcribe_audio_url**: Transcribe remote file
 - **get_usage_statistics**: Check usage logs
 - **list_transcription_history**: List past jobs
 - **list_supported_languages**: Get language codes
-- **list_configured_webhooks**: Get delivery endpoints
-- **test_speechnotes_auth**: Check connection
 - **remove_transcription_job**: Delete job record
 - **get_remaining_credits**: Check account balance
 - **get_transcription_export**: Export result format

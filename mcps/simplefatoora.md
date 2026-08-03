@@ -30,26 +30,26 @@ Perfect for financial controllers, accountants, and businesses operating in Saud
 
 
 ## Available Tools (20)
-- **create_simplified_purchase**: Create simplified purchase invoice
-- **create_simplified_invoice**: Create B2C invoice
-- **create_standard_purchase**: Create standard purchase invoice
-- **create_vat_invoice**: Create B2B VAT invoice
-- **delete_customer**: Delete a customer
-- **delete_product**: Delete a product
-- **get_customer**: Get customer details
-- **get_invoice**: Get invoice details
-- **get_product**: Get product details
-- **list_customers**: List customers
-- **list_invoices**: List all invoices
-- **list_products**: List products
-- **update_customer**: Update a customer
-- **update_product**: Update a product
-- **validate_api_key**: Validate API key
 - **check_simplefatoora_status**: Verify connectivity
 - **create_credit_note**: Create credit note
 - **create_customer**: Create a customer
 - **create_debit_note**: Create debit note
 - **create_product**: Create a product
+- **create_simplified_purchase**: Create simplified purchase invoice
+- **create_vat_invoice**: Create B2B VAT invoice
+- **delete_customer**: Delete a customer
+- **get_customer**: Get customer details
+- **list_invoices**: List all invoices
+- **list_products**: List products
+- **create_simplified_invoice**: Create B2C invoice
+- **create_standard_purchase**: Create standard purchase invoice
+- **delete_product**: Delete a product
+- **get_invoice**: Get invoice details
+- **list_customers**: List customers
+- **update_customer**: Update a customer
+- **update_product**: Update a product
+- **validate_api_key**: Validate API key
+- **get_product**: Get product details
 
 
 ## 💬 Prompt Examples

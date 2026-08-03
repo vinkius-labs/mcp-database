@@ -37,14 +37,14 @@ No more manual status updates or missing GPS gaps. Your AI acts as your dedicate
 
 
 ## Available Tools (11)
-- **get_timeero_job**: Get details for a specific job
 - **get_timeero_schedule**: Get details for a specific schedule
 - **get_timeero_task**: Get details for a specific task
 - **get_timeero_timesheet**: Get details for a specific timesheet
+- **check_timeero_status**: Check API Status
 - **get_timeero_user**: Get details for a specific user
 - **list_timeero_jobs**: List active jobs
 - **list_timeero_schedules**: List work schedules
-- **check_timeero_status**: Check API Status
+- **get_timeero_job**: Get details for a specific job
 - **list_timeero_tasks**: List available tasks
 - **list_timeero_timesheets**: List timesheets
 - **list_timeero_users**: List Timeero users

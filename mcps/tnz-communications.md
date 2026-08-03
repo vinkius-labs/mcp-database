@@ -43,8 +43,8 @@ Empower your AI agent with access to the **TNZ Group** messaging gateway to auto
 - **send_digital_fax**: Send a document as a fax
 - **send_sms_message**: Send an SMS message
 - **send_tts_voice_call**: Send a voice call (Text-to-Speech)
-- **check_api_health**: Verify TNZ API connectivity
 - **create_tnz_contact**: Add a new contact to TNZ
+- **check_api_health**: Verify TNZ API connectivity
 
 
 ## 💬 Prompt Examples
