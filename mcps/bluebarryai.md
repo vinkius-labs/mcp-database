@@ -36,16 +36,16 @@ No more manual toggling between different AI tools or digging through fragmented
 
 
 ## Available Tools (6)
-- **get_automation_status**: Get status of an automation
 - **analyze_youtube**: Analyze a YouTube video
 - **get_agent**: Get details for an AI agent
+- **get_automation_status**: Get status of an automation
 - **list_agents**: ai account.
 
 List all AI agents
-- **list_automations**: List all active automations
 - **send_whatsapp**: ai platform.
 
 Send a WhatsApp message
+- **list_automations**: List all active automations
 
 
 ## 💬 Prompt Examples

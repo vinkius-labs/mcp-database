@@ -36,7 +36,6 @@ No more manual status checking or digging through fragmented job logs. Your AI a
 
 
 ## Available Tools (12)
-- **create_client**: Create a new client or lead
 - **create_estimate**: Create a new estimate
 - **get_account_info**: Get account settings
 - **get_client**: Get client details
@@ -48,6 +47,7 @@ No more manual status checking or digging through fragmented job logs. Your AI a
 - **list_service_requests**: List incoming requests
 - **list_webhooks**: List configured webhooks
 - **list_work_orders**: List work orders
+- **create_client**: Create a new client or lead
 
 
 ## 💬 Prompt Examples

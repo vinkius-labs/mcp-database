@@ -36,7 +36,6 @@ No more manual toggling between complex planning boards or digging through task 
 
 
 ## Available Tools (7)
-- **list_resources**: List all planable resources
 - **list_tasks**: List all planning tasks
 - **list_time_markers**: List available time markers
 - **get_job**: Get job details
@@ -45,6 +44,7 @@ No more manual toggling between complex planning boards or digging through task 
 - **list_jobs**: Scheduler.
 
 List all planning jobs
+- **list_resources**: List all planable resources
 
 
 ## 💬 Prompt Examples

@@ -36,10 +36,10 @@ Connect your **HRBlade** account to any AI agent and manage asynchronous video i
 - **create_interview**: Pass data as a JSON string.
 
 Create a new interview template
-- **get_candidate_details**: Get specific candidate details
-- **list_candidates**: List all recruiting candidates
 - **list_interviews**: List all interview templates
 - **list_interview_responses**: List all candidate video responses
+- **get_candidate_details**: Get specific candidate details
+- **list_candidates**: List all recruiting candidates
 - **send_interview_invitation**: Pass data as a JSON string.
 
 Send an invitation to a candidate

@@ -37,13 +37,13 @@ Connect your **ClubPlanner** fitness management account to any AI agent and simp
 
 ## Available Tools (12)
 - **create_appointment**: Schedule a new appointment
+- **get_me**: Get club account information
+- **list_contracts**: List active membership contracts
 - **create_checkin**: Record a new member check-in
 - **create_prospect**: Add a new prospect to ClubPlanner
-- **get_me**: Get club account information
 - **get_member**: Get details for a specific member
 - **list_appointments**: List scheduled appointments
 - **list_checkins**: List recent member check-ins
-- **list_contracts**: List active membership contracts
 - **list_members**: List all club members
 - **list_products**: List available products/memberships
 - **list_prospects**: List potential members (prospects) in ClubPlanner

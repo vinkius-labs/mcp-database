@@ -36,11 +36,11 @@ No more manual entry into split-payment spreadsheets. Your AI acts as your dedic
 
 
 ## Available Tools (8)
-- **create_client**: Create a new client
 - **create_payment_link**: Can split between trust and operating amounts.
 
 Create a new payment link
 - **get_firm_details**: Get firm details and bank accounts
+- **create_client**: Create a new client
 - **get_payment_link_details**: Get payment link details
 - **list_clients**: List all clients
 - **list_matters**: Optionally filter by client ID.

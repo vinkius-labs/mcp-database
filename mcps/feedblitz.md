@@ -28,14 +28,14 @@ Designed for email marketers, content creators, and growth hackers who rely on F
 ## Available Tools (8)
 - **get_syndication**: Get details for a specific syndication in FeedBlitz
 - **get_user**: Get user details from FeedBlitz
+- **add_subscriber**: Add a subscriber to a syndication in FeedBlitz
+- **get_subscriber**: Get a specific subscriber from FeedBlitz
 - **list_metrics**: List metrics for a syndication in FeedBlitz
 - **list_subscribers**: Optionally filter by status.
 
 List subscribers for a syndication in FeedBlitz
 - **list_syndications**: List syndications (feeds/lists) in FeedBlitz
 - **remove_subscriber**: Remove or unsubscribe a subscriber from FeedBlitz
-- **add_subscriber**: Add a subscriber to a syndication in FeedBlitz
-- **get_subscriber**: Get a specific subscriber from FeedBlitz
 
 
 ## 💬 Prompt Examples

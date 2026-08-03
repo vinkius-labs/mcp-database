@@ -36,14 +36,14 @@ No more manual subscriber management or complex campaign navigation in the dashb
 
 
 ## Available Tools (8)
-- **create_contact**: Create a new contact
 - **create_mailing_list**: Create a new mailing list
+- **update_contact**: Update an existing contact
+- **create_contact**: Create a new contact
 - **delete_contact**: Delete a contact
 - **get_campaign**: Get campaign details
 - **list_campaigns**: List email campaigns
 - **list_contacts**: List contacts in Fidelizador
 - **list_mailing_lists**: List mailing lists
-- **update_contact**: Update an existing contact
 
 
 ## 💬 Prompt Examples

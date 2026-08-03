@@ -33,13 +33,14 @@ Empower your AI agent with access to the **CloudCard** (RemotePhoto) platform to
 
 
 ## Available Tools (12)
+- **get_authenticated_profile**: Get current API user info
+- **check_api_health**: Verify CloudCard API connectivity
 - **register_new_cardholder**: Requires email and first/last name.
 
 Add a new person to CloudCard
 - **deny_id_photo**: Requires a reason code or message for the cardholder.
 
 Deny a submitted photo
-- **get_authenticated_profile**: Get current API user info
 - **get_organization_settings**: Get organization metadata
 - **get_cardholder_details**: Get details for a specific person
 - **list_card_offices**: List distribution locations
@@ -51,7 +52,6 @@ List all photo submissions
 
 Get submission requirements
 - **list_configured_webhooks**: List active event webhooks
-- **check_api_health**: Verify CloudCard API connectivity
 - **approve_id_photo**: Approve a submitted photo
 
 

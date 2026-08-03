@@ -39,10 +39,10 @@ No more manual logging of phone results or digging through complex PBX portals. 
 - **get_call_details**: Get details for a specific call
 - **get_cdr_report**: Get Call Detail Records (CDR)
 - **get_pbx_system_status**: Check PBX system status
-- **get_recording_url**: Get the download URL for a recording
-- **list_call_logs**: List recent call logs
 - **list_pbx_extensions**: List PBX extensions
 - **list_virtual_numbers**: List virtual phone numbers
+- **get_recording_url**: Get the download URL for a recording
+- **list_call_logs**: List recent call logs
 - **list_call_recordings**: List available call recordings
 - **make_call**: Initiate a phone call
 

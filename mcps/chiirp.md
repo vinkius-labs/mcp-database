@@ -34,20 +34,20 @@ Connect your **Chiirp** account to any AI agent and manage your lead automation 
 
 
 ## Available Tools (12)
-- **apply_tag**: Useful for segmentation and triggering automations.
-
-Apply a tag to a contact
 - **check_chiirp_status**: Verify Chiirp API connectivity
 - **create_contact**: Phone number is required as the unique identifier.
 
 Create a new contact
-- **get_contact**: Get details of a specific contact
+- **apply_tag**: Useful for segmentation and triggering automations.
+
+Apply a tag to a contact
 - **get_profile**: Get your Chiirp account profile
 - **list_campaigns**: List all campaigns
 - **list_contacts**: List all contacts in your Chiirp account
 - **list_sequences**: List all automation sequences
 - **list_tags**: List all available tags
 - **remove_tag**: Remove a tag from a contact
+- **get_contact**: Get details of a specific contact
 - **search_contacts**: Search contacts by phone number
 - **update_contact**: Only provided fields are changed.
 

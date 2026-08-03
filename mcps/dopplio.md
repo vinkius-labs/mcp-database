@@ -36,15 +36,15 @@ No more manual document exporting or complex video rendering pipelines. Your AI 
 
 
 ## Available Tools (6)
+- **get_video_details**: Get specific video details
+- **render_pdf**: Provide "url" or "html" in the JSON body.
+
+Render a PDF from URL or HTML
 - **capture_screenshot**: Capture a website screenshot
 - **generate_video**: Provide template and personalization data.
 
 Generate AI-personalized video
 - **get_render_status**: Check status of a render job
-- **get_video_details**: Get specific video details
-- **render_pdf**: Provide "url" or "html" in the JSON body.
-
-Render a PDF from URL or HTML
 - **list_videos**: List all generated videos
 
 
