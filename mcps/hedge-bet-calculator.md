@@ -14,9 +14,9 @@ The Hedge Bet Calculator is a precision tool designed for bettors looking to loc
 
 
 ## Available Tools (3)
-- **verify_arbitrage_state**: Evaluates whether a specific set of odds represents a profitable opportunity
 - **calculate_net_profit**: Calculates the final realized profit after both wagers
 - **get_hedge_requirements**: Determines the specific amount required for a hedge bet and the resulting payout
+- **verify_arbitrage_state**: Evaluates whether a specific set of odds represents a profitable opportunity
 
 
 ## 💬 Prompt Examples

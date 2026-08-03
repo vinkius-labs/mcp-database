@@ -14,10 +14,10 @@ The Holiday Weekend Bridge Optimizer helps you strategically plan your time off.
 
 
 ## Available Tools (4)
-- **find_bridge_candidates**: Find potential bridge days in a given year
 - **calculate_optimization_result**: Calculate the final summary of an optimized plan
-- **rank_bridge_candidates**: Rank bridge candidates by efficiency
 - **optimize_holiday_plan**: Optimize a holiday plan using available PTO
+- **rank_bridge_candidates**: Rank bridge candidates by efficiency
+- **find_bridge_candidates**: Find potential bridge days in a given year
 
 
 ## 💬 Prompt Examples

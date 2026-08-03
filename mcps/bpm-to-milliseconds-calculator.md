@@ -15,8 +15,8 @@ This MCP server provides high-precision timing calculations for musicians, produ
 
 ## Available Tools (3)
 - **calculate_beat_duration**: Determines the duration of a single beat in milliseconds based on the music tempo
-- **calculate_note_duration**: Calculates the exact millisecond duration for specific note types
 - **generate_rhythm_summary**: Generates a comprehensive breakdown of all standard rhythmic subdivisions
+- **calculate_note_duration**: Calculates the exact millisecond duration for specific note types
 
 
 ## 💬 Prompt Examples

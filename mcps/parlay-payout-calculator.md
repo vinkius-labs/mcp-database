@@ -17,8 +17,8 @@ This MCP server provides precise tools for bettors to calculate the financial ou
 - **calculate_leg_return**: g., -150 or +200) and returns the calculated payout and profit.
 
 Calculate the payout and profit for a single betting leg
-- **validate_betting_parameters**: Verify betting parameters meet regulatory and mathematical requirements
 - **calculate_parlay_sequence**: Calculate the cumulative outcome for a series of connected betting legs
+- **validate_betting_parameters**: Verify betting parameters meet regulatory and mathematical requirements
 
 
 ## 💬 Prompt Examples

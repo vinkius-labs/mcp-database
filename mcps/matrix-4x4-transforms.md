@@ -19,12 +19,12 @@ This MCP server provides comprehensive tools for working with 4x4 transformation
 - **create_rotation_matrix**: Generate a 4x4 rotation matrix around a specified axis
 - **create_scale_matrix**: Generate a 4x4 scale matrix along axes
 - **create_shear_matrix**: Generate a 4x4 shear matrix along axes
-- **create_translation_matrix**: Generate a 4x4 transformation matrix for translating objects
-- **matrix_to_euler_angles**: Extract Euler angles from a rotation matrix
 - **quaternion_to_axis_angle**: Convert a quaternion to axis-angle representation
 - **quaternion_to_rotation_matrix**: Convert a quaternion to a 3x3 rotation matrix
 - **rotation_matrix_to_quaternion**: Convert a 3x3 rotation matrix to a quaternion
 - **transform_point**: Apply a 4x4 matrix to a 3D point with perspective divide
+- **create_translation_matrix**: Generate a 4x4 transformation matrix for translating objects
+- **matrix_to_euler_angles**: Extract Euler angles from a rotation matrix
 
 
 ## 💬 Prompt Examples

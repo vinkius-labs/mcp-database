@@ -14,8 +14,8 @@ The Net Balance Minimizer is a specialized calculation engine designed to resolv
 
 
 ## Available Tools (3)
-- **net_balances**: Calculate the net balance for each participant
 - **expense_summary**: Summarize total group expenditure
+- **net_balances**: Calculate the net balance for each participant
 - **settlement_transactions**: Generate transactions to settle all balances
 
 

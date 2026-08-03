@@ -14,10 +14,10 @@ This MCP server provides tools to quantify environmental benefits through carbon
 
 
 ## Available Tools (4)
+- **calculate_single_material_savings**: Calculate CO2 savings for one material at a specific mass
 - **calculate_batch_recycling_impact**: Calculate cumulative CO2 savings for a list of materials
 - **get_impact_tier**: Categorize the magnitude of carbon savings
 - **get_material_registry**: Retrieve the registry of supported materials and their emission factors
-- **calculate_single_material_savings**: Calculate CO2 savings for one material at a specific mass
 
 
 ## 💬 Prompt Examples

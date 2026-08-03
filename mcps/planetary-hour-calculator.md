@@ -14,9 +14,9 @@ The Planetary Hour Calculator allows you to determine the exact timing and gover
 
 
 ## Available Tools (3)
+- **calculate_segment_durations**: Determine the length of a single daylight and nighttime planetary hour
 - **get_day_planet_affinity**: Identify the primary ruler for the start of a specific weekday
 - **get_planetary_schedule**: Generate a complete list of all twenty-four planetary hours for a specific day
-- **calculate_segment_durations**: Determine the length of a single daylight and nighttime planetary hour
 
 
 ## 💬 Prompt Examples

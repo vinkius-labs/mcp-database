@@ -14,9 +14,9 @@ The Weight Loss Plateau Recalculator is a specialized simulation tool designed t
 
 
 ## Available Tools (3)
-- **simulate_dietary_adaptation**: Simulate long-term weight loss progress with potential calorie adjustments
 - **calculate_maintenance_burn**: Calculate calories needed to maintain current weight
 - **evaluate_plateau_risk**: Evaluate the risk of a weight loss plateau
+- **simulate_dietary_adaptation**: Simulate long-term weight loss progress with potential calorie adjustments
 
 
 ## 💬 Prompt Examples

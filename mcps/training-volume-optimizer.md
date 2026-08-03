@@ -14,9 +14,9 @@ The Training Volume Optimizer is a physiological calculation engine designed to 
 
 
 ## Available Tools (3)
-- **distribute_sets_per_session**: Calculates how to split weekly sets across training days
 - **get_volume_bounds**: Calculates MEV, MAV, and MRV thresholds
 - **validate_training_load**: Checks if current volume poses a risk of overtraining or underperformance
+- **distribute_sets_per_session**: Calculates how to split weekly sets across training days
 
 
 ## 💬 Prompt Examples

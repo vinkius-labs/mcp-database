@@ -14,12 +14,12 @@ The Color Difference Engine provides precise mathematical tools to measure how d
 
 
 ## Available Tools (4)
-- **rank_colors_by_similarity**: Sorts a list of candidate colors from most similar to least similar to a target color
 - **calculate_color_difference**: MM: #FFFFFF). Supports CIE76, CIEDE2000, and OKLAB.
 
 Calculates the perceptual distance between two specific colors using a chosen mathematical model
 - **evaluate_proximity**: Checks if two colors are "close enough" based on a user-defined margin of error
 - **get_color_components**: Deconstructs a single color into its human-perceivable dimensions
+- **rank_colors_by_similarity**: Sorts a list of candidate colors from most similar to least similar to a target color
 
 
 ## 💬 Prompt Examples

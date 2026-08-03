@@ -14,9 +14,9 @@ The Bill Due Date Shifter MCP connects your financial schedule to your paycheck.
 
 
 ## Available Tools (3)
-- **audit_overdraft_risk**: Provides a high-level summary of bills causing financial risk
 - **generate_full_schedule**: Represents a complete view of all bills after applying payday alignment logic
 - **calculate_single_bill_shift**: Determine how a specific bill's due date will change based on a new payday
+- **audit_overdraft_risk**: Provides a high-level summary of bills causing financial risk
 
 
 ## 💬 Prompt Examples

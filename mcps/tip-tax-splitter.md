@@ -15,8 +15,8 @@ The Tip & Tax Splitter resolves the debate between proportional and additive bil
 
 ## Available Tools (3)
 - **additive_split**: Calculate a split where tax and even tip are distributed equally among all participants
-- **compare_splits**: Compare proportional vs additive splitting methods
 - **proportional_split**: Calculate a split where tax and tip are distributed proportionally to each person's subtotal
+- **compare_splits**: Compare proportional vs additive splitting methods
 
 
 ## 💬 Prompt Examples
