@@ -34,20 +34,20 @@ Connect your **Customer.io** account to any AI agent to orchestrate sophisticate
 
 
 ## Available Tools (18)
-- **add_or_update_customer**: Add or update a person (v1)
+- **pipeline_page**: Record page views (Pipelines API)
 - **merge_customers**: Merge two customer profiles (v1)
 - **pipeline_batch**: Send multiple calls in a single request (Pipelines API)
 - **pipeline_group**: Associate people with objects like companies (Pipelines API)
 - **pipeline_identify**: Identify a person and assign traits (Pipelines API)
-- **pipeline_page**: Record page views (Pipelines API)
 - **pipeline_track**: Record actions people take (Pipelines API)
 - **send_newsletter**: Send a newsletter immediately
 - **send_transactional_email**: Send a transactional email
 - **send_transactional_in_app**: Send a transactional in-app message
 - **send_transactional_push**: Send a transactional push notification
-- **track_anonymous_event**: Send anonymous events (v1)
 - **track_batch**: Send multiple entity operations in one request (v2)
 - **track_customer_event**: Track an event for a person (v1)
+- **add_or_update_customer**: Add or update a person (v1)
+- **track_anonymous_event**: Send anonymous events (v1)
 - **track_entity**: Create, update, or delete a single person or object (v2)
 - **trigger_broadcast**: Trigger an API-triggered broadcast
 - **delete_customer**: Delete a person (v1)

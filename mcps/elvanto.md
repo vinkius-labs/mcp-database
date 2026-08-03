@@ -27,6 +27,10 @@ Connect your **Elvanto** account to any AI agent to manage your church database 
 
 
 ## Available Tools (46)
+- **remove_person**: Delete a person
+- **remove_transaction**: Delete a transaction
+- **edit_song_key**: Edit an existing key
+- **list_people_flow_steps**: Lists all People Flow Steps within a given People Flow
 - **add_group_person**: Add a person to a group, or change their position
 - **add_person_to_flow_step**: Adds a person to a specified People Flow Step
 - **create_calendar_event**: Create a new calendar event
@@ -41,7 +45,6 @@ Connect your **Elvanto** account to any AI agent to manage your church database 
 - **edit_group**: Edit an existing group
 - **edit_person**: Edit an existing person
 - **edit_song_arrangement**: Edit a specific arrangement details
-- **edit_song_key**: Edit an existing key
 - **edit_song**: Edit specific details about a chosen song
 - **edit_transaction**: Edit an existing transaction
 - **get_current_user**: Retrieve information of the logged-in user
@@ -59,7 +62,6 @@ Connect your **Elvanto** account to any AI agent to manage your church database 
 - **list_groups**: Get a list of all groups
 - **list_people_categories**: Get a list of all People Categories
 - **list_people_flow_step_people**: Lists members inside a specific People Flow step
-- **list_people_flow_steps**: Lists all People Flow Steps within a given People Flow
 - **list_people_flows**: Lists all People Flows in the account
 - **list_people**: Get a list of all people
 - **list_services**: Get a list of services
@@ -70,8 +72,6 @@ Connect your **Elvanto** account to any AI agent to manage your church database 
 - **remove_calendar_event**: Delete a calendar event
 - **remove_group_person**: Remove a person from a group
 - **remove_group**: Delete a group
-- **remove_person**: Delete a person
-- **remove_transaction**: Delete a transaction
 - **search_people**: Find one or more people matching a specific search query
 
 

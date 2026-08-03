@@ -33,11 +33,12 @@ Connect your **Edmunds** API key to any AI agent and unlock deep automotive inte
 
 
 ## Available Tools (41)
-- **get_editorial_model**: Get editorial model overview
-- **list_makes**: Get a list of car makes
+- **get_used_tco_details**: Get TCO details for used car
+- **calculate_used_tmv**: Get TMV price for a used car
 - **get_dealer_reviews**: Get dealer ratings and reviews by dealer ID
 - **get_dealership_franchises**: Find dealership franchises
 - **get_editorial_make**: Get editorial make overview
+- **get_editorial_model**: Get editorial model overview
 - **get_editorial_model_year**: Get editorial model/year overview
 - **get_editorial_road_tests**: Get editorial road tests overview
 - **get_engines**: Get engines for a car style
@@ -47,6 +48,7 @@ Connect your **Edmunds** API key to any AI agent and unlock deep automotive inte
 - **get_maintenance_schedule**: Get maintenance schedule by car model year ID
 - **get_make_details**: Get details on a specific car make
 - **get_makes_count**: Get total count of car makes
+- **list_makes**: Get a list of car makes
 - **list_model_years**: Get a list of model years
 - **list_models**: Get a list of models
 - **get_models_with_tco**: Get car models with TCO value
@@ -66,12 +68,10 @@ Connect your **Edmunds** API key to any AI agent and unlock deep automotive inte
 - **submit_dealer_review_comment**: Submit dealer review comment
 - **submit_dealer_review**: Submit dealer review
 - **get_transmissions**: Get transmissions for a car style
-- **get_used_tco_details**: Get TCO details for used car
 - **decode_vin**: Get vehicle details through VIN decoding
 - **get_years_with_styles**: Get years with styles for a car make/model
 - **calculate_new_tmv**: Get TMV price for a new car
 - **calculate_typically_equipped_used_tmv**: Get TMV price for a typically equipped used car
-- **calculate_used_tmv**: Get TMV price for a used car
 - **get_color**: Get color details by ID
 - **get_makes_with_tco**: Get car makes with TCO value
 

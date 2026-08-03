@@ -35,16 +35,16 @@ Connect your **Elastic Path** commerce engine to any AI agent to streamline your
 
 ## Available Tools (9)
 - **create_token**: Authenticate and create an OAuth2 token
-- **get_searches**: Get searches entry point for a scope
-- **get_account**: Read a specific account
 - **get_countries**: Get geographies/countries for a scope
 - **get_default_cart**: Read the default cart for a scope
 - **get_default_profile**: Read the default profile for a scope
+- **get_registration_form**: Get account registration form for a scope
+- **get_searches**: Get searches entry point for a scope
 - **get_navigations**: Get navigations entry point for a scope
 - **get_purchase**: Returns status (COMPLETE, FAILED), totals, and line items.
 
 Read a specific purchase
-- **get_registration_form**: Get account registration form for a scope
+- **get_account**: Read a specific account
 
 
 ## 💬 Prompt Examples

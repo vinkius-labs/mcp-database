@@ -35,6 +35,7 @@ Connect your **Flinks** instance to any AI agent to access real-time banking dat
 
 ## Available Tools (15)
 - **delete_card**: Delete all data associated with a specific user account
+- **get_statements**: Retrieve original bank-issued PDF statements (Canada Only)
 - **authorize_session**: Authenticate a session and fetch cached banking data
 - **create_transaction**: Requires FLINKS_CLIENT_ID credential.
 
@@ -51,7 +52,6 @@ Retrieve full account details including transactions and KYC
 - **get_business_analysis_attributes**: Get insights for business underwriting and creditworthiness
 - **get_categorization**: Get categorized transaction data
 - **get_income_attributes**: Get income verification and stability insights
-- **get_statements**: Retrieve original bank-issued PDF statements (Canada Only)
 - **get_user_analysis_attributes**: Get credit-risk use-case attributes for a consumer
 - **list_institutions**: List all available financial institutions supported by Flinks
 - **set_scheduled_refresh**: Enable or disable nightly refreshes for a specific account

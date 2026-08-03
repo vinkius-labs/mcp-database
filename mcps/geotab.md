@@ -34,21 +34,21 @@ Connect your **MyGeotab** account to any AI agent to streamline your telematics 
 
 
 ## Available Tools (7)
-- **add_entity**: Provide the full entity JSON object.
-
-Creates a new entity in the database
 - **get_count_of**: Returns the number of entities matching a search
 - **get_feed**: Returns up to 50,000 records and a toVersion token for the next call.
 
 Continuously retrieves new or updated data (incremental polling)
 - **get_entity**: Retrieves a list of entities based on search criteria
-- **execute_multi_call**: Provide a JSON array of call objects, each containing a "method" and "params".
-
-Executes multiple API calls in a single HTTP request
 - **remove_entity**: Deletes an entity from the database
 - **set_entity**: The entity JSON must include the ID of the record being updated.
 
 Updates an existing entity
+- **add_entity**: Provide the full entity JSON object.
+
+Creates a new entity in the database
+- **execute_multi_call**: Provide a JSON array of call objects, each containing a "method" and "params".
+
+Executes multiple API calls in a single HTTP request
 
 
 ## 💬 Prompt Examples

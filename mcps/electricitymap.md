@@ -36,12 +36,12 @@ Connect to **ElectricityMap** to empower your AI agent with global grid transpar
 ## Available Tools (8)
 - **get_carbon_intensity_forecast**: Get forecasted carbon intensity for a zone
 - **get_carbon_intensity_history**: Get historical carbon intensity for a zone
-- **get_carbon_intensity_latest**: Get latest carbon intensity for a zone
-- **list_zones**: List all available zones
 - **get_marginal_carbon_intensity_latest**: Get latest marginal carbon intensity
 - **get_power_breakdown_forecast**: Get forecasted power breakdown for a zone
 - **get_power_breakdown_history**: Get historical power breakdown for a zone
 - **get_power_breakdown_latest**: Get latest power breakdown for a zone
+- **get_carbon_intensity_latest**: Get latest carbon intensity for a zone
+- **list_zones**: List all available zones
 
 
 ## 💬 Prompt Examples

@@ -33,6 +33,9 @@ Connect **Frill** to your AI agent to streamline your product feedback loop and 
 
 
 ## Available Tools (35)
+- **delete_topic**: Delete a topic
+- **list_announcements**: List announcements in Frill
+- **update_category**: Update an announcement category
 - **create_idea**: Create a new idea
 - **create_status**: Create a new status
 - **create_topic**: Create a new topic
@@ -43,12 +46,10 @@ Connect **Frill** to your AI agent to streamline your product feedback loop and 
 - **delete_follower**: Delete a follower
 - **delete_idea**: Delete an idea
 - **delete_status**: Delete a status
-- **delete_topic**: Delete a topic
 - **delete_vote**: Unvote an idea
 - **get_announcement**: Get a specific announcement
 - **get_category**: Get a specific announcement category
 - **get_idea**: Get a specific idea by IDX or slug
-- **list_announcements**: List announcements in Frill
 - **list_categories**: List announcement categories
 - **list_comments**: List comments for an idea
 - **list_followers**: List followers
@@ -58,7 +59,6 @@ Connect **Frill** to your AI agent to streamline your product feedback loop and 
 - **list_votes**: List votes
 - **search_followers**: Search followers by email
 - **update_announcement**: Update an announcement
-- **update_category**: Update an announcement category
 - **update_comment**: Update a comment
 - **update_follower**: Update a follower
 - **update_idea**: Update an idea

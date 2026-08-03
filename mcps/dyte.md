@@ -37,7 +37,6 @@ Connect your **Dyte** organization to any AI agent to orchestrate real-time comm
 - **add_participant**: Add a participant to a meeting
 - **create_meeting**: Create a new Dyte meeting
 - **create_webhook**: Create a webhook
-- **get_meeting**: Fetch meeting details
 - **get_recording**: Fetch recording details
 - **list_meetings**: Fetch all meetings
 - **list_participants**: Fetch participants in a meeting
@@ -47,6 +46,7 @@ Connect your **Dyte** organization to any AI agent to orchestrate real-time comm
 Start recording a meeting
 - **stop_livestream**: Stop the active livestream for a meeting
 - **stop_recording**: Stop an active recording
+- **get_meeting**: Fetch meeting details
 
 
 ## 💬 Prompt Examples

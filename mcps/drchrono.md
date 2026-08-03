@@ -34,9 +34,6 @@ Connect your **DrChrono** EHR account to any AI agent to streamline medical prac
 
 
 ## Available Tools (14)
-- **list_patients**: List all patients
-- **create_appointment**: Schedule a new appointment
-- **create_clinical_note**: Create a clinical note
 - **create_patient**: Create a new patient
 - **get_appointment**: Retrieve appointment details
 - **get_patient**: Retrieve a specific patient
@@ -47,6 +44,9 @@ Connect your **DrChrono** EHR account to any AI agent to streamline medical prac
 - **list_clinical_notes**: Retrieve clinical notes for visits
 - **list_doctors**: List doctors associated with the account
 - **list_offices**: List practice locations
+- **list_patients**: List all patients
+- **create_clinical_note**: Create a clinical note
+- **create_appointment**: Schedule a new appointment
 - **update_patient**: Update a patient record
 
 

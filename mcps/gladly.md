@@ -34,10 +34,10 @@ Connect your **Gladly** platform to any AI agent to streamline your customer ser
 
 
 ## Available Tools (20)
+- **delete_business_hours**: Delete business hours
 - **add_answer**: Add a new answer
 - **create_business_hours**: Create business hours
 - **delete_answer**: Delete an answer
-- **delete_business_hours**: Delete business hours
 - **get_agent_call_recording**: Get agent call recording status
 - **get_agent**: Get a specific Gladly agent
 - **get_answer_content**: Get answer content

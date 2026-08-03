@@ -34,6 +34,7 @@ Connect your **Gotenberg** instance to any AI agent to handle complex document c
 
 
 ## Available Tools (16)
+- **get_health**: Get Gotenberg health status
 - **convert_office_to_pdf**: ) to PDF using the downloadFrom parameter.
 
 Convert Office documents to PDF using LibreOffice
@@ -42,7 +43,6 @@ Convert Office documents to PDF using LibreOffice
 
 Convert a URL to PDF using Chromium
 - **embed_pdf_attachments**: Embed attachments into a PDF
-- **get_health**: Get Gotenberg health status
 - **merge_pdfs**: Merge multiple PDFs into one
 - **read_pdf_bookmarks**: Read bookmarks from a PDF
 - **read_pdf_metadata**: Read metadata from a PDF
