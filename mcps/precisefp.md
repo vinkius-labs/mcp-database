@@ -36,10 +36,6 @@ No more manual status checking or template searching. Your AI acts as a dedicate
 
 
 ## Available Tools (13)
-- **create_form_engagement**: Send a form to a client (Engagement)
-- **create_person**: g., co-client, child, beneficiary) within an existing account.
-
-Add a person to an account
 - **get_account_activity**: Get activity history for an account
 - **get_account**: Get PreciseFP account details
 - **get_form_engagement**: Get details for a form engagement
@@ -53,6 +49,10 @@ List PreciseFP accounts
 - **list_form_templates**: List available form templates
 - **list_pdf_templates**: List available PDF templates
 - **list_persons**: List persons in an account
+- **create_form_engagement**: Send a form to a client (Engagement)
+- **create_person**: g., co-client, child, beneficiary) within an existing account.
+
+Add a person to an account
 
 
 ## 💬 Prompt Examples

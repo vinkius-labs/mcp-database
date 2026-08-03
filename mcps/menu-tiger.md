@@ -36,8 +36,11 @@ No more manual updating of individual menu items or missing critical order statu
 
 
 ## Available Tools (10)
-- **get_menu**: Get menu details
 - **get_order**: Get order details
+- **get_menu**: Get menu details
+- **check_menutiger_status**: Verify MenuTiger API connectivity
+- **get_account**: Get account info
+- **get_item**: Get item details
 - **list_categories**: List menu categories
 - **list_items**: List menu items
 - **list_menus**: List all menus
@@ -45,9 +48,6 @@ No more manual updating of individual menu items or missing critical order statu
 - **update_order_status**: g., preparing, ready, completed, cancelled).
 
 Update order status
-- **check_menutiger_status**: Verify MenuTiger API connectivity
-- **get_account**: Get account info
-- **get_item**: Get item details
 
 
 ## 💬 Prompt Examples

@@ -22,6 +22,8 @@ Connect your **MOBIDI** platform to any AI agent and manage business intelligenc
 
 
 ## Available Tools (12)
+- **check_mobidi_status**: Verify API connectivity
+- **create_record**: Create a record
 - **delete_record**: Delete a record
 - **execute_report**: Execute a report
 - **get_record_by_id**: Get record by ID
@@ -30,10 +32,8 @@ Connect your **MOBIDI** platform to any AI agent and manage business intelligenc
 - **get_services**: List system services
 - **list_entity_types**: List entity types
 - **list_records**: Query records
-- **list_reports**: List reports
 - **update_record**: Update a record
-- **check_mobidi_status**: Verify API connectivity
-- **create_record**: Create a record
+- **list_reports**: List reports
 
 
 ## 💬 Prompt Examples

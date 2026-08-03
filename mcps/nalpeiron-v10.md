@@ -36,18 +36,18 @@ No more manual checking of individual license keys or missing activation failure
 
 
 ## Available Tools (10)
-- **activate_license**: Requires the license code and unique machine identifier.
-
-Activate a license
-- **check_nalpeiron_status**: Verify Nalpeiron API connectivity
-- **deactivate_license**: Deactivate a license
-- **get_analytics**: Get usage analytics
 - **get_license**: Get license details
 - **get_product**: Get product details
 - **list_activations**: List all activations
 - **list_customers**: List all customers
 - **list_licenses**: List license codes
+- **activate_license**: Requires the license code and unique machine identifier.
+
+Activate a license
+- **check_nalpeiron_status**: Verify Nalpeiron API connectivity
 - **list_products**: List all products
+- **deactivate_license**: Deactivate a license
+- **get_analytics**: Get usage analytics
 
 
 ## 💬 Prompt Examples

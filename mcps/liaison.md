@@ -28,11 +28,11 @@ Connect your **Liaison WebAdMIT** account to any AI agent and manage admissions 
 - **get_export**: Get export details
 - **get_program**: Get program details
 - **list_applications**: List all applications
+- **list_programs**: List academic programs
 - **list_batches**: List application batches
 - **list_custom_fields**: List custom fields
 - **list_designations**: List designations
 - **list_exports**: List data exports
-- **list_programs**: List academic programs
 
 
 ## 💬 Prompt Examples

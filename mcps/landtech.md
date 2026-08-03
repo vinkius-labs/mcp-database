@@ -34,15 +34,15 @@ Connect your **LandTech** account to any AI agent and access property intelligen
 
 
 ## Available Tools (12)
+- **list_local_authority_plans**: List regional policies
+- **get_planning_policy**: Get policy details
 - **get_api_status**: Check connection
 - **get_price_comparables**: Find similar sales
 - **get_site_constraints**: Check development risks
 - **get_real_estate_market_data**: Get regional insights
 - **get_planning_details**: Get planning info
-- **get_planning_policy**: Get policy details
 - **get_building_data**: Get property-level info
 - **get_ownership_title**: Get property title info
-- **list_local_authority_plans**: List regional policies
 - **list_saved_sites**: List portfolio sites
 - **search_land_parcels**: Find land for development
 - **search_urban_planning**: Find planning applications

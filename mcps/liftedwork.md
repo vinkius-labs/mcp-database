@@ -32,11 +32,11 @@ Connect your **LiftedWork** account to any AI agent and manage staffing through 
 
 
 ## Available Tools (6)
+- **list_clients**: List all clients
 - **create_project**: Create a new project
 - **create_task**: Pass task data as a JSON string.
 
 Create a new task
-- **list_clients**: List all clients
 - **list_projects**: List all projects
 - **list_tasks**: List all agency tasks
 - **list_time_entries**: List all time tracking entries

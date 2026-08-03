@@ -39,15 +39,15 @@ No more manual emailing of leads to partners or missing critical conversion upda
 - **get_partner**: Get partner details
 - **list_activities**: List lead activities
 - **list_leads_by_partner**: List leads by partner
-- **list_leads_by_status**: List leads by status
 - **list_leads**: List leads
-- **list_partners**: List partners
-- **update_lead**: Update a lead
-- **add_activity**: Add lead activity
-- **check_leadtributor_status**: Verify connectivity
 - **create_lead**: Create a lead
 - **get_lead**: Get lead details
 - **get_partner_stats**: Get partner stats
+- **list_leads_by_status**: List leads by status
+- **add_activity**: Add lead activity
+- **check_leadtributor_status**: Verify connectivity
+- **list_partners**: List partners
+- **update_lead**: Update a lead
 
 
 ## 💬 Prompt Examples

@@ -34,22 +34,22 @@ Connect your **InfoVetted** account to any AI agent and manage background checks
 
 
 ## Available Tools (12)
+- **check_api_connectivity**: Verify InfoVetted API status
+- **cancel_active_vetting**: Cancel a background check
 - **create_screening_contact**: Add a new individual for screening
 - **create_contact_group**: g., "Engineering Team").
 
 Create a new organization group
 - **create_new_vetting_check**: Initiate a background check
-- **get_contact_details**: Get details for a specific individual
-- **get_vetting_request_status**: Check status of a vetting process
 - **list_screening_contacts**: List individuals being screened
 - **list_contact_groups**: List organizational contact groups
 - **list_vetting_requests**: List all background check requests
+- **list_configured_webhooks**: List active webhooks
+- **get_vetting_request_status**: Check status of a vetting process
 - **list_supported_check_types**: ).
 
 List available background check types
-- **list_configured_webhooks**: List active webhooks
-- **cancel_active_vetting**: Cancel a background check
-- **check_api_connectivity**: Verify InfoVetted API status
+- **get_contact_details**: Get details for a specific individual
 
 
 ## 💬 Prompt Examples

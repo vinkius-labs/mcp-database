@@ -34,15 +34,15 @@ Connect your **Mav** AI recruiting account to any AI agent and manage candidate 
 
 
 ## Available Tools (9)
+- **stop_playbook**: Stop a running playbook for a lead
+- **create_lead**: Create a lead and trigger a playbook
 - **get_lead**: Get details for a specific lead
 - **get_playbook**: Get details for a specific playbook
 - **list_activities**: List recent activities/events
 - **list_leads**: List all leads
 - **list_playbooks**: List all available Mav playbooks
 - **opt_out_lead**: Manually opt-out a lead
-- **stop_playbook**: Stop a running playbook for a lead
 - **update_lead**: Update an existing lead
-- **create_lead**: Create a lead and trigger a playbook
 
 
 ## 💬 Prompt Examples
