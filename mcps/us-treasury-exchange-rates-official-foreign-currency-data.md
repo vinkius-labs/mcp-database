@@ -20,15 +20,15 @@ U.S. Treasury FX data.
 
 
 ## Available Tools (3)
+- **query_treasury_dataset**: treasury.gov. Provide the API endpoint path (e.g., /v2/accounting/od/debt_to_penny). Supports filter, sort, fields, and pagination parameters. See fiscaldata.treasury.gov for all available datasets.
+
+Query any Treasury Fiscal Data dataset by endpoint path
 - **get_treasury_exchange_rates**: Updated quarterly. Covers 170+ currencies against the U.S. dollar. These are the official rates used for government accounting and reporting.
 
 Get official Treasury exchange rates for 170+ currencies
 - **get_exchange_rate_for_currency**: Use the currency name or country (e.g., "Euro", "Japan-Yen", "Brazil-Real", "United Kingdom-Pound"). Updated quarterly.
 
 Get Treasury exchange rate history for a specific currency
-- **query_treasury_dataset**: treasury.gov. Provide the API endpoint path (e.g., /v2/accounting/od/debt_to_penny). Supports filter, sort, fields, and pagination parameters. See fiscaldata.treasury.gov for all available datasets.
-
-Query any Treasury Fiscal Data dataset by endpoint path
 
 
 ## 💬 Prompt Examples

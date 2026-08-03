@@ -39,14 +39,14 @@ No more manual navigation through complex agile boards to check a sprint status.
 
 
 ## Available Tools (6)
+- **list_bugs**: Lists bugs and issues for a specific project
+- **list_epics**: Lists epics (high-level features) for a project
+- **list_users**: Lists all registered users in the Yodiz workspace
 - **list_projects**: Lists all agile projects in the Yodiz account
 - **list_user_stories**: Provide the numeric project ID.
 
 Lists user stories for a specific Yodiz project
 - **list_sprints**: Lists all sprints (iterations) for a specific project
-- **list_bugs**: Lists bugs and issues for a specific project
-- **list_epics**: Lists epics (high-level features) for a project
-- **list_users**: Lists all registered users in the Yodiz workspace
 
 
 ## 💬 Prompt Examples

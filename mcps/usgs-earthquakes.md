@@ -23,13 +23,13 @@ Whether you are building environmental response bots or running historical data 
 
 
 ## Available Tools (3)
-- **count_earthquakes**: Get the total count of earthquakes matching specific criteria
 - **get_significant_30_days**: No parameters needed.
 
-Get highly significant global earthquakes from the last 30 days
+Get highly significant globalThis earthquakes from the last 30 days
+- **count_earthquakes**: Get the total count of earthquakes matching specific criteria
 - **query_earthquakes**: Use parameters like starttime, endtime, minmagnitude, and geographic boundaries (latitude/longitude/maxradiuskm) to narrow the search. Maximum 20,000 events returned per query.
 
-Search for global earthquakes using USGS real-time seismic data
+Search for globalThis earthquakes using USGS real-time seismic data
 
 
 ## 💬 Prompt Examples

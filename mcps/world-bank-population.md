@@ -27,13 +27,13 @@ NGOs, sociologists, government researchers, and urban planners.
 
 
 ## Available Tools (5)
-- **get_total_population**: Get total population
-- **get_population_growth**: Get annual population growth percentage
 - **get_poverty**: 15 a day at 2017 international prices.
 
 Get poverty headcount ratio at .15 a day
 - **get_gini_index**: Get Gini index
 - **get_social_indicator**: Get any World Bank popupation/social indicator by code
+- **get_total_population**: Get total population
+- **get_population_growth**: Get annual population growth percentage
 
 
 ## 💬 Prompt Examples

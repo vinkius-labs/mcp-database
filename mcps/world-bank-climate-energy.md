@@ -29,9 +29,9 @@ Environmental scientists, ESG compliance officers, energy analysts, and journali
 ## Available Tools (5)
 - **get_co2_emissions**: Get CO2 emissions (metric tons per capita)
 - **get_renewable_energy**: Get renewable energy consumption (% of total)
-- **get_electricity_access**: Get access to electricity (% of population)
 - **get_forest_area**: Get forest area (% of land area)
 - **get_climate_indicator**: Get any World Bank climate/energy indicator by code
+- **get_electricity_access**: Get access to electricity (% of population)
 
 
 ## 💬 Prompt Examples

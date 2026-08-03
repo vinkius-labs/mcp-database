@@ -35,12 +35,12 @@ Don't let rogue automation jobs fail silently. Allow a conversational agent to v
 
 
 ## Available Tools (6)
-- **get_integration_details**: Retrieves details for a specific integration
 - **list_ai_agents**: Lists configured AI agents in the UnifyApps environment
 - **list_active_connections**: Lists active account connections
 - **list_flow_executions**: Lists recent execution history for automation flows
 - **list_automation_flows**: Lists all automation flows defined in the platform
 - **list_integrations**: Lists all configured integrations in UnifyApps
+- **get_integration_details**: Retrieves details for a specific integration
 
 
 ## 💬 Prompt Examples

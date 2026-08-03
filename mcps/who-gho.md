@@ -31,15 +31,15 @@ Connect your AI agent to the **WHO Global Health Observatory** — the authorita
 
 
 ## Available Tools (3)
-- **get_who_country_profile**: Use ISO-3 country codes (BRA, USA, JPN, DEU, IND).
-
-Get a health snapshot for any country from WHO data
 - **get_who_indicator_data**: Returns values by year with sex disaggregation where available. Use search_who_indicators first to find codes.
 
 Get country-level data for a WHO health indicator
 - **search_who_indicators**: Returns indicator codes for further data retrieval.
 
-Search 2200+ global health indicators from the World Health Organization
+Search 2200+ globalThis health indicators from the World Health Organization
+- **get_who_country_profile**: Use ISO-3 country codes (BRA, USA, JPN, DEU, IND).
+
+Get a health snapshot for any country from WHO data
 
 
 ## 💬 Prompt Examples

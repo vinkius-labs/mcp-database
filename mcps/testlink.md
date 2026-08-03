@@ -34,7 +34,6 @@ Connect your **TestLink** self-hosted environment to any AI agent and bring your
 
 
 ## Available Tools (10)
-- **get_test_case_details**: Retrieves full details for a specific test case
 - **get_test_plan_details**: Retrieves details for a specific test plan
 - **get_test_project_details**: Retrieves details for a specific TestLink test project
 - **get_test_suite_details**: Retrieves details for a specific test suite
@@ -46,6 +45,7 @@ Lists all test plans associated with a specific project
 - **list_test_projects**: Lists all test projects available on the TestLink server
 - **list_test_suites**: Lists all test suites within a specific test project
 - **get_user_info**: Retrieves information about the authenticated TestLink user
+- **get_test_case_details**: Retrieves full details for a specific test case
 
 
 ## 💬 Prompt Examples

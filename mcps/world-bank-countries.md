@@ -28,10 +28,10 @@ Data engineers, global cartography apps, economic planners, and macro analysts.
 
 ## Available Tools (3)
 - **list_countries**: List World Bank countries
-- **search_regions**: List World Bank geographic regions
 - **search_income_levels**: g., HIC, LIC).
 
 List World Bank income levels
+- **search_regions**: List World Bank geographic regions
 
 
 ## 💬 Prompt Examples

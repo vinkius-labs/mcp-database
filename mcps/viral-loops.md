@@ -34,6 +34,17 @@ Viral Loops is the leading referral marketing platform used by thousands of busi
 
 
 ## Available Tools (10)
+- **get_referral_url**: Get the unique referral URL for a participant
+- **get_rewards**: Get rewards configuration for a campaign
+- **get_campaign_stats**: Get performance statistics for a campaign
+- **list_campaigns**: Use this to discover available campaigns before querying specific ones.
+
+List all referral campaigns in your Viral Loops account
+- **update_participant**: Update information for an existing participant
+- **get_participant**: Get details of a specific participant by email
+- **list_participants**: Useful for leaderboard analysis and participant management.
+
+List all participants in a referral campaign
 - **create_participant**: Use this when users sign up through your referral form.
 
 Add a new participant to a referral campaign
@@ -43,17 +54,6 @@ Get detailed information about a specific campaign
 - **get_milestones**: g., 5 referrals = discount, 10 referrals = free product) and their current completion status.
 
 Get referral milestones and rewards for a campaign
-- **get_participant**: Get details of a specific participant by email
-- **get_referral_url**: Get the unique referral URL for a participant
-- **get_rewards**: Get rewards configuration for a campaign
-- **get_campaign_stats**: Get performance statistics for a campaign
-- **list_campaigns**: Use this to discover available campaigns before querying specific ones.
-
-List all referral campaigns in your Viral Loops account
-- **list_participants**: Useful for leaderboard analysis and participant management.
-
-List all participants in a referral campaign
-- **update_participant**: Update information for an existing participant
 
 
 ## 💬 Prompt Examples

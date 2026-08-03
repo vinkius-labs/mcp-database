@@ -31,10 +31,10 @@ Connect your AI agent to **UniProt** — the Universal Protein Resource — the 
 
 
 ## Available Tools (3)
-- **get_uniprot_protein**: Get full protein details by UniProt accession ID
 - **search_uniprot_gene**: Returns all protein isoforms and their functional annotations.
 
 Find proteins encoded by a specific gene
+- **get_uniprot_protein**: Get full protein details by UniProt accession ID
 - **search_uniprot**: Returns protein name, gene, organism, function, subcellular location, and sequence. Try: insulin, hemoglobin, p53, BRCA1, spike protein.
 
 Search UniProt for proteins by name, function, or keyword

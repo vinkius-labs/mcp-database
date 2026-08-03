@@ -14,10 +14,10 @@ The UKG Pro Learning MCP Server integrates the Model Context Protocol with the U
 
 
 ## Available Tools (4)
-- **enrollments**: List enrollments for a specific user
 - **courses**: Get a specific training course by ID
 - **curricula**: List tracking curricula (Learning Paths)
 - **users**: Get details for a specific user
+- **enrollments**: List enrollments for a specific user
 
 
 ## 💬 Prompt Examples

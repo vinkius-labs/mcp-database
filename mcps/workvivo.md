@@ -39,6 +39,12 @@ No more manual logging into the Workvivo dashboard to post a simple update. Your
 
 
 ## Available Tools (10)
+- **get_space_details**: Retrieves details for a specific collaboration space
+- **get_employee_profile**: Retrieves profile details for a specific employee
+- **list_company_events**: Lists upcoming events scheduled in Workvivo
+- **list_workvivo_posts**: Lists social posts and activity on the Workvivo platform
+- **list_collaboration_spaces**: Lists collaboration spaces (groups) in Workvivo
+- **list_employees**: Lists employees registered in the Workvivo directory
 - **create_social_post**: Provide the text content and an optional space ID.
 
 Creates a new post on the Workvivo activity feed
@@ -47,12 +53,6 @@ Creates a new post on the Workvivo activity feed
 Permanently deletes a post from Workvivo
 - **get_event_details**: Retrieves details for a specific calendar event
 - **get_post_details**: Retrieves details for a specific social post
-- **get_space_details**: Retrieves details for a specific collaboration space
-- **get_employee_profile**: Retrieves profile details for a specific employee
-- **list_company_events**: Lists upcoming events scheduled in Workvivo
-- **list_workvivo_posts**: Lists social posts and activity on the Workvivo platform
-- **list_collaboration_spaces**: Lists collaboration spaces (groups) in Workvivo
-- **list_employees**: Lists employees registered in the Workvivo directory
 
 
 ## 💬 Prompt Examples

@@ -32,10 +32,6 @@ Intertwine the open-source **Verba** (by Weaviate) ecosystem natively into your 
 
 
 ## Available Tools (6)
-- **get_system_config**: Retrieves the current Verba system configuration
-- **add_knowledge_document**: Provide the document content and optional metadata JSON.
-
-Ingests a new document into the Verba knowledge base
 - **delete_knowledge_document**: This action is irreversible.
 
 Permanently removes a document from the knowledge base
@@ -44,6 +40,10 @@ Permanently removes a document from the knowledge base
 - **perform_rag_query**: Returns summarized answers with citations.
 
 Executes a RAG (Retrieval Augmented Generation) query against the Verba knowledge base
+- **add_knowledge_document**: Provide the document content and optional metadata JSON.
+
+Ingests a new document into the Verba knowledge base
+- **get_system_config**: Retrieves the current Verba system configuration
 
 
 ## 💬 Prompt Examples

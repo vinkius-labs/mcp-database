@@ -46,6 +46,24 @@ Your AI becomes a weather analyst, helping you assess sites, forecast production
 - **get_weather_alerts**: Critical for renewable energy asset protection during severe weather events.
 
 Get weather alerts and advisories for a location
+- **get_historical_observations**: Essential for validating renewable energy production models against historical weather patterns.
+
+Get historical weather observations for a location
+- **get_weather_observations**: Shows actual observed data from weather stations.
+
+Get recent weather observations for a location
+- **get_weather_forecast**: Essential for renewable energy production planning.
+
+Get weather forecast for a location (up to 15 days)
+- **get_solar_irradiance_data**: Critical for solar PV site assessment and energy yield validation.
+
+Get historical solar irradiance data for renewable energy assessment
+- **get_weather_summary**: Quick overview for general weather awareness.
+
+Get a weather conditions summary for a location
+- **get_wind_data**: Essential for wind farm site assessment, turbine performance analysis, and wind energy production forecasting.
+
+Get wind speed and direction data for renewable energy assessment
 - **get_closest_weather_station**: Returns station details and current conditions.
 
 Find the closest weather station to geographic coordinates
@@ -58,27 +76,9 @@ Get renewable energy farm power output and production data
 - **get_extended_forecast**: Useful for long-term renewable energy production planning and maintenance scheduling.
 
 Get extended 15-day weather forecast with day/night periods
-- **get_weather_forecast**: Essential for renewable energy production planning.
-
-Get weather forecast for a location (up to 15 days)
-- **get_historical_observations**: Essential for validating renewable energy production models against historical weather patterns.
-
-Get historical weather observations for a location
-- **get_weather_observations**: Shows actual observed data from weather stations.
-
-Get recent weather observations for a location
 - **search_locations**: Returns place details including coordinates, elevation, and station metadata needed for other API queries.
 
 Search for places by name or query
-- **get_solar_irradiance_data**: Critical for solar PV site assessment and energy yield validation.
-
-Get historical solar irradiance data for renewable energy assessment
-- **get_weather_summary**: Quick overview for general weather awareness.
-
-Get a weather conditions summary for a location
-- **get_wind_data**: Essential for wind farm site assessment, turbine performance analysis, and wind energy production forecasting.
-
-Get wind speed and direction data for renewable energy assessment
 
 
 ## 💬 Prompt Examples

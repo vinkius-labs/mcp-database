@@ -27,7 +27,6 @@ Virtuagym is Europe's leading gym management platform, also offering corporate w
 - **search_members**: Returns profile, membership, check-in history, and fitness progress.
 
 Search gym members
-- **get_member**: Get member profile
 - **list_events**: List classes/events
 - **list_activities**: With description and duration.
 
@@ -39,6 +38,7 @@ List activity types
 List nutrition plans
 - **list_workout_plans**: List workout plans
 - **get_club_info**: Get club info
+- **get_member**: Get member profile
 
 
 ## 💬 Prompt Examples

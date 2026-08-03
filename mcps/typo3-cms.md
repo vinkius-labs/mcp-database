@@ -35,26 +35,26 @@ Drop PHP dependency injection debugging just to update a node value. You describ
 
 
 ## Available Tools (10)
-- **ping_rest_api**: Verifies connectivity to the TYPO3 REST API
-- **update_cms_entity**: Provide entity name, record ID, and JSON updates.
-
-Updates fields of an existing TYPO3 record
 - **create_cms_entity**: Provide the entity name and data as a JSON object.
 
 Creates a new TYPO3 Extbase entity or content element
 - **delete_cms_entity**: This action is irreversible.
 
 Permanently deletes a TYPO3 record
-- **get_initial_boot**: Retrieves global configuration and root page schema from TYPO3
+- **get_initial_boot**: Retrieves globalThis configuration and root page schema from TYPO3
 - **get_navigation_tree**: Retrieves the hierarchical navigation menu starting from a page
 - **get_rendered_page**: Provide a numeric ID or canonical path.
 
 Retrieves a structured representation of a rendered TYPO3 page
 - **get_single_record**: Retrieves a single TYPO3 record by ID
+- **update_cms_entity**: Provide entity name, record ID, and JSON updates.
+
+Updates fields of an existing TYPO3 record
+- **ping_rest_api**: Verifies connectivity to the TYPO3 REST API
 - **list_backend_records**: Provide the entity name and optional query parameters.
 
 Lists records for a specific TYPO3 entity or route
-- **list_typoscript_globals**: Lists global TypoScript settings and constants
+- **list_typoscript_globals**: Lists globalThis TypoScript settings and constants
 
 
 ## 💬 Prompt Examples
