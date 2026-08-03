@@ -5,7 +5,7 @@
 
 ## Overview
 
-**Category:** [safety & compliance](../categories/safety-compliance.md)
+**Category:** [aviation](../categories/aviation.md)
 
 A dispatch office cleared a flight into known CB activity with 'proceed with caution.' The crew never returned. Flight Risk Prover forces ICAO SMS-level threat identification with METAR data, 5×5 risk quantification, Swiss Cheese barrier modeling, SHELL/IMSAFE human factors analysis, and explicit GO/NO-GO commitment — eliminating the sycophantic go-bias that kills in aviation.
 

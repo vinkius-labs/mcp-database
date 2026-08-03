@@ -5,7 +5,7 @@
 
 ## Overview
 
-**Category:** [safety & compliance](../categories/safety-compliance.md)
+**Category:** [aviation](../categories/aviation.md)
 
 An investigation report concluded 'pilot error' and recommended 'improve training.' The same airline had three more accidents in 18 months. Accident Investigation Prover forces ICAO Annex 13 methodology — FDR/CVR evidence chains, multi-causal analysis via Reason's Model, HFACS 4-level taxonomy, organizational factor tracing, and specific, measurable, addressed recommendations that prevent recurrence.
 

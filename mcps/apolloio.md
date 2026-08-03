@@ -7,40 +7,47 @@
 
 **Category:** [growth-engine](../categories/growth-engine.md)
 
-Power your sales engagement with Apollo.io — search for prospects, enrich contact data, and manage sequences via AI.
+Prospect smarter with verified contact data, enrich leads in real time, and build targeted sales sequences that convert.
 
 ## Description
-The **Apollo.io MCP Server** provides direct access to one of the world's largest B2B databases. Connect your Apollo account to your AI agent to automate prospecting, data enrichment, and outreach workflows using natural language.
+Connect your **Apollo.io** account to any AI agent and take full control of your B2B prospecting and sales engagement workflows through natural conversation.
 
 ### What you can do
 
-- **Targeted Prospecting** — Search for people and organizations using granular filters like job titles, industries, and locations.
-- **Data Enrichment** — Instantly fill in missing details for people and companies. Get verified emails, phone numbers, and company insights.
-- **Engagement Automation** — List your sales sequences and add new contacts to them directly from your chat.
-- **Workspace Management** — Search and manage your saved contacts within your Apollo workspace.
+- **Prospect Orchestration** — Search through a massive database of professionals by title, location, and company domains programmatically in real-time
+- **Data Enrichment Intelligence** — Programmatically retrieve verified email addresses, phone numbers, and high-fidelity social metadata for any contact or company
+- **Sequence Lifecycle Management** — Enroll qualified leads into automated email sequences and monitor your sales outreach pipeline directly through your agent
+- **Company Architecture** — Access deep firmographic data, including revenue, headcount, and technology stacks to maintain a perfectly coordinated account strategy
+- **Operational Monitoring** — Track your remaining search and enrichment credits and monitor API connectivity directly through your agent for instant reporting
 
 ### How it works
 
 1. Subscribe to this server
-2. Provide your Apollo API Key
-3. Start discovering and engaging with leads through your AI chat interface.
+2. Retrieve your **API Key** from your Apollo dashboard (Settings > Integrations > API)
+3. Start orchestrating your sales pipeline from Claude, Cursor, or any MCP client
+
+No more manual toggling between browser tabs to find emails or check prospect status. Your AI acts as your dedicated sales analyst and outreach coordinator.
 
 ### Who is this for?
 
-- **Sales Development Representatives (SDRs)** — Rapidly build lead lists and trigger outreach sequences without manual data entry.
-- **Marketing Teams** — Enrich existing customer data with company-level insights for better segmentation.
-- **Recruiters** — Search the Apollo database for specific professional profiles and talent pools.
+- **Sales Development (SDRs)** — instantly build highly targeted prospect lists using natural language commands
+- **Account Executives (AEs)** — enrich key account metadata and monitor buying intent without leaving your creative workspace
+- **Growth Marketers** — automate lead enrichment and sequence enrollment through simple AI queries
 
 
-## Available Tools (8)
-- **search_contacts**: Search Apollo contacts
-- **search_organizations**: Search organizations
-- **get_contact**: Get contact by ID
-- **list_email_accounts**: List connected email accounts
-- **list_sequences**: List sequences/campaigns
-- **add_contact_to_sequence**: Add contact to sequence
-- **get_call**: Get call details
-- **search_people**: Search mixed people
+## Available Tools (12)
+- **add_to_sequence**: Enroll contact in sequence
+- **enrich_company_data**: Get company metadata
+- **enrich_person_data**: Get full profile details
+- **get_saved_contact**: Get contact by ID
+- **get_credit_info**: Get usage and credits
+- **list_connected_emails**: Get sender accounts
+- **get_api_health**: Get API and account status
+- **list_sales_sequences**: List email sequences
+- **list_team_users**: List account users
+- **search_companies**: Find organizations
+- **list_saved_contacts**: List your contacts
+- **search_people**: Find prospects
 
 
 ## 💬 Prompt Examples
@@ -48,38 +55,38 @@ The **Apollo.io MCP Server** provides direct access to one of the world's larges
 Here are some examples of how you can interact with the **Apollo.io** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Find people with the title 'CEO' in the 'Software' industry located in San Francisco."
+> "Find the 'VP of Engineering' at 'vinkius.com'."
 
 **🤖 AI Agent:**
-> I've found 25 profiles matching your criteria. Top results include the CEOs of several high-growth startups in San Francisco. Would you like me to enrich the first 5 to get their emails?
+> I've performed the high-fidelity search. I found the 'VP of Engineering' at Vinkius (ID: person_123) with a verified email. Would you like me to enrich their profile for LinkedIn and phone details?
 
 ---
 
 **👤 You:**
-> "Enrich the organization data for 'vinkius.com'."
+> "Show the tech stack and revenue for 'apple.com'."
 
 **🤖 AI Agent:**
-> I've enriched the data for Vinkius. They are in the Computer Software industry, with approximately 50-100 employees, and are based in Brazil. They use technologies like React and Node.js.
+> Accessing company intelligence... Apple Inc. (Domain: apple.com) has an estimated revenue of $380B+ and uses 150+ technologies including AWS, Akamai, and React. Need the high-fidelity detailed list of employees?
 
 ---
 
 **👤 You:**
-> "Add contact 'c_123' to my 'New Year Campaign' sequence."
+> "Enroll contact '123' into sales sequence '456'."
 
 **🤖 AI Agent:**
-> I've successfully added contact 'c_123' to the 'New Year Campaign' sequence (ID: seq_456). The first email will be sent according to your sequence schedule.
+> Enrollment complete! I've successfully added contact 123 to sequence 456. The automated outreach will begin according to your schedule. Shall I alert you when the first email is opened?
 
 
 ## ❓ FAQ
 
-**Q: How do I get an Apollo API Key?**
-Log in to your Apollo.io account, go to **Settings > Integrations > API**, and generate a new API key. Ensure you have the necessary permissions based on your plan.
+**Q: How do I find my Apollo API Key?**
+Log in to your account, navigate to **Settings** > **Integrations** > **API**, and generate or copy your unique personal token.
 
-**Q: Does searching for people consume credits?**
-Basic searching typically does not consume credits, but 'enriching' a contact to reveal their verified email or phone number will consume Apollo export credits according to your subscription plan.
+**Q: Can I enrich a company by its domain via AI?**
+Yes! The `enrich_company_data` tool allows your agent to retrieve high-fidelity metadata like revenue and tech stack using just the company domain.
 
-**Q: Can I add contacts directly to my sequences?**
-Yes! Use the `add_contact_to_sequence` tool. You'll need the Contact IDs, the Sequence ID, and the ID of the email address you want to use for the outreach.
+**Q: How do I check my remaining credits?**
+Use the `get_credit_info` tool to retrieve real-time data on your search and enrichment quotas directly through your AI agent.
 
 
 ## Installation & Usage

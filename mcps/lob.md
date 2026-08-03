@@ -5,58 +5,49 @@
 
 ## Overview
 
-**Category:** [customer-support](../categories/customer-support.md)
+**Category:** [marketing-automation](../categories/marketing-automation.md)
 
-Automate physical mail, postcards, checks, and address verification through Lob's print and mail API.
+Send physical mail programmatically with an API for postcards, letters, and checks that integrates into your digital workflows.
 
 ## Description
-Lob MCP Server enables AI agents to send physical mail directly from your applications. Create and mail letters, postcards, and checks programmatically through Lob's print and mail API. Verify US and international addresses, autocomplete partial addresses, and manage your address book. Build reusable HTML templates for personalized mailings. Perfect for automating vendor payments, customer communications, marketing campaigns, payroll checks, and direct mail operations. All mail is printed, processed, and delivered within 24 hours via USPS integration.
+Connect your **Lob** account to any AI agent and manage direct mail through natural conversation.
+
+### What you can do
+
+- **Letter Sending** — Create and send letters with PDF or HTML content
+- **Postcard Campaigns** — Send postcards with front/back designs
+- **Check Printing** — Create and mail checks with payment details
+- **Address Verification** — Verify and standardize US addresses
+- **Template Management** — Browse and manage mail templates
+- **Delivery Tracking** — Track mail pieces through the postal system
+
+### How it works
+
+1. Subscribe to this server
+2. Enter your Lob API Key (test or live)
+3. Start sending mail from Claude, Cursor, or any MCP-compatible client
+
+### Who is this for?
+
+- **Marketing** — run direct mail campaigns with postcards and letters
+- **Finance** — automate check printing and mailing
+- **Operations** — verify addresses and track mail delivery
 
 
-## Available Tools (21)
-- **autocomplete_us_address**: Autocomplete a partial US address
-- **cancel_letter**: Only works if status is still "processing".
+## Available Tools (9)
+- **autocomplete_address**: Suggest address completions
+- **create_check**: Send a physical check
+- **create_letter**: Supports certified mail and custom inserts.
 
-Cancel a letter before it enters production
-- **list_bank_accounts**: Use optional limit to control result count.
+Send a physical letter
+- **create_postcard**: Supports HTML or PDF for front and back.
 
-List bank accounts in your Lob account
-- **list_checks**: Track payments, audit disbursements.
-
-List physical checks sent through Lob
-- **create_address**: Requires name and address_line1.
-
-Create a new address in your Lob address book
-- **create_bank_account**: Requires description, routing_number, account_number, account_type (company/individual), and signatory.
-
-Add a bank account for sending checks
-- **create_check**: Requires recipient (to), bank account ID, and amount. Optional: memo, logo, description.
-
-Create and mail a physical check through Lob
-- **create_letter**: Requires recipient (to), sender (from), and file content. Supports HTML templates with merge variables, color options, and mail type selection.
-
-Create and mail a physical letter through Lob
-- **create_postcard**: Requires recipient (to) and front design. Optional: back design, message, merge variables.
-
-Create and mail a physical postcard through Lob
-- **create_template**: Create a reusable HTML template for mailings
-- **delete_address**: Delete an address from your Lob address book
-- **get_address**: Get details of a specific address
-- **get_check**: Get details of a specific check by ID
-- **get_letter**: Get details of a specific letter by ID
-- **get_postcard**: Get details of a specific postcard by ID
-- **get_template**: Get details of a specific template
-- **list_addresses**: Use optional limit to control result count.
-
-List addresses in your Lob address book
-- **list_letters**: Each letter includes status, tracking number, and expected delivery date. Use optional limit to control result count.
-
-List physical letters sent through Lob. Track mailings, check delivery status, and review letter history
-- **list_postcards**: Use optional limit to control result count.
-
-List physical postcards sent through Lob
-- **list_templates**: List HTML templates for mailings
-- **verify_us_address**: Verify and standardize a US address
+Send a physical postcard
+- **get_mail_tracking**: Track a mail piece
+- **list_postcards**: List sent postcards
+- **verify_intl_address**: Verify an international address
+- **verify_us_address**: Verify a US address
+- **list_letters**: List sent letters
 
 
 ## 💬 Prompt Examples
@@ -64,41 +55,38 @@ List physical postcards sent through Lob
 Here are some examples of how you can interact with the **Lob** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Send a letter to John Doe at 123 Main St, New York, NY 10001 with our welcome package HTML template"
+> "Send a welcome letter to a new customer and verify their address first."
 
 **🤖 AI Agent:**
-> I'll create a letter using your welcome package template and send it to the specified address. First, I'll create the recipient address, then create the letter with merge variables for personalization.
+> Address verified! ✅ '123 Main St, Apt 4B, New York, NY 10001'. Deliverable: Yes. Type: Residential. Coordinates: 40.7484, -73.9967. Letter sent! ID: ltr_4521. To: John Smith. Pages: 2. Mail class: First Class. Expected delivery: Apr 30 — May 2. Cost: $0.92.
 
 ---
 
 **👤 You:**
-> "Verify if this address is deliverable: 185 Berry St, San Francisco, CA 94107"
+> "Show all mail pieces sent this month with delivery status."
 
 **🤖 AI Agent:**
-> I'll verify the US address to confirm deliverability and standardize the format. This will also add the missing ZIP+4 code and correct any formatting issues.
+> This month: 45 mail pieces. Letters: 28, Postcards: 12, Checks: 5. Delivered: 38 (84%). In Transit: 5. Processing: 2. Returned: 0. Avg delivery: 3.2 days. Total cost: $52.40. Campaign 'Spring Promo' postcards: 12 sent, 10 delivered.
 
 ---
 
 **👤 You:**
-> "Send a $500 check to ABC Consulting for consulting services rendered in March"
+> "Create a check for $5,000 and browse mail templates."
 
 **🤖 AI Agent:**
-> I'll create a physical check for $500 payable to ABC Consulting. This requires a verified bank account in your Lob account. The check will be printed and mailed within 24 hours via USPS.
+> Check created! ID: chk_8901. Amount: $5,000.00. To: Acme Corp, 456 Business Ave, Chicago, IL 60601. Memo: 'Q2 services payment'. Mail class: First Class. Expected delivery: May 1-3. Templates: 5 available. 'Welcome Letter' (HTML), 'Invoice Notice' (HTML), 'Thank You Card' (postcard), 'Payment Notice' (letter), 'Renewal Reminder' (postcard).
 
 
 ## ❓ FAQ
 
-**Q: What types of physical mail can I send with Lob?**
-Lob supports three main mail types: Letters (formal correspondence, invoices, notifications with customizable color, double-sided printing), Postcards (marketing campaigns, invitations, reminders in 4x6, 6x9, or 6x11 sizes), and Checks (vendor payments, payroll, refunds, rebates with customizable memo lines and company logos). All mail is printed and mailed within 24 hours via USPS.
+**Q: Can I send letters and postcards through the AI agent?**
+Yes. Create and send letters with PDF/HTML content and postcards with custom designs. Track delivery through the postal system.
 
-**Q: How does Lob address verification work?**
-Lob's address verification validates and standardizes addresses using USPS data. It corrects formatting, adds missing ZIP+4 codes, fixes typos, and confirms deliverability. The service returns a deliverability status: 'deliverable' (valid and deliverable), 'undeliverable' (cannot be delivered), or 'deliverable_unnecessary' (valid but additional info not needed). This reduces returned mail by up to 5% and ensures your mailings reach the correct destination.
+**Q: Does Lob use Basic Auth?**
+Yes. Lob uses **HTTP Basic Auth** with the API Key as username (no password) against `api.lob.com/v1`.
 
-**Q: Can I use HTML templates for personalized mailings?**
-Yes! Lob supports HTML templates with merge variables using the Handlebars templating engine. Create a template with placeholders like {{name}}, {{order_number}}, {{delivery_date}}, then pass actual values when creating letters or postcards. This enables personalized, scalable direct mail campaigns. Templates are reusable and can be referenced by ID when creating mailings. You can also embed CSS styling for professional-looking mail designs.
-
-**Q: How long does it take for mail to be delivered?**
-Lob prints and mails all items within 24 hours of creation. Delivery time depends on the mail type selected: USPS First Class Mail typically delivers in 2-5 business days, while USPS Standard Mail takes 3-7 business days. You receive a tracking number for each piece of mail to monitor delivery status. Lob also provides expected delivery dates in API responses for planning purposes.
+**Q: Can I verify US addresses?**
+Yes. Verify and standardize US addresses with CASS certification. Returns deliverability status, corrected addresses, and coordinates.
 
 
 ## Installation & Usage

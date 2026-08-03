@@ -7,44 +7,41 @@
 
 **Category:** [money-moves](../categories/money-moves.md)
 
-Equip your AI agent with direct access to Mercury — check account balances, review transactions, and manage recipients without opening the banking dashboard.
+Bank smarter for your startup with FDIC-insured accounts, treasury management, and business banking built for tech companies.
 
 ## Description
-Connect your **Mercury** business banking account to your AI agent and manage your startup finances conversationally.
+Connect your **Mercury** banking account to any AI agent and manage startup finances through natural conversation.
 
 ### What you can do
 
-- **Account Balances** — Check real-time balances across all your Mercury accounts instantly from your AI agent.
-- **Transaction History** — Pull recent transactions filtered by date, amount, or counterparty to track spending patterns.
-- **Recipient Management** — List, create, and manage payment recipients for ACH and wire transfers.
-- **Account Details** — Retrieve routing numbers, account numbers, and account metadata programmatically.
+- **Account Management** — Access balances across all checking and savings accounts
+- **Transactions** — Browse and filter recent transactions and transfers
+- **Statements** — Retrieve monthly account statements
+- **Cash Flow** — Track incoming revenue and outgoing expenses
+- **Recipient Management** — Access saved wire and ACH recipients
 
 ### How it works
 
-1. Subscribe to the Mercury integration on the marketplace.
-2. Generate an API token from your Mercury dashboard (Settings → API Tokens).
-3. Ask your AI agent to check balances, pull transactions, or manage recipients.
+1. Subscribe to this server
+2. Enter your Mercury API Token
+3. Start managing your finances from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
 
-- **Startup Founders** — Get an instant snapshot of your runway and cash position during investor calls without switching to a browser.
-- **Finance & Operations Teams** — Automate daily balance checks and transaction reconciliation directly from your development environment.
-- **Bookkeepers & CFOs** — Monitor cash flow and payment activity across multiple Mercury accounts from a single conversational interface.
+- **Founders** — check runway and cash flow quickly
+- **Finance Teams** — automate transaction categorization and reconciliation
+- **Developers** — build internal financial dashboards
 
 
-## Available Tools (10)
+## Available Tools (8)
 - **list_recipients**: List payment recipients
-- **list_payments**: List sent payments
-- **get_account**: Get bank account details
-- **list_transactions**: List recent transactions
-- **get_transaction**: Get transaction details
-- **list_accounts**: List all Mercury bank accounts
-- **list_team_members**: List all team members
-- **create_recipient**: Required for sending payments.
-
-Create a new payment recipient
-- **list_statements**: List bank statements
-- **get_treasury_balance**: Get treasury balance overview
+- **get_balance**: Get account balance
+- **list_accounts**: List Mercury bank accounts
+- **list_cards**: List Mercury debit cards
+- **list_customers**: List invoicing customers
+- **list_invoices**: List account receivable invoices
+- **get_account**: Get details for a specific Mercury account
+- **list_transactions**: List transactions for an account
 
 
 ## 💬 Prompt Examples
@@ -52,41 +49,38 @@ Create a new payment recipient
 Here are some examples of how you can interact with the **Mercury** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What's the current balance on all my Mercury accounts?"
+> "Show my current balances for all accounts."
 
 **🤖 AI Agent:**
-> I queried your Mercury accounts. You have two active accounts: 'Operating Account' with $142,350.00 and 'Savings Reserve' with $500,000.00. Total cash position: $642,350.00.
+> Balances retrieved: Total available: $142,500.00. Checking Account (...1234): $45,200.00. Savings Account (...5678): $90,000.00. Treasury Account: $7,300.00.
 
 ---
 
 **👤 You:**
-> "Show me all transactions above $5,000 from this month."
+> "List all outgoing transactions over $1,000 from last week."
 
 **🤖 AI Agent:**
-> I found 4 transactions above $5,000 this month: AWS Infrastructure ($12,400), Payroll Run ($87,500), Office Lease ($8,200), and Legal Retainer ($15,000). Total: $123,100.
+> Found 3 outgoing transactions over $1,000 (Apr 15 - Apr 22): 1) AWS (Amazon Web Services): -$2,450.00 (Apr 20). 2) Stripe Payout Reversal: -$1,200.00 (Apr 18). 3) Office Rent (WeWork): -$4,500.00 (Apr 15).
 
 ---
 
 **👤 You:**
-> "List all my payment recipients."
+> "Get total revenue received this month."
 
 **🤖 AI Agent:**
-> You have 12 saved recipients. Here are the top 5 by frequency: AWS (ACH), Gusto Payroll (ACH), WeWork (Wire), Stripe Atlas (ACH), and Latham & Watkins (Wire).
+> Total incoming transactions (April): 42. Total Volume: $45,890.00. Top sources: Stripe Payouts ($38,400.00), Wire from Acme Corp ($5,000.00), ACH from John Doe ($2,490.00).
 
 
 ## ❓ FAQ
 
-**Q: How do I get my Mercury API token?**
-Log in to your Mercury account at app.mercury.com. Go to **Settings → API Tokens** and click **Create Token**. Choose the token type (Read Only for balance checks, or Read and Write for managing recipients). Copy the token immediately — it will only be shown once. Paste it into the configuration field below, and you're ready. No code, no SDK, no webhooks.
+**Q: Can I view balances and recent transactions?**
+Yes. You can query balances for all accounts and list recent incoming/outgoing transactions.
 
-**Q: Can my AI agent check my startup's runway instantly during a board meeting?**
-Absolutely. Just ask your AI agent 'What's my current balance across all Mercury accounts?' and it returns real-time balances for every account — checking, savings, and treasury — in seconds. No tab-switching, no logging in, no waiting for the dashboard to load.
+**Q: How does Mercury authentication work?**
+Mercury uses a Bearer token (API Token) against `api.mercury.com/api/v1`. Tokens must be generated with read-only scopes.
 
-**Q: What if I need to review recent transactions for month-end close?**
-Ask your AI agent to pull transactions from any date range. It retrieves each transaction with amount, counterparty, status, and date — perfect for reconciliation. You can filter by account, ask for Wire vs ACH breakdowns, or request only transactions above a specific threshold, all without exporting CSVs.
-
-**Q: Is this suitable for companies with multiple Mercury accounts?**
-Yes. The integration retrieves data across all accounts linked to your API token — operating accounts, savings accounts, and treasury balances. Perfect for venture-backed startups managing multiple entities, holding companies, or finance teams tracking cash positions across subsidiaries.
+**Q: Can I initiate money transfers via the API?**
+The standard API token allows read-only access to balances and transactions for security reasons.
 
 
 ## Installation & Usage

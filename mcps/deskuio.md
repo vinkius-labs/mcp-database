@@ -39,6 +39,7 @@ No more manual ticket searching or complex dashboard navigation. Your AI acts as
 - **create_conversation**: Reply to a ticket
 - **create_ticket**: Create a new ticket
 - **get_ticket**: Get ticket details
+- **get_customer**: Get customer details
 - **list_agents**: List support agents
 - **list_conversations**: List conversation history for a ticket
 - **list_customers**: List support customers
@@ -46,7 +47,6 @@ No more manual ticket searching or complex dashboard navigation. Your AI acts as
 
 List support tickets
 - **update_ticket**: Update a ticket
-- **get_customer**: Get customer details
 
 
 ## 💬 Prompt Examples

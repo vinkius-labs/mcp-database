@@ -5,44 +5,38 @@
 
 ## Overview
 
-**Category:** [human-resources](../categories/human-resources.md)
+**Category:** [artificial-intelligence](../categories/artificial-intelligence.md)
 
-Let AI text your leads automatically with human-like conversations that schedule appointments and qualify prospects by SMS.
+Conversational AI for SMS — automate lead qualification and engagement via Mav playbooks.
 
 ## Description
-Connect your **Mav** AI recruiting account to any AI agent and manage candidate screening through natural conversation.
+Connect your **Mav** account to any AI agent and take full control of your conversational SMS automation through natural conversation.
 
 ### What you can do
 
-- **Candidate Screening** — Trigger automated AI screening conversations
-- **SMS Campaigns** — Launch and manage outbound SMS recruiting campaigns
-- **Lead Management** — Browse candidates and their qualification status
-- **Engagement Tracking** — Monitor open rates, reply rates, and drop-offs
-- **Interview Data** — Access responses and screening transcripts
+- **Playbook Management** — List and inspect AI-driven conversational playbooks
+- **Lead Qualification** — Trigger automated SMS conversations to qualify new leads instantly
+- **Activity Monitoring** — Track real-time events and outcomes from ongoing conversations
+- **Lead Management** — Retrieve detailed metadata and status for leads in your pipeline
 
 ### How it works
 
 1. Subscribe to this server
 2. Enter your Mav API Key
-3. Start managing recruiting campaigns from Claude, Cursor, or any MCP-compatible client
-
-### Who is this for?
-
-- **Recruiters** — automate initial candidate screening at scale
-- **Talent Acquisition** — run high-volume SMS outreach campaigns
-- **HR Ops** — monitor hiring funnel metrics and candidate engagement
+3. Start managing your conversational AI from Claude, Cursor, or any MCP-compatible client
 
 
-## Available Tools (9)
-- **stop_playbook**: Stop a running playbook for a lead
-- **create_lead**: Create a lead and trigger a playbook
-- **get_lead**: Get details for a specific lead
-- **get_playbook**: Get details for a specific playbook
-- **list_activities**: List recent activities/events
+## Available Tools (8)
+- **get_lead**: Get lead details
+- **get_playbook**: Get playbook details
+- **list_events**: List conversation events
 - **list_leads**: List all leads
-- **list_playbooks**: List all available Mav playbooks
-- **opt_out_lead**: Manually opt-out a lead
-- **update_lead**: Update an existing lead
+- **list_outcomes**: g., qualified, unqualified).
+
+List possible conversation outcomes
+- **list_playbooks**: List all conversational AI playbooks
+- **trigger_playbook**: Trigger a playbook for a lead
+- **update_lead**: Update lead information
 
 
 ## 💬 Prompt Examples
@@ -50,38 +44,38 @@ Connect your **Mav** AI recruiting account to any AI agent and manage candidate 
 Here are some examples of how you can interact with the **Mav** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Show active SMS campaigns and completion rates."
+> "List all my Mav playbooks."
 
 **🤖 AI Agent:**
-> Active Campaigns: 3. 'Retail Store Manager' (450 candidates, 68% reply, 45% completion ⭐). 'Warehouse Staff' (1,200 candidates, 42% reply, 28% completion). 'Customer Support' (300 candidates, 55% reply, 38% completion). Total screened today: 145. Qualified: 42.
+> Retrieving playbooks... You have several active playbooks, including 'Real Estate Qualification' and 'Solar Interest Check'.
 
 ---
 
 **👤 You:**
-> "Launch a screening campaign for the new Warehouse Staff list."
+> "Trigger the 'Lead Qual' playbook for +1234567890."
 
 **🤖 AI Agent:**
-> Campaign launched! ✅ Campaign ID: cmp_890. Target list: 'Warehouse_Applicants_Q2' (150 candidates). Screening flow: 'Basic Warehouse Qualification'. First SMS sent to 150 candidates. Estimated completion time: 2-4 hours.
+> Triggering playbook... The 'Lead Qual' (ID: 555) conversation has been successfully started for +1234567890.
 
 ---
 
 **👤 You:**
-> "Show screening results and transcripts for qualified candidates."
+> "Show recent outcomes for lead ID 9876."
 
 **🤖 AI Agent:**
-> Qualified candidates: 3 (Retail Manager). 1) Sarah J. (Score: 95%, 'Has 5+ years retail management experience. Available immediately.'). 2) Mike T. (Score: 88%, '3 years experience, flexible schedule.'). Transcript for Sarah available: Link to transcript. Move to interview stage?
+> Checking lead status... Lead 9876 reached the 'Qualified' outcome yesterday.
 
 
 ## ❓ FAQ
 
-**Q: Can I trigger AI screening conversations?**
-Yes. Launch SMS or web-based screening flows and track candidate responses automatically.
+**Q: How do I find my Mav API Key?**
+Log in to your Mav dashboard and navigate to Settings to find your API Key.
 
-**Q: How does Mav authentication work?**
-Mav uses a custom API Key header against `hiremav.com/api/v2`.
+**Q: Can I trigger a playbook for a specific phone number?**
+Yes! Use the `trigger_playbook` tool and provide the playbook ID and the lead's phone number.
 
-**Q: Can I track campaign engagement metrics?**
-Yes. Monitor open rates, reply rates, completion rates, and candidate drop-off points.
+**Q: Is my data secure?**
+Absolutely. Your token is encrypted at rest and injected securely at runtime.
 
 
 ## Installation & Usage

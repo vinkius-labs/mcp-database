@@ -5,42 +5,50 @@
 
 ## Overview
 
-**Category:** [productivity](../categories/productivity.md)
+**Category:** [developer-tools](../categories/developer-tools.md)
 
-Render website screenshots — audit high-fidelity visual content via AI.
+Render websites as high-quality screenshots and PDFs with a cloud API that handles responsive layouts and dynamic content.
 
 ## Description
-Empower your AI agent to orchestrate your entire visual rendering and website capturing workflow with **Urlbox**, the professional API for pixel-perfect screenshots. By connecting Urlbox to your agent, you transform complex rendering tasks into a natural conversation. Your agent can instantly take high-fidelity screenshots, generate mobile-optimized views, and produce professional PDFs without you ever touching a dashboard. Whether you are conducting visual QA or archiving dynamic web content, your agent acts as a real-time rendering engine, ensuring your visual records are always accurate and high-resolution.
+Connect your **Urlbox** account to any AI agent and simplify how you generate high-quality website screenshots, PDF conversions, and HTML renders through natural conversation.
 
 ### What you can do
 
-- **Visual Auditing** — Take pixel-perfect screenshots of any URL and retrieve the direct image links instantly.
-- **Full-page Oversight** — Capture entire website pages from top to bottom to maintain a complete view of dynamic content.
-- **Mobile Intelligence** — Generate screenshots using mobile user agents to verify responsive designs and layouts.
-- **Retina Discovery** — Retrieve high-resolution retina screenshots for professional design audits.
-- **Document Intelligence** — Convert any website into a professional PDF document for easy sharing and offline access.
+- **Web Capture** — Generate instant screenshots of any public URL in multiple formats (PNG, JPG, WebP, SVG).
+- **PDF Conversion** — Convert entire webpages to high-fidelity PDF documents with customizable page sizes.
+- **HTML Rendering** — Render raw HTML code directly into images to test styles or generate dynamic assets.
+- **Selective Capture** — Use CSS selectors to capture only specific elements of a page (e.g., just a chart or a header).
+- **Usage Monitoring** — Track your credit balance and monthly usage stats directly from your agent.
+- **Technical Insights** — Retrieve active webhooks, storage buckets, and available proxy locations for premium rendering.
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your Urlbox API Key
-3. Start managing your visual renders through Claude, Cursor, or any MCP-compatible client
+2. Enter your Urlbox API Key (found in your account dashboard)
+3. Start capturing the web from Claude, Cursor, or any MCP client
 
 ### Who is this for?
 
-- **Designers & Art Directors** — monitor website aesthetics and retrieve high-resolution renders straight from your workflow.
-- **QA Specialists** — verify responsive designs and audit mobile layouts without manual browsing.
-- **Content Marketers** — perform rapid audits of landing pages and generate high-quality visual archives through natural language.
-- **Operations Leads** — automate website rendering to orchestrate cross-functional creative teams smoothly.
+- **Web Developers & Designers** — quickly verify responsive layouts and render HTML snippets via simple AI commands.
+- **Marketing Teams** — automate the collection of visual proofs for ads and social media landing pages.
+- **Content Creators** — generate high-quality screenshots and PDF backups of online articles instantly.
 
 
-## Available Tools (6)
-- **get_metadata**: Get metadata for a URL (Placeholder)
-- **generate_pdf**: Generate a PDF from a URL
-- **take_mobile_screenshot**: Take a screenshot with a mobile user agent
-- **take_retina_screenshot**: Take a high-resolution retina screenshot
-- **take_screenshot**: Take a PNG screenshot of a URL
-- **take_full_page_screenshot**: Take a full-page screenshot of a URL
+## Available Tools (12)
+- **get_account_info**: Get account profile
+- **list_proxies**: List available proxies
+- **get_render_status**: Check render status
+- **get_credit_usage**: Get usage stats
+- **list_storage_buckets**: List storage buckets
+- **list_webhooks**: List active webhooks
+- **render_async**: Result is sent to webhook.
+
+Render URL (Async)
+- **render_html**: Render raw HTML
+- **capture_pdf**: Convert URL to PDF
+- **capture_png**: Capture PNG screenshot
+- **render_selector**: Render specific element
+- **render_sync**: Render URL (Sync)
 
 
 ## 💬 Prompt Examples
@@ -48,38 +56,38 @@ Empower your AI agent to orchestrate your entire visual rendering and website ca
 Here are some examples of how you can interact with the **Urlbox** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Render a high-fidelity screenshot of https://vinkius.com."
+> "Take a high-quality screenshot of 'https://vinkius.com'."
 
 **🤖 AI Agent:**
-> I've rendered the screenshot! You can access the pixel-perfect image via the provided URL. Would you like a retina version or a mobile layout capture as well?
+> Screenshot captured! I've rendered 'https://vinkius.com' as a high-quality PNG. You can view or download the image here: [Render URL]. Shall I convert this page to PDF as well?
 
 ---
 
 **👤 You:**
-> "Take a mobile screenshot of https://github.com."
+> "Convert the article at 'https://example.com/blog/1' to an A4 PDF."
 
 **🤖 AI Agent:**
-> Mobile capture initiated! I've retrieved the image showing how GitHub renders on a smartphone. Would you like to compare it with a desktop retina capture?
+> Conversion successful! I've generated an A4 PDF for the provided URL. Here is your download link: [PDF URL]. Is there anything else you'd like to capture?
 
 ---
 
 **👤 You:**
-> "Convert https://www.bbc.com into a PDF."
+> "Capture only the element '#pricing-table' from 'https://mysaas.com'."
 
 **🤖 AI Agent:**
-> Conversion complete! I've generated a professional PDF of the BBC homepage. You can download the document using the provided URL. Would you like me to capture any other site?
+> Selective render complete! I've captured only the element matching '#pricing-table' from 'https://mysaas.com'. Here is the cropped image: [Element URL].
 
 
 ## ❓ FAQ
 
-**Q: How do I find my Urlbox API Key?**
-Log in to your [**Urlbox dashboard**](https://urlbox.io/dashboard), and you will find your API Key on the main page. Copy and paste it below.
+**Q: Can I capture only a specific part of a webpage?**
+Yes! Use the `render_selector` tool. Provide the URL and the CSS selector (e.g., #my-chart) to capture only that specific element instead of the whole page.
 
-**Q: Can the agent take screenshots for mobile devices?**
-Yes. Use the `take_mobile_screenshot` tool. Your agent will render the website using a mobile user agent to verify how it looks on smartphones.
+**Q: How do I see how many credits I have left?**
+Run the `get_credit_usage` query. Your agent will retrieve your current credit balance and monthly rendering metrics directly from Urlbox.
 
-**Q: Does it support high-resolution (Retina) images?**
-Yes. The `take_retina_screenshot` tool enables 2x scaling to provide high-density images suitable for high-resolution displays.
+**Q: Can this tool convert a URL directly to PDF?**
+Absolutely. Use the `capture_pdf` tool by providing the URL. You can also specify an optional page size like 'A4' or 'Letter'.
 
 
 ## Installation & Usage

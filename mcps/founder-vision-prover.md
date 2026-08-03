@@ -5,7 +5,7 @@
 
 ## Overview
 
-**Category:** [business & strategy](../categories/business-strategy.md)
+**Category:** [data-analysis](../categories/data-analysis.md)
 
 A pitch deck said '1% of a $10B market' and 'run Facebook ads.' That is not a startup — that is a PowerPoint. This tool forces it to prove behavioral pain, calculate bottom-up TAM, show cohort retention, build a $0 CAC moat, and model unit economics that recycle capital in under 12 months.
 

@@ -7,79 +7,48 @@
 
 **Category:** [loved-by-devs](../categories/loved-by-devs.md)
 
-Manage repositories, issues, pull requests and workflows via GitHub — search code, audit commits and track CI/CD from any AI agent.
+Manage repositories, pull requests, issues, and CI/CD workflows on the world largest developer collaboration platform.
 
 ## Description
-Connect your **GitHub** account to any AI agent and take full control of your development workflows through natural conversation.
+Connect your **GitHub** account to any AI agent and take full control of your source control and development workflows through natural conversation.
 
 ### What you can do
 
-- **User & Repository Discovery** — View your profile and list all repositories with visibility, language and star counts
-- **Issue Management** — List, inspect and create issues with labels and Markdown descriptions
-- **Pull Request Tracking** — Browse and review pull requests with merge status, draft state and review info
-- **Commit History** — Review commit logs across branches with author, message and timestamp
-- **Release Management** — List releases and fetch specific release details by git tag
-- **CI/CD Monitoring** — Check recent GitHub Actions workflow runs with status and conclusion
-- **Advanced Search** — Search repositories using GitHub's powerful query syntax with language, stars and org qualifiers
+- **Repository Orchestration** — List and manage your repositories programmatically, including retrieving star counts, languages, and detailed metadata
+- **Issue Lifecycle** — Monitor project status by listing open issues and creating new ones directly through your agent to maintain momentum
+- **Code Intelligence** — Search through repositories and files programmatically to find specific logic and retrieve raw file contents (base64) for analysis
+- **Collaboration Visibility** — Monitor pull requests and recent notifications to stay updated on team-wide development activity and code reviews
+- **Resource Management** — Access user profiles, organization memberships, and Gists to manage your complete GitHub presence programmatically
 
 ### How it works
 
 1. Subscribe to this server
-2. Enter your GitHub Personal Access Token
-3. Start managing your repos from Claude, Cursor, or any MCP-compatible client
+2. Retrieve your **Personal Access Token (PAT)** from GitHub (Settings > Developer Settings > PAT)
+3. Ensure your token has the required scopes (repo, user, notifications)
+4. Start managing your code and projects from Claude, Cursor, or any MCP client
 
-No more context-switching to GitHub.com to check PR status or audit issues. Your AI acts as a dedicated engineering lead.
+No more manual toggling between browser tabs to check issue statuses. Your AI acts as your dedicated engineering coordinator.
 
 ### Who is this for?
 
-- **Developers** — quickly check issue status, review PRs and inspect commits without leaving your IDE
-- **Engineering Managers** — audit open issues, track release progress and monitor CI/CD health across repositories
-- **Open Source Maintainers** — review community issues, triage pull requests and manage release tags via conversation
+- **Software Engineers** — instantly find code snippets across repositories and retrieve file contents using natural language
+- **Team Leads** — monitor repository activity and triage issues without leaving your communication tools
+- **DevOps Engineers** — automate repository discovery and monitor project notifications through simple AI queries
 
 
-## Available Tools (14)
-- **get_user**: Returns login, name, email, avatar URL, company, bio, public repos count, followers and following counts. Use this to verify your token is working correctly.
-
-Get the authenticated GitHub user
-- **list_releases**: Each release includes its tag name, name, draft/prerelease status, author, publish date and asset downloads info. Returns the most recent releases first.
-
-List releases for a GitHub repository
-- **create_issue**: Requires the owner, repo and title. Optionally set the issue body (Markdown text) and labels (comma-separated). Returns the created issue with its number, title and URL.
-
-Create a new GitHub issue
-- **get_issue**: Provide the owner, repo and issue number.
-
-Get details for a specific GitHub issue
-- **get_pull_request**: Provide the owner, repo and PR number.
-
-Get details for a specific GitHub pull request
-- **get_release_by_tag**: Returns the release name, tag name, body (Markdown), draft/prerelease status, publish date and attached assets. Provide the owner, repo and tag name.
-
-Get a GitHub release by its tag name
-- **get_repo**: Provide the owner (org or user) and repo name.
-
-Get details for a specific GitHub repository
-- **list_branches**: Each branch includes its name, commit SHA and whether it is the default (protected) branch.
-
-List branches in a GitHub repository
-- **list_commits**: Optionally filter by branch (sha parameter) and set the number of results. Each commit includes the SHA, author, commit message and date. Results are ordered newest first.
-
-List commits on a GitHub repository branch
-- **list_issues**: Optionally filter by state (open, closed, all). Note: GitHub's issues endpoint includes pull requests — use list_pull_requests for PRs only. Returns issue number, title, state, labels, assignee and creation date.
-
-List issues in a GitHub repository
-- **list_pull_requests**: Optionally filter by state (open, closed, all). Returns PR number, title, state, author, draft status, creation date and merge status. Use get_pull_request for full details on a specific PR.
-
-List pull requests in a GitHub repository
-- **list_repos**: Optionally filter by type (all, owner, public, private, member) and set the number of results per page. Returns repo name, full_name, description, visibility, language, stars, forks and creation date.
-
-List repositories for the authenticated user
-- **list_workflow_runs**: Optionally filter by branch and set the number of results. Each run includes its ID, workflow name, event trigger, status (queued, in_progress, completed), conclusion (success, failure), branch and creation date.
-
-List GitHub Actions workflow runs for a repository
-- **search_repos**: The query supports qualifiers like "language:typescript", "stars:>1000", "org:microsoft", "pushed:>2024-01-01" and free-text search. Results include repo name, description, stars, forks, language and creation date.
-
-Search GitHub repositories
+## Available Tools (12)
+- **create_new_issue**: Open GitHub issue
+- **get_file_content**: Read file from repo
+- **get_my_profile**: Get account info
+- **get_repository_details**: Get repo info
+- **list_repo_branches**: Check repo branches
+- **list_my_gists**: List code snippets
+- **list_repository_issues**: List repo issues
+- **list_recent_notifications**: Check GitHub inbox
+- **list_my_organizations**: List user orgs
+- **list_my_repositories**: List your GitHub repos
+- **search_repositories**: Find GitHub projects
+- **list_pull_requests**: List repo PRs
 
 
 ## 💬 Prompt Examples
@@ -87,41 +56,38 @@ Search GitHub repositories
 Here are some examples of how you can interact with the **GitHub** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Show me all open issues in my backend-api repo."
+> "List all my GitHub repositories and show their stars count."
 
 **🤖 AI Agent:**
-> I found 7 open issues in backend-api. The most critical is #142 'Database connection timeout on high load' (bug, high-priority, assigned to @alice). Other notable issues include #138 'Add rate limiting middleware' and #135 'Refactor auth middleware to support OAuth2'.
+> I've retrieved your repositories. You have 12 repos, including 'mcp-server' (150 stars) and 'react-template' (42 stars). Would you like the full metadata for any of these?
 
 ---
 
 **👤 You:**
-> "What's the status of recent workflow runs on main branch?"
+> "Find all open issues in the repository 'vinkius/mcp-server'."
 
 **🤖 AI Agent:**
-> The last 5 workflow runs on main: CI Pipeline (success, 12m ago), Deploy to Staging (success, 10m ago), Security Scan (success, 8m ago), Release Build (failure, 2h ago — failed at 'build Docker image' step) and Integration Tests (success, 3h ago).
+> Scanning issues for vinkius/mcp-server... I found 3 open issues. Notable ones include 'Fix auth timeout' (ID: 101) and 'Update documentation' (ID: 102). Shall I provide the full description for the auth issue?
 
 ---
 
 **👤 You:**
-> "Search for popular Python machine learning repos with over 1000 stars."
+> "Get the content of 'README.md' from repository 'vinkius/mcp-server'."
 
 **🤖 AI Agent:**
-> I found several highly-starred Python ML repos: huggingface/transformers (119k stars), scikit-learn/scikit-learn (58k stars), tensorflow/tensorflow (185k stars), pytorch/pytorch (79k stars) and microsoft/ML-For-Beginners (27k stars). Would you like more details on any of these?
+> File retrieved! I've fetched the README.md content. It describes the server architecture and installation steps. Would you like me to summarize the main components or explain the setup guide?
 
 
 ## ❓ FAQ
 
-**Q: How do I create a GitHub Personal Access Token?**
-Go to [**Settings > Developer settings > Personal access tokens**](https://github.com/settings/tokens), click **Generate new token (classic)**, give it a descriptive name, select the scopes you need (recommended: repo, workflow, read:org) and click **Generate token**. Copy the token immediately — it starts with `ghp_` and won't be shown again.
+**Q: Can I read private repositories?**
+Yes, provided your Personal Access Token (PAT) has the 'repo' scope or appropriate fine-grained permissions for those repositories.
 
-**Q: Can I create issues with labels via the agent?**
-Yes! Use the `create_issue` tool with the owner, repo and title parameters. Optionally provide a Markdown body and comma-separated labels (e.g. "bug,high-priority"). The agent will create the issue and return its number, title and URL.
+**Q: How do I find a repository owner and name?**
+In a GitHub URL like `github.com/vinkius/mcp-server`, the owner is `vinkius` and the repository name is `mcp-server`.
 
-**Q: How do I search for repositories with specific criteria?**
-Use the `search_repos` tool with GitHub's query syntax. Examples: "machine learning in:name language:python stars:>1000" finds Python ML repos with 1k+ stars; "org:microsoft pushed:>2024-01-01" finds Microsoft repos updated in 2024. The query supports qualifiers for language, stars, forks, org, topic, size and more.
-
-**Q: Does this tool support GitHub Actions workflow monitoring?**
-Yes! Use `list_workflow_runs` to see recent CI/CD executions for a repository. You can filter by branch and see each run's status (queued, in_progress, completed) and conclusion (success, failure, cancelled). This is useful for checking if recent deployments or builds passed without opening the Actions tab.
+**Q: Does it support creating pull requests?**
+This version supports listing pull requests and issues. PR creation is currently handled through the web interface or other specialized tools.
 
 
 ## Installation & Usage
