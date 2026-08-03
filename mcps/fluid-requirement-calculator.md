@@ -15,10 +15,10 @@ This MCP server provides a specialized calculation engine to determine your tota
 
 ## Available Tools (3)
 - **calculate_baseline_requirement**: Calculate the baseline fluid requirement
-- **calculate_environmental_modifiers**: Calculate environmental fluid adjustments
 - **get_final_daily_target**: 5L).
 
 Calculate the total daily fluid target
+- **calculate_environmental_modifiers**: Calculate environmental fluid adjustments
 
 
 ## 💬 Prompt Examples

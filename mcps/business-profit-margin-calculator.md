@@ -14,10 +14,10 @@ This MCP server provides a specialized financial analysis toolkit for entreprene
 
 
 ## Available Tools (4)
-- **calculate_break_even_metrics**: Calculate break-even analysis metrics
 - **calculate_optimal_pricing**: Calculate optimal pricing using markup or margin strategy
 - **calculate_profitability_margins**: Calculate business profitability margins
 - **project_seasonal_cash_flow**: Project seasonal cash flow
+- **calculate_break_even_metrics**: Calculate break-even analysis metrics
 
 
 ## 💬 Prompt Examples

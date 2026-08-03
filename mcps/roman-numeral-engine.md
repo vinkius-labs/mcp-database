@@ -15,8 +15,8 @@ The Roman Numeral Engine provides high-precision conversion between Arabic integ
 
 ## Available Tools (3)
 - **convert_arabic_to_roman**: Converts an Arabic integer to a Roman numeral
-- **convert_roman_to_arabic**: Converts a Roman numeral string to an Arabic integer
 - **validate_roman_notation**: Validates a Roman numeral notation
+- **convert_roman_to_arabic**: Converts a Roman numeral string to an Arabic integer
 
 
 ## 💬 Prompt Examples

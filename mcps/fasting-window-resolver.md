@@ -14,8 +14,8 @@ The Fasting Window Resolver MCP server provides tools to manage intermittent fas
 
 
 ## Available Tools (3)
-- **get_current_state_details**: Determines the user's current physiological state and how much time remains before the next transition
 - **calculate_duration_until_event**: Calculates how much time remains before a specific target time is reached
+- **get_current_state_details**: Determines the user's current physiological state and how much time remains before the next transition
 - **get_window_boundaries**: Retrieves the complete schedule of all four boundary timestamps
 
 

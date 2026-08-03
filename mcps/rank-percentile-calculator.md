@@ -14,10 +14,10 @@ The Rank Percentile Calculator connects AI agents to precise player distribution
 
 
 ## Available Tools (4)
-- **calculate_next_rank_gap**: How much more progress do I need to reach the next rank?
 - **get_game_metadata**: How current is this ranking data?
 - **get_rank_percentile**: What percentage of players are at my rank or higher?
 - **list_supported_ranks**: What ranks and games can I query?
+- **calculate_next_rank_gap**: How much more progress do I need to reach the next rank?
 
 
 ## 💬 Prompt Examples

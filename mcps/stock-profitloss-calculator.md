@@ -14,9 +14,9 @@ A specialized financial utility for calculating the precise performance, taxatio
 
 
 ## Available Tools (3)
+- **analyze_stock_trade**: Calculates the net profitability and tax liabilities for a completed stock transaction
 - **evaluate_options_strategy**: Determines the max profit, max loss, and break-even points for multi-leg options strategies
 - **plan_position_size**: Calculates how many units to purchase for a specific risk management plan
-- **analyze_stock_trade**: Calculates the net profitability and tax liabilities for a completed stock transaction
 
 
 ## 💬 Prompt Examples

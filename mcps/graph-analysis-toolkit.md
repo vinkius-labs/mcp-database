@@ -14,11 +14,11 @@ The Graph Analysis Toolkit is a specialized engine for deep structural analysis 
 
 
 ## Available Tools (5)
+- **check_graph_isomorphism**: Determine if two graphs are structurally identical
+- **get_node_degrees**: Determine incoming and outgoing connections for nodes
 - **analyze_graph_connectivity**: Assess graph interconnectedness and identify isolated groups
 - **calculate_centrality_metrics**: Rank nodes based on influence and position
-- **check_graph_isomorphism**: Determine if two graphs are structurally identical
 - **detect_structural_vulnerabilities**: Identify critical nodes and edges that break connectivity
-- **get_node_degrees**: Determine incoming and outgoing connections for nodes
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ The Cash Flow Forecaster is a personal finance projection engine designed to hel
 
 
 ## Available Tools (4)
-- **calculate_required_cushion**: Determines the amount of extra cash needed to handle volatility
 - **suggest_payment_optimization**: Suggests which payments could be delayed or moved to prevent liquidity gaps
-- **detect_shortfall_risks**: Identifies upcoming dates when the cash balance is expected to drop below a critical level
 - **get_weekly_projections**: Provides a week-by-week breakdown of the projected bank balance
+- **detect_shortfall_risks**: Identifies upcoming dates when the cash balance is expected to drop below a critical level
+- **calculate_required_cushion**: Determines the amount of extra cash needed to handle volatility
 
 
 ## 💬 Prompt Examples

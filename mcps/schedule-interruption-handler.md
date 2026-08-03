@@ -14,9 +14,9 @@ The Schedule Interruption Handler is a specialized tool for managing time-sensit
 
 
 ## Available Tools (3)
-- **calculate_underrun**: Calculate the impact of a schedule interruption on completion date
 - **get_interruption_summary**: Get a summary of the schedule interruption
 - **get_resumed_schedule**: Generate the adjusted schedule following an interruption
+- **calculate_underrun**: Calculate the impact of a schedule interruption on completion date
 
 
 ## 💬 Prompt Examples

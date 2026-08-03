@@ -14,9 +14,9 @@ This MCP server provides a specialized estimation engine for workers' compensati
 
 
 ## Available Tools (4)
+- **calculate_premium_estimate**: Calculate the estimated total workers compensation premium
 - **estimate_audit_impact**: Estimate the potential premium change during a year-end audit
 - **calculate_deposit_amount**: Calculate the required upfront deposit
-- **calculate_premium_estimate**: Calculate the estimated total workers compensation premium
 - **calculate_safety_discount**: Calculate the workers compensation safety performance discount
 
 

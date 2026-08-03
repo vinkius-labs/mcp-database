@@ -14,8 +14,8 @@ This MCP server provides a high-precision engine for determining US sales and us
 
 
 ## Available Tools (3)
-- **calculate_transaction_tax**: Calculate the total tax liability for a transaction
 - **check_item_exemption**: Check if an item category is exempt from tax
+- **calculate_transaction_tax**: Calculate the total tax liability for a transaction
 - **get_jurisdiction_rates**: Retrieve tax rates for a specific location
 
 

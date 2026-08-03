@@ -14,10 +14,10 @@ This MCP server provides a specialized financial comparison engine designed to r
 
 
 ## Available Tools (4)
+- **generate_comparison_report**: Aggregates all financial calculations into a single comparative view
+- **evaluate_cash_benefit**: Calculates the final price and total savings when using cash/debit
 - **calculate_bnpl_financials**: Determines the total expenditure and effective interest rate for a BNPL plan
 - **calculate_credit_card_impact**: Calculates the cost of carrying a balance on a credit card
-- **evaluate_cash_benefit**: Calculates the final price and total savings when using cash/debit
-- **generate_comparison_report**: Aggregates all financial calculations into a single comparative view
 
 
 ## 💬 Prompt Examples

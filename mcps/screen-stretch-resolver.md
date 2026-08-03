@@ -14,9 +14,9 @@ The Screen Stretch Resolver is a precision utility designed for tactical shooter
 
 
 ## Available Tools (3)
-- **map_coordinate_conversion**: Translates a specific point on the screen from stretched space to native space
 - **analyze_fov_shift**: Calculates how much the perceived field of view is altered by the aspect ratio change
 - **calculate_stretch_multipliers**: Determines the magnitude of pixel expansion between resolutions
+- **map_coordinate_conversion**: Translates a specific point on the screen from stretched space to native space
 
 
 ## 💬 Prompt Examples

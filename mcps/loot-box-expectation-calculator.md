@@ -14,9 +14,9 @@ An analytical tool for gacha game players to quantify the probability of obtaini
 
 
 ## Available Tools (3)
+- **analyze_bad_luck_streak**: Analyze the probability of a consecutive loss streak
 - **estimate_budget_requirement**: Estimate the cost required for a character
 - **get_pull_success_rate**: Calculate the probability of getting a target character within N pulls
-- **analyze_bad_luck_streak**: Analyze the probability of a consecutive loss streak
 
 
 ## 💬 Prompt Examples

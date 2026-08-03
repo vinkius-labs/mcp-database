@@ -14,10 +14,10 @@ The Anxiety Management Tracker is a pattern recognition engine designed to help 
 
 
 ## Available Tools (5)
-- **get_anxiety_trends**: Visualize how anxiety levels are CRITICAL: shifting over specific time durations
 - **evaluate_strategy_effectiveness**: Rank coping strategies based on their historical success
 - **suggest_intervention_windows**: Suggest optimal windows for mental health interventions
 - **analyze_trigger_correlations**: Identify which specific events are most strongly associated with high anxiety
+- **get_anxiety_trends**: Visualize how anxiety levels are CRITICAL: shifting over specific time durations
 - **forecast_high_risk_periods**: Forecast upcoming high-risk periods
 
 

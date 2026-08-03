@@ -14,11 +14,11 @@ This MCP server provides a precise nutrition engine to determine your daily ener
 
 
 ## Available Tools (4)
+- **generate_meal_breakdown**: Partition daily macros into meals
 - **calculate_bmr**: Requires weight, height, age, and biological sex.
 
 Calculate Basal Metabolic Rate (BMR)
 - **distribute_macronutrients**: Distribute calories into macronutrients
-- **generate_meal_breakdown**: Partition daily macros into meals
 - **calculate_tdee**: Calculate Total Daily Energy Expenditure (TDEE)
 
 

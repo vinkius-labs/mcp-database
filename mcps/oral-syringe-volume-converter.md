@@ -14,9 +14,9 @@ This MCP server provides a precise way to convert liquid medication dosages from
 
 
 ## Available Tools (3)
-- **convert_spoons_to_ml**: Calculates total milliliters from teaspoons and tablespoons
 - **estimate_drop_volume**: Calculates milliliters from a count of drops
 - **get_volume_equivalents**: Converts milliliters to teaspoons, tablespoons, and drops
+- **convert_spoons_to_ml**: Calculates total milliliters from teaspoons and tablespoons
 
 
 ## 💬 Prompt Examples
