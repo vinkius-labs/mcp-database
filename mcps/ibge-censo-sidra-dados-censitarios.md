@@ -33,8 +33,8 @@ Economists, journalists, policy researchers, investment analysts, ESG consultant
 - **get_agregado_data**: Example: aggregate 4714 (IPCA) variable 63 (monthly variation). Levels: N1=Brasil, N2=Região, N3=UF, N6=Município.
 
 Get census/survey data from a SIDRA aggregate table
-- **get_agregado_metadados**: Get metadata for a SIDRA aggregate
 - **get_agregado_periodos**: Get available periods for a SIDRA aggregate
+- **get_agregado_metadados**: Get metadata for a SIDRA aggregate
 
 
 ## 💬 Prompt Examples

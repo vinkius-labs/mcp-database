@@ -37,12 +37,12 @@ No more manual exporting of usage logs or jumping between complex fleet manageme
 
 
 ## Available Tools (11)
+- **get_recent_data_sessions**: Retrieve the most recent data sessions for your fleet
+- **list_available_data_plans**: List all data plans available for activation in your organization
 - **get_billing_cycle_usage**: Check data usage for the current billing cycle
 - **get_daily_usage_stats**: Retrieve aggregated daily data usage statistics
 - **get_device_details**: Get detailed information for a specific IoT device
 - **get_device_locations**: Retrieve approximate GPS coordinates for all devices based on cell tower data
-- **get_recent_data_sessions**: Retrieve the most recent data sessions for your fleet
-- **list_available_data_plans**: List all data plans available for activation in your organization
 - **list_iot_devices**: Use this to monitor fleet status and find specific device IDs.
 
 List all IoT devices in your Hologram account

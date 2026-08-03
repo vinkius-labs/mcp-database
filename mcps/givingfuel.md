@@ -36,16 +36,16 @@ Connect your **GivingFuel** account to any AI agent to automate your fundraising
 
 
 ## Available Tools (10)
-- **filter_orders_by_date**: Filter by date range
-- **list_crm_contacts**: List donor profiles
-- **list_donation_orders**: List all orders
-- **list_peer_campaigns**: List P2P campaigns
-- **list_fundraising_pages**: List donation pages
-- **list_recent_donations**: List latest 10 orders
-- **list_donation_registrants**: List individual donors
-- **list_financial_transactions**: List successful charges
 - **verify_api_connection**: Check connection
 - **filter_orders_by_status**: Filter by completion
+- **filter_orders_by_date**: Filter by date range
+- **list_donation_orders**: List all orders
+- **list_peer_campaigns**: List P2P campaigns
+- **list_donation_registrants**: List individual donors
+- **list_financial_transactions**: List successful charges
+- **list_crm_contacts**: List donor profiles
+- **list_recent_donations**: List latest 10 orders
+- **list_fundraising_pages**: List donation pages
 
 
 ## 💬 Prompt Examples

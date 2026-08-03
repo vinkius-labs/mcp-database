@@ -14,15 +14,15 @@ Empower your AI agents with HypeAuditor's industry-leading influencer analytics.
 
 
 ## Available Tools (10)
-- **get_account_info**: Gets your HypeAuditor account details
 - **get_influencer_report**: Retrieves a detailed report for an influencer
+- **list_platforms**: Lists supported social media platforms
+- **list_reports**: Lists reports generated in your account
+- **get_account_info**: Gets your HypeAuditor account details
 - **get_rate_limit**: Gets current API rate limit status
 - **list_categories**: Lists influencer categories
 - **list_countries**: Lists available countries
 - **list_influencer_types**: Lists available influencer types
 - **list_languages**: Lists available languages
-- **list_platforms**: Lists supported social media platforms
-- **list_reports**: Lists reports generated in your account
 - **search_influencers**: Searches for influencers with filters
 
 

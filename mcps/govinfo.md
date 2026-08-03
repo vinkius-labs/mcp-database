@@ -37,13 +37,13 @@ Your AI agent acts as a dedicated research assistant, capable of instantly locat
 
 ## Available Tools (8)
 - **get_collection**: Get packages within a collection by date range
+- **search_documents**: Search documents via the GovInfo Search API
 - **get_granule_summary**: Get summary metadata for a specific granule
 - **get_package_summary**: Get summary metadata for a specific package
 - **get_published**: Get documents published on a specific date
 - **get_related_documents**: Get documents related to a specific package
 - **list_collections**: List available document collections
 - **list_package_granules**: List granules (sub-documents) for a package
-- **search_documents**: Search documents via the GovInfo Search API
 
 
 ## 💬 Prompt Examples

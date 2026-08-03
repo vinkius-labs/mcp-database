@@ -15,7 +15,6 @@ Empower your AI agents to manage your events ecosystem with idloom.events. This 
 
 ## Available Tools (10)
 - **get_attendee**: Retrieves details for a specific attendee
-- **get_event**: Retrieves details for a specific event
 - **list_attendees**: Lists all attendees
 - **list_categories**: Lists all categories
 - **list_emails**: Lists all emails
@@ -24,6 +23,7 @@ Empower your AI agents to manage your events ecosystem with idloom.events. This 
 - **list_registration_forms**: Lists all registration forms
 - **list_transactions**: Lists all transactions
 - **list_webhooks**: Lists all webhooks
+- **get_event**: Retrieves details for a specific event
 
 
 ## 💬 Prompt Examples

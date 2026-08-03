@@ -35,15 +35,15 @@ Connect your **IndoorAtlas** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
+- **list_positioning_sessions**: Returns a paginated list of positioning sessions. Each session represents a continuous period of indoor tracking by a single device. Use for occupancy analytics, dwell time analysis, and path optimization studies.
+
+List historical indoor positioning sessions recorded by IndoorAtlas, returning session IDs, start/end times, venue associations, and device information for analytics and path replay
 - **upload_floorplan_geojson**: After upload, trigger map generation to enable positioning on this floor.
 
 Upload a new floor plan to an IndoorAtlas venue as a GeoJSON document, geo-referencing the indoor map image to real-world coordinates for accurate positioning overlay
 - **create_venue**: The venue serves as the top-level container for floor plans and positioning data. After creation, upload floor plan images and calibrate for positioning accuracy.
 
 Create a new indoor venue in the IndoorAtlas platform by specifying the building name, geographic coordinates of the entrance, and initial configuration parameters for indoor positioning deployment
-- **trigger_map_generation**: This is a critical step — positioning will not work on a floor until map generation completes successfully. The process is asynchronous and may take several minutes depending on floor plan complexity.
-
-Trigger the IndoorAtlas radio map generation process for a specific floor plan, initiating the server-side computation that creates the positioning model from fingerprint data and floor plan geometry
 - **get_fingerprint_paths**: Returns GeoJSON LineString features representing calibration paths. Use to assess calibration coverage and identify areas of the floor that need additional fingerprinting for better positioning accuracy.
 
 Retrieve the fingerprinting walk paths recorded for a specific floor plan as GeoJSON, showing the routes surveyors walked while collecting Wi-Fi/BLE signal data for positioning calibration
@@ -56,12 +56,12 @@ Retrieve detailed metadata for a specific IndoorAtlas venue including its geogra
 - **list_floorplans**: Returns an array of floor plan metadata objects ordered by floor number. Each entry includes the plan dimensions, pixel-to-meter scale, and whether radio map generation has been completed.
 
 List all floor plans uploaded to a specific IndoorAtlas venue, returning floor plan IDs, floor numbers, dimensions, geo-alignment status, and map generation readiness for each level of the building
-- **list_positioning_sessions**: Returns a paginated list of positioning sessions. Each session represents a continuous period of indoor tracking by a single device. Use for occupancy analytics, dwell time analysis, and path optimization studies.
-
-List historical indoor positioning sessions recorded by IndoorAtlas, returning session IDs, start/end times, venue associations, and device information for analytics and path replay
 - **list_venues**: Returns an array of venue objects. Each venue represents a physical building that has been set up for indoor positioning. Use to discover available venues before requesting floor plans or positioning data.
 
 List all indoor venues registered in your IndoorAtlas organization, returning venue IDs, names, geographic coordinates, and configuration status for each mapped building or facility
+- **trigger_map_generation**: This is a critical step — positioning will not work on a floor until map generation completes successfully. The process is asynchronous and may take several minutes depending on floor plan complexity.
+
+Trigger the IndoorAtlas radio map generation process for a specific floor plan, initiating the server-side computation that creates the positioning model from fingerprint data and floor plan geometry
 - **position_from_wifi_scan**: Returns estimated coordinates with uncertainty radius. Use for server-side positioning when mobile SDK integration is not feasible.
 
 Determine indoor position from a Wi-Fi access point scan using the IndoorAtlas Positioning API, submitting observed signal strengths to receive a calculated latitude, longitude, floor level, and accuracy estimate

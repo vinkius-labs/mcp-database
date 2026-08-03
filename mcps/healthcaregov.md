@@ -41,11 +41,11 @@ No more manual filtering through complex marketplace portals. Your AI assistant 
 - **get_plan_crosswalk**: Get information about plan transitions between years
 - **get_drug_coverage**: Check if a medication is covered by a specific plan
 - **get_api_metadata**: Retrieve metadata about the Marketplace API data
+- **list_issuers**: List insurance issuers operating in a specific state
+- **list_market_states**: List states served by the Marketplace
 - **get_plan_details**: Get detailed information about a specific health plan
 - **get_provider_coverage**: Verify if a provider is in-network for a specific plan
-- **list_issuers**: List insurance issuers operating in a specific state
 - **search_drugs**: Search for medications in the Marketplace drug database
-- **list_market_states**: List states served by the Marketplace
 - **search_plans**: Pass household and place as JSON strings.
 
 Search for health and dental plans in the Marketplace

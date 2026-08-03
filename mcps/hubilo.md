@@ -18,12 +18,12 @@ Empower your AI agents to manage your virtual event strategy with Hubilo. This M
 - **get_event_details**: Retrieves details for a specific event
 - **get_organizer_profile**: Gets details about the event organizer
 - **list_attendees**: Lists attendees registered for an event
-- **list_booth_categories**: Lists exhibitor booth categories for an event
 - **list_events**: Lists virtual and hybrid events
 - **list_orders**: Lists ticket orders for an event
 - **list_sessions**: Lists agenda sessions for an event
 - **list_speakers**: Lists speakers for an event
 - **list_tickets**: Lists tickets for an event
+- **list_booth_categories**: Lists exhibitor booth categories for an event
 
 
 ## 💬 Prompt Examples

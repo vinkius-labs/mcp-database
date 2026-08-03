@@ -37,17 +37,17 @@ Connect your **GoBolt** merchant account to any AI agent to automate your e-comm
 
 ## Available Tools (12)
 - **verify_api_connection**: Check connection
-- **create_shipping_order**: Place shipping order
-- **get_merchant_info**: Get account identity
 - **find_fastest_rate**: Find fastest delivery
 - **get_shipping_labels**: Download labels
 - **find_cheapest_rate**: Find lowest cost
-- **get_order_details**: Get order metadata
 - **get_shipping_rates**: Get real-time rates
-- **get_tracking_history**: View full events
 - **track_shipment**: Get tracking info
 - **list_shipping_orders**: List all orders
 - **modify_shipping_order**: Update order info
+- **create_shipping_order**: Place shipping order
+- **get_merchant_info**: Get account identity
+- **get_order_details**: Get order metadata
+- **get_tracking_history**: View full events
 
 
 ## 💬 Prompt Examples

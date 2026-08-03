@@ -50,8 +50,8 @@ List all LinkedIn accounts (senders) connected to the workspace
 List all LinkedIn outreach campaigns
 - **list_conversations**: List recent LinkedIn inbox conversations
 - **list_lead_campaigns**: List all campaigns a specific lead is part of
-- **pause_campaign**: Pause an active LinkedIn campaign
 - **resume_campaign**: Resume a paused LinkedIn campaign
+- **pause_campaign**: Pause an active LinkedIn campaign
 - **send_linkedin_message**: Pass the payload as a JSON string in "body_json" (requires conversationId and text).
 
 Send a message to a LinkedIn conversation
