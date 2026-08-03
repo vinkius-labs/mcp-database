@@ -20,10 +20,10 @@ LLMs are notoriously bad at math, often hallucinating numbers when calculating l
 
 
 ## Available Tools (2)
+- **calculate_compound_interest**: Calculates exact compound interest over time
 - **calculate_amortization**: Type can be SAC (Constant Amortization) or PRICE (French Amortization System).
 
 Calculates a perfect amortization schedule (SAC or PRICE) without hallucination
-- **calculate_compound_interest**: Calculates exact compound interest over time
 
 
 ## 💬 Prompt Examples

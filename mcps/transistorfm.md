@@ -35,16 +35,16 @@ Connect your **Transistor.fm** podcasting account to any AI agent and simplify h
 
 
 ## Available Tools (11)
-- **get_episode**: Get details for an episode
-- **get_account_details**: fm account.
-
-Get account details
 - **get_show**: Get details for a specific show
 - **list_episodes**: List episodes for a show
 - **list_shows**: List all podcast shows
 - **list_subscribers**: List private podcast subscribers
 - **publish_episode**: Publish an episode
 - **update_episode**: Update an existing episode
+- **get_episode**: Get details for an episode
+- **get_account_details**: fm account.
+
+Get account details
 - **add_subscriber**: Add a subscriber to a private podcast
 - **create_episode**: Create a new episode
 - **delete_episode**: Delete an episode

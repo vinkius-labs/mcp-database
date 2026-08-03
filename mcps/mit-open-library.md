@@ -42,12 +42,6 @@ Get all works by a specific author
 - **get_edition**: Returns title, publisher, publication date, ISBNs, page count, physical format, languages, and cover images.
 
 Get edition details by Open Library edition key
-- **get_work**: g. "OL45883W" for The Lord of the Rings). Returns title, description, subjects, covers, and publication history.
-
-Get book details by Open Library work key
-- **get_work_editions**: Essential for finding specific translations or editions.
-
-Get all editions of a specific book
 - **search_authors**: Returns author names, birth/death dates, top works, total work counts, and main subjects. Open Library has profiles for hundreds of thousands of authors.
 
 Search book authors on Open Library
@@ -78,6 +72,12 @@ Search for books with full text available
 - **search_recent**: Useful for discovering new additions to the catalog.
 
 Browse recently added books
+- **get_work**: g. "OL45883W" for The Lord of the Rings). Returns title, description, subjects, covers, and publication history.
+
+Get book details by Open Library work key
+- **get_work_editions**: Essential for finding specific translations or editions.
+
+Get all editions of a specific book
 - **search_trending_subjects**: Browse popular books in a subject
 
 

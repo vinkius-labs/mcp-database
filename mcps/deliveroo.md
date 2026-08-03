@@ -33,13 +33,13 @@ Connect your **Deliveroo** restaurant account to any AI agent to streamline your
 
 
 ## Available Tools (5)
-- **create_prep_stage**: Inform Deliveroo of order preparation progress
 - **create_sync_status**: Notify Deliveroo of POS injection status
 - **get_order**: Get details for a single Deliveroo order
 - **get_orders**: List Deliveroo orders
 - **update_order_status**: Must be called within ~10 minutes of receiving a new order.
 
 Accept, reject, or confirm a Deliveroo order
+- **create_prep_stage**: Inform Deliveroo of order preparation progress
 
 
 ## 💬 Prompt Examples

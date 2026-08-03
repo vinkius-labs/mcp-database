@@ -35,17 +35,17 @@ Connect your **UniOne** email delivery account to any AI agent and simplify how 
 
 ## Available Tools (12)
 - **delete_template**: Delete a template
-- **delete_webhook**: Delete a webhook
-- **get_template**: Get template details
 - **get_webhook**: Get webhook details
 - **list_suppression**: List suppressed emails
-- **list_templates**: List email templates
 - **list_webhooks**: List webhooks
 - **send_email**: Send a transactional email
-- **send_template**: Send email using a template
-- **set_suppression**: Add email to suppression list
 - **set_template**: Create or update a template
 - **set_webhook**: Configure a webhook
+- **list_templates**: List email templates
+- **send_template**: Send email using a template
+- **set_suppression**: Add email to suppression list
+- **delete_webhook**: Delete a webhook
+- **get_template**: Get template details
 
 
 ## 💬 Prompt Examples

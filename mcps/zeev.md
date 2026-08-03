@@ -29,8 +29,6 @@ Digitize business processes with BPMN workflows, electronic forms, and approval 
 
 ## Available Tools (11)
 - **cancel_request**: Cancel an active process request
-- **create_request**: Start a new process request in Zeev
-- **delegate_task**: Delegate a task to another user
 - **finish_task**: Finish/Complete a Zeev task
 - **get_me**: Get current user information
 - **get_process**: Get details of a process definition
@@ -39,6 +37,8 @@ Digitize business processes with BPMN workflows, electronic forms, and approval 
 - **list_processes**: List available process definitions
 - **list_requests**: List process requests (instances) in Zeev
 - **list_tasks**: List pending tasks in Zeev
+- **create_request**: Start a new process request in Zeev
+- **delegate_task**: Delegate a task to another user
 
 
 ## 💬 Prompt Examples

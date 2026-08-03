@@ -35,11 +35,11 @@ Connect your **BookingLive** account to any AI agent to streamline your scheduli
 
 ## Available Tools (17)
 - **complete_order**: Completes an order
+- **get_product_availability**: Returns public product availability for a date range
 - **get_message_content**: Returns the HTML content and subject of an email for a specific order
 - **get_order_details**: Returns full details of a specific order
 - **get_orders_by_email**: Returns all orders associated with a specific purchaser email
 - **get_orders**: Returns a filtered list of all orders
-- **get_product_availability**: Returns public product availability for a date range
 - **get_product_detail**: Returns details for specific products
 - **get_ref_data**: Returns public reference data (Products, ProductGroups, Resources, Locations, Staff)
 - **get_resource_availability**: Returns public resource availability for a date range

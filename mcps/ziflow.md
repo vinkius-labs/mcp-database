@@ -34,12 +34,6 @@ Connect your **Ziflow** account to any AI agent to automate your creative review
 
 
 ## Available Tools (12)
-- **create_proof**: Create a new proof
-- **create_webhook**: created.
-
-Create a new webhook
-- **get_account_info**: Get account profile
-- **get_contact_by_email**: Find contact by email
 - **get_proof**: Get proof details
 - **get_proof_viewer_url**: Generate review link
 - **list_folders**: List proof folders
@@ -48,6 +42,12 @@ Create a new webhook
 - **list_webhooks**: List active webhooks
 - **search_proofs**: Search for proofs
 - **submit_decision**: Submit proof decision
+- **create_proof**: Create a new proof
+- **create_webhook**: created.
+
+Create a new webhook
+- **get_account_info**: Get account profile
+- **get_contact_by_email**: Find contact by email
 
 
 ## 💬 Prompt Examples

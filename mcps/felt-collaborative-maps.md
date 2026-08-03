@@ -37,7 +37,6 @@ Connect **Felt** to your AI agent to take full control of your collaborative map
 - **create_layer**: Supports GeoJSON, CSV, KML, Shapefiles, etc.
 
 Create a layer (Upload Data) to a Felt map
-- **create_map**: Create a new Felt map
 - **delete_element**: Delete a Felt element
 - **delete_layer**: Delete a Felt layer
 - **delete_map**: Delete a Felt map
@@ -46,6 +45,7 @@ Create a layer (Upload Data) to a Felt map
 - **list_maps**: List Felt maps
 - **update_element**: Update a Felt element
 - **update_layer**: Update a Felt layer
+- **create_map**: Create a new Felt map
 - **add_elements**: Add elements to a Felt layer
 
 

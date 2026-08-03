@@ -34,18 +34,18 @@ Connect your **Workast** account to any AI agent to streamline your project mana
 
 
 ## Available Tools (12)
-- **get_space**: Get space details
-- **get_task**: Get task details
-- **get_team_info**: Get team details
-- **get_user**: Get user details
-- **list_spaces**: List all Workast spaces
-- **list_tasks**: List tasks in a space
-- **list_users**: List team users
-- **update_task**: Update a task
-- **create_space**: Create a new space
 - **create_task**: Create a new task
 - **delete_task**: Delete a task
 - **get_account_profile**: Get my profile
+- **get_space**: Get space details
+- **get_task**: Get task details
+- **get_team_info**: Get team details
+- **list_tasks**: List tasks in a space
+- **list_users**: List team users
+- **update_task**: Update a task
+- **get_user**: Get user details
+- **list_spaces**: List all Workast spaces
+- **create_space**: Create a new space
 
 
 ## 💬 Prompt Examples

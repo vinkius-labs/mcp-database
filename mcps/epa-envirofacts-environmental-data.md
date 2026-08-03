@@ -34,8 +34,8 @@ Connect to the **EPA Envirofacts** database to query a wealth of environmental i
 
 
 ## Available Tools (6)
-- **uv_hourly_city_state**: Get hourly UV Index forecast by City and State
 - **uv_hourly_zip**: Get hourly UV Index forecast by ZIP code
+- **uv_hourly_city_state**: Get hourly UV Index forecast by City and State
 - **graphql_query**: Query EPA Envirofacts using GraphQL
 - **rest_query**: Use program.table format (e.g., tri.tri_facility).
 

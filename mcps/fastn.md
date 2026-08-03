@@ -34,14 +34,14 @@ Connect your **Fastn** account to any AI agent to orchestrate complex backend wo
 
 
 ## Available Tools (16)
+- **list_workflows**: List all flow definitions for a tenant
 - **get_credentials**: Retrieve stored credentials
 - **get_execution**: Get full step-by-step execution trace
 - **get_quota_daily**: Daily usage breakdown
 - **get_quota_summary**: Usage summary
 - **get_quota_usage**: Current usage against plan limits
-- **get_workflow**: Get a flow full specification
 - **list_executions**: List execution history for a tenant
-- **list_workflows**: List all flow definitions for a tenant
+- **get_workflow**: Get a flow full specification
 - **publish_workflow**: Deploy / publish a flow
 - **rotate_credentials**: Rotate credentials
 - **store_credentials**: Store connector credentials
