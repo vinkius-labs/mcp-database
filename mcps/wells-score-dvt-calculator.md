@@ -14,9 +14,9 @@ The Wells Score DVT Calculator provides a standardized method for healthcare pro
 
 
 ## Available Tools (3)
+- **get_diagnostic_protocol**: Determine the recommended medical testing pathway
 - **calculate_risk_score**: Compute the Wells Score and assign a risk tier
 - **fetch_prevalance_data**: Retrieve historical DVT prevalence data
-- **get_diagnostic_protocol**: Determine the recommended medical testing pathway
 
 
 ## 💬 Prompt Examples

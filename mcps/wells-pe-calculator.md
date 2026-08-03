@@ -14,9 +14,9 @@ This MCP server provides clinical decision support for assessing pulmonary embol
 
 
 ## Available Tools (3)
-- **determine_diagnostic_pathway**: Determine the diagnostic pathway for PE
 - **evaluate_perc_prob**: Evaluate the PERC rule for PE
 - **calculate_wells_score**: Calculate the Wells Score for Pulmonary Embolism
+- **determine_diagnostic_pathway**: Determine the diagnostic pathway for PE
 
 
 ## 💬 Prompt Examples

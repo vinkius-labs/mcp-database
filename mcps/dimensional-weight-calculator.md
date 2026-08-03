@@ -14,11 +14,11 @@ This MCP server provides essential tools for logistics professionals to manage s
 
 
 ## Available Tools (3)
-- **resolve_billable_weight**: Determates the final weight that will be charged by the carrier
 - **calculate_weight_gap**: Calculates the discrepancy between actual weight and billable weight
 - **get_all_carrier_dim_weights**: Returns weights for FedEx, UPS, DHL, and USPS.
 
 Calculates the dimensional weight for all supported carriers based on dimensions
+- **resolve_billable_weight**: Determates the final weight that will be charged by the carrier
 
 
 ## 💬 Prompt Examples

@@ -14,11 +14,11 @@ The Canonical Checker MCP server helps SEO professionals identify the single, cl
 
 
 ## Available Tools (3)
+- **audit_url_consistency**: Checks for structural discrepancies in a group of URLs
 - **identify_canonical_candidate**: ).
 
 Determines the best candidate for the canonical tag
 - **detect_parameter_drift**: Identifies which query parameters are causing URL divergence
-- **audit_url_consistency**: Checks for structural discrepancies in a group of URLs
 
 
 ## 💬 Prompt Examples

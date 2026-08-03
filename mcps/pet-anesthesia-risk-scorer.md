@@ -14,9 +14,9 @@ The Pet Anesthesia Risk Scorer provides clinical decision support by estimating 
 
 
 ## Available Tools (3)
+- **summarize_medical_severity**: Aggregates medical conditions into a simplified impact tier
 - **calculate_asa_class**: Estimates the ASA physical status classification for a pet
 - **evaluate_body_condition_risk**: Analyzes airway and cardiovascular risks based on weight and BCS
-- **summarize_medical_severity**: Aggregates medical conditions into a simplified impact tier
 
 
 ## 💬 Prompt Examples

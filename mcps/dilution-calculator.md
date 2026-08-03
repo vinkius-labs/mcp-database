@@ -14,10 +14,10 @@ The Dilution Calculator is a specialized simulation engine designed for founders
 
 
 ## Available Tools (4)
+- **simulate_option_pool_expansion**: Calculates effective dilution from ESOP resizing
 - **calculate_round_dilution**: Simulates a new investment round
 - **calculate_anti_dilution_impact**: Evaluates Broad-Based Weighted Average anti-dilution impact
 - **get_cap_table_snapshot**: Provides a clear view of the current ownership structure
-- **simulate_option_pool_expansion**: Calculates effective dilution from ESOP resizing
 
 
 ## 💬 Prompt Examples

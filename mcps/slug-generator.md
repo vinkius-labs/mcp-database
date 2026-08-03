@@ -14,11 +14,11 @@ Slug Generator is an automated utility designed to transform arbitrary text stri
 
 
 ## Available Tools (3)
-- **list_active_stopwords**: Retrieves the current inventory of active stopwords
 - **analyze_text_impact**: Analyzes text to estimate the impact of the slugging process
 - **generate_slug**: Returns the generated slug.
 
 Converts a raw string into a sanitized, SEO-friendly slug
+- **list_active_stopwords**: Retrieves the current inventory of active stopwords
 
 
 ## 💬 Prompt Examples

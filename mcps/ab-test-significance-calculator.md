@@ -14,9 +14,9 @@ This MCP server provides a complete statistical engine for analyzing A/B test re
 
 
 ## Available Tools (4)
-- **analyze_conversion_rab_difference**: Analyze the difference in conversion rates between two groups
-- **calculate_statistical_power**: Calculate the current power of an ongoing test
 - **calculate_required_sample_size**: Calculate the required sample size per group for a new A/B test
+- **calculate_statistical_power**: Calculate the current power of an ongoing test
+- **analyze_conversion_rab_difference**: Analyze the difference in conversion rates between two groups
 - **check_peeking_risk**: Check the risk of peeking at A/B test results
 
 

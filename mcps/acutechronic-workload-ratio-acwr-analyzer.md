@@ -15,9 +15,9 @@ The ACWR Analyzer connects AI agents to sports science metrics, allowing for pre
 
 ## Available Tools (4)
 - **calculate_acwr_series**: Calculates a series of ACWR values
-- **detect_load_trend**: Detects training load trend
 - **evaluate_risk_tier**: Evaluates injury risk tier
 - **generate_training_prescription**: Generates coaching advice
+- **detect_load_trend**: Detects training load trend
 
 
 ## 💬 Prompt Examples

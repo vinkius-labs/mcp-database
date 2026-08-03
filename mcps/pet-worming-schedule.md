@@ -14,8 +14,8 @@ This MCP server provides a specialized calculator for canine and feline dewormin
 
 
 ## Available Tools (3)
-- **milestones_tool**: Get upcoming deworming milestones
 - **deworming_interval_tool**: Calculate the recommended deworming interval
+- **milestones_tool**: Get upcoming deworming milestones
 - **product_suitability_tool**: Check if a deworming product is suitable
 
 

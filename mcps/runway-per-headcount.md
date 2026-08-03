@@ -14,9 +14,9 @@ The Runway Per Headcount MCP server provides powerful financial forecasting tool
 
 
 ## Available Tools (3)
-- **simulate_hiring_plan**: Projects the runway length and zero-cash date based on a specific hiring schedule
 - **calculate_current_burn**: Determines the current monthly expenditure before any new hires are considered
 - **compare_hiring_scenarios**: Compares two different hiring strategies to visualize the trade-off between growth and survival
+- **simulate_hiring_plan**: Projects the runway length and zero-cash date based on a specific hiring schedule
 
 
 ## 💬 Prompt Examples

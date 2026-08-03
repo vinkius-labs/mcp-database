@@ -10,13 +10,13 @@
 Automatically generates text, JSON-LD schema, and HTML breadcrumbs from URL paths.
 
 ## Description
-The Breadcrumb Generator MCP server automates the creation of structural breadcrumbs in plain text, JSON-LD schema, and HTML formats. By providing a structured URL path, you can instantly obtain SEO-ready markup for search engines or accessible navigation elements for web interfaces. Use `generate_text_breadcrumb` for simple visual trails, `generate_json_ld_schema` to enhance your site's visibility in search results via Schema.org, and `generate_html_breadcrumb` to produce semantic HTML5 `` elements with relative links.
+The Breadcrumb Generator MCP server automates the creation of structural breadcrumbs in plain text, JSON-LD schema, and HTML formats. By providing a structured URL path, you can instantly obtain SEO-ready markup for search engines or accessible navigation elements for web interfaces. Use `generate_text_breadcrumb` for simple visual trails, `generate_json_ld_schema` to enhance your site's visibility in search results via Schema.org, and `generate_html_breadcrumb` to produce semantic HTML5 `<nav>` elements with relative links.
 
 
 ## Available Tools (3)
+- **generate_text_breadcrumb**: Generates a plain text breadcrumb
 - **generate_html_breadcrumb**: Generates an HTML breadcrumb snippet
 - **generate_json_ld_schema**: Generates a JSON-LD schema for BreadcrumbList
-- **generate_text_breadcrumb**: Generates a plain text breadcrumb
 
 
 ## 💬 Prompt Examples

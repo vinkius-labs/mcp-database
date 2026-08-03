@@ -14,11 +14,11 @@ The Recycling Value Estimator connects AI agents to real-world environmental and
 
 
 ## Available Tools (3)
-- **estimate_emissions_singularity**: Estimate CO2e savings for a specific material weight
-- **calculate_revenue_by_material**: Calculate estimated revenue for a specific material weight
 - **get_batch_recycling_summary**: g., {"aluminum": 50, "paper": 120}) and returns an aggregated summary.
 
 Get a summary of total revenue and emissions for multiple materials
+- **calculate_revenue_by_material**: Calculate estimated revenue for a specific material weight
+- **estimate_emissions_singularity**: Estimate CO2e savings for a specific material weight
 
 
 ## 💬 Prompt Examples

@@ -14,12 +14,12 @@ This MCP server provides specialized tools for logistics managers to analyze rec
 
 
 ## Available Tools (4)
+- **predict_vehicle_delay**: Estimates the average delay a vehicle might experience due to dock congestion
 - **detect_capacity_bottleneck**: Analyzes the system to identify which specific factor is limiting throughput
 - **calculate_dock_utilization**: Determines how much of the available dock time is being used by the current vehicle volume
 - **optimize_dock_allocation**: g., 0.85).
 
 Recommends the ideal number of docks needed to handle current volume at a target efficiency level
-- **predict_vehicle_delay**: Estimates the average delay a vehicle might experience due to dock congestion
 
 
 ## 💬 Prompt Examples

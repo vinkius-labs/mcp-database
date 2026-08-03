@@ -7,7 +7,7 @@
 
 **Category:** [finance](../categories/finance.md)
 
-Calculate pre-money startup valuations using Berkus, Scorecard, Risk Factor Sum, and DCF methods.
+Calculate pre-money startup valuations using Berkus, Scorecard, Risk Factor Sum</strong>, and DCF methods.
 
 ## Description
 This MCP server provides a specialized engine for determining early-stage startup valuations. It implements four distinct methodologies: the Berkus method for milestone-based de-risking, the Scorecard method for regional comparability, the Risk Factor Summation method for qualitative risk assessment, and a simplified Discounted Cash Flow (DCF) model for future cash flow projections. Use `berkus_valuation` to value milestones, `scorecard_valuation` to adjust based on market factors, `risk_summation_valuation` to account for twelve specific risk categories, and `dcf_valuation` to estimate present value from projected flows.

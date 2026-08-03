@@ -14,10 +14,10 @@ The Runway Calculator is a financial forecasting tool designed for businesses to
 
 
 ## Available Tools (4)
+- **summarize_expenses**: Aggregates individual expense items into a single monthly burn rate figure
+- **calculate_runway_metrics**: Determines the remaining operational duration and the date when funds will be exhausted
 - **calculate_sustainable_burn**: Calculates the maximum allowable monthly spending to reach a specific survival target
 - **calculate_funding_required**: Identifies how much new capital must be raised to achieve a specific runway goal
-- **calculate_runway_metrics**: Determines the remaining operational duration and the date when funds will be exhausted
-- **summarize_expenses**: Aggregates individual expense items into a single monthly burn rate figure
 
 
 ## 💬 Prompt Examples

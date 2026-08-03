@@ -14,9 +14,9 @@ The Pet Medication Dose Calculator provides an advisory tool for calculating est
 
 
 ## Available Tools (3)
+- **calculate_medication_dose**: Calculate estimated dose for a pet
 - **get_dosage_range**: Get dosage range for a medication
 - **list_available_medications**: List all available medications
-- **calculate_medication_dose**: Calculate estimated dose for a pet
 
 
 ## 💬 Prompt Examples
