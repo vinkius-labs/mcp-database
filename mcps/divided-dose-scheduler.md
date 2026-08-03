@@ -14,9 +14,9 @@ The Divided Dose Scheduler is an essential tool for healthcare planning, allowin
 
 
 ## Available Tools (3)
-- **calculate_interval_duration**: Determines the number of hours between each medication administration
 - **generate_dose_sequence**: Generates a complete chronological list of all doses
 - **validate_schedule_parameters**: Evaluates the safety and feasibility of dosing parameters
+- **calculate_interval_duration**: Determines the number of hours between each medication administration
 
 
 ## 💬 Prompt Examples

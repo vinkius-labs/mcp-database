@@ -14,10 +14,10 @@ The Carbon Footprint Calculator provides a detailed breakdown of your environmen
 
 
 ## Available Tools (4)
-- **calculate_travel_emissions**: Calculate carbon emissions from transportation
-- **generate_footprint_report**: Generate a regional carbon footprint report
 - **calculate_home_emissions**: Calculate carbon emissions from home energy usage
 - **calculate_lifestyle_emissions**: Calculate carbon emissions from lifestyle choices
+- **calculate_travel_emissions**: Calculate carbon emissions from transportation
+- **generate_footprint_report**: Generate a regional carbon footprint report
 
 
 ## 💬 Prompt Examples

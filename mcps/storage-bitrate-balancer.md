@@ -14,9 +14,9 @@ The Storage Bitrate Balancer connects AI agents to precise video encoding calcul
 
 
 ## Available Tools (3)
-- **calculate_bitrate_ceiling**: Determines the highest possible average bitrate allowed for a video without exceeding a specific byte limit
 - **estimate_total_footprint**: Estimates the total expected size of a video file, including overhead
 - **verify_compliance**: Checks if a specific video configuration will successfully stay within a platform's size limit
+- **calculate_bitrate_ceiling**: Determines the highest possible average bitrate allowed for a video without exceeding a specific byte limit
 
 
 ## 💬 Prompt Examples

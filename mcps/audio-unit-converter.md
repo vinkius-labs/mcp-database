@@ -14,10 +14,10 @@ The Audio Unit Converter provides precise mathematical conversions for audio eng
 
 
 ## Available Tools (4)
-- **convert_amplitude_magnitude**: Convert between decibels and linear amplitude
 - **convert_pitch_identity**: Convert between frequency, note name, and MIDI number
 - **calculate_tempo_rhythm**: Calculate rhythmic subdivision durations based on BPM
 - **convert_sample_timing**: Convert between duration in ms and sample count
+- **convert_amplitude_magnitude**: Convert between decibels and linear amplitude
 
 
 ## 💬 Prompt Examples

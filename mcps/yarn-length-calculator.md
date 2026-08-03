@@ -14,9 +14,9 @@ A precision estimator for knitters and crocheters. This MCP server allows you to
 
 
 ## Available Tools (3)
-- **calculate_multi_color_project_summary**: Calculate summary for multiple segments
 - **calculate_single_segment_usage**: Calculate usage for one segment
 - **get_yarn_weight_catalog**: Get the yarn weight catalog
+- **calculate_multi_color_project_summary**: Calculate summary for multiple segments
 
 
 ## 💬 Prompt Examples

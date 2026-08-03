@@ -14,8 +14,8 @@ This MCP server provides precise calculations for adjusting the mineral content 
 
 
 ## Available Tools (3)
-- **check_ppm_safety_status**: Evaluate if a requested target concentration falls within standard ranges
 - **batch_capacity_calculator**: Calculate how many full batches can be produced with remaining concentrate
+- **check_ppm_safety_status**: Evaluate if a requested target concentration falls within standard ranges
 - **calculate_injection_volume**: Determine the exact amount of liquid concentrate required for a specific batch
 
 

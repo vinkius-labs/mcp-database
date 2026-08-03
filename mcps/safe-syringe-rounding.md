@@ -14,13 +14,13 @@ This MCP server provides critical tools for medical professionals to prevent ove
 
 
 ## Available Tools (3)
-- **calculate_safe_volume**: Never rounds up for safety.
-
-Determines the exact volume that should be drawn up to avoid exceeding the prescribed dose
+- **check_volume_capacity**: Verifies if a specific volume can physically be contained within the chosen syringe
 - **get_drawing_instruction**: 6ml mark" using the rounded volume.
 
 Generates a human-readable instruction for medical staff
-- **check_volume_capacity**: Verifies if a specific volume can physically be contained within the chosen syringe
+- **calculate_safe_volume**: Never rounds up for safety.
+
+Determines the exact volume that should be drawn up to avoid exceeding the prescribed dose
 
 
 ## 💬 Prompt Examples

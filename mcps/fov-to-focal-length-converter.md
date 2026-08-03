@@ -14,9 +14,9 @@ This MCP server provides precise mathematical conversions between horizontal Fie
 
 
 ## Available Tools (3)
+- **get_sensor_equivalence**: Calculate crop factor and Full Frame equivalent focal length
 - **calculate_focal_length_from_fov**: Determine the required lens focal length for a target FOV
 - **calculate_fov_from_focal_length**: Predict the horizontal field of view for a specific lens
-- **get_sensor_equivalence**: Calculate crop factor and Full Frame equivalent focal length
 
 
 ## 💬 Prompt Examples

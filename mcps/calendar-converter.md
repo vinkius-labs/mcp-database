@@ -22,15 +22,15 @@ This server is ideal for applications requiring historical accuracy, cultural aw
 
 
 ## Available Tools (3)
+- **get_calendar_context**: Do NOT use for timestamp conversion.
+
+Get metadata for a specific year in a calendar system
 - **convert_to_unix**: Do NOT use if you already have the timestamp.
 
 Convert a date in a specific calendar to Unix timestamp
 - **expand_unix**: Do NOT use for simple date formatting.
 
 Expand a Unix timestamp into multiple calendars
-- **get_calendar_context**: Do NOT use for timestamp conversion.
-
-Get metadata for a specific year in a calendar system
 
 
 ## 💬 Prompt Examples

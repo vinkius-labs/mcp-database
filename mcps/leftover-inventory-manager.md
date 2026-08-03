@@ -14,9 +14,9 @@ The Leftover Inventory Manager MCP server connects AI agents to your material cu
 
 
 ## Available Tools (3)
-- **filter_incoming_waste**: Filters incoming waste pieces and adds them to inventory
 - **get_inventory_composition**: Summarizes the current inventory state
 - **match_requirement_to_offcut**: Finds the best offcut for a given requirement
+- **filter_incoming_waste**: Filters incoming waste pieces and adds them to inventory
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides essential geometric calculations for woodworkers and fa
 
 
 ## Available Tools (3)
+- **calculate_diagonal_span**: Determines the straight-line distance between opposite corners of a rectangular frame section
 - **calculate_miter_offset**: Calculates the difference in length between the "long point" and the "short point" of an angled cut
 - **calculate_mitered_edge_length**: Calculates the actual length of the saw cut face when cutting through material at an angle
-- **calculate_diagonal_span**: Determines the straight-line distance between opposite corners of a rectangular frame section
 
 
 ## 💬 Prompt Examples

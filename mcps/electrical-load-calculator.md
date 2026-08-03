@@ -14,12 +14,12 @@ The Electrical Load Calculator MCP server provides specialized tools for electri
 
 
 ## Available Tools (4)
-- **lookup_appliance_impact**: Retrieves the power requirements for specific fixed appliances
 - **evaluate_circuit_safety**: Checks if a circuit is safe for use and recommends hardware
-- **calculate_receptacle_load**: Estimates the total VA load for a group of wall outlets
 - **get_lighting_load**: g., Kitchen, Bedroom).
 
 Calculates the electrical demand for lighting based on room dimensions and type
+- **calculate_receptacle_load**: Estimates the total VA load for a group of wall outlets
+- **lookup_appliance_impact**: Retrieves the power requirements for specific fixed appliances
 
 
 ## 💬 Prompt Examples

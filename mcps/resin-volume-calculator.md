@@ -14,9 +14,9 @@ The Resin Volume Calculator is a precision utility designed for epoxy and resin 
 
 
 ## Available Tools (3)
-- **calculate_material_mass**: Convert volume to mass
 - **calculate_mix_quantities**: Calculate resin part amounts
 - **calculate_mould_volume**: Calculate the volume of a mould
+- **calculate_material_mass**: Convert volume to mass
 
 
 ## 💬 Prompt Examples

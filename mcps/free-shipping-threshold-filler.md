@@ -14,9 +14,9 @@ This MCP server provides a precise way to reach your free shipping threshold wit
 
 
 ## Available Tools (4)
+- **calculate_shipping_gap**: Calculate the deficit to reach free shipping
 - **determine_optimal_strategy**: Compare single and pair strategies
 - **identify_best_item_pair**: Find the best two items to reach free shipping
-- **calculate_shipping_gap**: Calculate the deficit to reach free shipping
 - **identify_best_single_filler**: Find the best single item to reach free shipping
 
 

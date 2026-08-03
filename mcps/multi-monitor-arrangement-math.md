@@ -14,9 +14,9 @@ This MCP server provides precise calculations for unified 2D coordinate planes i
 
 
 ## Available Tools (3)
+- **get_monitor_area_percentage**: Calculate the percentage of total area occupied by each monitor
 - **get_bounding_box**: Calculate the bounding box of a multi-monitor setup
 - **get_coordinate_map**: Get the top-left coordinates for each monitor
-- **get_monitor_area_percentage**: Calculate the percentage of total area occupied by each monitor
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ The Lumber Cut List Generator is an optimization engine designed to minimize was
 
 
 ## Available Tools (4)
-- **optimize_lumber_cuts**: Calculate optimal distribution of linear parts across standard 2x4 lengths
-- **validate_material_list**: Verify that the provided parts list is physically possible
 - **optimize_plywood_cuts**: Calculate optimal placement of 2D parts onto plywood sheets
 - **summarize_project_inventory**: Aggregate results from both lumber and plywood optimizations into a shopping list
+- **validate_material_list**: Verify that the provided parts list is physically possible
+- **optimize_lumber_cuts**: Calculate optimal distribution of linear parts across standard 2x4 lengths
 
 
 ## 💬 Prompt Examples

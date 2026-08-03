@@ -14,8 +14,8 @@ The Tiered Discount Simulator is a logic engine designed to help shoppers maximi
 
 
 ## Available Tools (3)
-- **check_discount**: Check the current discount applied to a cart total
 - **calculate_upsell_impact**: Calculate the financial impact of adding a filler item
+- **check_discount**: Check the current discount applied to a cart total
 - **find_optimal_strategy**: Find the most cost-effective filler amount to reach a higher tier
 
 

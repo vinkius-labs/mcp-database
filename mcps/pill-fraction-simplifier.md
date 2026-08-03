@@ -14,8 +14,8 @@ The Pill Fraction Simplifier is a utility designed to determine the safest and m
 
 
 ## Available Tools (3)
-- **evaluate_split_safety**: Determines if a medication split is too difficult or dangerous to enough attempt physically
 - **find_complex_split**: Provides instructions for more difficult but still identifiable fractional splits
+- **evaluate_split_safety**: Determines if a medication split is too difficult or dangerous to enough attempt physically
 - **find_standard_split**: 5 or 0.25.
 
 Identifies if a requested dose corresponds to a simple, widely recognized fraction that is easy to cut
