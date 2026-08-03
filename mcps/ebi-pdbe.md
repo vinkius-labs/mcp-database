@@ -40,12 +40,15 @@ Your AI agent becomes a structural biology research assistant with direct access
 
 
 ## Available Tools (16)
-- **get_assemblies**: Returns assembly IDs, composition (which entities and how many copies), preferred assembly flag, and form description. Critical for understanding whether a protein functions as a monomer, dimer, tetramer, or higher-order complex.
-
-Get biological assembly information (quaternary structure)
 - **get_binding_sites**: Critical for drug discovery, molecular docking, and understanding protein-ligand interactions.
 
 Get ligand binding site residues and interactions
+- **get_secondary_structure**: Shows the count of helices and strands per chain, organized by molecular entity. Essential for understanding protein fold topology.
+
+Get helix, sheet, and coil assignments per residue
+- **get_assemblies**: Returns assembly IDs, composition (which entities and how many copies), preferred assembly flag, and form description. Critical for understanding whether a protein functions as a monomer, dimer, tetramer, or higher-order complex.
+
+Get biological assembly information (quaternary structure)
 - **get_cofactors**: Cofactors like heme, NAD+, FAD, and metal ions are essential for enzyme catalysis and protein function.
 
 Get cofactor and prosthetic group annotations
@@ -67,16 +70,13 @@ Get engineered mutations vs. wild-type sequence
 Get associated journal publications and PubMed IDs
 - **get_quality_scores**: The first thing a structural biologist checks when evaluating a structure for reliability.
 
-Get global quality metrics for a structure
+Get globalThis quality metrics for a structure
 - **get_related_entries**: Useful for discovering alternative conformations, mutants, or complexes of the same protein that have been structurally characterized.
 
 Get related PDB entries citing the same publications
 - **get_residue_listing**: Shows residue names, numbers (both PDB and author numbering), organized by entity and chain. Returns a sample of the first 20 residues per chain for efficiency.
 
 Get full residue-level inventory per chain
-- **get_secondary_structure**: Shows the count of helices and strands per chain, organized by molecular entity. Essential for understanding protein fold topology.
-
-Get helix, sheet, and coil assignments per residue
 - **get_summary**: Use a 4-character PDB ID such as 1cbs, 4hhb, 6lu7.
 
 Get PDB entry summary with title, authors, and resolution

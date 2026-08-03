@@ -34,7 +34,9 @@ Connect your **Hashnode** account to any AI agent to streamline your technical w
 
 
 ## Available Tools (16)
-- **update_post**: Modify an existing post
+- **delete_draft**: The author or publication admins can delete.
+
+Soft-delete a draft
 - **create_draft**: Requires Pro plan. If publicationId is omitted, auto-resolves from your publications.
 
 Create a draft post without publishing
@@ -44,12 +46,9 @@ Get a presigned URL for uploading an image
 - **create_post**: If publicationId is omitted, auto-resolves from your publications (1 blog = auto-select; 2+ = error listing options). Use get_my_publications to find your ID.
 
 Publish a new post to a publication
-- **delete_draft**: The author or publication admins can delete.
-
-Soft-delete a draft
 - **get_feed**: Use after cursor for pagination.
 
-Get the global Hashnode feed
+Get the globalThis Hashnode feed
 - **get_me**: Get the currently authenticated Hashnode user
 - **get_my_publications**: Use this to find your Publication ID before creating posts or drafts.
 
@@ -60,6 +59,7 @@ List all publications owned by the authenticated user
 - **get_tag**: g., javascript, graphql).
 
 Get details about a Hashnode tag
+- **get_user**: Get details about a specific Hashnode user
 - **publish_draft**: The draft is soft-deleted after publishing.
 
 Publish an existing draft as a post
@@ -69,7 +69,7 @@ Submit a draft for editor review
 - **update_draft**: All content fields are optional.
 
 Update an existing draft
-- **get_user**: Get details about a specific Hashnode user
+- **update_post**: Modify an existing post
 
 
 ## 💬 Prompt Examples

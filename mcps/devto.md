@@ -36,17 +36,18 @@ No more switching between your editor and the browser to share your knowledge. Y
 
 
 ## Available Tools (38)
-- **create_article**: Requires authentication.
-
-Publish a new article on DEV.to
-- **create_listing**: Create a new listing
 - **create_page**: Create a custom page (Admin only)
-- **create_reaction**: Create a reaction to an article or comment
 - **delete_page**: Delete a custom page (Admin only)
-- **get_article_by_id**: Get an article by ID
+- **get_comment_by_id**: Get a comment by ID
+- **get_organization_articles**: Get articles published by an organization
+- **get_organization**: Get organization details by username
+- **get_organization_users**: Get users belonging to an organization
+- **get_page**: Get details of a custom page (Admin only)
+- **get_pages**: List all custom pages (Admin only)
+- **suspend_user**: Suspend a user (Admin only)
+- **create_reaction**: Create a reaction to an article or comment
 - **get_article_by_path**: Get an article by username and slug
 - **get_articles**: Get published articles
-- **get_comment_by_id**: Get a comment by ID
 - **get_comments**: Get comments for an article or podcast episode
 - **get_followed_tags**: Get tags followed by the authenticated user
 - **get_latest_articles**: Get latest articles
@@ -58,24 +59,23 @@ Publish a new article on DEV.to
 - **get_my_articles**: Get all articles for the authenticated user
 - **get_my_published_articles**: Get published articles for the authenticated user
 - **get_my_unpublished_articles**: Get unpublished articles (drafts) for the authenticated user
-- **get_organization_articles**: Get articles published by an organization
-- **get_organization**: Get organization details by username
-- **get_organization_users**: Get users belonging to an organization
-- **get_page**: Get details of a custom page (Admin only)
-- **get_pages**: List all custom pages (Admin only)
 - **get_podcast_episodes**: Get podcast episodes
 - **get_profile_image**: Get profile image URL for a user or organization
 - **get_reading_list**: Get the reading list for the authenticated user
 - **get_tags**: Get a list of tags used on the platform
 - **get_user**: Get a user by ID or username
 - **get_videos**: Get articles that include a video
-- **suspend_user**: Suspend a user (Admin only)
 - **toggle_reaction**: Toggle a reaction to an article or comment
 - **unpublish_article**: Unpublish an article (Admin/Moderator only)
 - **unpublish_user**: Unpublish all articles and comments for a user (Admin only)
 - **update_article**: Update an existing article
 - **update_listing**: Update an existing listing
 - **update_page**: Update a custom page (Admin only)
+- **create_article**: Requires authentication.
+
+Publish a new article on DEV.to
+- **create_listing**: Create a new listing
+- **get_article_by_id**: Get an article by ID
 
 
 ## 💬 Prompt Examples

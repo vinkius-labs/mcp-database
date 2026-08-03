@@ -19,15 +19,15 @@ Using real user data in staging environments or passing production PII to an LLM
 
 
 ## Available Tools (3)
-- **generate_fake_addresses**: Provide a count and optionally a numeric seed to guarantee deterministic reproducible outputs.
-
-Deterministically generates random addresses based on a seed
 - **generate_fake_names**: Provide a count and optionally a numeric seed to guarantee deterministic reproducible outputs.
 
 Deterministically generates random names and identities based on a seed
 - **generate_fake_text**: Provide the number of paragraphs and optionally a numeric seed to guarantee deterministic reproducible outputs.
 
 Deterministically generates random lorem-ipsum paragraphs based on a seed
+- **generate_fake_addresses**: Provide a count and optionally a numeric seed to guarantee deterministic reproducible outputs.
+
+Deterministically generates random addresses based on a seed
 
 
 ## 💬 Prompt Examples

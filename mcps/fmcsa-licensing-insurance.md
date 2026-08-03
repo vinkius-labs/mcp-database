@@ -33,16 +33,16 @@ Connect your AI agent to the **Federal Motor Carrier Safety Administration (FMCS
 
 
 ## Available Tools (9)
+- **get_carrier_dockets**: Retrieve associated docket numbers
 - **get_carrier_authority**: Retrieve operating authority status
 - **get_carrier_basics**: S. DOT number.
 
 Retrieve Carrier BASIC (Safety) measures
+- **get_carrier_cargo**: Retrieve types of cargo carried
 - **get_carrier_by_docket**: Retrieve carrier details by Docket Number
 - **get_carrier_by_dot**: S. DOT number.
 
 Retrieve carrier details by U.S. DOT number
-- **get_carrier_cargo**: Retrieve types of cargo carried
-- **get_carrier_dockets**: Retrieve associated docket numbers
 - **get_carrier_oos**: Retrieve Out-of-Service (OOS) data
 - **get_carrier_operation_class**: Retrieve operation classifications
 - **search_carriers_by_name**: Supports pagination.

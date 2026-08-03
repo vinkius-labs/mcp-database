@@ -34,7 +34,6 @@ Connect your **Wing Assistant** account to any AI agent to automate your delegat
 
 
 ## Available Tools (6)
-- **get_task_status**: Get current status of a unit of work
 - **list_assistants**: List all active virtual assistants
 - **list_tasks**: List all tasks assigned to assistants
 - **update_task**: Update an existing task
@@ -42,6 +41,7 @@ Connect your **Wing Assistant** account to any AI agent to automate your delegat
 
 Create a new task for an assistant
 - **get_assistant**: Get details of a specific assistant
+- **get_task_status**: Get current status of a unit of work
 
 
 ## 💬 Prompt Examples

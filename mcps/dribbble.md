@@ -40,7 +40,6 @@ Create a new shot
 - **delete_attachment**: Requires upload scope.
 
 Delete an attachment
-- **delete_project**: Delete a project
 - **delete_shot**: Requires upload scope.
 
 Delete a shot
@@ -51,13 +50,14 @@ Show a job
 - **get_user**: Get the authenticated user
 - **list_projects**: List projects
 - **list_user_shots**: List the authenticated user’s shots
-- **create_attachment**: Requires upload scope and Pro/Team membership.
-
-Create an attachment for a shot
 - **create_job**: Note: Requires a special token. Contact Dribbble for partnership.
 
 Create a job
 - **create_project**: Create a new project
+- **delete_project**: Delete a project
+- **create_attachment**: Requires upload scope and Pro/Team membership.
+
+Create an attachment for a shot
 - **update_job**: Note: Requires a special token.
 
 Update a job

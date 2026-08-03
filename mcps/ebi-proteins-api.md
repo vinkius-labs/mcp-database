@@ -39,6 +39,18 @@ Your AI agent becomes a molecular biology research assistant with direct access 
 
 
 ## Available Tools (16)
+- **get_proteomics**: Shows which peptides have been experimentally detected and whether they are unique to this protein. Essential for validating protein expression.
+
+Get mass-spectrometry proteomics data for a protein
+- **get_antigen**: These are peptide regions used for antibody generation, indicating experimentally validated protein expression targets. Useful for immunology and antibody-based research.
+
+Get antigen sequences from Human Protein Atlas
+- **get_coordinates**: Returns Ensembl gene, transcript, and translation IDs along with chromosome, start/end positions, and strand information. Essential for bridging protein annotations with genomic data.
+
+Get genome coordinate mappings for a protein
+- **get_protein_features**: Features include domains, binding sites, active sites, signal peptides, transmembrane regions, disulfide bonds, glycosylation sites, and more. Each feature has start/end positions and evidence counts.
+
+Get sequence feature annotations for a protein
 - **get_genecentric**: Shows canonical protein and related protein count for each gene. Use with a UniProt Proteome ID (e.g. UP000005640).
 
 Get the gene-centric view of a proteome
@@ -51,9 +63,6 @@ Retrieve a full protein entry by UniProt accession
 - **get_proteome**: Returns taxonomy, protein count, gene count, reference status, and component information. Use IDs like UP000005640 for human proteome or UP000000589 for mouse.
 
 Get a specific proteome by UniProt Proteome ID
-- **get_proteomics**: Shows which peptides have been experimentally detected and whether they are unique to this protein. Essential for validating protein expression.
-
-Get mass-spectrometry proteomics data for a protein
 - **get_proteomics_ptm**: Provides residue-level PTM positions with evidence counts.
 
 Get post-translational modifications from mass-spec data
@@ -78,15 +87,6 @@ Search taxonomy by organism name
 - **search_variation**: g. large_scale_study, uniprot, mixed), consequence type (e.g. missense, stop gained), and wild-type residue. Use this to find clinically relevant variants across the proteome.
 
 Search variants by consequence type, source, or residue
-- **get_antigen**: These are peptide regions used for antibody generation, indicating experimentally validated protein expression targets. Useful for immunology and antibody-based research.
-
-Get antigen sequences from Human Protein Atlas
-- **get_coordinates**: Returns Ensembl gene, transcript, and translation IDs along with chromosome, start/end positions, and strand information. Essential for bridging protein annotations with genomic data.
-
-Get genome coordinate mappings for a protein
-- **get_protein_features**: Features include domains, binding sites, active sites, signal peptides, transmembrane regions, disulfide bonds, glycosylation sites, and more. Each feature has start/end positions and evidence counts.
-
-Get sequence feature annotations for a protein
 
 
 ## 💬 Prompt Examples

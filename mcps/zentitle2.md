@@ -34,17 +34,17 @@ Connect your **Zentitle2** licensing account to any AI agent and simplify how yo
 
 
 ## Available Tools (11)
-- **get_customer_details**: Get details of a specific customer
-- **get_entitlement_details**: Get details of a specific entitlement
-- **get_me**: Get management account information
-- **list_activation_codes**: List activation codes
-- **list_customers**: List Zentitle2 customers
-- **list_entitlements**: List licensing entitlements
-- **list_products**: List licensed products
 - **create_activation_code**: Generate a new activation code
 - **create_customer**: Create a new customer in Zentitle2
 - **create_entitlement**: Provision a new entitlement
 - **get_activation_code_details**: Get details of an activation code
+- **get_entitlement_details**: Get details of a specific entitlement
+- **get_me**: Get management account information
+- **get_customer_details**: Get details of a specific customer
+- **list_activation_codes**: List activation codes
+- **list_customers**: List Zentitle2 customers
+- **list_entitlements**: List licensing entitlements
+- **list_products**: List licensed products
 
 
 ## 💬 Prompt Examples
