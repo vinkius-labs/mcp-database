@@ -36,40 +36,37 @@ Your agent can search the catalog using natural language, browse by category or 
 - **Growth Engineers** — monitor category trends and new MCPs to inform strategic positioning.
 
 
-## Available Tools (11)
+## Available Tools (10)
+- **get_credentials_schema**: Returns credential_schema — the field keys, their types and which are required — plus credentials_configured (whether they are already set). Construct the set_credentials payload from these keys. Secret values are never returned.
+
+Get the credential fields an MCP requires. Call this to learn the exact schema you must fill before calling set_credentials
+- **get_listing_prompts**: Response: [{prompt, response}, ...].
+
+Get prompt examples for a specific MCP
+- **get_listing**: For the current user, installed/authenticated/ready are booleans; for an anonymous request they are null.
+
+Get full details for a specific MCP including tools, FAQs, related MCPs, and category MCPs
+- **get_manifest**: Returns each MCP with a tools[] array of {name, description, inputSchema} (JSON Schema).
+
+Fetch the callable tools and their input schemas for one or more of the user MCPs. Call before invoking a downstream MCP tool so you know its exact arguments
+- **search_catalog**: Authenticated responses include installed, authenticated and ready for the current user; anonymous responses return null for all three fields. Response: {results: [...], has_more, page}.
+
+Search or browse the Vinkius MCP catalog. This is the single catalog discovery tool
+- **set_credentials**: Handles both owned and installed MCPs.
+
+Save the credentials an MCP needs so its tools become usable. Call get_credentials_schema first to learn the required fields
 - **active_mcps**: Narrow with filter (active|inactive), search (by name) or page.
 
 Enumerate the MCPs the user already has. Call this first to obtain the MCP ids needed by get_manifest, credentials_status and set_credentials
 - **credentials_status**: Returns credentials_configured (boolean) and oauth_status when applicable. For the field keys to fill, use get_credentials_schema instead.
 
 Check whether an MCP credentials are already set (and, for OAuth MCPs, whether it is connected). Use to decide if set_credentials is still needed
-- **discover_mcps**: Each result carries requires_auth so you can skip ones needing credentials.
-
-Search the Vinkius catalog to find NEW MCPs to add. Use when the user needs a capability not returned by active_mcps. Set onlyNoAuth when they want one usable with no setup
-- **get_credentials_schema**: Returns credential_schema — the field keys, their types and which are required — plus credentials_configured (whether they are already set). Construct the set_credentials payload from these keys. Secret values are never returned.
-
-Get the credential fields an MCP requires. Call this to learn the exact schema you must fill before calling set_credentials
-- **search_catalog**: Each card includes tools count, debugger grade, and auth requirements. Response: {results: [...], has_more, page}.
-
-Search the Vinkius MCP catalog using natural language or keywords
-- **get_listing_prompts**: Response: [{prompt, response}, ...].
-
-Get prompt examples for a specific MCP
-- **get_manifest**: Returns each MCP with a tools[] array of {name, description, inputSchema} (JSON Schema).
-
-Fetch the callable tools and their input schemas for one or more of the user MCPs. Call before invoking a downstream MCP tool so you know its exact arguments
-- **set_credentials**: Handles both owned and installed MCPs.
-
-Save the credentials an MCP needs so its tools become usable. Call get_credentials_schema first to learn the required fields
 - **get_listing_faqs**: Response: [{id, question, answer}, ...].
 
 Get FAQs for a specific MCP
 - **get_random_listings**: Results rotate every 60 seconds. Response: {data: [...]}.
 
 Get random MCPs from the catalog for discovery
-- **get_listing**: Response: {listing: {...}, faqs: [...], category_listings: [...], related_listings: [...]}.
-
-Get full details for a specific MCP including tools, FAQs, related MCPs, and category MCPs
 
 
 ## 💬 Prompt Examples
