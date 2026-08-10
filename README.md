@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,932 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **5,940 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -11,7 +11,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 ## Browse by Category
 
 - [productivity](categories/productivity.md) (917 servers)
-- [developer-tools](categories/developer-tools.md) (612 servers)
+- [developer-tools](categories/developer-tools.md) (614 servers)
 - [industry-titans](categories/industry-titans.md) (587 servers)
 - [data-analytics](categories/data-analytics.md) (329 servers)
 - [marketing-automation](categories/marketing-automation.md) (240 servers)
@@ -26,8 +26,8 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
 - [ai-frontier](categories/ai-frontier.md) (99 servers)
 - [human-resources](categories/human-resources.md) (63 servers)
+- [utilities](categories/utilities.md) (61 servers)
 - [sales-automation](categories/sales-automation.md) (60 servers)
-- [utilities](categories/utilities.md) (60 servers)
 - [fort-knox](categories/fort-knox.md) (58 servers)
 - [artificial-intelligence](categories/artificial-intelligence.md) (56 servers)
 - [data-management](categories/data-management.md) (56 servers)
@@ -40,8 +40,8 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [real-estate](categories/real-estate.md) (43 servers)
 - [construction](categories/construction.md) (40 servers)
 - [document-management](categories/document-management.md) (40 servers)
+- [security](categories/security.md) (40 servers)
 - [collaboration](categories/collaboration.md) (39 servers)
-- [security](categories/security.md) (38 servers)
 - [databases](categories/databases.md) (36 servers)
 - [talk-to-me](categories/talk-to-me.md) (36 servers)
 - [brain-trust](categories/brain-trust.md) (32 servers)
@@ -57,8 +57,8 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [superpower](categories/superpower.md) (23 servers)
 - [automation](categories/automation.md) (21 servers)
 - [analytics](categories/analytics.md) (20 servers)
+- [mathematics](categories/mathematics.md) (20 servers)
 - [business-intelligence](categories/business-intelligence.md) (19 servers)
-- [mathematics](categories/mathematics.md) (19 servers)
 - [gaming](categories/gaming.md) (18 servers)
 - [lifestyle](categories/lifestyle.md) (18 servers)
 - [audio-music](categories/audio-music.md) (16 servers)
@@ -79,12 +79,12 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [business-operations](categories/business-operations.md) (8 servers)
 - [devops-cicd](categories/devops-cicd.md) (8 servers)
 - [travel-hospitality](categories/travel-hospitality.md) (8 servers)
+- [data-processing](categories/data-processing.md) (7 servers)
+- [development](categories/development.md) (7 servers)
 - [devops](categories/devops.md) (7 servers)
 - [fitness](categories/fitness.md) (7 servers)
 - [business](categories/business.md) (6 servers)
 - [crm-sales](categories/crm-sales.md) (6 servers)
-- [data-processing](categories/data-processing.md) (6 servers)
-- [development](categories/development.md) (6 servers)
 - [observability](categories/observability.md) (6 servers)
 - [other](categories/other.md) (6 servers)
 - [project-management](categories/project-management.md) (6 servers)

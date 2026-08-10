@@ -260,6 +260,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Hookdeck](../mcps/hookdeck.md) | Manage and monitor webhooks with Hookdeck — list connections, create sources, and control event routing directly from your AI agent. |
 | [Hookdeck (Webhook Gateway)](../mcps/hookdeck-webhook-gateway.md) | Manage your webhook infrastructure via Hookdeck — monitor connections, route events, and control sources directly from any AI agent. |
 | [HTML DOM Depth Calculator](../mcps/html-dom-depth-calculator.md) | Calculate the exact maximum nesting depth and structural integrity of HTML strings. |
+| [HTML DOM Path Extractor](../mcps/html-dom-path-extractor.md) | Generate precise CSS selectors and XPath strings from raw HTML strings. |
 | [HTML DOM Path Generator](../mcps/html-dom-path-generator.md) | Generate robust, deterministic CSS selectors from HTML snippets to prevent brittle web scraping. |
 | [HTML DOM Path Generator](../mcps/html-dom-path-generator-alternative.md) | Generate robust, deterministic CSS selectors from HTML snippets to prevent brittle web scraping. |
 | [HTMLCSSToImage](../mcps/htmlcsstoimage.md) | Generate high-quality images and PDFs from HTML/CSS or URLs directly from your AI agent. |
@@ -580,6 +581,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [UserStack User-Agent Lookup](../mcps/userstack-user-agent-lookup.md) | Universal User-Agent intelligence — detect devices, browsers, and OS via AI. |
 | [UUID & ULID Generator](../mcps/uuid-ulid-generator.md) | Generate and validate UUID (v1, v3, v4, v5, v7) and ULID identifiers with timestamp extraction. |
 | [UUID Generator API](../mcps/uuid-generator-api.md) | Generate unique identifiers — audit UUIDs and versions via AI. |
+| [UUID Validator and Version Checker](../mcps/uuid-validator-and-version-checker.md) | Validate UUID structure and extract version numbers instantly. |
 | [Vercel AI SDK Stream Parser](../mcps/vercel-ai-sdk-stream-parser.md) | Deterministic parser for Vercel AI SDK 3.0 Data Stream protocol chunks. |
 | [Voyage AI (AI Embeddings API)](../mcps/voyage-ai-ai-embeddings-api.md) | Generate high-quality text, multimodal, and contextualized embeddings, plus high-precision reranking for RAG workflows. |
 | [Vultr](../mcps/vultr.md) | Manage Vultr cloud infrastructure, bare metal instances, and backups directly from your AI agent. |

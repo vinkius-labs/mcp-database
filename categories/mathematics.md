@@ -13,6 +13,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Graph Analysis Toolkit](../mcps/graph-analysis-toolkit.md) | Deep structural analysis of directed and undirected graphs, providing metrics on connectivity, topology, and node importance. |
 | [Loot Table Balancer](../mcps/loot-table-balancer.md) | Precision utility for calculating, normalizing, and auditing loot table probabilities and economic expected values. |
 | [Matrix 4x4 Transforms](../mcps/matrix-4x4-transforms.md) | Create, compose, and apply 3D transformation matrices with rotation representations and coordinate transformations for graphics and simulation applications. |
+| [Matrix Math and Linear Algebra Solver](../mcps/matrix-math-and-linear-algebra-solver.md) | Perform precise matrix operations like addition, multiplication, and inversion. |
 | [Mesh Geometry Calculator](../mcps/mesh-geometry-calculator.md) | Perform advanced geometric and topological analysis on 3D triangle meshes. |
 | [Minimum Spanning Tree Calculator](../mcps/minimum-spanning-tree-calculator.md) | Calculate Minimum and Maximum Spanning Trees using Kruskal's and Prim's algorithms. |
 | [Network Flow Calculator](../mcps/network-flow-calculator.md) | Solve maximum flow, minimum cut, and bipartite matching problems using Edmonds-Karp. |
