@@ -492,6 +492,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Scaleway](../mcps/scaleway.md) | Manage Scaleway cloud infrastructure — list, create, and control virtual instances directly from your AI agent. |
 | [ScraperAPI](../mcps/scraperapi.md) | Equip your AI agent with proxy rotation and headless browsers to extract HTML, Google SERPs, and Amazon data at scale. |
 | [Scrollscan](../mcps/scrollscan.md) | Explore the Scroll L2 blockchain — check account balances, track transactions (normal, internal, ERC20/721/1155), and inspect contract ABIs directly from your AI agent. |
+| [Semantic Versioning Checker](../mcps/semantic-versioning-checker.md) | A high-precision engine for validating and comparing Semantic Versioning 2.0.0 strings. |
 | [Semaphore](../mcps/semaphore.md) | Automate CI/CD workflows, manage pipelines, and monitor build jobs directly from your AI agent. |
 | [SemVer Calculator](../mcps/semver-calculator.md) | Validate, compare, and manipulate Semantic Versioning 2.0.0 strings. |
 | [SerpApi](../mcps/serpapi.md) | Equip your AI agent with real-time web search capabilities across Google, Bing, Baidu, Yahoo, and DuckDuckGo. |
@@ -602,6 +603,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Writer (AI Enterprise LLM)](../mcps/writer-ai-enterprise-llm.md) | Access Writer's enterprise-grade LLMs and Knowledge Graph capabilities to generate content, manage files, and query RAG-based data. |
 | [XML Tag Structure Compliance Checker](../mcps/xml-tag-structure-compliance-checker.md) | Validate XML tag integrity, nesting hierarchy, and tag-to-text density. |
 | [Xray (Test Management)](../mcps/xray-test-management.md) | Manage test cases, executions, and plans on Xray — the leading quality assurance platform for Jira. |
+| [YAML Structural Validator & Flattener](../mcps/yaml-structural-validator-flattener.md) | High-precision YAML validation and dot-notation flattening. |
 | [Z.AI](../mcps/zai.md) | Access the full Z.AI platform from any AI agent — chat completions with GLM models, image and video generation, audio transcription, OCR, web search, and agent tools. |
 | [Zeabur (PaaS Deployment)](../mcps/zeabur-paas-deployment.md) | Deploy services, manage containers, and send transactional emails via Zeabur PaaS directly from your AI agent. |
 | [ZEGO / 即构科技](../mcps/zego.md) | Leading global RTC and IM platform — manage rooms, users, and media streams via AI. |

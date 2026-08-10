@@ -33,6 +33,9 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Frequency & Note Converter](../mcps/frequency-note-converter.md) | Convert between musical frequencies and notes with precision. |
 | [Geographic Distance Calculator](../mcps/geographic-distance-calculator.md) | Calculate precise distances, bearings, and waypoints using Haversine, Vincenty, and Euclidean models. |
 | [Groove Quantize Calculator](../mcps/groove-quantize-calculator.md) | Calculate precise millisecond-based quantization grids, swing offsets, and latency compensation for DAWs. |
+| [IP Address & Subnet Calculator](../mcps/ip-address-subnet-calculator.md) | Perform precise bitwise IPv4 and IPv6 subnet calculations and membership checks. |
+| [ISBN-10 and ISBN-13 Validator](../mcps/isbn-10-and-isbn-13-validator.md) | Verify the mathematical integrity of ISBN-10 and ISBN-13 identifiers and identify registration groups. |
+| [ISO 8601 Duration Parser](../mcps/iso-8601-duration-parser.md) | Extracts time components and calculates total seconds from ISO 8601 duration strings. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser-alternative.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [Markdown to Plain Text Extractor](../mcps/markdown-to-plain-text-extractor.md) | Strips Markdown syntax and measures content reduction. |

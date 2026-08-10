@@ -5,6 +5,7 @@ Explore the open database of **data-utilities** Model Context Protocol (MCP) ser
 | Tool Name | Description |
 |-----------|-------------|
 | [Elemental Profile Calculator](../mcps/elemental-profile-calculator.md) | Discover your astrological elemental balance by analyzing Sun, Moon, and Ascendant signs. |
+| [Phonetic Algorithm Matcher](../mcps/phonetic-algorithm-matcher.md) | Generate precise phonetic codes and compare string similarity using Soundex, Metaphone, and Double Metaphone. |
 
 
 ---

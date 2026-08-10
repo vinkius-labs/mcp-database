@@ -12,6 +12,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Crypto Hash Engine](../mcps/crypto-hash-engine.md) | Sign API requests and Webhooks deterministically. Instantly generate mathematical HMAC, SHA-256, or MD5 hashes without AI hallucinations. |
 | [Crypto Random String](../mcps/crypto-random-string.md) | Generate cryptographically secure random strings for API keys, tokens, and invite codes using Node.js crypto.randomBytes(). |
 | [Cryptographic Action Attestor](../mcps/cryptographic-action-attestor.md) | Creates a tamper-proof audit trail of every agent action using SHA-256 hashing. |
+| [Email Header Metadata Extractor](../mcps/email-header-metadata-extractor.md) | Extracts precise headers, hop counts, and domain information from raw RFC 822 email source text. |
 | [Env Variable Config Validator](../mcps/env-variable-config-validator.md) | Validate .env files for structural integrity, type accuracy, and security hygiene. |
 | [Environment Variable Usage Auditor](../mcps/environment-variable-usage-auditor.md) | Cross-references environment variable usage against declaration files to find missing or unused keys. |
 | [File Path Normalizer and Traversal Checker](../mcps/file-path-normalizer-and-traversal-checker.md) | Resolves relative path segments and detects directory traversal risks. |
@@ -19,6 +20,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Geetest](../mcps/geetest.md) | The ultimate anti-bot CAPTCHA API — validate users, detect bots, and protect your forms with Geetest v4. |
 | [GraphQL Query Complexity Analyzer](../mcps/graphql-query-complexity-analyzer.md) | Analyze GraphQL queries for structural complexity, depth, and token count. |
 | [Hash Checksum Calculator](../mcps/hash-checksum-calculator.md) | Generate, compare, and validate cryptographic and non-cryptographic hashes like MD5, SHA-256, and CRC32. |
+| [Hash Generator and Verifier](../mcps/hash-generator-and-verifier.md) | Generate and verify cryptographic hashes like MD5, SHA-1, SHA-256, and SHA-512. |
 | [JWT Decoder & Validator](../mcps/jwt-decoder-validator.md) | Decode JWT segments and verify cryptographic signatures and temporal claims. |
 | [License Compatibility Checker](../mcps/license-compatibility-checker.md) | Audit software licenses and check compatibility between dependencies. |
 | [Multi-Agent Communication Protocol Validator](../mcps/multi-agent-communication-protocol-validator.md) | Analyze and verify the structural integrity of autonomous agent communication logs. |

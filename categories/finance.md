@@ -100,6 +100,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Hedge Bet Calculator](../mcps/hedge-bet-calculator.md) | Calculate the exact hedge wager needed to guarantee profit and eliminate risk. |
 | [Hedge Ratio Calculator](../mcps/hedge-ratio-calculator.md) | Calculate commodity futures contracts and quantify price volatility exposure. |
 | [Home Affordability Calculator](../mcps/home-affordability-calculator.md) | Estimate your maximum home purchase price and verify mortgage DTI compliance. |
+| [IBAN and BIC Checksum Validator](../mcps/iban-and-bic-checksum-validator.md) | Verify the mathematical integrity of IBANs and the structural validity of BIC/SWIFT codes. |
 | [ICMS Calculator](../mcps/icms-calculator.md) | Calculate Brazilian ICMS taxes, including tax substitution (ST), tax differentials (DIFAL), and tax-inclusive base calculations. |
 | [IFRS Depreciation Calculator](../mcps/ifrs-depreciation-calculator.md) | Calculate asset depreciation schedules using IFRS/IAS 16 standards (Straight-Line, Units of Production, and SYD). |
 | [Implied Probability Extractor](../mcps/implied-probability-extractor.md) | Convert American odds to true implied probability by removing the bookmaker margin. |
