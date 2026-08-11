@@ -466,6 +466,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Hypertrophy Rep Range Calculator](../mcps/hypertrophy-rep-range-calculator.md) | Track and optimize muscle hypertrophy by monitoring training volume, RIR targets, and effective stimulus. |
 | [iCal Calendar Parser](../mcps/ical-calendar-parser.md) | Parse exported .ics calendar files from Google Calendar, Apple Calendar, or Outlook local. Let your AI find free slots, count meetings, and manage your schedule. |
 | [iCalendar RRULE Iterator](../mcps/icalendar-rrule-iterator.md) | Expand iCalendar recurrence rules into exact, deterministic event sequences. |
+| [iCalendar Syntax Validator](../mcps/icalendar-syntax-validator.md) | Validates iCalendar (ICS) structural integrity, component boundaries, and date-time syntax. |
 | [Ideanote](../mcps/ideanote.md) | Manage ideas, missions, and innovation workspaces via Ideanote API. |
 | [idloom](../mcps/idloom.md) | Manage events, attendees, and invoices via idloom.events API. |
 | [IgnitePOST](../mcps/ignitepost.md) | Manage hand-written note orders and outreach campaigns via IgnitePOST API. |
@@ -871,6 +872,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [vCard Contacts Parser](../mcps/vcard-contacts-parser-extended.md) | Instantly convert massive iPhone and Android `.vcf` contact exports into structured JSON. Turn your AI into a hyper-intelligent local address book. |
 | [vCard Contacts Parser](../mcps/vcard-contacts-parser.md) | Instantly convert massive iPhone and Android `.vcf` contact exports into structured JSON. Turn your AI into a hyper-intelligent local address book. |
 | [vCard Contacts Parser](../mcps/vcard-contacts-parser-alternative.md) | Instantly convert massive iPhone and Android `.vcf` contact exports into structured JSON. Turn your AI into a hyper-intelligent local address book. |
+| [vCard Syntax Validator](../mcps/vcard-syntax-validator.md) | Deterministic parser and validator for vCard (VCF) strings. |
 | [Venue](../mcps/venue.md) | Manage event venues with booking calendars, client contracts, and catering coordination for wedding and conference spaces. |
 | [Verbit](../mcps/verbit.md) | Automate professional transcription and captioning via Verbit — upload media, track job progress, and retrieve transcripts in multiple formats directly from your AI agent. |
 | [Vesting Schedule Calculator](../mcps/vesting-schedule-calculator.md) | Generate precise monthly equity vesting timelines, identify cliff milestones, and project liquidity values. |

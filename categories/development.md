@@ -5,6 +5,7 @@ Explore the open database of **development** Model Context Protocol (MCP) server
 | Tool Name | Description |
 |-----------|-------------|
 | [CSS Class Usage & Collision Analyzer](../mcps/css-class-usage-collision-analyzer.md) | Identify orphaned, missing, or colliding CSS classes in your project. |
+| [CSS Selector Specificity Calculator](../mcps/css-selector-specificity-calculator.md) | Calculate exact CSS specificity scores and compare selector priority. |
 | [JSON Schema Validator](../mcps/json-schema-validator.md) | Validate JSON documents and lint schemas for structural integrity. |
 | [Python AST Syntax Checker](../mcps/python-ast-syntax-checker.md) | Analyze Python code for syntax errors and count definitions. |
 | [React 19 useActionState Validator](../mcps/react-19-useactionstate-validator.md) | Validates React 19 `useActionState` hook implementations in JSX snippets. |

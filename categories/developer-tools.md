@@ -334,6 +334,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [LoadNinja (Real-Browser Load Testing)](../mcps/loadninja-real-browser-load-testing.md) | Manage performance tests via LoadNinja — trigger load scenarios, monitor metrics, and audit virtual user (VU) limits. |
 | [Localazy (AI Translation & Localization API)](../mcps/localazy-ai-translation-localization-api.md) | Manage software localization and translations via Localazy — list projects, import content, manage source keys, and handle glossary terms directly from your AI agent. |
 | [LocationIQ (Geocoding & Maps)](../mcps/locationiq-geocoding-maps.md) | Build with location data via LocationIQ — geocode addresses, calculate routes, and perform reverse lookups. |
+| [Log Line Key-Value Parser](../mcps/log-line-key-value-parser.md) | Extracts structured data and character offsets from unstructured log lines. |
 | [Lorem Picsum](../mcps/lorem-picsum.md) | Generate placeholder images and retrieve image metadata directly from your AI agent using the Lorem Picsum API. |
 | [Luhn CC Validator](../mcps/luhn-cc-validator.md) | Stop LLMs from sending fake credit card numbers to payment gateways. Validates the mathematical Luhn check instantly. |
 | [Mabl (AI-Powered Test Automation)](../mcps/mabl-ai-powered-test-automation.md) | Manage E2E testing via Mabl — trigger test plans, monitor execution results, and perform AI-driven failure analysis. |
@@ -526,6 +527,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Stoplight](../mcps/stoplight.md) | Connect your AI to Stoplight. Design, document, and manage your API lifecycle, exploring workspaces and schemas effortlessly. |
 | [Storyblok](../mcps/storyblok.md) | Connect your AI to Storyblok. Manage content spaces, craft data stories, and orchestrate headless CMS elements effortlessly. |
 | [Strapi](../mcps/strapi.md) | Connect your AI to Strapi. Fully orchestrate your headless CMS — create entries, manage content types, and upload media assets naturally. |
+| [String Padding and Alignment Formatter](../mcps/string-padding-and-alignment-formatter.md) | Precise text formatting with deterministic padding, alignment, and ellipsis truncation. |
 | [Suivision (Sui Blockchain Explorer API)](../mcps/suivision-sui-blockchain-explorer-api.md) | Explore the Sui blockchain — query transactions, inspect accounts, analyze coins, and track on-chain objects directly from your AI agent. |
 | [SuperTokens](../mcps/supertokens.md) | Manage authentication, users, sessions, and roles via SuperTokens Core directly from your AI agent. |
 | [Svix](../mcps/svix.md) | Manage your webhook infrastructure via Svix — orchestrate applications, configure endpoints, and monitor message delivery directly from any AI agent. |
@@ -549,6 +551,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [ThirdWeb](../mcps/thirdweb.md) | Integrate Web3 capabilities into your AI agent — manage wallets, authenticate users, and interact with smart contracts across multiple blockchains. |
 | [Tingyun / 听云](../mcps/tingyun.md) | Leading APM and observability platform — manage applications, alerts, and performance metrics via AI. |
 | [Togai (Usage Metering & Pricing)](../mcps/togai-usage-metering-pricing.md) | Automate usage-based billing and metering — ingest events, manage customers, and track entitlements directly from your AI agent. |
+| [TOML Parser & Validator](../mcps/toml-parser-validator.md) | Strict TOML parsing and schema validation with precise error reporting. |
 | [TOML Parser Engine](../mcps/toml-parser-engine.md) | Convert TOML config files to JSON and back. Essential for Rust (Cargo.toml), Python (pyproject.toml), and Cloudflare (wrangler.toml). |
 | [TOML Strict Config Parser](../mcps/toml-strict-config-parser.md) | A deterministic, dependency-free parser that transforms TOML strings into structured JSON objects. |
 | [Tool Argument Completeness Checker](../mcps/tool-argument-completeness-checker.md) | Extracts and validates tool arguments from LLM action text. |
@@ -566,6 +569,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [TzKT (Tezos Indexer & Explorer API)](../mcps/tzkt-tezos-indexer-explorer-api.md) | Access real-time Tezos blockchain data — explore accounts, smart contracts, and transaction history directly from your AI agent. |
 | [Umbraco](../mcps/umbraco.md) | Automate content workflows via Umbraco — retrieve delivery content, execute backoffice CRUD, and browse media assets directly from your AI agent. |
 | [Umbrellar](../mcps/umbrellar.md) | Cloud hosting, domains, and managed IT services. |
+| [Unicode Codepoint Converter](../mcps/unicode-codepoint-converter.md) | Converts characters to Unicode codepoints and vice versa. |
 | [UnifyApps](../mcps/unifyapps.md) | Automate integration workflows via UnifyApps — monitor execution logs, check active flows, audit connections, and list configured AI agents autonomously. |
 | [UniOne](../mcps/unione.md) | Send transactional and bulk emails with high deliverability, detailed analytics, and infrastructure that handles millions of messages. |
 | [Unkey API Management](../mcps/unkey-api-management.md) | Manage and verify your user API keys via Unkey — create, revoke, and track usage directly from any AI agent. |
