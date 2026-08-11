@@ -14,9 +14,9 @@ This MCP server provides precise tools for analyzing CSS specificity. Use `calcu
 
 
 ## Available Tools (3)
+- **validate_selector_syntax**: Checks if a selector string adheres to standard CSS selector syntax without calculating the score
 - **calculate_specificity**: Determines the exact specificity triplet for a single CSS selector
 - **compare_specificity**: Compares two different selectors to determine which one has higher priority
-- **validate_selector_syntax**: Checks if a selector string adheres to standard CSS selector syntax without calculating the score
 
 
 ## 💬 Prompt Examples

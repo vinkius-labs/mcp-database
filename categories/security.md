@@ -24,6 +24,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [HMAC Signature Validator](../mcps/hmac-signature-validator.md) | High-precision HMAC signature generation and verification with constant-time comparison. |
 | [JWT Decoder & Validator](../mcps/jwt-decoder-validator.md) | Decode JWT segments and verify cryptographic signatures and temporal claims. |
 | [License Compatibility Checker](../mcps/license-compatibility-checker.md) | Audit software licenses and check compatibility between dependencies. |
+| [Luhn Credit Card Validator](../mcps/luhn-credit-card-validator.md) | Validates credit card numbers using the Luhn algorithm and identifies the issuer. |
 | [MAC Address Validator and Vendor Extractor](../mcps/mac-address-validator-and-vendor-extractor.md) | Validate MAC address formats and identify hardware vendors via OUI. |
 | [Multi-Agent Communication Protocol Validator](../mcps/multi-agent-communication-protocol-validator.md) | Analyze and verify the structural integrity of autonomous agent communication logs. |
 | [Multi-Agent Communication Protocol Validator](../mcps/multi-agent-communication-protocol-validator-alternative.md) | Analyze and verify the structural integrity of autonomous agent communication logs. |

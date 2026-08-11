@@ -56,6 +56,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Blockscout](../mcps/blockscout.md) | Explore Ethereum-based blockchains directly from your AI agent. Query addresses, tokens, transactions, and smart contracts via Blockscout's open-source API. |
 | [Bobascan (Boba L2 Network Block Explorer API)](../mcps/bobascan-boba-l2-network-block-explorer-api.md) | Access Boba L2 Network blockchain data — query balances, transaction histories, and smart contract ABIs directly from your AI agent. |
 | [Bollinger Bands Engine](../mcps/bollinger-bands-engine.md) | Calculate moving standard deviation and Bollinger Bands for financial time-series deterministically. |
+| [Boolean Truth Table Generator](../mcps/boolean-truth-table-generator.md) | Generates exact truth tables and analyzes logical properties of boolean expressions. |
 | [BOSSDesk](../mcps/bossdesk.md) | Manage your IT services via BOSSDesk — track tickets, assets, and users directly from any AI agent. |
 | [Bright Data](../mcps/bright-data.md) | Access the world's #1 web data platform — bypass anti-bot protections, extract structured search engine data, and manage scraping browsers directly from your AI agent. |
 | [Browserless](../mcps/browserless.md) | Manage headless Chrome via Browserless — take screenshots, generate PDFs, and scrape web content directly from any AI agent. |
@@ -298,6 +299,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [JSON Schema Validator and Flattener](../mcps/json-schema-validator-and-flattener.md) | Strictly validate JSON against schemas and flatten nested structures using dot notation. |
 | [JSON-LD SEO Compiler](../mcps/json-ld-seo-compiler.md) | Compile 100% Google-compliant JSON-LD Schema blocks. Prevent AI hallucination of invalid SEO structured data. |
 | [JSONBin.io](../mcps/jsonbinio.md) | Store, manage, and retrieve JSON data effortlessly. Create bins, manage collections, and handle large datasets directly from your AI agent. |
+| [JSONPath Extractor](../mcps/jsonpath-extractor.md) | Extract specific values from JSON objects using precise JSONPath expressions. |
 | [Juhe Data / 聚合数据](../mcps/juhe-data.md) | China's leading API aggregator — access weather, ID verification, IP lookup, and news via AI. |
 | [JWT & Base64 Decoder](../mcps/jwt-base64-decoder.md) | Stop hallucinating Base64 translations. Instantly decode complex JWT tokens into readable headers and payloads with exact expiration mathematics. |
 | [JWT Claims Validator](../mcps/jwt-claims-validator.md) | Validate JWT structure and expiration claims without signature verification. |
@@ -327,6 +329,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [LicenseCheck API](../mcps/licensecheck-api.md) | Search software licenses — audit permissions and conditions via AI. |
 | [Lineascan](../mcps/lineascan.md) | Explore the Linea blockchain — check ETH balances, track ERC-20/NFT transfers, and inspect smart contract source code directly from your AI. |
 | [LLM Fine-Tuning Dataset Validator](../mcps/llm-fine-tuning-dataset-validator.md) | Verify structural integrity, token distribution, and training costs of JSONL datasets. |
+| [LLM JSON Repair Utility](../mcps/llm-json-repair-utility.md) | Fixes malformed, truncated, or dirty JSON strings produced by LLMs. |
 | [LLM Output JSON Extractor](../mcps/llm-output-json-extractor.md) | Isolates valid JSON objects from mixed markdown/text LLM outputs using deterministic bracket-matching. |
 | [LLM ROUGE & BLEU Evaluator](../mcps/llm-rouge-bleu-evaluator.md) | Evaluate AI text generation quality. Compute exact mathematical BLEU and ROUGE scores comparing generated text to reference documents. |
 | [LLM Token Counter](../mcps/llm-token-counter.md) | Calculate exact and estimated token counts for GPT-4, GPT-4o, Claude, and Llama models. |
@@ -469,6 +472,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Regex Extractor Engine](../mcps/regex-extractor-engine.md) | Stop LLM hallucination when extracting data. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction without missing a single match. |
 | [Regex High-Perf Parser](../mcps/regex-high-perf-parser.md) | Stop LLM hallucination when extracting entities. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction. |
 | [Regex High-Perf Parser](../mcps/regex-high-perf-parser-alternative.md) | Stop LLM hallucination when extracting entities. Run pure Regex across massive text blocks and guarantee 100% accurate array extraction. |
+| [Regex Optimizer and Validator](../mcps/regex-optimizer-and-validator.md) | Validate regex syntax and detect catastrophic backtracking risks. |
 | [Regex Safety & Performance Analyzer](../mcps/regex-safety-performance-analyzer.md) | Detects catastrophic backtracking and ReDoS vulnerabilities in regular expressions using AST traversal. |
 | [Regex Tester Batch](../mcps/regex-tester-batch.md) | High-performance batch regex testing and syntax validation. |
 | [Regex Tester Explainer](../mcps/regex-tester-explainer.md) | Validate, test, and deconstruct regular expressions across multiple flavors. |
@@ -546,6 +550,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [TestLink](../mcps/testlink.md) | Navigate your self-hosted TestLink instance to inspect test plans, suites, cases, and builds natively via your AI agent. |
 | [TestMonitor](../mcps/testmonitor.md) | List QA projects, extract test runs, read user assignments, and fetch tracked issues strictly from your AI chat. |
 | [TestRail](../mcps/testrail.md) | Browse TestRail suites, parse manual test specs, and monitor active runs seamlessly native within your conversational AI workflow. |
+| [Text Encoding Detector and Normalizer](../mcps/text-encoding-detector-and-normalizer.md) | High-precision byte-level encoding detection and UTF-8 normalization. |
 | [TF-IDF Vectorizer Engine](../mcps/tf-idf-vectorizer-engine.md) | Exact Term Frequency-Inverse Document Frequency scores. Stop LLMs from guessing keyword relevance across massive corpuses. |
 | [The Graph (Web3 Indexing)](../mcps/the-graph-web3-indexing.md) | Index and query blockchain data across EVM and Solana chains. Access transfers, holders, swaps, and custom subgraphs directly. |
 | [ThirdWeb](../mcps/thirdweb.md) | Integrate Web3 capabilities into your AI agent — manage wallets, authenticate users, and interact with smart contracts across multiple blockchains. |
