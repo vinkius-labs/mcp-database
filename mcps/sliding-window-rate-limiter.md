@@ -7,16 +7,16 @@
 
 **Category:** [rate-limiting](../categories/rate-limiting.md)
 
-Enforce precise API rate limits using a continuous sliding window mechanism.
+Enforces exact API rate limits across parallel agents to prevent 429 errors.
 
 ## Description
-The Sliding Window Rate Limiter MCP server provides a high-precision mechanism for managing request quotas in multi-agent environments. Unlike fixed-window algorithms that reset at arbitrary intervals, this server uses a continuous sliding window to track active requests within a moving timeframe. By using `validate_request`, agents can determine if an incoming call is permitted, calculate remaining quota, and identify the exact `time_to_wait_ms` before capacity becomes available. The `summarize_usage` tool offers real-time visibility into usage percentages, while `prune_history` ensures system efficiency by removing expired timestamps from your history tracking.
+This MCP server provides a high-precision coordination engine to manage API quotas. It prevents 429 Too Many Requests errors in parallel agent workflows (like CrewAI or LangChain) by implementing fixed and sliding window algorithms. Using deterministic Unix timestamps, it calculates the exact `sleep_time_ms` required before the next request is permitted. Use `check_rate_limit` to validate requests, `get_provider_quotas` to view configurations, and `get_usage_summary` to monitor consumption across models.
 
 
 ## Available Tools (3)
-- **prune_history**: Maintains system efficiency by removing timestamps that have aged out of the sliding window
-- **validate_request**: Determines if an incoming request is permitted and quantifies the current state of the quota
-- **summarize_usage**: Provides a high-level analysis of how much of the allocated capacity is currently being utilized
+- **check_rate_limit**: Determines if a specific request can proceed under the current rate limit configuration
+- **get_provider_quotas**: Retrieves the currently configured rate limit definitions for a specific provider
+- **get_usage_summary**: Provides an overview of current consumption across all models for a given provider
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Sliding Window Rate Limiter MCP server provides a high-precision mechanism f
 Here are some examples of how you can interact with the **Sliding Window Rate Limiter** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I have a list of timestamps from my last 5 requests: [1715600000000, 1715600005000, 1715600010000, 1715600015000, 1715600020000]. The current time is 1715600030000. My limit is 4 requests per 60000ms. Can I make another request?"
+> "Can I make another request to OpenAI GPT-4 right now?"
 
 **🤖 AI Agent:**
-> No, the request is not allowed. Your current active count within the window is 5, which exceeds your limit of 4 requests.
+> No, the current sliding window limit for GPT-4 has been reached. You must wait 450ms before the next request is permitted.
 
 ---
 
 **👤 You:**
-> "Check my current API usage. My window is 300000ms, max requests is 100, and I have these timestamps: [1715600000000, 1715600010000, 1715600020000]."
+> "What is the current usage status for the Anthropic provider?"
 
 **🤖 AI Agent:**
-> Your current usage is 3.0%. You are well below the limit of 100 requests.
+> The usage for Anthropic is currently at 45%, which is within the nominal range.
 
 ---
 
 **👤 You:**
-> "Clean up my request history for a 60 second window. Current time is 1715600120000 and history is [1715600000000, 1715600110000, 1715600115000]."
+> "Show me the rate limit configuration for OpenAI."
 
 **🤖 AI Agent:**
-> The cleaned history contains [1715600110000, 1715600115000]. The timestamp 1715600000000 was removed because it fell outside the window.
+> OpenAI has two configured tiers: GPT-3.5 uses a fixed window of 3600000ms with a 1000 request limit, and GPT-4 uses a sliding window of 60000ms with a 100 request limit.
 
 
 ## ❓ FAQ
 
-**Q: How does the sliding window differ from a fixed window?**
-A fixed window resets at specific clock intervals (e.g., every hour), which can allow bursts of traffic at the boundary. A sliding window uses a continuous timeframe, ensuring that the number of requests is always measured against the most recent duration.
+**Q: How does this prevent 429 errors?**
+It uses `check_rate_limit` to determine if a request will exceed the quota. If the limit is reached, it provides the exact `sleep_time_ms` to wait, ensuring agents stay within the allowed window.
 
-**Q: Can I use `validate_request` to prevent API key exhaustion?**
-Yes. By tracking your request timestamps and using `validate_request`, you can proactively check if a new request will exceed your quota before actually making the call, saving both time and resources.
+**Q: What is the difference between fixed and sliding windows?**
+Fixed windows reset at static time blocks, while sliding windows use a moving period relative to the current timestamp for smoother enforcement.
 
-**Q: What is the purpose of `prune_history`?**
-`prune_history` removes timestamps that have moved past the sliding boundary into the expired zone, keeping your request history array small and efficient for subsequent calculations.
+**Q: Can I monitor my current usage?**
+Yes, you can use `get_usage_summary` to see the usage percentage and status for each model under a specific provider.
 
 
 ## Installation & Usage
