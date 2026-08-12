@@ -4,6 +4,7 @@ Explore the open database of **validation** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Output Format Contract Checker](../mcps/output-format-contract-checker.md) | Enforces strict data integrity and schema conformity between LLM pipeline stages. |
 | [WebSocket Event Schema Validator](../mcps/websocket-event-schema-validator.md) | Ensures structural consistency of WebSocket event payloads against a deterministic schema registry. |
 
 

@@ -12,6 +12,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [AddSearch](../mcps/addsearch.md) | Equip your AI agent with AddSearch to query your indexed site content, push new documents, and retrieve search analytics instantly. |
 | [AdGuard Home](../mcps/adguard-home.md) | Manage your AdGuard Home instance — control protection, DNS settings, and filtering rules directly from any AI agent. |
 | [Agent Error Recovery Rate Calculator](../mcps/agent-error-recovery-rate-calculator.md) | Analyze execution logs to calculate error recovery rates and identify failure patterns. |
+| [Agent Role Conflict Detector](../mcps/agent-role-conflict-detector.md) | Detects overlapping responsibilities and role conflicts in multi-agent teams. |
 | [AgentOps (Agent Telemetry and Monitoring)](../mcps/agentops-agent-telemetry-and-monitoring.md) | Monitor and observe your AI agents with AgentOps — track traces, spans, and project metrics directly from your agent. |
 | [Agify](../mcps/agify.md) | Predict the age of a person based on their first name using the Agify.io API. |
 | [Agility CMS](../mcps/agility-cms.md) | Manage and query your Agility CMS content through AI — navigate sitemaps, search lists, and fetch layouts. |
@@ -81,6 +82,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Celoscan (Celo Network Explorer)](../mcps/celoscan-celo-network-explorer.md) | Access Celo network data via Celoscan — check account balances, track transactions, and inspect smart contracts directly from your AI agent. |
 | [Cerbos](../mcps/cerbos.md) | Decouple authorization logic from your application. Evaluate permissions, generate query plans, and manage access control via AI. |
 | [Cerbos (Access Control)](../mcps/cerbos-access-control.md) | Decouple authorization from your code. Manage policies, check permissions, and audit access control directly through your AI agent. |
+| [chain-composition-validator](../mcps/chain-composition-validator.md) | Validates structural and schema integrity for LangChain and LangGraph pipelines. |
 | [Chain-of-Thought Skeleton Verifier](../mcps/chain-of-thought-skeleton-verifier.md) | Validates the structural integrity and parsing patterns of ReAct and Chain-of-Thought agent outputs. |
 | [Chain-of-Thought Skeleton Verifier](../mcps/chain-of-thought-skeleton-verifier-alternative.md) | Validates the structural integrity and parsing patterns of ReAct and Chain-of-Thought agent outputs. |
 | [Circular Code Dependency Detector](../mcps/circular-code-dependency-detector.md) | Identify import cycles and measure module interdependence in JavaScript, TypeScript, and Python projects. |
@@ -236,6 +238,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Golioth](../mcps/golioth.md) | Manage IoT devices and projects via Golioth — list projects, register hardware, and control LightDB state directly from your AI agent. |
 | [Gotenberg](../mcps/gotenberg.md) | Convert URLs, HTML, and Markdown to PDF or screenshots, and manage PDF files with tools for merging, splitting, and metadata editing. |
 | [Gradient AI (LLM API & Finetuning)](../mcps/gradient-ai-llm-api-finetuning.md) | Access powerful LLMs, fine-tune models on your own data, and generate embeddings directly through your AI agent. |
+| [Graph State Merge Conflict Resolver](../mcps/graph-state-merge-conflict-resolver.md) | Resolves deterministic merge conflicts for parallel graph node state updates. |
 | [GraphHopper](../mcps/graphhopper.md) | Empower routing and geocoding via GraphHopper — calculate optimal routes, perform reverse geocoding, solve vehicle routing problems, and analyze reachability directly from any AI agent. |
 | [GraphQL Fragment Merger](../mcps/graphql-fragment-merger.md) | Deterministically inlines GraphQL fragments into a single query string. |
 | [Grepsr](../mcps/grepsr.md) | Automate web scraping via Grepsr — manage reports, trigger crawls, and retrieve data directly via AI. |
@@ -444,6 +447,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Privy](../mcps/privy.md) | Manage users and wallets via Privy — create users, search profiles, and manage embedded wallets directly from any AI agent. |
 | [Prompt Template Variable Injector Checker](../mcps/prompt-template-variable-injector-checker.md) | Validates prompt templates for correct variable syntax, undeclared variables, and potential injection vectors. |
 | [Prompt Template Variable Injector Checker](../mcps/prompt-template-variable-injector-checker-alternative.md) | Validates prompt templates for correct variable syntax, undeclared variables, and potential injection vectors. |
+| [Prompt Template Variable Resolver](../mcps/prompt-template-variable-resolver.md) | Validates and resolves variable placeholders in LLM templates. |
 | [PropelAuth (B2B Authentication)](../mcps/propelauth-b2b-authentication.md) | Manage B2B authentication, users, and organizations via PropelAuth — handle user provisioning, org management, and API keys directly from your AI agent. |
 | [Protobuf to JSON Schema Transpiler](../mcps/protobuf-to-json-schema-transpiler.md) | Convert Protocol Buffer (.proto) definitions into valid JSON Schema objects deterministically. |
 | [Prowlarr (Indexers)](../mcps/prowlarr-indexers.md) | Manage Prowlarr indexers—list, add, test, and monitor health status of your Usenet and Torrent indexers directly from your AI agent. |
@@ -560,6 +564,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [TOML Parser Engine](../mcps/toml-parser-engine.md) | Convert TOML config files to JSON and back. Essential for Rust (Cargo.toml), Python (pyproject.toml), and Cloudflare (wrangler.toml). |
 | [TOML Strict Config Parser](../mcps/toml-strict-config-parser.md) | A deterministic, dependency-free parser that transforms TOML strings into structured JSON objects. |
 | [Tool Argument Completeness Checker](../mcps/tool-argument-completeness-checker.md) | Extracts and validates tool arguments from LLM action text. |
+| [Tool Availability and Dependency Checker](../mcps/tool-availability-and-dependency-checker.md) | Audits tool environments for availability, version compatibility, and recursive dependency chains. |
+| [Tool Call Schema Validator](../mcps/tool-call-schema-validator.md) | High-precision validation of LLM tool call arguments against strict JSON Schema definitions. |
 | [Tool Description Semantic Density Scorer](../mcps/tool-description-semantic-density-scorer.md) | Analyze LLM tool descriptions for linguistic precision and structural integrity. |
 | [ToolJet](../mcps/tooljet.md) | Manage ToolJet databases and trigger workflows directly from your AI agent—query tables, insert data, and automate processes. |
 | [Transactional File Write Simulator](../mcps/transactional-file-write-simulator.md) | Simulates atomic file writes with rollback capabilities to prevent corruption. |

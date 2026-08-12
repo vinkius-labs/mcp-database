@@ -7,12 +7,14 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 | [Breadcrumb Generator](../mcps/breadcrumb-generator.md) | Automatically generates text, JSON-LD schema, and HTML breadcrumbs from URL paths. |
 | [Claude Computer Use Coordinate Normalizer](../mcps/claude-computer-use-coordinate-normalizer.md) | Transforms absolute pixel coordinates into the standardized 1024x768 viewport space for Anthropic's Computer Use API. |
 | [Conventional Commit Linter](../mcps/conventional-commit-linter.md) | Validate commit messages against Conventional Commates spec and determine SemVer impact. |
+| [Conversation Termination Evaluator](../mcps/conversation-termination-evaluator.md) | Prevents runaway agent loops by detecting repetition and stagnation. |
 | [Count Words for Agents](../mcps/context-integrity-prover.md) | Text analysis tool that counts words, characters, sentences, and paragraphs. Validates maximum length constraints so AI agents can generate text that strictly respects exact limits. |
 | [Cron Expression Parser](../mcps/cron-expression-parser.md) | Validate, interpret, and calculate execution schedules from cron expressions. |
 | [Crop Coord Maximizer](../mcps/crop-coord-maximizer.md) | Calculate pixel-perfect crop coordinates for any aspect ratio while preserving subject focus. |
 | [Git Atomic Operations Validator](../mcps/git-atomic-operations-validator.md) | Prevent destructive Git operations and enforce commit standards. |
 | [Git Branch Naming Linter](../mcps/git-branch-naming-linter.md) | Validates git branch names against specific naming conventions and structural patterns. |
 | [Hreflang Generator](../mcps/hreflang-generator.md) | Generate and validate SEO-compliant HTML hreflang tags and XML sitemap entries for multi-regional websites. |
+| [Human Approval Gate Manager](../mcps/human-approval-gate-manager.md) | Manages deterministic human-in-the-loop approval gates for agent actions. |
 | [JSONPath Query Executor](../mcps/jsonpath-query-executor.md) | Execute deterministic JSONPath queries against any JSON data. |
 | [Kid Table Auto-Detector](../mcps/kid-table-auto-detector.md) | Automatically isolates children and links their parents to adjacent tables for supervision. |
 | [Postgres Migration Dependency Resolver](../mcps/postgres-migration-dependency-resolver.md) | Resolves the execution order of SQL migrations using graph theory to prevent deployment errors. |

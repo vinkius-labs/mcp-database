@@ -4,6 +4,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Agent Capability Matcher](../mcps/agent-capability-matcher.md) | Aligns AI agents to tasks using weighted capability scoring. |
 | [Context Redundancy Deduplicator](../mcps/context-redundancy-deduplicator.md) | Identify and quantify exact N-gram overlaps across RAG documents to optimize context window usage. |
 | [Context Redundancy Deduplicator](../mcps/context-redundancy-deduplicator-alternative.md) | Identify and quantify exact N-gram overlaps across RAG documents to optimize context window usage. |
 | [Grain Direction Restrictor](../mcps/grain-direction-restrictor.md) | Enforce material grain orientation constraints for precise plywood cutting and bin packing. |

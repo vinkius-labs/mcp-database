@@ -4,7 +4,7 @@ Explore the open database of **rate-limiting** Model Context Protocol (MCP) serv
 
 | Tool Name | Description |
 |-----------|-------------|
-| [Sliding Window Rate Limiter](../mcps/sliding-window-rate-limiter.md) | Enforce precise API rate limits using a continuous sliding window mechanism. |
+| [Sliding Window Rate Limiter](../mcps/sliding-window-rate-limiter.md) | Enforces exact API rate limits across parallel agents to prevent 429 errors. |
 
 
 ---

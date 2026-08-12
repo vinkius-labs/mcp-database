@@ -41,6 +41,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser-alternative.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [Markdown to Plain Text Extractor](../mcps/markdown-to-plain-text-extractor.md) | Strips Markdown syntax and measures content reduction. |
 | [Markdown to Plain Text Extractor Alternative](../mcps/markdown-to-plain-text-extractor-alternative.md) | Strips Markdown syntax and measures content reduction. |
+| [Memory Context Window Pruner](../mcps/memory-context-window-pruner.md) | Manage LLM conversation history by applying deterministic pruning strategies to prevent context window overflow. |
 | [Menstrual Cycle Calculator](../mcps/menstrual-cycle-calculator.md) | Track menstrual cycle phases and identify fertile windows using historical period data. |
 | [Moon Phase Calculator](../mcps/moon-phase-calculator.md) | Calculate exact lunar phases, illumination percentages, and monthly schedules using astronomical algorithms. |
 | [Moving Truck Sizer](../mcps/moving-truck-sizer.md) | Calculate the exact truck size needed for your move based on home type and bulky items. |
@@ -55,6 +56,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Prime Factorization, GCD & LCM Calculator](../mcps/prime-factorization-gcd-lcm-calculator.md) | Compute exact prime factorizations and calculate GCD and LCM for sets of integers. |
 | [Rank Percentile Calculator](../mcps/rank-percentile-calculator.md) | Discover exactly what percentage of players you've surpassed in games like Valorant, League of Legends, and CS2. |
 | [Realistic Dog Age Calculator](../mcps/realistic-dog-age-calculator.md) | Convert dog years to human years using a size-dependent logarithmic aging model. |
+| [Retry with Backoff Executor](../mcps/retry-with-backoff-executor.md) | Deterministic retry logic with exponential backoff and jitter for LLM API calls. |
 | [Roman Numeral Engine](../mcps/roman-numeral-engine.md) | Convert between Arabic integers and Roman numerals with support for large-scale values using vinculum notation. |
 | [RPM & Speed Gear Calculator](../mcps/rpm-speed-gear-calculator.md) | Calculate engine RPM at specific vehicle speeds or predict speed from a given RPM. |
 | [Running Pace Converter](../mcps/running-pace-converter.md) | Convert running paces, predict race times using Riegel formula, and generate training zones. |
@@ -66,6 +68,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Time Difference Calculator](../mcps/time-difference-calculator.md) | Calculate exact duration between two clock times, handling midnight transitions. |
 | [Tire Size Converter](../mcps/tire-size-converter.md) | Calculate tire dimensions, speedometer error, and clearance risks. |
 | [Transport Carbon Calculator](../mcps/transport-carbon-calculator.md) | Calculate CO2 emissions for various transport modes including cars, planes, and trains. |
+| [Truncation Detector & Graceful Terminator](../mcps/truncation-detector-graceful-terminator.md) | Detects and repairs truncated LLM outputs to restore structural integrity. |
 | [Unit Conversion Exact Calculator](../mcps/unit-conversion-exact-calculator.md) | Perform precise mathematical conversions between metric, imperial, and data units. |
 | [URL Query String Deep Parser](../mcps/url-query-string-deep-parser.md) | Transforms flat URL query strings into deeply nested JSON objects and arrays. |
 | [Water Heater Comparator](../mcps/water-heater-comparator.md) | Compare the operational costs and carbon footprint of electric, gas, and solar thermal water heating systems. |

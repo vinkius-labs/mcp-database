@@ -9,8 +9,10 @@ Explore the open database of **data-processing** Model Context Protocol (MCP) se
 | [Markdown Semantic Chunker](../mcps/markdown-semantic-chunker.md) | A deterministic engine for splitting Markdown text into semantically coherent chunks based on header hierarchy and paragraph boundaries. |
 | [Markdown Semantic Chunker](../mcps/markdown-semantic-chunker-alternative.md) | A deterministic engine for splitting Markdown text into semantically coherent chunks based on header hierarchy and paragraph boundaries. |
 | [N-gram Frequency Analyzer](../mcps/n-gram-frequency-analyzer.md) | Extracts exact N-grams from English text and calculates diversity metrics. |
+| [Retrieval Relevance Scorer](../mcps/retrieval-relevance-scorer.md) | A deterministic scoring engine that filters retrieved documents using Jaccard, TF-IDF, and coverage metrics. |
 | [SSE Stream Reassembler](../mcps/sse-stream-reassembler.md) | Reassembles fragmented Server-Sent Events (SSE) streams into a single coherent payload. |
 | [SSE Stream Reassembler](../mcps/sse-stream-reassembler-alternative.md) | Reassembles fragmented Server-Sent Events (SSE) streams into a single coherent payload. |
+| [Streaming Chunk Assembler](../mcps/streaming-chunk-assembler.md) | Reassembles fragmented LLM response chunks into complete, verified text and JSON. |
 
 
 ---

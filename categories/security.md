@@ -22,6 +22,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Hash Checksum Calculator](../mcps/hash-checksum-calculator.md) | Generate, compare, and validate cryptographic and non-cryptographic hashes like MD5, SHA-256, and CRC32. |
 | [Hash Generator and Verifier](../mcps/hash-generator-and-verifier.md) | Generate and verify cryptographic hashes like MD5, SHA-1, SHA-256, and SHA-512. |
 | [HMAC Signature Validator](../mcps/hmac-signature-validator.md) | High-precision HMAC signature generation and verification with constant-time comparison. |
+| [Input Sanitizer & Escape Handler](../mcps/input-sanitizer-escape-handler.md) | Protects AI agents from shell injection, path traversal, and payload vulnerabilities. |
 | [JWT Decoder & Validator](../mcps/jwt-decoder-validator.md) | Decode JWT segments and verify cryptographic signatures and temporal claims. |
 | [License Compatibility Checker](../mcps/license-compatibility-checker.md) | Audit software licenses and check compatibility between dependencies. |
 | [Luhn Credit Card Validator](../mcps/luhn-credit-card-validator.md) | Validates credit card numbers using the Luhn algorithm and identifies the issuer. |
