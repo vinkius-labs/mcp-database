@@ -11,6 +11,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Adafruit IO](../mcps/adafruit-io.md) | Manage Adafruit IO feeds, data points, dashboards, and triggers. |
 | [AddSearch](../mcps/addsearch.md) | Equip your AI agent with AddSearch to query your indexed site content, push new documents, and retrieve search analytics instantly. |
 | [AdGuard Home](../mcps/adguard-home.md) | Manage your AdGuard Home instance — control protection, DNS settings, and filtering rules directly from any AI agent. |
+| [Agent Description & Tool Alignment Checker](../mcps/agent-description-tool-alignment-checker.md) | Validates alignment between agent descriptions and assigned tools to prevent multi-agent framework errors. |
 | [Agent Error Recovery Rate Calculator](../mcps/agent-error-recovery-rate-calculator.md) | Analyze execution logs to calculate error recovery rates and identify failure patterns. |
 | [Agent Role Conflict Detector](../mcps/agent-role-conflict-detector.md) | Detects overlapping responsibilities and role conflicts in multi-agent teams. |
 | [AgentOps (Agent Telemetry and Monitoring)](../mcps/agentops-agent-telemetry-and-monitoring.md) | Monitor and observe your AI agents with AgentOps — track traces, spans, and project metrics directly from your agent. |
@@ -301,6 +302,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [JSON Schema Strict Validator](../mcps/json-schema-strict-validator.md) | Perform deterministic JSON validation against Draft-07 and 2020-12 schemas with strict property enforcement. |
 | [JSON Schema Validator and Flattener](../mcps/json-schema-validator-and-flattener.md) | Strictly validate JSON against schemas and flatten nested structures using dot notation. |
 | [JSON-LD SEO Compiler](../mcps/json-ld-seo-compiler.md) | Compile 100% Google-compliant JSON-LD Schema blocks. Prevent AI hallucination of invalid SEO structured data. |
+| [json-state-diff-generator](../mcps/json-state-diff-generator.md) | High-precision JSON state comparison for debugging agentic workflows. |
 | [JSONBin.io](../mcps/jsonbinio.md) | Store, manage, and retrieve JSON data effortlessly. Create bins, manage collections, and handle large datasets directly from your AI agent. |
 | [JSONPath Extractor](../mcps/jsonpath-extractor.md) | Extract specific values from JSON objects using precise JSONPath expressions. |
 | [Juhe Data / 聚合数据](../mcps/juhe-data.md) | China's leading API aggregator — access weather, ID verification, IP lookup, and news via AI. |
@@ -331,9 +333,11 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [License Header Injector and Verifier](../mcps/license-header-injector-and-verifier.md) | Enforce, audit, and repair mandatory copyright headers in source files. |
 | [LicenseCheck API](../mcps/licensecheck-api.md) | Search software licenses — audit permissions and conditions via AI. |
 | [Lineascan](../mcps/lineascan.md) | Explore the Linea blockchain — check ETH balances, track ERC-20/NFT transfers, and inspect smart contract source code directly from your AI. |
+| [LLM API Cost Estimator](../mcps/llm-api-cost-estimator.md) | Calculate exact API costs and track session budgets for LLM workflows. |
 | [LLM Fine-Tuning Dataset Validator](../mcps/llm-fine-tuning-dataset-validator.md) | Verify structural integrity, token distribution, and training costs of JSONL datasets. |
 | [LLM JSON Repair Utility](../mcps/llm-json-repair-utility.md) | Fixes malformed, truncated, or dirty JSON strings produced by LLMs. |
 | [LLM Output JSON Extractor](../mcps/llm-output-json-extractor.md) | Isolates valid JSON objects from mixed markdown/text LLM outputs using deterministic bracket-matching. |
+| [LLM Response Structural Validator](../mcps/llm-response-structural-validator.md) | Detect and prevent silent structural failures in LLM outputs using deterministic pattern matching. |
 | [LLM ROUGE & BLEU Evaluator](../mcps/llm-rouge-bleu-evaluator.md) | Evaluate AI text generation quality. Compute exact mathematical BLEU and ROUGE scores comparing generated text to reference documents. |
 | [LLM Token Counter](../mcps/llm-token-counter.md) | Calculate exact and estimated token counts for GPT-4, GPT-4o, Claude, and Llama models. |
 | [LMNT (Ultra-low Latency Speech Synthesis)](../mcps/lmnt-ultra-low-latency-speech-synthesis.md) | Synthesize ultra-low latency AI speech, clone voices instantly, and manage your LMNT audio assets directly from any AI agent. |
@@ -412,6 +416,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [OpenReplay](../mcps/openreplay.md) | Debug web applications by inspecting user sessions, technical events, and project data directly from your AI agent. |
 | [OpenRouteService](../mcps/openrouteservice.md) | Plan routes and analyze spatial data via OpenRouteService — calculate directions, isochrones, distance matrices, VRP optimization, and geocoding from any AI agent. |
 | [Orama Hybrid Search Query Builder](../mcps/orama-hybrid-search-query-builder.md) | Generate syntactically perfect Orama search payloads with deterministic JSON structure. |
+| [Output Format Stability Checker](../mcps/output-format-stability-checker.md) | Detect non-deterministic shifts in LLM response structures. |
 | [Oxylabs](../mcps/oxylabs.md) | Scrape any website via Oxylabs — extract Google SERPs, Amazon products, Bing and Yandex results, or any arbitrary URL with JS rendering from any AI agent. |
 | [ParseHub](../mcps/parsehub.md) | Control advanced cloud scraping projects via ParseHub — list targets, dispatch headless runs, trace crawler status, and fetch extracted datasets directly via AI. |
 | [Particle Network](../mcps/particle-network.md) | Manage Web3 infrastructure via Particle Network — handle Account Abstraction, UserOperations, and identity management directly through AI. |
@@ -547,9 +552,11 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Tailwind v4 Theme Variable Extractor](../mcps/tailwind-v4-theme-variable-extractor.md) | Extracts CSS variables from Tailwind v4 @theme blocks. |
 | [Tailwind v4 Theme Variable Extractor](../mcps/tailwind-v4-theme-variable-extractor-alternative.md) | Extracts CSS variables from Tailwind v4 @theme blocks. |
 | [Targetprocess](../mcps/targetprocess.md) | Connect your AI to Apptio Targetprocess. Agile portfolio management natively from the terminal: track user stories, active bugs, and sprint iterations seamlessly. |
+| [Task IO Mapping Validator](../mcps/task-io-mapping-validator.md) | Validates data continuity and key mapping between sequential tasks in AI agent pipelines. |
 | [Tatum (Blockchain Infra)](../mcps/tatum-blockchain-infra.md) | Simplify blockchain development with Tatum — estimate fees, track portfolios, and manage real-time webhook subscriptions across multiple chains. |
 | [Tenderly (Ethereum Dev Platform)](../mcps/tenderly-ethereum-dev-platform.md) | Simulate Ethereum transactions, create Virtual TestNets, and monitor on-chain events directly from your AI agent. |
 | [Test Assertion Density Calculator](../mcps/test-assertion-density-calculator.md) | Detects empty or ineffective test scaffolding by calculating the ratio of assertions to test blocks. |
+| [Test Coverage Analyzer](../mcps/test-coverage-analyzer.md) | Automated AST-based test coverage and logic gap analysis for LLM-generated code. |
 | [Testim](../mcps/testim.md) | Trigger automated AI tests, inspect execution logs, and manage branches natively via your AI agent. |
 | [TestLink](../mcps/testlink.md) | Navigate your self-hosted TestLink instance to inspect test plans, suites, cases, and builds natively via your AI agent. |
 | [TestMonitor](../mcps/testmonitor.md) | List QA projects, extract test runs, read user assignments, and fetch tracked issues strictly from your AI chat. |
@@ -560,6 +567,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [ThirdWeb](../mcps/thirdweb.md) | Integrate Web3 capabilities into your AI agent — manage wallets, authenticate users, and interact with smart contracts across multiple blockchains. |
 | [Tingyun / 听云](../mcps/tingyun.md) | Leading APM and observability platform — manage applications, alerts, and performance metrics via AI. |
 | [Togai (Usage Metering & Pricing)](../mcps/togai-usage-metering-pricing.md) | Automate usage-based billing and metering — ingest events, manage customers, and track entitlements directly from your AI agent. |
+| [Tokenization Normalizer](../mcps/tokenization-normalizer.md) | Resolves tokenization drift by normalizing text to match specific LLM tokenizer profiles. |
 | [TOML Parser & Validator](../mcps/toml-parser-validator.md) | Strict TOML parsing and schema validation with precise error reporting. |
 | [TOML Parser Engine](../mcps/toml-parser-engine.md) | Convert TOML config files to JSON and back. Essential for Rust (Cargo.toml), Python (pyproject.toml), and Cloudflare (wrangler.toml). |
 | [TOML Strict Config Parser](../mcps/toml-strict-config-parser.md) | A deterministic, dependency-free parser that transforms TOML strings into structured JSON objects. |
@@ -617,6 +625,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [WordPress Plugin Auditor](../mcps/wordpress-plugin-auditor.md) | This MCP gives your AI agent the ability to securely list and audit all installed plugins on a WordPress site. Perfect for security sweeps, maintenance reports, and identifying outdated or inactive plugins. |
 | [Writer (AI Enterprise LLM)](../mcps/writer-ai-enterprise-llm.md) | Access Writer's enterprise-grade LLMs and Knowledge Graph capabilities to generate content, manage files, and query RAG-based data. |
 | [XML Tag Structure Compliance Checker](../mcps/xml-tag-structure-compliance-checker.md) | Validate XML tag integrity, nesting hierarchy, and tag-to-text density. |
+| [XML to Dict Parser](../mcps/xml-to-dict-parser.md) | Converts XML strings into deterministic dictionary structures for stable LLM outputs. |
 | [Xray (Test Management)](../mcps/xray-test-management.md) | Manage test cases, executions, and plans on Xray — the leading quality assurance platform for Jira. |
 | [YAML Structural Validator & Flattener](../mcps/yaml-structural-validator-flattener.md) | High-precision YAML validation and dot-notation flattening. |
 | [Z.AI](../mcps/zai.md) | Access the full Z.AI platform from any AI agent — chat completions with GLM models, image and video generation, audio transcription, OCR, web search, and agent tools. |

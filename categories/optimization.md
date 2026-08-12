@@ -7,6 +7,8 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Agent Capability Matcher](../mcps/agent-capability-matcher.md) | Aligns AI agents to tasks using weighted capability scoring. |
 | [Context Redundancy Deduplicator](../mcps/context-redundancy-deduplicator.md) | Identify and quantify exact N-gram overlaps across RAG documents to optimize context window usage. |
 | [Context Redundancy Deduplicator](../mcps/context-redundancy-deduplicator-alternative.md) | Identify and quantify exact N-gram overlaps across RAG documents to optimize context window usage. |
+| [Context Window Optimizer](../mcps/context-window-optimizer.md) | Optimally selects and orders context items to maximize relevance within token limits. |
+| [Cost-Controlled Tool Selector](../mcps/cost-controlled-tool-selector.md) | A deterministic engine to select the most cost-effective tool variant based on accuracy requirements. |
 | [Grain Direction Restrictor](../mcps/grain-direction-restrictor.md) | Enforce material grain orientation constraints for precise plywood cutting and bin packing. |
 | [RAG Chunk Size Optimizer](../mcps/rag-chunk-size-optimizer.md) | Evaluate RAG chunking strategies by calculating segmentation metrics, embedding costs, and context viability. |
 | [Table Demographic Balancer](../mcps/table-demographic-balancer.md) | Prevent demographic clustering in seating arrangements by maintaining balanced personality traits and age groups. |

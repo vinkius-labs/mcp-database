@@ -67,6 +67,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Temperature Converter for Cooking](../mcps/temperature-converter-for-cooking.md) | Convert oven temperatures between Celsius, Fahrenheit, and the European Gas scale with heat intensity classification. |
 | [Time Difference Calculator](../mcps/time-difference-calculator.md) | Calculate exact duration between two clock times, handling midnight transitions. |
 | [Tire Size Converter](../mcps/tire-size-converter.md) | Calculate tire dimensions, speedometer error, and clearance risks. |
+| [Tool Namespace Resolver and Fuzzy Matcher](../mcps/tool-namespace-resolver-and-fuzzy-matcher.md) | Resolves tool name hallucinations and misspellings using hierarchical matching logic. |
 | [Transport Carbon Calculator](../mcps/transport-carbon-calculator.md) | Calculate CO2 emissions for various transport modes including cars, planes, and trains. |
 | [Truncation Detector & Graceful Terminator](../mcps/truncation-detector-graceful-terminator.md) | Detects and repairs truncated LLM outputs to restore structural integrity. |
 | [Unit Conversion Exact Calculator](../mcps/unit-conversion-exact-calculator.md) | Perform precise mathematical conversions between metric, imperial, and data units. |

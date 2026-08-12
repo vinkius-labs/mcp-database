@@ -15,6 +15,7 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Storage Bitrate Balancer](../mcps/storage-bitrate-balancer.md) | Calculate maximum allowed video bitrates and estimated file sizes with a 10% safety margin. |
 | [Timelapse Calculator](../mcps/timelapse-calculator.md) | Plan precise timelapse sequences, storage needs, and golden hour windows. |
 | [Token Counter and Budget Enforcer](../mcps/token-counter-and-budget-enforcer.md) | Estimates token usage and enforces strict cumulative budget limits for AI agents. |
+| [Tool Output Truncator and Size Limiter](../mcps/tool-output-truncator-and-size-limiter.md) | Safely shrinks tool outputs to fit byte limits without breaking multi-byte characters. |
 | [Unit Fraction Simplifier](../mcps/unit-fraction-simplifier.md) | Decomposes decimal measurements into the simplest combination of standard volume and length units. |
 | [Yarn Length Calculator](../mcps/yarn-length-calculator.md) | Estimate yarn length for knitting and crochet projects. |
 

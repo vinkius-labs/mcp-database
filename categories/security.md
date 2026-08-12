@@ -5,6 +5,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [4399 Open Platform](../mcps/4399-open-platform.md) | Manage 4399 Open Platform game distribution — validate logins, query orders, and handle leaderboards directly from any AI agent. |
+| [Agent Config Drift Detector](../mcps/agent-config-drift-detector.md) | Detects unauthorized changes to agent configurations by comparing SHA-256 hashes. |
 | [Base64 Charset Normalizer](../mcps/base64-charset-normalizer.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |
 | [Base64 Charset Normalizer](../mcps/base64-charset-normalizer-alternative.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |
 | [Bcrypt Hash Engine](../mcps/bcrypt-hash-engine.md) | Hash and verify passwords with the industry-standard bcrypt algorithm. Two tools in one: hash with configurable salt rounds, and verify against stored hashes. Pure JS — zero compilation. |
@@ -12,9 +13,12 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Crypto Hash Engine](../mcps/crypto-hash-engine.md) | Sign API requests and Webhooks deterministically. Instantly generate mathematical HMAC, SHA-256, or MD5 hashes without AI hallucinations. |
 | [Crypto Random String](../mcps/crypto-random-string.md) | Generate cryptographically secure random strings for API keys, tokens, and invite codes using Node.js crypto.randomBytes(). |
 | [Cryptographic Action Attestor](../mcps/cryptographic-action-attestor.md) | Creates a tamper-proof audit trail of every agent action using SHA-256 hashing. |
+| [Data Sanitizer for Privacy](../mcps/data-sanitizer-for-privacy.md) | Scrub sensitive PII from LLM contexts using deterministic redaction. |
+| [Dependency License Compliance Checker](../mcps/dependency-license-compliance-checker.md) | Validates software dependencies against approved SPDX license identifiers. |
 | [Email Header Metadata Extractor](../mcps/email-header-metadata-extractor.md) | Extracts precise headers, hop counts, and domain information from raw RFC 822 email source text. |
 | [Env Variable Config Validator](../mcps/env-variable-config-validator.md) | Validate .env files for structural integrity, type accuracy, and security hygiene. |
 | [Environment Variable Usage Auditor](../mcps/environment-variable-usage-auditor.md) | Cross-references environment variable usage against declaration files to find missing or unused keys. |
+| [Execution Trace Tamper-Evident Logger](../mcps/execution-trace-tamper-evident-logger.md) | Creates immutable, cryptographic audit trails for agent execution steps using Merkle trees. |
 | [File Path Normalizer and Traversal Checker](../mcps/file-path-normalizer-and-traversal-checker.md) | Resolves relative path segments and detects directory traversal risks. |
 | [Filesystem Sandbox Boundary Enforcer](../mcps/filesystem-sandbox-boundary-enforcer.md) | Enforces strict path boundaries and prevents traversal attacks. |
 | [Geetest](../mcps/geetest.md) | The ultimate anti-bot CAPTCHA API — validate users, detect bots, and protect your forms with Geetest v4. |
@@ -38,15 +42,21 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Prompt Injection Pattern Scanner](../mcps/prompt-injection-pattern-scanner.md) | Scans user-supplied text for structural patterns associated with prompt-injection attempts. |
 | [Prompt Injection Shield Prover](../mcps/prompt-injection-shield-prover.md) | LLMs cannot distinguish system instructions from user input. This tool forces 5-layer injection defense analysis: intent isolation, privilege containment, indirect vector scanning, output sanitization, and scope enforcement. OWASP LLM Top 10 #1 compliance. |
 | [Prompt System Override Resistance Scorer](../mcps/prompt-system-override-resistance-scorer.md) | Quantify the structural integrity and resistance of LLM system prompts against manipulation. |
+| [Python Code Safety Linter](../mcps/python-code-safety-linter.md) | Validates Python code strings using AST analysis to prevent security vulnerabilities. |
 | [Regex ReDoS Vulnerability Detector](../mcps/regex-redos-vulnerability-detector.md) | Detects catastrophic backtracking and ReDoS vulnerabilities in regular expression patterns using deterministic structural analysis. |
 | [Regex ReDoS Vulnerability Detector](../mcps/regex-redos-vulnerability-detector-alternative.md) | Detects catastrophic backtracking and ReDoS vulnerabilities in regular expression patterns using deterministic structural analysis. |
+| [Resource Limit Calculator](../mcps/resource-limit-calculator.md) | Translates high-level resource constraints into exact OS-level RLIMIT constants. |
 | [Resource Usage Leak Detector](../mcps/resource-usage-leak-detector.md) | Monitor agent resource consumption to detect file descriptor or connection leaks. |
 | [SBOM Dependency Risk Scorer](../mcps/sbom-dependency-risk-scorer.md) | Analyze SBOM files to quantify supply chain risk through dependency structure, package staleness, and vulnerability exposure. |
+| [Security Vulnerability Scanner](../mcps/security-vulnerability-scanner.md) | Deep AST-based security scanning for agent-generated code. |
 | [SQL Migration Safety Analyzer](../mcps/sql-migration-safety-analyzer.md) | Validate SQL migrations for structural risks, rollback integrity, and unbounded deletions. |
 | [SQL Syntax & Injection Checker](../mcps/sql-syntax-injection-checker.md) | Static analysis for SQL syntax validation and injection risk detection. |
+| [Template Injection Sanitizer](../mcps/template-injection-sanitizer.md) | Detects and neutralizes prompt injection attacks using template syntax like Jinja2 and Python f-strings. |
 | [Tool Output Entropy Sanitizer](../mcps/tool-output-entropy-sanitizer.md) | Detects and redacts high-entropy strings like API keys from tool outputs. |
+| [Tool Permission Boundary Enforcer](../mcps/tool-permission-boundary-enforcer.md) | Enforces deterministic permission boundaries for tool execution to prevent unbounded access. |
 | [Twitter Mention Spam and Cluster Checker](../mcps/twitter-mention-spam-and-cluster-checker.md) | Detects @-mention clustering and structural spam patterns to prevent shadowbans. |
 | [Unicode Normalization and Homoglyph Detector](../mcps/unicode-normalization-and-homoglyph-detector.md) | Detects malicious Unicode homoglyph attacks and identifies invisible characters in strings. |
+| [URL SSRF Prevention Validator](../mcps/url-ssrf-prevention-validator.md) | Prevents SSRF attacks by validating URL schemes and blocking internal IP ranges. |
 | [Webhook HMAC Signature Validator](../mcps/webhook-hmac-signature-validator.md) | Verify the authenticity of incoming webhook payloads by validating their HMAC signatures. |
 | [Webhook HMAC Signature Validator](../mcps/webhook-hmac-signature-validator-alternative.md) | Verify the authenticity of incoming webhook payloads by validating their HMAC signatures. |
 | [Webhook Payload Signature Validator](../mcps/webhook-payload-signature-validator.md) | Validate inbound webhook authenticity using HMAC signature verification and timestamp freshness checks. |
