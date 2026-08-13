@@ -5,6 +5,7 @@ Explore the open database of **monitoring** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Conversation Turn Fairness Enforcer](../mcps/conversation-turn-fairness-enforcer.md) | Prevents agent domination in multi-agent conversations by monitoring turn frequency. |
+| [Resource Usage Accountant](../mcps/resource-usage-accountant.md) | Tracks and enforces resource usage limits for agent executions. |
 
 
 ---

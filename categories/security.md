@@ -13,8 +13,9 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Crypto Hash Engine](../mcps/crypto-hash-engine.md) | Sign API requests and Webhooks deterministically. Instantly generate mathematical HMAC, SHA-256, or MD5 hashes without AI hallucinations. |
 | [Crypto Random String](../mcps/crypto-random-string.md) | Generate cryptographically secure random strings for API keys, tokens, and invite codes using Node.js crypto.randomBytes(). |
 | [Cryptographic Action Attestor](../mcps/cryptographic-action-attestor.md) | Creates a tamper-proof audit trail of every agent action using SHA-256 hashing. |
-| [Data Sanitizer for Privacy](../mcps/data-sanitizer-for-privacy.md) | Scrub sensitive PII from LLM contexts using deterministic redaction. |
-| [Dependency License Compliance Checker](../mcps/dependency-license-compliance-checker.md) | Validates software dependencies against approved SPDX license identifiers. |
+| [Data Sanitizer for Privacy](../mcps/data-sanitizer-for-privacy.md) | Redacts sensitive PII and PHI from text using deterministic patterns. |
+| [Dependency License Compliance Checker](../mcps/dependency-license-compliance-checker.md) | Audit software dependencies against approved SPDX license identifiers to ensure supply-chain compliance. |
+| [Destructive Command Interceptor](../mcps/destructive-command-interceptor.md) | Intercepts and blocks destructive bash commands using pattern matching and obfuscation detection. |
 | [Email Header Metadata Extractor](../mcps/email-header-metadata-extractor.md) | Extracts precise headers, hop counts, and domain information from raw RFC 822 email source text. |
 | [Env Variable Config Validator](../mcps/env-variable-config-validator.md) | Validate .env files for structural integrity, type accuracy, and security hygiene. |
 | [Environment Variable Usage Auditor](../mcps/environment-variable-usage-auditor.md) | Cross-references environment variable usage against declaration files to find missing or unused keys. |
@@ -22,6 +23,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [File Path Normalizer and Traversal Checker](../mcps/file-path-normalizer-and-traversal-checker.md) | Resolves relative path segments and detects directory traversal risks. |
 | [Filesystem Sandbox Boundary Enforcer](../mcps/filesystem-sandbox-boundary-enforcer.md) | Enforces strict path boundaries and prevents traversal attacks. |
 | [Geetest](../mcps/geetest.md) | The ultimate anti-bot CAPTCHA API — validate users, detect bots, and protect your forms with Geetest v4. |
+| [Git Workflow Guardian](../mcps/git-workflow-guardian.md) | Enforces git workflow rules and repository hygiene. |
 | [GraphQL Query Complexity Analyzer](../mcps/graphql-query-complexity-analyzer.md) | Analyze GraphQL queries for structural complexity, depth, and token count. |
 | [Hash Checksum Calculator](../mcps/hash-checksum-calculator.md) | Generate, compare, and validate cryptographic and non-cryptographic hashes like MD5, SHA-256, and CRC32. |
 | [Hash Generator and Verifier](../mcps/hash-generator-and-verifier.md) | Generate and verify cryptographic hashes like MD5, SHA-1, SHA-256, and SHA-512. |
@@ -38,7 +40,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [PII Redaction Deterministic Scrubber](../mcps/pii-redaction-deterministic-scrubber.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
 | [PII Redaction Deterministic Scrubber Alternative](../mcps/pii-redaction-deterministic-scrubber-alternative.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
 | [Prompt Injection Detection Engine](../mcps/prompt-injection-detection-engine.md) | Scans user inputs and retrieved documents for prompt injection attacks using static pattern matching. |
-| [Prompt Injection Pattern Detector](../mcps/prompt-injection-pattern-detector.md) | Detects malicious prompt injection signatures and intent in LLM inputs. |
+| [Prompt Injection Pattern Detector](../mcps/prompt-injection-pattern-detector.md) | Detects malicious prompt injection attempts in LLM inputs using deterministic regex patterns. |
 | [Prompt Injection Pattern Scanner](../mcps/prompt-injection-pattern-scanner.md) | Scans user-supplied text for structural patterns associated with prompt-injection attempts. |
 | [Prompt Injection Shield Prover](../mcps/prompt-injection-shield-prover.md) | LLMs cannot distinguish system instructions from user input. This tool forces 5-layer injection defense analysis: intent isolation, privilege containment, indirect vector scanning, output sanitization, and scope enforcement. OWASP LLM Top 10 #1 compliance. |
 | [Prompt System Override Resistance Scorer](../mcps/prompt-system-override-resistance-scorer.md) | Quantify the structural integrity and resistance of LLM system prompts against manipulation. |
@@ -48,7 +50,8 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Resource Limit Calculator](../mcps/resource-limit-calculator.md) | Translates high-level resource constraints into exact OS-level RLIMIT constants. |
 | [Resource Usage Leak Detector](../mcps/resource-usage-leak-detector.md) | Monitor agent resource consumption to detect file descriptor or connection leaks. |
 | [SBOM Dependency Risk Scorer](../mcps/sbom-dependency-risk-scorer.md) | Analyze SBOM files to quantify supply chain risk through dependency structure, package staleness, and vulnerability exposure. |
-| [Security Vulnerability Scanner](../mcps/security-vulnerability-scanner.md) | Deep AST-based security scanning for agent-generated code. |
+| [Security Vulnerability Scanner](../mcps/security-vulnerability-scanner.md) | Scans code for security vulnerabilities like SQL injection and command injection using AST pattern matching. |
+| [Sensitive Data Exposure Detector](../mcps/sensitive-data-exposure-detector.md) | Intercepts and redacts sensitive information from file reads and tool outputs. |
 | [SQL Migration Safety Analyzer](../mcps/sql-migration-safety-analyzer.md) | Validate SQL migrations for structural risks, rollback integrity, and unbounded deletions. |
 | [SQL Syntax & Injection Checker](../mcps/sql-syntax-injection-checker.md) | Static analysis for SQL syntax validation and injection risk detection. |
 | [Template Injection Sanitizer](../mcps/template-injection-sanitizer.md) | Detects and neutralizes prompt injection attacks using template syntax like Jinja2 and Python f-strings. |

@@ -8,7 +8,7 @@ Explore the open database of **reliability** Model Context Protocol (MCP) server
 | [Error Classifier and Router](../mcps/error-classifier-and-router.md) | Classifies LLM and tool errors into a deterministic taxonomy for automated recovery. |
 | [Execution Circuit Breaker](../mcps/execution-circuit-breaker.md) | Prevent cascading failures by monitoring consecutive errors and managing execution permissions. |
 | [Global Retry Budget Tracker](../mcps/global-retry-budget-tracker.md) | Prevents unbounded retry loops by enforcing a strict credit-based budget across all agents. |
-| [Hallucination Detector via Consistency](../mcps/hallucination-detector-via-consistency.md) | Detects factual contradictions across multiple LLM responses to identify potential hallucinations. |
+| [Hallucination Detector via Consistency](../mcps/hallucination-detector-via-consistency.md) | Detect factual contradictions across multiple LLM responses to identify potential hallucinations. |
 
 
 ---

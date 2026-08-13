@@ -4,7 +4,6 @@ Explore the open database of **data-engineering** Model Context Protocol (MCP) s
 
 | Tool Name | Description |
 |-----------|-------------|
-| [Output Serializability Checker](../mcps/output-serializability-checker.md) | Verify if LLM-generated data structures can be safely converted to specific formats without data loss. |
 | [RAG Chunk Boundary Optimizer](../mcps/rag-chunk-boundary-optimizer.md) | Analyze text chunking integrity in RAG pipelines by measuring overlap, sentence breaks, and semantic continuity. |
 
 

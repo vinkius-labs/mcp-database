@@ -4,7 +4,7 @@ Explore the open database of **data-extraction** Model Context Protocol (MCP) se
 
 | Tool Name | Description |
 |-----------|-------------|
-| [Data Extraction Schema Evolver](../mcps/data-extraction-schema-evolver.md) | Automatically evolves JSON schemas to solve schema drift in LLM data extraction. |
+| [Data Extraction Schema Evolver](../mcps/data-extraction-schema-evolver.md) | Automatically detect schema drift and propose structural updates to JSON schemas. |
 | [LLM XML Tag Parser](../mcps/llm-xml-tag-parser.md) | Extract and validate content within XML-style tags from LLM outputs. |
 | [Markdown Table to JSON Converter](../mcps/markdown-table-to-json-converter.md) | Convert GitHub-flavored Markdown tables into structured JSON arrays of objects. |
 | [Structured Output Extractor](../mcps/structured-output-extractor.md) | Recover structured data from malformed LLM responses using deterministic regex. |

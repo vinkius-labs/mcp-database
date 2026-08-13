@@ -161,6 +161,9 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Circadian REM Sleep Cycle Optimizer](../mcps/circadian-rem-sleep-cycle-optimizer.md) | Harmonize your workflow with biological data. Calculate optimal wake-up times and bedtimes respecting 90-minute REM sleep phases for peak chronotype management. |
 | [Circadian Rhythm Aligner](../mcps/circadian-rhythm-aligner.md) | Gradually shift your feeding window to match new sleep patterns without metabolic shock. |
 | [Circle.so](../mcps/circleso.md) | Manage online communities via Circle — track members, monitor posts, and manage spaces directly from any AI agent. |
+| [Claude Context Window Budget Tracker](../mcps/claude-context-window-budget-tracker.md) | Monitors and enforces token consumption budgets to prevent context window saturation. |
+| [Claude Session Memory Indexer](../mcps/claude-session-memory-indexer.md) | Preserves and retrieves cross-session learnings using deterministic hashing and Jaccard similarity. |
+| [Claude State Checkpoint Manager](../mcps/claude-state-checkpoint-manager.md) | Create deterministic project snapshots to undo unwanted changes. |
 | [Click2Mail](../mcps/click2mail.md) | Manage physical mail and printing via Click2Mail — track jobs, monitor credit balance, and submit mailings directly from any AI agent. |
 | [ClickTime](../mcps/clicktime.md) | Manage time tracking and resource planning via ClickTime — track entries, monitor projects, and audit client hours directly from any AI agent. |
 | [ClickUp](../mcps/clickup.md) | Bring tasks, docs, goals, and team communication together in one workspace that replaces scattered project management tools. |
