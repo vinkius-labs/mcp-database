@@ -5,6 +5,7 @@ Explore the open database of **compliance** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [Comparison Copy Fairness Scorer](../mcps/comparison-copy-fairness-scorer.md) | Audit marketing copy and comparison tables for claim verifiability, feature balance, and disparagement risk. |
+| [Data Lineage Tracker](../mcps/data-lineage-tracker.md) | Track the evolution and provenance of data through LLM pipelines. |
 | [Delio](../mcps/delio.md) | Automate wealth management workflows via Delio Core OS — manage deals, investors, portfolio transactions, compliance forms, and platform users from any AI agent. |
 
 

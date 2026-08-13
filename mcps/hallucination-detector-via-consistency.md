@@ -14,8 +14,8 @@ This MCP server provides a diagnostic suite for evaluating the reliability of La
 
 
 ## Available Tools (3)
-- **analyze_consistency**: Performs the primary evaluation of multiple LLM responses to determine if they agree on the facts
 - **extract_claims**: Decomposes raw text into individual, verifiable factual atoms
+- **analyze_consistency**: Performs the primary evaluation of multiple LLM responses to determine if they agree on the facts
 - **identify_contradictions**: Compares a set of claims to find logical conflicts
 
 

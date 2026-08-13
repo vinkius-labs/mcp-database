@@ -38,7 +38,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [PII Redaction Deterministic Scrubber](../mcps/pii-redaction-deterministic-scrubber.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
 | [PII Redaction Deterministic Scrubber Alternative](../mcps/pii-redaction-deterministic-scrubber-alternative.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
 | [Prompt Injection Detection Engine](../mcps/prompt-injection-detection-engine.md) | Scans user inputs and retrieved documents for prompt injection attacks using static pattern matching. |
-| [Prompt Injection Pattern Detector](../mcps/prompt-injection-pattern-detector.md) | Identify and score malicious instruction overrides and system metadata extraction attempts in user text. |
+| [Prompt Injection Pattern Detector](../mcps/prompt-injection-pattern-detector.md) | Detects malicious prompt injection signatures and intent in LLM inputs. |
 | [Prompt Injection Pattern Scanner](../mcps/prompt-injection-pattern-scanner.md) | Scans user-supplied text for structural patterns associated with prompt-injection attempts. |
 | [Prompt Injection Shield Prover](../mcps/prompt-injection-shield-prover.md) | LLMs cannot distinguish system instructions from user input. This tool forces 5-layer injection defense analysis: intent isolation, privilege containment, indirect vector scanning, output sanitization, and scope enforcement. OWASP LLM Top 10 #1 compliance. |
 | [Prompt System Override Resistance Scorer](../mcps/prompt-system-override-resistance-scorer.md) | Quantify the structural integrity and resistance of LLM system prompts against manipulation. |

@@ -14,9 +14,9 @@ The Workflow Convergence Verifier is a diagnostic tool designed to monitor the p
 
 
 ## Available Tools (3)
+- **detect_oscillation**: Identifies if the workflow is trapped in a repetitive loop by detecting recurring state patterns
 - **analyze_convergence**: Determines if the workflow has successfully reached a stable state or if it is still progressing
 - **calculate_progress_velocity**: Estimates the rate at which the workflow is moving toward a solution to help predict completion
-- **detect_oscillation**: Identifies if the workflow is trapped in a repetitive loop by detecting recurring state patterns
 
 
 ## 💬 Prompt Examples

@@ -108,6 +108,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [CometAPI](../mcps/cometapi.md) | Connect to real-time financial market data with APIs for stocks, forex, and crypto that power trading applications. |
 | [Concurrent File Locking Simulator](../mcps/concurrent-file-locking-simulator.md) | Prevents race conditions in multi-agent environments by managing advisory file locks. |
 | [Conduit](../mcps/conduit.md) | Equip your AI agent to observe data streams, manage integration pipelines, and monitor nodes on the Conduit platform. |
+| [Configuration Reference Resolver](../mcps/configuration-reference-resolver.md) | A deterministic engine for resolving template placeholders and cross-references within nested agent configuration dictionaries. |
 | [Conflux](../mcps/conflux.md) | Query Conflux Network (Core & eSpace) data — check balances, inspect blocks, and track transactions directly from your AI agent. |
 | [Confusion Matrix Engine](../mcps/confusion-matrix-engine.md) | Deterministically calculate True Positives, FP, Precision, Recall, F1-Score, and Accuracy local. Stop LLM hallucinations when evaluating model metrics. |
 | [Contentful](../mcps/contentful.md) | Equip your AI agent to fetch, create, and manage digital content effortlessly using Contentful's headless architecture. |
@@ -575,6 +576,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Tool Availability and Dependency Checker](../mcps/tool-availability-and-dependency-checker.md) | Audits tool environments for availability, version compatibility, and recursive dependency chains. |
 | [Tool Call Schema Validator](../mcps/tool-call-schema-validator.md) | High-precision validation of LLM tool call arguments against strict JSON Schema definitions. |
 | [Tool Description Semantic Density Scorer](../mcps/tool-description-semantic-density-scorer.md) | Analyze LLM tool descriptions for linguistic precision and structural integrity. |
+| [Tool Interface Contract Validator](../mcps/tool-interface-contract-validator.md) | A verification engine that ensures tool implementations strictly adhere to their declared input and output schemas. |
 | [ToolJet](../mcps/tooljet.md) | Manage ToolJet databases and trigger workflows directly from your AI agent—query tables, insert data, and automate processes. |
 | [Transactional File Write Simulator](../mcps/transactional-file-write-simulator.md) | Simulates atomic file writes with rollback capabilities to prevent corruption. |
 | [Transifex](../mcps/transifex.md) | Localize your projects efficiently using AI Agents with the official Transifex integration. |

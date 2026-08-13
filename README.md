@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,034 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,040 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -11,7 +11,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 ## Browse by Category
 
 - [productivity](categories/productivity.md) (921 servers)
-- [developer-tools](categories/developer-tools.md) (640 servers)
+- [developer-tools](categories/developer-tools.md) (642 servers)
 - [industry-titans](categories/industry-titans.md) (587 servers)
 - [data-analytics](categories/data-analytics.md) (329 servers)
 - [marketing-automation](categories/marketing-automation.md) (240 servers)
@@ -79,11 +79,11 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [web-development](categories/web-development.md) (9 servers)
 - [business-operations](categories/business-operations.md) (8 servers)
 - [development](categories/development.md) (8 servers)
+- [devops](categories/devops.md) (8 servers)
 - [devops-cicd](categories/devops-cicd.md) (8 servers)
 - [observability](categories/observability.md) (8 servers)
 - [optimization](categories/optimization.md) (8 servers)
 - [travel-hospitality](categories/travel-hospitality.md) (8 servers)
-- [devops](categories/devops.md) (7 servers)
 - [fitness](categories/fitness.md) (7 servers)
 - [business](categories/business.md) (6 servers)
 - [crm-sales](categories/crm-sales.md) (6 servers)
@@ -115,6 +115,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [analysis](categories/analysis.md) (3 servers)
 - [aviation](categories/aviation.md) (3 servers)
 - [chemistry](categories/chemistry.md) (3 servers)
+- [compliance](categories/compliance.md) (3 servers)
 - [data-science](categories/data-science.md) (3 servers)
 - [design](categories/design.md) (3 servers)
 - [design-tools](categories/design-tools.md) (3 servers)
@@ -136,9 +137,9 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [calendar-scheduling](categories/calendar-scheduling.md) (2 servers)
 - [cardiology](categories/cardiology.md) (2 servers)
 - [collaboration-tools](categories/collaboration-tools.md) (2 servers)
-- [compliance](categories/compliance.md) (2 servers)
 - [culinary](categories/culinary.md) (2 servers)
 - [data-analysis](categories/data-analysis.md) (2 servers)
+- [data-engineering](categories/data-engineering.md) (2 servers)
 - [data-utilities](categories/data-utilities.md) (2 servers)
 - [database](categories/database.md) (2 servers)
 - [developer-apis](categories/developer-apis.md) (2 servers)
@@ -161,6 +162,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [wellness](categories/wellness.md) (2 servers)
 - [advertising](categories/advertising.md) (1 servers)
 - [agent-orchestration](categories/agent-orchestration.md) (1 servers)
+- [ai-agents](categories/ai-agents.md) (1 servers)
 - [ai-infrastructure](categories/ai-infrastructure.md) (1 servers)
 - [animal-behavior](categories/animal-behavior.md) (1 servers)
 - [astrology](categories/astrology.md) (1 servers)
@@ -177,7 +179,6 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [crm](categories/crm.md) (1 servers)
 - [customer-engagement](categories/customer-engagement.md) (1 servers)
 - [customer-experience](categories/customer-experience.md) (1 servers)
-- [data-engineering](categories/data-engineering.md) (1 servers)
 - [data-infrastructure](categories/data-infrastructure.md) (1 servers)
 - [data-intelligence](categories/data-intelligence.md) (1 servers)
 - [data-services](categories/data-services.md) (1 servers)

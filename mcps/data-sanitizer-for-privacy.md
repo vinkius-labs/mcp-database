@@ -14,8 +14,8 @@ Protect privacy and ensure compliance by removing sensitive information from LLM
 
 
 ## Available Tools (3)
-- **audit_text_sensitivity**: Analyze text to report presence and density of sensitive information without modifying it
 - **get_supported_entities**: Returns the list of supported sensitive entity types
+- **audit_text_sensitivity**: Analyze text to report presence and density of sensitive information without modifying it
 - **sanitize_text**: Scrub sensitive information from text based on entity types and intensity
 
 
