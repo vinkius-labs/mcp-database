@@ -7,16 +7,18 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-A deterministic engine for resolving template placeholders and cross-references within nested agent configuration dictionaries.
+Resolves cross-references in agent configuration dictionaries using deterministic lookup and graph-based cycle detection.
 
 ## Description
-This MCP server provides a deterministic engine to transform raw configuration objects into fully resolved ones. It identifies and replaces placeholders using both ${KEY} and {{KEY}} syntax by performing a depth-first traversal of the configuration graph. The server includes specialized tools like `resolve_configuration` for full object resolution, `validate_reference_syntax` for pattern checking, and `detect_circularity` to prevent infinite loops in dependency chains. It is designed to manage complex configuration tiers, from static Base Tier values to high-level Agent Tier personas.
+This MCP server solves the Configuration Management Problem in complex LLM agent ecosystems. It provides tools to transform raw configuration dictionaries into fully resolved versions by substituting placeholders like ${TARGET.key} or {{TARGET.key}}. It includes `resolve_configuration` for deep traversal and substitution, `validate_reference_integrity` to detect unresolved or circular references, and `get_resolution_path` to provide a detailed audit trail of how values were derived. It is designed for deterministic, reliable configuration management.
 
 
 ## Available Tools (3)
-- **detect_circularity**: Inspects a set of dependencies to find infinite loops
-- **resolve_configuration**: Performs the full resolution process on a configuration object
-- **validate_reference_syntax**: Checks if a given string matches the allowed reference patterns
+- **get_resolution_path**: Provides a detailed audit trail for a specific high-level configuration key to explain how its final value was constructed
+- **resolve_configuration**: key} or {{TARGET.key}} references within a configuration object using a provided context map.
+
+Performs the primary task of transforming a raw configuration dictionary into a fully resolved version by substituting all placeholders
+- **validate_reference_integrity**: Checks if a configuration is "healthy" by identifying any remaining unresolved or circular references
 
 
 ## 💬 Prompt Examples
@@ -24,38 +26,38 @@ This MCP server provides a deterministic engine to transform raw configuration o
 Here are some examples of how you can interact with the **Configuration Reference Resolver** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Resolve this configuration: {"name": "${USER.name}"} with context {"USER": {"name": "Alice"}}"
+> "Can you resolve this configuration: {"agent": "${AGENT_NAME.id}"} with context {"AGENT_NAME": {"id": "resolver_v1"}}?"
 
 **🤖 AI Agent:**
-> {"name": "Alice"}
+> {"agent": "resolver_v1"}
 
 ---
 
 **👤 You:**
-> "Check if this string is a valid reference: {{MY_KEY}}"
+> "Check if this configuration is valid: {"key": "value"} with no unresolved references."
 
 **🤖 AI Agent:**
-> True
+> {"is_valid": true, "error_count": 0, "issues": []}
 
 ---
 
 **👤 You:**
-> "Is this configuration valid: {"a": "${b}"} where b is not in context?"
+> "What is the resolution path for the key 'system_prompt' in this trace?"
 
 **🤖 AI Agent:**
-> The reference '${b}' is unresolved.
+> {"key": "system_prompt", "steps": [{"original": "${TEMPLATE.prompt}", "replaced_with": "You are a helpful assistant."}]}
 
 
 ## ❓ FAQ
 
-**Q: What does the `resolve_configuration` tool do?**
-The `resolve_configuration` tool takes a raw configuration object and a context dictionary, then replaces all valid placeholders with their corresponding values from the context.
+**Q: What does this MCP server do?**
+It resolves placeholder references within configuration files using a deterministic lookup process, ensuring all dependencies are correctly mapped and validated.
 
-**Q: How does the engine handle circular references?**
-The engine uses `detect_circularity` to inspect the dependency graph. If a loop is detected during traversal, the engine stops that branch and records the circular path to prevent infinite loops.
+**Q: How does it handle circular references?**
+The server uses graph-based traversal to detect loops. If a circular dependency is found, `validate_reference_integrity` will report it as a circular reference error.
 
-**Q: What syntax is supported for placeholders?**
-The engine supports two syntax patterns: ${KEY} and {{KEY}}. You can use `validate_reference_syntax` to check if a specific string follows these rules.
+**Q: Can I see how a specific value was resolved?**
+Yes, you can use the `get_resolution_path` tool to retrieve a detailed audit trail showing every substitution step for a specific key.
 
 
 ## Installation & Usage

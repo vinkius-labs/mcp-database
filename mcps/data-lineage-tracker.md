@@ -7,17 +7,19 @@
 
 **Category:** [compliance](../categories/compliance.md)
 
-Track the evolution and provenance of data through LLM pipelines.
+Track the provenance and lifecycle of data objects through LLM pipelines.
 
 ## Description
-Data Lineage Tracker provides a directed acyclic graph (DAG) to monitor how data items evolve through LLM workflows. It ensures auditability and compliance by recording every transformation step with a deterministic hash. Use `trace_transformation` to record new steps, `get_lineage_path` to reconstruct history, `verify_provenance` to confirm source ancestry, and `check_compliance_audit` to validate that required transformations have occurred.
+Data Lineage Tracker provides a verifiable record of how data flows through LLM orchestration pipelines. It maintains a Directed Acyclic Graph (DAG) of transformations, allowing you to audit the history of any data item. Use `trace_item_lineage` to see the full ancestral path of a specific item, `verify_item_integrity` to ensure no tampering has occurred, `find_downstream_impact` to see how a specific error propagates, and `register_transformation` to log new steps in the lifecycle.
 
 
 ## Available Tools (4)
-- **check_compliance_audit**: 
-- **get_lineage_path**: 
-- **trace_transformation**: 
-- **verify_provenance**: 
+- **find_downstream_impact**: Identifies all data items that were derived from a specific source item
+- **register_transformation**: Ensure the parentId exists.
+
+Records a new step in the data lifecycle, linking a new data item to its parent
+- **trace_item_lineage**: Provides the complete ancestral history of a specific data item to verify its origin
+- **verify_item_integrity**: Checks if a data item's current state matches its recorded deterministic hash
 
 
 ## 💬 Prompt Examples
@@ -25,38 +27,38 @@ Data Lineage Tracker provides a directed acyclic graph (DAG) to monitor how data
 Here are some examples of how you can interact with the **Data Lineage Tracker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Record a summarization step for data item 'item_123' using the 'summarize' type."
+> "Show me the full history for data item 'abc-123'."
 
 **🤖 AI Agent:**
-> The transformation has been recorded. The new output item ID is 'item_456' with hash 'abc123xyz'.
+> The lineage for 'abc-123' consists of three steps: 1. Raw Input (Root), 2. Summarization (via LLM), 3. Entity Extraction (via Parser).
 
 ---
 
 **👤 You:**
-> "What is the full history of data item 'item_456'?"
+> "Is the content of item 'xyz-789' still valid?"
 
 **🤖 AI Agent:**
-> The lineage for 'item_456' consists of 2 steps: a 'summarize' transformation and an 'augment' transformation, originating from root item 'item_000'.
+> Yes, the content matches the recorded deterministic hash. The integrity is verified.
 
 ---
 
 **👤 You:**
-> "Is 'item_000' an ancestor of 'item_456'?"
+> "Which items were affected by the transformation of item 'parent-001'?"
 
 **🤖 AI Agent:**
-> Yes, 'item_000' is an ancestor of 'item_456' with a path length of 2.
+> There are 2 descendant items: 'child-001' (depth 1) and 'grandchild-001' (depth 2).
 
 
 ## ❓ FAQ
 
-**Q: How do I record a new data transformation?**
-You can use the `trace_transformation` tool to record a new step in the data's journey, providing the input ID, transformation type, parameters, and the resulting output data.
+**Q: How can I verify if a data item has been altered?**
+You can use the `verify_item_integrity` tool. By providing the item ID and its current content, the system checks if the content matches the original deterministic hash recorded during transformation.
 
-**Q: How can I verify if a piece of data is an ancestor of another?**
-Use the `verify_provenance` tool to confirm if a specific source item is part of the lineage for a target item.
+**Q: How do I see the history of a specific piece of data?**
+Use the `trace_item_lineage` tool with the specific itemId. This will return a chronological list of all transformations that led to that item.
 
-**Q: Can I check if my data pipeline meets compliance requirements?**
-Yes, the `check_compliance_audit` tool allows you to validate that a data item's lineage includes all required transformation steps.
+**Q: What happens if a model produces a hallucination?**
+You can use `find_downstream_impact` with the sourceId of the hallucinated item. This identifies all descendant data items that were derived from that specific error.
 
 
 ## Installation & Usage

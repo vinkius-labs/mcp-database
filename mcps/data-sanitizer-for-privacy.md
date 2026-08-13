@@ -7,16 +7,20 @@
 
 **Category:** [security](../categories/security.md)
 
-Scrub sensitive PII from LLM contexts using deterministic redaction.
+Redacts sensitive PII and PHI from text using deterministic patterns.
 
 ## Description
-Protect privacy and ensure compliance by removing sensitive information from LLM inputs and outputs. This MCP server provides tools to detect and redact Personal Identifiable Information (PII) such as emails, phone numbers, and SSNs. Use `sanitize_text` to replace sensitive data with deterministic placeholders, or `audit_text_sensitivity` to analyze text density without modification. It supports both entity-level redaction and full sentence redaction to prevent context leakage.
+This MCP server provides a specialized privacy enforcement layer for AI agents. It identifies and redacts sensitive information such as emails, phone numbers, SSNs, and credit card details using strict regex patterns. You can use `sanitize_text` to perform token-level or sentence-level redaction, ensuring your LLM inputs and outputs remain compliant with data protection standards. Use `validate_entity_type` to check supported categories or `get_redaction_summary` to view all available patterns.
 
 
 ## Available Tools (3)
-- **get_supported_entities**: Returns the list of supported sensitive entity types
-- **audit_text_sensitivity**: Analyze text to report presence and density of sensitive information without modifying it
-- **sanitize_text**: Scrub sensitive information from text based on entity types and intensity
+- **get_redaction_summary**: Provides an overview of the supported redaction patterns
+- **sanitize_text**: You can specify which entity types to look for and whether to redact the entire sentence containing the sensitive data.
+
+Redacts sensitive information from text based on specified entity types
+- **validate_entity_type**: g., "EMAIL") to check its validity.
+
+Checks if a specific entity type is supported by the sanitizer
 
 
 ## 💬 Prompt Examples
@@ -24,38 +28,38 @@ Protect privacy and ensure compliance by removing sensitive information from LLM
 Here are some examples of how you can interact with the **Data Sanitizer for Privacy** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Can you sanitize this text: 'My email is john.doe@example.com and my phone is 555-0199'?"
+> "Sanitize this text: My email is john.doe@example.com and my phone is 555-0199."
 
 **🤖 AI Agent:**
-> My email is [EMAIL_REDACTED] and my phone is [PHONE_REDACTED]
+> My email is [EMAIL_REDACTED] and my phone is [PHONE_REDACTED].
 
 ---
 
 **👤 You:**
-> "Check if there is any sensitive data in: 'The user's SSN is 000-00-0000.'"
+> "Redact the SSN in this sentence: The user's SSN is 123-45-6789."
 
 **🤖 AI Agent:**
-> The text contains one sensitive entity of type SSN.
+> The user's SSN is [SSN_REDACTED].
 
 ---
 
 **👤 You:**
-> "Sanitize this sentence using full sentence redaction: 'Contact me at 555-1234 immediately.'"
+> "Check if 'SSN' is a valid entity type for redaction."
 
 **🤖 AI Agent:**
-> [REDACTED]
+> Yes, SSN is a supported entity type.
 
 
 ## ❓ FAQ
 
-**Q: What kind of sensitive data can be sanitized?**
-The tool can detect and redact various entity types including EMAIL, PHONE, SSN, and CREDIT_CARD. You can check all available types using the `get_supported_entities` tool.
+**Q: How does the redaction work?**
+The tool uses deterministic regex patterns to find sensitive data and replaces it with a placeholder like `[EMAIL_REDACTED]`. You can also choose to redact the entire sentence containing the sensitive data.
 
-**Q: What is the difference between entity and sentence redaction?**
-Entity redaction replaces only the specific sensitive string. Sentence redaction replaces the entire sentence containing the sensitive data to prevent leakage through surrounding context.
+**Q: What entity types can be redacted?**
+You can redact various types including EMAIL, PHONE, SSN, and CREDIT_CARD. Use `get_redaction_summary` to see the full list of supported types.
 
-**Q: How can I check if a text contains sensitive information without changing it?**
-You can use the `audit_text_sensitivity` tool to get a report on the presence and density of sensitive entities without modifying the original text.
+**Q: Can I redact whole sentences?**
+Yes, by setting the `redactEntireSentences` parameter to true in the `sanitize_text` tool, the entire sentence containing the sensitive information will be replaced.
 
 
 ## Installation & Usage

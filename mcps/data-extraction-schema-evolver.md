@@ -7,16 +7,16 @@
 
 **Category:** [data-extraction](../categories/data-extraction.md)
 
-Automatically evolves JSON schemas to solve schema drift in LLM data extraction.
+Automatically detect schema drift and propose structural updates to JSON schemas.
 
 ## Description
-The Data Extraction Schema Evolver bridges the gap between static JSON schemas and the unpredictable nature of LLM outputs. By using `analyze_schema_drift`, it detects new fields and type mismatches. It then uses `propose_schema_evolution` to generate updated schemas via deterministic rules like type unionization and enum discovery. Finally, `validate_evolution_safety` ensures that schema changes remain reliable and don't introduce excessive structural loosening.
+The Data Extraction Schema Evolver solves the problem of schema drift in unstructured data extraction. By analyzing discrepancies between existing schemas and new data samples, it identifies new fields, type mismatches, and missing fields. Use `analyze_schema_drift` to detect changes, `propose_schema_evolution` to generate updated schemas with deterministic type inference, and `validate_evolution_safety` to ensure changes maintain structural integrity. This bridge connects your data pipelines to intelligent, self-healing schema management.
 
 
 ## Available Tools (3)
-- **analyze_schema_drift**: Identifies structural differences between an existing schema and new observed data examples
-- **propose_schema_evolution**: Generates a modified schema based on detected differences and new examples
-- **validate_evolution_safety**: Evaluates if proposed schema changes are safe to deploy
+- **analyze_schema_drift**: Identifies discrepancies between a provided JSON schema and a collection of new data examples
+- **propose_schema_evolution**: Generates a modified JSON schema based on drift analysis results
+- **validate_evolution_safety**: Checks if the proposed schema changes are safe and do not destroy existing functionality
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Data Extraction Schema Evolver bridges the gap between static JSON schemas a
 Here are some examples of how you can interact with the **Data Extraction Schema Evolver** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Identify the differences between my current schema and these new extraction results."
+> "I have a new set of JSON data. Can you check if it matches my current schema?"
 
 **🤖 AI Agent:**
-> I have detected a new field 'middle_name' and a type mismatch for 'age', which is now appearing as a string in some examples.
+> I have analyzed the new data using `analyze_schema_drift`. I detected 2 new fields and 1 type mismatch.
 
 ---
 
 **👤 You:**
-> "Propose a new schema that includes the changes found in the drift analysis."
+> "Propose a new schema based on these recent data examples."
 
 **🤖 AI Agent:**
-> The proposed schema has been updated to include 'middle_name' as an optional field and 'age' as a union of number and string.
+> The proposed schema has been generated. It includes the new fields as optional and has updated the 'status' field to a union type.
 
 ---
 
 **👤 You:**
-> "Is this proposed schema evolution safe to deploy with strict settings?"
+> "Is this proposed schema change safe to apply?"
 
 **🤖 AI Agent:**
-> Yes, the evolution is safe. The changes only add optional fields and do not remove any required constraints.
+> Yes, the change is safe. It only adds new optional fields and does not remove any existing mandatory fields.
 
 
 ## ❓ FAQ
 
-**Q: How does the tool detect changes in my data?**
-The `analyze_schema_drift` tool compares your existing schema against new JSON examples to identify new fields, missing fields, or type mismatches.
+**Q: What is schema drift?**
+Schema drift occurs when the structure of unstructured data changes over time, causing existing extraction schemas to fail or miss new information.
 
-**Q: Can I control how much the schema changes?**
-Yes, you can use `validate_evolution_safety` with a specific risk level (strict or flexible) to control how much structural loosening is permitted.
+**Q: How does the tool ensure schema changes are safe?**
+You can use the `validate_evolution_safety` tool to verify that proposed changes only add optional fields or expand types, preventing the destruction of existing functionality.
 
-**Q: What happens if a field type changes from an integer to a string?**
-The `propose_schema_evolution` tool will automatically perform type unionization, updating the schema to accept both integers and strings.
+**Q: Can I use this with Cursor or Claude Desktop?**
+Yes, this MCP server can be connected to Cursor, Claude Desktop, VS Code, Windsurf, and any other MCP-compatible client via Vinkius Edge.
 
 
 ## Installation & Usage

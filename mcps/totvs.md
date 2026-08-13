@@ -36,13 +36,7 @@ Connect your AI agents to **TOTVS**, the largest technology company in Brazil an
 
 
 ## Available Tools (11)
-- **get_available_services**: List available RM DataServers
 - **get_employee_details**: Get detailed information for a specific employee
-- **get_process_request**: Get details for a specific Fluig process request
-- **get_rm_data**: Query a specific record from an RM DataServer
-- **list_companies**: List all companies and branches in the Protheus environment
-- **list_documents**: List documents in the Fluig ECM
-- **list_employees**: List employees from the HR module
 - **list_payments**: List accounts payable (Finance)
 - **list_processes**: List all BPM processes in Fluig
 - **list_receipts**: List accounts receivable (Finance)

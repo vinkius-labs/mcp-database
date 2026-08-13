@@ -7,16 +7,16 @@
 
 **Category:** [security](../categories/security.md)
 
-Validates software dependencies against approved SPDX license identifiers.
+Audit software dependencies against approved SPDX license identifiers to ensure supply-chain compliance.
 
 ## Description
-This MCP server provides tools to ensure software supply-chain security by validating dependency licenses. Use `check_license_compliance` to verify a list of packages against a policy, `get_dependency_license` to look up a specific package's SPDX identifier, or `list_allowed_license_templates` to see common permitted licenses. It helps maintain compliance by flagging non-permitted licenses automatically.
+This MCP server provides essential tools for securing the software supply chain by auditing dependency licenses. Use `audit_dependencies` to verify if a list of packages complies with your organization's whitelist, or use `get_dependency_license` to retrieve the specific SPDX identifier for a single package. The `validate_license_format` tool ensures that license strings are recognized SPDX identifiers. It acts as a bridge between your AI agent and your compliance policy, ensuring every dependency is vetted against your approved list.
 
 
 ## Available Tools (3)
-- **check_license_compliance**: 
+- **audit_dependencies**: 
 - **get_dependency_license**: 
-- **list_allowed_license_templates**: 
+- **validate_license_format**: 
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides tools to ensure software supply-chain security by valid
 Here are some examples of how you can interact with the **Dependency License Compliance Checker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Are these dependencies compliant with MIT and Apache-2.0 licenses: npm:lodash@4.17.21, npm:react@18.2.0?"
+> "Are the dependencies npm:lodash@4.17.21 and npm:react@18.2.0 compliant with the MIT and Apache-2.0 licenses?"
 
 **🤖 AI Agent:**
-> Yes, both dependencies are compliant with the specified licenses.
+> Yes, both dependencies are compliant with the provided license list.
 
 ---
 
 **👤 You:**
-> "What is the license for npm:react@18.2.0?"
+> "What is the license for npm:lodash@4.17.21?"
 
 **🤖 AI Agent:**
-> The license for npm:react@18.2.0 is MIT.
+> The license for npm:lodash@4.17.21 is MIT.
 
 ---
 
 **👤 You:**
-> "Check if npm:express@4.17.1 is compliant with MIT."
+> "Is 'GPL-3.0' a valid SPDX identifier?"
 
 **🤖 AI Agent:**
-> Yes, npm:express@4.17.1 is compliant with the MIT license.
+> Yes, 'GPL-3.0' is a valid and recognized SPDX identifier.
 
 
 ## ❓ FAQ
 
 **Q: How do I check if my dependencies are compliant?**
-You can use the `check_license_compliance` tool by providing a list of dependency strings and your list of allowed SPDX identifiers.
+You can use the `audit_dependencies` tool by providing a list of dependency strings and your list of allowed SPDX identifiers.
 
 **Q: What is an SPDX identifier?**
-An SPDX identifier is a standardized short-form text string used to identify software licenses, such as 'MIT' or 'Apache-2.0'.
+An SPDX identifier is a standardized short-form name for a software license, such as MIT or Apache-2.0, used for precise matching.
 
-**Q: Can I see a list of common licenses?**
-Yes, use the `list_allowed_license_templates` tool to retrieve a reference list of widely accepted SPDX license identifiers.
+**Q: Can I check a single package's license?**
+Yes, use the `get_dependency_license` tool to find the specific SPDX identifier for any individual dependency string.
 
 
 ## Installation & Usage

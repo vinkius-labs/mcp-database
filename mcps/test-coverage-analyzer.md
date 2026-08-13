@@ -7,16 +7,16 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Automated AST-based test coverage and logic gap analysis for LLM-generated code.
+Analyze test coverage and identify high-risk untested code using AST analysis.
 
 ## Description
-Test Coverage Analyzer connects AI agents to deep structural analysis of code quality. By parsing source code and test suites into Abstract Syntax Trees (AST), it identifies exactly which logic nodes are exercised and which remain untested. Use `analyze_coverage` to get a high-level overview of coverage and risk, `identify_uncovered_logic` to find specific structural gaps in complex functions, or `validate_test_mapping` to ensure a specific function is being correctly targeted by your tests.
+Test Coverage Analyzer provides deep visibility into how well your test suites exercise agent-generated code. By using deterministic Abstract Syntax Tree (AST) traversal, it identifies exactly which functions and classes are covered and which remain untested. Use `analyze_code_coverage` to get a full coverage percentage and a list of uncovered nodes. Use `identify_uncovered_complex_logic` to pinpoint high-risk areas where complex logic lacks verification. You can also use `map_test_targets` to confirm which specific code elements are being exercised by your tests. This tool helps ensure the auditability and reliability of LLM-generated workflows.
 
 
 ## Available Tools (3)
-- **analyze_coverage**: Calculate fundamental coverage metrics for a given pair of code and test strings
-- **identify_uncovered_logic**: Provide a deep-dive into specific logic blocks that lack validation
-- **validate_test_mapping**: Verify if the provided test suite is actually targeting the intended code structures
+- **analyze_code_coverage**: Provides a complete overview of how well the provided test suite exercises the source code
+- **identify_uncovered_complex_logic**: Specifically pinpoints high-risk areas where complex logic is completely unverified
+- **map_test_targets**: Determines exactly which functions and classes are being targeted by the provided test suite
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ Test Coverage Analyzer connects AI agents to deep structural analysis of code qu
 Here are some examples of how you can interact with the **Test Coverage Analyzer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Analyze the coverage for this code and test suite."
+> "What is the test coverage for this code?"
 
 **🤖 AI Agent:**
-> The coverage is 85%. The uncovered nodes are at lines 12 (Branch) and 15 (Loop). The critical path risk score is 0.4.
+> The current test coverage is 85%. There are 2 uncovered nodes at lines 12 and 45.
 
 ---
 
 **👤 You:**
-> "Find the logic gaps in this code where complexity is high."
+> "Are there any high-risk areas in my code?"
 
 **🤖 AI Agent:**
-> The following gaps were found: function 'processData' (lines 45-60) with a complexity score of 8.5.
+> Yes, the function `process_data_stream` at line 50 is high risk due to its high complexity and zero test coverage.
 
 ---
 
 **👤 You:**
-> "Is the function 'calculateTotal' covered by these tests?"
+> "Which functions are being tested by this suite?"
 
 **🤖 AI Agent:**
-> Yes, 'calculateTotal' is covered. It has 12 nodes hit out of 12 total nodes.
+> The test suite targets the following: `calculate_total` (covered) and `validate_user` (uncovered).
 
 
 ## ❓ FAQ
 
-**Q: How does the tool calculate coverage?**
-The tool uses deterministic AST traversal to map the execution paths of test cases against the set of all executable code nodes in the source code.
+**Q: How is coverage calculated?**
+Coverage is calculated by comparing the set of all executable nodes in the source AST against the set of nodes traversed during the test execution simulation.
 
-**Q: What is Critical Path Risk?**
-It is a metric that identifies high-risk areas where complex logic (deep nesting or multiple branches) has zero test coverage.
+**Q: What is a critical path risk score?**
+It is a metric representing the danger level of untested code, weighted by the logical complexity of the functions left uncovered.
 
-**Q: Can I check if a specific function is covered?**
-Yes, you can use the `validate_test_mapping` tool to verify if a specific target identifier is being exercised by the provided test suite.
+**Q: Can I use this with any programming language?**
+The tool uses AST traversal, so its support depends on the specific language parsers implemented in the engine.
 
 
 ## Installation & Usage

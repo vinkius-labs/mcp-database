@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [ai-agents](../categories/ai-agents.md)
+**Category:** [developer-tools](../categories/developer-tools.md)
 
-A diagnostic engine to validate the structural integrity and logical flow of multi-agent orchestration patterns.
+Validates structural and logical integrity of multi-agent orchestration patterns.
 
 ## Description
-This MCP server provides a suite of diagnostic tools to prevent runtime orchestration errors in multi-agent systems. It validates the structural integrity of coordination patterns like sequential, hierarchical, and collaborative flows. Use `validate_coordination_structure` to ensure agent definitions meet pattern requirements, `check_topology_integrity` to detect infinite loops or unreachable agents, and `verify_instruction_consistency` to confirm that agent roles align with the chosen architecture.
+This MCP server provides essential diagnostic tools to prevent execution failures in multi-agent frameworks like AutoGen or CrewAI. It ensures that orchestration patterns--such as sequential, hierarchical, or collaborative--are correctly implemented by checking for circular delegation, unreachable agents, and conflicting instructions. Use `validate_pattern_integrity` for a full structural audit, `check_delegation_flow` to detect logical deadlocks, and `verify_instruction_consistency` to ensure agent configurations align with the global coordination strategy.
 
 
 ## Available Tools (3)
-- **check_topology_integrity**: Detects logical flaws in the agent network such as infinite loops or isolated agents
-- **validate_coordination_structure**: Validates if the provided agent definitions conform to the specific structural requirements of the chosen coordination pattern
-- **verify_instruction_consistency**: Ensures that the instructions or roles assigned to agents do not contradict the governing coordination pattern
+- **check_delegation_flow**: Checks for logical deadlocks
+- **validate_pattern_integrity**: 
+- **verify_instruction_consistency**: Checks for contradictions
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides a suite of diagnostic tools to prevent runtime orchestr
 Here are some examples of how you can interact with the **Multi-Agent Coordination Pattern Validator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check if my sequential agent setup is valid."
+> "Validate my sequential agent setup for potential circular loops."
 
 **🤖 AI Agent:**
-> The coordination structure is valid. All agents in the sequential pattern have correctly defined successors.
+> The validation is complete. No circular delegation paths were detected in your sequential pattern.
 
 ---
 
 **👤 You:**
-> "Are there any circular loops in my agent topology?"
+> "Check if my hierarchical agents have any unreachable members."
 
 **🤖 AI Agent:**
-> No circular delegation detected. The agent network topology is clean.
+> All agents are reachable. Every subordinate has a valid supervisor path defined.
 
 ---
 
 **👤 You:**
-> "Verify if my manager agent's instructions are consistent with a hierarchical pattern."
+> "Run a full structural audit on my collaborative agent mesh."
 
 **🤖 AI Agent:**
-> The instructions are consistent. The manager agent correctly delegates tasks to worker agents.
+> The structural audit is finished. The orchestration pattern is valid and consistent.
 
 
 ## ❓ FAQ
 
 **Q: What does this tool validate?**
-It validates coordination structures, network topology (like circular loops), and instruction consistency for multi-agent systems.
+It validates the structural and logical integrity of multi-agent coordination patterns, identifying issues like circular delegation or unreachable agents using `validate_pattern_integrity` and `check_delegation_flow`.
 
-**Q: How do I check for infinite loops in my agent network?**
-You can use the `check_topology_integrity` tool to detect circular delegation chains and unreachable agents.
+**Q: Can I use this with AutoGen?**
+Yes, it is specifically designed to help prevent orchestration errors in frameworks like AutoGen and CrewAI.
 
-**Q: Can I use this with any AI client?**
-Yes, it is compatible with Cursor, VS Code, Claude Desktop, Windsurf, and any other MCP-compatible client via Vinkius Edge.
+**Q: How do I check for instruction conflicts?**
+You can use the `verify_instruction_consistency` tool to ensure individual agent settings do not contradict the chosen coordination pattern.
 
 
 ## Installation & Usage

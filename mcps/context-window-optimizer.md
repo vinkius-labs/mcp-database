@@ -7,16 +7,16 @@
 
 **Category:** [optimization](../categories/optimization.md)
 
-Optimally selects and orders context items to maximize relevance within token limits.
+Optimizes LLM context windows by selecting the most relevant and recent information within token limits.
 
 ## Description
-The Context Window Optimizer solves the problem of context overflow and relevance decay in LLM applications. It uses a deterministic greedy selection algorithm to pick the most important information based on relevance scores and recency. By using tools like `select_optimal_context`, `evaluate_context_efficiency`, and `filter_by_recency`, AI agents can ensure they always operate within their token budget while maintaining the highest possible information density. This is essential for complex workflows in LangChain and CrewAI where managing the attention mechanism is critical.
+The Context Window Optimizer solves the context overflow problem by acting as a deterministic selection engine. It filters large pools of information to ensure AI agents receive only the most pertinent data, preventing relevance decay and exceeding token limits. Using a greedy selection strategy, it prioritizes items based on relevance scores and recency. You can use `select_optimal_context` to pick the best items, `evaluate_selection_efficiency` to measure utilization, and `filter_by_relevance_threshold` to prune low-quality data.
 
 
 ## Available Tools (3)
-- **evaluate_context_efficiency**: Analyzes a selection of context to determine if it was optimized effectively
-- **filter_by_recency**: Removes outdated information from the candidate pool based on a specific time horizon
-- **select_optimal_context**: Determines which pieces of information should be included in the LLM prompt to maximize relevance without exceeding the token limit
+- **evaluate_selection_efficiency**: Measures how effectively the context was utilized relative to the total available budget
+- **filter_by_relevance_threshold**: Prunes the candidate list to remove low-quality information before performing the optimization
+- **select_optimal_context**: Determines the best set of context items to include in an LLM prompt based on relevance, recency, and token constraints
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Context Window Optimizer solves the problem of context overflow and relevanc
 Here are some examples of how you can interact with the **Context Window Optimizer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Select the best context from these items with a 500 token limit."
+> "Optimize this context for a 1000 token limit: [list of 50 items]"
 
 **🤖 AI Agent:**
-> The selected items are: [Item A (200 tokens, score 0.9), Item B (250 tokens, score 0.8)]. Total tokens used: 450.
+> The selected contexts include the system prompt, the last user message, and the 5 highest relevance items, totaling 850 tokens.
 
 ---
 
 **👤 You:**
-> "Filter out all context items older than 3600 seconds."
+> "How efficient was my last context selection?"
 
 **🤖 AI Agent:**
-> 3 items were removed, and 5 items remain within the time horizon.
+> Your utilization rate was 92% with a high relevance density of 0.85.
 
 ---
 
 **👤 You:**
-> "What is the efficiency of this context selection?"
+> "Filter out all context items with a relevance score below 0.5."
 
 **🤖 AI Agent:**
-> The utilization ratio is 0.92 and the density score is 0.85.
+> The filtering is complete. 12 items were removed, leaving 8 high-quality candidates.
 
 
 ## ❓ FAQ
 
 **Q: How does the selection process work?**
-The process uses `select_optimal_context` to sort items by relevance score and recency, then greedily adds them until the token limit is reached.
+The engine uses a deterministic greedy approach. It sorts all candidate items by relevance score (descending) and then by recency (descending), adding them to the selection until the token limit is reached.
 
 **Q: Can I reserve specific messages?**
-Yes, you can use the reservation rules in `select_optimal_context` to ensure the system prompt and the last user message are always included.
+Yes, you can use `select_optimal_context` with the `reserve_system_prompt` or `reserve_last_user_message` flags to ensure critical information is always included.
 
-**Q: How do I measure if my context is efficient?**
-You can use the `evaluate_context_efficiency` tool to get a report on utilization ratio, density score, and coverage gap.
+**Q: What is the optimization score?**
+The optimization score is a metric returned by the selection tool that represents the aggregate relevance of the items successfully selected within your budget.
 
 
 ## Installation & Usage

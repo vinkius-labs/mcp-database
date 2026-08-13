@@ -7,16 +7,16 @@
 
 **Category:** [reliability](../categories/reliability.md)
 
-Detects factual contradictions across multiple LLM responses to identify potential hallucinations.
+Detect factual contradictions across multiple LLM responses to identify potential hallucinations.
 
 ## Description
-This MCP server provides a diagnostic suite for evaluating the reliability of Large Language Model outputs. By analyzing multiple responses to the same query, it identifies factual inconsistencies that signal potential hallucinations. The system uses deterministic extraction to isolate dates, numbers, and entities, then performs logical comparisons to find contradictions. Use `analyze_consistency` to get a high-level reliability score, `extract_claims` to break down text into verifiable atoms, or `identify_contradictions` to pinpoint specific logical conflicts between claims.
+This MCP server provides a suite of tools to verify the reliability of LLM outputs by checking for factual consistency. By analyzing multiple responses to the same query, it uses deterministic claim extraction to identify conflicting dates, numbers, or entities. Use `analyze_consistency` to get a high-level report, `extract_claims` to break down specific assertions, or `find_contradictions` to pinpoint logical conflicts between sets of claims.
 
 
 ## Available Tools (3)
-- **extract_claims**: Decomposes raw text into individual, verifiable factual atoms
-- **analyze_consistency**: Performs the primary evaluation of multiple LLM responses to determine if they agree on the facts
-- **identify_contradictions**: Compares a set of claims to find logical conflicts
+- **extract_claims**: Decomposes text into individual factual assertions
+- **analyze_consistency**: Evaluates a set of LLM responses to determine if they are factually consistent
+- **find_contradictions**: Compares sets of claims to identify logical conflicts
 
 
 ## 💬 Prompt Examples
@@ -24,23 +24,23 @@ This MCP server provides a diagnostic suite for evaluating the reliability of La
 Here are some examples of how you can interact with the **Hallucination Detector via Consistency** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check if these three responses about the launch date of Apollo 11 are consistent: 1. Apollo 11 launched on July 16, 1969. 2. The Apollo 11 mission began on July 16, 1969. 3. Apollo 11 was launched on July 17, 1969."
+> "Check if these responses are consistent: ['The event happened in 2021.', 'The event occurred in 2022.']"
 
 **🤖 AI Agent:**
-> The responses are inconsistent. The third response claims a launch date of July 17, 1969, which contradicts the first two responses stating July 16, 1969.
+> The responses are inconsistent. The event date is contradictory (2021 vs 2022).
 
 ---
 
 **👤 You:**
-> "Extract the factual claims from this text: 'The company was founded in 2010 and has 500 employees.'"
+> "Extract the factual claims from: 'The population is 5 million and the capital is Paris.'"
 
 **🤖 AI Agent:**
-> The extracted claims are: Date: 2010, Number: 500.
+> The extracted claims are: population is 5 million, capital is Paris.
 
 ---
 
 **👤 You:**
-> "Are these responses consistent? 1. The capital of France is Paris. 2. Paris is the capital of France."
+> "Are these responses consistent? ['The price is $10.', 'The price is $10.']"
 
 **🤖 AI Agent:**
 > Yes, the responses are consistent.
@@ -48,14 +48,14 @@ Here are some examples of how you can interact with the **Hallucination Detector
 
 ## ❓ FAQ
 
-**Q: How does the tool detect hallucinations?**
-It uses `analyze_consistency` to compare multiple LLM responses. If the responses provide conflicting dates, numbers, or entities, the consistency score drops, flagging the output as potentially unreliable.
+**Q: How does the consistency score work?**
+The score is calculated by subtracting the ratio of unique contradictions to the total number of extracted claims from 1.0. A score of 1.0 means perfect agreement.
 
-**Q: What kind of data can be extracted?**
-The `extract_claims` tool specifically targets dates, numeric values, and named entities to ensure the analysis remains deterministic and verifiable.
+**Q: What can I do with `analyze_consistency`?**
+You can use `analyze_consistency` to pass a list of multiple LLM responses and receive a report containing a consistency score and indices of suspect responses.
 
-**Q: Can I adjust the sensitivity of the detection?**
-Yes, when using `analyze_consistency`, you can provide a custom threshold to make the detection more strict or more lenient.
+**Q: Can I customize the strictness of the detection?**
+Yes, you can provide a custom threshold value to `analyze_consistency` to define when a set of responses should be flagged as inconsistent.
 
 
 ## Installation & Usage

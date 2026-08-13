@@ -7,16 +7,16 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-A verification engine that ensures tool implementations strictly adhere to their declared input and output schemas.
+Ensures tool implementations strictly adhere to declared input and output schemas via deterministic fuzz testing.
 
 ## Description
-This MCP server provides a specialized verification engine designed to solve runtime type errors in AI agent workflows. It ensures that tool implementations strictly adhere to their declared interface contracts through deterministic, schema-aware fuzzing. By using `validate_tool_contract`, `generate_fuzz_inputs`, and `check_output_integrity`, developers can verify that tool outputs match expected structures, preventing failures in complex agentic loops. The engine identifies missing required fields, type mismatches, and unauthorized extra fields, providing a precise compliance score for every tool tested.
+Prevent contract drift in AI agent workflows. This MCP provides a validation engine that uses deterministic, schema-aware fuzz testing to verify that tool implementations match their declared interfaces. By testing boundary values and type transitions, it identifies type mismatches, missing required fields, and unexpected extra fields. Use `validate_contract` to verify implementations, `generate_test_suite` to preview stress-test inputs, and `analyze_compliance_report` to categorize failures.
 
 
 ## Available Tools (3)
-- **check_output_integrity**: Verify a single tool output against a target schema
-- **generate_fuzz_inputs**: Create structured, edge-case-heavy test inputs based on a JSON schema
-- **validate_tool_contract**: Perform a full validation sweep of a tool implementation against its interface
+- **generate_test_suite**: 
+- **analyze_compliance_report**: 
+- **validate_contract**: 
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides a specialized verification engine designed to solve run
 Here are some examples of how you can interact with the **Tool Interface Contract Validator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Validate if my tool implementation matches its definition."
+> "Verify if my calculator tool matches its schema."
 
 **🤖 AI Agent:**
-> The tool is compliant with a score of 1.0. No violations were found during the fuzzing process.
+> The tool is compliant with a compliance score of 1.0. No violations were detected.
 
 ---
 
 **👤 You:**
-> "Generate test inputs for this JSON schema."
+> "Why is my tool failing validation?"
 
 **🤖 AI Agent:**
-> I have generated 5 unique test cases targeting boundary conditions and nullability for your schema.
+> The primary failure mode is 'Schema Mismatch' with 2 violations detected. The tool is missing a required field in its output.
 
 ---
 
 **👤 You:**
-> "Check if this specific output is valid against my schema."
+> "Show me the test cases for this input schema."
 
 **🤖 AI Agent:**
-> The output is invalid. It is missing the required field 'user_id' and the 'age' field is a string instead of an integer.
+> The generated test suite contains 12 test cases targeting boundary values and required fields.
 
 
 ## ❓ FAQ
 
-**Q: What is deterministic schema-aware fuzzing?**
-It is a testing method where inputs are generated based on the constraints of a JSON schema. Unlike random fuzzing, it uses specific rules to target edge cases like boundary values and nullability while remaining structurally valid.
+**Q: What is contract drift?**
+Contract drift occurs when a tool's actual behavior diverges from its documented interface, causing failures in LLM orchestrators like LangChain or CrewAI.
 
-**Q: How does the validator detect errors?**
-The engine uses `check_output_integrity` to compare the actual tool output against the expected schema, identifying structural violations, type mismatches, or extra fields.
+**Q: How does the validation work?**
+The engine uses deterministic schema-aware fuzzing to generate test cases based on your `inputSchema`, specifically targeting boundary values and type transitions.
 
-**Q: Can I use this with any AI client?**
-Yes. This MCP server can be connected to Cursor, VS Code, Claude Desktop, Windsurf, and any other MCP-compatible client via Vinkius Edge.
+**Q: Can I see the test cases before running validation?**
+Yes, you can use the `generate_test_suite` tool to preview the specific test inputs that will be used to stress-test your tool's contract.
 
 
 ## Installation & Usage

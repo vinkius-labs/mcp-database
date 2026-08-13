@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [devops](../categories/devops.md)
+**Category:** [observability](../categories/observability.md)
 
-Detects performance regressions and degradation trends in LLM agent execution times.
+Detects performance regressions and predicts execution time failures in LLM workflows.
 
 ## Description
-This MCP server provides statistical diagnostic tools to monitor LLM agent performance. It identifies execution time regressions using baseline medians and standard deviations, detects systematic degradation via linear regression trends, and predicts the time remaining before performance hits critical limits. Use `analyze_execution_performance` to find specific outliers, `detect_performance_trend` to see if speed is decreasing over time, and `predict_failure_horizon` to estimate when a performance threshold will be breached.
+This MCP server identifies performance regressions in agent execution times to prevent cost spikes and reliability degradation. It uses deterministic statistical calculations to identify anomalies via `analyze_execution_anomalies`, determine systemic slowdowns with `calculate_performance_trend`, and forecast future latency breaches using `predict_failure_horizon`.
 
 
 ## Available Tools (3)
-- **predict_failure_horizon**: Estimates how much longer the system can operate before execution times reach an unacceptable limit
-- **analyze_execution_performance**: Identifies specific instances where execution time has deviated significantly from the established baseline
-- **detect_performance_trend**: Determines if the agent's performance is systematically degrading over time using linear regression
+- **predict_failure_horizon**: Forecasts when performance will reach a critical limit based on current degradation trends
+- **analyze_execution_anomalies**: Identifies specific execution instances that deviate significantly from historical performance
+- **calculate_performance_trend**: Determines if the system is experiencing a systemic slowdown over time
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides statistical diagnostic tools to monitor LLM agent perfo
 Here are some examples of how you can interact with the **Performance Regression Detector** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check if there are any performance regressions in these execution times: [10, 12, 11, 13, 25, 12, 11]."
+> "Are there any performance regressions in my recent execution history?"
 
 **🤖 AI Agent:**
-> Yes, a regression was detected. The execution time of 25 seconds exceeded the calculated threshold.
+> Yes, there is a regression detected. The recent execution time exceeded the threshold of 1.5s.
 
 ---
 
 **👤 You:**
-> "Is my agent's performance degrading based on these times: [5, 6, 7, 8, 9]?"
+> "Is my agent's performance degrading over time?"
 
 **🤖 AI Agent:**
-> Yes, the performance is degrading with a positive trend slope indicating increasing execution times.
+> Yes, the trend slope is positive, indicating a systemic slowdown in execution times.
 
 ---
 
 **👤 You:**
-> "When will the execution time hit 20 seconds if the current trend continues for these times: [10, 11, 12]?"
+> "How many cycles until we hit a 5-second latency limit?"
 
 **🤖 AI Agent:**
-> Based on the current trend, the execution time is predicted to reach 20 seconds in approximately 8 more steps.
+> Based on the current degradation trend, there are approximately 12 execution cycles remaining before the 5-second limit is reached.
 
 
 ## ❓ FAQ
 
-**Q: How is a performance regression defined?**
-A regression is flagged when an execution time exceeds the baseline median plus two times the baseline standard deviation.
+**Q: How does the tool identify a regression?**
+An execution is flagged as a regression if its duration exceeds the baseline median plus two times the baseline standard deviation.
 
-**Q: Can I predict when my agent will hit a performance limit?**
-Yes, by using `predict_failure_horizon`, you can estimate the number of steps remaining before execution times reach a specified critical limit based on current trends.
+**Q: Can I predict when my agent will hit a latency limit?**
+Yes, by using `predict_failure_horizon`, you can estimate the number of execution cycles remaining before a critical latency limit is breached based on current trends.
 
-**Q: What data is required for analysis?**
-The tools require a chronological list of execution durations in seconds provided via the `executionTimeHistory` parameter.
+**Q: What is the purpose of the trend analysis?**
+The `calculate_performance_trend` tool uses linear regression to determine if the system is experiencing a systemic slowdown over time.
 
 
 ## Installation & Usage

@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [agent-orchestration](../categories/agent-orchestration.md)
+**Category:** [monitoring](../categories/monitoring.md)
 
-Tracks and enforces resource consumption limits for agentic workflows.
+Tracks and enforces resource usage limits for agent executions.
 
 ## Description
-Resource Usage Accountant prevents unbounded resource consumption in multi-agent systems. It monitors CPU time, memory, file descriptors, and network bytes across individual agents or entire orchestration sessions. By using tools like `report_usage` to log increments and `configure_limits` to set thresholds, it ensures agentic workflows stay within safe operational bounds. This bridge allows AI agents to maintain strict control over their computational footprint.
+The Resource Usage Accountant provides a governance layer to prevent runaway resource consumption in multi-agent frameworks. It monitors CPU time, memory, file descriptors, and network bytes to ensure stability and cost control. Using `get_usage_summary`, agents can check their current consumption and remaining limits. The `record_consumption` tool allows for precise, deterministic updates to usage counters, while `apply_thresholds` enables setting custom guardrails for specific agents or sessions.
 
 
 ## Available Tools (3)
-- **configure_limits**: Sets the resource thresholds for an agent or a session
-- **get_current_status**: Retrieves the current resource state for a specific agent or session without modifying counters
-- **report_usage**: Records a new measurement of resource consumption for a specific agent or session
+- **get_usage_summary**: Get a summary of current resource usage and remaining limits for a scope
+- **apply_thresholds**: Update or set resource usage limits for a scope
+- **record_consumption**: Record incremental resource consumption for a scope
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ Resource Usage Accountant prevents unbounded resource consumption in multi-agent
 Here are some examples of how you can interact with the **Resource Usage Accountant** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Set a memory limit of 512MB for agent 'researcher_01'."
+> "How much memory has the agent with ID 'agent-123' used so far?"
 
 **🤖 AI Agent:**
-> {"success": true, "appliedLimits": {"cpuTimeLimitMs": null, "memoryLimitBytes": 536870912, "fileDescriptorLimit": null, "networkByteLimit": null}}
+> The agent 'agent-123' has used 256 MB of memory, with 768 MB remaining before reaching its limit.
 
 ---
 
 **👤 You:**
-> "What is the current CPU usage for session 'session_abc'?"
+> "Check the current resource status for session 'session-abc'."
 
 **🤖 AI Agent:**
-> {"currentUsage": {"cpuTimeMs": 1250, "memoryBytes": 10485760, "fileDescriptors": 5, "networkBytes": 51200}, "limitsRemaining": {"cpuTimeMs": 8750, "memoryBytes": 50000000, "fileDescriptors": 15, "networkBytes": 1000000}, "usageExceeded": false}
+> Session 'session-abc' has consumed 500ms of CPU time and 10MB of network bytes. No limits have been exceeded.
 
 ---
 
 **👤 You:**
-> "Report that agent 'worker_v2' just used 50ms of CPU and 1MB of memory."
+> "Set the memory limit for agent 'agent-456' to 512 MB."
 
 **🤖 AI Agent:**
-> {"currentUsage": {"cpuTimeMs": 50, "memoryBytes": 1048576, "fileDescriptors": 0, "networkBytes": 0}, "limitsRemaining": {"cpuTimeMs": 950, "memoryBytes": 49000000, "fileDescriptors": 10, "networkBytes": 500000}, "usageExceeded": false, "projectedCompletionPossible": true}
+> The memory limit for agent 'agent-456' has been successfully updated to 536870912 bytes.
 
 
 ## ❓ FAQ
 
-**Q: How do I set resource limits for my agents?**
-You can use the `configure_limits` tool to define maximum allowed CPU time, memory, file descriptors, or network bytes for a specific agent or a whole session.
+**Q: How do I check if an agent is approaching its limits?**
+You can use the `get_usage_summary` tool to retrieve the current usage and the remaining limits for a specific agent or session.
 
-**Q: Can I track usage for an entire multi-agent session?**
-Yes, by providing a `sessionId` to `report_usage` or `get_current_status`, you can track the aggregate footprint of all agents participating in that session.
+**Q: Can I set different limits for different agents?**
+Yes, you can use `apply_thresholds` to define custom maximum allowable values for CPU, memory, file descriptors, or network bytes for any specific scope.
 
-**Q: What happens when a resource limit is reached?**
-The `usageExceeded` flag in the status report will return true, allowing your orchestration logic to halt or adjust the agent's execution.
+**Q: When should I record resource consumption?**
+You should call `record_consumption` after every execution step to ensure the cumulative counters accurately reflect the agent's resource footprint.
 
 
 ## Installation & Usage
