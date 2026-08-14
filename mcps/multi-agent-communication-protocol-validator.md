@@ -13,13 +13,10 @@ Analyze and verify the structural integrity of autonomous agent communication lo
 The Multi-Agent Communication Protocol Validator is an analytical engine designed to audit message passing between autonomous agents. It ensures that every inter-agent interaction adheres to a strict four-part envelope: From, To, Subject, and Payload. By using deterministic string tokenization, the validator provides repeatable results for verifying protocol compliance. Use `validate_envelope_structure` to check for missing fields, `calculate_message_hops` to track data transitions, `identify_circular_routes` to detect infinite loops in agent networks, and `analyze_overhead_ratio` to measure communication efficiency by comparing payload size against metadata overhead.
 
 
-## Available Tools (4)
-- **analyze_overhead_ratio**: Input format: "MetadataSize|PayloadSize".
-
-Assesses the efficiency of the protocol by comparing payload size to metadata size
-- **calculate_message_hops**: Determines the total number of communication transitions that have occurred
-- **identify_circular_routes**: Detects if any messages are trapped in repetitive paths between agents
-- **validate_envelope_structure**: Verifies if all messages in a log adhere to the mandatory four-part envelope
+## Available Tools (3)
+- **calculate_efficiency_metrics**: 
+- **trace_message_path**: 
+- **validate_envelope_structure**: 
 
 
 ## 💬 Prompt Examples
@@ -51,14 +48,14 @@ Here are some examples of how you can interact with the **Multi-Agent Communicat
 
 ## ❓ FAQ
 
-**Q: What is the required message envelope structure?**
-Every valid message must contain exactly four parts: From, To, Subject, and Payload. The validator uses `validate_envelope_structure` to ensure no part is missing.
+**Q: How do I verify if a log entry is valid?**
+You can use the `validate_envelope_structure` tool to check if a raw log entry contains the mandatory From, To, Subject, and Payload fields.
 
-**Q: How can I detect infinite loops in my agent network?**
-You can use the `identify_circular_routes` tool. It scans the log history for repeating sender/receiver pairs that indicate a message is trapped in a closed circuit.
+**Q: Can this tool detect infinite loops in agent communication?**
+Yes, the `trace_message_path` tool tracks sender-receiver pairs to identify circular routing loops within a message sequence.
 
-**Q: How does the tool measure communication efficiency?**
-The `analyze_overhead_ratio` tool compares the total length of all Payload segments against the metadata (From, To, and Subject). A higher ratio indicates more efficient use of bandwidth.
+**Q: What does the efficiency metric represent?**
+The `calculate_efficiency_metrics` tool calculates the ratio of the actual payload size against the structural metadata size to measure data density.
 
 
 ## Installation & Usage

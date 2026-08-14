@@ -7,18 +7,16 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Analyze LLM tool descriptions for linguistic precision and structural integrity.
+Analyzes LLM tool descriptions to evaluate linguistic precision, verb density, and naming consistency.
 
 ## Description
-The Tool Description Semantic Density Scorer is an analytical engine designed to evaluate the linguistic precision and structural integrity of LLM tool descriptions. It provides a specialized pipeline for assessing how effectively instructions are communicated to AI agents. The server implements `calculate_verb_density` to measure the concentration of imperative, action-oriented verbs within a text block, calculating a density ratio that identifies 'fluff' versus actionable commands. Through `analyze_naming_uniformity`, it audits parameter lists for casing consistency (e.g., `camelCase` vs `snake_case`) to prevent downstream parsing failures in automated integration layers. Finally, the `evaluate_description_clarity` tool acts as a primary aggregator, computing a weighted clarity score by integrating verb density, naming uniformity, and the presence of explicit return-type definitions (e.g., 'returns a string'). This ensures that every tool definition is optimized for high-reliability function calling in clients like Cursor, VS Code, Claude Desktop, and Windsurf.
+This MCP server provides advanced linguistic analysis for LLM tool descriptions. It quantifies 'instructional density' by measuring verb density, evaluates parameter naming uniformity (camelCase vs snake_case), and calculates a composite clarity score. Use `analyze_description_linguistics` to measure action-oriented language, `calculate_naming_uniformity` to ensure schema consistency, and `get_clarity_score` to assess overall semantic quality and return-type explicitness.
 
 
 ## Available Tools (3)
-- **analyze_naming_uniformity**: g., camelCase, snake_case).
-
-Analyzes the uniformity of naming conventions in a list of parameters
-- **calculate_verb_density**: Calculates the density of verbs in a given text
-- **evaluate_description_clarity**: Evaluates the clarity of a description based on its content and parameter names
+- **calculate_naming_uniformity**: Checks if the parameter naming within the description follows a consistent casing convention
+- **get_clarity_score**: Provides a final assessment of how well an LLM will understand the tool based on semantic markers
+- **analyze_description_linguistics**: Evaluates the actionable quality of the text by measuring verb density
 
 
 ## 💬 Prompt Examples
@@ -26,38 +24,38 @@ Analyzes the uniformity of naming conventions in a list of parameters
 Here are some examples of how you can interact with the **Tool Description Semantic Density Scorer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Analyze this tool description: 'This tool fetches user data and returns a string.'"
+> "Analyze the verb density of this description: 'This tool is used for fetching user data.'"
 
 **🤖 AI Agent:**
-> The `evaluate_description_clarity` analysis shows a functional clarity score, as it contains an imperative verb ('fetches') and an explicit return type ('returns a string'), though the semantic density could be improved by adding more detail.
+> {"verbCount": 1, "totalWordCount": 10, "densityRatio": 0.1}
 
 ---
 
 **👤 You:**
-> "Check if these parameters are consistent: ['user_id', 'user_name', 'userAge']"
+> "Check if the parameter 'user_id' follows camelCase."
 
 **🤖 AI Agent:**
-> The `analyze_naming_uniformity` tool detected a mismatch. The primary style is `snake_case`, but 'userAge' deviates from this convention, resulting in a reduced uniformity score.
+> {"matchCount": 0, "mismatchCount": 1, "uniformityScore": 0.0}
 
 ---
 
 **👤 You:**
-> "Calculate the verb density for: 'Retrieve the record and then update it.'"
+> "What is the clarity score for: 'Retrieve user profile by ID. Returns a JSON object.'"
 
 **🤖 AI Agent:**
-> The `calculate_verb_density` tool identified 2 imperative verbs ('Retrieve', 'update') within a 7-word string, resulting in a high density ratio of approximately 0.28.
+> {"finalScore": 0.95, "lengthPenalty": 0, "clarityRating": "High"}
 
 
 ## ❓ FAQ
 
-**Q: What is semantic density in the context of tool descriptions?**
-Semantic density refers to the ratio of actionable information to total text length. A high-density description uses imperative verbs and provides clear return types, minimizing linguistic noise that can distract an LLM during function calling.
+**Q: What is verb density?**
+Verb density is the ratio of imperative/action verbs to the total word count in a description. High density indicates more direct instructions for the LLM.
 
-**Q: How does the `analyze_naming_uniformity` tool work?**
-The `analyze_naming_uniformity` tool inspects an array of parameter names to detect deviations from a primary casing convention, such as `camelCase` or `snake_case`. It returns a uniformity score and identifies the detected style.
+**Q: How does the clarity score work?**
+The clarity score is a composite metric that rewards explicit return-type definitions and penalizes descriptions that are either too brief or too verbose.
 
-**Q: Can this server help improve my agent's reliability?**
-Yes. By using `evaluate_description_clarity`, you can identify descriptions that lack explicit return types or use ambiguous language, allowing you to refine your tools for more deterministic and reliable execution in AI clients.
+**Q: Can I check for snake_case consistency?**
+Yes, you can use `calculate_naming_uniformity` to verify if parameter names follow either camelCase or snake_case conventions.
 
 
 ## Installation & Usage

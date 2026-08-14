@@ -5,20 +5,18 @@
 
 ## Overview
 
-**Category:** [quality-assurance](../categories/quality-assurance.md)
+**Category:** [developer-tools](../categories/developer-tools.md)
 
-Detect structural deviations in LLM outputs against reference templates.
+Quantifies structural deviations in LLM responses by comparing exact syntax and markdown hierarchies against a reference template.
 
 ## Description
-The LLM Output Format Drift Detector is a specialized comparison engine designed to ensure that AI-generated content adheres strictly to predefined structural patterns. By using deterministic string alignment, it analyzes markdown syntax and punctuation markers—such as headers, list styles, and bold text—to calculate a precise drift percentage. This tool is essential for developers building automated evaluation pipelines where the structural integrity of an LLM response is just as critical as its semantic content. You can use `calculate_drift_score` to quantify deviations, `detect_structural_anomalies` to find missing sections or altered list styles, and `verify_compliance_truth` to get a definitive pass/fail verdict based on your specific tolerance levels.
+This MCP server provides specialized tools to measure how much an LLM's output deviates from a target structural blueprint. By using deterministic string alignment, it identifies 'Structural Drift'--differences in markdown headers, list styles, and punctuation--without being distracted by semantic meaning. Use `calculate_drift_score` to get a precise percentage of divergence, `validate_format_compliance` for a binary pass/fail verdict based on a tolerance threshold, and `analyze_structural_anomalies` to pinpoint specific failures like broken markdown hierarchies or missing sections.
 
 
 ## Available Tools (3)
-- **verify_compliance_truth**: Defaults to zero-tolerance (0% drift).
-
-Provide a definitive pass/fail verdict on structural integrity
-- **calculate_drift_score**: Quantify the degree of structural deviation as a percentage
-- **detect_structural_anomalies**: Identify specific types of structural failures
+- **validate_format_compliance**: Provides a strict pass/fail verdict on whether an output matches the required structural blueprint
+- **analyze_structural_anomalies**: Identifies specific types of structural failures such as broken markdown hierarchies or inconsistent list styles
+- **calculate_drift_score**: Computes the numerical degree of structural divergence between a generated output and a reference template
 
 
 ## 💬 Prompt Examples
@@ -26,40 +24,38 @@ Provide a definitive pass/fail verdict on structural integrity
 Here are some examples of how you can interact with the **LLM Output Format Drift Detector** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check if this output matches my template: # Header
-- Item 1"
+> "Check if this output matches my template."
 
 **🤖 AI Agent:**
-> The `calculate_drift_score` tool reports a drift percentage of 0.0%, indicating perfect structural alignment with your template.
+> The output is compliant with a drift percentage of 0.0.
 
 ---
 
 **👤 You:**
-> "Identify what is wrong with this markdown: # Title
-1. First item"
+> "What structural issues are in this response?"
 
 **🤖 AI Agent:**
-> The `detect_structural_anomalies` tool identified a list style mismatch: the template expected bulleted items, but found a numbered list.
+> The analysis detected `hasHeaderDrift` and `hasListStyleDrift` due to inconsistent markdown usage.
 
 ---
 
 **👤 You:**
-> "Is this output compliant with a 5% drift threshold?"
+> "Calculate the drift score for this text."
 
 **🤖 AI Agent:**
-> The `verify_compliance_truth` tool returned isCompliant: true, as the actual drift score was 2.5%, which is within your allowed threshold.
+> The structural drift is 15.5% with 85 alignment points.
 
 
 ## ❓ FAQ
 
-**Q: What exactly is structural drift?**
-Structural drift refers to the deviation of an LLM output's markdown structure from a reference template. This includes changes in header hierarchy, list markers (like switching from bullets to numbers), or unexpected punctuation.
+**Q: Does this tool check the meaning of the text?**
+No. This tool focuses exclusively on structural drift, such as markdown headers and list markers, rather than semantic content.
 
-**Q: How does the tool calculate the drift percentage?**
-The `calculate_drift_score` tool uses deterministic string alignment to compare structural markers in your template against the actual output. The percentage is calculated as the ratio of mismatched or missing markers to the total number of elements found in the template.
+**Q: How is the drift percentage calculated?**
+The `calculate_drift_score` tool uses deterministic string alignment to compare the target output against the reference template, measuring the proportion of structural mismatches.
 
-**Q: Can I set a tolerance for compliance?**
-Yes. When using `verify_compliance_truth`, you can provide an `allowedDriftThreshold`. If no threshold is specified, the tool defaults to a zero-tolerance policy.
+**Q: Can I set a custom tolerance for compliance?**
+Yes, when using `validate_format_compliance`, you can provide a `toleranceThreshold` between 0.0 and 1.0 to define your acceptable drift limit.
 
 
 ## Installation & Usage

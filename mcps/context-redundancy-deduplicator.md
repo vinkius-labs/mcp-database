@@ -14,9 +14,9 @@ The Context Redundancy Deduplicator MCP server provides a deterministic engine f
 
 
 ## Available Tools (3)
-- **analyze_redundancy**: Analyzes an array of documents for redundancy
-- **get_redundant_segments**: Identifies duplicate N-gram sequences in a text
-- **summarize_impact**: Summarizes the impact of removing redundancy
+- **analyze_redundancy**: Perform a comprehensive redundancy analysis across a set of documents using a specific N-gram size
+- **calculate_savings_projection**: Estimate the impact of deduplication on context window limits or storage
+- **find_duplicate_segments**: Isolate and identify the specific text blocks that are identical across the provided documents
 
 
 ## 💬 Prompt Examples
@@ -48,14 +48,14 @@ Here are some examples of how you can interact with the **Context Redundancy Ded
 
 ## ❓ FAQ
 
-**Q: How does the server identify redundant text?**
-The server uses exact string hashing of configurable N-gram sequences (e.g., 5-grams) across all provided documents to detect identical character or token patterns.
+**Q: What is an N-gram in this context?**
+An N-gram is a contiguous sequence of N items (characters or words) from a given sample of text used to identify repetitions.
 
-**Q: What is the significance of the 70% threshold?**
-Any document where more than 70% of its N-grams are found in other documents is flagged as a high-redundancy outlier, indicating it can be significantly pruned.
+**Q: How is the redundancy percentage calculated?**
+It is the ratio of the total number of characters that are part of a duplicate N-gram sequence to the total number of characters across all original documents.
 
-**Q: Can I use this to save costs in LLM API usage?**
-Yes. By using `analyze_redundancy` and `summarize_impact`, you can determine the exact byte-size savings, which directly translates to reduced token consumption and lower costs.
+**Q: When is a document flagged?**
+A document is flagged when its unique content is significantly superseded by repeated content found elsewhere, specifically when the overlap exceeds 70%.
 
 
 ## Installation & Usage

@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [text-processing](../categories/text-processing.md)
+**Category:** [data-extraction](../categories/data-extraction.md)
 
-Extracts metadata, structural markers, and efficiency metrics from RAG source documents using deterministic regex patterns.
+Extracts metadata and calculates data density for RAG source documents.
 
 ## Description
-The RAG Payload Metadata Extractor MCP server provides a specialized engine for parsing raw text from RAG (Retrieval-Augmented Generation) source documents. It uses deterministic regex patterns to identify key metadata components such as titles, URLs, dates, and authors within document headers. Beyond simple extraction, the server computes critical efficiency metrics, including the extraction success rate per document and the exact byte-size ratio of metadata versus core content (payload overhead). This allows developers to quantify 'context bloat'—the amount of non-informative structural data consuming the LLM context window. By utilizing tools like `extract_metadata` and `get_structural_summary`, you can audit large datasets for metadata integrity and optimize your RAG pipelines for maximum information density.
+This MCP server provides deterministic tools to validate the structural integrity of RAG source documents. It uses strict pattern matching to identify metadata like Title, URL, Date, and Author. Use `extract_document_metadata` to pull specific fields, `calculate_size_metrics` to compare metadata byte size against core content, and `audit_document_integrity` to determine if a document is fit for RAG ingestion based on its header validity and success rate.
 
 
 ## Available Tools (3)
-- **extract_markers**: Extract markdown structural markers from text
-- **extract_metadata**: Extract metadata pairs from text using @key: value pattern
-- **get_structural_summary**: Provide a structural summary of the text
+- **audit_document_integrity**: Provide a high-level summary of whether a document is fit for RAG ingestion
+- **calculate_size_metrics**: Quantify the data distribution between metadata and the core body of a document
+- **extract_document_metadata**: Extract specific metadata fields from a raw document string
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The RAG Payload Metadata Extractor MCP server provides a specialized engine for 
 Here are some examples of how you can interact with the **RAG Payload Metadata Extractor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Extract the metadata from this text: '@title: Annual Report\n@author: Jane Doe\n@url: https://vinkius.com/docs\n\nThis is the content.'"
+> "Can you extract the metadata from this document: 'Title: Report A, URL: https://a.com, Date: 2023, Author: John'?"
 
 **🤖 AI Agent:**
-> {"extractedTitle": "Annual Report", "extractedUrl": "https://vinkius.com/docs", "extractionSuccessRate": 0.5, "metadataByteSize": 45, "contentByteSize": 28}
+> The extracted metadata includes Title: Report A, URL: https://a.com, Date: 2023, and Author: John.
 
 ---
 
 **👤 You:**
-> "Check the efficiency of these extraction results."
+> "Is this document suitable for RAG ingestion?"
 
 **🤖 AI Agent:**
-> The average overhead percentage across the provided dataset is 12.5%, with a highest observed overhead ratio of 0.45.
+> The document is fit for RAG ingestion as it contains a valid header and all required metadata fields were successfully identified.
 
 ---
 
 **👤 You:**
-> "Identify structural markers in this markdown snippet."
+> "What is the metadata to content ratio for this file?"
 
 **🤖 AI Agent:**
-> The scan identified the following markers: '#', '*', and '-'.
+> The metadata occupies 120 bytes, while the core content occupies 1500 bytes, resulting in a ratio of 0.08.
 
 
 ## ❓ FAQ
 
 **Q: How does the extraction process work?**
-The server uses deterministic regex patterns to scan the beginning of a document for specific markers like '@author:' or '@url:'. Because it is deterministic rather than probabilistic, it only identifies data that strictly adheres to your predefined structural templates.
+The server uses deterministic regex patterns to identify metadata keys within a document's header. You can use `extract_document_metadata` to retrieve these fields.
 
-**Q: What is 'payload overhead'?**
-Payload overhead refers to the ratio of metadata bytes to the actual core content size. High overhead indicates that a significant portion of your LLM context window is being occupied by structural headers rather than useful information.
+**Q: What defines a document as fit for RAG?**
+A document is considered fit for RAG if it has a valid metadata header and a 100% success rate in field extraction, as verified by `audit_document_integrity`.
 
-**Q: Can I use this to audit large datasets?**
-Yes. By using the `extract_metadata` tool, you can process a collection of extraction results to identify exactly which documents are missing essential metadata headers.
+**Q: Can I measure the density of my document metadata?**
+Yes, the `calculate_size_metrics` tool provides the byte-size ratio between the extracted metadata and the core document content.
 
 
 ## Installation & Usage

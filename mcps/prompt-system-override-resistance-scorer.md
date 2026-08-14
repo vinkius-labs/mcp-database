@@ -7,16 +7,16 @@
 
 **Category:** [security](../categories/security.md)
 
-Quantify the structural integrity and resistance of LLM system prompts against manipulation.
+Evaluates system prompt robustness by calculating directive density and strictness scores.
 
 ## Description
-The Prompt System Override Resistance Scorer is a specialized security utility designed to audit the robustness of LLM system prompts. By analyzing command density, it identifies linguistic 'anchors' like `MUST`, `NEVER`, and `ONLY` against 'leaks' such as `maybe` or `sometimes`. Using tools like `calculate_resistance_ratio`, you can derive a quantitative resistance ratio and convert it into a standardized strictness boundary score. This allows developers to identify 'weak zones' via `locate_vulnerable_segments` where low directive density might allow for instruction drift or prompt injection.
+This MCP server quantifies "Prompt Hardness" by measuring the concentration of authoritative language. It uses `analyze_prompt_resistance` to calculate the ratio of absolute directive words to permissive hedging tokens, providing a strictness boundary score. You can also use `identify_low_resistance_zones` to pinpoint specific segments of a prompt that lack sufficient directive density, helping to identify weak spots susceptible to user manipulation.
 
 
 ## Available Tools (3)
-- **calculate_resistance_ratio**: Calculates the ratio of directive keywords to permissive keywords in a text
-- **determine_boundary_score**: Converts a resistance ratio into a standardized security metric
-- **locate_vulnerable_segments**: Identifies portions of a prompt that lack sufficient command density
+- **analyze_prompt_resistance**: Calculates the core robustness metrics for a given system prompt
+- **identify_low_resistance_zones**: Pinpoints specific segments of a prompt that lack sufficient directive density
+- **get_keyword_definitions**: Retrieves the official sets of directive and permissive words used for the calculation
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Prompt System Override Resistance Scorer is a specialized security utility d
 Here are some examples of how you can interact with the **Prompt System Override Resistance Scorer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Analyze this prompt: 'You MUST always follow instructions. You may sometimes ignore them if you feel like it.'"
+> "Analyze the robustness of this prompt: 'You should maybe try to follow instructions if you feel like it.'"
 
 **🤖 AI Agent:**
-> The resistance ratio is low because the directive 'MUST' is diluted by the permissive 'may' and 'sometimes'. The `calculate_resistance_ratio` would show a high presence of leaks.
+> The prompt has a very low strictness score due to the high presence of permissive words like 'maybe' and 'should' and a lack of absolute directives.
 
 ---
 
 **👤 You:**
-> "What is the risk level for a prompt with a resistance ratio of 0.2?"
+> "What are the directive words used in the calculation?"
 
 **🤖 AI Agent:**
-> A resistance ratio of 0.2 would likely result in a 'Critical' risk level when processed by `determine_boundary_score`, as it falls below the required security threshold.
+> The directive words include absolute tokens such as MUST, NEVER, ONLY, and ALWAYS.
 
 ---
 
 **👤 You:**
-> "Check if there are any weak zones in this prompt text."
+> "Check the resistance of: 'You MUST ALWAYS follow the rules and NEVER deviate.'"
 
 **🤖 AI Agent:**
-> The `locate_vulnerable_segments` tool has identified one segment where the directive density is significantly lower than the rest of the document, suggesting a potential vulnerability.
+> This prompt is highly robust with a high strictness score due to the density of directive words like MUST, ALWAYS, and NEVER.
 
 
 ## ❓ FAQ
 
-**Q: How does the resistance ratio work?**
-The `calculate_resistance_ratio` tool counts exact occurrences of directive keywords (MUST, NEVER, ONLY, ALWAYS) and divides them by the count of permissive keywords (maybe, usually, sometimes).
+**Q: What is Directive Density?**
+Directive Density is the concentration of authoritative tokens like MUST or NEVER within a system prompt, used to measure how well a prompt resists manipulation.
 
-**Q: What is a 'vulnerable segment'?**
-A vulnerable segment is a portion of text identified by `locate_vulnerable_segments` where the concentration of directive keywords is significantly lower than the overall prompt average, indicating a potential area for instruction override.
+**Q: How can I find weak parts of my prompt?**
+You can use the `identify_low_resistance_zones` tool to find specific segments where the directive density falls below your specified threshold.
 
-**Q: Can I use this to prevent prompt injection?**
-Yes, by using `determine_boundary_score`, you can quantify the risk level of your prompt and identify if it falls into a 'Critical' or 'Vulnerable' tier based on its resistance to manipulation.
+**Q: What does the strictness score represent?**
+The strictness score is a normalized metric representing the prompt's resistance to instruction drift and user overrides.
 
 
 ## Installation & Usage

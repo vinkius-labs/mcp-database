@@ -7,14 +7,16 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Extracts and validates tool arguments from LLM action text.
+Audits LLM tool calls to detect missing parameters and value hallucinations.
 
 ## Description
-The Tool Argument Completeness Checker is a specialized MCP server designed to bridge the gap between an LLM's proposed tool call and its actual execution requirements. By analyzing raw action text, it uses regex-based extraction and keyword indexing to identify exact string matches for required arguments. The server computes a missing-parameter percentage, flags required fields that were left null, and detects hallucinated enum values by comparing extracted data against a provided set of valid enums. This is essential for ensuring high reliability in agentic workflows where parameter accuracy is critical.
+This MCP server provides a suite of validation utilities designed to ensure Large Language Models (LLMs) adhere to strict tool schemas. By analyzing raw text, it identifies missing required arguments and detects 'hallucinations' where provided values do not match allowed enumerations. Use `tool_validate_extraction` to compute completeness scores, `tool_get_argument_coverage` for high-level gap analysis, and `tool_extract_raw_matches` for low-level pattern scanning.
 
 
-## Available Tools (1)
-- **check_argument_completeness**: Checks if the proposed action text contains all required arguments and detects hallucinations
+## Available Tools (3)
+- **tool_extract_raw_matches**: Low-level scan for argument-value pairs
+- **tool_get_argument_coverage**: Provides a high-level summary of tool adherence
+- **tool_validate_extraction**: 
 
 
 ## 💬 Prompt Examples
@@ -22,38 +24,38 @@ The Tool Argument Completeness Checker is a specialized MCP server designed to b
 Here are some examples of how you can interact with the **Tool Argument Completeness Checker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check if this action is complete: 'Call create_user with name="John" and role="admin"'. Required args: ["name", "role"]. Valid enums: {"role": ["user", "admin"]}."
+> "Validate this tool call: 'call tool_validate_extraction with actionText="name: John, age: 30" and requiredArguments=["name", "age"]'"
 
 **🤖 AI Agent:**
-> The completeness report shows 100% argument coverage. Both 'name' and 'role' were found, and 'admin' is a valid enum value.
+> {"completenessScore": 100, "missingArguments": [], "hallucinatedArguments": [], "extractedArguments": {"name": "John", "age": "30"}}
 
 ---
 
 **👤 You:**
-> "Analyze: 'Update order 123 with status="shipped"'. Required args: ["order_id", "status"]. Valid enums: {"status": ["pending", "shipped"]}."
+> "Check the coverage for this result: '{"completenessScore": 50, "missingArguments": ["location"], "hallucinatedArguments": [], "extractedArguments": {"name": "Alice"}}'"
 
 **🤖 AI Agent:**
-> The completeness report shows 100% argument coverage. The 'order_id' was extracted as 123 and 'status' as 'shipped'.
+> {"isComplete": false, "gapAnalysis": "Critical: Missing required parameters"}
 
 ---
 
 **👤 You:**
-> "Check: 'Delete item with id="abc"'. Required args: ["id", "reason"]. Valid enums: {}"
+> "Extract matches from 'user_id: 123, status: active' using keywords ['user_id', 'status']"
 
 **🤖 AI Agent:**
-> The completeness report shows 50% argument coverage. The 'id' was found, but the required field 'reason' is missing.
+> {"matches": [{"foundKey": "user_id", "extractedValue": "123"}, {"foundKey": "status", "extractedValue": "active"}]}
 
 
 ## ❓ FAQ
 
-**Q: How does the tool detect hallucinated values?**
-The `check_argument_completeness` tool compares any extracted argument values against a provided JSON object of valid enums. If an extracted value is not present in the allowed set, it is flagged as a hallucination.
+**Q: How does the tool detect hallucinations?**
+It compares the extracted argument values against a provided list of valid enums using `tool_validate_extraction`. If a value is found that isn't in the list, it is flagged as a hallucination.
 
-**Q: What input format is required for arguments?**
-You must provide `requiredArgsJson` as a JSON array of strings and `validEnumsJson` as a JSON object mapping argument names to arrays of allowed values.
+**Q: What is the difference between a missing argument and a hallucination?**
+A missing argument is a required field that was not mentioned in the text at all. A hallucination is a field that was mentioned, but with an invalid value that does not match the allowed set.
 
-**Q: Can it handle complex action text?**
-Yes, the tool uses regex and keyword indexing to parse unstructured text, making it capable of extracting values from natural language descriptions of tool calls.
+**Q: Can I use this to scan raw text for any potential values?**
+Yes, you can use `tool_extract_raw_matches` to perform a low-level scan of text using specific keywords as anchors to find potential argument-value pairs.
 
 
 ## Installation & Usage

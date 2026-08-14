@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [productivity](../categories/productivity.md)
+**Category:** [developer-tools](../categories/developer-tools.md)
 
-Enforce strict markdown formatting rules for LLM outputs.
+Enforces strict markdown formatting rules for LLM outputs.
 
 ## Description
-The Markdown Structure Compliance Validator MCP server provides a specialized engine to ensure your LLM-generated markdown adheres to strict structural standards. It performs character-level analysis to detect unclosed code blocks, excessive list nesting beyond three levels, and inconsistent list markers like mixing hyphens and asterisks. By using the `validate_markdown` tool, you can receive a precise compliance percentage and a detailed report of all violations, ensuring your generated content is always structurally sound.
+This MCP server provides specialized tools to ensure markdown documents are structurally sound for LLM consumption. It performs character-level analysis to validate heading hierarchy, prevent excessive list nesting, ensure marker consistency, and verify code block parity. Use `analyze_markdown_structure` for a full audit, `check_heading_hierarchy` to prevent skipped heading levels, or `validate_list_integrity` to check nesting depth and marker usage.
 
 
-## Available Tools (1)
-- **validate_markdown**: Returns a compliance percentage and a JSON array of violations.
-
-Validates markdown structure for compliance with specific rules
+## Available Tools (3)
+- **check_heading_hierarchy**: Specifically validates that headings follow a logical, non-skipping order
+- **analyze_markdown_structure**: Performs a comprehensive structural audit of a markdown string to check for formatting violations
+- **validate_list_integrity**: Checks only the list-related rules (nesting depth and marker consistency)
 
 
 ## 💬 Prompt Examples
@@ -24,45 +24,38 @@ Validates markdown structure for compliance with specific rules
 Here are some examples of how you can interact with the **Markdown Structure Compliance Validator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check if this markdown is valid: # Header
-- Item 1
-  * Nested Item (invalid marker)"
+> "Check if this markdown is valid: # Title\n## Subtitle\n- Item 1\n  - Item 2\n    - Item 3\n      - Item 4"
 
 **🤖 AI Agent:**
-> The compliance percentage is 85%. Violation found at line 3: Mixed list markers detected (hyphen and asterisk used).
+> The document has a violation: the list nesting depth exceeds the maximum limit of 3 levels.
 
 ---
 
 **👤 You:**
-> "Validate this code block: ```javascript
-console.log('hello');"
+> "Is the heading hierarchy correct in: # Header 1\n### Header 3"
 
 **🤖 AI Agent:**
-> The compliance percentage is 0%. Violation found at line 1: Unclosed code block detected.
+> No, the heading hierarchy is invalid because H2 was skipped.
 
 ---
 
 **👤 You:**
-> "Is this list nesting too deep? 
-- Level 1
-  - Level 2
-    - Level 3
-      - Level 4"
+> "Validate the list markers in: - Item 1\n* Item 2"
 
 **🤖 AI Agent:**
-> The compliance percentage is 75%. Violation found at line 4: List nesting depth exceeds the maximum limit of 3 levels.
+> The list contains marker mismatches because hyphens and asterisks are used at the same level.
 
 
 ## ❓ FAQ
 
-**Q: What specific markdown rules does this server check?**
-The `validate_markdown` tool checks for heading level consistency, list nesting depth (maximum 3 levels), triple backtick parity for code blocks, and flags the use of mixed list markers like hyphens and asterisks.
+**Q: What does the compliance score represent?**
+The compliance score is a percentage representing the ratio of valid structural elements to the total number of structural elements detected in your markdown.
 
-**Q: How can I integrate this into my workflow?**
-You can connect this MCP server to Cursor, VS Code, Claude Desktop, and Windsurf via Vinkius Edge using your personal Connection Token.
+**Q: How does the tool handle heading hierarchy?**
+The `check_heading_hierarchy` tool ensures that headings follow a logical progression and do not skip levels, such as jumping from H1 directly to H3.
 
-**Q: Does it support large markdown files?**
-Yes, the engine uses efficient character-level analysis to process markdown content and identify structural violations.
+**Q: Can I check list nesting depth?**
+Yes, `validate_list_integrity` checks that lists do not exceed a maximum nesting depth of three levels.
 
 
 ## Installation & Usage

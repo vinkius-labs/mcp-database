@@ -7,14 +7,16 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Validate XML tag integrity, nesting hierarchy, and tag-to-text density.
+Validates XML tag integrity, nesting hierarchy, and content density.
 
 ## Description
-The XML Tag Structure Compliance Checker is a specialized tool designed for developers and prompt engineers working with structured XML formats like Anthropic-style prompts. It performs deep, DOM-like parsing to ensure that every opening tag has a corresponding closing tag and that the nesting hierarchy remains valid. Beyond simple closure checks, it calculates the exact tag-to-text density ratio, allowing you to measure how much content is encapsulated within specific tags versus instructional text. Use `check_xml_compliance` to identify unclosed tags, overlapping hierarchies, or structural inconsistencies in your XML payloads.
+This MCP server provides specialized tools to ensure text strings adhere to strict XML-based structural rules. It uses DOM-like parsing to verify tag integrity, detect overlapping hierarchies, and calculate the exact tag-to-text density ratio. Use `validate_structure` to check for unclosed or malformed tags, `get_nesting_hierarchy` to map the tree relationship between tags, and `calculate_tag_density` to measure information concentration within specific containers.
 
 
-## Available Tools (1)
-- **check_xml_compliance**: Checks if an XML string contains all required tags
+## Available Tools (3)
+- **calculate_tag_density**: Measures the amount of text content residing within specific target tags compared to the total text length
+- **get_nesting_hierarchy**: Visualizes or describes the tree-like relationship between different XML tags within the content
+- **validate_structure**: Checks if a given string is a well-formed XML structure with no unclosed or overlapping tags
 
 
 ## 💬 Prompt Examples
@@ -22,38 +24,38 @@ The XML Tag Structure Compliance Checker is a specialized tool designed for deve
 Here are some examples of how you can interact with the **XML Tag Structure Compliance Checker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check if this XML is valid: <root><data>Hello</data></root> and ensure 'data' tag is present."
+> "Check if this XML is valid: <root><item>Hello</item></root>"
 
 **🤖 AI Agent:**
-> The compliance check passed. The 'data' tag was found, and the structure is correctly nested.
+> The XML structure is perfectly nested and all tags are closed.
 
 ---
 
 **👤 You:**
-> "Validate this XML: <instruction>Check <task>this</instruction></task> and look for 'instruction' tag."
+> "What is the nesting hierarchy of <parent><child><grandchild/></child></parent>?"
 
 **🤖 AI Agent:**
-> Validation failed. An overlapping hierarchy error was detected: the '<task>' tag is not closed before the '</instruction>' tag.
+> The hierarchy consists of parent at depth 0, child at depth 1, and grandchild at depth 2.
 
 ---
 
 **👤 You:**
-> "Check if the following XML contains the 'example' tag: <content><example>Test</example></content>"
+> "Calculate the density of the 'data' tag in <root><data>Value</data></root>"
 
 **🤖 AI Agent:**
-> The XML is compliant. The required 'example' tag was successfully identified within the structure.
+> The density ratio for the 'data' tag is 100% of the payload content.
 
 
 ## ❓ FAQ
 
-**Q: What exactly does the compliance checker validate?**
-It validates tag closure integrity, nesting hierarchy validity (ensuring no overlapping tags), and calculates the density ratio of content within specific XML tags.
+**Q: What does `validate_structure` do?**
+The `validate_structure` tool checks if a string is a well-formed XML structure, identifying unclosed tags or overlapping hierarchies.
 
-**Q: Can I use this to check Anthropic-style prompts?**
-Yes, the tool is optimized for XML formats used in advanced prompting techniques, ensuring your instructions and examples are structurally sound.
+**Q: How is tag density calculated?**
+The `calculate_tag_density` tool divides the character count within the target tags by the total non-tag character count of the document.
 
-**Q: How do I specify which tags are required?**
-You provide a list of tag names as an array in the `requiredTags` parameter when calling the tool.
+**Q: Can I visualize the XML tree?**
+Yes, you can use the `get_nesting_hierarchy` tool to retrieve a representation of the tree, including tag depth and child counts.
 
 
 ## Installation & Usage

@@ -15,8 +15,8 @@ This MCP server provides specialized tools to extract structured JSON payloads f
 
 ## Available Tools (3)
 - **extract_first_json_payload**: Attempts to find and isolate the first valid JSON object or array within a raw string
-- **get_extraction_metadata**: Calculates the location and length properties of a detected JSON payload
 - **verify_json_integrity**: Validates if a specific substring is a syntactically correct JSON structure
+- **get_extraction_metadata**: Calculates the location and length properties of a detected JSON payload
 
 
 ## 💬 Prompt Examples

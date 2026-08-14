@@ -7,16 +7,16 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Analyze execution logs to calculate error recovery rates and identify failure patterns.
+Analyzes execution logs to calculate tool call success ratios and agent recovery rates.
 
 ## Description
-The Agent Error Recovery Rate Calculator is a specialized MCP server designed for developers monitoring AI agent performance. By parsing execution logs in the format 'SUCCESS: <name>' or 'PREVIOUSLY FAILED: <name> - <error>', it calculates critical metrics like the recovery rate—the frequency of a successful tool call immediately following a failed one. The `analyze_logs` tool extracts exact error signatures such as 'SyntaxError' or 'Timeout', providing a clear view of how resilient your agentic workflows are to transient failures.
+This MCP server provides specialized tools to analyze the resilience of AI agents by parsing execution logs. It identifies specific error signatures and computes critical performance metrics, such as the success-to-failure ratio and the recovery rate. Use `parse_execution_logs` to structure raw logs, `calculate_error_distribution` to identify error patterns, and `calculate_resilience_metrics` to determine how effectively an agent recovers from failures.
 
 
-## Available Tools (1)
-- **analyze_logs**: It will provide statistics on success, failure, and how often failures are recovered by subsequent successes.
-
-Analyzes execution logs to calculate error recovery rates
+## Available Tools (3)
+- **calculate_error_distribution**: Provides a breakdown of how many times specific errors occurred
+- **calculate_resilience_metrics**: Computes the high-level performance ratios regarding reliability and recovery
+- **parse_execution_logs**: Extracts a structured sequence of tool call outcomes and error types from raw text logs
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ Analyzes execution logs to calculate error recovery rates
 Here are some examples of how you can interact with the **Agent Error Recovery Rate Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Analyze these logs: 'SUCCESS: tool_a', 'PREVIOUSLY FAILED: tool_b - Timeout', 'SUCCESS: tool_c'. What is the recovery rate?"
+> "Can you analyze these logs and tell me the recovery rate?"
 
 **🤖 AI Agent:**
-> The recovery rate is 100.0% because one failure was immediately followed by a success.
+> The recovery rate for the provided logs is 75%, meaning 3 out of 4 failures were followed by a successful tool call.
 
 ---
 
 **👤 You:**
-> "Calculate the error signatures from these logs: 'PREVIOUSLY FAILED: tool_x - SyntaxError', 'PREVIOUSLY FAILED: tool_y - Timeout'."
+> "What are the most common errors in my execution history?"
 
 **🤖 AI Agent:**
-> The identified error signatures are: {"SyntaxError": 1, "Timeout": 1}.
+> The most frequent error identified is 'Timeout', which occurred 5 times in the analyzed logs.
 
 ---
 
 **👤 You:**
-> "Check the recovery rate for a log with 5 failures and 2 successes immediately following those failures."
+> "Parse these logs for me."
 
 **🤖 AI Agent:**
-> The recovery rate is 40.0% (2 successes out of 5 failures).
+> I have parsed the logs. I found 10 total events: 8 successes and 2 failures.
 
 
 ## ❓ FAQ
 
-**Q: What log format does the tool require?**
-The `analyze_logs` tool expects logs in two specific formats: 'SUCCESS: <name>' for successful operations and 'PREVIOUSLY FAILED: <name> - <error>' to capture failures and their error signatures.
+**Q: What can I calculate with this server?**
+You can calculate the success-to-failure ratio and the recovery rate percentage using `calculate_resilience_metrics` after parsing your logs.
 
-**Q: How is the recovery rate calculated?**
-The recovery rate is computed by identifying every instance where a 'SUCCESS' entry immediately follows a 'PREVIOUSLY FAILED' entry, then dividing that count by the total number of failures.
+**Q: How do I start analyzing my logs?**
+Start by using `parse_execution_logs` to convert your raw text logs into a structured format that the other tools can process.
 
-**Q: Can it detect specific error types?**
-Yes, the tool performs string matching to extract and count exact error signatures like 'Timeout', 'InvalidAPIKey', or 'SyntaxError' from your logs.
+**Q: What is a recovery rate?**
+The recovery rate is the percentage of tool call failures that are immediately followed by a successful tool call, indicating the agent's ability to self-correct.
 
 
 ## Installation & Usage

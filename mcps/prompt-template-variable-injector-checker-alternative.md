@@ -7,18 +7,17 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Validates prompt templates for correct variable syntax, undeclared variables, and potential injection vectors.
+Validates prompt templates for syntax, undeclared variables, and injection risks.
 
 ## Description
-The Prompt Template Variable Injector Checker is a specialized security and integrity tool for AI engineers. It ensures that your prompt templates are structurally sound by checking for unclosed braces and undeclared variables using `validate_template`. Beyond syntax, it provides deep insights into template dynamics via `calculate_ratio`, measuring the density of dynamic content against static text. For high-stakes environments, `detect_vectors` scans for patterns that could lead to prompt injection attacks, while `analyze_complexity` and `summarize_template` provide metadata on template structure and length. This MCP server acts as a bridge, allowing your AI agents in Cursor, VS Code, Claude Desktop, and Windsurf to audit templates with precision.
+This MCP server provides a suite of validation tools to ensure prompt templates are syntactically correct and secure. Use `validate_syntax` to check for balanced delimiters, `audit_variables` to find undeclared placeholders, `analyze_composition` to measure dynamic content density, and `security_scan` to detect potential injection vectors where variable names mimic system commands.
 
 
-## Available Tools (5)
-- **analyze_complexity**: Analyzes template complexity
-- **calculate_ratio**: Calculates the ratio of dynamic to static characters
-- **validate_template**: Validates template syntax and variable declarations
-- **detect_vectors**: Detects potential injection vectors in the template
-- **summarize_template**: Summarizes the template content
+## Available Tools (4)
+- **analyze_composition**: Calculates the density of dynamic content compared to static text
+- **audit_variables**: Compares variables found in the template against a list of allowed variables
+- **security_scan**: Detects if any variable names pose a risk of prompt injection
+- **validate_syntax**: Checks if the template's variable delimiters are properly opened and closed
 
 
 ## 💬 Prompt Examples
@@ -26,38 +25,38 @@ The Prompt Template Variable Injector Checker is a specialized security and inte
 Here are some examples of how you can interact with the **Prompt Template Variable Injector Checker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check the syntax of this template: 'Hello {{user_name}}, welcome to {{location}}!' with variables {'user_name': 'Alice', 'template_id': '123'}"
+> "Check if this template is valid: 'Hello {user_name}, welcome to {location}!' with declared variables ['user_name', 'location']."
 
 **🤖 AI Agent:**
-> The template syntax is valid, and all variables are correctly declared.
+> The template is valid. All delimiters are balanced and all variables are correctly declared.
 
 ---
 
 **👤 You:**
-> "Analyze the ratio of dynamic to static text in: 'System prompt: {{instruction}}. User input: {{input}}.' using pattern '{{[^}]*}}'"
+> "Is this template secure: 'Execute command {RUN_COMMAND} now'?"
 
 **🤖 AI Agent:**
-> The dynamic character ratio is approximately 0.35, indicating a template with significant variable density.
+> No, the variable `RUN_COMMAND` poses a security risk as it mimics a system command pattern.
 
 ---
 
 **👤 You:**
-> "Are there any injection risks in this template: 'Run command: {{cmd}}'"
+> "What is the dynamic density of 'The weather in {city} is {temp}'?"
 
 **🤖 AI Agent:**
-> The scan detected potential injection vectors matching system command patterns in the template.
+> The dynamic density ratio is 0.33.
 
 
 ## ❓ FAQ
 
-**Q: What does `validate_template` check for?**
-It checks for syntax integrity, specifically looking for unclosed braces and variables that are used in the template but not provided in the variable map.
+**Q: How do I check if my template has unclosed braces?**
+You can use the `validate_syntax` tool to verify that all delimiters like braces or angle brackets are properly opened and closed.
 
-**Q: How can I detect prompt injection risks?**
-You can use the `detect_vectors` tool to scan your templates for known system command patterns that might indicate an injection attempt.
+**Q: Can this tool detect security risks in variable names?**
+Yes, the `security_scan` tool identifies if any variable names match sensitive system command patterns that could lead to prompt injection.
 
-**Q: Can I use this with Claude Desktop?**
-Yes, this MCP server is compatible with Claude Desktop, Cursor, VS Code, Windsurf, and any other MCP-compatible client via Vinkius Edge.
+**Q: How can I ensure all my variables are declared?**
+Use the `audit_variables` tool by providing your template text and a list of your declared variables to find any undeclared placeholders.
 
 
 ## Installation & Usage

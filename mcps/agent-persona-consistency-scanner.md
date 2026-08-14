@@ -5,19 +5,18 @@
 
 ## Overview
 
-**Category:** [quality-assurance](../categories/quality-assurance.md)
+**Category:** [developer-tools](../categories/developer-tools.md)
 
-Verify LLM adherence to defined personas by analyzing pronoun ratios, formality scores, and vocabulary violations.
+A precision utility for measuring how closely an LLM adheres to a target persona.
 
 ## Description
-The Agent Persona Consistency Scanner MCP server provides a precise engine for auditing LLM outputs against specific persona constraints. It calculates exact pronoun usage ratios (1st person vs 3rd person), determines formality scores by measuring contraction density per 100 words, and identifies vocabulary boundary violations using a custom lexicon of forbidden terms. By utilizing tools like `analyze_pronouns`, `calculate_formality`, `check_vocabulary`, and `scan_persona`, developers can quantify persona drift and ensure consistent agent behavior across different prompts.
+This MCP server provides advanced linguistic auditing tools to ensure AI agents maintain their intended character. By analyzing text through `analyze_text_consistency`, you can calculate a persona drift score based on pronoun ratios, formality levels, and vocabulary boundaries. Use `get_persona_lexicon` to retrieve specific constraints and `calculate_formality_index` to isolate tone deviations. It is an essential bridge for developers building consistent AI identities.
 
 
-## Available Tools (4)
-- **check_vocabulary**: Check for forbidden words in the provided text
-- **calculate_formality**: Calculate the formality score based on contraction count
-- **scan_persona**: Perform a comprehensive persona drift analysis
-- **analyze_pronouns**: Analyze the ratio of 1st person to 3rd person pronouns in text
+## Available Tools (3)
+- **analyze_text_consistency**: Performs a comprehensive linguistic audit of a text segment to determine how well it fits a specific persona profile
+- **calculate_formality_index**: Isolates the formality component to determine if the text's tone is too casual or too formal for the persona
+- **get_persona_lexicon**: Retrieves the specific list of forbidden words and required linguistic markers for a given persona
 
 
 ## 💬 Prompt Examples
@@ -25,38 +24,38 @@ The Agent Persona Consistency Scanner MCP server provides a precise engine for a
 Here are some examples of how you can interact with the **Agent Persona Consistency Scanner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Analyze this text for persona consistency: 'I am very happy to meet you. He said that the weather is nice.'"
+> "Analyze this text for persona consistency: 'I am a professional assistant. I will help you with your tasks.' using persona ID 'prof_01'."
 
 **🤖 AI Agent:**
-> The pronoun ratio analysis shows a 50% usage of 1st person pronouns and 50% 3rd person pronouns.
+> { "pronounRatio": 1.0, "formalityScore": 0.0, "violationCount": 0, "driftScore": 0.0 }
 
 ---
 
 **👤 You:**
-> "Check if the following text contains any forbidden words: ['bad', 'error'], Text: 'This is a bad error.'"
+> "What are the forbidden words for the 'Victorian Gentleman' persona?"
 
 **🤖 AI Agent:**
-> The vocabulary check identified 2 violations: 'bad' and 'error'.
+> The forbidden words for the Victorian Gentleman persona include: 'algorithm', 'internet', 'smartphone', and 'digital'.
 
 ---
 
 **👤 You:**
-> "Calculate the formality of: 'Don't you think it's great?'"
+> "Check the formality of this text: 'Hey, what's up? I'm just chilling.'"
 
 **🤖 AI Agent:**
-> The formality score is high due to the presence of 2 contractions ('Don't', 'it's') in a short string.
+> { "contractionDensity": 2.0 }
 
 
 ## ❓ FAQ
 
-**Q: How does the formality score calculation work?**
-The `calculate_formality` tool counts the number of contractions found in the input text and calculates a density score relative to the total word count (contractions per 100 words).
+**Q: How is the persona drift score calculated?**
+The drift score is an aggregate metric derived from deviations in pronoun usage, contraction density (formality), and the presence of forbidden words found via `analyze_text_consistency`.
 
-**Q: Can I use a custom list of forbidden words?**
-Yes, the `check_vocabulary` tool accepts a JSON array of strings representing your restricted lexicon to identify any violations in the text.
+**Q: Can I use this with Claude Desktop?**
+Yes, this MCP server can be connected to Claude Desktop, Cursor, VS Code, Windsurf, and any other MCP-compatible client via Vinkius Edge.
 
-**Q: What is included in a full persona drift analysis?**
-The `scan_persona` tool performs an integrated audit, combining pronoun ratio analysis, formality scoring, and vocabulary violation checks into a single comprehensive persona drift score.
+**Q: What is a vocabulary boundary violation?**
+A violation occurs when the text contains words defined in the persona's forbidden lexicon, which can be retrieved using `get_persona_lexicon`.
 
 
 ## Installation & Usage

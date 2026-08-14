@@ -7,16 +7,16 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Analyze ReAct traces to audit reasoning verbosity and detect zero-shot behavior.
+Analyzes ReAct traces to measure reasoning depth and identify zero-shot behavior.
 
 ## Description
-The Reasoning Step Word Count Analyzer MCP server provides a specialized auditing engine for evaluating the quality of ReAct (Reasoning, Acting) traces. By calculating exact word counts between 'Thought' and 'Action' phases, it determines reasoning verbosity ratios and identifies potential zero-shot patterns where thought blocks are too brief (< 10 words). This is essential for developers monitoring chain-of-thought performance in LLM agents.
+This MCP server provides tools to evaluate the quality of the ReAct (Reasoning + Acting) framework. It calculates the verbosity ratio between the 'Thought' and 'Action' phases of an LLM trace. By using `analyze_trace_verbosity`, you can detect zero-shot behavior where the thought block is too brief. You can also use `aggregate_trace_metrics` to summarize reasoning patterns across entire traces or `identify_high_verbosity_steps` to find moments of deep cognitive effort.
 
 
 ## Available Tools (3)
-- **calculate_verbosity_ratio**: Calculates the ratio of thought text to action text
-- **parse_react_trace**: Parses a React trace string to extract structured information
-- **detect_zero_shot_behavior**: Detects if the model exhibits zero-shot behavior based on thought word count
+- **analyze_trace_verbosity**: 
+- **identify_high_verbosity_steps**: 
+- **aggregate_trace_metrics**: 
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Reasoning Step Word Count Analyzer MCP server provides a specialized auditin
 Here are some examples of how you can interact with the **Reasoning Step Word Count Analyzer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Analyze this ReAct trace: Thought: I need to find the weather. Action: search(weather in London)."
+> "Analyze this ReAct step: Thought: 'I need to find the weather.' Action: 'get_weather(city="London")'"
 
 **🤖 AI Agent:**
-> The parsed trace contains a thought phase and an action phase. The verbosity ratio is calculated based on the word counts of these segments.
+> {"thoughtWordCount": 6, "actionWordCount": 3, "verbosityRatio": 2.0, "isZeroShot": true}
 
 ---
 
 **👤 You:**
-> "Is this trace showing zero-shot behavior? Thought: Okay. Action: print(hello)"
+> "Summarize these steps: [{'thoughtWordCount': 20, 'actionWordCount': 5, 'verbosityRatio': 4.0, 'isZeroShot': false}]"
 
 **🤖 AI Agent:**
-> Yes, the thought block contains only 1 word, which is below the 10-word threshold for complex reasoning.
+> {"totalSteps": 1, "averageVerbosityRatio": 4.0, "zeroShotCount": 0, "totalThoughtWords": 20, "totalActionWords": 5}
 
 ---
 
 **👤 You:**
-> "Calculate the ratio for: Thought: I will check the stock price. Action: get_stock(AAPL)"
+> "Find steps with a verbosity ratio higher than 2.0 in this list: [{'thoughtWordCount': 30, 'actionWordCount': 5, 'verbosityRatio': 6.0, 'isZeroShot': false}]"
 
 **🤖 AI Agent:**
-> The verbosity ratio is 0.75, based on a thought count of 7 words and an action count of 9 words.
+> {"highVerbositySteps": [{'thoughtWordCount': 30, 'actionWordCount': 5, 'verbosityRatio': 6.0, 'isZeroShot': false}], "count": 1}
 
 
 ## ❓ FAQ
 
-**Q: How does the analyzer detect zero-shot behavior?**
-The `detect_zero_shot_behavior` tool analyzes the word count of a thought block. If the count is below the threshold, it flags the trace as likely zero-shot behavior.
+**Q: What is a zero-shot indicator in this context?**
+A zero-shot indicator is triggered when the `analyze_trace_verbosity` tool finds that the thought block contains fewer than 10 words, suggesting the model skipped detailed reasoning.
 
-**Q: Can I use this to compare different model traces?**
-Yes. By using `calculate_verbosity_ratio`, you can quantitatively compare the reasoning depth of different models by examining their thought-to-action text ratios.
+**Q: How is the verbosity ratio calculated?**
+The verbosity ratio is the total word count of the thought block divided by the total word count of the action block.
 
-**Q: What input format is required for parsing?**
-The `parse_react_trace` tool accepts a raw string containing the ReAct trace. It uses exact whitespace splitting to extract structured components.
+**Q: Can I summarize multiple steps at once?**
+Yes, you can use `aggregate_trace_metrics` to get a high-level summary of total steps, average verbosity, and zero-shot counts for a collection of analysis results.
 
 
 ## Installation & Usage
