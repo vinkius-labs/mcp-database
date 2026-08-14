@@ -39,7 +39,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Password Entropy Calculator](../mcps/password-entropy-calculator.md) | Calculate password entropy, identify pattern risks, and verify security policy compliance. |
 | [PII Redaction Deterministic Scrubber](../mcps/pii-redaction-deterministic-scrubber.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
 | [PII Redaction Deterministic Scrubber Alternative](../mcps/pii-redaction-deterministic-scrubber-alternative.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
-| [Prompt Injection Detection Engine](../mcps/prompt-injection-detection-engine.md) | Scans user inputs and retrieved documents for prompt injection attacks using static pattern matching. |
+| [Prompt Injection Detection Engine](../mcps/prompt-injection-detection-engine.md) | Scans text for malicious prompt injection signatures and risk levels. |
 | [Prompt Injection Pattern Detector](../mcps/prompt-injection-pattern-detector.md) | Detects malicious prompt injection attempts in LLM inputs using deterministic regex patterns. |
 | [Prompt Injection Pattern Scanner](../mcps/prompt-injection-pattern-scanner.md) | Scans user-supplied text for structural patterns associated with prompt-injection attempts. |
 | [Prompt Injection Shield Prover](../mcps/prompt-injection-shield-prover.md) | LLMs cannot distinguish system instructions from user input. This tool forces 5-layer injection defense analysis: intent isolation, privilege containment, indirect vector scanning, output sanitization, and scope enforcement. OWASP LLM Top 10 #1 compliance. |
@@ -54,6 +54,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Sensitive Data Exposure Detector](../mcps/sensitive-data-exposure-detector.md) | Intercepts and redacts sensitive information from file reads and tool outputs. |
 | [SQL Migration Safety Analyzer](../mcps/sql-migration-safety-analyzer.md) | Validate SQL migrations for structural risks, rollback integrity, and unbounded deletions. |
 | [SQL Syntax & Injection Checker](../mcps/sql-syntax-injection-checker.md) | Static analysis for SQL syntax validation and injection risk detection. |
+| [System Prompt Leakage Detector](../mcps/system-prompt-leakage-detector-alternative.md) | Detects verbatim system prompt exfiltration using LCS algorithms. |
 | [Template Injection Sanitizer](../mcps/template-injection-sanitizer.md) | Detects and neutralizes prompt injection attacks using template syntax like Jinja2 and Python f-strings. |
 | [Tool Output Entropy Sanitizer](../mcps/tool-output-entropy-sanitizer.md) | Detects and redacts high-entropy strings like API keys from tool outputs. |
 | [Tool Permission Boundary Enforcer](../mcps/tool-permission-boundary-enforcer.md) | Enforces deterministic permission boundaries for tool execution to prevent unbounded access. |

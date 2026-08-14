@@ -17,6 +17,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Calorie Burn Estimator](../mcps/calorie-burn-estimator.md) | Calculate energy expenditure using MET values, body weight, and activity duration. |
 | [Calories Burned Calculator](../mcps/calories-burned-calculator.md) | Calculate calories burned using MET values and heart rate data. |
 | [Carbon Footprint Calculator](../mcps/carbon-footprint-calculator.md) | Estimate your annual carbon emissions from home energy, travel, and lifestyle choices. |
+| [Context Window Token Estimator](../mcps/context-window-token-estimator.md) | Calculate exact token counts and payload distribution for AI agent context windows. |
 | [Correlation Matrix Engine](../mcps/correlation-matrix-engine.md) | Generate exact Pearson and Spearman correlation matrices across all numeric columns local. Find the strongest relationships in your data without LLM math errors. |
 | [Country Data Resolver](../mcps/country-data-resolver.md) | Resolve ISO country codes to full names, alpha-3, and numeric codes in 4 languages. Essential for CRM and international data. |
 | [CRC32 Checksum Engine](../mcps/crc32-checksum-engine.md) | Calculate CRC32 checksums instantly — the same algorithm inside ZIP, PNG, Ethernet, and MPEG-2. Pure JS, zero dependencies, three output formats. |

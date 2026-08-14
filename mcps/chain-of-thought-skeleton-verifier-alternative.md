@@ -7,16 +7,16 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Validates the structural integrity and parsing patterns of ReAct and Chain-of-Thought agent outputs.
+Validates the structural integrity of ReAct and Chain-of-Thought agent outputs.
 
 ## Description
-The Chain-of-Thought Skeleton Verifier MCP server provides a specialized toolkit for auditing the 'anatomy' of AI reasoning processes. It allows developers to programmatically verify if agent outputs adhere to specific structural families, such as XML-style tags (e.g., `<thought>`) or keyword-based prefixes (e.g., `Thought:`). By using tools like `verify_parsing_pattern`, you can detect pattern mismatches, while `check_structural_integrity` identifies broken reasoning loops where actions are initiated without corresponding observations. Additionally, `get_reasoning_stats` provides quantitative metrics, including thought step counts and efficiency scores, to measure the reasoning density of your agentic workflows.
+This MCP server provides essential tools for auditing the reasoning processes of AI agents. It ensures that agent outputs strictly adhere to expected patterns like ReAct or Chain-of-Thought. Using `analyze_structure`, you can detect unclosed reasoning loops or missing tags. The `get_ratio_metrics` tool helps identify if an agent is over-thinking or acting impulsively, while `validate_sequence_flow` ensures the logical progression of Thought, Action, and Observation is maintained.
 
 
 ## Available Tools (3)
-- **check_structural_integrity**: Checks for structural integrity in the text, specifically XML tag matching and action/observation sequences
-- **get_reasoning_stats**: Calculates reasoning statistics from the text
-- **verify_parsing_pattern**: Verifies if the text follows an XML tag pattern or a keyword prefix pattern
+- **analyze_structure**: Performs a deep structural scan of a raw agent output string to validate its skeleton
+- **get_ratio_metrics**: Calculates higher-level behavioral metrics derived from the structural analysis
+- **validate_sequence_flow**: Checks if the order of identified blocks adheres to the logical ReAct loop
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Chain-of-Thought Skeleton Verifier MCP server provides a specialized toolkit
 Here are some examples of how you can interact with the **Chain-of-Thought Skeleton Verifier** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Analyze this agent output: <thought>I need to check the weather.</thought><action>get_weather()</action>"
+> "Check if this agent output is valid: <thought>I need to search.</thought><action>search(query='test')</action>"
 
 **🤖 AI Agent:**
-> The `check_structural_integrity` tool would flag this as having a broken loop because the action is not followed by an observation.
+> The structure is valid and follows the expected Thought-Action sequence.
 
 ---
 
 **👤 You:**
-> "Does this text use XML tags or keyword prefixes? Text: Thought: I will search for the capital of France. Action: search('Paris')"
+> "Is the agent over-thinking? Reasoning steps: 10, Actions: 1"
 
 **🤖 AI Agent:**
-> The `verify_parsing_pattern` tool identifies this as using the 'KEYWORD_PREFIX' pattern.
+> The agent is exhibiting High Thinking behavior due to the low action-to-thought ratio.
 
 ---
 
 **👤 You:**
-> "Calculate the reasoning metrics for: Thought: Step 1. Action: Run. Observation: Done."
+> "Validate the sequence: Thought, Observation, Action"
 
 **🤖 AI Agent:**
-> The `get_reasoning_stats` tool would report a thought step count of 1 and provide an efficiency score based on the action-to-thought ratio.
+> The sequence is invalid because an Observation appeared before an Action.
 
 
 ## ❓ FAQ
 
-**Q: What does it mean if `check_structural_integrity` returns broken loops?**
-A broken loop indicates that an action segment was detected in the text, but it was not followed by a corresponding observation segment, meaning the agent's execution cycle was interrupted.
+**Q: What does `analyze_structure` do?**
+The `analyze_structure` tool performs a deep scan of raw agent text to verify if it follows tag-based or keyword-based patterns, checking for complete reasoning blocks.
 
-**Q: Can I use this to detect if an agent is using XML tags or keyword prefixes?**
-Yes, the `verify_parsing_pattern` tool specifically identifies whether the input text follows the XML-style tag family or the keyword-based prefix family.
+**Q: How can I detect impulsive agent behavior?**
+You can use `get_ratio_metrics` to calculate the action-to-thought ratio. A high ratio indicates the agent is acting without sufficient reasoning.
 
-**Q: How is reasoning density calculated?**
-The `get_reasoning_stats` tool calculates efficiency by comparing the number of completed thought blocks to the number of action blocks, providing a qualitative score like 'High' or 'Low'.
+**Q: Does this support both XML tags and keyword prefixes?**
+Yes, the `analyze_structure` tool supports both `tag_based` mode for XML-style tags and `keyword_based` mode for prefix-style keywords.
 
 
 ## Installation & Usage

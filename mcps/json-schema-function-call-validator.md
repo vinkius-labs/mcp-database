@@ -7,14 +7,16 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-Verify that LLM-generated JSON function calls strictly adhere to your defined JSON Schemas.
+Validates raw LLM text outputs against JSON Schemas to detect missing parameters, type mismismatches, and hallucinations.
 
 ## Description
-The `validate_function_call` tool acts as a precision gate for AI agents. It parses raw LLM text outputs intended to be JSON function calls and validates them against any provided JSON Schema. The validator checks for missing required parameters, type mismatches (e.g., string vs integer), and hallucinated parameters not present in the schema. It returns exact error counts, a parameter validity percentage, and a strictly formatted error log, making it essential for building reliable agentic workflows.
+This MCP server provides essential tools for LLM orchestration and reliability. It allows agents to parse messy text outputs and validate them against strict JSON Schemas. Use `validate_function_call` to identify missing required parameters, type mismatches, or hallucinated keys. The `extract_json_from_text` tool helps isolate JSON blocks from conversational filler, while `get_validation_summary` provides high-level reliability metrics across multiple attempts. This is critical for ensuring that AI agents follow structured function-calling protocols accurately.
 
 
-## Available Tools (1)
-- **validate_function_call**: Validates a JSON function call payload against a provided JSON Schema
+## Available Tools (3)
+- **extract_json_from_text**: A utility to isolate the JSON component from a messy LLM text string
+- **get_validation_summary**: Provides a high-level overview of multiple validation attempts to track model reliability over time
+- **validate_function_call**: Validates a raw LLM text string against a specific JSON Schema to identify structural and logical errors
 
 
 ## 💬 Prompt Examples
@@ -22,38 +24,38 @@ The `validate_function_call` tool acts as a precision gate for AI agents. It par
 Here are some examples of how you can interact with the **JSON Schema Function Call Validator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Validate this function call: {"name": "get_weather", "arguments": {"location": "London"}} against the schema {"type": "object", "properties": {"location": {"type": "string"}}, "required": ["location"]}"
+> "Validate this LLM output: 'Here is the call: {"action": "get_weather", "city": 123}' against a schema where city must be a string."
 
 **🤖 AI Agent:**
-> Validation successful. The payload matches the schema perfectly.
+> {"missingCount": 0, "typeMismatchCount": 1, "hallucinationCount": 0, "validityPercentage": 50.0, "errorLog": ["Parameter 'city' expected type string, but received integer."]}
 
 ---
 
 **👤 You:**
-> "Check if this call is valid: {"name": "add", "arguments": {"a": "5", "b": 10}} against schema {"type": "object", "properties": {"a": {"type": "integer"}, "b": {"type": "integer"}}, "required": ["a", "b"]}"
+> "Extract the JSON from this text: 'Sure! Here is your data: {"id": 1, "name": "test"} hope this helps!'"
 
 **🤖 AI Agent:**
-> Validation failed. Error: Parameter 'a' expected type integer but received string.
+> {"id": 1, "name": "test"}
 
 ---
 
 **👤 You:**
-> "Validate a call with an extra parameter: {"name": "resize", "arguments": {"width": 100, "height": 200, "format": "png"}} against schema {"type": "object", "properties": {"width": {"type": "integer"}, "height": {"type": "integer"}}, "required": ["width", "height"]}"
+> "Check if this function call is valid: {"user_id": "abc-123"} using a schema that requires 'user_id' and 'session_id'."
 
 **🤖 AI Agent:**
-> Validation failed. Error: Hallucinated parameter 'format' detected.
+> {"missingCount": 1, "typeMismatchCount": 0, "hallucinationCount": 0, "validityPercentage": 50.0, "errorLog": ["Missing required parameter: session_id"]}
 
 
 ## ❓ FAQ
 
-**Q: What does the validator check for?**
-It checks for missing required parameters, type mismatches (like a string where an integer is expected), and hallucinated parameters that are not defined in your JSON Schema.
+**Q: How does the validator handle conversational text around the JSON?**
+The `extract_json_from_text` tool specifically isolates the JSON block by finding the first and last curly braces, allowing the validator to ignore surrounding markdown or conversational filler.
 
-**Q: Can I use this to prevent hallucinations?**
-Yes. By using `validate_function_call`, you can detect when an LLM attempts to use parameters that do not exist in your schema, allowing you to catch hallucinations before they reach your downstream logic.
+**Q: What kind of errors does `validate_function_call` detect?**
+It detects three main error types: missing required parameters, type mismatches (e.g., a string where an integer is expected), and hallucinations (parameters present in the output but not in the schema).
 
-**Q: What format should the input be in?**
-The `payloadJson` and `schemaJson` must both be provided as valid JSON strings.
+**Q: Can I track the reliability of my LLM over time?**
+Yes, you can use `get_validation_summary` by providing a history of previous validation results to calculate average validity and a qualitative reliability rating.
 
 
 ## Installation & Usage

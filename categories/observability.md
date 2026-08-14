@@ -7,6 +7,7 @@ Explore the open database of **observability** Model Context Protocol (MCP) serv
 | [Agent Loop Detector](../mcps/agent-loop-detector.md) | Detects cyclic delegation and repetitive conversation loops in multi-agent systems. |
 | [Agent Self-Reflection & Sentiment Scanner](../mcps/agent-self-reflection-sentiment-scanner.md) | Quantify agent self-correction behavior and sentiment by scanning execution logs for specific error and success markers. |
 | [Agent Self-Reflection & Sentiment Scanner](../mcps/agent-self-reflection-sentiment-scanner-alternative.md) | Quantify agent self-correction behavior and sentiment by scanning execution logs for specific error and success markers. |
+| [Agent Self-Reflection Sentiment Scanner](../mcps/agent-self-reflection-sentiment-scanner-1.md) | Analyzes agent execution logs to detect self-correction markers and measure stability. |
 | [Context Cache Invalidation Detector](../mcps/context-cache-invalidation-detector.md) | Detects context loss and reasoning drift caused by aggressive prompt caching. |
 | [Execution Trace Recorder and Validator](../mcps/execution-trace-recorder-and-validator.md) | Records and validates agent execution traces to ensure integrity, determinism, and performance. |
 | [OpenTelemetry Trace Context Extractor](../mcps/opentelemetry-trace-context-extractor.md) | Extracts W3C TraceContext fields from HTTP headers. |

@@ -14,9 +14,9 @@ The Chain-of-Thought Skeleton Verifier MCP server provides a specialized toolkit
 
 
 ## Available Tools (3)
-- **check_structural_integrity**: Checks for structural integrity in the text, specifically XML tag matching and action/observation sequences
-- **get_reasoning_stats**: Calculates reasoning statistics from the text
-- **verify_parsing_pattern**: Verifies if the text follows an XML tag pattern or a keyword prefix pattern
+- **analyze_structure**: Performs a deep structural scan of a raw agent output string to validate its skeleton
+- **get_ratio_metrics**: Calculates higher-level behavioral metrics derived from the structural analysis
+- **validate_sequence_flow**: Checks if the order of identified blocks adheres to the logical ReAct loop
 
 
 ## 💬 Prompt Examples
@@ -48,14 +48,14 @@ Here are some examples of how you can interact with the **Chain-of-Thought Skele
 
 ## ❓ FAQ
 
-**Q: What does it mean if `check_structural_integrity` returns broken loops?**
-A broken loop indicates that an action segment was detected in the text, but it was not followed by a corresponding observation segment, meaning the agent's execution cycle was interrupted.
+**Q: What does `analyze_structure` do?**
+The `analyze_structure` tool performs a deep scan of raw agent text to verify if it follows tag-based or keyword-based patterns, checking for complete reasoning blocks.
 
-**Q: Can I use this to detect if an agent is using XML tags or keyword prefixes?**
-Yes, the `verify_parsing_pattern` tool specifically identifies whether the input text follows the XML-style tag family or the keyword-based prefix family.
+**Q: How can I detect impulsive agent behavior?**
+You can use `get_ratio_metrics` to calculate the action-to-thought ratio. A high ratio indicates the agent is acting without sufficient reasoning.
 
-**Q: How is reasoning density calculated?**
-The `get_reasoning_stats` tool calculates efficiency by comparing the number of completed thought blocks to the number of action blocks, providing a qualitative score like 'High' or 'Low'.
+**Q: Does this support both XML tags and keyword prefixes?**
+Yes, the `analyze_structure` tool supports both `tag_based` mode for XML-style tags and `keyword_based` mode for prefix-style keywords.
 
 
 ## Installation & Usage

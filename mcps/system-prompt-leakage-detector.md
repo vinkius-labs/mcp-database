@@ -13,10 +13,10 @@ Detects verbatim leaks of system prompts within agent outputs using LCS algorith
 The System Prompt Leakage Detector MCP server provides a specialized engine for identifying data exfiltration in AI agents. By utilizing the Longest Common Substring (LCS) algorithm via dynamic programming, it compares an agent's output against its original system instructions to find exact character-for-character reproductions. The tool calculates a leakage percentage, identifies precise character offsets of leaked segments, and computes a security risk score based on the presence of sensitive keywords like 'MANDATORY' or 'priority'. This is essential for developers building secure AI agents that must protect their underlying logic and instructions from being revealed to users.
 
 
-## Available Tools (1)
-- **detect_prompt_leakage**: Provide both the original system prompt and the agent's output as parameters.
-
-Detects verbatim leaks of a system prompt within an agent's output
+## Available Tools (3)
+- **analyze_leakage_density**: Identifies if leakage is concentrated in specific areas of the output or spread throughout
+- **detect_leakage**: Analyzes an agent's output to find verbatim repetitions of the system prompt and quantifies the risk
+- **get_risk_classification**: Maps a raw security risk score to a human-readable severity level for security reporting
 
 
 ## 💬 Prompt Examples
@@ -48,14 +48,14 @@ Here are some examples of how you can interact with the **System Prompt Leakage 
 
 ## ❓ FAQ
 
-**Q: How does the detection mechanism work?**
-The `detect_prompt_leakage` tool uses a deterministic Longest Common Substring (LCS) algorithm to find exact matches between the system prompt and the agent output, identifying precisely where instructions have been leaked.
+**Q: How does the tool detect leakage?**
+The `detect_leakage` tool uses exact substring matching to find continuous sequences of characters in the agent's output that are identical to the original system prompt.
 
-**Q: What is a security risk score?**
-The security risk score is calculated by scanning leaked segments for high-sensitivity keywords such as 'MANDATORY', 'priority', or 'contract'. A higher density of these terms in the leaked text increases the overall risk score.
+**Q: What is a Security Risk Score?**
+It is a weighted evaluation where the score increases if the leaked segments contain sensitive keywords defined in your security configuration.
 
-**Q: Can this tool detect partial leaks?**
-Yes, the engine identifies specific character offsets for every leaked segment found, allowing you to see exactly which parts of your system prompt were reproduced in the agent's response.
+**Q: Can I see where the leak happened?**
+Yes, the tool returns exact character offsets for every contiguous leaked block found in the output.
 
 
 ## Installation & Usage

@@ -88,7 +88,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Cerbos (Access Control)](../mcps/cerbos-access-control.md) | Decouple authorization from your code. Manage policies, check permissions, and audit access control directly through your AI agent. |
 | [chain-composition-validator](../mcps/chain-composition-validator.md) | Validates structural and schema integrity for LangChain and LangGraph pipelines. |
 | [Chain-of-Thought Skeleton Verifier](../mcps/chain-of-thought-skeleton-verifier.md) | Validates the structural integrity and parsing patterns of ReAct and Chain-of-Thought agent outputs. |
-| [Chain-of-Thought Skeleton Verifier](../mcps/chain-of-thought-skeleton-verifier-alternative.md) | Validates the structural integrity and parsing patterns of ReAct and Chain-of-Thought agent outputs. |
+| [Chain-of-Thought Skeleton Verifier](../mcps/chain-of-thought-skeleton-verifier-alternative.md) | Validates the structural integrity of ReAct and Chain-of-Thought agent outputs. |
 | [Circular Code Dependency Detector](../mcps/circular-code-dependency-detector.md) | Identify import cycles and measure module interdependence in JavaScript, TypeScript, and Python projects. |
 | [Civo (Cloud-native Kubernetes Cloud Provider API)](../mcps/civo-cloud-native-kubernetes-cloud-provider-api.md) | Manage Civo cloud infrastructure — provision Kubernetes clusters, control compute instances, and monitor usage directly via AI. |
 | [Claude Commit Diff Reviewer](../mcps/claude-commit-diff-reviewer.md) | Analyzes git diffs against task descriptions to detect scope creep and unwanted patterns. |
@@ -311,7 +311,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [JigsawStack](../mcps/jigsawstack.md) | Access a suite of AI utility APIs for web scraping, translation, OCR, and sentiment analysis in one developer-friendly platform. |
 | [jmespath-query-executor](../mcps/jmespath-query-executor.md) | Deterministic JSON querying using simplified JMESPath syntax. |
 | [JSON Payload Depth and Size Limiter](../mcps/json-payload-depth-and-size-limiter.md) | Validate JSON payloads against strict nesting depth and byte size constraints to prevent parser crashes. |
-| [JSON Schema Function Call Validator](../mcps/json-schema-function-call-validator.md) | Verify that LLM-generated JSON function calls strictly adhere to your defined JSON Schemas. |
+| [JSON Schema Function Call Validator](../mcps/json-schema-function-call-validator.md) | Validates raw LLM text outputs against JSON Schemas to detect missing parameters, type mismismatches, and hallucinations. |
 | [JSON Schema Strict Validator](../mcps/json-schema-strict-validator.md) | Perform deterministic JSON validation against Draft-07 and 2020-12 schemas with strict property enforcement. |
 | [JSON Schema Validator and Flattener](../mcps/json-schema-validator-and-flattener.md) | Strictly validate JSON against schemas and flatten nested structures using dot notation. |
 | [JSON-LD SEO Compiler](../mcps/json-ld-seo-compiler.md) | Compile 100% Google-compliant JSON-LD Schema blocks. Prevent AI hallucination of invalid SEO structured data. |
@@ -563,7 +563,6 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [SwaggerHub](../mcps/swaggerhub.md) | Connect your AI to SwaggerHub. Read OpenAPI specifications, explore domains, and manage your API design lifecycle natively from the terminal. |
 | [Swiftype](../mcps/swiftype.md) | Connect your AI to Elastic Swiftype. Query your search engines, manage documents, and retrieve deep analytical insights natively from the terminal. |
 | [System Prompt Leakage Detector](../mcps/system-prompt-leakage-detector.md) | Detects verbatim leaks of system prompts within agent outputs using LCS algorithms. |
-| [System Prompt Leakage Detector](../mcps/system-prompt-leakage-detector-alternative.md) | Detects verbatim leaks of system prompts within agent outputs using LCS algorithms. |
 | [T-Test Statistics Engine](../mcps/t-test-statistics-engine.md) | Run exact Student's, Welch's, and Paired t-tests local. Get CPU-guaranteed p-values instead of LLM-hallucinated guesses. |
 | [Tailwind v4 Theme Variable Extractor](../mcps/tailwind-v4-theme-variable-extractor.md) | Extracts CSS variables from Tailwind v4 @theme blocks. |
 | [Tailwind v4 Theme Variable Extractor](../mcps/tailwind-v4-theme-variable-extractor-alternative.md) | Extracts CSS variables from Tailwind v4 @theme blocks. |
