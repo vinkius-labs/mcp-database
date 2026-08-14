@@ -34,7 +34,6 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Luhn Credit Card Validator](../mcps/luhn-credit-card-validator.md) | Validates credit card numbers using the Luhn algorithm and identifies the issuer. |
 | [MAC Address Validator and Vendor Extractor](../mcps/mac-address-validator-and-vendor-extractor.md) | Validate MAC address formats and identify hardware vendors via OUI. |
 | [Multi-Agent Communication Protocol Validator](../mcps/multi-agent-communication-protocol-validator.md) | Analyze and verify the structural integrity of autonomous agent communication logs. |
-| [Multi-Agent Communication Protocol Validator](../mcps/multi-agent-communication-protocol-validator-alternative.md) | Analyze and verify the structural integrity of autonomous agent communication logs. |
 | [Outbound Network Firewall Validator](../mcps/outbound-network-firewall-validator.md) | Validates outbound network requests against allowed domains and ports to prevent data exfiltration. |
 | [Password Entropy Calculator](../mcps/password-entropy-calculator.md) | Calculate password entropy, identify pattern risks, and verify security policy compliance. |
 | [PII Redaction Deterministic Scrubber](../mcps/pii-redaction-deterministic-scrubber.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
@@ -43,7 +42,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Prompt Injection Pattern Detector](../mcps/prompt-injection-pattern-detector.md) | Detects malicious prompt injection attempts in LLM inputs using deterministic regex patterns. |
 | [Prompt Injection Pattern Scanner](../mcps/prompt-injection-pattern-scanner.md) | Scans user-supplied text for structural patterns associated with prompt-injection attempts. |
 | [Prompt Injection Shield Prover](../mcps/prompt-injection-shield-prover.md) | LLMs cannot distinguish system instructions from user input. This tool forces 5-layer injection defense analysis: intent isolation, privilege containment, indirect vector scanning, output sanitization, and scope enforcement. OWASP LLM Top 10 #1 compliance. |
-| [Prompt System Override Resistance Scorer](../mcps/prompt-system-override-resistance-scorer.md) | Quantify the structural integrity and resistance of LLM system prompts against manipulation. |
+| [Prompt System Override Resistance Scorer](../mcps/prompt-system-override-resistance-scorer.md) | Evaluates system prompt robustness by calculating directive density and strictness scores. |
 | [Python Code Safety Linter](../mcps/python-code-safety-linter.md) | Validates Python code strings using AST analysis to prevent security vulnerabilities. |
 | [Regex ReDoS Vulnerability Detector](../mcps/regex-redos-vulnerability-detector.md) | Detects catastrophic backtracking and ReDoS vulnerabilities in regular expression patterns using deterministic structural analysis. |
 | [Regex ReDoS Vulnerability Detector](../mcps/regex-redos-vulnerability-detector-alternative.md) | Detects catastrophic backtracking and ReDoS vulnerabilities in regular expression patterns using deterministic structural analysis. |

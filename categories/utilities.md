@@ -40,6 +40,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [ISO 8601 Duration Parser](../mcps/iso-8601-duration-parser.md) | Extracts time components and calculates total seconds from ISO 8601 duration strings. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser-alternative.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
+| [Knitting Gauge Calculator](../mcps/knitting-gauge-calculator.md) | Convert garment dimensions and shaping rules into precise stitch counts and schedules. |
 | [Markdown to Plain Text Extractor](../mcps/markdown-to-plain-text-extractor.md) | Strips Markdown syntax and measures content reduction. |
 | [Markdown to Plain Text Extractor Alternative](../mcps/markdown-to-plain-text-extractor-alternative.md) | Strips Markdown syntax and measures content reduction. |
 | [Memory Context Window Pruner](../mcps/memory-context-window-pruner.md) | Manage LLM conversation history by applying deterministic pruning strategies to prevent context window overflow. |

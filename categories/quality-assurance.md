@@ -4,11 +4,9 @@ Explore the open database of **quality-assurance** Model Context Protocol (MCP) 
 
 | Tool Name | Description |
 |-----------|-------------|
-| [Agent Persona Consistency Scanner](../mcps/agent-persona-consistency-scanner.md) | Verify LLM adherence to defined personas by analyzing pronoun ratios, formality scores, and vocabulary violations. |
 | [Chatbot Dialogue Consistency Checker](../mcps/chatbot-dialogue-consistency-checker.md) | Audit chatbot scripts for linguistic stability, persona adherence, and conversational quality. |
 | [Coverage Gate Evaluator](../mcps/coverage-gate-evaluator.md) | Enforce strict code coverage thresholds using deterministic integer math. |
 | [FAQ Clarity Analyzer](../mcps/faq-clarity-analyzer.md) | Audit FAQ content for naturalness, complexity, and readability consistency. |
-| [LLM Output Format Drift Detector](../mcps/llm-output-format-drift-detector.md) | Detect structural deviations in LLM outputs against reference templates. |
 
 
 ---

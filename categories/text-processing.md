@@ -6,7 +6,6 @@ Explore the open database of **text-processing** Model Context Protocol (MCP) se
 |-----------|-------------|
 | [Exact Levenshtein Distance Calculator](../mcps/exact-levenshtein-distance-calculator.md) | Compute precise edit distances and string similarity scores. |
 | [Exact Levenshtein Distance Calculator Alternative](../mcps/exact-levenshtein-distance-calculator-alternative.md) | Compute precise edit distances and string similarity scores. |
-| [RAG Payload Metadata Extractor](../mcps/rag-payload-metadata-extractor.md) | Extracts metadata, structural markers, and efficiency metrics from RAG source documents using deterministic regex patterns. |
 
 
 ---

@@ -573,7 +573,6 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Marilyn vos Savant Probabilistic Clarity Prover](../mcps/marilyn-vos-savant-probabilistic-clarity-prover.md) | Stop your AI from trusting its gut — force it to check intuition against actual probability before every conclusion. |
 | [Markdown HTML Compiler](../mcps/markdown-html-compiler.md) | Stop wasting AI tokens converting text. Compile Markdown into clean, minified HTML instantly for emails and CMS platforms. |
 | [Markdown Structure Compliance Validator](../mcps/markdown-structure-compliance-validator.md) | Enforce strict markdown formatting rules for LLM outputs. |
-| [Markdown Structure Compliance Validator](../mcps/markdown-structure-compliance-validator-alternative.md) | Enforce strict markdown formatting rules for LLM outputs. |
 | [Markdown Task Extractor](../mcps/markdown-task-extractor.md) | Instantly scan any local folder of Markdown notes (Obsidian, Notion, Logseq) and aggregate every scattered '- [ ]' to-do item into a single, structured list for your AI. |
 | [Markdown Utilities Engine](../mcps/markdown-utilities-engine.md) | Equip your AI with programmatic Markdown tools. Deterministically generate Table of Contents (TOC) with correct anchor links and format perfect Markdown tables from JSON. |
 | [Markup Calculator](../mcps/markup-calculator.md) | Calculate markup divisor and suggested selling price based on costs, taxes, and profit margins. |
@@ -604,6 +603,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Moxie](../mcps/moxie.md) | Manage your freelance or agency business with client portals, project tracking, time logging, and invoicing in one clean tool. |
 | [Multi-Agent Orchestrator Prover](../mcps/multi-agent-orchestrator-prover.md) | An AI designed a multi-agent system where agents 'work together seamlessly,' data 'flows naturally between them,' and failures 'self-heal.' Three days later, Agent B crashed and the pipeline froze for 14 hours — no one knew because there was no tracing. That is not orchestration — that is hope with a tech stack. This tool forces five orchestration axes: role boundaries, handoff protocols, failure containment, consensus mechanisms, and distributed tracing. |
 | [Multi-Shift Accumulator](../mcps/multi-shift-accumulator.md) | Calculate total net work time by summing multiple shifts and subtracting unpaid breaks. |
+| [Music Theory Chord Engine](../mcps/music-theory-chord-engine.md) | Deterministic music theory calculator for precise chord structures and enharmonic spelling. |
 | [MyHR](../mcps/myhr.md) | Simplify employee management in New Zealand and Australia with leave tracking, timesheets, and HR compliance tools. |
 | [Nager.Date](../mcps/nagerdate.md) | Manage public holidays worldwide — audit global events and calendars via AI. |
 | [NameSilo (Domain Registrar Developer API)](../mcps/namesilo-domain-registrar-developer-api.md) | Manage your domain portfolio, DNS records, and registrations directly through NameSilo's developer API. |
@@ -858,6 +858,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Typebot](../mcps/typebot.md) | Build conversational forms and chatbot flows with a beautiful open-source visual editor that creates engaging user experiences. |
 | [Typefully](../mcps/typefully.md) | Write, schedule, and grow your audience on Twitter and LinkedIn with an editor that helps you craft threads that go viral. |
 | [TypeScript Excellence Prover](../mcps/typescript-excellence-prover.md) | AI agents produce unsafe TypeScript loaded with `any` types, @ts-ignore overrides, empty catch blocks, and event-loop blocking operations. This prover enforces absolute type safety, zero-workaround policies, typed error schemas, decoupled architecture, and optimized async execution. |
+| [Typography Layout Calculator](../mcps/typography-layout-calculator.md) | Calculate exact typographic layout metrics and achieve perfect baseline grid snap. |
 | [UI/UX Excellence Prover](../mcps/uiux-excellence-prover.md) | AI agents generate flat, lifeless interfaces: decorative shadows, linear animations, buttons without hover states, chaotic spacing, and accessibility theater. This tool enforces 2026-era excellence: spatial hierarchy with Liquid Glass, spring-based motion, 8-state microinteractions, 8... |
 | [UK PAYE Calculator](../mcps/uk-paye-calculator.md) | Calculate UK Income Tax and National Insurance deductions for weekly or monthly pay periods. |
 | [UK Postbox](../mcps/uk-postbox.md) | Manage your virtual mailbox via UK Postbox u2014 scan letters, forward mail, send correspondence, and track parcels from your AI agent. |

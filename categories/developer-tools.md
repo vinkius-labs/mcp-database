@@ -12,7 +12,8 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [AddSearch](../mcps/addsearch.md) | Equip your AI agent with AddSearch to query your indexed site content, push new documents, and retrieve search analytics instantly. |
 | [AdGuard Home](../mcps/adguard-home.md) | Manage your AdGuard Home instance — control protection, DNS settings, and filtering rules directly from any AI agent. |
 | [Agent Description & Tool Alignment Checker](../mcps/agent-description-tool-alignment-checker.md) | Validates alignment between agent descriptions and assigned tools to prevent multi-agent framework errors. |
-| [Agent Error Recovery Rate Calculator](../mcps/agent-error-recovery-rate-calculator.md) | Analyze execution logs to calculate error recovery rates and identify failure patterns. |
+| [Agent Error Recovery Rate Calculator](../mcps/agent-error-recovery-rate-calculator.md) | Analyzes execution logs to calculate tool call success ratios and agent recovery rates. |
+| [Agent Persona Consistency Scanner](../mcps/agent-persona-consistency-scanner.md) | A precision utility for measuring how closely an LLM adheres to a target persona. |
 | [Agent Role Conflict Detector](../mcps/agent-role-conflict-detector.md) | Detects overlapping responsibilities and role conflicts in multi-agent teams. |
 | [AgentOps (Agent Telemetry and Monitoring)](../mcps/agentops-agent-telemetry-and-monitoring.md) | Monitor and observe your AI agents with AgentOps — track traces, spans, and project metrics directly from your agent. |
 | [Agify](../mcps/agify.md) | Predict the age of a person based on their first name using the Agify.io API. |
@@ -350,6 +351,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [LLM API Cost Estimator](../mcps/llm-api-cost-estimator.md) | Calculate exact API costs and track session budgets for LLM workflows. |
 | [LLM Fine-Tuning Dataset Validator](../mcps/llm-fine-tuning-dataset-validator.md) | Verify structural integrity, token distribution, and training costs of JSONL datasets. |
 | [LLM JSON Repair Utility](../mcps/llm-json-repair-utility.md) | Fixes malformed, truncated, or dirty JSON strings produced by LLMs. |
+| [LLM Output Format Drift Detector](../mcps/llm-output-format-drift-detector.md) | Quantifies structural deviations in LLM responses by comparing exact syntax and markdown hierarchies against a reference template. |
 | [LLM Output JSON Extractor](../mcps/llm-output-json-extractor.md) | Isolates valid JSON objects from mixed markdown/text LLM outputs using deterministic bracket-matching. |
 | [LLM Response Structural Validator](../mcps/llm-response-structural-validator.md) | Detect and prevent silent structural failures in LLM outputs using deterministic pattern matching. |
 | [LLM ROUGE & BLEU Evaluator](../mcps/llm-rouge-bleu-evaluator.md) | Evaluate AI text generation quality. Compute exact mathematical BLEU and ROUGE scores comparing generated text to reference documents. |
@@ -374,6 +376,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Mapbox](../mcps/mapbox-alternative.md) | Integrate Mapbox mapping and location services into your AI agent—access vector/raster tiles, static images, directions, and manage datasets. |
 | [Markdown Frontmatter Harvester](../mcps/markdown-frontmatter-harvester.md) | Scan local Obsidian or Hugo vaults and extract all YAML frontmatter (tags, dates, status) into a single structured JSON. Let your AI query your scattered notes metadata instantly. |
 | [Markdown Lint Analyzer](../mcps/markdown-lint-analyzer.md) | Automated structural and formatting validation for Markdown documents. |
+| [Markdown Structure Compliance Validator](../mcps/markdown-structure-compliance-validator-alternative.md) | Enforces strict markdown formatting rules for LLM outputs. |
 | [Math Evaluation Engine](../mcps/math-evaluation-engine.md) | Stop LLMs from hallucinating math. Evaluate complex mathematical expressions and handle exact float rounding deterministically. |
 | [Matrix Operations Engine](../mcps/matrix-operations-engine.md) | Perform exact linear algebra — multiply, transpose, invert, and compute determinants of massive matrices local. Zero LLM math hallucinations. |
 | [Merge (Unified Integration API)](../mcps/merge-unified-integration-api.md) | Manage unified B2B data via Merge — list HRIS employees, ATS candidates, CRM contacts, and support tickets. |
@@ -465,8 +468,9 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Prefect](../mcps/prefect.md) | Bring your data orchestration into your AI — audit Python pipelines, debug failed runs, and inspect Prefect Work Pools natively. |
 | [Prismatic](../mcps/prismatic.md) | Manage your Prismatic integration platform — list customers, create instances, deploy integrations, and fetch execution logs via AI. |
 | [Privy](../mcps/privy.md) | Manage users and wallets via Privy — create users, search profiles, and manage embedded wallets directly from any AI agent. |
+| [Prompt Entropy and Clarity Scorer](../mcps/prompt-entropy-and-clarity-scorer.md) | A mathematical diagnostic tool to measure prompt complexity and cognitive load. |
 | [Prompt Template Variable Injector Checker](../mcps/prompt-template-variable-injector-checker.md) | Validates prompt templates for correct variable syntax, undeclared variables, and potential injection vectors. |
-| [Prompt Template Variable Injector Checker](../mcps/prompt-template-variable-injector-checker-alternative.md) | Validates prompt templates for correct variable syntax, undeclared variables, and potential injection vectors. |
+| [Prompt Template Variable Injector Checker](../mcps/prompt-template-variable-injector-checker-alternative.md) | Validates prompt templates for syntax, undeclared variables, and injection risks. |
 | [Prompt Template Variable Resolver](../mcps/prompt-template-variable-resolver.md) | Validates and resolves variable placeholders in LLM templates. |
 | [PropelAuth (B2B Authentication)](../mcps/propelauth-b2b-authentication.md) | Manage B2B authentication, users, and organizations via PropelAuth — handle user provisioning, org management, and API keys directly from your AI agent. |
 | [Protobuf to JSON Schema Transpiler](../mcps/protobuf-to-json-schema-transpiler.md) | Convert Protocol Buffer (.proto) definitions into valid JSON Schema objects deterministically. |
@@ -489,7 +493,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Raygun](../mcps/raygun.md) | Monitor application health, track deployments, and manage crash reports and RUM sessions directly from your AI agent. |
 | [React Server Action Route Mapper](../mcps/react-server-action-route-mapper.md) | Extracts Next.js Server Actions and maps them to deterministic API routes. |
 | [ReadMe](../mcps/readme.md) | Equip your AI to directly search, read, and manage developer documentation stored in your ReadMe project. |
-| [Reasoning Step Word Count Analyzer](../mcps/reasoning-step-word-count-analyzer.md) | Analyze ReAct traces to audit reasoning verbosity and detect zero-shot behavior. |
+| [Reasoning Step Word Count Analyzer](../mcps/reasoning-step-word-count-analyzer.md) | Analyzes ReAct traces to measure reasoning depth and identify zero-shot behavior. |
 | [Redox](../mcps/redox.md) | Connect to the Redox healthcare API to search patients, retrieve clinical conditions, and write back observations directly from your AI agent. |
 | [Regex Execution and Group Extractor](../mcps/regex-execution-and-group-extractor.md) | Executes regular expressions against text to extract matches, groups, and indices. |
 | [Regex Explainer Stepper](../mcps/regex-explainer-stepper.md) | Decompose complex regular expressions into a step-by-step AST walkthrough and perform safety audits. |
@@ -587,10 +591,10 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [TOML Parser & Validator](../mcps/toml-parser-validator.md) | Strict TOML parsing and schema validation with precise error reporting. |
 | [TOML Parser Engine](../mcps/toml-parser-engine.md) | Convert TOML config files to JSON and back. Essential for Rust (Cargo.toml), Python (pyproject.toml), and Cloudflare (wrangler.toml). |
 | [TOML Strict Config Parser](../mcps/toml-strict-config-parser.md) | A deterministic, dependency-free parser that transforms TOML strings into structured JSON objects. |
-| [Tool Argument Completeness Checker](../mcps/tool-argument-completeness-checker.md) | Extracts and validates tool arguments from LLM action text. |
+| [Tool Argument Completeness Checker](../mcps/tool-argument-completeness-checker.md) | Audits LLM tool calls to detect missing parameters and value hallucinations. |
 | [Tool Availability and Dependency Checker](../mcps/tool-availability-and-dependency-checker.md) | Audits tool environments for availability, version compatibility, and recursive dependency chains. |
 | [Tool Call Schema Validator](../mcps/tool-call-schema-validator.md) | High-precision validation of LLM tool call arguments against strict JSON Schema definitions. |
-| [Tool Description Semantic Density Scorer](../mcps/tool-description-semantic-density-scorer.md) | Analyze LLM tool descriptions for linguistic precision and structural integrity. |
+| [Tool Description Semantic Density Scorer](../mcps/tool-description-semantic-density-scorer.md) | Analyzes LLM tool descriptions to evaluate linguistic precision, verb density, and naming consistency. |
 | [Tool Interface Contract Validator](../mcps/tool-interface-contract-validator.md) | Ensures tool implementations strictly adhere to declared input and output schemas via deterministic fuzz testing. |
 | [ToolJet](../mcps/tooljet.md) | Manage ToolJet databases and trigger workflows directly from your AI agent—query tables, insert data, and automate processes. |
 | [Transactional File Write Simulator](../mcps/transactional-file-write-simulator.md) | Simulates atomic file writes with rollback capabilities to prevent corruption. |
@@ -641,7 +645,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Wemix Explorer](../mcps/wemix-explorer.md) | Explore Wemix blockchain data — query accounts, track token transfers, and inspect blocks or extrinsics directly from your AI agent. |
 | [WordPress Plugin Auditor](../mcps/wordpress-plugin-auditor.md) | This MCP gives your AI agent the ability to securely list and audit all installed plugins on a WordPress site. Perfect for security sweeps, maintenance reports, and identifying outdated or inactive plugins. |
 | [Writer (AI Enterprise LLM)](../mcps/writer-ai-enterprise-llm.md) | Access Writer's enterprise-grade LLMs and Knowledge Graph capabilities to generate content, manage files, and query RAG-based data. |
-| [XML Tag Structure Compliance Checker](../mcps/xml-tag-structure-compliance-checker.md) | Validate XML tag integrity, nesting hierarchy, and tag-to-text density. |
+| [XML Tag Structure Compliance Checker](../mcps/xml-tag-structure-compliance-checker.md) | Validates XML tag integrity, nesting hierarchy, and content density. |
 | [XML to Dict Parser](../mcps/xml-to-dict-parser.md) | Converts XML strings into deterministic dictionary structures for stable LLM outputs. |
 | [Xray (Test Management)](../mcps/xray-test-management.md) | Manage test cases, executions, and plans on Xray — the leading quality assurance platform for Jira. |
 | [YAML Structural Validator & Flattener](../mcps/yaml-structural-validator-flattener.md) | High-precision YAML validation and dot-notation flattening. |

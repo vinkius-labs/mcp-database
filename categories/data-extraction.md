@@ -8,6 +8,7 @@ Explore the open database of **data-extraction** Model Context Protocol (MCP) se
 | [LLM JSON Extractor](../mcps/llm-json-extractor.md) | Isolates valid JSON objects from messy LLM text outputs. |
 | [LLM XML Tag Parser](../mcps/llm-xml-tag-parser.md) | Extract and validate content within XML-style tags from LLM outputs. |
 | [Markdown Table to JSON Converter](../mcps/markdown-table-to-json-converter.md) | Convert GitHub-flavored Markdown tables into structured JSON arrays of objects. |
+| [RAG Payload Metadata Extractor](../mcps/rag-payload-metadata-extractor.md) | Extracts metadata and calculates data density for RAG source documents. |
 | [Structured Output Extractor](../mcps/structured-output-extractor.md) | Recover structured data from malformed LLM responses using deterministic regex. |
 
 

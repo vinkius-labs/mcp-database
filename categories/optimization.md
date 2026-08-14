@@ -7,7 +7,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Agent Capability Matcher](../mcps/agent-capability-matcher.md) | Aligns AI agents to tasks using weighted capability scoring. |
 | [Claude Tool Output Compressor](../mcps/claude-tool-output-compressor.md) | Reduces context window exhaustion by applying deterministic compression rules to large tool outputs. |
 | [Context Redundancy Deduplicator](../mcps/context-redundancy-deduplicator.md) | Identify and quantify exact N-gram overlaps across RAG documents to optimize context window usage. |
-| [Context Redundancy Deduplicator](../mcps/context-redundancy-deduplicator-alternative.md) | Identify and quantify exact N-gram overlaps across RAG documents to optimize context window usage. |
+| [Context Redundancy Deduplicator](../mcps/context-redundancy-deduplicator-alternative.md) | Identify overlapping N-grams across RAG documents to calculate redundancy and byte-size savings. |
 | [Context Window Optimizer](../mcps/context-window-optimizer.md) | Optimizes LLM context windows by selecting the most relevant and recent information within token limits. |
 | [Cost-Controlled Tool Selector](../mcps/cost-controlled-tool-selector.md) | A deterministic engine to select the most cost-effective tool variant based on accuracy requirements. |
 | [Grain Direction Restrictor](../mcps/grain-direction-restrictor.md) | Enforce material grain orientation constraints for precise plywood cutting and bin packing. |
