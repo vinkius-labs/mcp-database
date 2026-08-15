@@ -16,6 +16,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Basis Calculator](../mcps/basis-calculator.md) | Calculate and analyze commodity basis by comparing local physical prices against exchange futures. |
 | [Battle Pass Value Calculator](../mcps/battle-pass-value-calculator.md) | Analyze the economic efficiency of gaming Battle Passes by calculating ROI and break-even points. |
 | [Beta Calculator](../mcps/beta-calculator.md) | Calculate asset volatility sensitivity, Jensen's Alpha, and risk classification relative to market benchmarks. |
+| [Black-Scholes Calculator](../mcps/black-scholes-calculator.md) | Deterministic engine for European option pricing and Greeks sensitivity analysis. |
 | [Blended CAC Calculator](../mcps/blended-cac-calculator.md) | Calculate precise Customer Acquisition Cost (CAC) across multiple channels and optimize future marketing spend allocation. |
 | [BNPL Financial Comparator](../mcps/bnpl-financial-comparator.md) | Expose the true cost of BNPL, credit cards, and cash payments by calculating effective APRs and hidden fees. |
 | [Bollinger Bands Calculator](../mcps/bollinger-bands-calculator.md) | Calculate volatility bands, squeeze states, and price positioning. |
@@ -74,6 +75,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Efficient Frontier Calculator](../mcps/efficient-frontier-calculator.md) | Calculate optimal asset weights and performance metrics along the efficient frontier. |
 | [Elder Force Index Calculator](../mcps/elder-force-index-calculator.md) | Calculate Elder Force Index, detect trend signals, and identify price-momentum divergences. |
 | [Elder Impulse Calculator](../mcps/elder-impulse-calculator.md) | Deterministic technical analysis for Elder Impulse signals. |
+| [Elder Ray Index Calculator](../mcps/elder-ray-index-calculator.md) | Calculate Bulls Power, Bears Power, and detect market setups and divergences. |
 | [Emergency Fund Calculator](../mcps/emergency-fund-calculator.md) | Calculate your personalized emergency fund target and monthly savings plan. |
 | [Emergency Fund Drain Timeline](../mcps/emergency-fund-drain-timeline.md) | Predict how many days your emergency fund will last based on income loss and essential expenses. |
 | [Employee Salary Benchmark](../mcps/employee-salary-benchmark.md) | Retrieve market salary ranges in USD and BRL for various roles, seniority levels, and startup stages. |
@@ -114,6 +116,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Headcount Efficiency Metrics](../mcps/headcount-efficiency-metrics.md) | Evaluate SaaS operational efficiency by comparing unit economics and spend ratios against public company benchmarks. |
 | [Hedge Bet Calculator](../mcps/hedge-bet-calculator.md) | Calculate the exact hedge wager needed to guarantee profit and eliminate risk. |
 | [Hedge Ratio Calculator](../mcps/hedge-ratio-calculator.md) | Calculate commodity futures contracts and quantify price volatility exposure. |
+| [Historical Volatility Calculator](../mcps/historical-volatility-calculator.md) | Calculate annualized historical volatility, percentile ranks, and volatility cones. |
 | [Home Affordability Calculator](../mcps/home-affordability-calculator.md) | Estimate your maximum home purchase price and verify mortgage DTI compliance. |
 | [IBAN and BIC Checksum Validator](../mcps/iban-and-bic-checksum-validator.md) | Verify the mathematical integrity of IBANs and the structural validity of BIC/SWIFT codes. |
 | [Ichimoku Cloud Calculator](../mcps/ichimoku-cloud-calculator.md) | Deterministic engine for Ichimoku Kinko Hyo indicator components and signals. |
@@ -145,6 +148,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [MACD Calculator](../mcps/macd-calculator.md) | Deterministic technical analysis engine for MACD indicators and signals. |
 | [Machinery Cost Calculator](../mcps/machinery-cost-calculator.md) | Calculate hourly, per-hectare, and total operational costs for agricultural machinery. |
 | [Magic Number Calculator](../mcps/magic-number-calculator.md) | Calculate and analyze Go-To-Market efficiency using the Magic Number ratio. |
+| [Mass Index Calculator](../mcps/mass-index-calculator.md) | Detect market reversals and momentum bulges using the Donald Dorsey Mass Index. |
 | [Max Drawdown Calculator](../mcps/max-drawdown-calculator.md) | Calculate maximum drawdown, recovery periods, and stress indicators from historical price series. |
 | [Media Mix Efficiency Calculator](../mcps/media-mix-efficiency-calculator.md) | Calculate channel efficiency (CPL, CPA, ROAS) and get a data-driven budget reallocation plan to maximize conversions. |
 | [Money Flow Index Calculator](../mcps/money-flow-index-calculator.md) | Calculate Money Flow Index (MFI) and detect price divergences. |
@@ -165,6 +169,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [PE Ratio Analyzer](../mcps/pe-ratio-analyzer.md) | Analyze stock valuation using P/E, PEG, and sector-specific benchmarks. |
 | [Penalty Clause Calculator](../mcps/penalty-clause-calculator.md) | Calculate contractual penalties, legal ceilings, and estimated judicial reductions based on jurisdiction. |
 | [Percentage Price Oscillator (PPO) Engine](../mcps/percentage-price-oscillator-ppo-engine.md) | A deterministic engine for calculating normalized price momentum via PPO indicators. |
+| [Percentage Volume Oscillator (PVO) Calculator](../mcps/percentage-volume-oscillator-pvo-calculator.md) | Calculate PVO metrics, signal crossovers, and volume-price divergences. |
 | [Pet Cost Lifetime Estimator](../mcps/pet-cost-lifetime-estimator.md) | Estimate the total lifetime cost of owning a dog or cat, including upfront and annual expenses. |
 | [Pet Monthly Cost Estimator](../mcps/pet-monthly-cost-estimator.md) | Estimate the monthly financial commitment for pet care based on species, size, and location. |
 | [Pipeline Velocity Calculator](../mcps/pipeline-velocity-calculator.md) | Calculate sales pipeline velocity ($/day) and identify which operational metric (opportunities, close rate, or ACV) must improve to hit your revenue targets. |
@@ -181,11 +186,13 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [ProUni Eligibility Calculator](../mcps/prouni-eligibility-calculator.md) | Instantly calculate scholarship eligibility (Full or Partial) for ProUni by inputting family income, household size, and ENEM scores. |
 | [R&D Tax Credit Calculator](../mcps/rd-tax-credit-calculator.md) | Calculate US R&D tax credits using Regular and ASC methodologies. |
 | [Rainwater Harvesting Estimator](../mcps/rainwater-harvesting-estimator.md) | Estimate monthly rainwater collection volume and potential water bill savings based on roof area and local rainfall. |
+| [Rate of Change Calculator](../mcps/rate-of-change-calculator.md) | Calculate deterministic Rate of Change (ROC) and Momentum to identify market trends and divergences. |
 | [Real Estate Financing Calculator](../mcps/real-estate-financing-calculator.md) | Calculate detailed monthly amortization schedules and financial summaries for Price and SAC mortgage systems. |
 | [Real Estate ROI Analyzer](../mcps/real-estate-roi-analyzer.md) | Analyze investment property performance, cash flow, and long-term tax benefits. |
 | [Recording Session Planner](../mcps/recording-session-planner.md) | Generate precise studio schedules, cost estimates, and completion risk assessments for music production. |
 | [Recycling Value Estimator](../mcps/recycling-value-estimator.md) | Calculate potential revenue and CO2 savings from recyclable materials. |
 | [Relative Vigor Index (RVI) Calculator](../mcps/relative-vigor-index-rvi-calculator.md) | Deterministic technical analysis tool for RVI, signal lines, and momentum signals. |
+| [Relative Volatility Index (RVI) Calculator](../mcps/relative-volatility-index-rvi-calculator.md) | Calculate and analyze volatility momentum using the Relative Volatility Index. |
 | [Rental Property Cash Flow Calculator](../mcps/rental-property-cash-flow-calculator.md) | Analyze rental property profitability, cash flow, and long-term ROI with detailed tax and 1031 exchange projections. |
 | [Retirement Planning Engine](../mcps/retirement-planning-engine.md) | Project retirement savings growth, optimize Social Security benefits, and simulate withdrawal success. |
 | [Retirement Withdrawal Calculator](../mcps/retirement-withdrawal-calculator.md) | Estimate the sustainability of your retirement withdrawals using Monte Carlo simulations. |
@@ -239,6 +246,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Travel Budget Estimator](../mcps/travel-budget-estimator.md) | Estimate daily travel costs for global cities based on your travel style and group size. |
 | [Treasury Return Calculator](../mcps/treasury-return-calculator.md) | Calculate fair price, YTM, and inflation-adjusted returns for US Treasuries, UK Gilts, and German Bunds. |
 | [TRIX-Calculator](../mcps/trix-calculator.md) | Deterministic Triple EMA oscillator for trend and momentum analysis. |
+| [True Strength Index (TSI) Calculator](../mcps/true-strength-index-tsi-calculator.md) | A deterministic technical analysis engine for calculating TSI values, signal lines, and momentum signals. |
 | [UK Income Tax Calculator](../mcps/uk-income-tax-calculator.md) | Calculate UK income tax liabilities, including personal allowance tapering and National Insurance contributions. |
 | [UK Statutory Interest Calculator](../mcps/uk-statutory-interest-calculator.md) | Calculate statutory interest and fixed compensation for late commercial payments in the UK. |
 | [Ultimate Oscillator Calculator](../mcps/ultimate-oscillator-calculator.md) | Calculate Larry Williams' Ultimate Oscillator to detect momentum shifts and divergences. |
