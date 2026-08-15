@@ -106,7 +106,6 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [String Alternative](../mcps/string-alternative.md) | Engage mobile app users with targeted push notifications, in-app messages, and behavioral triggers that improve retention. |
 | [Submail / 赛邮云](../mcps/submail.md) | Powerful SMS, Email, and Voice communication platform — orchestrate multi-channel messaging via AI. |
 | [Swiftfox](../mcps/swiftfox.md) | Generate product mockups and marketing visuals instantly with AI that places your designs on real-world backgrounds. |
-| [Symbl.ai](../mcps/symblai.md) | Extract conversation intelligence from audio, video, and text — get summaries, action items, and topics directly from any AI agent. |
 | [Tatango](../mcps/tatango.md) | Run high-volume SMS and MMS campaigns for enterprise marketing with compliance tools that keep you TCPA-safe at scale. |
 | [TeleSign](../mcps/telesign.md) | Verify user identities with phone number intelligence, SMS verification, and risk scoring that prevents fraud at sign-up. |
 | [Telnyx](../mcps/telnyx.md) | Send and manage SMS/MMS, check account balances, and configure messaging profiles natively via your AI agent. |
@@ -117,7 +116,6 @@ Explore the open database of **communication-messaging** Model Context Protocol 
 | [TNZ Communications](../mcps/tnz-communications.md) | Send SMS, Voice (TTS), and Fax messages via TNZ directly from your AI agent. |
 | [Toky](../mcps/toky.md) | Handle business calls from anywhere with a cloud phone system that includes IVR, call recording, and CRM integration. |
 | [Trengo](../mcps/trengo.md) | Manage customer conversations across WhatsApp, email, chat, and social from one shared inbox your whole team can use. |
-| [Udemy](../mcps/udemy-alternative.md) | Manage your Udemy instructor dashboard—respond to student questions, handle direct messages, and track course reviews directly from your AI agent. |
 | [Uniphore Conversation AI](../mcps/uniphore-conversation-ai.md) | Access meeting transcripts, summaries, action items, and analytics via Uniphore API. |
 | [WA Smart Business](../mcps/wa-smart-business-alternative.md) | Scale your WhatsApp business communication with chatbots, bulk messaging, and team inbox features for growing companies. |
 | [WA Smart Business](../mcps/wa-smart-business.md) | Automate WhatsApp marketing and communication via WA Smart Business — manage contacts, groups, and messages directly from any AI agent. |

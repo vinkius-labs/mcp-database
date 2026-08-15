@@ -27,7 +27,6 @@ Explore the open database of **security-compliance** Model Context Protocol (MCP
 | [MailerCheck](../mcps/mailercheck.md) | Verify and validate email addresses in real-time or batch via the MailerCheck REST API. |
 | [OpenSanctions](../mcps/opensanctions.md) | Screen persons and companies against global sanctions lists and PEP databases for KYC/AML compliance. |
 | [Patchstack Security](../mcps/patchstack-security.md) | Monitor WordPress security via Patchstack — track vulnerabilities, manage site software, and receive alerts directly via AI. |
-| [Scytale (Security Compliance Automation)](../mcps/scytale-security-compliance-automation.md) | Automate security compliance via Scytale — manage evidence, track security controls, and monitor framework status directly from your AI agent. |
 | [SecurityTrails](../mcps/securitytrails.md) | Uncover IT infrastructure — access DNS history, subdomains, reverse IP lookups, WHOIS data and advanced domain intelligence for ultimate OSINT. |
 | [Shodan](../mcps/shodan.md) | Search for internet-connected devices, analyze open ports, discover vulnerabilities and explore the IoT landscape. |
 | [Sift (Chargeback)](../mcps/sift-chargeback.md) | Manage fraud prevention and chargebacks via Sift — track user scores, report disputes, and apply decisions directly from any AI agent. |

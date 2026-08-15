@@ -11,7 +11,6 @@ Explore the open database of **devops-cicd** Model Context Protocol (MCP) server
 | [Loggly (Cloud Log Management API)](../mcps/loggly-cloud-log-management-api.md) | Manage cloud logs via Loggly — send events, execute Lucene searches, and analyze infrastructure metrics directly from your AI agent. |
 | [Logstash (Server-side Log Pipeline API)](../mcps/logstash-server-side-log-pipeline-api.md) | Monitor and manage Logstash instances — check node health, inspect pipeline statistics, and troubleshoot hot threads directly from any AI agent. |
 | [Logz.io](../mcps/logzio.md) | Query logs, manage alerts, and monitor triggered events in Logz.io directly from your AI agent using Elasticsearch DSL. |
-| [Papertrail (Real-time Cloud Log Manager)](../mcps/papertrail-real-time-cloud-log-manager.md) | Manage and analyze cloud logs in real-time via Papertrail — search events, list systems, and organize log groups directly from your AI agent. |
 
 
 ---

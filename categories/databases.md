@@ -23,18 +23,9 @@ Explore the open database of **databases** Model Context Protocol (MCP) servers.
 | [MyScale (SQL Vector Database API)](../mcps/myscale-sql-vector-database-api.md) | Manage MyScale vector databases via SQL — execute queries, perform vector searches, and manage indices directly from any AI agent. |
 | [Nile (PostgreSQL for Multi-Tenant Apps)](../mcps/nile-postgresql-for-multi-tenant-apps.md) | Manage tenant-aware databases via Nile — provision B2B tenants, monitor DB metrics, and audit user access. |
 | [NLM RxNorm (Drug Database)](../mcps/nlm-rxnorm-drug-database.md) | Access the NLM RxNorm database to search for drugs, retrieve RxCUIs, and inspect standardized drug properties and identifiers. |
-| [Nookipedia](../mcps/nookipedia.md) | Access the ultimate Animal Crossing encyclopedia — query villager data, New Horizons items, bugs, fish, and recipes directly from any AI agent. |
-| [Paleobiology Database](../mcps/paleobiology-database.md) | Access the world's largest fossil database — query occurrences, analyze taxonomic diversity, and explore geological intervals directly from your AI agent. |
-| [Plants](../mcps/plants.md) | Access a massive botanical database — search for plants, species, and distributions directly from any AI agent. |
-| [PoetryDB](../mcps/poetrydb.md) | Access the world's largest database of public domain poetry — search by author, title, lines, or line count directly from your AI agent. |
 | [QuestDB (Time-Series)](../mcps/questdb-time-series.md) | High-performance time-series database for fast SQL queries, data ingestion, and real-time analytics directly from your AI agent. |
-| [RisingWave (Streaming Database)](../mcps/risingwave-streaming-database.md) | Manage your RisingWave streaming database — execute SQL, ingest events, and monitor tables, materialized views, sources, and sinks directly from any AI agent. |
-| [Scryfall](../mcps/scryfall.md) | Access the ultimate Magic: The Gathering database — search cards, fetch rulings, and explore sets directly from your AI agent. |
 | [Snowtrace (Avalanche Explorer)](../mcps/snowtrace-avalanche-explorer.md) | Explore the Avalanche C-Chain — check AVAX balances, track ERC-20/NFT transfers, and inspect smart contract data directly from your AI agent. |
 | [SurrealDB](../mcps/surrealdb.md) | Manage SurrealDB instances — execute SurrealQL, query tables, and manage records directly from any AI agent. |
-| [SWAPI - The Star Wars](../mcps/swapi-the-star-wars.md) | Explore the Star Wars universe — query people, planets, films, and starships directly from the Star Wars API. |
-| [The One](../mcps/the-one.md) | Access the complete lore of Middle-earth — browse books, movies, characters, and iconic quotes from The Lord of the Rings universe. |
-| [TiDB Cloud (Serverless Distributed SQL)](../mcps/tidb-cloud-serverless-distributed-sql.md) | Manage TiDB Cloud infrastructure — list projects, inspect clusters, and monitor serverless instances directly from your AI agent. |
 | [Vald](../mcps/vald.md) | Power your agent with Vald — query, insert, and manage dense vectors on a highly scalable, distributed nearest-neighbor engine. |
 | [Xata](../mcps/xata.md) | Automate your serverless database workflows with Xata — manage organizations, projects, and branches directly from your AI agent. |
 | [Xata (Serverless DB)](../mcps/xata-serverless-db.md) | Manage your serverless databases via Xata — list organizations, manage projects, branches, and execute SQL queries directly from any AI agent. |

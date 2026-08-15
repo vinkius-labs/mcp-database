@@ -16,18 +16,11 @@ Explore the open database of **design-creative** Model Context Protocol (MCP) se
 | [Getty Images](../mcps/getty-images.md) | Manage stock media via Getty Images — search millions of creative and editorial photos, handle video discovery, and download assets directly from any AI agent. |
 | [Meshy (3D AI)](../mcps/meshy-3d-ai.md) | Transform text and images into high-quality 3D models using Meshy's generative AI directly from your agent. |
 | [Pexels](../mcps/pexels.md) | Retrieve free high-quality stock media via Pexels — search photos, track videos natively, and explore curated visual collections entirely through AI constraints. |
-| [Pexels](../mcps/pexels-alternative.md) | Search and retrieve high-quality royalty-free photos and videos from Pexels directly within your AI agent. |
 | [Pixabay](../mcps/pixabay.md) | Search and retrieve royalty-free stock images, vectors, illustrations, and videos via AI directly from Pixabay. |
-| [Pixabay](../mcps/pixabay-alternative.md) | Search and retrieve millions of royalty-free images and videos directly from Pixabay's massive creative library. |
 | [Pixabay API](../mcps/pixabay-api.md) | Search stock media — audit images and videos via AI. |
 | [Pixazo 3D](../mcps/pixazo-3d.md) | Generate production-quality 3D models via Pixazo — convert images and text to 3D assets with Hunyuan, Hyper3D, Tripo, and Trellis from any AI agent. |
-| [PlaceDog](../mcps/placedog.md) | Generate dog placeholder images with custom dimensions for your design and development projects. |
-| [PlaceKitten](../mcps/placekitten.md) | Generate placeholder kitten images of any size for your design mockups and creative projects. |
-| [QuickChart](../mcps/quickchart.md) | Automate data visualization via QuickChart — generate charts, QR codes, barcodes, and word clouds directly from any AI agent. |
-| [RandomFox](../mcps/randomfox.md) | Generate random fox images for placeholders, design inspiration, or entertainment directly via your AI agent. |
 | [Remove.bg](../mcps/removebg.md) | Remove image backgrounds automatically in seconds using AI — process URLs or base64 images and manage your credit balance. |
 | [Style3D](../mcps/style3d.md) | Manage 3D fashion assets via AI — browse projects, garments, fabrics, and trigger cloud renders for digital fashion workflows. |
-| [ThisPersonDoesNotExist](../mcps/thispersondoesnotexist.md) | Generate realistic, high-resolution faces of non-existent people using StyleGAN2 for design, mockups, and privacy-focused personas. |
 | [Unsplash](../mcps/unsplash.md) | Automate high-resolution photo searches via Unsplash — find images, browse collections, retrieve user portfolios, and get random inspiration directly from your AI agent. |
 | [Unsplash](../mcps/unsplash-alternative.md) | Manage your visual discovery — search photos, users, and collections via AI. |
 | [Unsplash](../mcps/unsplash-extended.md) | Access millions of high-resolution images — search photos, manage collections, and track download statistics directly from any AI agent. |

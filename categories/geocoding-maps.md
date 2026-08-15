@@ -5,7 +5,6 @@ Explore the open database of **geocoding-maps** Model Context Protocol (MCP) ser
 | Tool Name | Description |
 |-----------|-------------|
 | [LocationIQ](../mcps/locationiq.md) | Convert addresses to coordinates, find places nearby, and calculate routes with LocationIQ's geocoding and mapping tools. |
-| [TomTom](../mcps/tomtom-alternative.md) | Access global mapping, geocoding, and routing services. Search for addresses, calculate optimal routes, and retrieve map tiles directly through AI. |
 
 
 ---

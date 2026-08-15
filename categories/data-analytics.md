@@ -228,11 +228,9 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [OpenF1 Live Data & Telemetry](../mcps/openf1-live-data-telemetry.md) | Real-time Formula 1 telemetry and race data — audit lap times, car performance, and team radio via AI. |
 | [OpenFEC (Federal Election Commission)](../mcps/openfec-federal-election-commission.md) | Access real-time federal campaign finance data — search candidates, track committee filings, and analyze election financial totals directly. |
 | [OpenLigaDB](../mcps/openligadb.md) | Manage football results — audit match data, standings, and leagues via AI. |
-| [OpenSky](../mcps/opensky.md) | Access real-time and historical global flight tracking data — monitor aircraft states, flight trajectories, and airport traffic directly from your AI agent. |
 | [OpenWeatherMap](../mcps/openweathermap.md) | Access real-time weather data, 5-day forecasts, air quality metrics, and geocoding services globally via OpenWeatherMap. |
 | [Optimizely](../mcps/optimizely.md) | Manage A/B tests and feature flags via Optimizely — list projects, track experiments, and toggle features directly from any AI agent. |
 | [Oura](../mcps/oura.md) | Access your Oura Ring health data — sleep, activity, readiness, HRV, heart rate and workout metrics from any AI agent. |
-| [Overpass](../mcps/overpass.md) | Access OpenStreetMap data via Overpass API — execute complex spatial queries, fetch raw map data, and monitor API status. |
 | [Overpass (OpenStreetMap)](../mcps/overpass-openstreetmap.md) | Search OpenStreetMap data — find restaurants, shops, hospitals, schools, parks, ATMs and more worldwide. |
 | [Paraíba Open Data](../mcps/paraiba-open-data.md) | Access official public spending, budget, and payroll data from the State of Paraíba, Brazil, directly through your AI agent. |
 | [Parknav](../mcps/parknav.md) | AI-powered predictive parking availability and street occupancy data via Parknav API. |
@@ -245,8 +243,6 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [Pirsch Analytics](../mcps/pirsch-analytics.md) | Privacy-friendly web analytics — track hits, events, and retrieve detailed statistics for your domains directly from your AI agent. |
 | [Piwik PRO](../mcps/piwik-pro.md) | Manage privacy-first analytics via Piwik PRO — list apps, execute custom queries, and monitor goals directly from any AI agent. |
 | [Plausible](../mcps/plausible.md) | Monitor website analytics via Plausible — track visitors, pageviews, and bounce rates directly from any AI agent. |
-| [Polar](../mcps/polar-alternative.md) | Access your Polar Flow data — training sessions, daily activity, sleep metrics, and physical info directly from your AI agent. |
-| [Polygon.io](../mcps/polygonio-alternative.md) | Access real-time and historical financial data for stocks, crypto, forex, and indices directly within your AI agent. |
 | [Portal da Transparência (CGU)](../mcps/portal-da-transparencia-cgu.md) | Access Brazilian government transparency data — query social benefits (Bolsa Família, Auxílio Emergencial), public expenses, and SIAFI organizations. |
 | [Portfolio CSV Analyzer](../mcps/portfolio-csv-analyzer.md) | Parse massive CSV exports from brokers like DEGIRO or XTB instantly. Streams financial data locally to prevent AI crashes, returning clean column schemas and sample data. |
 | [PostHog](../mcps/posthog.md) | Analyze product data via PostHog — list insights, track persons, inspect feature flags, and monitor experiments directly from any AI agent. |
@@ -259,18 +255,15 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [RAWG Video Games Database](../mcps/rawg-video-games-database.md) | Universal video game intelligence — search 500,000+ games, platforms, and ratings via AI. |
 | [Real-Time Currency Exchange](../mcps/real-time-currency-exchange.md) | Give your AI access to the global forex market. Convert real-time and historical currencies instantly using official European Central Bank reference rates. Zero API keys required. |
 | [Redash](../mcps/redash.md) | Connect to Redash to manage SQL queries, execute data visualizations, and monitor dashboards directly from your AI agent. |
-| [Reservoir (NFT Liquidity API)](../mcps/reservoir-nft-liquidity-api.md) | Access aggregated NFT liquidity, metadata, and real-time pricing across all major marketplaces via the Reservoir API. |
 | [Road511](../mcps/road511.md) | Access real-time US and Canada traffic data via Road511 — track incidents, monitor cameras, check road conditions, and analyze trends from any AI agent. |
 | [Rondônia Dados Abertos](../mcps/rondonia-dados-abertos.md) | Access official open data from the State of Rondônia — query datasets, transparency records, payroll, and public spending. |
 | [SafeCube Container Tracking](../mcps/safecube-container-tracking.md) | Track maritime containers — audit shipments and events via AI. |
 | [SafeGraph](../mcps/safegraph.md) | Integrate SafeGraph's premier geospatial dataset into your AI. Discover detailed POIs, analyze foot traffic patterns, and process precise building geometries seamlessly from conversational prompts. |
 | [SAMHSA Treatment Locator](../mcps/samhsa-treatment-locator.md) | Find substance use and mental health treatment facilities across the US using official SAMHSA locator data. |
-| [Santiment (On-chain, Social & Dev Metrics for Crypto)](../mcps/santiment-on-chain-social-dev-metrics-for-crypto.md) | Access deep on-chain, social, and development metrics for thousands of crypto assets directly from your AI agent. |
 | [São Paulo (Cidade)](../mcps/sao-paulo-cidade.md) | Access the official São Paulo Open Data portal — search datasets, query resources via SQL, and explore city organizations and themes. |
 | [ScrapingBee](../mcps/scrapingbee-alternative.md) | Powerful web scraping with JS rendering, premium proxies, and AI-powered data extraction directly from your AI agent. |
 | [Sergipe Dados Abertos](../mcps/sergipe-dados-abertos.md) | Access public data from the State of Sergipe, Brazil—including expenditures, revenues, personnel, and budget execution—directly from any AI agent. |
 | [SerpApi](../mcps/serpapi-alternative.md) | Scrape search engine results — audit Google, Bing, and YouTube via AI. |
-| [SerpApi](../mcps/serpapi-extended.md) | Access real-time search engine results from Google, Bing, and more via SerpApi — perform structured searches, find locations, and monitor account usage. |
 | [Serper](../mcps/serper-alternative.md) | Perform fast Google searches — audit web results, images, news, and places via AI. |
 | [SERPHouse](../mcps/serphouse.md) | Grant your AI agent unfiltered real-time access to Google and Bing SERP data to scrape organic search results and dynamic pricing. |
 | [Sigma Computing](../mcps/sigma-computing.md) | Equip your AI agent to audaciously navigate your Sigma data workflows. List core workbooks, map connections, trace dataset lineage, and monitor organization teams directly from your IDE. |
@@ -285,10 +278,8 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [Stanford GDELT](../mcps/stanford-gdelt.md) | Analyze global news events and media coverage in real time with the world largest open dataset of human society. |
 | [Statistics Engine](../mcps/statistics-engine.md) | A zero-latency statistical engine to process datasets. Instantly compute the exact mean, median, mode, standard deviation, and percentiles completely local. |
 | [Steam Platform & Hype Intelligence](../mcps/steam-platform-hype-intelligence.md) | The definitive server for Steam platform insights — track trending games, player counts, and social connections via AI. |
-| [SteamSpy](../mcps/steamspy.md) | Access Steam market data and game statistics — track owners, playtime, and trending titles directly from your AI agent. |
 | [Stitch Data](../mcps/stitch-data.md) | Automate data pipelines via Stitch — manage sources, destinations, and push data directly to your warehouse from any AI agent. |
 | [Storm Glass Marine & Weather](../mcps/storm-glass-marine-weather.md) | Universal marine and weather intelligence — get global wave, tide, and bio data via AI. |
-| [Stormglass](../mcps/stormglass.md) | Access high-resolution global weather and marine data — fetch forecasts, tide levels, astronomy data, and biological marine metrics directly from any AI agent. |
 | [Strava Training](../mcps/strava-training.md) | Analyze Strava activities, segments, streams (HR, power, GPS), zones, laps, and athlete stats. |
 | [SurveyMethods](../mcps/surveymethods.md) | Online survey software and data analysis. |
 | [TCE-SP (Audesp)](../mcps/tce-sp-audesp.md) | Access public transparency data from the São Paulo State Court of Auditors (TCE-SP) — query municipal expenses and revenues directly. |
@@ -297,10 +288,8 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [TheRundown](../mcps/therundown.md) | Access real-time sports data, betting odds, and schedules for NFL, NBA, MLB, and more directly from your AI agent. |
 | [ThinkingData / 数数科技](../mcps/thinkingdata.md) | Dominant games and app analytics platform — query events, audit users, and track data via AI. |
 | [ThoughtSpot](../mcps/thoughtspot.md) | Search and analyze business data by interacting directly with your ThoughtSpot metadata and Liveboards via your AI agent. |
-| [TokenTerminal (Crypto Financial Data)](../mcps/tokenterminal-crypto-financial-data.md) | Access institutional-grade crypto financial data — query project metrics, track revenue, and analyze market trends directly from your AI agent. |
 | [TollGuru](../mcps/tollguru-alternative.md) | Global toll intelligence — calculate costs by address, coordinates, polyline, or GPS tracks with fuel estimates and multi-vehicle support. |
 | [TollGuru](../mcps/tollguru.md) | Calculate tolls and trip costs via TollGuru — get toll plaza details, fuel costs, and route optimization for any route across 50+ countries from any AI agent. |
-| [Tomorrow.io](../mcps/tomorrowio-plus.md) | Access hyper-local weather data, real-time conditions, forecasts, and historical weather directly from your AI agent. |
 | [Tradier](../mcps/tradier.md) | Trade equities and options, fetch real-time market data, and manage your brokerage accounts directly through any AI agent. |
 | [TransportAPI](../mcps/transportapi-alternative.md) | UK public transport intelligence — live departures, journey planning, train fares, timetables, and postcode-based station search via AI. |
 | [TransportAPI](../mcps/transportapi.md) | Access UK public transport data via TransportAPI — track buses and trains, plan journeys, check departures, and monitor service disruptions from any AI agent. |
@@ -323,7 +312,6 @@ Explore the open database of **data-analytics** Model Context Protocol (MCP) ser
 | [VesselAPI](../mcps/vesselapi.md) | Track maritime vessels — audit schedules and positions via AI. |
 | [VSPN Esports DB](../mcps/vspn-esports-db.md) | Automate esports intelligence via VSPN — fetch live tournament brackets, deep player telemetry, and team rosters directly from any AI agent. |
 | [Weatherbit](../mcps/weatherbit.md) | Get real-time weather, forecasts, historical data, severe alerts and air quality for any location worldwide. |
-| [Weatherbit](../mcps/weatherbit-alternative.md) | Access real-time weather data, 16-day forecasts, air quality metrics, and severe weather alerts globally. |
 | [Wenjuanxing / 问卷星](../mcps/wenjuanxing.md) | Leading online survey and form platform in China — manage questionnaires, responses, and reports via AI. |
 | [WHO Athena API](../mcps/who-athena-api.md) | Access global health data — audit indicators and trends via AI. |
 | [Wootric](../mcps/wootric.md) | Manage Wootric customer feedback — track end users, survey responses, and declines directly from your AI agent. |

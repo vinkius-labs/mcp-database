@@ -38,8 +38,6 @@ Explore the open database of **collaboration** Model Context Protocol (MCP) serv
 | [Meetup](../mcps/meetup.md) | Manage your Meetup groups — audit upcoming events, members, and details via AI. |
 | [MemoQ](../mcps/memoq.md) | Manage translation assets via MemoQ — query translation memories, search term bases, and manage linguistic entries directly from your AI agent. |
 | [Planable](../mcps/planable.md) | Collaborate, approve, and manage your social media content calendar autonomously using AI. |
-| [Podio (Citrix Podio Workspace & Task API)](../mcps/podio-citrix-podio-workspace-task-api.md) | Automate Podio workflows — manage organizations, spaces, apps, items, and tasks directly through AI. |
-| [Smartling (Translation Workflow API)](../mcps/smartling-translation-workflow-api.md) | Automate translation workflows via Smartling — manage projects, create jobs, upload content, and download translations directly from any AI agent. |
 | [UserEcho](../mcps/userecho.md) | Build a customer feedback community with idea voting, knowledge base, helpdesk, and live chat in one support ecosystem. |
 | [WebVizio](../mcps/webvizio.md) | Review and annotate live websites with visual feedback tools that let teams comment directly on pages during design and QA. |
 | [Zealy](../mcps/zealy.md) | Automate community growth and engagement on Zealy — manage quests, track leaderboards, and reward users directly from your AI agent. |

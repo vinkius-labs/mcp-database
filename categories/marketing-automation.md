@@ -210,14 +210,12 @@ Explore the open database of **marketing-automation** Model Context Protocol (MC
 | [Salespanel](../mcps/salespanel.md) | Automate lead tracking and visitor intelligence via Salespanel — manage contacts, website visitors, and engagement directly from any AI agent. |
 | [Scale SERP](../mcps/scale-serp.md) | Equip your AI agent with real-time Google Search data — run organic, news, shopping, and scholar queries effortlessly. |
 | [Searchspring](../mcps/searchspring.md) | Empower your AI to search, filter, and recommend e-commerce products using the Searchspring (Athos Commerce) catalog API. |
-| [SendPulse](../mcps/sendpulse.md) | Manage email marketing and automation via SendPulse — handle mailing lists, manage contacts, and track campaigns directly from your AI agent. |
 | [Siteimprove](../mcps/siteimprove.md) | Monitor and improve your website quality — track accessibility, SEO, content QA, and broken links across your domains with AI agents. |
 | [SleekFlow](../mcps/sleekflow.md) | Manage omnichannel customer conversations — read messages, check contacts, and send replies across WhatsApp, Instagram, and more directly from your AI agent. |
 | [Smaily](../mcps/smaily-alternative.md) | Manage email marketing campaigns, subscribers, and automations directly through Smaily. |
 | [Smaily](../mcps/smaily.md) | Automate email marketing and automations via Smaily — manage subscribers, campaigns, and responders directly from any AI agent. |
 | [SmartLead](../mcps/smartlead.md) | Equip your AI agent with direct access to SmartLead — manage cold email campaigns, rotate sending accounts, and scale outreach without opening the SmartLead dashboard. |
 | [Spiritme](../mcps/spiritme.md) | Create AI-generated videos with digital human presenters that deliver personalized messages in multiple languages naturally. |
-| [SpyFu](../mcps/spyfu.md) | Automate SEO and PPC research via SpyFu — analyze domain metrics, track keyword stats, and uncover competitor ad history directly from any AI agent. |
 | [StayFi](../mcps/stayfi.md) | Connect your AI agents to StayFi to capture guest emails, manage WiFi properties, monitor networks, and track marketing analytics. |
 | [Storylane](../mcps/storylane.md) | Interactive, personalized product demos. |
 | [Substack](../mcps/substack.md) | Equip your AI agent with direct access to Substack — manage publications, draft posts, and track subscriber data without opening the Substack editor. |
