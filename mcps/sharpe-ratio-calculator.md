@@ -7,20 +7,16 @@
 
 **Category:** [finance](../categories/finance.md)
 
-Calculate advanced risk-adjusted performance metrics like Sharpe, Sortino, and Calmar ratios.
+Deterministic risk-adjusted performance engine for financial metrics.
 
 ## Description
-This MCP server provides precise financial tools to evaluate investment quality using risk-adjusted performance metrics. Use `get_market_benchmark` to retrieve annualized risk-free rates for the USA, Europe, or Brazil markets. The `calculate_asset_metrics` tool allows you to analyze a single series of returns to determine Sharpe, Sortino, and Calmar ratios along with a performance tier (Poor, Good, or Excellent). For multi-asset analysis, use `calculate_portfolio_metrics` to compute weighted aggregate metrics for an entire portfolio based on provided asset weights.
+This MCP server provides a deterministic engine for calculating critical risk-adjusted performance metrics. It allows AI agents to evaluate investment efficiency using tools like `calculate_risk_adjusted_ratios` for Sharpe, Sortino, Treynor, and Information ratios, and `calculate_volatility_and_drawdown` for analyzing annualized returns, volatility, and maximum drawdown. It is designed for precise financial analysis using periodic return arrays.
 
 
 ## Available Tools (3)
-- **get_market_benchmark**: g., Fed Funds, ECB, or Selic) for USA, Europe, or Brazil markets.
-
-Retrieves the current risk-free rate for a selected geographic market
-- **calculate_asset_metrics**: g., [0.01, -0.02, 0.05]) and the market context to calculate risk-improved performance metrics.
-
-Calculates Sharpe, Sortino, and Calmar ratios for a single series of periodic returns
-- **calculate_portfolio_metrics**: Calculates aggregated performance metrics for a collection of assets with specific weightings
+- **calculate_risk_adjusted_ratios**: Calculate Sharpe, Sortino, Treynor, and Information ratios
+- **calculate_volatility_and_drawdown**: Calculate annualized return, volatility, and max drawdown
+- **get_periodic_constants**: Get standard period constants
 
 
 ## 💬 Prompt Examples
@@ -28,38 +24,38 @@ Calculates Sharpe, Sortino, and Calmar ratios for a single series of periodic re
 Here are some examples of how you can interact with the **Sharpe Ratio Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is the risk-free rate for the USA market?"
+> "Calculate the Sharpe Ratio for these returns: [0.01, 0.02, -0.01, 0.015, 0.005] with a 2% annualized risk-free rate and 252 periods per year."
 
 **🤖 AI Agent:**
-> The annualized risk-free rate for the USA market is 5.33%.
+> The annualized Sharpe Ratio for the provided returns is 0.45.
 
 ---
 
 **👤 You:**
-> "Calculate metrics for these monthly returns in Brazil: [0.02, -0.01, 0.03, 0.01, -0.02]"
+> "What is the maximum drawdown for a series of returns: [0.05, -0.10, 0.02, 0.03, -0.05] using 12 periods per year?"
 
 **🤖 AI Agent:**
-> For the provided returns in Brazil, the Sharpe Ratio is 1.45, the Sortino Ratio is 1.82, and the Calmar Ratio is 2.10, resulting in a Good performance tier.
+> The maximum drawdown for this series is 14.5%.
 
 ---
 
 **👤 You:**
-> "Analyze a portfolio with two assets: Asset A (returns [0.05, 0.02], weight 0.6) and Asset B (returns [0.01, -0.01], weight 0.4) in the Europe market."
+> "Get the standard period constants for annualization."
 
 **🤖 AI Agent:**
-> The aggregate portfolio metrics for the Europe market are: Sharpe Ratio: 1.25, Sortino Ratio: 1.40, and Calmar Ratio: 1.85.
+> The standard constants are: daily (252), weekly (52), and monthly (12).
 
 
 ## ❓ FAQ
 
-**Q: What markets are supported for risk-free rate retrieval?**
-The `get_market_benchmark` tool currently supports the USA (Federal Funds Rate), Europe (ECB rate), and Brazil (Selic rate).
+**Q: What metrics can I calculate?**
+You can calculate the Sharpe Ratio, Sortino Ratio, Treynor Ratio, Information Ratio, annualized return, annualized volatility, and maximum drawdown using `calculate_risk_adjusted_ratios` and `calculate_volatility_and_drawdown`.
 
-**Q: How is investment performance classified?**
-Performance is categorized into three tiers: Poor (ratio < 1.0), Good (1.0 to 2.0), and Excellent (ratio > 2.0).
+**Q: How should I format the returns input?**
+Returns should be provided as an array of decimal numbers. For example, a 1% return should be entered as 0.01.
 
-**Q: Can I calculate metrics for a group of assets at once?**
-Yes, use the `calculate_portfolio_metrics` tool by providing a JSON string containing the returns series and weights for each asset in your portfolio.
+**Q: What are the supported annualization periods?**
+The server uses standard financial constants: 252 for daily, 52 for weekly, and 12 for monthly. You can retrieve these using `get_periodic_constants`.
 
 
 ## Installation & Usage
