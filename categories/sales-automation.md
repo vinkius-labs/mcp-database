@@ -56,6 +56,7 @@ Explore the open database of **sales-automation** Model Context Protocol (MCP) s
 | [Snov.io](../mcps/snovio-alternative-1.md) | Find business emails, verify deliverability, and run multi-step drip campaigns that fill your outbound sales pipeline. |
 | [Snov.io](../mcps/snovio.md) | Equip your AI agent with direct access to Snov.io — find emails, verify addresses, automate drip campaigns, and manage prospect lists without opening the Snov dashboard. |
 | [SugarCRM](../mcps/sugarcrm.md) | Intelligent CRM platform for sales and marketing. |
+| [SugarCRM (Enterprise CRM & Customer Success API)](../mcps/sugarcrm-enterprise-crm-customer-success-api.md) | Manage SugarCRM records, relationships, and customer data directly from your AI agent. |
 | [TaskForce](../mcps/taskforce.md) | Manage leads, customers, cases, and invoices programmatically using AI. |
 | [Twenty CRM](../mcps/twenty-crm.md) | Manage your CRM data directly from AI — list people, companies, and opportunities, and create or update records in Twenty CRM. |
 | [Upzelo](../mcps/upzelo.md) | Reduce subscription churn with personalized retention offers that intercept cancellations and win back customers at the exit point. |

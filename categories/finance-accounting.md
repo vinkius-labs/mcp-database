@@ -45,6 +45,7 @@ Explore the open database of **finance-accounting** Model Context Protocol (MCP)
 | [OwnerRez](../mcps/ownerrez.md) | Manage vacation rental bookings, properties, guests, calendars, financials, inquiries, and channel connections for your OwnerRez account through natural conversation. |
 | [Prosper](../mcps/prosper.md) | Manage your Prosper peer-to-peer investments — check account balances, search loan listings, submit bids, and track your portfolio performance. |
 | [Quaderno](../mcps/quaderno.md) | Bring automated tax compliance and invoicing directly into your AI workflow — calculate global taxes, issue invoices, and manage CRM contacts in seconds. |
+| [Sablier (Token Streaming & Real-time Payroll)](../mcps/sablier-token-streaming-real-time-payroll.md) | Manage real-time token streams and airdrop campaigns. Query Sablier indexers, create Merkle trees for distributions, and check wallet eligibility. |
 | [Teller](../mcps/teller.md) | Connect to your bank accounts, list transactions, check balances, and initiate payments via Teller API. |
 | [Tink](../mcps/tink.md) | Connect to bank accounts, list transactions, and initiate payments via Tink directly from your AI agent. |
 | [TrueLayer](../mcps/truelayer.md) | Manage open banking payments, payouts, and account data via TrueLayer — initiate transfers, check balances, and list transactions directly from any AI agent. |

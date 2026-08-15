@@ -39,6 +39,7 @@ Explore the open database of **real-estate** Model Context Protocol (MCP) server
 | [RentCast](../mcps/rentcast.md) | Automate real estate data and valuation tracking via RentCast — manage properties, rental yields, and market trends directly from any AI agent. |
 | [Rentvine](../mcps/rentvine.md) | Manage your property portfolio via Rentvine — list properties, manage units, and track leases directly from any AI agent. |
 | [Repliers](../mcps/repliers.md) | Search real estate listings — audit properties, neighborhoods, and stats via AI. |
+| [Rightmove](../mcps/rightmove.md) | Manage Rightmove property listings, track performance metrics, and retrieve branch leads directly through your AI agent. |
 | [Room Proportion Checker](../mcps/room-proportion-checker.md) | Checks if a room's dimensions meet ergonomic and architectural standards for visual harmony. |
 | [Setback Calculator](../mcps/setback-calculator.md) | Determine maximum buildable area and optimal land utilization by applying local zoning setback rules. |
 | [Shovels](../mcps/shovels.md) | Construction and permit data platform — search contractors and building permits via AI. |

@@ -14,8 +14,12 @@ Explore the open database of **audio-music** Model Context Protocol (MCP) server
 | [MusicBrainz](../mcps/musicbrainz.md) | Explore the open music encyclopedia — search artists, albums, tracks, labels and musical works. |
 | [Musixmatch](../mcps/musixmatch.md) | Largest music lyrics database — search tracks, retrieve lyrics, and identify artists via AI. |
 | [Musixmatch](../mcps/musixmatch-alternative.md) | Access the world's largest lyrics database — search tracks, retrieve synchronized subtitles, and explore global music charts directly from your AI agent. |
+| [Osu!](../mcps/osu.md) | Access Osu! player profiles, beatmap data, scores, and community discussions directly through your AI agent. |
 | [Podcast Index](../mcps/podcast-index.md) | Access the open podcast ecosystem — search for shows, retrieve episode metadata, and discover trending content directly from your AI agent. |
 | [Podchaser Podcast API](../mcps/podchaser-podcast-api.md) | Search global podcasts — audit episodes, hosts, and ratings via AI. |
+| [Songkick](../mcps/songkick-alternative.md) | Find concerts and live music events via Songkick — search artists, venues, and locations to track upcoming performances directly from your AI agent. |
+| [SoundCloud](../mcps/soundcloud-alternative.md) | Search, stream, and manage SoundCloud tracks, playlists, and social interactions directly from your AI agent. |
+| [Xeno-canto](../mcps/xeno-canto.md) | Search and explore the world's largest collection of bird sound recordings directly from your AI agent. |
 
 
 ---

@@ -12,7 +12,9 @@ Explore the open database of **event-management** Model Context Protocol (MCP) s
 | [Line-Up](../mcps/line-up.md) | Manage events, check ticket availability, and process bookings via the Line-Up API. |
 | [Momence](../mcps/momence.md) | Manage sessions, members, teachers, memberships, and bookings for your Momence-powered fitness or yoga studio through natural conversation. |
 | [myClub](../mcps/myclub.md) | Sports club management — manage members, events, and invoices via myClub.fi. |
+| [SeatGeek](../mcps/seatgeek.md) | Search and list SeatGeek events, performers, and venues directly from your AI agent. |
 | [SevenRooms](../mcps/sevenrooms.md) | Manage restaurant reservations, guest CRM profiles, waitlists, table availability, and events for your SevenRooms venues through natural conversation. |
+| [Start.gg](../mcps/startgg.md) | Manage esports tournaments via Start.gg — fetch event IDs, track standings, and report match results directly from any AI agent. |
 
 
 ---

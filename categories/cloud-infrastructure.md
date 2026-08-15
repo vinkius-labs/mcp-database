@@ -42,15 +42,18 @@ Explore the open database of **cloud-infrastructure** Model Context Protocol (MC
 | [NetBird](../mcps/netbird.md) | Automate Zero Trust networking via NetBird — manage accounts, users, and access controls directly from any AI agent. |
 | [Netdata](../mcps/netdata.md) | Monitor real-time infrastructure metrics, analyze system performance, and track active alerts across your nodes and Netdata Cloud spaces. |
 | [OpenCost (K8s Cost)](../mcps/opencost-k8s-cost.md) | Monitor and analyze Kubernetes infrastructure costs — query workload allocations, backing assets, and cloud billing directly from your AI agent. |
+| [OpenMeter (Usage Metering for AI/Cloud Billing)](../mcps/openmeter-usage-metering-for-aicloud-billing.md) | Meter AI usage, manage customer entitlements, and automate cloud billing via OpenMeter's high-performance usage tracking API. |
 | [Radar](../mcps/radar.md) | Equip your AI with geolocation tools — convert coordinates to addresses, map intellectual territories, calculate routes, and perform IP-based lookups. |
 | [Sentinel Hub](../mcps/sentinel-hub.md) | Access and process satellite imagery from Sentinel, Landsat, and other Earth observation missions through a powerful cloud API. |
 | [Shunwang Tech](../mcps/shunwang-tech.md) | Leading edge computing and PC Bang management platform — monitor clusters, schedule tasks, and manage GPU resources via AI. |
 | [SigNoz (Datadog Alternative)](../mcps/signoz-datadog-alternative.md) | Monitor infrastructure and manage alert rules via SigNoz — list, create, and update observability alerts directly from your AI agent. |
+| [StackPath (Edge Computing & CDN API)](../mcps/stackpath-edge-computing-cdn-api.md) | Manage edge computing workloads and CDN delivery via StackPath — list stacks, deploy workloads, and purge cached content directly from any AI agent. |
 | [StatusCake](../mcps/statuscake.md) | Monitor website uptime, page speed, and SSL certificates directly from your AI agent using StatusCake. |
 | [Sumo Logic](../mcps/sumo-logic-alternative.md) | Manage logs, metrics, and collectors via Sumo Logic — run search jobs, monitor infrastructure, and manage collectors directly from any AI agent. |
 | [Tomorrow.io](../mcps/tomorrowio.md) | Equip your agent with precise weather intelligence, hyperlocal forecasts, and extreme climate risk assessments. |
 | [UptimeRobot](../mcps/uptimerobot.md) | Monitor and manage your website uptime seamlessly. List, create, and resolve monitor alerts directly from your AI agent, 24/7. |
 | [UPYUN Developer Platform](../mcps/upyun-developer-platform.md) | Bring UPYUN's Massive CDN and Image Processing APIs to your AI. Interact with buckets and deploy files to the cloud. |
+| [Vast.ai (GPU Rental Cloud API)](../mcps/vastai-gpu-rental-cloud-api.md) | Rent high-performance GPUs for AI and deep learning. Search marketplace offers, deploy Docker containers, and manage your cloud GPU fleet. |
 | [Vertiv Environet](../mcps/vertiv-environet.md) | Monitor data center environmental sensors, alerts, and thresholds via Vertiv Environet Alert API. |
 | [Wasabi](../mcps/wasabi.md) | Manage buckets, objects, and versioning on Wasabi — the hot cloud storage for high-performance data residency. |
 

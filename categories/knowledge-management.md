@@ -77,25 +77,33 @@ Explore the open database of **knowledge-management** Model Context Protocol (MC
 | [Penguin Random House](../mcps/penguin-random-house.md) | Access the global Penguin Random House catalog—search for authors, titles, works, and literary categories directly from your AI agent. |
 | [Perenual Plant API](../mcps/perenual-plant-api.md) | Manage plant data — audit species, care, and diseases via AI. |
 | [PMC Open Access (PubMed Central)](../mcps/pmc-open-access-pubmed-central.md) | Access millions of open-access biomedical and life sciences research articles. Search metadata, convert IDs, and discover full-text resources. |
+| [Pokemon TCG](../mcps/pokemon-tcg.md) | Search and browse the entire Pokemon Trading Card Game database — find specific cards, explore sets, and filter by types or rarities. |
 | [Project Gutenberg](../mcps/project-gutenberg.md) | Universal public domain library — search and retrieve thousands of free books via AI. |
 | [PubMed Central](../mcps/pubmed-central.md) | Search and retrieve full-text biomedical and life sciences literature from PubMed Central (PMC). |
 | [ReliefWeb](../mcps/reliefweb.md) | Access humanitarian reports, disaster data, job postings and organizational data from the world's leading humanitarian information platform. |
+| [Rijksmuseum](../mcps/rijksmuseum.md) | Explore the Rijksmuseum's world-class art collection and research library. Search for masterpieces, access high-resolution image metadata via IIIF, and query linked open data. |
 | [Scopus](../mcps/scopus.md) | Access the world's largest abstract and citation database. Search for research papers, authors, and institutional profiles directly. |
 | [Sefaria Torah Texts API](../mcps/sefaria-torah-texts-api.md) | Access sacred texts — audit Torah, Talmud, and library via AI. |
 | [Senado Federal](../mcps/senado-federal.md) | Access real-time data from the Brazilian Federal Senate — track legislative proposals, senator profiles, and mandate histories. |
 | [Slab](../mcps/slab.md) | Manage your team's knowledge base — query wiki articles, create new documentation, and explore topics directly using AI agents. |
 | [Slite](../mcps/slite.md) | Manage your Slite knowledge base, notes, and AI insights with AI agents. |
 | [Smithsonian Open Access](../mcps/smithsonian-open-access.md) | Explore millions of museum records, images, and digital assets from the Smithsonian Institution's vast collections. |
+| [Species](../mcps/species.md) | Access the GBIF Backbone Taxonomy to search, match, and explore species data, hierarchies, and biological media directly from your AI agent. |
 | [STF Dados Abertos](../mcps/stf-dados-abertos.md) | Access open data from the Brazilian Supreme Federal Court (STF) — explore datasets, resources, and institutional organizations via AI. |
+| [SuperHero](../mcps/superhero.md) | Access the ultimate comic book database — search characters, compare powerstats, and explore biographies from Marvel, DC, and more. |
+| [TextRazor](../mcps/textrazor.md) | Advanced Natural Language Processing (NLP) to extract entities, topics, and relations from text or URLs. |
 | [The Guardian](../mcps/the-guardian.md) | Access The Guardian's entire content archive — search articles, browse sections, explore tags, and retrieve full-text stories directly from any AI agent. |
 | [The Met Museum](../mcps/the-met-museum.md) | Explore 470,000+ artworks from The Metropolitan Museum of Art — search by artist, title, culture, date and department. |
 | [The Movie Database (TMDb)](../mcps/the-movie-database-tmdb.md) | Search movies, TV shows, people, get details, cast, trailers, and discover content via TMDb API. |
+| [TheMealDB](../mcps/themealdb-extended.md) | Access a global database of recipes, ingredients, and meal categories to find culinary inspiration and detailed cooking instructions. |
 | [TheSportsDB Global Sports Database](../mcps/thesportsdb-global-sports-database.md) | The definitive sports metadata server — search teams, players, leagues, and live results via AI. |
 | [TMDB (The Movie Database)](../mcps/tmdb-the-movie-database.md) | Access movie, TV show, and actor data — search, discover, and retrieve detailed metadata directly from any AI agent. |
+| [Trefle](../mcps/trefle.md) | Access the world's largest botanical database — search for plants, species, and genera, and explore distribution data directly from your AI agent. |
 | [Trivia Quiz Generator](../mcps/trivia-quiz-generator.md) | Generate random trivia quiz questions by category, difficulty, and tags � perfect for games, education, and interactive content. |
 | [UK Legislation](../mcps/uk-legislation.md) | Official UK legislation database — search acts, statutory instruments, and sections via AI. |
 | [Universities List](../mcps/universities-list.md) | Global university database — search higher education institutions by name and country via AI. |
 | [Unpaywall (Open Access Papers)](../mcps/unpaywall-open-access-papers.md) | Access millions of open-access scholarly articles. Check OA status and retrieve full-text PDF links using DOIs. |
+| [VectorShift (AI Workflow & RAG Automation)](../mcps/vectorshift-ai-workflow-rag-automation.md) | Automate AI workflows and RAG via VectorShift — manage pipelines, query knowledge bases, and deploy chatbots directly from any AI agent. |
 | [Verba](../mcps/verba.md) | Connect your Verba RAG platform to your AI agent. Search your documents, retrieve semantic answers, and manage your Weaviate knowledge base directly. |
 | [VineRadar](../mcps/vineradar.md) | Search wine and vineyards — audit varietals and vintages via AI. |
 | [Wiktionary](../mcps/wiktionary.md) | Universal linguistic intelligence — get word definitions, etymologies, and examples via AI. |

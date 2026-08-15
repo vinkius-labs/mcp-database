@@ -151,6 +151,7 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [MSAAQ](../mcps/msaaq.md) | Manage courses, enrollments, and student progress via MSAAQ directly from your AI agent. |
 | [Narvar](../mcps/narvar.md) | Streamline post-purchase experiences — track shipments, manage returns, and provide delivery estimates directly through your AI agent. |
 | [NetEase BUFF](../mcps/netease-buff.md) | Automate digital skin trading via BUFF — monitor virtual item prices, snag global market trends, and fetch dynamic inventory values from any AI agent. |
+| [Nifty Gateway (NFT Marketplace API)](../mcps/nifty-gateway-nft-marketplace-api.md) | Explore and manage NFT assets via Nifty Gateway — list available nifties, browse collections, and audit your personal portfolio directly from any AI agent. |
 | [NMKR Cardano](../mcps/nmkr-cardano.md) | Manage Cardano NFT projects via NMKR Studio — track assets, minting coupons, and payout wallets directly from your AI agent. |
 | [Northbeam](../mcps/northbeam.md) | Analyze marketing attribution via Northbeam — track metrics, breakdowns, and data exports directly from your AI agent. |
 | [Okendo Reviews](../mcps/okendo-reviews.md) | Manage customer reviews and social proof via Okendo — track ratings, questions, and product feedback directly from your AI agent. |
@@ -160,6 +161,7 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Open Beauty Facts](../mcps/open-beauty-facts.md) | Universal cosmetics intelligence — search ingredients, allergens, and brands via AI. |
 | [OpenSea](../mcps/opensea.md) | Access the world's leading NFT marketplace — query collections, track floor prices, inspect NFT metadata, and monitor wallet balances across multiple chains. |
 | [PedidosYa](../mcps/pedidosya.md) | Automate restaurant operations on PedidosYa — manage orders, update menus, request couriers, and track deliveries across Latin America from any AI agent. |
+| [Podia](../mcps/podia.md) | Manage your Podia store — list customers, track sales, and oversee products and subscriptions directly from any AI agent. |
 | [Polar](../mcps/polar.md) | Manage digital products, subscriptions, orders and customers via Polar — create checkouts, manage discounts and track revenue from any AI agent. |
 | [PrestaShop](../mcps/prestashop.md) | Bring your PrestaShop store to your AI — orchestrate orders, extract deep product metadata, and track inventory stock levels natively via chat. |
 | [Printful](../mcps/printful.md) | Access Printful's product catalog — list products, inspect variants, and retrieve detailed size guides directly from any AI agent. |
@@ -174,6 +176,7 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Sharpei](../mcps/sharpei.md) | Offer product subscriptions and rentals on your Shopify store with flexible recurring payment options your customers will love. |
 | [ShipBob](../mcps/shipbob.md) | Automate your e-commerce fulfillment with ShipBob — manage products, track orders, and monitor inventory levels directly from your AI agent. |
 | [ShipCompliant](../mcps/shipcompliant.md) | Check wine shipping compliance, calculate alcohol taxes, verify licenses, and get state regulations for your Sovos ShipCompliant account through natural conversation. |
+| [ShipEngine](../mcps/shipengine-alternative.md) | Automate shipping and logistics via ShipEngine — validate addresses, compare rates, and track packages directly from any AI agent. |
 | [ShipHero](../mcps/shiphero.md) | Manage e-commerce logistics via ShipHero — track orders, monitor inventory levels, and handle warehouse movements directly from your AI agent. |
 | [ShipStation](../mcps/shipstation.md) | Automate shipping and order management via ShipStation — manage carriers, create labels, and track orders directly from any AI agent. |
 | [Shoplazza](../mcps/shoplazza-1.md) | Launch your cross-border e-commerce store with a platform optimized for global selling, multi-currency, and localized checkout. |
@@ -182,10 +185,12 @@ Explore the open database of **ecommerce** Model Context Protocol (MCP) servers.
 | [Siteminder](../mcps/siteminder.md) | Manage hotel inventory, search properties, and handle reservations via Siteminder's Channels Plus and Direct Booking APIs. |
 | [Skydropx API](../mcps/skydropx-api.md) | Ship effectively across LatAm with Skydropx. Compare real-time carrier quotes, track live parcels, and draft PDF labels via prompt. |
 | [Smeetz](../mcps/smeetz.md) | Manage your Smeetz commerce operations — list products, handle bookings, and manage customer data directly from any AI agent. |
+| [Spocket](../mcps/spocket.md) | Automate dropshipping via Spocket — browse catalogs, check real-time inventory, and manage customer orders directly from any AI agent. |
 | [Squarespace](../mcps/squarespace.md) | Equip your AI with read-only superpowers over your Squarespace platform. Scan transactions, track orders, and audit inventory effortlessly. |
 | [TaxJar](../mcps/taxjar-alternative.md) | Calculate, collect, and remit sales tax automatically across every US state and jurisdiction with real-time rate accuracy. |
 | [Teachable (Extended)](../mcps/teachable-extended.md) | Manage your Teachable school — list courses, manage users, track transactions, and monitor webhooks directly from your AI agent. |
 | [ThriveCart](../mcps/thrivecart.md) | Manage your ThriveCart sales and products — audit transactions and subscriptions via AI. |
+| [Ticketmaster](../mcps/ticketmaster.md) | Search for live events, venues, and attractions, and manage ticket reservations directly through Ticketmaster's APIs. |
 | [Tock Reservations](../mcps/tock-reservations.md) | Equip your AI agent to manage restaurant reservations, track guest profiles, and monitor business metrics via the Tock API. |
 | [Toket](../mcps/toket.md) | Accept crypto payments on your website with a checkout widget that supports Bitcoin, Ethereum, and major stablecoins. |
 | [Tolstoy](../mcps/tolstoy.md) | Embed interactive video experiences on your website that let visitors choose their own path through shoppable video funnels. |

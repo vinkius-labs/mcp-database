@@ -8,8 +8,10 @@ Explore the open database of **travel-hospitality** Model Context Protocol (MCP)
 | [Hostelworld](../mcps/hostelworld.md) | Search hostels worldwide, check availability, read reviews, and discover destinations — the ultimate backpacker AI assistant. |
 | [Lyko](../mcps/lyko.md) | Access European public transit via Lyko — plan intermodal trips, check departures, search stops, and monitor transit operators from any AI agent. |
 | [Open Brewery DB](../mcps/open-brewery-db.md) | Discover breweries across the United States — search by name, city, state, or type with addresses, phone numbers, and websites for every location. |
+| [Sabre](../mcps/sabre.md) | Search and book flights and hotels globally using Sabre's travel technology platform — access Bargain Finder Max and PNR management. |
 | [TheFork](../mcps/thefork.md) | Discover, book, and manage restaurant reservations across Europe — search by location, cuisine, and availability through natural AI conversation. |
 | [TripGo](../mcps/tripgo.md) | AI multimodal transit: plan trips, track vehicles, and check schedules via agents. |
+| [Yelp Fusion](../mcps/yelp-fusion.md) | Search for local businesses, read reviews, and explore events worldwide directly from your AI agent using Yelp's rich database. |
 
 
 ---
