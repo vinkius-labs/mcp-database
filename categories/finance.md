@@ -11,6 +11,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [ARR Bridge Calculator](../mcps/arr-bridge-calculator.md) | Quantify and visualize Annual Recurring Revenue (ARR) movements by detailing the specific drivers of revenue expansion and contraction over time. |
 | [Asset Correlation Matrix](../mcps/asset-correlation-matrix.md) | Calculate Pearson correlation between assets to identify diversification risks and hedging opportunities. |
 | [ATR-Calculator](../mcps/atr-calculator.md) | Calculate Average True Range and classify market volatility. |
+| [Awesome Oscillator Calculator](../mcps/awesome-oscillator-calculator.md) | Calculate Bill Williams' Awesome Oscillator and detect momentum patterns. |
 | [Balance Transfer Evaluator](../mcps/balance-transfer-evaluator.md) | Compare the total cost of credit card debt transfers against staying on your current plan. |
 | [Basis Calculator](../mcps/basis-calculator.md) | Calculate and analyze commodity basis by comparing local physical prices against exchange futures. |
 | [Battle Pass Value Calculator](../mcps/battle-pass-value-calculator.md) | Analyze the economic efficiency of gaming Battle Passes by calculating ROI and break-even points. |
@@ -71,6 +72,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [EBITDA Calculator](../mcps/ebitda-calculator.md) | Calculate EBITDA, margins, and EV/EBITDA multiples with industry benchmark comparisons. |
 | [EBITDA Multiple Valuator](../mcps/ebitda-multiple-valuator.md) | Calculate Enterprise and Equity Value using sector-specific EBITDA multiples. |
 | [Efficient Frontier Calculator](../mcps/efficient-frontier-calculator.md) | Calculate optimal asset weights and performance metrics along the efficient frontier. |
+| [Elder Force Index Calculator](../mcps/elder-force-index-calculator.md) | Calculate Elder Force Index, detect trend signals, and identify price-momentum divergences. |
+| [Elder Impulse Calculator](../mcps/elder-impulse-calculator.md) | Deterministic technical analysis for Elder Impulse signals. |
 | [Emergency Fund Calculator](../mcps/emergency-fund-calculator.md) | Calculate your personalized emergency fund target and monthly savings plan. |
 | [Emergency Fund Drain Timeline](../mcps/emergency-fund-drain-timeline.md) | Predict how many days your emergency fund will last based on income loss and essential expenses. |
 | [Employee Salary Benchmark](../mcps/employee-salary-benchmark.md) | Retrieve market salary ranges in USD and BRL for various roles, seniority levels, and startup stages. |
@@ -129,9 +132,11 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [ISS Calculator](../mcps/iss-calculator.md) | Calculate Service Tax (ISS) based on municipality rates and service types. |
 | [Kelly Criterion Sizing](../mcps/kelly-criterion-sizing.md) | Calculate optimal bet sizes using the Kelly Criterion formula. |
 | [Keltner Channels Calculator](../mcps/keltner-channels-calculator.md) | Deterministic technical analysis for Keltner Channels, volatility squeezes, and breakouts. |
+| [Klinger Oscillator Calculator](../mcps/klinger-oscillator-calculator.md) | Deterministic technical analysis engine for Klinger Volume Oscillator metrics. |
 | [Land Rent Viability Calculator](../mcps/land-rent-viability-calculator.md) | Calculate the economic viability of agricultural land leasing. |
 | [LED Upgrade Calculator](../mcps/led-upgrade-calculator.md) | Calculate energy, financial, and CO2 savings when switching to LED bulbs. |
 | [Lien Waiver Deadline Calculator](../mcps/lien-waiver-deadline-calculator.md) | Calculate statutory Mechanics Lien deadlines for preliminary notice, filing, and enforcement. |
+| [Linear Regression Calculator](../mcps/linear-regression-calculator.md) | Perform deterministic least-squares linear regression and volatility channel analysis. |
 | [Liquidation Preference Calculator](../mcps/liquidation-preference-calculator.md) | Model complex equity distribution and liquidation preference scenarios during company exits. |
 | [Loan Comparison Engine](../mcps/loan-comparison-engine.md) | Compare up to 5 loan configurations side by side, including fixed/adjustable rates and balloon payments. |
 | [Loyalty Points Value Engine](../mcps/loyalty-points-value-engine.md) | Calculate the financial advantage of redeeming loyalty points now versus waiting for higher-tier rewards. |
@@ -159,6 +164,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Parlay Payout Calculator](../mcps/parlay-payout-calculator.md) | Calculate exact cumulative payouts and net profits for multi-leg parlay bets using American odds. |
 | [PE Ratio Analyzer](../mcps/pe-ratio-analyzer.md) | Analyze stock valuation using P/E, PEG, and sector-specific benchmarks. |
 | [Penalty Clause Calculator](../mcps/penalty-clause-calculator.md) | Calculate contractual penalties, legal ceilings, and estimated judicial reductions based on jurisdiction. |
+| [Percentage Price Oscillator (PPO) Engine](../mcps/percentage-price-oscillator-ppo-engine.md) | A deterministic engine for calculating normalized price momentum via PPO indicators. |
 | [Pet Cost Lifetime Estimator](../mcps/pet-cost-lifetime-estimator.md) | Estimate the total lifetime cost of owning a dog or cat, including upfront and annual expenses. |
 | [Pet Monthly Cost Estimator](../mcps/pet-monthly-cost-estimator.md) | Estimate the monthly financial commitment for pet care based on species, size, and location. |
 | [Pipeline Velocity Calculator](../mcps/pipeline-velocity-calculator.md) | Calculate sales pipeline velocity ($/day) and identify which operational metric (opportunities, close rate, or ACV) must improve to hit your revenue targets. |
@@ -179,6 +185,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Real Estate ROI Analyzer](../mcps/real-estate-roi-analyzer.md) | Analyze investment property performance, cash flow, and long-term tax benefits. |
 | [Recording Session Planner](../mcps/recording-session-planner.md) | Generate precise studio schedules, cost estimates, and completion risk assessments for music production. |
 | [Recycling Value Estimator](../mcps/recycling-value-estimator.md) | Calculate potential revenue and CO2 savings from recyclable materials. |
+| [Relative Vigor Index (RVI) Calculator](../mcps/relative-vigor-index-rvi-calculator.md) | Deterministic technical analysis tool for RVI, signal lines, and momentum signals. |
 | [Rental Property Cash Flow Calculator](../mcps/rental-property-cash-flow-calculator.md) | Analyze rental property profitability, cash flow, and long-term ROI with detailed tax and 1031 exchange projections. |
 | [Retirement Planning Engine](../mcps/retirement-planning-engine.md) | Project retirement savings growth, optimize Social Security benefits, and simulate withdrawal success. |
 | [Retirement Withdrawal Calculator](../mcps/retirement-withdrawal-calculator.md) | Estimate the sustainability of your retirement withdrawals using Monte Carlo simulations. |
@@ -269,9 +276,11 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Water Usage Calculator](../mcps/water-usage-calculator.md) | Estimate household water consumption, identify leak impacts, and calculate the financial return on upgrading to water-efficient fixtures. |
 | [Wedding Budget Splitter](../mcps/wedding-budget-splitter.md) | Intelligently allocate your wedding budget using industry-standard percentages and dynamic rebalancing. |
 | [Williams %R Calculator](../mcps/williams-r-calculator.md) | Deterministic technical analysis engine for Williams %R, divergence, and failure swing detection. |
+| [Williams Alligator Indicator Calculator](../mcps/williams-alligator-indicator-calculator.md) | Calculate precise Williams Alligator indicator lines, states, and trend analysis. |
 | [Workers' Compensation Premium Calculator](../mcps/workers-compensation-premium-calculator.md) | Estimate workers' comp premiums, deposits, and audit adjustments based on payroll, EMR, and region. |
 | [Working Capital Calculator](../mcps/working-capital-calculator.md) | Calculate your Cash Conversion Cycle and Working Capital Need instantly. |
 | [Yield Curve Analyzer](../mcps/yield-curve-analyzer.md) | Analyze interest rate curves, identify spreads, and detect recession signals. |
+| [ZigZag Indicator Calculator](../mcps/zigzag-indicator-calculator.md) | Detect price swing points and analyze market structure using deterministic ZigZag logic. |
 
 
 ---
