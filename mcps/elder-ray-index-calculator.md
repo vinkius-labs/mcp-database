@@ -15,8 +15,8 @@ This MCP server provides deterministic technical analysis tools for the Elder Ra
 
 ## Available Tools (3)
 - **calculate_elder_ray_indicators**: Performs core Elder Ray Index calculations for Bulls and Bears Power
-- **detect_signal_events**: Identifies zero-line crosses and momentum divergences
 - **identify_market_setups**: Detects bullish and bearish market setups
+- **detect_signal_events**: Identifies zero-line crosses and momentum divergences
 
 
 ## 💬 Prompt Examples

@@ -45,6 +45,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Churn Rate Calculator](../mcps/churn-rate-calculator.md) | Calculate Customer Churn Rate, Revenue Churn Rate, and Net Revenue Retention (NRR) to instantly assess account health against industry benchmarks. |
 | [CNPJ Validator](../mcps/cnpj-validator.md) | Verify the mathematical validity and structure of Brazilian CNPJ numbers. |
 | [Commodity Price Converter](../mcps/commodity-price-converter.md) | Convert commodity prices across units and currencies instantly. |
+| [Commodity Selection Index Calculator](../mcps/commodity-selection-index-calculator.md) | Calculate the Commodity Selection Index (CSI) to identify momentum-driven trends relative to volatility. |
 | [Compensation Band Generator](../mcps/compensation-band-generator.md) | Generate structured compensation packages including base salary, bonus targets, and equity ranges based on global market data. |
 | [Compound Interest Optimizer](../mcps/compound-interest-optimizer.md) | Detailed investment growth projections accounting for inflation, taxes, and penalties. |
 | [Connors RSI Calculator](../mcps/connors-rsi-calculator.md) | Calculate Connors RSI and identify mean-reversion trading signals. |
@@ -63,6 +64,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [DECORE Simulator](../mcps/decore-simulator.md) | Calculate and validate income declarations for regulatory compliance. |
 | [Depreciation Calculator](../mcps/depreciation-calculator.md) | Calculate asset depreciation using straight-line, sum-of-the-years' digits, and declining balance methods. |
 | [Detour Gas Savings Evaluator](../mcps/detour-gas-savings-evaluator.md) | Determine if driving off-route for cheaper gas saves money. |
+| [Detrended Price Oscillator (DPO) Calculator](../mcps/detrended-price-oscillator-dpo-calculator.md) | Identify price cycles and momentum oscillations by removing trends from price series. |
 | [Diaper Consumption Forecaster](../mcps/diaper-consumption-forecaster.md) | Estimate monthly diaper needs and costs based on baby age and product pricing. |
 | [Dilution Calculator](../mcps/dilution-calculator.md) | Simulate equity dilution, cap table evolution, and anti-dilution adjustments during investment rounds. |
 | [Discount Stack Calculator](../mcps/discount-stack-calculator.md) | Calculate final transaction totals by compounding multiple discount types and applying regional tax logic. |

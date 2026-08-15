@@ -14,9 +14,9 @@ This MCP server provides a deterministic toolset for analyzing volume momentum u
 
 
 ## Available Tools (3)
+- **identify_pvo_signals**: Detect zero-line crosses, signal crossovers, and divergences
 - **calculate_pvo_metrics**: Calculate core PVO values, signal line, and histogram
 - **compare_with_macd**: Compare volume-based PVO with price-based MACD
-- **identify_pvo_signals**: Detect zero-line crosses, signal crossovers, and divergences
 
 
 ## 💬 Prompt Examples

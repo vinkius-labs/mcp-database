@@ -14,9 +14,9 @@ This MCP server provides deterministic tools for financial volatility analysis. 
 
 
 ## Available Tools (3)
+- **get_volatility_rank**: Determines the percentile rank of current volatility relative to its history
 - **calculate_volatility_metrics**: Calculates annualized historical volatility for standard lookback windows (20, 30, 60, 90)
 - **get_volatility_cone**: Provides statistical bounds (min, max, avg) for volatility across different timeframes
-- **get_volatility_rank**: Determines the percentile rank of current volatility relative to its history
 
 
 ## 💬 Prompt Examples
