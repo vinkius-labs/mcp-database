@@ -1,6 +1,6 @@
 # Regulations.gov (eRulemaking) MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/regulationsgov-erulemaking)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/regulationsgov-erulemaking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -80,7 +80,7 @@ Use the `get_docket` tool with the specific Docket ID. This retrieves the primar
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/regulationsgov-erulemaking](https://vinkius.com/mcp/regulationsgov-erulemaking)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/regulationsgov-erulemaking](https://vinkius.com/ai-agent-connect/regulationsgov-erulemaking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
