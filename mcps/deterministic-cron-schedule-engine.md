@@ -1,6 +1,6 @@
 # Deterministic Cron Schedule Engine MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/deterministic-cron-schedule-engine)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/deterministic-cron-schedule-engine)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -58,7 +58,7 @@ Yes. It perfectly parses the standard 5-part expression (Minute, Hour, Day of Mo
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/deterministic-cron-schedule-engine](https://vinkius.com/mcp/deterministic-cron-schedule-engine)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/deterministic-cron-schedule-engine](https://vinkius.com/ai-agent-connect/deterministic-cron-schedule-engine)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
