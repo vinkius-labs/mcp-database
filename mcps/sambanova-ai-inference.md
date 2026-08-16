@@ -1,6 +1,6 @@
 # SambaNova (AI Inference) MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sambanova-ai-inference)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/sambanova-ai-inference)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -87,7 +87,7 @@ Yes! Use the `create_embedding` tool with models like E5-Mistral-7B-Instruct to 
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/sambanova-ai-inference](https://vinkius.com/mcp/sambanova-ai-inference)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/sambanova-ai-inference](https://vinkius.com/ai-agent-connect/sambanova-ai-inference)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
