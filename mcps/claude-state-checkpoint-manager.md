@@ -1,6 +1,6 @@
 # Claude State Checkpoint Manager MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/claude-state-checkpoint-manager)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/claude-state-checkpoint-manager)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -65,7 +65,7 @@ By default, the system keeps up to 10 checkpoints using a FIFO (First-In-First-O
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/claude-state-checkpoint-manager](https://vinkius.com/mcp/claude-state-checkpoint-manager)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/claude-state-checkpoint-manager](https://vinkius.com/ai-agent-connect/claude-state-checkpoint-manager)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
