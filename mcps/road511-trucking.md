@@ -1,6 +1,6 @@
 # Road511 Trucking MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/road511-trucking)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/road511-trucking)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -116,7 +116,7 @@ Use the `get_weight_restrictions` tool with jurisdiction and status=active to fi
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/road511-trucking](https://vinkius.com/mcp/road511-trucking)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/road511-trucking](https://vinkius.com/ai-agent-connect/road511-trucking)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
