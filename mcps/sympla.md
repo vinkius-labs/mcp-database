@@ -1,6 +1,6 @@
 # Sympla MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/sympla)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/sympla)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -91,7 +91,7 @@ Yes! The `get_event_stats` tool retrieves granular metrics on total tickets sold
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/sympla](https://vinkius.com/mcp/sympla)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/sympla](https://vinkius.com/ai-agent-connect/sympla)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
