@@ -1,6 +1,6 @@
 # Goldsky (Web3 Data Indexing & Subgraphs) MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/goldsky-web3-data-indexing-subgraphs)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/goldsky-web3-data-indexing-subgraphs)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -93,7 +93,7 @@ Absolutely. Use the `pause_pipeline` tool to stop execution. When you are ready 
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/goldsky-web3-data-indexing-subgraphs](https://vinkius.com/mcp/goldsky-web3-data-indexing-subgraphs)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/goldsky-web3-data-indexing-subgraphs](https://vinkius.com/ai-agent-connect/goldsky-web3-data-indexing-subgraphs)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
