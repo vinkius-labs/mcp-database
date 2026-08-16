@@ -1,6 +1,6 @@
 # Minas Gerais (Estado) MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/minas-gerais-estado)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/minas-gerais-estado)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,7 +88,7 @@ Use the `list_organizations` tool. It will return a list of all government bodie
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/minas-gerais-estado](https://vinkius.com/mcp/minas-gerais-estado)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/minas-gerais-estado](https://vinkius.com/ai-agent-connect/minas-gerais-estado)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai

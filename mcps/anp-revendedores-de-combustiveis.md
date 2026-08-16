@@ -1,6 +1,6 @@
 # ANP (Revendedores de Combustíveis) MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/anp-revendedores-de-combustiveis)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/anp-revendedores-de-combustiveis)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -84,7 +84,7 @@ Yes. Both `list_combustivel_resellers` and `list_glp_resellers` include a `numer
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/anp-revendedores-de-combustiveis](https://vinkius.com/mcp/anp-revendedores-de-combustiveis)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/anp-revendedores-de-combustiveis](https://vinkius.com/ai-agent-connect/anp-revendedores-de-combustiveis)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai

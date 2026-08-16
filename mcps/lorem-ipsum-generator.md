@@ -1,6 +1,6 @@
 # Lorem Ipsum Generator MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/lorem-ipsum-generator)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/lorem-ipsum-generator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -71,7 +71,7 @@ Yes. Set unit to 'sentences' and count to 5. Each sentence will have 4-16 words.
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/lorem-ipsum-generator](https://vinkius.com/mcp/lorem-ipsum-generator)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/lorem-ipsum-generator](https://vinkius.com/ai-agent-connect/lorem-ipsum-generator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
