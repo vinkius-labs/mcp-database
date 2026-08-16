@@ -1,6 +1,6 @@
 # NASA Media & Patents — Images, Videos & Technology Transfer MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/nasa-media-patents-images-videos-technology-transfer)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/nasa-media-patents-images-videos-technology-transfer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -88,7 +88,7 @@ The Technology Transfer portfolio includes software, patents, and spinoff techno
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/nasa-media-patents-images-videos-technology-transfer](https://vinkius.com/mcp/nasa-media-patents-images-videos-technology-transfer)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/nasa-media-patents-images-videos-technology-transfer](https://vinkius.com/ai-agent-connect/nasa-media-patents-images-videos-technology-transfer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
