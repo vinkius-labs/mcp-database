@@ -1,6 +1,6 @@
 # Allnodes (Staking and Web3 Hosting API) MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/allnodes-staking-and-web3-hosting-api)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/allnodes-staking-and-web3-hosting-api)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -103,7 +103,7 @@ Yes. By using the `restart_full_node` tool with the specific Node ID, the agent 
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/allnodes-staking-and-web3-hosting-api](https://vinkius.com/mcp/allnodes-staking-and-web3-hosting-api)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/allnodes-staking-and-web3-hosting-api](https://vinkius.com/ai-agent-connect/allnodes-staking-and-web3-hosting-api)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
