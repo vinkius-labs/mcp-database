@@ -1,6 +1,6 @@
 # FRED GeoFRED — Regional Economic Data MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/fred-geofred-regional-economic-data)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/fred-geofred-regional-economic-data)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -98,7 +98,7 @@ GeoFRED is the geographic extension of FRED. While FRED provides national time s
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/fred-geofred-regional-economic-data](https://vinkius.com/mcp/fred-geofred-regional-economic-data)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/fred-geofred-regional-economic-data](https://vinkius.com/ai-agent-connect/fred-geofred-regional-economic-data)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
