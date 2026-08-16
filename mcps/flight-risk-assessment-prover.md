@@ -1,6 +1,6 @@
 # Flight Risk Assessment Prover MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/flight-risk-assessment-prover)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/flight-risk-assessment-prover)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -74,7 +74,7 @@ Five industry-standard frameworks: (1) ICAO Annex 19 Safety Management System â€
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/flight-risk-assessment-prover](https://vinkius.com/mcp/flight-risk-assessment-prover)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/flight-risk-assessment-prover](https://vinkius.com/ai-agent-connect/flight-risk-assessment-prover)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
