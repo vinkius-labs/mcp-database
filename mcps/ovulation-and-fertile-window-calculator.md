@@ -1,6 +1,6 @@
 # Ovulation and Fertile Window Calculator MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/ovulation-and-fertile-window-calculator)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/ovulation-and-fertile-window-calculator)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -62,7 +62,7 @@ Yes, you can provide any positive number for your average cycle length to get cu
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/ovulation-and-fertile-window-calculator](https://vinkius.com/mcp/ovulation-and-fertile-window-calculator)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/ovulation-and-fertile-window-calculator](https://vinkius.com/ai-agent-connect/ovulation-and-fertile-window-calculator)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
