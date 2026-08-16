@@ -1,6 +1,6 @@
 # CSS Class Usage & Collision Analyzer MCP Server
 
-[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/mcp/css-class-usage-collision-analyzer)
+[![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/css-class-usage-collision-analyzer)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
 
 ## Overview
@@ -68,7 +68,7 @@ Yes, the `find_css_collisions` tool detects when the same class name is defined 
 
 This MCP server is fully hosted and managed by **[Vinkius Cloud](https://vinkius.com)**, providing a zero-setup, high-performance, and secure execution environment. You do not need to manage local servers or dependencies. Simply connect your AI agent to the Vinkius Edge network using the instructions below.
 
-1. View installation instructions and explore the server: [https://vinkius.com/mcp/css-class-usage-collision-analyzer](https://vinkius.com/mcp/css-class-usage-collision-analyzer)
+1. View installation instructions and explore the server: [https://vinkius.com/ai-agent-connect/css-class-usage-collision-analyzer](https://vinkius.com/ai-agent-connect/css-class-usage-collision-analyzer)
 2. Connect to the Vinkius Cloud to start using it: [cloud.vinkius.com/connect](https://cloud.vinkius.com/connect)
 
 ### Claude.ai
