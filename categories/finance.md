@@ -140,16 +140,33 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Fuel Cost Calculator](../mcps/fuel-cost-calculator.md) | Calculate trip expenses and compare gasoline vs ethanol costs. |
 | [Fuel Cost Trip Calculator](../mcps/fuel-cost-trip-calculator.md) | Calculate road trip fuel costs using vehicle efficiency, regional distance adjustments, and localized fuel prices. |
 | [Fundraising Target Calculator](../mcps/fundraising-target-calculator.md) | Calculate optimal fundraising targets based on projected burn, runway needs, and safety buffers. |
+| [Futures Basis Risk Hedging Strategy](../mcps/futures-basis-risk-hedging-strategy.md) | Minimize basis risk with deterministic optimal hedge ratio calculations. |
 | [Futures Butterfly Spread Strategy](../mcps/futures-butterfly-spread-strategy.md) | Generate deterministic trading signals for futures butterfly spreads using z-score mean reversion. |
+| [Futures Carry Optimization Strategy](../mcps/futures-carry-optimization-strategy.md) | Maximize roll yield by identifying optimal futures contract transitions and analyzing carry term structures. |
 | [Futures Carry Trade Strategy](../mcps/futures-carry-trade-strategy.md) | Identify arbitrage opportunities by comparing implied market carry against theoretical cost-of-carry models. |
 | [Futures Condor Spread Strategy](../mcps/futures-condor-spread-strategy.md) | Identify mean-reversion opportunities in four-legged futures spreads using Z-score signals. |
 | [Futures Convergence Strategy](../mcps/futures-convergence-strategy.md) | Identify arbitrage opportunities by monitoring the convergence of futures prices toward spot prices. |
+| [Futures Curve Riding Strategy](../mcps/futures-curve-riding-strategy.md) | Capture roll-down returns by identifying stable futures curves. |
 | [Futures Delivery Strategy](../mcps/futures-delivery-strategy.md) | Identify arbitrage and liquidity squeezes in futures markets. |
+| [Futures Event-Driven Strategy](../mcps/futures-event-driven-strategy.md) | Identify volatility mispricing in futures markets using historical event data. |
 | [Futures Hedging Strategy](../mcps/futures-hedging-strategy.md) | Calculate precise futures contract requirements to neutralize portfolio beta exposure. |
+| [Futures Intercommodity Spread Strategy](../mcps/futures-intercommodity-spread-strategy.md) | Deterministic ratio-based trading signals for commodity spreads. |
+| [Futures Liquidity Premium Strategy](../mcps/futures-liquidity-premium-strategy.md) | Identify and exploit mispriced illiquidity discounts in futures markets. |
+| [Futures Mean Reversion Strategy](../mcps/futures-mean-reversion-strategy.md) | Identify short-term commodity reversal opportunities using deterministic price and liquidity analysis. |
+| [Futures Momentum Factor Strategy](../mcps/futures-momentum-factor-strategy.md) | A deterministic cross-sectional momentum strategy for commodities using rolling 12-month returns. |
+| [Futures Options Box Spread Strategy](../mcps/futures-options-box-spread-strategy.md) | Detect deterministic arbitrage opportunities in futures options box spreads. |
+| [Futures Options Calendar Spread Strategy](../mcps/futures-options-calendar-spread-strategy.md) | Deterministic decision engine for futures options calendar spreads using volatility term structure and time decay analysis. |
+| [Futures Options Delta Hedging Strategy](../mcps/futures-options-delta-hedging-strategy.md) | Simulate delta-neutral hedging signals and risk metrics for options portfolios. |
+| [Futures Options Diagonal Spread Strategy](../mcps/futures-options-diagonal-spread-strategy.md) | A deterministic decision engine for executing futures options diagonal spread strategies. |
+| [Futures Options Iron Condor Strategy](../mcps/futures-options-iron-condor-strategy.md) | A deterministic engine for executing iron condor strategies on futures options during high-volatility consolidation. |
 | [Futures Options Straddle Strategy](../mcps/futures-options-straddle-strategy.md) | Identify volatility mispricing using deterministic straddle signals. |
+| [Futures Options Strangle Strategy](../mcps/futures-options-strangle-strategy.md) | A deterministic decision engine for executing short strangle strategies on futures. |
+| [Futures Options Volatility Risk Premium Strategy](../mcps/futures-options-volatility-risk-premium-strategy.md) | Analyze volatility risk premium (VRP) to identify buy/sell signals for futures options. |
 | [Futures Position Limits Strategy](../mcps/futures-position-limits-strategy.md) | Deterministic compliance engine for managing futures contract exposure against regulatory limits. |
 | [Futures Ratio Spread Strategy](../mcps/futures-ratio-spread-strategy.md) | Identify 1:2 ratio spread entry signals using statistical Z-scores and market regime filters. |
+| [Futures Relative Value Strategy](../mcps/futures-relative-value-strategy.md) | Identify mispricings between related futures contracts using statistical z-scores and fundamental fair value models. |
 | [Futures Seasonality Strategy](../mcps/futures-seasonality-strategy.md) | Identify commodity trading signals by combining historical seasonal returns with price trends. |
+| [Futures Statistical Arbitrage Strategy](../mcps/futures-statistical-arbitrage-strategy.md) | Identify mean-reverting opportunities between futures contracts using cointegration testing. |
 | [Futures Term Structure Strategy](../mcps/futures-term-structure-strategy.md) | Analyze futures curve geometry, slope, and curvature to generate deterministic trading signals. |
 | [Futures Volatility Surface Strategy](../mcps/futures-volatility-surface-strategy.md) | Detect and quantify volatility surface arbitrage opportunities. |
 | [Futures Volume & Open Interest Strategy](../mcps/futures-volume-open-interest-strategy.md) | Analyze trend strength and direction using price, volume, and Open Interest momentum. |

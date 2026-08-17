@@ -22,6 +22,7 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 | [RPG Encounter Balance Calculator](../mcps/rpg-encounter-balance-calculator.md) | Estimate combat duration, lethality, and difficulty for tabletop RPG encounters. |
 | [Screen Stretch Resolver](../mcps/screen-stretch-resolver.md) | Calculate pixel stretching, FOV shifts, and coordinate mapping for stretched resolutions. |
 | [Skill Tree Optimization Engine](../mcps/skill-tree-optimization-engine.md) | Optimize skill point allocation for maximum DPS, survivability, or balanced utility. |
+| [Tabletop RPG Mechanics Engine](../mcps/tabletop-rpg-mechanics-engine.md) | Deterministic mathematical resolution for TTRPG mechanics like D&D 5e. |
 
 
 ---

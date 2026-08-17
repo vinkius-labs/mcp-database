@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,257 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,276 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,10 +10,10 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (926 servers)
+- [productivity](categories/productivity.md) (927 servers)
 - [developer-tools](categories/developer-tools.md) (661 servers)
 - [industry-titans](categories/industry-titans.md) (587 servers)
-- [finance](categories/finance.md) (413 servers)
+- [finance](categories/finance.md) (430 servers)
 - [data-analytics](categories/data-analytics.md) (329 servers)
 - [marketing-automation](categories/marketing-automation.md) (240 servers)
 - [ecommerce](categories/ecommerce.md) (206 servers)
@@ -59,7 +59,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [analytics](categories/analytics.md) (22 servers)
 - [mathematics](categories/mathematics.md) (21 servers)
 - [business-intelligence](categories/business-intelligence.md) (19 servers)
-- [gaming](categories/gaming.md) (18 servers)
+- [gaming](categories/gaming.md) (19 servers)
 - [lifestyle](categories/lifestyle.md) (18 servers)
 - [audio-music](categories/audio-music.md) (16 servers)
 - [content-management](categories/content-management.md) (16 servers)

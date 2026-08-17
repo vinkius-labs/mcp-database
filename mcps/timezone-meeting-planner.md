@@ -7,17 +7,16 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Find optimal meeting times across international timezones by analyzing business hour overlaps and DST transitions.
+Coordinate global meetings by calculating overlapping working hours and DST offsets.
 
 ## Description
-A specialized utility for scheduling meetings across multiple cities. It analyzes 24-hour schedules, identifies daylight saving time (DST) conflicts using `dst_transitions`, and ranks the best 3 meeting windows based on an 'inconvenience score' via `rank_optimal_slots` to minimize disruption to participants' local business hours.
+A deterministic engine for global time coordination. This MCP server allows AI agents to calculate precise meeting windows across multiple IANA time zones. It accounts for specific Daylight Saving Time (DST) transitions, provides exact UTC offsets for any given date, and identifies overlapping availability based on individual working hour constraints. Use `find_meeting_windows` to discover all possible meeting times or `validate_availability` to check a specific slot.
 
 
-## Available Tools (4)
-- **schedule_matrix**: Generate a 24-hour meeting availability matrix for multiple timezones
-- **dst_transitions**: Identify upcoming Daylight Saving Time transitions for specific timezones
-- **optimal_slots**: Find the best meeting time slots across multiple timezones
-- **timezone_search**: Search for IANA timezones by city or region name
+## Available Tools (3)
+- **find_meeting_windows**: Identifies all time periods where all participants' working hours overlap
+- **get_zone_offsets**: Retrieves the specific UTC offset for a list of time zones on a given date
+- **validate_availability**: Checks if a specific proposed meeting time is valid for all participants
 
 
 ## 💬 Prompt Examples
@@ -25,38 +24,38 @@ A specialized utility for scheduling meetings across multiple cities. It analyze
 Here are some examples of how you can interact with the **Timezone Meeting Planner** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Find a meeting time for London and New York on 2024-05-20."
+> "Find a meeting window for a team in New York (09:00-17:00) and London (09:00-17:00) on 2024-06-15."
 
 **🤖 AI Agent:**
-> The best meeting window is between 13:00 and 15:00 UTC, as this falls within business hours for both cities.
+> The available meeting window is from 2024-06-15T13:00:00+00:00 to 2024-06-15T16:00:00+00:00, lasting 180 minutes.
 
 ---
 
 **👤 You:**
-> "Search for timezones in Tokyo."
+> "What is the UTC offset for Tokyo on 2024-12-25?"
 
 **🤖 AI Agent:**
-> Found matching timezone: Asia/Tokyo.
+> The UTC offset for Asia/Tokyo on 2024-12-25 is +09:00.
 
 ---
 
 **👤 You:**
-> "Are there any DST transitions for Paris in 2024?"
+> "Is 2024-03-10T02:30:00-05:00 a valid time for someone in New York?"
 
 **🤖 AI Agent:**
-> Yes, a transition is detected on 2024-03-31.
+> No, that time is invalid because a DST transition is occurring at that moment in the America/New_York time zone.
 
 
 ## ❓ FAQ
 
-**Q: How are meeting slots ranked?**
-The `rank_optimal_slots` tool calculates an inconvenience score based on how far the slot is from the 09:00-17:00 business window.
+**Q: How does the tool handle Daylight Saving Time?**
+The engine uses the IANA database to calculate exact offsets for any date. If a DST transition occurs during a proposed meeting, the `dstTransitionOccurred` flag will be set to true.
 
-**Q: Can I identify DST changes?**
-Yes, use the `dst_transitions` tool to flag dates where clock offsets change for your selected cities.
+**Q: Can I check if a specific time works for my team?**
+Yes, you can use the `validate_availability` tool to verify if a specific ISO 8601 timestamp falls within the working hours of all participants.
 
-**Q: How do I find a specific timezone?**
-You can use the `timezone_search` tool to search for city or region names and get valid IANA identifiers.
+**Q: What format should the time zones be in?**
+You must use standard IANA time zone identifiers, such as `America/New_York` or `Europe/London`.
 
 
 ## Installation & Usage

@@ -402,6 +402,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [GamerPower](../mcps/gamerpower.md) | Track live game giveaways, free loot, and beta keys via AI agents with GamerPower. |
 | [GamerPower Gaming Giveaways](../mcps/gamerpower-gaming-giveaways.md) | Find and track free gaming giveaways — get Steam keys, Epic Games Store offers, and in-game loot via AI. |
 | [Gamma (AI Presentations)](../mcps/gamma-ai-presentations.md) | Generate AI-powered presentations, documents, and webpages. List, update, and manage your Gamma workspace directly from any AI agent. |
+| [Gardening & Planting Scheduler](../mcps/gardening-planting-scheduler.md) | Deterministic agricultural scheduling for precise planting timelines. |
 | [Geekbot](../mcps/geekbot.md) | Run asynchronous standups and team check-ins through Slack or Microsoft Teams that respect everyone timezone and schedule. |
 | [GeekJoke](../mcps/geekjoke.md) | Get random geeky and programming-related jokes to lighten up your development workflow. |
 | [Germany Income Tax Calculator](../mcps/germany-income-tax-calculator.md) | Calculate German income tax, social security contributions, and net take-home pay. |
@@ -829,7 +830,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Timesheet to Invoice Calculator](../mcps/timesheet-to-invoice-calculator.md) | Convert work shifts and breaks into precise decimal hours and total payment amounts. |
 | [Timezone Fast Shifter](../mcps/timezone-fast-shifter.md) | Recalculate fasting windows and maintain fast integrity when traveling across time zones. |
 | [Timezone Jetlag Shifter](../mcps/timezone-jetlag-shifter.md) | Calculate a precise circadian adjustment schedule to mitigate jet lag before your international flight. |
-| [Timezone Meeting Planner](../mcps/timezone-meeting-planner.md) | Find optimal meeting times across international timezones by analyzing business hour overlaps and DST transitions. |
+| [Timezone Meeting Planner](../mcps/timezone-meeting-planner.md) | Coordinate global meetings by calculating overlapping working hours and DST offsets. |
 | [Timezone Offset Engine](../mcps/timezone-offset-engine.md) | Calculate the exact offset between two timezones at any moment, with full DST awareness. Powered by Luxon. |
 | [TimezoneDB](../mcps/timezonedb.md) | Manage global time — audit timezones and offsets via AI. |
 | [Tingg Insights](../mcps/tingg-insights.md) | Analyze mobile payment and fintech data across African markets with insights that reveal transaction trends and user behavior. |
