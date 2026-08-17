@@ -9,6 +9,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Bayesian A/B Testing Calculator](../mcps/bayesian-ab-testing-calculator.md) | Quantify conversion probability, expected loss, and uplift using Bayesian inference. |
 | [Core Web Vitals Scorer](../mcps/core-web-vitals-scorer.md) | Evaluate LCP, INP, and CLS metrics against Google's thresholds. |
 | [Emotional Variability Score](../mcps/emotional-variability-score.md) | Quantify emotional fluctuations, mood amplitude, and longitudinal stability. |
+| [Governance Strategy Engine](../mcps/governance-strategy-engine.md) | Optimize governance participation and delegation rewards. |
 | [Incrementality Estimator](../mcps/incrementality-estimator.md) | Determines true campaign ROI by calculating lift above natural conversion rates using control group data. |
 | [Karmic Debt Calculator](../mcps/karmic-debt-calculator.md) | Identify and interpret karmic debt numbers (13, 14, 16, 19) within a numerological matrix. |
 | [Keyword Extractor](../mcps/keyword-extractor.md) | Extract and rank significant keywords from text using term frequency and density analysis. |

@@ -33,7 +33,9 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [License Compatibility Checker](../mcps/license-compatibility-checker.md) | Audit software licenses and check compatibility between dependencies. |
 | [Luhn Credit Card Validator](../mcps/luhn-credit-card-validator.md) | Validates credit card numbers using the Luhn algorithm and identifies the issuer. |
 | [MAC Address Validator and Vendor Extractor](../mcps/mac-address-validator-and-vendor-extractor.md) | Validate MAC address formats and identify hardware vendors via OUI. |
+| [MEV Sandwich Detection Strategy](../mcps/mev-sandwich-detection-strategy.md) | Identify and avoid sandwich attacks in DEX transactions. |
 | [Multi-Agent Communication Protocol Validator](../mcps/multi-agent-communication-protocol-validator.md) | Analyze and verify the structural integrity of autonomous agent communication logs. |
+| [Oracle Manipulation Detection Strategy](../mcps/oracle-manipulation-detection-strategy.md) | Detect and avoid token price manipulation by analyzing oracle deviations and DEX spot prices. |
 | [Outbound Network Firewall Validator](../mcps/outbound-network-firewall-validator.md) | Validates outbound network requests against allowed domains and ports to prevent data exfiltration. |
 | [Password Entropy Calculator](../mcps/password-entropy-calculator.md) | Calculate password entropy, identify pattern risks, and verify security policy compliance. |
 | [PII Redaction Deterministic Scrubber](../mcps/pii-redaction-deterministic-scrubber.md) | Detects and redacts SSNs, emails, phone numbers, credit cards, and IBANs using regex and checksums. |
@@ -48,6 +50,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Regex ReDoS Vulnerability Detector](../mcps/regex-redos-vulnerability-detector-alternative.md) | Detects catastrophic backtracking and ReDoS vulnerabilities in regular expression patterns using deterministic structural analysis. |
 | [Resource Limit Calculator](../mcps/resource-limit-calculator.md) | Translates high-level resource constraints into exact OS-level RLIMIT constants. |
 | [Resource Usage Leak Detector](../mcps/resource-usage-leak-detector.md) | Monitor agent resource consumption to detect file descriptor or connection leaks. |
+| [Rug Pull Detection Strategy](../mcps/rug-pull-detection-strategy.md) | Identify high-risk tokens by analyzing liquidity locks, contract privileges, and holder distribution. |
 | [SBOM Dependency Risk Scorer](../mcps/sbom-dependency-risk-scorer.md) | Analyze SBOM files to quantify supply chain risk through dependency structure, package staleness, and vulnerability exposure. |
 | [Security Vulnerability Scanner](../mcps/security-vulnerability-scanner.md) | Scans code for security vulnerabilities like SQL injection and command injection using AST pattern matching. |
 | [Sensitive Data Exposure Detector](../mcps/sensitive-data-exposure-detector.md) | Intercepts and redacts sensitive information from file reads and tool outputs. |
