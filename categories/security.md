@@ -6,10 +6,13 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [4399 Open Platform](../mcps/4399-open-platform.md) | Manage 4399 Open Platform game distribution — validate logins, query orders, and handle leaderboards directly from any AI agent. |
 | [Agent Config Drift Detector](../mcps/agent-config-drift-detector.md) | Detects unauthorized changes to agent configurations by comparing SHA-256 hashes. |
+| [AWS Secrets Manager Rotation Calculator](../mcps/aws-secrets-manager-rotation-calculator.md) | Validate AWS Secrets Manager configurations against operational limits and rotation best practices. |
+| [AWS WAF Rules & Rate Limiting Calculator](../mcps/aws-waf-rules-rate-limiting-calculator.md) | Calculate AWS WAF capacity, rate limits, and rule complexity against best practices. |
 | [Base64 Charset Normalizer](../mcps/base64-charset-normalizer.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |
 | [Base64 Charset Normalizer](../mcps/base64-charset-normalizer-alternative.md) | Identifies, decodes, and normalizes Base64 payloads with strict charset enforcement. |
 | [Bcrypt Hash Engine](../mcps/bcrypt-hash-engine.md) | Hash and verify passwords with the industry-standard bcrypt algorithm. Two tools in one: hash with configurable salt rounds, and verify against stored hashes. Pure JS — zero compilation. |
 | [CI/CD Pipeline Config Validator](../mcps/cicd-pipeline-config-validator.md) | Deterministic validator for GitHub Actions and GitLab CI configuration files. |
+| [Cognito User Pool Calculator](../mcps/cognito-user-pool-calculator.md) | Estimate AWS Cognito resource usage, limits, and token profiles. |
 | [Crypto Hash Engine](../mcps/crypto-hash-engine.md) | Sign API requests and Webhooks deterministically. Instantly generate mathematical HMAC, SHA-256, or MD5 hashes without AI hallucinations. |
 | [Crypto Random String](../mcps/crypto-random-string.md) | Generate cryptographically secure random strings for API keys, tokens, and invite codes using Node.js crypto.randomBytes(). |
 | [Cryptographic Action Attestor](../mcps/cryptographic-action-attestor.md) | Creates a tamper-proof audit trail of every agent action using SHA-256 hashing. |
@@ -28,6 +31,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Hash Checksum Calculator](../mcps/hash-checksum-calculator.md) | Generate, compare, and validate cryptographic and non-cryptographic hashes like MD5, SHA-256, and CRC32. |
 | [Hash Generator and Verifier](../mcps/hash-generator-and-verifier.md) | Generate and verify cryptographic hashes like MD5, SHA-1, SHA-256, and SHA-512. |
 | [HMAC Signature Validator](../mcps/hmac-signature-validator.md) | High-precision HMAC signature generation and verification with constant-time comparison. |
+| [IAM Policy Complexity Calculator](../mcps/iam-policy-complexity-calculator.md) | Deterministic AWS IAM policy size and complexity analyzer. |
 | [Input Sanitizer & Escape Handler](../mcps/input-sanitizer-escape-handler.md) | Protects AI agents from shell injection, path traversal, and payload vulnerabilities. |
 | [JWT Decoder & Validator](../mcps/jwt-decoder-validator.md) | Decode JWT segments and verify cryptographic signatures and temporal claims. |
 | [License Compatibility Checker](../mcps/license-compatibility-checker.md) | Audit software licenses and check compatibility between dependencies. |

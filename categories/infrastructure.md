@@ -6,18 +6,30 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 |-----------|-------------|
 | [Agora](../mcps/agora.md) | Orchestrate Agora real-time engagement — manage channels, monitor usage, and handle cloud recording directly from any AI agent. |
 | [API Key Rotation Manager](../mcps/api-key-rotation-manager.md) | Deterministic API key rotation to prevent rate limits and exhaustion. |
+| [AWS API Gateway Throttling Calculator](../mcps/aws-api-gateway-throttling-calculator.md) | Calculate AWS API Gateway RPS, burst capacity, quotas, and operational limits. |
+| [AWS Auto Scaling Group Capacity Calculator](../mcps/aws-auto-scaling-group-capacity-calculator.md) | Calculate exact instance requirements and scaling thresholds for AWS Auto Scaling Groups. |
+| [AWS CloudFormation Stack Limits Calculator](../mcps/aws-cloudformation-stack-limits-calculator.md) | Verify AWS CloudFormation template compliance and calculate stack limits. |
+| [AWS CloudWatch Logs Calculator](../mcps/aws-cloudwatch-logs-calculator.md) | Deterministic tool for estimating AWS CloudWatch Logs ingestion, storage, and service limits. |
+| [AWS Direct Connect Bandwidth Calculator](../mcps/aws-direct-connect-bandwidth-calculator.md) | Calculate AWS Direct Connect connection counts, redundancy requirements, and architectural limits. |
+| [AWS Disaster Recovery Calculator](../mcps/aws-disaster-recovery-calculator.md) | Deterministic RTO and RPO estimation for AWS disaster recovery strategies. |
+| [AWS ElastiCache Cluster Calculator](../mcps/aws-elasticache-cluster-calculator.md) | Deterministic sizing for AWS ElastiCache clusters including Redis and Memcached. |
+| [AWS MSK Partition & Throughput Calculator](../mcps/aws-msk-partition-throughput-calculator.md) | Deterministic sizing for AWS MSK clusters, calculating partitions, storage, and network limits. |
+| [AWS SQS Calculator](../mcps/aws-sqs-calculator.md) | Calculate SQS payload strategies, throughput, and in-flight limits. |
 | [Brunel Engineering Prover](../mcps/brunel-engineering-prover.md) | A warehouse system hit 3x its tested throughput on a Tuesday morning. Sorting stations jammed in 12 minutes. 4 hours of standstill. $180K in delayed shipments. The operations manual said 'should handle expected growth.' Nobody tested what 'expected' meant — or when it stopped being true. Brunel specified Box Tunnel's gradient to exactly 1 in 100. Every brick course counted. This tool forces that rigor: analyze what breaks at 10x/100x, map integration interfaces, specify exact tolerances, quantify risks with probability and blast radius, and challenge precedent at your scale. |
 | [CIDR IP Calculator](../mcps/cidr-ip-calculator.md) | Perform IPv4 and IPv6 subnet mathematics, including network boundaries and host range calculations. |
 | [Circuit Breaker State Manager](../mcps/circuit-breaker-state-manager.md) | Prevents cascading failures by managing service health states. |
 | [COO Operations Prover](../mcps/coo-operations-prover.md) | An operations plan said 'we will scale' without modeling arrival rates. It claims 'economies of scale' without a single cost data point. It writes SLAs that say 'best effort.' That is not operations — that is hope. This tool forces five COO-level operational axes: capacity modeling, failure isolation, cost leverage, process discipline, and accountability mechanisms. |
 | [Deterministic Feature Flag Evaluator](../mcps/deterministic-feature-flag-evaluator.md) | Evaluate feature flags using consistent, hash-based logic to prevent session flicker. |
 | [Docker Compose Validator](../mcps/docker-compose-validator.md) | Validate Docker Compose files for structural errors, port conflicts, and dependency cycles. |
+| [ECS Task Sizing Calculator](../mcps/ecs-task-sizing-calculator.md) | Calculate precise AWS ECS task resources, EC2 capacity, and scaling configurations. |
 | [Idempotency Key Enforcer](../mcps/idempotency-key-enforcer.md) | Prevents duplicate execution of identical side-effectful operations using an in-memory LRU cache. |
 | [Kubernetes Architecture Prover](../mcps/kubernetes-architecture-prover.md) | An AI generated Kubernetes manifests for a payment service. No resource requests or limits. No PodSecurityStandards. Single replica, no PDB. Zero NetworkPolicies — every pod could reach every other pod. The payment pod got OOM-killed at 3 AM by a logging sidecar with no memory ceiling. This tool forces resource governance, security hardening, reliability design, observability instrumentation, and network restriction on every workload. |
 | [Kubernetes Resource Request Calculator](../mcps/kubernetes-resource-request-calculator.md) | Computes Kubernetes CPU/memory requests and limits from observed usage metrics (p50/p95/p99). |
 | [Message Queue Throughput Calculator](../mcps/message-queue-throughput-calculator.md) | Plan capacity for Kafka, RabbitMQ, or SQS by calculating consumer needs, backlog drain time, and concurrency. |
 | [PiLAB](../mcps/pilab.md) | Manage infrastructure and security via PiLAB — control PiVirt virtual machines, inspect PiTrust certificates, and oversee 3SO OAuth clients directly from any AI agent. |
 | [Security Audit Prover](../mcps/security-audit-prover.md) | An AI agent committed a Stripe API key to git, built SQL queries with string concatenation, and deployed an admin endpoint with no authentication — all in 4 minutes. The key was scraped from GitHub within 90 seconds. This tool forces input sanitization validation, secret management auditing, authentication enforcement, injection prevention, and dependency supply chain checks against OWASP Top 10. |
+| [SNS Fanout & Filtering Calculator](../mcps/sns-fanout-filtering-calculator.md) | Calculate AWS SNS fanout, throughput, and filter policy complexity. |
+| [vpc-cidr-calculator](../mcps/vpc-cidr-calculator.md) | Deterministic AWS VPC CIDR and subnet layout generator. |
 | [WebSocket Capacity Planner](../mcps/websocket-capacity-planner.md) | Estimate WebSocket connection limits, server fleet requirements, and network overhead. |
 
 

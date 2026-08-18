@@ -54,6 +54,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Pet Lifespan Estimator](../mcps/pet-lifespan-estimator.md) | Estimate pet longevity and identify life stages based on species, breed, and size. |
 | [Pet Medication Dose Splitter](../mcps/pet-medication-dose-splitter.md) | Calculate the exact number and fraction of tablets needed for pet medication dosing. |
 | [Pitch Shift Speed Ratio Calculator](../mcps/pitch-shift-speed-ratio-calculator.md) | Calculate playback speed multipliers, adjusted durations, and new BPM for pitch shifting via varispeed. |
+| [Postal Address Normalizer](../mcps/postal-address-normalizer.md) | Standardizes and validates unstructured postal addresses for US, UK, CA, and AU. |
 | [PostgreSQL Connection String Parser](../mcps/postgresql-connection-string-parser.md) | Deconstructs PostgreSQL URIs into precise connection parameters. |
 | [Prime Factorization, GCD & LCM Calculator](../mcps/prime-factorization-gcd-lcm-calculator.md) | Compute exact prime factorizations and calculate GCD and LCM for sets of integers. |
 | [Rank Percentile Calculator](../mcps/rank-percentile-calculator.md) | Discover exactly what percentage of players you've surpassed in games like Valorant, League of Legends, and CS2. |

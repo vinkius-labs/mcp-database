@@ -5,6 +5,7 @@ Explore the open database of **networking** Model Context Protocol (MCP) servers
 | Tool Name | Description |
 |-----------|-------------|
 | [HTTP Status Reference Lookup](../mcps/http-status-reference-lookup.md) | Retrieve official names, RFC references, and semantic properties for HTTP status codes. |
+| [Route 53 TTL & Failover Calculator](../mcps/route-53-ttl-failover-calculator.md) | Calculate optimal DNS TTL, failover windows, and routing distributions for AWS Route 53. |
 
 
 ---

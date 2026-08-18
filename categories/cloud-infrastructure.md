@@ -8,7 +8,10 @@ Explore the open database of **cloud-infrastructure** Model Context Protocol (MC
 | [Akash Network (Decentralized GPU & Cloud API)](../mcps/akash-network-decentralized-gpu-cloud-api.md) | Deploy and manage decentralized GPU and cloud resources on Akash Network—create deployments, manage leases, and monitor escrow balances directly. |
 | [Apaleo](../mcps/apaleo.md) | Manage hotel reservations, properties, rooms, rate plans, folios, invoices, and availability for your Apaleo PMS through natural conversation. |
 | [AppDynamics (Application Performance Monitor API)](../mcps/appdynamics-application-performance-monitor-api.md) | Monitor application performance, business transactions, and infrastructure health rules directly from your AI agent. |
+| [AWS EBS Performance Calculator](../mcps/aws-ebs-performance-calculator.md) | Calculate baseline IOPS, throughput, and burst depletion for AWS EBS volumes. |
+| [AWS Redshift Cluster Calculator](../mcps/aws-redshift-cluster-calculator.md) | Deterministic sizing for AWS Redshift clusters, including node counts, concurrency scaling, and WLM configuration. |
 | [AWS Solutions Architect Prover](../mcps/aws-solutions-architect-prover.md) | A Principal-level AWS Solutions Architect reviewing every cloud decision your AI makes. 20 years of production scars — service sprawl, $40K NAT Gateway bills, IAM breaches, multi-region theater — packaged into a review that runs in seconds. Get the AWS discipline you would pay $300K/year to hire, applied to every architecture your team ships. |
+| [AWS Well-Architected Score Calculator](../mcps/aws-well-architected-score-calculator.md) | A deterministic engine for evaluating AWS infrastructure against the six Well-Architected Framework pillars. |
 | [Backblaze B2](../mcps/backblaze-b2.md) | Manage Backblaze B2 Cloud Storage via AI — control buckets, file versions, objects, and access rules autonomously. |
 | [Balena](../mcps/balena.md) | Manage IoT fleets and edge devices via Balena — list devices, manage environment variables, and track releases directly from your AI agent. |
 | [Baota Panel / 宝塔面板 API](../mcps/baota-panel-api.md) | Leading server management panel in China — manage websites, databases, and system resources via AI. |
@@ -32,6 +35,7 @@ Explore the open database of **cloud-infrastructure** Model Context Protocol (MC
 | [Hologram.io](../mcps/hologramio.md) | Automate IoT connectivity via Hologram.io — manage devices, SIM cards, and data usage directly from any AI agent. |
 | [IPinfo](../mcps/ipinfo.md) | Geolocate and audit IP addresses — identify ASNs and privacy details via AI. |
 | [KeyCDN (Content Delivery Network)](../mcps/keycdn-content-delivery-network.md) | Manage edge caching via KeyCDN — purge zones and URLs, manage pull zones, and monitor traffic bandwidth. |
+| [Kinesis Shard Calculator](../mcps/kinesis-shard-calculator.md) | Calculate optimal AWS Kinesis Data Streams shard counts and storage needs. |
 | [Kisi](../mcps/kisi-alternative.md) | Control building access with cloud-managed smart locks, mobile credentials, and audit trails that replace traditional key cards. |
 | [Kolide](../mcps/kolide.md) | Audit fleet security — list devices, track issues, and monitor people. |
 | [Limelight Networks (Edgio CDN & Streaming API)](../mcps/limelight-networks-edgio-cdn-streaming-api.md) | Manage Edgio (formerly Limelight/Uplynk) streaming services — control VOD assets, linear channels, and live events directly through AI. |
@@ -44,6 +48,7 @@ Explore the open database of **cloud-infrastructure** Model Context Protocol (MC
 | [OpenCost (K8s Cost)](../mcps/opencost-k8s-cost.md) | Monitor and analyze Kubernetes infrastructure costs — query workload allocations, backing assets, and cloud billing directly from your AI agent. |
 | [OpenMeter (Usage Metering for AI/Cloud Billing)](../mcps/openmeter-usage-metering-for-aicloud-billing.md) | Meter AI usage, manage customer entitlements, and automate cloud billing via OpenMeter's high-performance usage tracking API. |
 | [Radar](../mcps/radar.md) | Equip your AI with geolocation tools — convert coordinates to addresses, map intellectual territories, calculate routes, and perform IP-based lookups. |
+| [RDS Storage & IOPS Calculator](../mcps/rds-storage-iops-calculator.md) | Calculate AWS RDS storage capacity, baseline IOPS, and performance saturation risks. |
 | [Sentinel Hub](../mcps/sentinel-hub.md) | Access and process satellite imagery from Sentinel, Landsat, and other Earth observation missions through a powerful cloud API. |
 | [Shunwang Tech](../mcps/shunwang-tech.md) | Leading edge computing and PC Bang management platform — monitor clusters, schedule tasks, and manage GPU resources via AI. |
 | [SigNoz (Datadog Alternative)](../mcps/signoz-datadog-alternative.md) | Monitor infrastructure and manage alert rules via SigNoz — list, create, and update observability alerts directly from your AI agent. |
