@@ -40,17 +40,17 @@ No more manual status checking of individual tasks or digging through complex ti
 - **create_new_customer**: Requires name and contact information.
 
 Add a new client to Aero
-- **create_new_workflow_task**: Requires a subject and assigned user.
-
-Add a new task to Aero
 - **get_account_info**: Get account metadata
 - **get_task_details**: Get details for a specific task
 - **list_firm_customers**: List all client accounts
 - **list_workflow_emails**: List communication emails
 - **list_workflow_tasks**: List workflow tasks and checklists
 - **list_checklist_templates**: List reusable workflow templates
-- **list_time_tracking_logs**: List time entries for tasks
 - **list_firm_team_members**: List firm users and staff
+- **list_time_tracking_logs**: List time entries for tasks
+- **create_new_workflow_task**: Requires a subject and assigned user.
+
+Add a new task to Aero
 - **list_configured_webhooks**: List active webhooks
 
 

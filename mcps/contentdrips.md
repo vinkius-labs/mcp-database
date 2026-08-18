@@ -36,13 +36,13 @@ No more manual designing of individual carousel slides or missing scheduled cont
 
 
 ## Available Tools (10)
-- **get_job_result**: Get render result
 - **get_job_status**: Check render job status
-- **get_template**: Get template details
-- **list_templates**: List all templates
 - **render_batch**: Render a batch of graphics
 - **render_carousel**: Render a carousel
 - **render_image**: Render a single image
+- **get_job_result**: Get render result
+- **get_template**: Get template details
+- **list_templates**: List all templates
 - **check_contentdrips_status**: Verify ContentDrips API connectivity
 - **get_account**: Get account info
 - **render_pdf**: Render as PDF

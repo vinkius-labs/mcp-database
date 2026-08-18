@@ -33,10 +33,10 @@ Connect your AI assistant to **CompanyCam**, the photo-first documentation platf
 
 ## Available Tools (10)
 - **create_project**: Create a new project in CompanyCam
-- **get_current_user**: Retrieve details of the authenticated user
 - **get_photo_details**: Retrieve details of a specific photo
 - **list_all_photos**: Retrieve a list of photos across all projects in the company
 - **list_project_documents**: Retrieve a list of documents attached to a project
+- **get_current_user**: Retrieve details of the authenticated user
 - **list_project_photos**: Retrieve all photos associated with a specific project
 - **get_project**: Retrieve detailed information about a specific project
 - **list_projects**: Retrieve a list of projects from CompanyCam

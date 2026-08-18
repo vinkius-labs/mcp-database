@@ -32,13 +32,13 @@ Access the **SITA Airport Reference API** through natural conversation with your
 
 
 ## Available Tools (3)
-- **list_sita_airports**: List all globalThis airports registered in the SITA database
 - **get_airport_reference_details**: Use the 3-letter IATA code (e.g., "LHR", "JFK", "GRU").
 
 Get full reference metadata for a specific airport by code (IATA)
 - **list_airport_terminals**: Useful for flight operations, passenger routing, and airport infrastructure planning.
 
 List all terminals and gate areas for a specific airport
+- **list_sita_airports**: List all globalThis airports registered in the SITA database
 
 
 ## 💬 Prompt Examples

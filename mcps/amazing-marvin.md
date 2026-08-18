@@ -30,16 +30,16 @@ This integration is perfect for founders, developers, and project managers who w
 
 
 ## Available Tools (9)
-- **add_project**: Add a new project to Amazing Marvin
 - **add_category**: Add a new category to Amazing Marvin
 - **add_task**: You can optionally specify a parent category/project ID and a date (YYYY-MM-DD) for when the task is scheduled.
 
 Add a new task to Amazing Marvin
+- **start_tracking**: Start time tracking for a task in Amazing Marvin
+- **add_project**: Add a new project to Amazing Marvin
 - **get_children**: If no ID is given, it might fetch the root items.
 
 Get tasks and sub-categories inside a category or project
 - **get_today_items**: Get tasks scheduled for today in Amazing Marvin
-- **start_tracking**: Start time tracking for a task in Amazing Marvin
 - **mark_done**: Mark a task as completed in Amazing Marvin
 - **stop_tracking**: Stop the currently running time tracker in Amazing Marvin
 - **update_task**: You can change its title, scheduled day, or done status.

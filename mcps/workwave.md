@@ -42,9 +42,9 @@ No more manual digging through complex dispatching dashboards to check a job sta
 - **get_account_details**: Retrieves details for a specific customer account
 - **get_api_health**: Checks the health and connectivity of the WorkWave API integration
 - **list_service_equipment**: Lists managed equipment and assets used in field service
-- **get_employee_profile**: Retrieves profile details for a specific employee
 - **get_order_details**: Retrieves details for a specific service order
 - **list_field_service_accounts**: Lists customer accounts in the WorkWave Service platform
+- **get_employee_profile**: Retrieves profile details for a specific employee
 - **list_field_employees**: Lists technicians and field staff registered in WorkWave
 - **list_service_locations**: Lists physical service locations and job sites
 - **list_service_orders**: Lists service orders and work requests

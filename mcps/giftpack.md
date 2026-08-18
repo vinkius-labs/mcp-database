@@ -36,10 +36,15 @@ No more manual ordering or complex shipping tracking through fragmented emails. 
 
 
 ## Available Tools (12)
+- **trigger_gift_send**: Send a gift to a recipient
+- **list_recipients**: List gift recipients
+- **search_gift_catalog**: g., category or region).
+
+Search the Giftpack product catalog
+- **list_gifting_campaigns**: List all gifting campaigns
 - **create_campaign**: Requires a title and campaign details.
 
 Start a new gifting campaign
-- **trigger_gift_send**: Send a gift to a recipient
 - **create_recipient**: Requires name and email.
 
 Add a new recipient
@@ -47,13 +52,8 @@ Add a new recipient
 - **get_order_fulfillment_status**: Track a gift order
 - **get_product_details**: Get details for a specific gift product
 - **get_recipient_details**: Get details for a specific recipient
-- **list_gift_orders**: List recent gift orders
-- **list_recipients**: List gift recipients
 - **list_active_webhooks**: List gift event webhooks
-- **search_gift_catalog**: g., category or region).
-
-Search the Giftpack product catalog
-- **list_gifting_campaigns**: List all gifting campaigns
+- **list_gift_orders**: List recent gift orders
 
 
 ## 💬 Prompt Examples

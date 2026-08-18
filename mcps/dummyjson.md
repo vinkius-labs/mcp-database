@@ -33,64 +33,64 @@ Connect to **DummyJSON** to simulate real-world API interactions within your AI 
 
 
 ## Available Tools (61)
-- **get_quote**: Get a single quote by ID
-- **update_post**: Update a post
-- **delete_recipe**: Delete a recipe
-- **delete_todo**: Delete a todo
-- **delete_user**: Delete a user
-- **auth_get_me**: Retrieve the profile of the currently authenticated user
-- **update_recipe**: Update a recipe
-- **add_product**: Add a new product (simulated)
 - **add_recipe**: Add a recipe
 - **add_todo**: Add a todo
-- **add_user**: Add a user
 - **delete_cart**: Delete a cart
 - **delete_comment**: Delete a comment
 - **delete_post**: Delete a post
-- **delete_product**: Delete a product (simulated)
-- **filter_users**: Filter users by key and value
-- **get_cart**: Get a single cart by ID
-- **get_comment**: Get a single comment by ID
 - **get_comments_by_post**: Get comments for a specific post
 - **get_post_comments**: Get comments for a post
-- **get_post**: Get a single post by ID
-- **get_posts_by_user**: Get posts by user
-- **get_product**: Get a single product by ID
 - **get_products_by_category**: Get products by category
 - **get_random_quote**: Get a random quote
 - **get_random_quotes**: Get multiple random quotes (max 10)
 - **get_random_todo**: Get a random todo
-- **get_recipe**: Get a single recipe by ID
 - **get_recipes_by_meal_type**: Get recipes by meal type
-- **get_recipes_by_tag**: Get recipes by tag
 - **get_todo**: Get a single todo by ID
 - **get_user_carts**: Get carts belonging to a specific user
 - **get_user_posts**: Get posts by user
-- **get_user_todos**: Get todos by user
-- **get_user**: Get a single user by ID
 - **list_carts**: Get all carts
 - **list_categories**: Get all category objects
-- **list_category_list**: Get all category names
-- **list_comments**: Get all comments
 - **list_post_tags**: Get all post tags
-- **list_posts**: Get all posts
-- **list_products**: Get all products
 - **list_quotes**: Get all quotes
 - **list_recipe_tags**: Get all recipe tags
-- **list_recipes**: Get all recipes
-- **list_todos**: Get all todos
-- **list_users**: Get all users
-- **auth_login**: Authenticate a user and receive JWT tokens
 - **auth_refresh_token**: Extend the session using a refresh token
+- **list_todos**: Get all todos
 - **search_posts**: Search posts
 - **search_products**: Search products
-- **search_recipes**: Search recipes
 - **search_users**: Search users
-- **update_cart**: Update cart items
 - **update_comment**: Update a comment
-- **update_product**: Update a product (simulated)
-- **update_todo**: Update a todo
 - **update_user**: Update a user
+- **add_product**: Add a new product (simulated)
+- **add_user**: Add a user
+- **auth_get_me**: Retrieve the profile of the currently authenticated user
+- **auth_login**: Authenticate a user and receive JWT tokens
+- **delete_product**: Delete a product (simulated)
+- **delete_recipe**: Delete a recipe
+- **delete_todo**: Delete a todo
+- **delete_user**: Delete a user
+- **filter_users**: Filter users by key and value
+- **get_cart**: Get a single cart by ID
+- **get_comment**: Get a single comment by ID
+- **get_post**: Get a single post by ID
+- **get_posts_by_user**: Get posts by user
+- **get_product**: Get a single product by ID
+- **get_quote**: Get a single quote by ID
+- **get_recipe**: Get a single recipe by ID
+- **get_recipes_by_tag**: Get recipes by tag
+- **get_user**: Get a single user by ID
+- **get_user_todos**: Get todos by user
+- **list_category_list**: Get all category names
+- **list_comments**: Get all comments
+- **list_posts**: Get all posts
+- **list_products**: Get all products
+- **list_recipes**: Get all recipes
+- **list_users**: Get all users
+- **search_recipes**: Search recipes
+- **update_cart**: Update cart items
+- **update_post**: Update a post
+- **update_product**: Update a product (simulated)
+- **update_recipe**: Update a recipe
+- **update_todo**: Update a todo
 - **add_cart**: Create a new cart
 - **add_comment**: Add a comment
 - **add_post**: Add a post

@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your edge computing infrastructure with **S
 
 
 ## Available Tools (10)
-- **list_images**: List available system images
-- **get_gpu_specs**: Get GPU specifications
-- **create_task**: Create a new computing task
 - **get_node**: Get node details
 - **get_resource_usage**: Get resource usage summary
-- **list_clusters**: List computing clusters
 - **list_nodes**: List all computing nodes
 - **list_tasks**: List computing tasks
-- **send_node_command**: Send command to node
 - **stop_task**: Stop a computing task
+- **create_task**: Create a new computing task
+- **get_gpu_specs**: Get GPU specifications
+- **list_clusters**: List computing clusters
+- **list_images**: List available system images
+- **send_node_command**: Send command to node
 
 
 ## 💬 Prompt Examples

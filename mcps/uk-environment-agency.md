@@ -32,15 +32,15 @@ Connect your AI agent directly to the DEFRA and UK Environment Agency open data 
 
 
 ## Available Tools (9)
-- **get_measure**: Fetch targeted measurement configuration details
-- **get_station**: Retrieve detailed data on a single flood monitoring station
 - **list_floods**: Retrieve active flood warnings
 - **list_hydrology_stations**: Read globally saved hydrology measurement stations
 - **list_measures**: Retrieve available measures tracked across the EA
 - **list_station_readings**: Get actual readings associated to an individual station
 - **list_stations**: Retrieve active flood-monitoring stations
-- **get_flood**: Get a specific flood warning
 - **get_hydrology_station**: Retrieve explicit parameters for a hydrology trace
+- **get_flood**: Get a specific flood warning
+- **get_measure**: Fetch targeted measurement configuration details
+- **get_station**: Retrieve detailed data on a single flood monitoring station
 
 
 ## 💬 Prompt Examples

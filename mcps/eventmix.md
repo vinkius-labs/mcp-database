@@ -36,19 +36,19 @@ No more manual attendee tracking or complex agenda navigation. Your AI acts as y
 
 
 ## Available Tools (12)
-- **get_event_schedule**: Get the agenda/schedule for an event
 - **check_api_connectivity**: Verify Eventmix API status
 - **create_new_event**: Requires a title and scheduled date.
 
 Create a new virtual event
 - **remove_virtual_event**: Delete a virtual event
 - **get_event_usage_analytics**: Get analytics for an event
-- **get_event_details**: Get details for a specific event
-- **get_current_user_profile**: Get authenticated organization info
-- **list_event_attendees**: List participants for an event
 - **list_virtual_events**: List all virtual events
-- **submit_event_rsvp**: RSVP to a virtual event
 - **send_registration_code**: Email a registration code
+- **submit_event_rsvp**: RSVP to a virtual event
+- **get_current_user_profile**: Get authenticated organization info
+- **get_event_details**: Get details for a specific event
+- **get_event_schedule**: Get the agenda/schedule for an event
+- **list_event_attendees**: List participants for an event
 - **update_event_settings**: Modify an existing event
 
 

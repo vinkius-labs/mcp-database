@@ -28,14 +28,14 @@ Connect your **Namsor** account to any AI agent and simplify your name analytics
 
 
 ## Available Tools (6)
+- **predict_origin**: Predict country of origin from name
+- **parse_full_name**: Parse a full name string
 - **predict_country**: Predict country residency from name
 - **predict_diaspora**: Predict diaspora from name
 - **predict_ethnicity**: g., Hispanic, Asian, White).
 
 Predict US ethnicity from name
 - **predict_gender**: Predict gender from name
-- **predict_origin**: Predict country of origin from name
-- **parse_full_name**: Parse a full name string
 
 
 ## 💬 Prompt Examples

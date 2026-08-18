@@ -37,24 +37,24 @@ No more manual configuration in the web dashboard for every lead import. Your AI
 
 
 ## Available Tools (10)
-- **add_leads_to_campaign**: Pass the leads array as a JSON string in "leads_json" (e.g., [{"firstName": "John", "lastName": "Doe", "profileUrl": "..."}]).
-
-Import new leads into a specific campaign
-- **get_lead_details**: Get detailed information about a lead using their LinkedIn profile URL
 - **get_api_profile**: Check API key validity and get basic account info
+- **get_lead_details**: Get detailed information about a lead using their LinkedIn profile URL
+- **list_conversations**: List recent LinkedIn inbox conversations
+- **list_lead_campaigns**: List all campaigns a specific lead is part of
 - **list_linkedin_accounts**: Use this to identify which account is sending messages.
 
 List all LinkedIn accounts (senders) connected to the workspace
-- **list_campaigns**: Use this to find the "campaignId" for adding leads or managing status.
-
-List all LinkedIn outreach campaigns
-- **list_conversations**: List recent LinkedIn inbox conversations
-- **list_lead_campaigns**: List all campaigns a specific lead is part of
 - **resume_campaign**: Resume a paused LinkedIn campaign
 - **pause_campaign**: Pause an active LinkedIn campaign
 - **send_linkedin_message**: Pass the payload as a JSON string in "body_json" (requires conversationId and text).
 
 Send a message to a LinkedIn conversation
+- **add_leads_to_campaign**: Pass the leads array as a JSON string in "leads_json" (e.g., [{"firstName": "John", "lastName": "Doe", "profileUrl": "..."}]).
+
+Import new leads into a specific campaign
+- **list_campaigns**: Use this to find the "campaignId" for adding leads or managing status.
+
+List all LinkedIn outreach campaigns
 
 
 ## 💬 Prompt Examples

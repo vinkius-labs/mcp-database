@@ -34,15 +34,15 @@ Connect your **MailboxPower** account to any AI agent and manage direct mail mar
 
 
 ## Available Tools (9)
-- **add_contact_to_automation**: Start an automation for a contact
 - **add_contact_to_group**: Add a contact to a group
-- **send_shipment**: Send a card or gift
-- **create_contact**: Create a new contact
 - **create_group**: Create a new group
-- **get_contact**: Get contact details
 - **list_automations**: List all automations
 - **list_contacts**: List all contacts
 - **list_groups**: List all contact groups
+- **add_contact_to_automation**: Start an automation for a contact
+- **create_contact**: Create a new contact
+- **get_contact**: Get contact details
+- **send_shipment**: Send a card or gift
 
 
 ## 💬 Prompt Examples

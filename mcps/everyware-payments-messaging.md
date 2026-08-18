@@ -33,16 +33,16 @@ Integrate **Everyware**, the powerful platform for payments and messaging, direc
 
 
 ## Available Tools (10)
-- **list_customer_contacts**: List all customer contacts registered in your Everyware account
-- **get_everyware_account_metadata**: Retrieve metadata and limits for your Everyware account
 - **get_message_delivery_status**: Get detailed delivery status and information for a specific message
 - **list_digital_invoices**: List all digital invoices and pay-by-text requests
 - **list_sent_messages**: List all SMS and digital messages sent via the Everyware platform
-- **list_successfully_paid_transactions**: Identify payments that have reached a "Paid" or "Captured" status
 - **list_processed_payments**: List all payments processed via Everyware
-- **get_payment_volume_summary**: Retrieve a high-level summary of payment volume and success rates
-- **get_payment_detailed_data**: Get detailed settings and information for a specific payment
+- **list_successfully_paid_transactions**: Identify payments that have reached a "Paid" or "Captured" status
 - **quick_everyware_operations_audit**: Retrieve a high-level summary of payments, messages, and contacts
+- **get_payment_volume_summary**: Retrieve a high-level summary of payment volume and success rates
+- **get_everyware_account_metadata**: Retrieve metadata and limits for your Everyware account
+- **get_payment_detailed_data**: Get detailed settings and information for a specific payment
+- **list_customer_contacts**: List all customer contacts registered in your Everyware account
 
 
 ## 💬 Prompt Examples

@@ -38,19 +38,19 @@ No more manual deal logging or digging through complex accounting tables. Your A
 
 ## Available Tools (12)
 - **create_client**: Create a new client
+- **get_account_info**: Get account details
+- **get_invoice**: Get invoice details
+- **list_staff**: List staff members
+- **list_payments**: List recent payments
 - **create_invoice**: Requires client_id and invoice items.
 
 Create a new invoice
 - **create_product**: Create a new product
-- **get_account_info**: Get account details
-- **get_invoice**: Get invoice details
-- **list_staff**: List staff members
-- **list_treasuries**: List treasuries/accounts
 - **list_clients**: List all clients
 - **list_expenses**: List business expenses
 - **list_invoices**: List all invoices
-- **list_payments**: List recent payments
 - **list_products**: List all products
+- **list_treasuries**: List treasuries/accounts
 
 
 ## 💬 Prompt Examples
