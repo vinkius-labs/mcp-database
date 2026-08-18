@@ -14,9 +14,9 @@ The Edge Latency Simulator provides a way to model and predict network delays in
 
 
 ## Available Tools (3)
-- **compare_origin_vs_edge_latency**: Evaluates how much latency is saved by using an Edge node compared to an Origin server for a specific group of users
 - **estimate_point_to_point_latency**: Calculates the estimated network delay between a specific client and a server node
 - **calculate_weighted_average_latency**: Determines the effective latency for a network population based on cache performance
+- **compare_origin_vs_edge_latency**: Evaluates how much latency is saved by using an Edge node compared to an Origin server for a specific group of users
 
 
 ## 💬 Prompt Examples

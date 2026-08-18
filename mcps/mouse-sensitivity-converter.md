@@ -14,9 +14,9 @@ Maintain consistent muscle memory across different gaming engines with this high
 
 
 ## Available Tools (4)
+- **convert_sensitivity**: Converts sensitivity between games
 - **calculate_cm_per_360**: Calculates cm/360 distance
 - **calculate_edpi**: Calculates eDPI
-- **convert_sensitivity**: Converts sensitivity between games
 - **calculate_fov_scaling**: Calculates FOV scaling impact
 
 

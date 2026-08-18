@@ -14,9 +14,9 @@ The Carbon Footprint Personal Calculator provides a detailed estimation of your 
 
 
 ## Available Tools (4)
+- **calculate_transport_footprint**: Calculates emissions produced by various modes of travel and vehicle use
 - **calculate_housing_footprint**: Calculates the carbon emissions resulting from residential energy consumption
 - **calculate_lifestyle_footprint**: Estimates emissions from dietary choices, shopping habits, and general services
-- **calculate_transport_footprint**: Calculates emissions produced by various modes of travel and vehicle use
 - **generate_carbon_report**: Aggregates all sector footprints into a final, actionable summary report
 
 

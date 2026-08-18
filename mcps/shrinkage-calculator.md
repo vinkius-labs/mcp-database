@@ -14,9 +14,9 @@ The Shrinkage Calculator MCP server provides specialized tools for analyzing inv
 
 
 ## Available Tools (3)
+- **get_risk_thresholds**: Retrieve shrinkage risk thresholds
 - **analyze_security_breakeven**: Analyze financial viability of security investment
 - **calculate_shrinkage_metrics**: Calculate inventory shrinkage metrics
-- **get_risk_thresholds**: Retrieve shrinkage risk thresholds
 
 
 ## 💬 Prompt Examples

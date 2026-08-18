@@ -14,9 +14,9 @@ This MCP server provides a specialized calculation engine to determine the econo
 
 
 ## Available Tools (3)
-- **predict_efficiency_drop**: Calculate predicted fuel efficiency (KPL) at a higher speed
 - **analyze_speed_tradeoff**: Compare baseline trip against an accelerated trip
 - **calculate_trip_logistics**: Compute physical and monetary requirements of a single trip
+- **predict_efficiency_drop**: Calculate predicted fuel efficiency (KPL) at a higher speed
 
 
 ## 💬 Prompt Examples

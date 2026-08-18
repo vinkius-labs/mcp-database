@@ -14,12 +14,12 @@ The Blood Alcohol Content Calculator provides precise estimations of your curren
 
 
 ## Available Tools (4)
-- **get_impairment_details**: Get impairment details for a specific BAC level
 - **get_jurisdiction_limit**: g., USA-CA, UK).
 
 Get the legal BAC limit for a specific location
 - **analyze_medication_risk**: Analyze potential risks of alcohol interaction with medications
 - **calculate_bac_metrics**: Calculate current BAC and time until sober
+- **get_impairment_details**: Get impairment details for a specific BAC level
 
 
 ## 💬 Prompt Examples

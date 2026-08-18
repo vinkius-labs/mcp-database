@@ -14,8 +14,8 @@ The Table Demographic Balancer MCP server provides an intelligent auditing engin
 
 
 ## Available Tools (2)
-- **check_table_demographics**: Analyze the demographic balance of a table
 - **evaluate_assignment_impact**: Predict the impact of adding a guest to a table
+- **check_table_demographics**: Analyze the demographic balance of a table
 
 
 ## 💬 Prompt Examples

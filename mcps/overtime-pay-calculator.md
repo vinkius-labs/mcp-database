@@ -14,12 +14,12 @@ The Overtime Pay Calculator is a specialized engine designed to handle the compl
 
 
 ## Available Tools (4)
-- **calculate_adjusted_regular_rate**: Calculates the true "Regular Rate of Pay" by incorporating non-discretionary bonuses
 - **calculate_daily_overtime**: g., CA/CO 8-hour rule) and calculates excess pay.
 
 Calculates overtime owed for daily shifts that exceed state-mandated thresholds
-- **evaluate_exemption_eligibility**: Determines if an e mployee qualifies as "Exempt" from overtime
+- **calculate_adjusted_regular_rate**: Calculates the true "Regular Rate of Pay" by incorporating non-discretionary bonuses
 - **calculate_weekly_overtime**: Determines overtime pay based on the federal 40-hour weekly threshold
+- **evaluate_exemption_eligibility**: Determines if an e mployee qualifies as "Exempt" from overtime
 
 
 ## 💬 Prompt Examples

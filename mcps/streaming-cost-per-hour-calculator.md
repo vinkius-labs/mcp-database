@@ -14,9 +14,9 @@ This MCP server provides essential tools to analyze your streaming subscriptions
 
 
 ## Available Tools (3)
-- **calculate_service_hourly_rate**: Calculate the cost per hour for a streaming service
 - **evaluate_subscription_efficiency**: Evaluate the efficiency of a service based on its cost per hour
 - **audit_streaming_portfolio**: Audit a list of streaming services
+- **calculate_service_hourly_rate**: Calculate the cost per hour for a streaming service
 
 
 ## 💬 Prompt Examples

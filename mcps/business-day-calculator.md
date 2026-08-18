@@ -14,11 +14,11 @@ The Business Day Calculator MCP connects AI agents to a high-precision utility f
 
 
 ## Available Tools (5)
-- **add_business_days**: Adds N business days to a date
 - **count_business_days**: Counts business days between two dates
+- **subtract_business_days**: Subtracts N business days from a date
+- **add_business_days**: Adds N business days to a date
 - **find_next_business_day**: Finds the next business day
 - **get_workday_range**: Generates a list of business days in a range
-- **subtract_business_days**: Subtracts N business days from a date
 
 
 ## 💬 Prompt Examples

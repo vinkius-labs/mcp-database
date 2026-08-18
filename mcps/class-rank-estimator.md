@@ -14,9 +14,9 @@ This MCP server provides statistical tools to estimate a student's percentile ra
 
 
 ## Available Tools (3)
-- **get_placement_context**: Get descriptive context for a student's percentile rank
-- **estimate_target_gpa**: Estimate the GPA required to reach a target percentile
 - **calculate_rank_from_gpa**: Calculate student percentile rank based on GPA distribution
+- **estimate_target_gpa**: Estimate the GPA required to reach a target percentile
+- **get_placement_context**: Get descriptive context for a student's percentile rank
 
 
 ## 💬 Prompt Examples

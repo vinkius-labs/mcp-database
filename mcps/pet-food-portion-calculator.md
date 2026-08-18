@@ -14,8 +14,8 @@ This MCP server provides a scientific approach to pet nutrition by calculating t
 
 
 ## Available Tools (3)
-- **calculate_food_portion**: Calculate the physical volume of food to feed
 - **verify_pet_profile**: Verify if a pet profile is biologically plausible
+- **calculate_food_portion**: Calculate the physical volume of food to feed
 - **calculate_kcal_requirement**: Calculate daily kilocalorie requirement for a pet
 
 

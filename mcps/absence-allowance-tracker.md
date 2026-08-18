@@ -14,9 +14,9 @@ The Absence Allowance Tracker is a specialized tool for educational administrato
 
 
 ## Available Tools (3)
-- **get_attendance_summary**: Get a high-level overview of current attendance standing
-- **calculate_block_schedule_impact**: Calculate metrics for A/B alternating schedules
 - **get_policy_status**: Evaluate how close a student is to violating attendance policy
+- **calculate_block_schedule_impact**: Calculate metrics for A/B alternating schedules
+- **get_attendance_summary**: Get a high-level overview of current attendance standing
 
 
 ## 💬 Prompt Examples

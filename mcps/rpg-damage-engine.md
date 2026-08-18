@@ -14,10 +14,10 @@ The RPG Damage Engine is a specialized computational tool for tabletop RPG playe
 
 
 ## Available Tools (4)
-- **analyze_damage_expression**: Analyzes the statistical properties of a damage expression
-- **evaluate_modified_damage**: Evaluates damage after applying modifiers and critical rules
 - **parse_damage_expression**: Parses a damage expression into its components
+- **analyze_damage_expression**: Analyzes the statistical properties of a damage expression
 - **calculate_encounter_probability**: Predicts the probability of defeating an enemy
+- **evaluate_modified_damage**: Evaluates damage after applying modifiers and critical rules
 
 
 ## 💬 Prompt Examples

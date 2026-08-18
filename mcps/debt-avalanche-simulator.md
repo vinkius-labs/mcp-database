@@ -14,8 +14,8 @@ The Debt Avalanche Simulator is a precision engine designed to help you visualiz
 
 
 ## Available Tools (3)
-- **run_avalanche_simulation**: Executes the full month-by-month repayment simulation using the avalanche logic
 - **verify_budget_solvency**: Checks if a proposed monthly budget can cover all existing debt minimum payments
+- **run_avalanche_simulation**: Executes the full month-by-month repayment simulation using the avalanche logic
 - **calculate_payoff_milestones**: Extracts key progress markers from a completed simulation
 
 

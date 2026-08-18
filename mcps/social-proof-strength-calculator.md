@@ -15,8 +15,8 @@ The Social Proof Strength Calculator is an analytical engine designed to quantif
 
 ## Available Tools (3)
 - **assess_credibility_markers**: Assess credibility markers in metadata context
-- **analyze_text_specificity**: Analyze text for specificity and vague terms
 - **calculate_social_proof_score**: Calculate social proof score from engagement metrics
+- **analyze_text_specificity**: Analyze text for specificity and vague terms
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ The Food Waste Reducer MCP server connects your AI agent to a powerful sustainab
 
 
 ## Available Tools (4)
-- **optimize_grocery_list**: Calculates optimal purchase quantities to avoid spoilage
-- **calculate_environmental_impact**: Calculates potential savings and methane reduction
 - **generate_meal_plan**: Creates a meal prep schedule to use ingredients before expiry
 - **identify_use_it_up_recipes**: Suggests recipes based on expiring ingredients
+- **calculate_environmental_impact**: Calculates potential savings and methane reduction
+- **optimize_grocery_list**: Calculates optimal purchase quantities to avoid spoilage
 
 
 ## 💬 Prompt Examples

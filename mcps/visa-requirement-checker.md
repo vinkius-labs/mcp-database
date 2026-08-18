@@ -14,11 +14,11 @@ The Visa Requirement Checker provides a comprehensive database for travelers. Us
 
 
 ## Available Tools (5)
-- **check_visa_requirements**: Checks visa requirements for a traveler
 - **get_passport_power_info**: Gets passport power information
+- **check_entry_health_rules**: Checks entry health rules
+- **check_visa_requirements**: Checks visa requirements for a traveler
 - **get_passport_validity_rule**: Gets the passport validity rule for a country
 - **get_travel_advisory**: Gets the travel advisory for a country
-- **check_entry_health_rules**: Checks entry health rules
 
 
 ## 💬 Prompt Examples

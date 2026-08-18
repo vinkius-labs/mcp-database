@@ -14,8 +14,8 @@ The Twitter Virality and QT Bait Scorer uses deterministic language markers to i
 
 
 ## Available Tools (2)
-- **analyze_qt_bait**: Analyze a tweet for QT bait potential
 - **analyze_virality**: Analyze a tweet for virality potential
+- **analyze_qt_bait**: Analyze a tweet for QT bait potential
 
 
 ## 💬 Prompt Examples

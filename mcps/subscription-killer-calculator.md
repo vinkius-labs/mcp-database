@@ -14,8 +14,8 @@ The Subscription Killer Calculator is a specialized financial intelligence tool 
 
 
 ## Available Tools (5)
-- **analyze_subscription_utility**: Identify underutilized subscriptions
 - **calculate_annualized_expenditure**: Calculate the total annualized cost of all subscriptions
+- **analyze_subscription_utility**: Identify underutilized subscriptions
 - **calculate_freedom．freedom_number**: Calculate the subscription freedom number
 - **model_savings_optimization**: Predict financial gains from subscription changes
 - **track_trial_deadlines**: Calculate trial cancellation deadlines
