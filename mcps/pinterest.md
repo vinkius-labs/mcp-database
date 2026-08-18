@@ -40,14 +40,14 @@ No more manual scrolling to check pin counts or engagement. Your AI acts as a de
 - **create_new_pin**: Required media_source must be provided as JSON.
 
 Post new pin
-- **remove_pin**: Delete a pin
 - **get_account_performance**: Check account stats
 - **get_board_info**: Get board metadata
-- **get_profile_info**: Get account info
-- **get_pin_performance**: Check pin stats
 - **get_pin_details**: Get pin info
-- **list_top_performing_pins**: List best pins
+- **get_pin_performance**: Check pin stats
+- **get_profile_info**: Get account info
 - **list_pins_on_board**: List board pins
+- **list_top_performing_pins**: List best pins
+- **remove_pin**: Delete a pin
 - **create_board**: Add new board
 - **list_boards**: List user boards
 

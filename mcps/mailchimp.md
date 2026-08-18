@@ -31,27 +31,27 @@ Equip any AI agent with robust Mailchimp marketing capabilities. Integrate your 
 
 
 ## Available Tools (14)
+- **list_audiences**: List all Mailchimp audiences (lists). Returns audience IDs, names, member counts, and stats
+- **list_automations**: List all automation workflows in the account
+- **get_campaign**: Get full details of a Mailchimp campaign
+- **get_report**: Get Mailchimp campaign performance report
 - **add_member**: Pass status (subscribed, unsubscribed, cleaned, pending, transactional).
 
 Add a new contact to a Mailchimp audience
-- **list_audiences**: List all Mailchimp audiences (lists). Returns audience IDs, names, member counts, and stats
-- **list_automations**: List all automation workflows in the account
-- **list_campaigns**: Can be used to find a campaign ID.
-
-List Mailchimp campaigns. Returns campaign IDs, types, subjects, send times, and open/click stats
+- **create_campaign**: Create a new Mailchimp campaign. Returns campaign ID
 - **delete_member**: Requires the list_id and the subscriber MD5 hash (lowercase MD5 of the email).
 
 Archive/remove a subscriber from an audience
 - **get_audience**: Only use this when you need detailed statistics or configuration.
 
 Get details of a Mailchimp audience. Returns name, member count, open/click rates, and merge fields configuration
-- **get_campaign**: Get full details of a Mailchimp campaign
+- **list_campaigns**: Can be used to find a campaign ID.
+
+List Mailchimp campaigns. Returns campaign IDs, types, subjects, send times, and open/click stats
 - **list_members**: Requires an audience ID.
 
 List members (contacts) in a Mailchimp audience. Returns email addresses, status, and tags
 - **list_segments**: List saved segments for an audience
-- **create_campaign**: Create a new Mailchimp campaign. Returns campaign ID
-- **get_report**: Get Mailchimp campaign performance report
 - **search_members**: Search Mailchimp contacts across all audiences by name or email
 - **send_campaign**: This action is irreversible. Triggers live email send.
 

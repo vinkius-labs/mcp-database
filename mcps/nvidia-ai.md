@@ -34,6 +34,7 @@ Connect **NVIDIA AI** to any AI agent and harness the power of GPU-accelerated f
 
 
 ## Available Tools (9)
+- **analyze_sentiment**: Analyze the sentiment of a text
 - **ask_question**: Optionally provide context for better answers.
 
 Ask a question to a powerful reasoning model (405B params)
@@ -47,9 +48,8 @@ Generate code from a natural language prompt
 
 Generate vector embeddings from text
 - **list_models**: List all available AI models on the NVIDIA API Catalog
-- **text_to_sql**: Convert natural language to SQL query
-- **analyze_sentiment**: Analyze the sentiment of a text
 - **summarize_text**: Summarize long text into a concise version
+- **text_to_sql**: Convert natural language to SQL query
 - **translate_text**: Translate text to another language
 
 

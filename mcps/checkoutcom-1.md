@@ -34,16 +34,7 @@ Connect your **Checkout.com** account to any AI agent and take full control of y
 
 
 ## Available Tools (10)
-- **request_payment**: Identify bounded CRM records inside the Headless Checkout.com Gateway
 - **update_instrument**: Retrieve explicit Cloud logging tracing explicit Vault limits
-- **void_payment**: /voids` dropping limits before a capture closes cutting out heavy gateway fees.
-
-Inspect deep internal arrays mitigating specific Plan Math
-- **get_payment_actions**: Enumerate explicitly attached structured rules exporting Gateway state
-- **get_instrument**: Identify precise active arrays spanning native Vault logic
-- **refund_payment**: /refunds` moving hard cash back exactly to the originating Visa/MC network.
-
-Dispatch an automated validation check routing explicit Clawback logic
 - **capture_payment**: /captures` locking an authorized transaction converting it to native settled limits.
 
 Retrieve the exact structural matching verifying Capture processing
@@ -52,6 +43,15 @@ Retrieve the exact structural matching verifying Capture processing
 - **get_payment_details**: com nodes.
 
 Perform structural extraction of properties driving active Billing logic
+- **get_instrument**: Identify precise active arrays spanning native Vault logic
+- **get_payment_actions**: Enumerate explicitly attached structured rules exporting Gateway state
+- **refund_payment**: /refunds` moving hard cash back exactly to the originating Visa/MC network.
+
+Dispatch an automated validation check routing explicit Clawback logic
+- **request_payment**: Identify bounded CRM records inside the Headless Checkout.com Gateway
+- **void_payment**: /voids` dropping limits before a capture closes cutting out heavy gateway fees.
+
+Inspect deep internal arrays mitigating specific Plan Math
 
 
 ## 💬 Prompt Examples

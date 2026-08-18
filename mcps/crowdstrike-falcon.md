@@ -30,28 +30,28 @@ Connect your **CrowdStrike Falcon** tenant to any AI agent and operate security 
 
 
 ## Available Tools (8)
-- **list_detections**: Use FQL filter syntax for precision: severity, technique, hostname, etc. Returns detection details with MITRE ATT&CK mapping.
-
-Query detection alerts
-- **update_detection**: Optionally add a triage comment.
-
-Update detection status
-- **search_hosts**: Returns full device inventory details.
-
-Search endpoints
-- **list_incidents**: Filter by state, severity, assigned_to, or date range using FQL syntax.
-
-Query security incidents
-- **list_iocs**: Includes type, value, action, and metadata.
-
-List custom IOCs
 - **create_ioc**: Types: sha256, md5, domain, ipv4, ipv6. 
 
 Create a custom IOC indicator.. Actions: default
+- **list_detections**: Use FQL filter syntax for precision: severity, technique, hostname, etc. Returns detection details with MITRE ATT&CK mapping.
+
+Query detection alerts
+- **list_incidents**: Filter by state, severity, assigned_to, or date range using FQL syntax.
+
+Query security incidents
 - **list_vulnerabilities**: Filter by CVE, severity, host, or remediation status.
 
 Query Spotlight vulnerabilities
+- **search_hosts**: Returns full device inventory details.
+
+Search endpoints
+- **update_detection**: Optionally add a triage comment.
+
+Update detection status
 - **contain_device**: Contain or lift containment on a device.. Actions: default
+- **list_iocs**: Includes type, value, action, and metadata.
+
+List custom IOCs
 
 
 ## 💬 Prompt Examples

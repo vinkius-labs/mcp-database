@@ -35,9 +35,6 @@ Connect your **Adyen** account to your AI agent to unlock enterprise-grade payme
 
 
 ## Available Tools (4)
-- **refund_payment**: Always double-check the amount before processing. Requires original PSP reference.
-
-Initiate a full or partial refund for a previously captured payment in Adyen
 - **get_payment_details**: Requires the 16-digit PSP reference.
 
 Retrieve the full technical authorization and capture metadata for a specific Adyen payment
@@ -45,6 +42,9 @@ Retrieve the full technical authorization and capture metadata for a specific Ad
 
 Retrieve all active merchant accounts associated with your Adyen company profile
 - **get_merchant_details**: Retrieve the technical configuration and status for a specific Adyen merchant account
+- **refund_payment**: Always double-check the amount before processing. Requires original PSP reference.
+
+Initiate a full or partial refund for a previously captured payment in Adyen
 
 
 ## 💬 Prompt Examples

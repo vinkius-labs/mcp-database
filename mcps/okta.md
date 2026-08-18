@@ -49,12 +49,12 @@ View detailed SSO configuration for a specific application
 - **list_groups**: Group policies explicitly determine which users can authenticate into which bound SAML apps, making this endpoint critical for auditing permissions.
 
 List all security, app, and dynamic Okta Groups
-- **list_users**: Used for organization-wide identity reporting.
-
-List all users configured in the Okta Universal Directory
 - **list_system_logs**: Contains every discrete sign-in attempt, MFA challenge result, configuration tweak, and malicious password spraying anomaly. Max 100 recent entries.
 
 Retrieve Recent Okta System and Audit log events
+- **list_users**: Used for organization-wide identity reporting.
+
+List all users configured in the Okta Universal Directory
 - **list_apps**: Identifies available sign-on integrations spanning raw OIDC, classical SAML 2.0, SCIM provisioning connections, and SWA (Secure Web Authentication) apps.
 
 List all applications integrated within the Okta dashboard

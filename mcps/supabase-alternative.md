@@ -36,12 +36,6 @@ No more clicking through the Supabase dashboard to check project status or manag
 
 
 ## Available Tools (14)
-- **create_branch**: The branch gets an isolated copy of the database that can be modified independently. Returns the created branch with its name and status.
-
-Create a new branch for a Supabase project
-- **create_project**: Requires the project name, organization ID and optionally the region (e.g. "us-east-1", "eu-west-2") and database password. The project will be provisioned with Postgres, Auth, Storage and API services. Returns the created project with its ref.
-
-Create a new Supabase project
 - **create_secret**: Requires the secret name and value. Optionally set the branch slug (defaults to main). The secret value is encrypted at rest. Returns confirmation of creation.
 
 Create a secret for a Supabase project
@@ -52,9 +46,6 @@ Delete a secret from a Supabase project
 
 Get the authenticated Supabase user
 - **get_postgres_config**: Get PostgreSQL configuration for a Supabase project
-- **get_project**: Provide the project ref (e.g. "abcxyz123456").
-
-Get details for a specific Supabase project
 - **list_branches**: Branches are isolated copies of the project database used for preview environments and development. Returns branch name, status, creation date and parent branch info.
 
 List branches for a Supabase project
@@ -70,12 +61,21 @@ List environment secrets for a Supabase project
 - **pause_project**: The project's database and data are preserved. Provide the project ref. The project can be restored later using restore_project.
 
 Pause a Supabase project
-- **restore_project**: The project's data is fully intact. Provide the project ref.
-
-Restore a paused Supabase project
 - **update_postgres_config**: Provide the project ref and a JSON object with the settings to change (e.g. {"max_connections":200,"work_mem":"16MB"}). Changes may require a database restart.
 
 Update PostgreSQL configuration for a Supabase project
+- **create_branch**: The branch gets an isolated copy of the database that can be modified independently. Returns the created branch with its name and status.
+
+Create a new branch for a Supabase project
+- **create_project**: Requires the project name, organization ID and optionally the region (e.g. "us-east-1", "eu-west-2") and database password. The project will be provisioned with Postgres, Auth, Storage and API services. Returns the created project with its ref.
+
+Create a new Supabase project
+- **get_project**: Provide the project ref (e.g. "abcxyz123456").
+
+Get details for a specific Supabase project
+- **restore_project**: The project's data is fully intact. Provide the project ref.
+
+Restore a paused Supabase project
 
 
 ## 💬 Prompt Examples

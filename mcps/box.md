@@ -39,31 +39,31 @@ No more manual searching through browser tabs to find specific documents or chec
 - **create_collaboration**: Requires the folder ID, the user's email (login), and an assigned role (e.g., "editor", "viewer", "previewer").
 
 Share a folder with a collaborator
-- **create_folder**: Use parent ID "0" for the root folder.
-
-Create a new folder in Box
 - **delete_folder**: If the folder is not empty, you must set the recursive flag to true to delete all its contents.
 
 Delete a folder from Box
 - **get_file_info**: Includes size, SHA1 hash, version information, and parent folder details.
 
 Get details and metadata for a file
-- **search_content**: Useful for discovering items when the IDs are unknown.
-
-Search for files and folders
 - **update_file**: Can be used to rename the file or update its description.
 
 Update file attributes and metadata
+- **delete_file**: Delete a file from Box
 - **get_current_user**: Use this to verify the current identity.
 
 Retrieve current Box user details
-- **delete_file**: Delete a file from Box
-- **get_folder_info**: Includes information about the parent folder, creator, and modified dates.
-
-Get details and metadata for a folder
 - **list_folder_items**: Note: Use ID "0" for the root folder.
 
 List all items within a folder
+- **create_folder**: Use parent ID "0" for the root folder.
+
+Create a new folder in Box
+- **get_folder_info**: Includes information about the parent folder, creator, and modified dates.
+
+Get details and metadata for a folder
+- **search_content**: Useful for discovering items when the IDs are unknown.
+
+Search for files and folders
 
 
 ## 💬 Prompt Examples

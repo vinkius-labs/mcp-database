@@ -39,12 +39,12 @@ No more manual typing into phone apps. Your AI agent becomes your WhatsApp commu
 
 
 ## Available Tools (9)
-- **mark_as_read**: Provide the raw wamid message ID.
-
-Mark a WhatsApp message as read
 - **send_quick_reply_buttons**: Provide the explanation text and a comma-separated list of button labels (max 3).
 
 Sends up to 3 quick-reply buttons with a message block
+- **mark_as_read**: Provide the raw wamid message ID.
+
+Mark a WhatsApp message as read
 - **send_template_message**: Requires the exact template name and language code.
 
 Sends a Meta-approved Template message to initiate or resume a conversation

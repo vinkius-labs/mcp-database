@@ -35,24 +35,24 @@ Unlock the full potential of your connected workspace by linking **Notion** to y
 
 
 ## Available Tools (14)
-- **append_block_children**: ) to the end of a page or nested block. Provide blocks as a JSON array of Notion block objects. Example for a paragraph: [{"type":"paragraph","paragraph":{"rich_text":[{"type":"text","text":{"content":"Hello world"}}]}}]
-
-Append content blocks to a Notion page or block
 - **get_blocks**: Read hierarchical textual content under a Page
-- **create_page**: Insert a new row/page inside a Database
 - **delete_block**: ) from a page. This action is irreversible — the block and all nested children are permanently deleted.
 
 Permanently delete a Notion block
 - **get_database**: ) defining rows within a Database.
 
 Retrieve the schema definition of a Database
-- **get_page**: Does NOT fetch body text.
-
-Retrieve metadata properties for a single Notion Page
 - **update_page_properties**: ) using the Notion properties schema. Provide the properties as a JSON object matching the Notion API property format.
 
 Update arbitrary properties on a Notion page
 - **update_page_title**: Update the title of a Notion Page
+- **append_block_children**: ) to the end of a page or nested block. Provide blocks as a JSON array of Notion block objects. Example for a paragraph: [{"type":"paragraph","paragraph":{"rich_text":[{"type":"text","text":{"content":"Hello world"}}]}}]
+
+Append content blocks to a Notion page or block
+- **create_page**: Insert a new row/page inside a Database
+- **get_page**: Does NOT fetch body text.
+
+Retrieve metadata properties for a single Notion Page
 - **create_database**: Properties define columns. Minimum: provide a title property with type "title".
 
 Create a new Notion database inside a page

@@ -35,8 +35,8 @@ Connect your **Bing Search API** account to any AI agent and integrate comprehen
 
 
 ## Available Tools (8)
-- **get_trending_images**: Retrieve currently trending images
 - **get_trending_news**: Retrieve currently trending news topics
+- **get_trending_images**: Retrieve currently trending images
 - **search_images**: Search for images using Bing
 - **search_videos**: Search for videos using Bing
 - **search_local**: Search for local businesses or places

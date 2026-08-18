@@ -25,10 +25,10 @@ Connect the **OpenAI** API to any AI agent and unlock the full power of GPT mode
 
 
 ## Available Tools (10)
+- **list_models**: List available OpenAI models
 - **structured_output**: Provide a system prompt and user message.
 
 Generate structured JSON output from a prompt
-- **list_models**: List available OpenAI models
 - **create_embedding**: Create text embeddings
 - **create_fine_tune**: Requires a previously uploaded JSONL training file ID.
 
@@ -40,9 +40,9 @@ Generate a chat completion using OpenAI models
 - **generate_image**: Returns the image URL.
 
 Generate an image with DALL-E 3
+- **list_assistants**: List OpenAI Assistants
 - **list_files**: List uploaded files
 - **moderate_content**: Check content for policy violations
-- **list_assistants**: List OpenAI Assistants
 
 
 ## 💬 Prompt Examples

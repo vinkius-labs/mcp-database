@@ -36,21 +36,9 @@ Essential for **e-commerce businesses**, **warehouse managers**, **shipping coor
 
 
 ## Available Tools (9)
-- **check_service_availability**: Includes service names, transit times, and availability status. Use this to verify if Express, Ground, or Freight services operate between specific postal codes before quoting or booking shipments.
-
-Check if FedEx shipping services are available between two locations
-- **create_shipment**: Requires shipper/recipient details, package weight/dimensions, and service type. Returns tracking number, label format, and estimated delivery date. Use this to generate labels for outbound shipments or process returns.
-
-Create a FedEx shipment and generate a shipping label
-- **get_postal_code**: Use this to verify postal codes before shipping or to resolve ambiguous addresses.
-
-Validate a postal/ZIP code and get location details
 - **get_proof_of_delivery**: Returns POD image URL, delivery date, recipient name, and signature status. Use this to confirm successful delivery for billing disputes, insurance claims, or customer inquiries.
 
 Get proof of delivery (POD) document for a delivered FedEx package
-- **get_rates**: Requires origin/destination postal codes, package weight, and dimensions. Returns service type, rate, currency, and estimated delivery date. Use this to compare shipping costs or choose the most economical service.
-
-Get shipping rates and transit times for FedEx services
 - **validate_address**: Returns standardized format, validation status, and suggestions if the address is incorrect. Requires street lines, city, state, and postal code. Use this to prevent delivery failures, correct typos in addresses, or verify international addresses before shipping.
 
 Validate and standardize a shipping address with FedEx
@@ -63,6 +51,18 @@ Track multiple FedEx packages in a single request
 - **track_package**: Requires the 12-15 digit tracking number. Use this to monitor shipment progress, verify delivery, or investigate delays.
 
 Track a single FedEx package by tracking number
+- **check_service_availability**: Includes service names, transit times, and availability status. Use this to verify if Express, Ground, or Freight services operate between specific postal codes before quoting or booking shipments.
+
+Check if FedEx shipping services are available between two locations
+- **create_shipment**: Requires shipper/recipient details, package weight/dimensions, and service type. Returns tracking number, label format, and estimated delivery date. Use this to generate labels for outbound shipments or process returns.
+
+Create a FedEx shipment and generate a shipping label
+- **get_postal_code**: Use this to verify postal codes before shipping or to resolve ambiguous addresses.
+
+Validate a postal/ZIP code and get location details
+- **get_rates**: Requires origin/destination postal codes, package weight, and dimensions. Returns service type, rate, currency, and estimated delivery date. Use this to compare shipping costs or choose the most economical service.
+
+Get shipping rates and transit times for FedEx services
 
 
 ## 💬 Prompt Examples

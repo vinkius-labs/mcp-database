@@ -35,9 +35,9 @@ This MCP instance is strictly hardcoded to **Read-Only**. While it can inspect m
 - **create_link_token**: Required to connect bank accounts.
 
 Create a Plaid Link token for account connection
+- **get_balances**: Get real-time account balances
 - **exchange_public_token**: Exchange a public token for an access token
 - **get_accounts**: List connected bank accounts
-- **get_balances**: Get real-time account balances
 - **get_categories**: List transaction categories
 - **get_identity**: Get account holder identity
 - **get_institution**: Get bank institution details
