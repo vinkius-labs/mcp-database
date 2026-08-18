@@ -37,18 +37,18 @@ Connect your **ElevenLabs** account to any AI agent and take full control of you
 
 
 ## Available Tools (10)
-- **get_voice**: Get voice details
-- **list_voices**: List all available voices
+- **get_subscription**: Get subscription details
+- **get_user_info**: Get user profile info
+- **list_history**: List generation history
+- **list_models**: List AI speech models
 - **list_pronunciation_dictionaries**: List pronunciation dictionaries
 - **text_to_speech**: Returns audio metadata. Supports 29+ languages.
 
 Convert text to speech audio
-- **list_models**: List AI speech models
-- **list_history**: List generation history
 - **get_history_item**: Get history item details
-- **get_user_info**: Get user profile info
-- **get_subscription**: Get subscription details
+- **get_voice**: Get voice details
 - **list_projects**: List dubbing/voice projects
+- **list_voices**: List all available voices
 
 
 ## 💬 Prompt Examples

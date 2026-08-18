@@ -21,21 +21,21 @@ Track EU trade flows and industrial activity across all 27 member states.
 
 
 ## Available Tools (5)
-- **get_trade_balance**: Dataset: ext_lt_maineu. Key partners: US, CN, UK, JP, CH.
-
-Get EU international trade balance by partner country
-- **get_trade_by_product**: Dataset: ext_st_eu27_2020sitc. Covers food, raw materials, fuels, chemicals, machinery, manufactured goods.
-
-Get EU trade by product classification (SITC)
-- **get_industrial_production**: Base year 2015=100. Breakdown by NACE sector. A leading indicator of economic activity.
-
-Get EU industrial production index by country and sector
 - **get_retail_trade**: Consumer spending proxy. Covers food, non-food, and online retail.
 
 Get EU retail trade volume index
+- **get_trade_by_product**: Dataset: ext_st_eu27_2020sitc. Covers food, raw materials, fuels, chemicals, machinery, manufactured goods.
+
+Get EU trade by product classification (SITC)
 - **get_trade_dataset**: Common codes: ext_tec01, sts_inpr_m, sts_trtu_m, sbs_na_ind_r2.
 
 Query any Eurostat trade/industry dataset by code
+- **get_industrial_production**: Base year 2015=100. Breakdown by NACE sector. A leading indicator of economic activity.
+
+Get EU industrial production index by country and sector
+- **get_trade_balance**: Dataset: ext_lt_maineu. Key partners: US, CN, UK, JP, CH.
+
+Get EU international trade balance by partner country
 
 
 ## 💬 Prompt Examples

@@ -42,9 +42,9 @@ Empower your AI agent to orchestrate your entire e-commerce ecosystem with **Woo
 - **list_coupons**: List all coupons
 - **list_customers**: List WooCommerce customers
 - **list_orders**: List WooCommerce orders
+- **list_reports**: List WooCommerce reports
 - **list_categories**: List product categories
 - **list_products**: List WooCommerce products
-- **list_reports**: List WooCommerce reports
 
 
 ## 💬 Prompt Examples

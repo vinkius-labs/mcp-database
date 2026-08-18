@@ -36,9 +36,9 @@ Empower your AI agent to orchestrate your entire web research workflow with **Ta
 
 ## Available Tools (6)
 - **extract_content**: Extract clean content from specific URLs
+- **search_images**: Search for images optimized for AI
 - **get_answer**: Get a direct AI answer for a search query
 - **get_search_context**: Get search context for a query (optimized for LLMs)
-- **search_images**: Search for images optimized for AI
 - **search_news**: Search for real-time news results
 - **search_web**: Search the web for AI-optimized results
 

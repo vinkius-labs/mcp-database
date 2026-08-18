@@ -36,34 +36,34 @@ Connect your **Datadog** security module to any AI agent and take full control o
 
 
 ## Available Tools (10)
+- **get_detection_rule**: g. > 5 occurrences in 5 mins), severity bindings, tagging matrices, and Notification routing hooks tying into PagerDuty or Slack.
+
+Retrieve the exact logic/queries for a specific Detection Rule
+- **list_detection_rules**: Verifies the existence of proactive detections identifying AWS CloudTrail deviations, GCP anomalous IAM usage, and Kubernetes root escalations.
+
+List configured Datadog Security Detection Rules
+- **list_security_filters**: These filters inherently block high-volume, low-value logging vectors from ever reaching the SIEM evaluation engine in order to preserve compute budgets.
+
+List Security Filter configurations
+- **security_system_ping**: Test API authentication validity against the Security Module
 - **create_detection_rule**: Accepts raw name/message fields, specific Lucene query bindings filtering for malicious activity, and severity levels (info, low, medium, high, critical). Auto-activates upon creation.
 
 Construct a new Cloud SIEM Log Detection Rule
-- **security_system_ping**: Test API authentication validity against the Security Module
 - **delete_detection_rule**: Irreversible action. Pre-packaged rules provided by Datadog typically cannot be outright deleted (only disabled), making this primarily for user-created custom JSON rules.
 
 Permanently delete a Datadog Security Detection Rule
 - **get_raw_log_context**: Use this immediately after verifying an attacker footprint.
 
 Additional threat hunt tool extracting exact log bounds (100 msgs)
-- **get_detection_rule**: g. > 5 occurrences in 5 mins), severity bindings, tagging matrices, and Notification routing hooks tying into PagerDuty or Slack.
+- **triage_signal**: Transition signals directly from "open" to "archived", or from "archived" back to "open". If archiving, an official reason (e.g. "false_positive" or "testing_or_maintenance") must be assigned.
 
-Retrieve the exact logic/queries for a specific Detection Rule
-- **list_security_filters**: These filters inherently block high-volume, low-value logging vectors from ever reaching the SIEM evaluation engine in order to preserve compute budgets.
-
-List Security Filter configurations
-- **list_detection_rules**: Verifies the existence of proactive detections identifying AWS CloudTrail deviations, GCP anomalous IAM usage, and Kubernetes root escalations.
-
-List configured Datadog Security Detection Rules
+Modify the state of a Datadog SIEM Security Signal
 - **search_raw_logs**: Essential for rapid Threat Hunting before detection rules alert. Useful for extracting contextual VPC Flow Logs or application stack traces related to an active breach.
 
 Directly query raw Datadog Logs over the past 15/m for Threat Hunting
 - **search_signals**: Use lucene-based queries like "status:critical OR @usr.id:admin" to filter high severity indicators mapping to MITRE ATT&CK vectors.
 
 Search Cloud SIEM Security Signals (Alerts) over the last 24h
-- **triage_signal**: Transition signals directly from "open" to "archived", or from "archived" back to "open". If archiving, an official reason (e.g. "false_positive" or "testing_or_maintenance") must be assigned.
-
-Modify the state of a Datadog SIEM Security Signal
 
 
 ## 💬 Prompt Examples

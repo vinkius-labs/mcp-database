@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your video-on-demand infrastructure and dig
 
 
 ## Available Tools (8)
-- **get_task_detail**: Track VOD task
-- **search_media_files**: Search VOD library
 - **delete_media_file**: Remove media from VOD
-- **get_media_info**: Get video metadata
 - **get_storage_stats**: Get storage usage data
+- **update_media_info**: Modify media properties
+- **get_media_info**: Get video metadata
+- **get_task_detail**: Track VOD task
 - **list_media_classes**: List all media classes
 - **list_recent_media**: List recently updated media
-- **update_media_info**: Modify media properties
+- **search_media_files**: Search VOD library
 
 
 ## 💬 Prompt Examples

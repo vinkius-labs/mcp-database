@@ -41,15 +41,15 @@ Buscar inmuebles por coordenadas GPS y radio
 - **pisos_venta**: Utilízalo para encontrar propiedades en venta disponibles para compra.
 
 Buscar pisos en venta por zona
-- **pisos_alquiler**: Muestra resultados actualizados de mercado.
-
-Buscar pisos en alquiler
-- **obra_nueva**: Ayuda al usuario a descubrir proyectos residenciales en construcción o recién terminados.
-
-Buscar promociones de obra nueva
 - **locales_comerciales**: Por defecto busca en alquiler si no se especifica.
 
 Buscar locales comerciales
+- **obra_nueva**: Ayuda al usuario a descubrir proyectos residenciales en construcción o recién terminados.
+
+Buscar promociones de obra nueva
+- **pisos_alquiler**: Muestra resultados actualizados de mercado.
+
+Buscar pisos en alquiler
 
 
 ## 💬 Prompt Examples

@@ -38,20 +38,20 @@ The NYTimes API is free for development use, providing a generous limit of reque
 - **get_book_lists**: "list_name_encoded" is the list slug (e.g., "hardcover-fiction"). Optional date is YYYY-MM-DD.
 
 Get current or historical best-seller lists
-- **get_most_shared**: Period can be 1, 7, or 30 days.
-
-Get the most shared articles on social media
 - **get_most_viewed**: Get the most viewed articles
-- **get_movie_reviews**: Optional "query" filters by movie title.
-
-Search for movie reviews in the NYTimes archive
-- **search_articles**: Use "q" for keywords, "begin_date" and "end_date" for date ranges (YYYYMMDD), and "sort" for "newest", "oldest", or "relevance".
-
-Search for articles using keywords, date ranges, and sorting
-- **get_sections**: List all available news sections
 - **get_top_stories**: g., home, world, politics, technology, sports). Use get_sections to see available options.
 
 Get top stories for a specific section
+- **get_most_shared**: Period can be 1, 7, or 30 days.
+
+Get the most shared articles on social media
+- **get_movie_reviews**: Optional "query" filters by movie title.
+
+Search for movie reviews in the NYTimes archive
+- **get_sections**: List all available news sections
+- **search_articles**: Use "q" for keywords, "begin_date" and "end_date" for date ranges (YYYYMMDD), and "sort" for "newest", "oldest", or "relevance".
+
+Search for articles using keywords, date ranges, and sorting
 - **get_most_emailed**: Period can be 1, 7, or 30 days.
 
 Get the most emailed articles for a specific period

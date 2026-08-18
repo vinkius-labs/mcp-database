@@ -36,11 +36,11 @@ Connect your AI agents to **TOTVS**, the largest technology company in Brazil an
 
 
 ## Available Tools (11)
-- **get_employee_details**: Get detailed information for a specific employee
 - **list_payments**: List accounts payable (Finance)
+- **move_process_request**: Advance a Fluig process request to the next state
+- **get_employee_details**: Get detailed information for a specific employee
 - **list_processes**: List all BPM processes in Fluig
 - **list_receipts**: List accounts receivable (Finance)
-- **move_process_request**: Advance a Fluig process request to the next state
 
 
 ## 💬 Prompt Examples

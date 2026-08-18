@@ -34,11 +34,11 @@ Connect your AI agent to the world's largest travel platform. The TripAdvisor Co
 
 
 ## Available Tools (5)
-- **get_location_details**: Get comprehensive details for a specific location using its ID
 - **get_location_photos**: Retrieve professional and user photos for a specific location
 - **get_location_reviews**: Retrieve the latest user reviews for a specific location
-- **search_location**: Search for hotels, restaurants, and attractions by name or address
 - **get_nearby_locations**: Search for locations near a specific geographic coordinate
+- **get_location_details**: Get comprehensive details for a specific location using its ID
+- **search_location**: Search for hotels, restaurants, and attractions by name or address
 
 
 ## 💬 Prompt Examples

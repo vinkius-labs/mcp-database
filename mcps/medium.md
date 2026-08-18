@@ -28,15 +28,15 @@ Connect your **Medium** account to any AI agent and automate your publishing wor
 
 ## Available Tools (10)
 - **create_public_post**: Create a public post
+- **create_post**: Create a new post for a user
+- **list_my_publications**: List your own publications
 - **list_publications**: List publications for a user
 - **create_draft**: Create a new draft
-- **create_post**: Create a new post for a user
 - **create_publication_post**: Create a post under a publication
 - **get_authenticated_user**: Get details for the authenticated user
-- **get_my_user_id**: Get your User ID
 - **get_my_profile**: Get your own profile
+- **get_my_user_id**: Get your User ID
 - **list_contributors**: List contributors for a publication
-- **list_my_publications**: List your own publications
 
 
 ## 💬 Prompt Examples

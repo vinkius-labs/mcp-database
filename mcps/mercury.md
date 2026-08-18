@@ -34,14 +34,14 @@ Connect your **Mercury** banking account to any AI agent and manage startup fina
 
 
 ## Available Tools (8)
+- **list_cards**: List Mercury debit cards
 - **list_recipients**: List payment recipients
 - **get_balance**: Get account balance
 - **list_accounts**: List Mercury bank accounts
-- **list_cards**: List Mercury debit cards
 - **list_customers**: List invoicing customers
 - **list_invoices**: List account receivable invoices
-- **get_account**: Get details for a specific Mercury account
 - **list_transactions**: List transactions for an account
+- **get_account**: Get details for a specific Mercury account
 
 
 ## 💬 Prompt Examples

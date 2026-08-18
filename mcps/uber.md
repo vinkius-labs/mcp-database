@@ -34,33 +34,33 @@ Perfect for **frequent travelers**, **executive assistants**, **travel planners*
 
 
 ## Available Tools (9)
-- **get_trip_history**: Returns trip date, start/end locations, product used, distance, and price. Use this to review past rides, calculate expenses, or find a previous trip details.
-
-Get trip history for the authenticated Uber user
-- **get_user_profile**: Use this to verify authentication and confirm which Uber account is connected.
-
-Get the authenticated Uber user profile
-- **get_time_estimate**: Use this to compare how quickly different Uber services can pick you up. Lower times mean faster pickups.
-
-Get estimated pickup time for Uber at a location
 - **add_saved_place**: Requires alias name, latitude, and longitude. Optionally include a full address string. The alias can be home, work, or any custom string. Returns the saved place details.
 
 Save a new place for the authenticated Uber user
 - **get_place_autocomplete**: Requires current user location to bias results. Returns place descriptions and structured address components. Use this to help users select valid pickup/dropoff locations before requesting rides.
 
 Autocomplete place predictions for Uber locations
-- **get_price_estimate**: Prices are in local currency. Use this to compare costs across different Uber ride types before booking.
-
-Get price estimate for an Uber ride between two locations
-- **get_products**: ) available at the specified latitude/longitude. Returns product IDs, display names, capacity, and descriptions. Use this to see which ride options are available before requesting a ride or price estimate.
-
-Get available Uber products at a location
 - **get_ride_estimate**: More specific than price estimates as it targets one product. Use this to get exact pricing before requesting a ride.
 
 Get detailed ride estimate for a specific Uber product
 - **get_saved_places**: Returns place aliases, addresses, and coordinates. Use this to quickly reference saved locations for ride requests or price estimates without typing addresses.
 
 List saved places for the authenticated Uber user
+- **get_time_estimate**: Use this to compare how quickly different Uber services can pick you up. Lower times mean faster pickups.
+
+Get estimated pickup time for Uber at a location
+- **get_trip_history**: Returns trip date, start/end locations, product used, distance, and price. Use this to review past rides, calculate expenses, or find a previous trip details.
+
+Get trip history for the authenticated Uber user
+- **get_user_profile**: Use this to verify authentication and confirm which Uber account is connected.
+
+Get the authenticated Uber user profile
+- **get_price_estimate**: Prices are in local currency. Use this to compare costs across different Uber ride types before booking.
+
+Get price estimate for an Uber ride between two locations
+- **get_products**: ) available at the specified latitude/longitude. Returns product IDs, display names, capacity, and descriptions. Use this to see which ride options are available before requesting a ride or price estimate.
+
+Get available Uber products at a location
 
 
 ## 💬 Prompt Examples

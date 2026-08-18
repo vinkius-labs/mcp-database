@@ -33,8 +33,8 @@ Integrate the **Criteo Retail Media API** directly into your AI workflow. Manage
 
 
 ## Available Tools (10)
-- **get_retail_campaign_details**: Get detailed settings for a specific retail campaign
 - **get_retail_media_report**: Request a performance report for retail media
+- **get_retail_campaign_details**: Get detailed settings for a specific retail campaign
 - **list_advertiser_accounts**: List advertiser accounts managed in retail media
 - **list_retail_budgets**: List active budgets for retail media campaigns
 - **list_retail_campaigns**: List all retail media campaigns in Criteo
