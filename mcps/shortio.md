@@ -28,7 +28,6 @@ Connect your **Short.io** account to any AI agent and simplify your branded link
 
 
 ## Available Tools (11)
-- **delete_link**: Delete a shortened link
 - **create_bulk_links**: Create multiple shortened links at once
 - **get_domain**: Get details for a custom domain
 - **get_link_clicks**: Get click analytics for a link
@@ -36,11 +35,12 @@ Connect your **Short.io** account to any AI agent and simplify your branded link
 - **create_short_link**: Shorten a new URL
 - **get_link_details**: Get details for a specific link
 - **get_link_statistics**: Get click statistics
+- **list_short_links**: List links for a domain
+- **update_link**: Update a shortened link
+- **delete_link**: Delete a shortened link
 - **list_short_domains**: io account.
 
 List branded domains
-- **list_short_links**: List links for a domain
-- **update_link**: Update a shortened link
 
 
 ## 💬 Prompt Examples

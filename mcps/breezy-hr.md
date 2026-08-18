@@ -33,16 +33,16 @@ Connect your **Breezy HR** account to any AI agent and orchestrate your hiring a
 
 
 ## Available Tools (10)
-- **list_candidates**: List candidates for a specific position
 - **list_positions**: List all job positions
 - **list_stages**: List pipeline stages for a position
 - **list_task_templates**: List available task templates
-- **create_candidate**: Add a candidate to a position
 - **create_position**: Create a new job position
 - **get_candidate**: Get specific candidate details
 - **get_company**: Get details of the authenticated company
 - **get_position**: Get details of a specific position
+- **create_candidate**: Add a candidate to a position
 - **move_candidate**: Move a candidate to a different pipeline stage
+- **list_candidates**: List candidates for a specific position
 
 
 ## 💬 Prompt Examples

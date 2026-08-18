@@ -29,9 +29,9 @@ The **AskNicely MCP Server** provides a powerful natural language interface to y
 
 
 ## Available Tools (5)
-- **get_account_check**: Verify AskNicely account connection
 - **get_statistics**: Get aggregate NPS statistics and summary
 - **list_contacts**: List contacts in your AskNicely account
+- **get_account_check**: Verify AskNicely account connection
 - **list_responses**: List NPS survey responses from AskNicely
 - **trigger_survey**: Add a contact and trigger a survey immediately
 

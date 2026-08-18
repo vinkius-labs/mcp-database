@@ -34,12 +34,12 @@ Connect your AI agent to **Tavus**, the leading platform for automated personali
 
 
 ## Available Tools (7)
-- **generate_replica_video**: Generate a new AI video using a specific replica
 - **get_replica_details**: Get comprehensive details for a specific replica
-- **delete_replica**: Permanently delete a specific replica
 - **delete_video**: Permanently delete a specific generated video
 - **get_video_details**: Get detailed information for a specific generated video
 - **list_replicas**: Retrieve a list of all your AI video replicas
+- **delete_replica**: Permanently delete a specific replica
+- **generate_replica_video**: Generate a new AI video using a specific replica
 - **list_generated_videos**: Retrieve a list of all generated videos
 
 

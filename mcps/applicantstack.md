@@ -31,12 +31,12 @@ The **ApplicantStack MCP Server** integrates your recruiting and onboarding work
 - **get_account_check**: Verify ApplicantStack account connection
 - **get_candidate**: Get details for a specific candidate
 - **get_job**: Get details for a specific job
-- **list_candidates**: List all candidates
-- **list_hires**: List all hires (onboarding)
-- **list_jobs**: List all job listings in ApplicantStack
 - **update_candidate**: Use stage field to move them in the workflow.
 
 Update candidate information or stage
+- **list_candidates**: List all candidates
+- **list_hires**: List all hires (onboarding)
+- **list_jobs**: List all job listings in ApplicantStack
 
 
 ## 💬 Prompt Examples

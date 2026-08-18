@@ -22,13 +22,13 @@ Zero authentication required. Fully open public data maintained by the National 
 
 
 ## Available Tools (3)
-- **find_recruiting_trials**: Useful for patients and healthcare providers looking for active enrollment opportunities.
-
-Find clinical trials that are actively recruiting participants for a specific medical condition
 - **get_trial_details**: Retrieve full details of a specific clinical trial by its NCT identifier
 - **search_clinical_trials**: Can filter by recruitment status and trial phase.
 
 Search the ClinicalTrials.gov database for studies by keyword, condition, drug name, or sponsor
+- **find_recruiting_trials**: Useful for patients and healthcare providers looking for active enrollment opportunities.
+
+Find clinical trials that are actively recruiting participants for a specific medical condition
 
 
 ## 💬 Prompt Examples

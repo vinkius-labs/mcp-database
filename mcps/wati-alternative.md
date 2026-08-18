@@ -34,12 +34,7 @@ Connect your **Wati** WhatsApp Business account to any AI agent and simplify how
 
 
 ## Available Tools (13)
-- **get_template**: Get template details
 - **list_templates**: List message templates
-- **list_broadcasts**: List broadcasts
-- **list_contacts**: List contacts
-- **list_messages**: List messages
-- **list_tags**: List tags
 - **send_media_message**: Send media message
 - **send_session_message**: Send a session message
 - **send_template_message**: Send a template message
@@ -47,6 +42,11 @@ Connect your **Wati** WhatsApp Business account to any AI agent and simplify how
 - **add_contact**: Add a contact
 - **check_wati_status**: Verify connectivity
 - **get_contact**: Get contact details
+- **get_template**: Get template details
+- **list_broadcasts**: List broadcasts
+- **list_contacts**: List contacts
+- **list_messages**: List messages
+- **list_tags**: List tags
 
 
 ## 💬 Prompt Examples

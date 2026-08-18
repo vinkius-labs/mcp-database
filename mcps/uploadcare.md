@@ -37,23 +37,23 @@ Your AI agent becomes the control center for your media distribution platform.
 
 
 ## Available Tools (10)
-- **batch_delete_files**: This action is irreversible.
-
-Permanently removes multiple files in a single operation
 - **batch_store_files**: Marks multiple temporary files as permanently stored
 - **copy_file**: g. S3).
 
 Copies an existing file to local or remote storage
-- **delete_file**: This action is irreversible.
-
-Permanently removes a file and its variants from Uploadcare
 - **get_file_details**: Retrieves technical metadata for a specific Uploadcare file
 - **get_group_details**: Retrieves information about a specific file group
 - **get_project_info**: Retrieves project-level metadata and usage statistics
+- **list_file_groups**: Lists immutable file collections (groups) in the project
 - **list_files**: Supports pagination via limit.
 
 Lists files stored in your Uploadcare project
-- **list_file_groups**: Lists immutable file collections (groups) in the project
+- **batch_delete_files**: This action is irreversible.
+
+Permanently removes multiple files in a single operation
+- **delete_file**: This action is irreversible.
+
+Permanently removes a file and its variants from Uploadcare
 - **store_file**: Marks a temporary file as permanently stored
 
 

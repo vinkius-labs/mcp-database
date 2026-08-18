@@ -36,16 +36,16 @@ No more manual toggling between browser tabs to check a candidate's status or fe
 
 
 ## Available Tools (10)
-- **create_ashby_candidate**: Create candidate
 - **get_ashby_application**: Get application details
 - **get_ashby_candidate**: Get candidate details
-- **get_ashby_job**: Get job details
 - **list_ashby_applications**: List applications
 - **list_ashby_candidates**: List candidates
 - **list_ashby_feedback**: List feedback
 - **list_ashby_interviews**: List interviews
-- **list_ashby_jobs**: List jobs
 - **list_ashby_users**: List users
+- **create_ashby_candidate**: Create candidate
+- **get_ashby_job**: Get job details
+- **list_ashby_jobs**: List jobs
 
 
 ## 💬 Prompt Examples

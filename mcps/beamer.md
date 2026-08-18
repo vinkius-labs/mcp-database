@@ -37,13 +37,13 @@ Connect your **Beamer** account to any AI agent and streamline your product comm
 - **create_post**: Create a new Beamer post
 - **get_analytics**: Retrieve Beamer analytics data
 - **get_feedback_details**: Get details of specific feedback
-- **get_post**: Get details of a specific Beamer post
 - **list_feedback**: List customer feedback
 - **list_notifications**: List Beamer notifications
 - **list_posts**: List all Beamer posts
-- **list_users**: List Beamer users
 - **update_post**: Update an existing Beamer post
 - **delete_post**: Delete a Beamer post
+- **get_post**: Get details of a specific Beamer post
+- **list_users**: List Beamer users
 
 
 ## 💬 Prompt Examples

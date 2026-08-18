@@ -36,37 +36,37 @@ Connect your **Amplenote** account to any AI agent to fuse your personal knowled
 - **list_notes**: Use as the primary way to browse the entire knowledge base.
 
 List all notes in the Amplenote workspace
-- **list_tasks**: Returns task content, completion status, due dates, and parent note references. Use for task management overview.
-
-List all tasks across all notes
-- **get_task**: Use to inspect or update a single task.
-
-Retrieve a specific task by its ID
-- **update_task**: Use for task progress tracking and management.
-
-Update a task content, completion status, or other properties
-- **list_tags**: Returns tag names and usage counts. Use to discover the knowledge taxonomy.
-
-List all tags used across notes and tasks
 - **get_note_actions**: Use to discover what operations can be performed on a note.
 
 Retrieve available actions for a specific note
-- **search_notes**: Use when the user wants to find content by keyword.
+- **list_tags**: Returns tag names and usage counts. Use to discover the knowledge taxonomy.
 
-Full-text search across all Amplenote notes and tasks
+List all tags used across notes and tasks
+- **update_task**: Use for task progress tracking and management.
+
+Update a task content, completion status, or other properties
 - **create_task**: Tasks in Amplenote live inside notes and have due dates, priorities, and completion tracking. Use for adding actionable items.
 
 Create a new task
-- **get_note**: Essential for reading or analyzing a specific document.
+- **get_task**: Use to inspect or update a single task.
 
-Retrieve the full content and metadata of a specific note by UUID
+Retrieve a specific task by its ID
+- **list_tasks**: Returns task content, completion status, due dates, and parent note references. Use for task management overview.
+
+List all tasks across all notes
+- **search_notes**: Use when the user wants to find content by keyword.
+
+Full-text search across all Amplenote notes and tasks
 - **create_note**: Use for adding documentation, meeting notes, or project plans.
 
 Create a new note with a title and Markdown body content
+- **delete_note**: Permanently delete a note by UUID
+- **get_note**: Essential for reading or analyzing a specific document.
+
+Retrieve the full content and metadata of a specific note by UUID
 - **update_note**: Use for editing content, fixing errors, or appending information.
 
 Update an existing note title and/or Markdown body by UUID
-- **delete_note**: Permanently delete a note by UUID
 
 
 ## 💬 Prompt Examples

@@ -35,12 +35,12 @@ Orchestrate your affiliate marketing performance with **Awin**, the world's lead
 
 
 ## Available Tools (10)
-- **generate_tracking_link**: Generate an Awin tracking link for a destination URL
 - **get_account_check**: Verify Awin connection and list available accounts
-- **get_aggregated_report**: Get aggregated performance reports
 - **list_accounts**: List all accounts (publisher/advertiser) you have access to
 - **list_available_programmes**: Helper to list only available programmes to join
 - **list_joined_programmes**: Helper to list only joined programmes
+- **generate_tracking_link**: Generate an Awin tracking link for a destination URL
+- **get_aggregated_report**: Get aggregated performance reports
 - **list_programmes**: List joined or available advertiser programmes for a publisher
 - **list_promotions**: Retrieve details of promotions and voucher codes for a publisher
 - **list_publishers**: List all publishers with an active relationship (for advertisers)

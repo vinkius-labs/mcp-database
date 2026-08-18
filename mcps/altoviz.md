@@ -37,13 +37,13 @@ Connect your **Altoviz** account to your AI agent to unlock professional busines
 ## Available Tools (10)
 - **list_customers**: List customers
 - **get_customer_details**: Get customer metadata
-- **list_sale_invoices**: List sale invoices
-- **get_sale_invoice_details**: Get invoice metadata
-- **list_sale_quotes**: List sale quotes
-- **get_sale_quote_details**: Get quote metadata
-- **list_receipts**: List business receipts/expenses
-- **list_suppliers**: List suppliers
 - **list_products**: List catalog products
+- **list_receipts**: List business receipts/expenses
+- **list_sale_invoices**: List sale invoices
+- **list_sale_quotes**: List sale quotes
+- **list_suppliers**: List suppliers
+- **get_sale_invoice_details**: Get invoice metadata
+- **get_sale_quote_details**: Get quote metadata
 - **get_product_details**: Get product metadata
 
 
