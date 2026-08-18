@@ -14,9 +14,9 @@ This MCP server provides a suite of diagnostic tools to ensure your development 
 
 
 ## Available Tools (5)
-- **compute_environment_health**: Aggregates all validation results to provide a high-level consistency report
 - **validate_database_schema**: Confirms the database schema version matches the application's expectation
 - **validate_environment_variables**: Checks for the existence of necessary environment variable keys
+- **compute_environment_health**: Aggregates all validation results to provide a high-level consistency report
 - **validate_package_dependencies**: Verifies that specific project dependencies match the expected versions defined in the lockfile
 - **validate_runtime_environment**: g. Node.js) satisfies a given semver constraint.
 

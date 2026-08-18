@@ -14,8 +14,8 @@ This MCP server provides precise technical analysis by computing the Stochastic 
 
 
 ## Available Tools (3)
-- **calculate_stoch_rsi**: 
 - **detect_divergence_patterns**: 
+- **calculate_stoch_rsi**: 
 - **get_current_market_state**: 
 
 

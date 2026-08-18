@@ -14,9 +14,9 @@ This MCP server provides a deterministic technical analysis engine that aggregat
 
 
 ## Available Tools (3)
-- **analyze_trend_ensemble**: Executes the core logic to generate trade signals and ensemble metrics based on price data
 - **calculate_momentum_health**: Evaluates the specific momentum components to determine if a trend is accelerating or decelerating
 - **evaluate_risk_parameters**: Determines the price levels for exiting a trade based on current volatility and price action
+- **analyze_trend_ensemble**: Executes the core logic to generate trade signals and ensemble metrics based on price data
 
 
 ## 💬 Prompt Examples

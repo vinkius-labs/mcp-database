@@ -15,8 +15,8 @@ This MCP server provides deterministic tools to exploit the predictable converge
 
 ## Available Tools (3)
 - **get_market_status**: Retrieve the raw current state of the relationship between spot and futures prices
-- **analyze_convergence_opportunity**: Determine if a specific futures contract presents a valid trade signal based on basis, time to expiry, and market trends
 - **calculate_convergence_metrics**: Compute the mathematical movement required for convergence and assess speed and risk
+- **analyze_convergence_opportunity**: Determine if a specific futures contract presents a valid trade signal based on basis, time to expiry, and market trends
 
 
 ## 💬 Prompt Examples

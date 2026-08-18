@@ -14,11 +14,11 @@ This MCP server provides precise tools for working with Semantic Versioning 2.0.
 
 
 ## Available Tools (3)
+- **list_precedence_order**: Returns a sorted list of unique version strings based on SemVer precedence
+- **parse_version**: Validates a SemVer 2.0.0 string and extracts its components
 - **compare_versions**: 0.0 rules. Build metadata is ignored.
 
 Determines the precedence relationship between two SemVer versions
-- **list_precedence_order**: Returns a sorted list of unique version strings based on SemVer precedence
-- **parse_version**: Validates a SemVer 2.0.0 string and extracts its components
 
 
 ## 💬 Prompt Examples

@@ -14,6 +14,9 @@ This MCP server provides reliable mathematical tools for matrix computations. Us
 
 
 ## Available Tools (5)
+- **subtract_matrices**: Both must have the same dimensions.
+
+Calculate the difference between two matrices
 - **add_matrices**: Both must have the same dimensions.
 
 Calculate the sum of two matrices
@@ -22,9 +25,6 @@ Calculate the sum of two matrices
 - **multiply_matrices**: The number of columns in matrixA must match the number of rows in matrixB.
 
 Compute the product of two matrices
-- **subtract_matrices**: Both must have the same dimensions.
-
-Calculate the difference between two matrices
 
 
 ## 💬 Prompt Examples

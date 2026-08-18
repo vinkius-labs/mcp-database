@@ -14,8 +14,8 @@ This MCP server provides essential tools for securing the software supply chain 
 
 
 ## Available Tools (3)
-- **audit_dependencies**: 
 - **get_dependency_license**: 
+- **audit_dependencies**: 
 - **validate_license_format**: 
 
 

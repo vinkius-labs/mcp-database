@@ -15,8 +15,8 @@ This MCP server provides a security layer for LLM applications by identifying co
 
 ## Available Tools (3)
 - **get_pattern_definitions**: Retrieves the current library of regex patterns used for detection
-- **analyze_input_safety**: Evaluates a specific text input to determine if it contains malicious injection patterns
 - **batch_scan_inputs**: Performs a bulk security scan on multiple inputs simultaneously
+- **analyze_input_safety**: Evaluates a specific text input to determine if it contains malicious injection patterns
 
 
 ## 💬 Prompt Examples

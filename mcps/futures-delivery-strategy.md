@@ -15,8 +15,8 @@ This MCP server provides deterministic algorithmic tools to monitor the converge
 
 ## Available Tools (3)
 - **get_trading_signal**: Determines the specific trade direction (BUY, SELL, or HOLD) based on arbitrage and squeeze logic
-- **analyze_market_state**: Provides a daily snapshot of the relationship between futures and spot prices and the current supply conditions
 - **calculate_delivery_economics**: Computes the total costs and probability factors associated with executing a physical delivery strategy
+- **analyze_market_state**: Provides a daily snapshot of the relationship between futures and spot prices and the current supply conditions
 
 
 ## 💬 Prompt Examples

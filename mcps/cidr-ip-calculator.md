@@ -14,10 +14,10 @@ The CIDR IP Calculator is a specialized networking utility for performing precis
 
 
 ## Available Tools (2)
+- **ip_check**: Check if an IP address is within a CIDR range
 - **cidr_calculate**: psi IPv4 or IPv6).
 
 Calculate network details for a CIDR range
-- **ip_check**: Check if an IP address is within a CIDR range
 
 
 ## 💬 Prompt Examples
