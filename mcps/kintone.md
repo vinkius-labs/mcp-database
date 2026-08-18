@@ -33,17 +33,17 @@ Connect your **Kintone** instance to any AI agent and manage business applicatio
 
 
 ## Available Tools (8)
-- **add_records**: Input should be a JSON array of record objects.
-
-Add one or more records to an app
 - **delete_records**: Delete records from an app
 - **list_records**: You can provide an optional query string.
 
 List records from a Kintone app
-- **get_app_fields**: Get app field settings
-- **get_record**: Get details for a specific record
 - **get_space_details**: Get details for a space
 - **list_apps**: List all accessible Kintone apps
+- **get_app_fields**: Get app field settings
+- **add_records**: Input should be a JSON array of record objects.
+
+Add one or more records to an app
+- **get_record**: Get details for a specific record
 - **update_records**: Update one or more records
 
 

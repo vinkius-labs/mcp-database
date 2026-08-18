@@ -35,12 +35,12 @@ Connect your **MLflow** tracking server to any AI agent and take full control of
 
 
 ## Available Tools (6)
-- **get_experiment**: Get an explicit explicit MLflow Experiment by ID configuration
-- **search_runs**: Search exact Model Training Runs across specific Experiments
-- **get_run**: Get parameters and metrics mapping a specific atomic Run ID
 - **search_registered_models**: Search the MLflow Global Model Registry
+- **search_runs**: Search exact Model Training Runs across specific Experiments
 - **list_artifacts**: List static artifacts attached over a specific Run
 - **search_experiments**: Search all MLflow registered Experiments explicitly
+- **get_experiment**: Get an explicit explicit MLflow Experiment by ID configuration
+- **get_run**: Get parameters and metrics mapping a specific atomic Run ID
 
 
 ## 💬 Prompt Examples

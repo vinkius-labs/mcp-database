@@ -32,18 +32,18 @@ Connect your conversational assistant directly to **Retell AI**, a powerful plat
 
 
 ## Available Tools (10)
-- **create_agent**: Creates a new AI voice agent
-- **create_llm**: Configures a Retell-hosted LLM
 - **create_phone_call**: Provide a JSON payload with "from_number" and "to_number".
 
 Initiates an outbound phone call
-- **get_call_details**: Retrieves details for a specific call
 - **list_agents**: Lists all configured AI voice agents
-- **list_voices**: Lists all available text-to-speech voices
 - **register_web_call**: Registers a new web-based call
-- **update_agent**: Updates an existing AI voice agent
-- **list_calls**: Lists all historical and active calls
 - **list_phone_numbers**: Lists all phone numbers associated with the account
+- **list_calls**: Lists all historical and active calls
+- **create_agent**: Creates a new AI voice agent
+- **create_llm**: Configures a Retell-hosted LLM
+- **get_call_details**: Retrieves details for a specific call
+- **list_voices**: Lists all available text-to-speech voices
+- **update_agent**: Updates an existing AI voice agent
 
 
 ## 💬 Prompt Examples

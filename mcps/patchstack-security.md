@@ -37,8 +37,8 @@ Connect your AI agent to **Patchstack**, the leading security platform for WordP
 - **search_vulnerabilities**: Search the Patchstack vulnerability database
 - **get_latest_vulnerabilities**: Retrieve the latest vulnerabilities added to the database
 - **get_autoupdate_settings**: Retrieve settings for automatic updates of vulnerable components
-- **get_component_vulnerabilities**: Retrieve all known vulnerabilities for a specific component
 - **get_latest_alerts**: Retrieve the latest security alerts and triggered rules
+- **get_component_vulnerabilities**: Retrieve all known vulnerabilities for a specific component
 - **get_site_software**: Retrieve a list of all software installed on a specific site
 - **get_software_overview**: Retrieve a security overview of all software across your sites
 - **get_vulnerability_details**: Get detailed information for a specific vulnerability

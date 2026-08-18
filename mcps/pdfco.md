@@ -39,13 +39,13 @@ No more manual data entry from scanned invoices. Your AI acts as a dedicated doc
 - **check_job_status**: Check async job status
 - **pdf_to_csv**: Convert PDF tables to CSV
 - **pdf_to_json**: Convert PDF to structured JSON
-- **pdf_to_text**: Convert PDF to plain text
-- **pdf_to_xml**: Convert PDF to XML
 - **extract_pdf_meta**: Extract PDF metadata with AI
 - **get_account_info**: co account and credit balance.
 
 Get account information
 - **merge_pdfs**: Merge multiple PDFs
+- **pdf_to_text**: Convert PDF to plain text
+- **pdf_to_xml**: Convert PDF to XML
 - **ocr_image**: Perform OCR on an image
 - **protect_pdf**: Add password to PDF
 - **split_pdf**: Split a PDF

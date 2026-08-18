@@ -35,16 +35,16 @@ Connect your **Bugcrowd** account to any AI agent and orchestrate your vulnerabi
 
 
 ## Available Tools (10)
-- **create_submission**: Create a new vulnerability submission
-- **get_engagement**: Get details of a specific engagement
+- **get_target**: Get details of a specific target
+- **list_engagements**: List all crowd engagements (bounties, pen tests)
 - **get_organization_info**: Retrieve core organization information
 - **get_program**: Get details of a specific security program
 - **get_submission**: Get details of a specific submission
-- **get_target**: Get details of a specific target
-- **list_engagements**: List all crowd engagements (bounties, pen tests)
 - **list_programs**: List all security programs
 - **list_submissions**: List all vulnerability submissions
 - **list_targets**: List all assets in scope (targets)
+- **create_submission**: Create a new vulnerability submission
+- **get_engagement**: Get details of a specific engagement
 
 
 ## 💬 Prompt Examples

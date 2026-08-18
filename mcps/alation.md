@@ -36,14 +36,14 @@ Connect your **Alation** instance to your AI agent to unlock enterprise-grade da
 
 ## Available Tools (10)
 - **get_object_metadata**: Get object details
-- **list_saved_queries**: List saved SQL queries
 - **get_query_results**: Get cached query results
-- **get_lineage**: Trace data lineage
-- **search_catalog**: Search for data assets
-- **list_data_sources**: List catalog data sources
-- **list_schemas**: List schemas in data source
+- **list_saved_queries**: List saved SQL queries
 - **list_tables**: List tables in schema
+- **list_data_sources**: List catalog data sources
+- **get_lineage**: Trace data lineage
 - **list_columns**: List columns in table
+- **list_schemas**: List schemas in data source
+- **search_catalog**: Search for data assets
 - **list_custom_fields**: List governance fields
 
 

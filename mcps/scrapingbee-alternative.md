@@ -38,10 +38,10 @@ No more getting blocked by Cloudflare or struggling with complex regex. Your AI 
 ## Available Tools (7)
 - **ask_chatgpt**: Query the ChatGPT API via ScrapingBee
 - **fast_search**: Perform a fast SERP search
-- **search_google**: Scrape Google Search results
 - **scrape_html**: Supports JS rendering, proxies, and data extraction.
 
 Scrape HTML content from any web page
+- **search_google**: Scrape Google Search results
 - **search_walmart**: Scrape Walmart search results
 - **search_youtube**: Scrape YouTube search results
 - **get_amazon_product**: Scrape Amazon product details

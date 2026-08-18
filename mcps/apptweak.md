@@ -34,29 +34,29 @@ Connect your **AppTweak** account to your AI agent to unlock enterprise-grade Ap
 
 
 ## Available Tools (9)
-- **get_keyword_suggestions**: Crucial for optimizing organic search visibility on App Store and Google Play.
-
-Get ASO keyword suggestions for an app on AppTweak
-- **get_app_reviews**: Valuable for sentiment analysis, feature requests, and bug reports from actual users.
-
-Get app reviews from users via AppTweak
-- **get_review_stats**: Good for high-level app health.
-
-Get review statistics from AppTweak (rating distribution, sentiment)
-- **get_top_charts**: Get top charts for a category via AppTweak (top free/paid/grossing apps)
 - **get_download_estimates**: Essential for competitor analysis.
 
 Get estimated download numbers for an app from AppTweak
+- **get_keyword_suggestions**: Crucial for optimizing organic search visibility on App Store and Google Play.
+
+Get ASO keyword suggestions for an app on AppTweak
+- **get_review_stats**: Good for high-level app health.
+
+Get review statistics from AppTweak (rating distribution, sentiment)
 - **get_app_metadata**: Provide either the Apple App Store numeric ID or the Google Play Store package name. Identifies core app properties and performance indicators.
 
 Get complete app metadata from AppTweak including title, developer, rating, reviews, category, and version
-- **get_keyword_rankings**: Get keyword rankings for an app on AppTweak (position, volume, KEI)
-- **get_keyword_volume**: Useful to find "sweet spot" keywords with high volume and low difficulty.
+- **get_app_reviews**: Valuable for sentiment analysis, feature requests, and bug reports from actual users.
 
-Get search volume and difficulty for a specific AppTweak keyword
+Get app reviews from users via AppTweak
+- **get_top_charts**: Get top charts for a category via AppTweak (top free/paid/grossing apps)
+- **get_keyword_rankings**: Get keyword rankings for an app on AppTweak (position, volume, KEI)
 - **get_category_rankings**: Helps diagnose the impact of feature updates or acquisition campaigns.
 
 Get app category ranking history from AppTweak
+- **get_keyword_volume**: Useful to find "sweet spot" keywords with high volume and low difficulty.
+
+Get search volume and difficulty for a specific AppTweak keyword
 
 
 ## 💬 Prompt Examples

@@ -34,15 +34,15 @@ Connect your **Paylocity** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **get_employee_custom_fields**: Get custom field values for an employee
 - **get_employee_deductions**: Get deduction details for an employee
 - **get_employee_direct_deposit**: Get direct deposit setup for an employee
-- **get_employee_earnings**: Get earning details for an employee
 - **get_employee_emergency_contacts**: Get emergency contacts for an employee
-- **get_employee**: Get details for a specific employee
-- **get_employee_local_taxes**: Get local tax setup for an employee
 - **list_employees**: List all employees in the company
 - **list_onboarding_employees**: List employees currently in onboarding
+- **get_employee**: Get details for a specific employee
+- **get_employee_custom_fields**: Get custom field values for an employee
+- **get_employee_earnings**: Get earning details for an employee
+- **get_employee_local_taxes**: Get local tax setup for an employee
 - **get_employee_benefit_setup**: Get benefit configuration for an employee
 
 

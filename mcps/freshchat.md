@@ -36,18 +36,18 @@ Connect your **Freshchat** account to any AI agent to automate your customer mes
 
 
 ## Available Tools (12)
-- **check_account_status**: Verify account configuration
-- **get_agent_profile**: Get agent metadata
-- **get_conversation_details**: Get chat metadata
 - **get_chat_user_details**: Get user metadata
+- **get_conversation_details**: Get chat metadata
 - **list_chat_users**: List chat participants
 - **search_chat_users**: Find user by email
-- **send_chat_message**: Post a new message
-- **list_support_agents**: List support agents
-- **list_chat_channels**: List chat channels
 - **list_conversations**: List active chats
+- **list_support_agents**: List support agents
+- **check_account_status**: Verify account configuration
+- **get_agent_profile**: Get agent metadata
 - **list_agent_groups**: List agent groups
+- **list_chat_channels**: List chat channels
 - **list_chat_messages**: List messages in a chat
+- **send_chat_message**: Post a new message
 
 
 ## 💬 Prompt Examples

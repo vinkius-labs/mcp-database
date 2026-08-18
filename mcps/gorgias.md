@@ -35,18 +35,18 @@ Your AI agent acts as a junior support representative, capable of summarizing lo
 
 
 ## Available Tools (12)
-- **create_ticket**: Create a new ticket
-- **update_ticket**: Update an existing ticket
-- **create_customer**: Create a new customer profile
-- **create_message**: Add a message (reply or internal note) to a ticket
 - **get_customer**: Get details for a specific customer
 - **get_ticket**: Get details of a specific ticket
 - **get_user**: Get details for a specific agent/user
 - **list_customers**: List or search customers
 - **list_messages**: List messages within a ticket
-- **list_tickets**: List support tickets
 - **list_users**: List agents/users in the workspace
 - **update_customer**: Update a customer profile
+- **create_customer**: Create a new customer profile
+- **create_message**: Add a message (reply or internal note) to a ticket
+- **create_ticket**: Create a new ticket
+- **list_tickets**: List support tickets
+- **update_ticket**: Update an existing ticket
 
 
 ## 💬 Prompt Examples

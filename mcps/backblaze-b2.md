@@ -35,19 +35,19 @@ Your AI agent now has the power to orchestrate secure and cost-effective object 
 
 
 ## Available Tools (10)
+- **get_file_info**: Obtain granular checksum and headers associated with one precise B2 File
+- **list_buckets**: Crucial to resolve immutable String Bucket IDs prerequisite to executing downstream CRUD operations strictly inside native borders.
+
+Retrieve the exact Storage Buckets existing globally on the B2 Account
 - **create_bucket**: Bootstraps essential structures before assigning automated backup syncs overriding file lock retention bounds.
 
 Provision a fresh logical Storage Bucket partition
 - **delete_file_version**: Instantly removes the storage footprint avoiding long-term retention hoarding.
 
 Irreversibly vaporize specific absolute chunk data from disk arrays
-- **get_file_info**: Obtain granular checksum and headers associated with one precise B2 File
 - **hide_file**: Does not actually delete binary payload, merely injects a null-marker shadowing the actual file ensuring b2_list_file_names ignores it, enforcing safe soft deletion logic.
 
 Mark an active B2 file as hidden leaving data for lifecycle sweep
-- **list_buckets**: Crucial to resolve immutable String Bucket IDs prerequisite to executing downstream CRUD operations strictly inside native borders.
-
-Retrieve the exact Storage Buckets existing globally on the B2 Account
 - **authorize_account**: Uncovers the dynamically assigned apiUrl (e.g. api003.backblazeb2.com) natively orchestrating regional data ingress specifically assigned to your billing account.
 
 Verify and extract Backblaze globalThis session routing endpoints

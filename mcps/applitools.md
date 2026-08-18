@@ -35,12 +35,12 @@ Connect your **Applitools Eyes** testing suite to your AI agent and manage your 
 
 
 ## Available Tools (10)
-- **list_baselines**: Returns baseline IDs, names, and env configs. Filter by app name.
-
-List visual baselines for an app on Applitools
 - **get_batch_stats**: Returns passed/failed/unresolved/new counts without full test data.
 
 Get summary statistics for an Applitools batch
+- **list_baselines**: Returns baseline IDs, names, and env configs. Filter by app name.
+
+List visual baselines for an app on Applitools
 - **list_batches**: Batches group related test sessions. Returns batch IDs, names, statuses (Passed/Unresolved/Failed), and test counts. Each batch has a unique ID used to query its results.
 
 List all test batches on Applitools Eyes
@@ -56,10 +56,10 @@ Delete an Applitools test batch
 - **get_batch**: Use batch ID from list_batches.
 
 Get full details of an Applitools batch
-- **list_results**: List all test results in an Applitools batch
 - **get_session**: Provide batch ID and session ID.
 
 Get details of a test session within an Applitools batch
+- **list_results**: List all test results in an Applitools batch
 - **validate_key**: Use to verify connectivity before running tests.
 
 Validate the Applitools API key

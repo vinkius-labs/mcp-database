@@ -36,15 +36,9 @@ Essential for **IT security teams**, **AI governance officers**, **platform engi
 
 
 ## Available Tools (27)
-- **create_mcp_server**: Requires server name and connection details (URL, authentication method). Optionally assign skills, agents, and policies during registration. Returns the created server details including the new UUID. Use this to onboard new MCP servers to your enterprise control plane.
-
-Register a new MCP server in Runlayer
 - **create_policy**: Requires policy name and rule definitions. Returns the created policy. Use this to enforce security standards, restrict access to sensitive MCP servers, or define audit requirements.
 
 Create a new security or access policy in Runlayer
-- **create_skill**: Requires skill name and description. Optionally define input/output schemas and initial MCP server assignments. Returns the created skill details. Use this to codify reusable agent capabilities for consistent use across your organization.
-
-Register a new skill (agent capability) in Runlayer
 - **delete_agent**: This disconnects the agent from all MCP servers and removes policy assignments. Requires the agent ID. Confirm with the user before proceeding.
 
 Remove an AI agent from Runlayer
@@ -54,66 +48,72 @@ Remove an MCP server from Runlayer
 - **delete_policy**: All resources previously governed by this policy will no longer be subject to its rules. Requires the policy ID. Confirm with the user before proceeding.
 
 Remove a security or access policy from Runlayer
-- **delete_skill**: Does not delete the underlying MCP server tools. Requires the skill ID. Confirm with the user before proceeding.
-
-Remove a skill from Runlayer
 - **get_agent**: Requires the agent ID from list_agents results. Use this to review agent configuration, audit access patterns, or troubleshoot connectivity.
 
 Get detailed information about a specific AI agent
 - **get_audit_logs**: Returns timestamps, actor identities, action types, affected resources, and outcomes. Use this for compliance reporting, security investigations, or operational troubleshooting.
 
 Get audit logs for your Runlayer organization
-- **get_mcp_server**: Requires the server UUID from list_mcp_servers results. Use this to review server configuration, verify security compliance, or troubleshoot connectivity issues.
-
-Get detailed information about a specific MCP server
 - **get_scan_results**: Requires the scan ID from run_mcp_sweep_scan results. Use this to review shadow AI discoveries, identify policy violations, or generate compliance reports.
 
 Get results from an MCP sweep scan
-- **get_skill**: Requires the skill ID from list_skills results. Use this to review skill configuration or understand capability dependencies.
-
-Get detailed information about a specific skill
-- **list_api_keys**: Use this to audit key inventory, identify unused keys, or prepare for key rotation.
-
-List all API keys for your Runlayer organization
 - **list_agents**: Returns agent names, IDs, types (Claude Desktop, Cursor, custom), assigned MCP servers, active skills, policy compliance status, and last activity timestamps. Use this to understand your agent ecosystem and verify which agents have access to which MCP servers.
 
 List all AI agents registered in your Runlayer organization
-- **list_mcp_servers**: Returns server names, UUIDs, status (active, inactive, blocked), assigned skills, connected agents, policy associations, and last activity timestamps. Use this as the first step to understand your MCP server inventory before managing individual servers, applying policies, or reviewing security posture.
+- **list_api_keys**: Use this to audit key inventory, identify unused keys, or prepare for key rotation.
 
-List all registered MCP servers in your Runlayer organization
+List all API keys for your Runlayer organization
 - **list_members**: Use this to audit access, review role assignments, or identify inactive accounts.
 
 List all members of your Runlayer organization
-- **list_policies**: Returns policy names, descriptions, enforcement status, affected resources, and violation counts. Use this to review your security posture before creating or modifying policies.
-
-List all security and access policies in your Runlayer organization
-- **list_skills**: Returns skill names, descriptions, associated MCP servers, usage counts, and version information. Use this to discover available capabilities before assigning them to agents or MCP servers.
-
-List all skills registered in your Runlayer organization
 - **revoke_api_key**: This action cannot be undone. Requires the key ID. Use this for compromised keys, unused keys, or during security incidents.
 
 Revoke an API key immediately
 - **run_mcp_sweep_scan**: Returns a scan ID which can be used with get_scan_results to retrieve findings. Use this for security assessments, compliance audits, or shadow AI detection.
 
 Run an MCP sweep scan to discover shadow AI across your organization
-- **update_mcp_server**: Only pass the fields you want to change. Requires the server UUID. Use this to update server endpoints, rotate credentials, or modify policy assignments.
-
-Update an existing MCP server configuration
-- **update_policy**: Only pass the fields you want to change. Requires the policy ID. Use this to refine security requirements, update access controls, or modify audit rules.
-
-Update an existing security or access policy
 - **update_skill**: Only pass the fields you want to change. Requires the skill ID. Use this to refine skill definitions or update documentation.
 
 Update an existing skill configuration
 - **create_api_key**: Returns the key value (shown only once) and metadata. Use this to create keys for integrations, CI/CD pipelines, or service accounts. Store the key value securely immediately after creation.
 
 Create a new API key for your Runlayer organization
+- **create_mcp_server**: Requires server name and connection details (URL, authentication method). Optionally assign skills, agents, and policies during registration. Returns the created server details including the new UUID. Use this to onboard new MCP servers to your enterprise control plane.
+
+Register a new MCP server in Runlayer
+- **create_skill**: Requires skill name and description. Optionally define input/output schemas and initial MCP server assignments. Returns the created skill details. Use this to codify reusable agent capabilities for consistent use across your organization.
+
+Register a new skill (agent capability) in Runlayer
+- **delete_skill**: Does not delete the underlying MCP server tools. Requires the skill ID. Confirm with the user before proceeding.
+
+Remove a skill from Runlayer
+- **get_mcp_server**: Requires the server UUID from list_mcp_servers results. Use this to review server configuration, verify security compliance, or troubleshoot connectivity issues.
+
+Get detailed information about a specific MCP server
 - **get_organization**: Use this to verify your organization configuration or get an overview of your MCP ecosystem.
 
 Get your Runlayer organization details
+- **get_skill**: Requires the skill ID from list_skills results. Use this to review skill configuration or understand capability dependencies.
+
+Get detailed information about a specific skill
+- **list_mcp_servers**: Returns server names, UUIDs, status (active, inactive, blocked), assigned skills, connected agents, policy associations, and last activity timestamps. Use this as the first step to understand your MCP server inventory before managing individual servers, applying policies, or reviewing security posture.
+
+List all registered MCP servers in your Runlayer organization
+- **list_policies**: Returns policy names, descriptions, enforcement status, affected resources, and violation counts. Use this to review your security posture before creating or modifying policies.
+
+List all security and access policies in your Runlayer organization
+- **list_skills**: Returns skill names, descriptions, associated MCP servers, usage counts, and version information. Use this to discover available capabilities before assigning them to agents or MCP servers.
+
+List all skills registered in your Runlayer organization
 - **update_agent**: Only pass the fields you want to change. Requires the agent ID. Use this to update agent assignments or modify metadata.
 
 Update an existing AI agent configuration
+- **update_mcp_server**: Only pass the fields you want to change. Requires the server UUID. Use this to update server endpoints, rotate credentials, or modify policy assignments.
+
+Update an existing MCP server configuration
+- **update_policy**: Only pass the fields you want to change. Requires the policy ID. Use this to refine security requirements, update access controls, or modify audit rules.
+
+Update an existing security or access policy
 - **create_agent**: Requires agent name and type (claude_desktop, cursor, vs_code, custom). Optionally assign MCP servers, skills, and policies during registration. Returns the created agent details. Use this to onboard new AI agents to your enterprise control plane with proper security guardrails.
 
 Register a new AI agent in Runlayer

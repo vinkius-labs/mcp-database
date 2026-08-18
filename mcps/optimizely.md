@@ -35,12 +35,12 @@ Connect your **Optimizely** account to any AI agent and take full control of you
 
 ## Available Tools (10)
 - **list_feature_flags**: List feature flags in a project
-- **get_experiment**: Get details for a specific experiment
-- **get_feature_flag**: Get details for a specific feature flag
-- **get_project**: Get details for a specific project
 - **list_audiences**: List defined audiences in a project
+- **get_experiment**: Get details for a specific experiment
 - **list_events**: List conversion events in a project
 - **list_experiments**: List experiments in a project
+- **get_feature_flag**: Get details for a specific feature flag
+- **get_project**: Get details for a specific project
 - **list_projects**: List all Optimizely projects
 - **pause_experiment**: Set experiment status to paused
 - **start_experiment**: Set experiment status to running

@@ -38,20 +38,21 @@ No more manual downloads or periodic checks. Your AI agent serves as your pipeli
 
 
 ## Available Tools (10)
-- **get_task_data**: Only meaningful when the task status is "successful". Fields match the column names configured in the Browse AI robot builder hitting internal task references.
-
-Retrieve the final extracted JSON data from a successful Browse AI task
-- **get_task**: Check the status of a specific Browse AI extraction task
 - **list_credits**: Check Browse AI quota limits and credit usage
 - **list_monitors**: Monitors run on scheduled intervals to detect changes on target web pages and trigger notifications or data captures automatically via `/monitors`.
 
 List all active Browse AI web monitoring robots
+- **get_task**: Check the status of a specific Browse AI extraction task
+- **get_task_data**: Only meaningful when the task status is "successful". Fields match the column names configured in the Browse AI robot builder hitting internal task references.
+
+Retrieve the final extracted JSON data from a successful Browse AI task
 - **list_robots**: Each robot represents a no-code AI scraping workflow targeting a specific website or data pattern via `GET /robots`.
 
 List all Browse AI extraction and monitoring robots
 - **run_robot**: Pass a JSON string of input parameters (typically including "originUrl" for the target page and any variable fields the robot expects). Returns a taskId.
 
 Trigger a Browse AI robot to extract data from a target URL
+- **get_robot**: Get detailed configuration of a specific Browse AI robot
 - **run_bulk_task**: Each set typically contains a different "originUrl". All extractions run concurrently on Browse AI infrastructure.
 
 Run a Browse AI robot in bulk mode across multiple URLs
@@ -59,7 +60,6 @@ Run a Browse AI robot in bulk mode across multiple URLs
 
 Download all extracted results from a completed Browse AI bulk run
 - **get_bulk_task**: Get bulk task execution status from Browse AI
-- **get_robot**: Get detailed configuration of a specific Browse AI robot
 
 
 ## 💬 Prompt Examples
