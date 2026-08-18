@@ -34,12 +34,12 @@ Connect **Papertrail** to your AI agent for instant visibility into your cloud i
 
 
 ## Available Tools (6)
-- **create_group**: Create a new log group
 - **list_destinations**: List log destinations
-- **list_groups**: List all log groups
 - **search_events**: Search through log events
 - **create_destination**: Create a new log destination
 - **list_systems**: List all systems sending logs to Papertrail
+- **create_group**: Create a new log group
+- **list_groups**: List all log groups
 
 
 ## 💬 Prompt Examples

@@ -35,25 +35,25 @@ Connect your **Oyster** account to any AI agent to streamline your global team m
 
 
 ## Available Tools (15)
-- **get_engagement**: Get details for a specific engagement
 - **get_expense**: Get details for a specific expense
 - **get_operation_status**: Get async operation status
 - **get_time_off_request**: Get details for a specific time off request
-- **list_engagements**: List Oyster engagements
-- **list_expenses**: List expenses
 - **list_hiring_countries**: List hiring countries (Beta)
-- **list_invoices**: List invoices
 - **list_subdivisions**: List subdivisions for a country (Beta)
 - **list_time_off_requests**: List time off requests
 - **create_webhook**: Create a new webhook endpoint
-- **create_draft_employment**: This is an async operation.
-
-Create a draft employment (Beta, Async)
 - **create_expense**: This is an async operation, returns an operationKey.
 
 Create a new expense (Async)
 - **create_time_off_request**: Create a new time off request
 - **get_company**: Get company details
+- **create_draft_employment**: This is an async operation.
+
+Create a draft employment (Beta, Async)
+- **get_engagement**: Get details for a specific engagement
+- **list_engagements**: List Oyster engagements
+- **list_expenses**: List expenses
+- **list_invoices**: List invoices
 
 
 ## 💬 Prompt Examples

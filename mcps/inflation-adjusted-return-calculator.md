@@ -15,8 +15,8 @@ This MCP server provides precise tools to determine the true performance of your
 
 ## Available Tools (3)
 - **compute_absolute_inflationary_erosion**: Calculate the absolute inflationary erosion in currency units
-- **calculate_purchasing_power_ratio**: Calculate the ratio of purchasing power preserved
 - **get_real_return_percentage**: Calculate the real return rate using the Fisher equation
+- **calculate_purchasing_power_ratio**: Calculate the ratio of purchasing power preserved
 
 
 ## 💬 Prompt Examples

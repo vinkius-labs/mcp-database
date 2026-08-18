@@ -36,16 +36,16 @@ Connect **TextRazor** to your AI agent to unlock state-of-the-art text analysis 
 ## Available Tools (11)
 - **delete_category**: Delete a custom classifier
 - **list_dictionary_entries**: List all entries in a custom dictionary
-- **list_dictionaries**: List all custom dictionaries
+- **get_account**: Get account details, usage, and limits
+- **get_dictionary**: Get details of a specific custom dictionary
 - **analyze_text**: Provide either text or url, and a comma-separated list of extractors.
 
 Analyze text or URL to extract entities, topics, relations, etc
 - **create_category**: Create or update a custom classifier/category
 - **create_dictionary**: Create a new custom dictionary
 - **delete_dictionary**: Delete a custom dictionary and its entries
-- **get_account**: Get account details, usage, and limits
-- **get_dictionary**: Get details of a specific custom dictionary
 - **list_categories**: List all categories in a custom classifier
+- **list_dictionaries**: List all custom dictionaries
 - **add_dictionary_entries**: Add entries to a custom dictionary
 
 

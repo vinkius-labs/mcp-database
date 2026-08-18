@@ -35,18 +35,18 @@ Connect your **Teller** enrollment to any AI agent and manage your financial dat
 
 
 ## Available Tools (11)
-- **get_account_balances**: Get real-time ledger and available balances
-- **get_account_details**: Get account and routing numbers
-- **list_accounts**: List all accounts for the enrollment
-- **create_payee**: Create a new payee for an account
 - **delete_account**: Delete authorization for a specific account
 - **delete_all_accounts**: Delete authorization for all accounts in the enrollment
 - **get_account**: Get details for a specific account
 - **get_identity**: Get identity information for accounts
+- **list_accounts**: List all accounts for the enrollment
+- **list_institutions**: List supported financial institutions
+- **create_payee**: Create a new payee for an account
+- **get_account_balances**: Get real-time ledger and available balances
+- **get_account_details**: Get account and routing numbers
 - **initiate_payment**: g., via Zelle) from the specified account.
 
 Initiate a payment from an account
-- **list_institutions**: List supported financial institutions
 - **list_transactions**: Supports pagination and date filtering.
 
 List ledger transactions for an account

@@ -14,9 +14,9 @@ This MCP server provides a specialized engine for evaluating SaaS acquisition ef
 
 
 ## Available Tools (3)
+- **calculate_reallocation_potential**: Calculate potential budget shift from low to high efficiency channels
 - **get_channel_efficiency**: Retrieve unit economic metrics for a specific channel and segment
 - **identify_inefficient_channels**: Identify channels performing below a payback threshold
-- **calculate_reallocation_potential**: Calculate potential budget shift from low to high efficiency channels
 
 
 ## 💬 Prompt Examples

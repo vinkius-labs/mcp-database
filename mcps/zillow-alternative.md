@@ -37,12 +37,7 @@ Connect your **Zillow** API access to any AI agent to retrieve comprehensive rea
 ## Available Tools (12)
 - **get_rate_summary**: Returns current mortgage rates
 - **get_region_chart**: Generates a URL for an image file displaying historical Zestimates for a region
-- **get_region_children**: g., neighborhoods within a city) for a specified region.
-
-Returns a list of subregions for a specified region
-- **get_search_results**: Finds a property for a specified address
 - **get_updated_property_details**: Returns home facts edited by the owner or agent
-- **get_zestimate**: Returns the most recent Zestimate for a ZPID
 - **get_comps**: Returns a list of comparable recent sales
 - **get_deep_comps**: ) for both the principal and comparable properties.
 
@@ -50,8 +45,13 @@ Returns rich property data for comparable properties
 - **get_deep_search_results**: ) in addition to standard search results.
 
 Finds a property and returns rich property data
-- **get_demographics**: Returns demographic data for a specified region
 - **get_monthly_payments**: Returns estimated monthly payments
+- **get_demographics**: Returns demographic data for a specified region
+- **get_region_children**: g., neighborhoods within a city) for a specified region.
+
+Returns a list of subregions for a specified region
+- **get_search_results**: Finds a property for a specified address
+- **get_zestimate**: Returns the most recent Zestimate for a ZPID
 - **get_chart**: Generates a URL for an image file displaying historical Zestimates
 
 

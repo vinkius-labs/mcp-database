@@ -14,10 +14,10 @@ The Meta Tag Analyzer MCP server provides a specialized toolkit for SEO professi
 
 
 ## Available Tools (4)
-- **analyze_description**: Evaluates the structural integrity of the meta description tag
-- **analyze_title**: Evaluates the structural integrity of the HTML title tag
 - **calculate_seo_score**: Generates a final optimization grade
+- **analyze_description**: Evaluates the structural integrity of the meta description tag
 - **check_redundancy**: Identifies repetitive words that may indicate keyword stuffing
+- **analyze_title**: Evaluates the structural integrity of the HTML title tag
 
 
 ## 💬 Prompt Examples

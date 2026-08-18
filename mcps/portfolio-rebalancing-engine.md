@@ -15,8 +15,8 @@ The Portfolio Rebalancing Engine connects AI agents to your investment strategy 
 
 ## Available Tools (3)
 - **analyze_portfolio_drift**: Analyze portfolio drift
-- **estimate_rebalancing_costs**: Estimate rebalancing costs
 - **compute_rebalancing_orders**: Compute rebalancing orders
+- **estimate_rebalancing_costs**: Estimate rebalancing costs
 
 
 ## 💬 Prompt Examples

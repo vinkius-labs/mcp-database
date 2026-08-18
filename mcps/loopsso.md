@@ -38,21 +38,21 @@ Connect your **Loops.so** account to any AI agent to streamline your email marke
 - **list_transactional_emails**: List transactional emails
 - **update_email_message**: Update an email message (Alpha)
 - **create_contact_property**: Create a new contact property
-- **create_contact**: Create a new contact in Loops
 - **delete_contact**: Delete a contact from Loops
-- **find_contact**: Find a contact by email or userId
 - **get_campaign**: Get details of a specific campaign (Alpha)
 - **get_component**: Get a specific component (Alpha)
-- **get_email_message**: Get an email message (Alpha)
 - **get_theme**: Get a specific theme (Alpha)
-- **list_campaigns**: List all campaigns (Alpha)
 - **list_components**: List all components (Alpha)
-- **list_contact_properties**: List contact properties
 - **list_ips**: List dedicated sending IPs
 - **list_mailing_lists**: List all mailing lists
 - **list_themes**: List all themes (Alpha)
-- **remove_suppression**: Remove suppression for a contact
 - **send_event**: Send an event to Loops
+- **create_contact**: Create a new contact in Loops
+- **find_contact**: Find a contact by email or userId
+- **get_email_message**: Get an email message (Alpha)
+- **list_campaigns**: List all campaigns (Alpha)
+- **list_contact_properties**: List contact properties
+- **remove_suppression**: Remove suppression for a contact
 - **send_transactional_email**: Send a transactional email
 - **update_campaign**: Update an existing campaign (Alpha)
 - **update_contact**: Update an existing contact or create one if it does not exist

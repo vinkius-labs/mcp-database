@@ -35,12 +35,12 @@ Connect your **Grafana Cloud** account to any AI agent to streamline your observ
 
 ## Available Tools (9)
 - **create_instance**: Create a new instance (stack)
-- **delete_api_key**: Delete an API key
 - **get_instance**: Get details for a specific instance
 - **get_org**: Get details for a specific organization
 - **list_api_keys**: List API keys for an organization
-- **list_instances**: List all instances (stacks) in an organization
 - **list_org_users**: List users in an organization
+- **delete_api_key**: Delete an API key
+- **list_instances**: List all instances (stacks) in an organization
 - **list_orgs**: List organizations you belong to
 - **create_api_key**: Create a new API key
 

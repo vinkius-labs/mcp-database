@@ -14,9 +14,9 @@ The Geneva Score Calculator provides a clinical decision support system for asse
 
 
 ## Available Tools (3)
-- **validate_clinical_parameters**: Validates clinical parameters are within physiological bounds
 - **compute_geneva_score**: Calculates the Geneva Score for Pulmonary Embolism risk
 - **get_diagnostic_protocol**: Provides recommended diagnostic steps based on risk tier
+- **validate_clinical_parameters**: Validates clinical parameters are within physiological bounds
 
 
 ## 💬 Prompt Examples

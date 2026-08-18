@@ -14,9 +14,9 @@ The Mood Tracker MCP connects AI agents to your longitudinal mood data. Use `get
 
 
 ## Available Tools (3)
-- **identify_difficulty_peaks**: Identify days with particularly low mood scores
 - **analyze_weekday_patterns**: Analyze patterns by day of the week
 - **get_weekly_summary**: Get a summary of the mood for a specific week
+- **identify_difficulty_peaks**: Identify days with particularly low mood scores
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ The Prevailing Wage Calculator provides precise hourly base rates and fringe ben
 
 
 ## Available Tools (3)
-- **get_supported_locations**: Get the list of supported states and counties
 - **list_available_trades**: List all available construction trades
+- **get_supported_locations**: Get the list of supported states and counties
 - **lookup_prevailing_wage**: g., carpenter), state (e.g., CA), and county (e.g., Los Angeles) to find hourly rates.
 
 Lookup the prevailing wage for a specific trade and location

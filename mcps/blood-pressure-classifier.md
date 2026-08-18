@@ -14,9 +14,9 @@ This MCP server provides specialized tools for monitoring cardiovascular health.
 
 
 ## Available Tools (3)
-- **evaluate_health_alert**: Identifies potential health alerts from current and historical data
-- **classify_single_reading**: Classifies a single blood pressure measurement
 - **calculate_trend_analysis**: Analyzes historical blood pressure readings for trends
+- **classify_single_reading**: Classifies a single blood pressure measurement
+- **evaluate_health_alert**: Identifies potential health alerts from current and historical data
 
 
 ## 💬 Prompt Examples

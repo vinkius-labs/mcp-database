@@ -42,12 +42,12 @@ Get historical weather data for field coordinates
 Get current weather for field coordinates
 - **delete_field**: Remove a field
 - **get_field**: Retrieve details for a specific field
-- **list_images**: List available satellite images for a field
 - **get_ndvi**: Get historical NDVI values for a field
-- **list_fields**: List all fields in your account
 - **get_weather_forecast**: Provide latitude and longitude.
 
 Get a 7-day weather forecast for field coordinates
+- **list_fields**: List all fields in your account
+- **list_images**: List available satellite images for a field
 
 
 ## 💬 Prompt Examples
