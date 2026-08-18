@@ -36,18 +36,18 @@ No more manual order checking or customer searching. Your AI acts as a dedicated
 
 
 ## Available Tools (10)
+- **list_customers**: List store customers
 - **create_customer**: Register a new customer
 - **get_customer_details**: Get details for a customer
 - **get_order_details**: Get details for an order
 - **get_product_details**: Get metadata for a product
 - **get_shop_info**: Get store information
 - **list_custom_collections**: List manual collections
-- **list_customers**: List store customers
 - **list_orders**: List recent store orders
-- **list_smart_collections**: List automated collections
 - **list_products**: Supports filtering by title or vendor.
 
 List your Shopify products
+- **list_smart_collections**: List automated collections
 
 
 ## 💬 Prompt Examples

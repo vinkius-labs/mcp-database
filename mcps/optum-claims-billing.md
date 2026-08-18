@@ -30,8 +30,8 @@ Specifically built for **Hospital Billing Departments**, **FinTech Operators**, 
 
 
 ## Available Tools (5)
-- **opt_check_claim_status**: Check if a submitted bill has been paid, denied, or is pending medical review
 - **opt_get_remittance_advice**: Downloads the Electronic Remittance Advice (835 ERA) detailing payment breakouts
+- **opt_check_claim_status**: Check if a submitted bill has been paid, denied, or is pending medical review
 - **opt_handle_denial_revision**: Resubmits a corrected claim fixing coding errors to overturn a payer denial
 - **opt_submit_institutional_claim**: Submits an institutional medical bill (837I) for hospital stays and major facilities
 - **opt_submit_professional_claim**: Submits a professional medical bill (837P) for doctors and outpatient clinics

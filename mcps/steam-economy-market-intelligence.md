@@ -36,14 +36,14 @@ Equip your AI agent with professional-grade digital asset intelligence via **Ste
 - **get_user_inventory**: AppIDs: 730=CS2, 570=Dota2, 440=TF2, 753=Steam.
 
 Get the full inventory for a user in a specific game
-- **get_trade_history**: Get completed trade history
-- **get_trade_hold_duration**: Check trade hold duration with a specific user
 - **get_active_trade_offers**: List active incoming and outgoing trade offers
 - **get_market_price**: Use exact Market Hash Name.
 
 Get current Steam Market price for an item
-- **get_asset_class_info**: Get technical metadata for specific item classes
+- **get_trade_history**: Get completed trade history
+- **get_trade_hold_duration**: Check trade hold duration with a specific user
 - **get_store_asset_prices**: Get official in-game store prices for an app
+- **get_asset_class_info**: Get technical metadata for specific item classes
 - **search_market_listings**: Returns item names, prices, quantity listed, and thumbnails.
 
 Search for items on the Steam Community Market

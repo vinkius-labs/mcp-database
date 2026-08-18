@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your entire workspace communication on **Sl
 
 
 ## Available Tools (10)
-- **delete_message**: Delete a message from Slack
 - **get_channel_info**: Get details for a specific channel
-- **get_history**: Get message history for a channel
 - **get_presence**: Check if a user is active or away
 - **get_user_info**: Get details for a specific user
 - **join_channel**: Join a public channel
-- **leave_channel**: Leave a Slack channel
 - **list_channels**: List Slack channels
 - **list_users**: List all users in the workspace
 - **send_message**: Send a message to a Slack channel
+- **delete_message**: Delete a message from Slack
+- **get_history**: Get message history for a channel
+- **leave_channel**: Leave a Slack channel
 
 
 ## 💬 Prompt Examples

@@ -40,12 +40,12 @@ John Deere is the world's leading manufacturer of agricultural machinery and pre
 - **list_organizations**: Each org has machines, fields, and clients.
 
 List farms and organizations
-- **list_machines**: List fleet machines
-- **get_machine_locations**: Get machine GPS locations
-- **list_fields**: List fields/plots
 - **get_field_operations**: Includes date, product, rate, yield, and operator.
 
 Get field operations
+- **get_machine_locations**: Get machine GPS locations
+- **list_fields**: List fields/plots
+- **list_machines**: List fleet machines
 - **list_alerts**: Includes alert type, severity, timestamp, and affected machine.
 
 List machine alerts

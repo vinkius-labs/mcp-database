@@ -38,13 +38,13 @@ Connect your **Ahrefs** account to your AI agent to unlock the world's most powe
 - **get_domain_overview**: Get domain SEO metrics
 - **list_backlinks**: List website backlinks
 - **list_organic_keywords**: List ranking keywords
-- **get_backlinks_stats**: Get backlink summary
-- **get_keyword_overview**: Get keyword metrics
 - **list_keyword_ideas**: Generate keyword ideas
 - **list_broken_backlinks**: Identify 404 broken links
-- **list_top_pages**: List top performing pages
+- **get_backlinks_stats**: Get backlink summary
+- **get_keyword_overview**: Get keyword metrics
 - **get_keyword_volume_history**: Get historical search volume
 - **get_serp_overview**: Analyze search results
+- **list_top_pages**: List top performing pages
 
 
 ## 💬 Prompt Examples

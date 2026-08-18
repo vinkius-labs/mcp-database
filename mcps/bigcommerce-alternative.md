@@ -40,13 +40,13 @@ No more manual toggling between storefront tabs or digging through complex order
 - **get_order_details**: Get details for an order
 - **get_product_details**: Get metadata for a product
 - **get_store_info**: Get store configuration
-- **list_catalog_brands**: List product brands
 - **list_catalog_categories**: List product categories
 - **list_customers**: List store customers
 - **list_orders**: List recent store orders
 - **list_products**: Supports filtering by name or brand.
 
 List your BigCommerce products
+- **list_catalog_brands**: List product brands
 
 
 ## 💬 Prompt Examples

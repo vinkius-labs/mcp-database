@@ -38,16 +38,9 @@ No more switching tabs to specialized GIS dashboards. Your AI agent acts as a fu
 
 
 ## Available Tools (10)
-- **batch_geocode_addresses**: Addresses must be provided as an ArcGIS-compatible JSON array string.
-
-Geocode a bulk batch of up to 1000 addresses
 - **find_address_country**: g., USA, BRA, FRA). Ensures results are geographically bounded.
 
 Find an address filtered by a specific country
-- **calculate_od_matrix**: Calculate travel time and distances between multiple origins and destinations
-- **calculate_service_area**: Facilities specified as lon,lat.
-
-Calculate drive-time, walk-time, or travel-distance service areas
 - **find_address_candidates**: Use this to turn text addresses into latitude and longitude.
 
 Find an address or place using ArcGIS Geocoding
@@ -60,10 +53,17 @@ Find the best route between two or more locations
 - **solve_vehicle_routing**: Takes an ArcGIS Orders JSON mapping string detailing the stops.
 
 Solve a Vehicle Routing Problem (VRP) for a fleet
-- **suggest_location_bias**: Get autocomplete suggestions biased towards a specific location
 - **suggest_geocoding**: Use this to help users select valid addresses before performing a full geocode request.
 
 Get autocomplete suggestions for partial addresses or place names
+- **batch_geocode_addresses**: Addresses must be provided as an ArcGIS-compatible JSON array string.
+
+Geocode a bulk batch of up to 1000 addresses
+- **calculate_od_matrix**: Calculate travel time and distances between multiple origins and destinations
+- **calculate_service_area**: Facilities specified as lon,lat.
+
+Calculate drive-time, walk-time, or travel-distance service areas
+- **suggest_location_bias**: Get autocomplete suggestions biased towards a specific location
 
 
 ## 💬 Prompt Examples

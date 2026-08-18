@@ -34,18 +34,18 @@ The **Anthropic MCP Server** enables seamless integration with Claude, the leadi
 
 
 ## Available Tools (8)
-- **cancel_batch**: Cancel a pending Message Batch
 - **check_rate_limits**: Check current rate limits for your Anthropic account
 - **create_batch**: Saves 50% on token costs.
 
 Create a Message Batch for asynchronous processing
+- **get_batch**: Get status of a specific Message Batch
+- **get_batch_results**: Retrieve results of a completed Message Batch
+- **list_batches**: List all Message Batches
+- **list_models**: List available Anthropic models
+- **cancel_batch**: Cancel a pending Message Batch
 - **create_message**: Returns the generated AI text response.
 
 Send a message to Claude
-- **get_batch_results**: Retrieve results of a completed Message Batch
-- **get_batch**: Get status of a specific Message Batch
-- **list_batches**: List all Message Batches
-- **list_models**: List available Anthropic models
 
 
 ## 💬 Prompt Examples

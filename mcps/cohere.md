@@ -36,21 +36,21 @@ No more switching between API tools to interact with Cohere. Your AI acts as an 
 
 
 ## Available Tools (6)
-- **detokenize**: Requires the token IDs array. Returns the reconstructed text. Useful for debugging and verifying tokenization.
-
-Detokenize token IDs back to text using Cohere
-- **chat**: Requires the model ID (e.g. "command-r-plus", "command-r", "command-r7b") and messages array in JSON format. Each message must have a "role" ("user", "assistant", "system" or "tool") and "content" (text or array of content blocks). Optionally set max_tokens, temperature (0-1), p (nucleus sampling 0-1) and tools array for function calling. Returns the model's response with text, citations and tool calls.
-
-Send a chat message to a Cohere model
 - **list_models**: Each model returns its name (e.g. "command-r-plus", "command-r", "embed-v4", "rerank-v3.5"), endpoint compatibility, context length and tokenization info. Use this to discover which models are available and their capabilities.
 
 List all available Cohere models
-- **rerank**: Requires the model ID (e.g. "rerank-v3.5", "rerank-english-v3.0"), query text and documents array. Optionally set top_n to return only the top N results. Returns ranked documents with relevance scores.
-
-Rerank documents by relevance to a query
 - **tokenize**: Requires the text to tokenize and optionally the model. Returns the list of token IDs and token strings. Useful for estimating token counts before sending to chat or embed endpoints.
 
 Tokenize text using Cohere
+- **chat**: Requires the model ID (e.g. "command-r-plus", "command-r", "command-r7b") and messages array in JSON format. Each message must have a "role" ("user", "assistant", "system" or "tool") and "content" (text or array of content blocks). Optionally set max_tokens, temperature (0-1), p (nucleus sampling 0-1) and tools array for function calling. Returns the model's response with text, citations and tool calls.
+
+Send a chat message to a Cohere model
+- **detokenize**: Requires the token IDs array. Returns the reconstructed text. Useful for debugging and verifying tokenization.
+
+Detokenize token IDs back to text using Cohere
+- **rerank**: Requires the model ID (e.g. "rerank-v3.5", "rerank-english-v3.0"), query text and documents array. Optionally set top_n to return only the top N results. Returns ranked documents with relevance scores.
+
+Rerank documents by relevance to a query
 - **embed**: Requires the model ID (e.g. "embed-v4", "embed-v3"), texts array and input_type ("search_document", "search_query", "classification", "clustering"). Returns embedding vectors for each input text. Useful for semantic search, similarity comparison and vector database storage.
 
 Generate embeddings using Cohere

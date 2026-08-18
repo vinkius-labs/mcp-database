@@ -36,18 +36,9 @@ No more switching between browser tabs to compare hotels. Your AI agent handles 
 
 
 ## Available Tools (12)
-- **check_availability**: Returns available room types, bed configurations, occupancy limits, cancellation policies, and pricing. Use this after a user has identified a hotel of interest to see what rooms are available for their desired stay dates. Required: property_id, check_in_date, check_out_date.
-
-Check room availability for a specific hotel property
-- **check_price_match**: This is part of Expedia's price match guarantee program. Required: property_id, check_in_date, check_out_date, competitor_url (URL where the lower price was found), and competitor_price (the lower price amount). Returns the price match result including whether the match was approved, the adjusted price if applicable, and any refund or credit details.
-
-Check if a hotel price matches a competitor's price
 - **get_guest_reviews**: Returns individual review entries with ratings (overall, cleanliness, staff, comfort, location), review text, traveler type, travel dates, and submission dates. Use this to help the user evaluate a property based on real guest experiences before booking. You can filter by traveler type or sort by date or rating.
 
 Get guest reviews and ratings for a specific hotel
-- **get_hotel_details**: Returns property name, full address, phone number, star rating, guest rating, detailed descriptions, amenities list, policies (check-in/out times, pet policy, etc.), nearby attractions, and images. Use this to present rich hotel details to the user before they make a booking decision.
-
-Get detailed information about a specific hotel property
 - **get_hotel_images**: Returns image URLs in various categories (exterior, lobby, room, bathroom, pool, restaurant, etc.), along with image descriptions, captions, and subject IDs. Use this to display hotel photos to the user when browsing or presenting hotel details. Images are available in multiple sizes — the response includes URLs for each size variant.
 
 Get all images for a specific hotel property
@@ -60,12 +51,21 @@ Get rate plans and pricing options for a hotel property
 - **price_check**: This is the recommended step between selecting a rate plan and creating a booking — it confirms the price is still valid, checks for any price changes, and returns the final confirmed amount including taxes and fees. Requires property_id, room_id (from check_availability), and rate_id (from get_rate_plans). If the price has changed, the response includes the updated pricing.
 
 Validate the current price for a specific room and rate before booking
-- **search_hotels**: Use this to find hotels by destination region ID, check-in and check-out dates, number of rooms and guests. You can filter by amenities, price range, star rating, guest rating, and property type. The region ID can be obtained using the search_regions tool. Always provide check-in and check-out dates in ISO format (YYYY-MM-DD). Results include property IDs, names, locations, star ratings, and pricing information.
-
-Search for hotels using the Expedia EAN API
 - **search_regions**: This is the first step in a hotel search — you need a region_id to search for hotels. For example, searching for "Paris" returns the city region, specific neighborhoods, and nearby airports. Use this to help the user identify the correct destination before performing a hotel search. Returns region IDs, names, types, and hierarchy info.
 
 Search for destination regions by name
+- **check_availability**: Returns available room types, bed configurations, occupancy limits, cancellation policies, and pricing. Use this after a user has identified a hotel of interest to see what rooms are available for their desired stay dates. Required: property_id, check_in_date, check_out_date.
+
+Check room availability for a specific hotel property
+- **check_price_match**: This is part of Expedia's price match guarantee program. Required: property_id, check_in_date, check_out_date, competitor_url (URL where the lower price was found), and competitor_price (the lower price amount). Returns the price match result including whether the match was approved, the adjusted price if applicable, and any refund or credit details.
+
+Check if a hotel price matches a competitor's price
+- **get_hotel_details**: Returns property name, full address, phone number, star rating, guest rating, detailed descriptions, amenities list, policies (check-in/out times, pet policy, etc.), nearby attractions, and images. Use this to present rich hotel details to the user before they make a booking decision.
+
+Get detailed information about a specific hotel property
+- **search_hotels**: Use this to find hotels by destination region ID, check-in and check-out dates, number of rooms and guests. You can filter by amenities, price range, star rating, guest rating, and property type. The region ID can be obtained using the search_regions tool. Always provide check-in and check-out dates in ISO format (YYYY-MM-DD). Results include property IDs, names, locations, star ratings, and pricing information.
+
+Search for hotels using the Expedia EAN API
 - **book_hotel**: This is a write action that results in an actual reservation. Required fields: property_id, check_in_date, check_out_date, room_id, rate_plan_id, guest first name, last name, and email. The room_id and rate_plan_id should be obtained from the check_availability or get_rate_plans tools. Include billing address and special requests if the user provides them. On success, returns an itinerary ID that can be used to retrieve or cancel the booking. ALWAYS confirm booking details with the user before executing this action.
 
 Book a hotel reservation through Expedia EAN

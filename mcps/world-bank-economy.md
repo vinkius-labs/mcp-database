@@ -27,10 +27,10 @@ Economists, financial analysts, and market researchers building global macro mod
 
 
 ## Available Tools (4)
-- **get_gdp**: Get Gross Domestic Product (GDP) in current US$
-- **get_gdp_growth**: Get annual GDP growth percentage
 - **get_inflation**: Get inflation rate (consumer prices, annual %)
 - **get_economy_indicator**: Get any World Bank economy indicator by its code
+- **get_gdp**: Get Gross Domestic Product (GDP) in current US$
+- **get_gdp_growth**: Get annual GDP growth percentage
 
 
 ## 💬 Prompt Examples

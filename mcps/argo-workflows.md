@@ -35,12 +35,12 @@ No more wrestling with `kubectl` CLI tools or constantly refreshing the Argo Web
 
 
 ## Available Tools (6)
-- **list_workflows**: List workflows in a Kubernetes namespace
 - **get_workflow**: Get detailed resource tree and status for an Argo workflow
+- **list_workflows**: List workflows in a Kubernetes namespace
 - **list_archived_workflows**: List archived workflows from Argo history
-- **list_workflow_templates**: List workflow templates defined in a namespace
-- **list_cron_workflows**: List scheduled cron workflows in a namespace
 - **get_server_info**: Get Argo Workflows server information
+- **list_cron_workflows**: List scheduled cron workflows in a namespace
+- **list_workflow_templates**: List workflow templates defined in a namespace
 
 
 ## 💬 Prompt Examples

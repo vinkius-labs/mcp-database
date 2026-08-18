@@ -37,16 +37,16 @@ No more wrestling with hundreds of open browser tabs to find out who is assigned
 
 ## Available Tools (15)
 - **create_task**: Create a new Asana task
-- **get_task**: Get details for a specific Asana task
-- **list_stories**: List activity feed (stories) for a task
-- **list_tags**: List all tags in a workspace
 - **get_me**: Get current Asana user details
 - **list_projects**: List projects in a workspace
-- **search_tasks**: Search for tasks in a workspace with filters
-- **list_sections**: List sections inside an Asana project
-- **list_tasks**: List tasks in an Asana project
 - **update_task**: Update an existing Asana task
+- **get_task**: Get details for a specific Asana task
+- **list_sections**: List sections inside an Asana project
+- **list_stories**: List activity feed (stories) for a task
+- **list_tags**: List all tags in a workspace
+- **list_tasks**: List tasks in an Asana project
 - **list_workspaces**: List Asana workspaces
+- **search_tasks**: Search for tasks in a workspace with filters
 - **add_task_comment**: Add a comment to an Asana task
 - **delete_task**: Delete an Asana task permanently
 - **get_user**: Get details of a specific Asana user

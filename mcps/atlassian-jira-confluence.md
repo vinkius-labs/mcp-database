@@ -36,17 +36,17 @@ Transform your **Atlassian Jira** and **Confluence** instance into a conversatio
 
 ## Available Tools (9)
 - **get_page**: Get Confluence page rich text content
-- **list_projects**: Useful for discovering project keys needed for querying specific domains or boards.
-
-List all Jira projects
-- **search_issues**: Search Jira issues with JQL
 - **get_issue**: Get Jira issue details by exact key
+- **get_myself**: Get current authenticated user information
 - **list_boards**: Often used before retrieving backlogs or active sprints.
 
 List all Jira agile boards
-- **list_sprints**: List sprints for a specific Jira board
-- **get_myself**: Get current authenticated user information
+- **list_projects**: Useful for discovering project keys needed for querying specific domains or boards.
+
+List all Jira projects
 - **list_spaces**: List all Confluence spaces
+- **list_sprints**: List sprints for a specific Jira board
+- **search_issues**: Search Jira issues with JQL
 - **search_content**: Search Confluence content with CQL
 
 

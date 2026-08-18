@@ -37,26 +37,26 @@ Empower your AI agent to orchestrate your entire advertising ecosystem on TikTok
 ## Available Tools (17)
 - **list_ad_videos**: List uploaded video assets for an advertiser
 - **get_advertiser_balance**: Get the current balance and spending of an advertiser
+- **list_audiences**: List custom audiences for retargeting
+- **list_ad_images**: List uploaded image assets for an advertiser
+- **update_ad_group_status**: Enable, disable, or delete ad groups
 - **get_performance_report**: ) and dimensions (campaign_id, adgroup_id, ad_id, stat_time_day) for granular analysis.
 
 Get advanced performance reports with custom metrics
 - **list_ads**: List all ads for an advertiser
-- **list_audiences**: List custom audiences for retargeting
 - **list_campaigns**: Supports pagination.
 
 List all campaigns for an advertiser
-- **list_ad_images**: List uploaded image assets for an advertiser
 - **track_pixel_event**: g., CompletePayment, AddToCart, ViewContent, SubmitForm) via server-to-server tracking.
 
 Send a server-side pixel event to TikTok
-- **update_ad_group_status**: Enable, disable, or delete ad groups
+- **update_ad_status**: Enable, disable, or delete ads
 - **create_campaign**: Objective types: TRAFFIC, CONVERSIONS, APP_INSTALL, REACH, VIDEO_VIEWS, LEAD_GENERATION, CATALOG_SALES.
 
 Create a new TikTok Ads campaign
 - **get_ad_group_details**: Get details for specific ad groups
 - **get_advertiser_info**: Get TikTok advertiser account details
 - **get_campaign_details**: Get full details of specific campaigns by ID
-- **update_ad_status**: Enable, disable, or delete ads
 - **list_ad_groups**: List all ad groups for an advertiser
 - **update_campaign_budget**: Update budget for an existing campaign
 - **update_campaign_status**: Enable, disable, or delete campaigns

@@ -39,27 +39,27 @@ List all contracts
 - **list_expenses**: Returns expense report metadata including receipt attachments, currency amounts, and the current review status (approved/rejected/pending).
 
 List submitted expenses
-- **get_contract**: Resolves detailed terms, compliance requirements, specific compensation rates, and effective dates.
-
-Get contract details
 - **list_people**: Returns a list of team members including their professional roles, geographical locations, and the nature of their Deel integration (employee vs. contractor).
 
 List all people (employees and contractors)
-- **list_invoices**: Returns invoice metadata including billing amounts, issue dates, and current payment status (e.g., paid, pending, overdue).
+- **list_milestones**: Returns identifiers, payment amounts, and projected achievement dates for defined project stages.
 
-List all invoices
+List contract milestones
 - **list_payments**: Returns data on disbursement amounts, recipient identifiers, and the technical status of each transfer.
 
 List all payments
 - **list_tasks**: Returns task descriptions, due dates, and completion status for milestone-based engagements.
 
 List tasks for a contract
-- **list_milestones**: Returns identifiers, payment amounts, and projected achievement dates for defined project stages.
-
-List contract milestones
 - **get_person**: Resolves personal metadata, active and historical contract links, and cumulative payment history within the Deel platform.
 
 Get person details
+- **get_contract**: Resolves detailed terms, compliance requirements, specific compensation rates, and effective dates.
+
+Get contract details
+- **list_invoices**: Returns invoice metadata including billing amounts, issue dates, and current payment status (e.g., paid, pending, overdue).
+
+List all invoices
 - **list_time_off**: Returns a collection of time-off requests including requested dates, leave categories, and the current approval status for each entry.
 
 List time-off requests
