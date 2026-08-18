@@ -14,8 +14,8 @@ This MCP server provides a deterministic trading engine for executing iron condo
 
 
 ## Available Tools (3)
-- **analyze_strategy_signals**: Evaluates daily market conditions and option data to generate specific trade signals
 - **calculate_risk_metrics**: Computes the specific risk-reward profile for a given set of strikes and premiums
+- **analyze_strategy_signals**: Evaluates daily market conditions and option data to generate specific trade signals
 - **get_adjustment_guidance**: Provides natural language instructions on how to manage the position
 
 

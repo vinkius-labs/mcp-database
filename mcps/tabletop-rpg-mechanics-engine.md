@@ -15,9 +15,9 @@ A precise mathematical engine for tabletop roleplaying games. It provides determ
 
 ## Available Tools (4)
 - **calculate_damage**: Resolves the final damage value of an attack or spell
-- **resolve_ability_check**: Calculates the total modifier and the resulting proficiency bonus for a specific action
 - **simulate_roll_outcome**: Determines the outcome of a d20 roll, accounting for advantage or disadvantage
 - **update_spell_slots**: Manages the consumption of spell resources
+- **resolve_ability_check**: Calculates the total modifier and the resulting proficiency bonus for a specific action
 
 
 ## 💬 Prompt Examples

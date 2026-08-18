@@ -14,9 +14,9 @@ This MCP server provides a deterministic quantitative engine for trading the Vol
 
 
 ## Available Tools (3)
-- **analyze_volatility_signals**: Calculates core volatility metrics and generates VRP buy/sell signals
 - **calculate_risk_metrics**: Quantifies expected costs and mean reversion for volatility trades
 - **get_market_regime_context**: Provides high-level context regarding the current volatility environment
+- **analyze_volatility_signals**: Calculates core volatility metrics and generates VRP buy/sell signals
 
 
 ## 💬 Prompt Examples
