@@ -36,24 +36,24 @@ Connect your **Mem.ai** workspace to any AI agent and take full control of your 
 
 
 ## Available Tools (12)
-- **update_mem**: Replaces absolute text values so ensure `get_mem` was run to append rather than destroy inadvertently.
-
-Update pre-existing mem content natively swapping strings
 - **delete_mem**: No recovery is possible via API.
 
 Irreversibly vaporize a mem document globally
-- **list_collections**: Query explicitly tracked thematic Collections arrays
-- **create_collection**: Establish new logical thematic groupings mapping notes
 - **get_collection**: Inspect specific Collection metadata elements
-- **add_mem_to_collection**: Attach live Mems structurally inside explicitly mapped Collections
+- **list_collections**: Query explicitly tracked thematic Collections arrays
 - **list_collection_mems**: Query ALL explicit Mem bodies inside specific Collections
+- **add_mem_to_collection**: Attach live Mems structurally inside explicitly mapped Collections
+- **create_collection**: Establish new logical thematic groupings mapping notes
 - **create_mem**: ai. Converts plain textual knowledge to indexed vectors immediately mapped implicitly via AI.
 
 Create a new mem (note) in Mem.ai using Markdown
+- **update_mem**: Replaces absolute text values so ensure `get_mem` was run to append rather than destroy inadvertently.
+
+Update pre-existing mem content natively swapping strings
+- **get_mem**: Retrieve explicit full context metadata by target Mem ID
 - **list_mems**: Returns identifiers and raw bodies. Careful, this returns heavy payloads.
 
 List all raw mems across the globalThis workspace
-- **get_mem**: Retrieve explicit full context metadata by target Mem ID
 - **search_mems**: AI semantic search looking into all indexed knowledge
 - **mem_it**: Quick capture shortcut generating automated blocks
 

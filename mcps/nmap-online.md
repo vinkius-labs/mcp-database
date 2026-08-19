@@ -35,18 +35,18 @@ Connect to high-performance network diagnostic tools through your AI agent and p
 
 
 ## Available Tools (10)
-- **geoip_lookup**: IP geolocation lookup
-- **get_http_headers**: Get HTTP response headers
-- **list_subdomains**: Search for subdomains
-- **nmap_scan**: Perform a basic Nmap port scan
 - **get_page_links**: Extract links from a page
+- **nmap_scan**: Perform a basic Nmap port scan
 - **ping_host**: Ping a host
 - **reverse_dns**: Reverse DNS lookup
 - **traceroute**: Perform a network traceroute
-- **whois_lookup**: WHOIS lookup
 - **dns_lookup**: ) for a specific domain.
 
 Forward DNS lookup
+- **geoip_lookup**: IP geolocation lookup
+- **get_http_headers**: Get HTTP response headers
+- **list_subdomains**: Search for subdomains
+- **whois_lookup**: WHOIS lookup
 
 
 ## 💬 Prompt Examples

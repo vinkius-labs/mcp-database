@@ -37,9 +37,9 @@ Connect your **Matillion Data Productivity Cloud** account to any AI agent and t
 ## Available Tools (6)
 - **get_pipeline**: Get specific pipeline details
 - **list_executions**: List recent pipeline executions
-- **list_environments**: List all environment configurations
-- **list_agents**: List all Matillion runtime agents
 - **list_projects**: List all projects
+- **list_agents**: List all Matillion runtime agents
+- **list_environments**: List all environment configurations
 - **list_pipelines**: List all Matillion ETL pipelines
 
 

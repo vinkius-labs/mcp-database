@@ -35,22 +35,22 @@ Connect your **LocationIQ** account to any AI agent and take full control of aff
 
 
 ## Available Tools (10)
-- **calculate_directions**: Calculate optimal driving, walking, or cycling route between coordinates
-- **search_autocomplete**: php` tracking prefix queries and parsing city datasets quickly.
-
-Retrieve autosuggest lists for partial location search queries
 - **check_account_balance**: php` verifying explicitly how many OpenStreetMap queries remain for the Tenant API Key.
 
 Validate current LocationIQ account balance and remaining requests
-- **calculate_distance_matrix**: Calculate travel duration table crossing multiple coordinate sources and destinations
-- **snap_nearest_roads**: Snap a coordinate perfectly to the exact street network
-- **reverse_geocode**: php` pulling standard Place objects formatting explicit postal addresses over GPS positions.
+- **search_autocomplete**: php` tracking prefix queries and parsing city datasets quickly.
 
-Convert latitude and longitude coordinates into a human-readable address
+Retrieve autosuggest lists for partial location search queries
+- **snap_nearest_roads**: Snap a coordinate perfectly to the exact street network
 - **reverse_language_bias**: Reverse Geocode lat/lon mapping translations inside specific native language tags
 - **search_geocode**: php` mapping address strings into specific OpenStreetMap coordinates securely.
 
 Convert an address string into latitude and longitude coordinates
+- **calculate_directions**: Calculate optimal driving, walking, or cycling route between coordinates
+- **calculate_distance_matrix**: Calculate travel duration table crossing multiple coordinate sources and destinations
+- **reverse_geocode**: php` pulling standard Place objects formatting explicit postal addresses over GPS positions.
+
+Convert latitude and longitude coordinates into a human-readable address
 - **search_bounding_box**: Search explicitly bounded within a geographical map rectangle
 - **search_country_filter**: Search address coordinates forced within explicit Country codes
 

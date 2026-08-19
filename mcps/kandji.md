@@ -14,15 +14,15 @@ Empower your AI agents with Kandji's modern Apple MDM platform. This MCP server 
 
 
 ## Available Tools (10)
-- **list_activity**: Essential for auditing system changes and recent management history.
-
-Lists recent management activity
-- **get_device**: Essential for deep-dive auditing of a specific asset.
-
-Retrieves details for a specific device
 - **get_organization**: Use to verify account identity.
 
 Retrieves details about your Kandji organization
+- **get_device**: Essential for deep-dive auditing of a specific asset.
+
+Retrieves details for a specific device
+- **list_activity**: Essential for auditing system changes and recent management history.
+
+Lists recent management activity
 - **list_devices**: Returns device names, IDs, and OS versions. Use this as the main tool for auditing the device fleet.
 
 Lists all managed Apple devices in Kandji

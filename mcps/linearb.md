@@ -34,19 +34,19 @@ Connect your **LinearB** account to any AI agent to automate your engineering in
 
 
 ## Available Tools (7)
-- **record_new_deployment**: Requires repo_id and ref.
-
-Report a new deployment to LinearB
+- **list_software_deployments**: List recent deployments
 - **record_new_incident**: Requires provider_id and started_at.
 
 Report a new incident
-- **list_software_deployments**: List recent deployments
 - **list_software_incidents**: List engineering incidents
+- **list_connected_repos**: List all connected repositories
+- **list_engineering_teams**: List all teams defined in LinearB
 - **query_software_metrics**: Requires a JSON body with requested_metrics and time_ranges.
 
 Query software engineering metrics (v2)
-- **list_engineering_teams**: List all teams defined in LinearB
-- **list_connected_repos**: List all connected repositories
+- **record_new_deployment**: Requires repo_id and ref.
+
+Report a new deployment to LinearB
 
 
 ## 💬 Prompt Examples

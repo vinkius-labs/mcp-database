@@ -35,16 +35,16 @@ Connect your **Lindy.ai** account to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
-- **cancel_run**: Cancel a running execution dispatching hard stops interrupting trapped context loops
-- **get_run**: Get specific state for a Run blocking on Human input or External APIs
 - **get_lindy**: Get configuration mappings including standard tools and prompts for a specific Lindy
+- **get_run**: Get specific state for a Run blocking on Human input or External APIs
 - **list_integrations**: List bounded third-party app connections securely connected (e.g Slack, Gmail)
-- **list_runs**: List recent runs validating the full execution graph isolating active Lindy instances
 - **list_lindies**: List all custom autonomous AI Assistants (Lindies) built on the workspace
-- **trigger_lindy**: Trigger a Lindy to start an asynchronous task run parsing a JSON payload
 - **list_triggers**: List how autonomous AI agents are woken up (Cron, Webhook, API)
 - **list_workspaces**: List all explicit organizational boundaries structuring isolated Teams
+- **trigger_lindy**: Trigger a Lindy to start an asynchronous task run parsing a JSON payload
+- **cancel_run**: Cancel a running execution dispatching hard stops interrupting trapped context loops
 - **get_run_logs**: Dump literal LLM reasoning logs isolating a specific run loop
+- **list_runs**: List recent runs validating the full execution graph isolating active Lindy instances
 
 
 ## 💬 Prompt Examples

@@ -14,7 +14,6 @@ The Mambu MCP server allows you to interact with your Mambu tenant. You can list
 
 
 ## Available Tools (11)
-- **get_client**: Get details for a specific Mambu client
 - **get_deposit_account**: Get details for a specific Mambu deposit account
 - **get_loan_account**: Get details for a specific Mambu loan account
 - **get_task**: Get details for a specific Mambu task
@@ -22,9 +21,10 @@ The Mambu MCP server allows you to interact with your Mambu tenant. You can list
 - **list_clients**: List Mambu clients
 - **list_communications**: List Mambu communications
 - **list_deposit_accounts**: List Mambu deposit accounts
-- **list_loan_accounts**: List Mambu loan accounts
 - **list_tasks**: List Mambu tasks
 - **list_transactions**: List Mambu transactions
+- **get_client**: Get details for a specific Mambu client
+- **list_loan_accounts**: List Mambu loan accounts
 
 
 ## 💬 Prompt Examples

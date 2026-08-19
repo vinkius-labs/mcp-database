@@ -39,13 +39,13 @@ Connect your **Milvus** instance to any AI agent and take full control of your h
 
 List index collections tracked inside the Milvus Vector Database
 - **describe_collection**: Explore the explicit schema mapping and indexing definition of a Milvus collection
+- **get_entities**: Extract unique vector items bounding exactly by known Primary Keys
+- **delete_entities**: Irreversibly delete specific vector records utilizing primary keys
+- **get_collection_stats**: Get collection statistics bounding row counts natively
+- **query_entities**: Query explicitly using scalar expressions to retrieve entities
 - **search_vectors**: Make sure to feed a strict explicit JSON Array matching exact dimensions.
 
 Search nearest vector neighbors matching implicit embedding inputs
-- **query_entities**: Query explicitly using scalar expressions to retrieve entities
-- **get_entities**: Extract unique vector items bounding exactly by known Primary Keys
-- **get_collection_stats**: Get collection statistics bounding row counts natively
-- **delete_entities**: Irreversibly delete specific vector records utilizing primary keys
 
 
 ## 💬 Prompt Examples

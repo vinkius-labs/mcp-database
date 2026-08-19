@@ -35,11 +35,12 @@ Connect your **Lob** account to any AI agent and manage direct mail through natu
 
 
 ## Available Tools (9)
-- **autocomplete_address**: Suggest address completions
-- **create_check**: Send a physical check
 - **create_letter**: Supports certified mail and custom inserts.
 
 Send a physical letter
+- **list_letters**: List sent letters
+- **autocomplete_address**: Suggest address completions
+- **create_check**: Send a physical check
 - **create_postcard**: Supports HTML or PDF for front and back.
 
 Send a physical postcard
@@ -47,7 +48,6 @@ Send a physical postcard
 - **list_postcards**: List sent postcards
 - **verify_intl_address**: Verify an international address
 - **verify_us_address**: Verify a US address
-- **list_letters**: List sent letters
 
 
 ## 💬 Prompt Examples

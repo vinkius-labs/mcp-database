@@ -35,26 +35,26 @@ Connect your **TestMu AI (formerly LambdaTest)** account to any AI agent and tak
 
 
 ## Available Tools (10)
-- **list_builds**: Groups thousands of executed Selenium, Cypress, Playwright, or Appium browser tests into their respective parent CI/CD builds.
-
-List all test automation builds on LambdaTest Cloud
 - **list_sessions**: Provides OS, Browser version, execution duration, and final completion status of the Selenium/Playwright scripts.
 
 List recent automated test sessions executed on LambdaTest
+- **list_tunnels**: List all active secure Tunnels (UnderTest tunnels)
+- **get_build_sessions**: Extract all explicit test sessions associated with a Build
+- **get_build**: Get exact telemetry for a specific LambdaTest build
+- **get_screenshots**: saveScreenshot()` or failure-hook logic within the LambdaTest grid.
+
+Fetch visual bug screenshots captured during a test session
 - **get_session**: Identifies explicit console errors, network configuration, and URL artifacts necessary to debug why a specific UI interaction failed.
 
 Get deep context for a specific automated test session
 - **get_session_logs**: Extract precise Selenium/Appium command logs for a test
-- **get_screenshots**: saveScreenshot()` or failure-hook logic within the LambdaTest grid.
-
-Fetch visual bug screenshots captured during a test session
 - **get_video**: Retrieve the full video recording URL for a test execution
-- **get_build**: Get exact telemetry for a specific LambdaTest build
-- **list_tunnels**: List all active secure Tunnels (UnderTest tunnels)
+- **list_builds**: Groups thousands of executed Selenium, Cypress, Playwright, or Appium browser tests into their respective parent CI/CD builds.
+
+List all test automation builds on LambdaTest Cloud
 - **list_platforms**: Returns exactly which combinations of macOS, Windows, iOS, and Android versions are actively available in the testing grid.
 
 List all supported OS/browser capabilities available
-- **get_build_sessions**: Extract all explicit test sessions associated with a Build
 
 
 ## 💬 Prompt Examples
