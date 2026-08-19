@@ -33,6 +33,9 @@ Empower your conversational AI with deep integration into **ConnectWise Manage (
 
 ## Available Tools (9)
 - **create_ticket**: Create a new service ticket in ConnectWise Manage
+- **list_companies**: Use to discover company identifiers for ticket creation.
+
+Retrieve a list of companies/clients in ConnectWise
 - **get_company**: Returns name, contact info, territory, and status.
 
 Retrieve detailed information about a specific company
@@ -40,9 +43,6 @@ Retrieve detailed information about a specific company
 
 Retrieve detailed information about a specific service ticket
 - **list_sales_activities**: Retrieve a list of sales and service activities
-- **list_companies**: Use to discover company identifiers for ticket creation.
-
-Retrieve a list of companies/clients in ConnectWise
 - **list_contacts**: Use to find external contact details.
 
 Retrieve a list of individual contacts within companies

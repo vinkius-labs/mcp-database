@@ -37,17 +37,17 @@ Connect your **Contentstack** account to any AI agent and take full control of y
 
 ## Available Tools (10)
 - **create_cms_entry**: Provision a highly-available JSON Payload generating new Contentstack Drafts
-- **get_schema_details**: Perform structural extraction of properties driving active Fields
-- **get_single_entry**: Retrieve explicit Cloud logging tracing explicit Entry UUIDs limitlessly
-- **list_media_assets**: Inspect deep internal arrays mitigating specific Picture limits
-- **list_global_schemas**: Enumerate explicitly attached structured rules exporting active Types
-- **list_type_entries**: Identify bounded routing spaces inside the Headless Contentstack CMS schemas
-- **update_cms_entry**: Mutate globalThis Web CRM boundaries substituting Draft values safely
-- **wipe_cms_entry**: Irreversibly vaporize explicit App nodes dropping live Document rows
 - **get_media_asset**: Retrieve the exact structural matching verifying explicit Media IDs
+- **get_single_entry**: Retrieve explicit Cloud logging tracing explicit Entry UUIDs limitlessly
+- **list_global_schemas**: Enumerate explicitly attached structured rules exporting active Types
+- **list_media_assets**: Inspect deep internal arrays mitigating specific Picture limits
+- **list_type_entries**: Identify bounded routing spaces inside the Headless Contentstack CMS schemas
 - **publish_to_environment**: g., development, production).
 
 Dispatch an automated validation check routing CMS Data Live
+- **update_cms_entry**: Mutate globalThis Web CRM boundaries substituting Draft values safely
+- **get_schema_details**: Perform structural extraction of properties driving active Fields
+- **wipe_cms_entry**: Irreversibly vaporize explicit App nodes dropping live Document rows
 
 
 ## 💬 Prompt Examples

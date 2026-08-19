@@ -33,15 +33,15 @@ Integrate **Copy.ai**, the AI OS for GTM (Go-to-Market), directly into your work
 
 
 ## Available Tools (7)
-- **delete_webhook**: Remove a registered webhook
 - **get_workflow_run_status**: Status can be PROCESSING, COMPLETE, or FAILED.
 
 Check the status and results of a workflow run
+- **delete_webhook**: Remove a registered webhook
 - **get_webhook**: Get details of a specific webhook
-- **list_workflow_runs**: List past executions of a workflow
 - **list_webhooks**: ai account.
 
 List all registered webhooks
+- **list_workflow_runs**: List past executions of a workflow
 - **register_webhook**: Register a webhook for workflow events
 - **run_workflow**: Provide the workflow ID and starting variables as a JSON object. Returns a run_id to track progress.
 

@@ -37,30 +37,30 @@ Connect your **Drata** account to any AI agent and take full control of your con
 
 
 ## Available Tools (10)
-- **drata_get_person**: Returns MDM (Jamf/Intune) enrollment status, background check clearance date, onboarding milestone completion, linked IdP (Okta/Google Workspace) groups for access control mapping, security training completion date, and any compliance gaps. Use when investigating a specific employee compliance issue.
-
-Get the compliance onboarding state of a specific employee — MDM enrollment, background checks, IdP grouping, and training milestones
 - **drata_get_policy**: Essential for assessing audit readiness regarding mandatory annual document refreshes.
 
 Get detailed status of a specific Drata policy — renewal dates, employee acknowledgment rates, owner assignment, and version history
-- **drata_list_tests**: Each test monitors a specific technical requirement in real-time (e.g., "S3 Buckets must not be public", "GitHub branch protection enabled", "MFA enforced in Okta"). Shows test name, associated control, pass/fail status, last evaluation time, and failing resources if any. Use when the user asks about automated monitoring, which checks are failing, or real-time compliance status.
-
-List Drata automated continuous compliance tests — real-time monitors checking AWS, GitHub, Okta, and other integrations for security deviations
 - **drata_list_assets**: Each asset shows: resource type, resource ID, compliance status against linked controls, encryption-at-rest verification, network boundary adherence, and associated region/VPC. Use when the user asks about infrastructure compliance, unencrypted resources, or needs an asset inventory for audit evidence.
 
 List cloud infrastructure assets monitored by Drata — EC2 instances, RDS databases, S3 buckets, and other resources with compliance status
 - **drata_list_controls**: Each control represents a specific requirement (e.g., "Passwords must be 12+ characters", "MFA enabled for all users", "Encryption at rest required"). Returns control name, description, passing/failing status, mapped framework(s), linked tests, and control owner. Use when the user asks about compliance posture, failing controls, or audit gap analysis.
 
 List all compliance controls in Drata — the discrete technical and administrative requirements mapped to SOC 2, ISO 27001, HIPAA, and GDPR frameworks
+- **drata_get_person**: Returns MDM (Jamf/Intune) enrollment status, background check clearance date, onboarding milestone completion, linked IdP (Okta/Google Workspace) groups for access control mapping, security training completion date, and any compliance gaps. Use when investigating a specific employee compliance issue.
+
+Get the compliance onboarding state of a specific employee — MDM enrollment, background checks, IdP grouping, and training milestones
+- **drata_list_tests**: Each test monitors a specific technical requirement in real-time (e.g., "S3 Buckets must not be public", "GitHub branch protection enabled", "MFA enforced in Okta"). Shows test name, associated control, pass/fail status, last evaluation time, and failing resources if any. Use when the user asks about automated monitoring, which checks are failing, or real-time compliance status.
+
+List Drata automated continuous compliance tests — real-time monitors checking AWS, GitHub, Okta, and other integrations for security deviations
 - **drata_list_frameworks**: Each framework shows: name, version, overall readiness score, percentage of controls passing, number of controls mapped, and target audit date. Provides a high-level view of multi-framework compliance posture. Use for board-level reporting, audit planning, or determining which framework needs the most attention.
 
 List active compliance frameworks tracked by the Drata workspace — SOC 2 Type II, ISO 27001, HIPAA, GDPR, PCI DSS — with readiness scores
-- **drata_list_personnel**: Each person includes: name, email, role, employment type, Security Awareness Training status (completed/overdue/not started), device compliance (MDM enrolled, encrypted, antivirus), background check clearance, and policy acceptance rates. Use for "who is non-compliant?", "which employees have overdue training?", or pre-audit personnel reporting.
-
-List all tracked personnel in Drata with security training status, device compliance, background check clearance, and policy acceptance
 - **drata_list_policies**: Each policy includes: name, category, CISO approval status, version number, last review date, next review due, and employee acknowledgment completion rate. Policies are mandatory for SOC 2 / ISO 27001. Use when the user asks about policy status, which policies need review, or audit readiness regarding documentation.
 
 List all security and compliance policies in Drata — Information Security, Data Classification, Incident Response, Acceptable Use, and more
+- **drata_list_personnel**: Each person includes: name, email, role, employment type, Security Awareness Training status (completed/overdue/not started), device compliance (MDM enrolled, encrypted, antivirus), background check clearance, and policy acceptance rates. Use for "who is non-compliant?", "which employees have overdue training?", or pre-audit personnel reporting.
+
+List all tracked personnel in Drata with security training status, device compliance, background check clearance, and policy acceptance
 - **drata_list_vendors**: Each vendor includes: company name, data risk classification (Critical/High/Medium/Low), security questionnaire completion status, SOC 2 report review status, last assessment date, data categories shared, and assigned risk owner. Use for vendor risk assessment, subprocessor audits, or evaluating the security posture of your supply chain.
 
 List third-party vendors in Drata vendor risk management — risk classification, security questionnaire status, and SOC 2 report reviews

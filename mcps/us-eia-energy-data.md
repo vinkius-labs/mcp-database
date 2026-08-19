@@ -33,18 +33,18 @@ Integrate the **U.S. Energy Information Administration (EIA)**, the official sou
 
 
 ## Available Tools (10)
-- **list_renewable_energy_stats**: List U.S. renewable energy generation and consumption data
+- **get_energy_series_data**: Get time-series data for a specific energy metric
 - **list_electricity_generation**: List U.S. electricity generation and retail sales data
+- **list_regional_fuel_prices**: Identify fuel price variations across different U.S. regions (mock logic)
+- **list_renewable_energy_stats**: List U.S. renewable energy generation and consumption data
 - **get_eia_api_metadata**: Retrieve metadata for the current EIA API connection
+- **list_coal_production**: List U.S. coal production and distribution data
+- **list_energy_categories**: List U.S. EIA energy data categories
+- **list_natural_gas_production**: List U.S. natural gas production and supply data
 - **quick_us_energy_audit**: S. energy health.
 
 Retrieve a high-level summary of current U.S. energy production across all sources
-- **get_energy_series_data**: Get time-series data for a specific energy metric
-- **list_energy_categories**: List U.S. EIA energy data categories
-- **list_coal_production**: List U.S. coal production and distribution data
-- **list_natural_gas_production**: List U.S. natural gas production and supply data
 - **list_petroleum_prices**: List U.S. petroleum and gasoline price data
-- **list_regional_fuel_prices**: Identify fuel price variations across different U.S. regions (mock logic)
 
 
 ## 💬 Prompt Examples

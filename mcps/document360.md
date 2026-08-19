@@ -36,13 +36,13 @@ Connect your **Document360** portal to any AI agent and take full control of you
 
 
 ## Available Tools (7)
-- **list_projects**: List project versions
-- **list_categories**: List categories in a version
 - **list_team**: List team accounts
 - **analytics**: Get knowledge base analytics
+- **list_categories**: List categories in a version
+- **list_projects**: List project versions
+- **search**: Search articles
 - **list_articles**: List articles in a category
 - **get_article**: Get article content
-- **search**: Search articles
 
 
 ## 💬 Prompt Examples

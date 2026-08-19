@@ -34,10 +34,10 @@ Integrate **EasyPost**, the leading shipping API for e-commerce, directly into y
 
 ## Available Tools (10)
 - **get_easypost_account_metadata**: Retrieve metadata and usage limits for your EasyPost account
-- **list_carrier_accounts**: List all connected carrier accounts (e.g. UPS, FedEx, USPS)
-- **quick_delivery_health_audit**: Retrieve a high-level summary of shipment activity and delivery success rates
-- **list_shipping_shipments**: List all shipments created in your EasyPost account
 - **list_active_trackers**: List all active tracking objects in your account
+- **list_carrier_accounts**: List all connected carrier accounts (e.g. UPS, FedEx, USPS)
+- **list_shipping_shipments**: List all shipments created in your EasyPost account
+- **quick_delivery_health_audit**: Retrieve a high-level summary of shipment activity and delivery success rates
 - **search_by_tracking_code**: Search for a tracker using a specific tracking code
 - **get_shipment_details**: Get detailed information and rates for a specific shipment
 - **get_tracking_details**: Get real-time tracking events and status for a specific tracker

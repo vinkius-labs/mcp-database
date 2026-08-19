@@ -44,37 +44,20 @@ You must provide the repository ID (obtained from get_repository).
 Use this to enable code quality monitoring for a repository that was previously inactive.
 
 Activate a repository for code analysis in DeepSource
-- **deactivate_repository**: No new analyses will run until the repository is reactivated.
-You must provide the repository ID (obtained from get_repository).
-Use this to pause analysis for archived repositories or when you want to stop billing for a specific repository.
-
-Deactivate a repository to stop code analysis in DeepSource
 - **get_report_card**: This provides a quick health check of the repository's overall code quality status.
 You must provide the repository name, login, and VCS provider.
 Use this to get a high-level view of code quality trends and identify areas needing improvement.
 
 Get the overall report card (grade) for a repository
+- **get_repository**: You must provide the repository name, login (user or org name), and VCS provider (e.g., GITHUB, GITLAB, BITBUCKET).
+Use this to inspect repository configuration before querying issues, analyses, or metrics.
+
+Get details of a specific repository in DeepSource
 - **get_repository_metrics**: You must provide the repository name, login, and VCS provider.
 Optionally filter by specific metric shortcodes (e.g., "LCV" for line coverage, "MI" for maintainability index, "CC" for cyclomatic complexity).
 If no shortcodes specified, returns all available metrics with their values and thresholds.
 
 Get code quality metrics for a repository
-- **get_repository**: You must provide the repository name, login (user or org name), and VCS provider (e.g., GITHUB, GITLAB, BITBUCKET).
-Use this to inspect repository configuration before querying issues, analyses, or metrics.
-
-Get details of a specific repository in DeepSource
-- **get_test_coverage**: Shows the coverage percentage value and any configured thresholds.
-You must provide the repository name, login, and VCS provider.
-Use this to monitor code quality and ensure adequate test coverage across your codebase.
-
-Get test coverage metrics for a repository
-- **get_viewer**: Use this to verify your API token is working and to get your user details from DeepSource.
-
-Get the authenticated user profile from DeepSource
-- **get_vulnerability**: You must provide the repository name, login, VCS provider, and the vulnerability occurrence ID (obtained from list_vulnerabilities).
-Use this to deep-dive into a specific vulnerability before deciding on remediation steps.
-
-Get details of a specific dependency vulnerability by its ID
 - **list_analysis_runs**: You must provide the repository name, login, and VCS provider.
 Optionally filter by branch name and limit the number of results (default: 20).
 Each run shows which analyzer was used (e.g., PYTHON, JAVASCRIPT, GO) and whether the analysis succeeded or failed.
@@ -97,16 +80,33 @@ Optionally limit the number of results (default: 20).
 Use this to identify security risks in your dependencies and prioritize remediation.
 
 List dependency vulnerabilities in a repository (SCA)
-- **regenerate_dsn**: The DSN is used to authenticate DeepSource analysis runs.
-You must provide the repository ID (obtained from get_repository).
-This action invalidates the old DSN and returns the new one. Use this if you suspect the DSN has been compromised or needs rotation.
-
-Regenerate the DSN (Data Source Name) for a repository
 - **update_default_branch**: This affects which branch is analyzed by default.
 You must provide the repository ID (from get_repository) and the new branch name (e.g., "main", "develop", "master").
 Use this when your team changes the default branch name (e.g., migrating from "master" to "main").
 
 Update the default branch for a repository in DeepSource
+- **deactivate_repository**: No new analyses will run until the repository is reactivated.
+You must provide the repository ID (obtained from get_repository).
+Use this to pause analysis for archived repositories or when you want to stop billing for a specific repository.
+
+Deactivate a repository to stop code analysis in DeepSource
+- **get_test_coverage**: Shows the coverage percentage value and any configured thresholds.
+You must provide the repository name, login, and VCS provider.
+Use this to monitor code quality and ensure adequate test coverage across your codebase.
+
+Get test coverage metrics for a repository
+- **get_viewer**: Use this to verify your API token is working and to get your user details from DeepSource.
+
+Get the authenticated user profile from DeepSource
+- **get_vulnerability**: You must provide the repository name, login, VCS provider, and the vulnerability occurrence ID (obtained from list_vulnerabilities).
+Use this to deep-dive into a specific vulnerability before deciding on remediation steps.
+
+Get details of a specific dependency vulnerability by its ID
+- **regenerate_dsn**: The DSN is used to authenticate DeepSource analysis runs.
+You must provide the repository ID (obtained from get_repository).
+This action invalidates the old DSN and returns the new one. Use this if you suspect the DSN has been compromised or needs rotation.
+
+Regenerate the DSN (Data Source Name) for a repository
 
 
 ## 💬 Prompt Examples

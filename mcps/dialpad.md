@@ -33,20 +33,20 @@ Integrate **Dialpad**, the AI-powered cloud communications platform, directly in
 
 
 ## Available Tools (10)
-- **get_person_details**: Perform structural extraction of properties driving an explicit Extension
-- **upsert_business_contact**: Bootstrap an entirely mutable Contact array resolving Dialpad directories
-- **wipe_directory_entry**: Irreversibly vaporize explicit contact constraints destroying Dialpad DB links
-- **list_team_contacts**: 164 capacities directly.
-
-Identify bounded routing spaces verifying explicit Business Directories
-- **list_raw_call_logs**: Inspect deep internal arrays parsing real-time Telephony
-- **get_agent_profile**: Enumerate explicitly attached structured rules traversing self-identities
-- **list_call_statistics**: Retrieve explicit Cloud logging tracing rejected Call paths
-- **list_ivr_departments**: Identify precise active arrays spanning IVR groupings
 - **dispatch_office_sms**: 164.
 
 Provision a massively scalable JSON Payload rendering outbound Business Texts
+- **get_person_details**: Perform structural extraction of properties driving an explicit Extension
+- **get_agent_profile**: Enumerate explicitly attached structured rules traversing self-identities
+- **list_call_statistics**: Retrieve explicit Cloud logging tracing rejected Call paths
+- **list_ivr_departments**: Identify precise active arrays spanning IVR groupings
+- **list_raw_call_logs**: Inspect deep internal arrays parsing real-time Telephony
+- **list_team_contacts**: 164 capacities directly.
+
+Identify bounded routing spaces verifying explicit Business Directories
 - **update_presence_status**: Mutate globalThis Web boundaries substituting identifying Desktop status strings
+- **upsert_business_contact**: Bootstrap an entirely mutable Contact array resolving Dialpad directories
+- **wipe_directory_entry**: Irreversibly vaporize explicit contact constraints destroying Dialpad DB links
 
 
 ## 💬 Prompt Examples

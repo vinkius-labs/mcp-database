@@ -36,17 +36,17 @@ Connect your **Cronofy** account to any AI agent and take full control of your u
 
 
 ## Available Tools (10)
-- **delete_event**: Irreversibly vaporize explicit validations extracting rich Provider syncs
-- **list_calendars**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
 - **get_free_busy**: Enumerate explicitly attached structured rules exporting active Overlaps
+- **list_calendars**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
+- **create_event**: Provision a highly-available JSON Payload generating explicit Sync links
+- **delete_event**: Irreversibly vaporize explicit validations extracting rich Provider syncs
 - **read_events**: cronofy.com/v1/events` pulling unified aggregated Google, iCloud, and Exchange overlays limitlessly.
 
 Identify bounded CRM records inside the Headless Cronofy Engine
-- **create_event**: Provision a highly-available JSON Payload generating explicit Sync links
-- **query_availability**: Dispatch an automated validation check routing explicit Cross-Provider checks
 - **get_account**: Inspect deep internal arrays mitigating specific Sub Provider lists
 - **get_user_info**: Identify precise active arrays spanning native Gateway auth bounds
 - **list_profiles**: Retrieve the exact structural matching verifying Blueprint directories
+- **query_availability**: Dispatch an automated validation check routing explicit Cross-Provider checks
 - **create_scheduling_request**: Fetch elaborate explicit mapped limits via native forms dispatch
 
 

@@ -36,20 +36,20 @@ Connect your **Directus** instance to any AI agent and manage your content datab
 
 
 ## Available Tools (16)
-- **create_item**: Create an item
 - **delete_item**: Delete an item
 - **get_collection**: Get collection details
-- **get_file**: Get file details
 - **get_item**: Get item details
 - **list_activity**: List recent activity
+- **list_files**: List files
+- **list_users**: List users
+- **check_directus_status**: Verify connectivity
+- **create_item**: Create an item
+- **get_file**: Get file details
 - **list_collections**: List collections
 - **list_fields**: List fields
-- **list_files**: List files
 - **list_items**: List items
-- **list_users**: List users
 - **search_items**: Search items
 - **update_item**: Update an item
-- **check_directus_status**: Verify connectivity
 - **get_me**: Get current user
 - **list_roles**: List roles
 

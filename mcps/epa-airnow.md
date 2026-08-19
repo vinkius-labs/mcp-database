@@ -22,11 +22,11 @@ Ideal for health-conscious applications, community dashboards, outdoor adventure
 
 
 ## Available Tools (3)
+- **get_current_aqi_by_latlon**: Get real-time Air Quality Index observation using geographic coordinates
 - **get_current_aqi_by_zip**: Requires a 5-digit US ZIP Code.
 
 Get current real-time Air Quality Index observation using a US ZIP code
 - **get_forecast_aqi_by_zip**: Get future AQI forecasts for a given US ZIP code
-- **get_current_aqi_by_latlon**: Get real-time Air Quality Index observation using geographic coordinates
 
 
 ## 💬 Prompt Examples

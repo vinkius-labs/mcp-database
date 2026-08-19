@@ -37,16 +37,16 @@ Connect your **Doctolib** partner account to any AI agent and take full control 
 
 
 ## Available Tools (8)
+- **lister_specialites**: Lister toutes les spécialités médicales disponibles
+- **consulter_praticien**: Consulter le profil d'un praticien
+- **disponibilites**: Vérifier les créneaux disponibles pour un praticien
 - **rechercher_praticiens**: Restricts search to explicit city boundaries natively bypassing local lists.
 
 Rechercher des praticiens par spécialité et ville
-- **consulter_praticien**: Consulter le profil d'un praticien
-- **lister_specialites**: Lister toutes les spécialités médicales disponibles
-- **disponibilites**: Vérifier les créneaux disponibles pour un praticien
-- **lister_rendez_vous**: Lister les rendez-vous pris
-- **prendre_rendez_vous**: Prendre un rendez-vous médical
 - **lister_cabinets**: Lister les cabinets médicaux
+- **lister_rendez_vous**: Lister les rendez-vous pris
 - **motifs_consultation**: Lister les motifs de consultation d'un praticien
+- **prendre_rendez_vous**: Prendre un rendez-vous médical
 
 
 ## 💬 Prompt Examples

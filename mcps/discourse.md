@@ -33,10 +33,10 @@ Integrate **Discourse**, the open-source platform for community discussion, dire
 
 
 ## Available Tools (10)
-- **list_forum_categories**: List all public categories available in the Discourse instance
-- **list_group_members**: List all users belonging to a specific community group
 - **list_community_groups**: List all user groups configured in the community
 - **list_latest_topics**: List the most recent topics across all categories in the community
+- **list_forum_categories**: List all public categories available in the Discourse instance
+- **list_group_members**: List all users belonging to a specific community group
 - **list_trending_discussions**: Identify topics with the highest engagement recently (mock logic)
 - **search_community_content**: Search for topics, posts, or users matching a keyword
 - **get_site_configuration**: Retrieve general settings and metadata for the Discourse instance

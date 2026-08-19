@@ -33,16 +33,16 @@ Connect **Descript** to your AI agent and manage your video and podcast producti
 
 
 ## Available Tools (8)
-- **list_exports**: List project exports
 - **list_templates**: List available templates
+- **list_exports**: List project exports
 - **list_projects**: List all Descript projects
-- **get_project**: Get project details
-- **list_drives**: List team drives
+- **create_export**: Export a project
 - **create_transcription**: Supports audio and video files.
 
 Transcribe a media file
+- **get_project**: Get project details
 - **get_transcription**: Get transcription result
-- **create_export**: Export a project
+- **list_drives**: List team drives
 
 
 ## 💬 Prompt Examples

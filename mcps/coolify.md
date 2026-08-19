@@ -36,9 +36,6 @@ Connect your **Coolify** instance to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
-- **get_application**: Examines mapped GitHub branches, automatic rollout toggles (push to deploy), and assigned Traefik reverse proxy FQDN paths.
-
-Fetch elaborate internal topology metrics for a given Application
 - **get_database**: Highly required when linking newly provisioned Web Apps to Backend Datastores.
 
 Extrapolate internal configuration arrays for a Database
@@ -51,19 +48,22 @@ List all frontend/backend Applications actively managed by Coolify
 - **list_databases**: Isolates database bounding boxes mapping to applications so you can properly retrieve Connection Strings and backup cadence timelines.
 
 List managed PostgreSQL, MySQL, and Redis configurations
+- **get_application**: Examines mapped GitHub branches, automatic rollout toggles (push to deploy), and assigned Traefik reverse proxy FQDN paths.
+
+Fetch elaborate internal topology metrics for a given Application
 - **list_servers**: Used to identify the raw physical endpoints running Docker swarms that host subsequent applications.
 
 List all self-hosted Server Nodes attached to Coolify
-- **stop_application**: Used precisely for pausing billing or restricting web perimeter ingress during a cyber incident directly via the Coolify dashboard API.
-
-Halt execution algorithms suspending the mapped Application
-- **trigger_deployment**: Performs `git fetch`, rebuilds Nixpacks images, caches dependencies, and rolls the updated Docker image out directly over the previous active application version.
-
-Trigger a raw build pipeline fetching the latest Git commit
 - **restart_application**: Ensures updated config `.env` variables injected via Coolify take effect immediately in runtime RAM.
 
 Bounce a Coolify application recycling its container states
 - **start_application**: Spin up containers mapped to a suspended Application UUID
+- **trigger_deployment**: Performs `git fetch`, rebuilds Nixpacks images, caches dependencies, and rolls the updated Docker image out directly over the previous active application version.
+
+Trigger a raw build pipeline fetching the latest Git commit
+- **stop_application**: Used precisely for pausing billing or restricting web perimeter ingress during a cyber incident directly via the Coolify dashboard API.
+
+Halt execution algorithms suspending the mapped Application
 
 
 ## 💬 Prompt Examples
