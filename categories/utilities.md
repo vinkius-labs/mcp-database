@@ -8,7 +8,9 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [3D Box Fitter Estimator](../mcps/3d-box-fitter-estimator.md) | Determine if 3D boxes fit in a container using layered 2D projection. |
 | [Acoustic Reverberation Calculator](../mcps/acoustic-reverberation-calculator.md) | Estimate RT60 reverberation time and assess room acoustic suitability. |
 | [Advanced Timezone Engine](../mcps/advanced-timezone-engine.md) | Precise IANA timezone operations including historical DST transitions, ambiguity detection, and global time synchronization. |
+| [Agent Context Window Manager](../mcps/agent-context-window-manager.md) | Deterministic token tracking and context optimization for long-running AI conversations. |
 | [Audio Unit Converter](../mcps/audio-unit-converter.md) | Convert between musical frequencies, rhythmic durations, digital sample counts, and logarithmic amplitude levels. |
+| [AWS Location Service Geofencing Calculator](../mcps/aws-location-service-geofencing-calculator.md) | Estimate AWS Location Service capacity, resource usage, and operational performance. |
 | [Bates Numbering Generator Engine](../mcps/bates-numbering-generator-engine.md) | Generate flawless, sequentially accurate Bates numbering arrays for massive e-Discovery documentation without LLM skipping. |
 | [Blood Alcohol Content Calculator](../mcps/blood-alcohol-content-calculator.md) | Estimate BAC, legal limits, and impairment risks. |
 | [Bolt Pattern Finder](../mcps/bolt-pattern-finder.md) | Precise vehicle wheel specification lookup and cross-compatibility engine. |
@@ -59,6 +61,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Prime Factorization, GCD & LCM Calculator](../mcps/prime-factorization-gcd-lcm-calculator.md) | Compute exact prime factorizations and calculate GCD and LCM for sets of integers. |
 | [Rank Percentile Calculator](../mcps/rank-percentile-calculator.md) | Discover exactly what percentage of players you've surpassed in games like Valorant, League of Legends, and CS2. |
 | [Realistic Dog Age Calculator](../mcps/realistic-dog-age-calculator.md) | Convert dog years to human years using a size-dependent logarithmic aging model. |
+| [Retry Backoff Calculator](../mcps/retry-backoff-calculator.md) | Calculate deterministic exponential backoff delays and retry schedules. |
 | [Retry with Backoff Executor](../mcps/retry-with-backoff-executor.md) | Deterministic retry logic with exponential backoff and jitter for LLM API calls. |
 | [Roman Numeral Engine](../mcps/roman-numeral-engine.md) | Convert between Arabic integers and Roman numerals with support for large-scale values using vinculum notation. |
 | [RPM & Speed Gear Calculator](../mcps/rpm-speed-gear-calculator.md) | Calculate engine RPM at specific vehicle speeds or predict speed from a given RPM. |

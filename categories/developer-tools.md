@@ -13,8 +13,12 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [AdGuard Home](../mcps/adguard-home.md) | Manage your AdGuard Home instance — control protection, DNS settings, and filtering rules directly from any AI agent. |
 | [Agent Description & Tool Alignment Checker](../mcps/agent-description-tool-alignment-checker.md) | Validates alignment between agent descriptions and assigned tools to prevent multi-agent framework errors. |
 | [Agent Error Recovery Rate Calculator](../mcps/agent-error-recovery-rate-calculator.md) | Analyzes execution logs to calculate tool call success ratios and agent recovery rates. |
+| [Agent Evaluation Metrics Calculator](../mcps/agent-evaluation-metrics-calculator.md) | A deterministic engine for measuring agentic performance through statistical accuracy, efficiency, and reliability metrics. |
+| [Agent Handoff Protocol Calculator](../mcps/agent-handoff-protocol-calculator.md) | Model the efficiency, stability, and performance impact of multi-agent handoffs. |
+| [Agent Latency Pipeline Calculator](../mcps/agent-latency-pipeline-calculator.md) | Model end-to-end latency, retry impacts, and SLA compliance for agentic workflows. |
 | [Agent Persona Consistency Scanner](../mcps/agent-persona-consistency-scanner.md) | A precision utility for measuring how closely an LLM adheres to a target persona. |
 | [Agent Role Conflict Detector](../mcps/agent-role-conflict-detector.md) | Detects overlapping responsibilities and role conflicts in multi-agent teams. |
+| [Agent Workflow Validator](../mcps/agent-workflow-validator.md) | Validates the structural integrity, metrics, and constraints of deterministic finite state machine workflows. |
 | [AgentOps (Agent Telemetry and Monitoring)](../mcps/agentops-agent-telemetry-and-monitoring.md) | Monitor and observe your AI agents with AgentOps — track traces, spans, and project metrics directly from your agent. |
 | [Agify](../mcps/agify.md) | Predict the age of a person based on their first name using the Agify.io API. |
 | [Agility CMS](../mcps/agility-cms.md) | Manage and query your Agility CMS content through AI — navigate sitemaps, search lists, and fetch layouts. |
@@ -125,6 +129,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Contentful](../mcps/contentful.md) | Equip your AI agent to fetch, create, and manage digital content effortlessly using Contentful's headless architecture. |
 | [Contentstack](../mcps/contentstack.md) | Equip your AI agent to instantly retrieve digital content and schemas using the Contentstack Delivery API. |
 | [ContentStack (Management)](../mcps/contentstack-management.md) | Grant your AI agent read-write capabilities using ContentStack CMA. Update, publish, and manage contents, schemas, and environments from chat. |
+| [Context Window Eviction Planner](../mcps/context-window-eviction-planner.md) | A deterministic engine to manage LLM context windows by calculating optimal message eviction. |
 | [ContextQA](../mcps/contextqa.md) | Automate testing via ContextQA — manage test suites, track AI-healing executions, trigger automated runs, and audit API tests directly from any AI agent. |
 | [Convoy](../mcps/convoy.md) | Manage webhooks with Convoy — create endpoints, broadcast events, and monitor delivery directly from your AI agent. |
 | [Coqui TTS (Open Source Speech Studio API)](../mcps/coqui-tts-open-source-speech-studio-api.md) | Generate high-quality speech from text using Coqui TTS. List available models and synthesize audio directly from your AI agent. |
@@ -164,6 +169,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [DeepOpinion (No-code NLP & Text AI API)](../mcps/deepopinion-no-code-nlp-text-ai-api.md) | Automate NLP and text analysis with DeepOpinion — list custom models, run single predictions, and process text batches directly from your AI agent. |
 | [DeepSource](../mcps/deepsource.md) | Automate code quality monitoring via DeepSource — analyze issues, vulnerabilities, metrics, and report cards directly from any AI agent. |
 | [Dependency Impact Analyzer](../mcps/dependency-impact-analyzer.md) | Analyzes the security, legal, and structural impact of adding or updating dependencies. |
+| [Dependency Resolution Engine](../mcps/dependency-resolution-engine.md) | Deterministic dependency resolution for agent tool and plugin loading. |
 | [Descope (Auth Platform)](../mcps/descope-auth-platform.md) | Manage user authentication flows via Descope — initiate OTPs, Magic Links, Enchanted Links, and OAuth directly from your AI agent. |
 | [Design Token Transformer](../mcps/design-token-transformer.md) | Convert, resolve, and generate multi-platform design tokens (JSON, CSS, SCSS, Tailwind, etc.). |
 | [Deta Space (Serverless Personal Cloud API)](../mcps/deta-space-serverless-personal-cloud-api.md) | Manage your personal cloud via Deta Space — store data in Deta Base and files in Deta Drive directly from any AI agent. |

@@ -4,6 +4,7 @@ Explore the open database of **algorithms** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [A* Pathfinder](../mcps/a-pathfinder.md) | Deterministic A* pathfinding for grid-based navigation. |
 | [Shortest Path Engine](../mcps/shortest-path-engine.md) | Find optimal paths in weighted graphs using Dijkstra, A*, and Bellman-Ford algorithms. |
 | [Topological Sort Engine](../mcps/topological-sort-engine.md) | Perform topological sorting on DAGs using Kahn's and DFS algorithms to resolve dependencies and detect cycles. |
 

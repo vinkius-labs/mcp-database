@@ -4,8 +4,12 @@ Explore the open database of **scheduling** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Agent Resource Fairness Scheduler](../mcps/agent-resource-fairness-scheduler.md) | Deterministic fair resource allocation for competing agents using weighted fair queuing. |
+| [DAG Topological Scheduler](../mcps/dag-topological-scheduler.md) | Deterministic task scheduling and critical path analysis for multi-agent DAGs. |
+| [Graph Coloring Scheduler](../mcps/graph-coloring-scheduler.md) | Deterministic agent scheduling using graph coloring to prevent resource conflicts. |
 | [Group Chat Speaker Selector](../mcps/group-chat-speaker-selector.md) | Deterministic speaker selection engine for multi-agent group chats. |
 | [Pet Worming Schedule](../mcps/pet-worming-schedule.md) | Calculate deworming intervals and product suitability for dogs and cats based on age and risk. |
+| [Priority Queue with Aging Scheduler](../mcps/priority-queue-with-aging-scheduler.md) | A deterministic scheduler that manages task execution using priority-based queues with an anti-starvation aging mechanism. |
 | [Recurring Event Expander](../mcps/recurring-event-expander.md) | Expands RFC 5545 RRULE strings into concrete lists of occurrence dates. |
 | [Timeline Cushion Calculator](../mcps/timeline-cushion-calculator.md) | Generate a synchronized wedding timeline with realistic logistical buffers and milestone timestamps. |
 

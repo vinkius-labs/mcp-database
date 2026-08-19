@@ -10,6 +10,7 @@ Explore the open database of **business-operations** Model Context Protocol (MCP
 | [Freshsuccess](../mcps/freshsuccess.md) | Manage customer success, track health scores, and oversee account usage via AI agents with Freshsuccess. |
 | [Jestor](../mcps/jestor.md) | Manage data, workflows, and records via Jestor low-code API. |
 | [Lightspeed Restaurant](../mcps/lightspeed-restaurant.md) | Manage restaurant orders, menus, tables, employees, payments, and revenue reports for your Lightspeed POS through natural conversation. |
+| [Lightspeed Restaurant (L-Series)](../mcps/lightspeed-restaurant-l-series.md) | Manage menu items, receipts, floors, tables, customers, and sales for your Lightspeed Restaurant L-Series POS. Note: this connector is for L-Series only — if you use K-Series, use the dedicated Lightspeed Restaurant (K-Series) connector. |
 | [OpenCart](../mcps/opencart.md) | Connect your OpenCart store to AI agents — browse products, manage orders, track customers, and update fulfillment status through natural conversation. |
 | [Paperform](../mcps/paperform.md) | Manage online forms and submissions via Paperform — list forms, track submissions, and configure webhooks directly from any AI agent. |
 

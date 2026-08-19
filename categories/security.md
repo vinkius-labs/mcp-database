@@ -28,6 +28,7 @@ Explore the open database of **security** Model Context Protocol (MCP) servers.
 | [Geetest](../mcps/geetest.md) | The ultimate anti-bot CAPTCHA API — validate users, detect bots, and protect your forms with Geetest v4. |
 | [Git Workflow Guardian](../mcps/git-workflow-guardian.md) | Enforces git workflow rules and repository hygiene. |
 | [GraphQL Query Complexity Analyzer](../mcps/graphql-query-complexity-analyzer.md) | Analyze GraphQL queries for structural complexity, depth, and token count. |
+| [GuardDuty Findings Calculator](../mcps/guardduty-findings-calculator.md) | Project AWS GuardDuty finding volumes, detection source requirements, and resource overhead. |
 | [Hash Checksum Calculator](../mcps/hash-checksum-calculator.md) | Generate, compare, and validate cryptographic and non-cryptographic hashes like MD5, SHA-256, and CRC32. |
 | [Hash Generator and Verifier](../mcps/hash-generator-and-verifier.md) | Generate and verify cryptographic hashes like MD5, SHA-1, SHA-256, and SHA-512. |
 | [HMAC Signature Validator](../mcps/hmac-signature-validator.md) | High-precision HMAC signature generation and verification with constant-time comparison. |

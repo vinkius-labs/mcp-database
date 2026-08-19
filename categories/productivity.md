@@ -37,6 +37,9 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Age Calculator](../mcps/age-calculator.md) | Calculate your exact age in years, months, days, hours, minutes, and seconds. |
 | [Age Calculator Alternative](../mcps/age-calculator-alternative.md) | Calculate your exact age in years, months, days, hours, minutes, and seconds. |
 | [Agendor](../mcps/agendor.md) | CRM for sales teams — manage leads, organizations, and pipelines via AI. |
+| [Agent DAG Scheduler](../mcps/agent-dag-scheduler.md) | A deterministic engine for calculating execution order and scheduling metrics for multi-agent workflows. |
+| [Agent Parallel Execution Optimizer](../mcps/agent-parallel-execution-optimizer.md) | Optimize task distribution and efficiency metrics for agent swarms. |
+| [Agent Task Decomposition Engine](../mcps/agent-task-decomposition-engine.md) | Break complex goals into structured subtasks with deterministic complexity scoring. |
 | [agent-output-deduplicator](../mcps/agent-output-deduplicator.md) | Detects and removes redundant outputs from multi-agent workflows using Jaccard similarity and n-gram overlap. |
 | [AgentMail](../mcps/agentmail.md) | Give your AI agents their own email inbox to read, send, and reply to messages natively. |
 | [AI Receptionist](../mcps/ai-receptionist.md) | Let AI answer your business calls, book appointments, and handle customer inquiries around the clock without missing a beat. |

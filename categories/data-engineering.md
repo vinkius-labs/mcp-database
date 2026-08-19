@@ -4,6 +4,7 @@ Explore the open database of **data-engineering** Model Context Protocol (MCP) s
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Map-Reduce Partition Planner](../mcps/map-reduce-partition-planner.md) | Deterministic calculator for partitioning and scheduling map-reduce workloads. |
 | [RAG Chunk Boundary Optimizer](../mcps/rag-chunk-boundary-optimizer.md) | Analyze text chunking integrity in RAG pipelines by measuring overlap, sentence breaks, and semantic continuity. |
 
 

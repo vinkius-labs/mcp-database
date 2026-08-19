@@ -4,7 +4,8 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 
 | Tool Name | Description |
 |-----------|-------------|
-| [Agent Capability Matcher](../mcps/agent-capability-matcher.md) | Aligns AI agents to tasks using weighted capability scoring. |
+| [Agent Memory Hierarchy Calculator](../mcps/agent-memory-hierarchy-calculator.md) | Deterministic memory management for agentic memory tiers. |
+| [Agent Tool Selection Router](../mcps/agent-tool-selection-router.md) | A deterministic engine for selecting and sequencing optimal tools for AI agents. |
 | [Claude Tool Output Compressor](../mcps/claude-tool-output-compressor.md) | Reduces context window exhaustion by applying deterministic compression rules to large tool outputs. |
 | [CloudFront Cache Analyzer](../mcps/cloudfront-cache-analyzer.md) | Calculate AWS CloudFront cache hit ratios, origin load reduction, and TTL optimization. |
 | [Context Redundancy Deduplicator](../mcps/context-redundancy-deduplicator.md) | Identify and quantify exact N-gram overlaps across RAG documents to optimize context window usage. |
@@ -14,6 +15,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Grain Direction Restrictor](../mcps/grain-direction-restrictor.md) | Enforce material grain orientation constraints for precise plywood cutting and bin packing. |
 | [RAG Chunk Size Optimizer](../mcps/rag-chunk-size-optimizer.md) | Evaluate RAG chunking strategies by calculating segmentation metrics, embedding costs, and context viability. |
 | [Table Demographic Balancer](../mcps/table-demographic-balancer.md) | Prevent demographic clustering in seating arrangements by maintaining balanced personality traits and age groups. |
+| [Token Budget Allocator](../mcps/token-budget-allocator.md) | Deterministic token budget distribution for multi-agent pipelines. |
 
 
 ---
