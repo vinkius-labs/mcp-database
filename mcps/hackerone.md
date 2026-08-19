@@ -37,16 +37,16 @@ No more jumping between report tabs. Your AI assistant acts as a dedicated Triag
 
 
 ## Available Tools (10)
-- **list_hacktivity**: List the HackerOne hacktivity feed
 - **list_payments**: List bounty payments history
 - **list_programs**: List bug bounty or VDP programs you have access to
-- **list_reports**: List vulnerability reports submitted to your HackerOne program
-- **add_report_comment**: Add a comment to a specific vulnerability report
 - **award_bounty**: Award a bounty for a vulnerability report
 - **change_report_state**: Update the state of a vulnerability report (e.g., triaged, resolved)
 - **get_program**: Get details for a specific security program
 - **get_report**: Get detailed information about a specific vulnerability report
 - **list_assets**: List assets defined in your security programs
+- **add_report_comment**: Add a comment to a specific vulnerability report
+- **list_hacktivity**: List the HackerOne hacktivity feed
+- **list_reports**: List vulnerability reports submitted to your HackerOne program
 
 
 ## 💬 Prompt Examples

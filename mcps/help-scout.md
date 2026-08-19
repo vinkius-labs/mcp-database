@@ -43,16 +43,16 @@ No more manual exporting of ticket data. Your AI assistant acts as a dedicated S
 List support conversations/tickets
 - **list_mailboxes**: List all configured support mailboxes
 - **list_tags**: List all available tags for categorizing conversations
-- **list_customer_ratings**: List recent customer satisfaction ratings
-- **list_staff_users**: List all support agents/users in the tenant
-- **update_convo_status**: Change the status of a conversation (e.g., active, closed)
 - **create_convo_note**: Use this for team collaboration.
 
 Add a private note to a conversation
+- **search_conversations**: Search for conversations using a query
+- **list_customer_ratings**: List recent customer satisfaction ratings
+- **list_staff_users**: List all support agents/users in the tenant
+- **update_convo_status**: Change the status of a conversation (e.g., active, closed)
 - **get_customer**: Get detailed profile information for a specific customer
 - **list_customers**: List all customers registered in the help desk
 - **list_workflows**: List automated support workflows
-- **search_conversations**: Search for conversations using a query
 
 
 ## 💬 Prompt Examples

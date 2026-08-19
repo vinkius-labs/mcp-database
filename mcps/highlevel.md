@@ -42,12 +42,12 @@ No more jumping between complex dashboard views. Your AI assistant acts as a ded
 
 Add a new contact/lead to HighLevel
 - **create_contact_task**: Assign a new task to a specific contact
-- **get_contact_details**: Get detailed information for a specific contact
-- **get_calendar_free_slots**: Check availability for a specific calendar
-- **list_calendars**: List all calendars available for a location
 - **list_contact_tasks**: List all tasks assigned to a specific contact
-- **list_pipelines**: List sales pipelines for a specific location
 - **list_location_tags**: List all custom tags for a location
+- **get_calendar_free_slots**: Check availability for a specific calendar
+- **get_contact_details**: Get detailed information for a specific contact
+- **list_calendars**: List all calendars available for a location
+- **list_pipelines**: List sales pipelines for a specific location
 - **search_contacts**: Pass search criteria as a JSON string in "search_json".
 
 Search for contacts in HighLevel

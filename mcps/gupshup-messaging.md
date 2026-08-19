@@ -34,6 +34,10 @@ Gupshup is a leading conversational messaging platform used by enterprises to co
 
 ## Available Tools (6)
 - **get_template_info**: Get information about a specific template
+- **send_template_message**: Provide recipient phone number, template name, language code (e.g., en_US), and an array of string parameters to fill the template.
+
+Send a WhatsApp template message
+- **send_text_message**: Send a free-form text message
 - **send_interactive_message**: Provide up to 3 buttons in a JSON array.
 
 Send an interactive message with buttons
@@ -41,10 +45,6 @@ Send an interactive message with buttons
 
 Send a media message (Image, Video, Document, Audio)
 - **send_reaction**: React to a message with an emoji
-- **send_template_message**: Provide recipient phone number, template name, language code (e.g., en_US), and an array of string parameters to fill the template.
-
-Send a WhatsApp template message
-- **send_text_message**: Send a free-form text message
 
 
 ## 💬 Prompt Examples

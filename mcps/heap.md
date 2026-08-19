@@ -42,16 +42,16 @@ No more manual navigating through complex analytics dashboards for simple data u
 - **track_event**: Properties should be a JSON string.
 
 Track a server-side event for a user in Heap
-- **get_event_definitions**: List all custom event definitions in Heap
 - **add_account_properties**: Add or update properties for an account (group of users)
-- **add_user_properties**: Add or update custom properties for a user profile
 - **bulk_add_user_properties**: Update properties for multiple users in a single request
+- **get_segments**: List all segments defined in your Heap project
+- **query_user_profiles**: Query and filter user profiles based on criteria
+- **get_event_definitions**: List all custom event definitions in Heap
+- **add_user_properties**: Add or update custom properties for a user profile
 - **bulk_track_events**: Track multiple events concurrently for high-throughput
 - **delete_user_data**: Permanently delete a user and all their associated data (GDPR)
 - **get_my_profile**: Get information about the authenticated API key
 - **identify_user**: Associate an anonymous session with a specific user identity
-- **get_segments**: List all segments defined in your Heap project
-- **query_user_profiles**: Query and filter user profiles based on criteria
 
 
 ## 💬 Prompt Examples

@@ -38,19 +38,19 @@ Connect your **Gerrit Code Review** instance to any AI agent and take full contr
 
 ## Available Tools (10)
 - **list_projects**: List all projects (repositories) on Gerrit
-- **query_changes**: Uses syntax: "status:open", "owner:self", "project:myproj". Returns subjects, numbers, statuses, owners, projects, patches.
-
-Query changes (code reviews) on Gerrit
-- **get_change**: Get full details of a Gerrit change
-- **get_project**: Get full details of a Gerrit project
-- **list_branches**: List all branches in a Gerrit project
-- **get_account**: Get the authenticated Gerrit account
-- **list_emails**: List all email addresses associated with the authenticated Gerrit account
-- **list_reviewers**: List all reviewers on a Gerrit change
-- **list_patchsets**: List all patch sets (revisions) of a Gerrit change
 - **list_groups**: Returns group names, IDs, owners, and descriptions.
 
 List all groups on Gerrit
+- **get_account**: Get the authenticated Gerrit account
+- **get_change**: Get full details of a Gerrit change
+- **get_project**: Get full details of a Gerrit project
+- **list_branches**: List all branches in a Gerrit project
+- **list_emails**: List all email addresses associated with the authenticated Gerrit account
+- **query_changes**: Uses syntax: "status:open", "owner:self", "project:myproj". Returns subjects, numbers, statuses, owners, projects, patches.
+
+Query changes (code reviews) on Gerrit
+- **list_patchsets**: List all patch sets (revisions) of a Gerrit change
+- **list_reviewers**: List all reviewers on a Gerrit change
 
 
 ## 💬 Prompt Examples

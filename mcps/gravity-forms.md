@@ -35,18 +35,18 @@ Connect your **Gravity Forms** REST API to any AI agent and take full control of
 
 
 ## Available Tools (12)
-- **create_entry_note**: Add a new note to a form entry
 - **list_feeds**: List all active feeds for a specific form
-- **update_entry**: Update an existing form entry
 - **delete_entry**: Delete a form entry
 - **get_entry**: Get detailed data for a specific form entry
-- **get_form_results**: Get aggregate results and statistics for a specific form
 - **get_form**: Get the structure and configuration of a specific form
+- **get_form_results**: Get aggregate results and statistics for a specific form
 - **get_notifications**: Get configured notifications for a specific form
 - **list_entries**: Retrieve entries (submissions) for forms
 - **list_entry_notes**: List all notes attached to a specific entry
 - **list_forms**: List all forms created in Gravity Forms
+- **create_entry_note**: Add a new note to a form entry
 - **submit_form**: Submit a form programmatically
+- **update_entry**: Update an existing form entry
 
 
 ## 💬 Prompt Examples

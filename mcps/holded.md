@@ -36,16 +36,16 @@ No more digging through complex ERP menus to find a customer balance or create a
 
 
 ## Available Tools (12)
-- **list_purchase_orders**: List purchase orders
-- **list_contacts**: List CRM contacts
 - **create_invoice**: Requires contact ID and items.
 
 Create a new invoice
-- **list_credit_notes**: List all credit notes
 - **list_expenses**: List business expenses
+- **list_products**: List inventory products
+- **list_purchase_orders**: List purchase orders
+- **list_contacts**: List CRM contacts
+- **list_credit_notes**: List all credit notes
 - **list_invoices**: List all sales invoices
 - **list_payments**: List recent payments
-- **list_products**: List inventory products
 - **list_purchase_invoices**: List purchase invoices
 - **list_quotes**: List all quotes
 - **list_sales_orders**: List all sales orders

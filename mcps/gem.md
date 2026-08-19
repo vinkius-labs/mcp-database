@@ -37,17 +37,17 @@ Connect your **Gem** recruitment CRM to any AI agent to automate your talent sou
 
 ## Available Tools (12)
 - **verify_api_connection**: Check connection
-- **create_crm_candidate**: Add new candidate
-- **add_candidate_note**: Log an interaction
 - **get_candidate_details**: Get candidate metadata
-- **list_crm_custom_fields**: List team fields
-- **get_project_details**: Get project metadata
-- **list_candidates**: List CRM candidates
-- **list_candidate_notes**: List interactions
-- **list_talent_projects**: List Gem projects
 - **list_outreach_sequences**: List sequences
 - **list_recruiting_team**: List Gem users
+- **list_talent_projects**: List Gem projects
 - **update_crm_candidate**: Modify candidate
+- **add_candidate_note**: Log an interaction
+- **create_crm_candidate**: Add new candidate
+- **get_project_details**: Get project metadata
+- **list_candidate_notes**: List interactions
+- **list_candidates**: List CRM candidates
+- **list_crm_custom_fields**: List team fields
 
 
 ## 💬 Prompt Examples

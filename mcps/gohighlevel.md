@@ -34,15 +34,15 @@ Connect **GoHighLevel** to your AI agent and manage your all-in-one marketing an
 
 ## Available Tools (10)
 - **list_contacts**: List all CRM contacts
-- **list_forms**: List lead capture forms
-- **get_contact**: Get contact details
-- **list_pipelines**: List sales pipelines
 - **create_contact**: Create a new contact
-- **list_opportunities**: List pipeline opportunities
+- **get_contact**: Get contact details
 - **list_calendars**: List booking calendars
-- **list_conversations**: List recent conversations
+- **list_pipelines**: List sales pipelines
 - **send_message**: Send an SMS/email to a contact
+- **list_forms**: List lead capture forms
+- **list_opportunities**: List pipeline opportunities
 - **list_campaigns**: List drip campaigns
+- **list_conversations**: List recent conversations
 
 
 ## 💬 Prompt Examples

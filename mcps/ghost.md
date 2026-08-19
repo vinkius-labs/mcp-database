@@ -39,12 +39,21 @@ No more manual dashboard navigation to check post statuses or member counts. You
 - **create_post**: Requires a title and supports optional HTML content. The post is created as a "draft" by default but can be set to "published" immediately.
 
 Create a new Ghost post or draft
-- **get_post_details**: Essential for reviewing the full content of an article.
-
-Get details for a specific post
 - **get_site_settings**: Essential for verifying site identity.
 
 Get Ghost site settings and configuration
+- **list_membership_tiers**: g., Free, Premium) available on the site. Useful for understanding the subscription structure.
+
+List membership tiers and plans
+- **list_pages**: g., About, Contact) defined on the Ghost site. Pages are similar to posts but used for non-blog content.
+
+List all static site pages
+- **list_posts**: Includes basic metadata and post IDs for detailed retrieval.
+
+List all Ghost blog posts
+- **get_post_details**: Essential for reviewing the full content of an article.
+
+Get details for a specific post
 - **list_members**: Includes emails, status, and join dates.
 
 List all site members
@@ -52,18 +61,9 @@ List all site members
 
 List all configured newsletters
 - **list_offers**: List active membership offers
-- **list_pages**: g., About, Contact) defined on the Ghost site. Pages are similar to posts but used for non-blog content.
-
-List all static site pages
-- **list_posts**: Includes basic metadata and post IDs for detailed retrieval.
-
-List all Ghost blog posts
 - **list_tags**: Useful for organizing and filtering posts.
 
 List all content tags
-- **list_membership_tiers**: g., Free, Premium) available on the site. Useful for understanding the subscription structure.
-
-List membership tiers and plans
 
 
 ## 💬 Prompt Examples

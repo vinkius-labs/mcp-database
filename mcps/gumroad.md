@@ -36,16 +36,16 @@ No more manual status checking or complex store management through different tab
 
 
 ## Available Tools (8)
-- **list_products**: List your Gumroad products
-- **get_product_details**: Get details for a product
-- **get_sale_details**: Get details for a specific sale
 - **create_offer_code**: Create a new discount code
+- **get_product_details**: Get details for a product
 - **get_user_profile**: Get your Gumroad account details
+- **list_products**: List your Gumroad products
+- **list_product_subscribers**: List subscribers for a product
+- **get_sale_details**: Get details for a specific sale
 - **list_offer_codes**: List discount codes for a product
 - **list_sales**: Supports date filtering.
 
 List recent sales
-- **list_product_subscribers**: List subscribers for a product
 
 
 ## 💬 Prompt Examples

@@ -36,9 +36,9 @@ Connect your **Google Play Developer** account to your AI agent and streamline y
 ## Available Tools (12)
 - **acknowledge_product_purchase**: Acknowledge a product purchase
 - **cancel_subscription**: Cancel a user subscription
-- **consume_product_purchase**: Consume a product purchase
 - **defer_subscription**: Defer a subscription billing date
 - **get_inapp_product**: Get details for a specific in-app product
+- **consume_product_purchase**: Consume a product purchase
 - **get_product_purchase**: Check an in-app product purchase status
 - **get_review**: Get a specific review by ID
 - **get_subscription_purchase**: Check the status of a subscription purchase

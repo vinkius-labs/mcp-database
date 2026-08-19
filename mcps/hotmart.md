@@ -35,10 +35,10 @@ Connect your **Hotmart** account to any AI agent and manage your digital product
 
 ## Available Tools (6)
 - **get_sales_history**: Get sales history
-- **get_sales_summary**: Get sales summary
-- **get_student_progress**: Get progress for a student
 - **list_products**: List all your products
 - **list_students**: List students (members)
+- **get_sales_summary**: Get sales summary
+- **get_student_progress**: Get progress for a student
 - **list_subscriptions**: List active subscriptions
 
 

@@ -34,16 +34,16 @@ Connect your **Hotjar** account to any AI agent and take full control of your be
 
 
 ## Available Tools (10)
-- **list_feedback**: List incoming feedback
 - **list_recordings**: List session recordings
-- **list_sites**: List all tracked sites
+- **list_feedback**: List incoming feedback
 - **list_funnels**: List conversion funnels
+- **list_sites**: List all tracked sites
 - **get_site**: Get current site details
-- **list_heatmaps**: List all heatmaps
 - **get_heatmap**: Get heatmap details
-- **list_surveys**: List all surveys
 - **get_survey**: Get survey details
+- **list_heatmaps**: List all heatmaps
 - **list_survey_responses**: List survey responses
+- **list_surveys**: List all surveys
 
 
 ## 💬 Prompt Examples

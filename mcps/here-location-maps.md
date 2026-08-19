@@ -39,15 +39,15 @@ Connect your **HERE Technologies** account to any AI agent and take full control
 - **calculate_v8_isoline**: router` optimizing where a user can travel within a set `time` or `distance` limit.
 
 Dispatch an automated validation check routing explicit Reachability Polygons
-- **calculate_routing_matrix**: Provision a highly-available JSON Payload generating multi-node Maps
 - **calculate_v8_route**: Inspect deep internal arrays mitigating specific Traffic pathways
 - **discover_places**: Retrieve explicit Cloud logging tracing explicit POI categories
 - **forward_geocode**: Identify bounded routing spaces inside the Headless HERE Search limit
+- **autosuggest_query**: Identify precise active arrays spanning native Location suggestions
+- **calculate_routing_matrix**: Provision a highly-available JSON Payload generating multi-node Maps
 - **get_traffic_flow**: json` detecting current congestion patterns via a Bounding Box limit.
 
 Retrieve the exact structural matching verifying Delivery Flow speeds
 - **get_weather_observation**: Enumerate explicitly attached structured rules exporting active Meteorology
-- **autosuggest_query**: Identify precise active arrays spanning native Location suggestions
 - **lookup_place_id**: Irreversibly vaporize explicit App nodes dropping live Place contexts
 - **reverse_geocode**: Perform structural extraction of properties driving active Pin boundaries
 
