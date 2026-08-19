@@ -38,14 +38,14 @@ Connect your **DeepL** account to any AI agent and access neural machine transla
 - **create_glossary**: Create a glossary
 - **delete_glossary**: Delete a glossary
 - **get_document_status**: Check document translation status
-- **get_glossary_entries**: Get glossary entries
-- **get_glossary**: Get glossary details
-- **get_usage**: Check API usage
 - **list_glossaries**: List glossaries
+- **translate_formal**: Translate with formal tone
+- **get_glossary**: Get glossary details
+- **get_glossary_entries**: Get glossary entries
+- **get_usage**: Check API usage
 - **list_glossary_language_pairs**: List glossary language pairs
 - **list_source_languages**: List source languages
 - **list_target_languages**: List target languages
-- **translate_formal**: Translate with formal tone
 - **translate_informal**: Translate with informal tone
 - **translate_text**: Translate text
 - **translate_with_glossary**: Translate using glossary

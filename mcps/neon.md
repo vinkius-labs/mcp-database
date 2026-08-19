@@ -37,30 +37,39 @@ No more clicking through the Neon console to provision a branch or grab a connec
 
 
 ## Available Tools (17)
-- **list_branches**: Each branch is an isolated PostgreSQL environment with its own compute, databases and roles. Branches can be created from any point-in-time using copy-on-write cloning. Returns branch ID, name, parent ID, primary status, creation date and current state. Use the project_id from list_projects.
-
-List branches in a Neon project
-- **list_databases**: Each database has a name, owner role and creation metadata. Use the project_id and branch_id to scope the query.
-
-List databases in a Neon branch
-- **list_endpoints**: Each endpoint has a type (read_write or read_only), host address, current state (active, idle, suspended) and autoscaling configuration. A branch can have at most one read_write endpoint. Use the project_id and branch_id.
-
-List compute endpoints for a Neon branch
-- **list_projects**: Each project is a workspace that contains branches, compute endpoints, databases and roles. Returns project ID, name, region, PostgreSQL version, creation date and resource usage metadata. Use this as the starting point for all Neon operations — you need a project_id to manage branches, databases or endpoints.
-
-List all Neon projects
-- **get_connection_uri**: Optionally specify a branch_id to get the URI for a specific branch (defaults to the primary branch). The URI includes the host, database name, role and password. Use this to connect psql, ORM tools or application clients.
-
-Get a PostgreSQL connection URI for a Neon project
-- **create_branch**: Optionally set a human-readable name and a parent branch ID to clone from (if omitted, clones from the project's primary branch). Branches are created instantly with zero data copy overhead. Returns the new branch along with its initial endpoints, databases and roles.
-
-Create a new branch in a Neon project
 - **create_endpoint**: Specify the endpoint type: "read_write" for full access or "read_only" for read replicas. A branch can have at most one read_write endpoint. Returns the new endpoint with its connection host and configuration.
 
 Create a compute endpoint for a Neon branch
 - **create_project**: Optionally set a human-readable name, AWS region (e.g. "aws-us-east-2", "aws-eu-central-1") and PostgreSQL version (15, 16, 17). A default branch, database and read-write endpoint are automatically provisioned. Returns the new project along with its initial connection URIs, roles, databases and endpoints.
 
 Create a new Neon project
+- **delete_branch**: The primary branch cannot be deleted — set another branch as primary first. Provide the project_id and branch_id. WARNING: this action is irreversible and destroys all branch data.
+
+Delete a Neon branch
+- **list_branches**: Each branch is an isolated PostgreSQL environment with its own compute, databases and roles. Branches can be created from any point-in-time using copy-on-write cloning. Returns branch ID, name, parent ID, primary status, creation date and current state. Use the project_id from list_projects.
+
+List branches in a Neon project
+- **list_endpoints**: Each endpoint has a type (read_write or read_only), host address, current state (active, idle, suspended) and autoscaling configuration. A branch can have at most one read_write endpoint. Use the project_id and branch_id.
+
+List compute endpoints for a Neon branch
+- **list_roles**: Each role has a name, creation date and privilege metadata. Use the project_id and branch_id to scope the query. Roles are used to authenticate database connections and control access.
+
+List database roles in a Neon branch
+- **update_project**: Provide the project_id and the new name. This does not affect branches, databases or endpoints.
+
+Update a Neon project name
+- **list_databases**: Each database has a name, owner role and creation metadata. Use the project_id and branch_id to scope the query.
+
+List databases in a Neon branch
+- **list_projects**: Each project is a workspace that contains branches, compute endpoints, databases and roles. Returns project ID, name, region, PostgreSQL version, creation date and resource usage metadata. Use this as the starting point for all Neon operations — you need a project_id to manage branches, databases or endpoints.
+
+List all Neon projects
+- **create_branch**: Optionally set a human-readable name and a parent branch ID to clone from (if omitted, clones from the project's primary branch). Branches are created instantly with zero data copy overhead. Returns the new branch along with its initial endpoints, databases and roles.
+
+Create a new branch in a Neon project
+- **get_connection_uri**: Optionally specify a branch_id to get the URI for a specific branch (defaults to the primary branch). The URI includes the host, database name, role and password. Use this to connect psql, ORM tools or application clients.
+
+Get a PostgreSQL connection URI for a Neon project
 - **create_role**: The role can be used to authenticate database connections and own databases. Provide the project_id, branch_id and desired role name. Returns the new role metadata including the generated password.
 
 Create a new database role in a Neon branch
@@ -73,21 +82,12 @@ Get details for a specific Neon branch
 - **get_project**: Provide the project_id (e.g. "purple-shape-411361") obtained from list_projects.
 
 Get details for a specific Neon project
-- **list_roles**: Each role has a name, creation date and privilege metadata. Use the project_id and branch_id to scope the query. Roles are used to authenticate database connections and control access.
-
-List database roles in a Neon branch
 - **set_primary_branch**: The primary branch is the default source for new branch cloning and receives the default read-write compute endpoint. Provide the project_id and the branch_id to promote.
 
 Set a branch as the primary branch of a Neon project
 - **create_database**: Requires the database name. Optionally set the owner role name (must exist in the branch — see list_roles). Returns the new database metadata.
 
 Create a new database in a Neon branch
-- **delete_branch**: The primary branch cannot be deleted — set another branch as primary first. Provide the project_id and branch_id. WARNING: this action is irreversible and destroys all branch data.
-
-Delete a Neon branch
-- **update_project**: Provide the project_id and the new name. This does not affect branches, databases or endpoints.
-
-Update a Neon project name
 
 
 ## 💬 Prompt Examples

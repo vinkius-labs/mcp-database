@@ -33,16 +33,16 @@ Connect your **Render** organizational account to any AI agent and command your 
 
 
 ## Available Tools (9)
-- **create_deploy**: Trigger a new deploy for a service
 - **get_service**: Get a single Render service details
+- **create_deploy**: Trigger a new deploy for a service
 - **list_custom_domains**: List custom domains for a service
+- **scale_service**: Only applies to services that support horizontal scaling.
+
+Scale a Render service
 - **list_deploys**: List deploys for a service
 - **list_env_vars**: List environment variables for a service
 - **list_services**: List Render services
 - **resume_service**: Resume a suspended Render service
-- **scale_service**: Only applies to services that support horizontal scaling.
-
-Scale a Render service
 - **suspend_service**: Suspend a Render service
 
 

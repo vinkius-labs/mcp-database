@@ -36,6 +36,9 @@ No more navigating the Replicate website to find models or check prediction stat
 
 
 ## Available Tools (12)
+- **create_prediction**: Requires the model slug in "owner/name" format and an input object matching the model's schema. Optionally specify a version ID and webhook URL. Returns the prediction object with its ID, status (starting, processing, succeeded, failed, canceled) and output. Use get_prediction to check status and retrieve results.
+
+Run a model prediction on Replicate
 - **get_account**: Returns account type, username and usage info. Use this to verify your API token is working correctly.
 
 Get the authenticated Replicate account info
@@ -48,6 +51,9 @@ Get details for a specific Replicate model
 - **get_model_versions**: Each version includes its ID (64-char hash), creation date, input/output schema and cog version. Use this to find the correct version ID when creating predictions for models that require a specific version.
 
 Get all versions of a Replicate model
+- **search_models**: Returns models with their name, owner, description, run count and hardware. Useful for finding specific types of models (e.g. "text-to-image", "llm", "music-generation").
+
+Search for models on Replicate by query
 - **get_prediction**: Returns the prediction ID, status (starting, processing, succeeded, failed, canceled), input, output URLs, creation time and logs. Use the prediction ID returned from create_prediction.
 
 Get the status and result of a prediction
@@ -63,15 +69,9 @@ List available ML models on Replicate
 - **list_predictions**: Each prediction includes its ID, model, status, creation time and output URLs. Useful for tracking prediction history and monitoring model usage.
 
 List recent predictions on Replicate
-- **search_models**: Returns models with their name, owner, description, run count and hardware. Useful for finding specific types of models (e.g. "text-to-image", "llm", "music-generation").
-
-Search for models on Replicate by query
 - **cancel_prediction**: Provide the prediction ID. The prediction status will change to "canceled".
 
 Cancel a running prediction
-- **create_prediction**: Requires the model slug in "owner/name" format and an input object matching the model's schema. Optionally specify a version ID and webhook URL. Returns the prediction object with its ID, status (starting, processing, succeeded, failed, canceled) and output. Use get_prediction to check status and retrieve results.
-
-Run a model prediction on Replicate
 
 
 ## 💬 Prompt Examples

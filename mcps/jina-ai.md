@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire web intelligence and informatio
 
 
 ## Available Tools (6)
-- **get_embeddings**: Get vector embeddings for a list of strings
-- **read_url**: Read a URL and return cleaned content for LLMs
 - **rerank_documents**: Rerank a list of documents based on a query
 - **search_web**: Search the web using Jina Search (optimized for AI)
+- **get_embeddings**: Get vector embeddings for a list of strings
+- **read_url**: Read a URL and return cleaned content for LLMs
 - **tokenize_text**: Tokenize text for LLM processing
 - **check_fact**: Check the factuality of a statement
 

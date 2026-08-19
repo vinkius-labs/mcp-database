@@ -40,30 +40,30 @@ Connect your **Tomorrow.io** account to any AI agent and unlock enterprise-grade
 - **get_daily_forecast**: Perfect for weekly planning and travel preparation.
 
 Get daily weather forecast for a location
-- **get_weather_events**: Returns severe weather warnings, storm alerts, heat advisories and other meteorological events that may impact the area.
-
-Get active weather events and alerts for a location
 - **get_forecast**: Returns temperature, precipitation probability, wind, humidity and more for up to 14 days ahead depending on plan. Default includes all available timesteps.
 
 Get weather forecast for a location
 - **get_historical_weather**: Specify a date range and the weather fields you need. Returns daily or hourly observed data. Useful for climate analysis, insurance claims, and research.
 
 Get historical weather data for a date range
-- **get_hourly_forecast**: Returns temperature, precipitation, wind, humidity and pressure for each hour. Ideal for planning activities in the next few days.
-
-Get hourly weather forecast for a location
-- **list_locations**: io developer account. Useful for managing frequently monitored areas and checking which locations have active insights configured.
-
-List saved locations in your Tomorrow.io account
-- **get_realtime_weather**: Accepts city names, coordinates (lat,lng), or US zip codes.
-
-Get current real-time weather conditions for a location
-- **get_recent_history**: Returns actual observed conditions including temperature, precipitation, wind and humidity. Useful for verifying recent weather events.
-
-Get weather data from the last 24 hours
 - **get_route_weather**: Perfect for logistics, road trips and delivery planning. Each waypoint needs latitude, longitude and time in ISO 8601 format.
 
 Get weather along a travel route
+- **get_hourly_forecast**: Returns temperature, precipitation, wind, humidity and pressure for each hour. Ideal for planning activities in the next few days.
+
+Get hourly weather forecast for a location
+- **get_realtime_weather**: Accepts city names, coordinates (lat,lng), or US zip codes.
+
+Get current real-time weather conditions for a location
+- **get_weather_events**: Returns severe weather warnings, storm alerts, heat advisories and other meteorological events that may impact the area.
+
+Get active weather events and alerts for a location
+- **list_locations**: io developer account. Useful for managing frequently monitored areas and checking which locations have active insights configured.
+
+List saved locations in your Tomorrow.io account
+- **get_recent_history**: Returns actual observed conditions including temperature, precipitation, wind and humidity. Useful for verifying recent weather events.
+
+Get weather data from the last 24 hours
 - **get_timeline**: Specify exactly which data points you need (e.g. temperature, humidity, windSpeed, precipitationProbability) and at what interval. Ideal for custom analytics and dashboards.
 
 Get custom weather timeline with specific fields and timesteps

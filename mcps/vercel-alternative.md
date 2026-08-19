@@ -56,12 +56,12 @@ Get details for a specific domain in Vercel
 - **get_logs**: Optionally filter by projectId, since/until timestamps (Unix ms). Returns log entries with timestamps, messages and source. Useful for debugging deployment issues and monitoring runtime behavior.
 
 Get runtime logs for a Vercel deployment
-- **list_aliases**: Each alias maps a URL to a specific deployment. Optionally filter by teamId and projectId.
-
-List deployment aliases (URLs) in Vercel
 - **list_deployments**: Each deployment includes its ID, URL, status (READY, BUILDING, ERROR, CANCELED, INITIALIZING), creation date, git commit info and framework. Optionally filter by teamId and projectId.
 
 List deployments for a Vercel account or project
+- **list_aliases**: Each alias maps a URL to a specific deployment. Optionally filter by teamId and projectId.
+
+List deployment aliases (URLs) in Vercel
 - **list_env_vars**: Returns variable keys, target environments (production, preview, development) and types. Variable VALUES are NOT returned for security. Provide the project ID.
 
 List environment variables for a Vercel project

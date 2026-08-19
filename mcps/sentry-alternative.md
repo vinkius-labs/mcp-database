@@ -37,6 +37,9 @@ Stop context-switching to the Sentry dashboard every time an alert fires. Your A
 
 
 ## Available Tools (15)
+- **search_issues**: Uses the Sentry query syntax. Can be scoped to an entire organization or a specific project. Returns matching issues with count, priority, status and first/last seen timestamps.
+
+Search Sentry issues by text
 - **get_event**: Use the event ID returned from list_events.
 
 Get full details for a specific Sentry event
@@ -49,6 +52,9 @@ Get details for a specific Sentry project
 - **get_release**: Use the organization slug and the exact release version string.
 
 Get details for a specific Sentry release
+- **list_events**: Events contain the error message, stacktrace snippets, platform, environment and timestamps. Useful for auditing what errors have been firing recently.
+
+List recent events for a Sentry project
 - **list_issues**: Can list issues organization-wide or scoped to a specific project. Use the query parameter to filter by status, priority, first release, timestamp or text search. Example query: "is:unresolved priority:50".
 
 List issues in a Sentry organization or project
@@ -58,9 +64,6 @@ List projects in a Sentry organization
 - **list_releases**: Use to track which versions have been deployed and correlate issues to specific releases.
 
 List releases for a Sentry organization or project
-- **search_issues**: Uses the Sentry query syntax. Can be scoped to an entire organization or a specific project. Returns matching issues with count, priority, status and first/last seen timestamps.
-
-Search Sentry issues by text
 - **list_tags**: ) used to categorize events. Tags are essential for filtering and grouping issues in Sentry.
 
 List tags for a Sentry organization or project
@@ -70,15 +73,12 @@ List teams in a Sentry organization
 - **update_issue**: Can also add/remove tags. Provide the numeric issue ID and the desired status.
 
 Update a Sentry issue status or assign it
-- **list_events**: Events contain the error message, stacktrace snippets, platform, environment and timestamps. Useful for auditing what errors have been firing recently.
-
-List recent events for a Sentry project
-- **list_alert_rules**: Each rule defines conditions (e.g. "issue created more than X times in 5 minutes"), actions (Slack, email, PagerDuty) and target channels/users.
-
-List alert rules in a Sentry organization
 - **get_auth_info**: Use this to verify your token is working correctly.
 
 Get authentication info for the current Sentry token
+- **list_alert_rules**: Each rule defines conditions (e.g. "issue created more than X times in 5 minutes"), actions (Slack, email, PagerDuty) and target channels/users.
+
+List alert rules in a Sentry organization
 - **list_organizations**: Each organization has a unique slug, name, access permissions and team/member information. Use the organization slug for subsequent API calls.
 
 List all Sentry organizations

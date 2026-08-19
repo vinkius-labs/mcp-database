@@ -37,12 +37,21 @@ No more switching to the Resend dashboard to check delivery status or add a new 
 
 
 ## Available Tools (14)
-- **create_api_key**: Requires a name and optionally the permission scope (full_access, sending, domains). Returns the key value which is shown ONLY ONCE — make sure to copy it immediately.
-
-Create a new API key in Resend
 - **cancel_email**: The email must be in "scheduled" status. Provide the email ID.
 
 Cancel a scheduled email
+- **create_api_key**: Requires a name and optionally the permission scope (full_access, sending, domains). Returns the key value which is shown ONLY ONCE — make sure to copy it immediately.
+
+Create a new API key in Resend
+- **send_email**: Requires the sender address (from), recipient(s) (to) and subject. Optionally provide HTML body, plain text body, reply-to address, CC/BCC recipients and attachments. The from address must use a verified domain configured in Resend. Returns the email ID for tracking.
+
+Send an email via Resend
+- **update_email**: The email must be in "scheduled" status. Provide the email ID and the new scheduled_at timestamp (ISO 8601).
+
+Update a scheduled email
+- **verify_domain**: Use this after adding or updating SPF/DKIM records in your DNS provider. Returns the updated domain status.
+
+Verify a domain's DNS records
 - **create_domain**: Requires the domain name (e.g. "example.com"). Optionally set the AWS SES region. Returns the domain ID and the DNS records (SPF, DKIM) you need to configure for verification.
 
 Add a new domain to Resend
@@ -70,15 +79,6 @@ List recently sent emails
 - **send_batch_emails**: Provide a JSON array of email objects, each with from, to, subject and optionally html/text. Each email in the batch is counted individually against your quota. Returns an array of results with IDs for each email.
 
 Send a batch of emails via Resend
-- **send_email**: Requires the sender address (from), recipient(s) (to) and subject. Optionally provide HTML body, plain text body, reply-to address, CC/BCC recipients and attachments. The from address must use a verified domain configured in Resend. Returns the email ID for tracking.
-
-Send an email via Resend
-- **update_email**: The email must be in "scheduled" status. Provide the email ID and the new scheduled_at timestamp (ISO 8601).
-
-Update a scheduled email
-- **verify_domain**: Use this after adding or updating SPF/DKIM records in your DNS provider. Returns the updated domain status.
-
-Verify a domain's DNS records
 
 
 ## 💬 Prompt Examples

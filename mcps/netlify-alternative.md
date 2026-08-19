@@ -36,11 +36,11 @@ Empower your AI agent to orchestrate your entire web infrastructure with **Netli
 
 
 ## Available Tools (9)
+- **list_form_submissions**: List form submissions
+- **list_sites**: List all Netlify sites
+- **trigger_site_build**: Trigger a site build
 - **list_forms**: List site forms
 - **list_build_hooks**: List build hooks
-- **list_sites**: List all Netlify sites
-- **list_form_submissions**: List form submissions
-- **trigger_site_build**: Trigger a site build
 - **get_deploy_details**: Get deploy details
 - **get_site_details**: Get site details
 - **list_deploys**: List site deploys

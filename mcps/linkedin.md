@@ -40,7 +40,6 @@ Transform your AI agent into a LinkedIn publishing powerhouse. This MCP server c
 
 
 ## Available Tools (11)
-- **delete_reaction**: Remove your reaction from a LinkedIn post
 - **comment_on_post**: The comment will appear as the authenticated user.
 
 Comment on a LinkedIn post
@@ -50,6 +49,13 @@ Create a post with a link preview (article share)
 - **create_post**: By default, posts as the authenticated user. To post as a Company Page, provide the organization_id (get it from list_organizations). Posting as a page requires w_organization_social scope.
 
 Create a new text post on LinkedIn
+- **delete_reaction**: Remove your reaction from a LinkedIn post
+- **react_to_post**: Supported types: LIKE, PRAISE (celebrate), APPRECIATION (support), EMPATHY (love), INTEREST (insightful), ENTERTAINMENT (funny).
+
+React to a LinkedIn post
+- **reshare_post**: To reshare as a Company Page, provide the organization_id. Posting as a page requires w_organization_social scope.
+
+Reshare an existing LinkedIn post with your own commentary
 - **delete_comment**: This action cannot be undone.
 
 Delete a comment from a LinkedIn post
@@ -62,15 +68,9 @@ Get authenticated user profile from LinkedIn
 - **list_organizations**: Returns organization IDs that can be used with the organization_id parameter in posting tools. Requires r_organization_social scope (Community Management API).
 
 List LinkedIn pages you administer
-- **react_to_post**: Supported types: LIKE, PRAISE (celebrate), APPRECIATION (support), EMPATHY (love), INTEREST (insightful), ENTERTAINMENT (funny).
-
-React to a LinkedIn post
 - **reply_to_comment**: The parent comment URN format is: urn:li:comment:(urn:li:activity:{activityId},{commentId}).
 
 Reply to a specific comment on a LinkedIn post (nested reply)
-- **reshare_post**: To reshare as a Company Page, provide the organization_id. Posting as a page requires w_organization_social scope.
-
-Reshare an existing LinkedIn post with your own commentary
 
 
 ## 💬 Prompt Examples

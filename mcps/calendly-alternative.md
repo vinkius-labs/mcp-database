@@ -38,15 +38,18 @@ No more switching to the Calendly app to check who booked what or review upcomin
 
 
 ## Available Tools (12)
+- **create_webhook**: Requires the callback URL, a list of events to subscribe to (e.g. ["invitee.created", "invitee.canceled", "invitee.no_show"]), and the scope (user or organization URI). Optionally provide a signing key for webhook verification.
+
+Create a new webhook subscription in Calendly
+- **get_user_availability**: Requires the user URI, start time and end time (both ISO 8601 UTC format). Returns the user's scheduling rules, busy times, and date overrides. Useful for checking when someone is free before booking.
+
+Get availability for a Calendly user
 - **list_invitees**: Each invitee includes their name, email, event URI, scheduled start time, and responses to custom questions. Optionally filter by a specific event URI and set a count limit.
 
 List invitees (attendees) across all Calendly events
 - **create_scheduling_link**: Requires the event type URI and the owner type ("EventType" or "User"). Returns a booking URL that invitees can use to schedule a meeting directly via the API.
 
 Create a scheduling link for direct booking
-- **create_webhook**: Requires the callback URL, a list of events to subscribe to (e.g. ["invitee.created", "invitee.canceled", "invitee.no_show"]), and the scope (user or organization URI). Optionally provide a signing key for webhook verification.
-
-Create a new webhook subscription in Calendly
 - **get_invitee**: Provide the invitee UUID from list_invitees.
 
 Get details for a specific invitee
@@ -65,9 +68,6 @@ List your memberships in Calendly organizations
 - **list_scheduled_events**: Each event includes the event type, start time (UTC), invitee URI, status (active, canceled), and participants. Optionally filter by user URI, status (active or canceled), and count. Useful for reviewing your upcoming calendar.
 
 List scheduled events (meetings) in Calendly
-- **get_user_availability**: Requires the user URI, start time and end time (both ISO 8601 UTC format). Returns the user's scheduling rules, busy times, and date overrides. Useful for checking when someone is free before booking.
-
-Get availability for a Calendly user
 - **list_webhooks**: Each webhook shows its URL, scope (user or organization), subscribed events (invitee.created, invitee.canceled, etc.), and creation date. Use this to audit your event integrations.
 
 List webhook subscriptions in Calendly

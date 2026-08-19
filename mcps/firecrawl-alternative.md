@@ -37,13 +37,13 @@ No more manual copy-pasting from websites or complex BeautifulSoup scripts. Your
 
 ## Available Tools (6)
 - **get_api_usage**: Check Firecrawl credit usage
-- **cancel_active_crawl**: Stop an ongoing crawl
+- **scrape_url**: Turn a single URL into clean Markdown
 - **start_crawl**: Returns a job ID.
 
 Recursively crawl a website
+- **cancel_active_crawl**: Stop an ongoing crawl
 - **map_website_structure**: Discover all URLs on a site
 - **get_crawl_status**: Check the status of a crawl job
-- **scrape_url**: Turn a single URL into clean Markdown
 
 
 ## 💬 Prompt Examples

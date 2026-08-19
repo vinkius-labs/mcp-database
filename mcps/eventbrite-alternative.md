@@ -36,21 +36,21 @@ No more manual status checking or complex navigation through fragmented event da
 
 
 ## Available Tools (12)
-- **list_event_attendees**: List attendees for an event
 - **create_event**: Requires event name, start and end dates, and currency.
 
 Create a new Eventbrite event
+- **get_event**: Get details for a specific Eventbrite event
+- **list_event_attendees**: List attendees for an event
+- **list_event_orders**: List orders for an event
+- **list_organization_venues**: List venues for an organization
 - **create_organization_venue**: Requires venue name and address.
 
 Create a new venue for an organization
-- **get_order**: Get details for a specific Eventbrite order
 - **get_me**: Get current Eventbrite user details
-- **list_event_orders**: List orders for an event
-- **list_organization_events**: List events for an organization
+- **get_order**: Get details for a specific Eventbrite order
 - **list_event_ticket_classes**: List ticket classes for an event
+- **list_organization_events**: List events for an organization
 - **update_event**: Update an existing Eventbrite event
-- **list_organization_venues**: List venues for an organization
-- **get_event**: Get details for a specific Eventbrite event
 - **list_organizations**: Most operations require an Organization ID.
 
 List Eventbrite organizations

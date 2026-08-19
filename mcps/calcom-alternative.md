@@ -36,16 +36,16 @@ No more manual toggling between calendars or sending back-and-forth availability
 
 
 ## Available Tools (12)
-- **cancel_booking**: Remove meeting
 - **create_new_booking**: Schedule a meeting
-- **get_booking_details**: Get meeting info
-- **get_event_type_details**: Get template info
-- **get_my_profile**: Get user settings
 - **get_available_slots**: Find free times
+- **get_booking_details**: Get meeting info
+- **get_my_profile**: Get user settings
+- **cancel_booking**: Remove meeting
+- **get_event_type_details**: Get template info
+- **list_active_webhooks**: Get event configs
+- **list_availability_schedules**: List working hours
 - **list_bookings**: List scheduled meetings
 - **list_event_types**: List booking templates
-- **list_availability_schedules**: List working hours
-- **list_active_webhooks**: Get event configs
 - **reschedule_meeting**: Update booking time
 - **test_cal_auth**: Check connection
 

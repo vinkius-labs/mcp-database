@@ -36,33 +36,21 @@ No more clicking through the Doppler dashboard to check a secret value or audit 
 
 
 ## Available Tools (12)
-- **get_config**: Returns config name, project, root status, associated environment template, creation date and locked status.
-
-Get details for a specific Doppler config
-- **get_account**: Returns account email, name, and token metadata (type, scope, permissions). Use this to verify your token is working correctly and understand its access level.
-
-Get the current Doppler account details
 - **change_secrets**: Provide project_slug, config_name and a JSON object mapping secret names to values. For example: {"DATABASE_URL":"postgres://...","API_KEY":"sk-..."}. Existing secrets not included are not modified.
 
 Add or update secrets in a Doppler config
-- **delete_secrets**: Provide project_slug, config_name and comma-separated secret names. WARNING: deleted secrets cannot be recovered. If a secret inherits a value from a parent, it reverts to that value.
+- **get_account**: Returns account email, name, and token metadata (type, scope, permissions). Use this to verify your token is working correctly and understand its access level.
 
-Delete secrets from a Doppler config
-- **get_project**: Provide the project slug (e.g. "my-api-project") and optionally the workspace slug.
+Get the current Doppler account details
+- **get_config**: Returns config name, project, root status, associated environment template, creation date and locked status.
 
-Get details for a specific Doppler project
-- **get_secret**: Returns the secret name and its resolved value with fallbacks from parent environments applied.
-
-Get a specific secret value from a Doppler config
+Get details for a specific Doppler config
 - **list_activity_logs**: Each entry shows who performed what action, when and the affected config. Optionally filter by config_name. Useful for security auditing and compliance.
 
 List activity logs for a Doppler project
 - **list_configs**: Each config represents a deployment environment (development, staging, production) and contains its own set of secrets. Returns config name, project slug, root status and environment template used.
 
 List configs (environments) for a Doppler project
-- **list_environments**: g. development, staging, production, preview). Returns environment name, slug and whether it is the default environment.
-
-List Doppler environment types
 - **list_projects**: Optionally filter by workspace slug. Each project contains configs (environments) and secrets. Returns project name, slug, description, and creation date.
 
 List Doppler projects
@@ -72,6 +60,18 @@ List all secrets for a Doppler config
 - **list_workspaces**: A workspace is the top-level organizational unit in Doppler that groups projects. Returns workspace name, slug and creation date.
 
 List all Doppler workspaces
+- **delete_secrets**: Provide project_slug, config_name and comma-separated secret names. WARNING: deleted secrets cannot be recovered. If a secret inherits a value from a parent, it reverts to that value.
+
+Delete secrets from a Doppler config
+- **get_project**: Provide the project slug (e.g. "my-api-project") and optionally the workspace slug.
+
+Get details for a specific Doppler project
+- **get_secret**: Returns the secret name and its resolved value with fallbacks from parent environments applied.
+
+Get a specific secret value from a Doppler config
+- **list_environments**: g. development, staging, production, preview). Returns environment name, slug and whether it is the default environment.
+
+List Doppler environment types
 
 
 ## 💬 Prompt Examples
