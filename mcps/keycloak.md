@@ -38,22 +38,22 @@ Connect your **Keycloak** instance to any AI agent to streamline your Identity a
 - **create_role**: Create a realm-level role
 - **list_users**: Get users in a realm
 - **logout_all_users**: Remove all user sessions in a realm
-- **partial_export_realm**: Partial export of a realm
-- **regenerate_client_secret**: Regenerate client secret
 - **reset_user_password**: Reset user password
-- **create_auth_flow**: Create an authentication flow
-- **create_client**: Create a new client
-- **update_client**: Update a client
 - **update_group**: Update a group
 - **update_realm**: Update realm information
+- **update_client**: Update a client
+- **create_auth_flow**: Create an authentication flow
+- **create_client**: Create a new client
+- **partial_export_realm**: Partial export of a realm
+- **regenerate_client_secret**: Regenerate client secret
 - **update_user**: Update a user
 - **create_user**: Create a new user
 - **delete_client**: Delete a client
 - **delete_group**: Delete a group
 - **delete_realm**: Delete a realm
 - **delete_user**: Delete a user
-- **get_client_secret**: Get client secret
 - **get_client**: Get client representation
+- **get_client_secret**: Get client secret
 - **get_group**: Get group representation
 - **get_realm**: Get realm representation
 - **get_role**: Get a role by name

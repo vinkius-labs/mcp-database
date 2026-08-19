@@ -20,9 +20,9 @@ Language Models are infamously bad at calendar math. If you ask an AI to "Add 45
 
 
 ## Available Tools (3)
-- **add_business_days**: Adds or subtracts a specific number of business days (skipping weekends) from a given date
 - **calculate_date_difference**: Calculates the exact mathematical difference between two dates in days, months, and years
 - **check_leap_year**: Checks if a specific year is a leap year using the exact Gregorian calendar algorithm
+- **add_business_days**: Adds or subtracts a specific number of business days (skipping weekends) from a given date
 
 
 ## 💬 Prompt Examples

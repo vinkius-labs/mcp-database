@@ -36,34 +36,34 @@ Connect your **Fly.io** account to any AI agent to orchestrate your cloud infras
 ## Available Tools (28)
 - **extend_volume**: Increase volume size
 - **start_machine**: Start a Machine
-- **delete_app**: Delete a Fly App
 - **delete_certificate**: Remove hostname and certificates
 - **delete_machine**: Delete a Machine
 - **delete_volume**: Delete a volume
 - **get_app**: Get details about a Fly App
 - **get_certificate**: Get certificate details
 - **get_machine**: Get Machine details
-- **get_volume**: Get volume details
 - **request_oidc_token**: Request an OpenID Connect (OIDC) token
+- **create_volume**: Create a new volume
+- **list_machines**: List all Machines in an app
+- **list_volume_snapshots**: List volume snapshots
+- **release_lease**: Release a lease for a Machine
+- **suspend_machine**: Suspend a Machine
+- **wait_machine**: Wait for a specific Machine state
+- **create_app**: Create a new Fly App
+- **create_custom_certificate**: Import a custom PEM certificate
+- **create_acme_certificate**: Request a Let's Encrypt certificate
+- **check_certificate**: Trigger DNS validation check for a certificate
 - **create_lease**: Create a lease for a Machine
 - **create_machine**: Requires a config object containing at least the image.
 
 Create a new Fly Machine
-- **create_volume**: Create a new volume
+- **delete_app**: Delete a Fly App
+- **get_volume**: Get volume details
 - **list_apps**: List Fly Apps
 - **list_certificates**: List all certificates for an app
-- **list_machines**: List all Machines in an app
-- **list_volume_snapshots**: List volume snapshots
 - **list_volumes**: List all volumes in an app
-- **release_lease**: Release a lease for a Machine
 - **stop_machine**: Stop a Machine
-- **suspend_machine**: Suspend a Machine
 - **update_machine**: Update Machine configuration
-- **wait_machine**: Wait for a specific Machine state
-- **check_certificate**: Trigger DNS validation check for a certificate
-- **create_acme_certificate**: Request a Let's Encrypt certificate
-- **create_app**: Create a new Fly App
-- **create_custom_certificate**: Import a custom PEM certificate
 
 
 ## 💬 Prompt Examples

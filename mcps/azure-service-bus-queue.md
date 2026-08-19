@@ -22,12 +22,12 @@ By strictly scoping access, your AI can safely operate as a highly scalable back
 
 
 ## Available Tools (2)
-- **acknowledge_message**: Provide both the messageId and the lockToken.
-
-Acknowledge (Complete) a processed message, deleting it from the Queue
 - **pull_message**: The message remains hidden from other workers until the lock expires. You MUST call acknowledge_message using the returned messageId and lockToken to confirm you processed it successfully.
 
 Pull a single pending message from the configured Azure Service Bus Queue
+- **acknowledge_message**: Provide both the messageId and the lockToken.
+
+Acknowledge (Complete) a processed message, deleting it from the Queue
 
 
 ## 💬 Prompt Examples

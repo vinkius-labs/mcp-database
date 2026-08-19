@@ -22,8 +22,8 @@ By strictly scoping access, your AI can safely manage structured data, store cha
 
 
 ## Available Tools (3)
-- **delete_document**: Delete a document from the Google Firestore collection
 - **get_document**: Read a document from the configured Google Firestore collection
+- **delete_document**: Delete a document from the Google Firestore collection
 - **set_document**: If the document exists, fields are updated.
 
 Create or update a document in the Google Firestore collection

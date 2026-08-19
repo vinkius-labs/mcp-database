@@ -34,25 +34,25 @@ Connect your **Cloudflare** account to any AI agent to take full control of your
 
 
 ## Available Tools (17)
+- **delete_route**: Delete a tunnel route
+- **delete_tunnel**: Delete a Cloudflare Tunnel
+- **get_connector**: Get Cloudflare Tunnel connector details
+- **get_route_by_ip**: Get tunnel route by IP
+- **get_tunnel_token**: Get a Cloudflare Tunnel token
+- **list_connections**: List Cloudflare Tunnel connections
+- **list_routes**: List tunnel routes
+- **put_configuration**: Add or update configuration for a remotely-managed tunnel
+- **update_route**: Update a tunnel route
+- **update_tunnel**: Update an existing Cloudflare Tunnel
 - **cleanup_connections**: If no client_id is provided, all connectors are removed.
 
 Clean up Cloudflare Tunnel connections
 - **create_route**: Create a tunnel route
 - **create_tunnel**: Create a new Cloudflare Tunnel
-- **delete_route**: Delete a tunnel route
-- **delete_tunnel**: Delete a Cloudflare Tunnel
 - **get_configuration**: Get configuration for a remotely-managed tunnel
-- **get_connector**: Get Cloudflare Tunnel connector details
 - **get_management_token**: Get a Cloudflare Tunnel management token
-- **get_route_by_ip**: Get tunnel route by IP
-- **get_tunnel_token**: Get a Cloudflare Tunnel token
 - **get_tunnel**: Get details for a single Cloudflare Tunnel
-- **list_connections**: List Cloudflare Tunnel connections
-- **list_routes**: List tunnel routes
 - **list_tunnels**: List and filter Cloudflare Tunnels in an account
-- **put_configuration**: Add or update configuration for a remotely-managed tunnel
-- **update_route**: Update a tunnel route
-- **update_tunnel**: Update an existing Cloudflare Tunnel
 
 
 ## 💬 Prompt Examples

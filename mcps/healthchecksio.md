@@ -34,24 +34,24 @@ Connect your **Healthchecks.io** account to any AI agent to monitor and manage y
 
 
 ## Available Tools (13)
-- **get_ping_body**: Get the body of a specific ping
 - **list_checks**: Can be filtered by tags or slug.
 
 List all checks in the project
-- **list_flips**: List status changes (flips) for a check
 - **list_pings**: List recent pings for a check
 - **pause_check**: Pause a check
 - **resume_check**: Resume a check
 - **update_check**: Update an existing check
-- **create_check**: Use the unique field to upsert if it already exists.
-
-Create a new check
 - **get_check**: Get a single check by UUID or unique key
 - **list_badges**: io status badges.
 
 List all status badges for the project
 - **get_status**: Check the Healthchecks.io service status
+- **create_check**: Use the unique field to upsert if it already exists.
+
+Create a new check
 - **delete_check**: Delete a check
+- **get_ping_body**: Get the body of a specific ping
+- **list_flips**: List status changes (flips) for a check
 - **list_integrations**: List all integrations (channels) in the project
 
 

@@ -36,55 +36,55 @@ Your AI acts as a 24/7 Security Operations Center (SOC) assistant, helping you t
 
 
 ## Available Tools (49)
-- **get_secret_incident**: Retrieve secret incident details
 - **get_self_api_token**: Retrieve current API token details
 - **list_sources**: List all sources
-- **list_team_memberships**: List team members
 - **resolve_secret_incident**: Resolve a secret incident
 - **revoke_honeytoken**: Revoke a honeytoken
 - **ignore_secret_incident**: Ignore a secret incident
-- **list_api_tokens**: List API tokens
 - **list_audit_log_event_names**: List all existing event names for audit logs
-- **list_audit_logs**: List audit logs for your workspace
 - **list_custom_tags**: List custom tags
 - **list_health_check_history**: List health check history for an instance
-- **list_health_checks**: List health checks
 - **list_honeytoken_events**: List all honeytokens events
 - **list_honeytoken_notes**: List honeytoken notes
 - **list_honeytoken_sources**: List sources where a honeytoken appears
-- **list_honeytokens**: List honeytokens
 - **list_ips**: List GitGuardian's own IP addresses
 - **list_members**: List workspace members
 - **list_scim_groups**: List groups via SCIM
 - **list_scim_users**: List members via SCIM
-- **list_secret_incidents**: List secret incidents
 - **list_teams**: List teams
 - **multiscan_content**: Scan multiple contents for secrets
 - **reset_honeytoken**: Reset a honeytoken
 - **revoke_self_api_token**: Revoke current API token
 - **scan_and_create_incidents**: Scan content and create incidents automatically
-- **scan_content**: Scan content for secrets
 - **create_honeytoken**: Create a honeytoken
 - **create_honeytoken_with_context**: Create a honeytoken within a context
-- **create_team**: Create a team
 - **delete_custom_tag**: Delete a custom tag
+- **create_team**: Create a team
 - **delete_custom_tags_key**: Delete a custom tags key
 - **get_custom_tag**: Retrieve a custom tag
 - **get_health**: Check API health status
 - **get_honeytoken**: Retrieve a honeytoken
 - **get_quotas**: Retrieve quota overview
-- **assign_secret_incident**: Assign a secret incident
 - **bulk_prefix_lookup**: Bulk lookup for honeytoken HMSL hashes
 - **create_custom_tag**: Create a custom tag
-- **create_honeytoken_note**: Create a honeytoken note
-- **list_ip_allowlist**: List IP allowlist rules
-- **trigger_health_check**: Trigger a health check
 - **trigger_source_scans**: Trigger scans on sources
 - **update_custom_tag_full**: Full update of a custom tag
 - **update_custom_tag_partial**: Partial update of a custom tag
 - **update_custom_tags_key**: Update a custom tags key
-- **update_honeytoken**: Update a honeytoken
 - **update_secret_incident**: Update a secret incident
+- **assign_secret_incident**: Assign a secret incident
+- **create_honeytoken_note**: Create a honeytoken note
+- **get_secret_incident**: Retrieve secret incident details
+- **list_api_tokens**: List API tokens
+- **list_audit_logs**: List audit logs for your workspace
+- **list_health_checks**: List health checks
+- **list_honeytokens**: List honeytokens
+- **list_ip_allowlist**: List IP allowlist rules
+- **list_secret_incidents**: List secret incidents
+- **list_team_memberships**: List team members
+- **scan_content**: Scan content for secrets
+- **trigger_health_check**: Trigger a health check
+- **update_honeytoken**: Update a honeytoken
 
 
 ## 💬 Prompt Examples

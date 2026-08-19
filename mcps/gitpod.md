@@ -33,32 +33,32 @@ Connect your **Gitpod** account to any AI agent to orchestrate your cloud develo
 
 
 ## Available Tools (26)
-- **get_organization**: Get details for a specific Gitpod organization
-- **list_audit_logs**: List audit logs for an organization (Enterprise Only)
 - **list_configurations**: List repository configurations in an organization
-- **create_environment_variable**: Create an environment variable for a repository configuration
 - **delete_environment_variable**: Delete an environment variable
-- **remove_organization_member**: Remove a member from a Gitpod organization
-- **delete_organization**: Delete a Gitpod organization
 - **delete_workspace**: Delete a Gitpod workspace
-- **get_configuration**: Get details for a specific repository configuration
+- **remove_organization_member**: Remove a member from a Gitpod organization
 - **get_workspace**: Get details for a specific Gitpod workspace
 - **join_organization**: Join a Gitpod organization using an invitation ID
-- **list_environment_variables**: List environment variables for a repository configuration
 - **list_organization_members**: List members of a Gitpod organization
-- **list_organizations**: List all Gitpod organizations for the authenticated user
-- **list_workspace_sessions**: List workspace sessions (start/stop events) in an organization
-- **list_workspaces**: List workspaces in an organization
-- **start_workspace**: Start an existing Gitpod workspace
 - **stop_workspace**: Stop a running Gitpod workspace
 - **update_configuration**: Update a repository configuration
-- **update_organization_member**: Update a member role in a Gitpod organization
-- **update_organization_settings**: Update settings for a Gitpod organization
-- **create_and_start_workspace**: Create and start a new Gitpod workspace
 - **create_configuration**: Create a new repository configuration in Gitpod
 - **create_organization**: Create a new Gitpod organization
+- **create_and_start_workspace**: Create and start a new Gitpod workspace
 - **delete_configuration**: Delete a repository configuration
 - **get_organization_settings**: Get settings for a Gitpod organization
+- **create_environment_variable**: Create an environment variable for a repository configuration
+- **delete_organization**: Delete a Gitpod organization
+- **get_configuration**: Get details for a specific repository configuration
+- **get_organization**: Get details for a specific Gitpod organization
+- **list_audit_logs**: List audit logs for an organization (Enterprise Only)
+- **list_environment_variables**: List environment variables for a repository configuration
+- **list_organizations**: List all Gitpod organizations for the authenticated user
+- **list_workspaces**: List workspaces in an organization
+- **list_workspace_sessions**: List workspace sessions (start/stop events) in an organization
+- **start_workspace**: Start an existing Gitpod workspace
+- **update_organization_member**: Update a member role in a Gitpod organization
+- **update_organization_settings**: Update settings for a Gitpod organization
 
 
 ## 💬 Prompt Examples

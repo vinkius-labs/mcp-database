@@ -35,14 +35,14 @@ Connect your **Interactive Brokers** account to any AI agent to automate your tr
 
 ## Available Tools (9)
 - **get_account_summary**: Get account summary
-- **cancel_order**: Cancel an existing order
 - **get_flex_statement**: Retrieve a generated Flex Query report
+- **get_portfolio_ledger**: Get portfolio ledger
+- **cancel_order**: Cancel an existing order
 - **get_market_data_snapshot**: Get market data snapshot for contracts
 - **modify_order**: Modify an existing order
 - **place_order**: Requires a JSON array of order objects.
 
 Place a new order
-- **get_portfolio_ledger**: Get portfolio ledger
 - **send_flex_request**: Returns a ReferenceCode to be used with get_flex_statement.
 
 Generate a Flex Query report

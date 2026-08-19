@@ -29,15 +29,9 @@ Connect your **Marqeta** account to any AI agent to manage your card issuing inf
 
 
 ## Available Tools (31)
-- **create_auth_control**: Create an authorization control
-- **perform_kyc**: Perform KYC verification for a user
 - **provision_apple_pay**: Provision a card for Apple Pay
 - **create_business**: Create a new Marqeta business
 - **create_card_product**: Create a new Marqeta card product
-- **create_card**: Create a new Marqeta card
-- **create_card_transition**: g., ACTIVE, SUSPENDED, TERMINATED).
-
-Create a card transition
 - **create_direct_deposit_transition**: g., to reverse a deposit).
 
 Create a direct deposit transition
@@ -45,27 +39,33 @@ Create a direct deposit transition
 - **create_payment_card_funding_source**: Create a payment card funding source
 - **create_pin_control_token**: Create a PIN control token
 - **create_program_funding_source**: Create a program funding source
-- **create_user**: Create a new Marqeta user
 - **create_user_transition**: g., ACTIVE, SUSPENDED, CLOSED).
 
 Create a user transition
-- **create_velocity_control**: Create a velocity control
 - **create_webhook**: Create a webhook
 - **get_balances**: Retrieve balances for a user or business
 - **get_business**: Retrieve a Marqeta business by token
-- **get_card**: Retrieve a Marqeta card by token
 - **get_direct_deposit**: Retrieve a direct deposit record
 - **get_user**: Retrieve a Marqeta user by token
 - **list_cards_by_user**: List all cards for a specific user
-- **list_users**: List Marqeta users
 - **provision_google_pay**: Provision a card for Google Pay
 - **reveal_pin**: Reveal a card PIN
 - **simulate_authorization**: Simulate an authorization
 - **simulate_clearing**: Simulate a clearing transaction
 - **simulate_reversal**: Simulate a reversal
-- **update_pin**: Set or update a card PIN
 - **create_ach_funding_source**: Create an ACH funding source
+- **create_auth_control**: Create an authorization control
+- **create_card**: Create a new Marqeta card
+- **create_card_transition**: g., ACTIVE, SUSPENDED, TERMINATED).
+
+Create a card transition
+- **create_user**: Create a new Marqeta user
+- **create_velocity_control**: Create a velocity control
+- **get_card**: Retrieve a Marqeta card by token
+- **list_users**: List Marqeta users
+- **perform_kyc**: Perform KYC verification for a user
 - **ping_webhook**: Ping a webhook
+- **update_pin**: Set or update a card PIN
 
 
 ## 💬 Prompt Examples

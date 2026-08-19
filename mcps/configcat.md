@@ -33,26 +33,26 @@ Connect **ConfigCat** to any AI agent to streamline your feature flag management
 
 
 ## Available Tools (18)
-- **create_environment**: Create a new environment
 - **create_segment**: Create a new segment
-- **create_setting**: Create a new feature flag or setting
 - **delete_config**: Delete a configuration
 - **delete_environment**: Delete an environment
 - **delete_segment**: Delete a segment
 - **delete_setting**: Delete a setting
-- **get_config**: Get details of a specific configuration
 - **get_environment**: Get details of an environment
-- **get_segment**: Get details of a segment
 - **get_setting**: Get details of a setting
-- **get_setting_value**: Get the value of a setting in an environment
 - **list_configs**: List all configurations in a product
 - **list_environments**: g., Test, Production) for a specific product.
 
 List all environments in a product
 - **list_segments**: List all segments in a product
 - **list_settings**: List all settings in a configuration
-- **update_setting_value**: Update the value/targeting of a setting
 - **create_config**: Create a new configuration
+- **create_environment**: Create a new environment
+- **create_setting**: Create a new feature flag or setting
+- **get_config**: Get details of a specific configuration
+- **get_segment**: Get details of a segment
+- **get_setting_value**: Get the value of a setting in an environment
+- **update_setting_value**: Update the value/targeting of a setting
 
 
 ## 💬 Prompt Examples
