@@ -36,22 +36,22 @@ No more manual LinkedIn scraping or credit wasting. Your AI acts as a dedicated 
 
 
 ## Available Tools (12)
-- **check_lookup_status**: Check async lookup status
-- **create_webhook**: complete.
-
-Create a new webhook
 - **delete_webhook**: Delete a webhook
 - **get_account_info**: Get account profile
 - **get_credit_usage**: Get credit usage stats
 - **list_recent_searches**: List search history
-- **list_webhooks**: List configured webhooks
 - **lookup_company**: Get company details
+- **search_companies**: Search for companies
+- **search_people**: Search for professionals
+- **check_lookup_status**: Check async lookup status
+- **create_webhook**: complete.
+
+Create a new webhook
+- **get_billing_info**: Get billing details
+- **list_webhooks**: List configured webhooks
 - **lookup_person**: Consumes 1 credit.
 
 Get verified contact info
-- **search_companies**: Search for companies
-- **search_people**: Search for professionals
-- **get_billing_info**: Get billing details
 
 
 ## 💬 Prompt Examples

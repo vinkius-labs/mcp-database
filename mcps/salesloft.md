@@ -36,15 +36,15 @@ No more manual status checking or duplicate lead entry. Your AI acts as a dedica
 
 
 ## Available Tools (12)
-- **get_account_info**: Get company details
-- **get_cadence_details**: Get workflow info
 - **get_api_status**: Check connection
 - **get_person_details**: Get contact info
-- **list_sales_accounts**: List companies
-- **list_pending_actions**: Check in-progress steps
-- **list_recent_activity**: Get engagement history
 - **list_outreach_cadences**: List workflows
+- **list_recent_activity**: Get engagement history
+- **list_sales_accounts**: List companies
 - **list_sales_people**: List lead profiles
+- **get_account_info**: Get company details
+- **get_cadence_details**: Get workflow info
+- **list_pending_actions**: Check in-progress steps
 - **create_new_lead**: Add a person
 - **list_user_tasks**: Get scheduled tasks
 - **test_salesloft_auth**: Verify credentials

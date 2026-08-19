@@ -35,17 +35,17 @@ Connect your **Mailtrap** account to any AI agent and manage email testing and d
 
 
 ## Available Tools (12)
-- **clear_sandbox_inbox**: Delete all emails in inbox
 - **delete_sandbox_message**: Delete captured email
 - **get_domain_status**: Get domain details
-- **get_message_html**: Get email HTML body
-- **get_message_details**: Get message metadata
 - **list_accessible_accounts**: Get user accounts
 - **list_verified_domains**: List sending domains
-- **list_sandboxes**: List virtual inboxes
-- **list_sandbox_messages**: List messages in inbox
 - **list_mailtrap_projects**: List account projects
 - **send_production_email**: Send email in production
+- **clear_sandbox_inbox**: Delete all emails in inbox
+- **get_message_details**: Get message metadata
+- **get_message_html**: Get email HTML body
+- **list_sandboxes**: List virtual inboxes
+- **list_sandbox_messages**: List messages in inbox
 - **send_test_email**: Send test email to sandbox
 
 

@@ -35,18 +35,6 @@ Connect to the **PubMed E-utilities API** from the National Library of Medicine 
 
 
 ## Available Tools (16)
-- **batch_get_articles**: Useful for building reading lists, comparing studies, or analyzing a collection of articles from a reference list.
-
-Retrieve multiple articles by PMID list
-- **search_drugs**: Uses the Substance Name field for precise matching. Examples: "metformin", "pembrolizumab", "remdesivir", "aspirin", "dexamethasone".
-
-Search articles mentioning specific drugs or compounds
-- **get_abstract**: For structured abstracts, returns all sections (Background, Methods, Results, Conclusions). Essential for quickly evaluating whether a paper is relevant without accessing the full text.
-
-Get the full abstract text of a PubMed article
-- **get_article**: Returns title, all authors, journal name, publication date, volume, issue, pages, DOI, publication types, and language.
-
-Get article details by PubMed ID (PMID)
 - **get_citations**: Essential for understanding an article's impact, finding follow-up studies, and tracking how findings have been built upon by other researchers.
 
 Get articles that cite a given PubMed article
@@ -56,33 +44,45 @@ Find related articles using NCBI similarity algorithm
 - **search_by_author**: Use "LastName FirstInitial" format for best results (e.g. "Doudna JA", "Zhang F"). Returns the author's publication list with article metadata.
 
 Find PubMed articles by author name
-- **search_by_journal**: Can be combined with a topic query. Use journal abbreviations or full names (e.g. "Nature", "N Engl J Med", "Lancet", "Cell", "Science", "JAMA", "BMJ").
-
-Find articles published in a specific journal
-- **search_by_mesh**: MeSH terms provide precise topic classification. Examples: "Neoplasms", "Diabetes Mellitus", "Machine Learning", "Clustered Regularly Interspaced Short Palindromic Repeats", "COVID-19".
-
-Search using MeSH controlled vocabulary terms
 - **search_clinical**: This includes Phase I-IV trials, randomized controlled trials, and clinical study reports. Essential for evidence-based medicine and systematic reviews.
 
 Search for clinical trial publications
-- **search_free_full_text**: This filters to only return open access or author-deposited articles where the complete manuscript can be read for free. Essential for researchers without institutional journal subscriptions.
-
-Search for articles with free full-text available
 - **search_genes**: Uses the Gene Name field tag for precise matching. Examples: "TP53", "BRCA1", "EGFR", "KRAS", "MYC". Can be combined with a topic query for more specific results.
 
 Search articles mentioning specific genes
-- **search_pubmed**: Returns article titles, authors, journals, dates, DOIs, and publication types. Sort options: "relevance" (default), "date", "pub_date", "first_author", "journal".
-
-Search 36M+ biomedical articles on PubMed
-- **search_recent**: Use this to stay up-to-date with the latest publications in your research area. Default is last 30 days.
-
-Find the most recent articles in a field
 - **search_reviews**: These are the highest level of evidence synthesis in medicine and provide comprehensive overviews of research on a topic.
 
 Search for review articles and meta-analyses
 - **search_trending**: This surfaces papers that are generating the most attention and engagement in the research community.
 
 Find trending articles in a subject area
+- **batch_get_articles**: Useful for building reading lists, comparing studies, or analyzing a collection of articles from a reference list.
+
+Retrieve multiple articles by PMID list
+- **get_abstract**: For structured abstracts, returns all sections (Background, Methods, Results, Conclusions). Essential for quickly evaluating whether a paper is relevant without accessing the full text.
+
+Get the full abstract text of a PubMed article
+- **get_article**: Returns title, all authors, journal name, publication date, volume, issue, pages, DOI, publication types, and language.
+
+Get article details by PubMed ID (PMID)
+- **search_by_journal**: Can be combined with a topic query. Use journal abbreviations or full names (e.g. "Nature", "N Engl J Med", "Lancet", "Cell", "Science", "JAMA", "BMJ").
+
+Find articles published in a specific journal
+- **search_by_mesh**: MeSH terms provide precise topic classification. Examples: "Neoplasms", "Diabetes Mellitus", "Machine Learning", "Clustered Regularly Interspaced Short Palindromic Repeats", "COVID-19".
+
+Search using MeSH controlled vocabulary terms
+- **search_drugs**: Uses the Substance Name field for precise matching. Examples: "metformin", "pembrolizumab", "remdesivir", "aspirin", "dexamethasone".
+
+Search articles mentioning specific drugs or compounds
+- **search_free_full_text**: This filters to only return open access or author-deposited articles where the complete manuscript can be read for free. Essential for researchers without institutional journal subscriptions.
+
+Search for articles with free full-text available
+- **search_pubmed**: Returns article titles, authors, journals, dates, DOIs, and publication types. Sort options: "relevance" (default), "date", "pub_date", "first_author", "journal".
+
+Search 36M+ biomedical articles on PubMed
+- **search_recent**: Use this to stay up-to-date with the latest publications in your research area. Default is last 30 days.
+
+Find the most recent articles in a field
 
 
 ## 💬 Prompt Examples

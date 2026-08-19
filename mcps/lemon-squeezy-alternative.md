@@ -35,18 +35,18 @@ Connect your **Lemon Squeezy** store to any AI agent and manage digital sales th
 
 
 ## Available Tools (12)
-- **get_subscription**: Get subscription details
 - **list_customers**: List all customers
 - **list_discounts**: List promo codes
 - **list_orders**: List all orders
 - **list_products**: List all products
 - **list_stores**: List all stores
-- **list_subscriptions**: List all subscriptions
 - **list_variants**: List all product variants
 - **list_webhooks**: List configured webhooks
-- **get_account_info**: Get account profile
 - **get_order**: Get order details
 - **get_product**: Get product details
+- **get_account_info**: Get account profile
+- **get_subscription**: Get subscription details
+- **list_subscriptions**: List all subscriptions
 
 
 ## 💬 Prompt Examples

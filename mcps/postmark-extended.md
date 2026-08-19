@@ -28,17 +28,17 @@ Connect your **Postmark** account to any AI agent and simplify your transactiona
 
 
 ## Available Tools (11)
-- **list_outbound_messages**: List sent messages
 - **list_account_servers**: List account servers
 - **list_email_templates**: List email templates
-- **send_batch_email**: Send emails in batch
+- **list_outbound_messages**: List sent messages
 - **send_email**: Send a single email
-- **get_server_info**: Get Postmark server configuration
-- **get_delivery_stats**: Get email delivery statistics
-- **get_outbound_stats**: Get outbound delivery stats
 - **get_template**: Get details for a specific email template
 - **list_bounces**: List recent email bounces
 - **list_domains**: List all verified sending domains
+- **get_delivery_stats**: Get email delivery statistics
+- **get_outbound_stats**: Get outbound delivery stats
+- **get_server_info**: Get Postmark server configuration
+- **send_batch_email**: Send emails in batch
 
 
 ## 💬 Prompt Examples

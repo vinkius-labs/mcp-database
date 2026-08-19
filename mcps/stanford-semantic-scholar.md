@@ -40,15 +40,18 @@ Connect to the **Semantic Scholar Academic Graph API** and unlock the world's la
 - **batch_get_authors**: Returns names, affiliations, paper counts, citation counts, and h-indices. Useful for comparing researchers or building collaboration network analyses.
 
 Retrieve multiple author profiles in a single request
-- **get_author_papers**: Returns papers with titles, years, venues, citation counts, open access status, and fields of study. Essential for reviewing a researcher's body of work or finding specific publications by a known author.
-
-Get all papers by a specific author
 - **get_paper**: Accepts multiple ID formats: Semantic Scholar ID (e.g. "[REDACTED]"), DOI (e.g. "10.1038/s41586-021-03819-2"), ArXiv ID (e.g. "arXiv:2106.09685"), PubMed ID (e.g. "PMID:34845388"), or ACL ID (e.g. "ACL:W12-3903"). Returns title, abstract, authors, venue, year, citation counts, open access PDF URL, and publication metadata.
 
 Get full paper details by ID, DOI, ArXiv ID, or PubMed ID
 - **search_authors**: Returns author profiles with affiliations, paper counts, citation counts, and h-index. Use this to find researchers in a specific field, discover top contributors, or find collaborators.
 
 Search authors by name across the academic graph
+- **get_recommendations**: The algorithm analyzes citation patterns, co-citation networks, and content similarity to find the most relevant papers you should read next. This is the AI-native way to discover related literature.
+
+Get AI-powered paper recommendations from a seed paper
+- **search_by_field**: Supported fields: Computer Science, Medicine, Biology, Chemistry, Physics, Mathematics, Engineering, Environmental Science, Economics, Business, Political Science, Sociology, Psychology, Art, History, Geography, Philosophy, Materials Science, Geology, Linguistics, Education, Agricultural and Food Sciences, Law.
+
+Search papers filtered by field of study
 - **batch_get_papers**: Accepts S2 IDs, DOIs, ArXiv IDs, or PubMed IDs. Useful for comparing papers, building reading lists, or analyzing a set of related works.
 
 Retrieve multiple papers in a single request
@@ -58,6 +61,9 @@ Bulk search for large result sets with token pagination
 - **get_author**: Returns name, affiliations, homepage, external IDs (DBLP, ORCID), total paper count, citation count, and h-index. The definitive tool for understanding a researcher's academic impact.
 
 Get author profile with h-index, citations, and metrics
+- **get_author_papers**: Returns papers with titles, years, venues, citation counts, open access status, and fields of study. Essential for reviewing a researcher's body of work or finding specific publications by a known author.
+
+Get all papers by a specific author
 - **get_multi_recommendations**: The algorithm finds papers similar to the positive set but dissimilar to the negative set. Ideal for focused literature discovery.
 
 Get recommendations from multiple seed papers with positive/negative signals
@@ -70,15 +76,9 @@ Get papers that cite a given paper
 - **get_paper_references**: Essential for literature reviews, understanding the intellectual lineage of a work, and finding foundational papers in a research area.
 
 Get papers referenced by a given paper
-- **get_recommendations**: The algorithm analyzes citation patterns, co-citation networks, and content similarity to find the most relevant papers you should read next. This is the AI-native way to discover related literature.
-
-Get AI-powered paper recommendations from a seed paper
 - **match_paper_title**: Uses fuzzy matching to handle slight variations. Returns the best matching paper with a match score. Ideal when you have a paper title from a reference list or bibliography and need to find its full metadata.
 
 Find an exact paper match from a title string
-- **search_by_field**: Supported fields: Computer Science, Medicine, Biology, Chemistry, Physics, Mathematics, Engineering, Environmental Science, Economics, Business, Political Science, Sociology, Psychology, Art, History, Geography, Philosophy, Materials Science, Geology, Linguistics, Education, Agricultural and Food Sciences, Law.
-
-Search papers filtered by field of study
 - **search_by_venue**: Use venue names like "Nature", "Science", "NeurIPS", "ICML", "CVPR", "ACL", "EMNLP", "The Lancet", "JAMA", "Cell", "Physical Review Letters". Essential for tracking publications in specific top-tier venues.
 
 Search papers filtered by conference or journal

@@ -35,18 +35,18 @@ Connect your **TaxJar** sales tax automation account to any AI agent and simplif
 
 
 ## Available Tools (12)
-- **calculate_sales_tax**: Calculate order tax
-- **create_tax_order**: Record order transaction
 - **create_tax_refund**: Record refund
 - **delete_tax_order**: Remove order record
 - **get_tax_account**: Get API status
 - **get_tax_order**: Get order details
 - **get_tax_rates**: Get rates by ZIP
-- **list_tax_categories**: List product types
 - **list_nexus_regions**: List tax nexus
-- **list_tax_orders**: List order transactions
+- **list_tax_categories**: List product types
 - **update_tax_order**: Modify order record
 - **validate_tax_address**: Verify address for tax
+- **calculate_sales_tax**: Calculate order tax
+- **create_tax_order**: Record order transaction
+- **list_tax_orders**: List order transactions
 
 
 ## 💬 Prompt Examples

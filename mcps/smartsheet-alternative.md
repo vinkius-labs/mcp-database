@@ -36,20 +36,20 @@ Connect your **Smartsheet** account to any AI agent to automate your enterprise 
 ## Available Tools (12)
 - **get_sheet_details**: Get sheet data
 - **get_workspace_details**: Get workspace info
-- **list_sheet_columns**: List sheet fields
 - **list_available_reports**: List filtered reports
-- **list_sheets**: List Smartsheet sheets
-- **list_platform_users**: List company users
 - **list_workspaces**: List project workspaces
+- **get_my_profile**: Get user info
+- **add_sheet_rows**: Rows must be provided as a JSON array.
+
+Append new rows
+- **list_platform_users**: List company users
+- **list_sheet_columns**: List sheet fields
+- **list_sheets**: List Smartsheet sheets
+- **remove_sheet_row**: Delete a row
 - **search_within_sheet**: Find data in sheet
 - **update_sheet_rows**: Rows must be provided as a JSON array with IDs.
 
 Modify existing rows
-- **add_sheet_rows**: Rows must be provided as a JSON array.
-
-Append new rows
-- **remove_sheet_row**: Delete a row
-- **get_my_profile**: Get user info
 
 
 ## 💬 Prompt Examples

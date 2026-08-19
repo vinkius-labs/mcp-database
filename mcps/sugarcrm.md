@@ -24,8 +24,8 @@ The SugarCRM MCP server links your AI agent to your enterprise sales ecosystem. 
 - **list_contacts**: List all contacts
 - **list_leads**: List all leads
 - **list_opportunities**: List all sales opportunities
-- **list_tasks**: List all tasks
 - **search_global**: Perform a globalThis search across all modules
+- **list_tasks**: List all tasks
 
 
 ## 💬 Prompt Examples

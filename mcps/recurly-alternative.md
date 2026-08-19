@@ -28,17 +28,17 @@ Connect your **Recurly** account to any AI agent and simplify your subscription 
 
 
 ## Available Tools (11)
-- **get_invoice**: Get details for a specific invoice
-- **get_revenue_summary**: Get revenue export dates
 - **list_coupons**: List all active coupons
-- **list_transactions**: List recent transactions
-- **create_billing_account**: Register a new account
 - **get_account_details**: Get details for a specific account
 - **get_subscription_details**: Get details for a specific subscription
 - **list_billing_accounts**: List billing accounts
 - **list_billing_invoices**: List invoices
 - **list_subscription_plans**: List available plans
 - **list_subscriptions**: List Recurly subscriptions
+- **list_transactions**: List recent transactions
+- **create_billing_account**: Register a new account
+- **get_invoice**: Get details for a specific invoice
+- **get_revenue_summary**: Get revenue export dates
 
 
 ## 💬 Prompt Examples

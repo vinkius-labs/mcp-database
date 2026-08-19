@@ -36,21 +36,21 @@ Connect your **Hotjar** account to any AI agent and access user experience analy
 
 
 ## Available Tools (15)
-- **get_feedback_widget**: Get feedback widget details
-- **get_heatmap**: Get heatmap details
 - **get_recording**: Get recording details
-- **get_survey_stats**: Get survey statistics
-- **get_survey**: Get survey details
 - **list_feedback_responses**: List feedback responses
-- **list_feedback**: List feedback widgets
 - **list_funnels**: List funnels
 - **list_recordings**: List recordings
 - **list_sites**: List tracked sites
 - **list_survey_responses**: List survey responses
+- **check_hotjar_status**: Verify connectivity
+- **get_feedback_widget**: Get feedback widget details
+- **get_heatmap**: Get heatmap details
+- **get_survey**: Get survey details
+- **get_survey_stats**: Get survey statistics
+- **list_feedback**: List feedback widgets
+- **list_heatmaps**: List heatmaps
 - **list_surveys**: List surveys
 - **lookup_user**: Lookup user
-- **list_heatmaps**: List heatmaps
-- **check_hotjar_status**: Verify connectivity
 
 
 ## 💬 Prompt Examples

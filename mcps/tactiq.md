@@ -36,12 +36,12 @@ No more manual searching for 'who said what' or missing critical meeting follow-
 
 
 ## Available Tools (6)
-- **list_meetings**: Available on all Tactiq plans (Free, Pro, Team).
-
-List recent meetings
 - **list_meeting_artifacts**: Requires Tactiq Team plan or higher.
 
 List AI artifacts from a meeting
+- **list_meetings**: Available on all Tactiq plans (Free, Pro, Team).
+
+List recent meetings
 - **check_generation_status**: Useful when a summary is still being processed by Tactiq AI. Returns the current processing state.
 
 Check if meeting summary is ready
