@@ -34,21 +34,30 @@ Perfect for **customer support teams**, **IT helpdesks**, and **SaaS companies**
 
 
 ## Available Tools (13)
+- **get_contact**: Use this to review customer details before interacting with their tickets.
+
+Get details of a specific Zoho Desk contact
+- **get_ticket**: Use this to review full ticket history before responding.
+
+Get details of a specific Zoho Desk ticket
+- **list_departments**: Departments are used to categorize tickets and assign agents. Each department has a unique ID needed for ticket creation and agent listing. Use this first to get department IDs.
+
+List all departments in Zoho Desk
+- **search_tickets**: Searches subject, description, and custom fields. Use this to find tickets related to a specific topic, customer name, or product. Returns matching tickets with basic info.
+
+Search tickets in Zoho Desk by keyword
+- **add_note**: Notes are only visible to agents and not visible to customers. Use this for internal collaboration, escalation notes, or context that should not be shared with the customer. Requires a valid ticket ID.
+
+Add an internal note to a Zoho Desk ticket
 - **add_reply**: The reply is visible to the customer via email and in the customer portal. Commonly used by agents to respond to customer inquiries. The reply is sent as HTML format. Requires a valid ticket ID.
 
 Add a reply to a Zoho Desk ticket
 - **create_contact**: Requires firstName, lastName, and email. Optionally set phone, title, department, account association, and custom fields. Returns the created contact data including the new contact ID.
 
 Create a new contact in Zoho Desk
-- **get_contact**: Use this to review customer details before interacting with their tickets.
-
-Get details of a specific Zoho Desk contact
 - **create_ticket**: Requires at minimum a subject, contact ID, and department ID. Optionally set priority (Low, Medium, High, Urgent), status, classification, and custom fields. Returns the created ticket data including the new ticket ID.
 
 Create a new support ticket in Zoho Desk
-- **get_ticket**: Use this to review full ticket history before responding.
-
-Get details of a specific Zoho Desk ticket
 - **list_accounts**: Returns account name, industry, website, and associated contacts. Useful for B2B support to understand which company a contact belongs to.
 
 List accounts (organizations) in Zoho Desk
@@ -58,18 +67,9 @@ List agents in a Zoho Desk department
 - **list_contacts**: Returns contact name, email, phone, and account association. Useful for customer lookup before creating tickets or reviewing customer history.
 
 List contacts (customers) in Zoho Desk
-- **list_departments**: Departments are used to categorize tickets and assign agents. Each department has a unique ID needed for ticket creation and agent listing. Use this first to get department IDs.
-
-List all departments in Zoho Desk
 - **list_tickets**: Useful for agents to review open, pending, or resolved tickets across all departments. Returns ticket ID, subject, status, priority, and assignee.
 
 List all support tickets in Zoho Desk
-- **search_tickets**: Searches subject, description, and custom fields. Use this to find tickets related to a specific topic, customer name, or product. Returns matching tickets with basic info.
-
-Search tickets in Zoho Desk by keyword
-- **add_note**: Notes are only visible to agents and not visible to customers. Use this for internal collaboration, escalation notes, or context that should not be shared with the customer. Requires a valid ticket ID.
-
-Add an internal note to a Zoho Desk ticket
 - **update_ticket**: Commonly used to change ticket status from Open to Closed or to reassign to another agent. Only pass the fields you want to update.
 
 Update an existing Zoho Desk ticket

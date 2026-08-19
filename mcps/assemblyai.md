@@ -37,8 +37,8 @@ Empower your AI agent to orchestrate your entire audio intelligence and transcri
 ## Available Tools (6)
 - **delete_transcript**: Delete a transcription record
 - **get_transcript_paragraphs**: Get the transcript broken down by paragraphs
-- **get_transcript_sentences**: Get the transcript broken down by sentences
 - **get_transcript**: Get the result of a transcription job
+- **get_transcript_sentences**: Get the transcript broken down by sentences
 - **list_transcripts**: List all transcription jobs
 - **transcribe_audio**: Start a transcription job for an audio/video URL
 

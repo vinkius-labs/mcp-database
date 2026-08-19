@@ -38,9 +38,15 @@ No more navigating complex GIS software to find coordinates or calculate routes.
 
 
 ## Available Tools (6)
+- **geocode_address**: Accepts free-form address text like "1600 Pennsylvania Ave, Washington DC" or "Eiffel Tower, Paris". Returns candidate matches with coordinates, address components and confidence scores. Useful for mapping and location-based queries.
+
+Geocode an address to coordinates
 - **get_basemap_styles**: Each style includes its name, description, thumbnail URL and style ID. Useful for discovering map styles for visualization projects.
 
 List available basemap styles
+- **get_elevation**: Accepts locations as semicolon-separated "longitude,latitude" pairs. Returns elevation in meters for each location. Useful for terrain analysis, hiking planning and geographic research.
+
+Get elevation data for locations
 - **get_route**: Stops are specified as semicolon-separated "longitude,latitude" pairs (e.g. "-77.0365,38.8977;-74.0060,40.7128" for Washington DC to NYC). Optionally set travel mode (driving, trucking, walking). Returns route geometry, total distance, total travel time and turn-by-turn directions.
 
 Get driving directions between stops
@@ -50,12 +56,6 @@ Reverse geocode coordinates to address
 - **search_places**: Accepts a location ("longitude,latitude") and optional category (e.g. "Coffee Shop", "Restaurant", "Gas Station", "Hotel", "Hospital") and search radius in meters. Returns nearby places with names, addresses, categories and distances.
 
 Search for places near a location
-- **geocode_address**: Accepts free-form address text like "1600 Pennsylvania Ave, Washington DC" or "Eiffel Tower, Paris". Returns candidate matches with coordinates, address components and confidence scores. Useful for mapping and location-based queries.
-
-Geocode an address to coordinates
-- **get_elevation**: Accepts locations as semicolon-separated "longitude,latitude" pairs. Returns elevation in meters for each location. Useful for terrain analysis, hiking planning and geographic research.
-
-Get elevation data for locations
 
 
 ## 💬 Prompt Examples

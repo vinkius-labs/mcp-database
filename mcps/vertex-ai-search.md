@@ -38,12 +38,12 @@ No more manual digging through complex documentation systems. Your AI agent beco
 
 
 ## Available Tools (7)
-- **search_documents**: Provide a data store ID and the query text.
-
-Performs a search query across documents in a specific data store
 - **get_grounded_answer**: Returns a natural language response based on your private data.
 
 Retrieves an AI-generated answer grounded in the documents of a data store
+- **search_documents**: Provide a data store ID and the query text.
+
+Performs a search query across documents in a specific data store
 - **get_datastore_details**: Retrieves configuration and metadata for a specific data store
 - **list_data_stores**: Lists all data stores in the Vertex AI Search collection
 - **list_datastore_documents**: Provide data store and branch IDs.

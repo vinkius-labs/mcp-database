@@ -35,24 +35,24 @@ Connect your **Zoho Inventory** account to any AI agent to automate your supply 
 
 
 ## Available Tools (8)
+- **list_items**: Includes basic metadata and item IDs.
+
+List all inventory items
+- **list_purchase_orders**: List all purchase orders
 - **create_item**: Requires the item name and sales rate. Optional description can be provided.
 
 Create a new inventory item
 - **get_item_details**: Get details for a specific inventory item
-- **list_invoices**: Useful for tracking billing and payment status.
-
-List all inventory invoices
-- **list_items**: Includes basic metadata and item IDs.
-
-List all inventory items
-- **list_organizations**: This is necessary to obtain the organization ID required for other inventory tools.
-
-List associated Zoho organizations
-- **list_purchase_orders**: List all purchase orders
-- **list_sales_orders**: List all sales orders
 - **list_contacts**: Essential for identifying IDs for orders and invoices.
 
 List customers and vendors
+- **list_invoices**: Useful for tracking billing and payment status.
+
+List all inventory invoices
+- **list_organizations**: This is necessary to obtain the organization ID required for other inventory tools.
+
+List associated Zoho organizations
+- **list_sales_orders**: List all sales orders
 
 
 ## 💬 Prompt Examples

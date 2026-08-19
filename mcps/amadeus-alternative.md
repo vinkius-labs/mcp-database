@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your entire travel planning workflow with *
 
 
 ## Available Tools (10)
-- **get_flight_destinations**: Get flight destinations from an origin
-- **get_hotel_offers**: Get specific offers for a hotel ID
 - **get_direct_destinations**: Get direct destinations from an airport
 - **get_flight_dates**: Get cheapest flight dates
 - **get_travel_recommendations**: Get recommended locations based on coordinates
-- **get_seat_map**: Get seat map for a flight offer ID
 - **search_cities**: Search for cities and locations
-- **search_flights**: Search for flight offers
 - **search_hotels**: Search for hotels by city code
+- **get_flight_destinations**: Get flight destinations from an origin
+- **get_hotel_offers**: Get specific offers for a hotel ID
+- **get_seat_map**: Get seat map for a flight offer ID
+- **search_flights**: Search for flight offers
 - **search_poi**: Search for points of interest
 
 

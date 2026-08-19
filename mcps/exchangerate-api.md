@@ -39,11 +39,11 @@ Equip your AI agent with real-time financial intelligence via **ExchangeRate-API
 - **get_enriched_currency_data**: g., flag, full name).
 
 Get enriched currency information
-- **get_historical_rates**: Get historical exchange rates
 - **get_latest_rates**: g., USD).
 
 Get latest exchange rates
 - **convert_currency_pair**: Convert between two currencies
+- **get_historical_rates**: Get historical exchange rates
 - **list_supported_currencies**: List all supported currencies
 
 

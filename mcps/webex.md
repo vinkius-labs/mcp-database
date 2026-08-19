@@ -38,16 +38,9 @@ No more manual navigation through complex meeting dashboards to find a join link
 
 
 ## Available Tools (10)
-- **delete_webex_room**: This action is irreversible and removes all history for the room.
-
-Permanently deletes a Webex room
 - **get_meeting_details**: Retrieves details for a specific Webex meeting
-- **get_room_details**: Retrieves details for a specific Webex room
 - **list_scheduled_meetings**: Lists scheduled Webex meetings
 - **list_webex_rooms**: Lists all Webex rooms (spaces) the authenticated user belongs to
-- **update_meeting_schedule**: Provide the meeting ID and the updated fields.
-
-Updates the time or title of an existing Webex meeting
 - **update_room_title**: Provide the room ID and the new title.
 
 Updates the title of an existing Webex room
@@ -60,6 +53,13 @@ Creates a new Webex space
 - **delete_scheduled_meeting**: This action is irreversible.
 
 Permanently cancels and deletes a scheduled Webex meeting
+- **delete_webex_room**: This action is irreversible and removes all history for the room.
+
+Permanently deletes a Webex room
+- **get_room_details**: Retrieves details for a specific Webex room
+- **update_meeting_schedule**: Provide the meeting ID and the updated fields.
+
+Updates the time or title of an existing Webex meeting
 
 
 ## 💬 Prompt Examples

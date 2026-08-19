@@ -39,6 +39,15 @@ No more navigating complex financial terminals to check stock prices or technica
 
 
 ## Available Tools (13)
+- **get_daily_time_series**: Optionally set outputsize to "compact" (last 100 data points, default) or "full" (20+ years of data). Returns daily price data with dates.
+
+Get daily stock time series
+- **get_intraday_time_series**: Optionally set interval (1min, 5min, 15min, 30min, 60min) and outputsize. Returns price data at the specified interval. Useful for day trading analysis.
+
+Get intraday stock time series
+- **get_monthly_time_series**: Each data point represents a month of trading. Useful for long-term trend analysis and portfolio review.
+
+Get monthly stock time series
 - **get_rsi**: RSI measures momentum on a 0-100 scale; above 70 indicates overbought, below 30 indicates oversold. Optionally set interval, time period and series type (close, open, high, low).
 
 Get Relative Strength Index (RSI) indicator
@@ -57,27 +66,18 @@ Get company overview and fundamentals
 - **get_crypto_daily**: Requires the crypto symbol (e.g. "BTC") and the market currency (e.g. "USD"). Returns daily price data with dates.
 
 Get daily cryptocurrency prices
-- **get_daily_time_series**: Optionally set outputsize to "compact" (last 100 data points, default) or "full" (20+ years of data). Returns daily price data with dates.
-
-Get daily stock time series
 - **get_earnings**: Useful for earnings analysis and identifying beats/misses.
 
 Get earnings history for a stock
 - **get_forex_daily**: Requires the from symbol (e.g. "EUR") and to symbol (e.g. "USD"). Returns daily OHLCV forex data with dates.
 
 Get daily foreign exchange rates
-- **get_intraday_time_series**: Optionally set interval (1min, 5min, 15min, 30min, 60min) and outputsize. Returns price data at the specified interval. Useful for day trading analysis.
-
-Get intraday stock time series
-- **get_monthly_time_series**: Each data point represents a month of trading. Useful for long-term trend analysis and portfolio review.
-
-Get monthly stock time series
-- **get_news_sentiment**: Each article includes title, summary, source, sentiment scores (bullish/bearish score) and relevance score. Optionally filter by topics and limit the number of results.
-
-Get news sentiment for stock tickers
 - **get_quote**: Returns current trading data including change and change percent. Useful for quick price checks.
 
 Get real-time stock quote
+- **get_news_sentiment**: Each article includes title, summary, source, sentiment scores (bullish/bearish score) and relevance score. Optionally filter by topics and limit the number of results.
+
+Get news sentiment for stock tickers
 
 
 ## 💬 Prompt Examples
