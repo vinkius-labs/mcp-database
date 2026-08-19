@@ -38,11 +38,11 @@ Connect your **Couchbase** (Capella or self-hosted) cluster to any AI agent and 
 ## Available Tools (7)
 - **execute_n1ql_query**: Provision a highly-available JSON Payload generating generic N1QL constraints
 - **list_buckets**: Identify bounded routing spaces inside the Headless Couchbase DB
-- **list_scopes**: Retrieve explicit UX logging tracing explicit Scope and Collection Object limits
 - **list_indexes**: Enumerate explicitly attached structured rules exporting active Search Indexes
-- **vector_search**: Execute static listing mapping structural KNN Vector similarities via Index
-- **get_document**: Fetch elaborate internal mapped properties limiting Couchbase KV documents
+- **list_scopes**: Retrieve explicit UX logging tracing explicit Scope and Collection Object limits
 - **fts_search**: Perform structural text-based extraction matching asynchronous Content Trees
+- **get_document**: Fetch elaborate internal mapped properties limiting Couchbase KV documents
+- **vector_search**: Execute static listing mapping structural KNN Vector similarities via Index
 
 
 ## 💬 Prompt Examples

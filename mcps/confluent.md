@@ -32,10 +32,6 @@ Connect your AI to **Confluent Cloud**, the fully managed data streaming platfor
 
 
 ## Available Tools (7)
-- **get_cluster_details**: Returns configuration, endpoint URLs, availability, and provisioning status.
-
-Retrieve detailed information about a specific Kafka cluster
-- **list_cloud_api_keys**: Retrieve API keys in the Confluent Cloud account
 - **list_connectors**: Returns configured source and sink connectors with their status.
 
 Retrieve Kafka Connect connectors in an environment and cluster
@@ -45,6 +41,10 @@ Retrieve a list of Confluent Cloud environments
 - **list_service_accounts**: Useful for auditing programmatic access.
 
 Retrieve service accounts in the Confluent Cloud organization
+- **get_cluster_details**: Returns configuration, endpoint URLs, availability, and provisioning status.
+
+Retrieve detailed information about a specific Kafka cluster
+- **list_cloud_api_keys**: Retrieve API keys in the Confluent Cloud account
 - **list_topics**: Returns all topics with partition count and replication configuration.
 
 Retrieve topics in a specific Kafka cluster

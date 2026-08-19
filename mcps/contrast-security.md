@@ -38,8 +38,8 @@ Connect your **Contrast Security** platform to any AI agent and bring powerful A
 - **list_applications**: List all applications monitored in Contrast Security
 - **list_critical_vulnerabilities**: Quickly list only vulnerabilities with CRITICAL severity
 - **list_monitored_servers**: List servers where Contrast agents are deployed
-- **list_vulnerability_traces**: List security vulnerability traces (vulnerabilities)
 - **list_organization_users**: List users in your Contrast Security organization
+- **list_vulnerability_traces**: List security vulnerability traces (vulnerabilities)
 - **search_applications_by_name**: Search for monitored applications by name
 - **search_vulnerabilities**: Search and filter vulnerabilities using complex criteria
 

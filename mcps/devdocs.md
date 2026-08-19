@@ -36,8 +36,8 @@ Connect your AI agent to the **DevDocs.io** index and take full control of your 
 
 ## Available Tools (3)
 - **list_libraries**: List all supported programming languages, frameworks, and SDKs (e.g. aws, vue~3, rust) available in DevDocs
-- **search_docs**: Search the index of a specific documentation library to find the exact manual page path
 - **read_page**: Read the content of a specific documentation page. Returns cleanly formatted Markdown text
+- **search_docs**: Search the index of a specific documentation library to find the exact manual page path
 
 
 ## 💬 Prompt Examples

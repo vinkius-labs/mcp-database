@@ -36,12 +36,12 @@ Connect your **Chroma** vector database to any AI agent and take full control of
 
 ## Available Tools (7)
 - **list_collections**: List all explicitly defined Vector Collections within a given tenant database
+- **check_heartbeat**: Validate fundamental network availability against explicit Chroma API nodes
 - **get_collection**: Identify bounded logical settings configuring a specific Vector Collection block
+- **peek_documents**: Extracts explicitly attached bounded preview of the Database limits
 - **count_documents**: Execute explicit structural tracking enumerating total document volumes
 - **get_documents**: Retrieve exact physical documents and semantic context inside known arrays
 - **query_embeddings**: Identify precise logical bounds matching high-dimensional semantic clustering
-- **peek_documents**: Extracts explicitly attached bounded preview of the Database limits
-- **check_heartbeat**: Validate fundamental network availability against explicit Chroma API nodes
 
 
 ## 💬 Prompt Examples

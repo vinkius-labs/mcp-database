@@ -36,18 +36,18 @@ No more manual status checking or digging through contract folders. Your AI acts
 
 
 ## Available Tools (12)
-- **get_account_info**: Get Dropbox Sign account details
-- **cancel_signature_request**: Cancel a pending signature request
 - **create_unclaimed_draft**: Create an unclaimed draft
 - **get_files_data_uri**: Get document as Data URI
 - **get_files_download_url**: Get temporary download link for files
-- **get_template_details**: Get template metadata
 - **list_bulk_send_jobs**: List bulk sending jobs
 - **list_templates**: List available signature templates
-- **send_signature_request**: Send a document for signature
 - **send_with_template**: Send signature request using templates
-- **get_signature_request_details**: Get details for a signature request
 - **list_signature_requests**: List all signature requests
+- **cancel_signature_request**: Cancel a pending signature request
+- **get_account_info**: Get Dropbox Sign account details
+- **get_signature_request_details**: Get details for a signature request
+- **get_template_details**: Get template metadata
+- **send_signature_request**: Send a document for signature
 
 
 ## 💬 Prompt Examples

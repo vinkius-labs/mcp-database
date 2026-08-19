@@ -37,15 +37,15 @@ Connect your **Drupal** site to any AI agent and take full control of your headl
 
 
 ## Available Tools (10)
-- **get_taxonomy_term**: Perform structural extraction of properties driving active Term mappings
 - **list_managed_files**: Inspect deep internal arrays mitigating specific Picture constraints
-- **list_content_nodes**: Identify bounded routing spaces inside the Headless Drupal models
-- **list_term_vocabularies**: Enumerate explicitly attached structured rules exporting Taxonomies
-- **list_drupal_users**: Identify precise active arrays spanning rented Admin identities
 - **patch_cms_node**: Mutate globalThis Web CRM boundaries substituting Draft values safely
-- **wipe_cms_node**: Irreversibly vaporize explicit App nodes dropping live Document entities
+- **get_taxonomy_term**: Perform structural extraction of properties driving active Term mappings
+- **list_content_nodes**: Identify bounded routing spaces inside the Headless Drupal models
+- **list_drupal_users**: Identify precise active arrays spanning rented Admin identities
+- **list_term_vocabularies**: Enumerate explicitly attached structured rules exporting Taxonomies
 - **get_file_metadata**: Retrieve the exact structural matching verifying File storage
 - **get_single_node**: Retrieve explicit Cloud logging tracing explicit Node UUIDs
+- **wipe_cms_node**: Irreversibly vaporize explicit App nodes dropping live Document entities
 - **create_cms_node**: Provision a highly-available JSON Payload writing Rows into Drupal entities
 
 

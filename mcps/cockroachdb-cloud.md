@@ -37,13 +37,13 @@ Connect your **CockroachDB Cloud** account to any AI agent and take full control
 
 ## Available Tools (8)
 - **get_cluster_cloud_details**: Get detailed information for a specific cluster
-- **get_my_cockroach_profile**: Retrieve information about the authenticated user/organization
 - **list_network_allowlist**: List network allowlist rules for a specific cluster
-- **list_encryption_keys**: List Customer Managed Keys (CMKs) used for cluster encryption
-- **list_supported_cloud_providers**: List cloud providers supported by CockroachDB Cloud
-- **list_cockroach_clusters**: List all CockroachDB Cloud clusters
-- **list_cluster_nodes**: List all nodes within a specific cluster
+- **get_my_cockroach_profile**: Retrieve information about the authenticated user/organization
 - **list_cluster_operations**: List recent management operations for a cluster (e.g. scaling, upgrades)
+- **list_cockroach_clusters**: List all CockroachDB Cloud clusters
+- **list_supported_cloud_providers**: List cloud providers supported by CockroachDB Cloud
+- **list_cluster_nodes**: List all nodes within a specific cluster
+- **list_encryption_keys**: List Customer Managed Keys (CMKs) used for cluster encryption
 
 
 ## 💬 Prompt Examples
