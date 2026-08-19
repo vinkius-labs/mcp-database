@@ -4,16 +4,25 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Agent Composition Pattern Calculator](../mcps/agent-composition-pattern-calculator.md) | Calculate execution plans, latencies, and efficiency for AI agent orchestration patterns. |
 | [Agent Memory Hierarchy Calculator](../mcps/agent-memory-hierarchy-calculator.md) | Deterministic memory management for agentic memory tiers. |
+| [Agent Memory Tier Calculator](../mcps/agent-memory-tier-calculator.md) | Deterministic memory management engine for agentic memory hierarchies. |
 | [Agent Tool Selection Router](../mcps/agent-tool-selection-router.md) | A deterministic engine for selecting and sequencing optimal tools for AI agents. |
+| [Batch Request Optimizer](../mcps/batch-request-optimizer.md) | Optimize LLM API costs and latency by grouping requests into efficient batches. |
+| [Chunk Overhead Calculator](../mcps/chunk-overhead-calculator.md) | Calculate token overhead and optimize chunking strategies for LLM context windows. |
 | [Claude Tool Output Compressor](../mcps/claude-tool-output-compressor.md) | Reduces context window exhaustion by applying deterministic compression rules to large tool outputs. |
 | [CloudFront Cache Analyzer](../mcps/cloudfront-cache-analyzer.md) | Calculate AWS CloudFront cache hit ratios, origin load reduction, and TTL optimization. |
 | [Context Redundancy Deduplicator](../mcps/context-redundancy-deduplicator.md) | Identify and quantify exact N-gram overlaps across RAG documents to optimize context window usage. |
 | [Context Redundancy Deduplicator](../mcps/context-redundancy-deduplicator-alternative.md) | Identify overlapping N-grams across RAG documents to calculate redundancy and byte-size savings. |
+| [Context Window Compression Calculator](../mcps/context-window-compression-calculator.md) | Mathematically model token reduction strategies and quality trade-offs. |
 | [Context Window Optimizer](../mcps/context-window-optimizer.md) | Optimizes LLM context windows by selecting the most relevant and recent information within token limits. |
 | [Cost-Controlled Tool Selector](../mcps/cost-controlled-tool-selector.md) | A deterministic engine to select the most cost-effective tool variant based on accuracy requirements. |
 | [Grain Direction Restrictor](../mcps/grain-direction-restrictor.md) | Enforce material grain orientation constraints for precise plywood cutting and bin packing. |
+| [Model Routing Optimizer](../mcps/model-routing-optimizer.md) | A deterministic engine for selecting the optimal LLM based on cost, quality, and latency. |
+| [Prefix Cache Savings Calculator](../mcps/prefix-cache-savings-calculator.md) | Calculate exact token savings from LLM prefix caching. |
+| [RAG Chunk Selection Optimizer](../mcps/rag-chunk-selection-optimizer.md) | A deterministic engine to select the most effective RAG information chunks within token budgets. |
 | [RAG Chunk Size Optimizer](../mcps/rag-chunk-size-optimizer.md) | Evaluate RAG chunking strategies by calculating segmentation metrics, embedding costs, and context viability. |
+| [Speculative Decoding Calculator](../mcps/speculative-decoding-calculator.md) | Optimize LLM inference speed and cost using deterministic speculative decoding metrics. |
 | [Table Demographic Balancer](../mcps/table-demographic-balancer.md) | Prevent demographic clustering in seating arrangements by maintaining balanced personality traits and age groups. |
 | [Token Budget Allocator](../mcps/token-budget-allocator.md) | Deterministic token budget distribution for multi-agent pipelines. |
 

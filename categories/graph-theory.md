@@ -5,6 +5,7 @@ Explore the open database of **graph-theory** Model Context Protocol (MCP) serve
 | Tool Name | Description |
 |-----------|-------------|
 | [CrewAI Task Dependency Graph Validator](../mcps/crewai-task-dependency-graph-validator.md) | Ensures multi-agent task sequences are free of circular logic and properly ordered. |
+| [Workflow Branching & Routing Calculator](../mcps/workflow-branching-routing-calculator.md) | Deterministic workflow branching and conditional routing calculator. |
 
 
 ---

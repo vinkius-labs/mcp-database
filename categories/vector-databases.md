@@ -5,6 +5,7 @@ Explore the open database of **vector-databases** Model Context Protocol (MCP) s
 | Tool Name | Description |
 |-----------|-------------|
 | [Document Metadata Flattener](../mcps/document-metadata-flattener.md) | Flattens nested JSON metadata into dot-notation keys for vector store compatibility. |
+| [Embedding Dimension Optimizer](../mcps/embedding-dimension-optimizer.md) | A deterministic tool to balance embedding quality, latency, and storage efficiency. |
 
 
 ---

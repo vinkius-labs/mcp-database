@@ -4,6 +4,8 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Agent Load Balancer Calculator](../mcps/agent-load-balancer-calculator.md) | Deterministic load balancing engine for distributing request rates across agent instances. |
+| [Agent Rate Limiter Calculator](../mcps/agent-rate-limiter-calculator.md) | Deterministic distributed rate limiting for agentic workloads. |
 | [Agora](../mcps/agora.md) | Orchestrate Agora real-time engagement — manage channels, monitor usage, and handle cloud recording directly from any AI agent. |
 | [API Key Rotation Manager](../mcps/api-key-rotation-manager.md) | Deterministic API key rotation to prevent rate limits and exhaustion. |
 | [AWS API Gateway Throttling Calculator](../mcps/aws-api-gateway-throttling-calculator.md) | Calculate AWS API Gateway RPS, burst capacity, quotas, and operational limits. |
@@ -32,6 +34,7 @@ Explore the open database of **infrastructure** Model Context Protocol (MCP) ser
 | [Kubernetes Resource Request Calculator](../mcps/kubernetes-resource-request-calculator.md) | Computes Kubernetes CPU/memory requests and limits from observed usage metrics (p50/p95/p99). |
 | [Load Balancer Distributor](../mcps/load-balancer-distributor.md) | Deterministic simulation engine for evaluating load balancing algorithms. |
 | [Message Queue Throughput Calculator](../mcps/message-queue-throughput-calculator.md) | Plan capacity for Kafka, RabbitMQ, or SQS by calculating consumer needs, backlog drain time, and concurrency. |
+| [Multi-Tenant Isolation Calculator](../mcps/multi-tenant-isolation-calculator.md) | Deterministic resource isolation and quota calculator for multi-tenant environments. |
 | [OpenSearch Shard Calculator](../mcps/opensearch-shard-calculator.md) | Deterministic AWS OpenSearch shard distribution and resource allocation calculator. |
 | [PiLAB](../mcps/pilab.md) | Manage infrastructure and security via PiLAB — control PiVirt virtual machines, inspect PiTrust certificates, and oversee 3SO OAuth clients directly from any AI agent. |
 | [Pub-Sub Topic Router](../mcps/pub-sub-topic-router.md) | Deterministic routing engine for hierarchical topic patterns and wildcard subscriptions. |

@@ -11,12 +11,14 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Adafruit IO](../mcps/adafruit-io.md) | Manage Adafruit IO feeds, data points, dashboards, and triggers. |
 | [AddSearch](../mcps/addsearch.md) | Equip your AI agent with AddSearch to query your indexed site content, push new documents, and retrieve search analytics instantly. |
 | [AdGuard Home](../mcps/adguard-home.md) | Manage your AdGuard Home instance — control protection, DNS settings, and filtering rules directly from any AI agent. |
+| [Agent Checkpoint & Recovery Calculator](../mcps/agent-checkpoint-recovery-calculator.md) | Model operational overhead, storage costs, and recovery reliability for long-running agent workflows. |
 | [Agent Description & Tool Alignment Checker](../mcps/agent-description-tool-alignment-checker.md) | Validates alignment between agent descriptions and assigned tools to prevent multi-agent framework errors. |
 | [Agent Error Recovery Rate Calculator](../mcps/agent-error-recovery-rate-calculator.md) | Analyzes execution logs to calculate tool call success ratios and agent recovery rates. |
 | [Agent Evaluation Metrics Calculator](../mcps/agent-evaluation-metrics-calculator.md) | A deterministic engine for measuring agentic performance through statistical accuracy, efficiency, and reliability metrics. |
 | [Agent Handoff Protocol Calculator](../mcps/agent-handoff-protocol-calculator.md) | Model the efficiency, stability, and performance impact of multi-agent handoffs. |
 | [Agent Latency Pipeline Calculator](../mcps/agent-latency-pipeline-calculator.md) | Model end-to-end latency, retry impacts, and SLA compliance for agentic workflows. |
 | [Agent Persona Consistency Scanner](../mcps/agent-persona-consistency-scanner.md) | A precision utility for measuring how closely an LLM adheres to a target persona. |
+| [Agent Response Cache Calculator](../mcps/agent-response-cache-calculator.md) | A deterministic simulation engine to evaluate and optimize cache performance, TTL settings, and eviction strategies for AI agent responses. |
 | [Agent Role Conflict Detector](../mcps/agent-role-conflict-detector.md) | Detects overlapping responsibilities and role conflicts in multi-agent teams. |
 | [Agent Workflow Validator](../mcps/agent-workflow-validator.md) | Validates the structural integrity, metrics, and constraints of deterministic finite state machine workflows. |
 | [AgentOps (Agent Telemetry and Monitoring)](../mcps/agentops-agent-telemetry-and-monitoring.md) | Monitor and observe your AI agents with AgentOps — track traces, spans, and project metrics directly from your agent. |
@@ -110,6 +112,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Coalesce](../mcps/coalesce.md) | Enable your AI agent to manage Snowflake data pipelines, trigger transformations, and monitor jobs via the Coalesce API. |
 | [Cockpit (Self-hosted Headless CMS API)](../mcps/cockpit-self-hosted-headless-cms-api.md) | Manage your self-hosted Cockpit CMS content, assets, and menus directly from any AI agent. |
 | [Codacy](../mcps/codacy.md) | Manage code quality and automated reviews via Codacy — track grades, monitor issues, and audit repository analysis directly from any AI agent. |
+| [Code Block Token Analyzer](../mcps/code-block-token-analyzer.md) | Calculate token density and code-to-text ratios in documents. |
 | [Code Climate](../mcps/code-climate.md) | Manage code quality and engineering metrics via Code Climate — track repository grades, monitor snapshots, and audit test coverage directly from any AI agent. |
 | [Code Clone Detector](../mcps/code-clone-detector.md) | Identify exact and near-duplicate code blocks within your project. |
 | [Codecov](../mcps/codecov.md) | Manage test coverage and engineering metrics via Codecov — track coverage reports, monitor commit totals, and audit code quality directly from any AI agent. |
@@ -302,6 +305,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Immutable X](../mcps/immutable-x.md) | Interact with the Immutable blockchain — list activities, manage NFT collections, mint assets, and handle orderbook listings directly from your AI agent. |
 | [Import Order Enforcer](../mcps/import-order-enforcer.md) | Enforce deterministic import ordering and detect unused imports using AST analysis. |
 | [Import.io (Web Data Extraction)](../mcps/importio-web-data-extraction.md) | Extract structured data from any website via Import.io — run extractors, manage bulk crawls, and monitor API usage. |
+| [Inference Latency & Token Tradeoff Calculator](../mcps/inference-latency-token-tradeoff-calculator.md) | Model the relationship between inference latency, token count, and system throughput. |
 | [Infisical](../mcps/infisical.md) | Manage secrets infrastructure via AI — list, create, update, and audit secrets across environments with end-to-end encryption. |
 | [Infura (Ethereum Node RPC Provider)](../mcps/infura-ethereum-node-rpc-provider.md) | Access Ethereum blockchain data via Infura — query blocks, check balances, estimate gas, and interact with smart contracts directly from any AI agent. |
 | [Instatus (Status Pages API)](../mcps/instatus-status-pages-api.md) | Automate your status pages via Instatus — manage incidents, update component statuses, and monitor system health directly from any AI agent. |
@@ -401,6 +405,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Moonriver (Moonriver Block Explorer API)](../mcps/moonriver-moonriver-block-explorer-api.md) | Query Moonriver blockchain data—blocks, transactions, account balances, and EVM tokens—directly from your AI agent. |
 | [Moonscan (Moonbeam Network Explorer)](../mcps/moonscan-moonbeam-network-explorer.md) | Access Moonbeam blockchain data via Moonscan — check GLMR balances, track transactions, and inspect smart contracts directly from any AI agent. |
 | [Multi-Agent Coordination Pattern Validator](../mcps/multi-agent-coordination-pattern-validator.md) | Validates structural and logical integrity of multi-agent orchestration patterns. |
+| [Multi-Modal Token Calculator](../mcps/multi-modal-token-calculator.md) | Deterministic token estimation for text, image, and audio across major LLM architectures. |
 | [N-Gram Frequency Engine](../mcps/n-gram-frequency-engine.md) | Exact deterministic unigram, bigram, and trigram counting over huge texts. Save tokens and guarantee 100% accurate phrase counts. |
 | [Nakama](../mcps/nakama.md) | Automate your game backend via Nakama — manage authentication, user profiles, social features, and storage directly from any AI agent. |
 | [Nalpeiron V10](../mcps/nalpeiron-v10.md) | Protect your software with license management, usage tracking, and entitlement enforcement for desktop and cloud applications. |
@@ -422,6 +427,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [NS1 (IBM NS1 Premium DNS API)](../mcps/ns1-ibm-ns1-premium-dns-api.md) | Manage DNS zones, records, and traffic steering via IBM NS1. Automate infrastructure directly from your AI agent. |
 | [Nyckel ML](../mcps/nyckel-ml.md) | Classify data and perform semantic search via Nyckel — track ML functions, samples, and labels directly from your AI agent. |
 | [Object Hash Engine](../mcps/object-hash-engine.md) | Generate deterministic SHA-256 fingerprints of any JSON object. Keys are automatically sorted so {b:2,a:1} and {a:1,b:2} always produce the exact same hash. Essential for deduplication. |
+| [Observability & Tracing Calculator](../mcps/observability-tracing-calculator.md) | Deterministic engine for distributed tracing metrics, cost estimation, and anomaly detection. |
 | [Octoparse](../mcps/octoparse.md) | Scrape data from any website visually with a no-code web scraper that handles pagination, login, and JavaScript rendering. |
 | [OKLink (Multi-chain Web3 Blockchain Data API)](../mcps/oklink-multi-chain-web3-blockchain-data-api.md) | Access real-time blockchain data across multiple chains—query addresses, tokens, transactions, and blocks directly from your AI agent. |
 | [Ollama](../mcps/ollama.md) | Run LLM models via Ollama cloud API — generate completions, chat with multimodal models, create embeddings, and inspect model details from any AI agent. |
@@ -441,6 +447,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [OpenRouteService](../mcps/openrouteservice.md) | Plan routes and analyze spatial data via OpenRouteService — calculate directions, isochrones, distance matrices, VRP optimization, and geocoding from any AI agent. |
 | [Orama Hybrid Search Query Builder](../mcps/orama-hybrid-search-query-builder.md) | Generate syntactically perfect Orama search payloads with deterministic JSON structure. |
 | [Output Format Stability Checker](../mcps/output-format-stability-checker.md) | Detect non-deterministic shifts in LLM response structures. |
+| [Output Format Token Comparator](../mcps/output-format-token-comparator.md) | Analyze token efficiency, overhead, and complexity across different data serialization formats. |
 | [Oxylabs](../mcps/oxylabs.md) | Scrape any website via Oxylabs — extract Google SERPs, Amazon products, Bing and Yandex results, or any arbitrary URL with JS rendering from any AI agent. |
 | [ParseHub](../mcps/parsehub.md) | Control advanced cloud scraping projects via ParseHub — list targets, dispatch headless runs, trace crawler status, and fetch extracted datasets directly via AI. |
 | [Particle Network](../mcps/particle-network.md) | Manage Web3 infrastructure via Particle Network — handle Account Abstraction, UserOperations, and identity management directly through AI. |
@@ -475,9 +482,11 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Prismatic](../mcps/prismatic.md) | Manage your Prismatic integration platform — list customers, create instances, deploy integrations, and fetch execution logs via AI. |
 | [Privy](../mcps/privy.md) | Manage users and wallets via Privy — create users, search profiles, and manage embedded wallets directly from any AI agent. |
 | [Prompt Entropy and Clarity Scorer](../mcps/prompt-entropy-and-clarity-scorer.md) | A mathematical diagnostic tool to measure prompt complexity and cognitive load. |
+| [Prompt Template Optimizer](../mcps/prompt-template-optimizer.md) | A deterministic utility for balancing LLM token efficiency against semantic importance. |
 | [Prompt Template Variable Injector Checker](../mcps/prompt-template-variable-injector-checker.md) | Validates prompt templates for correct variable syntax, undeclared variables, and potential injection vectors. |
 | [Prompt Template Variable Injector Checker](../mcps/prompt-template-variable-injector-checker-alternative.md) | Validates prompt templates for syntax, undeclared variables, and injection risks. |
 | [Prompt Template Variable Resolver](../mcps/prompt-template-variable-resolver.md) | Validates and resolves variable placeholders in LLM templates. |
+| [Prompt Token Analyzer](../mcps/prompt-token-analyzer.md) | Deterministic token breakdown and budget analysis for prompt engineering. |
 | [PropelAuth (B2B Authentication)](../mcps/propelauth-b2b-authentication.md) | Manage B2B authentication, users, and organizations via PropelAuth — handle user provisioning, org management, and API keys directly from your AI agent. |
 | [Protobuf to JSON Schema Transpiler](../mcps/protobuf-to-json-schema-transpiler.md) | Convert Protocol Buffer (.proto) definitions into valid JSON Schema objects deterministically. |
 | [Prowlarr (Indexers)](../mcps/prowlarr-indexers.md) | Manage Prowlarr indexers—list, add, test, and monitor health status of your Usenet and Torrent indexers directly from your AI agent. |
@@ -491,6 +500,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Qovery](../mcps/qovery.md) | Bring effortless Kubernetes and cloud deployment management to your IDE. List environments, check application states, restart pods, and deploy exact Git commits via chat. |
 | [QStash (Serverless Message Queue)](../mcps/qstash-serverless-message-queue.md) | Manage serverless messaging, task scheduling, and webhooks via Upstash QStash — publish messages, manage queues, and handle DLQs directly. |
 | [Qualified.io](../mcps/qualifiedio.md) | Automate technical hiring and coding assessments — manage assessments, invite candidates, and track test results directly from your AI agent. |
+| [Quantization Impact Calculator](../mcps/quantization-impact-calculator.md) | Simulate and quantify the trade-offs between model compression and performance. |
 | [Rancher](../mcps/rancher.md) | Equip your AI to manage Kubernetes environments directly through Rancher, overseeing clusters, namespaces, and active pods. |
 | [RandomDuck](../mcps/randomduck.md) | Brighten your day with random duck images, GIFs, and HTTP status ducks for developers. |
 | [Rapid URL Indexer](../mcps/rapid-url-indexer-alternative.md) | Automate Google Search Console indexing — submit URL batches, track project progress, and manage credits directly via AI. |
@@ -534,6 +544,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Semantic Versioning Checker](../mcps/semantic-versioning-checker.md) | A high-precision engine for validating and comparing Semantic Versioning 2.0.0 strings. |
 | [Semaphore](../mcps/semaphore.md) | Automate CI/CD workflows, manage pipelines, and monitor build jobs directly from your AI agent. |
 | [SemVer Calculator](../mcps/semver-calculator.md) | Validate, compare, and manipulate Semantic Versioning 2.0.0 strings. |
+| [Serialization Size Comparator](../mcps/serialization-size-comparator.md) | Compare storage and token efficiency between JSON, YAML, and CSV formats. |
 | [SerpApi](../mcps/serpapi.md) | Equip your AI agent with real-time web search capabilities across Google, Bing, Baidu, Yahoo, and DuckDuckGo. |
 | [Serper](../mcps/serper.md) | Fast, affordable Google Search API — get real-time SERP results, news, and images with 2,500 free searches per month. |
 | [Shiden Scan (Shiden Network Block Explorer)](../mcps/shiden-scan-shiden-network-block-explorer.md) | Explore Shiden Network blockchain data—blocks, extrinsics, accounts, and EVM contracts—directly from your AI agent. |
@@ -553,6 +564,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Snipcart](../mcps/snipcart.md) | Connect your headless e-commerce store to your AI. List orders, update fulfillment statuses, and manage customers seamlessly from your environment. |
 | [SolanaFM (Solana FM Block Explorer API)](../mcps/solanafm-solana-fm-block-explorer-api.md) | Access Solana blockchain data via SolanaFM — inspect blocks, transactions, account metadata, and token balances directly from any AI agent. |
 | [SparkPost](../mcps/sparkpost.md) | Bring your SparkPost email delivery platform into your AI. Manage templates, send campaigns, and audit deliverability directly from your editor. |
+| [Special Character Token Analyzer](../mcps/special-character-token-analyzer.md) | Analyze the impact of special characters on tokenization density. |
 | [Spreads Database Branch Name Normalizer](../mcps/spreads-database-branch-name-normalizer.md) | Transforms git branch names into safe, SQL-compliant identifiers for Spreads database branching. |
 | [SQL Parser AST Engine](../mcps/sql-parser-ast-engine.md) | Parse any SQL query into a structured AST — extract tables, columns, JOINs, and WHERE clauses programmatically. Supports 15+ dialects including MySQL, PostgreSQL, and BigQuery. Your SQL injection firewall. |
 | [SQL Query Complexity Analyzer](../mcps/sql-query-complexity-analyzer.md) | Analyze SQL query complexity, join structures, and safety risks. |
@@ -593,12 +605,14 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [ThirdWeb](../mcps/thirdweb.md) | Integrate Web3 capabilities into your AI agent — manage wallets, authenticate users, and interact with smart contracts across multiple blockchains. |
 | [Tingyun / 听云](../mcps/tingyun.md) | Leading APM and observability platform — manage applications, alerts, and performance metrics via AI. |
 | [Togai (Usage Metering & Pricing)](../mcps/togai-usage-metering-pricing.md) | Automate usage-based billing and metering — ingest events, manage customers, and track entitlements directly from your AI agent. |
+| [Token Count Estimator](../mcps/token-count-estimator.md) | Deterministic LLM token estimation using character-based heuristics. |
 | [Tokenization Normalizer](../mcps/tokenization-normalizer.md) | Resolves tokenization drift by normalizing text to match specific LLM tokenizer profiles. |
 | [TOML Parser & Validator](../mcps/toml-parser-validator.md) | Strict TOML parsing and schema validation with precise error reporting. |
 | [TOML Parser Engine](../mcps/toml-parser-engine.md) | Convert TOML config files to JSON and back. Essential for Rust (Cargo.toml), Python (pyproject.toml), and Cloudflare (wrangler.toml). |
 | [TOML Strict Config Parser](../mcps/toml-strict-config-parser.md) | A deterministic, dependency-free parser that transforms TOML strings into structured JSON objects. |
 | [Tool Argument Completeness Checker](../mcps/tool-argument-completeness-checker.md) | Audits LLM tool calls to detect missing parameters and value hallucinations. |
 | [Tool Availability and Dependency Checker](../mcps/tool-availability-and-dependency-checker.md) | Audits tool environments for availability, version compatibility, and recursive dependency chains. |
+| [Tool Call Optimizer](../mcps/tool-call-optimizer.md) | A deterministic calculator to optimize MCP tool token footprints. |
 | [Tool Call Schema Validator](../mcps/tool-call-schema-validator.md) | High-precision validation of LLM tool call arguments against strict JSON Schema definitions. |
 | [Tool Description Semantic Density Scorer](../mcps/tool-description-semantic-density-scorer.md) | Analyzes LLM tool descriptions to evaluate linguistic precision, verb density, and naming consistency. |
 | [Tool Interface Contract Validator](../mcps/tool-interface-contract-validator.md) | Ensures tool implementations strictly adhere to declared input and output schemas via deterministic fuzz testing. |
@@ -610,6 +624,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Treblle](../mcps/treblle.md) | Monitor, document, and analyze your API traffic in real-time. Ingest request and response data directly into Treblle for instant observability. |
 | [Trigger.dev (Background Tasks & Jobs)](../mcps/triggerdev-background-tasks-jobs.md) | Manage background tasks and jobs via Trigger.dev — trigger tasks, monitor runs, manage schedules, and configure environment variables directly from your AI agent. |
 | [Tronscan (TRON Blockchain Explorer API)](../mcps/tronscan-tron-blockchain-explorer-api.md) | Explore the TRON blockchain — analyze accounts, track token balances, inspect smart contracts, and monitor network resources directly from any AI agent. |
+| [Truncation Detection Calculator](../mcps/truncation-detection-calculator.md) | A deterministic engine for identifying and managing text truncation based on token limits. |
 | [Truto Unified Calendar](../mcps/truto-unified-calendar.md) | Empower your AI agent with a universal API to read, schedule, and sync events seamlessly across Google, Outlook, and other major calendar providers. |
 | [Tyk](../mcps/tyk.md) | Manage your Tyk API Gateway and Dashboard — create keys, manage security policies, and list API definitions via natural language. |
 | [TzKT (Tezos Indexer & Explorer API)](../mcps/tzkt-tezos-indexer-explorer-api.md) | Access real-time Tezos blockchain data — explore accounts, smart contracts, and transaction history directly from your AI agent. |
@@ -649,6 +664,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Webshare](../mcps/webshare.md) | Manage residential and datacenter proxies, rotation settings, and authorized IPs on Webshare — the fast and affordable proxy network. |
 | [Weglot](../mcps/weglot.md) | Automate website translation and localization — check API status, list supported languages, and translate text arrays directly via Weglot. |
 | [Wemix Explorer](../mcps/wemix-explorer.md) | Explore Wemix blockchain data — query accounts, track token transfers, and inspect blocks or extrinsics directly from your AI agent. |
+| [Whitespace Reduction Calculator](../mcps/whitespace-reduction-calculator.md) | Analyze and quantify whitespace reduction impact. |
 | [WordPress Plugin Auditor](../mcps/wordpress-plugin-auditor.md) | This MCP gives your AI agent the ability to securely list and audit all installed plugins on a WordPress site. Perfect for security sweeps, maintenance reports, and identifying outdated or inactive plugins. |
 | [Writer (AI Enterprise LLM)](../mcps/writer-ai-enterprise-llm.md) | Access Writer's enterprise-grade LLMs and Knowledge Graph capabilities to generate content, manage files, and query RAG-based data. |
 | [XML Tag Structure Compliance Checker](../mcps/xml-tag-structure-compliance-checker.md) | Validates XML tag integrity, nesting hierarchy, and content density. |

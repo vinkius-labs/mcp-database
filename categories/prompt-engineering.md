@@ -4,7 +4,9 @@ Explore the open database of **prompt-engineering** Model Context Protocol (MCP)
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Prompt Distillation Calculator](../mcps/prompt-distillation-calculator.md) | Calculate efficiency, quality, and cost of prompt distillation. |
 | [Prompt Template Consistency Checker](../mcps/prompt-template-consistency-checker.md) | Validates consistency between prompt templates and context dictionaries. |
+| [Template Reuse Calculator](../mcps/template-reuse-calculator.md) | Quantify token savings by measuring prompt alignment with base templates. |
 
 
 ---

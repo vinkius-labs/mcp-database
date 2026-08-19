@@ -8,6 +8,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Advance-Decline Line Calculator](../mcps/advance-decline-line-calculator.md) | Calculate market breadth indicators like ADL, McClellan Oscillator, and divergence. |
 | [Advance/Decline Percentage Calculator](../mcps/advancedecline-percentage-calculator.md) | Calculate market breadth, sentiment classification, and trend divergence. |
 | [ADX-Calculator](../mcps/adx-calculator.md) | Deterministic Average Directional Index (ADX) calculator using Wilder's smoothing. |
+| [Agent Cost Allocation Engine](../mcps/agent-cost-allocation-engine.md) | Deterministic cost allocation and chargeback calculator for multi-agent systems. |
 | [Airdrop Farming Strategy](../mcps/airdrop-farming-strategy.md) | A deterministic engine to identify high-ROI crypto airdrop opportunities. |
 | [Appliance Energy Calculator](../mcps/appliance-energy-calculator.md) | Calculate electricity consumption in kWh and monthly costs for appliances. |
 | [Arms Index (TRIN) Calculator](../mcps/arms-index-trin-calculator.md) | Calculate the Arms Index (TRIN) to measure market breadth and sentiment. |

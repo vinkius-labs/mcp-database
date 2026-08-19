@@ -5,6 +5,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [AB Test Sample Size Calculator](../mcps/ab-test-sample-size-calculator.md) | Calculate required sample size, test duration, and peeking risk for A/B experiments. |
+| [Agent Scoring & Ranking Engine](../mcps/agent-scoring-ranking-engine.md) | Deterministic performance scoring and ranking for autonomous agents. |
 | [Astrological Compatibility Engine](../mcps/astrological-compatibility-engine.md) | Analyze zodiac compatibility using elemental and modal synergy. |
 | [Bayesian A/B Testing Calculator](../mcps/bayesian-ab-testing-calculator.md) | Quantify conversion probability, expected loss, and uplift using Bayesian inference. |
 | [Conversation Budget & Escalation Engine](../mcps/conversation-budget-escalation-engine.md) | A deterministic engine for managing LLM conversation lifecycles and predicting escalation triggers. |
@@ -18,6 +19,8 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Loot Drop Simulator](../mcps/loot-drop-simulator.md) | A probabilistic engine for simulating and analyzing randomized item distribution patterns in RPG loot systems. |
 | [North Star Metric Modeler](../mcps/north-star-metric-modeler.md) | Decompose North Star Metrics into actionable driver trees and simulate growth scenarios. |
 | [Power-to-Weight and Relative Strength Calculator](../mcps/power-to-weight-and-relative-strength-calculator.md) | Calculate W/kg for endurance sports and standardized strength scores (DOTS, WILKS, IPF) for powerlifting. |
+| [Prompt Cache Hit Calculator](../mcps/prompt-cache-hit-calculator.md) | Analyze prompt prefix caching performance, efficiency, and cost savings. |
+| [Prompt Reuse Analyzer](../mcps/prompt-reuse-analyzer.md) | Analyze prompt template reuse, efficiency, and standardization opportunities. |
 | [Recovery Readiness Score](../mcps/recovery-readiness-score.md) | Evaluate training readiness and optimal intensity based on sleep, soreness, stress, and motivation. |
 | [Recovery Score](../mcps/recovery-score.md) | Estimate muscle recovery and physiological readiness based on training load, sleep quality, and rest frequency. |
 | [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |

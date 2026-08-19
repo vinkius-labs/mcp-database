@@ -19,6 +19,8 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Calorie Burn Estimator](../mcps/calorie-burn-estimator.md) | Calculate energy expenditure using MET values, body weight, and activity duration. |
 | [Calories Burned Calculator](../mcps/calories-burned-calculator.md) | Calculate calories burned using MET values and heart rate data. |
 | [Carbon Footprint Calculator](../mcps/carbon-footprint-calculator.md) | Estimate your annual carbon emissions from home energy, travel, and lifestyle choices. |
+| [Char-to-Token Estimator](../mcps/char-to-token-estimator.md) | Predict token usage for different LLMs using language-specific character ratios. |
+| [Compression Ratio Calculator](../mcps/compression-ratio-calculator.md) | A deterministic utility to evaluate text compression performance. |
 | [Context Window Token Estimator](../mcps/context-window-token-estimator.md) | Calculate exact token counts and payload distribution for AI agent context windows. |
 | [Correlation Matrix Engine](../mcps/correlation-matrix-engine.md) | Generate exact Pearson and Spearman correlation matrices across all numeric columns local. Find the strongest relationships in your data without LLM math errors. |
 | [Country Data Resolver](../mcps/country-data-resolver.md) | Resolve ISO country codes to full names, alpha-3, and numeric codes in 4 languages. Essential for CRM and international data. |
@@ -51,6 +53,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Moving Truck Sizer](../mcps/moving-truck-sizer.md) | Calculate the exact truck size needed for your move based on home type and bulky items. |
 | [Multi-Monitor Arrangement Math](../mcps/multi-monitor-arrangement-math.md) | Calculate total desktop dimensions and coordinate offsets for multi-monitor setups. |
 | [Number Base Converter](../mcps/number-base-converter.md) | Convert integers and fractional numbers between any bases from 2 to 36 with high precision. |
+| [Number Compression Calculator](../mcps/number-compression-calculator.md) | Analyze text to calculate potential token savings by rounding large numbers. |
 | [Pan Size Converter](../mcps/pan-size-converter.md) | Calculate baking pan volumes and find perfect shape or size substitutions. |
 | [Pet Age Converter](../mcps/pet-age-converter.md) | Calculate human-equivalent ages for dogs and cats using species-specific biological growth curves. |
 | [Pet Lifespan Estimator](../mcps/pet-lifespan-estimator.md) | Estimate pet longevity and identify life stages based on species, breed, and size. |
@@ -73,10 +76,12 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Temperature Converter for Cooking](../mcps/temperature-converter-for-cooking.md) | Convert oven temperatures between Celsius, Fahrenheit, and the European Gas scale with heat intensity classification. |
 | [Time Difference Calculator](../mcps/time-difference-calculator.md) | Calculate exact duration between two clock times, handling midnight transitions. |
 | [Tire Size Converter](../mcps/tire-size-converter.md) | Calculate tire dimensions, speedometer error, and clearance risks. |
+| [Token Budget Remaining Calculator](../mcps/token-budget-remaining-calculator.md) | Monitor and manage token consumption to prevent context window overflows. |
 | [Tool Namespace Resolver and Fuzzy Matcher](../mcps/tool-namespace-resolver-and-fuzzy-matcher.md) | Resolves tool name hallucinations and misspellings using hierarchical matching logic. |
 | [Transport Carbon Calculator](../mcps/transport-carbon-calculator.md) | Calculate CO2 emissions for various transport modes including cars, planes, and trains. |
 | [Truncation Detector & Graceful Terminator](../mcps/truncation-detector-graceful-terminator.md) | Detects and repairs truncated LLM outputs to restore structural integrity. |
 | [Unit Conversion Exact Calculator](../mcps/unit-conversion-exact-calculator.md) | Perform precise mathematical conversions between metric, imperial, and data units. |
+| [URL and Email Token Detector](../mcps/url-and-email-token-detector.md) | Detect URLs and emails to calculate potential LLM token savings. |
 | [URL Query String Deep Parser](../mcps/url-query-string-deep-parser.md) | Transforms flat URL query strings into deeply nested JSON objects and arrays. |
 | [Water Heater Comparator](../mcps/water-heater-comparator.md) | Compare the operational costs and carbon footprint of electric, gas, and solar thermal water heating systems. |
 | [Water Usage Optimizer](../mcps/water-usage-optimizer.md) | Calculate household water consumption and identify savings opportunities. |

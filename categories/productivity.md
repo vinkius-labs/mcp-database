@@ -307,6 +307,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Dubsado](../mcps/dubsado.md) | Run your creative business with proposal templates, contract signing, invoicing, and client scheduling in one seamless flow. |
 | [Duda](../mcps/duda.md) | Equip your AI agent to manage websites, track templates, and monitor client accounts via the Duda API. |
 | [Duolingo](../mcps/duolingo.md) | Track language learning progress on Duolingo — view profiles, streaks, XP, leaderboards and dictionary hints. |
+| [Duplicate Line Detector](../mcps/duplicate-line-detector.md) | Identify redundant lines in text and calculate token savings. |
 | [Easelly](../mcps/easelly.md) | Design infographics and visual reports using templates and a drag-and-drop editor that makes data storytelling simple. |
 | [EasySendy](../mcps/easysendy.md) | Send high-volume email campaigns through multiple delivery servers with list hygiene tools that protect your sender score. |
 | [Ebby](../mcps/ebby.md) | Equip your AI agent to manage audio transcriptions, track processing status, and retrieve text via the Ebby API. |
@@ -556,6 +557,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [LinkedIn Post Optimizer](../mcps/linkedin-post-optimizer.md) | Audit LinkedIn posts for truncation, hook strength, and engagement triggers. |
 | [Linkwarden](../mcps/linkwarden.md) | Manage your bookmarks and web archives with Linkwarden — organize collections, preserve pages, and manage links directly from your AI agent. |
 | [LiquidPlanner Classic](../mcps/liquidplanner-classic.md) | Plan projects with intelligent scheduling that automatically adjusts timelines based on team capacity and task dependencies. |
+| [List Item Token Counter](../mcps/list-item-token-counter.md) | Analyze the token cost and structural efficiency of Markdown lists. |
 | [Liveblocks](../mcps/liveblocks.md) | Manage real-time collaboration infrastructure—create rooms, authorize users, and inspect collaborative storage or threads directly from your AI agent. |
 | [Liveblocks (Collaborative)](../mcps/liveblocks-collaborative.md) | Manage real-time collaborative rooms, user presence, and shared storage via Liveblocks — list rooms, track active users, and handle threads directly from your AI agent. |
 | [LLM API Cost Calculator](../mcps/llm-api-cost-calculator.md) | Estimate and compare the financial impact of LLM usage across different providers. |
@@ -712,6 +714,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Recruit CRM](../mcps/recruit-crm.md) | Manage candidates, jobs, and client companies with Recruit CRM and AI agents. |
 | [Refiner](../mcps/refiner.md) | Survey your SaaS users with in-app micro-surveys that capture NPS, feature feedback, and churn signals at the perfect moment. |
 | [Reflect](../mcps/reflect.md) | Equip your AI to read, write, and explore your networked thought graph in Reflect Notes securely via their API. |
+| [Repetition Pattern Detector](../mcps/repetition-pattern-detector.md) | Detects redundant linguistic patterns and calculates text compression metrics. |
 | [Requirement Decomposition Prover](../mcps/requirement-decomposition-prover.md) | AI generates the happy path but omits error handling, edge cases, security, and observability — the '80% Problem'. This tool forces complete requirement decomposition BEFORE code generation: specify inputs/outputs, map failure modes, cover boundary conditions, validate OWASP, plan logging. |
 | [RescueTime](../mcps/rescuetime.md) | Track productivity, manage Focus Sessions, and analyze time usage directly from your AI agent. |
 | [Rest Timer Accumulator](../mcps/rest-timer-accumulator.md) | Calculate total workout duration including rest periods. |

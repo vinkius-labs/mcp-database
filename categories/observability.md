@@ -4,6 +4,7 @@ Explore the open database of **observability** Model Context Protocol (MCP) serv
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Agent Error Propagation Tracker](../mcps/agent-error-propagation-tracker.md) | Trace error chains and calculate system impact in multi-agent environments. |
 | [Agent Self-Reflection & Sentiment Scanner](../mcps/agent-self-reflection-sentiment-scanner.md) | Quantify agent self-correction behavior and sentiment by scanning execution logs for specific error and success markers. |
 | [Agent Self-Reflection & Sentiment Scanner](../mcps/agent-self-reflection-sentiment-scanner-alternative.md) | Quantify agent self-correction behavior and sentiment by scanning execution logs for specific error and success markers. |
 | [Agent Self-Reflection Sentiment Scanner](../mcps/agent-self-reflection-sentiment-scanner-1.md) | Analyzes agent execution logs to detect self-correction markers and measure stability. |
