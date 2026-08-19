@@ -36,19 +36,19 @@ Connect your **Klaviyo** account to any AI agent and manage email marketing thro
 
 ## Available Tools (12)
 - **list_tags**: List account tags
-- **list_email_templates**: List email templates
 - **list_webhooks**: List active webhooks
-- **track_event**: g. "Viewed Product").
-
-Record a customer event
-- **create_profile**: Create a new profile
 - **get_profile**: Get profile details
 - **list_campaigns**: List sent campaigns
+- **create_profile**: Create a new profile
 - **list_automated_flows**: List automated flows
+- **list_email_templates**: List email templates
+- **list_marketing_lists**: List marketing lists
 - **list_metrics**: List tracking metrics
 - **list_profiles**: List all customer profiles
 - **list_segments**: List dynamic segments
-- **list_marketing_lists**: List marketing lists
+- **track_event**: g. "Viewed Product").
+
+Record a customer event
 
 
 ## 💬 Prompt Examples

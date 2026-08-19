@@ -43,13 +43,16 @@ Create a new task in a List
 - **get_task_details**: Note: Do not include the # prefix.
 
 Get details for a specific task
-- **list_folderless_lists**: List Lists not contained in a Folder
 - **list_folders**: Folders help organize multiple lists.
 
 List all Folders in a Space
 - **list_lists**: Lists contain the actual tasks.
 
 List all Lists in a Folder
+- **update_task**: Can update the name, description, or status.
+
+Update an existing task
+- **list_folderless_lists**: List Lists not contained in a Folder
 - **list_spaces**: Spaces are large groupings of folders and lists.
 
 List all Spaces in a Workspace
@@ -59,9 +62,6 @@ List tasks within a List
 - **list_workspaces**: Workspaces are the top-level unit in ClickUp.
 
 List all ClickUp Workspaces
-- **update_task**: Can update the name, description, or status.
-
-Update an existing task
 
 
 ## 💬 Prompt Examples

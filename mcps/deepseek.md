@@ -36,18 +36,18 @@ No more manual toggling between chat interfaces or complex API configuration. Yo
 
 
 ## Available Tools (6)
-- **chat_prefix_completion**: Useful for structured output generation.
-
-Guide model response with a prefix (Beta)
-- **chat_completion**: Generate an AI response using DeepSeek V3
 - **deep_reasoning**: Includes internal chain-of-thought reasoning.
 
 Solve complex problems with DeepSeek Reasoner
+- **get_balance**: Get account credit balance and usage
+- **list_models**: List all available DeepSeek models
+- **chat_completion**: Generate an AI response using DeepSeek V3
+- **chat_prefix_completion**: Useful for structured output generation.
+
+Guide model response with a prefix (Beta)
 - **fill_in_middle**: Ideal for code completion tasks.
 
 Complete code between a prefix and suffix (Beta)
-- **get_balance**: Get account credit balance and usage
-- **list_models**: List all available DeepSeek models
 
 
 ## 💬 Prompt Examples

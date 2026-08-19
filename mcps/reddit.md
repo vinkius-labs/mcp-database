@@ -36,11 +36,11 @@ No more manual scrolling or context switching. Your AI acts as a dedicated socia
 
 
 ## Available Tools (11)
-- **list_trending_subreddits**: List popular and trending subreddits
 - **get_post_comments**: Get the comment thread for a post
+- **list_trending_subreddits**: List popular and trending subreddits
+- **get_subreddit_info**: Get metadata for a subreddit
 - **search_reddit**: Search all of Reddit
 - **search_subreddit**: Search within a specific subreddit
-- **get_subreddit_info**: Get metadata for a subreddit
 - **get_user_profile**: Get details for a Reddit user
 - **list_popular_posts**: List trending posts globally
 - **list_subreddit_posts**: Supports sorting.

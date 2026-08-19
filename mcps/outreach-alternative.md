@@ -38,13 +38,13 @@ No more manual status checking in the CRM. Your AI acts as a dedicated sales ope
 ## Available Tools (12)
 - **add_to_sequence**: Enroll prospect in sequence
 - **create_prospect**: Add new prospect
-- **get_user_info**: Get account profile
-- **get_prospect_details**: Get full prospect info
-- **list_sent_emails**: List sent mailings
-- **list_opportunities**: List sales deals
 - **list_prospects**: List engageable people
-- **list_sequences**: List sales sequences
+- **get_prospect_details**: Get full prospect info
+- **get_user_info**: Get account profile
+- **list_opportunities**: List sales deals
 - **list_sales_tasks**: List pending actions
+- **list_sent_emails**: List sent mailings
+- **list_sequences**: List sales sequences
 - **list_email_templates**: List message templates
 - **update_prospect**: Modify prospect info
 - **list_companies**: List outreach accounts

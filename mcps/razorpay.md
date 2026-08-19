@@ -36,20 +36,20 @@ No more manual status checking or spreadsheet transaction logs. Your AI acts as 
 
 
 ## Available Tools (12)
+- **create_customer**: Create a new customer
+- **create_order**: Amount should be in smallest currency subunit (e.g., 50000 for ₹500.00).
+
+Create a new payment order
+- **list_orders**: List all payment orders
+- **list_settlements**: List all settlements
 - **get_order**: Get details of a specific order
 - **get_payment**: Get details of a specific payment
 - **list_customers**: List all customers
 - **list_invoices**: List all invoices
 - **list_payments**: List all payments
 - **list_refunds**: List all refunds
-- **list_settlements**: List all settlements
 - **list_subscriptions**: List all subscriptions
 - **list_transfers**: List all transfers
-- **list_orders**: List all payment orders
-- **create_customer**: Create a new customer
-- **create_order**: Amount should be in smallest currency subunit (e.g., 50000 for ₹500.00).
-
-Create a new payment order
 
 
 ## 💬 Prompt Examples

@@ -36,19 +36,19 @@ No more manual report exports or multiple dashboard logins. Your AI acts as a de
 
 
 ## Available Tools (11)
-- **get_sales_invoice**: Get details for a specific sales invoice
-- **list_bank_accounts**: List business bank accounts
+- **get_user_info**: Get Sage user information
 - **list_businesses**: List accessible businesses
 - **list_contacts**: ) in the accounting system.
 
 List customers and suppliers
 - **list_ledger_accounts**: List Chart of Accounts
-- **get_user_info**: Get Sage user information
 - **list_purchase_invoices**: List purchase invoices
 - **list_sales_invoices**: List sales invoices
 - **list_services**: List service items
-- **list_tax_rates**: List configured tax rates
 - **list_products**: List physical products
+- **get_sales_invoice**: Get details for a specific sales invoice
+- **list_bank_accounts**: List business bank accounts
+- **list_tax_rates**: List configured tax rates
 
 
 ## 💬 Prompt Examples

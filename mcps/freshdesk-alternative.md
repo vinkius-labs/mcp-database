@@ -37,20 +37,20 @@ No more manual status checking or complex navigation through support queues. You
 
 
 ## Available Tools (10)
-- **list_help_folders**: List knowledge base folders
-- **create_ticket**: Create a new ticket
 - **get_contact_details**: Get details for a contact
 - **get_ticket_details**: Get details for a ticket
 - **list_support_agents**: List support staff
 - **list_support_companies**: List organization records
-- **list_contacts**: List helpdesk contacts
 - **list_tickets**: Supports filtering by status or priority.
 
 List helpdesk tickets
-- **update_ticket_details**: Modify an existing ticket
+- **create_ticket**: Create a new ticket
+- **list_contacts**: List helpdesk contacts
+- **list_help_folders**: List knowledge base folders
 - **list_support_groups**: g. Support, Billing).
 
 List support agent groups
+- **update_ticket_details**: Modify an existing ticket
 
 
 ## 💬 Prompt Examples

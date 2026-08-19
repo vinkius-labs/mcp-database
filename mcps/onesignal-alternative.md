@@ -36,20 +36,20 @@ No more manual logging to check open rates or send emergency alerts. Your AI act
 
 
 ## Available Tools (12)
-- **send_push_notification**: Send proactive alert
-- **cancel_scheduled_alert**: Stop notification
-- **remove_player**: Delete device record
-- **get_api_status**: Check connection
-- **get_app_details**: Get application info
 - **get_notification_stats**: Check delivery metrics
-- **get_player_details**: Get user profile
+- **list_app_outcomes**: Get campaign outcomes
 - **list_onesignal_apps**: Requires User Auth Key.
 
 List your applications
+- **send_push_notification**: Send proactive alert
+- **cancel_scheduled_alert**: Stop notification
+- **get_api_status**: Check connection
+- **get_app_details**: Get application info
+- **remove_player**: Delete device record
+- **get_player_details**: Get user profile
 - **list_recent_notifications**: List past alerts
-- **list_app_outcomes**: Get campaign outcomes
-- **list_app_segments**: List target groups
 - **list_app_players**: List subscribed devices
+- **list_app_segments**: List target groups
 
 
 ## 💬 Prompt Examples

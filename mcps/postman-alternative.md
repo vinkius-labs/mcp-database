@@ -37,23 +37,23 @@ No more wrestling with complex UI tabs to find documentation or variable values.
 
 ## Available Tools (9)
 - **get_collection_details**: Get details and requests for a specific collection
+- **list_collections**: Collections are used to group and share related API requests.
+
+List all API collections
 - **get_environment_details**: Get variables and details for an environment
 - **get_workspace_details**: Get details and items for a specific workspace
 - **list_apis**: APIs represent a higher-level grouping that can include multiple versions and schemas.
 
 List all API definitions
-- **list_collections**: Collections are used to group and share related API requests.
-
-List all API collections
 - **list_environments**: Environments allow for managing variables across different stages like development or production.
 
 List all environment variable sets
-- **list_mocks**: Mock servers simulate API responses before the actual API is implemented.
-
-List all configured mock servers
 - **list_monitors**: Monitors help ensure API performance and availability.
 
 List all scheduled collection monitors
+- **list_mocks**: Mock servers simulate API responses before the actual API is implemented.
+
+List all configured mock servers
 - **list_workspaces**: Workspaces are the primary organizational unit in Postman.
 
 List all accessible Postman workspaces

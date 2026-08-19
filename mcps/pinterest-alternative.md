@@ -36,20 +36,20 @@ No more manual scrolling to check pin counts or engagement. Your AI acts as a de
 
 
 ## Available Tools (12)
+- **get_board_info**: Get board metadata
+- **get_pin_details**: Get pin info
+- **get_pin_performance**: Check pin stats
+- **list_boards**: List user boards
+- **list_pins_on_board**: List board pins
 - **create_board**: Add new board
 - **create_new_pin**: Required media_source must be provided as JSON.
 
 Post new pin
+- **get_account_performance**: Check account stats
 - **remove_board**: Delete a board
 - **remove_pin**: Delete a pin
-- **get_account_performance**: Check account stats
-- **get_board_info**: Get board metadata
 - **get_profile_info**: Get account info
-- **get_pin_performance**: Check pin stats
-- **get_pin_details**: Get pin info
 - **list_top_performing_pins**: List best pins
-- **list_boards**: List user boards
-- **list_pins_on_board**: List board pins
 
 
 ## 💬 Prompt Examples

@@ -37,36 +37,36 @@ No more manual posting across different tabs. Your AI acts as your dedicated soc
 
 
 ## Available Tools (10)
-- **create_media_upload**: Requires the file size in bytes and the correct MIME type (e.g., image/jpeg or video/mp4).
-
-Generate a media upload URL
-- **list_social_profiles**: ) that the authenticated member has permission to manage. This is required to obtain profile IDs for scheduling messages.
-
-List all accessible social profiles
 - **list_organization_teams**: Teams are used to group members and social profiles for collaborative management.
 
 List teams within an organization
-- **get_member_info**: Use this to verify the identity and permissions of the current user.
+- **create_media_upload**: Requires the file size in bytes and the correct MIME type (e.g., image/jpeg or video/mp4).
 
-Retrieve current Hootsuite member details
+Generate a media upload URL
 - **create_message**: Requires the message text and a list of target social profile IDs. Optional: scheduledSendTime in ISO 8601 format.
 
 Send or schedule a new social media message
-- **delete_scheduled_message**: Requires the unique message ID obtained from outbound lists.
+- **get_member_info**: Use this to verify the identity and permissions of the current user.
 
-Delete a scheduled message
+Retrieve current Hootsuite member details
 - **get_social_profile**: Includes network type, account name, and connectivity status.
 
 Get details for a specific social profile
-- **list_organization_members**: Includes member names, emails, and roles within that organization.
-
-List members within an organization
 - **list_organizations**: Organizations serve as the primary administrative unit for managing teams and social profiles.
 
 List all Hootsuite organizations
 - **list_outbound_messages**: Useful for monitoring sent posts or reviewing upcoming scheduled content.
 
 Retrieve a list of outbound messages
+- **list_social_profiles**: ) that the authenticated member has permission to manage. This is required to obtain profile IDs for scheduling messages.
+
+List all accessible social profiles
+- **delete_scheduled_message**: Requires the unique message ID obtained from outbound lists.
+
+Delete a scheduled message
+- **list_organization_members**: Includes member names, emails, and roles within that organization.
+
+List members within an organization
 
 
 ## 💬 Prompt Examples

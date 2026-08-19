@@ -35,18 +35,18 @@ Connect your **Mattermost** workspace to any AI agent and manage team collaborat
 
 
 ## Available Tools (12)
-- **create_new_channel**: Create a channel
 - **post_message**: Send chat message
-- **get_my_profile**: Get user info
-- **test_server_ping**: Check API health
-- **get_team_details**: Get team info
 - **list_team_channels**: List team channels
-- **list_channel_posts**: Get channel history
+- **test_server_ping**: Check API health
+- **list_server_users**: List all users
 - **list_system_roles**: List access roles
 - **list_teams**: List your teams
-- **list_server_users**: List all users
 - **list_incoming_webhooks**: Get event configs
+- **create_new_channel**: Create a channel
+- **get_my_profile**: Get user info
 - **get_server_config**: Check server settings
+- **get_team_details**: Get team info
+- **list_channel_posts**: Get channel history
 
 
 ## 💬 Prompt Examples

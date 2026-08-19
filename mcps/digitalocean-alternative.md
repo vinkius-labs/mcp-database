@@ -36,27 +36,27 @@ No more manual dashboard navigation or searching for IP addresses. Your AI acts 
 
 
 ## Available Tools (9)
-- **list_kubernetes_clusters**: Includes information about cluster health, versions, and nodes.
-
-List all Kubernetes clusters
 - **list_databases**: Includes cluster status, engine versions, and endpoints.
 
 List managed database clusters
-- **list_domains**: Essential for reviewing web configurations.
-
-List all managed DNS domains
 - **list_droplets**: Includes metadata such as status, IP addresses, and specs.
 
 List all active Droplets
-- **list_images**: Useful for resource recovery and deployment.
+- **list_kubernetes_clusters**: Includes information about cluster health, versions, and nodes.
 
-List snapshots and disk images
+List all Kubernetes clusters
 - **list_volumes**: Includes size, region, and current attachment status.
 
 List block storage volumes
 - **get_account_info**: Useful for verifying resource availability.
 
 Get DigitalOcean account details
+- **list_domains**: Essential for reviewing web configurations.
+
+List all managed DNS domains
+- **list_images**: Useful for resource recovery and deployment.
+
+List snapshots and disk images
 - **get_droplet_details**: Get details for a specific Droplet
 - **list_actions**: Useful for auditing and monitoring changes.
 
