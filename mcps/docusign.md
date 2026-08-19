@@ -26,21 +26,21 @@ Connect **DocuSign** to any AI agent and automate your entire contract lifecycle
 - **list_envelopes**: Provide a from_date in ISO format.
 
 List envelopes (documents sent for signature)
-- **search_envelopes**: Search envelopes by text
 - **get_envelope**: Get envelope details
+- **list_recipients**: List recipients of an envelope
+- **search_envelopes**: Search envelopes by text
 - **send_envelope**: Provide envelope definition as JSON.
 
 Create and send a new envelope for signature
-- **list_recipients**: List recipients of an envelope
-- **list_templates**: List available envelope templates
-- **get_template**: Get template details
 - **void_envelope**: Requires a reason. This action is irreversible.
 
 Void a sent envelope
-- **list_folders**: List envelope folders
 - **get_signing_url**: Provide envelope ID and recipient details as JSON.
 
 Generate a signing URL for a recipient
+- **get_template**: Get template details
+- **list_folders**: List envelope folders
+- **list_templates**: List available envelope templates
 
 
 ## 💬 Prompt Examples

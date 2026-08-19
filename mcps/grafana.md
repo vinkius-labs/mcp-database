@@ -36,18 +36,18 @@ Connect your **Grafana** instance to any AI agent and take full control of your 
 
 
 ## Available Tools (4)
-- **search_dashboards**: Returns basic info including the UID. To inspect the panels and queries of a dashboard, use get_dashboard with the uid.
+- **firing_alerts**: Returns alerting rules that are currently in "firing" state, including their labels and annotations.
 
-Search Grafana dashboards by title or tag
+Get currently firing alerts from Grafana Unified Alerting
 - **get_dashboard**: Requires the dashboard UID, which you can get from search_dashboards.
 
 Get full dashboard configuration including panels and queries
 - **list_datasources**: ) are available in this Grafana instance.
 
 List all configured data sources in Grafana
-- **firing_alerts**: Returns alerting rules that are currently in "firing" state, including their labels and annotations.
+- **search_dashboards**: Returns basic info including the UID. To inspect the panels and queries of a dashboard, use get_dashboard with the uid.
 
-Get currently firing alerts from Grafana Unified Alerting
+Search Grafana dashboards by title or tag
 
 
 ## 💬 Prompt Examples

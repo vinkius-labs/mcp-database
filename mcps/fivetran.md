@@ -37,13 +37,13 @@ Connect your **Fivetran** account to any AI agent and take full control of your 
 
 
 ## Available Tools (7)
-- **list_connectors**: List connectors in group
 - **get_connector**: Get connector details
+- **list_connectors**: List connectors in group
 - **list_groups**: List all groups
-- **get_group**: Get group details
 - **get_destination**: Get destination for group
-- **list_users**: List all users
+- **get_group**: Get group details
 - **list_teams**: List all teams
+- **list_users**: List all users
 
 
 ## 💬 Prompt Examples

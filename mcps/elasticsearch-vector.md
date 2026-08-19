@@ -36,12 +36,12 @@ Connect your **Elasticsearch** cluster to any AI agent and take full control of 
 
 
 ## Available Tools (6)
+- **create_index**: Create dense_vector index
 - **search**: Dense vector knn search
-- **list_indexes**: List all indexes
 - **get_index**: Get index info
 - **index_document**: Index a document
+- **list_indexes**: List all indexes
 - **delete_document**: Delete a document
-- **create_index**: Create dense_vector index
 
 
 ## 💬 Prompt Examples

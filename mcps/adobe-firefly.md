@@ -40,30 +40,30 @@ Connect your **Adobe Firefly** developer account to any AI agent and take full c
 - **generative_expand**: Instructions: Pass image_id, target width/height.
 
 Expand an image beyond its borders using Adobe Firefly
+- **remove_background**: Instructions: Upload image first, pass image_id.
+
+Remove the background from an image using Adobe Firefly
 - **text_to_vector**: Instructions: Pass a descriptive prompt.
 
 Generate SVG vectors from a text prompt using Adobe Firefly
 - **upload_image**: Returns image ID. Instructions: Pass a publicly accessible URL.
 
 Upload an image to Adobe Firefly storage
-- **remove_background**: Instructions: Upload image first, pass image_id.
-
-Remove the background from an image using Adobe Firefly
-- **generate_similar**: Instructions: Upload reference first, pass image_id and prompt.
-
-Generate images similar to a reference using Adobe Firefly
 - **generate_object**: Instructions: Pass descriptive prompt.
 
 Generate an object composite image using Adobe Firefly
+- **generate_similar**: Instructions: Upload reference first, pass image_id and prompt.
+
+Generate images similar to a reference using Adobe Firefly
+- **generative_fill**: Instructions: Upload image first, get image_id and mask_id.
+
+Fill masked areas of an image using Adobe Firefly Generative Fill
 - **text_effects**: Instructions: Pass the text and a style prompt.
 
 Apply AI text effects using Adobe Firefly
 - **text_to_image**: Model 5 offers photorealistic output. Instructions: Pass prompt and count (1-4).
 
 Generate images from a text prompt using Adobe Firefly
-- **generative_fill**: Instructions: Upload image first, get image_id and mask_id.
-
-Fill masked areas of an image using Adobe Firefly Generative Fill
 - **list_models**: List available Firefly models
 
 

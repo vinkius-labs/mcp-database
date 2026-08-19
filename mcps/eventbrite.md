@@ -33,12 +33,12 @@ Integrate **Eventbrite**, the world's leading event management and ticketing pla
 
 
 ## Available Tools (10)
+- **get_eventbrite_account_metadata**: Retrieve metadata and profile information for the current Eventbrite user
+- **list_currently_live_events**: Identify events that are currently in a "Live" or "Started" status
 - **list_event_attendees**: List all registered attendees for a specific event
 - **list_past_completed_events**: Identify events that have already taken place
-- **list_currently_live_events**: Identify events that are currently in a "Live" or "Started" status
-- **get_eventbrite_account_metadata**: Retrieve metadata and profile information for the current Eventbrite user
-- **get_event_performance_summary**: Get a summary of performance metrics for a specific event
 - **get_event_detailed_data**: Get detailed settings and information for a specific event
+- **get_event_performance_summary**: Get a summary of performance metrics for a specific event
 - **list_my_organizations**: List all organizations the user is a member of on Eventbrite
 - **quick_event_volume_audit**: Retrieve a high-level summary of upcoming events and attendance
 - **list_event_ticket_orders**: List all ticket orders and transactions for a specific event

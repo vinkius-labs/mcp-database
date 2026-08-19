@@ -40,10 +40,10 @@ Connect your **Jina AI** account to any AI agent and take full control of state-
 - **generate_embeddings**: The input must be a JSON array of strings.
 
 Generate vector embeddings from text
-- **rerank_documents**: Rerank search documents against a query
 - **read_url_content**: Excellent for grounding LLMs with live web content.
 
 Read and extract clean text from a URL
+- **rerank_documents**: Rerank search documents against a query
 - **search_web_jina**: Returns context-rich structured search results, suitable for RAG pipelines.
 
 Perform a semantic web search

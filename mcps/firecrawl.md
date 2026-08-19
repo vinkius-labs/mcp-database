@@ -33,15 +33,15 @@ Connect your AI agent to **Firecrawl** — the most popular web scraping API bui
 
 
 ## Available Tools (4)
-- **search_web**: Ideal for research, fact-checking, and gathering information on any topic.
-
-Search the web and return scraped content from the top results. Combines Google-like search with automatic content extraction
 - **crawl_site**: Each page is scraped and converted to Markdown. Returns a job ID to track progress.
 
 Crawl an entire website and extract content from multiple pages. Returns a job ID for async tracking
 - **map_site**: Useful for understanding site architecture before deciding which pages to scrape.
 
 Discover all URLs on a website without scraping content. Returns a sitemap of discovered links
+- **search_web**: Ideal for research, fact-checking, and gathering information on any topic.
+
+Search the web and return scraped content from the top results. Combines Google-like search with automatic content extraction
 - **scrape_page**: Handles anti-bot protection, cookie banners, and dynamic content automatically.
 
 Scrape a single web page and extract its content as clean Markdown. Perfect for reading articles, documentation, and product pages

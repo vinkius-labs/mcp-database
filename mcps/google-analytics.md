@@ -45,6 +45,17 @@ dimensions, and date ranges. This is efficient for dashboard loading or comparat
 The reports parameter should be a JSON array of report objects with metrics, dimensions, and dateRanges.
 
 Run multiple reports in a single API call
+- **get_metadata**: This includes both standard and custom metrics/dimensions with their descriptions, types, and compatibility information.
+Use this to discover what data is available before building reports. The propertyId is required and can be found in your GA4 admin settings.
+
+Get available metrics and dimensions for a GA4 property
+- **run_report**: You must provide the property_id, metrics (e.g., 'activeUsers', 'screenPageViews', 'eventCount'), 
+and dimensions (e.g., 'city', 'pageTitle', 'sessionDefaultChannelGrouping').
+Date ranges use YYYY-MM-DD format. Optional filter expression can narrow results.
+Common metrics: activeUsers, screenPageViews, sessions, eventCount, engagementRate, averageSessionDuration.
+Common dimensions: city, country, deviceCategory, sessionDefaultChannelGrouping, pageTitle, pagePath.
+
+Run a custom Google Analytics report
 - **check_compatibility**: Before running complex reports, use this to ensure compatibility between your chosen metrics and dimensions.
 This prevents errors and wasted API calls. Provide property_id and the metrics/dimensions you plan to use.
 Returns compatibility status and any conflicts that would prevent the report from running successfully.
@@ -55,10 +66,6 @@ Use this to monitor the progress of audience extraction jobs.
 Provide property_id and the audience_export_id from list_audience_exports.
 
 Get status of a specific audience export
-- **get_metadata**: This includes both standard and custom metrics/dimensions with their descriptions, types, and compatibility information.
-Use this to discover what data is available before building reports. The propertyId is required and can be found in your GA4 admin settings.
-
-Get available metrics and dimensions for a GA4 property
 - **list_accounts**: This is the top-level container for properties. Each account can contain multiple properties.
 Use this to discover what accounts are available before drilling down into properties.
 
@@ -91,13 +98,6 @@ Common realtime metrics: activeUsers, eventCount, screenPageViews.
 Common realtime dimensions: city, country, deviceCategory, streamId.
 
 Get realtime analytics data (last 30-60 minutes)
-- **run_report**: You must provide the property_id, metrics (e.g., 'activeUsers', 'screenPageViews', 'eventCount'), 
-and dimensions (e.g., 'city', 'pageTitle', 'sessionDefaultChannelGrouping').
-Date ranges use YYYY-MM-DD format. Optional filter expression can narrow results.
-Common metrics: activeUsers, screenPageViews, sessions, eventCount, engagementRate, averageSessionDuration.
-Common dimensions: city, country, deviceCategory, sessionDefaultChannelGrouping, pageTitle, pagePath.
-
-Run a custom Google Analytics report
 
 
 ## 💬 Prompt Examples

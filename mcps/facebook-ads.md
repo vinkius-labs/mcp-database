@@ -36,9 +36,9 @@ Connect your **Facebook Ads** (Meta Marketing) account to any AI agent and take 
 ## Available Tools (12)
 - **get_ad_account_info**: Get basic info for the Facebook Ad Account
 - **get_ad_details**: Get details for a specific ad
-- **get_campaign_details**: Get details for a specific campaign
-- **update_campaign_status**: Update the status of a campaign
 - **update_ad_status**: Update the status of an ad
+- **update_campaign_status**: Update the status of a campaign
+- **get_campaign_details**: Get details for a specific campaign
 - **get_ad_set_details**: Get details for a specific ad set
 - **get_insights**: Get performance insights for the Ad Account
 - **get_me**: Get current token identity info
