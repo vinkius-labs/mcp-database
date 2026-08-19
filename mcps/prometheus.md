@@ -36,20 +36,20 @@ No more manual dashboard building just to answer a quick question about system h
 
 
 ## Available Tools (14)
-- **get_status_flags**: Get configured Prometheus flag values
-- **get_status_runtimeinfo**: Get Prometheus runtime information
-- **get_status_tsdb**: Get TSDB cardinality statistics
+- **get_status_buildinfo**: Get Prometheus build information
+- **get_status_config**: Get the currently loaded Prometheus configuration (YAML)
 - **create_snapshot**: enable-admin-api to be enabled on the Prometheus server.
 
 Create a snapshot of all current data
-- **get_status_buildinfo**: Get Prometheus build information
-- **get_status_config**: Get the currently loaded Prometheus configuration (YAML)
-- **get_label_values**: Get all values for a specific label
-- **get_labels**: Get a list of all label names
-- **get_metadata**: Get metadata about metrics scraped from targets
+- **get_status_flags**: Get configured Prometheus flag values
+- **get_status_runtimeinfo**: Get Prometheus runtime information
+- **get_status_tsdb**: Get TSDB cardinality statistics
 - **query_range**: Evaluate a PromQL expression over a range of time
-- **query**: Evaluate a PromQL expression at a single point in time
 - **find_series**: Find time series matching label selectors
+- **get_labels**: Get a list of all label names
+- **get_label_values**: Get all values for a specific label
+- **get_metadata**: Get metadata about metrics scraped from targets
+- **query**: Evaluate a PromQL expression at a single point in time
 - **clean_tombstones**: enable-admin-api to be enabled.
 
 Remove deleted data from disk

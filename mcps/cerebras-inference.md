@@ -34,20 +34,20 @@ Connect to the **Cerebras Inference** platform to leverage the world's fastest A
 
 
 ## Available Tools (15)
-- **cancel_batch**: Cancel a batch job
-- **create_chat_completion**: Generate conversational responses using a structured message format
 - **create_completion**: Generate text continuations from a single prompt string
-- **create_batch**: Create a batch job for asynchronous processing
 - **delete_file**: Delete a file
 - **get_batch**: Retrieve status of a batch job
-- **get_file_content**: Download raw content of a file
-- **get_file**: Retrieve metadata for a specific file
 - **get_metrics**: Retrieve Prometheus-formatted operational metrics
 - **get_model**: Fetches details for a specific model
 - **list_batches**: List all batch jobs
 - **list_files**: List uploaded files
-- **list_models**: Lists all currently available models
 - **list_public_models**: Retrieve model details without an API key
+- **cancel_batch**: Cancel a batch job
+- **create_batch**: Create a batch job for asynchronous processing
+- **create_chat_completion**: Generate conversational responses using a structured message format
+- **get_file**: Retrieve metadata for a specific file
+- **get_file_content**: Download raw content of a file
+- **list_models**: Lists all currently available models
 - **upload_file**: Upload a JSONL file for Batch processing
 
 

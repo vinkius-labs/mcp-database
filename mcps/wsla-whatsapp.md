@@ -34,11 +34,11 @@ Connect your **WhatsApp Business Platform** (via Meta Cloud API) to any AI agent
 
 
 ## Available Tools (5)
-- **list_whatsapp_templates**: List message templates
 - **send_whatsapp_reaction**: React to a WhatsApp message
-- **send_whatsapp_text**: Send a text message via WhatsApp
-- **get_whatsapp_media_details**: Get media details
 - **send_whatsapp_template**: Send a WhatsApp template message
+- **get_whatsapp_media_details**: Get media details
+- **list_whatsapp_templates**: List message templates
+- **send_whatsapp_text**: Send a text message via WhatsApp
 
 
 ## 💬 Prompt Examples

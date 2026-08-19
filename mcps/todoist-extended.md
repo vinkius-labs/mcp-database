@@ -35,18 +35,18 @@ Connect your **Todoist** account to any AI agent and simplify how you organize y
 
 
 ## Available Tools (12)
-- **complete_task**: Mark a task as finished
 - **create_project**: Create a new project
-- **create_task**: Add a new to-do item
 - **get_project_details**: Get metadata for a project
 - **get_task_details**: Get details for a specific task
-- **list_comments**: List comments for a task or project
-- **list_all_labels**: List your personal labels
-- **list_projects**: List your Todoist projects
-- **list_project_sections**: List sections within a project
 - **list_active_tasks**: Can filter by project, label, or filter.
 
 List active tasks
+- **list_all_labels**: List your personal labels
+- **list_comments**: List comments for a task or project
+- **list_projects**: List your Todoist projects
+- **complete_task**: Mark a task as finished
+- **create_task**: Add a new to-do item
+- **list_project_sections**: List sections within a project
 - **reopen_task**: Mark a closed task as active
 - **update_task_details**: Modify an existing task
 

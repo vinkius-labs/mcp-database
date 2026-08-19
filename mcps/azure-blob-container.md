@@ -22,13 +22,13 @@ By strictly scoping access, your AI can safely persist data, analyze documents, 
 
 
 ## Available Tools (4)
-- **delete_blob**: Use with caution.
-
-Delete a file from the configured container
 - **get_blob**: Download and read the contents of a specific file
 - **list_blobs**: You can optionally provide a prefix to filter by a specific "folder" path.
 
 List files (blobs) inside the configured Azure Blob Container
+- **delete_blob**: Use with caution.
+
+Delete a file from the configured container
 - **put_blob**: Create or overwrite a file in the configured container
 
 

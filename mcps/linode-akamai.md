@@ -33,16 +33,16 @@ Connect your **Linode (Akamai)** account to any AI agent to manage your cloud in
 
 
 ## Available Tools (10)
-- **delete_linode**: Delete a Linode
 - **create_linode**: Create a new Linode
+- **delete_linode**: Delete a Linode
 - **create_lke_cluster**: Create an LKE Cluster
 - **get_account**: View Account Details
 - **get_linode**: View a specific Linode
+- **list_lke_clusters**: List LKE Clusters
+- **update_linode**: Update a Linode
 - **get_lke_cluster**: View an LKE Cluster
 - **list_linodes**: List all Linodes (Compute Instances)
-- **list_lke_clusters**: List LKE Clusters
 - **list_users**: Manage Users
-- **update_linode**: Update a Linode
 
 
 ## 💬 Prompt Examples

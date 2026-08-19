@@ -37,29 +37,29 @@ Connect your **Audiomack** account to any AI agent and explore a vast library of
 - **create_playlist**: Create a new playlist (Requires Auth)
 - **delete_playlist**: Delete a playlist (Requires Auth)
 - **favorite_music**: Favorite a track or album (Requires Auth)
-- **flag_music_unplayable**: Flag a track or album as unplayable
 - **follow_artist**: Follow an artist (Requires Auth)
-- **get_artist_favorites**: Get artist favorites
 - **get_artist_following**: Get users an artist is following
 - **get_artist_playlists**: Get artist playlists
-- **get_artist**: Get artist profile info
 - **get_artist_uploads**: Get artist uploads
-- **get_charts**: Get Audiomack charts
 - **get_music_by_id**: Get song or album info by ID
-- **get_music_by_slug**: Get song or album info by slug
-- **get_playlist_by_id**: Get playlist info by ID
 - **get_playlist_by_slug**: Get playlist info by slug
-- **get_trending_music**: Get trending music
 - **play_music**: Play a track (Requires Auth)
 - **remove_track_from_playlist**: Remove a track from a playlist (Requires Auth)
-- **repost_music**: Repost a track or album (Requires Auth)
 - **search_autosuggest**: Get search autosuggestions
-- **search**: Search for music, artists, or albums
 - **unfavorite_music**: Remove a track or album from favorites (Requires Auth)
-- **unfollow_artist**: Unfollow an artist (Requires Auth)
 - **unrepost_music**: Remove a reposted track or album (Requires Auth)
 - **update_playlist**: Edit an existing playlist (Requires Auth)
 - **add_track_to_playlist**: Add a track to a playlist (Requires Auth)
+- **flag_music_unplayable**: Flag a track or album as unplayable
+- **get_artist**: Get artist profile info
+- **get_artist_favorites**: Get artist favorites
+- **get_charts**: Get Audiomack charts
+- **get_music_by_slug**: Get song or album info by slug
+- **get_playlist_by_id**: Get playlist info by ID
+- **get_trending_music**: Get trending music
+- **repost_music**: Repost a track or album (Requires Auth)
+- **search**: Search for music, artists, or albums
+- **unfollow_artist**: Unfollow an artist (Requires Auth)
 - **get_artist_followers**: Get followers of an artist
 - **get_recent_music**: Get most recent music
 

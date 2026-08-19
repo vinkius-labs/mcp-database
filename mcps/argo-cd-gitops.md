@@ -34,19 +34,19 @@ Connect your **Argo CD** instance to any AI agent and take full control of your 
 
 
 ## Available Tools (13)
-- **delete_cluster**: Delete a cluster from Argo CD
 - **get_project**: Get details for a specific Argo CD project
 - **list_applications**: List Argo CD applications
 - **list_clusters**: List Argo CD clusters
 - **list_projects**: List Argo CD projects
 - **list_repositories**: List Argo CD repositories
-- **sync_application**: Sync an Argo CD application
-- **add_cluster**: Add a new cluster to Argo CD
 - **add_repository**: Add a new repository to Argo CD
+- **add_cluster**: Add a new cluster to Argo CD
+- **create_project**: Create a new Argo CD project
 - **get_application_logs**: Get logs for an Argo CD application
 - **create_application**: Create a new Argo CD application
-- **create_project**: Create a new Argo CD project
+- **delete_cluster**: Delete a cluster from Argo CD
 - **rollback_application**: Rollback an Argo CD application
+- **sync_application**: Sync an Argo CD application
 
 
 ## 💬 Prompt Examples

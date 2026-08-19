@@ -34,56 +34,56 @@ Connect your **Kibana** instance to any AI agent to streamline your Elastic Stac
 
 
 ## Available Tools (55)
-- **create_agent_policy**: Create an agent policy
 - **create_case**: Create a case
 - **delete_short_url**: Delete a short URL
-- **disable_rule**: Disable an alerting rule
-- **get_rule**: Get alerting rule details
-- **import_saved_objects**: Import saved objects from a file
 - **list_data_views**: Get all data views
-- **list_enrollment_keys**: List enrollment keys
 - **copy_saved_objects**: Copy saved objects between spaces
-- **create_connector**: Create a connector
 - **create_data_view**: Create a data view
 - **create_rule**: Create an alerting rule
 - **create_runtime_field**: Create or update a runtime field in a data view
 - **create_saved_object**: Create a saved object
 - **create_short_url**: Create a short URL
 - **create_space**: Create a new Kibana space
-- **delete_cases**: Delete cases
 - **delete_connector**: Delete a connector
-- **delete_role**: Delete a Kibana role
 - **delete_rule**: Delete an alerting rule
 - **delete_saved_object**: Delete a saved object
 - **delete_space**: Delete a Kibana space
 - **enable_rule**: Enable an alerting rule
-- **execute_connector**: Run a connector action
 - **export_saved_objects**: Export sets of saved objects
 - **find_rules**: Find alerting rules
 - **find_saved_objects**: Search for saved objects
 - **get_agent**: Get Elastic Agent details
 - **get_case**: Get case details
 - **get_connector**: Get connector details
-- **get_data_view**: Get a specific data view
 - **get_role**: Get a specific Kibana role
 - **list_agent_policies**: List agent policies
 - **list_agents**: List Elastic Agents
-- **list_connectors**: Get all connectors
-- **list_spaces**: Get all Kibana spaces
-- **resolve_import_errors**: Resolve errors during import
 - **search_cases**: Search cases
 - **unenroll_agent**: Unenroll an Elastic Agent
 - **update_cases**: Update cases
-- **update_data_view**: Update a data view
 - **update_rule**: Update an alerting rule
-- **update_saved_object**: Update a saved object
 - **create_enrollment_key**: Create an enrollment key
-- **create_or_update_role**: Create or update a Kibana role
 - **delete_data_view**: Delete a data view
-- **get_saved_object**: Get a specific saved object
 - **get_short_url**: Get details for a short URL
 - **get_space**: Get details for a specific Kibana space
 - **list_roles**: Get all Kibana roles
+- **create_agent_policy**: Create an agent policy
+- **create_connector**: Create a connector
+- **create_or_update_role**: Create or update a Kibana role
+- **delete_cases**: Delete cases
+- **delete_role**: Delete a Kibana role
+- **disable_rule**: Disable an alerting rule
+- **execute_connector**: Run a connector action
+- **get_data_view**: Get a specific data view
+- **get_rule**: Get alerting rule details
+- **get_saved_object**: Get a specific saved object
+- **import_saved_objects**: Import saved objects from a file
+- **list_connectors**: Get all connectors
+- **list_enrollment_keys**: List enrollment keys
+- **list_spaces**: Get all Kibana spaces
+- **resolve_import_errors**: Resolve errors during import
+- **update_data_view**: Update a data view
+- **update_saved_object**: Update a saved object
 - **update_space**: Update an existing Kibana space
 - **add_case_comment**: Add a comment to a case
 - **bulk_create_saved_objects**: Create multiple saved objects

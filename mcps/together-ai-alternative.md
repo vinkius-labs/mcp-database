@@ -36,34 +36,34 @@ Connect **Together AI** to your AI agent to leverage the world's fastest inferen
 
 ## Available Tools (27)
 - **cancel_batch**: Cancel a running batch job
+- **create_batch**: Create a new asynchronous batch job
 - **create_chat_completion**: 3-70B-Instruct-Turbo.
 
 Generate a model response for a given chat conversation
-- **create_batch**: Create a new asynchronous batch job
+- **create_embeddings**: Turn text into vector embeddings
+- **create_image_generation**: Generate images from text prompts
+- **create_text_completion**: Generate text completions for a given prompt
+- **delete_endpoint**: Delete a dedicated endpoint
+- **get_fine_tune**: Get details of a specific fine-tuning job
+- **list_batches**: List all batch jobs
 - **list_fine_tunes**: List all fine-tuning jobs
 - **create_audio_speech**: Text-to-Speech (TTS) generation
 - **create_audio_transcription**: Transcriptions (STT) from audio file
 - **create_endpoint**: Create a dedicated endpoint for predictable performance
 - **create_fine_tune**: Create a fine-tuning job
-- **delete_endpoint**: Delete a dedicated endpoint
 - **delete_file**: Delete an uploaded file
 - **delete_fine_tune**: Delete a fine-tuning job
-- **create_embeddings**: Turn text into vector embeddings
+- **create_rerank**: Reorder documents by relevance to a query
 - **get_batch**: Get details of a specific batch job
 - **get_endpoint**: Get details of a specific dedicated endpoint
 - **get_file**: Retrieve metadata for a specific file
-- **get_fine_tune**: Get details of a specific fine-tuning job
-- **create_image_generation**: Generate images from text prompts
 - **list_endpoints**: List all dedicated endpoints
 - **list_files**: List all uploaded files
 - **list_fine_tune_checkpoints**: List checkpoints for a fine-tuning job
 - **list_models**: List all available models on Together AI
-- **create_rerank**: Reorder documents by relevance to a query
-- **create_text_completion**: Generate text completions for a given prompt
+- **create_video_generation**: Create videos from text or image prompts
 - **update_endpoint**: Update a dedicated endpoint (Start/Stop/Scale)
 - **upload_file**: Upload a file for fine-tuning, evals, or batch inference
-- **create_video_generation**: Create videos from text or image prompts
-- **list_batches**: List all batch jobs
 
 
 ## 💬 Prompt Examples

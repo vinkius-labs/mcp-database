@@ -33,17 +33,17 @@ Connect your **Fusebill** enterprise account to any AI agent to streamline your 
 
 
 ## Available Tools (7)
+- **activate_customer**: Activate a Fusebill customer
+- **create_customer**: Create a new Fusebill customer
 - **get_customer**: Get details for a specific Fusebill customer
+- **get_subscription**: Get details for a specific Fusebill subscription
 - **list_customers**: Supports pagination, filtering, and sorting.
 
 List Fusebill customers
 - **list_subscriptions**: Supports pagination, filtering, and sorting.
 
 List Fusebill subscriptions
-- **get_subscription**: Get details for a specific Fusebill subscription
-- **activate_customer**: Activate a Fusebill customer
 - **cancel_customer**: Cancel a Fusebill customer
-- **create_customer**: Create a new Fusebill customer
 
 
 ## 💬 Prompt Examples

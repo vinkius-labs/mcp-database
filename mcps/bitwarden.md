@@ -35,9 +35,9 @@ Connect your **Bitwarden** organization to any AI agent to audit security logs, 
 
 ## Available Tools (5)
 - **list_collections**: List organization collections
-- **list_events**: List organization event logs
 - **list_groups**: List organization groups
 - **list_members**: List organization members
+- **list_events**: List organization event logs
 - **list_policies**: List organization policies
 
 

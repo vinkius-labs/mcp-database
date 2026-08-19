@@ -38,21 +38,21 @@ No more manual status updates or digging through candidates in the ATS. Your AI 
 
 ## Available Tools (12)
 - **get_api_status**: Get account connectivity
-- **get_candidate_details**: Get candidate info
-- **get_job_details**: Get job metadata
-- **list_candidates**: List recruitment candidates
 - **advance_application**: Move candidate to next stage
-- **create_candidate**: Can include first name, last name, and company.
-
-Add new candidate
-- **list_departments**: List company departments
-- **list_open_jobs**: List active job openings
-- **list_offices**: List office locations
 - **reject_application**: Requires a reason ID.
 
 Reject job application
 - **update_candidate**: Modify candidate info
+- **create_candidate**: Can include first name, last name, and company.
+
+Add new candidate
+- **get_candidate_details**: Get candidate info
+- **get_job_details**: Get job metadata
 - **list_applications**: List job applications
+- **list_candidates**: List recruitment candidates
+- **list_departments**: List company departments
+- **list_offices**: List office locations
+- **list_open_jobs**: List active job openings
 
 
 ## 💬 Prompt Examples

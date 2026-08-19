@@ -25,15 +25,15 @@ By strictly scoping access, your AI can safely manage structured data, store cha
 - **query_documents**: You can optionally provide parameters in JSON format. Do not include the DB or Container name in the query, Cosmos expects queries like "SELECT * FROM c WHERE c.status = @status".
 
 Execute a SQL query against the configured Cosmos DB Container
-- **create_document**: Make sure to provide the ID and Partition Key properties inside the documentJson if required.
-
-Create a new document in the Cosmos DB Container
 - **delete_document**: Provide partitionKey if your container requires it.
 
 Delete a document from the Cosmos DB Container
 - **get_document**: Provide partitionKey if your container requires it.
 
 Retrieve a specific document by its ID
+- **create_document**: Make sure to provide the ID and Partition Key properties inside the documentJson if required.
+
+Create a new document in the Cosmos DB Container
 
 
 ## 💬 Prompt Examples

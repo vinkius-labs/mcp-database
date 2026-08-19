@@ -34,20 +34,20 @@ Connect your **Square** account to any AI agent to automate your omnichannel com
 
 
 ## Available Tools (11)
-- **list_catalog**: List all catalog items
 - **get_stock_count**: Retrieve stock levels
-- **get_order_details**: Get metadata for an order
-- **get_payment_details**: Get metadata for a payment
+- **list_catalog**: List all catalog items
 - **list_customers**: List store customers
 - **list_store_locations**: List your business locations
-- **list_payments**: Supports pagination.
-
-List recent store payments
 - **search_customers**: Search for specific customers
 - **search_orders**: Requires location_ids.
 
 Search for store orders
 - **create_payment**: Create a new payment
+- **get_order_details**: Get metadata for an order
+- **get_payment_details**: Get metadata for a payment
+- **list_payments**: Supports pagination.
+
+List recent store payments
 - **get_customer**: Get details for a specific customer
 
 
