@@ -14,9 +14,9 @@ This MCP server provides a deterministic simulation engine to evaluate how vario
 
 
 ## Available Tools (3)
-- **get_agent_status**: Provides a snapshot of the current state of all agents to prepare for a simulation
 - **simulate_distribution**: Calculates the exact assignment of tasks to agents using a specific algorithm and returns performance metrics
 - **validate_system_constraints**: Checks if a proposed set of tasks can be distributed without any agent exceeding its absolute capacity
+- **get_agent_status**: Provides a snapshot of the current state of all agents to prepare for a simulation
 
 
 ## 💬 Prompt Examples

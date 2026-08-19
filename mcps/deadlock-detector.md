@@ -14,9 +14,9 @@ This MCP server provides deterministic deadlock detection for multi-agent enviro
 
 
 ## Available Tools (3)
+- **analyze_system_health**: Provides high-level metrics regarding how resources are being used and identifying agents at risk of starvation
 - **detect_deadlock**: Identifies if a deadlock exists within the current resource allocation state and provides the specific path of the deadlock
 - **select_victim**: Determines which agent should be preempted to resolve an identified deadlock
-- **analyze_system_health**: Provides high-level metrics regarding how resources are being used and identifying agents at risk of starvation
 
 
 ## 💬 Prompt Examples

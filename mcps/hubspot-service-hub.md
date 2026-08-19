@@ -29,18 +29,18 @@ Connect **HubSpot CRM** to any AI agent — instant access to your full CRM data
 
 
 ## Available Tools (6)
-- **hs_create_ticket**: Subject is required. Optionally provide content (detailed description), hs_pipeline (pipeline ID), hs_pipeline_stage (stage ID), and hs_ticket_priority (HIGH, MEDIUM, LOW). If no pipeline is specified, uses the default support pipeline. Returns the created ticket with its HubSpot ID.
-
-Create a new support ticket in HubSpot Service Hub with subject, description, pipeline stage, and priority
 - **hs_tickets_by_status**: Returns tickets with subject, priority, and dates. Use when the user asks "how many tickets are open?", "what is waiting for response?", or for support queue analysis. Find stage IDs using hs_ticket_pipelines first.
 
 Get all HubSpot tickets at a specific pipeline stage to analyze queue depth, workload, or resolution bottlenecks
-- **hs_list_feedback**: Returns survey name, customer rating/score, survey type (NPS/CSAT/CES), and response content. Use when the user asks about customer satisfaction, NPS scores, or wants to review recent feedback from support interactions.
-
-List customer feedback survey submissions in HubSpot with ratings, survey type, and response content
 - **hs_ticket_pipelines**: Returns pipeline name, stage labels, stage IDs (needed for creating/filtering tickets), and display order. Support pipelines define the workflow tickets follow: typically New → Waiting on Contact → Waiting on Us → Closed. Essential for finding stage IDs before ticket operations.
 
 List all ticket/support pipelines in HubSpot with their stages, display order, and internal IDs
+- **hs_create_ticket**: Subject is required. Optionally provide content (detailed description), hs_pipeline (pipeline ID), hs_pipeline_stage (stage ID), and hs_ticket_priority (HIGH, MEDIUM, LOW). If no pipeline is specified, uses the default support pipeline. Returns the created ticket with its HubSpot ID.
+
+Create a new support ticket in HubSpot Service Hub with subject, description, pipeline stage, and priority
+- **hs_list_feedback**: Returns survey name, customer rating/score, survey type (NPS/CSAT/CES), and response content. Use when the user asks about customer satisfaction, NPS scores, or wants to review recent feedback from support interactions.
+
+List customer feedback survey submissions in HubSpot with ratings, survey type, and response content
 - **hs_search_tickets**: Returns ticket subject, current pipeline stage/status, priority (HIGH/MEDIUM/LOW), pipeline name, category, and creation date. Use when the user asks about open tickets, needs to find a specific support case, or wants to check the status of a customer issue.
 
 Search HubSpot Service Hub tickets by subject or keyword to find customer support cases

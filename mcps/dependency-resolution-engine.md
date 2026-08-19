@@ -14,9 +14,9 @@ This MCP provides a deterministic engine for resolving complex dependency trees.
 
 
 ## Available Tools (3)
+- **check_graph_integrity**: Analyzes a resolved dependency tree to identify potential structural risks
 - **resolve_dependencies**: Performs the primary deterministic resolution of a dependency tree based on root requirements
 - **validate_constraint**: Checks if a specific package version satisfies a given semantic versioning constraint
-- **check_graph_integrity**: Analyzes a resolved dependency tree to identify potential structural risks
 
 
 ## 💬 Prompt Examples

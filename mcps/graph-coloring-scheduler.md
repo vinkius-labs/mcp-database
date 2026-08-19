@@ -14,9 +14,9 @@ This MCP server provides mathematical tools to organize agent execution schedule
 
 
 ## Available Tools (3)
+- **validate_schedule**: 
 - **get_schedule_plan**: 
 - **get_graph_statistics**: 
-- **validate_schedule**: 
 
 
 ## 💬 Prompt Examples

@@ -42,13 +42,13 @@ Connect your **Keap** (formerly Infusionsoft) account to any AI agent to optimiz
 List all contacts in Keap
 - **list_opportunities**: List sales opportunities
 - **list_orders**: List ecommerce orders
-- **get_business_profile**: Get Keap business profile information
-- **list_users**: List all application users
 - **create_contact**: Requires at least a first name or email.
 
 Create a new contact in Keap
+- **get_business_profile**: Get Keap business profile information
 - **get_contact**: Get details for a specific contact
 - **list_invoices**: List all invoices
+- **list_users**: List all application users
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides deterministic A* pathfinding capabilities for agents na
 
 
 ## Available Tools (3)
-- **find_k_shortest_paths**: 
 - **analyze_grid_feasibility**: 
+- **find_k_shortest_paths**: 
 - **find_shortest_path**: 
 
 

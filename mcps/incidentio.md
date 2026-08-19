@@ -16,12 +16,12 @@ Empower your AI agents to manage your incident response lifecycle with Incident.
 ## Available Tools (10)
 - **get_incident**: Retrieves details for a specific incident
 - **list_catalog_types**: Lists all defined catalog types
+- **list_severities**: Lists all defined incident severities
 - **list_custom_fields**: Lists all defined custom fields
 - **list_incident_roles**: Lists all defined incident roles
-- **list_incident_types**: Lists all defined incident types
 - **list_incidents**: Lists all incidents
+- **list_incident_types**: Lists all defined incident types
 - **list_schedules**: Lists all on-call schedules
-- **list_severities**: Lists all defined incident severities
 - **list_teams**: Lists all teams
 - **list_users**: Lists all users
 

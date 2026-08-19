@@ -14,27 +14,27 @@ Empower your AI agents with JumpCloud's open directory platform. This MCP server
 
 
 ## Available Tools (10)
-- **get_user**: Returns account metadata, group memberships, and security settings. Use this for detailed user vetting or before making administrative changes.
-
-Retrieves details for a specific user
 - **list_directories**: Useful for auditing identity source configurations.
 
 Lists all configured directories (LDAP, AD, Google, etc)
 - **list_networks**: Useful for auditing WiFi and VPN authentication settings.
 
 Lists all RADIUS networks
-- **list_policies**: g., Disk Encryption, Firewall) defined in JumpCloud. Essential for auditing security compliance across the fleet.
-
-Lists all system security policies
 - **list_system_groups**: g., "Production Servers", "Employee Laptops"). Useful for identifying device cohorts for policy application.
 
 Lists all system groups
-- **list_systems**: Returns hostnames, IDs, and OS versions. Use this to audit company hardware and device compliance.
+- **get_user**: Returns account metadata, group memberships, and security settings. Use this for detailed user vetting or before making administrative changes.
 
-Lists all systems managed by JumpCloud
+Retrieves details for a specific user
 - **list_commands**: Useful for auditing automation scripts.
 
 Lists saved management commands
+- **list_policies**: g., Disk Encryption, Firewall) defined in JumpCloud. Essential for auditing security compliance across the fleet.
+
+Lists all system security policies
+- **list_systems**: Returns hostnames, IDs, and OS versions. Use this to audit company hardware and device compliance.
+
+Lists all systems managed by JumpCloud
 - **list_applications**: Useful for auditing software access and identifying which SaaS apps are integrated.
 
 Lists all configured SSO applications

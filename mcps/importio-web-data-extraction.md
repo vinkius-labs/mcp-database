@@ -35,34 +35,34 @@ Connect your **Import.io** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
+- **account_usage**: No parameters required.
+
+Check import.io account API credit usage
 - **get_crawl_data**: Retrieve the unified JSON output of a completed import.io crawl job
 - **get_crawl_status**: start_crawl to check progress (pages processed, success rate, current state).
 
 Check the status of an ongoing import.io crawl job
-- **account_usage**: No parameters required.
+- **get_extractor_status**: run_extractor. Returns the current state (running, completed, failed) and metadata about the run.
 
-Check import.io account API credit usage
-- **download_csv**: Returns the first 1000 characters and file stats. Ideal for spreadsheet processing.
+Check the status of an active or past import.io extraction run
+- **start_crawl**: Starts a large-scale data extraction job across multiple pages concurrently.
 
-Download extraction data directly as CSV text
+Trigger an import.io bulk crawl job
 - **get_extractor_data**: Fails if the run is still in progress.
 
 Retrieve structured JSON data from a completed import.io extraction
 - **list_extractors**: Useful for finding the correct extractor_id to run dynamically.
 
 List all extractors configured on the import.io account
+- **download_csv**: Returns the first 1000 characters and file stats. Ideal for spreadsheet processing.
+
+Download extraction data directly as CSV text
 - **run_magic_api**: Ideal for quick, unstructured exploration.
 
 Run the import.io automated Magic API against a URL
 - **run_extractor**: Triggers an async extraction run and returns a run_id. Use this run_id to poll for status or data.
 
 Trigger an import.io extractor for a specific URL
-- **start_crawl**: Starts a large-scale data extraction job across multiple pages concurrently.
-
-Trigger an import.io bulk crawl job
-- **get_extractor_status**: run_extractor. Returns the current state (running, completed, failed) and metadata about the run.
-
-Check the status of an active or past import.io extraction run
 
 
 ## 💬 Prompt Examples

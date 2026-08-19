@@ -35,30 +35,30 @@ Connect your **Insomnia Cloud** account to any AI agent and take full control of
 
 
 ## Available Tools (10)
+- **list_branches**: Useful to track collaborative progress across multiple parallel feature branches.
+
+List branches of an Insomnia file. Git-like branching for API specs and collections. Returns branch names and statuses
+- **list_collaborators**: List members in an Insomnia organization. Returns usernames, emails, roles, and access levels
+- **list_mocks**: List mock servers in an Insomnia project. Mock servers simulate API responses for testing. Returns mock names, URLs, and statuses
+- **get_file**: Get full details of an Insomnia file including name, type, content (spec/collection JSON), and version history
+- **get_user**: Helps audit basic permission identity context.
+
+Get the authenticated Insomnia user profile. Returns username, email, plan, and org memberships
+- **list_ai_requests**: Exposes usage metrics and metadata surrounding Insomnia AI interactions.
+
+List AI-powered API requests generated in an Insomnia organization. Returns AI-generated specs and test suggestions
+- **list_environments**: Environments are the primary way Insomnia abstracts configuration, injecting values into execution payloads.
+
+List environments in an Insomnia project. Environments hold variables (base URLs, tokens) for different stages. Returns env names and variable counts
+- **list_files**: Use to locate the specific file_id for fetching API definitions.
+
+List files in an Insomnia project. Files include API specs (OpenAPI/Swagger), request collections, and design documents. Returns names, types, and last modified dates
 - **list_orgs**: Use this to find the appropriate org_id needed for subsequent project or file operations.
 
 List all organizations on Insomnia Cloud. Insomnia (by Kong) is a leading API design, debugging, and testing tool supporting REST, GraphQL, gRPC, and WebSockets. Returns org names, IDs, and member counts
 - **list_projects**: Projects contain design files, requests, environments, and mock servers.
 
 List team projects in an Insomnia organization. Projects group API specs, collections, and environments. Returns project names and IDs
-- **list_files**: Use to locate the specific file_id for fetching API definitions.
-
-List files in an Insomnia project. Files include API specs (OpenAPI/Swagger), request collections, and design documents. Returns names, types, and last modified dates
-- **get_file**: Get full details of an Insomnia file including name, type, content (spec/collection JSON), and version history
-- **list_branches**: Useful to track collaborative progress across multiple parallel feature branches.
-
-List branches of an Insomnia file. Git-like branching for API specs and collections. Returns branch names and statuses
-- **list_collaborators**: List members in an Insomnia organization. Returns usernames, emails, roles, and access levels
-- **list_ai_requests**: Exposes usage metrics and metadata surrounding Insomnia AI interactions.
-
-List AI-powered API requests generated in an Insomnia organization. Returns AI-generated specs and test suggestions
-- **get_user**: Helps audit basic permission identity context.
-
-Get the authenticated Insomnia user profile. Returns username, email, plan, and org memberships
-- **list_environments**: Environments are the primary way Insomnia abstracts configuration, injecting values into execution payloads.
-
-List environments in an Insomnia project. Environments hold variables (base URLs, tokens) for different stages. Returns env names and variable counts
-- **list_mocks**: List mock servers in an Insomnia project. Mock servers simulate API responses for testing. Returns mock names, URLs, and statuses
 
 
 ## 💬 Prompt Examples

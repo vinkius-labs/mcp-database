@@ -14,8 +14,8 @@ This MCP server provides formal verification for Deterministic Finite State Mach
 
 
 ## Available Tools (3)
-- **simulate_execution**: Evaluates a specific execution trace
 - **validate_structure**: Ensures the FSM is mathematically sound
+- **simulate_execution**: Evaluates a specific execution trace
 - **get_workflow_metrics**: Provides high-level FSM complexity and health metrics
 
 

@@ -23,6 +23,30 @@ Connect your **Lightspeed Restaurant L-Series** (resto-api) to any AI agent.
 
 
 ## Available Tools (14)
+- **list_modifiers**: For the items they attach to use list_menu_items.
+
+List modifier groups (add-ons)
+- **list_employees**: For their worked hours use list_clock_times.
+
+List staff members
+- **list_clock_times**: Returns clock-in and clock-out timestamps per employee. For the staff roster/details use list_employees.
+
+List staff clock in/out records
+- **list_categories**: Returns product groups with display order and visibility. For the items themselves use list_menu_items.
+
+List menu categories (product groups)
+- **list_receipts**: Optional date (YYYY-MM-DD); defaults to the restaurant current business day in its own timezone. Returns each ticket with items, tips, and payments. For a multi-day span use get_sales_report; for per-product totals use get_product_sales.
+
+List receipts (tickets) for one day
+- **get_receipt**: Returns the full breakdown: items, modifiers, taxes, and payments. To find the ID first, use list_receipts.
+
+Get one receipt by its ID
+- **get_sales_report**: "from" and "to" are required ISO-8601 (e.g. 2026-08-01T00:00:00). Returns the individual receipts in the range. For a single day use list_receipts; for best-sellers/profit per item use get_product_sales.
+
+List receipts over a date range
+- **get_company**: Also the authoritative source of the account timezone. Not for sales numbers — use get_sales_report or get_product_sales.
+
+Get restaurant profile and settings
 - **list_tables**: For the sections themselves use list_floors.
 
 List all tables across floors
@@ -38,33 +62,9 @@ List linked establishments (locations)
 - **list_floors**: For a flat list of tables regardless of section use list_tables.
 
 List floor plans with their tables
-- **get_company**: Also the authoritative source of the account timezone. Not for sales numbers — use get_sales_report or get_product_sales.
-
-Get restaurant profile and settings
-- **list_modifiers**: For the items they attach to use list_menu_items.
-
-List modifier groups (add-ons)
-- **list_employees**: For their worked hours use list_clock_times.
-
-List staff members
-- **list_clock_times**: Returns clock-in and clock-out timestamps per employee. For the staff roster/details use list_employees.
-
-List staff clock in/out records
 - **list_menu_items**: Returns dine-in/takeaway/delivery prices, tax class, stock, and modifiers per item. To group by category use list_categories; for add-on groups use list_modifiers.
 
 List all menu products with prices
-- **list_categories**: Returns product groups with display order and visibility. For the items themselves use list_menu_items.
-
-List menu categories (product groups)
-- **list_receipts**: Optional date (YYYY-MM-DD); defaults to the restaurant current business day in its own timezone. Returns each ticket with items, tips, and payments. For a multi-day span use get_sales_report; for per-product totals use get_product_sales.
-
-List receipts (tickets) for one day
-- **get_receipt**: Returns the full breakdown: items, modifiers, taxes, and payments. To find the ID first, use list_receipts.
-
-Get one receipt by its ID
-- **get_sales_report**: "from" and "to" are required ISO-8601 (e.g. 2026-08-01T00:00:00). Returns the individual receipts in the range. For a single day use list_receipts; for best-sellers/profit per item use get_product_sales.
-
-List receipts over a date range
 
 
 ## 💬 Prompt Examples

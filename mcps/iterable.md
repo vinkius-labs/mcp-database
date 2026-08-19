@@ -14,15 +14,21 @@ Empower your AI agents to manage your cross-channel marketing with Iterable. Thi
 
 
 ## Available Tools (10)
-- **get_campaign**: Returns message content, audience targeting, and scheduling settings. Use this to analyze the setup of a specific campaign.
-
-Retrieves details for a specific campaign
 - **get_campaign_metrics**: Essential for reporting on marketing ROI and audience engagement.
 
 Retrieves performance metrics for a specific campaign
 - **get_user**: Essential for deep intelligence on an individual subscriber.
 
 Retrieves details for a user by email
+- **list_webhooks**: Useful for auditing system integrations and data exports.
+
+Lists all configured webhooks
+- **list_workflows**: Useful for monitoring automated marketing logic and identifying trigger-based campaigns.
+
+Lists all automation workflows
+- **get_campaign**: Returns message content, audience targeting, and scheduling settings. Use this to analyze the setup of a specific campaign.
+
+Retrieves details for a specific campaign
 - **list_campaigns**: Returns campaign names, IDs, and statuses. Use this to identify active outreach efforts or locate a specific campaign ID.
 
 Lists all marketing campaigns
@@ -38,12 +44,6 @@ Lists all message types
 - **list_templates**: ) available in the account. Useful for identifying content assets used in campaigns.
 
 Lists all message templates
-- **list_webhooks**: Useful for auditing system integrations and data exports.
-
-Lists all configured webhooks
-- **list_workflows**: Useful for monitoring automated marketing logic and identifying trigger-based campaigns.
-
-Lists all automation workflows
 
 
 ## 💬 Prompt Examples

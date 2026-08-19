@@ -35,9 +35,6 @@ Connect your **Ironclad** account to any AI agent and manage your entire contrac
 
 
 ## Available Tools (10)
-- **ironclad_list_workflows**: Each workflow represents a contract moving through its lifecycle: drafting → internal review → approval → counterparty negotiation → signature → execution. Returns workflow name, current step/status, creator, counterparty, template used, and dates. Use when the user asks about contracts in progress, pending approvals, or the contract pipeline.
-
-List Ironclad contract workflows in progress — NDAs, MSAs, SOWs, and other agreements moving through approval and signature stages
 - **ironclad_search_records**: Matches contract names, counterparty names, descriptions, and attribute values. Use when the user asks "find our contract with Acme", "show all NDAs", or needs to locate a specific agreement by keyword.
 
 Search Ironclad contract records by keyword — find specific agreements, counterparties, or contract types across the repository
@@ -47,6 +44,9 @@ Get the approval status of a specific Ironclad contract workflow — who approve
 - **ironclad_get_comments**: Returns each comment with author, timestamp, and message. Comments capture internal review discussions, legal feedback, and negotiation notes. Use to review the discussion history of a contract or understand decision context.
 
 Get all comments and discussion on an Ironclad contract workflow — internal team communication and negotiation notes
+- **ironclad_list_workflows**: Each workflow represents a contract moving through its lifecycle: drafting → internal review → approval → counterparty negotiation → signature → execution. Returns workflow name, current step/status, creator, counterparty, template used, and dates. Use when the user asks about contracts in progress, pending approvals, or the contract pipeline.
+
+List Ironclad contract workflows in progress — NDAs, MSAs, SOWs, and other agreements moving through approval and signature stages
 - **ironclad_get_record**: Use for contract lookups, renewal planning, or compliance reviews.
 
 Get complete details of an executed Ironclad contract record — all metadata, dates, obligations, and linked documents

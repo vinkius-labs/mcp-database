@@ -14,9 +14,9 @@ This MCP server provides a deterministic routing engine for managing hierarchica
 
 
 ## Available Tools (3)
+- **analyze_topic_complexity**: Inspects the structure of a topic to determine routing complexity and expansion potential
 - **calculate_delivery_impact**: Evaluates the resource requirements and guarantees for a single message publication
 - **match_subscribers**: Identifies which specific agents should receive a message published to a specific topic
-- **analyze_topic_complexity**: Inspects the structure of a topic to determine routing complexity and expansion potential
 
 
 ## 💬 Prompt Examples
