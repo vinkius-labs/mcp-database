@@ -34,12 +34,12 @@ Connect your **WordPress** site to any AI agent and simplify how you publish con
 
 
 ## Available Tools (7)
-- **list_static_pages**: List static site pages
 - **list_blog_posts**: List WordPress blog posts
 - **list_site_users**: List site users
-- **create_new_post**: Create a new blog post
+- **list_static_pages**: List static site pages
 - **delete_post**: Delete a blog post
 - **list_blog_categories**: List blog categories
+- **create_new_post**: Create a new blog post
 - **get_post_details**: Get details for a specific post
 
 

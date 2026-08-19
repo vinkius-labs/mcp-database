@@ -37,10 +37,10 @@ Connect your **Azure DevOps** account to any AI agent and simplify how you manag
 ## Available Tools (6)
 - **list_project_teams**: List teams in a project
 - **list_work_items**: List recent work items
-- **list_builds**: List recent builds
-- **list_pipelines**: List CI/CD pipelines
 - **list_projects**: List Azure DevOps projects
 - **list_repositories**: List Git repositories
+- **list_builds**: List recent builds
+- **list_pipelines**: List CI/CD pipelines
 
 
 ## 💬 Prompt Examples

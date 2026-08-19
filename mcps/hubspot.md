@@ -37,20 +37,20 @@ Connect your **HubSpot** account to any AI agent and manage your entire CRM thro
 
 
 ## Available Tools (12)
-- **list_companies**: List CRM companies
+- **create_contact**: Add new contact
 - **link_crm_objects**: g. Contact to Company).
 
 Create association
-- **create_contact**: Add new contact
+- **list_companies**: List CRM companies
+- **list_hubspot_users**: List record owners
 - **remove_contact**: Delete contact
+- **search_contacts**: Find contacts
 - **get_company_info**: Get company details
 - **get_contact_details**: Get contact info
 - **get_deal_details**: Get deal info
+- **get_object_schema**: List fields
 - **list_contacts**: List CRM contacts
 - **list_deals**: List sales deals
-- **list_hubspot_users**: List record owners
-- **get_object_schema**: List fields
-- **search_contacts**: Find contacts
 
 
 ## 💬 Prompt Examples

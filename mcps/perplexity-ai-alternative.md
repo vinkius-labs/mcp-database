@@ -35,18 +35,9 @@ No more switching between search engines and chat tools. Your AI acts as a web-g
 
 
 ## Available Tools (8)
-- **chat**: Requires the model ID (e.g. "sonar", "sonar-pro", "sonar-reasoning") and messages array in JSON format. Each message must have a "role" ("user", "assistant" or "system") and "content" (text). Optionally set max_tokens, temperature (0-1), top_p (0-1), search domain filter, and whether to return images or related questions. Returns the assistant's response with citations.
-
-Send a chat message to a Perplexity model
-- **chat_pro**: Requires messages array in JSON format. Optionally set max_tokens and temperature. Returns the assistant's response with citations.
-
-Send a chat message to the Sonar Pro model for enhanced responses
 - **chat_with_reasoning**: Requires messages array in JSON format. Optionally set max_tokens, temperature and reasoning_effort (low, medium, high). Returns the assistant's response with detailed reasoning chain.
 
 Send a message to the Sonar Reasoning model for step-by-step reasoning
-- **chat_with_reasoning_pro**: Requires messages array in JSON format. Optionally set max_tokens, temperature and reasoning_effort (low, medium, high). Returns the assistant's response with detailed reasoning chain and citations.
-
-Send a message to the Sonar Reasoning Pro model for deep reasoning
 - **get_usage**: Useful for monitoring API consumption and staying within usage limits.
 
 Get API usage statistics
@@ -59,6 +50,15 @@ Search the web using Perplexity Search API
 - **sonar**: This is the core search-enhanced model. Requires messages array in JSON format. Optionally set max_tokens and temperature. Returns the assistant's response with web citations.
 
 Send a message to the Sonar model for web-grounded responses
+- **chat**: Requires the model ID (e.g. "sonar", "sonar-pro", "sonar-reasoning") and messages array in JSON format. Each message must have a "role" ("user", "assistant" or "system") and "content" (text). Optionally set max_tokens, temperature (0-1), top_p (0-1), search domain filter, and whether to return images or related questions. Returns the assistant's response with citations.
+
+Send a chat message to a Perplexity model
+- **chat_pro**: Requires messages array in JSON format. Optionally set max_tokens and temperature. Returns the assistant's response with citations.
+
+Send a chat message to the Sonar Pro model for enhanced responses
+- **chat_with_reasoning_pro**: Requires messages array in JSON format. Optionally set max_tokens, temperature and reasoning_effort (low, medium, high). Returns the assistant's response with detailed reasoning chain and citations.
+
+Send a message to the Sonar Reasoning Pro model for deep reasoning
 
 
 ## 💬 Prompt Examples

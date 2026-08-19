@@ -37,19 +37,19 @@ Connect your **Glean** workspace to any AI agent and unlock enterprise knowledge
 
 ## Available Tools (12)
 - **chat**: AI chat
-- **check_glean_status**: Verify connectivity
 - **delete_document**: Delete a document
 - **get_collection**: Get collection details
-- **get_document**: Get document details
 - **index_document**: Index a document
 - **list_collections**: List collections
+- **search**: Search across all content
 - **search_by_datasource**: g., Confluence, Slack, Google Drive).
 
 Search in specific datasource
 - **search_people**: Search people
-- **search**: Search across all content
 - **autocomplete**: Autocomplete suggestions
 - **bulk_index_documents**: Bulk index documents
+- **check_glean_status**: Verify connectivity
+- **get_document**: Get document details
 
 
 ## 💬 Prompt Examples

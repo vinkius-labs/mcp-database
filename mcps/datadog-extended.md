@@ -37,22 +37,22 @@ Connect your **Datadog** account to any AI agent and take full control of your o
 
 
 ## Available Tools (16)
+- **get_monitor**: Get monitor details
+- **list_dashboards**: List dashboards
+- **list_hosts**: List hosts
+- **list_incidents**: List incidents
+- **list_slos**: List SLOs
+- **query_metrics**: Query metric data
+- **search_logs**: Search logs
+- **search_monitors**: Search monitors
 - **check_datadog_status**: Verify connectivity
 - **create_event**: Create an event
 - **get_dashboard**: Get dashboard details
 - **get_incident**: Get incident details
-- **get_monitor**: Get monitor details
-- **list_dashboards**: List dashboards
 - **list_events**: List events
-- **list_hosts**: List hosts
-- **list_incidents**: List incidents
 - **list_metrics**: List metrics
 - **list_monitors**: List monitors
-- **list_slos**: List SLOs
 - **mute_monitor**: Mute a monitor
-- **query_metrics**: Query metric data
-- **search_logs**: Search logs
-- **search_monitors**: Search monitors
 
 
 ## 💬 Prompt Examples

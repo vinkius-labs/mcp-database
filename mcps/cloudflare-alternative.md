@@ -46,18 +46,12 @@ Create a new DNS record in a Cloudflare zone
 - **get_zone_analytics**: Use to audit CDN performance, identify traffic spikes and review threat mitigation.
 
 Get analytics data for a Cloudflare zone
-- **delete_dns_record**: Provide the zone ID and DNS record ID. This action cannot be undone — the record will be immediately removed from Cloudflare nameservers.
-
-Delete a DNS record from a Cloudflare zone
 - **list_dns_records**: ) configured for a specific zone. Each record has a type, name, content, TTL and proxied status (whether traffic goes through Cloudflare CDN). Optionally filter by record type (e.g. "A" for IPv4 addresses only).
 
 List DNS records for a Cloudflare zone
 - **list_firewall_rules**: Each rule defines a filter expression (e.g. "ip.src in {1.2.3.4}") and an action (block, challenge, allow, log, js_challenge). Use to audit your web application firewall configuration.
 
 List firewall rules for a Cloudflare zone
-- **get_kv_value**: Useful for reading Worker configuration, feature flags, cached API responses or session data. Provide the namespace ID and the key name.
-
-Get a value from a Cloudflare KV namespace
 - **get_zone**: Provide the zone ID.
 
 Get details for a specific Cloudflare zone
@@ -70,21 +64,27 @@ List Cloudflare KV namespaces
 - **list_load_balancers**: Cloudflare Load Balancing distributes traffic across multiple origin servers or regions based on health checks, geolocation and steering policies. Each load balancer has a name, target pools, fallback pool and health status.
 
 List load balancers for a Cloudflare zone
-- **list_pages_projects**: Cloudflare Pages is a full-stack hosting platform that connects to Git repositories and deploys static/SSG sites. Each project has a name, Git source, production branch and deployment count.
-
-List Cloudflare Pages projects
-- **put_kv_value**: Workers use this for edge-cached data, feature flags and configuration. Provide the namespace ID, key name and the value to store. The value can be any text (JSON, plain text, etc.).
-
-Write a value to a Cloudflare KV namespace
-- **update_dns_record**: Provide the zone ID and record ID, then any fields to change: name, content, TTL or proxied status. Only the fields you provide will be updated.
-
-Update an existing DNS record
 - **list_workers**: Workers are serverless JavaScript/Wasm functions that run at Cloudflare edge locations. Each worker has a name, last deployment timestamp, resource usage and optional bindings (KV, R2, D1). Provide the account ID (found in Cloudflare dashboard URL).
 
 List Cloudflare Workers scripts
 - **list_zones**: Each zone represents a domain that uses Cloudflare DNS and CDN services, with status (active, pending), plan type and verification status. Use the zone ID for subsequent DNS, firewall and analytics queries.
 
 List all Cloudflare zones (domains)
+- **put_kv_value**: Workers use this for edge-cached data, feature flags and configuration. Provide the namespace ID, key name and the value to store. The value can be any text (JSON, plain text, etc.).
+
+Write a value to a Cloudflare KV namespace
+- **update_dns_record**: Provide the zone ID and record ID, then any fields to change: name, content, TTL or proxied status. Only the fields you provide will be updated.
+
+Update an existing DNS record
+- **delete_dns_record**: Provide the zone ID and DNS record ID. This action cannot be undone — the record will be immediately removed from Cloudflare nameservers.
+
+Delete a DNS record from a Cloudflare zone
+- **get_kv_value**: Useful for reading Worker configuration, feature flags, cached API responses or session data. Provide the namespace ID and the key name.
+
+Get a value from a Cloudflare KV namespace
+- **list_pages_projects**: Cloudflare Pages is a full-stack hosting platform that connects to Git repositories and deploys static/SSG sites. Each project has a name, Git source, production branch and deployment count.
+
+List Cloudflare Pages projects
 
 
 ## 💬 Prompt Examples

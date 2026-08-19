@@ -14,20 +14,20 @@ Connect your Notion workspace to your AI agent. Search across databases, fetch p
 
 
 ## Available Tools (12)
-- **create_page**: You must provide the parent object and properties (schema based on parent type).
-
-Create a new page in Notion
 - **list_databases**: List all databases available to the integration
 - **list_users**: List all users in the workspace
 - **query_database**: Query a specific Notion database with filters and sorts
 - **retrieve_block_children**: Retrieve child blocks of a specific block or page
 - **retrieve_database**: Retrieve metadata for a specific database
-- **retrieve_page**: Retrieve a specific Notion page by ID
 - **retrieve_user**: Retrieve a specific user by ID
-- **search**: Search for pages and databases by title
 - **update_page**: Update properties of an existing Notion page
 - **append_block_children**: Append child blocks to an existing block or page
 - **get_me**: Get information about the current integration/bot
+- **create_page**: You must provide the parent object and properties (schema based on parent type).
+
+Create a new page in Notion
+- **retrieve_page**: Retrieve a specific Notion page by ID
+- **search**: Search for pages and databases by title
 
 
 ## 💬 Prompt Examples

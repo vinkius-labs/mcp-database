@@ -37,18 +37,18 @@ No more manual toggling between browser tabs to check issue statuses. Your AI ac
 
 
 ## Available Tools (12)
-- **create_new_issue**: Open GitHub issue
-- **get_file_content**: Read file from repo
 - **get_my_profile**: Get account info
-- **get_repository_details**: Get repo info
-- **list_repo_branches**: Check repo branches
 - **list_my_gists**: List code snippets
-- **list_repository_issues**: List repo issues
+- **list_repo_branches**: Check repo branches
 - **list_recent_notifications**: Check GitHub inbox
-- **list_my_organizations**: List user orgs
-- **list_my_repositories**: List your GitHub repos
 - **search_repositories**: Find GitHub projects
 - **list_pull_requests**: List repo PRs
+- **create_new_issue**: Open GitHub issue
+- **get_file_content**: Read file from repo
+- **get_repository_details**: Get repo info
+- **list_my_organizations**: List user orgs
+- **list_my_repositories**: List your GitHub repos
+- **list_repository_issues**: List repo issues
 
 
 ## 💬 Prompt Examples

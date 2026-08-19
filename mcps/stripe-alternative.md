@@ -39,24 +39,12 @@ No more switching to the Stripe dashboard to check a payment status or audit ref
 
 
 ## Available Tools (13)
-- **create_customer**: Optionally set the email, name and description. Returns the created customer with its ID.
-
-Create a new Stripe customer
-- **get_balance**: Returns available and pending balances broken down by currency and type (card, bank_transfer, etc.). Useful for checking your Stripe payout status.
-
-Get current Stripe account balance
 - **get_customer**: Provide the customer ID (starts with "cus_").
 
 Get details for a specific Stripe customer
 - **list_charges**: Each charge has an ID, amount, currency, status (succeeded, pending, failed), customer, payment method and creation date. Optionally filter by customer and set a limit.
 
 List charges in Stripe
-- **list_coupons**: Each coupon has an ID, name, percent_off or amount_off, duration (once, repeating, forever) and active status. Optionally set a limit.
-
-List coupons in Stripe
-- **list_customers**: Each customer has an ID, email, name, description and metadata. Optionally filter by email to find a specific customer and set a limit on the number of results returned.
-
-List customers in Stripe
 - **list_invoices**: Each invoice has an ID, customer, amount due, status (draft, open, paid, uncollectible), creation date and line items. Optionally filter by customer and set a limit.
 
 List invoices in Stripe
@@ -66,18 +54,30 @@ List payment intents in Stripe
 - **list_prices**: Each price has an ID, unit amount, currency, recurring interval (if subscription) and associated product. Optionally filter by product ID, active status and limit.
 
 List prices in Stripe
-- **list_products**: Each product has an ID, name, description, images and active status. Products are used with Prices to define what you sell. Optionally filter by active status and set a limit.
-
-List products in Stripe
 - **list_refunds**: Each refund has an ID, amount, charge ID, status (succeeded, pending, failed, canceled) and creation date. Optionally set a limit.
 
 List refunds in Stripe
-- **list_subscriptions**: Each subscription has an ID, customer, status (trialing, active, past_due, canceled, unpaid, incomplete), items (prices) and billing cycle details. Optionally filter by customer, status and set a limit.
+- **create_customer**: Optionally set the email, name and description. Returns the created customer with its ID.
 
-List subscriptions in Stripe
+Create a new Stripe customer
 - **create_payment_intent**: Requires the amount (in smallest currency unit, e.g. cents for USD) and currency (e.g. "usd"). Optionally associate with a customer. Returns the payment intent with its client_secret for use with Stripe.js.
 
 Create a new payment intent in Stripe
+- **get_balance**: Returns available and pending balances broken down by currency and type (card, bank_transfer, etc.). Useful for checking your Stripe payout status.
+
+Get current Stripe account balance
+- **list_coupons**: Each coupon has an ID, name, percent_off or amount_off, duration (once, repeating, forever) and active status. Optionally set a limit.
+
+List coupons in Stripe
+- **list_customers**: Each customer has an ID, email, name, description and metadata. Optionally filter by email to find a specific customer and set a limit on the number of results returned.
+
+List customers in Stripe
+- **list_products**: Each product has an ID, name, description, images and active status. Products are used with Prices to define what you sell. Optionally filter by active status and set a limit.
+
+List products in Stripe
+- **list_subscriptions**: Each subscription has an ID, customer, status (trialing, active, past_due, canceled, unpaid, incomplete), items (prices) and billing cycle details. Optionally filter by customer, status and set a limit.
+
+List subscriptions in Stripe
 
 
 ## 💬 Prompt Examples
