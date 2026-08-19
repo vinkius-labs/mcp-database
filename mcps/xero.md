@@ -39,16 +39,16 @@ No more manual navigation through complex accounting dashboards to check if a bi
 
 
 ## Available Tools (9)
+- **get_invoice_details**: Retrieves comprehensive details for a specific Xero invoice
+- **get_organisation_info**: Retrieves details about the Xero organization
 - **get_balance_sheet**: Returns assets, liabilities, and equity totals.
 
 Retrieves the balance sheet report for a specific date
-- **get_invoice_details**: Retrieves comprehensive details for a specific Xero invoice
-- **get_organisation_info**: Retrieves details about the Xero organization
 - **get_profit_and_loss**: Provide from_date and to_date.
 
 Retrieves the profit and loss (PnL) report for a specific date range
-- **list_chart_of_accounts**: Lists all accounts in the Xero chart of accounts
 - **list_bank_transactions**: Lists all transactions recorded in bank accounts
+- **list_chart_of_accounts**: Lists all accounts in the Xero chart of accounts
 - **list_xero_contacts**: Lists all customers and suppliers registered in Xero
 - **list_xero_invoices**: Lists all sales and purchase invoices in the Xero organization
 - **list_xero_payments**: Lists all payments applied to invoices

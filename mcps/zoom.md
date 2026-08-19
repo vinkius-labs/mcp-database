@@ -39,15 +39,15 @@ No more manual navigation through complex meeting dashboards to find a join link
 
 
 ## Available Tools (14)
-- **list_webinars**: List scheduled webinars
+- **get_recording**: Get recording files for a specific meeting
+- **get_user**: Get user configuration
 - **get_webinar**: Get webinar details
 - **list_meetings**: List scheduled meetings
+- **list_webinars**: List scheduled webinars
+- **update_meeting**: Update meeting topic
 - **list_recordings**: List cloud recordings for a user
 - **list_registrants**: List registrants for a meeting
 - **list_users**: List Zoom users
-- **update_meeting**: Update meeting topic
-- **get_recording**: Get recording files for a specific meeting
-- **get_user**: Get user configuration
 - **get_meeting_participants**: List participants of a past meeting
 - **delete_meeting**: Delete a meeting
 - **create_meeting**: Create a video meeting

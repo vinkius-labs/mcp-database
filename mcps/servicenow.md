@@ -39,15 +39,6 @@ Your AI agent becomes your ITSM command center — no more navigating complex Fi
 
 
 ## Available Tools (10)
-- **get_record**: Returns all fields.
-
-Get a single ServiceNow record by sys_id
-- **update_record**: Only specify the fields you want to change.
-
-Update an existing ServiceNow record
-- **query_table**: ). Use SysParm encoded query syntax: field=value^field2=value2. Supports dot-walking for related fields.
-
-Query any ServiceNow table with SysParm filters
 - **count_records**: Useful for dashboards and metrics without fetching full records.
 
 Get record count from a ServiceNow table
@@ -57,18 +48,27 @@ Create a new record in any ServiceNow table
 - **delete_record**: This action is irreversible.
 
 Delete a ServiceNow record
-- **list_incidents**: Filter by priority, state, assignment_group, or any field. Example query: priority=1^state=1 (open P1 incidents).
+- **get_record**: Returns all fields.
 
-List incidents with optional filters
+Get a single ServiceNow record by sys_id
 - **list_change_requests**: Filter by state, risk, type. Example: risk=high^state=new
 
 List change requests
-- **search_knowledge**: Returns matching articles with KB numbers and descriptions.
+- **list_incidents**: Filter by priority, state, assignment_group, or any field. Example query: priority=1^state=1 (open P1 incidents).
 
-Search the ServiceNow Knowledge Base
+List incidents with optional filters
 - **query_cmdb**: Common tables: cmdb_ci_server, cmdb_ci_appl, cmdb_ci_db_instance, cmdb_ci_network. Example query: name=PROD-WEB-01
 
 Query ServiceNow CMDB configuration items
+- **query_table**: ). Use SysParm encoded query syntax: field=value^field2=value2. Supports dot-walking for related fields.
+
+Query any ServiceNow table with SysParm filters
+- **update_record**: Only specify the fields you want to change.
+
+Update an existing ServiceNow record
+- **search_knowledge**: Returns matching articles with KB numbers and descriptions.
+
+Search the ServiceNow Knowledge Base
 
 
 ## 💬 Prompt Examples

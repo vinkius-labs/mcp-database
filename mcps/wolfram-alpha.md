@@ -35,10 +35,10 @@ Wolfram Alpha is the standard for computational knowledge, used by millions of s
 ## Available Tools (5)
 - **astronomical_data**: Retrieve astronomical data and celestial positions
 - **chemical_data**: Get chemical properties and data for a substance
+- **scientific_data**: Retrieve scientific data and facts
 - **solve_math**: Wolfram Alpha will solve it and show steps if available.
 
 Solve a mathematical equation or expression
-- **scientific_data**: Retrieve scientific data and facts
 - **short_answer**: Get a short, direct answer to a factual query
 
 

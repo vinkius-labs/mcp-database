@@ -38,6 +38,18 @@ No more wrestling with hundred browser tabs. Your AI acts as a dedicated identit
 
 
 ## Available Tools (13)
+- **list_organizations**: Organizations allow you to model B2B multi-tenancy. Each organization shows its ID, name, display name, branding and creation date.
+
+List organizations in Auth0
+- **list_roles**: Roles define permission sets that can be assigned to users. Each role shows its name, description, ID and creation date. Useful for auditing your RBAC (Role-Based Access Control) configuration.
+
+List roles in Auth0
+- **list_users**: Each user shows their user_id, email, name, last login, identities (connection provider), blocked status and metadata. Optionally search with a query string (q parameter) using Lucene syntax (e.g. "email:*@example.com" or "name:John"). Supports pagination with page and per_page.
+
+List users in your Auth0 tenant
+- **update_user**: Provide the user_id and a JSON object with fields to change (e.g. {"email":"new@email.com","email_verified":true,"blocked":false,"user_metadata":{"theme":"dark"}}). Only provided fields will be updated.
+
+Update an Auth0 user
 - **create_user**: Requires the connection (e.g. "Username-Password-Authentication" for default DB connection) and email. Optionally set a password and username. Returns the created user with their user_id.
 
 Create a new user in Auth0
@@ -50,30 +62,18 @@ Get details for a specific Auth0 client (application)
 - **get_user_by_email**: Returns all users matching the email (there may be multiple if they signed up via different connections). Useful for finding a user when you only know their email.
 
 Find an Auth0 user by email address
-- **list_logs**: Each log entry includes the event type (e.g. "s" = success login, "f" = failed login, "du" = user deleted, "sapi" = API operation, "limit_wc" = rate limit), date, IP, user agent and details. Optionally filter by event type and paginate.
-
-List security and activity logs for your Auth0 tenant
-- **list_organizations**: Organizations allow you to model B2B multi-tenancy. Each organization shows its ID, name, display name, branding and creation date.
-
-List organizations in Auth0
-- **list_roles**: Roles define permission sets that can be assigned to users. Each role shows its name, description, ID and creation date. Useful for auditing your RBAC (Role-Based Access Control) configuration.
-
-List roles in Auth0
-- **list_user_logs**: Each log entry includes the event type, date, IP address, user agent and details. Useful for security auditing and troubleshooting user issues.
-
-List activity logs for a specific Auth0 user
-- **list_users**: Each user shows their user_id, email, name, last login, identities (connection provider), blocked status and metadata. Optionally search with a query string (q parameter) using Lucene syntax (e.g. "email:*@example.com" or "name:John"). Supports pagination with page and per_page.
-
-List users in your Auth0 tenant
-- **update_user**: Provide the user_id and a JSON object with fields to change (e.g. {"email":"new@email.com","email_verified":true,"blocked":false,"user_metadata":{"theme":"dark"}}). Only provided fields will be updated.
-
-Update an Auth0 user
-- **get_user**: Provide the user_id (e.g. "auth0|abc123" or "google-oauth2|xyz789").
-
-Get details for a specific Auth0 user
 - **list_clients**: Each client shows its client_id, name, type (regular web, SPA, M2M, native), allowed callbacks and creation date. Useful for auditing which applications can authenticate users.
 
 List applications (clients) in Auth0
+- **list_logs**: Each log entry includes the event type (e.g. "s" = success login, "f" = failed login, "du" = user deleted, "sapi" = API operation, "limit_wc" = rate limit), date, IP, user agent and details. Optionally filter by event type and paginate.
+
+List security and activity logs for your Auth0 tenant
+- **list_user_logs**: Each log entry includes the event type, date, IP address, user agent and details. Useful for security auditing and troubleshooting user issues.
+
+List activity logs for a specific Auth0 user
+- **get_user**: Provide the user_id (e.g. "auth0|abc123" or "google-oauth2|xyz789").
+
+Get details for a specific Auth0 user
 - **list_connections**: Each connection shows its name, strategy (auth0, google-oauth2, github, oidc, samlp, etc.), enabled clients and options. Use this to audit which identity providers your users can sign in with. Optionally filter by strategy type.
 
 List identity connections in Auth0

@@ -34,14 +34,12 @@ Connect your self-hosted **SonarQube** instances or **SonarCloud** dashboards di
 
 
 ## Available Tools (10)
-- **get_component_tree**: Get the component tree (files/directories) of a SonarQube project with metrics
 - **get_duplications**: Get code duplication blocks for a file in SonarQube
 - **get_hotspots**: Get security hotspots for a SonarQube project
 - **get_measures**: Requires project key and comma-separated metric keys.
 
 Get code quality measures/metrics for a SonarQube project
 - **get_quality_gate_status**: Get the quality gate status for a SonarQube project
-- **get_source_code**: Get annotated source code lines from SonarQube for a file
 - **list_quality_gates**: List all quality gate definitions in SonarQube
 - **list_rules**: Can filter by language.
 
@@ -52,6 +50,8 @@ Search code issues in a SonarQube/SonarCloud project
 - **search_projects**: Returns project keys and names. Project keys are required for most other tools.
 
 Search projects on SonarQube/SonarCloud
+- **get_component_tree**: Get the component tree (files/directories) of a SonarQube project with metrics
+- **get_source_code**: Get annotated source code lines from SonarQube for a file
 
 
 ## 💬 Prompt Examples

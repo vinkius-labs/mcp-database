@@ -36,6 +36,7 @@ No more wrestling with hundreds of open browser tabs to find out who is assigned
 
 
 ## Available Tools (16)
+- **update_card**: Update an existing Trello card
 - **delete_card**: Prefer updating closed to true for archiving instead.
 
 Permanently delete a Trello card
@@ -47,7 +48,6 @@ Permanently delete a Trello card
 - **search_cards**: Returns matching cards with board and list context.
 
 Search for Trello cards by keyword
-- **update_card**: Update an existing Trello card
 - **add_label_to_card**: Use list_labels to get available label IDs for the board.
 
 Add a label to a Trello card

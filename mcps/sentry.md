@@ -33,17 +33,17 @@ Equip your favorite LLM interface with direct, real-time investigative access ov
 
 
 ## Available Tools (10)
+- **list_organization_users**: Lists all users in an organization
 - **delete_issue**: This action is irreversible.
 
 Permanently deletes an issue
-- **list_events**: Lists recent events for a project
-- **list_organization_users**: Lists all users in an organization
 - **get_event_details**: Retrieves details for a specific event
-- **list_projects**: Lists all projects in an organization
+- **list_events**: Lists recent events for a project
 - **resolve_issue**: This is a reversible side-effect.
 
 Resolves an issue in Sentry
 - **list_organization_teams**: Lists all teams in an organization
+- **list_projects**: Lists all projects in an organization
 - **list_organizations**: Lists all Sentry organizations
 - **get_issue_details**: Retrieves details for a specific issue
 - **list_issues**: Lists all issues (errors) in a project

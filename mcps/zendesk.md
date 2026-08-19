@@ -46,12 +46,12 @@ Lists shared and personal ticket views
 - **list_macros**: Lists all available support macros (canned responses)
 - **list_tickets**: Lists all support tickets in the Zendesk account
 - **get_ticket**: Retrieves comprehensive details for a specific support ticket
+- **get_user**: Retrieves details for a specific Zendesk user
+- **list_organizations**: Lists all organizations defined in Zendesk
+- **list_users**: Lists all users (customers and agents) in the Zendesk account
 - **search_tickets**: Syntax: "type:ticket status:open tags:escalation".
 
 Searches for tickets using the Zendesk search syntax
-- **list_users**: Lists all users (customers and agents) in the Zendesk account
-- **get_user**: Retrieves details for a specific Zendesk user
-- **list_organizations**: Lists all organizations defined in Zendesk
 
 
 ## 💬 Prompt Examples

@@ -39,20 +39,20 @@ Your AI agent becomes your HR command center — no more navigating tens of Fior
 
 
 ## Available Tools (9)
-- **list_workers**: Use the search parameter to filter by name, employee ID, or other attributes.
-
-List or search Workday workers
-- **get_worker**: Get detailed profile for a specific worker
-- **list_supervisory_orgs**: Shows org names, managers, and headcounts.
-
-List supervisory organizations
-- **get_time_off_balances**: Get time off balances for a worker
-- **get_payroll_results**: Get payroll results for a worker
-- **get_time_off_requests**: Get pending time off requests for a worker
-- **list_job_requisitions**: List open job requisitions
 - **execute_raas_report**: Results are returned in JSON. The URL can include prompt parameters.
 
 Execute a Workday Report-as-a-Service (RaaS) report
+- **get_payroll_results**: Get payroll results for a worker
+- **get_time_off_balances**: Get time off balances for a worker
+- **get_time_off_requests**: Get pending time off requests for a worker
+- **get_worker**: Get detailed profile for a specific worker
+- **list_job_requisitions**: List open job requisitions
+- **list_supervisory_orgs**: Shows org names, managers, and headcounts.
+
+List supervisory organizations
+- **list_workers**: Use the search parameter to filter by name, employee ID, or other attributes.
+
+List or search Workday workers
 - **query_resource**: Examples: locations, companies, costCenters, businessUnits.
 
 Query any Workday REST API resource
