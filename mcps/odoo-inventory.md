@@ -29,9 +29,6 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 - **odoo_search_inventory_products**: product records (variants) by name. Returns product name, internal reference (SKU), quantity on hand (qty_available), forecasted quantity (virtual_available), incoming qty, outgoing qty, category, and product type. Use when the user wants to check stock levels, find products with low inventory, or verify availability before fulfillment.
 
 Search products in Odoo Inventory with real-time stock quantities, including available, incoming, and outgoing
-- **odoo_product_stock**: quant records for the given product ID, showing quantity and reserved quantity at each internal location. Use when the user needs to know WHERE stock is located, not just the total — e.g., "how much of Product X is in Warehouse A vs Warehouse B?"
-
-Get detailed stock levels for a specific product broken down by warehouse location
 - **odoo_get_transfer**: picking record with all fields including move line IDs. Use after listing transfers to drill into a specific receipt, delivery, or internal transfer for full details.
 
 Get complete details of a specific stock transfer including its individual stock move lines
@@ -41,6 +38,9 @@ List pending inventory adjustments that need to be validated or reviewed by a wa
 - **odoo_list_locations**: location records with usage="internal" — the physical locations where stock is stored. Returns location name, full hierarchical path (e.g., WH/Stock/Zone A), and parent warehouse. Use when the user needs to find specific storage locations, plan inventory placement, or understand the warehouse structure.
 
 List internal stock locations (bins, zones, shelves) within Odoo warehouses
+- **odoo_product_stock**: quant records for the given product ID, showing quantity and reserved quantity at each internal location. Use when the user needs to know WHERE stock is located, not just the total — e.g., "how much of Product X is in Warehouse A vs Warehouse B?"
+
+Get detailed stock levels for a specific product broken down by warehouse location
 - **odoo_list_stock_moves**: move records ordered by date descending. Each move represents a single product movement from one location to another. Returns product name, quantity, state, origin/destination locations, and source document. Use when the user needs a granular audit trail of what moved where and when.
 
 List recent individual stock movements showing product, quantity, source, destination, and processing state

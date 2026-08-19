@@ -34,16 +34,16 @@ Bring the **Oxylabs SERP Scraper API** directly into your AI workflows. Perform 
 
 
 ## Available Tools (10)
-- **google_scholar_search**: Irreversibly vaporize explicit validations extracting rich Churn flags
-- **google_shopping_search**: Retrieve explicit Cloud logging tracing explicit Vault limits
 - **google_travel_search**: Enumerate explicitly attached structured rules exporting active Billing
-- **yandex_search**: Identify precise active arrays spanning native Gateway auth
 - **youtube_search**: Identify precise active arrays spanning native Hold parsing
 - **baidu_search**: Inspect deep internal arrays mitigating specific Plan Math
-- **bing_search**: Dispatch an automated validation check routing explicit Gateway history
-- **google_search**: Identify bounded CRM records inside the Headless Oxylabs SERP Platform
 - **google_images_search**: Perform structural extraction of properties driving active Account logic
 - **google_news_search**: Provision a highly-available JSON Payload generating hard Customer bindings
+- **google_scholar_search**: Irreversibly vaporize explicit validations extracting rich Churn flags
+- **google_search**: Identify bounded CRM records inside the Headless Oxylabs SERP Platform
+- **google_shopping_search**: Retrieve explicit Cloud logging tracing explicit Vault limits
+- **yandex_search**: Identify precise active arrays spanning native Gateway auth
+- **bing_search**: Dispatch an automated validation check routing explicit Gateway history
 
 
 ## 💬 Prompt Examples
