@@ -36,12 +36,12 @@ Grant your AI agent the absolute power of an untethered, scalable **Browserless 
 - **get_html_content**: Get raw HTML content using Playwright Cloud (Browserless)
 - **send_custom_payload**: Send custom JSON payload to any Browserless REST endpoint
 - **scrape_with_proxy**: Scrape URL using a specified proxy server
-- **scrape_elements**: Extract specific elements from page using CSS selectors
-- **run_custom_function**: Execute custom JS function inside remote Playwright browser
 - **scrape_with_js**: evaluate` lifecycle executing imperative DOM manipulations like button clicks prior to scraping the final mutated HTML state.
 
 Inject and run a custom JS script before extracting content
 - **get_pdf**: Print page to PDF using Playwright Cloud
+- **run_custom_function**: Execute custom JS function inside remote Playwright browser
+- **scrape_elements**: Extract specific elements from page using CSS selectors
 - **get_screenshot**: Take a full-page screenshot using Playwright Cloud
 - **scrape_with_stealth**: Scrape using stealth mode plugins to avoid bot detection
 - **scrape_with_wait**: Scrape content and wait for a CSS selector

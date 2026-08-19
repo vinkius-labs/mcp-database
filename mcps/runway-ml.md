@@ -33,24 +33,24 @@ Connect your AI to **Runway ML**, the pioneer in applied AI research shaping the
 
 
 ## Available Tools (10)
-- **get_organization**: Retrieves Runway ML organization and credit details
-- **get_task**: Look for SUCCEEDED status and output URL.
-
-Retrieves the status and output of a generation task
-- **image_text_to_video**: Generates video from both an image and a text prompt
-- **interpolate**: Creates smooth motion between two keyframe images
 - **cancel_task**: This action is irreversible.
 
 Cancels a running generation task
 - **gen3_turbo**: Quick 5-second video generation using Gen-3 Alpha Turbo
 - **gen4_turbo**: High-quality video generation using Gen-4 Turbo
+- **get_organization**: Retrieves Runway ML organization and credit details
+- **get_task**: Look for SUCCEEDED status and output URL.
+
+Retrieves the status and output of a generation task
+- **image_text_to_video**: Generates video from both an image and a text prompt
 - **image_to_video**: Specify source image URL, model, and duration.
 
 Animates a still image into a video
-- **list_tasks**: Lists recent generation tasks
+- **interpolate**: Creates smooth motion between two keyframe images
 - **text_to_video**: Specify prompt, model, and duration (5 or 10). Returns a task ID.
 
 Generates a video from a text prompt
+- **list_tasks**: Lists recent generation tasks
 
 
 ## 💬 Prompt Examples

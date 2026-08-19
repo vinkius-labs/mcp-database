@@ -15,21 +15,21 @@ The SerpApi MCP server acts as the ultimate eye into the live web for your AI. B
 
 ## Available Tools (12)
 - **bing_search**: Performs a search on Bing
-- **duckduckgo_search**: Performs a search on DuckDuckGo
 - **get_account_info**: Retrieves SerpApi account information
 - **google_images**: Returns thumbnails and full-size image links.
 
 Searches for images on Google
 - **google_news**: Searches for news on Google
 - **google_videos**: Searches for videos on Google
-- **list_locations**: Lists supported locations for search engines
 - **yahoo_search**: Performs a search on Yahoo
 - **yandex_search**: Performs a search on Yandex
+- **google_shopping**: Searches for products on Google Shopping
 - **baidu_search**: Performs a search on Baidu
+- **duckduckgo_search**: Performs a search on DuckDuckGo
 - **google_search**: Specify parameters like "location" or "hl" (language) for localized results.
 
 Performs a search on Google
-- **google_shopping**: Searches for products on Google Shopping
+- **list_locations**: Lists supported locations for search engines
 
 
 ## 💬 Prompt Examples

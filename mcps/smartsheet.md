@@ -37,18 +37,18 @@ Connect your **Smartsheet** account to any AI agent to automate your enterprise 
 - **add_sheet_rows**: Rows must be provided as a JSON array.
 
 Append new rows
-- **list_available_reports**: List filtered reports
-- **list_sheets**: List Smartsheet sheets
-- **list_platform_users**: List company users
+- **get_my_profile**: Get user info
+- **get_workspace_details**: Get workspace info
 - **list_workspaces**: List project workspaces
-- **search_within_sheet**: Find data in sheet
+- **remove_sheet_row**: Delete a row
+- **list_available_reports**: List filtered reports
+- **list_platform_users**: List company users
+- **list_sheets**: List Smartsheet sheets
 - **update_sheet_rows**: Rows must be provided as a JSON array with IDs.
 
 Modify existing rows
-- **remove_sheet_row**: Delete a row
-- **get_my_profile**: Get user info
+- **search_within_sheet**: Find data in sheet
 - **get_sheet_details**: Get sheet data
-- **get_workspace_details**: Get workspace info
 - **list_sheet_columns**: List sheet fields
 
 

@@ -36,19 +36,19 @@ Connect your **Tenable** (Tenable.io) environment to any AI agent and bring your
 ## Available Tools (10)
 - **get_asset_details**: Retrieves detailed metadata, networking, and risk profile for a specific asset
 - **get_asset_vulnerabilities**: Retrieves explicit security findings (Workbench) for a specific asset
+- **list_assets**: Lists host and cloud assets discovered in Tenable.io
+- **list_asset_tags**: g. "Critical", "Production", "External").
+
+Lists organizational tags mapped to assets
+- **list_scan_folders**: g. "My Scans", "PCI Quarters").
+
+Lists operational scan folders
+- **list_scans**: Lists vulnerability assessment scans from Tenable.io
 - **get_scan_results**: Retrieves runtime analytics and vulnerability summaries for a specific scan
 - **launch_scan**: Returns the newly created scan run ID.
 
 Manually triggers an immediate execution of a configured scan
-- **list_assets**: Lists host and cloud assets discovered in Tenable.io
-- **list_scan_folders**: g. "My Scans", "PCI Quarters").
-
-Lists operational scan folders
 - **list_logical_networks**: Lists Tenable logical routing networks
-- **list_scans**: Lists vulnerability assessment scans from Tenable.io
-- **list_asset_tags**: g. "Critical", "Production", "External").
-
-Lists organizational tags mapped to assets
 - **list_scanners**: Lists Nessus scanners managed by Tenable.io
 
 

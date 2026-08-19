@@ -34,11 +34,11 @@ Transform your local conversational window into a powerful global messaging dire
 
 ## Available Tools (14)
 - **get_chat_member_count**: Retrieves the total number of members in a specific chat
-- **get_chat_details**: Retrieves detailed information about a chat (user, group, or channel)
-- **get_bot_info**: Retrieves basic information about the bot (ID, username, etc.)
 - **delete_chat_message**: Bots can delete their own messages or those of users in groups they manage.
 
 Permanently deletes a message from a chat
+- **get_bot_info**: Retrieves basic information about the bot (ID, username, etc.)
+- **get_chat_details**: Retrieves detailed information about a chat (user, group, or channel)
 - **forward_message**: The original sender information is preserved.
 
 Forward a message from one chat to another

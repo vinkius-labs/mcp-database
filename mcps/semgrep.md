@@ -37,25 +37,25 @@ Connect the **Semgrep** AppSec platform directly to your AI agent to radically a
 
 Create a customized Semgrep security rule within the platform
 - **delete_rule**: Delete a custom Semgrep security rule from the deployment
+- **get_finding_details**: Explains the exact malicious code block, suggests semantic fixes, states whether it is blocking PRs in CI, and links to CVE data (if an SCA supply chain defect).
+
+Get atomic details for a specific Semgrep flaw
+- **get_metrics**: Typically consumed to render executive security dashboards.
+
+Get AppSec metrics and compliance stats for Semgrep
+- **get_project**: Search for a precise Semgrep project by exact repository name
 - **list_deployments**: The primary key is the deployment slug identifier. Almost all subsequent API operations targeting rules, projects, or findings will require this deployment slug to define the scope.
 
 List Semgrep organizational deployments
 - **list_findings**: Findings provide snippet details, file line numbers, severity, and rule types.
 
 Fetch globalThis static analysis security findings for a deployment
-- **get_finding_details**: Explains the exact malicious code block, suggests semantic fixes, states whether it is blocking PRs in CI, and links to CVE data (if an SCA supply chain defect).
-
-Get atomic details for a specific Semgrep flaw
-- **get_project**: Search for a precise Semgrep project by exact repository name
-- **get_metrics**: Typically consumed to render executive security dashboards.
-
-Get AppSec metrics and compliance stats for Semgrep
-- **list_rules**: The rules are structured YAML definitions that search for semantic anti-patterns in codebases (e.g., unparameterized SQL queries, hardcoded AWS keys).
-
-List Semgrep semantic rules deployed globally
 - **list_projects**: Projects maintain a link between developers and static security scan outputs over time.
 
 List Semgrep projects (repositories) monitored in a deployment
+- **list_rules**: The rules are structured YAML definitions that search for semantic anti-patterns in codebases (e.g., unparameterized SQL queries, hardcoded AWS keys).
+
+List Semgrep semantic rules deployed globally
 - **update_finding_status**: Valid states generally include active, fixed, false_positive, ignored, mitigated. Resolving findings through this API cleans up the developer experience when managing compliance queues.
 
 Mark a Semgrep finding state (e.g., fixed, false positive)

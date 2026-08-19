@@ -33,12 +33,12 @@ Connect your conversational assistant directly to the **Retool** ecosystem. This
 
 ## Available Tools (7)
 - **list_resources**: Lists all data resources configured in Retool
-- **get_app**: Retrieves details for a specific Retool application
 - **list_apps**: Lists all applications in the Retool organization
 - **list_folders**: Lists all folders in the Retool workspace
 - **list_groups**: Lists all permission groups
-- **list_users**: Lists all users in the Retool organization
 - **list_workflows**: Lists all Retool Workflows
+- **get_app**: Retrieves details for a specific Retool application
+- **list_users**: Lists all users in the Retool organization
 
 
 ## 💬 Prompt Examples

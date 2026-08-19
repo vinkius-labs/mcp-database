@@ -37,21 +37,24 @@ Essential for **AI application developers**, **agent architects**, **platform en
 
 
 ## Available Tools (11)
-- **get_connection**: Requires namespace and connection ID. Use this to review connection details or troubleshoot connectivity issues.
-
-Get detailed information about a specific MCP connection
 - **get_server_analytics**: Requires the server qualified name. Use this to monitor server adoption, identify usage trends, or troubleshoot performance issues.
 
 Get usage analytics for a specific MCP server
+- **get_server_resources**: Returns resource URIs, names, descriptions, and MIME types. Requires the server qualified name. Use this to understand what data the server provides read access to.
+
+List all resources exposed by a specific MCP server
+- **create_service_token**: The token has limited permissions defined by the policy (namespaces, resources, operations, metadata, TTL). Returns the token string. Use this to provide secure, time-limited access to MCP servers without exposing your main API key.
+
+Generate a scoped service token for frontend/agent access to MCP servers
+- **get_connection**: Requires namespace and connection ID. Use this to review connection details or troubleshoot connectivity issues.
+
+Get detailed information about a specific MCP connection
 - **get_server_details**: Requires the qualified name (e.g., "smithery/hello-world" or "github/github") from search_servers results. Use this to review server capabilities before connecting.
 
 Get detailed information about a specific MCP server from the Smithery registry
 - **get_server_prompts**: Returns prompt names, descriptions, and argument definitions. Requires the server qualified name. Use this to discover reusable prompt workflows available from the server.
 
 List all prompt templates exposed by a specific MCP server
-- **get_server_resources**: Returns resource URIs, names, descriptions, and MIME types. Requires the server qualified name. Use this to understand what data the server provides read access to.
-
-List all resources exposed by a specific MCP server
 - **get_server_tools**: Returns tool names, descriptions, input schemas, and annotations. Requires the server qualified name. Use this to understand what actions the server can perform before connecting it to your agents.
 
 List all tools exposed by a specific MCP server
@@ -61,15 +64,12 @@ List all connections for a specific MCP server namespace
 - **search_servers**: Returns matching servers with qualified names, descriptions, verification status, user counts, and deployment info. Use optional filters to narrow by namespace, verified status, or deployment state. Results include pagination metadata. Use this as the first step to discover available MCP servers before connecting or installing them.
 
 Search the Smithery registry for MCP servers by name, description, or tags
-- **create_connection**: Smithery handles OAuth, tokens, and sessions automatically. Requires the server namespace and connection configuration (mcpUrl, optional headers, metadata). Returns the connection ID, status, and server info. Use this to integrate MCP servers into your applications without managing authentication complexity.
-
-Create a new connection to an MCP server via Smithery Connect
-- **create_service_token**: The token has limited permissions defined by the policy (namespaces, resources, operations, metadata, TTL). Returns the token string. Use this to provide secure, time-limited access to MCP servers without exposing your main API key.
-
-Generate a scoped service token for frontend/agent access to MCP servers
 - **delete_connection**: This action cannot be undone. Requires namespace and connection ID. Use this to clean up unused connections or revoke access.
 
 Remove an MCP server connection
+- **create_connection**: Smithery handles OAuth, tokens, and sessions automatically. Requires the server namespace and connection configuration (mcpUrl, optional headers, metadata). Returns the connection ID, status, and server info. Use this to integrate MCP servers into your applications without managing authentication complexity.
+
+Create a new connection to an MCP server via Smithery Connect
 
 
 ## 💬 Prompt Examples

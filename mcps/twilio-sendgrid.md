@@ -33,32 +33,32 @@ Unleash your AI agent over **Twilio SendGrid's** trusted enterprise email platfo
 
 
 ## Available Tools (16)
-- **search_contact_by_email**: Returns full contact profile including custom fields, lists, and segments.
-
-Look up a marketing contact by email address
 - **get_delivery_stats**: Use YYYY-MM-DD format.
 
 Get globalThis email delivery statistics
 - **list_blocked_emails**: Different from bounces — blocks are typically temporary server-level rejections.
 
 List all blocked email addresses
-- **dispatch_email**: Ensure you use a verified sender email in "from_email".
-
-Sends an email via SendGrid SMTP relay
-- **list_single_sends**: List all marketing single-send campaigns
-- **delete_bounce**: This action is destructive on the suppression record.
-
-Removes an email from the bounce suppression list
-- **list_bounces**: Useful for list cleaning.
-
-Lists all bounced email records
-- **get_template_details**: Retrieves details for a specific template
+- **list_dynamic_templates**: List all Dynamic Transactional Templates
 - **list_marketing_contacts**: Lists all marketing contacts
-- **list_marketing_lists**: Lists all marketing contact lists
 - **list_verified_senders**: Only verified senders can be used in the from_email field.
 
 List all verified sender identities
-- **list_dynamic_templates**: List all Dynamic Transactional Templates
+- **search_contact_by_email**: Returns full contact profile including custom fields, lists, and segments.
+
+Look up a marketing contact by email address
+- **dispatch_email**: Ensure you use a verified sender email in "from_email".
+
+Sends an email via SendGrid SMTP relay
+- **get_template_details**: Retrieves details for a specific template
+- **list_single_sends**: List all marketing single-send campaigns
+- **list_bounces**: Useful for list cleaning.
+
+Lists all bounced email records
+- **delete_bounce**: This action is destructive on the suppression record.
+
+Removes an email from the bounce suppression list
+- **list_marketing_lists**: Lists all marketing contact lists
 - **delete_spam_report**: Use with caution — sending to users who report spam can damage your sender reputation.
 
 Remove an email from the spam report suppression list
