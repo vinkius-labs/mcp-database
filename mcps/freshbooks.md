@@ -38,16 +38,16 @@ Connect your **FreshBooks** account to any AI agent to automate your small busin
 ## Available Tools (12)
 - **list_invoices**: List sales invoices
 - **list_expense_categories**: List categories
-- **list_clients**: List clients
-- **list_expenses**: List tracked expenses
-- **list_payments**: List invoice payments
-- **list_active_projects**: List projects
 - **list_project_tasks**: List tasks
 - **list_time_entries**: List time logs
 - **get_account_info**: Get business info
-- **get_client_details**: Get client metadata
 - **get_invoice_details**: Get invoice metadata
 - **get_my_identity**: Get user identity
+- **get_client_details**: Get client metadata
+- **list_active_projects**: List projects
+- **list_clients**: List clients
+- **list_expenses**: List tracked expenses
+- **list_payments**: List invoice payments
 
 
 ## 💬 Prompt Examples

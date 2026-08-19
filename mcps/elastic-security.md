@@ -52,12 +52,12 @@ Hard-delete a custom Elastic detection rule completely
 - **list_exceptions**: These lists logically bypass specific rules, preventing SIEM alerts from triggering on known-good administrative behavior like vulnerability scanners.
 
 List globalThis exception lists managing detection bypass logic
-- **get_rule**: Displays run intervals, severity assignment, index scopes, and explicit reference URLs matching threat intel reports.
-
-Get exact details, intervals, and query logic for a distinct Rule
 - **get_prepackaged_rules_status**: Identifies if the environment is lacking the latest official threat models targeting Windows, Linux, and Cloud environments.
 
 Check if official Elastic prepackaged rules need updates
+- **get_rule**: Displays run intervals, severity assignment, index scopes, and explicit reference URLs matching threat intel reports.
+
+Get exact details, intervals, and query logic for a distinct Rule
 - **list_detection_rules**: g., logs-endpoint*, winlogbeat*). Vital for mapping MITRE ATT&CK coverage against the Elastic schema.
 
 List all detection rules configured within the Elastic SIEM

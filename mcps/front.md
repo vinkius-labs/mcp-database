@@ -36,20 +36,20 @@ No more manual toggling between different communication channels. Your AI acts a
 
 
 ## Available Tools (12)
-- **reply_to_conversation**: Send a message
-- **get_contact_info**: Get contact details
 - **get_conversation_details**: Get conversation info
-- **get_api_status**: Check connection
 - **get_message_content**: Read message details
 - **list_active_channels**: ).
 
 List communication channels
-- **list_team_contacts**: List your contacts
-- **list_conversations**: List team conversations
-- **list_shared_inboxes**: List team inboxes
 - **list_conversation_messages**: Get message history
+- **list_shared_inboxes**: List team inboxes
+- **list_team_contacts**: List your contacts
+- **reply_to_conversation**: Send a message
 - **search_conversations_by_query**: Find conversations
 - **update_conversation_status**: Modify conversation
+- **get_api_status**: Check connection
+- **get_contact_info**: Get contact details
+- **list_conversations**: List team conversations
 
 
 ## 💬 Prompt Examples

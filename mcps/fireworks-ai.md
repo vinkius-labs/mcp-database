@@ -38,8 +38,8 @@ Connect your **Fireworks AI** account to any AI agent and take full control of y
 
 ## Available Tools (6)
 - **embed**: Generate embeddings using Fireworks AI
-- **list_models**: List Fireworks AI models
 - **image**: Generate an image using Fireworks AI
+- **list_models**: List Fireworks AI models
 - **chat**: Chat completion using Fireworks AI
 - **completion**: Text completion using Fireworks AI
 - **transcribe**: Transcribe audio via Fireworks AI

@@ -36,18 +36,18 @@ Connect your **Fireflies.ai** account to any AI agent and unlock the power of me
 
 
 ## Available Tools (12)
-- **add_to_live_meeting**: Invite Fireflies to a live meeting
-- **create_ask_fred_thread**: Ask a question to AskFred
 - **delete_transcript**: Delete a transcript
 - **get_analytics**: Get meeting analytics
 - **get_user**: Get user details
 - **list_ask_fred_threads**: List AskFred threads
 - **list_transcripts**: List recent transcripts
 - **list_users**: List team users
-- **update_meeting_title**: Rename a meeting
-- **list_active_meetings**: List meetings currently being recorded
 - **get_ask_fred_thread**: Get AskFred thread messages
 - **get_transcript**: Get transcript details
+- **add_to_live_meeting**: Invite Fireflies to a live meeting
+- **create_ask_fred_thread**: Ask a question to AskFred
+- **list_active_meetings**: List meetings currently being recorded
+- **update_meeting_title**: Rename a meeting
 
 
 ## 💬 Prompt Examples

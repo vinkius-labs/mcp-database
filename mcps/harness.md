@@ -37,17 +37,17 @@ No more manual navigating through complex DevOps dashboards. Your AI assistant a
 
 
 ## Available Tools (11)
-- **execute_pipeline**: Trigger the execution of a pipeline
-- **list_projects**: List all projects in the configured Harness organization
 - **list_secrets**: List secrets configured in a project
 - **get_audit_logs**: Retrieve platform audit logs
+- **execute_pipeline**: Trigger the execution of a pipeline
 - **get_execution_status**: Get status and step details for a specific pipeline execution
+- **list_executions**: List executions for a specific pipeline
+- **list_projects**: List all projects in the configured Harness organization
+- **list_services**: List services (microservices) defined in a project
 - **get_pipeline**: Get details and YAML for a specific pipeline
 - **list_connectors**: List infrastructure connectors (Git, Docker, K8s, etc.)
 - **list_environments**: List environments defined in a project
-- **list_executions**: List executions for a specific pipeline
 - **list_pipelines**: List pipelines within a specific project
-- **list_services**: List services (microservices) defined in a project
 
 
 ## 💬 Prompt Examples

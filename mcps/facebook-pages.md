@@ -35,8 +35,8 @@ Connect your **Facebook Pages** account to any AI agent and take full control of
 
 ## Available Tools (12)
 - **get_page_info**: Get basic info for the Facebook Page
-- **get_post_details**: Get details for a specific post
 - **get_page_insights**: Get performance insights for the Facebook Page
+- **get_post_details**: Get details for a specific post
 - **delete_post**: Delete a post from the Facebook Page
 - **get_me**: Get current token identity info (Page info)
 - **get_page_settings**: Get settings for the Facebook Page

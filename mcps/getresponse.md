@@ -36,18 +36,18 @@ No more manual subscriber lookups or complex campaign navigation. Your AI acts a
 
 
 ## Available Tools (12)
-- **add_new_subscriber**: Register new contact
-- **remove_subscriber**: Delete a contact
 - **get_api_status**: Check connection
-- **get_list_details**: Get campaign info
 - **get_contact_details**: Get subscriber info
+- **list_contact_fields**: Get custom fields
+- **add_new_subscriber**: Register new contact
+- **get_list_details**: Get campaign info
 - **list_active_sequences**: Get autoresponders
 - **list_marketing_lists**: List email campaigns
+- **remove_subscriber**: Delete a contact
 - **list_email_contacts**: List your subscribers
-- **list_contact_fields**: Get custom fields
-- **list_published_pages**: Get landing pages
-- **list_active_webhooks**: Get event configs
 - **find_contact_by_email**: Search subscribers
+- **list_active_webhooks**: Get event configs
+- **list_published_pages**: Get landing pages
 
 
 ## 💬 Prompt Examples

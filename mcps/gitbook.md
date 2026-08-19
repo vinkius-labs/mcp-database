@@ -39,12 +39,12 @@ Connect your **GitBook** account to any AI agent and take full control of your t
 ## Available Tools (8)
 - **list_organizations**: List all organizations
 - **list_spaces**: List spaces in an organization
-- **get_space**: Get space details
 - **list_pages**: List pages in a space
-- **get_page**: Get page content
-- **search_content**: Search content in a space
 - **list_collections**: List collections in an organization
+- **search_content**: Search content in a space
 - **get_me**: Get authenticated user info
+- **get_page**: Get page content
+- **get_space**: Get space details
 
 
 ## 💬 Prompt Examples

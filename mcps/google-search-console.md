@@ -43,9 +43,9 @@ Stop wrestling with the Search Console UI. Your AI agent acts as your dedicated 
 - **inspect_url**: Inspect the index status of a specific URL
 - **list_sitemaps**: List submitted sitemaps for a site
 - **list_sites**: List verified sites in Search Console
-- **query_search_analytics**: Query search traffic data
 - **submit_sitemap**: Submit a new sitemap
 - **add_site**: Add a site to Search Console
+- **query_search_analytics**: Query search traffic data
 
 
 ## 💬 Prompt Examples

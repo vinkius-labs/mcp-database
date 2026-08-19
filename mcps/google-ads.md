@@ -38,15 +38,15 @@ Stop wrestling with complex reporting dashboards. Your AI agent acts as your ded
 
 ## Available Tools (12)
 - **get_account_summary**: Get an overview of the account performance
-- **get_campaign_details**: Get detailed settings for a campaign
-- **get_campaign_report**: Fetch performance metrics for campaigns
-- **list_accessible_customers**: List accessible Google Ads customer accounts
 - **list_ad_groups**: List ad groups within a campaign
-- **list_campaigns**: List all Google Ads campaigns
-- **get_ad_performance**: Get performance metrics for ads in an ad group
-- **get_keyword_performance**: Get performance metrics for keywords in an ad group
 - **list_ads**: List ads within an ad group
 - **list_budgets**: List account budgets
+- **get_ad_performance**: Get performance metrics for ads in an ad group
+- **get_campaign_details**: Get detailed settings for a campaign
+- **get_campaign_report**: Fetch performance metrics for campaigns
+- **get_keyword_performance**: Get performance metrics for keywords in an ad group
+- **list_accessible_customers**: List accessible Google Ads customer accounts
+- **list_campaigns**: List all Google Ads campaigns
 - **search_keywords**: Search for keywords and their performance
 - **get_change_status**: Check recent changes in the account
 

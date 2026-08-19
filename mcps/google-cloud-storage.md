@@ -37,17 +37,17 @@ No more manual navigation through the GCP Console for routine file checks. Your 
 
 
 ## Available Tools (12)
-- **copy_object**: Copy an object within or between buckets
 - **delete_object**: Remove an object from a bucket
 - **get_bucket_iam**: Get IAM policy for a bucket
-- **get_bucket_metadata**: Get metadata for a specific bucket
 - **get_object_metadata**: Get metadata for a specific object (file)
 - **get_project_service_account**: Check the storage service account for the project
 - **list_bucket_acl**: Check bucket permissions
 - **list_buckets**: List all buckets in the project
-- **list_hmac_keys**: List HMAC keys for a service account
 - **list_object_acl**: Check permissions for a specific object
 - **list_objects**: List objects within a bucket
+- **copy_object**: Copy an object within or between buckets
+- **get_bucket_metadata**: Get metadata for a specific bucket
+- **list_hmac_keys**: List HMAC keys for a service account
 - **upload_object**: Upload a new file to a bucket
 
 

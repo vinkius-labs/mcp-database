@@ -36,17 +36,17 @@ Connect your **Guru** (Getguru) workspace to any AI agent to automate your knowl
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Check connection
-- **create_knowledge_card**: Create new card
 - **delete_knowledge_card**: Remove a card
 - **get_card_details**: Get card content
-- **get_collection_details**: Get collection metadata
+- **verify_api_connection**: Check connection
 - **list_knowledge_boards**: List boards
 - **list_knowledge_cards**: List knowledge cards
-- **list_knowledge_collections**: List all collections
-- **list_access_groups**: List user groups
 - **list_workspace_members**: List team members
 - **search_knowledge_base**: Search all cards
+- **create_knowledge_card**: Create new card
+- **get_collection_details**: Get collection metadata
+- **list_access_groups**: List user groups
+- **list_knowledge_collections**: List all collections
 - **update_knowledge_card**: Modify a card
 
 
