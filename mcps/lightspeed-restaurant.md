@@ -21,27 +21,36 @@ Connect your **Lightspeed Restaurant** to any AI agent — the premium POS for m
 - **Employees** — Staff roster, roles, clock status, and performance
 
 
-## Available Tools (10)
+## Available Tools (13)
+- **list_payment_methods**: ).
+
+List payment methods
 - **get_business**: Get restaurant info
+- **get_sales_report**: "from" is required ISO 8601 (e.g. 2026-08-01T00:00:00); "to" defaults to now. Max range 365 days. Use for weekly/monthly reports.
+
+Get sales for a date range
+- **list_menus**: ) with their IDs. Use before drilling into items.
+
+List menus
+- **list_shifts**: "Who worked yesterday and what tips did they declare?"
+
+List staff shifts
 - **list_menu_items**: For menu engineering.
 
 List menu items
-- **list_categories**: With item counts and display order.
+- **list_categories**: ) — the K-Series equivalent of menu categories.
 
-List menu categories
-- **list_orders**: "What sold in the last hour?"
+List accounting groups
+- **list_orders**: "What tables have open tabs right now?"
 
-List restaurant orders
-- **get_order**: Get order details
+List open checks
+- **get_order**: Get check details
 - **list_floors**: With table count and capacity.
 
 List floor plans
 - **list_tables**: List tables
-- **list_employees**: List employees
-- **list_payments**: List payments
-- **get_revenue_report**: The manager daily report.
-
-Get revenue report
+- **list_employees**: List POS users
+- **get_revenue_report**: Get daily sales report
 
 
 ## 💬 Prompt Examples
@@ -59,10 +68,10 @@ Here are some examples of how you can interact with the **Lightspeed Restaurant*
 ---
 
 **👤 You:**
-> "Update the price of the Margherita Pizza to $18."
+> "List all menu items with their prices."
 
 **🤖 AI Agent:**
-> I have updated the price of the Margherita Pizza in the dinner menu from $16 to $18. The change is now synced across all active POS terminals.
+> Here are your menu items: Margherita Pizza $16, Caesar Salad $11, House Burger $14, Tiramisu $8. Would you like them grouped by accounting group?
 
 ---
 

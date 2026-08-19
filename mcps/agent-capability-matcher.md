@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [optimization](../categories/optimization.md)
+**Category:** [ai-agents](../categories/ai-agents.md)
 
-Aligns AI agents to tasks using weighted capability scoring.
+Optimizes task assignment to agents using capability matching and load balancing.
 
 ## Description
-This MCP server provides a deterministic engine to resolve delegation ambiguity in multi-agent frameworks. It calculates a capability score by combining skill keyword overlap and tool coverage. Use `query_agent_matches` to rank all available agents, `verify_capability_gap` to audit specific missing requirements, or `calculate_match_metrics` to retrieve raw mathematical components of a match.
+This MCP server provides deterministic bipartite matching to connect tasks with the most suitable agents. It uses strategies like greedy, hungarian, and priority-weighted to ensure tasks are assigned to agents possessing all required capabilities while maintaining optimal workload distribution. Use `match_tasks` to perform assignments, `validate_system_health` to monitor unassigned ratios and agent loads, and `get_capability_stats` to analyze skill coverage across your agent pool.
 
 
 ## Available Tools (3)
-- **calculate_match_metrics**: Retrieve the raw mathematical components of a match without the final weighted aggregation
-- **query_agent_matches**: Rank all available agents against a specific task to find the best candidate
-- **verify_capability_gap**: Perform a deep-dive check on a single agent to see exactly what is missing for a specific task
+- **get_capability_stats**: Provides a summary of capability coverage across the entire agent pool
+- **match_tasks**: Executes the core matching logic to pair tasks with agents based on a specific strategy
+- **validate_system_health**: Evaluates the quality of the matching result by checking against predefined operational thresholds
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides a deterministic engine to resolve delegation ambiguity 
 Here are some examples of how you can interact with the **Agent Capability Matcher** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Which agent is best suited for a task requiring 'data analysis' and 'python' tools?"
+> "Match these tasks to the available agents using the greedy strategy."
 
 **🤖 AI Agent:**
-> The best match is agent_001 with a capability score of 0.85.
+> Task 'Data Analysis' has been assigned to Agent 'Alpha' with a match score of 0.85.
 
 ---
 
 **👤 You:**
-> "Check the capability gaps for agent_alpha against a task requiring 'web searching'."
+> "Check the current health of the matching system."
 
 **🤖 AI Agent:**
-> Agent_alpha is missing the 'web searching' skill.
+> The system is healthy. Unassigned task ratio is 5% and all agent loads are below 95%.
 
 ---
 
 **👤 You:**
-> "Get the raw metrics for agent_beta against the current task."
+> "Show me the capability distribution for all agents."
 
 **🤖 AI Agent:**
-> The skill overlap ratio is 0.5 and the tool coverage ratio is 1.0.
+> There are 12 unique capabilities. 'Python' is possessed by 8 agents, and 'Data Science' is possessed by 5 agents.
 
 
 ## ❓ FAQ
 
-**Q: How is the capability score calculated?**
-The score is a weighted combination: 60% for skill keyword overlap (Jaccard similarity) and 40% for tool coverage ratio.
+**Q: How does the matching logic work?**
+The system uses the `match_tasks` tool to pair tasks with agents. An agent is only eligible if they possess every capability required by the task. The match score is then calculated based on capability alignment and current agent load.
 
-**Q: Can I see exactly what an agent is missing?**
-Yes, by using the `verify_capability_gap` tool, you can retrieve a list of specific missing skills and tools for a given agent profile.
+**Q: How can I check if my agent pool is overloaded?**
+You can use the `validate_system_health` tool. It flags the system as unhealthy if more than 20% of tasks are unassigned or if any agent's load exceeds 95%.
 
-**Q: What happens if no agents match the task?**
-The system handles empty profiles or requirements gracefully, returning empty results or zero scores without errors.
+**Q: What are the available matching strategies?**
+The server supports three strategies: GREEDY for fast local optimization, HUNGARIAN for global optimal matching, and PRIORITY_WEIGHTED to respect task importance.
 
 
 ## Installation & Usage

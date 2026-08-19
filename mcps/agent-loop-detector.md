@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [observability](../categories/observability.md)
+**Category:** [analysis](../categories/analysis.md)
 
-Detects cyclic delegation and repetitive conversation loops in multi-agent systems.
+Identifies infinite conversation cycles and deadlocks in agentic workflows.
 
 ## Description
-Agent Loop Detector provides specialized monitoring for multi-agent orchestration frameworks like CrewAI, AutoGen, and LangGraph. It identifies infinite loops by creating a deterministic fingerprint for every agent turn (agent_id, action_type, and target_id). When a specific fingerprint repeats beyond a configurable threshold, the system flags the loop, calculates the cycle length, and identifies the trapped agents. Use `check_for_loops` to detect cycles, `get_fingerprint_analysis` to view fingerprint frequency, and `calculate_current_cycle_metrics` to analyze the intensity and purity of a detected loop.
+This MCP server provides a deterministic analysis engine to identify infinite conversation cycles and deadlocks within agentic workflows. By analyzing the conversation state graph, it uses Tarjan's algorithm to find all strongly connected components (SCCs). It identifies loop entry points, calculates loop length, and estimates the iterations required to escape a cycle. It also flags critical deadlocks where no exit conditions exist and calculates potential resource exhaustion. Use `analyze_conversation_cycles` to find repeating patterns, `calculate_deadlock_risk` to assess the probability of getting stuck, and `estimate_recovery_path` to find the shortest way out of a loop.
 
 
 ## Available Tools (3)
-- **calculate_current_cycle_metrics**: Analyzes a specific detected cycle to provide detailed insights into the nature of the loop
-- **check_for_loops**: Determines if the current sequence of agent actions has entered an infinite loop or repetitive cycle
-- **get_fingerprint_analysis**: Provides a breakdown of how many times each unique action fingerprint has occurred in the current history
+- **analyze_conversation_cycles**: Identifies all repeating patterns and cycles within the provided conversation state graph
+- **estimate_recovery_path**: Predicts how many more steps are required to break a cycle if an exit condition is reachable
+- **calculate_deadlock_risk**: Determines the mathematical probability and severity of a conversation becoming stuck
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ Agent Loop Detector provides specialized monitoring for multi-agent orchestratio
 Here are some examples of how you can interact with the **Agent Loop Detector** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check if my agents are stuck in a loop."
+> "Analyze this state graph for any infinite loops: [{'agentId': 'A', 'action': 'step', 'nextAgentId': 'B', 'condition': 'true'}, {'agentId': 'B', 'action': 'step', 'nextAgentId': 'A', 'condition': 'true'}] with max iterations 10 and current iteration 0."
 
 **🤖 AI Agent:**
-> loop_detected: true, cycle_length: 3, trapped_agent_ids: ['agent_a', 'agent_b']
+> A cycle was detected between agents A and B with a loop length of 2. This is a critical deadlock as no exit condition is present.
 
 ---
 
 **👤 You:**
-> "How many times has the current action fingerprint occurred?"
+> "What is the deadlock risk if agent A and B are in a loop but agent B has an exit condition to agent C?"
 
 **🤖 AI Agent:**
-> The fingerprint 'agent_1_call_agent_2' has occurred 4 times.
+> The deadlock risk is low because agent B possesses a valid exit condition to transition out of the cycle.
 
 ---
 
 **👤 You:**
-> "Analyze the metrics for the detected cycle."
+> "Find the shortest path to exit the loop from agent A to target agent C."
 
 **🤖 AI Agent:**
-> is_pure_loop: true, loop_intensity: 0.45
+> The shortest path to exit the loop is: A -> B -> C.
 
 
 ## ❓ FAQ
 
-**Q: How does the loop detection work?**
-The system generates a unique fingerprint for each agent action. If the same fingerprint appears multiple times based on your threshold, a loop is flagged.
+**Q: How does the tool detect loops?**
+The tool uses Tarjan's algorithm to identify strongly connected components (SCCs) within the conversation state graph. Any SCC with more than one agent or a self-loop is identified as a cycle.
 
-**Q: What is a deterministic fingerprint?**
-It is a unique identifier created by combining the agent ID, the action type, and the target ID of a specific turn.
+**Q: What is a critical deadlock?**
+A critical deadlock occurs when a cycle of agents is identified where none of the agents in the cycle have a valid exit condition to transition to an agent outside that cycle.
 
-**Q: Can I adjust the sensitivity of detection?**
-Yes, you can use the `maxRepeatThreshold` parameter in the `check_for_loops` tool to define how many repetitions trigger a detection.
+**Q: Can I use this to prevent resource exhaustion?**
+Yes. By using `analyze_conversation_cycles`, you can calculate the estimated resource exhaustion time based on loop length and maximum allowed iterations.
 
 
 ## Installation & Usage

@@ -14,9 +14,9 @@ This MCP server provides deterministic calculations for AWS SNS architectures. U
 
 
 ## Available Tools (3)
-- **analyze_delivery_resilience**: Calculate the impact of SQS settings on message availability and retry behavior
 - **calculate_fanout_and_limits**: Calculate total fanout and verify if the message payload adheres to AWS physical constraints
 - **evaluate_policy_and_throughput**: Assess if the message filtering logic and topic type are compatible with the required scale
+- **analyze_delivery_resilience**: Calculate the impact of SQS settings on message availability and retry behavior
 
 
 ## 💬 Prompt Examples

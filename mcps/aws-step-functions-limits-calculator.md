@@ -14,10 +14,10 @@ This MCP server provides deterministic tools to evaluate AWS Step Functions stat
 
 
 ## Available Tools (4)
-- **evaluate_performance_recommendations**: Compares the current configuration against AWS best practices and soft limits to prevent performance degradation
 - **calculate_activity_timeout_range**: Determines the valid window for activity task timeouts
 - **calculate_workflow_capacities**: Calculates the available or allowed capacities for data payloads, duration, and state naming based on the workflow mode
 - **check_definition_compliance**: Validates if the provided state machine definition and structure exceed hard AWS service limits
+- **evaluate_performance_recommendations**: Compares the current configuration against AWS best practices and soft limits to prevent performance degradation
 
 
 ## 💬 Prompt Examples

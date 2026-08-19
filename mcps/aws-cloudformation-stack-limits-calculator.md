@@ -14,9 +14,9 @@ This MCP server provides deterministic calculations for AWS CloudFormation servi
 
 
 ## Available Tools (4)
+- **check_template_compliance**: Determines if a provided template configuration stays within standard AWS service quotas
 - **assess_deployment_health**: Provides recommendations on nested depth and change set management to ensure deployment stability
 - **calculate_stack_capacities**: Calculates specific limits for parameters, outputs, and policies based on standard stack constraints
-- **check_template_compliance**: Determines if a provided template configuration stays within standard AWS service quotas
 - **evaluate_stack_set_limits**: Calculates limits for multi-account deployments using Stack Sets
 
 

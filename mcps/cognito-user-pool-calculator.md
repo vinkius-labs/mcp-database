@@ -14,10 +14,10 @@ Plan your AWS Cognito architecture with precision. This MCP server provides dete
 
 
 ## Available Tools (4)
+- **estimate_security_profile**: Estimate the data footprint and security configuration of the authentication flow
 - **estimate_sms_throughput**: Estimate daily messaging limits for the configured user base
 - **calculate_pool_capacity**: Calculate how many resources will fit within a single Cognito user pool
 - **calculate_resource_usage**: Check if custom attributes and Lambda triggers stay within Cognito limits
-- **estimate_security_profile**: Estimate the data footprint and security configuration of the authentication flow
 
 
 ## 💬 Prompt Examples

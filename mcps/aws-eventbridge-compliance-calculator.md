@@ -14,8 +14,8 @@ This MCP server provides a deterministic way to validate AWS EventBridge archite
 
 
 ## Available Tools (3)
-- **calculate_governance_and_resiliency**: Checks the configuration against recommended best practices for storage, schema management, and error handling
 - **calculate_event_compliance**: Determines if a specific event configuration adheres to hard AWS service limits
+- **calculate_governance_and_resiliency**: Checks the configuration against recommended best practices for storage, schema management, and error handling
 - **calculate_routing_capacity**: Evaluates the capacity of event buses and the routing capabilities of rules
 
 

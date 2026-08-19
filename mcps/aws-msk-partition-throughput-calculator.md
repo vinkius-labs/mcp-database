@@ -15,8 +15,8 @@ This MCP server provides precise sizing calculations for AWS Managed Streaming f
 
 ## Available Tools (3)
 - **calculate_network_and_limits**: Analyzes network throughput requirements and validates cluster-wide architectural limits
-- **evaluate_broker_capacity**: Checks if the proposed partition count is physically supported by the chosen AWS MSK instance types
 - **calculate_partition_and_storage_needs**: Determines foundational scaling requirements (partitions and storage) based on throughput and time
+- **evaluate_broker_capacity**: Checks if the proposed partition count is physically supported by the chosen AWS MSK instance types
 
 
 ## 💬 Prompt Examples
