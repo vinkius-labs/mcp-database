@@ -34,18 +34,18 @@ Connect your **Hootsuite** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **list_social_profiles**: List all connected social profiles
 - **get_media_upload_url**: Get a media upload URL
 - **get_social_profile**: Get social profile details
 - **list_messages**: List scheduled and sent messages
+- **list_social_profiles**: List all connected social profiles
 - **create_message**: Optionally schedule for a future time (ISO 8601).
 
 Schedule a social media post
 - **delete_message**: Delete a scheduled message
+- **get_me**: Get authenticated user info
+- **list_members**: List organization members
 - **list_organizations**: List all organizations
 - **list_teams**: List teams in an organization
-- **list_members**: List organization members
-- **get_me**: Get authenticated user info
 
 
 ## 💬 Prompt Examples

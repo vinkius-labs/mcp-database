@@ -35,20 +35,20 @@ Connect your **Mailjet** account to any AI agent and manage email operations thr
 
 
 ## Available Tools (12)
-- **subscribe_to_list**: Add contact to list
-- **get_account_analytics**: Check account stats
 - **get_template_details**: Get template content
 - **list_contact_groups**: List contact lists
-- **list_sender_domains**: Check sending domains
 - **list_email_templates**: List saved templates
 - **send_plain_email**: Send transactional email
-- **send_template_email**: Send using template
-- **create_new_contact**: Add email to contacts
-- **list_sent_campaigns**: List past campaigns
+- **subscribe_to_list**: Add contact to list
 - **list_all_contacts**: List audience contacts
+- **create_new_contact**: Add email to contacts
+- **get_account_analytics**: Check account stats
 - **get_campaign_performance**: ) for a specific campaign ID.
 
 Check campaign stats
+- **list_sender_domains**: Check sending domains
+- **list_sent_campaigns**: List past campaigns
+- **send_template_email**: Send using template
 
 
 ## 💬 Prompt Examples

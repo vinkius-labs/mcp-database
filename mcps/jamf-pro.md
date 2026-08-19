@@ -14,15 +14,6 @@ Empower your AI agents to manage your Apple ecosystem with Jamf Pro. This MCP se
 
 
 ## Available Tools (10)
-- **get_computer**: Includes disk encryption status, installed apps, and user info. Use this for detailed Mac auditing.
-
-Retrieves details for a specific computer
-- **list_categories**: Useful for navigating the management hierarchy.
-
-Lists all management categories
-- **list_computers**: Includes computer names, IDs, and serial numbers. Essential for auditing the Mac fleet.
-
-Lists all managed computers
 - **list_departments**: Use this to analyze device distribution by business unit.
 
 Lists all configured departments
@@ -32,6 +23,15 @@ Lists all managed mobile devices
 - **list_packages**: pkg, .dmg) available in the Jamf Pro distribution points. Useful for auditing available software deployments.
 
 Lists all software packages
+- **get_computer**: Includes disk encryption status, installed apps, and user info. Use this for detailed Mac auditing.
+
+Retrieves details for a specific computer
+- **list_categories**: Useful for navigating the management hierarchy.
+
+Lists all management categories
+- **list_computers**: Includes computer names, IDs, and serial numbers. Essential for auditing the Mac fleet.
+
+Lists all managed computers
 - **get_mobile_device**: Includes OS version, security status, and assigned user. Use this for deep investigation of a specific mobile asset.
 
 Retrieves details for a specific mobile device

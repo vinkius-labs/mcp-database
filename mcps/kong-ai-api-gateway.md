@@ -35,24 +35,24 @@ Connect your **Kong API Gateway** instance to any AI agent and take full control
 
 
 ## Available Tools (10)
-- **list_consumers**: List all Consumer profiles registered in Kong
 - **create_consumer_key**: Generate an API Key credential for a Kong Consumer
-- **create_ai_plugin**: Frequently used for enabling the `ai-proxy` plugin for LLM routing and key encapsulation.
-
-Apply a new Plugin (like AI Proxy) to a specific Service
 - **create_route**: Create a new Route to expose a Service in Kong
 - **create_service**: The payload must define the upstream URL, name, and protocol information.
 
 Create a new backend Service in Kong
 - **delete_plugin**: Delete and permanently remove a Plugin from the Kong Gateway
+- **list_consumers**: List all Consumer profiles registered in Kong
+- **list_routes**: List all routing rules configured in the Kong API Gateway
+- **create_ai_plugin**: Frequently used for enabling the `ai-proxy` plugin for LLM routing and key encapsulation.
+
+Apply a new Plugin (like AI Proxy) to a specific Service
 - **list_plugins**: g., Rate Limiting, AI Proxy, Key Auth) currently configured globally or scoped to specific Services/Routes.
 
 List all enabled Plugins on the Kong Gateway
-- **list_routes**: List all routing rules configured in the Kong API Gateway
+- **list_services**: List all Services registered in the Kong API Gateway
 - **update_plugin**: Useful for adjusting rate limits dynamically or swapping AI model providers under heavy load.
 
 Update the configuration of an existing Kong Plugin
-- **list_services**: List all Services registered in the Kong API Gateway
 
 
 ## 💬 Prompt Examples

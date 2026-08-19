@@ -35,33 +35,33 @@ Connect your **Lacework (FortiCNAPP)** account to any AI agent and take full con
 
 
 ## Available Tools (10)
-- **get_alert**: Extracts precisely what baseline behavior was deviated from, providing deep contextual metadata such as explicit AWS Accounts involved, offending Container Image SHAs, and correlated external IP anomalies.
-
-Get exact behavioral payloads and telemetry for an Alert
 - **list_host_vulnerabilities**: Identifies running processes strictly matched against Critical or High CVEs (e.g., Log4j, Polkit) directly active inside EC2 or GCE instances.
 
 List known vulnerabilities executing natively on Cloud Hosts/VMs
 - **search_alerts**: Fetches events mapping to anomalous Kubernetes executions, AWS IAM brute-forcing attempts, and massive container network exfiltrations spanning the specified time filter.
 
 Search Cloud Security alerts dynamically across Lacework
-- **search_cve_exposure**: Directly filters the entire cloud infrastructure footprint determining exactly which specific nodes (Machines) are currently vulnerable to the designated CVE (e.g. "CVE-2026-0001").
-
-Search all integrated Machines/Instances for a specific CVE
-- **list_security_policies**: Confirms whether Lacework will alert directly if an engineer violates structural norms (e.g., exposing port 22 directly to 0.0.0.0/0).
-
-List all globalThis Cloud Security Policies enforced by Lacework
 - **list_lql_queries**: These extract precise cloud telemetry fields mapping user-defined compliance checks directly against the underlying dataset.
 
 List all Lacework Query Language (LQL) structures
-- **list_resource_groups**: Helps define what constitutes "Production" vs "Staging" in Policy evaluation engines.
+- **list_security_policies**: Confirms whether Lacework will alert directly if an engineer violates structural norms (e.g., exposing port 22 directly to 0.0.0.0/0).
 
-List logical Resource Groups managing Lacework architectures
+List all globalThis Cloud Security Policies enforced by Lacework
+- **search_cve_exposure**: Directly filters the entire cloud infrastructure footprint determining exactly which specific nodes (Machines) are currently vulnerable to the designated CVE (e.g. "CVE-2026-0001").
+
+Search all integrated Machines/Instances for a specific CVE
 - **execute_query**: Produces bespoke output matrices tracking API keys bypassing IAM logic, anomalous login patterns, or Kubernetes process spawn trees.
 
 Execute an LQL Threat Hunting Query on-demand
 - **list_container_vulnerabilities**: Examines ECR/DockerHub registries or direct cluster deployments for images carrying critical inherited CVEs at the filesystem level before CI/CD promotion blocks.
 
 List static image vulnerabilities detected in Container Registries
+- **get_alert**: Extracts precisely what baseline behavior was deviated from, providing deep contextual metadata such as explicit AWS Accounts involved, offending Container Image SHAs, and correlated external IP anomalies.
+
+Get exact behavioral payloads and telemetry for an Alert
+- **list_resource_groups**: Helps define what constitutes "Production" vs "Staging" in Policy evaluation engines.
+
+List logical Resource Groups managing Lacework architectures
 - **search_cloud_inventory**: Used to dynamically enumerate running instances, active networking perimeters, or unrestricted S3 buckets discovered by cross-account role polling.
 
 Query the real-time Lacework Cloud Control-Plane Asset Inventory

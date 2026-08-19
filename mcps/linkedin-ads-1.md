@@ -34,13 +34,13 @@ Connect **LinkedIn Ads** to your AI agent and manage your B2B advertising campai
 
 ## Available Tools (8)
 - **get_account_info**: Get ad account info
+- **enable_campaign**: Enable campaign
+- **get_campaign_analytics**: Get campaign analytics
 - **list_campaign_groups**: List campaign groups
 - **list_campaigns**: List campaigns
 - **list_creatives**: List ad creatives
-- **get_campaign_analytics**: Get campaign analytics
-- **pause_campaign**: Pause campaign
-- **enable_campaign**: Enable campaign
 - **get_account_analytics**: Get account analytics
+- **pause_campaign**: Pause campaign
 
 
 ## 💬 Prompt Examples

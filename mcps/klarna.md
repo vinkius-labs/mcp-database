@@ -35,17 +35,17 @@ Connect your **Klarna** merchant account to any AI agent to automate your e-comm
 
 
 ## Available Tools (8)
-- **capture_klarna_order**: Capture a formal order to trigger payment
 - **create_payment_session**: Requires order amount, currency, and order lines (items).
 
 Create a new Klarna payment session
 - **get_order_details**: Get details for a specific Klarna order
+- **update_order_shipping**: Update shipping information for an order
 - **get_payment_session**: Get details for an existing payment session
+- **capture_klarna_order**: Capture a formal order to trigger payment
 - **create_klarna_order**: Requires an authorization token.
 
 Place a formal order using an authorization token
 - **refund_klarna_order**: Refund a captured order
-- **update_order_shipping**: Update shipping information for an order
 - **cancel_authorized_order**: Cancel an authorized but uncaptured order
 
 

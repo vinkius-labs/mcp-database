@@ -33,26 +33,26 @@ Connect **Mercado Pago** to any AI agent and unlock Brazil's leading payment gat
 
 
 ## Available Tools (12)
+- **create_preference**: Create a checkout preference for redirection
+- **get_customer**: Get customer details
+- **get_preference**: Get details of a checkout preference
+- **refund_payment**: If amount is omitted, performs a full refund.
+
+Refund a payment partially or fully
 - **create_card**: Save a card for a customer
 - **create_customer**: Register a new customer
 - **create_payment**: Requires a valid card token (generated via SDK frontend). Payment methods: visa, master, amex, etc.
 
 Create a new payment using card or other methods
-- **create_preference**: Create a checkout preference for redirection
-- **get_customer**: Get customer details
-- **get_payment**: Get details of a specific payment by ID
-- **get_preference**: Get details of a checkout preference
 - **create_pix_payment**: Returns QR Code data for the user to scan and pay instantly.
 
 Create a Pix payment with QR Code
-- **refund_payment**: If amount is omitted, performs a full refund.
-
-Refund a payment partially or fully
+- **get_identification_types**: Get valid identification types (CPF, CNPJ, etc)
+- **get_payment**: Get details of a specific payment by ID
+- **list_payment_methods**: List all available payment methods for Brazil
 - **search_payments**: Useful for reconciliation and reporting.
 
 Search for payments with filters
-- **get_identification_types**: Get valid identification types (CPF, CNPJ, etc)
-- **list_payment_methods**: List all available payment methods for Brazil
 
 
 ## 💬 Prompt Examples

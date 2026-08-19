@@ -31,18 +31,18 @@ The **Increase MCP Server** connects AI to a physical, fully compliant commercia
 
 
 ## Available Tools (12)
+- **increase_list_cards**: Sweep the active array of issued Cards
+- **increase_list_transactions**: Financial history extraction (Booked)
+- **increase_simulate_inbound_ach**: Simulate receiving an ACH inbound (SANDBOX ONLY)
+- **increase_simulate_inbound_wire**: Simulate receiving a Wire inbound (SANDBOX ONLY)
 - **increase_create_account**: Spin up a new Bank Account programmatically
 - **increase_create_ach**: Push an outbound ACH transfer to any US Bank
 - **increase_create_card**: Issue a physical/virtual debit card attached to an account
 - **increase_create_routing_number**: Generate new ABA routing & account number data
 - **increase_create_wire**: Send a same-day US Wire transfer
 - **increase_get_balance**: Fetch realtime ledger balance for a specific account
-- **increase_list_cards**: Sweep the active array of issued Cards
-- **increase_list_transactions**: Financial history extraction (Booked)
-- **increase_list_transfers**: Audit outbound transfers
-- **increase_simulate_inbound_ach**: Simulate receiving an ACH inbound (SANDBOX ONLY)
-- **increase_simulate_inbound_wire**: Simulate receiving a Wire inbound (SANDBOX ONLY)
 - **increase_list_accounts**: List all sub-accounts under your charter
+- **increase_list_transfers**: Audit outbound transfers
 
 
 ## 💬 Prompt Examples

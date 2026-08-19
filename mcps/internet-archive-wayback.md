@@ -40,36 +40,36 @@ The Wayback Machine is a non-profit service preserving internet history — no a
 
 
 ## Available Tools (10)
+- **check_availability**: Returns the closest (most recent) snapshot timestamp and availability status. Use this to verify if a page is preserved and find its latest archived version.
+
+Check if a URL has been archived by the Wayback Machine
 - **get_captures_by_mime_type**: Common types: "text/html" (web pages), "image/jpeg" (JPEG images), "application/pdf" (PDFs), "text/css" (stylesheets). Use this to find specific resource types in the archive.
 
 Get captures filtered by MIME type
 - **get_captures_by_status**: Common codes: "200" (OK), "404" (Not Found), "301" (Redirect), "500" (Server Error). Use this to analyze site availability patterns over time.
 
 Get captures filtered by HTTP status code
-- **get_captures_by_year**: Use this to analyze archival frequency or find snapshots from a particular year. Year should be 4-digit format (e.g., "2020").
+- **get_latest_capture**: Includes timestamp, status code, and URL. Use this to find the newest preserved version of a page.
 
-Get captures filtered by a specific year
+Get the most recent capture of a URL
 - **get_cdx_captures**: Each capture includes timestamp, original URL, MIME type, HTTP status code, and file size. Use this for comprehensive archival analysis. Optional limit parameter controls maximum results.
 
 Get detailed capture history from the CDX server
-- **check_availability**: Returns the closest (most recent) snapshot timestamp and availability status. Use this to verify if a page is preserved and find its latest archived version.
+- **get_captures_by_year**: Use this to analyze archival frequency or find snapshots from a particular year. Year should be 4-digit format (e.g., "2020").
 
-Check if a URL has been archived by the Wayback Machine
-- **get_captures_collapsed**: This shows unique page captures without redundant entries for the same page. Use this for a cleaner view of archived content.
+Get captures filtered by a specific year
+- **get_subdomain_captures**: g., *.example.com). Use this to discover the archival footprint of an entire domain, finding all subdomains that have been preserved.
 
-Get captures deduplicated by URL key
+Get captures for all subdomains of a domain
 - **get_capture_count**: Use this to measure how frequently a page has been preserved over time.
 
 Get the total number of captures for a URL
 - **get_first_capture**: Includes the timestamp, status code, and original URL. Use this to find when a page was first preserved.
 
 Get the first (earliest) capture of a URL
-- **get_latest_capture**: Includes timestamp, status code, and URL. Use this to find the newest preserved version of a page.
+- **get_captures_collapsed**: This shows unique page captures without redundant entries for the same page. Use this for a cleaner view of archived content.
 
-Get the most recent capture of a URL
-- **get_subdomain_captures**: g., *.example.com). Use this to discover the archival footprint of an entire domain, finding all subdomains that have been preserved.
-
-Get captures for all subdomains of a domain
+Get captures deduplicated by URL key
 
 
 ## 💬 Prompt Examples

@@ -33,48 +33,48 @@ Connect **Jasper** to your AI agent and supercharge your marketing content produ
 
 
 ## Available Tools (20)
-- **list_voices**: Use voice IDs with run_command or run_task for brand-consistent content.
-
-List brand voices
+- **get_knowledge_item**: Get knowledge item details
 - **get_voice**: Get voice details
 - **list_knowledge**: Use knowledge IDs with run_command or run_task for grounded output.
 
 List knowledge items
-- **get_knowledge_item**: Get knowledge item details
+- **list_voices**: Use voice IDs with run_command or run_task for brand-consistent content.
+
+List brand voices
+- **list_styles**: List style guides
+- **get_style**: Get style guide details
 - **search_knowledge**: Matches by meaning and context, not just keywords.
 
 Search knowledge base
-- **list_styles**: List style guides
-- **get_style**: Get style guide details
-- **run_command**: Pass a command (prompt) and optional context for grounding. Supports voice IDs for brand-consistent output and output language selection.
-
-Generate AI content with Jasper
+- **get_document**: Get document details
+- **get_task**: Get agent task details
 - **list_documents**: Supports filtering by name, status, and date range.
 
 List workspace documents
-- **get_document**: Get document details
 - **list_tasks**: Each task includes context items (input fields) required for execution.
 
 List agent tasks
-- **get_task**: Get agent task details
-- **run_task**: Pass context items as a JSON array. Each item needs either {id, value} for predefined items or {name, question, answer} for custom context. Retrieve task input schema via get_task first.
+- **run_command**: Pass a command (prompt) and optional context for grounding. Supports voice IDs for brand-consistent output and output language selection.
 
-Run an agent task
-- **list_users**: List workspace users
+Generate AI content with Jasper
 - **list_templates**: Each template includes its input schema for use with run_template.
 
 List content templates
+- **list_users**: List workspace users
+- **run_task**: Pass context items as a JSON array. Each item needs either {id, value} for predefined items or {name, question, answer} for custom context. Retrieve task input schema via get_task first.
+
+Run an agent task
 - **get_template**: Get template details
 - **run_template**: Retrieve template input schemas via list_templates first, then pass the required inputs as JSON.
 
 Run a specific template
+- **get_audience**: Get audience details
 - **get_usage**: Requires start/end dates in ISO format and granularity (day, week, hour).
 
 Get API usage statistics
 - **list_audiences**: Use audience IDs with run_task for targeted content.
 
 List target audiences
-- **get_audience**: Get audience details
 
 
 ## 💬 Prompt Examples

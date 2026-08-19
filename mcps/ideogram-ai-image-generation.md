@@ -35,18 +35,18 @@ Connect your **Ideogram** account to any AI agent and take full control of state
 
 
 ## Available Tools (10)
-- **generate**: Generate images from a text prompt using Ideogram. Ideogram excels at rendering text within images — the best in the industry for posters, ads, and branded content. Supports V_2, V_2_TURBO, V_3 models
 - **generate_v3**: Uses DEFAULT rendering speed.
 
 Generate images using Ideogram V3 via the dedicated v3 endpoint. Latest model with top-tier text rendering and photorealism
+- **edit_v3**: Edit images using Ideogram V3 model. Higher quality edits with advanced text rendering
+- **describe**: Describe an image using Ideogram. Returns AI-generated text descriptions/prompts for the image
+- **edit**: Edit specific parts of an image using Ideogram with a mask and prompt. Supports face swap
+- **generate**: Generate images from a text prompt using Ideogram. Ideogram excels at rendering text within images — the best in the industry for posters, ads, and branded content. Supports V_2, V_2_TURBO, V_3 models
 - **generate_transparent**: Returns PNG with alpha channel.
 
 Generate images with transparent backgrounds using Ideogram V3. Perfect for logos, stickers, and compositing assets
-- **edit**: Edit specific parts of an image using Ideogram with a mask and prompt. Supports face swap
-- **edit_v3**: Edit images using Ideogram V3 model. Higher quality edits with advanced text rendering
-- **remix**: Remix an existing image with a new prompt using Ideogram. Transforms images while preserving composition
-- **describe**: Describe an image using Ideogram. Returns AI-generated text descriptions/prompts for the image
 - **reframe**: Reframe/resize an image using Ideogram. Adjusts resolution while maintaining content with AI fill
+- **remix**: Remix an existing image with a new prompt using Ideogram. Transforms images while preserving composition
 - **replace_background**: Replace the background of an image using Ideogram. AI preserves the subject while generating a new background from prompt
 - **upscale**: Upscale an image using Ideogram. Enhances resolution and detail
 

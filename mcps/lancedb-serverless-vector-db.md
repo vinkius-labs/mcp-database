@@ -35,14 +35,14 @@ Connect your **LanceDB Cloud** account to any AI agent and take full control of 
 
 
 ## Available Tools (6)
-- **list_tables**: List all vectorized tables residing in LanceDB
 - **get_table**: Get precise schema and metadata for a specific LanceDB table
-- **vector_search**: Perform a highly-optimized KNN Vector similarity search
+- **list_tables**: List all vectorized tables residing in LanceDB
+- **create_table**: Provision a new LanceDB table with a strict schema
+- **delete_table**: Irreversibly vaporize an entire LanceDB vector table
 - **insert_rows**: Data dynamically updates the underlying ANN index.
 
 Insert structured row payloads and vectors into a table
-- **create_table**: Provision a new LanceDB table with a strict schema
-- **delete_table**: Irreversibly vaporize an entire LanceDB vector table
+- **vector_search**: Perform a highly-optimized KNN Vector similarity search
 
 
 ## 💬 Prompt Examples

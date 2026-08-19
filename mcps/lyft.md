@@ -36,6 +36,9 @@ Perfect for **frequent travelers**, **urban commuters**, **executive assistants*
 
 
 ## Available Tools (9)
+- **get_locations**: Returns location IDs, names, addresses, and coordinates. Use this to quickly reference saved locations for ride requests without typing full addresses.
+
+Get saved locations for the Lyft account
 - **cancel_ride**: Cancellation policies vary based on ride status - cancellations after driver assignment may incur fees. Use this to cancel rides that were booked by mistake or are no longer needed.
 
 Cancel an existing Lyft ride request
@@ -45,9 +48,6 @@ Get cost estimate for a Lyft ride between two locations
 - **get_eta_estimate**: Use this to compare how quickly different Lyft services can reach you. Lower minutes mean faster pickups.
 
 Get estimated arrival times for Lyft at a location
-- **get_locations**: Returns location IDs, names, addresses, and coordinates. Use this to quickly reference saved locations for ride requests without typing full addresses.
-
-Get saved locations for the Lyft account
 - **get_ride_details**: Use this to track your active ride or review past ride details.
 
 Get details of a specific Lyft ride
