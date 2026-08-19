@@ -34,18 +34,18 @@ Connect to **Travelport**, the world's leading travel commerce platform, and emp
 
 
 ## Available Tools (21)
-- **retrieve_flight_reservation**: Retrieve an existing flight reservation
 - **search_flights**: Search for flight catalog product offerings
 - **search_next_leg**: Search for the next leg of a flight itinerary
-- **retrieve_hotel_reservation**: Retrieve an existing hotel reservation
-- **reverse_authorization**: Reverse a payment card authorization
 - **search_flight_specific**: Perform a flight specific search
 - **search_stays_complete**: Perform a complete hotel search (v12)
 - **add_offer_to_workbench**: Add an air offer to an existing workbench
+- **retrieve_flight_reservation**: Retrieve an existing flight reservation
+- **retrieve_hotel_reservation**: Retrieve an existing hotel reservation
+- **reverse_authorization**: Reverse a payment card authorization
+- **commit_workbench**: Commit a reservation workbench to create a booking
 - **add_traveler_to_workbench**: Add a traveler to an existing workbench
 - **authorize_card**: Authorize a payment card
 - **check_hotel_availability**: Check hotel availability (v11)
-- **commit_workbench**: Commit a reservation workbench to create a booking
 - **create_hotel_reservation**: Create a hotel reservation (v11)
 - **create_workbench**: Create a new reservation workbench session
 - **get_hotel_rules**: Get hotel rules (v11)

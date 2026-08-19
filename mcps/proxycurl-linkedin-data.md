@@ -34,28 +34,28 @@ Connect **Proxycurl** to your AI agent to access real-time B2B intelligence and 
 
 
 ## Available Tools (18)
-- **check_disposable_email**: Detect temporary or throwaway email addresses
 - **get_company_details**: Retrieve comprehensive company metadata and leadership teams
 - **get_company_employee_count**: Retrieve the estimated headcount range for a company
 - **get_company_funding**: It may take up to 5 minutes.
 
 Retrieve full funding history, rounds, and participating investors
 - **get_company_updates**: Aggregate blog posts and X/Twitter updates into a mixed timeline
-- **company_website_lookup**: Resolve a company name to its canonical website URL
 - **get_competitor_listing**: Find competitors and the reasoning (keyword overlap or product similarity)
 - **create_monitor_feed**: Create a new monitor feed for company changes
 - **get_customer_listing**: Get a list of probable customers, investors, and partner platforms
 - **get_employee_profile**: Enrich professional profiles from work emails or name/employer combinations
-- **get_monitor_rss**: Get the RSS feed for a specific monitor feed
 - **list_monitor_feeds**: List all active monitor feeds
-- **lookup_work_email**: Best-effort lookup of a public work email from a name and domain
 - **search_employees**: Find current employees of a company by role and geography
+- **get_credit_balance**: Check your remaining API credit balance
+- **add_monitor_target**: Add a target to an existing monitor feed
+- **check_disposable_email**: Detect temporary or throwaway email addresses
+- **company_website_lookup**: Resolve a company name to its canonical website URL
+- **get_company_logo**: Retrieve a 128x128 PNG logo URL for any company
+- **get_monitor_rss**: Get the RSS feed for a specific monitor feed
 - **get_similar_employees**: Repeat queries are served free from cache.
 
 Find counterparts in similar roles at competing companies
-- **add_monitor_target**: Add a target to an existing monitor feed
-- **get_company_logo**: Retrieve a 128x128 PNG logo URL for any company
-- **get_credit_balance**: Check your remaining API credit balance
+- **lookup_work_email**: Best-effort lookup of a public work email from a name and domain
 
 
 ## 💬 Prompt Examples

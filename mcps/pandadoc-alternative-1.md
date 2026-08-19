@@ -36,29 +36,29 @@ No more manual status checking or template searching. Your AI acts as a dedicate
 
 
 ## Available Tools (11)
-- **list_folders**: Useful for navigating the account structure.
-
-List document organization folders
 - **create_signing_session**: Create an embedded signing session
+- **get_download_link**: Get the download link for a completed document
 - **create_document**: Requires a JSON string containing "template_uuid" and "recipients" list. Use this to initiate the document creation process.
 
 Create a new PandaDoc document
-- **send_document**: Can include an optional message to be sent in the notification email.
-
-Send a document for signing
 - **delete_document**: Delete a PandaDoc document
-- **get_download_link**: Get the download link for a completed document
+- **get_document_details**: Essential for tracking the progress of an individual signature request.
+
+Get details for a specific document
 - **get_template_details**: Get details for a specific template
 - **list_contacts**: List all contacts in PandaDoc
 - **list_documents**: Supports searching by query (q) and filtering by status (e.g., document.draft, document.sent). Useful for monitoring the status of multiple agreements.
 
 List all PandaDoc documents
+- **list_folders**: Useful for navigating the account structure.
+
+List document organization folders
 - **list_templates**: Essential for obtaining the template IDs required for document creation.
 
 List all document templates
-- **get_document_details**: Essential for tracking the progress of an individual signature request.
+- **send_document**: Can include an optional message to be sent in the notification email.
 
-Get details for a specific document
+Send a document for signing
 
 
 ## 💬 Prompt Examples

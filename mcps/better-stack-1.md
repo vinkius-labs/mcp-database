@@ -36,16 +36,16 @@ Stop switching context between your terminal and incident dashboards during crit
 
 
 ## Available Tools (10)
-- **list_incidents**: List all explicit incidents on Better Stack
 - **get_incident**: Retrieve the native timeline payload of an explicit incident
-- **list_monitors**: List all monitors on Better Stack (Better Uptime)
+- **list_incidents**: List all explicit incidents on Better Stack
 - **get_monitor**: Get full details of a specific Better Stack monitor
+- **list_monitors**: List all monitors on Better Stack (Better Uptime)
 - **acknowledge_incident**: Acknowledge an ongoing explicit incident halting paging
-- **resolve_incident**: Force resolve a specific incident
 - **list_heartbeats**: List all configured cron heartbeats securely
+- **resolve_incident**: Force resolve a specific incident
 - **get_heartbeat**: Get explicit details of a passive heartbeat node
-- **list_status_pages**: List all explicit Status Pages
 - **list_on_call**: List exact On-Call routing calendars
+- **list_status_pages**: List all explicit Status Pages
 
 
 ## 💬 Prompt Examples

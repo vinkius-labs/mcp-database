@@ -28,10 +28,10 @@ The **AppsFlyer Pull API MCP Server** provides your AI agent with direct access 
 
 
 ## Available Tools (7)
-- **get_account_check**: Verify AppsFlyer account connection
-- **get_daily_report**: Get aggregate daily performance report
 - **get_geo_report**: Get aggregate performance report by geography
 - **get_in_app_events_report**: Get in-app events raw data report
+- **get_account_check**: Verify AppsFlyer account connection
+- **get_daily_report**: Get aggregate daily performance report
 - **get_uninstalls_report**: Get uninstalls raw data report
 - **get_installs_report**: Get non-organic installs raw data report
 - **get_partners_report**: Get aggregate performance report by media source

@@ -34,46 +34,46 @@ Integrate **Pangea** into your AI workflows to provide a robust security layer f
 
 
 ## Available Tools (40)
-- **file_scan**: Scan a file for malware
-- **intel_reputation**: Retrieve reputation scores for domains, URLs, or file hashes
 - **ip_geolocate**: Retrieve location data for an IP
 - **ip_proxy**: Detect if an IP is a proxy
 - **ip_reputation**: Get reputation score and verdict for an IP
 - **ip_vpn**: Detect if an IP is a VPN
-- **password_breached**: Check if a password hash prefix appears in breach data
 - **share_list**: List objects in a bucket or folder with filtering
 - **unredact**: Decrypt data previously redacted using FPE
 - **ai_guard_text**: Scan text for PII, malicious content, and prompt injections
-- **aidr_chat_completions**: Guard LLM chat completions with integrated logging and tracing
-- **audit_log_bulk**: Create multiple secure audit log entries
 - **audit_log**: Create a single secure audit log entry
-- **audit_search_results**: Paginate through audit search results
+- **audit_log_bulk**: Create multiple secure audit log entries
 - **audit_search**: Search the audit log using natural language queries
-- **authn_flow_complete**: Finalize the flow and receive session tokens
+- **audit_search_results**: Paginate through audit search results
 - **authn_flow_start**: Start a sign-up or sign-in flow
 - **authn_flow_update**: Update flow state (e.g., submit password, OTP)
-- **authn_session_list**: List active user sessions
 - **authn_session_logout**: Invalidate sessions
 - **authn_user_create**: Programmatically create a user
-- **authz_check**: Check if a subject has permission for an action on a resource
 - **authz_list_resources**: List all resources a subject can access
-- **authz_tuple_create**: Define relationships for AuthZ
 - **domain_whois**: Get WHOIS details for a domain
 - **embargo_ip_check**: Check if an IP originates from an embargoed country
 - **embargo_iso_check**: Check a 2-character ISO country code against embargo lists
-- **redact_structured**: Redact specific fields in a JSON object using JSONPath
 - **redact_text**: Redact sensitive data from plain text
 - **sanitize_file**: Apply sanitization rules to a file and receive a cleaned version
 - **share_delete**: Delete files or folders
 - **share_folder_create**: Create folders in Secure Share
 - **share_get**: Download a file or retrieve metadata
-- **user_breached**: Check if an email, phone, or username appears in known data breaches
 - **vault_decrypt**: Perform cryptographic decryption
 - **vault_encrypt**: Perform cryptographic encryption
 - **vault_get**: Retrieve item details or secret values from Vault
 - **vault_key_generate**: Generate symmetric or asymmetric keys in Vault
-- **vault_secret_store**: Store a secret or token in Vault
+- **aidr_chat_completions**: Guard LLM chat completions with integrated logging and tracing
 - **ai_guard_prompt**: Analyze and redact content in LLM inputs/outputs
+- **authn_flow_complete**: Finalize the flow and receive session tokens
+- **authn_session_list**: List active user sessions
+- **authz_check**: Check if a subject has permission for an action on a resource
+- **authz_tuple_create**: Define relationships for AuthZ
+- **file_scan**: Scan a file for malware
+- **intel_reputation**: Retrieve reputation scores for domains, URLs, or file hashes
+- **password_breached**: Check if a password hash prefix appears in breach data
+- **redact_structured**: Redact specific fields in a JSON object using JSONPath
+- **user_breached**: Check if an email, phone, or username appears in known data breaches
+- **vault_secret_store**: Store a secret or token in Vault
 
 
 ## 💬 Prompt Examples

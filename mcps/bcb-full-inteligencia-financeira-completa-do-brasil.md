@@ -23,66 +23,66 @@ The **ultimate Brazil Central Bank Mega-Server** — 22 tools across 4 domains.
 
 
 ## Available Tools (21)
-- **get_selic_diaria**: Reflete a execução real da política monetária. Série SGS: 11.
-
-Obter a taxa Selic efetiva (diária)
-- **get_cotacao_dolar**: Inclui valores de compra e venda. O PTAX é a taxa de referência oficial do câmbio brasileiro, calculada a partir de consultas aos dealers de câmbio.
-
-Obter a cotação do dólar americano (PTAX) em uma data específica
-- **get_dolar_periodo**: Formato de data: MM-DD-YYYY. Máximo de 1 ano por consulta. Inclui valores de compra, venda e boletins (abertura, intermediário, fechamento).
-
-Obter a série histórica do dólar PTAX em um período
-- **get_cotacao_moeda**: Use listar_moedas para ver todos os 150+ códigos disponíveis. Inclui compra e venda.
-
-Obter cotação de qualquer moeda estrangeira pelo código (EUR, GBP, JPY, etc.)
-- **listar_moedas**: Inclui moedas exóticas como CLP, COP, MXN, THB, etc.
-
-Listar todas as moedas disponíveis no sistema PTAX do Banco Central
-- **get_dolar_sgs**: Séries: 1 (compra), 10813 (venda). Mais flexível que PTAX para séries longas. Formato de data: DD/MM/YYYY.
-
-Obter a série histórica do dólar comercial (compra/venda) via SGS
-- **get_pib**: Este é o indicador IBC-Br (Índice de Atividade Econômica do Banco Central), uma proxy mensal do PIB. Série SGS: 4380.
-
-Obter o PIB mensal do Brasil — variação percentual
-- **get_divida_pib**: Indicador fundamental de sustentabilidade fiscal. Série SGS: 4513.
-
-Obter a dívida líquida do setor público como % do PIB
-- **get_reservas**: Fundamental para avaliação da capacidade do país de honrar compromissos externos. Série SGS: 3546.
-
-Obter as reservas internacionais do Brasil em USD
 - **get_balanca_comercial**: O Brasil é um grande exportador de commodities agrícolas, minério e petróleo. Série SGS: 22707.
 
 Obter o saldo da balança comercial brasileira
+- **get_cdi**: O CDI é a referência para a maioria dos investimentos em renda fixa no Brasil (CDBs, LCIs, LCAs, fundos DI). Geralmente fica muito próximo da Selic. Série SGS: 12.
+
+Obter a taxa CDI (Certificado de Depósito Interbancário)
+- **get_cotacao_dolar**: Inclui valores de compra e venda. O PTAX é a taxa de referência oficial do câmbio brasileiro, calculada a partir de consultas aos dealers de câmbio.
+
+Obter a cotação do dólar americano (PTAX) em uma data específica
+- **get_cotacao_moeda**: Use listar_moedas para ver todos os 150+ códigos disponíveis. Inclui compra e venda.
+
+Obter cotação de qualquer moeda estrangeira pelo código (EUR, GBP, JPY, etc.)
 - **get_desemprego**: Indicador trimestral do mercado de trabalho brasileiro. Série SGS: 24369.
 
 Obter a taxa de desemprego do Brasil (PNAD)
+- **get_divida_pib**: Indicador fundamental de sustentabilidade fiscal. Série SGS: 4513.
+
+Obter a dívida líquida do setor público como % do PIB
+- **get_dolar_sgs**: Séries: 1 (compra), 10813 (venda). Mais flexível que PTAX para séries longas. Formato de data: DD/MM/YYYY.
+
+Obter a série histórica do dólar comercial (compra/venda) via SGS
+- **get_igpm**: Usado como indexador de aluguéis e contratos. Composição: 60% IPA (atacado) + 30% IPC (consumo) + 10% INCC (construção). Série SGS: 189.
+
+Obter o IGP-M — Índice Geral de Preços - Mercado
+- **get_pib**: Este é o indicador IBC-Br (Índice de Atividade Econômica do Banco Central), uma proxy mensal do PIB. Série SGS: 4380.
+
+Obter o PIB mensal do Brasil — variação percentual
 - **get_pix_estatisticas**: O PIX é o sistema de pagamentos instantâneos do Brasil, operado pelo BCB. Lançado em novembro de 2020, já é o meio de pagamento mais usado no país.
 
 Obter estatísticas do PIX — volume e quantidade de transações
+- **get_reservas**: Fundamental para avaliação da capacidade do país de honrar compromissos externos. Série SGS: 3546.
+
+Obter as reservas internacionais do Brasil em USD
+- **get_selic_diaria**: Reflete a execução real da política monetária. Série SGS: 11.
+
+Obter a taxa Selic efetiva (diária)
+- **get_selic_meta**: A Selic é a taxa básica da economia brasileira e referência para todas as demais taxas de juros do país. Série SGS: 432.
+
+Obter a meta da taxa Selic definida pelo COPOM
 - **get_serie_bcb**: 000+ séries do Sistema Gerenciador de Séries Temporais (SGS). Pesquise códigos em bcb.gov.br/estabilidadefinanceira/seriestemporais. Exemplos: 11 (Selic), 433 (IPCA), 1 (Dólar).
 
 Consultar qualquer série temporal do BCB pelo código SGS
+- **get_dolar_periodo**: Formato de data: MM-DD-YYYY. Máximo de 1 ano por consulta. Inclui valores de compra, venda e boletins (abertura, intermediário, fechamento).
+
+Obter a série histórica do dólar PTAX em um período
+- **listar_moedas**: Inclui moedas exóticas como CLP, COP, MXN, THB, etc.
+
+Listar todas as moedas disponíveis no sistema PTAX do Banco Central
+- **get_inpc**: Mede a inflação para famílias com renda de 1 a 5 salários mínimos. Usado como referência para reajustes salariais e do salário mínimo. Série SGS: 188.
+
+Obter o INPC — Índice Nacional de Preços ao Consumidor
 - **get_ipca**: Usado como meta de inflação pelo BCB. Mede a variação de preços de uma cesta de consumo para famílias com renda de 1 a 40 salários mínimos. Série SGS: 433.
 
 Obter o IPCA — Índice Nacional de Preços ao Consumidor Amplo
 - **get_ipca15**: Muito acompanhado pelo mercado como antecipação do IPCA. Série SGS: 7478.
 
 Obter o IPCA-15 — prévia da inflação oficial
-- **get_igpm**: Usado como indexador de aluguéis e contratos. Composição: 60% IPA (atacado) + 30% IPC (consumo) + 10% INCC (construção). Série SGS: 189.
-
-Obter o IGP-M — Índice Geral de Preços - Mercado
-- **get_inpc**: Mede a inflação para famílias com renda de 1 a 5 salários mínimos. Usado como referência para reajustes salariais e do salário mínimo. Série SGS: 188.
-
-Obter o INPC — Índice Nacional de Preços ao Consumidor
 - **get_expectativas_inflacao**: Filtre por indicador: IPCA, IGP-DI, IGP-M. Inclui mediana, média, mínimo, máximo e desvio padrão.
 
 Obter as expectativas do mercado para a inflação (Relatório Focus)
-- **get_selic_meta**: A Selic é a taxa básica da economia brasileira e referência para todas as demais taxas de juros do país. Série SGS: 432.
-
-Obter a meta da taxa Selic definida pelo COPOM
-- **get_cdi**: O CDI é a referência para a maioria dos investimentos em renda fixa no Brasil (CDBs, LCIs, LCAs, fundos DI). Geralmente fica muito próximo da Selic. Série SGS: 12.
-
-Obter a taxa CDI (Certificado de Depósito Interbancário)
 - **get_expectativas_selic**: Inclui mediana, média, mínimo e máximo das projeções das instituições financeiras. O Focus é publicado toda segunda-feira pelo BCB.
 
 Obter as expectativas do mercado para a taxa Selic (Relatório Focus)

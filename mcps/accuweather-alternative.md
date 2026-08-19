@@ -35,20 +35,20 @@ Connect your **AccuWeather** API to any AI agent to integrate hyper-local weathe
 
 ## Available Tools (13)
 - **alarms**: Get weather-related alarms for a location key
-- **autocomplete_city**: Get city suggestions as you type
-- **current_conditions**: Get current weather conditions for a location key
-- **daily_forecast**: Get daily weather forecasts for a location key
-- **historical_conditions**: Get historical current conditions
 - **hourly_forecast**: Get hourly weather forecasts for a location key
 - **lightning_radius**: Get lightning strike data within a specific radius
 - **search_geoposition**: Find a location key by latitude and longitude
 - **search_ipaddress**: Find a location key by IP address
+- **search_city**: Search for a city by name to get its location key
+- **minutecast**: Get minute-by-minute precipitation forecasts
+- **autocomplete_city**: Get city suggestions as you type
+- **current_conditions**: Get current weather conditions for a location key
+- **daily_forecast**: Get daily weather forecasts for a location key
+- **historical_conditions**: Get historical current conditions
+- **lightning_box**: Get lightning strike data within a bounding box
 - **top_cities**: g., 50, 150).
 
 Get a list of top cities globally or by region
-- **search_city**: Search for a city by name to get its location key
-- **lightning_box**: Get lightning strike data within a bounding box
-- **minutecast**: Get minute-by-minute precipitation forecasts
 
 
 ## 💬 Prompt Examples

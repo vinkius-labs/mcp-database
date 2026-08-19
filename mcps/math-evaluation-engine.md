@@ -20,10 +20,10 @@ LLMs are notoriously bad at arithmetic, frequently struggling with floating-poin
 
 
 ## Available Tools (2)
-- **calculate_expression**: Safely evaluates complex mathematical expressions (e.g. "1.2 * (2 + 4.5)") deterministically using mathjs
 - **round_value**: Pass the expression as a string (e.g. "2^8 + sqrt(144)") and the engine computes the exact result using mathjs.
 
 Rounds a float value to a specific number of decimal places
+- **calculate_expression**: Safely evaluates complex mathematical expressions (e.g. "1.2 * (2 + 4.5)") deterministically using mathjs
 
 
 ## 💬 Prompt Examples

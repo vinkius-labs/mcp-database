@@ -36,13 +36,13 @@ Stop guessing if a package is safe. Let your AI agent use Socket's industry-lead
 
 
 ## Available Tools (10)
-- **create_scan**: Provide manifest files data (e.g., package.json, requirements.txt).
-
-Create a new scan by uploading manifest files
 - **delete_scan**: Delete a scan
 - **get_package_issues**: g., pkg:npm/babel).
 
 Get issues/alerts for a specific package
+- **create_scan**: Provide manifest files data (e.g., package.json, requirements.txt).
+
+Create a new scan by uploading manifest files
 - **get_package_score**: g., pkg:npm/babel).
 
 Get the security score for a specific package

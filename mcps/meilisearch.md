@@ -33,17 +33,11 @@ Connect your **Meilisearch** instance to any AI agent to automate your search en
 
 
 ## Available Tools (44)
-- **get_task**: Get details of a specific task
 - **update_key**: Update an API key name or description
 - **create_dump**: Trigger the creation of a Meilisearch dump
-- **similar_documents**: Find documents similar to a given document ID
-- **update_documents**: Add or update documents (partial update)
-- **add_documents**: Add or replace documents in an index
 - **cancel_tasks**: Cancel pending or processing tasks
-- **chat_completion**: Request a chat completion from a workspace
 - **configure_experimental_features**: Enable or disable experimental features
 - **create_index**: Create a new index
-- **create_key**: Create a new API key
 - **create_snapshot**: Trigger the creation of a Meilisearch snapshot
 - **delete_all_documents**: Delete all documents in an index
 - **delete_document**: Delete a single document
@@ -51,31 +45,37 @@ Connect your **Meilisearch** instance to any AI agent to automate your search en
 - **delete_documents_by_filter**: Delete documents matching a filter
 - **delete_dynamic_search_rule**: Delete a dynamic search rule
 - **delete_index**: Delete an index
-- **delete_key**: Delete an API key
 - **delete_tasks**: Delete finished tasks
 - **get_batch**: Get details of a specific batch
-- **get_document**: Get a specific document by ID
 - **get_health**: Check the health of the Meilisearch instance
-- **get_index_stats**: Get stats of a specific index
 - **get_index**: Get metadata for a specific index
+- **get_index_stats**: Get stats of a specific index
 - **get_key**: Get details of a specific API key
 - **get_settings**: Get all settings of an index
 - **get_stats**: Get stats of all indexes and database size
-- **get_version**: Get the version of the Meilisearch instance
 - **list_batches**: List task batches
 - **list_chats**: List chat workspaces
-- **list_documents**: List documents in an index
 - **list_dynamic_search_rules**: List dynamic search rules for an index
 - **list_experimental_features**: List the status of experimental features
 - **list_indexes**: List all Meilisearch indexes
 - **list_keys**: List API keys
+- **reset_settings**: Reset all settings of an index to defaults
+- **set_dynamic_search_rule**: Create or update a dynamic search rule
+- **update_index**: Update an index primary key
+- **add_documents**: Add or replace documents in an index
+- **chat_completion**: Request a chat completion from a workspace
+- **create_key**: Create a new API key
+- **delete_key**: Delete an API key
+- **get_document**: Get a specific document by ID
+- **get_task**: Get details of a specific task
+- **get_version**: Get the version of the Meilisearch instance
+- **list_documents**: List documents in an index
 - **list_tasks**: List asynchronous tasks
 - **multi_search**: Perform multiple search queries in a single call
-- **reset_settings**: Reset all settings of an index to defaults
 - **search_documents**: Search for documents in an index
-- **set_dynamic_search_rule**: Create or update a dynamic search rule
+- **similar_documents**: Find documents similar to a given document ID
 - **swap_indexes**: Swap multiple indexes atomically
-- **update_index**: Update an index primary key
+- **update_documents**: Add or update documents (partial update)
 - **update_settings**: Update settings of an index
 
 

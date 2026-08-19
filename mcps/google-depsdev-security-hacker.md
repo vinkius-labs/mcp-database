@@ -26,9 +26,9 @@ Works natively with npm (Node.js), PyPI (Python), Cargo (Rust), Go, Maven (Java)
 - **analyze_dependency**: Support systems: npm, pypi, go, cargo, maven, nuget.
 
 Analyzes an open-source package for security advisories and OSSF scorecard using Google deps.dev
-- **analyze_github_repository**: Performs a full security and governance audit of a GitHub repository using OSSF Scorecards
 - **get_transitive_dependencies**: Hunts for hidden security threats by analyzing the entire transitive dependency tree of a package
 - **get_vulnerability_details**: Retrieves detailed information about a specific CVE or GitHub Security Advisory (GHSA)
+- **analyze_github_repository**: Performs a full security and governance audit of a GitHub repository using OSSF Scorecards
 
 
 ## 💬 Prompt Examples
