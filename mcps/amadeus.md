@@ -33,21 +33,21 @@ Search hotel offers
 - **search_flights**: "Find flights from Paris to New York next week."
 
 Search flight offers
-- **get_cheapest_dates**: "When is the cheapest to fly NYC to London?"
-
-Get cheapest flight dates
 - **search_hotels_nearby**: For "hotels near Eiffel Tower."
 
 Search hotels near coordinates
 - **search_airports**: "What is the airport code for Tokyo?"
 
 Search airports and cities
+- **get_cheapest_dates**: "When is the cheapest to fly NYC to London?"
+
+Get cheapest flight dates
+- **get_airline_info**: Get airline information
 - **get_flight_status**: Get flight schedule
+- **search_transfers**: Search airport transfers
 - **search_activities**: "What to do in Barcelona?"
 
 Search destination activities
-- **get_airline_info**: Get airline information
-- **search_transfers**: Search airport transfers
 - **get_flight_inspirations**: "Where can I fly cheaply from Paris?"
 
 Get flight inspirations

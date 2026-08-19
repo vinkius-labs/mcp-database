@@ -33,16 +33,16 @@ Connect **BILL (Bill.com)** to your AI agent and streamline your accounts payabl
 
 
 ## Available Tools (10)
-- **get_vendor**: Get vendor details
-- **list_vendors**: List all vendors
-- **get_company_profile**: Get company profile
-- **create_vendor**: Create a new vendor
 - **list_bills**: List all bills
 - **get_bill**: Get bill details
-- **create_bill**: Create a new bill
-- **list_invoices**: List all invoices
-- **list_payments**: List all payments
 - **list_customers**: List all customers
+- **list_payments**: List all payments
+- **create_bill**: Create a new bill
+- **create_vendor**: Create a new vendor
+- **get_company_profile**: Get company profile
+- **get_vendor**: Get vendor details
+- **list_invoices**: List all invoices
+- **list_vendors**: List all vendors
 
 
 ## 💬 Prompt Examples

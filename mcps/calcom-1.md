@@ -36,23 +36,23 @@ No more context-switching between tools dragging your windows around visually se
 
 ## Available Tools (10)
 - **get_me**: Get the authenticated Cal.com user profile including name, email, timezone, default schedule, avatar, and organization info
-- **list_bookings**: Standardizes attendee listings, temporal slots, statuses ("accepted" [confirmed], "pending", "cancelled", "rejected"), and spatial links.
-
-List all Cal.com bookings with optional status filter
-- **get_booking**: Retrieve full details of a specific Cal.com booking by its UID
 - **create_booking**: Auto-generates conferencing URLs where default.
 
 Programmatically create a new booking on Cal.com seamlessly capturing host slots
-- **cancel_booking**: com destruction schemas firing integrated Email notifications alerting both the Organizer and external Guests appending the contextual reason.
-
-Cancel an existing Cal.com booking via secure UID matching freeing timeslots
 - **reschedule_booking**: Modifies host structures triggering email templates updating guest links securely.
 
 Reschedule an existing Cal.com booking mapping to an explicit new temporal block
+- **list_schedules**: Locate physical scheduling origin rules managed natively bounding work times
 - **list_event_types**: Enumerate explicitly attached structured scheduling types mapping active formats
 - **get_event_type**: Extract detailed configuration parsing a specific Cal.com native event boundary
-- **list_schedules**: Locate physical scheduling origin rules managed natively bounding work times
+- **cancel_booking**: com destruction schemas firing integrated Email notifications alerting both the Organizer and external Guests appending the contextual reason.
+
+Cancel an existing Cal.com booking via secure UID matching freeing timeslots
 - **get_available_slots**: Retrieve the exact array bounds verifying free temporal spans per mapped event types
+- **get_booking**: Retrieve full details of a specific Cal.com booking by its UID
+- **list_bookings**: Standardizes attendee listings, temporal slots, statuses ("accepted" [confirmed], "pending", "cancelled", "rejected"), and spatial links.
+
+List all Cal.com bookings with optional status filter
 
 
 ## 💬 Prompt Examples

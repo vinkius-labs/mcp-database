@@ -36,20 +36,20 @@ No more manual toggling between different social platforms or digging through fr
 
 
 ## Available Tools (12)
-- **schedule_social_post**: Schedule a new post
 - **remove_social_post**: Delete a post
-- **modify_pending_post**: Edit scheduled post
-- **get_api_status**: Check connection
 - **list_pending_posts**: Check scheduled queue
-- **get_profile_details**: Get account info
-- **get_posting_schedules**: Check posting times
 - **list_published_posts**: Check post history
+- **test_buffer_auth**: Verify credentials
+- **get_api_status**: Check connection
 - **get_post_details**: Get post info
+- **get_posting_schedules**: Check posting times
+- **get_profile_details**: Get account info
 - **list_social_profiles**: ) connected to Buffer.
 
 List connected accounts
-- **test_buffer_auth**: Verify credentials
+- **modify_pending_post**: Edit scheduled post
 - **modify_posting_schedules**: Set posting times
+- **schedule_social_post**: Schedule a new post
 
 
 ## 💬 Prompt Examples

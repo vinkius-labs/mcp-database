@@ -41,33 +41,33 @@ Never break your context to build dashboards. Ask your agent, get real-time data
 - **get_user_activity**: Useful for diagnosing individual user journeys.
 
 Get Amplitude user activity stream
-- **event_segmentation**: Pass event name, start/end as YYYYMMDD.
-
-Query Amplitude event segmentation
-- **export_events**: Amplitude is a product analytics platform. Pass start/end as YYYYMMDDTHH (e.g. 2026010100).
-
-Export raw Amplitude event data for a time range
-- **search_users**: Useful to find specific users before checking their activity.
-
-Search Amplitude users by user ID, device ID, or email
-- **get_retention**: Pass start_event (acquisition), return_event, start/end dates. Start/End should be YYYYMMDD.
-
-Query Amplitude retention
-- **get_funnel**: Pass comma-separated event names, start/end as YYYYMMDD.
-
-Query Amplitude funnel conversion
-- **list_cohorts**: Cohorts group users by behavior.
-
-List Amplitude behavioral cohorts
 - **get_cohort**: Depending on the backend this may require polling until ready.
 
 Request an Amplitude cohort download
+- **get_retention**: Pass start_event (acquisition), return_event, start/end dates. Start/End should be YYYYMMDD.
+
+Query Amplitude retention
+- **list_cohorts**: Cohorts group users by behavior.
+
+List Amplitude behavioral cohorts
 - **revenue_analysis**: Start/End as YYYYMMDD.
 
 Get Amplitude revenue analysis by day
 - **active_users**: Start/End as YYYYMMDD.
 
 Get Amplitude daily/weekly/monthly active users (DAU/WAU/MAU)
+- **event_segmentation**: Pass event name, start/end as YYYYMMDD.
+
+Query Amplitude event segmentation
+- **export_events**: Amplitude is a product analytics platform. Pass start/end as YYYYMMDDTHH (e.g. 2026010100).
+
+Export raw Amplitude event data for a time range
+- **get_funnel**: Pass comma-separated event names, start/end as YYYYMMDD.
+
+Query Amplitude funnel conversion
+- **search_users**: Useful to find specific users before checking their activity.
+
+Search Amplitude users by user ID, device ID, or email
 
 
 ## 💬 Prompt Examples

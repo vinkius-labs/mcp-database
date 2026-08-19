@@ -36,12 +36,12 @@ Connect your **Apify** workspace to your AI agent and seamlessly direct full-sta
 - **abort_run**: Any data already scraped and pushed to the dataset is preserved. The run status changes to ABORTED. Use this to stop runaway scrapes or when sufficient data has been collected. Graceful shutdown depends on the actor implementation.
 
 Abort an active Apify actor run
-- **get_account_limits**: Essential for monitoring consumption and avoiding overage charges.
-
-Check Apify account subscription limits and compute unit usage
 - **get_dataset_items**: The datasetId is found in the run object (defaultDatasetId). Supports pagination via limit (max items per page) and offset (starting position). Returns an array of JSON objects containing the scraped data fields. Use limit=1000 for bulk downloads.
 
 Export structured JSON data from an Apify dataset
+- **get_account_limits**: Essential for monitoring consumption and avoiding overage charges.
+
+Check Apify account subscription limits and compute unit usage
 - **get_key_value_store**: Key-value stores hold arbitrary data like screenshots (OUTPUT), configuration files, or intermediate results. The storeId comes from the run object (defaultKeyValueStoreId). Common keys include "OUTPUT", "INPUT", and "SCREENSHOT".
 
 Retrieve an item from an Apify actor key-value store
@@ -57,12 +57,12 @@ List all configured webhooks in the Apify account
 - **push_to_queue**: Pass the queueId (from the run object) and a JSON string array of request objects, e.g., [{"url":"https://...","uniqueKey":"..."}]. This enables dynamic crawling where new pages are discovered and added during execution.
 
 Dynamically push new URLs to an active Apify request queue
-- **run_actor_sync**: run_actor but waits for the actor to finish before returning. The response includes the full run object with defaultDatasetId for immediate data retrieval. Best for short-lived actors (under 5 minutes). For long-running scrapes, use the async ap.run_actor instead.
-
-Run an Apify actor and block until completion (synchronous)
 - **run_actor**: Pass the actorId (e.g., "apify/web-scraper" or a custom ID) and a JSON string with the input configuration (start URLs, proxy settings, max pages, etc.). Returns immediately with a runId. Use ap.get_run to poll for completion and ap.get_dataset_items to retrieve extracted data.
 
 Start an Apify actor asynchronously with custom JSON input
+- **run_actor_sync**: run_actor but waits for the actor to finish before returning. The response includes the full run object with defaultDatasetId for immediate data retrieval. Best for short-lived actors (under 5 minutes). For long-running scrapes, use the async ap.run_actor instead.
+
+Run an Apify actor and block until completion (synchronous)
 
 
 ## 💬 Prompt Examples

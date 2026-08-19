@@ -37,49 +37,31 @@ Connect your **Postmark** account to any AI agent to automate your transactional
 - **get_outbound_message_details**: Get full details and events for an outbound message
 - **get_outbound_opens_clients_stats**: Get open usage by email client for outbound messages
 - **create_message_stream**: Create a message stream
-- **create_server**: Create a new server (Account level)
 - **create_webhook**: Create a webhook
-- **get_delivery_stats**: Get delivery and bounce statistics
 - **get_outbound_bounces_stats**: Get bounce counts for outbound messages
-- **list_message_streams**: List message streams
-- **request_data_removal**: Request removal of recipient data (GDPR/CCPA)
-- **create_sender_signature**: Create a sender signature (Account level)
 - **create_suppressions**: Create suppressions for a message stream (max 50)
 - **create_template**: Create a new email template
 - **delete_domain**: Remove a domain (Account level)
 - **delete_sender_signature**: Delete a sender signature (Account level)
-- **delete_server**: Delete a server (Account level)
-- **delete_suppressions**: Remove suppressions (reactivate) for a message stream
-- **delete_template**: Delete a template
-- **delete_webhook**: Delete a webhook
 - **edit_current_server**: Edit current server configuration (Server level)
 - **edit_domain**: Edit a domain (Account level)
 - **edit_message_stream**: Edit a message stream
-- **edit_sender_signature**: Edit a sender signature (Account level)
 - **edit_server**: Edit server settings (Account level)
 - **edit_template**: Edit an existing template
-- **edit_webhook**: Edit a webhook
-- **get_bounce_dump**: Get raw SMTP dump for a bounce
 - **get_bounce**: Get details for a specific bounce
+- **get_bounce_dump**: Get raw SMTP dump for a bounce
 - **get_bulk_request_status**: Get bulk email request status
 - **get_current_server**: Get current server configuration (Server level)
 - **get_data_removal_status**: Check data removal request status
 - **get_domain**: Get domain details (Account level)
-- **get_inbound_message_details**: Get details for an inbound message
-- **get_message_stream**: Get message stream details
 - **get_outbound_clicks_stats**: Get click counts for outbound messages
 - **get_outbound_message_dump**: Get raw source for an outbound message
-- **get_outbound_opens_platforms_stats**: Get open usage by platform for outbound messages
 - **get_outbound_opens_stats**: Get open counts for outbound messages
 - **get_outbound_sends_stats**: Get sent counts for outbound messages
-- **get_outbound_spam_stats**: Get spam complaint counts for outbound messages
 - **get_outbound_stats**: Get overview stats for outbound messages
-- **get_outbound_tracked_stats**: Get tracked email counts for outbound messages
 - **get_sender_signature**: Get sender signature details (Account level)
 - **get_server**: Get server details (Account level)
 - **get_template**: Get details for a specific template
-- **get_webhook**: Get webhook details
-- **list_domains**: List domains (Account level)
 - **list_sender_signatures**: List sender signatures (Account level)
 - **list_servers**: List all servers (Account level)
 - **list_suppressions**: List suppressions for a message stream
@@ -89,17 +71,35 @@ Connect your **Postmark** account to any AI agent to automate your transactional
 - **resend_sender_signature**: Resend confirmation email for a sender signature
 - **retry_inbound_message**: Retry failed processing for an inbound message
 - **rotate_domain_dkim**: Rotate DKIM keys for a domain
-- **search_bounces**: Search bounces
-- **search_inbound_messages**: Search received inbound messages
 - **search_outbound_clicks**: Search click events for outbound messages
-- **search_outbound_messages**: Search sent outbound messages
 - **search_outbound_opens**: Search open events for outbound messages
 - **unarchive_message_stream**: Restore an archived message stream
-- **validate_template**: Validate template syntax
 - **verify_domain_dkim**: Trigger DKIM verification for a domain
-- **verify_domain_return_path**: Trigger Return-Path verification for a domain
+- **create_sender_signature**: Create a sender signature (Account level)
+- **create_server**: Create a new server (Account level)
+- **delete_server**: Delete a server (Account level)
+- **delete_suppressions**: Remove suppressions (reactivate) for a message stream
+- **delete_template**: Delete a template
+- **delete_webhook**: Delete a webhook
+- **edit_sender_signature**: Edit a sender signature (Account level)
+- **edit_webhook**: Edit a webhook
+- **get_delivery_stats**: Get delivery and bounce statistics
+- **get_inbound_message_details**: Get details for an inbound message
+- **get_message_stream**: Get message stream details
+- **get_outbound_opens_platforms_stats**: Get open usage by platform for outbound messages
+- **get_outbound_spam_stats**: Get spam complaint counts for outbound messages
+- **get_outbound_tracked_stats**: Get tracked email counts for outbound messages
+- **get_webhook**: Get webhook details
+- **list_domains**: List domains (Account level)
+- **list_message_streams**: List message streams
+- **request_data_removal**: Request removal of recipient data (GDPR/CCPA)
+- **search_bounces**: Search bounces
+- **search_inbound_messages**: Search received inbound messages
+- **search_outbound_messages**: Search sent outbound messages
 - **send_batch_emails**: Send batch emails via Postmark
 - **send_bulk_emails**: Send bulk emails via Postmark
+- **validate_template**: Validate template syntax
+- **verify_domain_return_path**: Trigger Return-Path verification for a domain
 - **send_email**: Send a single email via Postmark
 - **send_email_with_template**: Send an email using a Postmark template
 - **activate_bounce**: Reactivate a bounced email address

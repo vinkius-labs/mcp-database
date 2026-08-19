@@ -35,19 +35,19 @@ Scale up your AI operations without opening terminal panes to check Ray cluster 
 
 
 ## Available Tools (7)
-- **list_models**: g., meta-llama/Llama-2-70b-chat-hf).
-
-List available AI models on Anyscale Endpoints
-- **chat_completion**: Pass an array of messages with roles (user, assistant, system).
-
-Generate conversational responses via Anyscale LLMs
 - **text_completion**: Use for foundational instruct generation.
 
 Generate text completion using Anyscale generic completion API
-- **generate_embeddings**: Generate semantic vector embeddings for text
-- **list_services**: List Anyscale deployed services
 - **get_service**: Retrieve details about a specific Anyscale service
 - **list_jobs**: List Anyscale batch or training jobs
+- **list_services**: List Anyscale deployed services
+- **chat_completion**: Pass an array of messages with roles (user, assistant, system).
+
+Generate conversational responses via Anyscale LLMs
+- **generate_embeddings**: Generate semantic vector embeddings for text
+- **list_models**: g., meta-llama/Llama-2-70b-chat-hf).
+
+List available AI models on Anyscale Endpoints
 
 
 ## 💬 Prompt Examples

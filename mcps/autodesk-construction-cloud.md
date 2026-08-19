@@ -33,12 +33,12 @@ Connect your **Autodesk Construction Cloud (ACC)** environment to any AI agent a
 
 
 ## Available Tools (10)
-- **list_issues**: List issues in a specific project
 - **list_projects**: List projects in a specific hub
 - **get_asset_details**: Get details for a specific asset
 - **list_assets**: List construction assets in a project
-- **list_folder_contents**: List files and subfolders within a folder
 - **list_hubs**: List all accessible Autodesk hubs
+- **list_folder_contents**: List files and subfolders within a folder
+- **list_issues**: List issues in a specific project
 - **create_issue**: Create a new issue in a project
 - **get_issue_details**: Get complete details for a specific issue
 - **get_project_details**: Get details for a specific project
