@@ -23,18 +23,18 @@ Connect **QuickBooks Online** to any AI agent and manage your entire accounting 
 
 
 ## Available Tools (10)
-- **list_customers**: List all customers
 - **get_payment**: Get payment details
+- **list_customers**: List all customers
 - **get_company_info**: Get company information
-- **profit_and_loss**: Provide dates in YYYY-MM-DD format.
-
-Run Profit & Loss report
-- **list_invoices**: List all invoices
-- **get_invoice**: Get invoice details
 - **create_invoice**: Provide customer ref and line items as JSON.
 
 Create a new invoice
 - **get_customer**: Get customer details
+- **get_invoice**: Get invoice details
+- **list_invoices**: List all invoices
+- **profit_and_loss**: Provide dates in YYYY-MM-DD format.
+
+Run Profit & Loss report
 - **query**: Example: SELECT * FROM Invoice WHERE TotalAmt > 100 MAXRESULTS 50
 
 Execute a QuickBooks query

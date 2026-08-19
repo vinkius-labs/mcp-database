@@ -32,12 +32,12 @@ Connect your AI agent to **LangSmith** — the observability platform from the L
 
 
 ## Available Tools (3)
-- **langsmith_get_run**: Useful for debugging specific LLM calls or agent actions.
-
-Get detailed information about a specific run/trace by its ID
 - **langsmith_list_projects**: Each project groups related traces together and shows aggregate metrics like total runs, median latency, and feedback counts.
 
 List all tracing projects in your LangSmith account with run counts, latency stats, and feedback metrics
+- **langsmith_get_run**: Useful for debugging specific LLM calls or agent actions.
+
+Get detailed information about a specific run/trace by its ID
 - **langsmith_list_runs**: Each run represents a single LLM call, chain execution, or agent action. Shows status (success/error), latency, and token consumption.
 
 List recent traces/runs in a specific LangSmith project. Shows run names, types, status, token usage, and timing

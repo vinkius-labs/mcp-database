@@ -35,15 +35,15 @@ Connect your **Metabase** instance to any AI agent and take full control of your
 
 
 ## Available Tools (7)
-- **list_databases**: List physical Database integrations parsed by Metabase
 - **search_content**: Search globalThis reporting entities across Metabase
-- **list_dashboards**: List dashboards mapped in the Metabase BI platform
-- **get_dashboard**: Get comprehensive Metabase Dashboard layout matrices
 - **list_cards**: Returns heavy lists.
 
 List raw questions (cards) parsed inside Metabase
+- **list_dashboards**: List dashboards mapped in the Metabase BI platform
+- **get_dashboard**: Get comprehensive Metabase Dashboard layout matrices
 - **get_card**: Fetch explicit mapping logic behind a specific BI Card
 - **list_collections**: List structural BI Collections (folders)
+- **list_databases**: List physical Database integrations parsed by Metabase
 
 
 ## 💬 Prompt Examples

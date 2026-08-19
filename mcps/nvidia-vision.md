@@ -42,10 +42,10 @@ Ask questions about a document image (OCR + understanding)
 - **generate_image**: Model options: "stabilityai/stable-diffusion-3-medium", "stabilityai/stable-diffusion-xl-base-1.0". Size format: "1024x1024".
 
 Generate an image from a text prompt using Stable Diffusion
-- **visual_grounding**: Locate a specific object or phrase in an image
 - **image_segmentation**: Segment and identify all objects in an image
-- **style_transfer**: Apply an artistic style to an image
 - **list_vision_models**: List available vision models on NVIDIA API Catalog
+- **style_transfer**: Apply an artistic style to an image
+- **visual_grounding**: Locate a specific object or phrase in an image
 - **visual_question_answering**: Provide a public image URL.
 
 Ask a question about an image

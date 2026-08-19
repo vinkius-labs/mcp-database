@@ -35,12 +35,12 @@ Connect your **Monday.com** account to any AI agent and take full control of you
 
 
 ## Available Tools (13)
-- **list_items**: List task items in a board
 - **list_subitems**: List sub-items of a board item
 - **list_updates**: List updates/comments for an item
 - **list_users**: List team members in the account
 - **list_workspaces**: List Monday.com workspaces
 - **list_groups**: List groups (sections) in a board
+- **list_items**: List task items in a board
 - **get_me**: Get current user profile
 - **archive_item**: Can be unarchived later from the board settings.
 

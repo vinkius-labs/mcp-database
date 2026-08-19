@@ -33,15 +33,15 @@ Connect your **Pinecone** knowledge graph environment straight into your AI agen
 
 
 ## Available Tools (7)
+- **list_indexes**: List all Pinecone indexes
+- **query_vectors**: Returns the most similar vectors and their metadata.
+
+Search for similar vectors
 - **delete_vectors**: Delete vectors from an index
 - **describe_index**: Get configuration details for an index
 - **fetch_vectors**: Fetch specific vectors by their IDs
 - **get_index_stats**: Get usage statistics for an index
 - **list_collections**: List all index collections
-- **query_vectors**: Returns the most similar vectors and their metadata.
-
-Search for similar vectors
-- **list_indexes**: List all Pinecone indexes
 
 
 ## 💬 Prompt Examples

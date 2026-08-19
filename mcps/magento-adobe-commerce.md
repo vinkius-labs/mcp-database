@@ -35,28 +35,28 @@ Connect your **Magento (Adobe Commerce)** store to any AI agent and take full co
 
 
 ## Available Tools (10)
-- **mg.search_products**: Magento is an enterprise eCommerce platform used by large retailers.
-
-Search Magento/Adobe Commerce products with pagination
-- **mg.get_product**: SKU is URL-encoded.
-
-Get Magento product by SKU
-- **mg.search_orders**: Use to browse recent commerce orders.
-
-Search Magento orders with pagination
-- **mg.get_order**: Needs explicit entity ID.
-
-Get Magento order by ID
 - **mg.search_customers**: Search Magento customers with pagination
 - **mg.get_customer**: Pass internal customer string ID.
 
 Get Magento customer by ID
+- **mg.get_order**: Needs explicit entity ID.
+
+Get Magento order by ID
+- **mg.get_product**: SKU is URL-encoded.
+
+Get Magento product by SKU
+- **mg.get_stock**: Get Magento stock/inventory for a product SKU
+- **mg.get_store_config**: Get Magento store configuration
 - **mg.list_categories**: This might be a very large tree so egress restricts excessive sizes.
 
 List Magento category tree
-- **mg.get_stock**: Get Magento stock/inventory for a product SKU
 - **mg.list_invoices**: List Magento invoices with pagination
-- **mg.get_store_config**: Get Magento store configuration
+- **mg.search_orders**: Use to browse recent commerce orders.
+
+Search Magento orders with pagination
+- **mg.search_products**: Magento is an enterprise eCommerce platform used by large retailers.
+
+Search Magento/Adobe Commerce products with pagination
 
 
 ## 💬 Prompt Examples

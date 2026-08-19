@@ -36,15 +36,15 @@ Connect your **New Relic AI** account to any AI agent and take full control of y
 
 
 ## Available Tools (10)
-- **query_llm_feedback**: Retrieve explicit Cloud logging tracing explicit Vault limits
-- **list_alert_policies**: Inspect deep internal arrays mitigating specific Plan Math
-- **list_apm_apps**: Dispatch an automated validation check routing explicit Gateway history
 - **custom_nrql**: Note that NRQL is read-only.
 
 Irreversibly vaporize explicit validations extracting rich Churn flags
+- **query_llm_costs**: Perform structural extraction of properties driving active Account logic
+- **query_llm_feedback**: Retrieve explicit Cloud logging tracing explicit Vault limits
+- **list_alert_policies**: Inspect deep internal arrays mitigating specific Plan Math
+- **list_apm_apps**: Dispatch an automated validation check routing explicit Gateway history
 - **list_dashboards**: Identify precise active arrays spanning native Gateway auth
 - **query_llm_errors**: Identify precise active arrays spanning native Hold parsing
-- **query_llm_costs**: Perform structural extraction of properties driving active Account logic
 - **query_llm_events**: Identify bounded CRM records inside the Headless New Relic Platform
 - **query_llm_latency**: Provision a highly-available JSON Payload generating hard Customer bindings
 - **post_custom_event**: /events` inserting absolute generic `CustomAITelemetry` rows tracking internal agent state.

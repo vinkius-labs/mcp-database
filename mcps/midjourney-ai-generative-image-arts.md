@@ -36,26 +36,26 @@ Connect your **Midjourney** account to any AI agent and take full control of sta
 
 
 ## Available Tools (10)
-- **describe_image**: Reverse engineer text descriptions from an input image via Midjourney
 - **reroll_job**: Re-run identical prompt arguments dropping new sets of outputs
-- **get_job**: DO NOT loop aggressively, sleep in between.
-
-Get the active execution status of an ongoing Midjourney job
-- **generate_image**: Always retrieve the returning Job ID to poll `get_job` tracking its process till completion.
-
-Generate images from a text prompt using Midjourney generative models
-- **list_jobs**: List recent history representing previously executed Midjourney prompts
 - **blend_images**: Pass absolute valid URLs delimited strictly by commas.
 
 Blend 2-5 explicit images into a new unique composition
-- **upscale_image**: Polled async.
+- **describe_image**: Reverse engineer text descriptions from an input image via Midjourney
+- **generate_image**: Always retrieve the returning Job ID to poll `get_job` tracking its process till completion.
 
-Extract and upscale a single specific tile off a 2x2 grid
+Generate images from a text prompt using Midjourney generative models
 - **generate_variation**: Returns a new Job.
 
 Create variant branches from a specific Midjourney grid image
-- **pan_image**: Extrapolate frame borders panning natively over a direction
+- **get_job**: DO NOT loop aggressively, sleep in between.
+
+Get the active execution status of an ongoing Midjourney job
 - **zoom_out_image**: Widen the perspective zooming out explicitly
+- **list_jobs**: List recent history representing previously executed Midjourney prompts
+- **pan_image**: Extrapolate frame borders panning natively over a direction
+- **upscale_image**: Polled async.
+
+Extract and upscale a single specific tile off a 2x2 grid
 
 
 ## 💬 Prompt Examples

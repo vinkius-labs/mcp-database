@@ -26,22 +26,22 @@ Power users, data scientists, multi-disciplinary analysts, and anyone building t
 
 
 ## Available Tools (15)
-- **get_current_weather**: Get current weather conditions
-- **get_historical_weather**: Covers 84 years.
-
-Get historical weather (1940–present)
-- **get_historical_daily**: Get historical daily aggregates
-- **get_marine_forecast**: Get marine wave forecast at 5km resolution
 - **get_air_quality**: 5, PM10, ozone, NO2, SO2, CO concentrations.
 
 Get air quality pollutant concentrations
+- **get_climate_projection**: Get IPCC climate projections (2015–2100)
+- **get_current_weather**: Get current weather conditions
+- **get_ensemble_forecast**: Get probabilistic multi-model ensemble forecast
+- **get_flood_forecast**: Get flood forecast up to 7 months ahead
+- **get_historical_daily**: Get historical daily aggregates
+- **get_historical_weather**: Covers 84 years.
+
+Get historical weather (1940–present)
+- **get_marine_forecast**: Get marine wave forecast at 5km resolution
 - **get_aqi_index**: Get AQI (European and US standards)
 - **get_pollen_forecast**: Get pollen and allergen forecast
 - **get_weather_forecast**: Get weather forecast for any location (up to 16 days)
-- **get_climate_projection**: Get IPCC climate projections (2015–2100)
-- **get_ensemble_forecast**: Get probabilistic multi-model ensemble forecast
 - **get_river_discharge**: Get river discharge data at 5km resolution
-- **get_flood_forecast**: Get flood forecast up to 7 months ahead
 - **search_location**: Search cities and locations globally
 - **get_elevation**: Get terrain elevation for any coordinates
 - **get_ocean_currents**: Get ocean currents and sea surface temperature

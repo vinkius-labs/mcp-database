@@ -33,14 +33,14 @@ Turn your **OpenSearch** cluster into an AI-native vector database. Create k-NN 
 
 
 ## Available Tools (6)
-- **search**: Provide the exact index name and a JSON-stringified dense float vector array to find conceptually similar embeddings natively.
-
-Execute a K-Nearest Neighbors (k-NN) vector search against OpenSearch
-- **list_indexes**: List all explicit indexes residing on the OpenSearch cluster
 - **get_index**: Retrieve explicit OpenSearch index mapping and settings
 - **index_document**: This executes a fast transactional atomic insertion into the embedding space.
 
 Upsert a singular vector document directly into an OpenSearch KNN index
+- **list_indexes**: List all explicit indexes residing on the OpenSearch cluster
+- **search**: Provide the exact index name and a JSON-stringified dense float vector array to find conceptually similar embeddings natively.
+
+Execute a K-Nearest Neighbors (k-NN) vector search against OpenSearch
 - **delete_document**: Delete an explicit vector document bounding from OpenSearch
 - **create_index**: knn: true` and mapping a rigid dynamic dense vector field optimized for cosine similarity.
 

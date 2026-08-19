@@ -33,11 +33,11 @@ Connect your **PostgreSQL + pgvector** database to any AI agent and manage vecto
 
 
 ## Available Tools (6)
-- **search_vectors**: Vector similarity search
-- **list_tables**: List tables
-- **insert_vector**: Insert a vector
 - **create_index**: Create vector index
 - **create_table**: Create vector table
+- **list_tables**: List tables
+- **search_vectors**: Vector similarity search
+- **insert_vector**: Insert a vector
 - **delete_vector**: Delete a vector
 
 

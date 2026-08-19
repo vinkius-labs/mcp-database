@@ -36,11 +36,11 @@ Connect your **MongoDB Atlas** cluster to any AI agent and take full control of 
 
 ## Available Tools (6)
 - **search**: Perform highly-dimensional Vector similarity search using $vectorSearch
+- **create_index**: Create literal standard embedding Search Index bound to dimensions
+- **delete**: Delete literal documents bounded by the parsed MongoDB filters
 - **find**: Find standard MongoDB documents resolving standard query filters
 - **insert**: Insert a distinct generic document into standard target collection
-- **delete**: Delete literal documents bounded by the parsed MongoDB filters
 - **list_collections**: List accessible data collections bound explicitly inside Atlas limits
-- **create_index**: Create literal standard embedding Search Index bound to dimensions
 
 
 ## 💬 Prompt Examples
