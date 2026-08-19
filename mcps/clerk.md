@@ -36,12 +36,12 @@ No more manual status checking or digging through user tables in the portal. You
 
 
 ## Available Tools (6)
-- **create_auth_invitation**: Send an invitation
-- **create_auth_organization**: Create an organization
 - **get_auth_user_details**: Get user details
 - **list_auth_invitations**: List invitations
 - **list_auth_organizations**: List organizations
 - **list_auth_users**: List all users
+- **create_auth_invitation**: Send an invitation
+- **create_auth_organization**: Create an organization
 
 
 ## 💬 Prompt Examples

@@ -37,13 +37,6 @@ Connect your **Coupa** instance to any AI agent and manage procurement operation
 
 
 ## Available Tools (10)
-- **approve_purchase_order**: Touches workflow and authorization boundary states.
-
-Approve a pending purchase order
-- **create_purchase_order**: Resolves supplier links, line items, and accounting allocations from the provided JSON payload.
-
-Create a new purchase order
-- **get_supplier_details**: Get full profile for a specific supplier
 - **list_contracts**: Resolves contract terms, validity periods, and associated suppliers.
 
 List active procurement contracts
@@ -53,6 +46,13 @@ List invoices and their payment status
 - **query_coupa_resource**: Resolves raw JSON data from the specified API boundary.
 
 Access any Coupa REST API resource directly
+- **approve_purchase_order**: Touches workflow and authorization boundary states.
+
+Approve a pending purchase order
+- **create_purchase_order**: Resolves supplier links, line items, and accounting allocations from the provided JSON payload.
+
+Create a new purchase order
+- **get_supplier_details**: Get full profile for a specific supplier
 - **get_purchase_order**: Touches financial, supplier, and shipping boundary data.
 
 Get details for a specific purchase order

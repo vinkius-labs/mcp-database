@@ -34,56 +34,56 @@ Connect your **HashiCorp Vault** instance to any AI agent to automate secrets ma
 
 
 ## Available Tools (50)
-- **approle_login**: Login using AppRole authentication
 - **create_aws_role**: Create an AWS role
 - **generate_database_creds**: Generate dynamic database credentials
-- **read_kv_metadata**: Read metadata for a KV v2 secret
-- **read_kv_secret**: Read a secret from KV v2 engine
-- **configure_aws_root**: Configure AWS root credentials
-- **configure_kubernetes_auth**: Configure Kubernetes authentication
-- **github_login**: Login using GitHub personal access token
-- **issue_pki_cert**: Issue a new PKI certificate
-- **kubernetes_login**: Login using Kubernetes authentication
 - **list_audit_devices**: List enabled audit devices
 - **list_auth_methods**: List enabled auth methods
 - **list_kv_secrets**: List secrets in a KV v2 engine path
-- **configure_database**: Configure a database connection
 - **create_acl_policy**: Create or update an ACL policy
-- **create_approle_role**: Create or update an AppRole role
-- **create_database_role**: Create a database role
 - **create_pki_role**: Create a PKI role
 - **create_token**: Create a new Vault token
 - **create_transit_key**: Create a new Transit key
-- **create_userpass_user**: Create a new Userpass user
 - **decrypt_transit**: Decrypt data using Transit engine
 - **delete_kv_secret**: Delete the latest version of a KV v2 secret
-- **enable_audit_device**: Enable an audit device
 - **enable_auth_method**: Enable a new auth method
 - **enable_engine**: Enable a new secrets engine
-- **encrypt_transit**: Encrypt data using Transit engine
 - **generate_approle_secret_id**: Generate a new Secret ID for an AppRole
-- **generate_aws_creds**: Generate dynamic AWS credentials
-- **generate_pki_root**: Generate a new PKI root certificate
 - **get_init_status**: Check Vault initialization status
 - **get_openapi_spec**: Generate OpenAPI V3 document of mounted backends
 - **get_system_health**: Check Vault system health
 - **initialize_vault**: Initialize a new Vault cluster
 - **list_mounts**: List mounted secrets engines
 - **list_token_accessors**: List token accessors (requires sudo)
-- **lookup_lease**: Lookup a lease by ID
 - **lookup_self_token**: Lookup details about the current Vault token
+- **revoke_self_token**: Revoke the current Vault token
+- **rotate_transit_key**: Rotate a Transit key
+- **write_kv_secret**: Create or update a secret in KV v2 engine
+- **approle_login**: Login using AppRole authentication
+- **configure_aws_root**: Configure AWS root credentials
+- **configure_database**: Configure a database connection
+- **configure_kubernetes_auth**: Configure Kubernetes authentication
+- **create_approle_role**: Create or update an AppRole role
+- **create_database_role**: Create a database role
+- **create_userpass_user**: Create a new Userpass user
+- **enable_audit_device**: Enable an audit device
+- **encrypt_transit**: Encrypt data using Transit engine
+- **generate_aws_creds**: Generate dynamic AWS credentials
+- **generate_pki_root**: Generate a new PKI root certificate
+- **github_login**: Login using GitHub personal access token
+- **issue_pki_cert**: Issue a new PKI certificate
+- **kubernetes_login**: Login using Kubernetes authentication
+- **list_acl_policies**: List ACL policies
+- **lookup_lease**: Lookup a lease by ID
 - **map_github_team**: Map a GitHub team to Vault policies
+- **read_kv_metadata**: Read metadata for a KV v2 secret
+- **read_kv_secret**: Read a secret from KV v2 engine
 - **renew_lease**: Renew a lease
 - **renew_self_token**: Renew the current Vault token
 - **revoke_lease**: Revoke a lease
 - **revoke_pki_cert**: Revoke a PKI certificate
-- **revoke_self_token**: Revoke the current Vault token
-- **rotate_transit_key**: Rotate a Transit key
 - **seal_vault**: Seal the Vault
 - **unseal_vault**: Unseal the Vault with a key share
 - **userpass_login**: Login using Username and Password
-- **write_kv_secret**: Create or update a secret in KV v2 engine
-- **list_acl_policies**: List ACL policies
 
 
 ## 💬 Prompt Examples

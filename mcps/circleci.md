@@ -36,12 +36,12 @@ Connect your **CircleCI** account to any AI agent and take full control of your 
 
 
 ## Available Tools (8)
-- **get_my_cci_profile**: Retrieve information about the authenticated user
-- **get_workflow_details**: Get detailed information for a specific workflow
 - **list_cci_contexts**: List shared contexts for an organization
 - **list_workflow_jobs**: List all jobs within a specific workflow
-- **list_cci_pipelines**: List recent CI/CD pipelines
 - **trigger_cci_pipeline**: Trigger a new pipeline for a project
+- **get_my_cci_profile**: Retrieve information about the authenticated user
+- **get_workflow_details**: Get detailed information for a specific workflow
+- **list_cci_pipelines**: List recent CI/CD pipelines
 - **get_job_details**: Get detailed information for a specific job
 - **list_pipeline_workflows**: List all workflows within a specific pipeline
 

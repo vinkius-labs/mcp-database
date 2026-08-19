@@ -43,21 +43,21 @@ Get Google Sheets spreadsheet metadata: title, timezone, locale, and list of all
 - **sheets.read**: Range uses A1 notation: "SheetName!A1:D10". If no sheet name, defaults to first sheet. To read multiple ranges in one call, use sheets.batch_read. To discover sheet names and dimensions first, use sheets.info. Present results as a Markdown table with the first row as headers.
 
 Read cell values from a Google Sheets range in A1 notation (e.g. "Sheet1!A1:D10" or "A:Z")
-- **sheets.batch_read**: Provide ranges as comma-separated A1 notation strings (e.g. "Sheet1!A1:D10, Summary!A:B"). For a single range, use sheets.read instead.
-
-Read multiple cell ranges from a Google Sheet in a single API call — more efficient than calling sheets.read multiple times
-- **sheets.write**: Provide values as a 2D JSON array: [["row1col1","row1col2"],["row2col1","row2col2"]]. Uses USER_ENTERED input — formulas (starting with =) will be evaluated. WARNING: This overwrites existing data in the range. To add rows without overwriting, use sheets.append instead. Always confirm with the user before writing to production spreadsheets.
-
-Write data to a Google Sheets range — overwrites existing values. Accepts 2D array of rows and columns
 - **sheets.append**: Rows are inserted after the last row of existing data in the table range. Provide values as a 2D JSON array: [["val1","val2"],["val3","val4"]]. For overwriting a specific range, use sheets.write instead.
 
 Append new rows to the end of a Google Sheet table — does not overwrite existing data
+- **sheets.batch_read**: Provide ranges as comma-separated A1 notation strings (e.g. "Sheet1!A1:D10, Summary!A:B"). For a single range, use sheets.read instead.
+
+Read multiple cell ranges from a Google Sheet in a single API call — more efficient than calling sheets.read multiple times
 - **sheets.clear**: Note: formatting (colors, borders, fonts) is preserved — only values are removed. WARNING: This is destructive. Always confirm with the user before clearing. To clear a whole sheet, use the sheet name with no range: "Sheet1".
 
 Clear all values in a Google Sheets range — removes cell content but preserves formatting and formulas structure
 - **sheets.create**: Returns the spreadsheet ID and a direct edit URL. After creating, use sheets.write or sheets.append to add data.
 
 Create a new blank Google Sheets spreadsheet with a given title
+- **sheets.write**: Provide values as a 2D JSON array: [["row1col1","row1col2"],["row2col1","row2col2"]]. Uses USER_ENTERED input — formulas (starting with =) will be evaluated. WARNING: This overwrites existing data in the range. To add rows without overwriting, use sheets.append instead. Always confirm with the user before writing to production spreadsheets.
+
+Write data to a Google Sheets range — overwrites existing values. Accepts 2D array of rows and columns
 
 
 ## 💬 Prompt Examples

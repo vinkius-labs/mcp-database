@@ -36,9 +36,9 @@ Connect your **Cohere** account to any AI agent and take full control of your en
 
 
 ## Available Tools (5)
-- **rerank_documents**: Rerank documents by semantic relevance to a query
-- **chat_completion**: Generate conversational text responses using Cohere chat models
 - **list_models**: List all available Cohere models on your plan
+- **chat_completion**: Generate conversational text responses using Cohere chat models
+- **rerank_documents**: Rerank documents by semantic relevance to a query
 - **tokenize_text**: Tokenize text into token IDs for a specific model
 - **embed_texts**: Generate dense vector embeddings from text using Cohere models
 

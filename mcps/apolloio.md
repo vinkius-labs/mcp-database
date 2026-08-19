@@ -36,17 +36,17 @@ No more manual toggling between browser tabs to find emails or check prospect st
 
 
 ## Available Tools (12)
+- **get_saved_contact**: Get contact by ID
+- **get_api_health**: Get API and account status
+- **list_connected_emails**: Get sender accounts
+- **search_companies**: Find organizations
+- **list_saved_contacts**: List your contacts
 - **add_to_sequence**: Enroll contact in sequence
 - **enrich_company_data**: Get company metadata
 - **enrich_person_data**: Get full profile details
-- **get_saved_contact**: Get contact by ID
 - **get_credit_info**: Get usage and credits
-- **list_connected_emails**: Get sender accounts
-- **get_api_health**: Get API and account status
 - **list_sales_sequences**: List email sequences
 - **list_team_users**: List account users
-- **search_companies**: Find organizations
-- **list_saved_contacts**: List your contacts
 - **search_people**: Find prospects
 
 

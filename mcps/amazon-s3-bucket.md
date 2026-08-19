@@ -43,10 +43,10 @@ AI agents should follow the **principle of least privilege**. Granting full S3 a
 
 
 ## Available Tools (7)
-- **get_bucket_policy**: Get bucket policy
 - **get_object_data**: Get object content
 - **get_object_metadata**: Get object metadata
 - **put_object**: Upload an object
+- **get_bucket_policy**: Get bucket policy
 - **delete_object**: Delete an object
 - **get_bucket_acl**: Get bucket ACL
 - **list_objects**: Can be filtered by prefix and delimiter.

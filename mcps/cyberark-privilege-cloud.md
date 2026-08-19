@@ -42,22 +42,22 @@ Delete a privileged account from the CyberArk Vault
 - **get_account**: Necessary before rotating or interacting with an account.
 
 Get detailed properties for a specific vaulted account
-- **get_safe**: Get details and metadata for a specific PAM Safe
 - **list_accounts**: These represent highly sensitive credentials (Root, Administrator, Service Accounts). Includes the bounding platform, Safe allocation, address, and rotational status. Use the search string to narrow targets.
 
 Search and list privileged accounts vaulted in CyberArk
-- **list_groups**: Permissions to Safes are canonically granted to Groups rather than individual users to enforce RBAC best practices. Used to verify PAM logical access architectures.
-
-List CyberArk Vault User Groups
 - **list_safes**: Safes are the fundamental logical containers separating credentials physically and logically. Required to locate where specific critical tier-0 credentials or local admin passwords reside.
 
 List all secure Safes in CyberArk Privileged Access Manager
-- **list_users**: Identifies active vault administrators, auditors, and human end-users consuming PSM (Privileged Session Manager) sessions.
-
-List all CyberArk users (local and synchronized)
 - **retrieve_password**: Highly audited endpoint triggering SIEM alerts. A justification reason is mandatory. After retrieval, exclusive access platforms may lock the credential until check-in or auto-rotation.
 
 Retrieve the clear-text password for an account (check-out)
+- **get_safe**: Get details and metadata for a specific PAM Safe
+- **list_groups**: Permissions to Safes are canonically granted to Groups rather than individual users to enforce RBAC best practices. Used to verify PAM logical access architectures.
+
+List CyberArk Vault User Groups
+- **list_users**: Identifies active vault administrators, auditors, and human end-users consuming PSM (Privileged Session Manager) sessions.
+
+List all CyberArk users (local and synchronized)
 - **terminate_session**: Used as an active incident response mechanism if a SOC analyst or anomalous behavior engine detects unauthorized actions mid-session.
 
 Forcibly terminate an active Privileged Session (PSM/PSMP)

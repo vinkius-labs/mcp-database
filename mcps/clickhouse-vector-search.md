@@ -35,15 +35,15 @@ Connect your **ClickHouse** cluster to any AI agent and take full control of you
 
 
 ## Available Tools (7)
-- **execute_sql**: Provision a highly-available SQL execution pushing arbitrary arbitrary DML/DDL or SELECTs
-- **vector_search**: Identify explicit mathematical distance traces routing Vector Embeddings
 - **list_databases**: Identify bounded logical arrays managing top-level ClickHouse schemas
-- **list_tables**: Retrieve the exact structural matching verifying table limits inside a database
 - **describe_table**: Perform structural extraction of properties driving active column schemas
-- **get_table_stats**: Extracts explicitly attached internal structural states pulling cluster health
 - **get_version**: g. HNSW support).
 
 Identify precise active cluster limits spanning the execution runtime
+- **execute_sql**: Provision a highly-available SQL execution pushing arbitrary arbitrary DML/DDL or SELECTs
+- **get_table_stats**: Extracts explicitly attached internal structural states pulling cluster health
+- **list_tables**: Retrieve the exact structural matching verifying table limits inside a database
+- **vector_search**: Identify explicit mathematical distance traces routing Vector Embeddings
 
 
 ## 💬 Prompt Examples

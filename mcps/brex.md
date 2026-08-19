@@ -34,17 +34,17 @@ The **Brex MCP Server** bridges standard large language models directly via the 
 - **brex_create_card**: Useful for giving employees isolated cards for SaaS subscriptions.
 
 Issue a dynamic Virtual Corporate Card
+- **brex_get_balance**: Get main cash balance of the Brex Cash accounts
+- **brex_list_cards**: List all issued cards across the company
+- **brex_list_vendors**: List saved Vendors inside Brex AP
+- **brex_pay_vendor**: Orchestrate a vendor payment (Send Money)
+- **brex_list_users**: List all users in the Brex company account
 - **brex_create_user**: You must provide a valid email, first name, and last name.
 
 Invite a new employee / user to Brex
 - **brex_create_vendor**: Create a Vendor in AP (Accounts Payable)
-- **brex_get_balance**: Get main cash balance of the Brex Cash accounts
 - **brex_list_budgets**: List budget programs assigned to teams
-- **brex_list_cards**: List all issued cards across the company
 - **brex_list_transactions**: Sweep historical Brex card and account transactions
-- **brex_list_users**: List all users in the Brex company account
-- **brex_list_vendors**: List saved Vendors inside Brex AP
-- **brex_pay_vendor**: Orchestrate a vendor payment (Send Money)
 
 
 ## 💬 Prompt Examples

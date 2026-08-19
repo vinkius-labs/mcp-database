@@ -38,14 +38,14 @@ No more switching between your calendar app and your workspace. Your AI agent be
 
 
 ## Available Tools (10)
-- **get_user**: Get the authenticated Calendly user profile including name, email, timezone, avatar URL, scheduling URL, organization URI, and current plan
 - **list_event_types**: List all event types configured for a Calendly user (meeting templates)
+- **get_user**: Get the authenticated Calendly user profile including name, email, timezone, avatar URL, scheduling URL, organization URI, and current plan
 - **get_event_type**: Retrieve detailed configuration for a specific Calendly event type by UUID
 - **list_scheduled_events**: List all scheduled events (past or upcoming) for a Calendly user
-- **get_scheduled_event**: Get full details of a specific scheduled Calendly event by tracking UUID
-- **list_invitees**: List all invitees/attendees for a specific Calendly scheduled event
 - **cancel_event**: Cancel a scheduled Calendly event with an optional cancellation reason sent to the invitee
+- **get_scheduled_event**: Get full details of a specific scheduled Calendly event by tracking UUID
 - **list_availability**: Retrieve all availability schedules configured for a Calendly user
+- **list_invitees**: List all invitees/attendees for a specific Calendly scheduled event
 - **get_available_times**: Get available booking time slots for a specific Calendly event type within an explicit date range
 - **list_org_members**: List all members of the Calendly organization retrieving team structures
 
