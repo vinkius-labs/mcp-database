@@ -35,18 +35,9 @@ Connect your **Basecamp** account to any AI agent and take full control of your 
 
 
 ## Available Tools (17)
-- **complete_todo**: This is separate from archiving or trashing — a completed to-do remains active but is marked as done. Use uncomplete_todo to reverse this action.
-
-Mark a to-do item as completed
-- **create_comment**: ). The recording_id is the unique numeric ID of the item you want to comment on. The content must be provided as rich text (HTML). All subscribers to the recording will be notified of the new comment.
-
-Add a comment to any Basecamp recording
 - **create_project**: The project will be initialized with default tools (message board, to-do set, schedule, etc.) enabled via its dock. Returns the newly created project with its numeric ID and dock tool IDs.
 
 Create a new project in Basecamp
-- **create_todo**: Requires the todolist_id and the content (title) of the to-do. Optionally include a rich text description, assignee IDs (array of person IDs), and a due date in YYYY-MM-DD format. The to-do will be created as pending (not completed).
-
-Create a new to-do item in a to-do list
 - **get_message**: Get full details of a specific message
 - **get_my_profile**: Use this to verify connectivity or identify the current operator.
 
@@ -61,24 +52,33 @@ Get full details of a specific project
 - **list_messages**: Each message includes title, content preview, author, category, and creation date. You need the message_board_id which can be found via the project dock.
 
 List all messages on a project message board
-- **list_people**: Useful for finding assignee IDs before creating or updating to-dos.
-
-List all people in the Basecamp account
 - **list_project_people**: Returns names, emails, and roles. Useful for checking team composition before assigning tasks.
 
 List all people assigned to a specific project
-- **list_projects**: Optionally filter by status: "active" (default), "archived", or "trashed". Each project includes its name, description, purpose, dock (enabled tools), and bookmark status.
-
-List all projects in Basecamp
 - **list_todos**: By default returns only pending (not completed) items. Set completed to true to see completed items instead. Each to-do includes its content, assignees, due date, completion status, and comments count. You need the todolist_id which can be found via the project dock.
 
 List all to-dos in a specific to-do list
-- **uncomplete_todo**: Use this when a previously completed task needs to be reopened or reworked.
-
-Mark a completed to-do item as pending again
 - **update_project**: At least one of name or description must be provided. Returns the updated project details including the full dock listing.
 
 Update an existing project in Basecamp
+- **complete_todo**: This is separate from archiving or trashing — a completed to-do remains active but is marked as done. Use uncomplete_todo to reverse this action.
+
+Mark a to-do item as completed
+- **create_comment**: ). The recording_id is the unique numeric ID of the item you want to comment on. The content must be provided as rich text (HTML). All subscribers to the recording will be notified of the new comment.
+
+Add a comment to any Basecamp recording
+- **create_todo**: Requires the todolist_id and the content (title) of the to-do. Optionally include a rich text description, assignee IDs (array of person IDs), and a due date in YYYY-MM-DD format. The to-do will be created as pending (not completed).
+
+Create a new to-do item in a to-do list
+- **list_people**: Useful for finding assignee IDs before creating or updating to-dos.
+
+List all people in the Basecamp account
+- **list_projects**: Optionally filter by status: "active" (default), "archived", or "trashed". Each project includes its name, description, purpose, dock (enabled tools), and bookmark status.
+
+List all projects in Basecamp
+- **uncomplete_todo**: Use this when a previously completed task needs to be reopened or reworked.
+
+Mark a completed to-do item as pending again
 - **update_todo**: At least one field must be provided. Does not affect completion status — use the complete_todo or uncomplete_todo tools for that.
 
 Update an existing to-do item in Basecamp

@@ -36,13 +36,13 @@ No more manual toggling between dozens of provider dashboards or managing multip
 
 
 ## Available Tools (5)
+- **transcribe_audio_to_text**: Transcribe audio files to text
+- **convert_text_to_speech**: Convert text to audio
+- **list_available_ai_models**: List all available AI models
 - **create_ai_chat_completion**: ) and retrieves the generated text through the CometAPI unified gateway.
 
 Generate AI text response via OpenAI-compatible API
-- **transcribe_audio_to_text**: Transcribe audio files to text
 - **generate_ai_image**: Generate an image from a text prompt
-- **convert_text_to_speech**: Convert text to audio
-- **list_available_ai_models**: List all available AI models
 
 
 ## 💬 Prompt Examples

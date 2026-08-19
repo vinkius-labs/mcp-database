@@ -37,10 +37,10 @@ No more manual file uploading or complex latency tuning in the portal. Your AI a
 
 ## Available Tools (6)
 - **list_available_models**: List high-performance AI models
+- **convert_text_to_speech**: Generate audio from text (TTS)
 - **get_project_usage**: Check API usage and limits
 - **list_api_keys**: List active API keys
 - **list_deepgram_projects**: List your Deepgram projects
-- **convert_text_to_speech**: Generate audio from text (TTS)
 - **transcribe_audio_url**: Transcribe an audio file via URL
 
 

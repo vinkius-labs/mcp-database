@@ -36,19 +36,19 @@ No more manual toggling between browser tabs to check row statuses. Your AI acts
 
 
 ## Available Tools (11)
-- **delete_rows**: Remove rows from a table
 - **get_doc_details**: Get metadata for a doc
-- **get_table_details**: Get details for a table
 - **insert_rows**: Add new rows to a table
+- **get_table_details**: Get details for a table
+- **delete_rows**: Remove rows from a table
 - **list_columns**: List columns for a table
 - **list_docs**: List your Coda documents
+- **get_user_profile**: Get your Coda profile
 - **list_formulas**: List formulas in a document
 - **list_rows**: Supports filtering.
 
 List rows from a table
 - **list_tables**: List tables in a document
 - **update_row**: Update fields in a row
-- **get_user_profile**: Get your Coda profile
 
 
 ## 💬 Prompt Examples

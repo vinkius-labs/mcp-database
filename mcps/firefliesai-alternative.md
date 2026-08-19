@@ -36,18 +36,18 @@ No more manual note-taking or scrubbing through hours of recordings to find a de
 
 
 ## Available Tools (12)
-- **add_to_live_meeting**: Invite bot to live call
-- **ask_fred**: Ask AI about a meeting
 - **delete_transcript**: Delete a meeting record
 - **get_account_info**: Get my profile
 - **get_ai_app_outputs**: Get AI App responses
 - **get_transcript**: Get transcript details
 - **list_soundbites**: List meeting soundbites
-- **list_transcripts**: List all meeting transcripts
 - **list_team_users**: List organization users
 - **list_webhooks**: List active webhooks
 - **update_meeting_title**: Update meeting title
 - **upload_audio**: Transcribe audio file
+- **add_to_live_meeting**: Invite bot to live call
+- **ask_fred**: Ask AI about a meeting
+- **list_transcripts**: List all meeting transcripts
 
 
 ## 💬 Prompt Examples

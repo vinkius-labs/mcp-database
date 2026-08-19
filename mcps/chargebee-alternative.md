@@ -28,13 +28,10 @@ Connect your **Chargebee** site to any AI agent and take full control of your bi
 
 
 ## Available Tools (10)
-- **cancel_subscription**: Cancel an existing subscription
 - **create_customer**: Create a new customer profile
-- **create_subscription**: Create a new subscription for a customer
 - **get_customer**: Get details for a specific customer
 - **get_subscription**: Get details for a specific subscription
 - **list_addons**: List available product addons
-- **list_customers**: List Chargebee customers
 - **list_invoices**: Can be filtered by status or customer.
 
 List Chargebee invoices
@@ -42,6 +39,9 @@ List Chargebee invoices
 - **list_subscriptions**: Supports filtering via optional parameters.
 
 List Chargebee subscriptions
+- **cancel_subscription**: Cancel an existing subscription
+- **create_subscription**: Create a new subscription for a customer
+- **list_customers**: List Chargebee customers
 
 
 ## 💬 Prompt Examples

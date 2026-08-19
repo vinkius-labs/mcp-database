@@ -37,19 +37,19 @@ Connect your **Microsoft Clarity** account to any AI agent and unlock behavioral
 
 
 ## Available Tools (13)
-- **check_clarity_status**: Verify connectivity
 - **get_dashboard**: Get dashboard metrics
-- **get_heatmap**: Get heatmap data
 - **get_live_insights**: Get live insights
 - **get_project**: Get project details
 - **get_scroll_depth**: Get scroll depth
 - **list_dead_clicks**: List dead clicks
-- **list_heatmaps**: List heatmaps
 - **list_projects**: List projects
-- **list_rage_clicks**: List rage clicks
-- **list_recordings**: List recordings
 - **list_top_pages**: List top pages
 - **get_recording**: Get recording details
+- **check_clarity_status**: Verify connectivity
+- **get_heatmap**: Get heatmap data
+- **list_heatmaps**: List heatmaps
+- **list_rage_clicks**: List rage clicks
+- **list_recordings**: List recordings
 
 
 ## 💬 Prompt Examples

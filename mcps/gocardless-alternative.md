@@ -37,18 +37,18 @@ No more manual payment tracking or digging through bank files. Your AI acts as y
 
 
 ## Available Tools (12)
-- **collect_payment**: Trigger new payment
 - **get_customer_details**: Get payer info
 - **get_mandate_details**: Get authorization info
 - **get_payment_status**: Check transaction state
 - **list_account_creditors**: List payout recipients
 - **list_customers**: List bank payers
-- **list_system_events**: Get activity log
-- **list_active_mandates**: List payment authorizations
 - **list_payment_history**: List all transactions
 - **list_recurring_payments**: List all subscriptions
 - **stop_pending_payment**: Cancel payment
+- **collect_payment**: Trigger new payment
 - **create_new_customer**: Add payer to account
+- **list_active_mandates**: List payment authorizations
+- **list_system_events**: Get activity log
 
 
 ## 💬 Prompt Examples

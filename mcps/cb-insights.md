@@ -35,19 +35,19 @@ Connect your **CB Insights** enterprise account to any AI agent and take full co
 
 
 ## Available Tools (13)
-- **get_investor**: Get investor details
 - **get_org_competitors**: Get competitors
 - **get_org_funding**: Get organization funding
-- **get_organization**: Get organization details
-- **get_investor_portfolio**: Get investor portfolio
-- **list_deals_by_org**: List deals by organization
 - **list_deals**: List recent deals
+- **list_deals_by_org**: List deals by organization
 - **list_industries**: List industries
 - **list_investors**: List investors
-- **list_organizations**: Search organizations
 - **chat_cbi**: CB Insights AI chat
 - **get_deal**: Get deal details
 - **check_cbi_status**: Verify connectivity
+- **get_investor**: Get investor details
+- **get_investor_portfolio**: Get investor portfolio
+- **get_organization**: Get organization details
+- **list_organizations**: Search organizations
 
 
 ## 💬 Prompt Examples

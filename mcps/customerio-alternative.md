@@ -37,22 +37,22 @@ No more manual scrubbing through people tables or checking individual campaign l
 
 
 ## Available Tools (12)
-- **get_connection_status**: Check API health
-- **get_campaign_performance**: Check campaign stats
 - **get_customer_details**: Get person profile
-- **list_segment_members**: Get people in segment
-- **list_scheduled_broadcasts**: List one-to-many messages
 - **list_active_campaigns**: List automated campaigns
-- **list_newsletters**: List saved newsletters
 - **list_customers**: io.
 
 List audience people
+- **list_newsletters**: List saved newsletters
+- **list_scheduled_broadcasts**: List one-to-many messages
 - **list_audience_segments**: List user segments
 - **list_transactional_messages**: g. password resets).
 
 List 1-to-1 messages
 - **send_transactional_email**: Send individual email
 - **dispatch_broadcast**: Trigger manual broadcast
+- **get_campaign_performance**: Check campaign stats
+- **get_connection_status**: Check API health
+- **list_segment_members**: Get people in segment
 
 
 ## 💬 Prompt Examples

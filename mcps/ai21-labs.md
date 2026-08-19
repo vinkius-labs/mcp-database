@@ -36,18 +36,18 @@ No more manual toggling between writing tools or guessing complex prompt instruc
 
 
 ## Available Tools (10)
-- **ai21_paraphrase_text**: Paraphrase text
 - **ai21_segment_text**: Segment text by topic
-- **ai21_contextual_answers**: Answer questions based on context
 - **ai21_grammar_correction**: Grammatical error correction
-- **ai21_get_file**: Get file details
 - **ai21_text_improvements**: Suggest stylistic improvements
-- **ai21_list_files**: List uploaded files
-- **ai21_summarize_text**: Summarize text
+- **ai21_delete_file**: Delete a file
 - **ai21_chat_completion**: g. jamba-1.5-mini) to generate a conversational response.
 
 Generate chat completions
-- **ai21_delete_file**: Delete a file
+- **ai21_contextual_answers**: Answer questions based on context
+- **ai21_get_file**: Get file details
+- **ai21_list_files**: List uploaded files
+- **ai21_paraphrase_text**: Paraphrase text
+- **ai21_summarize_text**: Summarize text
 
 
 ## 💬 Prompt Examples

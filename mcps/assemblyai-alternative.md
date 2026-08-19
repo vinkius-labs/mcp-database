@@ -37,13 +37,13 @@ No more manual uploading to web portals or waiting for slow human transcriptions
 
 ## Available Tools (9)
 - **delete_transcript**: Delete a transcript
-- **get_chapters**: Get auto-chapters
 - **get_sentiments**: Get sentiment analysis
 - **get_speakers**: Get speaker labels
 - **get_summary**: Get auto-summary
-- **get_topics**: Get topic detection
 - **get_transcript**: Get transcript status/result
 - **list_transcripts**: List recent transcripts
+- **get_chapters**: Get auto-chapters
+- **get_topics**: Get topic detection
 - **transcribe_audio_url**: Transcribe audio URL
 
 
