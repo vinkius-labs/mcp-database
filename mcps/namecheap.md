@@ -36,13 +36,22 @@ Connect to **Namecheap** and manage your domain portfolio through natural conver
 
 
 ## Available Tools (10)
-- **get_ssl_info**: Get detailed info for an SSL certificate
-- **get_balance**: Returns the available balance in USD.
+- **get_domains**: Returns domain names, IDs, creation dates, expiration dates, lock status and expiry status. Supports pagination and search filtering.
 
-Get your Namecheap account balance
+List your Namecheap domains
+- **get_ssl_info**: Get detailed info for an SSL certificate
+- **set_dns_hosts**: Requires the domain name and a JSON array of DNS records with name, type, address and optional TTL/MXPref. This replaces ALL existing records, so include all records you want to keep. Record types: A, AAAA, CNAME, MX, TXT, NS, URL, URL301, FRAME.
+
+Set DNS records for a domain
 - **check_domain_availability**: Returns whether the domain is available, premium status and pricing info.
 
 Check if a domain name is available for registration
+- **get_ssl_certs**: Returns certificate names, types, expiration dates and activation status.
+
+List your SSL certificates
+- **get_balance**: Returns the available balance in USD.
+
+Get your Namecheap account balance
 - **get_dns_hosts**: ) for a specific domain. Returns host names, record types, values, TTL and MX preferences. Requires the domain's SLD and TLD (e.g. SLD="example", TLD="com").
 
 Get DNS records for a domain
@@ -51,15 +60,6 @@ Get DNS records for a domain
 Get nameservers for a domain
 - **get_domain_info**: Get detailed info for a specific domain
 - **get_domain_ns_info**: Get nameserver info for a domain
-- **get_domains**: Returns domain names, IDs, creation dates, expiration dates, lock status and expiry status. Supports pagination and search filtering.
-
-List your Namecheap domains
-- **get_ssl_certs**: Returns certificate names, types, expiration dates and activation status.
-
-List your SSL certificates
-- **set_dns_hosts**: Requires the domain name and a JSON array of DNS records with name, type, address and optional TTL/MXPref. This replaces ALL existing records, so include all records you want to keep. Record types: A, AAAA, CNAME, MX, TXT, NS, URL, URL301, FRAME.
-
-Set DNS records for a domain
 
 
 ## 💬 Prompt Examples

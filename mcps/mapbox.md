@@ -37,30 +37,30 @@ Connect to **Mapbox** and access world-class location services through natural c
 
 
 ## Available Tools (8)
-- **geocode**: Returns the place name, coordinates, address components (street, city, state, postal code, country), place type and bounding box. Use this to find coordinates for use with directions, distance matrix and other tools.
-
-Convert a place name to coordinates
 - **get_directions**: Returns route distance, duration, geometry, step-by-step instructions and maneuver data. Supports driving (mapbox/driving), walking (mapbox/walking) and cycling (mapbox/cycling) profiles. Coordinates are semicolon-separated "longitude,latitude" pairs (e.g. "-77.0365,38.8977;-74.006,40.7128" for DC to NYC).
 
 Get driving, walking or cycling directions
 - **get_distance_matrix**: Useful for logistics, delivery routing and travel planning. Returns a matrix of durations (seconds) and distances (meters) between all source-destination pairs. Coordinates are semicolon-separated "lon,lat" pairs. Supports driving, walking and cycling profiles.
 
 Get travel times between multiple origins and destinations
-- **reverse_geocode**: Returns the nearest address, city, state, country and other location details.
+- **get_static_map**: Returns a direct image URL that can be used in markdown, HTML or downloaded. Supports customizable zoom level and image dimensions.
 
-Convert coordinates to an address
+Generate a static map image for a location
 - **search_nearby**: Returns nearby places with names, addresses, categories, distances and coordinates. Use query to search for specific types of places (e.g. "restaurant", "gas station", "hotel").
 
 Search for places near coordinates
+- **geocode**: Returns the place name, coordinates, address components (street, city, state, postal code, country), place type and bounding box. Use this to find coordinates for use with directions, distance matrix and other tools.
+
+Convert a place name to coordinates
 - **get_elevation**: Useful for hiking, aviation and geographic research. Coordinates are comma-separated "lon,lat" pairs.
 
 Get elevation for coordinates
 - **get_isochrone**: Returns polygon contours showing the reachable area. Useful for determining service areas, commute ranges and accessibility. Coordinates are "lon,lat".
 
 Get reachable area within a time or distance
-- **get_static_map**: Returns a direct image URL that can be used in markdown, HTML or downloaded. Supports customizable zoom level and image dimensions.
+- **reverse_geocode**: Returns the nearest address, city, state, country and other location details.
 
-Generate a static map image for a location
+Convert coordinates to an address
 
 
 ## 💬 Prompt Examples

@@ -37,11 +37,11 @@ Empower your AI agent to orchestrate your entire corporate intelligence and lega
 ## Available Tools (7)
 - **list_sources**: List available data sources in LexisNexis
 - **search_companies**: Search for companies by name
-- **search_legal_cases**: Search for legal cases by summary keywords
-- **search_biographies**: Search for professional biographies
 - **search_news**: Search for news articles in the LexisNexis database
 - **get_case_details**: Get full details for a specific legal case
 - **get_company_dossier**: Get detailed information for a company
+- **search_biographies**: Search for professional biographies
+- **search_legal_cases**: Search for legal cases by summary keywords
 
 
 ## 💬 Prompt Examples

@@ -36,9 +36,30 @@ Connect to **Overpass API** (OpenStreetMap) and query the world's largest free g
 
 
 ## Available Tools (16)
-- **search_schools**: Returns school names, addresses, phone numbers, websites, student capacity and operator info. Bbox format: lat_min,lon_min,lat_max,lon_max.
+- **search_by_tag**: Bbox format: lat_min,lon_min,lat_max,lon_max (e.g. "51.249,-0.15,51.251,-0.10" for central London). Useful for finding specific OSM-tagged features.
 
-Search for schools in a bounding box
+Search OpenStreetMap elements by tag key/value in a bounding box
+- **search_fuel_stations**: Returns station names, brands, addresses, fuel types offered, opening hours and operator info. Bbox format: lat_min,lon_min,lat_max,lon_max.
+
+Search for fuel/gas stations in a bounding box
+- **search_hospitals**: Returns facility names, addresses, phone numbers, emergency services info, specialties and operator info. Bbox format: lat_min,lon_min,lat_max,lon_max.
+
+Search for hospitals and clinics in a bounding box
+- **search_hotels**: Returns hotel names, addresses, star ratings, phone numbers, websites and room info. Bbox format: lat_min,lon_min,lat_max,lon_max.
+
+Search for hotels in a bounding box
+- **search_nearby_amenities**: Common amenities: "restaurant", "cafe", "pharmacy", "atm", "bank", "hospital", "school", "supermarket", "fuel", "charging_station", "parking", "toilets", "police", "fire_station", "post_office".
+
+Search for specific amenities near a location
+- **search_parks**: Returns park names, addresses, area sizes, features (playgrounds, sports facilities) and operator info. Bbox format: lat_min,lon_min,lat_max,lon_max.
+
+Search for parks and green spaces in a bounding box
+- **search_pharmacies**: Returns pharmacy names, addresses, phone numbers, opening hours, dispensing info and operator info. Bbox format: lat_min,lon_min,lat_max,lon_max.
+
+Search for pharmacies in a bounding box
+- **search_shops**: Optional shop type filter: "supermarket", "convenience", "clothes", "bakery", "butcher", "electronics", "furniture", "hardware", "jewelry", "mall", "bookmaker", "car", "car_repair", "chemist", "florist", "gift", "hairdresser", "mobile_phone", "shoes", "sports", "toys". Bbox format: lat_min,lon_min,lat_max,lon_max.
+
+Search for shops in a bounding box
 - **custom_query**: The query should be valid Overpass QL syntax. The output format is automatically set to JSON. If no out statement is included, "out geom;" is appended automatically. Example: `node["amenity"="cafe"](51.5,-0.15,51.51,-0.14); out geom;`
 
 Execute a custom Overpass QL query
@@ -51,39 +72,18 @@ Search for ATMs in a bounding box
 - **search_by_name**: Optional amenity filter to narrow results. Returns matching elements with full details including addresses, phone numbers and websites.
 
 Search for OSM elements by name
-- **search_by_tag**: Bbox format: lat_min,lon_min,lat_max,lon_max (e.g. "51.249,-0.15,51.251,-0.10" for central London). Useful for finding specific OSM-tagged features.
-
-Search OpenStreetMap elements by tag key/value in a bounding box
 - **search_charging_stations**: Returns station names, addresses, connector types, charging speeds, operator info and access details. Bbox format: lat_min,lon_min,lat_max,lon_max.
 
 Search for EV charging stations in a bounding box
-- **search_fuel_stations**: Returns station names, brands, addresses, fuel types offered, opening hours and operator info. Bbox format: lat_min,lon_min,lat_max,lon_max.
-
-Search for fuel/gas stations in a bounding box
-- **search_hospitals**: Returns facility names, addresses, phone numbers, emergency services info, specialties and operator info. Bbox format: lat_min,lon_min,lat_max,lon_max.
-
-Search for hospitals and clinics in a bounding box
-- **search_hotels**: Returns hotel names, addresses, star ratings, phone numbers, websites and room info. Bbox format: lat_min,lon_min,lat_max,lon_max.
-
-Search for hotels in a bounding box
 - **search_nearby**: Useful for finding nearby amenities without defining a full bounding box. Returns names, addresses, distances and details.
 
 Search for OSM elements near a specific location
-- **search_nearby_amenities**: Common amenities: "restaurant", "cafe", "pharmacy", "atm", "bank", "hospital", "school", "supermarket", "fuel", "charging_station", "parking", "toilets", "police", "fire_station", "post_office".
-
-Search for specific amenities near a location
-- **search_parks**: Returns park names, addresses, area sizes, features (playgrounds, sports facilities) and operator info. Bbox format: lat_min,lon_min,lat_max,lon_max.
-
-Search for parks and green spaces in a bounding box
-- **search_pharmacies**: Returns pharmacy names, addresses, phone numbers, opening hours, dispensing info and operator info. Bbox format: lat_min,lon_min,lat_max,lon_max.
-
-Search for pharmacies in a bounding box
 - **search_restaurants**: Optional cuisine filter: "italian", "chinese", "japanese", "indian", "mexican", "thai", "french", "american", "pizza", "burger", "sushi", "vegan", "vegetarian". Bbox format: lat_min,lon_min,lat_max,lon_max.
 
 Search for restaurants in a bounding box
-- **search_shops**: Optional shop type filter: "supermarket", "convenience", "clothes", "bakery", "butcher", "electronics", "furniture", "hardware", "jewelry", "mall", "bookmaker", "car", "car_repair", "chemist", "florist", "gift", "hairdresser", "mobile_phone", "shoes", "sports", "toys". Bbox format: lat_min,lon_min,lat_max,lon_max.
+- **search_schools**: Returns school names, addresses, phone numbers, websites, student capacity and operator info. Bbox format: lat_min,lon_min,lat_max,lon_max.
 
-Search for shops in a bounding box
+Search for schools in a bounding box
 
 
 ## 💬 Prompt Examples

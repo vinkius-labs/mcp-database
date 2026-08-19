@@ -42,12 +42,12 @@ List image assets in Sanity
 - **list_users**: Useful for auditing project access and team management.
 
 List project members in Sanity
-- **search_documents**: Optionally filter by document types and set a result limit. Returns matching documents with their full content.
-
-Search documents in Sanity
 - **update_document**: Requires the document ID and a JSON object with the fields to set. For example: {"title": "Updated Title", "status": "published"}. Only provided fields will be modified.
 
 Update fields on a Sanity document
+- **search_documents**: Optionally filter by document types and set a result limit. Returns matching documents with their full content.
+
+Search documents in Sanity
 - **create_dataset**: Provide the dataset name (e.g. "staging", "development"). The dataset will be empty and ready for content. Dataset names must be lowercase alphanumeric.
 
 Create a new Sanity dataset

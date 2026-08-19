@@ -35,9 +35,9 @@ Empower your AI agent to orchestrate your entire corporate auditing and due dili
 
 
 ## Available Tools (6)
+- **get_api_status**: Check current API token usage and status
 - **get_company_details**: Get full details for a specific company by jurisdiction and number
 - **get_corporate_grouping**: Get details for a corporate grouping
-- **get_api_status**: Check current API token usage and status
 - **search_companies**: Search for companies by name or keyword
 - **search_officers**: Search for corporate officers and directors
 - **list_jurisdictions**: List all jurisdictions supported by OpenCorporates

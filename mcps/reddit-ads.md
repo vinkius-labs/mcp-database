@@ -39,12 +39,12 @@ Empower your AI agent to orchestrate your entire advertising ecosystem on Reddit
 - **list_ad_groups**: List Reddit Ads ad groups
 - **list_campaigns**: List Reddit Ads campaigns
 - **list_creative_assets**: List creative assets for an account
-- **get_report**: Get an advertising report
 - **list_ads**: List Reddit Ads
 - **get_campaign**: Get details for a specific campaign
+- **get_report**: Get an advertising report
 - **get_ad_account**: Get details for a specific ad account
-- **get_ad_group**: Get details for a specific ad group
 - **get_ad**: Get details for a specific ad
+- **get_ad_group**: Get details for a specific ad group
 
 
 ## 💬 Prompt Examples

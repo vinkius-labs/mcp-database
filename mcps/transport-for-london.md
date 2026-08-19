@@ -40,15 +40,18 @@ Connect to **Transport for London (TfL)** and access real-time London transit da
 
 Get live arrival predictions for a bus stop
 - **get_bike_point_detail**: Get detailed info for a specific bike docking station
+- **get_line_detail**: Supports tube, overground, DLR, Elizabeth line, tram and river bus lines.
+
+Get detailed information about a specific TfL line
+- **get_stop_details**: Useful for identifying the correct stop ID for arrival queries.
+
+Get details for a specific bus stop or station
 - **get_bike_points**: Returns bike availability, dock availability, station locations and status. Useful for finding nearby bikes for cycling journeys.
 
 Search for Santander Cycle (Boris Bike) docking stations
 - **get_journey**: Returns multiple route options with estimated duration, walking distance, fare cost, number of changes and step-by-step directions. Input locations can be station names, addresses or postcodes.
 
 Plan a journey between two points in London
-- **get_line_detail**: Supports tube, overground, DLR, Elizabeth line, tram and river bus lines.
-
-Get detailed information about a specific TfL line
 - **get_line_routes**: Returns the ordered list of stations the line serves. Useful for understanding the full journey path of a tube line.
 
 Get the route sequence for a TfL line
@@ -61,9 +64,6 @@ Get current road disruptions in London
 - **get_road_status**: Shows whether roads have Good, Minor or Severe congestion.
 
 Get status of London major roads
-- **get_stop_details**: Useful for identifying the correct stop ID for arrival queries.
-
-Get details for a specific bus stop or station
 - **search_stop**: Returns matching stops with their IDs, locations, modes and routes. Use the returned IDs with get_arrivals or get_stop_details.
 
 Search for bus stops and stations by name

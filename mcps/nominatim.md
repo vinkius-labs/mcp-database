@@ -38,21 +38,21 @@ No API key required — completely free, powered by OpenStreetMap community data
 
 
 ## Available Tools (5)
-- **get_details**: Returns the object's full name, display name, place rank, importance score, bounding box, parent place hierarchy, linked Wikipedia/Wikidata articles and optional extratags. OSM type: N (node), W (way), R (relation).
-
-Get detailed info for an OSM object
-- **lookup_osm**: IDs are formatted as "type{id}" where type is N (node), W (way) or R (relation). Multiple IDs are comma-separated. Returns the object's display name, coordinates, bounding box and properties.
-
-Look up OSM objects by ID
 - **reverse_geocode**: Returns the nearest address, city, state, country and other location details. Supports different zoom levels for varying detail granularity.
 
 Convert coordinates to an address
-- **search**: Returns results with coordinates, bounding box, display name, address components and OSM type/id. Supports structured searches with country codes and viewbox for region prioritization. Rate limited to 1 request/second.
+- **get_details**: Returns the object's full name, display name, place rank, importance score, bounding box, parent place hierarchy, linked Wikipedia/Wikidata articles and optional extratags. OSM type: N (node), W (way), R (relation).
 
-Search for places by name or address
+Get detailed info for an OSM object
 - **get_status**: Returns status message and response latency. Useful for verifying the service is operational before making other requests.
 
 Get Nominatim server status
+- **lookup_osm**: IDs are formatted as "type{id}" where type is N (node), W (way) or R (relation). Multiple IDs are comma-separated. Returns the object's display name, coordinates, bounding box and properties.
+
+Look up OSM objects by ID
+- **search**: Returns results with coordinates, bounding box, display name, address components and OSM type/id. Supports structured searches with country codes and viewbox for region prioritization. Rate limited to 1 request/second.
+
+Search for places by name or address
 
 
 ## 💬 Prompt Examples

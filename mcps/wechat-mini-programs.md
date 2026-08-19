@@ -35,18 +35,18 @@ Empower your AI agent to orchestrate your mini-app operations and subscriber eng
 
 
 ## Available Tools (10)
+- **get_account_status**: Check account connectivity
+- **get_phone_number**: Get user phone number
+- **get_visit_page_trend**: Get visit page trend
+- **image_security_check**: Check image for sensitive content
+- **send_subscribe_message**: Send subscribe message
 - **code_to_session**: login.
 
 Exchange code for session
 - **generate_standard_qrcode**: Generate standard QR code
-- **get_account_status**: Check account connectivity
-- **get_daily_summary**: Get daily summary trend
-- **get_phone_number**: Get user phone number
 - **generate_unlimited_qrcode**: Generate unlimited QR code
-- **get_visit_page_trend**: Get visit page trend
-- **image_security_check**: Check image for sensitive content
+- **get_daily_summary**: Get daily summary trend
 - **message_security_check**: Check text for sensitive content
-- **send_subscribe_message**: Send subscribe message
 
 
 ## 💬 Prompt Examples

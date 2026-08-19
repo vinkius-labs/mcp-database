@@ -40,15 +40,9 @@ No more switching to another terminal to run Redis commands. Your AI acts as an 
 
 
 ## Available Tools (23)
-- **decr**: If the key does not exist, it is initialized to 0 before the operation. Returns the new value after decrementing.
-
-Decrement a numeric value in Upstash Redis
 - **del**: Returns 1 if the key was deleted, 0 if it did not exist. WARNING: this operation is irreversible.
 
 Delete a key from Upstash Redis
-- **exists**: This is a lightweight way to check key presence without retrieving the value.
-
-Check if a key exists in Upstash Redis
 - **expire**: The key will be automatically deleted when the TTL reaches zero. Returns 1 if the timeout was set, 0 if the key does not exist.
 
 Set a TTL on a key in Upstash Redis
@@ -58,24 +52,15 @@ Get a value from Upstash Redis
 - **hget**: Returns null if the key or field does not exist.
 
 Get a field value from a Redis hash
-- **hgetall**: Returns an object with all fields and their values. Returns an empty object if the key does not exist.
-
-Get all fields and values from a Redis hash
 - **hset**: If the key does not exist, a new hash is created. If the field already exists, its value is overwritten. Returns the number of fields added (1 for new, 0 for updated).
 
 Set a field in a Redis hash
-- **incr**: If the key does not exist, it is initialized to 0 before the operation. Returns the new value after incrementing.
-
-Increment a numeric value in Upstash Redis
 - **list_keys**: Use "*" for all keys, "prefix:*" for keys with a prefix, or "*:suffix" for suffix matching. WARNING: KEYS can be slow on large databases — use sparingly.
 
 List keys in Upstash Redis
 - **llen**: Returns 0 if the key does not exist.
 
 Get the length of a Redis list
-- **lpush**: If the key does not exist, a new list is created. Returns the length of the list after the push.
-
-Push values to the left of a Redis list
 - **lrange**: Use 0 as start and -1 as stop to get all elements. Positive indices count from the head (0 = first), negative indices count from the tail (-1 = last).
 
 Get a range of elements from a Redis list
@@ -88,9 +73,6 @@ Publish a message to a Redis channel
 - **rpush**: If the key does not exist, a new list is created. Returns the length of the list after the push.
 
 Push values to the right of a Redis list
-- **set**: Optionally set an expiry time in seconds using the ex parameter. Overwrites any existing value at the key. Returns "OK" on success. This is the primary write operation for string data.
-
-Set a value in Upstash Redis
 - **sismember**: This is a fast O(1) membership check.
 
 Check if a member is in a Redis set
@@ -103,10 +85,28 @@ Remove members from a Redis set
 - **ttl**: Returns -1 if the key has no expiry, -2 if the key does not exist.
 
 Get the TTL of a key in Upstash Redis
+- **decr**: If the key does not exist, it is initialized to 0 before the operation. Returns the new value after decrementing.
+
+Decrement a numeric value in Upstash Redis
+- **exists**: This is a lightweight way to check key presence without retrieving the value.
+
+Check if a key exists in Upstash Redis
+- **hgetall**: Returns an object with all fields and their values. Returns an empty object if the key does not exist.
+
+Get all fields and values from a Redis hash
+- **incr**: If the key does not exist, it is initialized to 0 before the operation. Returns the new value after incrementing.
+
+Increment a numeric value in Upstash Redis
 - **key_type**: Get the data type of a key in Upstash Redis
+- **lpush**: If the key does not exist, a new list is created. Returns the length of the list after the push.
+
+Push values to the left of a Redis list
 - **sadd**: Duplicate members are ignored. If the key does not exist, a new set is created. Returns the number of members that were added.
 
 Add members to a Redis set
+- **set**: Optionally set an expiry time in seconds using the ex parameter. Overwrites any existing value at the key. Returns "OK" on success. This is the primary write operation for string data.
+
+Set a value in Upstash Redis
 
 
 ## 💬 Prompt Examples

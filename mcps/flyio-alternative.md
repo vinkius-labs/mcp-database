@@ -37,15 +37,6 @@ Stop using the CLI or web dashboard to manage individual VMs. Your AI acts as a 
 
 
 ## Available Tools (13)
-- **create_machine**: io app. Requires the Docker image reference (e.g. "registry.fly.io/myapp:latest"). Optionally set the region (e.g. "iad", "sjc", "nrt"), CPU cores (1-16), memory in MB (256-8192), guest CPU kind (shared, performance) and services config. Machines start in stopped state — use start_machine after creation.
-
-Create a new machine in a Fly.io app
-- **create_volume**: Requires the volume name and size in gigabytes. Optionally set the region. The volume must be attached to a machine via the machine config mounts.
-
-Create a persistent volume for a Fly.io app
-- **delete_machine**: The machine cannot be recovered. Optionally set force=true to delete even if the machine has an attached volume. Provide the app_name and machine_id. WARNING: this action is irreversible.
-
-Delete a Fly.io machine permanently
 - **get_app**: io app including its name, status, regions, organization and network configuration. Provide the app name (not ID).
 
 Get details for a specific Fly.io app
@@ -55,27 +46,36 @@ Get details for a specific Fly.io machine
 - **list_apps**: io account. Each app is a collection of machines (VMs) running your code across Fly.io's globalThis edge network. Returns app name, status, region and creation date. Use the app name for all subsequent machine, volume and certificate operations.
 
 List all Fly.io apps
-- **list_certificates**: io app. Each certificate has a hostname, status (issued, pending, failed) and source (lets_encrypt, self_signed, acme). Use this to audit HTTPS certificate status for your app's domains.
-
-List TLS/SSL certificates for a Fly.io app
-- **list_machines**: io app. Each machine has an ID, name, state (started, stopped, created, destroyed), region, image reference, CPU/memory config and IP addresses. Machines are the fundamental compute units on Fly.io.
-
-List machines (VMs) for a Fly.io app
 - **list_volumes**: io app. Each volume has an ID, name, state, size in GB, region and the machine it is attached to. Volumes provide persistent storage that survives machine restarts.
 
 List persistent volumes for a Fly.io app
 - **stop_machine**: The machine will stop and release its compute resources but retains its configuration and data. Provide the app_name and machine_id.
 
 Stop a running Fly.io machine
-- **update_machine**: You can modify the Docker image, CPU/memory allocation, services config, mounts and more. Provide the app_name, machine_id and a JSON body with the fields to update.
+- **create_machine**: io app. Requires the Docker image reference (e.g. "registry.fly.io/myapp:latest"). Optionally set the region (e.g. "iad", "sjc", "nrt"), CPU cores (1-16), memory in MB (256-8192), guest CPU kind (shared, performance) and services config. Machines start in stopped state — use start_machine after creation.
 
-Update a Fly.io machine configuration
+Create a new machine in a Fly.io app
+- **create_volume**: Requires the volume name and size in gigabytes. Optionally set the region. The volume must be attached to a machine via the machine config mounts.
+
+Create a persistent volume for a Fly.io app
+- **delete_machine**: The machine cannot be recovered. Optionally set force=true to delete even if the machine has an attached volume. Provide the app_name and machine_id. WARNING: this action is irreversible.
+
+Delete a Fly.io machine permanently
+- **list_certificates**: io app. Each certificate has a hostname, status (issued, pending, failed) and source (lets_encrypt, self_signed, acme). Use this to audit HTTPS certificate status for your app's domains.
+
+List TLS/SSL certificates for a Fly.io app
+- **list_machines**: io app. Each machine has an ID, name, state (started, stopped, created, destroyed), region, image reference, CPU/memory config and IP addresses. Machines are the fundamental compute units on Fly.io.
+
+List machines (VMs) for a Fly.io app
 - **restart_machine**: Useful for applying configuration changes or recovering from issues. Provide the app_name and machine_id.
 
 Restart a Fly.io machine
 - **start_machine**: The machine will boot and begin running its configured image. Provide the app_name and machine_id.
 
 Start a stopped Fly.io machine
+- **update_machine**: You can modify the Docker image, CPU/memory allocation, services config, mounts and more. Provide the app_name, machine_id and a JSON body with the fields to update.
+
+Update a Fly.io machine configuration
 
 
 ## 💬 Prompt Examples
