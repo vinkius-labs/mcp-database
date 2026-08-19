@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire inspirational research and quot
 
 
 ## Available Tools (4)
+- **get_zen_quotes_batch**: Get a batch of 50 random inspirational quotes
+- **get_random_zen_quote**: Get a random inspirational quote from ZenQuotes
 - **check_api_status**: io REST API.
 
 Check if the ZenQuotes API service is operational
-- **get_zen_quotes_batch**: Get a batch of 50 random inspirational quotes
-- **get_random_zen_quote**: Get a random inspirational quote from ZenQuotes
 - **get_zen_quote_of_the_day**: Get the inspirational quote of the day
 
 

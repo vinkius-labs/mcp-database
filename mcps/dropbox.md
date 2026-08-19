@@ -41,13 +41,11 @@ Connect your **Dropbox** account to any AI agent and take full control of your c
 - **list_folder**: Analyzes contents returning names, tags (`folder`/`file`), sizes, and server-modified times.
 
 List files and folders in a directory
-- **get_metadata**: Get file/folder metadata
 - **search_files**: Search files by name
-- **list_shared_links**: List all shared links
-- **list_shared_folders**: List all shared folders
-- **get_space_usage**: Get storage space usage
 - **get_account**: Get current account info
+- **get_space_usage**: Get storage space usage
 - **list_mountable_folders**: List mountable shared folders
+- **list_shared_folders**: List all shared folders
 - **create_folder**: Use full path like /my-project/assets.
 
 Create a new folder in Dropbox
@@ -55,6 +53,8 @@ Create a new folder in Dropbox
 
 Move or rename a file/folder
 - **create_shared_link**: Create a public shared link for a file or folder
+- **get_metadata**: Get file/folder metadata
+- **list_shared_links**: List all shared links
 - **copy_file**: Copy a file or folder
 
 

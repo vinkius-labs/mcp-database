@@ -47,6 +47,15 @@ Create or update a secret for a Cloudflare Worker
 - **create_tail_session**: log() output and exceptions. Returns a tail ID and WebSocket URL for streaming logs. Use this for debugging Workers in production or monitoring error output.
 
 Create a tail logging session for a Cloudflare Worker
+- **get_kv_key**: Returns the raw value as JSON. Use this to read configuration values, cached responses, or user data stored in KV.
+
+Get the value of a specific key in a KV namespace
+- **list_deployments**: Returns deployment IDs, version IDs, strategies (immediate, gradual), creation dates, and traffic percentages. Use this to review current deployment state, monitor gradual rollouts, or identify which version is live.
+
+List all deployments for a specific Cloudflare Worker
+- **query_d1**: Supports SELECT, INSERT, UPDATE, DELETE operations. Returns query results as JSON. Use this for data analysis, migrations, or ad-hoc queries. Requires database ID and SQL query string.
+
+Execute a SQL query against a D1 database
 - **create_worker_route**: Requires zone ID, URL pattern (e.g., "example.com/api/*"), and script name. Use this to expose your Worker at specific URL paths or domains.
 
 Create a new route pattern for a Cloudflare Worker
@@ -56,21 +65,18 @@ Delete a secret from a Cloudflare Worker
 - **delete_tail_session**: Requires script name and tail ID. Use this to clean up unused tail sessions when debugging is complete.
 
 Delete a tail logging session for a Cloudflare Worker
-- **delete_worker_route**: Use this to stop serving a Worker at specific URLs. Requires zone ID and route ID.
-
-Delete a route pattern from a Cloudflare Worker
 - **delete_worker**: This action cannot be undone. Requires the script name. Confirm with the user before proceeding.
 
 Delete a Cloudflare Worker script and all its associated resources
-- **get_kv_key**: Returns the raw value as JSON. Use this to read configuration values, cached responses, or user data stored in KV.
+- **delete_worker_route**: Use this to stop serving a Worker at specific URLs. Requires zone ID and route ID.
 
-Get the value of a specific key in a KV namespace
-- **get_worker_analytics**: Returns data for recent invocations. Use this to monitor Worker performance, identify errors, or track usage trends.
-
-Get analytics data for a specific Cloudflare Worker
+Delete a route pattern from a Cloudflare Worker
 - **get_worker**: Requires the script name from list_workers results. Use this to review Worker configuration before making updates or debugging.
 
 Get detailed information about a specific Cloudflare Worker
+- **get_worker_analytics**: Returns data for recent invocations. Use this to monitor Worker performance, identify errors, or track usage trends.
+
+Get analytics data for a specific Cloudflare Worker
 - **get_worker_version**: Requires script name and version ID from list_worker_versions results. Use this to audit version contents or prepare for rollback deployment.
 
 Get detailed information about a specific Worker version
@@ -80,9 +86,6 @@ Get analytics data for a specific Cloudflare zone
 - **list_d1_databases**: Returns database IDs, names, creation dates, and file sizes. Use this to identify available databases before querying.
 
 List all D1 databases in your Cloudflare account
-- **list_deployments**: Returns deployment IDs, version IDs, strategies (immediate, gradual), creation dates, and traffic percentages. Use this to review current deployment state, monitor gradual rollouts, or identify which version is live.
-
-List all deployments for a specific Cloudflare Worker
 - **list_kv_keys**: Returns key names, expiration metadata, and sizes. Use this to audit stored data or find specific keys before reading values.
 
 List all keys in a specific KV namespace
@@ -110,9 +113,6 @@ List all DNS zones in your Cloudflare account
 - **purge_cache**: Use this after deploying content changes or updating static assets. Requires zone ID.
 
 Purge all cached content for a specific zone
-- **query_d1**: Supports SELECT, INSERT, UPDATE, DELETE operations. Returns query results as JSON. Use this for data analysis, migrations, or ad-hoc queries. Requires database ID and SQL query string.
-
-Execute a SQL query against a D1 database
 
 
 ## 💬 Prompt Examples

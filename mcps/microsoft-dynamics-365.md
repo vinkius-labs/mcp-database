@@ -39,15 +39,20 @@ The entire Microsoft ecosystem — from Teams to Power BI to LinkedIn Sales Navi
 
 
 ## Available Tools (10)
+- **update_record**: Only specify the fields you want to change.
+
+Update an existing Dynamics 365 record
 - **count_records**: Useful for dashboards without fetching full records.
 
 Count records in a Dynamics 365 entity set
 - **create_record**: Provide field values as JSON. For lookups, use the @odata.bind format.
 
 Create a new record in Dynamics 365
-- **update_record**: Only specify the fields you want to change.
+- **list_cases**: List support cases (incidents)
+- **list_contacts**: List Dynamics 365 contacts
+- **list_opportunities**: Filter by stage, close date, or estimated value.
 
-Update an existing Dynamics 365 record
+List sales opportunities
 - **query_dataverse**: Common entity sets: accounts, contacts, opportunities, incidents (cases), leads, salesorders, invoices. Use OData filter syntax.
 
 Query any Dataverse entity set
@@ -57,11 +62,6 @@ Delete a Dynamics 365 record
 - **list_accounts**: Use filter to narrow results.
 
 List Dynamics 365 accounts
-- **list_opportunities**: Filter by stage, close date, or estimated value.
-
-List sales opportunities
-- **list_cases**: List support cases (incidents)
-- **list_contacts**: List Dynamics 365 contacts
 - **get_record**: Example: get_record("accounts", "00000000-0000-0000-0000-000000000001").
 
 Get a specific Dynamics 365 record

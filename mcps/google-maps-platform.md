@@ -34,9 +34,6 @@ Google Maps provides the gold standard in global mapping data, used by millions 
 
 
 ## Available Tools (9)
-- **search_nearby_places**: You can filter by "type" (e.g., "restaurant", "gas_station") or "keyword". Radius is in meters.
-
-Search for places of interest near a specific coordinate
 - **get_directions**: Supports modes: "driving" (default), "walking", "bicycling", "transit".
 
 Get travel directions between two points
@@ -46,21 +43,24 @@ Calculate travel distance and time for multiple origins and destinations
 - **get_elevation**: Input can be single "lat,lng" or multiple locations.
 
 Get elevation data for locations on the earth
+- **get_place_details**: Requires a valid Place ID obtained from other search tools.
+
+Get detailed information about a specific place using its Place ID
+- **get_timezone**: Essential for scheduling across time zones.
+
+Get timezone information for a specific location
 - **find_place_from_text**: Useful to get the Place ID or location before getting details.
 
 Find a place based on a text query
 - **geocode_address**: g., "1600 Amphitheatre Parkway, Mountain View, CA") and need the exact GPS coordinates. Returns the formatted address and the place_id.
 
 Convert a physical address into geographic coordinates (latitude/longitude)
-- **get_place_details**: Requires a valid Place ID obtained from other search tools.
-
-Get detailed information about a specific place using its Place ID
 - **reverse_geocode**: Useful for identifying locations from GPS data.
 
 Convert GPS coordinates back into a physical address
-- **get_timezone**: Essential for scheduling across time zones.
+- **search_nearby_places**: You can filter by "type" (e.g., "restaurant", "gas_station") or "keyword". Radius is in meters.
 
-Get timezone information for a specific location
+Search for places of interest near a specific coordinate
 
 
 ## 💬 Prompt Examples

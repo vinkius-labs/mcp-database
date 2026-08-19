@@ -33,23 +33,23 @@ Equip your AI agent with professional-grade player intelligence for the world's 
 
 
 ## Available Tools (11)
-- **get_banners**: List all profile banners available in Fortnite
 - **get_current_map**: Get the current Fortnite map with POIs
 - **get_player_br_stats**: Supports season or lifetime window.
 
 Get Battle Royale stats for a Fortnite player
-- **get_playlists**: List all available Fortnite playlists/gamemodes
-- **get_save_the_world_news**: Get current Save the World news
 - **get_item_shop**: Auto-updated at 00:00 UTC.
 
 Get the current daily and featured item shop
+- **get_save_the_world_news**: Get current Save the World news
 - **search_cosmetics**: Returns images, rarity, introduction date, and set info.
 
 Search for Fortnite cosmetics by name
-- **get_creative_mode_news**: Get current Creative mode news and featured maps
-- **check_creator_code**: Check if a Support-A-Creator code is active
 - **get_aes_keys**: Get encryption keys for Fortnite game files
+- **get_banners**: List all profile banners available in Fortnite
 - **get_battle_royale_news**: Get current Battle Royale news and updates
+- **get_creative_mode_news**: Get current Creative mode news and featured maps
+- **get_playlists**: List all available Fortnite playlists/gamemodes
+- **check_creator_code**: Check if a Support-A-Creator code is active
 
 
 ## 💬 Prompt Examples

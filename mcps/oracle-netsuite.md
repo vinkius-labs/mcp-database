@@ -43,12 +43,12 @@ Connect your **Oracle NetSuite** account to any AI agent and manage your unified
 
 Delete a NetSuite record
 - **list_customers**: List NetSuite customers
-- **get_record**: Common types: customer, vendor, salesOrder, purchaseOrder, invoice, employee, item, inventoryItem.
-
-Get a specific NetSuite record
 - **update_record**: Only specify the fields you want to change.
 
 Update an existing NetSuite record
+- **get_record**: Common types: customer, vendor, salesOrder, purchaseOrder, invoice, employee, item, inventoryItem.
+
+Get a specific NetSuite record
 - **execute_suiteql**: SuiteQL supports SELECT, JOIN, WHERE, GROUP BY, ORDER BY, and aggregate functions. Example: SELECT id, companyname FROM customer WHERE isinactive = 'F' ORDER BY companyname
 
 Execute a SuiteQL query

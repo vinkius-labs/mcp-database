@@ -20,8 +20,8 @@ The **FCC Telecom MCP Server** lets your AI agent search the Universal Service A
 
 
 ## Available Tools (2)
-- **lookup_filer_by_id**: Lookup a specific Telecommunications operator by their exact FCC Form 499 Filer ID
 - **search_telecom_filers**: Perform a fuzzy string search across the national telecom database by company brand
+- **lookup_filer_by_id**: Lookup a specific Telecommunications operator by their exact FCC Form 499 Filer ID
 
 
 ## 💬 Prompt Examples

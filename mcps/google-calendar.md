@@ -31,15 +31,15 @@ Connect your **Google Calendar** network to any AI agent and optimize scheduling
 
 
 ## Available Tools (15)
-- **get_settings**: Get user calendar settings
-- **list_acl**: List access control rules for a calendar
 - **list_calendars**: List all calendars in the user account
 - **list_event_instances**: List instances of a recurring event
-- **list_events**: List upcoming events from a specific calendar
 - **move_event**: Move an event to a different calendar
 - **patch_event**: Partially update an event (e.g., change just the status or attendees)
 - **quick_add_event**: Create an event from a simple text string
 - **search_events**: Search for events based on a text query
+- **get_settings**: Get user calendar settings
+- **list_acl**: List access control rules for a calendar
+- **list_events**: List upcoming events from a specific calendar
 - **update_event**: Modify an existing event
 - **check_free_busy**: Check availability for a specific time range
 - **create_event**: Schedule a new event

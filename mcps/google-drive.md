@@ -37,15 +37,15 @@ Stop digging through nested folders. Your AI agent acts as your personal file li
 
 
 ## Available Tools (15)
+- **get_file_metadata**: Get detailed info for a specific file
+- **list_revisions**: View file history/revisions
 - **copy_file**: Create a copy of a file
 - **delete_file**: Move a file to trash
 - **empty_trash**: Permanently delete all files in the trash
 - **export_file**: Export a Google Doc/Sheet to a specific format (e.g. application/pdf)
 - **get_drive_about**: Get info about the user Drive (quota, usage)
-- **get_file_metadata**: Get detailed info for a specific file
 - **list_files**: List or search for files in Google Drive
 - **list_permissions**: Check who has access to a file
-- **list_revisions**: View file history/revisions
 - **search_files**: g. "name contains 'report' and mimeType='application/pdf'"
 
 Search for files using Google Drive query syntax

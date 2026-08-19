@@ -39,29 +39,29 @@ Connect your **SAP S/4HANA** system to any AI agent and manage core ERP operatio
 
 
 ## Available Tools (9)
-- **get_business_partner**: Get a specific business partner by ID
 - **create_business_partner**: Provide JSON with BusinessPartnerCategory (1=Person, 2=Organization), FirstName/LastName or OrganizationBPName1.
 
 Create a new business partner
-- **list_purchase_orders**: Filter by supplier, purchasing org, or status using OData $filter syntax.
-
-List purchase orders
-- **create_purchase_order**: Provide JSON with CompanyCode, PurchaseOrderType, Supplier, PurchasingOrganization, PurchasingGroup, and line items in _PurchaseOrderItem array.
-
-Create a purchase order
-- **list_sales_orders**: Filter using OData syntax.
-
-List sales orders
+- **get_business_partner**: Get a specific business partner by ID
+- **get_gl_balances**: Get G/L account balances
 - **get_material_stock**: Returns available quantities across storage locations.
 
 Get material stock levels
-- **get_gl_balances**: Get G/L account balances
-- **query_odata**: Provide the service path and entity set. Supports $filter, $select, $expand.
+- **list_purchase_orders**: Filter by supplier, purchasing org, or status using OData $filter syntax.
 
-Execute a custom OData v4 query
+List purchase orders
+- **list_sales_orders**: Filter using OData syntax.
+
+List sales orders
+- **create_purchase_order**: Provide JSON with CompanyCode, PurchaseOrderType, Supplier, PurchasingOrganization, PurchasingGroup, and line items in _PurchaseOrderItem array.
+
+Create a purchase order
 - **list_business_partners**: Use OData $filter syntax for filtering — e.g. BusinessPartnerCategory eq '2' for organizations.
 
 List SAP business partners
+- **query_odata**: Provide the service path and entity set. Supports $filter, $select, $expand.
+
+Execute a custom OData v4 query
 
 
 ## 💬 Prompt Examples

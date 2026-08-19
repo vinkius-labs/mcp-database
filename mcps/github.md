@@ -36,25 +36,25 @@ Connect your **GitHub** account to any AI agent to automate your software develo
 
 
 ## Available Tools (18)
-- **get_file_contents**: Read file content
-- **get_issue_details**: Get a specific issue by number
 - **get_my_github_profile**: Get user identity
 - **get_repository_details**: Get repo metadata
 - **list_branches**: List repository branches
 - **list_commits**: Optionally filter by branch name or SHA.
 
 List recent commits
+- **get_file_contents**: Read file content
+- **get_issue_details**: Get a specific issue by number
+- **list_org_repositories**: List organization repositories
 - **list_pull_requests**: List pull requests
 - **list_releases**: List repository releases
 - **list_stargazers**: Useful for popularity tracking.
 
 List repository stargazers
+- **search_github_repositories**: Search all repos
 - **verify_api_connection**: Check connection
 - **list_repo_issues**: List repo issues
-- **list_org_repositories**: List organization repositories
 - **list_user_repositories**: List user repos
 - **search_github_code**: Search code snippets
-- **search_github_repositories**: Search all repos
 - **create_pull_request**: Requires the head branch (your changes) and base branch (merge target).
 
 Create a pull request

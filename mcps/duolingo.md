@@ -35,21 +35,21 @@ Connect to **Duolingo** and explore language learning progress through natural c
 
 
 ## Available Tools (8)
-- **get_dictionary_hints**: Returns translation pairs for the given tokens. Useful for building flashcards or vocabulary tools. Target and source are language codes (e.g. "es", "fr", "de", "en").
-
-Get dictionary hints for word translations
 - **get_daily_leaderboard**: Shows top users by XP for the current day. Optionally specify language code and timezone.
 
 Get daily leaderboard for a language
+- **get_dictionary_hints**: Returns translation pairs for the given tokens. Useful for building flashcards or vocabulary tools. Target and source are language codes (e.g. "es", "fr", "de", "en").
+
+Get dictionary hints for word translations
+- **get_store_items**: Requires authentication for full details. Returns item IDs, names, prices and descriptions.
+
+Get Duolingo store items
 - **get_friends**: Optionally provide a user ID. Returns friend usernames, IDs, streaks and XP totals.
 
 Get Duolingo friends list
 - **get_leaderboard**: Optionally provide a user ID to get leaderboard info for a specific user. Returns rankings with usernames, XP totals and positions.
 
 Get Duolingo leaderboard data
-- **get_store_items**: Requires authentication for full details. Returns item IDs, names, prices and descriptions.
-
-Get Duolingo store items
 - **get_user_by_id**: Returns the same data as get_user_by_username but uses the numeric ID instead.
 
 Get a Duolingo user profile by user ID

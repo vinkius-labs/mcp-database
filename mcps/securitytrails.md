@@ -37,6 +37,9 @@ Connect your **SecurityTrails** account to any AI agent and empower your OSINT, 
 
 
 ## Available Tools (10)
+- **search_dsl**: Examples: `ipv4="1.1.1.1" AND mx="alt1.aspmx.l.google.com"` or `whois_email="admin@example.com"`. Check SecurityTrails docs for full DSL syntax.
+
+Advanced search using SecurityTrails DSL
 - **get_api_usage**: Check current SecurityTrails API quota usage
 - **get_dns_history**: Useful for finding old IPs that might still be hosting vulnerable software, or tracking infrastructure migration over time.
 
@@ -46,15 +49,12 @@ Retrieve historical DNS records for a domain
 
 Discover all subdomains for a given domain
 - **get_whois**: Get current WHOIS information for a domain
-- **search_dsl**: Examples: `ipv4="1.1.1.1" AND mx="alt1.aspmx.l.google.com"` or `whois_email="admin@example.com"`. Check SecurityTrails docs for full DSL syntax.
-
-Advanced search using SecurityTrails DSL
-- **get_domains_by_ip**: Essential for understanding shared hosting environments or identifying hidden vhosts.
-
-Find all domains pointed to a specific IP address
 - **get_domain_details**: Essential for mapping out a target domain's existing infrastructure.
 
 Get complete domain intelligence and current DNS records
+- **get_domains_by_ip**: Essential for understanding shared hosting environments or identifying hidden vhosts.
+
+Find all domains pointed to a specific IP address
 - **get_associated_domains**: Great for expanding the scope of an investigation.
 
 Find other domains associated with a target domain
