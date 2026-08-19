@@ -30,18 +30,18 @@ The NWS API covers the United States, Puerto Rico, Guam, and US territories.
 - **get_hourly_forecast**: 5 days. Includes temperature, wind, humidity, precipitation, and sky condition for each hour. US locations only.
 
 Get hour-by-hour weather forecast (156 hours) for a US location
-- **get_forecast_discussion**: Use the 3-letter WFO code (e.g., OKX=New York, LAX=Los Angeles, MFL=Miami). Lists recent product IDs — retrieve the latest for full text.
-
-Get the Area Forecast Discussion (AFD) from a NWS Weather Forecast Office
-- **get_grid_data**: Useful for programmatic analysis. US only.
-
-Get raw NWS grid weather data: temperature, precipitation, wind, humidity arrays
 - **get_point_metadata**: US locations only.
 
 Get NWS metadata for a US location: responsible WFO, grid coordinates, zones
 - **get_forecast**: Provide latitude and longitude for any US location. Returns high/low temps, wind speed/direction, precipitation probability, and detailed narrative.
 
 Get 7-day weather forecast for a US location by latitude and longitude
+- **get_forecast_discussion**: Use the 3-letter WFO code (e.g., OKX=New York, LAX=Los Angeles, MFL=Miami). Lists recent product IDs — retrieve the latest for full text.
+
+Get the Area Forecast Discussion (AFD) from a NWS Weather Forecast Office
+- **get_grid_data**: Useful for programmatic analysis. US only.
+
+Get raw NWS grid weather data: temperature, precipitation, wind, humidity arrays
 
 
 ## 💬 Prompt Examples

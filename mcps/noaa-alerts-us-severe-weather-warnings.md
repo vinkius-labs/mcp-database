@@ -23,18 +23,18 @@ Emergency management, logistics, insurance, event planning, and any operations s
 
 
 ## Available Tools (4)
-- **get_active_alerts**: Filter by state (2-letter code: TX, FL, CA), severity (Extreme, Severe, Moderate, Minor), urgency (Immediate, Expected, Future), or event type (Tornado Warning, Hurricane Warning, etc.).
-
-Get active weather alerts by US state or severity
 - **get_alerts_by_point**: Internally resolves the location to find active alerts in that area.
 
 Get active weather alerts for a specific US latitude/longitude
-- **get_alert_types**: ). Use this to discover valid event type values for filtering alerts.
-
-List all NWS weather alert types available
 - **get_alerts_by_zone**: g., TXZ211, FLZ050). Zone IDs can be found via the get_point_metadata tool. Useful for focused monitoring of a specific area.
 
 Get active weather alerts for a specific NWS zone
+- **get_active_alerts**: Filter by state (2-letter code: TX, FL, CA), severity (Extreme, Severe, Moderate, Minor), urgency (Immediate, Expected, Future), or event type (Tornado Warning, Hurricane Warning, etc.).
+
+Get active weather alerts by US state or severity
+- **get_alert_types**: ). Use this to discover valid event type values for filtering alerts.
+
+List all NWS weather alert types available
 
 
 ## 💬 Prompt Examples
