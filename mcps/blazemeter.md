@@ -33,16 +33,16 @@ Connect your **BlazeMeter** API credentials to any AI agent and integrate enterp
 
 
 ## Available Tools (10)
-- **stop_master**: Identify precise active arrays spanning native Gateway shutdown logic
 - **get_report**: Inspect deep internal arrays mitigating specific Plan Math Reports
 - **get_user**: Identify precise active arrays spanning native Identity parsing
-- **list_workspaces**: Identify bounded Workspace records inside the Headless BlazeMeter Platform
+- **stop_master**: Identify precise active arrays spanning native Gateway shutdown logic
 - **list_projects**: Perform structural extraction of Projects bounded to a Workspace
 - **list_tests**: Provision a highly-available JSON Payload extracting bound Tests
+- **list_workspaces**: Identify bounded Workspace records inside the Headless BlazeMeter Platform
 - **get_test**: Retrieve explicit configuration tracing an active Vault limit Test
 - **start_test**: Irreversibly execute explicit load generation validations spanning rich metrics
-- **list_masters**: Enumerate explicitly attached structured rules exporting active Master records
 - **get_master**: Dispatch an automated validation check routing explicit Gateway run status
+- **list_masters**: Enumerate explicitly attached structured rules exporting active Master records
 
 
 ## 💬 Prompt Examples

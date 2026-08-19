@@ -35,14 +35,14 @@ Connect your **Clarifai** account to any AI agent and take full control of your 
 
 
 ## Available Tools (6)
-- **list_workflows**: Retrieve the exact structural matching verifying chained AI limits
 - **list_apps**: Identify bounded Clarifai apps managing globalThis compute limits
-- **list_models**: Perform structural extraction of computer vision parameters driving AI features
 - **list_concepts**: Extracts explicitly attached semantic bounds tagging datasets matching limits
+- **list_datasets**: Identify precise physical bounds mapping data structures resolving visual nodes
+- **list_models**: Perform structural extraction of computer vision parameters driving AI features
+- **list_workflows**: Retrieve the exact structural matching verifying chained AI limits
 - **predict_model**: /models/{model_id}/outputs` parsing exactly what the AI limit evaluated bounding image classifications.
 
 Dispatch an automated validation inference routing explicit network predictions
-- **list_datasets**: Identify precise physical bounds mapping data structures resolving visual nodes
 
 
 ## 💬 Prompt Examples

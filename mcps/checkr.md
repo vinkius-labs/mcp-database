@@ -37,13 +37,13 @@ Connect your **Checkr** account to any AI agent and take full control of your ba
 
 ## Available Tools (8)
 - **create_new_candidate**: Create a new candidate profile
-- **start_background_check**: Initiate a background check for a candidate
 - **get_candidate_details**: Get detailed information for a specific candidate
+- **list_background_reports**: List background check reports
+- **start_background_check**: Initiate a background check for a candidate
 - **get_report_details**: Get detailed information for a specific background report
 - **list_checkr_candidates**: List candidates in the account
 - **list_screening_invitations**: List invitations sent to candidates
 - **list_screening_packages**: List available screening packages (e.g. Pro, Basic)
-- **list_background_reports**: List background check reports
 
 
 ## 💬 Prompt Examples

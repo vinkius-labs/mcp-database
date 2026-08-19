@@ -32,14 +32,14 @@ Connect your AI assistant to **Conda** (Anaconda.org), the open-source package a
 
 
 ## Available Tools (8)
-- **get_package_details**: Retrieve detailed information about a specific package
-- **search_conda_forge**: Quickly search for packages in the conda-forge channel
-- **get_latest_package_version**: Retrieve the latest version string for a specific package
 - **get_anaconda_user**: Retrieve profile details of the authenticated Anaconda user
+- **get_package_details**: Retrieve detailed information about a specific package
 - **list_my_organizations**: Retrieve a list of organizations (channels) you belong to
+- **search_conda_forge**: Quickly search for packages in the conda-forge channel
+- **search_conda_packages**: Search for packages on Anaconda.org (Conda Cloud)
+- **get_latest_package_version**: Retrieve the latest version string for a specific package
 - **list_package_files**: Retrieve a list of distributions (files) for a specific package
 - **list_user_packages**: Retrieve a list of packages owned by a specific user or channel
-- **search_conda_packages**: Search for packages on Anaconda.org (Conda Cloud)
 
 
 ## 💬 Prompt Examples

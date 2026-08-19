@@ -36,17 +36,17 @@ No more manual toggling between campaign tables or digging through SMTP logs. Yo
 
 
 ## Available Tools (11)
-- **get_account**: Get Brevo account details
-- **create_email_campaign**: Create an email campaign
 - **create_contact**: Create a new contact
 - **get_contact**: Get details for a specific contact
 - **get_contact_list**: Get details for a specific list
 - **get_smtp_statistics**: Get SMTP delivery statistics
-- **list_email_campaigns**: List email campaigns
-- **list_contacts**: List Brevo contacts
 - **list_contact_lists**: List contact lists
+- **list_contacts**: List Brevo contacts
+- **list_email_campaigns**: List email campaigns
 - **list_senders**: List approved senders
 - **send_email**: Send a transactional email
+- **get_account**: Get Brevo account details
+- **create_email_campaign**: Create an email campaign
 
 
 ## 💬 Prompt Examples

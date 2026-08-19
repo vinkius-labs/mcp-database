@@ -37,13 +37,13 @@ Connect your **Checkmk** site to any AI agent and take full control of your IT i
 
 ## Available Tools (8)
 - **activate_checkmk_changes**: Activate pending configuration changes in Checkmk
+- **list_host_groups**: List configured host groups
+- **list_host_services**: List all monitored services for a specific host
 - **get_host_details**: Get detailed information for a specific host
 - **list_all_monitored_services**: List all services across all hosts
 - **list_checkmk_folders**: List configuration folders
-- **list_host_groups**: List configured host groups
 - **list_checkmk_hosts**: List all monitored hosts
 - **list_service_groups**: List configured service groups
-- **list_host_services**: List all monitored services for a specific host
 
 
 ## 💬 Prompt Examples

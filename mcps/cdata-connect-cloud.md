@@ -32,14 +32,14 @@ Targeting highly restrictive logic limits explicitly for **Data Engineers**, **A
 
 
 ## Available Tools (8)
+- **cdata_create_connection**: Configure natively a brand new backend data source proxy utilizing CData logic
+- **cdata_get_schema_metadata**: Evaluate the complete backend graph exposing every available interaction limit mapped natively
 - **cdata_list_connections**: Dumps the entire array of connected external data sources natively routed through CData
 - **cdata_list_tables**: Unpack virtually explicit structural collections mapped securely through the backend connection
-- **cdata_list_workspaces**: Enumerate explicitly all logical virtual Workspaces segmenting organizational data groups
-- **cdata_create_connection**: Configure natively a brand new backend data source proxy utilizing CData logic
-- **cdata_execute_query**: Execute native proxy query routing seamlessly into the downstream DB parsing values cleanly
-- **cdata_get_schema_metadata**: Evaluate the complete backend graph exposing every available interaction limit mapped natively
-- **cdata_get_table_columns**: Explore precise schema fields declaring explicit definitions mapping purely onto the Table boundary
 - **cdata_test_connection**: Assess logical bounds pinging explicitly the connected proxy
+- **cdata_list_workspaces**: Enumerate explicitly all logical virtual Workspaces segmenting organizational data groups
+- **cdata_execute_query**: Execute native proxy query routing seamlessly into the downstream DB parsing values cleanly
+- **cdata_get_table_columns**: Explore precise schema fields declaring explicit definitions mapping purely onto the Table boundary
 
 
 ## 💬 Prompt Examples

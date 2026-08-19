@@ -36,14 +36,14 @@ Connect your **ChannelAdvisor (Rithum)** account to any AI agent and take full c
 
 
 ## Available Tools (8)
+- **list_ca_fulfillments**: List order fulfillments and tracking
+- **list_ca_labels**: List configured product labels
+- **update_ca_inventory**: Update inventory levels for a product
 - **get_ca_order_details**: Get detailed information for a specific order
 - **get_ca_product_details**: Get detailed information for a specific product
 - **list_distribution_centers**: List available distribution centers
-- **list_ca_fulfillments**: List order fulfillments and tracking
-- **list_ca_labels**: List configured product labels
 - **list_ca_orders**: List customer orders
 - **list_ca_products**: List products in the ChannelAdvisor catalog
-- **update_ca_inventory**: Update inventory levels for a product
 
 
 ## 💬 Prompt Examples

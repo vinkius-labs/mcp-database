@@ -38,10 +38,10 @@ Connect your **Cloudinary** account to any AI agent and take full control of you
 ## Available Tools (8)
 - **list_upload_presets**: List all configured upload presets
 - **delete_media_resource**: Permanently delete a media resource from the cloud
-- **get_media_resource_details**: Get detailed information for a specific media resource
-- **get_cloudinary_usage_report**: Retrieve core usage and quota information (Storage, Bandwidth, Transformations)
 - **list_media_resources**: List all media resources (images, videos) in the cloud
 - **list_media_tags**: List all tags used in the media library
+- **get_cloudinary_usage_report**: Retrieve core usage and quota information (Storage, Bandwidth, Transformations)
+- **get_media_resource_details**: Get detailed information for a specific media resource
 - **list_media_transformations**: List all named and dynamic transformations
 - **search_media_library**: Search for resources using a search expression
 

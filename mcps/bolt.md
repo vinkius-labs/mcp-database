@@ -35,15 +35,15 @@ Connect your **Bolt Merchant** account to any AI agent and orchestrate your chec
 
 
 ## Available Tools (10)
+- **get_transaction**: Get details of a specific transaction
+- **refund_transaction**: Issue a refund for a completed transaction
 - **get_order_details**: Get details of a specific order
 - **capture_transaction**: Capture a previously authorized transaction
 - **create_order_token**: Create an order token to initiate checkout
 - **get_account_details**: Get current account details
 - **get_merchant_status**: Check the current merchant account status
-- **get_transaction**: Get details of a specific transaction
 - **list_transactions**: List recent Bolt transactions
 - **list_webhooks**: List configured webhooks
-- **refund_transaction**: Issue a refund for a completed transaction
 - **void_transaction**: Void an authorized but uncaptured transaction
 
 

@@ -37,68 +37,68 @@ No more manual deal logging or digging through complex matter tables in the port
 
 
 ## Available Tools (23)
-- **list_matters**: Filter by status: open, closed, pending. Includes case number, description, client, and dates.
+- **create_activity**: Provide date (YYYY-MM-DD), quantity in seconds, and the type (TimeEntry or ExpenseEntry).
 
-List legal cases/matters
-- **get_matter**: Includes client, practice area, responsible attorney, dates, and status.
+Log a time entry or expense
+- **create_contact**: Provide first and last name for persons. For companies, set type to "Company" and use first_name as the company name.
 
-Get case details
+Create a new contact
 - **create_matter**: Requires a display number (case reference), description, and client contact ID. The client must exist before creating a matter.
 
 Create a new legal matter
+- **create_note**: Use for documenting conversations, strategy decisions, or research findings.
+
+Add a note to a matter
+- **get_matter**: Includes client, practice area, responsible attorney, dates, and status.
+
+Get case details
+- **get_user_profile**: Get current user profile
+- **list_notes**: Optionally filter by matter ID. Includes subject, detail, date, and linked matter.
+
+List case notes
+- **list_matters**: Filter by status: open, closed, pending. Includes case number, description, client, and dates.
+
+List legal cases/matters
+- **get_contact**: Returns name, type, email addresses, phone numbers, and physical addresses.
+
+Get contact details
 - **list_contacts**: List firm contacts
 - **search_contacts**: Use this tool when looking for a specific person or organization.
 
 Search contacts by name or email
-- **get_contact**: Returns name, type, email addresses, phone numbers, and physical addresses.
-
-Get contact details
-- **create_contact**: Provide first and last name for persons. For companies, set type to "Company" and use first_name as the company name.
-
-Create a new contact
 - **list_activities**: Optionally filter by matter. Includes date, hours, rate, notes, and billing status.
 
 List time entries and expenses
-- **create_activity**: Provide date (YYYY-MM-DD), quantity in seconds, and the type (TimeEntry or ExpenseEntry).
-
-Log a time entry or expense
 - **list_tasks**: Filter by matter for case-specific tasks. Critical for tracking court deadlines and firm-wide to-dos.
 
 List tasks and deadlines
-- **list_notes**: Optionally filter by matter ID. Includes subject, detail, date, and linked matter.
-
-List case notes
 - **create_task**: Optionally link to a matter and set a due date. Use for court deadlines, filing reminders, and internal follow-ups.
 
 Create a new task or deadline
-- **create_note**: Use for documenting conversations, strategy decisions, or research findings.
-
-Add a note to a matter
-- **list_bills**: Use to monitor firm revenue and outstanding receivables.
-
-List invoices
 - **get_bill**: Returns line items, totals, balance, due date, and associated matter.
 
 Get invoice details
+- **list_bills**: Use to monitor firm revenue and outstanding receivables.
+
+List invoices
 - **list_calendar_entries**: Includes summary, start/end times, location, and linked matter.
 
 List calendar events
+- **list_communications**: Includes subject, body, type, date, and linked matter/contact.
+
+List firm communications
 - **list_documents**: Filter by matter. Includes filename, category, creation date, and linked matter.
 
 List case documents
 - **list_practice_areas**: g., Civil Litigation, Corporate, Family Law). Useful for matter categorization and firm structure overview.
 
 List practice areas
-- **search_matters**: Use for finding specific cases when the user provides a keyword or partial name.
-
-Search legal matters by keyword
 - **list_matter_stages**: g., Intake, Discovery, Trial, Closed). Used for understanding matter lifecycle.
 
 List matter stages
-- **list_communications**: Includes subject, body, type, date, and linked matter/contact.
+- **search_matters**: Use for finding specific cases when the user provides a keyword or partial name.
 
-List firm communications
-- **get_user_profile**: Get current user profile
+Search legal matters by keyword
 - **list_users**: Useful for team management and workload distribution.
 
 List firm users and attorneys

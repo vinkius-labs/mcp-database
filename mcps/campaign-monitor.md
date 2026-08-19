@@ -38,10 +38,10 @@ No more manual scrubbing through subscriber exports or slow UI navigation. Your 
 ## Available Tools (7)
 - **add_subscriber**: Create or update a subscriber
 - **get_campaign_analytics**: Get campaign performance
-- **get_list_statistics**: Get subscriber list health
 - **get_subscriber_details**: Get profile for a subscriber
-- **list_sent_campaigns**: List recent email campaigns
+- **get_list_statistics**: Get subscriber list health
 - **list_clients**: List your account clients
+- **list_sent_campaigns**: List recent email campaigns
 - **list_subscriber_lists**: List lists for a client
 
 

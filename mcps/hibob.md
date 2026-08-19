@@ -37,21 +37,21 @@ No more manual exporting of employee spreadsheets. Your AI assistant acts as a d
 
 
 ## Available Tools (11)
-- **list_open_tasks**: List all pending tasks across the company
 - **get_employee_compensation**: Get detailed salary and benefit information for an employee
+- **get_whos_out**: List employees on leave for a specific date range
+- **invite_employee**: Send a welcome invitation to a new employee
+- **list_company_settings_lists**: List custom dropdown and configuration lists used in the platform
+- **list_open_tasks**: List all pending tasks across the company
+- **request_time_off**: Pass the payload as a JSON string in "request_json" (requires policyType, startDate, endDate).
+
+Submit a new time off request for an employee
 - **list_public_profiles**: List basic contact information for all active employees
 - **complete_task**: Mark a specific task as completed
 - **get_leave_balance**: Get the leave balance for a specific employee
 - **get_payroll_history**: Retrieve platform payroll history
-- **get_whos_out**: List employees on leave for a specific date range
-- **invite_employee**: Send a welcome invitation to a new employee
-- **list_company_settings_lists**: List custom dropdown and configuration lists used in the platform
 - **search_employees**: Pass search criteria as a JSON string in "search_json". Returns active employees by default.
 
 Search for employees using filters and retrieve profiles
-- **request_time_off**: Pass the payload as a JSON string in "request_json" (requires policyType, startDate, endDate).
-
-Submit a new time off request for an employee
 
 
 ## 💬 Prompt Examples

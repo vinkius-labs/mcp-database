@@ -36,15 +36,15 @@ No more manual message tracking or toggling between different messaging portals.
 
 
 ## Available Tools (12)
-- **delete_whatsapp_template**: Remove template
-- **get_account_info**: Get profile details
 - **get_account_balance**: Check credit balance
-- **get_whatsapp_media**: Get media details
+- **get_account_info**: Get profile details
+- **list_message_history**: List past messages
+- **delete_whatsapp_template**: Remove template
 - **get_message_status**: Check delivery status
+- **get_whatsapp_media**: Get media details
 - **list_active_channels**: ) in the account.
 
 List communication channels
-- **list_message_history**: List past messages
 - **list_source_numbers**: List sending numbers
 - **list_whatsapp_templates**: List WhatsApp templates
 - **send_bulk_messages**: Send multiple messages

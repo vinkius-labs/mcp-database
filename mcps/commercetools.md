@@ -35,6 +35,8 @@ No more clicking through the Merchant Center for routine data lookups. Your AI a
 
 
 ## Available Tools (10)
+- **list_products**: Retrieve a list of products in CommerceTools
+- **search_product_by_key**: Retrieve a product by its unique key
 - **get_order**: Retrieve detailed information about a specific order
 - **get_project_settings**: Retrieve general settings for the current CommerceTools project
 - **list_active_carts**: Retrieve a list of active carts in CommerceTools
@@ -42,9 +44,7 @@ No more clicking through the Merchant Center for routine data lookups. Your AI a
 - **list_orders**: Retrieve a list of orders in CommerceTools
 - **get_product**: Retrieve detailed information about a specific product
 - **list_categories**: Retrieve a list of product categories
-- **list_products**: Retrieve a list of products in CommerceTools
 - **search_orders_by_number**: Find an order by its order number
-- **search_product_by_key**: Retrieve a product by its unique key
 
 
 ## 💬 Prompt Examples
