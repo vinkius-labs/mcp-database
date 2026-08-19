@@ -36,26 +36,26 @@ Connect your **Mattermost** instance to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
-- **list_team_channels**: Scans core enterprise contexts identifying where payload deployments land.
-
-Perform structural extraction of public routing Channels on a Team
-- **get_channel_posts**: Retrieve the exact timeline matrix identifying Enterprise messages
 - **get_team_members**: Enumerate explicitly attached user capabilities active within a Team
-- **create_post**: Dispatch an automated Markdown payload explicitly into a Channel
 - **delete_post**: Changes the internal `delete_at` marker implicitly wiping visibility synchronously across all active UI clients leaving no front-end trace replacing caching bounds.
 
 Irreversibly vaporize an explicit text post off Mattermost arrays
-- **get_channel_details**: Inspect deep internal properties parsing a specific Mattermost node
 - **get_teams**: Necessary strictly to obtain `team_id` properties resolving all subsequent deep-level routing architectures over the network.
 
 Identify globalThis Mattermost Workspace (Team) underlying endpoints
-- **get_all_users**: Returns explicit `user_id` mapping arrays required for routing `@mentions` properly bypassing username spoofing by querying absolute Database entries via API v4.
-
-Identify precise active Human/Bot constraints navigating the server
-- **search_channels**: Scan the database aggressively discovering a hidden/public Channel
 - **update_post**: Substitutes literal byte contents appending explicit "(edited)" timestamps visibly preserving audit compliance capabilities inherently.
 
 Mutate globalThis Chat String pre-existing records via HTTP PUT
+- **create_post**: Dispatch an automated Markdown payload explicitly into a Channel
+- **get_all_users**: Returns explicit `user_id` mapping arrays required for routing `@mentions` properly bypassing username spoofing by querying absolute Database entries via API v4.
+
+Identify precise active Human/Bot constraints navigating the server
+- **get_channel_details**: Inspect deep internal properties parsing a specific Mattermost node
+- **get_channel_posts**: Retrieve the exact timeline matrix identifying Enterprise messages
+- **list_team_channels**: Scans core enterprise contexts identifying where payload deployments land.
+
+Perform structural extraction of public routing Channels on a Team
+- **search_channels**: Scan the database aggressively discovering a hidden/public Channel
 
 
 ## 💬 Prompt Examples

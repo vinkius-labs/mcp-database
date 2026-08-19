@@ -36,18 +36,18 @@ No more manual copy-pasting from LinkedIn profiles. Your AI acts as a dedicated 
 
 
 ## Available Tools (12)
-- **bulk_enrich_persons**: Enrich multiple contacts
-- **enrich_company_info**: Get firmographics
 - **enrich_person_info**: Get contact details
+- **get_account_info**: Check connection
 - **get_credit_balance**: Check account balance
-- **get_person_by_email**: Enrich by email
 - **get_person_by_linkedin**: Enrich by LinkedIn
 - **get_usage_stats**: Check API usage
-- **get_account_info**: Check connection
 - **prospect_new_companies**: Search for businesses
 - **prospect_new_leads**: Search for contacts
 - **test_lusha_auth**: Verify API key
 - **bulk_enrich_companies**: Enrich multiple companies
+- **bulk_enrich_persons**: Enrich multiple contacts
+- **enrich_company_info**: Get firmographics
+- **get_person_by_email**: Enrich by email
 
 
 ## 💬 Prompt Examples

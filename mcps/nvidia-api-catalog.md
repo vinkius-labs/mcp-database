@@ -32,16 +32,16 @@ Explicitly targeted evaluating limits specifically for **AI Engineers**, **Gener
 
 
 ## Available Tools (8)
+- **nvidia_list_foundation_models**: Dumps the strict array specifying explicit LLM matrix paths accessible securely natively
+- **nvidia_list_lora_adapters**: Evaluate explicit matrices tracking fine-tuned overrides isolating logical constraints dynamically
+- **nvidia_vision_inference**: g. Llama-Vision natively).
+
+Invoke strictly multimodal abilities capturing diagnostic constraints returning inference on graphical data
 - **nvidia_chat_completion**: Trigger direct NLP inference matrices directly evaluating queries over hosted LLMs
 - **nvidia_check_token_quota**: Poll safely dynamic credit and explicit constraint execution limits bounding inference execution
 - **nvidia_generate_embeddings**: Pass parameters safely mapping explicit unstructured vectors directly using specific Embedding arrays
 - **nvidia_get_cloud_status**: Ping explicitly the core hosted NVIDIA matrix tracing inference endpoints evaluating latencies securely
-- **nvidia_list_foundation_models**: Dumps the strict array specifying explicit LLM matrix paths accessible securely natively
-- **nvidia_list_lora_adapters**: Evaluate explicit matrices tracking fine-tuned overrides isolating logical constraints dynamically
 - **nvidia_summarize_content**: Standard natively configured logical execution executing predefined abstract compression matrices smoothly
-- **nvidia_vision_inference**: g. Llama-Vision natively).
-
-Invoke strictly multimodal abilities capturing diagnostic constraints returning inference on graphical data
 
 
 ## 💬 Prompt Examples

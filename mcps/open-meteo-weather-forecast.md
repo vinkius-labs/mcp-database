@@ -31,10 +31,10 @@ Logistics planners, agriculture professionals, event organizers, travel apps, an
 - **get_weather_forecast**: Provide latitude and longitude coordinates.
 
 Get weather forecast for any location (up to 16 days)
+- **get_hourly_details**: Get detailed hourly weather data
 - **get_current_weather**: Provide latitude and longitude.
 
 Get current weather conditions for any location
-- **get_hourly_details**: Get detailed hourly weather data
 - **get_daily_summary**: Get daily weather summary with sunrise/sunset
 
 

@@ -35,16 +35,16 @@ Connect your **Miro** account to any AI agent and take full control of your visu
 
 
 ## Available Tools (8)
-- **list_boards**: List high-level Miro Boards accessible globally
 - **get_board**: Get static explicit configuration of a specific Miro Board
-- **create_board**: Create a fresh new collaborative Miro Board
+- **list_boards**: List high-level Miro Boards accessible globally
+- **create_sticky_note**: Create and attach a new sticky note component to a Board
 - **list_items**: ) nested within the designated Board ID string.
 
 List raw items attached physically inside a Miro Board
-- **create_sticky_note**: Create and attach a new sticky note component to a Board
 - **create_shape**: Create and attach a geometric shape structure onto a Board
 - **list_members**: List active team members sharing bounds across a Board
 - **list_tags**: List semantic organizational tags applied inside a board
+- **create_board**: Create a fresh new collaborative Miro Board
 
 
 ## 💬 Prompt Examples

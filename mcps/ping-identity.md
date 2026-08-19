@@ -33,23 +33,23 @@ Connect your **Ping Identity** environment to any AI agent to streamline identit
 
 
 ## Available Tools (10)
-- **delete_user**: Revokes all current session tokens, nullifies application scopes, isolates SCIM directory references, and executes the formal deletion API.
-
-Hard delete a user identity and purge related credentials
 - **list_groups**: Allows mapping high-level RBAC scopes dynamically injected into ID tokens returned via SSO channels upon successful client authorization flows.
 
 List identity Groups utilized for aggregate permissions
-- **get_group**: View explicit details encompassing a standard Ping Group
 - **get_user**: Get complete contextual metadata for a specific Ping Identity user
 - **list_applications**: Crucial to verify application exposure footprint.
 
 List Web, Native or SPA apps federated under standard PingOne
-- **list_populations**: g., 'Contractors', 'Partners', 'B2B Clients') possessing inherently different default password complexities, independent password expiration parameters, and isolated self-service recovery scopes.
-
-List isolated Populations logically partitioning the Environment
 - **list_users**: Paginates across all bounded external and internal localized users containing primary credentials, deeply nested JSON identifiers, and physical verification states assigned under the Enterprise Directory schema.
 
 List all user identities within the standard PingOne Environment
+- **delete_user**: Revokes all current session tokens, nullifies application scopes, isolates SCIM directory references, and executes the formal deletion API.
+
+Hard delete a user identity and purge related credentials
+- **get_group**: View explicit details encompassing a standard Ping Group
+- **list_populations**: g., 'Contractors', 'Partners', 'B2B Clients') possessing inherently different default password complexities, independent password expiration parameters, and isolated self-service recovery scopes.
+
+List isolated Populations logically partitioning the Environment
 - **list_risk_policies**: Evaluates contextual IP anomalies, impossible travel, blocklisted VPN routes, or behavioral irregularities explicitly stepping up authentication flows or directly blocking malicious login execution.
 
 List active Risk Management rules dictating real-time MFA

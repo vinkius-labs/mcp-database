@@ -35,12 +35,6 @@ Empower your AI agents to manage your **PlanetScale** serverless infrastructure 
 - **create_database**: Creates empty environments ready to execute explicit DDL definitions via non-blocking Deploy Requests.
 
 Provision a radically scalable Serverless Database instance
-- **delete_branch**: Utilized constantly within CI/CD pipelines following a successful Deploy Request morphing `main` schema structure directly.
-
-Purge an obsolete Git-like Schema testing ground
-- **delete_database**: Dropping the database effectively wipes terabytes of records scattered globally. Fails fully if unacknowledged connection logic binds it.
-
-Destroy a PlanetScale MySQL construct irreversibly
 - **get_branch**: Returns access hostnames for code integration.
 
 Deconstruct the layout of a single explicit Database Branch
@@ -48,6 +42,12 @@ Deconstruct the layout of a single explicit Database Branch
 - **list_branches**: Essential for migrating schemas without locking production reads/writes.
 
 List Development Database Branches mirroring Prod architectures
+- **delete_branch**: Utilized constantly within CI/CD pipelines following a successful Deploy Request morphing `main` schema structure directly.
+
+Purge an obsolete Git-like Schema testing ground
+- **delete_database**: Dropping the database effectively wipes terabytes of records scattered globally. Fails fully if unacknowledged connection logic binds it.
+
+Destroy a PlanetScale MySQL construct irreversibly
 - **list_databases**: Retrieves explicitly mapping IDs orchestrating distributed Vitess backend shards.
 
 List high-availability PlanetScale MySQL DB distributions

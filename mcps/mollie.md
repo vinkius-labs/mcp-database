@@ -34,13 +34,13 @@ Connect your **Mollie** account to any AI agent and manage European payments thr
 
 
 ## Available Tools (7)
-- **create_payment**: Create a new payment
 - **get_payment_details**: Get details for a specific payment
 - **list_customers**: List Mollie customers
 - **list_payment_methods**: List available payment methods
-- **list_payments**: List Mollie payments
 - **list_refunds**: List all refunds
+- **create_payment**: Create a new payment
 - **list_customer_subscriptions**: List subscriptions for a customer
+- **list_payments**: List Mollie payments
 
 
 ## 💬 Prompt Examples

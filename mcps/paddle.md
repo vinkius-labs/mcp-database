@@ -33,17 +33,17 @@ Bring the **Paddle Billing API** directly into your AI workflows. Acting as your
 
 
 ## Available Tools (10)
-- **cancel_subscription**: Can be set to effective immediately or at the end of the current billing period.
-
-Cancel an active subscription
 - **get_customer_details**: Get details for a specific customer
 - **get_subscription_details**: Get details for a specific subscription
 - **get_transaction_details**: Get details for a specific transaction
-- **list_customers**: List all customers in Paddle
 - **list_catalog_prices**: List all pricing definitions
+- **list_customers**: List all customers in Paddle
 - **list_subscriptions**: List all subscriptions
 - **list_transactions**: List all billing transactions
 - **pause_subscription**: Pause an active subscription
+- **cancel_subscription**: Can be set to effective immediately or at the end of the current billing period.
+
+Cancel an active subscription
 - **list_catalog_products**: List all products
 
 

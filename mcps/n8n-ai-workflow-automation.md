@@ -40,9 +40,9 @@ Connect your **n8n** instance to any AI agent and take full control of your node
 - **get_workflow_details**: Get details for a specific workflow
 - **list_instance_users**: List collaborators on the n8n instance
 - **list_workflows**: List n8n automation workflows
+- **get_execution_details**: Get trace logs for a specific execution
 - **list_stored_credentials**: List metadata for saved credentials
 - **list_workflow_executions**: List recent workflow executions
-- **get_execution_details**: Get trace logs for a specific execution
 
 
 ## 💬 Prompt Examples

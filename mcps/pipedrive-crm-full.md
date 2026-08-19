@@ -28,6 +28,9 @@ Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline 
 
 
 ## Available Tools (11)
+- **pd_search_deals**: Returns deal title, monetary value, currency, pipeline stage, pipeline name, linked person (contact), and organization. Use when the user wants to find a specific deal, check pipeline status, look up deal values, or see which stage a deal is in.
+
+Search Pipedrive deals by name or keyword to find opportunities in your sales pipeline with value, stage, and contact info
 - **pd_create_activity**: Subject and type are required. Type must be one of: call, meeting, email, task, lunch, deadline. Optionally set due_date (YYYY-MM-DD) and link to deal_id, person_id, or both. Add a note for context. Activities appear in the Pipedrive calendar and task queue.
 
 Schedule a sales activity in Pipedrive — a call, meeting, email, task, lunch, or deadline linked to deals or contacts
@@ -43,9 +46,6 @@ List recent Pipedrive activities (calls, meetings, tasks, emails) with due dates
 - **pd_list_pipelines**: Returns pipeline name, total deal count, and whether it is active. Most Pipedrive accounts have one default pipeline, but larger teams may have separate pipelines for different sales processes (e.g., New Business vs Renewals). Use to find pipeline IDs before creating deals or filtering by pipeline.
 
 List all sales pipelines configured in Pipedrive with their names, deal counts, and order
-- **pd_search_deals**: Returns deal title, monetary value, currency, pipeline stage, pipeline name, linked person (contact), and organization. Use when the user wants to find a specific deal, check pipeline status, look up deal values, or see which stage a deal is in.
-
-Search Pipedrive deals by name or keyword to find opportunities in your sales pipeline with value, stage, and contact info
 - **pd_search_organizations**: Returns org name, address, and associated data. Use when the user wants to find a company, needs org IDs for linking to deals or persons, or wants to look up account details.
 
 Search Pipedrive organizations (companies) by name to find accounts in your CRM

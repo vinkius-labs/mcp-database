@@ -41,8 +41,8 @@ Connect your **Netlify** account to any AI agent and orchestrate your web hostin
 - **list_domains**: List all DNS zones/domains
 - **list_builds**: List builds for a site
 - **list_deploys**: List all deploys for a site
-- **list_form_submissions**: List submissions for a specific form
 - **list_forms**: List all forms for a site
+- **list_form_submissions**: List submissions for a specific form
 - **list_sites**: List all Netlify sites
 - **trigger_build**: Trigger a new build for a site
 

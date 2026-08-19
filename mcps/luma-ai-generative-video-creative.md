@@ -36,18 +36,18 @@ Connect your **Luma AI** account to any AI agent and take full control of state-
 
 
 ## Available Tools (10)
-- **lm.get_generation**: Get the status and result of a Luma Dream Machine generation. Returns state (queued/dreaming/completed/failed) and video URL
-- **lm.list_generations**: List recent Luma Dream Machine generations. Returns generation IDs, prompts, states, and timestamps
 - **lm.delete_generation**: Delete a Luma Dream Machine generation and its video
 - **lm.extend_video**: Extend an existing Luma video with additional footage. Seamlessly continues the scene
 - **lm.interpolate**: Create smooth video transition between two keyframe images using Luma Dream Machine
-- **lm.camera_control**: Generate video with specific camera movements using Luma Dream Machine. Supports pan, tilt, dolly, orbit
-- **lm.text_to_image**: Generate photorealistic images using Luma Photon-1 model
 - **lm.get_credits**: Get current Luma Dream Machine credit balance
+- **lm.image_to_video**: Animate a still image into video using Luma Dream Machine. Image becomes the first frame
 - **lm.text_to_video**: ), and loop (true/false). Poll get_generation for results.
 
 Generate cinematic AI video from a text prompt using Luma Dream Machine (Ray-2 model). Industry-leading motion coherence and photorealism
-- **lm.image_to_video**: Animate a still image into video using Luma Dream Machine. Image becomes the first frame
+- **lm.camera_control**: Generate video with specific camera movements using Luma Dream Machine. Supports pan, tilt, dolly, orbit
+- **lm.get_generation**: Get the status and result of a Luma Dream Machine generation. Returns state (queued/dreaming/completed/failed) and video URL
+- **lm.list_generations**: List recent Luma Dream Machine generations. Returns generation IDs, prompts, states, and timestamps
+- **lm.text_to_image**: Generate photorealistic images using Luma Photon-1 model
 
 
 ## 💬 Prompt Examples

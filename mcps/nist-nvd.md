@@ -35,20 +35,20 @@ Connect to the **National Vulnerability Database (NVD)** API through your AI age
 
 
 ## Available Tools (10)
-- **search_cpe_by_keyword**: Search product dictionary by keyword
-- **search_cve_by_cpe**: Find CVEs for a product (CPE)
 - **search_cve_by_cwe**: g. CWE-89).
 
 Find CVEs by weakness (CWE)
 - **search_cve_by_date**: Search CVEs by publication date
 - **search_cve_by_keyword**: Search CVEs by keyword
-- **search_cve_by_severity**: Filter CVEs by severity
-- **get_cpe_by_id**: Get CPE dictionary entry by UUID
-- **get_cve_change_history**: Retrieve CVE change history
 - **list_cpe_matches**: List valid CPE match strings
+- **get_cpe_by_id**: Get CPE dictionary entry by UUID
 - **get_cve_by_id**: g. CVE-2023-1234).
 
 Get CVE details by ID
+- **get_cve_change_history**: Retrieve CVE change history
+- **search_cpe_by_keyword**: Search product dictionary by keyword
+- **search_cve_by_cpe**: Find CVEs for a product (CPE)
+- **search_cve_by_severity**: Filter CVEs by severity
 
 
 ## 💬 Prompt Examples
