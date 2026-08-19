@@ -45,6 +45,12 @@ No more navigating flight tracking websites or manually parsing aviation data fe
 - **get_aircraft_info**: g., "N12345" for US-registered, "G-EUUU" for UK). Returns aircraft type (manufacturer and model), registration country, owner/operator information, registration status, year built, engine type (jet, turboprop, piston), number of engines, and category (airline, business jet, private, cargo, military). Critical for aviation enthusiasts, fleet tracking, aircraft utilization analysis, and private aviation monitoring. AI agents should reference this when users ask "tell me about aircraft N12345", "who owns this tail number", or need aircraft specifications to contextualize flight data.
 
 Get registration details and specifications for a specific aircraft
+- **get_flight_route**: Returns the route as a structured list of fixes, navaids, and airway segments from departure to arrival airport. Essential for flight following, aviation enthusiast tracking, pilot briefing preparation, and route analysis. AI agents use this to visualize flight paths, compare filed routes against actual tracks, analyze common routing patterns between airport pairs, and provide pilots with route reference data.
+
+Get the filed flight plan route for a specific flight
+- **get_flight_status**: Returns departure and arrival airports with terminals and gates, scheduled/estimated/actual times for pushback, takeoff, landing, and arrival, current flight status (en-route, landed, diverted, cancelled, in-hold), delay indicators, aircraft registration and type, route description, and diversion airports if applicable. Critical for passenger travel updates, airline operations coordination, and flight tracking dashboards. AI agents should reference this when users request detailed status for a known flight ID, including gate assignments, delay reasons, and actual vs. scheduled time comparisons.
+
+Get complete status details for a specific flight
 - **get_airport_info**: g., "KJFK" for New York JFK, "KLAX" for Los Angeles International). Returns airport name, location (city, state, country), ICAO/IATA/FAA/LID codes, geographic coordinates (latitude, longitude, elevation), timezone, runway information, and canonical FlightAware ID. Essential for airport identification, travel planning, flight briefing preparation, and geographic reference. AI agents should use this when users ask "tell me about airport X", "what is the ICAO code for Y", or need airport metadata to contextualize flight queries.
 
 Get static information and details for a specific airport
@@ -57,12 +63,6 @@ Get current weather observations and forecast for a specific airport
 - **get_flight_map**: The map shows the filed route, actual track points, departure and arrival airports, and current aircraft position (if airborne). Useful for visual flight presentation, passenger communication, operations dashboards, and flight tracking displays. AI agents should reference this when users request to "show me the flight path" or "where is this flight on a map". Returns image URL that can be embedded in responses or displayed directly.
 
 Get a static map image showing the flight track
-- **get_flight_route**: Returns the route as a structured list of fixes, navaids, and airway segments from departure to arrival airport. Essential for flight following, aviation enthusiast tracking, pilot briefing preparation, and route analysis. AI agents use this to visualize flight paths, compare filed routes against actual tracks, analyze common routing patterns between airport pairs, and provide pilots with route reference data.
-
-Get the filed flight plan route for a specific flight
-- **get_flight_status**: Returns departure and arrival airports with terminals and gates, scheduled/estimated/actual times for pushback, takeoff, landing, and arrival, current flight status (en-route, landed, diverted, cancelled, in-hold), delay indicators, aircraft registration and type, route description, and diversion airports if applicable. Critical for passenger travel updates, airline operations coordination, and flight tracking dashboards. AI agents should reference this when users request detailed status for a known flight ID, including gate assignments, delay reasons, and actual vs. scheduled time comparisons.
-
-Get complete status details for a specific flight
 - **get_historical_flights**: Access continuous flight history data dating back to January 1, 2011, including actual departure and arrival times, route flown, all track points (latitude, longitude, altitude, ground speed, timestamp), arrival status, and delay indicators. Essential for post-flight analysis, operational trend identification, schedule reliability assessment, on-time performance tracking, and aviation safety investigations. AI agents use this when users ask "show me the history of flight X", "how has this route performed over time", or need to analyze historical flight patterns for reliability studies.
 
 Get historical flight data and track for a specific flight

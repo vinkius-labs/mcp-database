@@ -33,16 +33,16 @@ Connect **Framer** to your AI agent and manage your website CMS content and publ
 
 
 ## Available Tools (8)
-- **get_project**: Get project details
-- **list_collections**: List CMS collections
-- **list_collection_items**: List items in a CMS collection
 - **create_collection_item**: Create a new CMS item
+- **get_site_info**: Get site configuration
+- **list_collection_items**: List items in a CMS collection
+- **list_collections**: List CMS collections
+- **list_projects**: List all Framer projects
+- **get_project**: Get project details
+- **list_pages**: List all site pages
 - **publish_site**: This makes changes visible to visitors.
 
 Publish the website
-- **list_pages**: List all site pages
-- **list_projects**: List all Framer projects
-- **get_site_info**: Get site configuration
 
 
 ## 💬 Prompt Examples

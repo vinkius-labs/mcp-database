@@ -22,12 +22,12 @@ Data explorers, researchers discovering what EU data exists, and AI agents that 
 
 
 ## Available Tools (3)
-- **search_datasets**: Returns matching dataset codes and names. Use this to find the right dataset code before querying data.
-
-Search Eurostat dataset catalog by keyword
 - **get_dataset_metadata**: Shows all available dimensions, code lists, and possible filter values. Use this before querying to understand what filters are available.
 
 Get metadata for a Eurostat dataset: dimensions, codes, frequencies
+- **search_datasets**: Returns matching dataset codes and names. Use this to find the right dataset code before querying data.
+
+Search Eurostat dataset catalog by keyword
 - **get_dataset**: Provide the dataset code and optional dimension filters. Find codes via search_datasets or the Eurostat Data Browser.
 
 Query any Eurostat dataset by code with flexible filters

@@ -33,14 +33,14 @@ Finch is the unified API for HRIS and payroll. This MCP server allows your AI ag
 
 ## Available Tools (11)
 - **get_company**: Get organization data (legal name, EIN, primary address)
-- **get_employment**: Get employment data for an individual (title, salary, department, etc.)
 - **get_individual**: Get personal data for an individual (name, email, SSN, etc.)
-- **get_me**: Get details for the authorized application/user connection
 - **introspect**: Check the status and permissions of the current connection
-- **list_automated_jobs**: List automated data sync jobs
-- **list_directory**: Read the employee directory for the connected organization
 - **list_pay_groups**: List pay groups for the organization
 - **list_pay_statements**: List pay statements for a specific payment ID
+- **get_employment**: Get employment data for an individual (title, salary, department, etc.)
+- **get_me**: Get details for the authorized application/user connection
+- **list_automated_jobs**: List automated data sync jobs
+- **list_directory**: Read the employee directory for the connected organization
 - **list_supported_providers**: List all HRIS/Payroll providers supported by Finch
 - **get_automated_job**: Get details for a specific automated job
 

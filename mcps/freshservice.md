@@ -36,18 +36,18 @@ Connect your **Freshservice** instance to any AI agent to automate your IT Servi
 
 
 ## Available Tools (12)
-- **create_itsm_ticket**: Open an IT ticket
 - **check_itsm_status**: Verify helpdesk status
 - **get_asset_details**: Get asset metadata
 - **get_requester_details**: Get user metadata
 - **get_ticket_details**: Get ticket metadata
-- **list_support_agents**: List IT agents
-- **list_it_assets**: List IT assets
 - **list_change_requests**: List IT changes
+- **list_requesters**: List end-users
+- **create_itsm_ticket**: Open an IT ticket
+- **list_it_assets**: List IT assets
 - **list_it_problems**: List problem records
 - **list_it_releases**: List release records
 - **list_itsm_tickets**: List IT tickets
-- **list_requesters**: List end-users
+- **list_support_agents**: List IT agents
 
 
 ## 💬 Prompt Examples

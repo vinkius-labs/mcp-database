@@ -37,16 +37,16 @@ Connect your **Foursquare** account to any AI agent and take full control of you
 
 
 ## Available Tools (10)
-- **autocomplete_venues**: Provision a highly-available JSON Payload generating fast typeaheads
-- **list_venue_categories**: Enumerate explicitly attached structured rules exporting active Taxonomy
-- **get_place_photos**: Retrieve explicit Cloud logging tracing explicit Media URL limits
 - **get_place_details**: Perform structural extraction of properties driving active Node schemas
+- **get_place_photos**: Retrieve explicit Cloud logging tracing explicit Media URL limits
 - **get_place_tips**: Identify precise active arrays spanning native User Reviews
+- **list_venue_categories**: Enumerate explicitly attached structured rules exporting active Taxonomy
+- **autocomplete_venues**: Provision a highly-available JSON Payload generating fast typeaheads
+- **match_venue_exactly**: Dispatch an automated validation check routing explicit Duplication logic
 - **search_nearby_venues**: Inspect deep internal arrays mitigating specific Radius targets
+- **search_places**: Identify bounded routing spaces inside the Headless Foursquare POI graph
 - **search_within_polygon**: Retrieve the exact structural matching verifying Geofence alternatives
 - **search_within_radius**: Irreversibly vaporize explicit validations extracting rich schema scopes
-- **search_places**: Identify bounded routing spaces inside the Headless Foursquare POI graph
-- **match_venue_exactly**: Dispatch an automated validation check routing explicit Duplication logic
 
 
 ## 💬 Prompt Examples

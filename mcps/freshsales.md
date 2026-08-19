@@ -35,12 +35,12 @@ Connect your **Freshsales** account to any AI agent to automate your sales CRM o
 
 
 ## Available Tools (12)
-- **get_account_details**: Get account metadata
 - **get_contact_metadata**: Get contact details
-- **get_deal_details**: Get deal metadata
 - **list_appointments**: List scheduled appointments
-- **get_lead_details**: Get lead metadata
 - **list_sales_accounts**: List CRM accounts
+- **get_account_details**: Get account metadata
+- **get_deal_details**: Get deal metadata
+- **get_lead_details**: Get lead metadata
 - **create_crm_lead**: Create a new lead
 - **list_crm_contacts**: List CRM contacts
 - **list_crm_deals**: List sales deals

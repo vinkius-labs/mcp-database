@@ -36,17 +36,17 @@ Connect your **Gainsight Customer Success** (NXT) instance to any AI agent to au
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Verify connection
 - **get_company_health**: Get company metadata
-- **get_my_identity**: Get current user profile
-- **log_timeline_activity**: Log new activity
 - **get_cta_metadata**: Get CTA details
+- **list_cockpit_tasks**: List cockpit tasks
+- **list_crm_people**: List Gainsight people
+- **list_customer_companies**: List Gainsight companies
+- **verify_api_connection**: Verify connection
+- **get_my_identity**: Get current user profile
 - **get_person_details**: Get person metadata
 - **get_task_metadata**: Get task details
 - **list_calls_to_action**: List cockpit CTAs
-- **list_customer_companies**: List Gainsight companies
-- **list_crm_people**: List Gainsight people
-- **list_cockpit_tasks**: List cockpit tasks
+- **log_timeline_activity**: Log new activity
 - **list_timeline_events**: List timeline activities
 
 

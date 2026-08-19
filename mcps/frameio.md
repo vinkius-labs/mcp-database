@@ -37,17 +37,17 @@ Connect your **Frame.io** account to any AI agent to automate your video collabo
 
 ## Available Tools (12)
 - **list_teams**: List Frame.io teams
-- **add_comment**: Post a new comment
 - **get_asset_details**: Get asset metadata
 - **get_my_profile**: Get current user profile
 - **get_project_details**: Get project metadata
 - **list_accounts**: List billing accounts
+- **list_folders**: List folders in project
+- **list_review_links**: List project review links
+- **add_comment**: Post a new comment
+- **list_asset_comments**: List comments on an asset
 - **list_assets**: List assets or folder contents
 - **list_collaborators**: List project collaborators
-- **list_asset_comments**: List comments on an asset
-- **list_folders**: List folders in project
 - **list_projects**: List projects in a team
-- **list_review_links**: List project review links
 
 
 ## 💬 Prompt Examples

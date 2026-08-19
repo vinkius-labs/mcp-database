@@ -38,12 +38,12 @@ Connect your **FastSpring** account to any AI agent and take full control of you
 
 ## Available Tools (10)
 - **list_accounts**: Identify bounded CRM records inside the Headless FastSpring Platform
-- **update_account_info**: Provision a highly-available JSON Payload generating hard Customer updates
 - **update_subscription_plan**: Identify precise active arrays spanning native Plan tracking
 - **cancel_subscription**: Irreversibly vaporize explicit validations extracting rich Churn flags
 - **charge_managed_subscription**: Enumerate explicitly attached structured rules exporting active Billing
-- **get_account_details**: Perform structural extraction of properties driving active Account logic
+- **update_account_info**: Provision a highly-available JSON Payload generating hard Customer updates
 - **generate_auth_link**: Dispatch an automated validation check routing explicit Login tokens
+- **get_account_details**: Perform structural extraction of properties driving active Account logic
 - **get_order_details**: Retrieve explicit Cloud logging tracing explicit Ordering limits
 - **get_subscription_details**: Inspect deep internal arrays mitigating specific Plan Math
 - **list_catalog_products**: Retrieve the exact structural matching verifying Product mapping

@@ -37,15 +37,15 @@ Connect your **freee** (Accounting/HR) account to any AI agent and take full con
 
 
 ## Available Tools (9)
-- **get_deal**: Get deal details
 - **list_partners**: List all business partners
-- **get_partner**: Get partner details
 - **list_accounts**: List all account items
-- **list_taxes**: List tax codes
-- **list_invoices**: List all invoices
+- **get_deal**: Get deal details
+- **get_partner**: Get partner details
 - **list_expenses**: List expense applications
-- **list_deals**: List all accounting deals (transactions)
+- **list_invoices**: List all invoices
+- **list_taxes**: List tax codes
 - **list_walletables**: List bank accounts and wallets
+- **list_deals**: List all accounting deals (transactions)
 
 
 ## 💬 Prompt Examples

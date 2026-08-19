@@ -41,12 +41,12 @@ Connect your **FreeAgent** account to any AI agent to automate your accounting a
 - **get_invoice_details**: Get invoice metadata
 - **get_profit_and_loss**: Get P&L summary
 - **list_bank_transactions**: List transactions for an account
-- **list_purchase_bills**: List purchase invoices (bills)
 - **list_chart_of_accounts**: List accounting categories
 - **list_contacts**: List customers and suppliers
 - **list_out_of_pocket_expenses**: List employee expenses
-- **list_invoices**: List sales invoices
 - **list_projects**: List active projects
+- **list_purchase_bills**: List purchase invoices (bills)
+- **list_invoices**: List sales invoices
 - **list_bank_accounts**: List bank accounts
 
 

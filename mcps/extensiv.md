@@ -38,36 +38,36 @@ Connect your **Extensiv** (formerly Skubana) account to any AI agent and take fu
 
 
 ## Available Tools (10)
-- **list_orders**: Returns all merchant orders matching the given status. Valid statuses: new, at_wms, shipped, cancelled, error, all.
-
-List Extensiv orders by status
 - **get_order**: Returns full order details including line items, addresses, and fulfillment status for the specified customer reference ID.
 
 Get a specific order by customer reference
 - **get_order_status**: Returns shipment tracking information including carrier, tracking number, and delivery status for the specified order.
 
 Get tracking and shipping status for an order
-- **list_inventory**: Returns current stock levels from the WMS for all products across all configured warehouses.
-
-List all inventory levels from warehouses
-- **get_product_inventory**: Returns stock levels for the specified product SKU across all warehouses.
-
-Get inventory levels for a specific SKU
 - **get_product**: Returns master product data and any configured SKU aliases for the specified product.
 
 Get product details and aliases by SKU
-- **list_warehouses**: Returns all warehouses set up in Integration Manager with their configurations.
+- **get_product_inventory**: Returns stock levels for the specified product SKU across all warehouses.
 
-List all configured warehouses
+Get inventory levels for a specific SKU
+- **list_inventory**: Returns current stock levels from the WMS for all products across all configured warehouses.
+
+List all inventory levels from warehouses
+- **list_orders**: Returns all merchant orders matching the given status. Valid statuses: new, at_wms, shipped, cancelled, error, all.
+
+List Extensiv orders by status
+- **list_alerts**: Returns all outstanding active alerts for the merchant, such as sync errors, failed orders, or inventory discrepancies.
+
+List active merchant alerts
 - **list_carts**: Returns all shopping carts and integrations configured for this merchant, including connection status and settings.
 
 List connected shopping cart integrations
 - **list_ship_methods**: Returns all shipping method codes accepted by the warehouse management system.
 
 List available WMS shipping methods
-- **list_alerts**: Returns all outstanding active alerts for the merchant, such as sync errors, failed orders, or inventory discrepancies.
+- **list_warehouses**: Returns all warehouses set up in Integration Manager with their configurations.
 
-List active merchant alerts
+List all configured warehouses
 
 
 ## 💬 Prompt Examples

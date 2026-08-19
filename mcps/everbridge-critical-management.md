@@ -33,15 +33,15 @@ Integrate **Everbridge**, the leader in critical event management (CEM), directl
 
 
 ## Available Tools (10)
-- **get_everbridge_org_metadata**: Retrieve metadata and limits for your Everbridge organization
 - **get_contact_profile_and_methods**: Get detailed profile and communication methods for a specific contact
-- **quick_crisis_event_audit**: Retrieve a high-level summary of active incidents and recent notifications
 - **get_incident_detailed_data**: Get detailed settings and timeline for a specific critical incident
 - **get_notification_detailed_status**: Get detailed delivery status and statistics for a specific notification
-- **list_critical_contacts**: List all contacts registered in your Everbridge organization
-- **list_contact_distribution_groups**: List all contact distribution groups configured in your organization
-- **list_high_severity_incidents**: Identify incidents that are currently flagged with high severity (mock logic)
 - **list_critical_incidents**: List all active and historical critical incidents
+- **quick_crisis_event_audit**: Retrieve a high-level summary of active incidents and recent notifications
+- **get_everbridge_org_metadata**: Retrieve metadata and limits for your Everbridge organization
+- **list_contact_distribution_groups**: List all contact distribution groups configured in your organization
+- **list_critical_contacts**: List all contacts registered in your Everbridge organization
+- **list_high_severity_incidents**: Identify incidents that are currently flagged with high severity (mock logic)
 - **list_critical_notifications**: List all critical notifications and broadcasts sent via Everbridge
 
 

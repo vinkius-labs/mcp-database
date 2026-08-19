@@ -22,12 +22,6 @@ Track the EU Green Deal progress with official environmental and energy statisti
 
 
 ## Available Tools (6)
-- **get_emissions**: Units: tonnes of CO2 equivalent. Breakdown by source sector (energy, agriculture, transport, industry, waste). Essential for EU Green Deal and Paris Agreement tracking.
-
-Get EU greenhouse gas emissions by country and sector
-- **get_energy_balance**: Production, imports, exports, gross consumption by energy source. The definitive view of a country energy system.
-
-Get EU complete energy balance by country
 - **get_energy_prices**: Datasets: nrg_pc_204 (electricity households), nrg_pc_205 (electricity industry), nrg_pc_202 (gas households), nrg_pc_203 (gas industry). Semi-annual data in EUR per kWh / GJ.
 
 Get EU electricity and gas prices for households and industry
@@ -37,6 +31,12 @@ Get EU waste generation and treatment data
 - **get_agriculture_data**: Covers cereals, fruits, vegetables, wine grapes, olive oil. Essential for Common Agricultural Policy (CAP) analysis.
 
 Get EU agriculture production data
+- **get_emissions**: Units: tonnes of CO2 equivalent. Breakdown by source sector (energy, agriculture, transport, industry, waste). Essential for EU Green Deal and Paris Agreement tracking.
+
+Get EU greenhouse gas emissions by country and sector
+- **get_energy_balance**: Production, imports, exports, gross consumption by energy source. The definitive view of a country energy system.
+
+Get EU complete energy balance by country
 - **get_renewable_energy**: The EU target is 42.5% by 2030. Leaders: Sweden (~65%), Finland (~48%). Laggards: Luxembourg, Malta, Belgium.
 
 Get EU renewable energy share by country

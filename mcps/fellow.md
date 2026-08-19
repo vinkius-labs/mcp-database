@@ -37,37 +37,37 @@ Connect your **Fellow.app** account to any AI agent and take full control of you
 
 
 ## Available Tools (12)
-- **delete_note**: Confirm with the user before executing — this cannot be undone.
-
-Permanently delete a meeting note by ID
-- **list_recordings**: Use to browse all recorded meetings.
-
-List all meeting recordings captured by Fellow
-- **get_recording**: Use to access a specific recording.
-
-Retrieve details of a specific meeting recording
 - **delete_recording**: Confirm with the user before executing.
 
 Permanently delete a meeting recording by ID
-- **get_transcript**: Use for detailed review, compliance documentation, or extracting specific discussion points.
+- **get_recording**: Use to access a specific recording.
 
-Retrieve the full transcript of a meeting recording
+Retrieve details of a specific meeting recording
+- **list_recordings**: Use to browse all recorded meetings.
+
+List all meeting recordings captured by Fellow
 - **list_action_items**: Use for cross-meeting task tracking and accountability.
 
 List all action items across all meetings
+- **delete_note**: Confirm with the user before executing — this cannot be undone.
+
+Permanently delete a meeting note by ID
 - **get_action_item**: Use to inspect a single task.
 
 Retrieve details of a specific action item by ID
-- **list_notes**: Use as the primary entry point to browse all meeting documentation.
+- **get_transcript**: Use for detailed review, compliance documentation, or extracting specific discussion points.
 
-List all meeting notes in the Fellow workspace
+Retrieve the full transcript of a meeting recording
 - **get_note**: Essential for reviewing a specific meeting.
 
 Retrieve the full content and metadata of a specific meeting note by ID
+- **list_notes**: Use as the primary entry point to browse all meeting documentation.
+
+List all meeting notes in the Fellow workspace
+- **archive_action_item**: Archive an action item, removing it from active views without deleting it
 - **complete_action_item**: Use when a task has been finished.
 
 Mark an action item as complete
-- **archive_action_item**: Archive an action item, removing it from active views without deleting it
 - **get_current_user**: Use to verify which account is connected.
 
 Retrieve the authenticated Fellow user profile
