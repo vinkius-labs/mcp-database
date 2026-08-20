@@ -34,26 +34,26 @@ Deploy the ultimate scheduling machine by linking your AI agent to **Truto**. In
 
 
 ## Available Tools (10)
-- **create_event**: Provide calendar_id, title, and start/end times in ISO format.
-
-Create a new event in a calendar via Truto. The event is written through to the underlying provider (Google/Outlook) in real-time. Provide calendar ID, title, and ISO 8601 start/end times
 - **get_calendar**: Get details of a specific calendar via Truto by ID. Returns calendar name, provider, timezone, and metadata normalized to the Truto unified schema
 - **get_event**: Get full details of a specific event via Truto. Returns title, description, start/end times, attendees, location, organizer, recurrence, and provider-specific metadata
-- **get_free_busy**: Provide calendar_id and time range.
-
-Get free/busy data for a calendar via Truto within a date range. Returns time blocks as free or busy in the unified Truto format
 - **list_calendars**: List all calendars via Truto unified API. Truto provides a real-time, pass-through API that normalizes calendar data across Google Calendar, Outlook Calendar, and other providers into a consistent schema
 - **list_connections**: List all integrated accounts (connections) in Truto. Shows connected calendar providers, auth status, and account metadata
-- **list_events**: Provide the calendar_id.
-
-List all events from a calendar via Truto. Returns events in a unified format regardless of the underlying provider. Shows titles, times, attendees, locations, and conferencing info
 - **validate_connection**: Validate a Truto integrated account connection. Checks credentials, permissions, and API accessibility. Returns validation status and any errors
-- **update_event**: Provide the event_id and a JSON updates object.
-
-Update an existing event via Truto. Provide a JSON object with fields to change. Changes pass through to the real provider in real-time
 - **delete_event**: This action is irreversible.
 
 Delete an event via Truto. The event is removed from both Truto and the underlying provider in real-time
+- **create_event**: Provide calendar_id, title, and start/end times in ISO format.
+
+Create a new event in a calendar via Truto. The event is written through to the underlying provider (Google/Outlook) in real-time. Provide calendar ID, title, and ISO 8601 start/end times
+- **get_free_busy**: Provide calendar_id and time range.
+
+Get free/busy data for a calendar via Truto within a date range. Returns time blocks as free or busy in the unified Truto format
+- **list_events**: Provide the calendar_id.
+
+List all events from a calendar via Truto. Returns events in a unified format regardless of the underlying provider. Shows titles, times, attendees, locations, and conferencing info
+- **update_event**: Provide the event_id and a JSON updates object.
+
+Update an existing event via Truto. Provide a JSON object with fields to change. Changes pass through to the real provider in real-time
 
 
 ## 💬 Prompt Examples

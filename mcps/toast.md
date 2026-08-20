@@ -27,19 +27,13 @@ Connect your **Toast** restaurant to any AI agent and transform how you run your
 
 
 ## Available Tools (10)
-- **get_restaurant**: Get restaurant info
 - **get_order**: Deep drill into a single check.
 
 Get order details
-- **list_menus**: With categories, availability windows, and ordering channels.
-
-List restaurant menus
+- **get_restaurant**: Get restaurant info
 - **list_tables**: For floor plan and seating management.
 
 List restaurant tables
-- **list_employees**: For labor management.
-
-List employees
 - **list_revenue_centers**: Used for sales segmentation and reporting.
 
 List revenue centers
@@ -49,12 +43,18 @@ List dining options
 - **list_orders**: THE core tool — "What sold today?"
 
 List restaurant orders
-- **list_time_entries**: For payroll and scheduling.
+- **list_employees**: For labor management.
 
-List time entries
+List employees
 - **list_menu_items**: "What is our most expensive dish?"
 
 List menu items
+- **list_menus**: With categories, availability windows, and ordering channels.
+
+List restaurant menus
+- **list_time_entries**: For payroll and scheduling.
+
+List time entries
 
 
 ## 💬 Prompt Examples

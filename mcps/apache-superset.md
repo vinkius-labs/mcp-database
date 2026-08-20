@@ -33,7 +33,6 @@ Empower your conversational AI with deep Business Intelligence access by integra
 
 
 ## Available Tools (7)
-- **get_chart_details**: Retrieves details for a specific chart
 - **list_charts**: Lists all charts (slices) in Superset
 - **get_dashboard_details**: Retrieves details for a specific dashboard
 - **list_dashboards**: Lists all available dashboards in Apache Superset
@@ -42,6 +41,7 @@ Empower your conversational AI with deep Business Intelligence access by integra
 - **execute_sql_query**: Provide a database ID and the SQL statement.
 
 Executes a SQL query via SQL Lab
+- **get_chart_details**: Retrieves details for a specific chart
 
 
 ## 💬 Prompt Examples

@@ -33,14 +33,14 @@ Equip your artificial assistant with precise commercial tax intelligence integra
 
 
 ## Available Tools (10)
-- **get_tax_categories**: Lists product tax categories from TaxJar
 - **list_tax_orders**: Lists previously recorded order transactions in TaxJar
-- **get_tax_order_details**: Retrieves details for a specific order transaction
+- **get_tax_rates**: Retrieves sales tax rates for a specific ZIP code
 - **calculate_sales_tax**: Provide order details like from/to addresses and amounts as a JSON payload.
 
 Calculates the exact sales tax for a specific order
-- **get_tax_rates**: Retrieves sales tax rates for a specific ZIP code
 - **get_summary_tax_rates**: Retrieves minimum and average tax rates by region
+- **get_tax_categories**: Lists product tax categories from TaxJar
+- **get_tax_order_details**: Retrieves details for a specific order transaction
 - **list_tax_customers**: Lists TaxJar customer records and exemptions
 - **list_nexus_regions**: Lists regions where the business has tax nexus
 - **list_tax_refunds**: Lists previously recorded refund transactions

@@ -43,7 +43,6 @@ Your AI becomes a transactional legal assistant, helping you draft clauses, revi
 
 
 ## Available Tools (13)
-- **check_spellbook_playbook**: Check contract compliance against a playbook
 - **analyze_spellbook_contract**: USE WHEN:
 - User wants to review a contract for risks
 - User needs to identify issues in a contract
@@ -59,6 +58,7 @@ EXAMPLES:
 - "Check clauses in document 456" → call with document_id="456", analysis_type="clause_check"
 
 Analyze a contract document for risks, issues, and suggestions
+- **check_spellbook_playbook**: Check contract compliance against a playbook
 - **compare_spellbook_contracts**: USE WHEN:
 - User wants to compare two versions of a contract
 - User needs to identify changes between drafts
@@ -91,12 +91,10 @@ EXAMPLES:
 - "Write a confidentiality clause with custom instructions" → call with clause_type="Confidentiality", custom_instructions="Include data breach notification requirements"
 
 Draft a contract clause using Spellbook AI
-- **get_spellbook_clause_suggestions**: Get AI clause suggestions for a contract document
 - **get_spellbook_document**: Get detailed information for a specific contract document
 - **get_spellbook_market_comparison**: Shows pro-buyer, pro-seller, and market-standard positions.
 
 Get market comparison data for a specific clause type
-- **get_spellbook_risk_assessment**: Get a detailed risk assessment for a contract document
 - **list_spellbook_documents**: Supports filtering by status, document type, and date range.
 
 USE WHEN:
@@ -119,9 +117,7 @@ EXAMPLES:
 - "List NDAs" → call with document_type="NDA"
 
 List all contract documents in Spellbook
-- **search_spellbook_clause_library**: Search the Spellbook clause library for standard clauses
 - **search_spellbook_documents**: Search contract documents by keyword
-- **summarize_spellbook_contract**: Generate an AI summary of a contract document
 - **upload_spellbook_document**: USE WHEN:
 - User wants to upload a new contract for review
 - User needs to analyze a contract received from another party
@@ -137,6 +133,10 @@ EXAMPLES:
 - "Analyze this MSA contract" → call with file_name="MSA.docx", file_content="[base64 content]", document_type="MSA"
 
 Upload a contract document to Spellbook for analysis
+- **get_spellbook_clause_suggestions**: Get AI clause suggestions for a contract document
+- **get_spellbook_risk_assessment**: Get a detailed risk assessment for a contract document
+- **search_spellbook_clause_library**: Search the Spellbook clause library for standard clauses
+- **summarize_spellbook_contract**: Generate an AI summary of a contract document
 
 
 ## 💬 Prompt Examples

@@ -35,13 +35,13 @@ Connect your AI agent exclusively to your **Tray.io** (or Tray.ai) integration w
 
 ## Available Tools (6)
 - **get_authenticated_user**: Retrieves details for the currently authenticated user
-- **get_workflow_details**: Retrieves details for a specific Tray.io workflow
 - **list_available_connectors**: g., Salesforce, Slack) can be integrated.
 
 Lists all available service connectors in Tray.io
 - **list_workflow_executions**: Lists recent execution history for a specific workflow
-- **list_integration_solutions**: Lists all solutions (integration templates) in the account
 - **list_workflows**: Lists all workflows in the Tray.io account
+- **get_workflow_details**: Retrieves details for a specific Tray.io workflow
+- **list_integration_solutions**: Lists all solutions (integration templates) in the account
 
 
 ## 💬 Prompt Examples

@@ -35,13 +35,13 @@ Essential for **Platform Operations teams**, **AI Engineers**, and **Software Ar
 
 
 ## Available Tools (8)
-- **truefoundry_deploy_mcp_server**: Spawn a new backend container logical process using TrueFoundry service mesh
 - **truefoundry_generate_embeddings**: Calculate semantic vectors securely using the unifed abstraction
-- **truefoundry_get_deployment_status**: Emit detailed metric states on the orchestration matrix bounds
 - **truefoundry_get_mcp_server_info**: Extract exact JSON metadata of one registered TrueFoundry tool schema
-- **truefoundry_list_deployments**: Monitor the existing array of running backend topologies mapped to the team
 - **truefoundry_list_gateway_models**: List all accessible foundation models from the TrueFoundry unified AI gateway
 - **truefoundry_list_mcp_servers**: Extract registry mapping of all available logical MCP Tools in TrueFoundry
+- **truefoundry_deploy_mcp_server**: Spawn a new backend container logical process using TrueFoundry service mesh
+- **truefoundry_get_deployment_status**: Emit detailed metric states on the orchestration matrix bounds
+- **truefoundry_list_deployments**: Monitor the existing array of running backend topologies mapped to the team
 - **truefoundry_run_gateway_chat**: g., openai/gpt-4o) mapping the true chat parameter to the gateway.
 
 Perform inference explicitly pushing a model query string through TrueFoundry

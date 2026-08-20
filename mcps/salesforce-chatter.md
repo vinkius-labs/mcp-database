@@ -28,13 +28,13 @@ Connect **Salesforce Chatter** to any AI agent.
 - **sf_comment_on_post**: Requires the feed element ID.
 
 Comment on a Chatter post
+- **sf_post_to_chatter**: Provide parentId to post on a specific record.
+
+Post a message to Chatter
 - **sf_chatter_feed**: Get the latest Chatter news feed for the authenticated user
 - **sf_group_feed**: Requires the group ID (get from sf_search_chatter_groups).
 
 Get the feed of a specific Chatter group
-- **sf_post_to_chatter**: Provide parentId to post on a specific record.
-
-Post a message to Chatter
 - **sf_search_chatter_groups**: Returns group name, description, member count, visibility, and owner.
 
 Search Chatter groups by name

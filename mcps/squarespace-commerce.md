@@ -33,24 +33,24 @@ Connect your **Squarespace Commerce** backend operations exclusively to your loc
 
 
 ## Available Tools (10)
-- **adjust_inventory**: Provide a variant_id and a quantity delta (e.g. 5 to add, -2 to subtract).
-
-Adjusts the inventory quantity for a product variant
 - **fulfill_order**: Requires order_id, tracking_number, and carrier name.
 
 Marks an order as fulfilled and adds tracking information
-- **get_order_details**: Retrieves details for a specific order
 - **get_product_details**: Retrieves details for a specific product
 - **list_inventory**: Lists inventory levels for product variants
 - **list_webhooks**: Lists configured webhook subscriptions
+- **list_transactions**: Lists financial transactions
+- **list_customer_profiles**: Lists Squarespace customer profiles
 - **list_orders**: Supports pagination via cursor.
 
 Lists Squarespace Commerce orders
+- **adjust_inventory**: Provide a variant_id and a quantity delta (e.g. 5 to add, -2 to subtract).
+
+Adjusts the inventory quantity for a product variant
+- **get_order_details**: Retrieves details for a specific order
 - **list_products**: Returns product names and IDs. Use the cursor from the previous response for pagination.
 
 Lists Squarespace Commerce products
-- **list_customer_profiles**: Lists Squarespace customer profiles
-- **list_transactions**: Lists financial transactions
 
 
 ## 💬 Prompt Examples

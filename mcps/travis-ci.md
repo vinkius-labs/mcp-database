@@ -37,23 +37,23 @@ Supercharge your DevOps methodology by linking **Travis CI** exclusively to your
 - **get_user_profile**: Retrieves the authenticated Travis CI user profile
 - **list_repository_branches**: Lists all branches with their latest build status on Travis CI
 - **list_travis_repositories**: Lists all repositories configured on Travis CI
+- **list_build_jobs**: Lists all individual jobs within a specific build
+- **list_repository_builds**: Provide the repository slug.
+
+Lists recent build executions for a specific repository
+- **restart_travis_build**: Requires the build ID.
+
+Restarts a previously executed Travis CI build
 - **cancel_travis_build**: This action is irreversible for the current execution.
 
 Cancels a currently running Travis CI build
 - **get_build_details**: Retrieves full details for a specific Travis CI build
-- **list_repository_builds**: Provide the repository slug.
-
-Lists recent build executions for a specific repository
-- **list_build_jobs**: Lists all individual jobs within a specific build
-- **restart_travis_build**: Requires the build ID.
-
-Restarts a previously executed Travis CI build
-- **trigger_new_build**: Provide the repo slug, git branch, and an optional message.
-
-Triggers a new Travis CI build for a repository on a specific branch
 - **get_repository_details**: g. "org/repo") and need its ID or default branch status.
 
 Retrieves details for a specific Travis CI repository
+- **trigger_new_build**: Provide the repo slug, git branch, and an optional message.
+
+Triggers a new Travis CI build for a repository on a specific branch
 
 
 ## 💬 Prompt Examples

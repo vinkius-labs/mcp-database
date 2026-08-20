@@ -33,11 +33,11 @@ Ingest the heartbeat of your **Squarespace** properties directly into your AI wo
 
 
 ## Available Tools (6)
-- **list_products**: Lists all products in the store
 - **list_member_profiles**: Lists member or customer profiles
-- **list_transactions**: Lists financial transactions
-- **list_inventory**: Lists inventory levels for products
+- **list_products**: Lists all products in the store
 - **get_order_details**: Retrieves details for a specific order
+- **list_inventory**: Lists inventory levels for products
+- **list_transactions**: Lists financial transactions
 - **list_orders**: Lists Squarespace commerce orders
 
 

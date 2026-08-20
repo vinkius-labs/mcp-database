@@ -35,15 +35,15 @@ Stop managing financial syncs blindly and asking accountants to pull limits. Let
 
 
 ## Available Tools (9)
+- **list_cards**: List all virtual and physical cards issued
+- **list_suppliers**: List all registered suppliers
 - **get_payment_details**: Get detailed information about a specific payment
 - **get_supplier_details**: Get detailed information about a specific supplier
 - **list_budgets**: List all budgets and their spending status
-- **list_cards**: List all virtual and physical cards issued
 - **list_expense_claims**: List all employee expense claims and reimbursement requests
 - **list_invoices**: List all invoices pending or processed
 - **list_members**: List all team members with Spendesk access
 - **list_payments**: List all payments in the Spendesk account
-- **list_suppliers**: List all registered suppliers
 
 
 ## 💬 Prompt Examples

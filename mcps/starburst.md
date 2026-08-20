@@ -33,13 +33,13 @@ Integrate the powerful federated data analytics capabilities of **Starburst** di
 
 
 ## Available Tools (6)
-- **get_query_details**: Retrieves details for a specific SQL query
 - **list_catalogs**: g., S3, Snowflake, Iceberg) are connected.
 
 Lists all data catalogs available in Starburst Galaxy
 - **list_data_products**: Lists all published data products
 - **list_domains**: Lists data product domains
 - **list_queries**: Lists recent SQL queries executed in the cluster
+- **get_query_details**: Retrieves details for a specific SQL query
 - **list_roles**: Lists all security roles in the organization
 
 

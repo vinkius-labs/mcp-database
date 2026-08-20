@@ -34,15 +34,15 @@ Seamlessly integrate your **Storybook** design system into your conversational A
 
 
 ## Available Tools (6)
-- **extract_docs_guidance**: Get guidance on how to read documentation for a component
 - **get_preview_url**: Generate the preview URL for a component sandbox
 - **get_story_args**: Get metadata and default arguments for a specific component
-- **list_categories**: g., Atoms, Molecules, Organisms).
-
-List the top-level categories and folder structure of the Design System
 - **list_components**: You can optionally filter by category folder.
 
 List all UI components available in the Storybook Design System
+- **extract_docs_guidance**: Get guidance on how to read documentation for a component
+- **list_categories**: g., Atoms, Molecules, Organisms).
+
+List the top-level categories and folder structure of the Design System
 - **search_components**: Search for specific components by name or keyword
 
 

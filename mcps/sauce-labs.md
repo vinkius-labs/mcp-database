@@ -35,11 +35,8 @@ Your AI agent will be able to pinpoint specific build failures, analyze error tr
 
 
 ## Available Tools (11)
-- **get_activity**: Retrieves current account activity levels
 - **get_build_jobs**: Lists all individual jobs within a specific build
-- **get_build**: Retrieves details for a specific build
 - **get_concurrency**: Retrieves account concurrency limits
-- **get_job**: Retrieves details for a specific test job
 - **get_status**: Checks current Sauce Labs platform availability
 - **list_builds**: Lists recent automation builds
 - **list_jobs**: ).
@@ -49,6 +46,9 @@ Lists recent test jobs on Sauce Labs
 
 Lists all supported OS and browser combinations
 - **list_tunnels**: Lists active Sauce Connect tunnels
+- **get_activity**: Retrieves current account activity levels
+- **get_build**: Retrieves details for a specific build
+- **get_job**: Retrieves details for a specific test job
 - **stop_job**: Stops a running test job
 
 

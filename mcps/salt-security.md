@@ -34,11 +34,11 @@ Connect your AI directly with **Salt Security** to proactively defend your Appli
 - **get_endpoint**: Retrieves details for a specific API endpoint
 - **get_governance_policies**: Lists active API governance rules
 - **get_inventory**: Retrieves the auto-discovered API inventory
-- **get_posture_vulnerabilities**: Retrieves identified pre-production design flaws
 - **list_oas_specs**: Lists all uploaded OpenAPI specifications
 - **upload_oas_spec**: Uploads a new OAS/Swagger specification
-- **block_attacker**: Issues a command to block a specific attacker
 - **get_system_health**: Checks the health of traffic mirror ingestion
+- **block_attacker**: Issues a command to block a specific attacker
+- **get_posture_vulnerabilities**: Retrieves identified pre-production design flaws
 
 
 ## 💬 Prompt Examples

@@ -33,6 +33,12 @@ Bring your **Sprout Social** enterprise command center directly into your artifi
 
 
 ## Available Tools (10)
+- **list_draft_posts**: List draft posts in Sprout Social
+- **list_listening_topics**: List social listening topics
+- **list_profile_groups**: List Sprout Social organizational groups
+- **list_profiles**: ).
+
+List connected Sprout Social profiles
 - **create_social_post**: Provide a JSON array of profile_ids, the post text, and an optional scheduled_at time (ISO 8601).
 
 Create and schedule a new social media post
@@ -43,12 +49,6 @@ Get social listening metrics for a specific topic
 
 Get Sprout Social profile analytics
 - **get_tag_performance**: Get performance reports based on Sprout Social tags
-- **list_draft_posts**: List draft posts in Sprout Social
-- **list_profile_groups**: List Sprout Social organizational groups
-- **list_listening_topics**: List social listening topics
-- **list_profiles**: ).
-
-List connected Sprout Social profiles
 - **list_published_posts**: List published posts for a social profile
 - **list_scheduled_posts**: List scheduled posts
 

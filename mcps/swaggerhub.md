@@ -33,16 +33,16 @@ Integrate **SwaggerHub**, the enterprise platform for API design and documentati
 
 
 ## Available Tools (10)
-- **get_api_details**: Retrieves metadata for a SwaggerHub API definition
 - **get_project_details**: Retrieves details of a SwaggerHub project
+- **list_api_templates**: Lists all available API templates on SwaggerHub
+- **list_projects**: Lists all projects in a SwaggerHub organization
+- **get_domain_details**: Retrieves metadata for a SwaggerHub domain
+- **get_api_details**: Retrieves metadata for a SwaggerHub API definition
+- **get_api_version_spec**: Retrieves a specific version of a SwaggerHub API definition (OpenAPI spec)
+- **list_api_integrations**: Lists all CI/CD integrations configured for a SwaggerHub API
 - **list_apis**: List all API definitions owned by a SwaggerHub user or organization
 - **list_domains**: Lists all shared domains (reusable components) owned by a user or org
-- **list_api_integrations**: Lists all CI/CD integrations configured for a SwaggerHub API
-- **list_projects**: Lists all projects in a SwaggerHub organization
-- **list_api_templates**: Lists all available API templates on SwaggerHub
 - **search_apis**: Search all public APIs on SwaggerHub by keyword
-- **get_api_version_spec**: Retrieves a specific version of a SwaggerHub API definition (OpenAPI spec)
-- **get_domain_details**: Retrieves metadata for a SwaggerHub domain
 
 
 ## 💬 Prompt Examples

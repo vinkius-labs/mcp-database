@@ -38,9 +38,9 @@ Connect **Trigger.dev** to your AI agent and manage your background job infrastr
 - **get_run**: Get run details
 - **trigger_task**: Trigger a background task
 - **cancel_run**: Cancel a running task
-- **replay_run**: Replay a completed task
-- **list_schedules**: List cron schedules
 - **list_environments**: List deployment environments
+- **list_schedules**: List cron schedules
+- **replay_run**: Replay a completed task
 
 
 ## 💬 Prompt Examples

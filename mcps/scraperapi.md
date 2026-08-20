@@ -35,11 +35,6 @@ ScraperAPI abstracts away all the infrastructure logic, turning your agent into 
 
 
 ## Available Tools (10)
-- **get_async_job**: Retrieves the status and result of an async job
-- **get_account_stats**: Retrieves API usage statistics
-- **get_screenshot_link**: Generates a URL to capture a full-page screenshot
-- **scrape_amazon**: Retrieves structured Amazon product details
-- **scrape_google_serp**: Retrieves structured Google Search results
 - **scrape_html**: Automatically rotates proxies.
 
 Scrapes standard HTML from a URL
@@ -49,6 +44,11 @@ Scrapes standard HTML from a URL
 
 Creates an asynchronous scraping job
 - **custom_scrape**: Performs a scrape with custom ScraperAPI parameters
+- **get_account_stats**: Retrieves API usage statistics
+- **get_async_job**: Retrieves the status and result of an async job
+- **get_screenshot_link**: Generates a URL to capture a full-page screenshot
+- **scrape_amazon**: Retrieves structured Amazon product details
+- **scrape_google_serp**: Retrieves structured Google Search results
 
 
 ## 💬 Prompt Examples
