@@ -33,17 +33,17 @@ Equip intelligent LLM models explicitly executing boundaries isolating **Pexels 
 
 
 ## Available Tools (10)
-- **get_curated_photos**: Get hand-picked curated photos
-- **get_featured_collections**: Get featured collections curated by Pexels
 - **get_photo_details**: Get details for a specific photo
 - **get_popular_videos**: Get the most popular videos on Pexels
+- **get_curated_photos**: Get hand-picked curated photos
+- **get_featured_collections**: Get featured collections curated by Pexels
 - **get_video_details**: Get details for a specific video
 - **get_collection_media**: Get all media in a specific collection
 - **list_my_collections**: List your Pexels collections
-- **search_photos_by_color**: Search for photos filtered by a specific color
 - **search_photos**: Supports pagination.
 
 Search for free stock photos on Pexels
+- **search_photos_by_color**: Search for photos filtered by a specific color
 - **search_videos**: Search for free stock videos
 
 

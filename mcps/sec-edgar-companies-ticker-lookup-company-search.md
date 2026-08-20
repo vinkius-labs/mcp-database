@@ -21,15 +21,15 @@ SEC company lookup.
 
 
 ## Available Tools (3)
+- **get_company_info**: Provide either a CIK number or ticker.
+
+Get full company profile from SEC — SIC code, exchanges, filings history
 - **lookup_ticker**: g., AAPL, MSFT, TSLA) to the SEC CIK number needed for all EDGAR queries. Returns company name, CIK, and ticker. The CIK is the unique identifier SEC uses for all public companies.
 
 Look up a company by stock ticker — get CIK, name, and ID
 - **search_companies**: Returns matching companies with CIK numbers. Use this when you don't know the exact ticker.
 
 Search SEC-registered companies by name or ticker
-- **get_company_info**: Provide either a CIK number or ticker.
-
-Get full company profile from SEC — SIC code, exchanges, filings history
 
 
 ## 💬 Prompt Examples

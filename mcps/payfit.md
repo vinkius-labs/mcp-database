@@ -33,13 +33,13 @@ Bring **PayFit Global Payroll** into your automated AI workflows natively. Provi
 
 
 ## Available Tools (7)
-- **get_company**: Get overview information about the PayFit company account
 - **list_collaborators**: List all collaborators (employees) in the company
-- **get_collaborator_details**: Get detailed information about a specific collaborator
-- **list_contracts**: List all employment contracts in the company
-- **list_payslips**: List all payslips for a specific collaborator
 - **list_departments**: List all departments in the company
 - **get_accounting_entries**: Get accounting entries for a specific payroll period (YYYYMM format)
+- **get_collaborator_details**: Get detailed information about a specific collaborator
+- **get_company**: Get overview information about the PayFit company account
+- **list_contracts**: List all employment contracts in the company
+- **list_payslips**: List all payslips for a specific collaborator
 
 
 ## 💬 Prompt Examples

@@ -26,17 +26,17 @@ Grant your AI agent (like Claude or Cursor) aggressive observational dominance o
 
 
 ## Available Tools (7)
+- **get_workbook_details**: Retrieves details for a specific workbook
 - **list_workbooks**: Returns workbook names and IDs.
 
 Lists all workbooks in the Sigma organization
-- **get_workbook_details**: Retrieves details for a specific workbook
-- **list_workbook_pages**: Lists all pages within a specific workbook
 - **list_connections**: ) are available.
 
 Lists data source connections configured in Sigma
+- **list_datasets**: Lists all datasets available in the organization
 - **list_organization_members**: Lists all users in the Sigma organization
 - **list_organization_teams**: Lists all teams in the Sigma organization
-- **list_datasets**: Lists all datasets available in the organization
+- **list_workbook_pages**: Lists all pages within a specific workbook
 
 
 ## 💬 Prompt Examples

@@ -35,15 +35,15 @@ Connect your **Pingdom** account to any AI agent and take full control of your w
 
 ## Available Tools (10)
 - **get_check_details**: Get details for a specific check
-- **get_check_outages**: List outages for a specific check
-- **resume_uptime_check**: Resume a specific uptime check
-- **get_average_response_time**: Get average response time for a check
 - **list_uptime_checks**: List all Pingdom uptime checks
 - **list_alert_contacts**: List alert notification contacts
 - **list_maintenance_windows**: List scheduled maintenance windows
 - **list_pingdom_probes**: List all Pingdom monitoring locations (probes)
+- **get_average_response_time**: Get average response time for a check
+- **get_check_outages**: List outages for a specific check
 - **list_check_results**: List individual check results/logs
 - **pause_uptime_check**: Pause a specific uptime check
+- **resume_uptime_check**: Resume a specific uptime check
 
 
 ## 💬 Prompt Examples

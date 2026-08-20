@@ -40,29 +40,12 @@ No more navigating the Pipefy dashboard for every workflow action. Your AI acts 
 
 
 ## Available Tools (14)
-- **clone_card**: You must provide the card_id of the card to clone.
-The new card is created in the same pipe as the original, starting at the first phase.
-This is useful for creating similar requests, repeating processes, or using an existing card 
-as a template for new items. The cloned card gets a new unique ID but retains all field data.
-
-Clone an existing card to create a duplicate
-- **create_card**: You must provide the pipe_id and 
-a JSON object containing field values matching the pipe's required fields.
-Fields are key-value pairs where keys are field IDs and values are the data to store.
-Optionally specify a phase_id to start the card in a specific phase (defaults to first phase).
-Example fields: { "name": "John Doe", "email": "john@example.com", "priority": "High" }
-
-Create a new card in a Pipefy pipe
 - **delete_card**: You must provide the card_id.
 This action cannot be undone. Use this to remove test cards, duplicates, or items that were 
 created in error. Be careful as this will also remove all associated data including comments,
 attachments, and field values for that card.
 
 Delete a card from a pipe
-- **get_card**: Use the card_id obtained from list_cards to inspect full card information.
-This is useful for reviewing card details before updating fields or moving to another phase.
-
-Get detailed information about a specific card
 - **get_organization**: Use the organization_id to inspect your organization's structure, understand team membership,
 and discover available pipes for card management.
 
@@ -81,6 +64,35 @@ Get details of a specific Pipefy pipe (process)
 This is also useful for understanding which organizations and pipes the user has access to.
 
 Get the authenticated user profile
+- **move_card_to_phase**: You must provide the card_id and the target phase_id.
+This is the primary way to advance workflow items through the pipe's process steps.
+Common use cases: moving a request from "New" to "In Review", advancing a lead to "Qualified",
+or progressing a task to "Completed". The card retains all its field values after moving.
+
+Move a card to a different phase in the pipe
+- **search_cards_by_field**: This is useful for finding cards by email, name, ID, or any custom field content.
+You must provide the pipe_id, field_id (the field to search in), and search_value (text to find).
+Results include card title, current phase, status, and all field values for matching cards.
+The search uses a "contains" operator for flexible matching.
+
+Search cards in a pipe by a specific field value
+- **clone_card**: You must provide the card_id of the card to clone.
+The new card is created in the same pipe as the original, starting at the first phase.
+This is useful for creating similar requests, repeating processes, or using an existing card 
+as a template for new items. The cloned card gets a new unique ID but retains all field data.
+
+Clone an existing card to create a duplicate
+- **create_card**: You must provide the pipe_id and 
+a JSON object containing field values matching the pipe's required fields.
+Fields are key-value pairs where keys are field IDs and values are the data to store.
+Optionally specify a phase_id to start the card in a specific phase (defaults to first phase).
+Example fields: { "name": "John Doe", "email": "john@example.com", "priority": "High" }
+
+Create a new card in a Pipefy pipe
+- **get_card**: Use the card_id obtained from list_cards to inspect full card information.
+This is useful for reviewing card details before updating fields or moving to another phase.
+
+Get detailed information about a specific card
 - **list_cards**: Cards represent individual items 
 flowing through the pipe's workflow phases (e.g., requests, tasks, tickets, leads).
 You must provide the pipe_id. Optionally filter by phase_id to see cards in a specific phase.
@@ -98,18 +110,6 @@ You must provide the organization_id which can be found in your Pipefy URL or ob
 Use this to discover all available pipes before managing cards within them.
 
 List all pipes in an organization
-- **move_card_to_phase**: You must provide the card_id and the target phase_id.
-This is the primary way to advance workflow items through the pipe's process steps.
-Common use cases: moving a request from "New" to "In Review", advancing a lead to "Qualified",
-or progressing a task to "Completed". The card retains all its field values after moving.
-
-Move a card to a different phase in the pipe
-- **search_cards_by_field**: This is useful for finding cards by email, name, ID, or any custom field content.
-You must provide the pipe_id, field_id (the field to search in), and search_value (text to find).
-Results include card title, current phase, status, and all field values for matching cards.
-The search uses a "contains" operator for flexible matching.
-
-Search cards in a pipe by a specific field value
 - **update_card_field**: You must provide the card_id, 
 the field_id of the field to update, and the new value as a string.
 This is useful for updating card information as requests progress or details change.

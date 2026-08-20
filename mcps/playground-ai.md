@@ -33,18 +33,18 @@ Connect your AI agent directly to the **Playground AI** compute clusters. Elimin
 
 
 ## Available Tools (10)
-- **inpaint_image**: Inpaint specific areas of an image using Playground AI. Uses a mask to define regions. Instructions: Pass prompt, image URL, and mask image URL (white = edit area)
 - **list_generations**: List recent generations on Playground AI. Returns generation IDs, prompts, and timestamps
+- **outpaint_image**: Extend an image beyond its borders using Playground AI. AI generates new content in the specified direction. Instructions: Pass prompt, image URL, direction (up/down/left/right)
+- **remove_background**: Remove the background from an image using Playground AI. Returns transparent PNG. Instructions: Pass public image URL
+- **transform_image**: Transform an existing image with a text prompt using Playground AI. Strength controls how much the image changes (0-1). Instructions: Pass prompt, public image URL, and strength
+- **upscale_image**: Upscale an image using Playground AI. Enhances resolution and detail. Instructions: Pass image URL and scale factor (2 or 4)
+- **list_models**: List available models on Playground AI. Returns model names, descriptions, and capabilities
 - **generate_image**: Triggers immediate billing execution per inference step.
 
 Generate images from a text prompt using Playground AI. Playground offers multiple AI models including Playground v3 and SDXL variants for creative image generation. Instructions: Pass prompt, model name, width, height (multiples of 64)
-- **transform_image**: Transform an existing image with a text prompt using Playground AI. Strength controls how much the image changes (0-1). Instructions: Pass prompt, public image URL, and strength
-- **upscale_image**: Upscale an image using Playground AI. Enhances resolution and detail. Instructions: Pass image URL and scale factor (2 or 4)
-- **remove_background**: Remove the background from an image using Playground AI. Returns transparent PNG. Instructions: Pass public image URL
-- **outpaint_image**: Extend an image beyond its borders using Playground AI. AI generates new content in the specified direction. Instructions: Pass prompt, image URL, direction (up/down/left/right)
 - **generate_with_controlnet**: Generate images with ControlNet guidance using Playground AI. Control types: canny, depth, pose, scribble. Instructions: Pass prompt, reference image URL, control type
-- **list_models**: List available models on Playground AI. Returns model names, descriptions, and capabilities
 - **get_generation**: Get details of a Playground AI generation by ID. Returns images, prompt, model, and metadata
+- **inpaint_image**: Inpaint specific areas of an image using Playground AI. Uses a mask to define regions. Instructions: Pass prompt, image URL, and mask image URL (white = edit area)
 
 
 ## 💬 Prompt Examples

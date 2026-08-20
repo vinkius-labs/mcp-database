@@ -36,24 +36,24 @@ Stop interrupting engineers to ask where a specific document lives. Your AI agen
 
 
 ## Available Tools (12)
-- **get_organization**: Retrieve the Slab organization profile
 - **list_posts**: Returns post IDs and titles.
 
 List all wiki posts/articles in the Slab workspace
-- **get_post_details**: Retrieve the full content and metadata of a specific Slab post
-- **search_posts**: Full-text search across all Slab posts
-- **list_topics**: List all topics organizing posts in the Slab workspace
-- **get_topic_details**: Retrieve details and list of posts for a specific Slab topic
-- **list_users**: List all members of the Slab organization
 - **create_post**: Provide content in Markdown.
 
 Create a new wiki post in Slab
-- **update_post**: Update an existing Slab post title or content
 - **create_topic**: Create a new topic in Slab to organize posts
+- **get_post_details**: Retrieve the full content and metadata of a specific Slab post
+- **list_recent_posts**: List the most recently updated posts
+- **list_topics**: List all topics organizing posts in the Slab workspace
+- **list_users**: List all members of the Slab organization
+- **search_posts**: Full-text search across all Slab posts
+- **update_post**: Update an existing Slab post title or content
 - **archive_post**: This action is irreversible via API.
 
 Archive an existing Slab post
-- **list_recent_posts**: List the most recently updated posts
+- **get_organization**: Retrieve the Slab organization profile
+- **get_topic_details**: Retrieve details and list of posts for a specific Slab topic
 
 
 ## 💬 Prompt Examples
