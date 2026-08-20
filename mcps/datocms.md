@@ -37,15 +37,15 @@ Connect your **DatoCMS** project to any AI agent and take full control of your h
 
 ## Available Tools (10)
 - **create_cms_record**: Provision a highly-available JSON Payload generating new content Items
-- **wipe_cms_record**: Irreversibly vaporize explicit App nodes dropping live Document rows
-- **wipe_media_upload**: Dispatch an automated validation check routing explicit Disk removals
-- **get_single_record**: Perform structural extraction of properties driving active Node details
-- **get_media_upload**: Retrieve the exact structural matching verifying File blocks
 - **execute_graphql_cda**: Identify bounded routing spaces inside the Headless DatoCMS GraphQL tree
 - **list_global_models**: Enumerate explicitly attached structured rules exporting Item Types
+- **patch_cms_record**: Mutate globalThis Web CRM boundaries substituting Item parameters safely
+- **wipe_media_upload**: Dispatch an automated validation check routing explicit Disk removals
+- **get_media_upload**: Retrieve the exact structural matching verifying File blocks
+- **wipe_cms_record**: Irreversibly vaporize explicit App nodes dropping live Document rows
+- **get_single_record**: Perform structural extraction of properties driving active Node details
 - **list_cma_records**: Retrieve explicit Cloud logging tracing explicit JSON:API arrays
 - **list_media_uploads**: Inspect deep internal arrays mitigating specific Image storage
-- **patch_cms_record**: Mutate globalThis Web CRM boundaries substituting Item parameters safely
 
 
 ## 💬 Prompt Examples

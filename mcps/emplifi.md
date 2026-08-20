@@ -33,16 +33,16 @@ Integrate **Emplifi**, the unified customer experience (CX) platform, directly i
 
 
 ## Available Tools (10)
-- **get_influencer_performance_stats**: Get performance metrics for a specific influencer/creator
 - **get_social_post_metrics**: Get engagement and performance metrics for a specific social post
 - **quick_cx_health_audit**: Retrieve a high-level summary of social performance and care automation
-- **list_content_classification_labels**: List all labels used for content classification and reporting
 - **get_emplifi_account_metadata**: Retrieve metadata and limits for your Emplifi account
+- **get_influencer_performance_stats**: Get performance metrics for a specific influencer/creator
 - **list_care_automation_rules**: List all customer care automation rules and workflows
-- **list_listening_dashboards**: List all social listening dashboards and topics
+- **list_content_classification_labels**: List all labels used for content classification and reporting
 - **list_social_posts**: List recent social media posts for a specific profile
-- **list_social_profiles**: List all social media profiles managed in your Emplifi account
+- **list_listening_dashboards**: List all social listening dashboards and topics
 - **list_organization_team_members**: List all team members and their roles in the organization
+- **list_social_profiles**: List all social media profiles managed in your Emplifi account
 
 
 ## 💬 Prompt Examples

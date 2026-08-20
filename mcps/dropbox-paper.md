@@ -38,20 +38,20 @@ Connect your **Dropbox Paper** account to any AI agent and take full control of 
 
 
 ## Available Tools (12)
-- **delete_file**: Permanently delete a file or Paper document
-- **list_shared_folders**: List all folders shared with or by the authenticated user
+- **create_document**: paper` artifact.
+
+Create a brand-new Dropbox Paper document with Markdown content
 - **create_folder**: Create a new folder at the specified Dropbox path
 - **get_account**: Retrieve the authenticated Dropbox account profile
-- **get_space_usage**: Check current Dropbox storage space usage and quota
-- **list_shared_links**: List all shared links created for files or folders
 - **list_files_continue**: Continue paginating through a large folder listing
+- **list_shared_folders**: List all folders shared with or by the authenticated user
+- **list_shared_links**: List all shared links created for files or folders
+- **delete_file**: Permanently delete a file or Paper document
+- **get_space_usage**: Check current Dropbox storage space usage and quota
 - **search_files**: paper` file extensions mapping structural relevance.
 
 Full-text search across all Dropbox Paper documents (*.paper files)
 - **get_metadata**: Retrieve detailed metadata for a specific file or Paper document
-- **create_document**: paper` artifact.
-
-Create a brand-new Dropbox Paper document with Markdown content
 - **list_files**: Use to browse and discover documents.
 
 List all files and Paper documents in a specified Dropbox folder path

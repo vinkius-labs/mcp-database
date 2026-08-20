@@ -27,20 +27,20 @@ Oil traders, energy analysts, commodity fund managers, refinery operators, logis
 
 
 ## Available Tools (8)
+- **get_crude_imports**: Source: EIA-814.
+
+Get crude oil imports by country, company, type, and grade
+- **get_crude_production**: Get U.S. crude oil production and reserves data
+- **get_petroleum_consumption**: Get petroleum consumption and sales by product and sector
 - **get_petroleum_prices**: Filter by product, area, and frequency.
 
 Get petroleum product prices: WTI, Brent, gasoline, diesel, heating oil
 - **get_petroleum_summary**: S. petroleum supply/demand balance including production, imports, exports, stocks, and consumption. The weekly petroleum status report data.
 
 Get petroleum supply and demand balance
-- **get_crude_production**: Get U.S. crude oil production and reserves data
 - **get_refinery_operations**: Get refinery capacity, utilization, and processing data
-- **get_petroleum_trade**: Get petroleum imports, exports, and movements
 - **get_petroleum_stocks**: Get petroleum stocks: commercial + Strategic Petroleum Reserve
-- **get_petroleum_consumption**: Get petroleum consumption and sales by product and sector
-- **get_crude_imports**: Source: EIA-814.
-
-Get crude oil imports by country, company, type, and grade
+- **get_petroleum_trade**: Get petroleum imports, exports, and movements
 
 
 ## 💬 Prompt Examples

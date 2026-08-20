@@ -33,15 +33,15 @@ Integrate **Dext** (formerly **Receipt Bank**), the leading bookkeeping and acco
 
 
 ## Available Tools (10)
-- **get_account_metadata**: Retrieve metadata and usage limits for your Dext account
-- **list_accounting_categories**: List the chart of accounts or categories available for classification
 - **list_accounting_clients**: List all clients associated with your Dext partner account
-- **list_inbox_items**: List all pending and processed items (receipts, invoices) in your Dext inbox
 - **list_extracted_suppliers**: List all suppliers automatically extracted from your documents
-- **list_items_pending_review**: Identify inbox items that are currently in the "Review" status
-- **list_account_users**: List all users with access to the current Dext account
-- **search_inbox_by_keyword**: Search for receipts or invoices by supplier name or description
+- **list_inbox_items**: List all pending and processed items (receipts, invoices) in your Dext inbox
+- **get_account_metadata**: Retrieve metadata and usage limits for your Dext account
 - **get_item_details**: Get detailed information for a specific inbox item
+- **list_accounting_categories**: List the chart of accounts or categories available for classification
+- **list_account_users**: List all users with access to the current Dext account
+- **list_items_pending_review**: Identify inbox items that are currently in the "Review" status
+- **search_inbox_by_keyword**: Search for receipts or invoices by supplier name or description
 - **list_connected_bank_accounts**: List all bank accounts configured for statement extraction
 
 

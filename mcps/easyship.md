@@ -33,16 +33,16 @@ Integrate **Easyship**, the leading global shipping platform for e-commerce, dir
 
 
 ## Available Tools (10)
-- **get_easyship_account_metadata**: Retrieve metadata and limits for your Easyship account
-- **list_available_couriers**: List all available couriers and their service capability boundaries
-- **list_latest_shipments**: Identify the most recently created or updated shipments
-- **search_shipments_by_reference**: Search for shipments using a reference ID or keyword
-- **quick_shipping_volume_audit**: Retrieve a high-level summary of shipment activity and success rates
 - **get_shipment_details**: Get detailed information and tracking for a specific shipment
-- **list_failed_deliveries**: Identify shipments that have failed delivery or encountered issues (mock logic)
+- **list_available_couriers**: List all available couriers and their service capability boundaries
 - **list_in_transit_shipments**: Identify shipments that are currently in transit with a courier
-- **get_shipping_rates**: Request shipping rates for a potential shipment
+- **list_latest_shipments**: Identify the most recently created or updated shipments
 - **list_logistics_shipments**: List all shipments in your Easyship account
+- **search_shipments_by_reference**: Search for shipments using a reference ID or keyword
+- **get_easyship_account_metadata**: Retrieve metadata and limits for your Easyship account
+- **quick_shipping_volume_audit**: Retrieve a high-level summary of shipment activity and success rates
+- **get_shipping_rates**: Request shipping rates for a potential shipment
+- **list_failed_deliveries**: Identify shipments that have failed delivery or encountered issues (mock logic)
 
 
 ## 💬 Prompt Examples

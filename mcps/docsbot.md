@@ -33,16 +33,16 @@ Integrate **DocsBot**, the AI-powered knowledge base platform, directly into you
 
 
 ## Available Tools (10)
-- **get_docsbot_account_metadata**: Retrieve metadata for the current authenticated user
 - **ask_bot_question**: Ask a technical question to a specific DocsBot and retrieve an AI-generated answer
-- **get_bot_knowledge_summary**: Retrieve a high-level summary of the knowledge base size and source count
-- **get_bot_details**: Get detailed settings and information for a specific bot
-- **list_recently_indexed_bots**: Identify bots that have had their knowledge base updated recently (mock logic)
-- **list_bot_interaction_logs**: List recent questions and answers handled by a specific bot
-- **list_team_bots**: List all AI bots configured within a specific team
+- **get_docsbot_account_metadata**: Retrieve metadata for the current authenticated user
 - **list_bot_knowledge_sources**: List all data sources (URL, PDF, etc.) used to train a specific bot
-- **list_docsbot_teams**: List all teams you are a member of in DocsBot
+- **get_bot_details**: Get detailed settings and information for a specific bot
+- **list_bot_interaction_logs**: List recent questions and answers handled by a specific bot
+- **get_bot_knowledge_summary**: Retrieve a high-level summary of the knowledge base size and source count
+- **list_recently_indexed_bots**: Identify bots that have had their knowledge base updated recently (mock logic)
 - **search_bot_sources**: Search for specific knowledge sources by name keyword
+- **list_docsbot_teams**: List all teams you are a member of in DocsBot
+- **list_team_bots**: List all AI bots configured within a specific team
 
 
 ## 💬 Prompt Examples

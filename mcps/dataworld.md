@@ -36,15 +36,21 @@ Integrate **data.world**, the enterprise data catalog and collaborative data pla
 - **get_dataset_details**: Includes field definitions, file listings, tags, and license information.
 
 Get detailed information for a specific dataset
+- **list_dataset_queries**: Returns a list of saved query definitions, including their language (SQL/SPARQL) and creator metadata.
+
+List all saved SQL or SPARQL queries for a dataset
+- **list_my_projects**: Returns project summaries including role (owner/contributor), creation date, and linked datasets.
+
+List all projects you own on data.world
+- **list_project_insights**: Insights represent documented findings and data visualizations attached to the project workspace.
+
+List all insights published within a project
 - **list_recent_activity**: Returns a stream of activity logs including dataset updates, project contributions, and new collection entries.
 
 List recent activities in your data.world account
 - **list_my_collections**: Returns collection identifiers, descriptions, and item counts.
 
 List all collections you own or manage
-- **list_dataset_queries**: Returns a list of saved query definitions, including their language (SQL/SPARQL) and creator metadata.
-
-List all saved SQL or SPARQL queries for a dataset
 - **list_my_datasets**: world catalog for datasets owned by the authenticated user. Returns a list of dataset metadata including title, visibility (public/private), and timestamp of last modification.
 
 List all datasets you own on data.world
@@ -54,12 +60,6 @@ Retrieve metadata for the current authenticated user
 - **get_project_details**: Resolves project members, associated objective, and the current status of linked resources.
 
 Get detailed information for a specific project
-- **list_project_insights**: Insights represent documented findings and data visualizations attached to the project workspace.
-
-List all insights published within a project
-- **list_my_projects**: Returns project summaries including role (owner/contributor), creation date, and linked datasets.
-
-List all projects you own on data.world
 - **search_catalog**: world index. Supports full-text search across titles, descriptions, and tags. Returns a ranked list of matching resources.
 
 Search for datasets and projects across data.world

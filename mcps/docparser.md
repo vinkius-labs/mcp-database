@@ -33,15 +33,15 @@ Integrate **Docparser**, the leading document data extraction platform, directly
 
 
 ## Available Tools (10)
-- **get_docparser_account_metadata**: Retrieve metadata and usage limits for your Docparser account
-- **list_recent_extractions**: List the most recent document extraction results across all parsers
-- **quick_parser_health_audit**: Retrieve a high-level summary of parser activity and success rates
-- **get_document_extraction_results**: Get the actual data extracted from a specific document
-- **list_parsed_documents**: List all documents processed by a specific parser
-- **list_failed_document_extractions**: Identify documents that failed the parsing or extraction process (mock logic)
 - **list_document_parsers**: List all document parsers configured in your Docparser account
 - **list_documents_awaiting_parsing**: List documents that are currently in the parsing queue
+- **list_parsed_documents**: List all documents processed by a specific parser
+- **quick_parser_health_audit**: Retrieve a high-level summary of parser activity and success rates
 - **search_parsed_documents**: Search for parsed documents by filename within a parser
+- **get_docparser_account_metadata**: Retrieve metadata and usage limits for your Docparser account
+- **list_recent_extractions**: List the most recent document extraction results across all parsers
+- **get_document_extraction_results**: Get the actual data extracted from a specific document
+- **list_failed_document_extractions**: Identify documents that failed the parsing or extraction process (mock logic)
 - **get_parser_details**: Get detailed settings and status for a specific document parser
 
 

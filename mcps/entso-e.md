@@ -42,39 +42,39 @@ No more manual XML parsing or complex API queries. Your AI acts as a dedicated E
 
 
 ## Available Tools (12)
-- **get_forecasted_generation**: Essential for energy market analysis, supply-demand balancing, and grid operation planning. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
-
-Get total generation and load forecasts for a bidding zone
 - **get_actual_generation**: ) for a specific bidding zone. Essential for post-market analysis, renewable energy performance tracking, and grid balance analysis. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
 
 Get actual electricity generation data by energy source for a European bidding zone
-- **get_day_ahead_load**: Essential for energy trading, demand response planning, and grid balancing. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
-
-Get day-ahead electricity load forecasts for a European bidding zone
 - **get_actual_load**: Essential for demand analysis, peak demand identification, and load forecasting validation. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
 
 Get actual electricity load data for a European bidding zone
+- **get_day_ahead_generation**: ) for a specific European bidding zone. Data is provided in MW per time period (typically hourly). Essential for energy trading, grid planning, and renewable energy integration analysis. Area codes are ENTSO-E bidding zone identifiers (e.g., "10YDE-RWENET---I" for Germany, "10YFR-RTE------C" for France). Date format: YYYYMMDDHHmm in UTC. Returns XML data from the Transparency Platform.
+
+Get day-ahead electricity generation forecasts for a European bidding zone
+- **get_day_ahead_load**: Essential for energy trading, demand response planning, and grid balancing. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
+
+Get day-ahead electricity load forecasts for a European bidding zone
+- **get_forecasted_generation**: Essential for energy market analysis, supply-demand balancing, and grid operation planning. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
+
+Get total generation and load forecasts for a bidding zone
+- **get_generation_outages**: Essential for supply security assessment, capacity planning, and market impact analysis. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
+
+Get generation outage and maintenance schedules for a bidding zone
+- **get_transmission_outages**: Essential for grid congestion analysis, capacity calculation, and market impact assessment. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
+
+Get transmission network outage and maintenance schedules
 - **get_balancing_prices**: Essential for imbalance cost analysis, balancing market participation, and grid stability assessment. Area codes are ENTSO-E control area identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
 
 Get balancing market prices for a control area
 - **get_crossborder_flows**: Essential for interconnection analysis, cross-border trading, and grid congestion assessment. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
 
 Get scheduled cross-border electricity flows for a bidding zone
-- **get_day_ahead_generation**: ) for a specific European bidding zone. Data is provided in MW per time period (typically hourly). Essential for energy trading, grid planning, and renewable energy integration analysis. Area codes are ENTSO-E bidding zone identifiers (e.g., "10YDE-RWENET---I" for Germany, "10YFR-RTE------C" for France). Date format: YYYYMMDDHHmm in UTC. Returns XML data from the Transparency Platform.
-
-Get day-ahead electricity generation forecasts for a European bidding zone
 - **get_day_ahead_prices**: Essential for energy trading, price forecasting, and market analysis. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
 
 Get day-ahead electricity market prices for a European bidding zone
-- **get_generation_outages**: Essential for supply security assessment, capacity planning, and market impact analysis. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
-
-Get generation outage and maintenance schedules for a bidding zone
 - **get_installed_generation**: ) for a specific bidding zone. Essential for capacity adequacy analysis, energy transition tracking, and infrastructure planning. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
 
 Get installed generation capacity by energy source for a bidding zone
-- **get_transmission_outages**: Essential for grid congestion analysis, capacity calculation, and market impact assessment. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
-
-Get transmission network outage and maintenance schedules
 - **get_wind_solar_forecast**: Essential for renewable energy integration analysis, grid balancing, and energy trading. Area codes are ENTSO-E bidding zone identifiers. Date format: YYYYMMDDHHmm in UTC. Returns XML data.
 
 Get wind and solar power generation forecasts for a bidding zone

@@ -35,8 +35,8 @@ Integrate **DoorDash Drive**, the white-label delivery fulfillment platform, dir
 ## Available Tools (10)
 - **cancel_active_delivery**: Cancel a delivery that has not yet been picked up
 - **create_new_delivery**: Request a new DoorDash delivery (Drive v2)
-- **get_doordash_developer_metadata**: Retrieve metadata for the current authenticated developer account
 - **get_delivery_details**: Get detailed information and real-time status for a specific delivery
+- **get_doordash_developer_metadata**: Retrieve metadata for the current authenticated developer account
 - **quick_delivery_volume_audit**: Retrieve a high-level summary of delivery activity and success rates
 - **get_delivery_quote**: Get a price and ETA quote for a potential delivery
 - **list_in_progress_deliveries**: Identify deliveries that are currently in progress or out for delivery

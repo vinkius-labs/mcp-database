@@ -37,28 +37,28 @@ Connect your **Doodle** account to any AI agent and take full control of your gr
 
 
 ## Available Tools (10)
-- **get_poll**: Retrieve detailed information for a specific Doodle poll by ID
-- **close_poll**: Overrides the core settings dictating finally which exact option value string won.
-
-Close a Doodle poll and set the final chosen option
-- **list_polls**: Returns poll titles, states (OPEN/CLOSED), creation dates, number of participants, and chosen final options.
-
-List all Doodle polls created by the authenticated user
+- **add_comment**: Add a comment to a Doodle poll
 - **create_poll**: Participants will be invited to vote on their preferred options.
 
 Create a new Doodle poll for group scheduling
+- **get_poll**: Retrieve detailed information for a specific Doodle poll by ID
+- **list_polls**: Returns poll titles, states (OPEN/CLOSED), creation dates, number of participants, and chosen final options.
+
+List all Doodle polls created by the authenticated user
+- **close_poll**: Overrides the core settings dictating finally which exact option value string won.
+
+Close a Doodle poll and set the final chosen option
 - **delete_poll**: Drops the raw data out of the system returning completely blank state.
 
 Permanently delete a Doodle poll and all associated participant votes and comments
-- **list_participants**: List all participants who voted on a Doodle poll
 - **add_participant**: Provide a name and preference array (0=no, 1=yes, 2=if-need-be) matching option quantities.
 
 Add a participant vote to a Doodle poll programmatically
+- **list_participants**: List all participants who voted on a Doodle poll
 - **remove_participant**: The core system inherently recalculates the total votes autonomously.
 
 Remove a participant and their votes from a Doodle poll
 - **get_comments**: Retrieve all comments on a Doodle poll
-- **add_comment**: Add a comment to a Doodle poll
 
 
 ## 💬 Prompt Examples

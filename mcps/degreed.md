@@ -33,12 +33,15 @@ Integrate **Degreed**, the leading upskilling and learning experience platform (
 
 
 ## Available Tools (10)
-- **list_degreed_users**: Returns a list of users with metadata including system IDs, professional titles, and organizational affiliations.
-
-List all users registered in your Degreed organization
 - **search_learning_catalog**: Matches terms against titles, descriptions, and skill tags to return a ranked list of relevant learning materials.
 
 Search for learning content by keyword or term
+- **list_defined_skills**: Returns the standardized list of skills and competencies defined by the organization for talent mapping.
+
+List the skills taxonomy defined in your organization
+- **list_degreed_users**: Returns a list of users with metadata including system IDs, professional titles, and organizational affiliations.
+
+List all users registered in your Degreed organization
 - **get_content_details**: Resolves detailed descriptions, associated skill tags, and duration metadata.
 
 Get detailed metadata for a specific learning item
@@ -51,18 +54,15 @@ List users who have completed learning recently
 - **list_learning_content**: Returns content metadata including titles, providers, content types (e.g., article, video, course), and external URLs.
 
 List all available learning content in the Degreed catalog
-- **list_learning_pathways**: Returns pathway metadata including objectives, total duration, and completion requirements.
-
-List curated learning pathways available to users
 - **list_learning_plans**: Returns active learning plans, including target completion dates and linked competencies.
 
 List learning plans and goals configured in the system
-- **list_defined_skills**: Returns the standardized list of skills and competencies defined by the organization for talent mapping.
-
-List the skills taxonomy defined in your organization
 - **list_user_completions**: Returns a history of all learned items with completion timestamps and earned skill points.
 
 List all learning content completed by a specific user
+- **list_learning_pathways**: Returns pathway metadata including objectives, total duration, and completion requirements.
+
+List curated learning pathways available to users
 
 
 ## 💬 Prompt Examples
