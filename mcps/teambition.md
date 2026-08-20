@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your team's productivity with **Teambition*
 
 ## Available Tools (10)
 - **get_org_info**: Get organization details
+- **list_task_groups**: List task groups in a project
+- **update_task**: Update an existing Teambition task
 - **create_task**: Create a new Teambition task
 - **get_project**: Get Teambition project details
 - **list_members**: List project members
 - **list_projects**: List all Teambition projects
 - **list_stages**: List stages in a task group
-- **list_task_groups**: List task groups in a project
 - **list_tasks**: List tasks in a project
 - **list_users**: List organization users
-- **update_task**: Update an existing Teambition task
 
 
 ## 💬 Prompt Examples

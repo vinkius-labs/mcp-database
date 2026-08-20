@@ -35,7 +35,6 @@ Equip your AI agent with the most powerful platform for global payouts and tax c
 
 
 ## Available Tools (6)
-- **get_recipient**: Get a specific recipient
 - **get_tax_forms**: ) associated with a specific recipient.
 
 Get tax forms for a recipient
@@ -43,6 +42,7 @@ Get tax forms for a recipient
 - **list_invoices**: List invoices
 - **list_payments**: List payments in Trolley
 - **list_recipients**: List recipients in Trolley
+- **get_recipient**: Get a specific recipient
 
 
 ## 💬 Prompt Examples

@@ -37,13 +37,13 @@ Empower your AI agent to orchestrate your entire visual ecosystem with **Unsplas
 ## Available Tools (10)
 - **search_collections**: Search for curated collections on Unsplash
 - **get_collection**: Get details for a specific collection
-- **get_photo_stats**: Get statistics for a specific photo
-- **get_photo**: Get details for a specific photo
 - **get_random_photo**: Get a random high-quality photo
-- **get_user_photos**: Get photos uploaded by a specific user
 - **get_user**: Get details for a specific user
-- **list_topics**: List curated topics on Unsplash
+- **get_user_photos**: Get photos uploaded by a specific user
 - **search_photos**: Search for high-quality photos on Unsplash
+- **get_photo**: Get details for a specific photo
+- **get_photo_stats**: Get statistics for a specific photo
+- **list_topics**: List curated topics on Unsplash
 - **search_users**: Search for users on Unsplash
 
 

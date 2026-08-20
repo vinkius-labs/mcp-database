@@ -37,18 +37,18 @@ Connect your **Urlbox** account to any AI agent and simplify how you generate hi
 ## Available Tools (12)
 - **get_account_info**: Get account profile
 - **list_proxies**: List available proxies
-- **get_render_status**: Check render status
 - **get_credit_usage**: Get usage stats
+- **get_render_status**: Check render status
 - **list_storage_buckets**: List storage buckets
 - **list_webhooks**: List active webhooks
 - **render_async**: Result is sent to webhook.
 
 Render URL (Async)
-- **render_html**: Render raw HTML
 - **capture_pdf**: Convert URL to PDF
 - **capture_png**: Capture PNG screenshot
 - **render_selector**: Render specific element
 - **render_sync**: Render URL (Sync)
+- **render_html**: Render raw HTML
 
 
 ## 💬 Prompt Examples

@@ -36,33 +36,33 @@ Connect to **Weatherbit** and access global weather data through natural convers
 
 
 ## Available Tools (10)
-- **get_historical_weather**: Returns temperature, precipitation, wind, humidity and other metrics for dates in the past 30 years.
-
-Get historical weather data by coordinates
-- **get_air_quality**: Returns AQI score, PM2.5, PM10, O3, NO2, SO2, CO concentrations and health recommendations.
-
-Get air quality index (AQI) by coordinates
 - **get_current_weather**: Returns temperature, feels like, humidity, wind speed/direction, precipitation, cloud cover, visibility, UV index, weather description and icon.
 
 Get current weather conditions by coordinates
+- **get_forecast_daily_by_city**: Returns daily forecasts for up to 16 days ahead with temperatures, conditions, precipitation, wind and UV index.
+
+Get daily weather forecast by city name
+- **get_forecast_hourly_by_city**: Returns hourly forecasts with temperature, precipitation, wind and conditions.
+
+Get hourly weather forecast by city name
+- **get_historical_weather**: Returns temperature, precipitation, wind, humidity and other metrics for dates in the past 30 years.
+
+Get historical weather data by coordinates
+- **get_severe_weather**: Useful for tracking recent severe weather activity.
+
+Query severe weather reports in a geographic area
+- **get_air_quality**: Returns AQI score, PM2.5, PM10, O3, NO2, SO2, CO concentrations and health recommendations.
+
+Get air quality index (AQI) by coordinates
 - **get_current_weather_by_city**: Returns temperature, feels like, humidity, wind, precipitation, cloud cover, visibility, UV index and weather description.
 
 Get current weather conditions by city name
 - **get_forecast_daily**: Returns daily high/low temperatures, weather conditions, precipitation probability, wind, humidity, UV index and sunrise/sunset times.
 
 Get daily weather forecast by coordinates
-- **get_forecast_daily_by_city**: Returns daily forecasts for up to 16 days ahead with temperatures, conditions, precipitation, wind and UV index.
-
-Get daily weather forecast by city name
 - **get_forecast_hourly**: Returns temperature, precipitation probability, wind, humidity, cloud cover and weather conditions for each hour.
 
 Get hourly weather forecast by coordinates
-- **get_forecast_hourly_by_city**: Returns hourly forecasts with temperature, precipitation, wind and conditions.
-
-Get hourly weather forecast by city name
-- **get_severe_weather**: Useful for tracking recent severe weather activity.
-
-Query severe weather reports in a geographic area
 - **get_weather_alerts**: Returns alert type, severity, description, effective/expiry times and affected areas.
 
 Get active weather alerts by coordinates

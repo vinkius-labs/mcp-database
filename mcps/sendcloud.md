@@ -40,10 +40,10 @@ Empower your AI agent to orchestrate your digital communication with **SendCloud
 - **create_address**: Create address list
 - **delete_address**: Delete address list
 - **get_email_status**: Get email delivery status
-- **get_stats**: Get email statistics
 - **get_user_info**: Get account information
-- **list_address_members**: List address members
+- **get_stats**: Get email statistics
 - **list_addresses**: List mailing addresses
+- **list_address_members**: List address members
 - **list_templates**: List email templates
 
 

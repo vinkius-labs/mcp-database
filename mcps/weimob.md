@@ -36,14 +36,14 @@ Empower your AI agent to orchestrate your retail business with **Weimob** (å¾®ç›
 
 ## Available Tools (10)
 - **get_customer**: Get customer details
-- **get_goods_detail**: Get product details
 - **get_inventory**: Get SKU inventory
-- **list_categories**: List product categories
-- **get_sales_stats**: Get sales statistics
+- **get_goods_detail**: Get product details
 - **get_order**: Get order details
 - **get_shop_info**: Get Weimob shop information
+- **list_categories**: List product categories
 - **list_customers**: List shop customers
 - **list_goods**: List shop products
+- **get_sales_stats**: Get sales statistics
 - **list_orders**: List shop orders
 
 

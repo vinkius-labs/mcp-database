@@ -37,12 +37,12 @@ Empower your AI agent to orchestrate your business intelligence and due diligenc
 ## Available Tools (10)
 - **fuzzy_search**: Enterprise fuzzy search
 - **get_account_status**: Get OpenAPI account status
-- **get_basic_info**: Get enterprise basic info
 - **get_full_details**: Get full enterprise details
 - **list_branches**: List company branches
 - **list_investments**: List outward investments
-- **list_ip**: List intellectual property
 - **list_risks**: List enterprise risk info
+- **get_basic_info**: Get enterprise basic info
+- **list_ip**: List intellectual property
 - **list_shareholders**: List company shareholders
 - **list_staff**: List main staff/executives
 

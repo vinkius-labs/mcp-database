@@ -35,9 +35,9 @@ Empower your AI agent to orchestrate your entire checkout ecosystem with **Thriv
 
 
 ## Available Tools (10)
+- **list_transactions**: List recent transactions
 - **get_product**: Get details for a specific product
 - **get_transaction**: Get details for a specific transaction
-- **list_transactions**: List recent transactions
 - **get_customer**: Get details for a specific customer
 - **get_subscription**: Get details for a specific subscription
 - **list_coupons**: List all coupons

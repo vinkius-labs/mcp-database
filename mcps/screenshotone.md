@@ -38,11 +38,11 @@ Empower your AI agent to orchestrate your entire visual auditing and website cap
 - **get_page_metadata**: ) without capturing.
 
 Get metadata for a website (title, size, etc.) without capturing
-- **take_element_screenshot**: Take a screenshot of a specific CSS element
 - **take_screenshot**: Take a screenshot of a URL
 - **take_viewport_screenshot**: Take a screenshot with a specific viewport size
-- **generate_pdf**: Generate a PDF from a URL
 - **take_full_page_screenshot**: Take a full-page screenshot of a URL
+- **generate_pdf**: Generate a PDF from a URL
+- **take_element_screenshot**: Take a screenshot of a specific CSS element
 
 
 ## 💬 Prompt Examples

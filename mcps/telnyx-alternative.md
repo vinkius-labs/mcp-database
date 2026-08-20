@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your entire global communication infrastruc
 
 
 ## Available Tools (10)
-- **get_me**: Get authenticated Telnyx public key/info
-- **list_messaging_profiles**: List messaging profiles
-- **list_phone_numbers**: List Telnyx phone numbers
-- **list_verified_numbers**: List verified numbers
+- **get_balance**: Get account balance
 - **get_call**: Get details for a specific call
 - **get_phone_number**: Get details for a specific phone number
-- **get_balance**: Get account balance
+- **list_messaging_profiles**: List messaging profiles
+- **list_verified_numbers**: List verified numbers
+- **send_message**: Send an SMS message
+- **get_me**: Get authenticated Telnyx public key/info
+- **list_phone_numbers**: List Telnyx phone numbers
 - **list_calls**: List recent voice calls
 - **list_messages**: List recent messages
-- **send_message**: Send an SMS message
 
 
 ## 💬 Prompt Examples

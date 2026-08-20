@@ -35,36 +35,36 @@ Connect your **WHOOP** account to any AI agent and access your personal health d
 
 
 ## Available Tools (11)
-- **get_body_measurement**: Useful for tracking physical metrics alongside your WHOOP data.
-
-Get your body measurement data
-- **get_cycle_recovery**: Includes recovery score, resting heart rate, HRV (heart rate variability), sleep balance and strain balance.
-
-Get recovery data for a specific WHOOP cycle
-- **get_sleep_by_id**: Includes full sleep stages, disturbances, respiratory rate and sleep performance.
-
-Get a specific WHOOP sleep record by ID
 - **get_cycle**: Includes sleep, recovery, strain and heart rate metrics for that 24-hour period.
 
 Get a specific WHOOP cycle by ID
-- **get_sleep**: Supports date range filtering. Pagination: max 25 results.
+- **get_cycle_recovery**: Includes recovery score, resting heart rate, HRV (heart rate variability), sleep balance and strain balance.
 
-Get your WHOOP sleep data
-- **get_workouts**: Supports date range filtering. Pagination: max 25 results.
+Get recovery data for a specific WHOOP cycle
+- **get_body_measurement**: Useful for tracking physical metrics alongside your WHOOP data.
 
-Get your WHOOP workout data
-- **get_cycle_sleep**: Includes sleep duration, stages (light, deep, REM, awake), disturbances and sleep performance percentage.
+Get your body measurement data
+- **get_sleep_by_id**: Includes full sleep stages, disturbances, respiratory rate and sleep performance.
 
-Get sleep data for a specific WHOOP cycle
+Get a specific WHOOP sleep record by ID
 - **get_cycles**: Cycles represent 24-hour periods of recovery and strain data. Each cycle includes sleep, recovery, strain and heart rate metrics. Supports date range filtering with start/end in ISO 8601 format. Pagination: max 25 results, use nextToken for more.
 
 Get your WHOOP cycle data
-- **get_profile**: Use this to verify your authentication is working and get your user ID for other endpoints.
+- **get_cycle_sleep**: Includes sleep duration, stages (light, deep, REM, awake), disturbances and sleep performance percentage.
 
-Get your WHOOP profile info
+Get sleep data for a specific WHOOP cycle
 - **get_recovery**: Supports date range filtering. Pagination: max 25 results per request.
 
 Get your WHOOP recovery data
+- **get_workouts**: Supports date range filtering. Pagination: max 25 results.
+
+Get your WHOOP workout data
+- **get_sleep**: Supports date range filtering. Pagination: max 25 results.
+
+Get your WHOOP sleep data
+- **get_profile**: Use this to verify your authentication is working and get your user ID for other endpoints.
+
+Get your WHOOP profile info
 - **get_workout**: Includes strain score, duration, heart rate zones, calories burned and GPS data if available.
 
 Get a specific WHOOP workout by ID

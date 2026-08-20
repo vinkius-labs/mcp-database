@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your entire digital performance stack with 
 
 ## Available Tools (10)
 - **list_alert_policies**: List alert policies
-- **list_app_instances**: List application instances
 - **list_applications**: List APM applications
 - **list_browser_apps**: List RUM browser applications
 - **list_databases**: List monitored databases
+- **list_app_instances**: List application instances
 - **list_external_services**: List external service calls
 - **get_account_info**: Get account metadata
-- **get_app_summary**: Get application summary
 - **get_metrics**: Query metric data
 - **list_alerts**: List active alerts
+- **get_app_summary**: Get application summary
 
 
 ## 💬 Prompt Examples

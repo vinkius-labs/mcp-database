@@ -36,11 +36,11 @@ Equip your AI agent with the world's most accurate weather intelligence via **To
 
 
 ## Available Tools (5)
-- **get_realtime_weather**: Get realtime weather data
 - **get_air_quality**: Get air quality data
-- **get_weather_forecast**: Get weather forecast
-- **list_weather_alerts**: List weather alerts
 - **get_recent_history**: Get recent weather history
+- **get_weather_forecast**: Get weather forecast
+- **get_realtime_weather**: Get realtime weather data
+- **list_weather_alerts**: List weather alerts
 
 
 ## 💬 Prompt Examples

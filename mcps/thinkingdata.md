@@ -35,13 +35,13 @@ Empower your AI agent to orchestrate your data analytics and player insights wit
 
 
 ## Available Tools (8)
-- **query_events**: Execute event query
-- **query_users**: Execute user query
 - **get_event_properties**: Get properties for event
-- **get_project_summary**: Get project overview
 - **list_defined_events**: List project events
 - **list_project_cohorts**: List user cohorts
+- **query_users**: Execute user query
 - **set_user_properties**: Update user profile
+- **query_events**: Execute event query
+- **get_project_summary**: Get project overview
 - **track_custom_event**: Track a single event
 
 

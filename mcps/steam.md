@@ -36,8 +36,8 @@ No more manual checking of Steam profiles for playtimes or friend status. Your A
 
 
 ## Available Tools (7)
-- **get_global_achievements**: Get globalThis achievement percentages
 - **get_friend_list**: Get friend list for a Steam user
+- **get_global_achievements**: Get globalThis achievement percentages
 - **get_game_news**: Get news for a specific game
 - **resolve_vanity_url**: Resolve a Steam vanity URL
 - **get_owned_games**: Get games owned by a Steam user
