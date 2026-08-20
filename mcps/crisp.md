@@ -37,13 +37,13 @@ No more manual ticket shuffling or missing messages in busy chat windows. Your A
 
 ## Available Tools (6)
 - **list_visitors**: List all website visitors/people
+- **get_visitor_profile**: Get visitor profile details
+- **get_conversation**: Get conversation details
+- **get_messages**: List messages in a conversation
+- **list_conversations**: List all website conversations
 - **send_message**: Pass data as a JSON string.
 
 Send a message to a conversation
-- **get_conversation**: Get conversation details
-- **get_messages**: List messages in a conversation
-- **get_visitor_profile**: Get visitor profile details
-- **list_conversations**: List all website conversations
 
 
 ## 💬 Prompt Examples

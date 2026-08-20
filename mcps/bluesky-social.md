@@ -42,8 +42,8 @@ No more manual toggling between social apps or missing important mentions in the
 - **list_notifications**: Get notifications
 - **list_timeline**: Get your home feed
 - **get_profile**: Get user profile
-- **list_popular_feeds**: List popular feed generators
 - **list_followers**: List account followers
+- **list_popular_feeds**: List popular feed generators
 - **create_post**: Post to Bluesky
 - **get_user_posts**: List user posts
 - **mute_user**: Mute an account

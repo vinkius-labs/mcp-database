@@ -36,30 +36,30 @@ No more manual report generation or searching through folders. Your AI acts as a
 
 
 ## Available Tools (8)
-- **list_employee_contracts**: Essential for auditing and compliance reviews.
-
-List all employment contracts
-- **list_hr_documents**: Includes document metadata and identification IDs.
-
-List all company HR documents
 - **list_employees**: Includes full names, email addresses, and basic profile metadata. Use this to identify staff IDs and contact information.
 
 List all active employees
-- **list_document_folders**: Use this to navigate the document library.
+- **list_hr_documents**: Includes document metadata and identification IDs.
 
-List HR document folders
+List all company HR documents
 - **list_time_off_leaves**: Useful for monitoring attendance and staff availability.
 
 List employee leave requests
-- **list_attendance_shifts**: Essential for tracking employee working hours and productivity patterns.
-
-List all attendance shifts
 - **list_company_teams**: Useful for understanding the organizational hierarchy.
 
 List all organizational teams
 - **get_employee_details**: Essential for reviewing detailed profile information and roles.
 
 Get details for a specific employee
+- **list_attendance_shifts**: Essential for tracking employee working hours and productivity patterns.
+
+List all attendance shifts
+- **list_document_folders**: Use this to navigate the document library.
+
+List HR document folders
+- **list_employee_contracts**: Essential for auditing and compliance reviews.
+
+List all employment contracts
 
 
 ## 💬 Prompt Examples

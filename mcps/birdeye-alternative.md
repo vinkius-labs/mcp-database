@@ -37,10 +37,10 @@ No more manual logging into individual review sites or missing critical feedback
 
 ## Available Tools (6)
 - **customer_checkin**: Trigger a review request (Check-in)
-- **create_customer**: Add a new customer profile
 - **get_customer_details**: Get full customer profile
 - **list_business_locations**: List all business locations
 - **list_reviews**: List customer reviews
+- **create_customer**: Add a new customer profile
 - **trigger_survey**: Send a custom survey to a customer
 
 

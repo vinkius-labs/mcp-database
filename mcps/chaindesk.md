@@ -42,14 +42,14 @@ Create a new AI agent
 - **get_agent**: Get details of a specific agent
 - **get_datastore**: Get details of a datastore
 - **get_messages**: Get messages from a conversation
-- **query_agent**: Send a message to an agent
 - **update_agent**: Update an existing agent
+- **list_datastores**: List all datastores
+- **delete_agent**: Delete an agent
 - **list_agents**: List all AI agents
 - **list_conversations**: Can be filtered by agentId.
 
 List chat conversations
-- **list_datastores**: List all datastores
-- **delete_agent**: Delete an agent
+- **query_agent**: Send a message to an agent
 - **upsert_datasource**: Add or update a data source
 
 

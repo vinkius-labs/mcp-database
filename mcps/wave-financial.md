@@ -37,14 +37,14 @@ Connect your AI agent to **Wave Financial**, the all-in-one accounting software 
 ## Available Tools (10)
 - **get_user_info**: Retrieve the authenticated user information
 - **list_accounts**: List the chart of accounts for a specific business
+- **list_invoices**: List invoices for a specific business
+- **list_products**: List products and services for a specific business
 - **list_bills**: List bills (accounts payable) for a specific business
 - **list_businesses**: List all businesses associated with the user account
 - **list_customers**: List customers for a specific business
-- **list_products**: List products and services for a specific business
 - **list_sales_taxes**: List sales taxes configured for a specific business
 - **list_transactions**: List accounting transactions for a business
 - **list_vendors**: List vendors associated with a specific business
-- **list_invoices**: List invoices for a specific business
 
 
 ## 💬 Prompt Examples

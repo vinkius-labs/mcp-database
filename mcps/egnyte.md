@@ -39,16 +39,16 @@ No more manual folder navigation or complex permission setting in the web UI. Yo
 ## Available Tools (12)
 - **delete_item**: Delete file or folder
 - **list_shared_links**: List all shared links
-- **get_account_info**: Get domain info
 - **get_audit_logs**: List audit events
-- **get_file_metadata**: Get file details
 - **list_folder**: List folder contents
 - **list_groups**: List user groups
 - **list_users**: List Egnyte users
+- **create_shared_link**: Generate share link
+- **create_folder**: Create a new folder
+- **get_account_info**: Get domain info
+- **get_file_metadata**: Get file details
 - **list_webhooks**: List active webhooks
 - **search_files**: Search for files
-- **create_folder**: Create a new folder
-- **create_shared_link**: Generate share link
 
 
 ## 💬 Prompt Examples

@@ -37,17 +37,17 @@ No more manual dialing or listening through hours of recordings to find insights
 
 ## Available Tools (12)
 - **analyze_call_transcript**: Perform post-call analysis
-- **stop_active_call**: Stop an ongoing phone call
 - **create_voice_agent**: Create a persistent AI persona
+- **get_call_details**: Get details and transcript for a call
 - **delete_voice_agent**: Remove an AI persona
 - **get_agent_config**: Get agent settings
-- **get_call_details**: Get details and transcript for a call
-- **list_voice_agents**: List configured AI personas
-- **list_recent_calls**: List recent phone calls
-- **list_phone_numbers**: List purchased phone numbers
+- **stop_active_call**: Stop an ongoing phone call
 - **list_available_voices**: List high-fidelity AI voices
-- **send_phone_call**: Send an outbound phone call using an AI agent
+- **list_phone_numbers**: List purchased phone numbers
+- **list_recent_calls**: List recent phone calls
+- **list_voice_agents**: List configured AI personas
 - **update_agent_config**: Modify agent settings
+- **send_phone_call**: Send an outbound phone call using an AI agent
 
 
 ## 💬 Prompt Examples

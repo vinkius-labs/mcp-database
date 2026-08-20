@@ -33,16 +33,16 @@ Empower your AI Agent with the full capability of Blink Payment. Blink Payment f
 
 
 ## Available Tools (10)
+- **create_customer**: Create a customer
 - **create_payment_intent**: Create a payment intent
+- **get_customer**: Get customer details by ID
 - **get_paylink**: Get paylink details by ID
 - **get_payment**: Get payment details by ID
 - **list_paylinks**: List paylinks
 - **list_payments**: List recent payments
-- **create_customer**: Create a customer
-- **get_customer**: Get customer details by ID
-- **create_paylink**: Create a paylink
-- **list_customers**: List customers
 - **refund_payment**: Refund a payment
+- **list_customers**: List customers
+- **create_paylink**: Create a paylink
 
 
 ## 💬 Prompt Examples

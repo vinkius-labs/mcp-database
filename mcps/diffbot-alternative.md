@@ -36,8 +36,6 @@ No more manual copy-pasting or complex web scraping scripts. Your AI acts as you
 
 
 ## Available Tools (11)
-- **analyze_page_type**: Auto-detect page type
-- **enhance_person_profile**: Enrich person data
 - **extract_article_data**: Extract news/blog post
 - **extract_forum_thread**: Extract forum/comments
 - **extract_images**: Identify primary images
@@ -49,6 +47,8 @@ Query world entities
 - **enhance_company_profile**: Enrich company data
 - **extract_video_metadata**: Identify embedded videos
 - **list_active_crawls**: Check crawl status
+- **analyze_page_type**: Auto-detect page type
+- **enhance_person_profile**: Enrich person data
 
 
 ## 💬 Prompt Examples

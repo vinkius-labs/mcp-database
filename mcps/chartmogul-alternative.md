@@ -36,7 +36,6 @@ No more manual scrubbing through filtered charts or exporting CSVs for reporting
 
 
 ## Available Tools (12)
-- **list_subscription_plans**: List billing plans
 - **get_summary_metrics**: Get key SaaS metrics
 - **get_api_status**: Check connection
 - **get_arr_history**: Analyze ARR
@@ -44,12 +43,13 @@ No more manual scrubbing through filtered charts or exporting CSVs for reporting
 - **get_customer_count_history**: Monitor user growth
 - **get_customer_details**: Get customer profile
 - **get_customer_ltv**: Check Customer LTV
-- **get_mrr_history**: Analyze MRR
 - **list_customers**: List SaaS customers
 - **list_data_sources**: ) connected to ChartMogul.
 
 List connected sources
 - **create_customer_record**: Add new customer
+- **get_mrr_history**: Analyze MRR
+- **list_subscription_plans**: List billing plans
 
 
 ## 💬 Prompt Examples

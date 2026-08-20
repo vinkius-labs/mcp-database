@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your device communication and mobile engage
 
 
 ## Available Tools (6)
-- **unsubscribe_from_topic**: Unsubscribe a device from a topic
 - **push_to_alias**: Send push to a user alias
+- **push_to_topic**: Send push to a topic
+- **unsubscribe_from_topic**: Unsubscribe a device from a topic
 - **push_to_all**: Broadcast push to all devices
 - **push_to_regid**: Send push to a device registration ID
-- **push_to_topic**: Send push to a topic
 - **subscribe_to_topic**: Subscribe a device to a topic
 
 

@@ -39,14 +39,14 @@ Connect your **Cloudmersive** API account to any AI agent and simplify how you p
 - **resize_image**: Resize an image
 - **analyze_text_sentiment**: Analyze text sentiment
 - **convert_doc_to_pdf**: Convert document to PDF
-- **get_image_info**: Get image info
-- **validate_domain**: Validate a domain
 - **convert_html_to_text**: Convert HTML to text
+- **get_image_info**: Get image info
 - **get_url_metadata**: Get URL metadata
 - **scan_url**: Scan URL for threats
+- **validate_domain**: Validate a domain
 - **validate_email**: Validate an email
-- **validate_phone**: Validate a phone number
 - **validate_url**: Validate a URL
+- **validate_phone**: Validate a phone number
 
 
 ## 💬 Prompt Examples

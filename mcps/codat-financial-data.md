@@ -41,19 +41,19 @@ No more manual data mapping between fragmented financial systems. Your AI acts a
 Verify Codat API connectivity
 - **register_new_financial_entity**: Create a new company in Codat
 - **get_data_sync_status**: Check synchronization progress
-- **list_financial_bank_accounts**: List bank accounts from accounting
-- **list_banking_transactions**: List transactions from bank feeds
+- **list_accounting_customers**: List customers from accounting data
 - **list_commerce_orders**: ).
 
 List orders from commerce systems
 - **list_commerce_transactions**: List commerce payment transactions
-- **list_financial_companies**: List all linked business entities
 - **list_data_connections**: ) for a specific company ID.
 
 List active data links for a company
-- **list_accounting_customers**: List customers from accounting data
+- **list_financial_bank_accounts**: List bank accounts from accounting
+- **list_financial_companies**: List all linked business entities
 - **list_supported_integrations**: List all available integrations
 - **list_accounting_invoices**: List standardized invoices
+- **list_banking_transactions**: List transactions from bank feeds
 
 
 ## 💬 Prompt Examples
