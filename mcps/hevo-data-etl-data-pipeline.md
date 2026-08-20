@@ -34,12 +34,12 @@ Connect your **Hevo Data** account to any AI agent and take full control of your
 
 
 ## Available Tools (6)
-- **list_pipelines**: List all pipelines
 - **get_pipeline**: Get pipeline details
+- **get_usage**: Get account usage
 - **list_destinations**: List all destinations
 - **list_models**: List all models
+- **list_pipelines**: List all pipelines
 - **list_workflows**: List all workflows
-- **get_usage**: Get account usage
 
 
 ## 💬 Prompt Examples

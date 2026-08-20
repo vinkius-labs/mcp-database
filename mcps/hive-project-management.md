@@ -35,13 +35,13 @@ Connect your **Hive** account to any AI agent and take full control of your proj
 
 
 ## Available Tools (7)
-- **list_projects**: List projects
-- **list_workspaces**: List workspaces
-- **list_actions**: List actions
 - **create_action**: Create action
-- **get_action**: Get action
+- **list_projects**: List projects
+- **list_actions**: List actions
+- **list_workspaces**: List workspaces
 - **list_labels**: List labels
 - **list_templates**: List action templates
+- **get_action**: Get action
 
 
 ## 💬 Prompt Examples

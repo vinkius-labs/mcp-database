@@ -37,15 +37,15 @@ Connect your **GraphHopper** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
-- **calculate_routing_matrix**: Inspect deep internal arrays mitigating specific Math tables
-- **reverse_geocode**: Perform structural extraction of properties driving active OSM bindings
 - **calculate_url_route**: Retrieve explicit Cloud logging tracing explicit lightweight Directions
-- **calculate_heavy_route**: Identify precise active arrays spanning native multi-stop geometries
 - **submit_vrp_optimizer**: Dispatch an automated validation check routing explicit jsprit solves
+- **calculate_heavy_route**: Identify precise active arrays spanning native multi-stop geometries
+- **calculate_routing_matrix**: Inspect deep internal arrays mitigating specific Math tables
 - **poll_vrp_solution**: Retrieve the exact structural matching verifying Delivery alternatives
-- **search_geocode**: Identify bounded routing spaces inside the Headless GraphHopper Engine
+- **reverse_geocode**: Perform structural extraction of properties driving active OSM bindings
 - **calculate_distance_isochrone**: Provision a highly-available JSON Payload generating physical borders
 - **calculate_reachability_polygon**: Enumerate explicitly attached structured rules exporting active Reachability
+- **search_geocode**: Identify bounded routing spaces inside the Headless GraphHopper Engine
 - **snap_gpx_to_road**: Irreversibly vaporize explicit validations extracting GPX logic natively
 
 

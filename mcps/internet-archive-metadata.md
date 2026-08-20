@@ -26,33 +26,33 @@ Connect **Internet Archive Metadata** to any AI agent and retrieve comprehensive
 
 
 ## Available Tools (10)
-- **get_metadata_only**: Lighter response for quick lookups. Use this when you only need basic item information.
-
-Get only the metadata fields without files or reviews
 - **get_parents**: Use this to understand the broader categorization structure.
 
 Get parent collections of an Internet Archive item
-- **get_reviews**: Returns reviewer names, star ratings, and review text. Not all items have reviews. Use this to see community feedback.
-
-Get user reviews for an Internet Archive item
 - **get_server_info**: Useful for understanding where files are hosted. Use this for technical diagnostics.
 
 Get server and storage information for an item
-- **get_collections**: Items can belong to multiple collections (e.g., "prelinger", "opensource_movies"). Use this to understand the categorization of an item.
-
-Get collections an item belongs to
 - **get_derivatives**: ). These are derived from the original uploads. Use this to see what processed formats are available.
 
 Get auto-generated derivative files for an item
 - **get_files**: Files can be downloaded from: https://archive.org/download/{identifier}/{filename}. Use this to see what formats are available.
 
 Get all downloadable files for an Internet Archive item
-- **get_metadata**: Returns title, creator, date, description, subjects, collection, files, reviews, and stats. The identifier is found in item URLs (e.g., from archive.org/details/big_buck_bunny, identifier is "big_buck_bunny"). Use this for comprehensive item information.
-
-Get complete metadata for an Internet Archive item
 - **get_history**: Use this to track changes to an item over time.
 
 Get modification history of an Internet Archive item
+- **get_metadata**: Returns title, creator, date, description, subjects, collection, files, reviews, and stats. The identifier is found in item URLs (e.g., from archive.org/details/big_buck_bunny, identifier is "big_buck_bunny"). Use this for comprehensive item information.
+
+Get complete metadata for an Internet Archive item
+- **get_metadata_only**: Lighter response for quick lookups. Use this when you only need basic item information.
+
+Get only the metadata fields without files or reviews
+- **get_reviews**: Returns reviewer names, star ratings, and review text. Not all items have reviews. Use this to see community feedback.
+
+Get user reviews for an Internet Archive item
+- **get_collections**: Items can belong to multiple collections (e.g., "prelinger", "opensource_movies"). Use this to understand the categorization of an item.
+
+Get collections an item belongs to
 - **get_stats**: Shows how popular the item is. Use this to measure item popularity.
 
 Get access statistics for an Internet Archive item

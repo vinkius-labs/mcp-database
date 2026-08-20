@@ -36,17 +36,17 @@ Connect your **GetFeedback** account to any AI agent to automate your customer f
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Check connection
-- **get_my_identity**: Get user identity
 - **get_response_details**: Get response metadata
 - **get_survey_stats**: Get response count
+- **verify_api_connection**: Check connection
 - **get_survey_details**: Get survey metadata
-- **list_feedback_page**: Paginated responses
 - **list_recent_feedback**: Filter by date
 - **list_survey_responses**: List feedback data
 - **send_survey_invites**: Trigger survey email
 - **list_completed_feedback**: Filter for completed
 - **check_api_limits**: Verify connectivity
+- **get_my_identity**: Get user identity
+- **list_feedback_page**: Paginated responses
 - **list_surveys**: List all surveys
 
 

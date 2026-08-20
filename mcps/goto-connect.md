@@ -35,17 +35,17 @@ Connect your **GoTo Connect** (formerly Jive) unified communications account to 
 
 
 ## Available Tools (12)
-- **create_contact**: Create a new contact
 - **get_me**: Get details for the currently authenticated GoTo user
 - **get_user**: Get details for a specific user
-- **get_voicemail**: Get details for a specific voicemail
 - **list_contacts**: List a user's contacts
 - **list_devices**: List devices associated with a user
 - **list_sms_messages**: List SMS messages for a user
 - **list_users**: List GoTo Connect users
+- **create_contact**: Create a new contact
+- **get_call_record**: Get details for a specific call record
+- **get_voicemail**: Get details for a specific voicemail
 - **list_voicemails**: List voicemails for a user
 - **send_sms**: Send an SMS message via GoTo Connect
-- **get_call_record**: Get details for a specific call record
 - **get_call_records**: List call records (history) for a user
 
 

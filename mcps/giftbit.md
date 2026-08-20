@@ -37,17 +37,17 @@ Connect your **Giftbit** account to any AI agent to automate the delivery and tr
 
 ## Available Tools (12)
 - **verify_api_connection**: Verify connectivity
-- **list_delivery_regions**: List regions
 - **check_api_health**: Check API health
-- **order_email_rewards**: Send rewards via email
-- **create_reward_links**: Generate direct links
-- **create_embedded_links**: Generate embedded rewards
+- **list_delivery_regions**: List regions
 - **get_brand_details**: Get brand metadata
 - **get_campaign_status**: Check campaign details
 - **get_gift_status**: Check gift details
-- **list_reward_brands**: List available brands
 - **list_reward_campaigns**: List sent campaigns
+- **create_embedded_links**: Generate embedded rewards
+- **create_reward_links**: Generate direct links
 - **list_gift_records**: List sent gifts
+- **list_reward_brands**: List available brands
+- **order_email_rewards**: Send rewards via email
 
 
 ## 💬 Prompt Examples

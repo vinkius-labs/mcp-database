@@ -35,10 +35,15 @@ Connect your **Hyperbrowser** account to any AI agent and take full control of y
 
 
 ## Available Tools (10)
-- **page_content**: Get raw HTML content synchronously via Hyperbrowser
 - **create_session**: Returns a connection URL and session details. Pass optional JSON config for proxy, stealth, browser version, etc.
 
 Create a new Hyperbrowser remote session
+- **run_script**: The browser will execute and return the evaluation result.
+
+Execute JS script inside a running Hyperbrowser session
+- **start_scrape**: Returns a job ID. Use get_scrape_job to poll for completion. Pass target URL and optional JSON config.
+
+Start a Hyperbrowser async scraping job
 - **extract_data**: g., "Extract product name and price"). Optionally pass JSON schema. The platform will render, extract, and return clean JSON.
 
 Use Hyperbrowser LLM capabilities to extract structured data
@@ -51,16 +56,11 @@ Get status of a specific Hyperbrowser session
 - **list_sessions**: Pass optional status (active, completed, failed) to filter.
 
 List active or past Hyperbrowser sessions
-- **run_script**: The browser will execute and return the evaluation result.
-
-Execute JS script inside a running Hyperbrowser session
+- **page_content**: Get raw HTML content synchronously via Hyperbrowser
 - **page_screenshot**: Returns image metadata or URL.
 
 Take a managed screenshot via Hyperbrowser
 - **stop_session**: Terminate an active Hyperbrowser session
-- **start_scrape**: Returns a job ID. Use get_scrape_job to poll for completion. Pass target URL and optional JSON config.
-
-Start a Hyperbrowser async scraping job
 
 
 ## 💬 Prompt Examples

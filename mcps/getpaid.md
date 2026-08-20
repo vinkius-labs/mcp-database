@@ -36,17 +36,17 @@ Connect your **Getpaid** account to any AI agent to automate your billing, payme
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Check connection
-- **create_checkout_session**: Initiate checkout
 - **get_account_details**: Get account identity
 - **get_checkout_status**: Check checkout status
+- **create_checkout_session**: Initiate checkout
 - **get_customer_details**: Get customer metadata
-- **get_payment_details**: Get payment metadata
+- **verify_api_connection**: Check connection
 - **list_billing_customers**: List customers
 - **list_billing_invoices**: List invoices
 - **list_billing_payments**: List all payments
 - **list_billing_subscriptions**: List recurring plans
 - **list_payment_webhooks**: List webhook configs
+- **get_payment_details**: Get payment metadata
 - **refund_billing_payment**: Process a refund
 
 

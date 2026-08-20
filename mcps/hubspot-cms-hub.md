@@ -29,12 +29,18 @@ Connect **HubSpot CRM** to any AI agent — instant access to your full CRM data
 
 
 ## Available Tools (9)
-- **hs_get_blog_post**: Returns full post details including title, meta description, slug, body content length, author, featured image, publish date, and SEO settings. Use after listing/searching posts to drill into a specific article for complete details.
-
-Get the complete details of a specific HubSpot blog post by ID, including body content length and SEO metadata
 - **hs_list_blog_authors**: Returns author display name, URL slug, email, and bio. Authors are linked to blog posts for byline attribution. Use when the user asks about content contributors, wants to find an author profile, or needs author IDs for blog post creation.
 
 List blog authors configured in HubSpot CMS with name, email, slug, and biography
+- **hs_list_landing_pages**: Landing pages are standalone conversion-focused pages (signup forms, lead magnets, event registration). Returns page title, slug, status, and full URL. Distinct from regular site pages — landing pages are typically ungated and optimized for form fills. Use when the user asks about conversion pages or lead capture pages.
+
+List HubSpot landing pages designed for conversion with title, URL, publish status, and campaign association
+- **hs_list_site_pages**: Returns page title, URL slug, current state (draft/published), and associated domain. Site pages are standard website pages (About, Contact, Pricing, etc.) — distinct from blog posts and landing pages. Use when the user asks about website content, page inventory, or publishing status.
+
+List website pages hosted in HubSpot CMS with title, URL slug, publish status, and domain
+- **hs_get_blog_post**: Returns full post details including title, meta description, slug, body content length, author, featured image, publish date, and SEO settings. Use after listing/searching posts to drill into a specific article for complete details.
+
+Get the complete details of a specific HubSpot blog post by ID, including body content length and SEO metadata
 - **hs_list_blog_posts**: Returns post title, URL slug, current state (draft/published/scheduled), author name, and publish date. Use when the user asks about blog content, wants to review recent articles, check publishing status, or audit the content calendar.
 
 List recent blog posts from HubSpot CMS with title, URL slug, publish status, author, and publish date
@@ -44,12 +50,6 @@ List blog tags used for categorizing HubSpot blog content with tag name and URL 
 - **hs_list_domains**: Returns domain name, whether DNS is resolving correctly, if the domain is primary, and which HubSpot features use it (CMS, email, landing pages). Use when the user asks about connected domains, DNS configuration, or wants to verify domain setup.
 
 List all domains connected to HubSpot with DNS resolution status, primary domain flag, and usage type
-- **hs_list_landing_pages**: Landing pages are standalone conversion-focused pages (signup forms, lead magnets, event registration). Returns page title, slug, status, and full URL. Distinct from regular site pages — landing pages are typically ungated and optimized for form fills. Use when the user asks about conversion pages or lead capture pages.
-
-List HubSpot landing pages designed for conversion with title, URL, publish status, and campaign association
-- **hs_list_site_pages**: Returns page title, URL slug, current state (draft/published), and associated domain. Site pages are standard website pages (About, Contact, Pricing, etc.) — distinct from blog posts and landing pages. Use when the user asks about website content, page inventory, or publishing status.
-
-List website pages hosted in HubSpot CMS with title, URL slug, publish status, and domain
 - **hs_search_site_pages**: Returns matching pages with title, slug, status, and domain. Use when the user wants to find a specific website page or check if a topic has a dedicated page.
 
 Search HubSpot site pages by title or keyword to find specific web pages

@@ -82,20 +82,6 @@ Batch update specific menu items for a GrabFood merchant
 **Important:** Before cancelling, consider using `check_order_cancelable` to verify if the order is still in a cancellable state. Once the order has progressed too far in preparation, cancellation may not be possible.
 
 Cancel an already accepted GrabFood order
-- **check_order_cancelable**: This is a safety check tool that should be used before attempting to cancel an order, as cancellations after a certain point in the order lifecycle are not permitted.
-
-**Parameters:**
-- `order_id` (required): The unique order ID to check for cancellation eligibility.
-
-**When to use:**
-- Before cancelling an order to avoid API errors
-- User asks "can I still cancel order 12345?"
-- Restaurant staff needs to verify order state before making a cancellation decision
-- User is uncertain whether the order has progressed beyond the cancellation window
-
-**Returns:** A status object indicating whether the order can be cancelled, along with any relevant state information.
-
-Check if a GrabFood order can still be cancelled
 - **create_campaign**: Campaigns can include discounts, free delivery offers, featured placement, and other promotional tools designed to increase order volume and visibility.
 
 **Parameters:**
@@ -111,6 +97,50 @@ Check if a GrabFood order can still be cancelled
 **Important:** Campaign creation may require budget approval from GrabFood. Ensure the campaign configuration matches GrabFood's accepted campaign types and schemas. Review campaign details carefully before submitting, as changes may not be possible after creation.
 
 Create a new marketing campaign for a GrabFood merchant
+- **list_orders**: Use this tool when the user wants to see what orders have been placed, check today's order volume, or review incoming orders from GrabFood delivery customers.
+
+**Parameters:**
+- `merchant_id` (required): The unique merchant ID registered with GrabFood Partner Portal. This identifies which restaurant's orders to fetch.
+- `date` (optional): The date to filter orders by, in YYYY-MM-DD format. If not provided, the API returns the most recent orders.
+
+**When to use:**
+- User asks "what orders do I have today?"
+- User wants to check order history for a specific date
+- User needs to see all incoming GrabFood orders before accepting them
+- User wants to audit order volume for a given day
+
+**Returns:** A JSON array of order objects, each containing order_id, items, customer details, delivery information, and order status.
+
+List all GrabFood orders for a merchant on a specific date
+- **pause_store**: When paused, the store will not receive new orders from GrabFood customers. When unpaused (pause=false), the store becomes visible and active again.
+
+**Parameters:**
+- `merchant_id` (required): The unique merchant ID registered with GrabFood.
+- `pause` (required): Boolean flag — true to pause the store, false to unpause it.
+
+**When to use:**
+- User says "pause my GrabFood store" — e.g., kitchen is overwhelmed, staff shortage, or end of business day
+- User says "unpause my store" or "open my store" when ready to receive orders again
+- Emergency closure due to equipment failure, power outage, or other disruptions
+- User wants to temporarily stop accepting orders during a rush
+
+**Important:** Pausing the store immediately stops new orders from being placed. Existing active orders are not affected. Always verify the store status after pausing/unpausing using `get_store_status` to confirm the change took effect.
+
+Pause or unpause a GrabFood store
+- **check_order_cancelable**: This is a safety check tool that should be used before attempting to cancel an order, as cancellations after a certain point in the order lifecycle are not permitted.
+
+**Parameters:**
+- `order_id` (required): The unique order ID to check for cancellation eligibility.
+
+**When to use:**
+- Before cancelling an order to avoid API errors
+- User asks "can I still cancel order 12345?"
+- Restaurant staff needs to verify order state before making a cancellation decision
+- User is uncertain whether the order has progressed beyond the cancellation window
+
+**Returns:** A status object indicating whether the order can be cancelled, along with any relevant state information.
+
+Check if a GrabFood order can still be cancelled
 - **get_store_status**: This includes whether the store is currently open, paused, or closed, along with any status flags that affect order acceptance.
 
 **Parameters:**
@@ -140,21 +170,6 @@ Get the current operational status of a GrabFood store
 **Returns:** A JSON array of campaign objects, each containing campaign details such as name, type, budget, duration, status, and performance metrics.
 
 List all marketing campaigns for a GrabFood merchant
-- **list_orders**: Use this tool when the user wants to see what orders have been placed, check today's order volume, or review incoming orders from GrabFood delivery customers.
-
-**Parameters:**
-- `merchant_id` (required): The unique merchant ID registered with GrabFood Partner Portal. This identifies which restaurant's orders to fetch.
-- `date` (optional): The date to filter orders by, in YYYY-MM-DD format. If not provided, the API returns the most recent orders.
-
-**When to use:**
-- User asks "what orders do I have today?"
-- User wants to check order history for a specific date
-- User needs to see all incoming GrabFood orders before accepting them
-- User wants to audit order volume for a given day
-
-**Returns:** A JSON array of order objects, each containing order_id, items, customer details, delivery information, and order status.
-
-List all GrabFood orders for a merchant on a specific date
 - **mark_order_ready**: This is a crucial step in the order lifecycle — it notifies Grab that the driver should arrive immediately.
 
 **Parameters:**
@@ -169,21 +184,6 @@ List all GrabFood orders for a merchant on a specific date
 **Important:** Only mark an order as ready when it is genuinely complete. Premature marking causes driver arrival before food is ready, leading to poor customer experience and potential quality issues (cold food, etc.).
 
 Mark a GrabFood order as ready for pickup/delivery
-- **pause_store**: When paused, the store will not receive new orders from GrabFood customers. When unpaused (pause=false), the store becomes visible and active again.
-
-**Parameters:**
-- `merchant_id` (required): The unique merchant ID registered with GrabFood.
-- `pause` (required): Boolean flag — true to pause the store, false to unpause it.
-
-**When to use:**
-- User says "pause my GrabFood store" — e.g., kitchen is overwhelmed, staff shortage, or end of business day
-- User says "unpause my store" or "open my store" when ready to receive orders again
-- Emergency closure due to equipment failure, power outage, or other disruptions
-- User wants to temporarily stop accepting orders during a rush
-
-**Important:** Pausing the store immediately stops new orders from being placed. Existing active orders are not affected. Always verify the store status after pausing/unpausing using `get_store_status` to confirm the change took effect.
-
-Pause or unpause a GrabFood store
 - **update_menu**: This tool replaces or modifies menu items, categories, pricing, and availability. It is a full update operation — ensure all desired menu data is included in the payload.
 
 **Parameters:**

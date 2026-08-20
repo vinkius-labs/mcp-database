@@ -38,44 +38,18 @@ No more repetitive clicking through the HotDocs web interface. Your AI acts as a
 
 
 ## Available Tools (14)
-- **list_template_packages**: Template packages define the structure of documents that can be assembled. 
-Each package contains interview questions and document output configurations.
-Use this to discover what templates are available for document assembly.
-The response includes package IDs which are required for creating work items.
-
-List all available template packages in HotDocs Advance
 - **complete_assembly**: This processes all collected answers and assembles the final documents based on the template configuration.
 After calling this, the assembled documents become available for download via list_documents and get_document_content.
 You must have already created a work item, created a version/session, and provided answers (via interview or update_answers).
 The workItemId and versionId must match an existing work item and its version.
 
 Complete document assembly for a work item version
-- **create_interview_session**: This endpoint prepares the system to collect answers for the template variables.
-The response contains interview data needed to render the HotDocs interview UI.
-Use this before displaying the interview to the user or before assembling documents.
-The versionId should be unique for each interview session (e.g., v1, v2, or a UUID).
-
-Create a new interview session for a work item
 - **create_work_item**: A work item is associated with a specific template package and holds answers provided during interviews.
 You must provide a unique workItemId (alphanumeric identifier you choose) and optionally a templatePackageId.
 The workItemId becomes the reference for all subsequent operations (interview, assembly, download).
 IMPORTANT: workItemId must be unique and URL-safe (letters, numbers, hyphens only).
 
 Create a new work item in HotDocs Advance
-- **get_auth_token**: This is primarily a utility function for debugging authentication issues.
-The token is used internally by all other tools automatically.
-If other tools fail with auth errors, verify your credentials are correct.
-
-Get a fresh HotDocs API access token
-- **get_document_content**: Use this to download the final generated document (PDF, Word, etc.) after assembly is complete.
-You need the workItemId and the documentId (obtained from list_documents).
-The response includes the document content and a download URL for direct access.
-
-Download/get content of an assembled document
-- **get_template_package**: Use the template package ID obtained from list_template_packages.
-This helps understand the template structure before creating work items.
-
-Get details of a specific template package
 - **get_unanswered_variables**: This shows which template variables were not provided answers during the interview process.
 Useful for validating interview completeness before or after document assembly.
 Requires the workItemId and documentId (from list_documents).
@@ -92,23 +66,49 @@ Use the document IDs returned here to download individual documents via get_docu
 Each document entry includes filename, creation date, and assembly results information.
 
 List all assembled documents for a work item
+- **list_template_packages**: Template packages define the structure of documents that can be assembled. 
+Each package contains interview questions and document output configurations.
+Use this to discover what templates are available for document assembly.
+The response includes package IDs which are required for creating work items.
+
+List all available template packages in HotDocs Advance
 - **list_template_versions**: Each template can have multiple versions over time. This shows version history 
 and helps identify which version is currently live/active.
 Use the package_id from list_template_packages to query versions.
 
 List all versions of a template package
-- **list_work_items_by_date**: This is optimized for 
-date-based filtering and auditing. Both fromDate and toDate are required for this tool.
-Use ISO 8601 date format (e.g., 2024-01-01 or 2024-01-01T00:00:00 for datetime).
-This is useful for generating reports on document assembly activity over time periods.
-
-List work items filtered by a specific date range
 - **list_work_items**: You can filter by user ID 
 and/or date range to find specific work items. Leave all parameters empty to list all work items.
 This is useful for auditing, tracking progress, or finding existing work items to continue working on.
 Date format should be ISO 8601 (e.g., 2024-01-15 or 2024-01-15T10:30:00).
 
 List work items with optional filters
+- **list_work_items_by_date**: This is optimized for 
+date-based filtering and auditing. Both fromDate and toDate are required for this tool.
+Use ISO 8601 date format (e.g., 2024-01-01 or 2024-01-01T00:00:00 for datetime).
+This is useful for generating reports on document assembly activity over time periods.
+
+List work items filtered by a specific date range
+- **create_interview_session**: This endpoint prepares the system to collect answers for the template variables.
+The response contains interview data needed to render the HotDocs interview UI.
+Use this before displaying the interview to the user or before assembling documents.
+The versionId should be unique for each interview session (e.g., v1, v2, or a UUID).
+
+Create a new interview session for a work item
+- **get_auth_token**: This is primarily a utility function for debugging authentication issues.
+The token is used internally by all other tools automatically.
+If other tools fail with auth errors, verify your credentials are correct.
+
+Get a fresh HotDocs API access token
+- **get_document_content**: Use this to download the final generated document (PDF, Word, etc.) after assembly is complete.
+You need the workItemId and the documentId (obtained from list_documents).
+The response includes the document content and a download URL for direct access.
+
+Download/get content of an assembled document
+- **get_template_package**: Use the template package ID obtained from list_template_packages.
+This helps understand the template structure before creating work items.
+
+Get details of a specific template package
 - **update_answers**: The answer_xml parameter must contain valid HotDocs answer XML format that matches the template variables.
 This is useful for automated/batch document assembly where you already have the data.
 You can call this multiple times to incrementally add answers.
