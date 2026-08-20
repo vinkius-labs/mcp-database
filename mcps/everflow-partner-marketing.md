@@ -33,16 +33,16 @@ Integrate **Everflow**, the comprehensive partner marketing platform, directly i
 
 
 ## Available Tools (10)
-- **get_everflow_network_metadata**: Retrieve metadata and limits for your Everflow network
 - **get_affiliate_detailed_profile**: Get detailed profile and performance summary for a specific affiliate
+- **get_everflow_network_metadata**: Retrieve metadata and limits for your Everflow network
 - **get_offer_detailed_data**: Get detailed settings and tracking information for a specific offer
-- **get_network_performance_summary**: Get a high-level summary of network performance metrics
-- **quick_partner_marketing_audit**: Retrieve a high-level summary of offers, affiliates, and advertisers
 - **list_currently_active_offers**: Identify offers that are currently in an "Active" status
 - **list_network_advertisers**: List all advertisers configured in your network
-- **list_marketing_affiliates**: List all affiliates and partners in your network
 - **list_offer_marketing_creatives**: List all creative assets (banners, links) for a specific offer
+- **get_network_performance_summary**: Get a high-level summary of network performance metrics
+- **list_marketing_affiliates**: List all affiliates and partners in your network
 - **list_marketing_offers**: List all marketing offers in your Everflow account
+- **quick_partner_marketing_audit**: Retrieve a high-level summary of offers, affiliates, and advertisers
 
 
 ## 💬 Prompt Examples

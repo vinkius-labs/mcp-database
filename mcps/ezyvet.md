@@ -35,13 +35,13 @@ Connect your **ezyVet** Practice Management account to any AI agent and take ful
 
 
 ## Available Tools (12)
-- **get_consult**: Get a specific ezyVet consult by ID
-- **get_invoice**: Get a specific ezyVet invoice by ID
 - **get_me**: Get current ezyVet user profile
 - **list_contacts**: List all ezyVet contacts (clients/suppliers)
+- **list_animals**: List all ezyVet animals (patients)
 - **get_animal**: Get a specific ezyVet animal by ID
 - **get_appointment**: Get a specific ezyVet appointment by ID
-- **list_animals**: List all ezyVet animals (patients)
+- **get_consult**: Get a specific ezyVet consult by ID
+- **get_invoice**: Get a specific ezyVet invoice by ID
 - **list_appointments**: List all ezyVet appointments
 - **list_invoices**: List all ezyVet invoices
 - **list_products**: List all ezyVet products

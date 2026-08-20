@@ -35,8 +35,8 @@ Connect your **Emma** (myemma.com) account to your AI agent and take full contro
 
 
 ## Available Tools (10)
-- **list_mailings**: List sent and scheduled mailings
 - **list_members**: List mailing list members
+- **list_mailings**: List sent and scheduled mailings
 - **create_group**: Create a new member group
 - **delete_group**: Members are not deleted.
 

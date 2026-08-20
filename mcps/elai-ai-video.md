@@ -33,10 +33,10 @@ Integrate **Elai.io**, the leading AI video generation platform, directly into y
 
 
 ## Available Tools (10)
-- **list_successfully_rendered_videos**: Identify videos that have finished rendering and are ready for download
-- **list_latest_video_projects**: Identify the most recently created or updated video projects
-- **list_video_templates**: List all video templates available in your account
 - **list_ai_videos**: List all AI videos created in your Elai account
+- **list_latest_video_projects**: Identify the most recently created or updated video projects
+- **list_successfully_rendered_videos**: Identify videos that have finished rendering and are ready for download
+- **list_video_templates**: List all video templates available in your account
 - **create_new_ai_video**: Create a new AI video from a template or text script
 - **get_elai_account_metadata**: Retrieve metadata and credit balance for your Elai account
 - **get_video_details**: Get detailed settings and rendering status for a specific video

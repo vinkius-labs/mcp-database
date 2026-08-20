@@ -44,21 +44,15 @@ No more manual satellite data analysis or complex GIS workflows. Your AI acts as
 
 
 ## Available Tools (12)
-- **get_ndmi_timeseries**: NDMI is sensitive to vegetation water content and is used for drought monitoring, irrigation scheduling, and fire risk assessment. Returns NDMI values per satellite overpass date. Essential for water stress detection, irrigation optimization, drought impact assessment, and harvest timing. AI agents should use this when users ask "show me crop water stress trends", "how is the moisture content changing", or need moisture index analysis for irrigation planning.
-
-Get NDMI time series data for crop water stress monitoring
 - **get_evi_timeseries**: EVI is more sensitive in high-biomass regions and less affected by atmospheric conditions than NDVI. Returns EVI values per satellite overpass date for trend analysis. Essential for monitoring dense canopies, tropical crops, and areas with high atmospheric interference. AI agents should reference this when users ask "show me EVI trends for this field", "how is the canopy developing", or need enhanced vegetation index analysis for high-biomass crops.
 
 Get EVI time series data for enhanced vegetation monitoring over a growing season
-- **get_fields**: Returns field names, boundaries (GeoJSON polygons), area in hectares/acres, crop type, planting dates, and current growth stage information. Essential for farm management overview, field inventory, and selecting target fields for satellite analysis. AI agents should use this when users ask "show me all my fields", "list monitored fields", or need to identify available fields for vegetation index or weather queries.
+- **get_ndmi_timeseries**: NDMI is sensitive to vegetation water content and is used for drought monitoring, irrigation scheduling, and fire risk assessment. Returns NDMI values per satellite overpass date. Essential for water stress detection, irrigation optimization, drought impact assessment, and harvest timing. AI agents should use this when users ask "show me crop water stress trends", "how is the moisture content changing", or need moisture index analysis for irrigation planning.
 
-List all agricultural fields monitored in your EOSDA account
+Get NDMI time series data for crop water stress monitoring
 - **get_ndvi_timeseries**: Returns NDVI values per satellite overpass date, enabling trend analysis of crop health, growth stages, and stress detection. Essential for season-long crop monitoring, growth curve analysis, yield prediction, and identifying problematic periods. AI agents should use this when users ask "show me the NDVI trend for this season", "how has vegetation health changed over the growing season", or need time-series vegetation analysis.
 
 Get NDVI time series data showing vegetation health trends over a growing season
-- **render_index_map**: Returns rendered raster images (JPEG, PNG, or GeoTIFF) with color-coded vegetation index values overlaid on field boundaries. Supports colormaps like NDVI (green-yellow-red), thermal, grayscale, and custom color schemes. Essential for field reports, stakeholder communication, visual crop assessment, and creating shareable vegetation maps. AI agents should reference this when users ask "create a color-coded NDVI map of my field", "generate a vegetation health visualization", or need shareable vegetation index images for reports.
-
-Generate visual vegetation index maps with customizable colormaps for field visualization
 - **get_satellite_imagery**: ) for a specific field and date range. Supports Sentinel-2, Landsat 8/9, MODIS, NAIP, and CBERS-4 sources. Returns image metadata, acquisition dates, cloud cover percentages, band availability, and download URLs. Essential for visual crop assessment, custom band analysis, change detection, and downloading raw imagery for further processing. AI agents should reference this when users ask "show me satellite images of my field from last week", "get Sentinel-2 imagery for field X", or need raw satellite imagery download links.
 
 Retrieve raw satellite imagery for a specific field and date range
@@ -71,12 +65,18 @@ Calculate vegetation indices (NDVI, EVI, NDRE, etc.) for a specific field and da
 - **get_weather_data**: Includes 1800+ weather parameters: temperature (air, soil), precipitation, humidity, wind speed/direction, solar radiation, evapotranspiration, dew point, pressure, and growing degree days. Historical data available since 1979. Essential for irrigation planning, frost risk assessment, disease/pest pressure modeling, and yield prediction. AI agents should use this when users ask "what was the weather like on my field last month", "get temperature and rainfall data", or need historical weather analysis for crop management decisions.
 
 Get historical and current weather data for agricultural fields
-- **get_weather_forecast**: Includes temperature, precipitation, humidity, wind, and solar radiation forecasts. Essential for planting schedule optimization, harvest timing, irrigation planning, frost protection, and seasonal crop management. AI agents should reference this when users ask "what is the weather forecast for my field next week", "get seasonal precipitation forecast", or need forward-looking weather data for agricultural planning.
-
-Get weather forecasts (15 days to 7 months) for agricultural fields
 - **get_zoning_map**: Returns zone boundaries, average index values per zone, area percentages, and management recommendations. Essential for variable rate application (VRA), precision fertilization, targeted irrigation, and yield optimization. AI agents should use this when users ask "create a zoning map for my field", "generate productivity zones", or need management zone maps for precision agriculture.
 
 Generate productivity and vegetation health zoning maps for fields
+- **render_index_map**: Returns rendered raster images (JPEG, PNG, or GeoTIFF) with color-coded vegetation index values overlaid on field boundaries. Supports colormaps like NDVI (green-yellow-red), thermal, grayscale, and custom color schemes. Essential for field reports, stakeholder communication, visual crop assessment, and creating shareable vegetation maps. AI agents should reference this when users ask "create a color-coded NDVI map of my field", "generate a vegetation health visualization", or need shareable vegetation index images for reports.
+
+Generate visual vegetation index maps with customizable colormaps for field visualization
+- **get_fields**: Returns field names, boundaries (GeoJSON polygons), area in hectares/acres, crop type, planting dates, and current growth stage information. Essential for farm management overview, field inventory, and selecting target fields for satellite analysis. AI agents should use this when users ask "show me all my fields", "list monitored fields", or need to identify available fields for vegetation index or weather queries.
+
+List all agricultural fields monitored in your EOSDA account
+- **get_weather_forecast**: Includes temperature, precipitation, humidity, wind, and solar radiation forecasts. Essential for planting schedule optimization, harvest timing, irrigation planning, frost protection, and seasonal crop management. AI agents should reference this when users ask "what is the weather forecast for my field next week", "get seasonal precipitation forecast", or need forward-looking weather data for agricultural planning.
+
+Get weather forecasts (15 days to 7 months) for agricultural fields
 - **create_field**: Accepts field boundary as GeoJSON polygon or coordinates, field name, crop type, and planting date. Returns the created field with ID, calculated area, and monitoring activation status. Essential for onboarding new fields into the monitoring system, expanding farm coverage, and setting up new crop seasons. AI agents should use this when users ask "add a new field for monitoring", "register this field boundary", or need to set up satellite monitoring for a new agricultural area.
 
 Register a new agricultural field for satellite monitoring

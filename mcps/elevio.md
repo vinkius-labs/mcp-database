@@ -34,13 +34,13 @@ Integrate **Elevio**, the leading customer education and knowledge management pl
 
 ## Available Tools (10)
 - **get_article_details**: Get detailed settings and full content for a specific article
-- **quick_content_health_audit**: Retrieve a high-level summary of article and category volumes
 - **list_knowledge_articles**: List all articles in your Elevio knowledge base
+- **quick_content_health_audit**: Retrieve a high-level summary of article and category volumes
 - **list_draft_knowledge_articles**: Identify articles that are currently in a "Draft" status
 - **list_empty_knowledge_categories**: Identify categories that currently have no associated articles (mock logic)
-- **list_active_modules**: List all Elevio assistant modules (e.g. support, search, tickets)
 - **list_latest_article_updates**: Identify the most recently created or updated articles
 - **search_knowledge_articles**: Search for articles using a title or keyword
+- **list_active_modules**: List all Elevio assistant modules (e.g. support, search, tickets)
 - **get_elevio_account_metadata**: Retrieve metadata and limits for your Elevio account
 - **list_knowledge_categories**: List all categories configured in your Elevio account
 

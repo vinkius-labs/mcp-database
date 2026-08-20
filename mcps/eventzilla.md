@@ -33,16 +33,16 @@ Integrate **Eventzilla**, the leading event registration and marketing platform,
 
 
 ## Available Tools (10)
-- **get_event_detailed_data**: Get detailed settings and information for a specific event
 - **quick_event_volume_audit**: Retrieve a high-level summary of attendees and orders
-- **list_event_attendees**: List all registered attendees for a specific event
-- **list_event_ticket_orders**: List all ticket orders and transactions for a specific event
 - **list_future_scheduled_events**: Identify events that are scheduled for a future date
-- **get_eventzilla_account_metadata**: Retrieve metadata and limits for your Eventzilla account
-- **get_event_performance_summary**: Get a summary of performance metrics for a specific event
-- **list_event_discount_codes**: List all active and inactive discount codes for a specific event
-- **list_all_events**: List all events managed in your Eventzilla account
+- **get_event_detailed_data**: Get detailed settings and information for a specific event
 - **list_currently_live_events**: Identify events that are currently taking place or open for registration
+- **list_event_attendees**: List all registered attendees for a specific event
+- **list_event_discount_codes**: List all active and inactive discount codes for a specific event
+- **list_event_ticket_orders**: List all ticket orders and transactions for a specific event
+- **get_event_performance_summary**: Get a summary of performance metrics for a specific event
+- **get_eventzilla_account_metadata**: Retrieve metadata and limits for your Eventzilla account
+- **list_all_events**: List all events managed in your Eventzilla account
 
 
 ## 💬 Prompt Examples

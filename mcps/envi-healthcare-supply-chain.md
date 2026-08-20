@@ -33,14 +33,14 @@ Integrate **Envi**, the leading supply chain and inventory management platform f
 
 
 ## Available Tools (10)
-- **get_supply_stock_level**: Get real-time stock levels for a specific medical item
 - **get_po_technical_details**: Get detailed settings and line items for a specific purchase order
 - **quick_healthcare_supply_audit**: Retrieve a high-level summary of POs, inventory, and requisitions
-- **list_healthcare_facilities**: List all facilities and clinics configured in your organization
-- **list_medical_inventory_levels**: List inventory levels across all facilities and locations
+- **get_supply_stock_level**: Get real-time stock levels for a specific medical item
 - **list_critical_stock_alerts**: Identify medical supplies that are currently below safety thresholds (mock logic)
+- **list_healthcare_facilities**: List all facilities and clinics configured in your organization
 - **list_healthcare_pos**: List all purchase orders in your Envi account
 - **list_latest_supply_requisitions**: Identify the most recently created or updated supply requisitions
+- **list_medical_inventory_levels**: List inventory levels across all facilities and locations
 - **list_medical_vendors**: List all authorized vendors and suppliers in your network
 - **get_envi_account_metadata**: Retrieve metadata and limits for your Envi account
 

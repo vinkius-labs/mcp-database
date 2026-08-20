@@ -34,17 +34,17 @@ Integrate **EZO.io** (formerly EZOfficeInventory), the world's most popular asse
 
 ## Available Tools (10)
 - **get_ezo_account_metadata**: Retrieve metadata and limits for your EZO account
-- **list_currently_checked_out_assets**: Identify all assets that are currently checked out to members
+- **list_asset_locations**: List all physical locations and sub-locations configured in your account
 - **list_available_assets**: Identify assets that are currently available for checkout
 - **list_consumable_inventory**: List all consumable inventory items and their stock levels
-- **list_asset_locations**: List all physical locations and sub-locations configured in your account
-- **get_asset_detailed_data**: Get detailed settings and information for a specific asset
-- **quick_asset_volume_audit**: Retrieve a high-level summary of assets, inventory, and members
+- **list_currently_checked_out_assets**: Identify all assets that are currently checked out to members
+- **list_overdue_checkouts**: Identify assets that are past their expected return date (mock logic)
 - **list_managed_assets**: g. available, checked out) from the EZO API.
 
 List all fixed assets managed in your EZO account
+- **quick_asset_volume_audit**: Retrieve a high-level summary of assets, inventory, and members
+- **get_asset_detailed_data**: Get detailed settings and information for a specific asset
 - **list_account_members**: List all members and users registered in your organization
-- **list_overdue_checkouts**: Identify assets that are past their expected return date (mock logic)
 
 
 ## 💬 Prompt Examples
