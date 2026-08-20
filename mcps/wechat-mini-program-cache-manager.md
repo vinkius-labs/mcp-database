@@ -15,8 +15,8 @@ This MCP server provides deterministic tools for managing WeChat Mini-Program lo
 
 ## Available Tools (3)
 - **get_cache_inventory**: Provides a summary of the current cache contents to verify the state before performing calculations
-- **simulate_lru_eviction**: Calculates exactly which items must be removed to accommodate a new item using the LRU logic
 - **calculate_storage_status**: Determines the current state of the cache and whether there is enough room to add a specific new item without triggering eviction
+- **simulate_lru_eviction**: Calculates exactly which items must be removed to accommodate a new item using the LRU logic
 
 
 ## 💬 Prompt Examples

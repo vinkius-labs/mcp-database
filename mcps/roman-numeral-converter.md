@@ -14,11 +14,11 @@ This MCP server provides precise bidirectional conversion between Arabic integer
 
 
 ## Available Tools (3)
+- **validate_roman_format**: Validates a Roman numeral string
 - **convert_arabic_to_roman**: Supports additive notation via useAdditive parameter.
 
 Converts an Arabic number to a Roman numeral
 - **convert_roman_to_arabic**: Converts a Roman numeral to an Arabic number
-- **validate_roman_format**: Validates a Roman numeral string
 
 
 ## 💬 Prompt Examples

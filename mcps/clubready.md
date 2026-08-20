@@ -47,15 +47,15 @@ Get member billing status
 - **list_check_ins**: Shows member name, time, barcode scanned, and membership type. Filter by date.
 
 List gym check-ins
-- **do_check_in**: Validates membership status, records the visit, and triggers door access. Returns success/failure with reason.
-
-Check in a member
 - **list_schedule**: Filter by date range.
 
 List class schedule
 - **list_class_roster**: Shows check-in status, waitlist position, and membership used.
 
 List class roster
+- **do_check_in**: Validates membership status, records the visit, and triggers door access. Returns success/failure with reason.
+
+Check in a member
 - **list_prospects**: Essential for gym sales teams.
 
 List sales prospects

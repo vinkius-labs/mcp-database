@@ -34,13 +34,13 @@ Connect your AI assistant to **Commerce Layer**, the headless commerce API and o
 ## Available Tools (9)
 - **get_order**: Retrieve details of a specific order
 - **get_order_stats**: Calculate basic stats for a set of orders
-- **get_sku**: Retrieve details of a specific SKU
-- **list_customers**: Retrieve a list of customers
 - **list_orders**: Retrieve a list of orders from Commerce Layer
 - **list_prices**: Retrieve a list of product prices
 - **list_skus**: Retrieve a list of SKUs (products)
-- **list_shipments**: Retrieve a list of shipments
 - **search_orders_by_email**: Find orders belonging to a specific customer email
+- **get_sku**: Retrieve details of a specific SKU
+- **list_customers**: Retrieve a list of customers
+- **list_shipments**: Retrieve a list of shipments
 
 
 ## 💬 Prompt Examples

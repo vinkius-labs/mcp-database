@@ -15,8 +15,8 @@ This MCP server provides deterministic calculations for candy making. It identif
 
 ## Available Tools (3)
 - **calculate_altitude_offset**: Calculates the temperature reduction required due to altitude to assist in manual adjustments
-- **get_candy_stage_info**: Identifies the specific candy stage and all associated physical and thermal properties for a given set of conditions
 - **validate_cooking_safety**: Checks if a specific temperature is safe for candy making according to standard culinary bounds
+- **get_candy_stage_info**: Identifies the specific candy stage and all associated physical and thermal properties for a given set of conditions
 
 
 ## 💬 Prompt Examples
