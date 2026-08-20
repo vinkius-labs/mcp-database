@@ -35,27 +35,21 @@ Connect your **Linnworks** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **list_open_orders**: Pass limit to control pagination. Returns order details including order IDs, customer info, shipping, and item lines.
-
-Get Linnworks open orders including lines and customer info
-- **get_inventory_item**: Use this to check product details, pricing, weight, and category assignment for a specific product.
-
-Get Linnworks inventory item details by exact SKU
 - **get_stock_level**: Returns available, in-order, due, and minimum quantities per location.
 
 Get Linnworks stock levels across all locations by Item ID
-- **list_locations**: Returns location ID, name, address, and configuration settings for each warehouse.
+- **list_open_orders**: Pass limit to control pagination. Returns order details including order IDs, customer info, shipping, and item lines.
 
-Get Linnworks explicitly configured inventory locations/warehouses
-- **list_postal_services**: Returns service names, carriers, tracking capabilities, and cost configuration.
-
-Get Linnworks explicitly configured postal services
+Get Linnworks open orders including lines and customer info
 - **list_categories**: Returns category IDs, names, and parent-child hierarchy. Use to understand product organization and filter inventory.
 
 Get Linnworks active product grouping categories
 - **list_channels**: ) and their properties via /api/Inventory/GetChannels. Returns channel ID, source name, subchannel info, and integration status.
 
 Get Linnworks active sales channel properties (Amazon, Shopify, etc)
+- **list_locations**: Returns location ID, name, address, and configuration settings for each warehouse.
+
+Get Linnworks explicitly configured inventory locations/warehouses
 - **list_suppliers**: Returns supplier names, codes, contact details, and currency settings.
 
 Get Linnworks configured purchase order suppliers
@@ -65,6 +59,12 @@ Get Linnworks recent returns from the last 30 days
 - **execute_custom_rpc**: Example path: /api/Inventory/GetInventoryItemTitles. All Linnworks APIs are POST-based RPC. Refer to apps.linnworks.net/Api for the full endpoint list.
 
 Execute any custom fallback POST RPC method exposed by Linnworks API
+- **get_inventory_item**: Use this to check product details, pricing, weight, and category assignment for a specific product.
+
+Get Linnworks inventory item details by exact SKU
+- **list_postal_services**: Returns service names, carriers, tracking capabilities, and cost configuration.
+
+Get Linnworks explicitly configured postal services
 
 
 ## 💬 Prompt Examples

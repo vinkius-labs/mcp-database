@@ -38,15 +38,15 @@ Connect your **LEAP Legal Software** account to any AI agent to streamline your 
 - **create_new_card**: Requires a JSON body with card details.
 
 Create a new person or organization card
+- **get_card_details**: Get details for a specific card (contact)
+- **get_matter_correspondence**: List all correspondence (documents, emails, appointments) for a matter
 - **update_existing_card**: Update details for an existing card
 - **list_cards**: List all cards (contacts/organizations)
-- **get_card_details**: Get details for a specific card (contact)
-- **get_matter_linked_cards**: List all contacts (cards) linked to a matter
-- **get_matter_correspondence**: List all correspondence (documents, emails, appointments) for a matter
-- **get_matter_documents_only**: List only documents associated with a matter
 - **list_legal_matter_types**: ) for a target country code (AU, UK, US, CA, NZ).
 
 List all legal matter types for a country
+- **get_matter_documents_only**: List only documents associated with a matter
+- **get_matter_linked_cards**: List all contacts (cards) linked to a matter
 - **list_matters**: Use this to identify matter IDs for detailed inspection.
 
 List all legal matters (cases)
