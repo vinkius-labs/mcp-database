@@ -35,16 +35,16 @@ Connect your **Timekit** account to any AI agent and simplify how you manage res
 
 
 ## Available Tools (11)
-- **cancel_booking**: Cancel a confirmed booking
-- **check_availability**: Check availability for resources
 - **confirm_booking**: Confirm a pending booking
-- **create_booking**: Create a new booking
 - **create_resource**: Create a new resource
 - **decline_booking**: Decline a pending booking
 - **get_booking**: Get details for a specific booking
-- **get_resource**: Get details for a specific resource
 - **list_bookings**: List all bookings
 - **list_resources**: List all resources (people, rooms, etc.)
+- **cancel_booking**: Cancel a confirmed booking
+- **check_availability**: Check availability for resources
+- **create_booking**: Create a new booking
+- **get_resource**: Get details for a specific resource
 - **reschedule_booking**: Reschedule an existing booking
 
 

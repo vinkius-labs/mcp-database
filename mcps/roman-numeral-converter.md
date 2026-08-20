@@ -5,18 +5,20 @@
 
 ## Overview
 
-**Category:** [productivity](../categories/productivity.md)
+**Category:** [utilities](../categories/utilities.md)
 
-Convert musical chord names to Roman numerals and vice-versa, with automatic transposition.
+Convert between Arabic numbers and Roman numerals with strict notation rules.
 
 ## Description
-The Roman Numeral Converter MCP allows musicians and theorists to bridge the gap between note-based progressions and functional harmonic notation. Using tools like `parse_progression_string`, `resolve_harmonic_function`, `transpose_progression`, and `get_chord_metadata`, you can instantly transform a sequence of chords (e.g., C-Am-F-G) into its Roman numeral equivalent (I-vi-IV-V). The server also supports automatic transposition, allowing you to shift any progression to a new target key while preserving the underlying harmonic functions and scale degrees.
-
-### Available Tools
-
-`your_tool_name`
+This MCP server provides precise bidirectional conversion between Arabic integers and Roman numerals. It supports standard subtractive notation (like IV) and optional additive notation (like IIII). Use `convert_arabic_to_roman_tool` to transform numbers into Roman strings, `convert_roman_to_arabic_tool` to extract integer values from Roman strings, and `validate_roman_format_tool` to verify if a Roman numeral follows standard rules.
 
 
+## Available Tools (3)
+- **convert_arabic_to_roman**: Supports additive notation via useAdditive parameter.
+
+Converts an Arabic number to a Roman numeral
+- **convert_roman_to_arabic**: Converts a Roman numeral to an Arabic number
+- **validate_roman_format**: Validates a Roman numeral string
 
 
 ## 💬 Prompt Examples
@@ -24,38 +26,38 @@ The Roman Numeral Converter MCP allows musicians and theorists to bridge the gap
 Here are some examples of how you can interact with the **Roman Numeral Converter** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Parse this progression: C-Am-F-G"
+> "Convert the number 14 to a Roman numeral."
 
 **🤖 AI Agent:**
-> The parsed chords are: C, Am, F, G.
+> XIV
 
 ---
 
 **👤 You:**
-> "What is the harmonic function of Am in the key of C?"
+> "What is the Arabic number for the Roman numeral MCMXCIV?"
 
 **🤖 AI Agent:**
-> In the key of C, Am is the vi (minor) degree, which you can find using `resolve_harmonic_function`.
+> 1994
 
 ---
 
 **👤 You:**
-> "Transpose I-vi-IV-V from C to G."
+> "Is 'IIII' a valid standard Roman numeral?"
 
 **🤖 AI Agent:**
-> The transposed progression in G is: G, Em, C, D, calculated via `transpose_progression`.
+> No, in standard subtractive notation, 4 is represented as IV.
 
 
 ## ❓ FAQ
 
-**Q: What can this tool do?**
-It parses chord progressions, identifies harmonic functions, and transposes sequences using `parse_progression_string` and `transpose_progression`. Tools available: `your_tool_name`.
+**Q: What is the supported range for conversion?**
+The standard range for conversion is from 1 to 3999. Numbers outside this range or zero will result in an error.
 
-**Q: How do I use the transposition feature?**
-Use `transpose_progression` by providing your original progression, the source key, and the target key.
+**Q: Can I use additive notation like IIII instead of IV?**
+Yes, when using `convert_arabic_to_roman_tool`, you can set the `useAdditive` parameter to true to receive additive notation.
 
-**Q: Does it support chord extensions?**
-Yes, you can use `get_chord_metadata` to retrieve detailed information including extensions like 7, 9, or 11.
+**Q: How do I check if a Roman numeral is valid?**
+You can use the `validate_roman_format_tool` to check if a string follows standard Roman numeral sequencing and repetition rules.
 
 
 ## Installation & Usage
