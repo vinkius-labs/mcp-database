@@ -36,18 +36,18 @@ Connect your **Moz API** account to any AI agent and take full control of your s
 
 
 ## Available Tools (10)
-- **get_outgoing_links**: Get explicit outgoing external links originating from a target mapping outbound anchor texts
 - **get_top_links**: Get explicitly top-ranked backlinks mapped directly onto a domain sorted primarily by Domain Authority
 - **get_anchor_text**: Analyze literal anchor text distribution matching backlinks that point to an explicit domain
-- **get_linking_domains**: Get summarized root linking domains hitting specific bounds
 - **get_top_pages**: Query top-performing literal pages existing inside an explicit domain sorted by highest internal linking/PA
-- **global_top_domains**: Extract static globalThis Top root Domains evaluating worldwide highest DA metrics
 - **get_usage**: Check running quota tracking for current Moz API rows
+- **global_top_domains**: Extract static globalThis Top root Domains evaluating worldwide highest DA metrics
+- **global_top_pages**: Extract static globalThis Top Pages across entire web indexed by Moz metric systems
+- **get_incoming_links**: Get explicit incoming backlinks hitting a specific domain mapping Moz API link index
+- **get_linking_domains**: Get summarized root linking domains hitting specific bounds
+- **get_outgoing_links**: Get explicit outgoing external links originating from a target mapping outbound anchor texts
 - **get_url_metrics**: 0 metrics defining explicitly domain rankings and literal link equity boundaries.
 
 Get Moz API V3 Domain Authority (DA) Page Authority (PA) spam scoring and mapped exact link counts
-- **global_top_pages**: Extract static globalThis Top Pages across entire web indexed by Moz metric systems
-- **get_incoming_links**: Get explicit incoming backlinks hitting a specific domain mapping Moz API link index
 
 
 ## 💬 Prompt Examples

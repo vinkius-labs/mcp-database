@@ -39,10 +39,10 @@ Connect your **MindsDB** instance to any AI agent and take full control of your 
 - **execute_sql_query**: E.g: CREATE DATABASE, SELECT ... WHERE, CREATE MODEL ... PREDICT. Wrap logic safely. VERY IMPORTANT: queries returning a large number of rows MUST be explicitly wrapped in a LIMIT statement or risk hitting context overflow.
 
 Execute arbitrary SQL statements bounding MindsDB elements
-- **list_views**: List virtual data views stored inside a target project
 - **list_models**: Use when checking which algorithms are ready to query predictions.
 
 List trained AI tables (models) available in a project
+- **list_views**: List virtual data views stored inside a target project
 - **get_model**: Get an explicitly trained AI prediction engine
 - **get_status**: Acts as a ping tracer returning valid core version/health specs.
 

@@ -31,10 +31,10 @@ Connect your **Microsoft Store** developer account to automate app management ta
 - **get_submission**: Get details for a specific submission
 - **list_addons**: List add-ons for an application
 - **list_applications**: List all applications in your Microsoft Store account
-- **list_flights**: List package flights for an application
 - **list_submissions**: List submissions for an application
-- **get_addon**: Get details for a specific add-on
 - **get_application**: Get details for a specific application
+- **get_addon**: Get details for a specific add-on
+- **list_flights**: List package flights for an application
 
 
 ## 💬 Prompt Examples

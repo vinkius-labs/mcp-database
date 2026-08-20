@@ -36,16 +36,16 @@ Connect your **Nearmap** account to any AI agent and take full control of world-
 
 
 ## Available Tools (10)
-- **check_coverage_point**: Verify Nearmap capture boundaries matching geospatial point resolving temporal history arrays
 - **check_coverage_polygon**: Verify internal aerial survey boundary masks checking imagery intersections across mapped polygons
 - **get_dsm_elevation_tile**: Extract pixelated Digital Surface Model mapping topographic terrain and building peak heights
 - **list_survey_dates**: Iterate chronological availability boundaries mapping all temporal captures crossing target nodes
+- **check_coverage_point**: Verify Nearmap capture boundaries matching geospatial point resolving temporal history arrays
+- **get_ai_detected_features**: Extract vector geometry parsing buildings, pools, vegetation, solar panels via automated CV features bounds
 - **get_survey_metadata**: Query explicitly bounded survey parameters finding GSD resolutions finding optical flight details
+- **get_true_ortho_tile**: Retrieve lean-corrected true geometric top-down bounding layers capturing zero parallax alignments
 - **get_vertical_tile**: Retrieve high-resolution vertical static nadir aerial imagery tiles tracking captured boundaries
 - **list_ai_feature_classes**: Lookup all internal AI category taxonomies evaluating computer vision mappings detecting roof arrays
-- **get_ai_detected_features**: Extract vector geometry parsing buildings, pools, vegetation, solar panels via automated CV features bounds
 - **get_oblique_tile**: Retrieve oblique perspective 3D-angled imagery tiles pointing North, South, East, West locating structural targets
-- **get_true_ortho_tile**: Retrieve lean-corrected true geometric top-down bounding layers capturing zero parallax alignments
 
 
 ## 💬 Prompt Examples

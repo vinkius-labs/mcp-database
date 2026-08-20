@@ -37,10 +37,10 @@ Connect **Mercado Livre Orders** to any AI agent and take full control of your o
 - **cancel_order**: Requires a valid reason.
 
 Cancel a sale
-- **get_order**: Get details of a specific sale
-- **search_orders**: Search for sales/orders
-- **get_shipments**: List shipments associated with an order
 - **get_shipping_info**: Get shipping details for an order
+- **get_order**: Get details of a specific sale
+- **get_shipments**: List shipments associated with an order
+- **search_orders**: Search for sales/orders
 
 
 ## 💬 Prompt Examples

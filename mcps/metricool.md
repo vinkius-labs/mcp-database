@@ -29,15 +29,15 @@ Connect your **Metricool** account to any AI agent and take full control of your
 
 ## Available Tools (10)
 - **get_facebook_analytics**: Get Facebook analytics
-- **get_linkedin_analytics**: Get LinkedIn analytics
-- **get_profile_details**: Get details for a specific profile
 - **get_unified_summary**: Get unified cross-channel summary
-- **get_twitter_analytics**: Get Twitter analytics
-- **list_published_posts**: List recently published posts
 - **list_metricool_profiles**: List all connected social profiles
-- **get_instagram_analytics**: Get Instagram analytics
+- **list_published_posts**: List recently published posts
 - **get_social_planner**: Get scheduled posts planner
 - **get_ads_performance**: Get performance for ads
+- **get_instagram_analytics**: Get Instagram analytics
+- **get_linkedin_analytics**: Get LinkedIn analytics
+- **get_profile_details**: Get details for a specific profile
+- **get_twitter_analytics**: Get Twitter analytics
 
 
 ## 💬 Prompt Examples

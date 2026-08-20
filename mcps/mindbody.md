@@ -31,28 +31,19 @@ Connect your **Mindbody** business to any AI agent and run your fitness studio, 
 
 
 ## Available Tools (15)
-- **get_client_history**: Shows attendance patterns, no-shows, and engagement over time. Critical for retention analysis.
-
-Get client visit history
 - **get_client_memberships**: Shows remaining visits, expiration dates, and auto-pay status.
 
 Get client memberships and packages
 - **get_site_info**: Get studio/business info
-- **list_appointments**: ) with client name, staff, time, duration, and status. Filter by date range or staff member.
+- **list_classes**: Filter by date range or class type. Essential for seeing the studio schedule at a glance.
 
-List booked appointments
+List scheduled classes
 - **list_class_schedules**: Useful for understanding the studio's regular weekly cadence.
 
 List recurring class schedules
 - **list_class_types**: g. Vinyasa Yoga, CrossFit WOD, Spin). Includes name, category, description, and duration.
 
 List all class types/descriptions
-- **list_classes**: Filter by date range or class type. Essential for seeing the studio schedule at a glance.
-
-List scheduled classes
-- **list_enrollments**: Includes dates, capacity, pricing, and enrolled clients.
-
-List course enrollments
 - **list_locations**: Includes address, phone, tax rates, and operating hours.
 
 List studio locations
@@ -71,6 +62,15 @@ Get a staff member's appointment schedule
 - **search_clients**: Returns demographics, contact info, account balance, and membership status. The core CRM tool for studio owners.
 
 Search studio clients/members
+- **get_client_history**: Shows attendance patterns, no-shows, and engagement over time. Critical for retention analysis.
+
+Get client visit history
+- **list_appointments**: ) with client name, staff, time, duration, and status. Filter by date range or staff member.
+
+List booked appointments
+- **list_enrollments**: Includes dates, capacity, pricing, and enrolled clients.
+
+List course enrollments
 - **list_staff**: Includes name, bio, photo URL, certifications, and assigned services.
 
 List all staff and instructors

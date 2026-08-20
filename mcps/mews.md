@@ -30,32 +30,32 @@ Connect your **Mews** hotel to any AI agent and transform your front desk into a
 
 
 ## Available Tools (12)
-- **get_reservations**: Filter by date range. THE core tool — "Who is checking in today?" "How many rooms tonight?"
-
-Get hotel reservations
 - **list_payments**: With amounts, dates, and settlement status.
 
 List payments
-- **get_property_info**: Get hotel configuration
 - **get_reservation**: Get reservation details
 - **search_guests**: Returns profile, contact info, nationality, loyalty status, past stays, preferences, and billing history.
 
 Search hotel guests
-- **get_guest**: Get guest profile
-- **list_rooms**: List hotel rooms
-- **list_room_blocks**: With dates, room types, and release dates.
-
-List room blocks
 - **list_rates**: With pricing, restrictions, and availability rules.
 
 List room rates
-- **list_services**: List hotel services
 - **list_outlet_items**: With pricing and categories.
 
 List POS items
+- **get_guest**: Get guest profile
+- **get_property_info**: Get hotel configuration
+- **get_reservations**: Filter by date range. THE core tool — "Who is checking in today?" "How many rooms tonight?"
+
+Get hotel reservations
 - **list_bills**: Filter by guest for their complete financial history.
 
 List guest bills
+- **list_room_blocks**: With dates, room types, and release dates.
+
+List room blocks
+- **list_rooms**: List hotel rooms
+- **list_services**: List hotel services
 
 
 ## 💬 Prompt Examples

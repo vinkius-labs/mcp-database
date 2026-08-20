@@ -35,17 +35,17 @@ Connect your **Mention** account to any AI agent and manage brand monitoring thr
 
 ## Available Tools (12)
 - **create_monitoring_alert**: Add new alert
-- **remove_monitoring_alert**: Delete an alert
 - **favorite_mention**: Mark as favorite
+- **remove_monitoring_alert**: Delete an alert
 - **get_alert_details**: Get alert info
 - **get_my_profile**: Get account info
-- **get_mention_content**: Read mention details
-- **list_monitoring_alerts**: List your alerts
-- **list_recent_mentions**: List findings
 - **list_active_webhooks**: Get event configs
+- **list_monitoring_alerts**: List your alerts
 - **mark_mention_as_read**: Mark as seen
 - **search_mentions_by_keyword**: Find mentions
 - **get_alert_statistics**: Check reach metrics
+- **get_mention_content**: Read mention details
+- **list_recent_mentions**: List findings
 
 
 ## 💬 Prompt Examples
