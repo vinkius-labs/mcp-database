@@ -36,6 +36,15 @@ No more manual updating of individual CRM records or missing critical relationsh
 
 
 ## Available Tools (14)
+- **list_lists**: List all lists
+- **list_objects**: List all CRM objects
+- **list_records**: Use "companies" for companies, "people" for contacts, "deals" for deals.
+
+List records for any object
+- **list_tasks**: List all tasks
+- **update_record**: Only provided attributes are changed.
+
+Update an existing record
 - **check_attio_status**: Verify Attio API connectivity
 - **create_note**: Useful for logging meeting notes, call summaries, or updates.
 
@@ -50,16 +59,7 @@ Delete a record
 - **get_list_entries**: Get entries from a list
 - **get_object**: Get object schema
 - **get_record**: Get a specific record
-- **list_lists**: List all lists
 - **list_notes**: List notes on a record
-- **list_objects**: List all CRM objects
-- **list_records**: Use "companies" for companies, "people" for contacts, "deals" for deals.
-
-List records for any object
-- **list_tasks**: List all tasks
-- **update_record**: Only provided attributes are changed.
-
-Update an existing record
 
 
 ## 💬 Prompt Examples

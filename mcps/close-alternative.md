@@ -35,10 +35,10 @@ Connect your **Close** CRM account to any AI agent and take full control of your
 
 ## Available Tools (6)
 - **list_opportunities**: List sales opportunities
-- **list_crm_tasks**: List CRM tasks
+- **list_leads**: List all leads in Close CRM
 - **get_lead_details**: Get details of a specific lead
 - **get_current_user**: Get information about the authenticated API user
-- **list_leads**: List all leads in Close CRM
+- **list_crm_tasks**: List CRM tasks
 - **create_lead**: Create a new lead
 
 

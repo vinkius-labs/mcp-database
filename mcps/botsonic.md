@@ -35,18 +35,18 @@ Connect your **Botsonic** (by Writesonic) account to any AI agent and manage you
 
 
 ## Available Tools (12)
-- **add_knowledge_url**: Add knowledge URL
 - **check_botsonic_status**: Verify connectivity
 - **create_bot**: Create a bot
-- **get_bot_analytics**: Get bot analytics
 - **get_bot**: Get bot details
-- **get_conversation**: Get conversation
 - **list_bots**: List all bots
-- **list_conversations**: List conversations
 - **list_knowledge_base**: List knowledge base
 - **list_leads**: List captured leads
-- **send_message**: Send message to bot
 - **update_bot**: Update a bot
+- **add_knowledge_url**: Add knowledge URL
+- **get_bot_analytics**: Get bot analytics
+- **get_conversation**: Get conversation
+- **list_conversations**: List conversations
+- **send_message**: Send message to bot
 
 
 ## 💬 Prompt Examples

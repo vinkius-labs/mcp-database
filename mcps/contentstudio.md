@@ -35,19 +35,19 @@ Connect your **ContentStudio** account to any AI agent and take full control of 
 
 
 ## Available Tools (13)
+- **get_social_account**: Get social account details
+- **list_media**: List media library
+- **list_workspaces**: List workspaces
+- **list_posts**: List posts
+- **list_social_accounts**: List social accounts
 - **check_contentstudio_status**: Verify connectivity
 - **create_post**: Create a post
 - **delete_post**: Delete a post
-- **get_social_account**: Get social account details
 - **get_analytics**: Get account analytics
-- **get_post_analytics**: Get post analytics
 - **get_post**: Get post details
-- **list_social_accounts**: List social accounts
-- **list_posts_by_status**: List posts by status
+- **get_post_analytics**: Get post analytics
 - **list_categories**: List categories
-- **list_media**: List media library
-- **list_posts**: List posts
-- **list_workspaces**: List workspaces
+- **list_posts_by_status**: List posts by status
 
 
 ## 💬 Prompt Examples

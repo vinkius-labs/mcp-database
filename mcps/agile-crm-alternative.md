@@ -36,18 +36,18 @@ No more manual status checking across different CRM modules or digging through c
 
 
 ## Available Tools (12)
-- **create_deal**: Create a new deal
 - **delete_contact**: Delete a contact
+- **list_contact_notes**: List notes for a specific contact
 - **list_contacts**: List all contacts in Agile CRM
 - **list_deals**: List all deals (opportunities)
 - **list_events**: List all calendar events
-- **list_contact_notes**: List notes for a specific contact
-- **list_tasks**: List all tasks
 - **retrieve_contact**: Get details of a specific contact
 - **retrieve_deal**: Get details of a specific deal
 - **retrieve_task**: Get details of a specific task
-- **update_contact**: Update an existing contact
 - **create_contact**: Create a new contact
+- **create_deal**: Create a new deal
+- **list_tasks**: List all tasks
+- **update_contact**: Update an existing contact
 
 
 ## 💬 Prompt Examples

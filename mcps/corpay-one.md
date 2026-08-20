@@ -36,11 +36,11 @@ Connect your **Corpay One** business payment account to any AI agent and simplif
 
 ## Available Tools (7)
 - **list_payments**: List Corpay One payments
-- **create_new_document**: Upload a new document
-- **get_document_details**: Get details for a specific document
 - **get_payment_details**: Get details for a specific payment
 - **list_financial_documents**: List invoices and receipts
 - **list_team_users**: List account users
+- **create_new_document**: Upload a new document
+- **get_document_details**: Get details for a specific document
 - **list_account_vendors**: List vendors/suppliers
 
 

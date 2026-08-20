@@ -37,36 +37,36 @@ Connect to the **Copernicus Data Space Ecosystem** and unlock the world's larges
 
 
 ## Available Tools (14)
-- **list_product_nodes**: Returns the hierarchy of files including measurement data, metadata XML, quicklook images, and auxiliary data. Essential for understanding product structure before selective download.
-
-List all files contained within a satellite product
-- **count_products**: Useful for understanding data volume before executing a full search, or for monitoring data availability trends.
-
-Count total products available for a collection and date range
-- **get_product_download_url**: Returns the direct download URL along with a Bearer token valid for approximately one hour. Use this to download raw satellite data products (typically in SAFE format for Sentinel data).
-
-Generate an authenticated download URL for a product
-- **get_product**: Returns name, sensing time, footprint geometry, file size, checksum, and all associated attributes. Use this after searching to inspect a specific product before downloading.
-
-Get detailed metadata for a specific satellite product by UUID
-- **get_quicklook**: Useful for understanding the product structure and accessing thumbnail previews without downloading the full product.
-
-Get quicklook preview and file nodes for a product
-- **list_attributes**: This helps you understand what filtering parameters are available (e.g., cloud cover percentage, orbit direction, processing level) for refining product searches.
-
-List available metadata attributes for a collection
 - **list_collections**: Includes Sentinel-1 (radar), Sentinel-2 (optical), Sentinel-3 (ocean/land), Sentinel-5P (atmosphere), Sentinel-6 (altimetry), and complementary missions like Landsat. Each entry includes temporal coverage and description.
 
 List all available Copernicus satellite data collections
 - **list_latest_products**: Useful for monitoring new data availability or checking processing pipeline status.
 
 List the most recently published satellite products
-- **search_by_bbox**: Combines spatial filtering with collection and temporal constraints. Ideal for region-specific analysis workflows.
-
-Search satellite products within a geographic bounding box
 - **search_by_name**: Useful for finding specific orbits, tiles (e.g., "T33UUP" for Sentinel-2 tile), or granule identifiers. Returns product metadata ordered by sensing date.
 
 Search satellite products by name pattern
+- **count_products**: Useful for understanding data volume before executing a full search, or for monitoring data availability trends.
+
+Count total products available for a collection and date range
+- **get_product**: Returns name, sensing time, footprint geometry, file size, checksum, and all associated attributes. Use this after searching to inspect a specific product before downloading.
+
+Get detailed metadata for a specific satellite product by UUID
+- **get_product_download_url**: Returns the direct download URL along with a Bearer token valid for approximately one hour. Use this to download raw satellite data products (typically in SAFE format for Sentinel data).
+
+Generate an authenticated download URL for a product
+- **get_quicklook**: Useful for understanding the product structure and accessing thumbnail previews without downloading the full product.
+
+Get quicklook preview and file nodes for a product
+- **list_attributes**: This helps you understand what filtering parameters are available (e.g., cloud cover percentage, orbit direction, processing level) for refining product searches.
+
+List available metadata attributes for a collection
+- **list_product_nodes**: Returns the hierarchy of files including measurement data, metadata XML, quicklook images, and auxiliary data. Essential for understanding product structure before selective download.
+
+List all files contained within a satellite product
+- **search_by_bbox**: Combines spatial filtering with collection and temporal constraints. Ideal for region-specific analysis workflows.
+
+Search satellite products within a geographic bounding box
 - **check_copernicus_status**: Returns the connection status. Use this to verify your client_id:client_secret credentials are working correctly.
 
 Verify Copernicus Data Space API connectivity and authentication

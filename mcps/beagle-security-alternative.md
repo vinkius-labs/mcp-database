@@ -36,15 +36,15 @@ No more manual toggling between security scanners or digging through fragmented 
 
 
 ## Available Tools (9)
+- **get_test_sessions**: List all test sessions
+- **get_test_status**: Get current test status
+- **start_test**: Start a new security test
+- **stop_test**: Stop a running security test
 - **get_application**: Get details of the current application
 - **get_running_tests**: List all currently running tests
 - **get_test_result**: Get full test result (JSON)
-- **get_test_sessions**: List all test sessions
-- **get_test_status**: Get current test status
 - **list_applications**: List all applications
 - **list_projects**: List all security projects
-- **start_test**: Start a new security test
-- **stop_test**: Stop a running security test
 
 
 ## 💬 Prompt Examples

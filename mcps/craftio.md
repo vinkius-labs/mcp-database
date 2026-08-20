@@ -39,14 +39,14 @@ Connect your **Craft.io** product management account to any AI agent and simplif
 - **create_item**: Create an item
 - **get_company**: Get company details
 - **get_company_competitors**: Get competitors
-- **get_company_employees**: Get company employees
-- **get_company_financials**: Get company financials
 - **get_item**: Get item details
-- **get_company_news**: Get company news
 - **get_portfolio**: Get portfolio details
 - **list_items**: List workspace items
 - **list_portfolios**: List portfolios
 - **list_workspaces**: List workspaces
+- **get_company_employees**: Get company employees
+- **get_company_financials**: Get company financials
+- **get_company_news**: Get company news
 - **search_companies**: Search companies
 
 

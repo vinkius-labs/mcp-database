@@ -36,18 +36,18 @@ Connect your **CUFinder** business intelligence account to any AI agent and simp
 
 ## Available Tools (13)
 - **find_email**: Find email address
+- **get_company_socials**: Get social profiles
+- **get_company_revenue**: Get company revenue
+- **get_company_tech**: Get tech stack
+- **bulk_enrich**: Bulk enrich
+- **check_cufinder_status**: Verify connectivity
+- **enrich_linkedin**: Enrich LinkedIn profile
+- **find_domain**: Find company domain
 - **find_employees**: Find employees
 - **find_phone**: Find phone number
 - **get_account**: Get account info
 - **get_company_info**: Get company info
-- **get_company_socials**: Get social profiles
-- **get_company_tech**: Get tech stack
-- **get_company_revenue**: Get company revenue
-- **enrich_linkedin**: Enrich LinkedIn profile
 - **verify_email**: Verify email
-- **bulk_enrich**: Bulk enrich
-- **check_cufinder_status**: Verify connectivity
-- **find_domain**: Find company domain
 
 
 ## 💬 Prompt Examples

@@ -35,12 +35,6 @@ Connect your **Clearout** email intelligence account to any AI agent and simplif
 
 
 ## Available Tools (10)
-- **cancel_bulk**: Already processed emails retain their results.
-
-Cancel a bulk verification
-- **check_clearout_status**: Verify Clearout API connectivity
-- **download_results**: Download verification results
-- **find_email**: Find a business email
 - **get_bulk_status**: Check bulk verification progress
 - **get_credits**: Check credit balance
 - **remove_bulk_list**: Remove a bulk list
@@ -49,6 +43,12 @@ Cancel a bulk verification
 Verify emails in bulk
 - **verify_catchall**: Verify catch-all domain
 - **verify_email**: Verify a single email
+- **cancel_bulk**: Already processed emails retain their results.
+
+Cancel a bulk verification
+- **check_clearout_status**: Verify Clearout API connectivity
+- **download_results**: Download verification results
+- **find_email**: Find a business email
 
 
 ## 💬 Prompt Examples

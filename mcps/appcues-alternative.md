@@ -36,22 +36,22 @@ No more manual checking of individual flow completion rates or missing critical 
 
 
 ## Available Tools (10)
-- **check_appcues_status**: Verify Appcues API connectivity
-- **delete_user**: This action is irreversible.
-
-Delete a user from Appcues
 - **get_flow**: Get flow details
 - **get_segment**: Get segment details
 - **get_user**: Get user profile from Appcues
 - **list_checklists**: List all checklists
 - **list_flows**: List all onboarding flows
-- **list_segments**: List all user segments
 - **publish_flow**: The flow must be in draft or unpublished state.
 
 Publish a flow
 - **unpublish_flow**: Users will no longer see it until republished.
 
 Unpublish a flow
+- **check_appcues_status**: Verify Appcues API connectivity
+- **delete_user**: This action is irreversible.
+
+Delete a user from Appcues
+- **list_segments**: List all user segments
 
 
 ## 💬 Prompt Examples

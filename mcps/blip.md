@@ -26,13 +26,13 @@ Customer Support teams managing tickets, Marketing teams triggering proactive me
 
 
 ## Available Tools (10)
-- **create_contact**: Create or update a Blip contact
 - **delete_contact**: Delete a Blip contact
 - **get_contact**: Get a Blip contact by ID
-- **get_thread_messages**: Get messages from a Blip thread
 - **get_ticket**: Get a Blip desk ticket by ID
-- **list_contacts**: List Blip contacts
 - **list_threads**: List Blip conversation threads
+- **create_contact**: Create or update a Blip contact
+- **get_thread_messages**: Get messages from a Blip thread
+- **list_contacts**: List Blip contacts
 - **list_tickets**: List Blip desk tickets
 - **ping_bot**: Ping the Blip bot
 - **send_message**: Send a message to a Blip contact
