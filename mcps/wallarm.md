@@ -39,22 +39,22 @@ No more manual digging through security consoles to find attack patterns. Your A
 
 
 ## Available Tools (10)
-- **get_vulnerability_details**: Retrieves comprehensive diagnostic data and exploit evidence for a specific vulnerability ID
 - **list_ip_acl_rules**: Lists configured IP allowlist and denylist rules
-- **search_security_attacks**: Searches for security attacks detected by Wallarm, grouped by vector (SQLi, XSS, etc.)
 - **search_security_hits**: Shows full request headers and payloads for blocked traffic.
 
 Searches for granular individual malicious HTTP request hits intercepted by WAF nodes
-- **search_vulnerabilities**: Lists all open security vulnerabilities discovered in live API traffic
 - **update_vulnerability_status**: Valid statuses: open, closed, falsepositive.
 
 Changes the lifecycle status of a vulnerability (e.g., mark as closed or false positive)
+- **get_vulnerability_details**: Retrieves comprehensive diagnostic data and exploit evidence for a specific vulnerability ID
+- **search_security_attacks**: Searches for security attacks detected by Wallarm, grouped by vector (SQLi, XSS, etc.)
+- **search_vulnerabilities**: Lists all open security vulnerabilities discovered in live API traffic
+- **get_discovered_api_inventory**: Retrieves the API inventory automatically discovered through passive traffic analysis
+- **list_filtering_nodes**: Lists all deployed Wallarm WAF/API gateway filtering nodes
 - **create_ip_acl_rule**: list_type must be "white" or "black".
 
 Adds an IP or CIDR range to the globalThis allowlist or denylist
-- **get_discovered_api_inventory**: Retrieves the API inventory automatically discovered through passive traffic analysis
 - **get_client_info**: Retrieves details about the Wallarm account, subscription, and feature status
-- **list_filtering_nodes**: Lists all deployed Wallarm WAF/API gateway filtering nodes
 
 
 ## 💬 Prompt Examples

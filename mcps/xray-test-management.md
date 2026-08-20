@@ -39,14 +39,14 @@ No more manual filtering through complex Jira issue lists to find a test result.
 
 
 ## Available Tools (9)
-- **get_xray_settings**: Retrieves Xray project configuration and field mappings
 - **get_execution_details**: Retrieves granular results for a specific test execution
-- **get_test_plan_details**: Retrieves details for a specific test plan
 - **get_individual_test_runs**: Retrieves individual test run instances for a specific test
+- **get_xray_settings**: Retrieves Xray project configuration and field mappings
+- **list_test_sets**: Lists all test sets (groups of tests)
 - **get_test_details**: Retrieves comprehensive details for a specific Xray test case
+- **get_test_plan_details**: Retrieves details for a specific test plan
 - **list_test_executions**: Lists all test execution records
 - **list_test_plans**: Lists all test plans configured in Xray
-- **list_test_sets**: Lists all test sets (groups of tests)
 - **list_xray_tests**: g. TST-1).
 
 Lists all test cases in the Xray project

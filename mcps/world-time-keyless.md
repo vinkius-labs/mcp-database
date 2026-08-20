@@ -38,10 +38,10 @@ No more manual math to figure out a time difference. Your AI agent becomes your 
 
 
 ## Available Tools (2)
+- **list_available_timezones**: Lists all valid timezone regions (e.g. Europe/London) supported by the World Time API
 - **get_current_time**: You can provide a timezone string (e.g. "America/Sao_Paulo") or use "ip" to infer from the network.
 
 Retrieves the exact current atomic time, UTC offset, and DST state for a specified timezone
-- **list_available_timezones**: Lists all valid timezone regions (e.g. Europe/London) supported by the World Time API
 
 
 ## 💬 Prompt Examples

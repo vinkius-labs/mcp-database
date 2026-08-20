@@ -39,23 +39,23 @@ Your AI agent becomes a robust, unblockable search intelligence engine.
 - **custom_serp_search**: Provide parameters as a JSON object.
 
 Executes a highly customized Google search with advanced parameters
-- **google_news_search**: Searches for news articles on Google
-- **google_search**: Provide a query string and optional location.
-
-Performs a standard Google search for organic results
-- **google_places_search**: Provide a place name and location.
-
-Searches for local businesses and places on Google Maps
-- **google_scholar_search**: Searches for academic publications and abstracts on Google Scholar
-- **google_shopping_search**: Returns product names, prices, and merchant links.
-
-Searches for products and prices on Google Shopping
-- **google_video_search**: Searches for video content on Google
-- **get_related_questions**: Retrieves "People Also Ask" questions and answers from Google
 - **get_search_suggestions**: Retrieves predictive search suggestions from Google autocomplete
 - **google_image_search**: Returns direct URLs to image files.
 
 Searches for images on Google
+- **google_shopping_search**: Returns product names, prices, and merchant links.
+
+Searches for products and prices on Google Shopping
+- **google_news_search**: Searches for news articles on Google
+- **google_places_search**: Provide a place name and location.
+
+Searches for local businesses and places on Google Maps
+- **google_search**: Provide a query string and optional location.
+
+Performs a standard Google search for organic results
+- **google_scholar_search**: Searches for academic publications and abstracts on Google Scholar
+- **google_video_search**: Searches for video content on Google
+- **get_related_questions**: Retrieves "People Also Ask" questions and answers from Google
 
 
 ## 💬 Prompt Examples

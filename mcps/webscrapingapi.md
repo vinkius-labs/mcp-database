@@ -42,25 +42,25 @@ No more manual selector debugging or proxy management. Your AI agent becomes you
 - **custom_api_scrape**: g. country, session, wait_for).
 
 Execute a scrape using advanced custom parameters
-- **scrape_and_auto_extract**: g. for news or product pages).
-
-Scrape with automatic structured data extraction
 - **scrape_ecommerce_product**: Returns price, title, and reviews as structured JSON.
 
 Scrape product details from Amazon, Walmart, or other supported stores
-- **scrape_static_html**: Pass the full target URL.
-
-Scrape raw HTML from any URL using WebScrapingAPI datacenter proxies
 - **scrape_js_rendered**: Slower but captures the full rendered state.
 
 Scrape JS-rendered HTML using WebScrapingAPI headless browser
-- **scrape_as_mobile**: Scrape as a mobile device using WebScrapingAPI device emulation
-- **scrape_via_residential_proxy**: Scrape using residential proxies for high anonymity and bypass
 - **search_bing_serp**: Retrieve structured search engine results from Bing
 - **search_google_serp**: Provide a query string.
 
 Retrieve structured search engine results from Google
 - **search_yandex_serp**: Retrieve structured search engine results from Yandex
+- **scrape_and_auto_extract**: g. for news or product pages).
+
+Scrape with automatic structured data extraction
+- **scrape_as_mobile**: Scrape as a mobile device using WebScrapingAPI device emulation
+- **scrape_static_html**: Pass the full target URL.
+
+Scrape raw HTML from any URL using WebScrapingAPI datacenter proxies
+- **scrape_via_residential_proxy**: Scrape using residential proxies for high anonymity and bypass
 
 
 ## 💬 Prompt Examples

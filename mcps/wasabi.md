@@ -38,24 +38,24 @@ No more manual navigation through complex storage consoles to check your files. 
 
 
 ## Available Tools (10)
-- **delete_storage_bucket**: Note: The bucket must be completely empty first. This action is irreversible.
+- **create_storage_bucket**: Provide a globally unique lower-kebab-case name.
 
-Permanently removes an empty storage bucket
+Creates a new high-availability storage bucket in the configured Wasabi region
+- **list_pending_multipart_uploads**: Lists incomplete multipart uploads in a bucket
 - **delete_bucket_object**: This action is irreversible.
 
 Permanently deletes a specific file from a bucket
+- **delete_storage_bucket**: Note: The bucket must be completely empty first. This action is irreversible.
+
+Permanently removes an empty storage bucket
 - **enable_bucket_versioning**: Activates object versioning for a bucket
 - **get_bucket_datacenter_location**: Retrieves the physical geographic region where a bucket is hosted
 - **get_object_access_control**: Retrieves the access control list (ACL) for a specific file
 - **get_bucket_versioning_status**: Checks if object versioning is enabled for a bucket
-- **list_storage_buckets**: Lists all Wasabi storage buckets visible to the authenticated IAM user
 - **list_bucket_objects**: Returns file keys, sizes, and last modified dates.
 
 Lists the files (objects) stored within a specific bucket
-- **list_pending_multipart_uploads**: Lists incomplete multipart uploads in a bucket
-- **create_storage_bucket**: Provide a globally unique lower-kebab-case name.
-
-Creates a new high-availability storage bucket in the configured Wasabi region
+- **list_storage_buckets**: Lists all Wasabi storage buckets visible to the authenticated IAM user
 
 
 ## 💬 Prompt Examples

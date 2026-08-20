@@ -45,13 +45,13 @@ Adds a new signer to an existing draft signature request
 - **cancel_request**: Provide the request ID and an optional reason for cancellation.
 
 Permanently cancels an ongoing signature request
+- **create_request**: Provide a descriptive name for the request.
+
+Creates a new signature request in draft mode
 - **list_documents**: Lists all documents attached to a specific signature request
 - **get_consumption**: Retrieves API consumption and quota details
 - **list_requests**: Lists all signature requests in the Yousign organization
 - **get_request**: Retrieves details and status for a specific signature request
-- **create_request**: Provide a descriptive name for the request.
-
-Creates a new signature request in draft mode
 - **activate_request**: This triggers email notifications to all signers.
 
 Activates a draft signature request and sends it to signers

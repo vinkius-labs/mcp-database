@@ -34,14 +34,14 @@ Connect your **Wistia** video marketing account to any AI agent to automate your
 
 
 ## Available Tools (9)
-- **create_project**: Create a new project
 - **get_account_analytics**: Get account-wide stats
 - **get_video_details**: Get metadata for a video
 - **get_project_details**: Get metadata for a project
 - **get_video_stats**: Get video analytics
 - **list_video_captions**: List captions for a video
-- **list_projects**: List your Wistia projects
 - **list_videos**: List all videos (medias)
+- **create_project**: Create a new project
+- **list_projects**: List your Wistia projects
 - **update_video_details**: Modify video metadata
 
 

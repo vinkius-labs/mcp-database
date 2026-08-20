@@ -39,15 +39,15 @@ No more manual digging through complex IBM Cloud consoles to query your data. Yo
 
 ## Available Tools (6)
 - **get_document_details**: Retrieves metadata and status for a specific indexed document
-- **get_component_settings**: Retrieves the configuration and health settings for project components
-- **list_discovery_collections**: Lists all data collections within the current watsonx Discovery project
 - **list_collection_documents**: Lists all documents indexed within a specific collection
-- **list_available_enrichments**: g., Sentiment, Entities) are being applied to documents.
-
-Lists all enrichments (NLP models) configured for the project
+- **list_discovery_collections**: Lists all data collections within the current watsonx Discovery project
 - **query_discovery_content**: Provide a collection ID and the query text.
 
 Performs a natural language or DQL query against a discovery collection
+- **get_component_settings**: Retrieves the configuration and health settings for project components
+- **list_available_enrichments**: g., Sentiment, Entities) are being applied to documents.
+
+Lists all enrichments (NLP models) configured for the project
 
 
 ## 💬 Prompt Examples

@@ -37,14 +37,14 @@ Connect your **Zilliz Cloud** cluster to any AI agent to automate your vector da
 - **create_collection**: Requires a JSON body.
 
 Create a new vector collection
-- **delete_entities**: Delete entities from a collection
 - **describe_collection**: Get details for a specific collection
-- **list_collections**: List all collections in the Zilliz cluster
 - **drop_collection**: Drop a collection
 - **insert_entities**: Insert data into a collection
-- **load_collection**: Load a collection into memory
+- **list_collections**: List all collections in the Zilliz cluster
 - **query_entities**: Query entities using metadata filtering
 - **release_collection**: Release a collection from memory
+- **delete_entities**: Delete entities from a collection
+- **load_collection**: Load a collection into memory
 - **search_vectors**: Requires a JSON search configuration.
 
 Perform a vector similarity search

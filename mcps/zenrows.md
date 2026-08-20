@@ -39,32 +39,32 @@ No more manual proxy rotation or CAPTCHA solving. Your AI agent becomes your web
 
 
 ## Available Tools (10)
+- **get_screenshot**: Generates a URL that returns a screenshot of the target page
 - **scrape_premium**: Sets premium_proxy=true for higher anonymity.
 
 Scrape using ZenRows premium residential proxies
-- **get_screenshot**: Generates a URL that returns a screenshot of the target page
-- **scrape_markdown**: Automatically removes boilerplate like navigation and ads.
-
-Scrape and convert page content to clean Markdown
-- **scrape_html**: ZenRows automatically rotates proxies and handles CAPTCHAs.
-
-Scrape raw HTML using ZenRows anti-bot proxy pool
 - **scrape_autoparse**: Scrape with automatic structured data extraction
-- **scrape_wait**: g. "#results") to wait for before capturing the HTML.
-
-Scrape with JS render waiting for a specific CSS selector
-- **scrape_geo**: g. "us", "gb") for localized content.
-
-Scrape using a proxy from a specific country
 - **scrape_custom**: g. wait, css_extractor, session_id).
 
 Execute a scrape using advanced custom parameters
-- **scrape_js**: Enables js_render=true. Slower and more expensive than static scraping.
+- **scrape_geo**: g. "us", "gb") for localized content.
 
-Scrape JS-rendered HTML using ZenRows headless browser
+Scrape using a proxy from a specific country
+- **scrape_html**: ZenRows automatically rotates proxies and handles CAPTCHAs.
+
+Scrape raw HTML using ZenRows anti-bot proxy pool
+- **scrape_markdown**: Automatically removes boilerplate like navigation and ads.
+
+Scrape and convert page content to clean Markdown
+- **scrape_wait**: g. "#results") to wait for before capturing the HTML.
+
+Scrape with JS render waiting for a specific CSS selector
 - **scrape_antibot**: Enables js_render and antibot=true.
 
 Scrape with full anti-bot bypass for heavily protected sites
+- **scrape_js**: Enables js_render=true. Slower and more expensive than static scraping.
+
+Scrape JS-rendered HTML using ZenRows headless browser
 
 
 ## 💬 Prompt Examples

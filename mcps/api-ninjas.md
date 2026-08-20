@@ -39,12 +39,6 @@ Connect to **API Ninjas** and access a comprehensive suite of health and fitness
 - **get_bmr**: Requires weight (kg), height (cm), age and gender. Returns BMR value in calories/day.
 
 Calculate Basal Metabolic Rate
-- **get_body_fat**: Requires waist, neck and height measurements (in cm). For women, also requires hip measurement. Returns body fat percentage and category (lean, fitness, acceptable, obese).
-
-Estimate body fat percentage
-- **get_calories_burned**: Requires activity name, weight (kg) and duration (minutes). Returns activity name, duration, calories burned and MET value.
-
-Calculate calories burned for an activity
 - **get_exercises**: Supports filtering by name, type (cardio, olympic_weightlifting, plyometrics, powerlifting, strength, stretching, strongman), muscle (abdominals, abductors, adductors, biceps, calves, chest, forearms, glutes, hamstrings, lats, lower_back, middle_back, neck, quadriceps, traps, triceps) and difficulty (beginner, intermediate, expert). Returns exercise name, type, muscle worked, equipment needed, difficulty level and step-by-step instructions.
 
 Search exercises by name, type, muscle or difficulty
@@ -54,12 +48,18 @@ Get nutrition info for a food item
 - **get_sleep**: Returns recommended sleep range and whether current sleep is adequate.
 
 Get recommended sleep duration
-- **get_steps**: Requires step count and optionally weight (kg), height (cm), age and gender for more accurate calculations.
-
-Calculate calories and distance from steps
 - **get_tdee**: Requires weight (kg), height (cm), age, gender and activity level. Returns TDEE value in calories/day with breakdown by activity level.
 
 Calculate Total Daily Energy Expenditure
+- **get_body_fat**: Requires waist, neck and height measurements (in cm). For women, also requires hip measurement. Returns body fat percentage and category (lean, fitness, acceptable, obese).
+
+Estimate body fat percentage
+- **get_calories_burned**: Requires activity name, weight (kg) and duration (minutes). Returns activity name, duration, calories burned and MET value.
+
+Calculate calories burned for an activity
+- **get_steps**: Requires step count and optionally weight (kg), height (cm), age and gender for more accurate calculations.
+
+Calculate calories and distance from steps
 
 
 ## 💬 Prompt Examples
