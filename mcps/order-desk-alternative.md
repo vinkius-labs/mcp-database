@@ -36,19 +36,19 @@ No more manual logging into the dashboard to check order status or inventory lev
 
 
 ## Available Tools (11)
+- **delete_store_order**: Delete an order from the store
+- **get_order_details**: Get details for a specific order
+- **list_inventory_items**: List inventory items
+- **list_order_shipments**: List shipments for an order
+- **list_store_orders**: List orders from the store
+- **test_orderdesk_connection**: Verify API connection
 - **create_order_shipment**: ) to an existing order.
 
 Add a shipment to an order
-- **delete_store_order**: Delete an order from the store
-- **get_inventory_item**: Get details for a specific inventory item
-- **get_order_details**: Get details for a specific order
-- **list_inventory_items**: List inventory items
-- **list_order_items**: List line items within an order
-- **list_store_orders**: List orders from the store
-- **list_order_shipments**: List shipments for an order
-- **test_orderdesk_connection**: Verify API connection
-- **update_store_order**: Update an existing order
 - **create_store_order**: Create a new order
+- **get_inventory_item**: Get details for a specific inventory item
+- **list_order_items**: List line items within an order
+- **update_store_order**: Update an existing order
 
 
 ## 💬 Prompt Examples

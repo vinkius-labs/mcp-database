@@ -28,19 +28,19 @@ Connect your **ProjectManager.com** account to any AI agent and simplify your pr
 
 
 ## Available Tools (11)
-- **create_project**: Create a new project
 - **create_project_task**: Add a new task
 - **get_project_details**: Get details for a specific project
-- **get_task_details**: Get details for a specific task
 - **list_dashboards**: List all dashboards
-- **list_projects**: List ProjectManager projects
-- **list_team_resources**: List team resources
 - **list_tags**: List all project tags
+- **list_team_resources**: List team resources
+- **list_timesheets**: List recorded timesheets
+- **update_task**: Update an existing task
+- **create_project**: Create a new project
+- **get_task_details**: Get details for a specific task
+- **list_projects**: List ProjectManager projects
 - **list_tasks**: Optionally filter by project ID.
 
 List tasks
-- **list_timesheets**: List recorded timesheets
-- **update_task**: Update an existing task
 
 
 ## 💬 Prompt Examples

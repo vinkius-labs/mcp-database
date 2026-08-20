@@ -36,19 +36,19 @@ No more manual data entry or jumping between multiple tables. Your AI acts as a 
 
 
 ## Available Tools (11)
+- **list_users**: List all users in an application
+- **query_records**: See Quickbase API docs for query syntax.
+
+Query records from a table
+- **list_apps**: List all applications
+- **delete_records**: Delete records from a table
+- **get_app**: Get details of a specific application
 - **get_report**: Get details for a specific report
 - **get_table**: Get details of a specific table
 - **list_fields**: List all fields in a table
 - **list_reports**: List all reports for a table
 - **list_tables**: List all tables in an application
-- **list_users**: List all users in an application
-- **query_records**: See Quickbase API docs for query syntax.
-
-Query records from a table
 - **upsert_records**: Insert or update records in a table
-- **list_apps**: List all applications
-- **delete_records**: Delete records from a table
-- **get_app**: Get details of a specific application
 
 
 ## 💬 Prompt Examples

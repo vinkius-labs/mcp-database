@@ -40,11 +40,11 @@ Connect your **MoEngage** account to any AI agent and manage customer engagement
 - **get_campaign**: Get campaign details
 - **get_customer**: Get customer details
 - **get_segment**: Get segment details
-- **list_segments**: List segments
 - **search_customers**: Search customers
+- **list_segments**: List segments
 - **send_push**: Send push notification
-- **track_events_bulk**: Track events in bulk
 - **track_event**: Track an event
+- **track_events_bulk**: Track events in bulk
 - **update_device**: Update device info
 - **upsert_customer**: Create or update customer
 

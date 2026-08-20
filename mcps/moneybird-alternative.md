@@ -38,20 +38,20 @@ Connect your **Moneybird** administration to any AI agent and manage Dutch accou
 
 
 ## Available Tools (12)
-- **check_api_health**: Verify Moneybird API connectivity
-- **create_sales_invoice**: Requires a contact ID and line items.
-
-Create a new draft invoice
 - **list_crm_contacts**: List customers and suppliers
 - **list_sales_invoices**: Can be filtered by status (e.g., draft, open, paid).
 
 List sales invoices
-- **list_ledger_accounts**: List accounting ledger categories
-- **list_financial_mutations**: List bank transactions
-- **list_catalog_products**: List products and services
-- **list_purchase_invoices**: List received purchase invoices
 - **list_expense_receipts**: List uploaded receipts
+- **list_purchase_invoices**: List received purchase invoices
 - **list_recurring_invoices**: List recurring invoice templates
+- **check_api_health**: Verify Moneybird API connectivity
+- **create_sales_invoice**: Requires a contact ID and line items.
+
+Create a new draft invoice
+- **list_catalog_products**: List products and services
+- **list_financial_mutations**: List bank transactions
+- **list_ledger_accounts**: List accounting ledger categories
 - **list_tax_rates**: List configured tax/VAT rates
 - **send_sales_invoice**: Send an invoice to the customer
 

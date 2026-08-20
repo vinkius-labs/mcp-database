@@ -37,17 +37,17 @@ No more managing browser clusters or rotating IPs. Your AI acts as a dedicated d
 
 ## Available Tools (12)
 - **list_api_webhooks**: List configured webhooks
-- **web_scrape**: Scrape any website
-- **get_screenshot_capabilities**: Check screenshot features
 - **check_credit_usage**: Check usage stats
+- **get_screenshot_capabilities**: Check screenshot features
 - **list_proxy_regions**: Check proxy options
-- **capture_screenshot**: Take a website screenshot
 - **test_scrapfly_auth**: Verify credentials
-- **ai_data_extraction**: Extract structured data
 - **get_api_status**: Check account info
-- **list_extraction_models**: List AI models
 - **get_project_details**: Get project info
+- **list_extraction_models**: List AI models
+- **ai_data_extraction**: Extract structured data
+- **capture_screenshot**: Take a website screenshot
 - **get_scraping_capabilities**: Check scraping features
+- **web_scrape**: Scrape any website
 
 
 ## 💬 Prompt Examples

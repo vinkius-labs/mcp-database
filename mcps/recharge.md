@@ -28,17 +28,17 @@ Connect your **Recharge** account to any AI agent and simplify your subscription
 
 
 ## Available Tools (11)
-- **get_customer**: Get details for a specific customer
 - **get_order**: Get details for a specific order
 - **list_products**: List all subscription products
-- **get_subscription_details**: Get details for a specific subscription
-- **list_shipping_addresses**: List customer addresses
 - **list_billing_charges**: List billing charges
 - **list_customers**: List Recharge customers
+- **list_shipping_addresses**: List customer addresses
 - **list_subscription_orders**: List processed orders
 - **list_subscriptions**: List Recharge subscriptions
-- **update_subscription**: Update an existing subscription
 - **cancel_subscription**: Cancel a subscription
+- **get_customer**: Get details for a specific customer
+- **get_subscription_details**: Get details for a specific subscription
+- **update_subscription**: Update an existing subscription
 
 
 ## 💬 Prompt Examples

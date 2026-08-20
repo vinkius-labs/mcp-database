@@ -37,16 +37,16 @@ No more manual checking of individual door logs or physical keycards. Your AI ac
 
 
 ## Available Tools (10)
-- **get_kisi_lock**: Get lock details
 - **get_kisi_place**: Get place details
-- **get_kisi_user**: Get user details
-- **list_kisi_groups**: List access groups
-- **lockdown_kisi_lock**: Lockdown a door
 - **list_kisi_locks**: List cloud locks
 - **list_kisi_places**: List physical places
-- **check_kisi_status**: Check API Status
-- **unlock_kisi_lock**: Unlock a door
 - **list_kisi_users**: List organization users
+- **lockdown_kisi_lock**: Lockdown a door
+- **check_kisi_status**: Check API Status
+- **get_kisi_lock**: Get lock details
+- **get_kisi_user**: Get user details
+- **list_kisi_groups**: List access groups
+- **unlock_kisi_lock**: Unlock a door
 
 
 ## 💬 Prompt Examples

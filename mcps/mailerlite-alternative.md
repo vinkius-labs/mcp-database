@@ -34,20 +34,23 @@ Connect your **MailerLite** account to any AI agent and manage email marketing t
 
 
 ## Available Tools (10)
-- **get_subscriber**: Get details for a specific subscriber
-- **list_campaigns**: Useful for monitoring marketing activity.
-
-List email campaigns
 - **list_custom_fields**: Essential for identifying which fields can be mapped during subscriber upserts.
 
 List all custom subscriber fields
 - **list_forms**: List all signup forms
-- **list_groups**: Groups are used to organize subscribers for targeted mailings.
-
-List all subscriber groups
 - **list_segments**: Useful for identifying high-engagement subsets of your audience.
 
 List all subscriber segments
+- **create_group**: Use this to organize and segment your audience.
+
+Create a new subscriber group
+- **get_subscriber**: Get details for a specific subscriber
+- **list_campaigns**: Useful for monitoring marketing activity.
+
+List email campaigns
+- **list_groups**: Groups are used to organize subscribers for targeted mailings.
+
+List all subscriber groups
 - **list_subscribers**: Includes email addresses, statuses, and basic engagement metadata.
 
 List all email subscribers
@@ -55,9 +58,6 @@ List all email subscribers
 - **upsert_subscriber**: Requires the email address and supports optional first/last name fields.
 
 Create or update a subscriber
-- **create_group**: Use this to organize and segment your audience.
-
-Create a new subscriber group
 
 
 ## 💬 Prompt Examples

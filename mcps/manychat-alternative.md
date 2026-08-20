@@ -35,17 +35,17 @@ Connect your **ManyChat** account to any AI agent and manage chat marketing thro
 
 ## Available Tools (12)
 - **add_tag**: Add tag to user
-- **create_subscriber**: Create new contact
-- **find_subscriber_by_email**: Search by email
 - **find_subscriber_by_phone**: Search by phone
-- **trigger_flow**: Start automation
-- **remove_tag**: Remove tag from user
 - **set_custom_field**: Update user field
-- **find_subscriber_by_name**: Search by name
-- **get_subscriber**: Get subscriber details
 - **list_custom_fields**: List bot fields
 - **list_flows**: List automation flows
 - **list_tags**: List bot tags
+- **create_subscriber**: Create new contact
+- **find_subscriber_by_email**: Search by email
+- **find_subscriber_by_name**: Search by name
+- **get_subscriber**: Get subscriber details
+- **remove_tag**: Remove tag from user
+- **trigger_flow**: Start automation
 
 
 ## 💬 Prompt Examples
