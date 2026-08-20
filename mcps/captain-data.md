@@ -35,17 +35,17 @@ Connect your **Captain Data** account to any AI agent and orchestrate your lead 
 
 
 ## Available Tools (11)
-- **get_api_quotas**: Retrieve current API quotas and usage
 - **list_automation_jobs**: List all automation jobs
 - **list_workflows**: List all configured workflows
 - **search_companies**: Search for companies by industry, size, or location
-- **search_people**: Search for people based on criteria like job title or location
 - **enrich_company**: Get deep firmographic data for a company
 - **enrich_person**: Get detailed profile data for a person using their UID or LinkedIn URL
 - **find_company**: Find a company by name or domain
-- **find_people**: Find a specific person by full name and optionally company name
 - **get_account_info**: Retrieve core account information
 - **get_job_details**: Get status and extracted data for a specific job
+- **find_people**: Find a specific person by full name and optionally company name
+- **get_api_quotas**: Retrieve current API quotas and usage
+- **search_people**: Search for people based on criteria like job title or location
 
 
 ## 💬 Prompt Examples

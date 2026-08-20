@@ -35,18 +35,18 @@ Connect your **Celoxis** enterprise platform to any AI agent and take full contr
 
 
 ## Available Tools (12)
-- **list_projects**: List all top-level project portfolio items in Celoxis. Returns physical IDs, names, status, and timeline data
-- **get_project**: Get an explicit Celoxis project and its complete intrinsic properties structure by ID
 - **list_portfolios**: List strategic globalThis tracking Portfolios mapping top-level aggregates over child projects natively
-- **list_milestones**: List raw milestones natively mapping absolute phase delivery tracking inside the WBS
+- **list_projects**: List all top-level project portfolio items in Celoxis. Returns physical IDs, names, status, and timeline data
 - **list_approvals**: List explicit tracking objects identifying pending/cleared approvals over timesheets and expenses constraints
-- **list_tasks**: List comprehensive Work Breakdown Structure (WBS) tasks representing concrete deliverables within active projects
-- **list_resources**: List all explicit Celoxis working resources parsing the core user mappings handling allocations
-- **list_time_entries**: List actual time entries logged explicitly against Celoxis tasks or projects for accounting
-- **list_issues**: List custom app items representing blocked issues explicit to complex workflows mapping problems
 - **list_risks**: List explicit organizational risks bounded natively via the Celoxis custom application matrix
+- **list_tasks**: List comprehensive Work Breakdown Structure (WBS) tasks representing concrete deliverables within active projects
+- **list_time_entries**: List actual time entries logged explicitly against Celoxis tasks or projects for accounting
 - **list_expenses**: List raw billable/non-billable expenses physically mapped onto task items inside the ecosystem
+- **get_project**: Get an explicit Celoxis project and its complete intrinsic properties structure by ID
 - **list_clients**: List explicit top-level CRM organizational clients linked internally to distinct portfolios
+- **list_issues**: List custom app items representing blocked issues explicit to complex workflows mapping problems
+- **list_milestones**: List raw milestones natively mapping absolute phase delivery tracking inside the WBS
+- **list_resources**: List all explicit Celoxis working resources parsing the core user mappings handling allocations
 
 
 ## 💬 Prompt Examples

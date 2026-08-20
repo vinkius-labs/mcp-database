@@ -36,14 +36,14 @@ Connect your **CATS Applicant Tracking System (ATS)** account to any AI agent an
 
 
 ## Available Tools (8)
-- **get_candidate_details**: Get detailed information for a specific candidate
 - **get_job_details**: Get detailed information for a specific job order
-- **list_job_orders**: List job orders and open positions
+- **get_candidate_details**: Get detailed information for a specific candidate
 - **list_recruitment_activities**: List recent recruitment activities and notes
 - **list_candidates**: List recruitment candidates
-- **list_recruitment_companies**: List client companies in the ATS
 - **list_recruitment_contacts**: List contacts associated with companies
 - **search_candidates**: Search for candidates using filters
+- **list_job_orders**: List job orders and open positions
+- **list_recruitment_companies**: List client companies in the ATS
 
 
 ## 💬 Prompt Examples

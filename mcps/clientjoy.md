@@ -35,13 +35,13 @@ Connect your **Clientjoy** CRM and billing account to any AI agent and simplify 
 
 
 ## Available Tools (7)
-- **create_new_lead**: Register a new lead
 - **get_customer_details**: Get details for a specific customer
-- **list_billing_invoices**: List invoices
-- **list_service_items**: List items and services
 - **list_leads**: List Clientjoy leads
 - **list_sales_proposals**: List proposals
 - **list_customers**: List Clientjoy customers
+- **create_new_lead**: Register a new lead
+- **list_billing_invoices**: List invoices
+- **list_service_items**: List items and services
 
 
 ## 💬 Prompt Examples

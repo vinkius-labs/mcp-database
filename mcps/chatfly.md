@@ -41,8 +41,8 @@ Connect your **CHATFLY** account to any AI agent and take full control of your c
 - **trigger_bot_training**: Trigger the training process for a chatbot
 - **list_uploaded_documents**: List all files uploaded to the knowledge base
 - **get_chatbot_details**: Get detailed information for a specific chatbot
-- **get_conversation_history**: Retrieve the message history for a specific conversation
 - **get_chatfly_account_info**: Retrieve core account and quota information
+- **get_conversation_history**: Retrieve the message history for a specific conversation
 - **send_bot_message**: Send a message to a chatbot and receive a response
 
 

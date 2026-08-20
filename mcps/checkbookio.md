@@ -36,16 +36,16 @@ Connect your **Checkbook.io** account to any AI agent and take full control of y
 
 
 ## Available Tools (8)
-- **get_check_details**: Get detailed information for a specific check
-- **list_recurring_payments**: List all recurring check payment subscriptions
 - **send_digital_check**: Send a digital check to a recipient via email or phone
-- **send_physical_check**: Send a physical check to a recipient via mail
 - **list_checkbook_invoices**: List all invoices
 - **get_checkbook_profile**: Retrieve core user profile information
 - **list_linked_bank_accounts**: List all bank accounts linked to the profile
+- **get_check_details**: Get detailed information for a specific check
 - **list_checkbook_checks**: io.
 
 List all digital and physical checks
+- **list_recurring_payments**: List all recurring check payment subscriptions
+- **send_physical_check**: Send a physical check to a recipient via mail
 
 
 ## 💬 Prompt Examples

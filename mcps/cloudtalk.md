@@ -14,23 +14,23 @@ CloudTalk is a modern cloud-based phone system designed for sales and support te
 
 
 ## Available Tools (8)
-- **create_contact**: Provide at least a name or email.
-
-Create a new contact in CloudTalk
 - **delete_contact**: Deletes the contact and all associated data.
 
 Permanently remove a contact from CloudTalk
 - **get_contact**: Retrieve detailed information about a specific contact
 - **list_agents**: Retrieve a list of agents from CloudTalk
+- **update_contact**: Provide the contactId and any fields to update.
+
+Update an existing contact in CloudTalk
+- **create_contact**: Provide at least a name or email.
+
+Create a new contact in CloudTalk
 - **list_calls**: Supports filtering by agent and direction.
 
 Retrieve a list of calls from CloudTalk
 - **list_contacts**: Supports pagination and filtering by email or phone number.
 
 Retrieve a list of contacts from CloudTalk
-- **update_contact**: Provide the contactId and any fields to update.
-
-Update an existing contact in CloudTalk
 - **make_call**: Provide the from/to numbers.
 
 Initiate a phone call between an agent and a destination number

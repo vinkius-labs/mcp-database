@@ -25,19 +25,19 @@ Connect your **Checkfront** booking platform to any AI agent — for tours, acti
 - **list_bookings**: "What tours are booked for Saturday?"
 
 List bookings
-- **get_booking**: Get booking details
 - **list_items**: "What do we offer?"
 
 List bookable items
-- **get_item**: Get item details
 - **get_account**: Get account info
-- **check_availability**: Check availability
 - **list_categories**: With item counts.
 
 List categories
 - **search_customers**: Returns contact, booking history, total spend, and waivers on file.
 
 Search customers
+- **check_availability**: Check availability
+- **get_booking**: Get booking details
+- **get_item**: Get item details
 
 
 ## 💬 Prompt Examples

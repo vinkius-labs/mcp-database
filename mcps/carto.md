@@ -34,9 +34,9 @@ Connect your **CARTO** platform to any AI agent and take full control of your cl
 
 
 ## Available Tools (10)
-- **poll_async_job_status**: Poll periodically (every 5-10 seconds) until status changes to "done" or "failed". The response includes created_at, updated_at, and the original query for audit purposes.
+- **geocode_batch_addresses**: Designed for bulk processing of customer lists, store locators, and CRM datasets. Consumes LDS credits per address. Returns an array of geocoded results with match quality indicators.
 
-Check the execution status of a previously submitted CARTO async SQL job, returning the current state (pending, running, done, failed) and any error messages if the job encountered issues
+Batch-geocode multiple addresses in a single request using the CARTO LDS batch geocoding API, efficiently converting large address lists into coordinates without making individual API calls per address
 - **calculate_isoline**: The range parameter is in seconds for time-based isolines. Returns a GeoJSON polygon representing the reachable area. Use for service area analysis, store catchment zones, and logistics planning.
 
 Generate travel-time or travel-distance isoline polygons from a center point using the CARTO LDS Isolines API, producing reachability contours showing areas accessible within a specified time or distance threshold
@@ -52,9 +52,6 @@ Execute an arbitrary SQL query against your CARTO data warehouse connection usin
 - **geocode_address**: Returns latitude, longitude, and formatted address. Consumes LDS geocoding credits from your CARTO plan. Use sparingly for individual lookups; for bulk operations use the batch endpoint instead.
 
 Forward-geocode a single address string into geographic coordinates using the CARTO Location Data Services (LDS) geocoding endpoint, powered by TomTom or HERE depending on your CARTO plan configuration
-- **geocode_batch_addresses**: Designed for bulk processing of customer lists, store locators, and CRM datasets. Consumes LDS credits per address. Returns an array of geocoded results with match quality indicators.
-
-Batch-geocode multiple addresses in a single request using the CARTO LDS batch geocoding API, efficiently converting large address lists into coordinates without making individual API calls per address
 - **get_import_status**: Poll periodically until state becomes "complete" or "failure". On success, the response includes the table_name of the newly created dataset in your warehouse.
 
 Check the status of a previously initiated CARTO data import job, returning progress percentage, current state (uploading, importing, complete, failure), and any error details if the import encountered issues
@@ -64,6 +61,9 @@ Import an external data file (CSV, GeoJSON, Shapefile, KML) into your CARTO data
 - **list_map_datasets**: Returns an array of dataset/visualization objects. Use to discover available data layers, check dataset freshness, and audit organization assets.
 
 List all visualization datasets (maps and tables) available in your CARTO organization, returning metadata including creation dates, privacy settings, table names, and row counts
+- **poll_async_job_status**: Poll periodically (every 5-10 seconds) until status changes to "done" or "failed". The response includes created_at, updated_at, and the original query for audit purposes.
+
+Check the execution status of a previously submitted CARTO async SQL job, returning the current state (pending, running, done, failed) and any error messages if the job encountered issues
 
 
 ## 💬 Prompt Examples

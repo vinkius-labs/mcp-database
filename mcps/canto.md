@@ -34,16 +34,16 @@ Connect your **Canto** Digital Asset Management (DAM) account to any AI agent an
 
 
 ## Available Tools (10)
-- **assign_asset_album**: Identify precise active arrays spanning native linking trees
 - **create_canto_album**: Mutate globalThis Web CRM boundaries substituting Collections gracefully
 - **create_canto_folder**: Provision a highly-available JSON Payload generating new Resource boundaries
 - **wipe_media_asset**: Irreversibly vaporize explicit App nodes dropping live Database bytes
-- **get_album_assets**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
 - **get_image_metadata**: Perform structural extraction of properties driving active Document schemas
 - **global_asset_search**: Inspect deep internal arrays mitigating specific Picture constraints
 - **list_canto_albums**: Enumerate explicitly attached structured rules exporting active Album instances
-- **list_canto_folders**: Identify bounded routing spaces inside the Headless Canto Vault
 - **patch_image_metadata**: Dispatch an automated validation check routing explicit Metadata rewrites
+- **list_canto_folders**: Identify bounded routing spaces inside the Headless Canto Vault
+- **assign_asset_album**: Identify precise active arrays spanning native linking trees
+- **get_album_assets**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
 
 
 ## 💬 Prompt Examples
