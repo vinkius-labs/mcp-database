@@ -34,30 +34,30 @@ Connect your **TomTom** API account directly to any AI agent to unlock enterpris
 
 
 ## Available Tools (10)
+- **search_poi_by_category**: Provide a category name and a center coordinate.
+
+Searches for points of interest (POIs) near a location by category (e.g., gas stations, hospitals)
+- **structured_geocoding**: Provide parameters like countryCode and postalCode.
+
+Performs geocoding using explicit address components (e.g., street, city, zip)
+- **autocomplete_place_search**: Provide a partial string and optional bias coordinates.
+
+Provides predictive location suggestions based on partial input
 - **calculate_reachable_range**: Provide center coordinates and a time budget in seconds.
 
 Calculates an area reachable within a specific time or distance budget
 - **calculate_route**: Returns the route polyline and a summary.
 
 Calculates a route and travel time between two points
-- **search_poi_by_category**: Provide a category name and a center coordinate.
-
-Searches for points of interest (POIs) near a location by category (e.g., gas stations, hospitals)
 - **fuzzy_geocoding**: Converts a physical address string into geographic coordinates using fuzzy matching
 - **get_poi_details**: Retrieves rich metadata for a specific point of interest ID
-- **get_traffic_incidents**: Provide min/max lat/lon coordinates.
-
-Retrieves real-time traffic incident details within a bounding box
 - **get_traffic_flow_segment**: Provide center coordinates.
 
 Retrieves the traffic flow speed and quality for a specific road segment
+- **get_traffic_incidents**: Provide min/max lat/lon coordinates.
+
+Retrieves real-time traffic incident details within a bounding box
 - **reverse_geocoding**: Converts geographic coordinates into a physical address
-- **autocomplete_place_search**: Provide a partial string and optional bias coordinates.
-
-Provides predictive location suggestions based on partial input
-- **structured_geocoding**: Provide parameters like countryCode and postalCode.
-
-Performs geocoding using explicit address components (e.g., street, city, zip)
 
 
 ## 💬 Prompt Examples

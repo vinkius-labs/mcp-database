@@ -33,23 +33,23 @@ Integrate the powerful headless CMS capabilities of **Storyblok** directly into 
 
 
 ## Available Tools (9)
+- **get_story_details**: Retrieves details for a specific content story
+- **list_assets**: Lists media assets in a Storyblok space
+- **list_stories**: Requires a space ID.
+
+Lists content stories within a specific space
+- **update_content_story**: Requires space and story IDs.
+
+Updates fields of an existing Storyblok story
+- **create_content_story**: Provide a name, slug, and content JSON.
+
+Creates a new story in a Storyblok space
 - **delete_content_story**: This action is irreversible.
 
 Permanently deletes a Storyblok story
 - **list_components**: Lists available content components
-- **create_content_story**: Provide a name, slug, and content JSON.
-
-Creates a new story in a Storyblok space
-- **get_story_details**: Retrieves details for a specific content story
-- **list_assets**: Lists media assets in a Storyblok space
 - **list_spaces**: Lists all accessible Storyblok spaces
-- **list_stories**: Requires a space ID.
-
-Lists content stories within a specific space
 - **list_space_users**: Lists all users with access to a specific space
-- **update_content_story**: Requires space and story IDs.
-
-Updates fields of an existing Storyblok story
 
 
 ## 💬 Prompt Examples

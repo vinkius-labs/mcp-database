@@ -14,9 +14,9 @@ The UKG Pro MCP Server integrates the Model Context Protocol with the UKG Pro hu
 
 
 ## Available Tools (4)
-- **employees**: Get a specific employee by ID in UKG Pro
-- **payroll**: Get payroll records for the current pay period
 - **organizations**: List organizational components and structures
+- **payroll**: Get payroll records for the current pay period
+- **employees**: Get a specific employee by ID in UKG Pro
 - **jobs**: Get a specific job configuration by job code
 
 

@@ -33,14 +33,14 @@ Connect **Snapchat Ads** to your AI agent and manage your Snapchat advertising c
 
 
 ## Available Tools (8)
-- **list_campaigns**: List campaigns
-- **list_adsquads**: List ad squads
-- **list_ads**: List ads
-- **get_campaign_stats**: Get campaign statistics
-- **get_account_stats**: Get account statistics
-- **pause_campaign**: Pause a campaign
 - **enable_campaign**: Enable a campaign
+- **get_account_stats**: Get account statistics
 - **get_ad_account**: Get ad account info
+- **list_ads**: List ads
+- **list_adsquads**: List ad squads
+- **list_campaigns**: List campaigns
+- **pause_campaign**: Pause a campaign
+- **get_campaign_stats**: Get campaign statistics
 
 
 ## 💬 Prompt Examples

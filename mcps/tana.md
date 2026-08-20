@@ -36,26 +36,26 @@ Translate your AI conversation into structured personal knowledge management sea
 - **add_node_with_children**: Provide a name and comma-separated children.
 
 Creates a parent node with multiple child nodes
-- **add_to_inbox**: Quickly adds a new node directly to the Tana Inbox
-- **add_checkbox_task**: Optionally set initial done status.
-
-Creates a checkbox/todo item in the Tana inbox
 - **add_date_node**: Format: YYYY-MM-DD.
 
 Creates a date-typed node in the Tana inbox
-- **add_node**: Provide a target node ID (or "INBOX", "LIBRARY") and the node name.
-
-Creates a new node in a specific Tana location
 - **add_node_reference**: Provide a label and the target node ID.
 
 Creates a reference node linking to an existing node
 - **add_tagged_node**: g. #meeting, #person). Requires the supertag ID from Tana schema.
 
 Creates a new node with a supertag applied
-- **add_url_bookmark**: Creates a URL-typed node in Tana
+- **add_checkbox_task**: Optionally set initial done status.
+
+Creates a checkbox/todo item in the Tana inbox
+- **add_node**: Provide a target node ID (or "INBOX", "LIBRARY") and the node name.
+
+Creates a new node in a specific Tana location
 - **add_node_with_fields**: Provide name, supertag ID, and field data as a JSON object.
 
 Creates a supertagged node with structured field values
+- **add_to_inbox**: Quickly adds a new node directly to the Tana Inbox
+- **add_url_bookmark**: Creates a URL-typed node in Tana
 - **define_supertag**: Provide a name and description.
 
 Defines a new supertag in the Tana schema

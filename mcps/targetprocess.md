@@ -33,12 +33,12 @@ Empower your conversational matrix with enterprise Agile planning tools by estab
 
 
 ## Available Tools (6)
-- **list_bugs**: Lists reported bugs/defects
 - **list_features**: Lists high-level features (capabilities)
-- **list_iterations**: Lists iterations (sprints)
 - **list_projects**: Lists all projects in Targetprocess
 - **list_user_stories**: Lists user stories in the account
 - **list_account_users**: Lists all registered users in the Targetprocess account
+- **list_bugs**: Lists reported bugs/defects
+- **list_iterations**: Lists iterations (sprints)
 
 
 ## 💬 Prompt Examples

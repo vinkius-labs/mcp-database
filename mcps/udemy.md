@@ -14,13 +14,13 @@ The Udemy MCP Server brings the world's largest selection of courses into your A
 
 
 ## Available Tools (6)
-- **course_reviews**: Provide course ID.
-
-List reviews for a specific public Udemy course
 - **instructor_courses**: List all courses taught by the authenticated instructor
 - **instructor_reviews**: Useful for feedback analysis.
 
 List reviews for all courses taught by the authenticated instructor
+- **course_reviews**: Provide course ID.
+
+List reviews for a specific public Udemy course
 - **courses**: Get details of a specific Udemy course by ID
 - **instructor_messages**: List direct messages for the authenticated instructor
 - **instructor_qa**: List QA questions in all courses taught by the authenticated instructor

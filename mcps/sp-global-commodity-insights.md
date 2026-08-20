@@ -46,82 +46,6 @@ Your AI becomes a commodity analyst, helping you track prices, understand market
 
 
 ## Available Tools (12)
-- **get_assessment_methodology**: USE WHEN:
-- User asks about how a specific price is calculated
-- User needs the methodology behind a benchmark
-- User wants specification details for an assessment
-- User asks about market conventions for a commodity
-
-PARAMETERS:
-- assessment_code (REQUIRED): Assessment code or symbol (e.g. "WTI_Cushing", "Henry_Hub")
-
-EXAMPLES:
-- "How is WTI Cushing price calculated?" → call with assessment_code="WTI_Cushing"
-- "Henry Hub methodology" → call with assessment_code="Henry_Hub"
-- "Brent assessment specifications" → call with assessment_code="Brent"
-
-Get methodology and metadata for a specific price assessment
-- **list_commodity_categories**: USE WHEN:
-- User wants to explore what commodity categories are available
-- User needs to understand the scope of price assessments
-- User is exploring the API capabilities for the first time
-- User asks what types of commodities are covered
-
-CATEGORIES INCLUDE:
-- Crude Oil, Natural Gas, Electric Power, Coal
-- Petrochemicals, Metals, Agriculture
-- Energy Transition, Refined Products
-
-EXAMPLES:
-- "What commodity categories are available?" → call with no params
-- "Show me all commodity types" → call with no params
-- "List all price assessment categories" → call with no params
-
-List all available commodity categories in S&P Global Commodity Insights
-- **get_agriculture_prices**: USE WHEN:
-- User asks about agriculture commodity prices
-- User needs wheat, corn, soybean, or other crop prices
-- User wants agricultural market benchmarks
-- User asks about food commodity pricing
-
-AVAILABLE COMMODITIES:
-- Wheat, Corn, Soybeans, Soybean Meal/Oil
-- Rice, Barley, Oats
-- Fertilizers (Urea, DAP, Potash)
-
-PARAMETERS:
-- date (OPTIONAL): Specific date (YYYY-MM-DD)
-- commodity (OPTIONAL): Specific commodity (e.g. "Wheat", "Corn")
-- region (OPTIONAL): Region of origin/destination
-
-EXAMPLES:
-- "Wheat prices today" → call with commodity="Wheat"
-- "Corn prices this week" → call with commodity="Corn"
-- "Urea fertilizer prices" → call with commodity="Urea"
-
-Get agriculture commodity price assessments from S&P Global Platts
-- **get_coal_prices**: USE WHEN:
-- User asks about coal prices
-- User needs Newcastle, API2, or other coal benchmark prices
-- User wants thermal or metallurgical coal market data
-- User asks about coal market trends
-
-AVAILABLE BENCHMARKS:
-- Newcastle (Australia), API2 (Rotterdam)
-- API4 (Richards Bay), Columbian FOB
-- Various regional thermal and coking coal prices
-
-PARAMETERS:
-- date (OPTIONAL): Specific date (YYYY-MM-DD)
-- type (OPTIONAL): Coal type ("thermal" or "metallurgical")
-- benchmark (OPTIONAL): Specific benchmark (e.g. "Newcastle", "API2")
-
-EXAMPLES:
-- "Newcastle coal price today" → call with benchmark="Newcastle"
-- "Thermal coal prices this week" → call with type="thermal"
-- "API2 Rotterdam coal prices" → call with benchmark="API2"
-
-Get coal price assessments from S&P Global Platts
 - **get_crude_oil_prices**: Includes spot and forward prices for major crude grades.
 
 USE WHEN:
@@ -145,6 +69,87 @@ EXAMPLES:
 - "Middle East crude assessments" → call with region="Middle East"
 
 Get crude oil price assessments from S&P Global Platts
+- **get_metals_prices**: USE WHEN:
+- User asks about metal prices
+- User needs copper, aluminum, zinc, or other base metal prices
+- User wants steel or iron ore benchmarks
+- User asks about precious metals (gold, silver)
+
+AVAILABLE METALS:
+- Base: Copper, Aluminum, Zinc, Nickel, Lead
+- Precious: Gold, Silver, Platinum
+- Steel, Iron Ore, Tin
+
+PARAMETERS:
+- date (OPTIONAL): Specific date (YYYY-MM-DD)
+- metal (OPTIONAL): Specific metal (e.g. "Copper", "Aluminum")
+- exchange (OPTIONAL): Exchange reference (e.g. "LME", "COMEX")
+
+EXAMPLES:
+- "Copper price today" → call with metal="Copper"
+- "LME aluminum prices" → call with metal="Aluminum", exchange="LME"
+- "Gold price assessment" → call with metal="Gold"
+
+Get metals price assessments from S&P Global Platts
+- **get_agriculture_prices**: USE WHEN:
+- User asks about agriculture commodity prices
+- User needs wheat, corn, soybean, or other crop prices
+- User wants agricultural market benchmarks
+- User asks about food commodity pricing
+
+AVAILABLE COMMODITIES:
+- Wheat, Corn, Soybeans, Soybean Meal/Oil
+- Rice, Barley, Oats
+- Fertilizers (Urea, DAP, Potash)
+
+PARAMETERS:
+- date (OPTIONAL): Specific date (YYYY-MM-DD)
+- commodity (OPTIONAL): Specific commodity (e.g. "Wheat", "Corn")
+- region (OPTIONAL): Region of origin/destination
+
+EXAMPLES:
+- "Wheat prices today" → call with commodity="Wheat"
+- "Corn prices this week" → call with commodity="Corn"
+- "Urea fertilizer prices" → call with commodity="Urea"
+
+Get agriculture commodity price assessments from S&P Global Platts
+- **get_assessment_methodology**: USE WHEN:
+- User asks about how a specific price is calculated
+- User needs the methodology behind a benchmark
+- User wants specification details for an assessment
+- User asks about market conventions for a commodity
+
+PARAMETERS:
+- assessment_code (REQUIRED): Assessment code or symbol (e.g. "WTI_Cushing", "Henry_Hub")
+
+EXAMPLES:
+- "How is WTI Cushing price calculated?" → call with assessment_code="WTI_Cushing"
+- "Henry Hub methodology" → call with assessment_code="Henry_Hub"
+- "Brent assessment specifications" → call with assessment_code="Brent"
+
+Get methodology and metadata for a specific price assessment
+- **get_coal_prices**: USE WHEN:
+- User asks about coal prices
+- User needs Newcastle, API2, or other coal benchmark prices
+- User wants thermal or metallurgical coal market data
+- User asks about coal market trends
+
+AVAILABLE BENCHMARKS:
+- Newcastle (Australia), API2 (Rotterdam)
+- API4 (Richards Bay), Columbian FOB
+- Various regional thermal and coking coal prices
+
+PARAMETERS:
+- date (OPTIONAL): Specific date (YYYY-MM-DD)
+- type (OPTIONAL): Coal type ("thermal" or "metallurgical")
+- benchmark (OPTIONAL): Specific benchmark (e.g. "Newcastle", "API2")
+
+EXAMPLES:
+- "Newcastle coal price today" → call with benchmark="Newcastle"
+- "Thermal coal prices this week" → call with type="thermal"
+- "API2 Rotterdam coal prices" → call with benchmark="API2"
+
+Get coal price assessments from S&P Global Platts
 - **get_energy_transition_data**: USE WHEN:
 - User asks about renewable energy prices or markets
 - User needs carbon credit or EUA (EU Allowance) prices
@@ -187,28 +192,6 @@ EXAMPLES:
 - "Coal price history last quarter" → call with commodity="coal", start_date="2026-01-01", end_date="2026-03-31"
 
 Get historical price data for a specific commodity with date range
-- **get_metals_prices**: USE WHEN:
-- User asks about metal prices
-- User needs copper, aluminum, zinc, or other base metal prices
-- User wants steel or iron ore benchmarks
-- User asks about precious metals (gold, silver)
-
-AVAILABLE METALS:
-- Base: Copper, Aluminum, Zinc, Nickel, Lead
-- Precious: Gold, Silver, Platinum
-- Steel, Iron Ore, Tin
-
-PARAMETERS:
-- date (OPTIONAL): Specific date (YYYY-MM-DD)
-- metal (OPTIONAL): Specific metal (e.g. "Copper", "Aluminum")
-- exchange (OPTIONAL): Exchange reference (e.g. "LME", "COMEX")
-
-EXAMPLES:
-- "Copper price today" → call with metal="Copper"
-- "LME aluminum prices" → call with metal="Aluminum", exchange="LME"
-- "Gold price assessment" → call with metal="Gold"
-
-Get metals price assessments from S&P Global Platts
 - **get_natural_gas_prices**: USE WHEN:
 - User asks about natural gas prices
 - User needs Henry Hub, NBP, TTF, or other gas hub prices
@@ -297,6 +280,23 @@ EXAMPLES:
 - "Singapore jet fuel prices" → call with product="Jet Fuel", region="Singapore"
 
 Get refined petroleum products price assessments
+- **list_commodity_categories**: USE WHEN:
+- User wants to explore what commodity categories are available
+- User needs to understand the scope of price assessments
+- User is exploring the API capabilities for the first time
+- User asks what types of commodities are covered
+
+CATEGORIES INCLUDE:
+- Crude Oil, Natural Gas, Electric Power, Coal
+- Petrochemicals, Metals, Agriculture
+- Energy Transition, Refined Products
+
+EXAMPLES:
+- "What commodity categories are available?" → call with no params
+- "Show me all commodity types" → call with no params
+- "List all price assessment categories" → call with no params
+
+List all available commodity categories in S&P Global Commodity Insights
 
 
 ## 💬 Prompt Examples

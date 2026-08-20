@@ -38,14 +38,14 @@ Bring your overarching **TestRail** quality assurance orchestration directly to 
 
 Lists all test projects available on the TestRail instance
 - **list_test_runs**: Lists all test runs within a specific project
-- **list_project_sections**: Lists all sections (folders) within a project
 - **list_test_suites**: Lists all test suites within a specific project
-- **list_run_tests**: Lists all tests (case instances) within a specific test run
-- **get_test_case_details**: Retrieves full details for a specific test case
 - **get_test_project_details**: Retrieves details for a specific TestRail project
-- **get_test_run_details**: Retrieves details for a specific test run
-- **list_test_cases**: Lists all test cases in a project, optionally filtered by suite
 - **list_project_milestones**: Lists all milestones within a project
+- **list_test_cases**: Lists all test cases in a project, optionally filtered by suite
+- **get_test_case_details**: Retrieves full details for a specific test case
+- **get_test_run_details**: Retrieves details for a specific test run
+- **list_project_sections**: Lists all sections (folders) within a project
+- **list_run_tests**: Lists all tests (case instances) within a specific test run
 
 
 ## 💬 Prompt Examples

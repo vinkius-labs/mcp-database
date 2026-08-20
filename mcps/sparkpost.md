@@ -36,9 +36,6 @@ Stop managing HTML string templates manually or debugging mail senders manually 
 
 ## Available Tools (10)
 - **list_bounce_events**: Lists recent email bounce events
-- **create_template**: Provide a unique ID, display name, subject and valid HTML.
-
-Creates a new HTML email template
 - **delete_suppression_record**: This action is irreversible.
 
 Removes an email address from the suppression list
@@ -46,15 +43,18 @@ Removes an email address from the suppression list
 
 Permanently deletes an email template
 - **get_deliverability_metrics**: Retrieves account-wide deliverability and performance metrics
+- **send_email**: Provide from_email, to_email, subject and plain text content.
+
+Sends an email via SparkPost transmissions
+- **create_template**: Provide a unique ID, display name, subject and valid HTML.
+
+Creates a new HTML email template
 - **get_template_details**: Retrieves the structure and content of a specific template
 - **list_suppression_list**: g. due to unsubscribes or spam complaints).
 
 Lists addresses on the globalThis suppression list
 - **list_templates**: Lists all draft and published email templates
 - **list_webhooks**: Lists all active event webhooks
-- **send_email**: Provide from_email, to_email, subject and plain text content.
-
-Sends an email via SparkPost transmissions
 
 
 ## 💬 Prompt Examples

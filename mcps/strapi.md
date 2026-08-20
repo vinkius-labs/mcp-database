@@ -33,19 +33,19 @@ Integrate the robust headless architecture of **Strapi** seamlessly into your co
 
 
 ## Available Tools (9)
-- **get_entry_details**: Retrieves details for a specific content entry
 - **list_assets**: Lists media assets stored in the Strapi Media Library
+- **list_cms_users**: Lists all registered CMS users
+- **list_content_types**: Lists all content types (collections and single types) defined in Strapi
 - **create_entry**: Provide the plural ID and a JSON string of fields.
 
 Creates a new entry for a specific content type
 - **delete_entry**: This action is irreversible.
 
 Permanently deletes a content entry
-- **list_content_types**: Lists all content types (collections and single types) defined in Strapi
+- **get_entry_details**: Retrieves details for a specific content entry
 - **list_entries**: Provide the plural ID of the content type (e.g., "articles").
 
 Lists entries for a specific content type
-- **list_cms_users**: Lists all registered CMS users
 - **update_entry**: Provide the plural ID, entry ID, and field updates.
 
 Updates fields of an existing content entry

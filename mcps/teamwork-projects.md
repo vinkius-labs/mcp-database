@@ -34,9 +34,6 @@ Teamwork is a comprehensive project management platform used by agencies and pro
 
 
 ## Available Tools (17)
-- **create_message**: Body should include title and body content.
-
-Post a new message in a project
 - **create_milestone**: Body should include title and deadline date.
 
 Create a new milestone in a project
@@ -50,12 +47,8 @@ Create a new task
 
 Log a new time entry
 - **delete_task**: Delete a task
-- **list_files**: List all files in a project
-- **get_project**: Get details of a specific project
 - **get_task**: Get details of a specific task
-- **get_current_user**: Use this to verify connection and identify your user ID.
-
-Get the authenticated user profile
+- **list_files**: List all files in a project
 - **list_messages**: List all messages in a project
 - **list_milestones**: List all milestones in a project
 - **list_projects**: Use project IDs to query tasks, milestones, and other resources within specific projects.
@@ -65,8 +58,15 @@ List all projects accessible to the user
 
 List all task lists in a project
 - **list_tasks**: List all tasks in a project
-- **list_time_entries**: List all time entries in a project
 - **update_task**: Update an existing task
+- **create_message**: Body should include title and body content.
+
+Post a new message in a project
+- **get_current_user**: Use this to verify connection and identify your user ID.
+
+Get the authenticated user profile
+- **get_project**: Get details of a specific project
+- **list_time_entries**: List all time entries in a project
 
 
 ## 💬 Prompt Examples

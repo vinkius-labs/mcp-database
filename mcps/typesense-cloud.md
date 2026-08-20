@@ -35,14 +35,14 @@ No digging into terminal CURL outputs required to diagnose your search latency s
 
 
 ## Available Tools (6)
-- **get_cluster_health**: Checks the operational health status of the Typesense cluster
 - **get_cluster_metrics**: Retrieves performance and usage metrics for the Typesense cluster
-- **list_collection_aliases**: Lists all collection aliases (virtual names mapping to real collections)
-- **list_collections**: Lists all search collections in the Typesense Cloud cluster
-- **list_api_keys**: Lists all API keys configured for the Typesense cluster
 - **execute_multi_search**: Provide a JSON array of search request objects.
 
 Executes multiple search requests in a single API call
+- **list_api_keys**: Lists all API keys configured for the Typesense cluster
+- **list_collection_aliases**: Lists all collection aliases (virtual names mapping to real collections)
+- **list_collections**: Lists all search collections in the Typesense Cloud cluster
+- **get_cluster_health**: Checks the operational health status of the Typesense cluster
 
 
 ## 💬 Prompt Examples

@@ -51,12 +51,6 @@ Create a new authorization form for customers to share their utility data
 - **get_billing_summaries**: Includes billing periods, costs, and meter counts for your UtilityAPI subscription. Optional meterId parameter retrieves summary for a specific meter. Use this to track API usage costs and understand billing periods for your UtilityAPI account.
 
 Get billing account summaries for UtilityAPI accounting
-- **get_bills**: Returns utility bills with: start/end dates, total cost (in dollars), energy usage (kWh for electric, therms for gas), utility name, and meter association. The meters parameter is required — provide a single meter UID or comma-separated multiple UIDs. Use this to analyze customer spending on utilities, identify high-cost periods, or provide billing insights. Bills are only available for meters that have been authorized and are actively collecting data.
-
-Get utility billing history for authorized meters
-- **get_events**: Events include: new authorization created, meter data available, collection completed, errors, etc. Use this to monitor the status of data collection workflows, debug authorization issues, or build real-time notifications for when customer data becomes available.
-
-Get webhook events from UtilityAPI (authorizations, data collection status)
 - **get_form_templates**: Templates define what information is collected during the customer authorization process. Use this to understand available form configurations before creating custom authorization forms. Each template has a unique ID used when creating new forms.
 
 Get authorization form templates used for customer data sharing
@@ -66,15 +60,21 @@ Get detailed usage interval data (hourly/15-min) for authorized meters
 - **get_meter_data**: This is a convenience tool that combines results from get_bills and get_intervals for one meter. Returns: complete bill history (dates, costs, usage) plus granular interval data (time-series readings). Use this when you need a complete picture of a customer's utility data — both the financial (billing) and technical (usage patterns) aspects — for comprehensive energy analysis. The meterUid must be a valid meter UID from list_meters.
 
 Get combined billing and interval data for a specific meter in one call
+- **list_authorizations**: Each authorization represents a customer who has granted access to their utility data. Optional referrals parameter filters by a specific referral code (from test submissions). Set includeMeters=true to also return associated meter data with each authorization. Use this to track which customers have authorized data access and get their referral codes for meter queries.
+
+List all customer data sharing authorizations
 - **list_utilities**: Each utility includes its name, utility code (used for form submissions), and supported data types. Use this to find the correct utility code when creating authorization forms or querying utility-specific data. Common utilities include: PG&E (Pacific Gas & Electric), SCE (Southern California Edison), Con Edison, National Grid, and many others across the US.
 
 List all supported utility companies available through UtilityAPI
 - **test_form_submission**: Returns a referral_code that can be used to retrieve the test authorization and associated meter data. Use this during development and testing to verify form configurations work correctly before deploying to production. The formId is the uid returned by create_auth_form. The referral_code returned can be used with list_authorizations to retrieve test data.
 
 Test an authorization form to simulate customer authorization and get a referral code
-- **list_authorizations**: Each authorization represents a customer who has granted access to their utility data. Optional referrals parameter filters by a specific referral code (from test submissions). Set includeMeters=true to also return associated meter data with each authorization. Use this to track which customers have authorized data access and get their referral codes for meter queries.
+- **get_bills**: Returns utility bills with: start/end dates, total cost (in dollars), energy usage (kWh for electric, therms for gas), utility name, and meter association. The meters parameter is required — provide a single meter UID or comma-separated multiple UIDs. Use this to analyze customer spending on utilities, identify high-cost periods, or provide billing insights. Bills are only available for meters that have been authorized and are actively collecting data.
 
-List all customer data sharing authorizations
+Get utility billing history for authorized meters
+- **get_events**: Events include: new authorization created, meter data available, collection completed, errors, etc. Use this to monitor the status of data collection workflows, debug authorization issues, or build real-time notifications for when customer data becomes available.
+
+Get webhook events from UtilityAPI (authorizations, data collection status)
 - **list_meters**: Each meter represents a specific utility service connection (electricity or gas) at a customer location. Meter data includes: utility name, service address, fuel type (electric/gas), collection status, and the unique meter_uid used for fetching bills and intervals. Optional authorizationId filters meters to a specific customer authorization. Use the meter_uid with get_bills and get_intervals to retrieve usage data.
 
 List all authorized utility meters (service points)

@@ -33,20 +33,20 @@ Connect your **Testim** project to any AI agent and bring your automated end-to-
 
 
 ## Available Tools (10)
-- **get_test_details**: Retrieves full details for a specific Testim test
 - **list_project_branches**: Lists all parallel development branches in the project
 - **list_tests**: Lists all automated tests in the Testim project
+- **get_test_details**: Retrieves full details for a specific Testim test
 - **merge_project_branch**: Typically merges a feature branch into master.
 
 Merges test changes from one branch into another
-- **create_project_branch**: Creates a new test development branch
 - **get_execution_results**: Retrieves the status and results of a specific test execution
 - **run_tests_by_label**: Triggers a run for all tests matching a specific label
 - **run_test_plan**: Triggers a run for a defined test plan
-- **run_test_suite**: Triggers a run for all tests in a specific suite
 - **run_specific_test**: Optionally provide a branch name. Returns an execution ID.
 
 Triggers an immediate run for a specific test
+- **run_test_suite**: Triggers a run for all tests in a specific suite
+- **create_project_branch**: Creates a new test development branch
 
 
 ## 💬 Prompt Examples
