@@ -35,18 +35,18 @@ Connect your **Termii** account to any AI agent and simplify how you manage your
 
 
 ## Available Tools (6)
-- **send_sms**: Pass data as a JSON string.
-
-Send an SMS message
 - **send_whatsapp**: Pass data as a JSON string.
 
 Send a WhatsApp message
-- **verify_otp**: Verify an OTP code
-- **check_balance**: Check account balance
 - **list_sender_ids**: List all registered Sender IDs
+- **check_balance**: Check account balance
 - **send_otp**: Pass options in JSON.
 
 Send a one-time password
+- **send_sms**: Pass data as a JSON string.
+
+Send an SMS message
+- **verify_otp**: Verify an OTP code
 
 
 ## 💬 Prompt Examples
