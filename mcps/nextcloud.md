@@ -35,18 +35,13 @@ Connect your **Nextcloud** instance to any AI agent and take full control of you
 
 ## Available Tools (16)
 - **create_folder**: Create a new folder in Nextcloud (WebDAV)
-- **get_capabilities**: Get Nextcloud server capabilities
-- **create_share**: Share Types: 0=User, 1=Group, 3=Public Link, 4=Email, 6=Federated, 7=Circle, 10=Talk.
-
-Create a new Nextcloud share
 - **delete_app_password**: Delete the current app password
-- **delete_file**: Delete a file or folder in Nextcloud (WebDAV)
+- **get_capabilities**: Get Nextcloud server capabilities
 - **delete_share**: Delete a Nextcloud share
 - **get_app_password**: Requires authenticating with the real user password.
 
 Generate a new app password
 - **get_user_status**: Get current user status
-- **get_user**: Get details for a specific Nextcloud user
 - **list_activities**: List Nextcloud activity stream
 - **list_files**: Path is relative to the user root.
 
@@ -55,6 +50,11 @@ List files in a Nextcloud directory (WebDAV)
 - **list_users**: Requires admin privileges.
 
 List Nextcloud users (Admin only)
+- **create_share**: Share Types: 0=User, 1=Group, 3=Public Link, 4=Email, 6=Federated, 7=Circle, 10=Talk.
+
+Create a new Nextcloud share
+- **delete_file**: Delete a file or folder in Nextcloud (WebDAV)
+- **get_user**: Get details for a specific Nextcloud user
 - **set_user_status**: Set user online status
 - **set_user_status_message**: Set custom user status message
 - **update_share**: Update an existing Nextcloud share

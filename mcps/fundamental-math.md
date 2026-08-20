@@ -24,9 +24,9 @@ Stop relying on probabilistic models for exact numbers. Equip your agent with a 
 ## Available Tools (5)
 - **calculate_factorial**: Calculates the factorial of a non-negative integer
 - **calculate_percentage**: Calculates the percentage of a given total value
+- **calculate_square_root**: Calculates the square root of a given number
 - **calculate_power**: Calculates the base raised to the exponent power
 - **calculate_rule_of_three**: Solves a simple rule of three (proportionality)
-- **calculate_square_root**: Calculates the square root of a given number
 
 
 ## 💬 Prompt Examples

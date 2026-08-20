@@ -33,12 +33,12 @@ Connect your AI agent to the **SEC EDGAR** database and perform deep financial a
 
 
 ## Available Tools (4)
+- **get_xbrl_frames**: Get aggregated facts for a specific concept and period
 - **get_company_concept**: Get all XBRL disclosures for a single company concept
 - **get_company_facts**: Get all company concepts data for a specific company
 - **get_submissions**: Includes metadata and recent filings.
 
 Get filing history for a specific entity
-- **get_xbrl_frames**: Get aggregated facts for a specific concept and period
 
 
 ## 💬 Prompt Examples

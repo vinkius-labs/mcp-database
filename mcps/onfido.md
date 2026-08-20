@@ -34,13 +34,13 @@ Connect your **Onfido** account to any AI agent to streamline your KYC (Know You
 
 
 ## Available Tools (6)
-- **create_applicant**: Create a new Onfido applicant
 - **create_check**: Create a new Check (Legacy/Classic)
-- **create_workflow_run**: Create a new Workflow Run
 - **get_report**: Retrieve a Verification Report
 - **get_workflow_run**: g., awaiting_input, processing, approved, review, declined).
 
 Retrieve a Workflow Run
+- **create_applicant**: Create a new Onfido applicant
+- **create_workflow_run**: Create a new Workflow Run
 - **register_webhook**: Register a new Webhook
 
 

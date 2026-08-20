@@ -36,24 +36,24 @@ No more navigating complex dashboards to moderate a user or check channel status
 
 
 ## Available Tools (18)
-- **block_user**: Block a user
-- **list_open_channels**: List open channels
-- **create_bot**: Create a bot
 - **create_group_channel**: Create a group channel
 - **create_open_channel**: Create an open channel
-- **create_user**: Create a new Sendbird user
 - **delete_open_channel**: Delete an open channel
-- **freeze_channel**: Freeze a channel
-- **get_open_channel**: Get an open channel by URL
 - **leave_group_channel**: Leave a group channel
 - **list_users**: List Sendbird users
-- **mute_user**: Mute a user in a channel
 - **send_bot_message**: Send a message via bot
-- **send_message**: Send a message to a channel
 - **update_open_channel**: Update an open channel
-- **ban_user**: Ban a user from a channel
-- **invite_group_channel**: Invite users to a group channel
 - **join_group_channel**: Join a group channel
+- **ban_user**: Ban a user from a channel
+- **block_user**: Block a user
+- **create_bot**: Create a bot
+- **create_user**: Create a new Sendbird user
+- **freeze_channel**: Freeze a channel
+- **get_open_channel**: Get an open channel by URL
+- **invite_group_channel**: Invite users to a group channel
+- **list_open_channels**: List open channels
+- **mute_user**: Mute a user in a channel
+- **send_message**: Send a message to a channel
 
 
 ## 💬 Prompt Examples

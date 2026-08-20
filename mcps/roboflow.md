@@ -36,32 +36,32 @@ Connect **Roboflow** to your AI agent to streamline your computer vision pipelin
 ## Available Tools (29)
 - **add_projects_to_folder**: Add projects to a folder (Enterprise)
 - **auto_label**: Start an auto-labeling job using foundation models
-- **cancel_training**: Cancel an active training job
-- **create_annotation_job**: Assign a batch of images to a labeler and reviewer
 - **create_project**: Create a new project in a workspace
 - **delete_images**: Delete multiple images from a project
 - **delete_project**: Delete a project or version (moves to Trash)
-- **download_dataset**: Retrieve a download link for a zipped dataset in a specific format
 - **fork_universe_project**: Fork a public project from Roboflow Universe
 - **get_async_task**: Track long-running operations like forking or large exports
-- **get_image**: Get details for a specific image
 - **get_project**: Get project details, metadata, and versions
 - **get_root**: Verify authentication and retrieve default workspace
-- **get_training_results**: Retrieve metrics and status for a version training run
 - **get_version**: Retrieve metadata for a specific dataset version
 - **list_folders**: List project folders in a workspace (Enterprise)
-- **list_trash**: List items in the workspace trash
 - **list_workspace_projects**: List information about a workspace and its projects
-- **manage_image_tags**: Add, remove, or set tags on an image
 - **restore_trash**: Restore an item from the trash
 - **run_inference**: Run inference on an image using hosted models
-- **search_project_images**: Search and filter images within a specific project
 - **search_workspace_images**: Search and filter images within a workspace
 - **start_training**: Start training a model on a dataset version
 - **upload_annotation**: Attach an annotation file to an existing image
 - **upload_image**: Upload an image to a project
+- **cancel_training**: Cancel an active training job
+- **create_annotation_job**: Assign a batch of images to a labeler and reviewer
 - **create_folder**: Create a project folder (Enterprise)
+- **download_dataset**: Retrieve a download link for a zipped dataset in a specific format
 - **get_dataset_health**: Check dataset health (class distribution, missing annotations, etc)
+- **get_image**: Get details for a specific image
+- **get_training_results**: Retrieve metrics and status for a version training run
+- **list_trash**: List items in the workspace trash
+- **manage_image_tags**: Add, remove, or set tags on an image
+- **search_project_images**: Search and filter images within a specific project
 - **stop_training**: Early stop an active training job
 
 

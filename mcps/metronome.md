@@ -34,7 +34,6 @@ Connect your **Metronome** account to any AI agent to streamline your usage-base
 
 
 ## Available Tools (31)
-- **create_billable_metric**: Create a billable metric
 - **create_commit**: Create a commit
 - **create_contract**: Create a contract
 - **create_customer**: Create a new customer
@@ -42,43 +41,44 @@ Connect your **Metronome** account to any AI agent to streamline your usage-base
 - **create_product**: Products can be USAGE, FIXED, COMPOSITE, or SUBSCRIPTION.
 
 Create a product
-- **create_rate_card**: Defines base prices for products.
-
-Create a rate card
-- **edit_contract**: ).
-
-Edit a contract
 - **get_audit_logs**: Get audit logs
 - **get_customer**: Get a specific customer
 - **get_invoice**: Get an invoice
-- **get_net_balance**: Get net balance
 - **get_services**: Get services
-- **get_usage_groups**: Get usage data with paginated groupings
 - **get_usage**: Get batched usage data
+- **get_usage_groups**: Get usage data with paginated groupings
 - **ingest_events**: Supports up to 100,000 events per second.
 
 Ingest usage events into Metronome
 - **list_balances**: List balances
-- **list_billable_metrics**: List all billable metrics
-- **list_contracts**: List customer contracts
 - **list_credit_types**: List pricing units
-- **list_customers**: Supports filtering.
-
-List all customers
 - **list_products**: List products
 - **regenerate_invoice**: Regenerate an invoice
-- **search_events**: Designed for sampling-based testing.
-
-Search events by transaction ID
 - **set_custom_field_values**: Set custom field values
 - **void_invoice**: Void an invoice
-- **add_rate**: Add a rate to a rate card
 - **archive_customer**: Voids invoices and archives contracts.
 
 Archive a customer
 - **create_alert**: Create a threshold notification alert
 - **list_invoices**: List invoices
 - **add_custom_field_key**: Create a custom field key
+- **add_rate**: Add a rate to a rate card
+- **create_billable_metric**: Create a billable metric
+- **create_rate_card**: Defines base prices for products.
+
+Create a rate card
+- **edit_contract**: ).
+
+Edit a contract
+- **get_net_balance**: Get net balance
+- **list_billable_metrics**: List all billable metrics
+- **list_contracts**: List customer contracts
+- **list_customers**: Supports filtering.
+
+List all customers
+- **search_events**: Designed for sampling-based testing.
+
+Search events by transaction ID
 
 
 ## 💬 Prompt Examples

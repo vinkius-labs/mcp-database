@@ -35,37 +35,37 @@ Connect your **PubNub** account to any AI agent to orchestrate real-time communi
 
 
 ## Available Tools (31)
-- **get_channel**: Get a specific channel (App Context)
 - **presence_here_now**: Get current channel occupancy (Here Now)
-- **presence_set_state**: Set presence state for a user in a channel
 - **presence_where_now**: Get channels a user is in (Where Now)
 - **publish_message**: Publish a message to a channel
 - **delete_message_history**: Delete message history for channels
 - **generate_file_upload_url**: Generate a file upload URL
-- **get_all_users**: Get all users (App Context)
 - **get_file_url**: Get a file URL
 - **get_memberships**: Get memberships for a user (App Context)
-- **get_user**: Get a specific user (App Context)
-- **get_message_history**: Get message history for channels
-- **list_files**: List files in a channel
 - **get_message_count**: Get message count for channels
-- **pam_grant_token**: Grant a PAM v3 token
+- **get_message_history**: Get message history for channels
+- **get_user**: Get a specific user (App Context)
+- **list_files**: List files in a channel
 - **pam_revoke_token**: Revoke a PAM v3 token
 - **presence_get_state**: Get presence state for a user in a channel
 - **presence_heartbeat**: Send presence heartbeat
-- **presence_leave**: Leave a channel (Presence)
 - **push_manage**: Manage or list push notification channels for a device (APNS v2)
 - **push_remove_all**: Remove all push notification channels for a device (APNS v2)
 - **remove_user**: Remove a user (App Context)
-- **set_channel**: Set or update a channel (App Context)
 - **set_memberships**: Set or update memberships for a user (App Context)
-- **set_user**: Set or update a user (App Context)
-- **admin_create_app**: Create a new PubNub app (Admin API)
 - **admin_get_metrics**: Get usage metrics (Admin API)
 - **admin_list_apps**: List all PubNub apps (Admin API)
 - **admin_list_keysets**: List all keysets (Admin API)
-- **delete_file**: Delete a file from a channel
 - **get_all_channels**: Get all channels (App Context)
+- **admin_create_app**: Create a new PubNub app (Admin API)
+- **delete_file**: Delete a file from a channel
+- **get_all_users**: Get all users (App Context)
+- **get_channel**: Get a specific channel (App Context)
+- **pam_grant_token**: Grant a PAM v3 token
+- **presence_leave**: Leave a channel (Presence)
+- **presence_set_state**: Set presence state for a user in a channel
+- **set_channel**: Set or update a channel (App Context)
+- **set_user**: Set or update a user (App Context)
 
 
 ## 💬 Prompt Examples

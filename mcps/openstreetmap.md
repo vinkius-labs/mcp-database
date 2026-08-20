@@ -36,39 +36,39 @@ Your AI can now act as a GIS specialist, helping you audit map data or contribut
 
 
 ## Available Tools (33)
-- **close_changeset**: Close a changeset
 - **close_note**: Close a map note
 - **comment_note**: Add a comment to an existing map note
 - **create_changeset**: Create a new changeset
-- **create_element**: Create a new node, way, or relation
 - **create_note**: Create a new map note
 - **delete_element**: Delete a node, way, or relation
 - **download_changeset**: Download a changeset in OsmChange format
 - **get_auth_user_details**: Get details for the authenticated user
-- **get_changeset**: Read a changeset by ID
-- **get_element_history**: Get the history of a node, way, or relation
 - **get_element**: Read a node, way, or relation by ID
+- **get_element_history**: Get the history of a node, way, or relation
 - **get_elements**: Multi-fetch nodes, ways, or relations
 - **get_gpx_data**: Download data for a GPS trace
 - **get_gpx_metadata**: Read metadata for a GPS trace
 - **get_inbox**: Get the authenticated user's message inbox
 - **get_map_data**: Get map data (nodes, ways, relations) within a bounding box
 - **get_message**: Read a specific message
-- **get_note**: Read a map note by ID
 - **get_permissions**: Get OAuth permissions for the authenticated user
 - **get_user_preferences**: Get preferences for the authenticated user
 - **get_user**: Get details for a specific user
-- **list_notes**: List map notes within a bounding box
-- **list_user_gpx**: List GPS traces for the authenticated user
-- **query_changesets**: Query changesets with filters
 - **search_notes**: Search for map notes
 - **send_message**: Send a private message to another user
 - **update_changeset**: Update tags of an open changeset
 - **update_element**: Update an existing node, way, or relation
-- **update_message_status**: Update the read status of a message
 - **upload_gpx**: Upload a GPS trace (GPX)
 - **delete_message**: Delete a message
 - **get_outbox**: Get the authenticated user's message outbox
+- **close_changeset**: Close a changeset
+- **create_element**: Create a new node, way, or relation
+- **get_changeset**: Read a changeset by ID
+- **get_note**: Read a map note by ID
+- **list_notes**: List map notes within a bounding box
+- **list_user_gpx**: List GPS traces for the authenticated user
+- **query_changesets**: Query changesets with filters
+- **update_message_status**: Update the read status of a message
 
 
 ## 💬 Prompt Examples

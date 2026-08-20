@@ -35,19 +35,19 @@ Connect **Lago** to your AI agent to automate your metering and billing infrastr
 
 ## Available Tools (12)
 - **create_billable_metric**: Create a billable metric
-- **create_coupon**: Create a coupon
 - **create_plan**: Create a new billing plan
 - **create_subscription**: Assign a plan to a customer (create subscription)
-- **create_wallet**: Create a wallet for prepaid credits
 - **get_customer**: Retrieve a customer by external ID
 - **get_subscription**: Retrieve a subscription by external ID
-- **list_invoices**: List all invoices
 - **send_event**: Send a usage event
+- **apply_coupon**: Apply a coupon to a customer
+- **batch_events**: Send a batch of usage events
+- **create_coupon**: Create a coupon
+- **create_wallet**: Create a wallet for prepaid credits
+- **list_invoices**: List all invoices
 - **upsert_customer**: Requires an external_id.
 
 Create or update a customer in Lago
-- **batch_events**: Send a batch of usage events
-- **apply_coupon**: Apply a coupon to a customer
 
 
 ## 💬 Prompt Examples

@@ -31,16 +31,12 @@ No more manual dashboard navigation to check who is in a room or to force-mute a
 
 
 ## Available Tools (41)
-- **create_room**: Create a room with specific settings
 - **create_sip_dispatch_rule**: Map incoming calls to specific rooms based on phone numbers or pins
 - **create_sip_inbound_trunk**: Define how incoming SIP calls are handled
-- **release_phone_numbers**: Release a number back to the inventory
 - **remove_participant**: Kick a participant from a room
 - **search_phone_numbers**: Search for available numbers by country/area code
-- **start_track_egress**: Export a single track without transcoding
 - **stop_egress**: Stop an active egress
-- **create_dispatch**: Explicitly trigger a named agent to join a specific room
-- **create_ingress**: Provision an ingress point (RTMP, WHIP, or URL pull)
+- **start_track_egress**: Export a single track without transcoding
 - **create_sip_outbound_trunk**: Define a trunk for dialing out
 - **create_sip_participant**: Dial a SIP number and bring them into a LiveKit room
 - **delete_dispatch**: Remove a dispatch rule
@@ -48,25 +44,29 @@ No more manual dashboard navigation to check who is in a room or to force-mute a
 - **delete_room**: Forcibly disconnect all participants and delete the room
 - **delete_sip_dispatch_rule**: Remove a SIP dispatch rule
 - **delete_sip_trunk**: Remove a SIP trunk configuration
-- **get_participant**: Get info for a specific participant
 - **list_dispatch**: List dispatches for a room
 - **list_egress**: List active egress jobs
 - **list_ingress**: List provisioned ingresses
 - **list_participants**: List participants in a room
 - **list_phone_numbers**: List numbers owned by the project
-- **list_rooms**: List active/open rooms
 - **list_sip_inbound_trunk**: List configured SIP inbound trunks
 - **list_sip_outbound_trunk**: List configured SIP outbound trunks
 - **mute_published_track**: Mute/unmute a participant's track
 - **purchase_phone_number**: Buy a number and optionally assign a SIP dispatch rule
-- **send_data**: Send data packets to participants
 - **start_participant_egress**: Record a specific participant's audio and video
+- **transfer_sip_participant**: Transfer an active SIP call to another number or URI
+- **update_layout**: Change the web layout of an active RoomComposite egress
+- **create_dispatch**: Explicitly trigger a named agent to join a specific room
+- **create_ingress**: Provision an ingress point (RTMP, WHIP, or URL pull)
+- **create_room**: Create a room with specific settings
+- **get_participant**: Get info for a specific participant
+- **list_rooms**: List active/open rooms
+- **release_phone_numbers**: Release a number back to the inventory
+- **send_data**: Send data packets to participants
 - **start_room_composite_egress**: Record an entire room using a web layout
 - **start_track_composite_egress**: Record one audio and one video track together
 - **start_web_egress**: Record any web page
-- **transfer_sip_participant**: Transfer an active SIP call to another number or URI
 - **update_ingress**: Update room or participant settings for a reusable ingress
-- **update_layout**: Change the web layout of an active RoomComposite egress
 - **update_participant**: Update metadata or permissions for a participant
 - **update_phone_number**: Change the dispatch rule for a number
 - **update_room_metadata**: Update room-wide metadata

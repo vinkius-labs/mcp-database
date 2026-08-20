@@ -34,20 +34,20 @@ Connect your **Orb** account to any AI agent to streamline your revenue operatio
 
 
 ## Available Tools (10)
-- **list_customers**: List customers in Orb
 - **list_invoices**: List invoices
-- **update_subscription**: Update an existing subscription
-- **create_customer**: Requires name and email.
-
-Create a new customer in Orb
 - **create_ledger_entry**: Create a ledger entry for credits
-- **create_subscription**: Create a subscription for a customer
 - **fetch_ledger**: Fetch credit ledger for a customer
 - **get_upcoming_invoice**: Fetch upcoming invoice for a subscription
 - **ingest_events**: Events require customer_id, event_name, timestamp, idempotency_key, and properties.
 
 Ingest usage events into Orb
 - **cancel_subscription**: Cancel a subscription
+- **create_customer**: Requires name and email.
+
+Create a new customer in Orb
+- **create_subscription**: Create a subscription for a customer
+- **list_customers**: List customers in Orb
+- **update_subscription**: Update an existing subscription
 
 
 ## 💬 Prompt Examples

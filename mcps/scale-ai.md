@@ -38,14 +38,14 @@ Connect your **Scale AI** account to any AI agent to orchestrate large-scale dat
 
 Cancel a pending task
 - **create_batch**: Create a new batch
+- **create_text_collection_task**: Create a Text Collection task
+- **finalize_batch**: Finalize a batch
+- **get_task**: Retrieve a specific task
 - **create_image_annotation_task**: Create an Image Annotation task
 - **create_named_entity_recognition_task**: Create a Named Entity Recognition task
 - **create_project**: Create a new Scale project
 - **create_segment_annotation_task**: Create a Semantic Segmentation task
-- **create_text_collection_task**: Create a Text Collection task
 - **create_video_playback_annotation_task**: Create a Video Annotation task
-- **finalize_batch**: Finalize a batch
-- **get_task**: Retrieve a specific task
 - **update_project_params**: Update project parameters
 
 

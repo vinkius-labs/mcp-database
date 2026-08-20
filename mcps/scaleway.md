@@ -33,8 +33,8 @@ Connect your **Scaleway** account to any AI agent to manage your cloud infrastru
 
 
 ## Available Tools (3)
-- **create_instance**: Create a new Scaleway instance (server)
 - **list_instances**: List Scaleway instances (servers) in a specific zone
+- **create_instance**: Create a new Scaleway instance (server)
 - **perform_instance_action**: Perform an action on a Scaleway instance (e.g., poweron, poweroff)
 
 

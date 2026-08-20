@@ -36,14 +36,14 @@ No more jumping into the Pusher Debug Console to manually trigger test events or
 
 
 ## Available Tools (6)
+- **list_channel_users**: Fetch users in a presence channel
+- **terminate_user_connections**: Terminate all connections for a user
+- **get_channel**: Fetch information for a specific channel
+- **list_channels**: Fetch multiple channels
+- **trigger_batch_events**: Trigger multiple events in a single batch
 - **trigger_event**: Max 10KB data payload.
 
 Trigger an event on one or more channels
-- **get_channel**: Fetch information for a specific channel
-- **list_channel_users**: Fetch users in a presence channel
-- **list_channels**: Fetch multiple channels
-- **terminate_user_connections**: Terminate all connections for a user
-- **trigger_batch_events**: Trigger multiple events in a single batch
 
 
 ## 💬 Prompt Examples

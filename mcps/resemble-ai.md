@@ -34,24 +34,24 @@ Connect your **Resemble AI** account to any AI agent to generate, manage, and pr
 
 
 ## Available Tools (16)
+- **create_project**: Create a new project
+- **create_voice**: Create a new custom voice
+- **delete_voice**: Delete a custom voice
+- **get_clip**: Get a specific clip
+- **get_voice**: Get details of a specific voice
+- **list_clips**: List clips in a project
+- **list_recordings**: List recordings for a voice
+- **list_voices**: List all custom and system voices
+- **update_clip**: Update an existing clip
+- **verify_watermark**: Verify a watermark in an audio file
 - **add_watermark**: Apply an imperceptible watermark to an audio file
 - **create_clip**: Supports SSML.
 
 Create a new clip (Text-to-Speech)
-- **create_project**: Create a new project
 - **create_recording**: Upload an audio recording to train a voice
-- **create_voice**: Create a new custom voice
-- **delete_voice**: Delete a custom voice
 - **detect_deepfake**: Verify if an audio clip is real or AI-generated
-- **get_clip**: Get a specific clip
-- **get_voice**: Get details of a specific voice
-- **list_clips**: List clips in a project
 - **list_projects**: List all projects
-- **list_recordings**: List recordings for a voice
-- **list_voices**: List all custom and system voices
 - **speech_to_speech**: Transform an input audio file into a target voice (STS)
-- **update_clip**: Update an existing clip
-- **verify_watermark**: Verify a watermark in an audio file
 
 
 ## 💬 Prompt Examples

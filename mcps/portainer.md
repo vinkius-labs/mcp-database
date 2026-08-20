@@ -33,12 +33,12 @@ Connect your **Portainer** instance to any AI agent and orchestrate your contain
 
 
 ## Available Tools (6)
-- **init_admin**: Initialize Portainer admin password
 - **list_docker_containers**: List Docker containers in an environment
+- **start_docker_container**: Start a Docker container
 - **add_endpoint**: Add a new environment (endpoint) to Portainer
 - **authenticate**: Authenticate to receive a JWT token
 - **create_docker_container**: Create a new Docker container
-- **start_docker_container**: Start a Docker container
+- **init_admin**: Initialize Portainer admin password
 
 
 ## 💬 Prompt Examples

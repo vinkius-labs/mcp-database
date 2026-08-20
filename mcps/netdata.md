@@ -36,17 +36,17 @@ No more jumping between dashboards to find which node is spiking. Your AI acts a
 
 
 ## Available Tools (10)
+- **get_agent_info**: Get Netdata Agent information
+- **get_alarms**: Get current status of all configured alarms
 - **get_all_metrics**: Get all metrics for scraping
+- **get_chart_data**: Fetch metric data from a specific chart
 - **list_charts**: ).
 
 List all available charts on the node
+- **list_room_nodes**: List nodes within a specific room
 - **list_rooms**: List rooms within a specific space
 - **list_space_alerts**: Fetch active alerts across the space
-- **get_chart_data**: Fetch metric data from a specific chart
-- **get_agent_info**: Get Netdata Agent information
-- **list_room_nodes**: List nodes within a specific room
 - **list_space_nodes**: List all nodes connected to a space
-- **get_alarms**: Get current status of all configured alarms
 - **list_spaces**: List all Netdata Cloud spaces
 
 
