@@ -35,10 +35,10 @@ Connect your **Context7** account to any AI agent and provide it with the most u
 
 
 ## Available Tools (2)
+- **query_docs**: Query documentation and code examples for a specific library ID (from resolve_library tool) about a certain topic
 - **resolve_library**: g. react) into deterministic paths (e.g. /facebook/react/18.2.0) needed for deep documentation fetching.
 
 Find the correct exact library ID and latest version matching a framework or library search query
-- **query_docs**: Query documentation and code examples for a specific library ID (from resolve_library tool) about a certain topic
 
 
 ## 💬 Prompt Examples

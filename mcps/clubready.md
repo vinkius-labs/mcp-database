@@ -39,29 +39,29 @@ Search gym members
 - **list_membership_plans**: Includes pricing, billing frequency, and initiation fee.
 
 List membership plans
-- **get_store_info**: Get gym location info
-- **get_member**: Get member profile
-- **get_member_billing**: Critical for collections.
-
-Get member billing status
-- **list_check_ins**: Shows member name, time, barcode scanned, and membership type. Filter by date.
-
-List gym check-ins
-- **list_schedule**: Filter by date range.
-
-List class schedule
-- **list_class_roster**: Shows check-in status, waitlist position, and membership used.
-
-List class roster
 - **do_check_in**: Validates membership status, records the visit, and triggers door access. Returns success/failure with reason.
 
 Check in a member
+- **get_member**: Get member profile
+- **list_check_ins**: Shows member name, time, barcode scanned, and membership type. Filter by date.
+
+List gym check-ins
+- **list_class_roster**: Shows check-in status, waitlist position, and membership used.
+
+List class roster
+- **list_schedule**: Filter by date range.
+
+List class schedule
 - **list_prospects**: Essential for gym sales teams.
 
 List sales prospects
 - **list_staff**: Includes role, certifications, and contact info.
 
 List gym staff
+- **get_member_billing**: Critical for collections.
+
+Get member billing status
+- **get_store_info**: Get gym location info
 
 
 ## 💬 Prompt Examples

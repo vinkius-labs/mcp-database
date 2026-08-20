@@ -38,10 +38,10 @@ Connect your AI assistant to **Common Room**, the intelligent community growth p
 - **add_contact_to_segment**: Manually add a contact to a specific segment
 - **get_contact_by_email**: Retrieve detailed information about a member by their email
 - **get_contact_tags**: Get tags associated with a specific member
-- **search_organizations**: Search for organizations in Common Room
 - **get_segment_status**: Retrieve status and member count for a specific segment
 - **list_activity_types**: Retrieve a list of supported activity types in Common Room
 - **list_segment_members**: List contacts that belong to a specific segment
+- **search_organizations**: Search for organizations in Common Room
 
 
 ## 💬 Prompt Examples
