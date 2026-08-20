@@ -33,19 +33,19 @@ Connect your **Yousign** account to any AI agent to automate your electronic sig
 
 
 ## Available Tools (12)
-- **activate_signature_request**: Send for signature
 - **add_document_to_request**: Note: In this version, pass metadata info.
 
 Upload PDF to sign
 - **add_signer_to_request**: Define who signs
-- **cancel_ongoing_request**: Stop signature process
-- **create_yousign_contact**: Add to address book
 - **create_signature_request**: Start new signature process
+- **create_yousign_contact**: Add to address book
 - **delete_signature_request**: Remove draft request
 - **get_audit_trail_link**: Get evidence file link
 - **get_signature_request**: Get request status
-- **get_workspace_details**: Get account info
 - **list_yousign_contacts**: List address book
+- **activate_signature_request**: Send for signature
+- **cancel_ongoing_request**: Stop signature process
+- **get_workspace_details**: Get account info
 - **list_signature_requests**: List all requests
 
 

@@ -34,6 +34,11 @@ Connect your **Builder.io** space to any AI agent and take full control of your 
 
 
 ## Available Tools (9)
+- **query_graphql**: Query Builder.io content using GraphQL
+- **delete_asset_by_url**: Delete an asset by its URL
+- **admin_graphql**: Requires Private API Key.
+
+Execute an Admin API GraphQL query/mutation
 - **create_content**: Requires Private API Key.
 
 Create a new content entry
@@ -42,17 +47,12 @@ Create a new content entry
 Delete a content entry
 - **get_content**: Get content from a Builder.io model
 - **get_html**: Get pre-rendered HTML for a Builder.io model
-- **query_graphql**: Query Builder.io content using GraphQL
 - **update_content**: Requires Private API Key.
 
 Update an existing content entry
 - **upload_asset**: Requires Private API Key.
 
 Upload an asset (image, video, document)
-- **admin_graphql**: Requires Private API Key.
-
-Execute an Admin API GraphQL query/mutation
-- **delete_asset_by_url**: Delete an asset by its URL
 
 
 ## 💬 Prompt Examples

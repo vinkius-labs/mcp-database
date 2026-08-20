@@ -20,15 +20,15 @@ When LLMs try to manipulate large collections of data, they hit context limits o
 
 
 ## Available Tools (3)
+- **array_intersect**: Provide both arrays as JSON strings.
+
+Finds common items between two arrays
 - **array_chunk**: Provide the array as a JSON string.
 
 Splits a JSON array into smaller chunks of a specified size
 - **array_deduplicate**: Provide the array as a JSON string. If it is an array of objects, specify the object key to deduplicate by.
 
 Removes duplicate items from an array. Can deduplicate arrays of objects based on a specific key
-- **array_intersect**: Provide both arrays as JSON strings.
-
-Finds common items between two arrays
 
 
 ## 💬 Prompt Examples

@@ -28,12 +28,12 @@ Connect your **TeleSign** account to any AI agent and manage phone verification 
 - **check_telesign_status**: Verify API connectivity
 - **check_verification**: Check verification status
 - **get_phone_type**: Get phone type
-- **score_phone**: Score phone risk
-- **send_push_verification**: Send push verification
 - **send_sms**: Send an SMS message
 - **send_verification**: Send verification code
 - **send_voice_verification**: Send voice verification
 - **check_deactivation**: Check number deactivation
+- **score_phone**: Score phone risk
+- **send_push_verification**: Send push verification
 
 
 ## 💬 Prompt Examples

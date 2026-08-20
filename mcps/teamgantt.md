@@ -35,22 +35,22 @@ Connect your **TeamGantt** account to any AI agent and simplify how you manage y
 
 
 ## Available Tools (12)
-- **create_new_task**: Add task to project
 - **remove_task**: Delete task
-- **get_task_checklist**: List sub-tasks
-- **get_account_profile**: Get user info
-- **get_project_details**: Get project info
 - **get_task_info**: Get task details
+- **list_available_resources**: List users and labels
 - **list_project_milestones**: List major goals
 - **list_projects**: List TeamGantt projects
-- **list_available_resources**: List users and labels
-- **list_project_tasks**: List tasks in project
 - **update_task_fields**: ).
 
 Update task status/dates
+- **create_new_task**: Add task to project
+- **get_account_profile**: Get user info
+- **get_project_details**: Get project info
+- **get_task_checklist**: List sub-tasks
 - **link_tasks_dependency**: g. Task A must finish before Task B starts).
 
 Create Gantt link
+- **list_project_tasks**: List tasks in project
 
 
 ## 💬 Prompt Examples

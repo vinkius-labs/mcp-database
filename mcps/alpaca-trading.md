@@ -39,21 +39,21 @@ Your AI acts as a sophisticated trading terminal, capable of executing complex o
 - **delete_all_orders**: Returns a 207 Multi-Status.
 
 Delete all open orders
-- **get_assets**: List all tradable assets
 - **get_broker_account**: Get broker account by ID
-- **get_crypto_bars**: Get historical bars for crypto
 - **get_latest_stocks_quotes**: Get latest quotes for stocks
 - **get_latest_stocks_trades**: Get latest trades for stocks
-- **get_orders**: Get all orders
 - **get_stocks_bars**: Get historical bars for stocks
 - **issue_token**: Issue OAuth2 tokens for machine-to-machine authentication
-- **update_account_configs**: Update account configurations
-- **get_stocks_quotes**: Get historical quotes for stocks
 - **get_stocks_trades**: Get historical trades for stocks
+- **create_order**: Create a new trading order
 - **create_broker_account**: Requires contact, identity, disclosures, and agreements objects.
 
 Create a new broker account
-- **create_order**: Create a new trading order
+- **get_assets**: List all tradable assets
+- **get_crypto_bars**: Get historical bars for crypto
+- **get_orders**: Get all orders
+- **get_stocks_quotes**: Get historical quotes for stocks
+- **update_account_configs**: Update account configurations
 
 
 ## 💬 Prompt Examples

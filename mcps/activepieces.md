@@ -38,31 +38,31 @@ No more manual checking of execution logs or switching tabs to enable/disable fl
 ## Available Tools (32)
 - **delete_flow**: Delete a flow by ID
 - **delete_folder**: Delete a folder
-- **delete_global_connection**: Delete a globalThis connection
 - **delete_project_member**: Remove a member from a project
-- **get_flow_run**: Get detailed execution data for a flow run
 - **get_flow**: Get a specific flow by ID
 - **get_mcp_server**: Get MCP server configuration for AI assistants
-- **list_flow_runs**: List flow runs
 - **list_project_members**: List members of a project
 - **list_projects**: List projects
 - **list_records**: List records in a table
 - **list_tables**: List internal data tables
 - **update_folder**: Update a folder name
-- **update_record**: Update a specific record
 - **upsert_app_connection**: Supports SECRET_TEXT, OAUTH2, BASIC_AUTH, CUSTOM_AUTH, etc.
 
 Create or update an app connection
-- **add_piece**: Add a custom piece to the platform
-- **create_project_release**: Create a project release
 - **delete_app_connection**: Delete an app connection
 - **invite_user**: Invite a user to the platform or project
-- **list_app_connections**: List app connections
-- **list_folders**: List folders
 - **list_global_connections**: List globalThis connections
-- **list_users**: List users
 - **rotate_mcp_token**: Rotate MCP token for a project
+- **add_piece**: Add a custom piece to the platform
+- **create_project_release**: Create a project release
+- **delete_global_connection**: Delete a globalThis connection
+- **get_flow_run**: Get detailed execution data for a flow run
+- **list_app_connections**: List app connections
+- **list_flow_runs**: List flow runs
+- **list_folders**: List folders
+- **list_users**: List users
 - **update_project**: Update project settings
+- **update_record**: Update a specific record
 - **upsert_global_connection**: Create or update a globalThis connection
 - **apply_flow_operation**: g., MOVE_ACTION, CHANGE_STATUS).
 

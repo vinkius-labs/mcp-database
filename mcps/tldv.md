@@ -35,18 +35,18 @@ Connect your **tl;dv** account to any AI agent and simplify how you manage your 
 
 
 ## Available Tools (12)
+- **import_external_meeting**: Upload recording URL
+- **list_recorded_meetings**: List recent meetings
+- **get_meeting_duration**: Check call length
+- **list_recent_transcripts**: List latest transcripts
+- **get_api_status**: Check connection
+- **get_meeting_details**: Get meeting info
 - **get_meeting_highlights**: Get key moments
 - **get_meeting_notes**: Read AI summaries
 - **get_meeting_participants**: List attendees
-- **import_external_meeting**: Upload recording URL
-- **list_recorded_meetings**: List recent meetings
-- **test_tldv_auth**: Verify credentials
-- **get_meeting_duration**: Check call length
 - **get_meeting_transcript**: Read transcription
-- **list_recent_transcripts**: List latest transcripts
 - **get_recording_download**: Get video file URL
-- **get_meeting_details**: Get meeting info
-- **get_api_status**: Check connection
+- **test_tldv_auth**: Verify credentials
 
 
 ## 💬 Prompt Examples

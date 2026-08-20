@@ -40,13 +40,13 @@ No more managing browser clusters or rotating proxy pools. Your AI acts as a ded
 - **get_usage**: Get current API usage and remaining credits
 - **extract_data_with_ai**: Extract JSON data using natural language
 - **extract_structured_data**: Extract JSON data using CSS/XPath selectors
+- **get_api_usage**: Check API credit usage
 - **scrape_webpage**: Automatically handles JavaScript, proxies, and anti-bot measures.
 
 Scrape a webpage with full browser rendering
 - **take_screenshot**: Handles rendering automatically.
 
 Capture a screenshot of a website
-- **get_api_usage**: Check API credit usage
 - **scrape_with_js**: Scrape a page with JavaScript rendering enabled
 - **scrape_with_proxy**: Scrape a page using premium proxy rotation
 - **scrape_with_stealth**: Scrape a page with stealth mode to bypass bot detection

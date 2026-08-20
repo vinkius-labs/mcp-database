@@ -39,12 +39,18 @@ Connect to the **OpenAlex API** — the fully open catalog of the global researc
 
 
 ## Available Tools (16)
-- **get_concept**: Essential for understanding the structure of a research field.
-
-Get concept details with ancestors, related concepts, and trends
 - **get_funder**: Use this to understand which organizations fund specific research areas.
 
 Get funder details and funded research statistics
+- **get_concept**: Essential for understanding the structure of a research field.
+
+Get concept details with ancestors, related concepts, and trends
+- **search_funders**: Returns names, countries, grants counts, works funded, and citation impact. Essential for understanding research funding landscapes.
+
+Search funding organizations worldwide
+- **search_works**: Supports full-text search plus structured filters. Filter syntax examples: "publication_year:2024", "open_access.is_oa:true", "type:journal-article", "cited_by_count:>100". Sort options: "cited_by_count:desc", "publication_date:desc", "relevance_score:desc".
+
+Search 250M+ academic works by keyword or filter
 - **get_author**: Returns name, affiliations, paper count, citation count, h-index, i10-index, 2-year mean citedness, top research concepts, and publication trends by year. The definitive tool for assessing academic impact.
 
 Get author profile with h-index, citations, and impact metrics
@@ -64,9 +70,6 @@ Search 90M+ academic authors by name
 - **search_concepts**: Returns names, levels, descriptions, works counts, and citation counts.
 
 Search 65K+ scientific concepts in the knowledge hierarchy
-- **search_funders**: Returns names, countries, grants counts, works funded, and citation impact. Essential for understanding research funding landscapes.
-
-Search funding organizations worldwide
 - **search_institutions**: Returns names, countries, types, works counts, citation counts, and homepages. Filter examples: "country_code:US", "type:education", "cited_by_count:>1000000".
 
 Search 100K+ research institutions worldwide
@@ -82,9 +85,6 @@ Search 240K+ academic journals, conferences, and repositories
 - **search_topics**: Returns topic names, descriptions, associated works and citations, plus the parent field and domain. Use this to map the landscape of a research area.
 
 Search topic classifications across all of science
-- **search_works**: Supports full-text search plus structured filters. Filter syntax examples: "publication_year:2024", "open_access.is_oa:true", "type:journal-article", "cited_by_count:>100". Sort options: "cited_by_count:desc", "publication_date:desc", "relevance_score:desc".
-
-Search 250M+ academic works by keyword or filter
 
 
 ## 💬 Prompt Examples

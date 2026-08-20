@@ -35,18 +35,18 @@ Connect your **Zoho Creator** account to any AI agent to automate your business 
 
 
 ## Available Tools (12)
-- **add_record**: Create new record
 - **delete_record**: Remove record
-- **get_form_fields**: Get field definitions
-- **get_app_metadata**: Get app structural info
-- **get_record_details**: Get record by ID
 - **get_report_records**: Fetch records from report
-- **list_applications**: List Zoho Creator apps
 - **list_app_forms**: List application forms
-- **update_record**: Modify existing record
+- **list_applications**: List Zoho Creator apps
 - **get_api_status**: Get connection status
-- **list_app_reports**: List application reports
 - **list_workspaces**: List creator workspaces
+- **add_record**: Create new record
+- **get_app_metadata**: Get app structural info
+- **get_form_fields**: Get field definitions
+- **get_record_details**: Get record by ID
+- **list_app_reports**: List application reports
+- **update_record**: Modify existing record
 
 
 ## 💬 Prompt Examples
