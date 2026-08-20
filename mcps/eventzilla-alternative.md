@@ -36,17 +36,17 @@ Empower your AI agent to orchestrate your entire event ecosystem with **Eventzil
 
 ## Available Tools (11)
 - **checkin_attendee**: Check-in an attendee
-- **get_attendee**: Get attendee details
-- **get_event**: Get details for a specific event
 - **get_transaction**: Get transaction details
-- **list_events**: List all events
-- **list_questions**: List registration questions
-- **list_tickets**: List tickets for an event
-- **list_transactions**: List transactions for an event
 - **list_attendees**: List attendees for an event
 - **list_categories**: g., Business, Music).
 
 List event categories
+- **list_events**: List all events
+- **get_attendee**: Get attendee details
+- **get_event**: Get details for a specific event
+- **list_questions**: List registration questions
+- **list_tickets**: List tickets for an event
+- **list_transactions**: List transactions for an event
 - **list_discount_codes**: List discount codes for an event
 
 

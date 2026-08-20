@@ -35,8 +35,8 @@ Equip your AI agent with global temporal intelligence through the **Calendarific
 
 
 ## Available Tools (2)
-- **get_holidays**: Get holidays for a country and year
 - **list_supported_countries**: List all supported countries
+- **get_holidays**: Get holidays for a country and year
 
 
 ## 💬 Prompt Examples

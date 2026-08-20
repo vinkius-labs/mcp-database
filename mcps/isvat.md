@@ -35,8 +35,8 @@ Empower your AI agent to orchestrate your entire European VAT validation workflo
 
 ## Available Tools (3)
 - **check_api_status**: Check if the isvat API is operational
-- **validate_multiple_vat**: Verify multiple European VAT numbers
 - **validate_eu_vat**: Verify if a European VAT number is valid
+- **validate_multiple_vat**: Verify multiple European VAT numbers
 
 
 ## 💬 Prompt Examples

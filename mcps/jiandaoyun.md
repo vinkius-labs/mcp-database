@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your data workflows with **Jiandaoyun**, th
 
 ## Available Tools (10)
 - **create_record**: Create a new form record
-- **delete_record**: Delete a form record
 - **get_form_schema**: Get form field schema
 - **get_record_details**: Get record details
-- **get_workflow_status**: Get record workflow status
 - **list_address_book**: List organization users
-- **list_apps**: List all Jiandaoyun applications
-- **list_data**: List records in a form
 - **list_forms**: List forms in an application
 - **update_record**: Update an existing form record
+- **delete_record**: Delete a form record
+- **get_workflow_status**: Get record workflow status
+- **list_apps**: List all Jiandaoyun applications
+- **list_data**: List records in a form
 
 
 ## 💬 Prompt Examples

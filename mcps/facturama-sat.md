@@ -33,20 +33,20 @@ Connect your **Facturama / SAT Mexico** corporative tax backend to any LLM and n
 
 
 ## Available Tools (14)
-- **list_invoices**: List issued CFDIs (Tax Invoices)
-- **create_client**: Register a new B2B invoice receiver
+- **cancel_invoice**: Cancel an issued CFDI / Invoice
 - **delete_client**: Remove receiver context
 - **get_tax_status**: Read internal SAT compliance tax state
 - **list_catalog**: Scan standard SAT codes
 - **list_taxes**: Read internal schema tax profiles
-- **send_invoice_email**: Push invoice via local mailer
-- **cancel_invoice**: Cancel an issued CFDI / Invoice
-- **create_invoice**: Issue a formal digital tax invoice (CFDI)
 - **get_client**: Get a specific client fiscal profile
-- **get_invoice_file**: Extract an invoice graphic representation (Base64 file)
 - **get_product**: Fetch targeted product SAT specifics
 - **list_clients**: List registered clients with tax details (RFC)
+- **create_client**: Register a new B2B invoice receiver
+- **create_invoice**: Issue a formal digital tax invoice (CFDI)
+- **get_invoice_file**: Extract an invoice graphic representation (Base64 file)
+- **list_invoices**: List issued CFDIs (Tax Invoices)
 - **list_products**: List tax-mapped registered products
+- **send_invoice_email**: Push invoice via local mailer
 
 
 ## 💬 Prompt Examples

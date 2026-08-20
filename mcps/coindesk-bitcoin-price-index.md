@@ -32,14 +32,14 @@ Equip your AI agent with real-time cryptocurrency intelligence through the **Coi
 
 
 ## Available Tools (8)
-- **get_bitcoin_price_gbp**: Get current Bitcoin price in GBP
 - **get_bitcoin_price_usd**: Get current Bitcoin price in USD
+- **get_bitcoin_price_gbp**: Get current Bitcoin price in GBP
 - **list_supported_currencies**: List supported fiat currencies for Bitcoin tracking
 - **get_bitcoin_price_eur**: Get current Bitcoin price in EUR
-- **get_bitcoin_price_global**: Get current Bitcoin price for globally recognized currencies (BPI)
 - **get_bitcoin_price_custom**: g. BRL, JPY, CNY).
 
 Get current Bitcoin price in a specific local currency
+- **get_bitcoin_price_global**: Get current Bitcoin price for globally recognized currencies (BPI)
 - **get_coindesk_disclaimer**: Get official CoinDesk terms and disclaimer
 - **get_latest_update_time**: Get the exact UTC timestamp of the last Bitcoin trade analyzed
 

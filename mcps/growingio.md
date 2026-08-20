@@ -35,9 +35,7 @@ Empower your AI agent to orchestrate your product analytics and user behavioral 
 
 
 ## Available Tools (10)
-- **get_event**: Get event details
 - **get_funnel**: Get conversion funnel details
-- **get_metrics**: Query project metrics
 - **get_project_info**: Get project metadata
 - **get_segment_users**: Get users in a segment
 - **list_ads**: List advertising campaigns
@@ -45,8 +43,10 @@ Empower your AI agent to orchestrate your product analytics and user behavioral 
 
 List data log sources
 - **list_segments**: List user segments
-- **list_variables**: List tracked variables
 - **list_events**: List project events
+- **get_event**: Get event details
+- **get_metrics**: Query project metrics
+- **list_variables**: List tracked variables
 
 
 ## 💬 Prompt Examples

@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire financial research and currency
 
 
 ## Available Tools (5)
+- **get_latest_exchange_rates**: Get real-time exchange rates for a base currency
 - **list_supported_currencies**: io database.
 
 List all currency symbols supported by Fixer.io
-- **get_latest_exchange_rates**: Get real-time exchange rates for a base currency
 - **check_api_status**: io Currency API.
 
 Check if the Fixer.io service is operational

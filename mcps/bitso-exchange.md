@@ -33,20 +33,20 @@ Connect your heavy lifting quantitative **Bitso Platform Account** to the Vurb e
 
 
 ## Available Tools (12)
+- **create_order**: Submit a new trading order
 - **get_ticker**: Get trading ticker information
 - **list_available_books**: g., btc_mxn, eth_brl, usdc_ars) on the exchange.
 
 List natively traded market books
-- **list_open_orders**: List active hanging orders
-- **list_trades**: Review historical executed trades
 - **list_balances**: List trading account balances
+- **list_order_trades**: Extract executions mapped to an Order ID
+- **list_trades**: Review historical executed trades
+- **list_open_orders**: List active hanging orders
 - **list_ledger**: Examine raw ledger account flows
 - **list_withdrawals**: Monitor executed funds external withdrawals
 - **cancel_order**: Cancel a live unfulfilled order
-- **create_order**: Submit a new trading order
 - **get_account_status**: Get regulatory account status limits
 - **get_funding_destination**: Reveal inbound funding crypto address
-- **list_order_trades**: Extract executions mapped to an Order ID
 
 
 ## 💬 Prompt Examples

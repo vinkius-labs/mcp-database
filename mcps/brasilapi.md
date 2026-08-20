@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire Brazilian institutional researc
 
 
 ## Available Tools (6)
-- **list_brazilian_banks**: List all banks operating in Brazil
 - **get_cnpj_details**: Get company details for a Brazilian CNPJ
-- **get_fipe_vehicle_price**: Get vehicle price from FIPE table
+- **list_brazilian_banks**: List all banks operating in Brazil
 - **get_brazilian_holidays**: List national holidays in Brazil for a specific year
+- **get_fipe_vehicle_price**: Get vehicle price from FIPE table
 - **get_cep_details**: Get address details for a Brazilian CEP
 - **list_brazilian_states**: List all states (UFs) in Brazil via IBGE
 

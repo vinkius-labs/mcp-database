@@ -34,19 +34,19 @@ Connect your AI agent to **Climatiq**, the leading platform for carbon calculati
 
 
 ## Available Tools (10)
+- **estimate_emissions**: Provide parameters as a JSON string.
+
+Calculate carbon emissions for a specific activity
+- **list_regions**: Retrieve a list of all supported regions
 - **batch_estimate_emissions**: Provide calculations as a JSON array string.
 
 Perform up to 100 emission calculations in a single request
 - **estimate_by_classification**: Provide parameters as a JSON string.
 
 Calculate emissions using industry classification codes (ISIC, NACE, etc.)
-- **estimate_emissions**: Provide parameters as a JSON string.
-
-Calculate carbon emissions for a specific activity
 - **list_categories**: Retrieve a list of all available emission categories
-- **list_regions**: Retrieve a list of all supported regions
-- **search_emission_factors**: Search for emission factors in the Climatiq database
 - **list_sectors**: Retrieve a list of all available emission sectors
+- **search_emission_factors**: Search for emission factors in the Climatiq database
 - **list_sources**: Retrieve a list of all data sources for emission factors
 - **list_units**: ) accepted by the API.
 

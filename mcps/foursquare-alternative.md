@@ -36,12 +36,12 @@ Empower your AI agent to orchestrate your entire location-based intelligence wit
 
 ## Available Tools (7)
 - **autocomplete_places**: Get autocomplete suggestions for place names
+- **get_place_tips**: Get tips and reviews for a specific place
+- **search_places**: Search for places on Foursquare
 - **get_nearby_places**: Find nearby places based on coordinates
 - **get_place_details**: Get details for a specific place
 - **get_place_photos**: Get photos for a specific place
-- **get_place_tips**: Get tips and reviews for a specific place
 - **list_categories**: List all Foursquare venue categories
-- **search_places**: Search for places on Foursquare
 
 
 ## 💬 Prompt Examples
