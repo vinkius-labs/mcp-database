@@ -36,17 +36,17 @@ Connect your **MailSlurp** account to any AI agent to automate your email testin
 
 ## Available Tools (8)
 - **create_random_inbox**: Create a new random email address
-- **delete_specific_inbox**: Delete an inbox and its emails
 - **list_inbox_emails**: List emails received by an inbox
-- **get_email_details**: Get complete content for a specific email
-- **list_all_inboxes**: List all MailSlurp inboxes
 - **send_email_from_inbox**: Requires recipient and content.
 
 Send an email using a MailSlurp address
-- **wait_for_email_count**: Wait until an inbox has a certain number of emails
 - **wait_for_latest_email**: Returns the latest one immediately if present.
 
 Long-poll for the next incoming email
+- **delete_specific_inbox**: Delete an inbox and its emails
+- **get_email_details**: Get complete content for a specific email
+- **list_all_inboxes**: List all MailSlurp inboxes
+- **wait_for_email_count**: Wait until an inbox has a certain number of emails
 
 
 ## 💬 Prompt Examples

@@ -36,22 +36,22 @@ Connect your **MarketMuse** account to any AI agent and take full control of you
 
 
 ## Available Tools (10)
-- **analyze_topic**: MarketMuse uses AI to analyze content gaps and topic authority.
-
-Analyze a topic with MarketMuse AI
+- **get_heatmap**: Get MarketMuse SERP heatmap
+- **get_inventory**: Get MarketMuse content inventory for a domain
+- **get_related_topics**: Get semantically related topics from MarketMuse
+- **optimize_url**: Get MarketMuse optimization suggestions for an existing URL
 - **score_content**: Pass topic and full content text.
 
 Score content against MarketMuse topic model
-- **get_related_topics**: Get semantically related topics from MarketMuse
-- **get_heatmap**: Get MarketMuse SERP heatmap
-- **get_inventory**: Get MarketMuse content inventory for a domain
-- **optimize_url**: Get MarketMuse optimization suggestions for an existing URL
+- **analyze_topic**: MarketMuse uses AI to analyze content gaps and topic authority.
+
+Analyze a topic with MarketMuse AI
 - **competitive_analysis**: Pass topic and your URL.
 
 Run MarketMuse competitive analysis
-- **get_topic_model**: Get MarketMuse topic model
-- **get_content_brief**: Generate a MarketMuse content brief
 - **get_questions**: Get questions people ask about a topic via MarketMuse
+- **get_content_brief**: Generate a MarketMuse content brief
+- **get_topic_model**: Get MarketMuse topic model
 
 
 ## 💬 Prompt Examples

@@ -29,20 +29,20 @@ Connect your AI agent to **Kolide** to get full visibility into your organizatio
 
 
 ## Available Tools (10)
-- **get_device_details**: Get details for a specific device
-- **list_kolide_issues**: List security issues across the fleet
-- **list_kolide_people**: List people/users managed in Kolide
 - **get_person_details**: Get details for a specific person
 - **list_kolide_checks**: List all available security checks
+- **list_kolide_issues**: List security issues across the fleet
+- **list_kolide_people**: List people/users managed in Kolide
 - **get_check_details**: Get details for a specific check
 - **list_kolide_audit_logs**: List fleet audit logs
 - **get_kolide_fleet_stats**: g., total devices, online status, issue count).
 
 Get high-level fleet statistics
+- **get_issue_details**: Get details for a specific security issue
+- **get_device_details**: Get details for a specific device
 - **list_kolide_devices**: Use this to audit fleet security posture and identify individual device IDs.
 
 List all devices in the fleet
-- **get_issue_details**: Get details for a specific security issue
 
 
 ## 💬 Prompt Examples

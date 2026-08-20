@@ -36,18 +36,18 @@ Connect your **Marketplacer** instance to any AI agent and take full control of 
 
 
 ## Available Tools (9)
-- **list_adverts**: Use this tool to list product items.
-
-List Marketplacer adverts (products)
 - **list_webhooks**: List Marketplacer webhooks (events subscription)
-- **get_advert**: Get Marketplacer advert by node ID
-- **get_invoice**: Get Marketplacer invoice by node ID
 - **list_sellers**: Use to fetch vendor lists.
 
 List Marketplacer sellers/vendors
 - **list_categories**: List Marketplacer category taxonomies
 - **list_shipments**: List Marketplacer shipments
+- **get_advert**: Get Marketplacer advert by node ID
+- **get_invoice**: Get Marketplacer invoice by node ID
 - **graphql_query**: Run standard GraphQL queries against Marketplacer endpoint
+- **list_adverts**: Use this tool to list product items.
+
+List Marketplacer adverts (products)
 - **list_invoices**: Use this to track all registered orders on the platform.
 
 List Marketplacer invoices (orders)

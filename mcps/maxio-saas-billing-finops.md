@@ -36,12 +36,12 @@ Connect your **Maxio (SaaSOptics)** account to any AI agent and take full contro
 
 ## Available Tools (10)
 - **create_contract**: Identify precise active arrays spanning native Gateway auth
-- **create_customer**: Provision a highly-available JSON Payload generating hard Customer bindings
 - **create_invoice**: Inspect deep internal arrays mitigating specific Plan Math
+- **list_contracts**: Enumerate explicitly attached structured rules exporting active Billing
+- **create_customer**: Provision a highly-available JSON Payload generating hard Customer bindings
 - **delete_customer**: Irreversibly vaporize explicit validations extracting rich Churn flags
 - **get_contract**: Dispatch an automated validation check routing explicit Gateway history
 - **get_customer**: Perform structural extraction of properties driving active Account logic
-- **list_contracts**: Enumerate explicitly attached structured rules exporting active Billing
 - **list_customers**: Identify bounded CRM records inside the Headless Maxio/SaaSOptics RevRec Platform
 - **list_invoices**: Identify precise active arrays spanning native Hold parsing
 - **update_customer**: Retrieve explicit Cloud logging tracing explicit Vault limits

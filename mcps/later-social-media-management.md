@@ -42,11 +42,11 @@ Connect your **Later** account to any AI agent and take full control of your vis
 - **delete_post**: Delete a Later scheduled post actively pending publication
 - **get_analytics**: Get Later aggregated profile analytics spanning an explicit date slice
 - **get_calendar**: Get the Later globalThis content calendar for a multi-profile date slice
+- **get_me**: Get authenticated Later user info and workspace details
+- **list_labels**: List Later content labels active across the media library
 - **list_media**: Takes standard page index pagination.
 
 List Later media library items
-- **list_labels**: List Later content labels active across the media library
-- **get_me**: Get authenticated Later user info and workspace details
 
 
 ## 💬 Prompt Examples

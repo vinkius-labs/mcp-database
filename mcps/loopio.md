@@ -34,30 +34,30 @@ Connect your **Loopio** RFP management platform to your AI agent to transform pr
 
 
 ## Available Tools (8)
+- **get_project**: Use this to check the state of a specific RFP response.
+
+Get details of a specific Loopio project by ID
+- **list_libraries**: Each stack contains approved Q&A entries organized by category. Use this to discover which knowledge bases are available for searching.
+
+List all library stacks available in Loopio
+- **search_library**: This is the primary way to find existing approved responses before drafting new answers. You can refine results with optional filters like tags, category, stack, and whether to search in questions or answers. Always use this before creating new library entries.
+
+Search the Loopio knowledge library for approved Q&A entries
+- **create_submission**: Requires a project name. Optionally accepts a description, company name, due date, project type, and owner ID. The project will be created in "Not Started" status and ready for team collaboration.
+
+Create a new RFP project/submission in Loopio
+- **get_questionnaire_responses**: If no entryId is provided, returns all entries and their current responses. Use this to review what answers have been drafted or finalized for RFP questions.
+
+Get responses for a specific questionnaire entry or all entries in a project
+- **list_projects**: Each project represents an active RFP response or questionnaire. Use this to discover all ongoing and recent response initiatives. Optionally limit results with the limit parameter.
+
+List all Loopio projects (RFPs, RFIs, questionnaires) in your workspace
 - **list_questionnaires**: Each entry represents a question from an RFP, RFI, or security questionnaire that needs to be answered. Use this to understand the scope of a project and track which questions have been answered.
 
 List all questionnaire entries (questions) for a specific Loopio project
 - **list_team_members**: Use this to identify who is assigned to projects, find user IDs for assigning project ownership, or understand team composition.
 
 List all team members in your Loopio workspace
-- **create_submission**: Requires a project name. Optionally accepts a description, company name, due date, project type, and owner ID. The project will be created in "Not Started" status and ready for team collaboration.
-
-Create a new RFP project/submission in Loopio
-- **get_project**: Use this to check the state of a specific RFP response.
-
-Get details of a specific Loopio project by ID
-- **get_questionnaire_responses**: If no entryId is provided, returns all entries and their current responses. Use this to review what answers have been drafted or finalized for RFP questions.
-
-Get responses for a specific questionnaire entry or all entries in a project
-- **list_libraries**: Each stack contains approved Q&A entries organized by category. Use this to discover which knowledge bases are available for searching.
-
-List all library stacks available in Loopio
-- **list_projects**: Each project represents an active RFP response or questionnaire. Use this to discover all ongoing and recent response initiatives. Optionally limit results with the limit parameter.
-
-List all Loopio projects (RFPs, RFIs, questionnaires) in your workspace
-- **search_library**: This is the primary way to find existing approved responses before drafting new answers. You can refine results with optional filters like tags, category, stack, and whether to search in questions or answers. Always use this before creating new library entries.
-
-Search the Loopio knowledge library for approved Q&A entries
 
 
 ## 💬 Prompt Examples

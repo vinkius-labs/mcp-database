@@ -35,12 +35,12 @@ Connect your **Linkup** account to any AI agent and take full control of real-ti
 
 
 ## Available Tools (2)
-- **search_web**: Choose "fast" mapping for basic factual requests and "deep" for thorough research limits.
-
-Perform a real-time web search extracting deep answers utilizing Linkup Platform
 - **fetch_url**: Bypasses advanced bot protections executing complex SPA JavaScript loops automatically.
 
 Fetch and extract clean content from any specific URL using Linkup Platform
+- **search_web**: Choose "fast" mapping for basic factual requests and "deep" for thorough research limits.
+
+Perform a real-time web search extracting deep answers utilizing Linkup Platform
 
 
 ## 💬 Prompt Examples

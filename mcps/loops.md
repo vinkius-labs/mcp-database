@@ -22,15 +22,9 @@ Loops is a modern email marketing and transactional email platform designed for 
 
 
 ## Available Tools (10)
-- **create_contact**: Requires an email address. Optionally accepts firstName, lastName, and userGroup.
-
-Create a new contact in Loops
 - **delete_contact**: This action cannot be undone.
 
 Delete a contact from Loops by ID
-- **find_contact**: Returns the contact details if found.
-
-Find a contact in Loops by email address
 - **get_contact_suppression**: Suppressed emails will not receive emails. Returns the suppression status for the given email.
 
 Check if an email address is suppressed in Loops
@@ -40,18 +34,24 @@ List all mailing lists in Loops
 - **list_transactional_emails**: Optionally accepts a limit parameter to control the number of results returned.
 
 List recently sent transactional emails from Loops
-- **send_event**: Requires an eventName. Optionally accepts email and/or userId to identify the recipient.
-
-Send an event to trigger email journeys in Loops
-- **send_transactional_email**: Requires the transactionalId. Optionally accepts email and dataVariables (as JSON string) for template variables.
-
-Send a transactional email via Loops
 - **update_contact**: Requires the contact ID. Accepts any fields to update such as firstName, lastName, email, userGroup, etc.
 
 Update an existing contact in Loops by ID
 - **test_api_key**: Returns success/failure status.
 
 Test if the Loops API key is valid and working
+- **create_contact**: Requires an email address. Optionally accepts firstName, lastName, and userGroup.
+
+Create a new contact in Loops
+- **find_contact**: Returns the contact details if found.
+
+Find a contact in Loops by email address
+- **send_event**: Requires an eventName. Optionally accepts email and/or userId to identify the recipient.
+
+Send an event to trigger email journeys in Loops
+- **send_transactional_email**: Requires the transactionalId. Optionally accepts email and dataVariables (as JSON string) for template variables.
+
+Send a transactional email via Loops
 
 
 ## 💬 Prompt Examples

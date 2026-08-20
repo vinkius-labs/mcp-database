@@ -35,18 +35,18 @@ Connect your **Mailosaur** account to any AI agent to automate your email and SM
 
 
 ## Available Tools (8)
-- **create_virtual_server**: Create a new virtual server/inbox
-- **clear_server_inbox**: Delete all messages in a server
 - **delete_specific_message**: Permanently remove a message
 - **get_message_content**: Get the full content of a specific message
-- **get_server_details**: Get details for a specific virtual server
 - **list_server_messages**: List all messages in a virtual server
-- **search_server_messages**: Requires a server ID and criteria like sentTo, sentFrom, or subject.
-
-Search for specific messages using criteria
 - **list_virtual_servers**: Use this to identify server IDs.
 
 List all Mailosaur virtual servers
+- **clear_server_inbox**: Delete all messages in a server
+- **create_virtual_server**: Create a new virtual server/inbox
+- **get_server_details**: Get details for a specific virtual server
+- **search_server_messages**: Requires a server ID and criteria like sentTo, sentFrom, or subject.
+
+Search for specific messages using criteria
 
 
 ## 💬 Prompt Examples

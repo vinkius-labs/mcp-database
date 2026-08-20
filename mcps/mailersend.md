@@ -37,18 +37,18 @@ Connect your **MailerSend** account to any AI agent and manage transactional ema
 ## Available Tools (12)
 - **get_date_analytics**: Check usage stats
 - **get_domain_details**: Get domain info
-- **get_message_info**: Get message status
-- **get_template_details**: Get template info
 - **list_email_activities**: ).
 
 Check email logs
-- **list_sending_domains**: List verified domains
 - **list_email_templates**: List saved templates
+- **list_sending_domains**: List verified domains
 - **list_domain_webhooks**: Get notification configs
 - **send_templated_email**: Send with template
-- **get_account_limits**: Check plan quotas
 - **send_transactional_email**: Send custom email
 - **list_sent_messages**: List specific messages
+- **get_account_limits**: Check plan quotas
+- **get_message_info**: Get message status
+- **get_template_details**: Get template info
 
 
 ## 💬 Prompt Examples

@@ -37,15 +37,15 @@ Connect your **MedusaJS** store to any AI agent and take full control of your en
 
 ## Available Tools (10)
 - **list_collections**: List Medusa product collections
-- **list_customers**: List Medusa CRM customers
-- **get_customer**: Get Medusa customer explicitly by ID
 - **get_order**: Get Medusa order by ID. Returns line items, billing/shipping addresses, payment status, fulfillment status
 - **get_product**: Get Medusa product by ID. Returns full details: variants, options, prices
-- **list_orders**: List Medusa orders
+- **get_store_config**: Get Medusa store configuration (supported currencies, default region)
 - **list_products**: List Medusa products. Medusa is a headless open-source commerce engine
 - **list_regions**: List Medusa regions (currency, tax rates, payment providers)
-- **get_store_config**: Get Medusa store configuration (supported currencies, default region)
 - **capture_payment**: Capture payment for a Medusa order
+- **get_customer**: Get Medusa customer explicitly by ID
+- **list_customers**: List Medusa CRM customers
+- **list_orders**: List Medusa orders
 
 
 ## 💬 Prompt Examples

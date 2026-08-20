@@ -33,14 +33,14 @@ Connect your AI agent directly to **Lattice HR**. With this server, your LLM can
 
 
 ## Available Tools (9)
-- **get_goal**: Get targeted details for a specific goal
 - **get_user**: Get details for a specific Lattice employee
-- **list_feedback**: Retrieve a list of feedback and praise instances
-- **list_goals**: Retrieve a list of all OKRs & Goals
 - **list_reviews**: Retrieve a list of performance review cycles
 - **list_tasks**: Retrieve pending tasks
 - **list_users**: Retrieve a list of employees/users from Lattice
 - **get_feedback**: Get details about a specific feedback entry
+- **get_goal**: Get targeted details for a specific goal
+- **list_feedback**: Retrieve a list of feedback and praise instances
+- **list_goals**: Retrieve a list of all OKRs & Goals
 - **get_review**: Get details regarding a specific review cycle
 
 
