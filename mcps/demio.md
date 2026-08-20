@@ -33,15 +33,15 @@ Integrate **Demio**, the modern webinar platform built for marketing, directly i
 
 
 ## Available Tools (10)
+- **register_user_for_webinar**: Register a new user for a specific webinar session
+- **get_webinar_details**: Get detailed settings and information for a specific webinar
+- **list_upcoming_webinars**: Identify webinars scheduled for the future
+- **get_account_metadata**: Retrieve metadata and limits for your Demio account
+- **get_session_details**: Get specific details for a webinar session, including attendees
+- **get_webinar_report**: Retrieve performance metrics and attendance reports for a webinar
 - **list_webinar_events**: List all upcoming and past webinars in your Demio account
 - **list_webinar_registrants**: List all people who have registered for a specific webinar
 - **list_webinar_sessions**: List all scheduled sessions for a specific webinar event
-- **register_user_for_webinar**: Register a new user for a specific webinar session
-- **get_session_details**: Get specific details for a webinar session, including attendees
-- **get_account_metadata**: Retrieve metadata and limits for your Demio account
-- **get_webinar_details**: Get detailed settings and information for a specific webinar
-- **get_webinar_report**: Retrieve performance metrics and attendance reports for a webinar
-- **list_upcoming_webinars**: Identify webinars scheduled for the future
 - **search_webinars_by_name**: Search for a webinar using a name keyword
 
 

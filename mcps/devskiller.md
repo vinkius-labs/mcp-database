@@ -33,16 +33,16 @@ Integrate **DevSkiller**, the technical screening and talent assessment platform
 
 
 ## Available Tools (10)
-- **list_recently_sent_invitations**: List test invitations sent in the last 24 hours
 - **get_account_metadata**: Retrieve metadata and limits for your DevSkiller account
-- **get_candidate_profile**: Get detailed information for a specific candidate
 - **list_high_score_candidates**: Identify candidates who achieved a score above a specific threshold
 - **search_candidates_by_identity**: Search for a candidate by name or email keyword
 - **get_candidate_assessment_report**: Retrieve the full assessment report for a candidate
+- **list_test_invitations**: List all sent test invitations and their current status
+- **get_candidate_profile**: Get detailed information for a specific candidate
 - **invite_candidate_to_test**: Send a new test invitation to a candidate
 - **list_assessment_candidates**: List all candidates in your DevSkiller account
-- **list_test_invitations**: List all sent test invitations and their current status
 - **list_available_tests**: List all assessment tests configured in your catalog
+- **list_recently_sent_invitations**: List test invitations sent in the last 24 hours
 
 
 ## 💬 Prompt Examples

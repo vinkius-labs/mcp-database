@@ -33,36 +33,36 @@ Integrate **Covalent**, the unified API for blockchain data, directly into your 
 
 
 ## Available Tools (10)
-- **get_block_details**: Resolves block hashes, parent hashes, timestamps, and transaction counts for the specified chain.
-
-Get details for a specific block height
-- **get_chains_status**: Resolves block height lag, current sync status, and API availability across all supported networks.
-
-Get the current indexing status of all supported chains
 - **get_dex_pools**: Resolves liquidity pool addresses, token pairs, reserve amounts, and volume metrics for the specified DEX.
 
 List liquidity pools for a DEX on a specific chain
-- **get_nft_balances**: Resolves NFT contract names, token IDs, metadata URLs, and image links across the specified blockchain network.
-
-Get NFT balances for a wallet address
-- **get_historical_portfolio**: Resolves daily balances, asset valuations in USD, and historical price points for the specified wallet.
-
-Get historical daily portfolio value for a wallet address
-- **get_token_transfers**: Resolves sender/receiver addresses, transfer values, and transaction timestamps for the specified wallet.
-
-Get historical token transfers for a wallet address
-- **get_transaction_details**: Touches raw log events, decoded event parameters, and gas consumption metrics boundary.
-
-Get full details and logs for a specific transaction hash
 - **get_transactions**: Resolves transaction hashes, block heights, timestamps, and log events for the specified wallet on the given chain.
 
 Get transaction history for a wallet address
 - **list_supported_chains**: Resolves chain IDs, human-readable names, and supported features (NFTs, Dex, etc.) for each blockchain.
 
 List all blockchains supported by Covalent
+- **get_block_details**: Resolves block hashes, parent hashes, timestamps, and transaction counts for the specified chain.
+
+Get details for a specific block height
+- **get_chains_status**: Resolves block height lag, current sync status, and API availability across all supported networks.
+
+Get the current indexing status of all supported chains
+- **get_historical_portfolio**: Resolves daily balances, asset valuations in USD, and historical price points for the specified wallet.
+
+Get historical daily portfolio value for a wallet address
+- **get_nft_balances**: Resolves NFT contract names, token IDs, metadata URLs, and image links across the specified blockchain network.
+
+Get NFT balances for a wallet address
 - **get_token_balances**: Resolves contract addresses, ticker symbols, token decimals, and current balances (formatted and raw) for the specified wallet and chain.
 
 Get token balances for a wallet address on a specific chain
+- **get_token_transfers**: Resolves sender/receiver addresses, transfer values, and transaction timestamps for the specified wallet.
+
+Get historical token transfers for a wallet address
+- **get_transaction_details**: Touches raw log events, decoded event parameters, and gas consumption metrics boundary.
+
+Get full details and logs for a specific transaction hash
 
 
 ## 💬 Prompt Examples

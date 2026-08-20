@@ -36,10 +36,10 @@ Connect your **DealHub** account to any AI agent and take full control of your C
 
 
 ## Available Tools (10)
-- **get_quote_status**: Retrieve explicit Cloud logging tracing explicit Vault limits
 - **list_opportunities**: Enumerate explicitly attached structured rules exporting active Billing
-- **list_quotes**: Identify precise active arrays spanning native Gateway auth
 - **list_users**: Identify precise active arrays spanning native Hold parsing
+- **get_quote_status**: Retrieve explicit Cloud logging tracing explicit Vault limits
+- **list_quotes**: Identify precise active arrays spanning native Gateway auth
 - **open_quote**: Perform structural extraction of properties driving active Account logic
 - **sync_crm**: Irreversibly vaporize explicit validations extracting rich Churn flags
 - **update_opportunity**: Inspect deep internal arrays mitigating specific Plan Math

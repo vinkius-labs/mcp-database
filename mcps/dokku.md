@@ -37,6 +37,15 @@ Connect your **Dokku** instance to any AI agent and take full control of your se
 
 
 ## Available Tools (10)
+- **list_apps**: Determines exactly which Docker containers are orchestrated internally by Dokku Core scaling plugins.
+
+List self-hosted Git-push Apps deployed via Dokku
+- **ps_restart**: Dokku tears down old running docker processes spanning the App UUID, allocating updated dynamic ports tied via standard proxies (Nginx), ensuring zero downtime deploys if multiple replicas are alive.
+
+Bounce the application container dynamically
+- **ps_scale**: Determines whether the "web" container spins zero replicas (suspension), or if "worker" background tasks spool up to 10 endpoints.
+
+Scale structural internal application containers
 - **create_app**: Performs the structural network allocations setting up reverse-proxy hooks (Nginx/Traefik) preceding the actual codebase transfer.
 
 Provision a root App boundary wrapper on the Dokku VM
@@ -46,18 +55,9 @@ Deallocate an App and dismantle all bound containers completely
 - **get_logs**: Bypasses SSH to investigate explicit request stack traces, crashing node backtraces, or slow SQL queries happening inside the closed containers.
 
 Stream Dokku Application Docker stdout and stderr logs
-- **list_apps**: Determines exactly which Docker containers are orchestrated internally by Dokku Core scaling plugins.
-
-List self-hosted Git-push Apps deployed via Dokku
 - **list_config**: env` or `ENV` dictionary bound dynamically via the `dokku config` plugin. Used strictly to observe runtime inputs (SQL credentials, external REST API tokens, Node_ENV bindings) governing app execution.
 
 Extract internal Environment variables loaded into the App
-- **ps_restart**: Dokku tears down old running docker processes spanning the App UUID, allocating updated dynamic ports tied via standard proxies (Nginx), ensuring zero downtime deploys if multiple replicas are alive.
-
-Bounce the application container dynamically
-- **ps_scale**: Determines whether the "web" container spins zero replicas (suspension), or if "worker" background tasks spool up to 10 endpoints.
-
-Scale structural internal application containers
 - **set_config**: Triggers a mandatory rolling app deployment unless the `--no-restart` daemon flag applies natively to the process. Critical for updating expired API auth tokens.
 
 Inject Environment Variables into a running Dokku Application

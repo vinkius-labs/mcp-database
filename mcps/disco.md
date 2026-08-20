@@ -34,12 +34,6 @@ Connect **DISCO**, the leading legal technology platform, to any AI agent throug
 
 ## Available Tools (6)
 - **get_data_usage_changes_metadata**: Retrieve the metadata schema for data-usage change events
-- **get_metrics**: Pass a JSON payload to scope the query (e.g. metric name, date range, review-db filter).
-
-Query review metrics from DISCO
-- **get_reviewdb_size**: Pass an optional JSON payload to filter by review-db name or date.
-
-Get the review database size metric
 - **list_datasets**: Use the optional search to filter by name.
 
 List datasets (matters) available in your DISCO organization
@@ -47,6 +41,12 @@ List datasets (matters) available in your DISCO organization
 - **list_data_usage_changes**: g. ingest, deletion) across datasets.
 
 List data-usage change events recorded for your datasets
+- **get_metrics**: Pass a JSON payload to scope the query (e.g. metric name, date range, review-db filter).
+
+Query review metrics from DISCO
+- **get_reviewdb_size**: Pass an optional JSON payload to filter by review-db name or date.
+
+Get the review database size metric
 
 
 ## 💬 Prompt Examples

@@ -34,10 +34,10 @@ Connect your AI assistant to **Concord**, the open-source workflow orchestration
 ## Available Tools (10)
 - **list_running_processes**: Quickly list all currently running processes
 - **terminate_process**: Stop a running process execution
-- **get_process**: Retrieve detailed information about a specific process execution
 - **get_process_log**: Retrieve the execution logs for a specific process
 - **start_process**: Trigger a new process execution in Concord
 - **list_repositories**: Retrieve a list of repositories configured for a project
+- **get_process**: Retrieve detailed information about a specific process execution
 - **get_project_details**: Retrieve detailed information about a specific project
 - **list_organizations**: Retrieve a list of all organizations in Concord
 - **list_processes**: Retrieve a list of process executions in Concord

@@ -33,18 +33,6 @@ Integrate **Cordial**, the cross-channel marketing platform, directly into your 
 
 
 ## Available Tools (10)
-- **get_account_details**: Resolves system-level account identifiers, plan configuration, and core platform settings.
-
-Get metadata about your Cordial account
-- **list_contacts**: Resolves contact identity properties including email addresses, channel opt-ins, and attribute metadata across the Cordial system boundary.
-
-List subscribers in Cordial
-- **list_marketing_campaigns**: Resolves campaign identity and status, including scheduling data and high-level performance indicators.
-
-List marketing campaigns and their performance
-- **list_audience_segments**: Resolves list identity properties such as segment IDs, names, and subscriber counts.
-
-List contact segments and audience groups
 - **list_messages**: Resolves batch and transactional message definitions, including templates, subject lines, and sender profiles.
 
 List batch and transactional messages
@@ -54,15 +42,27 @@ List supplement collections (external data tables)
 - **search_campaigns_by_name**: Resolves a subset of campaigns matching the name criteria across the platform boundary.
 
 Search for marketing campaigns by name
-- **upsert_subscriber**: Creates or updates a profile with identity properties, channel preferences, and custom attributes.
-
-Create or update a subscriber profile
-- **get_subscriber_profile**: Resolves granular profile data including custom attributes, device tokens, and list memberships.
-
-Get full profile and attributes for a subscriber
 - **list_automation_messages**: Resolves active automated message definitions and workflow status for triggered communications.
 
 List active automated message workflows
+- **get_account_details**: Resolves system-level account identifiers, plan configuration, and core platform settings.
+
+Get metadata about your Cordial account
+- **get_subscriber_profile**: Resolves granular profile data including custom attributes, device tokens, and list memberships.
+
+Get full profile and attributes for a subscriber
+- **list_audience_segments**: Resolves list identity properties such as segment IDs, names, and subscriber counts.
+
+List contact segments and audience groups
+- **list_contacts**: Resolves contact identity properties including email addresses, channel opt-ins, and attribute metadata across the Cordial system boundary.
+
+List subscribers in Cordial
+- **list_marketing_campaigns**: Resolves campaign identity and status, including scheduling data and high-level performance indicators.
+
+List marketing campaigns and their performance
+- **upsert_subscriber**: Creates or updates a profile with identity properties, channel preferences, and custom attributes.
+
+Create or update a subscriber profile
 
 
 ## 💬 Prompt Examples

@@ -33,13 +33,13 @@ Integrate **Digital Turbine**, the leading independent mobile growth platform, d
 
 
 ## Available Tools (10)
-- **get_platform_metadata**: Retrieve metadata and limits for your Digital Turbine account
 - **get_app_monetization_details**: Get detailed monetization settings and status for a specific app
 - **get_campaign_analytics**: Get detailed settings and performance metrics for a specific campaign
+- **get_platform_metadata**: Retrieve metadata and limits for your Digital Turbine account
 - **get_performance_summary**: Retrieve high-level performance metrics including installs and CTR
 - **get_revenue_report**: Retrieve a revenue report for a specific date range
-- **list_monetized_apps**: List all mobile applications integrated for monetization
 - **list_growth_campaigns**: List all mobile growth and acquisition campaigns in your Digital Turbine account
+- **list_monetized_apps**: List all mobile applications integrated for monetization
 - **list_high_engagement_campaigns**: Identify campaigns with a CTR above a certain threshold (mock logic)
 - **list_top_performing_apps**: Identify the apps with the highest revenue in your account (mock logic)
 - **search_campaigns_by_name**: Search for a campaign using a name keyword

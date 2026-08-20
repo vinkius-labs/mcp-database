@@ -33,36 +33,36 @@ Integrate **Cradl AI**, the advanced document data extraction platform, directly
 
 
 ## Available Tools (10)
-- **get_batch_details**: Touches individual file statuses and batch-level processing summary boundaries.
-
-Get details for a specific batch of documents
 - **get_flow_details**: Touches integration points and document routing rules boundaries.
 
 Get structure and settings for a specific flow
 - **get_model_details**: Touches schema definitions, extraction accuracy metrics, and model metadata boundaries.
 
 Get details for a specific extraction model
+- **list_extraction_models**: Resolves model names, versions, and training statuses for document analysis.
+
+List all data extraction models in Cradl AI
+- **extract_data_from_url**: Touches OCR engine, model prediction, and data normalization boundary.
+
+Trigger a new data extraction prediction from a file URL
+- **get_batch_details**: Touches individual file statuses and batch-level processing summary boundaries.
+
+Get details for a specific batch of documents
 - **get_task_status**: Resolves confidence scores and extracted key-value pairs from the document.
 
 Check the status and results of a document task
 - **list_batches**: Resolves batch identifiers, creation dates, and total document counts within each batch.
 
 List all document batches
-- **list_extraction_models**: Resolves model names, versions, and training statuses for document analysis.
-
-List all data extraction models in Cradl AI
 - **list_processing_tasks**: Resolves task IDs, statuses (PENDING, COMPLETED, FAILED), and processing timestamps.
 
 List recent document processing tasks
-- **search_models_by_name**: Resolves model metadata based on a name keyword search.
-
-Search for extraction models by name
-- **extract_data_from_url**: Touches OCR engine, model prediction, and data normalization boundary.
-
-Trigger a new data extraction prediction from a file URL
 - **list_workflows**: Resolves flow IDs, triggers, and configured processing steps.
 
 List all document processing flows
+- **search_models_by_name**: Resolves model metadata based on a name keyword search.
+
+Search for extraction models by name
 
 
 ## 💬 Prompt Examples

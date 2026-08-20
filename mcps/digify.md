@@ -34,15 +34,15 @@ Integrate **Digify**, the leading document security and virtual data room (VDR) 
 
 ## Available Tools (10)
 - **get_security_account_metadata**: Retrieve metadata and usage limits for your Digify account
-- **get_dataroom_details**: Get detailed settings and member lists for a specific data room
-- **quick_file_audit**: Retrieve a high-level summary of file views and security rights
-- **list_virtual_datarooms**: List all virtual data rooms (VDRs) in your account
 - **list_expired_secure_files**: Identify secure files that have reached their expiration date (mock logic)
-- **list_secure_files**: List all secure files you have uploaded to Digify
 - **list_file_recipients**: List all people who have been granted access to a specific secure file
-- **search_secure_files**: Search for secure files by filename keyword
 - **get_secure_file_details**: Get detailed information and security settings for a specific file
+- **get_dataroom_details**: Get detailed settings and member lists for a specific data room
 - **get_file_access_statistics**: Retrieve detailed analytics on who viewed your file and for how long
+- **list_secure_files**: List all secure files you have uploaded to Digify
+- **list_virtual_datarooms**: List all virtual data rooms (VDRs) in your account
+- **quick_file_audit**: Retrieve a high-level summary of file views and security rights
+- **search_secure_files**: Search for secure files by filename keyword
 
 
 ## 💬 Prompt Examples

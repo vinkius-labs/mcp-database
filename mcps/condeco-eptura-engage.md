@@ -36,16 +36,16 @@ Connect your **Condeco** (now Eptura Engage) account to any AI agent and take fu
 
 
 ## Available Tools (10)
-- **list_locations**: Identify bounded office capacities discovering standard enterprise real estate limits
 - **list_rooms**: Enumerate explicitly mapped meeting spaces filtering capacity and feature sets
-- **get_room_availability**: Determine real-time usage states extracting explicit chronological meeting blocks
-- **book_room**: Claim exclusive scheduling capabilities tracing synchronization triggers upon physical spaces
 - **cancel_room_booking**: Revoke exact chronological reservations matching O365 sync boundaries
 - **list_desks**: Identify specific bounding capacities covering mapped hot desks
-- **book_desk**: Claim exclusive usage targeting specific hot desking bounds
 - **cancel_desk_booking**: Revoke claimed exclusive desk reservations natively
 - **list_bookings**: Extract chronological logs resolving explicit user booking reservations
+- **book_desk**: Claim exclusive usage targeting specific hot desking bounds
+- **book_room**: Claim exclusive scheduling capabilities tracing synchronization triggers upon physical spaces
 - **check_in_to_location**: Trigger physical presence capabilities executing explicit local access controls
+- **get_room_availability**: Determine real-time usage states extracting explicit chronological meeting blocks
+- **list_locations**: Identify bounded office capacities discovering standard enterprise real estate limits
 
 
 ## 💬 Prompt Examples

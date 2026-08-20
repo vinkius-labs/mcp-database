@@ -33,6 +33,12 @@ Integrate **Daftra**, the comprehensive cloud-based ERP and accounting software,
 
 
 ## Available Tools (10)
+- **list_invoices**: Resolves invoice IDs, numbers, totals, and payment statuses. Touches the financial and sales boundary.
+
+List all sales invoices
+- **search_clients_by_name**: Resolves matching client profiles. Touches the search and discovery boundary.
+
+Search for a client by name keyword
 - **create_client**: Resolves the newly generated client ID. Mutates the client and contact database state.
 
 Add a new client to the ERP database
@@ -45,24 +51,18 @@ Get full details for a specific sales invoice
 - **get_site_metadata**: Resolves site identifiers and organizational settings. Interacts with the system configuration boundary.
 
 Retrieve general settings and metadata for your Daftra site
-- **list_expenses**: Resolves expense IDs, categories, and amounts. Touches the accounting and expense tracking boundary.
-
-List all recorded business expenses
-- **list_invoices**: Resolves invoice IDs, numbers, totals, and payment statuses. Touches the financial and sales boundary.
-
-List all sales invoices
-- **list_inventory_products**: Resolves product IDs, names, and pricing. Interacts with the inventory management boundary.
-
-List all products and services in the inventory
-- **search_clients_by_name**: Resolves matching client profiles. Touches the search and discovery boundary.
-
-Search for a client by name keyword
 - **list_clients**: Resolves client IDs, business names, and contact emails. Interacts with the client management boundary.
 
 List all clients in your Daftra account
 - **list_estimates**: Resolves estimate IDs, dates, and amounts. Interacts with the sales pipeline and quoting boundary.
 
 List all price estimates and quotes
+- **list_expenses**: Resolves expense IDs, categories, and amounts. Touches the accounting and expense tracking boundary.
+
+List all recorded business expenses
+- **list_inventory_products**: Resolves product IDs, names, and pricing. Interacts with the inventory management boundary.
+
+List all products and services in the inventory
 
 
 ## 💬 Prompt Examples
