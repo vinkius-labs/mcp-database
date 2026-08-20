@@ -36,15 +36,15 @@ Connect your **Finmo** account to any AI agent and automate your global treasury
 
 
 ## Available Tools (12)
+- **list_customers**: List customers
+- **list_payin_methods**: List pay-in methods
+- **list_payouts**: List payouts
+- **list_refunds**: List refunds
 - **create_customer**: Create a new customer
 - **create_payout**: Create a new payout
 - **get_fx_rate**: Get real-time FX rate
 - **list_beneficiaries**: List payout beneficiaries
-- **list_customers**: List customers
-- **list_payin_methods**: List pay-in methods
 - **list_payins**: List pay-ins
-- **list_payouts**: List payouts
-- **list_refunds**: List refunds
 - **list_virtual_accounts**: List virtual accounts
 - **list_wallets**: List organization wallets
 - **create_payin**: Create a new pay-in
