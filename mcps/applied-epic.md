@@ -29,16 +29,16 @@ The **Applied Epic MCP Server** provides a powerful natural language interface t
 
 
 ## Available Tools (9)
+- **get_client**: Get details for a specific client
+- **get_policy**: Get details for a specific policy
+- **list_attachments**: List all file attachments
 - **list_clients**: List all insurance clients in Applied Epic
 - **list_lines**: g., Workers Comp, GL) for a specific policyId.
 
 List lines of business for a policy
-- **get_policy**: Get details for a specific policy
 - **create_activity**: Create a new activity record
 - **get_account_check**: Verify Applied Epic account connection
-- **get_client**: Get details for a specific client
 - **list_activities**: List all activities (tasks/logs)
-- **list_attachments**: List all file attachments
 - **list_policies**: List all insurance policies
 
 

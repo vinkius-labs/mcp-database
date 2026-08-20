@@ -35,19 +35,19 @@ Connect your **Kontent.ai** project to any AI agent and take full control of you
 
 
 ## Available Tools (10)
-- **upsert_item**: Note: this does not update the language variant fields (the actual content text)—use upsert_language_variant for that.
-
-Create or update a top-level content item container
-- **get_item**: Retrieve metadata for a specific Kontent.ai item by codename
-- **get_taxonomy**: Get details and nested terms for a specific Taxonomy group
 - **get_content_type**: Retrieve the exact structural fields of a specific Content Type
-- **list_assets**: List uploaded Media Assets and Document files
+- **get_item**: Retrieve metadata for a specific Kontent.ai item by codename
 - **list_items**: ai project space.
 
 List all content items in the Kontent.ai environment
-- **list_taxonomies**: List all hierarchical Taxonomies (tags/categories)
+- **get_taxonomy**: Get details and nested terms for a specific Taxonomy group
+- **list_assets**: List uploaded Media Assets and Document files
 - **list_content_types**: List all Content Type schemas registered in the environment
+- **list_taxonomies**: List all hierarchical Taxonomies (tags/categories)
 - **publish_variant**: Publish a specific language variant of an item to Delivery APIs
+- **upsert_item**: Note: this does not update the language variant fields (the actual content text)—use upsert_language_variant for that.
+
+Create or update a top-level content item container
 - **upsert_language_variant**: g. `default`). This places the variant into Draft status.
 
 Update the actual content fields of an item for a specific language

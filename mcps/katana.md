@@ -37,16 +37,16 @@ Connect your **Katana Cloud Manufacturing** account to any AI agent to streamlin
 - **create_sales_order**: Requires a customer ID.
 
 Create a new sales order
+- **get_inventory_by_variant**: Get inventory levels for a specific variant
 - **get_sales_order**: Get details for a specific sales order
 - **list_inventory**: List overall inventory status
-- **get_inventory_by_variant**: Get inventory levels for a specific variant
 - **list_products**: List all products in Katana
+- **list_materials**: List all materials in Katana
+- **list_sales_orders**: List all sales orders
 - **list_customers**: List all customers
 - **list_purchase_orders**: List all purchase orders
-- **list_sales_orders**: List all sales orders
 - **list_suppliers**: List all suppliers
 - **list_manufacturing_orders**: List all manufacturing orders
-- **list_materials**: List all materials in Katana
 
 
 ## 💬 Prompt Examples

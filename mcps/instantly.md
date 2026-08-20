@@ -33,10 +33,10 @@ Connect **Instantly** to your AI agent and manage your high-volume cold email pl
 
 
 ## Available Tools (10)
+- **list_accounts**: List sending accounts
+- **add_leads**: Add leads to a campaign
 - **get_account_stats**: Get account summary stats
 - **get_campaign**: Get campaign details
-- **add_leads**: Add leads to a campaign
-- **list_accounts**: List sending accounts
 - **get_campaign_analytics**: Get campaign analytics
 - **list_campaigns**: List all campaigns
 - **list_leads**: List leads in a campaign

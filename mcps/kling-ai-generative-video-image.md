@@ -35,34 +35,34 @@ Connect your **Kling AI** account to any AI agent and take full control of state
 
 
 ## Available Tools (10)
-- **image_to_video**: Returns a Task ID for polling.
-
-Animate a static image into a video using Kling AI
-- **get_video_task**: If succeeded, returns the final MP4 URLs.
-
-Check the processing status and retrieve results of a Kling video task
 - **list_video_tasks**: List recent Kling AI video generation tasks
-- **get_tryon_task**: Once succeeded, retrieves the final composited image URL.
-
-Check the status of an AI Virtual Try-On task
-- **text_to_video**: Returns a Task ID that must be polled until completion (status: succeed). Models: kling-v1, kling-v2, kling-v3.
-
-Generate a cinematic AI video from a text prompt using Kling V3
-- **text_to_image**: Generates up to 4 images. Returns a Task ID for polling.
-
-Generate images from text using Kolors AI model via Kling
 - **get_image_task**: When status is succeed, returns the generated image URLs.
 
 Check the processing status of a Kling image task
 - **virtual_try_on**: Blends a source garment image naturally onto a target person's photo. Returns a Task ID.
 
 Map digital garments onto human models using AI Virtual Try-On
-- **lip_sync_video**: Returns a Task ID.
-
-Drive mouth movements and synchronize speech to a video portrait
 - **get_lipsync_task**: Retrieve the final MP4 when succeed.
 
 Check the status of an AI Lip-Sync task
+- **get_tryon_task**: Once succeeded, retrieves the final composited image URL.
+
+Check the status of an AI Virtual Try-On task
+- **get_video_task**: If succeeded, returns the final MP4 URLs.
+
+Check the processing status and retrieve results of a Kling video task
+- **image_to_video**: Returns a Task ID for polling.
+
+Animate a static image into a video using Kling AI
+- **lip_sync_video**: Returns a Task ID.
+
+Drive mouth movements and synchronize speech to a video portrait
+- **text_to_image**: Generates up to 4 images. Returns a Task ID for polling.
+
+Generate images from text using Kolors AI model via Kling
+- **text_to_video**: Returns a Task ID that must be polled until completion (status: succeed). Models: kling-v1, kling-v2, kling-v3.
+
+Generate a cinematic AI video from a text prompt using Kling V3
 
 
 ## 💬 Prompt Examples

@@ -35,15 +35,15 @@ Connect your **JustCall** account to any AI agent and manage phone communication
 
 
 ## Available Tools (12)
-- **create_contact**: Create a new contact
 - **get_account_profile**: Get my profile
-- **get_call_details**: Get call details
 - **get_contact**: Get contact details
-- **get_message_details**: Get message details
 - **list_account_numbers**: List JustCall numbers
+- **create_contact**: Create a new contact
+- **get_call_details**: Get call details
+- **get_message_details**: Get message details
+- **list_calls**: List phone calls
 - **list_team_users**: List team members
 - **send_message**: Send SMS/MMS
-- **list_calls**: List phone calls
 - **list_contacts**: List phone contacts
 - **list_messages**: List SMS/MMS messages
 - **list_webhooks**: List active webhooks

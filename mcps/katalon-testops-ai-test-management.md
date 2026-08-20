@@ -35,28 +35,28 @@ Connect your **Katalon TestOps** account to any AI agent and take full control o
 
 
 ## Available Tools (10)
-- **get_test_result**: Get full details of a single Katalon test result
-- **list_execution_environments**: List execution environments in a Katalon project
-- **list_project_releases**: Returns release names, scheduled dates, and aggregated test run statistics.
-
-List defined releases in a Katalon project
-- **list_projects**: Returns project names, IDs, and descriptions.
-
-List all projects on Katalon TestOps
-- **get_project**: Get full details of a Katalon project
 - **list_test_runs**: Returns run IDs, pass/fail status, total counts, and execution durations.
 
 List test runs within a Katalon project
-- **get_test_run**: Get full details of a Katalon test run
+- **list_projects**: Returns project names, IDs, and descriptions.
+
+List all projects on Katalon TestOps
 - **rerun_test_run**: Returns the newly created test run ID.
 
 Re-run an existing Katalon test run
 - **list_test_results**: Returns durations, statuses, and error messages.
 
 List detailed test results within a test run
+- **get_project**: Get full details of a Katalon project
 - **list_project_builds**: Returns build identifier names, IDs, and the count of associated test runs.
 
 List software builds in a Katalon project
+- **get_test_result**: Get full details of a single Katalon test result
+- **get_test_run**: Get full details of a Katalon test run
+- **list_execution_environments**: List execution environments in a Katalon project
+- **list_project_releases**: Returns release names, scheduled dates, and aggregated test run statistics.
+
+List defined releases in a Katalon project
 
 
 ## 💬 Prompt Examples

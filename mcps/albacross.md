@@ -35,14 +35,14 @@ Connect your **Albacross** account to your AI agent to unlock professional B2B l
 
 
 ## Available Tools (8)
-- **identify_company_by_ip**: Identify company by IP
-- **list_segments**: List lead segments
-- **list_leads**: List identified companies
-- **get_lead_details**: Get lead metadata
-- **list_workflows**: List active workflows
 - **list_industries**: List industry sectors
-- **get_account_info**: Get account metadata
+- **list_leads**: List identified companies
+- **list_segments**: List lead segments
+- **list_workflows**: List active workflows
+- **get_lead_details**: Get lead metadata
 - **get_usage_stats**: Get API usage limits
+- **identify_company_by_ip**: Identify company by IP
+- **get_account_info**: Get account metadata
 
 
 ## 💬 Prompt Examples

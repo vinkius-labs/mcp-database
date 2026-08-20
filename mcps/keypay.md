@@ -36,10 +36,10 @@ Connect your **KeyPay** (now Employment Hero Payroll) account to any AI agent to
 ## Available Tools (10)
 - **list_pay_runs**: List pay runs for a business
 - **list_employees**: List employees for a business
-- **get_business_details**: Get details for a specific business
 - **get_employee_details**: Get details for a specific employee
-- **get_pay_run_details**: Get details for a specific pay run
 - **list_leave_requests**: List leave requests for a business
+- **get_business_details**: Get details for a specific business
+- **get_pay_run_details**: Get details for a specific pay run
 - **list_pay_slips**: List payslips for an employee
 - **list_businesses**: List all businesses associated with the account
 - **list_pay_run_deductions**: List deductions for a specific pay run
