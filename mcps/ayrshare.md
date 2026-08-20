@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire social media presence with **Ay
 
 
 ## Available Tools (12)
-- **create_post**: Publish a post immediately to social media platforms
-- **list_history**: List history of posts
 - **get_account_check**: Verify Ayrshare connection
-- **create_profile**: Create a new user profile
+- **list_history**: List history of posts
 - **delete_auto_schedule**: Delete auto-schedule for a platform
 - **delete_profile**: Delete a user profile
+- **create_post**: Publish a post immediately to social media platforms
+- **create_profile**: Create a new user profile
 - **get_post_analytics**: Get engagement statistics for a specific post
 - **get_social_analytics**: Get profile-level analytics for a specific social network
 - **list_auto_schedules**: List all auto-schedule settings

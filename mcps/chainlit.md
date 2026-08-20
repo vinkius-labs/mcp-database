@@ -33,12 +33,12 @@ Connect your **Chainlit Cloud** projects to any AI agent and embrace a new parad
 
 
 ## Available Tools (6)
+- **list_steps**: List raw programmatic interaction steps explicitly defining prompts and generations inside a single thread
+- **get_stats**: Retrieve explicit analytics statistics representing traffic boundaries and resource consumptions over native projects
+- **get_thread**: Retrieve the exact payload for a specific conversational thread locating exact node topologies
+- **list_feedbacks**: List absolute user review feedbacks rating explicitly conversational accuracy and value across deployments
 - **list_projects**: List explicit globally configured Chainlit Cloud projects managing independent app tracking spaces
 - **list_threads**: List conversational threads identifying user interaction boundaries inside a specific deployed project
-- **get_thread**: Retrieve the exact payload for a specific conversational thread locating exact node topologies
-- **list_steps**: List raw programmatic interaction steps explicitly defining prompts and generations inside a single thread
-- **list_feedbacks**: List absolute user review feedbacks rating explicitly conversational accuracy and value across deployments
-- **get_stats**: Retrieve explicit analytics statistics representing traffic boundaries and resource consumptions over native projects
 
 
 ## 💬 Prompt Examples

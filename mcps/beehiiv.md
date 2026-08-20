@@ -40,12 +40,12 @@ Eliminate the friction of switching tabs between IDEs and your ESP. Keep writing
 - **get_subscription**: Get exact details of a Beehiiv subscription
 - **get_publication**: Get specific Beehiiv publication metadata
 - **list_subscriptions**: List specific Beehiiv active subscribers
+- **list_automations**: List native conditional email journeys
+- **list_segments**: List specific internal Beehiiv segments
 - **create_subscription**: Register a new subscriber explicitly
-- **list_posts**: List explicit newsletter posts natively published
 - **get_post**: Retrieve explicit content of a specific Post
 - **get_post_stats**: Get aggregated post performance statistics
-- **list_segments**: List specific internal Beehiiv segments
-- **list_automations**: List native conditional email journeys
+- **list_posts**: List explicit newsletter posts natively published
 
 
 ## 💬 Prompt Examples

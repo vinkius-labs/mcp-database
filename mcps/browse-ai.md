@@ -39,15 +39,15 @@ No more manual logging into the dashboard to check individual extraction tasks. 
 - **create_monitor**: Add new schedule
 - **remove_webhook**: Delete robot webhook
 - **get_user_profile**: Get account info
-- **get_robot_details**: Get robot info
-- **get_usage_quotas**: Check credit balance
 - **get_run_status**: Check task progress
 - **list_bulk_operations**: List bulk task runs
-- **list_active_monitors**: List scheduled scrapers
-- **list_robot_history**: List past runs
 - **list_robot_webhooks**: Get event configs
 - **trigger_robot_run**: Start scraping task
 - **list_robots**: List scraping robots
+- **get_robot_details**: Get robot info
+- **get_usage_quotas**: Check credit balance
+- **list_active_monitors**: List scheduled scrapers
+- **list_robot_history**: List past runs
 
 
 ## 💬 Prompt Examples

@@ -35,13 +35,13 @@ Scale unified communications reliably without building massive custom Webhook ar
 
 
 ## Available Tools (10)
-- **delete_media**: Delete a stored media asset
-- **get_toll_free**: List toll-free number verifications
 - **get_health**: Ping Bandwidth API Health
-- **list_campaigns**: List 10DLC messaging campaigns
+- **get_toll_free**: List toll-free number verifications
 - **list_applications**: List Messaging Applications
-- **list_media**: List uploaded media files in Bandwidth storage
+- **delete_media**: Delete a stored media asset
 - **get_campaign**: Get details for a specific 10DLC campaign
+- **list_campaigns**: List 10DLC messaging campaigns
+- **list_media**: List uploaded media files in Bandwidth storage
 - **list_messages**: List sent or received messages log
 - **send_mms**: Send an MMS message with media payload
 - **send_sms**: Send an SMS message via Bandwidth API

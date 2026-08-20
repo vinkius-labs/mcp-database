@@ -35,15 +35,15 @@ Connect your **Builder.io** account to any AI agent and orchestrate your visual 
 
 
 ## Available Tools (10)
-- **list_models**: List all content models in the space
 - **create_content_entry**: Create a new content entry
 - **get_content_entry**: Get a specific content entry
 - **get_model**: Get details of a specific content model
-- **get_space**: Get details of a specific space
-- **get_api_usage**: Retrieve API usage statistics
 - **list_content**: List content entries for a specific model
 - **list_spaces**: List all spaces in your organization
 - **list_symbols**: List all reusable symbols
+- **get_api_usage**: Retrieve API usage statistics
+- **get_space**: Get details of a specific space
+- **list_models**: List all content models in the space
 - **update_content_entry**: Update an existing content entry
 
 

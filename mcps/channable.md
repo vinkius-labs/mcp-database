@@ -36,13 +36,13 @@ Connect your **Channable** account to any AI agent and orchestrate your marketpl
 
 
 ## Available Tools (8)
-- **get_order_details**: Get detailed information for a specific order
 - **get_project_summary**: Get summary details for a specific project
-- **list_connected_channels**: List connected marketplace channels for a project
-- **list_marketplace_orders**: List orders from connected marketplaces for a project
 - **list_channable_projects**: List all projects for the company
-- **list_customer_returns**: List customer returns for a specific project
+- **list_marketplace_orders**: List orders from connected marketplaces for a project
 - **list_order_shipments**: List shipments and tracking info for a project
+- **list_connected_channels**: List connected marketplace channels for a project
+- **get_order_details**: Get detailed information for a specific order
+- **list_customer_returns**: List customer returns for a specific project
 - **update_product_stock**: Update stock levels for products in a project
 
 

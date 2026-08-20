@@ -36,16 +36,16 @@ Connect your **CBRE Econometric Advisors (EA)** licensed subscription to any AI 
 
 
 ## Available Tools (8)
-- **get_macroeconomic_data**: Get macro indicators (population, employment, income) for a market
-- **list_asset_sectors**: List available real estate asset sectors
-- **list_submarkets**: List submarkets within a specific major market
 - **get_market_cap_rates**: Retrieve cap rates and NOI metrics for a market sector
 - **get_market_forecasts**: Retrieve historical and forecast data for a market
 - **get_market_sector_data**: Get current metrics for a specific market and sector
+- **search_cbre_assets**: Search for specific real estate assets or indices
+- **get_macroeconomic_data**: Get macro indicators (population, employment, income) for a market
+- **list_asset_sectors**: List available real estate asset sectors
 - **list_cbre_markets**: S., Canada, Europe, APAC) from the CBRE EA database.
 
 List globalThis real estate markets covered by CBRE EA
-- **search_cbre_assets**: Search for specific real estate assets or indices
+- **list_submarkets**: List submarkets within a specific major market
 
 
 ## 💬 Prompt Examples

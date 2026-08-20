@@ -35,17 +35,17 @@ Connect your **Canny** account to any AI agent and orchestrate your product feed
 
 
 ## Available Tools (11)
-- **create_feedback_post**: Create a new feedback post (idea, bug, etc)
-- **add_comment**: Add a comment to a feedback post
-- **vote_on_post**: Add a vote to a feedback post
 - **get_account_info**: Retrieve core account information
-- **get_board_details**: Get details of a specific board
 - **get_post_details**: Get details of a specific feedback post
-- **list_feedback_boards**: List all feedback boards
 - **list_comments**: List comments for a specific feedback post
-- **list_feedback_posts**: List feedback items (posts) from a specific board
+- **list_feedback_boards**: List all feedback boards
 - **list_users**: List users who have interacted with your boards
 - **list_votes**: List votes for a specific post
+- **vote_on_post**: Add a vote to a feedback post
+- **add_comment**: Add a comment to a feedback post
+- **create_feedback_post**: Create a new feedback post (idea, bug, etc)
+- **get_board_details**: Get details of a specific board
+- **list_feedback_posts**: List feedback items (posts) from a specific board
 
 
 ## 💬 Prompt Examples

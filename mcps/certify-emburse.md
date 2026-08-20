@@ -38,12 +38,12 @@ Connect your **Certify (Emburse Professional)** account to any AI agent and orch
 ## Available Tools (8)
 - **list_certify_receipts**: Retrieve receipts stored in the system
 - **get_gl_dimensions**: Retrieve General Ledger dimensions and lists
-- **list_certify_expenses**: List individual expense lines
-- **list_certify_departments**: List company departments
-- **list_invoice_reports**: List reports containing multiple invoices
 - **list_certify_invoices**: List accounts payable invoices
-- **list_expense_reports**: List expense reports
 - **list_certify_users**: List employee users in the system
+- **list_invoice_reports**: List reports containing multiple invoices
+- **list_certify_departments**: List company departments
+- **list_certify_expenses**: List individual expense lines
+- **list_expense_reports**: List expense reports
 
 
 ## 💬 Prompt Examples

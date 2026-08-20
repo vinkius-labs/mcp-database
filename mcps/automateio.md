@@ -34,12 +34,12 @@ Connect your **Automate.io** account to any AI agent and take full control of yo
 
 
 ## Available Tools (6)
-- **get_usage**: Retrieve the active account billing usage statistics
-- **list_bots**: List all Automate.io bots
 - **get_bot**: Get explicit details of a single bot configuration
-- **list_bot_runs**: List chronological execution runs for a bot
-- **list_connections**: List all authorized integration app connections
 - **list_apps**: List explicitly available supported integrations
+- **list_bot_runs**: List chronological execution runs for a bot
+- **list_bots**: List all Automate.io bots
+- **get_usage**: Retrieve the active account billing usage statistics
+- **list_connections**: List all authorized integration app connections
 
 
 ## 💬 Prompt Examples

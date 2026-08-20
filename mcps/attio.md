@@ -36,12 +36,8 @@ No more manual updating of individual CRM records or missing critical relationsh
 
 
 ## Available Tools (14)
-- **create_record**: Pass attribute values as JSON (e.g., {"name": [{"value": "Acme Corp"}]}).
-
-Create a new record
 - **get_object**: Get object schema
 - **list_objects**: List all CRM objects
-- **create_task**: Create a new task
 - **delete_record**: This action is irreversible.
 
 Delete a record
@@ -52,13 +48,17 @@ Delete a record
 
 List records for any object
 - **list_tasks**: List all tasks
-- **update_record**: Only provided attributes are changed.
-
-Update an existing record
 - **check_attio_status**: Verify Attio API connectivity
 - **create_note**: Useful for logging meeting notes, call summaries, or updates.
 
 Create a note on a record
+- **create_record**: Pass attribute values as JSON (e.g., {"name": [{"value": "Acme Corp"}]}).
+
+Create a new record
+- **create_task**: Create a new task
+- **update_record**: Only provided attributes are changed.
+
+Update an existing record
 - **get_record**: Get a specific record
 
 

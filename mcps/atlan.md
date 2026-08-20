@@ -36,13 +36,13 @@ Your AI agent gains deep context about what data means, where it lives, and who 
 
 
 ## Available Tools (6)
-- **search_assets**: Search for data assets in the Atlan Data Catalog
 - **list_personas**: List all Atlan Personas
 - **list_users**: List all users in the Atlan workspace
-- **list_glossaries**: List all business glossaries in Atlan
+- **search_assets**: Search for data assets in the Atlan Data Catalog
 - **list_classifications**: ) configured in Atlan for data governance purposes.
 
 List all classifications defined in Atlan
+- **list_glossaries**: List all business glossaries in Atlan
 - **list_purposes**: List all Atlan Purposes
 
 

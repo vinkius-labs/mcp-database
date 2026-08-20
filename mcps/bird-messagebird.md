@@ -33,22 +33,22 @@ Connect **Bird** (formerly MessageBird) to your AI agents to orchestrate omnicha
 
 
 ## Available Tools (10)
-- **create_contact**: Identifiers should be a JSON string, e.g., '[{"key":"phone","value":"+123"}]'.
-
-Create a new contact profile in the Bird workspace
 - **get_call**: Fetch the details of a single voice call
 - **get_contact**: Retrieve detailed information about a specific contact profile
 - **get_conversation**: Fetch the detailed metadata and status of a single conversation by its unique ID
-- **list_calls**: List all voice calls made or received in the workspace
 - **list_contacts**: List all customer contact profiles stored in the workspace
 - **list_conversations**: Retrieve a list of all ongoing or archived conversations in the Bird workspace
 - **list_messages**: List all individual messages within a specific conversation thread
-- **send_message**: You must provide a valid channelId (e.g., for SMS or WhatsApp).
-
-Send a new message to a recipient through a specific communication channel (SMS, WhatsApp, etc.)
 - **update_contact**: Data should be a JSON string, e.g., '{"displayName":"New Name"}'.
 
 Update the metadata or identifiers of an existing contact
+- **create_contact**: Identifiers should be a JSON string, e.g., '[{"key":"phone","value":"+123"}]'.
+
+Create a new contact profile in the Bird workspace
+- **list_calls**: List all voice calls made or received in the workspace
+- **send_message**: You must provide a valid channelId (e.g., for SMS or WhatsApp).
+
+Send a new message to a recipient through a specific communication channel (SMS, WhatsApp, etc.)
 
 
 ## 💬 Prompt Examples

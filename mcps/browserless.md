@@ -35,13 +35,13 @@ Connect your **Browserless.io** account to any AI agent and orchestrate your hea
 
 
 ## Available Tools (8)
-- **check_system_health**: Check the health of the Browserless service
 - **generate_pdf**: Generate a PDF of a URL
 - **get_account_config**: Retrieve account configuration
 - **get_page_content**: Retrieve the rendered HTML content of a URL
-- **get_usage_stats**: Retrieve account usage statistics
 - **list_active_sessions**: List currently active browser sessions
 - **run_scrape**: Run a custom scraping script
+- **check_system_health**: Check the health of the Browserless service
+- **get_usage_stats**: Retrieve account usage statistics
 - **take_screenshot**: Take a screenshot of a URL using headless Chrome
 
 
