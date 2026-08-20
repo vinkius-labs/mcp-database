@@ -35,8 +35,8 @@ Equip your AI agent with access to one of the world's largest open book database
 
 
 ## Available Tools (3)
-- **get_author_works**: Get all works by an author
 - **get_book_by_isbn**: Get book details by ISBN
+- **get_author_works**: Get all works by an author
 - **search_books**: Search for books by title or keyword
 
 

@@ -35,18 +35,9 @@ Empower your AI agent to orchestrate your logistics and e-commerce operations wi
 
 
 ## Available Tools (8)
-- **create_electronic_waybill**: Sender/Receiver must be JSON with Name, Mobile, ProvinceName, CityName, ExpAreaName, Address. Uses RequestType 1007.
-
-Create an electronic shipping waybill
 - **get_estimated_arrival**: Uses RequestType 8001.
 
 Get estimated delivery time
-- **onsite_pickup**: Uses RequestType 1801.
-
-Request on-site courier pickup
-- **preorder_pickup**: Uses RequestType 1001.
-
-Schedule a courier pickup
 - **query_shipping_price**: Uses RequestType 1003.
 
 Get shipping price estimate
@@ -56,9 +47,18 @@ Subscribe to tracking updates via webhook
 - **track_package**: Uses RequestType 1002.
 
 Track a package in real-time
+- **create_electronic_waybill**: Sender/Receiver must be JSON with Name, Mobile, ProvinceName, CityName, ExpAreaName, Address. Uses RequestType 1007.
+
+Create an electronic shipping waybill
 - **identify_carrier**: Uses RequestType 2002.
 
 Auto-detect carrier from tracking number
+- **onsite_pickup**: Uses RequestType 1801.
+
+Request on-site courier pickup
+- **preorder_pickup**: Uses RequestType 1001.
+
+Schedule a courier pickup
 
 
 ## 💬 Prompt Examples

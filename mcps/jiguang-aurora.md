@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your push notification infrastructure with 
 
 
 ## Available Tools (10)
+- **get_account_quota**: Get API quota and usage
+- **send_push**: Send push notification
+- **update_device**: Update device tags and alias
 - **create_schedule**: Create a scheduled push
 - **delete_schedule**: Delete a scheduled task
-- **get_account_quota**: Get API quota and usage
 - **get_device_info**: Get device information
 - **get_message_status**: Get detailed message status
 - **get_push_report**: Get push delivery report
 - **get_user_report**: Get user activity report
 - **list_schedules**: List scheduled push tasks
-- **send_push**: Send push notification
-- **update_device**: Update device tags and alias
 
 
 ## 💬 Prompt Examples

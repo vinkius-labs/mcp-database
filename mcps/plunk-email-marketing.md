@@ -34,15 +34,15 @@ Connect your AI agent to **Plunk**, the versatile email marketing platform desig
 
 
 ## Available Tools (8)
-- **delete_contact**: Permanently delete a contact from your audience
+- **get_contact_details**: Get comprehensive information for a specific contact
+- **list_email_campaigns**: Retrieve a list of all email marketing campaigns
+- **send_transactional_email**: Send a transactional email to one or more recipients
 - **create_or_update_contact**: Provide metadata as a JSON string if needed.
 
 Create a new contact or update an existing one
-- **get_contact_details**: Get comprehensive information for a specific contact
-- **list_email_campaigns**: Retrieve a list of all email marketing campaigns
+- **delete_contact**: Permanently delete a contact from your audience
 - **list_contacts**: Retrieve all contacts in your Plunk audience
 - **list_email_templates**: Retrieve a list of all saved email templates
-- **send_transactional_email**: Send a transactional email to one or more recipients
 - **track_user_event**: Provide data as a JSON string.
 
 Track a custom action performed by a user

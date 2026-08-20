@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your entire backend infrastructure with **L
 
 ## Available Tools (10)
 - **update_object**: Update an object
-- **create_object**: Create a new object
 - **delete_object**: Delete an object
 - **list_users**: List application users
-- **push_notification**: Send push notification
 - **get_app_stats**: Get application statistics
-- **get_object**: Get object details
-- **get_user**: Get user details
 - **list_files**: List application files
 - **list_objects**: List objects in a class
+- **create_object**: Create a new object
+- **get_object**: Get object details
+- **get_user**: Get user details
+- **push_notification**: Send push notification
 
 
 ## 💬 Prompt Examples

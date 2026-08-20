@@ -47,6 +47,18 @@ Get children of a media item (seasons or albums)
 - **get_libraries**: Each library includes its key (ID), type (movie, show, music, photo), title, agent, scanner and updated/created timestamps. Use the library key with other library tools.
 
 Get all libraries (sections) on the Plex server
+- **get_playlists**: Each playlist includes its ID, title, type (video, audio, photo), item count and duration.
+
+Get all playlists on the Plex server
+- **get_server_info**: Useful for verifying server connectivity and checking server health.
+
+Get Plex Media Server information
+- **mark_unwatched**: This resets the item's watch status. Requires the item's rating key.
+
+Mark a media item as unwatched
+- **get_metadata**: Returns title, summary, year, runtime, rating, genres, director, cast, media streams, file path and more.
+
+Get detailed metadata for a specific item
 - **get_library_content**: Filter by type: type=1 for movies, type=2 for TV shows, type=8 for artists, type=13 for photos. Requires the library key from get_libraries.
 
 Get all content from a specific library
@@ -56,30 +68,18 @@ Get "On Deck" items (continue watching)
 - **get_playlist_items**: Returns the items with their titles, types, durations and metadata. Requires the playlist ID.
 
 Get items in a specific playlist
-- **get_playlists**: Each playlist includes its ID, title, type (video, audio, photo), item count and duration.
-
-Get all playlists on the Plex server
 - **get_recently_added**: Returns movies, episodes and albums with their titles, addition dates and metadata.
 
 Get recently added media to the library
-- **get_server_info**: Useful for verifying server connectivity and checking server health.
+- **get_sessions**: Each session includes the user, the media being watched (movie/episode), playback progress, player device, bandwidth and transcoding info.
 
-Get Plex Media Server information
-- **mark_unwatched**: This resets the item's watch status. Requires the item's rating key.
-
-Mark a media item as unwatched
+Get currently active streaming sessions
 - **mark_watched**: This affects the item's watch status and removes it from "On Deck". Requires the item's rating key.
 
 Mark a media item as watched
 - **refresh_library**: Useful after adding or removing files from your media folders. Requires the library key.
 
 Trigger a library scan/refresh
-- **get_metadata**: Returns title, summary, year, runtime, rating, genres, director, cast, media streams, file path and more.
-
-Get detailed metadata for a specific item
-- **get_sessions**: Each session includes the user, the media being watched (movie/episode), playback progress, player device, bandwidth and transcoding info.
-
-Get currently active streaming sessions
 - **search_library**: Returns matching movies, shows, episodes, artists and albums with their titles, types and metadata.
 
 Search the Plex media library

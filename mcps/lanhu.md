@@ -35,17 +35,17 @@ Empower your AI agent to orchestrate your product design workflow with **Lanhu**
 
 
 ## Available Tools (10)
-- **get_board**: Get board details
 - **get_file**: Get design file info
-- **get_project**: Get project details
 - **list_boards**: List project boards
-- **list_layers**: List file layers
 - **list_members**: List team members
+- **list_team_projects**: List team projects
+- **get_board**: Get board details
+- **get_comments**: Get file comments
+- **get_project**: Get project details
+- **list_layers**: List file layers
 - **list_project_files**: g., from Sketch, Figma, XD) within a specific project.
 
 List project design files
-- **list_team_projects**: List team projects
-- **get_comments**: Get file comments
 - **list_teams**: List all Lanhu teams
 
 

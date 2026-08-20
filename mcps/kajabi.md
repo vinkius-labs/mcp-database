@@ -36,8 +36,23 @@ Empower your AI agent to orchestrate your entire digital product ecosystem with 
 
 
 ## Available Tools (16)
-- **get_offer_details**: Get offer details
 - **get_product_details**: Get product details
+- **list_orders**: Provide site_id if you have multiple sites.
+
+List all orders
+- **list_sites**: Use this to get the site_id needed for filtering contacts, customers, offers, and orders.
+
+List all sites
+- **list_purchases**: Provide site_id if you have multiple sites.
+
+List all purchases
+- **get_course_details**: Get course details
+- **add_tag_to_contact**: Use list_tags to find available tag IDs and list_contacts to find contact IDs.
+
+Add a tag to a contact
+- **get_contact_details**: Get contact details
+- **get_offer_details**: Get offer details
+- **list_blog_posts**: List all blog posts
 - **list_contacts**: Automatically uses the default site. Provide site_id if you have multiple sites and want to query a specific one.
 
 List all contacts
@@ -48,28 +63,13 @@ List all customers
 - **list_offers**: Provide site_id if you have multiple sites.
 
 List all offers
-- **list_orders**: Provide site_id if you have multiple sites.
-
-List all orders
-- **list_sites**: Use this to get the site_id needed for filtering contacts, customers, offers, and orders.
-
-List all sites
+- **list_products**: List all products
 - **list_tags**: Use tag IDs with add_tag_to_contact and remove_tag_from_contact to manage contact segmentation.
 
 List all contact tags
-- **list_purchases**: Provide site_id if you have multiple sites.
-
-List all purchases
-- **add_tag_to_contact**: Use list_tags to find available tag IDs and list_contacts to find contact IDs.
-
-Add a tag to a contact
-- **get_course_details**: Get course details
-- **list_blog_posts**: List all blog posts
-- **list_products**: List all products
 - **remove_tag_from_contact**: Use list_contacts to find the contact ID and their current tags.
 
 Remove a tag from a contact
-- **get_contact_details**: Get contact details
 
 
 ## 💬 Prompt Examples

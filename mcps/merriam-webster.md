@@ -36,8 +36,8 @@ Equip your AI agent with the gold standard of the English language via the **Mer
 
 
 ## Available Tools (2)
-- **get_thesaurus**: Get synonyms and antonyms
 - **define_word**: Get the definition of a word
+- **get_thesaurus**: Get synonyms and antonyms
 
 
 ## 💬 Prompt Examples

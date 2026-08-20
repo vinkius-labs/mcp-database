@@ -35,32 +35,32 @@ Connect your **Nubank Mexico** account to any AI agent and take control of your 
 
 
 ## Available Tools (14)
-- **create_transfer**: Transfers are processed in real-time during banking hours.
-
-Send a SPEI transfer
-- **get_account_info**: Get your Nubank Mexico account profile
-- **get_spending_analytics**: ), showing monthly trends, top merchants, and comparisons to previous periods. Use the period parameter for specific timeframes.
-
-Get spending analytics and insights
 - **get_account_balance**: Check your current account balance
-- **get_credit_card_info**: Get your Nubank credit card details
-- **get_investments**: View your Cajitas investment portfolio
+- **get_account_info**: Get your Nubank Mexico account profile
 - **get_credit_card_statement**: Defaults to the current open statement if no month is specified.
 
 Get a credit card statement
-- **get_transaction**: Get full details of a specific transaction
+- **get_investments**: View your Cajitas investment portfolio
 - **list_bills**: List pending bills and service payments
-- **list_transfers**: List outgoing transfers
-- **pay_bill**: If no amount is specified, the full outstanding amount is paid. Supports partial payments for eligible billers.
-
-Pay a bill or service
-- **list_credit_card_transactions**: settled status.
-
-List recent credit card transactions
 - **list_rewards**: List your Nubank reward points and benefits
 - **list_transactions**: Use limit and offset for pagination through large histories.
 
 List recent account transactions
+- **create_transfer**: Transfers are processed in real-time during banking hours.
+
+Send a SPEI transfer
+- **get_credit_card_info**: Get your Nubank credit card details
+- **get_spending_analytics**: ), showing monthly trends, top merchants, and comparisons to previous periods. Use the period parameter for specific timeframes.
+
+Get spending analytics and insights
+- **get_transaction**: Get full details of a specific transaction
+- **list_credit_card_transactions**: settled status.
+
+List recent credit card transactions
+- **list_transfers**: List outgoing transfers
+- **pay_bill**: If no amount is specified, the full outstanding amount is paid. Supports partial payments for eligible billers.
+
+Pay a bill or service
 
 
 ## 💬 Prompt Examples

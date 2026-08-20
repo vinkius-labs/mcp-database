@@ -34,22 +34,22 @@ Connect your **Konfío** business account to any AI agent and manage Mexico's le
 
 
 ## Available Tools (14)
-- **get_credit_card**: Get business credit card details
 - **get_loan_details**: Get details of a specific business loan
 - **get_payment_schedule**: Get the amortization schedule for a loan
 - **list_cc_transactions**: List credit card transactions
-- **list_invoices**: You can filter by issued (emitted) or received invoices.
-
-List electronic invoices (CFDIs)
 - **check_credit_status**: Check business credit rating and eligibility status
 - **create_invoice**: 0 invoice for a client. Requires client RFC, tax regime, items, and CFDI usage code.
 
 Create and emit a new electronic invoice (CFDI)
+- **get_credit_card**: Get business credit card details
+- **list_invoices**: You can filter by issued (emitted) or received invoices.
+
+List electronic invoices (CFDIs)
+- **list_loans**: List active and past business loans
+- **list_transfers**: List B2B outgoing wire transfers
 - **create_transfer**: Create a supplier B2B transfer (SPEI)
 - **get_business_profile**: Get Konfío business profile
 - **get_cc_statement**: Get a credit card monthly statement
-- **list_loans**: List active and past business loans
-- **list_transfers**: List B2B outgoing wire transfers
 - **make_loan_payment**: Make a payment towards a business loan
 - **request_credit_line**: Submit a new credit line request
 

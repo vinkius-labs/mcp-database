@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your design workflow with **Pixso**, the le
 
 
 ## Available Tools (10)
-- **get_file_versions**: Get file version history
 - **get_org_members**: List organization members
 - **list_styles**: List file styles
 - **list_team_projects**: List team projects
+- **get_project_files**: Get project files
+- **list_nodes**: List nodes in a design file
 - **get_comments**: Get file comments
 - **get_file**: Get design file details
-- **get_project_files**: Get project files
+- **get_file_versions**: Get file version history
 - **list_files**: List all Pixso design files
-- **list_nodes**: List nodes in a design file
 - **list_teams**: List available teams
 
 

@@ -35,10 +35,7 @@ Empower your AI agent to orchestrate your logistics and supply chain operations 
 
 
 ## Available Tools (8)
-- **estimate_delivery_time**: Estimate delivery time between locations
-- **get_map_tracking**: Get map-based tracking data
 - **identify_carrier**: Auto-detect carrier from tracking number
-- **query_shipping_price**: Get shipping price estimate
 - **submit_shipping_order**: Generates an electronic waybill for printing.
 
 Submit a shipping order (e-waybill)
@@ -47,6 +44,9 @@ Submit a shipping order (e-waybill)
 
 Track a package in real-time
 - **check_carrier_availability**: Check which carriers serve a route
+- **estimate_delivery_time**: Estimate delivery time between locations
+- **get_map_tracking**: Get map-based tracking data
+- **query_shipping_price**: Get shipping price estimate
 
 
 ## 💬 Prompt Examples
