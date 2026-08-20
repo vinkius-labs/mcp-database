@@ -36,12 +36,12 @@ No more manual logging into observability portals to check model drift or trace 
 
 
 ## Available Tools (6)
-- **list_datasets**: List datasets
-- **create_dataset**: Create a dataset
 - **get_model**: Get model details
 - **list_experiments**: List experiments
 - **list_projects**: List projects
 - **list_spans**: List spans
+- **create_dataset**: Create a dataset
+- **list_datasets**: List datasets
 
 
 ## 💬 Prompt Examples

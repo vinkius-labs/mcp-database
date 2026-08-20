@@ -14,12 +14,12 @@ This MCP server provides a complete toolkit for working with modern unique ident
 
 
 ## Available Tools (4)
-- **extract_timestamp**: Retrieves the original creation timestamp embedded within time-based identifiers
 - **generate_uuid**: For v3 and v5, namespace and name are required.
 
 Generates a new UUID based on a specified version
 - **validate_identifier**: Determines if a provided string is a valid UUID or ULID
 - **generate_ulid**: Generates a new, valid ULID
+- **extract_timestamp**: Retrieves the original creation timestamp embedded within time-based identifiers
 
 
 ## 💬 Prompt Examples

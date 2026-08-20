@@ -37,19 +37,19 @@ Transform your video archives into searchable, actionable data. Your AI can now 
 
 ## Available Tools (18)
 - **embed_async**: Create embeddings asynchronously
-- **analyze_async**: Analyze and segment videos asynchronously
 - **analyze_sync**: Analyze and segment videos synchronously
 - **confirm_multipart_upload**: Confirm a multipart upload
 - **create_asset**: Upload content to create an asset
+- **create_multipart_upload**: Create a multipart upload session
+- **delete_index**: Delete an index
+- **get_index**: Retrieve an index by ID
+- **update_index**: Update an index name
+- **analyze_async**: Analyze and segment videos asynchronously
 - **create_entity**: g., a person) within a collection.
 
 Create an entity
 - **create_index**: Create a new index
-- **create_multipart_upload**: Create a multipart upload session
-- **delete_index**: Delete an index
-- **get_index**: Retrieve an index by ID
 - **get_indexed_asset**: Retrieve an indexed asset
-- **update_index**: Update an index name
 - **create_entity_collection**: Create an entity collection
 - **embed_sync**: Create embeddings synchronously
 - **index_asset**: Index an uploaded asset

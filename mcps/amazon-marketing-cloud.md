@@ -36,17 +36,17 @@ Connect your **Amazon Marketing Cloud (AMC)** instance to your AI agent to unloc
 
 ## Available Tools (10)
 - **list_workflows**: List AMC workflows
-- **get_workflow_details**: Get workflow details
-- **create_workflow**: Create an AMC workflow
-- **update_workflow**: Update an AMC workflow
 - **delete_workflow**: Delete an AMC workflow
 - **list_executions**: List workflow executions
+- **update_workflow**: Update an AMC workflow
 - **create_execution**: Execute an AMC query
+- **get_execution_download_urls**: Get execution download URLs
 - **get_execution_status**: g. PENDING, COMPLETED).
 
 Check execution status
-- **get_execution_download_urls**: Get execution download URLs
 - **delete_execution**: Cancel an execution
+- **create_workflow**: Create an AMC workflow
+- **get_workflow_details**: Get workflow details
 
 
 ## 💬 Prompt Examples

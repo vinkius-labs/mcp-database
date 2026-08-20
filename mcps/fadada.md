@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your digital agreement lifecycle with **Fad
 
 
 ## Available Tools (10)
-- **add_fadada_docs**: Add documents to flow
-- **add_fadada_signers**: Add signers to flow
 - **create_fadada_sign_flow**: Create a new sign flow
-- **download_fadada_docs**: Download flow documents
-- **get_fadada_execute_url**: Get signature URL
 - **get_fadada_org_info**: Get organization details
 - **get_fadada_sign_flow**: Get sign flow details
 - **list_fadada_sign_flows**: List sign flows
-- **list_fadada_templates**: List sign templates
 - **start_fadada_flow**: Start sign flow
+- **add_fadada_docs**: Add documents to flow
+- **add_fadada_signers**: Add signers to flow
+- **download_fadada_docs**: Download flow documents
+- **get_fadada_execute_url**: Get signature URL
+- **list_fadada_templates**: List sign templates
 
 
 ## 💬 Prompt Examples

@@ -35,28 +35,28 @@ Connect your **Appointlet** scheduling workspace to any AI agent to streamline b
 
 
 ## Available Tools (10)
+- **list_meeting_types**: List all meeting types configured for an Appointlet scheduling page
 - **list_scheduling_pages**: Each page has a unique booking URL.
 
 List all scheduling pages in the Appointlet organization
-- **get_scheduling_page**: Retrieve detailed information for a specific Appointlet scheduling page
-- **list_meeting_types**: List all meeting types configured for an Appointlet scheduling page
-- **get_meeting_type**: Get detailed configuration for a specific Appointlet meeting type
+- **get_booking**: Get full details of a specific Appointlet booking
 - **list_bookings**: Useful for reporting and CRM sync.
 
 List all bookings for an Appointlet scheduling page
-- **get_booking**: Get full details of a specific Appointlet booking
 - **cancel_booking**: The attendee receives a cancellation notification email. The time slot becomes available for new bookings.
 
 Cancel an existing Appointlet booking
-- **list_members**: Members receive meetings via round-robin or pooled availability.
-
-List all team members assigned to an Appointlet scheduling page
 - **get_organization**: The organization is the top-level account entity.
 
 Get the Appointlet organization profile
 - **list_intake_fields**: Returns field names, types, and required status.
 
 List all custom intake form fields for an Appointlet meeting type
+- **list_members**: Members receive meetings via round-robin or pooled availability.
+
+List all team members assigned to an Appointlet scheduling page
+- **get_meeting_type**: Get detailed configuration for a specific Appointlet meeting type
+- **get_scheduling_page**: Retrieve detailed information for a specific Appointlet scheduling page
 
 
 ## 💬 Prompt Examples

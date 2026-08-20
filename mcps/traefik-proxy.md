@@ -35,26 +35,26 @@ Connect your **Traefik Proxy** instance to any AI agent and gain real-time visib
 
 
 ## Available Tools (18)
-- **get_http_middleware**: Get details for a specific HTTP middleware
-- **get_entrypoint**: Get details for a specific entrypoint
 - **list_entrypoints**: List all entrypoints
 - **get_http_router**: Get details for a specific HTTP router
 - **get_http_service**: Get details for a specific HTTP service
-- **get_tcp_middleware**: Get details for a specific TCP middleware
 - **get_tcp_router**: Get details for a specific TCP router
 - **get_tcp_service**: Get details for a specific TCP service
-- **list_http_middlewares**: List all HTTP middlewares
 - **list_http_routers**: List all HTTP routers
 - **list_http_services**: List all HTTP services
 - **list_tcp_middlewares**: List all TCP middlewares
-- **list_tcp_routers**: List all TCP routers
 - **list_tcp_services**: List all TCP services
 - **list_udp_routers**: List all UDP routers
-- **list_udp_services**: List all UDP services
 - **get_overview**: ).
 
 Get Traefik overview
 - **get_rawdata**: Get Traefik raw runtime configuration
+- **list_udp_services**: List all UDP services
+- **get_entrypoint**: Get details for a specific entrypoint
+- **get_http_middleware**: Get details for a specific HTTP middleware
+- **get_tcp_middleware**: Get details for a specific TCP middleware
+- **list_http_middlewares**: List all HTTP middlewares
+- **list_tcp_routers**: List all TCP routers
 
 
 ## 💬 Prompt Examples

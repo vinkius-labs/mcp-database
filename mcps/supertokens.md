@@ -37,21 +37,21 @@ Connect your **SuperTokens** Core instance to any AI agent to manage user lifecy
 - **get_user**: Get user details by ID
 - **link_accounts**: Link two user accounts together
 - **list_roles**: List all roles
-- **delete_user_metadata**: Delete metadata for a user
 - **get_tenant**: Get tenant details
 - **get_user_metadata**: Get metadata for a user
-- **list_user_roles**: List roles assigned to a user
-- **assign_role_to_user**: Assign a role to a user
 - **bulk_import_users**: Bulk import users
+- **assign_role_to_user**: Assign a role to a user
+- **delete_user_metadata**: Delete metadata for a user
+- **list_user_roles**: List roles assigned to a user
 - **create_or_update_role**: Create or update a user role
-- **create_session**: Create a new session for a user
 - **create_or_update_tenant**: Create or update a tenant
+- **create_session**: Create a new session for a user
 - **refresh_session**: Refresh an existing session
 - **remove_session**: Remove/revoke a session
-- **signin_user**: Sign in a user
-- **signup_user**: Sign up a new user
 - **unlink_accounts**: Unlink a user account
 - **update_user_metadata**: Update metadata for a user
+- **signin_user**: Sign in a user
+- **signup_user**: Sign up a new user
 
 
 ## 💬 Prompt Examples

@@ -37,23 +37,13 @@ Connect your **Wazuh SIEM** to any AI agent to streamline security operations an
 - **list_decoders**: Supports WQL filtering.
 
 List loaded Wazuh decoders
-- **delete_agents**: Use WQL to specify which agents to delete.
-
-Remove Wazuh agents
-- **list_agents**: Supports WQL filtering.
-
-List all Wazuh agents
 - **get_logtest**: Test rules and decoders against logs
 - **get_manager_logs**: Retrieve Wazuh manager logs
 - **get_manager_status**: Get Wazuh manager daemon status
-- **restart_agents**: Restart Wazuh agents
-- **restart_cluster**: Restart the Wazuh cluster
 - **get_rootcheck**: Supports WQL filtering.
 
 Get Rootcheck results
-- **list_rules**: Supports WQL filtering.
-
-List loaded Wazuh rules
+- **restart_cluster**: Restart the Wazuh cluster
 - **get_sca**: Supports WQL filtering.
 
 Get Security Configuration Assessment (SCA) results
@@ -66,13 +56,23 @@ Get File Integrity Monitoring (Syscheck) results
 Get Syscollector inventory
 - **update_rule_file**: Update a Wazuh rule file
 - **update_security_config**: Update Wazuh security configuration
-- **upgrade_agents**: Upgrade Wazuh agents
-- **create_security_role**: Create a new Wazuh security role
 - **get_mitre**: Supports WQL filtering.
 
 Get MITRE ATT&CK results
 - **list_cluster_nodes**: List Wazuh cluster nodes
 - **create_agent**: Enroll a new Wazuh agent
+- **create_security_role**: Create a new Wazuh security role
+- **delete_agents**: Use WQL to specify which agents to delete.
+
+Remove Wazuh agents
+- **list_agents**: Supports WQL filtering.
+
+List all Wazuh agents
+- **list_rules**: Supports WQL filtering.
+
+List loaded Wazuh rules
+- **restart_agents**: Restart Wazuh agents
+- **upgrade_agents**: Upgrade Wazuh agents
 
 
 ## 💬 Prompt Examples

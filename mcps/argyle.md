@@ -29,9 +29,9 @@ The **Argyle MCP Server** brings automated employment and income verification di
 
 
 ## Available Tools (7)
-- **create_user**: Create a new user in Argyle
 - **get_account_check**: Verify Argyle account connection
 - **get_employment**: Retrieve employment history for a specific user
+- **create_user**: Create a new user in Argyle
 - **get_income**: Retrieve income totals and breakdown for a user
 - **list_identities**: Retrieve verified identity information for a user
 - **list_payouts**: List individual pay period details (payouts) for a user

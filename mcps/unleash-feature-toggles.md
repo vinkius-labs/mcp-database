@@ -34,9 +34,6 @@ Connect your **Unleash** instance to any AI agent and gain full control over you
 
 
 ## Available Tools (11)
-- **list_environments**: Fetches all environments configured in Unleash.
-
-List all Unleash environments
 - **list_project_features**: Fetches features for a given project ID.
 
 List all feature flags in a specific project
@@ -46,15 +43,18 @@ List all Unleash projects
 - **list_segments**: Fetches all segments configured in Unleash.
 
 List all Unleash segments
-- **list_users**: Fetches all users configured in Unleash.
+- **list_environments**: Fetches all environments configured in Unleash.
 
-List all Unleash users
+List all Unleash environments
 - **get_client_features**: Fetch all feature flags and strategies for server-side evaluation
-- **report_client_metrics**: Report flag usage metrics from a backend SDK
-- **register_client**: Register a new backend SDK instance
 - **get_frontend_features**: Optionally provide context like userId or properties.
 
 Fetch enabled feature flags for a specific Unleash Context
+- **list_users**: Fetches all users configured in Unleash.
+
+List all Unleash users
+- **register_client**: Register a new backend SDK instance
+- **report_client_metrics**: Report flag usage metrics from a backend SDK
 - **report_frontend_metrics**: Report flag usage metrics from a frontend SDK
 - **register_frontend**: Register a new frontend SDK instance
 

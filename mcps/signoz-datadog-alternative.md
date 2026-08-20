@@ -37,8 +37,8 @@ Connect your **SigNoz** instance to any AI agent to streamline your observabilit
 
 Create a new alert rule
 - **delete_rule**: Delete an alert rule
-- **get_service_account_me**: Get current service account details
 - **list_rules**: Retrieve all configured alert rules
+- **get_service_account_me**: Get current service account details
 - **update_rule**: Update an existing alert rule
 
 

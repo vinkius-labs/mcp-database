@@ -34,22 +34,22 @@ Connect your **Statuspage (Atlassian)** account to any AI agent to monitor and m
 
 
 ## Available Tools (16)
-- **create_page_access_user**: Add a page access user
 - **delete_page_access_user_components**: Remove components for page access user
 - **delete_page_access_user_metrics**: Delete metrics for page access user
-- **delete_page_access_user**: Delete page access user
-- **get_page_access_user_components**: Get components for page access user
 - **get_page**: Get a specific page
-- **get_status_embed_config**: Get status embed config settings
+- **get_page_access_user_components**: Get components for page access user
 - **get_user_permissions**: Get a user's permissions
 - **update_page_access_user_components**: Add/Replace components for page access user
-- **update_page_access_user_metrics**: Add/Replace metrics for page access user
 - **list_page_access_users**: Get a list of page access users
 - **list_pages**: Get a list of pages
-- **update_page_access_user**: Update page access user
 - **update_page**: ).
 
 Update a page
+- **update_page_access_user**: Update page access user
+- **create_page_access_user**: Add a page access user
+- **delete_page_access_user**: Delete page access user
+- **get_status_embed_config**: Get status embed config settings
+- **update_page_access_user_metrics**: Add/Replace metrics for page access user
 - **update_status_embed_config**: Update status embed config settings
 - **update_user_permissions**: g., page_configuration, incident_manager, maintenance_manager).
 
