@@ -23,15 +23,15 @@ Ideal for healthcare researchers, compliance officers, and public safety analyst
 
 
 ## Available Tools (3)
+- **query_medical_devices**: Useful query fields: device.generic_name:"PACEMAKER", event_type:"Malfunction", date_of_event:[20200101 TO 20231231].
+
+Search openFDA Medical Device Adverse Events (MAUDE)
 - **query_drug_events**: g., patient.drug.medicinalproduct:"ASPIRIN", patient.reaction.reactionmeddrapt:"HEADACHE"). The dataset contains reports of adverse events, medication errors, and product quality complaints. Max limit is 100.
 
 Query the openFDA Drug Adverse Events database using Lucene syntax
 - **query_food_recalls**: Examples: reason_for_recall:"salmonella", status:"Ongoing", state:"CA". Helps track foodborne illness outbreaks and FDA regulations.
 
 Search openFDA Food Enforcement and Recalls database
-- **query_medical_devices**: Useful query fields: device.generic_name:"PACEMAKER", event_type:"Malfunction", date_of_event:[20200101 TO 20231231].
-
-Search openFDA Medical Device Adverse Events (MAUDE)
 
 
 ## 💬 Prompt Examples

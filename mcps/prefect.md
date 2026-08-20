@@ -36,9 +36,9 @@ Stop digging through logs across scattered pipelines. When a data sync fails, as
 
 ## Available Tools (7)
 - **get_flow_run**: Get complete contextual metadata, runtime limits, and specific variables tied to an executed Prefect Flow Run
-- **list_work_pools**: List all physical Work Pools acting as routing destinations for dynamically dispatched flow runs
-- **list_blocks**: List all secure infrastructure Blocks defining Secrets, AWS paths, or GCP configurations directly in Prefect
 - **list_automations**: List all Cloud Automations mapping explicit webhook/event actions dictating real-time flow triggers
+- **list_blocks**: List all secure infrastructure Blocks defining Secrets, AWS paths, or GCP configurations directly in Prefect
+- **list_work_pools**: List all physical Work Pools acting as routing destinations for dynamically dispatched flow runs
 - **list_flows**: List all engineered Python workflows registered natively on Prefect Cloud
 - **list_deployments**: List all active deployments representing scheduled or triggered physical workflow instances
 - **list_flow_runs**: List recent active, scheduled, or failed flow runs recording actual physical data pipelining limits

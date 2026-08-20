@@ -38,13 +38,13 @@ Forget logging into dashboards to copy-paste trace IDs. Ask the model to 'find t
 - **update_server_config**: Update server name
 - **get_bounce_logs**: Get raw SMTP logs for a bounce
 - **list_spam_complaints**: List recent spam complaints
-- **list_templates**: List all email templates
+- **get_delivery_stats**: Get delivery metrics for the server
+- **get_server_config**: Get Postmark server configuration
 - **delete_template**: Delete an email template
 - **list_bounces**: List recent email bounces
-- **get_delivery_stats**: Get delivery metrics for the server
+- **list_templates**: List all email templates
 - **send_email**: Send a plain text or HTML email
 - **send_with_template**: Send an email using a template
-- **get_server_config**: Get Postmark server configuration
 
 
 ## 💬 Prompt Examples

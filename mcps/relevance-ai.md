@@ -37,12 +37,12 @@ No more manual dashboard refreshing for task results. Your AI acts as a dedicate
 
 ## Available Tools (11)
 - **get_knowledge**: Get details for a knowledge base
+- **get_task_status**: Check status and results of a task
+- **list_agent_tasks**: List recent agent tasks
 - **list_executions**: List all agent execution history
+- **list_knowledge_items**: List knowledge base items
 - **delete_task**: Permanently delete a task record
 - **get_agent_details**: Get metadata for an agent
-- **get_task_status**: Check status and results of a task
-- **list_knowledge_items**: List knowledge base items
-- **list_agent_tasks**: List recent agent tasks
 - **trigger_tool**: Execute a specific tool (Studio)
 - **list_tools**: List all studios/tools
 - **list_agents**: List all AI agents

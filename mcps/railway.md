@@ -34,17 +34,17 @@ Connect your **Railway** cloud infrastructure to an AI agent, streamlining opera
 
 ## Available Tools (10)
 - **get_project**: Retrieves details for a specific Railway project
-- **get_service_instances**: Retrieves runtime configuration for a service
 - **list_deployments**: Lists deployments for a specific project, environment, and service
 - **list_projects**: Lists all Railway projects accessible by the token
 - **list_variables**: Lists environment variables for a service
 - **restart_service**: Restarts a running service instance
 - **trigger_deploy**: Triggers a new deployment for a service
 - **whoami**: Retrieves the authenticated Railway user profile
-- **create_project**: Creates a new Railway project
 - **delete_project**: This action is irreversible.
 
 Deletes a Railway project
+- **create_project**: Creates a new Railway project
+- **get_service_instances**: Retrieves runtime configuration for a service
 
 
 ## 💬 Prompt Examples

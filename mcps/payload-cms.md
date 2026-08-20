@@ -33,16 +33,16 @@ Connect your generative environments explicitly to the **Payload CMS Local REST 
 
 
 ## Available Tools (10)
+- **patch_cms_document**: Mutate globalThis Web CRM boundaries substituting database Blocks via ID
+- **search_collection_where**: Retrieve explicit Cloud logging tracing explicit Payload Queries
+- **get_singleton_global**: Perform structural extraction of properties driving active Singletons
+- **create_cms_document**: Provision a highly-available JSON Payload writing Rows into Payload
+- **get_single_document**: Inspect deep internal arrays mitigating specific Row mappings
 - **list_collection_documents**: Identify bounded routing spaces inside the Headless Payload Collections
 - **list_payload_users**: Identify precise active arrays spanning rented Admin identities
-- **search_collection_where**: Retrieve explicit Cloud logging tracing explicit Payload Queries
-- **patch_cms_document**: Mutate globalThis Web CRM boundaries substituting database Blocks via ID
 - **update_singleton_global**: Dispatch an automated validation check routing Global updates
-- **get_single_document**: Inspect deep internal arrays mitigating specific Row mappings
-- **get_singleton_global**: Perform structural extraction of properties driving active Singletons
-- **verify_token_identity**: Enumerate explicitly attached structured rules defining the Current User
-- **create_cms_document**: Provision a highly-available JSON Payload writing Rows into Payload
 - **wipe_cms_document**: Irreversibly vaporize explicit App nodes dropping live Document rows
+- **verify_token_identity**: Enumerate explicitly attached structured rules defining the Current User
 
 
 ## 💬 Prompt Examples

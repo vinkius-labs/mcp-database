@@ -31,14 +31,14 @@ Empower your conversational AI with deep access to **Saleor**, the highly scalab
 
 ## Available Tools (10)
 - **list_collections**: Lists all product collections
+- **get_product**: Retrieves details for a specific product by ID
+- **list_customers**: Lists all customers/users registered in the shop
 - **list_orders**: Lists recent customer orders
 - **get_customer**: Retrieves profile information and order history for a specific customer
 - **get_order**: Retrieves details for a specific order
-- **get_product**: Retrieves details for a specific product by ID
 - **get_shop_info**: Retrieves globalThis shop configuration
 - **list_categories**: Lists all product categories
 - **list_channels**: Lists all configured sales channels
-- **list_customers**: Lists all customers/users registered in the shop
 - **list_products**: Lists all products in the Saleor store
 
 

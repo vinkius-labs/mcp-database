@@ -33,12 +33,12 @@ Connect your **Pipedream** automation workspace directly to any AI agent. Review
 
 
 ## Available Tools (7)
-- **list_sources**: List event sources
 - **get_source**: Get source details
-- **list_workflows**: List workflows
 - **get_workflow**: Get workflow details
 - **list_events**: List recent events from a source
+- **list_sources**: List event sources
 - **list_subscriptions**: List webhook subscriptions
+- **list_workflows**: List workflows
 - **get_user**: Get current user info
 
 

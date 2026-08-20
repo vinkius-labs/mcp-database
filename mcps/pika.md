@@ -34,19 +34,19 @@ Connect your **Pika 2.2** fal.ai endpoint to your AI agent and construct a massi
 
 
 ## Available Tools (10)
+- **generate_multi_image_scene**: Create multi-reference video scenes using Pika Scenes. Combines multiple images into a coherent video. Instructions: Pass comma-separated image URLs and prompt
 - **generate_video_from_text**: 2 foundation node.
 
 Generate a video from a text prompt using Pika Labs 2.2 via fal.ai. Pika creates cinematic AI videos with smooth motion. Returns request_id for async polling. Instructions: Pass prompt. Poll get_job_status for completion
-- **animate_image**: Animate a still image into a video using Pika Labs 2.2. Brings photos to life with AI-generated motion. Instructions: Pass image URL and prompt for motion direction
-- **generate_multi_image_scene**: Create multi-reference video scenes using Pika Scenes. Combines multiple images into a coherent video. Instructions: Pass comma-separated image URLs and prompt
-- **generate_sound_effects**: Generate AI sound effects for a video using Pika Labs. Auto-detects scene and adds appropriate SFX. Instructions: Pass video URL
-- **interpolate_keyframes**: Create smooth interpolation between keyframe images using Pika Frames. Generates transitional video between 2+ keyframes. Instructions: Pass comma-separated image URLs and prompt
-- **apply_visual_effects**: Apply visual effects to an image using Pika Effects. Transforms images with cinematic effects. Instructions: Pass image URL and effect type
 - **get_job_status**: ai ledgers confirm render bounds.
 
 Get the status of a Pika generation request. Returns status (IN_QUEUE/IN_PROGRESS/COMPLETED). Instructions: Poll until COMPLETED
 - **get_job_result**: Get the final result of a completed Pika generation. Returns video URL and metadata. Instructions: Call after status is COMPLETED
+- **animate_image**: Animate a still image into a video using Pika Labs 2.2. Brings photos to life with AI-generated motion. Instructions: Pass image URL and prompt for motion direction
+- **apply_visual_effects**: Apply visual effects to an image using Pika Effects. Transforms images with cinematic effects. Instructions: Pass image URL and effect type
+- **generate_sound_effects**: Generate AI sound effects for a video using Pika Labs. Auto-detects scene and adds appropriate SFX. Instructions: Pass video URL
 - **generate_video_with_duration**: Generate video with duration control using Pika 2.2. Specify exact duration in seconds. Instructions: Pass prompt and duration
+- **interpolate_keyframes**: Create smooth interpolation between keyframe images using Pika Frames. Generates transitional video between 2+ keyframes. Instructions: Pass comma-separated image URLs and prompt
 - **lip_sync_video**: Lip-sync a video to audio using Pika Labs. Matches mouth movements to speech. Instructions: Pass video URL and audio URL
 
 
