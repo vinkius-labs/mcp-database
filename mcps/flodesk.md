@@ -37,8 +37,8 @@ No more manual subscriber lookups or complex segment navigation. Your AI acts as
 
 ## Available Tools (10)
 - **add_subscriber_to_segment**: Add a subscriber to a segment
-- **get_segment**: Get details for a segment
 - **add_subscriber_to_workflow**: Trigger a workflow for a subscriber
+- **get_segment**: Get details for a segment
 - **create_segment**: Create a new segment
 - **get_subscriber**: Get details for a subscriber
 - **list_custom_fields**: List subscriber custom fields

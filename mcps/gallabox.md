@@ -37,16 +37,16 @@ Connect your **Gallabox** account to any AI agent to automate your WhatsApp Busi
 
 
 ## Available Tools (12)
+- **get_chat_details**: Get thread metadata
+- **list_support_teams**: List Gallabox teams
 - **verify_api_connection**: Check connection
 - **get_contact_details**: Get contact metadata
-- **get_chat_details**: Get thread metadata
 - **get_my_profile**: Get account profile
+- **list_active_chats**: List chat threads
+- **list_message_templates**: List WhatsApp templates
+- **list_thread_messages**: List message history
 - **list_whatsapp_channels**: List active channels
 - **list_whatsapp_contacts**: List chat contacts
-- **list_active_chats**: List chat threads
-- **list_thread_messages**: List message history
-- **list_support_teams**: List Gallabox teams
-- **list_message_templates**: List WhatsApp templates
 - **send_whatsapp_template**: Send template message
 - **send_whatsapp_text**: Send WhatsApp message
 

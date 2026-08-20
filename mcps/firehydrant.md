@@ -36,18 +36,18 @@ Connect your **FireHydrant** account to any AI agent and automate your incident 
 
 
 ## Available Tools (12)
+- **list_services**: List service catalog
 - **add_incident_note**: Add note to incident
 - **create_incident**: Create a new incident
-- **list_services**: List service catalog
-- **list_teams**: List responder teams
-- **update_incident**: Update an incident
 - **get_incident**: Get incident details
 - **get_service**: Get service details
-- **get_team**: Get team details
 - **list_change_events**: List change events
 - **list_incidents**: List incidents
-- **list_retrospectives**: List retrospectives
 - **list_runbooks**: List active runbooks
+- **list_teams**: List responder teams
+- **update_incident**: Update an incident
+- **get_team**: Get team details
+- **list_retrospectives**: List retrospectives
 
 
 ## 💬 Prompt Examples

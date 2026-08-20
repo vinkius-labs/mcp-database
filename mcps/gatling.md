@@ -39,19 +39,19 @@ Connect your **Gatling Enterprise** account to any AI agent and take full contro
 
 ## Available Tools (10)
 - **abort_simulation**: Abort a running Gatling simulation
-- **list_runs**: List runs for a Gatling simulation
-- **get_run**: Get full details of a Gatling run
 - **list_packages**: List uploaded packages/artifacts on Gatling Enterprise
+- **list_runs**: List runs for a Gatling simulation
 - **list_tokens**: List API tokens on Gatling Enterprise
 - **list_simulations**: Simulations define load scenarios with VU populations. Returns names, IDs, class names, and team associations.
 
 List all simulations on Gatling Enterprise
+- **get_run**: Get full details of a Gatling run
 - **get_simulation**: Get full details of a Gatling simulation
+- **list_pools**: List load generator pools on Gatling Enterprise
+- **list_teams**: List teams on Gatling Enterprise
 - **start_simulation**: Returns run ID.
 
 Start a Gatling simulation run
-- **list_teams**: List teams on Gatling Enterprise
-- **list_pools**: List load generator pools on Gatling Enterprise
 
 
 ## 💬 Prompt Examples

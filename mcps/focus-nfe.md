@@ -31,11 +31,11 @@ Connect **Focus NFe** to any AI agent and automate your Brazilian fiscal documen
 
 
 ## Available Tools (5)
-- **cancel_document**: Cancel an authorized invoice
 - **download_xml**: Download the authorized XML document
 - **emit_nfe**: Emit a Product Invoice (NF-e)
 - **emit_nfse**: Emit a Service Invoice (NFS-e)
 - **consult_document**: Consult the status and details of an invoice
+- **cancel_document**: Cancel an authorized invoice
 
 
 ## 💬 Prompt Examples

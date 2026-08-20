@@ -43,18 +43,21 @@ Register a new API target service for autonomous pentesting
 - **delete_service**: Use when decommissioning an API or cleaning up test environments. This action is irreversible.
 
 Remove an API service and all its scan history from Equixly
+- **get_scan**: Includes total requests made, endpoints explored, attack vectors attempted, severity breakdown of findings (critical/high/medium/low), and OWASP Top 10 mapping.
+
+Get detailed status and summary of a specific pentest scan
 - **list_scans**: Each scan entry includes its status (running, completed, failed), timestamps, and the total count of vulnerabilities detected in that session.
 
 List all pentest scan sessions for an API service
 - **list_services**: A Service represents a single API base URL that the autonomous AI pentester continuously attacks. Each service contains its unique ID, name, base URL, and the number of discovered endpoints.
 
 List all registered API services in Equixly
+- **upload_api_spec**: Supported formats: openapi (JSON/YAML), postman, graphql, wsdl, har. Pass the raw spec content as a string along with the format identifier.
+
+Upload an API specification (OpenAPI, Postman, etc.) to a service
 - **get_scan_findings**: Each finding includes a severity rating, OWASP category, affected endpoint path, HTTP method, request/response evidence of exploitation, and actionable remediation guidance.
 
 Download all exploitable vulnerabilities found in a pentest scan
-- **get_scan**: Includes total requests made, endpoints explored, attack vectors attempted, severity breakdown of findings (critical/high/medium/low), and OWASP Top 10 mapping.
-
-Get detailed status and summary of a specific pentest scan
 - **get_service**: Required before modifying scan behavior.
 
 Get detailed configuration of a specific API service
@@ -64,9 +67,6 @@ List uploaded API specifications for a service
 - **trigger_scan**: It tests for BOLA, broken authentication, mass assignment, IDOR, injection, and business logic flaws. Ideal for CI/CD pipeline integration upon each deployment.
 
 Launch a new autonomous AI penetration test against a service
-- **upload_api_spec**: Supported formats: openapi (JSON/YAML), postman, graphql, wsdl, har. Pass the raw spec content as a string along with the format identifier.
-
-Upload an API specification (OpenAPI, Postman, etc.) to a service
 
 
 ## 💬 Prompt Examples

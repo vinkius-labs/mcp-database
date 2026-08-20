@@ -44,8 +44,8 @@ Connect to the **openFDA** public database through any AI agent and gain instant
 - **search_drug_enforcement**: Search for drug recall enforcement reports
 - **search_drug_labels**: Search for FDA drug product labeling
 - **search_food_adverse_events**: Search for adverse event reports for foods
-- **search_food_enforcement**: Search for food recall enforcement reports
 - **get_drug_shortages**: Get current and resolved drug shortages
+- **search_food_enforcement**: Search for food recall enforcement reports
 - **get_usage**: Get current API usage and rate limit info
 
 

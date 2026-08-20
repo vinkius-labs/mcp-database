@@ -36,16 +36,16 @@ Connect your **Gelato** account to any AI agent to automate your print-on-demand
 
 
 ## Available Tools (12)
-- **create_print_order**: Place new order
 - **get_order_status**: Get order details
-- **verify_api_connection**: Check connection
 - **cancel_print_order**: Cancel an order
+- **create_print_order**: Place new order
+- **verify_api_connection**: Check connection
 - **get_account_info**: Get account identity
 - **get_product_details**: Get product metadata
 - **get_shipping_quote**: Request a quote
-- **list_product_catalogs**: List product catalogs
-- **list_print_orders**: List all orders
 - **list_catalog_products**: List products in catalog
+- **list_print_orders**: List all orders
+- **list_product_catalogs**: List product catalogs
 - **get_order_shipments**: Track shipments
 - **list_print_webhooks**: List webhook configs
 

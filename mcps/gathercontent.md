@@ -37,17 +37,17 @@ Connect your **GatherContent** (by Bynder) account to any AI agent to automate y
 
 
 ## Available Tools (12)
-- **update_content_item**: Modify item metadata
-- **verify_api_connection**: Check connection
 - **create_content_item**: Create new item
 - **get_item_content**: Get item metadata/content
 - **get_my_identity**: Get current user profile
 - **get_project_details**: Get project metadata
+- **list_content_templates**: List project templates
+- **update_content_item**: Modify item metadata
 - **get_template_schema**: Get template fields
 - **list_project_folders**: List project folders
-- **list_project_items**: List content items
+- **verify_api_connection**: Check connection
 - **list_content_projects**: List all projects
-- **list_content_templates**: List project templates
+- **list_project_items**: List content items
 - **list_workflow_statuses**: ) for a project.
 
 List workflow states

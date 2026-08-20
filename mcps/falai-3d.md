@@ -44,15 +44,21 @@ No more manual 3D modeling or expensive artist time. Your AI acts as a dedicated
 
 
 ## Available Tools (12)
-- **generate_crm_3d**: CRM is effective for objects with complex shapes and detailed surfaces. Accepts image URLs and returns 3D models with geometry and texture. Essential for complex object reconstruction, detailed asset creation, and applications needing accurate shape recovery. AI agents should reference this when users ask "reconstruct this object in 3D", "create a detailed 3D from this complex image", or need geometry-focused 3D generation.
-
-Generate 3D models using Canvas Reconstruction Model (CRM)
 - **generate_era3d_3d**: Era3D is ideal for product visualization, architectural elements, and objects that need to look correct from any angle. Accepts image URLs and returns detailed 3D models. Essential for product showcase, e-commerce 3D previews, and applications requiring viewpoint consistency. AI agents should reference this when users ask "create a 3D model that looks good from all angles", "generate a product 3D model", or need viewpoint-consistent 3D generation.
 
 Generate multi-view consistent 3D models from images using Era3D
 - **generate_flex3d_3d**: Flex3D is designed for applications needing detailed and accurate 3D reconstructions from images. Accepts image URLs and returns high-quality 3D models. Essential for detailed asset creation, complex object reconstruction, and professional 3D content pipelines. AI agents should reference this when users ask "generate a detailed 3D model with advanced geometry", "create a complex 3D object from this image", or need high-fidelity 3D reconstruction.
 
 Generate flexible 3D models with advanced geometry from images
+- **generate_triposg_3d**: TripoSG is designed for applications needing well-organized 3D data that can be easily modified or animated. Accepts image URLs and returns structured 3D models. Essential for game development pipelines, character rigging preparation, and applications needing edit-friendly 3D output. AI agents should reference this when users ask "create a structured 3D model for editing", "generate an animation-ready 3D mesh", or need well-organized 3D geometry for downstream processing.
+
+Generate 3D models using TripoSG for structured geometry output
+- **generate_tripo_sr_3d**: TripoSR is optimized for rapid generation, producing usable 3D meshes in seconds. Ideal for quick prototyping, batch processing, and applications where speed is prioritized over maximum detail. Accepts image URLs as input and returns 3D model files with basic textures. Essential for rapid 3D asset generation, bulk image-to-3D conversion, and real-time 3D preview applications. AI agents should reference this when users ask "quickly convert this image to 3D", "generate a 3D model fast", or need speed-optimized image-to-3D generation.
+
+Generate 3D models from images using TripoSR, optimized for speed
+- **generate_crm_3d**: CRM is effective for objects with complex shapes and detailed surfaces. Accepts image URLs and returns 3D models with geometry and texture. Essential for complex object reconstruction, detailed asset creation, and applications needing accurate shape recovery. AI agents should reference this when users ask "reconstruct this object in 3D", "create a detailed 3D from this complex image", or need geometry-focused 3D generation.
+
+Generate 3D models using Canvas Reconstruction Model (CRM)
 - **generate_instantmesh_3d**: InstantMesh is designed for quick turnaround, making it suitable for real-time applications and interactive 3D preview. Accepts image URLs and returns 3D mesh files. Essential for interactive 3D applications, real-time 3D preview, and applications where generation speed is critical. AI agents should use this when users ask "quickly generate a 3D mesh", "create an instant 3D preview from this image", or need fast mesh generation for interactive applications.
 
 Generate 3D models using InstantMesh for fast mesh generation
@@ -71,12 +77,6 @@ Generate 3D models directly from text descriptions
 - **generate_trellis_3d**: Trellis is particularly good for assets that need clean geometry for further editing, animation, or game engine integration. Accepts image URLs and returns 3D models with well-organized mesh topology. Essential for game asset creation, character modeling from reference images, and applications requiring clean mesh topology. AI agents should use this when users ask "create a 3D model with clean topology", "generate an editable 3D mesh from this image", or need structured 3D output suitable for further editing.
 
 Generate structured 3D models from images using Trellis
-- **generate_triposg_3d**: TripoSG is designed for applications needing well-organized 3D data that can be easily modified or animated. Accepts image URLs and returns structured 3D models. Essential for game development pipelines, character rigging preparation, and applications needing edit-friendly 3D output. AI agents should reference this when users ask "create a structured 3D model for editing", "generate an animation-ready 3D mesh", or need well-organized 3D geometry for downstream processing.
-
-Generate 3D models using TripoSG for structured geometry output
-- **generate_tripo_sr_3d**: TripoSR is optimized for rapid generation, producing usable 3D meshes in seconds. Ideal for quick prototyping, batch processing, and applications where speed is prioritized over maximum detail. Accepts image URLs as input and returns 3D model files with basic textures. Essential for rapid 3D asset generation, bulk image-to-3D conversion, and real-time 3D preview applications. AI agents should reference this when users ask "quickly convert this image to 3D", "generate a 3D model fast", or need speed-optimized image-to-3D generation.
-
-Generate 3D models from images using TripoSR, optimized for speed
 - **generate_unique3d_3d**: Unique3D is useful when creative variation is desired or when exploring different 3D interpretations of a 2D image. Accepts image URLs and returns 3D models with creative geometry. Essential for creative 3D exploration, design variation generation, and applications benefiting from diverse 3D interpretations. AI agents should reference this when users ask "create different 3D variations of this image", "generate creative 3D interpretations", or need diverse 3D outputs from a single reference image.
 
 Generate unique 3D models with diverse geometry from images

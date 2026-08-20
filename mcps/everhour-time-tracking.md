@@ -33,14 +33,14 @@ Integrate **Everhour**, the powerful time tracking and project management softwa
 
 
 ## Available Tools (10)
+- **get_currently_running_timer**: Retrieve the task and start time for any currently active timer
+- **list_tracked_projects**: List all projects managed in your Everhour account
 - **get_everhour_user_metadata**: Retrieve metadata and profile information for the current Everhour user
 - **get_project_detailed_data**: Get detailed settings and budget information for a specific project
 - **quick_time_tracking_audit**: Retrieve a high-level summary of recent time entries and active projects
-- **get_currently_running_timer**: Retrieve the task and start time for any currently active timer
 - **list_billing_clients**: List all clients configured for project billing and invoicing
-- **list_tracked_projects**: List all projects managed in your Everhour account
-- **list_project_tasks**: List all tasks within a specific project
 - **list_organization_team_members**: List all team members and their roles in the organization
+- **list_project_tasks**: List all tasks within a specific project
 - **list_team_time_records**: List time records for the team within a specific date range
 - **list_projects_within_budget**: Identify projects that are currently within their assigned time or monetary budget
 
