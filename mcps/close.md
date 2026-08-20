@@ -37,13 +37,13 @@ Connect your **Close** CRM account to any AI agent and take full control of your
 
 ## Available Tools (8)
 - **list_lead_statuses**: List available stages/statuses for leads
+- **list_close_opportunities**: List all sales opportunities
+- **list_close_pipelines**: List sales pipelines configured in the account
+- **list_close_tasks**: List CRM tasks and reminders
 - **get_lead_details**: Get detailed information for a specific lead
 - **get_my_close_profile**: Retrieve information about the authenticated user
 - **get_opportunity_details**: Get detailed information for a specific opportunity
 - **list_close_leads**: List all leads in Close CRM
-- **list_close_opportunities**: List all sales opportunities
-- **list_close_pipelines**: List sales pipelines configured in the account
-- **list_close_tasks**: List CRM tasks and reminders
 
 
 ## 💬 Prompt Examples

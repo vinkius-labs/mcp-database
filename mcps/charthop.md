@@ -37,13 +37,13 @@ Connect your **ChartHop** account to any AI agent and take full control of your 
 
 ## Available Tools (8)
 - **get_organization_summary**: Retrieve core organization information and settings
-- **list_organization_departments**: List all departments in the organization
 - **list_organization_jobs**: List all jobs (roles) in the organization
-- **get_job_details**: Get detailed information for a specific job
 - **get_person_details**: Get detailed profile information for a specific person
 - **list_organization_people**: List all people (employees) in the organization
-- **list_planning_scenarios**: List headcount and compensation planning scenarios
 - **list_organization_teams**: List all teams in the organization
+- **list_planning_scenarios**: List headcount and compensation planning scenarios
+- **get_job_details**: Get detailed information for a specific job
+- **list_organization_departments**: List all departments in the organization
 
 
 ## 💬 Prompt Examples

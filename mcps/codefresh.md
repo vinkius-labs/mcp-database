@@ -36,14 +36,14 @@ Connect your **Codefresh** account to any AI agent and take full control of your
 
 
 ## Available Tools (8)
-- **get_build_execution_details**: Get detailed status and execution info for a specific build
 - **get_my_codefresh_profile**: Retrieve information about the authenticated user and account
 - **get_pipeline_configuration**: Get detailed information for a specific pipeline
-- **list_codefresh_pipelines**: List all CI/CD pipelines in the account
 - **list_codefresh_builds**: List all recent builds (workflows) in the account
 - **trigger_codefresh_build**: Trigger a new build for a specific pipeline
-- **list_delivery_clusters**: List all connected Kubernetes/Delivery clusters
 - **list_shared_contexts**: List all shared environment contexts (secrets, variables)
+- **get_build_execution_details**: Get detailed status and execution info for a specific build
+- **list_codefresh_pipelines**: List all CI/CD pipelines in the account
+- **list_delivery_clusters**: List all connected Kubernetes/Delivery clusters
 
 
 ## 💬 Prompt Examples

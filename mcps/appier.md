@@ -35,14 +35,14 @@ Connect your **Appier** environment to any AI agent and bring the power of AI-dr
 
 
 ## Available Tools (8)
-- **list_campaigns**: List all AI marketing campaigns in Appier
-- **get_campaign**: Get specific marketing campaign details
 - **list_audiences**: List all target audiences
+- **get_campaign**: Get specific marketing campaign details
+- **list_campaigns**: List all AI marketing campaigns in Appier
 - **get_audience**: Get details for a specific audience
 - **list_segments**: List configured user segments
-- **list_predictions**: List available AI prediction models
-- **list_conversions**: List tracked conversion events
 - **get_campaign_analytics**: Get analytics and performance metrics for a campaign
+- **list_conversions**: List tracked conversion events
+- **list_predictions**: List available AI prediction models
 
 
 ## 💬 Prompt Examples

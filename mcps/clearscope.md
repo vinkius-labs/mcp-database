@@ -36,16 +36,16 @@ Connect your **Clearscope** account to any AI agent and take full control of you
 
 
 ## Available Tools (10)
+- **list_terms**: Extracts explicitly attached NLP bounding variables organizing term frequencies
+- **list_workspaces**: Retrieve the root identity mappings bounding specific organizational containers
+- **create_report**: Provision a highly-available async parsing boundary running SERP execution hooks
+- **get_brief**: Identify explicit instructions resolving writing boundaries
+- **get_keyword_research**: Identify explicit Cloud calculations tracking theoretical Google traffic limits
+- **get_outline**: Extracts structural string arrays resolving AI-nested content hierarchies limit
 - **get_report_details**: Perform structural extraction of properties driving active NLP scoring boundaries
 - **grade_content**: Retrieve the exact structural matching verifying text against mapped NLP bounds
-- **list_reports**: Identify bounded logical arrays managing top-level Clearscope content SEO reports
-- **create_report**: Provision a highly-available async parsing boundary running SERP execution hooks
-- **get_keyword_research**: Identify explicit Cloud calculations tracking theoretical Google traffic limits
-- **list_terms**: Extracts explicitly attached NLP bounding variables organizing term frequencies
 - **list_competitors**: Identify precise active arrays spanning native SERP competitor links
-- **get_outline**: Extracts structural string arrays resolving AI-nested content hierarchies limit
-- **get_brief**: Identify explicit instructions resolving writing boundaries
-- **list_workspaces**: Retrieve the root identity mappings bounding specific organizational containers
+- **list_reports**: Identify bounded logical arrays managing top-level Clearscope content SEO reports
 
 
 ## 💬 Prompt Examples

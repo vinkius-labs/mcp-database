@@ -39,10 +39,10 @@ Connect your **Codacy** account to any AI agent and take full control of your au
 - **get_repository_quality_analysis**: Get the current quality grade and metrics for a specific repository
 - **list_supported_languages**: List programming languages supported by the Codacy analysis engine
 - **list_codacy_organizations**: List all organizations associated with the account
-- **list_organization_members**: List people and users belonging to an organization
-- **list_organization_repositories**: List all repositories analyzed within an organization
 - **search_repository_issues**: Search for specific code quality issues in a repository
 - **get_my_codacy_profile**: Retrieve information about the authenticated Codacy user
+- **list_organization_members**: List people and users belonging to an organization
+- **list_organization_repositories**: List all repositories analyzed within an organization
 - **list_repository_webhooks**: List configured webhooks for quality notifications
 
 

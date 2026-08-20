@@ -39,14 +39,14 @@ Connect your **Chorus.ai (ZoomInfo)** account to any AI agent and take full cont
 ## Available Tools (8)
 - **get_meeting_details**: Get detailed information for a specific meeting
 - **get_meeting_transcript**: Retrieve the full text transcript for a meeting
-- **list_tracked_competitors**: List competitors being tracked in conversations
-- **list_meeting_playlists**: List all shared meeting playlists
 - **list_chorus_users**: List all users and team members in the account
+- **list_meeting_playlists**: List all shared meeting playlists
+- **list_tracked_competitors**: List competitors being tracked in conversations
 - **get_my_chorus_profile**: Retrieve information about the currently authenticated session
-- **get_meeting_moments**: Retrieve AI-identified key moments for a meeting
 - **list_chorus_meetings**: ai.
 
 List recent meetings and calls
+- **get_meeting_moments**: Retrieve AI-identified key moments for a meeting
 
 
 ## 💬 Prompt Examples

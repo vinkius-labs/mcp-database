@@ -37,9 +37,9 @@ Connect your AI to **CoinGecko**, the crypto market data platform tracking price
 - **get_price**: Retrieve the current price of one or more cryptocurrencies
 - **get_trending**: Retrieve trending coins from the last 24 hours
 - **list_categories**: Retrieve a list of all cryptocurrency categories
+- **list_exchanges**: Retrieve a list of cryptocurrency exchanges
 - **list_markets**: Retrieve a list of coins with detailed market data
 - **search_crypto**: Search for coins, exchanges, and categories by keyword
-- **list_exchanges**: Retrieve a list of cryptocurrency exchanges
 
 
 ## 💬 Prompt Examples

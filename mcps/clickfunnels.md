@@ -39,11 +39,11 @@ Connect your **ClickFunnels 2.0** account to any AI agent and take full control 
 - **list_funnels**: List funnels
 - **list_orders**: List orders
 - **list_contacts**: List contacts
-- **get_contact**: Get contact
-- **create_contact**: Create contact
-- **get_order**: Get order
-- **list_workflows**: List workflows
 - **list_tags**: List tags
+- **list_workflows**: List workflows
+- **create_contact**: Create contact
+- **get_contact**: Get contact
+- **get_order**: Get order
 
 
 ## 💬 Prompt Examples

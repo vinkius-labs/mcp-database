@@ -38,21 +38,21 @@ Connect your **CodeRabbit** organization to any AI agent and take full control o
 - **list_users**: Optionally filter by seat assignment status or role.
 
 List all users in the CodeRabbit organization
-- **assign_seats**: Up to 500 user IDs per request.
-
-Assign CodeRabbit seats to users
 - **get_audit_logs**: Ideal for compliance reporting.
 
 Retrieve organization audit logs
-- **demote_users**: Demote users from admin to member role
 - **get_seat_mode**: Get the current seat assignment mode
-- **get_metrics**: Useful for engineering productivity analysis.
-
-Retrieve PR review metrics for a date range
 - **promote_users**: Promote users to admin role
 - **unassign_seats**: Does not delete user accounts.
 
 Remove CodeRabbit seats from users
+- **assign_seats**: Up to 500 user IDs per request.
+
+Assign CodeRabbit seats to users
+- **demote_users**: Demote users from admin to member role
+- **get_metrics**: Useful for engineering productivity analysis.
+
+Retrieve PR review metrics for a date range
 - **update_seat_mode**: Requires Enterprise plan.
 
 Update the seat assignment mode

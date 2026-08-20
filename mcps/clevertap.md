@@ -36,14 +36,14 @@ Connect your **CleverTap** account to any AI agent and take full control of your
 
 
 ## Available Tools (8)
-- **get_campaign_performance_report**: Retrieve detailed performance metrics for a specific campaign
-- **get_user_profile_details**: Get detailed information for a specific user identity
 - **get_real_time_usage_stats**: Retrieve real-time user counts and event statistics
+- **get_user_profile_details**: Get detailed information for a specific user identity
 - **list_clevertap_apps**: List all applications registered in the account
-- **list_event_schemas**: List all custom events and their schemas
-- **list_clevertap_campaigns**: List all campaigns scheduled within a date range
 - **list_clevertap_segments**: List all defined user segments
 - **list_user_profile_properties**: List all user profile properties and attributes
+- **get_campaign_performance_report**: Retrieve detailed performance metrics for a specific campaign
+- **list_clevertap_campaigns**: List all campaigns scheduled within a date range
+- **list_event_schemas**: List all custom events and their schemas
 
 
 ## 💬 Prompt Examples

@@ -33,36 +33,36 @@ Integrate **Cin7 Core** (formerly **DEAR Systems**), the advanced cloud-based in
 
 
 ## Available Tools (10)
-- **get_product_details**: Resolves detailed attributes such as dimensions, weight, supplier info, and tax rules for the given product GUID.
-
-Get detailed information for a specific product by ID
 - **get_sale_order_details**: Resolves individual line items, shipping addresses, invoice details, and the current fulfillment progress.
 
 Get full details for a specific sales order
 - **get_sku_stock_status**: Provides a detailed breakdown of quantities across all physical locations and virtual bins.
 
 Get stock levels for a specific product SKU
-- **get_all_stock_availability**: Returns real-time availability data including on-hand, allocated, and available-to-sell quantities across all configured warehouse locations.
-
-Retrieve current stock availability across all warehouses
 - **list_crm_customers**: Returns customer metadata including contact names, company details, and credit limits.
 
 List all customers registered in the system
-- **list_inventory_products**: Returns a list of products with metadata including SKU, name, category, and base price.
+- **get_product_details**: Resolves detailed attributes such as dimensions, weight, supplier info, and tax rules for the given product GUID.
 
-List all products in your Cin7 Core (DEAR) catalog
+Get detailed information for a specific product by ID
 - **list_purchase_orders**: Returns a list of purchase orders including supplier details, order date, and inbound status (e.g., ordered, received).
 
 List all purchase orders and inbound shipments
 - **list_sales_orders**: Returns order metadata including customer ID, total value, and current status (e.g., drafted, authorized, packed, shipped).
 
 List all sales orders and their current fulfillment status
-- **list_crm_suppliers**: Returns vendor profiles including primary contact info, default currency, and payment terms.
-
-List all suppliers and vendors
 - **search_products_by_sku**: Returns stock and identification data for products matching the provided SKU identifier.
 
 Search for a product using its SKU
+- **get_all_stock_availability**: Returns real-time availability data including on-hand, allocated, and available-to-sell quantities across all configured warehouse locations.
+
+Retrieve current stock availability across all warehouses
+- **list_crm_suppliers**: Returns vendor profiles including primary contact info, default currency, and payment terms.
+
+List all suppliers and vendors
+- **list_inventory_products**: Returns a list of products with metadata including SKU, name, category, and base price.
+
+List all products in your Cin7 Core (DEAR) catalog
 
 
 ## 💬 Prompt Examples

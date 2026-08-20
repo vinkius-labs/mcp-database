@@ -37,13 +37,13 @@ Connect your **Code Climate** account to any AI agent and take full control of y
 
 ## Available Tools (8)
 - **get_my_codeclimate_profile**: Retrieve information about the authenticated user
-- **get_repository_code_quality**: Get detailed quality information for a specific repository
 - **get_snapshot_quality_details**: Get detailed information for a specific analysis snapshot
-- **list_snapshot_code_issues**: List all code issues identified in a specific snapshot
 - **list_codeclimate_repositories**: List all repositories analyzed in Code Climate
 - **list_repository_snapshots**: List all analysis snapshots for a specific repository
 - **list_repository_test_reports**: List all test coverage reports for a repository
+- **get_repository_code_quality**: Get detailed quality information for a specific repository
 - **list_codeclimate_webhooks**: List all configured webhooks for a specific repository
+- **list_snapshot_code_issues**: List all code issues identified in a specific snapshot
 
 
 ## 💬 Prompt Examples

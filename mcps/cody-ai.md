@@ -35,9 +35,9 @@ Connect your AI to **Cody AI**, the business AI assistant that can be trained on
 - **create_conversation**: Create a new conversation session with a specific bot
 - **list_bots**: Retrieve all bots configured in your Cody AI account
 - **list_conversations**: Retrieve a list of recent conversations
-- **list_documents**: Retrieve a list of documents in your knowledge base
 - **list_folders**: Retrieve a list of folders in your knowledge base
 - **list_messages**: Retrieve the message history for a specific conversation
+- **list_documents**: Retrieve a list of documents in your knowledge base
 - **send_message**: Send a prompt to the AI in a specific conversation
 - **get_bot_details**: Retrieve detailed information about a specific bot
 - **get_document_status**: Check the syncing status of a document to see if the AI has finished learning it

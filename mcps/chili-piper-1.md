@@ -35,16 +35,16 @@ Connect your **Chili Piper** account to any AI agent and turn inbound leads into
 
 
 ## Available Tools (10)
-- **list_routes**: Identify bounded logical arrays managing top-level unified Concierge rules in Chili Piper
-- **get_route_details**: Perform structural extraction of properties driving active Router mapping
 - **list_queues**: Identify precise active arrays spanning native Round-Robin grouping
 - **get_queue_details**: Get an explicit full Chili Piper Queue layout including weight distributions
-- **generate_booking_link**: Provision a highly-available JSON Payload generating hard Calendar links
-- **list_meetings**: Enumerate explicitly attached structured rules exporting active scheduling lists
 - **get_meeting_details**: Retrieve the exact structural matching verifying explicit Meeting payloads
-- **cancel_meeting**: Irreversibly vaporize explicit validations extracting active scheduling blocks
+- **list_meetings**: Enumerate explicitly attached structured rules exporting active scheduling lists
 - **list_members**: Retrieve explicit Cloud logging tracing explicit Member accounts
+- **cancel_meeting**: Irreversibly vaporize explicit validations extracting active scheduling blocks
+- **generate_booking_link**: Provision a highly-available JSON Payload generating hard Calendar links
 - **get_availability**: Retrieve explicit analytics/statistics representing physical white-space
+- **get_route_details**: Perform structural extraction of properties driving active Router mapping
+- **list_routes**: Identify bounded logical arrays managing top-level unified Concierge rules in Chili Piper
 
 
 ## 💬 Prompt Examples

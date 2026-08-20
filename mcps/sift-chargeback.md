@@ -36,11 +36,11 @@ Connect your **Sift** account to any AI agent and take full control of your frau
 
 
 ## Available Tools (8)
-- **apply_user_decision**: Apply a manual decision to a user (e.g. block_user)
 - **list_user_decision_history**: List the history of decisions applied to a user
-- **get_user_fraud_labels**: Retrieve labels (e.g. $bad, $good) applied to a user
 - **get_user_fraud_score**: Get the current fraud score for a user
 - **list_sift_decisions**: List available decisions (actions) in Sift
+- **apply_user_decision**: Apply a manual decision to a user (e.g. block_user)
+- **get_user_fraud_labels**: Retrieve labels (e.g. $bad, $good) applied to a user
 - **list_sift_workflows**: List configured fraud prevention workflows
 - **report_sift_chargeback**: Report a chargeback event to Sift
 - **track_sift_event**: Track a general event (e.g. $login, $transaction) in Sift
