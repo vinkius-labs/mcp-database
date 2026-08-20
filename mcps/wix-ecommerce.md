@@ -39,24 +39,24 @@ No more manual navigation through complex store dashboards to check a stock leve
 
 
 ## Available Tools (10)
-- **list_product_collections**: Lists all product categories/collections in the store
 - **list_order_fulfillments**: Lists all fulfillment records for a specific order
-- **list_abandoned_carts**: Lists recent abandoned carts for recovery analysis
-- **query_stock_inventory**: Provide a comma-separated list of product IDs.
-
-Checks inventory levels for specific product IDs
-- **list_store_orders**: Queries recent eCommerce orders
 - **query_products**: Returns product IDs, names, and prices.
 
 Lists and filters products in the Wix store
-- **get_order_details**: Retrieves details for a specific store order
-- **get_product_details**: Retrieves full details for a specific Wix product
-- **update_stock_quantity**: Provide the inventory item ID and the new total quantity.
+- **query_stock_inventory**: Provide a comma-separated list of product IDs.
 
-Updates the inventory quantity for a specific product variant
+Checks inventory levels for specific product IDs
 - **create_order_fulfillment**: Provide the order ID and tracking number.
 
 Creates a new fulfillment record with tracking for an order
+- **get_order_details**: Retrieves details for a specific store order
+- **get_product_details**: Retrieves full details for a specific Wix product
+- **list_abandoned_carts**: Lists recent abandoned carts for recovery analysis
+- **list_product_collections**: Lists all product categories/collections in the store
+- **list_store_orders**: Queries recent eCommerce orders
+- **update_stock_quantity**: Provide the inventory item ID and the new total quantity.
+
+Updates the inventory quantity for a specific product variant
 
 
 ## 💬 Prompt Examples

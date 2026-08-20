@@ -40,9 +40,9 @@ Connect your **VTEX** Order Management System (OMS) to any AI agent and take ful
 
 Search for orders by status or pagination
 - **update_order_status**: Update the status of an order
-- **get_tracking_info**: Get tracking info for an order package
 - **cancel_order**: Cancel an order
 - **get_order**: Get full details of a specific order
+- **get_tracking_info**: Get tracking info for an order package
 
 
 ## 💬 Prompt Examples

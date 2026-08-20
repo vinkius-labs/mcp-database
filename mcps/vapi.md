@@ -36,22 +36,22 @@ Your AI agent becomes a robust telephony dispatch center.
 
 
 ## Available Tools (10)
-- **create_phone_call**: Provide the phone number ID and customer details.
-
-Start a new outbound phone call via Vapi
 - **create_web_call**: Returns a web call configuration.
 
 Generate a new web-based voice call link
-- **get_call_details**: Retrieves details, transcripts, and metrics for a specific call
 - **list_assistants**: List all Voice AI assistants configured in Vapi
 - **list_calls**: List recent and active voice calls managed by Vapi
-- **list_phone_numbers**: List all phone numbers connected to Vapi
-- **list_squads**: List all multi-agent squads
-- **list_agent_tools**: List all tools available to Vapi assistants
-- **update_assistant**: Update an existing assistant configuration
 - **create_assistant**: Provide configuration for transcriber, model, and voice as a JSON string.
 
 Create a new Voice AI assistant persona
+- **create_phone_call**: Provide the phone number ID and customer details.
+
+Start a new outbound phone call via Vapi
+- **get_call_details**: Retrieves details, transcripts, and metrics for a specific call
+- **list_agent_tools**: List all tools available to Vapi assistants
+- **list_phone_numbers**: List all phone numbers connected to Vapi
+- **list_squads**: List all multi-agent squads
+- **update_assistant**: Update an existing assistant configuration
 
 
 ## 💬 Prompt Examples

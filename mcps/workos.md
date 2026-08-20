@@ -39,21 +39,21 @@ No more manual navigation through the WorkOS dashboard to check a directory sync
 
 
 ## Available Tools (10)
-- **get_audit_log_events**: Returns a stream of events tracked in the organization.
-
-Retrieves audit log events for an organization
-- **get_sso_connection_details**: Retrieves details for a specific SSO connection
-- **get_directory_details**: g. Okta, Azure AD) of a directory ID.
-
-Retrieves metadata for a specific directory instance
 - **get_organization_details**: Retrieves details for a specific organization
-- **list_sso_connections**: Lists all active SSO connections
 - **list_directories**: Lists all active Directory Sync instances
+- **list_sso_connections**: Lists all active SSO connections
 - **create_workos_organization**: Provide the name and a list of authorized domains.
 
 Creates a new organization record
-- **list_directory_groups**: Lists all groups synced from a directory
 - **list_workos_organizations**: Lists all organizations in the WorkOS account
+- **get_audit_log_events**: Returns a stream of events tracked in the organization.
+
+Retrieves audit log events for an organization
+- **get_directory_details**: g. Okta, Azure AD) of a directory ID.
+
+Retrieves metadata for a specific directory instance
+- **get_sso_connection_details**: Retrieves details for a specific SSO connection
+- **list_directory_groups**: Lists all groups synced from a directory
 - **list_directory_users**: Lists all users synced from a directory
 
 

@@ -34,26 +34,26 @@ Connect your **UptimeRobot** account to any AI agent to actively manage your web
 
 
 ## Available Tools (10)
-- **delete_alert_contact**: This action is irreversible.
-
-Permanently deletes an alert contact
 - **delete_uptime_monitor**: This action is irreversible.
 
 Permanently deletes an uptime monitor
-- **update_uptime_monitor**: Updates an existing monitor configuration
 - **get_account_info**: Retrieves UptimeRobot account usage and limits
 - **get_monitor_details**: Retrieves full details for a specific UptimeRobot monitor
+- **update_uptime_monitor**: Updates an existing monitor configuration
 - **list_alert_contacts**: Lists all configured alert notification targets (Email, Slack, Webhook, etc.)
-- **list_monitors**: Returns pass/fail status, up ratio, and response times.
-
-Lists all uptime monitors configured in UptimeRobot
+- **reset_monitor_logs**: Resets monitoring logs and statistics for a specific monitor
 - **create_alert_contact**: Type 2=Email, 11=Slack.
 
 Creates a new alert notification target
 - **create_uptime_monitor**: Provide a friendly name, URL, and type (1=HTTP, 3=Ping).
 
 Creates a new uptime monitor
-- **reset_monitor_logs**: Resets monitoring logs and statistics for a specific monitor
+- **delete_alert_contact**: This action is irreversible.
+
+Permanently deletes an alert contact
+- **list_monitors**: Returns pass/fail status, up ratio, and response times.
+
+Lists all uptime monitors configured in UptimeRobot
 
 
 ## 💬 Prompt Examples

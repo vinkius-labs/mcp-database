@@ -35,15 +35,15 @@ Connect your **VTEX** Catalog API to any AI agent and manage your entire product
 
 
 ## Available Tools (7)
-- **get_brand**: Get details of a brand
-- **get_category**: Get details of a category
 - **get_product**: Get full details of a specific product
 - **manage_stock**: Update the available quantity of a SKU
 - **save_product**: Create or update a product
+- **get_brand**: Get details of a brand
+- **get_category**: Get details of a category
+- **get_sku**: Get details of a specific SKU
 - **search_products**: Examples: "Coca Cola", "b/1234" (brand ID), "c/5678" (category ID).
 
 Search for products by text, brand, or category
-- **get_sku**: Get details of a specific SKU
 
 
 ## 💬 Prompt Examples

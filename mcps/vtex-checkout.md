@@ -35,9 +35,9 @@ Connect your **VTEX** e-commerce checkout API to any AI agent and streamline you
 
 
 ## Available Tools (6)
-- **add_coupon**: Apply a coupon to a shopping cart
 - **get_orderform**: Get details of a specific shopping cart
 - **simulate_payment**: Simulate a payment validation
+- **add_coupon**: Apply a coupon to a shopping cart
 - **simulate_order**: Simulate a cart and shipping costs
 - **create_address**: Add a new address to a client profile
 - **get_client_profile**: Get client profile details
