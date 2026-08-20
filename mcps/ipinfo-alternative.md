@@ -42,10 +42,10 @@ Connect **IPinfo** to your AI agent to perform deep IP intelligence lookups. Whe
 - **get_whois_net**: Get IP WHOIS data for a network
 - **get_whois_org**: Get IP WHOIS data for an organization
 - **get_whois_poc**: Get IP WHOIS data for a point of contact
+- **batch_enrich_ips**: Batch enrich up to 1,000 IP addresses
 - **get_asn**: You can provide just the number or the AS prefix (e.g., 15169 or AS15169).
 
 Retrieve details about an Autonomous System (ASN)
-- **batch_enrich_ips**: Batch enrich up to 1,000 IP addresses
 - **get_hosted_domains**: Supports pagination.
 
 List domains hosted on a specific IP (Reverse IP)

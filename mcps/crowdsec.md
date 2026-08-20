@@ -35,8 +35,8 @@ No more manual log diving or complex CLI commands to check if an IP is malicious
 
 
 ## Available Tools (3)
-- **get_cti_smoke**: Get CTI reputation for an IP
 - **get_decisions_stream**: Poll for new and deleted decisions from LAPI
+- **get_cti_smoke**: Get CTI reputation for an IP
 - **get_decisions**: Query CrowdSec LAPI for decisions
 
 

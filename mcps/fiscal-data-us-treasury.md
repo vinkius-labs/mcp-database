@@ -33,9 +33,9 @@ Connect directly to the **U.S. Department of the Treasury's Fiscal Data API** to
 
 
 ## Available Tools (4)
+- **get_rates_of_exchange**: Get Treasury Reporting Rates of Exchange
 - **get_mts_table_1**: Get Monthly Treasury Statement (MTS) Table 1
 - **get_mts_table_9**: Get Monthly Treasury Statement (MTS) Table 9
-- **get_rates_of_exchange**: Get Treasury Reporting Rates of Exchange
 - **query_dataset**: Provide the endpoint path (e.g., v1/accounting/od/rates_of_exchange) and optional filters.
 
 Query any Fiscal Data dataset endpoint

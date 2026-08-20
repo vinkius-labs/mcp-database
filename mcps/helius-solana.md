@@ -38,14 +38,14 @@ Connect your **Helius** account to any AI agent to interact with the Solana bloc
 
 Resolve address to known entities
 - **get_wallet_transfers**: Get incoming and outgoing token transfers
-- **parse_transactions**: Parse raw transactions into human-readable data
-- **search_assets**: Search for assets with advanced filtering
-- **get_asset_batch**: Get multiple assets in one call
 - **get_asset_proof**: Get Merkle proof for compressed NFTs
-- **get_assets_by_owner**: List all assets owned by a wallet
 - **get_priority_fee_estimate**: Recommended to provide the serialized transaction.
 
 Get precise priority fee estimates
+- **get_assets_by_owner**: List all assets owned by a wallet
+- **get_asset_batch**: Get multiple assets in one call
+- **parse_transactions**: Parse raw transactions into human-readable data
+- **search_assets**: Search for assets with advanced filtering
 - **get_asset**: Get detailed data for a specific Solana asset
 - **get_token_accounts**: Get all token accounts for a mint or owner
 - **get_transaction_history**: Get enhanced transaction history for an address

@@ -34,39 +34,39 @@ Connect **Descope** to your AI agent to manage and test user authentication flow
 
 
 ## Available Tools (33)
-- **auth_enchantedlink_poll**: Poll for Enchanted Link session
 - **auth_exchange_access_key**: Exchange an access key for a session JWT
-- **auth_oauth_authorize**: Start OAuth flow
-- **auth_oauth_exchange**: Exchange OAuth code for session
 - **auth_otp_signin_email**: Sign in a user via Email OTP
-- **auth_otp_signup_email**: Sign up a user via Email OTP
-- **auth_otp_signup_sms**: Sign up a user via SMS OTP
-- **auth_otp_signup_voice**: Sign up a user via Voice OTP
 - **auth_otp_verify_voice**: Verify a Voice OTP
 - **auth_password_reset**: Reset a user password
-- **auth_password_signin**: Sign in a user with a password
 - **auth_password_signup**: Sign up a user with a password
 - **mgmt_search_users**: Search for users
-- **mgmt_update_user**: Update an existing user
 - **auth_webauthn_signin_finish**: Finish WebAuthn sign in
-- **auth_webauthn_signin_start**: Start WebAuthn sign in
+- **mgmt_update_user**: Update an existing user
 - **auth_webauthn_signup_finish**: Finish WebAuthn sign up
 - **auth_webauthn_signup_start**: Start WebAuthn sign up
-- **mgmt_create_access_key**: Create a new access key (M2M)
-- **mgmt_create_permission**: Create a new permission
 - **mgmt_create_role**: Create a new role
-- **mgmt_create_tenant**: Create a new tenant
 - **mgmt_create_user**: Create a new user
 - **mgmt_delete_user**: Delete a user
-- **auth_enchantedlink_signup**: Sign up a user via Enchanted Link
-- **auth_enchantedlink_verify**: Verify an Enchanted Link token
 - **auth_get_keys**: Get public keys for session validation
 - **mgmt_get_user**: Load a user by login ID
 - **mgmt_list_tenants**: Load all tenants
+- **auth_enchantedlink_poll**: Poll for Enchanted Link session
+- **auth_enchantedlink_signup**: Sign up a user via Enchanted Link
+- **auth_enchantedlink_verify**: Verify an Enchanted Link token
 - **auth_magiclink_signup_email**: Sign up or sign in a user via Magic Link
 - **auth_magiclink_verify**: Verify a Magic Link token
+- **auth_oauth_authorize**: Start OAuth flow
+- **auth_oauth_exchange**: Exchange OAuth code for session
+- **auth_otp_signup_email**: Sign up a user via Email OTP
+- **auth_otp_signup_sms**: Sign up a user via SMS OTP
+- **auth_otp_signup_voice**: Sign up a user via Voice OTP
 - **auth_otp_verify_email**: Verify an Email OTP
 - **auth_otp_verify_sms**: Verify an SMS OTP
+- **auth_password_signin**: Sign in a user with a password
+- **auth_webauthn_signin_start**: Start WebAuthn sign in
+- **mgmt_create_access_key**: Create a new access key (M2M)
+- **mgmt_create_permission**: Create a new permission
+- **mgmt_create_tenant**: Create a new tenant
 
 
 ## 💬 Prompt Examples

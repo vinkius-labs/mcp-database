@@ -39,40 +39,23 @@ Your AI acts as a virtual operator, capable of spinning up meeting rooms for sup
 - **delete_room**: Delete a room
 - **delete_webhook**: Delete a webhook
 - **create_batch_job**: Submit a batch processor job
-- **create_meeting_token**: Create a meeting token
-- **create_room**: Create a new room
-- **create_webhook**: Create a webhook
 - **delete_batch_job**: Delete a batch job
 - **delete_recording**: Delete a recording reference
 - **eject_participants**: Kick participants from a room
 - **get_batch_job_access_link**: Get download links for finished jobs
-- **get_batch_job**: Get batch job status
-- **get_domain**: Retrieve domain configuration
 - **get_global_presence**: List all active participants on the domain
-- **get_logs**: Retrieve detailed call logs and metrics
 - **get_meeting_participants**: List participants in a session
-- **get_meeting**: Get details for a specific session
 - **get_recording_access_link**: Generate a time-limited S3 download link
-- **get_recording**: Get recording information
-- **get_room_presence**: Get active participants in a room
 - **get_room**: Retrieve a specific room
-- **get_session_data**: Retrieve meeting session data
+- **get_room_presence**: Get active participants in a room
 - **get_webhook**: Get specific webhook info
 - **list_available_numbers**: Search for numbers by areacode or region
 - **list_batch_jobs**: List all batch jobs
-- **list_meetings**: List meeting sessions
 - **list_purchased_numbers**: List numbers owned by your domain
 - **list_recordings**: Supports pagination.
 
 List cloud recordings
-- **list_rooms**: Supports pagination.
-
-List rooms
-- **release_phone_number**: Release a number
-- **send_app_message**: Send data to participants
 - **send_dtmf**: Send DTMF tones to a session
-- **set_domain**: Set domain configuration
-- **set_session_data**: Sync data to all participants
 - **start_dial_out**: Call a sipUri or phoneNumber
 - **start_live_streaming**: Start RTMP/HLS streaming
 - **start_recording**: Start a recording
@@ -80,16 +63,33 @@ List rooms
 - **stop_dial_out**: End a dial-out session
 - **stop_live_streaming**: Stop streaming
 - **stop_recording**: Stop an active recording
-- **stop_transcription**: Stop transcription
 - **update_live_streaming**: Update layout or endpoints for streaming
 - **update_permissions**: Update participant permissions
-- **update_recording**: Update layout of an active recording
-- **update_room**: Modify room privacy or configuration
 - **update_transcription**: Update participants being transcribed
 - **update_webhook**: Update or re-activate a failed webhook
-- **validate_meeting_token**: Validate a meeting token
 - **buy_phone_number**: Purchase a specific or random number
+- **create_meeting_token**: Create a meeting token
+- **create_room**: Create a new room
+- **create_webhook**: Create a webhook
+- **get_batch_job**: Get batch job status
+- **get_domain**: Retrieve domain configuration
+- **get_logs**: Retrieve detailed call logs and metrics
+- **get_meeting**: Get details for a specific session
+- **get_recording**: Get recording information
+- **get_session_data**: Retrieve meeting session data
+- **list_meetings**: List meeting sessions
+- **list_rooms**: Supports pagination.
+
+List rooms
 - **list_webhooks**: List webhooks
+- **release_phone_number**: Release a number
+- **send_app_message**: Send data to participants
+- **set_domain**: Set domain configuration
+- **set_session_data**: Sync data to all participants
+- **stop_transcription**: Stop transcription
+- **update_recording**: Update layout of an active recording
+- **update_room**: Modify room privacy or configuration
+- **validate_meeting_token**: Validate a meeting token
 
 
 ## 💬 Prompt Examples

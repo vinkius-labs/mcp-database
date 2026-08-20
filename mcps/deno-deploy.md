@@ -34,23 +34,23 @@ Connect your **Deno Deploy** account to any AI agent to orchestrate your edge co
 
 
 ## Available Tools (15)
-- **create_deployment**: Create a new deployment (revision) for an app
 - **create_layer**: Create a new layer for sharing environment variables
-- **create_project_deployment**: Create a deployment for a project (v1 API)
-- **list_apps**: Supports pagination and label filtering.
-
-List Deno Deploy applications
 - **list_projects**: List projects in an organization (v1 API)
 - **list_revisions**: List revisions for an app
 - **update_layer**: Update an existing layer
 - **get_app**: Get details for a specific Deno Deploy app
 - **get_build_logs**: Stream build logs for a revision
-- **get_organization**: Get organization details (v1 API)
 - **get_revision_progress**: Stream revision progress (SSE)
-- **get_revision**: Get status of a specific revision
-- **list_domains**: List custom domains for an organization (v1 API)
-- **create_app**: Create a new Deno Deploy application
 - **get_app_logs**: Query application logs
+- **create_app**: Create a new Deno Deploy application
+- **create_deployment**: Create a new deployment (revision) for an app
+- **create_project_deployment**: Create a deployment for a project (v1 API)
+- **get_organization**: Get organization details (v1 API)
+- **get_revision**: Get status of a specific revision
+- **list_apps**: Supports pagination and label filtering.
+
+List Deno Deploy applications
+- **list_domains**: List custom domains for an organization (v1 API)
 
 
 ## 💬 Prompt Examples

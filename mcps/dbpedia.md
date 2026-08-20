@@ -34,20 +34,20 @@ Connect your AI agent to **DBpedia**, the structured heart of Wikipedia. This se
 
 
 ## Available Tools (8)
-- **get_live_changes**: List change events from the DBpedia Live Sync API
-- **get_live_resource**: Retrieve the most recent data for a specific Wikipedia page
-- **query_live_sparql**: dbpedia.org/sparql for real-time Wikipedia updates.
-
-Execute a SPARQL query against the DBpedia Live endpoint
-- **lookup_prefix**: Autocomplete search for DBpedia resources
-- **lookup_search**: Search for DBpedia resources using keywords
 - **get_resource**: g., "Berlin") using content negotiation.
 
 Retrieve linked data for a specific DBpedia resource
+- **lookup_search**: Search for DBpedia resources using keywords
+- **query_live_sparql**: dbpedia.org/sparql for real-time Wikipedia updates.
+
+Execute a SPARQL query against the DBpedia Live endpoint
 - **query_sparql**: org/sparql. Max 10,000 rows.
 
 Execute a SPARQL query against the public DBpedia endpoint
 - **retrieve_live_articles**: Extract recent data for a list of resource names
+- **get_live_changes**: List change events from the DBpedia Live Sync API
+- **get_live_resource**: Retrieve the most recent data for a specific Wikipedia page
+- **lookup_prefix**: Autocomplete search for DBpedia resources
 
 
 ## 💬 Prompt Examples

@@ -34,8 +34,6 @@ Connect your **Cloudflare Stream** account to any AI agent to manage your video 
 
 
 ## Available Tools (26)
-- **create_live_output**: Create a simulcast output for a live input
-- **generate_caption**: Generate AI captions for a video
 - **get_storage_usage**: Retrieve account-wide storage statistics
 - **get_video**: Retrieve details for a single video
 - **get_webhook**: View webhook configuration
@@ -44,12 +42,14 @@ Connect your **Cloudflare Stream** account to any AI agent to manage your video 
 Initiates a video upload using the TUS protocol
 - **list_audio_tracks**: List additional audio tracks for a video
 - **list_captions**: List text tracks (subtitles/captions) for a video
-- **list_downloads**: List available downloads for a video
 - **list_live_inputs**: List live inputs
+- **list_signing_keys**: List Stream Signing Keys
+- **create_live_output**: Create a simulcast output for a live input
+- **generate_caption**: Generate AI captions for a video
+- **list_downloads**: List available downloads for a video
 - **list_live_outputs**: g., YouTube, Twitch) for a specific live input.
 
 List simulcast outputs for a live input
-- **list_signing_keys**: List Stream Signing Keys
 - **upload_caption**: Upload a VTT caption file
 - **copy_audio_track**: Add an audio track via URL
 - **create_live_input**: Can specify metadata and recording options.

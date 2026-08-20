@@ -41,7 +41,6 @@ Remove all volumes from a bookshelf
 
 Retrieve metadata for a specific bookshelf of the authenticated user
 - **get_user_bookshelf**: Retrieve a specific public bookshelf for a user
-- **get_volume**: Retrieve a volume by ID
 - **list_my_bookshelf_volumes**: 0 access token.
 
 Retrieve volumes on a specific bookshelf of the authenticated user
@@ -52,13 +51,14 @@ Change the position of a volume on a bookshelf
 - **remove_volume_from_my_bookshelf**: 0 access token.
 
 Remove a volume from a bookshelf
+- **list_user_bookshelf_volumes**: Retrieve volumes on a user's public bookshelf
 - **list_my_bookshelves**: 0 access token.
 
 Retrieve the authenticated user's bookshelves
-- **list_user_bookshelf_volumes**: Retrieve volumes on a user's public bookshelf
 - **add_volume_to_my_bookshelf**: 0 access token.
 
 Add a volume to a bookshelf
+- **get_volume**: Retrieve a volume by ID
 - **search_volumes**: Use keywords like intitle:, inauthor:, inpublisher:, subject:, isbn:.
 
 Search for books and magazines

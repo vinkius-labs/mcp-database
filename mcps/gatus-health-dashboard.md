@@ -37,8 +37,8 @@ No more manual dashboard checking. Your AI acts as a 24/7 SRE assistant, providi
 ## Available Tools (4)
 - **get_endpoint_health**: Get health status and recent results for a specific endpoint
 - **get_endpoint_stats**: Get performance statistics for a specific endpoint
-- **list_endpoints**: Get all monitored endpoints and their current status
 - **get_metrics**: Get Prometheus-compatible metrics from Gatus
+- **list_endpoints**: Get all monitored endpoints and their current status
 
 
 ## 💬 Prompt Examples

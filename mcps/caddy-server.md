@@ -35,25 +35,25 @@ Connect your **Caddy Server** instance to any AI agent and automate your web inf
 
 
 ## Available Tools (13)
-- **adapt_config**: Adapts a configuration (e.g., Caddyfile) to JSON without running it
-- **append_config**: and target is array, expands payload array and appends elements.
-
-Sets or replaces an object; appends to an array in Caddy config
 - **delete_config**: Deletes the value at the named path in Caddy config
 - **replace_config**: Strictly replaces an existing object or array element in Caddy config
 - **get_config_by_id**: Access a configuration object directly via its @id field
-- **get_config**: Leave empty for full config.
-
-Exports the configuration at the specified path as JSON
 - **get_metrics**: Exposes metrics in Prometheus exposition format
 - **get_pki_ca_certs**: Returns the certificate chain for a particular CA
-- **get_pki_ca**: Returns information about a particular PKI app CA
 - **get_upstreams**: Returns the current status of configured proxy upstreams
-- **insert_config**: Creates a new object or inserts into an array at a specific index
 - **load_config**: Use application/json for native JSON, or text/caddyfile for Caddyfile.
 
 Sets or replaces the active Caddy configuration
 - **stop_server**: Gracefully shuts down the Caddy server and exits the process
+- **adapt_config**: Adapts a configuration (e.g., Caddyfile) to JSON without running it
+- **append_config**: and target is array, expands payload array and appends elements.
+
+Sets or replaces an object; appends to an array in Caddy config
+- **get_config**: Leave empty for full config.
+
+Exports the configuration at the specified path as JSON
+- **get_pki_ca**: Returns information about a particular PKI app CA
+- **insert_config**: Creates a new object or inserts into an array at a specific index
 
 
 ## 💬 Prompt Examples
