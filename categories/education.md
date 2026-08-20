@@ -4,6 +4,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Chengyu Tone & Pattern Validator](../mcps/chengyu-tone-pattern-validator.md) | Validates the phonetic structure and poetic meter of Chinese Chengyu. |
 | [Chess.com](../mcps/chesscom.md) | Access Chess.com player profiles, stats, games, puzzles, and leaderboards directly from any AI agent. |
 | [Chess.com Global Intelligence](../mcps/chesscom-global-intelligence.md) | The definitive server for Chess.com — track player ratings, historical games, and daily puzzles via AI. |
 | [Chinese Zodiac Calculator](../mcps/chinese-zodiac-calculator.md) | Discover your Chinese zodiac animal, element, and astrological compatibility. |
@@ -20,6 +21,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Language Proficiency Mapper](../mcps/language-proficiency-mapper.md) | Translate raw exam scores (IELTS, TOEFL, DELF, etc.) into CEFR levels and check visa/university requirements. |
 | [Mode Calculator](../mcps/mode-calculator.md) | Derive and explore the seven musical modes from any major or minor parent scale. |
 | [Numerology Name Calculator](../mcps/numerology-name-calculator.md) | Calculate Expression, Soul Urge, and Personality numbers using Pythagorean numerology. |
+| [Poetic Meter Analyzer](../mcps/poetic-meter-analyzer.md) | Deterministic poetic meter and syllable analysis for English poetry. |
 | [Relative & Parallel Key Finder](../mcps/relative-parallel-key-finder.md) | Instantly discover relative, parallel, and related musical keys based on any input key. |
 | [Stanford bioRxiv](../mcps/stanford-biorxiv.md) | Search and retrieve preprint research papers in biology and life sciences from the bioRxiv open access repository. |
 | [Stanford CrossRef](../mcps/stanford-crossref.md) | Query scholarly metadata for millions of academic publications with DOI resolution, citation tracking, and publisher data. |

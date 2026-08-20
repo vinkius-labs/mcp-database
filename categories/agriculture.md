@@ -6,6 +6,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 |-----------|-------------|
 | [Crop Rotation Planner](../mcps/crop-rotation-planner.md) | Generate optimized agricultural crop rotation sequences to improve soil health and maximize income. |
 | [Fertilizer Requirement Calculator](../mcps/fertilizer-requirement-calculator.md) | Calculate precise nutrient dosages and fertilizer costs based on soil analysis and regional standards. |
+| [Hanami Bloom Forecast](../mcps/hanami-bloom-forecast.md) | Predict Japanese cherry blossom (Sakura) bloom dates using thermal degree day accumulation. |
 | [Harvest Loss Calculator](../mcps/harvest-loss-calculator.md) | Quantify physical and financial grain losses during harvest. |
 | [Irrigation Water Optimizer](../mcps/irrigation-water-optimizer.md) | Calculate precise weekly water requirements, irrigation frequency, and session dosage for your garden. |
 | [Irrigation Water Requirement Calculator](../mcps/irrigation-water-requirement-calculator.md) | Calculate crop evapotranspiration, water deficit, and required irrigation depths. |
@@ -14,6 +15,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Plant Population Calculator](../mcps/plant-population-calculator.md) | Calculate seed density and evaluate planting success against industry standards. |
 | [Planting Window Calculator](../mcps/planting-window-calculator.md) | Determine optimal planting windows, insurance deadlines, and climate risks for crops. |
 | [Productivity Gap Analyzer](../mcps/productivity-gap-analyzer.md) | Identify agricultural yield gaps and potential revenue increases. |
+| [Sake Seimai Buai Calculator](../mcps/sake-seimai-buai-calculator.md) | Calculate rice milling yields, milling duration, sake grades, and fermentation water requirements. |
 | [Seed Treatment Calculator](../mcps/seed-treatment-calculator.md) | Calculate precise quantities, application sequences, and costs for seed treatment batches. |
 | [Soil Correction Planner](../mcps/soil-correction-planner.md) | Plan a 3-year soil amendment program for lime, gypsum, and micronutrients. |
 

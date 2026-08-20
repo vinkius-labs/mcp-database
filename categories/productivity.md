@@ -60,6 +60,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [AMcards](../mcps/amcards.md) | Send personalized greeting cards and handwritten notes to clients and prospects that feel genuinely personal at scale. |
 | [Amilia](../mcps/amilia.md) | Recreation and activity management — manage programs, accounts, and registrations via AI. |
 | [Amplenote](../mcps/amplenote.md) | Connect your Amplenote workspace to your AI agent — search notes, manage tasks, and organize ideas via natural language. |
+| [Anime Canon & Filler Tracker](../mcps/anime-canon-filler-tracker.md) | Calculate canon episode counts, filler ratios, and optimized binge times for anime series. |
+| [Anime Filler Ratio Calculator](../mcps/anime-filler-ratio-calculator.md) | Analyze anime pacing and calculate filler ratios to optimize your watch time. |
 | [Annotation Extractor and Tracker](../mcps/annotation-extractor-and-tracker.md) | Automatically detect, track, and report code annotations like FIXME, HACK, and XXX in your codebase. |
 | [AntEater](../mcps/anteater.md) | Monitor website changes, detect content updates, and receive alerts when key pages are modified across your digital properties. |
 | [Anxiety Management Tracker](../mcps/anxiety-management-tracker.md) | Track anxiety patterns, identify triggers, and evaluate coping strategy effectiveness. |
@@ -723,7 +725,6 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Reverse Sleep Calculator](../mcps/reverse-sleep-calculator.md) | Calculate your ideal bedtime by counting backwards from your wake-up time. |
 | [Review Session Scheduler](../mcps/review-session-scheduler.md) | Automate study schedules using the Ebbinghaus Forgetting Curve for long-term memory retention. |
 | [Robin](../mcps/robin.md) | Connect your AI assistant to Robin to seamlessly manage office locations, book meeting rooms, reserve hot desks, and monitor workplace availability directly from chat. |
-| [Roman Numeral Converter](../mcps/roman-numeral-converter.md) | Convert musical chord names to Roman numerals and vice-versa, with automatic transposition. |
 | [Routific](../mcps/routific.md) | Connect your AI assistant to Routific to solve complex vehicle routing problems, dispatch drivers, and manage global delivery timelines natively through chat. |
 | [RSS / Atom Reader](../mcps/rss-atom-reader.md) | Connect your AI assistant to any RSS or Atom feed worldwide to fetch news, updates, and articles instantly within your chat interface. |
 | [RSS Feed Parser](../mcps/rss-feed-parser.md) | Turn any RSS 2.0 or Atom feed into clean, structured JSON. Extract titles, links, dates, authors, and full content from blogs, news sites, and podcasts — ready for your agent to process. |

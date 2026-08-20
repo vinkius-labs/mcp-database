@@ -14,12 +14,14 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Bates Numbering Generator Engine](../mcps/bates-numbering-generator-engine.md) | Generate flawless, sequentially accurate Bates numbering arrays for massive e-Discovery documentation without LLM skipping. |
 | [Blood Alcohol Content Calculator](../mcps/blood-alcohol-content-calculator.md) | Estimate BAC, legal limits, and impairment risks. |
 | [Bolt Pattern Finder](../mcps/bolt-pattern-finder.md) | Precise vehicle wheel specification lookup and cross-compatibility engine. |
+| [Bowling Score Engine](../mcps/bowling-score-engine.md) | Deterministic 10-pin bowling scoring and validation engine. |
 | [Button Sizing Engine](../mcps/button-sizing-engine.md) | Converts button sizes between Ligne, mm, and inches, and calculates buttonhole dimensions. |
 | [Calendar Converter](../mcps/calendar-converter.md) | Convert dates between 15+ calendar systems including Gregorian, Chinese, Persian, and Japanese Era. |
 | [Calorie Burn Estimator](../mcps/calorie-burn-estimator.md) | Calculate energy expenditure using MET values, body weight, and activity duration. |
 | [Calories Burned Calculator](../mcps/calories-burned-calculator.md) | Calculate calories burned using MET values and heart rate data. |
 | [Carbon Footprint Calculator](../mcps/carbon-footprint-calculator.md) | Estimate your annual carbon emissions from home energy, travel, and lifestyle choices. |
 | [Char-to-Token Estimator](../mcps/char-to-token-estimator.md) | Predict token usage for different LLMs using language-specific character ratios. |
+| [Chinese Lucky Number Analyzer](../mcps/chinese-lucky-number-analyzer.md) | Analyze the numerological significance of numbers based on Chinese cultural symbolism. |
 | [Compression Ratio Calculator](../mcps/compression-ratio-calculator.md) | A deterministic utility to evaluate text compression performance. |
 | [Context Window Token Estimator](../mcps/context-window-token-estimator.md) | Calculate exact token counts and payload distribution for AI agent context windows. |
 | [Correlation Matrix Engine](../mcps/correlation-matrix-engine.md) | Generate exact Pearson and Spearman correlation matrices across all numeric columns local. Find the strongest relationships in your data without LLM math errors. |
@@ -39,14 +41,17 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Frequency & Note Converter](../mcps/frequency-note-converter.md) | Convert between musical frequencies and notes with precision. |
 | [Gacha Pity Calculator](../mcps/gacha-pity-calculator.md) | Calculate exact gacha probabilities, soft pity escalation, and resource costs. |
 | [Geographic Distance Calculator](../mcps/geographic-distance-calculator.md) | Calculate precise distances, bearings, and waypoints using Haversine, Vincenty, and Euclidean models. |
+| [Golf Handicap Calculator](../mcps/golf-handicap-calculator.md) | Deterministic golf handicap calculation per USGA/WHS standards. |
 | [Groove Quantize Calculator](../mcps/groove-quantize-calculator.md) | Calculate precise millisecond-based quantization grids, swing offsets, and latency compensation for DAWs. |
 | [IP Address & Subnet Calculator](../mcps/ip-address-subnet-calculator.md) | Perform precise bitwise IPv4 and IPv6 subnet calculations and membership checks. |
 | [ISBN-10 and ISBN-13 Validator](../mcps/isbn-10-and-isbn-13-validator.md) | Verify the mathematical integrity of ISBN-10 and ISBN-13 identifiers and identify registration groups. |
 | [ISO 8601 Duration Parser](../mcps/iso-8601-duration-parser.md) | Extracts time components and calculates total seconds from ISO 8601 duration strings. |
+| [Japanese Era & Zodiac Converter](../mcps/japanese-era-zodiac-converter.md) | Convert Gregorian dates to Japanese eras and determine zodiac animals. |
 | [Japanese Era Converter](../mcps/japanese-era-converter.md) | Convert Gregorian dates to Japanese imperial eras and calculate era metrics. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser-alternative.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [Knitting Gauge Calculator](../mcps/knitting-gauge-calculator.md) | Convert garment dimensions and shaping rules into precise stitch counts and schedules. |
+| [Mahjong Riichi Scoring](../mcps/mahjong-riichi-scoring.md) | Deterministic Japanese Riichi Mahjong scoring calculator. |
 | [Markdown to Plain Text Extractor](../mcps/markdown-to-plain-text-extractor.md) | Strips Markdown syntax and measures content reduction. |
 | [Markdown to Plain Text Extractor Alternative](../mcps/markdown-to-plain-text-extractor-alternative.md) | Strips Markdown syntax and measures content reduction. |
 | [Memory Context Window Pruner](../mcps/memory-context-window-pruner.md) | Manage LLM conversation history by applying deterministic pruning strategies to prevent context window overflow. |
@@ -56,6 +61,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Multi-Monitor Arrangement Math](../mcps/multi-monitor-arrangement-math.md) | Calculate total desktop dimensions and coordinate offsets for multi-monitor setups. |
 | [Number Base Converter](../mcps/number-base-converter.md) | Convert integers and fractional numbers between any bases from 2 to 36 with high precision. |
 | [Number Compression Calculator](../mcps/number-compression-calculator.md) | Analyze text to calculate potential token savings by rounding large numbers. |
+| [Onsen Mineral Classifier](../mcps/onsen-mineral-classifier.md) | Classify Japanese hot spring water quality, legal status, and therapeutic benefits. |
 | [Pan Size Converter](../mcps/pan-size-converter.md) | Calculate baking pan volumes and find perfect shape or size substitutions. |
 | [Pet Age Converter](../mcps/pet-age-converter.md) | Calculate human-equivalent ages for dogs and cats using species-specific biological growth curves. |
 | [Pet Lifespan Estimator](../mcps/pet-lifespan-estimator.md) | Estimate pet longevity and identify life stages based on species, breed, and size. |
@@ -68,6 +74,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Realistic Dog Age Calculator](../mcps/realistic-dog-age-calculator.md) | Convert dog years to human years using a size-dependent logarithmic aging model. |
 | [Retry Backoff Calculator](../mcps/retry-backoff-calculator.md) | Calculate deterministic exponential backoff delays and retry schedules. |
 | [Retry with Backoff Executor](../mcps/retry-with-backoff-executor.md) | Deterministic retry logic with exponential backoff and jitter for LLM API calls. |
+| [Roman Numeral Converter](../mcps/roman-numeral-converter.md) | Convert between Arabic numbers and Roman numerals with strict notation rules. |
 | [Roman Numeral Engine](../mcps/roman-numeral-engine.md) | Convert between Arabic integers and Roman numerals with support for large-scale values using vinculum notation. |
 | [RPM & Speed Gear Calculator](../mcps/rpm-speed-gear-calculator.md) | Calculate engine RPM at specific vehicle speeds or predict speed from a given RPM. |
 | [Running Pace Converter](../mcps/running-pace-converter.md) | Convert running paces, predict race times using Riegel formula, and generate training zones. |
@@ -75,6 +82,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Shower Water Calculator](../mcps/shower-water-calculator.md) | Calculate water usage, costs, and carbon emissions for showers. |
 | [SSE Event Reassembler & Gap Detector](../mcps/sse-event-reassembler-gap-detector.md) | Detect packet loss and reconstruct fragmented SSE streams. |
 | [String Tension Calculator](../mcps/string-tension-calculator.md) | Calculate string tension, instrument total tension, and gauge requirements for musicians. |
+| [Sugar Cooking Stages Calculator](../mcps/sugar-cooking-stages-calculator.md) | Identify precise candy-making stages, temperature ranges, and altitude adjustments. |
 | [Temperature Converter for Cooking](../mcps/temperature-converter-for-cooking.md) | Convert oven temperatures between Celsius, Fahrenheit, and the European Gas scale with heat intensity classification. |
 | [Time Difference Calculator](../mcps/time-difference-calculator.md) | Calculate exact duration between two clock times, handling midnight transitions. |
 | [Tire Size Converter](../mcps/tire-size-converter.md) | Calculate tire dimensions, speedometer error, and clearance risks. |

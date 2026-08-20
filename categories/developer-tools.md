@@ -664,6 +664,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Weblate](../mcps/weblate.md) | Automate localization workflows via Weblate — manage projects, components, languages, and users directly from any AI agent. |
 | [WebScrapingAPI](../mcps/webscrapingapi.md) | Scrape HTML, render JavaScript, and retrieve structured SERP data using WebScrapingAPI's high-proxy network. |
 | [Webshare](../mcps/webshare.md) | Manage residential and datacenter proxies, rotation settings, and authorized IPs on Webshare — the fast and affordable proxy network. |
+| [WeChat Mini-Program Cache Manager](../mcps/wechat-mini-program-cache-manager.md) | Deterministic WeChat Mini-Program storage and LRU cache eviction calculator. |
 | [Weglot](../mcps/weglot.md) | Automate website translation and localization — check API status, list supported languages, and translate text arrays directly via Weglot. |
 | [Wemix Explorer](../mcps/wemix-explorer.md) | Explore Wemix blockchain data — query accounts, track token transfers, and inspect blocks or extrinsics directly from your AI agent. |
 | [Whitespace Reduction Calculator](../mcps/whitespace-reduction-calculator.md) | Analyze and quantify whitespace reduction impact. |

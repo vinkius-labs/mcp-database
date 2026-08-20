@@ -5,6 +5,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [13th Month Salary Provision Calculator](../mcps/13th-month-salary-provision-calculator.md) | Calculate monthly 13th-month salary accruals, employer taxes, and cumulative payroll liabilities. |
+| [A-share Price Limit Calculator](../mcps/a-share-price-limit-calculator.md) | Calculates daily upper and lower price limits for Chinese A-share stocks. |
 | [Advance-Decline Line Calculator](../mcps/advance-decline-line-calculator.md) | Calculate market breadth indicators like ADL, McClellan Oscillator, and divergence. |
 | [Advance/Decline Percentage Calculator](../mcps/advancedecline-percentage-calculator.md) | Calculate market breadth, sentiment classification, and trend divergence. |
 | [ADX-Calculator](../mcps/adx-calculator.md) | Deterministic Average Directional Index (ADX) calculator using Wilder's smoothing. |
@@ -104,6 +105,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Dollar-Cost Averaging Strategy Simulator](../mcps/dollar-cost-averaging-strategy-simulator.md) | Simulate a deterministic DCA strategy with valuation-based adjustments. |
 | [Donchian Channels Calculator](../mcps/donchian-channels-calculator.md) | Deterministic Donchian Channels and breakout signal calculator for Turtle Traders. |
 | [Double-Eleven Discount Stack Calculator](../mcps/double-eleven-discount-stack-calculator.md) | Calculate exact final prices and optimal spending for 11.11 shopping festivals. |
+| [Douyin Live Commerce Math](../mcps/douyin-live-commerce-math.md) | Deterministic economic funnel and GMV calculator for Douyin/TikTok live streams. |
 | [Early Lease Break Penalty Calculator](../mcps/early-lease-break-penalty-calculator.md) | Calculate the total financial cost of breaking a lease early. |
 | [Earnings Announcement Strategy](../mcps/earnings-announcement-strategy.md) | A deterministic engine to exploit volatility mispricing around earnings events. |
 | [Ease of Movement Calculator](../mcps/ease-of-movement-calculator.md) | Calculate and interpret Ease of Movement (EMV) to identify market efficiency and momentum shifts. |
@@ -201,6 +203,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Ichimoku Cloud Calculator](../mcps/ichimoku-cloud-calculator.md) | Deterministic engine for Ichimoku Kinko Hyo indicator components and signals. |
 | [Ichimoku Cloud Strategy](../mcps/ichimoku-cloud-strategy.md) | Deterministic trend-following engine using Ichimoku Cloud indicators. |
 | [ICMS Calculator](../mcps/icms-calculator.md) | Calculate Brazilian ICMS taxes, including tax substitution (ST), tax differentials (DIFAL), and tax-inclusive base calculations. |
+| [Idol Handshake Event Calculator](../mcps/idol-handshake-event-calculator.md) | Calculate CD requirements, costs, and queue wait times for idol handshake events. |
 | [IFRS Depreciation Calculator](../mcps/ifrs-depreciation-calculator.md) | Calculate asset depreciation schedules using IFRS/IAS 16 standards (Straight-Line, Units of Production, and SYD). |
 | [Implied Probability Extractor](../mcps/implied-probability-extractor.md) | Convert American odds to true implied probability by removing the bookmaker margin. |
 | [Implied Volatility Calculator](../mcps/implied-volatility-calculator.md) | Deterministic engine for calculating implied volatility via Newton-Raphson iteration. |
@@ -218,6 +221,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [IPO Readiness Scorer](../mcps/ipo-readiness-scorer.md) | Evaluate company suitability for IPO based on financial and structural benchmarks. |
 | [Iron Condor Strategy](../mcps/iron-condor-strategy.md) | A deterministic market-neutral options strategy for consolidating markets. |
 | [ISS Calculator](../mcps/iss-calculator.md) | Calculate Service Tax (ISS) based on municipality rates and service types. |
+| [JR Fare Zone Calculator](../mcps/jr-fare-zone-calculator.md) | Calculate exact Japanese JR train fares using distance-based zones and IC card discounts. |
 | [Kaufman Adaptive Moving Average (KAMA) Calculator](../mcps/kaufman-adaptive-moving-average-kama-calculator.md) | Calculate adaptive moving averages that adjust to market volatility. |
 | [Kelly Criterion Bankroll Optimizer](../mcps/kelly-criterion-bankroll-optimizer.md) | Deterministic position sizing for binary prediction markets using Kelly Criterion math. |
 | [Kelly Criterion Sizing](../mcps/kelly-criterion-sizing.md) | Calculate optimal bet sizes using the Kelly Criterion formula. |
@@ -275,6 +279,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Options Greeks Calculator](../mcps/options-greeks-calculator.md) | Calculate Black-Scholes theoretical option prices and Greeks (Delta, Gamma, Theta, Vega, Rho) to assess market risk. |
 | [Order Book Imbalance Detector](../mcps/order-book-imbalance-detector.md) | Detect market microstructure imbalances and spoofing risks in the Polymarket CLOB. |
 | [Overtime Pay Calculator](../mcps/overtime-pay-calculator.md) | Calculate US overtime pay based on FLSA and state-specific rules like CA/CO daily thresholds. |
+| [Pachinko Expected Value Calculator](../mcps/pachinko-expected-value-calculator.md) | Analyze profitability and risk for Pachinko and Pachislot machines. |
+| [Pachislot Expected Value Calculator](../mcps/pachislot-expected-value-calculator.md) | Calculate mathematical profitability, hourly yield, and risk of ruin for Japanese Pachislot machines. |
 | [Pairs Trading Cointegration Strategy](../mcps/pairs-trading-cointegration-strategy.md) | Deterministic pairs trading engine using Engle-Granger cointegration to identify mean-reverting asset pairs. |
 | [Pairs Trading Strategy Engine](../mcps/pairs-trading-strategy-engine.md) | A deterministic statistical arbitrage engine for identifying mean-reverting asset pairs. |
 | [Parabolic SAR Calculator](../mcps/parabolic-sar-calculator.md) | Compute deterministic Parabolic SAR values, trend directions, and reversal signals. |
@@ -379,6 +385,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Swing Index Calculator](../mcps/swing-index-calculator.md) | Calculate Welles Wilder's Swing Index and Cumulative Swing Index for market momentum analysis. |
 | [Swing Trading Strategy Engine](../mcps/swing-trading-strategy-engine.md) | A deterministic multi-timeframe engine for identifying high-probability swing trading pullbacks. |
 | [TAM-SAM-SOM Calculator](../mcps/tam-sam-som-calculator.md) | Calculate Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) using top-down and bottom-up methodologies. |
+| [Taobao to Japan Landed Cost Calculator](../mcps/taobao-to-japan-landed-cost-calculator.md) | Calculate exact landed costs for China-to-Japan shipments, including volumetric weight and customs duties. |
 | [Tax Loss Harvesting Calculator](../mcps/tax-loss-harvesting-calculator.md) | Calculate the financial benefits and tax savings from harvesting capital losses. |
 | [Tax Regime Comparator](../mcps/tax-regime-comparator.md) | Simulate and compare Brazilian tax regimes to find the most cost-effective structure for your business. |
 | [Thirteenth Salary Calculator](../mcps/thirteenth-salary-calculator.md) | Calculate gross and net 13th-month salary installments, including proportional earnings and tax deductions. |
@@ -444,9 +451,12 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Volume Profile Calculator](../mcps/volume-profile-calculator.md) | Deterministic volume profile and market profile calculator. |
 | [Volume Profile Strategy](../mcps/volume-profile-strategy.md) | Identify high-probability trading signals using volume-at-price distributions and Value Area boundaries. |
 | [Vortex Indicator Calculator](../mcps/vortex-indicator-calculator.md) | Deterministic technical analysis engine for Vortex Indicator (+VI, -VI) and Oscillator calculations. |
+| [VTuber Super Chat ROI Calculator](../mcps/vtuber-super-chat-roi-calculator.md) | Analyze VTuber stream performance with precise Super Chat revenue, engagement, and whale ratio metrics. |
 | [VWAP Bounce Strategy](../mcps/vwap-bounce-strategy.md) | Identify high-probability intraday mean-reversion signals using VWAP interaction and trend filters. |
 | [VWAP Calculator](../mcps/vwap-calculator.md) | Deterministic Volume Weighted Average Price (VWAP) calculator with volatility bands and trend analysis. |
 | [Water Usage Calculator](../mcps/water-usage-calculator.md) | Estimate household water consumption, identify leak impacts, and calculate the financial return on upgrading to water-efficient fixtures. |
+| [WeChat Red Packet Distributor](../mcps/wechat-red-packet-distributor.md) | Calculate fair and deterministic WeChat Red Packet distributions. |
+| [WeChat Red Packet Simulator](../mcps/wechat-red-packet-simulator.md) | Simulate deterministic WeChat 'Lucky Money' distributions with inequality metrics. |
 | [Wedding Budget Splitter](../mcps/wedding-budget-splitter.md) | Intelligently allocate your wedding budget using industry-standard percentages and dynamic rebalancing. |
 | [Williams %R Calculator](../mcps/williams-r-calculator.md) | Deterministic technical analysis engine for Williams %R, divergence, and failure swing detection. |
 | [Williams Alligator Indicator Calculator](../mcps/williams-alligator-indicator-calculator.md) | Calculate precise Williams Alligator indicator lines, states, and trend analysis. |
