@@ -39,21 +39,21 @@ No more manual 'Print Screen' or browser debugging. Your AI acts as a dedicated 
 - **capture_full_length_screenshot**: Capture the entire length of a webpage
 - **capture_mobile_view_screenshot**: Capture a screenshot using a mobile viewport
 - **convert_webpage_to_pdf**: Save a webpage as a PDF file
-- **capture_specific_element**: Capture a screenshot of a specific CSS element
+- **capture_webp_format_screenshot**: Capture screenshot in WebP format
 - **capture_website_screenshot**: Returns a hosted image link.
 
 Capture a standard screenshot of a URL
-- **capture_webp_format_screenshot**: Capture screenshot in WebP format
 - **check_api_health**: net service.
 
 Verify Screenshot API status
-- **get_api_quota_info**: Get account API usage information
 - **capture_clean_screenshot_no_ads**: Capture screenshot without ads or cookies
 - **capture_dark_mode_screenshot**: Capture screenshot in dark mode
+- **capture_new_screenshot_no_cache**: Force a fresh screenshot bypass cache
 - **capture_delayed_screenshot**: Useful for lazy-loading elements.
 
 Capture screenshot after a delay
-- **capture_new_screenshot_no_cache**: Force a fresh screenshot bypass cache
+- **capture_specific_element**: Capture a screenshot of a specific CSS element
+- **get_api_quota_info**: Get account API usage information
 
 
 ## 💬 Prompt Examples

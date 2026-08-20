@@ -36,19 +36,19 @@ No more manual status checking or complex spreadsheet updates. Your AI acts as a
 
 
 ## Available Tools (11)
+- **get_task**: Get details for a specific task
+- **list_custom_fields**: List all custom fields
+- **list_time_entries**: List all time tracking entries
+- **create_task**: Create a new task in a project
 - **create_project**: Pass data as a JSON string.
 
 Create a new project
 - **get_project**: Get specific project details
-- **get_task**: Get details for a specific task
-- **list_custom_fields**: List all custom fields
 - **list_members**: List all team members
 - **list_projects**: List all Rocketlane projects
 - **list_tasks**: List project tasks
 - **list_templates**: List all project templates
-- **list_time_entries**: List all time tracking entries
 - **update_project**: Update project details
-- **create_task**: Create a new task in a project
 
 
 ## 💬 Prompt Examples

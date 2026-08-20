@@ -41,12 +41,12 @@ No more jumping between project boards and CRM lists. Your AI acts as a dedicate
 - **get_project**: Get details for a Scoro project
 - **get_quote**: Get details for a Scoro quote
 - **get_task**: Get details for a Scoro task
-- **list_bills**: List supplier bills/payables
 - **list_contacts**: List Scoro contacts
 - **list_invoices**: List sales invoices
-- **list_projects**: List all Scoro projects
 - **list_quotes**: List sales quotes/proposals
 - **get_bill**: Get details for a Scoro bill
+- **list_bills**: List supplier bills/payables
+- **list_projects**: List all Scoro projects
 - **list_tasks**: List all Scoro tasks
 
 

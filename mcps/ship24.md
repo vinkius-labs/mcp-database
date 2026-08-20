@@ -36,20 +36,20 @@ No more wrestling with multiple carrier websites to find your packages. Your AI 
 
 
 ## Available Tools (12)
+- **find_tracker_by_number**: Lookup by tracking number
+- **get_live_tracking**: Live package update
+- **list_active_trackers**: List all trackers
 - **list_bulk_trackers**: List bulk shipments
 - **list_couriers**: List supported carriers
-- **list_active_trackers**: List all trackers
-- **get_live_tracking**: Live package update
-- **find_tracker_by_number**: Lookup by tracking number
-- **get_tracking_results**: Get package status
 - **search_couriers**: g. FedEx, Correios).
 
 Find carrier codes
-- **update_tracker_info**: Update tracker metadata
+- **delete_tracker**: Stop tracking package
 - **create_bulk_trackers**: Bulk start tracking
 - **create_tracker**: Start tracking package
-- **delete_tracker**: Stop tracking package
 - **get_api_status**: Get API connectivity
+- **get_tracking_results**: Get package status
+- **update_tracker_info**: Update tracker metadata
 
 
 ## 💬 Prompt Examples

@@ -36,20 +36,20 @@ No more manual dashboard navigation for simple replies. Your AI acts as a dedica
 
 
 ## Available Tools (12)
-- **create_contact**: Create a new customer contact
 - **get_contact_details**: Get details for a specific contact
-- **get_location_details**: Get details for a specific location
-- **send_review_invitation**: Send a review invitation
 - **list_contacts**: List customers contacts
-- **list_conversations**: List conversations for a location
 - **list_locations**: List business locations
 - **list_reviews**: List business reviews
 - **list_webhooks**: List configured webhooks
 - **send_message**: Requires location ID and message body.
 
 Send a message to a contact
-- **get_current_user**: Get authenticated user profile
+- **send_review_invitation**: Send a review invitation
 - **get_organization_info**: Get current organization details
+- **get_current_user**: Get authenticated user profile
+- **create_contact**: Create a new customer contact
+- **get_location_details**: Get details for a specific location
+- **list_conversations**: List conversations for a location
 
 
 ## 💬 Prompt Examples

@@ -27,16 +27,16 @@ Designed for digital marketers, brand managers, and developers who want to lever
 
 ## Available Tools (12)
 - **get_link_count**: Check link usage
-- **create_branded_link**: Shorten a URL
 - **delete_short_link**: Remove a link
 - **get_account_details**: Get profile info
 - **get_domain_info**: Get domain metadata
 - **get_link_details**: Get link info
 - **list_branded_domains**: List custom domains
 - **list_short_links**: List branded links
-- **list_account_workspaces**: List team spaces
 - **search_links_by_title**: Find links
 - **test_rebrandly_auth**: Check connection
+- **create_branded_link**: Shorten a URL
+- **list_account_workspaces**: List team spaces
 - **update_link_metadata**: Modify a link
 
 

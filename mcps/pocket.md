@@ -36,18 +36,18 @@ No more manual tagging or losing track of interesting articles. Your AI acts as 
 
 
 ## Available Tools (12)
-- **archive_pocket_item**: Archive an item
-- **save_to_pocket**: Save a URL to Pocket
-- **add_tags_to_item**: Add labels to item
-- **clear_item_tags**: Remove all labels
 - **delete_pocket_item**: Permanently remove item
 - **favorite_pocket_item**: Mark as favorite
-- **list_saved_items**: List your reading list
 - **remove_tags_from_item**: Remove labels from item
 - **rename_pocket_tag**: Modify tag name
 - **search_pocket_list**: Search by keywords
 - **test_pocket_auth**: Check connection
 - **unfavorite_pocket_item**: Remove from favorites
+- **add_tags_to_item**: Add labels to item
+- **archive_pocket_item**: Archive an item
+- **clear_item_tags**: Remove all labels
+- **list_saved_items**: List your reading list
+- **save_to_pocket**: Save a URL to Pocket
 
 
 ## 💬 Prompt Examples

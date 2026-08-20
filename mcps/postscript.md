@@ -36,7 +36,6 @@ No more manual dashboard checking for subscriber status. Your AI acts as a dedic
 
 
 ## Available Tools (12)
-- **get_campaign**: Get campaign details
 - **get_subscriber**: Get subscriber details
 - **update_subscriber**: Update subscriber info
 - **get_account_info**: Get account details
@@ -47,11 +46,12 @@ List SMS automations
 - **list_keywords**: List SMS keywords
 - **list_subscribers**: List all SMS subscribers
 - **list_webhooks**: List active webhooks
+- **create_webhook**: Create a new webhook
 - **create_subscriber**: Note: Compliance rules apply.
 
 Subscribe a new user
-- **create_webhook**: Create a new webhook
 - **delete_webhook**: Delete a webhook
+- **get_campaign**: Get campaign details
 
 
 ## 💬 Prompt Examples
