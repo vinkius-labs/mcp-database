@@ -34,16 +34,16 @@ Connect your **Onfleet** delivery operations to any AI agent and run your fleet 
 
 
 ## Available Tools (10)
+- **delete_delivery_task**: Delete/Archive a delivery task
+- **list_dispatch_hubs**: List all dispatch hubs
 - **complete_task_override**: Force-complete a delivery task
 - **create_delivery_task**: Create a new delivery task in Onfleet
-- **delete_delivery_task**: Delete/Archive a delivery task
-- **list_tasks_by_date**: List delivery tasks within a date range
-- **get_worker_schedule**: Get a driver's work schedule
-- **list_fleet_workers**: List all fleet drivers/workers
-- **update_delivery_task**: Update an existing delivery task
-- **list_dispatch_hubs**: List all dispatch hubs
 - **get_task_details**: Get details for a specific delivery task
+- **get_worker_schedule**: Get a driver's work schedule
 - **list_fleet_teams**: List all delivery teams
+- **list_fleet_workers**: List all fleet drivers/workers
+- **list_tasks_by_date**: List delivery tasks within a date range
+- **update_delivery_task**: Update an existing delivery task
 
 
 ## 💬 Prompt Examples

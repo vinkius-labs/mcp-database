@@ -38,11 +38,11 @@ Connect your **Nile** account to any AI agent and take full control of your tena
 - **list_databases**: Identifies root connectivity endpoints (name bindings) necessary for querying physical data.
 
 List high-level tenant-aware PostgreSQL databases provisioned on Nile
+- **get_metrics**: Pull exact operational performance numbers tracking Database strain
+- **list_users**: Enumerate globally tracked users capable of accessing tenant slices
+- **create_tenant**: Provision a new highly isolated virtual Tenant boundary inside the DB
 - **get_database**: Get configuration and state details for a specific Nile Database
 - **list_tenants**: List active virtualized B2B tenants living within a Nile database
-- **create_tenant**: Provision a new highly isolated virtual Tenant boundary inside the DB
-- **list_users**: Enumerate globally tracked users capable of accessing tenant slices
-- **get_metrics**: Pull exact operational performance numbers tracking Database strain
 
 
 ## 💬 Prompt Examples

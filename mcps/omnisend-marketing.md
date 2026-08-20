@@ -37,17 +37,17 @@ Connect your **Omnisend** account to your AI agent and streamline your email, SM
 
 
 ## Available Tools (10)
-- **get_campaign_details**: Get specific campaign info
-- **get_contact_details**: Get specific contact info
-- **get_segment_details**: Get specific segment info
 - **get_account_usage**: g. email/SMS volume).
 
 Get account usage metrics
+- **list_signup_forms**: List signup and popup forms
+- **get_campaign_details**: Get specific campaign info
+- **get_contact_details**: Get specific contact info
+- **get_segment_details**: Get specific segment info
+- **list_audience_segments**: List audience segments
 - **list_campaigns**: List marketing campaigns
 - **list_contacts**: List marketing contacts
 - **list_custom_events**: List custom tracking events
-- **list_signup_forms**: List signup and popup forms
-- **list_audience_segments**: List audience segments
 - **list_ecommerce_orders**: List e-commerce orders
 
 

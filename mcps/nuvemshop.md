@@ -40,35 +40,12 @@ No more navigating the Nuvemshop dashboard for every catalog or order action. Yo
 
 
 ## Available Tools (24)
-- **create_coupon**: You must provide the coupon code
-and type (percentage, absolute, or shipping). Optional fields include value, validity dates,
-minimum purchase amount, and applicable products/categories.
-Example: { "code": "SUMMER20", "type": "percentage", "value": 20, "min_price": 100, "start_date": "2026-06-01", "end_date": "2026-06-30" }
-
-Create a new discount coupon in your Nuvemshop store
-- **create_customer**: You must provide at minimum 
-the customer name and email. Optional fields include phone, addresses, and tags.
-Example: { "first_name": "João", "last_name": "Silva", "email": "joao@example.com", "phone": "11999999999" }
-
-Create a new customer record in your Nuvemshop store
 - **create_order**: Useful for phone orders, 
 in-person sales, or bulk order imports. You must provide customer information and at least 
 one order item with product ID or variant ID and quantity.
 Example: { "email": "customer@example.com", "items": [{ "product_id": 123, "quantity": 2 }] }
 
 Create a new order manually in your Nuvemshop store
-- **create_product**: You must provide at minimum 
-the product name and price. Optional fields include description, SKU, stock quantity, 
-categories, images, and variants.
-Example: { "name": "T-Shirt Blue", "price": 49.90, "sku": "TSH-BLU-001", "stock": 100, "description": "Comfortable cotton t-shirt" }
-
-Create a new product in your Nuvemshop store
-- **create_webhook**: You must provide the URL to receive notifications and the events to subscribe to.
-Available events include: orders/create, orders/update, products/create, products/update,
-products/delete, customers/create, customers/update.
-Example: { "url": "https://your-app.com/webhooks/nuvemshop", "event": "orders/create" }
-
-Create a new webhook for real-time event notifications
 - **delete_coupon**: You must provide the coupon_id.
 This action cannot be undone. Use this to deactivate expired or discontinued promotions.
 Be careful as this will prevent customers from using this coupon code.
@@ -85,10 +62,6 @@ This action cannot be undone. Use this to remove webhook endpoints that are no l
 or to stop receiving notifications for specific events.
 
 Delete a webhook from your Nuvemshop store
-- **get_customer**: Use the customer_id obtained from list_customers to inspect full customer details.
-This is useful for customer support, order management, or analyzing purchase history.
-
-Get detailed information about a specific customer
 - **get_order**: Use the order_id obtained from list_orders to inspect full order details.
 This is useful for verifying order status, preparing shipments, or reviewing customer purchases.
 
@@ -97,23 +70,12 @@ Get detailed information about a specific order
 setup and understand available features.
 
 Get details about your Nuvemshop store
-- **list_coupons**: Each coupon includes code, type (percentage, absolute, shipping), value, validity dates,
-usage count, and minimum purchase requirements. Use this to review active promotions
-and analyze coupon performance.
-
-List all discount coupons in your Nuvemshop store
 - **list_customers**: Each customer 
 includes name, email, phone number, total orders, total spent, and registration date.
 You can optionally specify page number and records per page. Use this to browse your 
 customer database, analyze purchase patterns, or find specific customers by name or email.
 
 List all customers in your Nuvemshop store
-- **list_orders**: Each order includes
-order number, customer name, total value, status (pending, paid, fulfilled, cancelled), 
-payment status, and creation date. You can optionally filter by status, specify page number, 
-and set records per page. Use this to monitor sales, track order fulfillment, and review revenue.
-
-List all orders in your Nuvemshop store
 - **list_products**: Each product includes 
 name, description, price, SKU, stock quantity, status (active, draft, archived), and images.
 You can optionally filter by status, specify page number, and set records per page (max: 200).
@@ -140,20 +102,58 @@ changing contact information, updating addresses, or adding tags. You must provi
 the customer_id and the fields to update as JSON. Only provide the fields you want to change.
 
 Update an existing customer record
-- **update_order**: Common updates include changing order status
-(e.g., from pending to paid, or from paid to fulfilled), updating shipping information,
-or modifying order items. You must provide the order_id and the fields to update as JSON.
-
-Update an existing order in your Nuvemshop store
 - **update_product**: You must provide the product_id
 and the fields to update as JSON. Only the fields provided will be updated.
 Common updates include: changing price, updating stock quantity, modifying description,
 or changing product status. The product_id must exist in your store.
 
 Update an existing product in your Nuvemshop store
+- **create_coupon**: You must provide the coupon code
+and type (percentage, absolute, or shipping). Optional fields include value, validity dates,
+minimum purchase amount, and applicable products/categories.
+Example: { "code": "SUMMER20", "type": "percentage", "value": 20, "min_price": 100, "start_date": "2026-06-01", "end_date": "2026-06-30" }
+
+Create a new discount coupon in your Nuvemshop store
+- **create_customer**: You must provide at minimum 
+the customer name and email. Optional fields include phone, addresses, and tags.
+Example: { "first_name": "João", "last_name": "Silva", "email": "joao@example.com", "phone": "11999999999" }
+
+Create a new customer record in your Nuvemshop store
+- **create_product**: You must provide at minimum 
+the product name and price. Optional fields include description, SKU, stock quantity, 
+categories, images, and variants.
+Example: { "name": "T-Shirt Blue", "price": 49.90, "sku": "TSH-BLU-001", "stock": 100, "description": "Comfortable cotton t-shirt" }
+
+Create a new product in your Nuvemshop store
+- **create_webhook**: You must provide the URL to receive notifications and the events to subscribe to.
+Available events include: orders/create, orders/update, products/create, products/update,
+products/delete, customers/create, customers/update.
+Example: { "url": "https://your-app.com/webhooks/nuvemshop", "event": "orders/create" }
+
+Create a new webhook for real-time event notifications
 - **get_coupon**: Use the coupon_id obtained from list_coupons to inspect full coupon details.
 
 Get detailed information about a specific coupon
+- **get_customer**: Use the customer_id obtained from list_customers to inspect full customer details.
+This is useful for customer support, order management, or analyzing purchase history.
+
+Get detailed information about a specific customer
+- **list_coupons**: Each coupon includes code, type (percentage, absolute, shipping), value, validity dates,
+usage count, and minimum purchase requirements. Use this to review active promotions
+and analyze coupon performance.
+
+List all discount coupons in your Nuvemshop store
+- **list_orders**: Each order includes
+order number, customer name, total value, status (pending, paid, fulfilled, cancelled), 
+payment status, and creation date. You can optionally filter by status, specify page number, 
+and set records per page. Use this to monitor sales, track order fulfillment, and review revenue.
+
+List all orders in your Nuvemshop store
+- **update_order**: Common updates include changing order status
+(e.g., from pending to paid, or from paid to fulfilled), updating shipping information,
+or modifying order items. You must provide the order_id and the fields to update as JSON.
+
+Update an existing order in your Nuvemshop store
 - **get_product**: Use the product_id obtained from list_products to inspect full product details.
 This is useful for verifying product data before updating or checking stock levels.
 

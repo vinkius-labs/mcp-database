@@ -39,10 +39,10 @@ Connect your **Ontraport** account to any AI agent and take full control of your
 - **list_forms**: List lead capture forms
 - **list_landing_pages**: List Ontraport landing pages
 - **list_transactions**: List sales transactions
-- **create_contact**: Create a new contact
 - **list_campaigns**: List marketing campaigns
-- **list_messages**: List email/SMS messages
 - **list_sequences**: List automation sequences
+- **create_contact**: Create a new contact
+- **list_messages**: List email/SMS messages
 - **list_tasks**: List assigned tasks
 
 

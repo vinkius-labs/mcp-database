@@ -34,20 +34,20 @@ NewsAPI.org aggregates content from major publishers like BBC, CNN, Reuters, Blo
 
 
 ## Available Tools (10)
-- **get_popular_articles**: Search most popular articles
 - **get_recent_articles**: Search most recent articles
-- **get_headlines_by_source**: g., "bbc-news", "cnn").
-
-Get headlines from specific sources
-- **list_sources**: List available news sources
 - **get_articles_by_language**: g., "en", "pt", "es").
 
 Search articles by language
+- **get_headlines_by_source**: g., "bbc-news", "cnn").
+
+Get headlines from specific sources
+- **get_popular_articles**: Search most popular articles
+- **list_sources**: List available news sources
+- **get_articles_from_domains**: Search articles from specific domains
 - **get_headlines_by_category**: Get top headlines by category
 - **get_headlines_by_country**: g., "us", "br", "gb").
 
 Get top headlines by country
-- **get_articles_from_domains**: Search articles from specific domains
 - **search_articles**: Search all articles (Everything)
 - **search_headlines**: Search headlines by query
 

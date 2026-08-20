@@ -33,19 +33,19 @@ Connect **PagBank (PagSeguro)** to any AI agent and unlock Brazil's leading paym
 
 
 ## Available Tools (9)
-- **cancel_transaction**: If amount is provided, performs partial cancellation.
-
-Cancel a transaction (full or partial refund)
-- **create_checkout_link**: Returns a code and a URL.
-
-Create a payment link (checkout) for multiple items
 - **get_order**: Get details of an order by ID
 - **get_transaction**: Get details of a transaction by code
 - **get_installment_options**: Get installment options for a card brand
+- **cancel_transaction**: If amount is provided, performs partial cancellation.
+
+Cancel a transaction (full or partial refund)
+- **create_boleto_payment**: Generate a Boleto payment
+- **create_checkout_link**: Returns a code and a URL.
+
+Create a payment link (checkout) for multiple items
 - **create_pix_payment**: Create an instant Pix payment
 - **search_transactions**: Search for transactions by date range
 - **get_balance**: Get the current account balance
-- **create_boleto_payment**: Generate a Boleto payment
 
 
 ## 💬 Prompt Examples

@@ -33,36 +33,36 @@ Bring **ParseHub Cloud Scraping** directly into your AI workflows. Manage pre-co
 
 
 ## Available Tools (10)
-- **get_project**: The project_token can be found via list_projects or in the ParseHub desktop client settings tab.
-
-Get detailed configuration of a specific ParseHub project
 - **list_projects**: Each project includes a project_token (unique identifier), title, last_run timestamp, and template configuration. Use the project_token for all subsequent run management operations.
 
 List all ParseHub web scraping projects
-- **get_run_data**: Only works when the run status is "complete" and data_ready is true. The JSON structure mirrors the template selection configuration set up in the ParseHub desktop client.
-
-Download the raw JSON data extracted from a completed ParseHub run
-- **get_run_details**: Poll this endpoint to wait for a run to complete before fetching data.
-
-Check the status of a specific ParseHub run
-- **get_last_ready_data**: Ideal for dashboards or integrations that always want the freshest available data without managing individual run tokens.
-
-Instantly get the latest completed data for a ParseHub project
 - **cancel_run**: If the run was already scraping pages, partial data may be available. Data from already-scraped pages is preserved and can be retrieved with get_run_data. Use this to stop long-running scrapes or free up queue slots.
 
 Cancel a queued or actively running ParseHub run
 - **delete_run**: Cannot be undone. Use this to clean up old runs and free up storage quota on your account.
 
 Permanently delete a ParseHub run and its extracted data
+- **get_last_ready_data**: Ideal for dashboards or integrations that always want the freshest available data without managing individual run tokens.
+
+Instantly get the latest completed data for a ParseHub project
+- **get_project**: The project_token can be found via list_projects or in the ParseHub desktop client settings tab.
+
+Get detailed configuration of a specific ParseHub project
+- **get_run_data**: Only works when the run status is "complete" and data_ready is true. The JSON structure mirrors the template selection configuration set up in the ParseHub desktop client.
+
+Download the raw JSON data extracted from a completed ParseHub run
+- **get_run_details**: Poll this endpoint to wait for a run to complete before fetching data.
+
+Check the status of a specific ParseHub run
+- **run_project_with_url**: Perfect for scraping different pages with the same template (e.g., different product categories). The template extraction rules still apply unchanged — only the starting page changes.
+
+Start a ParseHub run targeting a custom URL instead of the project default
 - **list_runs**: Useful for auditing or finding a specific completed run to fetch data from.
 
 Get the history of all runs for a ParseHub project
 - **run_project**: Returns a run_token for tracking progress. The run enters a queue and begins processing within seconds. Use get_run to monitor and get_run_data to retrieve results once complete.
 
 Start a new ParseHub scraping run for a project
-- **run_project_with_url**: Perfect for scraping different pages with the same template (e.g., different product categories). The template extraction rules still apply unchanged — only the starting page changes.
-
-Start a ParseHub run targeting a custom URL instead of the project default
 
 
 ## 💬 Prompt Examples

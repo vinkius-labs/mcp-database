@@ -28,14 +28,14 @@ Connect your **OnPay** account to empower your AI agents with payroll and HR cap
 
 
 ## Available Tools (8)
-- **get_company_info**: Get general company information
-- **get_employee**: Get employee details
 - **list_item_codes**: List accounting item codes
 - **list_pay_schedules**: List payroll schedules
 - **list_subscriptions**: List subscriptions
-- **list_employees**: List all employees
 - **list_transactions**: List payment transactions
 - **get_transaction**: Get transaction details
+- **get_company_info**: Get general company information
+- **get_employee**: Get employee details
+- **list_employees**: List all employees
 
 
 ## 💬 Prompt Examples

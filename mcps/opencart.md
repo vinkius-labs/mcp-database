@@ -35,24 +35,24 @@ Turn your **OpenCart** e-commerce backend into an AI-powered command center. Bro
 
 
 ## Available Tools (10)
+- **get_order**: Get OpenCart order details by explicit ID
 - **get_product**: Get OpenCart product by ID. Returns full details
 - **list_orders**: List OpenCart orders using the native API
-- **get_order**: Get OpenCart order details by explicit ID
+- **get_cart**: Primarily used to verify product mapping prior to custom order creation logic.
+
+Get current API session cart contents in OpenCart
 - **get_order_history**: g., Pending, Processing, Shipped). Use to verify tracking logic or administrative fulfillment changes.
 
 Get OpenCart order status history by ID
 - **list_categories**: List OpenCart product category schemas
+- **list_customers**: List OpenCart registered customers
 - **add_order_history**: Push updates like marking a shipment Complete or Canceled.
 
 Add OpenCart order history / mutate order active status
-- **get_cart**: Primarily used to verify product mapping prior to custom order creation logic.
-
-Get current API session cart contents in OpenCart
+- **get_customer**: Get OpenCart customer full details by explicit ID
 - **list_products**: Fetches active products, retrieving metadata such as prices, stock status, and basic SEO tags mapped inside the OpenCart product repository.
 
 List OpenCart products using the native OpenCart API
-- **list_customers**: List OpenCart registered customers
-- **get_customer**: Get OpenCart customer full details by explicit ID
 
 
 ## 💬 Prompt Examples

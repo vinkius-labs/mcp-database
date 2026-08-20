@@ -36,9 +36,7 @@ Connect your **Observe.AI** account to your AI agent and gain deep visibility in
 
 ## Available Tools (10)
 - **list_qa_evaluations**: List QA evaluations
-- **get_interaction_details**: Get specific interaction info
 - **get_interaction_transcript**: Get interaction transcript
-- **list_coaching_sessions**: List agent coaching sessions
 - **list_evaluation_forms**: List QA evaluation forms
 - **list_interactions**: AI.
 
@@ -51,6 +49,8 @@ List identified key moments
 
 List workspace agents and users
 - **get_evaluation_details**: Get specific evaluation info
+- **get_interaction_details**: Get specific interaction info
+- **list_coaching_sessions**: List agent coaching sessions
 
 
 ## 💬 Prompt Examples

@@ -33,15 +33,22 @@ Connect your **Nuvei** merchant account to your AI agent and manage your global 
 
 
 ## Available Tools (10)
-- **capture_payment**: If amount is omitted, captures the full authorized total.
-
-Capture a previously authorized card payment
-- **create_payment**: This initiates a real money authorization/charge network request. Returns the Nuvei transaction ID and status.
-
-Initialize a new payment intent with Nuvei
 - **delete_token**: Stops future recurring charges or 1-click purchases immediately.
 
 Delete a vaulted payment token permanently
+- **update_token**: g. updating an expiry date string) without needing full card details again.
+
+Mutate specific fields inside a vaulted token
+- **void_payment**: Note: Can only void pending auths.
+
+Cancel a pending authorized payment preventing capture
+- **capture_payment**: If amount is omitted, captures the full authorized total.
+
+Capture a previously authorized card payment
+- **create_card_token**: Tokenize plain card details into a vaulted payment token
+- **create_payment**: This initiates a real money authorization/charge network request. Returns the Nuvei transaction ID and status.
+
+Initialize a new payment intent with Nuvei
 - **get_payment**: Essential for checking if an async payment cleared.
 
 Retrieve the current status mapped to a Nuvei Payment ID
@@ -50,13 +57,6 @@ Retrieve the current status mapped to a Nuvei Payment ID
 - **refund_payment**: Supports partial amounts.
 
 Refund a fully captured Nuvei payment
-- **update_token**: g. updating an expiry date string) without needing full card details again.
-
-Mutate specific fields inside a vaulted token
-- **void_payment**: Note: Can only void pending auths.
-
-Cancel a pending authorized payment preventing capture
-- **create_card_token**: Tokenize plain card details into a vaulted payment token
 
 
 ## 💬 Prompt Examples

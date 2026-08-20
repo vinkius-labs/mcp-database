@@ -24,18 +24,18 @@ METARs and TAFs work worldwide using ICAO codes (KJFK, EGLL, LFPG, SBGR).
 
 
 ## Available Tools (5)
-- **get_taf**: Includes forecast groups with wind, visibility, clouds, and weather changes. ICAO codes only.
-
-Get TAF (airport weather forecast) for any airport worldwide by ICAO code
 - **get_pirep**: Filter by age (hours).
 
 Get PIREPs (Pilot Reports) for turbulence, icing, and weather conditions
-- **get_sigmet**: These define areas of significant weather hazards for aviation: convection, turbulence, icing, IFR conditions, mountain obscuration.
+- **get_taf**: Includes forecast groups with wind, visibility, clouds, and weather changes. ICAO codes only.
 
-Get SIGMETs and AIRMETs — significant aviation weather hazards
+Get TAF (airport weather forecast) for any airport worldwide by ICAO code
 - **get_aviation_station**: Use ICAO codes (KJFK, EGLL, LFPG, SBGR).
 
 Get aviation weather station information by ICAO code
+- **get_sigmet**: These define areas of significant weather hazards for aviation: convection, turbulence, icing, IFR conditions, mountain obscuration.
+
+Get SIGMETs and AIRMETs — significant aviation weather hazards
 - **get_metar**: Provide ICAO codes comma-separated (KJFK, EGLL, LFPG). Returns temperature, wind, visibility, clouds, pressure, weather phenomena. Optionally retrieve past hours of data.
 
 Get METAR (current airport weather) for any airport worldwide by ICAO code
