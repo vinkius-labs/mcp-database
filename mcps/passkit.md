@@ -37,17 +37,17 @@ No more manual pass generation or switching between wallet dashboards. Your AI a
 
 
 ## Available Tools (11)
-- **create_flight**: Create a new flight
-- **issue_boarding_pass**: Issue a boarding pass
 - **list_branding_images**: List uploaded branding images
-- **get_coupon_details**: Get details for a specific coupon pass
 - **update_member**: Update member data
-- **enroll_member**: Enroll a new member
+- **get_event_ticket**: Get details for an issued ticket
 - **get_member_details**: Get member details
 - **get_pass_template**: Get details for a pass template
-- **get_event_ticket**: Get details for an issued ticket
 - **issue_event_ticket**: Issue a new event ticket
 - **create_coupon**: Create a new digital coupon
+- **create_flight**: Create a new flight
+- **enroll_member**: Enroll a new member
+- **get_coupon_details**: Get details for a specific coupon pass
+- **issue_boarding_pass**: Issue a boarding pass
 
 
 ## 💬 Prompt Examples

@@ -36,16 +36,16 @@ No more manual exporting of CSV results for basic checks. Your AI acts as a dedi
 
 
 ## Available Tools (8)
-- **get_new_data**: Get new (non-exported) data from a task
 - **get_task_data**: Get extracted data from a task by offset
 - **get_task_status**: Get status of a scraping task
 - **list_task_groups**: List all task groups
+- **stop_task**: Stop a scraping task
+- **update_data_status**: Mark data as exported
+- **get_new_data**: Get new (non-exported) data from a task
 - **list_tasks**: Can be filtered by task group ID.
 
 List tasks
 - **start_task**: Start a scraping task
-- **stop_task**: Stop a scraping task
-- **update_data_status**: Mark data as exported
 
 
 ## 💬 Prompt Examples

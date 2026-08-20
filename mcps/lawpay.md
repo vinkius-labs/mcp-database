@@ -35,10 +35,10 @@ Connect your **LawPay** account to any AI agent and manage legal payments throug
 
 
 ## Available Tools (12)
-- **create_invoice**: Create a new invoice
 - **create_refund**: Refund a transaction
 - **get_account_info**: Get merchant profile info
 - **get_account**: Get account details
+- **create_invoice**: Create a new invoice
 - **get_payment_method**: Get payment method details
 - **list_transactions**: List all payment transactions
 - **list_settlements**: List bank settlements

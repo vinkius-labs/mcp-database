@@ -40,15 +40,15 @@ Connect your **Mailshake** account to any AI agent and manage sales outreach thr
 - **list_engagement_activity**: Get open/click activity
 - **list_campaigns**: List cold email campaigns
 - **list_sales_leads**: List qualified leads
-- **list_campaign_recipients**: List recipients
 - **pause_campaign**: Stop campaign sending
 - **pause_prospect**: Stop outreach for user
 - **resume_campaign**: Resume campaign sending
+- **get_user_profile**: Get profile info
+- **add_prospects**: Add new prospects
+- **list_campaign_recipients**: List recipients
 - **update_lead_status**: g., Reply, Won, Lost, Ignored).
 
 Set lead stage
-- **add_prospects**: Add new prospects
-- **get_user_profile**: Get profile info
 
 
 ## 💬 Prompt Examples

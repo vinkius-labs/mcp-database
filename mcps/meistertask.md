@@ -37,15 +37,15 @@ No more manual status checking in the dashboard for task updates. Your AI acts a
 
 ## Available Tools (12)
 - **list_all_accessible_tasks**: List all tasks
-- **list_task_comments**: Get task history
-- **create_new_task**: Add new task
-- **remove_task**: Delete a task
 - **get_api_status**: Check connection
+- **remove_task**: Delete a task
 - **get_project_details**: Get board info
-- **get_task_details**: Get task info
-- **list_task_projects**: List project boards
 - **list_project_sections**: List board columns
 - **list_section_tasks**: List tasks in section
+- **list_task_projects**: List project boards
+- **create_new_task**: Add new task
+- **get_task_details**: Get task info
+- **list_task_comments**: Get task history
 - **search_tasks_by_query**: Find tasks
 - **update_task_info**: Modify a task
 

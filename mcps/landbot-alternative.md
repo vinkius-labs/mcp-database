@@ -35,17 +35,17 @@ Connect your **Landbot** account to any AI agent and manage chatbots through nat
 
 
 ## Available Tools (12)
-- **get_account_info**: Check API status
-- **get_customer_details**: Get user profile
-- **list_team_agents**: List support agents
 - **list_active_bots**: List available bots
 - **list_landbot_customers**: List chatbot users
 - **list_message_hooks**: Get event configs
+- **list_team_agents**: List support agents
 - **send_proactive_image**: Send chat image
 - **send_proactive_text**: Send chat message
-- **send_whatsapp_template**: Send WA template
-- **handoff_to_agent**: Assign to human
 - **trigger_bot_flow**: Start bot flow
+- **get_account_info**: Check API status
+- **get_customer_details**: Get user profile
+- **handoff_to_agent**: Assign to human
+- **send_whatsapp_template**: Send WA template
 - **update_customer_field**: Set user property
 
 

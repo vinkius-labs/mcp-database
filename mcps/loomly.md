@@ -34,14 +34,14 @@ Connect your **Loomly** account to any AI agent and manage social media through 
 
 
 ## Available Tools (8)
-- **create_new_post**: Add a new post to a calendar
 - **get_calendar_details**: Get metadata for a calendar
-- **get_user_profile**: Get your Loomly profile
-- **get_post_details**: Get details for a post
-- **list_media_assets**: List media in the library
-- **list_calendars**: List your Loomly calendars
-- **list_post_interactions**: List comments and replies
 - **list_calendar_posts**: List posts in a calendar
+- **list_calendars**: List your Loomly calendars
+- **list_media_assets**: List media in the library
+- **list_post_interactions**: List comments and replies
+- **create_new_post**: Add a new post to a calendar
+- **get_post_details**: Get details for a post
+- **get_user_profile**: Get your Loomly profile
 
 
 ## 💬 Prompt Examples

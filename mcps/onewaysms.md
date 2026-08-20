@@ -37,11 +37,11 @@ No more manual logging to check if a message was delivered. Your AI acts as a de
 
 ## Available Tools (11)
 - **check_api_connectivity**: Verify API connectivity
-- **get_gateway_settings**: Get current API and gateway configuration
 - **get_credit_balance**: Check remaining SMS credits
+- **get_gateway_settings**: Get current API and gateway configuration
 - **get_delivery_report**: Get a detailed delivery report for a message
-- **get_transaction_status**: Track message delivery status
 - **get_sms_usage_policy**: Retrieve character limits and regional policies
+- **get_transaction_status**: Track message delivery status
 - **list_available_sender_ids**: List approved Alphanumeric Sender IDs
 - **send_bulk_sms**: Send SMS to multiple recipients at once
 - **send_otp**: Send a one-time verification code via SMS

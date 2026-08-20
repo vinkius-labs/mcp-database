@@ -36,20 +36,20 @@ No more manual data entry from invoices or forms. Your AI acts as a dedicated do
 
 
 ## Available Tools (12)
-- **get_template_details**: Get template metadata
-- **list_mailboxes**: List all Parsio mailboxes
-- **list_parsed_data_history**: List historical parsed data for a mailbox
-- **list_mailbox_templates**: List parsing templates for a mailbox
-- **list_mailbox_webhooks**: List webhooks for a mailbox
-- **extract_data_from_text_sync**: Extract data from text or HTML (Sync)
 - **extract_data_from_file_async**: Use this for large files or webhook workflows.
 
 Start file data extraction (Async)
+- **get_template_details**: Get template metadata
+- **list_mailboxes**: List all Parsio mailboxes
+- **list_mailbox_templates**: List parsing templates for a mailbox
+- **list_mailbox_webhooks**: List webhooks for a mailbox
+- **list_parsed_data_history**: List historical parsed data for a mailbox
 - **extract_data_from_file_sync**: Extract data from a file immediately (Sync)
-- **create_mailbox**: Create a new mailbox
 - **extract_data_from_text_async**: Start text data extraction (Async)
-- **get_parsed_document_result**: Retrieve the result of a parsed document
 - **get_mailbox**: Get details for a specific mailbox
+- **create_mailbox**: Create a new mailbox
+- **extract_data_from_text_sync**: Extract data from text or HTML (Sync)
+- **get_parsed_document_result**: Retrieve the result of a parsed document
 
 
 ## 💬 Prompt Examples

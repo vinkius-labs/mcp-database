@@ -36,18 +36,18 @@ No more manual data entry for single donations or supporter checks. Your AI acts
 
 
 ## Available Tools (12)
-- **record_donation**: Add donation record
 - **create_new_signup**: Add new person
 - **get_api_status**: Check connection
 - **get_signup_details**: Get person info
-- **list_recent_donations**: List contributions
-- **list_upcoming_events**: List calendar events
 - **list_custom_people_lists**: List curated lists
 - **list_nation_petitions**: List active petitions
 - **list_nation_signups**: List people/signups
 - **list_nation_sites**: List CMS sites
+- **list_recent_donations**: List contributions
+- **list_upcoming_events**: List calendar events
 - **list_signup_tags**: List available tags
 - **find_signup_by_email**: Find person
+- **record_donation**: Add donation record
 
 
 ## 💬 Prompt Examples

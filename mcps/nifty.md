@@ -37,17 +37,17 @@ No more manual status checking or context switching. Your AI acts as a dedicated
 
 ## Available Tools (12)
 - **mark_task_as_complete**: Finish a task
-- **create_project_milestone**: Add new milestone
 - **list_project_milestones**: List project phases
-- **list_organization_portfolios**: List portfolios
 - **create_new_task**: Add new task
+- **list_workflow_tasks**: List project tasks
+- **search_all_tasks**: Find tasks
+- **update_task_metadata**: Modify a task
+- **create_project_milestone**: Add new milestone
 - **get_api_status**: Check connection
 - **get_project_details**: Get board info
 - **get_task_info**: Get task details
 - **list_active_projects**: List project boards
-- **list_workflow_tasks**: List project tasks
-- **search_all_tasks**: Find tasks
-- **update_task_metadata**: Modify a task
+- **list_organization_portfolios**: List portfolios
 
 
 ## 💬 Prompt Examples

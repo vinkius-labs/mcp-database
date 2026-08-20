@@ -36,17 +36,17 @@ No more manual CAPTCHA solving or context switching to moderation dashboards. Yo
 
 
 ## Available Tools (12)
-- **add_blocked_ip**: Block an IP
 - **check_bulk**: Bulk spam check
 - **check_email**: Check email for spam
 - **check_ip**: Check IP for spam
-- **check_spam**: Check for spam
 - **check_oopspam_status**: Verify connectivity
+- **check_spam**: Check for spam
 - **get_analytics**: Get analytics
-- **get_daily_stats**: Get daily stats
-- **get_stats**: Get usage stats
 - **list_blocked_ips**: List blocked IPs
 - **list_reports**: List reports
+- **add_blocked_ip**: Block an IP
+- **get_daily_stats**: Get daily stats
+- **get_stats**: Get usage stats
 - **submit_report**: Submit spam report
 
 
