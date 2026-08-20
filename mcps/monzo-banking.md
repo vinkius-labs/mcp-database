@@ -34,9 +34,9 @@ Equip your AI agent with real-time personal finance intelligence through the **M
 
 
 ## Available Tools (3)
+- **get_monzo_transactions**: Get recent transactions
 - **get_monzo_accounts**: List all Monzo accounts
 - **get_monzo_balance**: Get balance for a Monzo account
-- **get_monzo_transactions**: Get recent transactions
 
 
 ## 💬 Prompt Examples

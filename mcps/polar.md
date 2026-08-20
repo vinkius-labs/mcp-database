@@ -41,33 +41,33 @@ No more clicking through the Polar dashboard to check subscriptions or create di
 - **create_checkout**: Requires the product ID. Optionally associate with an existing customer and apply a discount. Returns the checkout session with its URL that you can redirect customers to for payment.
 
 Create a new checkout session in Polar
-- **list_customers**: Each customer shows their email, name, billing address, and metadata. Optionally filter by email to find a specific customer.
+- **create_discount**: Requires the name, code, type (percentage or fixed_amount), and amount. Optionally set the duration (once, forever, repeating). The discount can be applied during checkout.
 
-List customers in your Polar store
-- **list_discounts**: Each discount shows its code, type (percentage, fixed_amount), amount, duration (once, forever, repeating), and active status. Use this to audit your promotional offers.
+Create a new discount code in Polar
+- **list_checkouts**: Each checkout shows its status (open, expired, confirmed), associated product, customer, and creation date. Useful for tracking abandoned and completed checkouts.
 
-List discount codes in your Polar store
+List checkout sessions in your Polar store
 - **list_orders**: Each order shows the customer, product, amount, currency, payment status, and creation date. Useful for tracking revenue and verifying successful transactions.
 
 List orders in your Polar store
 - **list_products**: Each product includes its name, description, price, type (one-time, subscription, free), and metadata. Use this to audit your product catalog and see what you are selling.
 
 List products in your Polar store
+- **list_customers**: Each customer shows their email, name, billing address, and metadata. Optionally filter by email to find a specific customer.
+
+List customers in your Polar store
+- **list_discounts**: Each discount shows its code, type (percentage, fixed_amount), amount, duration (once, forever, repeating), and active status. Use this to audit your promotional offers.
+
+List discount codes in your Polar store
 - **list_subscriptions**: Each subscription shows the customer, product, status (active, past_due, canceled, expired, incomplete, trialing), current period start/end dates, and amount. Optionally filter by status and set a limit.
 
 List subscriptions in your Polar store
 - **list_webhooks**: Each webhook shows its URL, subscribed events (order.created, subscription.active, etc.), and status. Use this to audit your event integrations.
 
 List webhook endpoints in your Polar store
-- **create_discount**: Requires the name, code, type (percentage or fixed_amount), and amount. Optionally set the duration (once, forever, repeating). The discount can be applied during checkout.
-
-Create a new discount code in Polar
 - **get_product**: Provide the product ID (UUID format).
 
 Get details for a specific Polar product
-- **list_checkouts**: Each checkout shows its status (open, expired, confirmed), associated product, customer, and creation date. Useful for tracking abandoned and completed checkouts.
-
-List checkout sessions in your Polar store
 
 
 ## 💬 Prompt Examples

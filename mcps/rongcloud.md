@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your communication infrastructure with **Ro
 
 ## Available Tools (10)
 - **create_chatroom**: Create chatrooms
+- **get_token**: Get user IM token
+- **list_blocked_users**: List blocked users
 - **query_chatroom**: Get chatroom details
+- **send_chatroom_msg**: Send chatroom message
+- **send_private_msg**: Send private message
 - **refresh_user**: Update user information
 - **block_user**: Block user
 - **check_online**: Check user online status
-- **get_token**: Get user IM token
 - **list_blacklist**: List user blacklist
-- **list_blocked_users**: List blocked users
-- **send_chatroom_msg**: Send chatroom message
-- **send_private_msg**: Send private message
 
 
 ## 💬 Prompt Examples

@@ -34,6 +34,9 @@ Connect your **MailerLite** account to any AI agent and manage email marketing t
 
 
 ## Available Tools (10)
+- **upsert_subscriber**: Requires the email address and supports optional first/last name fields.
+
+Create or update a subscriber
 - **create_group**: Use this to organize and segment your audience.
 
 Create a new subscriber group
@@ -55,9 +58,6 @@ List all subscriber segments
 
 List all email subscribers
 - **list_webhooks**: List active account webhooks
-- **upsert_subscriber**: Requires the email address and supports optional first/last name fields.
-
-Create or update a subscriber
 
 
 ## 💬 Prompt Examples

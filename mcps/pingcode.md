@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your software development lifecycle with **
 
 ## Available Tools (10)
 - **create_work_item**: Create a work item
+- **list_projects**: List PingCode agile projects
+- **list_wiki_pages**: List wiki pages
+- **list_work_items**: List work items in a project
 - **get_project**: Get project details
 - **get_wiki_page**: Get wiki page content
 - **list_members**: List organization members
-- **list_projects**: List PingCode agile projects
 - **list_releases**: List project releases
 - **list_sprints**: List project sprints
 - **list_teams**: List organization teams
-- **list_wiki_pages**: List wiki pages
-- **list_work_items**: List work items in a project
 
 
 ## 💬 Prompt Examples

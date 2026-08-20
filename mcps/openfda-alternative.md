@@ -40,24 +40,24 @@ Connect to **OpenFDA** and explore the FDA's open data platform through natural 
 - **search_animal_events**: Returns reports of adverse events in animals from drug exposure. Use search syntax: animal.species="dog" or drug.active_ingredient="ivermectin".
 
 Search animal and veterinary adverse event reports
-- **search_device_events**: Returns reports of device malfunctions, injuries and deaths. Use search syntax: device.brand_name="pacemaker" or patient.problems.problem_text="infection".
-
-Search medical device adverse event reports
-- **search_drugsfda**: Returns drug names, active ingredients, application numbers, sponsors/manufacturers, approval dates and product details. Use search syntax: openfda.brand_name:"Lipitor" or openfda.generic_name:"atorvastatin".
-
-Search FDA-approved drug applications
-- **search_drug_events**: Returns adverse events submitted by healthcare professionals, consumers and manufacturers. Use search syntax: patient.reaction.reactionmeddrapt="headache" or openfda.brand_name="Advil". Supports pagination with limit (max 1000) and skip parameters.
-
-Search drug adverse event reports
-- **search_drug_labels**: Returns drug labels with active ingredients, purpose, warnings, dosage, indications, manufacturer info and more. Use search syntax: openfda.brand_name:"Advil" or effective_time:"2024".
-
-Search drug labeling information
-- **search_food_recalls**: Returns recalled food products with reason for recall, classification (Class I/II/III), recalling firm, distribution and product description.
-
-Search food recall enforcement reports
 - **search_device_clearance**: Returns device names, 510(k) numbers, applicant names, decision dates, regulation numbers and product codes.
 
 Search 510(k) premarket device clearance data
+- **search_device_events**: Returns reports of device malfunctions, injuries and deaths. Use search syntax: device.brand_name="pacemaker" or patient.problems.problem_text="infection".
+
+Search medical device adverse event reports
+- **search_drug_labels**: Returns drug labels with active ingredients, purpose, warnings, dosage, indications, manufacturer info and more. Use search syntax: openfda.brand_name:"Advil" or effective_time:"2024".
+
+Search drug labeling information
+- **search_drug_events**: Returns adverse events submitted by healthcare professionals, consumers and manufacturers. Use search syntax: patient.reaction.reactionmeddrapt="headache" or openfda.brand_name="Advil". Supports pagination with limit (max 1000) and skip parameters.
+
+Search drug adverse event reports
+- **search_drugsfda**: Returns drug names, active ingredients, application numbers, sponsors/manufacturers, approval dates and product details. Use search syntax: openfda.brand_name:"Lipitor" or openfda.generic_name:"atorvastatin".
+
+Search FDA-approved drug applications
+- **search_food_recalls**: Returns recalled food products with reason for recall, classification (Class I/II/III), recalling firm, distribution and product description.
+
+Search food recall enforcement reports
 - **search_device_recalls**: Returns recalled devices with reason for recall, classification, recalling firm, product description, code_info and distribution pattern.
 
 Search medical device recall reports

@@ -37,13 +37,13 @@ Empower your AI agent to orchestrate your geographic operations and location-bas
 ## Available Tools (10)
 - **direction_driving**: Get driving directions
 - **direction_transit**: Get transit directions
-- **direction_walking**: Get walking directions
 - **geocoding**: Convert address to coordinates
 - **get_district_list**: Get administrative districts
+- **direction_walking**: Get walking directions
 - **ip_location**: Get location by IP
+- **reverse_geocoding**: Convert coordinates to address
 - **poi_search**: Search for Points of Interest
 - **poi_suggestion**: Get place suggestions
-- **reverse_geocoding**: Convert coordinates to address
 - **direction_bicycling**: Get bicycling directions
 
 

@@ -38,8 +38,8 @@ Empower your AI agent to orchestrate your entire financial research and currency
 - **convert_currency**: Convert an amount from one currency to another
 - **get_latest_rates**: Get the latest exchange rates for a base currency
 - **get_rate_time_series**: Get historical rates over a time period
-- **get_api_usage**: Get current API usage and plan details
 - **list_supported_currencies**: List all supported currency codes and names
+- **get_api_usage**: Get current API usage and plan details
 - **get_historical_rates**: Get exchange rates for a specific historical date
 
 

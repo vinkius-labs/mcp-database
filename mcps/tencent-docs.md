@@ -36,13 +36,13 @@ Empower your AI agent to orchestrate your collaborative production with **Tencen
 
 ## Available Tools (10)
 - **create_file**: Create a new document
-- **delete_file**: Delete a document
 - **get_doc_content**: Get document content
 - **get_file_info**: Get file metadata
-- **get_org_members**: List organization members
 - **get_sheet_data**: Read spreadsheet data
-- **list_collaborators**: List file collaborators
 - **list_files**: List all Tencent Docs files
+- **delete_file**: Delete a document
+- **get_org_members**: List organization members
+- **list_collaborators**: List file collaborators
 - **list_folders**: List all folders
 - **update_sheet_data**: Update spreadsheet data
 

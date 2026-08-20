@@ -38,21 +38,21 @@ No API key required for public data — completely free.
 
 
 ## Available Tools (8)
-- **get_ohlc**: Each candle includes time, open, high, low, close, VWAP, volume and trade count. Supports intervals: 1 (1min), 5, 15, 30, 60 (1h), 240 (4h), 1440 (1d), 10080 (1w), 21600 (15d). Optionally provide since timestamp for incremental data.
+- **get_server_time**: Returns the Unix timestamp and RFC 1123 time. Useful for synchronizing with the exchange server and verifying API connectivity.
 
-Get OHLCV candlestick data for a trading pair
-- **get_order_book**: Each level includes price and volume. The count parameter controls the number of levels returned (1-500, default 100). Useful for analyzing market depth and liquidity.
-
-Get the current order book for a trading pair
+Get Kraken server time
 - **get_asset_info**: Returns asset name, alternate names, decimals, status and collateral support. Optionally filter by specific assets (comma-separated).
 
 Get information about Kraken assets
 - **get_asset_pairs**: Returns pair name, alt name, base/quote assets, lot volume decimals, pair decimals, order minimums and trading leverage. Optionally filter by a specific pair.
 
 Get information about Kraken trading pairs
-- **get_server_time**: Returns the Unix timestamp and RFC 1123 time. Useful for synchronizing with the exchange server and verifying API connectivity.
+- **get_ohlc**: Each candle includes time, open, high, low, close, VWAP, volume and trade count. Supports intervals: 1 (1min), 5, 15, 30, 60 (1h), 240 (4h), 1440 (1d), 10080 (1w), 21600 (15d). Optionally provide since timestamp for incremental data.
 
-Get Kraken server time
+Get OHLCV candlestick data for a trading pair
+- **get_order_book**: Each level includes price and volume. The count parameter controls the number of levels returned (1-500, default 100). Useful for analyzing market depth and liquidity.
+
+Get the current order book for a trading pair
 - **get_spread**: Returns recent spreads with bid price, ask price, time (Unix timestamp) and volume. Useful for analyzing liquidity and trading costs.
 
 Get recent spread data for a trading pair

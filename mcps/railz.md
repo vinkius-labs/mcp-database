@@ -35,22 +35,22 @@ Empower your AI agent to access normalized financial data from various accountin
 
 
 ## Available Tools (12)
-- **get_business**: Get details for a specific business
-- **list_accounts**: List chart of accounts
 - **list_bills**: List bills for a business
 - **get_balance_sheet**: Get balance sheet report
+- **get_business**: Get details for a specific business
+- **get_profit_and_loss**: Get profit and loss report
+- **list_accounts**: List chart of accounts
+- **list_businesses**: List all businesses in Railz
 - **list_bank_transactions**: List bank transactions
 - **get_cash_flow**: Get cash flow statement
 - **list_commerce_orders**: g., Shopify, BigCommerce).
 
 List commerce orders
 - **list_journal_entries**: List journal entries
-- **list_businesses**: List all businesses in Railz
 - **list_connections**: g., QuickBooks, Xero) for a given business.
 
 List connections for a business
 - **list_invoices**: List invoices for a business
-- **get_profit_and_loss**: Get profit and loss report
 
 
 ## 💬 Prompt Examples

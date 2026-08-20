@@ -39,12 +39,12 @@ Empower your AI agent to orchestrate your entire global communication strategy w
 - **list_hlr**: List HLR (Network Lookup) requests
 - **list_messages**: List recent SMS messages
 - **get_group**: Get details for a specific group
-- **get_message**: Get details for a specific message
 - **list_channels**: List configured channels
 - **list_contacts**: List MessageBird contacts
 - **list_groups**: List contact groups
-- **send_sms**: Send an SMS message
 - **get_balance**: Get current MessageBird account balance
+- **get_message**: Get details for a specific message
+- **send_sms**: Send an SMS message
 
 
 ## 💬 Prompt Examples

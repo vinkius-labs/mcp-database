@@ -33,36 +33,36 @@ Connect **Twelve Data** financial API to any AI agent and access real-time stock
 - **get_bollinger_bands**: Price touching upper band may indicate overbought, lower may indicate oversold.
 
 Get Bollinger Bands
-- **get_crypto_list**: Can filter by exchange.
-
-List available crypto pairs
 - **get_ema**: EMA gives more weight to recent prices than SMA.
 
 Get Exponential Moving Average (EMA)
 - **get_exchange_rate**: Get currency exchange rate
-- **get_forex_list**: List available forex pairs
 - **get_macd**: Used for trend following and momentum.
 
 Get Moving Average Convergence Divergence (MACD)
-- **get_quote**: Get real-time stock quote
 - **get_rsi**: Values above 70 indicate overbought, below 30 indicate oversold conditions.
 
 Get Relative Strength Index (RSI)
-- **get_sma**: Common periods: 20, 50, 200.
-
-Get Simple Moving Average (SMA)
 - **get_stochastic**: Values above 80 indicate overbought, below 20 indicate oversold.
 
 Get Stochastic Oscillator
-- **get_stock_list**: Can filter by exchange and partial symbol match.
-
-List available stocks
 - **get_time_series**: Supports intervals from 1min to 1month.
 
 Get historical OHLCV candle data
 - **search_symbols**: Can filter by instrument type and exchange.
 
 Search for financial instruments
+- **get_crypto_list**: Can filter by exchange.
+
+List available crypto pairs
+- **get_forex_list**: List available forex pairs
+- **get_quote**: Get real-time stock quote
+- **get_sma**: Common periods: 20, 50, 200.
+
+Get Simple Moving Average (SMA)
+- **get_stock_list**: Can filter by exchange and partial symbol match.
+
+List available stocks
 - **get_company_profile**: Get company profile and fundamentals
 - **get_real_time_price**: Faster and lighter than a full quote.
 
