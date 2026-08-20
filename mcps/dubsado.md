@@ -36,14 +36,14 @@ No more manual project tracking or digging through CRM menus. Your AI acts as yo
 
 
 ## Available Tools (12)
-- **apply_workflow**: Apply a workflow to a project
 - **create_invoice**: Create a new invoice
-- **create_project**: Create a new project
 - **get_contract**: Get contract status and details
-- **get_invoice**: Get details for a Dubsado invoice
-- **get_project**: Get details for a Dubsado project
 - **list_contacts**: List Dubsado contacts
 - **list_contracts**: List project contracts
+- **apply_workflow**: Apply a workflow to a project
+- **create_project**: Create a new project
+- **get_invoice**: Get details for a Dubsado invoice
+- **get_project**: Get details for a Dubsado project
 - **list_invoices**: List all invoices
 - **list_projects**: List all Dubsado projects
 - **list_workflow_templates**: List available workflow templates

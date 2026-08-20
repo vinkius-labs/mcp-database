@@ -38,11 +38,11 @@ Connect your **folk** CRM account to any AI agent and simplify how you manage yo
 - **list_contacts**: Optionally filter by group ID.
 
 List folk contacts
-- **get_contact_details**: Get details for a specific contact
 - **list_groups**: List folk groups
-- **list_interactions**: List interactions for a contact
-- **list_contact_notes**: List notes for a contact
 - **create_contact**: Create a new contact
+- **get_contact_details**: Get details for a specific contact
+- **list_contact_notes**: List notes for a contact
+- **list_interactions**: List interactions for a contact
 
 
 ## 💬 Prompt Examples

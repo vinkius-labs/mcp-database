@@ -37,17 +37,17 @@ No more context-switching between tools to check if a customer was replied to. Y
 
 ## Available Tools (12)
 - **get_api_status**: Check connection
-- **get_conversation_details**: Read email thread
 - **get_inbox_details**: Get mailbox info
-- **list_inbox_conversations**: List shared threads
-- **list_shared_inboxes**: List Hiver inboxes
-- **list_inbox_tags**: Get mailbox tags
-- **list_inbox_members**: List team members
-- **search_tags_by_name**: Find tags
 - **search_team_members**: Find members
 - **test_hiver_auth**: Verify credentials
 - **update_thread_status**: Modify conversation
 - **create_shared_draft**: Draft team reply
+- **get_conversation_details**: Read email thread
+- **list_inbox_conversations**: List shared threads
+- **list_inbox_members**: List team members
+- **list_inbox_tags**: Get mailbox tags
+- **list_shared_inboxes**: List Hiver inboxes
+- **search_tags_by_name**: Find tags
 
 
 ## 💬 Prompt Examples

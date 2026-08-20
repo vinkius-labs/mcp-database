@@ -14,20 +14,20 @@ This MCP server integrates DPD services, allowing you to create shipments, track
 
 
 ## Available Tools (10)
-- **find_parcelshop**: Search for DPD Pickup points (ParcelShops) near a location
 - **get_manifest**: Generate or retrieve a manifest for a shipment
-- **get_parcel_status**: Retrieve the tracking status for a specific parcel number
 - **get_shipment_status**: Get the current status and tracking history of a shipment
 - **list_countries**: List supported countries for DPD shipping
+- **get_labels**: Retrieve the labels for a specific shipment
+- **list_shipments**: Supports filtering by date or status. Provide filters as a JSON string.
+
+List recent shipments
 - **cancel_shipment**: Cancel an existing DPD shipment
 - **create_shipment**: Provide shipment data as a JSON string.
 
 Create a new shipment and generate parcel numbers/labels
-- **get_labels**: Retrieve the labels for a specific shipment
+- **find_parcelshop**: Search for DPD Pickup points (ParcelShops) near a location
+- **get_parcel_status**: Retrieve the tracking status for a specific parcel number
 - **list_products**: List available DPD products and services
-- **list_shipments**: Supports filtering by date or status. Provide filters as a JSON string.
-
-List recent shipments
 
 
 ## 💬 Prompt Examples

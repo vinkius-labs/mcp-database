@@ -36,20 +36,20 @@ No more manual status checking or digging through manufacturing tables. Your AI 
 
 
 ## Available Tools (12)
-- **list_manufacturing_products**: List all products/items
 - **create_production_order**: Requires product and quantity.
 
 Create a new production order
-- **get_product_details**: Get details for a specific product
-- **get_production_order_details**: Get details for a specific production order
 - **get_manufacturing_site_info**: Get current site/company details
-- **list_inventory_stocks**: List current inventory levels
+- **get_production_order_details**: Get details for a specific production order
 - **list_floor_machines**: List production machines
+- **list_floor_workers**: List shop floor workers
+- **list_inventory_stocks**: List current inventory levels
 - **list_manufacturing_operations**: List manufacturing operations
 - **list_production_orders**: List all production orders
-- **list_production_records**: List history of production records
 - **list_storage_locations**: List storage locations
-- **list_floor_workers**: List shop floor workers
+- **get_product_details**: Get details for a specific product
+- **list_manufacturing_products**: List all products/items
+- **list_production_records**: List history of production records
 
 
 ## 💬 Prompt Examples

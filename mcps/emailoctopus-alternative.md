@@ -37,21 +37,21 @@ No more manual scrubbing through subscriber exports or slow UI navigation. Your 
 
 ## Available Tools (12)
 - **create_email_list**: Create a new subscriber list
-- **remove_contact_from_list**: Delete a contact from a list
-- **get_campaign_details**: Get details for a campaign
 - **get_contact_details**: Get details for a contact
 - **get_list_details**: Get details for an email list
-- **get_campaign_summary_report**: Get performance metrics for a campaign
-- **list_email_campaigns**: List all sent and draft campaigns
 - **list_contacts_in_list**: Can filter by status.
 
 List contacts in a specific list
+- **list_email_campaigns**: List all sent and draft campaigns
+- **remove_contact_from_list**: Delete a contact from a list
+- **add_contact_to_list**: Add a new contact to a list
+- **get_campaign_details**: Get details for a campaign
+- **get_campaign_summary_report**: Get performance metrics for a campaign
 - **list_email_lists**: List all subscriber lists
 - **trigger_automation_for_contact**: Requires API trigger to be enabled.
 
 Start an automation for a contact
 - **update_contact_profile**: Update an existing contact
-- **add_contact_to_list**: Add a new contact to a list
 
 
 ## 💬 Prompt Examples

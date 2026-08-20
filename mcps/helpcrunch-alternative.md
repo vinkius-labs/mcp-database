@@ -36,24 +36,24 @@ No more manual toggling between chat windows or searching for customer emails. Y
 
 
 ## Available Tools (12)
-- **get_customer_details**: Get details for a specific customer
-- **list_team_agents**: List all agents/team members
 - **list_conversations**: List all customer chats
+- **list_team_agents**: List all agents/team members
 - **list_customers**: List all customers
 - **list_departments**: List all departments
 - **list_messages_in_chat**: List messages from a specific chat
-- **list_active_webhooks**: List configured webhooks
 - **search_customers**: Search for customers using filters
-- **send_chat_message**: Can be sent as an agent.
-
-Post a message to a chat
 - **update_conversation_status**: g., open, pending, closed).
 
 Change chat status
+- **get_conversation_details**: Get details for a specific chat
 - **create_customer**: Requires email and name.
 
 Create a new customer profile
-- **get_conversation_details**: Get details for a specific chat
+- **get_customer_details**: Get details for a specific customer
+- **list_active_webhooks**: List configured webhooks
+- **send_chat_message**: Can be sent as an agent.
+
+Post a message to a chat
 
 
 ## 💬 Prompt Examples

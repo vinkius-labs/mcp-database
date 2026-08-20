@@ -35,17 +35,17 @@ Connect your **Foxentry** data intelligence account to any AI agent and simplify
 
 
 ## Available Tools (12)
-- **format_phone**: Format phone
 - **geocode_address**: Geocode address
-- **get_business_details**: Get business details
 - **lookup_business**: Lookup business
 - **suggest_address**: Suggest address
 - **suggest_email**: Suggest email
 - **validate_name**: Validate name
 - **validate_phone**: Validate phone
-- **check_foxentry_status**: Verify connectivity
-- **suggest_name**: Suggest name
 - **validate_address**: Validate address
+- **suggest_name**: Suggest name
+- **check_foxentry_status**: Verify connectivity
+- **format_phone**: Format phone
+- **get_business_details**: Get business details
 - **validate_email**: Validate email
 
 

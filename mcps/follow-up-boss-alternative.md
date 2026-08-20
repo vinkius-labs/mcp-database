@@ -36,20 +36,20 @@ No more manual status checking or digging through CRM lists on the go. Your AI a
 
 
 ## Available Tools (12)
-- **log_lead_activity**: Log a new activity event
-- **add_internal_note**: Add a note to a lead profile
+- **create_followup_task**: Create a new task
 - **create_new_lead**: Requires essential details like email or name.
 
 Add a new lead to the CRM
-- **create_followup_task**: Create a new task
 - **get_lead_details**: Get details for a specific lead
 - **list_calendar_appointments**: List showings and appointments
 - **list_real_estate_deals**: List transactions and deals
 - **list_recent_events**: List website and activity events
-- **list_person_notes**: List notes for a specific person
-- **list_leads**: List lead profiles (people)
 - **list_followup_tasks**: List CRM tasks
+- **list_person_notes**: List notes for a specific person
+- **add_internal_note**: Add a note to a lead profile
 - **list_configured_webhooks**: List active webhooks
+- **list_leads**: List lead profiles (people)
+- **log_lead_activity**: Log a new activity event
 
 
 ## 💬 Prompt Examples

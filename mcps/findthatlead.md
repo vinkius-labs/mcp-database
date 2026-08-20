@@ -36,18 +36,18 @@ No more manual copy-pasting into email verifiers or complex domain searching. Yo
 
 
 ## Available Tools (12)
-- **domain_search**: Find emails for a domain
 - **email_verifier**: Verify an email address
-- **get_account_stats**: Get account usage stats
 - **list_campaigns**: List email campaigns
 - **list_leads**: List saved leads
-- **create_lead**: Save a new lead
 - **email_finder**: Find email for a specific person
 - **get_account_info**: Get account details
-- **get_campaign**: Get campaign details
 - **get_lead**: Get lead details
-- **local_prospector**: Find local business leads
 - **delete_lead**: Remove a lead
+- **create_lead**: Save a new lead
+- **domain_search**: Find emails for a domain
+- **get_account_stats**: Get account usage stats
+- **get_campaign**: Get campaign details
+- **local_prospector**: Find local business leads
 
 
 ## 💬 Prompt Examples

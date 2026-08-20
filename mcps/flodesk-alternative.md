@@ -36,15 +36,15 @@ No more manual subscriber lookups or complex segment navigation. Your AI acts as
 
 
 ## Available Tools (10)
-- **add_subscriber_to_segment**: Add a subscriber to a segment
-- **add_subscriber_to_workflow**: Trigger a workflow for a subscriber
 - **create_segment**: Create a new segment
 - **get_segment**: Get details for a segment
 - **get_subscriber**: Get details for a subscriber
 - **list_custom_fields**: List subscriber custom fields
 - **list_segments**: List all subscriber segments
-- **list_subscribers**: List all Flodesk subscribers
 - **list_workflows**: List all workflows
+- **add_subscriber_to_segment**: Add a subscriber to a segment
+- **add_subscriber_to_workflow**: Trigger a workflow for a subscriber
+- **list_subscribers**: List all Flodesk subscribers
 - **upsert_subscriber**: Requires email.
 
 Create or update a subscriber

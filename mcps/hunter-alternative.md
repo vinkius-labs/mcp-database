@@ -36,18 +36,18 @@ Connect your **Hunter** account to any AI agent and power your email prospecting
 
 
 ## Available Tools (12)
-- **search_domain_emails**: Find emails for domain
-- **get_domain_email_count**: Check email availability
-- **find_person_email**: Find personal email
-- **verify_email_address**: Check deliverability
 - **get_account_usage**: Check credits
-- **enrich_email_data**: Get contact intel
 - **get_lead_details**: Get lead info
 - **list_lead_folders**: List lead lists
 - **list_saved_leads**: List lead profiles
 - **update_lead_info**: Modify lead data
-- **create_new_lead**: Save lead to CRM
+- **verify_email_address**: Check deliverability
 - **remove_lead**: Delete lead record
+- **create_new_lead**: Save lead to CRM
+- **enrich_email_data**: Get contact intel
+- **find_person_email**: Find personal email
+- **get_domain_email_count**: Check email availability
+- **search_domain_emails**: Find emails for domain
 
 
 ## 💬 Prompt Examples

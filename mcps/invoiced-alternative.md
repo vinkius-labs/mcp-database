@@ -36,11 +36,7 @@ No more manual following up on overdue payments or missing billing updates. Your
 
 
 ## Available Tools (10)
-- **create_customer**: Create a customer
 - **check_invoiced_status**: Verify Invoiced API connectivity
-- **create_invoice**: Pass line items as JSON array with name, quantity, and unit_cost.
-
-Create an invoice
 - **get_customer**: Get customer details
 - **get_invoice**: Get invoice details
 - **list_credit_notes**: List all credit notes
@@ -48,6 +44,10 @@ Create an invoice
 - **list_estimates**: List all estimates
 - **list_invoices**: List all invoices
 - **list_payments**: List all payments
+- **create_customer**: Create a customer
+- **create_invoice**: Pass line items as JSON array with name, quantity, and unit_cost.
+
+Create an invoice
 
 
 ## 💬 Prompt Examples

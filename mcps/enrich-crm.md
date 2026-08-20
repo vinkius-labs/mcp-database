@@ -36,11 +36,11 @@ No more manual contact research or toggling between dozens of browser tabs. Your
 
 
 ## Available Tools (5)
-- **enrich_company**: Enrich company data
 - **enrich_person**: Enrich person data
 - **find_email**: Find a professional email address
-- **find_phone**: Find a professional phone number
 - **get_account_info**: Check account status
+- **enrich_company**: Enrich company data
+- **find_phone**: Find a professional phone number
 
 
 ## 💬 Prompt Examples

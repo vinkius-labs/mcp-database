@@ -25,17 +25,17 @@ Freelancers, small businesses, and agencies who need a powerful, automated way t
 
 
 ## Available Tools (11)
-- **create_product**: Create a new product
 - **get_client**: Get details for a specific client
-- **create_client**: Create a new client
 - **create_invoice**: Create a new invoice
-- **get_invoice**: Get an invoice by ID
 - **get_payment**: Get a payment by ID
 - **get_product**: Get a product by ID
 - **list_clients**: List clients in Invoice Ninja
 - **list_invoices**: List invoices
-- **list_payments**: List payments
 - **list_products**: List products
+- **create_client**: Create a new client
+- **create_product**: Create a new product
+- **get_invoice**: Get an invoice by ID
+- **list_payments**: List payments
 
 
 ## 💬 Prompt Examples
