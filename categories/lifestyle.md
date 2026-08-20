@@ -17,6 +17,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Numerology Compatibility](../mcps/numerology-compatibility.md) | Discover the vibrational alignment between individuals using numerological profiles. |
 | [Numerology Life Path Calculator](../mcps/numerology-life-path-calculator.md) | Discover your spiritual purpose and personality traits through Pythagorean numerology calculation. |
 | [Pregnancy Week-by-Week Calculator](../mcps/pregnancy-week-by-week-calculator.md) | Track pregnancy progress, fetal development milestones, and trimester symptoms. |
+| [Seimei Handan Fortune Calculator](../mcps/seimei-handan-fortune-calculator.md) | Calculate Japanese name fortunes using the traditional Five Grids (Go-Grid) system. |
 | [Skincare Routine Optimizer](../mcps/skincare-routine-optimizer.md) | Optimize your skincare routine order, ingredient safety, and product lifecycle management. |
 | [Sun Sign Calculator](../mcps/sun-sign-calculator.md) | Calculate precise zodiac signs with year-specific cusp transitions and astrological properties. |
 | [Sustainability Score Calculator](../mcps/sustainability-score-calculator.md) | Quantify your environmental footprint and discover actionable paths to a more sustainable lifestyle. |

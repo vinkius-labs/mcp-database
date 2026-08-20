@@ -17,6 +17,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Crowdfunding Pitch Scorer](../mcps/crowdfunding-pitch-scorer.md) | Analyze crowdfunding campaign effectiveness using linguistic analysis of narrative ratio, rewards, and trust. |
 | [Customerly](../mcps/customerly.md) | Combine live chat, email marketing, and customer surveys in one platform that helps SaaS companies grow and retain users. |
 | [Dev.to Intelligence](../mcps/devto-intelligence.md) | Publish, manage, and deeply analyze Dev.to content with 22 tools — including proprietary intelligence modules for timing optimization, audience mapping, and content strategy. |
+| [Douyin Engagement Algorithm](../mcps/douyin-engagement-algorithm.md) | Calculate precise video engagement scores and viral potential for Douyin and TikTok content. |
 | [eSputnik](../mcps/esputnik.md) | Omnichannel marketing automation with eSputnik. |
 | [Hashtag Effectiveness Analyzer](../mcps/hashtag-effectiveness-analyzer.md) | Evaluate hashtag sets for platform optimization, readability, and safety. |
 | [Headline Power Analyzer](../mcps/headline-power-analyzer.md) | Analyze headlines for power words, emotional impact, sentiment, and platform compliance. |

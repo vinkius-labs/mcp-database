@@ -103,6 +103,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Dollar Cost Averaging Simulator](../mcps/dollar-cost-averaging-simulator.md) | Simulate and compare DCA vs Lump Sum investment strategies using historical price data. |
 | [Dollar-Cost Averaging Strategy Simulator](../mcps/dollar-cost-averaging-strategy-simulator.md) | Simulate a deterministic DCA strategy with valuation-based adjustments. |
 | [Donchian Channels Calculator](../mcps/donchian-channels-calculator.md) | Deterministic Donchian Channels and breakout signal calculator for Turtle Traders. |
+| [Double-Eleven Discount Stack Calculator](../mcps/double-eleven-discount-stack-calculator.md) | Calculate exact final prices and optimal spending for 11.11 shopping festivals. |
 | [Early Lease Break Penalty Calculator](../mcps/early-lease-break-penalty-calculator.md) | Calculate the total financial cost of breaking a lease early. |
 | [Earnings Announcement Strategy](../mcps/earnings-announcement-strategy.md) | A deterministic engine to exploit volatility mispricing around earnings events. |
 | [Ease of Movement Calculator](../mcps/ease-of-movement-calculator.md) | Calculate and interpret Ease of Movement (EMV) to identify market efficiency and momentum shifts. |

@@ -482,6 +482,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Prismatic](../mcps/prismatic.md) | Manage your Prismatic integration platform — list customers, create instances, deploy integrations, and fetch execution logs via AI. |
 | [Privy](../mcps/privy.md) | Manage users and wallets via Privy — create users, search profiles, and manage embedded wallets directly from any AI agent. |
 | [Prompt Entropy and Clarity Scorer](../mcps/prompt-entropy-and-clarity-scorer.md) | A mathematical diagnostic tool to measure prompt complexity and cognitive load. |
+| [Prompt Length Classifier](../mcps/prompt-length-classifier.md) | Estimate token usage and context window saturation. |
 | [Prompt Template Optimizer](../mcps/prompt-template-optimizer.md) | A deterministic utility for balancing LLM token efficiency against semantic importance. |
 | [Prompt Template Variable Injector Checker](../mcps/prompt-template-variable-injector-checker.md) | Validates prompt templates for correct variable syntax, undeclared variables, and potential injection vectors. |
 | [Prompt Template Variable Injector Checker](../mcps/prompt-template-variable-injector-checker-alternative.md) | Validates prompt templates for syntax, undeclared variables, and injection risks. |
@@ -605,6 +606,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [ThirdWeb](../mcps/thirdweb.md) | Integrate Web3 capabilities into your AI agent — manage wallets, authenticate users, and interact with smart contracts across multiple blockchains. |
 | [Tingyun / 听云](../mcps/tingyun.md) | Leading APM and observability platform — manage applications, alerts, and performance metrics via AI. |
 | [Togai (Usage Metering & Pricing)](../mcps/togai-usage-metering-pricing.md) | Automate usage-based billing and metering — ingest events, manage customers, and track entitlements directly from your AI agent. |
+| [Token Cost Estimator](../mcps/token-cost-estimator.md) | Calculate precise LLM usage costs and optimization targets. |
 | [Token Count Estimator](../mcps/token-count-estimator.md) | Deterministic LLM token estimation using character-based heuristics. |
 | [Tokenization Normalizer](../mcps/tokenization-normalizer.md) | Resolves tokenization drift by normalizing text to match specific LLM tokenizer profiles. |
 | [TOML Parser & Validator](../mcps/toml-parser-validator.md) | Strict TOML parsing and schema validation with precise error reporting. |

@@ -37,11 +37,13 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Fraction Exact Calculator](../mcps/fraction-exact-calculator.md) | Perform exact rational number arithmetic, continued fraction analysis, and decimal expansion without floating-point errors. |
 | [Fractions Arithmetic and Simplifier](../mcps/fractions-arithmetic-and-simplifier.md) | Perform exact mathematical operations on fractions with automatic simplification. |
 | [Frequency & Note Converter](../mcps/frequency-note-converter.md) | Convert between musical frequencies and notes with precision. |
+| [Gacha Pity Calculator](../mcps/gacha-pity-calculator.md) | Calculate exact gacha probabilities, soft pity escalation, and resource costs. |
 | [Geographic Distance Calculator](../mcps/geographic-distance-calculator.md) | Calculate precise distances, bearings, and waypoints using Haversine, Vincenty, and Euclidean models. |
 | [Groove Quantize Calculator](../mcps/groove-quantize-calculator.md) | Calculate precise millisecond-based quantization grids, swing offsets, and latency compensation for DAWs. |
 | [IP Address & Subnet Calculator](../mcps/ip-address-subnet-calculator.md) | Perform precise bitwise IPv4 and IPv6 subnet calculations and membership checks. |
 | [ISBN-10 and ISBN-13 Validator](../mcps/isbn-10-and-isbn-13-validator.md) | Verify the mathematical integrity of ISBN-10 and ISBN-13 identifiers and identify registration groups. |
 | [ISO 8601 Duration Parser](../mcps/iso-8601-duration-parser.md) | Extracts time components and calculates total seconds from ISO 8601 duration strings. |
+| [Japanese Era Converter](../mcps/japanese-era-converter.md) | Convert Gregorian dates to Japanese imperial eras and calculate era metrics. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [JSONL Strict Parser](../mcps/jsonl-strict-parser-alternative.md) | Robustly parse JSON Lines (.jsonl) strings into structured objects while isolating malformed lines. |
 | [Knitting Gauge Calculator](../mcps/knitting-gauge-calculator.md) | Convert garment dimensions and shaping rules into precise stitch counts and schedules. |

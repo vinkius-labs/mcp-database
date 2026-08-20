@@ -6,6 +6,7 @@ Explore the open database of **analysis** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Agent Loop Detector](../mcps/agent-loop-detector.md) | Identifies infinite conversation cycles and deadlocks in agentic workflows. |
 | [Chord Progression Analyzer](../mcps/chord-progression-analyzer.md) | Analyze chord sequences to identify Roman numeral functions, harmonic patterns, and emotional context. |
+| [Multi-Language Token Estimator](../mcps/multi-language-token-estimator.md) | Analyze text composition and estimate token counts across multiple languages. |
 | [Tempo Tap Analyzer](../mcps/tempo-tap-analyzer.md) | Analyze rhythmic timing, BPM, and groove stability from tap sequences. |
 | [Voice Leading Checker](../mcps/voice-leading-checker.md) | Analyze musical voice-leading integrity between chord voicings using classical harmonic principles. |
 

@@ -7,6 +7,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Agent Consensus & Voting Engine](../mcps/agent-consensus-voting-engine.md) | Deterministic multi-agent consensus and voting calculator. |
 | [Agent Resource Contention Calculator](../mcps/agent-resource-contention-calculator.md) | High-precision queueing theory calculator for multi-agent system performance. |
 | [Baking Recipe Scaler](../mcps/baking-recipe-scaler.md) | Scale baking recipes using baker's percentages and pan volume geometry. |
+| [BaZi Four Pillars Calculator](../mcps/bazi-four-pillars-calculator.md) | Calculate precise Chinese BaZi Four Pillars, Day Master, and elemental balance. |
 | [Collision Detection Primitives](../mcps/collision-detection-primitives.md) | Calculate 3D intersections, penetrations, and impact timings for spheres, AABBs, rays, and planes. |
 | [Damage Formula Calculator](../mcps/damage-formula-calculator.md) | Evaluate and compare game damage scaling models including linear, multiplicative, and advanced RPG formulas. |
 | [Elemental Weakness Calculator](../mcps/elemental-weakness-calculator.md) | Calculate combat effectiveness and identify elemental imbalances using an interaction matrix. |
