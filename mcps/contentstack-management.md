@@ -33,14 +33,14 @@ Embed the **ContentStack Management API (CMA)** core directly into your AI assis
 
 ## Available Tools (10)
 - **create_entry**: Create a new entry
-- **get_content_type_details**: Get schema details for a specific content type
 - **get_entry_details**: Get full details for a specific entry
 - **get_stack_info**: Get general information about the current stack
 - **list_assets**: List all assets in the stack
-- **list_content_types**: List all content types in the stack
 - **list_entries**: List all entries for a specific content type
-- **list_environments**: List all publishing environments
 - **publish_entry**: Publish an entry to an environment
+- **get_content_type_details**: Get schema details for a specific content type
+- **list_content_types**: List all content types in the stack
+- **list_environments**: List all publishing environments
 - **update_entry**: Update an existing entry
 
 

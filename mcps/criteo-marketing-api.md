@@ -33,15 +33,15 @@ Integrate the **Criteo Marketing API** directly into your AI workflow. Manage yo
 
 
 ## Available Tools (10)
-- **get_marketing_statistics**: Retrieve performance statistics for campaigns or ad sets
 - **get_ad_set_details**: Get detailed configuration for an ad set
+- **list_marketing_budgets**: List active budgets and their spend
+- **get_marketing_statistics**: Retrieve performance statistics for campaigns or ad sets
 - **get_campaign_details**: Get detailed settings for a specific campaign
+- **list_ad_creatives**: List all ad creatives (banners, videos, etc.)
 - **list_ad_sets**: List all ad sets (groups) within campaigns
 - **list_advertisers**: List advertisers managed in your account
 - **list_audiences**: List target audiences for your campaigns
-- **list_marketing_budgets**: List active budgets and their spend
 - **list_marketing_campaigns**: List all marketing campaigns in Criteo
-- **list_ad_creatives**: List all ad creatives (banners, videos, etc.)
 - **list_audience_segments**: List available audience segments
 
 

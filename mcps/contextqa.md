@@ -36,16 +36,16 @@ Connect your **ContextQA** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
-- **list_executions**: Inspect deep internal interaction tracking explicit globalThis Run chunks
-- **list_projects**: Identify bounded ContextQA test environments grouping automated validations
 - **get_project**: Retrieve explicit Project mapping UUIDs analyzing execution spaces limitlessly
-- **get_execution**: Execute static queries targeting exactly specific AI-healing Run states
 - **list_environments**: List static configurations mapping Environment target layers mapping limits
+- **list_projects**: Identify bounded ContextQA test environments grouping automated validations
 - **list_suites**: Perform structural extraction matching asynchronous GUI test Suites payloads
-- **list_cases**: Discover explicit routing limits structuring ContextQA cases trees
-- **get_case**: Validate Data Science object extraction tracking explicit steps boundaries
-- **list_api_tests**: Extracts native REST & OpenAPI testing configurations natively
 - **trigger_run**: Dispatch a live testing command routing explicit Jobs against pipelines
+- **list_api_tests**: Extracts native REST & OpenAPI testing configurations natively
+- **get_case**: Validate Data Science object extraction tracking explicit steps boundaries
+- **get_execution**: Execute static queries targeting exactly specific AI-healing Run states
+- **list_cases**: Discover explicit routing limits structuring ContextQA cases trees
+- **list_executions**: Inspect deep internal interaction tracking explicit globalThis Run chunks
 
 
 ## 💬 Prompt Examples

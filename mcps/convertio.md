@@ -33,13 +33,13 @@ Connect your AI agent to **Convertio**, the versatile file conversion platform s
 
 ## Available Tools (8)
 - **convert_file**: Start a new file conversion job
-- **quick_convert_to_jpg**: Quickly convert any image URL to JPG
-- **quick_convert_to_pdf**: Quickly convert any document URL to PDF
 - **delete_conversion_job**: Remove a job and its file from Convertio servers
+- **list_active_jobs**: List your current active conversion jobs
+- **quick_convert_to_pdf**: Quickly convert any document URL to PDF
+- **quick_convert_to_jpg**: Quickly convert any image URL to JPG
 - **get_account_balance**: Check your Convertio API credit balance
 - **get_conversion_status**: Check the status of a conversion job
 - **list_common_formats**: List common supported formats for conversion
-- **list_active_jobs**: List your current active conversion jobs
 
 
 ## 💬 Prompt Examples

@@ -32,11 +32,11 @@ Connect your AI assistant to **Concord**, the Contract Lifecycle Management (CLM
 
 
 ## Available Tools (10)
-- **create_agreement**: Create a new agreement in Concord
 - **get_agreement**: Retrieve detailed information about a specific agreement
 - **get_current_user**: Retrieve details of the currently authenticated user
-- **list_signed_agreements**: Quickly list all fully signed agreements
 - **list_agreements**: Retrieve a list of agreements from Concord CLM
+- **list_signed_agreements**: Quickly list all fully signed agreements
+- **create_agreement**: Create a new agreement in Concord
 - **list_templates**: Retrieve a list of document templates available in Concord
 - **list_users**: Retrieve a list of all users in your Concord organization
 - **list_webhooks**: Retrieve a list of configured webhooks

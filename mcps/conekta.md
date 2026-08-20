@@ -35,6 +35,10 @@ Integrate your AI assistant with **Conekta**, the leading online payment gateway
 - **create_order**: Requires customer name, email, phone, and at least one line item with name, unit_price (in cents), and quantity. Currency defaults to MXN.
 
 Create a new order in Conekta
+- **list_customers**: Retrieve a list of customer records from Conekta
+- **list_orders**: Use payment_status filter to narrow results. Supports limit for pagination.
+
+Retrieve a paginated list of orders from Conekta
 - **get_customer**: Returns contact info, payment sources, and order history.
 
 Retrieve detailed information about a specific customer
@@ -42,13 +46,9 @@ Retrieve detailed information about a specific customer
 
 Retrieve detailed information about a specific order
 - **list_subscription_plans**: Retrieve a list of subscription plans in Conekta
-- **list_customers**: Retrieve a list of customer records from Conekta
 - **list_events**: Useful for debugging integrations.
 
 Retrieve a list of API events (webhook history)
-- **list_orders**: Use payment_status filter to narrow results. Supports limit for pagination.
-
-Retrieve a paginated list of orders from Conekta
 - **search_customer_by_email**: Returns matching customer profiles.
 
 Find a Conekta customer by their email address

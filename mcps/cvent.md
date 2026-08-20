@@ -39,6 +39,9 @@ Retrieve metadata for your Cvent account
 - **get_event_details**: Resolves event configuration, capacity, and lifecycle status. Touches the granular event planning and operational boundary.
 
 Get detailed information for a specific event
+- **list_event_sessions**: Resolves session IDs, titles, and time slots. Touches the agenda and session scheduling boundary.
+
+List all sessions scheduled for an event
 - **list_active_events**: Resolves operational event records. Touches the event status management boundary.
 
 Quickly list only the events that are currently active
@@ -51,15 +54,12 @@ List all events in your Cvent account
 - **list_registration_types**: Resolves registration type identifiers and names. Interacts with the registration logic and pricing boundary.
 
 List available registration types for an event
-- **list_event_sessions**: Resolves session IDs, titles, and time slots. Touches the agenda and session scheduling boundary.
-
-List all sessions scheduled for an event
-- **list_event_speakers**: Resolves speaker names and biographies. Interacts with the speaker management and content boundary.
-
-List speakers associated with an event
 - **list_available_venues**: Resolves venue IDs, names, and address metadata. Touches the venue and logistics boundary.
 
 List venues configured in the account
+- **list_event_speakers**: Resolves speaker names and biographies. Interacts with the speaker management and content boundary.
+
+List speakers associated with an event
 - **search_events_by_filter**: Resolves matching event records. Touches the indexed event search boundary.
 
 Search for events using a filter string

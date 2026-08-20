@@ -36,24 +36,24 @@ Integrate **Culture Amp**, the leading employee experience platform, directly in
 - **create_employee_record**: Resolves newly created user IDs and verification status. Mutates the employee directory state.
 
 Add a new employee to the Culture Amp platform
-- **get_survey_details**: Resolves participant counts and survey settings. Touches the analytics data-source boundary.
-
-Get configuration and status for a specific survey
-- **get_employee_details**: Resolves full profile attributes. Touches the core employee information system.
-
-Get detailed profile for a specific employee
-- **list_cultureamp_accounts**: Resolves account IDs and organizational scopes. Touches the account management boundary.
-
-List accounts associated with your organization
-- **list_analytics_datasets**: Resolves dataset identifiers and types. Touches the reporting data-warehouse boundary.
-
-List available analytics datasets for reporting
 - **list_employees**: Resolves properties such as user ID, email, and employee status. Interacts with the employee directory boundary.
 
 List all employees in Culture Amp
 - **search_employees_by_name**: Resolves matched employee profiles. Touches the search and discovery boundary.
 
 Search for employees by name or email keyword
+- **get_employee_details**: Resolves full profile attributes. Touches the core employee information system.
+
+Get detailed profile for a specific employee
+- **get_survey_details**: Resolves participant counts and survey settings. Touches the analytics data-source boundary.
+
+Get configuration and status for a specific survey
+- **list_analytics_datasets**: Resolves dataset identifiers and types. Touches the reporting data-warehouse boundary.
+
+List available analytics datasets for reporting
+- **list_cultureamp_accounts**: Resolves account IDs and organizational scopes. Touches the account management boundary.
+
+List accounts associated with your organization
 - **list_demographic_fields**: Resolves demographic field names and identifiers. Touches the metadata and segmentation boundary.
 
 List demographics used for reporting segments

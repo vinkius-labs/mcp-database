@@ -32,30 +32,30 @@ Integrate the expansive architecture of **Constant Contact** seamlessly within y
 
 
 ## Available Tools (10)
-- **get_contact_details**: Resolves granular profile data including custom fields, mailing list memberships, and system-level metadata.
+- **create_contact**: Creates a new subscriber record with identity properties (email, name) and prepares it for list assignment.
 
-Get detailed profile for a specific contact
-- **get_campaign_stats**: Resolves engagement metrics including open rates, click counts, and delivery statistics.
-
-Get performance metrics (opens, clicks) for a campaign
+Add a new contact to your mailing list
 - **get_account_summary**: Resolves system-level usage statistics, plan limits, and core account identifiers.
 
 Get a high-level summary of account usage and limits
-- **list_email_campaigns**: Resolves campaign identity, including IDs, names, and current scheduling status.
+- **get_campaign_stats**: Resolves engagement metrics including open rates, click counts, and delivery statistics.
 
-List recent and active email marketing campaigns
+Get performance metrics (opens, clicks) for a campaign
+- **get_contact_details**: Resolves granular profile data including custom fields, mailing list memberships, and system-level metadata.
+
+Get detailed profile for a specific contact
 - **list_contacts**: Resolves contact identity properties including email addresses, names, and subscriber status across the marketing platform boundary.
 
 List all contacts in your Constant Contact account
+- **list_email_campaigns**: Resolves campaign identity, including IDs, names, and current scheduling status.
+
+List recent and active email marketing campaigns
 - **list_recent_campaigns**: Resolves identity and status for the most recently created campaigns.
 
 Quickly list the 5 most recent campaigns
 - **search_contacts_by_email**: Resolves contact profiles matching the specified email address across the system boundary.
 
 Search for a contact by their email address
-- **create_contact**: Creates a new subscriber record with identity properties (email, name) and prepares it for list assignment.
-
-Add a new contact to your mailing list
 - **get_campaign_details**: Resolves campaign configuration, including email content, subject lines, and sender profiles.
 
 Get full content and settings for a specific campaign

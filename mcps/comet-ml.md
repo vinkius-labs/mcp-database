@@ -36,11 +36,11 @@ Connect your **Comet ML** account to any AI agent and take full control of your 
 
 ## Available Tools (6)
 - **list_workspaces**: Identify bounded routing spaces inside the Headless Comet ML limits
-- **list_projects**: Perform structural extraction matching target Projects inside Comet
-- **list_experiments**: Discover explicit routing arrays structuring specific logged experiment limits
+- **get_experiment_params**: Inspect internal properties detailing API taxonomy types
 - **get_experiment**: Retrieve explicit Cloud logging tracing explicit Payload IDs
 - **get_experiment_metrics**: Execute static mapping targeting exactly defined numeric bounds natively
-- **get_experiment_params**: Inspect internal properties detailing API taxonomy types
+- **list_experiments**: Discover explicit routing arrays structuring specific logged experiment limits
+- **list_projects**: Perform structural extraction matching target Projects inside Comet
 
 
 ## 💬 Prompt Examples

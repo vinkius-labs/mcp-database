@@ -33,21 +33,21 @@ Connect your **Cloudbeds** property to any AI agent and run your hotel from a si
 - **get_housekeeping**: For housekeeping management.
 
 Get housekeeping status
-- **list_reservations**: Filter by status: confirmed, checked_in, checked_out, cancelled. Core front-desk tool.
-
-List hotel reservations
 - **get_dashboard**: The GM's morning briefing.
 
 Get property dashboard
-- **get_reservation**: Get reservation details
-- **search_guests**: Returns profile, contact, nationality, past stays, preferences, and lifetime value.
-
-Search hotel guests
 - **get_guest**: Get guest profile
+- **get_reservation**: Get reservation details
+- **list_reservations**: Filter by status: confirmed, checked_in, checked_out, cancelled. Core front-desk tool.
+
+List hotel reservations
 - **list_rooms**: List hotel rooms
 - **list_room_types**: With max occupancy, amenities, base rate, and room count.
 
 List room types
+- **search_guests**: Returns profile, contact, nationality, past stays, preferences, and lifetime value.
+
+Search hotel guests
 - **check_availability**: Essential for booking inquiries and revenue management.
 
 Check room availability

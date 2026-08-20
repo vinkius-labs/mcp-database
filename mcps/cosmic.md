@@ -36,15 +36,15 @@ Connect your **Cosmic** bucket to any AI agent and take full control of your AI-
 
 
 ## Available Tools (10)
+- **get_media_asset**: Retrieve the exact structural matching verifying explicit Media IDs
+- **get_single_object**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
+- **list_bucket_objects**: Identify bounded routing spaces inside the Headless Cosmic CMS Environments
+- **wipe_cms_object**: Irreversibly vaporize explicit App nodes dropping live Document rows
 - **get_schema_details**: Perform structural extraction of properties driving active Fields
 - **create_cms_object**: Provision a highly-available JSON Payload generating new Cosmic Drafts
 - **wipe_media_asset**: Dispatch an automated validation check routing explicit Disk removals
-- **wipe_cms_object**: Irreversibly vaporize explicit App nodes dropping live Document rows
-- **get_media_asset**: Retrieve the exact structural matching verifying explicit Media IDs
-- **get_single_object**: Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
 - **list_uploaded_media**: Inspect deep internal arrays mitigating specific Picture limits
 - **list_schema_types**: Enumerate explicitly attached structured rules exporting active Types
-- **list_bucket_objects**: Identify bounded routing spaces inside the Headless Cosmic CMS Environments
 - **patch_cms_object**: Mutate globalThis Web CRM boundaries substituting Draft values via ID
 
 

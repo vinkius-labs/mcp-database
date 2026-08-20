@@ -32,15 +32,15 @@ Empower your conversational AI with secure and instant read access to your **Con
 
 
 ## Available Tools (9)
-- **get_asset_details**: Get details for a specific asset
-- **get_content_type_details**: Get the schema for a specific content type
-- **search_entries**: Search for entries using a JSON query
-- **sync_content**: Retrieve delta of changes since last sync
 - **get_entry**: Get detailed content for a specific entry
 - **get_stack_summary**: Get high-level metadata about the current stack
 - **list_assets**: List all published assets
 - **list_content_types**: List all content types in the stack
+- **search_entries**: Search for entries using a JSON query
+- **sync_content**: Retrieve delta of changes since last sync
+- **get_content_type_details**: Get the schema for a specific content type
 - **list_entries**: List published entries for a specific content type
+- **get_asset_details**: Get details for a specific asset
 
 
 ## 💬 Prompt Examples

@@ -36,6 +36,12 @@ Integrate **CrowdTangle**, the public insights tool from Meta, directly into you
 - **get_account_leaderboard**: Resolves account rankings, total interactions, and average engagement rates.
 
 Get engagement leaderboard for accounts in your lists
+- **list_media_posts**: Resolves media URLs, content types (Photo, Video), and associated post captions.
+
+List recent posts that contain photos or videos
+- **list_recent_posts**: Resolves post content, platform identifiers (Facebook, Instagram, etc.), account names, and engagement metrics (likes, shares, comments).
+
+List recent social media posts tracked by CrowdTangle
 - **search_posts_by_keyword**: Resolves relevant posts, associated accounts, and comparative performance data.
 
 Search for posts across platforms using a keyword
@@ -45,12 +51,6 @@ Get full engagement details for a specific post ID
 - **list_monitored_lists**: Resolves list IDs, names, platform affiliations, and the number of accounts within each list.
 
 List all account lists you are tracking
-- **list_media_posts**: Resolves media URLs, content types (Photo, Video), and associated post captions.
-
-List recent posts that contain photos or videos
-- **list_recent_posts**: Resolves post content, platform identifiers (Facebook, Instagram, etc.), account names, and engagement metrics (likes, shares, comments).
-
-List recent social media posts tracked by CrowdTangle
 - **search_tracking_lists**: Resolves list metadata matching the specified title filter.
 
 Search for specific tracking lists by title

@@ -36,9 +36,15 @@ Connect your AI agent to the **Binance** public API and take full control of you
 
 
 ## Available Tools (7)
+- **compare_coins**: Accept comma-separated list: "BTC, ETH, SOL" or "bitcoin vs ethereum". At least 2 symbols required. Maximum 10 symbols. Ranks by 24h performance and assigns verdict (top_performer, outperforming, average, underperforming, worst_performer).
+
+Compare multiple cryptocurrencies side by side — price, 24h change, volume, and relative performance
 - **get_price**: Accept natural names: "bitcoin", "BTC", "eth", "SOLUSDT". Returns current price + 24h change percentage. For full stats (volume, high/low, trades), use crypto.ticker instead.
 
 Get the current price of any cryptocurrency in USDT with 24h trend
+- **get_volatility**: Fetches the last N candles and computes: amplitude %, trend direction, bull/bear ratio. Do NOT use for a simple price check — use crypto.price instead. Default: interval=1h, periods=24 (last 24 hours).
+
+Analyse the price volatility and trend of a cryptocurrency over a given number of candles
 - **get_ticker**: Accept natural names (e.g. "bitcoin", "BTC", "btcusdt"). For just a quick price, use crypto.price instead.
 
 Get full 24h statistics for any cryptocurrency trading pair on Binance
@@ -48,15 +54,9 @@ Get the top cryptocurrencies by trading volume on Binance, ranked by 24h USDT vo
 - **get_candles**: Supported intervals: 1m, 5m, 15m, 30m, 1h, 4h, 1d, 1w. Limit is 1–100 candles. Default to 30 daily candles (interval=1d, limit=30) unless the user specifies. Do NOT use for just a current price — use crypto.price for that.
 
 Get OHLCV candlestick chart data for a cryptocurrency pair on Binance
-- **compare_coins**: Accept comma-separated list: "BTC, ETH, SOL" or "bitcoin vs ethereum". At least 2 symbols required. Maximum 10 symbols. Ranks by 24h performance and assigns verdict (top_performer, outperforming, average, underperforming, worst_performer).
-
-Compare multiple cryptocurrencies side by side — price, 24h change, volume, and relative performance
 - **list_movers**: direction=gainers returns top positive movers, losers=negative movers, both=all sorted by absolute change. Filters to coins with at least $1M USDT volume to avoid low-liquidity noise. Limit is 1–20 per direction.
 
 Get the top gaining and/or losing cryptocurrencies on Binance in the last 24 hours
-- **get_volatility**: Fetches the last N candles and computes: amplitude %, trend direction, bull/bear ratio. Do NOT use for a simple price check — use crypto.price instead. Default: interval=1h, periods=24 (last 24 hours).
-
-Analyse the price volatility and trend of a cryptocurrency over a given number of candles
 
 
 ## 💬 Prompt Examples

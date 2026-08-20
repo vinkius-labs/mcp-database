@@ -36,16 +36,16 @@ Connect your **Craft.do** account to any AI agent and take full control of your 
 
 
 ## Available Tools (10)
+- **append_block**: Perform structural injection of properties driving new Blocks
+- **create_document**: Provision a highly-available JSON Payload generating new Document rows
+- **get_daily_note**: Retrieve elaborate explicit mapping properties limiting Daily Pages
 - **list_documents**: Identify bounded routing spaces inside the Craft workspace
 - **search_documents**: Execute static listing mapping structural Text queries via Search
-- **list_blocks**: Enumerate explicitly attached structured rules exporting active Blocks
-- **append_block**: Perform structural injection of properties driving new Blocks
 - **update_document**: Mutate globalThis Web Context boundaries substituting explicit Document values
+- **list_blocks**: Enumerate explicitly attached structured rules exporting active Blocks
 - **delete_document**: Irreversibly vaporize explicit App nodes dropping live Document rows
 - **get_document**: Retrieve explicit UX logging tracing explicit Document IDs limitlessly
-- **create_document**: Provision a highly-available JSON Payload generating new Document rows
 - **list_tasks**: Gather comprehensive mapped checklists limiting cross-workspace Tasks
-- **get_daily_note**: Retrieve elaborate explicit mapping properties limiting Daily Pages
 
 
 ## 💬 Prompt Examples
