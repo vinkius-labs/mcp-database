@@ -34,16 +34,16 @@ Connect your **Brightcove Video Cloud** account to any AI agent and orchestrate 
 
 
 ## Available Tools (10)
-- **get_folder_videos**: List videos within a specific folder
-- **get_video_count**: Get total number of videos in the account
-- **delete_video**: Delete a video permanently
 - **list_playlists**: List all playlists
 - **create_playlist**: Create a new playlist
 - **get_playlist**: Get details of a specific playlist
-- **get_video**: Get details of a specific video
 - **list_folders**: List all video folders
-- **list_videos**: List all videos in the account
 - **update_video**: Update metadata for a video
+- **delete_video**: Delete a video permanently
+- **get_folder_videos**: List videos within a specific folder
+- **get_video**: Get details of a specific video
+- **get_video_count**: Get total number of videos in the account
+- **list_videos**: List all videos in the account
 
 
 ## 💬 Prompt Examples

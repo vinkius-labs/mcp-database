@@ -33,24 +33,24 @@ Connect your **Bling ERP** API token to any AI agent and integrate Brazil's lead
 
 
 ## Available Tools (18)
-- **consultar_nfe**: Consultar detalhes de uma NF-e (itens, valores, situação)
 - **listar_contatos**: Listar todos os contatos (clientes, fornecedores, transportadoras) cadastrados no Bling
-- **consultar_contato**: Consultar dados completos de um contato pelo ID
-- **incluir_contato**: Cadastrar novo contato (cliente/fornecedor) no Bling
-- **listar_produtos**: Listar todos os produtos e serviços cadastrados no Bling
+- **categorias_produtos**: Listar as categorias de produtos cadastradas
 - **consultar_produto**: Consultar detalhes de um produto pelo ID
 - **incluir_produto**: Cadastrar novo produto no Bling
-- **categorias_produtos**: Listar as categorias de produtos cadastradas
 - **listar_pedidos_venda**: Listar todos os pedidos de venda do Bling
+- **listar_produtos**: Listar todos os produtos e serviços cadastrados no Bling
 - **consultar_pedido**: Consultar detalhes completos de um pedido de venda (itens, valores, situação)
-- **listar_pedidos_compra**: Listar todos os pedidos de compra
-- **listar_nfe**: Listar NF-e (Notas Fiscais Eletrônicas de Produto) emitidas
+- **contas_pagar**: Listar contas a pagar (fornecedores, despesas operacionais)
+- **contas_receber**: Listar contas a receber (cobranças, boletos, PIX)
 - **listar_nfce**: Listar NFC-e (Notas Fiscais de Consumidor Eletrônicas — cupom fiscal)
 - **listar_nfse**: Listar NFS-e (Notas Fiscais de Serviço Eletrônicas)
-- **contas_receber**: Listar contas a receber (cobranças, boletos, PIX)
-- **contas_pagar**: Listar contas a pagar (fornecedores, despesas operacionais)
+- **listar_pedidos_compra**: Listar todos os pedidos de compra
 - **categorias_financeiras**: Listar categorias de receitas e despesas (plano de contas)
+- **consultar_contato**: Consultar dados completos de um contato pelo ID
+- **consultar_nfe**: Consultar detalhes de uma NF-e (itens, valores, situação)
+- **incluir_contato**: Cadastrar novo contato (cliente/fornecedor) no Bling
 - **listar_depositos**: Listar depósitos/armazéns configurados para gestão de estoque
+- **listar_nfe**: Listar NF-e (Notas Fiscais Eletrônicas de Produto) emitidas
 
 
 ## 💬 Prompt Examples

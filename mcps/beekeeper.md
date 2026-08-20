@@ -42,8 +42,8 @@ Connect your **Beekeeper** account to any AI agent and streamline your internal 
 - **list_messages**: List messages in a conversation
 - **send_message**: Send a direct message to a user
 - **search_users**: Search for users by name or email
-- **list_streams**: List Beekeeper streams (channels)
 - **list_users**: List all Beekeeper users
+- **list_streams**: List Beekeeper streams (channels)
 
 
 ## 💬 Prompt Examples

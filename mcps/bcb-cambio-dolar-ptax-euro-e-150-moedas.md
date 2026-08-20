@@ -23,18 +23,18 @@ Official FX rates from Brazil.
 
 
 ## Available Tools (5)
-- **get_cotacao_dolar**: Inclui valores de compra e venda. O PTAX é a taxa de referência oficial do câmbio brasileiro, calculada a partir de consultas aos dealers de câmbio.
-
-Obter a cotação do dólar americano (PTAX) em uma data específica
-- **get_dolar_periodo**: Formato de data: MM-DD-YYYY. Máximo de 1 ano por consulta. Inclui valores de compra, venda e boletins (abertura, intermediário, fechamento).
-
-Obter a série histórica do dólar PTAX em um período
-- **get_cotacao_moeda**: Use listar_moedas para ver todos os 150+ códigos disponíveis. Inclui compra e venda.
-
-Obter cotação de qualquer moeda estrangeira pelo código (EUR, GBP, JPY, etc.)
 - **listar_moedas**: Inclui moedas exóticas como CLP, COP, MXN, THB, etc.
 
 Listar todas as moedas disponíveis no sistema PTAX do Banco Central
+- **get_cotacao_dolar**: Inclui valores de compra e venda. O PTAX é a taxa de referência oficial do câmbio brasileiro, calculada a partir de consultas aos dealers de câmbio.
+
+Obter a cotação do dólar americano (PTAX) em uma data específica
+- **get_cotacao_moeda**: Use listar_moedas para ver todos os 150+ códigos disponíveis. Inclui compra e venda.
+
+Obter cotação de qualquer moeda estrangeira pelo código (EUR, GBP, JPY, etc.)
+- **get_dolar_periodo**: Formato de data: MM-DD-YYYY. Máximo de 1 ano por consulta. Inclui valores de compra, venda e boletins (abertura, intermediário, fechamento).
+
+Obter a série histórica do dólar PTAX em um período
 - **get_dolar_sgs**: Séries: 1 (compra), 10813 (venda). Mais flexível que PTAX para séries longas. Formato de data: DD/MM/YYYY.
 
 Obter a série histórica do dólar comercial (compra/venda) via SGS

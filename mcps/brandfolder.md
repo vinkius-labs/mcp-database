@@ -36,17 +36,17 @@ Eliminate messy folder trees and manual downloads. Let the AI serve links to the
 
 ## Available Tools (10)
 - **create_cms_asset**: Inject a new digital asset (image, document, etc.) into a Brandfolder
-- **wipe_media_asset**: Permanently delete a digital asset from Brandfolder
-- **get_asset_details**: ` logic.
-
-Retrieve extensive metadata for a specific digital asset
 - **get_brandfolder_assets**: Search and retrieve digital assets within a specific Brandfolder
 - **list_asset_tags**: Retrieve the exact structural matching verifying Tags attached to an asset
 - **list_global_brandfolders**: Retrieve all Brandfolders (logical asset containers) in the workspace
 - **list_platform_organizations**: Retrieve all top-level tenant organizations accessible by your API key
-- **patch_cms_asset**: Update metadata attributes of an existing digital asset
-- **get_collection_assets**: Search and retrieve digital assets within a specific Collection
+- **wipe_media_asset**: Permanently delete a digital asset from Brandfolder
 - **list_asset_attachments**: Retrieve the actual CDN delivery URLs and attachments stored behind an Asset
+- **get_asset_details**: ` logic.
+
+Retrieve extensive metadata for a specific digital asset
+- **get_collection_assets**: Search and retrieve digital assets within a specific Collection
+- **patch_cms_asset**: Update metadata attributes of an existing digital asset
 
 
 ## 💬 Prompt Examples

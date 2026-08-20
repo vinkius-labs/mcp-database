@@ -35,18 +35,18 @@ Connect your **vCita** business management account to any AI agent and simplify 
 
 
 ## Available Tools (12)
-- **create_new_booking**: Schedule a service
-- **create_crm_client**: Add new customer
 - **get_api_status**: Get account status
 - **get_client_details**: Get client info
-- **list_staff_members**: List team users
 - **list_scheduled_appointments**: List bookings
-- **list_crm_clients**: List CRM customers
-- **list_price_estimates**: List client estimates
 - **list_client_invoices**: List all invoices
-- **list_recorded_payments**: List transactions
+- **list_crm_clients**: List CRM customers
 - **list_offered_services**: List bookable services
+- **list_price_estimates**: List client estimates
+- **list_recorded_payments**: List transactions
 - **cancel_appointment**: Cancel booking
+- **create_crm_client**: Add new customer
+- **create_new_booking**: Schedule a service
+- **list_staff_members**: List team users
 
 
 ## 💬 Prompt Examples

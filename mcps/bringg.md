@@ -38,18 +38,18 @@ No more jumping between dispatch dashboards. Your AI agent handles the logistics
 
 
 ## Available Tools (10)
-- **force_task_complete**: Force a delivery task status to COMPLETE (successfully delivered)
 - **create_delivery_task**: Create a new delivery task (order) in the Bringg Delivery Hub
-- **cancel_task_dispatch**: Cancel and permanently remove a delivery task from the dispatch schedule
 - **get_task_timeline**: Retrieve comprehensive details and live timeline for a specific task
 - **list_customer_crm**: List historical delivery recipients (customers) registered in Bringg
 - **list_fleet_drivers**: List all human drivers (users) within the Bringg fleet network
+- **update_task_details**: Modify existing delivery task details such as customer notes or dropoff info
+- **assign_driver_to_task**: Manually override optimization and assign a specific driver to a task
+- **cancel_task_dispatch**: Cancel and permanently remove a delivery task from the dispatch schedule
+- **force_task_complete**: Force a delivery task status to COMPLETE (successfully delivered)
+- **force_task_start**: Force a delivery task status to START (driver en route)
 - **list_active_tasks**: ` mapping the SaaS dashboard directly isolating pending deliveries.
 
 Retrieve a paginated list of active delivery tasks/orders
-- **force_task_start**: Force a delivery task status to START (driver en route)
-- **update_task_details**: Modify existing delivery task details such as customer notes or dropoff info
-- **assign_driver_to_task**: Manually override optimization and assign a specific driver to a task
 
 
 ## 💬 Prompt Examples

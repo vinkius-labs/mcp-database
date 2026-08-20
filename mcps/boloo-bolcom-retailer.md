@@ -36,6 +36,12 @@ Connect your **bol.com Retailer** account to any AI agent and orchestrate your e
 
 ## Available Tools (10)
 - **get_order**: Get details of a specific order
+- **cancel_order_item**: Requires a valid reason code.
+
+Cancel an order item
+- **get_offer**: Get details of a specific offer
+- **update_offer_price**: Update the price for an offer
+- **update_offer_stock**: Update the stock level for an offer
 - **get_product_details**: com catalog.
 
 Get globalThis product info by EAN
@@ -43,14 +49,8 @@ Get globalThis product info by EAN
 - **list_orders**: Default is OPEN.
 
 List all open or handled orders
-- **cancel_order_item**: Requires a valid reason code.
-
-Cancel an order item
-- **get_offer**: Get details of a specific offer
 - **list_subscriptions**: List event subscriptions (webhooks)
 - **ship_order_item**: Confirm shipment of an order item
-- **update_offer_price**: Update the price for an offer
-- **update_offer_stock**: Update the stock level for an offer
 
 
 ## 💬 Prompt Examples

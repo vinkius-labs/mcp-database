@@ -37,16 +37,16 @@ No more scraping websites or building custom integrations. Your AI acts as a ded
 ## Available Tools (10)
 - **get_also_viewed_products**: Get recommended or also-viewed products for a SKU
 - **get_category_by_id**: Get detailed child categories for a given category ID
+- **get_product_by_sku**: Get detailed specification for a specific product SKU
+- **get_trending_products**: Get trending and highly rated products
+- **list_categories**: List top-level Best Buy categories
+- **search_products**: Search for products in the Best Buy catalog
+- **get_store_details**: Get full details for a specific Best Buy store
+- **search_stores**: Search for Best Buy stores near a location
 - **get_open_box_products**: Can be optionally filtered by category ID.
 
 Fetch open-box discounted products
 - **get_product_reviews**: Fetch user reviews and ratings for a product
-- **get_product_by_sku**: Get detailed specification for a specific product SKU
-- **get_store_details**: Get full details for a specific Best Buy store
-- **get_trending_products**: Get trending and highly rated products
-- **list_categories**: List top-level Best Buy categories
-- **search_products**: Search for products in the Best Buy catalog
-- **search_stores**: Search for Best Buy stores near a location
 
 
 ## 💬 Prompt Examples

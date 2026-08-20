@@ -35,15 +35,15 @@ Connect your **Bounsel** CLM account to any AI agent and orchestrate your legal 
 
 
 ## Available Tools (9)
+- **get_account_info**: Get company account info
+- **get_template**: Get details of a specific template
+- **list_templates**: List all smart templates
+- **send_document**: Send a document for signature
 - **create_document**: Create a new document from a template
 - **delete_document**: Delete a document
-- **get_account_info**: Get company account info
 - **get_document**: Get details of a specific document
-- **get_template**: Get details of a specific template
 - **list_documents**: List all CLM documents
-- **list_templates**: List all smart templates
 - **list_users**: List all account users
-- **send_document**: Send a document for signature
 
 
 ## 💬 Prompt Examples

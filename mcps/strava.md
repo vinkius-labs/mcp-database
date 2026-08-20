@@ -34,18 +34,18 @@ Connect your **Strava** account to any AI agent to automate your athletic perfor
 
 
 ## Available Tools (12)
-- **create_manual_activity**: Add manual workout
-- **get_activity_details**: Get activity info
 - **get_athlete_profile**: Get your info
 - **get_route_details**: Get route info
-- **get_segment_details**: Get segment info
-- **get_athlete_statistics**: Check totals
 - **list_athlete_activities**: List your activities
 - **list_athlete_clubs**: List joined clubs
+- **create_manual_activity**: Add manual workout
+- **get_activity_details**: Get activity info
+- **get_athlete_statistics**: Check totals
+- **get_segment_details**: Get segment info
 - **list_athlete_routes**: List your routes
 - **list_starred_segments**: List favorite segments
-- **test_strava_auth**: Verify API key
 - **modify_activity**: Update workout info
+- **test_strava_auth**: Verify API key
 
 
 ## 💬 Prompt Examples

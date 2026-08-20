@@ -31,25 +31,25 @@ Connect your **Bookeo** account to any AI agent and manage your booking-based bu
 
 
 ## Available Tools (9)
-- **list_bookings**: Includes participant count, time, product, price, and payment status. Filter by date range.
+- **list_payments**: Filter by date for revenue analysis.
 
-List bookings and reservations
+List payments
 - **list_products**: Includes pricing, duration, and capacity.
 
 List bookable products
 - **search_customers**: Returns profile, booking history, and preferences.
 
 Search customers
-- **get_customer**: Get customer profile
-- **list_payments**: Filter by date for revenue analysis.
-
-List payments
 - **check_availability**: Essential for real-time booking assistance.
 
 Check available time slots
 - **get_business_info**: Get business info
-- **list_webhooks**: List active webhooks
 - **get_booking**: Get booking details
+- **get_customer**: Get customer profile
+- **list_bookings**: Includes participant count, time, product, price, and payment status. Filter by date range.
+
+List bookings and reservations
+- **list_webhooks**: List active webhooks
 
 
 ## 💬 Prompt Examples

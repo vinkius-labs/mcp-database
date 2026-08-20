@@ -35,14 +35,14 @@ Connect your **Browserbear (Roborabbit)** account to any AI agent and orchestrat
 
 
 ## Available Tools (10)
-- **create_task**: Create a new browser automation task
 - **delete_run**: Delete a task run record
-- **get_run**: Get status and results of a task run
-- **get_task**: Get details of a specific task
 - **get_account_usage**: Retrieve account usage statistics
+- **get_task**: Get details of a specific task
 - **list_projects**: List all projects in the account
 - **list_runs**: List all task runs
 - **list_tasks**: List all browser automation tasks
+- **create_task**: Create a new browser automation task
+- **get_run**: Get status and results of a task run
 - **run_task**: Trigger a run for a specific task
 - **take_screenshot**: Take a quick screenshot of a URL
 

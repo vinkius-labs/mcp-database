@@ -34,15 +34,15 @@ Connect your **Brivo Access** account to any AI agent and orchestrate your physi
 
 
 ## Available Tools (10)
-- **list_users**: List all people/users in the system
-- **get_account_info**: Retrieve core account/site information
-- **get_door_status**: Get live status of a door
 - **get_user**: Get details of a specific user
-- **list_doors**: List all access points (doors)
-- **list_credentials**: List all access credentials (cards, pass, etc)
 - **list_access_events**: List recent access events and alarms
 - **list_access_groups**: List all access groups
+- **list_credentials**: List all access credentials (cards, pass, etc)
 - **list_schedules**: List time schedules for access
+- **get_account_info**: Retrieve core account/site information
+- **get_door_status**: Get live status of a door
+- **list_doors**: List all access points (doors)
+- **list_users**: List all people/users in the system
 - **unlock_door**: Momentarily unlock a door
 
 

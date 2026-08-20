@@ -34,16 +34,16 @@ Connect your **BoldDesk** customer service account to any AI agent and orchestra
 
 
 ## Available Tools (10)
-- **add_ticket_note**: Add a private note to a ticket
-- **create_ticket**: Create a new support ticket
 - **get_agent**: Get details of a specific agent
 - **get_contact**: Get details of a specific contact
 - **get_ticket**: Get details of a specific ticket
 - **list_agents**: List all support agents
-- **list_contacts**: List all customer contacts
 - **list_tickets**: List all support tickets
-- **reply_to_ticket**: Add a public reply to a ticket
 - **update_ticket**: Update an existing ticket
+- **add_ticket_note**: Add a private note to a ticket
+- **create_ticket**: Create a new support ticket
+- **list_contacts**: List all customer contacts
+- **reply_to_ticket**: Add a public reply to a ticket
 
 
 ## 💬 Prompt Examples

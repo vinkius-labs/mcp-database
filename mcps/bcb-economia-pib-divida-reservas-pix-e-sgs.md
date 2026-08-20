@@ -23,21 +23,21 @@ Brazilian economic data.
 
 
 ## Available Tools (7)
-- **get_divida_pib**: Indicador fundamental de sustentabilidade fiscal. Série SGS: 4513.
-
-Obter a dívida líquida do setor público como % do PIB
 - **get_reservas**: Fundamental para avaliação da capacidade do país de honrar compromissos externos. Série SGS: 3546.
 
 Obter as reservas internacionais do Brasil em USD
+- **get_desemprego**: Indicador trimestral do mercado de trabalho brasileiro. Série SGS: 24369.
+
+Obter a taxa de desemprego do Brasil (PNAD)
 - **get_pib**: Este é o indicador IBC-Br (Índice de Atividade Econômica do Banco Central), uma proxy mensal do PIB. Série SGS: 4380.
 
 Obter o PIB mensal do Brasil — variação percentual
 - **get_balanca_comercial**: O Brasil é um grande exportador de commodities agrícolas, minério e petróleo. Série SGS: 22707.
 
 Obter o saldo da balança comercial brasileira
-- **get_desemprego**: Indicador trimestral do mercado de trabalho brasileiro. Série SGS: 24369.
+- **get_divida_pib**: Indicador fundamental de sustentabilidade fiscal. Série SGS: 4513.
 
-Obter a taxa de desemprego do Brasil (PNAD)
+Obter a dívida líquida do setor público como % do PIB
 - **get_pix_estatisticas**: O PIX é o sistema de pagamentos instantâneos do Brasil, operado pelo BCB. Lançado em novembro de 2020, já é o meio de pagamento mais usado no país.
 
 Obter estatísticas do PIX — volume e quantidade de transações

@@ -36,8 +36,8 @@ Connect your **BoxHero** account to any AI agent and orchestrate your inventory 
 - **list_locations**: List all storage locations
 - **list_transactions**: List inventory transactions (Stock In/Out)
 - **update_item**: Update an existing item
-- **create_transaction**: Create a new stock transaction (In/Out/Move)
 - **delete_item**: Delete an item
+- **create_transaction**: Create a new stock transaction (In/Out/Move)
 
 
 ## 💬 Prompt Examples
