@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your sales operations with **Fxiaoke** (纷
 
 
 ## Available Tools (10)
+- **create_lead**: Create a new Fxiaoke lead
 - **create_opportunity**: Create a new Fxiaoke opportunity
-- **get_approval_details**: Get approval details
-- **list_approvals**: List approval instances
 - **list_contacts**: List Fxiaoke contacts
 - **list_leads**: List Fxiaoke leads
+- **get_approval_details**: Get approval details
+- **list_approvals**: List approval instances
 - **list_opportunities**: List Fxiaoke opportunities
 - **list_sales_tasks**: List Fxiaoke sales tasks
 - **list_users**: List Fxiaoke users
-- **create_lead**: Create a new Fxiaoke lead
 - **list_accounts**: List Fxiaoke accounts
 
 

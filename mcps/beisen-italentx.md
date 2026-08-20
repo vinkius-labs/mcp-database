@@ -36,14 +36,14 @@ Empower your AI agent to orchestrate your HR and talent management with **Beisen
 
 ## Available Tools (10)
 - **get_employee**: Get employee details
-- **get_payroll_summary**: Get payroll summary
-- **list_departments**: List organization departments
-- **list_employees**: List all employees
 - **list_positions**: List job positions
-- **get_attendance_records**: Get attendance records
 - **get_org_summary**: Get organization activity summary
 - **list_interviews**: List recruitment interviews
 - **list_leave_requests**: List leave requests
+- **get_attendance_records**: Get attendance records
+- **get_payroll_summary**: Get payroll summary
+- **list_departments**: List organization departments
+- **list_employees**: List all employees
 - **list_recruitment_applications**: List recruitment applications
 
 

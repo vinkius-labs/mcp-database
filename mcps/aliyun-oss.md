@@ -35,20 +35,20 @@ Empower your AI agent to orchestrate your cloud storage and asset management wit
 
 
 ## Available Tools (10)
-- **copy_object**: Uses x-oss-copy-source header.
-
-Copy an object within the bucket
 - **delete_object**: Delete an object from OSS
-- **download_object_text**: Best for text/JSON files.
-
-Download an object as text
 - **get_bucket_acl**: Get bucket access control list
-- **get_bucket_info**: Get bucket configuration
 - **get_bucket_location**: g., oss-cn-hangzhou) where your bucket is located.
 
 Get bucket region
 - **get_bucket_statistics**: Get bucket storage statistics
 - **get_object_metadata**: Get object metadata (HEAD)
+- **copy_object**: Uses x-oss-copy-source header.
+
+Copy an object within the bucket
+- **download_object_text**: Best for text/JSON files.
+
+Download an object as text
+- **get_bucket_info**: Get bucket configuration
 - **list_objects**: Use prefix to filter by path, marker for pagination.
 
 List objects in the bucket

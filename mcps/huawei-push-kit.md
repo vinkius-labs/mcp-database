@@ -39,12 +39,12 @@ Empower your AI agent to orchestrate your device communication and mobile engage
 - **push_to_condition**: Example: "'topicA' in topics && 'topicB' in topics".
 
 Send push notification based on topic conditions
+- **subscribe_to_topic**: Subscribe device tokens to a topic
+- **unsubscribe_from_topic**: Unsubscribe device tokens from a topic
 - **push_to_token**: Requires the device push token.
 
 Send push notification to a device token
 - **push_to_topic**: Send push notification to a topic
-- **subscribe_to_topic**: Subscribe device tokens to a topic
-- **unsubscribe_from_topic**: Unsubscribe device tokens from a topic
 
 
 ## 💬 Prompt Examples

@@ -36,6 +36,12 @@ Connect to **EODHD Financial Data** and access professional-grade stock market d
 
 
 ## Available Tools (10)
+- **get_multi_price**: Provide comma-separated symbols (e.g. "AAPL.US,MSFT.US,GOOGL.US"). Returns price, change and change percent for each.
+
+Get real-time prices for multiple tickers
+- **get_splits**: Returns split date and split ratio (e.g. "2:1" for a 2-for-1 split). Symbol format: TICKER.EXCHANGE.
+
+Get stock split history for a stock
 - **get_exchange_symbols**: Returns symbol codes, names, country and exchange info. Common exchanges: "US" (NYSE/NASDAQ), "XETRA" (Germany), "LSE" (London), "TO" (Tokyo), "PA" (Paris).
 
 Get all symbols for a specific exchange
@@ -45,15 +51,9 @@ Get fundamental data for a stock
 - **get_historical_splits**: Provide comma-separated symbols. Returns split dates and ratios for all matching tickers.
 
 Get historical stock splits for multiple tickers
-- **get_multi_price**: Provide comma-separated symbols (e.g. "AAPL.US,MSFT.US,GOOGL.US"). Returns price, change and change percent for each.
-
-Get real-time prices for multiple tickers
 - **get_realtime_price**: Symbol format: TICKER.EXCHANGE (e.g. "AAPL.US" for Apple, "MSFT.US" for Microsoft, "BMW.XETRA" for BMW). Returns current price, open, high, low, close, volume, previous close, change and change percent.
 
 Get real-time stock price
-- **get_splits**: Returns split date and split ratio (e.g. "2:1" for a 2-for-1 split). Symbol format: TICKER.EXCHANGE.
-
-Get stock split history for a stock
 - **get_dividends**: Returns ex-dividend date, payment date, record date, declaration date and dividend amount per share. Symbol format: TICKER.EXCHANGE. Supports date range filtering.
 
 Get dividend history for a stock

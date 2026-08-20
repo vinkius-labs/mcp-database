@@ -35,16 +35,16 @@ Integrate your AI agent with **Clover**, the leading point-of-sale (POS) system.
 
 
 ## Available Tools (10)
-- **get_merchant_info**: Retrieve basic information about the Clover merchant
 - **get_order_details**: Retrieve detailed information for a specific order
 - **list_inventory_categories**: List inventory categories
-- **list_customers**: Retrieve a list of customers associated with the merchant
 - **list_device_access_tokens**: List access tokens associated with merchant devices
-- **list_employees**: Retrieve a list of merchant employees
 - **list_inventory_items**: List all items in the merchant inventory
+- **list_tax_rates**: Retrieve sales tax rates configured for the merchant
+- **get_merchant_info**: Retrieve basic information about the Clover merchant
+- **list_customers**: Retrieve a list of customers associated with the merchant
+- **list_employees**: Retrieve a list of merchant employees
 - **list_orders**: Retrieve a list of orders for the merchant
 - **list_payments**: Retrieve a list of processed payments
-- **list_tax_rates**: Retrieve sales tax rates configured for the merchant
 
 
 ## 💬 Prompt Examples

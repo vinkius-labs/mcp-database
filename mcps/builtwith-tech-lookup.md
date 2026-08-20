@@ -34,30 +34,30 @@ Equip your AI agent with the industry standard for website technology profiling 
 
 
 ## Available Tools (8)
-- **get_free_domain_profile**: Does not consume premium credits.
-
-Get basic technology categories for a domain
 - **get_tech_domain_lists**: Uses the Lists API.
 
 Get lists of domains using a specific technology
-- **get_domain_relationships**: Uses the rv2 Relationships API.
-
-Get infrastructure relationships for a domain
-- **get_domain_keywords**: Uses the Keywords API.
-
-Get keyword profile for a domain
-- **get_domain_company_info**: Uses the Company API.
-
-Get company information for a domain
-- **get_tech_trends**: g., Shopify, React). Uses the v6 Trends API.
-
-Get usage trends for a technology
 - **get_domain_trust**: Uses the Trust API.
 
 Get trust indicators for a domain
+- **get_tech_trends**: g., Shopify, React). Uses the v6 Trends API.
+
+Get usage trends for a technology
 - **lookup_domain_tech**: Uses the v22 Domain API.
 
 Lookup complete technology stack for a domain
+- **get_domain_company_info**: Uses the Company API.
+
+Get company information for a domain
+- **get_domain_keywords**: Uses the Keywords API.
+
+Get keyword profile for a domain
+- **get_domain_relationships**: Uses the rv2 Relationships API.
+
+Get infrastructure relationships for a domain
+- **get_free_domain_profile**: Does not consume premium credits.
+
+Get basic technology categories for a domain
 
 
 ## 💬 Prompt Examples

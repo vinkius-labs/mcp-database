@@ -35,18 +35,18 @@ Connect your AI agent to **Kelley Blue Book (KBB)**, the most trusted resource f
 
 
 ## Available Tools (10)
-- **get_vehicle_valuation**: Retrieve the estimated market value for a specific vehicle
-- **get_vehicle_details**: Get comprehensive configuration and pricing details for a vehicle
-- **list_makes_by_year**: List all vehicle makes for a specific year
+- **get_market_trends**: Retrieve current market trends and pricing shifts
 - **list_models_by_make**: List all vehicle models for a specific year and make
+- **search_vehicles**: Search for vehicles by make, model, and year
+- **get_vehicle_details**: Get comprehensive configuration and pricing details for a vehicle
+- **get_vehicle_valuation**: Retrieve the estimated market value for a specific vehicle
+- **list_makes_by_year**: List all vehicle makes for a specific year
 - **list_trim_styles**: g., Sedan, SUV) for the trim.
 
 List specific body styles for a vehicle trim
 - **list_vehicle_trims**: List all available trims for a specific vehicle model
 - **list_available_years**: Retrieve a list of all years available in the KBB database
-- **search_vehicles**: Search for vehicles by make, model, and year
 - **get_vehicle_by_vin**: Lookup vehicle information using a VIN
-- **get_market_trends**: Retrieve current market trends and pricing shifts
 
 
 ## 💬 Prompt Examples

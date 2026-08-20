@@ -36,15 +36,15 @@ Empower your AI agent to orchestrate your entire handmade and vintage marketplac
 
 ## Available Tools (10)
 - **get_receipt**: Get details for a specific receipt
-- **get_shop**: Get details for a specific Etsy shop
 - **list_shop_listings**: List listings for a specific shop
 - **list_shop_receipts**: List receipts (orders) for a shop
-- **list_shop_reviews**: List reviews for a shop
 - **list_shop_sections**: List sections for a shop
 - **search_active_listings**: Search for active listings on Etsy
 - **update_listing**: Update an Etsy listing
 - **get_listing**: Get details for a specific listing
 - **get_me**: Get authenticated user and application info from Etsy
+- **get_shop**: Get details for a specific Etsy shop
+- **list_shop_reviews**: List reviews for a shop
 
 
 ## 💬 Prompt Examples

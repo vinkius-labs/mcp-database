@@ -36,16 +36,16 @@ Empower your AI agent to orchestrate your entire observability stack with **Guan
 
 ## Available Tools (10)
 - **get_event**: Get event details
-- **get_monitor**: Get monitor details
 - **get_workspace**: Get workspace information
 - **list_access_keys**: List workspace access keys
-- **list_dashboards**: List all dashboards
 - **list_events**: ) from the workspace.
 
 List observability events
 - **list_log_sources**: List log data sources
 - **query_data**: Query Guance data (DQL)
 - **get_billing**: Get billing usage
+- **get_monitor**: Get monitor details
+- **list_dashboards**: List all dashboards
 - **list_monitors**: List all monitors
 
 

@@ -37,10 +37,10 @@ Empower your AI agent to orchestrate your entire tax compliance and financial au
 ## Available Tools (4)
 - **list_tax_codes**: List all tax codes supported by Avalara
 - **check_api_status**: Check if the Avalara AvaTax service is operational
+- **resolve_tax_address**: Resolve and validate a physical address for tax purposes
 - **create_tax_transaction**: Provide line items, addresses, and customer code as JSON string.
 
 Create a new tax transaction to calculate sales tax
-- **resolve_tax_address**: Resolve and validate a physical address for tax purposes
 
 
 ## 💬 Prompt Examples

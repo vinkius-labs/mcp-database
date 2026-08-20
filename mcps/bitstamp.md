@@ -35,12 +35,12 @@ This integration uses Bitstamp's latest V2 API with high-security HMAC-SHA256 si
 
 
 ## Available Tools (7)
-- **cancel_order**: Cancel an open order
-- **get_balance**: Get account balances for all currencies
-- **get_open_orders**: Get all currently open orders
 - **get_order_book**: Get the current order book for a currency pair
 - **get_ticker**: Get current market ticker for a currency pair
 - **list_trading_pairs**: List all available trading pairs and their info
+- **cancel_order**: Cancel an open order
+- **get_balance**: Get account balances for all currencies
+- **get_open_orders**: Get all currently open orders
 - **get_user_transactions**: Get personal transaction history
 
 

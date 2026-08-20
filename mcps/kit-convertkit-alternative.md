@@ -36,17 +36,17 @@ Empower your AI agent to orchestrate your entire creator ecosystem with **Kit** 
 
 ## Available Tools (12)
 - **create_tag**: Create a new tag
-- **get_account**: Get Kit account details
-- **list_forms**: List all Kit forms
 - **list_sequences**: List all Kit email sequences
 - **list_subscribers**: List Kit subscribers
 - **list_tags**: List all Kit tags
 - **remove_tag_from_subscriber**: Remove a tag from a subscriber
+- **get_subscriber**: Get details for a specific subscriber
+- **unsubscribe_subscriber**: Unsubscribe a subscriber
+- **get_account**: Get Kit account details
+- **list_forms**: List all Kit forms
 - **subscribe_to_form**: Subscribe an email to a form
 - **tag_subscriber**: Add a tag to a subscriber
 - **update_subscriber**: Update a Kit subscriber
-- **get_subscriber**: Get details for a specific subscriber
-- **unsubscribe_subscriber**: Unsubscribe a subscriber
 
 
 ## 💬 Prompt Examples

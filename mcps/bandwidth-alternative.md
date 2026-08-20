@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your entire cloud communication infrastruct
 
 
 ## Available Tools (9)
-- **get_account_info**: Get Bandwidth account details
-- **get_call_state**: Get details for a specific call
 - **list_applications**: List Bandwidth applications
-- **list_calls**: List recent voice calls
 - **list_conferences**: List active conferences
 - **list_messages**: List recent Bandwidth messages
-- **list_phone_numbers**: List phone numbers in service
 - **make_call**: Start an outbound voice call
 - **send_sms**: Send an SMS message
+- **get_account_info**: Get Bandwidth account details
+- **get_call_state**: Get details for a specific call
+- **list_calls**: List recent voice calls
+- **list_phone_numbers**: List phone numbers in service
 
 
 ## 💬 Prompt Examples

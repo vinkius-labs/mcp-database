@@ -37,30 +37,30 @@ No more navigating the Google Books website to find book details or reading list
 
 
 ## Available Tools (8)
-- **get_book**: Requires the Google Books volume ID (found from search results).
-
-Get detailed info for a specific book by volume ID
-- **get_bookshelf**: Returns the shelf title, description, volume count, accessibility and self-link. Shelf IDs are numeric (e.g. "0", "1", "2") or named (e.g. "favorites", "purchased").
-
-Get a specific public bookshelf
 - **get_my_bookshelf_volumes**: Each volume includes title, authors, publisher, description and image links. Requires an OAuth 2.0 token. Optionally set maxResults (1-40).
 
 List books in the authenticated user's bookshelf
 - **get_my_bookshelves**: Each bookshelf includes its ID, title, volume count and accessibility. Requires an OAuth 2.0 token (the API key alone is not sufficient for private shelves).
 
 List the authenticated user's bookshelves
-- **get_volume_by_isbn**: Returns the book details including title, authors, publisher, description, page count and image links. Useful for quickly finding a specific edition when you have the ISBN. This is equivalent to using search_books with the isbn: operator but returns a single result directly.
-
-Look up a book by its ISBN number
 - **list_bookshelf_volumes**: Each volume includes title, authors, publisher, description, page count, categories and image links. Useful for browsing curated reading lists. Optionally set maxResults (1-40).
 
 List books in a public bookshelf
-- **list_bookshelves**: Each bookshelf includes its ID, title, volume count, accessibility (public/private) and description. Useful for discovering reading lists and curated collections.
-
-List public bookshelves for a Google Books user
 - **search_books**: Supports powerful search operators: intitle: (search in title only), inauthor: (search by author), inpublisher:, subject:, isbn:, lccn:, oclc:. Use quotes for exact phrase matching ("the great gatsby") and - to exclude terms. Optionally set maxResults (1-40), startIndex for pagination, filter (free-ebooks, paid-ebooks), language restriction, order by (relevance, newest) and print type (books, magazines).
 
 Search for books on Google Books
+- **get_book**: Requires the Google Books volume ID (found from search results).
+
+Get detailed info for a specific book by volume ID
+- **get_bookshelf**: Returns the shelf title, description, volume count, accessibility and self-link. Shelf IDs are numeric (e.g. "0", "1", "2") or named (e.g. "favorites", "purchased").
+
+Get a specific public bookshelf
+- **get_volume_by_isbn**: Returns the book details including title, authors, publisher, description, page count and image links. Useful for quickly finding a specific edition when you have the ISBN. This is equivalent to using search_books with the isbn: operator but returns a single result directly.
+
+Look up a book by its ISBN number
+- **list_bookshelves**: Each bookshelf includes its ID, title, volume count, accessibility (public/private) and description. Useful for discovering reading lists and curated collections.
+
+List public bookshelves for a Google Books user
 
 
 ## 💬 Prompt Examples

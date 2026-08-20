@@ -37,12 +37,12 @@ Connect to **Bybit** and access real-time cryptocurrency market data through nat
 
 
 ## Available Tools (10)
-- **get_index_price_kline**: Index price is the composite price from multiple exchanges. Categories: "linear", "inverse".
-
-Get index price candlestick data
 - **get_instruments**: Categories: "spot", "linear", "inverse", "option". Filter by symbol or base coin.
 
 Get trading instruments (pairs/contracts) info
+- **get_index_price_kline**: Index price is the composite price from multiple exchanges. Categories: "linear", "inverse".
+
+Get index price candlestick data
 - **get_kline**: Intervals: 1,3,5,15,30,60,120,240,360,720 (minutes), D (daily), W (weekly), M (monthly). Use start and end timestamps (milliseconds) for historical data. Limit: 1-1000 candles. Categories: "spot", "linear", "inverse".
 
 Get candlestick (kline) data for technical analysis
@@ -52,12 +52,12 @@ Get mark price candlestick data for derivatives
 - **get_open_interest**: Open interest shows total number of open positions. Intervals: 5min, 15min, 30min, 1h, 4h, 1d. Categories: "linear", "inverse".
 
 Get open interest history for a derivatives contract
-- **get_tickers**: Categories: "spot" (spot trading), "linear" (USDT/USDC perpetual & futures), "inverse" (inverse perpetual & futures), "option" (options). Filter by specific symbol (e.g. "BTCUSDT") or base coin (e.g. "BTC").
-
-Get real-time market tickers (prices) for any category
 - **get_orderbook**: Returns price levels and quantities. Limit: 1-200 (spot), 1-500 (linear/inverse/option). Useful for analyzing market depth and liquidity.
 
 Get the current orderbook (bids and asks) for a symbol
+- **get_tickers**: Categories: "spot" (spot trading), "linear" (USDT/USDC perpetual & futures), "inverse" (inverse perpetual & futures), "option" (options). Filter by specific symbol (e.g. "BTCUSDT") or base coin (e.g. "BTC").
+
+Get real-time market tickers (prices) for any category
 - **get_recent_trades**: Returns trade price, size, side (Buy/Sell), timestamp and trade ID. Useful for seeing current market activity and order flow. Limit: 1-1000 trades.
 
 Get recent executed trades for a symbol
