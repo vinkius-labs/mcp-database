@@ -36,18 +36,18 @@ Connect your **Mosaicapp** account to any AI agent and take full control of your
 
 
 ## Available Tools (12)
-- **list_cost_rates**: List explicitly tracked unit limits mapping internal cost rates
-- **list_members**: List all explicit team members mapped within Mosaic
 - **get_member**: Get exact details parsing a given Mosaic team member
-- **list_work_plans**: List scheduled organizational work plans mapping resources
+- **list_budgets**: List simulated or structured budget estimates mapping projects
+- **list_cost_rates**: List explicitly tracked unit limits mapping internal cost rates
+- **list_rate_groups**: List defined structured arrays mapping generalized rate groups
+- **list_members**: List all explicit team members mapped within Mosaic
 - **list_calendar_events**: List tracked explicitly mapped temporal calendar events
 - **list_check_ins**: List registered physical log check-ins bounded per member
-- **list_budgets**: List simulated or structured budget estimates mapping projects
 - **list_projects**: List high-level literal projects tracking organizational initiatives
+- **list_work_plans**: List scheduled organizational work plans mapping resources
 - **list_bill_rates**: List organizational literal configuration tracking external bill rates
-- **list_rate_groups**: List defined structured arrays mapping generalized rate groups
-- **list_roles**: List explicit categorical domains classifying member project roles
 - **list_currencies**: List team literal currencies matching globalThis models
+- **list_roles**: List explicit categorical domains classifying member project roles
 
 
 ## 💬 Prompt Examples

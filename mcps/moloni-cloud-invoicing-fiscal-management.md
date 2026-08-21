@@ -36,26 +36,26 @@ Connect your **Moloni** account to any AI agent and take full control of your ce
 
 
 ## Available Tools (20)
-- **list_products**: Listar todos os artigos e stock de serviços Moloni
+- **create_customer**: Registar formalmente novo cliente no Moloni
+- **list_countries**: Listar referências ISO IDs e jurisdições fiscais
 - **list_customers**: Listar todos os clientes registados na empresa Moloni
+- **list_products**: Listar todos os artigos e stock de serviços Moloni
+- **update_customer**: Atualizar registo de dados fiscais num cliente existente
 - **list_receipts**: Listar RCs (Recibos líquidos de regularização liquidados)
 - **get_customer_by_vat**: Pesquisar exato cliente pelo seu NIF fiscal
-- **create_customer**: Registar formalmente novo cliente no Moloni
-- **update_customer**: Atualizar registo de dados fiscais num cliente existente
 - **get_product**: Obter pormenores unitários e ID de taxas de um serviço
 - **create_product**: Criar registo de novo artigo faturável base
+- **list_invoices**: Listar faturas simples já finalizadas ou abertas AT
 - **list_product_categories**: Listar hierarquia de categorias guardando os produtos
 - **list_product_stocks**: Consultar movimentos brutos auditáveis do stock
-- **list_invoices**: Listar faturas simples já finalizadas ou abertas AT
 - **get_invoice**: Obter detalhe intrínseco (items e IVAs) duma exata Fatura
 - **list_invoice_receipts**: Listar FRV (Fatura-Recibo equivalentes portugueses)
 - **list_credit_notes**: Listar NCs legais (Notas de Crédito estornos)
 - **list_delivery_notes**: Listar GTs puras (Guias de Transporte físicas)
 - **list_estimates**: Listar orçamentos simulados (Proformas/Orçamentos)
-- **list_taxes**: Listar impostos e isenções IVA ativos
-- **list_payment_methods**: Listar IDs de pagamento associados à AT
 - **list_measurement_units**: Listar unidades métricas configuradas formalmente
-- **list_countries**: Listar referências ISO IDs e jurisdições fiscais
+- **list_payment_methods**: Listar IDs de pagamento associados à AT
+- **list_taxes**: Listar impostos e isenções IVA ativos
 
 
 ## 💬 Prompt Examples

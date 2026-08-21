@@ -36,17 +36,17 @@ Connect your **Nyckel** machine learning account to your AI agent and leverage p
 
 
 ## Available Tools (10)
-- **annotate_ml_sample**: Assign label to a sample
 - **create_ml_sample**: Add a training sample
 - **delete_ml_function**: Delete an ML function
 - **get_ml_function**: Get specific function info
 - **get_account_info**: Get current account info
-- **invoke_ml_function**: Classify data using a function
 - **list_ml_functions**: ) in your account.
 
 List all ML functions
-- **list_ml_labels**: List available labels
 - **list_ml_samples**: List training samples
+- **annotate_ml_sample**: Assign label to a sample
+- **invoke_ml_function**: Classify data using a function
+- **list_ml_labels**: List available labels
 - **semantic_search**: Perform semantic search
 
 

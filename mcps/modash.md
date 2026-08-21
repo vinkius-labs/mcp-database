@@ -28,17 +28,17 @@ Connect **Modash** to your AI agent to discover the perfect creators for your br
 
 
 ## Available Tools (11)
-- **get_instagram_report**: Get deep analytics for an Instagram profile
 - **get_raw_profile**: Get real-time, unfiltered profile data
+- **get_instagram_report**: Get deep analytics for an Instagram profile
+- **get_tiktok_report**: Get analytics for a TikTok profile
+- **get_youtube_report**: Get analytics for a YouTube channel
 - **list_interests**: Search for interest IDs
 - **list_languages**: Search for language IDs
 - **list_locations**: Search for location IDs
-- **get_tiktok_report**: Get analytics for a TikTok profile
-- **get_youtube_report**: Get analytics for a YouTube channel
-- **list_brands**: Search for brand IDs
-- **search_instagram**: Search for Instagram influencers
 - **search_tiktok**: Search for TikTok influencers
 - **search_youtube**: Search for YouTube channels
+- **list_brands**: Search for brand IDs
+- **search_instagram**: Search for Instagram influencers
 
 
 ## 💬 Prompt Examples

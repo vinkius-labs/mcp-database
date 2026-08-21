@@ -35,16 +35,16 @@ Connect your **Nimble CRM** account to your AI agent and streamline your relatio
 
 
 ## Available Tools (10)
-- **add_note_to_contact**: Add a note to a contact
 - **get_activity**: Get specific activity details
 - **get_contact**: Get specific contact details
+- **add_note_to_contact**: Add a note to a contact
 - **get_deal**: Get specific deal info
 - **get_me**: Get current user info
 - **list_activities**: List tasks and events
 - **list_deals**: List Nimble deals
-- **list_contacts**: List Nimble contacts
 - **list_pipelines**: List deal pipelines
 - **search_contacts**: Search for contacts
+- **list_contacts**: List Nimble contacts
 
 
 ## 💬 Prompt Examples

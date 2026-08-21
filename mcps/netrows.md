@@ -56,15 +56,15 @@ Get static information and details for a specific airport
 - **get_flight_details**: Returns departure and arrival airports with full metadata (IATA/ICAO codes, terminal, gate), scheduled and actual times for departure and arrival, aircraft registration and type, airline/operator details, current flight status, and tracking coordinates if airborne. Critical for passenger travel updates, airline operations coordination, and flight tracking dashboards. AI agents should reference this when users request detailed status for a known flight, including gate assignments, timing comparisons, and aircraft information.
 
 Get complete details for a specific flight
+- **get_flight_schedule**: Returns all scheduled flights with airline/operator, flight numbers, aircraft types, departure and arrival times, frequency of service, and days of operation. Essential for route planning, travel itinerary preparation, schedule analysis, and aviation market research. AI agents should reference this when users ask "what flights fly from JFK to LAX", "show me the schedule between ORD and DFW", or need to plan travel between specific airport pairs with comprehensive scheduling options.
+
+Get scheduled flights between two airports
 - **search_aircraft**: Returns all registered aircraft in the operator fleet with registration numbers, aircraft types (manufacturer and model), ages, and current operational status. Essential for fleet analysis, aviation industry research, competitor intelligence, and operator profile generation. AI agents use this when users ask "show me all United Airlines aircraft", "what planes does Delta operate", or need to analyze fleet composition for a specific aviation operator.
 
 Search for all aircraft operated by a specific airline or company
 - **search_airports**: Returns all airports (major international, regional, and general aviation) associated with the queried city including IATA/ICAO codes, full names, locations, distances from city center, and airport types. Essential for travel planning, multi-airport city analysis, alternate airport identification, and geographic aviation research. AI agents use this when users ask "what airports serve Chicago", "find airports in London", or need to identify all airports in a metropolitan area for comprehensive flight searches.
 
 Search for airports by city name or location
-- **get_flight_schedule**: Returns all scheduled flights with airline/operator, flight numbers, aircraft types, departure and arrival times, frequency of service, and days of operation. Essential for route planning, travel itinerary preparation, schedule analysis, and aviation market research. AI agents should reference this when users ask "what flights fly from JFK to LAX", "show me the schedule between ORD and DFW", or need to plan travel between specific airport pairs with comprehensive scheduling options.
-
-Get scheduled flights between two airports
 - **search_flights**: The query can be a flight number (e.g., "UAL123"), callsign, or origin-destination airport pair. Returns complete flight identification, airline/operator, aircraft type, departure and arrival airports with IATA/ICAO codes, scheduled and actual times, current position coordinates (latitude, longitude), altitude in feet, ground speed in knots, heading, and flight status (en-route, landed, diverted, cancelled). Essential for real-time flight tracking, passenger pickup coordination, logistics planning, and aviation operations monitoring. AI agents should use this when users ask "where is flight X", "what flights are flying from A to B", or need to track specific flights by number or route.
 
 Search for active and recent flights by flight number, callsign, or route

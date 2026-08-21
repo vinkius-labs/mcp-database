@@ -36,18 +36,18 @@ Connect your **Nifty** account to any AI agent and take full control of your aut
 
 
 ## Available Tools (10)
-- **create_task**: Create a new task in Nifty
-- **list_project_docs**: List documents in a project
 - **get_project**: Get detailed boundaries for a specific project
 - **list_members**: List registered workspace members
 - **list_milestones**: List project milestones
 - **list_portfolios**: List project portfolios
+- **list_project_docs**: List documents in a project
+- **list_tasks**: List tickets within a Nifty project
+- **list_time_logs**: List project time tracking logs
+- **create_task**: Create a new task in Nifty
+- **get_task_details**: Get specific task metadata
 - **list_projects**: Required to determine project_id values.
 
 List Nifty workspaces and active projects
-- **list_tasks**: List tickets within a Nifty project
-- **list_time_logs**: List project time tracking logs
-- **get_task_details**: Get specific task metadata
 
 
 ## 💬 Prompt Examples

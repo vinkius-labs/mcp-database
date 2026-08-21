@@ -34,38 +34,38 @@ Connect your **Nuclino** account to your AI agent and seamlessly interact with y
 
 
 ## Available Tools (12)
-- **list_teams**: Use this as the entry point to discover available root organizational unit IDs traversing down into workspaces.
-
-List all organizational Teams the authenticated user belongs to
-- **list_workspaces**: Returns internal workspace UUIDs essential for scoping later item queries.
-
-List all isolated Workspaces mapped within a specific Team
-- **list_items**: Used to enumerate top-level document UUIDs, titles, and creation metadata natively spanning a specific Workspace layer.
-
-List all standard knowledge items (pages) in a Workspace
-- **get_item**: Retrieve the exact Markdown payload and configuration of an Item
 - **create_item**: Triggers real-time replication creating permanent Wiki documentation.
 
 Write a brand new knowledge Item / Page into a Workspace
-- **update_item**: Alters the sync tree immediately appending new wiki edits.
-
-Overwrite active partial Markdown states inside a listed Item
-- **delete_item**: Always confirm with the user heavily before destroying knowledge.
-
-Irreversibly delete a structural Nuclino Item
-- **search_items**: Use to uncover unknown UUIDs.
-
-Execute an indexed semantic search globally across a Team
 - **list_collections**: Used to trace the document relationship graph paths visually within a target Workspace.
 
 List Collections (grouping directories) segmenting a Workspace
 - **list_fields**: Used to understand standard taxonomy dimensions applicable against Items.
 
 Map customizable structured property fields globally binding a Team
-- **list_users**: Enumerate human identities attached globally onto a Team
 - **list_files**: Exposes pure URL bindings mapping binary data records back to object storage.
 
 List physical attachments explicitly bolted onto an Item
+- **list_items**: Used to enumerate top-level document UUIDs, titles, and creation metadata natively spanning a specific Workspace layer.
+
+List all standard knowledge items (pages) in a Workspace
+- **list_teams**: Use this as the entry point to discover available root organizational unit IDs traversing down into workspaces.
+
+List all organizational Teams the authenticated user belongs to
+- **list_users**: Enumerate human identities attached globally onto a Team
+- **search_items**: Use to uncover unknown UUIDs.
+
+Execute an indexed semantic search globally across a Team
+- **list_workspaces**: Returns internal workspace UUIDs essential for scoping later item queries.
+
+List all isolated Workspaces mapped within a specific Team
+- **delete_item**: Always confirm with the user heavily before destroying knowledge.
+
+Irreversibly delete a structural Nuclino Item
+- **get_item**: Retrieve the exact Markdown payload and configuration of an Item
+- **update_item**: Alters the sync tree immediately appending new wiki edits.
+
+Overwrite active partial Markdown states inside a listed Item
 
 
 ## 💬 Prompt Examples

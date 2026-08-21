@@ -28,11 +28,11 @@ Connect your **Middesk** account to automate Business Identity (KYB) and complia
 
 
 ## Available Tools (9)
-- **get_document**: Get a specific document
 - **get_tax_registration**: Get a specific tax registration
 - **list_businesses**: List all businesses
 - **list_documents**: List documents for a business
 - **list_tax_registrations**: List tax registrations
+- **get_document**: Get a specific document
 - **autocomplete_identity**: Autocomplete business identity
 - **create_business**: Requires legal name.
 

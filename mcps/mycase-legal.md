@@ -76,27 +76,6 @@ EXAMPLES:
 - "Open a new criminal defense matter for client 456" → call with title="State v. Johnson", client_id="456", practice_area="Criminal Defense"
 
 Create a new case/matter in MyCase
-- **create_mycase_time_entry**: USE WHEN:
-- User wants to log time spent on a case
-- User needs to record billable hours
-- User asks to "add time entry" or "log hours"
-
-PARAMETERS:
-- matter_id (REQUIRED): Matter/case ID this time entry belongs to
-- description (REQUIRED): Description of the work performed
-- duration_minutes (REQUIRED): Duration in minutes
-- billable (OPTIONAL): Whether this is billable — true (default) or false
-- rate (OPTIONAL): Hourly rate for this entry
-
-EXAMPLES:
-- "Log 2 hours of research for case 123" → call with matter_id="123", description="Legal research", duration_minutes=120
-- "Add 30 minute phone call with client" → call with matter_id="123", description="Phone call with client", duration_minutes=30
-
-Create a new time entry for billing
-- **get_client_mycase_cases**: Useful for understanding a client's full legal portfolio.
-
-Get all cases/matters for a specific client
-- **get_mycase_contact**: Get detailed information for a specific contact/client
 - **get_mycase_invoice**: Get detailed information for a specific invoice
 - **get_mycase_matter**: Get detailed information for a specific case/matter
 - **list_mycase_calendar_events**: List calendar events for the law firm
@@ -117,7 +96,6 @@ EXAMPLES:
 
 List all contacts/clients in MyCase
 - **list_mycase_documents**: List documents for a specific case/matter
-- **list_mycase_invoices**: List invoices for the law firm
 - **list_mycase_matters**: Essential for case management and tracking.
 
 USE WHEN:
@@ -139,9 +117,31 @@ EXAMPLES:
 - "List all matters" → call with no params
 
 List all cases/matters in MyCase legal practice management
+- **search_mycase_matters**: Search cases/matters by keyword query
+- **create_mycase_time_entry**: USE WHEN:
+- User wants to log time spent on a case
+- User needs to record billable hours
+- User asks to "add time entry" or "log hours"
+
+PARAMETERS:
+- matter_id (REQUIRED): Matter/case ID this time entry belongs to
+- description (REQUIRED): Description of the work performed
+- duration_minutes (REQUIRED): Duration in minutes
+- billable (OPTIONAL): Whether this is billable — true (default) or false
+- rate (OPTIONAL): Hourly rate for this entry
+
+EXAMPLES:
+- "Log 2 hours of research for case 123" → call with matter_id="123", description="Legal research", duration_minutes=120
+- "Add 30 minute phone call with client" → call with matter_id="123", description="Phone call with client", duration_minutes=30
+
+Create a new time entry for billing
+- **get_client_mycase_cases**: Useful for understanding a client's full legal portfolio.
+
+Get all cases/matters for a specific client
+- **get_mycase_contact**: Get detailed information for a specific contact/client
+- **list_mycase_invoices**: List invoices for the law firm
 - **list_mycase_payments**: List payments received by the law firm
 - **list_mycase_time_entries**: List time entries for a specific case/matter
-- **search_mycase_matters**: Search cases/matters by keyword query
 - **update_mycase_matter**: Update an existing case/matter in MyCase
 
 

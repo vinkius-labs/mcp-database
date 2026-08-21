@@ -36,15 +36,15 @@ Connect your **Monnify** merchant account to your AI agent and manage your Niger
 
 
 ## Available Tools (10)
-- **get_account_details**: Get reserved account details
-- **list_settlements**: List merchant settlements
 - **get_transaction**: Get transaction details
-- **init_payment**: Initialize a payment transaction
-- **list_reserved_accounts**: List reserved virtual accounts
 - **list_banks**: List supported Nigerian banks
+- **list_reserved_accounts**: List reserved virtual accounts
+- **list_settlements**: List merchant settlements
+- **get_account_details**: Get reserved account details
+- **init_payment**: Initialize a payment transaction
+- **list_disbursements**: List bank transfers (disbursements)
 - **list_monnify_invoices**: List Monnify digital invoices
 - **list_transactions**: List Monnify transactions
-- **list_disbursements**: List bank transfers (disbursements)
 - **reserve_account**: Create a reserved virtual account
 
 

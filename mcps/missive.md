@@ -29,19 +29,19 @@ Connect **Missive** to your AI agent and manage your team's communication effici
 
 ## Available Tools (10)
 - **create_contact**: Create a new contact
-- **create_draft**: Create an email draft
 - **create_post**: Can also trigger actions like closing, assigning, or labeling.
 
 Create a post (comment or action) in a conversation
-- **get_conversation**: Get details for a specific conversation
 - **get_me**: Get current Missive user details
 - **list_contacts**: List Missive contacts
-- **list_conversations**: A mailbox filter is required (e.g., "inbox", "all", "assigned", "closed").
-
-List conversations from a specific mailbox
 - **list_labels**: List Missive labels
 - **list_messages**: List messages in a conversation
 - **send_draft**: Send a prepared draft
+- **create_draft**: Create an email draft
+- **get_conversation**: Get details for a specific conversation
+- **list_conversations**: A mailbox filter is required (e.g., "inbox", "all", "assigned", "closed").
+
+List conversations from a specific mailbox
 
 
 ## 💬 Prompt Examples

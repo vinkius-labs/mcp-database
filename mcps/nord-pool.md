@@ -40,9 +40,15 @@ Your AI agent becomes a real-time energy market analyst — no spreadsheets, no 
 
 
 ## Available Tools (10)
-- **get_transmission_capacities**: Requires both source and destination area codes (e.g. NO1 to SE3). ATC represents the maximum commercial power transfer capacity allocated for the day-ahead market coupling. Optionally filter by delivery date (YYYY-MM-DD).
+- **get_scheduled_physical_flows**: These flows represent the planned physical cross-border electricity transfers, including both commercial exchanges and loop flows. Requires source and destination area codes. Optionally filter by delivery date.
 
-Retrieve Available Transmission Capacities (ATC) between two delivery areas
+Retrieve scheduled physical flows between two delivery areas
+- **get_auction_flows**: Requires both source and destination area codes. Flows reflect the scheduled energy exchange determined during the day-ahead market coupling process. Optionally filter by delivery date (YYYY-MM-DD).
+
+Retrieve auction flows between two delivery areas
+- **get_auction_volumes**: Use standard bidding zone codes separated by commas. Optionally filter by delivery date (YYYY-MM-DD). Volumes indicate the total cleared energy quantity per Market Time Unit in each area.
+
+Retrieve day-ahead auction volumes for specified delivery areas
 - **get_consumption_forecasts**: These forecasts represent the expected electricity consumption (load) for each Market Time Unit within a delivery area. Use standard bidding zone codes separated by commas. Optionally filter by delivery date (YYYY-MM-DD). Consumption forecasts are essential for production planning, trading strategy, and grid balancing decisions.
 
 Retrieve power consumption forecasts by delivery area
@@ -52,9 +58,9 @@ Retrieve day-ahead auction prices for specified delivery areas
 - **get_flow_based_constraints**: Flow-based constraints define the allowable power transfer limits in flow-based market coupling regions (e.g. Core, Nordic). The domain parameter specifies which regional coupling zone to query. Optionally filter by delivery date (YYYY-MM-DD).
 
 Retrieve flow-based constraints for a market coupling domain
-- **get_scheduled_physical_flows**: These flows represent the planned physical cross-border electricity transfers, including both commercial exchanges and loop flows. Requires source and destination area codes. Optionally filter by delivery date.
+- **get_transmission_capacities**: Requires both source and destination area codes (e.g. NO1 to SE3). ATC represents the maximum commercial power transfer capacity allocated for the day-ahead market coupling. Optionally filter by delivery date (YYYY-MM-DD).
 
-Retrieve scheduled physical flows between two delivery areas
+Retrieve Available Transmission Capacities (ATC) between two delivery areas
 - **get_user_subscriptions**: Use this tool to verify which data products (Day-Ahead, Intraday, Power System Data, etc.) are available to the current credentials before attempting to query specific endpoints.
 
 List the active API data subscriptions for the authenticated account
@@ -64,12 +70,6 @@ Retrieve yearly aggregated auction prices for a delivery area
 - **get_yearly_volumes**: Useful for analyzing annual energy consumption and trading patterns within a specific bidding zone.
 
 Retrieve yearly aggregated auction volumes for a delivery area
-- **get_auction_volumes**: Use standard bidding zone codes separated by commas. Optionally filter by delivery date (YYYY-MM-DD). Volumes indicate the total cleared energy quantity per Market Time Unit in each area.
-
-Retrieve day-ahead auction volumes for specified delivery areas
-- **get_auction_flows**: Requires both source and destination area codes. Flows reflect the scheduled energy exchange determined during the day-ahead market coupling process. Optionally filter by delivery date (YYYY-MM-DD).
-
-Retrieve auction flows between two delivery areas
 
 
 ## 💬 Prompt Examples
