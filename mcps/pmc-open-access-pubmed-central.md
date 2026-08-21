@@ -35,9 +35,6 @@ Connect to the **PubMed Central (PMC) Open Access Subset** to empower your AI ag
 
 ## Available Tools (8)
 - **oai_identify**: Identify the PMC OAI-PMH repository
-- **oai_list_identifiers**: Use metadataPrefix (e.g., pmc, pmc_fm, oai_dc).
-
-List OAI identifiers for PMC articles
 - **oai_list_metadata_formats**: Optionally filter by a specific identifier.
 
 List available metadata formats in PMC OAI-PMH
@@ -45,6 +42,9 @@ List available metadata formats in PMC OAI-PMH
 - **convert_ids**: Returns JSON.
 
 Convert between PMCIDs, PMIDs, DOIs, and Manuscript IDs
+- **oai_list_identifiers**: Use metadataPrefix (e.g., pmc, pmc_fm, oai_dc).
+
+List OAI identifiers for PMC articles
 - **export_citation**: Export formatted citations for PubMed and PMC articles
 - **oa_discover**: ) for PMC articles.
 

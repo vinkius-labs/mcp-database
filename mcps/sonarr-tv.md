@@ -34,26 +34,26 @@ Connect your **Sonarr** instance to any AI agent to take full control of your TV
 
 
 ## Available Tools (18)
-- **add_series**: Adds a new series to the library
 - **delete_episode_file**: Deletes an episode file from disk
 - **delete_queue_item**: Removes an item from the queue
 - **delete_series**: Removes a series from the library
 - **list_series**: Returns all series in the library
 - **get_episode_file**: Returns a specific episode file
-- **get_episode**: Returns a specific episode by its ID
 - **get_health**: Returns any health check warnings or errors
-- **get_history**: Access the history of grabbed and imported episodes
 - **get_queue**: Returns all items in the download queue
 - **get_series**: Returns a specific series by its ID
 - **get_system_status**: Returns system information (version, OS, paths)
 - **list_commands**: Returns all currently running commands
 - **list_episode_files**: Returns all episode files for a series
+- **update_episode**: Updates an episode (e.g., marking it as monitored)
+- **update_series**: Updates an existing series
+- **add_series**: Adds a new series to the library
+- **get_episode**: Returns a specific episode by its ID
+- **get_history**: Access the history of grabbed and imported episodes
 - **list_episodes**: Returns all episodes for a specific series
 - **start_command**: g., SeriesSearch, RescanSeries, RefreshSeries).
 
 Starts a new command
-- **update_episode**: Updates an episode (e.g., marking it as monitored)
-- **update_series**: Updates an existing series
 
 
 ## 💬 Prompt Examples

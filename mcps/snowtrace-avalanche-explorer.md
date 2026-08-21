@@ -34,27 +34,27 @@ Connect to the **Snowtrace** explorer and bring real-time Avalanche blockchain d
 
 
 ## Available Tools (21)
-- **get_avax_balance**: Get AVAX Balance for a Single Address
-- **check_verify_status**: Check Verification Status
-- **get_avax_last_price**: Get AVAX Last Price
-- **get_avax_total_supply**: Get Total Supply of AVAX
-- **get_contract_abi**: Get Contract ABI
-- **get_block_countdown**: Get Estimated Block Countdown
-- **get_block_number_by_time**: Get Block Number by Timestamp
-- **get_block_reward**: Get Block Rewards
-- **get_logs**: Get Logs
-- **get_contract_source_code**: Get Contract Source Code
-- **get_avax_balance_multi**: Get AVAX Balance for Multiple Addresses
-- **get_mined_blocks**: Get Blocks Mined by Address
 - **check_contract_execution_status**: Check Contract Execution Status
 - **check_transaction_receipt_status**: Check Transaction Receipt Status
-- **get_token_balance**: Get ERC-20 Token Balance for Address
-- **get_erc721_transfers**: Get ERC-721 (NFT) Token Transfer Events
-- **get_token_total_supply**: Get ERC-20 Token Total Supply
+- **get_avax_balance**: Get AVAX Balance for a Single Address
+- **get_avax_total_supply**: Get Total Supply of AVAX
+- **get_block_countdown**: Get Estimated Block Countdown
+- **get_block_number_by_time**: Get Block Number by Timestamp
+- **get_contract_source_code**: Get Contract Source Code
 - **get_erc20_transfers**: Get ERC-20 Token Transfer Events
 - **get_internal_transactions**: Get Internal Transactions
-- **get_normal_transactions**: Get Normal Transactions by Address
+- **get_logs**: Get Logs
+- **get_mined_blocks**: Get Blocks Mined by Address
 - **verify_source_code**: Verify Source Code
+- **check_verify_status**: Check Verification Status
+- **get_avax_last_price**: Get AVAX Last Price
+- **get_contract_abi**: Get Contract ABI
+- **get_block_reward**: Get Block Rewards
+- **get_avax_balance_multi**: Get AVAX Balance for Multiple Addresses
+- **get_erc721_transfers**: Get ERC-721 (NFT) Token Transfer Events
+- **get_token_balance**: Get ERC-20 Token Balance for Address
+- **get_token_total_supply**: Get ERC-20 Token Total Supply
+- **get_normal_transactions**: Get Normal Transactions by Address
 
 
 ## 💬 Prompt Examples

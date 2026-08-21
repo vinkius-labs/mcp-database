@@ -34,9 +34,9 @@ Connect your **MiiTel** account to any AI agent to streamline your voice intelli
 
 ## Available Tools (4)
 - **create_meeting_record**: Create a meeting record via Incoming Webhook
+- **create_call_record**: Create a call record via Incoming Webhook
 - **create_queue**: Create a new CSV generation queue
 - **list_queues**: List CSV generation queues
-- **create_call_record**: Create a call record via Incoming Webhook
 
 
 ## 💬 Prompt Examples

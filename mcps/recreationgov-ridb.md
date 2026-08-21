@@ -35,20 +35,20 @@ Connect to the **Recreation Information Database (RIDB)** and explore thousands 
 
 
 ## Available Tools (10)
-- **list_recarea_media**: Retrieve media for a recreation area
 - **list_recareas**: List recreation areas
-- **get_activity**: Get details for a specific recreation activity
 - **get_facility**: Get details for a specific recreation facility
 - **get_organization**: Get details for a specific organization
 - **get_recarea**: Get details for a specific recreation area
 - **list_activities**: g., Hiking, Camping).
 
 List supported recreation activities
+- **list_facility_media**: Retrieve media for a facility
+- **list_organizations**: List federal agencies managing resources
+- **get_activity**: Get details for a specific recreation activity
 - **list_facilities**: ) with optional filtering.
 
 Retrieve information about recreation facilities
-- **list_facility_media**: Retrieve media for a facility
-- **list_organizations**: List federal agencies managing resources
+- **list_recarea_media**: Retrieve media for a recreation area
 
 
 ## 💬 Prompt Examples

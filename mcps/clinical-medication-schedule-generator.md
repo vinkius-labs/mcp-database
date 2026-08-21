@@ -19,14 +19,14 @@ Autonomous health agents demand uncompromising accuracy. When standard LLMs atte
 
 
 ## Available Tools (4)
-- **check_dose_overlap**: Crucial for detecting drug interactions.
-
-Cross-references two medication schedules to detect simultaneous or dangerously close dosing times
-- **calculate_missed_dose_strategy**: Provides a deterministic adjustment strategy when a patient is late taking their medication
 - **calculate_next_dose**: Calculates the exact time for the next medication dose and returns a countdown or overdue status
+- **calculate_missed_dose_strategy**: Provides a deterministic adjustment strategy when a patient is late taking their medication
 - **calculate_medication_schedule**: Requires a start time (ISO string), hourly interval, and duration in days. Output handles all timeline cross-overs flawlessly.
 
 Generates a rigorous multi-day medication schedule based on a starting time and hourly intervals, guaranteeing mathematical precision for health-tech workflows
+- **check_dose_overlap**: Crucial for detecting drug interactions.
+
+Cross-references two medication schedules to detect simultaneous or dangerously close dosing times
 
 
 ## 💬 Prompt Examples

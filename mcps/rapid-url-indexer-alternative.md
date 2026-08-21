@@ -34,12 +34,12 @@ Connect **Rapid URL Indexer** to your AI agent to take full control of your SEO 
 
 
 ## Available Tools (5)
-- **get_credit_balance**: Check your current available credit balance
 - **get_project_report**: Returns 425 Too Early if not ready.
 
 Download the indexing status report for every URL in a project
 - **get_project_status**: Retrieve detailed status and progress for a specific project
 - **list_projects**: List all projects for the authenticated user
+- **get_credit_balance**: Check your current available credit balance
 - **submit_project**: Apex mode costs 3 credits per URL and includes up to 3 indexing attempts.
 
 Submit a new project with a batch of URLs for indexing

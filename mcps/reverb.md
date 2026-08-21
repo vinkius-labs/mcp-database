@@ -34,17 +34,12 @@ Connect your **Reverb** seller account to any AI agent to manage your musical ge
 
 
 ## Available Tools (30)
-- **add_to_sale**: Add listings to a sale
 - **bump_listing**: Bump a listing
 - **create_listing**: Requires a JSON payload matching Reverb listing schema.
 
 Create a new Reverb listing
 - **delete_draft**: Delete a draft listing
 - **enable_vacation_mode**: Enable vacation mode for the shop
-- **end_listing**: End an active Reverb listing
-- **find_listings**: Can filter by SKU or state.
-
-Find seller listings
 - **get_bump_info**: Get bump info for a listing
 - **get_feedback_received**: Get received feedback
 - **get_feedback_sent**: Get sent feedback
@@ -52,22 +47,27 @@ Find seller listings
 - **get_order_payment**: Get payment information for an order
 - **get_payment_methods**: Get eligible payment methods
 - **get_payout_line_items**: Get line items for a payout
-- **get_vacation_status**: Get vacation mode status
 - **list_conversations**: List messages and conversations
 - **list_drafts**: List all draft listings
-- **list_payouts**: List earnings payouts
 - **mark_order_picked_up**: Mark an order as picked up
 - **publish_listing**: Publish a draft Reverb listing
 - **remove_bump**: Remove a bump from a listing
+- **disable_vacation_mode**: Disable vacation mode for the shop
+- **leave_feedback**: Leave feedback for a buyer
+- **reply_to_conversation**: Reply to a conversation
+- **retrieve_orders**: Retrieve selling orders
+- **add_to_sale**: Add listings to a sale
+- **delete_listing_image**: Delete an image from a listing
+- **end_listing**: End an active Reverb listing
+- **find_listings**: Can filter by SKU or state.
+
+Find seller listings
+- **get_vacation_status**: Get vacation mode status
+- **list_payouts**: List earnings payouts
+- **remove_from_sale**: Remove listings from a sale
 - **ship_order**: Mark an order as shipped
 - **update_listing**: Update an existing Reverb listing
 - **view_seller_sales**: View seller sales
-- **delete_listing_image**: Delete an image from a listing
-- **disable_vacation_mode**: Disable vacation mode for the shop
-- **leave_feedback**: Leave feedback for a buyer
-- **remove_from_sale**: Remove listings from a sale
-- **reply_to_conversation**: Reply to a conversation
-- **retrieve_orders**: Retrieve selling orders
 
 
 ## 💬 Prompt Examples

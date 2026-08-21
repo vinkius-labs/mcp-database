@@ -34,14 +34,14 @@ Connect **QuickReply.ai** to your AI agent and orchestrate your WhatsApp marketi
 
 
 ## Available Tools (5)
-- **trigger_journey_event**: This is the recommended way to trigger messages.
-
-Trigger a journey via Webhook Data Source
 - **fetch_campaign_stats**: Note: This API will sunset in June 2026.
 
 Fetch campaign messages stats
-- **send_session_message**: Send a free-form session message
 - **send_template**: Send a pre-approved WhatsApp template
+- **trigger_journey_event**: This is the recommended way to trigger messages.
+
+Trigger a journey via Webhook Data Source
+- **send_session_message**: Send a free-form session message
 - **trigger_drip_campaign**: Note: This API will sunset in June 2026.
 
 Trigger a specific drip campaign for a user

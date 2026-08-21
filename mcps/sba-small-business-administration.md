@@ -33,9 +33,9 @@ Connect to the **U.S. Small Business Administration (SBA)** data services to ver
 
 
 ## Available Tools (3)
+- **check_small_business_status**: Check if a business qualifies as small under SBA regulations
 - **get_all_geographic_links**: Get all geographic links from the SBA system
 - **get_city_county_links**: Get geographic links filtered by city or county
-- **check_small_business_status**: Check if a business qualifies as small under SBA regulations
 
 
 ## 💬 Prompt Examples

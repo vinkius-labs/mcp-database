@@ -34,32 +34,32 @@ Connect your **Printify** account to any AI agent and manage your entire print-o
 
 
 ## Available Tools (22)
-- **get_shipping**: Get shipping costs and handling times
 - **update_product**: Update an existing product
 - **update_webhook**: Update an existing webhook
-- **delete_product**: This is a destructive action.
-
-Delete a product from a shop
-- **delete_webhook**: Delete a webhook
 - **disconnect_shop**: This is a destructive action.
 
 Disconnect a shop from the Printify account
 - **get_blueprint**: Get details for a specific blueprint
 - **get_order**: Get details for a specific order
 - **get_product**: Get details for a specific product
-- **list_blueprints**: List all available blueprints in the Printify catalog
 - **list_orders**: List orders in a shop
 - **list_print_providers**: List print providers for a specific blueprint
 - **list_products**: List products in a shop
+- **list_shops**: List all shops in the Printify account
+- **list_webhooks**: List webhooks in a shop
+- **send_order_to_production**: Send a pending order to production
 - **calculate_shipping_cost**: Calculate shipping costs for an order
-- **create_webhook**: Create a new webhook
 - **create_order**: Create a new order
 - **create_product**: Create a new product in a shop
-- **list_shops**: List all shops in the Printify account
+- **create_webhook**: Create a new webhook
+- **delete_product**: This is a destructive action.
+
+Delete a product from a shop
+- **delete_webhook**: Delete a webhook
+- **get_shipping**: Get shipping costs and handling times
+- **list_blueprints**: List all available blueprints in the Printify catalog
 - **list_variants**: List variants for a blueprint and print provider
-- **list_webhooks**: List webhooks in a shop
 - **publish_product**: Publish a product to a connected store
-- **send_order_to_production**: Send a pending order to production
 
 
 ## 💬 Prompt Examples

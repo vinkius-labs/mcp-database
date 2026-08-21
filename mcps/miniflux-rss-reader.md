@@ -33,9 +33,7 @@ Connect your **Miniflux** instance to any AI agent and transform how you consume
 
 
 ## Available Tools (46)
-- **create_category**: Create a category
 - **create_feed**: Create a new feed
-- **create_user**: Create a user (Admin only)
 - **delete_api_key**: Delete an API key
 - **delete_category**: Delete a category
 - **delete_feed**: Remove a feed
@@ -43,42 +41,44 @@ Connect your **Miniflux** instance to any AI agent and transform how you consume
 - **discover_subscriptions**: Discover subscriptions from a URL
 - **fetch_entry_content**: Fetch original article content
 - **flush_history**: Flush history
-- **get_entry**: Get a single entry
-- **get_feed_icon**: Get feed icon by feed ID
 - **get_feed**: Get a specific feed
+- **get_feed_icon**: Get feed icon by feed ID
 - **get_icon**: Get feed icon by icon ID
 - **get_integrations_status**: Check if any third-party integrations are enabled
 - **get_me**: Get current user information
-- **get_user**: Get a specific user (Admin only)
 - **get_version**: Get application version and build info
 - **healthcheck**: Healthcheck (checks DB)
-- **import_entry**: Import an entry manually
-- **import_opml**: OPML Import
-- **list_category_entries**: Get entries for a specific category
-- **list_entries**: Get entries with filters
 - **list_feed_entries**: Get entries for a specific feed
 - **list_feeds**: Get all feeds
 - **liveness**: Liveness probe
-- **mark_category_as_read**: Mark all entries in a category as read
 - **mark_feed_as_read**: Mark all entries of a feed as read
 - **mark_user_as_read**: Mark all entries for a user as read
 - **readiness**: Readiness probe
 - **create_api_key**: Create a new API key
 - **get_feed_counters**: Fetch unread and read counters
 - **list_categories**: Get all categories
-- **list_users**: Get all users (Admin only)
-- **refresh_all_feeds**: Refresh all feeds (background)
-- **refresh_category**: Refresh all feeds in a category
 - **refresh_feed**: Refresh a specific feed (synchronous)
 - **save_entry**: Save entry to third-party services
 - **toggle_entry_bookmark**: Toggle entry bookmark (starred)
-- **update_category**: Update a category
 - **update_entries_status**: Update status of multiple entries (e.g., mark as read)
-- **update_entry**: Update entry title or content
-- **update_feed**: Update a feed
 - **update_user**: Update a user (Admin only)
 - **export_opml**: OPML Export
 - **list_api_keys**: List API keys
+- **create_category**: Create a category
+- **create_user**: Create a user (Admin only)
+- **get_entry**: Get a single entry
+- **get_user**: Get a specific user (Admin only)
+- **import_entry**: Import an entry manually
+- **import_opml**: OPML Import
+- **list_category_entries**: Get entries for a specific category
+- **list_entries**: Get entries with filters
+- **list_users**: Get all users (Admin only)
+- **mark_category_as_read**: Mark all entries in a category as read
+- **refresh_all_feeds**: Refresh all feeds (background)
+- **refresh_category**: Refresh all feeds in a category
+- **update_category**: Update a category
+- **update_entry**: Update entry title or content
+- **update_feed**: Update a feed
 
 
 ## 💬 Prompt Examples

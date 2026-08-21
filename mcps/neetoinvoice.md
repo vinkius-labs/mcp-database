@@ -34,6 +34,15 @@ Connect your **NeetoInvoice** account to any AI agent to streamline your billing
 
 
 ## Available Tools (20)
+- **remove_project_user**: Remove a user from a project
+- **remove_team_members**: Remove team members from the workspace
+- **update_client**: Update an existing client
+- **update_project_user**: Update a project user role
+- **create_client**: Requires name, currency, and status.
+
+Create a new client in NeetoInvoice
+- **add_team_members**: Add team members to the workspace
+- **add_project_user**: Add a user to a project
 - **create_project**: Create a new project
 - **create_recipient**: Create a recipient for a client
 - **create_time_entry**: Create a new time entry
@@ -44,18 +53,9 @@ Connect your **NeetoInvoice** account to any AI agent to streamline your billing
 - **list_project_users**: List users assigned to a project
 - **list_team_members**: List all team members in the workspace
 - **list_time_entries**: List time entries with optional filters
-- **remove_project_user**: Remove a user from a project
-- **remove_team_members**: Remove team members from the workspace
-- **update_client**: Update an existing client
 - **update_project**: Update an existing project
-- **update_project_user**: Update a project user role
 - **update_recipient**: Update a client recipient
-- **create_client**: Requires name, currency, and status.
-
-Create a new client in NeetoInvoice
 - **update_team_member**: Update a team member
-- **add_project_user**: Add a user to a project
-- **add_team_members**: Add team members to the workspace
 
 
 ## 💬 Prompt Examples

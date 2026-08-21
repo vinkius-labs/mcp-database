@@ -39,18 +39,18 @@ Connect your AI agent to the **REST Countries** database to retrieve instant, ac
 Retrieve information about all countries
 - **search_by_capital**: Search by capital city
 - **search_by_code**: Search by country code
-- **search_by_codes**: Search for multiple countries by their codes
-- **search_by_currency**: Search by currency code or name
-- **search_by_demonym**: Search by demonym
-- **filter_by_independent**: Filter by independence status
-- **search_by_language**: Search by language code or name
-- **search_by_name**: Search by country name
-- **filter_by_region**: g., Africa, Americas, Asia, Europe, Oceania).
-
-Filter countries by region
 - **filter_by_subregion**: g., Northern Europe, South America).
 
 Filter countries by subregion
+- **search_by_currency**: Search by currency code or name
+- **search_by_demonym**: Search by demonym
+- **search_by_language**: Search by language code or name
+- **filter_by_independent**: Filter by independence status
+- **filter_by_region**: g., Africa, Americas, Asia, Europe, Oceania).
+
+Filter countries by region
+- **search_by_codes**: Search for multiple countries by their codes
+- **search_by_name**: Search by country name
 - **search_by_translation**: Search by translation name
 
 
