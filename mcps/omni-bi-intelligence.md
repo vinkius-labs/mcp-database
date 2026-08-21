@@ -36,15 +36,15 @@ Connect your **Omni BI** (omni.co) account to your AI agent and gain deep insigh
 
 
 ## Available Tools (10)
-- **export_query_results**: Export data to file
 - **get_dashboard_details**: Get specific dashboard info
-- **get_field_details**: Get specific field info
 - **get_model_details**: Get data model metadata
-- **list_data_connections**: List database connections
-- **list_dashboards**: List BI dashboards
-- **list_resource_folders**: List dashboard folders
-- **list_data_models**: List Omni data models
 - **list_bi_workspaces**: List organization workspaces
+- **list_dashboards**: List BI dashboards
+- **list_data_connections**: List database connections
+- **list_data_models**: List Omni data models
+- **export_query_results**: Export data to file
+- **get_field_details**: Get specific field info
+- **list_resource_folders**: List dashboard folders
 - **run_omni_query**: Run programmatic query
 
 

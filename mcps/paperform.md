@@ -34,16 +34,16 @@ Connect your **Paperform** account to any AI agent and take full control of your
 
 
 ## Available Tools (10)
+- **list_forms**: List all Paperform forms
 - **list_submissions**: List submissions for a form
-- **list_tags**: List all tags used in the account
 - **list_webhooks**: List webhooks for a form
+- **list_tags**: List all tags used in the account
 - **create_webhook**: Create a new webhook for a form
 - **get_account_info**: Get authenticated account information
 - **get_form**: Get details for a specific form
 - **get_submission**: Get details for a specific submission
 - **list_custom_domains**: List all custom domains configured
 - **list_folders**: List all form folders
-- **list_forms**: List all Paperform forms
 
 
 ## 💬 Prompt Examples

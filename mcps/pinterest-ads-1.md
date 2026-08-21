@@ -33,14 +33,14 @@ Connect **Pinterest Ads** to your AI agent and manage your visual advertising ca
 
 
 ## Available Tools (8)
-- **list_campaigns**: List campaigns
 - **list_adgroups**: List ad groups
 - **list_ads**: List ads/Pins
-- **get_campaign_analytics**: Get campaign analytics
-- **get_adgroup_analytics**: Get ad group analytics
 - **get_account_analytics**: Get account analytics
-- **pause_campaign**: Pause campaign
+- **get_campaign_analytics**: Get campaign analytics
+- **list_campaigns**: List campaigns
+- **get_adgroup_analytics**: Get ad group analytics
 - **enable_campaign**: Enable campaign
+- **pause_campaign**: Pause campaign
 
 
 ## 💬 Prompt Examples

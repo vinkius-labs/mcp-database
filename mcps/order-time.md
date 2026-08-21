@@ -33,8 +33,8 @@ Connect your **Order Time** account to empower your AI agents with advanced inve
 - **get_item**: Get item details
 - **get_purchase_order**: Get purchase order details
 - **get_sales_order**: Get sales order details
-- **list_custom_fields**: List custom field definitions
 - **list_customers**: List all customers
+- **list_custom_fields**: List custom field definitions
 - **list_items**: List inventory items
 - **list_purchase_orders**: List purchase orders
 

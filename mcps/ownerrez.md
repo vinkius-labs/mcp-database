@@ -34,25 +34,25 @@ Connect your **OwnerRez** account to any AI agent and get the most advanced vaca
 - **list_bookings**: Filter by status: booked, checked_in, checked_out, cancelled.
 
 List rental bookings
-- **get_booking**: Get booking details
 - **list_properties**: List rental properties
+- **get_booking**: Get booking details
 - **get_property**: Get property details
-- **search_guests**: Returns contact info, stay history, reviews received, and total revenue.
-
-Search guests
 - **list_channels**: com, direct website. With status and sync health.
 
 List connected channels
+- **search_guests**: Returns contact info, stay history, reviews received, and total revenue.
+
+Search guests
 - **get_calendar**: Get property calendar
 - **list_charges**: Deep financial breakdown.
 
 List booking charges
-- **list_payments**: With amounts, dates, and processing status.
-
-List booking payments
 - **list_inquiries**: For conversion tracking.
 
 List booking inquiries
+- **list_payments**: With amounts, dates, and processing status.
+
+List booking payments
 
 
 ## 💬 Prompt Examples

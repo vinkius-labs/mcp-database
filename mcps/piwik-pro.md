@@ -34,14 +34,14 @@ Connect your **Piwik PRO Analytics Suite** to any AI agent and take full control
 
 
 ## Available Tools (6)
+- **list_piwik_apps**: List all websites/apps in Piwik PRO
+- **list_piwik_dashboards**: List Piwik PRO dashboards
+- **list_piwik_sites**: List tracking sites
+- **list_piwik_users**: List account users
+- **list_piwik_goals**: List goals for a specific app
 - **query_piwik_analytics**: Requires a JSON query body.
 
 Execute a custom analytics query
-- **list_piwik_apps**: List all websites/apps in Piwik PRO
-- **list_piwik_dashboards**: List Piwik PRO dashboards
-- **list_piwik_goals**: List goals for a specific app
-- **list_piwik_sites**: List tracking sites
-- **list_piwik_users**: List account users
 
 
 ## 💬 Prompt Examples

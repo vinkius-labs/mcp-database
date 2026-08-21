@@ -24,12 +24,12 @@ Zero authentication required. Open source, community-driven data. Essential for 
 
 
 ## Available Tools (2)
-- **scan_food_barcode**: Returns Nutri-Score, NOVA classification, full macronutrient profile, allergens, and ingredient list.
-
-Scan a food product barcode to get complete nutritional and allergen information
 - **search_food_products**: Returns nutritional information, Nutri-Score grades, NOVA processing levels, and allergen data for each product.
 
 Search the Open Food Facts database for packaged food products
+- **scan_food_barcode**: Returns Nutri-Score, NOVA classification, full macronutrient profile, allergens, and ingredient list.
+
+Scan a food product barcode to get complete nutritional and allergen information
 
 
 ## 💬 Prompt Examples

@@ -34,9 +34,8 @@ Connect your **Pabbly Email Marketing** account to any AI agent and take full co
 
 
 ## Available Tools (10)
-- **create_pabbly_subscriber**: Add a new subscriber to a list
 - **get_pabbly_account**: Get account information
-- **create_pabbly_list**: Create a new subscriber list
+- **create_pabbly_subscriber**: Add a new subscriber to a list
 - **get_pabbly_campaign**: Get details for a specific campaign
 - **list_pabbly_automations**: List all active automations
 - **list_pabbly_campaigns**: List all email campaigns
@@ -44,6 +43,7 @@ Connect your **Pabbly Email Marketing** account to any AI agent and take full co
 - **list_pabbly_forms**: List all subscription forms
 - **list_pabbly_lists**: List all subscriber lists
 - **list_pabbly_subscribers**: List subscribers in a specific list
+- **create_pabbly_list**: Create a new subscriber list
 
 
 ## 💬 Prompt Examples

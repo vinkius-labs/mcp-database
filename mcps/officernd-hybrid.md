@@ -31,12 +31,12 @@ Connect your **OfficeRnD Hybrid** account to empower your AI agents with office 
 - **get_booking**: Get a specific booking
 - **get_my_profile**: Get current user profile
 - **list_bookings**: List all bookings
-- **list_employees**: List all employees
 - **list_events**: List organization events
 - **list_locations**: List organization locations
-- **list_resources**: List all resources (desks, rooms, etc.)
 - **list_teams**: List organization teams
 - **cancel_booking**: Cancel an existing booking
+- **list_employees**: List all employees
+- **list_resources**: List all resources (desks, rooms, etc.)
 
 
 ## 💬 Prompt Examples

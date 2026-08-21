@@ -33,17 +33,17 @@ Equip intelligent LLM instances with robust access traversing the **Pennylane Ac
 
 
 ## Available Tools (13)
-- **create_customer**: Créer un nouveau client dans Pennylane
 - **list_suppliers**: Lister tous les fournisseurs
 - **list_customer_invoices**: Lister toutes les factures clients émises
 - **list_estimates**: Lister tous les devis émis
-- **get_estimate_details**: Consulter les détails d'un devis (lignes, TVA, validité)
 - **list_products**: Lister tous les produits et services du catalogue
-- **list_supplier_invoices**: Lister toutes les factures fournisseurs (achats)
-- **list_customers**: Lister tous les clients enregistrés dans Pennylane
-- **get_customer_details**: Consulter les détails complets d'un client
-- **get_supplier_details**: Consulter les détails d'un fournisseur
+- **create_customer**: Créer un nouveau client dans Pennylane
 - **get_customer_invoice_details**: Consulter les détails d'une facture client (lignes, TVA, montants HT/TTC)
+- **get_estimate_details**: Consulter les détails d'un devis (lignes, TVA, validité)
+- **get_supplier_details**: Consulter les détails d'un fournisseur
+- **list_customers**: Lister tous les clients enregistrés dans Pennylane
+- **list_supplier_invoices**: Lister toutes les factures fournisseurs (achats)
+- **get_customer_details**: Consulter les détails complets d'un client
 - **create_product**: Créer un nouveau produit ou service dans le catalogue comptable
 - **list_categories**: Lister les catégories comptables (plan comptable)
 

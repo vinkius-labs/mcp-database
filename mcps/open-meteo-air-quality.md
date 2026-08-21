@@ -27,8 +27,8 @@ Health apps, allergy sufferers, outdoor sports planners, environmental agencies,
 - **get_air_quality**: 5, PM10, ozone, nitrogen dioxide, sulphur dioxide, and carbon monoxide concentrations for any location.
 
 Get air quality pollutant concentrations
-- **get_pollen_forecast**: Get pollen and allergen forecast
 - **get_uv_index**: Get UV index forecast
+- **get_pollen_forecast**: Get pollen and allergen forecast
 
 
 ## 💬 Prompt Examples

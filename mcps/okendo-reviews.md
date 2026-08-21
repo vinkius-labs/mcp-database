@@ -41,11 +41,11 @@ Connect your **Okendo** account to your AI agent and gain deep insights into you
 - **get_question_details**: Get specific question details
 - **get_review_details**: Get specific review details
 - **get_store_settings**: Get Okendo store settings
-- **list_question_answers**: List answers for a question
-- **list_review_media**: List customer-uploaded media
 - **list_okendo_products**: List products tracked in Okendo
+- **list_review_media**: List customer-uploaded media
 - **list_customer_questions**: List customer Q&A questions
 - **list_reviews**: List customer reviews
+- **list_question_answers**: List answers for a question
 
 
 ## 💬 Prompt Examples

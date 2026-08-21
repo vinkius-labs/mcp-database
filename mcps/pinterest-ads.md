@@ -34,16 +34,16 @@ Connect your **Pinterest Advertising** account to any AI agent and take full con
 
 
 ## Available Tools (10)
-- **list_pinterest_ad_groups**: List ad groups
 - **get_pinterest_analytics**: Get advertising analytics
 - **get_pinterest_campaign**: Get details for a specific campaign
 - **list_pinterest_ads**: List Pinterest ads
 - **list_pinterest_audiences**: List saved audiences
 - **list_pinterest_boards**: List Pinterest boards
-- **list_pinterest_campaigns**: List Pinterest ad campaigns
 - **list_pinterest_catalogs**: List product catalogs
 - **list_pinterest_keywords**: List keywords for an ad group
 - **list_pinterest_pins**: List Pinterest pins
+- **list_pinterest_ad_groups**: List ad groups
+- **list_pinterest_campaigns**: List Pinterest ad campaigns
 
 
 ## 💬 Prompt Examples
