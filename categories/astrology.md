@@ -4,6 +4,7 @@ Explore the open database of **astrology** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [BaZi Compatibility Matrix](../mcps/bazi-compatibility-matrix.md) | Calculate relationship compatibility using Chinese BaZi elemental and zodiac interactions. |
 | [Chinese Zodiac & Elemental Cycle Calculator](../mcps/chinese-zodiac-elemental-cycle-calculator.md) | Calculate zodiac animals, elements, and compatibility using the sexagenary cycle. |
 | [Vedic Nakshatra Calculator](../mcps/vedic-nakshatra-calculator.md) | Determine precise lunar mansions (Nakshatras) and their astrological attributes. |
 

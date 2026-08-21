@@ -4,6 +4,7 @@ Explore the open database of **e-commerce** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Cross-Border Proxy Shipping Calculator](../mcps/cross-border-proxy-shipping-calculator.md) | Calculate volumetric weight and shipping costs for China-Japan proxy services. |
 | [Fieldfolio](../mcps/fieldfolio.md) | Connect Fieldfolio to automate wholesale management — manage products, orders, and inventory directly from your AI agent. |
 
 

@@ -193,6 +193,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Gross Profit Efficiency Calculator](../mcps/gross-profit-efficiency-calculator.md) | Analyze SaaS unit economics, COGS breakdown, and simulate margin improvement levers. |
 | [Growth Rate Calculator](../mcps/growth-rate-calculator.md) | Calculate MoM, QoQ, YoY growth rates and model multi-scenario financial projections (CAGR, Rule of 40) from historical revenue data. |
 | [Harmonic Pattern Detector](../mcps/harmonic-pattern-detector.md) | Identify Gartley, Butterfly, Bat, and Crab patterns using Fibonacci ratios. |
+| [HDB BTO Ballot Probability Calculator](../mcps/hdb-bto-ballot-probability-calculator.md) | Calculate your relative chances of securing an HDB BTO flat based on applicant type, project maturity, and ethnic quotas. |
 | [Headcount Efficiency Metrics](../mcps/headcount-efficiency-metrics.md) | Evaluate SaaS operational efficiency by comparing unit economics and spend ratios against public company benchmarks. |
 | [Hedge Bet Calculator](../mcps/hedge-bet-calculator.md) | Calculate the exact hedge wager needed to guarantee profit and eliminate risk. |
 | [Hedge Ratio Calculator](../mcps/hedge-ratio-calculator.md) | Calculate commodity futures contracts and quantify price volatility exposure. |
@@ -293,6 +294,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Perp DEX Funding Rate Manipulation Strategy](../mcps/perp-dex-funding-rate-manipulation-strategy.md) | Detect and exploit artificial funding rate spikes in perpetual DEXs. |
 | [Pet Cost Lifetime Estimator](../mcps/pet-cost-lifetime-estimator.md) | Estimate the total lifetime cost of owning a dog or cat, including upfront and annual expenses. |
 | [Pet Monthly Cost Estimator](../mcps/pet-monthly-cost-estimator.md) | Estimate the monthly financial commitment for pet care based on species, size, and location. |
+| [Pinduoduo Group-Buying Calculator](../mcps/pinduoduo-group-buying-calculator.md) | Calculate savings and social urgency for group-buying deals. |
 | [Pipeline Velocity Calculator](../mcps/pipeline-velocity-calculator.md) | Calculate sales pipeline velocity ($/day) and identify which operational metric (opportunities, close rate, or ACV) must improve to hit your revenue targets. |
 | [PIS/COFINS Tax Calculator](../mcps/piscofins-tax-calculator.md) | Calculate PIS and COFINS tax liabilities for cumulative and non-cumulative regimes. |
 | [Pivot Point Strategy](../mcps/pivot-point-strategy.md) | Deterministic technical analysis for pivot-based support and resistance signals. |
@@ -357,6 +359,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Sharpe Ratio Calculator](../mcps/sharpe-ratio-calculator.md) | Deterministic risk-adjusted performance engine for financial metrics. |
 | [Shrinkage Calculator](../mcps/shrinkage-calculator.md) | Calculate inventory shrinkage, risk levels, and security investment ROI. |
 | [Simples Nacional Calculator](../mcps/simples-nacional-calculator.md) | Calculate effective tax rates, Fator R eligibility, and monthly DAS amounts for the Brazilian Simples Nacional regime. |
+| [Singapore ERP Toll Calculator](../mcps/singapore-erp-toll-calculator.md) | Calculate exact Singapore Electronic Road Pricing (ERP) costs for vehicles and routes. |
 | [Slim Capital Prover](../mcps/slim-capital-prover.md) | An investment thesis picked the hottest sector at peak valuations. It said 'revenue growth' instead of free cash flow. It entered a market with no barriers to entry. It proposed hiring 50 people. It treated each investment as standalone. That is not capital allocation — that is herd following. This tool forces five Slim-level axes: contrarian timing, cash flow obsession, barrier market entry, operational austerity, and conglomerate leverage. |
 | [Smart Money Wallet Tracking Strategy](../mcps/smart-money-wallet-tracking-strategy.md) | Identify and replicate high-performance smart money wallet movements with statistical confidence. |
 | [Smart Plug Energy Monitor](../mcps/smart-plug-energy-monitor.md) | Estimate energy consumption and operational costs for any plugged-in device. |

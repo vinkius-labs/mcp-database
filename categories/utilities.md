@@ -12,6 +12,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Audio Unit Converter](../mcps/audio-unit-converter.md) | Convert between musical frequencies, rhythmic durations, digital sample counts, and logarithmic amplitude levels. |
 | [AWS Location Service Geofencing Calculator](../mcps/aws-location-service-geofencing-calculator.md) | Estimate AWS Location Service capacity, resource usage, and operational performance. |
 | [Bates Numbering Generator Engine](../mcps/bates-numbering-generator-engine.md) | Generate flawless, sequentially accurate Bates numbering arrays for massive e-Discovery documentation without LLM skipping. |
+| [Beer ABV Calculator](../mcps/beer-abv-calculator.md) | Calculate ABV, attenuation, calories, and beer style from gravity readings. |
 | [Blood Alcohol Content Calculator](../mcps/blood-alcohol-content-calculator.md) | Estimate BAC, legal limits, and impairment risks. |
 | [Bolt Pattern Finder](../mcps/bolt-pattern-finder.md) | Precise vehicle wheel specification lookup and cross-compatibility engine. |
 | [Bowling Score Engine](../mcps/bowling-score-engine.md) | Deterministic 10-pin bowling scoring and validation engine. |
@@ -30,19 +31,20 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Culinary Unit Converter](../mcps/culinary-unit-converter.md) | Convert culinary measurements between units like cups, spoons, and ml, or estimate ingredient mass. |
 | [Cycling Power Calculator](../mcps/cycling-power-calculator.md) | Estimate cycling power requirements, FTP zones, and training stress. |
 | [Deep Diff Engine](../mcps/deep-diff-engine.md) | Find every single change between two JSON objects — additions, deletions, and edits with exact structural paths. Stop relying on AI to 'spot the difference'. |
-| [Depth of Field Calculator](../mcps/depth-of-field-calculator.md) | Calculate precise depth of field, hyperfocal distance, and blur limits for any camera sensor. |
 | [Deterministic Cron Schedule Engine](../mcps/deterministic-cron-schedule-engine.md) | Equip your AI with precise cron job parsing. Deterministically translate cron to natural language, format schedules, and calculate exact next execution times. |
 | [Dimensional Weight Calculator](../mcps/dimensional-weight-calculator.md) | Calculate dimensional weights, billable weight, and shipping weight discrepancies for major global carriers. |
-| [Exposure Triangle Calculator](../mcps/exposure-triangle-calculator.md) | Calculate missing exposure parameters, ND filter compensation, and film reciprocity corrections. |
 | [File Encoding & BOM Normalizer](../mcps/file-encoding-bom-normalizer.md) | Detects and removes Byte Order Marks (BOM) and normalizes file encodings and line endings to a standard UTF-8 LF format. |
 | [Flash Power Calculator](../mcps/flash-power-calculator.md) | Calculate aperture, flash power levels, and motion freeze potential. |
 | [Fraction Exact Calculator](../mcps/fraction-exact-calculator.md) | Perform exact rational number arithmetic, continued fraction analysis, and decimal expansion without floating-point errors. |
 | [Fractions Arithmetic and Simplifier](../mcps/fractions-arithmetic-and-simplifier.md) | Perform exact mathematical operations on fractions with automatic simplification. |
 | [Frequency & Note Converter](../mcps/frequency-note-converter.md) | Convert between musical frequencies and notes with precision. |
+| [Gacha Epitomized Path Calculator](../mcps/gacha-epitomized-path-calculator.md) | Calculate exact pull probabilities and resource costs for weapon banners. |
 | [Gacha Pity Calculator](../mcps/gacha-pity-calculator.md) | Calculate exact gacha probabilities, soft pity escalation, and resource costs. |
+| [Gacha Spark Point Tracker](../mcps/gacha-spark-point-tracker.md) | Predict if you will reach your gacha spark guarantee based on current progress and daily pull velocity. |
 | [Geographic Distance Calculator](../mcps/geographic-distance-calculator.md) | Calculate precise distances, bearings, and waypoints using Haversine, Vincenty, and Euclidean models. |
 | [Golf Handicap Calculator](../mcps/golf-handicap-calculator.md) | Deterministic golf handicap calculation per USGA/WHS standards. |
 | [Groove Quantize Calculator](../mcps/groove-quantize-calculator.md) | Calculate precise millisecond-based quantization grids, swing offsets, and latency compensation for DAWs. |
+| [Heat Index Calculator](../mcps/heat-index-calculator.md) | Calculate perceived temperature and heat-related health risks. |
 | [IP Address & Subnet Calculator](../mcps/ip-address-subnet-calculator.md) | Perform precise bitwise IPv4 and IPv6 subnet calculations and membership checks. |
 | [ISBN-10 and ISBN-13 Validator](../mcps/isbn-10-and-isbn-13-validator.md) | Verify the mathematical integrity of ISBN-10 and ISBN-13 identifiers and identify registration groups. |
 | [ISO 8601 Duration Parser](../mcps/iso-8601-duration-parser.md) | Extracts time components and calculates total seconds from ISO 8601 duration strings. |
@@ -95,6 +97,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [URL Query String Deep Parser](../mcps/url-query-string-deep-parser.md) | Transforms flat URL query strings into deeply nested JSON objects and arrays. |
 | [Water Heater Comparator](../mcps/water-heater-comparator.md) | Compare the operational costs and carbon footprint of electric, gas, and solar thermal water heating systems. |
 | [Water Usage Optimizer](../mcps/water-usage-optimizer.md) | Calculate household water consumption and identify savings opportunities. |
+| [Wind Chill Calculator](../mcps/wind-chill-calculator.md) | Calculate perceived wind chill temperatures and frostbite risk levels. |
 
 
 ---

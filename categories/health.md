@@ -24,7 +24,6 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Lactate Threshold Estimator](../mcps/lactate-threshold-estimator.md) | Estimate metabolic lactate thresholds using effort-based metrics or heart rate drift analysis. |
 | [Natural Ventilation Calculator](../mcps/natural-ventilation-calculator.md) | Calculate air change rates and ensure ventilation compliance for different room uses. |
 | [Nutritional Estimator](../mcps/nutritional-estimator.md) | Calculate total and per-serving macro and calorie content of recipes using weight-based nutritional density data. |
-| [One-Rep Max Calculator](../mcps/one-rep-max-calculator-1.md) | Estimate your maximum strength capacity using 8 different physiological models. |
 | [Oral Syringe Volume Converter](../mcps/oral-syringe-volume-converter.md) | Convert liquid medication doses from ml to teaspoons, tablespoons, and drops. |
 | [Ovulation Fertile Window Calculator](../mcps/ovulation-fertile-window-calculator.md) | Predict ovulation and fertile windows based on cycle tracking. |
 | [Pediatric BMI Calculator](../mcps/pediatric-bmi-calculator.md) | Calculate pediatric BMI, percentiles, and growth status using WHO/CDC standards for ages 2-20 years. |
@@ -34,6 +33,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Pet Food Portion Calculator](../mcps/pet-food-portion-calculator.md) | Calculate precise daily food portions for dogs and cats based on weight, activity, and life stage. |
 | [Pet Growth Tracker](../mcps/pet-growth-tracker.md) | Estimate adult weight and track puppy growth milestones by breed. |
 | [Pet Ideal Weight Calculator](../mcps/pet-ideal-weight-calculator.md) | Determine and classify your pet's weight status based on species, breed, and sex. |
+| [Pet Medication Dosage Calculator](../mcps/pet-medication-dosage-calculator.md) | Deterministic pet medication dosage calculator with species-specific safety checks. |
 | [Pet Senior Care Planner](../mcps/pet-senior-care-planner.md) | Identify pet life stages and generate customized veterinary and lifestyle protocols. |
 | [Pet Treat Limit Calculator](../mcps/pet-treat-limit-calculator.md) | Calculate the maximum number of treats your pet can have without exceeding 10% of their daily calories. |
 | [Pet Water Intake Calculator](../mcps/pet-water-intake-calculator.md) | Calculate optimal daily water intake for dogs and cats based on weight, food type, and temperature. |

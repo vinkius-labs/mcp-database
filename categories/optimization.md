@@ -18,6 +18,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Context Window Optimizer](../mcps/context-window-optimizer.md) | Optimizes LLM context windows by selecting the most relevant and recent information within token limits. |
 | [Cost-Controlled Tool Selector](../mcps/cost-controlled-tool-selector.md) | A deterministic engine to select the most cost-effective tool variant based on accuracy requirements. |
 | [Grain Direction Restrictor](../mcps/grain-direction-restrictor.md) | Enforce material grain orientation constraints for precise plywood cutting and bin packing. |
+| [Konbini Hack Macro Optimizer](../mcps/konbini-hack-macro-optimizer.md) | Find the most cost-effective nutritional hacks in Japanese convenience stores. |
 | [Model Routing Optimizer](../mcps/model-routing-optimizer.md) | A deterministic engine for selecting the optimal LLM based on cost, quality, and latency. |
 | [Prefix Cache Savings Calculator](../mcps/prefix-cache-savings-calculator.md) | Calculate exact token savings from LLM prefix caching. |
 | [RAG Chunk Selection Optimizer](../mcps/rag-chunk-selection-optimizer.md) | A deterministic engine to select the most effective RAG information chunks within token budgets. |

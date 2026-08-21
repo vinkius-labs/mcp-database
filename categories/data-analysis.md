@@ -4,6 +4,7 @@ Explore the open database of **data-analysis** Model Context Protocol (MCP) serv
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Chinese Slang Density Checker](../mcps/chinese-slang-density-checker.md) | Analyze the prevalence and trendiness of Chinese internet slang in text. |
 | [Founder Vision Prover](../mcps/founder-vision-prover.md) | A pitch deck said '1% of a $10B market' and 'run Facebook ads.' That is not a startup — that is a PowerPoint. This tool forces it to prove behavioral pain, calculate bottom-up TAM, show cohort retention, build a $0 CAC moat, and model unit economics that recycle capital in under 12 months. |
 | [MinHash Text Deduplicator](../mcps/minhash-text-deduplicator.md) | Detect near-duplicate texts using MinHash signatures and Jaccard similarity. |
 | [rag-chunk-boundary-optimizer](../mcps/rag-chunk-boundary-optimizer-1.md) | Analyzes text chunking strategies for RAG pipelines by measuring overlap, sentence integrity, and semantic continuity. |

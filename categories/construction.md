@@ -27,7 +27,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [JobNimbus](../mcps/jobnimbus.md) | Manage contacts, jobs, and tasks via JobNimbus CRM API. |
 | [Lumber Quantity Calculator](../mcps/lumber-quantity-calculator.md) | Estimate board feet of lumber needed for wall, floor, and roof framing. |
 | [Masonry Quantity Calculator](../mcps/masonry-quantity-calculator.md) | Calculate the number of masonry units, mortar volume, and required cement and sand for wall construction. |
-| [Paint Coverage Calculator](../mcps/paint-coverage-calculator.md) | Calculate exact paint volumes for walls and ceilings, accounting for textures, openings, and waste. |
+| [Paint Coverage Calculator](../mcps/paint-coverage-calculator.md) | Calculate precise paint quantities, container counts, and costs for any surface. |
 | [Plumbing Fixture Units Calculator](../mcps/plumbing-fixture-units-calculator.md) | Calculate DFU and WSFU loads and size plumbing pipe diameters according to IPC/UPCA standards. |
 | [Procore](../mcps/procore.md) | Manage construction projects via Procore — track RFIs, submittals, punch lists, daily logs, and drawings from any AI agent. |
 | [Roofing Squares Calculator](../mcps/roofing-squares-calculator.md) | Calculate roofing squares and material requirements based on roof pitch, area, and complexity. |
@@ -39,9 +39,11 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Stud Wall Load Calculator](../mcps/stud-wall-load-calculator.md) | Calculate the allowable axial and lateral load capacity for wood stud walls based on NDS standards. |
 | [Thermal Mass Estimator](../mcps/thermal-mass-estimator.md) | Calculate thermal lag, amplitude damping, and U-value for wall structures based on material properties. |
 | [Tile Floor Calculator](../mcps/tile-floor-calculator.md) | Calculate tiles, grout, adhesive, and costs for any floor layout. |
+| [Tile Layout Calculator](../mcps/tile-layout-calculator.md) | Calculate tile quantities, grout volume, and optimal layout patterns. |
 | [US ADA Compliance Checker](../mcps/us-ada-compliance-checker.md) | Verify architectural elements against US ADA accessibility standards. |
 | [US Seismic Zone Checker](../mcps/us-seismic-zone-checker.md) | Identify Seismic Design Categories and structural detailing requirements based on US regional seismic data. |
 | [US Wind Load Calculator](../mcps/us-wind-load-calculator.md) | Calculate wind pressure (psf) based on ASCE 7 standards using regional wind speeds and terrain exposure. |
+| [Wallpaper Pattern Calculator](../mcps/wallpaper-pattern-calculator.md) | Calculate precise wallpaper quantities and cutting plans based on pattern repeats. |
 | [Water Heater Sizing Calculator](../mcps/water-heater-sizing-calculator.md) | Calculate required First Hour Rating (FHR), tank capacity, and efficiency benchmarks for water heaters based on occupancy and fuel type. |
 | [Waterproofing Area Calculator](../mcps/waterproofing-area-calculator.md) | Calculate material quantity, consumption, and estimated costs for waterproofing projects across various environments. |
 

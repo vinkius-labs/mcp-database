@@ -5,6 +5,7 @@ Explore the open database of **sports-science** Model Context Protocol (MCP) ser
 | Tool Name | Description |
 |-----------|-------------|
 | [Acute:Chronic Workload Ratio (ACWR) Analyzer](../mcps/acutechronic-workload-ratio-acwr-analyzer.md) | Predict injury risk by analyzing the relationship between recent and long-term training loads. |
+| [One-Rep Max Calculator](../mcps/one-rep-max-calculator-1.md) | Estimate 1RM strength, training intensity zones, and RPE from submaximal lifts. |
 
 
 ---

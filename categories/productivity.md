@@ -60,6 +60,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [AMcards](../mcps/amcards.md) | Send personalized greeting cards and handwritten notes to clients and prospects that feel genuinely personal at scale. |
 | [Amilia](../mcps/amilia.md) | Recreation and activity management — manage programs, accounts, and registrations via AI. |
 | [Amplenote](../mcps/amplenote.md) | Connect your Amplenote workspace to your AI agent — search notes, manage tasks, and organize ideas via natural language. |
+| [Anime AMV Timestamp Optimizer](../mcps/anime-amv-timestamp-optimizer.md) | Synchronize anime action scenes perfectly with music beats. |
 | [Anime Canon & Filler Tracker](../mcps/anime-canon-filler-tracker.md) | Calculate canon episode counts, filler ratios, and optimized binge times for anime series. |
 | [Anime Filler Ratio Calculator](../mcps/anime-filler-ratio-calculator.md) | Analyze anime pacing and calculate filler ratios to optimize your watch time. |
 | [Annotation Extractor and Tracker](../mcps/annotation-extractor-and-tracker.md) | Automatically detect, track, and report code annotations like FIXME, HACK, and XXX in your codebase. |
@@ -501,6 +502,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Ironclad](../mcps/ironclad.md) | Manage contracts, workflows, approvals, and counterparties via Ironclad CLM — launch, track, and search agreements directly from any AI agent. |
 | [itch.io](../mcps/itchio.md) | Access your itch.io account — browse your games, collections and profile info from any AI agent. |
 | [Itemized Shared Grocery Splitter](../mcps/itemized-shared-grocery-splitter.md) | Split grocery receipts by item consumption and distribute tax equally. |
+| [Japanese Train Delay Validator](../mcps/japanese-train-delay-validator.md) | Calculate Japanese train delay certificate eligibility and excuse categories. |
 | [Jasper](../mcps/jasper.md) | Equip your AI agent with direct access to Jasper — generate marketing copy, manage brand voices, and orchestrate content campaigns without opening the Jasper app. |
 | [Jiandaoyun](../mcps/jiandaoyun.md) | Cloud-based zero-code data management platform — manage forms, records, and workflows via AI. |
 | [Jinshuju / 金数据](../mcps/jinshuju.md) | Powerful online form and data collection platform — manage forms, entries, and webhooks via AI. |
@@ -517,6 +519,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Jotform](../mcps/jotform-alternative.md) | Build powerful online forms with drag-and-drop ease, collect payments, gather signatures, and process submissions automatically. |
 | [JotForm](../mcps/jotform.md) | Manage forms, submissions, and reports via JotForm API. |
 | [Journalistic Reasoning Prover](../mcps/journalistic-reasoning-prover.md) | A report cited three sources. None of them existed. That is not an error � that is fabrication. Journalistic Reasoning Prover forces independent verification, source tracing, and false balance detection grounded in the SPJ Code of Ethics. |
+| [jp-twitter-hashtag-optimizer](../mcps/jp-twitter-hashtag-optimizer.md) | Optimize Japanese Twitter posts with efficient hashtag selection. |
 | [JSON Diff Visualizer](../mcps/json-diff-visualizer.md) | Generate human-readable visual diffs between two JSON objects — added lines in green, removed in red, unchanged in gray. Like 'git diff' but for JSON structures. |
 | [JSON Merge Patch](../mcps/json-merge-patch.md) | Stop losing data when updating massive files. Apply surgical JSON patches (RFC 7396) securely to large datasets. |
 | [JSONPlaceholder](../mcps/jsonplaceholder.md) | Access fake online REST API for testing and prototyping — manage posts, comments, albums, photos, and todos directly from your AI agent. |
@@ -638,6 +641,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [OPM Operating Status](../mcps/opm-operating-status.md) | Get real-time Washington, DC federal government operating status and dismissal procedures directly from the U.S. Office of Personnel Management. |
 | [OPML Podcast & RSS Parser](../mcps/opml-podcast-rss-parser.md) | Turn standard OPML export files from your podcast app or RSS reader into clean JSON data. Let your AI analyze your subscriptions and become your personal content curator. |
 | [Orderry](../mcps/orderry.md) | Manage your repair shop, orders, and inventory with Orderry and AI agents. |
+| [Oshi Budget Allocator](../mcps/oshi-budget-allocator.md) | A deterministic budget tool for Oshi fans to balance fixed costs and discretionary spending. |
 | [Overlapping Utility Splitter](../mcps/overlapping-utility-splitter.md) | Splits utility bills between two residents when one moves out mid-cycle. |
 | [Overtime Calculator](../mcps/overtime-calculator.md) | Calculate overtime pay, night shift premiums, and time bank balances. |
 | [Overtime Threshold Detector](../mcps/overtime-threshold-detector.md) | Identify exactly when overtime kicks in during a work week and calculate pay splits. |
@@ -909,6 +913,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Wolai](../mcps/wolai.md) | All-in-one information organization and collaboration platform — manage pages, databases, and blocks via AI. |
 | [WordPress Media Uploader](../mcps/wordpress-media-uploader.md) | This MCP does exactly one thing: it downloads images from a URL and uploads them directly to your WordPress Media Library. Incredible for giving Claude the ability to generate and deploy blog cover images instantly. |
 | [WordPress Post Drafter](../mcps/wordpress-post-drafter.md) | This MCP does exactly one thing: it takes content generated by the AI and saves it directly to your WordPress as a Draft. Incredible for turning Claude into an automated SEO content engine. |
+| [Work Culture Burnout Calculator](../mcps/work-culture-burnout-calculator.md) | Quantify burnout risk and work intensity for extreme work cultures. |
 | [Workable](../mcps/workable.md) | Recruit top talent with an ATS that posts to 200+ job boards, screens candidates with AI, and manages the entire hiring flow. |
 | [Workable](../mcps/workable-alternative.md) | Recruit top talent with an ATS that posts to 200+ job boards, screens candidates with AI, and manages the entire hiring flow. |
 | [WorkAdventure](../mcps/workadventure.md) | Create virtual office spaces where remote teams can walk around, bump into colleagues, and collaborate spontaneously. |

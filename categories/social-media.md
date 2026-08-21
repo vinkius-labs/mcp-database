@@ -4,6 +4,7 @@ Explore the open database of **social-media** Model Context Protocol (MCP) serve
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Douyin & TikTok Retention Calculator](../mcps/douyin-tiktok-retention-calculator.md) | Analyze video pacing, beat synchronization, and hook effectiveness to estimate viewer retention. |
 | [LinkedIn Authority Signal Calculator](../mcps/linkedin-authority-signal-calculator.md) | Quantify thought-leadership and authority markers in LinkedIn posts. |
 | [LinkedIn Broetry Structure Validator](../mcps/linkedin-broetry-structure-validator.md) | Analyze LinkedIn posts for adherence to the 'broetry' writing style using structural metrics. |
 | [LinkedIn Document Carousel Parser](../mcps/linkedin-document-carousel-parser.md) | Analyze LinkedIn PDF carousels for readability, visual rhythm, and engagement. |
@@ -18,6 +19,7 @@ Explore the open database of **social-media** Model Context Protocol (MCP) serve
 | [Twitter Microcopy Density Analyzer](../mcps/twitter-microcopy-density-analyzer.md) | Analyze text density and impact for micro-blogging constraints. |
 | [Twitter Thread Structure Validator](../mcps/twitter-thread-structure-validator.md) | Analyze the structural architecture, engagement anchors, and rhythmic pacing of Twitter threads. |
 | [Twitter Virality and QT Bait Scorer](../mcps/twitter-virality-and-qt-bait-scorer.md) | Quantify the 'Quote Tweet' incentive and virality potential of a tweet using linguistic pattern matching. |
+| [WeChat Article Viral Score Calculator](../mcps/wechat-article-viral-score-calculator.md) | Predict the shareability of WeChat articles using structural and topical metrics. |
 
 
 ---

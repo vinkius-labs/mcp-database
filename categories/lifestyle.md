@@ -14,6 +14,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Eco Savings Tracker](../mcps/eco-savings-tracker.md) | Quantify and visualize your environmental impact through personal habit changes. |
 | [Environmental Impact Comparator](../mcps/environmental-impact-comparator.md) | Compare the carbon footprint and waste generation of different lifestyle choices side-by-side. |
 | [Feng Shui Flying Star Matrix Generator](../mcps/feng-shui-flying-star-matrix-generator.md) | Generate deterministic annual Xuan Kong Flying Star matrices and analyze sector auspiciousness. |
+| [Hawker Queue Time Calculator](../mcps/hawker-queue-time-calculator.md) | Predict wait times and optimal arrival windows for Singapore hawker centers. |
 | [Konbini Macro Combo Optimizer](../mcps/konbini-macro-combo-optimizer.md) | Optimize Japanese convenience store meals to hit specific calorie and protein targets. |
 | [Matcha Ceremony Parameter Calculator](../mcps/matcha-ceremony-parameter-calculator.md) | Calculate precise matcha recipes, water temperatures, and caffeine estimates. |
 | [Morning-Night Skincare Routine Syncer](../mcps/morning-night-skincare-routine-syncer.md) | Validate skincare routine safety by checking for ingredient incompatibilities and essential dependencies. |
@@ -22,10 +23,12 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Pregnancy Week-by-Week Calculator](../mcps/pregnancy-week-by-week-calculator.md) | Track pregnancy progress, fetal development milestones, and trimester symptoms. |
 | [Seimei Handan Fortune Calculator](../mcps/seimei-handan-fortune-calculator.md) | Calculate Japanese name fortunes using the traditional Five Grids (Go-Grid) system. |
 | [Seimei Handan Fortune Engine](../mcps/seimei-handan-fortune-engine.md) | Calculate Japanese name destiny using the Five Grids numerology. |
+| [Singapore Kopi Decoder](../mcps/singapore-kopi-decoder.md) | Translates Singaporean coffee shorthand and calculates nutritional data. |
 | [Skincare Routine Optimizer](../mcps/skincare-routine-optimizer.md) | Optimize your skincare routine order, ingredient safety, and product lifecycle management. |
 | [Sun Sign Calculator](../mcps/sun-sign-calculator.md) | Calculate precise zodiac signs with year-specific cusp transitions and astrological properties. |
 | [Sustainability Score Calculator](../mcps/sustainability-score-calculator.md) | Quantify your environmental footprint and discover actionable paths to a more sustainable lifestyle. |
 | [Valid Outfit Generator](../mcps/valid-outfit-generator.md) | Calculate and sample valid clothing combinations based on formality consistency rules. |
+| [VTuber Name Fortune Calculator](../mcps/vtuber-name-fortune-calculator.md) | Calculate VTuber debut potential using traditional Seimei Handan and modern persona alignment. |
 | [Wine Pairing Matcher](../mcps/wine-pairing-matcher.md) | Get expert wine recommendations based on dish characteristics like protein, sauce weight, and intensity. |
 
 
