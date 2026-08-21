@@ -37,14 +37,14 @@ Connect your **lemon.markets** account to any AI agent to automate your stock tr
 - **get_brokerage_account**: markets trading account.
 
 Get trading account information
+- **list_brokerage_orders**: List recent trading orders
+- **list_active_positions**: List all currently held portfolio positions
 - **activate_pending_order**: Activate a placed order to execute it
 - **cancel_open_order**: Cancel an open order
 - **get_latest_quote**: Get the latest bid/ask prices for an instrument
-- **list_brokerage_orders**: List recent trading orders
 - **place_new_order**: Note: Orders must usually be activated after creation.
 
 Place a new buy or sell order
-- **list_active_positions**: List all currently held portfolio positions
 - **search_market_instruments**: g., "Apple", "Tesla", or a specific ISIN).
 
 Search for stocks or ETFs on lemon.markets

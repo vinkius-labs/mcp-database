@@ -23,22 +23,22 @@ Connect your **MarketMan** account to any AI agent — the restaurant inventory 
 
 ## Available Tools (8)
 - **get_count_sheets**: Get inventory count sheets
-- **list_inventory**: "Are we low on anything?"
-
-List inventory items
 - **list_purchase_orders**: List purchase orders
-- **list_vendors**: For vendor management.
-
-List vendors
-- **list_categories**: With item counts.
-
-List inventory categories
 - **list_recipes**: For menu engineering.
 
 List recipes
+- **list_vendors**: For vendor management.
+
+List vendors
+- **list_inventory**: "Are we low on anything?"
+
+List inventory items
 - **get_waste_events**: For waste reduction.
 
 Get waste events
+- **list_categories**: With item counts.
+
+List inventory categories
 - **get_restaurant_info**: Get restaurant info
 
 

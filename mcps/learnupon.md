@@ -34,21 +34,21 @@ Connect your **LearnUpon** portal to any AI agent to automate your learning mana
 
 
 ## Available Tools (9)
+- **create_user**: Requires email/username, password, and name.
+
+Create a new learner account
+- **list_users**: Use this to identify user IDs for enrollment or updates.
+
+List all learner accounts
 - **list_courses**: List all available courses
 - **enroll_user_in_course**: Requires course_id and user identification.
 
 Enroll a user into a specific course
-- **create_user**: Requires email/username, password, and name.
-
-Create a new learner account
-- **unenroll_user**: Remove a user enrollment from a course
 - **list_enrollments**: List all course enrollments
 - **search_courses**: Search for courses by name
 - **search_users**: Search for users by email or username
+- **unenroll_user**: Remove a user enrollment from a course
 - **update_user**: Update an existing user account
-- **list_users**: Use this to identify user IDs for enrollment or updates.
-
-List all learner accounts
 
 
 ## 💬 Prompt Examples

@@ -22,13 +22,13 @@ Connect **Lodgify** to any AI agent — vacation rental management + booking web
 
 
 ## Available Tools (8)
-- **get_property**: Get property details
 - **get_booking**: Get booking details
-- **get_availability**: Get property availability
-- **get_rates**: Get property rates
 - **get_quote**: Get booking quote
-- **list_properties**: List vacation rental properties
+- **get_rates**: Get property rates
 - **list_bookings**: List bookings
+- **list_properties**: List vacation rental properties
+- **get_availability**: Get property availability
+- **get_property**: Get property details
 - **list_channels**: com, VRBO, direct. With sync status.
 
 List channels

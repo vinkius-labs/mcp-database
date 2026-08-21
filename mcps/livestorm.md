@@ -36,21 +36,9 @@ Integrate **Livestorm**, the leading browser-based webinar and video events plat
 
 
 ## Available Tools (10)
-- **create_registration**: Creates a new registration record for the specified webinar. The registration email must be unique for that webinar.
-
-Register a new attendee for a Livestorm webinar
-- **get_event**: Use list_events first to find the correct ID. Returns full event metadata including settings, registration page URL, and status.
-
-Retrieve detailed information for a specific Livestorm webinar or event
 - **get_registration**: Returns the full registration record for the specified attendee.
 
 Retrieve details for a specific registration of a Livestorm webinar
-- **list_analytics**: Returns registration counts, attendance rates, replay views, and engagement metrics. Useful for post-event reporting and ROI analysis.
-
-Retrieve analytics data for a specific Livestorm webinar
-- **list_attendees**: Returns only attendees who joined the event, not just registered attendees. Includes attendance duration and engagement data.
-
-Retrieve the list of attendees who actually attended a Livestorm webinar
 - **list_events**: Returns all events (live, replay, scheduled).
 
 Retrieve a list of all webinars and events in your Livestorm account
@@ -60,12 +48,24 @@ Retrieve all registrations for a specific Livestorm webinar
 - **list_webinar_rooms**: Useful for understanding your Livestorm workspace structure.
 
 Retrieve a list of all rooms (webinar rooms) in your Livestorm workspace
-- **send_replay**: Sends the replay link to everyone who attended the specified event. Use after live events to share the recording with attendees.
-
-Send a replay email to all attendees of a completed Livestorm webinar
 - **create_event**: Provide at minimum the event title. Optionally specify description, start/end times, and event type (live, replay, or on-demand).
 
 Create a new webinar or event in Livestorm
+- **create_registration**: Creates a new registration record for the specified webinar. The registration email must be unique for that webinar.
+
+Register a new attendee for a Livestorm webinar
+- **get_event**: Use list_events first to find the correct ID. Returns full event metadata including settings, registration page URL, and status.
+
+Retrieve detailed information for a specific Livestorm webinar or event
+- **list_analytics**: Returns registration counts, attendance rates, replay views, and engagement metrics. Useful for post-event reporting and ROI analysis.
+
+Retrieve analytics data for a specific Livestorm webinar
+- **list_attendees**: Returns only attendees who joined the event, not just registered attendees. Includes attendance duration and engagement data.
+
+Retrieve the list of attendees who actually attended a Livestorm webinar
+- **send_replay**: Sends the replay link to everyone who attended the specified event. Use after live events to share the recording with attendees.
+
+Send a replay email to all attendees of a completed Livestorm webinar
 
 
 ## 💬 Prompt Examples

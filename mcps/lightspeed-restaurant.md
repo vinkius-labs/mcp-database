@@ -22,35 +22,35 @@ Connect your **Lightspeed Restaurant** to any AI agent — the premium POS for m
 
 
 ## Available Tools (13)
-- **list_payment_methods**: ).
-
-List payment methods
 - **get_business**: Get restaurant info
 - **get_sales_report**: "from" is required ISO 8601 (e.g. 2026-08-01T00:00:00); "to" defaults to now. Max range 365 days. Use for weekly/monthly reports.
 
 Get sales for a date range
-- **list_menus**: ) with their IDs. Use before drilling into items.
-
-List menus
-- **list_shifts**: "Who worked yesterday and what tips did they declare?"
-
-List staff shifts
-- **list_menu_items**: For menu engineering.
-
-List menu items
 - **list_categories**: ) — the K-Series equivalent of menu categories.
 
 List accounting groups
+- **list_menus**: ) with their IDs. Use before drilling into items.
+
+List menus
+- **list_payment_methods**: ).
+
+List payment methods
+- **list_menu_items**: For menu engineering.
+
+List menu items
+- **list_shifts**: "Who worked yesterday and what tips did they declare?"
+
+List staff shifts
+- **get_order**: Get check details
 - **list_orders**: "What tables have open tabs right now?"
 
 List open checks
-- **get_order**: Get check details
+- **get_revenue_report**: Get daily sales report
+- **list_employees**: List POS users
 - **list_floors**: With table count and capacity.
 
 List floor plans
 - **list_tables**: List tables
-- **list_employees**: List POS users
-- **get_revenue_report**: Get daily sales report
 
 
 ## 💬 Prompt Examples

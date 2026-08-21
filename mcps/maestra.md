@@ -34,16 +34,16 @@ Connect your **Maestra.ai** account to any AI agent to automate your media proce
 
 
 ## Available Tools (8)
-- **list_available_ai_voices**: List all available synthetic AI voices
 - **export_transcription_results**: Get an export link for a processed file
-- **list_maestra_files**: List all audio and video files in your Maestra account
-- **list_account_folders**: List all folders in your account
-- **get_file_details**: Get details and status for a specific file
 - **translate_transcription**: Translate an existing transcription into a new language
+- **list_available_ai_voices**: List all available synthetic AI voices
+- **generate_ai_voiceover**: Generate a synthetic voiceover for a media file
+- **get_file_details**: Get details and status for a specific file
+- **list_account_folders**: List all folders in your account
+- **list_maestra_files**: List all audio and video files in your Maestra account
 - **upload_media_for_transcription**: Requires a public file URL and target source language.
 
 Upload a new file for transcription
-- **generate_ai_voiceover**: Generate a synthetic voiceover for a media file
 
 
 ## 💬 Prompt Examples

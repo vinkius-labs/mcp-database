@@ -36,18 +36,18 @@ Connect your **Magnolia CMS** instance to any AI agent and take full control of 
 
 
 ## Available Tools (10)
-- **mg.copy_delivery_node**: Retrieve the exact structural matching verifying Delivery cloning logic
 - **mg.create_cms_node**: Provision a highly-available JSON Payload writing models natively
-- **mg.wipe_cms_node**: Irreversibly vaporize explicit App nodes dropping live Database bytes
-- **mg.execute_workspace_command**: Dispatch an automated validation check routing explicit Platform logic
 - **mg.get_delivery_children**: Perform structural extraction of properties driving active Branch nesting
 - **mg.get_delivery_node**: rest/delivery/ENDPOINT/PATH` returning pure JSON mappings from the JCR tree securely.
 
 Identify bounded routing spaces inside the Headless Magnolia Delivery layers
 - **mg.get_template_schema**: Enumerate explicitly attached structured rules exporting active fields
-- **mg.list_jcr_workspaces**: Identify precise active arrays spanning rented Context domains
-- **mg.query_delivery_nodes**: Retrieve explicit Cloud logging tracing explicit Payload criteria
 - **mg.patch_cms_node**: Mutate global Web CRM boundaries substituting Draft Document schemas
+- **mg.query_delivery_nodes**: Retrieve explicit Cloud logging tracing explicit Payload criteria
+- **mg.wipe_cms_node**: Irreversibly vaporize explicit App nodes dropping live Database bytes
+- **mg.copy_delivery_node**: Retrieve the exact structural matching verifying Delivery cloning logic
+- **mg.execute_workspace_command**: Dispatch an automated validation check routing explicit Platform logic
+- **mg.list_jcr_workspaces**: Identify precise active arrays spanning rented Context domains
 
 
 ## 💬 Prompt Examples

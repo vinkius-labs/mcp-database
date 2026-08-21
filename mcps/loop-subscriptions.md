@@ -27,19 +27,19 @@ Empower your AI agents to handle **Loop Subscriptions** directly. This server al
 
 
 ## Available Tools (9)
-- **get_customer**: Get customer details
-- **get_subscription**: Get detailed info for a single subscription
 - **cancel_subscription**: Optional reason can be provided.
 
 Cancel a subscription
-- **list_customers**: List all customers with active or past subscriptions
+- **get_customer**: Get customer details
+- **get_subscription**: Get detailed info for a single subscription
 - **list_orders**: List subscription orders
-- **list_subscriptions**: List all Loop Subscriptions
 - **pause_subscription**: You can optionally provide a resume date.
 
 Pause an active subscription
-- **resume_subscription**: Resume a paused subscription
 - **skip_next_order**: Skip the next scheduled order
+- **list_customers**: List all customers with active or past subscriptions
+- **list_subscriptions**: List all Loop Subscriptions
+- **resume_subscription**: Resume a paused subscription
 
 
 ## 💬 Prompt Examples

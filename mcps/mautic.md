@@ -28,9 +28,10 @@ Connect your **Mautic** marketing automation instance to any AI agent and take f
 
 
 ## Available Tools (11)
-- **get_contact**: Get a specific contact by ID
-- **create_contact**: Create a new contact
 - **get_company**: Get company details by ID
+- **get_contact**: Get a specific contact by ID
+- **list_segments**: List all contact segments
+- **create_contact**: Create a new contact
 - **get_email**: Get email details by ID
 - **list_campaigns**: List all campaigns
 - **list_companies**: List all companies
@@ -38,7 +39,6 @@ Connect your **Mautic** marketing automation instance to any AI agent and take f
 
 List or search contacts
 - **list_emails**: List all email templates
-- **list_segments**: List all contact segments
 - **add_contact_to_segment**: Add a contact to a segment
 - **get_campaign**: Get campaign details by ID
 

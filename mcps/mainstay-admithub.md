@@ -36,10 +36,10 @@ Connect your **Mainstay (formerly AdmitHub)** account to your AI agent to unlock
 
 ## Available Tools (5)
 - **list_contacts**: List student contacts
-- **get_contact_details**: Get student details
 - **list_campaigns**: List engagement campaigns
-- **list_messages**: Retrieve message logs
 - **list_custom_fields**: List custom metadata fields
+- **get_contact_details**: Get student details
+- **list_messages**: Retrieve message logs
 
 
 ## 💬 Prompt Examples

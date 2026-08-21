@@ -27,17 +27,17 @@ Connect your **Maropost** account to any AI agent and take full control of your 
 
 
 ## Available Tools (11)
-- **get_report_details**: Get report details by ID
 - **create_contact**: Create or update a contact
+- **get_report_details**: Get report details by ID
+- **list_contacts_in_list**: List contacts in a specific list
+- **list_lists**: List all contact lists
+- **list_workflows**: List all workflows
 - **get_campaign_details**: Get campaign details by ID
 - **get_contact**: Get contact details by email
 - **get_list_details**: Get list details by ID
 - **get_workflow_details**: Get workflow details by ID
 - **list_campaigns**: List all campaigns
-- **list_contacts_in_list**: List contacts in a specific list
-- **list_lists**: List all contact lists
 - **list_reports**: List all reports
-- **list_workflows**: List all workflows
 
 
 ## 💬 Prompt Examples
