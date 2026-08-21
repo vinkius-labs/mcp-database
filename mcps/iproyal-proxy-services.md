@@ -38,30 +38,30 @@ Connect your **IPRoyal** account to any AI agent and take full control of your g
 - **get_availability**: Useful to dynamically determine if a target region has sufficient IPs before initiating a geo-targeted crawl. By default targets "residential".
 
 Check proxy IP availability across different countries
-- **list_countries**: Contains the specific country codes (e.g., "us", "de") and region identifiers required to construct geo-targeted proxy connection strings (e.g., appending "_country-us" to the password).
-
-Get list of supported geo-targeting countries, cities, and ISPs
-- **change_credentials**: If you suspect your proxy credentials have leaked or you need to rotate access keys for security, use this tool to set a new username and password instantly.
-
-Update username/password for an IPRoyal proxy order
-- **list_whitelisted_ips**: Whitelisted IPs can connect directly to the proxy endpoints without supplying the username and password in the connection string.
-
-List IPs allowed to connect to IPRoyal without user/pass
-- **list_orders**: An order represents a purchased batch of proxy traffic or IPs (e.g., Royal Residential, Sneaker IPs). The response contains order IDs necessary for traffic lookups and credential management.
-
-Get all active proxy orders (Residential, Datacenter)
 - **get_profile**: Use this to ensure there are enough funds before executing large scraping runs.
 
 Get IPRoyal account balance and profile details
-- **generate_proxy_string**: Standard format is `geo.iproyal.com:10000:username:password`. Pass `country` to append geographic targeting rules, or `session` for sticky IP sessions.
+- **list_countries**: Contains the specific country codes (e.g., "us", "de") and region identifiers required to construct geo-targeted proxy connection strings (e.g., appending "_country-us" to the password).
 
-Helper to generate a dynamic geo-targeted proxy string
+Get list of supported geo-targeting countries, cities, and ISPs
+- **list_orders**: An order represents a purchased batch of proxy traffic or IPs (e.g., Royal Residential, Sneaker IPs). The response contains order IDs necessary for traffic lookups and credential management.
+
+Get all active proxy orders (Residential, Datacenter)
+- **list_whitelisted_ips**: Whitelisted IPs can connect directly to the proxy endpoints without supplying the username and password in the connection string.
+
+List IPs allowed to connect to IPRoyal without user/pass
 - **remove_whitelist_ip**: Required for security hygiene when scraping servers are decommissioned or IP addresses change.
 
 Revoke an IP from IPRoyal proxy access
 - **add_whitelist_ip**: This is highly recommended for securely authenticating headless scrapers or servers where you do not want to expose proxy credentials in source code.
 
 Authorize a new IP for IPRoyal proxy access
+- **change_credentials**: If you suspect your proxy credentials have leaked or you need to rotate access keys for security, use this tool to set a new username and password instantly.
+
+Update username/password for an IPRoyal proxy order
+- **generate_proxy_string**: Standard format is `geo.iproyal.com:10000:username:password`. Pass `country` to append geographic targeting rules, or `session` for sticky IP sessions.
+
+Helper to generate a dynamic geo-targeted proxy string
 - **get_traffic**: Residential proxies are billed by traffic, so regular monitoring with this endpoint prevents unexpected depletion of funds.
 
 Get precise proxy traffic consumption statistics for an order

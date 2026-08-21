@@ -17,13 +17,13 @@ Empower your AI agents to manage your logistics and field operations with HyperT
 - **get_geofence**: Retrieves details for a specific geofence
 - **get_order**: Retrieves details for a specific order
 - **get_trip**: Retrieves details for a specific trip
-- **get_worker**: Retrieves details for a specific worker
 - **list_devices**: Lists all registered devices
-- **list_geofences**: Lists all geofences
 - **list_orders**: Lists all orders
 - **list_trips**: Lists all trips
-- **list_workers**: Lists all workers
 - **get_device**: Retrieves details for a specific device
+- **get_worker**: Retrieves details for a specific worker
+- **list_geofences**: Lists all geofences
+- **list_workers**: Lists all workers
 
 
 ## 💬 Prompt Examples

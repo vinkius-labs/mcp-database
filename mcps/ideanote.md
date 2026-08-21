@@ -15,8 +15,6 @@ Empower your AI agents to manage your innovation pipeline with Ideanote. This MC
 
 ## Available Tools (10)
 - **list_users**: Lists all users in the workspace
-- **list_workspaces**: Lists all workspaces
-- **get_idea**: Retrieves details for a specific idea
 - **list_ideas**: Lists all ideas
 - **list_missions**: Lists all missions
 - **list_phases**: Lists idea phases
@@ -24,6 +22,8 @@ Empower your AI agents to manage your innovation pipeline with Ideanote. This MC
 - **list_webhooks**: Lists all configured webhooks
 - **get_me**: Gets current authenticated user info
 - **get_mission**: Retrieves details for a specific mission
+- **get_idea**: Retrieves details for a specific idea
+- **list_workspaces**: Lists all workspaces
 
 
 ## 💬 Prompt Examples

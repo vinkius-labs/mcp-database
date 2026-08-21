@@ -14,15 +14,15 @@ Connect your AI agents to Humaans, the modern HRIS for global teams. This MCP se
 
 
 ## Available Tools (10)
-- **list_documents**: Lists company and employee documents
 - **list_employees**: Lists all employees
 - **list_leaves**: Lists employee leave requests
 - **list_roles**: Lists job roles
 - **list_teams**: Lists organization teams
 - **get_me**: Gets current authenticated user info
-- **list_departments**: Lists organization departments
-- **list_offices**: Lists organization offices
 - **list_public_holidays**: Lists public holidays
+- **list_departments**: Lists organization departments
+- **list_documents**: Lists company and employee documents
+- **list_offices**: Lists organization offices
 - **get_employee**: Retrieves details for a specific employee
 
 
