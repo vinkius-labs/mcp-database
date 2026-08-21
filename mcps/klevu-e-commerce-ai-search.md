@@ -36,18 +36,18 @@ Connect your **Klevu** account to any AI agent and take full control of your e-c
 
 
 ## Available Tools (10)
-- **search_autocomplete**: Fetch search autocomplete suggestions as the user types
 - **search_category**: Retrieve products for a specific category page (Smart Category Merchandising)
 - **search_filtered**: g., color, size, brand) applied to narrow down the result set.
 
 Search the Klevu catalog with specific facet filters applied
 - **search_keyword**: Search catalog by keyword using Klevu AI
-- **search_pagination**: Retrieve paginated results for a search query
 - **search_product_id**: Retrieve details for a specific catalog product by ID
-- **search_raw**: Execute a custom JSON search payload against the Klevu API
 - **search_recs**: Fetch Klevu AI product recommendations
-- **search_sorted**: Perform a keyword search with a custom sorting order
 - **search_trending**: View currently trending and most relevant globalThis products
+- **search_autocomplete**: Fetch search autocomplete suggestions as the user types
+- **search_pagination**: Retrieve paginated results for a search query
+- **search_raw**: Execute a custom JSON search payload against the Klevu API
+- **search_sorted**: Perform a keyword search with a custom sorting order
 
 
 ## 💬 Prompt Examples

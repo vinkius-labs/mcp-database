@@ -34,15 +34,15 @@ Connect your **Keen.io** project to any AI agent to automate data collection and
 
 
 ## Available Tools (10)
-- **average_property**: Calculate average of a property
-- **list_collections**: List all event collections
 - **count_events**: Count total events in a collection
 - **count_unique**: Count unique values for a property
-- **list_datasets**: List cached datasets
 - **get_project_details**: Get project configuration and details
+- **list_collections**: List all event collections
+- **list_datasets**: List cached datasets
 - **record_event**: Record a single event to a collection
-- **list_saved_queries**: List all saved queries
 - **select_unique**: List all unique values for a property
+- **average_property**: Calculate average of a property
+- **list_saved_queries**: List all saved queries
 - **sum_property**: Sum numeric values of a property
 
 

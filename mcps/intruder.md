@@ -14,9 +14,6 @@ Empower your AI agents to manage your cybersecurity posture with Intruder.io. Th
 
 
 ## Available Tools (10)
-- **list_cloud_integrations**: Essential for auditing how Intruder discovers new targets in the cloud infrastructure.
-
-Lists all configured cloud integrations (AWS, Azure, Google Cloud)
 - **list_issues**: Returns issue titles, severity levels (Low, Medium, High, Critical), and status. Use this as the primary tool for security posture auditing.
 
 Lists all identified vulnerability issues
@@ -29,6 +26,9 @@ Lists all infrastructure and application targets
 - **list_teams**: Useful for understanding organizational access controls.
 
 Lists all organization teams
+- **list_cloud_integrations**: Essential for auditing how Intruder discovers new targets in the cloud infrastructure.
+
+Lists all configured cloud integrations (AWS, Azure, Google Cloud)
 - **list_licences**: Useful for verifying subscription status and capacity.
 
 Lists all account licences

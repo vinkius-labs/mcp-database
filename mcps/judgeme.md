@@ -17,9 +17,6 @@ Empower your AI agents with Judge.me's comprehensive product review platform. Th
 - **get_question**: Use this before preparing an official answer.
 
 Retrieves details for a specific question
-- **get_review**: Returns deep-dive information including metadata and moderation status. Use this when analyzing a particular customer case or response.
-
-Retrieves details for a specific review
 - **get_settings**: me app for the shop, including review widgets and email settings. Useful for system configuration auditing.
 
 Retrieves shop settings for Judge.me
@@ -38,6 +35,9 @@ Lists all products in the shop
 - **list_questions**: me Q&A feature. Returns question text, status, and IDs. Use this to identify customer inquiries that need answers.
 
 Lists all customer questions
+- **get_review**: Returns deep-dive information including metadata and moderation status. Use this when analyzing a particular customer case or response.
+
+Retrieves details for a specific review
 - **list_reviews**: me platform. Returns reviewer names, ratings, review titles, and bodies. Use this to monitor customer sentiment and analyze product feedback.
 
 Lists all product reviews

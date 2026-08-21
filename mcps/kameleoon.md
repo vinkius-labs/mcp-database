@@ -34,23 +34,23 @@ Empower your AI agents to control your **Kameleoon** experimentation platform. T
 
 
 ## Available Tools (10)
-- **create_experiment**: Requires a name and a site ID.
-
-Create a new experiment
-- **list_custom_data**: List custom data dimensions
-- **list_experiments**: Use this to monitor campaign statuses and identify active experiments.
-
-List all experiments in Kameleoon
-- **get_site**: Get details for a specific site
 - **get_experiment_results**: This is an asynchronous process in the Kameleoon API.
 
 Request a results report for an experiment
-- **list_targeting_rules**: List targeting rules
-- **list_segments**: List audience segments
 - **list_sites**: List all sites in the account
 - **list_variations**: ) associated with a specific experiment ID.
 
 List variations for an experiment
+- **create_experiment**: Requires a name and a site ID.
+
+Create a new experiment
+- **get_site**: Get details for a specific site
+- **list_custom_data**: List custom data dimensions
+- **list_experiments**: Use this to monitor campaign statuses and identify active experiments.
+
+List all experiments in Kameleoon
+- **list_segments**: List audience segments
+- **list_targeting_rules**: List targeting rules
 - **get_experiment**: Get details for a specific experiment
 
 

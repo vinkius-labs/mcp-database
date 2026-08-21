@@ -34,34 +34,34 @@ Infinity is a highly customizable work management platform used by teams to orga
 
 
 ## Available Tools (15)
-- **list_attributes**: List attributes configured on a board
-- **delete_item**: Delete an item from a board
 - **get_profile**: Use this to verify connection and identify your user ID.
 
 Get the authenticated user profile
 - **list_workspaces**: Use workspace IDs to query boards and items within specific workspaces.
 
 List all workspaces accessible to the user
-- **list_boards**: Use board IDs to query items, folders, and attributes.
-
-List all boards in a workspace
-- **list_comments**: List comments on an item
 - **create_board**: Body should include name and optional settings.
 
 Create a new board in a workspace
 - **create_comment**: Body should include content.
 
 Add a comment to an item
+- **delete_item**: Delete an item from a board
+- **get_board**: Get details of a specific board
+- **list_attributes**: List attributes configured on a board
+- **list_boards**: Use board IDs to query items, folders, and attributes.
+
+List all boards in a workspace
+- **list_comments**: List comments on an item
 - **create_folder**: Create a new folder in a board
 - **create_item**: Body should include name and attribute values.
 
 Create a new item in a board
-- **list_folders**: List folders in a board
-- **get_board**: Get details of a specific board
-- **get_item**: Get details of a specific item
 - **list_items**: Supports pagination via cursor.
 
 List all items in a board
+- **get_item**: Get details of a specific item
+- **list_folders**: List folders in a board
 - **update_item**: Update an existing item in a board
 
 

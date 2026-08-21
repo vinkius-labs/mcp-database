@@ -35,22 +35,22 @@ Connect your **Jawg Maps** account to any AI agent and take full control of prof
 
 
 ## Available Tools (10)
-- **calculate_elevation_routing**: Calculate a route that includes elevation profiles
-- **search_autocomplete**: You can optionally bias results towards a specific GPS location.
-
-Autocomplete a place or address search query
-- **get_path_elevation**: Get elevation data for specific coordinates
-- **calculate_reachability_isochrone**: Calculate the area reachable within a given time limit
+- **calculate_distance_isochrone**: Calculate the area reachable within a given distance limit
 - **calculate_distance_matrix**: Compute travel times and distances between multiple origins and destinations
-- **reverse_geocode**: Get address information from GPS coordinates
+- **calculate_elevation_routing**: Calculate a route that includes elevation profiles
+- **calculate_reachability_isochrone**: Calculate the area reachable within a given time limit
 - **calculate_routing_line**: ) passing through the provided waypoints.
 
 Calculate a route between multiple coordinates
-- **search_country_filter**: Search for places with a strict country filter
 - **search_map_places**: Returns matching locations with their coordinates.
 
 Search for places and addresses by text
-- **calculate_distance_isochrone**: Calculate the area reachable within a given distance limit
+- **get_path_elevation**: Get elevation data for specific coordinates
+- **search_autocomplete**: You can optionally bias results towards a specific GPS location.
+
+Autocomplete a place or address search query
+- **reverse_geocode**: Get address information from GPS coordinates
+- **search_country_filter**: Search for places with a strict country filter
 
 
 ## 💬 Prompt Examples

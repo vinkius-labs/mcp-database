@@ -29,22 +29,22 @@ Connect your AI agent to **Kontent.ai Delivery API** to fetch and analyze your m
 
 
 ## Available Tools (10)
-- **list_content_items**: Use this to find codenames for specific articles, products, or pages.
-
-List all content items from Kontent.ai
 - **get_content_item**: Get a specific content item by codename
-- **list_content_types**: List all content types (schemas)
-- **get_content_type**: Get details for a content type
-- **list_taxonomies**: List taxonomy groups
-- **get_taxonomy_group**: Get details for a taxonomy group
-- **list_project_languages**: List supported languages
-- **list_content_assets**: ai.
-
-Query assets from the content library
-- **search_kontent_ai**: Search for content using query parameters
 - **get_content_type_element**: g., options for a multiple choice element).
 
 Get metadata for a specific element in a type
+- **list_content_assets**: ai.
+
+Query assets from the content library
+- **list_content_items**: Use this to find codenames for specific articles, products, or pages.
+
+List all content items from Kontent.ai
+- **get_content_type**: Get details for a content type
+- **get_taxonomy_group**: Get details for a taxonomy group
+- **list_content_types**: List all content types (schemas)
+- **list_taxonomies**: List taxonomy groups
+- **list_project_languages**: List supported languages
+- **search_kontent_ai**: Search for content using query parameters
 
 
 ## 💬 Prompt Examples

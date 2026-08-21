@@ -19,10 +19,10 @@ Empower your AI agents to manage your B2B marketing orchestration with Integrate
 - **get_lead**: Retrieves details for a specific lead
 - **get_system_status**: Gets the current Integrate system status
 - **list_campaigns**: Lists all marketing campaigns
-- **list_dispositions**: Lists all lead dispositions (rejected, valid, etc.)
 - **list_leads**: Lists all marketing leads
-- **list_segments**: Lists all defined audience segments
 - **list_users**: Lists all users in the organization
+- **list_dispositions**: Lists all lead dispositions (rejected, valid, etc.)
+- **list_segments**: Lists all defined audience segments
 - **list_sources**: Lists all configured lead sources
 
 

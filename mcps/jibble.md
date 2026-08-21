@@ -23,18 +23,9 @@ Retrieves details for a specific person
 - **get_time_entry**: Returns location data, activity notes, and associated device info. Use for auditing or correcting a specific employee time log.
 
 Retrieves details for a specific time entry
-- **list_activities**: g., "Meeting", "Development", "Break") that employees can select when clocking in. Useful for identifying high-level task categories.
-
-Lists all configured activities
-- **list_clients**: Useful for professional services tracking and billable hours auditing.
-
-Lists all configured clients
 - **list_groups**: g., "Sales Team", "Remote Workers") used to organize the workforce. Useful for group-based performance reporting.
 
 Lists all configured groups
-- **list_locations**: Useful for auditing site-based workforce distribution.
-
-Lists all configured locations
 - **list_people**: Includes names, emails, and internal IDs. Use this to identify personnel before querying their time entries.
 
 Lists all people in the organization
@@ -44,6 +35,15 @@ Lists all configured projects
 - **list_time_entries**: Returns employee IDs, entry times, and durations. Use this to monitor workforce activity and total work hours.
 
 Lists all time entries
+- **list_activities**: g., "Meeting", "Development", "Break") that employees can select when clocking in. Useful for identifying high-level task categories.
+
+Lists all configured activities
+- **list_clients**: Useful for professional services tracking and billable hours auditing.
+
+Lists all configured clients
+- **list_locations**: Useful for auditing site-based workforce distribution.
+
+Lists all configured locations
 
 
 ## 💬 Prompt Examples

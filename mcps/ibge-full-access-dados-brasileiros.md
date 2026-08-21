@@ -26,27 +26,27 @@ Power users, data scientists, and AI agents that need comprehensive Brazilian in
 
 
 ## Available Tools (15)
-- **list_estados**: List all 27 Brazilian states
 - **get_ranking_nomes**: Filter by decade or sex.
 
 Get ranking of most popular Brazilian names
-- **list_secoes_cnae**: List all 21 CNAE economic sections
-- **get_subclasse_cnae**: Get CNAE subclass details
+- **list_estados**: List all 27 Brazilian states
+- **get_municipio**: Get municipality details by IBGE code
+- **get_nome_frequencia**: Get birth frequency by decade for a name
 - **get_noticias_ibge**: Get latest news from IBGE news agency
 - **get_pais_indicadores**: Use the M49 country code.
 
 Get socioeconomic indicators for any country
+- **list_regioes**: List the 5 macro-regions of Brazil
+- **get_subclasse_cnae**: Get CNAE subclass details
+- **list_secoes_cnae**: List all 21 CNAE economic sections
 - **get_municipios_por_uf**: List municipalities in a state
 - **list_agregados**: List SIDRA aggregate tables
-- **get_nome_frequencia**: Get birth frequency by decade for a name
-- **get_municipio**: Get municipality details by IBGE code
-- **list_regioes**: List the 5 macro-regions of Brazil
 - **get_agregado_data**: Levels: N1=Brasil, N3=UF, N6=Município.
 
 Get data from a SIDRA aggregate table
 - **get_agregado_metadados**: Get metadata for a SIDRA aggregate
-- **list_pesquisas**: List all IBGE surveys
 - **get_resultados_pesquisa**: Get survey results for a municipality
+- **list_pesquisas**: List all IBGE surveys
 
 
 ## 💬 Prompt Examples

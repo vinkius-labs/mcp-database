@@ -37,19 +37,19 @@ Connect your **Hudu** instance to any AI agent and manage your IT documentation 
 - **create_company**: Requires a name.
 
 Create a new company
-- **create_asset**: Requires asset name and company ID.
-
-Create a new asset
-- **get_article**: Get details for a specific article
 - **get_asset**: Get details for a specific asset
-- **get_company**: Get details for a specific company
 - **get_password**: Get details for a specific password
-- **get_procedure**: Get details for a specific procedure
 - **list_articles**: List knowledge base articles
 - **list_assets**: Can be filtered by company ID.
 
 List assets
 - **list_companies**: List all companies in Hudu
+- **create_asset**: Requires asset name and company ID.
+
+Create a new asset
+- **get_article**: Get details for a specific article
+- **get_company**: Get details for a specific company
+- **get_procedure**: Get details for a specific procedure
 - **list_passwords**: Can be filtered by company ID.
 
 List passwords

@@ -34,13 +34,12 @@ Connect your **Karbon** account to any AI agent to streamline your accounting fi
 
 
 ## Available Tools (12)
+- **list_contact_notes**: List notes for a specific contact
 - **list_contacts**: Useful for a broad overview of clients and associates.
 
 List all contacts (Organizations and People)
-- **get_work_item**: Get details for a specific work item
-- **list_contact_notes**: List notes for a specific contact
-- **update_work_item**: Update an existing work item
 - **get_contact**: Get detailed information for a specific contact
+- **get_work_item**: Get details for a specific work item
 - **list_organizations**: ).
 
 List only organizational contacts
@@ -48,6 +47,7 @@ List only organizational contacts
 
 List only individual people contacts
 - **list_work_tasks**: List tasks for a specific work item
+- **update_work_item**: Update an existing work item
 - **list_users**: Use this to identify assignees or firm members.
 
 List all users in the Karbon firm

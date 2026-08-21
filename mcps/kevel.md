@@ -37,17 +37,17 @@ Connect your **Kevel** (formerly Adzerk) account to any AI agent to streamline y
 - **get_campaign**: Get details for a specific campaign
 - **list_sites**: List all sites
 - **list_zones**: List all zones
+- **list_channels**: List all channels
+- **get_advertiser**: Get details for a specific advertiser
+- **list_ads**: List all ads
 - **list_ad_types**: g., banner, native).
 
 List available ad types
-- **list_ads**: List all ads
 - **list_advertisers**: List all advertisers in Kevel
 - **list_campaigns**: List all campaigns
-- **list_channels**: List all channels
 - **list_creatives**: ) uploaded to the account.
 
 List all creatives
-- **get_advertiser**: Get details for a specific advertiser
 - **list_flights**: List all flights
 
 
