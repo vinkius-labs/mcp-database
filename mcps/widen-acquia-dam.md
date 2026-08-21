@@ -39,12 +39,10 @@ No more manual browsing through massive asset libraries. Your AI agent becomes y
 
 
 ## Available Tools (10)
-- **get_asset_details**: Retrieves comprehensive metadata and technical properties for a specific asset
 - **get_category_contents**: Retrieves the assets and sub-nodes within a specific category
-- **list_collection_assets**: Lists all assets contained within a specific user collection
+- **list_cdn_embed_links**: Retrieves all active CDN embed links and HTML snippets for a specific asset
 - **list_global_categories**: Lists all top-level categories (folders) in the DAM hierarchy
 - **list_saved_collections**: Lists all user-defined asset collections
-- **list_cdn_embed_links**: Retrieves all active CDN embed links and HTML snippets for a specific asset
 - **list_account_users**: Lists all authorized users in the Acquia DAM instance
 - **search_widen_assets**: Provide a search query string.
 
@@ -55,6 +53,8 @@ Updates the metadata fields of an existing asset
 - **delete_media_asset**: This action is irreversible and removes the asset from all collections.
 
 Permanently removes an asset from the Acquia DAM
+- **get_asset_details**: Retrieves comprehensive metadata and technical properties for a specific asset
+- **list_collection_assets**: Lists all assets contained within a specific user collection
 
 
 ## 💬 Prompt Examples

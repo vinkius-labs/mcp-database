@@ -15,9 +15,9 @@ The UKG Pro Workforce Management (WFM) MCP Server provides AI agents with direct
 
 ## Available Tools (4)
 - **schedules**: List schedules for employees
+- **timesheets**: List timesheets for employees
 - **accruals**: List accrual balances (e.g. sick leave, PTO)
 - **timeoff**: List time off requests for employees
-- **timesheets**: List timesheets for employees
 
 
 ## 💬 Prompt Examples

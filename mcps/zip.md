@@ -35,6 +35,8 @@ Connect your **Zip** (formerly Quadpay) merchant account to any AI agent to auto
 
 
 ## Available Tools (8)
+- **capture_zip_payment**: Capture funds for an authorized order
+- **confirm_zip_order**: Finalize an authorized order
 - **get_zip_order_status**: g., Authorized, Captured, Cancelled) for a target order.
 
 Check the status of a Zip order
@@ -43,8 +45,6 @@ Check the status of a Zip order
 - **authorize_zip_order**: Typically used in US gateway integrations.
 
 Authorize a payment order
-- **capture_zip_payment**: Capture funds for an authorized order
-- **confirm_zip_order**: Finalize an authorized order
 - **create_zip_checkout**: Requires amount, currency, and redirect URLs.
 
 Initialize a new Zip checkout session

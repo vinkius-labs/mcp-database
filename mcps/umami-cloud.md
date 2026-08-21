@@ -14,8 +14,8 @@ The Umami Cloud MCP Server connects AI agents to the Umami Analytics API. It all
 
 
 ## Available Tools (2)
-- **websites**: Get specific metrics (urls, browsers, os, devices) for a website
 - **users**: Get the number of active users on a website
+- **websites**: Get specific metrics (urls, browsers, os, devices) for a website
 
 
 ## 💬 Prompt Examples

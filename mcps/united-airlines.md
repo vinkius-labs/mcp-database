@@ -39,12 +39,18 @@ No more switching between multiple flight tracker apps or digging through airlin
 
 
 ## Available Tools (12)
-- **get_aircraft_fleet**: Returns aircraft types, registration numbers, and other fleet details. Use this when users want to understand the types of aircraft United Airlines operates or find information about specific aircraft in their fleet. This provides static fleet composition data, not real-time aircraft positioning.
-
-Get information about United Airlines aircraft fleet
 - **get_airline_info**: Use this to get basic information about United Airlines as a carrier. This is primarily useful for verifying airline codes or getting carrier metadata.
 
 Get detailed information about United Airlines
+- **get_departures**: g., "SFO" for San Francisco, "EWR" for Newark). Optionally filter by date (YYYY-MM-DD format) to see departures on a specific day. Returns flight numbers, destinations, scheduled times, gates, terminals, and current departure status. Use this when users want to see all United flights leaving from a particular airport on a given day. Common United hubs include: EWR (Newark), ORD (Chicago), IAH (Houston), DEN (Denver), SFO (San Francisco), LAX (Los Angeles), IAD (Washington Dulles), LHR (London Heathrow).
+
+List all United Airlines departures from a specific airport
+- **get_flight_status**: g., "123" for UA123). Returns departure/arrival airports, scheduled/estimated times, gate, terminal, baggage belt, and current flight status (scheduled, active, landed, cancelled, etc). Use this tool when a user asks about the current status of a specific United flight. The flight number should be just the digits, without the "UA" prefix.
+
+Get real-time status of a specific United Airlines flight by flight number (e.g., UA123)
+- **get_aircraft_fleet**: Returns aircraft types, registration numbers, and other fleet details. Use this when users want to understand the types of aircraft United Airlines operates or find information about specific aircraft in their fleet. This provides static fleet composition data, not real-time aircraft positioning.
+
+Get information about United Airlines aircraft fleet
 - **get_airline_routes**: Returns all origin-destination airport pairs that United serves. Each route includes departure airport IATA code, arrival airport IATA code, and codeshare information if applicable. Use this to understand the full reach of United Airlines network, analyze route coverage, or find if United flies between two cities. This provides static route data, not flight schedules or availability.
 
 List all routes operated by United Airlines (origin-destination pairs)
@@ -54,18 +60,12 @@ Get detailed information about an airport served by United Airlines
 - **get_arrivals**: g., "JFK" for New York JFK, "LAX" for Los Angeles). Optionally filter by date (YYYY-MM-DD format) to see arrivals on a specific day. Returns flight numbers, origin airports, scheduled times, gates, terminals, baggage belts, and current arrival status. Use this when users want to track incoming United flights at a particular airport or check when a flight from a specific origin arrives.
 
 List all United Airlines arrivals at a specific airport
-- **get_departures**: g., "SFO" for San Francisco, "EWR" for Newark). Optionally filter by date (YYYY-MM-DD format) to see departures on a specific day. Returns flight numbers, destinations, scheduled times, gates, terminals, and current departure status. Use this when users want to see all United flights leaving from a particular airport on a given day. Common United hubs include: EWR (Newark), ORD (Chicago), IAH (Houston), DEN (Denver), SFO (San Francisco), LAX (Los Angeles), IAD (Washington Dulles), LHR (London Heathrow).
-
-List all United Airlines departures from a specific airport
 - **get_flight_by_number**: This is useful for finding the regular schedule and route of a flight number (e.g., which airports UA1 serves). Returns flight schedule information including departure/arrival airports and times. Use this to understand the typical route and schedule of a specific United flight number.
 
 Search for United Airlines flights by flight number across all dates and routes
 - **get_flight_history**: Returns actual departure/arrival times, delays, cancellations, and flight outcomes. Use this to analyze past flight performance, check if a flight was delayed or cancelled on a specific date, or review on-time performance. The date must be in YYYY-MM-DD format and should be a past date. Specify "departure" or "arrival" for the type parameter.
 
 Get historical United Airlines flight data for a past date
-- **get_flight_status**: g., "123" for UA123). Returns departure/arrival airports, scheduled/estimated times, gate, terminal, baggage belt, and current flight status (scheduled, active, landed, cancelled, etc). Use this tool when a user asks about the current status of a specific United flight. The flight number should be just the digits, without the "UA" prefix.
-
-Get real-time status of a specific United Airlines flight by flight number (e.g., UA123)
 - **get_flights_by_status**: Status values include: "scheduled", "active", "landed", "cancelled", "delayed", "diverted", etc. Use this when users want to see all delayed flights, cancelled flights, or flights in a particular state at an airport. Specify the airport IATA code, the status filter, and whether to check departures or arrivals. This is particularly useful for finding disrupted flights or checking operational impacts at an airport.
 
 Find United Airlines flights at an airport with a specific status (delayed, cancelled, active, etc)

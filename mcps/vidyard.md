@@ -39,21 +39,21 @@ No more manual browsing through complex video dashboards. Your AI agent becomes 
 
 ## Available Tools (10)
 - **create_empty_player**: Creates a new, empty video player container
-- **get_video_source_files**: Retrieves direct stream URLs for various video qualities (480p, 720p, etc.)
 - **get_player_details**: Retrieves details for a specific video player
 - **get_video_details**: Retrieves technical metadata for a specific video asset
+- **get_video_source_files**: Retrieves direct stream URLs for various video qualities (480p, 720p, etc.)
 - **list_video_players**: Lists all configured video players (facades) in the account
 - **list_videos**: Lists all video assets stored in the Vidyard dashboard
-- **attach_video_to_player**: Requires both player ID and video ID.
-
-Adds a video asset into a specific player container
-- **update_player_name**: Updates the display name or title of an existing player
 - **delete_video_player**: Note that the original video assets are not deleted.
 
 Permanently deletes a video player
+- **attach_video_to_player**: Requires both player ID and video ID.
+
+Adds a video asset into a specific player container
 - **delete_video_asset**: This action is irreversible.
 
 Permanently deletes a video asset from Vidyard
+- **update_player_name**: Updates the display name or title of an existing player
 
 
 ## 💬 Prompt Examples

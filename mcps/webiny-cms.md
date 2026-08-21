@@ -45,19 +45,19 @@ Creates a new draft entry for a content model
 - **delete_cms_entry**: This action is irreversible.
 
 Permanently deletes a content entry revision
-- **execute_graphql_query**: Specify api_type (manage, read, preview) and locale.
-
-Executes a raw GraphQL query or mutation against the Webiny CMS API
 - **get_api_introspection**: Retrieves the GraphQL schema introspection for the Webiny instance
-- **get_model_entry_details**: ID refers to the specific revision.
-
-Retrieves details for a specific content model entry
 - **list_model_entries**: Provide the model plural name (e.g. "Articles"). Specify api_type (manage for drafts, read for live).
 
 Lists all entries for a specific content model in Webiny
 - **update_cms_entry**: Provide the entry ID and a JSON object containing the field updates.
 
 Updates fields of an existing content entry revision
+- **execute_graphql_query**: Specify api_type (manage, read, preview) and locale.
+
+Executes a raw GraphQL query or mutation against the Webiny CMS API
+- **get_model_entry_details**: ID refers to the specific revision.
+
+Retrieves details for a specific content model entry
 - **get_tenant_config**: Retrieves globalThis settings for the Webiny tenant
 - **publish_cms_entry**: Provide the specific revision ID.
 

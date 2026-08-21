@@ -39,21 +39,21 @@ No more manual navigation through meeting dashboards to create a room. Your AI a
 
 
 ## Available Tools (10)
-- **create_meeting_room**: Provide an ISO 8601 end date and room mode (normal or group).
-
-Creates a new transient video meeting room with a specific end date
 - **delete_meeting_room**: This action is irreversible.
 
 Immediately deletes a video meeting room and terminates any active session
-- **delete_cloud_recording**: This action is irreversible.
-
-Permanently deletes a cloud recording file
 - **reset_room_theme**: Resets a meeting room theme back to the default Whereby branding
-- **get_meeting_details**: Retrieves details for a specific video meeting, including its join URL and expiration date
 - **get_recording_details**: Retrieves download links and metadata for a specific cloud recording
 - **get_room_theme**: Retrieves the visual theme settings (colors, logo) for a specific room name
 - **list_cloud_recordings**: Lists all cloud recordings stored in the Whereby account
 - **list_active_meetings**: Lists all currently active or pending video meeting rooms created via the API
+- **create_meeting_room**: Provide an ISO 8601 end date and room mode (normal or group).
+
+Creates a new transient video meeting room with a specific end date
+- **delete_cloud_recording**: This action is irreversible.
+
+Permanently deletes a cloud recording file
+- **get_meeting_details**: Retrieves details for a specific video meeting, including its join URL and expiration date
 - **update_room_theme**: Provide the room name and a hex color code.
 
 Updates the primary branding color for a specific meeting room

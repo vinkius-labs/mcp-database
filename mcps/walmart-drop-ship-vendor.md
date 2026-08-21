@@ -31,13 +31,13 @@ Specifically built for **1P Suppliers**, **Drop Ship Vendors**, and large scalab
 
 
 ## Available Tools (8)
-- **dsv_cancel_lines**: Cancel DSV explicitly parsing unfulfilled constraints isolating cleanly 1P seller structures natively
 - **dsv_check_node_status**: Poll safely logical Node arrays checking completely if the 1P distribution centers bounds are running efficiently
 - **dsv_get_orders**: Extract actively explicitly created Drop Ship Vendor orders resolving native structured logs inherently cleanly
 - **dsv_get_packing_slips**: Extract packing arrays compiling explicit 1P documents cleanly generating accurate warehouse tracking constraints
 - **dsv_manage_inventory**: Allocate physical 1P logistic stock actively pushing exact constraints explicitly
 - **dsv_route_shipments**: Verify explicitly local transport carriers ensuring correctly routed bounds targeting accurate node paths natively
 - **dsv_submit_asn**: Execute advance shipping notices mapping the physical tracking updates tracing supplier shipments natively
+- **dsv_cancel_lines**: Cancel DSV explicitly parsing unfulfilled constraints isolating cleanly 1P seller structures natively
 - **dsv_update_lag_time**: Execute tracking updates bounding fulfillment lag days parsing supplier node latency accurately explicitly
 
 

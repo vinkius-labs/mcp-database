@@ -22,10 +22,10 @@ Free API key required (instant registration). The definitive source for nutritio
 
 
 ## Available Tools (2)
+- **get_usda_food_details**: Get detailed nutritional information for a specific food by its USDA FDC ID
 - **search_usda_foods**: S. Department of Agriculture food database containing 300,000+ foods. Returns calories, protein, fat, carbs, fiber, and sugar per serving. Covers foundation foods, branded products, and survey data.
 
 Search the USDA FoodData Central database for foods and their nutritional profiles
-- **get_usda_food_details**: Get detailed nutritional information for a specific food by its USDA FDC ID
 
 
 ## 💬 Prompt Examples

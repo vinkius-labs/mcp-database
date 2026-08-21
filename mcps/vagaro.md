@@ -31,30 +31,30 @@ Connect your **Vagaro** business to any AI agent and manage your salon, spa, or 
 
 
 ## Available Tools (10)
-- **get_client**: Get client profile
 - **list_services**: Includes pricing, duration, and category.
 
 List all services offered
-- **get_staff_schedule**: Shows booked and available time slots.
-
-Get staff member schedule
 - **list_appointments**: Filter by date to see a specific day.
 
 List salon/spa/fitness appointments
-- **list_classes**: Includes schedule, instructor, capacity, and enrolled count.
-
-List fitness/wellness classes
 - **list_products**: Includes name, price, brand, and stock level.
 
 List retail products
-- **get_business_info**: Get business profile
 - **get_appointment**: Get appointment details
 - **search_clients**: Returns contact info, visit history, and preferences.
 
 Search clients/customers
+- **get_business_info**: Get business profile
 - **list_staff**: Includes name, role, specialties, and availability.
 
 List all staff/providers
+- **get_client**: Get client profile
+- **get_staff_schedule**: Shows booked and available time slots.
+
+Get staff member schedule
+- **list_classes**: Includes schedule, instructor, capacity, and enrolled count.
+
+List fitness/wellness classes
 
 
 ## 💬 Prompt Examples

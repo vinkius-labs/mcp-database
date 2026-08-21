@@ -33,6 +33,10 @@ Connect your **Zenoti** organization to any AI agent and manage your spa, salon,
 
 
 ## Available Tools (14)
+- **get_guest_loyalty**: Get guest loyalty points
+- **list_centers**: Includes name, address, timezone, and operating hours. Essential for multi-location spa chains like Massage Envy.
+
+List spa/salon locations
 - **list_employees**: Includes role, schedule, payroll info, and commission structure.
 
 List all employees
@@ -49,21 +53,17 @@ List service packages
 
 List gift cards
 - **get_center**: Get center details
-- **search_guests**: Returns profile, visit history, loyalty points, preferred therapist, and product preferences.
-
-Search spa/salon guests
-- **get_guest_loyalty**: Get guest loyalty points
 - **list_appointments**: Filter by date to see a specific day.
 
 List spa/salon appointments
+- **search_guests**: Returns profile, visit history, loyalty points, preferred therapist, and product preferences.
+
+Search spa/salon guests
 - **get_appointment**: Get appointment details
 - **list_services**: Includes pricing, duration, category, and required room type.
 
 List spa/salon services
 - **list_therapists**: List therapists and providers
-- **list_centers**: Includes name, address, timezone, and operating hours. Essential for multi-location spa chains like Massage Envy.
-
-List spa/salon locations
 - **get_guest**: Get guest profile
 
 
