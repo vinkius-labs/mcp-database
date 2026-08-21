@@ -36,20 +36,20 @@ No more manual checking of individual scraping jobs or missing batch completion 
 
 
 ## Available Tools (10)
-- **get_agent**: Get agent details
 - **get_batch_results**: Get batch results
-- **get_batch**: Get batch details
 - **get_usage**: Get API usage stats
 - **list_agents**: List scraping agents
 - **list_batches**: List all batches
-- **scrape_url**: Optionally specify format: markdown, html, or text.
-
-Scrape a web page
-- **check_olostep_status**: Verify Olostep API connectivity
 - **create_agent**: Create a scraping agent
 - **create_batch**: Pass URLs as comma-separated values.
 
 Create a batch scrape
+- **check_olostep_status**: Verify Olostep API connectivity
+- **get_agent**: Get agent details
+- **get_batch**: Get batch details
+- **scrape_url**: Optionally specify format: markdown, html, or text.
+
+Scrape a web page
 
 
 ## 💬 Prompt Examples

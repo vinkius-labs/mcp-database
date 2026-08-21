@@ -37,18 +37,18 @@ No more manual spreadsheet tracking for vehicle placement. Your AI acts as a ded
 
 ## Available Tools (11)
 - **list_shipments**: List all Pando shipments
-- **get_shipment_details**: Get specific shipment details
-- **list_vehicles**: List all registered vehicles
-- **create_indent**: Pass data as a JSON string.
-
-Create a new vehicle indent
-- **get_indent_details**: Get details for a specific indent
 - **check_api_status**: Verify Pando API connectivity
+- **get_indent_details**: Get details for a specific indent
 - **list_carriers**: List all transport carriers
 - **list_indents**: List all vehicle indents
 - **list_locations**: List all warehouse locations
-- **list_materials**: List all registered materials
 - **list_routes**: List all configured routes
+- **create_indent**: Pass data as a JSON string.
+
+Create a new vehicle indent
+- **get_shipment_details**: Get specific shipment details
+- **list_materials**: List all registered materials
+- **list_vehicles**: List all registered vehicles
 
 
 ## 💬 Prompt Examples

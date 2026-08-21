@@ -36,8 +36,8 @@ Connect your **MightyCall** account to any AI agent to streamline your business 
 ## Available Tools (6)
 - **list_contacts**: List all contacts
 - **create_contact**: Create a new contact
-- **list_calls**: List all recent calls
 - **list_business_numbers**: List your business phone numbers
+- **list_calls**: List all recent calls
 - **list_voicemails**: List recent voicemails
 - **make_call**: Pass data as a JSON string.
 

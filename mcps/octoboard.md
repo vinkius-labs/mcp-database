@@ -36,20 +36,20 @@ No more manual data entry into reporting tools. Your AI acts as a dedicated data
 
 
 ## Available Tools (12)
-- **test_octoboard_auth**: Verify credentials
-- **check_api_usage**: Check data limits
 - **list_agency_clients**: List managed clients
 - **list_active_dashboards**: List dashboards
 - **list_automated_reports**: List reports
-- **push_bar_chart**: Update bar chart
 - **push_numeric_metric**: Update widget number
 - **push_status_update**: Update status indicator
-- **push_data_table**: Update data table
 - **push_text_metric**: Update widget text
+- **get_api_status**: Check connection
+- **check_api_usage**: Check data limits
+- **push_bar_chart**: Update bar chart
+- **push_data_table**: Update data table
 - **push_variation_metric**: g. 10.5) to a widget.
 
 Update value + change
-- **get_api_status**: Check connection
+- **test_octoboard_auth**: Verify credentials
 
 
 ## 💬 Prompt Examples

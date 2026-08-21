@@ -38,22 +38,22 @@ No more manual logging into dashboards to check payment status. Your AI acts as 
 ## Available Tools (12)
 - **get_current_user**: Get authenticated user profile
 - **list_payments**: List all payments
-- **cancel_subscription**: Cancel a recurring subscription
-- **create_setup_fee**: Requires a name.
-
-Create a new setup fee
 - **create_one_time_payment_link**: Requires title and amount.
 
 Create a one-time payment link
-- **create_recurring_payment_link**: Requires title and amount.
+- **create_setup_fee**: Requires a name.
 
-Create a subscription payment link
+Create a new setup fee
 - **get_payment_details**: Get details for a specific payment
 - **get_subscription_details**: Get details for a subscription
 - **list_setup_fees**: List setup fees
+- **refund_payment**: Refund a specific payment
+- **cancel_subscription**: Cancel a recurring subscription
+- **create_recurring_payment_link**: Requires title and amount.
+
+Create a subscription payment link
 - **list_service_fees**: List service fees
 - **list_subscriptions**: List all active subscriptions
-- **refund_payment**: Refund a specific payment
 
 
 ## 💬 Prompt Examples

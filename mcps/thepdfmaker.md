@@ -36,18 +36,18 @@ No more manual editing in document processors for repetitive tasks. Your AI acts
 
 
 ## Available Tools (12)
-- **create_webhook**: Add new notification
 - **generate_pdf**: Create PDF from template
-- **get_pdf_status**: Get document link
 - **get_user_profile**: Get account info
-- **get_api_status**: Check connectivity
 - **get_template_details**: Get template info
 - **list_asset_files**: List uploaded assets
-- **list_recent_pdfs**: List recent generations
 - **list_pdf_templates**: List all templates
-- **list_webhooks**: List active webhooks
-- **delete_pdf_template**: Remove a template
 - **get_credit_balance**: Check API credits
+- **create_webhook**: Add new notification
+- **delete_pdf_template**: Remove a template
+- **get_api_status**: Check connectivity
+- **get_pdf_status**: Get document link
+- **list_recent_pdfs**: List recent generations
+- **list_webhooks**: List active webhooks
 
 
 ## 💬 Prompt Examples

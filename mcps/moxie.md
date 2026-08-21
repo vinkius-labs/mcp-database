@@ -28,18 +28,18 @@ Connect your **Moxie** workspace to any AI agent and manage your freelance or ag
 
 
 ## Available Tools (12)
-- **create_client**: Create a new client
-- **create_expense**: Log an expense
 - **create_invoice**: Create a new invoice
 - **create_project**: Create a new project
 - **create_task**: Create a new task
-- **create_ticket**: Create a support ticket
 - **create_time_entry**: Log time
 - **list_clients**: List all clients in Moxie
 - **list_users**: List workspace users
-- **search_contacts**: Search for contacts
 - **search_invoices**: Search for payable invoices
 - **search_projects**: Search for projects
+- **create_client**: Create a new client
+- **create_expense**: Log an expense
+- **create_ticket**: Create a support ticket
+- **search_contacts**: Search for contacts
 
 
 ## 💬 Prompt Examples

@@ -44,10 +44,10 @@ No more manual status checking in the dashboard for new subscribers. Your AI act
 - **list_discounts**: List member discounts
 - **list_webhooks**: List configured webhooks
 - **create_member**: Create a new member
-- **get_account_info**: Get site info
 - **get_member**: Get member details
-- **get_order**: Get order details
 - **list_downloads**: List member downloads
+- **get_order**: Get order details
+- **get_account_info**: Get site info
 
 
 ## 💬 Prompt Examples

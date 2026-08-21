@@ -37,19 +37,19 @@ No more manual SIREN searching on government portals. Your AI acts as a dedicate
 
 ## Available Tools (12)
 - **get_api_account_info**: Get Pappers account details
-- **get_french_company_details**: Get details for a French company
-- **get_company_document**: Access legal documents (Articles of Association)
-- **get_establishment_details**: Get details for a specific establishment
 - **get_company_financials**: Get financial data for a company
+- **get_establishment_details**: Get details for a specific establishment
+- **get_french_company_details**: Get details for a French company
 - **get_search_suggestions**: Autocomplete search suggestions
 - **list_bodacc_publications**: Search BODACC publications
 - **list_monitored_companies**: List companies in your monitoring list
-- **search_french_companies**: Search for companies in France
-- **search_company_officers**: Search for company directors and managers
 - **search_ultimate_beneficial_owners**: Search for UBOs
 - **check_api_health**: fr service API.
 
 Verify Pappers API status
+- **get_company_document**: Access legal documents (Articles of Association)
+- **search_company_officers**: Search for company directors and managers
+- **search_french_companies**: Search for companies in France
 
 
 ## 💬 Prompt Examples

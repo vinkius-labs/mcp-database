@@ -36,19 +36,19 @@ No more manual status checking or searching for download links. Your AI acts as 
 
 
 ## Available Tools (11)
-- **generate_pdf**: Generation is asynchronous.
-
-Generate a new PDF from a template
 - **delete_generated_pdf**: Delete a generated document
-- **check_pdf_status**: Quickly check generation status
 - **get_workspace**: Get details for a specific workspace
 - **list_generated_documents**: List recently generated PDFs
 - **list_templates**: List all PDF templates
-- **update_document**: Update an existing PDF document
+- **list_workspaces**: List all workspaces
+- **check_pdf_status**: Quickly check generation status
+- **generate_pdf**: Generation is asynchronous.
+
+Generate a new PDF from a template
 - **get_pdf_details**: Get details and download link for a PDF
 - **get_template**: Get details for a template
-- **list_workspaces**: List all workspaces
 - **regenerate_document**: Regenerate a PDF document
+- **update_document**: Update an existing PDF document
 
 
 ## 💬 Prompt Examples

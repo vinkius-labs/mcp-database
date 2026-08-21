@@ -39,13 +39,13 @@ No more manual reviewing of long call recordings or missing coaching opportuniti
 - **get_user**: Get user details
 - **list_activities**: List all calls and meetings
 - **list_teams**: List all teams
-- **list_users**: List all team members
 - **check_jiminny_status**: Verify Jiminny API connectivity
+- **get_call_stats**: Get aggregate call analytics
+- **get_transcript**: Get call transcript
 - **get_action_items**: Get action items from a call
 - **get_activity**: Get activity details
-- **get_call_stats**: Get aggregate call analytics
 - **get_coaching_stats**: Get coaching stats for a user
-- **get_transcript**: Get call transcript
+- **list_users**: List all team members
 
 
 ## 💬 Prompt Examples

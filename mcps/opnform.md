@@ -39,14 +39,14 @@ No more manual dashboard navigation for simple status checks. Your AI acts as a 
 - **delete_submission**: Delete a form submission
 - **get_form**: Get details for a specific Optform form
 - **get_submission**: Get details for a specific form submission
-- **get_workspace**: Get details for a specific Optform workspace
+- **get_me**: Get current Optform user details
 - **list_forms**: List forms in Optform
 - **list_submissions**: List submissions for a form
 - **list_workspaces**: List Optform workspaces
-- **get_me**: Get current Optform user details
-- **update_form**: Update an existing Optform form
-- **create_form**: Create a new Optform form
 - **delete_form**: Delete an Optform form
+- **create_form**: Create a new Optform form
+- **get_workspace**: Get details for a specific Optform workspace
+- **update_form**: Update an existing Optform form
 
 
 ## 💬 Prompt Examples

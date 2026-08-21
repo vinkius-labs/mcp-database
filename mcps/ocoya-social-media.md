@@ -24,15 +24,15 @@ Connect your Ocoya account via your API Key to manage your social media marketin
 
 
 ## Available Tools (9)
-- **get_automation**: Get a specific automation/workflow
 - **get_me**: Get current authenticated user info
 - **get_post**: Get a specific post
-- **get_profile**: Get a specific social profile
 - **get_workspace**: Get a specific workspace
 - **list_automations**: List all automations/workflows
-- **list_posts**: List all posts
 - **list_profiles**: List all social profiles
 - **list_workspaces**: List all workspaces
+- **get_automation**: Get a specific automation/workflow
+- **get_profile**: Get a specific social profile
+- **list_posts**: List all posts
 
 
 ## 💬 Prompt Examples

@@ -14,18 +14,18 @@ The Nozbe MCP server brings your team's task management directly to your AI agen
 
 
 ## Available Tools (12)
-- **list_comments**: Retrieve discussion comments for a task
 - **create_task**: Create a new task
 - **delete_task**: Permanently remove a task
 - **get_me**: Check API connectivity and get current user context
 - **get_project**: Retrieve details for a specific project
 - **get_task**: Retrieve details for a specific task
-- **get_team**: Retrieve details for a specific team
+- **update_task**: Edit a specific task
 - **create_project**: Create a new project
+- **get_team**: Retrieve details for a specific team
+- **list_comments**: Retrieve discussion comments for a task
+- **list_projects**: List all accessible projects
 - **list_tasks**: List all accessible tasks
 - **list_teams**: List teams you have access to
-- **update_task**: Edit a specific task
-- **list_projects**: List all accessible projects
 
 
 ## 💬 Prompt Examples

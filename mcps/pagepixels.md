@@ -27,10 +27,10 @@ Ideal for developers, designers, and marketers who need to automate visual testi
 ## Available Tools (8)
 - **snap_custom_html**: Takes a screenshot of custom HTML
 - **delete_screenshot_config**: Delete a screenshot configuration
-- **get_screenshot_config**: Get a specific screenshot configuration by ID
 - **list_screenshot_configs**: List all screenshot configurations
 - **quick_snap**: Takes a quick screenshot of a URL
 - **create_screenshot_config**: Create a new screenshot configuration
+- **get_screenshot_config**: Get a specific screenshot configuration by ID
 - **quick_snap_with_options**: Takes a screenshot of a URL with advanced options
 - **update_screenshot_config**: Update an existing screenshot configuration
 

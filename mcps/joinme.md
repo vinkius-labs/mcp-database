@@ -37,7 +37,6 @@ Connect your **join.me** account to any AI agent and manage video meetings throu
 - **get_user_info**: me user profile.
 
 Get account information
-- **delete_meeting**: Cancel/Delete a meeting
 - **get_meeting**: Get details of a specific meeting
 - **list_meetings**: me account.
 
@@ -45,11 +44,12 @@ List your join.me meetings
 - **list_webhooks**: me account.
 
 List registered webhooks
-- **schedule_meeting**: Schedule a future meeting
 - **start_adhoc_meeting**: Start an instant meeting
 - **start_scheduled_meeting**: Start a scheduled meeting
 - **update_meeting**: Update a scheduled meeting
 - **create_webhook**: Register a new webhook
+- **delete_meeting**: Cancel/Delete a meeting
+- **schedule_meeting**: Schedule a future meeting
 
 
 ## 💬 Prompt Examples

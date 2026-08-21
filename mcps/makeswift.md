@@ -27,15 +27,15 @@ Connect your **Makeswift** site to any AI agent and simplify your visual buildin
 
 
 ## Available Tools (10)
-- **create_snapshot**: Create a new content snapshot
 - **get_page**: Get details for a specific page
 - **get_site_details**: Get current Makeswift site details
-- **get_snapshot**: Get details for a specific snapshot
 - **list_components**: List registered components
 - **list_hostnames**: List site hostnames
-- **list_locales**: List configured site locales
 - **list_pages**: List all pages in the site
 - **list_redirects**: List site redirects
+- **create_snapshot**: Create a new content snapshot
+- **get_snapshot**: Get details for a specific snapshot
+- **list_locales**: List configured site locales
 - **list_snapshots**: List content snapshots
 
 
