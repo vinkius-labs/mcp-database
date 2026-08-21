@@ -34,14 +34,14 @@ Connect your **Ghostfolio** instance to any AI agent to monitor your net worth a
 
 
 ## Available Tools (9)
-- **list_accounts**: List all investment accounts
-- **list_activities**: ) from Ghostfolio.
-
-Retrieve a list of all activities
 - **create_account**: Provide the account details as a JSON payload.
 
 Create a new investment account
 - **create_activity**: Create a new investment activity
+- **list_accounts**: List all investment accounts
+- **list_activities**: ) from Ghostfolio.
+
+Retrieve a list of all activities
 - **delete_activity**: Delete a specific activity
 - **get_market_data_price**: Get the latest price for a specific symbol
 - **get_portfolio_holdings**: Get current holdings and their valuations

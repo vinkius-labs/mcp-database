@@ -35,26 +35,19 @@ Connect your **Linkwarden** instance to any AI agent and take full control of yo
 
 ## Available Tools (32)
 - **archive_link**: Archive a link (triggers an update of the link's archive files)
-- **create_collection**: Create a new collection
 - **create_highlight**: Create or update a highlight
 - **create_link**: Create a new link
 - **delete_collection**: Delete a collection
 - **delete_highlight**: Delete a highlight
-- **auth_forgot_password**: Send password reset email
 - **get_archive**: Retrieve an archive file by link ID
 - **get_avatar**: Retrieve user avatar
-- **get_collection**: Get collection by ID
-- **get_config**: Retrieve public runtime configuration
 - **get_dashboard_v1**: Get dashboard data (v1)
 - **get_dashboard_v2**: Get dashboard data (v2)
-- **get_link_highlights**: Get highlights for a link
 - **get_link**: Get a link by ID
-- **get_logins**: Get login configuration
-- **import_migration**: Import data for migration
+- **get_link_highlights**: Get highlights for a link
+- **auth_reset_password**: Reset password with token
 - **list_collections**: Get all collections
 - **list_rss**: List RSS subscriptions
-- **auth_reset_password**: Reset password with token
-- **stream_preserved_view**: Stream archived format
 - **update_collection**: Update a collection
 - **update_dashboard_v2**: Update dashboard layout (v2)
 - **update_link**: Update a link
@@ -62,10 +55,17 @@ Connect your **Linkwarden** instance to any AI agent and take full control of yo
 - **upload_standalone_archive**: Upload an archive file, create a new link, and store it in the default collection
 - **auth_verify_email**: Verify email address
 - **get_migration**: Retrieve migration data (user info, collections, links for export)
-- **get_preserved_token**: Create short-lived preserved format URL token
-- **get_public_collection_links**: Retrieve links from a specific collection (public)
 - **get_public_collection_tags**: Get tags for a collection (public)
 - **bulk_update_links**: Bulk update links (tags/collections)
+- **auth_forgot_password**: Send password reset email
+- **create_collection**: Create a new collection
+- **get_collection**: Get collection by ID
+- **get_config**: Retrieve public runtime configuration
+- **get_logins**: Get login configuration
+- **get_preserved_token**: Create short-lived preserved format URL token
+- **get_public_collection_links**: Retrieve links from a specific collection (public)
+- **import_migration**: Import data for migration
+- **stream_preserved_view**: Stream archived format
 
 
 ## 💬 Prompt Examples

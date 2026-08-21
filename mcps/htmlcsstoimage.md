@@ -34,20 +34,20 @@ Connect **HTMLCSSToImage** to your AI agent to automate visual content creation.
 
 
 ## Available Tools (10)
-- **batch_create_images**: Create up to 25 images in one request
-- **batch_delete_images**: Delete multiple images at once
-- **create_template**: Create a reusable image template
-- **delete_image**: Permanently remove an image
 - **edit_template**: Edit an existing image template
 - **get_usage**: Check account usage
-- **list_images**: List generated images
-- **get_image**: Can apply cropping and resizing via query parameters.
-
-Retrieve a generated image file or its metadata
 - **create_image_from_template**: Create an image from a template
+- **batch_create_images**: Create up to 25 images in one request
+- **batch_delete_images**: Delete multiple images at once
 - **create_image**: Either html or url is required.
 
 Create an image from HTML/CSS or a URL
+- **create_template**: Create a reusable image template
+- **delete_image**: Permanently remove an image
+- **get_image**: Can apply cropping and resizing via query parameters.
+
+Retrieve a generated image file or its metadata
+- **list_images**: List generated images
 
 
 ## 💬 Prompt Examples

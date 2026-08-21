@@ -35,14 +35,14 @@ Connect to the **IBGE (Brazilian Institute of Geography and Statistics)** data s
 
 
 ## Available Tools (8)
+- **get_metadados**: Obtém metadados de pesquisas do IBGE
+- **get_noticias**: Consulta notícias e releases do IBGE
 - **get_agregados**: Obtém o conjunto de agregados do IBGE
-- **get_nome_geografico**: Obtém um nome geográfico do BNGB
 - **get_calendario**: Obtém o calendário de divulgações de uma pesquisa
 - **get_cnae_classe**: Obtém classes CNAE
 - **get_malha_estado**: Obtém malha geográfica de um estado
-- **get_metadados**: Obtém metadados de pesquisas do IBGE
+- **get_nome_geografico**: Obtém um nome geográfico do BNGB
 - **get_nomes_frequencia**: Consulta frequência de nomes no Brasil
-- **get_noticias**: Consulta notícias e releases do IBGE
 
 
 ## 💬 Prompt Examples

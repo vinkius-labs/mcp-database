@@ -45,18 +45,24 @@ Get edition details by Open Library edition key
 - **search_authors**: Returns author names, birth/death dates, top works, total work counts, and main subjects. Open Library has profiles for hundreds of thousands of authors.
 
 Search book authors on Open Library
-- **search_books**: Returns titles, authors, publication years, edition counts, subjects, ISBNs, covers, and full-text availability. Sort options: "new", "old", "editions", "rating".
-
-Search 20M+ books on Open Library
-- **search_by_author**: Returns a complete bibliography with editions and publication details.
-
-Search books by author name
 - **search_by_isbn**: Returns title, publisher, publication date, page count, and cover images.
 
 Look up a book by ISBN
 - **search_by_language**: Use ISO 639-1 codes: "eng" (English), "fre" (French), "spa" (Spanish), "por" (Portuguese), "ger" (German), "jpn" (Japanese), "chi" (Chinese), "ara" (Arabic).
 
 Search books by language
+- **get_work**: g. "OL45883W" for The Lord of the Rings). Returns title, description, subjects, covers, and publication history.
+
+Get book details by Open Library work key
+- **get_work_editions**: Essential for finding specific translations or editions.
+
+Get all editions of a specific book
+- **search_books**: Returns titles, authors, publication years, edition counts, subjects, ISBNs, covers, and full-text availability. Sort options: "new", "old", "editions", "rating".
+
+Search 20M+ books on Open Library
+- **search_by_author**: Returns a complete bibliography with editions and publication details.
+
+Search books by author name
 - **search_by_publisher**: Examples: "MIT Press", "Oxford University Press", "Cambridge University Press", "O'Reilly Media", "Springer".
 
 Search books by publisher
@@ -72,12 +78,6 @@ Search for books with full text available
 - **search_recent**: Useful for discovering new additions to the catalog.
 
 Browse recently added books
-- **get_work**: g. "OL45883W" for The Lord of the Rings). Returns title, description, subjects, covers, and publication history.
-
-Get book details by Open Library work key
-- **get_work_editions**: Essential for finding specific translations or editions.
-
-Get all editions of a specific book
 - **search_trending_subjects**: Browse popular books in a subject
 
 

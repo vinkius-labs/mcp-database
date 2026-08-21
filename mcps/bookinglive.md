@@ -34,25 +34,25 @@ Connect your **BookingLive** account to any AI agent to streamline your scheduli
 
 
 ## Available Tools (17)
-- **complete_order**: Completes an order
-- **get_product_availability**: Returns public product availability for a date range
-- **get_message_content**: Returns the HTML content and subject of an email for a specific order
 - **get_order_details**: Returns full details of a specific order
 - **get_orders_by_email**: Returns all orders associated with a specific purchaser email
-- **get_orders**: Returns a filtered list of all orders
 - **get_product_detail**: Returns details for specific products
 - **get_ref_data**: Returns public reference data (Products, ProductGroups, Resources, Locations, Staff)
 - **get_resource_availability**: Returns public resource availability for a date range
 - **send_email_to_customers**: Sends a specific notification message to a customer
+- **update_order_param**: Updates a specific parameter value for an order
+- **cancel_order**: Cancels an order and sends a cancellation email
+- **get_events_by_product_ids**: Returns all events for selected products within a date range
+- **abort_order**: Aborts an order to ensure no pending items remain
+- **add_to_order**: Adds items to an existing order
+- **complete_order**: Completes an order
+- **get_message_content**: Returns the HTML content and subject of an email for a specific order
+- **get_orders**: Returns a filtered list of all orders
+- **get_product_availability**: Returns public product availability for a date range
 - **set_order_notification**: Sets notification preferences (Email/SMS) for an order
 - **start_order**: Provide Member details and OrderItems as JSON objects.
 
 Starts a new BookingLive order
-- **update_order_param**: Updates a specific parameter value for an order
-- **abort_order**: Aborts an order to ensure no pending items remain
-- **add_to_order**: Adds items to an existing order
-- **cancel_order**: Cancels an order and sends a cancellation email
-- **get_events_by_product_ids**: Returns all events for selected products within a date range
 
 
 ## 💬 Prompt Examples

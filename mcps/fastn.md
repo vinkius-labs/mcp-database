@@ -34,16 +34,11 @@ Connect your **Fastn** account to any AI agent to orchestrate complex backend wo
 
 
 ## Available Tools (16)
-- **list_workflows**: List all flow definitions for a tenant
 - **get_credentials**: Retrieve stored credentials
 - **get_execution**: Get full step-by-step execution trace
-- **get_quota_daily**: Daily usage breakdown
-- **get_quota_summary**: Usage summary
 - **get_quota_usage**: Current usage against plan limits
-- **list_executions**: List execution history for a tenant
 - **get_workflow**: Get a flow full specification
 - **publish_workflow**: Deploy / publish a flow
-- **rotate_credentials**: Rotate credentials
 - **store_credentials**: Store connector credentials
 - **update_workflow**: Update a flow definition
 - **archive_workflow**: Deactivate / archive a flow
@@ -52,6 +47,11 @@ Connect your **Fastn** account to any AI agent to orchestrate complex backend wo
 - **execute_flow**: The input object must match the Request Schema defined in the flow trigger.
 
 Execute a Fastn flow instantly (API Real-Time Sync)
+- **get_quota_daily**: Daily usage breakdown
+- **get_quota_summary**: Usage summary
+- **list_executions**: List execution history for a tenant
+- **list_workflows**: List all flow definitions for a tenant
+- **rotate_credentials**: Rotate credentials
 
 
 ## 💬 Prompt Examples

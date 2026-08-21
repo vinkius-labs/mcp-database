@@ -35,12 +35,12 @@ No more manual editing for repetitive tasks. Your AI acts as a video engineer, h
 
 
 ## Available Tools (3)
-- **create_render**: The project definition includes width, height, and layers (video, text, etc.).
-
-Initiates the rendering process for a project
 - **get_render_status**: ) and download URL for a specific render ID.
 
 Retrieves the current status of a render
+- **create_render**: The project definition includes width, height, and layers (video, text, etc.).
+
+Initiates the rendering process for a project
 - **list_renders**: Returns a list of all renders associated with your account
 
 

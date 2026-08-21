@@ -33,9 +33,9 @@ Connect your **InvestorLift** account to any AI agent to streamline your real es
 
 
 ## Available Tools (5)
-- **list_deals**: List available deals in the marketplace
-- **get_buy_box**: Get your current buy box criteria
 - **get_deal**: Get detailed information about a specific deal
+- **get_buy_box**: Get your current buy box criteria
+- **list_deals**: List available deals in the marketplace
 - **send_message**: Send a message to a seller regarding a specific deal
 - **update_buy_box**: Update your buy box criteria
 

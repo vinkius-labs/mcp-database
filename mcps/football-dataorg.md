@@ -39,8 +39,6 @@ Connect the **Football-Data.org** API to your AI agent to retrieve comprehensive
 Get details for a specific competition
 - **get_match**: Get details for a specific match
 - **get_player**: Get details for a specific player
-- **get_team**: Get details for a specific team
-- **list_competition_scorers**: List top scorers for a competition
 - **list_competition_teams**: List teams in a specific competition
 - **get_competition_standings**: Can be filtered by standing type (TOTAL, HOME, AWAY).
 
@@ -48,16 +46,18 @@ Get standings (league table) for a competition
 - **list_competitions**: Can be filtered by specific competition IDs or season.
 
 List available competitions
-- **list_matches**: List matches across competitions
-- **list_player_matches**: List matches for a specific player
 - **list_team_matches**: Can be filtered by status, venue, and date range.
 
 List matches for a specific team
 - **get_area**: Get details for a specific area
+- **get_team**: Get details for a specific team
 - **list_areas**: List all geographical areas
 - **list_competition_matches**: Can be filtered by season, status, stage, group, date range, or matchday.
 
 List matches for a specific competition
+- **list_competition_scorers**: List top scorers for a competition
+- **list_matches**: List matches across competitions
+- **list_player_matches**: List matches for a specific player
 
 
 ## 💬 Prompt Examples

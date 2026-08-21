@@ -34,16 +34,16 @@ Connect your **Open edX** platform to any AI agent to streamline course administ
 
 
 ## Available Tools (10)
+- **get_user_preferences**: Get Open edX user preferences
+- **list_courses**: List Open edX courses
+- **update_user_profile**: Update Open edX user profile
+- **get_course_details**: Get Open edX course details
 - **get_course_grades**: Get Open edX course grades
 - **get_user_grades**: Get Open edX user grades for a course
-- **get_user_preferences**: Get Open edX user preferences
 - **get_user_profile**: Get Open edX user profile
-- **list_courses**: List Open edX courses
 - **list_enrollments**: List Open edX enrollments
-- **update_user_profile**: Update Open edX user profile
 - **enroll_in_course**: Enroll in an Open edX course
 - **get_course_blocks**: Get Open edX course blocks
-- **get_course_details**: Get Open edX course details
 
 
 ## 💬 Prompt Examples

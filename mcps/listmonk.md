@@ -35,35 +35,35 @@ Connect your **Listmonk** instance to any AI agent and take full control of your
 
 ## Available Tools (28)
 - **list_bounces**: Retrieve bounce records
-- **create_campaign**: Create a new campaign
 - **create_list**: Create a new list
 - **create_public_subscription**: Create a public subscription
-- **create_subscriber**: Create a new subscriber
 - **create_template**: Create a template
 - **delete_bounces**: Delete multiple bounce records
 - **delete_campaign**: Delete a campaign
 - **delete_list**: Delete a list
-- **delete_media**: Delete a media file
-- **delete_subscriber**: Delete a specific subscriber
 - **delete_template**: Delete a template
-- **get_campaign**: Retrieve a specific campaign
-- **get_subscriber**: Retrieve a specific subscriber
-- **list_campaigns**: Retrieve all campaigns
 - **list_lists**: Retrieve all lists
-- **list_media**: Get uploaded media files
 - **list_public_lists**: Retrieve public lists
-- **list_subscribers**: Supports pagination, list filtering, and SQL expression search.
-
-Query and retrieve subscribers
 - **list_templates**: Retrieve all templates
-- **patch_subscriber**: Partially update a subscriber
-- **send_transactional_message**: Send transactional messages to one or more subscribers using a template
 - **stop_import**: Stop an ongoing import
-- **update_subscriber**: Update a specific subscriber
 - **update_template**: Update a template
 - **get_import_status**: Retrieve import status
 - **update_campaign_status**: Change campaign status
+- **create_campaign**: Create a new campaign
+- **create_subscriber**: Create a new subscriber
+- **delete_media**: Delete a media file
+- **delete_subscriber**: Delete a specific subscriber
+- **get_campaign**: Retrieve a specific campaign
+- **get_subscriber**: Retrieve a specific subscriber
+- **list_campaigns**: Retrieve all campaigns
+- **list_media**: Get uploaded media files
+- **list_subscribers**: Supports pagination, list filtering, and SQL expression search.
+
+Query and retrieve subscribers
+- **patch_subscriber**: Partially update a subscriber
+- **send_transactional_message**: Send transactional messages to one or more subscribers using a template
 - **update_list**: Update a list
+- **update_subscriber**: Update a specific subscriber
 
 
 ## 💬 Prompt Examples

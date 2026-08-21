@@ -36,18 +36,18 @@ Connect your **PipeRun CRM** account to any AI agent to streamline your sales op
 - **get_activity**: Get details for a specific activity
 - **get_activity_type**: Get details for a specific activity type
 - **get_file**: Get details for a specific file
+- **upload_file**: Requires base64 encoded file content.
+
+Upload a file to a deal, person, or company
+- **delete_activity**: Delete an activity
+- **delete_file**: Delete a file from PipeRun
+- **create_activity**: Create a new activity
 - **list_activities**: List activities (tasks and appointments)
 - **list_activity_types**: List all activity types
 - **list_files**: Supports pagination and filtering.
 
 List files attached to deals, persons, or companies
 - **update_activity**: Update an existing activity
-- **upload_file**: Requires base64 encoded file content.
-
-Upload a file to a deal, person, or company
-- **create_activity**: Create a new activity
-- **delete_activity**: Delete an activity
-- **delete_file**: Delete a file from PipeRun
 
 
 ## 💬 Prompt Examples
