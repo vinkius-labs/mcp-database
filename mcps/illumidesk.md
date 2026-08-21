@@ -14,16 +14,16 @@ Connect your AI agents to Illumidesk, the AI-powered learning management system.
 
 
 ## Available Tools (10)
-- **get_activity_logs**: Retrieves activity logs for a specific campus
-- **get_campus**: Retrieves details for a specific campus
-- **get_course**: Retrieves details for a specific course
 - **get_me**: Gets current authenticated user info
 - **list_campuses**: Lists all campuses in Illumidesk
-- **list_courses**: Lists all courses within a specific campus
 - **list_lti_credentials**: Lists all LTI credentials for a campus
 - **list_lti_deployments**: Lists all LTI deployments for a campus
 - **list_memberships**: Lists all user memberships in a specific campus
 - **list_users**: Lists all users registered in a specific campus
+- **get_activity_logs**: Retrieves activity logs for a specific campus
+- **get_campus**: Retrieves details for a specific campus
+- **get_course**: Retrieves details for a specific course
+- **list_courses**: Lists all courses within a specific campus
 
 
 ## 💬 Prompt Examples

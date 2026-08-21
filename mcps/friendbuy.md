@@ -35,14 +35,14 @@ Connect your **Friendbuy** account to any AI agent to automate your referral pro
 
 
 ## Available Tools (8)
-- **list_referral_rewards**: List awarded referrals
-- **get_referral_code_status**: Check code status
-- **create_referral_code**: Generate share code
 - **check_api_connection**: Verify API access
+- **get_referral_code_status**: Check code status
 - **list_tracked_purchases**: List tracked purchases
 - **list_webhooks**: List webhook configs
-- **track_conversion_purchase**: Log a purchase
 - **track_conversion_signup**: Log a signup
+- **create_referral_code**: Generate share code
+- **list_referral_rewards**: List awarded referrals
+- **track_conversion_purchase**: Log a purchase
 
 
 ## 💬 Prompt Examples

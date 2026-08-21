@@ -38,16 +38,16 @@ No more manual exporting of field reports or logging into multiple portals. Your
 
 ## Available Tools (11)
 - **get_bid_items**: List bid items for a specific estimate
+- **list_employees**: List all employees synced in HCSS
+- **list_timecards**: List timecards from HeavyJob
 - **get_equipment_location**: Get current GPS coordinates for a specific piece of equipment
 - **get_equipment_meters**: Get latest meter readings (odometer/hours) for equipment
 - **list_business_units**: List all business units in HCSS
 - **list_cost_codes**: List cost codes defined in the system
-- **list_employees**: List all employees synced in HCSS
 - **list_equipment**: List all tracked equipment/fleet from Telematics
 - **list_estimates**: List bidding estimates from HeavyBid
 - **list_jobs**: List all construction jobs/projects
 - **list_precon_projects**: List active pre-construction projects
-- **list_timecards**: List timecards from HeavyJob
 
 
 ## 💬 Prompt Examples

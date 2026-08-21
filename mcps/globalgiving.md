@@ -38,17 +38,17 @@ Connect your AI agent to the **GlobalGiving** global marketplace to automate non
 ## Available Tools (12)
 - **get_charity_details**: Get org metadata
 - **get_project_details**: Get project metadata
-- **list_projects_by_country**: List projects by country
 - **list_charity_projects**: List projects by org
 - **list_projects_by_theme**: g. edu, env, health, disaster).
 
 List projects by theme
-- **list_project_themes**: List available themes
 - **find_environment_initiatives**: Search env projects
-- **find_health_initiatives**: Search health projects
-- **verify_api_connection**: Check connection
-- **list_all_projects**: List all projects
 - **find_education_initiatives**: Search edu projects
+- **find_health_initiatives**: Search health projects
+- **list_all_projects**: List all projects
+- **list_projects_by_country**: List projects by country
+- **list_project_themes**: List available themes
+- **verify_api_connection**: Check connection
 - **search_nonprofit_projects**: g. theme:edu, country:US).
 
 Search all projects

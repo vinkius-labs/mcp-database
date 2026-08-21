@@ -37,10 +37,8 @@ No more manual filtering through complex marketplace portals. Your AI assistant 
 
 
 ## Available Tools (11)
-- **get_counties_by_zip**: Retrieve County FIPS codes for a given ZIP code
-- **get_plan_crosswalk**: Get information about plan transitions between years
-- **get_drug_coverage**: Check if a medication is covered by a specific plan
 - **get_api_metadata**: Retrieve metadata about the Marketplace API data
+- **get_plan_crosswalk**: Get information about plan transitions between years
 - **list_issuers**: List insurance issuers operating in a specific state
 - **list_market_states**: List states served by the Marketplace
 - **get_plan_details**: Get detailed information about a specific health plan
@@ -50,6 +48,8 @@ No more manual filtering through complex marketplace portals. Your AI assistant 
 
 Search for health and dental plans in the Marketplace
 - **search_providers**: Search for healthcare providers (doctors, facilities)
+- **get_counties_by_zip**: Retrieve County FIPS codes for a given ZIP code
+- **get_drug_coverage**: Check if a medication is covered by a specific plan
 
 
 ## 💬 Prompt Examples

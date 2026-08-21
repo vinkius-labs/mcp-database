@@ -37,21 +37,21 @@ No more manual querying of complex GraphQL schemas for simple account lookups. Y
 
 
 ## Available Tools (11)
-- **get_financial_account**: Get detailed balance and metadata for a specific financial account
+- **list_card_products**: List the different card programs (e.g., Consumer, Fleet) available in your Highnote account
 - **get_api_profile**: Retrieve information about the authenticated API user
+- **get_financial_account**: Get detailed balance and metadata for a specific financial account
 - **get_payment_card_details**: Get detailed information for a specific card
 - **get_transaction_details**: Get detailed metadata for a specific transaction
 - **list_account_holders**: Use this to find the unique ID for a person or business.
 
 List individuals and businesses who hold accounts in Highnote
-- **list_card_products**: List the different card programs (e.g., Consumer, Fleet) available in your Highnote account
+- **list_financial_accounts**: List all financial accounts and their current balances
 - **list_ledger_entries**: Useful for reconciliation.
 
 List individual ledger entries for a financial account
 - **list_payment_cards**: Monitor card status and expiration details.
 
 List virtual and physical cards issued in your program
-- **list_financial_accounts**: List all financial accounts and their current balances
 - **list_financial_transactions**: List recent spending and processing transactions
 - **update_card_status**: Valid statuses: ACTIVE, FROZEN, CLOSED.
 

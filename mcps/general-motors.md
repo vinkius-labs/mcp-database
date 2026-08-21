@@ -39,36 +39,36 @@ Perfect for **GM vehicle owners**, **fleet managers**, **service advisors**, and
 - **get_tire_pressure**: Requires VIN. Use this to identify leaks, ensure safety, or prepare for long trips.
 
 Get the current tire pressure readings for all four tires
-- **unlock_doors**: Requires VIN. Returns command status. Use this to let a passenger in or if keys are locked inside.
-
-Unlock the doors of a specific GM vehicle remotely
 - **flash_horn**: Requires VIN. Use this to locate a vehicle in a crowded parking lot or driveway.
 
 Trigger the horn of a GM vehicle to locate it
-- **flash_lights**: Requires VIN. Use this to locate a vehicle in the dark or signal ownership.
-
-Flash the headlights and taillights of a GM vehicle
 - **get_charge_status**: Requires VIN. Use this to manage EV range anxiety or schedule charging during off-peak hours.
 
 Get the charging status and battery level of a GM EV (Bolt, Ultium, etc)
-- **get_vehicle_diagnostics**: Requires VIN. Use this for maintenance scheduling, pre-trip inspections, or health monitoring.
-
-Get comprehensive diagnostic data for a GM vehicle
-- **get_fuel_level**: Requires VIN. Use this to plan refueling stops or monitor fuel economy.
-
-Get the current fuel tank level of a GM vehicle
-- **get_vehicle_location**: Requires VIN. Use this to find your parked car, track fleet assets, or verify vehicle movement.
-
-Get the current GPS location of a specific GM vehicle
-- **get_odometer**: Requires VIN. Use this to track service intervals, lease mileage limits, or fleet utilization.
-
-Get the current mileage (odometer reading) of a GM vehicle
-- **get_vehicles**: Use this as the first step to identify which VIN to use for commands or diagnostics.
-
-List all GM vehicles associated with the account
 - **lock_doors**: Requires VIN. Returns command status (success/failed/in-progress). Use this to secure the vehicle after parking or if you forgot to lock it.
 
 Lock the doors of a specific GM vehicle remotely
+- **unlock_doors**: Requires VIN. Returns command status. Use this to let a passenger in or if keys are locked inside.
+
+Unlock the doors of a specific GM vehicle remotely
+- **flash_lights**: Requires VIN. Use this to locate a vehicle in the dark or signal ownership.
+
+Flash the headlights and taillights of a GM vehicle
+- **get_fuel_level**: Requires VIN. Use this to plan refueling stops or monitor fuel economy.
+
+Get the current fuel tank level of a GM vehicle
+- **get_odometer**: Requires VIN. Use this to track service intervals, lease mileage limits, or fleet utilization.
+
+Get the current mileage (odometer reading) of a GM vehicle
+- **get_vehicle_diagnostics**: Requires VIN. Use this for maintenance scheduling, pre-trip inspections, or health monitoring.
+
+Get comprehensive diagnostic data for a GM vehicle
+- **get_vehicle_location**: Requires VIN. Use this to find your parked car, track fleet assets, or verify vehicle movement.
+
+Get the current GPS location of a specific GM vehicle
+- **get_vehicles**: Use this as the first step to identify which VIN to use for commands or diagnostics.
+
+List all GM vehicles associated with the account
 - **send_turn_by_turn**: Requires VIN and a destination object with latitude, longitude, and address. Use this to plan a trip on your phone and have it ready in the car.
 
 Send a destination to the vehicle's built-in navigation system

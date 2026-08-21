@@ -35,16 +35,16 @@ Connect your **GorillaDesk** account to your AI agent and streamline your field 
 ## Available Tools (12)
 - **get_invoice**: Get details of a specific invoice
 - **create_customer**: Create a new customer profile
+- **get_job**: Get details of a specific job
+- **list_notes**: List notes for a specific customer
+- **update_customer**: Update an existing customer
 - **create_note**: Add a note to a customer profile
 - **get_company**: Get details for the current GorillaDesk company account
 - **get_customer**: Get details for a specific customer
-- **get_job**: Get details of a specific job
 - **list_customers**: List or search for customers
 - **list_invoices**: List invoices
 - **list_jobs**: List upcoming or past jobs (work orders)
-- **list_notes**: List notes for a specific customer
 - **list_users**: List all users/technicians in the account
-- **update_customer**: Update an existing customer
 
 
 ## 💬 Prompt Examples

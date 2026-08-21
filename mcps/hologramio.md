@@ -39,18 +39,18 @@ No more manual exporting of usage logs or jumping between complex fleet manageme
 ## Available Tools (11)
 - **get_recent_data_sessions**: Retrieve the most recent data sessions for your fleet
 - **list_available_data_plans**: List all data plans available for activation in your organization
-- **get_billing_cycle_usage**: Check data usage for the current billing cycle
-- **get_daily_usage_stats**: Retrieve aggregated daily data usage statistics
 - **get_device_details**: Get detailed information for a specific IoT device
 - **get_device_locations**: Retrieve approximate GPS coordinates for all devices based on cell tower data
 - **list_iot_devices**: Use this to monitor fleet status and find specific device IDs.
 
 List all IoT devices in your Hologram account
-- **list_sim_cards**: List all SIM cards (cellular links) and their associated plans
-- **list_sms_messages**: Retrieve the history of device-originated SMS messages
+- **get_billing_cycle_usage**: Check data usage for the current billing cycle
+- **get_daily_usage_stats**: Retrieve aggregated daily data usage statistics
 - **pause_sim_data**: Requires the cellular link ID.
 
 Temporarily suspend data services for a specific SIM card
+- **list_sim_cards**: List all SIM cards (cellular links) and their associated plans
+- **list_sms_messages**: Retrieve the history of device-originated SMS messages
 - **unpause_sim_data**: Resume data services for a suspended SIM card
 
 

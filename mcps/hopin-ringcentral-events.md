@@ -14,13 +14,13 @@ Empower your AI agents to manage your virtual events ecosystem. This MCP server 
 
 
 ## Available Tools (10)
-- **create_registration**: Registers a user for an event
 - **get_event**: Retrieves details for a specific event
+- **create_registration**: Registers a user for an event
+- **list_events**: Lists events in your RingCentral Events (Hopin) organization
+- **list_registrations**: Lists attendees/registrations for an event
 - **list_tickets**: Lists tickets configured for an event
 - **list_vendors**: Lists vendors/exhibitors for an event
-- **list_events**: Lists events in your RingCentral Events (Hopin) organization
 - **list_organizations**: Lists organizations associated with your account
-- **list_registrations**: Lists attendees/registrations for an event
 - **list_schedule**: Lists the schedule items for an event
 - **list_sessions**: Lists interactive sessions for an event
 - **list_speakers**: Lists speakers for an event

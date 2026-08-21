@@ -14,13 +14,13 @@ Empower your AI agents to interact with your corporate intranet using Interact S
 
 
 ## Available Tools (10)
-- **get_analytics**: Retrieves intranet usage analytics
-- **get_person**: Retrieves details for a specific person
 - **list_content**: Lists intranet content items
 - **list_departments**: Lists all organization departments
 - **list_events**: Lists upcoming intranet events
-- **search**: Searches for content, people, and groups
+- **get_analytics**: Retrieves intranet usage analytics
+- **get_person**: Retrieves details for a specific person
 - **list_groups**: Lists all collaboration groups
+- **search**: Searches for content, people, and groups
 - **list_locations**: Lists all organization locations
 - **list_news**: Lists latest news articles
 - **list_people**: Lists all people/users in the intranet
