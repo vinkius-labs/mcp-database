@@ -40,12 +40,12 @@ Connect your **Claid AI** account to any AI agent and take full control of your 
 - **enhance_image**: You can combine multiple operations like upscale, background removal, and HDR adjustment.
 
 Apply AI enhancements and edits to an image
+- **get_claid_account_info**: Retrieve core account and quota information
+- **get_processing_task_details**: Get the status and result of an async image processing task
 - **list_claid_webhooks**: List configured webhooks for async notifications
 - **upscale_image_resolution**: Increase image resolution using AI models
 - **list_available_ai_operations**: List common AI operations supported by the Claid API
 - **remove_image_background**: Quickly remove or replace the background of an image
-- **get_claid_account_info**: Retrieve core account and quota information
-- **get_processing_task_details**: Get the status and result of an async image processing task
 
 
 ## 💬 Prompt Examples

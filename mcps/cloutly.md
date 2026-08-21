@@ -15,11 +15,11 @@ Cloutly is an all-in-one review management platform that helps businesses collec
 
 ## Available Tools (7)
 - **list_businesses**: Retrieve all businesses/locations associated with your Cloutly account
-- **list_campaigns**: Retrieve active review campaigns for a specific business
-- **list_pending_reviews**: Retrieve reviews that have not been replied to yet
 - **list_reviews**: Supports filtering by business and pagination.
 
 Retrieve a list of reviews across connected sources
+- **list_campaigns**: Retrieve active review campaigns for a specific business
+- **list_pending_reviews**: Retrieve reviews that have not been replied to yet
 - **reply_to_review**: The reply is posted to the source platform.
 
 Post a reply to a review on its original platform

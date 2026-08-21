@@ -77,11 +77,6 @@ EXAMPLES:
 - "Create contact for opposing party Jane Doe, jane@example.com" → call with first_name="Jane", last_name="Doe", email="jane@example.com", type="Opposing Party"
 
 Create a new client/contact in CloudLex Legal
-- **get_cloudlex_case**: Get detailed information for a specific case/matter
-- **get_cloudlex_client**: Get detailed information for a specific client/contact
-- **get_client_cloudlex_cases**: Useful for understanding a client's full legal portfolio and case history.
-
-Get all cases/matters for a specific client/contact
 - **list_cloudlex_cases**: Supports filtering by status, practice area, client, and date range for flexible queries.
 
 USE WHEN:
@@ -119,13 +114,18 @@ EXAMPLES:
 - "List clients page 2" → call with page="2"
 
 List all clients/contacts in CloudLex Legal
+- **list_cloudlex_expenses**: List expenses for a specific case
+- **search_cloudlex_cases**: Search cases/matters by keyword query
+- **get_cloudlex_case**: Get detailed information for a specific case/matter
+- **get_cloudlex_client**: Get detailed information for a specific client/contact
+- **get_client_cloudlex_cases**: Useful for understanding a client's full legal portfolio and case history.
+
+Get all cases/matters for a specific client/contact
 - **list_cloudlex_communications**: List communications for a specific case
 - **list_cloudlex_documents**: List documents for a specific case/matter
-- **list_cloudlex_expenses**: List expenses for a specific case
 - **list_cloudlex_liens**: List liens for a specific case
 - **list_cloudlex_medical_records**: List medical records for a specific case
 - **list_cloudlex_tasks**: List tasks for a specific case/matter
-- **search_cloudlex_cases**: Search cases/matters by keyword query
 - **update_cloudlex_case**: Update an existing case/matter in CloudLex Legal
 
 

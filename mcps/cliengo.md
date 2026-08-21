@@ -36,14 +36,14 @@ Connect your **Cliengo** account to any AI agent and take full control of your c
 
 
 ## Available Tools (8)
-- **get_contact_messages**: Retrieve all messages exchanged with a specific contact
-- **get_lead_details**: Get detailed information for a specific contact
 - **get_chat_history**: Get the full message history for a specific conversation
-- **list_cliengo_users**: List all internal users and agents in the account
+- **get_contact_messages**: Retrieve all messages exchanged with a specific contact
 - **list_cliengo_leads**: List all leads and contacts captured via Cliengo
+- **list_cliengo_websites**: List all websites/projects where Cliengo is installed
+- **get_lead_details**: Get detailed information for a specific contact
+- **list_cliengo_users**: List all internal users and agents in the account
 - **list_chat_conversations**: List all chatbot or WhatsApp conversations
 - **list_cliengo_webhooks**: List all configured webhooks for real-time lead data
-- **list_cliengo_websites**: List all websites/projects where Cliengo is installed
 
 
 ## 💬 Prompt Examples

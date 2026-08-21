@@ -36,18 +36,6 @@ Integrate **Copperx**, the API-first crypto payment processor, directly into you
 - **create_customer**: Creates a new customer record with identity properties (email, name) for future payment associations.
 
 Register a new customer in Copperx
-- **create_payment_link**: Resolves product identity and pricing configuration to generate a unique payment URL.
-
-Create a new payment link for customers to pay
-- **get_wallet_balance**: Resolves real-time wallet balances across various supported cryptocurrencies and networks.
-
-Check current crypto wallet balances in Copperx
-- **get_payment_details**: Resolves granular transaction data, including blockchain tx hashes, fee breakdowns, and customer linkages.
-
-Get details for a specific payment intent
-- **list_customers**: Resolves customer identity properties such as unique identifiers, email addresses, and registered names.
-
-List all customers registered in Copperx
 - **list_invoices**: Resolves billing document properties including invoice numbers, totals, and payment status links.
 
 List all invoices generated
@@ -63,6 +51,18 @@ List all payouts processed
 - **list_subscriptions**: Resolves subscription properties including plan IDs, billing cycles, and current subscription state.
 
 List all active and past subscriptions
+- **create_payment_link**: Resolves product identity and pricing configuration to generate a unique payment URL.
+
+Create a new payment link for customers to pay
+- **get_payment_details**: Resolves granular transaction data, including blockchain tx hashes, fee breakdowns, and customer linkages.
+
+Get details for a specific payment intent
+- **get_wallet_balance**: Resolves real-time wallet balances across various supported cryptocurrencies and networks.
+
+Check current crypto wallet balances in Copperx
+- **list_customers**: Resolves customer identity properties such as unique identifiers, email addresses, and registered names.
+
+List all customers registered in Copperx
 
 
 ## 💬 Prompt Examples

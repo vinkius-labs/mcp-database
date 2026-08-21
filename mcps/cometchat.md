@@ -32,14 +32,14 @@ Connect your AI assistant to **CometChat**, the communication platform providing
 
 
 ## Available Tools (10)
+- **deactivate_user**: Deactivate a user instead of deleting them
+- **send_message**: Send a text message to a user or group
 - **create_user**: Create a new user in CometChat
 - **create_group**: Create a new group in CometChat
-- **deactivate_user**: Deactivate a user instead of deleting them
 - **delete_user**: Permanently delete a user from CometChat
 - **get_group_details**: Retrieve details of a specific group
 - **get_user**: Retrieve detailed information about a specific user
 - **list_users**: Retrieve a list of users from CometChat
-- **send_message**: Send a text message to a user or group
 - **list_groups**: Retrieve a list of groups from CometChat
 - **list_messages**: Retrieve chat history messages
 

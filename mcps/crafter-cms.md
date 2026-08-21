@@ -37,21 +37,21 @@ Connect your **Crafter CMS** instance to any AI agent and take full control of y
 
 
 ## Available Tools (10)
-- **wipe_studio_xml**: Irreversibly vaporize explicit App nodes dropping live Database bytes
 - **execute_graphql_payload**: Identify bounded routing spaces inside the Headless Crafter Engine
 - **get_site_config**: json` isolating GraphQL URL limits.
 
 Retrieve explicit Cloud logging tracing explicit Payload IDs limitlessly
 - **get_site_globals**: Enumerate explicitly attached structured rules exporting active Configuration
+- **search_crafter_delivery**: Inspect deep internal arrays mitigating specific Picture constraints
+- **wipe_studio_xml**: Irreversibly vaporize explicit App nodes dropping live Database bytes
 - **list_platform_sites**: Identify precise active arrays spanning rented Context domains
-- **list_studio_users**: Retrieve the exact structural matching verifying Blueprint constraints
 - **get_studio_tree**: json` identifying exact folders tracing nested XML structures safely.
 
 Perform structural extraction of properties driving active Git hierarchies
+- **list_studio_users**: Retrieve the exact structural matching verifying Blueprint constraints
 - **publish_crafter_content**: json` executing workflow bounds migrating a Studio change onto the Delivery Engine live endpoint.
 
 Dispatch an automated validation check routing explicit Deployments
-- **search_crafter_delivery**: Inspect deep internal arrays mitigating specific Picture constraints
 - **write_studio_xml**: json` generating pages.
 
 Provision a highly-available XML Payload generating new Content nodes

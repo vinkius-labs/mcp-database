@@ -17,14 +17,14 @@ Cloze is a smart CRM that automatically tracks your interactions and provides AI
 - **create_person**: Provide at least name or email.
 
 Create a new person in Cloze
-- **create_project**: Create a new project, deal, or property in Cloze
 - **get_person**: Retrieve detailed information about a specific person by email
-- **list_companies**: Retrieve a list of companies from Cloze
 - **list_custom_fields**: Retrieve definitions for custom fields in your Cloze account
+- **list_people**: Retrieve a list of people (contacts) from Cloze
 - **update_person**: Email is used as the match key.
 
 Update an existing person in Cloze (matching by email)
-- **list_people**: Retrieve a list of people (contacts) from Cloze
+- **create_project**: Create a new project, deal, or property in Cloze
+- **list_companies**: Retrieve a list of companies from Cloze
 - **list_projects**: Retrieve a list of projects, properties, or deals from Cloze
 - **search_people_by_tag**: Find contacts that have a specific tag
 

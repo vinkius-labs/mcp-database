@@ -36,14 +36,14 @@ Connect your **Churnkey** account to any AI agent and take full control of your 
 
 
 ## Available Tools (8)
+- **delete_customer_gdpr_data**: Delete all data for a customer for GDPR compliance
+- **list_customer_retention_history**: List all cancellation sessions for a specific customer
 - **get_retention_session_details**: Get details for a specific cancellation session
 - **update_billing_contacts**: Update recovery contacts for a specific customer
 - **bulk_update_billing_contacts**: Update billing recovery contacts for multiple customers at once
-- **delete_customer_gdpr_data**: Delete all data for a customer for GDPR compliance
 - **get_customer_gdpr_data**: Access all data stored for a customer for GDPR compliance
 - **list_retention_sessions**: List cancellation flow sessions
 - **get_session_aggregates**: Retrieve grouped session counts
-- **list_customer_retention_history**: List all cancellation sessions for a specific customer
 
 
 ## 💬 Prompt Examples

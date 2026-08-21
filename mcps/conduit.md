@@ -38,12 +38,12 @@ Retrieve the current status of a specific workflow run
 - **get_workflow**: Returns source, destination, and current status.
 
 Retrieve detailed information about a specific workflow
-- **list_connections**: Retrieve a list of all active source and destination connections
 - **list_available_destinations**: Retrieve available data destination connector types supported by Conduit
+- **list_available_sources**: Retrieve available data source connector types supported by Conduit
+- **list_connections**: Retrieve a list of all active source and destination connections
 - **list_workflow_runs**: Returns the execution history with status and timestamps for each run.
 
 Retrieve the history of runs for a specific workflow
-- **list_available_sources**: Retrieve available data source connector types supported by Conduit
 - **list_workflows**: Use this as a starting point to discover workflow IDs for subsequent operations.
 
 Retrieve a list of all data integration workflows in Conduit

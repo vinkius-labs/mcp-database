@@ -36,14 +36,14 @@ Connect your **Clearstory** account to any AI agent and take full control of you
 
 
 ## Available Tools (8)
-- **get_cor_details**: Get detailed information for a specific COR
-- **get_project_construction_details**: Get detailed information for a specific project
-- **list_change_order_requests**: List all Change Order Requests (CORs)
-- **list_project_contracts**: List contracts linked to change orders
 - **list_change_notifications**: List change notifications sent between customers and contractors
+- **list_change_order_requests**: List all Change Order Requests (CORs)
 - **list_construction_projects**: List all construction projects in Clearstory
 - **list_construction_rates**: List Labor, Material, Equipment, and Other (LMEO) rates
+- **list_project_contracts**: List contracts linked to change orders
 - **list_tm_tags**: List digital Time & Material tags from the field
+- **get_cor_details**: Get detailed information for a specific COR
+- **get_project_construction_details**: Get detailed information for a specific project
 
 
 ## 💬 Prompt Examples

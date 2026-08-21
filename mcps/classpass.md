@@ -30,17 +30,17 @@ Connect your **ClassPass** venue to any AI agent and manage your marketplace pre
 
 
 ## Available Tools (7)
-- **list_schedule**: Filter by date range.
-
-List ClassPass schedule
 - **get_class_detail**: Get class details
-- **list_reservations**: List ClassPass reservations
-- **get_venue_info**: Get venue profile
-- **list_locations**: List venue locations
 - **get_performance**: Use date range for period analysis.
 
 Get performance analytics
 - **list_inventory**: List SmartSpot inventory
+- **get_venue_info**: Get venue profile
+- **list_locations**: List venue locations
+- **list_schedule**: Filter by date range.
+
+List ClassPass schedule
+- **list_reservations**: List ClassPass reservations
 
 
 ## 💬 Prompt Examples

@@ -84,20 +84,6 @@ EXAMPLES:
 - "Coffee spot price today" → call with no params
 
 Get current coffee futures price
-- **get_copper_price**: Copper is known as "Dr. Copper" for its ability to predict economic health.
-
-USE WHEN:
-- User asks about copper prices
-- User needs the industrial metals benchmark
-- User wants to track economic indicators
-- User asks "what is copper price"
-
-EXAMPLES:
-- "What is copper price?" → call with no params
-- "Current copper futures price" → call with no params
-- "Copper spot price today" → call with no params
-
-Get current copper futures price
 - **get_crude_oil_price**: WTI is the primary US oil benchmark.
 
 USE WHEN:
@@ -126,53 +112,6 @@ EXAMPLES:
 - "Energy market today" → call with no params
 
 Get current prices for crude oil, Brent crude, and natural gas
-- **get_gold_price**: Gold is the primary precious metal benchmark traded globally.
-
-USE WHEN:
-- User asks specifically about gold price
-- User needs the gold benchmark price
-- User wants to check precious metals pricing
-- User asks "what is gold price"
-
-EXAMPLES:
-- "What is gold price?" → call with no params
-- "Current gold futures price" → call with no params
-- "Gold spot price today" → call with no params
-
-Get current gold futures price
-- **list_all_commodities**: USE WHEN:
-- User wants to explore what commodities are available
-- User needs to find commodity codes for querying prices
-- User is exploring the API capabilities for the first time
-- User asks what commodities are supported
-
-CATEGORIES:
-- Precious Metals: gold, silver, platinum, palladium (CME/NYMEX)
-- Energy: crude_oil, brent_crude_oil, natural_gas (NYMEX/CME)
-- Agriculture: wheat, corn, soybean, coffee, cocoa, sugar (CBOT/CME)
-- Livestock: live_cattle, feeder_cattle, lean_hogs (CME)
-- Industrial Metals: copper, aluminum (CME)
-
-EXAMPLES:
-- "What commodities are available?" → call with no params
-- "Show me all commodity codes" → call with no params
-- "List all commodity exchanges" → call with no params
-
-List all 30+ available commodities with their codes and exchanges
-- **get_natural_gas_price**: Natural gas is a key energy commodity for heating and electricity generation.
-
-USE WHEN:
-- User asks about natural gas prices
-- User needs the natural gas benchmark
-- User wants to check energy pricing
-- User asks "what is natural gas price"
-
-EXAMPLES:
-- "What is natural gas price?" → call with no params
-- "Current natural gas futures" → call with no params
-- "Natural gas spot price today" → call with no params
-
-Get current natural gas futures price
 - **get_precious_metals_prices**: Perfect for tracking the precious metals market comprehensively.
 
 USE WHEN:
@@ -215,6 +154,67 @@ EXAMPLES:
 - "Wheat spot price today" → call with no params
 
 Get current wheat futures price
+- **get_copper_price**: Copper is known as "Dr. Copper" for its ability to predict economic health.
+
+USE WHEN:
+- User asks about copper prices
+- User needs the industrial metals benchmark
+- User wants to track economic indicators
+- User asks "what is copper price"
+
+EXAMPLES:
+- "What is copper price?" → call with no params
+- "Current copper futures price" → call with no params
+- "Copper spot price today" → call with no params
+
+Get current copper futures price
+- **get_gold_price**: Gold is the primary precious metal benchmark traded globally.
+
+USE WHEN:
+- User asks specifically about gold price
+- User needs the gold benchmark price
+- User wants to check precious metals pricing
+- User asks "what is gold price"
+
+EXAMPLES:
+- "What is gold price?" → call with no params
+- "Current gold futures price" → call with no params
+- "Gold spot price today" → call with no params
+
+Get current gold futures price
+- **get_natural_gas_price**: Natural gas is a key energy commodity for heating and electricity generation.
+
+USE WHEN:
+- User asks about natural gas prices
+- User needs the natural gas benchmark
+- User wants to check energy pricing
+- User asks "what is natural gas price"
+
+EXAMPLES:
+- "What is natural gas price?" → call with no params
+- "Current natural gas futures" → call with no params
+- "Natural gas spot price today" → call with no params
+
+Get current natural gas futures price
+- **list_all_commodities**: USE WHEN:
+- User wants to explore what commodities are available
+- User needs to find commodity codes for querying prices
+- User is exploring the API capabilities for the first time
+- User asks what commodities are supported
+
+CATEGORIES:
+- Precious Metals: gold, silver, platinum, palladium (CME/NYMEX)
+- Energy: crude_oil, brent_crude_oil, natural_gas (NYMEX/CME)
+- Agriculture: wheat, corn, soybean, coffee, cocoa, sugar (CBOT/CME)
+- Livestock: live_cattle, feeder_cattle, lean_hogs (CME)
+- Industrial Metals: copper, aluminum (CME)
+
+EXAMPLES:
+- "What commodities are available?" → call with no params
+- "Show me all commodity codes" → call with no params
+- "List all commodity exchanges" → call with no params
+
+List all 30+ available commodities with their codes and exchanges
 
 
 ## 💬 Prompt Examples

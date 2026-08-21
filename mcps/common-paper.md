@@ -35,15 +35,15 @@ No more manual drafting or navigating complex legal platforms. Your AI agent bec
 
 ## Available Tools (10)
 - **delete_webhook**: Remove a previously configured webhook
-- **list_webhooks**: Retrieve a list of configured webhooks
-- **send_agreement**: Create and send a new agreement based on a template
 - **create_webhook**: Configure a new webhook to receive contract status updates
+- **list_agreements**: Retrieve a list of agreements (contracts) from Common Paper
+- **list_webhooks**: Retrieve a list of configured webhooks
+- **search_agreements_by_email**: Find agreements associated with a specific recipient email
+- **send_agreement**: Create and send a new agreement based on a template
 - **get_agreement**: Retrieve detailed information about a specific agreement
 - **get_template**: Retrieve details of a specific contract template
-- **list_agreements**: Retrieve a list of agreements (contracts) from Common Paper
 - **list_signed_agreements**: Quickly list all agreements that have been fully signed
 - **list_templates**: Retrieve a list of contract templates available in your account
-- **search_agreements_by_email**: Find agreements associated with a specific recipient email
 
 
 ## 💬 Prompt Examples

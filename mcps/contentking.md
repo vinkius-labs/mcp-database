@@ -34,10 +34,10 @@ Integrate your AI with **ContentKing**, the real-time SEO auditing and monitorin
 ## Available Tools (10)
 - **get_active_alerts**: Get active monitoring alerts for a website
 - **get_issue_details**: Get details for a specific SEO issue
-- **get_portfolio_summary**: Get a high-level health summary across all websites
 - **get_website_health**: Get current health score and status for a website
-- **list_seo_issues**: List SEO issues for a website
 - **list_monitored_pages**: List monitoring data for pages on a website
+- **get_portfolio_summary**: Get a high-level health summary across all websites
+- **list_seo_issues**: List SEO issues for a website
 - **list_websites**: List all websites monitored in ContentKing
 - **notify_page_update**: Notify ContentKing of page updates to trigger re-crawl
 - **notify_sitemap_update**: Notify ContentKing that a sitemap has been updated

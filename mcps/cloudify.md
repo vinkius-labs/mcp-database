@@ -36,12 +36,12 @@ Connect your **Cloudify Manager** to any AI agent and take full control of your 
 
 ## Available Tools (7)
 - **list_deployments**: Retrieve the exact structural matching verifying actualized runtime schemas
-- **get_deployment**: Extracts explicitly attached internal structural states pulling precise execution topologies
-- **list_nodes**: Identify exact literal limits pushing specific instances routing orchestration rules
 - **list_plugins**: Extracts explicit capabilities mapping native orchestration limits
-- **list_blueprints**: Identify bounded logical arrays managing top-level orchestration schemas
 - **get_blueprint**: Perform structural extraction of properties driving active blueprint schemas
+- **get_deployment**: Extracts explicitly attached internal structural states pulling precise execution topologies
 - **list_executions**: Identify precise active cluster limits spanning deployment workflow bounds
+- **list_nodes**: Identify exact literal limits pushing specific instances routing orchestration rules
+- **list_blueprints**: Identify bounded logical arrays managing top-level orchestration schemas
 
 
 ## 💬 Prompt Examples

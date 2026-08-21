@@ -39,10 +39,10 @@ Ingest text or documents into the Cognee knowledge base. This is the first step 
 - **cognee_cognify**: This step extracts entities, identifies relationships, generates embeddings, and creates the graph structure needed for intelligent search.
 
 Process ingested data into a structured knowledge graph. Extracts entities, relationships, and builds a searchable graph structure
+- **cognee_search**: Search the knowledge graph using natural language. Returns context-aware answers using graph traversal and semantic search
 - **cognee_get_insights**: Useful for understanding relationships between topics, discovering hidden connections, and building comprehensive knowledge views.
 
 Retrieve structured entity relationships and insights from the knowledge graph
-- **cognee_search**: Search the knowledge graph using natural language. Returns context-aware answers using graph traversal and semantic search
 
 
 ## 💬 Prompt Examples

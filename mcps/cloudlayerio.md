@@ -36,14 +36,14 @@ Connect your **cloudlayer.io** account to any AI agent and take full control of 
 
 
 ## Available Tools (8)
-- **convert_html_to_pdf**: Convert raw HTML string into a PDF document
 - **capture_url_screenshot**: Capture a high-quality screenshot (image) of a public URL
+- **convert_html_to_pdf**: Convert raw HTML string into a PDF document
 - **convert_url_to_pdf**: Convert a public URL into a high-quality PDF document
 - **get_template_configuration**: Get details for a specific generation template
-- **get_cloudlayer_usage_stats**: Retrieve current usage and quota information
+- **list_cloudlayer_webhooks**: List all configured webhooks for async notifications
 - **list_generation_history**: List recent document and image generation history
 - **list_pdf_templates**: List all Nunjucks templates configured in the account
-- **list_cloudlayer_webhooks**: List all configured webhooks for async notifications
+- **get_cloudlayer_usage_stats**: Retrieve current usage and quota information
 
 
 ## 💬 Prompt Examples

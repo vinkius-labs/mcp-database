@@ -31,32 +31,32 @@ Connect your **Commerce7** winery to any AI agent and run your entire direct-to-
 
 
 ## Available Tools (12)
+- **get_customer**: Get customer profile
+- **list_club_members**: List club members
 - **list_collections**: Used for organizing the wine catalog.
 
 List wine collections
-- **list_coupons**: With usage limits, expiry dates, and redemption counts.
-
-List active coupons
-- **get_customer**: Get customer profile
-- **list_orders**: Filter by status: Fulfilled, Processing, Pending. Shows items, totals, and shipping.
-
-List wine orders
-- **get_order**: Get order details
 - **list_products**: The wine catalog powering ecommerce and POS.
 
 List wine products
-- **get_product**: Get wine product details
-- **list_clubs**: The backbone of winery DTC revenue.
-
-List wine clubs
 - **list_reservations**: Filter by date for daily planning.
 
 List tasting reservations
+- **list_coupons**: With usage limits, expiry dates, and redemption counts.
+
+List active coupons
+- **get_order**: Get order details
+- **get_product**: Get wine product details
+- **list_orders**: Filter by status: Fulfilled, Processing, Pending. Shows items, totals, and shipping.
+
+List wine orders
+- **list_clubs**: The backbone of winery DTC revenue.
+
+List wine clubs
+- **list_inventory**: List wine inventory
 - **search_customers**: Returns customer profile, lifetime value, wine club status, order history, and tasting room visits. Essential for DTC relationship management.
 
 Search wine customers
-- **list_inventory**: List wine inventory
-- **list_club_members**: List club members
 
 
 ## 💬 Prompt Examples
