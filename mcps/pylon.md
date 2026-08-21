@@ -36,19 +36,19 @@ No more manual issue tracking or switching between support channels. Your AI act
 
 
 ## Available Tools (11)
+- **list_tags**: List all available issue tags
+- **reply_to_issue**: Send a reply to an issue
+- **update_issue**: Update a support issue
 - **create_issue**: Pass data as a JSON string.
 
 Create a new issue
 - **get_account**: Get details for a specific customer account
-- **get_issue_messages**: Retrieve messages for an issue
 - **get_issue**: Get details for a specific support issue
+- **get_issue_messages**: Retrieve messages for an issue
 - **list_accounts**: List all customer accounts
 - **list_articles**: List knowledge base articles
 - **list_issues**: List all Pylon issues
 - **list_knowledge_bases**: List all knowledge bases
-- **list_tags**: List all available issue tags
-- **reply_to_issue**: Send a reply to an issue
-- **update_issue**: Update a support issue
 
 
 ## 💬 Prompt Examples

@@ -35,26 +35,26 @@ Connect your **Sally** instance to any AI agent and take full control of your AP
 
 
 ## Available Tools (12)
-- **get_board**: Get the Kanban board view
 - **create_project**: Create a new project
+- **get_board**: Get the Kanban board view
 - **get_profile**: Get the authenticated user profile
 - **get_project**: Get details of a specific project
-- **get_task**: Get full details of a specific task
+- **get_timesheet_report**: Get timesheet report for the workspace or project
 - **list_projects**: List all projects in the workspace
 - **list_tasks**: Optionally filter by project ID to see tasks for a specific project.
 
 List tasks, optionally filtered by project
-- **get_timesheet_report**: Get timesheet report for the workspace or project
-- **update_task**: Only provided fields are changed.
-
-Update an existing task
-- **create_task**: Optionally set priority (P1-P4), status, and labels.
-
-Create a new task in a project
-- **check_sally_health**: Check Sally instance health
 - **add_comment**: Comments are visible to all project members.
 
 Add a comment to a task
+- **check_sally_health**: Check Sally instance health
+- **create_task**: Optionally set priority (P1-P4), status, and labels.
+
+Create a new task in a project
+- **get_task**: Get full details of a specific task
+- **update_task**: Only provided fields are changed.
+
+Update an existing task
 
 
 ## 💬 Prompt Examples

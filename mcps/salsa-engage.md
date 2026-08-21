@@ -36,17 +36,17 @@ No more manual report exports or group syncing. Your AI acts as a dedicated enga
 
 
 ## Available Tools (12)
-- **assign_supporters_to_group**: Add supporters to a group
 - **list_offline_donations**: List offline donation records
 - **list_supporter_groups**: Search and list groups
-- **upsert_supporter_group**: Create or update a group
 - **check_api_health**: Verify Salsa Engage API connectivity
+- **assign_supporters_to_group**: Add supporters to a group
 - **get_account_info**: Get authenticated account details
 - **get_engagement_metrics**: Retrieve performance metrics
-- **list_engagement_activities**: Search and list activities
-- **list_supporter_segments**: List defined segments
-- **list_supporters**: Search and list supporters
 - **list_configured_webhooks**: List active webhooks
+- **list_engagement_activities**: Search and list activities
+- **list_supporters**: Search and list supporters
+- **list_supporter_segments**: List defined segments
+- **upsert_supporter_group**: Create or update a group
 - **upsert_supporter_profile**: Create or update a supporter
 
 

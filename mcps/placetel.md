@@ -24,16 +24,16 @@ Connect your Placetel account via your API Token to manage your VoIP configurati
 
 
 ## Available Tools (10)
-- **list_devices**: List all devices
-- **get_group**: Get details for a specific group
-- **get_sip_user**: Get details for a specific SIP user
 - **get_user**: Get details for a specific user
 - **list_call_detail_records**: List Call Detail Records (CDRs)
 - **list_calls**: List active or recent calls
 - **list_groups**: List all Placetel groups
 - **list_numbers**: List all Placetel numbers
-- **list_sip_users**: List all Placetel SIP users
 - **list_users**: List all Placetel users
+- **get_group**: Get details for a specific group
+- **get_sip_user**: Get details for a specific SIP user
+- **list_devices**: List all devices
+- **list_sip_users**: List all Placetel SIP users
 
 
 ## 💬 Prompt Examples

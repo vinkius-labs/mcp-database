@@ -28,17 +28,17 @@ Connect your **Salespanel** account to any AI agent and simplify your lead track
 
 
 ## Available Tools (11)
-- **get_contact_details**: Get details for a specific contact
 - **list_contacts**: List Salespanel contacts
 - **get_company**: Get details for a specific company
 - **list_accounts**: List all tracked accounts
-- **list_companies**: List all identified companies
 - **list_engagement_events**: List tracking events
 - **list_lead_segments**: List lead segments
-- **list_anonymous_visitors**: List recent website visitors
+- **get_contact_details**: Get details for a specific contact
 - **get_segment**: Get details for a specific segment
 - **get_visitor**: Get details for a specific website visitor
 - **list_activity_feeds**: List activity feeds
+- **list_anonymous_visitors**: List recent website visitors
+- **list_companies**: List all identified companies
 
 
 ## 💬 Prompt Examples

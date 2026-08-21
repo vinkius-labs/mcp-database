@@ -37,15 +37,15 @@ Designed for marketing teams, e-commerce operators, and growth hackers who need 
 - **get_top_referrers**: Get top advocates
 - **list_campaigns**: List campaigns
 - **list_invites**: List sent invites
+- **list_referrals_by_period**: List referrals by period
+- **get_campaign**: Get campaign details
+- **list_referrals**: List all referrals
+- **check_referralcandy_status**: Verify connectivity
 - **list_pending_rewards**: List pending rewards
 - **list_purchases**: List referred purchases
-- **list_referrals_by_period**: List referrals by period
 - **list_referrers**: List all advocates
 - **list_rewards**: List all rewards
 - **register_purchase**: Register a purchase
-- **check_referralcandy_status**: Verify connectivity
-- **get_campaign**: Get campaign details
-- **list_referrals**: List all referrals
 
 
 ## 💬 Prompt Examples

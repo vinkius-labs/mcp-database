@@ -28,26 +28,26 @@ Ideal for researchers, students, and professionals needing instant, conversation
 
 
 ## Available Tools (16)
-- **create_highlight**: Create a highlight
 - **delete_highlight**: Delete a highlight
 - **export_highlights**: Supports incremental export with updatedAfter filter.
 
 Export highlights
-- **list_reviews**: List review queue
 - **list_tags**: List all tags
-- **search_books**: Search books
-- **search_highlights**: Search highlights
+- **get_daily_review**: Get daily review
 - **check_readwise_status**: Verify connectivity
+- **create_highlight**: Create a highlight
+- **get_book**: Get book details
+- **get_highlight**: Get highlight details
+- **list_books**: List all books
+- **list_books_by_category**: List books by category
+- **list_books_by_source**: List books by source
 - **list_highlights**: Returns text, note, location, and tags.
 
 List highlights
+- **list_reviews**: List review queue
+- **search_books**: Search books
+- **search_highlights**: Search highlights
 - **update_highlight**: Update a highlight
-- **get_book**: Get book details
-- **get_daily_review**: Get daily review
-- **get_highlight**: Get highlight details
-- **list_books_by_category**: List books by category
-- **list_books_by_source**: List books by source
-- **list_books**: List all books
 
 
 ## 💬 Prompt Examples

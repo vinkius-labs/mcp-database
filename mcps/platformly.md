@@ -36,20 +36,20 @@ No more manual data entry or missed follow-ups. Your AI acts as a dedicated mark
 
 
 ## Available Tools (12)
-- **add_note_to_contact**: Add a text note to a contact
-- **apply_tag_to_contact**: Add a tag to a contact
-- **create_new_sales_deal**: Create a new deal in a pipeline
 - **get_contact_details**: Get full info for a contact
-- **list_crm_contacts**: List contacts in a project
 - **list_sales_pipelines**: List all sales pipelines
 - **list_project_segments**: List all segments in a project
-- **list_project_tags**: List all tags in a project
 - **remove_tag_from_contact**: Remove a tag from a contact
 - **search_contact_by_email**: Find a contact by email
-- **update_existing_contact**: Modify a contact record
+- **add_note_to_contact**: Add a text note to a contact
+- **apply_tag_to_contact**: Add a tag to a contact
 - **create_new_contact**: Requires project ID and email.
 
 Add a new contact to the CRM
+- **create_new_sales_deal**: Create a new deal in a pipeline
+- **list_crm_contacts**: List contacts in a project
+- **list_project_tags**: List all tags in a project
+- **update_existing_contact**: Modify a contact record
 
 
 ## 💬 Prompt Examples

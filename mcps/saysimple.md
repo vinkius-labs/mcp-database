@@ -37,18 +37,18 @@ No more manual dashboard refreshing or template searching. Your AI acts as a ded
 
 ## Available Tools (11)
 - **assign_chat**: Assign chat to user
-- **create_contact**: Create a new contact
 - **get_chat**: Get chat details
-- **get_contact**: Get details for a specific contact
 - **get_template**: Get details for a message template
 - **list_channels**: List all messaging channels
 - **list_chats**: List all messaging chats
 - **list_contacts**: List all contacts
-- **list_webhooks**: List configured webhooks
 - **send_message**: Requires a template for starting new WhatsApp conversations. Pass data as a JSON string.
 
 Send a message
 - **list_templates**: List message templates
+- **create_contact**: Create a new contact
+- **get_contact**: Get details for a specific contact
+- **list_webhooks**: List configured webhooks
 
 
 ## 💬 Prompt Examples

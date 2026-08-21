@@ -36,18 +36,18 @@ No more manual leaderboard exports or subscriber hunting. Your AI acts as a dedi
 
 
 ## Available Tools (12)
-- **delete_subscriber**: Remove a subscriber from a campaign
 - **get_leaderboard**: Get campaign leaderboard
 - **get_list**: Get details for a specific campaign
-- **get_rewards**: Get campaign rewards
-- **get_subscriber**: Get details for a specific subscriber
 - **list_lists**: List all referral campaigns (lists)
 - **list_subscribers**: List subscribers for a campaign
 - **list_transactions**: List recent transactions
 - **track_conversion**: Track a referral conversion event
 - **update_subscriber**: Update an existing subscriber
-- **add_points**: Add points to a subscriber
 - **add_subscriber**: Add a new subscriber to a campaign
+- **add_points**: Add points to a subscriber
+- **delete_subscriber**: Remove a subscriber from a campaign
+- **get_rewards**: Get campaign rewards
+- **get_subscriber**: Get details for a specific subscriber
 
 
 ## 💬 Prompt Examples

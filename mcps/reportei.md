@@ -36,18 +36,18 @@ No more manual data collection or complex spreadsheet reporting. Your AI acts as
 
 
 ## Available Tools (10)
-- **add_reportei_event**: Add a timeline event
 - **get_client**: Get details for a specific client
+- **add_reportei_event**: Add a timeline event
 - **list_clients**: List all clients
 - **get_reportei_metrics**: Get raw metrics data
-- **get_report_details**: Get details for a specific report
 - **list_integrations**: List all connected integrations
-- **list_reportei_projects**: List all marketing projects
 - **list_reportei_reports**: You can filter by project ID.
 
 List generated reports
 - **list_reportei_timeline**: List timeline events
 - **create_report**: Generate a new analytics report
+- **get_report_details**: Get details for a specific report
+- **list_reportei_projects**: List all marketing projects
 
 
 ## 💬 Prompt Examples

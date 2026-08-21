@@ -36,17 +36,17 @@ No more manual exporting of keyword sheets or missing rank drops. Your AI acts a
 
 
 ## Available Tools (12)
-- **add_competitor**: Add a competitor
 - **add_keyword**: Add a keyword
 - **check_raventools_status**: Verify connectivity
 - **get_links**: Get backlinks
-- **get_project**: Get project info
 - **get_rank_all**: Get all rankings
-- **get_rank**: Get keyword rank
 - **get_site_audit**: Get site audit
 - **list_competitors**: List competitors
 - **list_keywords**: List keywords
 - **list_projects**: List projects/domains
+- **add_competitor**: Add a competitor
+- **get_project**: Get project info
+- **get_rank**: Get keyword rank
 - **remove_keyword**: Remove a keyword
 
 

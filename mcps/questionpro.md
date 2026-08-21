@@ -29,14 +29,14 @@ Ideal for market researchers, HR teams, and product managers needing fast, AI-dr
 
 
 ## Available Tools (13)
-- **get_survey**: Get survey details
-- **list_surveys**: List surveys
 - **list_users**: List account users
-- **list_surveys_by_folder**: List surveys by folder
-- **list_email_lists**: List email lists
 - **list_folders**: List folders
-- **list_questions**: List survey questions
 - **list_responses**: List survey responses
+- **list_surveys_by_folder**: List surveys by folder
+- **get_survey**: Get survey details
+- **list_email_lists**: List email lists
+- **list_questions**: List survey questions
+- **list_surveys**: List surveys
 - **check_questionpro_status**: Verify connectivity
 - **create_survey**: Create a survey
 - **get_question**: Get question details
