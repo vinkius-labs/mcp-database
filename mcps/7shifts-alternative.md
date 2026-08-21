@@ -33,17 +33,17 @@ Connect your **7shifts** restaurant management account to any AI agent and simpl
 
 ## Available Tools (12)
 - **list_employees**: List all employees
-- **list_time_punches**: List time clock entries
+- **get_account_info**: Get my profile
+- **list_departments**: List departments
+- **list_schedules**: List all schedules
+- **list_webhooks**: List active webhooks
 - **create_employee**: Create a new employee
 - **create_shift**: Create a new shift
-- **get_account_info**: Get my profile
 - **get_employee**: Get employee details
-- **list_departments**: List departments
 - **list_locations**: List business locations
 - **list_roles**: List employee roles
-- **list_schedules**: List all schedules
 - **list_shifts**: List all shifts
-- **list_webhooks**: List active webhooks
+- **list_time_punches**: List time clock entries
 
 
 ## 💬 Prompt Examples

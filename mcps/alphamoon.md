@@ -36,18 +36,18 @@ No more manual data entry from complex PDFs or digging through individual extrac
 
 
 ## Available Tools (12)
-- **check_alphamoon_status**: Verify connectivity
 - **delete_document**: Delete a document
-- **get_document**: Get document details
-- **get_extraction_results**: Get extraction results
 - **get_ocr_results**: Get OCR results
-- **get_process**: Get process details
 - **get_template**: Get template details
 - **list_documents_by_process**: List documents by process
-- **list_documents**: List documents
 - **list_processes**: List processes
 - **list_templates**: List templates
 - **upload_document**: Upload a document
+- **check_alphamoon_status**: Verify connectivity
+- **get_document**: Get document details
+- **get_extraction_results**: Get extraction results
+- **get_process**: Get process details
+- **list_documents**: List documents
 
 
 ## 💬 Prompt Examples

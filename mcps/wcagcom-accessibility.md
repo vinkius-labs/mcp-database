@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your entire web accessibility and inclusive
 
 
 ## Available Tools (4)
-- **list_accessibility_rules**: List all accessibility rules used by the WCAG auditing engine
-- **audit_url_accessibility**: 1 standards to identify accessibility issues and compliance markers.
-
-Perform a WCAG accessibility audit on a specific URL
 - **check_api_status**: com Accessibility API.
 
 Check if the WCAG.com service is operational
+- **audit_url_accessibility**: 1 standards to identify accessibility issues and compliance markers.
+
+Perform a WCAG accessibility audit on a specific URL
 - **get_wcag_guideline_details**: Get detailed metadata and recommendations for a specific WCAG guideline
+- **list_accessibility_rules**: List all accessibility rules used by the WCAG auditing engine
 
 
 ## 💬 Prompt Examples

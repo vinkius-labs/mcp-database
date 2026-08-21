@@ -37,18 +37,18 @@ Connect your **APImage** account to any AI agent and manage your entire image ge
 
 
 ## Available Tools (10)
+- **get_generation**: Get generation details
+- **image_to_image**: Transform an image with a prompt
+- **list_models**: List available models
+- **check_apimage_status**: Verify API connectivity
+- **enhance_prompt**: Enhance a generation prompt
 - **generate_image**: Optionally specify the model.
 
 Generate an image from a prompt
-- **get_generation**: Get generation details
-- **image_to_image**: Transform an image with a prompt
 - **inpaint_image**: Inpaint a masked region
 - **list_generations**: List generation history
-- **upscale_image**: Upscale an image
-- **enhance_prompt**: Enhance a generation prompt
 - **remove_background**: Remove image background
-- **list_models**: List available models
-- **check_apimage_status**: Verify API connectivity
+- **upscale_image**: Upscale an image
 
 
 ## 💬 Prompt Examples

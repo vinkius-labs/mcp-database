@@ -38,16 +38,16 @@ No more manual toggling between browser extensions or guessing prospect emails. 
 ## Available Tools (12)
 - **get_credit_balance**: Get credit status
 - **get_lead_details**: Get full lead info
-- **add_new_lead**: Manually add lead
-- **delete_lead**: Remove captured lead
-- **search_domain_leads**: Find leads in domain
-- **find_email_by_name**: Find email by name
 - **get_account_info**: Get profile info
-- **get_linkedin_details**: Enrich LinkedIn profile
 - **list_captured_leads**: List your leads
 - **list_prospecting_lists**: List lead lists
 - **list_team_members**: List account users
 - **list_webhooks**: List active webhooks
+- **add_new_lead**: Manually add lead
+- **delete_lead**: Remove captured lead
+- **find_email_by_name**: Find email by name
+- **get_linkedin_details**: Enrich LinkedIn profile
+- **search_domain_leads**: Find leads in domain
 
 
 ## 💬 Prompt Examples

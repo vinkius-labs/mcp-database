@@ -42,9 +42,9 @@ Empower your AI agent to orchestrate your mobile growth and engagement with **Um
 - **get_push_status**: Check push task status
 - **get_retention**: Get user retention stats
 - **list_push_tasks**: List recent push tasks
-- **send_push**: Send push notification
-- **cancel_push**: Cancel pending push task
 - **get_active_users**: Get active user count
+- **cancel_push**: Cancel pending push task
+- **send_push**: Send push notification
 
 
 ## 💬 Prompt Examples

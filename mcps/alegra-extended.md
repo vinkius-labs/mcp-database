@@ -35,17 +35,17 @@ Connect your **Alegra** account to any AI agent and simplify how you manage your
 
 
 ## Available Tools (11)
-- **create_contact**: Create a new contact in Alegra
 - **create_invoice**: Create a new sales invoice
-- **get_contact_details**: Get details of a specific contact
 - **get_invoice_details**: Get details of a specific invoice
-- **get_item_details**: Get details of an inventory item
-- **get_company_info**: Get Alegra company information
 - **list_contacts**: List Alegra contacts (clients and suppliers)
 - **list_estimates**: List estimates/quotes
-- **list_invoices**: List sales invoices in Alegra
 - **list_inventory_items**: List products and services
+- **list_invoices**: List sales invoices in Alegra
 - **list_payments**: List recorded payments
+- **create_contact**: Create a new contact in Alegra
+- **get_company_info**: Get Alegra company information
+- **get_contact_details**: Get details of a specific contact
+- **get_item_details**: Get details of an inventory item
 
 
 ## 💬 Prompt Examples

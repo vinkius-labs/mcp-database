@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire VAT validation and tax auditing
 
 
 ## Available Tools (6)
-- **get_company_by_vat**: Retrieve company details associated with a VAT number
 - **get_country_tax_info**: Get additional tax information for a country
-- **get_api_usage**: Check current VATNode API usage statistics
-- **get_country_vat_rates**: Get current VAT rates for a specific country
 - **list_all_vat_rates**: List VAT rates for all supported countries
 - **validate_vat_number**: Verify if a VAT number is valid and retrieve company metadata
+- **get_api_usage**: Check current VATNode API usage statistics
+- **get_company_by_vat**: Retrieve company details associated with a VAT number
+- **get_country_vat_rates**: Get current VAT rates for a specific country
 
 
 ## 💬 Prompt Examples

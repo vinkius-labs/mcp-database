@@ -35,8 +35,8 @@ Equip your AI agent with the power of the world's most comprehensive collaborati
 
 
 ## Available Tools (2)
-- **get_word_definition**: Get the definition of a word
 - **get_word_summary**: Get a short summary of a word or topic
+- **get_word_definition**: Get the definition of a word
 
 
 ## 💬 Prompt Examples

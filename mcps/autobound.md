@@ -39,15 +39,15 @@ No more manual status checking of individual lead records or digging through com
 - **enrich_company**: Enrich a company
 - **generate_email**: Generate sales email
 - **generate_linkedin**: Generate LinkedIn message
-- **get_campaign**: Get campaign details
 - **get_signal**: Get signal details
-- **check_autobound_status**: Verify connectivity
 - **list_prospects**: List prospects
 - **search_signals**: Search buyer signals
 - **enrich_bulk**: Bulk enrich contacts
 - **enrich_contact**: Enrich a contact
-- **execute_campaign**: Execute a campaign
 - **list_campaigns**: List campaigns
+- **check_autobound_status**: Verify connectivity
+- **execute_campaign**: Execute a campaign
+- **get_campaign**: Get campaign details
 
 
 ## 💬 Prompt Examples

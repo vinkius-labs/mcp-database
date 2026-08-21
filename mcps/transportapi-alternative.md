@@ -35,17 +35,17 @@ Empower your AI agent to orchestrate your entire public transport research workf
 
 
 ## Available Tools (12)
-- **get_bus_route_timetable**: Get the scheduled timetable for a bus route
 - **get_transport_by_postcode**: Useful when user only has a postcode, not coordinates.
 
 Find transport options by UK postcode
+- **get_live_train_departures**: g., KGX for King's Cross, PAD for Paddington).
+
+Get real-time train departures for a UK station
+- **get_bus_route_timetable**: Get the scheduled timetable for a bus route
 - **get_bus_service**: Get details of a bus service route
 - **get_live_bus_departures**: Returns live departure times, destinations, and operators.
 
 Get real-time bus departures for a UK bus stop
-- **get_live_train_departures**: g., KGX for King's Cross, PAD for Paddington).
-
-Get real-time train departures for a UK station
 - **get_nearby_bus_stops**: Find bus stops near a GPS location
 - **get_nearby_transport_places**: Find transport locations near GPS coordinates
 - **get_train_fares**: Great for price comparison.
