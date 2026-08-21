@@ -41,9 +41,9 @@ No more manual address checking or digging through complex blockchain explorers.
 Create a new payment order
 - **get_account_info**: Get account profile details
 - **get_order**: Get order details
+- **list_payouts**: List all payouts
 - **get_exchange_rates**: Get current crypto exchange rates
 - **list_orders**: List all crypto payment orders
-- **list_payouts**: List all payouts
 
 
 ## 💬 Prompt Examples

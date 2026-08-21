@@ -34,7 +34,6 @@ Connect your **Clientify** CRM account to any AI agent and streamline your entir
 
 
 ## Available Tools (10)
-- **create_deal**: Create a new sales deal
 - **list_activities**: List all tasks and activities
 - **list_contacts**: Supports filtering by email for precise lookups.
 
@@ -42,10 +41,11 @@ List all contacts from Clientify
 - **list_deals**: List all deals/opportunities
 - **list_pipelines**: List all deal pipelines
 - **list_users**: List all account users
-- **update_contact**: Update an existing contact
-- **create_activity**: Create a new activity or task
 - **create_contact**: Create a new contact in Clientify
 - **get_contact**: Get details for a specific contact
+- **create_activity**: Create a new activity or task
+- **create_deal**: Create a new sales deal
+- **update_contact**: Update an existing contact
 
 
 ## 💬 Prompt Examples

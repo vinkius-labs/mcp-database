@@ -36,14 +36,14 @@ No more manual template copy-pasting or slow message tracking in the dashboard. 
 
 
 ## Available Tools (6)
-- **get_message_status**: Check message delivery status
 - **list_groups**: List WhatsApp groups
+- **list_contacts**: List WhatsApp contacts
+- **create_contact**: Create a new contact
+- **get_message_status**: Check message delivery status
 - **list_templates**: List WhatsApp templates
 - **send_template_message**: Pass placeholders as a JSON string.
 
 Send a WhatsApp template message
-- **create_contact**: Create a new contact
-- **list_contacts**: List WhatsApp contacts
 
 
 ## 💬 Prompt Examples

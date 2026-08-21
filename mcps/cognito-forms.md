@@ -37,16 +37,16 @@ No more manual exporting of entries or searching through form folders in the por
 
 ## Available Tools (12)
 - **check_cognito_status**: Verify connectivity
-- **create_entry**: Create an entry
 - **delete_entry**: Delete an entry
-- **get_entry**: Get entry details
-- **get_form_fields**: Get form fields
 - **get_form**: Get form schema
 - **list_entries**: List entries
+- **get_form_fields**: Get form fields
 - **list_forms**: List forms
-- **list_organizations**: List organizations
 - **list_templates**: List templates
 - **search_entries**: Search entries
+- **create_entry**: Create an entry
+- **get_entry**: Get entry details
+- **list_organizations**: List organizations
 - **update_entry**: Update an entry
 
 

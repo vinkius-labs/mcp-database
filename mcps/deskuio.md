@@ -36,17 +36,17 @@ No more manual ticket searching or complex dashboard navigation. Your AI acts as
 
 
 ## Available Tools (9)
-- **create_conversation**: Reply to a ticket
-- **create_ticket**: Create a new ticket
 - **get_ticket**: Get ticket details
 - **get_customer**: Get customer details
-- **list_agents**: List support agents
 - **list_conversations**: List conversation history for a ticket
 - **list_customers**: List support customers
+- **update_ticket**: Update a ticket
+- **create_conversation**: Reply to a ticket
+- **create_ticket**: Create a new ticket
+- **list_agents**: List support agents
 - **list_tickets**: io account.
 
 List support tickets
-- **update_ticket**: Update a ticket
 
 
 ## 💬 Prompt Examples

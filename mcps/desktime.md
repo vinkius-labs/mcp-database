@@ -36,18 +36,18 @@ No more manual logging or digging through productivity charts in the dashboard. 
 
 
 ## Available Tools (12)
-- **list_online_staff**: Check who is working
 - **mark_task_completed**: Complete a task
-- **create_project**: Add new project
 - **create_new_task**: Add task to project
 - **remove_project**: Delete a project
-- **get_company_info**: Get company details
-- **get_employee_performance**: Check employee stats
-- **get_project_details**: Get project info
 - **list_employees**: List company employees
 - **list_projects**: List DeskTime projects
-- **get_productivity_reports**: Check company performance
 - **list_project_tasks**: List tasks in project
+- **create_project**: Add new project
+- **get_company_info**: Get company details
+- **get_employee_performance**: Check employee stats
+- **get_productivity_reports**: Check company performance
+- **get_project_details**: Get project info
+- **list_online_staff**: Check who is working
 
 
 ## 💬 Prompt Examples

@@ -36,14 +36,14 @@ No more manual copy-pasting of website content for training. Your AI acts as you
 
 
 ## Available Tools (7)
+- **list_bots**: List all chatbots
+- **list_data_sources**: List data sources for a bot
+- **update_bot**: Update an existing bot
 - **chat**: Interact with a chatbot
 - **create_bot**: Provide name and welcome message.
 
 Create a new chatbot
 - **get_bot**: Get details of a specific bot
-- **list_bots**: List all chatbots
-- **list_data_sources**: List data sources for a bot
-- **update_bot**: Update an existing bot
 - **upload_data_source**: Add a knowledge source to a bot
 
 

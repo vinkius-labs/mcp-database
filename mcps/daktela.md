@@ -35,10 +35,7 @@ Connect your **Daktela** omnichannel contact center to any AI agent and simplify
 
 
 ## Available Tools (12)
-- **create_contact**: Create a new CRM contact
 - **create_ticket**: Create a new ticket
-- **get_me**: Get current user information
-- **get_ticket**: Get details of a specific ticket
 - **list_activities**: List recent activities in Daktela
 - **list_call_history**: List call history
 - **list_contacts**: List CRM contacts
@@ -47,6 +44,9 @@ Connect your **Daktela** omnichannel contact center to any AI agent and simplify
 - **list_tickets**: List support tickets
 - **list_users**: List Daktela users
 - **list_accounts**: List CRM accounts
+- **create_contact**: Create a new CRM contact
+- **get_me**: Get current user information
+- **get_ticket**: Get details of a specific ticket
 
 
 ## 💬 Prompt Examples

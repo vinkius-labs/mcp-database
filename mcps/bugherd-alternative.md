@@ -26,15 +26,15 @@ Ideal for development and QA teams looking to interact with BugHerd tickets dire
 
 
 ## Available Tools (10)
-- **add_comment**: Add a comment to a BugHerd task
 - **create_project**: Create a new project in BugHerd
-- **create_task**: Create a new task in a BugHerd project
 - **get_project**: Get a specific project in BugHerd
 - **get_task**: Get a specific task in BugHerd
 - **list_comments**: List comments on a BugHerd task
 - **list_projects**: List projects in BugHerd
-- **list_tasks**: List tasks for a project in BugHerd
 - **list_users**: List users in the BugHerd account
+- **add_comment**: Add a comment to a BugHerd task
+- **create_task**: Create a new task in a BugHerd project
+- **list_tasks**: List tasks for a project in BugHerd
 - **update_task**: Can update description, status, priority, or assigned_to_id.
 
 Update a task in BugHerd

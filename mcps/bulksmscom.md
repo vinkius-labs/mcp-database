@@ -36,18 +36,18 @@ No more manual message tracking or digging through complex delivery reports. You
 
 
 ## Available Tools (12)
-- **check_bulksms_status**: Verify connectivity
-- **send_bulk_sms**: Send bulk SMS
 - **send_sms**: Send an SMS
-- **create_contact**: Create a contact
-- **delete_message**: Delete a message
 - **get_credits**: Get credits balance
 - **get_delivery_status**: Get delivery status
-- **get_message**: Get message details
 - **get_profile**: Get profile
 - **list_contacts**: List contacts
 - **list_groups**: List contact groups
 - **list_messages**: List messages
+- **check_bulksms_status**: Verify connectivity
+- **create_contact**: Create a contact
+- **delete_message**: Delete a message
+- **get_message**: Get message details
+- **send_bulk_sms**: Send bulk SMS
 
 
 ## 💬 Prompt Examples

@@ -36,11 +36,11 @@ No more manual status checking of individual demo links. Your AI acts as your de
 
 
 ## Available Tools (6)
-- **get_demoboard**: Get DemoBoard details
 - **list_demoboards**: List all DemoBoards
 - **list_demolytics**: List analytics for demos
-- **list_demos**: List all available demos
 - **list_invitations**: List sent demo invitations
+- **get_demoboard**: Get DemoBoard details
+- **list_demos**: List all available demos
 - **list_users**: List all account users
 
 

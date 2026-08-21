@@ -36,16 +36,16 @@ No more manual logging of call results or digging through fragmented phone recor
 
 
 ## Available Tools (12)
-- **delete_contact**: Delete a contact
 - **get_account_info**: Get account details
-- **get_contact**: Get contact details
 - **get_call_stats**: Get call statistics
+- **get_contact**: Get contact details
 - **list_calls**: List recent calls
-- **create_contact**: Create a new contact
 - **create_webhook**: Create a new webhook
 - **get_call_recording**: Get call recording URL
-- **list_contacts**: List all customer contacts
 - **list_users**: List account users
+- **create_contact**: Create a new contact
+- **delete_contact**: Delete a contact
+- **list_contacts**: List all customer contacts
 - **list_webhooks**: List configured webhooks
 - **update_contact**: Update an existing contact
 
