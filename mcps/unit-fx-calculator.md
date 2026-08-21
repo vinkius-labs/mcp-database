@@ -20,10 +20,10 @@ LLMs notoriously struggle with complex compound conversions (e.g. converting km/
 
 
 ## Available Tools (3)
+- **convert_unit**: Deterministically converts physical units (e.g. km/h to mph, celsius to fahrenheit)using mathjs
 - **batch_convert**: ). Pass the value, source unit, and target unit for exact mathematical conversion.
 
 Converts multiple physical units in a single deterministic pass
-- **convert_unit**: Deterministically converts physical units (e.g. km/h to mph, celsius to fahrenheit)using mathjs
 - **get_rate**: Gets the exact foreign exchange rate between two currencies using Frankfurter API (1h cache)
 
 

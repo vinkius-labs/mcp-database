@@ -31,9 +31,9 @@ The **ATS Anywhere MCP Server** (by HiringThing) provides a powerful natural lan
 ## Available Tools (9)
 - **create_job**: Create a new job listing
 - **get_account_check**: Verify ATS Anywhere account connection
-- **get_applicant_notes**: Retrieve internal notes for an applicant
 - **get_applicant**: Get full profile for a specific applicant
 - **get_job**: Get details for a specific job
+- **get_applicant_notes**: Retrieve internal notes for an applicant
 - **list_applicants**: List all job applicants
 - **list_jobs**: List all job openings in ATS Anywhere
 - **list_sites**: List all company sites/subdomains associated

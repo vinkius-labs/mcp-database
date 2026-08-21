@@ -20,15 +20,15 @@ Brazilian interest rates.
 
 
 ## Available Tools (4)
-- **get_selic_diaria**: Reflete a execução real da política monetária. Série SGS: 11.
-
-Obter a taxa Selic efetiva (diária)
-- **get_cdi**: O CDI é a referência para a maioria dos investimentos em renda fixa no Brasil (CDBs, LCIs, LCAs, fundos DI). Geralmente fica muito próximo da Selic. Série SGS: 12.
-
-Obter a taxa CDI (Certificado de Depósito Interbancário)
 - **get_expectativas_selic**: Inclui mediana, média, mínimo e máximo das projeções das instituições financeiras. O Focus é publicado toda segunda-feira pelo BCB.
 
 Obter as expectativas do mercado para a taxa Selic (Relatório Focus)
+- **get_cdi**: O CDI é a referência para a maioria dos investimentos em renda fixa no Brasil (CDBs, LCIs, LCAs, fundos DI). Geralmente fica muito próximo da Selic. Série SGS: 12.
+
+Obter a taxa CDI (Certificado de Depósito Interbancário)
+- **get_selic_diaria**: Reflete a execução real da política monetária. Série SGS: 11.
+
+Obter a taxa Selic efetiva (diária)
 - **get_selic_meta**: A Selic é a taxa básica da economia brasileira e referência para todas as demais taxas de juros do país. Série SGS: 432.
 
 Obter a meta da taxa Selic definida pelo COPOM

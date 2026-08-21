@@ -36,12 +36,12 @@ Empower your AI agent to orchestrate your entire logistics operation with **Axle
 
 ## Available Tools (12)
 - **get_account_check**: Verify Axle connection and system health
-- **get_driver_availability**: Check a driver remaining hours of service (HOS)
 - **get_driver**: Get specific profile details for a driver
+- **get_driver_availability**: Check a driver remaining hours of service (HOS)
 - **update_load**: Update a load/shipment details
 - **get_load**: Get details for a specific load
-- **get_vehicle_location**: Get the last known GPS location of a vehicle
 - **get_vehicle**: Get specific details for a single vehicle
+- **get_vehicle_location**: Get the last known GPS location of a vehicle
 - **list_documents**: Retrieve scanned shipping documents associated with shipments
 - **list_drivers**: List all drivers in the system
 - **list_loads**: List all shipments/loads

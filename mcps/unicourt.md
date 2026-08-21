@@ -34,21 +34,21 @@ Connect your **UniCourt** account to any AI agent to streamline legal research a
 
 
 ## Available Tools (27)
-- **generate_token**: Generate a new UniCourt access token
 - **get_case**: Get details for a specific case
 - **search_norm_judge**: Search for normalized judges
-- **track_case**: Automatically update cases on a schedule
 - **track_norm_attorney**: Schedule recurring bar source refreshes for an attorney
 - **update_pacer_credential**: Manage PACER account credentials
-- **track_norm_law_firm**: Schedule recurring source refreshes for a law firm
 - **delete_pacer_credential**: Delete PACER account credentials
 - **get_case_count_analytics**: Get case count analytics by case type
 - **get_case_export_callback**: Get the file URL for a completed case export
 - **search_norm_attorney**: Search for normalized attorneys
 - **search_norm_law_firm**: Search for normalized law firms
 - **search_norm_party**: Search for normalized parties
-- **search_pacer_case_locator**: Search PACER directly via Case Locator
+- **generate_token**: Generate a new UniCourt access token
 - **get_case_update_status**: Check the status of a requested case update
+- **search_pacer_case_locator**: Search PACER directly via Case Locator
+- **track_case**: Automatically update cases on a schedule
+- **track_norm_law_firm**: Schedule recurring source refreshes for a law firm
 - **get_document_order_callback**: Get the file URL for a completed document order
 - **get_norm_attorney**: Get analytics and details for a normalized attorney
 - **get_norm_judge**: Get analytics and details for a normalized judge

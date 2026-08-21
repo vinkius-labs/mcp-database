@@ -37,13 +37,13 @@ Empower your AI agent to orchestrate your visual content production with **Banne
 ## Available Tools (9)
 - **generate_image**: Convenience tool to generate a static image from a project
 - **generate_media**: Generate an image or video from a template
+- **list_renders**: List all recent media renders
 - **generate_video**: Convenience tool to generate a video from a project
 - **get_account_check**: Verify Bannerbite connection
 - **get_project**: Get details for a specific project
 - **get_render**: Get details and status for a specific render
 - **list_bites**: List all bites (scenes) for a specific project
 - **list_projects**: List all Bannerbite projects
-- **list_renders**: List all recent media renders
 
 
 ## 💬 Prompt Examples

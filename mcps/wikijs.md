@@ -33,10 +33,10 @@ Connect your **Wiki.js** instance to any AI agent and take full control of your 
 
 
 ## Available Tools (6)
-- **update_page**: Update an existing Wiki.js page
 - **create_page**: Create a new Wiki.js page
-- **delete_page**: Delete a Wiki.js page
 - **get_page**: Fetch a Wiki.js page by path
+- **update_page**: Update an existing Wiki.js page
+- **delete_page**: Delete a Wiki.js page
 - **list_pages**: List all Wiki.js pages
 - **search_pages**: Search for content in Wiki.js
 

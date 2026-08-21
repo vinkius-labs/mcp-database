@@ -36,35 +36,35 @@ No more switching between your IDE and the Weblate dashboard to check translatio
 
 
 ## Available Tools (32)
-- **create_project_component**: Create a new component in a project
-- **create_project**: Create a new project
-- **create_role**: Create a new role with specific permissions
-- **create_user**: Create a new Weblate user
 - **delete_user**: Delete a user (marks inactive)
 - **get_group**: Get group details (roles, projects, components)
-- **get_language**: Get language details (plural formulas, aliases)
 - **get_project**: Get project details
-- **list_languages**: List all languages
-- **list_user_notifications**: List user notification subscriptions
 - **list_project_components**: List components within a project
-- **get_project_file_url**: Get the URL to download all translations as a ZIP archive
-- **list_project_labels**: Manage project labels
-- **list_project_languages**: Paginated statistics for all languages in a project
-- **perform_repository_operation**: Perform VCS operations (push, pull, commit, reset, cleanup)
 - **get_project_repository**: Overall VCS status for the project
 - **list_projects**: List all projects
 - **list_roles**: List roles associated with the user
+- **create_project**: Create a new project
+- **create_project_component**: Create a new component in a project
+- **create_role**: Create a new role with specific permissions
+- **create_user**: Create a new Weblate user
+- **get_language**: Get language details (plural formulas, aliases)
+- **get_project_file_url**: Get the URL to download all translations as a ZIP archive
 - **get_root**: Get Weblate API root entry point
+- **get_user_contributions**: List translations with user contributions
+- **list_languages**: List all languages
+- **list_project_labels**: Manage project labels
+- **list_project_languages**: Paginated statistics for all languages in a project
+- **list_user_notifications**: List user notification subscriptions
 - **list_users**: Requires management permissions or returns self.
 
 List Weblate users
-- **get_role**: Get role details and permission codenames
+- **manage_user_notifications**: Manage user notification subscriptions
+- **perform_repository_operation**: Perform VCS operations (push, pull, commit, reset, cleanup)
+- **update_user**: Update user details
+- **get_language_statistics**: Global statistics for a language
 - **get_user**: Get detailed user information
 - **list_groups**: List Weblate groups
-- **get_language_statistics**: Global statistics for a language
-- **manage_user_notifications**: Manage user notification subscriptions
-- **update_user**: Update user details
-- **get_user_contributions**: List translations with user contributions
+- **get_role**: Get role details and permission codenames
 - **get_user_statistics**: Get user translation statistics
 - **add_group_admins**: Add team administrators to a group
 - **add_group_roles**: Associate roles with a group

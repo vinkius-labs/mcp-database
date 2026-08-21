@@ -36,13 +36,13 @@ Connect your **AdsWizz** account to your AI agent to orchestrate your digital au
 
 ## Available Tools (4)
 - **list_campaigns**: List audio ad campaigns
+- **get_audio_performance**: Filterable by date.
+
+Get audio ad metrics
 - **get_campaign**: Get campaign details
 - **list_zones**: g. podcasts, streams).
 
 List ad zones/inventory
-- **get_audio_performance**: Filterable by date.
-
-Get audio ad metrics
 
 
 ## 💬 Prompt Examples

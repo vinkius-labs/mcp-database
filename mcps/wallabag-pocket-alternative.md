@@ -34,6 +34,8 @@ Connect your **Wallabag** instance to any AI agent and transform your read-it-la
 
 
 ## Available Tools (11)
+- **add_tags_to_entry**: Add tags to a specific entry
+- **mark_entry_read**: Mark an entry as read (archive)
 - **create_entry**: Save a new URL to Wallabag
 - **delete_entry**: Delete an entry from Wallabag
 - **get_entry**: Get a single entry by ID
@@ -41,9 +43,7 @@ Connect your **Wallabag** instance to any AI agent and transform your read-it-la
 - **list_entries**: Get all entries (articles) from Wallabag
 - **list_tags**: Get all tags from Wallabag
 - **mark_entry_favorite**: Mark an entry as favorite (starred)
-- **mark_entry_read**: Mark an entry as read (archive)
 - **remove_tag_from_entry**: Remove a tag from an entry
-- **add_tags_to_entry**: Add tags to a specific entry
 - **create_annotation**: Create an annotation on an entry
 
 
