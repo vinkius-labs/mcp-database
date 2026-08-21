@@ -36,10 +36,10 @@ No more manual copy-pasting into web detectors. Your AI acts as your dedicated a
 
 
 ## Available Tools (4)
-- **get_current_user**: Get authenticated user profile
 - **get_api_quotas**: Check remaining API credits
-- **detect_ai_in_text**: Analyze text for AI generation
+- **get_current_user**: Get authenticated user profile
 - **submit_prediction_feedback**: Provide feedback on a prediction
+- **detect_ai_in_text**: Analyze text for AI generation
 
 
 ## 💬 Prompt Examples

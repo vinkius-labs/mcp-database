@@ -36,18 +36,18 @@ No more manual scrubbing through photo galleries to find specific references. Yo
 
 
 ## Available Tools (12)
-- **get_hot_tags**: Get a list of currently hot tags
 - **get_recent_photos**: Get recent public photos
 - **get_group_photos**: Get photos from a group pool
-- **get_interesting_photos**: Get interesting photos from Flickr
-- **get_photo_info**: Get details of a specific photo
 - **get_album_photos**: Get photos in a specific album
-- **get_user_info**: Get information about a Flickr user
+- **get_interesting_photos**: Get interesting photos from Flickr
 - **get_user_albums**: List public albums (photosets) for a user
+- **get_user_info**: Get information about a Flickr user
 - **get_user_popular_tags**: Get popular tags for a user
 - **get_user_public_photos**: Get public photos of a user
 - **search_groups**: Search for Flickr groups
 - **search_photos**: Search for public photos on Flickr
+- **get_hot_tags**: Get a list of currently hot tags
+- **get_photo_info**: Get details of a specific photo
 
 
 ## 💬 Prompt Examples

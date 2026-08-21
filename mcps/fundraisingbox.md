@@ -37,20 +37,20 @@ Connect your **FundraisingBox** account to any AI agent and manage your nonprofi
 
 
 ## Available Tools (14)
-- **get_dashboard**: Get fundraising dashboard
 - **get_donation**: Get donation details
-- **get_donor_history**: Get donor history
 - **get_donor**: Get donor profile
-- **list_donations_by_project**: List donations by campaign
+- **get_donor_history**: Get donor history
 - **list_donors**: List donors
-- **list_forms**: List donation forms
-- **list_campaigns**: List campaigns
 - **list_receipts**: List donation receipts
-- **list_recurring_donations**: List recurring donations
 - **search_donors**: Search donors
-- **get_campaign**: Get campaign details
 - **list_donations**: List donations
 - **check_fundraisingbox_status**: Verify connectivity
+- **get_campaign**: Get campaign details
+- **get_dashboard**: Get fundraising dashboard
+- **list_campaigns**: List campaigns
+- **list_donations_by_project**: List donations by campaign
+- **list_forms**: List donation forms
+- **list_recurring_donations**: List recurring donations
 
 
 ## 💬 Prompt Examples

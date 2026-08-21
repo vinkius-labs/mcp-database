@@ -35,16 +35,16 @@ Connect your **KanbanTool** account to any AI agent and manage kanban boards thr
 
 
 ## Available Tools (10)
-- **update_task_details**: Modify an existing task
+- **get_board_details**: Get metadata and tasks for a board
+- **list_board_tasks**: List tasks on a board
+- **get_user_profile**: Get current user profile
+- **list_shared_links**: List shared board links
+- **list_task_activities**: List history for a task
 - **archive_task_card**: Archive a task card
 - **create_task_card**: Add a new card to a board
-- **get_board_details**: Get metadata and tasks for a board
-- **get_user_profile**: Get current user profile
 - **get_task_details**: Get details for a task
-- **list_task_activities**: List history for a task
 - **list_boards**: List your Kanban boards
-- **list_shared_links**: List shared board links
-- **list_board_tasks**: List tasks on a board
+- **update_task_details**: Modify an existing task
 
 
 ## 💬 Prompt Examples

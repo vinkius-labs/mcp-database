@@ -36,14 +36,14 @@ Connect your **Gameball** loyalty and gamification account to any AI agent and s
 
 
 ## Available Tools (8)
-- **get_player_balance**: Check player points balance
-- **get_player_details**: Get details for a specific player
 - **list_challenges**: List active challenges
 - **list_discount_coupons**: List available coupons
 - **list_players**: List Gameball players
+- **list_loyalty_levels**: List configured levels
+- **get_player_balance**: Check player points balance
+- **get_player_details**: Get details for a specific player
 - **list_rewards**: List available rewards
 - **track_player_event**: Track a player action
-- **list_loyalty_levels**: List configured levels
 
 
 ## 💬 Prompt Examples

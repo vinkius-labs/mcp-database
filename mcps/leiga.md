@@ -36,12 +36,12 @@ Connect your **Leiga** account to any AI agent and manage projects through natur
 - **get_project_details**: Get details for a specific project
 - **create_task**: Create a new task
 - **get_task_details**: Get details for a specific task
-- **list_team_members**: List team users
+- **list_organizational_teams**: List configured teams
 - **list_projects**: List Leiga projects
 - **list_tasks**: Optionally filter by project ID.
 
 List tasks
-- **list_organizational_teams**: List configured teams
+- **list_team_members**: List team users
 - **list_workflows**: List automated workflows
 
 

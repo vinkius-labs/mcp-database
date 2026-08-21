@@ -36,6 +36,7 @@ No more manual deal logging or digging through CRM menus. Your AI acts as your d
 
 
 ## Available Tools (12)
+- **list_opportunities**: List all sales opportunities
 - **create_company**: Create a new company
 - **create_opportunity**: Create a new opportunity
 - **create_person**: Create a new person
@@ -45,7 +46,6 @@ No more manual deal logging or digging through CRM menus. Your AI acts as your d
 - **list_companies**: List registered companies
 - **list_custom_fields**: List custom fields
 - **list_funnels**: List sales methodologies/funnels
-- **list_opportunities**: List all sales opportunities
 - **list_people**: List registered people
 - **update_opportunity**: Update an existing opportunity
 

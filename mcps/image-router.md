@@ -25,17 +25,17 @@ Connect your **ImageRouter** account to any AI agent and manage AI image generat
 
 
 ## Available Tools (11)
-- **check_imagerouter_status**: Verify API connectivity
-- **generate_image**: Generate an image from text
-- **get_generation_status**: Check generation status
 - **list_styles**: List image styles
-- **upscale_image**: Upscale an image
 - **edit_image**: Edit an existing image
 - **generate_image_advanced**: Generate with full options
 - **generate_variation**: Generate image variation
 - **get_model**: Get model details
-- **list_models_by_category**: List models by category
+- **check_imagerouter_status**: Verify API connectivity
+- **generate_image**: Generate an image from text
+- **get_generation_status**: Check generation status
 - **list_models**: List available models
+- **list_models_by_category**: List models by category
+- **upscale_image**: Upscale an image
 
 
 ## 💬 Prompt Examples

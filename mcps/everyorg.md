@@ -36,18 +36,18 @@ No more manual searching through fragmented charity databases. Your AI acts as y
 
 
 ## Available Tools (12)
-- **browse_by_cause**: Browse by cause
 - **browse_causes**: Browse causes
-- **check_everyorg_status**: Verify connectivity
-- **create_donation**: Create a donation
 - **create_fundraiser**: Create a fundraiser
 - **get_featured**: Get featured nonprofits
-- **get_fundraiser**: Get fundraiser details
 - **get_nonprofit_by_ein**: Get nonprofit by EIN
+- **search_nonprofits**: Search nonprofits
+- **browse_by_cause**: Browse by cause
+- **check_everyorg_status**: Verify connectivity
+- **create_donation**: Create a donation
+- **get_fundraiser**: Get fundraiser details
 - **get_nonprofit**: Get nonprofit details
 - **list_donations**: List donations
 - **list_fundraisers**: List fundraisers
-- **search_nonprofits**: Search nonprofits
 
 
 ## 💬 Prompt Examples

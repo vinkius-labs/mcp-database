@@ -15,17 +15,17 @@ The HiFlow MCP server bridges your AI agent with your enterprise workflows. Trig
 
 ## Available Tools (12)
 - **get_activity**: Retrieve activity dashboard information
-- **list_customers**: List all customers
-- **create_customer**: Create a new customer
 - **get_customer**: Retrieve details for a specific customer
 - **get_estimate**: Retrieve details for a specific estimate
-- **get_invoice**: Retrieve details for a specific invoice
 - **get_job**: Retrieve details for a specific job
 - **get_me**: Retrieve information about the current user
 - **list_estimates**: List all estimates (quotes)
+- **list_timesheets**: List all timesheet entries
+- **create_customer**: Create a new customer
+- **get_invoice**: Retrieve details for a specific invoice
+- **list_customers**: List all customers
 - **list_invoices**: List all invoices
 - **list_jobs**: List all jobs/projects
-- **list_timesheets**: List all timesheet entries
 
 
 ## 💬 Prompt Examples

@@ -37,18 +37,18 @@ Connect your **Goodcall** account to any AI agent and manage your virtual phone 
 
 ## Available Tools (13)
 - **check_goodcall_status**: Verify connectivity
-- **get_agent**: Get agent details
 - **get_analytics**: Get call analytics
-- **get_transcript**: Get call transcript
 - **get_call_summary**: Get call summary
+- **update_agent**: Update an agent
+- **list_missed_calls**: List missed calls
+- **get_agent**: Get agent details
 - **get_call**: Get call details
+- **get_transcript**: Get call transcript
 - **list_agents**: List AI agents
 - **list_bookings**: List bookings
-- **list_calls_by_agent**: List calls by agent
 - **list_calls**: List all calls
+- **list_calls_by_agent**: List calls by agent
 - **list_faqs**: List FAQs
-- **list_missed_calls**: List missed calls
-- **update_agent**: Update an agent
 
 
 ## 💬 Prompt Examples

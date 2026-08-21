@@ -36,17 +36,17 @@ No more manual status checking or complex asset management through slow web dash
 
 
 ## Available Tools (12)
-- **delete_video**: Remove video asset
 - **get_video_details**: Check video status
 - **create_video_upload**: Upload new video
-- **create_collection**: Add new folder
 - **get_account_info**: Get profile details
-- **get_video_analytics**: Check video stats
-- **list_videos**: List video assets
 - **list_video_collections**: List folders
+- **list_videos**: List video assets
 - **list_image_sources**: List image optimized sources
 - **list_org_users**: List team members
 - **list_webhooks**: Get active webhooks
+- **create_collection**: Add new folder
+- **delete_video**: Remove video asset
+- **get_video_analytics**: Check video stats
 - **update_video_thumbnail**: Set thumbnail offset
 
 

@@ -33,26 +33,26 @@ Empower your AI agent with access to your **Funil de Vendas** CRM to automate yo
 
 
 ## Available Tools (12)
-- **check_crm_api_health**: Verify CRM API connectivity
-- **create_crm_activity**: Requires opportunity ID and subject.
-
-Add a new activity/follow-up
 - **create_new_deal_lead**: Used for form integration.
 
 Add a new lead/opportunity via Data Entry
 - **list_crm_activities**: List CRM activities and tasks
-- **list_sales_funnels**: List configured sales methodologies (funnels)
-- **list_loss_motives**: List motives for losing deals
 - **list_crm_opportunities**: Can be filtered by funnel code, date, or text search.
 
 List CRM opportunities (deals)
+- **list_loss_motives**: List motives for losing deals
+- **list_sales_funnels**: List configured sales methodologies (funnels)
+- **list_crm_products**: List registered products/services
+- **update_crm_activity**: Modify an existing activity
+- **check_crm_api_health**: Verify CRM API connectivity
+- **create_crm_activity**: Requires opportunity ID and subject.
+
+Add a new activity/follow-up
+- **list_crm_custom_fields**: List defined custom fields
 - **list_lead_origins**: g., Google, Referral, Facebook).
 
 List lead source origins
-- **list_crm_products**: List registered products/services
 - **list_sales_vendors**: List CRM users (vendors)
-- **update_crm_activity**: Modify an existing activity
-- **list_crm_custom_fields**: List defined custom fields
 
 
 ## 💬 Prompt Examples

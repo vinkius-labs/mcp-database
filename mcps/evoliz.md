@@ -36,16 +36,16 @@ No more manual deal logging or digging through fragmented accounting tables. You
 
 
 ## Available Tools (9)
+- **get_quote**: Get a specific quote in Evoliz
+- **list_articles**: List articles (products/services) in Evoliz
+- **list_clients**: List clients in Evoliz
+- **list_invoices**: List invoices in Evoliz
 - **create_client**: Important required fields are usually `name` and `type` (Professional or Individual).
 
 Create a new client in Evoliz
 - **get_article**: Get a specific article in Evoliz
 - **get_client**: Get a specific client in Evoliz
 - **get_invoice**: Get a specific invoice in Evoliz
-- **get_quote**: Get a specific quote in Evoliz
-- **list_articles**: List articles (products/services) in Evoliz
-- **list_clients**: List clients in Evoliz
-- **list_invoices**: List invoices in Evoliz
 - **list_quotes**: List quotes in Evoliz
 
 
