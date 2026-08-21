@@ -29,14 +29,14 @@ Connect your **BotPenguin** account to any AI agent and orchestrate your custome
 
 
 ## Available Tools (8)
-- **get_chat_history**: Retrieve message history of a chat
 - **get_contact**: Get details of a specific contact
-- **list_agents**: List all human agents/operators
-- **list_chats**: List active chat sessions
 - **list_contacts**: Optional search text.
 
 List all BotPenguin contacts/leads
 - **list_tags**: List all contact tags
+- **get_chat_history**: Retrieve message history of a chat
+- **list_agents**: List all human agents/operators
+- **list_chats**: List active chat sessions
 - **send_message**: Send a message in a specific chat
 - **send_otp**: Send an OTP SMS to verify a phone number
 

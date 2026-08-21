@@ -34,15 +34,15 @@ Connect your **CallFire** account to any AI agent and manage your voice and SMS 
 
 
 ## Available Tools (10)
+- **list_calls**: List all calls
+- **list_texts**: List all text messages
 - **get_call**: Get a specific call
 - **get_campaign**: Get a specific broadcast campaign
 - **get_contact**: Get a specific contact
 - **get_text**: Get a specific text message
 - **get_webhook**: Get a specific webhook
-- **list_calls**: List all calls
 - **list_campaigns**: List all broadcast campaigns
 - **list_contacts**: List all contacts
-- **list_texts**: List all text messages
 - **list_webhooks**: List all webhooks
 
 

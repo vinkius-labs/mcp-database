@@ -35,9 +35,6 @@ Ideal for **budget travelers**, **students**, **eco-conscious commuters**, **tra
 
 
 ## Available Tools (8)
-- **search_trips**: Requires latitude,longitude format for both points. Returns trip details including departure/arrival cities, times, price, driver info, and available seats. Use this for precise location-based searches when you know exact coordinates.
-
-Search carpool trips between two GPS coordinates on BlaBlaCar
 - **search_trips_with_radius**: Useful when exact pickup/dropoff locations are flexible. Larger radius returns more options but may require additional travel to reach departure points. Returns all rides within the specified radius.
 
 Search carpool trips with flexible radius around coordinates
@@ -47,18 +44,21 @@ Get driver profile and ratings on BlaBlaCar
 - **get_trip_details**: Use this before booking to verify driver credibility, vehicle comfort, and exact pickup location.
 
 Get complete details of a specific BlaBlaCar trip including driver and vehicle info
+- **search_international_trips**: Requires origin/destination coordinates plus country codes (e.g., FR, DE, ES, IT, PT). Returns all available international rides with driver details and pricing. Use this for trips crossing national borders.
+
+Search international carpool trips between two countries on BlaBlaCar
+- **search_trips**: Requires latitude,longitude format for both points. Returns trip details including departure/arrival cities, times, price, driver info, and available seats. Use this for precise location-based searches when you know exact coordinates.
+
+Search carpool trips between two GPS coordinates on BlaBlaCar
+- **search_trips_by_city**: More user-friendly than coordinate-based search. Returns all matching trips with departure/arrival points, times, prices, driver ratings, and available seats. Best for general city-to-city searches without needing exact coordinates.
+
+Search carpool trips between two city names on BlaBlaCar
 - **search_bus_trips**: BlaBlaCar operates both carpooling and bus services. Bus trips are operated by professional drivers on fixed routes. Returns bus departure/arrival times, prices, and availability. Use this for longer distance or when carpool options are limited.
 
 Search BlaBlaCar Bus trips between two locations
 - **search_flexible_dates**: Much larger result set than exact-date search. Useful when travel dates are not fixed and user wants to compare prices/availability across multiple days. Returns up to 50 results spanning several days.
 
 Search carpool trips with flexible dates around a target date
-- **search_trips_by_city**: More user-friendly than coordinate-based search. Returns all matching trips with departure/arrival points, times, prices, driver ratings, and available seats. Best for general city-to-city searches without needing exact coordinates.
-
-Search carpool trips between two city names on BlaBlaCar
-- **search_international_trips**: Requires origin/destination coordinates plus country codes (e.g., FR, DE, ES, IT, PT). Returns all available international rides with driver details and pricing. Use this for trips crossing national borders.
-
-Search international carpool trips between two countries on BlaBlaCar
 
 
 ## 💬 Prompt Examples

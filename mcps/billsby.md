@@ -33,14 +33,14 @@ Connect your **Billsby** account to any AI agent and orchestrate your subscripti
 
 
 ## Available Tools (10)
+- **get_customer**: Get specific customer details
+- **list_invoices**: List recent invoices
 - **list_products**: List all products
 - **create_customer**: Create a new customer
 - **get_customer_subscriptions**: List subscriptions for a specific customer
-- **get_customer**: Get specific customer details
 - **get_subscription**: Get specific subscription details
 - **list_addons**: List available add-ons
 - **list_customers**: List all customers
-- **list_invoices**: List recent invoices
 - **list_plans**: List all subscription plans
 - **list_subscriptions**: List all subscriptions
 

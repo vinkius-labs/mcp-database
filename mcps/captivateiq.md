@@ -36,10 +36,10 @@ Connect your **CaptivateIQ** account to any AI agent and orchestrate your incent
 
 ## Available Tools (8)
 - **get_account_status**: Retrieve core account/integration information
-- **get_employee_details**: Get details of a specific employee
-- **list_employees**: List all employee records and plan designations
 - **list_commission_inquiries**: List commission disputes and inquiries (generic search)
+- **get_employee_details**: Get details of a specific employee
 - **list_commission_payouts**: List all processed commission payouts
+- **list_employees**: List all employee records and plan designations
 - **list_payout_statements**: List individualized payout statements for employees
 - **list_workbooks**: List all calculation workbooks
 - **list_worksheets**: List all calculation worksheets

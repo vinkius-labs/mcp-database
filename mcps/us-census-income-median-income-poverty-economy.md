@@ -23,15 +23,15 @@ Requires a free API key from the Census Bureau.
 
 
 ## Available Tools (4)
-- **get_income_by_state**: Median income is the single most-used economic indicator from the Census — it determines federal funding, cost-of-living adjustments, and market opportunity analysis.
-
-Get median household income and poverty rates for all states
 - **get_education_by_state**: Education level is a key predictor of income, employment, and economic development.
 
 Get educational attainment for all states — bachelor's degree or higher
 - **get_income_by_county**: Critical for real estate analysis, business site selection, and understanding economic disparity within a state.
 
 Get median household income and poverty for all counties in a state
+- **get_income_by_state**: Median income is the single most-used economic indicator from the Census — it determines federal funding, cost-of-living adjustments, and market opportunity analysis.
+
+Get median household income and poverty rates for all states
 - **get_business_patterns**: From County Business Patterns (CBP) — the definitive dataset for understanding local economic activity and business concentration.
 
 Get County Business Patterns — establishments, employees, and payroll by county

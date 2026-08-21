@@ -36,14 +36,14 @@ Connect your **Bridge Interactive (Zillow Group)** account to any AI agent and o
 
 ## Available Tools (10)
 - **get_dataset_metadata**: Get schema metadata for a specific dataset
+- **get_property**: Get details of a specific property
 - **list_data_systems**: List all available real estate data systems (MLSs)
 - **list_media**: List media (photos/videos) from a dataset
-- **list_members**: List real estate agents (members) from a dataset
-- **list_offices**: List real estate offices from a dataset
+- **list_properties**: List properties from a specific dataset
 - **search_properties_by_city**: Search for properties in a specific city
 - **search_properties_by_price**: Search for properties above a specific price
-- **get_property**: Get details of a specific property
-- **list_properties**: List properties from a specific dataset
+- **list_members**: List real estate agents (members) from a dataset
+- **list_offices**: List real estate offices from a dataset
 - **list_recent_listings**: List the most recently modified properties
 
 

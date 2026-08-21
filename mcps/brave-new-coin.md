@@ -28,11 +28,11 @@ Connect your AI agent to the **Brave New Coin (BNC)** API and orchestrate your c
 
 
 ## Available Tools (8)
-- **get_ohlcv**: Get historical Open High Low Close Volume data
-- **get_asset**: Get details of a specific asset
 - **get_gwa**: Get Global Weighted Average details
-- **get_market**: Get details of a specific market
+- **get_ohlcv**: Get historical Open High Low Close Volume data
 - **get_ticker**: Get the latest Global Weighted Average price/ticker
+- **get_asset**: Get details of a specific asset
+- **get_market**: Get details of a specific market
 - **get_vwap**: Get Volume Weighted Average Price
 - **list_assets**: List all supported crypto assets
 - **list_markets**: List exchanges/markets where an asset is traded

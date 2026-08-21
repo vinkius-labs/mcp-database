@@ -35,14 +35,14 @@ Connect your **BunnyDoc** account to any AI agent and orchestrate your eSignatur
 
 
 ## Available Tools (10)
+- **get_envelope_status**: Get status of a specific signature request (envelope)
+- **subscribe_webhook**: Subscribe to signature events via webhook
 - **add_team_member**: Invite a new member to the team
 - **create_signature_request**: Create a new signature request from a template
 - **get_account_info**: Retrieve core account information
-- **get_envelope_status**: Get status of a specific signature request (envelope)
 - **get_usage_stats**: Retrieve API usage statistics
 - **list_envelopes**: List all signature requests
 - **list_team_members**: List all members of the team
-- **subscribe_webhook**: Subscribe to signature events via webhook
 - **unsubscribe_webhook**: Remove a webhook subscription
 - **list_templates**: List all available document templates
 

@@ -36,12 +36,12 @@ No more manual status checking or missing high-intent buyer views. Your AI acts 
 
 
 ## Available Tools (6)
-- **create_client**: Create a new client
-- **list_proposals**: List all sales proposals
 - **list_templates**: List all proposal templates
+- **create_client**: Create a new client
 - **create_proposal**: Pass data as a JSON string.
 
 Create a new proposal
+- **list_proposals**: List all sales proposals
 - **get_proposal_details**: Get specific proposal details
 - **list_clients**: List all clients
 

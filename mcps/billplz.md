@@ -35,16 +35,16 @@ Connect your **Billplz** account to any AI agent and orchestrate your payment wo
 
 ## Available Tools (11)
 - **create_collection**: Create a new bill collection
+- **create_bill**: Create a new bill for collection
 - **deactivate_collection**: Deactivate a collection
-- **delete_bill**: Delete an unpaid bill
 - **get_bank_account**: Get bank account details for a collection
+- **list_collections**: List all bill collections
+- **delete_bill**: Delete an unpaid bill
 - **get_bill**: Get specific bill details
 - **get_collection**: Get specific collection details
 - **get_fpx_banks**: List supported FPX Banks
-- **list_collections**: List all bill collections
 - **list_transactions**: List transactions for a specific bill
 - **activate_collection**: Activate a collection
-- **create_bill**: Create a new bill for collection
 
 
 ## 💬 Prompt Examples

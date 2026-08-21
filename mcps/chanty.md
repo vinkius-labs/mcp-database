@@ -33,14 +33,14 @@ Connect your **Chanty** workspace to any AI agent and command your team's commun
 
 
 ## Available Tools (10)
-- **list_conversations**: Perform structural extraction of properties driving active Chanty layouts
-- **create_conversation**: Bootstrap an entirely empty structural chat Room dynamically
 - **delete_conversation**: Irreversibly vaporize explicit Channel spaces terminating histories
+- **list_conversations**: Perform structural extraction of properties driving active Chanty layouts
+- **send_message**: Provision a highly-available JSON Payload dropping messages into Chanty Chats
+- **create_conversation**: Bootstrap an entirely empty structural chat Room dynamically
 - **delete_message**: Obliterate mapped HTTP bounds removing specific Texts
 - **list_messages**: Identify bounded routing spaces verifying explicit historical messages
 - **get_profile**: Inspect deep internal arrays evaluating self-assigned permissions
 - **list_members**: Retrieve explicit Directory maps tracking User IDs
-- **send_message**: Provision a highly-available JSON Payload dropping messages into Chanty Chats
 - **set_status**: Mutate globalThis Web CRM boundaries substituting plain Status texts
 - **invite_member**: Dispatch an automated JSON block emitting email triggers
 

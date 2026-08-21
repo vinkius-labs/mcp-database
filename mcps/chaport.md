@@ -36,12 +36,12 @@ Connect your **Chaport** account to any AI agent and take full control of your c
 
 
 ## Available Tools (8)
+- **get_visitor_details**: Get detailed information for a specific visitor
+- **get_visitor_last_chat**: Retrieve the last chat session for a specific visitor
 - **get_chat_history**: Retrieve the message history and events for a specific chat
 - **get_my_agent_profile**: Retrieve information about the authenticated agent
-- **get_visitor_last_chat**: Retrieve the last chat session for a specific visitor
-- **get_visitor_details**: Get detailed information for a specific visitor
-- **list_online_agents**: List all agents who are currently online
 - **list_chaport_operators**: List all operators in your Chaport account
+- **list_online_agents**: List all agents who are currently online
 - **list_website_visitors**: List recent visitors to your website
 - **send_agent_message**: Send a message to a visitor in a specific chat
 
