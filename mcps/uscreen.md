@@ -24,15 +24,15 @@ Connect your **Uscreen** account to any AI agent and manage your video membershi
 
 ## Available Tools (10)
 - **check_uscreen_status**: Verify API connectivity
-- **get_collection**: Get collection details
 - **get_content**: Get content details
 - **get_customer**: Get customer details
 - **list_collections**: List collections
 - **list_content**: List all content
 - **list_customers**: List all customers
-- **list_products**: List products
 - **list_subscriptions**: List subscriptions
 - **list_transactions**: List transactions
+- **get_collection**: Get collection details
+- **list_products**: List products
 
 
 ## 💬 Prompt Examples

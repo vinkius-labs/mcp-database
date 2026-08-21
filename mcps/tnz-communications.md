@@ -33,18 +33,18 @@ Empower your AI agent with access to the **TNZ Group** messaging gateway to auto
 
 
 ## Available Tools (12)
-- **get_account_balance**: Check account credit balance
-- **get_messaging_usage_report**: Retrieve usage and cost reports
-- **get_message_delivery_status**: Check delivery status of a message
-- **list_tnz_contacts**: List saved contacts in TNZ
 - **list_contact_groups**: List your contact groups
-- **list_received_sms_replies**: List inbound SMS replies
 - **list_message_templates**: List saved message templates
-- **send_digital_fax**: Send a document as a fax
+- **list_received_sms_replies**: List inbound SMS replies
+- **list_tnz_contacts**: List saved contacts in TNZ
 - **send_sms_message**: Send an SMS message
 - **send_tts_voice_call**: Send a voice call (Text-to-Speech)
-- **create_tnz_contact**: Add a new contact to TNZ
 - **check_api_health**: Verify TNZ API connectivity
+- **create_tnz_contact**: Add a new contact to TNZ
+- **get_account_balance**: Check account credit balance
+- **get_message_delivery_status**: Check delivery status of a message
+- **get_messaging_usage_report**: Retrieve usage and cost reports
+- **send_digital_fax**: Send a document as a fax
 
 
 ## 💬 Prompt Examples

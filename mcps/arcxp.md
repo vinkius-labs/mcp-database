@@ -35,13 +35,16 @@ No more wrestling with complex ANS JSON schemas or slow CMS interfaces. Your AI 
 
 
 ## Available Tools (10)
-- **delete_ans_content**: Use with extreme caution as this destroys datacenter assets irreversibly.
+- **create_ans_content**: The payload_json MUST strictly comply with the requested Arc Native Schema (ANS) version.
 
-Delete content from the Arc XP Content CMS
+Create new content in the Arc XP Content CMS
 - **get_ans_content**: Returns the complete JSON payload matching the Arc Native Schema (ANS).
 
 Fetch content from the Arc XP Content API
 - **get_content_author**: Retrieve a publisher profile/author from Arc XP
+- **delete_ans_content**: Use with extreme caution as this destroys datacenter assets irreversibly.
+
+Delete content from the Arc XP Content CMS
 - **get_photo_asset**: Retrieve a specific photo asset from Arc XP Media Library
 - **get_video_asset**: Retrieve a specific video asset from Arc XP Video Center
 - **list_content_authors**: List authors available in the Arc XP Author Service
@@ -49,9 +52,6 @@ Fetch content from the Arc XP Content API
 
 Search for content residing in the Arc XP Newsroom
 - **search_photo_assets**: Search for photo assets in the Arc XP Media Library
-- **create_ans_content**: The payload_json MUST strictly comply with the requested Arc Native Schema (ANS) version.
-
-Create new content in the Arc XP Content CMS
 - **update_ans_content**: Required to publish revisions to articles.
 
 Update existing content in the Arc XP Content CMS

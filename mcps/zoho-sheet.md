@@ -30,21 +30,21 @@ Essential for data analysts, operations teams, and administrative staff who requ
 
 
 ## Available Tools (13)
-- **add_row**: Add a data row
 - **create_workbook**: Create a workbook
-- **create_worksheet**: Create a worksheet
 - **get_workbook**: Get workbook details
 - **get_worksheet**: Get worksheet details
-- **list_rows**: List data rows
 - **list_shared_users**: List shared users
 - **list_workbooks**: List workbooks
 - **list_worksheets**: List worksheets
 - **search_workbooks**: Search workbooks
-- **update_cells**: Update cells
 - **delete_worksheet**: Delete a worksheet
 - **get_cells**: g. A1:D10).
 
 Get cell contents
+- **add_row**: Add a data row
+- **create_worksheet**: Create a worksheet
+- **list_rows**: List data rows
+- **update_cells**: Update cells
 
 
 ## 💬 Prompt Examples

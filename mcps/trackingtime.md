@@ -36,16 +36,16 @@ Connect your **TrackingTime** account to any AI agent and simplify how you manag
 
 ## Available Tools (12)
 - **list_tasks**: List your tasks
-- **list_workspace_users**: List team members
 - **start_timer**: Start tracking time
 - **stop_timer**: Stop tracking time
 - **get_user_profile**: Get current user
 - **list_customers**: List project clients
 - **list_time_entries**: Get time logs
-- **list_projects**: List your projects
+- **create_task**: Add new task
 - **add_time_entry**: Manual time entry
 - **create_project**: Add new project
-- **create_task**: Add new task
+- **list_projects**: List your projects
+- **list_workspace_users**: List team members
 - **update_task**: Modify task
 
 

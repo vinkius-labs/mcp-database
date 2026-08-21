@@ -40,26 +40,6 @@ Your AI becomes a security assistant, helping you monitor recordings, manage sec
 
 
 ## Available Tools (11)
-- **list_arlo_cameras**: List Arlo camera devices only
-- **get_arlo_recordings**: Returns presigned URLs for downloading video files along with metadata like duration, device ID, and creation date.
-
-USE WHEN:
-- User wants to download or view Arlo recordings
-- User needs to check what was recorded on specific dates
-- User is reviewing security footage
-- User asks "show me recordings from [date range]"
-
-PARAMETERS:
-- dateFrom (REQUIRED): Start date in YYYYMMDD format (e.g. 20260407)
-- dateTo (REQUIRED): End date in YYYYMMDD format
-- deviceId (OPTIONAL): Filter by specific device ID
-
-EXAMPLES:
-- "Get recordings from April 7 2026" → call with dateFrom="20260407", dateTo="20260407"
-- "Show recordings from last week" → call with dateFrom="20260331", dateTo="20260406"
-- "Get recordings for camera XYZ on April 5" → call with dateFrom="20260405", dateTo="20260405", deviceId="XYZ"
-
-Get Arlo camera recordings for a date range
 - **arm_arlo_device**: This enables motion detection and recording for the device.
 
 USE WHEN:
@@ -92,33 +72,26 @@ EXAMPLES:
 - "Delete these recordings" → call with recordings=[{...}]
 
 Delete Arlo recordings from the library
-- **disarm_arlo_device**: This disables motion detection and recording for the device.
+- **get_arlo_recording_metadata**: Get detailed metadata for an Arlo recording
+- **get_arlo_recordings**: Returns presigned URLs for downloading video files along with metadata like duration, device ID, and creation date.
 
 USE WHEN:
-- User wants to disable security monitoring
-- User asks to "disarm the cameras" or "turn off security"
-- User wants to disable motion detection temporarily
-- User is home and wants to disable security
+- User wants to download or view Arlo recordings
+- User needs to check what was recorded on specific dates
+- User is reviewing security footage
+- User asks "show me recordings from [date range]"
 
 PARAMETERS:
-- deviceId (REQUIRED): Arlo device ID to disarm
+- dateFrom (REQUIRED): Start date in YYYYMMDD format (e.g. 20260407)
+- dateTo (REQUIRED): End date in YYYYMMDD format
+- deviceId (OPTIONAL): Filter by specific device ID
 
 EXAMPLES:
-- "Disarm the front door camera" → call with deviceId="FRONT_DOOR_ID"
-- "Disable security on the backyard camera" → call with deviceId="BACKYARD_ID"
-- "Disarm the basestation" → call with deviceId="BASESTATION_ID"
+- "Get recordings from April 7 2026" → call with dateFrom="20260407", dateTo="20260407"
+- "Show recordings from last week" → call with dateFrom="20260331", dateTo="20260406"
+- "Get recordings for camera XYZ on April 5" → call with dateFrom="20260405", dateTo="20260405", deviceId="XYZ"
 
-Disarm an Arlo device (disable security monitoring)
-- **get_arlo_device_modes**: Shows whether the device is armed, disarmed, or in a custom mode.
-
-Get the current automation modes for an Arlo device
-- **get_recent_arlo_recordings**: Useful for quickly checking recent security activity.
-
-Get recent Arlo recordings from the last 24 hours
-- **get_arlo_recording_metadata**: Get detailed metadata for an Arlo recording
-- **list_arlo_basestations**: Basestations are the central hubs that connect wireless Arlo cameras to your network.
-
-List Arlo basestation/hub devices only
+Get Arlo camera recordings for a date range
 - **list_arlo_devices**: Each device includes deviceId, deviceName, deviceType, state, and connection status.
 
 USE WHEN:
@@ -151,6 +124,33 @@ EXAMPLES:
 - "Set to home mode" → call with deviceId, mode="mode_custom_home"
 
 Set the automation mode for an Arlo device
+- **list_arlo_cameras**: List Arlo camera devices only
+- **disarm_arlo_device**: This disables motion detection and recording for the device.
+
+USE WHEN:
+- User wants to disable security monitoring
+- User asks to "disarm the cameras" or "turn off security"
+- User wants to disable motion detection temporarily
+- User is home and wants to disable security
+
+PARAMETERS:
+- deviceId (REQUIRED): Arlo device ID to disarm
+
+EXAMPLES:
+- "Disarm the front door camera" → call with deviceId="FRONT_DOOR_ID"
+- "Disable security on the backyard camera" → call with deviceId="BACKYARD_ID"
+- "Disarm the basestation" → call with deviceId="BASESTATION_ID"
+
+Disarm an Arlo device (disable security monitoring)
+- **get_arlo_device_modes**: Shows whether the device is armed, disarmed, or in a custom mode.
+
+Get the current automation modes for an Arlo device
+- **list_arlo_basestations**: Basestations are the central hubs that connect wireless Arlo cameras to your network.
+
+List Arlo basestation/hub devices only
+- **get_recent_arlo_recordings**: Useful for quickly checking recent security activity.
+
+Get recent Arlo recordings from the last 24 hours
 
 
 ## 💬 Prompt Examples
