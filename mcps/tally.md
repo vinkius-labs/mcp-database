@@ -35,7 +35,6 @@ Empower your AI agent to orchestrate your entire form ecosystem with **Tally**, 
 
 
 ## Available Tools (8)
-- **get_workspace**: Get details for a specific workspace
 - **list_workspaces**: List all Tally workspaces
 - **delete_submission**: Delete a Tally submission
 - **get_form**: Get details for a specific form
@@ -44,6 +43,7 @@ Empower your AI agent to orchestrate your entire form ecosystem with **Tally**, 
 - **list_forms**: Optional: filter by workspace ID.
 
 List Tally forms
+- **get_workspace**: Get details for a specific workspace
 - **list_submissions**: List submissions for a Tally form
 
 

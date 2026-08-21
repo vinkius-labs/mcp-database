@@ -38,6 +38,9 @@ Access the **National Utility Rate Database** through **OpenEI** — the most co
 
 
 ## Available Tools (10)
+- **get_residential_rates**: Perfect for homeowners comparing electricity costs, evaluating solar ROI, or understanding time-of-use rate options. Returns all residential tariffs including tiered rates, time-of-use plans, and electric vehicle charging rates.
+
+Get residential electricity rates for a location
 - **get_commercial_rates**: Use lat/lon or address to identify the location. Returns all available commercial tariffs including general service, large power, and time-of-use rates. Essential for commercial solar installations, demand response analysis, and business energy cost modeling.
 
 Get commercial electricity rates for a location
@@ -47,21 +50,18 @@ Get industrial electricity rates for a location
 - **get_rate_detail**: Returns the full rate structure including energy charges, demand charges, fixed charges, minimum charges, time-of-use periods, seasonal variations, and applicable taxes. Use this after identifying a rate ID from get_utility_rates to get exhaustive details for cost modeling or bill analysis.
 
 Get detailed information about a specific utility rate/tariff
-- **get_utility_rates**: Provide either latitude/longitude coordinates or a physical address to find applicable utility rates. Filter by sector (residential, commercial, industrial) to get specific rate types. Use detail=full to retrieve complete rate structures including time-of-use periods, seasonal variations, demand charges, and energy charges. This is essential for solar analysis, energy cost modeling, and economic feasibility studies. Sector values: 1=Residential, 2=Commercial, 3=Industrial.
-
-Get utility rate information for a specific location
 - **get_rates_by_address**: Simply provide a street address and the API will geocode it and identify the serving utility and applicable rates. Perfect for solar installers providing instant rate quotes to customers, or homeowners checking their electricity rates. Returns all available rate options at that address.
 
 Get utility rates for a specific street address
 - **get_rates_by_coordinates**: Automatically identifies the serving utility for that location and returns applicable rates. Essential for solar installers, energy consultants, and site selection analysis. Returns residential, commercial, and industrial rates if available. Set detail=full for complete rate structures.
 
 Get utility rates for a location using GPS coordinates
-- **get_residential_rates**: Perfect for homeowners comparing electricity costs, evaluating solar ROI, or understanding time-of-use rate options. Returns all residential tariffs including tiered rates, time-of-use plans, and electric vehicle charging rates.
-
-Get residential electricity rates for a location
 - **get_utility_detail**: Returns the utility name, address, contact information, service territory, owned generation resources, and associated rates. Use this to research utility companies, understand their generation mix, or identify all rates offered by a specific utility.
 
 Get detailed information about a specific utility company
+- **get_utility_rates**: Provide either latitude/longitude coordinates or a physical address to find applicable utility rates. Filter by sector (residential, commercial, industrial) to get specific rate types. Use detail=full to retrieve complete rate structures including time-of-use periods, seasonal variations, demand charges, and energy charges. This is essential for solar analysis, energy cost modeling, and economic feasibility studies. Sector values: 1=Residential, 2=Commercial, 3=Industrial.
+
+Get utility rate information for a specific location
 - **list_utilities**: Filter by state, country, or utility name to find specific companies. Returns utility names, addresses, company IDs, and service territories. Use this to identify utility companies for research or to get company IDs for further queries. Use limit and offset for pagination through large result sets.
 
 List electric utility companies in the OpenEI database

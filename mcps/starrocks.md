@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your high-performance OLAP infrastructure w
 
 
 ## Available Tools (10)
-- **get_cluster_info**: Get frontend nodes info
 - **list_nodes**: List backend nodes
 - **execute_query**: Execute arbitrary SQL query
 - **get_storage_usage**: Get data storage statistics
 - **get_table_schema**: Get table structure
 - **list_databases**: List all databases
-- **list_jobs**: List data load jobs
 - **list_mvs**: List materialized views
 - **list_tables**: List tables in a database
+- **get_cluster_info**: Get frontend nodes info
+- **list_jobs**: List data load jobs
 - **list_views**: List database views
 
 

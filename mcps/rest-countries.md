@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire global research workflow with *
 
 
 ## Available Tools (6)
+- **get_countries_by_region**: List countries in a specific region or subregion
+- **get_country_by_name**: Search for a country by its common or official name
 - **get_all_countries**: Get a list of all countries in the world
 - **get_countries_by_currency**: List countries that use a specific currency
 - **get_countries_by_language**: List countries that speak a specific language
-- **get_countries_by_region**: List countries in a specific region or subregion
 - **get_country_by_code**: Search for a country by its ISO alpha-2 or alpha-3 code
-- **get_country_by_name**: Search for a country by its common or official name
 
 
 ## 💬 Prompt Examples

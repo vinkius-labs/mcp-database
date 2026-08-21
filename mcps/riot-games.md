@@ -37,24 +37,24 @@ Connect to **Riot Games API** and access League of Legends player data through n
 
 
 ## Available Tools (12)
-- **get_champion_masteries**: Returns champion ID, mastery level (1-7), mastery points, last play time, chest earned status and tokens needed for next level. Platform codes: br1, na1, euw1, eun1, kr, jp1, oc1, la1, la2, tr1, ru.
-
-Get champion mastery data for a player
 - **get_featured_games**: Returns game mode, banned champions, all players with their champions, summoner spells and game length. Platform codes: br1, na1, euw1, eun1, kr, jp1, oc1, la1, la2, tr1, ru.
 
 Get currently featured games (high elo live games)
-- **get_league_entries**: Returns tier (IRON, BRONZE, SILVER, GOLD, PLATINUM, EMERALD, DIAMOND, MASTER, GRANDMASTER, CHALLENGER), rank (I-IV), LP, wins, losses and hot/streak info. Platform codes: br1, na1, euw1, eun1, kr, jp1, oc1, la1, la2, tr1, ru.
-
-Get ranked league entries for a summoner
-- **get_account_by_riot_id**: Returns the PUUID (Player Universally Unique Identifier), game name, tag line and account metadata. The PUUID is required for most other API calls.
-
-Get player account by Riot ID (game name + tag line)
 - **get_champion_details**: Uses Data Dragon (static data, no API key needed).
 
 Get detailed info for a specific champion
+- **get_account_by_riot_id**: Returns the PUUID (Player Universally Unique Identifier), game name, tag line and account metadata. The PUUID is required for most other API calls.
+
+Get player account by Riot ID (game name + tag line)
+- **get_champion_masteries**: Returns champion ID, mastery level (1-7), mastery points, last play time, chest earned status and tokens needed for next level. Platform codes: br1, na1, euw1, eun1, kr, jp1, oc1, la1, la2, tr1, ru.
+
+Get champion mastery data for a player
 - **get_champions**: Uses Data Dragon (static data, no API key needed). Optional version (e.g. "14.1.1") and locale (e.g. "en_US", "pt_BR").
 
 Get all League of Legends champions
+- **get_league_entries**: Returns tier (IRON, BRONZE, SILVER, GOLD, PLATINUM, EMERALD, DIAMOND, MASTER, GRANDMASTER, CHALLENGER), rank (I-IV), LP, wins, losses and hot/streak info. Platform codes: br1, na1, euw1, eun1, kr, jp1, oc1, la1, la2, tr1, ru.
+
+Get ranked league entries for a summoner
 - **get_account_by_puuid**: Returns game name, tag line and account metadata.
 
 Get player account details by PUUID

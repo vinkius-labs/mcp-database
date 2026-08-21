@@ -30,26 +30,26 @@ Connect **Spoonacular** food API to any AI agent and unlock powerful recipe sear
 
 
 ## Available Tools (13)
-- **extract_recipe**: Useful for importing recipes from blogs or recipe sites.
-
-Extract recipe from a URL
-- **get_recipe_instructions**: Get step-by-step analyzed instructions for a recipe
-- **search_grocery_products**: Search grocery food products
-- **analyze_recipe**: Analyze a recipe and get enrichment data
-- **recipes_by_ingredients**: Perfect for "what can I cook with what I have in my fridge?" scenarios. Returns recipes ranked by ingredient match.
-
-Find recipes based on available ingredients
+- **get_recipe_nutrition**: Get detailed nutrition data for a recipe
+- **get_recipe_taste**: Get taste profile for a recipe
 - **recipes_by_nutrients**: Perfect for diet-specific meal planning.
 
 Find recipes by nutritional requirements
-- **get_recipe_info**: Get detailed information about a specific recipe
-- **get_recipe_nutrition**: Get detailed nutrition data for a recipe
-- **get_recipe_taste**: Get taste profile for a recipe
-- **get_recipes_bulk**: Get information for multiple recipes at once
 - **guess_dish_type**: Guess the dish type from ingredients or description
+- **analyze_recipe**: Analyze a recipe and get enrichment data
+- **extract_recipe**: Useful for importing recipes from blogs or recipe sites.
+
+Extract recipe from a URL
+- **get_recipe_info**: Get detailed information about a specific recipe
+- **get_recipe_instructions**: Get step-by-step analyzed instructions for a recipe
+- **get_recipes_bulk**: Get information for multiple recipes at once
 - **random_recipes**: Useful for meal inspiration. Can optionally filter by dietary tags.
 
 Get random recipe suggestions
+- **recipes_by_ingredients**: Perfect for "what can I cook with what I have in my fridge?" scenarios. Returns recipes ranked by ingredient match.
+
+Find recipes based on available ingredients
+- **search_grocery_products**: Search grocery food products
 - **search_recipes**: Returns recipes with basic information including title, ready time, servings, and dietary badges.
 
 Search recipes with advanced filters

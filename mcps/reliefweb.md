@@ -35,6 +35,9 @@ Connect to **ReliefWeb** and explore the world's largest humanitarian informatio
 
 
 ## Available Tools (7)
+- **get_reports**: Supports free-text query, date range filtering, and filtering by country, disaster type, theme, format, source and language. Returns report titles, dates, sources, themes and links.
+
+Search humanitarian reports
 - **get_countries**: Returns country names, ISO codes and status. Useful for finding country references to use in report or disaster searches.
 
 Search countries in the ReliefWeb database
@@ -47,9 +50,6 @@ Search humanitarian job postings
 - **get_report**: Returns full report metadata including title, body, source, themes, countries, disasters and file attachments.
 
 Get a specific report by ID
-- **get_reports**: Supports free-text query, date range filtering, and filtering by country, disaster type, theme, format, source and language. Returns report titles, dates, sources, themes and links.
-
-Search humanitarian reports
 - **get_sources**: Returns organization names, shortnames, types and countries. Covers UN agencies, NGOs, governments and academic institutions.
 
 Search humanitarian organizations and sources

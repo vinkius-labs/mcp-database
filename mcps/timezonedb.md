@@ -36,11 +36,11 @@ Empower your AI agent to orchestrate your entire global time and timezone resear
 
 ## Available Tools (5)
 - **get_time_by_location**: Get current time for specific geographic coordinates
+- **get_dst_status**: Check if daylight saving time is currently active for a zone
+- **check_api_status**: Check if the TimezoneDB API is operational
 - **get_time_by_zone**: g., "America/New_York.
 
 Get current time and details for a specific timezone (e.g., "America/New_York")
-- **get_dst_status**: Check if daylight saving time is currently active for a zone
-- **check_api_status**: Check if the TimezoneDB API is operational
 - **list_timezones**: List all supported timezones, optionally filtered by country
 
 

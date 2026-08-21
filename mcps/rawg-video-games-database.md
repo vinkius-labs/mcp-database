@@ -36,10 +36,10 @@ Equip your AI agent with the world's largest video game database through the **R
 
 ## Available Tools (3)
 - **search_video_games**: Search for video games by title
-- **get_video_game_details**: Get detailed info for a video game
 - **list_video_game_platforms**: g., PS5, Xbox Series X, PC).
 
 List all available gaming platforms
+- **get_video_game_details**: Get detailed info for a video game
 
 
 ## 💬 Prompt Examples

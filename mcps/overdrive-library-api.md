@@ -36,9 +36,9 @@ Empower your AI agent to orchestrate your entire digital library research and co
 
 ## Available Tools (4)
 - **check_api_status**: Check if the OverDrive service is operational
-- **search_library_collection**: Search for digital books and media in the OverDrive public catalog
-- **get_library_product_details**: Get full metadata and availability for a specific library product by ID
 - **list_library_collections**: List all digital collections available in your OverDrive account
+- **get_library_product_details**: Get full metadata and availability for a specific library product by ID
+- **search_library_collection**: Search for digital books and media in the OverDrive public catalog
 
 
 ## 💬 Prompt Examples
