@@ -30,24 +30,24 @@ Crucial for ESG managers, sustainability officers, and environmentally conscious
 
 
 ## Available Tools (18)
-- **get_esg_report**: Get ESG report
 - **get_account**: Get account info
 - **get_report**: Get summary report
-- **get_tree_count**: Get tree count
 - **list_categories**: List emission categories
 - **list_offsets**: List carbon offsets
-- **list_projects**: List climate projects
-- **plant_tree**: Plant a tree
 - **add_emission**: Log an emission
 - **check_skooteco_status**: Verify connectivity
-- **get_emissions_by_category**: Get emissions by category
 - **get_emissions_by_scope**: Get emissions by scope
-- **get_emissions**: Get total emissions
 - **get_impact_profile**: Get impact profile
-- **get_metrics**: Get impact metrics
 - **get_offset**: Get offset details
 - **get_project**: Get project details
 - **purchase_offset**: Purchase carbon offset
+- **get_emissions**: Get total emissions
+- **get_emissions_by_category**: Get emissions by category
+- **get_esg_report**: Get ESG report
+- **get_metrics**: Get impact metrics
+- **get_tree_count**: Get tree count
+- **list_projects**: List climate projects
+- **plant_tree**: Plant a tree
 
 
 ## 💬 Prompt Examples

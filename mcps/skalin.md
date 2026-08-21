@@ -34,20 +34,20 @@ Connect your **Skalin** account to any AI agent to automate your customer succes
 
 
 ## Available Tools (12)
-- **get_account_metrics**: Get usage metrics
 - **list_cs_accounts**: List customer accounts
+- **list_account_interactions**: Get account history
+- **list_cs_tasks**: List success tasks
+- **list_success_managers**: List CSM users
+- **get_account_health**: Check client health
+- **get_api_status**: Get connectivity info
+- **create_cs_account**: Add new account
+- **get_account_metrics**: Get usage metrics
+- **list_account_contacts**: List account people
 - **list_cs_alerts**: ).
 
 Get active alerts
-- **list_account_contacts**: List account people
-- **list_success_managers**: List CSM users
-- **list_account_interactions**: Get account history
-- **list_cs_tasks**: List success tasks
-- **update_cs_task**: Modify success task
-- **create_cs_account**: Add new account
 - **log_interaction**: Record meeting or email
-- **get_api_status**: Get connectivity info
-- **get_account_health**: Check client health
+- **update_cs_task**: Modify success task
 
 
 ## 💬 Prompt Examples

@@ -23,15 +23,15 @@ Connect your **Sharpei** account to any AI agent and manage identity verificatio
 
 ## Available Tools (10)
 - **check_sharpei_status**: Verify API connectivity
-- **create_application**: Create a verification application
 - **get_application**: Get application details
-- **list_webhooks**: List webhooks
 - **get_document**: Get document details
-- **get_documents**: List application documents
 - **get_subscription**: Get subscription details
 - **get_verification_status**: Get verification status
 - **list_applications**: List all applications
 - **list_subscriptions**: List subscriptions
+- **create_application**: Create a verification application
+- **get_documents**: List application documents
+- **list_webhooks**: List webhooks
 
 
 ## 💬 Prompt Examples

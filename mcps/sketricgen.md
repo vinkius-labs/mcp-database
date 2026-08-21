@@ -30,24 +30,24 @@ Designed for AI engineers, prompt designers, and automation teams seeking an adv
 
 
 ## Available Tools (18)
-- **get_agent**: Get agent details
 - **get_contact**: Get contact details
 - **get_conversation**: Get conversation
 - **get_knowledge_base**: Get knowledge base
 - **get_trace_credits**: Get trace credit usage
-- **get_trace**: Get trace details
 - **get_workflow**: Get workflow details
-- **list_agents**: List AI agents
-- **list_conversations**: List conversations
 - **list_contacts**: List contacts
 - **list_knowledge_bases**: List knowledge bases
-- **list_templates**: List templates
 - **list_traces**: List execution traces
-- **list_workflows**: List workflows
 - **run_workflow_with_contact**: Run workflow for contact
-- **run_workflow**: Run AI workflow
 - **check_sketricgen_status**: Verify connectivity
 - **delete_conversation**: Delete conversation
+- **get_agent**: Get agent details
+- **get_trace**: Get trace details
+- **list_agents**: List AI agents
+- **list_conversations**: List conversations
+- **list_templates**: List templates
+- **list_workflows**: List workflows
+- **run_workflow**: Run AI workflow
 
 
 ## 💬 Prompt Examples

@@ -36,19 +36,19 @@ No more manual stat checking or CSV list management. Your AI acts as a dedicated
 
 
 ## Available Tools (11)
-- **get_group**: Get details for a subscriber group
-- **create_subscriber**: Add a new subscriber
 - **delete_subscriber**: Remove a subscriber
+- **get_group**: Get details for a subscriber group
 - **get_user_profile**: Get your Sender.net profile
-- **get_campaign_analytics**: Get performance metrics
 - **get_subscriber_details**: Get details for a subscriber
+- **create_campaign**: Create a new email campaign
+- **create_subscriber**: Add a new subscriber
+- **get_campaign_analytics**: Get performance metrics
 - **list_email_campaigns**: List all sent and draft campaigns
 - **list_subscriber_groups**: List your contact groups
 - **list_subscribers**: Supports filtering by group or status.
 
 List your Sender.net subscribers
 - **update_subscriber**: Update subscriber information
-- **create_campaign**: Create a new email campaign
 
 
 ## 💬 Prompt Examples
