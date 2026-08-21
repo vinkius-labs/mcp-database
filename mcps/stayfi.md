@@ -30,7 +30,6 @@ Tailor-made for vacation rental managers, boutique hoteliers, and hospitality op
 
 
 ## Available Tools (17)
-- **get_analytics**: Get analytics overview
 - **check_stayfi_status**: Verify connectivity
 - **export_guests**: Export guest data
 - **get_device_status**: Get device status
@@ -38,14 +37,15 @@ Tailor-made for vacation rental managers, boutique hoteliers, and hospitality op
 - **get_guest**: Get guest details
 - **get_network**: Get network details
 - **get_property_stats**: Get property stats
-- **get_property**: Get property details
 - **get_splash_page**: Get splash page
 - **list_devices**: List hardware devices
 - **list_guests_by_property**: List guests by property
-- **list_guests**: List all guests
 - **list_networks**: List WiFi networks
-- **list_properties**: List properties
 - **list_splash_pages**: List splash pages
+- **get_analytics**: Get analytics overview
+- **get_property**: Get property details
+- **list_guests**: List all guests
+- **list_properties**: List properties
 - **search_guests**: Search guests
 
 

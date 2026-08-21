@@ -36,17 +36,17 @@ Connect your **SmartChatAI** account to any AI agent to automate your intelligen
 ## Available Tools (12)
 - **list_ai_chatbots**: List all AI chatbots
 - **add_pdf_to_knowledge_base**: Train bot using a PDF
-- **add_text_to_knowledge_base**: Train bot using raw text
 - **add_website_to_knowledge_base**: Train bot using a URL
 - **check_api_health**: Verify SmartChatAI API status
-- **get_chatbot_details**: Get configuration for a specific bot
 - **get_authenticated_user_profile**: Get account profile
 - **list_configured_webhooks**: List active webhooks
 - **scrape_domain_links**: Discover and index domain links
+- **get_bot_chat_history**: Retrieve conversation transcripts
+- **add_text_to_knowledge_base**: Train bot using raw text
 - **create_new_ai_bot**: Requires a name and optional initial prompt.
 
 Provision a new AI agent
-- **get_bot_chat_history**: Retrieve conversation transcripts
+- **get_chatbot_details**: Get configuration for a specific bot
 - **message_ai_chatbot**: Send a message and get AI reply
 
 

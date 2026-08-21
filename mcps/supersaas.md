@@ -28,14 +28,14 @@ Connect your **SuperSaaS** account to any AI agent and simplify your online appo
 
 
 ## Available Tools (11)
-- **get_schedule**: Get details for a specific schedule
-- **get_user**: Get details for a specific user
 - **create_appointment**: Create a new booking
 - **get_appointment_details**: Get details for a specific booking
+- **get_schedule**: Get details for a specific schedule
+- **get_user**: Get details for a specific user
 - **get_account_balance**: Check account credit balance
 - **list_appointments**: List appointments for a schedule
-- **list_schedules**: List SuperSaaS schedules
 - **list_account_users**: List registered users
+- **list_schedules**: List SuperSaaS schedules
 - **update_appointment**: Update an existing appointment
 - **list_changes**: List recent changes to a schedule
 - **delete_appointment**: Delete an appointment

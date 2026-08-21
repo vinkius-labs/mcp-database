@@ -34,18 +34,18 @@ Connect your **Speechnotes** account to any AI agent to automate your profession
 
 
 ## Available Tools (12)
-- **generate_webhook_signature**: Sign payload
-- **get_transcription_status**: Check job progress
 - **list_configured_webhooks**: Get delivery endpoints
 - **test_speechnotes_auth**: Check connection
-- **transcribe_audio_url**: Transcribe remote file
+- **list_supported_languages**: Get language codes
+- **get_remaining_credits**: Check account balance
+- **list_transcription_models**: Get engine models
+- **remove_transcription_job**: Delete job record
+- **get_transcription_export**: Export result format
+- **generate_webhook_signature**: Sign payload
+- **get_transcription_status**: Check job progress
 - **get_usage_statistics**: Check usage logs
 - **list_transcription_history**: List past jobs
-- **list_supported_languages**: Get language codes
-- **remove_transcription_job**: Delete job record
-- **get_remaining_credits**: Check account balance
-- **get_transcription_export**: Export result format
-- **list_transcription_models**: Get engine models
+- **transcribe_audio_url**: Transcribe remote file
 
 
 ## 💬 Prompt Examples

@@ -37,15 +37,15 @@ Connect your **SurveySparrow** account to any AI agent and simplify how you coll
 ## Available Tools (12)
 - **list_active_webhooks**: Get notifications config
 - **create_contact**: Add new contact
-- **remove_contact**: Delete contact
-- **get_user_profile**: Get account info
 - **get_contact_info**: Get contact details
+- **get_user_profile**: Get account info
+- **remove_contact**: Delete contact
 - **get_survey_questions**: List survey fields
 - **get_survey_details**: Get survey info
 - **list_contact_folders**: List contact lists
 - **list_crm_contacts**: List audience contacts
-- **list_survey_responses**: List survey submissions
 - **list_email_shares**: List survey invitations
+- **list_survey_responses**: List survey submissions
 - **list_surveys**: List SurveySparrow surveys
 
 
