@@ -36,10 +36,10 @@ Empower your AI agent to orchestrate your entire cloud infrastructure and deploy
 
 ## Available Tools (5)
 - **check_api_status**: Check if the Flystack service is operational
-- **get_cluster_metrics**: Get real-time performance metrics for a specific cluster
 - **get_deployment_details**: Get full details for a specific deployment by ID
 - **list_flystack_clusters**: List all infrastructure clusters in your Flystack account
 - **list_flystack_deployments**: List all active deployments in your Flystack account
+- **get_cluster_metrics**: Get real-time performance metrics for a specific cluster
 
 
 ## 💬 Prompt Examples

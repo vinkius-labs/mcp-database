@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your recruitment lifecycle with **Moka HR**
 
 
 ## Available Tools (10)
-- **list_candidates**: List candidates
 - **list_interviews**: List scheduled interviews
-- **list_jobs**: List open job positions
 - **create_candidate**: Add new candidate
 - **get_application**: Get application details
-- **get_candidate**: Get candidate details
 - **get_hiring_summary**: Get recruitment summary
 - **get_interview**: Get interview details
 - **get_job**: Get job details
 - **list_applications**: List job applications
+- **get_candidate**: Get candidate details
+- **list_candidates**: List candidates
+- **list_jobs**: List open job positions
 
 
 ## 💬 Prompt Examples

@@ -35,18 +35,18 @@ Empower your AI agent to orchestrate your knowledge base with **FlowUs**, the ve
 
 
 ## Available Tools (10)
+- **update_page**: Update an existing page
+- **create_database_row**: Add row to database
 - **create_page**: Create a new FlowUs page
 - **get_database**: Get database schema
 - **get_page**: Get page details
 - **list_blocks**: ) within a specific page.
 
 List page blocks
+- **list_databases**: List all FlowUs databases
 - **list_pages**: List all FlowUs pages
 - **list_users**: List workspace users
 - **query_database**: Query database rows
-- **update_page**: Update an existing page
-- **list_databases**: List all FlowUs databases
-- **create_database_row**: Add row to database
 
 
 ## 💬 Prompt Examples

@@ -38,15 +38,15 @@ Connect to **GDACS** (Global Disaster Alert and Coordination System) and monitor
 
 
 ## Available Tools (8)
+- **get_latest_cyclones**: Returns cyclone names, categories, wind speeds, locations, alert levels and forecast tracks.
+
+Get latest tropical cyclones worldwide
 - **get_event_data**: Use the eventid and eventtype from event list results.
 
 Get detailed data for a specific disaster event
 - **get_event_list**: Supports filtering by event type (EQ=earthquake, TC=cyclone, FL=flood, VO=volcano, WF=wildfire, DR=drought), alert level (red, orange, green), and date range. Returns GeoJSON features with event names, types, magnitudes, alert levels, dates and affected countries.
 
 Search disaster events
-- **get_latest_cyclones**: Returns cyclone names, categories, wind speeds, locations, alert levels and forecast tracks.
-
-Get latest tropical cyclones worldwide
 - **get_latest_droughts**: Returns drought locations, start dates, severity levels, alert levels and affected populations.
 
 Get latest drought events worldwide

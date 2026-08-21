@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your marketing operations within the WeChat
 
 
 ## Available Tools (10)
-- **create_contact**: Create a new contact
 - **get_account_info**: Get account metadata
 - **get_campaign**: Get campaign details
 - **get_contact**: Get contact details
+- **list_campaigns**: List marketing campaigns
+- **create_contact**: Create a new contact
 - **get_stats**: Get account statistics
 - **list_assets**: ) in the library.
 
 List marketing assets
-- **list_campaigns**: List marketing campaigns
 - **list_contacts**: List CRM contacts
 - **list_events**: List tracking events
 - **list_workflows**: List automation workflows

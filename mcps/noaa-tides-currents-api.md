@@ -36,10 +36,10 @@ Empower your AI agent to orchestrate your entire maritime research and tidal aud
 
 ## Available Tools (5)
 - **check_api_status**: Check if the NOAA Tides & Currents service is operational
+- **get_water_temperature**: Get real-time water temperature data for a specific NOAA station
 - **get_air_temperature**: Get real-time air temperature data for a specific NOAA station
 - **get_tide_predictions**: Get high and low tide predictions for a specific NOAA station
 - **get_water_levels**: Get real-time water levels for a specific NOAA station
-- **get_water_temperature**: Get real-time water temperature data for a specific NOAA station
 
 
 ## 💬 Prompt Examples

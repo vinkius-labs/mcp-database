@@ -36,9 +36,9 @@ Empower your AI agent to orchestrate your entire market research and crowdfundin
 
 ## Available Tools (4)
 - **check_api_status**: Check if the Indiegogo service is operational
-- **get_campaign_details**: Get full details and status for a specific Indiegogo campaign by ID
 - **list_indiegogo_categories**: List all project categories available on Indiegogo
 - **search_indiegogo_campaigns**: Search for crowdfunding campaigns on Indiegogo
+- **get_campaign_details**: Get full details and status for a specific Indiegogo campaign by ID
 
 
 ## 💬 Prompt Examples

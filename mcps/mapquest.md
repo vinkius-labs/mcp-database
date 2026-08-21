@@ -34,10 +34,10 @@ Connect your AI agent to MapQuest, one of the pioneers in online mapping. This i
 
 
 ## Available Tools (5)
+- **reverse_geocode**: Convert geographic coordinates (latitude and longitude) into a human-readable address
 - **geocode_address**: Convert an address into geographic coordinates (latitude and longitude)
 - **get_directions**: Get driving, walking, or cycling directions between two locations
 - **get_static_map_url**: Generate a static map image URL for a specific location
-- **reverse_geocode**: Convert geographic coordinates (latitude and longitude) into a human-readable address
 - **search_points_of_interest**: Search for specific places (restaurants, gas stations, etc.) around a location
 
 

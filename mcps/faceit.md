@@ -38,6 +38,15 @@ Connect to **Faceit** and access the world's largest competitive gaming platform
 - **get_hub**: Returns hub name, game, player count, rules, settings and organizer info.
 
 Get details for a specific Faceit hub
+- **get_player_stats**: Returns matches played, win rate, K/D ratio, ELO, headshot percentage (CS2), average kills/deaths and current win streak.
+
+Get game-specific stats for a player
+- **search_tournaments**: Returns tournament names, IDs, games, skill level requirements, start times, prize pools and registration status.
+
+Search for tournaments on Faceit
+- **get_games**: Returns game IDs, names, icons and player counts.
+
+Get all supported games on Faceit
 - **get_hub_leaderboard**: Returns player rankings with nicknames, ELO, Faceit level and position.
 
 Get the leaderboard for a specific hub
@@ -57,18 +66,9 @@ Get ban history for a player
 - **get_player_history**: Returns match IDs, results (win/loss), score, ELO change, date and game. Use game filter to get history for a specific game.
 
 Get match history for a player
-- **get_player_stats**: Returns matches played, win rate, K/D ratio, ELO, headshot percentage (CS2), average kills/deaths and current win streak.
-
-Get game-specific stats for a player
 - **search_players**: Returns player IDs, nicknames, avatars, Faceit levels, ELO ratings and game stats. Useful for finding any player on the platform.
 
 Search for Faceit players by nickname
-- **search_tournaments**: Returns tournament names, IDs, games, skill level requirements, start times, prize pools and registration status.
-
-Search for tournaments on Faceit
-- **get_games**: Returns game IDs, names, icons and player counts.
-
-Get all supported games on Faceit
 
 
 ## 💬 Prompt Examples

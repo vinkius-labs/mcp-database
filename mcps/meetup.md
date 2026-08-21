@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire community ecosystem with **Meet
 
 
 ## Available Tools (5)
-- **get_event**: Get details for a specific event
 - **get_me**: Get authenticated user info from Meetup
+- **search_groups**: Search for Meetup groups by keyword
+- **get_event**: Get details for a specific event
 - **list_group_members**: List members of a Meetup group
 - **list_upcoming_events**: List upcoming events for a Meetup group
-- **search_groups**: Search for Meetup groups by keyword
 
 
 ## 💬 Prompt Examples

@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your design workflow with **MasterGo**, the
 
 
 ## Available Tools (10)
-- **get_project_files**: Get project files
 - **list_nodes**: List nodes in a file
-- **list_projects**: List team projects
-- **list_styles**: List file styles
 - **list_teams**: List available teams
+- **get_file_versions**: Get file version history
+- **list_files**: List all MasterGo files
 - **get_comments**: Get file comments
 - **get_file**: Get design file details
-- **get_file_versions**: Get file version history
 - **get_org_members**: List organization members
-- **list_files**: List all MasterGo files
+- **get_project_files**: Get project files
+- **list_projects**: List team projects
+- **list_styles**: List file styles
 
 
 ## 💬 Prompt Examples
