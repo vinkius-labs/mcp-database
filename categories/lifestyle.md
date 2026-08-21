@@ -10,11 +10,13 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Carbon Footprint Personal Calculator](../mcps/carbon-footprint-personal-calculator.md) | Estimate your annual CO2e emissions from housing, transport, and lifestyle. |
 | [Cat Facts](../mcps/cat-facts.md) | Universal cat intelligence engine — get random cat facts and breed info via AI. |
 | [Cat Litter Box Capacity Calculator](../mcps/cat-litter-box-capacity-calculator.md) | Estimate litter volume, monthly usage, replacement frequency, and maintenance costs for your cats. |
+| [Chope Tissue Optimization](../mcps/chope-tissue-optimization.md) | Deterministic strategy calculator for optimizing table reservations in food courts. |
 | [Dog CEO](../mcps/dog-ceo.md) | Universal dog intelligence engine — get random dog images and breed data via AI. |
 | [Eco Savings Tracker](../mcps/eco-savings-tracker.md) | Quantify and visualize your environmental impact through personal habit changes. |
 | [Environmental Impact Comparator](../mcps/environmental-impact-comparator.md) | Compare the carbon footprint and waste generation of different lifestyle choices side-by-side. |
 | [Feng Shui Flying Star Matrix Generator](../mcps/feng-shui-flying-star-matrix-generator.md) | Generate deterministic annual Xuan Kong Flying Star matrices and analyze sector auspiciousness. |
 | [Hawker Queue Time Calculator](../mcps/hawker-queue-time-calculator.md) | Predict wait times and optimal arrival windows for Singapore hawker centers. |
+| [Kiasu Index Calculator](../mcps/kiasu-index-calculator.md) | Quantify Kiasu behavior intensity with deterministic scoring. |
 | [Konbini Macro Combo Optimizer](../mcps/konbini-macro-combo-optimizer.md) | Optimize Japanese convenience store meals to hit specific calorie and protein targets. |
 | [Matcha Ceremony Parameter Calculator](../mcps/matcha-ceremony-parameter-calculator.md) | Calculate precise matcha recipes, water temperatures, and caffeine estimates. |
 | [Morning-Night Skincare Routine Syncer](../mcps/morning-night-skincare-routine-syncer.md) | Validate skincare routine safety by checking for ingredient incompatibilities and essential dependencies. |

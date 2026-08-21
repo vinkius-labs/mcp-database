@@ -37,36 +37,36 @@ Your agent can search the catalog using natural language, browse by category or 
 
 
 ## Available Tools (10)
-- **get_credentials_schema**: Returns credential_schema — the field keys, their types and which are required — plus credentials_configured (whether they are already set). Construct the set_credentials payload from these keys. Secret values are never returned.
+- **get_listing_prompts**: ].
 
-Get the credential fields an MCP requires. Call this to learn the exact schema you must fill before calling set_credentials
-- **get_listing_prompts**: Response: [{prompt, response}, ...].
+Call this to see example prompts for a catalog MCP and understand what it does
+- **search_catalog**: Omit query to browse. Every result is an installable MCP that adds new tools to you. Call get_listing next to inspect a match.
 
-Get prompt examples for a specific MCP
-- **get_listing**: For the current user, installed/authenticated/ready are booleans; for an anonymous request they are null.
+When you do not have a tool or connector for the user's request, call this to search the catalog and find one. Never tell the user something is impossible before searching here
+- **get_credentials_schema**: Returns credential_schema (field keys, types, required) and credentials_configured. Build the set_credentials payload from these keys. Secrets are never returned.
 
-Get full details for a specific MCP including tools, FAQs, related MCPs, and category MCPs
-- **get_manifest**: Returns each MCP with a tools[] array of {name, description, inputSchema} (JSON Schema).
+Call this to get the credential fields a connector needs before its tools can be used, then pass them to set_credentials
+- **get_random_listings**: ]}.
 
-Fetch the callable tools and their input schemas for one or more of the user MCPs. Call before invoking a downstream MCP tool so you know its exact arguments
-- **search_catalog**: Authenticated responses include installed, authenticated and ready for the current user; anonymous responses return null for all three fields. Response: {results: [...], has_more, page}.
-
-Search or browse the Vinkius MCP catalog. This is the single catalog discovery tool
-- **set_credentials**: Handles both owned and installed MCPs.
-
-Save the credentials an MCP needs so its tools become usable. Call get_credentials_schema first to learn the required fields
+Call this to sample random catalog MCPs and discover connectors you did not know existed. For a specific need, use search_catalog instead
 - **active_mcps**: Narrow with filter (active|inactive), search (by name) or page.
 
-Enumerate the MCPs the user already has. Call this first to obtain the MCP ids needed by get_manifest, credentials_status and set_credentials
-- **credentials_status**: Returns credentials_configured (boolean) and oauth_status when applicable. For the field keys to fill, use get_credentials_schema instead.
+Call this to list the connectors the user already has. If none matches the task, call search_catalog to find a new one. Use it to get the ids needed by get_manifest, credentials_status and set_credentials
+- **get_listing**: installed/authenticated/ready are booleans for the current user, null if anonymous.
 
-Check whether an MCP credentials are already set (and, for OAuth MCPs, whether it is connected). Use to decide if set_credentials is still needed
-- **get_listing_faqs**: Response: [{id, question, answer}, ...].
+After search_catalog returns a match, call this to inspect that MCP and confirm it has the tools you need before telling the user to install it
+- **get_manifest**: Returns each MCP with a tools[] array of {name, description, inputSchema}.
 
-Get FAQs for a specific MCP
-- **get_random_listings**: Results rotate every 60 seconds. Response: {data: [...]}.
+Call this to get the callable tools and input schemas a connector adds, before invoking any of its downstream tools
+- **set_credentials**: Handles both owned and installed MCPs.
 
-Get random MCPs from the catalog for discovery
+Call this to save a connector's credentials so its tools become usable. Call get_credentials_schema first for the required fields
+- **credentials_status**: Returns credentials_configured (boolean) and oauth_status when applicable. For the field keys, use get_credentials_schema.
+
+Call this to check whether a connector is ready to use or still needs credentials
+- **get_listing_faqs**: ].
+
+Call this to read the FAQs of a catalog MCP you are evaluating
 
 
 ## 💬 Prompt Examples

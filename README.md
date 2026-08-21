@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,513 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,533 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,10 +10,10 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (939 servers)
+- [productivity](categories/productivity.md) (942 servers)
 - [developer-tools](categories/developer-tools.md) (686 servers)
 - [industry-titans](categories/industry-titans.md) (587 servers)
-- [finance](categories/finance.md) (464 servers)
+- [finance](categories/finance.md) (473 servers)
 - [data-analytics](categories/data-analytics.md) (329 servers)
 - [marketing-automation](categories/marketing-automation.md) (240 servers)
 - [ecommerce](categories/ecommerce.md) (206 servers)
@@ -25,7 +25,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [the-unthinkable](categories/the-unthinkable.md) (106 servers)
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
 - [ai-frontier](categories/ai-frontier.md) (99 servers)
-- [utilities](categories/utilities.md) (94 servers)
+- [utilities](categories/utilities.md) (96 servers)
 - [security](categories/security.md) (67 servers)
 - [human-resources](categories/human-resources.md) (63 servers)
 - [sales-automation](categories/sales-automation.md) (60 servers)
@@ -35,11 +35,11 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [data-management](categories/data-management.md) (56 servers)
 - [growth-engine](categories/growth-engine.md) (55 servers)
 - [finance-accounting](categories/finance-accounting.md) (54 servers)
+- [health](categories/health.md) (53 servers)
 - [marketing](categories/marketing.md) (52 servers)
-- [health](categories/health.md) (51 servers)
 - [ship-it](categories/ship-it.md) (48 servers)
+- [construction](categories/construction.md) (43 servers)
 - [real-estate](categories/real-estate.md) (43 servers)
-- [construction](categories/construction.md) (42 servers)
 - [document-management](categories/document-management.md) (40 servers)
 - [collaboration](categories/collaboration.md) (39 servers)
 - [infrastructure](categories/infrastructure.md) (39 servers)
@@ -52,9 +52,9 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [friends-mcp](categories/friends-mcp.md) (29 servers)
 - [analytics](categories/analytics.md) (28 servers)
 - [design-creative](categories/design-creative.md) (28 servers)
+- [lifestyle](categories/lifestyle.md) (28 servers)
 - [healthcare](categories/healthcare.md) (27 servers)
 - [education](categories/education.md) (26 servers)
-- [lifestyle](categories/lifestyle.md) (26 servers)
 - [iot-hardware](categories/iot-hardware.md) (25 servers)
 - [mathematics](categories/mathematics.md) (25 servers)
 - [automation](categories/automation.md) (23 servers)
@@ -209,6 +209,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [hardware](categories/hardware.md) (1 servers)
 - [helpdesk-ticketing](categories/helpdesk-ticketing.md) (1 servers)
 - [journalism](categories/journalism.md) (1 servers)
+- [language](categories/language.md) (1 servers)
 - [llm-inference](categories/llm-inference.md) (1 servers)
 - [llm-ops](categories/llm-ops.md) (1 servers)
 - [logic](categories/logic.md) (1 servers)

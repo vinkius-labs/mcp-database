@@ -23,6 +23,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Ideal Weight Calculator](../mcps/ideal-weight-calculator.md) | Determine personalized healthy weight ranges and nutritional transition plans using physiological markers. |
 | [Lactate Threshold Estimator](../mcps/lactate-threshold-estimator.md) | Estimate metabolic lactate thresholds using effort-based metrics or heart rate drift analysis. |
 | [Natural Ventilation Calculator](../mcps/natural-ventilation-calculator.md) | Calculate air change rates and ensure ventilation compliance for different room uses. |
+| [NS IPPT Score Calculator](../mcps/ns-ippt-score-calculator.md) | Deterministic scoring for National Service IPPT, calculating points, tiers, and incentives. |
 | [Nutritional Estimator](../mcps/nutritional-estimator.md) | Calculate total and per-serving macro and calorie content of recipes using weight-based nutritional density data. |
 | [Oral Syringe Volume Converter](../mcps/oral-syringe-volume-converter.md) | Convert liquid medication doses from ml to teaspoons, tablespoons, and drops. |
 | [Ovulation Fertile Window Calculator](../mcps/ovulation-fertile-window-calculator.md) | Predict ovulation and fertile windows based on cycle tracking. |
@@ -45,6 +46,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [PSS-10 Stress Assessment](../mcps/pss-10-stress-assessment.md) | Calculate and analyze perceived stress levels using the PSS-10 scale. |
 | [Raw Diet Ratio Calculator](../mcps/raw-diet-ratio-calculator.md) | Calculate precise daily food weights for BARF and PMR raw diets based on pet weight and activity level. |
 | [Self-Compassion Scale (SCS)](../mcps/self-compassion-scale-scs.md) | Calculate and interpret Self-Compassion Scale scores. |
+| [Singapore Hawker Macro Calculator](../mcps/singapore-hawker-macro-calculator.md) | Get precise nutritional data and Nutri-Grade ratings for Singaporean hawker dishes. |
 | [Sport Nutrition Timing Calculator](../mcps/sport-nutrition-timing-calculator.md) | Calculate precise carbohydrate and protein timing for pre-, intra-, and post-workout nutrition based on training intensity. |
 | [Strength Standards Checker](../mcps/strength-standards-checker.md) | Classify weightlifting strength levels and predict future milestones. |
 | [Stress Load Scorer](../mcps/stress-load-scorer.md) | Calculate cumulative psychological stress and health risk using the Holmes-Rahe Scale. |

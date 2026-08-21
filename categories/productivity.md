@@ -507,6 +507,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Jiandaoyun](../mcps/jiandaoyun.md) | Cloud-based zero-code data management platform — manage forms, records, and workflows via AI. |
 | [Jinshuju / 金数据](../mcps/jinshuju.md) | Powerful online form and data collection platform — manage forms, entries, and webhooks via AI. |
 | [Jitbit](../mcps/jitbit.md) | Track and resolve IT support tickets with a fast helpdesk that includes automation rules, knowledge base, and SLA monitoring. |
+| [Job-Hop ROI Calculator](../mcps/job-hop-roi-calculator.md) | Analyze the financial and career impact of switching jobs in Singapore. |
 | [JobScore](../mcps/jobscore.md) | Manage jobs, candidates, and hiring teams via JobScore ATS API. |
 | [Jobtoolz](../mcps/jobtoolz.md) | Manage recruitment, jobs, and candidates via Jobtoolz API. |
 | [Jobvite](../mcps/jobvite.md) | Manage your recruitment pipeline via Jobvite — list candidates, track job requisitions, and update application statuses directly from any AI agent. |
@@ -758,6 +759,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Simian](../mcps/simian.md) | Video sharing and collaboration platform. |
 | [Simplenote](../mcps/simplenote.md) | Manage your Simplenote notes directly from your AI assistant. Create, search, edit, and organize plain-text notes without leaving the conversation. |
 | [SimplyBook.me](../mcps/simplybookme.md) | Manage services, providers, and bookings on SimplyBook.me with AI agents. |
+| [Singapore Public Holiday & Mondayization Calculator](../mcps/singapore-public-holiday-mondayization-calculator.md) | Calculate Singapore public holiday impacts and Mondayization eligibility. |
+| [Singapore Salary Benchmark](../mcps/singapore-salary-benchmark.md) | Calculate your salary percentile rank against Singapore market benchmarks. |
 | [Skyscanner](../mcps/skyscanner.md) | Search flights worldwide — compare prices by date, find cheapest days to fly and discover flight routes. |
 | [Sleep Cycle Calculator](../mcps/sleep-cycle-calculator.md) | Optimize your rest by finding the perfect wake-up times based on natural 90-minute sleep cycles. |
 | [Sleep Debt Calculator](../mcps/sleep-debt-calculator.md) | Quantify accumulated sleep deficit, predict recovery timelines, and optimize nap schedules. |

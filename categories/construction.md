@@ -22,6 +22,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Foundation Load Calculator](../mcps/foundation-load-calculator.md) | Calculate total structural loads for columns and foundation beams. |
 | [Giddyup](../mcps/giddyup.md) | Coordinate field service teams with job dispatching, route optimization, and real-time status updates for mobile workforces. |
 | [Gripr](../mcps/gripr.md) | Manage safety compliance, inspections, and risk assessments for construction and industrial projects with mobile-first tools. |
+| [HDB Renovation Compliance Checker](../mcps/hdb-renovation-compliance-checker.md) | Validate HDB renovation plans against structural and regulatory rules. |
 | [HVAC Load Calculator (Manual J)](../mcps/hvac-load-calculator-manual-j.md) | Calculate heating and cooling loads in BTU/h and Tons using simplified Manual J standards. |
 | [Insulation R-Value Calculator](../mcps/insulation-r-value-calculator.md) | Calculate minimum insulation R-values, required thickness, and estimated costs based on IECC climate zones. |
 | [JobNimbus](../mcps/jobnimbus.md) | Manage contacts, jobs, and tasks via JobNimbus CRM API. |

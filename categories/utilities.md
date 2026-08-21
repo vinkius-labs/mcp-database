@@ -33,6 +33,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Deep Diff Engine](../mcps/deep-diff-engine.md) | Find every single change between two JSON objects — additions, deletions, and edits with exact structural paths. Stop relying on AI to 'spot the difference'. |
 | [Deterministic Cron Schedule Engine](../mcps/deterministic-cron-schedule-engine.md) | Equip your AI with precise cron job parsing. Deterministically translate cron to natural language, format schedules, and calculate exact next execution times. |
 | [Dimensional Weight Calculator](../mcps/dimensional-weight-calculator.md) | Calculate dimensional weights, billable weight, and shipping weight discrepancies for major global carriers. |
+| [Durian Value-Yield Calculator](../mcps/durian-value-yield-calculator.md) | Calculate the true edible yield and cost-efficiency of durian varieties. |
 | [File Encoding & BOM Normalizer](../mcps/file-encoding-bom-normalizer.md) | Detects and removes Byte Order Marks (BOM) and normalizes file encodings and line endings to a standard UTF-8 LF format. |
 | [Flash Power Calculator](../mcps/flash-power-calculator.md) | Calculate aperture, flash power levels, and motion freeze potential. |
 | [Fraction Exact Calculator](../mcps/fraction-exact-calculator.md) | Perform exact rational number arithmetic, continued fraction analysis, and decimal expansion without floating-point errors. |
@@ -61,6 +62,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Moon Phase Calculator](../mcps/moon-phase-calculator.md) | Calculate exact lunar phases, illumination percentages, and monthly schedules using astronomical algorithms. |
 | [Moving Truck Sizer](../mcps/moving-truck-sizer.md) | Calculate the exact truck size needed for your move based on home type and bulky items. |
 | [Multi-Monitor Arrangement Math](../mcps/multi-monitor-arrangement-math.md) | Calculate total desktop dimensions and coordinate offsets for multi-monitor setups. |
+| [NEA Heat Index Calculator](../mcps/nea-heat-index-calculator.md) | Calculate heat stress, hydration needs, and safety scores using NEA methodology. |
 | [Number Base Converter](../mcps/number-base-converter.md) | Convert integers and fractional numbers between any bases from 2 to 36 with high precision. |
 | [Number Compression Calculator](../mcps/number-compression-calculator.md) | Analyze text to calculate potential token savings by rounding large numbers. |
 | [Onsen Mineral Classifier](../mcps/onsen-mineral-classifier.md) | Classify Japanese hot spring water quality, legal status, and therapeutic benefits. |
