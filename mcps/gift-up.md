@@ -36,17 +36,17 @@ Connect your **Gift Up!** account to any AI agent to automate your gift card man
 
 
 ## Available Tools (12)
-- **find_order_by_ref**: Search by reference
-- **get_card_details**: Get card metadata
 - **validate_gift_card**: Check card balance
-- **list_gift_orders**: List all orders
-- **verify_api_connection**: Check connection
+- **find_order_by_ref**: Search by reference
 - **get_account_details**: Get account identity
+- **get_card_details**: Get card metadata
 - **get_order_details**: Get order metadata
-- **list_gift_webhooks**: List webhook configs
-- **redeem_gift_card_full**: Redeem full balance
 - **list_active_gift_cards**: List all gift cards
+- **list_gift_orders**: List all orders
+- **list_gift_webhooks**: List webhook configs
 - **redeem_gift_card**: Process partial redemption
+- **redeem_gift_card_full**: Redeem full balance
+- **verify_api_connection**: Check connection
 - **update_order_metadata**: Set custom fields
 
 

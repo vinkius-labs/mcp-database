@@ -33,28 +33,28 @@ Connect your **AddSearch** account to your AI agent and turn your site's search 
 
 
 ## Available Tools (10)
-- **search_sorted**: Search indexed content with custom sort
 - **stats_queries**: Requires Secret Key.
 
 Retrieve search query analytics
-- **search_keyword**: Search indexed content by keyword
 - **stats_clicks**: Requires Secret Key.
 
 Retrieve click-through analytics
 - **autosuggest**: Get autocomplete suggestions
-- **delete_document**: Requires Secret Key.
-
-Permanently delete a document
-- **search_filtered**: g., "category=shoes", "brand=nike").
-
-Search indexed content by custom field
-- **index_document**: Requires Secret Key.
-
-Add or update an indexed document
+- **search_keyword**: Search indexed content by keyword
+- **search_sorted**: Search indexed content with custom sort
 - **list_documents**: Requires Secret Key.
 
 List all indexed documents
 - **search_pagination**: Retrieve a specific page of search results
+- **search_filtered**: g., "category=shoes", "brand=nike").
+
+Search indexed content by custom field
+- **delete_document**: Requires Secret Key.
+
+Permanently delete a document
+- **index_document**: Requires Secret Key.
+
+Add or update an indexed document
 
 
 ## 💬 Prompt Examples

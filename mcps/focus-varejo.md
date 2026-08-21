@@ -32,14 +32,14 @@ Connect **Focus Varejo** to any AI agent and manage your retail and telecom fisc
 
 
 ## Available Tools (8)
+- **consult_nfce**: Consult NFC-e status
+- **manifest_cte**: Manifest CT-e as recipient
 - **manifest_nfe**: Manifest NF-e as recipient (Ciência, Confirmação, etc)
 - **cancel_nfce**: Cancel NFC-e
-- **consult_nfce**: Consult NFC-e status
 - **consult_nfcom**: Consult NFCom status
 - **emit_nfce**: Emit NFC-e for retail sales
 - **emit_nfcom**: Emit NFCom for Telecom services
 - **list_received_nfse**: List NFS-e received by the company
-- **manifest_cte**: Manifest CT-e as recipient
 
 
 ## 💬 Prompt Examples

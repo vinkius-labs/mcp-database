@@ -37,8 +37,6 @@ Connect your **Givebutter** account to any AI agent to automate your fundraising
 
 ## Available Tools (12)
 - **sync_donor_contact**: Add new donor
-- **record_offline_donation**: Log a donation
-- **get_account_details**: Get account identity
 - **get_transaction_details**: Get transaction metadata
 - **list_donor_contacts**: List donor profiles
 - **list_recurring_plans**: List recurring plans
@@ -46,6 +44,8 @@ Connect your **Givebutter** account to any AI agent to automate your fundraising
 - **list_donation_transactions**: List donations
 - **list_donation_webhooks**: List webhook configs
 - **verify_api_connection**: Check connection
+- **get_account_details**: Get account identity
+- **record_offline_donation**: Log a donation
 - **get_campaign_details**: Get campaign metadata
 - **list_fundraising_campaigns**: List active campaigns
 

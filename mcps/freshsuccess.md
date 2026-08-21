@@ -37,17 +37,17 @@ Connect your **Freshsuccess** (Freshdesk Customer Success) account to any AI age
 ## Available Tools (11)
 - **get_account_health**: Get account metadata
 - **upsert_cs_user**: Create/Update user
-- **check_api_status**: Verify API connection
 - **get_user_health**: Get user metadata
 - **list_cs_accounts**: List customer accounts
 - **list_cs_alerts**: g. drop in usage).
 
 List active alerts
-- **list_custom_metrics**: List defined metrics
 - **list_cs_tasks**: List pending tasks
 - **list_cs_users**: List account users
+- **list_custom_metrics**: List defined metrics
 - **post_metric_value**: Record custom metric
 - **upsert_cs_account**: Create/Update account
+- **check_api_status**: Verify API connection
 
 
 ## 💬 Prompt Examples

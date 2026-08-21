@@ -39,15 +39,15 @@ Connect your **Flow XO** account to any AI agent and automate your chatbot inter
 - **toggle_workflow**: Enable/Disable a flow
 - **trigger_webhook**: Trigger flow via webhook
 - **update_user**: Update user metadata
+- **list_user_history**: List user messages
 - **create_user**: Register a new user
-- **get_user_details**: Get user profile
 - **get_automation_analytics**: Get usage summary
+- **get_user_details**: Get user profile
 - **list_broadcasts**: List sent broadcasts
 - **list_bot_accounts**: ).
 
 List platform accounts
 - **list_chatbot_users**: List all end users
-- **list_user_history**: List user messages
 - **list_workflows**: List automation flows
 - **send_push_message**: Send a push message
 

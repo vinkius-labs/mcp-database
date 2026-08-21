@@ -37,13 +37,13 @@ Connect your **GiveWP** (WordPress plugin) account to any AI agent to automate y
 
 ## Available Tools (9)
 - **verify_api_connection**: Check connection
-- **get_form_details**: Get form metadata
 - **get_plugin_stats**: Get general stats
-- **list_plugin_donations**: List all donations
-- **list_plugin_donors**: List all donors
 - **list_recent_donations**: List latest records
 - **find_donor_history**: Search by donor
+- **get_form_details**: Get form metadata
 - **get_form_performance**: Get form stats
+- **list_plugin_donations**: List all donations
+- **list_plugin_donors**: List all donors
 - **list_donation_forms**: List all forms
 
 

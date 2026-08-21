@@ -40,16 +40,16 @@ Connect your **Float** account to any AI agent and automate your resource manage
 - **get_project**: Get project details
 - **list_allocations**: List task allocations
 - **list_clients**: List clients
-- **list_departments**: List departments
 - **list_people**: List team members
+- **list_projects**: List projects
+- **create_allocation**: Schedule a task
+- **get_logged_time**: Get actual hours
+- **list_departments**: List departments
 - **list_project_task_names**: g. Design, Dev).
 
 List task labels
-- **list_projects**: List projects
-- **get_logged_time**: Get actual hours
-- **create_allocation**: Schedule a task
-- **list_user_accounts**: List user accounts
 - **list_time_offs**: List time off
+- **list_user_accounts**: List user accounts
 
 
 ## 💬 Prompt Examples

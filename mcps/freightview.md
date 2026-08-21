@@ -36,16 +36,16 @@ Connect your **Freightview** account to any AI agent to automate your LTL (Less-
 
 
 ## Available Tools (12)
-- **request_rates**: Request freight rates
-- **get_account_details**: Get organization attributes
 - **get_carrier_details**: Get carrier info
+- **list_connected_carriers**: List connected carriers
+- **get_account_details**: Get organization attributes
 - **get_quote_details**: Get quote metadata
 - **get_shipment_details**: Get shipment metadata
 - **list_address_book**: List saved addresses
-- **list_connected_carriers**: List connected carriers
+- **request_rates**: Request freight rates
 - **list_contacts**: List logistics contacts
-- **list_item_catalog**: List commonly shipped items
 - **list_freight_quotes**: List recent quotes
+- **list_item_catalog**: List commonly shipped items
 - **list_shipments**: List freight shipments
 - **list_webhooks**: List active webhooks
 

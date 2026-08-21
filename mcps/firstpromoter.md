@@ -37,17 +37,17 @@ Connect your **FirstPromoter** account to any AI agent and automate your affilia
 
 ## Available Tools (12)
 - **list_promoters**: List all promoters
-- **create_promoter**: Create a new promoter
 - **create_reward**: Create a new reward
-- **get_campaign_report**: Get campaign performance report
 - **get_lead**: Get lead details
-- **get_payout_stats**: Get payout statistics
-- **get_promoter_report**: Get promoter performance report
-- **get_promoter**: Get promoter details
-- **list_campaigns**: List affiliate campaigns
-- **list_conversions**: List all conversions
 - **list_leads**: List all leads
 - **list_rewards**: List rewards
+- **create_promoter**: Create a new promoter
+- **get_campaign_report**: Get campaign performance report
+- **get_payout_stats**: Get payout statistics
+- **get_promoter**: Get promoter details
+- **get_promoter_report**: Get promoter performance report
+- **list_campaigns**: List affiliate campaigns
+- **list_conversions**: List all conversions
 
 
 ## 💬 Prompt Examples

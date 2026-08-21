@@ -27,18 +27,18 @@ Connect your **Formbricks** environment to any AI agent and simplify your feedba
 
 
 ## Available Tools (10)
-- **create_survey**: Create a new survey
 - **delete_survey**: Delete a survey
-- **get_person**: Get details for a specific person
 - **get_response**: Get details for a specific response
 - **get_survey**: Get details for a specific survey
 - **list_action_classes**: List action classes
+- **list_surveys**: List all surveys
+- **list_webhooks**: List configured webhooks
+- **create_survey**: Create a new survey
+- **get_person**: Get details for a specific person
 - **list_people**: List identified people
 - **list_responses**: Optionally filter by a specific survey ID.
 
 List survey responses
-- **list_surveys**: List all surveys
-- **list_webhooks**: List configured webhooks
 
 
 ## 💬 Prompt Examples

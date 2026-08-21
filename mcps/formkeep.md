@@ -35,10 +35,10 @@ Connect your **FormKeep** account to any AI agent to automate your form data ret
 
 
 ## Available Tools (5)
-- **delete_submission**: Remove a submission
 - **get_form_details**: Get form metadata
 - **get_submission**: Get submission details
 - **list_forms**: List all forms
+- **delete_submission**: Remove a submission
 - **list_submissions**: List form submissions
 
 

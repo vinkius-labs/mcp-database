@@ -35,13 +35,13 @@ Connect your **FareHarbor** affiliate or partner account to any AI agent and tak
 
 
 ## Available Tools (11)
-- **get_availability**: Get details for a specific availability slot
 - **get_booking**: Get details for a specific booking by UUID
+- **create_booking**: Create a new booking for a tour or activity
+- **get_availability**: Get details for a specific availability slot
+- **get_item_details**: Get details for a specific tour or activity
 - **list_bookings**: List recent bookings for a company
 - **list_availabilities_by_date**: List available slots for an item on a specific date
 - **list_availabilities_by_range**: List available slots for an item within a date range
-- **create_booking**: Create a new booking for a tour or activity
-- **get_item_details**: Get details for a specific tour or activity
 - **get_me**: Get current API user/affiliate identity
 - **list_companies**: List all companies (operators) authorized for booking
 - **list_items**: List all tours or activities (items) for a specific company
