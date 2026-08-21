@@ -38,12 +38,12 @@ No more manual checking of monitoring dashboards for performance updates. Your A
 
 ## Available Tools (11)
 - **get_site_health**: Get the overall health status for a specific property
-- **get_security_status**: Retrieve SSL and general security health for a site
 - **get_uptime_stats**: Get historical uptime statistics for a site
-- **list_recent_alerts**: List recent monitoring alerts and notifications
 - **list_monitored_sites**: List all websites (properties) tracked in Hexometer
 - **list_wordpress_syncs**: List active WordPress plugin syncs
 - **run_seo_audit**: Perform an on-demand SEO audit for a URL
+- **get_security_status**: Retrieve SSL and general security health for a site
+- **list_recent_alerts**: List recent monitoring alerts and notifications
 - **check_broken_links**: List detected 404 errors and broken links for a property
 - **check_speed_desktop**: Returns scores and asset details.
 

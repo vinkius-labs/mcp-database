@@ -37,18 +37,18 @@ No more juggling between multiple dashboards to check order status or update men
 
 
 ## Available Tools (12)
-- **get_outlet_info**: Get details for a specific GoFood outlet
 - **accept_order**: Accept a pending GoFood order
 - **cancel_order**: Cancel a GoFood order
+- **get_outlet_info**: Get details for a specific GoFood outlet
+- **list_linked_outlets**: List all linked GoFood outlets
+- **mark_order_prepared**: Mark a GoFood order as food prepared
+- **unlink_outlet**: Unlink a GoFood outlet from the integration
 - **create_promo**: Create a new promo for a GoFood outlet
 - **get_catalog**: Get the full menu catalog for a GoFood outlet
 - **link_outlet**: Link a GoFood outlet to the integration
-- **list_linked_outlets**: List all linked GoFood outlets
 - **list_promos**: List all promos for a GoFood outlet
-- **mark_order_prepared**: Mark a GoFood order as food prepared
 - **update_catalog**: Update the menu catalog for a GoFood outlet
 - **update_menu_stocks**: Update menu item stock levels for a GoFood outlet
-- **unlink_outlet**: Unlink a GoFood outlet from the integration
 
 
 ## 💬 Prompt Examples

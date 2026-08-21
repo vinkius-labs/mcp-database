@@ -37,17 +37,17 @@ No more jumping between browser tabs to check if a specific SKU is in stock or i
 
 ## Available Tools (12)
 - **list_customers**: List customer records from Goflow
+- **list_listings**: List marketplace listings (Amazon, Walmart, etc.)
+- **list_reports**: List available reports
+- **list_shipments**: List shipments and tracking info
+- **update_inventory**: Adjust inventory stock levels
 - **get_inventory**: Check stock levels in Goflow
 - **get_customer**: Get detailed info for a specific customer
 - **get_order**: Get details for a specific Goflow order
 - **get_store_stats**: Get a summary of recent store activity
-- **list_listings**: List marketplace listings (Amazon, Walmart, etc.)
 - **list_orders**: List Goflow orders
 - **list_products**: List products in Goflow
-- **list_reports**: List available reports
-- **list_shipments**: List shipments and tracking info
 - **list_webhooks**: List active webhooks in Goflow
-- **update_inventory**: Adjust inventory stock levels
 
 
 ## 💬 Prompt Examples

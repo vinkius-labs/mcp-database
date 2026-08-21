@@ -37,13 +37,10 @@ No more manual configuration in the web dashboard for every run. Your AI assista
 
 
 ## Available Tools (11)
-- **get_workflow_results**: Retrieve the output data from a completed workflow execution
-- **get_execution_logs**: Retrieve the execution logs for a specific workflow
 - **get_account_usage**: Retrieve current plan usage and automation credits
+- **get_execution_logs**: Retrieve the execution logs for a specific workflow
+- **get_workflow_results**: Retrieve the output data from a completed workflow execution
 - **list_automations**: List all built-in Hexomatic automations (e.g., Tech Stack Discovery)
-- **get_workflow_details**: Get detailed configuration for a specific workflow
-- **list_scraping_recipes**: List all point-and-click scraping recipes
-- **list_account_teams**: List teams and collaborators
 - **list_workflows**: Use this to identify the ID of the workflow you want to run.
 
 List all automation workflows in your Hexomatic account
@@ -52,6 +49,9 @@ List all automation workflows in your Hexomatic account
 Manually trigger an execution of a workflow
 - **search_workflows**: Search for workflows by name or title
 - **update_workflow_status**: Activate or deactivate a workflow
+- **list_account_teams**: List teams and collaborators
+- **get_workflow_details**: Get detailed configuration for a specific workflow
+- **list_scraping_recipes**: List all point-and-click scraping recipes
 
 
 ## 💬 Prompt Examples

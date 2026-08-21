@@ -37,11 +37,12 @@ No more manual exporting of issue logs. Your AI assistant acts as a dedicated Su
 
 
 ## Available Tools (11)
+- **list_faq_sections**: List FAQ categories/sections
+- **update_issue_status**: Update the status of an issue (e.g., Resolved, Rejected)
 - **bulk_user_action**: Pass the actions array as a JSON string in "body_json".
 
 Perform bulk profile operations (v2)
-- **list_faq_sections**: List FAQ categories/sections
-- **update_issue_status**: Update the status of an issue (e.g., Resolved, Rejected)
+- **get_issue_details**: Get detailed information about a specific issue
 - **add_issue_message**: Pass the message details as a JSON string in "body_json".
 
 Add a message to an existing issue
@@ -50,12 +51,11 @@ Add a message to an existing issue
 Create a new support issue
 - **get_issue_audit_logs**: Retrieve the action history for a specific issue
 - **get_bulk_task_status**: Check the status of a bulk profile operation
-- **get_issue_details**: Get detailed information about a specific issue
-- **list_registered_apps**: List all applications registered in your Helpshift dashboard
 - **list_faqs**: List all published FAQ articles
 - **list_issues**: Useful for monitoring support volume and identifying urgent cases.
 
 List support issues/tickets in Helpshift
+- **list_registered_apps**: List all applications registered in your Helpshift dashboard
 
 
 ## 💬 Prompt Examples

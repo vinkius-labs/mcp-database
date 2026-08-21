@@ -39,15 +39,15 @@ No more manual exporting of timesheets for simple availability checks. Your AI a
 
 ## Available Tools (10)
 - **get_active_clock_ins**: List all employees currently clocked in at a specific location
-- **get_employee_profile**: Get detailed information for a specific employee
 - **get_api_profile**: Retrieve information about the authenticated user and plan status
+- **get_employee_profile**: Get detailed information for a specific employee
+- **list_defined_roles**: List all roles (e.g., Manager, Server) defined for a location
 - **list_departments**: List all departments configured for a location
 - **list_employees**: List all employees for a specific location
 - **list_labor_budgets**: Retrieve labor budget configurations for a location
 - **list_locations**: Use this to find the "location_uuid" required for all other tools.
 
 List all business locations associated with the Homebase account
-- **list_defined_roles**: List all roles (e.g., Manager, Server) defined for a location
 - **list_scheduled_shifts**: List scheduled shifts for employees at a specific location
 - **list_timecards**: Useful for monitoring actual hours worked.
 

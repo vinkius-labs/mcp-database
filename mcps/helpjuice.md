@@ -38,22 +38,22 @@ No more manual navigating through complex CMS folders. Your AI assistant acts as
 
 ## Available Tools (12)
 - **list_kb_groups**: List user groups defined for permissions
-- **create_article**: Requires a name/title. Pass body fields as a JSON string in "body_json".
-
-Create a new article in the knowledge base
 - **downvote_article**: Record a downvote for an article
 - **get_article_details**: Get detailed content and metadata for a specific article
 - **get_article_stats**: Get engagement statistics for a specific article
+- **list_categories**: List all categories in the knowledge base
+- **list_kb_users**: List all internal users/authors in Helpjuice
+- **create_article**: Requires a name/title. Pass body fields as a JSON string in "body_json".
+
+Create a new article in the knowledge base
 - **get_search_trends**: List recent search terms used by visitors
 - **list_articles**: Useful for getting a birds-eye view of your content library.
 
 List all articles in the Helpjuice knowledge base
-- **list_categories**: List all categories in the knowledge base
-- **list_kb_users**: List all internal users/authors in Helpjuice
+- **update_article**: Update an existing article
 - **search_kb**: Useful for finding existing answers to customer questions.
 
 Search the knowledge base for articles matching a query
-- **update_article**: Update an existing article
 - **upvote_article**: Record an upvote for an article
 
 

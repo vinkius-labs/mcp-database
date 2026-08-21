@@ -37,29 +37,29 @@ No more manual exporting of transaction CSVs. Your AI assistant acts as a dedica
 
 
 ## Available Tools (11)
-- **get_member_details**: Get details for a specific member ID
 - **get_order_details**: Get details for a specific order ID
-- **create_checkout_intent**: Pass the amount in cents (EUR) and other required fields as a JSON string in "body_json". Returns a redirect URL for the payer.
-
-Generate a checkout link to receive a payment
+- **get_member_details**: Get details for a specific member ID
 - **get_organization_details**: Get detailed information about a specific organization by its slug
-- **get_payment_details**: Get details for a specific payment ID
-- **list_forms**: Each form has a "formType" and "formSlug" used for detailed lookups.
-
-List all campaigns/forms (Donations, Memberships, Events) for an organization
-- **list_sold_items**: g., ticket, membership tier) that were part of orders.
-
-List all individual items sold/distributed by an organization
 - **list_my_organizations**: Use this to find the "slug" required for other tools.
 
 List all organizations where the user has administrative rights
 - **list_orders**: An order represents one or more items purchased or donated by a user in a single session.
 
 List all orders (group of items/payments) for an organization
+- **create_checkout_intent**: Pass the amount in cents (EUR) and other required fields as a JSON string in "body_json". Returns a redirect URL for the payer.
+
+Generate a checkout link to receive a payment
+- **get_payment_details**: Get details for a specific payment ID
+- **list_forms**: Each form has a "formType" and "formSlug" used for detailed lookups.
+
+List all campaigns/forms (Donations, Memberships, Events) for an organization
+- **list_subscriptions**: List recurring payments (subscriptions) for an organization
 - **list_payments**: Returns amounts in cents (EUR). Use this to track donations or membership payments.
 
 List all payments received by an organization
-- **list_subscriptions**: List recurring payments (subscriptions) for an organization
+- **list_sold_items**: g., ticket, membership tier) that were part of orders.
+
+List all individual items sold/distributed by an organization
 
 
 ## 💬 Prompt Examples

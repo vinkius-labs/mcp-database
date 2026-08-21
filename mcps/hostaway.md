@@ -22,11 +22,11 @@ Connect **Hostaway** to any AI agent — the leading vacation rental channel man
 
 
 ## Available Tools (8)
+- **get_listing**: Get listing details
+- **get_reservation**: Get reservation details
+- **list_reservations**: List reservations
 - **get_financials**: Get reservation financials
 - **list_listings**: List vacation rental listings
-- **get_listing**: Get listing details
-- **list_reservations**: List reservations
-- **get_reservation**: Get reservation details
 - **get_calendar**: For revenue management.
 
 Get availability calendar

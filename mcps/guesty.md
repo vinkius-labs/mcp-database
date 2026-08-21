@@ -42,12 +42,12 @@ No more manual exporting of booking data. Your AI assistant acts as a dedicated 
 - **list_guests**: List guests or search by name/email
 - **list_listings**: List all property listings managed in Guesty
 - **list_messages**: List communication messages/chats. Optionally filter by guest ID
-- **list_reservations**: List reservations. Filter by status (confirmed, stayed, cancelled)
 - **list_tasks**: List cleaning and operational tasks
-- **get_accounting_stats**: Retrieve business-level accounting summary and statistics
 - **get_calendar**: Get availability and pricing calendar for a listing
-- **get_listing_stats**: Retrieve performance statistics for a specific property listing
+- **list_reservations**: List reservations. Filter by status (confirmed, stayed, cancelled)
+- **get_accounting_stats**: Retrieve business-level accounting summary and statistics
 - **get_listing**: Get detailed information for a specific property listing
+- **get_listing_stats**: Retrieve performance statistics for a specific property listing
 
 
 ## 💬 Prompt Examples

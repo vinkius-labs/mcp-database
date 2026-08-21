@@ -37,15 +37,15 @@ No more manual exporting of training reports. Your AI assistant acts as a dedica
 
 
 ## Available Tools (10)
+- **get_user_progress**: Get the training progress for a specific user
+- **list_content**: List all available training modules and lessons
+- **list_users**: List all users in your HackEDU account
 - **create_issue**: Create/Push a new vulnerability issue to trigger adaptive training
 - **get_team_progress**: Get the training progress for a specific team
 - **get_user**: Get detailed information about a specific user
-- **get_user_progress**: Get the training progress for a specific user
 - **list_adaptive_training_plans**: List adaptive training plans created based on vulnerability findings
-- **list_content**: List all available training modules and lessons
 - **list_issues**: List vulnerability issues synced from external sources (e.g., Bugcrowd, HackerOne)
 - **list_teams**: List all teams configured in HackEDU
-- **list_users**: List all users in your HackEDU account
 - **list_vulnerabilities**: List HackEDU vulnerability taxonomy (CWE/CVE/CAPEC mapping)
 
 
