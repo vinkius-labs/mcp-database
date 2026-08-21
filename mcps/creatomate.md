@@ -34,12 +34,12 @@ Integrate **Creatomate**, the powerful video automation platform, directly into 
 
 ## Available Tools (9)
 - **get_project_settings**: Retrieve settings and metadata for the current project
-- **get_render_status**: Check the status and get the URL of a rendered video
 - **get_template_details**: Get structure and dynamic fields for a template
-- **list_media_assets**: List uploaded media assets (images, videos, audio)
-- **list_video_automations**: List automated video workflows
-- **list_recent_renders**: List recent video rendering tasks and their status
 - **list_video_templates**: List all video templates available in your project
+- **get_render_status**: Check the status and get the URL of a rendered video
+- **list_media_assets**: List uploaded media assets (images, videos, audio)
+- **list_recent_renders**: List recent video rendering tasks and their status
+- **list_video_automations**: List automated video workflows
 - **render_video**: Trigger a new video render using a template and modifications
 - **search_templates_by_name**: Search for video templates by name
 

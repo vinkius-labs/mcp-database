@@ -35,14 +35,14 @@ Integrate **Docdown**, the efficient document generation and automation platform
 ## Available Tools (10)
 - **generate_new_document**: Generate a new document using a specific template and data object
 - **get_docdown_account_metadata**: Retrieve metadata and usage limits for your Docdown account
-- **get_document_status**: Get the current status and download URL for a specific document
-- **get_template_field_schema**: Identify exactly which fields are required to populate a template
 - **get_template_details**: Get detailed information and field schema for a specific template
-- **list_published_templates**: Identify templates that are currently in a "Published" status
-- **list_generated_documents**: List all documents that have been generated from templates
-- **list_recently_generated_docs**: Identify documents that have been generated in the last 24 hours
 - **list_doc_templates**: List all available document templates in your Docdown account
 - **search_templates_by_name**: Search for a document template using a name keyword
+- **get_document_status**: Get the current status and download URL for a specific document
+- **list_published_templates**: Identify templates that are currently in a "Published" status
+- **get_template_field_schema**: Identify exactly which fields are required to populate a template
+- **list_recently_generated_docs**: Identify documents that have been generated in the last 24 hours
+- **list_generated_documents**: List all documents that have been generated from templates
 
 
 ## 💬 Prompt Examples

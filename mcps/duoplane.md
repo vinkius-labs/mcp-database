@@ -34,16 +34,16 @@ Integrate **Duoplane**, the leading multi-vendor e-commerce automation platform,
 
 ## Available Tools (11)
 - **get_duoplane_account_metadata**: Retrieve metadata for the current Duoplane subdomain
+- **quick_vendor_inventory_audit**: Retrieve a high-level summary of vendor activity and product counts
+- **search_orders_by_reference**: Search for orders using a keyword or reference identifier
 - **get_order_details**: Get detailed information and status for a specific customer order
 - **get_purchase_order_details**: Get detailed information for a specific purchase order
-- **quick_vendor_inventory_audit**: Retrieve a high-level summary of vendor activity and product counts
 - **get_vendor_profile**: Get detailed profile and configuration for a specific vendor
 - **list_ecommerce_orders**: List all customer orders in your Duoplane account
 - **list_purchase_orders**: List all purchase orders (POs) sent to vendors
 - **list_unfulfilled_purchase_orders**: Identify purchase orders that are currently awaiting fulfillment by vendors
 - **list_synced_products**: List all products synchronized across your vendors and storefronts
 - **list_active_vendors**: List all drop-ship and wholesale vendors registered in your Duoplane account
-- **search_orders_by_reference**: Search for orders using a keyword or reference identifier
 
 
 ## 💬 Prompt Examples

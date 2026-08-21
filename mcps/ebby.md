@@ -35,14 +35,14 @@ Integrate **Ebby**, the powerful automatic transcription and subtitling platform
 ## Available Tools (10)
 - **get_ebby_account_metadata**: Retrieve metadata and usage limits for your Ebby account
 - **get_transcription_text**: Retrieve the transcribed text content for a specific file
-- **quick_transcription_volume_audit**: Retrieve a high-level summary of transcription activity and processing rates
+- **search_transcriptions_by_name**: Search for transcriptions using a filename or title keyword
 - **get_transcription_details**: Get detailed settings and status for a specific transcription
-- **list_successfully_processed_audio**: Identify transcriptions that have finished processing and are ready for export
 - **list_in_progress_transcriptions**: Identify transcriptions that are currently in the processing queue
 - **list_latest_transcriptions**: Identify the most recently created or updated transcriptions
-- **list_transcription_speakers**: List all speakers identified in a specific transcription
+- **list_successfully_processed_audio**: Identify transcriptions that have finished processing and are ready for export
+- **quick_transcription_volume_audit**: Retrieve a high-level summary of transcription activity and processing rates
 - **list_audio_transcriptions**: List all transcriptions created in your Ebby account
-- **search_transcriptions_by_name**: Search for transcriptions using a filename or title keyword
+- **list_transcription_speakers**: List all speakers identified in a specific transcription
 
 
 ## 💬 Prompt Examples

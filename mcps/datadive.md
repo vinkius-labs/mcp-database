@@ -33,30 +33,30 @@ Integrate **DataDive**, the advanced toolset for Amazon sellers, directly into y
 
 
 ## Available Tools (10)
-- **list_competitor_asins**: Includes product titles, brand names, and baseline performance data.
+- **get_high_volume_keywords**: Returns keywords with significant search volume and favorable competition metrics for ranking priority.
 
-List all ASINs (competitors) tracked within a niche
-- **get_account_details**: Returns metadata such as account tier, connected marketplace integrations, and subscription status.
-
-Retrieve metadata for your DataDive account
+List top performing keywords based on search volume and competition
 - **get_inventory_status**: Returns units in stock, inbound shipments, and daily sell-through rates to provide restock lead-time alerts.
 
 Check current inventory levels and restock recommendations
 - **get_niche_details**: Resolves high-level metrics such as average price, total niche volume, and competition score based on aggregated Amazon data.
 
 Get detailed analytics and metrics for a specific niche
+- **list_competitor_asins**: Includes product titles, brand names, and baseline performance data.
+
+List all ASINs (competitors) tracked within a niche
+- **get_account_details**: Returns metadata such as account tier, connected marketplace integrations, and subscription status.
+
+Retrieve metadata for your DataDive account
 - **get_rank_radar**: Returns real-time organic and sponsored positions across tracked keywords, enabling competitive visibility analysis.
 
 Get keyword ranking data (organic and PPC) for a specific ASIN
-- **get_high_volume_keywords**: Returns keywords with significant search volume and favorable competition metrics for ranking priority.
-
-List top performing keywords based on search volume and competition
-- **list_product_niches**: Returns a collection of niche objects including name, marketplace (e.g., Amazon US), and tracking status.
-
-List all product niches tracked in your DataDive account
 - **get_profits_summary**: Aggregates sales data, fees, and advertising spend to return net profit margins and ROI for the connected seller account.
 
 Retrieve a high-level financial summary of your Amazon sales
+- **list_product_niches**: Returns a collection of niche objects including name, marketplace (e.g., Amazon US), and tracking status.
+
+List all product niches tracked in your DataDive account
 - **search_all_keywords**: Matches against the globalThis keyword repository in the user's account to find occurrences and metrics across multiple categories.
 
 Search for keywords across all your tracked niches

@@ -33,15 +33,15 @@ Integrate **Documint**, the versatile document generation and automation platfor
 
 
 ## Available Tools (10)
+- **create_new_generation**: Generate a new document using a specific template and data object
 - **get_documint_account_metadata**: Retrieve metadata and usage limits for your Documint account
 - **get_generation_details**: Get the current status and download URL for a specific generated document
-- **get_template_variable_audit**: Identify exactly which variables are required to populate a template
 - **get_template_configuration**: Get detailed information and field schema for a specific template
-- **list_documint_generations**: List all documents that have been generated in Documint
-- **list_failed_doc_generations**: Identify document generations that failed due to errors (mock logic)
-- **list_latest_doc_generations**: Identify the most recently generated documents
-- **create_new_generation**: Generate a new document using a specific template and data object
+- **get_template_variable_audit**: Identify exactly which variables are required to populate a template
 - **list_documint_templates**: List all available document templates in your Documint account
+- **list_failed_doc_generations**: Identify document generations that failed due to errors (mock logic)
+- **list_documint_generations**: List all documents that have been generated in Documint
+- **list_latest_doc_generations**: Identify the most recently generated documents
 - **search_documint_templates**: Search for a document template using a name keyword
 
 

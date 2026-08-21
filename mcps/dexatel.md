@@ -33,16 +33,16 @@ Integrate **Dexatel**, the comprehensive cloud communications platform, directly
 
 
 ## Available Tools (10)
-- **get_account_balance_metadata**: Retrieve current balance and metadata for your Dexatel account
 - **get_contact_profile**: Get full profile and history for a specific contact
-- **get_sms_message_details**: Get detailed information for a specific SMS message
-- **list_messaging_contacts**: List all contacts stored in your Dexatel address book
-- **list_failed_sms_deliveries**: Identify SMS messages that failed to deliver (mock logic)
 - **list_sms_messages**: List all sent and received SMS messages in your Dexatel account
-- **list_authorized_sender_ids**: List all authorized Sender IDs and virtual numbers
 - **list_sms_templates**: List all approved message templates
-- **search_sms_by_content**: Search for SMS messages containing specific keywords or numbers
 - **send_sms_message**: Send a new SMS message to a specific number
+- **get_account_balance_metadata**: Retrieve current balance and metadata for your Dexatel account
+- **get_sms_message_details**: Get detailed information for a specific SMS message
+- **list_authorized_sender_ids**: List all authorized Sender IDs and virtual numbers
+- **list_failed_sms_deliveries**: Identify SMS messages that failed to deliver (mock logic)
+- **list_messaging_contacts**: List all contacts stored in your Dexatel address book
+- **search_sms_by_content**: Search for SMS messages containing specific keywords or numbers
 
 
 ## 💬 Prompt Examples

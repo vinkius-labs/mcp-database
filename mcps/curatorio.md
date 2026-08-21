@@ -42,27 +42,27 @@ Retrieve metadata for your Curator.io account
 - **get_feed_details**: Resolves moderation settings, design configurations, and metadata. Interacts with the feed configuration boundary.
 
 Get detailed settings and metadata for a specific feed
+- **list_feed_posts**: Resolves post content, timestamps, and source origin. Touches the content delivery and aggregation boundary.
+
+List recent social media posts within a specific feed
+- **list_social_connections**: Resolves account identifiers and authentication states. Touches the OAuth and external API integration boundary.
+
+List connected social media accounts (Instagram, Twitter, etc.)
 - **get_feed_post_count**: Resolves quantitative feed metrics. Touches the data aggregation and metrics boundary.
 
 Get the total number of posts currently in a feed
 - **list_active_feeds**: Resolves operational feed records. Touches the feed status management boundary.
 
 Quickly list only the feeds that are currently active
-- **list_social_connections**: Resolves account identifiers and authentication states. Touches the OAuth and external API integration boundary.
-
-List connected social media accounts (Instagram, Twitter, etc.)
-- **list_moderation_rules**: Resolves keyword filters and exclusion patterns. Touches the content moderation logic boundary.
-
-List active moderation and filtering rules for a feed
-- **list_feed_posts**: Resolves post content, timestamps, and source origin. Touches the content delivery and aggregation boundary.
-
-List recent social media posts within a specific feed
-- **list_feed_sources**: Resolves source types (Instagram, Twitter, etc.) and connection parameters. Touches the ingestion gateway boundary.
-
-List all social media sources (accounts, hashtags) for a feed
 - **search_posts_in_feed**: Resolves matching post entities. Touches the indexed content search boundary.
 
 Search for specific social posts within a feed by keyword
+- **list_feed_sources**: Resolves source types (Instagram, Twitter, etc.) and connection parameters. Touches the ingestion gateway boundary.
+
+List all social media sources (accounts, hashtags) for a feed
+- **list_moderation_rules**: Resolves keyword filters and exclusion patterns. Touches the content moderation logic boundary.
+
+List active moderation and filtering rules for a feed
 
 
 ## 💬 Prompt Examples

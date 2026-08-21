@@ -34,13 +34,13 @@ Integrate **DigitalChalk**, the comprehensive learning management system (LMS), 
 
 ## Available Tools (10)
 - **get_lms_account_metadata**: Retrieve metadata and settings for your DigitalChalk account
-- **list_course_offerings**: List all available course offerings in your DigitalChalk catalog
-- **list_high_performing_learners**: Identify enrollments with a grade above a certain percentage (mock logic)
-- **list_assessment_exams**: List all exams and quizzes defined in the system
-- **list_recent_course_completions**: Identify enrollments that have been recently completed (mock logic)
-- **list_lms_users**: List all students and administrators registered in your DigitalChalk account
-- **search_users_by_identity**: Search for a user by their full name or email address
 - **get_offering_details**: Get detailed settings and information for a specific course offering
+- **list_assessment_exams**: List all exams and quizzes defined in the system
+- **list_course_offerings**: List all available course offerings in your DigitalChalk catalog
+- **list_lms_users**: List all students and administrators registered in your DigitalChalk account
+- **list_high_performing_learners**: Identify enrollments with a grade above a certain percentage (mock logic)
+- **list_recent_course_completions**: Identify enrollments that have been recently completed (mock logic)
+- **search_users_by_identity**: Search for a user by their full name or email address
 - **get_user_learning_profile**: Get full profile and enrollment history for a specific user
 - **list_user_enrollments**: List all courses a specific user is currently enrolled in
 

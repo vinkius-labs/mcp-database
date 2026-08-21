@@ -33,16 +33,16 @@ Integrate **DISQO**, the leading consumer insights and behavioral data platform,
 
 
 ## Available Tools (10)
+- **list_consumer_insights**: List available consumer insights and behavioral reports
+- **list_running_research_projects**: Identify research projects that are currently in the data collection phase
 - **get_platform_metadata**: Retrieve metadata and usage limits for your DISQO account
 - **get_project_details**: Get detailed settings and status for a specific DISQO project
-- **quick_behavioral_audit**: Retrieve a high-level summary of the most active behavioral metrics
-- **list_running_research_projects**: Identify research projects that are currently in the data collection phase
 - **list_research_audiences**: List all defined consumer audiences available for research
-- **list_consumer_insights**: List available consumer insights and behavioral reports
-- **list_behavioral_metrics**: List behavioral metrics and data points tracked by DISQO
+- **quick_behavioral_audit**: Retrieve a high-level summary of the most active behavioral metrics
 - **list_insight_projects**: List all consumer insight projects in your DISQO account
 - **list_largest_research_panels**: Identify audience segments with the highest number of available panelists
 - **search_insights_by_keyword**: Search for specific consumer insights or reports using a keyword
+- **list_behavioral_metrics**: List behavioral metrics and data points tracked by DISQO
 
 
 ## 💬 Prompt Examples

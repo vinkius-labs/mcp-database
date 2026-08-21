@@ -36,30 +36,30 @@ Integrate **Dashdoc**, the leading transport management system (TMS), directly i
 - **create_new_address**: Persists site metadata including name, city, and postal code, returning the newly generated system ID for the address.
 
 Add a new address to your Dashdoc address book
-- **list_fleet_trucks**: Includes license plates, vehicle types, maximum load capacity, and current operational status.
+- **get_transport_details**: Resolves internal IDs to human-readable names, including full site addresses, contact phone numbers, specific cargo items, and historical status logs.
 
-List all trucks in your fleet
+Get detailed information for a specific transport order
+- **list_fleet_drivers**: Returns driver profiles including internal identifiers, professional names, and link to associated vehicle units.
+
+List all drivers registered in the system
 - **search_transports_by_reference**: Matches the provided reference keyword against transport-level identifiers and customer references using case-insensitive partial matching.
 
 Search for transport orders by reference keyword
+- **list_fleet_trucks**: Includes license plates, vehicle types, maximum load capacity, and current operational status.
+
+List all trucks in your fleet
 - **get_my_user_info**: Returns account-level metadata including user ID, role, and associated fleet/company configuration.
 
 Retrieve metadata for the current authenticated user
 - **list_transports**: Returns transport metadata including status (e.g., requested, confirmed, ongoing, done), pickup/delivery references, customer IDs, and scheduling timestamps.
 
 List all transport orders in Dashdoc
-- **get_transport_details**: Resolves internal IDs to human-readable names, including full site addresses, contact phone numbers, specific cargo items, and historical status logs.
-
-Get detailed information for a specific transport order
 - **list_saved_addresses**: Returns a collection of site objects with GPS coordinates, technical contact details, and site-specific instructions (e.g., gate codes, loading bay requirements).
 
 List all saved delivery and pickup addresses
 - **list_transport_contacts**: Resolves business partner identities, including legal names, tax identifiers, and primary communication channels for logistics coordination.
 
 List contacts and business partners
-- **list_fleet_drivers**: Returns driver profiles including internal identifiers, professional names, and link to associated vehicle units.
-
-List all drivers registered in the system
 - **list_fleet_trailers**: Returns metadata such as trailer type (e.g., refrigerated, tautliner), registration numbers, and fleet assignment status.
 
 List all trailers in your fleet

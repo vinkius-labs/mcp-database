@@ -33,14 +33,14 @@ Integrate **Duda**, the professional website builder for agencies and SaaS, dire
 
 
 ## Available Tools (10)
-- **get_client_account_profile**: Get full profile and permission data for a specific client account
+- **list_site_collections**: List all dynamic data collections associated with a specific site
 - **quick_site_health_audit**: Retrieve a high-level summary of site activity and publishing rates
+- **get_client_account_profile**: Get full profile and permission data for a specific client account
 - **get_site_details**: Get detailed settings and information for a specific Duda site
 - **get_template_details**: Get detailed information for a specific Duda template
 - **list_client_accounts**: List all client accounts registered in your Duda organization
-- **list_site_collections**: List all dynamic data collections associated with a specific site
-- **list_published_websites**: Identify sites that are currently in a "Published" status
 - **list_duda_sites**: List all websites configured in your Duda account
+- **list_published_websites**: Identify sites that are currently in a "Published" status
 - **list_site_templates**: List all available Duda website templates
 - **search_sites_by_domain**: Search for a Duda site using a domain or name keyword
 

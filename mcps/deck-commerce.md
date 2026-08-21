@@ -33,36 +33,36 @@ Integrate **Deck Commerce**, the leading order management system (OMS) for direc
 
 
 ## Available Tools (10)
+- **get_shipment_tracking**: Resolves carrier status updates, delivery estimates, and current shipment location.
+
+Get tracking and shipping details for a specific shipment
+- **list_available_inventory**: Returns a list of SKUs with their total available-to-sell, on-hand, and reserved quantities across all nodes.
+
+List current inventory levels across all items
+- **list_backordered_items**: Identifies products where demand exceeds current on-hand availability.
+
+List all items currently on backorder (mock logic)
+- **search_orders_by_number**: Matches keywords against order numbers, customer names, and email addresses to isolate specific OMS records.
+
+Search for orders using an order number or customer info
 - **list_processed_shipments**: Returns shipment metadata including carrier information, tracking numbers, and fulfillment timestamps.
 
 List all shipments processed by Deck Commerce
 - **get_account_metadata**: Returns account-level metadata such as organization name, active integrations, and system configuration.
 
 Retrieve settings and metadata for your Deck Commerce account
-- **get_sku_stock_level**: Provides a detailed breakdown of quantities at individual fulfillment nodes and identifies current inventory status.
-
-Get current stock level and status for a specific SKU
 - **get_order_details**: Resolves line item details, shipping addresses, tax information, and the full order history trail.
 
 Get detailed information for a specific order
-- **get_shipment_tracking**: Resolves carrier status updates, delivery estimates, and current shipment location.
+- **get_sku_stock_level**: Provides a detailed breakdown of quantities at individual fulfillment nodes and identifies current inventory status.
 
-Get tracking and shipping details for a specific shipment
-- **list_backordered_items**: Identifies products where demand exceeds current on-hand availability.
-
-List all items currently on backorder (mock logic)
+Get current stock level and status for a specific SKU
 - **list_oms_orders**: Returns order metadata including order numbers, current status, and customer identifiers.
 
 List all customer orders in your Deck Commerce OMS
 - **list_order_returns**: Returns a list of return requests including return reasons, RMA numbers, and current processing state.
 
 List all customer returns and their processing status
-- **search_orders_by_number**: Matches keywords against order numbers, customer names, and email addresses to isolate specific OMS records.
-
-Search for orders using an order number or customer info
-- **list_available_inventory**: Returns a list of SKUs with their total available-to-sell, on-hand, and reserved quantities across all nodes.
-
-List current inventory levels across all items
 
 
 ## 💬 Prompt Examples

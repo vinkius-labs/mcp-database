@@ -33,16 +33,16 @@ Integrate **Diese**, the comprehensive cloud-based ERP software, directly into y
 
 
 ## Available Tools (10)
+- **get_project_details**: Get detailed information for a specific ERP project
+- **list_erp_projects**: List all active and archived projects in your Diese account
 - **list_overdue_erp_tasks**: Identify project tasks that have passed their deadline (mock logic)
+- **search_projects_by_name**: Search for a project using a name keyword
 - **list_resource_planning**: List scheduled planning entries and resource allocations
 - **get_account_metadata**: Retrieve metadata and usage limits for your Diese account
-- **get_project_details**: Get detailed information for a specific ERP project
-- **list_erp_contacts**: List all business contacts and partners in the system
 - **list_business_expenses**: List all recorded business expenses and their approval status
+- **list_erp_contacts**: List all business contacts and partners in the system
 - **list_sales_invoices**: List all generated sales invoices and their payment status
-- **list_erp_projects**: List all active and archived projects in your Diese account
 - **list_project_tasks**: List pending and completed tasks across all projects
-- **search_projects_by_name**: Search for a project using a name keyword
 
 
 ## 💬 Prompt Examples
