@@ -36,11 +36,11 @@ Connect your **Flowcode** account to any AI agent and automate your offline-to-o
 
 
 ## Available Tools (12)
-- **get_flowpage_contacts**: Get CRM contacts
 - **create_flowcode**: Create a dynamic QR code
+- **get_flowpage_contacts**: Get CRM contacts
 - **get_audience_summary**: Get audience demographics
-- **get_flowcode_image**: Generate QR code image
 - **get_flowcode**: Get Flowcode details
+- **get_flowcode_image**: Generate QR code image
 - **get_flowpage_analytics**: Get landing page events
 - **get_geographic_analytics**: Get scan locations
 - **get_recent_scans**: List scan activity log

@@ -33,16 +33,16 @@ Integrate **Everfit**, the leading software platform for fitness coaches and per
 
 
 ## Available Tools (10)
-- **get_everfit_account_metadata**: Retrieve metadata and limits for your Everfit business account
-- **get_client_performance_metrics**: Get high-level performance and health metrics for a client
 - **get_client_detailed_profile**: Get detailed profile and fitness metrics for a specific client
-- **quick_coaching_volume_audit**: Retrieve a high-level summary of clients, programs, and active trainers
-- **list_currently_active_clients**: Identify clients who are currently in an "Active" coaching status
+- **get_everfit_account_metadata**: Retrieve metadata and limits for your Everfit business account
 - **list_client_daily_tasks**: List all daily tasks and habit tracking for a specific client
+- **list_client_workout_plans**: List all workout plans and assigned routines for a specific client
+- **list_coaching_trainers**: List all trainers and coaching staff in your organization
+- **quick_coaching_volume_audit**: Retrieve a high-level summary of clients, programs, and active trainers
+- **get_client_performance_metrics**: Get high-level performance and health metrics for a client
+- **list_currently_active_clients**: Identify clients who are currently in an "Active" coaching status
 - **list_coaching_clients**: List all clients managed in your Everfit coaching account
 - **list_coaching_programs**: List all coaching programs and templates available in your account
-- **list_coaching_trainers**: List all trainers and coaching staff in your organization
-- **list_client_workout_plans**: List all workout plans and assigned routines for a specific client
 
 
 ## 💬 Prompt Examples

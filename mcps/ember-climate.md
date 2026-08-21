@@ -39,21 +39,21 @@ No more manual CSV downloads or spreadsheet wrangling. Your AI becomes an instan
 
 
 ## Available Tools (11)
+- **get_api_options**: Use dataset (e.g., "electricity-generation"), temporal_resolution (e.g., "monthly", "yearly"), and filter_name (e.g., "entity", "series", "entity_code", "date", "year"). This tool is useful for discovering valid country codes, energy source types, and available date ranges before making specific data queries.
+
+Get available filter options for Ember electricity datasets
 - **get_carbon_intensity_yearly**: Use entity or entity_code to filter by country (e.g., "Brazil", "DE", "US"). Use start_date and end_date with format YYYY (e.g., "2020", "2023"). Returns emissions intensity data showing how clean or polluting the electricity grid is over time.
 
 Get yearly carbon intensity of electricity generation for countries/regions
 - **get_electricity_demand_monthly**: Use entity or entity_code to filter by country (e.g., "Brazil", "DE", "US"). Use start_date and end_date with format YYYY-MM (e.g., "2023-01", "2024-12"). Useful for analyzing seasonal demand patterns, peak consumption periods, and demand forecasting.
 
 Get monthly electricity demand data for countries/regions
-- **get_electricity_generation_monthly**: ). Returns generation in TWh and percentage share of total generation for each source. Use entity or entity_code to filter by country (e.g., "Brazil", "DE", "US"). Use start_date and end_date with format YYYY-MM (e.g., "2023-01", "2024-12"). Use series to filter by specific energy sources (e.g., "coal", "wind", "solar", "hydro", "nuclear", "gas"). Perfect for analyzing seasonal generation patterns, renewable intermittency, and monthly energy mix changes.
-
-Get monthly electricity generation by source for countries/regions
-- **get_carbon_intensity_monthly**: Use entity or entity_code to filter by country (e.g., "Brazil", "DE", "US"). Use start_date and end_date with format YYYY-MM (e.g., "2023-01", "2024-12"). This helps analyze seasonal patterns in grid carbon footprint and track monthly decarbonization progress.
-
-Get monthly carbon intensity of electricity generation for countries/regions
 - **get_electricity_demand_yearly**: Use entity or entity_code to specify countries (e.g., "Brazil", "DE", "US"). Use start_date and end_date with format YYYY (e.g., "2020", "2023"). Essential for understanding energy consumption trends and comparing per-capita usage across nations.
 
 Get yearly electricity demand data for countries/regions
+- **get_electricity_generation_monthly**: ). Returns generation in TWh and percentage share of total generation for each source. Use entity or entity_code to filter by country (e.g., "Brazil", "DE", "US"). Use start_date and end_date with format YYYY-MM (e.g., "2023-01", "2024-12"). Use series to filter by specific energy sources (e.g., "coal", "wind", "solar", "hydro", "nuclear", "gas"). Perfect for analyzing seasonal generation patterns, renewable intermittency, and monthly energy mix changes.
+
+Get monthly electricity generation by source for countries/regions
 - **get_electricity_generation_yearly**: ). Returns generation in TWh and percentage share of total generation for each source. Use entity or entity_code to filter by country (e.g., "Brazil", "DE", "US"). Use start_date and end_date with format YYYY (e.g., "2020", "2023"). Use series to filter by specific energy sources (e.g., "coal", "wind", "solar", "hydro", "nuclear", "gas"). Essential for analyzing energy transition, renewable adoption, and fossil fuel phase-out progress.
 
 Get yearly electricity generation by source for countries/regions
@@ -63,15 +63,15 @@ Get electricity generation data for multiple countries simultaneously
 - **get_installed_capacity_monthly**: Use entity or entity_code to filter by country (e.g., "Brazil", "DE", "US"). Use start_date and end_date with format YYYY-MM (e.g., "2023-01", "2024-12"). Use series to filter by capacity type (e.g., "wind", "solar"). Tracks renewable infrastructure deployment and capacity growth over time across different nations.
 
 Get monthly installed power capacity (wind and solar) for countries
-- **get_api_options**: Use dataset (e.g., "electricity-generation"), temporal_resolution (e.g., "monthly", "yearly"), and filter_name (e.g., "entity", "series", "entity_code", "date", "year"). This tool is useful for discovering valid country codes, energy source types, and available date ranges before making specific data queries.
-
-Get available filter options for Ember electricity datasets
 - **get_power_sector_emissions_monthly**: Use entity or entity_code to filter by country (e.g., "Brazil", "DE", "US"). Use start_date and end_date with format YYYY-MM (e.g., "2023-01", "2024-12"). Use series parameter to filter by emission types (e.g., "co2"). Enables granular tracking of monthly emission trends and seasonal variations in power sector pollution.
 
 Get monthly power sector CO2 emissions for countries/regions
 - **get_power_sector_emissions_yearly**: Use entity or entity_code to filter by country (e.g., "Brazil", "DE", "US"). Use start_date and end_date with format YYYY (e.g., "2020", "2023"). Use series parameter to filter by emission types (e.g., "co2"). Critical for tracking national decarbonization progress and climate policy effectiveness.
 
 Get yearly power sector CO2 emissions for countries/regions
+- **get_carbon_intensity_monthly**: Use entity or entity_code to filter by country (e.g., "Brazil", "DE", "US"). Use start_date and end_date with format YYYY-MM (e.g., "2023-01", "2024-12"). This helps analyze seasonal patterns in grid carbon footprint and track monthly decarbonization progress.
+
+Get monthly carbon intensity of electricity generation for countries/regions
 
 
 ## 💬 Prompt Examples

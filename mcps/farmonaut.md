@@ -50,30 +50,30 @@ Register a new agricultural field for satellite monitoring
 - **get_deforestation_alerts**: Uses satellite imagery to detect tree cover loss, land clearing, and vegetation changes over time. Essential for conservation compliance, environmental monitoring, carbon credit verification, and land use change detection. AI agents should reference this when users ask "show deforestation alerts in my area", "detect land use changes", or need environmental compliance monitoring.
 
 Get deforestation and land change detection alerts
-- **get_evi**: EVI is more sensitive in high-biomass regions and less affected by atmospheric conditions and soil background than NDVI. Essential for monitoring dense canopies, tropical crops, and areas with high atmospheric interference. Returns EVI values, statistics, satellite source, and acquisition dates. AI agents should use this when users ask "show me EVI trends for this field", "how is the canopy developing in high-biomass areas", or need enhanced vegetation index analysis for dense vegetation.
-
-Calculate EVI enhanced vegetation index for high-biomass crop monitoring
-- **get_fields**: Returns field names, boundaries (GeoJSON polygons), area in hectares/acres, crop type, planting dates, and current monitoring status. Essential for farm management overview, field inventory, and selecting target fields for satellite analysis. AI agents should use this when users ask "show me all my fields", "list monitored fields", or need to identify available fields for vegetation index or weather queries.
-
-List all agricultural fields monitored in your Farmonaut account
 - **get_ndvi**: NDVI measures vegetation health and vigor on a scale of -1 to 1, with higher values indicating healthier vegetation. Returns NDVI values, statistics (mean, min, max, std), satellite source, acquisition date, and cloud cover percentage. Essential for crop health assessment, growth stage monitoring, stress detection, and yield prediction. AI agents should use this when users ask "what is the NDVI for my rice field this month", "calculate vegetation health for field X", or need NDVI-based crop health analysis.
 
 Calculate NDVI vegetation index for crop health monitoring
 - **get_ndwi**: NDWI is sensitive to vegetation water content and soil moisture, making it essential for irrigation scheduling, drought monitoring, and water stress detection. Returns NDWI values, statistics, satellite source, and acquisition dates. AI agents should reference this when users ask "what is the water content in my crops", "do I need to irrigate", or need water stress analysis for irrigation planning.
 
 Calculate NDWI water index for crop water stress and irrigation monitoring
-- **get_sar_analysis**: SAR penetrates clouds and works day/night, making it essential for monitoring in cloudy or rainy conditions. Returns backscatter values, soil moisture estimates, crop structure information, and change detection analysis. Essential for all-weather monitoring, flood detection, soil moisture mapping, and crop structure analysis. AI agents should use this when users ask "get SAR analysis for my field during cloudy season", "monitor crops through cloud cover", or need all-weather satellite analysis.
-
-Get Synthetic Aperture Radar (SAR) analysis for all-weather crop monitoring
 - **get_satellite_images**: Returns true-color and false-color composites, NDVI overlays, and raw spectral bands. Essential for visual crop assessment, change detection, damage assessment, and downloading imagery for further processing. AI agents should reference this when users ask "show me satellite images of my field from last week", "get latest Sentinel-2 imagery", or need satellite imagery for visual assessment.
 
 Retrieve satellite imagery for agricultural fields from multiple sources
-- **get_weather**: Includes temperature (air, soil), precipitation, humidity, wind speed/direction, solar radiation, evapotranspiration, and growing degree days. Essential for irrigation planning, frost risk assessment, disease/pest pressure modeling, and yield prediction. AI agents should use this when users ask "what was the weather like on my field last month", "get temperature and rainfall data", or need historical weather analysis for crop management decisions.
-
-Get historical and current weather data for agricultural fields
 - **get_soil_moisture**: Returns soil moisture levels at different depths (surface, root zone, deep soil), moisture anomalies, and irrigation recommendations. Essential for irrigation scheduling, drought monitoring, water stress detection, and water resource optimization. AI agents should use this when users ask "what is the soil moisture level in my field", "do I need to irrigate", or need soil moisture data for irrigation planning.
 
 Get soil moisture data for irrigation scheduling and drought monitoring
+- **get_evi**: EVI is more sensitive in high-biomass regions and less affected by atmospheric conditions and soil background than NDVI. Essential for monitoring dense canopies, tropical crops, and areas with high atmospheric interference. Returns EVI values, statistics, satellite source, and acquisition dates. AI agents should use this when users ask "show me EVI trends for this field", "how is the canopy developing in high-biomass areas", or need enhanced vegetation index analysis for dense vegetation.
+
+Calculate EVI enhanced vegetation index for high-biomass crop monitoring
+- **get_fields**: Returns field names, boundaries (GeoJSON polygons), area in hectares/acres, crop type, planting dates, and current monitoring status. Essential for farm management overview, field inventory, and selecting target fields for satellite analysis. AI agents should use this when users ask "show me all my fields", "list monitored fields", or need to identify available fields for vegetation index or weather queries.
+
+List all agricultural fields monitored in your Farmonaut account
+- **get_sar_analysis**: SAR penetrates clouds and works day/night, making it essential for monitoring in cloudy or rainy conditions. Returns backscatter values, soil moisture estimates, crop structure information, and change detection analysis. Essential for all-weather monitoring, flood detection, soil moisture mapping, and crop structure analysis. AI agents should use this when users ask "get SAR analysis for my field during cloudy season", "monitor crops through cloud cover", or need all-weather satellite analysis.
+
+Get Synthetic Aperture Radar (SAR) analysis for all-weather crop monitoring
+- **get_weather**: Includes temperature (air, soil), precipitation, humidity, wind speed/direction, solar radiation, evapotranspiration, and growing degree days. Essential for irrigation planning, frost risk assessment, disease/pest pressure modeling, and yield prediction. AI agents should use this when users ask "what was the weather like on my field last month", "get temperature and rainfall data", or need historical weather analysis for crop management decisions.
+
+Get historical and current weather data for agricultural fields
 - **get_crop_advisory**: Returns recommendations for irrigation, fertilization, pest control, harvest timing, and field operations. Essential for data-driven farm management, precision agriculture, and optimizing crop inputs. AI agents should use this when users ask "what should I do in my field this week", "get irrigation and fertilizer recommendations", or need AI-powered crop management advice.
 
 Get AI-powered crop management advisories and recommendations

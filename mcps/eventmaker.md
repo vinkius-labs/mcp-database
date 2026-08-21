@@ -34,12 +34,12 @@ Integrate **Eventmaker**, the comprehensive event management software, directly 
 
 ## Available Tools (10)
 - **get_eventmaker_account_metadata**: Retrieve metadata and limits for your Eventmaker account
-- **get_event_performance_stats**: Get high-level performance metrics for a specific event
 - **get_event_detailed_data**: Get detailed settings and information for a specific event
+- **get_event_performance_stats**: Get high-level performance metrics for a specific event
+- **list_all_events**: List all events managed in your Eventmaker account
 - **quick_event_engagement_audit**: Retrieve a high-level summary of participants and check-ins
 - **list_currently_ongoing_events**: Identify events that are currently active or ongoing
 - **list_event_checkins_log**: List all check-in events and logs for a specific event
-- **list_all_events**: List all events managed in your Eventmaker account
 - **list_event_exhibitors**: List all exhibitors and partners for a specific event
 - **list_event_participants**: List all registered participants for a specific event
 - **list_event_sessions**: List all sessions and schedule items for a specific event

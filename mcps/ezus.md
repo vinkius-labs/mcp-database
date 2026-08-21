@@ -34,18 +34,18 @@ Connect your **Ezus** travel management account to any AI agent and take full co
 
 
 ## Available Tools (12)
-- **list_suppliers**: List all Ezus suppliers
-- **get_client**: Get a specific Ezus client by ID
 - **list_projects**: List all Ezus projects
+- **get_client**: Get a specific Ezus client by ID
 - **get_invoice**: Get a specific Ezus invoice by ID
+- **list_invoices**: List all Ezus invoices
+- **list_suppliers**: List all Ezus suppliers
+- **upsert_project**: Create or update an Ezus project
 - **get_me**: Get current Ezus user profile
 - **get_product**: Get a specific Ezus product by ID
 - **get_project**: Get a specific Ezus project by ID
 - **get_supplier**: Get a specific Ezus supplier by ID
 - **list_clients**: List all Ezus clients
-- **list_invoices**: List all Ezus invoices
 - **list_products**: List all Ezus products
-- **upsert_project**: Create or update an Ezus project
 
 
 ## 💬 Prompt Examples

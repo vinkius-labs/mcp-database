@@ -23,15 +23,15 @@ Energy strategists, government planners, investment analysts, climate modelers, 
 
 
 ## Available Tools (4)
+- **get_international_outlook**: Covers globalThis production, consumption, and emissions by region and fuel.
+
+Get IEO: international energy projections
 - **get_short_term_outlook**: Published monthly by EIA. Data range: 1974 to 2027.
 
 Get STEO: 18-month U.S. energy price and supply projections
 - **get_annual_outlook**: S. energy production, consumption, prices, and emissions using the National Energy Modeling System (NEMS). Includes reference case and side cases.
 
 Get AEO: 30-year U.S. energy projections
-- **get_international_outlook**: Covers globalThis production, consumption, and emissions by region and fuel.
-
-Get IEO: international energy projections
 - **get_international_data**: Get country-level energy production, consumption, and emissions
 
 

@@ -33,13 +33,13 @@ Integrate **Envoke**, the powerful and intuitive email marketing and communicati
 
 
 ## Available Tools (10)
-- **get_campaign_performance_stats**: Get performance statistics for a specific email campaign
 - **get_campaign_details**: Get detailed settings and status for a specific email campaign
 - **get_contact_profile**: Get full profile and history for a specific contact
 - **quick_marketing_volume_audit**: Retrieve a high-level summary of campaign activity and list counts
 - **list_contact_address_lists**: List all contact lists configured in your account
 - **list_email_campaigns**: List all email marketing campaigns in your Envoke account
 - **list_marketing_contacts**: List all contacts registered in your organization
+- **get_campaign_performance_stats**: Get performance statistics for a specific email campaign
 - **get_envoke_account_metadata**: Retrieve metadata and limits for your Envoke account
 - **list_successfully_sent_campaigns**: Identify campaigns that have already been sent to subscribers
 - **search_contacts_by_email**: Search for a contact using their email address

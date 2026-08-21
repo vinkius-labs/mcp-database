@@ -40,8 +40,8 @@ Integrate **eCompliance**, the leading EHS (Environment, Health, and Safety) man
 - **get_incident_details**: Get detailed information and investigation status for a specific incident
 - **get_inspection_details**: Get detailed results and findings for a specific inspection
 - **quick_safety_health_audit**: Retrieve a high-level summary of incident and inspection activity
-- **list_safety_inspections**: List all safety inspections and audits performed at the site
 - **list_latest_incidents**: Identify the most recently reported safety incidents
+- **list_safety_inspections**: List all safety inspections and audits performed at the site
 - **search_safety_incidents**: Search for incidents using a title or description keyword
 
 

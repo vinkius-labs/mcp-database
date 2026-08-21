@@ -39,8 +39,8 @@ Integrate **Eventee**, the leading mobile-first event management platform, direc
 - **list_currently_active_events**: Identify events that are currently taking place
 - **list_event_registered_attendees**: List all registered attendees for a specific event
 - **list_all_events**: List all events managed in your Eventee account
-- **list_event_partners_and_sponsors**: List all partners and sponsors for a specific event
 - **list_event_audience_questions**: List all questions submitted by the audience for a specific event
+- **list_event_partners_and_sponsors**: List all partners and sponsors for a specific event
 - **list_event_sessions**: List all sessions and schedule items for a specific event
 - **list_event_speakers**: List all speakers registered for a specific event
 

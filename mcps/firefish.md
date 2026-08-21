@@ -36,11 +36,8 @@ Connect your **Firefish** account to any AI agent and automate your recruitment 
 
 
 ## Available Tools (12)
-- **create_candidate**: Create a new candidate
 - **get_candidate**: Get candidate details
 - **get_company**: Get company details
-- **get_job**: Get job details
-- **list_actions**: List actions
 - **list_candidates**: List candidates
 - **list_companies**: List companies
 - **list_contacts**: List contacts
@@ -48,6 +45,9 @@ Connect your **Firefish** account to any AI agent and automate your recruitment 
 - **list_placements**: List placements
 - **get_contact**: Get contact details
 - **list_adverts**: List job adverts
+- **create_candidate**: Create a new candidate
+- **get_job**: Get job details
+- **list_actions**: List actions
 
 
 ## 💬 Prompt Examples

@@ -29,10 +29,7 @@ Connect your **Fluxguard** account to any AI agent to automate website change mo
 
 
 ## Available Tools (12)
-- **acknowledge_alert**: Mark alert as reviewed
-- **add_page**: Add URL for monitoring
 - **list_categories**: List monitoring categories
-- **list_changes**: List detected changes
 - **list_sites**: List monitored sites
 - **list_snapshots**: List site snapshots
 - **create_category**: Create a new category
@@ -41,6 +38,9 @@ Connect your **Fluxguard** account to any AI agent to automate website change mo
 - **get_site**: Get site details
 - **initiate_crawl**: Manually trigger a crawl
 - **list_alerts**: List monitoring alerts
+- **acknowledge_alert**: Mark alert as reviewed
+- **add_page**: Add URL for monitoring
+- **list_changes**: List detected changes
 
 
 ## 💬 Prompt Examples
