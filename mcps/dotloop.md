@@ -35,16 +35,16 @@ Connect your AI agent to **Dotloop**, the leading real estate transaction manage
 
 
 ## Available Tools (10)
-- **list_profiles**: Retrieve all profiles (brokerages, associations, individual) associated with the user
-- **list_profile_contacts**: List all contacts in the user directory for a specific profile
 - **list_folder_documents**: List all documents within a specific loop folder
+- **list_profile_contacts**: List all contacts in the user directory for a specific profile
 - **add_loop_participant**: Add a new participant to a loop
-- **get_loop_details**: Get comprehensive information for a specific loop
-- **get_loop_activity**: Retrieve the activity log for a specific loop
 - **list_loop_folders**: List all document folders within a specific loop
 - **list_loops**: List all real estate transactions (loops) for a specific profile
-- **list_loop_participants**: List all participants (buyers, sellers, agents) in a specific loop
 - **list_loop_tasks**: List all tasks and checklists for a specific loop
+- **get_loop_activity**: Retrieve the activity log for a specific loop
+- **get_loop_details**: Get comprehensive information for a specific loop
+- **list_loop_participants**: List all participants (buyers, sellers, agents) in a specific loop
+- **list_profiles**: Retrieve all profiles (brokerages, associations, individual) associated with the user
 
 
 ## 💬 Prompt Examples

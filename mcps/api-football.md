@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your football tracking and fan engagement w
 
 
 ## Available Tools (8)
-- **get_fixtures**: List match fixtures
 - **get_league_topscorers**: Get top scorers
-- **get_player_info**: Get player statistics
 - **get_standings**: Get league standings
 - **get_team_info**: Get team details
 - **list_leagues**: List football leagues
 - **list_live_fixtures**: Get live matches
 - **search_football_teams**: Search for teams
+- **get_fixtures**: List match fixtures
+- **get_player_info**: Get player statistics
 
 
 ## 💬 Prompt Examples

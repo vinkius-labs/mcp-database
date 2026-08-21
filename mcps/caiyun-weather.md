@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your environmental monitoring and high-prec
 
 
 ## Available Tools (8)
+- **get_aqi_info**: Get air quality index
+- **get_daily_forecast**: Get daily weather forecast
 - **get_hourly_forecast**: Get hourly weather forecast
-- **get_minutely_rain**: Get minute-precision rain
 - **get_precipitation_probability**: Check rain probability
+- **get_minutely_rain**: Get minute-precision rain
 - **get_realtime_weather**: Get real-time weather
 - **get_visibility_data**: Get visibility distance
 - **get_wind_conditions**: Get wind speed and direction
-- **get_aqi_info**: Get air quality index
-- **get_daily_forecast**: Get daily weather forecast
 
 
 ## 💬 Prompt Examples

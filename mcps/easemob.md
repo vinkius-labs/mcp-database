@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your real-time communication infrastructure
 
 
 ## Available Tools (10)
-- **add_group_member**: Add group member
 - **create_group**: Create chat group
+- **register_user**: Register a new IM user
+- **add_group_member**: Add group member
 - **delete_user**: Delete IM user
 - **get_chat_history**: Get chat history
 - **get_group**: Get group details
 - **get_user**: Get user details
 - **list_groups**: List chat groups
 - **list_users**: List IM users
-- **register_user**: Register a new IM user
 - **send_text_message**: Send text message
 
 

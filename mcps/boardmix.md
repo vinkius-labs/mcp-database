@@ -36,16 +36,16 @@ Empower your AI agent to orchestrate your visual collaboration with **BoardMix**
 
 
 ## Available Tools (10)
-- **create_file**: Create a new whiteboard
 - **get_comments**: Get whiteboard comments
 - **get_file**: Get whiteboard file details
 - **get_org_info**: Get organization details
 - **list_files**: List all BoardMix files
-- **list_nodes**: List whiteboard nodes
 - **list_team_projects**: List team projects
 - **list_teams**: List available teams
-- **list_templates**: List whiteboard templates
+- **create_file**: Create a new whiteboard
 - **get_file_versions**: Get file version history
+- **list_nodes**: List whiteboard nodes
+- **list_templates**: List whiteboard templates
 
 
 ## 💬 Prompt Examples

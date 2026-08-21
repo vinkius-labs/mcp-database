@@ -45,9 +45,6 @@ Get a specific complaint by ID
 - **get_complaints_by_issue**: Common issues: "Incorrect information", "Problem with a purchase", "Attempts to collect debt not owed".
 
 Get complaints for a specific issue type
-- **get_complaints_by_product**: Common products: "Mortgage", "Debt collection", "Credit card", "Student loan", "Credit reporting".
-
-Get complaints for a specific product type
 - **get_complaints_by_state**: Returns complaint details including products, companies, issues and dates.
 
 Get complaints from a specific US state
@@ -57,6 +54,9 @@ Get complaint count statistics
 - **get_complaints_with_narrative**: Supports filtering by product, company and state.
 
 Get complaints that include consumer narratives (detailed descriptions)
+- **get_complaints_by_product**: Common products: "Mortgage", "Debt collection", "Credit card", "Student loan", "Credit reporting".
+
+Get complaints for a specific product type
 - **get_recent_complaints**: Useful for tracking recent complaint trends.
 
 Get the most recent consumer complaints

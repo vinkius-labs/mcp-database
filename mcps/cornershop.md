@@ -34,20 +34,24 @@ Connect your **Cornershop by Uber** B2B account to any AI agent and manage your 
 
 
 ## Available Tools (14)
+- **get_product**: Get details of a specific product
 - **list_orders**: List your delivery orders
 - **list_shoppers**: Get information about the assigned Shopper
-- **cancel_order**: Note: Orders can only be cancelled without penalty if the shopper hasn't started picking.
-
-Cancel a pending order
 - **list_store_aisles**: List categories and aisles of a store
 - **list_stores**: g. Jumbo, Lider, pharmacies). Can be geographically filtered by latitude and longitude.
 
 List available grocery stores and partners
-- **list_webhooks**: List configured order webhooks
 - **search_products**: Returns matching SKUs, names, current pricing, and availability.
 
 Search for specific groceries and products
+- **update_order**: Useful for last-minute replacements or additions.
+
+Update an active order (e.g. add/remove items)
+- **cancel_order**: Note: Orders can only be cancelled without penalty if the shopper hasn't started picking.
+
+Cancel a pending order
 - **track_order**: Get real-time tracking for a delivery
+- **list_webhooks**: List configured order webhooks
 - **create_order**: Requires a JSON string defining the cart (product IDs, quantities) and delivery address details.
 
 Place a new delivery order
@@ -55,11 +59,7 @@ Place a new delivery order
 
 Create a new explicit webhook
 - **get_order**: Get full details of a specific order
-- **get_product**: Get details of a specific product
 - **get_store**: Get details of a specific store branch
-- **update_order**: Useful for last-minute replacements or additions.
-
-Update an active order (e.g. add/remove items)
 
 
 ## 💬 Prompt Examples

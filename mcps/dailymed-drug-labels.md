@@ -34,9 +34,9 @@ Equip your AI agent with the official source for FDA-published drug labels throu
 
 
 ## Available Tools (3)
+- **get_drug_details**: Get detailed info for a drug
 - **list_drug_classes**: List drug classes
 - **search_drugs**: Search for drugs by name
-- **get_drug_details**: Get detailed info for a drug
 
 
 ## 💬 Prompt Examples

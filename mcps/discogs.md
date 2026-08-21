@@ -38,36 +38,36 @@ Unlock the power of the **Discogs** music database — the most comprehensive ca
 
 
 ## Available Tools (13)
+- **database_search**: Use the query parameter for free-text search across artists, releases, labels, and tracks. Refine results by type (artist, release, master, label, genre) and filters like genre, style, year, or country. Returns paginated results with basic metadata. Use this as the starting point for most queries. Type parameter accepts: artist, release, master, label, genre.
+
+Search the Discogs database for artists, releases, labels, and more
 - **get_artist**: Returns the artist name, real name, profile/biography, members (for groups), URLs, and images. Use this after identifying an artist ID from search results.
 
 Get detailed information about a specific artist
 - **get_artist_releases**: Includes albums, singles, compilations, and credits on other releases. Results are sorted by year and include format, label, and track count. Use pagination to navigate large discographies. Returns a comprehensive overview of an artist's recorded output.
 
 Get the complete discography of an artist
+- **get_marketplace_listings**: Returns seller information, price, currency, condition (media and sleeve), comments, and shipping location. Useful for finding the best deals, comparing conditions, or understanding market value. Sort by price, condition, or country. Filter by minimum/maximum condition.
+
+Get marketplace listings for a specific release
+- **get_release_stats**: Returns the lowest, median, and highest sale prices, as well as the number of active listings. Useful for understanding rarity, market demand, and fair pricing for collectors.
+
+Get community statistics and marketplace data for a release
+- **get_user_collection**: Returns each release with basic metadata including artist, title, year, and format. Note: only the collection owner can see detailed information including condition, notes, and custom fields. Public collections show limited data. Use pagination to navigate large collections.
+
+Get a user's collection of releases
 - **get_label**: Returns the label name, profile/description, parent label, sublabels, contact info, and associated releases. Use this to research label history, corporate structures, and catalog organization.
 
 Get information about a record label
 - **get_label_releases**: Returns release titles, artists, formats, catalog numbers, and release dates. Useful for researching a label's catalog, identifying rare pressings, or exploring a label's musical output. Use pagination to navigate large catalogs.
 
 Get releases published by a specific label
-- **get_marketplace_listings**: Returns seller information, price, currency, condition (media and sleeve), comments, and shipping location. Useful for finding the best deals, comparing conditions, or understanding market value. Sort by price, condition, or country. Filter by minimum/maximum condition.
-
-Get marketplace listings for a specific release
 - **get_master_release_versions**: Each version represents a different pressing, reissue, or format of the same core release. Returns details including country, year, format, label, and catalog number for each version. Useful for collectors comparing different pressings or finding specific editions.
 
 Get all versions (pressings) of a master release
 - **get_release**: Returns the release title, artist, tracklist, formats, labels, catalog numbers, release date, country, genres, styles, credits, notes, and marketplace data. This is the most detailed view of a specific physical or digital release. Use this to get complete metadata for cataloging or research.
 
 Get detailed information about a specific release
-- **get_user_collection**: Returns each release with basic metadata including artist, title, year, and format. Note: only the collection owner can see detailed information including condition, notes, and custom fields. Public collections show limited data. Use pagination to navigate large collections.
-
-Get a user's collection of releases
-- **database_search**: Use the query parameter for free-text search across artists, releases, labels, and tracks. Refine results by type (artist, release, master, label, genre) and filters like genre, style, year, or country. Returns paginated results with basic metadata. Use this as the starting point for most queries. Type parameter accepts: artist, release, master, label, genre.
-
-Search the Discogs database for artists, releases, labels, and more
-- **get_release_stats**: Returns the lowest, median, and highest sale prices, as well as the number of active listings. Useful for understanding rarity, market demand, and fair pricing for collectors.
-
-Get community statistics and marketplace data for a release
 - **get_user_profile**: Returns the user's location, homepage, bio, member since date, number of contributions, and collection/wantlist counts. Use this to verify user identity or get an overview of a collector's activity on the platform.
 
 Get a Discogs user's public profile

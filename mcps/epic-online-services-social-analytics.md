@@ -33,10 +33,10 @@ Equip your AI agent with the power of the **Epic Online Services (EOS)** ecosyst
 
 
 ## Available Tools (8)
-- **get_account_details**: Get full profile for an Epic account by ID
 - **get_achievement_definitions**: List all achievements available in a game
 - **get_blocked_users**: List blocked users for an account
 - **get_friend_list**: List friends for an Epic account
+- **get_account_details**: Get full profile for an Epic account by ID
 - **get_game_leaderboard**: Get leaderboard rankings for a game
 - **get_player_achievements**: Get achievement progress for a player in a game
 - **get_player_presence**: Check if a player is online or in-game

@@ -36,13 +36,13 @@ Empower your AI agent to orchestrate your creative workflows with **Chuangkit** 
 
 ## Available Tools (8)
 - **get_asset_url**: Get asset download URL
-- **list_categories**: List template categories
 - **get_design_detail**: Get user design detail
+- **list_templates**: List design templates
+- **list_categories**: List template categories
 - **get_template**: Get template details
 - **list_materials**: ).
 
 List design materials
-- **list_templates**: List design templates
 - **list_user_designs**: List user designs
 - **search_templates**: Search templates by keyword
 

@@ -34,18 +34,18 @@ Connect your **Buk** organizational environment to any AI agent and oversee your
 
 ## Available Tools (14)
 - **get_department**: Get department details
-- **list_leaves**: List absence leaves
-- **list_vacations**: List scheduled vacations
 - **create_employee**: Onboard a new employee to system
 - **delete_employee**: Offboard an employee identity
 - **get_attendance**: Fetch daily attendance matrix
 - **get_payroll**: Get employee payroll snapshot
 - **list_benefits**: View available corporate extras
+- **approve_leave**: Authorize pending leaves
 - **get_company_stats**: Get company HR aggregate stats
+- **list_employees**: List all employees inside the Buk platform
+- **list_leaves**: List absence leaves
+- **list_vacations**: List scheduled vacations
 - **get_employee**: Get complete details of a specific talent
 - **list_departments**: List all organizational departments (cost centers)
-- **approve_leave**: Authorize pending leaves
-- **list_employees**: List all employees inside the Buk platform
 - **list_jobs**: List standard job roles
 
 

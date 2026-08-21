@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire political research and election
 
 
 ## Available Tools (4)
+- **check_api_status**: Check if the AP Elections API is operational
 - **get_race_details**: Get detailed results for a specific race ID
 - **get_election_results**: Get election results for a specific date (YYYY-MM-DD)
 - **list_election_candidates**: List all candidates participating in an election date
-- **check_api_status**: Check if the AP Elections API is operational
 
 
 ## 💬 Prompt Examples
