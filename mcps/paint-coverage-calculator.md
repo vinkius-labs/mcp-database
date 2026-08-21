@@ -7,16 +7,16 @@
 
 **Category:** [construction](../categories/construction.md)
 
-Calculate exact paint volumes for walls and ceilings, accounting for textures, openings, and waste.
+Calculate precise paint quantities, container counts, and costs for any surface.
 
 ## Description
-The Paint Coverage Calculator is a precision estimation engine designed to determine the exact amount of paint needed for any interior project. By inputting wall and ceiling dimensions, you can account for architectural deductions like doors and windows, surface textures such as smooth or textured walls, and the number of coats required. The tool also handles different paint chemistries including latex flat, eggshell, oil-based, and primer. It automatically calculates a 10% waste buffer to ensure you never run out of material mid-project. Use `calculate_wall_paint` for vertical surfaces, `calculate_ceiling_paint` for overhead areas, and `summarize_total_requirements` to get your final consolidated order quantity.
+This MCP server provides deterministic calculations for residential and commercial painting projects. It accounts for surface porosity (sealed, unsealed, or textured), architectural subtractions like windows and doors, and container sizing logic. Use `get_surface_requirements` to determine exactly how many cans you need to buy, `compare_surface_costs` to evaluate different paint brands, and `get_material_inventory_check` to see if your current paint stock covers the job.
 
 
 ## Available Tools (3)
-- **calculate_ceiling_paint**: Calculates the required volume of paint for flat ceiling surfaces
-- **calculate_wall_paint**: Calculates the required volume of paint for vertical wall surfaces
-- **summarize_total_requirements**: Aggregates all calculated volumes into a single final order quantity
+- **compare_surface_costs**: Evaluates the cost difference between different paint types or coverage scenarios
+- **get_material_inventory_check**: Determines if a user's existing paint stock is sufficient for a new project
+- **get_surface_requirements**: Calculates the specific volume of paint and container counts needed for a single defined surface type
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Paint Coverage Calculator is a precision estimation engine designed to deter
 Here are some examples of how you can interact with the **Paint Coverage Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "How much paint do I need for a wall that is 5m long and 3m high, with 1 door (2m x 0.8m) and 1 window (1m x 1m)? Use smooth texture and latex flat paint with 2 coats."
+> "How much paint do I need for a 12x10 foot wall that is unsealed, requiring 2 coats, with a coverage of 350 sq ft per gallon? I have 1 gallon containers available."
 
 **🤖 AI Agent:**
-> You will need approximately 0.34 liters (0.09 gallons) of latex flat paint for this wall.
+> You will need 1 gallon of paint for that wall.
 
 ---
 
 **👤 You:**
-> "Calculate the paint needed for a ceiling that is 4m by 4m, textured surface, using oil-based paint and 1 coat."
+> "I have 2 gallons of paint. Will this be enough for a project that requires 3.5 gallons?"
 
 **🤖 AI Agent:**
-> You will need approximately 0.48 liters (0.13 gallons) of oil-based paint for this ceiling.
+> No, you have a shortage of 1.5 gallons.
 
 ---
 
 **👤 You:**
-> "I have 2.5L for walls and 1.2L for ceilings. What is my total paint order including the waste buffer?"
+> "Compare a scenario where 5 gallons cost $30 each versus a scenario where 1 gallon costs $12 each for a 4-gallon requirement."
 
 **🤖 AI Agent:**
-> Your total required volume, including a 10% waste buffer, is 4.07 liters (1.08 gallons).
+> The 1-gallon scenario is cheaper by $8.
 
 
 ## ❓ FAQ
 
-**Q: How does the tool account for doors and windows?**
-The `calculate_wall_paint` tool subtracts the area of all doors and windows from the total wall area before calculating paint volume, ensuring you don't over-purchase.
+**Q: How does surface texture affect the calculation?**
+Textured surfaces increase the effective surface area, so the tool uses a higher multiplier to ensure you have enough paint to fill the physical profile of the texture.
 
-**Q: Does the calculation include a safety buffer?**
-Yes, the `summarize_total_requirements` tool automatically adds a 10% waste overhead to your total volume to account for roller absorption and spills.
+**Q: Can I compare the cost of two different paint brands?**
+Yes, you can use the `compare_surface_costs` tool to evaluate the total price difference between two different paint scenarios or brands.
 
-**Q: What surface types are supported?**
-The tool supports smooth, textured, and raw plaster surfaces. Each type applies a specific multiplier to the surface area to account for varying absorption rates.
+**Q: How does the tool handle container sizes?**
+The tool prioritizes larger containers to minimize waste and then calculates the remaining amount needed in smaller containers.
 
 
 ## Installation & Usage

@@ -36,20 +36,20 @@ No more manual connection sending in LinkedIn. Your AI acts as a dedicated sales
 
 
 ## Available Tools (12)
-- **add_linkedin_lead**: Add a new lead to a campaign
-- **get_campaign_performance**: Retrieve campaign analytics
 - **get_lead_outreach_details**: Get details for a specific prospect
 - **check_api_health**: Verify The Magic Drip API status
-- **get_authenticated_user_profile**: Get authenticated account info
 - **get_account_outreach_stats**: Get overall account performance
-- **list_outreach_campaigns**: List LinkedIn automation campaigns
-- **list_outreach_leads**: List prospects from outreach campaigns
 - **get_available_slots_quota**: Check account daily limits
 - **list_configured_webhooks**: g., new reply).
 
 List active webhooks
 - **send_linkedin_invite**: Send a connection request
 - **send_direct_linkedin_message**: Send a direct LinkedIn message
+- **add_linkedin_lead**: Add a new lead to a campaign
+- **get_authenticated_user_profile**: Get authenticated account info
+- **get_campaign_performance**: Retrieve campaign analytics
+- **list_outreach_campaigns**: List LinkedIn automation campaigns
+- **list_outreach_leads**: List prospects from outreach campaigns
 
 
 ## 💬 Prompt Examples

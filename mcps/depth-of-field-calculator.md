@@ -5,20 +5,18 @@
 
 ## Overview
 
-**Category:** [utilities](../categories/utilities.md)
+**Category:** [mathematics](../categories/mathematics.md)
 
-Calculate precise depth of field, hyperfocal distance, and blur limits for any camera sensor.
+Deterministic photographic engine for depth of field, hyperfocal distance, and sensor equivalence.
 
 ## Description
-An advanced optical utility for photographers to determine focus boundaries. Use `lookup_camera` to find sensor-specific crop factors and CoC limits, then use `calculate_dof_metrics` to compute near/far limits and hyperfocal distance based on your lens settings.
+This MCP server provides a deterministic engine for precise photographic calculations. It connects AI agents to professional optical math, allowing for the calculation of near and far focus limits, total depth of field, and hyperfocal distance. The engine automatically switches between standard and macro magnification models based on focus distance. Use `calculate_dof` for primary depth of field metrics, `calculate_hyperfocal` to find the hyperfocal distance, and `get_sensor_equivalence` to adjust the Circle of Confusion for different sensor formats like APS-C or Micro 4/3.
 
 
 ## Available Tools (3)
-- **lookup_camera**: Look up camera properties
-- **calculate_dof_metrics**: Calculate depth of field metrics
-- **convert_units**: g., mm to m).
-
-Convert measurement units
+- **calculate_dof**: Calculates the primary depth of field metrics for a given photographic setup
+- **calculate_hyperfocal**: Determines the hyperfocal distance for a specific lens and aperture setting
+- **get_sensor_equivalence**: Adjusts the Circle of Confusion based on different sensor formats to allow for crop factor comparisons
 
 
 ## 💬 Prompt Examples
@@ -26,38 +24,38 @@ Convert measurement units
 Here are some examples of how you can interact with the **Depth of Field Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is the depth of field for a 50mm lens at f/2.8 on a Sony A7IV at 2 meters distance?"
+> "Calculate the depth of field for a 50mm lens at f/2.8 with a focus distance of 2 meters using metric units."
 
 **🤖 AI Agent:**
-> For a Sony A7IV (Full Frame), the near limit is 1.85m and the far limit is 2.16m, providing a total depth of field of 0.31m.
+> The total depth of field is 0.24 meters, with a near limit of 1.82 meters and a far limit of 2.06 meters.
 
 ---
 
 **👤 You:**
-> "Find the hyperfocal distance for an 85mm lens at f/1.8 on a Canon EOS R7."
+> "What is the hyperfocal distance for a 35mm lens at f/8 with a CoC of 0.029mm?"
 
 **🤖 AI Agent:**
-> The hyperfocal distance for your Canon EOS R7 setup is approximately 12.45 meters.
+> The hyperfocal distance is 19.11 meters.
 
 ---
 
 **👤 You:**
-> "Convert 0.05 meters to inches."
+> "What is the crop factor and equivalent CoC for an APS-C sensor compared to a full-frame sensor with a base CoC of 0.029?"
 
 **🤖 AI Agent:**
-> 0.05 meters is approximately 1.97 inches.
+> The crop factor is 1.5 and the equivalent CoC is 0.0193mm.
 
 
 ## ❓ FAQ
 
-**Q: How do I find the correct Circle of Confusion (CoC) for my camera?**
-Use the `lookup_camera` tool with your specific camera model name to retrieve the precise CoC limit and crop factor from our database.
+**Q: How does the tool handle macro photography?**
+The `calculate_dof` tool automatically detects macro scenarios. If the focus distance is less than ten times the focal length, it switches from the standard formula to a magnification-based formula for higher accuracy.
 
-**Q: Can I calculate depth of field for macro photography?**
-Yes. By providing a small `subjectDistance` and the appropriate `cocLimit` via `calculate_dof_metrics`, you can determine the extremely shallow depth of field typical in macro work.
+**Q: Can I calculate sensor crop factors?**
+Yes, you can use `get_sensor_equivalence` to determine the equivalent Circle of Confusion and the crop factor for various sensor formats including APS-C and Micro 4/3.
 
-**Q: What units are used for the results?**
-The `calculate_dof_metrics` tool provides results in meters, feet, and inches. You can also use `convert_units` to transform any measurement between mm, cm, m, km, inch, or ft.
+**Q: What is hyperfocal distance?**
+Hyperfocal distance is the closest distance at which a lens can be focused while keeping objects from that distance to infinity acceptably sharp. You can find this value using `calculate_hyperfocal`.
 
 
 ## Installation & Usage

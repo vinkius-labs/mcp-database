@@ -5,21 +5,20 @@
 
 ## Overview
 
-**Category:** [utilities](../categories/utilities.md)
+**Category:** [calculators](../categories/calculators.md)
 
-Calculate missing exposure parameters, ND filter compensation, and film reciprocity corrections.
+Deterministic photographic exposure calculator for aperture, shutter speed, and ISO adjustments.
 
 ## Description
-The Exposure Triangle Calculator is a precision utility for photographers to maintain consistent light levels. Use `calculate_missing_parameter` to find the third variable (ISO, Aperture, or Shutter Speed) when two are known. The tool also provides `apply_nd_compensation` to adjust settings for Neutral Density filters, `get_film_correction` to handle film reciprocity failure in analog photography, and `generate_exposure_variations` to explore different aperture and shutter speed combinations that maintain the same exposure value.
+This MCP server provides precise tools for managing the photographic exposure triangle. Use `calculate_exposure_shift` to find new settings when changing stops, `evaluate_scene_brightness` to determine the current Exposure Value (EV) and Light Value (LV), or `calculate_metering_compensation` to adjust for different metering modes. It handles fractional stops and flags impossible hardware constraints like flash sync limits.
 
 
-## Available Tools (4)
-- **generate_exposure_variations**: Generates a list of alternative aperture and shutter speed combinations for the same EV
-- **get_film_correction**: Calculates the necessary shutter speed adjustment for film reciprocity failure
-- **calculate_missing_parameter**: Calculates a missing exposure parameter (ISO, Aperture, Shutter Speed, or EV)
-- **apply_nd_compensation**: g., "ND8").
+## Available Tools (3)
+- **calculate_exposure_shift**: Calculates new exposure settings when a user wants to change one or more parameters by a specific number of stops
+- **calculate_metering_compensation**: g., from Matrix to Spot) and needs to adjust exposure.
 
-Calculates the required exposure adjustments for an ND filter
+Calculates the exposure compensation required when switching between different metering modes
+- **evaluate_scene_brightness**: Determines the current Exposure Value (EV) and Light Value (LV) based on current settings
 
 
 ## 💬 Prompt Examples
@@ -27,38 +26,38 @@ Calculates the required exposure adjustments for an ND filter
 Here are some examples of how you can interact with the **Exposure Triangle Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I am using ISO 400 and f/5.6. What should my shutter speed be for a sunny day?"
+> "I am at f/5.6, 1/125s, and ISO 400. I want to open my aperture by 2 stops. What are my new settings?"
 
 **🤖 AI Agent:**
-> To maintain the same exposure, your shutter speed should be 1/250s.
+> Your new settings are f/2.8, 1/125s, and ISO 400.
 
 ---
 
 **👤 You:**
-> "I'm adding an ND8 filter to my current settings of f/8 and 1/60s. What are my new settings?"
+> "What is the current brightness (EV and LV) for f/8, 1/250s, and ISO 100?"
 
 **🤖 AI Agent:**
-> With the ND8 filter, your adjusted settings should be f/5.6 and 1/15s to compensate for the 3 stops lost.
+> The current Exposure Value (EV) is 11 and the Light Value (LV) is 11.
 
 ---
 
 **👤 You:**
-> "Show me different aperture and shutter speed options for f/4 at 1/100s."
+> "I'm switching from Matrix to Spot metering and expect a 1.5 stop difference. How much compensation do I need?"
 
 **🤖 AI Agent:**
-> Here are the variations: f/2.8 at 1/200s, f/5.6 at 1/50s, and f/8 at 1/25s.
+> You need 1.5 stops of compensation, resulting in a suggested new EV of 12.5.
 
 
 ## ❓ FAQ
 
-**Q: How do I find the correct shutter speed if I know my aperture and ISO?**
-You can use the `calculate_missing_parameter` tool. Simply provide your current aperture and ISO, and it will calculate the required shutter speed to maintain the same exposure.
+**Q: How do I maintain the same exposure when changing one setting?**
+You can use the `calculate_exposure_shift` tool. By providing your current settings and specifying the desired change for one parameter, the tool calculates the necessary adjustments for the others to keep the total exposure constant.
 
-**Q: Does this tool account for ND filters?**
-Yes, the `apply_nd_compensation` tool allows you to input your base aperture and shutter speed along with an ND filter factor (like 'ND8') to calculate the necessary adjustments.
+**Q: Can this tool handle fractional stops?**
+Yes, the calculator supports fractional stop adjustments, including 1/3, 1/2, and 2/3 stops, for precise exposure control.
 
-**Q: Can I use this for analog film photography?**
-Absolutely. The `get_film_correction` tool specifically calculates the shutter speed extension needed to compensate for reciprocity failure in different film types.
+**Q: What happens if I request an impossible exposure setting?**
+If a requested setting violates physical constraints, such as a shutter speed faster than the flash sync speed or an aperture smaller than the lens allows, the tool will flag the combination as impossible.
 
 
 ## Installation & Usage

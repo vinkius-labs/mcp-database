@@ -36,19 +36,19 @@ No more manual checking of individual rank trackers or missing local visibility 
 
 
 ## Available Tools (13)
-- **list_keywords**: List keywords
 - **list_locations**: List locations
 - **list_scans**: List scans
 - **add_keyword**: Add a keyword
-- **add_location**: Add a location
-- **get_location**: Get location details
-- **check_localfalcon_status**: Verify connectivity
 - **get_scan_report**: Get scan report
 - **get_scan_results**: Get scan results
 - **get_scan**: Get scan details
 - **get_trend_report**: Get trend report
-- **list_scans_by_location**: List scans by location
 - **run_scan**: Run a new scan
+- **add_location**: Add a location
+- **check_localfalcon_status**: Verify connectivity
+- **get_location**: Get location details
+- **list_keywords**: List keywords
+- **list_scans_by_location**: List scans by location
 
 
 ## 💬 Prompt Examples

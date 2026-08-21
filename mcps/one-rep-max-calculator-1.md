@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [health](../categories/health.md)
+**Category:** [sports-science](../categories/sports-science.md)
 
-Estimate your maximum strength capacity using 8 different physiological models.
+Estimate 1RM strength, training intensity zones, and RPE from submaximal lifts.
 
 ## Description
-The One-Rep Max Calculator provides a comprehensive analysis of your lifting potential. By inputting the weight lifted and repetitions performed, you can use `calculate_all_1rm_formulas` to see estimates from eight distinct models: Epley, Brzycki, Lander, Lombardi, Mayhew, O'Conner, Wathan, and the mean of all. This tool helps identify your strength baseline without the physical risk of a true 1RM test. Additionally, use `get_perc_table` to generate training intensity charts from 50% to 100%, and `identify_best` to find the most accurate formula for your current repetition range.
+This MCP server provides a deterministic toolset for strength athletes and coaches to estimate one-repetition maximum (1RM) using established physiological models. By inputting weight and repetitions, you can access multiple estimation formulas including Epley, Brzycki, and Lombardi. The server also calculates training intensity zones for various rep ranges and maps lifts to their estimated Rate of Perceived Exertion (RPE). Use `calculate_1rm_metrics` for a full strength profile or `get_rpe_equivalence` to determine how hard a set felt.
 
 
 ## Available Tools (3)
-- **calculate_all_1rm_formulas**: Calculates the theoretical 1RM using all eight distinct estimation models
-- **get_perc_table**: Generates a training intensity reference table
-- **identify_best**: Recommends the most reliable estimation formula
+- **calculate_1rm_metrics**: 
+- **get_rpe_equivalence**: Maps lift to RPE
+- **validate_lift_integrity**: Checks lift integrity
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The One-Rep Max Calculator provides a comprehensive analysis of your lifting pot
 Here are some examples of how you can interact with the **One-Rep Max Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I just lifted 100kg for 5 reps. What is my estimated 1RM using all formulas?"
+> "Calculate my 1RM metrics for lifting 100kg for 5 reps."
 
 **🤖 AI Agent:**
-> Based on your 100kg lift for 5 reps, the Epley estimate is 120kg, Brzycki is 116.67kg, and the average across all eight models is approximately 118.45kg.
+> Your estimated 1RM is 112.5kg based on the average of the formulas. Your training intensity zones for 1-5 reps, 6-8 reps, 9-12 reps, and 13-20 reps are 112.5kg, 95kg, 84kg, and 72kg respectively.
 
 ---
 
 **👤 You:**
-> "Generate a training table for a 120kg 1RM."
+> "What is the RPE for 80lbs for 10 reps?"
 
 **🤖 AI Agent:**
-> For a 120kg baseline, your 50% target is 60kg, 75% is 90kg, and 100% is 120kg.
+> The estimated RPE for 80lbs for 10 repetitions is 7.5.
 
 ---
 
 **👤 You:**
-> "I did 8 reps recently. Which formula is best for me?"
+> "Is a lift of 50kg for 15 reps valid for 1RM estimation?"
 
 **🤖 AI Agent:**
-> For a set of 8 repetitions, the Wathan model is recommended as it accounts for higher volume fatigue factors.
+> No, the lift is flagged as unrealistic because repetitions exceed 12 for accurate 1RM estimation.
 
 
 ## ❓ FAQ
 
 **Q: How accurate are these 1RM estimates?**
-Accuracy depends on your repetition range. Low repetitions (1-3) provide the most reliable data across all models, while higher reps may lead to slight variations between formulas.
+Estimates are most accurate when repetitions are 12 or fewer. For higher rep counts, the `validate_lift_integrity` tool can flag if the estimation may be unreliable.
 
-**Q: Which formula should I use?**
-You can use the `identify_best` tool to automatically receive a recommendation based on your recent repetition count.
+**Q: Can I use this for both kilograms and pounds?**
+Yes, all tools support both 'kg' and 'lbs' units.
 
-**Q: Can I generate training percentages?**
-Yes, by using `get_perc_table` with your estimated 1RM, you can generate a detailed table of target weights from 50% to 100%.
+**Q: What is RPE?**
+RPE stands for Rate of Perceived Exertion. You can use `get_rpe_equivalence` to estimate how much effort a specific weight and repetition count requires on a standard scale.
 
 
 ## Installation & Usage
