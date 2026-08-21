@@ -33,19 +33,19 @@ Connect **Reply.io** to your AI agent and manage your multi-channel sales engage
 
 
 ## Available Tools (8)
-- **pause_person**: Pause a person
-- **list_email_accounts**: List email accounts
 - **get_campaign_stats**: Get campaign stats
-- **list_campaigns**: io outreach campaigns.
-
-List campaigns
-- **get_campaign**: Get campaign
-- **list_people**: io.
-
-List people
+- **list_email_accounts**: List email accounts
+- **pause_person**: Pause a person
 - **add_person**: io.
 
 Add a person
+- **get_campaign**: Get campaign
+- **list_campaigns**: io outreach campaigns.
+
+List campaigns
+- **list_people**: io.
+
+List people
 - **resume_person**: Resume a person
 
 

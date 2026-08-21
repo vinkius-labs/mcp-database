@@ -34,6 +34,9 @@ Connect your **Toggl Plan** workspaces to an AI agent entirely bypassing the com
 
 
 ## Available Tools (10)
+- **list_milestones**: Lists all project milestones
+- **list_workspace_tags**: Lists all tags used for task categorization
+- **list_workspace_users**: Lists all users with access to the workspace
 - **create_timeline_task**: Requires workspace ID, task name, and project ID.
 
 Creates a new task on the Toggl Plan timeline
@@ -41,17 +44,14 @@ Creates a new task on the Toggl Plan timeline
 
 Permanently deletes a task from the timeline
 - **get_project_details**: Retrieves details for a specific project
-- **list_milestones**: Lists all project milestones
-- **list_workspace_projects**: Lists all projects in a specific Toggl Plan workspace
-- **list_workspace_tags**: Lists all tags used for task categorization
+- **get_task_details**: Retrieves details for a specific timeline task
 - **list_timeline_tasks**: Requires a workspace ID.
 
 Lists all tasks on the Toggl Plan timeline for a specific workspace
-- **list_workspace_users**: Lists all users with access to the workspace
+- **list_workspace_projects**: Lists all projects in a specific Toggl Plan workspace
 - **update_timeline_task**: Provide updates as a JSON object.
 
 Updates an existing timeline task
-- **get_task_details**: Retrieves details for a specific timeline task
 
 
 ## 💬 Prompt Examples

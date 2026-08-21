@@ -36,15 +36,15 @@ Connect your **Scoro** workspace to any AI agent to interact with your business 
 - **get_contact**: Retrieves details for a specific contact
 - **list_activities**: Lists recent activities and audit logs
 - **list_calendar_events**: Lists all events on the Scoro calendar
-- **list_contacts**: Lists all contacts (companies and people) in Scoro
 - **list_expenses**: Lists all business expenses
-- **list_invoices**: Lists all sales invoices
 - **list_products**: Lists all products and services in the catalog
 - **list_projects**: Lists all projects in Scoro
 - **list_quotes**: Lists all sales quotes
-- **list_tasks**: Lists all tasks
 - **list_time_entries**: Lists time entries logged by the team
 - **list_users**: Lists all users in the Scoro organization
+- **list_contacts**: Lists all contacts (companies and people) in Scoro
+- **list_invoices**: Lists all sales invoices
+- **list_tasks**: Lists all tasks
 
 
 ## 💬 Prompt Examples

@@ -33,19 +33,19 @@ Integrate the powerful tracking of the **Structured** daily planner directly int
 
 
 ## Available Tools (9)
-- **list_plans**: Lists all structured plans
-- **list_tasks**: Lists all tasks in Structured
-- **get_task_details**: Retrieves details for a specific task
-- **create_task**: Provide a title and optional start time.
-
-Creates a new task in Structured
-- **update_task**: Updates an existing task
 - **delete_task**: This action is irreversible.
 
 Permanently deletes a task
+- **update_task**: Updates an existing task
 - **create_plan**: Creates a new plan
-- **get_plan_details**: Retrieves details for a specific plan
 - **get_user_profile**: Retrieves the current user profile
+- **create_task**: Provide a title and optional start time.
+
+Creates a new task in Structured
+- **get_plan_details**: Retrieves details for a specific plan
+- **get_task_details**: Retrieves details for a specific task
+- **list_plans**: Lists all structured plans
+- **list_tasks**: Lists all tasks in Structured
 
 
 ## 💬 Prompt Examples

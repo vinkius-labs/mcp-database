@@ -36,13 +36,13 @@ Stop switching between WhatsApp Web, Facebook Business, and your internal tools.
 
 
 ## Available Tools (7)
-- **list_automation_flows**: Lists available automation flows
-- **list_contacts**: Lists all contacts in SleekFlow
 - **get_contact_details**: Retrieves details for a specific contact
-- **list_conversations**: Lists all conversations across channels
-- **send_message**: Sends a message in a conversation
 - **list_channels**: Lists all connected communication channels
 - **list_contact_labels**: Lists all labels used for contact categorization
+- **list_contacts**: Lists all contacts in SleekFlow
+- **send_message**: Sends a message in a conversation
+- **list_automation_flows**: Lists available automation flows
+- **list_conversations**: Lists all conversations across channels
 
 
 ## 💬 Prompt Examples

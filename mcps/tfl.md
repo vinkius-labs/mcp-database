@@ -42,15 +42,9 @@ No more navigating multiple TfL apps or manually checking arrival boards. Your A
 
 
 ## Available Tools (12)
-- **get_road_disruptions**: Returns disruption descriptions, affected road segments, cause types (roadworks, incidents, events, utility works), start and end dates, severity levels, and alternative route recommendations. Can query all disruptions system-wide or filter by specific road. Essential for driving disruption awareness, alternative route planning, delivery logistics, and understanding road reliability. AI agents should reference this when users ask "are there any roadworks on the A4", "what disruptions affect my drive to Heathrow", or need to check road conditions before planning driving journeys in London.
-
-Get current road disruptions and closures across London
 - **get_road_status**: Returns road IDs, road names, status descriptions, corridor details, and operational information. Can query all roads system-wide or filter by a specific road ID (e.g., "A1", "A40", "A205" South Circular). Essential for driving route planning, road closure awareness, understanding London road network conditions, and commuter driving decisions. AI agents should use this when users ask "what is the status of the A40", "are there any road closures on the North Circular", or need to check road conditions before driving journeys in London.
 
 Get current status of London roads, optionally filtered by specific road
-- **get_stop_point_details**: Returns stop ID, common name, station type, modes served, geographic coordinates, address, accessibility information (step-free access, lift availability), fare zone, hub station affiliations, and parent/child station relationships. Essential for stop identification, accessibility planning, fare zone awareness, station navigation, and understanding station hierarchy in the TfL network. AI agents should use this when users ask "tell me about King's Cross station", "is this station step-free", or need detailed stop metadata to contextualise transit queries.
-
-Get detailed information about a specific TfL stop point
 - **get_vehicle_details**: Returns vehicle registration, make, model, compliance status, charge exemptions, and registration dates. Essential for London driving compliance checks, ULEZ awareness, congestion charge planning, and vehicle registration verification. AI agents should use this when users ask "check if vehicle AB12 CDE is ULEZ compliant", "is my car exempt from Congestion Charge", or need to verify vehicle compliance before driving in central London.
 
 Get vehicle details for a registered vehicle in London (ULEZ/congestion charge)
@@ -60,9 +54,6 @@ Get real-time arrival predictions for a specific TfL stop point
 - **get_bike_point**: Returns dock ID, common name, precise location (latitude, longitude, address), total capacity, current available bikes, current empty docks, installation date, last update timestamp, and operational status. Essential for dock-level bike availability checks, capacity planning, and real-time bike-sharing awareness for specific docking stations. AI agents should use this when users ask "how many bikes are at dock BikePoints_1234", "tell me about the docking station at Hyde Park Corner", or need specific docking station details for bike hire planning.
 
 Get detailed information about a specific Santander Cycles docking station
-- **get_bike_points**: Returns docking station IDs, common names, geographic coordinates, total bike capacity, number of available bikes, number of empty docks, installation date, and operational status. Covers thousands of docking stations across central London and expanding into outer boroughs. Essential for bike hire planning, dock availability awareness, cycle route planning, and understanding London's bike-sharing network coverage. AI agents should reference this when users ask "where are the nearest bike docking stations", "how many bikes are available at this dock", or need to identify bike hire options for last-mile connectivity.
-
-List all Santander Cycles (bike hire) docking stations across London
 - **get_journey**: Returns multiple route options combining tube, bus, dlr, overground, elizabeth-line, tram, river, walking, and cycling. Each route includes total duration, walking distance, number of interchanges, fare estimates, CO2 savings, and detailed leg-by-leg instructions with line names, directions, station sequences, and departure/arrival times. Essential for multimodal trip planning, route comparison, accessibility-aware journey selection, and passenger information. AI agents should use this when users ask "how do I get from Paddington to Greenwich", "plan a journey from Heathrow to Tower Bridge", or need door-to-door trip planning across London's transport network.
 
 Plan a journey between two locations using TfL transport modes
@@ -75,9 +66,18 @@ List all available transport modes in the TfL network
 - **get_place_search**: Returns place IDs, names, categories, geographic coordinates, address information, and related links. Can optionally filter by place type (e.g., "TubeStation", "BusStation", "Park", "Museum", "Hospital"). Essential for place discovery, tourist planning, accessibility research, and understanding London's infrastructure. AI agents should use this when users ask "find parks near Westminster", "search for museums in South Bank", or need to identify places and points of interest for comprehensive London trip planning.
 
 Search for places and points of interest across London
+- **get_road_disruptions**: Returns disruption descriptions, affected road segments, cause types (roadworks, incidents, events, utility works), start and end dates, severity levels, and alternative route recommendations. Can query all disruptions system-wide or filter by specific road. Essential for driving disruption awareness, alternative route planning, delivery logistics, and understanding road reliability. AI agents should reference this when users ask "are there any roadworks on the A4", "what disruptions affect my drive to Heathrow", or need to check road conditions before planning driving journeys in London.
+
+Get current road disruptions and closures across London
+- **get_stop_point_details**: Returns stop ID, common name, station type, modes served, geographic coordinates, address, accessibility information (step-free access, lift availability), fare zone, hub station affiliations, and parent/child station relationships. Essential for stop identification, accessibility planning, fare zone awareness, station navigation, and understanding station hierarchy in the TfL network. AI agents should use this when users ask "tell me about King's Cross station", "is this station step-free", or need detailed stop metadata to contextualise transit queries.
+
+Get detailed information about a specific TfL stop point
 - **search_stop_point**: Returns matching stop points with their IDs, common names, modes served (tube, bus, dlr, overground, tram, river, cable-car, elizabeth-line), geographic coordinates (lat/lon), and station hierarchy information. Can optionally filter by transport mode. Essential for stop discovery, journey planning interfaces, stop identification, and building location-based transit features. AI agents should use this when users ask "find the tube station near Covent Garden", "search for stops called Victoria", or need to identify stop IDs for use in arrival queries.
 
 Search for TfL stop points by name or location
+- **get_bike_points**: Returns docking station IDs, common names, geographic coordinates, total bike capacity, number of available bikes, number of empty docks, installation date, and operational status. Covers thousands of docking stations across central London and expanding into outer boroughs. Essential for bike hire planning, dock availability awareness, cycle route planning, and understanding London's bike-sharing network coverage. AI agents should reference this when users ask "where are the nearest bike docking stations", "how many bikes are available at this dock", or need to identify bike hire options for last-mile connectivity.
+
+List all Santander Cycles (bike hire) docking stations across London
 
 
 ## 💬 Prompt Examples

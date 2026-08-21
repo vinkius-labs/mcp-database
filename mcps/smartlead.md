@@ -33,8 +33,8 @@ Connect **SmartLead** to your AI agent and manage your cold email infrastructure
 
 
 ## Available Tools (8)
-- **list_campaigns**: List campaigns
 - **get_campaign**: Get campaign
+- **list_campaigns**: List campaigns
 - **get_campaign_analytics**: Get campaign analytics
 - **list_leads**: List leads
 - **add_lead**: Add lead

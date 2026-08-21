@@ -22,26 +22,26 @@ Connect your **SevenRooms** restaurant to any AI agent — the premium hospitali
 
 
 ## Available Tools (8)
-- **list_venues**: For multi-location restaurant groups.
-
-List restaurant venues
-- **list_reservations**: "Who is dining tonight?"
-
-List restaurant reservations
-- **get_reservation**: Get reservation details
-- **search_guests**: "Tell me about Mr. Silva."
-
-Search guest profiles
 - **get_guest**: Get guest profile
-- **list_waitlist**: For real-time host management.
-
-List waitlist
-- **check_availability**: Shows open tables, wait times, and dining room options.
-
-Check table availability
 - **list_events**: With date, capacity, pricing, and availability.
 
 List restaurant events
+- **list_waitlist**: For real-time host management.
+
+List waitlist
+- **search_guests**: "Tell me about Mr. Silva."
+
+Search guest profiles
+- **check_availability**: Shows open tables, wait times, and dining room options.
+
+Check table availability
+- **get_reservation**: Get reservation details
+- **list_reservations**: "Who is dining tonight?"
+
+List restaurant reservations
+- **list_venues**: For multi-location restaurant groups.
+
+List restaurant venues
 
 
 ## 💬 Prompt Examples

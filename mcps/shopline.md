@@ -26,13 +26,13 @@ Grant your AI agent (like Claude or Cursor) absolute administrative dominion ove
 
 
 ## Available Tools (7)
-- **list_products**: Lists all products in the Shopline store
 - **get_product_details**: Retrieves details for a specific product
 - **list_orders**: Lists all store orders
+- **list_products**: Lists all products in the Shopline store
 - **get_order_details**: Retrieves details for a specific order
-- **list_customers**: Lists store customers
-- **list_collections**: Lists all product collections
 - **get_shop_info**: Retrieves information about the Shopline store
+- **list_collections**: Lists all product collections
+- **list_customers**: Lists store customers
 
 
 ## 💬 Prompt Examples

@@ -35,15 +35,15 @@ Stop clicking through multiple dashboard pages just to copy-paste your internal 
 
 
 ## Available Tools (9)
-- **list_datacenter_proxies**: Lists datacenter proxy configurations
-- **list_proxy_endpoints**: Lists available proxy endpoints
-- **list_residential_proxies**: Lists residential proxy configurations
 - **list_sub_users**: Lists all proxy sub-users
-- **get_scraper_stats**: Retrieves statistics for scraping APIs
-- **list_dedicated_proxies**: Lists dedicated proxy assignments
 - **list_subscriptions**: Lists active proxy subscriptions
 - **get_account_details**: Retrieves Smartproxy account information
+- **get_scraper_stats**: Retrieves statistics for scraping APIs
 - **get_traffic_usage**: Retrieves traffic usage statistics
+- **list_datacenter_proxies**: Lists datacenter proxy configurations
+- **list_dedicated_proxies**: Lists dedicated proxy assignments
+- **list_proxy_endpoints**: Lists available proxy endpoints
+- **list_residential_proxies**: Lists residential proxy configurations
 
 
 ## 💬 Prompt Examples

@@ -38,14 +38,14 @@ Stop manually typing test addresses into the Smarty sandbox or setting up Postma
 - **extract_addresses**: g., emails, documents) and find valid addresses.
 
 Extracts physical addresses from raw text
-- **validate_us_address**: Returns delivery point validation (DPV) status and coordinates.
-
-Validates and geocodes a US street address
 - **verify_zip_code**: Verifies a ZIP code and returns associated cities and states
 - **autocomplete_intl_address**: Predictive autocomplete for international addresses
 - **validate_intl_address**: Requires at least the address line and country.
 
 Validates and geocodes an international street address
+- **validate_us_address**: Returns delivery point validation (DPV) status and coordinates.
+
+Validates and geocodes a US street address
 - **autocomplete_us_address**: Predictive autocomplete for US addresses
 - **get_account_info**: Retrieves Smarty account information
 
