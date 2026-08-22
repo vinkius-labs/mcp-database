@@ -33,13 +33,13 @@ Connect to the **INPE Brazil Data Cube** and explore high-resolution satellite i
 
 
 ## Available Tools (6)
-- **list_collection_items**: List items within a specific collection
-- **get_collection**: Get detailed metadata for a specific collection
+- **get_root_catalog**: Get the root STAC catalog
 - **list_collections**: g., CBERS4-WFI-16D-2, S2-16D-2).
 
 List all available data collections
+- **get_collection**: Get detailed metadata for a specific collection
 - **get_conformance**: Get STAC conformance classes
-- **get_root_catalog**: Get the root STAC catalog
+- **list_collection_items**: List items within a specific collection
 - **search_items**: Search for items across collections
 
 

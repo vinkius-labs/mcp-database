@@ -36,12 +36,12 @@ Connect directly to the **U.S. Department of Housing and Urban Development (HUD)
 ## Available Tools (8)
 - **get_il_data**: Get Income Limits (IL) data by entity ID
 - **get_mtsp_il_data**: Get Multifamily Tax Subsidy Project (MTSP) Income Limits data
-- **get_state_fmr_data**: Get Statewide Fair Market Rent (FMR) data
 - **get_state_il_data**: Get Statewide Income Limits (IL) data
-- **list_counties**: List all counties in a specific state
-- **list_metro_areas**: List all Metropolitan areas
 - **list_states**: List all states and territories
 - **get_fmr_data**: Get Fair Market Rent (FMR) data by entity ID
+- **get_state_fmr_data**: Get Statewide Fair Market Rent (FMR) data
+- **list_counties**: List all counties in a specific state
+- **list_metro_areas**: List all Metropolitan areas
 
 
 ## 💬 Prompt Examples

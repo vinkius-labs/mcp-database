@@ -33,14 +33,14 @@ Connect your **Smeetz** account to any AI agent to streamline your booking and c
 
 
 ## Available Tools (6)
-- **list_customers**: List all customers
-- **get_booking**: Get detailed information about a specific booking
 - **list_products**: List all products available in your account
+- **get_product**: Get detailed information about a specific product
 - **create_booking**: Requires product ID, date, ticket details, and customer information.
 
 Create a new booking for a specific product and date
+- **get_booking**: Get detailed information about a specific booking
 - **get_customer**: Get detailed information about a specific customer
-- **get_product**: Get detailed information about a specific product
+- **list_customers**: List all customers
 
 
 ## 💬 Prompt Examples

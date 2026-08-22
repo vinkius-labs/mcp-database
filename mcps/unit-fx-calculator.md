@@ -15,16 +15,20 @@ LLMs notoriously struggle with complex compound conversions (e.g. converting km/
 ### The Superpowers
 
 - **Physical Determinism:** Converts length, mass, volume, temperature, and speed using the exact mathematical engine of `mathjs`. Completely eliminates metric/imperial hallucination.
-- **Live FX Rates:** Uses the Frankfurter API to fetch the latest European Central Bank reference rates for absolutely precise currency conversion.
+- **Live FX Rates:** Two free keyless sources in one tool: official central bank reference rates via the Frankfurter API (84 data sources) plus live market prices from Binance's public API routed via USDT.
 - **In-Memory Edge Cache:** FX rates are cached in a native V8 `Map` for 1 hour, meaning massive batch conversions run instantly without getting rate-limited.
 
 
 ## Available Tools (3)
-- **convert_unit**: Deterministically converts physical units (e.g. km/h to mph, celsius to fahrenheit)using mathjs
+- **convert_unit**: Length, mass, volume, temperature and speed are supported; incompatible units (e.g. km to kg) return an error instead of a guess.
+
+Deterministically converts physical units (e.g. km/h to mi/h, celsius to fahrenheit) using mathjs
 - **batch_convert**: ). Pass the value, source unit, and target unit for exact mathematical conversion.
 
 Converts multiple physical units in a single deterministic pass
-- **get_rate**: Gets the exact foreign exchange rate between two currencies using Frankfurter API (1h cache)
+- **get_rate**: Some currencies (e.g. JPY) have no Binance pair; if the market source reports no pair, retry with source "reference".
+
+Gets the foreign exchange rate between two ISO currency codes. Two free sources: "reference" (central bank rates via Frankfurter, 1h cache) or "market" (live Binance market prices, 5min cache)
 
 
 ## 💬 Prompt Examples
@@ -43,7 +47,7 @@ Here are some examples of how you can interact with the **Unit & FX Calculator**
 > "Fetch the live exchange rate to convert `USD` to `BRL`."
 
 **🤖 AI Agent:**
-> ✅ **Live FX Rate:** `5.21` (Fetched from European Central Bank, cached locally).
+> ✅ **Live FX Rate:** `5.21` (live via Frankfurter, cached locally).
 
 ---
 
@@ -57,7 +61,7 @@ Here are some examples of how you can interact with the **Unit & FX Calculator**
 ## ❓ FAQ
 
 **Q: How often are currency rates updated?**
-Rates are fetched live and cached for exactly 1 hour.
+Reference rates are cached for 1 hour; live Binance market rates for 5 minutes.
 
 **Q: What physical units are supported?**
 Length, mass, volume, temperature, and speed are fully supported via mathjs.

@@ -35,20 +35,20 @@ Connect to the **Podcast Index** to tap into a massive, independent database of 
 ## Available Tools (16)
 - **get_podcast_by_feed_id**: Get podcast details using its internal Index ID
 - **get_podcast_by_feed_url**: Get podcast details using its RSS feed URL
-- **get_podcast_by_guid**: Get podcast details using its Podcast GUID
-- **get_podcast_by_itunes_id**: Get podcast details using its iTunes ID
 - **get_value_by_feed_id**: Get the value block by feed ID
 - **get_value_by_feed_url**: Get the value block (e.g., Lightning Network details) for a feed URL
 - **search_by_person**: Search for podcasts featuring a specific person
 - **search_by_term**: Search for podcasts by a general search term
-- **search_by_title**: Search for podcasts by title
 - **get_random_episodes**: Get a selection of random episodes
-- **get_recent_episodes**: Get the most recently published episodes
 - **get_recent_feeds**: Get the most recently added or updated feeds
 - **get_recent_new_feeds**: Get feeds newly added to the index
-- **get_episode_by_guid**: Get a specific episode by its GUID
 - **get_episodes_by_feed_id**: List episodes for a specific feed ID
 - **get_episodes_by_feed_url**: List episodes for a specific feed URL
+- **get_episode_by_guid**: Get a specific episode by its GUID
+- **get_podcast_by_guid**: Get podcast details using its Podcast GUID
+- **get_podcast_by_itunes_id**: Get podcast details using its iTunes ID
+- **get_recent_episodes**: Get the most recently published episodes
+- **search_by_title**: Search for podcasts by title
 
 
 ## 💬 Prompt Examples

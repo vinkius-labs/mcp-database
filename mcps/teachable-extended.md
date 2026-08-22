@@ -34,21 +34,21 @@ Connect your **Teachable** school to any AI agent to streamline your course mana
 
 
 ## Available Tools (7)
+- **list_pricing_plans**: List pricing plans in the Teachable school
 - **list_courses**: Can be filtered by name, publish status, or author.
 
 List all courses in the Teachable school
+- **update_user**: Update an existing user in the Teachable school
+- **list_webhooks**: List all registered webhooks
 - **create_user**: Email is required.
 
 Create a new user in the Teachable school
-- **list_pricing_plans**: List pricing plans in the Teachable school
 - **list_transactions**: Can be filtered by user, course, affiliate, dates, or refund/chargeback status.
 
 List transactions in the Teachable school
-- **update_user**: Update an existing user in the Teachable school
 - **list_users**: Can be filtered by email. Use search_after for pagination beyond 10,000 records.
 
 List all users in the Teachable school
-- **list_webhooks**: List all registered webhooks
 
 
 ## 💬 Prompt Examples

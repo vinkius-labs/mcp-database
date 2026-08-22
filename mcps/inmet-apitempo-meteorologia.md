@@ -34,12 +34,12 @@ Connect to the **INMET (Instituto Nacional de Meteorologia)** API to retrieve co
 
 
 ## Available Tools (8)
+- **get_station_data_daily**: Get daily meteorological data for a specific station
 - **get_all_forecasts**: Get weather forecasts for all supported cities
 - **get_forecast_by_city**: Get weather forecast for a specific city
 - **get_meteorological_data_by_date**: Get meteorological data by date for a station
 - **get_meteorological_data_by_region**: Get meteorological data for all stations in a specific region
 - **get_satellite_images**: Get latest GOES-16 satellite images
-- **get_station_data_daily**: Get daily meteorological data for a specific station
 - **get_station_data_hourly**: Get hourly data for a specific station and time
 - **list_stations**: List meteorological stations by type
 

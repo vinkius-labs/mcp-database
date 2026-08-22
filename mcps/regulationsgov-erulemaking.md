@@ -29,12 +29,12 @@ Stay informed about government transparency and regulatory updates without manua
 
 
 ## Available Tools (6)
-- **search_comments**: Search public comments
-- **get_document**: Get details for a specific document
-- **get_comment**: Get details for a specific comment
 - **get_docket**: Get details for a specific docket
-- **search_dockets**: Search dockets
 - **search_documents**: Search for documents (rules, notices, etc.)
+- **get_comment**: Get details for a specific comment
+- **get_document**: Get details for a specific document
+- **search_comments**: Search public comments
+- **search_dockets**: Search dockets
 
 
 ## 💬 Prompt Examples

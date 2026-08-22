@@ -40,30 +40,30 @@ Connect to **JSONPlaceholder**, the industry-standard fake REST API, to simulate
 - **get_user_albums**: Get albums for a specific user
 - **create_post**: Create a new post
 - **delete_post**: Delete a post
-- **get_album_photos**: Get photos for a specific album
 - **get_album**: Get a specific album by ID
 - **get_comment**: Get a specific comment by ID
+- **get_album_photos**: Get photos for a specific album
 - **get_photo**: Get a specific photo by ID
-- **get_user_posts**: Get posts for a specific user
 - **get_user_todos**: Get todos for a specific user
-- **get_user**: Get a specific user by ID
 - **list_albums**: Can be filtered by userId.
 
 List all albums
-- **list_comments**: Can be filtered by postId.
-
-List all comments
+- **get_user_posts**: Get posts for a specific user
+- **get_user**: Get a specific user by ID
 - **list_photos**: Can be filtered by albumId.
 
 List all photos
+- **list_users**: List all users
+- **patch_post**: Update a post (partial)
+- **list_comments**: Can be filtered by postId.
+
+List all comments
 - **list_posts**: Can be filtered by userId.
 
 List all posts
 - **list_todos**: Can be filtered by userId.
 
 List all todos
-- **list_users**: List all users
-- **patch_post**: Update a post (partial)
 - **update_post**: Update a post (replace)
 
 

@@ -36,12 +36,12 @@ Connect to the **Office of Scientific and Technical Information (OSTI)** to quer
 ## Available Tools (6)
 - **get_data_explorer_record**: Get a single DOE Data Explorer record by ID
 - **get_osti_record**: Get a single OSTI.GOV record by ID
+- **search_osti_records**: Search OSTI.GOV records
+- **submit_record**: Submit/Update a record and register DOI via E-Link API
 - **reserve_doi**: Requires minimal metadata.
 
 Reserve a DOI via E-Link API
 - **search_data_explorer_records**: Search DOE Data Explorer records (datasets)
-- **search_osti_records**: Search OSTI.GOV records
-- **submit_record**: Submit/Update a record and register DOI via E-Link API
 
 
 ## 💬 Prompt Examples

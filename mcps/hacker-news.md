@@ -7,7 +7,7 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Explore tech news via Hacker News — fetch top and new stories, retrieve detailed item contents, and read comments directly from any AI agent.
+Explore current Hacker News top stories, newest stories, individual items, and date-filtered story search through the public Algolia index.
 
 ## Description
 Connect to **Hacker News** (Y Combinator) and take full control of your tech news consumption, discussion auditing, and trend tracking through natural conversation.
@@ -35,10 +35,19 @@ Connect to **Hacker News** (Y Combinator) and take full control of your tech new
 - **Curious Professionals** — quickly summarize top stories and read insightful comments through the chat interface
 
 
-## Available Tools (3)
-- **get_item**: Read the detailed contents of a specific Hacker News item (a story, comment, or poll) by its ID. Returns HTML comments converted cleanly to Markdown
-- **new_stories**: Fetch the most recently submitted stories on Hacker News
-- **top_stories**: Fetch the current Top stories on the Hacker News front page
+## Available Tools (4)
+- **top_stories**: json list, including title, author, score, URL, timestamp, and child comment IDs when available.
+
+Fetch the current top stories from the official Hacker News Firebase feed
+- **new_stories**: json list, including title, author, score, URL, timestamp, and child comment IDs when available.
+
+Fetch the newest stories from the official Hacker News Firebase feed
+- **fetch_top_stories_by_date**: Date must use YYYY-MM-DD.
+
+Search Hacker News stories created on a specific date using the public Algolia index
+- **get_item**: The kids field contains IDs of direct child comments; child contents are not downloaded automatically.
+
+Fetch one Hacker News item by numeric ID
 
 
 ## 💬 Prompt Examples
@@ -57,7 +66,7 @@ Here are some examples of how you can interact with the **Hacker News** MCP serv
 > "Get details and comments for HN item 123456"
 
 **🤖 AI Agent:**
-> Retrieving item 123456... Title: 'Mastering Rust for Systems Programming'. I've also fetched 10 top-level comments discussing memory safety and performance. Would you like me to summarize the discussion?
+> Retrieving item 123456... Title: 'Mastering Rust for Systems Programming'. The item includes its direct child comment IDs; would you like me to retrieve a specific child?
 
 ---
 
@@ -74,7 +83,7 @@ Here are some examples of how you can interact with the **Hacker News** MCP serv
 Yes. This server uses the public Hacker News API, which does not require authentication. You can start exploring stories and comments immediately after subscribing.
 
 **Q: How do I read comments for a specific HN story via chat?**
-Use the 'get_item' tool. Provide the story's numeric ID. The agent will retrieve the detailed contents including all top-level comments, converted cleanly from HTML to Markdown for easy reading.
+Use the `get_item` tool. Provide the story's numeric ID. The response includes the item's available fields and IDs of direct child comments; call `get_item` separately to read a child.
 
 **Q: Can I see the most recent submissions instead of just the top stories?**
 Absolutely. Use the 'new_stories' tool. This retrieves the most recently submitted stories chronologically, allowing you to track cutting-edge updates and launches in real-time.

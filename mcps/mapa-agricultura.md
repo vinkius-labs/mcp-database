@@ -34,7 +34,6 @@ Connect your AI agent to the **Brazilian Ministry of Agriculture and Livestock (
 
 
 ## Available Tools (8)
-- **get_resource**: Get metadata for a specific resource
 - **list_groups**: List all groups
 - **list_organizations**: List all organizations
 - **list_packages**: List all dataset names (packages)
@@ -42,8 +41,9 @@ Connect your AI agent to the **Brazilian Ministry of Agriculture and Livestock (
 
 Search for datasets matching a query
 - **list_tags**: List all tags
-- **get_organization**: Get details for a specific organization
 - **get_package**: Get metadata for a specific dataset (package)
+- **get_organization**: Get details for a specific organization
+- **get_resource**: Get metadata for a specific resource
 
 
 ## 💬 Prompt Examples

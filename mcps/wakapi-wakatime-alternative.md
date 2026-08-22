@@ -35,10 +35,10 @@ Connect your **Wakapi** instance to any AI agent to monitor your development wor
 ## Available Tools (4)
 - **get_stats**: Retrieve coding statistics for a user
 - **get_summaries**: Retrieve a detailed summary of activity
+- **list_projects**: List all projects tracked by the user
 - **send_heartbeats**: Provide a heartbeat object or an array of heartbeat objects.
 
 Send coding activity heartbeats to Wakapi
-- **list_projects**: List all projects tracked by the user
 
 
 ## 💬 Prompt Examples

@@ -34,20 +34,20 @@ Connect your AI agent to the **NCEI Climate Data Online** archive and explore de
 
 
 ## Available Tools (10)
-- **list_locationcategories**: List groupings of similar locations (e.g., Countries, States)
-- **list_datasets**: g., Daily Summaries, Global Summary of the Month).
-
-Find information about available NCEI datasets
-- **search_datasets**: Discover datasets based on temporal and spatial parameters
-- **get_service_data**: Access subset data in multiple formats
+- **list_datatypes**: List specific types of data (e.g., TAVG, PRCP)
 - **get_data**: Annual/Monthly data limited to 10-year range; other data limited to 1-year range.
 
 Fetch actual observations and ancillary attributes
-- **list_datatypes**: List specific types of data (e.g., TAVG, PRCP)
+- **get_service_data**: Access subset data in multiple formats
+- **list_datacategories**: List general types of data used to group similar data types
+- **list_datasets**: g., Daily Summaries, Global Summary of the Month).
+
+Find information about available NCEI datasets
+- **list_locationcategories**: List groupings of similar locations (e.g., Countries, States)
 - **list_locations**: List geopolitical entities or bounding areas
 - **list_stations**: List weather observing platforms
 - **search_data**: Discover data based on temporal and spatial parameters
-- **list_datacategories**: List general types of data used to group similar data types
+- **search_datasets**: Discover datasets based on temporal and spatial parameters
 
 
 ## 💬 Prompt Examples

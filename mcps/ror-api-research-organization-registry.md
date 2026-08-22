@@ -33,13 +33,13 @@ Connect to the **Research Organization Registry (ROR)**, the community-led regis
 
 
 ## Available Tools (3)
-- **list_organizations**: Use query, query_advanced, or affiliation for searching.
-
-Retrieve a list of ROR organizations or search via query
 - **get_heartbeat**: Check if the ROR API is operational
 - **get_organization**: Accepts full URL, domain+ID, or ID only.
 
 Retrieve a single ROR organization record
+- **list_organizations**: Use query, query_advanced, or affiliation for searching.
+
+Retrieve a list of ROR organizations or search via query
 
 
 ## 💬 Prompt Examples

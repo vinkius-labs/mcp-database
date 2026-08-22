@@ -33,13 +33,13 @@ Connect to the **MDIC (Ministry of Development, Industry, Trade and Services)** 
 
 
 ## Available Tools (5)
-- **get_package**: Get detailed metadata for a specific dataset (package)
-- **get_resource**: Get metadata for a specific resource (data file)
-- **search_datastore**: Query data directly from a resource stored in the Datastore
 - **search_packages**: g., "comex", "exportação").
 
 Search for datasets matching a specific query string
+- **get_package**: Get detailed metadata for a specific dataset (package)
+- **get_resource**: Get metadata for a specific resource (data file)
 - **list_packages**: List all datasets (packages) available in the MDIC portal
+- **search_datastore**: Query data directly from a resource stored in the Datastore
 
 
 ## 💬 Prompt Examples

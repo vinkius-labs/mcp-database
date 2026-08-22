@@ -49,21 +49,15 @@ Follow a user on Qiita
 - **get_comments**: Use for community feedback review, sentiment analysis, and engagement tracking.
 
 Get all comments on a Qiita article
-- **get_my_articles**: Use to audit your content performance, find articles to update, or review your publication history on the platform.
-
-Get your own published articles on Qiita
 - **get_my_profile**: Use to verify your identity, audit your community presence, or retrieve your user ID for further operations.
 
 Get the authenticated user profile on Qiita
-- **get_tag_articles**: Use for content discovery within specific topics, competitive analysis, and trend monitoring within the Japanese developer community.
-
-Get articles with a specific tag on Qiita
 - **get_tag_detail**: Use to evaluate a tag before publishing or to analyze topic popularity.
 
 Get details of a specific Qiita tag
-- **get_tags**: Use for content strategy — understand which topics have the most engagement and readership on the Japanese developer platform.
+- **get_user**: Use to research authors, verify identities, or analyze community influence.
 
-Get popular tags on Qiita sorted by follower count
+Get a Qiita user profile by username
 - **get_user_articles**: Use for competitive analysis, content research, or auditing an author's publication history.
 
 Get articles published by a specific Qiita user
@@ -76,9 +70,6 @@ Get followers of a specific Qiita user
 - **get_user_stocks**: Use to understand a user's interests, discover curated content, or research what content resonates with specific community members.
 
 Get articles stocked (bookmarked) by a specific user
-- **get_user**: Use to research authors, verify identities, or analyze community influence.
-
-Get a Qiita user profile by username
 - **is_item_stocked**: Use to check bookmark status before toggling stock operations.
 
 Check if an article is stocked (bookmarked) by you
@@ -88,9 +79,6 @@ Like an article (LGTM)
 - **post_comment**: Use for community engagement, providing feedback to authors, or contributing to technical discussions.
 
 Post a comment on a Qiita article
-- **publish_article**: Content is written in Markdown format. Provide up to 5 tags. Set private to true to create a limited-sharing article instead of a public one. Tags should be comma-separated.
-
-Publish a new article on Qiita
 - **search_articles**: Use the query parameter with Qiita search syntax: "tag:python", "user:username", "title:keyword", "created:>2024-01-01". Combine filters freely. Results include LGTM count, stock count, and comment count for engagement evaluation.
 
 Search Qiita articles by keyword, tag, or user
@@ -100,18 +88,9 @@ Add an article to your stock (bookmarks)
 - **unfollow_tag**: Articles with this tag will no longer appear in your personalized feed.
 
 Unfollow a tag on Qiita
-- **unlike_article**: The article's like count will decrease by one.
-
-Remove like (LGTM) from an article
 - **unstock_article**: The article itself is not affected.
 
 Remove an article from your stock (bookmarks)
-- **update_article**: You can modify the title, body, tags, or visibility. Use to fix typos, update content, change tags, or toggle public/private status.
-
-Update an existing article on Qiita
-- **delete_article**: This action cannot be undone. All associated comments, likes, and stocks will also be removed.
-
-Permanently delete an article from Qiita
 - **delete_comment**: This action cannot be undone. You can only delete comments you have authored.
 
 Permanently delete a comment from Qiita
@@ -124,6 +103,27 @@ Get Qiita Team organizations you belong to
 - **unfollow_user**: Their articles will no longer appear in your feed.
 
 Unfollow a user on Qiita
+- **delete_article**: This action cannot be undone. All associated comments, likes, and stocks will also be removed.
+
+Permanently delete an article from Qiita
+- **get_my_articles**: Use to audit your content performance, find articles to update, or review your publication history on the platform.
+
+Get your own published articles on Qiita
+- **get_tag_articles**: Use for content discovery within specific topics, competitive analysis, and trend monitoring within the Japanese developer community.
+
+Get articles with a specific tag on Qiita
+- **get_tags**: Use for content strategy — understand which topics have the most engagement and readership on the Japanese developer platform.
+
+Get popular tags on Qiita sorted by follower count
+- **publish_article**: Content is written in Markdown format. Provide up to 5 tags. Set private to true to create a limited-sharing article instead of a public one. Tags should be comma-separated.
+
+Publish a new article on Qiita
+- **unlike_article**: The article's like count will decrease by one.
+
+Remove like (LGTM) from an article
+- **update_article**: You can modify the title, body, tags, or visibility. Use to fix typos, update content, change tags, or toggle public/private status.
+
+Update an existing article on Qiita
 
 
 ## 💬 Prompt Examples

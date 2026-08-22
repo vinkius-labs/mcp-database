@@ -33,9 +33,9 @@ Connect to the **Smithsonian Open Access** repository and bring millions of muse
 
 
 ## Available Tools (3)
-- **search_category**: Search within specific categories or units
 - **get_content**: Retrieve a specific museum record by its unique identifier
 - **search_records**: Search for museum records across all Smithsonian units
+- **search_category**: Search within specific categories or units
 
 
 ## 💬 Prompt Examples
