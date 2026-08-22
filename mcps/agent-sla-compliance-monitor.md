@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [observability](../categories/observability.md)
+**Category:** [reliability](../categories/reliability.md)
 
-Deterministic SLA compliance calculator for agent orchestration systems.
+Deterministic engine for calculating real-time SLA compliance, error budget depletion, and health scoring.
 
 ## Description
-This MCP server provides deterministic tools to evaluate the operational health of AI agents. It compares real-world performance metrics against strict Service Level Agreements (SLAs). Use `calculate_tenant_compliance` to evaluate specific tenant metrics like response time, availability, accuracy, and throughput. Use `get_tenant_targets` to retrieve unique SLA configurations for a tenant, or `summarize_fleet_health` to get an aggregated view of compliance across all tenants to identify systemic issues.
+This MCP server provides a deterministic engine for monitoring autonomous agent reliability. It evaluates performance against predefined Service Level Agreements (SLAs) by calculating core metrics like latency, availability, and accuracy. Use `calculate_compliance_metrics` to evaluate how well the system meets targets, `analyze_error_budget` to track budget depletion and burn rates, and `get_composite_health_score` to generate a unified health metric using a geometric mean. It is designed to identify critical violations and forecast error budget exhaustion.
 
 
 ## Available Tools (3)
-- **calculate_tenant_compliance**: Evaluates the specific SLA compliance for a single tenant based on their provided targets and a window of recorded measurements
-- **get_tenant_targets**: Retrieves the specific SLA target configurations for a given tenant
-- **summarize_fleet_health**: Provides an aggregated view of compliance across all tenants to identify systemic issues
+- **analyze_error_budget**: Determines the status of the error budget, including remaining capacity and burn rate
+- **calculate_compliance_metrics**: Calculates core compliance percentages for latency, availability, and accuracy
+- **get_composite_health_score**: Generates a single unified score representing the total system health
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides deterministic tools to evaluate the operational health 
 Here are some examples of how you can interact with the **Agent SLA Compliance Monitor** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Check the SLA compliance for tenant 'tenant-123' using these measurements: [{'latencyMs': 150, 'isSuccess': true, 'isCorrect': true, 'timestamp': '2024-01-01T00:00:00Z'}]."
+> "Calculate the compliance metrics for a system with a 99.9% availability target and 500ms P99 latency target, given these measurements: [{"responseTimeMs": 450, "isCorrect": true, "timestamp": 1700000000}, {"responseTimeMs": 550, "isCorrect": false, "timestamp": 1700000060}]."
 
 **🤖 AI Agent:**
-> The compliance score for tenant-123 is 100% across all metrics, and the error budget remains fully intact.
+> The response time compliance is 50.0%, the availability compliance is 100.0%, and the accuracy compliance is 50.0%.
 
 ---
 
 **👤 You:**
-> "What is the current health status of the entire agent fleet?"
+> "Analyze the error budget if availability compliance is 99.5%, the target is 99.9%, and the error budget is 0.1%."
 
 **🤖 AI Agent:**
-> The fleet status is Healthy, with a global alert count of 0.
+> The error budget remaining is 0.05%, and the burn rate is 1.25.
 
 ---
 
 **👤 You:**
-> "Get the SLA targets for tenant 'customer-alpha'."
+> "What is the composite health score for compliance values of 99.5, 99.9, and 98.0?"
 
 **🤖 AI Agent:**
-> The targets for customer-alpha are: 200ms P99 latency, 99.9% availability, 95% accuracy, and 10 RPS throughput.
+> The composite SLA score is 99.13.
 
 
 ## ❓ FAQ
 
-**Q: How is the composite SLA score calculated?**
-The composite score is derived from the geometric mean of all individual metric compliance percentages, including response time, availability, accuracy, and throughput.
+**Q: How is the composite health score calculated?**
+The score is calculated as the geometric mean of all individual compliance percentages, such as those provided by `get_composite_health_score`.
 
-**Q: Can I monitor different SLAs for different tenants?**
-Yes, the `calculate_tenant_compliance` tool supports multi-tenancy by evaluating metrics against specific targets provided for each unique tenant ID.
+**Q: What triggers an SLA violation flag?**
+A violation is flagged if any individual compliance percentage falls below 99% or if the error budget burn rate exceeds 2.0.
 
-**Q: What defines a critical SLA violation?**
-A violation is classified as critical if any metric breaches its target by more than 5%.
+**Q: Can I use this with Cursor or Claude Desktop?**
+Yes, this MCP server can be connected to Cursor, Claude Desktop, VS Code, Windsurf, and any other MCP-compatible client via Vinkius Edge.
 
 
 ## Installation & Usage

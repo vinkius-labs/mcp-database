@@ -34,8 +34,6 @@ Connect to the **Inep Open Data Portal** (Instituto Nacional de Estudos e Pesqui
 
 
 ## Available Tools (12)
-- **get_group**: Get group details
-- **get_organization**: Get organization details
 - **get_package**: Get dataset details
 - **get_resource**: Get resource details
 - **list_groups**: List groups
@@ -45,9 +43,11 @@ List organizations
 - **list_packages**: List all dataset (package) names
 - **list_tags**: List tags
 - **search_datastore_sql**: Query data using SQL (DataStore)
+- **search_resources**: Search resources
+- **get_group**: Get group details
+- **get_organization**: Get organization details
 - **search_datastore**: Search data within a resource (DataStore)
 - **search_packages**: Search datasets
-- **search_resources**: Search resources
 
 
 ## 💬 Prompt Examples

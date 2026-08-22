@@ -35,17 +35,12 @@ Connect your **Gotify** instance to any AI agent to streamline your notification
 ## Available Tools (22)
 - **change_password**: Change current user password
 - **delete_all_messages**: Delete all messages for the authenticated client
-- **delete_application**: Delete an application
 - **delete_client**: Delete a client
 - **delete_message**: Delete a specific message
 - **get_applications**: List all applications
 - **get_clients**: List all clients
 - **get_current_user**: Get current user details
 - **get_health**: Get server health status
-- **get_messages**: Requires GOTIFY_CLIENT_TOKEN.
-
-Retrieve messages
-- **get_plugin_config**: Get plugin configuration
 - **update_client**: Update a client
 - **update_plugin_config**: Update plugin configuration
 - **create_application**: Create a new application
@@ -53,12 +48,17 @@ Retrieve messages
 - **create_user**: Create a new user (Admin only)
 - **get_plugin_display**: Get plugin display info
 - **get_plugins**: List all plugins
+- **update_application**: Update an application
+- **delete_application**: Delete an application
+- **get_messages**: Requires GOTIFY_CLIENT_TOKEN.
+
+Retrieve messages
+- **get_plugin_config**: Get plugin configuration
 - **get_users**: List all users (Admin only)
 - **get_version**: Get server version info
 - **send_message**: Requires GOTIFY_APP_TOKEN.
 
 Send a message via Gotify
-- **update_application**: Update an application
 
 
 ## 💬 Prompt Examples

@@ -34,23 +34,23 @@ Connect your **GoatCounter** account to any AI agent to monitor your web traffic
 
 
 ## Available Tools (14)
-- **get_export**: Get export status and metadata
-- **get_site**: Detailed information about a site
-- **list_sites**: List all sites accessible by the user
 - **get_me**: Get current user and API key info
-- **start_export**: Returns an export ID to check status.
-
-Start a new data export in the background
-- **get_stats_hits_path**: Referral statistics for a specific path
+- **list_sites**: List all sites accessible by the user
 - **get_stats_hits**: Overview of pageviews per path
-- **count_hits**: Send pageviews or events to GoatCounter
+- **get_stats_hits_path**: Referral statistics for a specific path
 - **create_site**: Create a new site
-- **download_export**: Download a completed export file
 - **get_stats_page_detail**: g., browser versions).
 
 Detailed stats for a specific item in a category
-- **get_stats_page**: Stats for specific categories (browsers, systems, etc)
 - **get_stats_total**: Total pageview counts for a date range
+- **count_hits**: Send pageviews or events to GoatCounter
+- **download_export**: Download a completed export file
+- **get_export**: Get export status and metadata
+- **get_site**: Detailed information about a site
+- **get_stats_page**: Stats for specific categories (browsers, systems, etc)
+- **start_export**: Returns an export ID to check status.
+
+Start a new data export in the background
 - **update_site**: Update site settings
 
 

@@ -34,18 +34,9 @@ Connect your **Hashnode** account to any AI agent to streamline your technical w
 
 
 ## Available Tools (16)
-- **delete_draft**: The author or publication admins can delete.
-
-Soft-delete a draft
 - **create_draft**: Requires Pro plan. If publicationId is omitted, auto-resolves from your publications.
 
 Create a draft post without publishing
-- **create_image_upload_url**: Content-Type must start with image/ (e.g., image/png). Max 8 MB. SVG rejected.
-
-Get a presigned URL for uploading an image
-- **create_post**: If publicationId is omitted, auto-resolves from your publications (1 blog = auto-select; 2+ = error listing options). Use get_my_publications to find your ID.
-
-Publish a new post to a publication
 - **get_feed**: Use after cursor for pagination.
 
 Get the globalThis Hashnode feed
@@ -53,8 +44,8 @@ Get the globalThis Hashnode feed
 - **get_my_publications**: Use this to find your Publication ID before creating posts or drafts.
 
 List all publications owned by the authenticated user
-- **get_post_by_id**: Get a single post by its ID
 - **get_post**: Get a single post by its slug
+- **get_post_by_id**: Get a single post by its ID
 - **get_publication_posts**: Get a list of posts from a specific publication
 - **get_tag**: g., javascript, graphql).
 
@@ -66,10 +57,19 @@ Publish an existing draft as a post
 - **submit_draft_for_review**: Used by contributors.
 
 Submit a draft for editor review
+- **update_post**: Modify an existing post
+- **create_image_upload_url**: Content-Type must start with image/ (e.g., image/png). Max 8 MB. SVG rejected.
+
+Get a presigned URL for uploading an image
+- **create_post**: If publicationId is omitted, auto-resolves from your publications (1 blog = auto-select; 2+ = error listing options). Use get_my_publications to find your ID.
+
+Publish a new post to a publication
+- **delete_draft**: The author or publication admins can delete.
+
+Soft-delete a draft
 - **update_draft**: All content fields are optional.
 
 Update an existing draft
-- **update_post**: Modify an existing post
 
 
 ## 💬 Prompt Examples

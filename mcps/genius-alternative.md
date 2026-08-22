@@ -34,34 +34,34 @@ Connect your **Genius** account to any AI agent to explore the world's largest d
 
 
 ## Available Tools (14)
-- **get_referents**: Get referents (sections of content with annotations)
 - **get_song**: Get data for a specific song
 - **lookup_web_page**: Lookup a web page on Genius
 - **search**: Search all song content hosted on Genius
 - **get_artist_songs**: Get songs by a specific artist
-- **get_account**: Requires me scope.
-
-Get current user account information
 - **get_annotation**: Get data for a specific annotation
-- **get_artist**: Get data for a specific artist
 - **unvote_annotation**: Requires vote scope.
 
 Remove vote from an annotation
-- **create_annotation**: Requires create_annotation scope.
-
-Create a new annotation on a public web page
 - **delete_annotation**: Requires manage_annotation scope.
 
 Delete an annotation
 - **downvote_annotation**: Requires vote scope.
 
 Downvote an annotation
-- **update_annotation**: Requires manage_annotation scope.
-
-Update an annotation
 - **upvote_annotation**: Requires vote scope.
 
 Upvote an annotation
+- **update_annotation**: Requires manage_annotation scope.
+
+Update an annotation
+- **create_annotation**: Requires create_annotation scope.
+
+Create a new annotation on a public web page
+- **get_account**: Requires me scope.
+
+Get current user account information
+- **get_artist**: Get data for a specific artist
+- **get_referents**: Get referents (sections of content with annotations)
 
 
 ## 💬 Prompt Examples

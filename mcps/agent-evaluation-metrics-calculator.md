@@ -7,16 +7,16 @@
 
 **Category:** [developer-tools](../categories/developer-tools.md)
 
-A deterministic engine for measuring agentic performance through statistical accuracy, efficiency, and reliability metrics.
+Quantify agent performance with deterministic accuracy, speed, and efficiency metrics.
 
 ## Description
-This MCP server provides a deterministic evaluation engine to quantify the performance of autonomous agents. It connects AI clients to specialized statistical tools that calculate core accuracy metrics like precision, recall, and F1 score. Users can analyze operational costs using `calculate_efficiency_and_latency` to track token and cost efficiency, or assess reliability with `calculate_calibration_error` to measure Expected Calibration Error (ECE). The engine also detects performance regressions by comparing current accuracy against established baselines using `calculate_performance_metrics`.
+This MCP server provides a deterministic engine to evaluate AI agent performance. It calculates core success metrics like accuracy, precision, recall, and F1 score using `calculate_core_metrics`. It also analyzes operational costs through `calculate_efficiency_metrics` to determine latency and token efficiency. Finally, it generates a weighted composite score and detects performance regressions via `calculate_composite_and_health` based on a defined baseline accuracy.
 
 
 ## Available Tools (3)
-- **calculate_calibration_error**: Determines the Expected Calibration Error (ECE) to assess if the agent's confidence is trustworthy
-- **calculate_efficiency_and_latency**: Analyzes the operational costs and temporal performance of the agent
-- **calculate_performance_metrics**: Computes core statistical accuracy and reliability scores for a set of task results
+- **calculate_composite_and_health**: Generates a single performance score and determines if the agent is underperforming relative to a baseline
+- **calculate_core_metrics**: Calculates the foundational performance indicators (accuracy, precision, recall, and F1 score) based on task outcomes
+- **calculate_efficiency_metrics**: Analyzes the operational cost and speed of the agent
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides a deterministic evaluation engine to quantify the perfo
 Here are some examples of how you can interact with the **Agent Evaluation Metrics Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Calculate the performance metrics for these results: [{"taskId": "1", "expectedOutput": "A", "actualOutput": "A", "latencyMs": 100, "tokensUsed": 50, "successBoolean": true, "confidenceScore": 0.9}]"
+> "Calculate the core metrics for these tasks: [{'task_id': '1', 'expected_output': 'A', 'actual_output': 'A', 'latency_ms': 100, 'tokens_used': 50, 'success_boolean': true}, {'task_id': '2', 'expected_output': 'B', 'actual_output': 'C', 'latency_ms': 150, 'tokens_used': 60, 'success_boolean': false}]"
 
 **🤖 AI Agent:**
-> {"accuracy": 1.0, "precision": 1.0, "recall": 1.0, "f1Score": 1.0, "taskCompletionRate": 1.0, "isF1Low": false, "regressionDetected": false, "accuracyDropPercentage": 0.0}
+> {"accuracy": 0.5, "precision": 1.0, "recall": 0.5, "f1Score": 0.6666666666666666}
 
 ---
 
 **👤 You:**
-> "What is the latency profile for these tasks: [{"taskId": "1", "latencyMs": 200, "tokensUsed": 100, "computeUnitsUsed": 10, "successBoolean": true}]"
+> "What is the token efficiency for 10 successful tasks using 500 tokens?"
 
 **🤖 AI Agent:**
-> {"averageLatency": 200, "p95Latency": 200, "tokenEfficiency": 0.01, "costEfficiency": 0.1}
+> 0.02
 
 ---
 
 **👤 You:**
-> "Check the calibration error for these confidence scores: [{"confidenceScore": 0.8, "successBoolean": true}, {"confidenceScore": 0.8, "successBoolean": false}]"
+> "Check if an agent with 0.85 accuracy has regressed against a baseline of 0.95, with avg latency 200, efficiency 0.01, and weights {'accuracy_weight': 0.5, 'latency_weight': 0.3, 'efficiency_weight': 0.2}."
 
 **🤖 AI Agent:**
-> {"expectedCalibrationError": 0.1, "calibrationStatus": "calibrated"}
+> {"compositeScore": 0.505, "regressionFlag": true}
 
 
 ## ❓ FAQ
 
-**Q: What metrics can I calculate?**
-You can calculate accuracy, precision, recall, F1 score, task completion rate, average and p95 latency, token efficiency, cost efficiency, regression detection, and Expected Calibration Error (ECE).
+**Q: How do I calculate the F1 score?**
+You can use the `calculate_core_metrics` tool by providing an array of task results. It will return the F1 score along with accuracy, precision, and recall.
 
-**Q: How does the regression detection work?**
-By using `calculate_performance_metrics`, you can provide a baseline accuracy. The tool will flag a regression if the current accuracy drops by more than 5% compared to that baseline.
+**Q: What triggers a regression flag?**
+A regression flag is triggered via `calculate_composite_and_health` if the current accuracy falls below 95% of your specified baseline accuracy.
 
-**Q: Can I measure how much my agent costs to run?**
-Yes, the `calculate_efficiency_and_latency` tool calculates cost efficiency by dividing the number of successful tasks by the total compute units used.
+**Q: How is token efficiency measured?**
+Token efficiency is calculated by the `calculate_efficiency_metrics` tool as the ratio of successful tasks to the total number of tokens consumed.
 
 
 ## Installation & Usage

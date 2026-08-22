@@ -36,11 +36,11 @@ Your agent can search the catalog using natural language, browse by category or 
 - **Growth Engineers** — monitor category trends and new MCPs to inform strategic positioning.
 
 
-## Available Tools (10)
+## Available Tools (12)
 - **get_listing_prompts**: ].
 
 Call this to see example prompts for a catalog MCP and understand what it does
-- **search_catalog**: Omit query to browse. Every result is an installable MCP that adds new tools to you. Call get_listing next to inspect a match.
+- **search_catalog**: Omit query to browse. Every result is an MCP addressed by its slug — call get_listing with that slug to inspect it. For a logged-in user who already has a result MCP, that result carries a server_id (UUID) usable directly with invoke_tool and get_connect_token; server_id is null otherwise. Results never expose an internal listing id — the catalog is addressed only by slug.
 
 When you do not have a tool or connector for the user's request, call this to search the catalog and find one. Never tell the user something is impossible before searching here
 - **get_credentials_schema**: Returns credential_schema (field keys, types, required) and credentials_configured. Build the set_credentials payload from these keys. Secrets are never returned.
@@ -49,15 +49,6 @@ Call this to get the credential fields a connector needs before its tools can be
 - **get_random_listings**: ]}.
 
 Call this to sample random catalog MCPs and discover connectors you did not know existed. For a specific need, use search_catalog instead
-- **active_mcps**: Narrow with filter (active|inactive), search (by name) or page.
-
-Call this to list the connectors the user already has. If none matches the task, call search_catalog to find a new one. Use it to get the ids needed by get_manifest, credentials_status and set_credentials
-- **get_listing**: installed/authenticated/ready are booleans for the current user, null if anonymous.
-
-After search_catalog returns a match, call this to inspect that MCP and confirm it has the tools you need before telling the user to install it
-- **get_manifest**: Returns each MCP with a tools[] array of {name, description, inputSchema}.
-
-Call this to get the callable tools and input schemas a connector adds, before invoking any of its downstream tools
 - **set_credentials**: Handles both owned and installed MCPs.
 
 Call this to save a connector's credentials so its tools become usable. Call get_credentials_schema first for the required fields
@@ -67,6 +58,21 @@ Call this to check whether a connector is ready to use or still needs credential
 - **get_listing_faqs**: ].
 
 Call this to read the FAQs of a catalog MCP you are evaluating
+- **list_tools**: Returns { server_id, name, requires_auth, tools: [{name, description, inputSchema}] }. If requires_auth is true, the MCP still needs credentials before its tools will work.
+
+Call this to get the tools of an MCP the user has, with their names and argument schemas, before running one with invoke_tool
+- **get_listing**: Returns the MCP detail, its full tool list, FAQs, category listings and related MCPs. installed/authenticated/ready are booleans for the current user (null if anonymous). If the user is logged in and has this MCP, the response also carries a server_id (UUID) you can use directly with invoke_tool and get_connect_token; server_id is null when the user is anonymous or does not have this MCP yet.
+
+After search_catalog returns a match, call this to inspect that MCP and confirm it has the tools you need before telling the user to install it
+- **get_connect_token**: Returns { mcp_url, source } where source is owner | subscription | preview. The mcp_url embeds the connection token — treat it as a secret. Reuses the user's existing token when one exists, otherwise mints one.
+
+Call this to get the connection URL for an MCP so a client can connect to it. Returns a ready-to-use mcp_url with the token embedded
+- **invoke_tool**: Returns the tool result. Fails if the MCP is not connected for execution or still needs credentials — use credentials_status and set_credentials to fix that first.
+
+Call this to run a tool on an MCP the user already has, without connecting to it yourself. Vinkius runs it on the user's behalf and returns the result. Get the tool name and argument schema from list_tools first
+- **active_mcps**: Narrow with filter (active|inactive), search (by name) or page.
+
+Call this to list the connectors the user already has. If none matches the task, call search_catalog to find a new one. Use it to get the server_id needed by list_tools, invoke_tool, get_credentials_schema, credentials_status, set_credentials and get_connect_token
 
 
 ## 💬 Prompt Examples

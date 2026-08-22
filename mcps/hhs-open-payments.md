@@ -35,13 +35,13 @@ Connect to the **HHS Open Payments** database to explore financial transparency 
 
 ## Available Tools (6)
 - **list_datasets**: List all available Open Payments datasets
+- **get_dataset**: Get metadata for a specific Open Payments dataset
+- **search_hospitals**: Search for specific teaching hospitals
 - **download_dataset**: JSON is recommended for programmatic access.
 
 Download a specific Open Payments dataset
-- **get_dataset**: Get metadata for a specific Open Payments dataset
 - **query_dataset**: Query specific records within a dataset using SoQL
 - **search_physicians**: Search for specific physicians
-- **search_hospitals**: Search for specific teaching hospitals
 
 
 ## 💬 Prompt Examples
