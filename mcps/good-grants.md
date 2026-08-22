@@ -36,13 +36,13 @@ Connect your **Good Grants** account to any AI agent and simplify how you coordi
 
 
 ## Available Tools (7)
-- **create_new_application**: Register a new application
-- **get_application_details**: Get details for a specific application
 - **list_applications**: List Good Grants applications
 - **list_grant_categories**: List grant categories
-- **list_grant_funds**: List grant funds
-- **list_application_reviews**: List reviews
 - **list_account_users**: List account users
+- **list_application_reviews**: List reviews
+- **create_new_application**: Register a new application
+- **get_application_details**: Get details for a specific application
+- **list_grant_funds**: List grant funds
 
 
 ## 💬 Prompt Examples

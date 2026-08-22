@@ -36,20 +36,20 @@ No more manual uploads or configuration through complex web editors. Your AI act
 
 
 ## Available Tools (12)
+- **get_flipbook_details**: Get details for a specific flipbook
+- **list_available_templates**: List flipbook templates
+- **list_bookshelf_flipbooks**: List flipbooks in a bookshelf
+- **update_flipbook_design**: Update flipbook design or settings
+- **check_api_status**: Verify Heyzine API status
+- **get_account_info**: Get Heyzine account information
+- **get_bookshelf_details**: Get details for a bookshelf
+- **add_flipbook_to_bookshelf**: Add a flipbook to a collection
 - **convert_pdf_to_flipbook**: Returns the flipbook URL and ID.
 
 Convert a PDF URL to an interactive flipbook
-- **get_flipbook_details**: Get details for a specific flipbook
-- **list_all_flipbooks**: List all flipbooks in the account
-- **list_bookshelf_flipbooks**: List flipbooks in a bookshelf
-- **list_available_templates**: List flipbook templates
-- **remove_flipbook_from_bookshelf**: Remove a flipbook from a collection
-- **update_flipbook_design**: Update flipbook design or settings
-- **add_flipbook_to_bookshelf**: Add a flipbook to a collection
-- **check_api_status**: Verify Heyzine API status
 - **delete_flipbook**: Delete a flipbook
-- **get_account_info**: Get Heyzine account information
-- **get_bookshelf_details**: Get details for a bookshelf
+- **list_all_flipbooks**: List all flipbooks in the account
+- **remove_flipbook_from_bookshelf**: Remove a flipbook from a collection
 
 
 ## 💬 Prompt Examples

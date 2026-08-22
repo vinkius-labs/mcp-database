@@ -36,13 +36,13 @@ Connect your **iFax** account to any AI agent and manage fax communications thro
 
 ## Available Tools (6)
 - **resend_fax**: Resend a failed fax
+- **list_faxes**: List sent faxes
+- **download_fax**: Download a fax document
+- **cancel_fax**: Cancel a pending fax
+- **get_fax_status**: Check fax delivery status
 - **send_fax**: Pass faxData as a JSON string containing the file metadata and base64 content.
 
 Send a new fax
-- **get_fax_status**: Check fax delivery status
-- **list_faxes**: List sent faxes
-- **cancel_fax**: Cancel a pending fax
-- **download_fax**: Download a fax document
 
 
 ## 💬 Prompt Examples

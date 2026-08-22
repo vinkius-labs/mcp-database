@@ -36,15 +36,15 @@ No more manual checking of individual progress bars or digging through CSV repor
 
 
 ## Available Tools (9)
-- **freeze_user**: Freeze a user account
 - **get_user_details**: Get details for a specific user
-- **invite_user**: Invite a new learner
 - **list_completed_assignments**: List completed training assignments
 - **list_groups**: List learner groups
 - **list_overdue_assignments**: List overdue training assignments
 - **list_users**: List Innform users
-- **unfreeze_user**: Unfreeze a user account
 - **update_user**: Update an existing user
+- **freeze_user**: Freeze a user account
+- **invite_user**: Invite a new learner
+- **unfreeze_user**: Unfreeze a user account
 
 
 ## 💬 Prompt Examples

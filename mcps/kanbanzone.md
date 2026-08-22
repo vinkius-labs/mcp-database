@@ -36,12 +36,12 @@ Connect your **KanbanZone** account to any AI agent and manage kanban boards thr
 ## Available Tools (8)
 - **create_cards**: Add multiple cards to a board
 - **list_boards**: List all Kanban boards
-- **create_webhook**: Create a new board webhook
 - **delete_webhook**: Remove a board webhook
 - **list_cards**: List cards on a board
 - **list_webhooks**: List webhooks for a board
-- **move_card**: Move a card to a different column
 - **update_card**: Update an existing card
+- **create_webhook**: Create a new board webhook
+- **move_card**: Move a card to a different column
 
 
 ## 💬 Prompt Examples

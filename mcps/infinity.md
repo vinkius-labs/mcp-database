@@ -36,20 +36,20 @@ Connect your **Infinity** account to any AI agent and manage projects through na
 
 ## Available Tools (12)
 - **check_api_health**: Verify Infinity API connectivity
-- **create_board_item**: Values must map to attribute IDs.
-
-Add a new item to a board
 - **remove_board_item**: Delete an item from a board
 - **get_current_user_profile**: Get authenticated user info
 - **list_board_attributes**: List board attributes (fields)
 - **list_workspace_boards**: List boards in a workspace
-- **list_item_comments**: List comments on an item
+- **list_board_webhooks**: List active webhooks for a board
+- **list_workspaces**: List all workspaces
+- **create_board_item**: Values must map to attribute IDs.
+
+Add a new item to a board
 - **list_board_folders**: List folders in a board
 - **list_board_items**: Supports filtering by folder.
 
 List all tasks/items in a board
-- **list_board_webhooks**: List active webhooks for a board
-- **list_workspaces**: List all workspaces
+- **list_item_comments**: List comments on an item
 - **update_board_item**: Modify an existing item
 
 

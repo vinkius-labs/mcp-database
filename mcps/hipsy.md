@@ -40,19 +40,19 @@ Connect your **Hipsy** account to any AI agent and manage your event ticketing o
 - **get_order**: Get order details
 - **get_organisation**: Get organisation details
 - **get_scan_stats**: Get scan statistics
-- **list_attendees**: List attendees
 - **list_events**: List all events
-- **list_orders_by_event**: List orders by event
 - **list_orders**: List all orders
 - **list_organisations**: List organisations
 - **list_past_events**: List past events
-- **list_scans**: List scan entries
 - **check_hipsy_status**: Verify connectivity
-- **get_event_revenue**: Get event revenue
 - **get_event**: Get event details
-- **list_ticket_types**: List ticket types
+- **get_event_revenue**: Get event revenue
 - **list_upcoming_events**: List upcoming events
 - **list_webhooks**: List webhooks
+- **list_attendees**: List attendees
+- **list_orders_by_event**: List orders by event
+- **list_scans**: List scan entries
+- **list_ticket_types**: List ticket types
 
 
 ## 💬 Prompt Examples

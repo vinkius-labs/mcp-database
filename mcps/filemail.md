@@ -40,12 +40,12 @@ No more manual status checking or complex transfer management through fragmented
 - **get_configuration**: Get account configuration
 - **get_transfer_details**: Get details of a specific transfer
 - **get_user**: Get user profile
-- **list_received_transfers**: List received transfers (inbox)
 - **list_sent_transfers**: List sent transfers
-- **login**: Login to Filemail
+- **list_contacts**: List contacts
 - **complete_transfer**: Finalize a file transfer
 - **initialize_transfer**: Initialize a new file transfer
-- **list_contacts**: List contacts
+- **list_received_transfers**: List received transfers (inbox)
+- **login**: Login to Filemail
 
 
 ## 💬 Prompt Examples

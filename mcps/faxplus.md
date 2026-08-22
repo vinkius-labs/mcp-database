@@ -39,27 +39,27 @@ No more manual status checking or complex form navigation in the fax dashboard. 
 - **get_account_info**: Use this to determine the current identity and account context.
 
 Retrieve current Fax.Plus account details
-- **get_fax_details**: Includes information about the recipient, sender, and delivery status.
-
-Get details for a specific fax
 - **list_faxes**: Use this to monitor communication history and obtain fax IDs.
 
 List received and sent faxes
 - **list_fax_numbers**: Includes the number itself and its activation status.
 
 List all assigned fax numbers
-- **list_outbox_jobs**: Useful for monitoring ongoing transmissions.
-
-List active or pending fax jobs
 - **search_available_numbers**: Useful for expanding telephony infrastructure.
 
 Search for available fax numbers
-- **send_fax**: Requires the recipient phone number in E.164 format and allows for optional comments. Files are typically managed via the Fax.Plus outbox logic.
-
-Send a new digital fax
 - **cancel_outbox_job**: Requires the unique outbox job ID.
 
 Cancel a pending fax job
+- **get_fax_details**: Includes information about the recipient, sender, and delivery status.
+
+Get details for a specific fax
+- **list_outbox_jobs**: Useful for monitoring ongoing transmissions.
+
+List active or pending fax jobs
+- **send_fax**: Requires the recipient phone number in E.164 format and allows for optional comments. Files are typically managed via the Fax.Plus outbox logic.
+
+Send a new digital fax
 
 
 ## 💬 Prompt Examples

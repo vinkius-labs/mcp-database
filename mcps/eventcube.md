@@ -14,17 +14,17 @@ The Eventcube MCP server brings your event operations directly into your convers
 
 
 ## Available Tools (12)
-- **get_event**: Retrieve details for a specific event
 - **list_events**: List all events in your Eventcube account
-- **create_event**: Create a new event
-- **create_ticket**: Create a new ticket for an event
 - **create_venue**: Create a new venue profile
 - **get_me**: Check API connectivity and get account context
-- **get_order**: Retrieve details for a specific order
 - **list_categories**: List event categories
 - **list_orders**: List all ticket orders
 - **list_tickets**: List all tickets for a specific event
 - **list_venues**: List all saved venues
+- **create_event**: Create a new event
+- **create_ticket**: Create a new ticket for an event
+- **get_event**: Retrieve details for a specific event
+- **get_order**: Retrieve details for a specific order
 - **resend_order_confirmation**: Resend the confirmation email for an order
 
 

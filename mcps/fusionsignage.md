@@ -38,19 +38,19 @@ Connect your **FusionSignage** account to any AI agent and manage your digital s
 - **assign_playlist**: Assign playlist to screen
 - **check_fusion_status**: Verify connectivity
 - **create_playlist**: Create a playlist
-- **create_schedule**: Create a schedule
-- **delete_media**: Delete media
 - **delete_playlist**: Delete a playlist
 - **get_media_item**: Get media details
 - **get_playlist**: Get playlist details
 - **get_screen_status**: Get screen status
-- **get_screen**: Get screen details
 - **list_playlists**: List all playlists
-- **list_schedules**: List schedules
 - **list_screens**: List all screens
 - **update_playlist**: Update a playlist
+- **create_schedule**: Create a schedule
+- **delete_media**: Delete media
+- **get_screen**: Get screen details
 - **list_groups**: List screen groups
 - **list_media**: List all media
+- **list_schedules**: List schedules
 - **update_screen**: Update a screen
 
 

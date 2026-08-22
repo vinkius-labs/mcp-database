@@ -34,15 +34,12 @@ Connect your **Invoicing Plus** account to any AI agent and manage billing throu
 
 
 ## Available Tools (12)
-- **create_customer**: plus with the provided name and email.
-
-Create a new customer in Invoicing.plus
 - **get_company**: plus.
 
 Get a specific company from Invoicing.plus
-- **get_customer**: plus API.
+- **create_customer**: plus with the provided name and email.
 
-Get a specific customer from Invoicing.plus
+Create a new customer in Invoicing.plus
 - **get_estimate**: plus API.
 
 Get a specific estimate from Invoicing.plus
@@ -55,9 +52,6 @@ Get a specific item from Invoicing.plus
 - **list_companies**: plus.
 
 List companies from Invoicing.plus
-- **list_customers**: plus API.
-
-List customers from Invoicing.plus
 - **list_estimates**: plus API.
 
 List estimates from Invoicing.plus
@@ -67,6 +61,12 @@ List invoices from Invoicing.plus
 - **list_items**: plus API.
 
 List items/products from Invoicing.plus
+- **get_customer**: plus API.
+
+Get a specific customer from Invoicing.plus
+- **list_customers**: plus API.
+
+List customers from Invoicing.plus
 - **list_payments**: plus API.
 
 List payments from Invoicing.plus

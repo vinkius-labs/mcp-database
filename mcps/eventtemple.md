@@ -36,9 +36,9 @@ No more manual deal logging or digging through complex catering tables. Your AI 
 
 
 ## Available Tools (9)
-- **list_tasks**: List all tasks
 - **list_events**: List all individual events
 - **list_invoices**: List all invoices
+- **list_tasks**: List all tasks
 - **get_booking**: Get booking details
 - **get_contact**: Get contact details
 - **get_event**: Get event details

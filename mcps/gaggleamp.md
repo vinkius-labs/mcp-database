@@ -36,18 +36,18 @@ No more manual status checking or complex activity creation through slow web das
 
 
 ## Available Tools (12)
-- **get_account_details**: Get user profile
 - **create_activity**: Add new task for members
 - **get_activity_engagement**: Get stats for activity
-- **get_top_advocates**: Get rankings
 - **get_member_points**: Check point balance
+- **get_top_advocates**: Get rankings
 - **invite_new_advocate**: Invite to Gaggle
 - **list_activities**: List available activities
 - **list_all_gaggles**: List accessible Gaggles
 - **list_gaggle_members**: List all advocates
 - **list_reward_history**: Get claimed rewards
-- **list_available_rewards**: List redeemable items
 - **redeem_reward_item**: Process reward claim
+- **get_account_details**: Get user profile
+- **list_available_rewards**: List redeemable items
 
 
 ## 💬 Prompt Examples

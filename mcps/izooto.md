@@ -37,15 +37,15 @@ No more manual logging into the dashboard for basic campaign checks. Your AI act
 
 ## Available Tools (10)
 - **check_izooto_status**: Verify iZooto API connectivity
-- **create_segment**: Create an audience segment
-- **get_notification**: Get notification details
 - **get_stats**: Get push analytics
-- **get_subscriber_count**: Get total subscriber count
+- **create_segment**: Create an audience segment
 - **list_audiences**: List audience overview
 - **list_notifications**: List sent notifications
 - **list_segments**: List all segments
-- **send_push**: Send a push notification
 - **send_segment_push**: Send push to a segment
+- **get_notification**: Get notification details
+- **get_subscriber_count**: Get total subscriber count
+- **send_push**: Send a push notification
 
 
 ## 💬 Prompt Examples

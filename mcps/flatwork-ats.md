@@ -36,16 +36,16 @@ No more manual status checking or digging through candidate lists. Your AI acts 
 
 
 ## Available Tools (8)
-- **get_job**: Get job details
-- **list_applicants**: List all applicants/candidates
 - **list_applications**: List all job applications
-- **list_jobs**: List all job postings
-- **list_webhooks**: List configured webhooks
-- **update_application_status**: Update application hiring stage
+- **get_applicant**: Get applicant details
 - **create_applicant**: Pass applicant data as a JSON string.
 
 Add a new candidate
-- **get_applicant**: Get applicant details
+- **get_job**: Get job details
+- **list_applicants**: List all applicants/candidates
+- **list_jobs**: List all job postings
+- **list_webhooks**: List configured webhooks
+- **update_application_status**: Update application hiring stage
 
 
 ## 💬 Prompt Examples
