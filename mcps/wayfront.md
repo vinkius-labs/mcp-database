@@ -31,14 +31,14 @@ Connect your **Wayfront** client portal (SPP) to any AI agent and streamline you
 ## Available Tools (10)
 - **list_clients**: List Wayfront clients
 - **list_services**: List available services
-- **list_teams**: List organizational teams
 - **list_tickets**: List support tickets
 - **update_order**: Update an existing order
-- **list_invoices**: List all Wayfront invoices
 - **list_orders**: List Wayfront orders
-- **create_client**: Create a new client
+- **list_invoices**: List all Wayfront invoices
 - **get_client**: Get details for a specific client
 - **get_order**: Get details for a specific order
+- **create_client**: Create a new client
+- **list_teams**: List organizational teams
 
 
 ## 💬 Prompt Examples

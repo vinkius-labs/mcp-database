@@ -35,11 +35,11 @@ Connect your **Tolstoy** interactive video account to any AI agent and simplify 
 
 
 ## Available Tools (6)
+- **list_webhooks**: List configured webhooks
 - **get_video_analytics**: Get performance metrics
 - **list_folders**: List video folders
 - **list_interactive_projects**: List interactive video projects
 - **list_videos**: List your Tolstoy videos
-- **list_webhooks**: List configured webhooks
 - **upload_video**: Upload a new video to Tolstoy
 
 

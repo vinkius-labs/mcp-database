@@ -29,15 +29,15 @@ Connect your **SproutVideo** account to any AI agent and simplify your video hos
 
 ## Available Tools (11)
 - **create_playlist**: Create a new video playlist
-- **get_account**: Get account information and usage
 - **get_playlist**: Get details for a specific playlist
+- **get_video_details**: Get details for a specific video
 - **get_video_analytics**: Get analytics for a specific video
 - **list_folders**: List all video folders
-- **delete_video**: Delete a video
-- **get_video_details**: Get details for a specific video
-- **list_playlists**: List video playlists
 - **list_video_tags**: List video tags
 - **list_videos**: List SproutVideo videos
+- **delete_video**: Delete a video
+- **get_account**: Get account information and usage
+- **list_playlists**: List video playlists
 - **update_video_metadata**: Update video details
 
 

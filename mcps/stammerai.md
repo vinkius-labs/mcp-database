@@ -34,8 +34,6 @@ Connect your **Stammer.ai** account to any AI agent to automate your white-label
 
 
 ## Available Tools (11)
-- **list_knowledge_base**: List knowledge base items for a chatbot
-- **add_qa**: Add a Q&A pair to knowledge base
 - **add_url**: Add a URL to scrape for knowledge base
 - **create_chatbot**: Create a new AI chatbot
 - **get_chatbot**: Get details for a specific chatbot
@@ -44,9 +42,11 @@ Connect your **Stammer.ai** account to any AI agent to automate your white-label
 - **list_chatbots**: ai account.
 
 List all AI agents (chatbots)
-- **list_messages**: List chat messages for a chatbot
 - **list_sub_accounts**: List all white-label sub-accounts
 - **list_users**: List all users
+- **add_qa**: Add a Q&A pair to knowledge base
+- **list_knowledge_base**: List knowledge base items for a chatbot
+- **list_messages**: List chat messages for a chatbot
 
 
 ## 💬 Prompt Examples

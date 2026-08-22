@@ -34,15 +34,15 @@ Connect your **Vibrato** account to any AI agent to unlock human-like phone inte
 
 
 ## Available Tools (5)
-- **create_call**: Pass prompt, phone number, and locale in the JSON body.
-
-Create an AI-powered phone call
 - **get_call_status**: Check status of a call
 - **list_calls**: List all AI calls
 - **list_templates**: List available call templates
 - **create_call_from_template**: g., Negotiate Bill).
 
 Initiate a call using a template
+- **create_call**: Pass prompt, phone number, and locale in the JSON body.
+
+Create an AI-powered phone call
 
 
 ## 💬 Prompt Examples

@@ -41,11 +41,11 @@ Add a knowledge source
 - **get_bot**: Get chatbot details
 - **get_conversation**: Get conversation details
 - **check_thinkstack_status**: Verify ThinkStack API connectivity
-- **list_actions**: List bot actions
-- **list_bots**: List all chatbots
 - **list_conversations**: List conversations
 - **list_sources**: List knowledge sources
 - **send_query**: Query a chatbot
+- **list_actions**: List bot actions
+- **list_bots**: List all chatbots
 
 
 ## 💬 Prompt Examples

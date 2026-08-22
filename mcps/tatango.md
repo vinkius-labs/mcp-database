@@ -35,22 +35,22 @@ Connect your **Tatango** account to any AI agent and simplify how you manage you
 
 
 ## Available Tools (12)
+- **check_api_health**: Verify Tatango API connectivity
+- **get_account_profile**: Get authenticated account info
+- **get_list_details**: Get details for a specific list
+- **list_sms_campaigns**: List all broadcast campaigns
+- **list_sms_marketing_lists**: List all marketing lists
+- **list_configured_webhooks**: List active webhooks
+- **list_sms_subscribers**: List subscribers for a specific list
+- **unsubscribe_phone_number**: Remove a subscriber from a list
 - **add_new_sms_subscriber**: Can trigger an opt-in confirmation.
 
 Add a subscriber to a list
-- **check_api_health**: Verify Tatango API connectivity
 - **create_broadcast_campaign**: Create and send a broadcast message
-- **get_list_details**: Get details for a specific list
-- **get_account_profile**: Get authenticated account info
 - **get_subscriber_details**: Get info for a specific phone number
-- **list_sms_campaigns**: List all broadcast campaigns
-- **list_sms_marketing_lists**: List all marketing lists
-- **list_sms_subscribers**: List subscribers for a specific list
-- **list_configured_webhooks**: List active webhooks
 - **send_transactional_sms**: g., receipt, alert) to a phone number. Max 160 chars.
 
 Send a one-to-one transactional message
-- **unsubscribe_phone_number**: Remove a subscriber from a list
 
 
 ## 💬 Prompt Examples

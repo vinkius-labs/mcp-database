@@ -14,17 +14,17 @@ The Storylane MCP server connects your AI agent directly to your demo infrastruc
 
 
 ## Available Tools (12)
-- **create_demo_link**: Generate a new trackable demo link
-- **get_demo_analytics**: Get engagement metrics for a specific demo
-- **get_demo**: Get metadata and status for a specific demo
 - **get_me**: Get information about the current authenticated user
 - **get_session_details**: Get detailed information for a specific viewer session
+- **get_demo**: Get metadata and status for a specific demo
 - **get_workspace_info**: Retrieve metadata about the current Storylane workspace
-- **list_demo_links**: Retrieve all active links associated with a specific demo
 - **list_demos**: List all published demos in the workspace
+- **list_demo_links**: Retrieve all active links associated with a specific demo
 - **list_sessions**: List granular session analytics for demo viewers
-- **list_teams**: List teams within the workspace
 - **list_users**: List all users and their roles in the workspace
+- **create_demo_link**: Generate a new trackable demo link
+- **get_demo_analytics**: Get engagement metrics for a specific demo
+- **list_teams**: List teams within the workspace
 - **update_demo_link**: Update settings for an existing demo link
 
 

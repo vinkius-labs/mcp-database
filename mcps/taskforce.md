@@ -35,12 +35,12 @@ Connect your AI agent to **TaskForce** to natively manage your CRM workflow, cus
 - **list_taskforce_cases**: List all cases
 - **list_taskforce_customers**: List all customers
 - **list_taskforce_invoices**: List all invoices
-- **create_taskforce_case**: Create a new case
 - **create_taskforce_lead**: Create a new lead
 - **get_taskforce_customer**: Get customer details
+- **list_taskforce_quotes**: List all quotes
+- **create_taskforce_case**: Create a new case
 - **get_taskforce_lead**: Get lead details
 - **list_taskforce_leads**: List all leads
-- **list_taskforce_quotes**: List all quotes
 
 
 ## 💬 Prompt Examples

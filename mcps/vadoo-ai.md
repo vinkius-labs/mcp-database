@@ -34,9 +34,9 @@ Connect your AI agent to **Vadoo AI** to natively generate multimedia content, c
 
 ## Available Tools (6)
 - **vadooai_check_generation_status**: Check video generation status
+- **vadooai_generate_caption**: Generate video captions
 - **vadooai_check_video_status**: Get details of a completed video
 - **vadooai_create_clips**: Create short clips from video
-- **vadooai_generate_caption**: Generate video captions
 - **vadooai_generate_podcast**: Generate AI podcast
 - **vadooai_generate_video**: Generate AI video from prompt
 
