@@ -44,10 +44,10 @@ Connect your **Oktopost** account to your AI agent and streamline your B2B socia
 - **list_social_contacts**: List social leads and contacts
 - **list_social_conversions**: List social-driven conversions
 - **list_social_messages**: List scheduled and sent messages
+- **list_oktopost_tags**: List organization tags
 - **list_social_profiles**: ) connected to the account.
 
 List connected social profiles
-- **list_oktopost_tags**: List organization tags
 
 
 ## 💬 Prompt Examples

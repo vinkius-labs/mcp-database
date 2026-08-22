@@ -29,14 +29,14 @@ Connect your **Openscreen** account to empower your AI agents with smart QR code
 
 ## Available Tools (9)
 - **create_asset_with_qr**: Create an asset and its QR code
-- **get_asset**: Get asset details
 - **get_project**: Get project details
 - **get_qr_code**: Get QR code details
-- **list_assets**: List assets in a project
 - **list_projects**: List all Openscreen projects
+- **update_qr_code_intent**: Update QR code intent
+- **get_asset**: Get asset details
+- **list_assets**: List assets in a project
 - **list_qr_codes**: List QR codes in a project
 - **list_scans**: List scans for a QR code
-- **update_qr_code_intent**: Update QR code intent
 
 
 ## 💬 Prompt Examples

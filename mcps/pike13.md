@@ -28,25 +28,25 @@ Pike13 uniquely offers a **Reporting API** with deep analytics — making it the
 
 
 ## Available Tools (9)
-- **list_events**: Filter by date range. Follows JSON:API 1.0 spec.
-
-List scheduled classes/events
 - **get_event**: Get event details
 - **get_person**: Get person profile
-- **list_staff**: List staff members
 - **list_plans**: Includes pricing and visit limits.
 
 List service plans
+- **list_staff**: List staff members
 - **get_business_info**: Get business account info
-- **search_people**: Returns profiles, active plans, visit count, and account balance.
+- **list_events**: Filter by date range. Follows JSON:API 1.0 spec.
 
-Search clients/members
+List scheduled classes/events
 - **list_invoices**: Filter by date for financial reporting.
 
 List invoices and revenue
 - **list_visits**: Key data for retention analytics.
 
 List member visits
+- **search_people**: Returns profiles, active plans, visit count, and account balance.
+
+Search clients/members
 
 
 ## 💬 Prompt Examples

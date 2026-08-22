@@ -33,18 +33,18 @@ OpenSky Network is the largest open-source air traffic data platform, providing 
 
 
 ## Available Tools (8)
+- **get_departures**: Get departures from a specific airport
 - **get_all_states**: Optionally filter by specific ICAO24 code.
 
 Get the states of all aircraft currently tracked by OpenSky
-- **get_departures**: Get departures from a specific airport
-- **get_flights_by_aircraft**: Get historical flights for a specific aircraft
 - **get_arrivals**: Get arrivals at a specific airport
+- **get_flights_by_aircraft**: Get historical flights for a specific aircraft
+- **get_recent_tracks**: Get recent tracks for a specific aircraft
 - **get_flights_by_interval**: Requires authentication.
 
 Get all flights in a specific time interval
 - **get_my_flights**: Get historical flights for your own aircraft (requires authentication)
 - **get_my_states**: Get the states of your own aircraft (requires authentication)
-- **get_recent_tracks**: Get recent tracks for a specific aircraft
 
 
 ## 💬 Prompt Examples

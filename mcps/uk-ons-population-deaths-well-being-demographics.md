@@ -23,12 +23,12 @@ UK population and health data.
 - **get_wellbeing_local**: Dataset: wellbeing-local-authority. Covers life satisfaction, worthwhileness, happiness, and anxiety by region.
 
 Get well-being estimates by UK local authority
-- **get_suicides**: Dataset: suicides-in-the-uk. National statistics. If you are struggling, call Samaritans free: 116 123.
-
-Get suicide registrations by local authority in England and Wales
 - **get_population_projections**: Dataset: projections-older-people-sex-ratios.
 
 Get UK population projections for older people, sex ratios by local authority
+- **get_suicides**: Dataset: suicides-in-the-uk. National statistics. If you are struggling, call Samaritans free: 116 123.
+
+Get suicide registrations by local authority in England and Wales
 - **get_weekly_deaths**: Datasets: weekly-deaths-age-sex (by age and sex), weekly-deaths-region (by region). National statistics updated weekly.
 
 Get weekly death registrations in England and Wales — by age, sex, and region

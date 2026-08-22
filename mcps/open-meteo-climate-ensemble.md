@@ -22,12 +22,12 @@ ESG analysts, climate scientists, policymakers, insurance actuaries, real estate
 
 
 ## Available Tools (3)
-- **get_climate_projection**: Uses CMIP6 climate models for long-term climate analysis.
-
-Get IPCC climate change projections (2015–2100)
 - **get_ensemble_forecast**: Useful for risk assessment and probabilistic planning.
 
 Get probabilistic multi-model ensemble forecast
+- **get_climate_projection**: Climate API data is available through 2050.
+
+Get IPCC climate change projections (2015–2050)
 - **get_climate_temperature_trend**: Get long-term temperature trend projections
 
 

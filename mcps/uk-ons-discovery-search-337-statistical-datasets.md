@@ -22,22 +22,22 @@ Full access to the ONS dataset catalog with discovery and query tools.
 
 
 ## Available Tools (6)
-- **search_datasets**: Returns matching dataset IDs, titles, and descriptions. Use this to find the right dataset before querying data.
+- **get_dimensions**: Each dimension has options you can use to filter observations. Essential for understanding what query parameters to use.
 
-Search ONS datasets by keyword — explore 337+ available datasets
+Get available dimensions and filter options for an ONS dataset
 - **list_datasets**: The catalog contains 337+ datasets covering economy, population, health, trade, business, and more.
 
 Browse the complete ONS dataset catalog with pagination
 - **get_dataset_info**: Get metadata for an ONS dataset: dimensions, editions, versions
-- **get_dimensions**: Each dimension has options you can use to filter observations. Essential for understanding what query parameters to use.
-
-Get available dimensions and filter options for an ONS dataset
 - **get_dimension_options**: g., all geography codes, all time periods, all aggregate categories). Use this to find the correct filter values for observations.
 
 Get all option values for a specific dimension in an ONS dataset
 - **get_observations**: Provide dataset ID and dimension filters. Use search_datasets to find IDs and get_dimensions to discover available filters. Set time=* for full time series.
 
 Query any ONS dataset by ID with flexible dimension filters
+- **search_datasets**: Returns matching dataset IDs, titles, and descriptions. Use this to find the right dataset before querying data.
+
+Search ONS datasets by keyword — explore 337+ available datasets
 
 
 ## 💬 Prompt Examples

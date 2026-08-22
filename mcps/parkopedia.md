@@ -33,15 +33,15 @@ Connect **Parkopedia** to any AI agent and access the world's most comprehensive
 
 
 ## Available Tools (10)
-- **search_by_bounds**: Search for parking spots within a geographic bounding box
-- **get_ev_charger_details**: Get detailed information about an EV charger
 - **get_occupancy**: Get real-time occupancy status for a spot
-- **search_amenities**: Search for nearby amenities related to parking
-- **get_analytics**: Get parking analytics and trends for a location
 - **get_spot_details**: Get detailed information about a specific parking spot
-- **search_ev_charging**: Search for EV charging stations near a location
 - **get_pricing**: Get pricing data for a specific spot
+- **get_analytics**: Get parking analytics and trends for a location
+- **get_ev_charger_details**: Get detailed information about an EV charger
 - **get_parking_restrictions**: Get parking restrictions for a specific location
+- **search_amenities**: Search for nearby amenities related to parking
+- **search_by_bounds**: Search for parking spots within a geographic bounding box
+- **search_ev_charging**: Search for EV charging stations near a location
 - **search_parking**: Search for parking spots near a location
 
 

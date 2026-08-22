@@ -28,9 +28,6 @@ Connect **Pipedrive CRM** to any AI agent — manage your entire sales pipeline 
 
 
 ## Available Tools (11)
-- **pd_create_org**: Name is required. Address is optional. Once created, persons and deals can be linked to this organization. Returns the created org with its new Pipedrive ID.
-
-Create a new organization (company/account) in Pipedrive with name and address
 - **pd_list_persons**: Returns names, emails, phones, and linked orgs. Use for contact directory browsing, headcount analysis, or when the user wants to see all people in the CRM.
 
 List all contacts in Pipedrive with names, emails, phones, and organization associations
@@ -40,12 +37,15 @@ Get all deals linked to a specific contact person to see their sales history and
 - **pd_search_orgs**: Returns org name, address, and associated data. Use when the user asks about a company, needs org IDs for linking to persons or deals, or wants to look up account information.
 
 Search Pipedrive organizations (companies/accounts) by name to find business entities in your CRM
-- **pd_search_persons**: Returns name, email addresses, phone numbers, and linked organization. Use when the user wants to find a specific person, look up contact info by email, or get person IDs for linking to deals or activities.
-
-Search Pipedrive contacts by name, email, or phone to find people in your CRM with their organization links
 - **pd_update_org**: Only specified fields change. Use when the user wants to correct company info, update the address, or rename an account.
 
 Update an existing Pipedrive organization — change name, address, or other properties
+- **pd_create_org**: Name is required. Address is optional. Once created, persons and deals can be linked to this organization. Returns the created org with its new Pipedrive ID.
+
+Create a new organization (company/account) in Pipedrive with name and address
+- **pd_search_persons**: Returns name, email addresses, phone numbers, and linked organization. Use when the user wants to find a specific person, look up contact info by email, or get person IDs for linking to deals or activities.
+
+Search Pipedrive contacts by name, email, or phone to find people in your CRM with their organization links
 - **pd_create_person**: Name is required. Link to an existing organization via org_id (use pd_search_orgs to find). Pipedrive supports multiple emails and phones per person — here a single value is accepted for simplicity. Returns the created person with their new ID.
 
 Create a new contact (person) in Pipedrive with name, email, phone, and optional organization link

@@ -35,18 +35,18 @@ Connect your **Nue.io** account to your AI agent and streamline your quote-to-re
 
 
 ## Available Tools (10)
-- **get_current_user**: Get current user metadata
-- **get_organization_info**: Get organization metadata
 - **get_product_details**: Get specific product metadata
-- **list_product_bundles**: List configured product bundles
-- **list_product_categories**: List catalog categories
 - **list_active_integrations**: g., Stripe, Salesforce) connected to Nue.
 
 List connected third-party integrations
-- **list_product_price_tags**: List price tags for a product
-- **list_catalog_products**: List all published products
 - **list_metadata_source_objects**: List objects for metadata mapping
+- **list_product_categories**: List catalog categories
+- **list_product_price_tags**: List price tags for a product
 - **list_revenue_workflows**: List automated revenue workflows
+- **get_current_user**: Get current user metadata
+- **get_organization_info**: Get organization metadata
+- **list_product_bundles**: List configured product bundles
+- **list_catalog_products**: List all published products
 
 
 ## 💬 Prompt Examples

@@ -27,8 +27,8 @@ Empower your AI agents with institutional real estate intelligence. This server 
 
 
 ## Available Tools (3)
-- **execute_query**: Execute a custom NCREIF query
 - **get_historical_npi**: Get historical NPI returns
+- **execute_query**: Execute a custom NCREIF query
 - **get_predefined_kpi**: Get predefined KPI data
 
 
