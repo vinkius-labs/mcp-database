@@ -33,18 +33,18 @@ Connect your **Treinta SMB** store operator account directly to Vurb allowing Cl
 
 
 ## Available Tools (12)
-- **create_client**: Register a new active client
-- **create_product**: Add a new store inventory product
-- **create_transaction**: Create a new business transaction
 - **get_product**: Fetch targeted product SKU details
 - **list_clients**: List registered customers/clients
 - **list_products**: Get complete business inventory
 - **list_sales**: List consolidated sales
 - **list_transactions**: List book flow transactions
-- **update_product_stock**: Update physical quantity of a product
-- **delete_transaction**: Revert an incorrect transaction
 - **get_business_stats**: Get macro P&L operations dashboard
+- **create_client**: Register a new active client
+- **create_product**: Add a new store inventory product
+- **create_transaction**: Create a new business transaction
+- **delete_transaction**: Revert an incorrect transaction
 - **get_client**: Fetch specific client debt profile
+- **update_product_stock**: Update physical quantity of a product
 
 
 ## 💬 Prompt Examples

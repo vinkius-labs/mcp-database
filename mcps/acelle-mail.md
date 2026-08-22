@@ -34,12 +34,12 @@ Connect your **Acelle Mail** self-hosted or cloud account to any AI agent and si
 
 
 ## Available Tools (7)
-- **list_acelle_campaigns**: List all campaigns
-- **add_acelle_subscriber**: Add a subscriber
 - **create_acelle_list**: Create a new list
 - **get_acelle_campaign**: Get campaign details
-- **get_acelle_list**: Get list details
 - **list_acelle_lists**: List all mailing lists
+- **add_acelle_subscriber**: Add a subscriber
+- **get_acelle_list**: Get list details
+- **list_acelle_campaigns**: List all campaigns
 - **list_acelle_subscribers**: List subscribers
 
 

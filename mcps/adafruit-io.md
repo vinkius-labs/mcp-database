@@ -25,15 +25,15 @@ Connect your Adafruit IO account via your AIO Key to manage your Internet of Thi
 
 ## Available Tools (10)
 - **list_dashboards**: List all dashboards
-- **list_feeds**: List all Adafruit IO feeds
 - **get_data**: Get a specific data point
 - **get_feed**: Get a specific feed
 - **get_group**: Get a specific group
-- **get_trigger**: Get a specific trigger
 - **list_data**: List data for a specific feed
 - **list_groups**: List all groups
-- **list_triggers**: List all triggers
 - **get_dashboard**: Get a specific dashboard
+- **get_trigger**: Get a specific trigger
+- **list_feeds**: List all Adafruit IO feeds
+- **list_triggers**: List all triggers
 
 
 ## 💬 Prompt Examples

@@ -36,8 +36,8 @@ Empower your AI agent to orchestrate your entire food research and nutritional a
 
 ## Available Tools (4)
 - **check_api_status**: Check if the Open Food Facts service is operational
-- **get_food_product**: Get comprehensive details for a food product by barcode
 - **list_food_categories**: List all available food categories in the database
+- **get_food_product**: Get comprehensive details for a food product by barcode
 - **search_food_products**: Search for food products by category or keyword
 
 

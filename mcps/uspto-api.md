@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire intellectual property research 
 
 
 ## Available Tools (6)
-- **get_trademark_details**: Get full details for a specific trademark serial number
 - **list_patent_classes**: List all available patent classification codes
-- **search_patents**: Search for United States patents by keyword
 - **search_trademarks**: Search for United States trademarks by keyword
-- **check_api_status**: Check if the USPTO Open Data API is operational
 - **get_patent_details**: Get full details for a specific patent number
+- **check_api_status**: Check if the USPTO Open Data API is operational
+- **get_trademark_details**: Get full details for a specific trademark serial number
+- **search_patents**: Search for United States patents by keyword
 
 
 ## 💬 Prompt Examples

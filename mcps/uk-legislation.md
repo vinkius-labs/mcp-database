@@ -35,16 +35,16 @@ Empower your AI agent with the definitive source for UK law through the **UK Leg
 
 
 ## Available Tools (8)
-- **get_legislation**: Get specific UK legislation details
 - **get_recent_legislation**: Get recently published UK legislation
 - **search_by_subject**: Search UK legislation by subject
+- **get_table_of_contents**: Get the table of contents for UK legislation
+- **get_legislation**: Get specific UK legislation details
+- **get_legislation_by_year**: List UK legislation for a specific year
+- **get_schedule**: Get a specific schedule of UK legislation
+- **get_section**: Get a specific section of UK legislation
 - **search_legislation**: Returns a list of matching acts, statutory instruments, and other legislative documents.
 
 Search for UK legislation
-- **get_legislation_by_year**: List UK legislation for a specific year
-- **get_table_of_contents**: Get the table of contents for UK legislation
-- **get_schedule**: Get a specific schedule of UK legislation
-- **get_section**: Get a specific section of UK legislation
 
 
 ## 💬 Prompt Examples
