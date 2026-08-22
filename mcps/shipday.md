@@ -36,17 +36,17 @@ No more juggling multiple delivery tabs to coordinate your fleet. Your AI acts a
 
 
 ## Available Tools (9)
-- **list_drivers**: List all drivers
 - **assign_driver**: Assign an order to a driver
+- **delete_order**: Delete/Cancel an order
+- **list_active_orders**: List all active delivery orders
+- **get_carrier_order**: Get details for a carrier order
+- **get_tracking_progress**: Get real-time tracking for a delivery
 - **create_order**: Provide orderNumber, customer details, and restaurant info.
 
 Create a new delivery order
-- **delete_order**: Delete/Cancel an order
-- **list_active_orders**: List all active delivery orders
-- **update_order_status**: Update the status of an order
-- **get_carrier_order**: Get details for a carrier order
 - **get_order**: Get details of a specific order
-- **get_tracking_progress**: Get real-time tracking for a delivery
+- **list_drivers**: List all drivers
+- **update_order_status**: Update the status of an order
 
 
 ## 💬 Prompt Examples

@@ -28,17 +28,17 @@ Connect your **Smaily** account to any AI agent and simplify your email marketin
 
 
 ## Available Tools (11)
-- **delete_subscriber**: Remove a subscriber
 - **get_automation**: Get details for an automation workflow
 - **get_campaign**: Get details for a specific campaign
 - **get_subscriber_details**: Get details for a specific subscriber
-- **list_automations**: List automated responders
 - **list_email_campaigns**: List email campaigns
 - **list_subscribers**: List Smaily subscribers
 - **send_automation_email**: Trigger an automation email
 - **get_template**: Get details for an email template
-- **create_subscriber**: Add a new subscriber
 - **list_email_templates**: List message templates
+- **create_subscriber**: Add a new subscriber
+- **delete_subscriber**: Remove a subscriber
+- **list_automations**: List automated responders
 
 
 ## 💬 Prompt Examples

@@ -36,19 +36,19 @@ No more manual CSV exports or attribute hunting. Your AI acts as a dedicated gro
 
 
 ## Available Tools (12)
-- **get_referral_analytics**: Get referral performance summary
-- **get_workflow_status**: Check workflow execution status
 - **list_referral_workflows**: List automation workflows
 - **trigger_workflow**: Manually trigger a workflow
-- **track_referral_event**: Track a new referral conversion
-- **create_affiliate**: Requires name and email.
-
-Create a new affiliate
 - **get_affiliate_details**: Get details for a specific affiliate
 - **get_current_user**: Get authenticated user profile
 - **list_affiliates**: List all affiliates/partners
 - **list_coupons**: List all discount coupons
 - **list_referrals**: List all referral events
+- **create_affiliate**: Requires name and email.
+
+Create a new affiliate
+- **get_referral_analytics**: Get referral performance summary
+- **get_workflow_status**: Check workflow execution status
+- **track_referral_event**: Track a new referral conversion
 - **validate_coupon**: Validate a discount coupon
 
 

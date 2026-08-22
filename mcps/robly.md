@@ -36,18 +36,18 @@ No more manual CSV imports or list searching. Your AI acts as a dedicated market
 
 
 ## Available Tools (12)
-- **add_contact**: Add contact to list
-- **delete_sub_list**: Delete a sub-list
 - **list_contacts**: List marketing contacts
-- **list_sub_lists**: List all sub-lists
 - **list_webhooks**: List account webhooks
-- **search_contact**: Search contact by email
 - **unsubscribe_contact**: Unsubscribe a contact
-- **update_contact**: Update contact details
-- **check_list_membership**: Check if email is in list
 - **clear_sub_list**: Clear list contacts
 - **create_sub_list**: Create a new list
+- **add_contact**: Add contact to list
+- **check_list_membership**: Check if email is in list
+- **delete_sub_list**: Delete a sub-list
+- **list_sub_lists**: List all sub-lists
 - **rename_sub_list**: Rename a sub-list
+- **search_contact**: Search contact by email
+- **update_contact**: Update contact details
 
 
 ## 💬 Prompt Examples

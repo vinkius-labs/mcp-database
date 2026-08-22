@@ -36,9 +36,6 @@ No more manual status checking or spreadsheet candidate tracking. Your AI acts a
 
 
 ## Available Tools (11)
-- **add_candidate**: Pass data as a JSON string.
-
-Add a new candidate
 - **create_talent_pool**: Create a new talent pool
 - **get_job**: Get details for a specific job posting
 - **list_talent_pools**: List all talent pools
@@ -46,9 +43,12 @@ Add a new candidate
 - **get_talent_pool**: Get details for a talent pool
 - **list_candidates**: List all candidates
 - **list_interviews**: List all scheduled interviews
-- **list_jobs**: List all job posts
 - **list_pipelines**: List all hiring pipelines
+- **add_candidate**: Pass data as a JSON string.
+
+Add a new candidate
 - **get_candidate_details**: Get specific candidate details
+- **list_jobs**: List all job posts
 
 
 ## 💬 Prompt Examples

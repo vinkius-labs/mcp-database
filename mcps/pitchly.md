@@ -36,17 +36,17 @@ No more manual spreadsheet updates or searching through disparate databases. You
 
 
 ## Available Tools (11)
-- **create_record**: Add a new record to a table
 - **delete_record**: Delete a record from a table
-- **get_record_details**: Get details of a specific record
 - **get_table_details**: Get details of a specific table
 - **get_workspace_details**: Get details of a specific workspace
 - **list_fields**: List all fields in a table
-- **list_tables**: List tables in a workspace
 - **list_workspaces**: List all Pitchly workspaces
 - **search_records**: Search records within a table
-- **update_record**: Update an existing record
 - **list_table_records**: List records in a Pitchly table
+- **create_record**: Add a new record to a table
+- **get_record_details**: Get details of a specific record
+- **list_tables**: List tables in a workspace
+- **update_record**: Update an existing record
 
 
 ## 💬 Prompt Examples

@@ -36,12 +36,10 @@ Connect your **SMS Masivo** account to any AI agent and automate your SMS commun
 
 
 ## Available Tools (10)
-- **get_delivery_report**: Get the delivery report for a specific message
 - **check_smsmasivo_status**: Verify SMS Masivo API connectivity
 - **create_contact**: Create a new contact
 - **get_balance**: Check your SMS credit balance
 - **list_contacts**: List all contacts in your account
-- **list_delivery_reports**: List delivery reports by date range
 - **list_groups**: List all contact groups
 - **schedule_sms**: Provide the date in ISO 8601 format.
 
@@ -49,6 +47,8 @@ Schedule an SMS for future delivery
 - **send_bulk_sms**: Provide comma-separated numbers in international format.
 
 Send the same SMS to multiple recipients
+- **get_delivery_report**: Get the delivery report for a specific message
+- **list_delivery_reports**: List delivery reports by date range
 - **send_sms**: Optionally provide a campaign name for tracking.
 
 Send an SMS message to a single recipient

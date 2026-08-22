@@ -39,7 +39,6 @@ No more manual copy-pasting of proxy strings or missing connectivity drops. Your
 - **get_proxies_by_country**: g., US, GB, DE, BR).
 
 Get residential proxies filtered by country
-- **get_de_proxies**: Get Germany residential proxies
 - **get_br_proxies**: Get Brazil residential proxies
 - **get_proxies_limited**: Useful for testing or sampling available proxies.
 
@@ -47,10 +46,11 @@ Get a limited number of proxies
 - **get_uk_proxies**: Get United Kingdom residential proxies
 - **get_us_proxies**: Get United States residential proxies
 - **list_proxies**: List all available residential proxies
+- **check_proxy_status**: Verify Residential Proxies API connectivity
+- **get_de_proxies**: Get Germany residential proxies
 - **get_multi_country_proxies**: Returns a summary with counts and sample proxies per country.
 
 Get proxies from multiple countries at once
-- **check_proxy_status**: Verify Residential Proxies API connectivity
 - **get_proxy_count**: Get the total number of available proxies
 
 

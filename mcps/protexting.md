@@ -38,16 +38,16 @@ No more manual typing or spreadsheet contact updates. Your AI acts as a dedicate
 ## Available Tools (12)
 - **list_groups**: List groups
 - **create_contact**: Create a contact
-- **create_group**: Create a group
 - **delete_contact**: Delete a contact
 - **get_account**: Get account info
 - **get_message_status**: Get message status
-- **list_contacts**: List contacts
 - **list_keywords**: List keywords
 - **send_bulk**: Send bulk messages
 - **send_mms**: Send MMS
-- **send_sms**: Send SMS
 - **check_protexting_status**: Verify connectivity
+- **create_group**: Create a group
+- **list_contacts**: List contacts
+- **send_sms**: Send SMS
 
 
 ## 💬 Prompt Examples

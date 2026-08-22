@@ -38,9 +38,6 @@ Connect to **Sentinel Hub** — the most powerful satellite imagery processing A
 
 
 ## Available Tools (14)
-- **catalog_search**: Specify a collection ID (e.g., "sentinel-2-l2a", "sentinel-1-grd"), a bounding box as [west, south, east, north] coordinates, and a date range. Returns item metadata including geometry, cloud cover, and band information.
-
-Search the Sentinel Hub STAC catalog for satellite imagery
 - **check_sentinel_hub_status**: Returns the connection status and service URL. Use this to verify your client_id:client_secret credentials are working correctly.
 
 Verify Sentinel Hub API connectivity and authentication
@@ -53,6 +50,18 @@ Generate a ready-to-use NDVI evalscript for vegetation analysis
 - **generate_true_color_evalscript**: Use the returned evalscript with the process_image tool to get visually appealing satellite photos of any location on Earth.
 
 Generate a true-color RGB evalscript for natural imagery
+- **get_user_info**: Useful for verifying credentials and understanding available quotas.
+
+Get authenticated Sentinel Hub user profile information
+- **list_band_combinations**: Includes True Color, False Color (vegetation), NDVI, NDWI, Moisture Index, SWIR, SAR polarizations, Scene Classification, and Burn Severity (NBR). Each entry specifies the required bands and target collection.
+
+List predefined satellite band combinations and indices
+- **search_by_tile**: MGRS tiles are the standard spatial reference for Sentinel-2 data (e.g., "33UUP" for central Europe, "29SQB" for Lisbon area). Returns all scenes for the specified tile within the date range.
+
+Search Sentinel-2 imagery by MGRS tile identifier
+- **catalog_search**: Specify a collection ID (e.g., "sentinel-2-l2a", "sentinel-1-grd"), a bounding box as [west, south, east, north] coordinates, and a date range. Returns item metadata including geometry, cloud cover, and band information.
+
+Search the Sentinel Hub STAC catalog for satellite imagery
 - **get_catalog_collection**: Get detailed information about a specific data collection
 - **get_catalog_item**: Use the item ID returned from a catalog_search query.
 
@@ -60,21 +69,12 @@ Get detailed metadata for a specific STAC catalog item
 - **get_statistics**: Requires an evalscript that defines which bands to analyze. Supports temporal aggregation (daily, weekly, monthly) for time-series analysis of vegetation indices, water levels, or urban expansion.
 
 Calculate statistics over an area from satellite imagery
-- **get_user_info**: Useful for verifying credentials and understanding available quotas.
-
-Get authenticated Sentinel Hub user profile information
-- **list_band_combinations**: Includes True Color, False Color (vegetation), NDVI, NDWI, Moisture Index, SWIR, SAR polarizations, Scene Classification, and Burn Severity (NBR). Each entry specifies the required bands and target collection.
-
-List predefined satellite band combinations and indices
 - **list_catalog_collections**: Includes Sentinel-1 GRD (radar), Sentinel-2 L1C/L2A (optical), Sentinel-3 OLCI/SLSTR, Sentinel-5P (atmosphere), Landsat 8-9, DEM, and Copernicus Land Monitoring Service data.
 
 List all available Sentinel Hub satellite data collections
 - **process_image**: Specify the data collection, area of interest as a bounding box, date range, and the evalscript. The evalscript defines band inputs, processing logic, and output format. Use generate_ndvi_evalscript or generate_true_color_evalscript tools to get ready-made evalscripts.
 
 Process satellite imagery with a custom evalscript
-- **search_by_tile**: MGRS tiles are the standard spatial reference for Sentinel-2 data (e.g., "33UUP" for central Europe, "29SQB" for Lisbon area). Returns all scenes for the specified tile within the date range.
-
-Search Sentinel-2 imagery by MGRS tile identifier
 - **search_cloud_free**: Essential for optical analysis where cloud contamination would corrupt results. Typical thresholds: <10% for clean analysis, <30% for general use, <50% for temporal coverage.
 
 Search for cloud-free satellite imagery below a threshold

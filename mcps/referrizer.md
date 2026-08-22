@@ -31,14 +31,14 @@ Connect your **Referrizer** account to any AI agent and simplify your referral m
 - **get_campaign**: Get details for a referral campaign
 - **get_reward**: Get details for a specific reward
 - **list_marketing_campaigns**: List marketing campaigns
-- **list_transactions**: List all reward transactions
 - **create_contact**: Register a new contact
-- **get_contact_details**: Get details for a specific contact
+- **list_transactions**: List all reward transactions
 - **get_referral**: Get details for a specific referral
-- **list_contacts**: List Referrizer contacts
-- **list_referral_history**: List referrals
 - **list_loyalty_rewards**: List available rewards
 - **update_contact**: Update a contact profile
+- **list_referral_history**: List referrals
+- **list_contacts**: List Referrizer contacts
+- **get_contact_details**: Get details for a specific contact
 
 
 ## 💬 Prompt Examples

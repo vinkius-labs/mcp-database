@@ -41,9 +41,9 @@ No more manual stock checks or order hunting. Your AI acts as a dedicated logist
 - **list_warehouse_slots**: List warehouse storage slots
 - **update_stock**: Update product stock level
 - **list_orders**: List all orders
-- **list_packs**: List packaging options
 - **list_products**: List all products
 - **list_shipments**: List all shipments
+- **list_packs**: List packaging options
 
 
 ## 💬 Prompt Examples
