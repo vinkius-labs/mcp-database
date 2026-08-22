@@ -34,8 +34,8 @@ The **Ask Kodiak MCP Server** brings deep commercial insurance intelligence dire
 - **get_company_products**: List all products offered by a specific company
 - **get_product**: Get full appetite and details for an insurance product
 - **list_classifications**: Search for industry classifications
-- **list_products**: Search for commercial insurance products
 - **suggest_naics**: Get NAICS code suggestions based on a query
+- **list_products**: Search for commercial insurance products
 
 
 ## 💬 Prompt Examples

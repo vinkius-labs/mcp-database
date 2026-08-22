@@ -35,9 +35,9 @@ Connect your **CallGear** account to any AI agent and orchestrate your communica
 
 
 ## Available Tools (10)
-- **list_call_scenarios**: List all configured call scenarios
-- **list_traffic_sources**: List all traffic sources configured in CallGear
 - **list_tags**: List all call and communication tags
+- **list_traffic_sources**: List all traffic sources configured in CallGear
+- **list_call_scenarios**: List all configured call scenarios
 - **get_calls_report**: Retrieve a detailed report of calls for a specific period
 - **get_communications_report**: Retrieve a report covering various communication types (calls, chats, etc.)
 - **get_site_daily_stats**: Retrieve daily statistics for sites

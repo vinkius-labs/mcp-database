@@ -34,11 +34,11 @@ Connect your **BigOven** account to any AI agent and bring the power of over a m
 
 
 ## Available Tools (8)
+- **get_recipe_reviews**: Get reviews for a specific recipe
 - **search_by_ingredient**: Search recipes by ingredient keywords
 - **list_categories**: List valid recipe categories for filtering
 - **get_collection**: Get details and recipes of a specific collection
 - **get_recipe_photos**: Retrieve photos for a specific recipe
-- **get_recipe_reviews**: Get reviews for a specific recipe
 - **get_recipe**: Get full details of a specific recipe
 - **list_collections**: List seasonal or curated recipe collections
 - **search_recipes**: Search recipes by title or keyword

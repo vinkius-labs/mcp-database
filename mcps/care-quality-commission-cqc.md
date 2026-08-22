@@ -36,13 +36,13 @@ Connect your AI agent to the **Care Quality Commission (CQC)** Syndication API a
 
 
 ## Available Tools (8)
-- **get_changes**: Identify organizations updated within a specific timeframe
 - **get_location**: Get detailed information for a specific location, including ratings
-- **get_provider_locations**: Get all locations associated with a specific provider
-- **get_provider**: Get detailed information for a specific provider
 - **list_locations**: List all registered locations (hospitals, care homes, clinics)
-- **list_providers**: List registered health and social care providers
 - **search_locations_by_postcode**: Search for locations by postcode
+- **get_changes**: Identify organizations updated within a specific timeframe
+- **get_provider**: Get detailed information for a specific provider
+- **get_provider_locations**: Get all locations associated with a specific provider
+- **list_providers**: List registered health and social care providers
 - **search_providers**: Search for providers by name
 
 

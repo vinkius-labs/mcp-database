@@ -40,13 +40,13 @@ No more manual report entry or digging through complex data tables. Your AI acts
 - **create_grid_operational_record**: g., a new inspection report) into a specific worksheet.
 
 Add a new record to a worksheet
-- **remove_grid_worksheet_record**: Delete a record from a worksheet
 - **get_grid_authenticated_user_profile**: Get authenticated user info
+- **remove_grid_worksheet_record**: Delete a record from a worksheet
 - **get_grid_worksheet_details**: Get details for a specific worksheet
 - **list_grid_supported_asset_types**: List common asset categories
-- **list_grid_worksheet_records**: List records from a worksheet
-- **list_grid_team_members**: List organization users
 - **list_grid_configured_webhooks**: List active webhooks
+- **list_grid_team_members**: List organization users
+- **list_grid_worksheet_records**: List records from a worksheet
 - **update_grid_worksheet_record**: Modify an existing operational record
 - **list_grid_dashboards**: List available dashboards
 - **list_grid_worksheets**: List all operational worksheets

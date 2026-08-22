@@ -40,8 +40,8 @@ Connect your **Canix** account to any AI agent and orchestrate your cannabis cul
 - **get_package_details**: Get details of a specific cannabis package
 - **get_plant_details**: Get details of a specific plant
 - **get_sales_order**: Get details of a specific sales order
-- **list_non_cannabis_inventory**: List non-cannabis inventory like packaging or nutrients
 - **list_inventory_packages**: List all cannabis packages (inventory) in Canix
+- **list_non_cannabis_inventory**: List non-cannabis inventory like packaging or nutrients
 - **list_plants**: List individual plants in the cultivation phase
 - **list_sales_orders**: List all sales orders
 - **list_plant_batches**: List immature plant batches

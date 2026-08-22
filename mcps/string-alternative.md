@@ -26,13 +26,13 @@ Connect your **String** account to any AI agent and manage business messaging.
 - **list_string_tags**: List all tags
 - **create_string_contact**: Create a contact
 - **get_string_contact**: Get contact details
-- **get_string_message**: Get message details
 - **list_string_campaigns**: List campaigns
 - **list_string_contacts**: List all contacts
 - **list_string_conversations**: List conversations
 - **list_string_messages**: List messages
 - **send_string_message**: Send a text message
 - **check_string_status**: Verify API connectivity
+- **get_string_message**: Get message details
 
 
 ## 💬 Prompt Examples

@@ -39,10 +39,10 @@ Connect your **Click2Mail** account to any AI agent and take full control of you
 - **list_mail_documents**: List uploaded documents available for mailing
 - **list_mail_jobs**: List all physical mail printing and mailing jobs
 - **submit_mail_job**: Submit a mail job for production and delivery
+- **get_mail_account_history**: Retrieve a history of account activities and transactions
 - **get_mail_credit_balance**: Retrieve the current account credit balance for mailing
 - **get_mail_job_cost**: Retrieve the estimated cost for a mail job before submission
 - **get_mail_job_details**: Get detailed information for a specific mail job
-- **get_mail_account_history**: Retrieve a history of account activities and transactions
 - **list_mail_address_lists**: List uploaded address lists available for mailing
 
 

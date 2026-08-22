@@ -35,16 +35,16 @@ Connect your **Brushfire** account to any AI agent and orchestrate your event ma
 
 
 ## Available Tools (10)
+- **get_account_info**: Retrieve core account information
+- **get_order**: Get details of a specific order
+- **update_attendee**: Update attendee information
 - **check_in_attendee**: Mark an attendee as checked-in
 - **list_attendees**: List all attendees for a specific event
 - **list_orders**: List all event orders
-- **get_account_info**: Retrieve core account information
 - **get_event**: Get details of a specific event
-- **get_order**: Get details of a specific order
 - **list_events**: List all managed events
 - **get_attendee**: Get details of a specific attendee
 - **list_ticket_types**: List ticket/registration types for an event
-- **update_attendee**: Update attendee information
 
 
 ## 💬 Prompt Examples

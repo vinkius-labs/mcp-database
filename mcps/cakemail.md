@@ -37,14 +37,14 @@ Connect your **Cakemail** account to any AI agent and orchestrate your email mar
 ## Available Tools (10)
 - **create_campaign**: Create a new email campaign
 - **create_contact**: Add a contact to a list
-- **create_contact_list**: Create a new contact list
 - **get_account_info**: Retrieve core account information
+- **create_contact_list**: Create a new contact list
 - **get_analytics**: Retrieve recent analytics logs
 - **get_campaign**: Get details of a specific campaign
 - **get_contact_list**: Get details of a specific contact list
 - **list_campaigns**: List all email campaigns
-- **list_contacts**: List contacts in a specific list
 - **list_contact_lists**: List all contact lists
+- **list_contacts**: List contacts in a specific list
 
 
 ## 💬 Prompt Examples

@@ -33,8 +33,8 @@ Connect your **AwardWallet** business account to any AI agent and track your loy
 
 
 ## Available Tools (9)
-- **get_account_check**: Verify AwardWallet Business API connection
 - **get_user_accounts**: Retrieve loyalty account list for a specific user
+- **get_account_check**: Verify AwardWallet Business API connection
 - **get_user_itineraries**: Retrieve detailed itineraries for a specific user
 - **get_user_timeline**: Retrieve the travel timeline for a specific user
 - **list_connected_users**: List all AwardWallet users who have authorized your business account

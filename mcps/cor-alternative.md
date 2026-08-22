@@ -39,19 +39,19 @@ No more manual status updates or missing profitability gaps. Your AI acts as you
 ## Available Tools (13)
 - **list_cor_workspace_clients**: List customer clients
 - **create_cor_workspace_project**: Create a new project
+- **get_cor_authenticated_user**: Get current user details
 - **get_cor_workspace_project**: Get details for a specific project
 - **get_cor_workspace_task**: Get details for a specific task
-- **get_cor_authenticated_user**: Get current user details
 - **list_cor_workspace_projects**: List COR projects
 - **check_cor_api_status**: Check API Status
-- **list_cor_workspace_task_types**: List defined task types
 - **list_cor_workspace_tasks**: Optionally filter by project ID to isolate specific technical pipelines.
 
 List tasks
-- **list_cor_workspace_team_users**: List users in a team
+- **list_cor_workspace_task_types**: List defined task types
+- **list_cor_workspace_team_members**: List team users
 - **list_cor_workspace_teams**: List organization teams
 - **list_cor_workspace_time_entries**: List recorded time entries
-- **list_cor_workspace_team_members**: List team users
+- **list_cor_workspace_team_users**: List users in a team
 
 
 ## 💬 Prompt Examples

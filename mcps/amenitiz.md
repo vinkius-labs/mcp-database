@@ -22,14 +22,14 @@ Connect **Amenitiz** to any AI agent — the all-in-one PMS for independent hote
 
 
 ## Available Tools (8)
-- **list_reservations**: List hotel reservations
 - **get_reservation**: Get reservation details
-- **list_room_types**: List room types
 - **list_rooms**: List individual rooms
-- **get_availability**: Get availability
-- **get_rates**: Get room rates
+- **list_room_types**: List room types
 - **list_guests**: List guests
 - **get_property**: Get hotel property info
+- **get_availability**: Get availability
+- **get_rates**: Get room rates
+- **list_reservations**: List hotel reservations
 
 
 ## 💬 Prompt Examples

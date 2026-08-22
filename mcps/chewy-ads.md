@@ -36,12 +36,12 @@ Connect your **Chewy Ads (PromoteIQ)** account to any AI agent and take full con
 
 
 ## Available Tools (8)
-- **list_chewy_campaigns**: List all ad campaigns in the account
 - **get_chewy_account_balance**: Retrieve the current account balance and budget status
-- **list_campaign_adgroups**: List ad groups within a specific campaign
 - **list_adgroup_ads**: List specific ads within an ad group
-- **list_chewy_catalogs**: List product catalogs synced with the ad account
+- **list_chewy_campaigns**: List all ad campaigns in the account
 - **list_adgroup_keywords**: List keywords and their performance for an ad group
+- **list_campaign_adgroups**: List ad groups within a specific campaign
+- **list_chewy_catalogs**: List product catalogs synced with the ad account
 - **get_campaign_details**: Get detailed information for a specific campaign
 - **get_performance_report**: Retrieve a performance report for a specific period
 

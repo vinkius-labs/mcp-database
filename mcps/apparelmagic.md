@@ -34,16 +34,16 @@ The **ApparelMagic MCP Server** provides powerful integration with your ApparelM
 
 
 ## Available Tools (10)
-- **get_customer**: Get details for a specific customer
 - **get_order**: Get details for a specific sales order
 - **get_product**: Get details for a specific product
+- **list_products**: List products/styles from ApparelMagic
+- **list_shipments**: List shipments from ApparelMagic
+- **get_customer**: Get details for a specific customer
 - **get_shipment**: Get details for a specific shipment
 - **list_customers**: List customers from ApparelMagic
 - **list_inventory**: List inventory levels from ApparelMagic
 - **list_orders**: List sales orders from ApparelMagic
-- **list_shipments**: List shipments from ApparelMagic
 - **list_styles**: List styles from ApparelMagic
-- **list_products**: List products/styles from ApparelMagic
 
 
 ## 💬 Prompt Examples

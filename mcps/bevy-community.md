@@ -35,16 +35,16 @@ Connect your **Bevy Community** account to any AI agent and orchestrate your vir
 
 
 ## Available Tools (10)
+- **get_event**: Get specific event details
+- **search_events**: Search for events by keyword
 - **get_chapter**: Get specific chapter details
 - **get_event_counts**: Retrieve counts of events by status
-- **get_event**: Get specific event details
 - **list_chapters**: List all community chapters
 - **list_event_attendees**: List attendees for a specific event
 - **list_event_types**: List available event types/categories
 - **list_events**: List all community events
 - **list_user_chapters**: List chapters a specific user belongs to
 - **search_chapters**: Search for chapters by keyword
-- **search_events**: Search for events by keyword
 
 
 ## 💬 Prompt Examples
