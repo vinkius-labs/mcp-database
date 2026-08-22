@@ -17,24 +17,24 @@ Empower your AI agents with Junip's scalable product review platform. This MCP s
 - **list_answers**: Use this to audit response quality and ensure all customer queries are being addressed correctly.
 
 Lists all answers to questions
-- **list_campaigns**: Use this to analyze active efforts to collect new customer reviews and feedback.
-
-Lists active review request campaigns
 - **list_products**: Includes product names, IDs, and aggregate review metrics. Use this to identify which items have reviews.
 
 Lists all products in your store
-- **list_questions**: Returns question text, status, and associated products. Use this to find customer inquiries that require a merchant response.
-
-Lists all customer questions
-- **list_reviews**: Returns ratings, review content, and reviewer names. Use this to monitor brand sentiment and identify high-quality social proof.
-
-Lists all product reviews
 - **list_themes**: Useful for auditing the visual presentation of reviews on the storefront.
 
 Lists all review display themes
 - **get_account**: Use to verify account identity and access levels.
 
 Retrieves details about your Junip account
+- **list_campaigns**: Use this to analyze active efforts to collect new customer reviews and feedback.
+
+Lists active review request campaigns
+- **list_questions**: Returns question text, status, and associated products. Use this to find customer inquiries that require a merchant response.
+
+Lists all customer questions
+- **list_reviews**: Returns ratings, review content, and reviewer names. Use this to monitor brand sentiment and identify high-quality social proof.
+
+Lists all product reviews
 - **get_product**: Essential for providing a summary of a product's performance within the store.
 
 Retrieves details for a specific product

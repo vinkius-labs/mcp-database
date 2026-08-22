@@ -22,13 +22,13 @@ Developers, data engineers, travel apps, logistics platforms, and any AI agent t
 
 
 ## Available Tools (3)
-- **search_location_by_country**: g., US, BR, DE, FR).
-
-Search locations filtered by country
 - **get_elevation**: Get terrain elevation for any coordinates
 - **search_location**: Supports any language.
 
 Search for cities and locations globally
+- **search_location_by_country**: g., US, BR, DE, FR).
+
+Search locations filtered by country
 
 
 ## 💬 Prompt Examples

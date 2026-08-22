@@ -34,19 +34,19 @@ Connect your **Kizeo Forms** account to any AI agent to automate your field data
 
 
 ## Available Tools (9)
+- **delete_account_user**: Remove a user from the account
+- **list_all_forms**: List all available forms
 - **create_new_user**: Requires name, email, and password.
 
 Add a new user to the account
-- **delete_account_user**: Remove a user from the account
-- **list_all_forms**: List all available forms
 - **search_form_data**: Search form data with advanced filters
-- **get_form_entry_data**: Get data for a specific form submission
 - **get_form_definition**: Get the definition of a specific form
+- **get_form_entry_data**: Get data for a specific form submission
+- **list_account_users**: List all users in the account
 - **push_data_to_form**: Requires a JSON body with field values.
 
 Push a new data entry into a form
 - **update_existing_user**: Update details for an existing user
-- **list_account_users**: List all users in the account
 
 
 ## 💬 Prompt Examples

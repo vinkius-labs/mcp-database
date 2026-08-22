@@ -14,9 +14,15 @@ Empower your AI agents with JobScore's comprehensive applicant tracking system. 
 
 
 ## Available Tools (10)
+- **list_candidates**: Includes candidate names, current stage, and IDs. Essential for monitoring the talent pool and identifying new applications.
+
+Lists all candidates
 - **list_sources**: g., "LinkedIn", "Referral", "Job Board") from which candidates are originating. Essential for analyzing the effectiveness of hiring channels.
 
 Lists all candidate sources
+- **list_users**: Useful for identifying team members and their roles.
+
+Lists all users in the account
 - **get_candidate**: Returns contact history, resume highlights (if available), and current application status. Use this before an interview or when evaluating an applicant.
 
 Retrieves details for a specific candidate
@@ -26,9 +32,6 @@ Retrieves details for a specific job
 - **get_me**: Use this to verify connection status and identity.
 
 Gets current authenticated user info
-- **list_candidates**: Includes candidate names, current stage, and IDs. Essential for monitoring the talent pool and identifying new applications.
-
-Lists all candidates
 - **list_departments**: g., Engineering, Marketing) used to categorize jobs in JobScore. Useful for filtering hiring data by business unit.
 
 Lists all departments
@@ -41,9 +44,6 @@ Lists all jobs in JobScore
 - **list_locations**: Useful for understanding the geographical scope of hiring efforts.
 
 Lists all office locations
-- **list_users**: Useful for identifying team members and their roles.
-
-Lists all users in the account
 
 
 ## 💬 Prompt Examples

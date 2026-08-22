@@ -14,18 +14,12 @@ Empower your AI agents with JVZoo's digital commerce platform. This MCP server a
 
 
 ## Available Tools (10)
-- **get_product**: Returns descriptions, sales status, and technical settings. Use this when the user needs to analyze a specific listing.
-
-Retrieves details for a specific product
 - **get_sale**: Returns customer details, product purchased, and payment status. Use this for order verification or support.
 
 Retrieves details for a specific sale
 - **list_affiliates**: Use this to monitor your affiliate network and identify top partners.
 
 Lists all approved affiliates
-- **list_campaigns**: Useful for tracking promotional efforts and campaign IDs.
-
-Lists all active affiliate campaigns
 - **list_coupons**: Useful for auditing available incentives.
 
 Lists all active discount coupons
@@ -35,6 +29,12 @@ Lists all products in your JVZoo account
 - **list_sales**: Includes transaction IDs, amounts, and timestamps. Essential for monitoring revenue and recent customer purchases.
 
 Lists all sales transactions
+- **get_product**: Returns descriptions, sales status, and technical settings. Use this when the user needs to analyze a specific listing.
+
+Retrieves details for a specific product
+- **list_campaigns**: Useful for tracking promotional efforts and campaign IDs.
+
+Lists all active affiliate campaigns
 - **list_webhooks**: Useful for auditing automated integrations.
 
 Lists all configured webhooks

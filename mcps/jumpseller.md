@@ -23,6 +23,12 @@ Retrieves details for a specific product
 - **get_store_info**: Useful for verifying store configuration.
 
 Retrieves general information about your Jumpseller store
+- **list_payment_methods**: g., PayPal, Stripe) in the store. Useful for auditing checkout options.
+
+Lists configured payment methods
+- **list_products**: Returns product names, SKUs, prices, and IDs. Use this to identify items for stock management or product analysis.
+
+Lists all products in your Jumpseller store
 - **list_categories**: Useful for understanding store organization and finding products within specific niches.
 
 Lists all product categories
@@ -35,12 +41,6 @@ Lists all orders in your store
 - **list_pages**: ) from the Jumpseller store. Useful for auditing site content and navigation.
 
 Lists all pages in your store
-- **list_payment_methods**: g., PayPal, Stripe) in the store. Useful for auditing checkout options.
-
-Lists configured payment methods
-- **list_products**: Returns product names, SKUs, prices, and IDs. Use this to identify items for stock management or product analysis.
-
-Lists all products in your Jumpseller store
 - **list_shipping_methods**: Useful for auditing fulfillment logic and carrier configurations.
 
 Lists configured shipping methods

@@ -19,10 +19,10 @@ Empower your AI agents to manage your events ecosystem with idloom.events. This 
 - **list_categories**: Lists all categories
 - **list_emails**: Lists all emails
 - **list_events**: Lists all events managed in idloom
-- **list_invoices**: Lists all invoices
 - **list_registration_forms**: Lists all registration forms
 - **list_transactions**: Lists all transactions
 - **list_webhooks**: Lists all webhooks
+- **list_invoices**: Lists all invoices
 - **get_event**: Retrieves details for a specific event
 
 

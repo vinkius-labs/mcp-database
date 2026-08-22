@@ -36,18 +36,28 @@ Unlock the full power of **OpenRouteService** from a single conversation. Calcul
 
 
 ## Available Tools (10)
-- **calculate_isochrones**: Inspect deep internal arrays mitigating specific Reachability lines
-- **reverse_geocode**: Perform structural extraction of properties driving active OSM boundaries
-- **search_country_boundary**: country` fetching strings rigidly ignoring maps spanning outside target ISO boundaries.
+- **calculate_isochrones**: Range values are seconds for time-based isochrones.
 
-Irreversibly vaporize explicit validations extracting local search filters
-- **calculate_directions**: Identify precise active arrays spanning native Road network points
-- **get_elevation_line**: Provision a highly-available JSON Payload parsing accessible Altitude lines
-- **calculate_matrix**: Enumerate explicitly attached structured rules exporting active M * N logs
-- **check_optimization_status**: Retrieve explicit Cloud logging tracing explicit Optimization jobs
-- **geocode_search**: Identify bounded routing spaces inside the Headless OpenRouteService
-- **snap_gps_to_road**: Retrieve the exact structural matching verifying Map snapping limits
-- **solve_vrp_optimization**: Dispatch an automated validation check routing explicit VROOM solvers
+Generate reachable areas around one or more coordinates
+- **calculate_directions**: Supported profiles include driving-car, cycling-regular, foot-walking, and wheelchair.
+
+Calculate a route between two or more coordinates
+- **get_elevation_line**: For polyline, provide the encoded polyline string as JSON.
+
+Return elevation values along a line
+- **solve_vrp_optimization**: Solve a vehicle routing problem with jobs and vehicles
+- **get_ors_status**: This is not an optimization job status.
+
+Check OpenRouteService API status
+- **search_country_boundary**: country filtering with a two-letter ISO country code.
+
+Search places constrained to an ISO country code
+- **reverse_geocode**: Reverse geocode longitude and latitude into an address
+- **geocode_search**: Search an address or place with OpenRouteService geocoding
+- **calculate_matrix**: Unreachable pairs may be null.
+
+Calculate a duration matrix between multiple locations
+- **snap_gps_to_road**: Snap GPS coordinates to the nearest road network
 
 
 ## 💬 Prompt Examples

@@ -21,7 +21,7 @@ Equip your AI agent with real-time cryptocurrency intelligence through the **Coi
 ### How it works
 
 1. Subscribe to this server
-2. No API Key required (Public Access)
+2. CoinDesk Data API key required. Configure it in the secure credential field.
 3. Start querying Bitcoin data from Claude, Cursor, or any MCP-compatible client
 
 ### Who is this for?
@@ -32,16 +32,14 @@ Equip your AI agent with real-time cryptocurrency intelligence through the **Coi
 
 
 ## Available Tools (8)
-- **get_bitcoin_price_usd**: Get current Bitcoin price in USD
-- **get_bitcoin_price_gbp**: Get current Bitcoin price in GBP
-- **list_supported_currencies**: List supported fiat currencies for Bitcoin tracking
-- **get_bitcoin_price_eur**: Get current Bitcoin price in EUR
-- **get_bitcoin_price_custom**: g. BRL, JPY, CNY).
-
-Get current Bitcoin price in a specific local currency
-- **get_bitcoin_price_global**: Get current Bitcoin price for globally recognized currencies (BPI)
-- **get_coindesk_disclaimer**: Get official CoinDesk terms and disclaimer
-- **get_latest_update_time**: Get the exact UTC timestamp of the last Bitcoin trade analyzed
+- **get_bitcoin_price_eur**: Get the current Bitcoin index price in EUR
+- **get_bitcoin_price_custom**: Get the current Bitcoin index price in a supported fiat currency
+- **get_coindesk_disclaimer**: Get the CoinDesk Data API usage disclaimer
+- **get_latest_update_time**: Get the latest CoinDesk Bitcoin index update time
+- **get_bitcoin_price_gbp**: Get the current Bitcoin index price in GBP
+- **get_bitcoin_price_usd**: Get the current Bitcoin index price in USD
+- **list_supported_currencies**: List supported Bitcoin index quote currencies
+- **get_bitcoin_price_global**: Get the current Bitcoin index price in USD, GBP, and EUR
 
 
 ## 💬 Prompt Examples

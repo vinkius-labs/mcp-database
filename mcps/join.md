@@ -14,21 +14,12 @@ Empower your AI agents with JOIN's modern recruiting platform. This MCP server a
 
 
 ## Available Tools (10)
-- **get_job**: Returns descriptions, requirements, and internal metadata. Use this when the user needs to analyze the specifics of a particular role or prepare content related to it.
-
-Retrieves details for a specific job
 - **get_me**: Use this to verify identity and check connection health.
 
 Gets details about your own authenticated user
-- **list_applications**: Includes candidate summaries and basic application info. Essential for monitoring recent applicant flow and identifying new leads in the recruitment process.
-
-Lists all job applications
 - **list_candidates**: Returns candidate profiles, contact info, and their association with jobs. Use this when the user wants to search for specific people or perform bulk talent management tasks.
 
 Lists all candidates in the system
-- **list_departments**: g., Engineering, Sales, HR). Useful for filtering jobs or organizing the recruiting workspace by functional areas.
-
-Lists all organization departments
 - **list_jobs**: Returns job titles, IDs, and current status. Use this as the primary entry point to identify specific jobs or to provide an overview of the current hiring pipeline.
 
 Lists all job postings in JOIN
@@ -38,6 +29,15 @@ Retrieves details for a specific application
 - **get_candidate**: Use this for detailed candidate vetting and interview preparation.
 
 Retrieves details for a specific candidate
+- **get_job**: Returns descriptions, requirements, and internal metadata. Use this when the user needs to analyze the specifics of a particular role or prepare content related to it.
+
+Retrieves details for a specific job
+- **list_applications**: Includes candidate summaries and basic application info. Essential for monitoring recent applicant flow and identifying new leads in the recruitment process.
+
+Lists all job applications
+- **list_departments**: g., Engineering, Sales, HR). Useful for filtering jobs or organizing the recruiting workspace by functional areas.
+
+Lists all organization departments
 - **list_locations**: Use this when the user asks for jobs in specific regions or needs to audit location-based recruiting data.
 
 Lists all job locations

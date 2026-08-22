@@ -29,20 +29,20 @@ Connect your AI agent to **Kyte**, the mobile-first POS system designed for smal
 
 
 ## Available Tools (10)
+- **get_order_details**: Get details for a specific order
+- **list_kyte_customers**: List store customers
 - **list_kyte_orders**: Use this to audit recent transactions and delivery statuses.
 
 List recent store orders
-- **get_order_details**: Get details for a specific order
-- **list_kyte_customers**: List store customers
-- **get_customer_profile**: Get details for a specific customer
 - **list_product_categories**: List product categories
-- **get_inventory_status**: Check current inventory levels
-- **list_financial_transactions**: List financial transactions
 - **get_kyte_store_status**: Get current store operational status
+- **list_financial_transactions**: List financial transactions
+- **get_customer_profile**: Get details for a specific customer
+- **get_inventory_status**: Check current inventory levels
+- **get_product_details**: Get details for a specific product
 - **list_kyte_products**: Returns product IDs, names, and current prices.
 
 List all products in the store
-- **get_product_details**: Get details for a specific product
 
 
 ## 💬 Prompt Examples

@@ -34,14 +34,14 @@ Connect your **Kelkoo Group** publisher account to any AI agent to access millio
 
 
 ## Available Tools (8)
-- **list_merchants**: List merchants for a country
 - **get_offer_details**: Get details for a specific offer
 - **get_reporting_summary**: Get publisher reporting summary
+- **list_merchants**: List merchants for a country
 - **search_offers**: Requires a country code (e.g., "us", "uk", "fr") and a search keyword.
 
 Search for product offers on Kelkoo
-- **list_categories**: List product categories for a country
 - **get_category_tree**: Get the hierarchical category tree
+- **list_categories**: List product categories for a country
 - **list_countries**: List all supported countries
 - **search_coupons**: Search for discount coupons
 

@@ -34,32 +34,32 @@ Connect your AI agent to **Knoema**, the most comprehensive source of global dec
 
 
 ## Available Tools (10)
+- **get_latest_dataset_data**: Get the most recent data points for a dataset
 - **search_datasets**: Returns dataset IDs and metadata. Use this to find the correct data source for your statistics.
 
 Search for datasets in Knoema
-- **get_latest_dataset_data**: Get the most recent data points for a dataset
-- **search_data_series**: More granular than dataset search. Ideal for finding specific indicators.
-
-Search for specific data series across all datasets
+- **get_knoema_resource**: Get a generic frontend resource
 - **list_data_frequencies**: g., Annual, Quarterly, Monthly).
 
 List available data frequencies
-- **get_knoema_resource**: Get a generic frontend resource
+- **search_data_series**: More granular than dataset search. Ideal for finding specific indicators.
+
+Search for specific data series across all datasets
 - **get_dataset_metadata**: Critical for understanding what variables are available.
 
 Get metadata for a specific dataset
-- **list_data_topics**: g., Agriculture, Economy, Demographics).
-
-List all available data topics in Knoema
-- **get_data_series**: Requires dataset ID and a list of mnemonics.
-
-Get specific data series
 - **list_dataset_regions**: ) supported by a specific dataset.
 
 List regions available in a dataset
 - **list_data_units**: g., Percentage, USD, Kilograms).
 
 List measurement units
+- **list_data_topics**: g., Agriculture, Economy, Demographics).
+
+List all available data topics in Knoema
+- **get_data_series**: Requires dataset ID and a list of mnemonics.
+
+Get specific data series
 
 
 ## 💬 Prompt Examples
