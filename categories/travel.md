@@ -10,6 +10,8 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 | [Pet Travel Checklist Generator](../mcps/pet-travel-checklist-generator.md) | Generate comprehensive travel preparation checklists for pets, covering documentation, carriers, and vaccinations. |
 | [Shinkansen Routing Optimizer](../mcps/shinkansen-routing-optimizer.md) | Deterministic Japanese Shinkansen travel time and fare calculator. |
 | [Singapore MRT Delay Compensation Calculator](../mcps/singapore-mrt-delay-compensation-calculator.md) | Determine eligibility for MRT delay compensation based on official transit rules. |
+| [Surf Destination Profile Matcher](../mcps/surf-destination-profile-matcher.md) | Find your perfect surf spot using deterministic profile matching. |
+| [Surf Trip Car Packing Optimizer](../mcps/surf-trip-car-packing-optimizer.md) | Calculate if your surfboards will fit in your vehicle trunk using nesting efficiency logic. |
 | [Travel Weight Optimizer](../mcps/travel-weight-optimizer.md) | Optimize your luggage packing using a greedy algorithm to maximize item utility within weight limits. |
 | [Visa Requirement Checker](../mcps/visa-requirement-checker.md) | Check visa requirements, travel advisories, and passport validity rules globally. |
 

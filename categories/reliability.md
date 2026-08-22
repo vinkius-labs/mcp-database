@@ -7,6 +7,7 @@ Explore the open database of **reliability** Model Context Protocol (MCP) server
 | [Agent Circuit Breaker Calculator](../mcps/agent-circuit-breaker-calculator.md) | A deterministic state machine to manage agent reliability and prevent cascading failures. |
 | [Agent Fallback Chain Calculator](../mcps/agent-fallback-chain-calculator.md) | Predict agent degradation paths, latency impacts, and success probabilities. |
 | [Agent Retry & Backoff Calculator](../mcps/agent-retry-backoff-calculator.md) | Deterministic engine for calculating retry schedules, backoff delays, and circuit breaker states. |
+| [Agent SLA Compliance Monitor](../mcps/agent-sla-compliance-monitor.md) | Deterministic engine for calculating real-time SLA compliance, error budget depletion, and health scoring. |
 | [Agent Timeout & Cascading Delay Calculator](../mcps/agent-timeout-cascading-delay-calculator.md) | Calculate deterministic timeout allocations and predict cascading delays in multi-agent workflows. |
 | [Deterministic Timeout Enforcer](../mcps/deterministic-timeout-enforcer.md) | Prevents agent hang-ups by enforcing strict execution time boundaries and token budgets. |
 | [Error Classifier and Router](../mcps/error-classifier-and-router.md) | Classifies LLM and tool errors into a deterministic taxonomy for automated recovery. |

@@ -8,6 +8,7 @@ Explore the open database of **transportation** Model Context Protocol (MCP) ser
 | [Fuel Consumption Converter](../mcps/fuel-consumption-converter.md) | Deterministic bidirectional fuel efficiency conversion and trip cost estimation. |
 | [J&T Express Malaysia](../mcps/jt-express-malaysia.md) | Orchestrate J&T Express Malaysia logistics — track parcels, manage orders, and calculate shipping directly from any AI agent. |
 | [Lalamove Malaysia](../mcps/lalamove-malaysia.md) | Orchestrate Lalamove Malaysia deliveries — get quotations, manage orders, and track drivers directly from any AI agent. |
+| [MRT vs Grab Decision Engine](../mcps/mrt-vs-grab-decision-engine.md) | A deterministic decision tool to choose between MRT and ride-hailing in Singapore. |
 
 
 ---

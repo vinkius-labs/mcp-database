@@ -5,6 +5,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [AB Test Sample Size Calculator](../mcps/ab-test-sample-size-calculator.md) | Calculate required sample size, test duration, and peeking risk for A/B experiments. |
+| [Agent Benchmark Comparison Engine](../mcps/agent-benchmark-comparison-engine.md) | A deterministic engine for ranking and comparing LLM agents based on performance metrics. |
 | [Agent Scoring & Ranking Engine](../mcps/agent-scoring-ranking-engine.md) | Deterministic performance scoring and ranking for autonomous agents. |
 | [Astrological Compatibility Engine](../mcps/astrological-compatibility-engine.md) | Analyze zodiac compatibility using elemental and modal synergy. |
 | [Bayesian A/B Testing Calculator](../mcps/bayesian-ab-testing-calculator.md) | Quantify conversion probability, expected loss, and uplift using Bayesian inference. |
@@ -28,6 +29,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Sliding Window Aggregator](../mcps/sliding-window-aggregator.md) | Deterministic engine for sliding window metric aggregation, trend analysis, and anomaly detection. |
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
 | [Swimming Pace Calculator](../mcps/swimming-pace-calculator.md) | Calculate swimming training intensities, race predictions, and efficiency metrics based on Critical Swim Speed (CSS). |
+| [Tool Selection Efficiency Calculator](../mcps/tool-selection-efficiency-calculator.md) | Optimize tool routing and performance monitoring for tool-augmented agents. |
 | [Vector Index Recall Estimator](../mcps/vector-index-recall-estimator.md) | Estimate ANN search performance, memory footprint, and optimal parameters. |
 | [Wasm Bundle Size Analyzer](../mcps/wasm-bundle-size-analyzer.md) | Analyze WebAssembly module size, compression savings, and execution latency across device tiers. |
 | [Weekly Training Load Calculator](../mcps/weekly-training-load-calculator.md) | Calculate physiological training stress using TRIMP and TSS methodologies to track athlete fatigue and fitness. |

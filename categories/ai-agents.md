@@ -5,8 +5,10 @@ Explore the open database of **ai-agents** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Agent Capability Matcher](../mcps/agent-capability-matcher.md) | Optimizes task assignment to agents using capability matching and load balancing. |
+| [Agent Memory Optimization Calculator](../mcps/agent-memory-optimization-calculator.md) | Optimize agentic memory hierarchies with precise allocation and decay analysis. |
 | [Agent Semantic Deduplication Engine](../mcps/agent-semantic-deduplication-engine.md) | A deterministic tool for calculating semantic similarity and deduplicating multi-agent outputs. |
 | [Agent Token Budget Allocator](../mcps/agent-token-budget-allocator.md) | Deterministic token budget allocation for multi-agent pipelines. |
+| [Token Budget Allocation Optimizer](../mcps/token-budget-allocation-optimizer.md) | Distribute and optimize token budgets across multi-agent pipelines. |
 
 
 ---

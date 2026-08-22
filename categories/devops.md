@@ -5,6 +5,7 @@ Explore the open database of **devops** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Agent Prompt Versioning Engine](../mcps/agent-prompt-versioning-engine.md) | Deterministic prompt version management and rollback calculator. |
+| [Agent Workflow Bottleneck Analyzer](../mcps/agent-workflow-bottleneck-analyzer.md) | Identifies performance bottlenecks and error risks in agentic pipelines. |
 | [AWS App Mesh Calculator](../mcps/aws-app-mesh-calculator.md) | Calculate deterministic AWS App Mesh limits, routing, and infrastructure requirements. |
 | [AWS CodeBuild Project Sizing Calculator](../mcps/aws-codebuild-project-sizing-calculator.md) | Deterministic sizing and limits calculator for AWS CodeBuild projects. |
 | [AWS EventBridge Compliance Calculator](../mcps/aws-eventbridge-compliance-calculator.md) | Deterministic tool for calculating AWS EventBridge architectural compliance and resource limits. |

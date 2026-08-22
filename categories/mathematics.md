@@ -14,6 +14,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Elemental Weakness Calculator](../mcps/elemental-weakness-calculator.md) | Calculate combat effectiveness and identify elemental imbalances using an interaction matrix. |
 | [Embedding Similarity Calculator](../mcps/embedding-similarity-calculator.md) | Calculate mathematical distances and similarity scores between multidimensional numerical vectors. |
 | [Equal Temperament Calculator](../mcps/equal-temperament-calculator.md) | Calculate MIDI frequencies, interval deviations, and tuning system comparisons. |
+| [Field of View & Frustum Calculator](../mcps/field-of-view-frustum-calculator.md) | Calculate precise frustum geometry, object visibility, and LOD recommendations for 3D engines. |
 | [FOV to Focal Length Converter](../mcps/fov-to-focal-length-converter.md) | Convert between Field of View (degrees) and Focal Length (mm) for various sensor formats. |
 | [Graph Analysis Toolkit](../mcps/graph-analysis-toolkit.md) | Deep structural analysis of directed and undirected graphs, providing metrics on connectivity, topology, and node importance. |
 | [Loot Table Balancer](../mcps/loot-table-balancer.md) | Precision utility for calculating, normalizing, and auditing loot table probabilities and economic expected values. |
@@ -25,10 +26,14 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Pattern Grading Calculator](../mcps/pattern-grading-calculator.md) | Scale sewing patterns between sizes using ASTM standards (Women, Men, Children). |
 | [Prestige System Calculator](../mcps/prestige-system-calculator.md) | Analyze the economic efficiency and temporal impact of prestige/rebirth mechanics. |
 | [Prime Number Engine](../mcps/prime-number-engine.md) | Advanced computational engine for primality testing, integer factorization, and prime distribution analysis. |
+| [Projectile Trajectory Simulator](../mcps/projectile-trajectory-simulator.md) | Deterministic physics engine for precise projectile flight path simulation and target analysis. |
 | [Stretch Factor Calculator](../mcps/stretch-factor-calculator.md) | Calculate exact pixel stretching, aspect ratio matching, and pixel footprint when scaling resolutions. |
+| [Swell Refraction Calculator](../mcps/swell-refraction-calculator.md) | Predict wave refraction, height changes, and breaking stability using Snell's and Green's Laws. |
 | [Time Signature Calculator](../mcps/time-signature-calculator.md) | Calculate measure duration, rhythmic feeling, and polyrhythms for any time signature. |
 | [Vector Similarity Threshold Enforcer](../mcps/vector-similarity-threshold-enforcer.md) | Compute exact vector similarity scores and enforce strict relevance thresholds for RAG pipelines. |
+| [Wave Face Angle & Barrel Geometry Calculator](../mcps/wave-face-angle-barrel-geometry-calculator.md) | Calculate wave face angles, barrel potential, wave speed, and ride duration. |
 | [Waveform Generator](../mcps/waveform-generator.md) | Generate high-fidelity digital audio waveforms and noise profiles. |
+| [XP Curve Calculator](../mcps/xp-curve-calculator.md) | Deterministic RPG experience progression engine. |
 
 
 ---

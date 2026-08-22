@@ -4,6 +4,7 @@ Explore the open database of **automation** Model Context Protocol (MCP) servers
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Agent Fallback Chain Reliability](../mcps/agent-fallback-chain-reliability.md) | Calculate reliability, latency, and quality impact for multi-tier agent fallback strategies. |
 | [Breadcrumb Generator](../mcps/breadcrumb-generator.md) | Automatically generates text, JSON-LD schema, and HTML breadcrumbs from URL paths. |
 | [Claude Computer Use Coordinate Normalizer](../mcps/claude-computer-use-coordinate-normalizer.md) | Transforms absolute pixel coordinates into the standardized 1024x768 viewport space for Anthropic's Computer Use API. |
 | [Conventional Commit Linter](../mcps/conventional-commit-linter.md) | Validate commit messages against Conventional Commates spec and determine SemVer impact. |

@@ -10,9 +10,12 @@ Explore the open database of **utility** Model Context Protocol (MCP) servers.
 | [Delay Time Compensator](../mcps/delay-time-compensator.md) | Calculate precise audio delay offsets to account for hardware latency and BPM. |
 | [Essential Oil Drop Calculator](../mcps/essential-oil-drop-calculator.md) | Calculate the exact number of essential oil drops needed for a specific dilution percentage in any carrier oil volume. |
 | [Leak Waste Estimator](../mcps/leak-waste-estimator.md) | Calculate water waste in liters across daily, monthly, and yearly intervals based on leak types. |
+| [Leash Length Optimizer](../mcps/leash-length-optimizer.md) | Deterministic surfboard leash length and thickness calculator. |
 | [PPI & DPI Density Calculator](../mcps/ppi-dpi-density-calculator.md) | Calculate screen pixel density (PPI), Windows scaling percentages, and physical-to-pixel conversions. |
 | [Resin Volume Calculator](../mcps/resin-volume-calculator.md) | Calculate precise resin volumes, weights, and mixing ratios for epoxy casting projects. |
 | [Storage Bitrate Balancer](../mcps/storage-bitrate-balancer.md) | Calculate maximum allowed video bitrates and estimated file sizes with a 10% safety margin. |
+| [Surfboard Ding Repair Calculator](../mcps/surfboard-ding-repair-calculator.md) | Calculate exact resin, fiberglass, and curing time for surfboard repairs. |
+| [Surfboard Volume & Suitability Calculator](../mcps/surfboard-volume-suitability-calculator.md) | Calculate precise surfboard displacement volume and ideal buoyancy ratios. |
 | [Timelapse Calculator](../mcps/timelapse-calculator.md) | Plan precise timelapse sequences, storage needs, and golden hour windows. |
 | [Token Counter and Budget Enforcer](../mcps/token-counter-and-budget-enforcer.md) | Estimates token usage and enforces strict cumulative budget limits for AI agents. |
 | [Tool Output Truncator and Size Limiter](../mcps/tool-output-truncator-and-size-limiter.md) | Safely shrinks tool outputs to fit byte limits without breaking multi-byte characters. |

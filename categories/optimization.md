@@ -19,11 +19,15 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Cost-Controlled Tool Selector](../mcps/cost-controlled-tool-selector.md) | A deterministic engine to select the most cost-effective tool variant based on accuracy requirements. |
 | [Grain Direction Restrictor](../mcps/grain-direction-restrictor.md) | Enforce material grain orientation constraints for precise plywood cutting and bin packing. |
 | [Konbini Hack Macro Optimizer](../mcps/konbini-hack-macro-optimizer.md) | Find the most cost-effective nutritional hacks in Japanese convenience stores. |
+| [KV Cache Memory Optimizer](../mcps/kv-cache-memory-optimizer.md) | Deterministic calculator for LLM KV cache memory, throughput, and optimization analysis. |
+| [Model Routing Efficiency Calculator](../mcps/model-routing-efficiency-calculator.md) | Optimize LLM selection by analyzing cost-quality trade-offs and task complexity. |
 | [Model Routing Optimizer](../mcps/model-routing-optimizer.md) | A deterministic engine for selecting the optimal LLM based on cost, quality, and latency. |
 | [Prefix Cache Savings Calculator](../mcps/prefix-cache-savings-calculator.md) | Calculate exact token savings from LLM prefix caching. |
+| [RAG Chunk Optimization Calculator](../mcps/rag-chunk-optimization-calculator.md) | Deterministic tool for optimizing RAG chunk size and overlap parameters. |
 | [RAG Chunk Selection Optimizer](../mcps/rag-chunk-selection-optimizer.md) | A deterministic engine to select the most effective RAG information chunks within token budgets. |
 | [RAG Chunk Size Optimizer](../mcps/rag-chunk-size-optimizer.md) | Evaluate RAG chunking strategies by calculating segmentation metrics, embedding costs, and context viability. |
 | [Speculative Decoding Calculator](../mcps/speculative-decoding-calculator.md) | Optimize LLM inference speed and cost using deterministic speculative decoding metrics. |
+| [Speculative Decoding Speedup Calculator](../mcps/speculative-decoding-speedup-calculator.md) | Calculate efficiency gains and throughput improvements for speculative decoding strategies. |
 | [Table Demographic Balancer](../mcps/table-demographic-balancer.md) | Prevent demographic clustering in seating arrangements by maintaining balanced personality traits and age groups. |
 | [Token Budget Allocator](../mcps/token-budget-allocator.md) | Deterministic token budget distribution for multi-agent pipelines. |
 

@@ -15,6 +15,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Ratio to Volume Converter](../mcps/ratio-to-volume-converter.md) | Convert liquid ratios into exact milliliter volumes based on a target total volume. |
 | [Sound Frequency Calculator](../mcps/sound-frequency-calculator.md) | Calculate musical note frequencies, Solfeggio resonances, and harmonic series. |
 | [Waste Decomposition Timer](../mcps/waste-decomposition-timer.md) | Get estimated decomposition timelines for various materials. |
+| [Wave Speed and Period Analyzer](../mcps/wave-speed-and-period-analyzer.md) | Deterministic physics engine for calculating wave dynamics in deep and shallow water. |
 
 
 ---

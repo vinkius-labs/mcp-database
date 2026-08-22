@@ -14,7 +14,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Agent Checkpoint & Recovery Calculator](../mcps/agent-checkpoint-recovery-calculator.md) | Model operational overhead, storage costs, and recovery reliability for long-running agent workflows. |
 | [Agent Description & Tool Alignment Checker](../mcps/agent-description-tool-alignment-checker.md) | Validates alignment between agent descriptions and assigned tools to prevent multi-agent framework errors. |
 | [Agent Error Recovery Rate Calculator](../mcps/agent-error-recovery-rate-calculator.md) | Analyzes execution logs to calculate tool call success ratios and agent recovery rates. |
-| [Agent Evaluation Metrics Calculator](../mcps/agent-evaluation-metrics-calculator.md) | A deterministic engine for measuring agentic performance through statistical accuracy, efficiency, and reliability metrics. |
+| [Agent Evaluation Metrics Calculator](../mcps/agent-evaluation-metrics-calculator.md) | Quantify agent performance with deterministic accuracy, speed, and efficiency metrics. |
 | [Agent Handoff Protocol Calculator](../mcps/agent-handoff-protocol-calculator.md) | Model the efficiency, stability, and performance impact of multi-agent handoffs. |
 | [Agent Latency Pipeline Calculator](../mcps/agent-latency-pipeline-calculator.md) | Model end-to-end latency, retry impacts, and SLA compliance for agentic workflows. |
 | [Agent Persona Consistency Scanner](../mcps/agent-persona-consistency-scanner.md) | A precision utility for measuring how closely an LLM adheres to a target persona. |
@@ -133,6 +133,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Contentstack](../mcps/contentstack.md) | Equip your AI agent to instantly retrieve digital content and schemas using the Contentstack Delivery API. |
 | [ContentStack (Management)](../mcps/contentstack-management.md) | Grant your AI agent read-write capabilities using ContentStack CMA. Update, publish, and manage contents, schemas, and environments from chat. |
 | [Context Window Eviction Planner](../mcps/context-window-eviction-planner.md) | A deterministic engine to manage LLM context windows by calculating optimal message eviction. |
+| [Context Window Utilization Analyzer](../mcps/context-window-utilization-analyzer.md) | A deterministic tool for tracking and predicting AI context window exhaustion. |
 | [ContextQA](../mcps/contextqa.md) | Automate testing via ContextQA — manage test suites, track AI-healing executions, trigger automated runs, and audit API tests directly from any AI agent. |
 | [Convoy](../mcps/convoy.md) | Manage webhooks with Convoy — create endpoints, broadcast events, and monitor delivery directly from your AI agent. |
 | [Coqui TTS (Open Source Speech Studio API)](../mcps/coqui-tts-open-source-speech-studio-api.md) | Generate high-quality speech from text using Coqui TTS. List available models and synthesize audio directly from your AI agent. |
@@ -481,9 +482,11 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [Prefect](../mcps/prefect.md) | Bring your data orchestration into your AI — audit Python pipelines, debug failed runs, and inspect Prefect Work Pools natively. |
 | [Prismatic](../mcps/prismatic.md) | Manage your Prismatic integration platform — list customers, create instances, deploy integrations, and fetch execution logs via AI. |
 | [Privy](../mcps/privy.md) | Manage users and wallets via Privy — create users, search profiles, and manage embedded wallets directly from any AI agent. |
+| [Prompt Cache Hit Rate Calculator](../mcps/prompt-cache-hit-rate-calculator.md) | Analyze LLM prompt prefix caching efficiency and performance. |
 | [Prompt Entropy and Clarity Scorer](../mcps/prompt-entropy-and-clarity-scorer.md) | A mathematical diagnostic tool to measure prompt complexity and cognitive load. |
 | [Prompt Length Classifier](../mcps/prompt-length-classifier.md) | Estimate token usage and context window saturation. |
 | [Prompt Template Optimizer](../mcps/prompt-template-optimizer.md) | A deterministic utility for balancing LLM token efficiency against semantic importance. |
+| [Prompt Template Reuse Analyzer](../mcps/prompt-template-reuse-analyzer.md) | A diagnostic engine to evaluate prompt library efficiency and identify consolidation opportunities. |
 | [Prompt Template Variable Injector Checker](../mcps/prompt-template-variable-injector-checker.md) | Validates prompt templates for correct variable syntax, undeclared variables, and potential injection vectors. |
 | [Prompt Template Variable Injector Checker](../mcps/prompt-template-variable-injector-checker-alternative.md) | Validates prompt templates for syntax, undeclared variables, and injection risks. |
 | [Prompt Template Variable Resolver](../mcps/prompt-template-variable-resolver.md) | Validates and resolves variable placeholders in LLM templates. |

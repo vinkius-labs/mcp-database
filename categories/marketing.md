@@ -22,6 +22,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 | [Hashtag Effectiveness Analyzer](../mcps/hashtag-effectiveness-analyzer.md) | Evaluate hashtag sets for platform optimization, readability, and safety. |
 | [Headline Power Analyzer](../mcps/headline-power-analyzer.md) | Analyze headlines for power words, emotional impact, sentiment, and platform compliance. |
 | [Influencer ROI Calculator](../mcps/influencer-roi-calculator.md) | Calculate the financial impact, EMV, and profitability of influencer marketing campaigns. |
+| [Instagram Engagement Predictor](../mcps/instagram-engagement-predictor.md) | Predict Instagram engagement rates and likes for the Singapore market. |
 | [Keyword Intent Classifier](../mcps/keyword-intent-classifier.md) | Categorize search keywords by intent, length, and marketing funnel stage. |
 | [LinkedIn Engagement Scorer](../mcps/linkedin-engagement-scorer.md) | Quantify the effectiveness of LinkedIn post Call-to-Actions (CT0As) and engagement triggers in text. |
 | [LinkedIn Hashtag Strategy Validator](../mcps/linkedin-hashtag-strategy-validator.md) | Analyze LinkedIn hashtag usage for density, accessibility, and strategic positioning. |

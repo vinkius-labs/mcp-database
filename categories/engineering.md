@@ -4,6 +4,7 @@ Explore the open database of **engineering** Model Context Protocol (MCP) server
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Fin Setup Surface Area Calculator](../mcps/fin-setup-surface-area-calculator.md) | Calculate precise surfboard fin geometry, volume, and performance profiles. |
 | [Room Acoustics Calculator](../mcps/room-acoustics-calculator.md) | Predict room modes, Schroeder frequency, and RT60 decay for studio acoustics. |
 | [Steve Jobs Vision Prover](../mcps/steve-jobs-vision-prover.md) | A product had settings menus with 47 options and 15 integrations. This tool forces it to kill features, absorb complexity, and own the whole experience. |
 

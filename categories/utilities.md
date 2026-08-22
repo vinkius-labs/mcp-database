@@ -33,6 +33,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Deep Diff Engine](../mcps/deep-diff-engine.md) | Find every single change between two JSON objects — additions, deletions, and edits with exact structural paths. Stop relying on AI to 'spot the difference'. |
 | [Deterministic Cron Schedule Engine](../mcps/deterministic-cron-schedule-engine.md) | Equip your AI with precise cron job parsing. Deterministically translate cron to natural language, format schedules, and calculate exact next execution times. |
 | [Dimensional Weight Calculator](../mcps/dimensional-weight-calculator.md) | Calculate dimensional weights, billable weight, and shipping weight discrepancies for major global carriers. |
+| [DPS Damage Balance Calculator](../mcps/dps-damage-balance-calculator.md) | Deterministic combat math for calculating raw DPS, effective DPS, and time to kill. |
 | [Durian Value-Yield Calculator](../mcps/durian-value-yield-calculator.md) | Calculate the true edible yield and cost-efficiency of durian varieties. |
 | [File Encoding & BOM Normalizer](../mcps/file-encoding-bom-normalizer.md) | Detects and removes Byte Order Marks (BOM) and normalizes file encodings and line endings to a standard UTF-8 LF format. |
 | [Flash Power Calculator](../mcps/flash-power-calculator.md) | Calculate aperture, flash power levels, and motion freeze potential. |
@@ -66,6 +67,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Number Base Converter](../mcps/number-base-converter.md) | Convert integers and fractional numbers between any bases from 2 to 36 with high precision. |
 | [Number Compression Calculator](../mcps/number-compression-calculator.md) | Analyze text to calculate potential token savings by rounding large numbers. |
 | [Onsen Mineral Classifier](../mcps/onsen-mineral-classifier.md) | Classify Japanese hot spring water quality, legal status, and therapeutic benefits. |
+| [Paddle-Out Calorie Estimator](../mcps/paddle-out-calorie-estimator.md) | Calculate physiological energy expenditure and time for surfing paddle-outs based on water currents. |
 | [Pan Size Converter](../mcps/pan-size-converter.md) | Calculate baking pan volumes and find perfect shape or size substitutions. |
 | [Pet Age Converter](../mcps/pet-age-converter.md) | Calculate human-equivalent ages for dogs and cats using species-specific biological growth curves. |
 | [Pet Lifespan Estimator](../mcps/pet-lifespan-estimator.md) | Estimate pet longevity and identify life stages based on species, breed, and size. |
@@ -100,6 +102,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Water Heater Comparator](../mcps/water-heater-comparator.md) | Compare the operational costs and carbon footprint of electric, gas, and solar thermal water heating systems. |
 | [Water Usage Optimizer](../mcps/water-usage-optimizer.md) | Calculate household water consumption and identify savings opportunities. |
 | [Wind Chill Calculator](../mcps/wind-chill-calculator.md) | Calculate perceived wind chill temperatures and frostbite risk levels. |
+| [WSL Heat Scoring Calculator](../mcps/wsl-heat-scoring-calculator.md) | Calculate professional World Surf League heat scores and win probabilities. |
 
 
 ---

@@ -18,6 +18,7 @@ Explore the open database of **healthcare** Model Context Protocol (MCP) servers
 | [Glasgow Coma Scale Calculator](../mcps/glasgow-coma-scale-calculator.md) | Assess neurological impairment and determine airway management protocols using the Glasgow Coma Scale (GCS). |
 | [HAS-BLED Score Calculator](../mcps/has-bled-score-calculator.md) | Assess major bleeding risk in patients on anticoagulation therapy using the HAS-BLED scoring system. |
 | [Injection Day Alignment](../mcps/injection-day-alignment.md) | Calculate precise medication injection schedules and manage weekday alignment shifts. |
+| [Mental Health Resource Finder](../mcps/mental-health-resource-finder.md) | Deterministic matching for Singapore mental health resources. |
 | [MEWS Calculator](../mcps/mews-calculator.md) | Quantify patient physiological deterioration using the Modified Early Warning Score (MEWS) system. |
 | [NIHSS Calculator](../mcps/nihss-calculator.md) | Calculate NIH Stroke Scale scores and assess stroke severity instantly. |
 | [Nutritional Risk Screening (NRS-2002)](../mcps/nutritional-risk-screening-nrs-2002.md) | Assess nutritional risk in hospitalized patients using the NRS-2002 protocol and ESPEN guidelines. |

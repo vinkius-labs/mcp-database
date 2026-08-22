@@ -11,6 +11,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Cat Facts](../mcps/cat-facts.md) | Universal cat intelligence engine — get random cat facts and breed info via AI. |
 | [Cat Litter Box Capacity Calculator](../mcps/cat-litter-box-capacity-calculator.md) | Estimate litter volume, monthly usage, replacement frequency, and maintenance costs for your cats. |
 | [Chope Tissue Optimization](../mcps/chope-tissue-optimization.md) | Deterministic strategy calculator for optimizing table reservations in food courts. |
+| [Dating App Success Predictor](../mcps/dating-app-success-predictor.md) | Predict dating app engagement and match timelines in Singapore. |
 | [Dog CEO](../mcps/dog-ceo.md) | Universal dog intelligence engine — get random dog images and breed data via AI. |
 | [Eco Savings Tracker](../mcps/eco-savings-tracker.md) | Quantify and visualize your environmental impact through personal habit changes. |
 | [Environmental Impact Comparator](../mcps/environmental-impact-comparator.md) | Compare the carbon footprint and waste generation of different lifestyle choices side-by-side. |
@@ -28,6 +29,7 @@ Explore the open database of **lifestyle** Model Context Protocol (MCP) servers.
 | [Singapore Kopi Decoder](../mcps/singapore-kopi-decoder.md) | Translates Singaporean coffee shorthand and calculates nutritional data. |
 | [Skincare Routine Optimizer](../mcps/skincare-routine-optimizer.md) | Optimize your skincare routine order, ingredient safety, and product lifecycle management. |
 | [Sun Sign Calculator](../mcps/sun-sign-calculator.md) | Calculate precise zodiac signs with year-specific cusp transitions and astrological properties. |
+| [Surf Wax Consumption Estimator](../mcps/surf-wax-consumption-estimator.md) | Calculate surfboard deck area and monthly wax requirements based on water temperature. |
 | [Sustainability Score Calculator](../mcps/sustainability-score-calculator.md) | Quantify your environmental footprint and discover actionable paths to a more sustainable lifestyle. |
 | [Valid Outfit Generator](../mcps/valid-outfit-generator.md) | Calculate and sample valid clothing combinations based on formality consistency rules. |
 | [VTuber Name Fortune Calculator](../mcps/vtuber-name-fortune-calculator.md) | Calculate VTuber debut potential using traditional Seimei Handan and modern persona alignment. |

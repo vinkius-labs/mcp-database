@@ -11,6 +11,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [ADX-Calculator](../mcps/adx-calculator.md) | Deterministic Average Directional Index (ADX) calculator using Wilder's smoothing. |
 | [Agent Cost Allocation Engine](../mcps/agent-cost-allocation-engine.md) | Deterministic cost allocation and chargeback calculator for multi-agent systems. |
 | [Airdrop Farming Strategy](../mcps/airdrop-farming-strategy.md) | A deterministic engine to identify high-ROI crypto airdrop opportunities. |
+| [Alcohol Cost-per-Buzz Calculator](../mcps/alcohol-cost-per-buzz-calculator.md) | Calculate the economic efficiency of alcohol consumption in Singapore. |
 | [Appliance Energy Calculator](../mcps/appliance-energy-calculator.md) | Calculate electricity consumption in kWh and monthly costs for appliances. |
 | [Arms Index (TRIN) Calculator](../mcps/arms-index-trin-calculator.md) | Calculate the Arms Index (TRIN) to measure market breadth and sentiment. |
 | [Aroon Indicator Calculator](../mcps/aroon-indicator-calculator.md) | Calculate Aroon Up, Down, and Oscillator metrics to identify market trends. |
@@ -224,6 +225,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [INSS Retirement Estimator](../mcps/inss-retirement-estimator.md) | Estimate your Brazilian social security retirement benefits based on age, contribution time, and average salary. |
 | [Intermarket Spread Strategy](../mcps/intermarket-spread-strategy.md) | Deterministic mean-reversion engine for trading commodity ratio spreads. |
 | [Inventory Turnover Calculator](../mcps/inventory-turnover-calculator.md) | Calculate inventory turnover ratio, DSI, and compare performance against industry benchmarks. |
+| [Investment Allocation by Age](../mcps/investment-allocation-by-age.md) | Deterministic portfolio allocation for Singaporean young adults. |
 | [Investment Profitability Comparator](../mcps/investment-profitability-comparator.md) | Compare net returns of CDB, Treasury Selic, Savings, and DI Funds after regressive income tax. |
 | [IPO Readiness Scorer](../mcps/ipo-readiness-scorer.md) | Evaluate company suitability for IPO based on financial and structural benchmarks. |
 | [Iron Condor Strategy](../mcps/iron-condor-strategy.md) | A deterministic market-neutral options strategy for consolidating markets. |
@@ -241,6 +243,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [LED Upgrade Calculator](../mcps/led-upgrade-calculator.md) | Calculate energy, financial, and CO2 savings when switching to LED bulbs. |
 | [Lending Yield Curve Arbitrage](../mcps/lending-yield-curve-arbitrage.md) | Identify and evaluate profitable yield arbitrage loops between stablecoin lending protocols. |
 | [Lien Waiver Deadline Calculator](../mcps/lien-waiver-deadline-calculator.md) | Calculate statutory Mechanics Lien deadlines for preliminary notice, filing, and enforcement. |
+| [Life Milestone Timing Calculator](../mcps/life-milestone-timing-calculator.md) | Deterministic life milestone projections based on Singapore demographic statistics. |
 | [Linear Regression Calculator](../mcps/linear-regression-calculator.md) | Perform deterministic least-squares linear regression and volatility channel analysis. |
 | [Liquid Staking Yield Strategy](../mcps/liquid-staking-yield-strategy.md) | Deterministic optimization engine for LST trading signals. |
 | [Liquidation Preference Calculator](../mcps/liquidation-preference-calculator.md) | Model complex equity distribution and liquidation preference scenarios during company exits. |
@@ -368,6 +371,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Simples Nacional Calculator](../mcps/simples-nacional-calculator.md) | Calculate effective tax rates, Fator R eligibility, and monthly DAS amounts for the Brazilian Simples Nacional regime. |
 | [Singapore ERP Toll Calculator](../mcps/singapore-erp-toll-calculator.md) | Calculate exact Singapore Electronic Road Pricing (ERP) costs for vehicles and routes. |
 | [Singapore Parking Fee Calculator](../mcps/singapore-parking-fee-calculator.md) | Calculate exact HDB and URA parking fees in Singapore. |
+| [Singapore Property Lifetime Cost Calculator](../mcps/singapore-property-lifetime-cost-calculator.md) | Compare the total lifetime costs of HDB flats versus private Condominiums in Singapore. |
 | [Slim Capital Prover](../mcps/slim-capital-prover.md) | An investment thesis picked the hottest sector at peak valuations. It said 'revenue growth' instead of free cash flow. It entered a market with no barriers to entry. It proposed hiring 50 people. It treated each investment as standalone. That is not capital allocation — that is herd following. This tool forces five Slim-level axes: contrarian timing, cash flow obsession, barrier market entry, operational austerity, and conglomerate leverage. |
 | [Smart Money Wallet Tracking Strategy](../mcps/smart-money-wallet-tracking-strategy.md) | Identify and replicate high-performance smart money wallet movements with statistical confidence. |
 | [Smart Plug Energy Monitor](../mcps/smart-plug-energy-monitor.md) | Estimate energy consumption and operational costs for any plugged-in device. |
@@ -469,6 +473,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Water Usage Calculator](../mcps/water-usage-calculator.md) | Estimate household water consumption, identify leak impacts, and calculate the financial return on upgrading to water-efficient fixtures. |
 | [WeChat Red Packet Distributor](../mcps/wechat-red-packet-distributor.md) | Calculate fair and deterministic WeChat Red Packet distributions. |
 | [WeChat Red Packet Simulator](../mcps/wechat-red-packet-simulator.md) | Simulate deterministic WeChat 'Lucky Money' distributions with inequality metrics. |
+| [Wedding Budget Reality Check](../mcps/wedding-budget-reality-check.md) | Deterministic Singapore wedding budget calculator and reality check. |
 | [Wedding Budget Splitter](../mcps/wedding-budget-splitter.md) | Intelligently allocate your wedding budget using industry-standard percentages and dynamic rebalancing. |
 | [Williams %R Calculator](../mcps/williams-r-calculator.md) | Deterministic technical analysis engine for Williams %R, divergence, and failure swing detection. |
 | [Williams Alligator Indicator Calculator](../mcps/williams-alligator-indicator-calculator.md) | Calculate precise Williams Alligator indicator lines, states, and trend analysis. |

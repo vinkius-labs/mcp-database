@@ -16,6 +16,7 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 | [Gachapon Probability Calculator](../mcps/gachapon-probability-calculator.md) | Calculate the statistical likelihood, expected costs, and purchase requirements for completing a full Gachapon collection. |
 | [Game Economy Inflation Calculator](../mcps/game-economy-inflation-calculator.md) | Monitor, forecast, and stabilize game currency inflation by analyzing gold sinks and faucets. |
 | [Loot Box Expectation Calculator](../mcps/loot-box-expectation-calculator.md) | Calculate gacha success probabilities, expected costs, and bad luck streak risks. |
+| [Loot Drop Probability Engine](../mcps/loot-drop-probability-engine.md) | Analyze loot table probabilities, pity mechanics, and economic value distributions. |
 | [Mastery Progression Calculator](../mcps/mastery-progression-calculator.md) | Simulate skill progression through mastery tiers based on gameplay frequency and streak bonuses. |
 | [Player Spending LTV Calculator](../mcps/player-spending-ltv-calculator.md) | Calculate player Lifetime Value (LTV), Breakeven CAC, and retention impact. |
 | [Poker Odds Calculator](../mcps/poker-odds-calculator.md) | Calculate exact probabilities, equities, and outs for Texas Hold'em and Omaha. |
