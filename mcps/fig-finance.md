@@ -33,6 +33,7 @@ Fig Finance is an AI-powered embedded finance platform for emerging markets. Thi
 
 ## Available Tools (12)
 - **apply_for_loan**: Apply for a loan on behalf of a customer
+- **get_repayments**: Get the repayment schedule and status for a loan
 - **create_customer**: Register a new customer for lending
 - **disburse_funds**: Trigger fund disbursement for an approved loan
 - **get_balance**: Get current wallet balance in Fig Finance
@@ -40,7 +41,6 @@ Fig Finance is an AI-powered embedded finance platform for emerging markets. Thi
 - **get_loan_offers**: Get available loan offers for a customer
 - **get_loan_status**: Get the current status of a loan
 - **get_me**: Get details for the authorized application account
-- **get_repayments**: Get the repayment schedule and status for a loan
 - **list_customers**: List all customers in your Fig Finance account
 - **list_loans**: List all loans in the account
 - **list_transactions**: List all financial transactions

@@ -36,14 +36,14 @@ Connect your **Fixably** instance to any AI agent and automate your repair manag
 
 ## Available Tools (12)
 - **add_order_note**: Add note to order
-- **get_order**: Get order details
-- **update_order**: Update an order
 - **change_internal_location**: g. SERVICE, STORE).
 
 Change device location
+- **get_order**: Get order details
+- **get_stock**: Get stock details
+- **update_order**: Update an order
 - **create_order**: Create a new order
 - **get_customer**: Get customer details
-- **get_stock**: Get stock details
 - **list_customers**: List customers
 - **list_order_files**: List files for order
 - **list_orders**: List repair orders

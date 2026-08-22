@@ -33,15 +33,15 @@ Integrate **eduMe**, the leading mobile-first training platform for the deskless
 
 
 ## Available Tools (10)
-- **get_course_details**: Get detailed settings and module list for a specific training course
 - **quick_team_training_audit**: Retrieve a high-level summary of team activity and member counts
-- **get_user_training_profile**: Get full training history and profile for a specific user
-- **list_training_courses**: List all mobile training courses available in eduMe
-- **list_top_performing_courses**: Identify courses with the highest completion or engagement rates (mock logic)
 - **list_latest_training_content**: Identify the most recently created or updated training courses
-- **list_training_teams**: List all teams and user groups configured in your eduMe account
-- **list_trained_users**: List all users registered in your eduMe training platform
 - **search_trainees_by_keyword**: Search for users using a name keyword or external identifier
+- **get_course_details**: Get detailed settings and module list for a specific training course
+- **get_user_training_profile**: Get full training history and profile for a specific user
+- **list_top_performing_courses**: Identify courses with the highest completion or engagement rates (mock logic)
+- **list_trained_users**: List all users registered in your eduMe training platform
+- **list_training_courses**: List all mobile training courses available in eduMe
+- **list_training_teams**: List all teams and user groups configured in your eduMe account
 - **get_edume_account_metadata**: Retrieve metadata and limits for your eduMe account
 
 

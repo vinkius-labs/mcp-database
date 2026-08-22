@@ -33,13 +33,13 @@ Integrate **EnterpriseAlumni**, the strategic alumni engagement platform, direct
 
 
 ## Available Tools (7)
+- **get_user_by_external_guid**: Get an alumni profile using an external system identifier
+- **get_user_by_guid**: Get detailed profile for an alumni by their userResourceGuid
 - **list_event_invitees**: List all invitees for a specific alumni event
 - **get_alumni_network_summary**: Retrieve a high-level summary of the alumni network size and metadata
-- **get_user_by_guid**: Get detailed profile for an alumni by their userResourceGuid
 - **search_alumni_users**: Supports filtering by first name, last name, approval status, and join dates.
 
 Search alumni users by name, status, or date criteria
-- **get_user_by_external_guid**: Get an alumni profile using an external system identifier
 - **get_user_schema**: Retrieve the user data schema from the EnterpriseAlumni platform
 - **search_alumni_events**: Search for upcoming and past alumni events
 

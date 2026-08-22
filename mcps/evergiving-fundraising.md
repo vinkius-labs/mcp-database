@@ -33,15 +33,15 @@ Integrate **Evergiving**, the powerful platform for fundraising and field market
 
 
 ## Available Tools (10)
+- **list_active_recurring_pledges**: Identify donations that are set up as recurring monthly or annual pledges
+- **list_fundraising_campaigns**: List all active fundraising campaigns in your account
 - **get_evergiving_account_metadata**: Retrieve metadata and limits for your Evergiving account
 - **get_campaign_performance_summary**: Get a summary of performance metrics for a specific fundraising campaign
 - **get_donation_detailed_data**: Get detailed settings and information for a specific donation or pledge
 - **quick_fundraising_volume_audit**: Retrieve a high-level summary of donations, campaigns, and active fundraisers
-- **list_fundraising_campaigns**: List all active fundraising campaigns in your account
 - **list_fundraising_donations**: List all donations and pledges collected via Evergiving
 - **list_active_fundraisers**: List all fundraisers and field staff registered in your organization
 - **list_pending_payment_donations**: Identify donations that are currently in a "Pending" or "Incomplete" status
-- **list_active_recurring_pledges**: Identify donations that are set up as recurring monthly or annual pledges
 - **list_field_marketing_schedules**: List all active schedules and locations for field fundraisers
 
 

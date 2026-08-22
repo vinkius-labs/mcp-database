@@ -34,16 +34,16 @@ Integrate **EX.CO**, the leading video experience platform, directly into your A
 
 ## Available Tools (10)
 - **get_video_analytics_summary**: Get a high-level summary of video performance and engagement
-- **get_content_detailed_intelligence**: Get detailed settings and performance data for a specific content item
-- **quick_video_performance_audit**: Retrieve a high-level summary of videos and analytics
 - **get_video_detailed_data**: Get detailed settings and metadata for a specific video
 - **list_video_distribution_channels**: List all video channels configured in your organization
+- **quick_video_performance_audit**: Retrieve a high-level summary of videos and analytics
 - **list_interactive_content**: List all interactive content items (quizzes, polls, etc.) in your account
-- **list_video_playlists**: List all video playlists created in your account
 - **list_successfully_published_videos**: Identify videos that are currently in a "Published" status
 - **list_video_library**: CO API.
 
 List all videos in your EX.CO library
+- **list_video_playlists**: List all video playlists created in your account
+- **get_content_detailed_intelligence**: Get detailed settings and performance data for a specific content item
 - **get_ex_co_account_metadata**: Retrieve metadata and limits for your EX.CO account
 
 

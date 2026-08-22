@@ -36,17 +36,17 @@ Connect your **Fusioo** workspace to any AI agent to automate your project manag
 
 
 ## Available Tools (12)
-- **verify_api_connection**: Check connection
 - **get_app_schema**: Get app metadata
-- **get_app_record_count**: Get total record count
 - **list_workspace_reports**: List available reports
 - **list_workspace_users**: List teammates
 - **update_app_record**: Modify a record
 - **create_app_record**: Add a new record
+- **get_app_record_count**: Get total record count
 - **get_my_identity**: Get current user
+- **verify_api_connection**: Check connection
 - **get_record_details**: Get record metadata
-- **list_apps**: List all Fusioo apps
 - **list_app_records**: List records in app
+- **list_apps**: List all Fusioo apps
 - **list_dashboard_widgets**: List widgets
 
 

@@ -34,14 +34,14 @@ Integrate **Evernest**, the comprehensive digital property management platform, 
 
 ## Available Tools (10)
 - **get_property_detailed_data**: Get detailed settings and financial information for a specific property
-- **quick_property_portfolio_audit**: Retrieve a high-level summary of properties, tenants, and maintenance
 - **get_tenant_detailed_profile**: Get detailed profile and payment history for a specific tenant
+- **quick_property_portfolio_audit**: Retrieve a high-level summary of properties, tenants, and maintenance
 - **get_evernest_account_metadata**: Retrieve metadata and limits for your Evernest account
-- **list_active_lease_agreements**: List all active lease agreements and contracts
+- **list_high_priority_repairs**: Identify maintenance requests that are currently flagged with high severity
 - **list_maintenance_tickets**: List all active and historical maintenance requests
+- **list_active_lease_agreements**: List all active lease agreements and contracts
 - **list_managed_properties**: List all rental properties managed in your Evernest account
 - **list_active_tenants**: List all tenants currently occupying your managed properties
-- **list_high_priority_repairs**: Identify maintenance requests that are currently flagged with high severity
 - **list_currently_vacant_units**: Identify properties that are currently flagged as vacant
 
 

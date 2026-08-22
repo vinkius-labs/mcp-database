@@ -34,11 +34,11 @@ Integrate **Effiliation**, the leading affiliate marketing platform, directly in
 
 ## Available Tools (10)
 - **get_effiliation_metadata**: Retrieve metadata and limits for your Effiliation account
-- **get_program_details**: Get detailed information and commission rates for a specific affiliate program
 - **quick_affiliate_revenue_audit**: Retrieve a high-level summary of recent commissions and success rates
-- **get_performance_statistics**: Retrieve high-level performance metrics for your affiliate account
-- **list_active_campaigns**: Identify affiliate programs that are currently in an "Active" or "Running" status
 - **list_account_payments**: List all payments issued to your account
+- **get_performance_statistics**: Retrieve high-level performance metrics for your affiliate account
+- **get_program_details**: Get detailed information and commission rates for a specific affiliate program
+- **list_active_campaigns**: Identify affiliate programs that are currently in an "Active" or "Running" status
 - **list_affiliate_programs**: List all affiliate programs available in your Effiliation account
 - **list_latest_conversions**: Identify the most recently tracked affiliate conversions
 - **list_affiliate_transactions**: List all tracked conversions and transactions

@@ -26,16 +26,16 @@ Mining companies, coal traders, utility procurement teams, environmental regulat
 
 
 ## Available Tools (6)
-- **get_coal_production**: Get coal production by state, mine type, and rank
-- **get_mine_production**: Source: EIA-7A and MSHA-7000-2.
-
-Get individual mine-level coal production data
 - **get_coal_prices**: Also includes price-by-rank breakdown for bituminous, subbituminous, lignite, and anthracite.
 
 Get coal market prices by rank, region, and mine type
+- **get_mine_production**: Source: EIA-7A and MSHA-7000-2.
+
+Get individual mine-level coal production data
+- **get_coal_production**: Get coal production by state, mine type, and rank
 - **get_coal_quality**: Get coal consumption and quality data: heat content, sulfur, ash
-- **get_coal_trade**: Get coal imports and exports by country, quantity, and price
 - **get_coal_reserves**: Get coal reserves, productive capacity, and stocks
+- **get_coal_trade**: Get coal imports and exports by country, quantity, and price
 
 
 ## 💬 Prompt Examples
