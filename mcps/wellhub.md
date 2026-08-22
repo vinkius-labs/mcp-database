@@ -30,9 +30,6 @@ Connect your **Wellhub** (formerly Gympass) account to any AI agent and manage y
 
 
 ## Available Tools (8)
-- **list_check_ins**: Shows gym name, date, time, and plan used. Essential for utilization reporting.
-
-List gym check-ins
 - **validate_check_in**: Confirms plan eligibility and records the visit. Called when a member scans their QR code at the front desk.
 
 Validate a gym check-in
@@ -43,13 +40,16 @@ List class bookings
 - **list_eligible_employees**: Shows plan tier, activation date, and usage status.
 
 List eligible corporate employees
+- **get_partner_info**: Get partner profile
 - **check_eligibility**: Returns plan tier and access permissions.
 
 Check employee eligibility
+- **list_check_ins**: Shows gym name, date, time, and plan used. Essential for utilization reporting.
+
+List gym check-ins
 - **list_classes**: Shows schedule, capacity, and available spots visible to corporate members.
 
 List available classes
-- **get_partner_info**: Get partner profile
 
 
 ## 💬 Prompt Examples

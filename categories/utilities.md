@@ -28,6 +28,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Correlation Matrix Engine](../mcps/correlation-matrix-engine.md) | Generate exact Pearson and Spearman correlation matrices across all numeric columns local. Find the strongest relationships in your data without LLM math errors. |
 | [Country Data Resolver](../mcps/country-data-resolver.md) | Resolve ISO country codes to full names, alpha-3, and numeric codes in 4 languages. Essential for CRM and international data. |
 | [CRC32 Checksum Engine](../mcps/crc32-checksum-engine.md) | Calculate CRC32 checksums instantly — the same algorithm inside ZIP, PNG, Ethernet, and MPEG-2. Pure JS, zero dependencies, three output formats. |
+| [Critical Hit Chance Calculator](../mcps/critical-hit-chance-calculator.md) | Calculate critical hit probabilities, expected damage, and optimal stat allocation. |
 | [Culinary Unit Converter](../mcps/culinary-unit-converter.md) | Convert culinary measurements between units like cups, spoons, and ml, or estimate ingredient mass. |
 | [Cycling Power Calculator](../mcps/cycling-power-calculator.md) | Estimate cycling power requirements, FTP zones, and training stress. |
 | [Deep Diff Engine](../mcps/deep-diff-engine.md) | Find every single change between two JSON objects — additions, deletions, and edits with exact structural paths. Stop relying on AI to 'spot the difference'. |

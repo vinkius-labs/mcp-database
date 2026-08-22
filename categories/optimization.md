@@ -8,6 +8,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Agent Memory Hierarchy Calculator](../mcps/agent-memory-hierarchy-calculator.md) | Deterministic memory management for agentic memory tiers. |
 | [Agent Memory Tier Calculator](../mcps/agent-memory-tier-calculator.md) | Deterministic memory management engine for agentic memory hierarchies. |
 | [Agent Tool Selection Router](../mcps/agent-tool-selection-router.md) | A deterministic engine for selecting and sequencing optimal tools for AI agents. |
+| [Animation Frame Timing & Memory Calculator](../mcps/animation-frame-timing-memory-calculator.md) | Calculate animation duration, memory footprint, and optimization potential for skeletal animations. |
 | [Batch Request Optimizer](../mcps/batch-request-optimizer.md) | Optimize LLM API costs and latency by grouping requests into efficient batches. |
 | [Chunk Overhead Calculator](../mcps/chunk-overhead-calculator.md) | Calculate token overhead and optimize chunking strategies for LLM context windows. |
 | [Claude Tool Output Compressor](../mcps/claude-tool-output-compressor.md) | Reduces context window exhaustion by applying deterministic compression rules to large tool outputs. |
@@ -28,6 +29,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [RAG Chunk Size Optimizer](../mcps/rag-chunk-size-optimizer.md) | Evaluate RAG chunking strategies by calculating segmentation metrics, embedding costs, and context viability. |
 | [Speculative Decoding Calculator](../mcps/speculative-decoding-calculator.md) | Optimize LLM inference speed and cost using deterministic speculative decoding metrics. |
 | [Speculative Decoding Speedup Calculator](../mcps/speculative-decoding-speedup-calculator.md) | Calculate efficiency gains and throughput improvements for speculative decoding strategies. |
+| [Sprite Sheet Memory Optimizer](../mcps/sprite-sheet-memory-optimizer.md) | Calculate optimal sprite sheet layouts and analyze memory footprint, utilization, and rendering efficiency. |
 | [Table Demographic Balancer](../mcps/table-demographic-balancer.md) | Prevent demographic clustering in seating arrangements by maintaining balanced personality traits and age groups. |
 | [Token Budget Allocator](../mcps/token-budget-allocator.md) | Deterministic token budget distribution for multi-agent pipelines. |
 

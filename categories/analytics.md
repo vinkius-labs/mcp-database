@@ -12,6 +12,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Conversation Budget & Escalation Engine](../mcps/conversation-budget-escalation-engine.md) | A deterministic engine for managing LLM conversation lifecycles and predicting escalation triggers. |
 | [Core Web Vitals Scorer](../mcps/core-web-vitals-scorer.md) | Evaluate LCP, INP, and CLS metrics against Google's thresholds. |
 | [Emotional Variability Score](../mcps/emotional-variability-score.md) | Quantify emotional fluctuations, mood amplitude, and longitudinal stability. |
+| [Enemy Difficulty Curve Analyzer](../mcps/enemy-difficulty-curve-analyzer.md) | Analyze enemy scaling and player progression to ensure smooth combat pacing. |
 | [Governance Strategy Engine](../mcps/governance-strategy-engine.md) | Optimize governance participation and delegation rewards. |
 | [Incrementality Estimator](../mcps/incrementality-estimator.md) | Determines true campaign ROI by calculating lift above natural conversion rates using control group data. |
 | [Karmic Debt Calculator](../mcps/karmic-debt-calculator.md) | Identify and interpret karmic debt numbers (13, 14, 16, 19) within a numerological matrix. |

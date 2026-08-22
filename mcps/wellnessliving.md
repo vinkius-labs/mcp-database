@@ -32,18 +32,18 @@ Connect your **WellnessLiving** studio to any AI agent and manage your fitness b
 
 ## Available Tools (9)
 - **list_schedule**: List class schedule
+- **get_client**: Get client profile
+- **list_staff**: List staff members
 - **search_clients**: Returns profile, memberships, and visit history.
 
 Search clients/members
-- **get_client**: Get client profile
-- **list_staff**: List staff members
-- **list_services**: List class types/services
-- **list_memberships**: List membership plans
-- **list_locations**: List business locations
 - **get_report**: Reports include attendance, revenue, retention metrics.
 
 Get business report
 - **get_business_info**: Get business info
+- **list_locations**: List business locations
+- **list_memberships**: List membership plans
+- **list_services**: List class types/services
 
 
 ## 💬 Prompt Examples

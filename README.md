@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,591 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,601 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -24,8 +24,8 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [customer-support](categories/customer-support.md) (106 servers)
 - [the-unthinkable](categories/the-unthinkable.md) (106 servers)
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
+- [utilities](categories/utilities.md) (100 servers)
 - [ai-frontier](categories/ai-frontier.md) (99 servers)
-- [utilities](categories/utilities.md) (99 servers)
 - [security](categories/security.md) (67 servers)
 - [human-resources](categories/human-resources.md) (63 servers)
 - [sales-automation](categories/sales-automation.md) (60 servers)
@@ -45,23 +45,23 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [infrastructure](categories/infrastructure.md) (39 servers)
 - [databases](categories/databases.md) (36 servers)
 - [talk-to-me](categories/talk-to-me.md) (36 servers)
+- [mathematics](categories/mathematics.md) (33 servers)
 - [brain-trust](categories/brain-trust.md) (32 servers)
 - [image-video](categories/image-video.md) (32 servers)
+- [analytics](categories/analytics.md) (31 servers)
 - [customer-relationship-management](categories/customer-relationship-management.md) (31 servers)
 - [security-compliance](categories/security-compliance.md) (31 servers)
-- [analytics](categories/analytics.md) (30 servers)
 - [lifestyle](categories/lifestyle.md) (30 servers)
-- [mathematics](categories/mathematics.md) (30 servers)
 - [friends-mcp](categories/friends-mcp.md) (29 servers)
 - [design-creative](categories/design-creative.md) (28 servers)
 - [healthcare](categories/healthcare.md) (28 servers)
+- [optimization](categories/optimization.md) (28 servers)
 - [education](categories/education.md) (26 servers)
-- [optimization](categories/optimization.md) (26 servers)
 - [iot-hardware](categories/iot-hardware.md) (25 servers)
 - [automation](categories/automation.md) (24 servers)
+- [gaming](categories/gaming.md) (23 servers)
 - [government-public-data](categories/government-public-data.md) (23 servers)
 - [superpower](categories/superpower.md) (23 servers)
-- [gaming](categories/gaming.md) (21 servers)
 - [business-intelligence](categories/business-intelligence.md) (19 servers)
 - [utility](categories/utility.md) (17 servers)
 - [audio-music](categories/audio-music.md) (16 servers)
@@ -99,6 +99,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [ai-agents](categories/ai-agents.md) (5 servers)
 - [automotive](categories/automotive.md) (5 servers)
 - [data](categories/data.md) (5 servers)
+- [data-analysis](categories/data-analysis.md) (5 servers)
 - [design](categories/design.md) (5 servers)
 - [learning-training](categories/learning-training.md) (5 servers)
 - [logistics](categories/logistics.md) (5 servers)
@@ -112,7 +113,6 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [transportation](categories/transportation.md) (5 servers)
 - [baking](categories/baking.md) (4 servers)
 - [complex-reasoning](categories/complex-reasoning.md) (4 servers)
-- [data-analysis](categories/data-analysis.md) (4 servers)
 - [distributed-systems](categories/distributed-systems.md) (4 servers)
 - [gaming-entertainment](categories/gaming-entertainment.md) (4 servers)
 - [legal](categories/legal.md) (4 servers)

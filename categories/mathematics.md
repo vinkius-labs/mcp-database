@@ -16,6 +16,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Equal Temperament Calculator](../mcps/equal-temperament-calculator.md) | Calculate MIDI frequencies, interval deviations, and tuning system comparisons. |
 | [Field of View & Frustum Calculator](../mcps/field-of-view-frustum-calculator.md) | Calculate precise frustum geometry, object visibility, and LOD recommendations for 3D engines. |
 | [FOV to Focal Length Converter](../mcps/fov-to-focal-length-converter.md) | Convert between Field of View (degrees) and Focal Length (mm) for various sensor formats. |
+| [Gacha Pity Probability Calculator](../mcps/gacha-pity-probability-calculator.md) | Simulate gacha pity mechanics and analyze monetization impact. |
 | [Graph Analysis Toolkit](../mcps/graph-analysis-toolkit.md) | Deep structural analysis of directed and undirected graphs, providing metrics on connectivity, topology, and node importance. |
 | [Loot Table Balancer](../mcps/loot-table-balancer.md) | Precision utility for calculating, normalizing, and auditing loot table probabilities and economic expected values. |
 | [Matrix 4x4 Transforms](../mcps/matrix-4x4-transforms.md) | Create, compose, and apply 3D transformation matrices with rotation representations and coordinate transformations for graphics and simulation applications. |
@@ -26,7 +27,9 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Pattern Grading Calculator](../mcps/pattern-grading-calculator.md) | Scale sewing patterns between sizes using ASTM standards (Women, Men, Children). |
 | [Prestige System Calculator](../mcps/prestige-system-calculator.md) | Analyze the economic efficiency and temporal impact of prestige/rebirth mechanics. |
 | [Prime Number Engine](../mcps/prime-number-engine.md) | Advanced computational engine for primality testing, integer factorization, and prime distribution analysis. |
+| [Procedural Dungeon Complexity Meter](../mcps/procedural-dungeon-complexity-meter.md) | Analyze the structural complexity and player experience of procedural dungeon layouts. |
 | [Projectile Trajectory Simulator](../mcps/projectile-trajectory-simulator.md) | Deterministic physics engine for precise projectile flight path simulation and target analysis. |
+| [Quest Branching Factor Calculator](../mcps/quest-branching-factor-calculator.md) | Quantify narrative complexity and state explosion in branching quest systems. |
 | [Stretch Factor Calculator](../mcps/stretch-factor-calculator.md) | Calculate exact pixel stretching, aspect ratio matching, and pixel footprint when scaling resolutions. |
 | [Swell Refraction Calculator](../mcps/swell-refraction-calculator.md) | Predict wave refraction, height changes, and breaking stability using Snell's and Green's Laws. |
 | [Time Signature Calculator](../mcps/time-signature-calculator.md) | Calculate measure duration, rhythmic feeling, and polyrhythms for any time signature. |

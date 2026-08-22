@@ -10,6 +10,7 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 | [D&D Character Stat Roller](../mcps/dd-character-stat-roller.md) | Statistical simulation engine for evaluating D&D attribute generation methods. |
 | [Dice Probability Calculator](../mcps/dice-probability-calculator.md) | Calculate full probability distributions, statistical metrics, and success thresholds for any dice notation. |
 | [Drop Rate Calculator](../mcps/drop-rate-calculator.md) | Calculate item drop probabilities, pity mechanics, and expected resource usage for loot-based systems. |
+| [Economy Inflation Detector](../mcps/economy-inflation-detector.md) | Analyze and balance in-game economies by measuring inflation, purchasing power, and wealth inequality. |
 | [Encounter Difficulty Calculator](../mcps/encounter-difficulty-calculator.md) | Calculate D&D 5e/PF2e combat difficulty, lethality risk, and encounter adjustments. |
 | [FPS Hardware Bottleneck Estimator](../mcps/fps-hardware-bottleneck-estimator.md) | Predict gaming performance and identify hardware bottlenecks for specific games and resolutions. |
 | [Gacha Pity Simulator](../mcps/gacha-pity-simulator.md) | Analyze gacha mechanics including base rates, soft pity ramps, and hard pity guarantees to predict player costs. |
@@ -22,6 +23,7 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 | [Poker Odds Calculator](../mcps/poker-odds-calculator.md) | Calculate exact probabilities, equities, and outs for Texas Hold'em and Omaha. |
 | [RPG Damage Engine](../mcps/rpg-damage-engine.md) | Calculate and analyze TTRPG damage distributions, critical hits, and encounter probabilities. |
 | [RPG Encounter Balance Calculator](../mcps/rpg-encounter-balance-calculator.md) | Estimate combat duration, lethality, and difficulty for tabletop RPG encounters. |
+| [RPG Stat Scaling Calculator](../mcps/rpg-stat-scaling-calculator.md) | Analyze RPG character progression with precise diminishing returns and scaling models. |
 | [Screen Stretch Resolver](../mcps/screen-stretch-resolver.md) | Calculate pixel stretching, FOV shifts, and coordinate mapping for stretched resolutions. |
 | [Skill Tree Optimization Engine](../mcps/skill-tree-optimization-engine.md) | Optimize skill point allocation for maximum DPS, survivability, or balanced utility. |
 | [Tabletop RPG Mechanics Engine](../mcps/tabletop-rpg-mechanics-engine.md) | Deterministic mathematical resolution for TTRPG mechanics like D&D 5e. |

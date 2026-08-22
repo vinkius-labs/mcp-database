@@ -450,7 +450,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Guidebook](../mcps/guidebook.md) | Create branded mobile apps for events, conferences, and organizations with schedules, maps, and attendee engagement features. |
 | [Guidebook](../mcps/guidebook-alternative.md) | Create branded mobile apps for events, conferences, and organizations with schedules, maps, and attendee engagement features. |
 | [Habitify](../mcps/habitify.md) | Automate habit tracking via Habitify — manage habits, logs, and personal growth directly from any AI agent. |
-| [Hacker News](../mcps/hacker-news.md) | Explore tech news via Hacker News — fetch top and new stories, retrieve detailed item contents, and read comments directly from any AI agent. |
+| [Hacker News](../mcps/hacker-news.md) | Explore current Hacker News top stories, newest stories, individual items, and date-filtered story search through the public Algolia index. |
 | [Hallucination Detector Prover](../mcps/hallucination-detector-prover.md) | LLMs present fabricated information as fact. This tool forces epistemic rigor: cite verifiable sources for every claim, quantify confidence per assertion, separate facts from opinions, declare knowledge boundaries, and cross-reference for internal contradictions. |
 | [Handwrytten](../mcps/handwrytten.md) | Automate handwritten notes via Handwrytten — manage cards, fonts, and send physical mail directly from any AI agent. |
 | [HappyFox](../mcps/happyfox.md) | Automate support ticketing via HappyFox — manage tickets, contacts, and help desk categories directly from any AI agent. |

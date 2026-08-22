@@ -35,10 +35,10 @@ Connect your **Zenedu** account to any AI agent to automate your messenger marke
 
 ## Available Tools (6)
 - **list_bot_subscribers**: List all subscribers for a specific bot
-- **list_bots**: List all messenger bots
-- **list_bot_funnels**: List all funnels for a specific bot
 - **list_bot_offers**: List all offers for a specific bot
 - **list_bot_orders**: List all orders for a specific bot
+- **list_bots**: List all messenger bots
+- **list_bot_funnels**: List all funnels for a specific bot
 - **list_bot_products**: List all products for a specific bot
 
 

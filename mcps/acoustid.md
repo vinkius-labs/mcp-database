@@ -34,6 +34,12 @@ Connect to **AcoustID** and identify music from audio fingerprints through natur
 
 
 ## Available Tools (5)
+- **search_by_recording**: Returns matching recordings with AcoustID, MusicBrainz ID, title and artist name. Useful for finding the AcoustID of a known song.
+
+Search for recordings by name and/or artist
+- **submit_fingerprint**: Requires the Chromaprint fingerprint string and audio duration. Optionally include recording name and artist for new songs. Returns the newly created AcoustID.
+
+Submit an audio fingerprint to AcoustID
 - **get_recording_metadata**: Returns all associated MusicBrainz recordings, artists, release groups and fingerprints linked to this AcoustID.
 
 Get full metadata for a recording by AcoustID
@@ -43,12 +49,6 @@ Identify a song by audio fingerprint
 - **search_by_mbid**: Returns all AcoustID fingerprints linked to that MusicBrainz recording, useful for finding multiple audio fingerprints of the same song.
 
 Search for AcoustIDs by MusicBrainz ID
-- **search_by_recording**: Returns matching recordings with AcoustID, MusicBrainz ID, title and artist name. Useful for finding the AcoustID of a known song.
-
-Search for recordings by name and/or artist
-- **submit_fingerprint**: Requires the Chromaprint fingerprint string and audio duration. Optionally include recording name and artist for new songs. Returns the newly created AcoustID.
-
-Submit an audio fingerprint to AcoustID
 
 
 ## 💬 Prompt Examples

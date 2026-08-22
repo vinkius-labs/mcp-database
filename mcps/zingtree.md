@@ -35,13 +35,13 @@ Connect your **Zingtree** account to any AI agent to streamline your interactive
 
 ## Available Tools (8)
 - **get_session_form_data**: Get all form data entered during a session
-- **search_all_trees**: Search for text within all decision trees
 - **get_clean_session_path**: Get a clean linear path for a user session
 - **get_session_details**: Get detailed data for a specific user session
-- **list_tree_sessions**: List sessions for a tree within a date range
 - **get_tree_structure**: Get the full structure of a specific tree
-- **list_tree_variables**: List all variables used in a tree
+- **search_all_trees**: Search for text within all decision trees
 - **list_trees**: List all interactive trees in the organization
+- **list_tree_variables**: List all variables used in a tree
+- **list_tree_sessions**: List sessions for a tree within a date range
 
 
 ## 💬 Prompt Examples
