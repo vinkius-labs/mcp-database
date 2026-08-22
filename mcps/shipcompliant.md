@@ -31,22 +31,22 @@ Connect your **ShipCompliant by Sovos** account to any AI agent and navigate the
 
 
 ## Available Tools (8)
-- **check_compliance**: Returns compliance status, volume limits, license requirements, and any restrictions. THE most important tool — always check before shipping alcohol.
-
-Check shipping compliance
 - **calculate_tax**: Returns total tax amount and breakdown by tax type. Required for accurate invoicing.
 
 Calculate alcohol tax
 - **get_shipping_rules**: Get state shipping rules
-- **list_licenses**: Critical for knowing where you can legally ship.
-
-List your shipping licenses
-- **check_license_status**: Returns license details and expiration date.
-
-Check license status for a state
 - **list_products**: List registered products
 - **get_state_rules**: Get state alcohol rules
 - **list_carriers**: List approved carriers
+- **check_compliance**: Returns compliance status, volume limits, license requirements, and any restrictions. THE most important tool — always check before shipping alcohol.
+
+Check shipping compliance
+- **check_license_status**: Returns license details and expiration date.
+
+Check license status for a state
+- **list_licenses**: Critical for knowing where you can legally ship.
+
+List your shipping licenses
 
 
 ## 💬 Prompt Examples

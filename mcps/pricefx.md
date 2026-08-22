@@ -35,6 +35,9 @@ Forget executing long, structured JSON payloads through Postman. Just tell your 
 
 
 ## Available Tools (10)
+- **update_customer**: Provide bulk bounds strictly formatted.
+
+Inspect deep internal arrays mitigating specific Plan Math
 - **create_customer**: Ensure JSON format is robust.
 
 Provision a highly-available JSON Payload generating hard Customer bindings
@@ -46,9 +49,6 @@ Provision a highly-available JSON Payload generating hard Customer bindings
 - **get_customer**: Perform structural extraction of properties driving active Account logic
 - **get_product**: Retrieve explicit Cloud logging tracing explicit Product limits
 - **get_quote**: Dispatch an automated validation check routing explicit Quote history
-- **update_customer**: Provide bulk bounds strictly formatted.
-
-Inspect deep internal arrays mitigating specific Plan Math
 
 
 ## 💬 Prompt Examples

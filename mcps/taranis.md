@@ -43,19 +43,19 @@ No more manual field scouting or delayed threat identification. Your AI acts as 
 
 
 ## Available Tools (12)
-- **get_farms**: Returns farm names, IDs, locations, and field counts. Use this after get_clients to navigate to specific farms before querying fields.
-
-List farms belonging to a specific client
 - **get_field_details**: Get detailed information about a specific agricultural field
 - **get_fields**: Returns field names, IDs, boundaries (GeoJSON polygons), area in hectares/acres, crop type, planting dates, and monitoring status. Essential for farm management overview and selecting target fields for threat detection.
 
 List all agricultural fields monitored by Taranis for a farm
-- **get_map_layers**: Returns layer metadata and download URLs. Essential for crop vigor assessment, variable rate application planning, and growth stage monitoring.
-
-Get map layers (NDVI, imagery, multispectral) for a specific field
 - **get_organizations**: Returns organization names, IDs, contact information, and field counts. Essential for multi-account management, selecting target organizations for field analysis, and understanding the scope of monitored agricultural operations.
 
 List all organizations available to the user in Taranis platform
+- **get_farms**: Returns farm names, IDs, locations, and field counts. Use this after get_clients to navigate to specific farms before querying fields.
+
+List farms belonging to a specific client
+- **get_map_layers**: Returns layer metadata and download URLs. Essential for crop vigor assessment, variable rate application planning, and growth stage monitoring.
+
+Get map layers (NDVI, imagery, multispectral) for a specific field
 - **get_threats**: Returns threat categories, overall severity ratings, affected area percentages, and priority rankings.
 
 Get consolidated threat summary and severity assessment for a field

@@ -33,16 +33,16 @@ Connect your **Planable** workspaces directly to your AI agent to radically stre
 
 
 ## Available Tools (10)
-- **list_workspaces**: List Planable workspaces. Returns workspace IDs, names, and member counts. Planable is a social collaboration platform for content planning and approval
+- **get_post**: Get a Planable post by ID. Returns full content, media, schedule, approval history, and comments
 - **list_pages**: List social pages (connected accounts) in a Planable workspace. Returns page IDs, platform types, and display names
 - **list_posts**: List posts in a Planable workspace by status. Returns post IDs, content previews, scheduled times, and approval status. Instructions: status = draft|pending_approval|approved|scheduled|published
-- **get_post**: Get a Planable post by ID. Returns full content, media, schedule, approval history, and comments
-- **create_post**: Create a Planable post. Instructions: Pass workspace_id, page_id, content text, and scheduled_at (ISO 8601). Post enters approval workflow
+- **list_workspaces**: List Planable workspaces. Returns workspace IDs, names, and member counts. Planable is a social collaboration platform for content planning and approval
 - **approve_post**: Approve a Planable post in the approval workflow. Moves it to scheduled status
-- **reject_post**: Reject a Planable post with feedback. Returns it to draft for revisions
-- **list_comments**: List comments on a Planable post. Returns comment IDs, authors, and text
 - **add_comment**: Add a comment to a Planable post for team collaboration
 - **list_workspace_members**: List members of a Planable workspace. Returns member IDs, names, emails, and roles
+- **reject_post**: Reject a Planable post with feedback. Returns it to draft for revisions
+- **create_post**: Create a Planable post. Instructions: Pass workspace_id, page_id, content text, and scheduled_at (ISO 8601). Post enters approval workflow
+- **list_comments**: List comments on a Planable post. Returns comment IDs, authors, and text
 
 
 ## 💬 Prompt Examples

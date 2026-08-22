@@ -34,30 +34,30 @@ SpotHero is the leading parking marketplace in North America, covering over 400 
 
 
 ## Available Tools (10)
-- **book_parking**: Requires spot ID, start/end times, payment method ID, and vehicle info (make, model, plate, color).
-
-Book a parking spot and create a reservation
 - **cancel_reservation**: Check cancellation policy for refund eligibility.
 
 Cancel an active parking reservation
-- **list_reservations**: Optional status filter (upcoming, past, cancelled).
-
-List all parking reservations for the authenticated account
 - **get_pricing**: Useful for comparing rates before booking.
 
 Get dynamic pricing for a parking spot for a specific duration
-- **update_vehicle_info**: Use this if the user changes cars before parking.
+- **list_reservations**: Optional status filter (upcoming, past, cancelled).
 
-Update vehicle information for an existing reservation
+List all parking reservations for the authenticated account
+- **book_parking**: Requires spot ID, start/end times, payment method ID, and vehicle info (make, model, plate, color).
+
+Book a parking spot and create a reservation
+- **get_garage_details**: Get information about a specific garage
+- **get_reservation**: Get details of a specific parking reservation
+- **get_spot_details**: Get detailed information and pricing for a specific parking spot
 - **search_events**: Useful for anticipating demand.
 
 Search for nearby events that might affect parking availability or pricing
-- **get_garage_details**: Get information about a specific garage
-- **get_spot_details**: Get detailed information and pricing for a specific parking spot
-- **get_reservation**: Get details of a specific parking reservation
 - **search_parking**: Use this to find parking options for users. Times must be in ISO 8601 format.
 
 Search for available parking spots near a location for a specific time range
+- **update_vehicle_info**: Use this if the user changes cars before parking.
+
+Update vehicle information for an existing reservation
 
 
 ## 💬 Prompt Examples

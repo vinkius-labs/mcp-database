@@ -34,19 +34,19 @@ Connect your **Productive** account to any AI agent and bring your agency manage
 
 
 ## Available Tools (12)
+- **list_deals**: Lists all sales deals and their current stages
+- **list_time_entries**: Lists time entries logged by the team
 - **list_services**: Use this to check billable items.
 
 Lists all services defined in the organization
-- **list_deals**: Lists all sales deals and their current stages
-- **list_time_entries**: Lists time entries logged by the team
+- **get_project**: Retrieves details for a single project by ID
 - **list_projects**: Ideal for scoping agency workload.
 
 Lists all active and archived projects in Productive
-- **get_project**: Retrieves details for a single project by ID
-- **list_invoices**: Lists all generated invoices and their payment status
+- **list_boards**: Lists all task boards
 - **list_budgets**: Lists all project budgets
 - **list_companies**: Lists all companies (clients and partners) in the CRM
-- **list_boards**: Lists all task boards
+- **list_invoices**: Lists all generated invoices and their payment status
 - **list_people**: Lists all people, including employees and external contacts
 - **list_tasks**: Lists all tasks across the organization
 - **list_activities**: Lists recent activities and audit logs

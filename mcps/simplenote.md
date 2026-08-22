@@ -26,24 +26,24 @@ Connect your AI assistant to your Simplenote account for seamless note managemen
 
 
 ## Available Tools (8)
+- **list_notes**: Returns note keys and a preview of the content.
+
+Lists all notes in Simplenote
+- **get_note_details**: Retrieves details for a specific note
+- **get_note_version**: Requires note key and version number.
+
+Retrieves a specific historical version of a note
+- **list_tags**: Lists all tags used in your notes
+- **search_notes**: Searches for notes containing specific text
+- **update_note**: Requires the note key.
+
+Updates an existing note
 - **create_note**: Provide the full text content.
 
 Creates a new note
 - **delete_note**: This action is irreversible.
 
 Permanently deletes a note
-- **get_note_details**: Retrieves details for a specific note
-- **get_note_version**: Requires note key and version number.
-
-Retrieves a specific historical version of a note
-- **list_notes**: Returns note keys and a preview of the content.
-
-Lists all notes in Simplenote
-- **list_tags**: Lists all tags used in your notes
-- **search_notes**: Searches for notes containing specific text
-- **update_note**: Requires the note key.
-
-Updates an existing note
 
 
 ## 💬 Prompt Examples

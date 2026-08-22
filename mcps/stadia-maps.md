@@ -33,20 +33,20 @@ Imbue your artificial intelligence environment with the geospatial and routing c
 
 
 ## Available Tools (10)
-- **autocomplete_location**: Provides predictive address suggestions based on partial input
 - **calculate_isochrone**: Calculates an area reachable within a specific time or distance
-- **calculate_distance_matrix**: Calculates distances and travel times between multiple points
 - **calculate_route**: Locations should be a JSON array of {lat, lon}. Costing can be "auto", "bicycle", or "pedestrian".
 
 Calculates a route between multiple geographic points
 - **forward_geocode**: Converts a physical address string into geographic coordinates
 - **get_path_elevation**: Retrieves elevation/height data for a specific geographic path
-- **get_timezone**: Retrieves the local timezone for specific geographic coordinates
-- **execute_map_matching**: Snaps raw GPS points to the road network
 - **optimized_trip_route**: Returns the optimized path.
 
 Calculates the most efficient route between multiple stops
 - **reverse_geocode**: Converts geographic coordinates into a physical address
+- **autocomplete_location**: Provides predictive address suggestions based on partial input
+- **calculate_distance_matrix**: Calculates distances and travel times between multiple points
+- **execute_map_matching**: Snaps raw GPS points to the road network
+- **get_timezone**: Retrieves the local timezone for specific geographic coordinates
 
 
 ## 💬 Prompt Examples

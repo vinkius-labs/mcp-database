@@ -38,21 +38,21 @@ No more manual uploading of address lists. Your AI assistant acts as a dedicated
 
 
 ## Available Tools (11)
-- **report_transaction**: Report a customer order back to Poplar for attribution tracking
 - **trigger_physical_mailer**: Requires "campaign_id" and "recipient_json" (address details). Optional "merge_tags_json" for dynamic content.
 
 Trigger a physical mailer (postcard, letter) for a campaign
-- **add_to_audience**: Add a recipient to a specific audience list
 - **add_to_suppression_list**: Add a recipient to the globalThis "Do Not Mail" list
 - **get_api_profile**: Get information about the authenticated account
-- **get_mailer_status**: Check the production and delivery status of a specific mailer
 - **list_audiences**: List all mailing audiences in your account
-- **list_billing_history**: List account billing and invoice data
 - **list_marketing_campaigns**: List all direct mail campaigns
 - **list_mail_creatives**: List all uploaded mailer designs/creatives
 - **standardize_us_address**: Pass fields like address_line1, city, state, postal_code.
 
 Clean and standardize a US mailing address
+- **add_to_audience**: Add a recipient to a specific audience list
+- **get_mailer_status**: Check the production and delivery status of a specific mailer
+- **list_billing_history**: List account billing and invoice data
+- **report_transaction**: Report a customer order back to Poplar for attribution tracking
 
 
 ## 💬 Prompt Examples

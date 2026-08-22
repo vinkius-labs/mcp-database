@@ -44,6 +44,12 @@ No more manual 3D modeling or expensive artist time. Your AI acts as a dedicated
 
 
 ## Available Tools (12)
+- **generate_lowpoly_3d**: Low-poly models use minimal polygons while maintaining recognizable shape, making them ideal for performance-critical applications. Accepts reference images and returns optimized meshes with controlled polygon counts. Essential for game development, mobile applications, web-based 3D viewers, and any scenario requiring efficient 3D rendering. AI agents should reference this when users need low-poly game assets, mobile-optimized 3D models, or performance-friendly 3D content.
+
+Generate low-poly 3D models optimized for real-time applications
+- **generate_tripo_3d**: Tripo3D is ideal for rapid prototyping, batch processing, and applications where generation time is important. Accepts image URLs and returns 3D models with reasonable geometry and textures. Essential for quick 3D previews, iterative design workflows, and content pipelines requiring fast turnaround. AI agents should use this when users need fast 3D generation, quick previews, or batch processing of multiple images.
+
+Generate 3D models using Tripo3D for fast generation
 - **convert_3d_format**: Preserves geometry, textures, materials, and rigging data during conversion. Essential for pipeline integration, platform compatibility, and format standardization. AI agents should use this when users ask "convert this GLB model to FBX", "change this 3D file to USDZ for AR", or need 3D format conversion for specific platform or software requirements.
 
 Convert 3D models between different file formats
@@ -56,15 +62,12 @@ Generate detailed 3D models using Hyper3D model
 - **generate_image_to_3d**: Accepts product photos, concept art, sketches, or any reference image and generates a corresponding 3D model. Supports multiple output formats and quality settings. Essential for e-commerce product visualization, concept art to 3D conversion, and general image-to-3D workflows. AI agents should reference this when users ask "convert this product photo to 3D", "turn this sketch into a 3D model", or need reliable general-purpose image-to-3D conversion.
 
 Convert images to 3D models using Pixazo image-to-3D pipeline
-- **generate_lowpoly_3d**: Low-poly models use minimal polygons while maintaining recognizable shape, making them ideal for performance-critical applications. Accepts reference images and returns optimized meshes with controlled polygon counts. Essential for game development, mobile applications, web-based 3D viewers, and any scenario requiring efficient 3D rendering. AI agents should reference this when users need low-poly game assets, mobile-optimized 3D models, or performance-friendly 3D content.
-
-Generate low-poly 3D models optimized for real-time applications
-- **optimize_3d_mesh**: Accepts existing 3D model URLs and returns optimized versions with controlled quality settings. Essential for web-based 3D applications, mobile optimization, file size reduction, and performance-critical 3D rendering. AI agents should reference this when users ask "optimize this 3D model for web", "reduce polygon count of this model", or need mesh optimization for performance or file size constraints.
-
-Optimize 3D meshes for performance and file size reduction
 - **generate_pbr_textures_3d**: PBR textures ensure realistic material appearance under any lighting condition in game engines and 3D renderers. Accepts reference images and returns 3D models with texture map sets. Essential for game asset creation, product visualization requiring realistic materials, and applications needing physically accurate rendering. AI agents should reference this when users need game-ready assets with full PBR materials, product visualizations with realistic surface appearance, or models with complete texture map sets.
 
 Generate 3D models with full PBR texture maps (albedo, normal, roughness, metallic, AO)
+- **generate_rigged_3d**: Supports character models, creatures, and articulated objects. The generated rigs include bone hierarchies and weight painting suitable for standard animation workflows. Accepts character reference images and returns rigged 3D files. Essential for game character creation, animated content pipelines, and applications requiring animation-ready 3D assets. AI agents should use this when users ask "create an animated-ready 3D character", "generate a rigged model from this character image", or need animation-ready 3D output.
+
+Generate 3D models with automatic skeletal rigging for animation
 - **generate_styled_3d**: Users provide a reference image and select the desired output style. Essential for stylized game assets, anime character creation, cartoon visualization, and artistic 3D content. AI agents should use this when users ask "create an anime-style 3D character from this image", "generate a cartoon 3D model", or need stylized 3D output matching specific artistic direction.
 
 Generate 3D models with specific artistic styles
@@ -74,12 +77,9 @@ Generate 3D models directly from text descriptions
 - **generate_trellis_3d**: Trellis3D excels at creating models with well-distributed polygons and logical edge flow. Accepts image URLs and returns clean 3D meshes. Essential for character rigging preparation, animation-ready assets, and applications requiring well-organized mesh structure. AI agents should reference this when users need edit-friendly 3D models, animation-ready meshes, or assets with clean topology for downstream processing.
 
 Generate structured 3D models using Trellis3D with clean topology
-- **generate_tripo_3d**: Tripo3D is ideal for rapid prototyping, batch processing, and applications where generation time is important. Accepts image URLs and returns 3D models with reasonable geometry and textures. Essential for quick 3D previews, iterative design workflows, and content pipelines requiring fast turnaround. AI agents should use this when users need fast 3D generation, quick previews, or batch processing of multiple images.
+- **optimize_3d_mesh**: Accepts existing 3D model URLs and returns optimized versions with controlled quality settings. Essential for web-based 3D applications, mobile optimization, file size reduction, and performance-critical 3D rendering. AI agents should reference this when users ask "optimize this 3D model for web", "reduce polygon count of this model", or need mesh optimization for performance or file size constraints.
 
-Generate 3D models using Tripo3D for fast generation
-- **generate_rigged_3d**: Supports character models, creatures, and articulated objects. The generated rigs include bone hierarchies and weight painting suitable for standard animation workflows. Accepts character reference images and returns rigged 3D files. Essential for game character creation, animated content pipelines, and applications requiring animation-ready 3D assets. AI agents should use this when users ask "create an animated-ready 3D character", "generate a rigged model from this character image", or need animation-ready 3D output.
-
-Generate 3D models with automatic skeletal rigging for animation
+Optimize 3D meshes for performance and file size reduction
 
 
 ## 💬 Prompt Examples

@@ -33,21 +33,21 @@ Connect your **ProofHub** domain to any AI agent to streamline project managemen
 
 
 ## Available Tools (10)
+- **get_project**: Retrieves full details of a ProofHub project
 - **list_projects**: ProofHub is a collaboration tool with tasks, discussions, and files.
 
 Lists all projects in ProofHub
-- **get_project**: Retrieves full details of a ProofHub project
+- **list_tasks**: Lists all tasks in a ProofHub to-do list
 - **list_todolists**: Use this to find the correct list ID before querying or creating tasks.
 
 Lists all to-do lists within a ProofHub project
-- **list_tasks**: Lists all tasks in a ProofHub to-do list
 - **create_task**: You must provide a valid project ID and todolist ID.
 
 Creates a new task in a ProofHub to-do list
 - **list_discussions**: Lists all discussions (topics) in a ProofHub project
-- **list_files**: Lists all files uploaded to a ProofHub project
 - **list_timesheets**: Lists all timesheet entries for a project
 - **list_people**: Lists all team members in ProofHub
+- **list_files**: Lists all files uploaded to a ProofHub project
 - **list_notes**: Lists all notes/notebooks in a ProofHub project
 
 

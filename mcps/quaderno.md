@@ -33,10 +33,6 @@ Connect your **Quaderno** account to any AI agent and bring powerful tax complia
 
 
 ## Available Tools (10)
-- **create_contact**: Specify email, first name, and last name.
-
-Creates a new contact in Quaderno
-- **calculate_taxes**: Calculates applicable taxes for a potential sale
 - **create_transaction**: Provide the contact ID and a JSON array of items.
 
 Records a new transaction and issues an invoice
@@ -44,13 +40,17 @@ Records a new transaction and issues an invoice
 
 Deletes a contact from Quaderno
 - **get_contact**: Retrieves details for a specific contact
-- **get_invoice**: Retrieves details for a specific invoice
 - **list_contacts**: Lists all contacts (customers) in the Quaderno account
 - **list_invoices**: Lists all issued invoices
 - **list_transactions**: Lists all recorded transactions
 - **update_contact**: Provide a JSON payload with the changes.
 
 Updates an existing contact
+- **calculate_taxes**: Calculates applicable taxes for a potential sale
+- **create_contact**: Specify email, first name, and last name.
+
+Creates a new contact in Quaderno
+- **get_invoice**: Retrieves details for a specific invoice
 
 
 ## 💬 Prompt Examples

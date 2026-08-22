@@ -37,18 +37,18 @@ Connect your **Redo** account to any AI agent to automate your returns managemen
 
 
 ## Available Tools (12)
-- **add_internal_note**: Post a return comment
-- **approve_return_claim**: Approve a request
-- **verify_api_connection**: Check connection
-- **get_store_details**: Get store metadata
 - **get_protection_summary**: Get coverage details
-- **get_return_details**: Get return metadata
+- **get_store_details**: Get store metadata
+- **verify_api_connection**: Check connection
 - **get_return_shipping_rates**: Get shipping costs
 - **list_protected_items**: List covered products
-- **list_store_returns**: List returns/claims
-- **list_return_webhooks**: List webhook configs
-- **process_final_resolution**: Finalize return/claim
 - **reject_return_claim**: Reject a request
+- **add_internal_note**: Post a return comment
+- **approve_return_claim**: Approve a request
+- **get_return_details**: Get return metadata
+- **list_return_webhooks**: List webhook configs
+- **list_store_returns**: List returns/claims
+- **process_final_resolution**: Finalize return/claim
 
 
 ## 💬 Prompt Examples

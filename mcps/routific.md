@@ -33,24 +33,24 @@ Connect your conversational assistant directly to **Routific**, a premier logist
 
 
 ## Available Tools (10)
-- **update_saas_job**: Updates an existing delivery job
 - **cancel_saas_job**: This action is irreversible.
 
 Cancels and deletes a delivery job from the platform
-- **create_platform_route**: Creates a new route plan in the platform
 - **create_saas_job**: Provide a JSON object with order details.
 
 Creates a new delivery job in the platform
 - **get_route_timeline**: Retrieves the stop-by-stop timeline for a route
 - **list_platform_jobs**: Lists all delivery jobs in the Routific platform
-- **poll_async_solution**: Polls the status of an asynchronous VRP job
 - **solve_standalone_vrp**: Provide a JSON object with visits, fleet, and options.
 
 Solves a standalone Vehicle Routing Problem synchronously
 - **publish_route_to_driver**: Publishes a route to the driver's mobile app
+- **create_platform_route**: Creates a new route plan in the platform
+- **poll_async_solution**: Polls the status of an asynchronous VRP job
 - **solve_async_vrp_long**: Returns a job ID for polling.
 
 Submits a large Vehicle Routing Problem for asynchronous solving
+- **update_saas_job**: Updates an existing delivery job
 
 
 ## 💬 Prompt Examples

@@ -32,28 +32,28 @@ Connect your **TeamUp** studio to any AI agent and manage your fitness business 
 
 
 ## Available Tools (10)
-- **list_payments**: Includes amount, method, and member.
-
-List payments and revenue
-- **get_event**: Get event details
-- **list_event_types**: Includes description, default duration, and default coach.
-
-List class/event types
 - **list_registrations**: Shows check-in status, waitlist position, and booking time.
 
 List event registrations
-- **search_customers**: Returns profile, active membership, visit count, and account balance.
-
-Search members
 - **get_customer**: Get member profile
 - **list_memberships**: List membership plans
+- **get_event**: Get event details
 - **list_coaches**: List coaches and trainers
-- **list_venues**: Includes address and capacity.
-
-List training venues
 - **list_events**: Filter by date range.
 
 List scheduled classes/events
+- **list_event_types**: Includes description, default duration, and default coach.
+
+List class/event types
+- **list_payments**: Includes amount, method, and member.
+
+List payments and revenue
+- **list_venues**: Includes address and capacity.
+
+List training venues
+- **search_customers**: Returns profile, active membership, visit count, and account balance.
+
+Search members
 
 
 ## 💬 Prompt Examples

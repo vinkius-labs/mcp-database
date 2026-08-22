@@ -33,10 +33,10 @@ Bring deep indoor location intelligence directly to your AI operations using the
 
 
 ## Available Tools (10)
-- **calculate_path**: Calculate the optimal indoor wayfinding path between two points
 - **get_building**: Retrieve detailed configuration for a specific Pointr building
 - **get_level_map**: Retrieve the floor plan map data for a specific building level
 - **get_poi**: Retrieve detailed information for a specific Pointr POI
+- **calculate_path**: Calculate the optimal indoor wayfinding path between two points
 - **list_beacons**: List all BLE beacons deployed and registered in the Pointr platform
 - **list_buildings**: List all buildings registered in the Pointr indoor intelligence platform
 - **list_geofences**: List all indoor geofences configured in the Pointr platform
