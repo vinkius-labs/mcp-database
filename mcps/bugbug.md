@@ -37,17 +37,17 @@ No more manual triggering of cloud tests or digging through complex run logs. Yo
 
 ## Available Tools (12)
 - **get_suite**: Get details for a specific suite
-- **get_test_run**: Get status of a test run
-- **get_test**: Get details for a specific test
-- **list_projects**: List all projects
-- **list_suite_runs**: List recent suite runs
 - **list_suites**: List all test suites
-- **list_test_runs**: List recent test runs
 - **list_tests**: List all tests
-- **run_suite**: Run a specific test suite
+- **run_test**: Run a specific test
 - **get_ips**: Get BugBug IP addresses
 - **get_suite_run**: Get status of a suite run
-- **run_test**: Run a specific test
+- **get_test**: Get details for a specific test
+- **get_test_run**: Get status of a test run
+- **list_projects**: List all projects
+- **list_suite_runs**: List recent suite runs
+- **list_test_runs**: List recent test runs
+- **run_suite**: Run a specific test suite
 
 
 ## 💬 Prompt Examples

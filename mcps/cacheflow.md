@@ -38,12 +38,12 @@ No more manual status checking of individual proposals or missing high-intent bu
 
 ## Available Tools (6)
 - **get_proposal_details**: Get specific proposal details
-- **list_customers**: List external customers
 - **list_proposals**: List all sales proposals
+- **get_approval_requests**: List pending approvals for me
 - **create_proposal**: Pass data as a JSON string.
 
 Create a new sales proposal
-- **get_approval_requests**: List pending approvals for me
+- **list_customers**: List external customers
 - **sync_to_crm**: Sync proposal to CRM
 
 

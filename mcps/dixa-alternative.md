@@ -36,18 +36,18 @@ No more manual ticket shuffling or digging through agent lists in the portal. Yo
 
 
 ## Available Tools (12)
-- **create_customer_profile**: Add new customer
 - **get_connection_status**: Check API health
-- **get_agent_info**: Get agent details
 - **get_conversation_details**: Get ticket info
-- **list_support_agents**: List active agents
-- **list_conversations**: List customer tickets
-- **list_support_teams**: List agent teams
-- **list_end_users**: List Dixa customers
 - **list_active_webhooks**: Get event configs
-- **assign_to_self**: Claim a conversation
+- **list_conversations**: List customer tickets
+- **list_end_users**: List Dixa customers
+- **list_support_teams**: List agent teams
 - **resolve_conversation**: Close a conversation
+- **assign_to_self**: Claim a conversation
 - **create_conversation**: Add new support chat
+- **create_customer_profile**: Add new customer
+- **get_agent_info**: Get agent details
+- **list_support_agents**: List active agents
 
 
 ## 💬 Prompt Examples

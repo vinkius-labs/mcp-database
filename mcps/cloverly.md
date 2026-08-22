@@ -36,18 +36,18 @@ No more manual footprint spreadsheets or searching for carbon certificates in th
 
 
 ## Available Tools (12)
-- **check_cloverly_status**: Verify connectivity
-- **get_purchase**: Get purchase details
 - **create_estimate**: Create a carbon estimate
-- **create_purchase**: Purchase carbon offsets
 - **get_account**: Get account info
-- **get_estimate**: Get estimate details
 - **get_impact_by_type**: Get impact by type
 - **get_impact_summary**: Get impact summary
 - **get_project**: Get project details
 - **list_estimates**: List estimates
-- **list_projects**: List offset projects
 - **list_purchases**: List purchases
+- **check_cloverly_status**: Verify connectivity
+- **create_purchase**: Purchase carbon offsets
+- **get_estimate**: Get estimate details
+- **get_purchase**: Get purchase details
+- **list_projects**: List offset projects
 
 
 ## 💬 Prompt Examples

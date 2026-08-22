@@ -36,22 +36,22 @@ No more manual toggling between unit lists or digging through maintenance logs. 
 
 
 ## Available Tools (12)
-- **list_leases**: List all lease agreements
 - **create_work_order**: Requires subject and unit/property IDs.
 
 Create a new maintenance work order
 - **get_lease_details**: Get details for a specific lease
-- **get_property_details**: Get details for a specific property
 - **get_rent_roll_report**: Get the current rent roll report
 - **get_tenant_details**: Get details for a specific tenant
 - **list_properties**: List all properties
 - **list_prospects**: List prospective tenants
 - **list_tenants**: List all tenants
+- **list_vendors**: List all service vendors
+- **list_work_orders**: List all maintenance work orders
+- **get_property_details**: Get details for a specific property
+- **list_leases**: List all lease agreements
 - **list_units**: Can be filtered by property ID.
 
 List all rental units
-- **list_vendors**: List all service vendors
-- **list_work_orders**: List all maintenance work orders
 
 
 ## 💬 Prompt Examples

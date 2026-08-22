@@ -36,14 +36,14 @@ No more manual entry into accounting tables or digging through paper files. Your
 
 
 ## Available Tools (8)
-- **create_accounting_entry**: Provide date, label, and account lines.
-
-Create a new accounting entry
 - **create_invoice**: Provide contact ID and amount.
 
 Create a new invoice
-- **get_account_info**: Get current account settings
 - **list_accounting_entries**: List all accounting journal entries
+- **create_accounting_entry**: Provide date, label, and account lines.
+
+Create a new accounting entry
+- **get_account_info**: Get current account settings
 - **list_customers**: List all customers
 - **list_invoices**: List all invoices
 - **list_suppliers**: List all suppliers

@@ -36,18 +36,18 @@ No more manual logging of text interactions or missing critical client messages.
 
 
 ## Available Tools (12)
-- **create_contact**: Create a new contact
 - **create_webhook**: Create a new webhook
 - **delete_webhook**: Delete a webhook
-- **get_contact**: Get contact details
 - **get_account_info**: Get account identity
+- **get_contact**: Get contact details
 - **list_contacts**: List SMS contacts
 - **list_messages**: List SMS/MMS messages
-- **list_tickets**: List conversation tickets
 - **list_webhooks**: List active webhooks
-- **send_message**: Send an SMS/MMS
 - **update_contact**: Update contact info
 - **update_ticket**: Update ticket status
+- **create_contact**: Create a new contact
+- **list_tickets**: List conversation tickets
+- **send_message**: Send an SMS/MMS
 
 
 ## 💬 Prompt Examples

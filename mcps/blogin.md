@@ -38,9 +38,9 @@ Connect your **BlogIn** internal blog to any AI agent and simplify how you share
 - **create_internal_post**: Create a new blog post
 - **get_post_details**: Get details for a specific post
 - **list_categories**: List post categories
+- **list_posts**: List BlogIn posts
 - **list_recent_comments**: List recent post comments
 - **list_internal_pages**: List internal wiki pages
-- **list_posts**: List BlogIn posts
 - **list_team_members**: List account users
 
 

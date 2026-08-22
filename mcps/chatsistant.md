@@ -36,14 +36,14 @@ Connect your **Chatsistant** account to any AI agent and manage your AI chatbot 
 ## Available Tools (8)
 - **add_data_source**: Add a new data source to a bot
 - **list_webhooks**: List configured webhooks
-- **query_bot**: Query a bot knowledge base
-- **get_bot**: Get details for a specific bot
 - **get_conversation**: Get details for a specific conversation
+- **get_bot**: Get details for a specific bot
 - **list_bots**: List Chatsistant bots
 - **list_data_sources**: List bot data sources
 - **list_conversations**: Optionally filter by bot ID.
 
 List bot conversations
+- **query_bot**: Query a bot knowledge base
 
 
 ## 💬 Prompt Examples
