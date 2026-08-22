@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your local logistics and on-demand delivery
 
 
 ## Available Tools (8)
-- **update_shop_info**: Update shop metadata
-- **get_shop_detail**: Get shop details
 - **list_supported_cities**: List supported cities
-- **query_delivery_fee**: Query delivery fee
-- **add_shop**: Register a new shop
-- **cancel_order**: Cancel an order
-- **create_order**: Create a delivery order
 - **get_order_detail**: Get order status
+- **cancel_order**: Cancel an order
+- **add_shop**: Register a new shop
+- **create_order**: Create a delivery order
+- **get_shop_detail**: Get shop details
+- **query_delivery_fee**: Query delivery fee
+- **update_shop_info**: Update shop metadata
 
 
 ## 💬 Prompt Examples

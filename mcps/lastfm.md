@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your entire music data ecosystem with **Las
 
 
 ## Available Tools (10)
-- **get_album_info**: Get metadata for an album
 - **get_artist_info**: Get metadata for an artist
-- **get_loved_tracks**: Get the loved tracks for a user
 - **get_recent_tracks**: Get the recent tracks listened to by a user
-- **get_top_albums**: Get the top albums for a user
 - **get_top_artists**: Get the top artists for a user
+- **get_track_info**: Get metadata for a track
+- **get_album_info**: Get metadata for an album
+- **get_loved_tracks**: Get the loved tracks for a user
+- **get_top_albums**: Get the top albums for a user
 - **get_top_tags**: fm based on the provided unique identifier or parameters.
 
 Get the top tags on Last.fm
-- **get_track_info**: Get metadata for a track
 - **get_top_tracks**: Get the top tracks for a user
 - **get_user_info**: fm user.
 

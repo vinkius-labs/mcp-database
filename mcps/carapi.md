@@ -43,19 +43,19 @@ Get models for a specific car make
 - **get_transmissions**: ).
 
 Get list of all transmission types
-- **get_vehicles**: Supports filtering by year, make, model, body type, engine type, drive type and transmission. Returns vehicle details including year, make, model, trim, body style, engine specs, transmission, drive type, fuel type and MSRP.
-
-Search vehicles by year, make, model and more
-- **get_drives**: Get list of all drive types
 - **get_engines**: ).
 
 Get list of all engine types
-- **get_years**: Returns year values for filtering vehicle searches.
-
-Get list of all available years in the database
 - **get_bodies**: ).
 
 Get list of all body types
+- **get_drives**: Get list of all drive types
+- **get_vehicles**: Supports filtering by year, make, model, body type, engine type, drive type and transmission. Returns vehicle details including year, make, model, trim, body style, engine specs, transmission, drive type, fuel type and MSRP.
+
+Search vehicles by year, make, model and more
+- **get_years**: Returns year values for filtering vehicle searches.
+
+Get list of all available years in the database
 
 
 ## 💬 Prompt Examples

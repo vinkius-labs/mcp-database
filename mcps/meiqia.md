@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your customer engagement with **MeiQia** (ç
 
 
 ## Available Tools (10)
-- **list_agents**: List support agents
 - **list_conversations**: List live chat conversations
 - **list_customers**: List CRM customers
-- **list_messages**: List conversation messages
 - **send_message**: Send message to customer
-- **create_customer**: Create a new customer
 - **get_agent_status**: Get agent online status
+- **create_customer**: Create a new customer
 - **get_conversation**: Get conversation details
 - **get_customer**: Get customer details
 - **get_workload_summary**: Get team workload summary
+- **list_agents**: List support agents
+- **list_messages**: List conversation messages
 
 
 ## ğŸ’¬ Prompt Examples

@@ -30,8 +30,13 @@ Connect **Mashvisor** real estate analytics to any AI agent and analyze investme
 
 
 ## Available Tools (10)
-- **get_airbnb_listings**: Get Airbnb rental listings and metrics
 - **get_airbnb_property**: Get detailed Airbnb listing information
+- **get_property**: Get detailed property information
+- **list_neighborhoods**: List neighborhoods with investment data
+- **search_properties**: Returns properties with investment metrics.
+
+Search properties with advanced filters
+- **get_airbnb_listings**: Get Airbnb rental listings and metrics
 - **get_city_listings**: Filter by status, days on market, price history, and property attributes.
 
 Get city market listings
@@ -39,17 +44,12 @@ Get city market listings
 
 Get historical Airbnb performance data
 - **get_investment_analysis**: Get property investment analysis
-- **get_property**: Get detailed property information
 - **get_rental_rates**: Includes rent distribution statistics and helps evaluate traditional rental investment potential.
 
 Get traditional rental rate estimates
-- **list_neighborhoods**: List neighborhoods with investment data
 - **list_properties**: Filter by city, state, bedrooms, and property type. Returns properties with Airbnb and long-term rental metrics.
 
 List investment properties
-- **search_properties**: Returns properties with investment metrics.
-
-Search properties with advanced filters
 
 
 ## 💬 Prompt Examples

@@ -33,21 +33,21 @@ Connect your **Buenbit** trading account to any AI agent and manage your decentr
 
 
 ## Available Tools (14)
-- **cancel_order**: Cancel a pending crypto order
 - **create_order**: Create a new market/limit trade order
-- **get_crypto_prices**: Read universal conversion spot prices
-- **get_network_fees**: Get current network gas costs
-- **list_orders**: List recorded exchange orders
+- **cancel_order**: Cancel a pending crypto order
 - **execute_withdrawal**: Broadcast a native withdrawal
 - **get_deposit_address**: Scan infrastructure wallet address
 - **get_ticker**: g. BTC/ARS, USDC/ARS).
 
 Get current market ticker prices
 - **get_yield_rates**: Get staking pool rates
-- **list_assets**: Explore available crypto assets catalog
 - **list_balances**: List portfolio wallet balances
 - **list_limits**: Get profile trade limits
 - **list_transactions**: List money and crypto transactions
+- **get_crypto_prices**: Read universal conversion spot prices
+- **get_network_fees**: Get current network gas costs
+- **list_assets**: Explore available crypto assets catalog
+- **list_orders**: List recorded exchange orders
 - **list_withdrawals**: List crypto withdrawals
 
 

@@ -38,11 +38,11 @@ Empower your AI agent to orchestrate your marketing operations with **Convertlab
 - **get_campaign**: Get campaign details
 - **get_customer**: Get customer details
 - **list_campaigns**: List marketing campaigns
-- **list_events**: List marketing events
 - **list_member_groups**: List customer segments
 - **list_touchpoints**: List marketing touchpoints
-- **create_customer**: Create a new customer
 - **list_customers**: List DM Hub customers
+- **create_customer**: Create a new customer
+- **list_events**: List marketing events
 
 
 ## 💬 Prompt Examples

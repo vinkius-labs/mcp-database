@@ -34,9 +34,9 @@ Equip your AI agent with the world's most iconic photography database through th
 
 
 ## Available Tools (3)
-- **get_flickr_photo_info**: Get detailed information for a specific photo
 - **get_recent_flickr_photos**: Get most recent public photos
 - **search_flickr_photos**: Search for public photos on Flickr
+- **get_flickr_photo_info**: Get detailed information for a specific photo
 
 
 ## 💬 Prompt Examples

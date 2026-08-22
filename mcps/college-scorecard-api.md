@@ -39,8 +39,8 @@ Empower your AI agent to orchestrate your entire higher education research workf
 - **get_fields_of_study**: Get details for specific programs or fields of study
 - **list_colleges_by_state**: List all schools in a specific state
 - **search_colleges**: Search for colleges and universities in the US
-- **list_colleges_by_zip**: List schools near a specific ZIP code
 - **list_colleges_by_city**: List schools in a specific city
+- **list_colleges_by_zip**: List schools near a specific ZIP code
 
 
 ## 💬 Prompt Examples

@@ -39,29 +39,29 @@ Connect your **Coppel** B2B account to any AI agent and manage Mexico's largest 
 - **get_store**: Get details of a specific store
 - **list_categories**: List all product categories
 - **list_customers**: List registered customers
-- **list_orders**: Filter by status to find pending or delivered orders.
-
-List customer orders
 - **list_payments**: Shows payment amounts, dates, methods (weekly installment, cash at store, card), and receipt references.
 
 List payments for an order or account
-- **list_products**: Products span electronics, furniture, appliances, clothing, and shoes. Filter by category for targeted browsing.
-
-List products from the Coppel catalog
 - **list_promotions**: List active promotions and deals
-- **list_stores**: Filter by state to find stores in a specific Mexican state (e.g., "Jalisco", "CDMX").
-
-List Coppel physical store locations
 - **search_products**: Returns matching products with pricing and credit plan availability.
 
 Search products by keyword
 - **create_order**: Specify the product IDs, quantities, delivery address, and payment method. Credit-eligible customers can select weekly payment plans (abonos semanales).
 
 Place a new order
+- **get_customer**: Get full details of a specific customer
 - **get_customer_credit**: Coppel is famous for its consumer credit program serving Mexico's underbanked population.
 
 Check a customer's Coppel credit status
-- **get_customer**: Get full details of a specific customer
+- **list_orders**: Filter by status to find pending or delivered orders.
+
+List customer orders
+- **list_products**: Products span electronics, furniture, appliances, clothing, and shoes. Filter by category for targeted browsing.
+
+List products from the Coppel catalog
+- **list_stores**: Filter by state to find stores in a specific Mexican state (e.g., "Jalisco", "CDMX").
+
+List Coppel physical store locations
 
 
 ## 💬 Prompt Examples

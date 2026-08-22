@@ -34,6 +34,10 @@ Connect to **Bandsintown** and discover live music events worldwide through natu
 
 
 ## Available Tools (7)
+- **get_venue_events**: Returns event details with artists, dates, times and ticket links.
+
+Get upcoming events at a specific venue
+- **get_artist**: Get info for a specific artist
 - **get_artist_by_facebook_id**: Get artist info by Facebook page ID
 - **get_artist_by_id**: Get artist info by Bandsintown ID
 - **get_artist_events**: Use date parameter to filter: "upcoming", "past", "all" or a date range "YYYY-MM-DD,YYYY-MM-DD".
@@ -45,10 +49,6 @@ Get events for an artist by Bandsintown ID
 - **get_recommended_events**: Filter by city name or latitude/longitude coordinates with radius. Returns event details with artist, venue, date, time and ticket links.
 
 Get recommended events by location
-- **get_venue_events**: Returns event details with artists, dates, times and ticket links.
-
-Get upcoming events at a specific venue
-- **get_artist**: Get info for a specific artist
 
 
 ## 💬 Prompt Examples

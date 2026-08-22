@@ -33,22 +33,22 @@ Connect your **Betterfly** Corporate API to any AI agent and bring ESG (Environm
 
 
 ## Available Tools (14)
-- **assign_reward**: Allocate manual recognition bonus
 - **get_impact_stats**: Measure ESG and social metrics
-- **get_user_rewards**: Get user unlocked rewards
 - **get_user**: Get user wellness details
+- **get_user_rewards**: Get user unlocked rewards
+- **list_insurance**: Fetch covered scopes
+- **list_partners**: Evaluate linked ecosystem partners
+- **pause_user**: Temporarily restrict a user account
+- **get_company_metrics**: Get aggregate well-being stats
+- **assign_reward**: Allocate manual recognition bonus
+- **create_challenge**: Initialize team activity challenge
 - **list_activities**: It can track globalThis corporate steps or an individual’s synced activities.
 
 List wellness activities
 - **list_benefits**: List accessible benefits
 - **list_challenges**: List active corporate challenges
 - **list_donations**: List corporate donations
-- **list_insurance**: Fetch covered scopes
-- **list_partners**: Evaluate linked ecosystem partners
 - **list_users**: List corporate users (members)
-- **pause_user**: Temporarily restrict a user account
-- **create_challenge**: Initialize team activity challenge
-- **get_company_metrics**: Get aggregate well-being stats
 
 
 ## 💬 Prompt Examples
