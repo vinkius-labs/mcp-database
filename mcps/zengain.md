@@ -29,15 +29,15 @@ Connect your **Zengain** (Nalpeiron Growth Platform) account to any AI agent and
 
 ## Available Tools (10)
 - **get_product**: Get details for a specific product
-- **get_analytics_summary**: Get analytics summary
 - **get_user_details**: Get details for a specific user
 - **list_events**: List tracking events
 - **list_kpms**: List Key Product Milestones
 - **list_products**: List Zengain products
-- **list_users**: List product users
 - **list_webhooks**: List configured webhooks
-- **track_event**: Track a custom event
+- **get_analytics_summary**: Get analytics summary
 - **get_health_score**: Get customer health score
+- **list_users**: List product users
+- **track_event**: Track a custom event
 
 
 ## 💬 Prompt Examples

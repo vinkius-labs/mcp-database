@@ -40,22 +40,10 @@ Your AI agent becomes a structural biology research assistant with direct access
 
 
 ## Available Tools (16)
-- **get_binding_sites**: Critical for drug discovery, molecular docking, and understanding protein-ligand interactions.
-
-Get ligand binding site residues and interactions
-- **get_secondary_structure**: Shows the count of helices and strands per chain, organized by molecular entity. Essential for understanding protein fold topology.
-
-Get helix, sheet, and coil assignments per residue
-- **get_assemblies**: Returns assembly IDs, composition (which entities and how many copies), preferred assembly flag, and form description. Critical for understanding whether a protein functions as a monomer, dimer, tetramer, or higher-order complex.
-
-Get biological assembly information (quaternary structure)
 - **get_cofactors**: Cofactors like heme, NAD+, FAD, and metal ions are essential for enzyme catalysis and protein function.
 
 Get cofactor and prosthetic group annotations
 - **get_experiment**: Get experimental method details for a structure
-- **get_ligand_monomers**: Returns chemical component IDs, names, molecular formulas, molecular weights, and their chain/residue positions. Essential for drug discovery and understanding protein-small molecule interactions.
-
-Get small molecule ligands bound in the structure
 - **get_modified_residues**: Shows the parent compound ID and modification name.
 
 Get non-standard amino acids and nucleotides
@@ -65,9 +53,6 @@ Get molecular entities (chains, polymers) in a structure
 - **get_mutated_residues**: Shows the original residue, mutated residue, chain, and position. Essential for understanding how the crystallized construct differs from the native protein.
 
 Get engineered mutations vs. wild-type sequence
-- **get_publications**: Useful for finding the primary citation and methodology papers for a structure.
-
-Get associated journal publications and PubMed IDs
 - **get_quality_scores**: The first thing a structural biologist checks when evaluating a structure for reliability.
 
 Get globalThis quality metrics for a structure
@@ -83,6 +68,21 @@ Get PDB entry summary with title, authors, and resolution
 - **get_uniprot_mapping**: Returns UniProt accessions, chain assignments, and start/end position mappings. Essential for cross-referencing between protein sequence databases and 3D structural data.
 
 Get UniProt to PDB residue mappings
+- **get_assemblies**: Returns assembly IDs, composition (which entities and how many copies), preferred assembly flag, and form description. Critical for understanding whether a protein functions as a monomer, dimer, tetramer, or higher-order complex.
+
+Get biological assembly information (quaternary structure)
+- **get_binding_sites**: Critical for drug discovery, molecular docking, and understanding protein-ligand interactions.
+
+Get ligand binding site residues and interactions
+- **get_ligand_monomers**: Returns chemical component IDs, names, molecular formulas, molecular weights, and their chain/residue positions. Essential for drug discovery and understanding protein-small molecule interactions.
+
+Get small molecule ligands bound in the structure
+- **get_publications**: Useful for finding the primary citation and methodology papers for a structure.
+
+Get associated journal publications and PubMed IDs
+- **get_secondary_structure**: Shows the count of helices and strands per chain, organized by molecular entity. Essential for understanding protein fold topology.
+
+Get helix, sheet, and coil assignments per residue
 - **search_structures**: Use natural language queries like "insulin receptor kinase", "SARS-CoV-2 spike protein", "cryo-EM resolution<3", or specific organism names. Returns PDB IDs, titles, methods, resolutions, and organisms.
 
 Search PDB structures with full-text queries

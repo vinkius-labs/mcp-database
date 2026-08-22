@@ -38,10 +38,10 @@ No more manual CSV downloads or wrestling with government transparency portals. 
 - **list_datasets**: io platform. Supports pagination.
 
 List available datasets on Brasil.io
+- **get_table_metadata**: Get metadata for a specific table in a dataset
 - **query_table_data**: You can pass arbitrary filters as a JSON string to filter by column names (e.g., {"state": "PR"}).
 
 Query data records from a specific table
-- **get_table_metadata**: Get metadata for a specific table in a dataset
 
 
 ## 💬 Prompt Examples

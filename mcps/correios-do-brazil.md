@@ -33,9 +33,9 @@ Connect your **Correios** account to any AI agent to automate logistics and ship
 
 
 ## Available Tools (3)
+- **estimate_delivery_time**: Estimate delivery time between two ZIP codes
 - **calculate_prices**: Calculate shipping cost for postal services
 - **consult_cep**: Consult address information for a ZIP code
-- **estimate_delivery_time**: Estimate delivery time between two ZIP codes
 
 
 ## 💬 Prompt Examples

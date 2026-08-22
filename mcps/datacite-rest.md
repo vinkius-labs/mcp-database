@@ -39,7 +39,6 @@ No more manual searching through web portals to find research citations or metad
 - **create_doi**: Requires Member API authentication (Repository account). Payload must follow JSON:API format.
 
 Create a new DOI record
-- **list_providers**: List DataCite Members and Consortium Organizations
 - **delete_doi**: Only DOIs in Draft state can be deleted. Requires Member API authentication.
 
 Delete a DOI (Draft state only)
@@ -47,13 +46,14 @@ Delete a DOI (Draft state only)
 - **get_heartbeat**: Check API status
 - **list_activities**: Retrieve metadata provenance (history of changes)
 - **list_clients**: List DataCite Repository accounts
-- **list_dois**: Retrieve a list of DOIs
 - **list_events**: Retrieve links between DOIs and other resources (citations, usage)
 - **list_prefixes**: List DOI prefixes
 - **list_reports**: List usage reports
 - **update_doi**: Requires Member API authentication. Only included attributes will be updated.
 
 Update an existing DOI record
+- **list_dois**: Retrieve a list of DOIs
+- **list_providers**: List DataCite Members and Consortium Organizations
 
 
 ## 💬 Prompt Examples

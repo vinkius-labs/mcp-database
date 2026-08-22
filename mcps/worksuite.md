@@ -38,11 +38,11 @@ Connect your **Worksuite** (formerly Shortlist) account to any AI agent to autom
 - **get_project**: Get details of a specific project
 - **get_talent**: Get details of a specific talent
 - **list_projects**: List projects in Worksuite
-- **list_talents**: List all talents in Worksuite
 - **list_tasks**: List tasks in Worksuite
+- **list_payments**: List payments
 - **list_invoices**: List invoices
 - **list_jobs**: List job openings
-- **list_payments**: List payments
+- **list_talents**: List all talents in Worksuite
 
 
 ## 💬 Prompt Examples

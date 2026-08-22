@@ -32,10 +32,10 @@ Connect your AI agent to the **Correios** infrastructure to automate logistics q
 
 
 ## Available Tools (2)
+- **track_object**: Track a postal object
 - **calculate_price_deadline**: Uses POST but acts as a query.
 
 Calculate shipping price and deadline
-- **track_object**: Track a postal object
 
 
 ## 💬 Prompt Examples

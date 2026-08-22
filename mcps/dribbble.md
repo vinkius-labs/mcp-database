@@ -34,37 +34,37 @@ Connect your **Dribbble** account to any AI agent to streamline your creative wo
 
 
 ## Available Tools (15)
+- **delete_shot**: Requires upload scope.
+
+Delete a shot
+- **list_projects**: List projects
+- **list_user_shots**: List the authenticated user’s shots
+- **create_project**: Create a new project
+- **update_project**: Update a project
+- **update_shot**: Requires upload scope.
+
+Update an existing shot
+- **create_attachment**: Requires upload scope and Pro/Team membership.
+
+Create an attachment for a shot
+- **create_job**: Note: Requires a special token. Contact Dribbble for partnership.
+
+Create a job
 - **create_shot**: Requires upload scope. Note: Video shot creation is not supported via API.
 
 Create a new shot
 - **delete_attachment**: Requires upload scope.
 
 Delete an attachment
-- **delete_shot**: Requires upload scope.
-
-Delete a shot
+- **delete_project**: Delete a project
 - **get_job**: Note: Requires a special token.
 
 Show a job
 - **get_shot**: Get a specific shot
 - **get_user**: Get the authenticated user
-- **list_projects**: List projects
-- **list_user_shots**: List the authenticated user’s shots
-- **create_job**: Note: Requires a special token. Contact Dribbble for partnership.
-
-Create a job
-- **create_project**: Create a new project
-- **delete_project**: Delete a project
-- **create_attachment**: Requires upload scope and Pro/Team membership.
-
-Create an attachment for a shot
 - **update_job**: Note: Requires a special token.
 
 Update a job
-- **update_project**: Update a project
-- **update_shot**: Requires upload scope.
-
-Update an existing shot
 
 
 ## 💬 Prompt Examples

@@ -35,18 +35,11 @@ Connect to the **Boletín Oficial del Estado (BOE)** Open Data service to naviga
 
 ## Available Tools (17)
 - **get_borme_summary**: Get daily summary of the BORME
-- **get_consolidated_legislation**: ID format: BOE-A-YYYY-NUMBER.
-
-Get consolidated legislation by ID
-- **get_legislation_analysis**: Get legal analysis for consolidated legislation
 - **get_legislation_block**: g., a specific article).
 
 Get specific block of consolidated legislation
 - **get_legislation_eli_metadata**: Get ELI metadata for consolidated legislation
 - **get_legislation_metadata**: Get metadata for consolidated legislation
-- **get_legislation_text_index**: ) structuring the latest version.
-
-Get text index of consolidated legislation
 - **get_legislation_text**: Get full text of consolidated legislation
 - **list_consolidation_states**: List auxiliary consolidation states
 - **list_departments**: ).
@@ -58,9 +51,16 @@ List auxiliary issuing departments
 
 List auxiliary legal ranks
 - **list_scopes**: List auxiliary scopes
-- **list_subjects**: List auxiliary subjects/topics
 - **search_consolidated_legislation**: Search consolidated legislation
 - **get_boe_summary**: Get daily summary of the BOE
+- **get_consolidated_legislation**: ID format: BOE-A-YYYY-NUMBER.
+
+Get consolidated legislation by ID
+- **get_legislation_analysis**: Get legal analysis for consolidated legislation
+- **get_legislation_text_index**: ) structuring the latest version.
+
+Get text index of consolidated legislation
+- **list_subjects**: List auxiliary subjects/topics
 
 
 ## 💬 Prompt Examples

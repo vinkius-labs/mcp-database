@@ -36,16 +36,16 @@ Connect your **Worksection** account to any AI agent to automate your project ma
 ## Available Tools (12)
 - **create_task**: Add new task
 - **get_task_details**: Get full task info
-- **list_work_history**: Get event log
 - **list_project_members**: List team on project
-- **list_projects**: List workspace projects
+- **list_work_history**: Get event log
 - **list_project_tasks**: List tasks in project
-- **list_active_timers**: Check running timers
 - **list_all_users**: List company users
 - **reopen_task**: Restore a task
 - **stop_timer**: Finish time tracking
 - **complete_task**: Finish a task
 - **get_project_details**: Get project info
+- **list_active_timers**: Check running timers
+- **list_projects**: List workspace projects
 
 
 ## 💬 Prompt Examples
