@@ -34,17 +34,17 @@ Connect your **Zixflow** workspace to any AI agent to automate your sales and CR
 
 
 ## Available Tools (7)
-- **list_collections**: List all collections (People, Company, etc.)
 - **create_collection_record**: g., a person or company) to a specific Zixflow collection.
 
 Create a new record in a collection
 - **delete_collection_record**: Delete a record from a collection
-- **list_wallet_transactions**: List Zixflow wallet transactions
+- **list_collections**: List all collections (People, Company, etc.)
 - **update_collection_record**: Update an existing record
-- **get_record_details**: Get details for a specific record
 - **list_collection_records**: Requires a JSON body for filtering/sorting.
 
 List records within a specific collection
+- **get_record_details**: Get details for a specific record
+- **list_wallet_transactions**: List Zixflow wallet transactions
 
 
 ## 💬 Prompt Examples

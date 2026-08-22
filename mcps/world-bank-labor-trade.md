@@ -27,11 +27,11 @@ Supply chain analysts, trade researchers, HR strategists, and international busi
 
 
 ## Available Tools (5)
-- **get_unemployment_rate**: Get unemployment total (% of labor force)
+- **get_fdi**: Get Foreign Direct Investment, net inflows (% of GDP)
 - **get_labor_force**: Get total labor force
 - **get_exports**: Get exports of goods/services (% of GDP)
-- **get_fdi**: Get Foreign Direct Investment, net inflows (% of GDP)
 - **get_labor_trade_indicator**: Get any World Bank labor/trade indicator by code
+- **get_unemployment_rate**: Get unemployment total (% of labor force)
 
 
 ## 💬 Prompt Examples

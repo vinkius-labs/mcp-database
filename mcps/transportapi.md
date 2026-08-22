@@ -41,21 +41,9 @@ No more navigating multiple transport operator websites or manually parsing real
 
 
 ## Available Tools (12)
-- **get_bus_arrivals**: Returns list of arriving services with line names and numbers, origins, scheduled and real-time arrival times (ETA), expected wait times, direction, operator details, and any delay indicators. Essential for passenger pickup coordination, arrival monitoring, and real-time arrival boards. AI agents use this when users ask "when is the next bus arriving at this stop", "show incoming buses at stop X", or need to track arriving bus services for passenger coordination.
-
-Get real-time bus arrivals at a specific UK stop
-- **get_bus_departures**: Returns list of departing services with line names and numbers, destinations, scheduled and real-time departure times (ETD), expected wait times, direction, operator details, and any service disruption notices. Covers all bus services across Great Britain including London Buses, Transport for Greater Manchester, West Midlands, and regional operators. Essential for passenger information displays, departure boards, journey planning, and real-time transit monitoring. AI agents should reference this when users ask "when is the next bus from this stop", "show departures from stop ID X", or need to monitor upcoming bus services at a known UK bus stop.
-
-Get real-time bus departures from a specific stop in the UK
 - **get_journey_plan**: Supports multimodal trips combining bus, rail, tram, underground (tube), walking, and cycling. Returns complete itinerary with departure and arrival times, total duration, number of changes, legs with mode details (line name, operator, vehicle type), intermediate stops/stations, walking distances, and real-time disruption information. Essential for travel planning, multimodal journey optimization, passenger information systems, and UK-wide mobility applications. AI agents should use this when users ask "how do I get from London Victoria to Heathrow Airport", "plan a journey from Manchester Piccadilly to Old Trafford", or need door-to-door trip planning across UK public transport.
 
 Plan a multimodal journey between two UK locations
-- **get_rail_departures**: Returns list of departing services with train operating companies, destinations, scheduled and real-time departure times (ETD), platforms, expected delays, cancellation status, calling points, and service type (express, local, sleeper). Covers all National Rail services across Great Britain. Essential for departure boards, journey planning, station operations, and passenger information. AI agents should use this when users ask "what trains are leaving Paddington", "show departures from Birmingham New Street", or need comprehensive departure listings for a UK rail station.
-
-Get real-time train departures from a specific UK rail station
-- **get_rail_route**: Returns available services, journey duration, number of changes, calling points, train operating companies, typical frequency, and first/last service times. Essential for rail journey planning, route comparison, travel itinerary preparation, and understanding rail connectivity. AI agents should reference this when users ask "what is the train route from London to Manchester", "show rail connections between Edinburgh and Glasgow", or need to understand rail service options between two UK stations.
-
-Get train route information between two UK rail stations
 - **get_rail_services**: Returns services with train operating companies (TOCs), destinations, origins, scheduled times, platforms, service types (express, local, sleeper), and any disruption information. Covers National Rail services across Great Britain. Essential for station information displays, service monitoring, rail journey planning, and operational awareness. AI agents should reference this when users ask "what services call at Euston", "show all trains at Edinburgh Waverley", or need comprehensive service listings for a UK rail station.
 
 Get all train services calling at a specific UK rail station
@@ -65,18 +53,30 @@ Search for UK bus stops by name, location, or landmark
 - **get_timetable**: Returns all scheduled services with departure times from origin through to terminus, stops served in sequence, journey duration variations by time of day, weekday/weekend/holiday service patterns, operator information, and any planned service changes. Essential for comprehensive schedule analysis, journey planning at specific times, service pattern research, and understanding bus frequency throughout the day. AI agents use this when users ask "show me the full timetable for bus route 73", "what times does the X59 run on Sundays", or need complete schedule data for a UK bus service.
 
 Get full timetable for a specific UK bus line
-- **get_updates**: Returns active alerts with affected lines, services, or operators, disruption descriptions, severity levels, expected duration, alternative route recommendations, and timestamps. Covers bus, rail, tram, and underground services across Great Britain. Essential for disruption awareness, passenger communication, journey reliability monitoring, and travel planning during service changes. AI agents should reference this when users ask "are there any disruptions on the Northern Line", "is there engineering work on Great Western Railway", or need to check service reliability before planning UK journeys.
-
-Get real-time service updates and disruption alerts for UK transport
-- **get_rail_arrivals**: Returns list of arriving services with train operating companies, origins, scheduled and real-time arrival times (ETA), platforms, expected delays, cancellation status, and service type information. Covers all National Rail services. Essential for passenger pickup coordination, arrival monitoring, station management, and real-time arrival boards. AI agents use this when users ask "what trains are arriving at Kings Cross", "show incoming trains at Manchester Piccadilly", or need to track arriving rail services.
-
-Get real-time train arrivals at a specific UK rail station
-- **get_station_info**: Returns station name, location (address, latitude, longitude), facilities (ticket office, ticket machines, waiting room, car park, cycle storage, WiFi, step-free access), staffing hours, managing train operating company, annual entry/exit statistics, and accessibility information. Essential for station planning, accessibility assessment, facility verification, and passenger information. AI agents should use this when users ask "tell me about Clapham Junction station", "does Euston have step-free access", or need detailed station metadata for UK rail journey planning.
-
-Get detailed information about a specific UK rail station
 - **get_stop_info**: Returns stop name, location (latitude, longitude, address, locality, landmark), common services, served lines, stop type (bus stop, bus station, coach station), accessibility features (wheelchair access, sheltered, seating), and operator information. Essential for stop identification, accessibility planning, transit network analysis, and passenger information. AI agents should use this when users ask "tell me about this bus stop", "what lines serve stop X", or need detailed stop metadata to contextualize transit queries.
 
 Get detailed information about a specific UK bus stop
+- **get_bus_arrivals**: Returns list of arriving services with line names and numbers, origins, scheduled and real-time arrival times (ETA), expected wait times, direction, operator details, and any delay indicators. Essential for passenger pickup coordination, arrival monitoring, and real-time arrival boards. AI agents use this when users ask "when is the next bus arriving at this stop", "show incoming buses at stop X", or need to track arriving bus services for passenger coordination.
+
+Get real-time bus arrivals at a specific UK stop
+- **get_bus_departures**: Returns list of departing services with line names and numbers, destinations, scheduled and real-time departure times (ETD), expected wait times, direction, operator details, and any service disruption notices. Covers all bus services across Great Britain including London Buses, Transport for Greater Manchester, West Midlands, and regional operators. Essential for passenger information displays, departure boards, journey planning, and real-time transit monitoring. AI agents should reference this when users ask "when is the next bus from this stop", "show departures from stop ID X", or need to monitor upcoming bus services at a known UK bus stop.
+
+Get real-time bus departures from a specific stop in the UK
+- **get_rail_arrivals**: Returns list of arriving services with train operating companies, origins, scheduled and real-time arrival times (ETA), platforms, expected delays, cancellation status, and service type information. Covers all National Rail services. Essential for passenger pickup coordination, arrival monitoring, station management, and real-time arrival boards. AI agents use this when users ask "what trains are arriving at Kings Cross", "show incoming trains at Manchester Piccadilly", or need to track arriving rail services.
+
+Get real-time train arrivals at a specific UK rail station
+- **get_rail_departures**: Returns list of departing services with train operating companies, destinations, scheduled and real-time departure times (ETD), platforms, expected delays, cancellation status, calling points, and service type (express, local, sleeper). Covers all National Rail services across Great Britain. Essential for departure boards, journey planning, station operations, and passenger information. AI agents should use this when users ask "what trains are leaving Paddington", "show departures from Birmingham New Street", or need comprehensive departure listings for a UK rail station.
+
+Get real-time train departures from a specific UK rail station
+- **get_rail_route**: Returns available services, journey duration, number of changes, calling points, train operating companies, typical frequency, and first/last service times. Essential for rail journey planning, route comparison, travel itinerary preparation, and understanding rail connectivity. AI agents should reference this when users ask "what is the train route from London to Manchester", "show rail connections between Edinburgh and Glasgow", or need to understand rail service options between two UK stations.
+
+Get train route information between two UK rail stations
+- **get_station_info**: Returns station name, location (address, latitude, longitude), facilities (ticket office, ticket machines, waiting room, car park, cycle storage, WiFi, step-free access), staffing hours, managing train operating company, annual entry/exit statistics, and accessibility information. Essential for station planning, accessibility assessment, facility verification, and passenger information. AI agents should use this when users ask "tell me about Clapham Junction station", "does Euston have step-free access", or need detailed station metadata for UK rail journey planning.
+
+Get detailed information about a specific UK rail station
+- **get_updates**: Returns active alerts with affected lines, services, or operators, disruption descriptions, severity levels, expected duration, alternative route recommendations, and timestamps. Covers bus, rail, tram, and underground services across Great Britain. Essential for disruption awareness, passenger communication, journey reliability monitoring, and travel planning during service changes. AI agents should reference this when users ask "are there any disruptions on the Northern Line", "is there engineering work on Great Western Railway", or need to check service reliability before planning UK journeys.
+
+Get real-time service updates and disruption alerts for UK transport
 
 
 ## 💬 Prompt Examples

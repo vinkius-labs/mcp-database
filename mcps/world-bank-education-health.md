@@ -27,11 +27,11 @@ Public health analysts, educators, policy makers, and humanitarian organizations
 
 
 ## Available Tools (5)
-- **get_life_expectancy**: Get life expectancy at birth
 - **get_infant_mortality**: Get infant mortality rate
-- **get_health_expenditure**: Get current health expenditure (% of GDP)
-- **get_literacy_rate**: Get adult literacy rate
 - **get_edu_health_indicator**: Get any World Bank education/health indicator by code
+- **get_health_expenditure**: Get current health expenditure (% of GDP)
+- **get_life_expectancy**: Get life expectancy at birth
+- **get_literacy_rate**: Get adult literacy rate
 
 
 ## 💬 Prompt Examples

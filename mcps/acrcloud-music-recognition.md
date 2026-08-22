@@ -33,11 +33,11 @@ Connect your AI agent to **ACRCloud**, the world-leading automatic content recog
 
 
 ## Available Tools (5)
-- **get_track_by_isrc**: Retrieve detailed metadata for a track using its ISRC code
 - **identify_music_from_url**: Identify a song from an audio file URL (e.g., mp3, wav)
-- **search_albums**: Search for music albums by title or artist
 - **search_artists**: Search for music artists by name
 - **search_tracks**: Search for music tracks by name, artist, or lyric fragments
+- **get_track_by_isrc**: Retrieve detailed metadata for a track using its ISRC code
+- **search_albums**: Search for music albums by title or artist
 
 
 ## 💬 Prompt Examples

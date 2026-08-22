@@ -37,13 +37,13 @@ Intertwine the open-source **Verba** (by Weaviate) ecosystem natively into your 
 Permanently removes a document from the knowledge base
 - **get_document_details**: Retrieves the full content and metadata of a specific document
 - **list_knowledge_documents**: Lists all documents indexed in the Verba knowledge base
-- **perform_rag_query**: Returns summarized answers with citations.
-
-Executes a RAG (Retrieval Augmented Generation) query against the Verba knowledge base
 - **add_knowledge_document**: Provide the document content and optional metadata JSON.
 
 Ingests a new document into the Verba knowledge base
 - **get_system_config**: Retrieves the current Verba system configuration
+- **perform_rag_query**: Returns summarized answers with citations.
+
+Executes a RAG (Retrieval Augmented Generation) query against the Verba knowledge base
 
 
 ## 💬 Prompt Examples

@@ -46,8 +46,8 @@ No more manual navigation through complex cloud consoles to whitelist a consumer
 - **list_environments**: g., working, production) for a Project.
 
 List project environments
-- **list_files**: List configuration files
 - **list_deployments**: List deployments
+- **list_files**: List configuration files
 - **get_metrics**: Get edge metrics
 - **list_projects**: List Zuplo projects
 - **create_deployment**: Create a new deployment

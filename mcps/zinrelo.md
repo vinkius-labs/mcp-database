@@ -34,17 +34,17 @@ Connect your **Zinrelo** account to any AI agent to automate your loyalty and re
 
 
 ## Available Tools (9)
-- **deduct_points**: Manually deduct points from a user
 - **get_member_details**: Get details for a specific loyalty member
-- **list_member_transactions**: List transaction history for a member
 - **list_loyalty_members**: List all loyalty program members
 - **award_points_purchase**: Award points for a purchase
 - **enroll_member**: Enroll or update a loyalty member
-- **award_points_activity**: Award points for a custom activity
 - **redeem_reward**: g., coupon).
 
 Redeem points for a reward
+- **award_points_activity**: Award points for a custom activity
+- **deduct_points**: Manually deduct points from a user
 - **get_loyalty_settings**: Get account loyalty settings
+- **list_member_transactions**: List transaction history for a member
 
 
 ## 💬 Prompt Examples

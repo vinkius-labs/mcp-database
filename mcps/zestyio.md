@@ -34,18 +34,18 @@ Connect your **Zesty.io** account to any AI agent to streamline your headless CM
 
 
 ## Available Tools (8)
-- **create_content_item**: Requires a JSON object with field values.
-
-Create a new content item
 - **delete_content_item**: Delete a content item
 - **get_content_item**: Get details for a specific content item
-- **list_zesty_instances**: List all Zesty.io instances associated with the account
 - **list_content_items**: List content items for a specific model
 - **list_content_models**: Use this to identify Model ZUIDs.
 
 List all content models for the current instance
+- **list_zesty_instances**: List all Zesty.io instances associated with the account
 - **get_instance_settings**: Get configuration settings for the instance
 - **update_content_item**: Update an existing content item
+- **create_content_item**: Requires a JSON object with field values.
+
+Create a new content item
 
 
 ## 💬 Prompt Examples

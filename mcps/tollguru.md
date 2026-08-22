@@ -42,12 +42,12 @@ No more manually checking toll authority websites or estimating trip costs. Your
 
 
 ## Available Tools (3)
-- **calculate_toll_multi_stop**: Returns detailed breakdown of tolls at each plaza along the complete route, fuel costs, and optional driver costs. Supports waypoint optimization to minimize total toll costs. Essential for delivery route planning, multi-stop trip budgeting, and logistics optimization. AI agents should use this when users need toll calculations for routes with multiple stops, such as "calculate tolls from Chicago to Detroit with stops in Toledo and Ann Arbor" or "what are the toll costs for my delivery route with 5 waypoints".
-
-Calculate tolls for a multi-stop route with multiple waypoints
 - **calculate_toll_from_polyline**: This is useful when you already have a route from a mapping service and need toll calculations without re-routing. Returns the same detailed toll, fuel, and cost information as the route calculation. Supports all vehicle types, currencies, and payment methods. Essential for integrating with existing mapping applications, post-trip toll reconciliation, and GPS track-based toll analysis. AI agents should use this when users have an existing route polyline from Google Maps, Here Maps, or another service and need toll costs for that specific route.
 
 Calculate tolls for a route defined by an encoded polyline from any mapping service
+- **calculate_toll_multi_stop**: Returns detailed breakdown of tolls at each plaza along the complete route, fuel costs, and optional driver costs. Supports waypoint optimization to minimize total toll costs. Essential for delivery route planning, multi-stop trip budgeting, and logistics optimization. AI agents should use this when users need toll calculations for routes with multiple stops, such as "calculate tolls from Chicago to Detroit with stops in Toledo and Ann Arbor" or "what are the toll costs for my delivery route with 5 waypoints".
+
+Calculate tolls for a multi-stop route with multiple waypoints
 - **calculate_toll_route**: Returns detailed toll plaza information including plaza names, tag and cash costs, payment methods accepted, and route optimization suggestions. Also calculates fuel costs based on vehicle efficiency and current fuel prices, and optional driver costs based on time value. Supports all vehicle types including 2-axle cars, EVs, motorcycles, and commercial trucks (2-9+ axles). You can request route optimization to minimize toll costs, specify currency output (USD, CAD, MXN, EUR, GBP, INR, AUD, etc.), and choose mapping service (Here Maps, Google Maps, or TollGuru internal). Essential for fleet management, trip cost estimation, route planning, toll reconciliation, and travel budgeting. AI agents should use this when users ask "what are the tolls from New York to Boston", "calculate toll costs for my truck from LA to San Francisco", or need comprehensive trip cost breakdowns including tolls, fuel, and driver time.
 
 Calculate tolls and total trip costs for a route with origin, destination, and optional waypoints
