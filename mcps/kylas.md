@@ -33,14 +33,14 @@ Connect your **Kylas** account to any AI agent and manage your sales CRM through
 
 
 ## Available Tools (7)
+- **list_tasks**: List CRM tasks
+- **list_deals**: List all CRM deals
 - **create_contact**: Create a new contact
 - **create_lead**: Pass data as a JSON string.
 
 Create a new lead
 - **get_lead**: Get specific lead details
 - **list_contacts**: List all CRM contacts
-- **list_tasks**: List CRM tasks
-- **list_deals**: List all CRM deals
 - **list_leads**: List all Kylas leads
 
 

@@ -33,14 +33,14 @@ Connect your **Mokaform** account to any AI agent and manage AI-powered forms th
 
 
 ## Available Tools (8)
-- **create_form**: Create a new form
-- **delete_response**: Delete a form response
 - **get_form**: Get form details
+- **delete_response**: Delete a form response
 - **get_response**: Get specific response details
-- **list_forms**: List all forms
 - **list_responses**: List all responses for a form
 - **list_workspaces**: List all workspaces
 - **update_form**: Update an existing form
+- **create_form**: Create a new form
+- **list_forms**: List all forms
 
 
 ## 💬 Prompt Examples

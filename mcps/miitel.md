@@ -35,11 +35,11 @@ Connect your **MiiTel** account to any AI agent and manage AI-powered speech ana
 
 ## Available Tools (6)
 - **get_call_details**: Get details for a specific call
-- **get_meeting_details**: Get details for a specific meeting
 - **list_calls**: List MiiTel call history
-- **list_synced_contacts**: List CRM contacts
 - **list_online_meetings**: List online meeting history
+- **get_meeting_details**: Get details for a specific meeting
 - **list_miitel_users**: List MiiTel account users
+- **list_synced_contacts**: List CRM contacts
 
 
 ## 💬 Prompt Examples

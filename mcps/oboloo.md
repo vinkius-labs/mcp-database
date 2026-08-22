@@ -32,10 +32,10 @@ Connect your **Oboloo** account to any AI agent and manage procurement operation
 - **list_approvals**: List pending approvals
 - **list_risks**: List supplier risks
 - **list_suppliers**: List all suppliers
-- **list_categories**: List spend categories
-- **list_contracts**: List all contracts
 - **list_projects**: List procurement projects
 - **list_savings**: List savings
+- **list_categories**: List spend categories
+- **list_contracts**: List all contracts
 
 
 ## 💬 Prompt Examples

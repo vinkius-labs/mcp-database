@@ -28,18 +28,13 @@ Connect your **PDF Munk** account to any AI agent and simplify your document gen
 
 
 ## Available Tools (12)
-- **add_watermark**: Add watermark to a PDF or image
 - **check_pdfmunk_status**: Verify API connectivity
 - **compress_pdf**: Compress PDF to reduce file size
-- **parse_pdf**: Parse PDF to structured JSON
 - **split_pdf**: Split a PDF into multiple documents
 - **unlock_pdf**: Unlock a password-protected PDF
 - **generate_image_from_html**: Supports custom dimensions and Google Fonts integration.
 
 Generate image from raw HTML content
-- **generate_image_from_url**: Ideal for thumbnails, social cards, and OG images. Supports custom width, height, and quality settings.
-
-Generate screenshot image from a webpage URL
 - **generate_pdf_from_html**: Supports custom CSS, paper size, and dynamic template parameters.
 
 Generate PDF from raw HTML content
@@ -48,6 +43,11 @@ Generate PDF from raw HTML content
 Generate PDF from a webpage URL
 - **lock_pdf**: Lock a PDF with a password
 - **merge_pdfs**: Merge multiple PDFs into one document
+- **add_watermark**: Add watermark to a PDF or image
+- **generate_image_from_url**: Ideal for thumbnails, social cards, and OG images. Supports custom width, height, and quality settings.
+
+Generate screenshot image from a webpage URL
+- **parse_pdf**: Parse PDF to structured JSON
 
 
 ## 💬 Prompt Examples

@@ -34,13 +34,13 @@ Connect your **Kavkom** account to any AI agent and manage phone communications 
 
 
 ## Available Tools (7)
-- **create_contact**: Add a new contact
 - **get_call_details**: Get details for a specific call
 - **list_calls**: List Kavkom call history
 - **list_crm_contacts**: List synced contacts
-- **list_sms_history**: List sent and received SMS
 - **list_team_members**: List account users
 - **send_sms_message**: Send an SMS message
+- **create_contact**: Add a new contact
+- **list_sms_history**: List sent and received SMS
 
 
 ## 💬 Prompt Examples

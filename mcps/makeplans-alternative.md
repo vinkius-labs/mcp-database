@@ -21,13 +21,13 @@ Connect your MakePlans account to your AI agent. Manage bookings, list services,
 - **get_service**: Get details for a specific service
 - **list_bookings**: List all bookings in MakePlans
 - **list_people**: List people (staff)
+- **list_available_slots**: List available time slots for a service
 - **list_resources**: g., rooms, equipment).
 
 List resources
 - **list_services**: g., "Consultation", "Haircut").
 
 List available services
-- **list_available_slots**: List available time slots for a service
 
 
 ## 💬 Prompt Examples

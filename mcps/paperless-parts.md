@@ -41,7 +41,6 @@ Create a new account
 - **create_contact**: Requires a JSON string containing the contact details.
 
 Create a new contact
-- **get_contact**: Get a specific contact by ID
 - **get_order**: Get a specific order by ID
 - **get_quote**: Get a specific quote by ID
 - **list_contacts**: List contacts from Paperless Parts
@@ -49,8 +48,9 @@ Create a new contact
 - **list_orders**: List orders from Paperless Parts
 - **list_quotes**: List quotes from Paperless Parts
 - **update_quote_status**: Update the status of a specific quote
-- **get_account**: Get a specific account by ID
 - **list_accounts**: List accounts from Paperless Parts
+- **get_account**: Get a specific account by ID
+- **get_contact**: Get a specific contact by ID
 
 
 ## 💬 Prompt Examples

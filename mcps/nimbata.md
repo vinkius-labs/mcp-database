@@ -37,17 +37,17 @@ No more manual spreadsheet exporting for basic check-ins. Your AI acts as a dedi
 
 ## Available Tools (12)
 - **create_source**: Create a tracking source
-- **get_call_details**: Get call details
 - **get_number**: Get number details
 - **get_source_report**: Get source report
+- **get_call_report**: Get call report
+- **get_source**: Get source details
+- **check_nimbata_status**: Verify connectivity
+- **get_call_details**: Get call details
+- **get_call_recording**: Get recording
 - **list_calls**: List calls
 - **list_numbers**: List tracking numbers
 - **list_sources**: List tracking sources
 - **search_calls**: Search calls
-- **get_call_recording**: Get recording
-- **get_call_report**: Get call report
-- **get_source**: Get source details
-- **check_nimbata_status**: Verify connectivity
 
 
 ## 💬 Prompt Examples

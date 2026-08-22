@@ -35,19 +35,19 @@ Connect your **Megaventory** account to any AI agent and manage inventory and or
 
 ## Available Tools (14)
 - **list_categories**: List product categories
-- **update_sales_order**: Update sales order
-- **list_supplier_clients**: List suppliers and clients
+- **get_sales_order**: Get sales order details
 - **list_locations**: List inventory locations
+- **list_purchase_orders**: List purchase orders
+- **get_stock_by_product**: Get stock by product
+- **list_sales_orders**: List sales orders
+- **update_supplier_client**: Update supplier/client
+- **check_megaventory_status**: Verify connectivity
+- **get_inventory_stock**: Get all inventory stock
 - **get_product**: Get product by SKU
 - **list_products**: List products
-- **list_purchase_orders**: List purchase orders
-- **get_sales_order**: Get sales order details
-- **list_sales_orders**: List sales orders
-- **get_stock_by_product**: Get stock by product
-- **get_inventory_stock**: Get all inventory stock
-- **update_supplier_client**: Update supplier/client
+- **list_supplier_clients**: List suppliers and clients
 - **update_product**: Update a product
-- **check_megaventory_status**: Verify connectivity
+- **update_sales_order**: Update sales order
 
 
 ## 💬 Prompt Examples

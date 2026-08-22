@@ -34,18 +34,18 @@ Connect your **Maildroppa** account to any AI agent and manage email marketing t
 
 
 ## Available Tools (12)
-- **add_tag_to_subscriber**: Apply a tag to a subscriber
 - **create_tag**: Create a new tag type
-- **get_subscriber_details**: Get details for a specific subscriber
-- **list_sign_up_forms**: List sign-up forms
 - **list_segments**: List all subscriber segments
+- **list_sign_up_forms**: List sign-up forms
 - **list_subscribers**: List mailing list subscribers
 - **list_tags**: List all available tags
 - **update_subscriber_field**: Update a specific field for a subscriber
-- **update_subscriber**: Update subscriber information
+- **list_custom_fields**: List all custom field types
+- **add_tag_to_subscriber**: Apply a tag to a subscriber
 - **create_segment**: Create a new subscriber segment
 - **create_subscriber**: Add a new subscriber
-- **list_custom_fields**: List all custom field types
+- **get_subscriber_details**: Get details for a specific subscriber
+- **update_subscriber**: Update subscriber information
 
 
 ## 💬 Prompt Examples

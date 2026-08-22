@@ -35,16 +35,16 @@ Connect your **Kiwify** account to any AI agent and manage digital product sales
 
 ## Available Tools (9)
 - **create_notification_webhook**: Create a new webhook
-- **delete_notification_webhook**: Remove an existing webhook
 - **get_account_summary**: Get account information
 - **get_product_details**: Get details for a specific product
+- **list_configured_webhooks**: List your webhooks
+- **delete_notification_webhook**: Remove an existing webhook
 - **get_sale_details**: Get details for a specific sale
+- **list_active_subscriptions**: List recurring subscriptions
 - **list_products**: List your Kiwify products
 - **list_sales_history**: Supports filtering.
 
 List recent sales and transactions
-- **list_active_subscriptions**: List recurring subscriptions
-- **list_configured_webhooks**: List your webhooks
 
 
 ## 💬 Prompt Examples
