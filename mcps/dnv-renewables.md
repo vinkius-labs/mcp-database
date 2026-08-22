@@ -44,37 +44,37 @@ Your AI becomes a renewable energy analyst, helping you assess sites, estimate y
 
 
 ## Available Tools (11)
-- **check_data_availability**: Returns available datasets, time periods, and variables. Essential first step before ordering data.
-
-Check data availability for wind and solar at a specific location
 - **download_order_data**: Order must have status success. Files auto-deleted after 12 hours.
 
 Download completed order data file
 - **get_energy_yield_estimate**: Uses site-specific wind data and turbine parameters to estimate annual energy production.
 
 Get energy yield estimate for a wind turbine at a specific location
-- **get_order_status**: Orders go from pending to processing to success. Once success, a download URL is provided. Files auto-delete after 12 hours.
-
-Check status of a previously placed data order
-- **list_available_datasets**: Over 40 datasets available.
-
-List all available climate and renewable energy datasets
-- **list_all_orders**: List all data orders in your account
-- **locate_data_nodes**: Useful for understanding spatial resolution and coverage.
-
-Locate data nodes for a specific dataset
 - **get_mesoscale_climate_data**: Useful for long-term climate analysis.
 
 Get mesoscale climate data for a location
-- **place_data_order**: The API processes the request and generates a downloadable file. Use getOrderStatus to check when complete.
-
-Place an order for climate data extraction
 - **get_solar_resource_data**: Essential for PV system design and energy yield analysis. Use when user needs solar irradiance data, is assessing solar resource potential, or wants solar data for PV modeling.
 
 Get solar resource data for a specific location
 - **get_wind_resource_data**: Essential for wind farm site assessment and energy yield analysis. Use when user needs wind data for a site, is assessing wind resource potential, or wants wind data for energy modeling.
 
 Get wind resource data for a specific location
+- **check_data_availability**: Returns available datasets, time periods, and variables. Essential first step before ordering data.
+
+Check data availability for wind and solar at a specific location
+- **get_order_status**: Orders go from pending to processing to success. Once success, a download URL is provided. Files auto-delete after 12 hours.
+
+Check status of a previously placed data order
+- **list_all_orders**: List all data orders in your account
+- **list_available_datasets**: Over 40 datasets available.
+
+List all available climate and renewable energy datasets
+- **locate_data_nodes**: Useful for understanding spatial resolution and coverage.
+
+Locate data nodes for a specific dataset
+- **place_data_order**: The API processes the request and generates a downloadable file. Use getOrderStatus to check when complete.
+
+Place an order for climate data extraction
 
 
 ## 💬 Prompt Examples

@@ -35,14 +35,14 @@ Integrate **Documo**, the next-generation digital fax and document workflow plat
 ## Available Tools (10)
 - **get_documo_account_metadata**: Retrieve metadata and usage limits for your Documo account
 - **get_fax_details**: Get detailed information and status for a specific fax
-- **quick_fax_volume_audit**: Retrieve a high-level summary of fax transmissions and success rates
+- **list_documo_users**: List all users registered in your Documo organization
 - **list_failed_fax_deliveries**: Identify faxes that failed to transmit correctly (mock logic)
+- **search_faxes_by_recipient**: Search for faxes matching a recipient number or identifier
 - **list_assigned_fax_numbers**: List all fax numbers assigned to your Documo account
 - **list_digital_faxes**: List all digital faxes in your Documo/mFax account
-- **list_received_digital_faxes**: Identify faxes that have been received by your organization
+- **quick_fax_volume_audit**: Retrieve a high-level summary of fax transmissions and success rates
 - **list_latest_fax_transmissions**: Identify the most recently sent or received faxes
-- **list_documo_users**: List all users registered in your Documo organization
-- **search_faxes_by_recipient**: Search for faxes matching a recipient number or identifier
+- **list_received_digital_faxes**: Identify faxes that have been received by your organization
 
 
 ## 💬 Prompt Examples

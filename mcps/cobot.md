@@ -36,14 +36,14 @@ Connect your **Cobot** account to any AI agent and take full control of your cow
 
 
 ## Available Tools (8)
-- **create_new_booking**: Create a new booking for a resource
 - **get_membership_details**: Get detailed information for a specific membership
-- **get_cobot_space_info**: Retrieve core information and metadata about the coworking space
-- **list_space_bookings**: List all resource bookings within a specific date range
-- **list_cobot_invoices**: List all membership invoices and their payment status
-- **list_cobot_memberships**: List all active memberships in the coworking space
 - **list_membership_plans**: List all available membership plans in the space
 - **list_space_resources**: List all bookable resources (desks, rooms) in the space
+- **create_new_booking**: Create a new booking for a resource
+- **get_cobot_space_info**: Retrieve core information and metadata about the coworking space
+- **list_cobot_invoices**: List all membership invoices and their payment status
+- **list_cobot_memberships**: List all active memberships in the coworking space
+- **list_space_bookings**: List all resource bookings within a specific date range
 
 
 ## 💬 Prompt Examples

@@ -36,16 +36,16 @@ No more manual scrubbing through attendee exports or complex navigation in the p
 
 
 ## Available Tools (12)
+- **get_account_info**: Get Corsizio account details
 - **get_attendee_details**: Get details for a specific attendee
+- **list_event_locations**: List all event locations
 - **get_event_details**: Get details for a specific event
-- **list_event_categories**: List all event categories
+- **list_activity_logs**: List account activity logs
 - **list_discount_coupons**: List all discount coupons
+- **list_event_categories**: List all event categories
 - **list_event_feedback**: List participant feedback
 - **list_instructors**: List all instructors
-- **list_event_locations**: List all event locations
-- **list_activity_logs**: List account activity logs
 - **list_payouts**: List account payouts
-- **get_account_info**: Get Corsizio account details
 - **list_attendees**: List all event attendees
 - **list_events**: Supports optional query parameters for filtering.
 

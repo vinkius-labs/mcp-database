@@ -34,15 +34,15 @@ Integrate **Dutchie Plus**, the enterprise-grade e-commerce platform for cannabi
 
 ## Available Tools (10)
 - **get_dutchie_plus_metadata**: Retrieve metadata and limits for your Dutchie Plus account
-- **quick_enterprise_volume_audit**: Retrieve a high-level summary of order activity across multiple locations (mock logic)
-- **list_pending_fulfillment_orders**: Identify online orders that are currently awaiting fulfillment or ready for pickup
-- **list_synced_brands**: List all product brands synchronized in your enterprise account
 - **list_dispensary_locations**: List all dispensary locations managed in your Dutchie Plus account
-- **list_online_menus**: List all online menus configured for a specific location
 - **list_enterprise_orders**: List all recent online orders for a specific dispensary location
+- **list_pending_fulfillment_orders**: Identify online orders that are currently awaiting fulfillment or ready for pickup
+- **quick_enterprise_volume_audit**: Retrieve a high-level summary of order activity across multiple locations (mock logic)
+- **list_online_menus**: List all online menus configured for a specific location
+- **list_synced_brands**: List all product brands synchronized in your enterprise account
 - **search_dispensaries_by_city**: Search for dispensary locations using a city or name keyword
-- **get_location_details**: Get detailed settings and information for a specific dispensary location
 - **get_order_details**: Get detailed information for a specific online order
+- **get_location_details**: Get detailed settings and information for a specific dispensary location
 
 
 ## 💬 Prompt Examples

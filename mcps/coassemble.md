@@ -36,14 +36,14 @@ Connect your **Coassemble** account to any AI agent and take full control of you
 
 
 ## Available Tools (8)
+- **get_member_group_associations**: Get all groups a specific member belongs to
+- **get_training_completion_results**: List training results and grades for enrolments
+- **list_coassemble_courses**: List all training courses in the Coassemble workspace
 - **enroll_member_in_course**: Enroll a specific member into a course or group
 - **get_course_training_details**: Get detailed information for a specific course
-- **get_member_group_associations**: Get all groups a specific member belongs to
-- **list_coassemble_courses**: List all training courses in the Coassemble workspace
 - **list_coassemble_enrolments**: List all course enrolments
 - **list_coassemble_groups**: List all student groups in the workspace
 - **list_coassemble_members**: List all members (users) in the workspace
-- **get_training_completion_results**: List training results and grades for enrolments
 
 
 ## 💬 Prompt Examples

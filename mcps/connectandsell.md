@@ -32,22 +32,22 @@ Connect your conversational agent to the established **ConnectAndSell** platform
 
 
 ## Available Tools (6)
+- **get_performance_summary**: Supports optional date range filtering.
+
+Retrieve a summary of sales calling performance metrics
 - **list_assigned_lists**: Returns the prospect lists assigned for outbound calling sessions.
 
 Retrieve the calling lists assigned to a specific user
 - **list_conversations**: Supports date filtering in YYYY-MM-DD format.
 
 Retrieve history of successful connections and conversations
-- **get_performance_summary**: Supports optional date range filtering.
+- **sync_to_crm**: g. Salesforce, HubSpot). Requires the call ID and CRM type.
 
-Retrieve a summary of sales calling performance metrics
+Manually trigger a sync of call data to your connected CRM
 - **list_call_attempts**: Supports date filtering.
 
 Retrieve history of all outbound call attempts
 - **list_cas_users**: Retrieve all users in the ConnectAndSell account
-- **sync_to_crm**: g. Salesforce, HubSpot). Requires the call ID and CRM type.
-
-Manually trigger a sync of call data to your connected CRM
 
 
 ## 💬 Prompt Examples

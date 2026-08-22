@@ -36,8 +36,8 @@ Connect your AI assistant to **CommPeak**, the cloud communication platform with
 - **get_lead_details**: Retrieve detailed information about a specific lead
 - **get_sms_status**: Retrieve the status of a previously sent SMS
 - **list_dialer_campaigns**: Retrieve a list of all dialer campaigns
-- **delete_lead**: Permanently remove a lead from the system
 - **get_campaign_details**: Retrieve detailed information about a specific campaign
+- **delete_lead**: Permanently remove a lead from the system
 - **list_leads**: Retrieve leads from a specific campaign
 - **list_recent_sms**: Retrieve a list of recently sent SMS messages
 - **send_sms**: Send a text message via CommPeak SMS API

@@ -34,13 +34,13 @@ Integrate **EasyPractice**, the leading clinic management platform for therapist
 
 ## Available Tools (10)
 - **get_easypractice_account_metadata**: Retrieve metadata and usage limits for your EasyPractice account
-- **get_appointment_details**: Get detailed information for a specific appointment
-- **get_client_details**: Get detailed profile and appointment history for a specific client
 - **list_clinic_appointments**: List all scheduled appointments in your clinic
 - **list_clinic_clients**: List all clients registered in your EasyPractice clinic
 - **list_clinic_invoices**: List all invoices issued by your clinic
-- **list_latest_appointments**: Identify the most recently updated or scheduled appointments
 - **list_clinic_services**: List all services and session types offered by your clinic
+- **list_latest_appointments**: Identify the most recently updated or scheduled appointments
+- **get_appointment_details**: Get detailed information for a specific appointment
+- **get_client_details**: Get detailed profile and appointment history for a specific client
 - **search_clinic_clients**: Search for clients using a name or email keyword
 - **quick_clinic_volume_audit**: Retrieve a high-level summary of client and appointment activity
 

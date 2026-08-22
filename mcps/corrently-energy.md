@@ -63,23 +63,6 @@ EXAMPLES:
 - "I drove 1000km, what is the CO₂ compensation?" → call with co2_kg=180, activity_type="car"
 
 Calculate CO₂ offset requirements and available compensation options
-- **get_co2_meter**: Shows grams of CO₂ per kWh right now.
-
-USE WHEN:
-- User asks about current/real-time CO₂ levels in the electricity grid
-- User wants instant carbon intensity data
-- User needs to know how clean/dirty the electricity is right now
-- User asks about live carbon emissions from power
-
-PARAMETERS:
-- zip (REQUIRED): German zip code (Postleitzahl) - exactly 5 digits
-
-EXAMPLES:
-- "What is the current CO₂ intensity in Berlin 10115?" → call with zip="10115"
-- "Show me real-time carbon levels for Munich 80331" → call with zip="80331"
-- "Current CO₂ emissions from electricity in Cologne" → call with zip="50667"
-
-Get real-time CO₂ meter readings for a German zip code
 - **create_energy_schedule**: Schedules are optimized based on electricity prices, solar generation peaks, CO₂ emissions, or comfort levels.
 
 USE WHEN:
@@ -117,21 +100,23 @@ EXAMPLES:
 - "When should I use high-power appliances today?" → call with zip="70173", hours=2
 
 Find the best hours for energy consumption based on renewable availability and low CO₂ emissions
-- **get_co2_prediction**: Shows how carbon-intensive the power grid will be over time.
+- **get_co2_meter**: Shows grams of CO₂ per kWh right now.
 
 USE WHEN:
-- User asks about CO₂ emissions or carbon footprint of electricity
-- User wants to know when electricity is cleanest/lowest emissions
-- User needs carbon intensity data for a location
+- User asks about current/real-time CO₂ levels in the electricity grid
+- User wants instant carbon intensity data
+- User needs to know how clean/dirty the electricity is right now
+- User asks about live carbon emissions from power
 
 PARAMETERS:
 - zip (REQUIRED): German zip code (Postleitzahl) - exactly 5 digits
 
 EXAMPLES:
-- "What are the CO₂ emissions for Hamburg 20095?" → call with zip="20095"
-- "Show carbon intensity for Frankfurt 60311" → call with zip="60311"
+- "What is the current CO₂ intensity in Berlin 10115?" → call with zip="10115"
+- "Show me real-time carbon levels for Munich 80331" → call with zip="80331"
+- "Current CO₂ emissions from electricity in Cologne" → call with zip="50667"
 
-Get CO₂ emissions forecast for electricity consumption in Germany
+Get real-time CO₂ meter readings for a German zip code
 - **get_dispatch**: Shows how much renewable energy is being fed into the grid and its composition.
 
 USE WHEN:
@@ -149,20 +134,6 @@ EXAMPLES:
 - "Wind and solar dispatch for Hamburg 20095" → call with zip="20095"
 
 Get renewable energy dispatch information for a German zip code
-- **get_gsi_prediction**: USE WHEN:
-- User asks about green energy availability or renewable power forecast
-- User wants to know the GrünstromIndex or GSI for a location
-- User needs to understand when clean energy is most abundant
-
-PARAMETERS:
-- zip (REQUIRED): German zip code (Postleitzahl) - exactly 5 digits, e.g. "10115" for Berlin
-- token (OPTIONAL): API token for higher rate limits - auto-provided from credentials
-
-EXAMPLES:
-- "What is the renewable energy forecast for Berlin 10115?" → call with zip="10115"
-- "Show me the green power index for Munich 80331" → call with zip="80331"
-
-Get GrünstromIndex (Green Power Index) prediction for a German zip code
 - **get_market_data**: Includes wholesale prices and regional cost data.
 
 USE WHEN:
@@ -180,20 +151,6 @@ EXAMPLES:
 - "When is electricity cheapest today in Stuttgart 70173?" → call with zip="70173"
 
 Get current electricity market data and pricing information for a German location
-- **get_merit_order_list**: This shows which energy sources are being used to generate electricity and their cost efficiency.
-
-USE WHEN:
-- User asks about the current energy generation mix
-- User wants to understand which power plants are active
-- User needs merit order data for market analysis
-- User asks about energy source prioritization in the grid
-
-EXAMPLES:
-- "Show me the current merit order list" → call with no extra params
-- "What energy sources are currently generating power?" → call with no extra params
-- "Merit order ranking for Germany" → call with no extra params
-
-Get the current merit order list for the German energy market
 - **get_phev_charge_or_fuel**: USE WHEN:
 - User asks whether to charge their PHEV or use fuel
 - PHEV driver needs advice on optimal energy source
@@ -227,6 +184,49 @@ EXAMPLES:
 - "Expected PV output for 3.5 kWp in Hamburg 20095" → call with zip="20095", kwp=3.5
 
 Get solar energy generation forecast for a photovoltaic installation
+- **get_co2_prediction**: Shows how carbon-intensive the power grid will be over time.
+
+USE WHEN:
+- User asks about CO₂ emissions or carbon footprint of electricity
+- User wants to know when electricity is cleanest/lowest emissions
+- User needs carbon intensity data for a location
+
+PARAMETERS:
+- zip (REQUIRED): German zip code (Postleitzahl) - exactly 5 digits
+
+EXAMPLES:
+- "What are the CO₂ emissions for Hamburg 20095?" → call with zip="20095"
+- "Show carbon intensity for Frankfurt 60311" → call with zip="60311"
+
+Get CO₂ emissions forecast for electricity consumption in Germany
+- **get_gsi_prediction**: USE WHEN:
+- User asks about green energy availability or renewable power forecast
+- User wants to know the GrünstromIndex or GSI for a location
+- User needs to understand when clean energy is most abundant
+
+PARAMETERS:
+- zip (REQUIRED): German zip code (Postleitzahl) - exactly 5 digits, e.g. "10115" for Berlin
+- token (OPTIONAL): API token for higher rate limits - auto-provided from credentials
+
+EXAMPLES:
+- "What is the renewable energy forecast for Berlin 10115?" → call with zip="10115"
+- "Show me the green power index for Munich 80331" → call with zip="80331"
+
+Get GrünstromIndex (Green Power Index) prediction for a German zip code
+- **get_merit_order_list**: This shows which energy sources are being used to generate electricity and their cost efficiency.
+
+USE WHEN:
+- User asks about the current energy generation mix
+- User wants to understand which power plants are active
+- User needs merit order data for market analysis
+- User asks about energy source prioritization in the grid
+
+EXAMPLES:
+- "Show me the current merit order list" → call with no extra params
+- "What energy sources are currently generating power?" → call with no extra params
+- "Merit order ranking for Germany" → call with no extra params
+
+Get the current merit order list for the German energy market
 - **get_stromkonto_balance**: Shows credits, green energy certificates, and account status.
 
 USE WHEN:

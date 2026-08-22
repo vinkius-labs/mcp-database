@@ -36,14 +36,14 @@ Connect your **Clubspeed** account to any AI agent and take full control of your
 
 
 ## Available Tools (8)
+- **get_customer_venue_details**: Get detailed information for a specific customer
 - **get_reservation_details**: Get detailed information for a specific reservation
+- **list_customer_waivers**: List signed liability waivers
+- **list_race_heats**: List upcoming and past race heats
+- **list_venue_customers**: List all customers (racers) registered at the venue
+- **list_venue_reservations**: List all event reservations and bookings
 - **list_venue_activities**: List all activities available at the venue
 - **get_clubspeed_account_info**: Retrieve core account and venue information
-- **get_customer_venue_details**: Get detailed information for a specific customer
-- **list_venue_customers**: List all customers (racers) registered at the venue
-- **list_race_heats**: List upcoming and past race heats
-- **list_venue_reservations**: List all event reservations and bookings
-- **list_customer_waivers**: List signed liability waivers
 
 
 ## 💬 Prompt Examples

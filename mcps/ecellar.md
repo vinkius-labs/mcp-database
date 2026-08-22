@@ -30,32 +30,32 @@ Connect your **eCellar** winery to any AI agent and manage your premium DTC oper
 
 
 ## Available Tools (10)
-- **search_customers**: Returns profile, lifetime spend, wine club membership, tasting room visits, and purchase history. Core CRM data for personalized wine recommendations.
+- **list_club_members**: For retention and engagement tracking.
 
-Search wine customers
+List club members
+- **list_inventory**: Multi-location inventory management.
+
+List wine inventory
 - **list_products**: The product catalog powering ecommerce and POS.
 
 List wine catalog
+- **search_customers**: Returns profile, lifetime spend, wine club membership, tasting room visits, and purchase history. Core CRM data for personalized wine recommendations.
+
+Search wine customers
 - **get_product**: Get wine details
 - **list_clubs**: Essential for DTC revenue planning.
 
 List wine clubs
-- **list_club_members**: For retention and engagement tracking.
-
-List club members
 - **list_reservations**: Filter by date for daily planning.
 
 List tasting reservations
-- **list_inventory**: Multi-location inventory management.
-
-List wine inventory
 - **get_customer**: For VIP identification and personalized service.
 
 Get customer profile
+- **get_order**: Get order details
 - **list_orders**: With line items, totals, payment, and fulfillment status.
 
 List wine orders
-- **get_order**: Get order details
 
 
 ## 💬 Prompt Examples

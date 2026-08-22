@@ -32,13 +32,13 @@ Connect your AI assistant to **ComboCurve**, the cloud-based energy platform for
 
 
 ## Available Tools (10)
-- **get_forecast**: Retrieve details of a specific forecast
 - **get_monthly_volumes**: Retrieve monthly forecasted volumes for a project and forecast
-- **get_project**: Retrieve details of a specific project
 - **get_scenario_details**: Retrieve details of a specific scenario
 - **get_well**: Retrieve detailed information about a specific well
-- **list_forecasts**: Retrieve a list of forecasts for a specific project
 - **list_projects**: Retrieve a list of projects in ComboCurve
+- **get_forecast**: Retrieve details of a specific forecast
+- **get_project**: Retrieve details of a specific project
+- **list_forecasts**: Retrieve a list of forecasts for a specific project
 - **list_scenarios**: Retrieve a list of scenarios for a specific project
 - **list_wells**: Retrieve a list of wells in ComboCurve
 - **search_wells_by_name**: Search for wells by name or chosen ID

@@ -33,36 +33,36 @@ Integrate **DealMachine**, the leading CRM for real estate investors, directly i
 
 
 ## Available Tools (10)
+- **search_leads_by_address**: Matches the search term against property addresses and owner names using partial case-insensitive matching.
+
+Search for leads by address or owner name
 - **list_marketing_campaigns**: Returns campaign summaries including send dates, recipient counts, and engagement metrics.
 
 List all direct mail and marketing campaigns
-- **add_new_lead**: Persists a new lead based on property address, initiating property data resolution and owner identification.
-
-Add a new real estate lead to your CRM
 - **get_account_details**: Returns account-level metadata including subscription plan, credit balance, and organizational settings.
 
 Retrieve metadata and plan limits for your DealMachine account
+- **add_new_lead**: Persists a new lead based on property address, initiating property data resolution and owner identification.
+
+Add a new real estate lead to your CRM
 - **get_lead_details**: Resolves associated property details, owner contact information, and the history of marketing actions taken.
 
 Get detailed information for a specific real estate lead
 - **get_property_details**: Resolves technical data such as estimated equity, mortgage information, deed history, and detailed owner metadata.
 
 Get full data for a specific property including owner and equity
-- **list_real_estate_leads**: Returns lead metadata including property addresses, owner names, and current lead status (e.g., potential, contacted).
-
-List all real estate leads in your DealMachine account
-- **list_tracked_properties**: Returns address data and internal property identifiers.
-
-List all properties tracked in the system
-- **list_lead_tags**: Returns tag names and identifiers used for filtering leads and properties.
-
-List all tags used to categorize leads and properties
 - **list_driving_teams**: Returns a list of teams, active drivers, and their respective roles within the DealMachine workspace.
 
 List all teams and members associated with your account
-- **search_leads_by_address**: Matches the search term against property addresses and owner names using partial case-insensitive matching.
+- **list_lead_tags**: Returns tag names and identifiers used for filtering leads and properties.
 
-Search for leads by address or owner name
+List all tags used to categorize leads and properties
+- **list_tracked_properties**: Returns address data and internal property identifiers.
+
+List all properties tracked in the system
+- **list_real_estate_leads**: Returns lead metadata including property addresses, owner names, and current lead status (e.g., potential, contacted).
+
+List all real estate leads in your DealMachine account
 
 
 ## 💬 Prompt Examples

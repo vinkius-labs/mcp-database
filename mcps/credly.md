@@ -33,16 +33,16 @@ Integrate **Credly**, the world's largest digital credential network, directly i
 
 
 ## Available Tools (10)
+- **list_badge_skills**: List all skills mapped to badges in the system
+- **list_org_members**: List all members of your organization on Credly
 - **get_badge_details**: Get detailed information for a specific issued badge
 - **get_organization_info**: Get metadata for a specific organization
 - **get_template_details**: Get full design and criteria for a badge template
-- **list_issued_badges**: List all badges issued by your organization
 - **list_authorized_issuers**: List people authorized to issue badges
-- **list_org_members**: List all members of your organization on Credly
-- **list_connected_organizations**: List organizations connected to your account
 - **list_badge_recipients**: List people who have received badges
-- **list_badge_skills**: List all skills mapped to badges in the system
 - **list_badge_templates**: List all badge templates available for issuance
+- **list_connected_organizations**: List organizations connected to your account
+- **list_issued_badges**: List all badges issued by your organization
 
 
 ## 💬 Prompt Examples

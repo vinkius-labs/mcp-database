@@ -33,16 +33,16 @@ Integrate **Craftnet**, the developer services platform for Craft CMS, directly 
 
 
 ## Available Tools (10)
-- **get_plugin_details**: Get detailed information for a specific plugin
-- **list_plugin_categories**: List all plugin categories on the Craft Store
-- **list_cms_licenses**: List all Craft CMS licenses in your account
 - **get_account_details**: Retrieve metadata for your Craftnet account
-- **list_craftnet_users**: List users associated with your Craftnet account
-- **search_plugins_by_name**: Search for plugins by name keyword
+- **get_plugin_details**: Get detailed information for a specific plugin
 - **list_payout_history**: List historical payouts for plugin developers
 - **list_plugin_licenses**: List all plugin licenses purchased or managed
 - **list_plugins**: List all plugins published on Craftnet
 - **list_sales_history**: List recent sales transactions
+- **list_cms_licenses**: List all Craft CMS licenses in your account
+- **list_plugin_categories**: List all plugin categories on the Craft Store
+- **list_craftnet_users**: List users associated with your Craftnet account
+- **search_plugins_by_name**: Search for plugins by name keyword
 
 
 ## 💬 Prompt Examples
