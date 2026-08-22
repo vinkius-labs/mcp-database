@@ -22,11 +22,11 @@ Shipping companies, surfers, fisheries, coastal engineers, yacht clubs, and nava
 
 
 ## Available Tools (3)
+- **get_ocean_currents**: Get ocean current velocity and sea surface temperature
+- **get_daily_marine**: Get daily marine weather summary
 - **get_marine_forecast**: Provides hourly forecast data for maritime planning.
 
 Get marine wave forecast at 5km resolution
-- **get_ocean_currents**: Get ocean current velocity and sea surface temperature
-- **get_daily_marine**: Get daily marine weather summary
 
 
 ## 💬 Prompt Examples

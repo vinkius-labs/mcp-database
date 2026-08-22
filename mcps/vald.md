@@ -36,17 +36,17 @@ Your AI agent becomes the direct line to your massive vector knowledge base.
 
 
 ## Available Tools (6)
-- **insert_vector**: Provide a unique ID and the vector as a JSON array.
+- **update_vector**: Provide the existing ID and new vector array.
 
-Inserts a new vector into the Vald index
+Updates an existing vector in the Vald index
 - **delete_vector**: This action is irreversible.
 
 Permanently removes a vector from the Vald index
 - **get_engine_info**: Retrieves operational information and health of the Vald engine
 - **get_vector_details**: Retrieves the raw vector data for a specific ID
-- **update_vector**: Provide the existing ID and new vector array.
+- **insert_vector**: Provide a unique ID and the vector as a JSON array.
 
-Updates an existing vector in the Vald index
+Inserts a new vector into the Vald index
 - **search_vectors**: Provide a query vector as a JSON array of floats.
 
 Performs a nearest neighbor vector similarity search

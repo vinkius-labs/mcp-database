@@ -37,31 +37,31 @@ Parklio is a forward-looking company dedicated to developing smart parking hardw
 - **create_gateway**: Requires lot_id, name, and type (e.g., entry_barrier, exit_camera, lpr_reader). Use this when installing new physical hardware.
 
 Register a new hardware gateway (barrier, reader) to a parking lot
-- **list_gateways**: Use this to audit hardware health and locate offline devices.
-
-List all hardware gateways (barriers, cameras) connected to Parklio
 - **list_displays**: Useful for auditing what drivers see when entering lots.
 
 List digital display screens deployed in parking lots
+- **list_gateways**: Use this to audit hardware health and locate offline devices.
+
+List all hardware gateways (barriers, cameras) connected to Parklio
 - **run_gateway_operation**: Common operations: open_barrier, close_barrier, reboot, reset_error. Use this for remote troubleshooting or manual override of barriers.
 
 Execute a remote operation on a specific gateway device
-- **pms_login**: Returns an authentication token valid for subsequent API calls. Use this to refresh your session token before making other requests.
-
-Authenticate with the Parklio Parking Management System to get a token
-- **get_activity_logs**: Optional lot_id filter. Use this for security auditing and operational troubleshooting.
-
-View system activity and audit logs
-- **get_lot_details**: Get detailed configuration and statistics for a specific parking lot
-- **list_lots**: Essential for discovering available lots before managing hardware.
-
-List all managed parking lots in the Parklio system
-- **get_system_status**: Use this for a high-level operational check.
-
-Get the overall health and operational status of the Parklio system
 - **update_display_message**: Use for maintenance alerts ("Lot Full", "System Maintenance", "Welcome to VIP Parking").
 
 Update the text shown on a digital display screen in a parking lot
+- **get_activity_logs**: Optional lot_id filter. Use this for security auditing and operational troubleshooting.
+
+View system activity and audit logs
+- **pms_login**: Returns an authentication token valid for subsequent API calls. Use this to refresh your session token before making other requests.
+
+Authenticate with the Parklio Parking Management System to get a token
+- **get_lot_details**: Get detailed configuration and statistics for a specific parking lot
+- **get_system_status**: Use this for a high-level operational check.
+
+Get the overall health and operational status of the Parklio system
+- **list_lots**: Essential for discovering available lots before managing hardware.
+
+List all managed parking lots in the Parklio system
 
 
 ## 💬 Prompt Examples

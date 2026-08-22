@@ -23,27 +23,27 @@ DONKI (Database Of Notifications, Knowledge, Information) is NASA's comprehensiv
 
 
 ## Available Tools (7)
-- **get_solar_energetic_particles**: SEPs are dangerous to astronauts and can damage satellite electronics.
-
-Get Solar Energetic Particle (SEP) events from NASA DONKI
-- **get_cme**: CMEs are massive bursts of solar wind and magnetic fields from the Sun. Earth-directed CMEs cause geomagnetic storms and aurora. Default: last 30 days.
-
-Get Coronal Mass Ejection (CME) events from NASA DONKI
-- **get_solar_flares**: Classes: C (common), M (moderate), X (extreme). X-class flares cause radio blackouts and satellite disruption. Includes begin/peak/end times, active region, and instruments that detected it.
-
-Get solar flare events by class (C, M, X) from NASA DONKI
-- **get_geomagnetic_storms**: Includes Kp index and linked CME/shock data. Storms above Kp=7 are severe, Kp=9 is extreme. Affects power grids, GPS, satellites, and enables aurora at low latitudes.
-
-Get geomagnetic storm events from NASA DONKI
 - **get_interplanetary_shocks**: Shocks often precede geomagnetic storms and are caused by CME-driven disturbances in the solar wind.
 
 Get interplanetary shock wave events from NASA DONKI
-- **get_radiation_belt**: The Van Allen radiation belts can be energized during geomagnetic storms, posing risks to satellites in medium Earth orbit.
+- **get_cme**: CMEs are massive bursts of solar wind and magnetic fields from the Sun. Earth-directed CMEs cause geomagnetic storms and aurora. Default: last 30 days.
 
-Get radiation belt enhancement events from NASA DONKI
+Get Coronal Mass Ejection (CME) events from NASA DONKI
 - **get_donki_notifications**: A unified feed of all space weather events: CMEs, flares, storms, shocks, and radiation events. Good for a quick overview of recent solar activity.
 
 Get all recent DONKI space weather notifications
+- **get_geomagnetic_storms**: Includes Kp index and linked CME/shock data. Storms above Kp=7 are severe, Kp=9 is extreme. Affects power grids, GPS, satellites, and enables aurora at low latitudes.
+
+Get geomagnetic storm events from NASA DONKI
+- **get_radiation_belt**: The Van Allen radiation belts can be energized during geomagnetic storms, posing risks to satellites in medium Earth orbit.
+
+Get radiation belt enhancement events from NASA DONKI
+- **get_solar_energetic_particles**: SEPs are dangerous to astronauts and can damage satellite electronics.
+
+Get Solar Energetic Particle (SEP) events from NASA DONKI
+- **get_solar_flares**: Classes: C (common), M (moderate), X (extreme). X-class flares cause radio blackouts and satellite disruption. Includes begin/peak/end times, active region, and instruments that detected it.
+
+Get solar flare events by class (C, M, X) from NASA DONKI
 
 
 ## 💬 Prompt Examples

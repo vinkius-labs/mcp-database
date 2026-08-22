@@ -24,13 +24,13 @@ Two powerful resources in one server.
 
 
 ## Available Tools (4)
-- **search_media**: Covers every mission: Apollo, Space Shuttle, ISS, Hubble, Webb, Mars rovers, and more. Filter by media type and year range.
-
-Search NASA's image and video library — 140,000+ assets
 - **get_media_asset**: Use NASA IDs from search results.
 
 Get download URLs for a NASA media asset by its NASA ID
 - **get_media_metadata**: Get full metadata for a NASA media asset
+- **search_media**: Covers every mission: Apollo, Space Shuttle, ISS, Hubble, Webb, Mars rovers, and more. Filter by media type and year range.
+
+Search NASA's image and video library — 140,000+ assets
 - **search_patents**: NASA technologies have been adapted into thousands of commercial products — from memory foam to water purification systems.
 
 Search NASA patents and technology spinoffs available for licensing

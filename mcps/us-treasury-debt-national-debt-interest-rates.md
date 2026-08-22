@@ -21,21 +21,21 @@ U.S. Treasury debt data.
 
 
 ## Available Tools (5)
-- **get_national_debt**: S. national debt (Total Public Debt Outstanding) updated daily by the Treasury Department. Breaks down into Debt Held by the Public (marketable securities) and Intragovernmental Holdings (trust funds like Social Security). As of 2026, the national debt exceeds $39 trillion.
-
-Get the U.S. national debt to the penny — updated daily
-- **get_debt_history**: Format: YYYY-MM-DD. Useful for tracking debt growth over specific periods — fiscal years, election cycles, presidencies, economic crises.
-
-Get national debt for a specific date range
-- **get_public_debt_breakdown**: Shows both Debt Held by the Public and Intragovernmental Holdings.
-
-Get the Statement of Public Debt — breakdown by security type
 - **get_avg_interest_rates**: These rates reflect the cost of borrowing for the federal government. Updated monthly.
 
 Get average interest rates on U.S. Treasury securities
+- **get_debt_history**: Format: YYYY-MM-DD. Useful for tracking debt growth over specific periods — fiscal years, election cycles, presidencies, economic crises.
+
+Get national debt for a specific date range
+- **get_national_debt**: S. national debt (Total Public Debt Outstanding) updated daily by the Treasury Department. Breaks down into Debt Held by the Public (marketable securities) and Intragovernmental Holdings (trust funds like Social Security). As of 2026, the national debt exceeds $39 trillion.
+
+Get the U.S. national debt to the penny — updated daily
 - **get_treasury_auctions**: The bid-to-cover ratio indicates investor demand — higher ratios = stronger demand for U.S. debt.
 
 Get results of Treasury securities auctions — Bills, Notes, Bonds
+- **get_public_debt_breakdown**: Shows both Debt Held by the Public and Intragovernmental Holdings.
+
+Get the Statement of Public Debt — breakdown by security type
 
 
 ## 💬 Prompt Examples

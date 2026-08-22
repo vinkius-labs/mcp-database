@@ -36,14 +36,14 @@ Connect your **Ometria** account to your AI agent and gain granular visibility i
 
 
 ## Available Tools (10)
-- **get_event_details**: Get specific event info
 - **list_email_bounces**: List email bounce events
-- **list_email_complaints**: List email spam complaints
 - **list_events_by_campaign**: List events for a specific campaign
+- **get_event_details**: Get specific event info
 - **list_email_clicks**: List email click events
-- **list_recent_email_events**: List most recent email events
-- **list_email_unsubscribes**: List email unsubscribe events
+- **list_email_complaints**: List email spam complaints
 - **list_events_by_contact**: List events for a specific contact
+- **list_email_unsubscribes**: List email unsubscribe events
+- **list_recent_email_events**: List most recent email events
 - **list_email_events**: ) from Ometria.
 
 List all email engagement events

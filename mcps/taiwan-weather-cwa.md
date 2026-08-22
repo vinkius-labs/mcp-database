@@ -29,12 +29,12 @@ Get significant earthquake reports for Taiwan and the surrounding Pacific region
 - **get_taiwan_forecast**: Returns weather conditions, temperature ranges, and probability of rain for all major cities. You can optionally filter by city name using Traditional Chinese characters or English romanization.
 
 Get the 36-hour weather forecast for cities and counties across Taiwan
-- **get_taiwan_weekly_forecast**: Use for longer-range travel and event planning in Taiwan.
-
-Get the 1-week weather forecast for townships across Taiwan with 12-hour intervals
 - **get_taiwan_small_earthquakes**: 5) that may not trigger major alerts but are relevant for seismological monitoring and research.
 
 Get small-magnitude earthquake reports for Taiwan from CWA
+- **get_taiwan_weekly_forecast**: Use for longer-range travel and event planning in Taiwan.
+
+Get the 1-week weather forecast for townships across Taiwan with 12-hour intervals
 
 
 ## 💬 Prompt Examples

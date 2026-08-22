@@ -35,14 +35,14 @@ No digging into complicated Uniconta visual reports to pull a customer's address
 
 
 ## Available Tools (8)
-- **get_debtor_details**: Retrieves details for a specific debtor
 - **list_creditors**: Lists all creditors (vendors) registered in the ERP
-- **list_debtors**: Lists all debtors (customers) registered in the ERP
-- **list_employees**: Lists all employees registered in the Uniconta account
-- **list_debtor_invoices**: Lists all debtor invoices issued by the company
-- **list_inventory_items**: Lists all inventory items in the product catalog
 - **list_daily_journals**: Lists all General Ledger daily journals
+- **list_debtor_invoices**: Lists all debtor invoices issued by the company
+- **list_employees**: Lists all employees registered in the Uniconta account
+- **get_debtor_details**: Retrieves details for a specific debtor
+- **list_debtors**: Lists all debtors (customers) registered in the ERP
 - **list_gl_accounts**: Lists all General Ledger (GL) accounts in Uniconta
+- **list_inventory_items**: Lists all inventory items in the product catalog
 
 
 ## 💬 Prompt Examples

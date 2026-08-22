@@ -44,18 +44,6 @@ No more navigating multiple state 511 websites or manually checking traffic came
 - **get_events_geojson**: Each feature contains event properties (type, severity, jurisdiction, road, times, status, descriptions) in the properties object and point/line geometry in the geometry object. Supports all the same filtering parameters as get_events. Essential for mapping applications, spatial analysis, GIS integration, and visualization dashboards. AI agents should use this when users need to plot traffic events on a map, perform spatial queries, or integrate with GeoJSON-based mapping tools.
 
 Get traffic events in GeoJSON format for mapping and spatial analysis
-- **get_events**: Returns event type, severity (minor, moderate, major, critical, info), jurisdiction, road affected, start and end times, lifecycle status, geometry (line/point), and detailed descriptions. Supports filtering by jurisdiction (e.g., CA), type (incidents, construction, closures, events, advisories), severity, road name, status, and geographic area (bbox, lat/lon/radius). Essential for real-time traffic awareness, route planning, delivery logistics, and commuter decision-making. AI agents should use this when users ask "what incidents are on I-405", "show construction in California", or need traffic event data for route optimization.
-
-Get traffic incidents, construction, closures, and events across US and Canada
-- **get_features_geojson**: Each feature includes properties (type, jurisdiction, status, camera URL, road condition, weather data, EV charger info) and point geometry. Supports all the same filtering parameters. Essential for mapping applications, GIS workflows, spatial databases, and visualization dashboards. AI agents should reference this when users need to plot infrastructure features on a map, integrate with GeoJSON tools, or perform spatial analysis on road infrastructure.
-
-Get road infrastructure features in GeoJSON format for mapping and GIS integration
-- **get_features**: Returns type, jurisdiction, coordinates, status, and feature-specific details. Use when users ask about traffic cameras, EV chargers, rest areas, road conditions, or need infrastructure data for mapping.
-
-Get road infrastructure features including cameras, road conditions, weather stations, and more
-- **get_health**: Returns API availability, response times, data source connectivity (per jurisdiction), last update timestamps, and system alerts. Essential for monitoring API reliability, verifying data freshness, troubleshooting integration issues, and ensuring production system uptime. AI agents should use this as a diagnostic tool when users report missing data, when debugging integration issues, or as a periodic health check before making complex traffic data queries.
-
-Check API health and data source status
 - **get_summary**: Returns event counts by type and severity, active camera counts, data source status (healthy, degraded, down), refresh rates, and data freshness indicators. Essential for data quality monitoring, system health checks, understanding data coverage by region, and verifying API reliability before production use. AI agents should use this when users ask "how many active incidents are there nationwide", "is the California data source healthy", or need a system-wide overview of Road511 data quality and coverage.
 
 Get summary statistics and data source health across all jurisdictions
@@ -65,6 +53,18 @@ Get traffic incident trends and time-series analytics
 - **get_clearance**: Returns average resolution times by incident type, severity, jurisdiction, and time period. Essential for operational efficiency analysis, resource planning, performance benchmarking, and understanding how quickly traffic incidents are resolved in different regions. AI agents should use this when users ask "what is the median resolution time for incidents in California", "how long do major incidents take to clear in Texas", or need performance metrics for traffic incident management analysis.
 
 Get incident resolution time metrics (P50/P95) for operational analysis
+- **get_events**: Returns event type, severity (minor, moderate, major, critical, info), jurisdiction, road affected, start and end times, lifecycle status, geometry (line/point), and detailed descriptions. Supports filtering by jurisdiction (e.g., CA), type (incidents, construction, closures, events, advisories), severity, road name, status, and geographic area (bbox, lat/lon/radius). Essential for real-time traffic awareness, route planning, delivery logistics, and commuter decision-making. AI agents should use this when users ask "what incidents are on I-405", "show construction in California", or need traffic event data for route optimization.
+
+Get traffic incidents, construction, closures, and events across US and Canada
+- **get_features**: Returns type, jurisdiction, coordinates, status, and feature-specific details. Use when users ask about traffic cameras, EV chargers, rest areas, road conditions, or need infrastructure data for mapping.
+
+Get road infrastructure features including cameras, road conditions, weather stations, and more
+- **get_features_geojson**: Each feature includes properties (type, jurisdiction, status, camera URL, road condition, weather data, EV charger info) and point geometry. Supports all the same filtering parameters. Essential for mapping applications, GIS workflows, spatial databases, and visualization dashboards. AI agents should reference this when users need to plot infrastructure features on a map, integrate with GeoJSON tools, or perform spatial analysis on road infrastructure.
+
+Get road infrastructure features in GeoJSON format for mapping and GIS integration
+- **get_health**: Returns API availability, response times, data source connectivity (per jurisdiction), last update timestamps, and system alerts. Essential for monitoring API reliability, verifying data freshness, troubleshooting integration issues, and ensuring production system uptime. AI agents should use this as a diagnostic tool when users report missing data, when debugging integration issues, or as a periodic health check before making complex traffic data queries.
+
+Check API health and data source status
 
 
 ## 💬 Prompt Examples

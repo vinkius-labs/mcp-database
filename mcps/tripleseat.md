@@ -28,18 +28,18 @@ Search contacts
 - **list_bookings**: For venue calendar.
 
 List bookings
-- **get_booking**: Get booking details
 - **list_leads**: For sales pipeline.
 
 List event leads
+- **get_booking**: Get booking details
 - **list_events**: "What events this week?"
 
 List events
 - **get_event**: Get event details
+- **list_accounts**: List accounts
 - **list_locations**: For multi-venue management.
 
 List event venues
-- **list_accounts**: List accounts
 
 
 ## 💬 Prompt Examples

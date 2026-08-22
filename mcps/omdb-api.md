@@ -45,21 +45,12 @@ The OMDb API is a simple, lightweight alternative to larger databases — perfec
 - **get_by_imdb_id**: g., "tt0468569" for The Dark Knight). Returns: Title, Year, Rated (content rating), Released (date), Runtime, Genre, Director, Writer, Actors, Plot, Language, Country, Awards, Ratings (IMDb, Rotten Tomatoes, Metacritic), Metascore, imdbRating, imdbVotes, imdbID, Type (movie/series/episode), DVD release date, BoxOffice gross, Production studio, and Website. Use this when you have an IMDb ID and need complete movie/series information. This is the most accurate method — IMDb IDs are unique and unambiguous. Optional plot parameter: "short" (brief synopsis) or "full" (complete plot summary).
 
 Get complete details for a movie or TV series using its IMDb ID
-- **get_by_title**: Returns the same fields as get_by_imdb_id: Title, Year, Rated, Runtime, Genre, Director, Writer, Actors, Plot, Ratings (IMDb, Rotten Tomatoes, Metacritic), BoxOffice, Production studio, etc. Use this when you know the title but not the IMDb ID. IMPORTANT: If multiple items share the same title, the API may return the first match or an error. To narrow results, use the optional type filter (movie/series/episode) and year filter. For more precise matching, prefer get_by_imdb_id when available.
-
-Get details for a movie or TV series by its exact title
 - **get_episode**: Returns: Title (episode name), Year (air year), Released (air date), Runtime, Genre, Director, Writer, Actors, Plot (episode synopsis), Language, Country, Ratings, imdbRating, imdbVotes, imdbID, and Type (episode). Use this after finding an episode via search_episodes to get its full details. The IMDb ID is required — get it from search results or from a TV series season/episode listing.
 
 Get details for a specific TV episode using its IMDb ID
-- **get_full_by_imdb_id**: This is the same as get_by_imdb_id but always uses plot="full" for the most comprehensive synopsis. Returns: Title, Year, Rated, Released, Runtime, Genre, Director, Writer, Actors, full Plot, Language, Country, Awards, Ratings (IMDb, Rotten Tomatoes, Metacritic), Metascore, imdbRating, imdbVotes, imdbID, Type, DVD release date, BoxOffice gross, Production studio, and Website. Using IMDb ID is the most accurate method — IDs are unique and unambiguous unlike titles which can have duplicates. The full plot provides deeper synopsis detail compared to the short version.
-
-Get the most detailed information for a movie or series using its IMDb ID
 - **get_full_by_title**: This is the same as get_by_title but always uses plot="full" for the most comprehensive synopsis. Returns: Title, Year, Rated, Released, Runtime, Genre, Director, Writer, Actors, full Plot, Language, Country, Awards, Ratings (IMDb, Rotten Tomatoes, Metacritic), Metascore, imdbRating, imdbVotes, imdbID, Type, DVD release date, BoxOffice gross, Production studio, and Website. Use this when users want the complete plot summary and all metadata for a specific title. The full plot can be significantly longer than the short version, providing deeper synopsis detail.
 
 Get the most detailed information for a movie or series by title
-- **get_multiple_by_id**: Each ID is fetched individually and results are combined into one response. If any ID fails, it will be returned with an error message while others still succeed. Use this when comparing multiple films, getting info for a franchise, or batch-processing a list of IMDb IDs. Format: comma-separated IMDb IDs without spaces (e.g., "tt0468569,tt1375666,tt0816692"). Each result includes: Title, Year, Rated, Runtime, Genre, Director, Actors, Plot (short), Ratings, imdbRating, imdbVotes, Type, BoxOffice, Production, and more.
-
-Get details for multiple movies/series at once using their IMDb IDs
 - **get_ratings**: Also returns: Title, Year, Type, imdbRating, imdbVotes, and Metascore as individual fields. Use this when users ask "what is the rating of...", "how is X rated?", or want to compare scores across platforms. You can search by title (first parameter) or by IMDb ID (set use_imdb_id=true for the second parameter). Note: Not all titles have ratings from all three sources — some may be missing.
 
 Get all available ratings (IMDb, Rotten Tomatoes, Metacritic) for a movie or series
@@ -78,6 +69,15 @@ Search for movies only (excludes TV series and episodes)
 - **search_series**: Returns a paginated list of matching series titles. Each result includes: Title, Year (or year range like "2008-2013"), IMDb ID, Type (always "series"), and Poster URL. Use this when users specifically want to find TV shows (not movies) by keyword. Results are paginated (10 per page); use the page parameter to navigate results. Optional year filter narrows results to series that started in a specific year.
 
 Search for TV series only (excludes movies and episodes)
+- **get_by_title**: Returns the same fields as get_by_imdb_id: Title, Year, Rated, Runtime, Genre, Director, Writer, Actors, Plot, Ratings (IMDb, Rotten Tomatoes, Metacritic), BoxOffice, Production studio, etc. Use this when you know the title but not the IMDb ID. IMPORTANT: If multiple items share the same title, the API may return the first match or an error. To narrow results, use the optional type filter (movie/series/episode) and year filter. For more precise matching, prefer get_by_imdb_id when available.
+
+Get details for a movie or TV series by its exact title
+- **get_full_by_imdb_id**: This is the same as get_by_imdb_id but always uses plot="full" for the most comprehensive synopsis. Returns: Title, Year, Rated, Released, Runtime, Genre, Director, Writer, Actors, full Plot, Language, Country, Awards, Ratings (IMDb, Rotten Tomatoes, Metacritic), Metascore, imdbRating, imdbVotes, imdbID, Type, DVD release date, BoxOffice gross, Production studio, and Website. Using IMDb ID is the most accurate method — IDs are unique and unambiguous unlike titles which can have duplicates. The full plot provides deeper synopsis detail compared to the short version.
+
+Get the most detailed information for a movie or series using its IMDb ID
+- **get_multiple_by_id**: Each ID is fetched individually and results are combined into one response. If any ID fails, it will be returned with an error message while others still succeed. Use this when comparing multiple films, getting info for a franchise, or batch-processing a list of IMDb IDs. Format: comma-separated IMDb IDs without spaces (e.g., "tt0468569,tt1375666,tt0816692"). Each result includes: Title, Year, Rated, Runtime, Genre, Director, Actors, Plot (short), Ratings, imdbRating, imdbVotes, Type, BoxOffice, Production, and more.
+
+Get details for multiple movies/series at once using their IMDb IDs
 
 
 ## 💬 Prompt Examples

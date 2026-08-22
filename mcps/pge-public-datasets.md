@@ -35,15 +35,15 @@ Access **PG&E Public Datasets** directly from any AI agent and explore energy co
 
 
 ## Available Tools (8)
-- **compare_regions**: Returns side-by-side usage figures (kWh and therms), customer counts, and average bills for each region. Use this to identify regional differences in energy consumption, support geographic targeting for efficiency programs, or compare urban vs. rural usage patterns. ZIP codes are comma-separated (e.g., "94102,94103,94104"). Optional dataType and year filters.
-
-Compare energy usage data between multiple ZIP codes/regions
 - **get_electricity_by_zip**: Returns monthly or annual usage figures broken down by geographic area. Use this to compare electricity usage across neighborhoods, identify high-consumption areas, or support energy efficiency targeting. Optional year filter.
 
 Get electricity consumption data for specific ZIP codes in PG&E service area
 - **get_gas_by_zip**: Returns monthly or annual gas usage figures by geographic area. Use this to analyze heating demand patterns, compare gas usage across regions, or identify electrification opportunities. Optional year filter.
 
 Get natural gas consumption data for specific ZIP codes in PG&E service area
+- **compare_regions**: Returns side-by-side usage figures (kWh and therms), customer counts, and average bills for each region. Use this to identify regional differences in energy consumption, support geographic targeting for efficiency programs, or compare urban vs. rural usage patterns. ZIP codes are comma-separated (e.g., "94102,94103,94104"). Optional dataType and year filters.
+
+Compare energy usage data between multiple ZIP codes/regions
 - **get_monthly_usage**: Data is organized by ZIP code, month, year, and customer segment (Residential, Commercial, Industrial, Agricultural). Returns kWh for electric and therms for gas. Use this to analyze consumption patterns over time. Optional filters: dataType ("electric" or "gas"), customerType, zipCode (5-digit), and year (YYYY).
 
 Get monthly energy consumption data by ZIP code and customer segment from PG&E public datasets
