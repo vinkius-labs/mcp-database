@@ -27,6 +27,7 @@ Two complementary Earth observation systems.
 - **get_epic_images**: 5 million km from Earth. Available in natural color or enhanced color.
 
 Get the latest full-disk images of Earth from the DSCOVR satellite
+- **get_event_categories**: List all EONET natural event categories
 - **get_epic_by_date**: Each entry includes coordinates, sun position, and image identifier for constructing the full image URL.
 
 Get EPIC Earth images for a specific date
@@ -36,7 +37,6 @@ List all dates with available EPIC Earth images
 - **get_natural_events**: Categories include wildfires, volcanic eruptions, severe storms, sea ice, dust/haze, floods, and earthquakes. Includes coordinates and source links.
 
 Get active natural events worldwide: wildfires, volcanoes, storms, icebergs
-- **get_event_categories**: List all EONET natural event categories
 
 
 ## 💬 Prompt Examples

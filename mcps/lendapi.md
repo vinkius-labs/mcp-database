@@ -42,10 +42,10 @@ Create a new loan application
 - **create_new_borrower**: Requires a JSON body with profile details.
 
 Create a new borrower profile
-- **get_application_details**: Get details for a specific loan application
 - **get_borrower_details**: Get details for a specific borrower
 - **get_lendapi_picklists**: Retrieve valid picklist values for metadata fields
 - **submit_loan_application**: Submit a loan application for decisioning
+- **get_application_details**: Get details for a specific loan application
 
 
 ## 💬 Prompt Examples

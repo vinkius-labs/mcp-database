@@ -14,13 +14,13 @@ Connect your MakePlans account to your AI agent. Manage bookings, list services,
 
 
 ## Available Tools (10)
-- **delete_booking**: Delete/Cancel a booking
 - **create_booking**: Create a new booking
-- **get_booking**: Get details for a specific booking
+- **delete_booking**: Delete/Cancel a booking
 - **get_resource**: Get details for a specific resource
+- **list_people**: List people (staff)
+- **get_booking**: Get details for a specific booking
 - **get_service**: Get details for a specific service
 - **list_bookings**: List all bookings in MakePlans
-- **list_people**: List people (staff)
 - **list_resources**: g., rooms, equipment).
 
 List resources

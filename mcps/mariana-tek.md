@@ -34,25 +34,25 @@ Connect your **Mariana Tek** studio to any AI agent and manage your premium bout
 - **list_classes**: Used by SoulCycle, Barry's, Rumble, and premium boutique studios worldwide.
 
 List studio class sessions
-- **list_reservations**: List class reservations
+- **list_locations**: List studio locations
+- **list_memberships**: Shows pricing and terms.
+
+List membership plans
+- **search_customers**: Returns profile, credits, visit count, and membership status.
+
+Search members
+- **get_class_detail**: Get full class session details
+- **get_customer**: Get member profile
 - **list_class_types**: Includes description, duration, and intensity.
 
 List class types
 - **list_instructors**: Boutique fitness revolves around star instructors.
 
 List instructors
-- **list_locations**: List studio locations
-- **search_customers**: Returns profile, credits, visit count, and membership status.
-
-Search members
-- **get_customer**: Get member profile
-- **list_memberships**: Shows pricing and terms.
-
-List membership plans
-- **get_class_detail**: Get full class session details
 - **list_pricing**: Includes promotional and corporate rates.
 
 List pricing options
+- **list_reservations**: List class reservations
 
 
 ## 💬 Prompt Examples

@@ -34,18 +34,18 @@ Connect your **LeafLink** account to any AI agent to automate your cannabis whol
 
 
 ## Available Tools (9)
-- **list_wholesale_brands**: List all brands in your account
-- **create_new_product**: Requires a JSON body with product details.
-
-Add a new product to your wholesale catalog
-- **list_wholesale_customers**: List all buyers and customers
 - **get_order_details**: Get details for a specific order
-- **get_product_details**: Get details for a specific product
-- **list_received_orders**: List all wholesale orders received
-- **list_wholesale_products**: List all products available in your inventory
+- **list_wholesale_brands**: List all brands in your account
 - **update_order_status**: g., accept, fulfill, cancel, reject).
 
 Transition an order through its lifecycle
+- **create_new_product**: Requires a JSON body with product details.
+
+Add a new product to your wholesale catalog
+- **get_product_details**: Get details for a specific product
+- **list_received_orders**: List all wholesale orders received
+- **list_wholesale_customers**: List all buyers and customers
+- **list_wholesale_products**: List all products available in your inventory
 - **update_product_inventory**: Update inventory level for a specific product
 
 

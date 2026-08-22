@@ -37,14 +37,14 @@ Connect your **Line-Up** account to any AI agent to automate your event ticketin
 ## Available Tools (10)
 - **list_available_events**: List all events available for booking
 - **get_customer_profile**: Get details for a specific customer
-- **get_event_details**: Get details for a specific event
-- **get_order_details**: Get details for a specific order
 - **list_account_orders**: List all historical orders (Admin)
 - **list_event_performances**: List specific dates and times (performances) for an event
 - **check_ticket_availability**: Check ticket types and availability for a performance
 - **confirm_ticket_order**: Requires a JSON body.
 
 Finalize a booking and create an order
+- **get_event_details**: Get details for a specific event
+- **get_order_details**: Get details for a specific order
 - **create_ticket_reservation**: Requires a JSON body.
 
 Reserve tickets temporarily

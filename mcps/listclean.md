@@ -37,12 +37,12 @@ Connect your **Listclean** account to any AI agent to automate your email hygien
 - **verify_single_email**: Requires a single email string.
 
 Verify a single email address in real-time
-- **get_account_profile**: Get account profile details
+- **get_verification_logs**: Retrieve logs of previously verified single emails
 - **verify_batch_emails**: Maximum recommended size is 3,000 per request.
 
 Verify multiple email addresses in one batch
 - **check_account_credits**: Check remaining verification credits
-- **get_verification_logs**: Retrieve logs of previously verified single emails
+- **get_account_profile**: Get account profile details
 
 
 ## 💬 Prompt Examples

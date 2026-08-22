@@ -30,11 +30,11 @@ Connect your **Minutemailer** account to automate your email and SMS marketing w
 - **delete_contact**: Delete a contact
 - **get_account_info**: Get account metadata
 - **list_contacts**: List all contacts
-- **list_events**: List account events
 - **list_contact_lists**: List all contact lists
+- **list_events**: List account events
+- **create_contact**: Create a new contact
 - **list_smart_lists**: List smart lists
 - **list_templates**: List email templates
-- **create_contact**: Create a new contact
 
 
 ## 💬 Prompt Examples

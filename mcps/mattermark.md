@@ -27,15 +27,15 @@ Connect your **Mattermark** account to any AI agent and access deep insights int
 
 
 ## Available Tools (10)
-- **get_company_news**: Get news for a specific company
-- **get_investor_details**: Get details for an investor
-- **list_similar_companies**: Find similar companies
 - **search_companies**: Search for companies
 - **get_company_details**: Get details for a specific company
 - **get_company_employees**: Get employee data for a company
 - **get_company_funding_rounds**: Get funding history for a company
 - **get_funding_round_details**: Get details for a funding round
 - **list_investors**: List venture capital investors
+- **get_company_news**: Get news for a specific company
+- **get_investor_details**: Get details for an investor
+- **list_similar_companies**: Find similar companies
 - **search_funding_rounds**: Search for funding rounds
 
 

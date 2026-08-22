@@ -32,11 +32,11 @@ Connect your **Marketaux** account to any AI agent and stay on top of the financ
 Get entity data
 - **get_indices**: List stock indices
 - **get_latest_news**: Get the latest financial news
+- **list_industries**: List industries
 - **get_sentiment_analysis**: Get news with sentiment analysis
 - **get_stock_market_status**: Get stock market status
 - **get_symbols**: List supported stock symbols
 - **get_trending_news**: Get trending financial news
-- **list_industries**: List industries
 - **search_exchanges**: Search for stock exchanges
 - **search_news**: Search for globalThis financial news
 

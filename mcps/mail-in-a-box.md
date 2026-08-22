@@ -34,18 +34,18 @@ Connect your **Mail-in-a-Box** instance to any AI agent to automate your private
 
 
 ## Available Tools (9)
+- **delete_mail_user**: Remove a mail user
 - **list_mail_aliases**: List all mail aliases and forwarders
 - **list_mail_domains**: List all mail domains hosted on the server
-- **delete_mail_alias**: Remove a mail alias
-- **delete_mail_user**: Remove a mail user
-- **update_user_password**: Change the password for a mail user
 - **create_mail_user**: Requires a full email address and a password.
 
 Add a new mail user (mailbox)
-- **get_system_status**: Check the status of the Mail-in-a-Box system
+- **delete_mail_alias**: Remove a mail alias
+- **update_user_password**: Change the password for a mail user
 - **create_or_update_alias**: forwards_to should be a comma-separated list of emails.
 
 Add or update a mail alias
+- **get_system_status**: Check the status of the Mail-in-a-Box system
 - **list_mail_users**: List all mail users on the server
 
 

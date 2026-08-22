@@ -36,13 +36,13 @@ Connect to the **Modrinth** ecosystem through your AI agent to discover and mana
 
 ## Available Tools (10)
 - **get_project_dependencies**: Get project dependencies
-- **get_project**: Get detailed Modrinth project info
 - **get_team_members**: List project team members
 - **get_user_profile**: Get user profile info
 - **get_version**: Get specific version details
+- **list_versions**: List versions of a Modrinth project
+- **get_project**: Get detailed Modrinth project info
 - **list_project_followers**: List project followers
 - **list_user_projects**: List projects by a user
-- **list_versions**: List versions of a Modrinth project
 - **search_projects**: You can include game versions (e.g., 1.20.1) or loaders (e.g., Fabric) in your query.
 
 Search for Minecraft projects on Modrinth

@@ -31,10 +31,10 @@ Connect your **Marchex** account to any AI agent and take full control of your c
 - **get_campaign_details**: Get details for a specific campaign
 - **list_campaigns**: List all campaigns
 - **get_number_details**: Get details for a specific number
+- **search_calls**: Search for phone calls
 - **list_accounts**: List all accounts
 - **list_numbers**: List all tracking numbers
 - **list_users**: List all users
-- **search_calls**: Search for phone calls
 - **get_account_details**: Get details for a specific account
 - **get_call_analytics**: Get call analytics
 
