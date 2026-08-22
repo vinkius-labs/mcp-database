@@ -23,17 +23,17 @@ Accountants, compliance officers, fintech developers, market analysts, business 
 
 
 ## Available Tools (5)
-- **list_secoes_cnae**: List all 21 CNAE economic sections (A-U)
-- **list_divisoes_cnae**: g., A for Agriculture, C for Manufacturing).
-
-List CNAE divisions within a section
+- **get_subclasse_cnae**: Get CNAE subclass details
 - **list_classes_cnae**: g., 62 for IT activities).
 
 List CNAE classes within a division
+- **list_divisoes_cnae**: g., A for Agriculture, C for Manufacturing).
+
+List CNAE divisions within a section
+- **list_secoes_cnae**: List all 21 CNAE economic sections (A-U)
 - **list_subclasses_por_classe**: g., 62015).
 
 List all subclasses within a CNAE class
-- **get_subclasse_cnae**: Get CNAE subclass details
 
 
 ## 💬 Prompt Examples

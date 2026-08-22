@@ -37,17 +37,17 @@ Connect your AI agent to the **GamerPower** database to automate your discovery 
 
 ## Available Tools (12)
 - **get_giveaway_worth**: Get worth statistics
-- **list_epic_games_giveaways**: Filter for Epic Games
 - **list_ingame_loot**: Filter for loot
-- **get_giveaway_details**: Get giveaway metadata
 - **list_xbox_giveaways**: Filter for Xbox
-- **search_giveaways**: Search by platform/type
-- **list_all_giveaways**: List all giveaways
+- **get_giveaway_details**: Get giveaway metadata
 - **list_beta_keys**: Filter for beta access
-- **list_mobile_giveaways**: Filter for Android/iOS
+- **list_epic_games_giveaways**: Filter for Epic Games
 - **list_pc_full_games**: Filter for PC games
 - **list_ps5_giveaways**: Filter for PS5
 - **list_steam_giveaways**: Filter for Steam
+- **search_giveaways**: Search by platform/type
+- **list_all_giveaways**: List all giveaways
+- **list_mobile_giveaways**: Filter for Android/iOS
 
 
 ## 💬 Prompt Examples

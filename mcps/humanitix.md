@@ -14,16 +14,16 @@ Connect your AI agents to Humanitix, the humane ticketing platform. This MCP ser
 
 
 ## Available Tools (10)
+- **list_campaigns**: Lists marketing campaigns
+- **list_hosts**: Lists event hosts
+- **list_inventory**: Lists event inventory
+- **list_tickets**: Lists tickets across all events
+- **list_venues**: Lists event venues
 - **get_event**: Retrieves details for a specific event
 - **get_me**: Gets current authenticated user info
 - **list_attendees**: Lists attendees for a specific event
-- **list_campaigns**: Lists marketing campaigns
 - **list_events**: Lists virtual and hybrid events
-- **list_hosts**: Lists event hosts
-- **list_inventory**: Lists event inventory
 - **list_orders**: Lists ticket orders
-- **list_tickets**: Lists tickets across all events
-- **list_venues**: Lists event venues
 
 
 ## 💬 Prompt Examples

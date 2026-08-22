@@ -17,11 +17,11 @@ Empower your AI agents to analyze user behavior on your websites. This MCP serve
 - **get_me**: Gets current authenticated user info
 - **get_project**: Retrieves details for a specific project
 - **list_events**: Lists custom tracking events for a project
+- **list_projects**: Lists Howuku projects (sites)
 - **list_feedback**: Lists visual feedback items for a project
 - **list_funnels**: Lists conversion funnels for a project
 - **list_heatmaps**: Lists heatmaps for a project
 - **list_organizations**: Lists organizations associated with your account
-- **list_projects**: Lists Howuku projects (sites)
 - **list_recordings**: Lists session recordings for a project
 - **list_surveys**: Lists surveys for a project
 

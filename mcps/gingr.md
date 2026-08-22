@@ -36,18 +36,18 @@ Connect your **Gingr** pet care management account to any AI agent to automate y
 
 
 ## Available Tools (10)
-- **verify_api_connection**: Check connection
-- **list_active_checkins**: List currently checked-in
 - **find_owner_by_email**: Search owner by email
-- **get_pet_owner_details**: Get owner profile
-- **find_owner_by_phone**: Search owner by phone
 - **get_digital_whiteboard**: View active whiteboard
-- **list_business_locations**: List pet care facilities
 - **list_owner_reservations**: ) for a specific owner.
 
 List past/future bookings
-- **search_pet_custom_fields**: Search custom pet data
+- **verify_api_connection**: Check connection
+- **find_owner_by_phone**: Search owner by phone
+- **list_active_checkins**: List currently checked-in
+- **get_pet_owner_details**: Get owner profile
 - **search_owner_custom_fields**: Search custom owner data
+- **list_business_locations**: List pet care facilities
+- **search_pet_custom_fields**: Search custom pet data
 
 
 ## 💬 Prompt Examples

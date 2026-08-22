@@ -37,13 +37,13 @@ No more manual data entry in the mobile app. Your AI assistant acts as a dedicat
 
 
 ## Available Tools (10)
-- **add_habit_log**: g., number of reps, minutes, or completion) to a habit.
-
-Record progress for a specific habit
 - **get_habit**: Get detailed information about a specific habit
 - **get_habit_stats**: Get statistics for a habit within a date range
 - **list_areas**: List all habit areas (categories)
 - **create_habit**: Create a new habit to track
+- **add_habit_log**: g., number of reps, minutes, or completion) to a habit.
+
+Record progress for a specific habit
 - **delete_habit**: Permanently delete a habit
 - **get_journal**: Get habits with completion status for a specific date
 - **list_habits**: List all habits in your Habitify account

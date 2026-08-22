@@ -38,14 +38,14 @@ Connect your **Greenspark** account to any AI agent and automate your business's
 - **list_impacts**: List historical climate impacts generated
 - **create_impact**: Trigger a new climate impact (e.g. plant a tree)
 - **create_webhook**: Configure a new API webhook
+- **list_impact_types**: List available types of climate impact
+- **list_webhooks**: List configured API webhooks
 - **estimate_footprint**: Calculate the carbon footprint of a transaction
 - **get_impact_summary**: Get total aggregated impact data for the account
-- **list_webhooks**: List configured API webhooks
 - **get_impact**: Get details for a specific impact record
 - **get_project**: Get details for a specific environmental project
 - **get_subscription**: Get details of the account Greenspark subscription
 - **list_badges**: List available impact badges and widgets
-- **list_impact_types**: List available types of climate impact
 - **list_projects**: List environmental projects supported by Greenspark
 
 

@@ -14,16 +14,16 @@ Empower your AI agents to send personalized, hand-written notes with IgnitePOST.
 
 
 ## Available Tools (10)
+- **list_envelopes**: Lists all available envelopes
+- **list_products**: Lists all available products
+- **verify_auth**: Verifies if the API token is valid
 - **get_order**: Retrieves details for a specific order
 - **list_campaigns**: Lists all outreach campaigns
 - **list_contacts**: Lists all contacts
-- **list_envelopes**: Lists all available envelopes
 - **list_fonts**: Lists all available hand-written fonts
 - **list_orders**: Lists all hand-written note orders
-- **list_products**: Lists all available products
 - **list_stationeries**: Lists all available stationery types
 - **list_templates**: Lists all letter templates
-- **verify_auth**: Verifies if the API token is valid
 
 
 ## 💬 Prompt Examples

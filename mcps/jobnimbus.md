@@ -20,30 +20,30 @@ Lists all configured boards
 - **list_contacts**: Returns names, contact types, and IDs. Use this to identify clients or start a search for a specific customer.
 
 Lists all contacts in JobNimbus
-- **get_job**: Returns project descriptions, associated contact IDs, and current workflow status. Use this to analyze project specifics or provide an update on a job.
-
-Retrieves details for a specific job
 - **get_contact**: Returns addresses, phone numbers, email, and custom fields. Use this for deep intelligence on a customer before an interaction.
 
 Retrieves details for a specific contact
+- **get_job**: Returns project descriptions, associated contact IDs, and current workflow status. Use this to analyze project specifics or provide an update on a job.
+
+Retrieves details for a specific job
 - **list_jobs**: Includes job titles, status, and IDs. Essential for monitoring project flow and upcoming work.
 
 Lists all jobs in JobNimbus
-- **list_payments**: Essential for monitoring revenue and project billing status.
-
-Lists all recent payments
 - **list_products**: Useful for auditing available services and pricing items.
 
 Lists all products and services
 - **list_tasks**: Returns task descriptions, due dates, and IDs. Use this to help the user manage their daily workload or audit team activities.
 
 Lists all tasks
-- **list_users**: Useful for identifying sales reps or project managers.
+- **list_payments**: Essential for monitoring revenue and project billing status.
 
-Lists all users in the organization
+Lists all recent payments
 - **list_workflows**: Useful for understanding the steps in the company's business processes.
 
 Lists all configured workflows
+- **list_users**: Useful for identifying sales reps or project managers.
+
+Lists all users in the organization
 
 
 ## 💬 Prompt Examples

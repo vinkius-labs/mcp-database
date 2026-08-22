@@ -33,6 +33,16 @@ Connect your **Glofox** gym or studio to any AI agent and manage your fitness bu
 - **search_members**: Returns profile, membership status, check-in history, and account balance. The core CRM of your gym.
 
 Search gym members
+- **list_bookings**: Shows who booked which class, check-in status, and waitlist.
+
+List class bookings
+- **list_trainers**: List trainers and coaches
+- **list_purchases**: Filter by member for individual spending.
+
+List member purchases
+- **list_classes**: Filter by date to see a specific day.
+
+List scheduled classes
 - **get_member**: Get member details
 - **list_courses**: Shows sessions, pricing, and enrollment.
 
@@ -40,16 +50,6 @@ List multi-week courses
 - **list_memberships**: Includes pricing, access hours, and perks.
 
 List membership plans
-- **list_trainers**: List trainers and coaches
-- **list_bookings**: Shows who booked which class, check-in status, and waitlist.
-
-List class bookings
-- **list_purchases**: Filter by member for individual spending.
-
-List member purchases
-- **list_classes**: Filter by date to see a specific day.
-
-List scheduled classes
 
 
 ## 💬 Prompt Examples

@@ -36,13 +36,13 @@ No more manual exports or jumping between complex CRM tabs. Your AI assistant ac
 
 
 ## Available Tools (8)
-- **get_contact**: Get detailed information about a specific contact by ID
 - **get_my_profile**: Get information about the current authenticated user/account
 - **list_contacts**: List all contacts in the GrowthZone database
 - **list_membership_types**: List all available membership types
 - **search_contacts**: Search for contacts in GrowthZone using a filter query
-- **list_events**: List all events in GrowthZone
+- **get_contact**: Get detailed information about a specific contact by ID
 - **list_memberships**: List all memberships in GrowthZone
+- **list_events**: List all events in GrowthZone
 - **list_organizations**: List all organizations in GrowthZone
 
 

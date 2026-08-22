@@ -35,15 +35,15 @@ Retrieves details for a specific order
 - **list_batches**: Essential for managing perishable goods or regulated materials requiring lot tracking.
 
 Lists all material batches
-- **list_calls**: Useful for debugging integrations and monitoring system interaction frequency.
-
-Lists recent API request history
 - **list_locations**: Useful for understanding warehouse layout and identifying where specific materials are stored.
 
 Lists all storage locations
 - **list_materials**: Returns material names, descriptions, and IDs. Use this to identify products for inventory auditing or order analysis.
 
 Lists all materials in ItemPath
+- **list_calls**: Useful for debugging integrations and monitoring system interaction frequency.
+
+Lists recent API request history
 
 
 ## 💬 Prompt Examples

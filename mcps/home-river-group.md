@@ -14,12 +14,15 @@ Empower your AI agents to interact with Home River Group's property management s
 
 
 ## Available Tools (10)
-- **get_availability**: Checks availability for units in a property
 - **get_leads**: Lists sales leads and prospects
 - **get_lease_info**: Retrieves detailed lease information for residents
 - **create_lead**: Submits a new lead/prospect to Home River Group
 - **create_work_order**: Creates a new maintenance work order
+- **get_availability**: Checks availability for units in a property
 - **get_ledgers**: Retrieves financial ledgers for residents
+- **get_work_orders**: Filtering by propertyId is highly recommended.
+
+Lists maintenance work orders
 - **get_properties**: This is the starting point to get PropertyIDs needed for other tools. You can filter by specific property IDs or search by name in the results.
 
 Lists properties managed by Home River Group
@@ -29,9 +32,6 @@ Lists residents across properties
 - **get_units**: Requires a valid PropertyID.
 
 Lists units for a specific property ID
-- **get_work_orders**: Filtering by propertyId is highly recommended.
-
-Lists maintenance work orders
 
 
 ## 💬 Prompt Examples

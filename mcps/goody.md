@@ -36,17 +36,17 @@ No more manual data entry for every single gift. Your AI agent handles the catal
 
 
 ## Available Tools (11)
-- **create_order_batch**: Send a gift to one or more recipients
-- **get_campaign**: Get details for a specific campaign
 - **get_order_batch**: Get details for a specific order batch
-- **get_product**: Get details for a specific product
 - **list_campaigns**: List gifting campaigns
 - **list_inventory**: List available inventory for corporate gifts
-- **list_products**: List available gifts in Goody
 - **get_order**: Get details for a specific order
+- **create_order_batch**: Send a gift to one or more recipients
+- **get_campaign**: Get details for a specific campaign
+- **get_product**: Get details for a specific product
+- **list_products**: List available gifts in Goody
+- **list_recipients**: List gift recipients
 - **list_order_batches**: List gift order batches
 - **list_orders**: List individual gift orders
-- **list_recipients**: List gift recipients
 
 
 ## 💬 Prompt Examples
