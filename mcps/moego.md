@@ -36,17 +36,17 @@ Connect your **MoeGo** pet care business account to your AI agent and streamline
 
 
 ## Available Tools (10)
-- **create_appointment**: Schedule a new appointment
 - **get_appointment**: Get appointment details
 - **get_business_settings**: Get business configuration
-- **get_pet**: Get specific pet details
 - **list_appointments**: List grooming appointments
+- **list_services**: List grooming services
+- **create_appointment**: Schedule a new appointment
+- **get_pet**: Get specific pet details
 - **list_customers**: List MoeGo customers
 - **list_pets**: ) associated with your business.
 
 List all registered pets
 - **list_reviews**: List customer reviews
-- **list_services**: List grooming services
 - **list_staff**: List business staff
 
 

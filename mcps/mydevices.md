@@ -27,8 +27,8 @@ Connect your **myDevices Cayenne** account to empower your AI agents with IoT ca
 
 
 ## Available Tools (8)
-- **get_device**: Get device details
 - **get_sensor_data**: Get current sensor value
+- **get_device**: Get device details
 - **get_sensor_history**: Get historical sensor data
 - **list_alerts**: List IoT alerts
 - **list_applications**: List all applications

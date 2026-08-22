@@ -27,18 +27,18 @@ Connect your **MediaSilo** (Shift) account to any AI agent and take full control
 
 
 ## Available Tools (10)
-- **get_quicklink**: Get details for a specific Quicklink
 - **list_assets**: ) from MediaSilo.
 
 List all media assets
 - **list_folders**: List folders within a project
 - **list_projects**: List all projects
-- **list_quicklinks**: List all Quicklinks
-- **list_users**: List all users
-- **get_asset**: Get details for a specific asset
 - **get_project**: Get details for a specific project
 - **get_project_assets**: List all assets within a project
+- **get_quicklink**: Get details for a specific Quicklink
+- **list_quicklinks**: List all Quicklinks
 - **search_assets**: Search for assets by term
+- **list_users**: List all users
+- **get_asset**: Get details for a specific asset
 
 
 ## 💬 Prompt Examples

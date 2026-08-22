@@ -28,28 +28,28 @@ Connect your **KnoCommerce** data to your AI agent to unlock deep insights from 
 
 
 ## Available Tools (10)
-- **list_survey_responses**: You can optionally filter by survey_id to see feedback from a specific post-purchase interaction.
-
-List responses for surveys
-- **get_response_details**: Get details for a specific customer response
 - **list_knocommerce_customers**: Useful for correlating feedback with specific buyer profiles.
 
 List customers associated with survey data
-- **get_customer_feedback_profile**: Get details for a specific customer feedback profile
-- **list_surveys**: Use this to identify survey IDs for analyzing specific campaigns or response sets.
+- **list_survey_responses**: You can optionally filter by survey_id to see feedback from a specific post-purchase interaction.
 
-List all KnoCommerce surveys
+List responses for surveys
+- **get_channel_attribution_report**: This is essential for understanding which marketing channels are driving customer acquisition.
+
+Get the latest channel attribution report
+- **get_customer_feedback_profile**: Get details for a specific customer feedback profile
+- **get_response_details**: Get details for a specific customer response
+- **check_knocommerce_api_status**: Check the status of the KnoCommerce API integration
 - **get_survey_details**: Returns survey title, status, and high-level configuration.
 
 Get details for a specific survey
 - **list_survey_questions**: Use this to understand the data structure of the responses.
 
 List all questions in a specific survey
-- **get_channel_attribution_report**: This is essential for understanding which marketing channels are driving customer acquisition.
+- **list_surveys**: Use this to identify survey IDs for analyzing specific campaigns or response sets.
 
-Get the latest channel attribution report
+List all KnoCommerce surveys
 - **list_survey_templates**: List available survey templates
-- **check_knocommerce_api_status**: Check the status of the KnoCommerce API integration
 
 
 ## 💬 Prompt Examples

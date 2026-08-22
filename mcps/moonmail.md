@@ -34,14 +34,14 @@ Connect your **MoonMail** account to your AI agent and optimize your email marke
 
 
 ## Available Tools (11)
-- **get_campaign_stats**: Get campaign performance metrics
 - **get_campaign**: Get details for a specific campaign
-- **list_group_recipients**: List recipients of a group
-- **list_campaigns**: List all mailing campaigns
+- **get_campaign_stats**: Get campaign performance metrics
+- **create_campaign**: Create a new mailing campaign
 - **get_group**: Get details for a specific group
+- **list_campaigns**: List all mailing campaigns
+- **list_group_recipients**: List recipients of a group
 - **pause_campaign**: Pause an active mailing campaign
 - **list_groups**: List all subscriber groups
-- **create_campaign**: Create a new mailing campaign
 - **send_campaign**: Send a mailing campaign
 - **add_recipient**: Add a recipient to a group
 - **create_group**: Create a new subscriber group

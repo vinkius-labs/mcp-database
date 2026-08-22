@@ -40,11 +40,11 @@ Add a new subscriber to a list
 - **create_new_campaign**: Requires a JSON body with campaign details.
 
 Create a new email marketing campaign
-- **delete_list_subscriber**: Remove a subscriber from a list
 - **get_campaign_details**: Get details for a specific campaign
 - **list_list_subscribers**: List subscribers in a specific list
 - **list_subscriber_lists**: List all subscriber lists
 - **send_email_campaign**: Trigger the sending of a campaign
+- **delete_list_subscriber**: Remove a subscriber from a list
 - **list_email_campaigns**: List all email marketing campaigns
 - **update_list_subscriber**: Update an existing subscriber
 

@@ -22,18 +22,18 @@ FHAZ (front), RHAZ (rear), NAVCAM (navigation), MAST/PANCAM (panoramic), CHEMCAM
 
 
 ## Available Tools (4)
-- **get_mars_photos**: Filter by camera: FHAZ (front hazard), RHAZ (rear hazard), MAST (mast), CHEMCAM, MAHLI, MARDI, NAVCAM. Curiosity has 800K+ photos.
-
-Get Mars rover photos by sol number and camera
-- **get_mars_photos_by_date**: Easier than using sol numbers. Works with all three rovers.
-
-Get Mars rover photos by Earth date
 - **get_mars_manifest**: Essential for understanding what data is available.
 
 Get the mission manifest for a Mars rover
 - **get_mars_latest**: Curiosity is still active and sending new photos. Opportunity and Spirit missions have ended but their full archives are available.
 
 Get the most recent photos from a Mars rover
+- **get_mars_photos**: Filter by camera: FHAZ (front hazard), RHAZ (rear hazard), MAST (mast), CHEMCAM, MAHLI, MARDI, NAVCAM. Curiosity has 800K+ photos.
+
+Get Mars rover photos by sol number and camera
+- **get_mars_photos_by_date**: Easier than using sol numbers. Works with all three rovers.
+
+Get Mars rover photos by Earth date
 
 
 ## 💬 Prompt Examples

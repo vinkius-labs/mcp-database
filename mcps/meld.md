@@ -28,14 +28,14 @@ Connect your **Meld** account to any AI agent and take full control of your digi
 
 
 ## Available Tools (10)
+- **get_account_info**: Get account information
 - **get_asset**: Get details for a specific asset
 - **list_transactions**: List recent transactions
-- **list_wallets**: List all linked wallets
 - **search_assets**: Search for digital assets
-- **get_account_info**: Get account information
-- **get_exchange_rates**: Get real-time exchange rates
+- **list_wallets**: List all linked wallets
 - **get_network**: Get details for a specific network
 - **get_wallet_details**: Get details for a specific wallet
+- **get_exchange_rates**: Get real-time exchange rates
 - **list_assets**: List all digital assets
 - **list_networks**: List all digital asset networks
 

@@ -27,12 +27,12 @@ Get near-Earth asteroids approaching within a date range
 - **get_neo_lookup**: Use SPK-IDs from the feed endpoint.
 
 Get detailed information about a specific asteroid by its NASA SPK-ID
-- **get_neo_browse**: Returns 20 asteroids per page. Use for exploring the complete known catalog of near-Earth objects.
-
-Browse the complete catalog of known near-Earth asteroids
 - **get_close_approaches**: Filter by distance threshold, date range, and minimum size. Critical for planetary defense monitoring.
 
 Get future close approaches of asteroids to Earth from JPL CNEOS
+- **get_neo_browse**: Returns 20 asteroids per page. Use for exploring the complete known catalog of near-Earth objects.
+
+Browse the complete catalog of known near-Earth asteroids
 - **get_fireballs**: Includes location, velocity, energy (kilotons of TNT equivalent), and altitude. Covers events worldwide.
 
 Get atmospheric fireball (bolide) events detected by US government sensors

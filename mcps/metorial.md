@@ -33,13 +33,13 @@ Strictly modeled bridging **AI Operations (AIOps)**, **Platform Engineers**, and
 
 
 ## Available Tools (8)
-- **metorial_list_traces**: Poll explicit transaction log boundaries tracing MCP tool limits
 - **metorial_delete_server**: Dismantle logical server parameters mapping natively
-- **metorial_deploy_server**: Trigger structural remote serverless provisioning of an MCP Logic matrix seamlessly
 - **metorial_get_server_status**: Check explicit logical health matrices protecting a hosted node
-- **metorial_get_trace_details**: Deep dive linearly into an explicit execution interaction boundary
 - **metorial_get_usage_metrics**: Aggregate explicitly cost matrix boundaries and latency tracking natively
 - **metorial_invoke_server_tool**: Command interaction executions explicitly routed to the serverless container node
+- **metorial_list_traces**: Poll explicit transaction log boundaries tracing MCP tool limits
+- **metorial_deploy_server**: Trigger structural remote serverless provisioning of an MCP Logic matrix seamlessly
+- **metorial_get_trace_details**: Deep dive linearly into an explicit execution interaction boundary
 - **metorial_list_servers**: Enumerate the entire array of Serverless MCP bounds hosted inside your Metorial workspace
 
 

@@ -34,9 +34,6 @@ Connect your **Maileon** account to any AI agent to automate your professional e
 
 
 ## Available Tools (9)
-- **create_new_contact**: Can trigger a Double Opt-In process if configured.
-
-Add or update a contact in the database
 - **delete_account_contact**: Remove a contact from the account
 - **get_contact_by_email**: Get details for a specific contact
 - **get_mailing_details**: Get details for a specific mailing
@@ -44,13 +41,16 @@ Add or update a contact in the database
 - **list_email_mailings**: Use optional params to filter by state (e.g., "state=draft").
 
 List all mailings (campaigns)
-- **list_account_contacts**: Use optional params for filtering.
-
-List all contacts in the Maileon account
 - **list_unsubscription_events**: List recent unsubscription events
+- **create_new_contact**: Can trigger a Double Opt-In process if configured.
+
+Add or update a contact in the database
 - **dispatch_email_mailing**: The mailing must be in a ready state.
 
 Trigger the dispatch of a mailing
+- **list_account_contacts**: Use optional params for filtering.
+
+List all contacts in the Maileon account
 
 
 ## 💬 Prompt Examples

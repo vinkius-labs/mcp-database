@@ -22,15 +22,15 @@ Includes images from Hubble, Webb, ground-based observatories, amateur astrophot
 
 
 ## Available Tools (3)
+- **get_apod**: Includes title, explanation, image URL, copyright, and media type (image or video). Running since June 16, 1995 — one of the most popular websites across all federal agencies.
+
+Get the Astronomy Picture of the Day — NASA's most popular API
 - **get_apod_range**: Great for exploring a week or month of astronomical imagery. Maximum range is about 30 days per request.
 
 Get APOD images for a date range
 - **get_random_apod**: Perfect for discovering amazing space imagery you might have missed. Default: 5 random images.
 
 Get random Astronomy Pictures of the Day from the 30-year archive
-- **get_apod**: Includes title, explanation, image URL, copyright, and media type (image or video). Running since June 16, 1995 — one of the most popular websites across all federal agencies.
-
-Get the Astronomy Picture of the Day — NASA's most popular API
 
 
 ## 💬 Prompt Examples

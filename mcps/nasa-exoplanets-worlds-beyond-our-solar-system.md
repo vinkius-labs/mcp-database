@@ -23,18 +23,18 @@ The Exoplanet Archive TAP service is completely open.
 
 
 ## Available Tools (4)
-- **query_confirmed_planets**: Filter by planet name, discovery method (Transit, Radial Velocity, Imaging, Microlensing), discovery facility (Kepler, TESS, Keck), or year. Returns orbital period, radius, mass, equilibrium temperature.
-
-Search confirmed exoplanets by name, discovery method, facility, or year
-- **get_habitable_zone**: These are the most promising candidates for life.
-
-Get exoplanets in the habitable zone — where liquid water could exist
 - **get_planet_stats**: Shows how exoplanet science has exploded since Kepler's launch in 2009.
 
 Get globalThis exoplanet discovery statistics: totals, methods, yearly trends
+- **get_habitable_zone**: These are the most promising candidates for life.
+
+Get exoplanets in the habitable zone — where liquid water could exist
 - **get_transit_planets**: Transit is the most productive method (>75% of all discoveries). Kepler and TESS are the primary transit missions.
 
 Get exoplanets discovered via the transit method (Kepler/TESS)
+- **query_confirmed_planets**: Filter by planet name, discovery method (Transit, Radial Velocity, Imaging, Microlensing), discovery facility (Kepler, TESS, Keck), or year. Returns orbital period, radius, mass, equilibrium temperature.
+
+Search confirmed exoplanets by name, discovery method, facility, or year
 
 
 ## 💬 Prompt Examples

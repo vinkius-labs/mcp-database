@@ -28,26 +28,26 @@ Connect your AI agent to **Konnektive CRM** to automate and streamline your e-co
 
 
 ## Available Tools (10)
-- **get_customer_details**: Get details for a specific customer
-- **query_konnektive_transactions**: Provide filters as a JSON string.
-
-Search for payment transactions
 - **list_billing_campaigns**: List all campaigns
+- **list_fulfillment_houses**: List fulfillment centers
 - **list_konnektive_products**: List all products
 - **update_order_shipping_address**: Provide address as a JSON string.
 
 Update the shipping address for an order
-- **list_fulfillment_houses**: List fulfillment centers
+- **get_customer_details**: Get details for a specific customer
 - **get_konnektive_audit_logs**: Provide filters as a JSON string.
 
 Retrieve system audit logs
 - **get_order_details**: Get details for a specific order
-- **query_konnektive_orders**: Provide filters as a JSON string.
-
-Search for orders in Konnektive
 - **query_konnektive_customers**: Provide filters as a JSON string.
 
 Search for customers
+- **query_konnektive_transactions**: Provide filters as a JSON string.
+
+Search for payment transactions
+- **query_konnektive_orders**: Provide filters as a JSON string.
+
+Search for orders in Konnektive
 
 
 ## 💬 Prompt Examples
