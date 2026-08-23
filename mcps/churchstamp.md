@@ -40,13 +40,13 @@ No more manual uploading of recipient CSVs or guessing mail delivery dates. Your
 - **create_campaign**: Optionally assign a design template.
 
 Create a mail campaign
-- **create_contact**: Add a contact
 - **get_campaign**: Get campaign details
 - **get_user_details**: Get your account
-- **list_campaigns**: List all mail campaigns
-- **get_design**: Get design details
-- **list_contacts**: List all contacts
 - **list_designs**: List all postcard designs
+- **create_contact**: Add a contact
+- **get_design**: Get design details
+- **list_campaigns**: List all mail campaigns
+- **list_contacts**: List all contacts
 - **send_mail**: Send a postcard
 
 

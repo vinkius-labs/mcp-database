@@ -36,16 +36,16 @@ No more manual checking of paper files or missing critical assessment deadlines.
 
 
 ## Available Tools (10)
-- **list_reports**: List case reports
-- **check_mpumanager_status**: Verify MPU Manager API connectivity
-- **create_appointment**: Schedule an appointment
 - **create_case**: Create a new case
-- **get_appointment**: Get appointment details
 - **get_case**: Get case details
 - **get_client**: Get client details
 - **list_appointments**: List all appointments
 - **list_cases**: List all cases
 - **list_clients**: List all clients
+- **check_mpumanager_status**: Verify MPU Manager API connectivity
+- **create_appointment**: Schedule an appointment
+- **get_appointment**: Get appointment details
+- **list_reports**: List case reports
 
 
 ## 💬 Prompt Examples

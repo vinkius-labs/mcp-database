@@ -35,11 +35,11 @@ Empower your AI agent to orchestrate your entire literary research and quote aud
 
 
 ## Available Tools (6)
-- **check_api_status**: Check if the Quotable API service is operational
-- **get_author_details**: Get full details and biography for a specific author by slug
 - **get_random_quote**: Get a random quote with optional tag or author filters
 - **list_quote_authors**: List all authors in the database with their descriptions
 - **list_quote_tags**: List all available quote tags and their quote counts
+- **check_api_status**: Check if the Quotable API service is operational
+- **get_author_details**: Get full details and biography for a specific author by slug
 - **search_quotes**: Search for quotes by keyword or phrase
 
 

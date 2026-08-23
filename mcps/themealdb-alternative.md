@@ -37,8 +37,8 @@ Get a random meal suggestion
 - **list_ingredients**: List all available ingredients
 - **list_areas**: List all cuisine areas
 - **list_categories**: List all meal categories
-- **lookup_meal**: Get full details of a meal by ID
 - **search_by_letter**: Search meals by first letter
+- **lookup_meal**: Get full details of a meal by ID
 - **search_meals**: Returns up to 100 results with basic info.
 
 Search for meals by name

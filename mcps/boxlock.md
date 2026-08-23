@@ -36,12 +36,12 @@ No more manual status checking of individual locks or missing delivery attempts.
 
 
 ## Available Tools (7)
-- **get_lock**: Get lock details
 - **list_activities**: List lock activity logs
 - **list_barcodes**: List all active barcodes
 - **list_locations**: List all locations
-- **list_locks**: List all BoxLock smart locks
 - **list_users**: List all organization users
+- **get_lock**: Get lock details
+- **list_locks**: List all BoxLock smart locks
 - **press_to_open**: Pass data as a JSON string.
 
 Remotely authorize a lock to be opened

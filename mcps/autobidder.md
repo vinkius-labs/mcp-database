@@ -36,7 +36,6 @@ No more manual checking of tender portals or missing bid deadlines. Your AI acts
 
 
 ## Available Tools (10)
-- **create_request**: Create a bid request
 - **get_profile**: Get your profile
 - **get_request**: Get request details
 - **list_bids**: List all bids
@@ -46,6 +45,7 @@ No more manual checking of tender portals or missing bid deadlines. Your AI acts
 - **get_bid**: Get bid details
 - **get_outcome**: Get outcome details
 - **check_autobidder_status**: Verify AutoBidder API connectivity
+- **create_request**: Create a bid request
 
 
 ## 💬 Prompt Examples

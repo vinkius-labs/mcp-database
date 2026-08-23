@@ -43,15 +43,15 @@ Start a 3D render job
 - **get_account**: io account details and render credit balance.
 
 Get account info
+- **list_renders**: List product renders
+- **list_materials**: List available materials
+- **get_scene**: Get scene details
 - **get_job_status**: Check render job status
 - **get_product**: Get product details
-- **list_scenes**: List all scenes
-- **list_renders**: List product renders
-- **get_scene**: Get scene details
-- **list_materials**: List available materials
 - **list_products**: io account with their render status and metadata.
 
 List all 3D products
+- **list_scenes**: List all scenes
 
 
 ## 💬 Prompt Examples

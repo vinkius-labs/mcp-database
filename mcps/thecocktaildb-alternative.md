@@ -35,8 +35,6 @@ Equip your AI agent with the most comprehensive cocktail intelligence available 
 
 
 ## Available Tools (12)
-- **filter_by_category**: Filter cocktails by category
-- **filter_by_ingredient**: Filter cocktails by ingredient
 - **list_alcoholic_filters**: g., Alcoholic, Non-Alcoholic).
 
 List alcoholic filters
@@ -44,13 +42,15 @@ List alcoholic filters
 - **list_glasses**: List cocktail glasses
 - **list_ingredients**: List all ingredients
 - **get_cocktail_details**: Get cocktail details by ID
-- **get_ingredient_details**: Get ingredient details by ID
 - **get_random_cocktail**: Get a random cocktail
-- **search_ingredient_by_name**: Search for an ingredient by name
 - **search_cocktail_by_first_letter**: Search for a cocktail by first letter
+- **search_ingredient_by_name**: Search for an ingredient by name
 - **search_cocktail_by_name**: g., Margarita).
 
 Search for a cocktail by name
+- **filter_by_category**: Filter cocktails by category
+- **filter_by_ingredient**: Filter cocktails by ingredient
+- **get_ingredient_details**: Get ingredient details by ID
 
 
 ## 💬 Prompt Examples

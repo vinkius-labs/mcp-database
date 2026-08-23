@@ -36,18 +36,18 @@ No more manual entry of paper business cards. Your AI acts as your dedicated net
 
 
 ## Available Tools (12)
-- **get_click_analytics**: Get detailed click analytics
 - **create_lead**: Manually create a new lead
-- **get_lead_details**: Get details for a specific lead
+- **get_click_analytics**: Get detailed click analytics
 - **get_my_profile**: Get your Cnnect profile data
-- **get_account_settings**: Get Cnnect account settings
 - **list_physical_cards**: List your physical NFC cards
 - **list_tags**: List lead tags
-- **update_profile**: Update your digital business card profile
 - **get_analytics_summary**: Get overall usage analytics
 - **get_card_details**: Get details for a specific NFC card
-- **list_leads**: List leads captured via your card
 - **list_company_members**: List company team members
+- **get_account_settings**: Get Cnnect account settings
+- **get_lead_details**: Get details for a specific lead
+- **list_leads**: List leads captured via your card
+- **update_profile**: Update your digital business card profile
 
 
 ## 💬 Prompt Examples

@@ -23,11 +23,11 @@ Connect your **More Trees** account to any AI agent and manage reforestation ope
 
 
 ## Available Tools (11)
-- **check_moretrees_status**: Verify API connectivity
 - **get_account**: Get account info
 - **get_certificate**: Get planting certificate
 - **get_forest**: Get forest info
 - **get_impact_report**: Get impact report
+- **check_moretrees_status**: Verify API connectivity
 - **get_planting_status**: Get planting status
 - **get_project**: Get project details
 - **list_forests**: List all forests

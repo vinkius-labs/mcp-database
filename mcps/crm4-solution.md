@@ -17,15 +17,15 @@ The crm4 solution MCP server enables your AI agent to manage leads, campaigns, a
 - **delete_contact**: Permanently remove a contact
 - **get_contact**: Retrieve details for a specific contact
 - **list_calls**: Retrieve call center activity logs
-- **list_campaigns**: List all marketing/calling campaigns
-- **list_contacts**: List all contacts/leads
 - **list_contact_lists**: List all contact distribution lists
+- **list_contacts**: List all contacts/leads
 - **search_contacts**: Search for contacts using filters
+- **update_contact**: Update an existing contact
+- **create_contact**: Create a new contact in the CRM
+- **add_contact_to_list**: Add a contact to a specific distribution list
+- **list_campaigns**: List all marketing/calling campaigns
 - **send_sms**: Send an SMS message to a contact
 - **send_whatsapp**: Send a WhatsApp message (requires approved template)
-- **update_contact**: Update an existing contact
-- **add_contact_to_list**: Add a contact to a specific distribution list
-- **create_contact**: Create a new contact in the CRM
 
 
 ## 💬 Prompt Examples

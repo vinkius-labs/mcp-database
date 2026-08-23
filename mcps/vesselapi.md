@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire maritime research and vessel au
 
 
 ## Available Tools (6)
-- **search_vessels**: Search for vessels by name
-- **check_api_status**: Check if the VesselAPI is operational
 - **get_vessel_position**: Get the latest AIS position for a vessel
-- **get_vessel_schedules**: Get upcoming port calls and schedules for a vessel
-- **get_vessel_details**: Get comprehensive details for a vessel by IMO number
 - **list_maritime_ports**: List globalThis maritime ports supported by VesselAPI
+- **get_vessel_details**: Get comprehensive details for a vessel by IMO number
+- **get_vessel_schedules**: Get upcoming port calls and schedules for a vessel
+- **check_api_status**: Check if the VesselAPI is operational
+- **search_vessels**: Search for vessels by name
 
 
 ## 💬 Prompt Examples

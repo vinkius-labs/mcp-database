@@ -34,16 +34,16 @@ Connect your **Mapflow** account to any AI agent and manage geospatial AI proces
 
 
 ## Available Tools (7)
+- **get_processing_result**: Get processing result data
+- **list_models**: List available geospatial AI models
+- **list_processings**: List all geospatial processings
 - **create_processing**: Pass data as a JSON string.
 
 Start a new imagery analysis
 - **create_project**: Pass data as a JSON string.
 
 Create a new project
-- **get_processing_result**: Get processing result data
-- **list_models**: List available geospatial AI models
 - **get_processing_status**: Check status of a processing job
-- **list_processings**: List all geospatial processings
 - **list_projects**: List all MapFlow projects
 
 

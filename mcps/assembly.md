@@ -25,15 +25,15 @@ Connect your Assembly account via your API Key to manage your professional servi
 
 ## Available Tools (10)
 - **get_client**: Get details for a specific client
-- **get_company**: Get details for a specific company
-- **get_note**: Get a specific note
 - **get_user**: Get details for a specific user
 - **get_workspace**: Get a specific workspace
-- **list_clients**: List all Assembly clients
 - **list_companies**: List all Assembly companies
 - **list_notes**: List Assembly notes
-- **list_users**: List all Assembly users
 - **list_workspaces**: List all Assembly workspaces
+- **get_company**: Get details for a specific company
+- **get_note**: Get a specific note
+- **list_clients**: List all Assembly clients
+- **list_users**: List all Assembly users
 
 
 ## 💬 Prompt Examples

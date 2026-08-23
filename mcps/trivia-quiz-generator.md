@@ -36,8 +36,8 @@ Equip your AI agent with a source of endless knowledge via **The Trivia API** MC
 
 ## Available Tools (3)
 - **list_trivia_categories**: List trivia categories
-- **get_trivia_questions**: Get trivia questions
 - **list_trivia_tags**: List trivia tags
+- **get_trivia_questions**: Get trivia questions
 
 
 ## 💬 Prompt Examples
