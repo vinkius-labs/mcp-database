@@ -19,6 +19,7 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 | [Loot Box Expectation Calculator](../mcps/loot-box-expectation-calculator.md) | Calculate gacha success probabilities, expected costs, and bad luck streak risks. |
 | [Loot Drop Probability Engine](../mcps/loot-drop-probability-engine.md) | Analyze loot table probabilities, pity mechanics, and economic value distributions. |
 | [Mastery Progression Calculator](../mcps/mastery-progression-calculator.md) | Simulate skill progression through mastery tiers based on gameplay frequency and streak bonuses. |
+| [Matchmaking Elo Calculator](../mcps/matchmaking-elo-calculator.md) | Deterministic Elo and Glicko rating updates for competitive matchmaking. |
 | [Player Spending LTV Calculator](../mcps/player-spending-ltv-calculator.md) | Calculate player Lifetime Value (LTV), Breakeven CAC, and retention impact. |
 | [Poker Odds Calculator](../mcps/poker-odds-calculator.md) | Calculate exact probabilities, equities, and outs for Texas Hold'em and Omaha. |
 | [RPG Damage Engine](../mcps/rpg-damage-engine.md) | Calculate and analyze TTRPG damage distributions, critical hits, and encounter probabilities. |
@@ -26,6 +27,7 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 | [RPG Stat Scaling Calculator](../mcps/rpg-stat-scaling-calculator.md) | Analyze RPG character progression with precise diminishing returns and scaling models. |
 | [Screen Stretch Resolver](../mcps/screen-stretch-resolver.md) | Calculate pixel stretching, FOV shifts, and coordinate mapping for stretched resolutions. |
 | [Skill Tree Optimization Engine](../mcps/skill-tree-optimization-engine.md) | Optimize skill point allocation for maximum DPS, survivability, or balanced utility. |
+| [Status Effect Stacking Analyzer](../mcps/status-effect-stacking-analyzer.md) | A deterministic engine for calculating complex status effect interactions and stacking. |
 | [Tabletop RPG Mechanics Engine](../mcps/tabletop-rpg-mechanics-engine.md) | Deterministic mathematical resolution for TTRPG mechanics like D&D 5e. |
 
 

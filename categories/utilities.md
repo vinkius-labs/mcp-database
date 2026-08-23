@@ -47,7 +47,9 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Geographic Distance Calculator](../mcps/geographic-distance-calculator.md) | Calculate precise distances, bearings, and waypoints using Haversine, Vincenty, and Euclidean models. |
 | [Golf Handicap Calculator](../mcps/golf-handicap-calculator.md) | Deterministic golf handicap calculation per USGA/WHS standards. |
 | [Groove Quantize Calculator](../mcps/groove-quantize-calculator.md) | Calculate precise millisecond-based quantization grids, swing offsets, and latency compensation for DAWs. |
+| [HbA1c to Average Glucose Converter](../mcps/hba1c-to-average-glucose-converter.md) | Convert HbA1c percentages into estimated average glucose (eAG) and clinical glycemic metrics. |
 | [Heat Index Calculator](../mcps/heat-index-calculator.md) | Calculate perceived temperature and heat-related health risks. |
+| [Insulin Dose Calculator](../mcps/insulin-dose-calculator.md) | A deterministic tool for calculating mealtime insulin doses and estimating insulin on board. |
 | [IP Address & Subnet Calculator](../mcps/ip-address-subnet-calculator.md) | Perform precise bitwise IPv4 and IPv6 subnet calculations and membership checks. |
 | [ISBN-10 and ISBN-13 Validator](../mcps/isbn-10-and-isbn-13-validator.md) | Verify the mathematical integrity of ISBN-10 and ISBN-13 identifiers and identify registration groups. |
 | [ISO 8601 Duration Parser](../mcps/iso-8601-duration-parser.md) | Extracts time components and calculates total seconds from ISO 8601 duration strings. |

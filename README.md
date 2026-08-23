@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,601 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,626 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -13,7 +13,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [productivity](categories/productivity.md) (952 servers)
 - [developer-tools](categories/developer-tools.md) (689 servers)
 - [industry-titans](categories/industry-titans.md) (587 servers)
-- [finance](categories/finance.md) (478 servers)
+- [finance](categories/finance.md) (479 servers)
 - [data-analytics](categories/data-analytics.md) (329 servers)
 - [marketing-automation](categories/marketing-automation.md) (240 servers)
 - [ecommerce](categories/ecommerce.md) (206 servers)
@@ -24,8 +24,9 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [customer-support](categories/customer-support.md) (106 servers)
 - [the-unthinkable](categories/the-unthinkable.md) (106 servers)
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
-- [utilities](categories/utilities.md) (100 servers)
+- [utilities](categories/utilities.md) (102 servers)
 - [ai-frontier](categories/ai-frontier.md) (99 servers)
+- [health](categories/health.md) (70 servers)
 - [security](categories/security.md) (67 servers)
 - [human-resources](categories/human-resources.md) (63 servers)
 - [sales-automation](categories/sales-automation.md) (60 servers)
@@ -35,7 +36,6 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [data-management](categories/data-management.md) (56 servers)
 - [growth-engine](categories/growth-engine.md) (55 servers)
 - [finance-accounting](categories/finance-accounting.md) (54 servers)
-- [health](categories/health.md) (53 servers)
 - [marketing](categories/marketing.md) (53 servers)
 - [ship-it](categories/ship-it.md) (48 servers)
 - [construction](categories/construction.md) (43 servers)
@@ -52,14 +52,14 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [customer-relationship-management](categories/customer-relationship-management.md) (31 servers)
 - [security-compliance](categories/security-compliance.md) (31 servers)
 - [lifestyle](categories/lifestyle.md) (30 servers)
+- [optimization](categories/optimization.md) (30 servers)
 - [friends-mcp](categories/friends-mcp.md) (29 servers)
 - [design-creative](categories/design-creative.md) (28 servers)
 - [healthcare](categories/healthcare.md) (28 servers)
-- [optimization](categories/optimization.md) (28 servers)
 - [education](categories/education.md) (26 servers)
+- [gaming](categories/gaming.md) (25 servers)
 - [iot-hardware](categories/iot-hardware.md) (25 servers)
 - [automation](categories/automation.md) (24 servers)
-- [gaming](categories/gaming.md) (23 servers)
 - [government-public-data](categories/government-public-data.md) (23 servers)
 - [superpower](categories/superpower.md) (23 servers)
 - [business-intelligence](categories/business-intelligence.md) (19 servers)
@@ -87,9 +87,9 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [devops-cicd](categories/devops-cicd.md) (8 servers)
 - [scheduling](categories/scheduling.md) (8 servers)
 - [travel-hospitality](categories/travel-hospitality.md) (8 servers)
+- [analysis](categories/analysis.md) (7 servers)
 - [business](categories/business.md) (7 servers)
 - [fitness](categories/fitness.md) (7 servers)
-- [analysis](categories/analysis.md) (6 servers)
 - [communication](categories/communication.md) (6 servers)
 - [crm-sales](categories/crm-sales.md) (6 servers)
 - [data-extraction](categories/data-extraction.md) (6 servers)
