@@ -20,8 +20,8 @@ When asked to convert complex numbers into Roman numerals, AI models frequently 
 
 
 ## Available Tools (2)
-- **convert_from_roman**: Converts a Roman numeral string back into a standard integer. Includes strict format validation
 - **convert_to_roman**: Converts a standard integer into a Roman numeral string. Supports numbers from 1 to 3999
+- **convert_from_roman**: Converts a Roman numeral string back into a standard integer. Includes strict format validation
 
 
 ## 💬 Prompt Examples

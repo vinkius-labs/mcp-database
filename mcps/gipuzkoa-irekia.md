@@ -34,15 +34,15 @@ Connect to the **Gipuzkoa Irekia** open data portal and empower your AI agent to
 
 
 ## Available Tools (9)
-- **list_organizations**: List all organization names
-- **show_group**: Get details for a specific group
 - **show_organization**: Get details for a specific organization
-- **list_packages**: List all dataset (package) names
-- **search_packages**: Search for datasets
-- **show_package**: Get metadata for a specific dataset
 - **search_resources**: Search for resources
 - **show_resource**: Get metadata for a specific resource
 - **list_groups**: List all group names
+- **list_organizations**: List all organization names
+- **list_packages**: List all dataset (package) names
+- **search_packages**: Search for datasets
+- **show_group**: Get details for a specific group
+- **show_package**: Get metadata for a specific dataset
 
 
 ## 💬 Prompt Examples
