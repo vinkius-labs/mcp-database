@@ -15,17 +15,17 @@ The Mela MCP server connects your AI agent directly to your workspace. Send chan
 
 ## Available Tools (12)
 - **list_teams**: List teams in the workspace
-- **list_users**: List all workspace members
-- **log_materials**: Track material consumption on-site
 - **log_work_hours**: Record man-hours for an activity
-- **post_message**: Send a text update or note to an activity feed
-- **get_accounting_data**: Retrieve cost and accounting data for an activity
 - **get_activity**: Retrieve details for a specific activity
-- **update_activity_status**: Change the status of an activity
 - **create_activity**: Create a new job site or activity
 - **get_me**: Retrieve information about the current user
 - **list_activities**: List all job sites/activities
+- **get_accounting_data**: Retrieve cost and accounting data for an activity
 - **list_checklists**: Retrieve all checklists associated with an activity
+- **list_users**: List all workspace members
+- **log_materials**: Track material consumption on-site
+- **post_message**: Send a text update or note to an activity feed
+- **update_activity_status**: Change the status of an activity
 
 
 ## 💬 Prompt Examples

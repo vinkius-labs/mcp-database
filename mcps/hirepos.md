@@ -46,11 +46,11 @@ Connect your **HirePOS** account to any AI agent and manage your equipment renta
 - **get_item**: Get item details
 - **list_availability**: List availability
 - **list_customers**: List customers
-- **list_hires_by_status**: Filter hires by status
 - **list_hires**: List all hires
+- **list_hires_by_status**: Filter hires by status
 - **list_invoices**: List invoices
-- **list_items_by_category**: Filter items by category
 - **list_items**: List inventory items
+- **list_items_by_category**: Filter items by category
 - **list_overdue_hires**: List overdue hires
 
 

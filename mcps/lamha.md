@@ -37,9 +37,9 @@ Connect your **Lamha** account to any AI agent and manage HR operations through 
 - **cancel_order**: Cancel an existing order
 - **check_city_coverage**: Check delivery coverage for a city
 - **get_order**: Get details for a specific order
-- **list_inventory**: List product inventory
-- **create_order**: Create a new logistics order
 - **list_carriers**: List delivery carriers
+- **create_order**: Create a new logistics order
+- **list_inventory**: List product inventory
 - **list_orders**: List Lamha orders
 - **list_warehouses**: List warehouses
 

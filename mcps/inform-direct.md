@@ -37,17 +37,17 @@ No more manual logging into Companies House or secretarial portals to check dead
 
 ## Available Tools (10)
 - **check_informdirect_status**: Verify Inform Direct API connectivity
+- **get_company**: Get company details
+- **get_filing_status**: Get filing deadlines
+- **list_directors**: List company directors
+- **list_filings**: List company filings
+- **add_company**: Add a company
+- **get_account**: Get account info
+- **list_companies**: List all companies
 - **list_shareholders**: List shareholders
 - **remove_company**: This does not affect the company at Companies House.
 
 Remove a company
-- **get_account**: Get account info
-- **get_company**: Get company details
-- **get_filing_status**: Get filing deadlines
-- **list_companies**: List all companies
-- **list_directors**: List company directors
-- **list_filings**: List company filings
-- **add_company**: Add a company
 
 
 ## 💬 Prompt Examples

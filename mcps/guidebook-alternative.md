@@ -39,15 +39,15 @@ No more manual editing of sessions or locations through complex web builders. Yo
 - **list_attendees**: List attendees
 - **list_custom_list_items**: List custom list items
 - **list_custom_lists**: List custom lists
-- **list_events**: List sessions
 - **list_guides**: List guides
 - **list_locations**: List locations
 - **update_guide**: Update a guide
-- **check_guidebook_status**: Verify connectivity
-- **create_custom_list_item**: Add list item
 - **create_guide**: Create a guide
 - **get_event**: Get session details
 - **get_guide**: Get guide details
+- **check_guidebook_status**: Verify connectivity
+- **create_custom_list_item**: Add list item
+- **list_events**: List sessions
 
 
 ## 💬 Prompt Examples

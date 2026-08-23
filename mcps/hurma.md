@@ -35,18 +35,18 @@ Connect your **Hurma** instance to any AI agent and manage your HR operations th
 
 
 ## Available Tools (12)
+- **get_vacation_balance**: Get employee vacation balance
+- **list_departments**: List all company departments
+- **list_employees**: List all employees
+- **get_candidate_details**: Get details for a specific candidate
+- **list_candidates**: List recruitment candidates
 - **create_candidate**: Create a new candidate
 - **create_leave_request**: Create a new leave or absence request
 - **export_overtimes**: Export overtime data
-- **get_vacation_balance**: Get employee vacation balance
 - **get_employee_details**: Get details for a specific employee
-- **list_departments**: List all company departments
-- **list_employees**: List all employees
-- **list_out_of_office**: List employees currently out of office
 - **list_custom_properties**: List custom field definitions
+- **list_out_of_office**: List employees currently out of office
 - **list_vacancy_stages**: List recruitment stages
-- **get_candidate_details**: Get details for a specific candidate
-- **list_candidates**: List recruitment candidates
 
 
 ## 💬 Prompt Examples

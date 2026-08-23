@@ -27,14 +27,14 @@ Connect your **Mav** account to any AI agent and take full control of your conve
 
 
 ## Available Tools (8)
-- **get_lead**: Get lead details
 - **get_playbook**: Get playbook details
-- **list_events**: List conversation events
 - **list_leads**: List all leads
 - **list_outcomes**: g., qualified, unqualified).
 
 List possible conversation outcomes
 - **list_playbooks**: List all conversational AI playbooks
+- **get_lead**: Get lead details
+- **list_events**: List conversation events
 - **trigger_playbook**: Trigger a playbook for a lead
 - **update_lead**: Update lead information
 

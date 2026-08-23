@@ -22,11 +22,11 @@ Connect your **Liaison WebAdMIT** account to any AI agent and manage admissions 
 
 
 ## Available Tools (11)
+- **get_export**: Get export details
+- **get_program**: Get program details
 - **check_liaison_status**: Verify API connectivity
 - **get_application**: Get application details
 - **get_batch**: Get batch details
-- **get_export**: Get export details
-- **get_program**: Get program details
 - **list_applications**: List all applications
 - **list_programs**: List academic programs
 - **list_batches**: List application batches

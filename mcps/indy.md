@@ -35,17 +35,17 @@ Connect your **Indy** account to any AI agent and manage forms and records throu
 
 ## Available Tools (12)
 - **create_form**: Create a new form
-- **create_webhook**: Create a new webhook
 - **delete_form**: Delete a form
-- **delete_webhook**: Delete a webhook
 - **get_account_info**: Get account status
 - **get_form**: Get form details
+- **create_webhook**: Create a new webhook
+- **delete_webhook**: Delete a webhook
 - **get_record**: Get submission details
+- **list_webhooks**: List active webhooks
 - **get_user**: Get user details
 - **list_forms**: List all forms
 - **list_records**: List form submissions
 - **list_users**: List connected users
-- **list_webhooks**: List active webhooks
 
 
 ## 💬 Prompt Examples

@@ -36,19 +36,19 @@ No more manual time logging or complex navigation through fragmented project lis
 
 
 ## Available Tools (11)
-- **create_project**: Create a new project
-- **create_task**: Create a new task
-- **get_project_details**: Get details for a project
-- **list_customers**: List all customers
-- **list_forms**: List HSE/QA forms
 - **list_tasks**: Optionally filter by project ID.
 
 List tasks
 - **list_workspace_users**: List all users in the workspace
 - **register_hours**: Register work hours
-- **list_registered_hours**: List all registered hours
-- **list_projects**: List all projects
 - **create_customer**: Create a new customer
+- **create_project**: Create a new project
+- **create_task**: Create a new task
+- **get_project_details**: Get details for a project
+- **list_customers**: List all customers
+- **list_forms**: List HSE/QA forms
+- **list_projects**: List all projects
+- **list_registered_hours**: List all registered hours
 
 
 ## 💬 Prompt Examples

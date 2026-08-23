@@ -35,13 +35,13 @@ Connect your **Influencers Club** account to any AI agent and discover creators 
 
 
 ## Available Tools (8)
-- **enrich_by_email**: Convert an email address into a full social profile
 - **get_creator_posts**: Access recent posts and historical content data
 - **get_similar_creators**: Find lookalike profiles based on a specific creator
 - **get_usage**: Monitor API consumption and usage limits
 - **get_user_info**: Check account status and remaining credits
 - **search_creators**: Search for creators using filters
 - **enrich_by_handle**: Get full profile data using a social media handle
+- **enrich_by_email**: Convert an email address into a full social profile
 - **get_audience_overlap**: Analyze shared audiences between different creators
 
 

@@ -33,14 +33,14 @@ Connect your **Knackly** account to any AI agent and automate document generatio
 
 
 ## Available Tools (8)
-- **create_data_record**: Add a new record
 - **get_record_details**: Get details for a specific record
 - **list_catalogs**: List catalogs in a workspace
-- **list_generated_documents**: List automated documents
 - **list_data_models**: List models in a catalog
-- **list_data_records**: List records for a model
-- **list_webhooks**: List configured webhooks
 - **list_workspaces**: List Knackly workspaces
+- **create_data_record**: Add a new record
+- **list_data_records**: List records for a model
+- **list_generated_documents**: List automated documents
+- **list_webhooks**: List configured webhooks
 
 
 ## 💬 Prompt Examples

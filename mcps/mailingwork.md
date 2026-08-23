@@ -34,18 +34,18 @@ Connect your **Mailingwork** account to any AI agent and manage email campaigns 
 
 
 ## Available Tools (10)
-- **create_subscriber**: Create a new subscriber
 - **get_mailing**: Get mailing details
-- **get_subscriber**: Get subscriber details
 - **list_lists**: List all subscriber lists
+- **update_subscriber**: Update an existing subscriber
+- **create_subscriber**: Create a new subscriber
+- **get_subscriber**: Get subscriber details
+- **list_mailings**: List all mailings/campaigns
+- **list_subscribers**: List all subscribers
+- **list_tags**: List all tags
 - **send_transactional_email**: g., order confirmation).
 
 Send a transactional email
-- **update_subscriber**: Update an existing subscriber
-- **list_subscribers**: List all subscribers
-- **list_tags**: List all tags
 - **trigger_automation**: Trigger an automated workflow
-- **list_mailings**: List all mailings/campaigns
 
 
 ## 💬 Prompt Examples
