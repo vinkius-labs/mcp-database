@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your real-time communication infrastructure
 
 
 ## Available Tools (8)
-- **get_room_streams**: List active streams in a room
-- **check_user_status**: Check status of multiple users
-- **get_online_count**: Get total online user count
 - **get_room_users**: List users in a room
 - **get_usage_stats**: Get service usage statistics
 - **kick_room_user**: Kick user from room
+- **get_room_streams**: List active streams in a room
+- **check_user_status**: Check status of multiple users
+- **get_online_count**: Get total online user count
 - **list_rooms**: List active rooms
 - **stop_media_stream**: Force stop a stream
 

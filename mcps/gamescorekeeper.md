@@ -35,15 +35,15 @@ Connect **GameScorekeeper** to your AI agent for real-time football (soccer) int
 
 
 ## Available Tools (10)
+- **get_fixture_details**: Get detailed match information
+- **list_competitions**: List all supported esports tournaments and leagues
 - **get_competition_details**: Get detailed info for a specific tournament
 - **get_team_form**: Get recent performance form for a team
 - **get_team_details**: Get basic information and logo for an esports team
 - **list_competition_stages**: List stages (e.g., Playoffs, Group Stage) for a competition
-- **list_competitions**: List all supported esports tournaments and leagues
 - **list_fixtures**: List upcoming and past esports matches
-- **get_fixture_lineup**: Get player lineups for a specific match
-- **get_fixture_details**: Get detailed match information
 - **get_player_stats**: Retrieve historical performance metrics for a player
+- **get_fixture_lineup**: Get player lineups for a specific match
 - **get_player_details**: Get individual player profile
 
 

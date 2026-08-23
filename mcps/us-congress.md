@@ -36,18 +36,18 @@ Connect the **U.S. Congress API** to your AI agent and access comprehensive legi
 
 
 ## Available Tools (8)
-- **list_congress_amendments**: List legislative amendments
+- **get_bill_details**: Get full details for a specific legislative bill
 - **list_congress_bills**: gov database.
 
 List bills from the current or specified Congress
+- **list_congress_nominations**: List executive and judicial nominations
+- **list_congress_amendments**: List legislative amendments
 - **list_congress_committees**: List congressional committees
+- **list_congress_members**: List current or past members of the US Congress
 - **list_congress_sessions**: g., 118th, 117th) and their start and end dates.
 
 List historical congressional sessions
-- **list_congress_members**: List current or past members of the US Congress
-- **list_congress_nominations**: List executive and judicial nominations
 - **list_congress_treaties**: List treaties handled by Congress
-- **get_bill_details**: Get full details for a specific legislative bill
 
 
 ## 💬 Prompt Examples

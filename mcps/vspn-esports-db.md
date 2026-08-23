@@ -36,10 +36,10 @@ Stop manually refreshing league standings pages. Your AI now monitors tournament
 
 ## Available Tools (10)
 - **get_match_stream**: Get live streaming URLs for a match
+- **getPlayerStats**: Retrieve individual player tournament stats
 - **get_standings**: Retrieve current tournament standings
 - **get_team_stats**: Retrieve aggregate team statistics
 - **get_matches**: List matches within a tournament
-- **getPlayerStats**: Retrieve individual player tournament stats
 - **get_players**: List rostered players on a team
 - **get_teams**: Retrieve esports teams in the database
 - **get_tournament_detail**: Retrieve details about a specific tournament

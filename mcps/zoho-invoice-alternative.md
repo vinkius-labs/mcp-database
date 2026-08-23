@@ -35,15 +35,16 @@ Connect your **Zoho Invoice** account to any AI agent and simplify how you manag
 
 
 ## Available Tools (12)
+- **check_zoho_invoice_status**: Returns a status indicator and organization metadata to confirm valid credentials.
+
+Verify Zoho Invoice API connectivity
 - **create_contact**: The contact name is required. Optionally provide company name, email, and phone.
 
 Create a new contact (customer) in Zoho Invoice
 - **create_invoice**: Requires the customer_id and at least one line_item with name and rate. The invoice is created in DRAFT status by default.
 
 Create a new invoice in Zoho Invoice
-- **get_contact**: Get full details of a specific contact
 - **get_invoice**: Get full details of a specific invoice
-- **get_item**: Get full details of a specific item
 - **list_contacts**: Optionally search by name. Returns contact names, IDs, emails, outstanding balances, and unused credits.
 
 List all contacts (customers) in Zoho Invoice
@@ -60,9 +61,8 @@ List all invoices in Zoho Invoice
 - **list_payments**: Useful for tracking cash flow and reconciliation.
 
 List all customer payments received
-- **check_zoho_invoice_status**: Returns a status indicator and organization metadata to confirm valid credentials.
-
-Verify Zoho Invoice API connectivity
+- **get_contact**: Get full details of a specific contact
+- **get_item**: Get full details of a specific item
 
 
 ## 💬 Prompt Examples

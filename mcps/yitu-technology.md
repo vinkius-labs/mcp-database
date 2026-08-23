@@ -35,24 +35,24 @@ Empower your AI agent to orchestrate your enterprise-grade visual intelligence a
 
 
 ## Available Tools (12)
-- **detect_active_liveness**: Returns per-action pass/fail.
-
-Active liveness detection with action verification
 - **add_face_to_repo**: Register a face in a repository
 - **compare_faces**: Verify if two faces match (1:1)
-- **create_face_repo**: Create a new facial repository
-- **delete_face_repo**: Delete a facial repository
 - **detect_face**: Detect faces in an image
-- **search_face_in_repo**: Returns top matches with confidence.
-
-Search for a face in a repository (1:N)
-- **list_repos**: List all facial repositories
-- **moderate_image**: Content moderation for images
-- **ocr_id_card**: Extract text from an ID card image
-- **remove_face_from_repo**: Remove a face from a repository
 - **detect_silent_liveness**: Detects photos, screens, and 3D masks.
 
 Silent liveness detection (anti-spoofing)
+- **list_repos**: List all facial repositories
+- **moderate_image**: Content moderation for images
+- **create_face_repo**: Create a new facial repository
+- **detect_active_liveness**: Returns per-action pass/fail.
+
+Active liveness detection with action verification
+- **delete_face_repo**: Delete a facial repository
+- **search_face_in_repo**: Returns top matches with confidence.
+
+Search for a face in a repository (1:N)
+- **ocr_id_card**: Extract text from an ID card image
+- **remove_face_from_repo**: Remove a face from a repository
 
 
 ## 💬 Prompt Examples

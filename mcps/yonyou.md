@@ -35,15 +35,15 @@ Empower your AI agent to orchestrate your entire enterprise operations with **Yo
 
 
 ## Available Tools (10)
-- **get_inventory**: Query ERP inventory
 - **get_org_info**: Get organization metadata
+- **list_suppliers**: List ERP suppliers
+- **get_inventory**: Query ERP inventory
 - **get_purchase_order**: Get purchase order details
 - **get_sales_order**: Get sales order details
 - **list_customers**: List ERP customers
 - **list_materials**: List master data materials
 - **list_purchase_orders**: List ERP purchase orders
 - **list_sales_orders**: List ERP sales orders
-- **list_suppliers**: List ERP suppliers
 - **list_vouchers**: List financial vouchers
 
 

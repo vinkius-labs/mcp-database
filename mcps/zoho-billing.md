@@ -16,13 +16,13 @@ The Zoho Billing MCP server integrates your financial operations with your AI ag
 ## Available Tools (12)
 - **list_credit_notes**: List all credit notes
 - **list_customers**: List all customers
+- **list_projects**: List all billable projects
 - **list_estimates**: List all estimates (quotes)
 - **list_expenses**: List all recorded expenses
 - **list_invoices**: List all invoices
 - **list_payments**: List all payments received
 - **list_plans**: List all pricing plans
 - **list_products**: List all products
-- **list_projects**: List all billable projects
 - **list_subscriptions**: List all subscriptions
 - **retrieve_customer**: Get details of a specific customer
 - **get_events**: List recent audit events/triggers

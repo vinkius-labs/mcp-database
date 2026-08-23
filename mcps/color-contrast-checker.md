@@ -38,12 +38,12 @@ Connect **Color Contrast Checker** to your AI agent and validate WCAG accessibil
 - **check_color_contrast**: 1 contrast ratio for a specific foreground and background color pair to audit visual accessibility.
 
 Check the WCAG contrast ratio between a foreground and background color
-- **check_danger_text_contrast**: Check contrast of standard danger/error red text on a background
 - **check_dark_mode_surface**: Check contrast against a standard dark mode surface
-- **check_light_mode_surface**: Check contrast against a standard light mode surface
-- **check_text_on_pure_black**: Check contrast of a text color against a pure black background
 - **check_text_on_pure_white**: Check contrast of a text color against a pure white background
 - **check_white_text_on_bg**: Check contrast of pure white text against a specific background
+- **check_danger_text_contrast**: Check contrast of standard danger/error red text on a background
+- **check_light_mode_surface**: Check contrast against a standard light mode surface
+- **check_text_on_pure_black**: Check contrast of a text color against a pure black background
 
 
 ## 💬 Prompt Examples

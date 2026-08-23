@@ -34,18 +34,21 @@ Connect **Infisical** to your AI agent and manage your secrets infrastructure th
 
 
 ## Available Tools (9)
-- **list_audit_logs**: Essential for compliance and security monitoring.
-
-List recent audit log entries for the project
-- **list_environments**: g., dev, staging, prod) configured for the project. Use this to discover available environments before switching context.
-
-List all environments in the configured Infisical project
 - **create_secret**: The key must not already exist at that path. Use this to provision new configuration values or credentials.
 
 Create a new secret in the Infisical project
 - **delete_secret**: This action cannot be undone. Use with caution.
 
 Delete a secret from the Infisical project
+- **list_audit_logs**: Essential for compliance and security monitoring.
+
+List recent audit log entries for the project
+- **list_environments**: g., dev, staging, prod) configured for the project. Use this to discover available environments before switching context.
+
+List all environments in the configured Infisical project
+- **list_secrets**: Defaults to the root path "/" if no path is provided. Use this to audit what secrets are available or to verify configuration.
+
+List all secrets in a given path of the current project and environment
 - **get_project_info**: Get information about the configured Infisical project
 - **get_secret**: Requires the exact key name as stored in Infisical. Optionally specify a path if the secret is not at the root level.
 
@@ -53,9 +56,6 @@ Get a specific secret by its key name
 - **list_identities**: Useful for auditing automated access.
 
 List all machine identities configured in the organization
-- **list_secrets**: Defaults to the root path "/" if no path is provided. Use this to audit what secrets are available or to verify configuration.
-
-List all secrets in a given path of the current project and environment
 - **update_secret**: The key must exist; use create_secret for new entries.
 
 Update the value of an existing secret

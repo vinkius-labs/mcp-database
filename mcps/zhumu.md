@@ -35,14 +35,14 @@ Empower your AI agent to orchestrate your video collaboration with **Zhumu** (çž
 
 
 ## Available Tools (10)
+- **create_meeting**: Create a new meeting
 - **get_account_report**: Get usage reports
 - **get_meeting**: Get meeting details
-- **create_meeting**: Create a new meeting
-- **delete_meeting**: Delete a meeting
 - **get_user**: Get user details
 - **list_meetings**: List upcoming meetings
 - **list_recordings**: List cloud recordings
 - **list_users**: List organization users
+- **delete_meeting**: Delete a meeting
 - **list_webinars**: List scheduled webinars
 - **update_meeting**: Update meeting settings
 
