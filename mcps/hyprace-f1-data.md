@@ -38,17 +38,17 @@ Whether you are settling a debate about Senna vs. Schumacher or tracking the lat
 
 ## Available Tools (12)
 - **get_driver**: Get detailed information for a specific F1 driver
-- **get_race_results**: Retrieve Formula 1 race session results
 - **list_seasons**: List all available Formula 1 seasons (1950–Present)
-- **list_teams**: List Formula 1 teams (constructors)
-- **list_circuits**: List all Formula 1 tracks and circuits
 - **get_grand_prix**: Get detailed information for a specific Grand Prix event
 - **get_qualifying_results**: Retrieve Formula 1 qualifying session results
-- **get_standings**: Retrieve Formula 1 championship standings
 - **get_team**: Get detailed information for a specific F1 team
+- **get_race_results**: Retrieve Formula 1 race session results
+- **get_standings**: Retrieve Formula 1 championship standings
+- **list_circuits**: List all Formula 1 tracks and circuits
 - **list_drivers**: List Formula 1 drivers
 - **list_engine_manufacturers**: List all F1 engine builders and providers
 - **list_grands_prix**: List Formula 1 Grands Prix events and schedules
+- **list_teams**: List Formula 1 teams (constructors)
 
 
 ## 💬 Prompt Examples

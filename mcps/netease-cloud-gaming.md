@@ -37,13 +37,13 @@ Connect your AI agents to **NetEase Cloud Gaming (网易云游戏)**, the leadin
 ## Available Tools (10)
 - **add_user_quota**: Add cloud play time to a user account
 - **create_session**: Initialize a new NetEase cloud gaming session
-- **get_cluster_info**: Get detailed info for a specific cluster
-- **get_game_detail**: Get details for a specific NetEase cloud game
 - **get_session_status**: Check the status of a cloud gaming session
 - **get_system_health**: Check overall health of the NetEase Cloud Gaming platform
-- **get_user_quota**: Get remaining cloud play time for a user
 - **list_clusters**: List cloud gaming server clusters
 - **list_games**: List games available on NetEase Cloud Gaming
+- **get_cluster_info**: Get detailed info for a specific cluster
+- **get_game_detail**: Get details for a specific NetEase cloud game
+- **get_user_quota**: Get remaining cloud play time for a user
 - **stop_session**: Force stop an active cloud gaming session
 
 

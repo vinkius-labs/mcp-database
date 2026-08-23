@@ -35,12 +35,8 @@ Connect your AI agents to **Heybox** (小黑盒), the leading PC gaming communit
 
 
 ## Available Tools (10)
-- **get_heybox_app_status**: Get Heybox task and app status
 - **get_game_info**: Retrieve detailed information for a game
-- **get_market_prices**: g., CS2, PUBG skins).
-
-Check current market prices for game items
-- **get_match_history**: Get recent match history for a competitive game
+- **get_heybox_app_status**: Get Heybox task and app status
 - **get_post_detail**: Get complete content of a community post
 - **get_user_stats**: ).
 
@@ -48,6 +44,10 @@ Retrieve gaming statistics for a user
 - **list_community_posts**: List trending posts in a community board
 - **list_discount_games**: Retrieve the current discounted games
 - **list_game_news**: Get the latest gaming industry news
+- **get_market_prices**: g., CS2, PUBG skins).
+
+Check current market prices for game items
+- **get_match_history**: Get recent match history for a competitive game
 - **list_lotteries**: Retrieve current official lotteries
 
 

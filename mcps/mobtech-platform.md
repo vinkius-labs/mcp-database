@@ -34,9 +34,9 @@ Connect your AI agents to **MobTech**, China's leading mobile development SDK pr
 
 ## Available Tools (4)
 - **check_phone_status**: Check if a phone number limit has been reached
-- **get_share_analytics**: Get analytics for social sharing via ShareSDK
 - **get_social_auth_status**: Check the OAuth binding status for a user
 - **verify_sms_code**: Verify an SMS activation code sent to a user
+- **get_share_analytics**: Get analytics for social sharing via ShareSDK
 
 
 ## 💬 Prompt Examples

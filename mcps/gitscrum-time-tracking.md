@@ -35,50 +35,50 @@ Your agent eliminates the friction of manual time entry and gives you instant vi
 
 
 ## Available Tools (28)
-- **my_tasks**: Ideal for quickly finding what to track time on.
-
-Get tasks assigned to me across all workspaces
 - **budget_alerts**: Get budget threshold alerts
 - **budget_burndown**: Get budget burn-down chart data
-- **budget_consumption**: Get budget consumption breakdown
 - **budget_events**: Get budget event log
 - **budget_overview**: Get project budget overview
 - **projects_at_risk**: Get projects at budget risk
 - **standup_blockers**: Get current blockers
+- **stuck_tasks**: Get stuck tasks
+- **standup_summary**: Get daily standup summary
+- **team_status**: Get team member status
+- **my_today_tasks**: Perfect for daily time tracking workflow.
+
+Get tasks due today
+- **list_time_entries**: List time tracking entries for a project
+- **time_analytics**: Get time tracking analytics
+- **productivity_report**: Get productivity report
+- **time_reports**: Get comprehensive time reports
+- **team_time_report**: Get team time report
+- **time_timeline**: Get time entries timeline
+- **budget_consumption**: Get budget consumption breakdown
 - **completed_yesterday**: Get tasks completed yesterday
 - **contributors**: Filter by period (week, month, quarter, year).
 
 Get contributor activity summary
-- **weekly_digest**: Get weekly activity digest
-- **stuck_tasks**: Get stuck tasks
-- **standup_summary**: Get daily standup summary
-- **team_status**: Get team member status
+- **delete_time_entry**: Delete a time tracking entry
+- **get_active_timer**: Only one timer can be active at a time.
+
+Get the currently running timer
 - **get_task**: Use this to verify a task before starting a timer.
 
 Get task details by UUID
 - **list_tasks**: Filter by status (todo, in-progress, done).
 
 List project tasks for time tracking
-- **my_today_tasks**: Perfect for daily time tracking workflow.
-
-Get tasks due today
-- **get_active_timer**: Only one timer can be active at a time.
-
-Get the currently running timer
-- **time_analytics**: Get time tracking analytics
-- **delete_time_entry**: Delete a time tracking entry
-- **list_time_entries**: List time tracking entries for a project
 - **log_manual_time**: Use for retroactive time logging.
 
 Create a manual time entry
-- **productivity_report**: Get productivity report
-- **time_reports**: Get comprehensive time reports
+- **my_tasks**: Ideal for quickly finding what to track time on.
+
+Get tasks assigned to me across all workspaces
 - **start_timer**: Only one timer can be active at a time. Use stop_timer to end it.
 
 Start a timer on a task
 - **stop_timer**: Stop the running timer
-- **team_time_report**: Get team time report
-- **time_timeline**: Get time entries timeline
+- **weekly_digest**: Get weekly activity digest
 
 
 ## 💬 Prompt Examples

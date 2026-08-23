@@ -34,7 +34,6 @@ Your agent becomes the central knowledge repository, bridging personal memory wi
 
 
 ## Available Tools (28)
-- **list_channels**: List discussion channels
 - **list_discussions**: List all discussions in a project
 - **create_note_folder**: E.g., "Agent Memory", "Architecture Decisions", "Meeting Notes".
 
@@ -43,25 +42,17 @@ Create a note folder
 
 List note folders
 - **rename_note_folder**: Rename a note folder
-- **channel_messages**: Get messages in a channel
 - **search_channel_messages**: Search messages in a channel
 - **send_message**: Useful for agents to communicate findings or status updates.
 
 Send a message to a channel
-- **create_note**: Use this as persistent agent memory: store decisions, context, meeting notes, or ADRs. Content supports full markdown.
-
-Create a new note
 - **delete_note**: Delete a note permanently
 - **list_notes**: Perfect for agent memory — store context, decisions, and key information across sessions.
 
 List all notes in the workspace
-- **move_note_to_folder**: Move a note into a folder
 - **note_revisions**: Useful for tracking how knowledge evolved over time.
 
 Get note revision history
-- **update_note**: Use to append context or refine agent memory over time.
-
-Update an existing note
 - **get_channel**: Get channel details
 - **reply_to_message**: Reply to a message in a thread
 - **create_channel**: Create a discussion channel
@@ -72,18 +63,27 @@ Toggle note sharing visibility
 
 Search across all workspace resources
 - **thread_replies**: Get thread replies for a message
+- **delete_wiki_page**: Delete a wiki page
+- **get_wiki_page**: Get a wiki page with full content
 - **create_wiki_page**: Supports nested pages via parent_uuid.
 
 Create a wiki page
-- **delete_wiki_page**: Delete a wiki page
-- **get_wiki_page**: Get a wiki page with full content
+- **search_wiki**: Search wiki pages
+- **update_wiki_page**: Update a wiki page
+- **wiki_revisions**: Get wiki page revision history
+- **channel_messages**: Get messages in a channel
+- **create_note**: Use this as persistent agent memory: store decisions, context, meeting notes, or ADRs. Content supports full markdown.
+
+Create a new note
+- **list_channels**: List discussion channels
 - **list_wiki_pages**: Wiki pages support markdown and nested hierarchies.
 
 List wiki pages in a project
+- **move_note_to_folder**: Move a note into a folder
 - **restore_wiki_revision**: Restore a wiki page to a previous revision
-- **wiki_revisions**: Get wiki page revision history
-- **search_wiki**: Search wiki pages
-- **update_wiki_page**: Update a wiki page
+- **update_note**: Use to append context or refine agent memory over time.
+
+Update an existing note
 
 
 ## 💬 Prompt Examples

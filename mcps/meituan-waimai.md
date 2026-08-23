@@ -39,6 +39,9 @@ Your AI agent becomes your restaurant operations manager, handling order confirm
 
 
 ## Available Tools (10)
+- **mark_delivering**: Optionally includes delivery rider name and phone number for customer tracking. Use this for self-delivery orders where the restaurant manages their own riders. For Meituan-managed delivery, the platform handles this automatically.
+
+Mark a Meituan order as being delivered (out for delivery)
 - **cancel_order**: Requires a cancellation reason explaining why the order is being cancelled (e.g., "restaurant closed", "item out of stock", "unable to prepare"). The order must be in a cancellable state (not already completed or delivered). Use carefully as cancellations impact merchant ratings and customer experience.
 
 Cancel a Meituan delivery order with a reason
@@ -63,9 +66,6 @@ Approve or reject a refund request for a Meituan order
 - **list_menus**: Optionally filter by category ID to get items from a specific menu section (e.g., appetizers, mains, drinks). Critical for inventory management, price updates, and menu optimization. Returns stock quantities to help identify low-stock items.
 
 List menu items for a Meituan restaurant
-- **mark_delivering**: Optionally includes delivery rider name and phone number for customer tracking. Use this for self-delivery orders where the restaurant manages their own riders. For Meituan-managed delivery, the platform handles this automatically.
-
-Mark a Meituan order as being delivered (out for delivery)
 - **update_stock**: Use this to mark items as sold out (stock=0) when ingredients run out, or replenish stock when new inventory arrives. Stock changes immediately reflect on the customer-facing menu. Essential for preventing orders for unavailable items and maintaining accurate inventory. Food ID is obtained from the list_menus tool.
 
 Update stock quantity for a menu item in Meituan

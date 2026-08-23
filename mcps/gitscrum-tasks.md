@@ -35,8 +35,6 @@ Your agent handles the complete task lifecycle so you never need to context-swit
 
 
 ## Available Tools (28)
-- **update_task**: Update an existing task
-- **assign_member**: Assign a user to a task
 - **create_checklist_item**: Use parent_id to create sub-items.
 
 Add a checklist item to a task
@@ -44,41 +42,43 @@ Add a checklist item to a task
 
 List comments on a task
 - **set_task_estimate**: Set story points / estimate for a task
-- **my_tasks**: Get all tasks assigned to me
 - **related_tasks**: Get tasks related to a task
-- **list_subtasks**: List subtasks of a task
-- **list_checklists**: List checklists on a task
-- **toggle_checklist_item**: Toggle a checklist item done/undone
-- **create_comment**: Supports rich text content.
-
-Add a comment to a task
+- **my_tasks**: Get all tasks assigned to me
 - **delete_comment**: Delete a comment
-- **update_comment**: Edit an existing comment
-- **duplicate_task**: Duplicate a task
+- **toggle_checklist_item**: Toggle a checklist item done/undone
 - **list_effort_levels**: List effort/priority levels
+- **update_comment**: Edit an existing comment
 - **move_task_to_project**: Move a task to a different project
-- **link_subtask**: Link an existing task as a subtask
-- **unlink_subtask**: Unlink a subtask
-- **get_task_by_code**: g., WEB-42) instead of UUID.
-
-Get task by human-readable code
-- **create_task**: Create a new task
 - **delete_task**: This action cannot be undone.
 
 Delete a task permanently
-- **toggle_task_done**: Toggle task completion status
 - **get_task**: Get task details by UUID
-- **list_tasks**: Filter by status (todo, in-progress, done), sprint, user_story, users, labels, type, effort, workflow, is_blocker, is_archived, unassigned, created_at (YYYY-MM-DD=YYYY-MM-DD), closed_at, per_page.
-
-List tasks with advanced filters
 - **my_today_tasks**: Get tasks due today
+- **unassign_member**: Remove a user from a task
+- **assign_member**: Assign a user to a task
+- **create_comment**: Supports rich text content.
+
+Add a comment to a task
+- **create_task**: Create a new task
 - **create_task_type**: g., Chore, Tech Debt) with a hex color code.
 
 Create a new task type
+- **duplicate_task**: Duplicate a task
+- **get_task_by_code**: g., WEB-42) instead of UUID.
+
+Get task by human-readable code
+- **link_subtask**: Link an existing task as a subtask
+- **list_checklists**: List checklists on a task
+- **list_subtasks**: List subtasks of a task
+- **list_tasks**: Filter by status (todo, in-progress, done), sprint, user_story, users, labels, type, effort, workflow, is_blocker, is_archived, unassigned, created_at (YYYY-MM-DD=YYYY-MM-DD), closed_at, per_page.
+
+List tasks with advanced filters
 - **list_task_types**: ) with their colors.
 
 List task types in a project
-- **unassign_member**: Remove a user from a task
+- **toggle_task_done**: Toggle task completion status
+- **unlink_subtask**: Unlink a subtask
+- **update_task**: Update an existing task
 
 
 ## 💬 Prompt Examples

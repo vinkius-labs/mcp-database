@@ -32,41 +32,41 @@ Connect your **Google Classroom** to any AI agent and streamline your teaching w
 
 
 ## Available Tools (14)
-- **create_announcement**: Announcements appear in the course stream and can be used for important updates, reminders, or general communication.
-
-Post a new announcement to a Google Classroom course
 - **get_course**: Use the course ID obtained from list_courses.
 
 Get details of a specific Google Classroom course
-- **get_submission**: Get a specific student's submission details
-- **list_announcements**: Use this to check recent course announcements and important updates.
-
-List all announcements in a Google Classroom course
-- **list_course_work**: Returns assignment title, due date, state (DRAFT/PUBLISHED), max points, and creation time. Use this to track all assignments and their deadlines.
-
-List all assignments and coursework for a Google Classroom course
 - **list_courses**: Essential first step to identify which course to work with before querying students, assignments, or submissions.
 
 List all Google Classroom courses
+- **list_course_work**: Returns assignment title, due date, state (DRAFT/PUBLISHED), max points, and creation time. Use this to track all assignments and their deadlines.
+
+List all assignments and coursework for a Google Classroom course
 - **list_students**: Use this to check enrollment, identify students for grading, or verify class roster.
 
 List all students enrolled in a Google Classroom course
-- **list_submissions**: Returns student ID, submission state (NEW/CREATED/TURNED_IN/RETURNED), grade, and late status.
-
-List student submissions for a specific assignment
 - **list_teachers**: List all teachers of a Google Classroom course
 - **return_submission**: This is typically done after the teacher has reviewed and graded the work. The student will be notified that their work has been returned.
 
 Return a graded assignment to the student
-- **turn_in_submission**: The student must have created the submission first. This is equivalent to clicking "Turn In" in the Classroom UI.
+- **create_announcement**: Announcements appear in the course stream and can be used for important updates, reminders, or general communication.
 
-Turn in a student's assignment submission
+Post a new announcement to a Google Classroom course
 - **create_course**: Returns the new course ID for future reference. Only users with appropriate permissions can create courses.
 
 Create a new Google Classroom course
 - **create_course_work**: The assignment will be visible to all students in the course. Supports assignments, quizzes, and materials types.
 
 Create a new assignment or coursework in Google Classroom
+- **get_submission**: Get a specific student's submission details
+- **list_announcements**: Use this to check recent course announcements and important updates.
+
+List all announcements in a Google Classroom course
+- **list_submissions**: Returns student ID, submission state (NEW/CREATED/TURNED_IN/RETURNED), grade, and late status.
+
+List student submissions for a specific assignment
+- **turn_in_submission**: The student must have created the submission first. This is equivalent to clicking "Turn In" in the Classroom UI.
+
+Turn in a student's assignment submission
 - **update_course**: Requires the course ID and at least one field to update.
 
 Update an existing Google Classroom course

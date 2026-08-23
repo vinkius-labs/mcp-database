@@ -36,18 +36,6 @@ Connect **Midjourney** image generation to any AI agent and create stunning visu
 - **blend**: Provide URLs of existing images to blend together. Optionally add a text prompt to guide the blend.
 
 Blend multiple images together into one composition
-- **describe**: Useful for understanding how to recreate styles and compositions.
-
-Generate a text prompt from an image (reverse engineer)
-- **get_task_status**: Returns progress percentage, image URLs when ready, and available actions (upscale/variation).
-
-Check the status of an image generation task
-- **get_tasks**: Useful for monitoring ongoing generations and finding image IDs for upscale/variation.
-
-List recent image generation tasks
-- **imagine**: The prompt should be in English and can include style modifiers like "--ar 16:9" for aspect ratio, "--v 6" for version, "--s" for stylization. Returns a task ID and thumbnail URL. Use the task ID to check generation progress.
-
-Generate an image from text prompt using Midjourney
 - **inpaint**: The rest of the image remains unchanged.
 
 Edit a specific region of a generated image using a mask
@@ -60,6 +48,18 @@ Upscale one of the 4 generated images to higher resolution
 - **variation**: Useful for exploring different interpretations of a concept.
 
 Create a variation of one of the 4 generated images
+- **describe**: Useful for understanding how to recreate styles and compositions.
+
+Generate a text prompt from an image (reverse engineer)
+- **get_tasks**: Useful for monitoring ongoing generations and finding image IDs for upscale/variation.
+
+List recent image generation tasks
+- **get_task_status**: Returns progress percentage, image URLs when ready, and available actions (upscale/variation).
+
+Check the status of an image generation task
+- **imagine**: The prompt should be in English and can include style modifiers like "--ar 16:9" for aspect ratio, "--v 6" for version, "--s" for stylization. Returns a task ID and thumbnail URL. Use the task ID to check generation progress.
+
+Generate an image from text prompt using Midjourney
 
 
 ## 💬 Prompt Examples

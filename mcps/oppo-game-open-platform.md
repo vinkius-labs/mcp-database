@@ -37,14 +37,14 @@ Connect your AI agents to the **Oppo Game Open Platform** (oppo 开放平台), t
 
 ## Available Tools (8)
 - **list_sku_details**: Query configured in-app purchase items
-- **query_order**: Check the status of an Oppo payment transaction
 - **report_role_info**: to Oppo platform for tracking.
 
 Submit player role data
 - **validate_login**: Verify a user login session from Oppo SDK
-- **get_oppo_app_status**: Check Oppo Game Center application status
 - **get_oppo_server_time**: Get Oppo server time
+- **get_oppo_app_status**: Check Oppo Game Center application status
 - **get_user_info**: Retrieve basic profile data for an Oppo user
+- **query_order**: Check the status of an Oppo payment transaction
 - **report_game_data**: Submit player progress and scores to Oppo platform
 
 

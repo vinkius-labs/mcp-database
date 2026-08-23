@@ -33,32 +33,32 @@ Connect your **Kuaishou Mini-Game** (快手小游戏) developer account to any A
 
 
 ## Available Tools (10)
-- **get_analytics**: Get game analytics data (DAU, retention, etc.)
 - **get_game_config**: Useful for remote config, feature flags, and game balancing parameters.
 
 Get game configuration settings
-- **get_leaderboard**: Returns player rankings, scores, and basic profile info.
-
-Get leaderboard rankings from Kuaishou game
-- **get_user_info**: Requires the access token and openid obtained from code2session.
-
-Get Kuaishou user profile information
 - **get_user_storage**: Specify keys to fetch specific fields, or omit to fetch all.
 
 Retrieve user game data from Kuaishou cloud storage
-- **report_event**: Report a custom analytics event for game tracking
 - **set_user_storage**: Use this to save game progress, settings, high scores, or user preferences.
 
 Save user game data to Kuaishou cloud storage
 - **submit_score**: The score is a numeric value. The leaderboard_id identifies which leaderboard to submit to.
 
 Submit a game score to the Kuaishou leaderboard
-- **code2session**: This is the standard Kuaishou login flow: the mini-game client calls ks.login() to get a code, then the server exchanges it for the user session.
-
-Exchange login code for Kuaishou user session
 - **check_content**: Essential for games with user-generated content.
 
 Check user-generated content for policy violations
+- **code2session**: This is the standard Kuaishou login flow: the mini-game client calls ks.login() to get a code, then the server exchanges it for the user session.
+
+Exchange login code for Kuaishou user session
+- **get_analytics**: Get game analytics data (DAU, retention, etc.)
+- **get_leaderboard**: Returns player rankings, scores, and basic profile info.
+
+Get leaderboard rankings from Kuaishou game
+- **get_user_info**: Requires the access token and openid obtained from code2session.
+
+Get Kuaishou user profile information
+- **report_event**: Report a custom analytics event for game tracking
 
 
 ## 💬 Prompt Examples

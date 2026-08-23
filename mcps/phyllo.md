@@ -35,16 +35,16 @@ Scale influencer marketing natively without ever scraping manually. Your AI serv
 
 
 ## Available Tools (10)
-- **create_connect_session**: Generate a secure Connect session token
-- **get_account_income**: Fetch verified income streams linked to the creator account
-- **get_creator_audience**: Get detailed demographic info about a creators audience
 - **get_creator_content**: Retrieve recent posts, videos, or streams from a creator
 - **get_creator_profile**: Get a unified creator profile across platforms
 - **get_engagement_stats**: Get engagement analytics for a specific piece of content
+- **search_creators**: Search for creators across supported social platforms
+- **create_connect_session**: Generate a secure Connect session token
+- **get_account_income**: Fetch verified income streams linked to the creator account
+- **get_creator_audience**: Get detailed demographic info about a creators audience
 - **get_identity_status**: Check if a creator has verified their real-world identity
 - **get_platform_list**: List all social platforms supported by Phyllo
 - **get_webhook_status**: Check the status and configuration of registered webhooks
-- **search_creators**: Search for creators across supported social platforms
 
 
 ## 💬 Prompt Examples

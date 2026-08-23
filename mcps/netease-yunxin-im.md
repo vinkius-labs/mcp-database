@@ -35,13 +35,13 @@ Connect your LLMs directly to **Netease Yunxin** (网易云信), the prominent I
 - **create_chatroom**: Create a massive chatroom
 - **create_im_user**: Create an IM User
 - **mute_chatroom_member**: Mute a chatroom member
-- **recall_message**: Recall a sent message
 - **send_custom_message**: Send a Custom Payload Message
-- **send_text_message**: Send a P2P Text Message
 - **unblock_im_user**: Unblock an IM user
+- **get_chatroom_members**: Get Chatroom active members
 - **block_im_user**: Block an IM User network
 - **destroy_chatroom**: Destroy a massive chatroom
-- **get_chatroom_members**: Get Chatroom active members
+- **recall_message**: Recall a sent message
+- **send_text_message**: Send a P2P Text Message
 
 
 ## 💬 Prompt Examples

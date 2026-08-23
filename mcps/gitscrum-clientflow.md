@@ -40,15 +40,15 @@ Your agent becomes your client operations assistant, eliminating context-switchi
 
 Create an invoice for a client
 - **get_invoice**: Get invoice details
-- **list_invoices**: List all invoices
 - **get_proposal**: Get proposal details
-- **list_proposals**: List all proposals
+- **list_invoices**: List all invoices
 - **project_budget**: Get project budget
 - **create_client**: Create a new client
 - **get_client**: Get client details
 - **list_clients**: List all clients
-- **log_time**: Log time on a task
 - **list_time_entries**: List time tracking entries
+- **log_time**: Log time on a task
+- **list_proposals**: List all proposals
 
 
 ## 💬 Prompt Examples

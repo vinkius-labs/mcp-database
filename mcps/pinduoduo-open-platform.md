@@ -36,16 +36,16 @@ Connect your AI agents to the **Pinduoduo Open Platform**, specifically the **Du
 
 
 ## Available Tools (10)
-- **generate_pid**: Generate unique Promotion IDs (PIDs)
 - **sync_increment_orders**: Retrieve orders based on last update time
 - **generate_promotion_url**: Generate tracking links for a product
 - **list_categories**: List product categories
 - **query_top_goods**: Query real-time ranking of popular products
-- **search_goods**: Search for products on Pinduoduo
-- **get_goods_details**: Get detailed info for a specific product
-- **get_order_details**: Get details for a specific promotion order
 - **get_recommendations**: Get recommended products from specific channels
 - **list_themes**: List marketing themes
+- **generate_pid**: Generate unique Promotion IDs (PIDs)
+- **get_goods_details**: Get detailed info for a specific product
+- **get_order_details**: Get details for a specific promotion order
+- **search_goods**: Search for products on Pinduoduo
 
 
 ## 💬 Prompt Examples
