@@ -39,12 +39,12 @@ No more manual logging into mailing portals to send thank-you notes. Your AI act
 - **check_api_health**: com service API.
 
 Verify AMcards API connectivity
-- **list_drip_campaigns**: List automated drip campaigns
 - **list_card_templates**: List greeting card templates
+- **list_drip_campaigns**: List automated drip campaigns
 - **list_configured_webhooks**: List active webhooks
-- **send_greeting_card**: Send a personalized greeting card
 - **trigger_drip_campaign**: Start a drip campaign for a user
 - **get_card_sending_history**: Retrieve card sending history
+- **send_greeting_card**: Send a personalized greeting card
 
 
 ## 💬 Prompt Examples

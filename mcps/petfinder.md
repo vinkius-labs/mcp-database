@@ -35,16 +35,16 @@ Transform how you discover adoptable companions with the **Petfinder** MCP serve
 
 
 ## Available Tools (8)
+- **list_animals**: List adoptable animals
+- **list_breeds**: List breeds for an animal type
 - **get_animal**: Get details for a specific animal
+- **get_animal_type**: Get details for an animal type
 - **get_organization**: Get organization details
-- **list_organizations**: List animal welfare organizations
 - **list_animal_types**: g., Dog, Cat, Small & Furry).
 
 List available animal types
+- **list_organizations**: List animal welfare organizations
 - **search_nearby_animals**: Search for animals near a location
-- **get_animal_type**: Get details for an animal type
-- **list_animals**: List adoptable animals
-- **list_breeds**: List breeds for an animal type
 
 
 ## 💬 Prompt Examples

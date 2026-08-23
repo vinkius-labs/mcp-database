@@ -38,9 +38,9 @@ Empower your AI agent to orchestrate your entire civic participation and voter a
 - **check_api_status**: direct election data service.
 
 Check if the vote.direct service is operational
-- **get_ballot_information**: Get ballot information for a specific election and address
 - **get_upcoming_elections**: Find upcoming elections for a specific ZIP code
 - **get_polling_locations**: Find polling locations near a specific address
+- **get_ballot_information**: Get ballot information for a specific election and address
 - **get_registration_details**: Get voter registration deadlines and links for a specific state
 
 

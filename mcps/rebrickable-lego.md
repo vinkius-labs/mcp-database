@@ -37,39 +37,39 @@ No more navigating the Rebrickable website to find set details or parts inventor
 
 
 ## Available Tools (11)
-- **list_sets**: Optionally filter by theme ID, year, or part number. Returns set numbers, names, year, theme, piece count and image URLs. Use pagination with page and page_size (max 1000 per request).
-
-Search LEGO sets in the Rebrickable catalog
-- **get_minifig**: g. "sw0001-1"). Returns the minifig name, theme, year, piece count and image URLs.
-
-Get details for a specific LEGO minifigure
 - **get_set_parts**: Each entry includes the part number, color ID, quantity and whether it's a spare part. Optionally include minifig parts. Use list_colors and list_parts to resolve color and part details.
 
 Get the parts inventory for a LEGO set
-- **get_theme**: Returns the theme name, parent theme (if sub-theme) and set count.
-
-Get details for a specific LEGO theme
 - **list_themes**: g. Star Wars, City, Technic) and their sub-themes. Each theme includes its ID, name, parent theme ID (for sub-themes) and set count. Optionally filter by parent theme ID to get sub-themes of a specific theme.
 
 List LEGO themes and sub-themes
+- **get_minifig**: g. "sw0001-1"). Returns the minifig name, theme, year, piece count and image URLs.
+
+Get details for a specific LEGO minifigure
 - **get_part**: g. "3001" for a 2x4 brick). Returns the part name, category, image URLs and available colors.
 
 Get details for a specific LEGO part
 - **get_part_colors**: Returns color IDs, color names and availability info. Useful for finding which colors a part is available in for MOC building.
 
 Get available colors for a LEGO part
-- **get_set**: g. "75192-1"). Returns the set name, year, theme, piece count, minifig count, image URLs and related info. Set numbers follow the format "NNNN-N" where NNNN is the set number and N is the variant.
+- **get_theme**: Returns the theme name, parent theme (if sub-theme) and set count.
 
-Get details for a specific LEGO set
-- **list_colors**: Useful for understanding color availability in sets and MOC building.
-
-List all LEGO colors in the catalog
+Get details for a specific LEGO theme
 - **list_minifigs**: Returns minifig numbers, names, themes, year and image URLs. Optionally filter by part number. Use pagination with page and page_size (max 1000).
 
 Search LEGO minifigures
 - **list_parts**: Returns part numbers, names, categories and image URLs. Optionally filter by part number pattern. Use pagination with page and page_size (max 1000).
 
 Search LEGO parts in the catalog
+- **list_sets**: Optionally filter by theme ID, year, or part number. Returns set numbers, names, year, theme, piece count and image URLs. Use pagination with page and page_size (max 1000 per request).
+
+Search LEGO sets in the Rebrickable catalog
+- **get_set**: g. "75192-1"). Returns the set name, year, theme, piece count, minifig count, image URLs and related info. Set numbers follow the format "NNNN-N" where NNNN is the set number and N is the variant.
+
+Get details for a specific LEGO set
+- **list_colors**: Useful for understanding color availability in sets and MOC building.
+
+List all LEGO colors in the catalog
 
 
 ## 💬 Prompt Examples

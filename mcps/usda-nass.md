@@ -38,18 +38,18 @@ No more navigating complex Quick Stats interfaces to find crop yields or livesto
 
 
 ## Available Tools (8)
-- **get_demographics_data**: Optionally filter by state and year. Sector is automatically set to DEMOGRAPHICS.
-
-Get farm demographics data from USDA NASS
 - **get_economics_data**: Optionally filter by commodity, state and year. Sector is automatically set to ECONOMICS.
 
 Get agricultural economics data from USDA NASS
-- **get_param_values**: Parameters include: sector, group, commodity, commodity_desc, short_desc, source_desc, util_desc, unit_desc, freq_desc, domain_desc, state, county. Use this to discover what values you can filter by before making queries.
-
-Get valid values for a Quick Stats parameter
 - **get_quick_stats**: Accepts parameters: sector (CROPS, ANIMALS & PRODUCTS, ECONOMICS, DEMOGRAPHICS), commodity, group, commodity_desc, state, year, freq (ANNUAL, MONTHLY), unit_desc, source_desc. Returns statistical data with value, unit, state, year and commodity information. Use get_param_values to discover valid parameter values before querying.
 
 Query USDA NASS Quick Stats database
+- **get_demographics_data**: Optionally filter by state and year. Sector is automatically set to DEMOGRAPHICS.
+
+Get farm demographics data from USDA NASS
+- **get_param_values**: Parameters include: sector, group, commodity, commodity_desc, short_desc, source_desc, util_desc, unit_desc, freq_desc, domain_desc, state, county. Use this to discover what values you can filter by before making queries.
+
+Get valid values for a Quick Stats parameter
 - **get_survey_info**: This is useful for understanding what data is available and how frequently it is collected.
 
 Get information about USDA NASS surveys

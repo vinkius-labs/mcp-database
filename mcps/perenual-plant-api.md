@@ -36,10 +36,10 @@ Empower your AI agent to orchestrate your entire botanical research and plant au
 
 ## Available Tools (5)
 - **check_api_status**: Check if the Perenual service is operational
-- **get_plant_care_guide**: Get care instructions and guides for a specific plant
-- **get_plant_details**: Get full details for a specific plant by species ID
 - **search_plant_diseases**: Search for common plant pests and diseases
 - **search_plants**: Search for plants by common or scientific name
+- **get_plant_care_guide**: Get care instructions and guides for a specific plant
+- **get_plant_details**: Get full details for a specific plant by species ID
 
 
 ## 💬 Prompt Examples

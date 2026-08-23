@@ -35,22 +35,22 @@ Connect your **AB.GL** account to any AI agent and manage your entire link short
 
 
 ## Available Tools (10)
-- **check_abgl_status**: Verify API connectivity
-- **create_short_link**: gl.
-
-Create a short link
 - **delete_link**: Delete a short link
 - **get_bio_link**: Get bio page details
 - **get_link_stats**: Get link analytics
-- **get_link**: Get link details
 - **list_bio_links**: List bio pages
-- **list_domains**: gl short links.
-
-List custom domains
 - **update_link**: Update a short link
 - **list_links**: gl account with click counts and creation dates.
 
 List all short links
+- **check_abgl_status**: Verify API connectivity
+- **create_short_link**: gl.
+
+Create a short link
+- **get_link**: Get link details
+- **list_domains**: gl short links.
+
+List custom domains
 
 
 ## 💬 Prompt Examples

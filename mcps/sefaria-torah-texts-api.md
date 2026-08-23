@@ -36,9 +36,9 @@ Empower your AI agent to orchestrate your entire religious research and textual 
 
 ## Available Tools (5)
 - **check_api_status**: Check if the Sefaria service is operational
+- **list_library_index**: List all books and categories available in the Sefaria database
 - **get_daily_reading_calendar**: Get the daily reading schedule (Parashah, Daf Yomi, etc.)
 - **get_sacred_text**: Get a specific sacred text by reference (e.g., Genesis 1:1, Pirkei Avot 1:1)
-- **list_library_index**: List all books and categories available in the Sefaria database
 - **search_sacred_texts**: Search for keywords or phrases across the entire Sefaria library
 
 

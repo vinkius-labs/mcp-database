@@ -37,8 +37,8 @@ Equip your AI agent with high-resolution global weather and marine intelligence 
 - **get_marine_weather**: ) for a specific coordinate.
 
 Get marine weather for a location
-- **get_astronomy_data**: Get sun and moon data
 - **get_tide_extremes**: Get tide extremes for a location
+- **get_astronomy_data**: Get sun and moon data
 
 
 ## 💬 Prompt Examples

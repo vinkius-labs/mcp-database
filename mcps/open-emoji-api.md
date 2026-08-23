@@ -36,9 +36,9 @@ Empower your AI agent to orchestrate your entire visual research and emoji audit
 
 ## Available Tools (5)
 - **get_emojis_by_category**: Get all emojis belonging to a specific category
+- **search_emojis**: Search for emojis by keyword or name
 - **list_all_emojis**: List all available emojis in the database
 - **list_emoji_categories**: List all available emoji categories
-- **search_emojis**: Search for emojis by keyword or name
 - **check_api_status**: Check if the Open Emoji API is operational
 
 

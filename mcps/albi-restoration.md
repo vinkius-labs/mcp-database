@@ -37,19 +37,19 @@ No more manual logging into field service apps or digging through complex financ
 
 ## Available Tools (12)
 - **check_api_health**: Verify Albi API status
+- **list_project_activities**: List all tasks and activities
+- **list_restoration_organizations**: List all organizations
+- **list_restoration_projects**: List all restoration projects
 - **create_new_contact**: Add a new contact
 - **create_new_restoration_project**: Requires project name and primary contact.
 
 Start a new project
-- **get_project_financial_kpis**: Retrieve financial KPIs for a project
 - **get_project_details**: Get details for a specific project
-- **list_project_activities**: List all tasks and activities
-- **list_restoration_contacts**: List all contacts
-- **list_inventory_equipment**: List assets and equipment
-- **list_restoration_organizations**: List all organizations
-- **list_restoration_projects**: List all restoration projects
-- **list_defined_project_roles**: List available project roles
+- **get_project_financial_kpis**: Retrieve financial KPIs for a project
 - **list_configured_webhooks**: List active webhooks
+- **list_defined_project_roles**: List available project roles
+- **list_inventory_equipment**: List assets and equipment
+- **list_restoration_contacts**: List all contacts
 
 
 ## 💬 Prompt Examples

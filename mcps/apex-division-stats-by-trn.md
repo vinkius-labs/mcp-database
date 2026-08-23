@@ -37,25 +37,25 @@ Transform your AI agent into a professional esports analyst with **Apex & Divisi
 
 
 ## Available Tools (9)
-- **get_apex_legend_breakdown**: ) — kills, damage, wins per legend. Essential for identifying main legend and playstyle.
-
-Get per-legend performance breakdown for an Apex player
 - **get_apex_match_history**: Useful for tracking recent performance trends.
 
 Get recent match sessions for an Apex player
-- **get_apex_leaderboard**: ) on the specified platform.
-
-Get globalThis Apex Legends rankings by stat category
 - **get_apex_game_metadata**: Useful as reference data.
 
 Get current Apex Legends game metadata
+- **get_apex_leaderboard**: ) on the specified platform.
+
+Get globalThis Apex Legends rankings by stat category
+- **get_apex_legend_breakdown**: ) — kills, damage, wins per legend. Essential for identifying main legend and playstyle.
+
+Get per-legend performance breakdown for an Apex player
 - **get_apex_player_profile**: Get comprehensive Apex Legends stats for a player
-- **get_division2_player_profile**: Get comprehensive stats for a Division 2 agent
-- **get_division2_pvp_stats**: Get PvP-specific stats for a Division 2 agent
-- **get_division2_match_history**: Get recent play sessions for a Division 2 agent
 - **search_player**: Returns matching accounts with platform links and game associations.
 
 Search for a player across the Tracker Network ecosystem
+- **get_division2_player_profile**: Get comprehensive stats for a Division 2 agent
+- **get_division2_pvp_stats**: Get PvP-specific stats for a Division 2 agent
+- **get_division2_match_history**: Get recent play sessions for a Division 2 agent
 
 
 ## 💬 Prompt Examples

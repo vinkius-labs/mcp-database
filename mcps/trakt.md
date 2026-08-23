@@ -35,27 +35,15 @@ Connect to **Trakt** and explore the world's most popular TV and movie tracking 
 
 
 ## Available Tools (18)
-- **get_calendar**: Scope can be "my" (user's watched shows) or "all" (all shows). Returns episodes with air dates, times and show info.
-
-Get upcoming episode calendar
 - **get_movie_people**: Each person includes their name, Trakt ID, character name (for cast) and job title (for crew).
 
 Get cast and crew for a specific movie
 - **get_movie_ratings**: Returns total ratings, average score and the count of votes for each rating level.
 
 Get ratings distribution for a specific movie
-- **get_popular**: Popularity is based on overall engagement and activity. Returns paginated results.
-
-Get the most popular movies or shows
 - **get_related_movies**: Each related movie includes title, year, overview, rating and poster URL.
 
 Get movies related to a specific movie
-- **get_related_shows**: Each related show includes title, year, overview, rating and poster URL.
-
-Get shows related to a specific TV show
-- **get_show_episodes**: Each episode includes episode number, title, overview, runtime, ratings and first aired date.
-
-Get all episodes for a specific season of a TV show
 - **get_show_people**: Get cast and crew for a TV show
 - **get_show_ratings**: Returns total ratings, average score and vote counts per rating level.
 
@@ -66,27 +54,39 @@ Get all seasons for a TV show
 - **get_trending**: Trending is based on what users are actively watching and checking in. Returns items with viewer counts.
 
 Get currently trending movies or shows
-- **search**: Returns results with titles, years, ratings, genres, IDs and synopsis. Use type parameter to narrow results: "movie", "show", "episode", "person" or "list".
+- **get_calendar**: Scope can be "my" (user's watched shows) or "all" (all shows). Returns episodes with air dates, times and show info.
 
-Search for movies, shows, episodes, people or lists on Trakt
-- **get_show**: Returns title, year, overview, status, runtime, rating, genres, network, certification, trailer and poster URLs.
-
-Get detailed info for a specific TV show
-- **get_collection**: Requires OAuth access token. Returns collected items with metadata and media info.
-
-Get the authenticated user's collection
+Get upcoming episode calendar
 - **get_history**: Requires OAuth access token. Optionally filter by type and ID.
 
 Get the authenticated user's watch history
 - **get_movie**: Returns title, year, overview, runtime, rating, genres, languages, certification, trailer and poster URLs.
 
 Get detailed info for a specific movie
+- **get_popular**: Popularity is based on overall engagement and activity. Returns paginated results.
+
+Get the most popular movies or shows
+- **get_related_shows**: Each related show includes title, year, overview, rating and poster URL.
+
+Get shows related to a specific TV show
+- **get_show**: Returns title, year, overview, status, runtime, rating, genres, network, certification, trailer and poster URLs.
+
+Get detailed info for a specific TV show
+- **get_show_episodes**: Each episode includes episode number, title, overview, runtime, ratings and first aired date.
+
+Get all episodes for a specific season of a TV show
 - **get_watched**: Requires OAuth access token. Returns items with play counts and last watched timestamps.
 
 Get the authenticated user's watched history
 - **get_watchlist**: Requires an OAuth access token. Returns movies and/or shows the user has added to their watchlist.
 
 Get the authenticated user's watchlist
+- **search**: Returns results with titles, years, ratings, genres, IDs and synopsis. Use type parameter to narrow results: "movie", "show", "episode", "person" or "list".
+
+Search for movies, shows, episodes, people or lists on Trakt
+- **get_collection**: Requires OAuth access token. Returns collected items with metadata and media info.
+
+Get the authenticated user's collection
 
 
 ## 💬 Prompt Examples
