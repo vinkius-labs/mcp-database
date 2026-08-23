@@ -36,7 +36,6 @@ No more manual sign-on sheets or chasing safety certificates. Your AI acts as a 
 
 
 ## Available Tools (12)
-- **get_site_details**: Get details for a specific site
 - **get_worker_details**: Get details for a specific worker
 - **list_sites**: List all construction sites
 - **list_workers**: List all site workers
@@ -44,14 +43,15 @@ No more manual sign-on sheets or chasing safety certificates. Your AI acts as a 
 
 Query worker attendance records
 - **query_worker_credentials**: Check worker licenses and inductions
-- **query_form_submissions**: Query completed safety forms
 - **query_permits**: g., Hot Works, Confined Space) for your projects.
 
 Query safety permits
 - **sign_off_worker**: Record a manual sign-off for a worker
 - **sign_on_worker**: Record a manual sign-on for a worker
-- **list_companies**: List all associated companies
 - **enrol_worker**: Enrol a new worker
+- **get_site_details**: Get details for a specific site
+- **list_companies**: List all associated companies
+- **query_form_submissions**: Query completed safety forms
 
 
 ## 💬 Prompt Examples

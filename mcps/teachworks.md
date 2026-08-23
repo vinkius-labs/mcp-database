@@ -36,11 +36,11 @@ Connect your **Teachworks** tutoring management account to any AI agent and simp
 
 ## Available Tools (6)
 - **create_student**: Add a new student
+- **list_students**: List all students in Teachworks
+- **list_teachers**: List all teachers (tutors)
 - **get_student**: Get student details
 - **list_families**: List families
 - **list_lessons**: List scheduled lessons
-- **list_students**: List all students in Teachworks
-- **list_teachers**: List all teachers (tutors)
 
 
 ## 💬 Prompt Examples

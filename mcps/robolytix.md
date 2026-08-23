@@ -36,12 +36,12 @@ No more manual status checking or bot log hunting. Your AI acts as a dedicated R
 
 
 ## Available Tools (10)
-- **get_process**: Get details for a specific process
 - **get_run_messages**: Get all messages from a process run
-- **get_run**: Get details for a specific process run
-- **get_stats**: Get overall automation statistics
 - **list_rpa_processes**: List all RPA processes
 - **list_runs**: List all process runs
+- **get_process**: Get details for a specific process
+- **get_run**: Get details for a specific process run
+- **get_stats**: Get overall automation statistics
 - **sonar_checkpoint**: Send a "common" sonar message
 - **sonar_end**: Send an "end" sonar message
 - **sonar_error**: Send an "error" sonar message

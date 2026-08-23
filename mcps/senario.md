@@ -36,10 +36,10 @@ No more manual user imports or spreadsheet result tracking. Your AI acts as a de
 
 
 ## Available Tools (9)
-- **add_content**: Add content to a collection
 - **get_user_details**: Get details for a specific user
 - **list_collections**: List all AR simulator collections
 - **list_users**: List all users in your organization
+- **add_content**: Add content to a collection
 - **create_user_and_assign**: Create a new user and assign them to an AR collection
 - **get_activity_data**: Get detailed training activity results
 - **get_collection_details**: Get details for a content collection

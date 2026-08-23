@@ -36,19 +36,19 @@ No more manual status checking or missed quotes. Your AI acts as a dedicated pro
 
 
 ## Available Tools (11)
-- **create_order**: Pass data as a JSON string.
-
-Create a new order or quote
 - **get_order_details**: Get specific order details
 - **list_customers**: List all shop customers
-- **list_orders**: List all print shop orders
 - **list_order_statuses**: List configured order statuses
-- **get_customer_details**: Get details for a specific customer
 - **list_line_items**: List all line items on an order
 - **list_payments**: List payments for an order
 - **update_order**: Update an existing order
-- **list_inquiries**: List all customer inquiries
 - **create_customer**: Add a new customer
+- **create_order**: Pass data as a JSON string.
+
+Create a new order or quote
+- **get_customer_details**: Get details for a specific customer
+- **list_inquiries**: List all customer inquiries
+- **list_orders**: List all print shop orders
 
 
 ## 💬 Prompt Examples

@@ -28,17 +28,17 @@ Connect your **Stannp** account to any AI agent and simplify your direct mail ma
 
 
 ## Available Tools (11)
-- **create_postcard**: Create and send a postcard
 - **create_recipient**: Create a new mailing recipient
-- **get_campaign**: Get details for a direct mail campaign
-- **get_letter**: Get details for a specific letter
-- **get_recipient**: Get details for a specific recipient
 - **create_physical_letter**: Send a physical letter
 - **get_account_balance**: Check account credit balance
+- **get_letter**: Get details for a specific letter
+- **get_recipient**: Get details for a specific recipient
+- **list_mailing_recipients**: List mailing recipients
+- **create_postcard**: Create and send a postcard
+- **get_campaign**: Get details for a direct mail campaign
 - **list_direct_mail_campaigns**: List direct mail campaigns
 - **list_letters**: List sent and drafted letters
 - **list_postcards**: List sent and drafted postcards
-- **list_mailing_recipients**: List mailing recipients
 
 
 ## 💬 Prompt Examples

@@ -23,14 +23,14 @@ Connect your **Teyuto** account to any AI agent and manage your video platform.
 
 
 ## Available Tools (10)
+- **get_video_analytics**: Get video analytics
+- **check_teyuto_status**: Verify API connectivity
 - **get_collection**: Get collection details
 - **get_user**: Get user details
-- **get_video_analytics**: Get video analytics
 - **get_video**: Get video details
-- **check_teyuto_status**: Verify API connectivity
 - **list_channels**: List channels
-- **list_collections**: List collections
 - **list_subscriptions**: List subscriptions
+- **list_collections**: List collections
 - **list_users**: List all users
 - **list_videos**: List all videos
 

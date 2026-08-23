@@ -36,18 +36,18 @@ No more manual exporting of participant data for simple checks. Your AI acts as 
 
 
 ## Available Tools (12)
-- **check_odicci_status**: Verify connectivity
-- **create_customer**: Create a customer
 - **create_experience**: Create an experience
 - **get_customer**: Get customer details
-- **get_experience_stats**: Get experience stats
 - **get_experience**: Get experience details
+- **get_experience_stats**: Get experience stats
 - **get_segment**: Get segment details
 - **list_customers**: List customers
-- **list_experiences**: List experiences
 - **list_rewards**: List rewards
 - **list_segments**: List segments
 - **search_customers**: Search customers
+- **check_odicci_status**: Verify connectivity
+- **create_customer**: Create a customer
+- **list_experiences**: List experiences
 
 
 ## 💬 Prompt Examples

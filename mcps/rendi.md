@@ -36,9 +36,7 @@ No more manual terminal work or cloud worker configuration. Your AI acts as a de
 
 
 ## Available Tools (11)
-- **convert_video_to_audio**: Quickly convert a video to audio
 - **delete_file**: Delete a file from Rendi storage
-- **ffprobe**: Analyze a media file using ffprobe
 - **get_command_status**: Once completed, it provides the storage URL for output files.
 
 Get status of an FFmpeg command
@@ -46,11 +44,13 @@ Get status of an FFmpeg command
 - **get_file_info**: Get metadata and details for a specific file
 - **list_commands**: List all submitted FFmpeg commands
 - **list_files**: List all files in Rendi storage
+- **convert_video_to_audio**: Quickly convert a video to audio
+- **ffprobe**: Analyze a media file using ffprobe
+- **generate_thumbnail**: Generate a thumbnail from a video
 - **run_chained_ffmpeg_commands**: Run multiple chained FFmpeg commands
 - **run_ffmpeg_command**: Returns a command ID to poll for status.
 
 Run a single FFmpeg command in the cloud
-- **generate_thumbnail**: Generate a thumbnail from a video
 
 
 ## 💬 Prompt Examples

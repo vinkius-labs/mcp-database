@@ -37,10 +37,10 @@ Connect your **Pointagram** account to any AI agent to streamline your team gami
 - **create_player**: Pass data as a JSON string.
 
 Create a new player
-- **list_teams**: List all Pointagram teams
 - **get_player_stats**: Get stats for a player
-- **list_players**: List all Pointagram players
 - **list_score_series**: List all score series
+- **list_players**: List all Pointagram players
+- **list_teams**: List all Pointagram teams
 - **post_event**: Pass data as a JSON string.
 
 Post a scoring event

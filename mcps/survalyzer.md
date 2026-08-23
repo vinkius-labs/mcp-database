@@ -36,14 +36,14 @@ Connect your **Survalyzer** account to any AI agent to automate your advanced ma
 ## Available Tools (12)
 - **list_surveys**: List all surveys
 - **list_webhooks**: List active webhooks
+- **get_account_info**: Get account profile
+- **invite_existing_members**: Invite existing members
+- **list_panel_members**: List members in panel
+- **list_survey_languages**: List supported languages
+- **list_survey_layouts**: List visual layouts
 - **create_and_invite_members**: Bulk invite new members
 - **create_member**: Add member to panel
-- **get_account_info**: Get account profile
-- **list_survey_layouts**: List visual layouts
 - **get_survey**: Get survey details
-- **invite_existing_members**: Invite existing members
-- **list_survey_languages**: List supported languages
-- **list_panel_members**: List members in panel
 - **list_panels**: List member panels
 - **list_samples**: List research samples
 

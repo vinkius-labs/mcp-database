@@ -14,17 +14,17 @@ The SurveyMethods MCP server empowers your AI agent to manage surveys directly. 
 
 
 ## Available Tools (12)
-- **delete_survey**: Permanently remove a survey
 - **get_me**: Check API connectivity and get account context
 - **list_contacts**: List all contacts in your respondent database
 - **list_surveys**: List all surveys in your account
+- **get_response**: Retrieve a single response by ID
+- **list_collectors**: List all collectors (distribution channels) for a survey
+- **list_responses**: Retrieve all responses for a specific survey
 - **create_collector**: Create a new collector for a survey
 - **create_contact**: Add a new contact
 - **create_survey**: Create a new survey
-- **get_response**: Retrieve a single response by ID
+- **delete_survey**: Permanently remove a survey
 - **get_survey**: Retrieve details for a specific survey
-- **list_collectors**: List all collectors (distribution channels) for a survey
-- **list_responses**: Retrieve all responses for a specific survey
 - **update_survey**: Update an existing survey
 
 

@@ -37,9 +37,9 @@ Connect your **Swiftfox** account to any AI agent and take full control of your 
 - **check_swiftfox_status**: Returns a status indicator and account metadata to confirm valid credentials and active connectivity.
 
 Verify Swiftfox API connectivity
-- **get_event_fields**: Useful for understanding the data schema before creating or filtering events.
+- **get_me**: Use this to verify connectivity or obtain the current user context.
 
-Get custom field definitions for events
+Get the authenticated Swiftfox user profile
 - **get_organization**: Get full details of a specific organization in Swiftfox
 - **get_person**: Get full details of a specific person in Swiftfox
 - **list_circles**: Optionally filter by a search term matching circle names.
@@ -51,18 +51,18 @@ List events in Swiftfox CRM
 - **list_organizations**: Organizations represent companies, associations, or groups that people belong to. Optionally filter by search term.
 
 List organizations in Swiftfox CRM
+- **get_event_fields**: Useful for understanding the data schema before creating or filtering events.
+
+Get custom field definitions for events
 - **list_people**: Optionally filter by a search term that matches against names or other fields.
 
 List people (members) in Swiftfox CRM
-- **list_webhooks**: Webhooks notify external services when specific events occur (e.g., member created, subscription updated).
-
-List configured webhooks in Swiftfox
-- **get_me**: Use this to verify connectivity or obtain the current user context.
-
-Get the authenticated Swiftfox user profile
 - **list_person_subscriptions**: Subscriptions track membership plans, payment status, and renewal dates.
 
 List subscriptions for a specific person
+- **list_webhooks**: Webhooks notify external services when specific events occur (e.g., member created, subscription updated).
+
+List configured webhooks in Swiftfox
 
 
 ## 💬 Prompt Examples
