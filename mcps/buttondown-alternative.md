@@ -36,17 +36,17 @@ Connect your **Buttondown** account to any AI agent to streamline your newslette
 ## Available Tools (14)
 - **create_tag**: Create a new tag
 - **create_email**: Create a new email
-- **create_subscriber**: Create a new subscriber
-- **create_webhook**: Create a new webhook
 - **delete_subscriber**: Delete a subscriber
-- **get_email**: Retrieve a specific email
 - **get_newsletter**: Retrieve a specific newsletter
 - **get_subscriber**: Retrieve a specific subscriber
+- **list_webhooks**: List all webhooks
+- **create_subscriber**: Create a new subscriber
+- **create_webhook**: Create a new webhook
+- **get_email**: Retrieve a specific email
 - **list_emails**: List all emails
 - **list_newsletters**: List all newsletters
 - **list_subscribers**: List all subscribers
 - **list_tags**: List all tags
-- **list_webhooks**: List all webhooks
 - **update_subscriber**: Update an existing subscriber
 
 

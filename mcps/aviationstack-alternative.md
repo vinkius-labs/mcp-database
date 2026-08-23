@@ -34,23 +34,23 @@ Connect **AviationStack** to your AI agent to unlock a world of aviation intelli
 
 
 ## Available Tools (11)
+- **list_aircraft_types**: Get aircraft types and specifications
+- **list_airlines**: Get globalThis airlines list
+- **list_airplanes**: Get specific aircraft details
+- **list_flights**: Use flight_date for historical data.
+
+Get real-time and historical flight data
 - **list_taxes**: Get aviation taxes information
 - **list_timetable**: Requires Professional plan or higher.
 
 Get airport timetables
-- **list_aircraft_types**: Get aircraft types and specifications
 - **list_cities**: Get cities worldwide
-- **list_airlines**: Get globalThis airlines list
-- **list_airplanes**: Get specific aircraft details
-- **list_airports**: Get globalThis airports list
-- **list_countries**: Get countries worldwide
-- **list_flights**: Use flight_date for historical data.
-
-Get real-time and historical flight data
 - **list_future_flights**: Requires Professional plan or higher.
 
 Get future flight schedules
 - **list_routes**: Get scheduled airline routes
+- **list_airports**: Get globalThis airports list
+- **list_countries**: Get countries worldwide
 
 
 ## 💬 Prompt Examples

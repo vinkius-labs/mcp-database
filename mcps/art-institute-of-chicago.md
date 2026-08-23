@@ -34,37 +34,37 @@ Access one of the world's most impressive art collections directly through your 
 
 
 ## Available Tools (31)
-- **search_products**: Search products
 - **get_article**: Get details for a specific article
-- **get_artwork_manifest**: Get IIIF Manifest for a specific artwork
+- **get_place**: Get details for a specific place
+- **get_publication**: Get details for a specific publication
+- **list_articles**: List articles
+- **list_artworks**: List artworks in the Art Institute of Chicago collection
+- **list_products**: List products (Museum shop items)
+- **list_tours**: List tours
+- **search_events**: Search events
+- **search_tours**: Search tours
+- **search_products**: Search products
 - **get_artwork**: Get details for a specific artwork
+- **get_artwork_manifest**: Get IIIF Manifest for a specific artwork
 - **get_event**: Get details for a specific event
 - **get_exhibition**: Get details for a specific exhibition
 - **get_gallery**: Get details for a specific gallery
-- **get_place**: Get details for a specific place
 - **get_product**: Get details for a specific product
 - **get_tour**: Get details for a specific tour
 - **list_agents**: List agents (artists) in the collection
-- **list_articles**: List articles
-- **list_artworks**: List artworks in the Art Institute of Chicago collection
 - **list_events**: List events
 - **list_exhibitions**: List exhibitions
 - **list_galleries**: List physical gallery spaces in the museum
 - **list_places**: List places associated with artworks
 - **list_publications**: List publications
-- **list_tours**: List tours
 - **search_agents**: Search agents (artists)
 - **search_articles**: Search articles
 - **search_artworks**: Search artworks in the Art Institute of Chicago collection
-- **search_events**: Search events
 - **search_exhibitions**: Search exhibitions
 - **search_galleries**: Search galleries
 - **search_places**: Search places
 - **search_publications**: Search publications
-- **search_tours**: Search tours
 - **get_agent**: Get details for a specific agent (artist)
-- **get_publication**: Get details for a specific publication
-- **list_products**: List products (Museum shop items)
 
 
 ## 💬 Prompt Examples

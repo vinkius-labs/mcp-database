@@ -34,19 +34,19 @@ Connect to **Blockchair**, the most advanced universal blockchain search engine,
 
 
 ## Available Tools (11)
-- **get_blockchain_stats**: for the specified blockchain.
-
-Get general information about a blockchain
 - **get_transaction**: Retrieve details about a specific transaction
 - **get_xpub**: Retrieve data for an entire HD wallet (xpub)
 - **push_transaction**: Broadcast a raw hex-encoded transaction to the network
 - **validate_address**: Check if an address is valid for a specific chain
-- **get_block**: Retrieve details about a specific block
-- **get_contract_calls**: Get Ethereum contract internal transactions
-- **get_erc20_token_address**: Get the balance of a specific ERC-20 token for an address
 - **filter_blocks**: Example q: time(2023-01-01..2023-01-02),transaction_count(100..)
 
 Query blocks using SQL-like filters
+- **get_block**: Retrieve details about a specific block
+- **get_blockchain_stats**: for the specified blockchain.
+
+Get general information about a blockchain
+- **get_contract_calls**: Get Ethereum contract internal transactions
+- **get_erc20_token_address**: Get the balance of a specific ERC-20 token for an address
 - **filter_transactions**: Example q: fee(10000..), s: fee(desc)
 
 Query transactions using SQL-like filters

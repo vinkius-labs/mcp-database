@@ -34,15 +34,15 @@ Connect to **Bitquery** to access comprehensive Web3 data through a unified Grap
 
 
 ## Available Tools (3)
+- **generate_token**: The returned token should be used as the BITQUERY_ACCESS_TOKEN credential.
+
+Generate an OAuth2 access token using Client ID and Secret
 - **query_v1**: Provide a valid GraphQL query string.
 
 Execute a GraphQL query against Bitquery V1 Historical API
 - **query_v2**: Supports joins (e.g., joinCalls) and advanced filtering. Cubes include Transfers, Calls, Events, DexTrades, DexTradesByTokens, Instructions, BalanceUpdates.
 
 Execute a GraphQL query against Bitquery V2 Streaming API
-- **generate_token**: The returned token should be used as the BITQUERY_ACCESS_TOKEN credential.
-
-Generate an OAuth2 access token using Client ID and Secret
 
 
 ## 💬 Prompt Examples

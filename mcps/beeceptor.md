@@ -35,34 +35,34 @@ Connect **Beeceptor** to your AI agent to build, manage, and monitor mock APIs a
 
 ## Available Tools (29)
 - **delete_state**: Delete state items (Bulk)
-- **download_multipart**: Download multipart file
-- **get_job_status**: Get spec upload job status
-- **get_request**: Get single request
-- **get_rule**: Get single mock rule
 - **get_settings**: Get endpoint settings
 - **get_spec_details**: Get specification details
-- **get_state_item**: Get single state item
 - **list_certificates**: List mTLS certificates
 - **list_requests**: Get request history
 - **list_rules**: Get all mock rules
 - **list_state**: Get all state
-- **upload_spec**: Upload API specification
 - **upsert_state**: Upsert state (Bulk)
 - **add_certificate**: Add mTLS certificate
 - **bulk_replace_rules**: Bulk replace mock rules
+- **download_multipart**: Download multipart file
+- **get_job_status**: Get spec upload job status
+- **get_request**: Get single request
+- **get_rule**: Get single mock rule
+- **get_state_item**: Get single state item
+- **upload_spec**: Upload API specification
 - **create_rule**: Create mock rule
 - **delete_all_rules**: Delete all mock rules
 - **delete_certificate**: Delete mTLS certificate
 - **delete_request**: Delete single request
-- **delete_requests**: Delete request history
 - **delete_rule**: Delete mock rule
+- **delete_requests**: Delete request history
 - **delete_spec**: Delete specification
 - **delete_state_item**: Delete single state item
+- **update_settings**: Update endpoint settings
+- **upload_blob**: Upload binary blob
 - **reorder_rules**: Reorder mock rules
 - **update_rule_full**: Update mock rule (Full)
 - **update_rule_partial**: Update mock rule (Partial)
-- **update_settings**: Update endpoint settings
-- **upload_blob**: Upload binary blob
 
 
 ## 💬 Prompt Examples

@@ -34,37 +34,37 @@ Connect your **Capsule CRM** account to any AI agent to streamline your sales an
 
 
 ## Available Tools (31)
-- **create_entry**: Create a new note entry
 - **create_opportunity**: Create a new opportunity
 - **create_party**: Create a new party (person or organisation)
 - **create_project**: Create a new project (kase)
 - **create_task**: Create a new task
 - **delete_party**: Delete a party
 - **delete_project**: Delete a project (kase)
-- **get_current_user**: Show the authenticated user
 - **get_opportunity**: Get details for a specific opportunity
-- **get_party**: Get details for a specific party
-- **get_project**: Get details for a specific project (kase)
-- **get_task**: Get details for a specific task
 - **list_custom_fields**: List custom field definitions for parties, opportunities, or kases
-- **list_deleted_parties**: List deleted parties since a specific date
 - **list_entity_entries**: List entries for a specific party, project, or opportunity
 - **list_entries**: List recent entries (notes & emails)
 - **list_opportunities**: List all opportunities
-- **list_parties**: List all parties (people and organisations)
 - **list_projects**: List all projects (kases)
 - **list_tags**: List tag definitions for parties, opportunities, or kases
 - **list_tasks**: List tasks (default: open)
-- **search_parties**: Search for parties
-- **update_opportunity**: Update an existing opportunity
 - **update_party**: Update an existing party
 - **update_project**: Update an existing project (kase)
 - **update_task**: Update an existing task
+- **create_entry**: Create a new note entry
+- **delete_opportunity**: Delete an opportunity
 - **delete_task**: Delete a task
-- **list_teams**: List all teams
+- **get_current_user**: Show the authenticated user
+- **get_party**: Get details for a specific party
+- **get_project**: Get details for a specific project (kase)
+- **get_task**: Get details for a specific task
+- **list_deleted_parties**: List deleted parties since a specific date
+- **list_parties**: List all parties (people and organisations)
 - **list_users**: List all users
 - **search_opportunities**: Search for opportunities
-- **delete_opportunity**: Delete an opportunity
+- **search_parties**: Search for parties
+- **update_opportunity**: Update an existing opportunity
+- **list_teams**: List all teams
 
 
 ## 💬 Prompt Examples

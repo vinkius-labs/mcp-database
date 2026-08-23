@@ -34,18 +34,18 @@ Connect your **AppDynamics** Controller to any AI agent to gain deep visibility 
 
 
 ## Available Tools (13)
-- **list_custom_match_rules**: Manage custom match rules
 - **export_health_rules**: Export health rules for an application
-- **list_health_rule_violations**: List health rule violations
-- **import_health_rules**: Import health rules for an application
-- **list_users**: List all Controller users
 - **get_metric_data**: Retrieve metric data for an application
+- **list_custom_match_rules**: Manage custom match rules
+- **list_tiers**: List tiers within an application
+- **list_users**: List all Controller users
+- **import_health_rules**: Import health rules for an application
+- **list_health_rule_violations**: List health rule violations
 - **list_nodes**: List nodes within an application
 - **list_snapshots**: Retrieve transaction snapshots
-- **list_tiers**: List tiers within an application
+- **create_event**: Create a custom event
 - **list_applications**: List all applications monitored by the Controller
 - **list_business_transactions**: List business transactions for an application
-- **create_event**: Create a custom event
 - **create_user**: Create a new Controller user
 
 

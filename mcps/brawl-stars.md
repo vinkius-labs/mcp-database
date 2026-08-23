@@ -30,15 +30,15 @@ No more manual searching for player tags or checking the app for map rotations. 
 
 
 ## Available Tools (10)
-- **get_brawler_rankings**: Get brawler-specific rankings
-- **get_brawler**: Get information about a specific brawler
-- **list_brawlers**: List all available brawlers
 - **get_club_members**: Get a list of club members
-- **get_club_rankings**: Get club rankings for a country or globally
-- **get_club**: Get club details
-- **get_event_rotation**: Get the current event rotation
 - **get_player_battlelog**: Get the last 25 battles for a player
 - **get_player_rankings**: Get player rankings for a country or globally
+- **get_brawler**: Get information about a specific brawler
+- **get_brawler_rankings**: Get brawler-specific rankings
+- **get_club**: Get club details
+- **get_club_rankings**: Get club rankings for a country or globally
+- **get_event_rotation**: Get the current event rotation
+- **list_brawlers**: List all available brawlers
 - **get_player**: Get player profile and statistics
 
 

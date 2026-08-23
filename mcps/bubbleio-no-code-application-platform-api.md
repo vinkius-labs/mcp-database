@@ -34,12 +34,13 @@ Connect your **Bubble.io** no-code application to your AI agent to perform deep 
 
 
 ## Available Tools (8)
-- **bulk_create_things**: Provide a string with one JSON object per line (NDJSON format).
-
-Bulk create multiple Things in the Bubble database
 - **create_thing**: Provide fields as a JSON object.
 
 Create a new Thing in the Bubble database
+- **trigger_workflow**: Trigger a Bubble API Workflow
+- **bulk_create_things**: Provide a string with one JSON object per line (NDJSON format).
+
+Bulk create multiple Things in the Bubble database
 - **delete_thing**: Delete a Thing from the Bubble database
 - **get_thing**: Retrieve a specific Bubble Thing by its UID
 - **replace_thing**: Missing fields are reset to defaults or cleared.
@@ -48,7 +49,6 @@ Replace (Put) an existing Thing in the Bubble database
 - **search_things**: Can use constraints (URL-encoded JSON array), cursor, limit, and sorting.
 
 Search, paginate, and sort Things in the Bubble database
-- **trigger_workflow**: Trigger a Bubble API Workflow
 - **update_thing**: Update (Patch) an existing Thing in the Bubble database
 
 

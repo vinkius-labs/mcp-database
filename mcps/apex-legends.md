@@ -37,14 +37,10 @@ Connect your AI agent to the **Apex Legends API** to access real-time game data,
 - **get_leaderboard**: Updates every 6 hours.
 
 Get top 500 players for specific statistics
-- **get_match_history**: Must make a /bridge request every 4 mins to collect data.
-
-Get new match history for a player
+- **get_origin_uid**: Get a player UID from their name (PC only)
 - **get_player_stats_by_name**: For PC, use Origin account name.
 
 Get player statistics by name and platform
-- **get_server_status**: Get current server status for Apex Legends
-- **get_name_to_uid**: Get a player UID from their name across multiple platforms
 - **get_player_stats_by_uid**: Recommended for repeated queries.
 
 Get player statistics by UID
@@ -52,8 +48,12 @@ Get player statistics by UID
 - **manage_legacy_match_history**: Action can be info, get, add, or delete.
 
 Manage legacy match history tracking
+- **get_match_history**: Must make a /bridge request every 4 mins to collect data.
+
+Get new match history for a player
+- **get_server_status**: Get current server status for Apex Legends
+- **get_name_to_uid**: Get a player UID from their name across multiple platforms
 - **get_map_rotation**: Get current and next maps for various game modes
-- **get_origin_uid**: Get a player UID from their name (PC only)
 
 
 ## 💬 Prompt Examples

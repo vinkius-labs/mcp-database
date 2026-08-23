@@ -38,27 +38,27 @@ Connect to the **Boba Network** (L2) through Bobascan's API. This MCP server all
 - **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
 - **get_block_reward**: Get Block Rewards by BlockNo
 - **get_ether_balance**: Get Ether Balance for a Single Address
-- **get_logs**: Get Logs
 - **get_source_code**: Get Contract Source Code for Verified Source Codes
-- **get_token_balance**: Get ERC20-Token Balance for Address by ContractAddress
 - **get_token_nft_tx**: Get a List of ERC721 Token Transfer Events By Address
 - **get_token_supply**: Get ERC20-Token Total Supply by ContractAddress
 - **get_token_tx**: Get a List of ERC20 Token Transfer Events By Address
 - **get_tx_list_internal**: Get a List of Internal Transactions By Address
-- **get_tx_list**: Get a List of Normal Transactions By Address
 - **get_tx_receipt_status**: Check Transaction Receipt Status
-- **proxy_call**: eth_call
-- **proxy_estimate_gas**: eth_estimateGas
 - **proxy_gas_price**: eth_gasPrice
-- **proxy_get_block_by_number**: eth_getBlockByNumber
-- **proxy_get_code**: eth_getCode
 - **proxy_get_transaction_by_hash**: eth_getTransactionByHash
 - **proxy_get_transaction_receipt**: eth_getTransactionReceipt
 - **get_abi**: Get Contract ABI for Verified Source Codes
+- **get_logs**: Get Logs
+- **get_token_balance**: Get ERC20-Token Balance for Address by ContractAddress
+- **get_tx_list**: Get a List of Normal Transactions By Address
+- **proxy_call**: eth_call
+- **proxy_estimate_gas**: eth_estimateGas
+- **proxy_get_block_by_number**: eth_getBlockByNumber
+- **proxy_get_code**: eth_getCode
 - **get_contract_execution_status**: Check Contract Execution Status
+- **get_ether_balance_multi**: Get Ether Balance for Multiple Addresses
 - **get_eth_price**: Get Ether Last Price
 - **get_eth_supply**: Get Total Supply of Ether on Boba Network
-- **get_ether_balance_multi**: Get Ether Balance for Multiple Addresses
 
 
 ## 💬 Prompt Examples

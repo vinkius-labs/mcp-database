@@ -37,8 +37,8 @@ Connect to the **AQICN (World Air Quality Index)** project and bring real-time e
 - **get_city_feed**: Get real-time Air Quality Index for a specific city
 - **get_ip_feed**: Get real-time Air Quality Index based on IP location
 - **get_map_bounds**: Get all stations within a specific map bounding box
-- **search_stations**: Search for air quality monitoring stations
 - **get_station_feed**: Get real-time Air Quality Index for a specific station by UID
+- **search_stations**: Search for air quality monitoring stations
 
 
 ## 💬 Prompt Examples

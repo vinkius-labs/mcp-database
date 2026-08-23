@@ -36,12 +36,12 @@ Connect your **Breezy HR** account to any AI agent and streamline your recruitme
 ## Available Tools (8)
 - **list_candidates**: List candidates for a position
 - **list_companies**: List Breezy HR companies
-- **list_positions**: List positions for a company
 - **add_candidate**: Add a new candidate to a position
 - **get_candidate**: Get details for a specific candidate
+- **list_applications**: List applications for a candidate
+- **list_positions**: List positions for a company
 - **get_company**: Get details for a specific company
 - **get_position**: Get details for a specific position
-- **list_applications**: List applications for a candidate
 
 
 ## 💬 Prompt Examples

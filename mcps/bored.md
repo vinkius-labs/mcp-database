@@ -33,8 +33,8 @@ Connect the **Bored API** to your AI agent and never run out of things to do. Wh
 
 
 ## Available Tools (3)
-- **get_activity_by_key**: Get a specific activity by its unique key
 - **find_activity**: Find an activity based on specific criteria
+- **get_activity_by_key**: Get a specific activity by its unique key
 - **get_random_activity**: Get a random activity
 
 

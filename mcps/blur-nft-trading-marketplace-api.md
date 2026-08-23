@@ -33,11 +33,11 @@ Connect to **Blur**, the leading NFT marketplace for pro traders, and manage you
 
 
 ## Available Tools (5)
-- **create_ask**: Create a listing (ask) on Blur
 - **create_bid**: Create a bid on Blur
-- **get_asset**: Get metadata and current listings for a specific NFT
-- **get_collection_floor**: Get current floor prices across marketplaces for a collection
 - **get_collection**: Get metadata and stats for a specific collection
+- **get_collection_floor**: Get current floor prices across marketplaces for a collection
+- **create_ask**: Create a listing (ask) on Blur
+- **get_asset**: Get metadata and current listings for a specific NFT
 
 
 ## 💬 Prompt Examples

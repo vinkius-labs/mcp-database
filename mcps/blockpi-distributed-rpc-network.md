@@ -33,13 +33,13 @@ Connect your **BlockPi** account to any AI agent to manage your distributed RPC 
 
 
 ## Available Tools (5)
+- **get_ru_balance**: Get remaining Request Unit (RU) balance
+- **get_package_expiration**: Get details about active RU packages
+- **get_ru_consumed**: Get RU consumption for a specific endpoint
+- **get_wallet_balance**: Get remaining wallet balance in USD
 - **rpc_call**: g., eth_blockNumber, eth_call, eth_getBalance) on the specified network.
 
 Make a generic JSON-RPC call to a supported blockchain network
-- **get_package_expiration**: Get details about active RU packages
-- **get_ru_balance**: Get remaining Request Unit (RU) balance
-- **get_ru_consumed**: Get RU consumption for a specific endpoint
-- **get_wallet_balance**: Get remaining wallet balance in USD
 
 
 ## 💬 Prompt Examples
