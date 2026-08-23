@@ -34,8 +34,8 @@ Equip your AI agent with the power of viral humor via the **Meme Generator** MCP
 
 
 ## Available Tools (2)
-- **create_meme**: Generate a custom meme
 - **list_meme_templates**: List popular meme templates
+- **create_meme**: Generate a custom meme
 
 
 ## 💬 Prompt Examples

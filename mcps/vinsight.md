@@ -36,37 +36,37 @@ Connect your **Vinsight** operation to any AI agent and manage your entire bever
 - **search_stock_items**: Returns product details including SKU, description, unit of measure, price, tax code, and current stock level. Works for wine, beer, spirits, and raw materials.
 
 Search wine/beer/spirit products
-- **list_stock_levels**: Critical for fulfillment and reorder decisions.
-
-List current inventory
 - **list_lab_results**: Sorted by date. For quality control and compliance monitoring.
 
 List lab analysis results
 - **list_warehouses**: For multi-site inventory management.
 
 List warehouses
-- **get_stock_item**: The definitive product record.
-
-Get product details
-- **list_sales_orders**: Core revenue tracking for wineries and breweries.
-
-List sales orders
 - **list_production_orders**: Tracks the winemaking or brewing process.
 
 List production orders
-- **list_batches**: Track individual lots through the production lifecycle.
+- **list_sales_orders**: Core revenue tracking for wineries and breweries.
 
-List production batches
+List sales orders
 - **list_vessels**: With capacity, current contents, fill level, and location. For cellar space planning.
 
 List tanks and barrels
-- **get_sales_order**: Get order details
 - **search_contacts**: Returns contact profile, type, addresses, payment terms, and order history.
 
 Search contacts
+- **get_sales_order**: Get order details
+- **get_stock_item**: The definitive product record.
+
+Get product details
+- **list_batches**: Track individual lots through the production lifecycle.
+
+List production batches
 - **list_purchase_orders**: Supply chain tracking for production inputs.
 
 List purchase orders
+- **list_stock_levels**: Critical for fulfillment and reorder decisions.
+
+List current inventory
 
 
 ## 💬 Prompt Examples

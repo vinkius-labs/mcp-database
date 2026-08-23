@@ -37,36 +37,36 @@ Connect your **BoardGameGeek** account to any AI agent and unlock the full analy
 
 
 ## Available Tools (10)
-- **get_game_plays**: Returns who played, when, and any comments. Useful for gauging a game's active community and recent engagement.
-
-Get recent play logs for a specific board game
-- **get_user_plays**: Returns game names, play dates, locations, quantities and comments. Optionally filter by date range using YYYY-MM-DD format.
-
-Get a user's board game play history
 - **search_games**: Returns matching games with their BGG IDs, primary names, year published. Use the returned ID with get_thing to fetch full details including ratings, player count and complexity.
 
 Search for board games by name on BoardGameGeek
 - **get_thread**: Useful for reading discussions, rules clarifications, or reviews about a game.
 
 Read a specific forum thread on BoardGameGeek
-- **get_user_collection**: Returns all games owned with stats, ratings, play counts, own/want/wishlist status. Optionally filter by subtype or exclude expansions.
-
-Get a BGG user's board game collection
-- **get_forum_list**: g. Reviews, Rules, General, Strategy) associated with a specific board game by its BGG ID. Use the returned forum IDs to browse individual threads.
-
-List discussion forums for a board game
-- **get_guild**: Guilds are community groups on BGG organized around shared interests.
-
-Get details about a BoardGameGeek guild
 - **get_hot_items**: Defaults to "boardgame" type but also supports "rpg", "videogame", "boardgameperson", "boardgamecompany". Ideal for discovering what is popular in the hobby right now.
 
 Get the current trending/hot board games on BoardGameGeek
+- **get_forum_list**: g. Reviews, Rules, General, Strategy) associated with a specific board game by its BGG ID. Use the returned forum IDs to browse individual threads.
+
+List discussion forums for a board game
+- **get_game_plays**: Returns who played, when, and any comments. Useful for gauging a game's active community and recent engagement.
+
+Get recent play logs for a specific board game
+- **get_guild**: Guilds are community groups on BGG organized around shared interests.
+
+Get details about a BoardGameGeek guild
 - **get_thing**: Returns game names, year published, min/max players, playing time, complexity weight, Bayesian/user ratings, rank, description and thumbnail. Use comma-separated IDs for multiple games.
 
 Get detailed info for a board game by BGG ID
+- **get_user_collection**: Returns all games owned with stats, ratings, play counts, own/want/wishlist status. Optionally filter by subtype or exclude expansions.
+
+Get a BGG user's board game collection
 - **get_user_info**: Useful for understanding a user's preferences and social connections on the platform.
 
 Get a BoardGameGeek user profile
+- **get_user_plays**: Returns game names, play dates, locations, quantities and comments. Optionally filter by date range using YYYY-MM-DD format.
+
+Get a user's board game play history
 
 
 ## 💬 Prompt Examples

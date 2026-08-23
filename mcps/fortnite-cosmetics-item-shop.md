@@ -33,22 +33,22 @@ Equip your AI agent with real-time intelligence for the world's most dynamic gam
 
 
 ## Available Tools (8)
+- **search_cosmetics**: Returns images, rarity, set info, and introduction date.
+
+Search for cosmetics by name
+- **search_cosmetics_by_rarity**: Rarities: common, uncommon, rare, epic, legendary, marvel, dc, icon, gaminglegends.
+
+Find cosmetics filtered by rarity tier
 - **get_cosmetic_details**: Get full details for a specific cosmetic by ID
 - **get_new_cosmetics**: List newly added and leaked cosmetics
+- **list_banners**: List all profile banner icons
 - **get_item_shop**: Updated at 00:00 UTC.
 
 Get the current daily and featured item shop
 - **get_combined_shop**: Get the full combined item shop data
-- **list_banners**: List all profile banner icons
-- **search_cosmetics_by_rarity**: Rarities: common, uncommon, rare, epic, legendary, marvel, dc, icon, gaminglegends.
-
-Find cosmetics filtered by rarity tier
 - **search_cosmetics_by_type**: Types: outfit, backpack, pickaxe, glider, emote, wrap, loadingscreen, spray, emoji, music.
 
 Find cosmetics filtered by item type
-- **search_cosmetics**: Returns images, rarity, set info, and introduction date.
-
-Search for cosmetics by name
 
 
 ## 💬 Prompt Examples

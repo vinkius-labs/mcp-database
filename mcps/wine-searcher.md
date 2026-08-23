@@ -33,18 +33,18 @@ Connect to **Wine-Searcher** — the world's largest wine price comparison engin
 - **wine_check**: ), grape varieties, region, appellation, alcohol content, average/min/max pricing across globalThis merchants. The primary lookup tool for any wine question.
 
 Check wine details and scores
-- **market_price**: Use for price comparison, market analysis, or finding the best deal on a specific wine.
-
-Get globalThis market pricing
 - **search_wines**: Returns matching wines with pricing, scores, and merchant availability. Use for discovery and exploration.
 
 Search the wine database
-- **grape_info**: Perfect for sommelier education and pairing recommendations.
-
-Get grape variety info
 - **region_info**: Essential for terroir education and regional exploration.
 
 Get wine region info
+- **grape_info**: Perfect for sommelier education and pairing recommendations.
+
+Get grape variety info
+- **market_price**: Use for price comparison, market analysis, or finding the best deal on a specific wine.
+
+Get globalThis market pricing
 - **producer_info**: Use for winery research and brand comparison.
 
 Get producer/winery info

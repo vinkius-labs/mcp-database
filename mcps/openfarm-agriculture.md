@@ -36,15 +36,15 @@ Connect your AI agent to **OpenFarm**, the world's most comprehensive open-sourc
 - **get_crop_details**: Essential for crop planning and agronomic decision-making.
 
 Get comprehensive information for a specific plant using its ID
+- **search_crops**: io botanical database for crops matching the query. Returns plant names, scientific names, family, genus, and basic growing attributes. Use this to identify crops before requesting detailed species data.
+
+Search for crops and plants by name
 - **get_species_details**: Critical for precision agriculture and biodiversity assessments.
 
 Get detailed taxonomic and growing data for a specific species
 - **list_species**: Each species includes taxonomic classification, growth form, and habitat data. Use without a query to browse, or with a query to search.
 
 Search for plant species, optionally filtered by name
-- **search_crops**: io botanical database for crops matching the query. Returns plant names, scientific names, family, genus, and basic growing attributes. Use this to identify crops before requesting detailed species data.
-
-Search for crops and plants by name
 
 
 ## 💬 Prompt Examples

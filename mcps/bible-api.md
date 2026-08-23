@@ -38,8 +38,8 @@ Empower your AI agent to orchestrate your entire biblical research workflow with
 - **get_bible_details**: Get metadata for a specific Bible ID
 - **get_bible_chapter**: Get the content of a specific chapter
 - **get_bible_verse**: Get the text of a specific verse
-- **list_bibles**: List all available Bible versions and languages
 - **list_bible_books**: List all books in a specific Bible version
+- **list_bibles**: List all available Bible versions and languages
 - **search_bible_text**: Search for keywords or phrases across a Bible version
 
 

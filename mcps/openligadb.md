@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire football intelligence workflow 
 
 
 ## Available Tools (6)
-- **get_last_league_match**: Get information about the most recent match in a league
-- **get_league_matches**: Get all matches for a specific league and season
 - **get_match_details**: Get full details for a specific match ID
 - **get_next_league_match**: Get information about the next match in a league
+- **get_last_league_match**: Get information about the most recent match in a league
+- **get_league_matches**: Get all matches for a specific league and season
 - **get_league_table**: Get the current standing table for a league and season
 - **list_available_leagues**: List all available leagues in the OpenLigaDB catalog
 

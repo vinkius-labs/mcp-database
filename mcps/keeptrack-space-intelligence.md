@@ -34,9 +34,9 @@ Equip your AI agent with real-time orbital intelligence through the **KeepTrack*
 
 
 ## Available Tools (3)
-- **get_recent_space_launches**: Get most recent space launches
 - **get_satellite_details**: Get details for a specific satellite
 - **search_satellites**: Search for satellites by name
+- **get_recent_space_launches**: Get most recent space launches
 
 
 ## 💬 Prompt Examples

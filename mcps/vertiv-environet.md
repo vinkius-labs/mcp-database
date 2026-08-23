@@ -36,6 +36,21 @@ Vertiv Environet provides real-time infrastructure optimization, ensuring your c
 
 
 ## Available Tools (10)
+- **update_threshold**: Changes trigger new alarms if readings cross the new boundaries. Use this to adjust sensitivity based on seasonal changes or equipment updates.
+
+Modify alarm thresholds for a sensor
+- **get_active_alerts**: Can filter by severity (Critical, Major, Minor, Warning) or by site. Critical alerts often indicate immediate risk to equipment or operations. Use this to prioritize operational response.
+
+Get currently active environmental alarms and warnings
+- **get_sensor_reading**: Use this for precise monitoring of critical assets (e.g., specific server rack temperature or UPS room humidity).
+
+Get the current real-time reading from a specific sensor
+- **acknowledge_alert**: Requires the alertId and the userId of the operator acknowledging it. Acknowledged alerts are removed from the "active" list and moved to history. Essential for audit trails and shift handovers.
+
+Acknowledge an active alarm to indicate it is being investigated
+- **get_alert_history**: Optional siteId and limit parameters. Use this for root cause analysis, SLA reporting, or identifying recurring environmental issues.
+
+View historical alarm records for analysis and reporting
 - **get_sensors**: Optional siteId filters results to a specific facility. Use this to discover available monitoring points.
 
 List environmental sensors deployed across monitored sites
@@ -48,24 +63,9 @@ Check the operational status of the Environet monitoring system itself
 - **get_thresholds**: Optional sensorId filters to a specific sensor. Use this to audit current safety limits and ensure they match operational requirements.
 
 View configured alarm thresholds for sensors
-- **update_threshold**: Changes trigger new alarms if readings cross the new boundaries. Use this to adjust sensitivity based on seasonal changes or equipment updates.
-
-Modify alarm thresholds for a sensor
 - **get_user_activity**: Use this for security auditing and operational compliance.
 
 View audit log of user actions within the Environet system
-- **acknowledge_alert**: Requires the alertId and the userId of the operator acknowledging it. Acknowledged alerts are removed from the "active" list and moved to history. Essential for audit trails and shift handovers.
-
-Acknowledge an active alarm to indicate it is being investigated
-- **get_alert_history**: Optional siteId and limit parameters. Use this for root cause analysis, SLA reporting, or identifying recurring environmental issues.
-
-View historical alarm records for analysis and reporting
-- **get_active_alerts**: Can filter by severity (Critical, Major, Minor, Warning) or by site. Critical alerts often indicate immediate risk to equipment or operations. Use this to prioritize operational response.
-
-Get currently active environmental alarms and warnings
-- **get_sensor_reading**: Use this for precise monitoring of critical assets (e.g., specific server rack temperature or UPS room humidity).
-
-Get the current real-time reading from a specific sensor
 
 
 ## 💬 Prompt Examples

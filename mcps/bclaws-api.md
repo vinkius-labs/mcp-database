@@ -36,11 +36,11 @@ Empower your AI agent to orchestrate your entire legal research and legislative 
 
 ## Available Tools (6)
 - **check_api_status**: Check if the BCLaws API is operational
+- **list_bc_acts**: List all available Acts in the BCLaws database
+- **search_bc_laws**: Search for British Columbia statutes and regulations
 - **get_bc_regulation**: Get details for a specific British Columbia regulation
 - **get_bc_statute**: Get details for a specific British Columbia statute
-- **list_bc_acts**: List all available Acts in the BCLaws database
 - **list_consolidated_laws**: List consolidated statutes and regulations
-- **search_bc_laws**: Search for British Columbia statutes and regulations
 
 
 ## 💬 Prompt Examples

@@ -39,9 +39,6 @@ No API key required — completely free.
 - **get_house_characters**: Houses: gryffindor, slytherin, ravenclaw, hufflepuff. Each entry includes name, actor, role, patronus and species. Useful for exploring house-specific character rosters.
 
 Get characters from a specific Hogwarts house
-- **get_staff**: Each entry includes name, house, role, actor name and alive status. Useful for finding professors and school staff.
-
-Get all Hogwarts staff and teachers
 - **get_students**: Each entry includes name, house, year, actor name, patronus, species and alive status. Useful for finding students by house or character.
 
 Get all Hogwarts students
@@ -54,6 +51,9 @@ Get a specific Harry Potter character by ID
 - **get_spells**: Each entry includes the spell name, type (charm, curse, hex, etc.) and effect description. Useful for discovering spells and their effects.
 
 Get all Harry Potter spells
+- **get_staff**: Each entry includes name, house, role, actor name and alive status. Useful for finding professors and school staff.
+
+Get all Hogwarts staff and teachers
 
 
 ## 💬 Prompt Examples

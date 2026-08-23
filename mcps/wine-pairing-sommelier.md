@@ -26,11 +26,11 @@ Uses the Spoonacular API key (same as Spoonacular MCP). An essential companion f
 - **get_dish_for_wine**: g. merlot, chardonnay, pinot noir, riesling) and get expert dish pairing recommendations.
 
 Find the perfect dish to pair with a wine
+- **recommend_wines**: Get specific wine product recommendations with ratings and prices
+- **get_wine_description**: Get a detailed description of a wine type
 - **get_wine_pairing**: g. steak, salmon, pasta, chocolate) and get expert wine pairing recommendations with specific product suggestions, ratings, and prices.
 
 Find the perfect wine to pair with a dish or ingredient
-- **recommend_wines**: Get specific wine product recommendations with ratings and prices
-- **get_wine_description**: Get a detailed description of a wine type
 
 
 ## 💬 Prompt Examples
