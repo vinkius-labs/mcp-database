@@ -34,9 +34,7 @@ Connect your **Benchmark Email** account to any AI agent and orchestrate your em
 
 
 ## Available Tools (10)
-- **list_reports**: List all campaign reports
 - **list_templates**: List all email templates
-- **add_contact**: Add a new contact to a list
 - **create_contact_list**: Create a new contact list
 - **get_contact_list**: Get specific contact list details
 - **get_email_details**: Get details of a specific email campaign
@@ -44,6 +42,8 @@ Connect your **Benchmark Email** account to any AI agent and orchestrate your em
 - **list_contact_lists**: List all contact lists
 - **list_contacts**: List contacts in a specific contact list
 - **list_emails**: List all email campaigns
+- **add_contact**: Add a new contact to a list
+- **list_reports**: List all campaign reports
 
 
 ## 💬 Prompt Examples

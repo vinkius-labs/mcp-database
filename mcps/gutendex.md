@@ -39,15 +39,15 @@ No API key required — completely free, no registration.
 
 
 ## Available Tools (3)
-- **list_books**: Supports powerful filters: search by title/author, topic/subject, language (ISO 2-letter codes like "en", "fr", "pt"), copyright status, MIME type (e.g. "application/pdf" for PDFs), author birth/death year ranges, and specific Gutenberg IDs. Results sorted by popularity (download count) by default. Returns book titles, authors, subjects, languages, download URLs and download counts. Supports pagination.
-
-Search Project Gutenberg ebooks via Gutendex
-- **get_book**: Returns the title, authors (with birth/death years), subjects, bookshelves, languages, summary, download counts and all available formats/URLs (HTML, EPUB, Kindle, PDF, plain text). Common IDs: 1342 (Pride and Prejudice), 84 (Frankenstein), 4300 (Ulysses), 2701 (Moby Dick), 1727 (Romeo and Juliet).
-
-Get detailed info for a specific Gutenberg book
 - **get_books_by_url**: org URL and returns the book details. Accepts URLs like "https://www.gutenberg.org/ebooks/1342" or "https://www.gutenberg.org/files/1342/".
 
 Get book info from a Gutenberg URL
+- **get_book**: Returns the title, authors (with birth/death years), subjects, bookshelves, languages, summary, download counts and all available formats/URLs (HTML, EPUB, Kindle, PDF, plain text). Common IDs: 1342 (Pride and Prejudice), 84 (Frankenstein), 4300 (Ulysses), 2701 (Moby Dick), 1727 (Romeo and Juliet).
+
+Get detailed info for a specific Gutenberg book
+- **list_books**: Supports powerful filters: search by title/author, topic/subject, language (ISO 2-letter codes like "en", "fr", "pt"), copyright status, MIME type (e.g. "application/pdf" for PDFs), author birth/death year ranges, and specific Gutenberg IDs. Results sorted by popularity (download count) by default. Returns book titles, authors, subjects, languages, download URLs and download counts. Supports pagination.
+
+Search Project Gutenberg ebooks via Gutendex
 
 
 ## 💬 Prompt Examples

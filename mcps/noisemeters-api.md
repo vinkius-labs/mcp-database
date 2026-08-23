@@ -35,10 +35,10 @@ Empower your AI agent to orchestrate your entire acoustic research and noise aud
 
 
 ## Available Tools (4)
-- **check_api_status**: Check if the NoiseMeters service is operational
-- **get_live_noise_data**: Get the most recent real-time noise level from an instrument
 - **get_noise_measurements**: Get historical noise measurements for a specific instrument
 - **list_noise_instruments**: List all noise monitoring instruments registered in your account
+- **check_api_status**: Check if the NoiseMeters service is operational
+- **get_live_noise_data**: Get the most recent real-time noise level from an instrument
 
 
 ## 💬 Prompt Examples

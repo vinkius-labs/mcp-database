@@ -35,10 +35,10 @@ Equip your AI agent with a comprehensive source of visual expression through the
 
 
 ## Available Tools (3)
-- **get_random_emoji**: Get a random emoji
 - **list_emoji_categories**: g., Smileys, Animals).
 
 List all emoji categories
+- **get_random_emoji**: Get a random emoji
 - **search_emojis**: g., heart, smile).
 
 Search for emojis by keyword

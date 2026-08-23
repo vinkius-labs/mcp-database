@@ -35,19 +35,10 @@ Connect to **iNaturalist** and explore the world's largest biodiversity database
 
 
 ## Available Tools (10)
-- **autocomplete_taxa**: Returns the top 10 matching taxa with names and ranks. Useful for building search UIs or quickly finding taxon IDs.
-
-Autocomplete taxon names
 - **get_controlled_terms**: These include standardized values for life stage, plant phenology, sex, evidence of presence and more. Useful for understanding annotation options.
 
 Get controlled terms (standardized vocabularies)
-- **get_identifications**: Filter by taxon or user. Each identification includes the proposed species, the observation it was made on, and the user who made it.
-
-Get identifications made by users
 - **get_observation**: Get a specific iNaturalist observation by ID
-- **get_observations_by_user**: Filter by quality grade and set result limit. Returns observations with species, photos and dates.
-
-Get observations by a specific user
 - **get_projects**: Projects are community-curated collections of observations. Filter by place and set result limit.
 
 Search for iNaturalist projects
@@ -57,6 +48,15 @@ Get species observation counts grouped by taxon
 - **get_taxon**: Returns scientific name, common names, rank, ancestry, conservation status, establishment means and Wikipedia URL.
 
 Get details for a specific taxon
+- **autocomplete_taxa**: Returns the top 10 matching taxa with names and ranks. Useful for building search UIs or quickly finding taxon IDs.
+
+Autocomplete taxon names
+- **get_identifications**: Filter by taxon or user. Each identification includes the proposed species, the observation it was made on, and the user who made it.
+
+Get identifications made by users
+- **get_observations_by_user**: Filter by quality grade and set result limit. Returns observations with species, photos and dates.
+
+Get observations by a specific user
 - **search_observations**: Supports powerful filters: free-text query, taxon ID, user, place/location, quality grade (research/needs_id/casual), date range, and whether photos are required. Returns observations with species names, photos, locations, dates and observer info. Pagination: max 200 per page.
 
 Search iNaturalist observations

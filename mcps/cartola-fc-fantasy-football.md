@@ -34,16 +34,16 @@ Transform your AI agent into a professional Cartola FC strategist with this dedi
 
 ## Available Tools (12)
 - **list_cheap_players**: List players with low prices (Bargains)
-- **list_players_by_club**: List all players from a specific club
-- **list_clubs**: List all club names and IDs
-- **search_leagues**: Search for public or private leagues by name
-- **list_round_scorers**: Get real-time scores for the current round
-- **list_players_by_position**: List players by position (GK, DEF, MID, FWD)
-- **list_probable_players**: List players with "Probable" status
-- **search_players**: Search for players by nickname
-- **get_market_status**: Check if the Cartola FC market is open
 - **get_user_team_by_slug**: Retrieve details for a specific user team by slug
+- **list_clubs**: List all club names and IDs
+- **list_players_by_club**: List all players from a specific club
+- **list_probable_players**: List players with "Probable" status
+- **list_round_scorers**: Get real-time scores for the current round
+- **search_leagues**: Search for public or private leagues by name
+- **search_players**: Search for players by nickname
 - **list_top_scaled_players**: List the most selected players for the current round
+- **get_market_status**: Check if the Cartola FC market is open
+- **list_players_by_position**: List players by position (GK, DEF, MID, FWD)
 - **list_top_average_players**: List players with the highest season averages
 
 

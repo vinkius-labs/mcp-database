@@ -36,9 +36,9 @@ Empower your AI agent to orchestrate your entire environmental research workflow
 
 ## Available Tools (6)
 - **get_carbon_monoxide**: Get carbon monoxide emission data
+- **get_nitrogen_dioxide**: Get nitrogen dioxide emission data
 - **get_geojson_emissions**: Get emission data in GeoJSON format
 - **get_methane**: Get methane emission data
-- **get_nitrogen_dioxide**: Get nitrogen dioxide emission data
 - **get_ozone**: Get ozone emission data
 - **get_available_products**: List all available gas products in the database
 

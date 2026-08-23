@@ -36,15 +36,15 @@ Empower your AI agent to manage your publishing journey with **Leiting Games**, 
 
 
 ## Available Tools (10)
-- **get_developer_profile**: Get developer profile info
-- **get_game_status**: Get game publishing status
 - **list_sdk_releases**: List SDK releases
-- **submit_game**: Submit a new game for review
-- **get_marketing_data**: Get marketing analytics
 - **get_partner_stats**: Get partner statistics summary
 - **get_audit_logs**: Get account audit logs
 - **get_compliance_status**: Check compliance status
+- **get_developer_profile**: Get developer profile info
+- **get_game_status**: Get game publishing status
+- **get_marketing_data**: Get marketing analytics
 - **list_collaborations**: List active collaborations
+- **submit_game**: Submit a new game for review
 - **list_games**: List published games
 
 

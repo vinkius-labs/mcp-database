@@ -34,9 +34,9 @@ Equip your AI agent with advanced precision agriculture intelligence through the
 
 
 ## Available Tools (3)
+- **get_agri_fields**: List all registered agricultural fields
 - **get_crop_health_data**: Get crop health indicators
 - **get_field_analytics**: Get analytics for a specific field
-- **get_agri_fields**: List all registered agricultural fields
 
 
 ## 💬 Prompt Examples

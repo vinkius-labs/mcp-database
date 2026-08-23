@@ -38,39 +38,39 @@ Connect to **MobyGames** and explore the world's largest video game database thr
 
 
 ## Available Tools (11)
-- **get_attributes**: g. "Educational", "Free-to-play", "Open world", "Multiplayer"). Returns attribute names and IDs.
-
-Get game attributes/special attributes
-- **get_developers**: Returns developer names, game counts and profile info.
-
-Search for game developers by name
-- **get_game_by_id**: Returns title, release dates, platforms, genres, descriptions, developers, publishers, MobyScore, screenshots, covers and credits.
-
-Get detailed info for a specific game by MobyGames ID
 - **get_game_credits**: ) for a specific game by its MobyGames ID. Returns person names, roles and departments.
 
 Get credits for a specific game
-- **get_game_group**: Returns group name, description and list of games in the group.
-
-Get details for a specific game group (series/franchise)
 - **get_game_groups**: Returns group names, game counts and descriptions.
 
 Get list of game groups (series/franchises)
 - **get_platforms**: Returns platform names and IDs for filtering game searches.
 
 Get list of all gaming platforms
-- **get_reviews**: Optionally filter by game ID. Returns review scores, reviewer names, publications and review excerpts.
+- **get_attributes**: g. "Educational", "Free-to-play", "Open world", "Multiplayer"). Returns attribute names and IDs.
 
-Get game reviews from the MobyGames database
+Get game attributes/special attributes
 - **get_companies**: Returns company names, game counts and profile info.
 
 Search for game publishers and companies by name
-- **get_genres**: Returns genre names and IDs for filtering game searches.
+- **get_developers**: Returns developer names, game counts and profile info.
 
-Get list of all game genres
+Search for game developers by name
+- **get_game_by_id**: Returns title, release dates, platforms, genres, descriptions, developers, publishers, MobyScore, screenshots, covers and credits.
+
+Get detailed info for a specific game by MobyGames ID
+- **get_game_group**: Returns group name, description and list of games in the group.
+
+Get details for a specific game group (series/franchise)
+- **get_reviews**: Optionally filter by game ID. Returns review scores, reviewer names, publications and review excerpts.
+
+Get game reviews from the MobyGames database
 - **search_games**: Supports filtering by title, platform, genre and developer. Returns game titles, release years, platforms, genres, MobyScores and developer/publisher info.
 
 Search for video games in the MobyGames database
+- **get_genres**: Returns genre names and IDs for filtering game searches.
+
+Get list of all game genres
 
 
 ## 💬 Prompt Examples

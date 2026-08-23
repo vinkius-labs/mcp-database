@@ -36,30 +36,30 @@ Connect to the **Kavak** platform from any AI agent and navigate Mexico's larges
 
 
 ## Available Tools (14)
+- **get_financing_options**: Calculate financing plans for a vehicle
+- **get_market_pricing**: Get market pricing intelligence for a car model
+- **get_reservation**: Check the status of a vehicle reservation
+- **get_vehicle**: Get full details of a specific car
+- **get_vehicle_history**: Check the ownership and accident history of a car
+- **get_vehicle_inspection**: View the 240-point mechanical inspection report
+- **list_makes**: List all available car manufacturers
 - **create_reservation**: Requires buyer contact details. The vehicle will be taken off the marketplace during the reservation period.
 
 Reserve a vehicle for purchase
 - **estimate_trade_in**: The estimate factors in make, model, year, mileage, condition, and current Mexican market prices.
 
 Get a trade-in value estimate for your current car
-- **get_financing_options**: Calculate financing plans for a vehicle
-- **get_vehicle_history**: Check the ownership and accident history of a car
-- **get_vehicle_inspection**: View the 240-point mechanical inspection report
-- **get_market_pricing**: Get market pricing intelligence for a car model
-- **get_reservation**: Check the status of a vehicle reservation
-- **get_vehicle**: Get full details of a specific car
 - **list_locations**: Each location includes its address, operating hours, available services (test drives, inspections, deliveries), and contact details.
 
 Find Kavak showroom locations
-- **list_makes**: List all available car manufacturers
 - **search_vehicles**: All vehicles listed on Kavak come with a 240-point mechanical inspection and Kavak warranty.
 
 Search available used cars in the Kavak inventory
-- **list_models**: List models available for a specific make
 - **list_reservations**: List all your active reservations
 - **schedule_test_drive**: Kavak also offers home test drives in select cities where the vehicle is delivered to the buyer's address.
 
 Schedule a test drive for a vehicle
+- **list_models**: List models available for a specific make
 
 
 ## 💬 Prompt Examples

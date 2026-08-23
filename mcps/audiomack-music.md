@@ -36,11 +36,11 @@ This integration uses Audiomack's REST API with secure OAuth 1.0a signing for al
 
 
 ## Available Tools (6)
-- **get_authenticated_account**: Retrieve information about the authenticated Audiomack account
 - **get_album_details**: Get detailed information for a specific album
 - **get_artist_details**: Get comprehensive information for a specific artist
-- **get_artist_music**: List all songs or albums for a specific artist
+- **get_authenticated_account**: Retrieve information about the authenticated Audiomack account
 - **get_trending_music**: Retrieve the currently trending music on Audiomack
+- **get_artist_music**: List all songs or albums for a specific artist
 - **search_music**: Search for songs, albums, or artists on Audiomack
 
 

@@ -37,9 +37,6 @@ Empower your AI agent to operate as a real-time intelligence layer over the glob
 
 
 ## Available Tools (12)
-- **get_ban**: Returns the ban reason, banned player identifier, timestamps, expiry date, scope (server-level or organization-wide), and the administrator who issued the ban. Requires appropriate ban:read scope on the API token. Use this after identifying a ban ID from list_bans.
-
-Get details for a specific ban
 - **get_game**: Returns details such as the game name, the number of tracked servers and players, and game-specific metadata. Use this to get an overview of a game's ecosystem on BattleMetrics.
 
 Get details about a specific tracked game
@@ -49,9 +46,6 @@ Get detailed information about a specific game server
 - **get_server_leaderboard**: Returns player names, IDs, and playtime duration. This is useful for identifying the most active or dedicated players on any tracked game server. Use page_number for pagination.
 
 Get the time-based leaderboard for a game server
-- **list_bans**: Each ban includes the ban reason, the banned player identifier, timestamps, expiry, and scope (server-level or organization-wide). Requires appropriate ban:read scope on the API token. Use page_number for pagination and optional server_id to filter bans from a specific server.
-
-List bans in your BattleMetrics organization
 - **list_games**: Returns each game's ID, display name, and metadata. Useful for discovering which games are available for server and player queries, and for getting the correct game identifier to use in server filters.
 
 List all games tracked by BattleMetrics
@@ -61,18 +55,24 @@ Search and list players across all tracked game servers
 - **list_servers**: Use the optional search parameter to find servers by name, or filter by game and country. Returns server name, IP, port, player count, rank, and game type. Results are paginated — use page_number to navigate through results.
 
 List game servers tracked by BattleMetrics
-- **get_player_sessions**: Each session shows which server the player was on, when they joined, when they left, and the session duration. Useful for auditing player activity, tracking playtime, or verifying presence on a specific server.
-
-Get session history for a specific player
 - **search_servers**: Unlike the basic list_servers tool, this supports granular filtering by server name, game, country, minimum/maximum player count, rank range, and more. Returns matching servers with full metadata including name, IP, port, player count, rank, game type, map, and status. Use this when you need precise filtering to find specific servers. Results are paginated — use page_number to navigate.
 
 Search game servers with advanced filters
-- **get_server_player_count_history**: Useful for analyzing population trends, peak hours, and server activity patterns over a given time range. If start and stop are omitted, the API returns recent history. Use ISO 8601 timestamps for the date range.
+- **get_ban**: Returns the ban reason, banned player identifier, timestamps, expiry date, scope (server-level or organization-wide), and the administrator who issued the ban. Requires appropriate ban:read scope on the API token. Use this after identifying a ban ID from list_bans.
 
-Get player count history for a game server over time
+Get details for a specific ban
 - **get_player**: Returns the player name, associated identifiers (Steam, EOS, etc.), time played statistics, linked servers, and recent activity. Use this after identifying a player ID from list_players or session history.
 
 Get detailed profile for a specific player
+- **get_player_sessions**: Each session shows which server the player was on, when they joined, when they left, and the session duration. Useful for auditing player activity, tracking playtime, or verifying presence on a specific server.
+
+Get session history for a specific player
+- **get_server_player_count_history**: Useful for analyzing population trends, peak hours, and server activity patterns over a given time range. If start and stop are omitted, the API returns recent history. Use ISO 8601 timestamps for the date range.
+
+Get player count history for a game server over time
+- **list_bans**: Each ban includes the ban reason, the banned player identifier, timestamps, expiry, and scope (server-level or organization-wide). Requires appropriate ban:read scope on the API token. Use page_number for pagination and optional server_id to filter bans from a specific server.
+
+List bans in your BattleMetrics organization
 
 
 ## 💬 Prompt Examples
