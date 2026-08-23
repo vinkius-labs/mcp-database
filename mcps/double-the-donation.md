@@ -38,16 +38,16 @@ No more manual employer lookups or missing out on corporate gift matches. Your A
 ## Available Tools (12)
 - **create_organization**: Provision a new 360MatchPro account
 - **get_account_settings**: Get account settings
-- **list_campaigns**: List campaigns
 - **get_company**: Get company matching gift details
 - **get_dashboard_stats**: Get dashboard statistics
 - **get_donation**: Get donation details
 - **get_organization**: Get organization details
 - **list_donations**: List donations
-- **list_subsidiaries**: List company subsidiaries
 - **register_donation**: Register a new donation
 - **search_company**: Search for a company by name
 - **update_organization**: Update organization details
+- **list_campaigns**: List campaigns
+- **list_subsidiaries**: List company subsidiaries
 
 
 ## 💬 Prompt Examples

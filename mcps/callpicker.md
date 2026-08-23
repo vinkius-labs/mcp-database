@@ -36,11 +36,11 @@ No more manual logging of phone results or digging through complex PBX portals. 
 
 
 ## Available Tools (9)
-- **get_call_details**: Get details for a specific call
 - **get_cdr_report**: Get Call Detail Records (CDR)
 - **get_pbx_system_status**: Check PBX system status
-- **list_pbx_extensions**: List PBX extensions
 - **list_virtual_numbers**: List virtual phone numbers
+- **get_call_details**: Get details for a specific call
+- **list_pbx_extensions**: List PBX extensions
 - **get_recording_url**: Get the download URL for a recording
 - **list_call_logs**: List recent call logs
 - **list_call_recordings**: List available call recordings

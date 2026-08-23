@@ -35,13 +35,13 @@ Connect your **AssessTEAM** account to any AI agent and simplify how you manage 
 
 
 ## Available Tools (7)
+- **list_organizational_teams**: List organizational teams
 - **list_performance_evaluations**: List performance evaluations
 - **list_projects**: List AssessTEAM projects
-- **list_organizational_teams**: List organizational teams
-- **create_timesheet_entry**: Create a new timesheet entry
 - **list_employees**: List team employees
 - **get_profitability_report**: Get project profitability report
 - **list_timesheets**: List timesheet entries
+- **create_timesheet_entry**: Create a new timesheet entry
 
 
 ## 💬 Prompt Examples

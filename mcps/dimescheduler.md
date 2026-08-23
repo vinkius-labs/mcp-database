@@ -40,10 +40,10 @@ No more manual toggling between complex planning boards or digging through task 
 - **list_time_markers**: List available time markers
 - **get_job**: Get job details
 - **list_appointments**: List all appointments on the planning board
-- **list_categories**: List all planning categories
 - **list_jobs**: Scheduler.
 
 List all planning jobs
+- **list_categories**: List all planning categories
 - **list_resources**: List all planable resources
 
 

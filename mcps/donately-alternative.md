@@ -26,21 +26,21 @@ Ideal for non-profits, NGOs, and fundraising teams who want to seamlessly query 
 
 
 ## Available Tools (11)
-- **get_donation**: Get details of a specific donation
 - **get_fundraiser**: Get details of a specific peer-to-peer fundraiser
 - **get_person**: Get details of a specific person (donor)
 - **get_subscription**: Get details of a specific recurring donation (subscription)
 - **list_campaigns**: Campaigns are the primary way to organize fundraising efforts.
 
 List campaigns for the Donately account
-- **list_donations**: Useful to track incoming contributions and donor activities. Supports pagination and filtering.
-
-List donations for the Donately account
 - **list_fundraisers**: List peer-to-peer fundraisers for the Donately account
 - **list_people**: List people (donors/contacts) for the Donately account
 - **list_subscriptions**: List recurring donations (subscriptions) for the Donately account
-- **create_donation**: Create a new donation
 - **get_campaign**: Get details of a specific campaign
+- **create_donation**: Create a new donation
+- **get_donation**: Get details of a specific donation
+- **list_donations**: Useful to track incoming contributions and donor activities. Supports pagination and filtering.
+
+List donations for the Donately account
 
 
 ## 💬 Prompt Examples

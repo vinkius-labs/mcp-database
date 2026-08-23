@@ -37,15 +37,15 @@ No more manual status checking or digging through fragmented job logs. Your AI a
 
 ## Available Tools (12)
 - **create_estimate**: Create a new estimate
+- **list_estimates**: List project estimates
+- **list_invoices**: List billing invoices
+- **list_webhooks**: List configured webhooks
 - **get_account_info**: Get account settings
 - **get_client**: Get client details
 - **list_clients**: List all clients and leads
-- **list_estimates**: List project estimates
-- **list_invoices**: List billing invoices
 - **list_jobs**: List active jobs
 - **list_properties**: List service properties
 - **list_service_requests**: List incoming requests
-- **list_webhooks**: List configured webhooks
 - **list_work_orders**: List work orders
 - **create_client**: Create a new client or lead
 

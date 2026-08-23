@@ -36,11 +36,11 @@ Connect your **Classe365** student management system to any AI agent and simplif
 
 ## Available Tools (7)
 - **list_school_classes**: List configured classes
-- **create_student_profile**: Add a new student
 - **get_student_details**: Get details for a specific student
 - **list_academic_records**: List academic departments and sections
-- **list_student_attendance**: List student attendance history
 - **list_students**: List Classe365 students
+- **create_student_profile**: Add a new student
+- **list_student_attendance**: List student attendance history
 - **list_exam_assessments**: List assessments and scores
 
 

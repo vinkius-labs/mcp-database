@@ -37,22 +37,22 @@ No more manual status checking or complex form navigation in the legal portal. Y
 
 
 ## Available Tools (12)
-- **get_claim**: Get details for a specific claim
+- **create_claim**: Create a new legal claim for a contact
+- **get_contact**: Get details for a specific contact
+- **get_contact_by_email**: Find a contact by their email address
+- **list_activity_templates**: List available activity templates
+- **list_claims**: List all claims
 - **create_activity**: Requires either claimId or contactId along with activityTemplateId.
 
 Create or back-fill an activity (step/form) for a claim or contact
-- **create_claim**: Create a new legal claim for a contact
 - **create_contact**: Use isAdministrator=true for claim managers.
 
 Create a new contact (Claimant or Admin)
-- **get_contact_by_email**: Find a contact by their email address
-- **get_contact**: Get details for a specific contact
+- **get_case**: Get details for a specific case
+- **get_claim**: Get details for a specific claim
 - **list_activities**: List activities associated with a claim
-- **list_activity_templates**: List available activity templates
 - **list_attribute_templates**: List available attribute templates
 - **update_contact**: Update an existing contact
-- **get_case**: Get details for a specific case
-- **list_claims**: List all claims
 
 
 ## 💬 Prompt Examples

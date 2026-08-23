@@ -35,16 +35,16 @@ Connect your **Apex27** real estate management account to any AI agent and simpl
 
 
 ## Available Tools (11)
-- **create_contact**: Add a new contact to Apex27
 - **record_offer**: Record a new offer on a property
 - **schedule_viewing**: Schedule a new property viewing
-- **get_me**: Get agent account information
-- **get_property_details**: Get details of a specific property
 - **list_appointments**: List CRM appointments
-- **list_contacts**: List contacts (applicants, vendors, etc.)
-- **list_offers**: List property offers
 - **list_properties**: List real estate properties
 - **list_viewings**: List property viewings
+- **create_contact**: Add a new contact to Apex27
+- **get_me**: Get agent account information
+- **get_property_details**: Get details of a specific property
+- **list_contacts**: List contacts (applicants, vendors, etc.)
+- **list_offers**: List property offers
 - **list_work_orders**: List maintenance work orders
 
 

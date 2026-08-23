@@ -35,16 +35,16 @@ Connect your **DecileHub** account to any AI agent and take full control of your
 
 
 ## Available Tools (12)
-- **get_fund**: Get fund details
 - **get_investor**: Get investor details
 - **check_decilehub_status**: Verify connectivity
+- **get_fund**: Get fund details
+- **get_fund_performance**: Get fund performance
 - **get_company**: Get company details
 - **get_filing_report**: Get filing report
-- **get_fund_performance**: Get fund performance
 - **list_companies_by_fund**: List companies by fund
-- **list_portfolio_companies**: List portfolio companies
 - **list_filings**: List filings
 - **list_funds**: List funds
+- **list_portfolio_companies**: List portfolio companies
 - **list_investors**: List investors (LPs)
 - **list_valuations**: List company valuations
 

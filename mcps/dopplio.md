@@ -41,10 +41,10 @@ No more manual document exporting or complex video rendering pipelines. Your AI 
 
 Render a PDF from URL or HTML
 - **capture_screenshot**: Capture a website screenshot
+- **get_render_status**: Check status of a render job
 - **generate_video**: Provide template and personalization data.
 
 Generate AI-personalized video
-- **get_render_status**: Check status of a render job
 - **list_videos**: List all generated videos
 
 

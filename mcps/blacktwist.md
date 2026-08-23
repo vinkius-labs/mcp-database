@@ -36,7 +36,6 @@ No more manual toggling between social apps or digging through analytics dashboa
 
 
 ## Available Tools (12)
-- **list_posts**: List your posts and drafts
 - **list_accounts**: Useful for getting providerIds.
 
 List connected social media accounts
@@ -44,15 +43,16 @@ List connected social media accounts
 - **delete_post**: If it was scheduled, it will be cancelled.
 
 Delete a post
+- **get_post**: Get details for a specific post
 - **get_posting_consistency**: Get posting consistency data
-- **get_daily_recap**: Get yesterday’s activity summary
 - **get_thread_follow_up**: Get follow-up settings for a thread
+- **list_posts**: List your posts and drafts
+- **get_daily_recap**: Get yesterday’s activity summary
+- **get_account_settings**: Get account settings
+- **get_subscription_info**: Get current plan and quota
 - **get_analytics_metrics**: ) for your social media accounts.
 
 Get engagement metrics
-- **get_post**: Get details for a specific post
-- **get_account_settings**: Get account settings
-- **get_subscription_info**: Get current plan and quota
 - **create_post**: You must specify the providerId and the content of the post(s).
 
 Create or schedule a new post

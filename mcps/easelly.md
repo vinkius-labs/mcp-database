@@ -37,13 +37,13 @@ No more manual editing for every small visual change. Your AI acts as your dedic
 
 ## Available Tools (6)
 - **generate_json**: Get infographic structure in JSON
-- **generate_pdf**: Generate a PDF for an infographic
 - **list_infographics**: ly account.
 
 List your infographics
 - **update_infographic**: Update an existing infographic
-- **create_infographic**: Create a new infographic
 - **generate_image**: Generate an image for an infographic
+- **create_infographic**: Create a new infographic
+- **generate_pdf**: Generate a PDF for an infographic
 
 
 ## 💬 Prompt Examples
