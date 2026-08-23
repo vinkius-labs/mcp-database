@@ -34,16 +34,16 @@ Connect your AI agent to the **GovInfo** API by the U.S. Government Publishing O
 
 
 ## Available Tools (6)
-- **list_collections**: g., Congressional Bills, Federal Register).
-
-List all available GovInfo document collections
 - **get_collection_details**: Get metadata for a specific GovInfo collection
 - **get_package_content**: Note: Binary formats like pdf or zip will be returned as raw text/binary strings.
 
 Download or retrieve GovInfo package content
-- **get_package_summary**: Get detailed metadata for a specific GovInfo package
+- **list_collections**: g., Congressional Bills, Federal Register).
+
+List all available GovInfo document collections
 - **list_packages**: List packages within a GovInfo collection by date
 - **search_govinfo**: Search GovInfo collections
+- **get_package_summary**: Get detailed metadata for a specific GovInfo package
 
 
 ## 💬 Prompt Examples

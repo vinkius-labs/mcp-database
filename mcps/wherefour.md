@@ -38,13 +38,13 @@ Connect your **Wherefour** account to any AI agent to automate your inventory ma
 ## Available Tools (12)
 - **get_inventory_item**: Get details of a specific inventory item
 - **get_order**: Get details of a specific order
+- **list_locations**: List storage locations
 - **list_customers**: List all customers
 - **list_formulas**: List production formulas/recipes
 - **list_inventory_items**: List all inventory items
 - **list_orders**: List all sales and production orders
 - **search_inventory**: Search for inventory items
 - **list_invoices**: List customer invoices
-- **list_locations**: List storage locations
 - **list_purchases**: List purchase records
 - **list_stock_lots**: List all stock lots
 - **list_vendors**: List all vendors/suppliers

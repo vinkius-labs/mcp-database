@@ -34,45 +34,45 @@ Connect to the official **Datos.gob.es** API to explore Spain's vast repository 
 
 
 ## Available Tools (22)
-- **get_dataset**: Get a specific dataset by its URI identifier
 - **get_province**: g., Madrid).
 
 Get a specific province by ID
 - **get_public_sector**: g., comercio).
 
 Get a specific primary sector by ID
+- **list_datasets_by_keyword**: Filter datasets by keyword
+- **list_distributions**: Get all data distributions
+- **list_distributions_by_dataset**: Get distributions by dataset ID
+- **list_provinces**: Get all provinces
+- **list_publishers**: Get all publishers in the catalog
+- **list_spatial_options**: Get all geographic coverage options
+- **list_themes**: Get all categories/themes
+- **list_public_sectors**: Get the taxonomy of primary sectors
+- **get_country_spain**: Get country-level information for Spain
+- **get_dataset**: Get a specific dataset by its URI identifier
 - **get_region**: g., Comunidad-Madrid).
 
 Get a specific Autonomous Community (Region) by ID
+- **list_datasets**: gob.es catalog.
+
+Get all datasets from the catalog
 - **list_datasets_by_date**: Filter datasets by modification date range
 - **list_datasets_by_format**: g., csv).
 
 Filter datasets by format
-- **list_datasets_by_keyword**: Filter datasets by keyword
 - **list_datasets_by_publisher**: g., A16003011).
 
 Filter datasets by publisher ID
 - **list_datasets_by_spatial**: g., word1=Autonomia, word2=Pais-Vasco).
 
 Filter datasets by geographic scope
-- **list_datasets**: gob.es catalog.
-
-Get all datasets from the catalog
-- **list_distributions_by_dataset**: Get distributions by dataset ID
-- **list_distributions_by_format**: g., csv).
-
-Filter distributions by format
-- **list_distributions**: Get all data distributions
-- **list_provinces**: Get all provinces
-- **list_publishers**: Get all publishers in the catalog
-- **list_regions**: Get all Autonomous Communities (Regions)
-- **list_spatial_options**: Get all geographic coverage options
-- **list_themes**: Get all categories/themes
-- **get_country_spain**: Get country-level information for Spain
 - **list_datasets_by_theme**: g., hacienda).
 
 Filter datasets by theme/category
-- **list_public_sectors**: Get the taxonomy of primary sectors
+- **list_distributions_by_format**: g., csv).
+
+Filter distributions by format
+- **list_regions**: Get all Autonomous Communities (Regions)
 - **search_datasets_by_title**: Search datasets by title
 
 

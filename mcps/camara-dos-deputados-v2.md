@@ -34,16 +34,17 @@ Connect to the **Chamber of Deputies Open Data API** to monitor the Brazilian le
 
 
 ## Available Tools (49)
-- **list_deputado_eventos**: List events the deputy participated in
 - **list_deputado_frentes**: List parliamentary fronts the deputy belongs to
 - **list_deputado_historico**: List historical data of the deputy mandates
 - **list_deputado_ocupacoes**: List professional occupations of the deputy
 - **list_deputado_orgaos**: List committees and other organs the deputy is a member of
-- **list_orgao_votacoes**: List votings held within the organ
 - **list_orgaos**: List organs (Committees, Councils, Board of Directors)
+- **list_deputado_eventos**: List events the deputy participated in
+- **list_evento_votacoes**: List votings that occurred during the event
+- **list_frentes**: List parliamentary fronts
+- **list_orgao_votacoes**: List votings held within the organ
 - **list_partido_membros**: List deputies currently or previously affiliated with the party
 - **list_partidos**: List political parties
-- **list_frentes**: List parliamentary fronts
 - **list_proposicao_votacoes**: List votings related to the proposition
 - **get_bloco**: Get details of a block
 - **get_deputado**: Get details of a specific deputy
@@ -62,7 +63,6 @@ Connect to the **Chamber of Deputies Open Data API** to monitor the Brazilian le
 - **list_evento_deputados**: List deputies present at the event
 - **list_evento_orgaos**: List organs responsible for the event
 - **list_evento_pauta**: List the agenda (items to be discussed/voted) for an event
-- **list_evento_votacoes**: List votings that occurred during the event
 - **list_eventos**: List events (sessions, hearings, meetings)
 - **list_frente_membros**: List members of the parliamentary front
 - **list_legislatura_mesa**: List members of the Board of Directors for that legislature

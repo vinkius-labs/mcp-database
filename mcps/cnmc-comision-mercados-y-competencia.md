@@ -33,12 +33,12 @@ Connect to the official Open Data portal of the **CNMC (Comisión Nacional de lo
 
 
 ## Available Tools (2)
-- **datastore_search**: g., a CSV file within a dataset). Requires a resource_id obtained via package_search.
-
-Retrieve actual records from a specific CNMC resource
 - **package_search**: Use this to find the resource_id needed for datastore_search.
 
 Search for datasets and resources in the CNMC catalog
+- **datastore_search**: g., a CSV file within a dataset). Requires a resource_id obtained via package_search.
+
+Retrieve actual records from a specific CNMC resource
 
 
 ## 💬 Prompt Examples

@@ -35,25 +35,25 @@ No more manual navigation through repository interfaces to check upload statuses
 
 
 ## Available Tools (20)
+- **create_private_article**: Create a new private article
+- **create_project**: Create a new project
+- **initiate_file_upload**: Initiate a file upload for an article
+- **list_article_files**: List files for an article
+- **search_projects**: Advanced search for projects
+- **update_article**: Update an existing article
 - **create_collection**: Create a new collection
 - **delete_article**: Delete an article
 - **get_custom_fields**: Get custom metadata fields for the institution
 - **get_file_details**: Get file details
-- **create_private_article**: Create a new private article
-- **create_project**: Create a new project
-- **get_article_downloads**: Get total downloads for an article
 - **get_article**: Get details of a specific article
+- **get_article_downloads**: Get total downloads for an article
 - **get_article_views**: Get total views for an article
 - **get_hrfeed_upload**: Get HR feed upload details
-- **initiate_file_upload**: Initiate a file upload for an article
-- **list_article_files**: List files for an article
 - **list_public_articles**: List public articles
 - **list_public_collections**: List public collections
 - **list_public_projects**: List public projects
 - **search_articles**: Advanced search for articles
 - **search_collections**: Advanced search for collections
-- **search_projects**: Advanced search for projects
-- **update_article**: Update an existing article
 - **complete_file_upload**: Complete a file upload
 
 

@@ -39,11 +39,11 @@ Connect your AI agent to the **CVM (Comissão de Valores Mobiliários)** Open Da
 List organizations that publish data
 - **list_datasets**: List all datasets available on the CVM portal
 - **search_datasets**: Search for datasets matching specific criteria
+- **get_dataset**: Get complete metadata for a specific dataset
+- **get_resource**: Get metadata for a specific resource
 - **list_groups**: g., "Fundos de Investimento", "Companhias").
 
 List thematic groups
-- **get_dataset**: Get complete metadata for a specific dataset
-- **get_resource**: Get metadata for a specific resource
 
 
 ## 💬 Prompt Examples

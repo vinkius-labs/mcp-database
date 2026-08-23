@@ -20,10 +20,10 @@ Scheduling and task orchestration often require translating complex cron express
 
 ## Available Tools (3)
 - **calculate_next_execution**: Calculates the exact next execution date of a Cron Expression
+- **cron_to_text**: Translates a standard Cron Expression into a human-readable format
 - **text_to_cron**: The output will be a valid cron syntax.
 
 Translates natural language descriptions (e.g. "Every weekday at 5am") into a mathematically valid Cron Expression
-- **cron_to_text**: Translates a standard Cron Expression into a human-readable format
 
 
 ## 💬 Prompt Examples

@@ -20,11 +20,11 @@ When LLMs attempt to convert massive binary or hexadecimal sequences into decima
 
 
 ## Available Tools (3)
+- **convert_bin_to_dec**: Dedicated tool to convert a Binary string (Base 2) into a Decimal string (Base 10)
+- **convert_hex_to_dec**: Dedicated tool to convert a Hexadecimal string (Base 16) into a Decimal string (Base 10)
 - **convert_base**: Requires numeric string to prevent precision loss.
 
 Converts a numeric string from any base (2-36) to another base (2-36) with infinite BigInt precision
-- **convert_bin_to_dec**: Dedicated tool to convert a Binary string (Base 2) into a Decimal string (Base 10)
-- **convert_hex_to_dec**: Dedicated tool to convert a Hexadecimal string (Base 16) into a Decimal string (Base 10)
 
 
 ## 💬 Prompt Examples

@@ -34,18 +34,18 @@ Connect your **Viesus** account to any AI agent and simplify your professional i
 
 
 ## Available Tools (12)
-- **enhance_image_ai**: Apply AI enhancement to an image
+- **upload_image_to_viesus**: Upload an image for processing
 - **get_account_credit_balance**: Check remaining API credits
 - **get_image_metadata**: Retrieve technical metadata for an image
-- **get_enhancement_job_status**: Check the status of an enhancement job
-- **get_api_version_info**: Retrieve API version details
-- **list_supported_file_formats**: List supported image formats
-- **list_processing_history**: List recent image processing jobs
 - **list_enhancement_presets**: List available enhancement configurations
-- **list_configured_webhooks**: List active webhooks
+- **list_processing_history**: List recent image processing jobs
+- **list_supported_file_formats**: List supported image formats
 - **check_api_health**: Verify Viesus API status
+- **enhance_image_ai**: Apply AI enhancement to an image
+- **get_api_version_info**: Retrieve API version details
 - **get_enhanced_image_url**: Retrieve the final image download link
-- **upload_image_to_viesus**: Upload an image for processing
+- **get_enhancement_job_status**: Check the status of an enhancement job
+- **list_configured_webhooks**: List active webhooks
 
 
 ## 💬 Prompt Examples
