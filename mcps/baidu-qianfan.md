@@ -36,8 +36,8 @@ Connect your AI agents to **Baidu Qianfan** (百度千帆), the enterprise-grade
 
 
 ## Available Tools (6)
-- **get_embeddings**: Generate vector embeddings for text
 - **list_train_jobs**: List model training jobs
+- **get_embeddings**: Generate vector embeddings for text
 - **chat_completions**: Requires model endpoint name.
 
 Send a message to a Baidu Qianfan model

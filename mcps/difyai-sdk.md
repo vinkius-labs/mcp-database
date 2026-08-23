@@ -32,18 +32,18 @@ Connect your Vinkius agents directly to **Dify.AI**, the leading open-source LLM
 
 
 ## Available Tools (14)
-- **rename_conversation**: Rename a Dify conversation
 - **send_completion**: Returns the full generated text.
 
 Send a text completion request to a Dify completion app
-- **stop_chat_generation**: Only supported for streaming mode responses.
-
-Stop an in-progress chat message generation
 - **submit_feedback**: Submit feedback (like/dislike) for a message
+- **upload_file**: Upload a file via URL for multimodal understanding
 - **get_suggested_questions**: Use after receiving a chat response.
 
 Get next suggested questions for a message
-- **upload_file**: Upload a file via URL for multimodal understanding
+- **rename_conversation**: Rename a Dify conversation
+- **stop_chat_generation**: Only supported for streaming mode responses.
+
+Stop an in-progress chat message generation
 - **chat_message**: Send a chat message to a Dify Application
 - **get_app_meta**: Get application meta data configuration
 - **get_conversation_messages**: Get historical messages of a specific Dify conversation

@@ -37,15 +37,15 @@ Eliminate manual API signature headaches entirely. Your AI agent now signs, disp
 
 
 ## Available Tools (10)
-- **refund_trade**: Refund an Alipay transaction
 - **cancel_trade**: Cancel a trade (rollback)
+- **query_user_info**: Query authorized Alipay user information
 - **close_trade**: Close an unpaid Alipay trade
 - **create_trade**: Create a new Alipay transaction/order
 - **get_oauth_token**: Exchange authorization code for an OAuth Token
 - **query_bill_download_url**: Query the download URL for accounting bills
 - **query_trade**: Query the status of an Alipay trade
 - **query_transfer**: Query the status of a fund transfer
-- **query_user_info**: Query authorized Alipay user information
+- **refund_trade**: Refund an Alipay transaction
 - **transfer_fund**: Transfer funds to an Alipay user account
 
 

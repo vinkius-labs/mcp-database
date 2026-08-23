@@ -36,16 +36,16 @@ Connect your AI agents to **Correios**, the official national postal service of 
 
 
 ## Available Tools (8)
-- **calculate_price_deadline**: Calculate shipping price and delivery deadline
 - **get_contract_status**: Check the current status of your Correios contract
 - **get_unit_info**: Get details for a specific post office unit
 - **list_contract_services**: , associated with your account.
 
 List all postage services available in your contract
-- **list_unit_types**: List all types of Correios units
 - **lookup_cep**: Get address information from a Brazilian ZIP code (CEP)
 - **search_units_by_cep**: Search for nearby post office units
 - **track_object**: Track a package status using its tracking code
+- **calculate_price_deadline**: Calculate shipping price and delivery deadline
+- **list_unit_types**: List all types of Correios units
 
 
 ## 💬 Prompt Examples

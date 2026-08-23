@@ -42,6 +42,15 @@ Your AI agent becomes your blockchain operations center, handling contract deplo
 - **deploy_contract**: Requires the contract bytecode (compiled bytecode in hex format) and optionally the ABI (Application Binary Interface) for interaction. Returns the deployed contract address and deployment transaction details. The contract will be available under the specified name.
 
 Deploy a smart contract on AntChain
+- **query_account**: Use this to inspect account state and activity.
+
+Query account information on AntChain
+- **query_transaction**: Returns transaction status, sender, receiver, gas used, block inclusion, and execution result. Useful for verifying transaction finality and inspecting transaction details.
+
+Query a transaction on AntChain
+- **query_network_info**: Useful for monitoring blockchain infrastructure health.
+
+Query blockchain network information on AntChain
 - **get_chain_list**: Returns chain IDs, names, creation dates, status, and basic configuration. Use this to discover which blockchains you have access to before performing operations.
 
 List all available blockchain networks in your AntChain account
@@ -51,24 +60,15 @@ Invoke a smart contract method on AntChain
 - **query_account_balance**: Returns the available balance and any locked/pending amounts. Useful for checking if an account has sufficient funds for transactions or contract interactions.
 
 Query account balance on AntChain
-- **query_account**: Use this to inspect account state and activity.
-
-Query account information on AntChain
 - **query_block**: Returns block metadata including timestamp, transaction count, hash, and previous block reference. Use either blockHeight or blockHash to identify the block.
 
 Query block details from an AntChain blockchain
-- **query_transaction**: Returns transaction status, sender, receiver, gas used, block inclusion, and execution result. Useful for verifying transaction finality and inspecting transaction details.
-
-Query a transaction on AntChain
 - **query_contract**: Useful for inspecting contract configuration before invocation.
 
 Query smart contract information on AntChain
 - **query_latest_transactions**: Useful for monitoring network activity, auditing recent transactions, or getting a snapshot of current blockchain operations. Returns a list of recent transactions with their status and metadata.
 
 Query the latest transactions on an AntChain blockchain
-- **query_network_info**: Useful for monitoring blockchain infrastructure health.
-
-Query blockchain network information on AntChain
 
 
 ## 💬 Prompt Examples

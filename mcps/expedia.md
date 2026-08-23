@@ -39,14 +39,8 @@ Your agent becomes a full-service travel assistant — searching across hotels, 
 - **book_flight**: Book an airline passenger ticket
 - **cancel_booking**: Cancel an active property reservation
 - **get_flight_quotes**: Get exact real-time pricing for a queried flight
-- **cancel_flight**: Refund eligibility depends on the fare class and airline cancellation policy. Returns the cancellation status and any applicable refund details. ALWAYS confirm the booking ID and inform the user about potential cancellation fees before executing.
-
-Cancel an existing flight booking
-- **create_booking**: Execute a lodging booking reservation
 - **get_car_quotes**: Get active quotes for a rental car class
 - **get_property_detail**: Get detailed content for a specific property
-- **get_room_quotes**: Get live room rates and availability
-- **search_cars**: Search for rental cars at specific airport branches
 - **search_flights**: Search for airline flights
 - **search_properties**: Search for hotels and lodging properties
 - **search_regions**: Returns region IDs, names, types, and coordinates. This is the essential first step before searching for properties — you need a valid destination identifier from this tool to use search_properties. For example, searching "Paris" returns the city region ID, specific arrondissements, and CDG airport.
@@ -55,6 +49,12 @@ Search for geographic regions by name
 - **book_car**: Requires driver name and email for confirmation. Returns a booking ID that can be used to manage the reservation. ALWAYS confirm booking details with the user before executing this action.
 
 Book a rental car using a quote ID
+- **cancel_flight**: Refund eligibility depends on the fare class and airline cancellation policy. Returns the cancellation status and any applicable refund details. ALWAYS confirm the booking ID and inform the user about potential cancellation fees before executing.
+
+Cancel an existing flight booking
+- **create_booking**: Execute a lodging booking reservation
+- **get_room_quotes**: Get live room rates and availability
+- **search_cars**: Search for rental cars at specific airport branches
 
 
 ## 💬 Prompt Examples

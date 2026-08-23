@@ -33,14 +33,14 @@ Integrate **Dada Now (达达快送)**, one of the leading on-demand delivery pla
 ## Available Tools (10)
 - **add_shop**: Register a new Store/Shop to pick up from
 - **add_tip**: Add a monetary tip to a specific delivery order
-- **cancel_order**: Cancel a delivery dispatch
 - **get_city_code**: Retrieve Dada City Codes
-- **update_shop**: Update existing Station details
 - **add_complaint**: Submit a complaint about a driver
 - **add_order**: Create a new Dada delivery order
-- **query_order_fee**: Estimate the delivery fee before ordering
-- **query_order_status**: Get live tracking status of an order
 - **readd_order**: Re-add an expired or failed delivery order
+- **query_order_fee**: Estimate the delivery fee before ordering
+- **cancel_order**: Cancel a delivery dispatch
+- **query_order_status**: Get live tracking status of an order
+- **update_shop**: Update existing Station details
 
 
 ## 💬 Prompt Examples
