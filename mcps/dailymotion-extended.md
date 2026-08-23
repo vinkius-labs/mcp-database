@@ -36,16 +36,16 @@ No more navigating complex API dashboards to update a video tag or find a stream
 
 
 ## Available Tools (8)
-- **get_video_stream**: Generate stream or download URLs for a video
 - **get_partner_upload_url**: Requires private API key/token.
 
 Get a partner upload URL for a video file
 - **get_upload_url**: Get a public upload URL for a video file
-- **list_videos**: List and search videos
 - **reporting_graphql**: g., askPartnerReportFile).
 
 Query the Reporting API via GraphQL
 - **create_player**: Create a new video player
+- **get_video_stream**: Generate stream or download URLs for a video
+- **list_videos**: List and search videos
 - **create_video**: Create or publish a new video
 - **edit_video**: Edit video metadata
 

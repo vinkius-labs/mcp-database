@@ -35,40 +35,40 @@ Connect your **Dynatrace** environment to any AI agent to gain deep visibility i
 
 
 ## Available Tools (37)
-- **get_anomaly_detection_services**: Get anomaly detection configuration for services
-- **create_synthetic_location**: Create a synthetic location
-- **create_synthetic_monitor**: Create a synthetic monitor
 - **delete_dashboard**: Delete a dashboard
-- **delete_synthetic_location**: Delete a synthetic location
 - **delete_synthetic_monitor**: Delete a synthetic monitor
 - **get_anomaly_detection_apps**: Get anomaly detection configuration for applications
 - **get_anomaly_detection_hosts**: Get anomaly detection configuration for hosts
-- **get_calculated_metrics_service**: Get calculated service metrics configuration
-- **get_problem**: Get details of a specific problem
 - **ingest_metrics**: Push custom data points using the line protocol
-- **list_account_groups**: List user groups in an account
 - **list_account_policies**: List access policies in an account
 - **list_account_users**: List all users in an account
 - **list_dashboards**: List all dashboards
 - **list_entities**: List monitored entities
-- **list_entity_types**: List all available entity types
 - **list_events**: List events within a timeframe
 - **list_problems**: List open and closed problems
 - **list_synthetic_executions**: View results of monitor runs
-- **ingest_events**: Ingest custom events into Dynatrace
+- **close_problem**: Manually close a problem
+- **create_account_policy**: Create a custom access policy
+- **create_synthetic_location**: Create a synthetic location
+- **create_synthetic_monitor**: Create a synthetic monitor
+- **delete_synthetic_location**: Delete a synthetic location
+- **get_anomaly_detection_services**: Get anomaly detection configuration for services
+- **get_calculated_metrics_service**: Get calculated service metrics configuration
+- **get_problem**: Get details of a specific problem
+- **list_account_groups**: List user groups in an account
+- **list_entity_types**: List all available entity types
 - **list_metrics**: List available metrics
 - **list_settings_objects**: List configuration objects
-- **list_settings_schemas**: List all configuration schemas
-- **list_synthetic_locations**: List synthetic locations
-- **list_synthetic_monitors**: List synthetic monitors
-- **query_metrics**: Query data points for specific metrics
 - **trigger_synthetic_batch**: Trigger immediate execution of synthetic monitors
 - **update_account_group_permissions**: Manage group permissions
 - **update_dashboard**: Update an existing dashboard
 - **update_synthetic_location**: Update a synthetic location
+- **ingest_events**: Ingest custom events into Dynatrace
+- **list_settings_schemas**: List all configuration schemas
+- **list_synthetic_locations**: List synthetic locations
+- **list_synthetic_monitors**: List synthetic monitors
+- **query_metrics**: Query data points for specific metrics
 - **update_synthetic_monitor**: Update a synthetic monitor
-- **close_problem**: Manually close a problem
-- **create_account_policy**: Create a custom access policy
 - **create_account_user**: Create a new user in an account
 - **create_custom_entity**: Create or update custom devices
 - **create_dashboard**: Create a new dashboard

@@ -44,16 +44,9 @@ Ban a user from a channel
 Block a user
 - **get_current_fname_owner**: Get current owner of an fname
 - **get_primary_address**: Get a user primary wallet address
-- **get_signed_key_request**: Get signed key request status
-- **list_account_verifications**: List account verifications for a user
-- **list_all_channels**: List all Farcaster channels
-- **list_blocked_users**: Get blocked users
 - **list_channel_followers**: List followers of a Farcaster channel
 - **list_creator_rewards**: Get weekly top creator rewards
 - **list_developer_rewards**: Get weekly top developer rewards
-- **list_fname_transfers**: Can be filtered by name, fid, or timestamp.
-
-Get fname transfer history
 - **list_moderated_casts**: List moderation actions in a channel
 - **list_user_following_channels**: List channels a user follows
 - **moderate_cast**: Requires authentication and moderator privileges.
@@ -62,12 +55,19 @@ Hide or unhide a cast in a channel
 - **pin_cast**: Requires authentication.
 
 Pin a cast to a channel
-- **register_or_transfer_fname**: Requires EIP-712 signature from the FID custody address.
-
-Register or transfer an fname
 - **unfollow_channel**: Requires authentication.
 
 Unfollow a Farcaster channel
+- **get_signed_key_request**: Get signed key request status
+- **list_account_verifications**: List account verifications for a user
+- **list_all_channels**: List all Farcaster channels
+- **list_blocked_users**: Get blocked users
+- **list_fname_transfers**: Can be filtered by name, fid, or timestamp.
+
+Get fname transfer history
+- **register_or_transfer_fname**: Requires EIP-712 signature from the FID custody address.
+
+Register or transfer an fname
 - **create_signed_key_request**: Create a signed key request
 - **follow_channel**: Requires authentication.
 

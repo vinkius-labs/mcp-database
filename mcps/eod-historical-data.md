@@ -34,32 +34,32 @@ Connect your **EOD Historical Data (EODHD)** account to any AI agent to retrieve
 
 
 ## Available Tools (26)
-- **get_screener**: Filter the stock market based on metrics and signals
-- **get_bulk_fundamentals**: Get bulk fundamental data for an exchange
 - **get_calendar_dividends**: Get upcoming dividends calendar
 - **get_calendar_earnings**: Get upcoming earnings calendar
 - **get_calendar_ipos**: Get upcoming IPOs calendar
-- **get_calendar_splits**: Get upcoming splits calendar
-- **get_commodities**: Get historical prices for commodities
 - **get_dividends**: Get dividends history for a symbol
-- **get_eod_historical**: Get End-Of-Day (EOD) historical data for a symbol
-- **get_exchange_symbol_list**: Get list of tickers for an exchange
 - **get_exchanges_list**: Get list of supported exchanges
-- **get_fundamentals**: Get fundamental data for a single symbol
+- **get_exchange_symbol_list**: Get list of tickers for an exchange
 - **get_id_mapping**: Resolve identifiers like CUSIP, ISIN, FIGI to symbols
-- **get_insider_transactions**: Get insider transactions (SEC Form 4)
-- **get_intraday_historical**: Get Intraday historical data for a symbol
 - **get_news**: Get financial news feed
 - **get_news_word_weights**: Get news word weights for a ticker
-- **get_real_time**: Get Live (Delayed) OHLCV data
-- **search_assets**: Search for assets by ticker, name, or ISIN
-- **get_sentiments**: Get financial news sentiment
-- **get_splits**: Get splits history for a symbol
 - **get_technical_indicators**: Get technical indicators for a symbol
-- **get_user**: Get EODHD user account details and API limits
+- **search_assets**: Search for assets by ticker, name, or ISIN
 - **get_ust_bill_rates**: Get US Treasury Bill Rates
 - **get_ust_real_yield_rates**: Get US Treasury Real Yield Rates
 - **get_ust_yield_rates**: Get US Treasury Yield Rates
+- **get_bulk_fundamentals**: Get bulk fundamental data for an exchange
+- **get_calendar_splits**: Get upcoming splits calendar
+- **get_commodities**: Get historical prices for commodities
+- **get_eod_historical**: Get End-Of-Day (EOD) historical data for a symbol
+- **get_fundamentals**: Get fundamental data for a single symbol
+- **get_insider_transactions**: Get insider transactions (SEC Form 4)
+- **get_intraday_historical**: Get Intraday historical data for a symbol
+- **get_real_time**: Get Live (Delayed) OHLCV data
+- **get_screener**: Filter the stock market based on metrics and signals
+- **get_sentiments**: Get financial news sentiment
+- **get_splits**: Get splits history for a symbol
+- **get_user**: Get EODHD user account details and API limits
 
 
 ## 💬 Prompt Examples

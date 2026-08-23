@@ -38,21 +38,21 @@ Connect to the **Decentraland** ecosystem and interact with the metaverse's cont
 - **get_main_realm_about**: Get detailed configuration for the optimal main realm
 - **get_marketplace_catalog**: Browse and filter wearables/emotes in the marketplace
 - **get_marketplace_items**: Query specific NFT items and their trading history
+- **create_auth_request**: Create an authentication request
+- **create_event**: Requires authentication.
+
+Create a new event
+- **get_realms**: List all healthy catalyst realms with user counts
 - **update_place_rating**: Requires authentication.
 
 Update content rating for a place (Admin/Moderator only)
 - **get_parcel_stats**: Get user counts per parcel
 - **list_places**: List scenes with filters (popularity, coordinates, search)
-- **get_realms**: List all healthy catalyst realms with user counts
+- **get_catalyst_about**: Retrieve health and configuration of all catalyst services
+- **list_destinations**: Unified list of Genesis City places and Worlds
 - **list_attending_events**: Requires authentication.
 
 List events the authenticated user is attending
-- **get_catalyst_about**: Retrieve health and configuration of all catalyst services
-- **create_auth_request**: Create an authentication request
-- **create_event**: Requires authentication.
-
-Create a new event
-- **list_destinations**: Unified list of Genesis City places and Worlds
 - **list_events**: List active/upcoming events
 - **get_auth_request**: Get status of an authentication request
 

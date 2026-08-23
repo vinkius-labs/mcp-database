@@ -38,22 +38,22 @@ No more digging through dashboards to find simple traffic stats. Your AI acts as
 ## Available Tools (20)
 - **delete_site**: Permanently delete a site
 - **get_account**: Retrieve information about the Fathom account owner
-- **get_aggregations**: Generate flexible reports by grouping and filtering data
 - **create_event**: Create a new event for a site
-- **create_milestone**: Create a new milestone for a site
 - **create_site**: Create a new Fathom site
-- **get_current_visitors**: Returns the total current visitors on a site
 - **delete_event**: Permanently delete an event
+- **get_current_visitors**: Returns the total current visitors on a site
+- **get_site**: Retrieve a single site by its ID
+- **update_event**: Update an existing event
+- **create_milestone**: Create a new milestone for a site
 - **delete_milestone**: Permanently delete a milestone
+- **get_aggregations**: Generate flexible reports by grouping and filtering data
 - **get_event**: Retrieve a single event by its ID
 - **get_milestone**: Retrieve a single milestone by its ID
 - **list_events**: List all events for a site
-- **get_site**: Retrieve a single site by its ID
 - **list_milestones**: List all milestones for a site
 - **list_sites**: Supports cursor pagination.
 
 List all sites owned by the API key
-- **update_event**: Update an existing event
 - **update_milestone**: Update an existing milestone
 - **update_site**: Update an existing Fathom site
 - **wipe_event**: Wipe all completion data for an event

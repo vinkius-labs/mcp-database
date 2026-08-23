@@ -33,20 +33,20 @@ Connect your **Deta Space** personal cloud to any AI agent and manage your serve
 
 
 ## Available Tools (10)
-- **base_delete_item**: Delete an item from Deta Base by its key
 - **base_get_item**: Retrieve a single item from Deta Base by its key
-- **base_insert_item**: Store an item in Deta Base only if the key does not already exist
-- **base_put_items**: Provide items as a JSON array string.
-
-Store one or more items in Deta Base
 - **base_query_items**: Query should be a JSON array of query objects (OR logic between objects, AND logic within).
 
 Search for items in Deta Base based on queries
-- **base_update_item**: Update specific attributes of an existing item in Deta Base
 - **drive_upload_file**: Upload a file to Deta Drive
 - **drive_delete_files**: Delete one or more files from Deta Drive
 - **drive_download_file**: Download a file from Deta Drive by its name
 - **drive_list_files**: List files in a Deta Drive
+- **base_delete_item**: Delete an item from Deta Base by its key
+- **base_insert_item**: Store an item in Deta Base only if the key does not already exist
+- **base_put_items**: Provide items as a JSON array string.
+
+Store one or more items in Deta Base
+- **base_update_item**: Update specific attributes of an existing item in Deta Base
 
 
 ## 💬 Prompt Examples

@@ -35,20 +35,14 @@ Connect your **Dev.to** (Forem) account to your AI agent to streamline your tech
 
 ## Available Tools (36)
 - **list_videos**: List articles with videos
-- **create_article**: Create a new article
 - **create_page**: Create a page
 - **create_reaction**: Create a reaction
-- **delete_page**: Delete page by ID
 - **get_article_by_path**: Get article by username and slug
-- **get_article**: Get article by ID
 - **get_comment**: Get comment by ID
 - **get_display_ad**: Get display ad by ID
 - **get_me**: Get authenticated user profile
 - **get_organization**: Get organization by username
-- **get_page**: Get page by ID
 - **get_profile_image**: Get profile image by username
-- **get_user**: Get user by ID
-- **list_articles**: List published articles
 - **list_comments**: List comments
 - **list_display_ads**: List display ads
 - **list_followed_tags**: List followed tags for the authenticated user
@@ -56,19 +50,25 @@ Connect your **Dev.to** (Forem) account to your AI agent to streamline your tech
 - **list_my_all_articles**: List all authenticated user's articles (published and unpublished)
 - **list_my_articles**: List authenticated user's articles
 - **list_my_published_articles**: List authenticated user's published articles
-- **list_my_unpublished_articles**: List authenticated user's unpublished articles
 - **list_organization_articles**: List organization's articles
 - **list_organization_users**: List organization's users
 - **list_pages**: List pages
-- **list_podcast_episodes**: List published podcast episodes
-- **list_reading_list**: List authenticated user's reading list
 - **list_tags**: List tags used in the community
-- **suspend_user**: Suspend a user (Admin)
 - **toggle_reaction**: Toggle a reaction
 - **unpublish_article**: Unpublish an article (Admin/Moderator)
-- **update_article**: Update article by ID
 - **update_display_ad**: Update display ad by ID
 - **update_page**: Update page by ID
+- **create_article**: Create a new article
+- **delete_page**: Delete page by ID
+- **get_article**: Get article by ID
+- **get_page**: Get page by ID
+- **get_user**: Get user by ID
+- **list_articles**: List published articles
+- **list_my_unpublished_articles**: List authenticated user's unpublished articles
+- **list_podcast_episodes**: List published podcast episodes
+- **list_reading_list**: List authenticated user's reading list
+- **suspend_user**: Suspend a user (Admin)
+- **update_article**: Update article by ID
 - **create_display_ad**: Create a display ad
 
 

@@ -34,25 +34,25 @@ Connect the **Faker** MCP server to your AI agent to instantly generate realisti
 
 
 ## Available Tools (11)
-- **get_books**: Generate mock book information
 - **get_persons**: Supports genders "male", "female", and "other".
 
 Generate mock personal information
-- **get_places**: Generate mock place data
 - **get_texts**: Generate mock text content
+- **get_images**: Supports sources like Picsum and types like "any" or "pokemon".
+
+Generate mock image URLs
+- **get_addresses**: Can be filtered by country_code.
+
+Generate mock address data
+- **get_books**: Generate mock book information
 - **get_companies**: Generate mock company data
-- **get_users**: Generate mock user account data
 - **get_credit_cards**: Generate mock credit card information
 - **get_custom**: Pass a JSON object mapping field names to Faker types (e.g. {"myField": "name", "otherField": "email"}).
 
 Generate custom mock data structures
-- **get_images**: Supports sources like Picsum and types like "any" or "pokemon".
-
-Generate mock image URLs
+- **get_places**: Generate mock place data
 - **get_products**: Generate mock product data
-- **get_addresses**: Can be filtered by country_code.
-
-Generate mock address data
+- **get_users**: Generate mock user account data
 
 
 ## 💬 Prompt Examples

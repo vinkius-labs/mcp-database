@@ -32,8 +32,8 @@ Connect your **DeepOpinion** account to any AI agent to leverage powerful no-cod
 
 
 ## Available Tools (3)
-- **predict_batch**: Run predictions on multiple texts at once
 - **predict**: Run a prediction using a specific model
+- **predict_batch**: Run predictions on multiple texts at once
 - **list_models**: List all models available in your DeepOpinion account
 
 

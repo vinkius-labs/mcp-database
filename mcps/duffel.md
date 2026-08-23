@@ -34,34 +34,34 @@ Connect your **Duffel** account to any AI agent to transform it into a powerful 
 
 
 ## Available Tools (29)
-- **create_offer_request**: Create a flight offer request
-- **create_order**: Create a flight order (booking)
-- **create_payment**: Create a payment for a hold order
 - **create_webhook**: Create a webhook
 - **fetch_stay_rates**: Fetch all rates for a stay search result
 - **get_accommodation**: Get specific accommodation details
 - **get_aircraft**: Get a specific aircraft type
-- **get_airline**: Get a specific airline
 - **get_airport**: Get a specific airport
-- **get_offer_request**: Get a specific offer request
-- **get_offer**: Get a specific flight offer
-- **list_accommodation**: List accommodations
 - **list_aircraft**: List aircraft types
 - **list_airlines**: List airlines
-- **list_airports**: List airports
 - **list_offer_requests**: List all offer requests
 - **list_offers**: List flight offers for a request
 - **list_orders**: List all flight orders
+- **suggest_accommodation**: Suggest accommodations by name
+- **get_payment**: Get a specific payment
+- **get_order**: Get a specific flight order
+- **quote_stay**: Create a quote for a stay
+- **book_stay**: Book a stay
+- **change_order**: Request a change to an existing order
+- **create_offer_request**: Create a flight offer request
+- **create_order**: Create a flight order (booking)
+- **create_payment**: Create a payment for a hold order
+- **get_airline**: Get a specific airline
+- **get_offer**: Get a specific flight offer
+- **get_offer_request**: Get a specific offer request
+- **get_seat_maps**: Get seat maps for an offer
+- **list_accommodation**: List accommodations
+- **list_airports**: List airports
 - **list_webhook_events**: List webhook events
 - **price_offer**: Verify final price and services for an offer
-- **suggest_accommodation**: Suggest accommodations by name
 - **search_stays**: Search for accommodation (Stays)
-- **change_order**: Request a change to an existing order
-- **get_order**: Get a specific flight order
-- **get_payment**: Get a specific payment
-- **quote_stay**: Create a quote for a stay
-- **get_seat_maps**: Get seat maps for an offer
-- **book_stay**: Book a stay
 - **cancel_order**: Cancel a flight order
 
 

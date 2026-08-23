@@ -34,15 +34,15 @@ Connect your **Currents** account to any AI agent to monitor global media, track
 
 
 ## Available Tools (6)
+- **list_regions**: List available regions/countries
+- **check_auth**: Check API authentication status
 - **get_latest_news**: Do not use search keywords here.
 
 Get latest real-time news articles
-- **list_regions**: List available regions/countries
+- **list_categories**: List available news categories
 - **search_news**: Use keywords or boolean query syntax.
 
 Search for news articles by keywords or query
-- **check_auth**: Check API authentication status
-- **list_categories**: List available news categories
 - **list_languages**: List available languages
 
 

@@ -40,17 +40,17 @@ No more manual randomization or complex state management for card games. Your AI
 - **create_new_deck**: Create a brand new deck in standard order
 - **create_partial_deck**: Create a partial deck with specific cards
 - **draw_cards**: Draw cards from a deck
-- **draw_from_pile_bottom**: Draw cards from the bottom of a pile
 - **draw_from_pile_random**: Draw random cards from a pile
-- **draw_from_pile**: Draw cards from a pile
 - **list_pile**: List cards in a pile
-- **return_pile_to_deck**: Return cards from a pile to the main deck
+- **draw_from_pile**: Draw cards from a pile
+- **draw_from_pile_bottom**: Draw cards from the bottom of a pile
 - **reshuffle_deck**: Reshuffle an existing deck
-- **return_to_deck**: Return cards to the main deck
+- **return_pile_to_deck**: Return cards from a pile to the main deck
 - **shuffle_new_deck**: Can optionally use multiple decks.
 
 Create a new shuffled deck
 - **shuffle_pile**: Shuffle a specific pile
+- **return_to_deck**: Return cards to the main deck
 
 
 ## 💬 Prompt Examples
