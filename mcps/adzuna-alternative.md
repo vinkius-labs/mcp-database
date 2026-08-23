@@ -36,12 +36,12 @@ Connect the **Adzuna** labor market engine to your AI agent to transform how you
 ## Available Tools (8)
 - **get_categories**: List employment sectors (categories)
 - **get_geodata**: Get regional job vacancy data
-- **get_histogram**: Get salary histogram data
-- **get_history**: Get historical salary and vacancy data
-- **get_jobsworth**: Estimate salary for a job (Jobsworth)
 - **get_top_companies**: Get top companies by vacancy count
 - **get_version**: Get Adzuna API version
 - **search_jobs**: Search for job advertisements
+- **get_histogram**: Get salary histogram data
+- **get_history**: Get historical salary and vacancy data
+- **get_jobsworth**: Estimate salary for a job (Jobsworth)
 
 
 ## 💬 Prompt Examples

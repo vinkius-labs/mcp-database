@@ -33,12 +33,12 @@ Connect to the **AmiiboAPI** and explore the vast world of Nintendo's Amiibo col
 
 
 ## Available Tools (7)
-- **get_amiibo**: Get data for a specific Amiibo by ID
-- **get_last_updated**: Get database last updated timestamp
-- **list_amiibo_series**: Get all Amiibo Series
 - **list_amiibos**: Can be filtered by name, character, game series, amiibo series, type, or ID segments.
 
 List all Amiibo with optional filters
+- **get_amiibo**: Get data for a specific Amiibo by ID
+- **get_last_updated**: Get database last updated timestamp
+- **list_amiibo_series**: Get all Amiibo Series
 - **list_characters**: Get all Characters
 - **list_game_series**: Get all Game Series
 - **list_types**: g., Figure, Card).

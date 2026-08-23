@@ -36,38 +36,38 @@ No more manual JSON-RPC requests or complex Postman setups. Your AI acts as a bl
 
 
 ## Available Tools (32)
-- **ankr_getTokenPrice**: Returns the current USD price of a token
 - **getTransaction**: Returns details for a confirmed transaction
-- **ankr_getAccountBalance**: Retrieves all token balances for a wallet
 - **ankr_getBlocks**: Retrieves full info for a range of blocks
 - **ankr_getInteractions**: Lists all blockchains a wallet has interacted with
-- **ankr_getNFTHolders**: Lists all holders of a specific NFT collection
 - **ankr_getNFTMetadata**: Retrieves metadata for a specific NFT
+- **ankr_getTokenPrice**: Returns the current USD price of a token
+- **eth_estimateGas**: Estimates gas needed for a transaction
+- **eth_getLogs**: Returns logs matching filter criteria
+- **eth_getTransactionByHash**: Returns transaction details
+- **eth_getTransactionReceipt**: Returns the receipt of a transaction
+- **getAccountInfo**: Returns all info associated with a Pubkey
+- **getBlock**: Returns identity and transaction info for a confirmed block
+- **ankr_getAccountBalance**: Retrieves all token balances for a wallet
 - **ankr_getNFTsByOwner**: Retrieves all NFTs owned by an address across multiple chains
+- **ankr_getNFTHolders**: Lists all holders of a specific NFT collection
 - **ankr_getTokenTransfers**: Returns historical token transfer data
 - **eth_blockNumber**: Returns the most recent block number
 - **eth_call**: Executes a call without creating a transaction
-- **eth_estimateGas**: Estimates gas needed for a transaction
-- **eth_getBalance**: Returns the balance of an address
 - **eth_getBlockByHash**: Returns block information by hash
+- **eth_getBalance**: Returns the balance of an address
 - **eth_getBlockByNumber**: Returns block information by number
 - **eth_getCode**: Returns the code at a given address
-- **eth_getLogs**: Returns logs matching filter criteria
 - **eth_getStorageAt**: Returns the value from a storage position
-- **eth_getTransactionByHash**: Returns transaction details
 - **eth_getTransactionCount**: Returns the number of transactions sent from an address (nonce)
-- **eth_getTransactionReceipt**: Returns the receipt of a transaction
 - **eth_sendRawTransaction**: Submits a signed transaction to the network
 - **eth_simulateV1**: Simulates multiple blocks/transactions
-- **getAccountInfo**: Returns all info associated with a Pubkey
 - **getBalance**: Returns the lamport balance of an account
 - **getBlockHeight**: Returns the current block height
-- **getBlock**: Returns identity and transaction info for a confirmed block
 - **getEpochInfo**: Returns information about the current epoch
 - **getLatestBlockhash**: Returns the latest blockhash for transaction building
 - **getProgramAccounts**: Returns all accounts owned by a program
-- **sendTransaction**: Submits a signed transaction
 - **simulateTransaction**: Simulates a transaction to check for errors
+- **sendTransaction**: Submits a signed transaction
 
 
 ## 💬 Prompt Examples

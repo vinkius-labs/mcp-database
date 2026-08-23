@@ -36,25 +36,25 @@ No more manual navigation through complex forms to update a dataset description 
 
 
 ## Available Tools (14)
-- **list_depositions**: List Zenodo depositions
 - **create_deposition**: You can optionally provide metadata.
 
 Create a new Zenodo deposition
-- **edit_deposition**: Edit a published Zenodo deposition
-- **get_deposition**: Retrieve a Zenodo deposition by ID
-- **get_record**: Retrieve a published Zenodo record by ID
-- **list_deposition_files**: List files in a Zenodo deposition
-- **list_records**: Search published Zenodo records
-- **new_version_deposition**: Create a new version of a Zenodo deposition
-- **publish_deposition**: WARNING: Once published, a deposition cannot be deleted.
-
-Publish a Zenodo deposition
-- **update_deposition**: Update a Zenodo deposition
-- **upload_deposition_file**: Upload a text file to a Zenodo deposition
-- **delete_deposition_file**: Delete a file from a Zenodo deposition
 - **delete_deposition**: Note: Only unpublished depositions can be deleted.
 
 Delete an unpublished Zenodo deposition
+- **get_deposition**: Retrieve a Zenodo deposition by ID
+- **get_record**: Retrieve a published Zenodo record by ID
+- **list_depositions**: List Zenodo depositions
+- **list_records**: Search published Zenodo records
+- **new_version_deposition**: Create a new version of a Zenodo deposition
+- **update_deposition**: Update a Zenodo deposition
+- **edit_deposition**: Edit a published Zenodo deposition
+- **list_deposition_files**: List files in a Zenodo deposition
+- **publish_deposition**: WARNING: Once published, a deposition cannot be deleted.
+
+Publish a Zenodo deposition
+- **upload_deposition_file**: Upload a text file to a Zenodo deposition
+- **delete_deposition_file**: Delete a file from a Zenodo deposition
 - **discard_deposition**: Discard edits on a Zenodo deposition
 
 

@@ -34,12 +34,13 @@ Connect **Adobe Acrobat Sign** to your AI agent to streamline your digital signa
 
 
 ## Available Tools (13)
+- **get_agreement_audit_trail**: Download the audit trail PDF for an agreement
+- **list_users**: List users in the account
 - **list_groups**: List groups in the account
 - **list_library_documents**: List library documents
-- **list_users**: List users in the account
 - **list_webhooks**: List webhooks
-- **get_agreement_audit_trail**: Download the audit trail PDF for an agreement
 - **get_agreement_combined_document**: Download all documents in a single PDF
+- **get_agreement**: Get agreement metadata
 - **create_agreement**: Create a new agreement
 - **create_library_document**: Create a library document
 - **create_transient_document**: g., creating an agreement). Available for 7 days.
@@ -47,7 +48,6 @@ Connect **Adobe Acrobat Sign** to your AI agent to streamline your digital signa
 Upload a transient document
 - **create_user**: Create a new user
 - **create_webhook**: Create a new webhook
-- **get_agreement**: Get agreement metadata
 - **list_agreements**: List agreements
 
 

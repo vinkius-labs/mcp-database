@@ -34,10 +34,10 @@ Connect your **AirVisual** (IQAir) account to any AI agent to monitor environmen
 
 ## Available Tools (7)
 - **get_nearest_city_by_coords**: Get data for the nearest city based on GPS coordinates
-- **get_nearest_city_by_ip**: Get data for the nearest city based on IP address
 - **get_station_data**: Get data from a specific monitoring station
-- **list_cities**: List all supported cities in a specific state
+- **get_nearest_city_by_ip**: Get data for the nearest city based on IP address
 - **get_city_data**: Get real-time AQI and weather for a specific city
+- **list_cities**: List all supported cities in a specific state
 - **list_countries**: List all supported countries
 - **list_states**: List all supported states in a specific country
 

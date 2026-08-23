@@ -34,22 +34,22 @@ Connect **Alpha Vantage** to your AI agent to transform it into a powerful finan
 
 
 ## Available Tools (16)
-- **get_cash_flow**: Get annual and quarterly cash flow statements
-- **time_series_daily_adjusted**: Get daily adjusted time series for a stock
-- **time_series_intraday**: Get intraday OHLCV time series for a stock
-- **time_series_monthly_adjusted**: Get monthly adjusted time series for a stock
-- **time_series_monthly**: Get monthly time series for a stock
-- **get_news_sentiment**: Get live and historical news sentiment scores
-- **get_overview**: Get company overview and financial ratios
-- **get_sma**: Get Simple Moving Average (SMA) technical indicator
 - **get_balance_sheet**: Get annual and quarterly balance sheets
-- **time_series_daily**: Get daily OHLCV time series for a stock
+- **get_currency_exchange_rate**: Get real-time exchange rate for physical/digital currencies
 - **get_digital_currency_daily**: Get daily time series for a cryptocurrency
 - **get_economic_indicator**: Get macroeconomic indicators (GDP, CPI, Unemployment, etc.)
-- **get_currency_exchange_rate**: Get real-time exchange rate for physical/digital currencies
+- **get_news_sentiment**: Get live and historical news sentiment scores
+- **get_overview**: Get company overview and financial ratios
+- **time_series_daily_adjusted**: Get daily adjusted time series for a stock
+- **time_series_intraday**: Get intraday OHLCV time series for a stock
+- **get_cash_flow**: Get annual and quarterly cash flow statements
+- **get_sma**: Get Simple Moving Average (SMA) technical indicator
+- **time_series_monthly**: Get monthly time series for a stock
+- **time_series_monthly_adjusted**: Get monthly adjusted time series for a stock
+- **time_series_daily**: Get daily OHLCV time series for a stock
 - **get_income_statement**: Get annual and quarterly income statements
-- **time_series_weekly_adjusted**: Get weekly adjusted time series for a stock
 - **time_series_weekly**: Get weekly time series for a stock
+- **time_series_weekly_adjusted**: Get weekly adjusted time series for a stock
 
 
 ## 💬 Prompt Examples

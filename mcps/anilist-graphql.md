@@ -33,20 +33,20 @@ Connect your **AniList** account to any AI agent to explore the vast world of an
 
 
 ## Available Tools (15)
+- **get_media**: Query a specific anime or manga
 - **get_staff**: ).
 
 Query a specific staff member
+- **save_media_list_entry**: Create or update a media list entry
+- **toggle_favourite**: Toggle favorite status
+- **toggle_follow**: Toggle following a user
 - **get_studio**: Query a specific studio
 - **get_user**: Query a specific user
-- **save_media_list_entry**: Create or update a media list entry
 - **search_characters**: Search for characters
 - **search_media**: Search for anime or manga
 - **search_staff**: Search for staff members
-- **toggle_favourite**: Toggle favorite status
 - **update_user**: Update authenticated user settings
-- **get_media**: Query a specific anime or manga
 - **get_viewer**: Get the currently authenticated user
-- **toggle_follow**: Toggle following a user
 - **delete_media_list_entry**: Delete a media list entry
 - **get_airing_schedule**: Query airing schedule data
 - **get_character**: Query a specific character

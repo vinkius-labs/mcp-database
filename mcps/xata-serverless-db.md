@@ -36,32 +36,32 @@ No more switching between your IDE and the Xata dashboard to check schema or run
 
 ## Available Tools (30)
 - **request_organization_deletion**: Request organization deletion
-- **delete_project**: Delete a project
-- **execute_sql_batch**: Execute a batch of SQL queries in a single transaction
-- **execute_sql**: Execute a SQL query against a branch
 - **get_branch_credentials**: Retrieve branch credentials
-- **get_branch_metrics**: Retrieve branch metrics
-- **get_branch**: Get branch details
 - **get_organization**: Get organization details
-- **get_project_limits**: Get resource limits for projects
 - **get_project**: Get project details
-- **list_branches**: List all branches in a project
+- **get_project_limits**: Get resource limits for projects
 - **list_images**: List available images
-- **list_instance_types**: List available instance types for a region
-- **list_invitations**: List organization invitations
 - **list_members**: List organization members
 - **list_organizations**: List all organizations
 - **list_projects**: List all projects in an organization
 - **list_regions**: List available regions
 - **remove_member**: Remove a member from an organization
 - **resend_invitation**: Resend an organization invitation
-- **rotate_branch_credentials**: Rotate branch credentials
 - **update_project**: Update project details
 - **create_project**: Create a new project
 - **delete_branch**: Delete a branch
 - **delete_invitation**: Delete an organization invitation
-- **send_invitation**: Send an invitation to join an organization
+- **delete_project**: Delete a project
+- **execute_sql**: Execute a SQL query against a branch
+- **execute_sql_batch**: Execute a batch of SQL queries in a single transaction
+- **get_branch**: Get branch details
+- **get_branch_metrics**: Retrieve branch metrics
+- **list_branches**: List all branches in a project
+- **list_instance_types**: List available instance types for a region
+- **list_invitations**: List organization invitations
+- **rotate_branch_credentials**: Rotate branch credentials
 - **update_branch**: Update branch details
+- **send_invitation**: Send an invitation to join an organization
 - **update_organization**: Update organization details
 - **create_branch**: Create a new database branch
 - **create_organization**: Create a new organization

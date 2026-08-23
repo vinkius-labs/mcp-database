@@ -33,33 +33,33 @@ Connect your **Xata** account to any AI agent to manage your serverless data inf
 
 
 ## Available Tools (28)
-- **create_branch**: Create a new database branch
-- **create_org_api_key**: Create an API key for the organization
 - **create_organization**: Create a new Xata organization
+- **create_org_api_key**: Create an API key for the organization
+- **get_github_repository_mapping**: Retrieve the current GitHub repository mapping for a branch
+- **list_organization_members**: List members of an organization
+- **list_org_api_keys**: List organization-scoped API keys
+- **list_regions**: List available regions for project deployment
+- **map_github_repository**: Map a GitHub repository to a branch
+- **update_organization**: Update organization information
+- **list_branches**: List all branches in a project
+- **install_github_app**: Link a GitHub App installation to an organization
+- **cancel_organization_invitation**: Cancel a pending organization invitation
+- **create_branch**: Create a new database branch
+- **create_project**: Create a new project in an organization
 - **delete_user_api_keys**: Bulk delete user API keys by ID
 - **execute_sql**: Execute single or batch SQL queries over HTTP
 - **get_branch_credentials**: Retrieve database username and password for a branch
 - **get_branch_metrics**: Query observability data (CPU, Memory, Disk, etc.) for a branch
-- **get_github_repository_mapping**: Retrieve the current GitHub repository mapping for a branch
 - **get_organization**: Get detailed information about a specific organization
 - **get_project_limits**: Get resource limits for projects in an organization
+- **invite_organization_member**: Invite a user to an organization via email
 - **list_images**: List available PostgreSQL versions/images
-- **list_org_api_keys**: List organization-scoped API keys
 - **list_organization_invitations**: List pending or expired invitations for an organization
-- **list_organization_members**: List members of an organization
 - **list_organizations**: List all organizations the authenticated user belongs to
 - **list_projects**: List all projects within an organization
-- **list_regions**: List available regions for project deployment
 - **list_user_api_keys**: List API keys for the authenticated user
-- **map_github_repository**: Map a GitHub repository to a branch
 - **remove_organization_member**: Remove a member from an organization
 - **rotate_branch_credentials**: Trigger a password rotation for a branch
-- **update_organization**: Update organization information
-- **cancel_organization_invitation**: Cancel a pending organization invitation
-- **install_github_app**: Link a GitHub App installation to an organization
-- **invite_organization_member**: Invite a user to an organization via email
-- **list_branches**: List all branches in a project
-- **create_project**: Create a new project in an organization
 - **create_user_api_key**: Create a new user API key
 
 

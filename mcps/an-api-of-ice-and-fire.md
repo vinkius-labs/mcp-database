@@ -33,16 +33,16 @@ Connect the definitive **A Song of Ice and Fire** database to your AI agent and 
 
 
 ## Available Tools (6)
-- **get_book**: Get details for a specific book
-- **get_character**: Get details for a specific character
 - **get_house**: Get details for a specific house
 - **list_books**: List books in the A Song of Ice and Fire series
-- **list_characters**: Can be filtered by name, gender, or culture.
-
-List characters in the Ice and Fire universe
 - **list_houses**: Can be filtered by name, region, or words.
 
 List noble houses of Westeros and beyond
+- **get_book**: Get details for a specific book
+- **get_character**: Get details for a specific character
+- **list_characters**: Can be filtered by name, gender, or culture.
+
+List characters in the Ice and Fire universe
 
 
 ## 💬 Prompt Examples

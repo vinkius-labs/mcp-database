@@ -35,17 +35,17 @@ Connect your **ZeroTier** infrastructure to any AI agent to orchestrate software
 
 ## Available Tools (13)
 - **get_central_network**: Get details for a specific ZeroTier Central network
-- **list_central_networks**: List all ZeroTier Central networks
-- **update_central_network_member**: Update a member configuration in a ZeroTier Central network
 - **list_controller_network_members**: List members of a managed network on the local controller
-- **update_controller_network_member**: Authorize or configure a member on the local controller
 - **update_controller_network**: Create or update a network configuration on the local controller
-- **join_local_network**: Join a ZeroTier network locally
-- **leave_local_network**: Leave a ZeroTier network locally
+- **update_controller_network_member**: Authorize or configure a member on the local controller
 - **list_local_networks**: List networks the local ZeroTier node is a member of
 - **list_local_peers**: List all known ZeroTier peers locally
 - **get_local_status**: Get local ZeroTier node status
+- **join_local_network**: Join a ZeroTier network locally
+- **leave_local_network**: Leave a ZeroTier network locally
 - **list_central_network_members**: List all members of a ZeroTier Central network
+- **list_central_networks**: List all ZeroTier Central networks
+- **update_central_network_member**: Update a member configuration in a ZeroTier Central network
 - **list_controller_networks**: List all networks managed by the local controller
 
 

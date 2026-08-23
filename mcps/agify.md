@@ -33,10 +33,10 @@ Connect your AI agent to **Agify.io** to instantly estimate the age of individua
 
 
 ## Available Tools (2)
-- **predict_age_batch**: Predict the ages of multiple people based on their first names
 - **predict_age**: Optionally scope by country.
 
 Predict the age of a person based on their first name
+- **predict_age_batch**: Predict the ages of multiple people based on their first names
 
 
 ## 💬 Prompt Examples

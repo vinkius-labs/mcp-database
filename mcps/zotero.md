@@ -34,31 +34,31 @@ Connect your **Zotero** library to any AI agent and take full control of your re
 
 
 ## Available Tools (23)
+- **create_items**: Use get_new_item_template first to get the correct schema.
+
+Create new items in the Zotero library
 - **get_collection**: Get a specific collection by key
+- **get_new_item_template**: Get a JSON template for creating a new item of a specific type
+- **list_items**: List items in the Zotero library
 - **list_item_tags**: List tags for a specific item
 - **delete_items**: Delete multiple items (up to 50)
 - **get_deleted**: Get deleted objects since a specific library version
 - **get_item_type_fields**: List valid fields for a specific item type
-- **get_new_item_template**: Get a JSON template for creating a new item of a specific type
 - **get_tag**: Get tags matching a specific name
 - **list_collection_items**: List items in a specific collection
 - **list_collections**: List all collections in the Zotero library
 - **list_item_children**: List child items (notes, attachments) for a specific item
 - **list_item_fields**: List all available Zotero item fields
 - **list_item_types**: List all available Zotero item types
-- **list_items**: List items in the Zotero library
 - **list_publications**: List items in My Publications
 - **list_subcollections**: List subcollections of a specific collection
 - **list_tags**: List all tags in the library
 - **list_top_collections**: List top-level collections in the Zotero library
 - **list_top_items**: List top-level items in the Zotero library
 - **update_item**: Update an existing item (Partial Update / PATCH)
-- **delete_item**: Delete a single item
 - **get_item**: Get a specific item by key
+- **delete_item**: Delete a single item
 - **list_trash_items**: List items in the trash
-- **create_items**: Use get_new_item_template first to get the correct schema.
-
-Create new items in the Zotero library
 
 
 ## 💬 Prompt Examples
