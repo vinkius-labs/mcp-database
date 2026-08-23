@@ -34,24 +34,24 @@ Connect your **Imgur** account to any AI agent to automate image hosting, album 
 
 
 ## Available Tools (19)
-- **delete_album**: Delete an album with a given ID
-- **vote_comment**: Vote on a comment
-- **add_images_to_album**: Add images to an existing album
 - **create_album**: Create a new album
-- **create_comment**: Create a new comment on an item
 - **delete_comment**: Delete a comment
-- **get_account_gallery_favorites**: Get the user's gallery favorites
 - **get_account_settings**: Get the current user's account settings (requires access token)
 - **get_account_submissions**: Get images and albums submitted to the gallery by the user
-- **get_account**: Get standard user information for an Imgur account
 - **get_album**: Get information about a specific album
 - **get_comment**: Get information about a specific comment
 - **get_gallery**: Get the Imgur gallery
-- **update_image**: Update the title or description of an image
 - **upload_image**: Upload a new image
-- **delete_image**: Delete an image
-- **search_gallery**: Search the gallery for images and albums
 - **submit_to_gallery**: Submit an image or album to the gallery
+- **add_images_to_album**: Add images to an existing album
+- **create_comment**: Create a new comment on an item
+- **delete_album**: Delete an album with a given ID
+- **delete_image**: Delete an image
+- **get_account**: Get standard user information for an Imgur account
+- **get_account_gallery_favorites**: Get the user's gallery favorites
+- **search_gallery**: Search the gallery for images and albums
+- **update_image**: Update the title or description of an image
+- **vote_comment**: Vote on a comment
 - **get_image**: Get information about a specific image
 
 

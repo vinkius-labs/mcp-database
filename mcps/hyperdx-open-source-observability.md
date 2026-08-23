@@ -35,17 +35,17 @@ No more jumping between tabs to correlate logs with alerts. Your AI acts as an o
 
 
 ## Available Tools (7)
+- **get_dashboard**: Retrieve details for a specific dashboard
 - **list_events**: Use query parameter for filtering.
 
 Retrieve events (structured logs or spans) from HyperDX
-- **get_dashboard**: Retrieve details for a specific dashboard
 - **list_logs**: Use query parameter for filtering (e.g., level:error service:auth).
 
 Retrieve a list of logs based on search criteria
-- **list_alerts**: Returns a list of all configured alert rules
 - **create_alert**: Create a new alert rule
-- **list_dashboards**: Retrieve all dashboards in the organization
 - **delete_alert**: Delete a specific alert rule by ID
+- **list_alerts**: Returns a list of all configured alert rules
+- **list_dashboards**: Retrieve all dashboards in the organization
 
 
 ## 💬 Prompt Examples

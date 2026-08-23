@@ -38,15 +38,15 @@ Connect your **Humanloop** account to any AI agent to streamline your LLM operat
 - **deploy_prompt**: g., production, staging).
 
 Set a specific version as the active deployment for an environment
-- **get_prompt**: Retrieve details for a specific prompt by ID
 - **list_prompt_environments**: List all environments and their currently deployed versions for a prompt
 - **list_prompts**: Retrieve a list of all prompts in your organization
-- **log_to_prompt**: Record a model generation (log) associated with a specific prompt
 - **remove_deployment**: Remove a prompt version from an environment
 - **update_monitoring**: Activate or deactivate Evaluators for monitoring logs within a prompt
 - **update_prompt_version**: Update the name or description of a specific prompt version
-- **call_prompt_stream**: Execute a prompt and stream the response
 - **list_prompt_versions**: Get all versions associated with a specific prompt
+- **call_prompt_stream**: Execute a prompt and stream the response
+- **get_prompt**: Retrieve details for a specific prompt by ID
+- **log_to_prompt**: Record a model generation (log) associated with a specific prompt
 - **upsert_prompt**: Create or update a prompt configuration
 
 

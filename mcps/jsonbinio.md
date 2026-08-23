@@ -35,10 +35,6 @@ Connect **JSONBin.io** to your AI agent to turn it into a powerful data manageme
 
 ## Available Tools (27)
 - **count_bin_versions**: Count versions of a JSON bin
-- **create_access_key**: Create a restricted access key
-- **create_bin**: Requires valid JSON data.
-
-Create a new JSON bin
 - **create_collection**: Create a new collection
 - **create_schema**: Create a JSON schema document
 - **create_xl_bin**: Requires Early Access and a paid plan.
@@ -52,21 +48,25 @@ Create an XL JSON bin (up to 10MB)
 - **fetch_collection_bins**: Fetch bins within a collection
 - **list_collections**: List all collections
 - **list_usage_log_dates**: List available dates for usage logs
-- **read_bin**: Can optionally fetch a specific version or filter via JSON Path.
-
-Read a JSON bin
 - **read_schema**: Read a JSON schema document
 - **read_xl_bin**: Read an XL JSON bin
 - **remove_schema_from_collection**: Remove a schema from a collection
-- **update_bin_name**: Update the name of a JSON bin
-- **update_bin_privacy**: Update the privacy setting of a JSON bin
 - **update_bin**: Update an existing JSON bin
-- **update_collection_name**: Update the name of a collection
+- **update_bin_name**: Update the name of a JSON bin
 - **fetch_uncategorized_bins**: Fetch all uncategorized bins
 - **list_access_keys**: List all access keys
 - **add_schema_to_collection**: Add a schema to a collection for validation
-- **update_schema_name**: Update the name of a JSON schema document
+- **create_access_key**: Create a restricted access key
+- **create_bin**: Requires valid JSON data.
+
+Create a new JSON bin
+- **read_bin**: Can optionally fetch a specific version or filter via JSON Path.
+
+Read a JSON bin
+- **update_bin_privacy**: Update the privacy setting of a JSON bin
+- **update_collection_name**: Update the name of a collection
 - **update_schema**: Update a JSON schema document
+- **update_schema_name**: Update the name of a JSON schema document
 
 
 ## 💬 Prompt Examples

@@ -36,12 +36,12 @@ Connect your AI agent to the **Kava Network** through this comprehensive explore
 - **get_account_info**: Get basic information for a Kava account
 - **get_account_reward_slash**: Get rewards and slashes for an account
 - **get_account_token**: Get token balances for an account
-- **get_block**: Get block details by height or hash
-- **list_blocks**: Get a list of blocks
 - **list_events**: Get a list of events with filtering options
-- **get_extrinsic**: Get extrinsic details by hash or index
-- **list_extrinsics**: Get a list of extrinsics
 - **get_validator**: Get details for a specific validator
+- **list_extrinsics**: Get a list of extrinsics
+- **get_block**: Get block details by height or hash
+- **get_extrinsic**: Get extrinsic details by hash or index
+- **list_blocks**: Get a list of blocks
 - **list_validators**: Get a list of validators
 
 

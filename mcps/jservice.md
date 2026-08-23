@@ -33,16 +33,16 @@ Connect to the **Jservice** API and bring the world of Jeopardy! trivia to your 
 
 
 ## Available Tools (4)
-- **get_clues**: Can be filtered by value, category, date, and offset.
-
-Get a list of clues based on filter criteria
-- **get_category**: Get a specific category and its associated clues
-- **get_random_clues**: Limited to 100 at a time.
-
-Get a random set of clues
 - **get_categories**: Limited to 100 at a time.
 
 Get a list of categories
+- **get_category**: Get a specific category and its associated clues
+- **get_clues**: Can be filtered by value, category, date, and offset.
+
+Get a list of clues based on filter criteria
+- **get_random_clues**: Limited to 100 at a time.
+
+Get a random set of clues
 
 
 ## 💬 Prompt Examples

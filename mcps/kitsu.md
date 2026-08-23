@@ -33,11 +33,11 @@ Connect your **Kitsu** account to any AI agent to explore the world of anime and
 
 
 ## Available Tools (9)
-- **get_user**: Get details for a specific user
-- **create_library_entry**: Create a new library entry
 - **get_anime**: Get details for a specific anime
 - **get_current_user**: Get the currently authenticated user
+- **create_library_entry**: Create a new library entry
 - **get_manga**: Get details for a specific manga
+- **get_user**: Get details for a specific user
 - **list_anime**: Use filters to search by text, categories, season, or year.
 
 List and search anime series

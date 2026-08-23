@@ -43,18 +43,18 @@ Connect **Inworld AI** to your agent to unlock advanced multimodal capabilities.
 - **list_tts_voices**: Use list_voices instead for newer Voice API.
 
 List TTS voices (Deprecated)
-- **list_voices**: List voices in the workspace
 - **publish_voice**: Publish a draft/preview voice
 - **synthesize_speech_stream**: Synthesize speech via streaming
-- **synthesize_speech_sync**: Synthesize speech synchronously
-- **transcribe_audio**: Transcribe audio to text (Sync)
 - **update_router**: Update an LLM Router
 - **update_voice**: Update a voice
-- **chat_completions**: Generate chat completions via LLM Router
 - **clone_voice**: Clone a voice from audio samples
 - **create_realtime_call**: Create a WebRTC realtime call
 - **create_router**: Create an LLM Router
+- **chat_completions**: Generate chat completions via LLM Router
 - **design_voice**: Design a voice from a text prompt
+- **list_voices**: List voices in the workspace
+- **synthesize_speech_sync**: Synthesize speech synchronously
+- **transcribe_audio**: Transcribe audio to text (Sync)
 
 
 ## 💬 Prompt Examples

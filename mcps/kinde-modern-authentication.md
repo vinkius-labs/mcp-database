@@ -33,16 +33,16 @@ Connect your **Kinde** authentication environment to any AI agent to streamline 
 
 ## Available Tools (8)
 - **list_permissions**: List available permissions
-- **list_users**: List users in Kinde
-- **update_user**: Provide the user ID and the fields to update in the data payload.
-
-Update user information
-- **list_organizations**: List organizations in Kinde
-- **list_roles**: List available roles
 - **create_organization**: Create a new organization
 - **create_user**: Provide user details in the data payload.
 
 Create a new user in Kinde
+- **list_organizations**: List organizations in Kinde
+- **list_roles**: List available roles
+- **list_users**: List users in Kinde
+- **update_user**: Provide the user ID and the fields to update in the data payload.
+
+Update user information
 - **get_user**: Retrieve user details
 
 

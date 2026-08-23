@@ -33,23 +33,16 @@ Connect your **Instatus** account to any AI agent to streamline your incident co
 
 
 ## Available Tools (28)
-- **add_subscriber**: Add a new subscriber
 - **create_component**: Create a new component
 - **delete_component**: Delete a component
-- **add_subscribers_bulk**: Add multiple subscribers (max 100)
 - **add_teammate**: Add a team member
 - **create_incident_from_template**: Create an incident using a template
-- **create_incident**: Create a new incident
-- **create_maintenance**: Create a new maintenance
 - **delete_incident**: Delete an incident
-- **delete_maintenance**: Delete a maintenance
 - **delete_metric_datapoints**: Delete datapoints from a metric
 - **get_component**: Get a specific component
 - **get_incident**: Get a specific incident
-- **get_maintenance**: Get a specific maintenance
 - **list_components**: Get all components for a page
 - **list_incidents**: Get all incidents for a page
-- **list_maintenances**: Get all maintenances for a page
 - **list_metrics**: Get all metrics for a page
 - **list_subscribers**: Get all subscribers for a page
 - **list_teammates**: Get all teammates for a page
@@ -57,9 +50,16 @@ Connect your **Instatus** account to any AI agent to streamline your incident co
 - **remove_teammate**: Remove a team member
 - **update_component**: Update an existing component
 - **update_incident**: Update an existing incident
-- **update_maintenance**: Update an existing maintenance
 - **add_metric**: Add a new metric
 - **add_metric_datapoint**: Add a datapoint to a metric
+- **add_subscriber**: Add a new subscriber
+- **add_subscribers_bulk**: Add multiple subscribers (max 100)
+- **create_incident**: Create a new incident
+- **create_maintenance**: Create a new maintenance
+- **delete_maintenance**: Delete a maintenance
+- **get_maintenance**: Get a specific maintenance
+- **list_maintenances**: Get all maintenances for a page
+- **update_maintenance**: Update an existing maintenance
 - **add_metric_datapoints_bulk**: Add multiple datapoints to a metric
 
 
