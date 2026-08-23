@@ -34,10 +34,13 @@ Connect the **Rick and Morty** database to your AI agent and explore the entire 
 
 ## Available Tools (9)
 - **get_character**: Get a single Rick and Morty character by ID
-- **get_episode**: Get a single Rick and Morty episode by ID
 - **get_location**: Get a single Rick and Morty location by ID
-- **get_multiple_characters**: Get multiple Rick and Morty characters by IDs
 - **get_multiple_episodes**: Get multiple Rick and Morty episodes by IDs
+- **list_locations**: Can filter by name, type, and dimension.
+
+List and filter Rick and Morty locations
+- **get_episode**: Get a single Rick and Morty episode by ID
+- **get_multiple_characters**: Get multiple Rick and Morty characters by IDs
 - **get_multiple_locations**: Get multiple Rick and Morty locations by IDs
 - **list_characters**: Can filter by name, status, species, type, and gender.
 
@@ -45,9 +48,6 @@ List and filter Rick and Morty characters
 - **list_episodes**: Can filter by name and episode code.
 
 List and filter Rick and Morty episodes
-- **list_locations**: Can filter by name, type, and dimension.
-
-List and filter Rick and Morty locations
 
 
 ## 💬 Prompt Examples

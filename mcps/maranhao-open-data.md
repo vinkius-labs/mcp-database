@@ -36,10 +36,10 @@ Connect to the **Maranhão Open Data Portal** to explore government transparency
 - **get_resource**: g., a CSV file or API endpoint within a dataset).
 
 Retrieve resource metadata
-- **list_packages**: List all datasets (packages) on the portal
-- **search_datastore_sql**: Execute SQL query against the DataStore
 - **search_datastore**: Search within a resource in the DataStore
 - **search_packages**: Search for datasets
+- **list_packages**: List all datasets (packages) on the portal
+- **search_datastore_sql**: Execute SQL query against the DataStore
 
 
 ## 💬 Prompt Examples

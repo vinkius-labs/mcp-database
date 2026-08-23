@@ -35,31 +35,31 @@ Connect to **NASA TechPort** to explore the agency's comprehensive resource for 
 
 ## Available Tools (29)
 - **export_opportunities**: Export funding opportunities
+- **get_nonce**: Refresh the user nonce for secure sessions
+- **get_program**: Get detailed information for a specific program
+- **get_taxonomy_tree**: Get a full taxonomy in a tree format
+- **list_contacts**: List contacts in TechPort
+- **list_organizations**: List organizations matching filters
+- **list_programs**: List all programs
+- **list_taxonomies**: List taxonomy roots
+- **predict_drex**: Retrieve Destination Area recommendations for a project description
+- **search_object_advanced**: Search on an object type based on complex criteria
+- **search_object_all_data**: Conduct a search for all objects with all fields included
 - **get_opportunity**: Get data for a specific opportunity
 - **get_organization**: Get detailed information for a specific organization
-- **get_program**: Get detailed information for a specific program
 - **get_schema**: Get the object schema for a specific type
 - **get_api_spec**: Get the Swagger/OpenAPI specification for the API
 - **get_enum**: Get enumerations for a specific field name
 - **get_max_funding_amount**: Get the maximum funding amount available
-- **get_nonce**: Refresh the user nonce for secure sessions
 - **get_project**: Get detailed information about a specific technology project
 - **get_taxonomy**: Get a taxonomy root and its children
-- **get_taxonomy_tree**: Get a full taxonomy in a tree format
-- **list_contacts**: List contacts in TechPort
 - **list_enums**: List enumerations for various fields used in the API
 - **list_opportunities**: List all funding opportunities
-- **list_organizations**: List organizations matching filters
-- **list_programs**: List all programs
 - **list_projects**: Requires updatedSince query parameter.
 
 List available technology project IDs
-- **list_taxonomies**: List taxonomy roots
 - **list_taxonomy_nodes**: List taxonomy nodes filtered by root ID, level, or code
-- **predict_drex**: Retrieve Destination Area recommendations for a project description
 - **predict_trex**: Retrieve taxonomy recommendations for a technology description
-- **search_object_advanced**: Search on an object type based on complex criteria
-- **search_object_all_data**: Conduct a search for all objects with all fields included
 - **search_object**: Search on a given object type using a query string
 - **search_opportunities**: Search funding opportunities based on passed criteria
 - **search_organizations**: Search organizations based on provided criteria

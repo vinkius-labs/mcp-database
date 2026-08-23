@@ -34,23 +34,23 @@ Connect to the official **OpenFEC** API and bring transparency to federal electi
 
 
 ## Available Tools (21)
-- **get_candidate_history**: Get the history of a candidate filings and designations
 - **get_candidate**: Get detailed information for a specific candidate by ID
-- **get_candidate_totals**: Get aggregated financial totals for a specific candidate
-- **get_committee_history**: Get the history of a committee characteristics over time
-- **get_committee**: Get detailed information for a specific committee by ID
 - **get_totals_by_committee_type**: Get financial totals for a specific committee type
-- **get_totals_by_entity**: Get financial totals aggregated by candidate or committee entity
 - **get_totals_officer_summary**: Summarize financial data by committee officer
-- **list_candidates**: Fetch a list of candidates with various filters
 - **list_committees**: Fetch a list of committees with filters
 - **list_filings**: List all filings (electronic and paper) with filters
+- **list_schedule_b**: Itemized Disbursements: Operating expenditures, transfers, refunds
+- **list_schedule_e**: Independent Expenditures: Spending to support/oppose candidates
+- **get_candidate_history**: Get the history of a candidate filings and designations
+- **get_committee**: Get detailed information for a specific committee by ID
+- **get_committee_history**: Get the history of a committee characteristics over time
+- **get_candidate_totals**: Get aggregated financial totals for a specific candidate
+- **get_totals_by_entity**: Get financial totals aggregated by candidate or committee entity
+- **list_candidates**: Fetch a list of candidates with various filters
 - **list_reports**: Fetch financial reports filed by specific types of committees
 - **list_schedule_a**: Itemized Receipts: Contributions from individuals and committees
-- **list_schedule_b**: Itemized Disbursements: Operating expenditures, transfers, refunds
-- **list_schedule_c**: Loans: Information on loans received or made by committees
 - **list_schedule_d**: Debts: Debts and obligations owed by or to committees
-- **list_schedule_e**: Independent Expenditures: Spending to support/oppose candidates
+- **list_schedule_c**: Loans: Information on loans received or made by committees
 - **list_schedule_f**: Coordinated Party Expenditures: Spending in coordination with candidates
 - **list_state_election_offices**: Get contact information for state election offices
 - **search_candidates**: Search for candidates by name or other attributes

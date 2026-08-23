@@ -34,19 +34,19 @@ Connect your AI agent directly to the **São Paulo City Open Data Portal (CKAN)*
 
 
 ## Available Tools (11)
-- **datastore_search_sql**: SQL Query on a resource
 - **datastore_search**: Search data within a resource
+- **get_organization**: Get organization details
+- **get_package**: Get dataset details
+- **search_packages**: Search datasets
+- **datastore_search_sql**: SQL Query on a resource
+- **get_group**: Get group details
 - **list_groups**: g., Educação, Meio Ambiente).
 
 List groups (themes)
-- **get_group**: Get group details
 - **list_organizations**: g., Secretarias) that own datasets.
 
 List organizations
-- **get_organization**: Get organization details
 - **list_packages**: List all datasets (packages) in the portal
-- **search_packages**: Search datasets
-- **get_package**: Get dataset details
 - **get_resource**: Get resource details
 - **list_tags**: List tags
 

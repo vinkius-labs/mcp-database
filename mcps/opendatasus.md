@@ -34,13 +34,13 @@ Connect to the **OpenDataSUS** portal to explore and analyze Brazilian public he
 
 ## Available Tools (8)
 - **package_search**: Search for datasets matching specific criteria
-- **organization_list**: List all organizations (data providers)
 - **datastore_search**: Search and filter data within a resource
-- **group_list**: List all groups (categories)
 - **package_list**: List all dataset names in the OpenDataSUS portal
-- **package_show**: Get full metadata of a specific dataset
+- **organization_list**: List all organizations (data providers)
+- **group_list**: List all groups (categories)
 - **resource_show**: Get metadata for a specific resource
 - **tag_list**: List all tags used across datasets
+- **package_show**: Get full metadata of a specific dataset
 
 
 ## 💬 Prompt Examples

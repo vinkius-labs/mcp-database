@@ -32,10 +32,10 @@ The **Arcsecond.io MCP Server** provides a unified natural language interface to
 - **get_account_check**: Verify Arcsecond account connection
 - **get_object**: Get details for a specific astronomical object
 - **list_datasets**: List datasets available for an observatory
+- **search_objects**: Search for astronomical objects (stars, galaxies, planets)
 - **list_night_logs**: List observation night logs for an observatory
 - **list_observing_sites**: List observing sites for an observatory
 - **list_telescopes**: List telescopes for an observatory
-- **search_objects**: Search for astronomical objects (stars, galaxies, planets)
 
 
 ## 💬 Prompt Examples

@@ -20,15 +20,15 @@ Managing sleep debt requires biological precision. Artificial Intelligence model
 
 
 ## Available Tools (4)
+- **calculate_sleep_debt**: Requires daily required hours and an array of actually slept hours.
+
+Calculates accumulated sleep debt and provides an actionable recovery strategy
 - **calculate_nap_times**: Requires wake-up time in HH:mm.
 
 Calculates the ideal window for power naps based on wake-up time
 - **calculate_sleep_cycles**: Provide a targetTimeStr (HH:mm) and the mode (sleep_at or wake_up_at).
 
 Calculates optimal wake-up or bedtimes aligned with 90-minute REM sleep phases, incorporating latency buffers for circadian rhythm optimization
-- **calculate_sleep_debt**: Requires daily required hours and an array of actually slept hours.
-
-Calculates accumulated sleep debt and provides an actionable recovery strategy
 - **calculate_circadian_rhythm**: Maps out energy peaks and troughs throughout the day based on wake time
 
 

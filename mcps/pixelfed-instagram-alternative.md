@@ -34,27 +34,27 @@ Connect your **Pixelfed** account to any AI agent to manage your decentralized p
 
 
 ## Available Tools (17)
-- **get_followers**: Get followers of an account
-- **get_following**: Get accounts followed by an account
-- **get_home_timeline**: Get home timeline
-- **get_notifications**: Get notifications
-- **get_public_timeline**: Get public timeline
-- **get_status**: Get a specific status (post)
-- **get_tag_timeline**: Get tag timeline
-- **reblog_status**: Reblog (share) a status
-- **unfavourite_status**: Unfavourite (unlike) a status
-- **unfollow_account**: Unfollow an account
-- **upload_media**: Returns a media_id to be used when creating a status.
-
-Upload media
-- **verify_credentials**: Verify authenticated user credentials
 - **create_status**: Supports text content, media IDs, and visibility settings.
 
 Create a new post (status)
+- **get_account**: Get details for a specific account
+- **get_followers**: Get followers of an account
+- **get_public_timeline**: Get public timeline
+- **get_status**: Get a specific status (post)
+- **unfollow_account**: Unfollow an account
+- **verify_credentials**: Verify authenticated user credentials
+- **get_following**: Get accounts followed by an account
+- **get_home_timeline**: Get home timeline
+- **get_notifications**: Get notifications
+- **get_tag_timeline**: Get tag timeline
+- **reblog_status**: Reblog (share) a status
+- **unfavourite_status**: Unfavourite (unlike) a status
+- **upload_media**: Returns a media_id to be used when creating a status.
+
+Upload media
 - **delete_status**: Delete a status (post)
 - **favourite_status**: Favourite (like) a status
 - **follow_account**: Follow an account
-- **get_account**: Get details for a specific account
 
 
 ## 💬 Prompt Examples
