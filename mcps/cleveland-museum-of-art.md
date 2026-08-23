@@ -34,17 +34,17 @@ Access over 60,000 artworks from the **Cleveland Museum of Art** directly throug
 
 
 ## Available Tools (9)
+- **get_artwork**: Retrieve a specific artwork by its Athena ID or accession number
+- **get_creator**: Retrieve a specific creator record by ID
 - **get_exhibition**: Retrieve a specific exhibition by ID
-- **get_may_show_creator**: Retrieve a specific May Show creator by ID
 - **search_artworks**: Search for artworks and associated metadata
 - **search_creators**: Search for creators in the collection
-- **search_exhibitions**: Search for exhibitions
 - **search_may_show_creators**: Search for artists who participated in the Cleveland Museum of Art "May Shows"
 - **search_similar_artworks**: Uses POST but acts as a read-only query.
 
 Image Similarity Search. Find visually similar artworks
-- **get_artwork**: Retrieve a specific artwork by its Athena ID or accession number
-- **get_creator**: Retrieve a specific creator record by ID
+- **get_may_show_creator**: Retrieve a specific May Show creator by ID
+- **search_exhibitions**: Search for exhibitions
 
 
 ## 💬 Prompt Examples

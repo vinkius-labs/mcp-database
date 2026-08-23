@@ -34,10 +34,10 @@ Bring the legendary humor of **Chuck Norris** to your AI workspace. This MCP ser
 
 ## Available Tools (3)
 - **list_categories**: Retrieve all available joke categories
+- **search_jokes**: Search for Chuck Norris jokes
 - **get_random_joke**: Can optionally be filtered by a specific category.
 
 Retrieve a random Chuck Norris joke
-- **search_jokes**: Search for Chuck Norris jokes
 
 
 ## 💬 Prompt Examples

@@ -34,15 +34,16 @@ Connect your **Coveralls** account to any AI agent to streamline your CI/CD work
 
 
 ## Available Tools (10)
-- **create_repo**: Requires personal API token.
-
-Create a new repository on Coveralls
 - **get_build_web_data**: May require personal API token for private repos.
 
 Get JSON representation of a build web page
 - **get_file_web_data**: May require personal API token for private repos.
 
 Get JSON representation of a source file web page
+- **close_parallel_build**: Close a parallel build on Coveralls
+- **create_repo**: Requires personal API token.
+
+Create a new repository on Coveralls
 - **get_job_web_data**: May require personal API token for private repos.
 
 Get JSON representation of a job web page
@@ -59,7 +60,6 @@ Submit a coverage report (job) to Coveralls
 - **update_repo**: Requires personal API token.
 
 Update an existing repository on Coveralls
-- **close_parallel_build**: Close a parallel build on Coveralls
 
 
 ## 💬 Prompt Examples

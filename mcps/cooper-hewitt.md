@@ -37,27 +37,27 @@ No more manual searching through web archives. Your AI acts as a specialized des
 
 ## Available Tools (22)
 - **get_exhibition_info**: Return detailed information for an exhibition
-- **get_exhibition_objects**: Return objects displayed in an exhibition
-- **get_object_colors**: Return the color palette for an object
 - **spec_formats**: Return the list of valid API response formats
-- **get_object_exhibitions**: Return exhibitions featuring an object
 - **get_object_images**: Return images for an object
-- **get_object_info**: Return detailed information for a specific object
-- **get_object_participants**: Return people involved with an object
-- **get_objects_on_display**: Return a list of objects currently on display
 - **get_person_images**: Return images of a person
 - **get_person_info**: Return detailed information for a person
-- **get_person_objects**: Return objects associated with a person
 - **get_random_object**: Return a random object from the collection
 - **list_exhibitions**: Return a list of exhibitions
 - **list_rooms**: List all rooms across locations
-- **list_sites**: List all location sites
-- **search_collection**: Search for things in the collection
-- **search_objects_faceted**: Search for objects and return faceted results
 - **search_objects**: Search specifically for objects
+- **search_objects_faceted**: Search for objects and return faceted results
 - **spec_methods**: Return the list of available API response methods
 - **test_echo**: A testing method which echoes all parameters back in the response
 - **test_error**: Return a test error from the API
+- **get_exhibition_objects**: Return objects displayed in an exhibition
+- **get_object_colors**: Return the color palette for an object
+- **get_object_exhibitions**: Return exhibitions featuring an object
+- **get_object_info**: Return detailed information for a specific object
+- **get_object_participants**: Return people involved with an object
+- **get_objects_on_display**: Return a list of objects currently on display
+- **get_person_objects**: Return objects associated with a person
+- **list_sites**: List all location sites
+- **search_collection**: Search for things in the collection
 
 
 ## 💬 Prompt Examples

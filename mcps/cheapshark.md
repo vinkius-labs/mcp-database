@@ -34,11 +34,11 @@ Connect to **CheapShark** and never miss a PC game deal again. This MCP server a
 
 
 ## Available Tools (5)
+- **get_deals**: Retrieve a list of current game deals
 - **get_game**: Get specific game details by ID
 - **get_stores**: Good for mapping storeIDs from deals.
 
 Get a list of all stores tracked by CheapShark
-- **get_deals**: Retrieve a list of current game deals
 - **manage_alert**: Manage email alerts for game price drops
 - **search_games**: Search for games by title or Steam App ID
 

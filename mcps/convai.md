@@ -35,26 +35,26 @@ Connect your **Convai** account to any AI agent to orchestrate lifelike conversa
 
 ## Available Tools (25)
 - **delete_knowledge_bank**: Delete a Knowledge Bank file
+- **get_prompt**: Fetch prompt data for debugging or advanced configuration
+- **list_characters**: Returns all characters associated with the account
+- **list_voices**: Returns available voices categorized by provider
+- **toggle_narrative**: Toggle narrative driven mode for a character
+- **list_languages**: Returns supported languages
+- **connect_live**: Connect to Live API via WebRTC
+- **create_narrative_section**: Create a narrative section
 - **edit_narrative_section**: Edit a narrative section
 - **evaluate_conversation**: Evaluate a conversation transcript based on custom attributes
 - **generate_backstory**: Generate a character description
 - **generate_starter_conversation**: Generate follow-up options
 - **get_character**: Get details for a specific Convai character
 - **get_chat_session_details**: Get details of a specific chat session
-- **get_prompt**: Fetch prompt data for debugging or advanced configuration
 - **get_response**: Get a response from a character
-- **list_characters**: Returns all characters associated with the account
+- **list_chat_sessions**: List chat sessions for a character
 - **list_knowledge_bank**: List Knowledge Bank status
 - **list_narrative_sections**: List narrative sections
 - **list_narrative_triggers**: List narrative triggers
-- **list_voices**: Returns available voices categorized by provider
-- **toggle_narrative**: Toggle narrative driven mode for a character
 - **update_character**: Update an existing Convai character
-- **list_chat_sessions**: List chat sessions for a character
-- **list_languages**: Returns supported languages
-- **connect_live**: Connect to Live API via WebRTC
 - **create_character**: Create a new Convai character
-- **create_narrative_section**: Create a narrative section
 - **create_narrative_trigger**: Create a narrative trigger
 - **delete_character**: Delete a Convai character
 - **update_knowledge_bank**: Update a Knowledge Bank file

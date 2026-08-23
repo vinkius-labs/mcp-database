@@ -36,8 +36,8 @@ Bring the joy of cats to your AI interactions with the **CatAAS** MCP server. Th
 ## Available Tools (7)
 - **get_cat_by_tag**: Get a random cat filtered by tag
 - **get_cat_with_tag_and_text**: Get a random cat with a specific tag and custom text
-- **get_cat_with_text**: Get a random cat with custom text overlaid
 - **get_random_cat**: Get a random cat image metadata
+- **get_cat_with_text**: Get a random cat with custom text overlaid
 - **get_random_gif_cat**: Get a random animated cat GIF
 - **list_cats**: List cats from the database
 - **list_tags**: List all available tags

@@ -41,17 +41,17 @@ Create a new Clever Cloud application
 
 Create a new organization
 - **delete_application**: Delete an application
-- **get_addon**: Get details of a specific add-on
 - **get_application_logs**: Fetch application logs
-- **get_application**: Get details of a specific application
 - **get_current_user**: Get information about the current user
-- **list_addons**: ).
-
-List all your add-ons
 - **list_applications**: List all your Clever Cloud applications
 - **list_instances**: List running instances
 - **list_organization_applications**: List applications in an organization
 - **list_organizations**: List organizations you belong to
+- **get_addon**: Get details of a specific add-on
+- **get_application**: Get details of a specific application
+- **list_addons**: ).
+
+List all your add-ons
 - **provision_addon**: Provide configuration in the body.
 
 Provision a new add-on

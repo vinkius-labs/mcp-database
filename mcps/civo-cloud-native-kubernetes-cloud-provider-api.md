@@ -36,37 +36,37 @@ Connect your **Civo** account to any AI agent to manage your cloud-native infras
 ## Available Tools (33)
 - **create_domain**: Create a DNS domain
 - **attach_volume**: Attach a volume to an instance
-- **create_instance**: Create a new compute instance
 - **create_webhook**: Create a webhook
-- **create_cluster**: Create a new Kubernetes cluster
 - **create_domain_record**: Create a DNS record
 - **create_firewall_rule**: Create a firewall rule
 - **create_firewall**: Create a firewall
 - **create_network**: Create a private network
-- **create_team**: Create a team
-- **create_volume**: Create a volume
 - **detach_volume**: Detach a volume
-- **get_charges**: Get hourly usage report for chargeable resources
 - **get_quota**: Get account quota and usage
 - **list_clusters**: List Kubernetes clusters
 - **list_disk_images**: List disk images
 - **list_domains**: List DNS domains
-- **list_firewall_rules**: List rules for a firewall
-- **list_networks**: List private networks
 - **list_regions**: List available regions
 - **list_sizes**: List available instance sizes
 - **reboot_instance**: Hard reboot an instance
-- **recycle_cluster_node**: Recycle a node in a Kubernetes cluster
 - **resize_instance**: Upgrade or resize an instance
 - **retag_instance**: Retag an instance
-- **soft_reboot_instance**: Soft reboot an instance
-- **start_instance**: Start an instance
 - **stop_instance**: Stop an instance
 - **test_webhook**: Test a webhook
 - **update_team_member_status**: Update team member status
+- **create_cluster**: Create a new Kubernetes cluster
+- **create_instance**: Create a new compute instance
+- **create_team**: Create a team
+- **create_volume**: Create a volume
+- **get_charges**: Get hourly usage report for chargeable resources
+- **list_firewall_rules**: List rules for a firewall
+- **list_networks**: List private networks
+- **list_ssh_keys**: List SSH keys
+- **recycle_cluster_node**: Recycle a node in a Kubernetes cluster
+- **soft_reboot_instance**: Soft reboot an instance
+- **start_instance**: Start an instance
 - **upload_ssh_key**: Upload an SSH key
 - **add_team_member**: Add a member to a team
-- **list_ssh_keys**: List SSH keys
 
 
 ## 💬 Prompt Examples
