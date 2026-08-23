@@ -34,25 +34,25 @@ Connect to **Gradient AI** to leverage enterprise-grade LLM infrastructure. This
 
 
 ## Available Tools (19)
-- **analyze_sentiment**: Analyze the sentiment of a document
 - **answer_question**: Answer a question based on a source document
-- **complete_model**: Generate a completion for a given prompt
 - **fine_tune_model**: Train a model on provided samples
-- **generate_embeddings**: Generate embeddings for the provided inputs
 - **get_model**: Retrieve details about a specific model
 - **get_transcription**: Retrieve the result of a transcription job
 - **list_embeddings**: List available models for generating embeddings
 - **list_models**: List available foundational and fine-tuned models
 - **list_rag_collections**: List all RAG collections in the workspace
-- **personalize_document**: Personalize a document for a specific audience
 - **summarize_document**: Summarize a document
+- **analyze_sentiment**: Analyze the sentiment of a document
+- **complete_model**: Generate a completion for a given prompt
+- **generate_embeddings**: Generate embeddings for the provided inputs
+- **personalize_document**: Personalize a document for a specific audience
 - **upload_file**: Upload a file for use in other operations
+- **extract_pdf**: Extract text and data from a PDF file
 - **create_model**: Create a new fine-tuned model instance
 - **create_rag_collection**: Create a collection for RAG operations
 - **create_transcription**: Start an audio transcription job
 - **delete_model**: Delete a fine-tuned model
 - **extract_entity**: Extract structured data from a document based on a schema
-- **extract_pdf**: Extract text and data from a PDF file
 
 
 ## 💬 Prompt Examples

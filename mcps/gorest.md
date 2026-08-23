@@ -33,18 +33,12 @@ Connect to the **GoRest** API to interact with a full suite of RESTful resources
 
 
 ## Available Tools (23)
-- **create_post_comment**: Requires authentication.
-
-Add a comment to a specific post
 - **create_post**: Requires authentication.
 
 Create a new post
 - **create_todo**: Requires authentication.
 
 Create a new todo
-- **create_user_post**: Requires authentication.
-
-Create a post for a specific user
 - **create_user_todo**: Requires authentication.
 
 Create a todo for a specific user
@@ -54,27 +48,33 @@ Create a new user
 - **delete_user**: Requires authentication.
 
 Delete a user
-- **get_comment**: Fetch a single comment
 - **get_post**: Fetch a single post
-- **get_todo**: Fetch a single todo
 - **get_user**: Fetch a single user
-- **list_comments**: Supports pagination.
-
-List all comments
 - **list_post_comments**: Comments on a specific post
-- **list_users**: List users
-- **replace_user**: Requires authentication.
-
-Replace a user (full)
 - **update_post**: Requires authentication.
 
 Update a post
 - **update_user**: Requires authentication.
 
 Update a user (partial)
+- **create_post_comment**: Requires authentication.
+
+Add a comment to a specific post
+- **create_user_post**: Requires authentication.
+
+Create a post for a specific user
 - **delete_post**: Requires authentication.
 
 Delete a post
+- **get_comment**: Fetch a single comment
+- **get_todo**: Fetch a single todo
+- **list_comments**: Supports pagination.
+
+List all comments
+- **list_users**: List users
+- **replace_user**: Requires authentication.
+
+Replace a user (full)
 - **list_todos**: Supports pagination.
 
 List all todos

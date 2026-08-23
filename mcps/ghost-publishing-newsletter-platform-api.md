@@ -34,28 +34,28 @@ Connect your **Ghost** CMS to any AI agent to streamline your publishing and con
 
 ## Available Tools (16)
 - **admin_create_post**: Create a new post via Ghost Admin API
-- **admin_list_members**: Browse members via Ghost Admin API
 - **admin_list_newsletters**: Browse newsletters via Ghost Admin API
 - **admin_list_offers**: Browse subscription offers via Ghost Admin API
 - **admin_list_pages**: Browse pages via Ghost Admin API
 - **admin_list_posts**: Browse posts via Ghost Admin API
 - **admin_list_webhooks**: Browse system webhooks via Ghost Admin API
+- **content_get_settings**: Fetch site settings via Ghost Content API
+- **content_list_pages**: Supports NQL filtering and pagination.
+
+Browse or read public pages via Ghost Content API
+- **admin_create_member**: Create a new member via Ghost Admin API
+- **admin_list_members**: Browse members via Ghost Admin API
 - **admin_update_post**: Update an existing post via Ghost Admin API
 - **content_list_authors**: Supports NQL filtering and pagination.
 
 Browse or read public authors via Ghost Content API
-- **content_list_pages**: Supports NQL filtering and pagination.
+- **content_list_posts**: Supports NQL filtering, pagination, and inclusion of related data.
 
-Browse or read public pages via Ghost Content API
-- **content_get_settings**: Fetch site settings via Ghost Content API
+Browse or read public posts via Ghost Content API
 - **content_list_tags**: Supports NQL filtering and pagination.
 
 Browse or read public tags via Ghost Content API
 - **content_list_tiers**: Browse membership tiers via Ghost Content API
-- **content_list_posts**: Supports NQL filtering, pagination, and inclusion of related data.
-
-Browse or read public posts via Ghost Content API
-- **admin_create_member**: Create a new member via Ghost Admin API
 - **admin_delete_post**: Delete a post via Ghost Admin API
 
 

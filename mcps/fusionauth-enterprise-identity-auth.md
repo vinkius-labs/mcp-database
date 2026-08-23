@@ -38,57 +38,57 @@ Connect your **FusionAuth** instance to any AI agent to streamline identity mana
 - **create_group**: Create a new Group
 - **create_lambda**: Create a new Lambda
 - **create_tenant**: Create a new Tenant
-- **create_user**: Optionally provide a specific userId. Pass the user object in the JSON body.
-
-Create a new User in FusionAuth
 - **create_webhook**: Create a new Webhook
 - **delete_api_key**: Delete an API Key
 - **delete_group**: Delete a Group
-- **delete_lambda**: Delete a Lambda
-- **delete_tenant**: Delete a Tenant
 - **delete_user**: Delete a User
 - **delete_webhook**: Delete a Webhook
 - **disable_mfa**: Disable MFA for a User
-- **enable_mfa**: Enable MFA for a User
 - **generate_mfa_secret**: Generate an MFA Secret
 - **get_api_key**: Retrieve an API Key
-- **list_application_roles**: Retrieve all Roles for an Application
-- **list_applications**: Retrieve all Applications
-- **get_group**: Retrieve a Group
-- **get_identity_provider**: Retrieve an Identity Provider
-- **list_identity_providers**: Retrieve all Identity Providers
 - **get_lambda**: Retrieve a Lambda
 - **get_system_health**: Retrieve System Health
 - **get_system_status**: Retrieve System Status
 - **get_system_version**: Retrieve System Version
 - **get_tenant**: Retrieve a Tenant
-- **get_user**: Provide exactly one parameter.
-
-Retrieve a User from FusionAuth
 - **get_webhook**: Retrieve a Webhook
-- **idp_login**: Complete External Identity Provider Login
+- **list_application_roles**: Retrieve all Roles for an Application
+- **list_applications**: Retrieve all Applications
+- **list_identity_providers**: Retrieve all Identity Providers
 - **issue_jwt**: Issue a new JWT
 - **login**: Authenticate a User
-- **mfa_login**: Complete Multi-Factor Authentication Login
-- **patch_user**: Partially update an existing User
 - **register_user**: Register a User for an Application
-- **remove_group_member**: Remove a User from a Group
 - **revoke_refresh_tokens**: Revoke Refresh Tokens
-- **start_mfa**: Start an MFA flow
 - **update_api_key**: Update an API Key
-- **update_group**: Update a Group
 - **update_lambda**: Update a Lambda
 - **update_system_configuration**: Update System Configuration
-- **update_user**: Update an existing User
-- **update_webhook**: Update a Webhook
+- **refresh_jwt**: Refresh a JWT
+- **update_tenant**: Update a Tenant
+- **create_api_key**: Create a new API Key
 - **create_application**: Optionally provide a specific applicationId.
 
 Create a new Application
+- **create_user**: Optionally provide a specific userId. Pass the user object in the JSON body.
+
+Create a new User in FusionAuth
+- **delete_lambda**: Delete a Lambda
+- **delete_tenant**: Delete a Tenant
+- **enable_mfa**: Enable MFA for a User
 - **get_application**: Retrieve a specific Application
-- **refresh_jwt**: Refresh a JWT
-- **update_tenant**: Update a Tenant
+- **get_group**: Retrieve a Group
+- **get_identity_provider**: Retrieve an Identity Provider
+- **get_user**: Provide exactly one parameter.
+
+Retrieve a User from FusionAuth
+- **idp_login**: Complete External Identity Provider Login
+- **mfa_login**: Complete Multi-Factor Authentication Login
+- **patch_user**: Partially update an existing User
+- **remove_group_member**: Remove a User from a Group
+- **start_mfa**: Start an MFA flow
+- **update_group**: Update a Group
+- **update_user**: Update an existing User
+- **update_webhook**: Update a Webhook
 - **add_group_member**: Add a User to a Group
-- **create_api_key**: Create a new API Key
 - **create_application_role**: Create a new Application Role
 
 

@@ -36,9 +36,9 @@ Connect to the **Flickr** API to search one of the world's largest photo librari
 ## Available Tools (5)
 - **get_person_info**: Get information about a user
 - **get_photo_info**: Get detailed metadata for a photo
+- **test_echo**: A testing method that echoes back all passed parameters
 - **list_photosets**: Returns the albums (photosets) belonging to a user
 - **search_photos**: Search for photos on Flickr
-- **test_echo**: A testing method that echoes back all passed parameters
 
 
 ## 💬 Prompt Examples

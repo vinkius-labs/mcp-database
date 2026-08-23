@@ -35,15 +35,15 @@ Connect your **FlightAware AeroAPI** account to any AI agent to access global av
 
 ## Available Tools (8)
 - **get_airport_flights**: Get flights for a specific airport
-- **get_airport_weather**: Get current weather and forecasts for an airport
-- **get_flight_route**: Get the planned route for a specific flight
-- **get_flight_track**: Get the track (position history) for a specific flight
 - **get_flights**: g., flight number or registration).
 
 Get flights for a specific identifier
+- **get_flight_track**: Get the track (position history) for a specific flight
+- **get_airport_weather**: Get current weather and forecasts for an airport
+- **get_flight_route**: Get the planned route for a specific flight
 - **get_aircraft**: Get information about a specific aircraft
-- **get_operator_flights**: Get current and scheduled flights for an operator
 - **get_operator**: Get details about a specific operator (airline)
+- **get_operator_flights**: Get current and scheduled flights for an operator
 
 
 ## 💬 Prompt Examples

@@ -39,14 +39,14 @@ Connect your **Freesound** account to any AI agent and access the world's larges
 Download the original high-quality sound file
 - **get_me**: Get information about the currently authenticated OAuth2 user
 - **get_pack**: Get information about a sound pack
-- **get_pending_uploads**: Check status of sounds in moderation
 - **get_sound**: Get details for a specific sound
-- **get_user_sounds**: Get sounds uploaded by a specific user
+- **describe_sound**: Add metadata to an uploaded sound
+- **get_pending_uploads**: Check status of sounds in moderation
 - **get_user**: Get information about a Freesound user
+- **get_user_sounds**: Get sounds uploaded by a specific user
 - **search_sounds**: Supports Solr-style filters.
 
 Search for sounds on Freesound
-- **describe_sound**: Add metadata to an uploaded sound
 - **upload_sound**: Upload an audio file to Freesound
 
 

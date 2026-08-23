@@ -32,9 +32,9 @@ Connect to the **GeekJoke** API to fetch humorous content specifically tailored 
 
 
 ## Available Tools (3)
-- **get_random_joke**: Get a random geeky joke
 - **generate_random_joke**: Get a random geeky joke via POST
 - **get_metadata**: Get GeekJoke API metadata
+- **get_random_joke**: Get a random geeky joke
 
 
 ## 💬 Prompt Examples

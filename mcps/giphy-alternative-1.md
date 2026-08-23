@@ -35,30 +35,30 @@ Connect the **GIPHY** library to your AI agent to bring visual flair and persona
 ## Available Tools (22)
 - **search_suggestions**: Get search suggestions
 - **trending_searches**: Get trending search terms
-- **get_emojis**: Fetch GIPHY Emojis
 - **get_content**: Get Generalized Content
-- **get_gif**: Get GIF by ID
 - **get_gifs_by_ids**: Get GIFs by IDs
-- **random_gif**: Get a random GIF
 - **get_random_id**: Generate a Random ID
+- **random_gif**: Get a random GIF
 - **search_channels**: Search GIPHY Channels
+- **translate_gif**: Translate text to a GIF
+- **translate_sticker**: Translate text to a Sticker
+- **trending_stickers**: Get trending Stickers
+- **upload_gif**: Upload a GIF to GIPHY
+- **get_categories**: Get GIF Categories
+- **get_emoji_variations**: Fetch Emoji Variations
+- **autocomplete**: Autocomplete search terms
+- **get_emojis**: Fetch GIPHY Emojis
+- **get_gif**: Get GIF by ID
+- **random_sticker**: Get a random Sticker
 - **search_clips**: Requires approval via clips@giphy.com.
 
 Search GIPHY Clips
 - **search_gifs**: Search for GIFs
 - **search_stickers**: Search for Stickers
-- **translate_gif**: Translate text to a GIF
-- **translate_sticker**: Translate text to a Sticker
 - **trending_clips**: Requires approval via clips@giphy.com.
 
 Get trending GIPHY Clips
 - **trending_gifs**: Get trending GIFs
-- **trending_stickers**: Get trending Stickers
-- **upload_gif**: Upload a GIF to GIPHY
-- **autocomplete**: Autocomplete search terms
-- **get_categories**: Get GIF Categories
-- **get_emoji_variations**: Fetch Emoji Variations
-- **random_sticker**: Get a random Sticker
 
 
 ## 💬 Prompt Examples

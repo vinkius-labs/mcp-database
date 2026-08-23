@@ -34,57 +34,57 @@ Connect your **Fitbit** account to any AI agent and gain deep insights into your
 
 
 ## Available Tools (51)
-- **create_activity_log**: Create Activity Log
 - **create_alarm**: Create Alarm
 - **create_food_log**: Create Food Log
 - **create_water_log**: Create Water Log
-- **create_weight_log**: Create Weight Log
 - **delete_activity_log**: Delete Activity Log
-- **delete_alarm**: Delete Alarm
 - **delete_sleep_log**: Delete Sleep Log
 - **delete_weight_log**: Delete Weight Log
 - **get_activity_intraday**: Get Activity Intraday by Date
-- **get_activity_log_list**: Get Activity Log List
 - **get_activity_tcx**: Get Activity TCX
 - **get_blood_glucose**: Get Blood Glucose by Interval
-- **get_breathing_rate_by_date**: Get Breathing Rate Summary by Date
 - **get_daily_activity_summary**: Get Daily Activity Summary
 - **get_devices**: Get Devices
-- **get_food_log**: Get Food Log
 - **get_friends_leaderboard**: Get Friends Leaderboard
 - **get_heart_rate_by_date**: Get Heart Rate Time Series by Date
-- **get_heart_rate_by_interval**: Get Heart Rate Time Series by Date Range
 - **get_irn_profile**: Get IRN Profile
 - **get_profile**: Get Profile
 - **get_skin_temperature**: Get Temperature (Skin) Summary by Date
 - **get_sleep_log_by_date**: Get Sleep Log by Date
 - **get_sleep_log_by_interval**: Get Sleep Log by Date Range
 - **get_spo2_by_date**: Get SpO2 Summary by Date
-- **get_spo2_by_interval**: Get SpO2 Summary by Interval
 - **get_vo2_max**: Get VO2 Max Summary by Date
-- **get_water_log**: Get Water Log
-- **get_weight_log**: Get Weight Log
 - **introspect_token**: Introspect OAuth2 Token
 - **update_alarm**: Update Alarm
 - **update_profile**: Update Profile
-- **delete_subscription**: Delete Subscription
-- **get_breathing_rate_by_interval**: Get Breathing Rate Summary by Interval
 - **get_ecg_log_list**: Get ECG Log List
+- **get_breathing_rate_by_interval**: Get Breathing Rate Summary by Interval
 - **get_heart_rate_intraday**: Get Heart Rate Intraday by Date
 - **get_hrv_by_date**: Get HRV Summary by Date
-- **get_hrv_by_interval**: Get HRV Summary by Interval
 - **get_irn_alerts**: Get IRN Alerts List
-- **create_sleep_log**: Create Sleep Log
 - **create_subscription**: Create Subscription
 - **get_alarms**: Get Alarms
-- **get_azm_by_date**: Get Active Zone Minutes Time Series by Date
 - **get_azm_by_interval**: Get Active Zone Minutes Time Series by Interval
 - **get_badges**: Get Badges
 - **get_body_goals**: Get Body Goals
 - **get_core_temperature**: Get Temperature (Core) Summary by Date
-- **get_friends**: Get Friends
-- **get_subscription_list**: Get Subscription List
 - **create_activity_goal**: Create Activity Goal
+- **create_activity_log**: Create Activity Log
+- **create_sleep_log**: Create Sleep Log
+- **create_weight_log**: Create Weight Log
+- **delete_alarm**: Delete Alarm
+- **delete_subscription**: Delete Subscription
+- **get_activity_log_list**: Get Activity Log List
+- **get_azm_by_date**: Get Active Zone Minutes Time Series by Date
+- **get_breathing_rate_by_date**: Get Breathing Rate Summary by Date
+- **get_food_log**: Get Food Log
+- **get_friends**: Get Friends
+- **get_heart_rate_by_interval**: Get Heart Rate Time Series by Date Range
+- **get_hrv_by_interval**: Get HRV Summary by Interval
+- **get_spo2_by_interval**: Get SpO2 Summary by Interval
+- **get_subscription_list**: Get Subscription List
+- **get_water_log**: Get Water Log
+- **get_weight_log**: Get Weight Log
 
 
 ## 💬 Prompt Examples

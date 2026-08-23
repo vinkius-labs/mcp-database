@@ -33,6 +33,10 @@ Connect your **Firebase** project to any AI agent to manage your backend infrast
 
 
 ## Available Tools (14)
+- **rtdb_get**: Read data from Firebase Realtime Database
+- **rtdb_push**: Push data to Firebase Realtime Database (appends)
+- **auth_lookup**: Get user data from Firebase Auth
+- **auth_sign_in**: Sign in a user with email and password
 - **auth_sign_up**: Sign up a new user or sign in anonymously
 - **fcm_send_message**: Send a message via Firebase Cloud Messaging
 - **firestore_create_doc**: If documentId is omitted, Firestore generates one.
@@ -43,12 +47,8 @@ Create a new document in Cloud Firestore
 - **firestore_list_docs**: List documents in a Cloud Firestore collection
 - **firestore_patch_doc**: Update or insert a document in Cloud Firestore
 - **rtdb_delete**: Delete data from Firebase Realtime Database
-- **rtdb_get**: Read data from Firebase Realtime Database
 - **rtdb_patch**: Update specific children in Firebase Realtime Database
-- **rtdb_push**: Push data to Firebase Realtime Database (appends)
 - **rtdb_put**: Write data to Firebase Realtime Database (overwrites)
-- **auth_sign_in**: Sign in a user with email and password
-- **auth_lookup**: Get user data from Firebase Auth
 
 
 ## 💬 Prompt Examples

@@ -41,26 +41,26 @@ Convert a lead to a contact
 - **create_appointment**: Create an appointment
 - **create_contact**: Create a new contact
 - **create_deal**: Create a new deal
-- **create_lead**: Provide at least a first name or email.
-
-Create a new lead in Freshsales
 - **create_note**: Create a note for a record
 - **create_task**: Create a task
-- **get_account**: View a specific sales account
 - **get_contact**: View a specific contact
-- **get_deal**: View a specific deal
-- **get_lead**: View a specific lead
 - **list_deal_stages**: Fetch deal stages
-- **list_lead_sources**: Fetch lead sources
-- **search_global**: Global search across entities
 - **search_lookup**: Lookup search for specific fields
 - **update_contact**: Update an existing contact
-- **update_lead**: Update an existing lead
 - **list_industry_types**: Fetch industry types
 - **list_leads**: Use filters API to get view_id if unknown.
 
 List all leads in a specific view
 - **list_owners**: Fetch all users/owners
+- **create_lead**: Provide at least a first name or email.
+
+Create a new lead in Freshsales
+- **get_account**: View a specific sales account
+- **get_deal**: View a specific deal
+- **get_lead**: View a specific lead
+- **list_lead_sources**: Fetch lead sources
+- **search_global**: Global search across entities
+- **update_lead**: Update an existing lead
 
 
 ## 💬 Prompt Examples

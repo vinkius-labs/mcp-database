@@ -35,18 +35,18 @@ Connect the **Giant Bomb** encyclopedia to your AI agent to unlock deep insights
 
 
 ## Available Tools (9)
-- **get_character**: Retrieve details for a specific character
-- **get_company**: Retrieve details for a specific company
-- **get_platform**: Retrieve details for a specific platform
-- **list_characters**: Retrieve a list of characters
 - **list_companies**: Retrieve a list of companies
-- **list_games**: Use filters to narrow down results.
-
-Retrieve a list of games
 - **list_platforms**: ).
 
 Retrieve a list of gaming platforms
+- **get_character**: Retrieve details for a specific character
+- **get_company**: Retrieve details for a specific company
 - **get_game**: Retrieve details for a specific game
+- **get_platform**: Retrieve details for a specific platform
+- **list_characters**: Retrieve a list of characters
+- **list_games**: Use filters to narrow down results.
+
+Retrieve a list of games
 - **search**: Search across multiple resources
 
 
