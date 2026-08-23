@@ -24,18 +24,18 @@ Get aggregated rating summary for an eBay item
 - **get_item_reviews**: Returns rating (1-5), review text, reviewer name, and date. Use this to assess product quality and customer satisfaction before buying.
 
 Get customer reviews and ratings for a specific eBay item
-- **get_merchant_item_details**: Similar to get_item_details but with merchant-focused data. Use this for inventory research.
-
-Get item details from the merchant perspective
-- **search_items**: Returns a list of matching items with title, price, condition, image URL, and item ID. Use optional parameters: limit (max 10), offset (pagination), sort (BestMatch, price, etc.). Ideal for finding products, comparing prices, or discovering available inventory.
-
-Search for items on eBay by keyword, brand, or product name
 - **search_by_image**: Useful when you know what something looks like but not its name or model. Returns visually similar items with prices and details.
 
 Search eBay for visually similar items using an image URL
+- **get_merchant_item_details**: Similar to get_item_details but with merchant-focused data. Use this for inventory research.
+
+Get item details from the merchant perspective
 - **search_by_category**: g., Electronics, Fashion, Motors). Requires categoryId from get_categories endpoint. Useful for browsing specific sections of eBay.
 
 Search for items within a specific eBay category
+- **search_items**: Returns a list of matching items with title, price, condition, image URL, and item ID. Use optional parameters: limit (max 10), offset (pagination), sort (BestMatch, price, etc.). Ideal for finding products, comparing prices, or discovering available inventory.
+
+Search for items on eBay by keyword, brand, or product name
 - **get_item_compatibility**: Essential for auto parts buyers to verify fitment before purchase.
 
 Get vehicle compatibility information for an auto parts listing

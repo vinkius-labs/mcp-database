@@ -20,21 +20,21 @@ Generic AI prompts telling users to 'drink 8 glasses of water' represent outdate
 
 
 ## Available Tools (5)
+- **get_climate_hydration_modifier**: g. cold, tropical).
+
+Retrieves the exact thermal water penalty (in ml) caused by specific environmental climates
+- **calculate_hydration_schedule**: Provide totalMl and optionally wakeTimeStr and sleepTimeStr.
+
+Distributes a specified total water volume evenly across waking hours into specific physiological milestones
+- **calculate_full_hydration_plan**: Requires weightKg, and accepts optional physical/climate/time modifiers.
+
+Computes optimal physiological hydration targets and synthesizes a complete circadian fluid distribution schedule in one step
 - **calculate_hydration_target**: Provide weight in kg. Activity level defaults to sedentary and climate to temperate.
 
 Calculates the daily water volume requirement based on body mass, physical exertion, and thermal environment
 - **get_activity_hydration_modifier**: g. sedentary, athlete).
 
 Retrieves the exact biological water penalty (in ml) caused by specific physical exertion levels
-- **get_climate_hydration_modifier**: g. cold, tropical).
-
-Retrieves the exact thermal water penalty (in ml) caused by specific environmental climates
-- **calculate_full_hydration_plan**: Requires weightKg, and accepts optional physical/climate/time modifiers.
-
-Computes optimal physiological hydration targets and synthesizes a complete circadian fluid distribution schedule in one step
-- **calculate_hydration_schedule**: Provide totalMl and optionally wakeTimeStr and sleepTimeStr.
-
-Distributes a specified total water volume evenly across waking hours into specific physiological milestones
 
 
 ## 💬 Prompt Examples

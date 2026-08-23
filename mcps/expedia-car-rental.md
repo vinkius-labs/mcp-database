@@ -36,12 +36,12 @@ Your agent becomes a personal car rental assistant — finding the best deals ac
 
 
 ## Available Tools (8)
-- **cancel_itinerary**: Returns cancellation confirmation and any applicable refund details based on the rental supplier cancellation policy. Some bookings may incur cancellation fees if cancelled outside the free cancellation window. Always verify the itinerary details before cancelling.
-
-Cancel an existing car rental reservation
 - **get_car_details**: Use the car ID returned from the search_cars tool.
 
 Get detailed information for a specific rental car offer
+- **cancel_itinerary**: Returns cancellation confirmation and any applicable refund details based on the rental supplier cancellation policy. Some bookings may incur cancellation fees if cancelled outside the free cancellation window. Always verify the itinerary details before cancelling.
+
+Cancel an existing car rental reservation
 - **get_car_images**: Includes exterior shots, interior views, and representative images of the vehicle class. Helps users visually confirm the type of vehicle they are considering renting. Use the car ID from search results or car details.
 
 Get images for a specific rental car vehicle

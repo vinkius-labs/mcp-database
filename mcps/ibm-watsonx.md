@@ -19,19 +19,19 @@ Generate chat completions using a watsonx chat model
 - **generate_embeddings**: Useful for similarity search, clustering, and semantic analysis.
 
 Generate vector embeddings for input texts
-- **generate_text**: Use this for single-turn text generation tasks like content creation, summarization, or analysis.
-
-Generate text using a watsonx foundation model
 - **get_model_details**: Get detailed specifications for a specific foundation model
-- **get_tuning_status**: Get the status of a prompt tuning job
 - **list_models**: ai, including model IDs, families, capabilities, and lifecycle states.
 
 List available foundation models in watsonx
+- **get_tuning_status**: Get the status of a prompt tuning job
 - **list_projects**: List watsonx projects in your account
 - **list_prompts**: List saved prompts in the watsonx project
 - **start_model_tuning**: Requires a URL pointing to the training data in cloud storage.
 
 Start a prompt tuning job for a foundation model
+- **generate_text**: Use this for single-turn text generation tasks like content creation, summarization, or analysis.
+
+Generate text using a watsonx foundation model
 
 
 

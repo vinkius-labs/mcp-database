@@ -12,15 +12,15 @@ Connect Lancerkit to any AI agent via MCP.
 
 
 ## Available Tools (10)
-- **get_client**: Retrieve specific metadata of one single client
 - **get_invoice**: Retrieve data, payments, and billings for a specific invoice string ID
 - **get_project**: Get a single project details by ID
 - **get_status**: Examine account and integration connection status overall
 - **get_time_logs**: Check the recorded time logs for hours spent
 - **list_clients**: List all clients associated with the workspace
 - **list_invoices**: Fetch globalThis invoice pipeline statistics
-- **list_projects**: List all standard projects
 - **list_services**: Fetch all specific billable service items configured online
+- **get_client**: Retrieve specific metadata of one single client
+- **list_projects**: List all standard projects
 - **list_tasks**: Check current working tasks
 
 

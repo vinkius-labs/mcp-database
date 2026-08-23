@@ -14,12 +14,12 @@ Connect IBM Quantum to any AI agent via MCP.
 ## Available Tools (8)
 - **cancel_job**: Cancel a quantum job
 - **get_backend_details**: Get details for a specific quantum backend
-- **get_job_result**: Get the result of a quantum job
-- **get_job_details**: Get details for a specific quantum job
 - **list_backends**: List available quantum backends (devices)
-- **list_jobs**: List quantum jobs
+- **get_job_result**: Get the result of a quantum job
 - **list_providers**: List IBM Quantum providers
 - **submit_job**: Submit a quantum job
+- **get_job_details**: Get details for a specific quantum job
+- **list_jobs**: List quantum jobs
 
 
 

@@ -33,11 +33,11 @@ Connect to the **Valencia Open Data portal (Gobierno Abierto)** to explore publi
 
 
 ## Available Tools (5)
-- **search_datastore**: Search for data within a specific resource
-- **list_groups**: List dataset groups (categories)
-- **show_package**: Get metadata for a specific dataset
-- **list_packages**: List all dataset names
 - **show_resource**: Get metadata for a specific resource
+- **list_groups**: List dataset groups (categories)
+- **list_packages**: List all dataset names
+- **search_datastore**: Search for data within a specific resource
+- **show_package**: Get metadata for a specific dataset
 
 
 ## 💬 Prompt Examples

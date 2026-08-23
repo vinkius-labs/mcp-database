@@ -29,12 +29,12 @@ The **AppFollow MCP Server** brings powerful app store intelligence directly to 
 
 
 ## Available Tools (8)
-- **get_account_check**: Verify AppFollow account connection
 - **get_app_info**: Retrieve basic information about an app from AppFollow
-- **get_rankings**: Track app rankings in store charts
-- **get_ratings_history**: Get historical rating data over a period of time
 - **get_ratings**: Get current star rating distribution
+- **get_ratings_history**: Get historical rating data over a period of time
 - **get_reviews_ai_summary**: Get an AI-generated summary of recent user reviews
+- **get_account_check**: Verify AppFollow account connection
+- **get_rankings**: Track app rankings in store charts
 - **get_reviews_summary**: Get a summary of reviews and average rating
 - **list_reviews**: List app reviews for a specific app store product
 

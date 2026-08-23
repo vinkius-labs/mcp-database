@@ -37,33 +37,33 @@ Epic is the world's most widely used electronic health record system, serving ov
 
 
 ## Available Tools (10)
-- **list_immunizations**: Includes vaccine type (CVX code), administration date, dose, site, and lot number.
-
-List immunizations
 - **get_patient**: Returns name, DOB, gender, race, ethnicity, address, phone, email, and all identifiers.
 
 Get patient details by ID
+- **list_immunizations**: Includes vaccine type (CVX code), administration date, dose, site, and lot number.
+
+List immunizations
 - **list_encounters**: Includes encounter type, period, reason, and location.
 
 List patient encounters/visits
-- **list_observations**: Filter by category: vital-signs, laboratory, social-history. Includes values, units, reference ranges, and interpretation.
-
-List clinical observations
 - **list_medications**: Includes medication name, dosage, frequency, route, prescriber, and status.
 
 List medication requests
-- **list_allergies**: Includes substance, reaction type, severity, and clinical status.
-
-List allergies and intolerances
 - **list_appointments**: Includes date/time, provider, location, and status.
 
 List patient appointments
 - **list_diagnostic_reports**: Includes report type, results, conclusion, and performing organization.
 
 List diagnostic reports
+- **list_allergies**: Includes substance, reaction type, severity, and clinical status.
+
+List allergies and intolerances
 - **list_conditions**: Includes ICD-10 codes, clinical status, verification status, onset date, and severity.
 
 List diagnoses and conditions
+- **list_observations**: Filter by category: vital-signs, laboratory, social-history. Includes values, units, reference ranges, and interpretation.
+
+List clinical observations
 - **search_patients**: Returns patient demographics including name, DOB, gender, address, and identifiers.
 
 Search patients by name, DOB, or MRN

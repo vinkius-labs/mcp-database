@@ -35,9 +35,6 @@ Connect to **The Guardian Open Platform** and unlock programmatic access to one 
 
 
 ## Available Tools (10)
-- **search_by_tag**: g. "technology/artificial-intelligence", "tone/features"). Supports pagination.
-
-Browse content tagged with a specific Guardian tag
 - **get_item**: g. "world/2026/apr/08/example-article").
 
 Get the full content of a specific Guardian article or item
@@ -52,6 +49,9 @@ List all editorial sections available on The Guardian
 - **list_tags**: Filter by query, section, or tag type (keyword, series, contributor, tone, type, blog).
 
 List tags used to categorize Guardian content
+- **search_by_tag**: g. "technology/artificial-intelligence", "tone/features"). Supports pagination.
+
+Browse content tagged with a specific Guardian tag
 - **search_by_date_range**: Useful for historical research or tracking recent events.
 
 Search Guardian content within a specific date range

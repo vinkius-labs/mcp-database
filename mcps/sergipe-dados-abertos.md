@@ -33,10 +33,10 @@ Connect to the **Sergipe Transparency Portal** and query official government dat
 
 
 ## Available Tools (4)
-- **get_orcamento**: Get budget data (Orçamento)
 - **get_receitas**: Get state revenues (Receitas)
 - **get_servidores**: Get personnel information (Servidores)
 - **get_despesas**: Get state expenditures (Despesas)
+- **get_orcamento**: Get budget data (Orçamento)
 
 
 ## 💬 Prompt Examples

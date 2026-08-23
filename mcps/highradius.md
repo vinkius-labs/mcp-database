@@ -34,15 +34,16 @@ HighRadius is a leading Order-to-Cash automation platform used by enterprises to
 
 
 ## Available Tools (11)
-- **get_cash_application_status**: Get the current status of the cash application process
 - **create_dispute**: Body should include invoice_id, reason, and amount.
 
 Create a new dispute record
+- **get_cash_application_status**: Get the current status of the cash application process
+- **get_customer**: Get details of a specific customer
 - **list_customers**: List all customers in the system
+- **get_payment**: Get details of a specific payment
+- **get_invoice**: Get details of a specific invoice
 - **list_deductions**: List all deductions in the system
 - **list_disputes**: List all disputes in the system
-- **get_customer**: Get details of a specific customer
-- **get_payment**: Get details of a specific payment
 - **list_invoices**: Use this to get an overview of outstanding receivables.
 
 List all invoices in the system
@@ -50,7 +51,6 @@ List all invoices in the system
 - **reconcile_payment**: Provide the payment ID and an array of invoice IDs to reconcile.
 
 Reconcile a payment against one or more invoices
-- **get_invoice**: Get details of a specific invoice
 
 
 ## 💬 Prompt Examples

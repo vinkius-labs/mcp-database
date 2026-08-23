@@ -44,15 +44,15 @@ Get the latest public posts for a specific hashtag on Mastodon
 - **get_public_timeline**: Use to monitor the real-time conversation pulse of the Fediverse — the open, decentralized social network preferred by journalists, academics, and tech professionals.
 
 Get the latest public posts from Mastodon in real time
+- **get_trending_hashtags**: Mastodon trends are algorithm-free and purely usage-based, making them a reliable signal of genuine community interest.
+
+Get trending hashtags on Mastodon right now with weekly history
 - **get_trending_links**: Extremely valuable for content research — it shows what external content the Fediverse community is actively spreading, indicating editorial relevance.
 
 Get the most-shared external links (articles, news) on Mastodon right now
 - **get_trending_posts**: Use for content inspiration, sentiment analysis on tech, journalism, and political topics, and understanding what messages spread organically in open social networks.
 
 Get the most boosted and favourited posts on Mastodon right now
-- **get_trending_hashtags**: Mastodon trends are algorithm-free and purely usage-based, making them a reliable signal of genuine community interest.
-
-Get trending hashtags on Mastodon right now with weekly history
 
 
 ## 💬 Prompt Examples
