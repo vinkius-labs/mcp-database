@@ -44,6 +44,15 @@ No more navigating the Metro website or manually checking train and bus times. Y
 
 
 ## Available Tools (12)
+- **get_bus_stops**: Returns stop IDs, names, geographic coordinates (latitude, longitude), route affiliations, and any service messages or alerts associated with each stop. Essential for stop discovery, journey planning, accessibility mapping, and understanding bus network geography across Los Angeles County. AI agents should use this when users ask "list all stops on the 720 Rapid", "find bus stops near Union Station", or need to identify stop IDs for use in prediction queries. If no route_id is provided, returns all stops system-wide.
+
+List all Metrobus stops or stops on a specific bus route
+- **get_rail_vehicle_positions**: Returns train identifiers, line affiliations, latitude/longitude coordinates, heading direction, run/trip IDs, and prediction status. Essential for real-time rail tracking, train location awareness, and understanding train distribution across the network. AI agents should use this when users ask "where are the Red Line trains right now", "track train positions on the Expo Line", or need to visualize train locations for operational monitoring or passenger information.
+
+Get real-time positions of Metro Rail trains
+- **get_service_alerts**: Returns alert descriptions, affected routes and stations, severity levels, start and end timestamps, cause types (maintenance, incident, weather, special events), and alternative service recommendations. Essential for service disruption awareness, alternative route planning, passenger communication, and understanding system reliability. AI agents should use this when users ask "are there any delays on the Red Line", "is Metro running normally today", or need to check service reliability before planning Metro journeys.
+
+Get current service alerts and disruptions across the LA Metro system
 - **get_bus_locations**: Returns vehicle IDs, route IDs, latitude/longitude coordinates, heading direction, seconds since last report, predictability indicators, and trip/run identifiers. Can query all buses system-wide or filter by specific route ID for targeted route-level tracking. Essential for real-time bus fleet monitoring, passenger arrival estimation, route-level service awareness, and transit operations management. AI agents should reference this when users ask "show me all buses on route 720", "where are the active buses right now", or need real-time bus position data for fleet visualization or arrival prediction.
 
 Get real-time bus locations system-wide or for a specific route
@@ -53,18 +62,12 @@ List all Metrobus routes in the LA Metro system
 - **get_bus_schedule**: Returns run IDs, direction information (inbound/outbound, eastbound/westbound), stop sequences, and scheduled timing data. Essential for schedule analysis, journey planning at specific times, understanding route direction patterns, and passenger trip preparation. AI agents should use this when users ask "show me the schedule for route 720", "what are the run patterns for the 4 line", or need detailed schedule data for a specific bus route to plan trips at specific times.
 
 Get the schedule for a specific Metrobus route
-- **get_bus_stops**: Returns stop IDs, names, geographic coordinates (latitude, longitude), route affiliations, and any service messages or alerts associated with each stop. Essential for stop discovery, journey planning, accessibility mapping, and understanding bus network geography across Los Angeles County. AI agents should use this when users ask "list all stops on the 720 Rapid", "find bus stops near Union Station", or need to identify stop IDs for use in prediction queries. If no route_id is provided, returns all stops system-wide.
-
-List all Metrobus stops or stops on a specific bus route
 - **get_bus_vehicles**: Returns vehicle IDs, route affiliations, latitude/longitude coordinates, heading direction, seconds since last report, predictability indicators (whether the vehicle is running on predicted schedule or actual GPS), and run/trip identifiers. Essential for real-time bus tracking, passenger wait time estimation, bus arrival prediction, and fleet monitoring. AI agents should use this when users ask "where are the buses right now", "track vehicle 1234", or need to locate specific Metrobus vehicles for real-time arrival awareness.
 
 Get real-time locations of active Metrobus vehicles
 - **get_rail_arrivals**: Returns predicted arrival times, train destination names, line colors (Red, Purple, Blue, Expo, Green, Gold, K), direction indicators, and train run identifiers. Essential for real-time rail arrival awareness, passenger waiting time estimation, connection planning, and station-level trip timing. AI agents should reference this when users ask "when is the next Red Line train at Union Station", "show upcoming trains at 7th Street/Metro Center", or need station-specific Metro Rail arrival predictions. Station IDs can be found using get_rail_stations.
 
 Get next train arrival predictions at a specific Metro Rail station
-- **get_rail_vehicle_positions**: Returns train identifiers, line affiliations, latitude/longitude coordinates, heading direction, run/trip IDs, and prediction status. Essential for real-time rail tracking, train location awareness, and understanding train distribution across the network. AI agents should use this when users ask "where are the Red Line trains right now", "track train positions on the Expo Line", or need to visualize train locations for operational monitoring or passenger information.
-
-Get real-time positions of Metro Rail trains
 - **get_rail_routes**: Essential for line identification, rail network understanding, service area analysis, and identifying line IDs for use in rail journey planning. AI agents should reference this when users ask "list all Metro Rail lines", "what lines does Metro operate", or need line metadata for rail network context.
 
 List all Metro Rail lines and routes
@@ -74,9 +77,6 @@ List all Metro Rail stations with details
 - **get_rail_to_rail**: Returns recommended routes, transfer stations, estimated travel times, number of transfers, line sequences, and step-by-step rail directions. Essential for rail trip planning, transfer identification, travel time estimation, and understanding rail connectivity across the Metro network. AI agents should use this when users ask "how do I get from North Hollywood to Santa Monica by rail", "plan a rail trip from Union Station to LAX", or need rail-only journey planning between two Metro Rail stations. Station IDs can be found using get_rail_stations.
 
 Get rail-to-rail journey planning between two Metro Rail stations
-- **get_service_alerts**: Returns alert descriptions, affected routes and stations, severity levels, start and end timestamps, cause types (maintenance, incident, weather, special events), and alternative service recommendations. Essential for service disruption awareness, alternative route planning, passenger communication, and understanding system reliability. AI agents should use this when users ask "are there any delays on the Red Line", "is Metro running normally today", or need to check service reliability before planning Metro journeys.
-
-Get current service alerts and disruptions across the LA Metro system
 - **get_stop_predictions**: Returns predicted arrival times in minutes and seconds, route IDs, run IDs, direction information, departure indicators, and prediction confidence levels. Essential for real-time bus arrival awareness, passenger waiting time estimation, trip timing, and connection coordination. AI agents should reference this when users ask "when is the next bus at stop 5678", "show predictions for this stop", or need real-time arrival data for a specific bus stop. Stop IDs can be found using get_bus_stops.
 
 Get next bus arrival predictions for a specific bus stop

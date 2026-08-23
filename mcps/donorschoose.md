@@ -33,16 +33,16 @@ Integrate **DonorsChoose**, the leading crowdfunding platform for public school 
 
 
 ## Available Tools (10)
-- **get_donorschoose_api_metadata**: Retrieve metadata for the current API connection
-- **get_classroom_project_details**: Get detailed information for a specific classroom project
-- **quick_regional_funding_audit**: Retrieve a high-level summary of active projects in a region
 - **list_high_poverty_needs**: Identify projects from schools in high-poverty areas
 - **list_latest_classroom_proposals**: List the most recently posted classroom projects
+- **list_urgent_funding_needs**: Identify projects that are close to their expiration or have high urgency
+- **quick_regional_funding_audit**: Retrieve a high-level summary of active projects in a region
+- **search_classroom_projects**: Search for DonorsChoose classroom projects using keywords
+- **get_classroom_project_details**: Get detailed information for a specific classroom project
+- **get_donorschoose_api_metadata**: Retrieve metadata for the current API connection
 - **list_projects_by_state**: List classroom projects in a specific US state (e.g., NY, CA)
 - **list_projects_by_subject**: List projects filtered by subject area (e.g., Literacy, Math)
-- **list_urgent_funding_needs**: Identify projects that are close to their expiration or have high urgency
 - **search_projects_by_zipcode**: Search for classroom projects within a specific US ZIP code
-- **search_classroom_projects**: Search for DonorsChoose classroom projects using keywords
 
 
 ## 💬 Prompt Examples

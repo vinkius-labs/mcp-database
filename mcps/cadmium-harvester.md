@@ -35,9 +35,9 @@ Connect your **Cadmium Education Harvester** account to any AI agent and orchest
 
 
 ## Available Tools (7)
+- **list_presentation_assets**: List files and assets associated with a presentation
 - **get_account_info**: Retrieve core account information
 - **get_presenter_details**: Get details of a specific presenter
-- **list_presentation_assets**: List files and assets associated with a presentation
 - **list_presenters**: List all presenters/speakers for the event
 - **get_event_details**: Retrieve core event information
 - **list_presentations**: List all presentations for the event

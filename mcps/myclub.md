@@ -27,14 +27,14 @@ Connect your **myClub** account to empower your AI agents with club management c
 
 
 ## Available Tools (8)
-- **list_invoices**: List club invoices
-- **get_event**: Get details for a specific event
-- **get_invoice**: Get details for a specific invoice
 - **get_member**: Get details for a specific member
 - **list_cards**: List member cards
 - **list_events**: List club events
-- **list_members**: List all club members
 - **list_merits**: List club merits
+- **get_event**: Get details for a specific event
+- **get_invoice**: Get details for a specific invoice
+- **list_invoices**: List club invoices
+- **list_members**: List all club members
 
 
 ## 💬 Prompt Examples

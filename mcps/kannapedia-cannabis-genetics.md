@@ -32,16 +32,16 @@ Kannapedia is a specialized resource for cannabis genetics, providing structured
 
 
 ## Available Tools (4)
-- **search_genetics**: Use this to discover specific genetics in the Kannapedia database.
-
-Search cannabis strains by name or keyword
-- **search_by_terpene**: g., Myrcene, Limonene).
-
-Search strains by dominant terpene
 - **search_by_effect**: g., Relaxed, Energetic, Sleepy).
 
 Search strains by reported effect
 - **get_strain_detail**: Get detailed information for a specific strain
+- **search_by_terpene**: g., Myrcene, Limonene).
+
+Search strains by dominant terpene
+- **search_genetics**: Use this to discover specific genetics in the Kannapedia database.
+
+Search cannabis strains by name or keyword
 
 
 ## 💬 Prompt Examples

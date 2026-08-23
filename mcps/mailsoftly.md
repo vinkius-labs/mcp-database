@@ -34,14 +34,14 @@ Connect your **Mailsoftly** account to any AI agent to automate your email marke
 
 
 ## Available Tools (8)
+- **get_campaign_click_data**: Retrieve click engagement for a sent campaign
 - **add_contact_to_list**: Requires email and contact_list ID.
 
 Subscribe a contact to a specific list
-- **get_campaign_click_data**: Retrieve click engagement for a sent campaign
 - **list_marketing_campaigns**: List all marketing campaigns
 - **get_campaign_details**: Get details for a specific campaign
-- **send_campaign_to_all**: Trigger the send process for a campaign
 - **list_sent_history**: List campaigns that have been sent
+- **send_campaign_to_all**: Trigger the send process for a campaign
 - **create_base_contact**: Requires email.
 
 Add a new contact to the database

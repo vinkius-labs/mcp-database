@@ -36,10 +36,10 @@ Connect your **Casting42** account to any AI agent and take full control of your
 
 
 ## Available Tools (8)
+- **list_talent_media**: List headshots, videos, and media for a specific talent
 - **get_talent_details**: Get detailed information for a specific talent
 - **list_talent_categories**: List configured talent categories
 - **list_custom_attributes**: List custom data fields defined in the database
-- **list_talent_media**: List headshots, videos, and media for a specific talent
 - **list_casting_projects**: List casting projects
 - **list_talent_tags**: List tags used for talent organization
 - **list_talents**: List talents from the database

@@ -36,12 +36,12 @@ Connect your **Cardly** account to any AI agent and orchestrate your personalize
 
 ## Available Tools (9)
 - **add_contact_to_list**: Add a new contact to a specific list
+- **place_greeting_card_order**: Place a real order for a physical greeting card
 - **find_contact**: Search for a contact in a list by email
 - **get_account_info**: Retrieve core account information
 - **get_artwork_details**: Get details of a specific piece of artwork
 - **list_card_artwork**: List available greeting card designs/artwork
 - **list_contact_lists**: List all contact lists in your account
-- **place_greeting_card_order**: Place a real order for a physical greeting card
 - **preview_greeting_card**: Generate a preview of a greeting card without placing a real order
 - **verify_api_connection**: Verify connectivity and API key validity
 

@@ -34,15 +34,15 @@ Global Wine Score aggregates ratings from **Parker (Wine Advocate), Wine Spectat
 
 
 ## Available Tools (6)
+- **scores_by_color**: Returns top-rated wines of that style, sorted by score. Perfect for "what are the best white wines right now?"
+
+Get scores by wine color
 - **get_latest_scores**: ). Each score is a confidence-weighted average out of 100, with vintage and regional context.
 
 Get latest wine scores
 - **search_wine_scores**: Returns all matching wines with their normalized score (0-100), confidence index, vintage, color, country, and regions. The primary tool for answering "what score did X get?"
 
 Search scores for a wine
-- **scores_by_color**: Returns top-rated wines of that style, sorted by score. Perfect for "what are the best white wines right now?"
-
-Get scores by wine color
 - **scores_by_country**: Returns top-rated wines from that country. For regional exploration and comparison.
 
 Get scores by country

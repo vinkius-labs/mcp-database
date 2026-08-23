@@ -28,15 +28,15 @@ Connect your **MeetingPulse** account to any AI agent and take full control of y
 
 
 ## Available Tools (10)
-- **get_meeting**: Get details for a specific meeting
 - **get_account_info**: Get account information
 - **get_meeting_analytics**: Get meeting analytics
-- **get_poll_details**: Get details for a specific poll
-- **list_attendees**: List meeting attendees
 - **list_meeting_files**: List files shared in a meeting
 - **list_meetings**: List all meetings
 - **list_polls**: List polls for a meeting
 - **list_qa_sessions**: List Q&A sessions
+- **get_meeting**: Get details for a specific meeting
+- **get_poll_details**: Get details for a specific poll
+- **list_attendees**: List meeting attendees
 - **search_meetings**: Search meetings by term
 
 

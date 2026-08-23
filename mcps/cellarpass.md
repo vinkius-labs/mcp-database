@@ -29,26 +29,26 @@ Connect your **CellarPass** tasting room to any AI agent and transform how you m
 
 
 ## Available Tools (8)
-- **search_guests**: Returns visit history, favorite experiences, spending, and VIP status. For personalized hospitality.
-
-Search guests
-- **list_reservations**: Filter by date for daily planning. THE core tool for tasting room managers — "Who's coming today?"
-
-List tasting reservations
-- **get_reservation**: For pre-visit preparation.
-
-Get reservation details
 - **list_experiences**: With pricing, duration, capacity, and description.
 
 List tasting experiences
-- **get_experience**: Get experience details
-- **check_availability**: Essential for booking coordination.
+- **list_reservations**: Filter by date for daily planning. THE core tool for tasting room managers — "Who's coming today?"
 
-Check booking availability
+List tasting reservations
+- **get_experience**: Get experience details
+- **get_venue**: Get venue details
 - **list_venues**: For multi-location wineries.
 
 List tasting venues
-- **get_venue**: Get venue details
+- **check_availability**: Essential for booking coordination.
+
+Check booking availability
+- **get_reservation**: For pre-visit preparation.
+
+Get reservation details
+- **search_guests**: Returns visit history, favorite experiences, spending, and VIP status. For personalized hospitality.
+
+Search guests
 
 
 ## 💬 Prompt Examples

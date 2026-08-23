@@ -20,8 +20,8 @@ The **FCC Broadcaster MCP Server** ties your AI agent directly into the operatio
 
 
 ## Available Tools (2)
-- **get_tv_station_details**: Search for a public US Television broadcast station by Call Sign
 - **get_fm_station_details**: Search for an FM radio broadcast station in the US by Call Sign
+- **get_tv_station_details**: Search for a public US Television broadcast station by Call Sign
 
 
 ## 💬 Prompt Examples

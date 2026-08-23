@@ -15,14 +15,14 @@ Empower your AI agents to navigate US geography with precision. This MCP server 
 
 ## Available Tools (10)
 - **cbsa_to_zip**: Maps CBSAs to ZIP codes
+- **tract_to_zip**: Maps Census Tracts to ZIP codes
+- **zip_to_cbsa**: Maps ZIP codes to Core Based Statistical Areas (CBSA)
+- **zip_to_cd**: Maps ZIP codes to Congressional Districts
+- **zip_to_county**: Maps ZIP codes to Counties
 - **cbsadiv_to_zip**: Maps CBSA Divisions to ZIP codes
 - **cd_to_zip**: Maps Congressional Districts to ZIP codes
 - **county_to_zip**: Maps Counties to ZIP codes
-- **tract_to_zip**: Maps Census Tracts to ZIP codes
-- **zip_to_cbsa**: Maps ZIP codes to Core Based Statistical Areas (CBSA)
 - **zip_to_cbsadiv**: Maps ZIP codes to CBSA Divisions
-- **zip_to_cd**: Maps ZIP codes to Congressional Districts
-- **zip_to_county**: Maps ZIP codes to Counties
 - **zip_to_tract**: Maps ZIP codes to Census Tracts
 
 
