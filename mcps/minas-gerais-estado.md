@@ -33,16 +33,16 @@ Connect to the **Minas Gerais State Open Data Portal** to explore a vast reposit
 
 
 ## Available Tools (10)
-- **get_organization**: Get details and datasets of an organization
-- **list_packages**: List all dataset names in the portal
-- **search_packages**: Search for datasets matching specific criteria
-- **get_package**: Get full metadata of a specific dataset
-- **search_resources**: Search for resources matching a query
 - **get_resource**: Get metadata of a specific resource (file)
-- **list_groups**: List all groups (categories)
-- **get_group**: Get details and datasets of a group
+- **search_resources**: Search for resources matching a query
 - **list_organizations**: List all organizations
+- **get_group**: Get details and datasets of a group
+- **get_organization**: Get details and datasets of an organization
+- **get_package**: Get full metadata of a specific dataset
+- **list_groups**: List all groups (categories)
+- **list_packages**: List all dataset names in the portal
 - **list_tags**: List all tags used in the portal
+- **search_packages**: Search for datasets matching specific criteria
 
 
 ## 💬 Prompt Examples

@@ -34,26 +34,26 @@ The **Paraíba MCP Server** connects your AI agent to the official Dados Abertos
 
 
 ## Available Tools (20)
-- **get_empenho**: Get Despesa Orçamentária - Notas de Empenho (Commitment Notes) data
 - **get_folha_pagamento**: Get Resumo da Folha de Pagamento (Payroll Summary) data
 - **get_acao_governamental**: Get Ação Governamental (Government Action) data
-- **get_autorizacao_pagamento**: Get Autorizações de Pagamento (Payment Authorizations) data
 - **get_contratos_aditivos**: Get Aditivos de Contratos (Contract Addendums) data
-- **get_contratos**: Get Contratos (Contracts) data
 - **get_convenios**: Get Convênios (Covenants/Agreements) data
-- **get_diarias**: Get Despesa Orçamentária - Diárias (Daily Allowances) data
 - **get_dotacao**: Get Dotação Orçamentária (Budget Allocation) data
-- **get_elemento_despesa**: Get Elemento da Despesa (Expense Element) data
-- **get_fonte_recurso**: Get Fonte de Recurso (Resource Source) data
-- **get_funcao**: Get Função (Function) data
-- **get_liquidacao**: Get Liquidação (Liquidation) data
 - **get_modalidade_licitacao**: Get Modalidade de Licitação (Bidding Modality) data
 - **get_receitas_execucao**: Get Receitas - Execução (Revenue Execution) data
 - **get_receitas_previsao**: Get Receitas - Previsão (Revenue Forecast) data
 - **get_restos_a_pagar**: Get Restos a Pagar (Outstanding Payables) data
 - **get_subfuncao**: Get Sub Função (Sub-function) data
-- **get_unidade_gestora**: Get Unidade Gestora (Managing Unit) data
 - **get_unidade_orcamentaria**: Get Unidade Orçamentária (Budgetary Unit) data
+- **get_autorizacao_pagamento**: Get Autorizações de Pagamento (Payment Authorizations) data
+- **get_contratos**: Get Contratos (Contracts) data
+- **get_diarias**: Get Despesa Orçamentária - Diárias (Daily Allowances) data
+- **get_elemento_despesa**: Get Elemento da Despesa (Expense Element) data
+- **get_empenho**: Get Despesa Orçamentária - Notas de Empenho (Commitment Notes) data
+- **get_fonte_recurso**: Get Fonte de Recurso (Resource Source) data
+- **get_funcao**: Get Função (Function) data
+- **get_liquidacao**: Get Liquidação (Liquidation) data
+- **get_unidade_gestora**: Get Unidade Gestora (Managing Unit) data
 
 
 ## 💬 Prompt Examples

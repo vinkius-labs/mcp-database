@@ -37,11 +37,11 @@ Connect your AI agent to the **STF Dados Abertos** portal and explore the transp
 - **get_package**: Get dataset details
 - **list_packages**: List all datasets (packages) in STF Dados Abertos
 - **search_packages**: Search datasets
-- **get_group**: Get group details
 - **get_organization**: Get organization details
 - **get_resource**: Get resource details
-- **list_groups**: List groups
 - **list_organizations**: List organizations
+- **get_group**: Get group details
+- **list_groups**: List groups
 - **search_datastore**: Query DataStore
 
 

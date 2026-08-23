@@ -33,12 +33,12 @@ Connect to the **IBESTAT (Institut d'Estadística de les Illes Balears)** and br
 
 
 ## Available Tools (4)
-- **get_data**: Retrieve statistical data for a specific resource
 - **list_resources**: g., specific tables) for a given statistical operation ID.
 
 Retrieve resources associated with a specific operation
-- **get_metadata**: Retrieve metadata for a specific operation
 - **list_operations**: List all statistical operations available in IBESTAT
+- **get_data**: Retrieve statistical data for a specific resource
+- **get_metadata**: Retrieve metadata for a specific operation
 
 
 ## 💬 Prompt Examples

@@ -20,12 +20,12 @@ AI models perceive text as 'tokens', not as phonetic syllables or strict sentenc
 
 
 ## Available Tools (3)
-- **calculate_flesch_kincaid**: Provide the full text string.
-
-Analyzes text readability using the deterministic Flesch-Kincaid algorithm
 - **calculate_gunning_fog**: Provide the full text string.
 
 Analyzes text readability using the deterministic Gunning Fog index algorithm
+- **calculate_flesch_kincaid**: Provide the full text string.
+
+Analyzes text readability using the deterministic Flesch-Kincaid algorithm
 - **calculate_reading_time**: Provide the text and optionally the Words Per Minute (WPM) speed (defaults to 200).
 
 Provides an exact reading time estimation based on word count and WPM

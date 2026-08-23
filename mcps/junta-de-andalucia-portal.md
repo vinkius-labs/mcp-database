@@ -35,11 +35,11 @@ Connect to the **Junta de Andalucía Open Data Portal** to query and analyze pub
 
 ## Available Tools (6)
 - **list_groups**: List all groups (categories)
-- **search_datastore**: Search for data within a specific resource
-- **get_package**: Get metadata for a specific dataset
 - **list_organizations**: List all publishing organizations
-- **list_packages**: List all dataset names in the portal
 - **get_resource**: Get metadata for a specific resource (file)
+- **list_packages**: List all dataset names in the portal
+- **get_package**: Get metadata for a specific dataset
+- **search_datastore**: Search for data within a specific resource
 
 
 ## 💬 Prompt Examples

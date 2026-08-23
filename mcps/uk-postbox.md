@@ -34,9 +34,7 @@ Connect your **UK Postbox** account to any AI agent and manage your virtual mail
 
 
 ## Available Tools (10)
-- **check_ukpostbox_status**: Verify UK Postbox API connectivity
 - **forward_mail**: Forward mail
-- **get_mail_item**: Get mail item details
 - **get_mail_scan**: Get mail scan
 - **get_parcel**: Get parcel details
 - **list_addresses**: List forwarding addresses
@@ -46,6 +44,8 @@ Connect your **UK Postbox** account to any AI agent and manage your virtual mail
 - **send_letter**: Provide recipient name, full address, and letter content.
 
 Send a letter
+- **check_ukpostbox_status**: Verify UK Postbox API connectivity
+- **get_mail_item**: Get mail item details
 
 
 ## 💬 Prompt Examples

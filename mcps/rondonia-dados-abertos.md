@@ -34,18 +34,18 @@ Connect to the **Rondônia Dados Abertos** portal and the Transparency API to ex
 
 
 ## Available Tools (12)
-- **list_fornecedores_impedidos**: Consult currently active barred suppliers
-- **list_despesas**: Consult state expenses (committed, liquidated, and paid)
-- **get_dataset**: Get details for a specific dataset
-- **list_contratos**: Consult state contracts
 - **list_convenios**: Consult state covenants (convênios)
 - **list_datasets**: List all datasets in the Rondônia Dados Abertos catalog
-- **list_historico_fornecedores_impedidos**: Consult the complete history of suppliers barred from bidding
 - **list_organizations**: List all organizations in the catalog
+- **list_remuneracao_servidores**: Consult state employee payroll and remuneration
+- **get_dataset**: Get details for a specific dataset
+- **list_contratos**: Consult state contracts
+- **list_despesas**: Consult state expenses (committed, liquidated, and paid)
+- **list_fornecedores_impedidos**: Consult currently active barred suppliers
+- **list_groups**: List all groups in the catalog
+- **list_historico_fornecedores_impedidos**: Consult the complete history of suppliers barred from bidding
 - **list_pagamentos_fornecedores**: Consult payments made to suppliers by the Executive Branch
 - **list_receitas**: Consult state revenues collected
-- **list_remuneracao_servidores**: Consult state employee payroll and remuneration
-- **list_groups**: List all groups in the catalog
 
 
 ## 💬 Prompt Examples

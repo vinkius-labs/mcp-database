@@ -34,33 +34,33 @@ Connect to the **Ayuntamiento de Zaragoza** (Zaragoza City Council) Open Data pl
 
 
 ## Available Tools (17)
-- **book_appointment**: Requires authentication.
-
-Book an appointment (Cita Previa)
 - **create_map**: Requires authentication.
 
 Create a new collaborative map
 - **list_open311_requests**: List Open311 requests
 - **list_open311_services**: List Open311 services (Quejas y Sugerencias)
 - **list_public_maps**: List collaborative public maps
-- **list_user_maps**: List collaborative maps for a specific user
-- **query_dataset**: Query a generic Zaragoza dataset (e.g., restaurante, monumento)
 - **submit_open311_request**: Requires authentication credentials.
 
 Submit an Open311 request (Queja/Sugerencia)
-- **delete_map**: Requires authentication.
-
-Delete a collaborative map
 - **execute_sparql_query**: zaragoza.es/sparql.
 
 Execute a SPARQL query against Zaragoza Semantic Web endpoint
 - **get_agenda_availability**: Get appointment availability for a specific day
-- **get_agenda_detail**: Get details of a specific Cita Previa agenda
 - **get_map_detail**: Get details of a collaborative map
 - **get_my_appointments**: Get my booked appointments
 - **get_open311_request**: Get details of a specific Open311 request
 - **get_open311_service**: Get Open311 service definition
 - **list_agendas**: List Cita Previa (Appointment) agendas
+- **book_appointment**: Requires authentication.
+
+Book an appointment (Cita Previa)
+- **delete_map**: Requires authentication.
+
+Delete a collaborative map
+- **get_agenda_detail**: Get details of a specific Cita Previa agenda
+- **list_user_maps**: List collaborative maps for a specific user
+- **query_dataset**: Query a generic Zaragoza dataset (e.g., restaurante, monumento)
 
 
 ## 💬 Prompt Examples

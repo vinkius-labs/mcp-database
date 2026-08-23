@@ -34,10 +34,10 @@ Connect your AI agent to the **U.S. Department of Justice (DOJ)** open data port
 
 ## Available Tools (4)
 - **get_blog_entry**: Get a specific DOJ blog entry by UUID
+- **get_press_release**: Get a specific DOJ press release by UUID
 - **list_blog_entries**: Use parameters to filter by Civil Rights data (e.g., title="Civil Rights").
 
 List DOJ blog entries
-- **get_press_release**: Get a specific DOJ press release by UUID
 - **list_press_releases**: Use parameters to filter by Civil Rights data.
 
 List DOJ press releases

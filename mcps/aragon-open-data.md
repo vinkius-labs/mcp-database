@@ -34,16 +34,16 @@ Connect to the **Aragón Open Data** portal and unlock a wealth of public inform
 
 
 ## Available Tools (15)
-- **count_datasets**: Get total dataset count
-- **get_organization**: Get publisher/organization details
 - **get_dataset**: Get dataset details
-- **get_tag**: Get tag details
+- **get_organization**: Get publisher/organization details
+- **list_datasets**: List all datasets (packages)
 - **list_groups**: List all themes/groups
 - **list_organizations**: List all publishers/organizations
-- **list_datasets**: List all datasets (packages)
 - **list_views**: List all available views in Aragón Open Data
 - **most_downloaded_datasets**: Get most downloaded datasets
 - **newest_datasets**: Get newest datasets
+- **count_datasets**: Get total dataset count
+- **get_tag**: Get tag details
 - **list_tags**: List all tags
 - **preview_data**: By default, it returns the first 1000 records.
 
