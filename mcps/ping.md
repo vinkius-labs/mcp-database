@@ -33,14 +33,14 @@ Empower your Agent to seamlessly manage Chinese payment ecosystems with **Ping++
 
 ## Available Tools (7)
 - **retrieve_customer**: Retrieve Customer details
+- **list_customers**: List existing Customers
+- **retrieve_charge**: Retrieve the details of an existing charge
 - **create_charge**: Requires the order_no, amount, app ID, channel, currency, subject, and body.
 
 Create a new charge (payment request)
 - **create_customer**: Create a new Customer
 - **create_refund**: Create a refund for a specific charge
 - **list_charges**: List existing charges
-- **list_customers**: List existing Customers
-- **retrieve_charge**: Retrieve the details of an existing charge
 
 
 ## 💬 Prompt Examples

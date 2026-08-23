@@ -37,15 +37,15 @@ Connect your AI agents to **Tencent START Cloud Gaming (GS)**, the high-performa
 ## Available Tools (11)
 - **stop_publish_stream**: Stops the video stream for a specific user
 - **try_lock_worker**: Locks a cloud gaming instance for a specific user
-- **create_session**: Initialize a cloud gaming session
 - **get_capacity_limit**: Check max concurrent user limit for a game
 - **get_concurrent_user_info**: Check current concurrency for a game
 - **get_worker_info**: Get worker info for a specific user
 - **list_games**: List games available on the Tencent GS platform
 - **list_workers**: List status of cloud gaming workers
-- **modify_capacity_limit**: Update max concurrent user limit for a game
 - **stop_game**: Ends a game session and releases the instance
 - **stop_publish_stream_by_action**: Stops the video stream using an explicit action code
+- **create_session**: Initialize a cloud gaming session
+- **modify_capacity_limit**: Update max concurrent user limit for a game
 
 
 ## 💬 Prompt Examples

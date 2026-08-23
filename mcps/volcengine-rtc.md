@@ -33,16 +33,16 @@ Empower your Agent with **Volcengine RTC**, the exact same Real-Time Communicati
 
 ## Available Tools (10)
 - **get_active_rooms**: List all active RTC rooms in Volcengine
-- **get_quality_metrics**: Get deep dive metrics of an RTC room
 - **get_room_users**: Get list of users in a Volcengine room
 - **kick_user**: Kick a user from a Volcengine RTC room
-- **mute_stream**: StreamType should be "audio" or "video".
-
-Mute a specific stream output (audio or video)
 - **start_cloud_record**: Start Volcengine Cloud Recording
 - **start_transcode**: Start Cloud MCU stream transcoding
 - **stop_cloud_record**: Stop Volcengine Cloud Recording
 - **stop_transcode**: Stop MCU stream transcoding
+- **get_quality_metrics**: Get deep dive metrics of an RTC room
+- **mute_stream**: StreamType should be "audio" or "video".
+
+Mute a specific stream output (audio or video)
 - **unmute_stream**: StreamType should be "audio" or "video".
 
 Unmute a previously muted stream output

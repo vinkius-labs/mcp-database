@@ -32,10 +32,10 @@ Equip your AI agent with **Shumei** (数美), China's premier risk assessment an
 
 
 ## Available Tools (4)
-- **check_audio_risk**: Predict risk associated with an audio clip
 - **check_device_risk**: Determine if a specific device ID or IP is fraudulent or using a VPN
 - **check_image_risk**: Scan an image for NSFW or restricted content
 - **check_text_risk**: Scan a piece of text for spam, abuse, or NSFW content
+- **check_audio_risk**: Predict risk associated with an audio clip
 
 
 ## 💬 Prompt Examples

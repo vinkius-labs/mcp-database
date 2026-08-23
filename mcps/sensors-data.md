@@ -41,10 +41,10 @@ Connect your AI agents to **Sensors Data** (神策数据), the leading professio
 - **list_user_properties**: List all defined user profile properties
 - **lookup_user**: Get profile information for a specific user
 - **query_behavior_list**: Retrieve a list of user behaviors/events
-- **analyze_events**: Perform complex event analysis
-- **analyze_funnel**: Calculate conversion funnel metrics
 - **analyze_retention**: Calculate user retention rates
 - **get_event_schema**: Retrieve the property schema for a specific event
+- **analyze_events**: Perform complex event analysis
+- **analyze_funnel**: Calculate conversion funnel metrics
 - **get_project_info**: Retrieve Sensors Data project metadata
 
 

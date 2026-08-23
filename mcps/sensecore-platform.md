@@ -36,17 +36,17 @@ Connect your AI agents to the **SenseCore Platform**, the industrial-grade AI in
 
 
 ## Available Tools (11)
-- **get_run_status**: Check the status of an active assistant run
 - **list_files**: List uploaded files
-- **list_messages**: Retrieve the message history of a thread
-- **list_models**: List all available SenseNova models
 - **create_assistant**: Define a new AI assistant
 - **create_run**: Execute an assistant on a thread
 - **create_thread**: Initialize a new conversation thread
-- **get_assistant_details**: Get complete configuration for an assistant
 - **list_assistants**: List all configured assistants
 - **create_message**: Add a message to a thread
 - **chat_completions**: Send a message to a SenseCore large language model
+- **get_assistant_details**: Get complete configuration for an assistant
+- **get_run_status**: Check the status of an active assistant run
+- **list_messages**: Retrieve the message history of a thread
+- **list_models**: List all available SenseNova models
 
 
 ## 💬 Prompt Examples

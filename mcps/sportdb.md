@@ -37,27 +37,12 @@ Your agent navigates the entire competition hierarchy — from country to league
 
 
 ## Available Tools (18)
-- **get_club_players**: Requires the numeric club ID.
-
-List all players currently registered to a specific club
-- **get_club_profile**: Requires the numeric club ID obtained from search results.
-
-Get the full profile of a club by its ID
-- **get_competition_seasons**: g., "premier-league"), returns all available seasons. Use this to find the season identifier needed for standings and fixtures queries.
-
-List available seasons for a specific competition
 - **get_country_competitions**: g., "england", "spain", "germany"), returns all competitions available in that country. The response includes competition slugs needed to drill deeper into seasons and standings.
 
 List competitions (leagues/cups) available in a specific country for a sport
-- **get_fixtures**: Includes dates, teams, scores for completed matches, and upcoming schedule. Requires sport, country_slug, competition_slug, and season.
-
-Get scheduled and completed match fixtures for a season
 - **get_match**: Use the match_id obtained from fixtures or live results.
 
 Get detailed information for a specific match by its ID
-- **get_match_lineups**: Returns player names and positions for each side.
-
-Get starting lineups and substitutions for a specific match
 - **get_match_stats**: Requires a valid match_id.
 
 Get in-match statistics for a specific match
@@ -70,12 +55,6 @@ Get career and seasonal statistics for a specific player
 - **get_player_transfers**: Requires the numeric player ID.
 
 Get the complete transfer history of a specific player
-- **get_standings**: Requires sport, country_slug, competition_slug, and season (e.g., "2024-2025"). This is the primary tool for answering "who is top of the league" questions.
-
-Get league table standings for a specific season of a competition
-- **list_countries**: The sport parameter should be a slug like "football", "basketball", "hockey", or "tennis". Use this as the starting point to navigate the competition hierarchy.
-
-List all countries available for a given sport
 - **get_live_basketball**: Use this when the user asks about ongoing basketball games or live NBA/EuroLeague results.
 
 Get live basketball match scores happening right now
@@ -88,6 +67,27 @@ Get live ice hockey match scores happening right now
 - **search_clubs**: Returns a list of matching clubs with their IDs and basic metadata. Use this to find a club ID before requesting its profile or player roster.
 
 Search for clubs/teams by name keyword
+- **get_club_players**: Requires the numeric club ID.
+
+List all players currently registered to a specific club
+- **get_club_profile**: Requires the numeric club ID obtained from search results.
+
+Get the full profile of a club by its ID
+- **get_competition_seasons**: g., "premier-league"), returns all available seasons. Use this to find the season identifier needed for standings and fixtures queries.
+
+List available seasons for a specific competition
+- **get_fixtures**: Includes dates, teams, scores for completed matches, and upcoming schedule. Requires sport, country_slug, competition_slug, and season.
+
+Get scheduled and completed match fixtures for a season
+- **get_match_lineups**: Returns player names and positions for each side.
+
+Get starting lineups and substitutions for a specific match
+- **get_standings**: Requires sport, country_slug, competition_slug, and season (e.g., "2024-2025"). This is the primary tool for answering "who is top of the league" questions.
+
+Get league table standings for a specific season of a competition
+- **list_countries**: The sport parameter should be a slug like "football", "basketball", "hockey", or "tennis". Use this as the starting point to navigate the competition hierarchy.
+
+List all countries available for a given sport
 - **search_players**: Returns matching players with their IDs and basic profile data. Use this to find a player ID before requesting their detailed profile, statistics, or transfer history.
 
 Search for players by name keyword

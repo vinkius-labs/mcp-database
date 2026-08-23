@@ -43,12 +43,12 @@ List all available TTS voice models
 - **synthesize_long_text**: Ideal for articles, audiobooks, and lengthy documentation. Use this when your text exceeds the standard 1024 character limit.
 
 Synthesize speech from long text (over 1024 characters)
-- **synthesize_ssml**: Use SSML tags like <break>, <emphasis>, <prosody> for natural-sounding output with precise timing and intonation control.
-
-Convert SSML (Speech Synthesis Markup Language) to speech
 - **synthesize_speech**: Supports multiple languages (Chinese, English, Japanese), various voice styles (female, male, child, trendy, news), and adjustable speed/volume. Returns audio data or URL. Ideal for narration, accessibility, multi-language content, and the iconic TikTok voice effects.
 
 Convert text to speech using Volcengine TTS
+- **synthesize_ssml**: Use SSML tags like <break>, <emphasis>, <prosody> for natural-sounding output with precise timing and intonation control.
+
+Convert SSML (Speech Synthesis Markup Language) to speech
 
 
 ## 💬 Prompt Examples

@@ -36,7 +36,6 @@ Connect your AI agents to **Softinn**, the leading cloud-based Hotel Management 
 
 
 ## Available Tools (10)
-- **add_folio_payment**: Record a payment against a guest folio
 - **check_availability**: Search for available rooms in the hotel
 - **create_reservation**: Create a new guest reservation
 - **get_hotel_summary**: Get an overview of the hotel configuration
@@ -48,6 +47,7 @@ Connect your AI agents to **Softinn**, the leading cloud-based Hotel Management 
 - **update_room_status**: g., Clean, Dirty, Out of Order).
 
 Update the housekeeping or occupancy status of a room
+- **add_folio_payment**: Record a payment against a guest folio
 
 
 ## 💬 Prompt Examples
