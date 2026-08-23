@@ -40,9 +40,9 @@ Empower your AI agent to orchestrate your entire mixology research and recipe au
 - **get_gin_cocktails**: Get popular Gin cocktails
 - **get_rum_cocktails**: Get popular Rum cocktails
 - **get_tequila_cocktails**: Get popular Tequila cocktails
-- **get_vodka_cocktails**: Get popular Vodka cocktails
-- **get_classic_margaritas**: Get classic Margarita variations
 - **search_cocktails**: Search for cocktail recipes by name
+- **get_classic_margaritas**: Get classic Margarita variations
+- **get_vodka_cocktails**: Get popular Vodka cocktails
 
 
 ## 💬 Prompt Examples

@@ -33,9 +33,9 @@ Connect to the **TCE-SP Audesp** system to audit and analyze public spending acr
 
 
 ## Available Tools (3)
-- **list_despesas**: List expenses for a specific municipality, year, and month
 - **list_municipios**: List all municipalities under TCE-SP jurisdiction
 - **list_receitas**: List revenues for a specific municipality, year, and month
+- **list_despesas**: List expenses for a specific municipality, year, and month
 
 
 ## 💬 Prompt Examples

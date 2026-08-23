@@ -43,6 +43,12 @@ No more manual silobag inspections or delayed quality testing. Your AI acts as a
 
 
 ## Available Tools (12)
+- **get_facility_overview**: Essential for executive reporting, facility-wide quality assessment, and strategic storage management. AI agents should use this when users ask "give me an overview of my entire facility", "what is the overall grain quality status", or need facility-level summaries for management reporting.
+
+Get comprehensive overview of all monitored silobags and storage units
+- **get_rupture_alerts**: Rupture alerts indicate tears, holes, or structural damage to silobags that could expose grain to weather, pests, and spoilage. Returns alert severity, location of rupture, detection timestamp, and recommended actions. Essential for silobag integrity monitoring, grain protection, and preventing quality loss. AI agents should use this when users ask "are there any silobag ruptures detected", "show rupture alerts for silobag 3", or need structural integrity alerts for silobag management. Optional silobag_id filters alerts for a specific silobag.
+
+Get silobag rupture detection alerts for all silobags or a specific one
 - **get_alerts**: Returns alert severity (critical, warning, info), alert type, affected silobag, timestamp, and recommended actions. Essential for proactive grain management, quality issue detection, and operational response. AI agents should use this when users ask "show me all active alerts", "what warnings have been triggered for silobag 3", or need alert data for operational monitoring. Optional silobag_id filters alerts for a specific silobag.
 
 Get active temperature, humidity, and CO2 alerts for silobags
@@ -52,18 +58,12 @@ Get historical CO2 readings to track biological activity and spoilage trends
 - **get_current_readings**: Returns temperature (Celsius), intergranular humidity (%), and CO2 levels (ppm) from multiple sensor positions throughout the grain mass. Essential for real-time grain quality monitoring, early spoilage detection, and storage condition assessment. AI agents should use this when users ask "what are the current conditions in silobag 2", "show me all sensor readings for silobag 4", or need immediate grain quality data for storage management decisions.
 
 Get current temperature, humidity, and CO2 readings from sensors in a silobag
-- **get_facility_overview**: Essential for executive reporting, facility-wide quality assessment, and strategic storage management. AI agents should use this when users ask "give me an overview of my entire facility", "what is the overall grain quality status", or need facility-level summaries for management reporting.
-
-Get comprehensive overview of all monitored silobags and storage units
 - **get_humidity_history**: Humidity migration and condensation are key drivers of spoilage and quality loss. Returns time-series humidity data (%) with timestamps from multiple sensor positions. Essential for moisture migration analysis, condensation detection, and storage safety monitoring. AI agents should use this when users ask "show me humidity trends for silobag 1", "has humidity been stable in silobag 2", or need historical humidity data for storage management.
 
 Get historical intergranular humidity readings for moisture migration analysis
 - **get_quality_assessment**: Returns quality score, risk level, estimated remaining storage life, and recommended actions. Essential for grain quality monitoring, marketing timing decisions, and storage duration optimization. AI agents should reference this when users ask "what is the grain quality in silobag 3", "assess storage conditions for silobag 5", or need quality assessment data for storage management and marketing decisions.
 
 Get AI-powered grain quality assessment for a specific silobag
-- **get_rupture_alerts**: Rupture alerts indicate tears, holes, or structural damage to silobags that could expose grain to weather, pests, and spoilage. Returns alert severity, location of rupture, detection timestamp, and recommended actions. Essential for silobag integrity monitoring, grain protection, and preventing quality loss. AI agents should use this when users ask "are there any silobag ruptures detected", "show rupture alerts for silobag 3", or need structural integrity alerts for silobag management. Optional silobag_id filters alerts for a specific silobag.
-
-Get silobag rupture detection alerts for all silobags or a specific one
 - **get_satellite_data**: Essential for understanding external risk factors, weather impact assessment, and proactive silobag protection. AI agents should use this when users ask "what is the satellite data for silobag 2", "show external conditions affecting silobag 4", or need environmental context for silobag management decisions.
 
 Get satellite-based monitoring data for external silobag conditions

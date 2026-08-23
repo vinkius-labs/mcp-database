@@ -34,11 +34,11 @@ Connect to the **Aracaju Transparency Portal** to audit and analyze public data 
 
 
 ## Available Tools (5)
-- **list_bids**: List public tenders and bids (licitações)
 - **list_contracts**: List signed contracts (contratos)
-- **list_expenses**: List municipality expenses (despesas)
 - **list_personnel**: List public servants and payroll (servidores)
 - **list_revenues**: List municipality revenues (receitas)
+- **list_bids**: List public tenders and bids (licitações)
+- **list_expenses**: List municipality expenses (despesas)
 
 
 ## 💬 Prompt Examples

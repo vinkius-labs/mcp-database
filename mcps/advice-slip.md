@@ -35,8 +35,8 @@ Equip your AI agent with a source of wisdom through the **Advice Slip** MCP serv
 
 ## Available Tools (3)
 - **get_advice_by_id**: Get advice by its ID
-- **search_advice**: Search for advice by keyword
 - **get_random_advice**: Get a random piece of advice
+- **search_advice**: Search for advice by keyword
 
 
 ## 💬 Prompt Examples

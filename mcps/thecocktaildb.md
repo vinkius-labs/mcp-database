@@ -24,17 +24,17 @@ Zero authentication required. Perfect for bartending assistants, hospitality cha
 
 
 ## Available Tools (5)
-- **browse_cocktail_category**: Browse cocktails by category (Cocktail, Shot, Ordinary Drink, etc.)
-- **search_cocktails**: Returns full recipes with ingredients, measures, glass type, and step-by-step instructions. Try: Margarita, Mojito, Old Fashioned, Negroni, Mai Tai, Piña Colada.
-
-Search for cocktail recipes by name
-- **find_cocktails_by_ingredient**: g. Vodka, Gin, Rum, Tequila, Whiskey, Bourbon, Champagne, Kahlua) and get all cocktails that use it.
-
-Find cocktails that use a specific ingredient
 - **get_cocktail_details**: Get full cocktail recipe details by CocktailDB ID
 - **get_random_cocktail**: Perfect for bartender inspiration or "what should I drink?" moments.
 
 Get a random cocktail recipe for inspiration
+- **browse_cocktail_category**: Browse cocktails by category (Cocktail, Shot, Ordinary Drink, etc.)
+- **find_cocktails_by_ingredient**: g. Vodka, Gin, Rum, Tequila, Whiskey, Bourbon, Champagne, Kahlua) and get all cocktails that use it.
+
+Find cocktails that use a specific ingredient
+- **search_cocktails**: Returns full recipes with ingredients, measures, glass type, and step-by-step instructions. Try: Margarita, Mojito, Old Fashioned, Negroni, Mai Tai, Piña Colada.
+
+Search for cocktail recipes by name
 
 
 ## 💬 Prompt Examples

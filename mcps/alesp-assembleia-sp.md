@@ -35,25 +35,25 @@ Connect to the **ALESP (Assembleia Legislativa do Estado de São Paulo)** open d
 
 ## Available Tools (18)
 - **get_agenda_eventos**: List upcoming and past events scheduled at the Assembly
+- **get_comissoes**: List permanent committees of the assembly
 - **get_comissoes_membros**: List members of the permanent committees
 - **get_comissoes_reunioes**: List meetings of the permanent committees
-- **get_comissoes**: List permanent committees of the assembly
 - **get_comissoes_votacoes**: List votes of the permanent committees
-- **get_deputados**: List all state deputies in the current legislature
-- **get_despesas_gabinetes**: Optionally provide a year for historical data.
-
-List reimbursed expenses for each deputy cabinet
-- **get_documento_andamento_atual**: Get current status of proposals
 - **get_documento_andamento**: Get full history and status of proposals
+- **get_documento_andamento_atual**: Get current status of proposals
 - **get_documento_autor**: List authors and co-signers for each legislative document
 - **get_funcionarios_cargos**: List job history of ALESP staff
 - **get_legislacao_normas**: List state norms (laws, decrees, resolutions)
 - **get_partidos**: List political parties participating in the legislative process
-- **get_legislacao_temas**: List themes/topics of state norms
 - **get_legislacao_tipo_normas**: List types of state norms
 - **get_lotacoes**: List current placements (lotações) of ALESP staff
 - **get_proposituras_zip_url**: Get the URL for the comprehensive list of all legislative proposals (ZIP)
 - **get_uas**: List Administrative Units (UAs) of ALESP
+- **get_deputados**: List all state deputies in the current legislature
+- **get_despesas_gabinetes**: Optionally provide a year for historical data.
+
+List reimbursed expenses for each deputy cabinet
+- **get_legislacao_temas**: List themes/topics of state norms
 
 
 ## 💬 Prompt Examples

@@ -36,18 +36,18 @@ No more manual checking of individual tag locations or missing critical asset mo
 
 
 ## Available Tools (12)
-- **create_tag**: Create a tag
-- **delete_group**: Delete a group
 - **delete_tag**: Delete a tag
-- **get_tag_analytics**: Get tag analytics
 - **get_group**: Get group details
 - **get_tag**: Get tag details
 - **list_group_tags**: List tags in group
-- **list_groups**: List groups
 - **list_tags**: List tags
 - **search_tags**: Search tags
-- **check_kitetags_status**: Verify connectivity
 - **create_group**: Create a group
+- **check_kitetags_status**: Verify connectivity
+- **create_tag**: Create a tag
+- **delete_group**: Delete a group
+- **get_tag_analytics**: Get tag analytics
+- **list_groups**: List groups
 
 
 ## 💬 Prompt Examples

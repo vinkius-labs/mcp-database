@@ -35,12 +35,12 @@ Empower your AI agent to orchestrate your entire wine research and vineyard audi
 
 
 ## Available Tools (6)
-- **get_vineyard_details**: Get full details for a specific vineyard by ID
 - **check_api_status**: Check if the VineRadar API is operational
-- **get_wine_details**: Get full details for a specific wine by ID
 - **list_wine_varietals**: List all wine varietals supported by VineRadar
 - **search_vineyards**: Search for vineyards by location
 - **search_wines**: Search for wines by name or keyword
+- **get_vineyard_details**: Get full details for a specific vineyard by ID
+- **get_wine_details**: Get full details for a specific wine by ID
 
 
 ## 💬 Prompt Examples

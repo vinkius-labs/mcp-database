@@ -35,8 +35,8 @@ Empower your AI agent to orchestrate your entire entertainment research and fact
 
 
 ## Available Tools (2)
-- **check_api_status**: Check if the Random Facts service is operational
 - **get_random_fact**: Get a random interesting fact from the database
+- **check_api_status**: Check if the Random Facts service is operational
 
 
 ## 💬 Prompt Examples

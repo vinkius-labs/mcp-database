@@ -35,15 +35,15 @@ Connect your **Boathouse Connect** account to any AI agent and manage your marin
 
 
 ## Available Tools (10)
-- **create_reservation**: Create a reservation
 - **get_equipment**: Get equipment details
 - **get_reservation**: Get reservation details
 - **get_user**: Get member details
-- **list_equipment**: List all equipment
 - **list_locations**: List all locations
 - **list_reservations**: List all reservations
-- **list_schedules**: List all schedules
 - **check_boathouse_status**: Verify API connectivity
+- **create_reservation**: Create a reservation
+- **list_equipment**: List all equipment
+- **list_schedules**: List all schedules
 - **list_users**: List all members
 
 

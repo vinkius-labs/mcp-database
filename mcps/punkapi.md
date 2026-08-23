@@ -36,15 +36,21 @@ Connect to **PunkAPI** and explore BrewDog's DIY Dog beer catalog through natura
 
 
 ## Available Tools (8)
-- **get_beer_by_id**: Returns name, description, ABV, IBU, EBC, first brewed date, tagline, ingredients (malts, hops, yeast), food pairing suggestions, brewers tips and description.
-
-Get a specific beer by ID
 - **get_beers_by_hops**: Common hops include: "Cascade", "Citra", "Mosaic", "Amarillo", "Simcoe", "Galaxy", "Chinook", "Centennial". Returns matching beers with full hop ingredient details.
 
 Search beers by hop variety
+- **get_beers_by_style**: Common styles include: "American IPA", "Scottish Ale", "Belgian IPA", "English IPA", "Porter", "Stout", "Lager", "Pilsner", "Wheat Beer", "Sour". Returns beer names, ABV, IBU and descriptions.
+
+Search beers by style
+- **get_random_beer**: Useful for discovering new beers. Can return 1-25 random beers at once.
+
+Get random beer(s) from the catalog
 - **get_all_beers**: Supports searching by name, ABV range, IBU range, EBC (color), malts, hops, yeast, food pairing and brewing date range. Returns beer names, descriptions, ABV, IBU, ingredients and food pairing suggestions. Pagination supported with page and per_page parameters.
 
 Search BrewDog beers with filters
+- **get_beer_by_id**: Returns name, description, ABV, IBU, EBC, first brewed date, tagline, ingredients (malts, hops, yeast), food pairing suggestions, brewers tips and description.
+
+Get a specific beer by ID
 - **get_beers_by_abv**: Use abv_gt for minimum ABV and abv_lt for maximum ABV. Useful for finding session beers (low ABV) or strong beers (high ABV).
 
 Search beers by ABV (alcohol by volume) range
@@ -54,12 +60,6 @@ Search beers by food pairing suggestion
 - **get_beers_by_ibu**: Low IBU (<20) = mild, Medium IBU (20-40) = balanced, High IBU (40-60) = bitter, Very High IBU (>60) = very bitter. Useful for finding beers matching bitterness preference.
 
 Search beers by IBU (International Bitterness Units) range
-- **get_beers_by_style**: Common styles include: "American IPA", "Scottish Ale", "Belgian IPA", "English IPA", "Porter", "Stout", "Lager", "Pilsner", "Wheat Beer", "Sour". Returns beer names, ABV, IBU and descriptions.
-
-Search beers by style
-- **get_random_beer**: Useful for discovering new beers. Can return 1-25 random beers at once.
-
-Get random beer(s) from the catalog
 
 
 ## 💬 Prompt Examples

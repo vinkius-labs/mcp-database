@@ -34,7 +34,6 @@ Connect to the **USGS Water Services** to retrieve comprehensive hydrological da
 
 
 ## Available Tools (5)
-- **get_statistics**: Retrieve daily, monthly, or annual statistics based on approved data
 - **get_daily_values**: You MUST provide at least one major filter.
 
 Retrieve historical summarized daily data (mean, median, max, min)
@@ -47,6 +46,7 @@ Retrieve near real-time water data (usually 15-minute intervals)
 - **get_sites**: Multiple major filters can be combined (AND logic).
 
 Search for USGS sites and metadata
+- **get_statistics**: Retrieve daily, monthly, or annual statistics based on approved data
 
 
 ## 💬 Prompt Examples

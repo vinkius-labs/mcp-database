@@ -35,16 +35,16 @@ Connect your **Besitos Corp** partner account to any AI agent and orchestrate yo
 
 
 ## Available Tools (10)
-- **get_campaign**: Get details of a specific campaign
 - **list_campaigns**: List all reward-based engagement campaigns
 - **list_games**: List all available mobile games in the marketplace
 - **list_offers**: List all reward offers and milestones
-- **list_user_activity**: Retrieve gaming activity for a specific user
 - **list_user_rewards**: Retrieve reward history for a specific user
 - **get_engagement_report**: Retrieve a summary of user engagement metrics
 - **get_game**: Get details of a specific game
-- **get_offer**: Get details of a specific reward offer
 - **get_revenue_report**: Retrieve a summary of monetization and revenue data
+- **get_campaign**: Get details of a specific campaign
+- **get_offer**: Get details of a specific reward offer
+- **list_user_activity**: Retrieve gaming activity for a specific user
 
 
 ## 💬 Prompt Examples

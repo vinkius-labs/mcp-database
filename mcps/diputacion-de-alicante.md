@@ -33,15 +33,8 @@ Connect your AI agent to the **Diputación de Alicante Open Data** portal to ret
 
 
 ## Available Tools (19)
-- **get_provincial_corporation_members**: Get Provincial Corporation Members dataset
 - **get_public_debt**: Get Public Debt dataset
-- **get_dataset**: Use this for datasets not covered by specific tools.
-
-Get any dataset from Diputación de Alicante Open Data
-- **get_elections_results**: Get Elections Results dataset
-- **get_foreign_population_by_country**: Get Foreign Population by Country dataset
-- **get_live_debt**: Get Live Debt (Deuda Viva) dataset
-- **get_mayors**: Get Mayors (Historical) dataset
+- **get_provincial_corporation_members**: Get Provincial Corporation Members dataset
 - **get_population_nuclei**: Get Population Nuclei dataset
 - **get_population_register**: Get Population Register Evolution dataset
 - **get_blue_flags**: Get Blue Flags (Beaches) dataset
@@ -51,6 +44,13 @@ Get Cemeteries dataset
 - **get_cultural_centers**: Get Cultural Centers dataset
 - **get_foreign_population_stats**: Get Foreign Population Statistics dataset
 - **get_local_directory**: Get Local Directory (Town Halls) dataset
+- **get_dataset**: Use this for datasets not covered by specific tools.
+
+Get any dataset from Diputación de Alicante Open Data
+- **get_elections_results**: Get Elections Results dataset
+- **get_foreign_population_by_country**: Get Foreign Population by Country dataset
+- **get_live_debt**: Get Live Debt (Deuda Viva) dataset
+- **get_mayors**: Get Mayors (Historical) dataset
 - **get_moors_and_christians_festivals**: Get Moors and Christians Festivals dataset
 - **get_municipal_budgets**: Get Municipal Budgets dataset
 - **get_official_local_festivals**: Get Official Local Festivals dataset

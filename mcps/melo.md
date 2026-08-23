@@ -32,12 +32,12 @@ Connect your **Melo** account to any AI agent and take full control of your real
 - **get_property_history**: Get historical data for a property
 - **get_onchain_metadata**: Get on-chain metadata
 - **list_active_listings**: List all active property listings
-- **list_property_collections**: List curated property collections
 - **list_neighborhoods**: List neighborhoods in a city
 - **list_properties**: List real estate properties
+- **list_property_collections**: List curated property collections
+- **get_market_insights**: Get real estate market insights
 - **list_transactions**: List real estate transactions
 - **search_properties**: Search properties by term
-- **get_market_insights**: Get real estate market insights
 
 
 ## 💬 Prompt Examples

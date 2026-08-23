@@ -29,19 +29,19 @@ Connect **TarotAPI** to any AI agent and access the complete 78-card tarot deck 
 
 
 ## Available Tools (6)
+- **get_multiple_random_cards**: Useful for multi-card spreads like three-card past/present/future readings or Celtic Cross layouts. Returns up to 78 cards (full deck).
+
+Get multiple random tarot cards for a spread
+- **get_random_card**: Perfect for daily draws, quick readings, or when you need guidance from the tarot without specifying a particular card.
+
+Get a random tarot card for a daily reading
+- **search_cards**: Supports searching by upright meaning, reversed meaning, or general text query. Returns all cards that match the search criteria with full card details.
+
+Search tarot cards by meaning or keywords
 - **get_api_info**: Get TarotAPI information
 - **get_card**: Includes full meanings (upright and reversed), keywords, fortune telling interpretations, description, and card image. Use short names like "ar01" (The Magician), "swac" (Ace of Cups), "wa02" (Two of Wands), etc.
 
 Get detailed information about a specific tarot card
-- **get_random_card**: Perfect for daily draws, quick readings, or when you need guidance from the tarot without specifying a particular card.
-
-Get a random tarot card for a daily reading
-- **get_multiple_random_cards**: Useful for multi-card spreads like three-card past/present/future readings or Celtic Cross layouts. Returns up to 78 cards (full deck).
-
-Get multiple random tarot cards for a spread
-- **search_cards**: Supports searching by upright meaning, reversed meaning, or general text query. Returns all cards that match the search criteria with full card details.
-
-Search tarot cards by meaning or keywords
 - **list_all_cards**: Returns card names, numbers, arcana types, suits, and short names. Use this to browse the full deck or find card identifiers for detailed lookups.
 
 List all 78 tarot cards

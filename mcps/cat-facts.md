@@ -34,8 +34,8 @@ Equip your AI agent with a source of feline wisdom through the **Cat Facts** MCP
 
 
 ## Available Tools (3)
-- **get_random_cat_fact**: Get a random cat fact
 - **list_cat_breeds**: List cat breeds
+- **get_random_cat_fact**: Get a random cat fact
 - **list_cat_facts**: List multiple cat facts
 
 
