@@ -34,25 +34,25 @@ Connect **Archbee** to your AI agent to streamline your technical documentation 
 
 
 ## Available Tools (19)
-- **info_openapi**: Retrieve information about a synchronized OpenAPI document
-- **merge_suggestion**: Merge a suggested change document into the primary document
 - **publish_space**: Publish a space to a specific environment
 - **search_docs**: Search for documents within your organization
-- **sync_openapi**: Synchronize an OpenAPI definition with an Archbee document
 - **delete_space_group**: Remove a space group
 - **get_doc**: Retrieve the content of a specific document
 - **update_space**: Update the settings or metadata of a space
 - **create_space**: Create a new documentation space
 - **create_update_doc**: Create a new document or update an existing one
-- **delete_doc**: Delete a specific document
-- **delete_space**: Permanently remove a space
-- **discard_suggestion**: Discard a suggested change
-- **get_display_rules**: Retrieve the display rules configured for the organization
 - **export_organization**: Export the entire organization data
+- **get_display_rules**: Retrieve the display rules configured for the organization
 - **import_content**: Import Markdown content into a document
 - **upload_file**: Upload a file to Archbee storage
 - **clone_space**: Create a duplicate of an existing space
 - **create_space_group**: Organize spaces into a new group
+- **delete_doc**: Delete a specific document
+- **delete_space**: Permanently remove a space
+- **discard_suggestion**: Discard a suggested change
+- **info_openapi**: Retrieve information about a synchronized OpenAPI document
+- **merge_suggestion**: Merge a suggested change document into the primary document
+- **sync_openapi**: Synchronize an OpenAPI definition with an Archbee document
 
 
 ## 💬 Prompt Examples

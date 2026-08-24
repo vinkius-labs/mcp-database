@@ -38,27 +38,27 @@ No more manual searching through complex ATS interfaces. Your AI acts as a dedic
 - **upsert_data_hub_records**: Provide the payload as a JSON string.
 
 Upsert records into Bullhorn Data Hub
-- **create_entity**: The data must be a valid JSON string representing the entity properties.
-
-Create a new Bullhorn entity
 - **create_event_subscription**: Create an event subscription
 - **delete_entity**: Delete a Bullhorn entity
 - **delete_event_subscription**: Delete an event subscription
 - **find_data_hub_records**: Provide the criteria as a JSON string.
 
 Find records in Bullhorn Data Hub
-- **get_all_corp_notes**: Get all notes for a ClientCorporation
 - **get_associations**: Requires a JSON string for the request body containing ids, start, count, etc.
 
 Retrieve associated entity IDs for multiple parent entities
 - **get_entities**: Get multiple Bullhorn entities by IDs
+- **get_events**: Note: Consuming events purges them from the subscription queue.
+
+Retrieve and consume events from a subscription
+- **create_entity**: The data must be a valid JSON string representing the entity properties.
+
+Create a new Bullhorn entity
+- **get_all_corp_notes**: Get all notes for a ClientCorporation
 - **get_entitlements**: Get entity entitlements for the current user
 - **get_entity**: g., Candidate, JobOrder) by its ID. You must specify the fields to return.
 
 Get a single Bullhorn entity by ID
-- **get_events**: Note: Consuming events purges them from the subscription queue.
-
-Retrieve and consume events from a subscription
 - **get_to_many**: g., clientContacts for a ClientCorporation).
 
 Get to-many associations for an entity

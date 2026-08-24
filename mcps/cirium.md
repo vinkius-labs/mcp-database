@@ -34,15 +34,15 @@ Connect your **Cirium** developer account to any AI agent to access the world's 
 
 
 ## Available Tools (9)
-- **get_schedules_by_route**: Get scheduled flights between two airports for a date
+- **get_fleet_status**: Get status for all flights in a carrier fleet
+- **get_airport_tracks**: Get tracks for all flights near a specific airport
+- **create_alert_rule**: Register a new alert rule for a flight
+- **get_airport_status**: Get a list of flights departing from or arriving at an airport
+- **get_flight_status**: Get status for a specific flight on a specific date
 - **get_flight_track**: Get the current position and track for a specific flight
 - **get_route_status**: Get status for all flights between two airports
 - **get_schedules_by_carrier**: Get scheduled flights for a specific carrier on a date
-- **get_airport_status**: Get a list of flights departing from or arriving at an airport
-- **get_airport_tracks**: Get tracks for all flights near a specific airport
-- **create_alert_rule**: Register a new alert rule for a flight
-- **get_fleet_status**: Get status for all flights in a carrier fleet
-- **get_flight_status**: Get status for a specific flight on a specific date
+- **get_schedules_by_route**: Get scheduled flights between two airports for a date
 
 
 ## 💬 Prompt Examples

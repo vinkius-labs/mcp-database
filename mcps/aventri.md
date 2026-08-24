@@ -39,13 +39,13 @@ Connect your **Aventri** (now Stova) account to any AI agent to streamline your 
 - **list_contacts**: List contacts in the Aventri account
 - **search_events**: Search and filter events
 - **update_contact**: Update an existing contact
-- **delete_contact**: Delete a contact from the system
 - **get_contact**: Get detailed information for a specific contact
 - **list_events**: List all events in the account
 - **list_speakers**: List all speakers associated with the account
-- **add_contact**: Add a new contact to the account or database
 - **add_pre_approved**: Add contacts to a pre-approved list
 - **add_pre_load**: Add pre-load registrant data
+- **add_contact**: Add a new contact to the account or database
+- **delete_contact**: Delete a contact from the system
 
 
 ## 💬 Prompt Examples

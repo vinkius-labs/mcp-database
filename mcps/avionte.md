@@ -39,21 +39,21 @@ Your AI acts as a dedicated recruiting coordinator, providing instant access to 
 - **get_company_tags**: Get tags for a company
 - **get_job**: Retrieve job details
 - **get_department_address**: Get a specific department address
-- **get_department**: Retrieve department details
-- **get_multiple_pipeline_by_pipeline_ids**: Get details for multiple job pipelines
 - **get_talent**: Provide talentId or other query parameters as needed.
 
 Retrieve details for a specific talent
 - **get_talent_work_history**: Retrieve work history for a talent
 - **get_web_applications_for_talent**: List jobs a talent has applied for
-- **get_company_restrictions**: Get talent restrictions for a company
 - **get_company**: Retrieve company details
+- **get_company_restrictions**: Get talent restrictions for a company
 - **get_talent_direct_deposit_accounts**: Get direct deposit accounts for a talent
 - **get_talent_education_history**: Retrieve education history for a talent
-- **get_talent_stage**: Get details about a talent nomination stage
 - **get_all_talent_tags**: Get all tags associated with a talent
 - **get_available_talent_statuses**: List all available talent statuses
 - **get_company_po_by_po_id**: Retrieve a specific purchase order
+- **get_department**: Retrieve department details
+- **get_multiple_pipeline_by_pipeline_ids**: Get details for multiple job pipelines
+- **get_talent_stage**: Get details about a talent nomination stage
 
 
 ## 💬 Prompt Examples

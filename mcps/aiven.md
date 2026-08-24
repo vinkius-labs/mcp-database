@@ -35,35 +35,35 @@ Connect your **Aiven** account to any AI agent to manage your open-source data i
 
 ## Available Tools (30)
 - **add_card**: Add credit card for user
-- **create_account_team**: Create a new team in an account
-- **create_account**: Create a new account
 - **create_billing_group**: Create a billing group
-- **create_project**: Create a project
 - **create_project_vpc**: Create a VPC in a cloud for the project
 - **create_service**: Create a new service
 - **delete_account**: Delete empty account
 - **delete_project**: Delete project
-- **delete_service**: Terminate a service
 - **get_account**: Get account details
 - **get_project**: Get project details
 - **get_service**: Get service information
-- **invite_organization_user**: Invite a user to the organization
 - **list_account_projects**: List projects belonging to account
-- **list_account_teams**: List teams belonging to an account
 - **list_accounts**: List accounts you have access to
+- **list_account_teams**: List teams belonging to an account
 - **list_billing_group_invoices**: Get invoices for a billing group
 - **list_billing_groups**: List billing groups
 - **list_cards**: List user credit cards
 - **list_organization_projects**: List projects under the organization
-- **list_organization_vpcs**: List organization VPCs
 - **list_organizations**: List organizations the user belongs to
-- **list_project_service_types**: List available service types for a project
-- **list_project_vpcs**: List VPCs for a project
+- **list_organization_vpcs**: List organization VPCs
 - **list_projects**: List projects
+- **list_project_vpcs**: List VPCs for a project
 - **list_services**: List services in a project
-- **update_account**: Update existing account
 - **update_project**: Update project
 - **update_service**: Update service configuration
+- **create_account**: Create a new account
+- **create_account_team**: Create a new team in an account
+- **create_project**: Create a project
+- **delete_service**: Terminate a service
+- **invite_organization_user**: Invite a user to the organization
+- **list_project_service_types**: List available service types for a project
+- **update_account**: Update existing account
 
 
 ## 💬 Prompt Examples

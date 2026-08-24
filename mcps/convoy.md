@@ -33,12 +33,20 @@ Connect **Convoy** to your AI agent to orchestrate and monitor your webhook infr
 
 
 ## Available Tools (26)
-- **bulk_create_filters**: Bulk create filters for a subscription
 - **create_event_type**: Create an event type
 - **import_event_types**: Import event types from OpenAPI
 - **activate_endpoint**: Activate a paused endpoint
 - **batch_retry_event_deliveries**: Batch retry event deliveries
+- **delete_endpoint**: Delete an endpoint
+- **get_endpoint**: Retrieve a specific endpoint
+- **list_delivery_attempts**: List delivery attempts for an event delivery
+- **list_endpoints**: List all endpoints in a project
+- **list_subscriptions**: List subscriptions
+- **pause_endpoint**: Pause an endpoint
+- **retry_event_delivery**: Retry an event delivery
+- **update_endpoint**: Update an existing endpoint
 - **broadcast_event**: Create a broadcast event
+- **bulk_create_filters**: Bulk create filters for a subscription
 - **bulk_onboard**: Bulk onboard endpoints and subscriptions
 - **create_endpoint**: Create a new Convoy endpoint
 - **create_event**: Create a new event
@@ -46,19 +54,11 @@ Connect **Convoy** to your AI agent to orchestrate and monitor your webhook infr
 - **create_portal_link**: Create a portal link
 - **create_source**: Create a source
 - **create_subscription**: Create a subscription
-- **delete_endpoint**: Delete an endpoint
 - **dynamic_event**: Create a dynamic event
 - **fanout_event**: Fan out an event
 - **get_delivery_attempt**: Retrieve a specific delivery attempt
-- **get_endpoint**: Retrieve a specific endpoint
-- **list_delivery_attempts**: List delivery attempts for an event delivery
-- **list_endpoints**: List all endpoints in a project
 - **list_event_deliveries**: List event deliveries
 - **list_meta_events**: List meta events
-- **list_subscriptions**: List subscriptions
-- **pause_endpoint**: Pause an endpoint
-- **retry_event_delivery**: Retry an event delivery
-- **update_endpoint**: Update an existing endpoint
 
 
 ## 💬 Prompt Examples

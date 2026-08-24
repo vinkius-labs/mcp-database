@@ -39,22 +39,22 @@ No more checking dashboards to see why a webhook failed. Your AI can now monitor
 - **create_queue**: Create a new queue
 - **delete_schedule**: Delete a schedule
 - **get_queue**: Get queue details and metrics
-- **cancel_request**: Cancel a pending or scheduled request
-- **create_schedule**: Create a new schedule
 - **create_token**: The token value is only returned once.
 
 Create a new token for a workspace
 - **delete_queue**: Delete a queue
-- **enqueue_request**: Resolves queue from token.
-
-Enqueue a new HTTP request
 - **get_request**: Get request details and timeline
 - **invite_team_member**: Invite a new member to the workspace team
-- **list_queue_logs**: Get paginated request history for a queue
 - **list_queues**: List queues in a workspace
 - **list_schedules**: List schedules in a workspace
 - **list_team**: List team members in a workspace
 - **list_tokens**: List tokens in a workspace
+- **cancel_request**: Cancel a pending or scheduled request
+- **create_schedule**: Create a new schedule
+- **enqueue_request**: Resolves queue from token.
+
+Enqueue a new HTTP request
+- **list_queue_logs**: Get paginated request history for a queue
 - **update_queue**: Update a queue
 - **update_schedule**: Update, pause, or resume a schedule
 

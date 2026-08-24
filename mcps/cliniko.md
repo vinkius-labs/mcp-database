@@ -36,24 +36,24 @@ Stop switching between tabs to check patient details or practitioner availabilit
 
 
 ## Available Tools (14)
-- **list_appointments**: Supports filtering via query parameters.
-
-List all appointments
-- **list_businesses**: List all business locations
 - **list_patients**: Supports filtering via query parameters.
 
 List all patients
 - **list_practitioners**: List all practitioners
 - **list_treatment_notes**: List treatment notes for a patient
-- **update_appointment**: Update an appointment
-- **update_patient**: Update patient details
 - **create_appointment**: Create a new appointment
-- **create_patient**: Create a new patient
 - **create_treatment_note**: Create a treatment note
 - **delete_appointment**: Cancel or delete an appointment
 - **get_appointment**: Retrieve a specific appointment
 - **get_patient**: Retrieve a specific patient
 - **get_practitioner**: Retrieve a specific practitioner
+- **create_patient**: Create a new patient
+- **list_appointments**: Supports filtering via query parameters.
+
+List all appointments
+- **list_businesses**: List all business locations
+- **update_appointment**: Update an appointment
+- **update_patient**: Update patient details
 
 
 ## 💬 Prompt Examples

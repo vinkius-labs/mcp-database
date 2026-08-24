@@ -34,10 +34,10 @@ Connect your **Codemagic** account to any AI agent and streamline your mobile ap
 
 
 ## Available Tools (5)
-- **add_variables_to_group**: Add variables to a variable group
 - **cancel_build**: Cancel a Codemagic build
 - **create_public_artifact_url**: Create a public download URL for an artifact
 - **get_artifact**: Get authenticated download URL for an artifact
+- **add_variables_to_group**: Add variables to a variable group
 - **start_build**: Overrides trigger/branch configs.
 
 Start a new Codemagic build

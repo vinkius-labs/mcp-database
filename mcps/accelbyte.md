@@ -35,7 +35,6 @@ No more jumping between different admin dashboards to check player stats or fix 
 
 
 ## Available Tools (12)
-- **list_friends**: List user friends
 - **ban_user**: Ban a user
 - **create_order**: Create a purchase order
 - **create_user**: Create a new user in a namespace
@@ -43,12 +42,13 @@ No more jumping between different admin dashboards to check player stats or fix 
 - **get_leaderboard**: Get leaderboard rankings
 - **get_user**: Get user details (Admin)
 - **get_user_wallets**: Query user wallet
-- **grant_entitlement**: Grant entitlement to user
-- **unlock_achievement**: Unlock an achievement
 - **update_user_status**: g., enabling or disabling their account).
 
 Update user status
 - **generate_token**: Generate an OAuth2 access token
+- **grant_entitlement**: Grant entitlement to user
+- **list_friends**: List user friends
+- **unlock_achievement**: Unlock an achievement
 
 
 ## 💬 Prompt Examples

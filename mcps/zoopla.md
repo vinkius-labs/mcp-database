@@ -34,11 +34,11 @@ Connect your **Zoopla** API to any AI agent to unlock comprehensive UK real esta
 
 
 ## Available Tools (5)
-- **average_sold_prices**: Retrieve average sold prices for a particular area
 - **local_info_graphs**: Retrieve URLs for graphs showing local area statistics
-- **property_listings**: Retrieve a list of properties for sale or to rent in a given area
-- **property_rich_list**: Retrieve the most expensive and least expensive streets in a given area
 - **zed_index**: Retrieve the Zoopla Zed-Index (average property value) for a specific area
+- **property_rich_list**: Retrieve the most expensive and least expensive streets in a given area
+- **average_sold_prices**: Retrieve average sold prices for a particular area
+- **property_listings**: Retrieve a list of properties for sale or to rent in a given area
 
 
 ## 💬 Prompt Examples

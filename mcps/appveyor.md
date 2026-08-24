@@ -34,34 +34,34 @@ Connect your **AppVeyor** account to any AI agent to streamline your DevOps work
 
 
 ## Available Tools (28)
-- **update_role**: Update an existing role
-- **update_collaborator**: Update an existing collaborator
-- **update_user**: Update an existing user
-- **cancel_build**: Cancel a build
 - **cancel_deployment**: Cancel a deployment
-- **delete_collaborator**: Delete a collaborator
 - **delete_project**: Delete a project
 - **delete_role**: Delete a role
 - **delete_user**: Delete a user
 - **get_collaborator**: Get a specific collaborator by ID
 - **get_environment_settings**: Get environment settings
-- **get_project_history**: Get project history
 - **get_project_last_build**: Get project last build
 - **get_project_settings**: Get project settings
 - **get_role**: Get a specific role by ID
 - **get_user**: Get a specific user by ID
 - **list_collaborators**: Get all collaborators
 - **list_environments**: Get all environments
-- **list_projects**: Get all projects
-- **list_roles**: Get all roles
 - **list_users**: Get all users
 - **rerun_build**: Re-run a build
-- **start_build**: Start a new build
 - **start_deployment**: Start a deployment
-- **add_collaborator**: Add a new collaborator
-- **add_project**: Add a new project
 - **add_role**: Add a new role
 - **add_user**: Add a new user
+- **add_collaborator**: Add a new collaborator
+- **add_project**: Add a new project
+- **cancel_build**: Cancel a build
+- **delete_collaborator**: Delete a collaborator
+- **get_project_history**: Get project history
+- **list_projects**: Get all projects
+- **list_roles**: Get all roles
+- **start_build**: Start a new build
+- **update_collaborator**: Update an existing collaborator
+- **update_role**: Update an existing role
+- **update_user**: Update an existing user
 
 
 ## 💬 Prompt Examples

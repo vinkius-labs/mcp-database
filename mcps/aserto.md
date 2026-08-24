@@ -35,13 +35,13 @@ Connect your **Aserto** tenant to any AI agent to manage and evaluate fine-grain
 
 
 ## Available Tools (7)
-- **list_decision_logs**: List available decision log storage objects
-- **authz_decisiontree**: Get decision tree values across all policy modules
 - **authz_is**: Determine if a user is authorized to perform an action
-- **authz_query**: Execute a general Rego query against the Authorizer
-- **control_plane_exec**: Send commands to a connected Edge Authorizer
 - **get_decision_log**: Retrieve a signed download URL for a specific log object
 - **query_decision_logs**: Query the last N decisions from decision logs
+- **authz_decisiontree**: Get decision tree values across all policy modules
+- **authz_query**: Execute a general Rego query against the Authorizer
+- **control_plane_exec**: Send commands to a connected Edge Authorizer
+- **list_decision_logs**: List available decision log storage objects
 
 
 ## 💬 Prompt Examples

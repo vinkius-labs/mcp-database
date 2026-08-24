@@ -33,19 +33,19 @@ Connect your **Accela** civic platform to any AI agent to streamline government 
 
 
 ## Available Tools (13)
-- **create_contact**: Add a new contact to the system
-- **create_record**: Create a new record (e.g., a permit application)
 - **get_parcels**: Retrieve land parcel information
 - **get_record**: Retrieve detailed information about a specific record
 - **list_documents**: List documents attached to a record
 - **list_inspections**: List inspections associated with a record or inspector
-- **schedule_inspection**: Schedule a new inspection
 - **search_addresses**: Search for valid addresses within the jurisdiction
+- **update_inspection**: Update inspection results or status
+- **upload_document**: Upload a new document (e.g., blueprints, photos)
+- **create_contact**: Add a new contact to the system
+- **create_record**: Create a new record (e.g., a permit application)
+- **schedule_inspection**: Schedule a new inspection
 - **search_contacts**: Search for people or organizations (applicants, contractors)
 - **search_records**: Search for records (permits, applications) based on criteria
-- **update_inspection**: Update inspection results or status
 - **update_record**: Update record details
-- **upload_document**: Upload a new document (e.g., blueprints, photos)
 
 
 ## 💬 Prompt Examples
