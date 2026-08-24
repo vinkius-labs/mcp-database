@@ -34,22 +34,22 @@ Connect your **Virtuous** CRM to any AI agent and take full control of your nonp
 
 
 ## Available Tools (18)
-- **create_contact**: Create a new contact
 - **create_individual**: Create a new individual
-- **create_project**: Create a new project
 - **delete_contact**: Delete a contact
-- **get_contact**: Retrieve a specific contact by ID
 - **get_gift**: Retrieve a specific gift by ID
-- **get_individual**: Retrieve a specific individual by ID
 - **get_project**: Retrieve a specific project by ID
-- **list_contact_custom_fields**: List custom fields for contacts
 - **list_contacts**: List all contacts (households, organizations, foundations)
-- **list_gifts**: List all gifts
 - **list_individual_custom_fields**: List custom fields for individuals
 - **list_individuals**: List all individuals
 - **list_projects**: List all projects
 - **update_contact**: Update an existing contact
 - **update_gift**: Update an existing gift
+- **create_contact**: Create a new contact
+- **create_project**: Create a new project
+- **get_contact**: Retrieve a specific contact by ID
+- **get_individual**: Retrieve a specific individual by ID
+- **list_contact_custom_fields**: List custom fields for contacts
+- **list_gifts**: List all gifts
 - **update_individual**: Update an existing individual
 - **create_gift**: Create a new gift
 

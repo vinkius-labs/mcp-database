@@ -34,6 +34,7 @@ Explore the open database of **optimization** Model Context Protocol (MCP) serve
 | [Table Demographic Balancer](../mcps/table-demographic-balancer.md) | Prevent demographic clustering in seating arrangements by maintaining balanced personality traits and age groups. |
 | [Tick Rate & Bandwidth Calculator](../mcps/tick-rate-bandwidth-calculator.md) | Calculate multiplayer network load, stability, and optimal server configurations. |
 | [Token Budget Allocator](../mcps/token-budget-allocator.md) | Deterministic token budget distribution for multi-agent pipelines. |
+| [Woodworking Cut List Optimizer](../mcps/woodworking-cut-list-optimizer.md) | Minimize lumber waste with deterministic 1D bin packing for cutting plans. |
 
 
 ---

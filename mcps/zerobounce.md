@@ -36,9 +36,9 @@ Connect **ZeroBounce** to your AI agent to ensure your email lists are clean, ac
 ## Available Tools (5)
 - **get_activity**: Check email activity data
 - **get_credits**: Get remaining ZeroBounce credits
+- **score_file**: AI Scoring for a file of emails
 - **validate_batch**: Validate a batch of emails
 - **validate_email**: Validate a single email address
-- **score_file**: AI Scoring for a file of emails
 
 
 ## 💬 Prompt Examples

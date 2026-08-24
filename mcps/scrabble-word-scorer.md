@@ -15,8 +15,8 @@ This MCP server provides precise scoring for Scrabble moves. It calculates the b
 
 ## Available Tools (3)
 - **get_standard_distribution**: Provides the authoritative reference for the standard English Scrabble letter counts and values
-- **score_word**: Calculates the total score for a single word played on the board
 - **validate_rack**: Checks if a set of tiles is valid according to standard English Scrabble rules
+- **score_word**: Calculates the total score for a single word played on the board
 
 
 ## 💬 Prompt Examples

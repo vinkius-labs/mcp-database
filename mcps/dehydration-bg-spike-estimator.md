@@ -14,8 +14,8 @@ This MCP server provides tools to analyze how hydration deficits impact blood gl
 
 
 ## Available Tools (3)
-- **calculate_hydration_impact**: Provides a complete analysis of how current hydration levels are affecting perceived blood glucose concentration
 - **get_hemoconcentration_risk_profile**: Translates the hydration deficit into a qualitative risk level regarding blood glucose accuracy
+- **calculate_hydration_impact**: Provides a complete analysis of how current hydration levels are affecting perceived blood glucose concentration
 - **get_hydration_status_summary**: Provides a high-level overview of the user's hydration status
 
 

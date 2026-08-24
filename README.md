@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,633 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,634 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -50,9 +50,9 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [image-video](categories/image-video.md) (32 servers)
 - [analytics](categories/analytics.md) (31 servers)
 - [customer-relationship-management](categories/customer-relationship-management.md) (31 servers)
+- [optimization](categories/optimization.md) (31 servers)
 - [security-compliance](categories/security-compliance.md) (31 servers)
 - [lifestyle](categories/lifestyle.md) (30 servers)
-- [optimization](categories/optimization.md) (30 servers)
 - [friends-mcp](categories/friends-mcp.md) (29 servers)
 - [design-creative](categories/design-creative.md) (28 servers)
 - [healthcare](categories/healthcare.md) (28 servers)

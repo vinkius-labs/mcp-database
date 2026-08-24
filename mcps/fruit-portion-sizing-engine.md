@@ -15,8 +15,8 @@ This MCP server provides precise tools for diabetic portion control by calculati
 
 ## Available Tools (3)
 - **calculate_portion_size**: Determines the precise weight and nutritional breakdown of a fruit to reach exactly 15g of carbohydrates
-- **get_fruit_nutritional_profile**: Retrieves the baseline nutritional density (carbs, sugar, fiber) for a specific fruit type
 - **list_supported_fruits**: Provides a list of all fruits currently supported by the engine
+- **get_fruit_nutritional_profile**: Retrieves the baseline nutritional density (carbs, sugar, fiber) for a specific fruit type
 
 
 ## 💬 Prompt Examples

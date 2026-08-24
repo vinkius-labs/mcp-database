@@ -33,8 +33,8 @@ Connect your **ZegoCloud** infrastructure to any AI agent to moderate and contro
 
 
 ## Available Tools (3)
-- **kickout_user**: Kick a user out of a room
 - **send_peer_message**: Send a peer-to-peer message
+- **kickout_user**: Kick a user out of a room
 - **stop_publish**: Stop publishing a stream
 
 
