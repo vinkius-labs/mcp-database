@@ -33,8 +33,8 @@ Connect **Lovo AI (Genny)** to your AI agent to transform text into lifelike spe
 
 
 ## Available Tools (4)
-- **get_tts_job**: Check the status of a previously submitted TTS job
 - **get_speaker**: Get detailed information about a specific speaker
+- **get_tts_job**: Check the status of a previously submitted TTS job
 - **list_voices**: List all available voices
 - **create_tts_job**: Submit a text-to-speech synthesis job
 

@@ -35,10 +35,10 @@ Integrate **Edgio (formerly Limelight Networks and Uplynk)** into your AI workfl
 
 ## Available Tools (17)
 - **create_event**: Creates a new live event
+- **get_dash_manifest**: Get DASH manifest for video playback
 - **delete_asset**: Permanently removes an asset from the system
 - **get_asset**: Retrieves detailed metadata for a specific asset
 - **get_channel**: Retrieves configuration and status for a channel
-- **get_dash_manifest**: Get DASH manifest for video playback
 - **get_hls_manifest**: Get HLS manifest for video playback
 - **get_playback_report**: Retrieves playback statistics (views, duration, etc.)
 - **initialize_preplay_session**: Initialize a playback session for SSAI and security

@@ -34,10 +34,15 @@ Connect your **Mapbox** account to any AI agent to leverage powerful geospatial 
 
 
 ## Available Tools (27)
-- **list_tokens**: List access tokens for a user
-- **publish_tileset**: Publish a Mapbox Tiling Service (MTS) tileset
 - **searchbox_forward**: Forward search using the Search Box API
 - **searchbox_retrieve**: Retrieve full details for a searchbox suggestion
+- **get_static_image**: Get a static map image
+- **get_vector_tile**: mvt or .vector.pbf) from a Mapbox-hosted tileset.
+
+Get a vector tile from Mapbox
+- **list_datasets**: List Mapbox datasets for a user
+- **list_tokens**: List access tokens for a user
+- **publish_tileset**: Publish a Mapbox Tiling Service (MTS) tileset
 - **searchbox_reverse**: Reverse search using the Search Box API
 - **searchbox_suggest**: Interactive location search with autocomplete
 - **geocode_batch**: Batch geocoding (v6)
@@ -45,19 +50,14 @@ Connect your **Mapbox** account to any AI agent to leverage powerful geospatial 
 - **get_dataset_feature**: Retrieve a specific feature from a dataset
 - **get_isochrone**: Computes reachable areas within a specified time or distance
 - **get_map_matching**: Snaps fuzzy GPS traces to the road network
-- **get_static_image**: Get a static map image
 - **get_tilequery**: Retrieve data about specific features from tilesets at a point
-- **get_vector_tile**: mvt or .vector.pbf) from a Mapbox-hosted tileset.
-
-Get a vector tile from Mapbox
-- **list_datasets**: List Mapbox datasets for a user
-- **create_tileset_source**: Create a Mapbox Tiling Service (MTS) source
 - **create_token**: Create a new access token
 - **delete_token**: Delete an access token
+- **create_tileset_source**: Create a Mapbox Tiling Service (MTS) source
 - **geocode_reverse**: Reverse geocoding (v6)
-- **get_matrix**: Returns travel times or distances between many points
 - **get_directions**: Calculate optimal routes and turn-by-turn instructions
 - **get_feedback**: Get user feedback
+- **get_matrix**: Returns travel times or distances between many points
 - **get_optimization**: Retrieve a previously submitted optimization solution
 - **submit_feedback**: Submit user feedback
 - **submit_optimization**: Solves the Traveling Salesperson Problem for fleet routing

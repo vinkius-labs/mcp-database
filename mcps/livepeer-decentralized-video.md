@@ -34,36 +34,36 @@ Connect your **Livepeer** account to any AI agent to orchestrate decentralized v
 
 
 ## Available Tools (34)
-- **delete_multistream_target**: Delete a multistream target
-- **delete_stream**: Delete a stream
+- **update_asset**: Update an existing asset
 - **delete_webhook**: Delete a webhook
-- **get_asset**: Retrieve details of a specific asset
-- **get_multistream_target**: Retrieve a multistream target
 - **get_playback_info**: Retrieve metadata and URLs for playing back assets or streams
 - **get_realtime_viewership**: Query real-time viewership metrics
 - **get_session_clips**: Retrieve clips associated with a specific session
-- **get_session**: Retrieve details of a specific broadcast session
-- **get_stream**: Retrieve details of a specific stream
 - **get_task**: Retrieve a specific task (e.g., upload, transcode)
-- **get_usage_metrics**: Query usage metrics (total minutes transcoded and delivered)
 - **get_viewership_metrics**: Query viewership metrics (breakdown by device, browser, location)
-- **get_webhook**: Retrieve a specific webhook
 - **create_clip**: Create a short video clip from a live stream
-- **create_multistream_target**: Create a multistream target (e.g., Twitch, YouTube)
-- **create_room**: Create a real-time WebRTC multi-participant video room
 - **create_room_user**: Create a user for a specific room
 - **create_stream**: Create a new live stream
-- **create_transcode_job**: Create an on-demand video transcode job
 - **create_webhook**: Create a webhook to subscribe to real-time events
 - **delete_asset**: Delete an asset
+- **delete_multistream_target**: Delete a multistream target
+- **delete_stream**: Delete a stream
+- **get_asset**: Retrieve details of a specific asset
+- **get_multistream_target**: Retrieve a multistream target
+- **get_session**: Retrieve details of a specific broadcast session
+- **get_stream**: Retrieve details of a specific stream
+- **get_usage_metrics**: Query usage metrics (total minutes transcoded and delivered)
+- **get_webhook**: Retrieve a specific webhook
 - **list_assets**: Retrieve all assets
-- **list_sessions**: Retrieve all broadcast sessions
 - **list_streams**: Retrieve all streams
+- **terminate_stream**: Terminate an active stream
+- **create_multistream_target**: Create a multistream target (e.g., Twitch, YouTube)
+- **create_room**: Create a real-time WebRTC multi-participant video room
+- **create_transcode_job**: Create an on-demand video transcode job
+- **list_sessions**: Retrieve all broadcast sessions
 - **list_tasks**: Retrieve all tasks
 - **request_asset_upload**: Request a direct upload URL for a new asset
 - **start_room_egress**: Broadcast a room session to a Livepeer Stream (RTMP Egress)
-- **terminate_stream**: Terminate an active stream
-- **update_asset**: Update an existing asset
 - **update_multistream_target**: Update a multistream target
 - **update_stream**: Update an existing stream
 - **update_webhook**: Update a webhook

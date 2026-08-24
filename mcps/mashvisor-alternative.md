@@ -36,21 +36,21 @@ No more manual spreadsheet updates or jumping between tabs to find property owne
 
 
 ## Available Tools (16)
-- **get_historical_sales**: Get historical sales for a property
-- **get_ownership_info**: Get ownership information
-- **get_property_comps**: Find comparable properties (nearby)
-- **get_property_details**: Get basic attributes for a specific property
-- **get_neighborhood_overview**: Get neighborhood overview (bar)
 - **get_airbnb_listings**: Get Airbnb performance metrics
 - **get_city_investment_performance**: Get city investment performance
 - **get_full_property_profile**: Get full property profile
 - **get_historical_performance**: Get 36 months of historical STR performance
-- **list_cities**: List cities in a specific state
+- **get_historical_sales**: Get historical sales for a property
 - **get_marketplace_listings**: Search marketplace listings
+- **get_ownership_info**: Get ownership information
+- **get_property_comps**: Find comparable properties (nearby)
+- **get_property_details**: Get basic attributes for a specific property
 - **get_rental_rates**: Get long-term rental rates
-- **rento_calculator_lookup**: Rento-Calculator Lookup (Airbnb metrics)
-- **search_properties**: Programmatic property search
 - **get_top_neighborhoods**: List top neighborhoods
+- **rento_calculator_lookup**: Rento-Calculator Lookup (Airbnb metrics)
+- **get_neighborhood_overview**: Get neighborhood overview (bar)
+- **list_cities**: List cities in a specific state
+- **search_properties**: Programmatic property search
 - **validate_city**: Validate a city name
 
 

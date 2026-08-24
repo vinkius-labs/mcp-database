@@ -34,25 +34,25 @@ Connect to **Lit Protocol** to orchestrate decentralized identity and access con
 
 
 ## Available Tools (20)
-- **confirm_payment**: Finalize credit top-up after payment
-- **get_billing_balance**: Check credit balance
-- **create_account**: Create a new Lit account
-- **create_payment_intent**: Create a Stripe PaymentIntent (min $5.00)
-- **create_wallet**: Request a new PKP for the account
+- **add_action**: Register a standalone action (name + CID)
+- **add_pkp_to_group**: Add a PKP to a specific group
 - **execute_lit_action**: Provide either code or ipfs_id.
 
 Execute a Lit Action
+- **get_billing_balance**: Check credit balance
+- **update_usage_api_key**: Update permissions for a usage key
+- **confirm_payment**: Finalize credit top-up after payment
+- **create_account**: Create a new Lit account
+- **create_payment_intent**: Create a Stripe PaymentIntent (min $5.00)
+- **create_wallet**: Request a new PKP for the account
 - **list_actions**: List registered actions
 - **list_api_keys**: List usage keys (metadata only)
 - **list_wallets**: List all PKPs owned by the account
 - **remove_group**: Delete a group
 - **remove_pkp_from_group**: Remove a PKP from a group
 - **remove_usage_api_key**: Delete a usage key
-- **update_usage_api_key**: Update permissions for a usage key
-- **add_action_to_group**: Add an IPFS CID to a group
-- **add_action**: Register a standalone action (name + CID)
 - **add_group**: Create a new group
-- **add_pkp_to_group**: Add a PKP to a specific group
+- **add_action_to_group**: Add an IPFS CID to a group
 - **add_usage_api_key**: Create a scoped usage key
 - **check_account_exists**: Verify if an account exists for the provided API key
 - **list_groups**: List all groups

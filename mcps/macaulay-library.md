@@ -33,8 +33,8 @@ Connect to the **Macaulay Library** at the Cornell Lab of Ornithology. This MCP 
 
 
 ## Available Tools (3)
-- **search_media**: Search for media assets in the Macaulay Library
 - **get_asset**: Retrieve detailed metadata for a specific media asset
+- **search_media**: Search for media assets in the Macaulay Library
 - **get_recent_media**: Retrieve the most recently uploaded media assets
 
 

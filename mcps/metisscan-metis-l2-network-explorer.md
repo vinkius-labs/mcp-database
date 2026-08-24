@@ -34,36 +34,36 @@ Connect your AI agent to the **Metis L2** ecosystem through Metisscan. Gain real
 
 
 ## Available Tools (26)
-- **eth_call**: Execute a message call (RPC)
 - **eth_estimate_gas**: Estimate gas for a transaction (RPC)
 - **eth_get_block_by_number**: Get block by number (RPC)
 - **eth_get_code**: Get code at address (RPC)
 - **eth_get_transaction_by_hash**: Get transaction by hash (RPC)
 - **eth_get_transaction_receipt**: Get transaction receipt (RPC)
-- **get_address_counters**: g., transaction count) for a specific address.
-
-Get transaction and token counters for an address
-- **get_address_tokens**: List token balances for an address
 - **get_address**: Get details for an address
+- **get_address_tokens**: List token balances for an address
 - **get_address_transactions**: List transactions for an address
 - **get_block**: Get details for a specific block
 - **get_block_transactions**: List transactions in a block
-- **get_smart_contract**: Get details for a smart contract
 - **get_smart_contract_verification_config**: Get verification configuration for a smart contract
 - **get_token_holders**: List token holders
 - **graphql_query**: Execute a GraphQL query on Metisscan
-- **eth_block_number**: Get the most recent block number (RPC)
+- **eth_call**: Execute a message call (RPC)
 - **eth_get_balance**: Get address balance (RPC)
+- **get_address_counters**: g., transaction count) for a specific address.
+
+Get transaction and token counters for an address
+- **get_smart_contract**: Get details for a smart contract
 - **get_token**: Get details for a specific token
 - **get_token_transfers**: List token transfers
+- **list_transactions**: List recent transactions on Metis L2
+- **eth_block_number**: Get the most recent block number (RPC)
+- **get_transaction**: Get details for a specific transaction
 - **get_transaction_internal_transactions**: g., contract calls) triggered by a specific transaction.
 
 List internal transactions for a transaction
 - **get_transaction_logs**: List event logs for a transaction
-- **get_transaction**: Get details for a specific transaction
 - **list_blocks**: List recent blocks on Metis L2
 - **list_tokens**: List tokens on the network
-- **list_transactions**: List recent transactions on Metis L2
 
 
 ## 💬 Prompt Examples

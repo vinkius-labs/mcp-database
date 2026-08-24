@@ -34,8 +34,8 @@ No more manual searching through block explorers or decentralized gateways to fi
 
 
 ## Available Tools (2)
-- **get_entries**: Fetch entries for a Mirror publication
 - **get_entry**: Fetch a single Mirror entry by digest
+- **get_entries**: Fetch entries for a Mirror publication
 
 
 ## 💬 Prompt Examples

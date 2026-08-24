@@ -40,9 +40,6 @@ No more jumping between browser tabs to correlate logs. Your AI can now act as a
 - **get_events**: Max 5,000 events per search.
 
 Retrieve events for a given search rsid
-- **get_field_values**: Get counts of values for a specific field (Faceting)
-- **list_fields**: List available fields in Loggly
-- **list_users**: Retrieve a list of active users
 - **search_events**: Use get_events with the rsid to fetch the actual logs.
 
 Initiate an asynchronous search query
@@ -52,6 +49,9 @@ Send batches of line-separated events to Loggly
 - **send_event**: Use is_json=true if event_data is a JSON string. Max size 1MB.
 
 Send a single or multiline event to Loggly
+- **get_field_values**: Get counts of values for a specific field (Faceting)
+- **list_fields**: List available fields in Loggly
+- **list_users**: Retrieve a list of active users
 
 
 ## 💬 Prompt Examples

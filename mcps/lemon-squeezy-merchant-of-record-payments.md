@@ -40,10 +40,40 @@ No more switching between tabs to find a customer's ID or check a product's stat
 - **get_order**: Retrieve a specific order
 - **list_products**: List all products
 - **list_files**: List all files
-- **update_webhook**: Update a webhook
 - **activate_license**: Activate a license key
 - **cancel_subscription**: Cancel a subscription
 - **create_checkout**: Create a checkout
+- **generate_subscription_invoice**: Generate a subscription invoice
+- **get_checkout**: Retrieve a specific checkout
+- **get_customer**: Retrieve a specific customer
+- **get_discount**: Retrieve a specific discount
+- **get_discount_redemption**: Retrieve a specific discount redemption
+- **get_file**: Retrieve a specific file
+- **get_license_key**: Retrieve a specific license key
+- **get_order_item**: Retrieve a specific order item
+- **get_price**: Retrieve a specific price
+- **get_product**: Retrieve a specific product
+- **get_store**: Retrieve a specific store
+- **get_subscription**: Retrieve a specific subscription
+- **get_subscription_item**: Retrieve a specific subscription item
+- **get_subscription_item_current_usage**: Retrieve current usage for a subscription item
+- **get_usage_record**: Retrieve a specific usage record
+- **get_webhook**: Retrieve a specific webhook
+- **list_discount_redemptions**: List all discount redemptions
+- **list_discounts**: List all discounts
+- **list_license_keys**: List all license keys
+- **list_order_items**: List all order items
+- **list_prices**: List all prices
+- **list_stores**: List all stores
+- **list_subscription_items**: List all subscription items
+- **list_usage_records**: List all usage records
+- **list_variants**: List all variants
+- **list_webhooks**: List all webhooks
+- **refund_order**: Issue a refund for an order
+- **refund_subscription_invoice**: Issue a refund for a subscription invoice
+- **update_subscription_item**: Update a subscription item
+- **update_subscription**: Update a subscription
+- **validate_license**: Validate a license key
 - **create_customer**: Create a new customer
 - **create_discount**: Create a discount
 - **create_usage_record**: Create a usage record
@@ -52,49 +82,19 @@ No more switching between tabs to find a customer's ID or check a product's stat
 - **delete_discount**: Delete a discount
 - **delete_webhook**: Delete a webhook
 - **generate_order_invoice**: Generate an invoice for an order
-- **generate_subscription_invoice**: Generate a subscription invoice
 - **get_affiliate**: Retrieve a specific affiliate
-- **get_checkout**: Retrieve a specific checkout
-- **get_customer**: Retrieve a specific customer
-- **get_discount_redemption**: Retrieve a specific discount redemption
-- **get_discount**: Retrieve a specific discount
-- **get_file**: Retrieve a specific file
-- **get_license_key**: Retrieve a specific license key
-- **get_order_item**: Retrieve a specific order item
-- **get_price**: Retrieve a specific price
-- **get_product**: Retrieve a specific product
-- **get_store**: Retrieve a specific store
 - **get_subscription_invoice**: Retrieve a specific subscription invoice
-- **get_subscription_item_current_usage**: Retrieve current usage for a subscription item
-- **get_subscription_item**: Retrieve a specific subscription item
-- **get_subscription**: Retrieve a specific subscription
-- **get_usage_record**: Retrieve a specific usage record
 - **get_variant**: Retrieve a specific variant
-- **get_webhook**: Retrieve a specific webhook
 - **list_affiliates**: List all affiliates
 - **list_checkouts**: List all checkouts
 - **list_customers**: List all customers
-- **list_discount_redemptions**: List all discount redemptions
-- **list_discounts**: List all discounts
 - **list_license_key_instances**: List all license key instances
-- **list_license_keys**: List all license keys
-- **list_order_items**: List all order items
 - **list_orders**: List all orders
-- **list_prices**: List all prices
-- **list_stores**: List all stores
 - **list_subscription_invoices**: List all subscription invoices
-- **list_subscription_items**: List all subscription items
 - **list_subscriptions**: List all subscriptions
-- **list_usage_records**: List all usage records
-- **list_variants**: List all variants
-- **list_webhooks**: List all webhooks
-- **refund_order**: Issue a refund for an order
-- **refund_subscription_invoice**: Issue a refund for a subscription invoice
 - **update_customer**: Update a customer
 - **update_license_key**: Update a license key
-- **update_subscription_item**: Update a subscription item
-- **update_subscription**: Update a subscription
-- **validate_license**: Validate a license key
+- **update_webhook**: Update a webhook
 
 
 ## 💬 Prompt Examples
