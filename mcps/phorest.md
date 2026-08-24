@@ -34,25 +34,25 @@ Connect your **Phorest** account to any AI agent to streamline your salon or spa
 
 
 ## Available Tools (17)
+- **checkin_appointment**: Check-in a client for an appointment
+- **list_appointments**: List appointments for a branch
 - **get_appointment**: Get specific appointment details
 - **get_branch_timetable**: Get the branch work timetable
 - **get_client_course**: Get details of a specific client course
 - **create_break**: Create a staff break
 - **get_csv_export_job**: Retrieve the status and download URL of a CSV export job
 - **get_staff_timetable**: Get timetables for all staff in a branch
-- **list_appointments**: List appointments for a branch
 - **list_client_courses**: List client courses (packages)
-- **checkin_appointment**: Check-in a client for an appointment
 - **confirm_appointments**: Confirm one or more appointments
 - **create_client**: Create a new client
 - **create_csv_export_job**: Create a CSV export job
 - **list_breaks**: List staff breaks
 - **list_clients**: List clients for a business
 - **update_appointment**: Update an appointment
-- **update_client_course**: Update a client course (e.g., expiry date)
 - **update_client**: The version field is required for optimistic locking.
 
 Update an existing client
+- **update_client_course**: Update a client course (e.g., expiry date)
 
 
 ## 💬 Prompt Examples

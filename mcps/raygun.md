@@ -35,12 +35,12 @@ Connect your **Raygun** account to any AI agent to gain deep visibility into you
 
 ## Available Tools (7)
 - **create_legacy_deployment**: Create a deployment using the legacy API
+- **send_crash_report**: Send a manual crash report to Raygun
 - **list_applications**: List accessible Raygun applications
 - **list_deployments**: List deployments for a specific application
 - **rum_authenticate**: Authenticate with the legacy RUM API
 - **rum_get_session**: Get RUM session details
 - **rum_search_sessions**: Search RUM sessions
-- **send_crash_report**: Send a manual crash report to Raygun
 
 
 ## 💬 Prompt Examples

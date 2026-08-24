@@ -34,11 +34,11 @@ Integrate your **Redox** environment with any AI agent to streamline healthcare 
 
 
 ## Available Tools (4)
+- **search_patient**: Search for a patient in Redox FHIR API
+- **create_observation**: Save vitals or observations (Writeback)
 - **search_condition**: g., problem-list-item) associated with a specific patient ID.
 
 Retrieve diagnoses/conditions for a patient
-- **search_patient**: Search for a patient in Redox FHIR API
-- **create_observation**: Save vitals or observations (Writeback)
 - **post_data_model**: Send a Redox Data Model API event
 
 

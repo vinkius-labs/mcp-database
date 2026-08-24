@@ -34,9 +34,12 @@ Connect **PDFShift** to your AI agent to transform web content into professional
 
 
 ## Available Tools (15)
+- **convert_to_jpeg**: Convert URL or HTML to JPEG
 - **convert_to_pdf**: Use filename parameter to get a JSON response with an S3 URL instead of raw binary.
 
 Convert URL or HTML to PDF
+- **get_log**: Get log by request ID
+- **list_logs**: List recent logs
 - **convert_to_png**: Convert URL or HTML to PNG
 - **convert_to_webp**: Convert URL or HTML to WEBP
 - **create_template**: Create a new template
@@ -44,11 +47,8 @@ Convert URL or HTML to PDF
 - **generate_from_template**: Generate document from a template
 - **get_account**: Get account details
 - **get_credits_usage**: Get credits usage
-- **list_logs**: List recent logs
 - **list_templates**: List all templates
 - **update_template**: Update an existing template
-- **get_log**: Get log by request ID
-- **convert_to_jpeg**: Convert URL or HTML to JPEG
 - **get_template_html**: Get template HTML content
 - **list_invoices**: List invoices
 

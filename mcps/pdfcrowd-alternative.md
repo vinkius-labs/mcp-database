@@ -36,18 +36,18 @@ Transform web content and documents with the **Pdfcrowd** MCP server. This power
 - **convert_html_to_image**: Returns base64 encoded image data.
 
 Capture a screenshot of a web page or HTML content
-- **convert_html_to_pdf**: Returns base64 encoded PDF data.
-
-Convert a web page or HTML string to PDF
-- **convert_pdf_to_html**: Returns base64 encoded HTML data.
-
-Transform a PDF document into HTML
 - **convert_pdf_to_text**: Returns base64 encoded text data.
 
 Transform a PDF document into plain text
 - **generate_business_document**: Returns base64 encoded PDF data.
 
 Generate professional documents (invoices, receipts) from JSON data
+- **convert_html_to_pdf**: Returns base64 encoded PDF data.
+
+Convert a web page or HTML string to PDF
+- **convert_pdf_to_html**: Returns base64 encoded HTML data.
+
+Transform a PDF document into HTML
 
 
 ## 💬 Prompt Examples

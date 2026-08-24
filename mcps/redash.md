@@ -34,27 +34,27 @@ Connect your **Redash** instance to any AI agent to interact with your data thro
 
 
 ## Available Tools (17)
+- **execute_query**: Parameters must be provided for parameterized queries.
+
+Initiates a new query execution or returns a cached result
+- **get_query_result**: Returns a query result by its result ID
+- **list_dashboards**: Returns a paginated array of dashboard objects
+- **update_data_source**: Configure a data source (e.g., SSH tunnel)
 - **list_queries**: List Redash queries
 - **test_data_source**: Test connection for a data source
 - **archive_dashboard**: Archive the specified dashboard
 - **archive_query**: Archive the specified query
 - **create_dashboard**: Create a new dashboard object
 - **create_query**: Create a new query object
-- **execute_query**: Parameters must be provided for parameterized queries.
-
-Initiates a new query execution or returns a cached result
 - **get_cached_query_result**: Get a cached result for a query ID (non-parameterized only)
 - **get_dashboard**: Returns an individual dashboard object
 - **get_data_source**: Get data source details
 - **get_job**: SUCCESS includes query_result_id.
 
 Returns the status of a query task (job)
-- **get_query_result**: Returns a query result by its result ID
 - **get_query**: Get an individual query object
 - **update_dashboard**: Edit an existing dashboard object
-- **update_data_source**: Configure a data source (e.g., SSH tunnel)
 - **update_query**: Edit an existing query object
-- **list_dashboards**: Returns a paginated array of dashboard objects
 
 
 ## 💬 Prompt Examples

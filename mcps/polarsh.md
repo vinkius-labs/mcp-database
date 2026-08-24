@@ -33,11 +33,10 @@ Connect your **Polar.sh** account to any AI agent to manage your open-source mon
 
 
 ## Available Tools (36)
+- **confirm_checkout_client**: Confirm a session from the client
 - **create_checkout**: Create a checkout session
-- **revoke_subscription**: Revoke/cancel a subscription immediately
-- **create_benefit**: Create a benefit
-- **create_customer_session**: Generate a customer session token
 - **create_customer**: Create a customer
+- **create_customer_session**: Generate a customer session token
 - **create_product**: Create a product
 - **create_subscription**: Create a subscription (free products only)
 - **create_webhook_endpoint**: Create a webhook endpoint
@@ -45,32 +44,33 @@ Connect your **Polar.sh** account to any AI agent to manage your open-source mon
 - **generate_invoice**: Generate an invoice for an order
 - **get_benefit**: Get benefit details
 - **get_checkout**: Get session details
+- **get_subscription**: Get subscription details
+- **list_customers**: List customers
+- **list_orders**: List orders
+- **list_products**: Filter by organization_id, is_recurring, etc.
+
+List products
+- **update_order**: Update order (e.g., billing details)
+- **validate_portal_license_key**: Validate a license key
+- **revoke_subscription**: Revoke/cancel a subscription immediately
+- **create_benefit**: Create a benefit
 - **get_customer_state**: Get full overview of customer active subscriptions and benefits
 - **get_invoice**: Retrieve generated invoice data
 - **get_order**: Get order details
 - **get_portal_me**: Get authenticated customer info
 - **get_product**: Get product details
-- **get_subscription**: Get subscription details
 - **list_benefits**: List benefits
 - **list_checkouts**: List checkout sessions
-- **list_customers**: List customers
-- **list_orders**: List orders
 - **list_portal_benefit_grants**: List benefits granted to the customer
 - **list_portal_license_keys**: List customer license keys
 - **list_portal_orders**: List customer orders
 - **list_portal_subscriptions**: List customer subscriptions
-- **list_products**: Filter by organization_id, is_recurring, etc.
-
-List products
 - **list_subscriptions**: List subscriptions
 - **list_webhook_deliveries**: List and monitor webhook deliveries
 - **update_checkout**: Update a session
-- **update_order**: Update order (e.g., billing details)
-- **update_product_benefits**: Update benefits granted by a product
 - **update_product**: Update a product
+- **update_product_benefits**: Update benefits granted by a product
 - **update_subscription**: Update a subscription
-- **validate_portal_license_key**: Validate a license key
-- **confirm_checkout_client**: Confirm a session from the client
 
 
 ## 💬 Prompt Examples
