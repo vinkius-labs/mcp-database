@@ -35,33 +35,33 @@ Connect your **VectorShift** account to any AI agent and take full control of yo
 ## Available Tools (29)
 - **delete_knowledge_base_documents**: Delete specific documents by ID from a knowledge base
 - **list_knowledge_bases**: List all available knowledge bases
-- **upload_chatbot_files**: Upload files to a chatbot session
-- **bulk_run_pipeline**: Execute multiple instances of a pipeline in parallel
 - **create_chatbot**: Create a new chatbot
 - **create_knowledge_base**: Create a new knowledge base
 - **create_pipeline**: Create a new pipeline
 - **create_transformation**: Create a new transformation (Python/JS)
-- **delete_chatbot**: Delete a chatbot
-- **delete_knowledge_base**: Delete a knowledge base
 - **delete_pipeline**: Delete a pipeline by ID
 - **delete_transformation**: Delete a transformation
 - **get_chatbot**: Fetch a chatbot by id or name
-- **get_knowledge_base**: Fetch a knowledge base by id or name
 - **get_pipeline**: Fetch a pipeline by id or name
 - **get_transformation**: Fetch a transformation by id or name
 - **index_knowledge_base**: Add data (files, URLs, etc.) to a knowledge base
-- **list_chatbots**: List all available chatbots
-- **list_knowledge_base_documents**: Find documents within a knowledge base
 - **list_pipelines**: List all available pipelines
 - **list_transformations**: List all available transformations
 - **pause_pipeline**: Pause a currently running pipeline instance
-- **query_knowledge_base**: Query a knowledge base with semantic search
-- **resume_pipeline**: Resume one or more paused pipeline instances
-- **run_chatbot**: Send a message to a chatbot and get a response
 - **run_pipeline**: Execute a pipeline with specified inputs
 - **run_transformation**: Execute a transformation with inputs
 - **terminate_chatbot**: Terminate an active chatbot session
 - **terminate_pipeline**: Stop a currently running pipeline instance
+- **bulk_run_pipeline**: Execute multiple instances of a pipeline in parallel
+- **delete_chatbot**: Delete a chatbot
+- **delete_knowledge_base**: Delete a knowledge base
+- **get_knowledge_base**: Fetch a knowledge base by id or name
+- **list_chatbots**: List all available chatbots
+- **list_knowledge_base_documents**: Find documents within a knowledge base
+- **query_knowledge_base**: Query a knowledge base with semantic search
+- **resume_pipeline**: Resume one or more paused pipeline instances
+- **run_chatbot**: Send a message to a chatbot and get a response
+- **upload_chatbot_files**: Upload files to a chatbot session
 
 
 ## 💬 Prompt Examples

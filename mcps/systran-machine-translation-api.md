@@ -34,15 +34,15 @@ Connect to **Systran**, the pioneer in machine translation, to empower your AI a
 
 
 ## Available Tools (5)
-- **dictionary_lookup**: Look up terms in Systran or user-defined dictionaries
 - **translate_file**: Returns a requestId to track the asynchronous translation task.
 
 Translate documents while preserving formatting
+- **extract_morphology**: Extract morphological information from text
+- **detect_language**: Identify the language of a given text
+- **dictionary_lookup**: Look up terms in Systran or user-defined dictionaries
 - **translate_text**: Use "auto" for the source language to automatically detect it.
 
 Translate text from a source language to a target language
-- **extract_morphology**: Extract morphological information from text
-- **detect_language**: Identify the language of a given text
 
 
 ## 💬 Prompt Examples

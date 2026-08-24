@@ -35,18 +35,18 @@ Connect **Tomorrow.io** to your AI agent to leverage the world's most accurate w
 
 
 ## Available Tools (10)
-- **list_events**: Retrieve specific weather events for a location based on insight categories
 - **get_forecast_weather**: Retrieve hourly or daily weather forecasts
+- **list_events**: Retrieve specific weather events for a location based on insight categories
+- **list_insights**: List all pre-defined or custom insight categories
+- **post_timelines**: Retrieve weather data for complex location types like GeoJSON geometries
+- **get_recent_history_weather**: Retrieve weather history for the last 24 hours
+- **get_map_tile**: Retrieve weather map tiles for integration into mapping applications
+- **get_realtime_weather**: Retrieve current weather conditions for a location
 - **get_timelines**: Fields can be temperature, precipitationIntensity, etc.
 
 Retrieve weather data for a specific location and time range
-- **list_insights**: List all pre-defined or custom insight categories
-- **list_locations**: List all pre-defined locations in your account
-- **get_map_tile**: Retrieve weather map tiles for integration into mapping applications
-- **post_timelines**: Retrieve weather data for complex location types like GeoJSON geometries
-- **get_realtime_weather**: Retrieve current weather conditions for a location
-- **get_recent_history_weather**: Retrieve weather history for the last 24 hours
 - **list_alerts**: List all active weather alerts based on your insights and locations
+- **list_locations**: List all pre-defined locations in your account
 
 
 ## 💬 Prompt Examples

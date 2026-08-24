@@ -37,23 +37,23 @@ Connect your AI agent to the **Ticketmaster** ecosystem to discover live enterta
 - **search_intl_events**: Search events in international markets (EU)
 - **search_venues**: Search for venues
 - **suggest**: Find search suggestions
-- **add_billing**: Add billing to a cart (Partner API)
 - **add_shipping**: Add shipping to a cart (Partner API)
 - **commit_purchase**: Commit a ticket purchase (Partner API)
 - **get_discovery_feed**: Get bulk event data download URIs per country
 - **get_event**: Get details for a specific event
 - **get_intl_event**: Get international event details (EU)
 - **get_intl_similar_attractions**: Find similar attractions in international markets (EU)
-- **get_inventory_status**: Get near real-time availability status for primary and resale inventory
 - **get_order**: Retrieve detailed order info (Partner API)
-- **get_top_picks**: Get seat recommendations based on availability and quality scores
-- **get_top_picks_universal**: Get seat recommendations using a Universal Event ID
 - **publish_attraction**: Publish a new attraction
 - **publish_event**: Publish a new event
 - **publish_venue**: Publish a new venue
+- **search_classifications**: Search for genres, segments, and sub-genres
+- **add_billing**: Add billing to a cart (Partner API)
+- **get_inventory_status**: Get near real-time availability status for primary and resale inventory
+- **get_top_picks**: Get seat recommendations based on availability and quality scores
+- **get_top_picks_universal**: Get seat recommendations using a Universal Event ID
 - **reserve_tickets**: Reserve tickets for an event (Partner API)
 - **search_attractions**: Search for artists, sports teams, etc
-- **search_classifications**: Search for genres, segments, and sub-genres
 - **search_events**: Find events by location, date, keyword, etc
 - **update_published_event**: Update an existing published event
 

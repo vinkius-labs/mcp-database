@@ -28,24 +28,15 @@ Connect **Weatherbit** to your AI agent to retrieve hyper-local weather intellig
 
 
 ## Available Tools (14)
-- **get_alerts**: Provide lat/lon OR city OR postal_code OR city_id.
-
-Get severe weather alerts
 - **get_current_airquality**: 5, PM10, CO, SO2, NO2, O3) and AQI. Provide lat/lon OR city OR postal_code OR city_id.
 
 Get current air quality
-- **get_current_lightning**: Requires lat and lon.
+- **get_alerts**: Provide lat/lon OR city OR postal_code OR city_id.
 
-Get nearest lightning observations
-- **get_current_weather**: Provide lat/lon OR city OR postal_code OR city_id OR station.
-
-Get current weather observations
+Get severe weather alerts
 - **get_daily_forecast**: Provide lat/lon OR city OR postal_code OR city_id.
 
 Get 16-day daily forecast
-- **get_daily_history**: Requires lat, lon, start_date, end_date (YYYY-MM-DD).
-
-Get daily historical weather
 - **get_geocode**: Provide city OR postal_code OR city_id OR station.
 
 Geocoding API
@@ -61,13 +52,22 @@ Get 1-hour minutely precipitation forecast
 - **get_normals**: Requires lat, lon, start_day, end_day (MM-DD).
 
 Get climate normals (1991-2020)
+- **get_airquality_forecast**: Requires lat and lon.
+
+Get 3-day hourly air quality forecast
+- **get_current_lightning**: Requires lat and lon.
+
+Get nearest lightning observations
+- **get_current_weather**: Provide lat/lon OR city OR postal_code OR city_id OR station.
+
+Get current weather observations
+- **get_daily_history**: Requires lat, lon, start_date, end_date (YYYY-MM-DD).
+
+Get daily historical weather
 - **get_subhourly_history**: Requires lat, lon, start_date, end_date.
 
 Get sub-hourly historical weather
 - **get_subscription_usage**: Get subscription usage
-- **get_airquality_forecast**: Requires lat and lon.
-
-Get 3-day hourly air quality forecast
 
 
 ## 💬 Prompt Examples

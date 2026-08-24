@@ -33,9 +33,9 @@ Connect your **Verbit** account to any AI agent to streamline your professional 
 
 
 ## Available Tools (3)
-- **get_transcript**: Download the completed transcript
-- **create_job**: Upload a media file for transcription
 - **get_job**: Check the progress of a transcription job
+- **create_job**: Upload a media file for transcription
+- **get_transcript**: Download the completed transcript
 
 
 ## 💬 Prompt Examples

@@ -33,10 +33,10 @@ Connect your **TiDB Cloud** account to any AI agent and manage your distributed 
 
 
 ## Available Tools (4)
-- **get_project**: Retrieve details for a specific project
-- **list_clusters**: Retrieve all Dedicated clusters within a project
 - **list_instances**: Retrieve all TiDB X instances within a project
 - **list_projects**: List all accessible projects in your organization
+- **get_project**: Retrieve details for a specific project
+- **list_clusters**: Retrieve all Dedicated clusters within a project
 
 
 ## 💬 Prompt Examples

@@ -35,9 +35,9 @@ Connect to the **Tronald Dump** API to retrieve, search, and categorize quotes f
 ## Available Tools (5)
 - **get_random_quote**: Get a random Donald Trump quote
 - **get_quote**: Get a specific quote by ID
-- **get_quotes_by_tag**: Get quotes associated with a specific tag
 - **get_tags**: Get a list of all tags
 - **search_quotes**: Search for quotes containing specific text
+- **get_quotes_by_tag**: Get quotes associated with a specific tag
 
 
 ## 💬 Prompt Examples

@@ -35,16 +35,16 @@ Connect to the **SuperHero API** and bring the multiverse to your AI agent. Acce
 
 
 ## Available Tools (8)
-- **get_powerstats**: Get powerstats for a specific character
 - **get_work**: Get work details for a specific character
-- **search_characters**: Useful for finding the ID to use in other endpoints.
-
-Search for characters by their name
+- **get_connections**: Get connections for a specific character
+- **get_image**: Get the portrait image URL for a specific character
 - **get_appearance**: Get physical appearance statistics for a specific character
 - **get_biography**: Get biographical data for a specific character
 - **get_character**: Get all information for a specific character by ID
-- **get_connections**: Get connections for a specific character
-- **get_image**: Get the portrait image URL for a specific character
+- **get_powerstats**: Get powerstats for a specific character
+- **search_characters**: Useful for finding the ID to use in other endpoints.
+
+Search for characters by their name
 
 
 ## 💬 Prompt Examples

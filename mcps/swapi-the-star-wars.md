@@ -41,9 +41,6 @@ List or search Star Wars people/characters
 
 Get a specific SWAPI resource by its URL
 - **get_root**: Get SWAPI root resources
-- **list_films**: Use the search parameter to filter by title.
-
-List or search Star Wars films
 - **list_planets**: Use the search parameter to filter by name.
 
 List or search Star Wars planets
@@ -56,6 +53,9 @@ List or search Star Wars starships
 - **list_vehicles**: Use the search parameter to filter by name or model.
 
 List or search Star Wars vehicles
+- **list_films**: Use the search parameter to filter by title.
+
+List or search Star Wars films
 
 
 ## 💬 Prompt Examples

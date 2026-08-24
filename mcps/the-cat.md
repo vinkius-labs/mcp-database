@@ -34,14 +34,14 @@ Connect to **The Cat API** and bring feline intelligence to your AI workflows. W
 
 ## Available Tools (9)
 - **create_favourite**: Save an image to your favorites
-- **create_vote**: Vote on an image (Up or Down)
 - **get_favourites**: Retrieve your favorited images
 - **get_image**: Get details for a specific image
 - **get_votes**: Retrieve votes cast by your account
 - **list_breeds**: Retrieve a list of all cat breeds
 - **search_breeds**: Search for breeds by name
-- **search_images**: Search for cat images
 - **upload_image**: Upload your own cat image
+- **create_vote**: Vote on an image (Up or Down)
+- **search_images**: Search for cat images
 
 
 ## 💬 Prompt Examples

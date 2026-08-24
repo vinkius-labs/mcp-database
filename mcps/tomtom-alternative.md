@@ -38,9 +38,9 @@ Connect **TomTom**'s industry-leading location technology to your AI agent to un
 - **get_map_tile**: Returns the URL to the tile image.
 
 Get a raster map tile URL
-- **fuzzy_search**: Single-line fuzzy search for addresses and POIs
-- **calculate_advanced_route**: Calculate an advanced route with supporting points or avoid vignettes
 - **calculate_route**: Calculate a route between origin and destination
+- **calculate_advanced_route**: Calculate an advanced route with supporting points or avoid vignettes
+- **fuzzy_search**: Single-line fuzzy search for addresses and POIs
 - **get_traffic_incidents**: Get real-time traffic incidents and flow information
 
 
