@@ -7,16 +7,15 @@
 
 **Category:** [finance](../categories/finance.md)
 
-Calculate and optimize daily and monthly costs for diabetes management supplies.
+Calculate precise daily and monthly costs for diabetes supplies like insulin, CGM, and test strips.
 
 ## Description
-This MCP server provides precise tools for modeling diabetes management expenses. Use `calculate_budget` to get a detailed breakdown of daily and monthly costs for insulin, CGM sensors, and test strips. You can also use `estimate_optimization_savings` to model potential cost reductions through more efficient supply usage, or `get_supply_tier_info` to categorize monitoring intensity based on strip consumption.
+This MCP server provides deterministic financial planning tools for diabetes management. It allows AI agents to calculate exact daily and monthly expenditures for essential supplies including insulin, continuous glucose monitors (CGM), and blood glucose test strips. By normalizing all costs to a standard 30-day month, it provides a reliable daily burn rate and identifies potential savings through optimized usage patterns. Use `calculate_monthly_budget` to get a full breakdown of costs or `calculate_potential_savings` to estimate budget reductions.
 
 
 ## Available Tools (3)
-- **calculate_budget**: Provides a comprehensive breakdown of current monthly and daily expenses based on specific supply usage
-- **estimate_optimization_savings**: Calculates the potential monthly cost reduction if a specific supply is used more efficiently
-- **get_supply_tier_info**: Identifies the consumption tier for a user based on their monthly strip usage
+- **calculate_monthly_budget**: Calculate total monthly expenditure and daily burn rate
+- **calculate_potential_savings**: Calculate potential savings from optimized usage
 
 
 ## 💬 Prompt Examples
@@ -24,38 +23,38 @@ This MCP server provides precise tools for modeling diabetes management expenses
 Here are some examples of how you can interact with the **Diabetes Supply Budget Optimizer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Calculate my monthly diabetes budget if I use 50 units of insulin at $0.50 per unit, 2 CGM sensors at $70 each per month, and 4 test strips per day at $0.25 each."
+> "What is my total monthly expenditure and daily burn rate for my diabetes supplies?"
 
 **🤖 AI Agent:**
-> Your daily insulin cost is $25.00, monthly CGM cost is $140.00, and monthly strip cost is $90.00. Your total monthly cost is $505.00, which averages to $16.83 per day.
+> Your total monthly cost is $450.00, with a daily burn rate of $15.00.
 
 ---
 
 **👤 You:**
-> "How much would I save monthly if I reduced my test strip usage by 50%? My current monthly strip cost is $90.00."
+> "How much could I save if I reduced my test strip usage by 50%?"
 
 **🤖 AI Agent:**
-> By reducing your usage by 50%, your potential monthly savings would be $45.00, bringing your new monthly strip cost to $45.00.
+> By reducing your test strip usage by 50%, you would save $30.00 per month.
 
 ---
 
 **👤 You:**
-> "What is my monitoring intensity tier if I use 6 test strips per day?"
+> "Calculate my budget: 40 units of insulin per day at $0.50/unit, 4 CGM sensors per month at $75/sensor, and 4 test strips per day at $1/strip."
 
 **🤖 AI Agent:**
-> With 6 test strips per day, you fall into the High usage tier, which is characterized by frequent testing often required for intensive insulin regimens.
+> Your total monthly cost is $540.00, with a daily burn rate of $18.00.
 
 
 ## ❓ FAQ
 
-**Q: How does the budget calculation work?**
-The `calculate_budget` tool uses your daily insulin units, insulin unit price, monthly CGM sensor count, sensor price, daily test strips, and strip price to generate a 30-day budget model.
+**Q: How are monthly costs calculated?**
+All daily costs are normalized to a standard 30-day month to ensure consistent budgeting and a reliable daily burn rate.
 
 **Q: Can I estimate savings from reducing test strip usage?**
-Yes, the `estimate_optimization_savings` tool allows you to input your current monthly strip costs and an optimization factor to see potential monthly savings.
+Yes, you can use `calculate_potential_savings` to determine how much money is saved by applying an optimization factor to your current monthly strip costs.
 
-**Q: What is a supply tier?**
-Using `get_supply_tier_info`, the tool categorizes your monitoring intensity (Low, Moderate, or High) based on how many test strips you use per day.
+**Q: What supplies are included in the budget calculation?**
+The tool calculates costs for insulin, CGM sensors, and blood glucose test strips.
 
 
 ## Installation & Usage

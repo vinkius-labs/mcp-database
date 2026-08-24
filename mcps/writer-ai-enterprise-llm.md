@@ -36,27 +36,27 @@ Connect to **Writer**, the full-stack generative AI platform for the enterprise.
 - **download_file**: Download the binary content of a file
 - **analyze_vision**: Analyze images or documents using a prompt
 - **ask_question**: Ask a question against one or more Knowledge Graphs (RAG)
-- **chat_completion**: Generate a chat completion using Writer models
 - **generate_application_content_async**: Asynchronous generation using a no-code application (returns job_id)
-- **generate_application_content**: Synchronous generation using a no-code application
-- **get_application_job**: Retrieve job status and result for an application job
 - **get_application**: Get configuration and inputs for a specific application
+- **get_application_job**: Retrieve job status and result for an application job
 - **get_file**: Get metadata for a specific file
 - **list_application_jobs**: List jobs for a specific application
 - **list_applications**: List deployed no-code agents (applications)
-- **list_files**: Retrieve a paginated list of uploaded files
 - **list_graphs**: List all Knowledge Graphs
 - **list_models**: Retrieve available Writer models
-- **remove_file_from_graph**: Remove a file from a Knowledge Graph
 - **retry_application_job**: Retry a failed application job
-- **text_completion**: Generate text completions for a single prompt
-- **translate_text**: Translate text between supported languages
 - **upload_file**: Upload a file for Knowledge Graphs or Vision tasks
 - **web_search**: Search the web for a query
 - **create_graph**: Create a new Knowledge Graph
-- **delete_file**: Permanently delete a file
 - **parse_pdf**: Convert PDF to text or markdown (Deprecated)
 - **add_file_to_graph**: Add an uploaded file to a Knowledge Graph
+- **chat_completion**: Generate a chat completion using Writer models
+- **delete_file**: Permanently delete a file
+- **generate_application_content**: Synchronous generation using a no-code application
+- **list_files**: Retrieve a paginated list of uploaded files
+- **remove_file_from_graph**: Remove a file from a Knowledge Graph
+- **text_completion**: Generate text completions for a single prompt
+- **translate_text**: Translate text between supported languages
 
 
 ## 💬 Prompt Examples

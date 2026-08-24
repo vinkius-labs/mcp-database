@@ -7,16 +7,16 @@
 
 **Category:** [utilities](../categories/utilities.md)
 
-Convert HbA1c percentages into estimated average glucose (eAG) and clinical glycemic metrics.
+Estimate average glucose, time in range, and glucose variability from HbA1c.
 
 ## Description
-This MCP server provides precise clinical conversions for diabetes management. Use `convert_a1c` to transform an HbA1c percentage into estimated average glucose (eAG) in both mg/dL and mmol/L. The tool also provides estimated Time in Range (TIR) and Coefficient of Variation (CV) to help assess glycemic variability. You can also use `get_target_ranges` to retrieve standard clinical glucose targets or `validate_a1c` to check if a value is within physiological limits.
+This MCP server provides deterministic tools to convert HbA1c percentages into clinical glucose metrics. Using the ADAG formula, it calculates estimated average glucose (eAG) in both mg/dL and mmol/L. It also provides statistical estimates for Time in Range (TIR) and the Coefficient of Variation (CV) based on standard regression models. Use `calculate_glucose_metrics` to get a full profile of glucose metrics, `get_conversion_constants` to see the underlying math, or `validate_a1c_range` to check if a value is clinically valid.
 
 
 ## Available Tools (3)
-- **get_target_ranges**: Returns the standard clinical glucose target ranges
-- **convert_a1c**: Converts HbA1c percentage into estimated average glucose and variability metrics
-- **validate_a1c**: Validates if an HbA1c value is within clinically safe and feasible ranges
+- **calculate_glucose_metrics**: Calculate estimated glucose metrics based on HbA1c percentage
+- **get_conversion_constants**: Get the mathematical constants used for glucose conversions
+- **validate_a1c_range**: Validate if an HbA1c value is within a clinically valid range
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides precise clinical conversions for diabetes management. U
 Here are some examples of how you can interact with the **HbA1c to Average Glucose Converter** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "Convert an HbA1c of 7.0% to glucose metrics."
+> "Based on this HbA1c percentage, what are my estimated average glucose, time in range, and glucose variability? My HbA1c is 7.0%."
 
 **🤖 AI Agent:**
-> For an HbA1c of 7.0%, the estimated average glucose is 142.3 mg/dL (7.9 mmol/L), with an estimated Time in Range of 70% and a Coefficient of Variation of 33%.
+> For an HbA1c of 7.0%, your estimated average glucose is 154 mg/dL (8.5 mmol/L), with an estimated Time in Range of approximately 70% and a Coefficient of Variation of 33%.
 
 ---
 
 **👤 You:**
-> "What is the estimated average glucose for an A1C of 6.5%?"
+> "What are the mathematical constants used for these glucose conversions?"
 
 **🤖 AI Agent:**
-> An HbA1c of 6.5% corresponds to an estimated average glucose of 131.6 mg/dL (7.3 mmol/L).
+> The conversion uses a mg/dL to mmol/L factor of 18.018 and assumes a standard CV range for statistical estimations.
 
 ---
 
 **👤 You:**
-> "Check if an HbA1c of 4.0% is valid."
+> "Is an HbA1c of 4.5% valid for estimation?"
 
 **🤖 AI Agent:**
-> An HbA1c of 4.0% is considered an extreme value and may be outside the standard physiological range for typical diabetes management calculations.
+> Yes, an HbA1c of 4.5% is within the clinically valid range for these estimation models.
 
 
 ## ❓ FAQ
 
-**Q: What formula is used for the conversion?**
-The tool uses the ADAG (A1c-Derived Average Glucose) clinical formula to calculate eAG from HbA1c percentages.
+**Q: How is the average glucose calculated?**
+The estimated average glucose (eAG) is calculated using the ADAG formula: (28.7 × HbA1c) - 46.7.
 
-**Q: Can I validate if an HbA1c value is clinically realistic?**
-Yes, you can use the `validate_a1c` tool to check if a provided value is within safe physiological boundaries.
+**Q: Can I validate if my HbA1c value is within a realistic range?**
+Yes, you can use the `validate_a1c_range` tool to check if a specific HbA1c percentage falls within a clinically meaningful and physiologically valid range.
 
-**Q: What are the standard target ranges provided?**
-The tool provides the standard clinical target range of 70-180 mg/dL via the `get_target_ranges` tool.
+**Q: What metrics are provided in the full report?**
+The `calculate_glucose_metrics` tool provides the HbA1c percentage, eAG in mg/dL, eAG in mmol/L, estimated Time in Range (TIR), and the estimated Coefficient of Variation (CV).
 
 
 ## Installation & Usage

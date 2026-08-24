@@ -10,13 +10,13 @@
 Adjust insulin parameters based on menstrual cycle phases.
 
 ## Description
-This MCP server provides deterministic insulin resistance adjustments based on the physiological shifts of the menstrual cycle. It allows AI agents to calculate precise insulin-to-carbohydrate ratios (ICR) and insulin sensitivity factors (ISF) for the Follicular, Ovulation, and Luteal phases. By using `get_cycle_adjustments`, agents can determine the exact resistance multiplier and expected blood glucose trends to assist in glucose management.
+This MCP server provides deterministic insulin resistance adjustments based on the physiological shifts in the menstrual cycle. It calculates adjusted Insulin-to-Carbohydrate Ratio (ICR) and Insulin Sensitivity Factor (ISF) for the Follicular, Ovulation, and Luteal phases. Use `calculate_insulin_adjustments` to get precise values for your current cycle day, or `get_cycle_phase_info` to understand your current resistance level.
 
 
 ## Available Tools (3)
-- **get_cycle_adjustments**: Calculates insulin parameter adjustments based on the current cycle day
-- **get_phase_summary**: Provides a summary of the current menstrual cycle phase and its insulin resistance impact
-- **get_resistance_thresholds**: Retrieves the standard resistance multipliers used for calculations
+- **calculate_insulin_adjustments**: 
+- **get_cycle_phase_info**: 
+- **validate_baseline_parameters**: 
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides deterministic insulin resistance adjustments based on t
 Here are some examples of how you can interact with the **Menstrual Cycle Insulin Resistance Tracker** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I am on day 20 of my cycle. My baseline ICR is 1:10 and my baseline ISF is 1:50. What are my adjusted values?"
+> "What are my insulin adjustments for day 20 of my cycle with a baseline ICR of 10 and ISF of 50?"
 
 **🤖 AI Agent:**
-> On day 20 (Luteal phase), your resistance multiplier is 1.2. Your adjusted ICR is 1:8.33 and your adjusted ISF is 1:41.67. You should expect a rising blood glucose trend.
+> For day 20 (Luteal phase), your resistance multiplier is 1.25. Your adjusted ICR is 8 and your adjusted ISF is 40.
 
 ---
 
 **👤 You:**
-> "What is the insulin resistance impact for day 5?"
+> "What phase am I in on day 14?"
 
 **🤖 AI Agent:**
-> On day 5, you are in the Follicular phase with Low resistance.
+> You are currently in the Ovulation phase, which typically involves a slight increase in insulin resistance.
 
 ---
 
 **👤 You:**
-> "What are the standard resistance multipliers used?"
+> "Check if an ICR of 5 and ISF of 40 are valid."
 
 **🤖 AI Agent:**
-> The standard multipliers are 1.0 for Follicular, 1.1 for Ovulation, and a range of 1.2 to 1.3 for the Luteal phase.
+> Yes, those baseline parameters are valid.
 
 
 ## ❓ FAQ
 
 **Q: How does this tool help with insulin management?**
-It uses `get_cycle_adjustments` to calculate how much insulin resistance increases during different phases, providing adjusted ICR and ISF values.
+The tool uses `calculate_insulin_adjustments` to provide updated ICR and ISF values that account for the increased insulin resistance often seen during the Luteal phase.
 
-**Q: What phases are covered?**
-The tool covers the Follicular, Ovulation, and Luteal phases of the menstrual cycle.
+**Q: Can I check my current cycle phase?**
+Yes, you can use the `get_cycle_phase_info` tool to identify if you are in the Follicular, Ovulation, or Luteal phase.
 
-**Q: Can I see the resistance levels for each phase?**
-Yes, you can use `get_phase_summary` to see the qualitative resistance level (Low, Moderate, or High) for the current cycle day.
+**Q: Is it safe to use these adjustments?**
+You can use `validate_baseline_parameters` to ensure your input values are within safe, positive ranges before performing calculations.
 
 
 ## Installation & Usage

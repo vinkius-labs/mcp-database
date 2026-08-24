@@ -47,7 +47,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Geographic Distance Calculator](../mcps/geographic-distance-calculator.md) | Calculate precise distances, bearings, and waypoints using Haversine, Vincenty, and Euclidean models. |
 | [Golf Handicap Calculator](../mcps/golf-handicap-calculator.md) | Deterministic golf handicap calculation per USGA/WHS standards. |
 | [Groove Quantize Calculator](../mcps/groove-quantize-calculator.md) | Calculate precise millisecond-based quantization grids, swing offsets, and latency compensation for DAWs. |
-| [HbA1c to Average Glucose Converter](../mcps/hba1c-to-average-glucose-converter.md) | Convert HbA1c percentages into estimated average glucose (eAG) and clinical glycemic metrics. |
+| [HbA1c to Average Glucose Converter](../mcps/hba1c-to-average-glucose-converter.md) | Estimate average glucose, time in range, and glucose variability from HbA1c. |
 | [Heat Index Calculator](../mcps/heat-index-calculator.md) | Calculate perceived temperature and heat-related health risks. |
 | [Insulin Dose Calculator](../mcps/insulin-dose-calculator.md) | A deterministic tool for calculating mealtime insulin doses and estimating insulin on board. |
 | [IP Address & Subnet Calculator](../mcps/ip-address-subnet-calculator.md) | Perform precise bitwise IPv4 and IPv6 subnet calculations and membership checks. |

@@ -10,13 +10,13 @@
 Calculate exact fruit portions to hit a 15g carbohydrate target.
 
 ## Description
-This MCP server provides precise nutritional calculations for diabetic-standard servings. By using the `get_carb_portion_details` tool, you can determine the exact mass and volume of a fruit needed to reach exactly 15g of carbohydrates. It also allows you to use `get_available_fruits` to see supported options and `get_nutritional_profile_comparison` to compare the sugar and fiber ratios between different fruits at the same carbohydrate level.
+This MCP server provides precise tools for diabetic portion control by calculating the exact mass and volume of fruit needed to reach a standardized 15g carbohydrate target. Using the `calculate_portion_size` tool, users can determine the specific grams, volume equivalent, sugar content, and fiber content for various fruits. You can also use `get_fruit_nutritional_profile` to see density data or `list_supported_fruits` to see available options. It is designed to help manage blood glucose levels through accurate carbohydrate counting.
 
 
 ## Available Tools (3)
-- **get_available_fruits**: Lists all fruits supported by the engine
-- **get_carb_portion_details**: Calculates the exact mass, volume, sugar, and fiber content required to hit the 15g carbohydrate target for a specific fruit
-- **get_nutritional_profile_comparison**: Compares the sugar and fiber ratios of two different fruits when both are scaled to the 15g carbohydrate standard
+- **calculate_portion_size**: Determines the precise weight and nutritional breakdown of a fruit to reach exactly 15g of carbohydrates
+- **get_fruit_nutritional_profile**: Retrieves the baseline nutritional density (carbs, sugar, fiber) for a specific fruit type
+- **list_supported_fruits**: Provides a list of all fruits currently supported by the engine
 
 
 ## 💬 Prompt Examples
@@ -27,35 +27,35 @@ Here are some examples of how you can interact with the **Fruit Portion Sizing E
 > "How many grams of strawberries do I need for 15g of carbs?"
 
 **🤖 AI Agent:**
-> You need 150g of strawberries to reach 15g of carbohydrates.
+> To reach 15g of carbohydrates, you need 150g of strawberries, which is approximately 1 cup.
 
 ---
 
 **👤 You:**
-> "What is the volume equivalent for 80g of banana?"
+> "What is the portion size for an apple to get 15g of carbs?"
 
 **🤖 AI Agent:**
-> 80g of banana is approximately half a medium banana.
+> You need 115g of apple, which is equivalent to one small apple.
 
 ---
 
 **👤 You:**
-> "Compare the sugar and fiber in an apple versus a banana for a 15g carb serving."
+> "How much watermelon should I eat for a 15g carb serving?"
 
 **🤖 AI Agent:**
-> An apple provides more fiber, while a banana provides a different sugar profile, both at the 15g carbohydrate standard.
+> You should eat 210g of watermelon to hit the 15g carbohydrate target.
 
 
 ## ❓ FAQ
 
-**Q: What is a standard diabetic serving?**
-A standard diabetic serving is defined as exactly 15 grams of total carbohydrates.
+**Q: What is the carbohydrate target for these calculations?**
+The engine is hardcoded to target exactly 15 grams of carbohydrates, which is the standard serving size used in carbohydrate counting.
 
-**Q: How do I know which fruits are supported?**
-You can use the `get_available_fruits` tool to see a complete list of all fruits currently supported by the engine.
+**Q: How can I see which fruits are available?**
+You can use the `list_supported_fruits` tool to get a complete list of all fruit types currently supported by the engine.
 
-**Q: Can I compare the nutritional value of two fruits?**
-Yes, use the `get_nutritional_profile_comparison` tool to compare the sugar and fiber deltas between two fruits, both scaled to 15g of carbohydrates.
+**Q: Does this tool provide volume measurements?**
+Yes, the `calculate_portion_size` tool provides a `volumeEquivalent` (such as '1 cup' or '1/2 medium banana') to make measuring easier in a kitchen setting.
 
 
 ## Installation & Usage

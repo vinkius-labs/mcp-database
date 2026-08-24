@@ -11,12 +11,11 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Bento Macro Balancer](../mcps/bento-macro-balancer.md) | Calculate precise nutritional profiles and traditional balance ratios for Japanese bento boxes. |
 | [Blood Pressure Classifier](../mcps/blood-pressure-classifier.md) | Classify blood pressure readings, detect trends, and identify hypertensive alerts using AHA/WHO standards. |
 | [Breathing Timer](../mcps/breathing-timer.md) | Accurately track structured breathing cycles (Box Breathing, 4-7-8, Coherence Heart Rate) for guided respiratory practice. |
-| [Caffeine Blood Glucose Impact Estimator](../mcps/caffeine-blood-glucose-impact-estimator.md) | Predict blood glucose spikes caused by caffeine consumption. |
 | [Calorie & Macro Calculator](../mcps/calorie-macro-calculator.md) | Calculate daily caloric needs and macronutrient split based on physiological metrics and activity levels. |
 | [Calorie Deficit Calculator](../mcps/calorie-deficit-calculator.md) | Calculate BMR, TDEE, and personalized weight loss plans with precision. |
 | [Continuous Glucose Trend Calculator](../mcps/continuous-glucose-trend-calculator.md) | Predictive CGM glucose velocity and trend arrow analysis. |
 | [Dawn Phenomenon Detector](../mcps/dawn-phenomenon-detector.md) | Differentiate between Somogyi Effect and Dawn Phenomenon using overnight glucose data. |
-| [Dehydration BG Spike Estimator](../mcps/dehydration-bg-spike-estimator.md) | Estimates blood glucose spikes caused by dehydration-induced hemoconcentration. |
+| [Dehydration BG Spike Estimator](../mcps/dehydration-bg-spike-estimator.md) | Estimates blood glucose concentration spikes caused by dehydration-induced hemoconcentration. |
 | [Deload Calculator](../mcps/deload-calculator.md) | Calculate precise training deload protocols based on accumulated fatigue and athletic discipline. |
 | [Early Breaking Decision Engine](../mcps/early-breaking-decision-engine.md) | Quantify the metabolic cost of breaking a fast before your target duration. |
 | [Exercise BG Impact Calculator](../mcps/exercise-bg-impact-calculator.md) | Predict blood glucose fluctuations and safety recommendations for different exercise types. |

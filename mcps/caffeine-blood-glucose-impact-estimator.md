@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [health](../categories/health.md)
+**Category:** [metabolic-tools](../categories/metabolic-tools.md)
 
 Predict blood glucose spikes caused by caffeine consumption.
 
 ## Description
-This MCP server provides tools to estimate how caffeine intake affects blood glucose levels. By using the `estimate_caffeine_impact` tool, users can predict the expected glucose increase and the timing of the peak spike based on their specific sensitivity profile. Additionally, the `calculate_preemptive_correction` tool helps determine the insulin units needed to mitigate the predicted spike using an Insulin Sensitivity Factor (ISF). This tool is designed for individuals managing blood glucose who want to understand the physiological impact of caffeine.
+This MCP server provides tools to estimate how caffeine consumption affects blood glucose levels. By analyzing caffeine dosage and individual sensitivity profiles, users can predict the magnitude of a glucose spike and its timing. It also includes functionality to calculate preemptive insulin boluses using a user's Insulin Sensitivity Factor (ISF). Use `estimate_caffeine_spike` to find the predicted rise and `calculate_preemptive_bolus` to determine necessary insulin adjustments.
 
 
 ## Available Tools (3)
-- **calculate_preemptive_correction**: Determine the amount of insulin units needed to counteract the predicted caffeine-induced spike
-- **estimate_caffeine_impact**: Calculate the predicted blood glucose increase and the timing of the peak spike based on caffeine intake and sensitivity
-- **get_sensitivity_thresholds**: Provide the logic and factors used for different sensitivity tiers
+- **calculate_preemptive_bolus**: Determines the insulin units required to preemptively mitigate the predicted glucose spike
+- **estimate_caffeine_spike**: Calculates the predicted increase in blood glucose and the timing of the peak impact
+- **get_sensitivity_reference**: Provides a lookup of the current sensitivity factors for user reference
 
 
 ## 💬 Prompt Examples
@@ -24,7 +24,7 @@ This MCP server provides tools to estimate how caffeine intake affects blood glu
 Here are some examples of how you can interact with the **Caffeine Blood Glucose Impact Estimator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I just drank 200mg of caffeine. My current blood glucose is 110 mg/dL and I have medium sensitivity. How much will my glucose rise?"
+> "I just drank 200mg of caffeine. I have medium sensitivity. How much will my blood glucose rise?"
 
 **🤖 AI Agent:**
 > Your estimated blood glucose increase is 4 mg/dL, with the peak spike occurring in approximately 45 to 60 minutes.
@@ -32,30 +32,30 @@ Here are some examples of how you can interact with the **Caffeine Blood Glucose
 ---
 
 **👤 You:**
-> "What are the sensitivity factors used for the different profiles?"
+> "If my predicted glucose spike is 15 mg/dL and my ISF is 50, how much insulin should I use for a preemptive bolus?"
 
 **🤖 AI Agent:**
-> The sensitivity factors are: Low (+0 mg/dL per 100mg), Medium (+2 mg/dL per 100mg), and High (+5 mg/dL per 100mg).
+> You would need 0.3 units of insulin to offset the predicted spike.
 
 ---
 
 **👤 You:**
-> "If my predicted spike is 15 mg/dL and my ISF is 30, how much preemptive insulin should I consider?"
+> "What are the sensitivity factors for the different profiles?"
 
 **🤖 AI Agent:**
-> The preemptive correction is 0.5 units.
+> The sensitivity factors are: low (0 mg/dL per 100mg), medium (2 mg/dL per 100mg), and high (5 mg/dL per 100mg).
 
 
 ## ❓ FAQ
 
 **Q: How does caffeine affect my blood glucose?**
-Caffeine can trigger the release of adrenaline and cortisol, which increases insulin resistance and leads to a rise in blood glucose levels.
+Caffeine can trigger the release of adrenaline and cortisol, which may increase insulin resistance and lead to a rise in blood glucose levels.
 
 **Q: What is a sensitivity profile?**
-A sensitivity profile (low, medium, or high) classifies how much an individual's blood glucose typically responds to caffeine doses.
+A sensitivity profile describes how your body responds to caffeine. You can choose between low, medium, or high sensitivity to get a personalized estimate.
 
 **Q: Can I use this to calculate insulin doses?**
-Yes, you can use `calculate_preemptive_correction` to estimate the insulin units needed to counteract a predicted spike, provided you know your Insulin Sensitivity Factor (ISF).
+Yes, you can use `calculate_preemptive_bolus` to estimate the insulin units needed to offset a predicted spike, provided you know your Insulin Sensitivity Factor (ISF).
 
 
 ## Installation & Usage

@@ -7,16 +7,16 @@
 
 **Category:** [health](../categories/health.md)
 
-Estimates blood glucose spikes caused by dehydration-induced hemoconcentration.
+Estimates blood glucose concentration spikes caused by dehydration-induced hemoconcentration.
 
 ## Description
-This MCP server provides deterministic calculations to estimate how hydration deficits impact blood glucose (BG) readings. Due to hemoconcentration, a decrease in plasma volume can cause glucose levels to appear artificially elevated. Using the `analyze_hydration_impact` tool, users can calculate their hydration deficit percentage, the estimated concentration spike, and a corrected blood glucose estimate. It also provides the exact volume of water needed to reach hydration goals.
+This MCP server provides tools to analyze how hydration deficits impact blood glucose readings. When the body is dehydrated, plasma volume decreases, causing solutes like glucose to appear more concentrated--a phenomenon known as hemoconcentration. Use `calculate_hydration_impact` to determine the estimated concentration spike and the adjusted true blood glucose level. You can also use `get_hydration_status_summary` to track water intake progress or `get_hemoconcentration_risk_profile` to assess the accuracy risk of your current readings.
 
 
 ## Available Tools (3)
-- **analyze_hydration_impact**: Provides a complete assessment of how current hydration status is affecting blood glucose readings and how much water is needed to correct the deficit
-- **estimate_glucose_correction**: Calculates only the glucose correction factor based on hydration status
-- **get_hydration_deficit_summary**: Answers how far the user is from their hydration goal without calculating glucose impacts
+- **calculate_hydration_impact**: Provides a complete analysis of how current hydration levels are affecting perceived blood glucose concentration
+- **get_hemoconcentration_risk_profile**: Translates the hydration deficit into a qualitative risk level regarding blood glucose accuracy
+- **get_hydration_status_summary**: Provides a high-level overview of the user's hydration status
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides deterministic calculations to estimate how hydration de
 Here are some examples of how you can interact with the **Dehydration BG Spike Estimator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "My current blood glucose is 110 mg/dL, I've drunk 1.5L of water today, and my goal is 2.5L. How is my hydration affecting my glucose?"
+> "My current blood glucose is 110 mg/dL. I have drunk 1.5 liters of water today, but I was supposed to drink 2.5 liters. How is my hydration affecting my glucose?"
 
 **🤖 AI Agent:**
-> Your hydration deficit is 40%. This causes an estimated concentration spike of 28 mg/dL, meaning your adjusted true BG estimate is 82 mg/dL. You should drink 1000 ml of water to reach your goal.
+> Your hydration deficit is 40%. This results in an estimated concentration spike of 28 mg/dL. Your adjusted true blood glucose estimate is 82 mg/dL. You should drink 1000 ml of water to reach your goal.
 
 ---
 
 **👤 You:**
-> "I've had 2L of water today and my target is 3L. What is my hydration deficit?"
+> "Check my hydration status: I've had 2 liters of water and my goal is 2 liters."
 
 **🤖 AI Agent:**
-> Your hydration deficit is 33.33%, and you need to drink 1000 ml more to reach your target.
+> You are fully hydrated. Your hydration deficit is 0% and you have 0 ml of water remaining to meet your goal.
 
 ---
 
 **👤 You:**
-> "Calculate the glucose correction for a reading of 130 mg/dL with a 20% hydration deficit."
+> "What is my risk level if I have only drunk 1 liter of water out of a recommended 2.5 liters?"
 
 **🤖 AI Agent:**
-> The estimated concentration spike is 14 mg/dL, and your adjusted true BG estimate is 116 mg/dL.
+> With a 60% hydration deficit, you are in the Critical Risk category. Your current glucose readings are highly likely to be significantly inflated by hemoconcentration.
 
 
 ## ❓ FAQ
 
-**Q: How does dehydration affect blood glucose?**
-Dehydration reduces plasma volume, leading to hemoconcentration. This makes the concentration of glucose in the blood appear higher than it actually is.
+**Q: How does dehydration affect my blood glucose readings?**
+Dehydration reduces plasma volume, which can cause blood glucose to appear higher than it actually is due to hemoconcentration. The `calculate_hydration_impact` tool helps estimate this effect.
 
-**Q: What is the purpose of the `estimate_glucose_correction` tool?**
-The `estimate_glucose_correction` tool calculates the artificial glucose spike and provides a corrected blood glucose estimate based on your current hydration status.
+**Q: What is the difference between my current BG and the adjusted true BG estimate?**
+The adjusted true BG estimate is a calculation of what your glucose level would likely be if you were fully hydrated, by subtracting the estimated hemoconcentration spike from your current reading.
 
-**Q: Can I use this to track my daily water intake?**
-Yes, you can use `get_hydration_deficit_summary` to see how much water you have consumed compared to your daily recommendation.
+**Q: Can I use this to manage my diabetes?**
+This tool is a mathematical estimator for educational and informational purposes regarding how hydration affects concentration. It is not a medical device and should not replace professional medical advice or clinical glucose monitoring.
 
 
 ## Installation & Usage
