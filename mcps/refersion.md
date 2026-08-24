@@ -35,8 +35,8 @@ Connect your **Refersion** account to any AI agent to streamline your affiliate 
 ## Available Tools (8)
 - **create_affiliate**: Create a new affiliate
 - **create_conversion**: Create a new conversion
-- **create_webhook**: Registers a new webhook listener
 - **get_affiliate**: Get details for a specific affiliate
+- **create_webhook**: Registers a new webhook listener
 - **get_conversion**: Get details for a specific conversion
 - **list_affiliates**: List affiliates for your account
 - **list_conversions**: List conversions

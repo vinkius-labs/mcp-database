@@ -34,25 +34,25 @@ Connect to **Rev AI** to transform your audio and video files into actionable te
 
 
 ## Available Tools (19)
-- **get_captions**: Get captions for a completed job
-- **get_language_id_result**: Get top language and confidence scores for a job
-- **get_sentiment_analysis_result**: Get sentiment scores for a job
-- **get_stt_job**: Get status and details of a transcription job
-- **get_topic_extraction_result**: Get extracted topics and scores for a job
-- **list_stt_jobs**: Get a list of transcription jobs from the last 30 days
-- **list_vocabularies**: List recent custom vocabularies
-- **submit_language_id_job**: Submit an audio file/URL for language identification
-- **get_transcript_summary**: Get the summary for a completed transcript job
-- **get_transcript**: Get the transcript for a completed job
-- **get_vocabulary**: Check processing status of a custom vocabulary
-- **submit_alignment_job**: Submit audio and transcript for forced alignment
-- **submit_sentiment_analysis_job**: Submit a transcript for sentiment analysis
-- **submit_stt_job**: Submit a media file for asynchronous transcription
-- **submit_topic_extraction_job**: Submit a transcript for topic extraction
-- **submit_vocabulary**: Submit a custom vocabulary
 - **delete_stt_job**: Only allowed for completed or failed jobs.
 
 Permanently delete job data
+- **get_sentiment_analysis_result**: Get sentiment scores for a job
+- **get_transcript**: Get the transcript for a completed job
+- **get_transcript_summary**: Get the summary for a completed transcript job
+- **list_stt_jobs**: Get a list of transcription jobs from the last 30 days
+- **submit_language_id_job**: Submit an audio file/URL for language identification
+- **submit_sentiment_analysis_job**: Submit a transcript for sentiment analysis
+- **submit_stt_job**: Submit a media file for asynchronous transcription
+- **get_captions**: Get captions for a completed job
+- **get_language_id_result**: Get top language and confidence scores for a job
+- **get_stt_job**: Get status and details of a transcription job
+- **get_topic_extraction_result**: Get extracted topics and scores for a job
+- **list_vocabularies**: List recent custom vocabularies
+- **get_vocabulary**: Check processing status of a custom vocabulary
+- **submit_alignment_job**: Submit audio and transcript for forced alignment
+- **submit_topic_extraction_job**: Submit a transcript for topic extraction
+- **submit_vocabulary**: Submit a custom vocabulary
 - **delete_vocabulary**: Delete a custom vocabulary
 - **get_alignment_result**: Get aligned timestamps for a forced alignment job
 

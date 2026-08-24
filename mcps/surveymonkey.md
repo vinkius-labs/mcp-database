@@ -34,29 +34,29 @@ Connect your **SurveyMonkey** account to any AI agent to streamline your market 
 
 
 ## Available Tools (17)
-- **get_survey**: Retrieve details for a specific survey
-- **create_survey_collector**: g., Web Link, Email).
-
-Create a new collector
-- **create_survey_page**: Add a page to a survey
-- **create_survey_question**: Create a question
 - **create_survey**: Provide the survey configuration as a JSON payload.
 
 Create a new survey
+- **create_survey_collector**: g., Web Link, Email).
+
+Create a new collector
 - **delete_survey**: Delete a survey
 - **get_collector**: Retrieve collector details
 - **get_response**: Retrieve a specific response
-- **get_survey_details**: Get full survey structure (pages, questions)
-- **get_survey_page**: Retrieve a specific page
-- **list_survey_collectors**: List collectors for a survey
-- **list_survey_pages**: List pages in a survey
 - **list_survey_questions**: List questions on a page
-- **list_survey_responses_bulk**: Retrieve full response data for multiple respondents
 - **list_survey_responses**: List responses for a survey
 - **list_surveys**: List all surveys for the authenticated user
 - **update_survey**: Provide the fields to update as a JSON payload.
 
 Update survey details
+- **get_survey**: Retrieve details for a specific survey
+- **create_survey_page**: Add a page to a survey
+- **create_survey_question**: Create a question
+- **get_survey_details**: Get full survey structure (pages, questions)
+- **get_survey_page**: Retrieve a specific page
+- **list_survey_collectors**: List collectors for a survey
+- **list_survey_pages**: List pages in a survey
+- **list_survey_responses_bulk**: Retrieve full response data for multiple respondents
 
 
 ## 💬 Prompt Examples

@@ -34,14 +34,14 @@ Connect your **Universe** host account to any AI agent to streamline event opera
 
 
 ## Available Tools (7)
+- **get_event_tokens**: Get attendee QR code tokens
+- **list_listings**: Retrieve a list of event listings
+- **check_in**: Mark a ticket as checked-in
+- **get_event_orders**: Get orders and attendees for an event
 - **list_guestlists**: Can be filtered by event or listing.
 
 Retrieve attendee information for events or listings
-- **list_listings**: Retrieve a list of event listings
-- **get_event_orders**: Get orders and attendees for an event
-- **get_event_tokens**: Get attendee QR code tokens
 - **create_access_key**: Manage access keys for private tickets
-- **check_in**: Mark a ticket as checked-in
 - **get_events**: Get list of events for a host
 
 

@@ -34,29 +34,29 @@ Connect your **Rewardful** account to any AI agent to automate your affiliate ma
 
 
 ## Available Tools (24)
-- **get_affiliate**: Retrieve a specific Rewardful affiliate
-- **list_payouts**: List all payouts
 - **create_affiliate**: Create a new Rewardful affiliate
-- **create_campaign**: Create a new Rewardful campaign
-- **delete_commission**: Delete a commission
+- **create_affiliate_coupon**: Create a new affiliate coupon
 - **generate_affiliate_sso**: Generate an SSO Magic Link for an affiliate
+- **get_affiliate**: Retrieve a specific Rewardful affiliate
 - **get_affiliate_coupon**: Retrieve a specific affiliate coupon
 - **get_affiliate_link**: Retrieve a specific affiliate link
 - **get_campaign**: Retrieve a specific Rewardful campaign
+- **list_affiliate_coupons**: List all affiliate coupons
+- **list_affiliates**: List Rewardful affiliates
+- **list_payouts**: List all payouts
+- **create_campaign**: Create a new Rewardful campaign
+- **delete_commission**: Delete a commission
 - **get_commission**: Retrieve a specific commission
 - **get_payout**: Retrieve a specific payout
-- **list_affiliate_coupons**: List all affiliate coupons
 - **list_affiliate_links**: List all affiliate links
-- **list_affiliates**: List Rewardful affiliates
 - **list_campaigns**: List all Rewardful campaigns
 - **list_commissions**: List all commissions
 - **list_referrals**: List Rewardful referrals
 - **pay_payout**: Mark a payout as paid
-- **update_affiliate_link**: Update an affiliate link token
 - **update_affiliate**: Update an existing Rewardful affiliate
+- **update_affiliate_link**: Update an affiliate link token
 - **update_campaign**: Update an existing Rewardful campaign
 - **update_commission**: Update a commission
-- **create_affiliate_coupon**: Create a new affiliate coupon
 - **create_affiliate_link**: Create a new affiliate link
 
 

@@ -29,13 +29,13 @@ Perfect for e-commerce managers, designers, and developers who need to automate 
 
 
 ## Available Tools (3)
+- **remove_background**: Returns the processed image as base64 data.
+
+Remove the background from an image
 - **get_account**: bg account.
 
 Get Remove.bg account info and credit balance
 - **improve_result**: Improve a previously processed result
-- **remove_background**: Returns the processed image as base64 data.
-
-Remove the background from an image
 
 
 ## 💬 Prompt Examples

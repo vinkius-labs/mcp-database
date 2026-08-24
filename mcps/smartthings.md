@@ -37,9 +37,6 @@ No more jumping between mobile apps to check if you left the lights on or to tri
 
 
 ## Available Tools (13)
-- **get_device_status**: Get the current state of all device components
-- **list_devices**: List all SmartThings devices
-- **execute_scene**: Execute a SmartThings scene
 - **list_installed_apps**: List all installed instances of SmartApps
 - **list_locations**: g., Home) accessible by the token.
 
@@ -49,9 +46,12 @@ List all SmartThings locations
 - **execute_device_command**: g., switch on/off, set level).
 
 Send commands to a SmartThings device
+- **execute_scene**: Execute a SmartThings scene
+- **get_device**: Get details for a specific SmartThings device
+- **get_device_status**: Get the current state of all device components
+- **list_devices**: List all SmartThings devices
 - **list_scenes**: List all SmartThings scenes
 - **list_subscriptions**: Manage event subscriptions for SmartApps
-- **get_device**: Get details for a specific SmartThings device
 - **get_location**: Get details for a specific SmartThings location
 - **list_apps**: List all SmartApps
 

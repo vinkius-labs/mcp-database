@@ -34,27 +34,27 @@ Connect your **TrueLayer** account to any AI agent to automate financial operati
 
 
 ## Available Tools (13)
-- **create_payment**: Requires amount, currency, payment method, beneficiary, and user details.
-
-Create a new single payment
 - **create_payout**: Can be closed-loop or open-loop.
 
 Create a new payout
-- **create_refund**: Cannot exceed the original payment amount.
-
-Create a refund for a payment
 - **get_data_account_balance**: Get balance for a data account
 - **get_merchant_account**: Get details for a specific merchant account
 - **list_data_account_transactions**: List transactions for a data account
+- **list_merchant_account_transactions**: List transactions for a merchant account
+- **list_providers**: List supported bank providers
+- **create_mandate**: Create a Variable Recurring Payment (VRP) mandate
+- **create_payment**: Requires amount, currency, payment method, beneficiary, and user details.
+
+Create a new single payment
+- **create_refund**: Cannot exceed the original payment amount.
+
+Create a refund for a payment
 - **list_data_accounts**: Requires user consent token.
 
 List user bank accounts (Data API)
-- **list_merchant_account_transactions**: List transactions for a merchant account
 - **list_merchant_accounts**: List TrueLayer merchant accounts
 - **list_payment_sources**: List payment sources for a merchant account
-- **list_providers**: List supported bank providers
 - **verify_account**: Verify account ownership
-- **create_mandate**: Create a Variable Recurring Payment (VRP) mandate
 
 
 ## 💬 Prompt Examples

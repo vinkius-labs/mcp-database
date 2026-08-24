@@ -35,50 +35,51 @@ Connect your **Veryfi** account to any AI agent and automate document data extra
 
 ## Available Tools (57)
 - **delete_documents**: Delete a documents
-- **delete_parse_documents**: Delete a parse_documents
 - **delete_w2s**: Delete a w2s
-- **delete_w8ben_e**: Delete a w8ben_e
 - **delete_w9s**: Delete a w9s
 - **get_bank_statements**: Get a specific bank_statements by ID
 - **get_business_cards**: Get a specific business_cards by ID
 - **get_checks**: Get a specific checks by ID
-- **get_documents**: Get a specific documents by ID
 - **get_parse_documents**: Get a specific parse_documents by ID
 - **get_w2s**: Get a specific w2s by ID
 - **get_w8ben_e**: Get a specific w8ben_e by ID
 - **get_w9s**: Get a specific w9s by ID
-- **list_bank_statements**: List bank_statements
 - **list_business_cards**: List business_cards
 - **list_checks**: List checks
-- **list_documents**: List documents
 - **list_parse_documents**: List parse_documents
 - **list_w2s**: List w2s
 - **list_w8ben_e**: List w8ben_e
 - **list_w9s**: List w9s
-- **process_documents**: Process a new documents
 - **process_parse_documents**: Process a new parse_documents
-- **process_w2s**: Process a new w2s
 - **process_w8ben_e**: Process a new w8ben_e
 - **process_w9s**: Process a new w9s
 - **update_bank_statements**: Update a bank_statements
 - **update_checks**: Update a checks
 - **update_contracts**: Update a contracts
-- **update_documents**: Update a documents
 - **update_parse_documents**: Update a parse_documents
 - **update_w2s**: Update a w2s
-- **update_w8ben_e**: Update a w8ben_e
-- **update_w9s**: Update a w9s
-- **add_webhook**: Add a pending webhook
 - **classify_document**: Classify a document into a specific type
-- **confirm_webhook**: Confirm a pending webhook
+- **update_w9s**: Update a w9s
 - **create_client_key**: Create a new API key
-- **delete_any_document**: Delete any document
-- **delete_client_key**: Remove a client key
-- **get_any_document**: Get any document by ID
 - **list_any_documents**: List any documents
-- **list_client_keys**: Retrieve client keys list
 - **list_webhooks**: Get configured webhooks
+- **add_webhook**: Add a pending webhook
+- **confirm_webhook**: Confirm a pending webhook
+- **delete_any_document**: Delete any document
+- **delete_bank_statements**: Delete a bank_statements
+- **delete_client_key**: Remove a client key
+- **delete_parse_documents**: Delete a parse_documents
+- **delete_w8ben_e**: Delete a w8ben_e
+- **get_any_document**: Get any document by ID
+- **get_documents**: Get a specific documents by ID
+- **list_bank_statements**: List bank_statements
+- **list_client_keys**: Retrieve client keys list
+- **list_documents**: List documents
 - **process_any_document**: Process any unstructured document using a blueprint
+- **process_documents**: Process a new documents
+- **process_w2s**: Process a new w2s
+- **update_documents**: Update a documents
+- **update_w8ben_e**: Update a w8ben_e
 - **delete_checks**: Delete a checks
 - **delete_contracts**: Delete a contracts
 - **list_contracts**: List contracts
@@ -90,7 +91,6 @@ Connect your **Veryfi** account to any AI agent and automate document data extra
 - **process_checks**: Process a new checks
 - **process_contracts**: Process a new contracts
 - **reset_client_keys**: Regenerate all API keys
-- **delete_bank_statements**: Delete a bank_statements
 
 
 ## 💬 Prompt Examples

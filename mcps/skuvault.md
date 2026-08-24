@@ -28,26 +28,26 @@ Connect your **SkuVault** account to any AI agent to streamline your warehouse a
 
 
 ## Available Tools (20)
-- **add_item_bulk**: Bulk add items to inventory
-- **add_item**: Adds inventory quantity to a specific warehouse location
 - **add_shipments**: Add shipment records
-- **create_brands**: Create new product brands
-- **create_holds**: Create inventory holds
 - **create_product**: Create a single product
-- **create_products**: Bulk create products
 - **create_suppliers**: Create product suppliers
-- **get_available_quantities**: Retrieve available inventory quantities
 - **get_brands**: Retrieve brands
-- **get_classifications**: Retrieve product classifications
 - **get_external_warehouse_quantities**: Retrieve quantities in external warehouses
 - **get_external_warehouses**: Retrieve external warehouse details
-- **get_handling_time**: Retrieve product handling times
 - **get_incoming_items**: Retrieve incoming items (e.g., from POs or shipments)
 - **get_lot_inventory_by_location**: Retrieve lot inventory details filtered by location
 - **get_lots**: Retrieve product lots
-- **create_kit**: Create product kits/bundles
 - **create_po**: Create Purchase Orders
+- **add_item**: Adds inventory quantity to a specific warehouse location
+- **add_item_bulk**: Bulk add items to inventory
+- **create_brands**: Create new product brands
+- **create_holds**: Create inventory holds
+- **create_kit**: Create product kits/bundles
 - **create_lot**: Create product lots
+- **create_products**: Bulk create products
+- **get_available_quantities**: Retrieve available inventory quantities
+- **get_classifications**: Retrieve product classifications
+- **get_handling_time**: Retrieve product handling times
 
 
 ## 💬 Prompt Examples

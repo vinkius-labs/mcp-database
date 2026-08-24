@@ -34,16 +34,16 @@ Connect your **Tithe.ly** account to any AI agent to streamline your ministry's 
 
 
 ## Available Tools (8)
-- **create_transaction**: Process a new transaction
-- **login**: Authenticate and retrieve account details
 - **list_organization_owners**: Search for organization owners
-- **list_organizations**: Search for and retrieve organization details
+- **login**: Authenticate and retrieve account details
 - **list_payment_categories**: List or search payment categories
+- **create_payment_category**: Create a new payment category
+- **create_transaction**: Process a new transaction
+- **list_organizations**: Search for and retrieve organization details
 - **send_email**: API credentials must have admin permissions or belong to the recipient.
 
 Send emails (e.g., receipts) to recipients
 - **update_payment_category**: Update an existing payment category
-- **create_payment_category**: Create a new payment category
 
 
 ## 💬 Prompt Examples

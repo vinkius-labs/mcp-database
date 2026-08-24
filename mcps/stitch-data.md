@@ -34,22 +34,12 @@ Connect your **Stitch Data** account to any AI agent to orchestrate your ETL wor
 
 
 ## Available Tools (21)
-- **create_ephemeral_session**: Generate a temporary token for the Connect JavaScript client
-- **delete_destination**: Remove a destination
-- **create_destination**: Configure a destination for an account
-- **create_source**: Create a new data source
-- **delete_source**: Delete a source
+- **create_account**: Requires partner credentials.
+
+Create a new Stitch client account (Partners only)
 - **get_import_status**: Does not require authentication.
 
 Check if the Stitch Import API is operating correctly
-- **list_destination_types**: g., redshift, s3, snowflake).
-
-List available destination types
-- **list_destinations**: List configured destinations
-- **list_extractions**: List recent extraction jobs
-- **list_loads**: List recent data loading attempts
-- **list_source_types**: List available source types
-- **list_sources**: List all sources for an account
 - **list_streams**: List tables (streams) available in a source
 - **push_import_batch**: Recommended for best data typing.
 
@@ -57,16 +47,26 @@ Push a batch of records for a single table to the Import API
 - **push_import_data**: Does not enforce schemas.
 
 Push data for one or more tables to the Import API
+- **validate_import_data**: Used for testing credentials and request formatting.
+
+Validate data format and credentials without persisting data
+- **create_ephemeral_session**: Generate a temporary token for the Connect JavaScript client
+- **delete_destination**: Remove a destination
+- **create_destination**: Configure a destination for an account
+- **create_source**: Create a new data source
+- **delete_source**: Delete a source
+- **list_destinations**: List configured destinations
+- **list_destination_types**: g., redshift, s3, snowflake).
+
+List available destination types
+- **list_extractions**: List recent extraction jobs
+- **list_loads**: List recent data loading attempts
+- **list_sources**: List all sources for an account
+- **list_source_types**: List available source types
 - **start_sync**: Manually start a replication job
 - **update_destination**: Update destination settings
 - **update_source**: Update, pause, or unpause a source
 - **update_stream_metadata**: Select streams and fields for replication
-- **validate_import_data**: Used for testing credentials and request formatting.
-
-Validate data format and credentials without persisting data
-- **create_account**: Requires partner credentials.
-
-Create a new Stitch client account (Partners only)
 
 
 ## 💬 Prompt Examples

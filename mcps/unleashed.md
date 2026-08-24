@@ -29,49 +29,49 @@ No more jumping between tabs to check stock levels, assembly statuses, or custom
 
 
 ## Available Tools (43)
-- **create_customer**: Create a new customer
-- **create_product**: Create a new product
 - **create_purchase_order**: Create a new purchase order
 - **list_credit_notes**: List credit notes
-- **list_currencies**: List currencies
-- **list_customer_delivery_addresses**: List customer delivery addresses
-- **list_customers**: List customers
 - **get_customer**: Get a specific customer
 - **get_invoice**: Get a specific sales invoice
 - **get_product**: Get a specific product
-- **list_product_brands**: List product brands
+- **list_customers**: List customers
 - **list_product_groups**: List product groups
 - **list_product_prices**: List product prices
 - **list_products**: List products
 - **list_recost_adjustments**: List recost adjustments
-- **list_sales_orders**: List sales orders
+- **list_salespersons**: List salespersons
 - **list_sales_quotes**: List sales quotes
 - **list_sales_shipments**: List sales shipments
-- **list_salespersons**: List salespersons
-- **list_sell_price_tiers**: List sell price tiers
 - **list_stock_adjustments**: List stock adjustments
-- **list_stock_counts**: List stock counts
 - **list_stock_on_hand**: List stock on hand
 - **list_supplier_returns**: List supplier returns
-- **list_suppliers**: List suppliers
-- **list_unit_of_measures**: List unit of measures
-- **get_purchase_order**: Get a specific purchase order
 - **get_sales_order**: Get a specific sales order
 - **get_stock_on_hand**: Get stock on hand for a specific product
-- **get_supplier**: Get a specific supplier
 - **list_invoices**: List sales invoices
-- **list_warehouse_stock_transfers**: List warehouse stock transfers
+- **create_assembly**: Create a new assembly
+- **create_customer**: Create a new customer
+- **create_product**: Create a new product
 - **create_sales_order**: Create a new sales order
 - **get_assembly**: Get a specific assembly
-- **get_bom**: Get a specific Bill of Materials
-- **list_purchase_orders**: List purchase orders
-- **list_warehouses**: List warehouses
-- **list_accounts**: List financial accounts
-- **list_assemblies**: List assemblies
+- **get_purchase_order**: Get a specific purchase order
+- **get_supplier**: Get a specific supplier
 - **list_attribute_sets**: List attribute sets
-- **list_boms**: List Bill of Materials
+- **list_currencies**: List currencies
+- **list_customer_delivery_addresses**: List customer delivery addresses
+- **list_product_brands**: List product brands
+- **list_purchase_orders**: List purchase orders
+- **list_sales_orders**: List sales orders
+- **list_sell_price_tiers**: List sell price tiers
+- **list_stock_counts**: List stock counts
+- **list_suppliers**: List suppliers
+- **list_unit_of_measures**: List unit of measures
+- **list_warehouses**: List warehouses
+- **list_warehouse_stock_transfers**: List warehouse stock transfers
+- **get_bom**: Get a specific Bill of Materials
 - **get_company**: Get company information
-- **create_assembly**: Create a new assembly
+- **list_assemblies**: List assemblies
+- **list_boms**: List Bill of Materials
+- **list_accounts**: List financial accounts
 
 
 ## 💬 Prompt Examples

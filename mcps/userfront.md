@@ -35,44 +35,44 @@ Connect your **Userfront** workspace to your AI agent to streamline identity man
 
 ## Available Tools (40)
 - **get_jwt_available_claims**: Read possible JWT claims
-- **get_jwt_format**: Read JWT format
-- **get_tenant**: Read a tenant record
 - **get_user_import**: Check import status
-- **get_user**: Read a user record
-- **invalidate_api_key**: Invalidate an API key
-- **invite_role**: Invite a user to a role
-- **list_jwt_keys**: List JWT public keys
 - **list_roles**: List all roles
-- **list_tenant_roles**: List roles (tenant level)
-- **logout_user**: Invalidate user sessions
 - **mark_user_active**: Mark a user as active
-- **process_user_import**: Start processing the import
-- **set_tenant_user_roles**: Set user roles (tenant level)
 - **set_user_roles**: Set roles for a user (application-wide)
 - **update_jwt_format**: Create/update custom JWT format
 - **update_tenant**: Update a tenant
+- **create_api_key**: Create a new API key
+- **delete_user_import**: Delete import record
+- **find_tenants**: Search tenants
+- **generate_link_credentials**: Generate link credentials for custom flows
+- **get_jwks**: Get JSON Web Key Set (JWKS)
+- **get_jwt_format**: Read JWT format
+- **get_tenant**: Read a tenant record
+- **get_user**: Read a user record
+- **get_user_sessions**: Read a user's sessions
+- **invalidate_api_key**: Invalidate an API key
+- **invite_role**: Invite a user to a role
+- **list_jwt_keys**: List JWT public keys
+- **list_tenant_roles**: List roles (tenant level)
+- **logout_user**: Invalidate user sessions
+- **process_user_import**: Start processing the import
+- **set_tenant_user_roles**: Set user roles (tenant level)
+- **update_user**: Update a user record
+- **create_tenant**: Create a new tenant
 - **create_role**: Create a new role
 - **create_tenant_role**: Create a role (tenant level)
-- **create_tenant**: Create a new tenant
-- **create_user_import**: Create a user import
 - **create_user**: Create a new user
+- **create_user_import**: Create a user import
 - **delete_api_key**: Delete an API key
 - **delete_role**: Delete a role
 - **delete_tenant**: Delete a tenant and its descendants
-- **delete_user_import**: Delete import record
 - **find_users**: Uses POST /users/find.
 
 Search users within a tenant
-- **get_user_sessions**: Read a user's sessions
 - **delete_user**: Delete a user record
-- **find_tenants**: Search tenants
-- **update_user**: Update a user record
 - **verify_api_key**: Verify an API key
-- **generate_link_credentials**: Generate link credentials for custom flows
-- **get_jwks**: Get JSON Web Key Set (JWKS)
 - **invite_user**: Invite a user by email
 - **list_api_keys**: List API keys of a specific type
-- **create_api_key**: Create a new API key
 - **create_child_tenant**: Create a child tenant
 - **create_custom_jwt**: Create a custom JWT access token for a user
 - **create_or_update_user**: Create or update a user

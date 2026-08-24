@@ -34,12 +34,12 @@ Connect your **SimplyRETS** account to any AI agent to query live MLS data, expl
 
 
 ## Available Tools (6)
+- **get_property**: Get details for a specific property listing
 - **list_agents**: List agent information
 - **list_open_houses**: List open house information
-- **get_property**: Get details for a specific property listing
-- **list_properties**: List or search property listings
 - **get_property_analytics**: Get analytics data for properties
 - **get_property_metadata**: Get metadata about properties in a feed
+- **list_properties**: List or search property listings
 
 
 ## 💬 Prompt Examples

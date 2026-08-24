@@ -34,15 +34,15 @@ Connect **TheRundown** to any AI agent to retrieve the most accurate real-time s
 
 
 ## Available Tools (5)
-- **get_event_odds**: Retrieve the latest odds for a specific event
 - **get_event**: Retrieve detailed information for a specific event
+- **get_event_odds**: Retrieve the latest odds for a specific event
 - **list_events_by_sport**: You can optionally include scores or all_periods.
 
 Retrieve events for a specific sport on a given date
-- **get_sport_schedule**: Retrieve the schedule for a specific sport
 - **list_sports**: g., NFL=2, NBA=4).
 
 Retrieve a list of supported sports and their corresponding IDs
+- **get_sport_schedule**: Retrieve the schedule for a specific sport
 
 
 ## 💬 Prompt Examples
