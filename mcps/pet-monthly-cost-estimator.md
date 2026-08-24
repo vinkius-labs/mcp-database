@@ -14,8 +14,8 @@ The Pet Monthly Cost Estimator provides detailed breakdowns of the recurring exp
 
 
 ## Available Tools (3)
-- **estimate_risk_and_leisure_expenses**: Calculate costs for pet enrichment and the mandatory emergency veterinary fund
 - **estimate_food_expenses**: Calculate the monthly expenditure required for nutritional upkeep
+- **estimate_risk_and_leisure_expenses**: Calculate costs for pet enrichment and the mandatory emergency veterinary fund
 - **estimate_maintenance_expenses**: Calculate monthly costs for health-related care and hygiene services
 
 

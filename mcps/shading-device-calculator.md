@@ -14,9 +14,9 @@ This MCP server provides specialized tools for architectural thermal comfort. Us
 
 
 ## Available Tools (4)
-- **validate_compliance**: Validate shading device compliance
-- **calculate_vertical_width**: Calculate minimum width for vertical fins
 - **calculate_horizontal_depth**: Calculate minimum depth for horizontal louvers
+- **calculate_vertical_width**: Calculate minimum width for vertical fins
+- **validate_compliance**: Validate shading device compliance
 - **get_solar_position**: Calculate the sun position
 
 

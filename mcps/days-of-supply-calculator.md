@@ -14,9 +14,9 @@ This MCP server provides specialized tools for inventory management. Use `get_sk
 
 
 ## Available Tools (3)
-- **get_category_health_summary**: Provides an aggregated view of inventory health for a specific group of items
-- **calculate_financial_exposure_by_tier**: Calculates the total monetary value of inventory held within different coverage levels
 - **get_sku_supply_metrics**: Calculates the specific supply duration and risk status for a single item
+- **calculate_financial_exposure_by_tier**: Calculates the total monetary value of inventory held within different coverage levels
+- **get_category_health_summary**: Provides an aggregated view of inventory health for a specific group of items
 
 
 ## 💬 Prompt Examples

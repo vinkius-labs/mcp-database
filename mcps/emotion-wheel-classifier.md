@@ -14,9 +14,9 @@ The Emotion Wheel Classifier connects AI agents to the psychological depth of Pl
 
 
 ## Available Tools (3)
+- **analyze_text_emotion**: Analyze raw text to identify emotion, intensity, and family
 - **explore_emotional_dyad**: Calculate the resulting complex emotion from two primary emotions
 - **get_emotion_spectrum**: Show the progression of a specific emotion
-- **analyze_text_emotion**: Analyze raw text to identify emotion, intensity, and family
 
 
 ## 💬 Prompt Examples

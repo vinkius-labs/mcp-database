@@ -14,8 +14,8 @@ This MCP server provides specialized tools to calculate the technical and financ
 
 
 ## Available Tools (3)
-- **calculate_panels_needed**: Determine the number of solar panels required
 - **calculate_financial_payback**: Estimate the solar system financial payback period
+- **calculate_panels_needed**: Determine the number of solar panels required
 - **calculate_area_needed**: Calculate the required solar panel installation area
 
 

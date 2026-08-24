@@ -14,8 +14,8 @@ This MCP server provides advanced forecasting capabilities to predict future dem
 
 
 ## Available Tools (3)
-- **analyze_exponential_smoothing**: Calculate demand forecast using Exponential Smoothing
 - **analyze_sma**: Calculate demand forecast using Simple Moving Average (SMA)
+- **analyze_exponential_smoothing**: Calculate demand forecast using Exponential Smoothing
 - **analyze_wma**: Calculate demand forecast using Weighted Moving Average (WMA)
 
 

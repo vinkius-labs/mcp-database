@@ -14,9 +14,9 @@ This MCP server provides specialized tools to quantify social media performance.
 
 
 ## Available Tools (3)
-- **retrieve_benchmark_standard**: Retrieves the target engagement benchmark for a specific account size tier
 - **compute_instagram_engagement**: Determines the engagement rate for Instagram posts
 - **compute_linkedin_engagement**: Determines the engagement rate for LinkedIn posts
+- **retrieve_benchmark_standard**: Retrieves the target engagement benchmark for a specific account size tier
 
 
 ## 💬 Prompt Examples

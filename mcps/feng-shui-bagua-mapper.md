@@ -14,8 +14,8 @@ The Feng Shui Bagua Mapper connects your physical space to the ancient Bagua ene
 
 
 ## Available Tools (3)
-- **get_orientation_offset**: Converts various entrance descriptions into a standardized numerical rotation value
 - **analyze_room_layout**: Takes a collection of rooms and produces a complete mapping of room names to their corresponding Life Areas
+- **get_orientation_offset**: Converts various entrance descriptions into a standardized numerical rotation value
 - **map_coordinate_to_area**: Determines which single Life Area covers a specific point in space given a rotation
 
 

@@ -14,8 +14,8 @@ This MCP server provides specialized tools to quantify the financial impact of e
 
 
 ## Available Tools (3)
-- **calculate_damages_estimate**: Calculate potential damages for a wrongful termination claim
 - **assess_claim_risk_profile**: Determine the qualitative legal risk level of a claim
+- **calculate_damages_estimate**: Calculate potential damages for a wrongful termination claim
 - **lookup_state_punitive_standard**: Lookup punitive damage rules for a specific state
 
 

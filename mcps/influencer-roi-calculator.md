@@ -14,8 +14,8 @@ This MCP server provides specialized analytical tools to quantify the media valu
 
 
 ## Available Tools (3)
-- **get_engagement_valuation**: Determines the media value and engagement efficiency of a campaign
 - **compare_to_paid_social**: Compares influencer campaign efficiency to paid social benchmarks
+- **get_engagement_valuation**: Determines the media value and engagement efficiency of a campaign
 - **get_conversion_economics**: Analyzes campaign profitability based on conversions and customer value
 
 

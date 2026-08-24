@@ -15,9 +15,9 @@ The Pet Travel Checklist Generator helps pet owners prepare for domestic or inte
 
 ## Available Tools (4)
 - **check_documentation_requirements**: Identifies the specific legal and identification papers required for a successful journey
+- **get_carrier_guidelines**: Determines the necessary crate/carrier specifications and safety features
 - **estimate_prep_timeline**: Calculates how many days of preparation/adaptation are needed before departure
 - **get_vaccination_requirements**: Provides a checklist of required immunizations and health screenings
-- **get_carrier_guidelines**: Determines the necessary crate/carrier specifications and safety features
 
 
 ## 💬 Prompt Examples

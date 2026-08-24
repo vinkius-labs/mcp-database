@@ -15,8 +15,8 @@ This MCP server provides specialized tools to quantify financial exposure and le
 
 ## Available Tools (3)
 - **calculate_employee_backpay_liability**: Calculates total back pay owed to employees
-- **calculate_civil_penalty_exposure**: Estimates total civil penalties for non-compliance
 - **check_warn_compliance**: Determines if a layoff event violates the WARN Act
+- **calculate_civil_penalty_exposure**: Estimates total civil penalties for non-compliance
 
 
 ## 💬 Prompt Examples

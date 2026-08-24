@@ -14,8 +14,8 @@ This MCP server provides specialized tools to evaluate whether a non-compete cla
 
 
 ## Available Tools (3)
-- **check_state_legality**: Checks if a US state has a statutory ban on non-competes
 - **evaluate_noncompete_clause**: Evaluates the enforceability of a non-compete clause
+- **check_state_legality**: Checks if a US state has a statutory ban on non-competes
 - **get_enforceability_guidelines**: Retrieves general non-compete enforceability thresholds
 
 

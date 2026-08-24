@@ -15,8 +15,8 @@ This MCP server provides a specialized estimation engine for calculating the com
 
 ## Available Tools (4)
 - **viac_estimate**: Calculate VIAC arbitration cost estimate
-- **lcia_estimate**: Calculate LCIA arbitration cost estimate
 - **scc_estimate**: Calculate SCC arbitration cost estimate
+- **lcia_estimate**: Calculate LCIA arbitration cost estimate
 - **icc_estimate**: Calculate ICC arbitration cost estimate
 
 

@@ -14,9 +14,9 @@ The Heat Cycle Tracker MCP server provides biological insights into the estrous 
 
 
 ## Available Tools (3)
+- **calculate_upcoming_heat**: Predict the date of the next fertile window and the estimated start of the next heat cycle
 - **get_breed_metadata**: Retrieve average cycle duration and phase distribution for a specific breed
 - **segment_cycle_phases**: Provide a complete chronological breakdown of all biological phases for a single specific cycle
-- **calculate_upcoming_heat**: Predict the date of the next fertile window and the estimated start of the next heat cycle
 
 
 ## 💬 Prompt Examples

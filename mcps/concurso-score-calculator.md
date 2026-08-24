@@ -14,10 +14,10 @@ This MCP server provides specialized tools to automate the complex scoring logic
 
 
 ## Available Tools (4)
-- **predict_ranking_position**: Estimates where a candidate stands in the overall competition relative to available job openings
 - **calculate_weighted_score**: All stages in scores must have corresponding weights, and total weight must be 1.0.
 
 Determines the total accumulated score for a candidate based on stage performance and importance weights
+- **predict_ranking_position**: Estimates where a candidate stands in the overall competition relative to available job openings
 - **resolve_tiebreaker**: Decides a winner between two or more candidates who have identical final weighted scores
 - **verify_stage_thresholds**: All stages in thresholds must be present in scores.
 

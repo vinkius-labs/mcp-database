@@ -14,9 +14,9 @@ The Mood Pattern Detector analyzes historical mood logs to uncover cyclical patt
 
 
 ## Available Tools (3)
-- **identify_mood_anomalies**: Flag specific dates where the mood was significantly different from the norm
 - **analyze_weekly_cycle**: Determine if specific days of the week are associated with better or worse moods
 - **evaluate_activity_impact**: Measure how a specific recorded variable influences mood levels
+- **identify_mood_anomalies**: Flag specific dates where the mood was significantly different from the norm
 
 
 ## 💬 Prompt Examples

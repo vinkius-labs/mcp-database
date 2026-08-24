@@ -14,8 +14,8 @@ This MCP server provides precise tools for determining the statute of limitation
 
 
 ## Available Tools (3)
-- **check_tolling_impact**: Identifies if any known tolling events have extended the existing deadline
 - **calculate_statute_deadline**: Determines the standard filing deadline based on claim type, state, and the date of the incident
+- **check_tolling_impact**: Identifies if any known tolling events have extended the existing deadline
 - **evaluate_discovery_rule**: Re-calculates a deadline based on the moment the harm was discovered
 
 

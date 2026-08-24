@@ -15,8 +15,8 @@ This MCP server provides specialized tools for legal professionals to determine 
 
 ## Available Tools (3)
 - **calculate_deadline**: Determines the final filing deadline for a specific event and rule type
-- **check_date_validity**: Validates whether a provided date is a viable starting point for a legal clock
 - **list_supported_rules**: Provides a list of all legal rules currently supported by the calculator
+- **check_date_validity**: Validates whether a provided date is a viable starting point for a legal clock
 
 
 ## 💬 Prompt Examples

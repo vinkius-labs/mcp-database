@@ -15,8 +15,8 @@ This MCP server provides specialized tools for agricultural economic analysis. U
 
 ## Available Tools (3)
 - **calculate_area_impact**: Calculate the impact of machinery costs on a specific land area
-- **compare_ownership_models**: Compare owned machinery costs against outsourced contractor rates
 - **calculate_hourly_costs**: Calculate the hourly operational costs of machinery
+- **compare_ownership_models**: Compare owned machinery costs against outsourced contractor rates
 
 
 ## 💬 Prompt Examples

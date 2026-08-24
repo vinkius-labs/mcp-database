@@ -14,9 +14,9 @@ This MCP server provides specialized physiological tools to determine your optim
 
 
 ## Available Tools (3)
+- **calculate_zone_ranges**: Calculate the BPM boundaries for all five training zones
 - **get_zone_definitions**: Retrieve standard intensity descriptions for heart rate zones
 - **calculate_heart_rate_reserve**: Calculate the Heart Rate Reserve (HRR)
-- **calculate_zone_ranges**: Calculate the BPM boundaries for all five training zones
 
 
 ## 💬 Prompt Examples
