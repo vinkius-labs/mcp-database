@@ -36,10 +36,10 @@ No more manual searching through tournament pages to find specific match IDs or 
 
 
 ## Available Tools (6)
-- **get_tournaments_by_country**: Get Tournaments by Location
-- **update_phase_seeding**: Update Phase Seeding
 - **get_event_sets**: Get Sets in Event
 - **get_event_standings**: Get Event Standings
+- **get_tournaments_by_country**: Get Tournaments by Location
+- **update_phase_seeding**: Update Phase Seeding
 - **get_event_id**: Get Event ID by Slug
 - **report_set**: Requires admin permissions.
 

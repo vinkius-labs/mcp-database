@@ -37,10 +37,10 @@ Connect to **SimpleHash**, the most comprehensive NFT API, and empower your AI a
 - **get_collection_details**: Retrieve information about a specific NFT collection
 - **get_collections_by_wallet**: Retrieve all collections that a specific wallet owns NFTs from
 - **get_nft_details**: Retrieve detailed metadata and ownership information for a specific NFT
-- **get_nft_transfers_by_contract**: Retrieve the transfer history for a specific contract
-- **get_nft_transfers_by_wallet**: Retrieve the transfer history for a specific wallet
 - **get_nfts_by_contract**: Retrieve all NFTs within a specific contract
 - **get_nfts_by_wallet**: Retrieve all NFTs owned by a specific wallet address across multiple chains
+- **get_nft_transfers_by_contract**: Retrieve the transfer history for a specific contract
+- **get_nft_transfers_by_wallet**: Retrieve the transfer history for a specific wallet
 
 
 ## 💬 Prompt Examples

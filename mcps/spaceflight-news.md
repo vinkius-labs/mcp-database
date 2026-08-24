@@ -34,15 +34,15 @@ Connect your AI agent to the **Spaceflight News API (SNAPI)** to stay updated wi
 
 
 ## Available Tools (7)
-- **get_report**: Get a specific spaceflight report
 - **get_info**: Get Spaceflight News API info
+- **get_report**: Get a specific spaceflight report
 - **list_reports**: g., ISS Daily Reports).
 
 List spaceflight reports
-- **list_articles**: List spaceflight news articles
-- **list_blogs**: List spaceflight blogs
 - **get_article**: Get a specific spaceflight news article
 - **get_blog**: Get a specific spaceflight blog post
+- **list_blogs**: List spaceflight blogs
+- **list_articles**: List spaceflight news articles
 
 
 ## 💬 Prompt Examples

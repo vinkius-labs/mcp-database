@@ -33,15 +33,15 @@ Connect to **SambaNova Cloud** to run the world's fastest open-source models dir
 
 
 ## Available Tools (3)
-- **create_chat_completion**: Compatible with OpenAI Chat Completions API.
-
-Create a chat completion using SambaNova models
 - **create_embedding**: Available on SambaStack.
 
 Create embeddings using SambaNova
 - **create_response**: Returns typed output items.
 
 Create a response using SambaNova Responses API
+- **create_chat_completion**: Compatible with OpenAI Chat Completions API.
+
+Create a chat completion using SambaNova models
 
 
 ## 💬 Prompt Examples

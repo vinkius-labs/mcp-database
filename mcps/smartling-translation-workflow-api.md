@@ -34,11 +34,11 @@ Connect your **Smartling** account to any AI agent to orchestrate complex transl
 
 
 ## Available Tools (7)
-- **add_content_to_job**: Add content to an existing translation job
-- **create_job**: Create a new translation job in a project
 - **download_translated_file**: Download a translated file
 - **get_project**: Get details for a specific Smartling project
 - **list_projects**: List Smartling projects
+- **add_content_to_job**: Add content to an existing translation job
+- **create_job**: Create a new translation job in a project
 - **upload_context**: Upload visual context for translators
 - **upload_file**: Upload a file for translation
 

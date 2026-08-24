@@ -34,14 +34,14 @@ Connect your **Scytale** account to any AI agent to streamline your security aud
 
 
 ## Available Tools (8)
-- **get_audit_logs**: Get a history of actions performed within the Scytale platform
-- **get_compliance_status**: ).
-
-Get current compliance status across all frameworks
 - **get_evidence**: Get detailed information about a specific evidence item
 - **get_user**: Get details for a specific user
 - **list_controls**: List security controls and their current state
 - **list_evidence**: List all evidence items collected
+- **get_audit_logs**: Get a history of actions performed within the Scytale platform
+- **get_compliance_status**: ).
+
+Get current compliance status across all frameworks
 - **list_users**: List users in your Scytale organization
 - **upload_evidence**: Uses multipart/form-data under the hood.
 

@@ -36,25 +36,25 @@ No more manual searching through browser tabs to check a card's legality or curr
 
 
 ## Available Tools (19)
-- **get_card_by_mtgo_id**: Get a card by MTGO ID
-- **search_cards**: Search for Magic cards
 - **get_set_by_code**: Get a set by its code
 - **get_set_by_id**: Get a set by its Scryfall ID
-- **get_card_by_multiverse_id**: Get a card by Multiverse ID
-- **get_card_by_set_number**: Get a card by set code and collector number
-- **get_catalog**: Get a catalog of Magic data points
-- **get_cards_collection**: Get a collection of cards by identifiers
 - **list_bulk_data**: List all bulk data files
 - **list_sets**: List all Magic sets
 - **list_symbology**: List all card symbols
-- **get_card_named**: Get a card by exact or fuzzy name
-- **parse_mana**: Parse a mana string
 - **get_rulings_by_id**: Get rulings for a card by Scryfall ID
-- **get_rulings_by_set_number**: Get rulings for a card by set code and collector number
-- **autocomplete_cards**: Get card name suggestions
+- **parse_mana**: Parse a mana string
 - **get_bulk_data_by_type**: Get a specific bulk data file by type
+- **autocomplete_cards**: Get card name suggestions
 - **get_card_by_arena_id**: Get a card by Arena ID
 - **get_card_by_id**: Get a card by Scryfall ID
+- **get_card_by_mtgo_id**: Get a card by MTGO ID
+- **get_card_by_multiverse_id**: Get a card by Multiverse ID
+- **get_card_by_set_number**: Get a card by set code and collector number
+- **get_card_named**: Get a card by exact or fuzzy name
+- **get_cards_collection**: Get a collection of cards by identifiers
+- **get_catalog**: Get a catalog of Magic data points
+- **get_rulings_by_set_number**: Get rulings for a card by set code and collector number
+- **search_cards**: Search for Magic cards
 
 
 ## 💬 Prompt Examples

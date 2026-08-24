@@ -36,12 +36,12 @@ No more manually checking multiple tour websites. Your AI acts as a personal con
 
 
 ## Available Tools (6)
-- **search_artists**: Find artists and their unique Songkick IDs
-- **get_artist_calendar**: Get the upcoming events for a specific artist
-- **search_events**: Search for upcoming events based on criteria
 - **search_locations**: Find locations (metro areas) and their unique Songkick IDs
 - **search_venues**: Find venues and their unique Songkick IDs
+- **get_artist_calendar**: Get the upcoming events for a specific artist
 - **get_venue_calendar**: Get the upcoming events for a specific venue
+- **search_artists**: Find artists and their unique Songkick IDs
+- **search_events**: Search for upcoming events based on criteria
 
 
 ## 💬 Prompt Examples

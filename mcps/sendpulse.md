@@ -34,8 +34,6 @@ Connect your **SendPulse** account to any AI agent to streamline your email mark
 
 
 ## Available Tools (28)
-- **get_balance**: Get SendPulse balance details
-- **list_crm_contacts**: List CRM contacts
 - **list_crm_deals**: List CRM deals
 - **create_address_book**: Create a new address book
 - **create_crm_deal**: Create a CRM deal
@@ -43,27 +41,29 @@ Connect your **SendPulse** account to any AI agent to streamline your email mark
 - **delete_contacts**: Delete contacts from an address book
 - **get_campaign_stats**: Get campaign statistics
 - **get_chatbot_stats**: Get chatbot stats
-- **get_contact_info**: Get contact info from an address book
-- **get_smtp_email_details**: Get SMTP email details
 - **get_invited_users**: Get invited users list
+- **get_smtp_email_details**: Get SMTP email details
 - **list_address_books**: List all address books (mailing lists)
 - **list_crm_pipelines**: List CRM pipelines
+- **unsubscribe_contact**: Unsubscribe contacts from an address book
+- **update_address_book**: Edit an existing address book
+- **add_contacts**: Add contacts to an address book
+- **add_smtp_unsubscribe**: Add to SMTP unsubscribe list
+- **list_campaigns**: Get list of campaigns
+- **create_campaign**: Create a new email campaign
+- **create_crm_contact**: Create a CRM contact
+- **get_balance**: Get SendPulse balance details
+- **get_contact_info**: Get contact info from an address book
+- **get_user_info**: ).
+
+Get SendPulse account info
+- **list_chatbots**: List chatbots
+- **list_crm_contacts**: List CRM contacts
 - **list_smtp_emails**: List sent SMTP emails
 - **list_smtp_unsubscribes**: Get SMTP unsubscribe list
 - **run_chatbot_flow**: Run a chatbot flow for a contact
 - **send_chatbot_message**: Send a message to a chatbot contact
 - **send_smtp_email**: Send an email via SMTP
-- **unsubscribe_contact**: Unsubscribe contacts from an address book
-- **update_address_book**: Edit an existing address book
-- **add_contacts**: Add contacts to an address book
-- **add_smtp_unsubscribe**: Add to SMTP unsubscribe list
-- **create_campaign**: Create a new email campaign
-- **create_crm_contact**: Create a CRM contact
-- **list_campaigns**: Get list of campaigns
-- **list_chatbots**: List chatbots
-- **get_user_info**: ).
-
-Get SendPulse account info
 
 
 ## 💬 Prompt Examples

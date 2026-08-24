@@ -40,8 +40,8 @@ Get all games with owner data
 - **get_genre**: Get games within a specific genre
 - **get_tag**: Get games associated with a specific tag
 - **get_top_100_in_2_weeks**: Get Top 100 games by players in the last two weeks
-- **get_top_100_owned**: Get Top 100 games by number of owners
 - **get_top_100_forever**: Get Top 100 games by players since March 2009
+- **get_top_100_owned**: Get Top 100 games by number of owners
 
 
 ## 💬 Prompt Examples

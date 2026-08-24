@@ -33,13 +33,13 @@ Connect your **Spocket** account to any AI agent to streamline your dropshipping
 
 
 ## Available Tools (5)
-- **get_inventory**: Check stock levels for a Spocket product
-- **get_product**: Get details for a specific Spocket product
 - **list_products**: Supports pagination and category filtering.
 
 Get all products from Spocket
-- **get_order**: Get Spocket order status
 - **create_order**: Create a new order in Spocket
+- **get_inventory**: Check stock levels for a Spocket product
+- **get_order**: Get Spocket order status
+- **get_product**: Get details for a specific Spocket product
 
 
 ## 💬 Prompt Examples

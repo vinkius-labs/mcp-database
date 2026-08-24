@@ -37,21 +37,21 @@ Connect your **ShipEngine** account to any AI agent to streamline your entire sh
 ## Available Tools (13)
 - **connect_carrier**: Connect a carrier account
 - **create_label_rate_shopper**: Create a label using the rate shopper
-- **create_label**: Create a shipping label
-- **create_manifest**: Create a manifest (e.g., USPS SCAN form)
 - **create_shipment**: Requires carrier_id, service_code, ship_to, and ship_from.
 
 Create a new shipment
 - **get_rates**: Calculate shipping rates
 - **list_carriers**: List connected carriers
 - **list_labels**: List shipping labels
-- **track_label**: Track a package by label ID
 - **track_package**: Track a package by carrier code and tracking number
+- **add_funds**: Add funds to a carrier balance
+- **create_label**: Create a shipping label
+- **create_manifest**: Create a manifest (e.g., USPS SCAN form)
+- **track_label**: Track a package by label ID
 - **validate_addresses**: Max 250 addresses.
 
 Validate shipping addresses
 - **void_label**: Void a shipping label
-- **add_funds**: Add funds to a carrier balance
 
 
 ## 💬 Prompt Examples

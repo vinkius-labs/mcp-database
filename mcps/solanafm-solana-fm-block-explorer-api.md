@@ -36,11 +36,11 @@ No more manual searching through web explorers. Your AI acts as a blockchain ana
 
 ## Available Tools (6)
 - **get_account_info**: Get the metadata and state of a Solana account
-- **get_account_transactions**: List transactions associated with a specific account address
 - **get_block**: Get detailed information about a specific block
 - **get_blocks**: Get a list of blocks within a specified range
 - **get_token_accounts**: Get token accounts owned by a specific wallet address
 - **get_transaction**: Get details for a specific transaction
+- **get_account_transactions**: List transactions associated with a specific account address
 
 
 ## 💬 Prompt Examples

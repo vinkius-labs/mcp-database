@@ -34,15 +34,15 @@ Access the vast **SeatGeek** database to discover live events, sports, concerts,
 
 
 ## Available Tools (7)
-- **list_venues**: Search and list SeatGeek venues
 - **list_taxonomies**: List SeatGeek event categories (taxonomies)
-- **list_events**: Search and list SeatGeek events
-- **get_event**: Retrieve a specific SeatGeek event
 - **get_performer**: Retrieve a specific SeatGeek performer
 - **get_venue**: Retrieve a specific SeatGeek venue
 - **list_performers**: ).
 
 Search and list SeatGeek performers
+- **get_event**: Retrieve a specific SeatGeek event
+- **list_events**: Search and list SeatGeek events
+- **list_venues**: Search and list SeatGeek venues
 
 
 ## 💬 Prompt Examples

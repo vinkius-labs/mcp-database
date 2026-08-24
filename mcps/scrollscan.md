@@ -39,34 +39,34 @@ Connect to **Scrollscan** and bring real-time Scroll L2 blockchain data into you
 - **get_account_balance**: Get Ether Balance for a Single Address
 - **get_block_number_by_time**: Get Block Number by Timestamp
 - **get_block_reward**: Get Block Rewards by BlockNo
-- **get_contract_abi**: Get Contract ABI for Verified Source Codes
 - **get_contract_source_code**: Get Contract Source Code for Verified Source Codes
-- **get_erc1155_token_tx**: Get ERC1155 Token Transfer Events by Address
-- **get_erc20_token_tx**: Get ERC20 Token Transfer Events by Address
-- **get_erc721_token_tx**: Get ERC721 Token Transfer Events by Address
 - **get_eth_price**: Get Ether Last Price
 - **get_eth_supply**: Get Total Supply of Ether on Scroll
 - **get_internal_tx_list_by_block_range**: Get Internal Transactions by Block Range
 - **get_internal_tx_list_by_hash**: Get Internal Transactions by Transaction Hash
-- **get_internal_tx_list**: Get Internal Transactions by Address
 - **get_logs**: Get Logs
 - **get_mined_blocks**: Get List of Blocks Mined by Address
 - **get_normal_tx_list**: Get Normal Transactions By Address
 - **get_token_balance**: Get ERC20-Token Balance for Address by ContractAddress
 - **get_token_supply**: Get ERC20-Token TotalSupply by ContractAddress
 - **proxy_get_code**: eth_getCode
-- **proxy_get_storage_at**: eth_getStorageAt
 - **proxy_get_transaction_by_hash**: eth_getTransactionByHash
-- **proxy_get_transaction_receipt**: eth_getTransactionReceipt
 - **verify_source_code**: Verify Source Code
 - **get_block_countdown**: Get Estimated Block Countdown Time by BlockNo
-- **get_tx_receipt_status**: Check Check Transaction Receipt Status
-- **get_tx_status**: Check Transaction Receipt Status
 - **proxy_block_number**: eth_blockNumber
 - **proxy_call**: eth_call
 - **proxy_estimate_gas**: eth_estimateGas
 - **proxy_gas_price**: eth_gasPrice
 - **proxy_get_block_by_number**: eth_getBlockByNumber
+- **get_tx_receipt_status**: Check Check Transaction Receipt Status
+- **get_tx_status**: Check Transaction Receipt Status
+- **get_contract_abi**: Get Contract ABI for Verified Source Codes
+- **get_erc1155_token_tx**: Get ERC1155 Token Transfer Events by Address
+- **get_erc20_token_tx**: Get ERC20 Token Transfer Events by Address
+- **get_erc721_token_tx**: Get ERC721 Token Transfer Events by Address
+- **get_internal_tx_list**: Get Internal Transactions by Address
+- **proxy_get_storage_at**: eth_getStorageAt
+- **proxy_get_transaction_receipt**: eth_getTransactionReceipt
 
 
 ## 💬 Prompt Examples
