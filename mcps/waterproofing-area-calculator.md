@@ -14,9 +14,9 @@ This MCP server provides a specialized calculation engine for estimating waterpr
 
 
 ## Available Tools (3)
-- **aggregate_project_summary**: Summarizes multiple zone calculations
 - **calculate_zone_needs**: Calculates material quantity and cost for a single area
 - **compare_system_economies**: Compares two waterproofing systems
+- **aggregate_project_summary**: Summarizes multiple zone calculations
 
 
 ## 💬 Prompt Examples

@@ -15,12 +15,12 @@ A precision utility for construction professionals to calculate concrete volume 
 
 ## Available Tools (5)
 - **calculate_column_volume**: Calculates concrete needed for vertical columns/pillars
-- **calculate_footing_volume**: Calculates volume for continuous trench footings
-- **calculate_slab_volume**: Calculates the volume and bag requirements for a flat concrete slab
-- **calculate_wall_volume**: Calculates concrete needed for vertical structural walls
 - **estimate_cost_by_region**: g., US_EAST).
 
 Provides a financial estimate based on volume and location
+- **calculate_footing_volume**: Calculates volume for continuous trench footings
+- **calculate_slab_volume**: Calculates the volume and bag requirements for a flat concrete slab
+- **calculate_wall_volume**: Calculates concrete needed for vertical structural walls
 
 
 ## 💬 Prompt Examples

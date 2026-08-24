@@ -15,8 +15,8 @@ This MCP server provides a simplified thermal load calculation engine based on t
 
 ## Available Tools (3)
 - **calculate_cooling_demand**: Calculates the cooling load in BTU/h and Tons
-- **calculate_heating_demand**: Calculates the heating load in BTU/h
 - **validate_equipment_capacity**: Evaluates if an HVAC unit capacity is sufficient
+- **calculate_heating_demand**: Calculates the heating load in BTU/h
 
 
 ## 💬 Prompt Examples

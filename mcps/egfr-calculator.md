@@ -14,13 +14,13 @@ This MCP server provides precise tools for estimating kidney function. Use `calc
 
 
 ## Available Tools (3)
+- **get_clinical_classification**: Determines CKD stage and dosing advice
 - **calculate_ckdepi_2021**: Returns estimated GFR without race adjustment.
 
 Calculates eGFR using the CKD-EPI 2021 formula
 - **calculate_mdrd_formula**: Returns estimated GFR.
 
 Calculates eGFR using the MDRD formula
-- **get_clinical_classification**: Determines CKD stage and dosing advice
 
 
 ## 💬 Prompt Examples

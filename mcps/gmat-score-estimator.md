@@ -15,8 +15,8 @@ The GMAT Score Estimator is a specialized tool for candidates preparing for the 
 
 ## Available Tools (3)
 - **check_mba_competitiveness**: Check GMAT score competitiveness for specific MBA regions
-- **calculate_focus_score**: Calculate GMAT Focus Edition total score and percentile
 - **analyze_score_balance**: Analyze disparities between GMAT test sections
+- **calculate_focus_score**: Calculate GMAT Focus Edition total score and percentile
 
 
 ## 💬 Prompt Examples

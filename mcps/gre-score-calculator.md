@@ -14,8 +14,8 @@ The GRE Score Calculator is a specialized tool for students preparing for gradua
 
 
 ## Available Tools (3)
-- **calculate_scaled_scores**: Converts raw GRE correct answer counts into official scaled scores
 - **get_percentile_rank**: Determines the relative standing based on scaled GRE scores
+- **calculate_scaled_scores**: Converts raw GRE correct answer counts into official scaled scores
 - **check_program_eligibility**: Compares GRE scores against graduate program requirements
 
 

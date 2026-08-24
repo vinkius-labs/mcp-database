@@ -14,9 +14,9 @@ This MCP server provides a complete numerological engine to calculate your indiv
 
 
 ## Available Tools (3)
-- **calculate_personal_day**: Calculate the Numerology Personal Day
-- **calculate_personal_month**: Calculate the Numerology Personal Month
 - **calculate_personal_year**: Calculate the Numerology Personal Year
+- **calculate_personal_month**: Calculate the Numerology Personal Month
+- **calculate_personal_day**: Calculate the Numerology Personal Day
 
 
 ## 💬 Prompt Examples

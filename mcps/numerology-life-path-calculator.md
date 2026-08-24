@@ -15,8 +15,8 @@ This MCP server provides a specialized engine for calculating your Life Path Num
 
 ## Available Tools (3)
 - **get_archetype_details**: Retrieves the descriptive identity for a Life Path Number
-- **execute_life_path_analysis**: Performs a full Life Path calculation from a birth date
 - **calculate_reduced_value**: Reduces a number to its single digit or Master Number (1lag 11, 22, 33)
+- **execute_life_path_analysis**: Performs a full Life Path calculation from a birth date
 
 
 ## 💬 Prompt Examples

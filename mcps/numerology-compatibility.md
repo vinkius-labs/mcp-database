@@ -14,8 +14,8 @@ Unlock the secrets of destiny and connection with the Numerology Compatibility M
 
 
 ## Available Tools (3)
-- **analyze_compatibility**: Analyze compatibility between two profiles
 - **get_number_meaning**: Get the meaning of a numerological number
+- **analyze_compatibility**: Analyze compatibility between two profiles
 - **calculate_profile**: Calculate a numerological profile
 
 

@@ -18,9 +18,9 @@ This tool helps identify low-risk, high-velocity drivers (Tier 1) versus higher-
 
 
 ## Available Tools (3)
-- **calculate_channel_payback**: Calculate the payback period for a single channel
 - **recommend_budget_allocation**: Recommend budget allocation across channels
 - **analyze_acquisition_channels**: Analyze multiple marketing channels for efficiency
+- **calculate_channel_payback**: Calculate the payback period for a single channel
 
 
 ## 💬 Prompt Examples

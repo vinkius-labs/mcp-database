@@ -39,17 +39,21 @@ Connect your **Bluesky** account to your AI agent and unlock the most powerful A
 
 
 ## Available Tools (20)
-- **get_profile**: Get a Bluesky user profile details
-- **reply_to_post**: ) of the post. If you do not have the URL/URI, use search_posts or get_author_feed to find it first. Read the thread context via get_post_thread before engaging.
-
-Reply to a specific post on Bluesky
 - **repost**: ) of the post to share it on your own profile. If you do not have the URL/URI, use search_posts or get_author_feed to find it first.
 
 Repost (retweet) a specific post on Bluesky
+- **search_users**: Search for Bluesky users by keyword
+- **get_followers**: Pair with get_profile to qualify prospects.
+
+Get a list of users following a specific Bluesky handle
+- **get_profile**: Get a Bluesky user profile details
+- **get_trending_topics**: Get the current trending topics on Bluesky
+- **reply_to_post**: ) of the post. If you do not have the URL/URI, use search_posts or get_author_feed to find it first. Read the thread context via get_post_thread before engaging.
+
+Reply to a specific post on Bluesky
 - **search_posts**: Sort by "top" for viral trends, or "latest" for real-time engagement.
 
 Search Bluesky network for posts matching specific keywords
-- **search_users**: Search for Bluesky users by keyword
 - **get_notifications**: Priority channel for defensive community management.
 
 Get notifications (mentions, replies, etc) for the authenticated user
@@ -61,23 +65,19 @@ Like a specific post on Bluesky using its public URL
 - **publish_post**: Keep text under 300 characters. Links and hashtags are automatically parsed.
 
 Publish a new top-level post to your Bluesky profile
+- **get_author_feed**: Get the timeline/feed of a specific Bluesky user
 - **delete_post**: Provide the full public URL or the AT Protocol URI (at://...) of your post to execute deletion.
 
 Delete a post you previously made on Bluesky
-- **get_author_feed**: Get the timeline/feed of a specific Bluesky user
 - **get_custom_feed**: Provide the full AT URI of the custom feed generator.
 
 Get posts from a specific Bluesky custom feed/algorithm
 - **mute_user**: Critical for timeline curation.
 
 Mute a specific Bluesky user
-- **get_trending_topics**: Get the current trending topics on Bluesky
 - **unfollow_user**: Useful for curating your timeline or eliminating inactive accounts.
 
 Unfollow a Bluesky user
-- **get_followers**: Pair with get_profile to qualify prospects.
-
-Get a list of users following a specific Bluesky handle
 - **get_follows**: Get a list of users that a specific Bluesky handle is following
 - **get_post_thread**: Read this to analyze the thread environment before engaging. Provide the full public URL or the AT Protocol URI (at://...) of the target post.
 

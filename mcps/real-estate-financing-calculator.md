@@ -14,9 +14,9 @@ This MCP server provides a powerful engine for simulating real estate financing.
 
 
 ## Available Tools (4)
-- **get_loan_summary**: Fast retrieval of the total financial impact for a specific system
 - **calculate_price_amortization**: Generates a complete monthly breakdown of payments for the Price amortization system
 - **calculate_sac_amortization**: Generates a complete monthly breakdown of payments for the SAC amortization system
+- **get_loan_summary**: Fast retrieval of the total financial impact for a specific system
 - **compare_financing_strategies**: Provides a high-level comparison of the total cost between Price and SAC systems
 
 

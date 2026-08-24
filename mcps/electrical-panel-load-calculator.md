@@ -16,8 +16,8 @@ This MCP server provides specialized tools for calculating residential electrica
 ## Available Tools (4)
 - **compute_panel_specification**: Compute final electrical service requirements
 - **calculate_appliance_load**: Calculate cumulative wattage for fixed appliances
-- **calculate_branch_circuit_load**: Calculate total demand for small appliance and laundry circuits
 - **calculate_lighting_load**: Calculate total lighting load based on square footage
+- **calculate_branch_circuit_load**: Calculate total demand for small appliance and laundry circuits
 
 
 ## 💬 Prompt Examples

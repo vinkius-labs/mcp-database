@@ -15,8 +15,8 @@ This MCP server provides clinical decision support by calculating creatinine cle
 
 ## Available Tools (3)
 - **calculate_creatinine_clearance**: Calculate creatinine clearance using Cockcroft-Gault
-- **evaluate_renal_function_stage**: Evaluate renal function stage
 - **retrieve_drug_adjustments**: Retrieve medication dose adjustments
+- **evaluate_renal_function_stage**: Evaluate renal function stage
 
 
 ## 💬 Prompt Examples

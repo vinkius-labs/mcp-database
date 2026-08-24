@@ -14,10 +14,10 @@ This MCP server provides an analytical engine to compare the net profitability o
 
 
 ## Available Tools (3)
-- **get_tax_rate_by_duration**: Retrieves the specific income tax percentage applicable based on duration
 - **calculate_net_profit**: Returns profitability breakdown.
 
 Calculates the gross profit, tax amount, and net profit for a specific investment setup
+- **get_tax_rate_by_duration**: Retrieves the specific income tax percentage applicable based on duration
 - **compare_all_instruments**: Provides a side-by-side comparison of all supported investment types
 
 

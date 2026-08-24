@@ -14,8 +14,8 @@ The Drywall Quantity Calculator is a specialized tool designed to bridge the gap
 
 
 ## Available Tools (3)
-- **estimate_consumables**: Calculates the number of screws and the length of joint tape required
 - **calculate_sheet_quantity**: Determines how many drywall sheets of a specific size must be purchased
+- **estimate_consumables**: Calculates the number of screws and the length of joint tape required
 - **get_opening_constants**: Retrieves the standard square footage values used for calculating door and window deductions
 
 

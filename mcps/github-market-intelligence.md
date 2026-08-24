@@ -33,12 +33,6 @@ Empower your AI agent to orchestrate your entire community interaction on GitHub
 
 
 ## Available Tools (17)
-- **analyze_issue_context**: Use this to read the full context before engaging.
-
-Retrieve the full thread and comments of a specific issue
-- **analyze_tech_stack**: Use this to determine if the repository's tech stack is compatible with our solutions.
-
-Analyze the primary programming languages and dependencies of a repository
 - **comment_on_issue**: Requires markdown-formatted content.
 
 Post a technical comment on a specific GitHub issue
@@ -54,36 +48,42 @@ Get health and activity metrics for a repository
 - **get_repo_readme**: md content. Use this to understand the core value proposition, documentation, and purpose of a project before analyzing it further.
 
 Retrieve the README markdown content of a specific repository
-- **get_trending_repos**: Returns repository metadata including star count and language.
-
-Discover trending GitHub repositories based on a specific topic or language
-- **get_user_contact**: Use this to find contact details for repository builders and maintainers.
-
-Retrieve contact information and profile details for a specific GitHub user
 - **scan_competitor_issues**: Returns issue numbers, titles, and bodies.
 
 Scan a specific repository for open issues, bugs, and feature requests
 - **scan_pull_requests**: Use this to identify bottlenecks in the maintainer's workflow or active community contributions.
 
 Retrieve open pull requests from a repository
-- **scan_recent_releases**: Use this to monitor a competitor's recent feature launches or updates.
-
-Fetch the most recent releases and changelogs from a repository
 - **scan_repo_stargazers**: Use this to identify early adopters, interested developers, or potential leads within a specific ecosystem.
 
 Retrieve a list of users who have starred a repository
 - **search_code_usage**: Example query: "filename:package.json react". Use this to map out which repositories are using a specific competitor or framework.
 
 Search GitHub for specific code snippets, library imports, or configurations
-- **track_churn_signals**: g., "giving up", "alternative to"). Returns a list of matching issues.
+- **analyze_issue_context**: Use this to read the full context before engaging.
 
-Scan GitHub issues for user frustration or churn signals
+Retrieve the full thread and comments of a specific issue
+- **analyze_tech_stack**: Use this to determine if the repository's tech stack is compatible with our solutions.
+
+Analyze the primary programming languages and dependencies of a repository
 - **get_org_members**: Use this to map out engineering teams and identify key technical personnel within a target company.
 
 Retrieve public members of a specific GitHub organization
 - **get_top_contributors**: Returns usernames, GitHub profile URLs, and total contribution counts.
 
 Retrieve the most active contributors from a repository
+- **get_trending_repos**: Returns repository metadata including star count and language.
+
+Discover trending GitHub repositories based on a specific topic or language
+- **get_user_contact**: Use this to find contact details for repository builders and maintainers.
+
+Retrieve contact information and profile details for a specific GitHub user
+- **scan_recent_releases**: Use this to monitor a competitor's recent feature launches or updates.
+
+Fetch the most recent releases and changelogs from a repository
+- **track_churn_signals**: g., "giving up", "alternative to"). Returns a list of matching issues.
+
+Scan GitHub issues for user frustration or churn signals
 
 
 ## 💬 Prompt Examples

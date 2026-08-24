@@ -14,12 +14,12 @@ The North Star Metric Modeler is a strategic planning tool designed to bridge th
 
 
 ## Available Tools (4)
-- **set_north_star_goal**: Establishes the primary objective
-- **simulate_lever_improvement**: Predicts impact of pillar improvement
 - **calculate_contribution_distribution**: Analyzes contribution of each pillar to the gap
 - **configure_driver_tree**: Total weight must be 100%.
 
 Defines the structural relationship between NSM and pillars
+- **set_north_star_goal**: Establishes the primary objective
+- **simulate_lever_improvement**: Predicts impact of pillar improvement
 
 
 ## 💬 Prompt Examples

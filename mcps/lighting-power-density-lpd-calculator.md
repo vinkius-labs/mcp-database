@@ -14,9 +14,9 @@ This MCP server provides specialized tools for building energy efficiency analys
 
 
 ## Available Tools (3)
-- **calculate_lpd_value**: Calculate the Lighting Power Density (LPD) for a space
 - **estimate_led_energy_savings**: Estimate annual energy savings from an LED retrofit
 - **verify_ashrae_compliance**: Verify if the current LPD meets ASHRAE 90.1 standards
+- **calculate_lpd_value**: Calculate the Lighting Power Density (LPD) for a space
 
 
 ## 💬 Prompt Examples
