@@ -29,6 +29,7 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 | [Stanford PubMed](../mcps/stanford-pubmed.md) | Search biomedical literature from the world largest database of life science and medical research publications. |
 | [Stanford Semantic Scholar](../mcps/stanford-semantic-scholar.md) | Discover academic papers with AI-powered search that understands research context, finds citations, and recommends related work. |
 | [Study Abroad Cost Estimator](../mcps/study-abroad-cost-estimator.md) | Calculates a comprehensive budget for international studies in USD, EUR, and BRL. |
+| [Tarot Spread Structure Generator](../mcps/tarot-spread-structure-generator.md) | Provides deterministic structural blueprints for tarot spreads, including positions and reading sequences. |
 | [Verb Conjugation Engine](../mcps/verb-conjugation-engine.md) | Deterministic morphological engine for Romance language verb conjugation. |
 
 

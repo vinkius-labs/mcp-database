@@ -14,6 +14,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Bates Numbering Generator Engine](../mcps/bates-numbering-generator-engine.md) | Generate flawless, sequentially accurate Bates numbering arrays for massive e-Discovery documentation without LLM skipping. |
 | [Beer ABV Calculator](../mcps/beer-abv-calculator.md) | Calculate ABV, attenuation, calories, and beer style from gravity readings. |
 | [Blood Alcohol Content Calculator](../mcps/blood-alcohol-content-calculator.md) | Estimate BAC, legal limits, and impairment risks. |
+| [Board Game Initiative Resolver](../mcps/board-game-initiative-resolver.md) | Deterministic turn order generator for board games. |
 | [Bolt Pattern Finder](../mcps/bolt-pattern-finder.md) | Precise vehicle wheel specification lookup and cross-compatibility engine. |
 | [Bowling Score Engine](../mcps/bowling-score-engine.md) | Deterministic 10-pin bowling scoring and validation engine. |
 | [Button Sizing Engine](../mcps/button-sizing-engine.md) | Converts button sizes between Ligne, mm, and inches, and calculates buttonhole dimensions. |
@@ -86,12 +87,14 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Roman Numeral Converter](../mcps/roman-numeral-converter.md) | Convert between Arabic numbers and Roman numerals with strict notation rules. |
 | [Roman Numeral Engine](../mcps/roman-numeral-engine.md) | Convert between Arabic integers and Roman numerals with support for large-scale values using vinculum notation. |
 | [RPM & Speed Gear Calculator](../mcps/rpm-speed-gear-calculator.md) | Calculate engine RPM at specific vehicle speeds or predict speed from a given RPM. |
+| [Running Pace & Split Calculator](../mcps/running-pace-split-calculator.md) | Generate precise running pace schedules and cumulative time markers. |
 | [Running Pace Converter](../mcps/running-pace-converter.md) | Convert running paces, predict race times using Riegel formula, and generate training zones. |
 | [Scrabble Word Scorer](../mcps/scrabble-word-scorer.md) | A deterministic calculator for exact Scrabble scores, including multipliers and bingo bonuses. |
 | [SemVer Compatibility Checker](../mcps/semver-compatibility-checker.md) | Verify if a target version satisfies a semantic versioning constraint and detect breaking changes. |
 | [Shower Water Calculator](../mcps/shower-water-calculator.md) | Calculate water usage, costs, and carbon emissions for showers. |
 | [SSE Event Reassembler & Gap Detector](../mcps/sse-event-reassembler-gap-detector.md) | Detect packet loss and reconstruct fragmented SSE streams. |
 | [String Tension Calculator](../mcps/string-tension-calculator.md) | Calculate string tension, instrument total tension, and gauge requirements for musicians. |
+| [Sudoku Grid Validator](../mcps/sudoku-grid-validator.md) | A deterministic engine for validating 9x9 Sudoku grid states and identifying rule violations. |
 | [Sugar Cooking Stages Calculator](../mcps/sugar-cooking-stages-calculator.md) | Identify precise candy-making stages, temperature ranges, and altitude adjustments. |
 | [Temperature Converter for Cooking](../mcps/temperature-converter-for-cooking.md) | Convert oven temperatures between Celsius, Fahrenheit, and the European Gas scale with heat intensity classification. |
 | [Time Difference Calculator](../mcps/time-difference-calculator.md) | Calculate exact duration between two clock times, handling midnight transitions. |

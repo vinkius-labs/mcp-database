@@ -368,6 +368,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Setel Malaysia](../mcps/setel-malaysia.md) | Orchestrate Setel Malaysia payments — manage payment intents, parking sessions, and EV charging directly from any AI agent. |
 | [Settlement Value Estimator](../mcps/settlement-value-estimator.md) | Quantify legal settlement ranges using Expected Monetary Value and risk-adjusted negotiation boundaries. |
 | [Sharpe Ratio Calculator](../mcps/sharpe-ratio-calculator.md) | Deterministic risk-adjusted performance engine for financial metrics. |
+| [Shipping Zone Cost Calculator](../mcps/shipping-zone-cost-calculator.md) | Calculate precise freight costs using dimensional weight and shipping zones. |
 | [Shrinkage Calculator](../mcps/shrinkage-calculator.md) | Calculate inventory shrinkage, risk levels, and security investment ROI. |
 | [Simples Nacional Calculator](../mcps/simples-nacional-calculator.md) | Calculate effective tax rates, Fator R eligibility, and monthly DAS amounts for the Brazilian Simples Nacional regime. |
 | [Singapore ERP Toll Calculator](../mcps/singapore-erp-toll-calculator.md) | Calculate exact Singapore Electronic Road Pricing (ERP) costs for vehicles and routes. |

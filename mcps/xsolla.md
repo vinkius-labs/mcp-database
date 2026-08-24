@@ -37,43 +37,43 @@ Connect your **Xsolla** merchant account to any AI agent to streamline your gami
 - **get_bundles**: Get bundles
 - **get_events**: Get events
 - **get_payment_accounts**: Get user payment accounts
-- **register_user_oauth**: 0 protocol.
-
-Register a new user (OAuth 2.0)
 - **register_user**: Register a new user
 - **search_transactions**: Search transactions
-- **update_subscription_plan**: Update a subscription plan
 - **update_virtual_item_admin**: Update a virtual item (Admin)
-- **verify_promo_code**: Requires User JWT.
-
-Verify a promo code
-- **get_promotions_admin**: Get promotions (Admin)
 - **invalidate_token**: Invalidate a Pay Station token
-- **create_order**: Requires User JWT.
-
-Create an order for an item
+- **get_promotions_admin**: Get promotions (Admin)
+- **activate_promotion**: Activate a promotion
+- **create_payment**: Create a payment using a saved account
+- **create_subscription_plan**: Create a subscription plan
+- **create_token**: Create a Pay Station token
+- **create_virtual_item_admin**: Create a virtual item (Admin)
 - **get_social_login_url**: Get social login URL
-- **get_subscription_plans**: Get subscription plans
 - **get_transaction_details**: Get transaction details
 - **get_user_attributes**: Requires User JWT.
 
 Get user attributes
+- **get_user_subscription**: Get user subscription
+- **link_account**: Requires User JWT.
+
+Link user account
+- **register_user_oauth**: 0 protocol.
+
+Register a new user (OAuth 2.0)
+- **update_subscription_plan**: Update a subscription plan
+- **verify_promo_code**: Requires User JWT.
+
+Verify a promo code
+- **create_order**: Requires User JWT.
+
+Create an order for an item
+- **get_subscription_plans**: Get subscription plans
 - **get_user_cart**: Requires User JWT.
 
 Get user cart
 - **get_user_profile**: Requires User JWT.
 
 Get user profile
-- **activate_promotion**: Activate a promotion
-- **get_user_subscription**: Get user subscription
 - **get_virtual_items**: Get virtual items
-- **create_payment**: Create a payment using a saved account
-- **create_subscription_plan**: Create a subscription plan
-- **create_token**: Create a Pay Station token
-- **create_virtual_item_admin**: Create a virtual item (Admin)
-- **link_account**: Requires User JWT.
-
-Link user account
 - **login_user**: Login user
 - **mark_event_processed**: Mark event as processed
 - **redeem_coupon**: Requires User JWT.

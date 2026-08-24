@@ -16,6 +16,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Planting Window Calculator](../mcps/planting-window-calculator.md) | Determine optimal planting windows, insurance deadlines, and climate risks for crops. |
 | [Productivity Gap Analyzer](../mcps/productivity-gap-analyzer.md) | Identify agricultural yield gaps and potential revenue increases. |
 | [Sake Seimai Buai Calculator](../mcps/sake-seimai-buai-calculator.md) | Calculate rice milling yields, milling duration, sake grades, and fermentation water requirements. |
+| [Seed Spacing Grid Planner](../mcps/seed-spacing-grid-planner.md) | Generate precise planting layouts with exact coordinates and capacity limits. |
 | [Seed Treatment Calculator](../mcps/seed-treatment-calculator.md) | Calculate precise quantities, application sequences, and costs for seed treatment batches. |
 | [Soil Correction Planner](../mcps/soil-correction-planner.md) | Plan a 3-year soil amendment program for lime, gypsum, and micronutrients. |
 

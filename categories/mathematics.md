@@ -24,6 +24,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 | [Matrix Math and Linear Algebra Solver](../mcps/matrix-math-and-linear-algebra-solver.md) | Perform precise matrix operations like addition, multiplication, and inversion. |
 | [Mesh Geometry Calculator](../mcps/mesh-geometry-calculator.md) | Perform advanced geometric and topological analysis on 3D triangle meshes. |
 | [Minimum Spanning Tree Calculator](../mcps/minimum-spanning-tree-calculator.md) | Calculate Minimum and Maximum Spanning Trees using Kruskal's and Prim's algorithms. |
+| [Musical Tempo Delay Calculator](../mcps/musical-tempo-delay-calculator.md) | Calculate precise millisecond delays for musical note durations at constant or ramping tempos. |
 | [Network Flow Calculator](../mcps/network-flow-calculator.md) | Solve maximum flow, minimum cut, and bipartite matching problems using Edmonds-Karp. |
 | [Pattern Grading Calculator](../mcps/pattern-grading-calculator.md) | Scale sewing patterns between sizes using ASTM standards (Women, Men, Children). |
 | [Prestige System Calculator](../mcps/prestige-system-calculator.md) | Analyze the economic efficiency and temporal impact of prestige/rebirth mechanics. |
