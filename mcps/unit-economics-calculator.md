@@ -25,8 +25,8 @@ The result is not just a number; it's an actionable blueprint for financial heal
 
 ## Available Tools (3)
 - **calculate_contribution_margin**: Calculate contribution margin from revenue and variable costs
-- **rate_health**: Rate unit economics health based on payback period
 - **calculate_payback_period**: Calculate customer acquisition cost payback period
+- **rate_health**: Rate unit economics health based on payback period
 
 
 ## 💬 Prompt Examples

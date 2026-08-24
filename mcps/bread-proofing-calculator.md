@@ -14,8 +14,8 @@ This MCP server provides precise estimation tools for bakers to manage fermentat
 
 
 ## Available Tools (4)
-- **get_bulk_fermentation_duration**: Estimates the time required for bulk fermentation
 - **calculate_cold_delay**: Calculates the additional time required when moving dough to a refrigerator
+- **get_bulk_fermentation_duration**: Estimates the time required for bulk fermentation
 - **get_final_proof_duration**: Estimates the time required for final proofing
 - **validate_fermentation_environment**: Checks if the provided yeast and temperature settings are within safe or standard baking parameters
 

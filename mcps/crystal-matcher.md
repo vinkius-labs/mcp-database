@@ -22,10 +22,10 @@ Connects through Vinkius Edge -- one URL, one token, no API keys to manage.
 
 
 ## Available Tools (4)
-- **get_crystal_details**: Get detailed information about a specific crystal
 - **filter_crystals_by_element**: Filter crystals by their associated element
-- **find_crystals_by_chakra**: Find crystals associated with a specific chakra
 - **query_crystals_by_intent**: Find crystals based on a spiritual or emotional intent
+- **find_crystals_by_chakra**: Find crystals associated with a specific chakra
+- **get_crystal_details**: Get detailed information about a specific crystal
 
 
 ## 💬 Prompt Examples

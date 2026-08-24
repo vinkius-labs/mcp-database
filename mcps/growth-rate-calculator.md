@@ -31,12 +31,12 @@ The result is not just a set of numbers; it is a comprehensive financial bluepri
 - **analyze_historical_growth**: Pass data as a JSON array of objects with date and revenue fields.
 
 Analyze historical revenue growth across time periods
-- **calculate_key_rates**: Pass EBITDA metrics as a JSON array of {revenue, ebitda} objects.
-
-Calculate CAGR and Rule of 40 score from financial data
 - **generate_growth_projection**: For Accelerated/Decelerated, provide rateDeterminer as the monthly rate shift percentage.
 
 Generate 12-month revenue projections under different growth scenarios
+- **calculate_key_rates**: Pass EBITDA metrics as a JSON array of {revenue, ebitda} objects.
+
+Calculate CAGR and Rule of 40 score from financial data
 
 
 ## 💬 Prompt Examples

@@ -22,8 +22,8 @@ Connects through Vinkius Edge -- one URL, one token, no API keys to manage.
 
 
 ## Available Tools (3)
-- **match_solfeggio_resonance**: Identifies which Solfeggio frequency is numerically closest to a provided target frequency
 - **compute_harmonic_series**: Generates a list of frequencies representing the harmonic series for a given base frequency
+- **match_solfeggio_resonance**: Identifies which Solfeggio frequency is numerically closest to a provided target frequency
 - **get_note_frequency**: Calculates the absolute frequency in Hertz for a specific musical note and octave
 
 

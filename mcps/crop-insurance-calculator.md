@@ -14,9 +14,9 @@ This MCP server provides tools to determine essential agricultural insurance met
 
 
 ## Available Tools (3)
+- **calculate_insurance_metrics**: Performs the primary calculation to output all necessary insurance parameters
 - **lookup_premium_rate**: Retrieves the specific insurance premium rate associated with a particular crop in a specific region
 - **validate_insurance_eligibility**: Checks if a specific production setup is valid under current insurance regulations
-- **calculate_insurance_metrics**: Performs the primary calculation to output all necessary insurance parameters
 
 
 ## 💬 Prompt Examples

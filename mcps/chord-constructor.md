@@ -14,7 +14,6 @@ The Chord Constructor MCP server is a powerful musical engine that allows AI age
 
 
 ## Available Tools (4)
-- **determine_harmonic_role**: Identifies the functional role of a chord within a specific musical key
 - **generate_voicings**: Returns both voicings.
 
 Arranges a set of notes into specific "closed" or "open" musical textures
@@ -24,6 +23,7 @@ Calculates all possible permutations of a chord where different notes serve as t
 - **parse_chord_string**: Returns root, intervals, and normalized name.
 
 Converts a standard chord name string into its structured component parts
+- **determine_harmonic_role**: Identifies the functional role of a chord within a specific musical key
 
 
 ## 💬 Prompt Examples

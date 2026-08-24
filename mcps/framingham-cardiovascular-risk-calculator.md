@@ -14,12 +14,12 @@ Calculates your estimated 10-year cardiovascular risk percentage and estimates y
 
 
 ## Available Tools (2)
-- **calculate_ten_year_risk**: Requires age, sex, total cholesterol, HDL-C, systolic blood pressure, smoking status, and diabetes status.
-
-Calculate the 10-year cardiovascular risk percentage using the Framingham Risk Score model
 - **estimate_vascular_age**: Requires total cholesterol, HDL-C, systolic blood pressure, and age.
 
 Estimate the patient vascular age based on cardiovascular markers
+- **calculate_ten_year_risk**: Requires age, sex, total cholesterol, HDL-C, systolic blood pressure, smoking status, and diabetes status.
+
+Calculate the 10-year cardiovascular risk percentage using the Framingham Risk Score model
 
 
 ## 💬 Prompt Examples

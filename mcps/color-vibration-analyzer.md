@@ -23,8 +23,8 @@ Instead of manual research, get immediate, data-driven insights into how specifi
 
 ## Available Tools (3)
 - **analyze_color_vibration**: Identify the vibrational and energetic profile of a specific input color
-- **get_chakra_profile**: Retrieve all associated colors and vibrational data for a specific chakra
 - **fetch_affirmations_by_property**: Find empowering statements based on a desired energetic state
+- **get_chakra_profile**: Retrieve all associated colors and vibrational data for a specific chakra
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides a specialized simulation engine for game designers to e
 
 
 ## Available Tools (4)
-- **calculate_base_damage**: Computes the fundamental damage value before any random variance or speed multipliers are applied
 - **calculate_sustained_dps**: Converts individual hit damage into a continuous rate of of damage to evaluate weapon/unit efficiency over time
 - **compare_formula_efficiency**: Evaluates multiple damage models simultaneously to help designers choose which scaling behavior fits their game's balance requirements
+- **calculate_base_damage**: Computes the fundamental damage value before any random variance or speed multipliers are applied
 - **simulate_damage_variance**: Determines the lower and upper bounds of damage to illustrate possible combat outcomes
 
 

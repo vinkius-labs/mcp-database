@@ -25,9 +25,9 @@ The diagnosis of Atrial Fibrillation (AFib) requires careful risk stratification
 
 
 ## Available Tools (3)
-- **query_cha2ds2_vasc_score**: Calculate the CHA2DS2-VASc score for atrial fibrillation stroke risk assessment
 - **calculate_hasbled_score**: Calculate the HAS-BLED score for bleeding risk assessment during anticoagulation
 - **get_risk_recommendations**: Get clinical recommendations based on CHA2DS2-VASc and HAS-BLED scores
+- **query_cha2ds2_vasc_score**: Calculate the CHA2DS2-VASc score for atrial fibrillation stroke risk assessment
 
 
 ## 💬 Prompt Examples

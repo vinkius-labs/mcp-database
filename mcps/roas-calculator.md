@@ -25,10 +25,10 @@ The result is not just a number; it's an actionable blueprint for financial heal
 
 ## Available Tools (3)
 - **calculate_break_even_roas**: Calculate the minimum ROAS needed to break even given a contribution margin
+- **get_target_benchmark**: Get the target ROAS benchmark for a specific business type
 - **calculate_roas**: Provide mediaSpend and sourceRevenue for the calculation.
 
 Calculate Return on Ad Spend (ROAS) with optional channel/campaign breakdown
-- **get_target_benchmark**: Get the target ROAS benchmark for a specific business type
 
 
 ## 💬 Prompt Examples

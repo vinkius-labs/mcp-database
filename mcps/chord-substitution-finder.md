@@ -15,8 +15,8 @@ The Chord Substitution Finder is a music theory engine that identifies various s
 
 ## Available Tools (3)
 - **analyze_progression_tension**: Analyze the tension arc of a chord progression
-- **get_substitution_detail**: Get detailed information about a specific chord substitution
 - **find_substitutions**: Find available chord substitutions for a given chord
+- **get_substitution_detail**: Get detailed information about a specific chord substitution
 
 
 ## 💬 Prompt Examples

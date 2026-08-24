@@ -28,12 +28,12 @@ The initial assessment of chest pain patients is complex. Determining if symptom
 - **calculate_heart_score**: History and ECG scores are optional and default to 0 if not provided.
 
 Calculate the total HEART score for acute myocardial infarction risk assessment
-- **classify_risk_and_triage**: Patient age group is optional for validation.
-
-Classify a HEART score into risk category and determine triage priority
 - **recommend_clinical_conduct**: Adjusts for emergency room setting and patient gender when provided.
 
 Provide evidence-based clinical recommendations based on risk classification
+- **classify_risk_and_triage**: Patient age group is optional for validation.
+
+Classify a HEART score into risk category and determine triage priority
 
 
 ## 💬 Prompt Examples

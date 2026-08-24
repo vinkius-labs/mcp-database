@@ -26,8 +26,8 @@ By connecting this server via Vinkius Edge, any AI agent in Cursor, Claude Deskt
 
 ## Available Tools (3)
 - **evaluate_elemental_profile**: Evaluate the elemental profile based on a distribution
-- **calculate_elemental_weights**: Calculate the distribution of elements across astrological signs
 - **lookup_sign_element**: Lookup the elemental classification of a zodiac sign
+- **calculate_elemental_weights**: Calculate the distribution of elements across astrological signs
 
 
 ## 💬 Prompt Examples

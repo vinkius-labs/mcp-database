@@ -17,8 +17,8 @@ The Combat Balance Checker is an analytical engine designed for game designers t
 - **analyze_influence**: ) for a given matchup.
 
 Analyze which attribute drives combat outcome
-- **simulate_combat**: Simulate combat between two profiles
 - **audit_balance**: Audit combat balance
+- **simulate_combat**: Simulate combat between two profiles
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ Baking at higher elevations requires specific recipe modifications due to decrea
 
 ## Available Tools (3)
 - **adjust_liquid_volume**: Adjust liquid volume for altitude
-- **adjust_oven_conditions**: Adjust oven temperature and time for altitude
 - **adjust_leavening**: Adjust leavening agent for altitude
+- **adjust_oven_conditions**: Adjust oven temperature and time for altitude
 
 
 ## 💬 Prompt Examples

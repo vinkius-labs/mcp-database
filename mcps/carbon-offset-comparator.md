@@ -15,8 +15,8 @@ The Carbon Offset Comparator is an evaluation engine designed to compare the cos
 
 ## Available Tools (3)
 - **compare_strategies_ranking**: Ranks a list of selected strategies from most cost-effective to least cost-effective
-- **get_strategy_efficiency**: Provides the specific cost per metric ton of CO2 for a single chosen offset strategy
 - **project_budget_impact**: Calculates the total amount of CO2 that can be offset for each provided strategy given a fixed financial budget
+- **get_strategy_efficiency**: Provides the specific cost per metric ton of CO2 for a single chosen offset strategy
 
 
 ## 💬 Prompt Examples

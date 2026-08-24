@@ -22,13 +22,13 @@ The marketing industry often uses standard Return on Ad Spend (ROAS), which calc
 
 
 ## Available Tools (3)
+- **calculate_roas_comparison**: Calculate true incremental ROAS and compare it to reported channel ROAS
 - **calculate_baseline_metrics**: Required before any lift calculation can begin.
 
 Calculate baseline conversion rates for control and exposed groups
 - **calculate_incrementality_metrics**: Determines how much better the exposed campaign performed versus what would have happened without it.
 
 Calculate incrementality metrics including absolute lift, percentage lift, and incremental CPA
-- **calculate_roas_comparison**: Calculate true incremental ROAS and compare it to reported channel ROAS
 
 
 ## 💬 Prompt Examples
