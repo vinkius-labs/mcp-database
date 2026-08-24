@@ -34,20 +34,20 @@ Connect your AI agent to the **Rijksmuseum Data API** to explore centuries of Du
 
 
 ## Available Tools (8)
-- **resolve_pid**: Supports content negotiation.
-
-Dereference a Persistent Identifier (PID)
 - **get_iiif_image_info**: Get IIIF image metadata
 - **get_iiif_manifest**: Get IIIF presentation manifest
 - **get_ldes_collection**: Get the Linked Data Event Streams (LDES) collection
 - **get_ldes_dataset**: Get a specific LDES dataset
-- **oai_pmh_request**: Harvest metadata using the OAI-PMH API
-- **search_collection**: Returns Linked Open Data identifiers based on various filters.
-
-Search for characteristics of objects in the Rijksmuseum collection
 - **search_library**: Supports Contextual Query Language (CQL).
 
 Search bibliographic records from the Rijksmuseum Research Library
+- **oai_pmh_request**: Harvest metadata using the OAI-PMH API
+- **resolve_pid**: Supports content negotiation.
+
+Dereference a Persistent Identifier (PID)
+- **search_collection**: Returns Linked Open Data identifiers based on various filters.
+
+Search for characteristics of objects in the Rijksmuseum collection
 
 
 ## 💬 Prompt Examples

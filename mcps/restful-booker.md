@@ -34,19 +34,19 @@ Connect to the **Restful Booker** API to manage hotel reservations. This server 
 
 
 ## Available Tools (8)
-- **get_booking**: Get a specific booking
-- **health_check**: API health check
-- **partial_update_booking**: Requires auth token.
-
-Partially update a booking
 - **create_booking**: Create a new booking
 - **create_token**: Create a new auth token
 - **delete_booking**: Requires auth token.
 
 Delete a booking
+- **get_booking**: Get a specific booking
 - **get_booking_ids**: Can take optional query strings to search.
 
 Get all booking IDs
+- **health_check**: API health check
+- **partial_update_booking**: Requires auth token.
+
+Partially update a booking
 - **update_booking**: Requires auth token.
 
 Update a current booking

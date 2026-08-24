@@ -33,17 +33,17 @@ Connect your AI agent to the **Pocket Network** decentralized infrastructure to 
 
 
 ## Available Tools (7)
-- **relay_request**: Requires payload, meta, and proof objects.
-
-Send a relay request to an external blockchain
-- **get_session**: Get Pocket Network session details
-- **submit_transaction**: g., staking, sending POKT) to the network.
-
-Submit a transaction to the Pocket Network
-- **get_account**: Get Pocket Network account details
 - **get_app**: Get Pocket Network app details
 - **get_block**: Get Pocket Network block details
 - **get_node**: Get Pocket Network node details
+- **get_account**: Get Pocket Network account details
+- **get_session**: Get Pocket Network session details
+- **relay_request**: Requires payload, meta, and proof objects.
+
+Send a relay request to an external blockchain
+- **submit_transaction**: g., staking, sending POKT) to the network.
+
+Submit a transaction to the Pocket Network
 
 
 ## 💬 Prompt Examples

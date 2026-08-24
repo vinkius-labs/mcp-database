@@ -35,30 +35,30 @@ Connect to **Reqres**, the industry-standard hosted REST-API, to simulate real-w
 
 ## Available Tools (25)
 - **create_app_record**: Create a user-scoped record in an app collection
-- **create_record**: Create a record in a project collection
 - **create_user**: Create a user (echoed) in Demo API
 - **delete_record**: Delete a record from a project collection
 - **delete_user**: Delete a user in Demo API
-- **get_record**: Get a single record from a project collection
-- **get_user**: Get a single user by ID from Demo API
-- **list_app_records**: List user-scoped records in an app collection
 - **list_colors**: List resource colors (Pantone) from Demo API
 - **list_records**: List records in a project collection
-- **list_users**: List users (paginated) from Demo API
-- **register_demo**: Register with fixture users (returns id/token)
 - **request_magic_link**: Request a magic link for App User login
-- **trigger_scenario**: Trigger a specific failure scenario in Agent Sandbox
-- **update_record**: Update a record (full replace) in a project collection
-- **update_user**: Update a user (echoed) in Demo API
 - **verify_magic_link**: Verify a magic link token to get a session token
 - **agent_users**: Get paginated users with cursor pagination from Agent Sandbox
 - **login_demo**: Login with fixture users (returns token)
-- **patch_record**: Partial update a record in a project collection
 - **patch_user**: Partial update a user (echoed) in Demo API
 - **agent_health**: Get Agent Sandbox health probe and rate-limit status
+- **get_me**: Get current app user info
 - **agent_orders**: Get orders with relational data from Agent Sandbox
 - **agent_scenarios**: List available failure scenarios in Agent Sandbox
-- **get_me**: Get current app user info
+- **create_record**: Create a record in a project collection
+- **get_record**: Get a single record from a project collection
+- **get_user**: Get a single user by ID from Demo API
+- **list_app_records**: List user-scoped records in an app collection
+- **list_users**: List users (paginated) from Demo API
+- **patch_record**: Partial update a record in a project collection
+- **register_demo**: Register with fixture users (returns id/token)
+- **trigger_scenario**: Trigger a specific failure scenario in Agent Sandbox
+- **update_record**: Update a record (full replace) in a project collection
+- **update_user**: Update a user (echoed) in Demo API
 
 
 ## 💬 Prompt Examples

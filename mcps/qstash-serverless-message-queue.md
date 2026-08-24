@@ -37,21 +37,15 @@ Connect your **Upstash QStash** account to any AI agent to orchestrate serverles
 - **resume_queue**: Resume a paused queue
 - **get_schedule**: Get details of a specific schedule
 - **list_flow_control_keys**: List all flow control keys
-- **list_url_groups**: List all URL Groups (Topics)
-- **remove_endpoints**: Remove endpoints from a URL Group
 - **reset_flow_control_rate**: Reset the rate limit for a flow control key
 - **resume_flow_control**: Resume a paused flow control key
-- **resume_schedule**: Resume a paused schedule
 - **retry_dlq_message**: Retry a message from the DLQ
 - **unpin_flow_control**: Unpin configuration for a flow control key
-- **upsert_queue**: Create or update a queue
-- **bulk_cancel_messages**: Cancel multiple messages based on filters
 - **cancel_message**: Stop a pending message from being delivered
 - **delete_dlq_message**: Delete a message from the DLQ
 - **delete_queue**: Delete a queue
 - **delete_schedule**: Delete a schedule
 - **delete_url_group**: Delete a URL Group
-- **enqueue_message**: Add a message to a specific queue for FIFO or controlled parallelism
 - **get_dlq_message**: Get details of a specific DLQ message
 - **get_flow_control_key**: Get details of a specific flow control key
 - **get_global_parallelism**: Get globalThis parallelism configuration
@@ -66,12 +60,18 @@ Connect your **Upstash QStash** account to any AI agent to orchestrate serverles
 - **pause_flow_control**: Pause a flow control key
 - **pause_queue**: Pause a queue
 - **pause_schedule**: Pause a schedule
-- **pin_flow_control**: Pin configuration for a flow control key
-- **publish_message**: Publish a message to a destination URL or URL Group
 - **upsert_url_group**: Create or update a URL Group (Topic)
-- **batch_messages**: Send multiple messages in a single request
 - **bulk_delete_dlq**: Delete all messages from the DLQ
 - **bulk_retry_dlq**: Retry all messages in the DLQ
+- **batch_messages**: Send multiple messages in a single request
+- **bulk_cancel_messages**: Cancel multiple messages based on filters
+- **enqueue_message**: Add a message to a specific queue for FIFO or controlled parallelism
+- **list_url_groups**: List all URL Groups (Topics)
+- **pin_flow_control**: Pin configuration for a flow control key
+- **publish_message**: Publish a message to a destination URL or URL Group
+- **remove_endpoints**: Remove endpoints from a URL Group
+- **resume_schedule**: Resume a paused schedule
+- **upsert_queue**: Create or update a queue
 
 
 ## 💬 Prompt Examples

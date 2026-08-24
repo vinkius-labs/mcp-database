@@ -33,12 +33,12 @@ Connect to the comprehensive **Pokemon TCG API** and turn your AI agent into a m
 
 
 ## Available Tools (8)
-- **list_sets**: Use the "q" parameter to search (e.g., "series:sword").
-
-List Pokemon card sets with optional search and pagination
 - **list_subtypes**: g., EX, Mega, Rapid Strike).
 
 List all card subtypes
+- **list_sets**: Use the "q" parameter to search (e.g., "series:sword").
+
+List Pokemon card sets with optional search and pagination
 - **list_supertypes**: g., Pokémon, Trainer, Energy).
 
 List all card supertypes

@@ -40,11 +40,9 @@ Connect to the **RubyGems** ecosystem to streamline your Ruby development workfl
 Submit a built .gem file to RubyGems.org
 - **remove_gem_owner**: Remove an owner from a gem
 - **remove_webhook**: Remove a webhook
-- **get_reverse_dependencies**: List gems that depend on the specified gem
 - **search_gems**: org for gems matching the query. Results are paginated (30 per page).
 
 Search for active gems
-- **update_gem_owner**: Update an owner's role on a gem
 - **yank_gem**: Yanks a specific version of a gem.
 
 Remove a gem version from the index
@@ -52,30 +50,32 @@ Remove a gem version from the index
 
 Create a webhook
 - **exchange_oidc_token**: Exchange an OIDC ID token for a short-lived API key
-- **add_gem_owner**: Add an owner to a gem
-- **fire_webhook**: Test fire a webhook
-- **get_api_key**: Retrieve your API key using HTTP Basic Auth
 - **get_compact_index_info**: Returns a text-based format listing all versions of a specific gem
-- **get_compact_index_names**: Returns a newline-delimited list of all gem names
-- **get_compact_index_versions**: Returns a compact index of all gem names, versions, and info file MD5s
-- **get_downloads**: Get total download count for all gems
-- **get_gem_downloads**: Get download stats for a specific gem and version
 - **get_gem_owners**: View all owners of a gem
-- **get_gem**: Get basic information about a gem
 - **get_gem_version_details_v2**: Returns detailed information for a specific gem version (API v2)
 - **get_gem_versions**: Get all versions for a gem
-- **get_just_updated_activity**: Pulls the 50 most recently updated gems
-- **get_latest_activity**: Pulls the 50 most recently added gems
+- **get_gem**: Get basic information about a gem
 - **get_latest_gem_version**: Get the latest version of a gem
 - **get_my_profile**: View your own profile info, including MFA status
 - **get_owner_gems**: View all gems a user can push to
-- **get_profile**: View basic user info
 - **get_timeframe_versions**: Dates must be ISO8601 format.
 
 Get versions created within a specific timeframe
 - **list_my_gems**: Lists gems the user has push access to.
 
 List all gems owned by the authenticated user
+- **add_gem_owner**: Add an owner to a gem
+- **fire_webhook**: Test fire a webhook
+- **get_api_key**: Retrieve your API key using HTTP Basic Auth
+- **get_compact_index_names**: Returns a newline-delimited list of all gem names
+- **get_compact_index_versions**: Returns a compact index of all gem names, versions, and info file MD5s
+- **get_downloads**: Get total download count for all gems
+- **get_gem_downloads**: Get download stats for a specific gem and version
+- **get_just_updated_activity**: Pulls the 50 most recently updated gems
+- **get_latest_activity**: Pulls the 50 most recently added gems
+- **get_profile**: View basic user info
+- **get_reverse_dependencies**: List gems that depend on the specified gem
+- **update_gem_owner**: Update an owner's role on a gem
 
 
 ## 💬 Prompt Examples

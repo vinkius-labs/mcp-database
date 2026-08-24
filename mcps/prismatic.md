@@ -36,9 +36,9 @@ Connect your **Prismatic** environment to any AI agent to streamline your embedd
 - **create_customer**: Create a new Prismatic customer
 - **create_instance**: Create a new integration instance
 - **list_customers**: Fetch all Prismatic customers
+- **run_graphql**: Execute a custom GraphQL query or mutation
 - **deploy_instance**: Deploy an integration instance
 - **fetch_logs**: Fetch execution logs
-- **run_graphql**: Execute a custom GraphQL query or mutation
 
 
 ## 💬 Prompt Examples

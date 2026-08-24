@@ -43,24 +43,24 @@ Connect your **Polar AccessLink** account to any AI agent to analyze your fitnes
 - **get_sleepwise_alertness**: Get alertness period data
 - **get_sleepwise_circadian_bedtime**: Get circadian bedtime data
 - **list_exercises**: List exercises from the last 30 days
-- **list_nightly_recharge**: List Nightly Recharge status
-- **get_activity_by_date**: Get activity for a specific date
 - **get_biosensing_body_temperature**: Get body temperature data
 - **get_biosensing_skin_temperature**: Get sleep skin temperature
-- **get_notifications**: Check for available data for all registered users
-- **get_exercise_gpx**: Download exercise in GPX format
-- **get_exercise_tcx**: Download exercise in TCX format
-- **get_exercise**: Get detailed exercise data
+- **get_activity_by_date**: Get activity for a specific date
 - **get_physical_info**: Retrieve user physical metrics
-- **get_user**: Retrieve basic user information
 - **get_webhooks**: Get current webhook configuration
 - **list_activities**: List activity summaries
 - **list_activity_samples**: List activity samples
 - **list_sleep**: List sleep data
-- **register_user**: Register a user after authorization
-- **delete_user**: De-register a user and revoke access
 - **activate_webhook**: Re-activate a deactivated webhook
 - **create_webhook**: Create a webhook
+- **delete_user**: De-register a user and revoke access
+- **get_exercise**: Get detailed exercise data
+- **get_exercise_gpx**: Download exercise in GPX format
+- **get_exercise_tcx**: Download exercise in TCX format
+- **get_notifications**: Check for available data for all registered users
+- **get_user**: Retrieve basic user information
+- **list_nightly_recharge**: List Nightly Recharge status
+- **register_user**: Register a user after authorization
 
 
 ## 💬 Prompt Examples

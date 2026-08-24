@@ -34,11 +34,11 @@ Connect your **Sabre** developer account to any AI agent and manage global trave
 
 
 ## Available Tools (5)
-- **book_hotel**: Book a hotel reservation
 - **create_booking**: Create a Passenger Name Record (PNR) for a flight
-- **get_hotel_details**: Get detailed information about a specific hotel
 - **search_hotels**: Search for hotels globally
 - **shop_flights**: Search for lowest available flight fares (Bargain Finder Max)
+- **book_hotel**: Book a hotel reservation
+- **get_hotel_details**: Get detailed information about a specific hotel
 
 
 ## 💬 Prompt Examples

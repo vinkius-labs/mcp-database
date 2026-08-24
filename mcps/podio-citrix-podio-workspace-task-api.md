@@ -33,16 +33,16 @@ Connect your **Citrix Podio** workspace to any AI agent to orchestrate complex b
 
 
 ## Available Tools (8)
-- **filter_items**: Uses POST but only reads data.
-
-Filter items in a Podio app
-- **add_item**: Add a new item to a Podio app
-- **get_app**: Get details of a specific Podio app
-- **create_task**: Create a new Podio task
-- **get_item**: Get details of a specific Podio item
 - **get_organizations**: Get all organizations and spaces the user belongs to
 - **get_space**: Get details of a specific Podio space
 - **get_task**: Get details of a specific Podio task
+- **add_item**: Add a new item to a Podio app
+- **create_task**: Create a new Podio task
+- **filter_items**: Uses POST but only reads data.
+
+Filter items in a Podio app
+- **get_app**: Get details of a specific Podio app
+- **get_item**: Get details of a specific Podio item
 
 
 ## 💬 Prompt Examples

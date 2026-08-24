@@ -33,12 +33,6 @@ Connect your **Phrase** account to any AI agent to streamline your software loca
 
 
 ## Available Tools (20)
-- **update_locale**: Update an existing locale
-- **update_project**: Update an existing project
-- **list_translations**: List translations for a project
-- **update_translation**: Update an existing translation
-- **create_key**: Create a new translation key
-- **create_locale**: Create a new locale in a project
 - **create_project**: Create a new localization project
 - **create_translation**: Create a new translation
 - **delete_key**: Delete a key
@@ -48,11 +42,17 @@ Connect your **Phrase** account to any AI agent to streamline your software loca
 - **get_key**: Get details for a specific key
 - **get_locale**: Get details for a specific locale
 - **get_project**: Get details for a specific project
-- **list_keys**: List translation keys for a project
-- **list_locales**: List locales for a project
 - **update_key**: Update an existing key
 - **upload_file**: Upload a localization file
 - **list_projects**: List all localization projects
+- **create_key**: Create a new translation key
+- **create_locale**: Create a new locale in a project
+- **list_keys**: List translation keys for a project
+- **list_locales**: List locales for a project
+- **list_translations**: List translations for a project
+- **update_locale**: Update an existing locale
+- **update_project**: Update an existing project
+- **update_translation**: Update an existing translation
 
 
 ## 💬 Prompt Examples

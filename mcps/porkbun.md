@@ -36,16 +36,16 @@ No more logging into web consoles just to update a simple TXT record or check if
 
 
 ## Available Tools (8)
-- **get_domain_pricing**: Get domain pricing information
-- **list_domains**: List all domains in your account
 - **retrieve_dns_records**: Retrieve all DNS records for a specific domain
-- **edit_dns_record**: Edit an existing DNS record
+- **list_domains**: List all domains in your account
 - **retrieve_ssl_bundle**: Retrieve the SSL certificate bundle for a domain
+- **delete_dns_record**: Delete a DNS record
 - **check_domain_availability**: Check if a domain is available for registration
 - **create_dns_record**: ) to the specified domain.
 
 Create a new DNS record for a domain
-- **delete_dns_record**: Delete a DNS record
+- **edit_dns_record**: Edit an existing DNS record
+- **get_domain_pricing**: Get domain pricing information
 
 
 ## 💬 Prompt Examples

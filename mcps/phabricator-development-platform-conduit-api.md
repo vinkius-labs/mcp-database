@@ -36,15 +36,15 @@ Connect your **Phabricator** instance to any AI agent to streamline your develop
 ## Available Tools (10)
 - **diffusion_commit_search**: Search for Diffusion commits
 - **diffusion_repository_search**: Search for Diffusion repositories
-- **maniphest_search**: Supports complex filtering via constraints.
-
-Search for Maniphest tasks
-- **maniphest_edit**: Create or update a Maniphest task
-- **differential_revision_edit**: Create or update a Differential revision
 - **differential_revision_search**: Search for Differential revisions
 - **maniphest_gettasktransactions**: Get transaction history for a task
 - **user_search**: Search for users
 - **differential_query**: Query Differential revisions (Legacy)
+- **differential_revision_edit**: Create or update a Differential revision
+- **maniphest_edit**: Create or update a Maniphest task
+- **maniphest_search**: Supports complex filtering via constraints.
+
+Search for Maniphest tasks
 - **user_whoami**: Get details about the authenticated user
 
 

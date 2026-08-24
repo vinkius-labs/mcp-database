@@ -33,8 +33,8 @@ Connect your **Rightmove** real-time data feed to any AI agent to streamline you
 
 
 ## Available Tools (4)
-- **get_branch_emails**: Retrieve lead information (emails) for a specific branch
 - **get_property_performance**: Retrieve performance statistics for a specific listing
+- **get_branch_emails**: Retrieve lead information (emails) for a specific branch
 - **remove_property**: Remove a property from the Rightmove website
 - **send_property**: If the agent_ref already exists, the property is updated.
 
