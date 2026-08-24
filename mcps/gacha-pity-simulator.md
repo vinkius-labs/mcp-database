@@ -14,9 +14,9 @@ The Gacha Pity Simulator is a specialized tool for analyzing the mathematical im
 
 
 ## Available Tools (3)
-- **estimate_budgetary_impact**: Estimate the financial cost of gacha pulls
 - **calculate_pity_metrics**: Calculate expected pulls with and without pity systems
 - **generate_probability_curve**: Generate a cumulative probability curve for gacha pulls
+- **estimate_budgetary_impact**: Estimate the financial cost of gacha pulls
 
 
 ## 💬 Prompt Examples

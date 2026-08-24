@@ -14,10 +14,10 @@ This MCP server provides a precise way to calculate the thirteenth-month salary 
 
 
 ## Available Tools (4)
-- **get_thirteenth_breakdown**: Get the complete breakdown of the thirteenth salary
 - **compute_social_security_deduction**: Compute the social security deduction
-- **compute_income_tax_deduction**: Compute the income tax deduction
+- **get_thirteenth_breakdown**: Get the complete breakdown of the thirteenth salary
 - **calculate_proportional_gross**: Calculate the proportional gross salary
+- **compute_income_tax_deduction**: Compute the income tax deduction
 
 
 ## 💬 Prompt Examples

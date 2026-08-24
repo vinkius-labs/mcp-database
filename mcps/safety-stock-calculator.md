@@ -14,10 +14,10 @@ The Safety Stock Calculator is a specialized engine designed to help supply chai
 
 
 ## Available Tools (4)
-- **calculate_square_root_safety_stock**: Calculates safety stock using the simplified square root scaling method
+- **analyze_inventory_costs**: Provides a comparative economic analysis of all three safety stock methods
 - **calculate_statistical_safety_stock**: Calculates safety stock using the advanced statistical method
 - **calculate_fixed_coverage_safety_stock**: Calculates safety stock based on a fixed number of periods of coverage
-- **analyze_inventory_costs**: Provides a comparative economic analysis of all three safety stock methods
+- **calculate_square_root_safety_stock**: Calculates safety stock using the simplified square root scaling method
 
 
 ## 💬 Prompt Examples

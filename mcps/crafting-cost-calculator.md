@@ -15,8 +15,8 @@ The Crafting Cost Calculator is an economic analysis tool designed to maximize p
 
 ## Available Tools (3)
 - **optimize_ingredient_sourcing**: Identify the most cost-effective way to acquire ingredients
-- **estimate_level_up_effort**: Calculate production volume required to reach a specific profession level
 - **get_recipe_cost_analysis**: Calculate production cost and potential profit for a recipe
+- **estimate_level_up_effort**: Calculate production volume required to reach a specific profession level
 
 
 ## 💬 Prompt Examples

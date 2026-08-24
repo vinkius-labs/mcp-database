@@ -15,8 +15,8 @@ This MCP server provides tools to determine recoverable costs under the UK's Lat
 
 ## Available Tools (3)
 - **accrued_interest**: Calculate statutory interest accrued on a debt
-- **compensation_fee**: Calculate the fixed compensation fee
 - **total_claim_summary**: Calculate a full summary of the claim
+- **compensation_fee**: Calculate the fixed compensation fee
 
 
 ## 💬 Prompt Examples

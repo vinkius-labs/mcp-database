@@ -14,10 +14,10 @@ The Viral Coefficient Calculator is a specialized tool for analyzing product vir
 
 
 ## Available Tools (3)
-- **estimate_doubling_period**: Estimate the number of viral cycles needed to double the user base
 - **evaluate_virality**: Classifies as Sub-critical, Critical, or Viral.
 
 Evaluate the viral coefficient (K-factor) and growth status
+- **estimate_doubling_period**: Estimate the number of viral cycles needed to double the user base
 - **forecast_growth_trajectory**: Forecast user growth over a specified number of future cycles
 
 

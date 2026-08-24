@@ -14,8 +14,8 @@ This MCP server provides professional financial engineering tools to calculate a
 
 
 ## Available Tools (3)
-- **get_syd_depreciation_schedule**: Calculates accelerated depreciation using the Sum-of-the-Years-Digits method
 - **get_straight_line_schedule**: Calculates the monthly depreciation schedule using the straight-line method
+- **get_syd_depreciation_schedule**: Calculates accelerated depreciation using the Sum-of-the-Years-Digits method
 - **get_units_production_schedule**: Calculates depreciation based on production volumes
 
 

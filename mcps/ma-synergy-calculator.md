@@ -14,10 +14,10 @@ The M&A Synergy Calculator provides a structured framework for evaluating the ec
 
 
 ## Available Tools (4)
+- **analyze_deal_economics**: Analyze the economic viability of the merger
 - **calculate_integration_costs**: Calculate one-time integration costs
 - **calculate_revenue_synergies**: Calculate expected annual revenue synergies
 - **calculate_cost_synergies**: Calculate expected annual cost synergies
-- **analyze_deal_economics**: Analyze the economic viability of the merger
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ An essential tool for calculating employee vacation entitlements. This MCP serve
 
 
 ## Available Tools (4)
+- **gross_vacation_pay**: Calculate gross vacation pay and constitutional bonus
 - **cash_allowance_value**: Calculate the value of the cash allowance (abono pecuniário)
 - **tax_deductions**: Calculate income tax withholding (IRRF)
-- **gross_vacation_pay**: Calculate gross vacation pay and constitutional bonus
 - **payment_due_date**: Calculate the vacation payment deadline
 
 

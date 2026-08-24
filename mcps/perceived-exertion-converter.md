@@ -14,9 +14,9 @@ The Perceived Exertion Converter bridges the gap between subjective effort and o
 
 
 ## Available Tools (3)
+- **convert_borg_6_20_scale**: Converts Borg 6-20 scale RPE to physiological metrics
 - **convert_cr10_scale**: Converts CR10 scale RPE to physiological metrics
 - **get_training_guidance**: Provides qualitative training descriptions and practical advice
-- **convert_borg_6_20_scale**: Converts Borg 6-20 scale RPE to physiological metrics
 
 
 ## 💬 Prompt Examples

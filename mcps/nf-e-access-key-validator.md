@@ -15,8 +15,8 @@ This MCP server provides specialized tools for verifying Brazilian Electronic In
 
 ## Available Tools (3)
 - **extract_key_metadata**: Decomposes a valid access key into its constituent business parts for inspection
-- **validate_business_compliance**: Checks if the components within a key adhere to allowed tax authority standards
 - **verify_key_structure**: Determines if an access key is structurally valid based on length and the mathematical checksum
+- **validate_business_compliance**: Checks if the components within a key adhere to allowed tax authority standards
 
 
 ## 💬 Prompt Examples

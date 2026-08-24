@@ -14,9 +14,9 @@ This MCP server provides a specialized engine for multinational enterprises to e
 
 
 ## Available Tools (3)
-- **calculate_consolidated_burden**: Provide the final total tax obligation for the entire enterprise including top-up adjustments
 - **calculate_global_etr**: Find the single weighted average tax rate for a company's entire globalThis operations
 - **calculate_jurisdictional_deficiency**: Determine if a specific country's tax rate is insufficient and calculate the resulting liability
+- **calculate_consolidated_burden**: Provide the final total tax obligation for the entire enterprise including top-up adjustments
 
 
 ## 💬 Prompt Examples

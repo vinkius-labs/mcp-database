@@ -14,9 +14,9 @@ This MCP server provides specialized tools for medical and demographic inquiries
 
 
 ## Available Tools (4)
+- **analyze_pregnancy_risk**: Evaluates the risk of Rh incompatibility between two partners
 - **get_plasma_compatibility**: Determines if a donor blood type can safely provide plasma to a recipient
 - **get_population_distribution**: Retrieves the blood type distribution for a specific region
-- **analyze_pregnancy_risk**: Evaluates the risk of Rh incompatibility between two partners
 - **get_rbc_compatibility**: Determines if a donor blood type can safely provide red blood cells to a recipient
 
 

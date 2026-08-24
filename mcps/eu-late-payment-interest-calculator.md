@@ -14,13 +14,13 @@ This MCP server provides a precise way to calculate the financial burden of late
 
 
 ## Available Tools (3)
+- **calculate_accrued_interest**: You need the original invoice amount, the due date, and the current calculation date.
+
+Calculates the interest accrued on an unpaid invoice based on the EU Late Payment Directive
 - **calculate_fixed_compensation**: The amount depends on the total value of the outstanding debt.
 
 Calculates the fixed administrative recovery fee for an overdue payment
 - **get_total_overdue_cost**: Calculates the total financial burden, including both accrued interest and fixed compensation
-- **calculate_accrued_interest**: You need the original invoice amount, the due date, and the current calculation date.
-
-Calculates the interest accrued on an unpaid invoice based on the EU Late Payment Directive
 
 
 ## 💬 Prompt Examples

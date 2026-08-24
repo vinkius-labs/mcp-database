@@ -14,9 +14,9 @@ The Lactate Threshold Estimator provides a non-invasive way to identify your phy
 
 
 ## Available Tools (3)
-- **detect_hr_drift**: Detect the HR drift threshold from time-series data
 - **estimate_mlss**: Estimate MLSS parameters based on a sustainable effort
 - **generate_zones**: Generate training zones based on a discovered threshold
+- **detect_hr_drift**: Detect the HR drift threshold from time-series data
 
 
 ## 💬 Prompt Examples

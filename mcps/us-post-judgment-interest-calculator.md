@@ -14,8 +14,8 @@ This MCP server provides precise calculations for US Federal post-judgment inter
 
 
 ## Available Tools (3)
-- **interest_accrual_calc**: Calculate total interest and balance for a judgment
 - **rate_lookup**: Look up the annual interest rate for a specific date
+- **interest_accrual_calc**: Calculate total interest and balance for a judgment
 - **interest_scenario_comparison**: Compare interest costs between two payment dates
 
 

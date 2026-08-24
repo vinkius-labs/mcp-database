@@ -14,8 +14,8 @@ The Transfer Pricing Calculator ensures that transactions between related partie
 
 
 ## Available Tools (4)
-- **get_industry_benchmarks**: Retrieves the acceptable arm's length profit margin bounds for a specific industry sector
 - **verify_cost_plus_compliance**: Determines if a transaction's markup on cost is within the allowed arm's length range
+- **get_industry_benchmarks**: Retrieves the acceptable arm's length profit margin bounds for a specific industry sector
 - **verify_cup_equivalence**: Evaluates if a transaction price is sufficiently similar to a known market benchmark price
 - **verify_resale_minus_compliance**: Determines if the gross margin from a resale transaction is within acceptable industry bounds
 

@@ -14,9 +14,9 @@ This MCP server provides a specialized engine for computing accurate employee se
 
 
 ## Available Tools (3)
+- **calculate_statutory_penalties**: Determine the financial penalty owed based on termination type
 - **compute_salary_balance_and_bonuses**: Calculate the earned salary balance and proportional 13th month bonus
 - **calculate_vacation_payout**: Calculate the total value for expired and proportional vacation time
-- **calculate_statutory_penalties**: Determine the financial penalty owed based on termination type
 
 
 ## 💬 Prompt Examples

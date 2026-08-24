@@ -14,8 +14,8 @@ The Farming Efficiency Calculator is a specialized tool for gamers to maximize t
 
 
 ## Available Tools (4)
-- **analyze_route_metrics**: Determine the fundamental economic performance of a single farming route
 - **evaluate_opportunity_cost**: Calculate the potential profit lost by using a sub-optimal route
+- **analyze_route_metrics**: Determine the fundamental economic performance of a single farming route
 - **predict_farm_duration**: Estimate the time investment required to accumulate a specific amount of an item
 - **compare_farming_routes**: Rank multiple different routes against each other
 

@@ -14,8 +14,8 @@ This MCP server provides essential tools for tracking pregnancy. Use `calculate_
 
 
 ## Available Tools (4)
-- **calculate_current_gestation**: Calculate current gestational age
 - **get_estimated_due_date**: Get the estimated due date
+- **calculate_current_gestation**: Calculate current gestational age
 - **get_pregnancy_stage**: Get the current pregnancy stage
 - **get_weekly_milestone**: Get the weekly milestone
 

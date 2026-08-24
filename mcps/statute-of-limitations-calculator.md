@@ -14,8 +14,8 @@ The Statute of Limitations Calculator is a specialized engine that calculates th
 
 
 ## Available Tools (3)
-- **calculate_deadline**: Compute the exact expiration date for a legal claim
 - **check_claim_validity**: Check the viability of a claim
+- **calculate_deadline**: Compute the exact expiration date for a legal claim
 - **search_statutory_period**: Identify the specific duration and legal basis for a legal category
 
 
