@@ -13,7 +13,7 @@ Calculate precise daily and monthly costs for diabetes supplies like insulin, CG
 This MCP server provides deterministic financial planning tools for diabetes management. It allows AI agents to calculate exact daily and monthly expenditures for essential supplies including insulin, continuous glucose monitors (CGM), and blood glucose test strips. By normalizing all costs to a standard 30-day month, it provides a reliable daily burn rate and identifies potential savings through optimized usage patterns. Use `calculate_monthly_budget` to get a full breakdown of costs or `calculate_potential_savings` to estimate budget reductions.
 
 
-## Available Tools (3)
+## Available Tools (2)
 - **calculate_monthly_budget**: Calculate total monthly expenditure and daily burn rate
 - **calculate_potential_savings**: Calculate potential savings from optimized usage
 

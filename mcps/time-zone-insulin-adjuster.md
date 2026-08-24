@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [health](../categories/health.md)
+**Category:** [utilities](../categories/utilities.md)
 
-Deterministic insulin basal adjustment and meal timing calculator for travel.
+Deterministic basal insulin and meal timing adjustment calculator for travel.
 
 ## Description
-This MCP server provides precise insulin management strategies for travelers. By calculating the difference between departure and destination time zones, it generates specific instructions for basal insulin adjustments and meal bolus shifts. Use `calculate_travel_plan` to receive a complete adjustment strategy, including dose percentage changes and new local injection times. You can also use `get_insulin_type_guidance` to understand how rigid or flexible insulin profiles interact with circadian rhythm shifts.
+This MCP server provides precise calculations for adjusting basal insulin dosing and meal timing when traveling across time zones. By analyzing the direction of travel and the specific insulin type, it provides a complete adjustment plan to maintain glycemic stability. Users can use `calculate_travel_adjustment` to determine dose changes, new injection times, and meal bolus shift instructions. It also includes `get_insulin_type_details` for specific insulin characteristics and `validate_time_format` to ensure input accuracy.
 
 
 ## Available Tools (3)
-- **calculate_travel_plan**: 
-- **get_insulin_type_guidance**: 
-- **validate_time_formats**: 
+- **calculate_travel_adjustment**: Provides a complete adjustment plan for basal insulin and meal timing based on travel direction and insulin type
+- **get_insulin_type_details**: Provides specific characteristics and adjustment logic constraints for different insulin types
+- **validate_time_format**: Validates that a provided time string adheres to the required HH:mm format
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides precise insulin management strategies for travelers. By
 Here are some examples of how you can interact with the **Time-Zone Insulin Adjuster** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I am traveling from UTC+0 to UTC+2 using flexible insulin. My usual injection time is 08:00. What is my plan?"
+> "I am traveling from UTC+0 to UTC+2 using Degludec. My usual injection time is 08:00. What is my adjustment plan?"
 
 **🤖 AI Agent:**
-> The hour difference is 2 hours. For traveling East with flexible insulin, your adjustment strategy is to reduce the basal dose by 8%. Your new local injection time will be 08:00, and you should align meal boluses to destination local time immediately.
+> The hour difference is 2. Since you are traveling East, the adjustment strategy is to reduce the basal dose by 8% or inject earlier. Your new local injection time will be adjusted accordingly.
 
 ---
 
 **👤 You:**
-> "What is the difference between rigid and flexible insulin profiles?"
+> "I am moving from UTC-5 to UTC-8 using Glargine. My usual time is 22:00. Help me adjust."
 
 **🤖 AI Agent:**
-> Rigid profiles are highly predictable with minimal titration, while flexible profiles allow for moderate dose adjustments to accommodate day-length changes.
+> The hour difference is -3. Traveling West requires increasing the basal dose by 12% or splitting the dose. Your new local injection time will be updated to reflect the longer day.
 
 ---
 
 **👤 You:**
-> "I'm flying from UTC-5 to UTC-8. My basal insulin is rigid and I usually inject at 20:00. Help me plan."
+> "Is '9:00 AM' a valid time format?"
 
 **🤖 AI Agent:**
-> The hour difference is -3 hours. Traveling West with rigid insulin requires adjusting timing. Your adjustment strategy involves increasing the dose or splitting the dose by 12%. Your new local injection time is 20:00.
+> No, the time must be in 24-hour HH:mm format, such as '09:00'.
 
 
 ## ❓ FAQ
 
-**Q: How does this tool help with insulin adjustment?**
-The `calculate_travel_plan` tool calculates the exact hour difference between time zones and provides a specific dose adjustment percentage and new local injection time to maintain glycemic control.
+**Q: How does the tool handle different insulin types?**
+The tool distinguishes between ultra-long acting and long acting insulin. For ultra-long acting types, the `calculate_travel_adjustment` tool prioritizes timing shifts, whereas for long acting types, it focuses on dose percentage adjustments.
 
-**Q: Can I use this for different types of insulin?**
-Yes, the server supports both rigid and flexible insulin profiles. You can use `get_insulin_type_guidance` to learn more about how each type behaves during travel.
+**Q: What happens if I travel East versus West?**
+When traveling East, the day is shorter, so the tool suggests reducing the basal dose or injecting earlier. When traveling West, the day is longer, so it suggests increasing the dose or splitting it.
 
-**Q: What happens to my meal times when I travel?**
-The tool provides `mealBolusShiftInstructions` to help you align your carbohydrate-related insulin shots to the destination's local meal times immediately upon arrival.
+**Q: Can I validate my injection time format?**
+Yes, you can use the `validate_time_format` tool to ensure your time is in the correct 24-hour HH:mm format.
 
 
 ## Installation & Usage

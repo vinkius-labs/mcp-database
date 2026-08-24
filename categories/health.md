@@ -13,6 +13,7 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [Breathing Timer](../mcps/breathing-timer.md) | Accurately track structured breathing cycles (Box Breathing, 4-7-8, Coherence Heart Rate) for guided respiratory practice. |
 | [Calorie & Macro Calculator](../mcps/calorie-macro-calculator.md) | Calculate daily caloric needs and macronutrient split based on physiological metrics and activity levels. |
 | [Calorie Deficit Calculator](../mcps/calorie-deficit-calculator.md) | Calculate BMR, TDEE, and personalized weight loss plans with precision. |
+| [Continuous Glucose Trend Arrow Calculator](../mcps/continuous-glucose-trend-arrow-calculator.md) | Predictive CGM velocity and trend arrow analysis. |
 | [Continuous Glucose Trend Calculator](../mcps/continuous-glucose-trend-calculator.md) | Predictive CGM glucose velocity and trend arrow analysis. |
 | [Dawn Phenomenon Detector](../mcps/dawn-phenomenon-detector.md) | Differentiate between Somogyi Effect and Dawn Phenomenon using overnight glucose data. |
 | [Dehydration BG Spike Estimator](../mcps/dehydration-bg-spike-estimator.md) | Estimates blood glucose concentration spikes caused by dehydration-induced hemoconcentration. |
@@ -58,16 +59,17 @@ Explore the open database of **health** Model Context Protocol (MCP) servers.
 | [PSS-10 Stress Assessment](../mcps/pss-10-stress-assessment.md) | Calculate and analyze perceived stress levels using the PSS-10 scale. |
 | [Raw Diet Ratio Calculator](../mcps/raw-diet-ratio-calculator.md) | Calculate precise daily food weights for BARF and PMR raw diets based on pet weight and activity level. |
 | [Self-Compassion Scale (SCS)](../mcps/self-compassion-scale-scs.md) | Calculate and interpret Self-Compassion Scale scores. |
+| [Sick Day Insulin Adjuster](../mcps/sick-day-insulin-adjuster-1.md) | Deterministic insulin adjustment and care planning for illness. |
 | [Sick-Day Insulin Adjuster](../mcps/sick-day-insulin-adjuster.md) | Calculates insulin adjustments, monitoring frequency, and hydration needs during illness. |
 | [Singapore Hawker Macro Calculator](../mcps/singapore-hawker-macro-calculator.md) | Get precise nutritional data and Nutri-Grade ratings for Singaporean hawker dishes. |
 | [Sleep Deprivation Insulin Resistance Calculator](../mcps/sleep-deprivation-insulin-resistance-calculator.md) | Estimates insulin resistance and glucose adjustments caused by sleep debt. |
+| [Sleep Deprivation Resistance Calculator](../mcps/sleep-deprivation-resistance-calculator.md) | Calculates physiological insulin resistance and glucose management adjustments based on sleep deficit. |
 | [Sport Nutrition Timing Calculator](../mcps/sport-nutrition-timing-calculator.md) | Calculate precise carbohydrate and protein timing for pre-, intra-, and post-workout nutrition based on training intensity. |
 | [Strength Standards Checker](../mcps/strength-standards-checker.md) | Classify weightlifting strength levels and predict future milestones. |
 | [Stress Load Scorer](../mcps/stress-load-scorer.md) | Calculate cumulative psychological stress and health risk using the Holmes-Rahe Scale. |
 | [Supplement Dosage Calculator](../mcps/supplement-dosage-calculator.md) | Calculate precise supplement dosages based on body weight, age, sex, and ingredient chemistry. |
 | [Supplement Stacker](../mcps/supplement-stacker.md) | Analyze supplement interactions, nutrient competition, and optimal timing schedules. |
 | [Time in Range Analyzer](../mcps/time-in-range-analyzer.md) | Calculates clinical glycemic control metrics like TIR, GMI, and CV from glucose readings. |
-| [Time-Zone Insulin Adjuster](../mcps/time-zone-insulin-adjuster.md) | Deterministic insulin basal adjustment and meal timing calculator for travel. |
 | [UV Exposure Estimator](../mcps/uv-exposure-estimator.md) | Calculate maximum safe sun exposure time based on UV index, skin type, and SPF. |
 | [VO2max Estimator](../mcps/vo2max-estimator.md) | Estimate aerobic capacity using Cooper, Rockport, Step, and YMCA Bike protocols. |
 | [Weight Loss Plateau Recalculator](../mcps/weight-loss-plateau-recalculator.md) | Predictive simulation engine to model dietary adjustments for overcoming weight loss stalls. |

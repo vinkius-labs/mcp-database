@@ -63,7 +63,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Markdown to Plain Text Extractor Alternative](../mcps/markdown-to-plain-text-extractor-alternative.md) | Strips Markdown syntax and measures content reduction. |
 | [Memory Context Window Pruner](../mcps/memory-context-window-pruner.md) | Manage LLM conversation history by applying deterministic pruning strategies to prevent context window overflow. |
 | [Menstrual Cycle Calculator](../mcps/menstrual-cycle-calculator.md) | Track menstrual cycle phases and identify fertile windows using historical period data. |
-| [Moon Phase Calculator](../mcps/moon-phase-calculator.md) | Calculate exact lunar phases, illumination percentages, and monthly schedules using astronomical algorithms. |
+| [Moon Phase Calculator](../mcps/moon-phase-calculator.md) | Calculate precise lunar phases, illumination, and moon age for any date. |
 | [Moving Truck Sizer](../mcps/moving-truck-sizer.md) | Calculate the exact truck size needed for your move based on home type and bulky items. |
 | [Multi-Monitor Arrangement Math](../mcps/multi-monitor-arrangement-math.md) | Calculate total desktop dimensions and coordinate offsets for multi-monitor setups. |
 | [NEA Heat Index Calculator](../mcps/nea-heat-index-calculator.md) | Calculate heat stress, hydration needs, and safety scores using NEA methodology. |
@@ -87,6 +87,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Roman Numeral Engine](../mcps/roman-numeral-engine.md) | Convert between Arabic integers and Roman numerals with support for large-scale values using vinculum notation. |
 | [RPM & Speed Gear Calculator](../mcps/rpm-speed-gear-calculator.md) | Calculate engine RPM at specific vehicle speeds or predict speed from a given RPM. |
 | [Running Pace Converter](../mcps/running-pace-converter.md) | Convert running paces, predict race times using Riegel formula, and generate training zones. |
+| [Scrabble Word Scorer](../mcps/scrabble-word-scorer.md) | A deterministic calculator for exact Scrabble scores, including multipliers and bingo bonuses. |
 | [SemVer Compatibility Checker](../mcps/semver-compatibility-checker.md) | Verify if a target version satisfies a semantic versioning constraint and detect breaking changes. |
 | [Shower Water Calculator](../mcps/shower-water-calculator.md) | Calculate water usage, costs, and carbon emissions for showers. |
 | [SSE Event Reassembler & Gap Detector](../mcps/sse-event-reassembler-gap-detector.md) | Detect packet loss and reconstruct fragmented SSE streams. |
@@ -94,6 +95,7 @@ Explore the open database of **utilities** Model Context Protocol (MCP) servers.
 | [Sugar Cooking Stages Calculator](../mcps/sugar-cooking-stages-calculator.md) | Identify precise candy-making stages, temperature ranges, and altitude adjustments. |
 | [Temperature Converter for Cooking](../mcps/temperature-converter-for-cooking.md) | Convert oven temperatures between Celsius, Fahrenheit, and the European Gas scale with heat intensity classification. |
 | [Time Difference Calculator](../mcps/time-difference-calculator.md) | Calculate exact duration between two clock times, handling midnight transitions. |
+| [Time-Zone Insulin Adjuster](../mcps/time-zone-insulin-adjuster.md) | Deterministic basal insulin and meal timing adjustment calculator for travel. |
 | [Tire Size Converter](../mcps/tire-size-converter.md) | Calculate tire dimensions, speedometer error, and clearance risks. |
 | [Token Budget Remaining Calculator](../mcps/token-budget-remaining-calculator.md) | Monitor and manage token consumption to prevent context window overflows. |
 | [Tool Namespace Resolver and Fuzzy Matcher](../mcps/tool-namespace-resolver-and-fuzzy-matcher.md) | Resolves tool name hallucinations and misspellings using hierarchical matching logic. |

@@ -34,19 +34,19 @@ Connect your **Udemy Instructor** account to any AI agent to streamline student 
 
 
 ## Available Tools (13)
-- **get_message_thread**: Get details for a specific message thread
 - **list_question_replies**: List replies for a specific question
-- **list_questions**: List questions for the instructor's courses
 - **create_message**: Send a new message in a thread
-- **create_question_reply**: Add a new reply to a question
 - **delete_question**: Delete a question
 - **get_question**: Get details for a specific question
-- **list_message_threads**: List message threads
 - **list_messages**: List messages within a thread
 - **list_reviews**: List course reviews
 - **update_message_thread**: Update thread status (read/starred)
 - **update_question**: Update a question (e.g., mark as read)
+- **create_question_reply**: Add a new reply to a question
+- **get_message_thread**: Get details for a specific message thread
 - **list_courses**: List courses taught by the instructor
+- **list_message_threads**: List message threads
+- **list_questions**: List questions for the instructor's courses
 
 
 ## 💬 Prompt Examples

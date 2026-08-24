@@ -6,6 +6,7 @@ Explore the open database of **mathematics** Model Context Protocol (MCP) server
 |-----------|-------------|
 | [Agent Consensus & Voting Engine](../mcps/agent-consensus-voting-engine.md) | Deterministic multi-agent consensus and voting calculator. |
 | [Agent Resource Contention Calculator](../mcps/agent-resource-contention-calculator.md) | High-precision queueing theory calculator for multi-agent system performance. |
+| [Ahnentafel Generator](../mcps/ahnentafel-generator.md) | Generate deterministic ancestor numbering and relationship paths using the Ahnentafel system. |
 | [Baking Recipe Scaler](../mcps/baking-recipe-scaler.md) | Scale baking recipes using baker's percentages and pan volume geometry. |
 | [BaZi Four Pillars Calculator](../mcps/bazi-four-pillars-calculator.md) | Calculate precise Chinese BaZi Four Pillars, Day Master, and elemental balance. |
 | [Collision Detection Primitives](../mcps/collision-detection-primitives.md) | Calculate 3D intersections, penetrations, and impact timings for spheres, AABBs, rays, and planes. |

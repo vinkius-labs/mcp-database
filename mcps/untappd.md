@@ -37,37 +37,37 @@ Connect your **Untappd** account to any AI agent to explore the world of craft b
 - **get_brewery_activity**: Activity feed for a single brewery
 - **get_brewery_info**: Get detailed information about a brewery
 - **get_checkin_details**: Extended details for a checkin including location, comments, and toasts
-- **foursquare_lookup**: Translate a Foursquare v2 ID into an Untappd Venue ID
-- **get_friend_activity**: Requires authentication.
-
-Obtain the friend check-in feed of the authenticated user
-- **get_notifications**: Get feed of toasts, comments, and news for the authenticated user
 - **reject_friend**: Reject a friend request
 - **remove_comment**: Remove a comment from a checkin
-- **remove_friend**: Remove a friend
-- **search_beer**: Search for beers
-- **toggle_toast**: Toast or Untoast a checkin
 - **get_trending_beers**: Returns macro and micro trending beers globally
 - **get_user_activity**: If username is omitted, returns authenticated user feed.
 
 Obtain the check-in feed of a selected user
 - **get_user_badges**: Get a list of badges for a user
-- **get_user_distinct_beers**: Get a list of distinct beers a user has had
 - **get_user_friends**: Get a list of friends for a user
-- **get_user_info**: Get user profile information
-- **get_user_wishlist**: Get a user's wish list
 - **get_venue_info**: Get detailed information about a venue
-- **remove_from_wishlist**: Remove a beer from the authenticated user's wish list
 - **request_friend**: Send a friend request
 - **search_brewery**: Search for breweries
-- **get_venue_activity**: Activity feed for a single venue
-- **accept_friend**: Accept a friend request
-- **add_checkin**: Check-in to a beer
 - **add_comment**: Add a comment to a checkin
 - **add_to_wishlist**: Add a beer to the authenticated user's wish list
 - **get_beer_activity**: Activity feed for a single beer
 - **get_beer_info**: Get detailed information about a beer
 - **get_pending_friends**: Get pending friend requests
+- **accept_friend**: Accept a friend request
+- **add_checkin**: Check-in to a beer
+- **foursquare_lookup**: Translate a Foursquare v2 ID into an Untappd Venue ID
+- **get_friend_activity**: Requires authentication.
+
+Obtain the friend check-in feed of the authenticated user
+- **get_notifications**: Get feed of toasts, comments, and news for the authenticated user
+- **get_user_distinct_beers**: Get a list of distinct beers a user has had
+- **get_user_info**: Get user profile information
+- **get_user_wishlist**: Get a user's wish list
+- **get_venue_activity**: Activity feed for a single venue
+- **remove_friend**: Remove a friend
+- **remove_from_wishlist**: Remove a beer from the authenticated user's wish list
+- **search_beer**: Search for beers
+- **toggle_toast**: Toast or Untoast a checkin
 
 
 ## 💬 Prompt Examples

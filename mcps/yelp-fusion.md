@@ -34,27 +34,27 @@ Connect **Yelp Fusion** to your AI agent to discover the best local businesses, 
 
 
 ## Available Tools (17)
-- **autocomplete**: Suggestions for businesses, keywords, and categories
 - **get_business_details**: Get rich data for a specific business
 - **get_business_engagement**: Get engagement metrics
 - **get_business_insights**: Get monthly business insights
-- **get_business_reviews**: Get up to 3 review excerpts for a business
 - **get_categories**: Get all business categories
-- **get_category_details**: Get details for a specific category
 - **get_event_details**: Get detailed information for a specific event
 - **get_featured_event**: Get the featured event for a location
 - **get_jobs**: g., "plumbing") for Home Services.
 
 Get job types based on natural language query
-- **get_review_highlights**: Get a business review highlights
 - **get_service_offerings**: Get active and eligible service offerings
-- **match_business**: Find a Yelp business matching exact input data
 - **search_businesses**: Search for businesses on Yelp
 - **search_by_phone**: Must start with + and country code.
 
 Search for businesses by phone number
-- **search_events**: Search for local events
 - **search_transactions**: Search for businesses supporting food delivery
+- **autocomplete**: Suggestions for businesses, keywords, and categories
+- **get_business_reviews**: Get up to 3 review excerpts for a business
+- **get_category_details**: Get details for a specific category
+- **get_review_highlights**: Get a business review highlights
+- **match_business**: Find a Yelp business matching exact input data
+- **search_events**: Search for local events
 
 
 ## 💬 Prompt Examples

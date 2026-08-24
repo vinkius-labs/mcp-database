@@ -33,12 +33,12 @@ Connect the **ZooAnimals** database to any AI agent to explore the animal kingdo
 
 ## Available Tools (3)
 - **get_animal_by_id**: Get a specific animal by ID
-- **get_random_animals**: Max 10 animals per request.
-
-Get random zoo animals
 - **get_animals_by_type**: g., Mammal, Bird, Reptile).
 
 Get animals by type
+- **get_random_animals**: Max 10 animals per request.
+
+Get random zoo animals
 
 
 ## 💬 Prompt Examples

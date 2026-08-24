@@ -35,20 +35,20 @@ Connect your **Voyage AI** account to any AI agent to leverage state-of-the-art 
 
 ## Available Tools (13)
 - **cancel_batch**: Cancel a batch job
-- **create_batch**: Create a batch inference job
-- **create_contextualized_embeddings**: Create contextualized chunk embeddings
 - **create_embeddings**: Create text embeddings
-- **create_multimodal_embeddings**: Create multimodal embeddings
-- **delete_file**: Delete a file
 - **get_batch**: Retrieve batch status
-- **get_file_content**: Download file content
 - **get_file**: Retrieve file metadata
 - **list_batches**: List all batches
+- **list_files**: List all files
+- **create_batch**: Create a batch inference job
+- **create_contextualized_embeddings**: Create contextualized chunk embeddings
+- **create_multimodal_embeddings**: Create multimodal embeddings
+- **delete_file**: Delete a file
+- **get_file_content**: Download file content
 - **rerank**: Rerank documents against a query
 - **upload_file**: Purpose must be "batch".
 
 Upload a file for batch inference
-- **list_files**: List all files
 
 
 ## 💬 Prompt Examples

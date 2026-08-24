@@ -133,6 +133,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Browserbear](../mcps/browserbear.md) | Automate browser tasks via Browserbear — take screenshots, scrape data, and run multi-step automations directly from any AI agent. |
 | [Brushfire](../mcps/brushfire.md) | Manage events and attendees via Brushfire — track registrations, check-in guests, and monitor orders directly from any AI agent. |
 | [Buddy Punch](../mcps/buddy-punch.md) | Track employee hours with GPS-verified clock-ins, PTO management, and payroll-ready timesheet exports your team will love. |
+| [Budget Envelope Allocator](../mcps/budget-envelope-allocator.md) | A deterministic zero-based budgeting engine for precise income distribution. |
 | [Buffer](../mcps/buffer.md) | Plan, schedule, and publish social media content across all your channels with analytics that show what is working. |
 | [Buffer](../mcps/buffer-alternative.md) | Plan, schedule, and publish social media content across all your channels with analytics that show what is working. |
 | [Bureau24](../mcps/bureau24.md) | Never miss a business call with a live virtual receptionist service that answers, routes, and logs calls professionally. |

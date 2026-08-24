@@ -7,16 +7,16 @@
 
 **Category:** [utilities](../categories/utilities.md)
 
-Calculate exact lunar phases, illumination percentages, and monthly schedules using astronomical algorithms.
+Calculate precise lunar phases, illumination, and moon age for any date.
 
 ## Description
-The Moon Phase Calculator provides high-precision astronomical data for any given date. By utilizing a synodic month algorithm based on a reference New Moon, it calculates the exact lunar phase name (such as Full Moon or Waxing Crescent) and the precise illumination percentage of the moon's visible disk. Users can retrieve specific phase details using `calculate_phase`, generate a complete calendar of lunar events for any month with `generate_monthly_schedule`, or compare the brightness between two different dates using `compare_brightness`. This tool is ideal for astronomers, photographers, and anyone interested in tracking lunar cycles without relying on external APIs.
+This MCP server provides deterministic lunar phase calculations. Use `get_lunar_phase` to retrieve the moon's age, current phase name, illumination percentage, and the number of days until the next Full or New Moon for any specific date. You can also use `get_phase_sequence` to see the order of lunar phases or `get_illumination_thresholds` to understand how phases are categorized.
 
 
 ## Available Tools (3)
-- **compare_brightness**: Determine which of two provided dates features a more brightly illuminated Moon
-- **generate_monthly_schedule**: Provide a full calendar of lunar events and phases for a specific month and year
-- **calculate_phase**: Retrieve the exact name of the lunar phase and its current brightness
+- **get_illumination_thresholds**: Identifies the logical boundaries used to categorize a moon's phase based on its illumination
+- **get_lunar_phase**: Calculates the current lunar state for a specific date
+- **get_phase_sequence**: Provides the ordered list of possible moon phase names
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Moon Phase Calculator provides high-precision astronomical data for any give
 Here are some examples of how you can interact with the **Moon Phase Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is the moon phase on July 4th, 2024?"
+> "What was the moon phase on 2024-07-21?"
 
 **🤖 AI Agent:**
-> On July 4th, 2024, the Moon will be in the First Quarter phase with approximately 50% illumination.
+> On July 21, 2024, the moon was in the Full Moon phase with 100% illumination.
 
 ---
 
 **👤 You:**
-> "Show me the lunar schedule for October 2024."
+> "How much illumination will the moon have on 2024-01-01?"
 
 **🤖 AI Agent:**
-> The lunar schedule for October 2024 includes: Oct 2 (New Moon), Oct 17 (Full Moon), and Oct 24 (Last Quarter).
+> On January 1, 2024, the moon had an illumination of approximately 45%.
 
 ---
 
 **👤 You:**
-> "Which date is brighter, August 1st or August 15th, 2024?"
+> "When is the next Full Moon after 2024-05-10?"
 
 **🤖 AI Agent:**
-> August 15th, 2024 will be brighter, as the Moon is in its Waning Gibbous phase with higher illumination compared to August 1st.
+> The next Full Moon after May 10, 2024, will occur in 4 days.
 
 
 ## ❓ FAQ
 
 **Q: How accurate are the lunar phase calculations?**
-The calculations use a high-precision synodic month algorithm based on a known New Moon epoch, providing accurate phase names and illumination percentages.
+The calculations use a deterministic trigonometric approximation of the 29.53-day synodic month to provide highly reliable lunar data.
 
-**Q: Can I see the full moon schedule for next month?**
-Yes, you can use the `generate_monthly_schedule` tool by providing the specific month and year to get a day-by-day breakdown of lunar phases.
+**Q: Can I check the moon phase for a date in the past or future?**
+Yes, by using the `get_lunar_phase` tool, you can provide any date in YYYY-MM-DD format to calculate the lunar state for that specific time.
 
-**Q: Does this tool require an internet connection or external API?**
-No, the calculations are performed locally using pure astronomical algorithms, ensuring privacy and reliability without external dependencies.
+**Q: What information is returned for a specific date?**
+You will receive the moon's age in days, the current phase name, the illumination percentage, and the days remaining until the next Full and New Moon.
 
 
 ## Installation & Usage

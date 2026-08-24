@@ -8,6 +8,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Birth Chart Positions](../mcps/birth-chart-positions.md) | Calculate zodiac positions of celestial bodies based on date, time, and location. |
 | [Bread Proofing Calculator](../mcps/bread-proofing-calculator.md) | Predict fermentation durations for bulk and final proofing based on yeast concentration and temperature. |
 | [Cocktail Dilution Calculator](../mcps/cocktail-dilution-calculator.md) | Calculate final volume, ABV, and water dilution for cocktails. |
+| [Coffee Brewing Ratio Engine](../mcps/coffee-brewing-ratio-engine.md) | Deterministic coffee brewing calculator based on SCA Golden Cup Standards. |
 | [Color Vibration Analyzer](../mcps/color-vibration-analyzer.md) | Discover the energetic frequency and chakra alignment of any color. |
 | [Dog Age Calculator](../mcps/dog-age-calculator.md) | Accurate canine aging estimation using scientific veterinary formulas. |
 | [Light Therapy Dosage Calculator](../mcps/light-therapy-dosage-calculator.md) | Calculates precise light therapy dosages for blue and red light treatments. |
