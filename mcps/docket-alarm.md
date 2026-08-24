@@ -38,21 +38,21 @@ Stop manually checking court websites for updates. Your AI agent now serves as a
 ## Available Tools (13)
 - **search**: Search Docket Alarm database
 - **smart_search**: Generate complex search queries from natural language instructions (VIDA AI)
+- **get_search_direct_args**: Get required arguments for a direct court search
+- **get_cause_of_action**: Identify causes of action and relevant statutes (VIDA AI)
+- **get_complaint_summary**: Extract long or short summaries of complaints (VIDA AI)
+- **match_case**: Find cases using partial information (VIDA AI)
+- **ask_docket**: Ask natural language questions about a specific docket (VIDA AI)
+- **extract_judgment**: Extract judgments and outcomes from cases (VIDA AI)
 - **get_docket**: Set cached=False to fetch live from the court (PACER fees may apply).
 
 Retrieve full docket information
-- **get_search_direct_args**: Get required arguments for a direct court search
-- **extract_judgment**: Extract judgments and outcomes from cases (VIDA AI)
 - **list_search_direct_courts**: List supported courts for direct search
 - **search_direct**: Search state and agency courts directly
 - **search_pacer**: Note: Incurs a $0.10 fee per page of results unless test=true.
 
 Search PACER/Federal courts directly
 - **track_case**: Set up alerts for new activity on a docket
-- **ask_docket**: Ask natural language questions about a specific docket (VIDA AI)
-- **match_case**: Find cases using partial information (VIDA AI)
-- **get_cause_of_action**: Identify causes of action and relevant statutes (VIDA AI)
-- **get_complaint_summary**: Extract long or short summaries of complaints (VIDA AI)
 
 
 ## 💬 Prompt Examples

@@ -35,22 +35,22 @@ Connect your **CrafterCMS** instance to any AI agent to streamline your content 
 
 
 ## Available Tools (12)
-- **clear_cache**: Requires management token.
-
-Clear the Crafter Engine cache
 - **get_tree**: Get complete hierarchy under a folder
-- **graphql**: Execute a GraphQL query
 - **rebuild_context**: Requires management token.
 
 Rebuild the Crafter Engine context
 - **search**: Execute an OpenSearch JSON query
 - **transform_url**: Transform a URL using a specific transformer
 - **get_breadcrumb**: Get breadcrumb navigation for a URL
-- **get_children**: List children of a folder in CrafterCMS
-- **get_component**: Render and retrieve a specific component
 - **get_item**: Get a single item from CrafterCMS content store
 - **get_navigation_tree**: Get navigation tree
+- **clear_cache**: Requires management token.
+
+Clear the Crafter Engine cache
+- **get_children**: List children of a folder in CrafterCMS
+- **get_component**: Render and retrieve a specific component
 - **get_status**: Get Crafter Engine monitoring status
+- **graphql**: Execute a GraphQL query
 
 
 ## 💬 Prompt Examples

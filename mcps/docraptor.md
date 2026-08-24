@@ -34,12 +34,12 @@ Connect **DocRaptor** to your AI agent to transform HTML content or URLs into pr
 
 
 ## Available Tools (4)
-- **create_document**: Use async=true or hosted=true to avoid large binary responses in the tool output.
-
-Create a PDF or Excel document from HTML
 - **get_document_status**: Check the status of an asynchronous document generation
 - **list_documents**: List previously generated documents
 - **list_ips**: List IP addresses used by DocRaptor
+- **create_document**: Use async=true or hosted=true to avoid large binary responses in the tool output.
+
+Create a PDF or Excel document from HTML
 
 
 ## 💬 Prompt Examples

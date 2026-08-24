@@ -37,19 +37,19 @@ Your AI acts as a data architect, helping you query submissions and organize boa
 
 ## Available Tools (14)
 - **list_access_type_descriptions**: Get Access Type Description List
-- **list_assigned_rows**: Get Assigned Rows List
-- **copy_board**: Board Copy
 - **create_available_email_server**: Create Email Server Available
-- **create_board**: Create User Board
 - **search_boards**: Search Boards And Folders
 - **update_board**: Update Board
-- **list_available_email_servers**: Get Email Server Available List
 - **get_board**: Board Detail
-- **list_boards**: Get User Board List
 - **request_api_key**: Request Api Key
+- **copy_board**: Board Copy
+- **create_board**: Create User Board
+- **get_blueprint**: Blue Print Detail
 - **list_active_packages**: Get Business Addon Packages List
 - **list_addons**: Get Addon List
-- **get_blueprint**: Blue Print Detail
+- **list_assigned_rows**: Get Assigned Rows List
+- **list_available_email_servers**: Get Email Server Available List
+- **list_boards**: Get User Board List
 
 
 ## 💬 Prompt Examples

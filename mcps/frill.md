@@ -35,39 +35,39 @@ Connect **Frill** to your AI agent to streamline your product feedback loop and 
 ## Available Tools (35)
 - **delete_topic**: Delete a topic
 - **list_announcements**: List announcements in Frill
-- **update_category**: Update an announcement category
-- **create_idea**: Create a new idea
-- **create_status**: Create a new status
 - **create_topic**: Create a new topic
-- **create_vote**: Vote on an idea
 - **delete_announcement**: Delete an announcement
 - **delete_category**: Delete an announcement category
 - **delete_comment**: Delete a comment
 - **delete_follower**: Delete a follower
-- **delete_idea**: Delete an idea
 - **delete_status**: Delete a status
 - **delete_vote**: Unvote an idea
 - **get_announcement**: Get a specific announcement
 - **get_category**: Get a specific announcement category
-- **get_idea**: Get a specific idea by IDX or slug
 - **list_categories**: List announcement categories
-- **list_comments**: List comments for an idea
 - **list_followers**: List followers
-- **list_ideas**: List ideas in Frill
-- **list_statuses**: List statuses
-- **list_topics**: List topics
-- **list_votes**: List votes
 - **search_followers**: Search followers by email
-- **update_announcement**: Update an announcement
 - **update_comment**: Update a comment
 - **update_follower**: Update a follower
-- **update_idea**: Update an idea
 - **update_status**: Update a status
 - **update_topic**: Update a topic
 - **create_announcement**: Create a new announcement
 - **create_category**: Create a new announcement category
-- **create_comment**: Create a new comment on an idea
 - **create_follower**: Create a new follower
+- **create_comment**: Create a new comment on an idea
+- **create_idea**: Create a new idea
+- **create_status**: Create a new status
+- **create_vote**: Vote on an idea
+- **delete_idea**: Delete an idea
+- **get_idea**: Get a specific idea by IDX or slug
+- **list_comments**: List comments for an idea
+- **list_ideas**: List ideas in Frill
+- **list_statuses**: List statuses
+- **list_topics**: List topics
+- **list_votes**: List votes
+- **update_announcement**: Update an announcement
+- **update_category**: Update an announcement category
+- **update_idea**: Update an idea
 
 
 ## 💬 Prompt Examples

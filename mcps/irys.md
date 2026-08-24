@@ -34,16 +34,16 @@ Connect to **Irys**, the provenance layer for permanent data storage. This MCP s
 
 
 ## Available Tools (8)
+- **submit_transaction**: Submit a signed data transaction
+- **get_transaction**: Retrieve metadata for a specific transaction ID
+- **get_balance**: Get balance for a specific address
+- **fund_account**: Submit a funding transaction receipt
 - **get_info**: Get Irys node metadata
 - **get_price**: Get storage price for a specific token and data size
 - **query_transactions**: Use this to find historical transactions by tag.
 
 Search and filter transaction metadata via GraphQL
-- **submit_transaction**: Submit a signed data transaction
 - **withdraw_account**: Initiate a withdrawal request
-- **get_balance**: Get balance for a specific address
-- **fund_account**: Submit a funding transaction receipt
-- **get_transaction**: Retrieve metadata for a specific transaction ID
 
 
 ## 💬 Prompt Examples
