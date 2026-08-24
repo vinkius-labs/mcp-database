@@ -15,8 +15,8 @@ This MCP server provides specialized tools for agricultural precision. Use `calc
 
 ## Available Tools (3)
 - **calculate_total_deployment**: Calculates the total logistics required for treating a large-scale area
-- **calculate_mixing_ratio**: Determines the precise composition of a single spray tank load
 - **lookup_safety_warnings**: Retrieves essential safety and compliance information based on the chemical used
+- **calculate_mixing_ratio**: Determines the precise composition of a single spray tank load
 
 
 ## 💬 Prompt Examples

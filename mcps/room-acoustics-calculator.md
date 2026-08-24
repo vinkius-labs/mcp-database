@@ -5,19 +5,20 @@
 
 ## Overview
 
-**Category:** [engineering](../categories/engineering.md)
+**Category:** [physics](../categories/physics.md)
 
-Predict room modes, Schroeder frequency, and RT60 decay for studio acoustics.
+Calculate RT60, absorption, and room modes for precise acoustic design.
 
 ## Description
-This MCP server provides specialized tools for acoustic engineers to analyze recording environments. Use `get_room_modes` to identify axial, tangential, and oblique standing waves. Determine the transition from discrete modes to a diffuse field with `get_schroeder_frequency`. Predict reverberation decay using `estimate_reverberation_time` based on surface materials like Acoustic Foam or Concrete. Finally, use `identify_tretment_needs` to pinpoint problematic low-frequency resonances that require bass traps.
+This MCP server provides a deterministic engine for acoustic analysis. Use `calculate_reverberation` to determine RT60 using Sabine or Eyring models, find critical distance, and calculate required treatment area. Use `identify_room_modes` to detect problematic axial, tangential, and oblique standing waves. Finally, use `validate_room_type` to compare your results against industry standards for recording studios, concert halls, and more.
 
 
-## Available Tools (4)
-- **estimate_reverberation_time**: Predict RT60 based on surface materials
-- **get_room_modes**: Identify all axial, tangential, and oblique resonant frequencies
-- **get_schroeder_frequency**: Determine the frequency boundary between discrete and diffuse fields
-- **identify_treatment_needs**: Pinpoint frequency ranges requiring absorption treatment
+## Available Tools (3)
+- **calculate_reverberation**: Calculates the RT60 and absorption characteristics for a given room geometry and material composition
+- **identify_room_modes**: Identifies problematic standing waves (modes) within the room volume
+- **validate_room_type**: g., recording_studio, concert_hall).
+
+Compares the calculated RT60 against industry standards for specific use cases
 
 
 ## 💬 Prompt Examples
@@ -25,38 +26,38 @@ This MCP server provides specialized tools for acoustic engineers to analyze rec
 Here are some examples of how you can interact with the **Room Acoustics Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What are the room modes for a studio that is 5m long, 4m wide, and 3m high?"
+> "Calculate the RT60 for a room that is 5m long, 4m wide, and 3m high, with carpeted floors and drywall walls."
 
 **🤖 AI Agent:**
-> The axial modes for your 5x4x3m room include frequencies such as 34.3Hz, 51.5Hz, and 68.6Hz.
+> The calculated RT60 for your room is 0.52 seconds, which is within the ideal range for a recording studio.
 
 ---
 
 **👤 You:**
-> "Estimate the RT60 for a room (5x4x3m) where the floor is carpet and the ceiling is acoustic foam."
+> "Are there any problematic standing waves in a 6x6x3 meter room?"
 
 **🤖 AI Agent:**
-> The estimated RT60 decay time for this configuration is approximately 0.45 seconds.
+> The analysis identified 2 axial modes and 3 tangential modes that may cause frequency buildup in the low-end.
 
 ---
 
 **👤 You:**
-> "Does a 6x5x4m room need acoustic treatment?"
+> "How much acoustic treatment area do I need to reach an RT60 of 0.5s in my current setup?"
 
 **🤖 AI Agent:**
-> Yes, the room has problematic frequencies at 17.2Hz and 34.3Hz that may require bass traps to manage resonance.
+> To achieve a target RT60 of 0.5s, you need to add approximately 4.5 square meters of acoustic absorption to your room.
 
 
 ## ❓ FAQ
 
+**Q: What is the difference between Sabine and Eyring models?**
+The Sabine model is ideal for 'live' rooms with low absorption, while the Eyring model provides better accuracy for 'dead' or highly treated spaces.
+
+**Q: How can I check if my room is suitable for a recording studio?**
+You can use `calculate_reverberation` to find your RT60 and then use `validate_room_type` with the 'recording_studio' purpose to check against industry standards.
+
 **Q: What are room modes?**
-Room modes are standing waves that occur when sound reflects between parallel surfaces in a room, creating peaks and nulls at specific frequencies.
-
-**Q: How do I estimate RT60?**
-Use the `estimate_reverberation_time` tool by providing your room dimensions and a JSON mapping of surface materials like 'floor' or 'ceiling' to materials from our catalog.
-
-**Q: What is the Schroeder frequency?**
-It is the threshold frequency below which individual room modes are distinct and above which the sound field behaves statistically.
+Room modes are standing waves that occur when sound reflects between parallel surfaces. You can identify these using the `identify_room_modes` tool.
 
 
 ## Installation & Usage

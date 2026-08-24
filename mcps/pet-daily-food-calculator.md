@@ -14,9 +14,9 @@ The Pet Daily Food Calculator is a specialized tool designed to help pet owners 
 
 
 ## Available Tools (3)
+- **calculate_daily_gram_intake**: Calculate the daily mass of food in grams
 - **estimate_daily_kcal_requirement**: Estimate the daily kilocalorie requirement for a pet
 - **generate_meal_schedule**: Generate a daily feeding schedule
-- **calculate_daily_gram_intake**: Calculate the daily mass of food in grams
 
 
 ## 💬 Prompt Examples

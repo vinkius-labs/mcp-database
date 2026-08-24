@@ -14,10 +14,10 @@ This MCP server provides specialized tools to manage restaurant billing. Use `ca
 
 
 ## Available Tools (3)
-- **calculate_tip_details**: Calculate tip amount and final total
 - **format_practical_payment**: g., nickels, dimes).
 
 Round a calculated amount to a human-friendly value
+- **calculate_tip_details**: Calculate tip amount and final total
 - **split_bill_share**: Calculate the individual share of a bill
 
 

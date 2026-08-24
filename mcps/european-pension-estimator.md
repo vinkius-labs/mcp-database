@@ -14,9 +14,9 @@ The European Pension Estimator MCP server provides precise approximations of fut
 
 
 ## Available Tools (3)
+- **assess_contribution_gap**: Assess the benefit increase from working additional years
 - **calculate_monthly_benefit**: Calculate the estimated monthly pension benefit
 - **get_scheme_details**: Get fundamental characteristics of a specific country's pension scheme
-- **assess_contribution_gap**: Assess the benefit increase from working additional years
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ The Game Economy Inflation Calculator is a specialized diagnostic tool designed 
 
 
 ## Available Tools (3)
-- **calculate_period_metrics**: Calculate fundamental inflation rate and sink-to-faucet balance
 - **forecast_currency_devaluation**: Predict future currency devaluation
+- **calculate_period_metrics**: Calculate fundamental inflation rate and sink-to-faucet balance
 - **generate_economic_recommendations**: Generate economic design advice
 
 

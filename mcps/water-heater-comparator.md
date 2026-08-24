@@ -15,8 +15,8 @@ This MCP server provides analytical tools to quantify the financial and environm
 
 ## Available Tools (3)
 - **evaluate_electric_system**: Calculate cost and emissions for an electric shower setup
-- **evaluate_gas_system**: Calculate cost and emissions for a gas-powered water heater
 - **evaluate_solar_thermal_system**: Calculate cost and emissions for a solar thermal system
+- **evaluate_gas_system**: Calculate cost and emissions for a gas-powered water heater
 
 
 ## 💬 Prompt Examples

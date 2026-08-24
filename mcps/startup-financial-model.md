@@ -15,8 +15,8 @@ This MCP server provides a specialized engine for startup financial modeling. Us
 
 ## Available Tools (3)
 - **generate_comprehensive_projection**: Generates a complete financial report
-- **query_cost_structure**: Calculate monthly COGS and Operating Expenses
 - **query_revenue_growth**: Calculate monthly revenue breakdown based on growth assumptions
+- **query_cost_structure**: Calculate monthly COGS and Operating Expenses
 
 
 ## 💬 Prompt Examples

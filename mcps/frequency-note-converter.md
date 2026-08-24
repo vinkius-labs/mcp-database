@@ -15,9 +15,9 @@ A high-precision utility for musicians and audio engineers to bridge the gap bet
 
 ## Available Tools (4)
 - **calculate_harmonics**: Calculate the fundamental harmonic series for a frequency
-- **hz_to_note**: Convert frequency in Hz to the nearest musical note
-- **note_to_hz**: Convert a musical note and octave to frequency in Hz
 - **get_pitch_depth**: Calculate how high a frequency is above the A0 baseline
+- **note_to_hz**: Convert a musical note and octave to frequency in Hz
+- **hz_to_note**: Convert frequency in Hz to the nearest musical note
 
 
 ## 💬 Prompt Examples

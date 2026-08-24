@@ -14,9 +14,9 @@ This MCP server provides specialized tools to quantify a company's financial sta
 
 
 ## Available Tools (3)
-- **get_interest_coverage_ratio**: Calculate interest coverage ratio
-- **get_short_term_liquidity_ratios**: Calculate short-term liquidity ratios
 - **get_long_term_solvency_ratios**: Calculate long-term solvency ratios
+- **get_short_term_liquidity_ratios**: Calculate short-term liquidity ratios
+- **get_interest_coverage_ratio**: Calculate interest coverage ratio
 
 
 ## 💬 Prompt Examples

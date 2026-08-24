@@ -14,10 +14,10 @@ The Attendance Tracker MCP server provides students with a powerful way to monit
 
 
 ## Available Tools (3)
-- **predict_weekly_allowance**: Predict how many classes can be missed per week
 - **calculate_attendance_metrics**: Returns current rate and margin.
 
 Calculate current attendance rate and remaining absence margin
+- **predict_weekly_allowance**: Predict how many classes can be missed per week
 - **assess_risk_severity**: Assess student academic standing based on attendance
 
 

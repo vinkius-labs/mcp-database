@@ -14,15 +14,15 @@ The Solar Orientation Analyzer provides specialized tools for architects and eng
 
 
 ## Available Tools (3)
-- **generate_protection_strategy**: Returns recommendation and impact level.
-
-Provides architectural recommendations for solar shading or heat mitigation based on calculated exposure
 - **calculate_solar_incidence**: Returns angles for summer, winter, and equinox.
 
 Determines the estimated angle of the sun relative to a specified building facade during different seasonal periods
 - **estimate_sunlight_duration**: Returns duration in hours for summer, winter, and equinox.
 
 Estimates how many hours of direct, unshaded sunlight a specific facade receives during different seasons
+- **generate_protection_strategy**: Returns recommendation and impact level.
+
+Provides architectural recommendations for solar shading or heat mitigation based on calculated exposure
 
 
 ## 💬 Prompt Examples

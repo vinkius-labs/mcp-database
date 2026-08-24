@@ -14,8 +14,8 @@ A specialized musical engine for precise transposition. Use `transpose_element` 
 
 
 ## Available Tools (4)
-- **transpose_element**: Transpose a single musical element
 - **apply_instrument_notation**: Apply notation for transposing instruments
+- **transpose_element**: Transpose a single musical element
 - **resolve_enharmonic_spelling**: Resolve enharmonic spelling
 - **transpose_progression**: Transpose a musical progression
 

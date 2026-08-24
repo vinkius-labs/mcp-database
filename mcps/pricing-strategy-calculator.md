@@ -14,10 +14,10 @@ This MCP server provides a strategic pricing engine to evaluate market entry and
 
 
 ## Available Tools (4)
-- **calculate_cost_plus_price**: Determines a minimum viable price to ensure cost recovery and target profit margins
 - **calculate_competitive_price**: Determines a price point based on market positioning relative to competitors
-- **predict_mrr_impact**: Projects the financial outcome of a specific pricing decision on monthly revenue
+- **calculate_cost_plus_price**: Determines a minimum viable price to ensure cost recovery and target profit margins
 - **calculate_value_based_price**: Estimates a price based on the economic impact provided to a specific customer segment
+- **predict_mrr_impact**: Projects the financial outcome of a specific pricing decision on monthly revenue
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides veterinary-standard calculations for a pet's nutritiona
 
 
 ## Available Tools (3)
-- **calculate_mer**: Calculate the Maintenance Energy Requirement (MER) for a pet
 - **calculate_rer**: 75 to find the baseline calories needed at rest.
 
 Calculate the Resting Energy Requirement (RER) for a pet
+- **calculate_mer**: Calculate the Maintenance Energy Requirement (MER) for a pet
 - **list_lifestyle_factors**: List all available lifestyle factors
 
 

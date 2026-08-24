@@ -14,9 +14,9 @@ This MCP server provides high-precision temporal calculations. Use `calculate_cu
 
 
 ## Available Tools (3)
+- **get_upcoming_birthday_info**: Calculate information about the next upcoming birthday
 - **calculate_current_age**: Calculate the current age in years, months, days, hours, minutes, and seconds
 - **identify_birth_weekday**: Identify the day of the week for a specific birth date
-- **get_upcoming_birthday_info**: Calculate information about the next upcoming birthday
 
 
 ## 💬 Prompt Examples

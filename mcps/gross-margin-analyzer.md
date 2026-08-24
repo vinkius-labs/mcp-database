@@ -14,9 +14,9 @@ The Gross Margin Analyzer is a financial diagnostic tool designed to evaluate pr
 
 
 ## Available Tools (3)
-- **calculate_product_margins**: Compute the current profitability margin for a provided list of products
 - **detect_underperforming_products**: Identify products failing to meet industry minimum profitability thresholds
 - **simulate_cogs_savings_impact**: Forecast projected gross margin improvement from COGS reduction
+- **calculate_product_margins**: Compute the current profitability margin for a provided list of products
 
 
 ## 💬 Prompt Examples

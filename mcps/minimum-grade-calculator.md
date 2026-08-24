@@ -15,8 +15,8 @@ An essential academic utility for students to determine their required performan
 
 ## Available Tools (3)
 - **evaluate_academic_standing**: Evaluate current academic standing
-- **predict_grade_impact**: Predict the impact of a hypothetical final exam score
 - **calculate_required_final_score**: Calculate the minimum grade needed on the final exam to pass
+- **predict_grade_impact**: Predict the impact of a hypothetical final exam score
 
 
 ## 💬 Prompt Examples

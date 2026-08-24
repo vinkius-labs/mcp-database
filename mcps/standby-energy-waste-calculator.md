@@ -14,11 +14,11 @@ This MCP server provides tools to quantify 'vampire power' consumption. Use `fet
 
 
 ## Available Tools (3)
+- **generate_aggregate_waste_report**: Generates a total combined impact report for all listed devices
 - **calculate_single_device_waste**: Calculates energy waste for a specific device
 - **fetch_device_catalog**: Returns device names and standby wattage.
 
 Provides a list of available electronics and their estimated power consumption in Watts
-- **generate_aggregate_waste_report**: Generates a total combined impact report for all listed devices
 
 
 ## 💬 Prompt Examples

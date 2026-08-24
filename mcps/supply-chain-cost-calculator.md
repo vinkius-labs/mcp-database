@@ -14,9 +14,9 @@ This MCP server provides specialized tools to measure supply chain efficiency. U
 
 
 ## Available Tools (3)
-- **get_cost_distribution**: Analyzes how the total SCM expenditure is distributed across different operational pillars
 - **calculate_scm_ratio**: Calculates total SCM cost as a percentage of revenue
 - **evaluate_sector_performance**: Identifies if the SCM ratio is within target and flags reduction opportunities
+- **get_cost_distribution**: Analyzes how the total SCM expenditure is distributed across different operational pillars
 
 
 ## 💬 Prompt Examples

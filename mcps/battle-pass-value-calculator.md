@@ -14,10 +14,10 @@ This MCP server provides a suite of analytical tools to evaluate the profitabili
 
 
 ## Available Tools (4)
-- **estimate_session_break_even**: Estimate how many gameplay sessions are needed to reach a specific tier
 - **total_pass_value**: Calculate the total estimated value of all rewards in a battle pass
-- **find_break_even_tier**: Identify the tier at which the cumulative reward value exceeds the pass cost
 - **calculate_investment_return**: Calculate the ROI and profitability of a battle pass purchase
+- **estimate_session_break_even**: Estimate how many gameplay sessions are needed to reach a specific tier
+- **find_break_even_tier**: Identify the tier at which the cumulative reward value exceeds the pass cost
 
 
 ## 💬 Prompt Examples

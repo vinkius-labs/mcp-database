@@ -17,8 +17,8 @@ An analytical engine for mobile gaming economics. Use `get_segment_economics` to
 - **get_retention_impact**: 01 reduction in churn.
 
 Calculate the value of improving player retention by 1%
-- **get_revenue_distribution**: Get the theoretical revenue distribution across segments
 - **get_segment_economics**: Calculate LTV and Breakeven CAC for a player segment
+- **get_revenue_distribution**: Get the theoretical revenue distribution across segments
 
 
 ## 💬 Prompt Examples
