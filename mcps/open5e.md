@@ -31,17 +31,15 @@ No more flipping through rulebooks mid-game. Your AI acts as a digital Dungeon M
 
 
 ## Available Tools (12)
+- **list_feats**: List character feats
+- **list_species**: List character species (races)
+- **search_open5e**: Global search across all Open5e resources
+- **list_backgrounds**: List character backgrounds
+- **list_classes**: List character classes and archetypes
 - **list_conditions**: List status effects and conditions
 - **list_creatures**: Can filter by type, size, challenge rating (cr), etc.
 
 List or search monsters and NPCs
-- **list_feats**: List character feats
-- **list_species**: List character species (races)
-- **list_spells**: Can filter by level, school, class, etc.
-
-List or search magic spells
-- **list_backgrounds**: List character backgrounds
-- **list_classes**: List character classes and archetypes
 - **list_documents**: List source documents and OGL metadata
 - **list_equipment**: Can filter by category.
 
@@ -49,8 +47,10 @@ List weapons, armor, and gear
 - **list_magic_items**: Can filter by rarity, category.
 
 List magic items and artifacts
-- **search_open5e**: Global search across all Open5e resources
 - **list_sections**: List rules and supplemental text sections
+- **list_spells**: Can filter by level, school, class, etc.
+
+List or search magic spells
 
 
 ## 💬 Prompt Examples

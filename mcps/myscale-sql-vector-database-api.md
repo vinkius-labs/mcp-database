@@ -34,20 +34,20 @@ Connect your **MyScale** cluster to any AI agent to manage high-performance vect
 
 
 ## Available Tools (6)
-- **vector_search**: Automatically constructs the SQL query.
+- **ping_cluster**: Check MyScale cluster connectivity
+- **check_index_status**: vector_indices table to monitor the build status of vector indices (Built, InProgress, Error).
 
-Perform a vector similarity search
+Check the status of vector indices
 - **create_vector_index**: ADD VECTOR INDEX statement.
 
 Create a vector index on a table
-- **ping_cluster**: Check MyScale cluster connectivity
 - **create_vector_table**: Create a new table with a vector column
 - **execute_sql_query**: For SELECT queries, FORMAT JSON is automatically appended.
 
 Execute an arbitrary SQL query on MyScale
-- **check_index_status**: vector_indices table to monitor the build status of vector indices (Built, InProgress, Error).
+- **vector_search**: Automatically constructs the SQL query.
 
-Check the status of vector indices
+Perform a vector similarity search
 
 
 ## 💬 Prompt Examples

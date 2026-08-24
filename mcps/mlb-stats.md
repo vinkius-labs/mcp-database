@@ -34,23 +34,23 @@ Connect the **MLB Stats** server to your AI agent to access the most comprehensi
 
 
 ## Available Tools (13)
-- **list_divisions**: List all divisions
+- **get_schedule**: Retrieve game schedules and basic game information
+- **get_stats**: Retrieve statistical data for players or teams
 - **list_game_status**: g., Final, In Progress).
 
 List valid game state codes
+- **list_sports**: List all sports (MLB, MiLB levels)
+- **list_stat_types**: List valid strings for the stats parameter
+- **list_divisions**: List all divisions
 - **list_leagues**: List all leagues
 - **get_live_game_feed**: Retrieve real-time game data, play-by-play, and boxscores
 - **get_person**: Use hydrate to include extra data like stats or currentTeam.
 
 Retrieve detailed information about a specific player
-- **list_positions**: List player position codes
-- **get_schedule**: Retrieve game schedules and basic game information
-- **list_sports**: List all sports (MLB, MiLB levels)
 - **get_standings**: Can be filtered by league, season, and standings type.
 
 Retrieve current or historical league standings
-- **list_stat_types**: List valid strings for the stats parameter
-- **get_stats**: Retrieve statistical data for players or teams
+- **list_positions**: List player position codes
 - **list_teams**: Can be filtered by sport, season, league, or specific team ID.
 
 Retrieve information about MLB teams and their affiliates

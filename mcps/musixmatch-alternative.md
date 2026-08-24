@@ -35,26 +35,26 @@ Connect your **Musixmatch** developer account to any AI agent and unlock deep ac
 
 ## Available Tools (21)
 - **get_chart_artists**: Get the list of top artists of a given country
-- **get_chart_tracks**: Get the list of top tracks of a given country
-- **get_album**: Get album metadata
-- **get_artist_albums**: Get the list of albums for an artist
 - **get_artist**: Get artist metadata
-- **get_lyrics_translation**: Get the translation of a track lyrics
-- **get_music_genres**: Get the list of music genres
-- **get_subtitle_translation**: Get the translation of a track synchronized lyrics
 - **get_track_lyrics**: Get the lyrics for a track
-- **get_track_richsync**: Get the rich synchronized lyrics (word-by-word)
-- **get_track_snippet**: Get a snippet (short excerpt) of the lyrics
 - **get_track_subtitle**: Get the synchronized lyrics (subtitles) for a track
 - **match_lyrics**: Match a track and get its lyrics in one call
 - **post_work**: Submit or update publishing data for a musical work
 - **post_work_validity**: Submit the validity end date for a work
-- **search_artists**: Search for an artist
 - **get_album_tracks**: Get the list of tracks for an album
-- **get_track**: Get a track metadata by ID
-- **match_subtitle**: Match a track and get its subtitles
-- **search_tracks**: Search for a track in the Musixmatch catalogue
 - **match_track**: Match a track and get its metadata
+- **get_album**: Get album metadata
+- **get_artist_albums**: Get the list of albums for an artist
+- **get_chart_tracks**: Get the list of top tracks of a given country
+- **get_lyrics_translation**: Get the translation of a track lyrics
+- **get_music_genres**: Get the list of music genres
+- **get_subtitle_translation**: Get the translation of a track synchronized lyrics
+- **get_track**: Get a track metadata by ID
+- **get_track_richsync**: Get the rich synchronized lyrics (word-by-word)
+- **get_track_snippet**: Get a snippet (short excerpt) of the lyrics
+- **match_subtitle**: Match a track and get its subtitles
+- **search_artists**: Search for an artist
+- **search_tracks**: Search for a track in the Musixmatch catalogue
 
 
 ## 💬 Prompt Examples

@@ -34,32 +34,32 @@ Connect your **OneSky** localization account to any AI agent and streamline your
 
 
 ## Available Tools (26)
-- **create_project**: Create a new project within a project group
 - **delete_file**: Delete a file from a project
 - **list_all_locales**: List all locales supported by OneSky
+- **list_projects**: List projects of a project group
+- **list_project_types**: List all available project types
+- **translation_status**: Return the progress of the translation of a specific file
+- **show_project**: Retrieve details of a project
+- **create_project_group**: Create a new project group
+- **show_import_task**: Show details of an import task
+- **show_order_details**: Show details of an order
+- **show_project_group**: Retrieve details of a specific project group
+- **create_order**: Create an order
+- **create_project**: Create a new project within a project group
+- **delete_project**: Remove a project
+- **delete_project_group**: Remove a project group
+- **export_app_store_description**: Export translations of App Store Description in JSON
+- **export_multilingual_file**: Export translations in multilingual formats
+- **export_translations**: Export translations for a specific locale and source file
 - **list_enabled_languages**: List enabled languages of a project group
 - **list_import_tasks**: List import tasks for a project
 - **list_orders**: List orders for a project
 - **list_project_groups**: List all project groups
 - **list_project_languages**: List languages of a project with translation progress
-- **list_project_types**: List all available project types
-- **list_projects**: List projects of a project group
-- **translation_status**: Return the progress of the translation of a specific file
+- **list_uploaded_files**: List uploaded files for a project
+- **make_quotation**: Make a quotation for translation
 - **update_project**: Update project details
 - **upload_file**: Upload a file to a project
-- **delete_project_group**: Remove a project group
-- **list_uploaded_files**: List uploaded files for a project
-- **show_project**: Retrieve details of a project
-- **create_order**: Create an order
-- **create_project_group**: Create a new project group
-- **delete_project**: Remove a project
-- **export_app_store_description**: Export translations of App Store Description in JSON
-- **export_multilingual_file**: Export translations in multilingual formats
-- **export_translations**: Export translations for a specific locale and source file
-- **make_quotation**: Make a quotation for translation
-- **show_import_task**: Show details of an import task
-- **show_order_details**: Show details of an order
-- **show_project_group**: Retrieve details of a specific project group
 
 
 ## 💬 Prompt Examples

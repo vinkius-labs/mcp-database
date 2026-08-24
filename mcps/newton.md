@@ -34,11 +34,8 @@ Connect the **Newton** symbolic math engine to your AI agent to solve complex ma
 
 
 ## Available Tools (15)
-- **math_abs**: Calculate the absolute value of an expression
-- **math_arccos**: Calculate the inverse cosine of an expression
 - **math_arcsin**: Calculate the inverse sine of an expression
 - **math_arctan**: Calculate the inverse tangent of an expression
-- **math_area**: Find the area under a curve (definite integral)
 - **math_cos**: Calculate the cosine of an expression
 - **math_derive**: Example: x^2+2x -> 2 x + 2
 
@@ -46,6 +43,14 @@ Find the derivative of a math expression
 - **math_factor**: Example: x^2+2x -> x (x + 2)
 
 Factor a math expression
+- **math_sin**: Calculate the sine of an expression
+- **math_tan**: Calculate the tangent of an expression
+- **math_zeroes**: Example: x^2+2x -> [-2, 0]
+
+Find the roots (zeroes) of a math expression
+- **math_abs**: Calculate the absolute value of an expression
+- **math_arccos**: Calculate the inverse cosine of an expression
+- **math_area**: Find the area under a curve (definite integral)
 - **math_integrate**: Example: x^2+2x -> 1/3 x^3 + x^2 + C
 
 Find the indefinite integral of a math expression
@@ -55,14 +60,9 @@ Calculate the logarithm of a value with a specific base
 - **math_simplify**: To compute fractions, use the keyword (over) to separate the numerator and denominator (e.g., 2(over)4).
 
 Simplify a math expression
-- **math_sin**: Calculate the sine of an expression
-- **math_tan**: Calculate the tangent of an expression
 - **math_tangent**: Provide the x-value and the function expression.
 
 Find the tangent line of a function at a specific x-value
-- **math_zeroes**: Example: x^2+2x -> [-2, 0]
-
-Find the roots (zeroes) of a math expression
 
 
 ## 💬 Prompt Examples

@@ -34,12 +34,9 @@ Connect to the **Open Library** database and turn your AI into a master libraria
 
 
 ## Available Tools (17)
-- **get_list_editions**: Get editions in a specific user list
-- **get_list_seeds**: Get seeds (items) in a specific user list
 - **get_author**: g., "OL23919A").
 
 Get details for a specific Author
-- **get_author_works**: Get works by a specific Author
 - **get_books_by_bibkeys**: Format: "ISBN:xxxx", "OCLC:xxxx", etc.
 
 Look up books by identifiers (ISBN, OCLC, LCCN, OLID)
@@ -52,7 +49,6 @@ Get details for a specific Edition (Book)
 - **get_subject**: g., "love", "science_fiction").
 
 Fetch books associated with a specific subject
-- **get_user_books**: Retrieve a patron's public reading log
 - **get_user_lists**: Get lists created by a user
 - **get_work_editions**: Fetch editions of a specific Work
 - **get_work**: g., "OL45804W").
@@ -61,6 +57,10 @@ Get details for a specific Work
 - **search_authors**: Search for authors in Open Library
 - **search_books**: Search for books in Open Library
 - **search_lists**: Search for user-created book lists
+- **get_author_works**: Get works by a specific Author
+- **get_list_editions**: Get editions in a specific user list
+- **get_list_seeds**: Get seeds (items) in a specific user list
+- **get_user_books**: Retrieve a patron's public reading log
 
 
 ## 💬 Prompt Examples

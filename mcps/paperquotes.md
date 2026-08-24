@@ -33,10 +33,10 @@ Connect to the **PaperQuotes** API to enrich your conversations with inspiration
 
 
 ## Available Tools (4)
-- **search_authors**: Search for authors in the database
 - **get_qod**: Get a curated Quote of the Day
-- **list_quotes**: Retrieve quotes from the PaperQuotes database
 - **list_tags**: Retrieve available tags used to categorize quotes
+- **search_authors**: Search for authors in the database
+- **list_quotes**: Retrieve quotes from the PaperQuotes database
 
 
 ## 💬 Prompt Examples

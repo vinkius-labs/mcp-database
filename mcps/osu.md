@@ -35,20 +35,20 @@ Connect your **Osu!** account to any AI agent to explore the rhythm game's vast 
 
 ## Available Tools (13)
 - **get_beatmap_pack**: Get a specific beatmap pack
-- **list_beatmap_packs**: Get beatmap packs
 - **get_beatmap_scores**: Get scores for a beatmap
 - **get_beatmapset**: Get a beatmapset
+- **lookup_beatmap**: Lookup a beatmap
 - **list_discussion_votes**: Get beatmapset discussion votes
 - **list_discussions**: Get beatmapset discussions
-- **get_favourites**: Get user beatmapset favourites
-- **lookup_beatmap**: Lookup a beatmap
-- **get_user_beatmap_score**: Get a user's score on a beatmap
+- **search_beatmapsets**: Search beatmapsets
+- **list_discussion_posts**: Get beatmapset discussion posts
 - **get_beatmap_attributes**: Get beatmap attributes
+- **get_favourites**: Get user beatmapset favourites
 - **get_me**: Requires identify scope.
 
 Get own user data
-- **search_beatmapsets**: Search beatmapsets
-- **list_discussion_posts**: Get beatmapset discussion posts
+- **get_user_beatmap_score**: Get a user's score on a beatmap
+- **list_beatmap_packs**: Get beatmap packs
 
 
 ## 💬 Prompt Examples

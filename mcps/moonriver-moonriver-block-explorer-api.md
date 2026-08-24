@@ -37,11 +37,11 @@ No more manually searching through block explorers. Your AI acts as a dedicated 
 
 ## Available Tools (8)
 - **get_extrinsic**: Get extrinsic details
-- **list_blocks**: Get a list of blocks
 - **list_evm_tokens**: Get token list
-- **list_transfers**: Get account transfers
-- **list_extrinsics**: Get a list of extrinsics (transactions)
 - **get_account_info**: Get account details
+- **list_blocks**: Get a list of blocks
+- **list_extrinsics**: Get a list of extrinsics (transactions)
+- **list_transfers**: Get account transfers
 - **get_block**: Get block details
 - **get_metadata**: Get Moonriver network metadata
 

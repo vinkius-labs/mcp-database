@@ -34,26 +34,26 @@ Connect your **NameSilo** account to any AI agent to automate domain management 
 
 
 ## Available Tools (18)
-- **dns_update_record**: Update an existing DNS record
 - **add_account_funds**: Add funds to your account
 - **check_register_availability**: Check if a domain is available for registration
-- **contact_add**: Create a new contact profile
-- **contact_delete**: Delete a contact profile
-- **dns_add_record**: Add a new DNS record
 - **dns_delete_record**: Delete a DNS record
-- **dns_list_records**: ) for a domain.
-
-List all DNS records for a domain
 - **get_account_balance**: Check your account available funds
-- **get_domain_info**: Get detailed information about a specific domain
 - **list_domains**: Retrieve a list of all domains in your account
 - **list_portfolios**: List all domain portfolios
-- **portfolio_add**: Create a new portfolio
 - **register_domain**: Register a new domain name
 - **renew_domain**: Renew an existing domain registration
 - **transfer_domain**: Initiate a domain transfer to NameSilo
+- **contact_add**: Create a new contact profile
+- **contact_delete**: Delete a contact profile
 - **contact_list**: List all contact profiles
 - **contact_update**: Update an existing contact profile
+- **dns_add_record**: Add a new DNS record
+- **dns_list_records**: ) for a domain.
+
+List all DNS records for a domain
+- **dns_update_record**: Update an existing DNS record
+- **get_domain_info**: Get detailed information about a specific domain
+- **portfolio_add**: Create a new portfolio
 
 
 ## 💬 Prompt Examples
