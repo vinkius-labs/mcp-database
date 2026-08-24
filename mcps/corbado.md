@@ -35,48 +35,48 @@ Connect your **Corbado** project to any AI agent to streamline your identity and
 
 
 ## Available Tools (43)
-- **complete_auth_process**: Complete authentication process
 - **create_connect_token**: Create a ConnectToken
 - **create_identifier**: Create a login identifier for a user
+- **finish_connect_login**: Finish Connect login
+- **finish_passkey_append**: Finish passkey append
+- **get_jwks**: Get JWKS
+- **get_user**: Retrieve user details
+- **init_auth_process**: Initialize authentication process
+- **init_connect_login**: Initialize Connect login
+- **init_login**: Initialize login
+- **list_connect_passkeys**: List Connect passkeys
+- **list_sessions**: List active sessions
+- **refresh_me**: Refresh session
+- **start_sso**: Start SSO (SAML2)
+- **update_auth_identifier**: Update authentication identifier
+- **update_user**: Update a Corbado user
+- **complete_auth_process**: Complete authentication process
 - **create_user**: Create a new Corbado user
 - **delete_connect_token**: Delete a ConnectToken
 - **delete_identifier**: Delete a login identifier
 - **delete_me**: Delete current user
 - **delete_user**: Delete a Corbado user
-- **finish_connect_login**: Finish Connect login
 - **finish_identifier_verify**: Finish identifier verification
-- **finish_passkey_append**: Finish passkey append
 - **finish_passkey_login**: Finish passkey login
 - **finish_sso**: Finish SSO (SAML2)
 - **get_apple_app_site_association**: Get Apple App Site Association
 - **get_assetlinks**: Get Asset Links
 - **get_auth_process**: Retrieve authentication process
-- **get_jwks**: Get JWKS
 - **get_me**: Retrieve current user
-- **get_user**: Retrieve user details
-- **init_auth_process**: Initialize authentication process
-- **init_connect_login**: Initialize Connect login
-- **init_login**: Initialize login
 - **init_signup**: Initialize signup
-- **list_connect_passkeys**: List Connect passkeys
 - **list_connect_tokens**: List ConnectTokens
 - **list_identifiers**: List all login identifiers
-- **list_sessions**: List active sessions
 - **list_users**: List Corbado users
 - **logout_me**: Logout current user
-- **refresh_me**: Refresh session
 - **reset_auth_process**: Reset authentication process
 - **revoke_session**: Revoke a session
 - **start_passkey_append**: Start passkey append
 - **start_passkey_login**: Start passkey login
-- **start_sso**: Start SSO (SAML2)
-- **update_auth_identifier**: Update authentication identifier
 - **update_identifier**: Update a login identifier
 - **update_me**: Update current user
 - **skip_auth_block**: Skip authentication block
 - **start_connect_login**: Start Connect login
 - **start_identifier_verify**: Start identifier verification
-- **update_user**: Update a Corbado user
 - **verify_signed_data**: Verify signed passkey data
 
 

@@ -35,15 +35,15 @@ Connect your **OpenGov** account to any AI agent to streamline public sector dat
 ## Available Tools (11)
 - **create_department**: Create a new OpenGov department
 - **create_user**: Create a new OpenGov user
-- **get_fund**: Get details for a specific OpenGov fund
 - **get_report_data**: Get data rows for a specific report
+- **list_reports**: List available OpenGov reports
+- **update_user**: Update an existing OpenGov user
+- **get_fund**: Get details for a specific OpenGov fund
 - **get_report_metadata**: Get metadata and schema for a specific report
 - **get_user**: Get details for a specific OpenGov user
 - **list_departments**: List OpenGov departments
 - **list_funds**: List OpenGov funds
-- **list_reports**: List available OpenGov reports
 - **list_users**: List OpenGov users
-- **update_user**: Update an existing OpenGov user
 
 
 ## 💬 Prompt Examples

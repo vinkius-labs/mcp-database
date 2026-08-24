@@ -35,26 +35,26 @@ Connect your **MemoQ** server to any AI agent to streamline your localization an
 
 ## Available Tools (17)
 - **create_tb_entry**: Create a new entry in a Termbase
+- **get_tm_custom_meta_scheme**: Get custom meta scheme for a TM
+- **list_tms**: Can be filtered by source and target languages.
+
+List Translation Memories (TMs)
+- **tb_lookup_terms**: Lookup terms in a Termbase
+- **tm_concordance**: Perform a concordance search in a TM
+- **tm_lookup_segments**: Lookup segments in a TM
+- **update_tb_entry**: Update an existing entry in a Termbase
 - **create_tm_entry**: Create a new entry in a TM
 - **delete_tb_entry**: Delete an entry from a Termbase
 - **delete_tm_entry**: Delete an entry from a TM
 - **get_tb_entry**: Get a specific entry from a Termbase
 - **get_tb**: Get details for a specific Termbase
-- **get_tm_custom_meta_scheme**: Get custom meta scheme for a TM
-- **get_tm_entry**: Get a specific entry from a TM
 - **get_tm**: Get details for a specific Translation Memory
+- **get_tm_entry**: Get a specific entry from a TM
 - **list_tbs**: Can be filtered by language.
 
 List Termbases (TBs)
-- **list_tms**: Can be filtered by source and target languages.
-
-List Translation Memories (TMs)
-- **tb_lookup_terms**: Lookup terms in a Termbase
 - **tb_search**: Search for expressions in a Termbase
-- **tm_concordance**: Perform a concordance search in a TM
-- **tm_lookup_segments**: Lookup segments in a TM
 - **update_tm_entry**: Update an existing entry in a TM
-- **update_tb_entry**: Update an existing entry in a Termbase
 
 
 ## 💬 Prompt Examples

@@ -37,27 +37,27 @@ Connect your entire HR and recruitment stack to any AI agent using **Kombo**. Th
 ## Available Tools (21)
 - **get_ats_applications**: Retrieve job applications from the ATS
 - **get_ats_candidates**: Retrieve candidate profiles from the ATS
-- **create_ats_application**: Create a new application and candidate for a job
 - **get_ats_interviews**: List scheduled interviews from the ATS
+- **get_ats_roles**: List system and job roles in the ATS
+- **get_hris_absence_types**: List available absence types in the HRIS
+- **get_hris_legal_entities**: List legal entities in the HRIS
+- **upsert_lms_courses_bulk**: Asynchronously upsert courses into the LMS
+- **put_assessment_packages**: Define available assessment/background check packages
+- **create_ats_application**: Create a new application and candidate for a job
+- **create_hris_employee_form**: Create an employee using a tool-specific form
 - **get_ats_jobs**: Retrieve all job openings from the ATS
 - **get_ats_rejection_reasons**: List reasons for rejecting applications in the ATS
-- **get_ats_roles**: List system and job roles in the ATS
 - **get_ats_users**: List ATS users (recruiters, hiring managers)
-- **get_hris_absence_types**: List available absence types in the HRIS
 - **get_hris_absences**: Retrieve employee absences (vacation, sick leave, etc.)
-- **create_hris_employee_form**: Create an employee using a tool-specific form
 - **get_hris_employees**: Supports pagination and filtering.
 
 Retrieve all employees from the HRIS
 - **get_hris_groups**: Retrieve organizational groups (teams, departments)
-- **get_hris_legal_entities**: List legal entities in the HRIS
 - **get_hris_locations**: List work locations in the HRIS
 - **get_lms_courses**: Retrieve available courses from the LMS
-- **upsert_lms_courses_bulk**: Asynchronously upsert courses into the LMS
 - **get_lms_users**: Retrieve learners from the LMS
 - **passthrough_request**: Call the native API of the underlying tool directly
 - **put_assessment_order_result**: Write back results for an assessment order
-- **put_assessment_packages**: Define available assessment/background check packages
 
 
 ## 💬 Prompt Examples

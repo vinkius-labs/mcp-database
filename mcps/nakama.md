@@ -37,12 +37,18 @@ Connect your **Nakama** server to any AI agent to manage your game's backend inf
 ## Available Tools (31)
 - **add_friends**: Add friends or send invites
 - **add_group_members**: Add members to a group
-- **authenticate_device**: Authenticate using a device ID
 - **authenticate_email**: Authenticate using email and password
 - **block_friends**: Block users
 - **create_group**: Create a new group
-- **delete_friends**: Remove friends or reject invites
+- **delete_account**: Delete current user account
 - **delete_storage_objects**: Delete storage objects
+- **kick_group_members**: Kick group members
+- **list_storage_objects**: List storage objects
+- **logout_session**: Logout a session
+- **update_account**: Update current user account
+- **write_tournament_record**: Write a tournament record
+- **authenticate_device**: Authenticate using a device ID
+- **delete_friends**: Remove friends or reject invites
 - **get_account**: Fetch current user account
 - **get_channel_history**: Get channel message history
 - **join_tournament**: Join a tournament
@@ -50,22 +56,16 @@ Connect your **Nakama** server to any AI agent to manage your game's backend inf
 - **list_friends**: List friends
 - **list_groups**: List groups
 - **list_leaderboard_records**: List leaderboard records
-- **list_storage_objects**: List storage objects
 - **list_tournaments**: List tournaments
 - **read_storage_objects**: Read storage objects
 - **refresh_session**: Refresh a session token
 - **rpc_call**: Call an RPC function
-- **update_account**: Update current user account
 - **write_leaderboard_record**: Write a leaderboard record
 - **write_storage_objects**: Write storage objects
-- **logout_session**: Logout a session
 - **promote_group_members**: Promote group members
-- **delete_account**: Delete current user account
 - **demote_group_members**: Demote group members
 - **get_users**: Fetch public user profiles
 - **join_group**: Join a group
-- **kick_group_members**: Kick group members
-- **write_tournament_record**: Write a tournament record
 
 
 ## 💬 Prompt Examples

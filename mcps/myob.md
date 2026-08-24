@@ -34,29 +34,29 @@ Connect your **MYOB** business account to any AI agent and take full control of 
 
 
 ## Available Tools (23)
+- **list_banking_transfer_money_txns**: List Banking Transfer Money Transactions
+- **list_gl_categories**: List General Ledger Categories
+- **list_gl_journal_transactions**: List General Ledger Journal Transactions
+- **list_inventory_items**: List Inventory Items
+- **list_inventory_locations**: List Inventory Locations
+- **list_payroll_categories**: List Payroll Categories
+- **list_sale_customer_payments**: List Sale Customer Payments
+- **list_sale_invoices**: List Sale Invoices
+- **list_sale_quotes**: List Sale Quotes
 - **list_banking_bank_accounts**: List Banking Bank Accounts
 - **list_banking_receive_money_txns**: List Banking Receive Money Transactions
 - **list_banking_spend_money_txns**: List Banking Spend Money Transactions
-- **list_banking_transfer_money_txns**: List Banking Transfer Money Transactions
 - **list_gl_accounts**: List General Ledger Accounts
-- **list_gl_categories**: List General Ledger Categories
 - **list_gl_jobs**: List General Ledger Jobs
-- **list_gl_journal_transactions**: List General Ledger Journal Transactions
 - **list_gl_tax_codes**: List General Ledger Tax Codes
 - **list_inventory_adjustments**: List Inventory Adjustments
 - **list_inventory_item_price_matrices**: List Inventory Item Price Matrices
-- **list_inventory_locations**: List Inventory Locations
-- **list_payroll_categories**: List Payroll Categories
 - **list_payroll_superannuation_funds**: List Payroll Superannuation Funds
 - **list_payroll_timesheets**: List Payroll Timesheets
 - **list_purchase_bills**: List Purchase Bills
 - **list_purchase_orders**: List Purchase Orders
 - **list_purchase_supplier_payments**: List Purchase Supplier Payments
-- **list_sale_invoices**: List Sale Invoices
 - **list_sale_orders**: List Sale Orders
-- **list_sale_quotes**: List Sale Quotes
-- **list_sale_customer_payments**: List Sale Customer Payments
-- **list_inventory_items**: List Inventory Items
 
 
 ## 💬 Prompt Examples

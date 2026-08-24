@@ -33,7 +33,6 @@ Connect your **Logz.io** observability platform to any AI agent to streamline yo
 
 
 ## Available Tools (31)
-- **create_user**: Create a new user
 - **disable_alert**: Disable an alert
 - **enable_alert**: Enable an alert
 - **list_insights**: io.
@@ -42,36 +41,37 @@ Retrieves LOGCEPTION and PUBLIC_CI insights detected in your logs
 - **create_metrics_account**: Create a Metrics account
 - **create_security_rule**: Create a new SIEM security rule
 - **create_siem_account**: Creates a new SIEM account associated with your main logs account
-- **create_snapshot**: Create a Kibana snapshot
 - **delete_alert**: Delete an alert
 - **delete_security_rule**: Delete a SIEM security rule
 - **delete_user**: Delete a user
 - **get_lookup_list**: Get a lookup list by ID
-- **get_snapshot**: Get a Kibana snapshot
-- **list_alerts**: io account.
-
-Returns a list of all configured alerts
 - **list_triggered_alerts**: Returns a paged, filtered list of triggered alert events
-- **list_users_recursive**: List all users in main account and sub-accounts
 - **list_users**: List users for a single account
-- **scroll_logs**: Paginate through large result sets from search
-- **search_logs**: Returns up to 10,000 results.
-
-Search account data using Elasticsearch Search API DSL
 - **search_lookup_lists**: Search lookup lists
 - **search_security_event_logs**: Retrieves the specific logs that caused a security event to trigger
 - **search_security_events**: Fetch events triggered by security rules
 - **search_security_rules**: Search SIEM security rules
 - **suspend_user**: Suspend a user
 - **unsuspend_user**: Unsuspend a user
-- **update_alert**: Update an existing alert
 - **update_security_rule**: Update a SIEM security rule
-- **update_user**: Update a user
-- **create_alert**: Create a new alert
 - **create_deployment_markers**: Add deployment markers to annotate Exception graphs in Kibana
 - **create_lookup_list**: g., blacklisted IPs) for use in SIEM rules.
 
 Create a lookup list for SIEM rules
+- **create_alert**: Create a new alert
+- **create_snapshot**: Create a Kibana snapshot
+- **create_user**: Create a new user
+- **get_snapshot**: Get a Kibana snapshot
+- **list_alerts**: io account.
+
+Returns a list of all configured alerts
+- **list_users_recursive**: List all users in main account and sub-accounts
+- **scroll_logs**: Paginate through large result sets from search
+- **search_logs**: Returns up to 10,000 results.
+
+Search account data using Elasticsearch Search API DSL
+- **update_alert**: Update an existing alert
+- **update_user**: Update a user
 
 
 ## 💬 Prompt Examples

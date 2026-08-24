@@ -32,12 +32,12 @@ Connect your **Getform** account to any AI agent to streamline your data collect
 
 
 ## Available Tools (2)
-- **getform_submit_form**: Supports standard fields and blocks like sender, email, text. This is a public endpoint.
-
-Submit data to a specific Getform form
 - **getform_list_submissions**: Requires Protected Mode (API Key).
 
 List submissions for a specific form
+- **getform_submit_form**: Supports standard fields and blocks like sender, email, text. This is a public endpoint.
+
+Submit data to a specific Getform form
 
 
 ## 💬 Prompt Examples

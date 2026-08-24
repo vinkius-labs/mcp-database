@@ -33,12 +33,12 @@ Connect **Moesif** to your AI agent to gain deep visibility into your API ecosys
 
 
 ## Available Tools (6)
-- **log_events_batch**: Log API calls in batch to Moesif
+- **log_event**: Log a single API call to Moesif
 - **search_events**: Use post_filter, size, and sort.
 
 Search events using Elasticsearch DSL
+- **log_events_batch**: Log API calls in batch to Moesif
 - **count_events**: Count events matching a filter
-- **log_event**: Log a single API call to Moesif
 - **update_company**: Upsert a company profile in Moesif
 - **update_user**: Upsert a user profile in Moesif
 

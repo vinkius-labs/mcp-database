@@ -35,14 +35,14 @@ Connect your **Kindful** account to any AI agent to streamline your nonprofit op
 
 ## Available Tools (12)
 - **get_custom_fields**: Get custom fields
-- **create_import**: ).
-
-Create an import job
 - **get_campaigns**: Get campaigns
 - **get_groups**: Get groups
 - **get_import_stats**: Get import stats
 - **get_import_status**: Get import job status
 - **get_org_details**: Get organization details
+- **create_import**: ).
+
+Create an import job
 - **link_contact**: Link a contact
 - **link_transaction**: Link a transaction
 - **query_contacts**: Query contacts in Kindful

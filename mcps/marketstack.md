@@ -34,30 +34,30 @@ Connect **MarketStack** to your AI agent to access a massive database of global 
 
 
 ## Available Tools (18)
-- **get_eod**: Use symbols parameter for comma-separated tickers.
-
-Retrieve end-of-day data for one or multiple stock tickers
-- **get_company_concepts**: g., accounts_payable) for a company using its CIK code.
-
-Retrieve specific financial concepts for a company
 - **get_company_facts**: Retrieve structured financial data for a company
 - **get_company_name**: Find a company name by its CIK code
-- **get_exchange_tickers**: List all tickers for a specific exchange
-- **get_exchange**: Get details for a specific exchange
 - **get_submissions**: Retrieve SEC submissions for a company
 - **get_ticker_eod**: Get EOD data for a specific ticker
-- **get_ticker_intraday**: Get intraday data for a specific ticker
 - **get_ticker**: Get details for a specific ticker
-- **get_intraday**: Use symbols parameter for comma-separated tickers.
-
-Retrieve intraday data points for one or multiple stock tickers
 - **list_currencies**: List supported currencies
 - **list_dividends**: Retrieve historical dividend data
 - **list_exchanges**: List all supported stock exchanges
 - **list_splits**: Retrieve historical stock split data
-- **list_tickers**: List all available stock tickers
 - **list_timezones**: List supported timezones
 - **get_cik_code**: Find the CIK for a company
+- **get_company_concepts**: g., accounts_payable) for a company using its CIK code.
+
+Retrieve specific financial concepts for a company
+- **get_eod**: Use symbols parameter for comma-separated tickers.
+
+Retrieve end-of-day data for one or multiple stock tickers
+- **get_exchange**: Get details for a specific exchange
+- **get_exchange_tickers**: List all tickers for a specific exchange
+- **get_intraday**: Use symbols parameter for comma-separated tickers.
+
+Retrieve intraday data points for one or multiple stock tickers
+- **get_ticker_intraday**: Get intraday data for a specific ticker
+- **list_tickers**: List all available stock tickers
 
 
 ## 💬 Prompt Examples

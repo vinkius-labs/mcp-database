@@ -36,13 +36,13 @@ No more switching between carrier portals and internal dashboards. Your AI acts 
 
 
 ## Available Tools (5)
-- **trigger_notification**: Trigger a transactional notification
 - **get_tracking**: Get real-time tracking information for a shipment
+- **get_order**: Get comprehensive order details
 - **get_estimated_delivery_dates**: Uses POST but acts as a query.
 
 Calculate estimated delivery dates (EDD)
 - **create_return**: Initiate a return request for an order
-- **get_order**: Get comprehensive order details
+- **trigger_notification**: Trigger a transactional notification
 
 
 ## 💬 Prompt Examples
