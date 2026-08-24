@@ -10,7 +10,7 @@
 Search flights worldwide — compare prices by date, find cheapest days to fly and discover flight routes.
 
 ## Description
-Connect to **Skyscanner** and explore flight prices worldwide through natural conversation — no API key needed.
+Connect to **Skyscanner** and explore flight prices worldwide through natural conversation — API key required.
 
 ### What you can do
 
@@ -40,18 +40,18 @@ Get a list of all supported places
 - **autosuggest_places**: Useful for finding the correct place IDs to use in flight searches. Returns place names, IATA codes and types.
 
 Search for places (airports, cities) by name
-- **browse_dates**: Useful for finding the cheapest days to fly. Returns prices for multiple dates at once.
-
-Browse flight prices by date
 - **browse_grid**: Useful for flexible date searches. Returns prices for multiple origin-destination date pairs.
 
 Browse flight prices in a date grid
-- **search_direct_flights**: Useful for travelers who prefer no layovers.
-
-Search for direct flights only
 - **search_flights_indicative**: Useful for exploring flight options and comparing prices. Use originPlaceId and destinationPlaceId as IATA codes (e.g. "NYCA" for New York, "LOND" for London) or place IDs. Returns cheapest quotes with carrier info.
 
 Search for flight quotes (indicative prices)
+- **browse_dates**: Useful for finding the cheapest days to fly. Returns prices for multiple dates at once.
+
+Browse flight prices by date
+- **search_direct_flights**: Useful for travelers who prefer no layovers.
+
+Search for direct flights only
 
 
 ## 💬 Prompt Examples

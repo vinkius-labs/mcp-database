@@ -14,10 +14,10 @@ Calculate a lead's conversion readiness score instantly using configurable firmo
 
 
 ## Available Tools (3)
+- **query_scoring_configuration**: Retrieve current scoring configuration weights and thresholds
 - **calculate_converted_score**: Returns total score, qualification status (Cold/Warm/Hot/MQL/SQL), and estimated conversion probability.
 
 Calculate composite lead score with qualification status and conversion probability
-- **query_scoring_configuration**: Retrieve current scoring configuration weights and thresholds
 - **query_lead_profile_data**: Optionally specify a scoring version ID.
 
 Retrieve raw lead profile data for scoring

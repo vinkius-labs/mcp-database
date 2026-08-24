@@ -44,12 +44,12 @@ Simple. You have the score. Here's where it puts you.
 
 ## Available Tools (3)
 - **estimate_admission_probability**: Estimate admission probability for universities by tier
-- **calculate_applicant_score**: Use this as the first step in admission estimation.
-
-Calculate composite academic score from GPA and standardized test scores
 - **adjust_for_contextual_modifiers**: Returns an adjusted admissions score.
 
 Apply residency and extracurricular modifiers to the composite score
+- **calculate_applicant_score**: Use this as the first step in admission estimation.
+
+Calculate composite academic score from GPA and standardized test scores
 
 
 ## 💬 Prompt Examples

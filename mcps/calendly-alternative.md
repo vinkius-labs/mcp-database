@@ -1,4 +1,4 @@
-# Calendly MCP Server
+# Calendly Webhooks, Scheduling Links & Global Invitees MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/calendly-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -7,7 +7,7 @@
 
 **Category:** [productivity](../categories/productivity.md)
 
-Manage meetings and scheduling via Calendly — list event types, track scheduled events, inspect invitees and manage webhooks from any AI agent.
+Webhooks, Scheduling Links & Global Invitees — advanced Calendly for webhooks, direct booking links and cross-event search.
 
 ## Description
 Connect your **Calendly** account to any AI agent and take full control of your scheduling operations through natural conversation.
@@ -38,18 +38,21 @@ No more switching to the Calendly app to check who booked what or review upcomin
 
 
 ## Available Tools (12)
-- **create_webhook**: Requires the callback URL, a list of events to subscribe to (e.g. ["invitee.created", "invitee.canceled", "invitee.no_show"]), and the scope (user or organization URI). Optionally provide a signing key for webhook verification.
+- **list_event_types**: Each event type includes its name, description, duration, type (one-on-one, group, collective, round_robin), scheduling URL, and active status. Optionally filter by a specific user URI. Use this to see what meeting options are available for booking.
 
-Create a new webhook subscription in Calendly
-- **get_user_availability**: Requires the user URI, start time and end time (both ISO 8601 UTC format). Returns the user's scheduling rules, busy times, and date overrides. Useful for checking when someone is free before booking.
+List event types in Calendly
+- **get_event_type**: Provide the event type URI (found in list_event_types).
 
-Get availability for a Calendly user
-- **list_invitees**: Each invitee includes their name, email, event URI, scheduled start time, and responses to custom questions. Optionally filter by a specific event URI and set a count limit.
+Get details for a specific Calendly event type
+- **list_memberships**: Each membership shows the user, organization, URI, and role. Useful for multi-team accounts and seeing which organizations you are part of.
 
-List invitees (attendees) across all Calendly events
+List your memberships in Calendly organizations
 - **create_scheduling_link**: Requires the event type URI and the owner type ("EventType" or "User"). Returns a booking URL that invitees can use to schedule a meeting directly via the API.
 
 Create a scheduling link for direct booking
+- **create_webhook**: Requires the callback URL, a list of events to subscribe to (e.g. ["invitee.created", "invitee.canceled", "invitee.no_show"]), and the scope (user or organization URI). Optionally provide a signing key for webhook verification.
+
+Create a new webhook subscription in Calendly
 - **get_invitee**: Provide the invitee UUID from list_invitees.
 
 Get details for a specific invitee
@@ -59,26 +62,23 @@ Get the authenticated Calendly user
 - **get_scheduled_event**: Provide the event UUID from list_scheduled_events.
 
 Get details for a specific scheduled event
-- **list_event_types**: Each event type includes its name, description, duration, type (one-on-one, group, collective, round_robin), scheduling URL, and active status. Optionally filter by a specific user URI. Use this to see what meeting options are available for booking.
+- **list_invitees**: Each invitee includes their name, email, event URI, scheduled start time, and responses to custom questions. Optionally filter by a specific event URI and set a count limit.
 
-List event types in Calendly
-- **list_memberships**: Each membership shows the user, organization, URI, and role. Useful for multi-team accounts and seeing which organizations you are part of.
-
-List your memberships in Calendly organizations
+List invitees (attendees) across all Calendly events
 - **list_scheduled_events**: Each event includes the event type, start time (UTC), invitee URI, status (active, canceled), and participants. Optionally filter by user URI, status (active or canceled), and count. Useful for reviewing your upcoming calendar.
 
 List scheduled events (meetings) in Calendly
+- **get_user_availability**: Requires the user URI, start time and end time (both ISO 8601 UTC format). Returns the user's scheduling rules, busy times, and date overrides. Useful for checking when someone is free before booking.
+
+Get availability for a Calendly user
 - **list_webhooks**: Each webhook shows its URL, scope (user or organization), subscribed events (invitee.created, invitee.canceled, etc.), and creation date. Use this to audit your event integrations.
 
 List webhook subscriptions in Calendly
-- **get_event_type**: Provide the event type URI (found in list_event_types).
-
-Get details for a specific Calendly event type
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Calendly** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Calendly Webhooks, Scheduling Links & Global Invitees** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "Show me all my upcoming meetings this week."
@@ -132,7 +132,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Calendly** under Connectors.
+5. Click the **+** button in any chat and enable **Calendly Webhooks, Scheduling Links & Global Invitees** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -140,7 +140,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `calendly-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Calendly** tools.
+4. Click **Save** — Cursor will connect and list all **Calendly Webhooks, Scheduling Links & Global Invitees** tools.
 
 **Configuration:**
 ```json

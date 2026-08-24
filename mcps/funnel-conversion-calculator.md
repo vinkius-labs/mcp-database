@@ -21,10 +21,10 @@ The bridge this provides is direct: It connects raw marketing data volume into a
 
 
 ## Available Tools (3)
-- **calculate_funnel_metrics**: Calculate funnel conversion metrics across Awareness, Consideration, Intent, and Purchase stages
 - **simulate_improvement_impact**: Returns recalculated metrics, overall improvement percentage, additional purchases, and revenue uplift.
 
 Simulate projected financial uplift from targeted funnel stage improvements
+- **calculate_funnel_metrics**: Calculate funnel conversion metrics across Awareness, Consideration, Intent, and Purchase stages
 - **identify_bottleneck**: Returns the bottleneck stage name, relative loss percentage, and improvement leverage calculation.
 
 Identify the funnel stage with the highest relative drop-off rate

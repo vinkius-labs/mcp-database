@@ -30,35 +30,27 @@ Equip any AI agent with robust Mailchimp marketing capabilities. Integrate your 
 - **Content Marketers** — trace campaign statuses quickly when jumping between different platforms constantly
 
 
-## Available Tools (14)
-- **list_audiences**: List all Mailchimp audiences (lists). Returns audience IDs, names, member counts, and stats
-- **list_automations**: List all automation workflows in the account
-- **get_campaign**: Get full details of a Mailchimp campaign
-- **get_report**: Get Mailchimp campaign performance report
-- **add_member**: Pass status (subscribed, unsubscribed, cleaned, pending, transactional).
+## Available Tools (18)
+- **list_audiences**: List Mailchimp audiences. Returns list_id, name, member count
+- **list_automations**: List automation workflows. Returns automation_id and status
+- **get_campaign**: Get campaign details by campaign_id
+- **get_report**: Get campaign report. Returns opens, clicks, bounces, unsubscribes
+- **search_members**: Search contacts across all audiences by email or name
+- **add_member**: Add contact to audience
+- **list_campaigns**: List campaigns. Returns campaign_id, subject, status, send time
+- **create_campaign**: Create campaign shell. Returns campaign_id. Set content next
+- **delete_member**: Archive contact from audience. Reversible via re-add
+- **get_audience**: Get audience details by list_id. Returns stats and settings
+- **get_member**: Get single contact by email. Returns status, merge fields, tags
+- **list_members**: List contacts in an audience. Returns email, status, tags
+- **list_segments**: List segments for an audience. Returns segment_id and conditions
+- **send_campaign**: Triggers live delivery.
 
-Add a new contact to a Mailchimp audience
-- **create_campaign**: Create a new Mailchimp campaign. Returns campaign ID
-- **delete_member**: Requires the list_id and the subscriber MD5 hash (lowercase MD5 of the email).
-
-Archive/remove a subscriber from an audience
-- **get_audience**: Only use this when you need detailed statistics or configuration.
-
-Get details of a Mailchimp audience. Returns name, member count, open/click rates, and merge fields configuration
-- **list_campaigns**: Can be used to find a campaign ID.
-
-List Mailchimp campaigns. Returns campaign IDs, types, subjects, send times, and open/click stats
-- **list_members**: Requires an audience ID.
-
-List members (contacts) in a Mailchimp audience. Returns email addresses, status, and tags
-- **list_segments**: List saved segments for an audience
-- **search_members**: Search Mailchimp contacts across all audiences by name or email
-- **send_campaign**: This action is irreversible. Triggers live email send.
-
-Send a Mailchimp campaign immediately
-- **update_member**: Pass json_body with fields like status, merge_fields, tags, etc.
-
-Update subscriber information in an audience
+Send campaign immediately. Irreversible
+- **set_campaign_content**: Set HTML content for a campaign. Required before send/test
+- **tag_member**: Add/remove tags for a contact
+- **test_campaign**: Send test email for a campaign without live delivery
+- **update_member**: Update contact fields
 
 
 ## 💬 Prompt Examples

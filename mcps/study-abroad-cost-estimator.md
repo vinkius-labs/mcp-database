@@ -20,8 +20,8 @@ By integrating these three components into one estimate, you get a single, accur
 
 
 ## Available Tools (3)
-- **tuition_estimate**: Estimate tuition and fees for a study abroad program
 - **col_estimate**: Estimate monthly cost of living for a study abroad destination
+- **tuition_estimate**: Estimate tuition and fees for a study abroad program
 - **logistics_and_fees**: Calculate mandatory fees and logistics costs for studying abroad
 
 

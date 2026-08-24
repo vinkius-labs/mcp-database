@@ -14,15 +14,15 @@ Compare 5 attribution models (First Touch, Last Touch, Linear, etc.) to quantify
 
 
 ## Available Tools (4)
+- **calculate_attribution_delta**: Use this to identify which models over- or under-credit specific channels.
+
+Compare attribution share results across multiple models to determine revenue discrepancy for a target channel
 - **calculate_attribution_shares**: Returns individual channel shares with percentage weights.
 
 Calculate proportional revenue share credit for each touchpoint using a specific attribution model
 - **fetch_conversion_metrics**: Reconciles multiple sales records linked by conversionId.
 
 Retrieve the total revenue value and currency for a specific conversion event
-- **calculate_attribution_delta**: Use this to identify which models over- or under-credit specific channels.
-
-Compare attribution share results across multiple models to determine revenue discrepancy for a target channel
 - **get_customer_journey**: Use this to establish input data for attribution model calculations.
 
 Retrieve the chronologically ordered touchpoint sequence for a customer leading up to a conversion event

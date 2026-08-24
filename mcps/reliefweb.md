@@ -35,27 +35,27 @@ Connect to **ReliefWeb** and explore the world's largest humanitarian informatio
 
 
 ## Available Tools (7)
-- **get_reports**: Supports free-text query, date range filtering, and filtering by country, disaster type, theme, format, source and language. Returns report titles, dates, sources, themes and links.
-
-Search humanitarian reports
 - **get_countries**: Returns country names, ISO codes and status. Useful for finding country references to use in report or disaster searches.
 
 Search countries in the ReliefWeb database
 - **get_disasters**: Returns disaster names, types (Earthquake, Flood, Cyclone, etc.), dates and affected countries.
 
 Search disasters (earthquakes, floods, cyclones, etc.)
-- **get_jobs**: Returns job titles, organizations, locations, career categories and posting dates.
-
-Search humanitarian job postings
-- **get_report**: Returns full report metadata including title, body, source, themes, countries, disasters and file attachments.
-
-Get a specific report by ID
 - **get_sources**: Returns organization names, shortnames, types and countries. Covers UN agencies, NGOs, governments and academic institutions.
 
 Search humanitarian organizations and sources
 - **get_training**: Returns training titles, providers, locations, themes and registration dates.
 
 Search humanitarian training opportunities
+- **get_reports**: Supports free-text query, date range filtering, and filtering by country, disaster type, theme, format, source and language. Returns report titles, dates, sources, themes and links.
+
+Search humanitarian reports
+- **get_jobs**: Returns job titles, organizations, locations, career categories and posting dates.
+
+Search humanitarian job postings
+- **get_report**: Returns full report metadata including title, body, source, themes, countries, disasters and file attachments.
+
+Get a specific report by ID
 
 
 ## 💬 Prompt Examples
@@ -88,7 +88,7 @@ Here are some examples of how you can interact with the **ReliefWeb** MCP server
 ## ❓ FAQ
 
 **Q: Do I need an API key?**
-No! ReliefWeb's API is completely free and open. No authentication required. Just subscribe and start searching. Data is updated continuously.
+No! ReliefWeb's API is completely free and open. No API key is required, but every request must include a pre-approved appname. Enter your pre-approved appname when configuring this server; subscribe and start searching. Data is updated continuously.
 
 **Q: What kind of reports are available?**
 ReliefWeb hosts 300,000+ reports including situation reports, assessments, press releases, maps, infographics and evaluations from UN agencies, NGOs, governments and research organizations.

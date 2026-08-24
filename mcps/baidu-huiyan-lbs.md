@@ -35,18 +35,18 @@ Connect your AI agents to **Baidu Huiyan** (百度慧眼), Asia's leading macro-
 
 
 ## Available Tools (10)
-- **geocode_address**: Convert a street address to latitude/longitude coordinates
-- **get_area_profile**: Get demographic and behavioral profile of a geographic area
 - **get_migration_city_rank**: Direction: "in" or "out".
 
 Rank cities by migration flow volume relative to a target area
+- **get_population_density**: Get real-time population density heatmap data for an area
+- **get_stay_duration**: Get average visitor stay duration for a geographic area
+- **geocode_address**: Convert a street address to latitude/longitude coordinates
+- **get_area_profile**: Get demographic and behavioral profile of a geographic area
 - **get_migration_province_rank**: Rank provinces by migration flow volume relative to a target area
 - **get_migration_scale**: Direction: "in" or "out".
 
 Get population migration intensity index for an area
-- **get_population_density**: Get real-time population density heatmap data for an area
 - **get_population_flow**: Get population inflow/outflow volumes for an area
-- **get_stay_duration**: Get average visitor stay duration for a geographic area
 - **reverse_geocode**: Convert latitude/longitude to a structured address
 - **search_poi**: Search Points of Interest near a location or region
 

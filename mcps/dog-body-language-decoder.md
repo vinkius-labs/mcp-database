@@ -26,12 +26,12 @@ A single signal is misleading. Dogs communicate complex emotions through the *co
 - **calculate_emotional_state**: Returns primary emotion, confidence level, and secondary readings.
 
 Analyze body signals to determine the dog primary emotional state and confidence level
-- **query_safe_approach**: Confidence level adjusts caution guidance.
-
-Get safe interaction guidelines based on the dog emotional state
 - **query_body_signals**: Ear position and tail state are required inputs.
 
 Gather and standardize canine body signal observations
+- **query_safe_approach**: Confidence level adjusts caution guidance.
+
+Get safe interaction guidelines based on the dog emotional state
 
 
 ## 💬 Prompt Examples

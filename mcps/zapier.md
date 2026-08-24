@@ -38,16 +38,20 @@ No more manual navigation through complex automation dashboards to check if a wo
 - **Support Teams** — lookup Zap details and history to troubleshoot integration issues rapidly
 
 
-## Available Tools (5)
-- **list_apps**: g. Slack, Gmail) are authenticated and available for automation.
+## Available Tools (9)
+- **list_apps**: List connected apps (Slack, Gmail, Salesforce etc)
+- **get_zap**: Get Zap details by ID. Returns trigger, actions, state
+- **get_app**: Get app details by ID or slug
+- **get_profile**: Get authenticated user profile and plan
+- **get_template**: Get Zap template details by ID
+- **get_zap_history**: Shows last executions with success/failure.
 
-Lists all third-party applications currently connected to the Zapier account
-- **get_profile**: Retrieves details about the authenticated Zapier user and account
-- **search_templates**: Provide a query string like "Slack to Trello".
+Get Zap execution history. Returns run status success/failure
+- **list_zaps**: Use limit to control page size.
 
-Searches the Zapier directory for pre-made workflow templates
-- **get_zap**: Retrieves comprehensive configuration for a specific Zap
-- **list_zaps**: Lists all Zaps (automated workflows) in the Zapier account
+List Zaps (workflows). Returns Zap IDs, titles, state ON/OFF
+- **search_apps**: Search Zapier app directory by name
+- **search_templates**: Search Zap templates by query (e.g. Slack to Trello)
 
 
 ## 💬 Prompt Examples

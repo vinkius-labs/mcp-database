@@ -1,4 +1,4 @@
-# Notion MCP Server
+# Notion V3 MCP Server
 
 [![Deploy on Vinkius Edge](https://img.shields.io/badge/Deploy%20on-Vinkius%20Edge-blue?style=for-the-badge)](https://vinkius.com/ai-agent-connect/notion-alternative)
 [![Built with MCP Fusion](https://img.shields.io/badge/Framework-MCP%20Fusion-success?style=for-the-badge)](https://www.npmjs.com/package/@mcpfusion/core)
@@ -7,32 +7,43 @@
 
 **Category:** [loved-by-devs](../categories/loved-by-devs.md)
 
-Manage your Notion workspace, databases, and pages via AI.
+Notion V3 — Page styling (icon/cover), bulk database listing & page creation with children blocks.
 
 ## Description
-Connect your Notion workspace to your AI agent. Search across databases, fetch page contents, update block properties, and create new knowledge entries directly from your chat without opening the Notion app.
+Notion **V3 — Page Design Edition**. Unlike V1 (17 tools, full workspace CRUD + archive/delete) and V2 (13 tools, comments & bot identity), V3 is optimized for **page styling and bulk operations**.
+
+### V3 Exclusive
+
+- **Page Styling** — Update icon, cover and trash state via single `update_page` call (only V3 supports `icon`/`cover`/`in_trash`)
+- **Bulk Database Listing** — `list_databases` returns all databases the integration can see without a search query (V1/V2 require search)
+- **Creation with Content** — `create_page` accepts `parent` (page_id or database_id) + `properties` + `children` blocks in one atomic call
+- **Advanced Search** — `search` with `query` + `filter` + `sorts` for precise discovery
+
+### Shared (intentionally overlapping for compatibility)
+
+- Retrieve page/database, query database, block children, users — same API as V1/V2 but with V3's styling focus
+
+Use V1 for exhaustive workspace ops, V2 for collaboration/comments, V3 when you need page design and bulk listing.
 
 
 ## Available Tools (12)
-- **get_me**: Get information about the current integration/bot
-- **list_databases**: List all databases available to the integration
-- **list_users**: List all users in the workspace
-- **retrieve_block_children**: Retrieve child blocks of a specific block or page
-- **retrieve_user**: Retrieve a specific user by ID
-- **append_block_children**: Append child blocks to an existing block or page
-- **create_page**: You must provide the parent object and properties (schema based on parent type).
-
-Create a new page in Notion
-- **query_database**: Query a specific Notion database with filters and sorts
-- **retrieve_database**: Retrieve metadata for a specific database
-- **retrieve_page**: Retrieve a specific Notion page by ID
-- **search**: Search for pages and databases by title
-- **update_page**: Update properties of an existing Notion page
+- **list_users**: List workspace users
+- **get_me**: Get bot user for this token
+- **search**: Search pages/databases by title with optional filter/sorts
+- **update_page**: Update page: properties, icon, cover, trash. V3 exclusive icon/cover
+- **append_block_children**: Append blocks to page. V3 supports bulk via JSON array
+- **create_page**: Create page with optional children blocks. Parent can be database or page
+- **list_databases**: List all databases (bulk, no search query needed). V3 exclusive
+- **query_database**: Query database with filter/sorts
+- **retrieve_block_children**: List child blocks of a page/block
+- **retrieve_database**: Get database schema (columns, types)
+- **retrieve_page**: Get page metadata by ID
+- **retrieve_user**: Get user by ID
 
 
 ## 💬 Prompt Examples
 
-Here are some examples of how you can interact with the **Notion** MCP server using an AI Agent (Claude, ChatGPT, etc.).
+Here are some examples of how you can interact with the **Notion V3** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
 > "Search my Notion workspace for 'Q3 Roadmap'."
@@ -83,7 +94,7 @@ Follow the steps below to connect in seconds.
 2. Go to **Customize → Connectors**.
 3. Click the **+** button and select "Add custom connector".
 4. Paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`) and save.
-5. Click the **+** button in any chat and enable **Notion** under Connectors.
+5. Click the **+** button in any chat and enable **Notion V3** under Connectors.
 
 ### Cursor
 Follow the steps below to connect in seconds.
@@ -91,7 +102,7 @@ Follow the steps below to connect in seconds.
 1. In Cursor, open Settings (`⌘ ,`) → scroll to **Features** → **MCP Servers**.
 2. Click **+ Add new MCP Server**.
 3. Set Type to "SSE" (or "streamable HTTP"), enter `notion-alternative` as the name, and paste the MCP server link (`https://edge.vinkius.com/[TOKEN]/mcp`).
-4. Click **Save** — Cursor will connect and list all **Notion** tools.
+4. Click **Save** — Cursor will connect and list all **Notion V3** tools.
 
 **Configuration:**
 ```json

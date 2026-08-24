@@ -34,37 +34,24 @@ Unlock the full potential of your connected workspace by linking **Notion** to y
 - **Knowledge Workers** — retrieve specific documentation fragments instantly through natural language conversation.
 
 
-## Available Tools (14)
-- **get_blocks**: Read hierarchical textual content under a Page
-- **delete_block**: ) from a page. This action is irreversible — the block and all nested children are permanently deleted.
-
-Permanently delete a Notion block
-- **get_database**: ) defining rows within a Database.
-
-Retrieve the schema definition of a Database
-- **update_page_properties**: ) using the Notion properties schema. Provide the properties as a JSON object matching the Notion API property format.
-
-Update arbitrary properties on a Notion page
-- **update_page_title**: Update the title of a Notion Page
-- **append_block_children**: ) to the end of a page or nested block. Provide blocks as a JSON array of Notion block objects. Example for a paragraph: [{"type":"paragraph","paragraph":{"rich_text":[{"type":"text","text":{"content":"Hello world"}}]}}]
-
-Append content blocks to a Notion page or block
-- **create_page**: Insert a new row/page inside a Database
-- **get_page**: Does NOT fetch body text.
-
-Retrieve metadata properties for a single Notion Page
-- **create_database**: Properties define columns. Minimum: provide a title property with type "title".
-
-Create a new Notion database inside a page
-- **archive_page**: Archive/Delete a Notion Page
-- **list_users**: Enumerate workspace members and bots
-- **query_database**: Read structured data rows from a Notion Database
-- **search_databases**: Essential for tracking down Database UUIDs.
-
-Fuzzy text search globally across Notion workspace Databases
-- **search_pages**: Necessary to locate Page UUIDs rapidly.
-
-Fuzzy text search globally across Notion workspace pages
+## Available Tools (17)
+- **get_blocks**: Read page content blocks (paragraphs, lists, headings)
+- **delete_block**: Delete block and its children. Irreversible
+- **get_database**: Get database schema (columns, types, options). Call before create_page
+- **update_page_properties**: Update page properties (status, select, date, etc)
+- **query_database**: Query database rows. Supports filter/sort as JSON
+- **append_block_children**: Append blocks to page. Supports simple text or full JSON
+- **archive_page**: Archive page (move to trash)
+- **create_database**: Create database inside page
+- **create_page**: Create database row. Minimal: title. Advanced: full properties JSON
+- **get_block**: Get single block by ID
+- **get_page**: Get page metadata (properties, parent, url). Use get_blocks for content
+- **get_user**: Get user by ID
+- **search_databases**: Search databases by title. Returns database_id needed for query_database
+- **search_pages**: Search pages by title. Returns page_id needed for get_page/get_blocks
+- **update_block**: Update block content
+- **update_page_title**: Update page title. Specify property name if not Name
+- **list_users**: List workspace users and bots. Use to map assignee IDs
 
 
 ## 💬 Prompt Examples

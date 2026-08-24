@@ -5,22 +5,18 @@
 
 ## Overview
 
-**Category:** [baking](../categories/baking.md)
+**Category:** [lifestyle](../categories/lifestyle.md)
 
-Predict dough texture and hydration percentage instantly for bread, pizza, or focaccia.
+Personalized daily water intake recommendations based on weight, activity, and environment.
 
 ## Description
-**Are you guessing your dough's final structure?** Hydration is the single most critical factor in baking success. Too dry, and your bread won't rise; too wet, and it will collapse. Getting this ratio right--especially when adding non-water liquids like oil or eggs--is difficult for even experienced bakers.
+This MCP server provides precise hydration planning by calculating daily water requirements. It accounts for baseline physiological needs based on body mass, adjustments for physical activity, environmental factors like heat or humidity, and special physiological states such as pregnancy or breastfeeding. Use `calculate_daily_hydration` to get a full breakdown of your needs in milliliters, ounces, and cups, or use `get_hydration_thresholds` to understand your baseline range.
 
 
 ## Available Tools (3)
-- **calculate_hydration**: Use this to determine how wet or dry a dough mixture is.
-
-Calculate dough hydration percentage from flour and liquid weights
-- **classify_texture**: Classify dough texture from hydration percentage and profile name
-- **determine_dough_type**: Helps identify what kind of baked good the ingredients are suited for.
-
-Determine dough type from flour and salt composition
+- **calculate_daily_hydration**: Provides a comprehensive daily water intake recommendation based on a user's specific profile
+- **compare_activity_impact**: Answers how much extra water is required to move between different levels of physical exertion
+- **get_hydration_thresholds**: Answers what the minimum and maximum weight-based baseline requirements are for a given weight
 
 
 ## 💬 Prompt Examples
@@ -28,38 +24,38 @@ Determine dough type from flour and salt composition
 Here are some examples of how you can interact with the **Hydration Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I have 100g of '00' flour, 75g of water, and 20g of olive oil. Can you calculate the hydration and predict the texture for a pizza?"
+> "I weigh 70kg, I am a moderate activity level, and I live in a hot climate. How much water should I drink?"
 
 **🤖 AI Agent:**
-> First, using `calculate_hydration`, I found your effective liquid weight is 95g (75g water + 20g oil), giving you a hydration of [CALCULATED_HYDRATION]%. Next, running `determine_dough_type` confirmed this as 'Neapolitan Pizza Crust'. Finally, the `classify_texture` tool predicts your texture will be [PREDICTED_TEXTURE], with suitability notes: [SUITABILITY_NOTES].
+> Based on your profile, you should drink 2600ml of water per day. This includes a baseline of 2100ml, a 500ml adjustment for the hot climate, and your activity level.
 
 ---
 
 **👤 You:**
-> "I'm making a rustic loaf. I used 450g of bread flour, 20g of salt, and 350g of water. What is the best texture profile?"
+> "What is the difference in water needs if I increase my exercise from 30 to 60 minutes?"
 
 **🤖 AI Agent:**
-> Based on your ingredients (Bread Flour, 450g flour / 20g salt), `determine_dough_type` suggests a 'Rustic European Loaf' profile. The hydration calculated by `calculate_hydration` is [CALCULATED_HYDRATION]%. Therefore, the final classification from `classify_texture` is [PREDICTED_TEXTURE], suggesting you need to focus on [SUITABILITY_NOTES].
+> Increasing your exercise duration from 30 to 60 minutes will require an additional 500ml of water.
 
 ---
 
 **👤 You:**
-> "I have a high hydration dough (85%) and confirmed the profile is Chapati. What should I expect?"
+> "I am 150lbs and breastfeeding. How much water do I need daily?"
 
 **🤖 AI Agent:**
-> Running `classify_texture` with 85% hydration and 'Chapati' profile, we get a result of [PREDICTED_TEXTURE] classification. The suitability notes advise that [SUITABILITY_NOTES]. This confirms the specific constraints needed for flatbreads.
+> Your daily water requirement is approximately 2450ml, which is about 83 ounces or 10 cups.
 
 
 ## ❓ FAQ
 
-**Q: How is dough hydration calculated?**
-You use the `calculate_hydration` tool. This function takes your total flour weight, total water weight, and any liquid additives (like oil or milk) to give you a precise percentage of hydration.
+**Q: How does activity level affect my water needs?**
+Physical exertion increases fluid loss. The `calculate_daily_hydration` tool adds 500ml for every 30 minutes of exercise to compensate for sweat loss.
 
-**Q: What if I don't know my dough type?**
-Before calculating texture, run the `determine_dough_type` tool. By providing your flour type and salt weight, this tool establishes a structural profile (e.g., Neapolitan Pizza) that provides necessary context for accurate prediction.
+**Q: Can I calculate my baseline hydration without exercise data?**
+Yes, you can use `get_hydration_thresholds` to find the minimum and maximum baseline requirements based solely on your body weight.
 
-**Q: Does the texture classification rely on multiple inputs?**
-Yes. The `classify_texture` tool is designed to take two specific pieces of information: 1) your calculated hydration percentage, and 2) the confirmed dough profile name provided by the `determine_dough_type` tool. Both are required for an accurate result.
+**Q: Does the calculator account for pregnancy?**
+Yes, the `calculate_daily_hydration` tool includes a 300ml increase if you indicate you are pregnant to support increased blood volume and fetal development.
 
 
 ## Installation & Usage
