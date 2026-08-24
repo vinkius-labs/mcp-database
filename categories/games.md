@@ -4,6 +4,8 @@ Explore the open database of **games** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Blackjack Strategy Engine](../mcps/blackjack-strategy-engine.md) | A deterministic engine for mathematically optimal blackjack actions. |
+| [Darts Checkout Calculator](../mcps/darts-checkout-calculator.md) | A deterministic engine for calculating valid darts checkout combinations and optimal paths. |
 | [Rune Draw](../mcps/rune-draw.md) | An Elder Futhark divination engine for single, three, or five-rune readings. |
 
 

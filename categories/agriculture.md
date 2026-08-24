@@ -4,8 +4,11 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Cheese Aging & Affinage Calculator](../mcps/cheese-aging-affinage-calculator.md) | Predict cheese weight loss, flavor maturation, and maintenance schedules. |
+| [Compost Ratio Calculator](../mcps/compost-ratio-calculator.md) | Calculate precise C:N ratios and volume adjustments for optimal composting. |
 | [Crop Rotation Planner](../mcps/crop-rotation-planner.md) | Generate optimized agricultural crop rotation sequences to improve soil health and maximize income. |
 | [Fertilizer Requirement Calculator](../mcps/fertilizer-requirement-calculator.md) | Calculate precise nutrient dosages and fertilizer costs based on soil analysis and regional standards. |
+| [Forestry Board Foot Calculator](../mcps/forestry-board-foot-calculator.md) | Deterministic timber volume and basal area calculator for forestry professionals. |
 | [Hanami Bloom Forecast](../mcps/hanami-bloom-forecast.md) | Predict Japanese cherry blossom (Sakura) bloom dates using thermal degree day accumulation. |
 | [Harvest Loss Calculator](../mcps/harvest-loss-calculator.md) | Quantify physical and financial grain losses during harvest. |
 | [Irrigation Water Optimizer](../mcps/irrigation-water-optimizer.md) | Calculate precise weekly water requirements, irrigation frequency, and session dosage for your garden. |
@@ -19,6 +22,8 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Seed Spacing Grid Planner](../mcps/seed-spacing-grid-planner.md) | Generate precise planting layouts with exact coordinates and capacity limits. |
 | [Seed Treatment Calculator](../mcps/seed-treatment-calculator.md) | Calculate precise quantities, application sequences, and costs for seed treatment batches. |
 | [Soil Correction Planner](../mcps/soil-correction-planner.md) | Plan a 3-year soil amendment program for lime, gypsum, and micronutrients. |
+| [Soil pH Amendment Calculator](../mcps/soil-ph-amendment-calculator.md) | Calculate precise soil amendment amounts and costs based on soil type and pH targets. |
+| [Winemaking Chemistry Calculator](../mcps/winemaking-chemistry-calculator.md) | Deterministic chemical calculator for grape juice processing and fermentation management. |
 
 
 ---

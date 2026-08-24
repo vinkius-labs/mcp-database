@@ -5,9 +5,13 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [AB Test Sample Size Calculator](../mcps/ab-test-sample-size-calculator.md) | Calculate required sample size, test duration, and peeking risk for A/B experiments. |
+| [Accelerator Founder Personality Fit](../mcps/accelerator-founder-personality-fit.md) | Evaluate the alignment between startup founders and accelerator programs using psychological profiling. |
+| [Accelerator Pitch Deck Feedback Quality](../mcps/accelerator-pitch-deck-feedback-quality.md) | Analyze pitch deck improvement velocity and feedback effectiveness. |
 | [Agent Benchmark Comparison Engine](../mcps/agent-benchmark-comparison-engine.md) | A deterministic engine for ranking and comparing LLM agents based on performance metrics. |
 | [Agent Scoring & Ranking Engine](../mcps/agent-scoring-ranking-engine.md) | Deterministic performance scoring and ranking for autonomous agents. |
+| [Application Funnel Abandonment Analyzer](../mcps/application-funnel-abandonment-analyzer.md) | Analyze user drop-off behavior and optimize application conversion funnels. |
 | [Astrological Compatibility Engine](../mcps/astrological-compatibility-engine.md) | Analyze zodiac compatibility using elemental and modal synergy. |
+| [Basketball Stats Calculator](../mcps/basketball-stats-calculator.md) | Compute advanced basketball metrics like TS%, eFG%, USG%, and PER. |
 | [Bayesian A/B Testing Calculator](../mcps/bayesian-ab-testing-calculator.md) | Quantify conversion probability, expected loss, and uplift using Bayesian inference. |
 | [Conversation Budget & Escalation Engine](../mcps/conversation-budget-escalation-engine.md) | A deterministic engine for managing LLM conversation lifecycles and predicting escalation triggers. |
 | [Core Web Vitals Scorer](../mcps/core-web-vitals-scorer.md) | Evaluate LCP, INP, and CLS metrics against Google's thresholds. |
@@ -28,6 +32,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Resilience Score Assessment](../mcps/resilience-score-assessment.md) | Quantify your psychological resilience and identify areas of strength or vulnerability. |
 | [Sentiment vs Fundamental Divergence](../mcps/sentiment-vs-fundamental-divergence.md) | Identify arbitrage opportunities by detecting divergences between social hype and on-chain utility. |
 | [Sliding Window Aggregator](../mcps/sliding-window-aggregator.md) | Deterministic engine for sliding window metric aggregation, trend analysis, and anomaly detection. |
+| [Soccer Formation Analyzer](../mcps/soccer-formation-analyzer.md) | Calculate team geometry, player spacing, and tactical coverage. |
 | [Stat Scaling Calculator](../mcps/stat-scaling-calculator.md) | Compute and compare attribute progression curves for game design. |
 | [Swimming Pace Calculator](../mcps/swimming-pace-calculator.md) | Calculate swimming training intensities, race predictions, and efficiency metrics based on Critical Swim Speed (CSS). |
 | [Tool Selection Efficiency Calculator](../mcps/tool-selection-efficiency-calculator.md) | Optimize tool routing and performance monitoring for tool-augmented agents. |

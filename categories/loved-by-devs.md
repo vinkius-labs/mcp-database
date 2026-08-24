@@ -91,8 +91,8 @@ Explore the open database of **loved-by-devs** Model Context Protocol (MCP) serv
 | [ngrok](../mcps/ngrok.md) | Manage ngrok ingress infrastructure — list endpoints, API keys, reserved domains, and security policies directly from your AI agent. |
 | [Node-RED](../mcps/node-red.md) | Manage Node-RED flows, nodes, and system diagnostics directly from your AI agent. |
 | [Notion](../mcps/notion.md) | Unified AI interface for your Notion workspace — search pages, query databases, and manage blocks via AI. |
-| [Notion](../mcps/notion-alternative.md) | Manage your Notion workspace, databases, and pages via AI. |
 | [Notion Calendar (formerly Cron)](../mcps/notion-calendar-formerly-cron.md) | Manage scheduling via Notion Calendar — create events, track team availability, and manage scheduling links directly from any AI agent. |
+| [Notion V3](../mcps/notion-alternative.md) | Notion V3 — Page styling (icon/cover), bulk database listing & page creation with children blocks. |
 | [Open WebUI](../mcps/open-webui.md) | Manage your Open WebUI instance — list models, handle chat completions, and manage RAG collections directly from any AI agent. |
 | [OpenSearch Vector](../mcps/opensearch-vector.md) | Run k-NN vector searches on OpenSearch — create indexes, upsert embeddings, query similar documents, and manage your vector store from any AI agent. |
 | [Orkes Conductor](../mcps/orkes-conductor.md) | Orchestrate microservice workflows via Orkes Conductor — list definitions, track running executions, search workflow history, and inspect task states from any AI agent. |

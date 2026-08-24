@@ -5,17 +5,25 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Altitude Baking Adjuster](../mcps/altitude-baking-adjuster.md) | Adjust baking recipes for high altitudes by correcting leavening, liquids, and oven settings. |
+| [Aquarium Marine Calculator](../mcps/aquarium-marine-calculator.md) | Deterministic dosing engine for marine aquarium water parameters. |
 | [Birth Chart Positions](../mcps/birth-chart-positions.md) | Calculate zodiac positions of celestial bodies based on date, time, and location. |
 | [Bread Proofing Calculator](../mcps/bread-proofing-calculator.md) | Predict fermentation durations for bulk and final proofing based on yeast concentration and temperature. |
+| [Celestial Navigation Calculator](../mcps/celestial-navigation-calculator.md) | Perform deterministic celestial sight reduction to calculate intercept and azimuth. |
 | [Cocktail Dilution Calculator](../mcps/cocktail-dilution-calculator.md) | Calculate final volume, ABV, and water dilution for cocktails. |
 | [Coffee Brewing Ratio Engine](../mcps/coffee-brewing-ratio-engine.md) | Deterministic coffee brewing calculator based on SCA Golden Cup Standards. |
 | [Color Vibration Analyzer](../mcps/color-vibration-analyzer.md) | Discover the energetic frequency and chakra alignment of any color. |
+| [Distillation Proof Calculator](../mcps/distillation-proof-calculator.md) | Deterministic tools for alcohol proof correction, distillation stage identification, and volume-based cuts. |
 | [Dog Age Calculator](../mcps/dog-age-calculator.md) | Accurate canine aging estimation using scientific veterinary formulas. |
+| [Gemstone Weight Calculator](../mcps/gemstone-weight-calculator.md) | Estimate gemstone carat weight and market value using physical dimensions. |
+| [IBU & SRM Brewing Calculator](../mcps/ibu-srm-brewing-calculator.md) | Calculate beer bitterness (IBU) and color (SRM) using deterministic brewing formulas. |
 | [Light Therapy Dosage Calculator](../mcps/light-therapy-dosage-calculator.md) | Calculates precise light therapy dosages for blue and red light treatments. |
 | [Precision Dilution Calculator](../mcps/precision-dilution-calculator.md) | Calculate exact volumes of stock solution and solvent needed for precise dilutions. |
 | [Ratio to Volume Converter](../mcps/ratio-to-volume-converter.md) | Convert liquid ratios into exact milliliter volumes based on a target total volume. |
 | [Sound Frequency Calculator](../mcps/sound-frequency-calculator.md) | Calculate musical note frequencies, Solfeggio resonances, and harmonic series. |
+| [Telescope Optics Calculator](../mcps/telescope-optics-calculator.md) | Calculate telescope performance, magnification, and viewing comfort. |
+| [Tide Calculator](../mcps/tide-calculator.md) | Predict tide levels, currents, and lunar phase modifiers. |
 | [Waste Decomposition Timer](../mcps/waste-decomposition-timer.md) | Get estimated decomposition timelines for various materials. |
+| [Watchmaking Gear Calculator](../mcps/watchmaking-gear-calculator.md) | Deterministic engine for horological gear train ratios, beat rates, and power reserves. |
 | [Wave Speed and Period Analyzer](../mcps/wave-speed-and-period-analyzer.md) | Deterministic physics engine for calculating wave dynamics in deep and shallow water. |
 
 

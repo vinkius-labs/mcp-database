@@ -4,6 +4,7 @@ Explore the open database of **event-management** Model Context Protocol (MCP) s
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Accelerator Demo Day Attendance Predictor](../mcps/accelerator-demo-day-attendance-predictor.md) | Predict investor turnout and optimize overbooking strategies for Demo Day events. |
 | [CellarPass](../mcps/cellarpass.md) | Manage winery tasting room reservations, experiences, availability, venues, and guest history for your CellarPass account through natural conversation. |
 | [Clubspeed](../mcps/clubspeed.md) | Manage entertainment venues and bookings via Clubspeed — track customers, monitor reservations, and manage race heats directly from any AI agent. |
 | [CoinMarketCal](../mcps/coinmarketcal.md) | Enable your AI agent to browse upcoming crypto events, listings, and forks via the CoinMarketCal API. |

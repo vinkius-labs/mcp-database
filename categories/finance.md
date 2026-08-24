@@ -6,6 +6,15 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [13th Month Salary Provision Calculator](../mcps/13th-month-salary-provision-calculator.md) | Calculate monthly 13th-month salary accruals, employer taxes, and cumulative payroll liabilities. |
 | [A-share Price Limit Calculator](../mcps/a-share-price-limit-calculator.md) | Calculates daily upper and lower price limits for Chinese A-share stocks. |
+| [Accelerator Alumni Fundraising Support](../mcps/accelerator-alumni-fundraising-support.md) | Quantify the economic impact of alumni networks on startup capital formation. |
+| [Accelerator Corporate Pilot Program Modeler](../mcps/accelerator-corporate-pilot-program-modeler.md) | Quantify the financial value, revenue potential, and ROI of corporate accelerator pilot programs. |
+| [Accelerator Equity Pool Management](../mcps/accelerator-equity-pool-management.md) | Manage and forecast accelerator equity allocation, utilization, and runway. |
+| [Accelerator International Applicant Handling](../mcps/accelerator-international-applicant-handling.md) | Quantify the economic impact of recruiting and supporting international founders. |
+| [Accelerator Investor Matcher](../mcps/accelerator-investor-matcher.md) | Evaluates alignment between startups and investors to find optimal funding matches. |
+| [Accelerator Investor Relations Metrics](../mcps/accelerator-investor-relations-metrics.md) | Quantify investor network quality, conversion funnels, and engagement ROI. |
+| [Accelerator Legal Structure Setup](../mcps/accelerator-legal-structure-setup.md) | Calculate legal setup costs, compliance roadmaps, and optimal fund structures for startup accelerators. |
+| [Accelerator Location Economics](../mcps/accelerator-location-economics.md) | Analyze and compare geographic locations for accelerator programs using cost and ecosystem metrics. |
+| [Accelerator Mentor Compensation Model](../mcps/accelerator-mentor-compensation-model.md) | Calculate mentor costs, equity dilution, and industry benchmarks. |
 | [Advance-Decline Line Calculator](../mcps/advance-decline-line-calculator.md) | Calculate market breadth indicators like ADL, McClellan Oscillator, and divergence. |
 | [Advance/Decline Percentage Calculator](../mcps/advancedecline-percentage-calculator.md) | Calculate market breadth, sentiment classification, and trend divergence. |
 | [ADX-Calculator](../mcps/adx-calculator.md) | Deterministic Average Directional Index (ADX) calculator using Wilder's smoothing. |
@@ -94,6 +103,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Crush Spread Strategy](../mcps/crush-spread-strategy.md) | Analyze soybean processing margins and generate deterministic trading signals. |
 | [Crypto Index Rebalancing Strategy](../mcps/crypto-index-rebalancing-strategy.md) | A deterministic decision engine for cryptocurrency index rebalancing based on tracking error and cost-benefit analysis. |
 | [Cryptocurrency Tax Lot Tracker](../mcps/cryptocurrency-tax-lot-tracker.md) | Calculate cost basis, realized gains, and tax liabilities using FIFO, LIFO, HIFO, and Specific Identification methods. |
+| [Currency Converter Fixed](../mcps/currency-converter-fixed.md) | Deterministic historical currency conversion using ECB rates. |
 | [Currency Hedging Calculator](../mcps/currency-hedging-calculator.md) | Evaluate the financial impact of using forward contracts to mitigate foreign exchange risk. |
 | [Custom Debt Strategy Simulator](../mcps/custom-debt-strategy-simulator.md) | Simulate debt payoff strategies using custom priority orders. |
 | [Day-by-Day Burn Simulator](../mcps/day-by-day-burn-simulator.md) | Simulate daily bank balance fluctuations to predict cash runway and overdraft events. |
@@ -103,6 +113,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Detour Gas Savings Evaluator](../mcps/detour-gas-savings-evaluator.md) | Determine if driving off-route for cheaper gas saves money. |
 | [Detrended Price Oscillator (DPO) Calculator](../mcps/detrended-price-oscillator-dpo-calculator.md) | Identify price cycles and momentum oscillations by removing trends from price series. |
 | [Diabetes Supply Budget Optimizer](../mcps/diabetes-supply-budget-optimizer.md) | Calculate precise daily and monthly costs for diabetes supplies like insulin, CGM, and test strips. |
+| [Diamond 4Cs Estimator](../mcps/diamond-4cs-estimator.md) | A deterministic valuation engine for estimating diamond market value using the 4Cs. |
 | [Diaper Consumption Forecaster](../mcps/diaper-consumption-forecaster.md) | Estimate monthly diaper needs and costs based on baby age and product pricing. |
 | [Dilution Calculator](../mcps/dilution-calculator.md) | Simulate equity dilution, cap table evolution, and anti-dilution adjustments during investment rounds. |
 | [Discount Stack Calculator](../mcps/discount-stack-calculator.md) | Calculate final transaction totals by compounding multiple discount types and applying regional tax logic. |
@@ -155,6 +166,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [France Income Tax Calculator](../mcps/france-income-tax-calculator.md) | Calculate French income tax using the quotient familial system, progressive brackets, and social contributions. |
 | [Freelancer Budget Prover](../mcps/freelancer-budget-prover.md) | A designer charged $100/hour and calculated annual income as $208,000. Then reality arrived. Billable hours dropped to 1,352 after admin, sales, and vacation. Gross: $135,200. Self-employment tax, health insurance, tools, and accounting consumed $60,685. Net take-home: $74,515. Effective hourly rate: $35.82. Three clients paid 45 days late. This tool forces five budget axes: realistic revenue, complete costs, cash flow buffers, minimum viable pricing, and profitability with scope creep analysis. |
 | [Freight Cost Calculator](../mcps/freight-cost-calculator.md) | Calculate and compare shipping costs across road, rail, air, sea, and multimodal transport modes. |
+| [Frequent Flyer Miles Calculator](../mcps/frequent-flyer-miles-calculator.md) | Calculate precise airline mileage accrual, including base miles, bonus miles, and EQM. |
 | [Fuel Cost Calculator](../mcps/fuel-cost-calculator.md) | Calculate trip expenses and compare gasoline vs ethanol costs. |
 | [Fuel Cost Trip Calculator](../mcps/fuel-cost-trip-calculator.md) | Calculate road trip fuel costs using vehicle efficiency, regional distance adjustments, and localized fuel prices. |
 | [Fundraising Target Calculator](../mcps/fundraising-target-calculator.md) | Calculate optimal fundraising targets based on projected burn, runway needs, and safety buffers. |
@@ -271,6 +283,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Momentum Reversal Strategy](../mcps/momentum-reversal-strategy.md) | A deterministic contrarian strategy to identify beaten-down assets and overextended momentum. |
 | [Momentum Strategy Engine](../mcps/momentum-strategy-engine.md) | Deterministic multi-factor momentum strategy for generating actionable trading signals. |
 | [Money Flow Index Calculator](../mcps/money-flow-index-calculator.md) | Calculate Money Flow Index (MFI) and detect price divergences. |
+| [Mortgage Amortization Engine](../mcps/mortgage-amortization-engine.md) | Generate precise mortgage amortization schedules and calculate payoff acceleration. |
 | [Mortgage Payment Calculator](../mcps/mortgage-payment-calculator.md) | Calculate monthly mortgage payments, amortization schedules, and compare rent vs. buy scenarios. |
 | [Moving Average Calculator](../mcps/moving-average-calculator.md) | Compute advanced moving average indicators and trend signals from financial time series data. |
 | [Moving Average Envelope Calculator](../mcps/moving-average-envelope-calculator.md) | Calculates moving average center lines, upper/lower envelopes, and breakout signals. |
@@ -283,6 +296,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Net Revenue Retention Calculator](../mcps/net-revenue-retention-calculator.md) | Calculate and analyze NRR and GRR metrics across customer cohorts to evaluate subscription health. |
 | [NF-e Access Key Validator](../mcps/nf-e-access-key-validator.md) | Validate the structural integrity and compliance of Brazilian NF-e access keys. |
 | [NFT Floor Price Strategy](../mcps/nft-floor-price-strategy.md) | Deterministic mean-reversion strategy for NFT floor prices. |
+| [Numismatic Grading & Value Estimator](../mcps/numismatic-grading-value-estimator.md) | Calculate Sheldon grades and market values for US coins. |
 | [OBV Calculator](../mcps/obv-calculator.md) | Deterministic On-Balance Volume (OBV) analysis engine. |
 | [Opening Range Breakout Strategy](../mcps/opening-range-breakout-strategy.md) | A deterministic intraday strategy that identifies price breakouts from the initial market opening range. |
 | [Option Pool Shuffle Simulator](../mcps/option-pool-shuffle-simulator.md) | Analyze the dilution impact of option pool timing during VC investment rounds. |
@@ -403,6 +417,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Swing Trading Strategy Engine](../mcps/swing-trading-strategy-engine.md) | A deterministic multi-timeframe engine for identifying high-probability swing trading pullbacks. |
 | [TAM-SAM-SOM Calculator](../mcps/tam-sam-som-calculator.md) | Calculate Total Addressable Market (TAM), Serviceable Addressable Market (SAM), and Serviceable Obtainable Market (SOM) using top-down and bottom-up methodologies. |
 | [Taobao to Japan Landed Cost Calculator](../mcps/taobao-to-japan-landed-cost-calculator.md) | Calculate exact landed costs for China-to-Japan shipments, including volumetric weight and customs duties. |
+| [Tax Bracket Calculator](../mcps/tax-bracket-calculator.md) | Calculate marginal and effective tax rates, standard deductions, and capital gains. |
 | [Tax Loss Harvesting Calculator](../mcps/tax-loss-harvesting-calculator.md) | Calculate the financial benefits and tax savings from harvesting capital losses. |
 | [Tax Regime Comparator](../mcps/tax-regime-comparator.md) | Simulate and compare Brazilian tax regimes to find the most cost-effective structure for your business. |
 | [Thirteenth Salary Calculator](../mcps/thirteenth-salary-calculator.md) | Calculate gross and net 13th-month salary installments, including proportional earnings and tax deductions. |

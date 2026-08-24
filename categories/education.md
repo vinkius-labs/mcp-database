@@ -4,6 +4,8 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Accelerator Peer Learning Value Engine](../mcps/accelerator-peer-learning-value-engine.md) | Quantify the economic and structural value of startup accelerator networks. |
+| [Accelerator Session Effectiveness Evaluator](../mcps/accelerator-session-effectiveness-evaluator.md) | Compares online vs offline session effectiveness and calculates optimal delivery mixes. |
 | [Chengyu Tone & Pattern Validator](../mcps/chengyu-tone-pattern-validator.md) | Validates the phonetic structure and poetic meter of Chinese Chengyu. |
 | [Chess.com](../mcps/chesscom.md) | Access Chess.com player profiles, stats, games, puzzles, and leaderboards directly from any AI agent. |
 | [Chess.com Global Intelligence](../mcps/chesscom-global-intelligence.md) | The definitive server for Chess.com — track player ratings, historical games, and daily puzzles via AI. |

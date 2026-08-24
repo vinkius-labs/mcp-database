@@ -21,7 +21,6 @@ Explore the open database of **gaming** Model Context Protocol (MCP) servers.
 | [Mastery Progression Calculator](../mcps/mastery-progression-calculator.md) | Simulate skill progression through mastery tiers based on gameplay frequency and streak bonuses. |
 | [Matchmaking Elo Calculator](../mcps/matchmaking-elo-calculator.md) | Deterministic Elo and Glicko rating updates for competitive matchmaking. |
 | [Player Spending LTV Calculator](../mcps/player-spending-ltv-calculator.md) | Calculate player Lifetime Value (LTV), Breakeven CAC, and retention impact. |
-| [Poker Odds Calculator](../mcps/poker-odds-calculator.md) | Calculate exact probabilities, equities, and outs for Texas Hold'em and Omaha. |
 | [RPG Damage Engine](../mcps/rpg-damage-engine.md) | Calculate and analyze TTRPG damage distributions, critical hits, and encounter probabilities. |
 | [RPG Encounter Balance Calculator](../mcps/rpg-encounter-balance-calculator.md) | Estimate combat duration, lethality, and difficulty for tabletop RPG encounters. |
 | [RPG Stat Scaling Calculator](../mcps/rpg-stat-scaling-calculator.md) | Analyze RPG character progression with precise diminishing returns and scaling models. |

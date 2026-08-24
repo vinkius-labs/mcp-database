@@ -8,6 +8,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Area Program Calculator](../mcps/area-program-calculator.md) | Calculates minimum required total area for any project based on room functions and structural complexity. |
 | [Beam Span Estimator](../mcps/beam-span-estimator.md) | Quickly estimate concrete beam dimensions and compare with steel profiles. |
 | [Column Sizing Estimator](../mcps/column-sizing-estimator.md) | Preliminary sizing for reinforced concrete and steel columns based on vertical load accumulation. |
+| [Concrete Calculator](../mcps/concrete-calculator.md) | Deterministic tool for precise concrete volume, material, and rebar calculations. |
 | [Concrete Material Calculator](../mcps/concrete-material-calculator.md) | Estimate concrete volume, bag quantities, costs, and rebar requirements for any project. |
 | [Concrete Volume Calculator](../mcps/concrete-volume-calculator.md) | Calculate concrete volume and bag counts for slabs, footings, columns, stairs, and curved paths. |
 | [Concrete Yardage Calculator](../mcps/concrete-yardage-calculator.md) | Calculate concrete volume, 80lb bag requirements, and regional cost estimates for slabs, footings, walls, and columns. |
@@ -30,12 +31,15 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Masonry Quantity Calculator](../mcps/masonry-quantity-calculator.md) | Calculate the number of masonry units, mortar volume, and required cement and sand for wall construction. |
 | [Paint Coverage Calculator](../mcps/paint-coverage-calculator.md) | Calculate precise paint quantities, container counts, and costs for any surface. |
 | [Plumbing Fixture Units Calculator](../mcps/plumbing-fixture-units-calculator.md) | Calculate DFU and WSFU loads and size plumbing pipe diameters according to IPC/UPCA standards. |
+| [Plumbing Pipe Sizing](../mcps/plumbing-pipe-sizing.md) | Deterministic water supply pipe sizing based on IPC and Hunter's Curve. |
 | [Procore](../mcps/procore.md) | Manage construction projects via Procore — track RFIs, submittals, punch lists, daily logs, and drawings from any AI agent. |
+| [Roof Pitch Calculator](../mcps/roof-pitch-calculator.md) | Calculate roof geometry, material needs, and snow load capacity. |
 | [Roofing Squares Calculator](../mcps/roofing-squares-calculator.md) | Calculate roofing squares and material requirements based on roof pitch, area, and complexity. |
 | [Room Square Footage Calculator](../mcps/room-square-footage-calculator.md) | Calculate complex room areas and estimate material requirements with waste factors. |
 | [Shading Device Calculator](../mcps/shading-device-calculator.md) | Calculate precise dimensions for horizontal and vertical solar shading devices. |
 | [Slab Thickness Estimator](../mcps/slab-thickness-estimator.md) | Estimate minimum concrete slab thickness based on span and construction type. |
 | [Snow Load Calculator](../mcps/snow-load-calculator.md) | Calculate roof snow load (psf) based on ground snow load, environmental factors, and structural importance. |
+| [Stair Builder Calculator](../mcps/stair-builder-calculator.md) | Deterministic stair design tool for IRC/IBC building code compliance. |
 | [Structural Load Calculator](../mcps/structural-load-calculator.md) | Estimate structural engineering loads (permanent and variable) per square meter based on NBR 6120 standards. |
 | [Stud Wall Load Calculator](../mcps/stud-wall-load-calculator.md) | Calculate the allowable axial and lateral load capacity for wood stud walls based on NDS standards. |
 | [Thermal Mass Estimator](../mcps/thermal-mass-estimator.md) | Calculate thermal lag, amplitude damping, and U-value for wall structures based on material properties. |

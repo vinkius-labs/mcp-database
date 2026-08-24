@@ -4,6 +4,7 @@ Explore the open database of **travel** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Airline Baggage Calculator](../mcps/airline-baggage-calculator.md) | Calculate baggage allowances and excess fees based on airline, fare class, and route. |
 | [Baggage Allowance Comparator](../mcps/baggage-allowance-comparator.md) | Compare airline baggage dimensions, weight limits, and sports equipment fees. |
 | [Gaotie Seat Allocation Logic](../mcps/gaotie-seat-allocation-logic.md) | Deterministic seat assignment calculator for Chinese High-Speed Rail (Gaotie). |
 | [jp-train-transfer-minimizer](../mcps/jp-train-transfer-minimizer.md) | Calculate precise Japanese train route metrics including transfer penalties. |

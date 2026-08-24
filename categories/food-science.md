@@ -4,6 +4,8 @@ Explore the open database of **food-science** Model Context Protocol (MCP) serve
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Chocolate Tempering Calculator](../mcps/chocolate-tempering-calculator.md) | Precise temperature targets and crystallization profiles for perfect chocolate tempering. |
+| [Fermentation Timer](../mcps/fermentation-timer.md) | Deterministic timing and salt calculations for lacto-fermentation and cultures. |
 | [Meat Cooking Timer](../mcps/meat-cooking-timer.md) | Calculate precise cooking times and target internal temperatures for various meats based on weight, method, and doneness. |
 
 

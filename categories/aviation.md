@@ -5,6 +5,7 @@ Explore the open database of **aviation** Model Context Protocol (MCP) servers.
 | Tool Name | Description |
 |-----------|-------------|
 | [Accident Investigation Prover](../mcps/accident-investigation-prover.md) | An investigation report concluded 'pilot error' and recommended 'improve training.' The same airline had three more accidents in 18 months. Accident Investigation Prover forces ICAO Annex 13 methodology — FDR/CVR evidence chains, multi-causal analysis via Reason's Model, HFACS 4-level taxonomy, organizational factor tracing, and specific, measurable, addressed recommendations that prevent recurrence. |
+| [Density Altitude Calculator](../mcps/density-altitude-calculator.md) | Calculate precise density altitude and takeoff performance penalties. |
 | [Flight Emissions Calculator](../mcps/flight-emissions-calculator.md) | Estimate the carbon footprint of air travel based on distance, seat class, and radiative forcing. |
 | [Flight Risk Assessment Prover](../mcps/flight-risk-assessment-prover.md) | A dispatch office cleared a flight into known CB activity with 'proceed with caution.' The crew never returned. Flight Risk Prover forces ICAO SMS-level threat identification with METAR data, 5×5 risk quantification, Swiss Cheese barrier modeling, SHELL/IMSAFE human factors analysis, and explicit GO/NO-GO commitment — eliminating the sycophantic go-bias that kills in aviation. |
 

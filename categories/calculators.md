@@ -6,6 +6,7 @@ Explore the open database of **calculators** Model Context Protocol (MCP) server
 |-----------|-------------|
 | [Demographic Generation Calculator](../mcps/demographic-generation-calculator.md) | Classify generational cohorts, identify cuspers, and calculate age-related milestones. |
 | [Exposure Triangle Calculator](../mcps/exposure-triangle-calculator.md) | Deterministic photographic exposure calculator for aperture, shutter speed, and ISO adjustments. |
+| [Flash Guide Number Calculator](../mcps/flash-guide-number-calculator.md) | Calculate photographic exposure, power adjustments, and flash stacking requirements. |
 
 
 ---

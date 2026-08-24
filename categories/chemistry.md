@@ -4,8 +4,11 @@ Explore the open database of **chemistry** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Candle Making Calculator](../mcps/candle-making-calculator.md) | Deterministic formulation engine for precise wax weights, fragrance loads, and wick performance. |
 | [Fabric Dye Mixing Calculator](../mcps/fabric-dye-mixing-calculator.md) | Deterministic textile dye formulation and bath parameter calculator. |
 | [Gelatin Converter](../mcps/gelatin-converter.md) | Calculates precise gelatin amounts for any liquid volume and classifies the resulting texture (mousse, panna cotta, or firm jelly). Standardizes measures between sheets and powder. |
+| [Hair Dye Formulation Calculator](../mcps/hair-dye-formulation-calculator.md) | Calculate precise color tube counts and developer volumes for professional hair coloring. |
+| [Perfume Dilution Calculator](../mcps/perfume-dilution-calculator.md) | Calculate exact carrier volumes and dilution ratios for perfume making. |
 | [Simple Dilution Mixer](../mcps/simple-dilution-mixer.md) | Calculate exact volumes of solute and solvent needed for precise liquid dilution. |
 | [Sugar Syrup Calculator](../mcps/sugar-syrup-calculator.md) | Calculates precise water and sugar weights needed to achieve specific syrup consistencies, accounting for cooking loss. |
 

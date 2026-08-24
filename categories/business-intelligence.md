@@ -4,6 +4,9 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Accelerator Application Quality Score](../mcps/accelerator-application-quality-score.md) | A diagnostic engine to evaluate startup accelerator applications. |
+| [Accelerator Post-Program Support](../mcps/accelerator-post-program-support.md) | Economic modeling for alumni support services and resource distribution. |
+| [Accelerator Selection Committee Effectiveness](../mcps/accelerator-selection-committee-effectiveness.md) | Evaluate the reliability, predictive accuracy, and decision-making quality of selection committees. |
 | [Aha!](../mcps/aha.md) | Product roadmapping and strategy — manage features, ideas, and strategic goals via AI. |
 | [Arbox](../mcps/arbox.md) | Manage members, schedule, coaches, leads, payments, and CRM for your Arbox-powered fitness studio through natural conversation. |
 | [AskNicely](../mcps/asknicely.md) | Manage customer experience and NPS surveys with AskNicely — track responses and audit sentiment via AI. |

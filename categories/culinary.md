@@ -6,6 +6,7 @@ Explore the open database of **culinary** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [Pasta Water Ratio](../mcps/pasta-water-ratio.md) | Calculate the perfect water volume, salt concentration, and cooking time for any pasta shape. |
 | [Roast Calculator](../mcps/roast-calculator.md) | Precise cooking time, resting duration, and carryover temperature predictions for meat roasting. |
+| [Wine & Cheese Pairing Engine](../mcps/wine-cheese-pairing-engine.md) | A deterministic engine for calculating precise wine and cheese pairing scores. |
 
 
 ---

@@ -7,7 +7,9 @@ Explore the open database of **design** Model Context Protocol (MCP) servers.
 | [Board Rocker Curve Analyzer](../mcps/board-rocker-curve-analyzer.md) | Calculate precise surfboard rocker curves and performance profiles. |
 | [Color Accessibility Engine](../mcps/color-accessibility-engine.md) | Deterministic color science for WCAG 2.1 compliance and LCH-based perceptual palettes. |
 | [Color Code Converter & Contrast Checker](../mcps/color-code-converter-contrast-checker.md) | Convert color formats and validate WCAG 2.1 accessibility compliance. |
+| [Heraldry Blazon Generator](../mcps/heraldry-blazon-generator.md) | Generates formal, grammatically correct heraldic blazons following strict Anglo-Norman rules. |
 | [Leonardo da Vinci Prover](../mcps/leonardo-da-vinci-prover.md) | An AI designed an enrollment process without watching a single participant session. Zero observations — 47 assumptions. It solved the problem inside one domain, never asking what psychology, architecture, or game design could teach about friction. It presented one final concept. No sketches. No variations. No constraints exploited. Da Vinci filled 7,000 notebook pages with cross-domain observations before building anything. This tool forces that method: observe, connect disciplines, prototype, exploit constraints, iterate. |
+| [Lighting Design Calculator](../mcps/lighting-design-calculator.md) | Deterministic lighting design tool for calculating illuminance, spacing, and energy usage. |
 | [Palette Generator](../mcps/palette-generator.md) | Generate perceptually uniform color palettes using OKLCH space and WCAG accessibility standards. |
 
 

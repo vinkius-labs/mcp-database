@@ -4,7 +4,9 @@ Explore the open database of **safety** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Climbing Fall Factor Calculator](../mcps/climbing-fall-factor-calculator.md) | Deterministic rock climbing physics and safety calculator. |
 | [Lineup Priority Logic Validator](../mcps/lineup-priority-logic-validator.md) | Deterministic surfing right-of-way and priority violation validator. |
+| [Scuba Gas Planner](../mcps/scuba-gas-planner.md) | Deterministic gas consumption and depth limit calculations for scuba divers. |
 | [Wetsuit Thickness Recommender](../mcps/wetsuit-thickness-recommender.md) | Get precise wetsuit thickness and gear recommendations based on water temperature, air temperature, wind chill, and session duration. |
 
 
