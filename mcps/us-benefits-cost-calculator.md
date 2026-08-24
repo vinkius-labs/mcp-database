@@ -15,9 +15,9 @@ The US Benefits Cost Calculator is an analytical engine designed to help employe
 
 ## Available Tools (4)
 - **calculate_effective_compensation_metrics**: calculate_effective_compensation_metrics
-- **calculate_insurance_overhead**: Sums the total annual employer contribution for health, dental, and vision insurance
 - **calculate_pto_value**: calculate_pto_value
 - **calculate_tax_and_retirement_burden**: Calculates the annual cost of mandatory payroll taxes and retirement matching
+- **calculate_insurance_overhead**: Sums the total annual employer contribution for health, dental, and vision insurance
 
 
 ## 💬 Prompt Examples

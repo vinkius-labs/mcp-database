@@ -37,34 +37,34 @@ Your agent can search the catalog using natural language, browse by category or 
 
 
 ## Available Tools (12)
-- **get_listing_prompts**: Returns [{prompt, response}].
-
-See example prompts for a catalog MCP
-- **search_catalog**: Each result embeds its full tools (name, description, input_schema): select capabilities straight from the results — no follow-up listing calls. Address results by slug; rows from your org also carry server_id.
-
-Find MCPs by capability when the task needs a tool you don't have
 - **get_credentials_schema**: Returns credential_schema + credentials_configured. Feed the field keys into set_credentials.
 
 Get the credential fields an MCP needs
 - **set_credentials**: Save an MCP's credentials so its tools work
-- **credentials_status**: Returns credentials_configured (+oauth_status when applicable).
-
-Check whether an MCP is ready or missing credentials
 - **get_listing_faqs**: Returns [{question, answer}].
 
 Read a catalog MCP's FAQs
-- **list_tools**: Returns {tools: [{name, description, inputSchema}]}. If that MCP still needs credentials, its tools will fail until set_credentials runs.
-
-List an MCP's tools with their argument schemas
 - **get_listing**: search_catalog already returns each MCP's tools — use this only for FAQs, prompt examples, or related MCPs.
 
 Deep detail of one catalog MCP: description, FAQs, related
-- **get_connect_token**: Returns {mcp_url, source: owner|subscription|preview}. mcp_url embeds a secret token.
-
-Get the ready-to-use connection URL for an MCP
 - **invoke_tool**: Fails if the MCP needs credentials or is not connected — fix with credentials_status + set_credentials first.
 
 Run one tool on an MCP you have, executed by Vinkius
+- **credentials_status**: Returns credentials_configured (+oauth_status when applicable).
+
+Check whether an MCP is ready or missing credentials
+- **get_connect_token**: Returns {mcp_url, source: owner|subscription|preview}. mcp_url embeds a secret token.
+
+Get the ready-to-use connection URL for an MCP
+- **get_listing_prompts**: Returns [{prompt, response}].
+
+See example prompts for a catalog MCP
+- **list_tools**: Returns {tools: [{name, description, inputSchema}]}. If that MCP still needs credentials, its tools will fail until set_credentials runs.
+
+List an MCP's tools with their argument schemas
+- **search_catalog**: Each result embeds its full tools (name, description, input_schema): select capabilities straight from the results — no follow-up listing calls. Address results by slug; rows from your org also carry server_id.
+
+Find MCPs by capability when the task needs a tool you don't have
 - **active_mcps**: server_id feeds every account tool below.
 
 List the MCPs you own or have installed

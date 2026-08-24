@@ -14,8 +14,8 @@ The Wine Pairing Matcher uses classical principles of structural symmetry to sug
 
 
 ## Available Tools (3)
-- **check_pairing_risk**: Evaluates if a specific wine style will clash negatively with a dish component
 - **match_wine_to_dish**: Provides a specific wine style recommendation for a given dish configuration
+- **check_pairing_risk**: Evaluates if a specific wine style will clash negatively with a dish component
 - **get_protein_guidelines**: Retrieves the foundational wine pairing principles for a specific protein type
 
 

@@ -14,9 +14,9 @@ The UK PAYE Calculator MCP server provides precise tools to estimate your take-h
 
 
 ## Available Tools (3)
+- **calculate_monthly_paye**: Calculate monthly PAYE deductions
 - **calculate_weekly_paye**: Calculate weekly PAYE deductions
 - **get_tax_code_allowance**: Get personal allowance from a UK tax code
-- **calculate_monthly_paye**: Calculate monthly PAYE deductions
 
 
 ## 💬 Prompt Examples

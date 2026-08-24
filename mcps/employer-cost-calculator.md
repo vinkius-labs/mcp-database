@@ -14,11 +14,11 @@ The Employer Cost Calculator provides a precise breakdown of the actual expendit
 
 
 ## Available Tools (3)
+- **analyze_cost_composition**: Analyzes the proportion of salary that represents the hidden employer burden
 - **calculate_hourly_cost**: Converts total monthly operational cost into an effective hourly labor rate
 - **calculate_monthly_total_cost**: g., 20 for 20%). Returns total cost, tax burden, and provision burden.
 
 Calculates the complete monthly financial obligation for an employee
-- **analyze_cost_composition**: Analyzes the proportion of salary that represents the hidden employer burden
 
 
 ## 💬 Prompt Examples

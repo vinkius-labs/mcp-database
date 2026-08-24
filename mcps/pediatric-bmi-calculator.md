@@ -14,9 +14,9 @@ This MCP server provides a specialized calculation engine for assessing pediatri
 
 
 ## Available Tools (3)
-- **calculate_bmi**: Calculate BMI index
-- **assess_growth_metrics**: Assess pediatric growth metrics
 - **validate_pediatric_parameters**: Validate pediatric parameters
+- **assess_growth_metrics**: Assess pediatric growth metrics
+- **calculate_bmi**: Calculate BMI index
 
 
 ## 💬 Prompt Examples

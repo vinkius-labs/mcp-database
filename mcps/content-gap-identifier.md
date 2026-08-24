@@ -14,8 +14,8 @@ The Content Gap Identifier MCP server acts as an analytical bridge, connecting A
 
 
 ## Available Tools (3)
-- **evaluate_topic_importance**: Determine how much more weight a specific topic carries in competitor content
 - **extract_text_essence**: Identify the most significant keywords within a single piece of text
+- **evaluate_topic_importance**: Determine how much more weight a specific topic carries in competitor content
 - **identify_content_gaps**: Detect keywords and topics present in competitor content that are missing or weak in your own
 
 

@@ -14,9 +14,9 @@ This MCP server provides a clinical calculation engine to determine pediatric gr
 
 
 ## Available Tools (3)
+- **identify_growth_classification**: Provides a qualitative clinical description of growth status
 - **calculate_percentile**: Determines the specific growth percentile for a given physical measurement
 - **calculate_zscore**: Calculates the Z-score for a physical measurement
-- **identify_growth_classification**: Provides a qualitative clinical description of growth status
 
 
 ## 💬 Prompt Examples

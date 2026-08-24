@@ -15,10 +15,10 @@ The Burn Multiple Calculator is a diagnostic tool for SaaS companies to assess t
 
 ## Available Tools (3)
 - **get_growth_audit**: Perform a full growth and efficiency audit
-- **compare_to_benchmark**: Compare burn multiple to industry benchmarks
 - **calculate_burn_efficiency**: Lower is better.
 
 Calculate the burn multiple efficiency
+- **compare_to_benchmark**: Compare burn multiple to industry benchmarks
 
 
 ## 💬 Prompt Examples

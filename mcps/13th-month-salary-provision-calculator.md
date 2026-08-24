@@ -14,9 +14,9 @@ This MCP server provides a specialized calculation engine for managing the finan
 
 
 ## Available Tools (3)
-- **get_monthly_accrual_breakdown**: Provides a detailed breakdown of the specific financial obligation for a single employee for a given month
 - **get_employee_liability_summary**: Answers how much total money has been provisioned for a specific employee from the start of the year to date
 - **get_company_financial_exposure**: Provides a high-level view of the entire company's total accumulated financial obligation for all employees
+- **get_monthly_accrual_breakdown**: Provides a detailed breakdown of the specific financial obligation for a single employee for a given month
 
 
 ## 💬 Prompt Examples

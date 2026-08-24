@@ -36,6 +36,12 @@ Empower your AI agent to orchestrate your entire data community interaction on K
 - **create_dataset**: Use this to share synthesized or processed data back with the community.
 
 Create a new Kaggle dataset
+- **push_notebook**: Use this to actively engage the community by sharing code or analysis.
+
+Push a notebook/script to Kaggle
+- **search_competitions**: Use this to find communities of highly engaged data scientists.
+
+Search Kaggle competitions
 - **get_competition_leaderboard**: Useful for competitor analysis and seeing what the winning score is.
 
 Get a competition leaderboard
@@ -45,12 +51,6 @@ Get the execution status of a Kaggle notebook
 - **list_dataset_files**: Required to understand the data schema before analysis.
 
 List files within a Kaggle dataset
-- **push_notebook**: Use this to actively engage the community by sharing code or analysis.
-
-Push a notebook/script to Kaggle
-- **search_competitions**: Use this to find communities of highly engaged data scientists.
-
-Search Kaggle competitions
 - **search_datasets**: Use this to find interesting datasets or communities.
 
 Search Kaggle datasets

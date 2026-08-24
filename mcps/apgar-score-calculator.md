@@ -14,9 +14,9 @@ The Apgar Score Calculator is a clinical assessment tool designed to evaluate th
 
 
 ## Available Tools (3)
+- **compute_apgar_at_interval**: Calculate the Apgar score for a newborn at a specific interval
 - **compare_apgar_intervals**: Compare Apgar scores between two different time intervals
 - **get_parameter_reference**: Get clinical descriptions for Apgar parameter scores
-- **compute_apgar_at_interval**: Calculate the Apgar score for a newborn at a specific interval
 
 
 ## 💬 Prompt Examples

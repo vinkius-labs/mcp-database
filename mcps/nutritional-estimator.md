@@ -15,10 +15,10 @@ The Nutritional Estimator MCP server allows AI agents to transform ingredient ma
 
 ## Available Tools (3)
 - **compute_recipe_nutrition**: Calculate total and per-serving nutrition for a recipe
-- **get_ingredient_details**: Get nutritional details for an ingredient
 - **search_ingredients**: Returns a list of matches.
 
 Search for ingredients in the database
+- **get_ingredient_details**: Get nutritional details for an ingredient
 
 
 ## 💬 Prompt Examples

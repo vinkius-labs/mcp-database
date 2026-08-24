@@ -14,9 +14,9 @@ This MCP server provides tools to manage the financial and legal risks of employ
 
 
 ## Available Tools (3)
+- **summarize_workforce_provisions**: Summarize workforce vacation provisions
 - **calculate_vacation_liability**: Calculate vacation provision liability
 - **check_entitlement_status**: Check vacation entitlement status
-- **summarize_workforce_provisions**: Summarize workforce vacation provisions
 
 
 ## 💬 Prompt Examples

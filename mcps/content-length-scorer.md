@@ -15,8 +15,8 @@ The Content Length Scorer is an analytical tool that evaluates if your writing m
 
 ## Available Tools (3)
 - **list_supported_intents**: Provides a full list of all content types that the scorer can analyze
-- **analyze_content_compliance**: Evaluates if a specific piece of text meets the length requirements for its intended purpose
 - **get_type_thresholds**: Retrieves the specific minimum and maximum word count targets for a given content type
+- **analyze_content_compliance**: Evaluates if a specific piece of text meets the length requirements for its intended purpose
 
 
 ## 💬 Prompt Examples

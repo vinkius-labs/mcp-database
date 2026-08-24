@@ -14,9 +14,9 @@ The Readability & SEO Scorer MCP server provides a comprehensive audit of your c
 
 
 ## Available Tools (3)
-- **audit_density**: Audit text for structural density issues
-- **calculate_readability**: Calculate Flesch-Kincaid Reading Ease score
 - **analyze_style**: Detect passive voice and analyze writing style
+- **calculate_readability**: Calculate Flesch-Kincaid Reading Ease score
+- **audit_density**: Audit text for structural density issues
 
 
 ## 💬 Prompt Examples

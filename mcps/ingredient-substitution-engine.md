@@ -15,8 +15,8 @@ The Ingredient Substitution Engine is a specialized culinary intelligence tool d
 
 ## Available Tools (3)
 - **verify_restriction_compatibility**: Verify if a substitute meets all dietary requirements
-- **analyze_substitution_impact**: Analyze the sensory impact of a substitution
 - **search_substitutes**: Find compatible ingredients for a dietary constraint
+- **analyze_substitution_impact**: Analyze the sensory impact of a substitution
 
 
 ## 💬 Prompt Examples

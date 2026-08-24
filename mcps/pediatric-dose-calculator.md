@@ -15,8 +15,8 @@ This MCP server provides a precise calculation engine for determining safe pedia
 
 ## Available Tools (3)
 - **calculate_single_dose**: Calculate a single dose based on weight
-- **evaluate_dosage_regimen**: Evaluate a dosing schedule for safety
 - **get_drug_dosage_specs**: Retrieve pharmacological constraints for a medication
+- **evaluate_dosage_regimen**: Evaluate a dosing schedule for safety
 
 
 ## 💬 Prompt Examples

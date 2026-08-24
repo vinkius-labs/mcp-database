@@ -14,9 +14,9 @@ This MCP server provides a suite of tools for US-based 401k retirement planning.
 
 
 ## Available Tools (4)
-- **account_growth_tool**: Project future 401k account balance
 - **employer_match_tool**: Estimate the employer matching contribution
 - **max_contribution_tool**: Calculate the maximum allowable 401k contribution based on age
+- **account_growth_tool**: Project future 401k account balance
 - **tax_savings_tool**: Estimate immediate income tax savings from 401k contributions
 
 
