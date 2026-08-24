@@ -14,8 +14,8 @@ The EU Transfer Pricing Checker is a specialized compliance engine designed to e
 
 
 ## Available Tools (3)
-- **check_compliance**: Checks if a transaction margin falls within the established arm's length range
 - **evaluate_risk_impact**: Determines the level of tax audit risk and potential severity
+- **check_compliance**: Checks if a transaction margin falls within the established arm's length range
 - **get_benchmark_ranges**: Retrieves the hardcoded market-standard ranges
 
 

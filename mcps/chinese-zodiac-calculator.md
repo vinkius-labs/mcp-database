@@ -14,11 +14,11 @@ The Chinese Zodiac Calculator connects AI agents to the ancient wisdom of the 12
 
 
 ## Available Tools (3)
+- **get_zodiac_details**: Get detailed astrological profile for a birth year
 - **get_animal_profile**: s. Monkey, Rat, etc.) to see its characteristics.
 
 Get detailed profile for a specific zodiac animal
 - **check_compatibility**: Check astrological compatibility between two years
-- **get_zodiac_details**: Get detailed astrological profile for a birth year
 
 
 ## 💬 Prompt Examples

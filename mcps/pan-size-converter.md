@@ -14,9 +14,9 @@ The Pan Size Converter MCP server provides AI agents with precise tools to manag
 
 
 ## Available Tools (3)
+- **validate_dimensions**: Verifies that a set of pan dimensions is physically plausible
 - **calculate_volume**: Calculates the total volumetric capacity of a specific pan
 - **find_equivalent_pan**: Identifies alternative pan shapes and sizes with near-identical volume
-- **validate_dimensions**: Verifies that a set of pan dimensions is physically plausible
 
 
 ## 💬 Prompt Examples

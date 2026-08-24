@@ -14,9 +14,9 @@ This MCP server provides game designers with precise mathematical tools to defin
 
 
 ## Available Tools (3)
-- **compare_scaling_strategies**: Produces a unified dataset for visual comparison of different scaling configurations
 - **analyze_growth_velocity**: Calculates the incremental change in an attribute's value between consecutive levels
 - **compute_progression_table**: Generates a complete step-by-step breakdown of an attribute's value for every level
+- **compare_scaling_strategies**: Produces a unified dataset for visual comparison of different scaling configurations
 
 
 ## 💬 Prompt Examples

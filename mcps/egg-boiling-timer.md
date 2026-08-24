@@ -14,9 +14,9 @@ This MCP server provides precise culinary calculations to determine exactly how 
 
 
 ## Available Tools (3)
-- **calculate_boiling_time**: Calculate the required boiling time for an egg
 - **get_texture_descriptions**: Get culinary descriptions for egg donness levels
 - **validate_egg_parameters**: Validate egg cooking parameters
+- **calculate_boiling_time**: Calculate the required boiling time for an egg
 
 
 ## 💬 Prompt Examples

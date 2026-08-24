@@ -14,10 +14,10 @@ This MCP server provides AI agents with the ability to calculate personal sustai
 
 
 ## Available Tools (3)
+- **generate_improvement_roadmap**: Provides personalized ecological goals and actionable targets
 - **calculate_personal_score**: Returns weighted average and status.
 
 Calculates the total sustainability score and provides a breakdown by category
-- **generate_improvement_roadmap**: Provides personalized ecological goals and actionable targets
 - **get_category_status**: Converts a numerical category score into a human-readable qualitative assessment
 
 

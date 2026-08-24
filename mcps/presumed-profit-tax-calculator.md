@@ -15,9 +15,9 @@ This MCP server provides specialized tools for calculating Brazilian corporate t
 
 ## Available Tools (4)
 - **calculate_cit_breakdown**: Calculate the breakdown of Corporate Income Tax (CIT)
-- **calculate_scll_liability**: Calculate the Social Contribution on Net Profit (SCLL) liability
 - **generate_tax_summary_report**: Generate a complete, consolidated tax summary report
 - **get_taxable_base**: Calculate the taxable base based on gross revenue and activity type
+- **calculate_scll_liability**: Calculate the Social Contribution on Net Profit (SCLL) liability
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ This MCP server provides tools to assess how Force Majeure events affect contrac
 
 ## Available Tools (3)
 - **calculate_suspension_period**: Determines the exact date when the suspension of contractual obligations is expected to end
-- **determine_notice_deadline**: Identifies the final date by which the affected party must formally notify the counterparty
 - **evaluate_termination_trigger**: Determines if the prolonged nature of the event has reached the threshold for termination
+- **determine_notice_deadline**: Identifies the final date by which the affected party must formally notify the counterparty
 
 
 ## 💬 Prompt Examples

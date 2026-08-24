@@ -14,9 +14,9 @@ This MCP server provides tools to quantify the potential financial risks associa
 
 
 ## Available Tools (3)
-- **evaluate_carveout_impact**: Estimates the additional liability exposure introduced by specific carve-out events
 - **calculate_standard_cap**: Calculates the maximum dollar amount allowed under the standard cap
 - **calculate_worst_case_exposure**: Aggregates standard caps, carve-outs, and damage type considerations
+- **evaluate_carveout_impact**: Estimates the additional liability exposure introduced by specific carve-out events
 
 
 ## 💬 Prompt Examples

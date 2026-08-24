@@ -15,9 +15,9 @@ This MCP server provides specialized tools for calculating complex Brazilian ICM
 
 ## Available Tools (4)
 - **calculate_tax_differential**: Calculates the DIFAL amount for B2C interstate operations
-- **calculate_icms_substitution**: Calculates the amount of ICMS-ST (Tax Substitution) to be collected
-- **calculate_tax_base**: Calculates the grossed-up product value using the "inside" calculation method
 - **get_interstate_rate**: Retrieves the correct interstate tax rate based on origin and destination regions
+- **calculate_tax_base**: Calculates the grossed-up product value using the "inside" calculation method
+- **calculate_icms_substitution**: Calculates the amount of ICMS-ST (Tax Substitution) to be collected
 
 
 ## 💬 Prompt Examples

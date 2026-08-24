@@ -14,8 +14,8 @@ This MCP server provides AI agents with the tools to calculate precise US federa
 
 
 ## Available Tools (3)
-- **evaluate_safe_harbor_compliance**: Check if current tax payments meet Safe Harbor requirements
 - **estimate_quarterly_payments**: Calculate required US quarterly tax payments
+- **evaluate_safe_harbor_compliance**: Check if current tax payments meet Safe Harbor requirements
 - **calculate_marginal_tax_bracket**: Calculate the marginal tax rate for a given income
 
 

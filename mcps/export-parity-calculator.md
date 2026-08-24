@@ -15,8 +15,8 @@ This MCP server provides tools to determine the profitability of exporting commo
 
 ## Available Tools (3)
 - **calculate_farm_gate_parity**: Calculate the net price received at the farm after logistics costs
-- **analyze_market_opportunity**: Analyze if export or domestic market is more profitable
 - **get_transportation_rate**: Get the transport rate per km for a specific mode
+- **analyze_market_opportunity**: Analyze if export or domestic market is more profitable
 
 
 ## 💬 Prompt Examples

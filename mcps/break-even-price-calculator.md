@@ -14,8 +14,8 @@ This MCP server provides essential tools for commodity profitability analysis. U
 
 
 ## Available Tools (3)
-- **calculate_price_targets**: Calculates the essential price points required for cost recovery and predefined profitability margins
 - **calculate_yield_requirement**: Determines how much additional productivity is required to reach the break-bag target at current market prices
+- **calculate_price_targets**: Calculates the essential price points required for cost recovery and predefined profitability margins
 - **evaluate_market_position**: Compares the current market price against the break-even point to determine financial health
 
 

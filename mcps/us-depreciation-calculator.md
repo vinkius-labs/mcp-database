@@ -15,10 +15,10 @@ This MCP server provides AI agents with specialized tools to calculate complex U
 
 ## Available Tools (3)
 - **calculate_depreciation_schedule**: Generate a year-by-year depreciation schedule
-- **calculate_expensing_impact**: Compare the impact of Section 179 and Bonus Depreciation against standard MACRS
 - **get_asset_class_info**: g., car, residential, commercial).
 
 Get information about a specific asset class
+- **calculate_expensing_impact**: Compare the impact of Section 179 and Bonus Depreciation against standard MACRS
 
 
 ## 💬 Prompt Examples

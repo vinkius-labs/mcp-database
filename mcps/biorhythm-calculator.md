@@ -15,8 +15,8 @@ This MCP server provides tools to quantify your biological rhythms. Use `get_rhy
 
 ## Available Tools (3)
 - **check_critical_windows**: Identify upcoming dates where biological instability is expected due to cycle transitions
-- **locate_rhythm_peaks**: Find the next occurrence of maximum biological strength for each cycle
 - **get_rhythm_status**: Determine the current biological standing and energy percentages for all three cycles on a specific date
+- **locate_rhythm_peaks**: Find the next occurrence of maximum biological strength for each cycle
 
 
 ## 💬 Prompt Examples

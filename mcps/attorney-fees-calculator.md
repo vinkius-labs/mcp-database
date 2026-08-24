@@ -18,10 +18,10 @@ The Attorney Fees Calculator MCP server provides precise financial projections f
 
 
 ## Available Tools (5)
-- **contingency**: Calculates the attorney's share and the client's net recovery
+- **fee**: Compares different billing structures to find the threshold
 - **flat_fee**: Retrieves a fixed price for specific legal contract types
 - **hourly**: Calculates the total cost for a single attorney based on time and seniority
-- **fee**: Compares different billing structures to find the threshold
+- **contingency**: Calculates the attorney's share and the client's net recovery
 - **team**: Calculates the total cost for a legal team
 
 

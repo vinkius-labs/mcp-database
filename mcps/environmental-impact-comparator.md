@@ -15,8 +15,8 @@ The Environmental Impact Comparator allows AI agents to evaluate the ecological 
 
 ## Available Tools (3)
 - **compare_transportation_impact**: Compare carbon emissions between two transport modes
-- **compare_dietary_impact**: Compare environmental impact of two food types
 - **compare_packaging_waste_impact**: Calculate plastic waste prevented
+- **compare_dietary_impact**: Compare environmental impact of two food types
 
 
 ## 💬 Prompt Examples

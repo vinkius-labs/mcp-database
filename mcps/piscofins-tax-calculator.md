@@ -14,8 +14,8 @@ This MCP server provides specialized tools to calculate Brazilian social contrib
 
 
 ## Available Tools (3)
-- **calculate_cumulative_tax**: Calculate PIS and COFINS liability under the cumulative regime
 - **calculate_non_cumulative_tax**: Calculate net PIS and COFINS liability under the non-cumulative regime
+- **calculate_cumulative_tax**: Calculate PIS and COFINS liability under the cumulative regime
 - **evaluate_regime_comparison**: Compare cumulative and non-cumulative taxation regimes
 
 

@@ -17,8 +17,8 @@ This MCP server provides specialized tools to calculate United States federal R&
 - **calculate_regular_method_credit**: Returns zero if expenses do not exceed base.
 
 Determines the specific tax credit amount generated using the Regular Research Credit methodology
-- **calculate_asc_method_credit**: Determines the specific tax credit amount generated using the Alternative Simplified Credit methodology
 - **recommend_optimal_tax_strategy**: Compares both methodologies to identify which approach provides the highest tax savings
+- **calculate_asc_method_credit**: Determines the specific tax credit amount generated using the Alternative Simplified Credit methodology
 
 
 ## 💬 Prompt Examples

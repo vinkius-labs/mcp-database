@@ -15,8 +15,8 @@ This MCP server provides specialized tools to calculate the financial impact of 
 
 ## Available Tools (3)
 - **calculate_gross_loss**: Calculate total uncollected rent
-- **get_state_mitigation_duty**: Retrieve state-specific legal mitigation obligations
 - **estimate_lease_break_settlement**: Estimate the reasonable settlement range for a lease break
+- **get_state_mitigation_duty**: Retrieve state-specific legal mitigation obligations
 
 
 ## 💬 Prompt Examples
