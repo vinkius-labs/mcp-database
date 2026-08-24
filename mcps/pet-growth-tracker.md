@@ -15,8 +15,8 @@ The Pet Growth Tracker MCP server provides essential tools for puppy owners to m
 
 ## Available Tools (3)
 - **check_growth_status**: Evaluates whether a puppy's current weight is healthy
-- **estimate_adult_weight**: Predicts the final adult weight of a puppy
 - **get_growth_curve**: Provides a roadmap of expected weight milestones for a specific breed
+- **estimate_adult_weight**: Predicts the final adult weight of a puppy
 
 
 ## 💬 Prompt Examples

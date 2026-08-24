@@ -14,15 +14,15 @@ This MCP server provides a specialized engine for calculating Spanish Personal I
 
 
 ## Available Tools (5)
+- **get_final_tax_determination**: Net cannot be negative.
+
+Consolidates all previous calculations to find the total gross and net tax liabilities
+- **compute_state_quota**: Calculates the portion of tax owed specifically to the Spanish State
+- **calculate_personal_reductions**: Calculates the total amount of tax relief available based on the taxpayer's personal circumstances
 - **calculate_taxable_bases**: Results cannot be less than zero.
 
 Determines the remaining taxable amounts for both General and Savings pools after accounting for deductions
 - **compute_regional_tax**: Calculates the additional tax liability imposed by a specific Autonomous Community
-- **get_final_tax_determination**: Net cannot be negative.
-
-Consolidates all previous calculations to find the total gross and net tax liabilities
-- **calculate_personal_reductions**: Calculates the total amount of tax relief available based on the taxpayer's personal circumstances
-- **compute_state_quota**: Calculates the portion of tax owed specifically to the Spanish State
 
 
 ## 💬 Prompt Examples

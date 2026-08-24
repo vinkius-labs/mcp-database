@@ -17,10 +17,10 @@ This MCP server provides quantitative tools for financial analysis. Use `compute
 - **identify_diversification_risks**: g., {"AAPL-MSFT": 0.9}) to find pairs with correlation > 0.8.
 
 Identifies pairs of assets with high correlation
+- **identify_hedge_opportunities**: Identifies pairs of assets that act as hedges
 - **compute_correlation_matrix**: g., {"AAPL": [0.1, 0.2], "MSFT": [0.15, 0.25]}) and the maximum number of assets allowed.
 
 Computes a Pearson correlation matrix for provided asset returns
-- **identify_hedge_opportunities**: Identifies pairs of assets that act as hedges
 
 
 ## 💬 Prompt Examples

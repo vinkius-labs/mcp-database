@@ -14,9 +14,9 @@ This MCP server provides a precise computation engine for determining German inc
 
 
 ## Available Tools (3)
-- **get_social_security_rates**: Retrieve current social security percentage rates
-- **calculate_tax_breakdown**: Calculate German income tax breakdown
 - **list_church_tax_regions**: List states by church tax rate
+- **calculate_tax_breakdown**: Calculate German income tax breakdown
+- **get_social_security_rates**: Retrieve current social security percentage rates
 
 
 ## 💬 Prompt Examples

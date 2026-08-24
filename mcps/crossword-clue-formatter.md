@@ -15,8 +15,8 @@ This MCP server provides precise tools for processing crossword puzzle grids. It
 
 ## Available Tools (3)
 - **get_grid_statistics**: Calculates the total letter capacity and structural properties of the grid
-- **generate_clue_metadata**: Maps provided clues to their specific numbered positions and lengths within the grid
 - **validate_grid_symmetry**: Checks if the provided grid layout follows the standard 180-degree rotational symmetry rule
+- **generate_clue_metadata**: Maps provided clues to their specific numbered positions and lengths within the grid
 
 
 ## 💬 Prompt Examples

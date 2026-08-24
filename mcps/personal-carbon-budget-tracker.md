@@ -14,11 +14,11 @@ This MCP server provides a suite of tools to measure and visualize your individu
 
 
 ## Available Tools (4)
-- **calculate_excess**: Calculate excess carbon emissions
 - **get_budget_status**: Get budget status
 - **get_percentage_over_target**: 5C goal.
 
 Calculate percentage over target
+- **calculate_excess**: Calculate excess carbon emissions
 - **get_visual_equivalencies**: Get environmental equivalencies
 
 

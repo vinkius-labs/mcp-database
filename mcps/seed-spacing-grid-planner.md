@@ -14,8 +14,8 @@ This MCP server provides deterministic tools for garden planning. Use `calculate
 
 
 ## Available Tools (3)
-- **estimate_yield_capacity**: 
 - **calculate_planting_grid**: 
+- **estimate_yield_capacity**: 
 - **validate_spacing_constraints**: 
 
 

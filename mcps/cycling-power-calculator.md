@@ -5,19 +5,18 @@
 
 ## Overview
 
-**Category:** [utilities](../categories/utilities.md)
+**Category:** [physics](../categories/physics.md)
 
-Estimate cycling power requirements, FTP zones, and training stress.
+Calculate precise power requirements for cycling based on speed, gradient, and wind.
 
 ## Description
-A professional utility for cyclists to estimate physiological power requirements. Use `calculate_power_requirement` to determine the watts needed for specific speeds and gradients, accounting for aerodynamic drag (CdA) and rolling resistance. The `get_ftp_zones` tool converts FTP into seven actionable training intensity zones. For post-ride analysis, use `calculate_training_stress` to compute your Training Stress Score (TSS). You can also retrieve standardized aerodynamic coefficients using `get_positional_cda` for positions like tops, hoods, or aero.
+This MCP server provides a deterministic engine to calculate the physiological and mechanical power requirements for cyclists. By accounting for gravitational resistance, rolling resistance, and aerodynamic drag, it helps riders understand the exact wattage needed to maintain specific speeds. It handles complex variables like wind direction (headwind, tailwind, or crosswind), altitude-based air density changes, and drivetrain efficiency. Use `calculate_power_requirement` for single scenarios, `simulate_climb_profile` for multi-stage climbs, or `get_aerodynamic_sensitivity` to analyze how wind or frontal area impacts your effort.
 
 
-## Available Tools (4)
-- **get_ftp_zones**: Convert FTP into training intensity zones
-- **get_positional_cda**: Retrieve the CDA value for a specific riding posture
-- **calculate_power_requirement**: Calculate the power required to maintain a specific speed on given terrain
-- **calculate_training_stress**: Calculate the Training Stress Score (TSS)
+## Available Tools (3)
+- **calculate_power_requirement**: Determines the exact power output needed to maintain a target speed under specific environmental conditions
+- **get_aerodynamic_sensitivity**: Analyzes how changes in wind or frontal area affect the power requirement
+- **simulate_climb_profile**: Calculates the power requirements for a multi-stage climb with changing gradients
 
 
 ## 💬 Prompt Examples
@@ -25,38 +24,38 @@ A professional utility for cyclists to estimate physiological power requirements
 Here are some examples of how you can interact with the **Cycling Power Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "How many watts do I need to ride at 30 km/h on a 5% gradient with a 75kg total weight, 0.01 resistance, and 0.035 CdA?"
+> "How much power do I need to ride at 30 km/h on a 5% gradient with a 10 km/h headwind? My total weight is 85 kg."
 
 **🤖 AI Agent:**
-> You will need approximately 285.4 Watts to maintain that speed on a 5% gradient.
+> To maintain 30 km/h on a 5% gradient with a 10 km/h headwind at 85 kg, you need 342 Watts.
 
 ---
 
 **👤 You:**
-> "What are my training zones if my FTP is 250W?"
+> "What is my power-to-weight ratio if I need 250 Watts and I weigh 70 kg?"
 
 **🤖 AI Agent:**
-> Your zones are: Zone 1 (125-150W), Zone 2 (150-175W), Zone 3 (175-200W), Zone 4 (200-225W), Zone 5 (225-237W), Zone 6 (237-250W), and Zone 7 (above 250W).
+> Your power-to-weight ratio is 3.57 W/kg.
 
 ---
 
 **👤 You:**
-> "What is the CDA for the 'aero' position?"
+> "How much will my power requirement increase if my frontal area increases by 10%?"
 
 **🤖 AI Agent:**
-> The standardized aerodynamic drag area (CdA) for the aero position is 0.025.
+> Increasing your frontal area by 10% will increase your required power by 12.4 Watts.
 
 
 ## ❓ FAQ
 
-**Q: How is the power requirement calculated?**
-The `calculate_power_requirement` tool uses a physics model that sums the power needed to overcome gravity, aerodynamic drag (based on your CdA), and rolling resistance.
+**Q: How does wind direction affect the calculation?**
+The engine adjusts the relative airspeed based on the wind direction. A headwind increases the drag force, requiring more power, while a tailwind decreases it.
 
-**Q: What are training zones?**
-By using `get_ftp_zones`, you can see seven distinct power ranges relative to your FTP, helping you target specific physiological intensities during training.
+**Q: Does the tool account for altitude?**
+Yes, the `calculate_power_requirement` tool adjusts for air density, which decreases as altitude increases, reducing aerodynamic drag.
 
-**Q: Can I calculate TSS for a ride?**
-Yes, the `calculate_training_stress` tool calculates your Training Stress Score based on duration, normalized power, and FTP.
+**Q: Can I simulate a whole mountain climb?**
+Yes, you can use the `simulate_climb_profile` tool by providing an array of segments, each with its own distance, gradient, and duration.
 
 
 ## Installation & Usage

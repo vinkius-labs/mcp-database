@@ -14,8 +14,8 @@ This MCP server acts as a structural architect for tarot practitioners. It provi
 
 
 ## Available Tools (3)
-- **get_spread_complexity_metrics**: Analyzes a spread to determine its depth and utility for different types of readings
 - **get_spread_blueprint**: Retrieves the complete structural definition for a specific named tarot spread
+- **get_spread_complexity_metrics**: Analyzes a spread to determine its depth and utility for different types of readings
 - **list_available_spreads**: Provides a list of all structural layouts currently supported by the generator
 
 

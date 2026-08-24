@@ -14,10 +14,10 @@ The Flight Emissions Calculator provides a precise way to estimate the environme
 
 
 ## Available Tools (4)
-- **calculate_flight_impact**: Calculate the carbon footprint for a flight
 - **compare_rf_scenarios**: Compare two RF scenarios
-- **get_class_multipliers**: Get seat class multipliers
 - **get_impact_severity**: Get flight impact severity
+- **get_class_multipliers**: Get seat class multipliers
+- **calculate_flight_impact**: Calculate the carbon footprint for a flight
 
 
 ## 💬 Prompt Examples

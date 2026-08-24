@@ -5,20 +5,18 @@
 
 ## Overview
 
-**Category:** [productivity](../categories/productivity.md)
+**Category:** [fashion](../categories/fashion.md)
 
-Calculate precise fabric requirements for custom patterns, garments, and projects.
+Calculate exact fabric, lining, and interfacing requirements for garment construction.
 
 ## Description
-The Fabric Yardage Calculator MCP connects your AI agent to a specialized engine for estimating textile needs. Use `calculate_custom_layout` to determine the linear length required for specific pattern pieces, accounting for nap direction and pattern repeats. The `lookup_garment_yardage` tool provides quick estimates for standard clothing sizes from XS to 5XL. For larger textile projects, `calculate_project_fabric` calculates the necessary yardage for curtains (including fullness) and quilts. This server ensures accuracy by supporting various fabric widths including 45\", 5/4\", 60\", 110cm, and 150cm.
+This MCP server provides precise tools for garment makers to determine material needs. Use `calculate_fabric_requirements` to find the exact meters of main fabric, lining, and interfacing required based on body measurements and garment type. You can also use `estimate_material_costs` to budget for your project and `validate_measurements` to ensure your body measurements are consistent for construction.
 
 
 ## Available Tools (3)
-- **calculate_custom_layout**: Supports one-way or two-way nap direction.
-
-Calculates the total linear fabric length required for a custom set of pattern pieces
-- **calculate_project_fabric**: Calculates fabric requirements for non-garment projects like curtains or quilts
-- **lookup_garment_yardage**: Retrieves estimated yardage from the database for standard clothing items
+- **calculate_fabric_requirements**: Determines the total yardage/meterage needed for the main fabric, lining, and interfacing
+- **estimate_material_costs**: Provides a rough estimate of the cost for the required materials
+- **validate_measurements**: Ensures the provided body measurements are physically realistic and consistent
 
 
 ## 💬 Prompt Examples
@@ -26,38 +24,38 @@ Calculates the total linear fabric length required for a custom set of pattern p
 Here are some examples of how you can interact with the **Fabric Yardage Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "How much fabric do I need for a T-shirt in size Large using 60 inch fabric?"
+> "How much fabric do I need for a silk dress? My bust is 90cm, waist is 70cm, hips are 95cm, and the length is 110cm. The fabric is 150cm wide and it is a solid color."
 
 **🤖 AI Agent:**
-> For a size L T-Shirt on 60\" fabric, you will need approximately 0.75 yards (0.68 meters).
+> You will need 2.5 meters of main fabric. Since it is a solid color dress, no lining or interfacing is required by the standard calculation.
 
 ---
 
 **👤 You:**
-> "Calculate the yardage for a custom layout with two pieces: one 10x20 inches and one 15x30 inches, using 45 inch fabric and one-way nap."
+> "I'm making a plaid jacket. My measurements are bust 100cm, waist 85cm, hips 110cm, length 75cm. The fabric is 115cm wide. I am also tall."
 
 **🤖 AI Agent:**
-> The total length required is 0.83 yards (0.76 meters) with an efficiency score of 75%.
+> For your plaid jacket, you will need 3.45 meters of main fabric (including the 25% pattern matching buffer and 15% tall adjustment), 2.5 meters of lining, and specific interfacing for the collar and cuffs.
 
 ---
 
 **👤 You:**
-> "How much fabric is needed for a curtain that is 50 inches wide and 80 inches long, assuming 2.0 fullness?"
+> "Check if my measurements are realistic: bust 80cm, waist 95cm, hips 100cm, length 120cm."
 
 **🤖 AI Agent:**
-> You will need 4.44 yards (4.06 meters) of fabric, which will require 2 panels.
+> The measurements are valid for garment construction.
 
 
 ## ❓ FAQ
 
-**Q: How do I calculate fabric for a custom pattern piece?**
-Use the `calculate_custom_layout` tool. Provide the widths and lengths of your pieces, the fabric width, and whether you are using a one-way or two-way nap direction.
+**Q: How does the calculator handle pattern matching?**
+When you select a stripe or plaid pattern, the `calculate_fabric_requirements` tool automatically adds a 25% buffer to the main fabric to ensure patterns align at the seams.
 
-**Q: Can I account for stripes or plaids?**
-Yes. When using `calculate_custom_layout`, you can provide a `patternRepeatLength`. The tool will automatically add one full repeat to the total length to ensure proper alignment.
+**Q: Can I estimate the total cost of my fabric?**
+Yes, after calculating your yardage, use the `estimate_material_costs` tool to provide the price per meter for your materials and get a total cost estimate.
 
-**Q: What garment sizes are supported?**
-The `lookup_garment_yardage` tool supports standard sizing from XS up to 5XL.
+**Q: Does it account for different body types?**
+Yes, you can specify if you are plus-size or tall to adjust the base fabric consumption accordingly.
 
 
 ## Installation & Usage

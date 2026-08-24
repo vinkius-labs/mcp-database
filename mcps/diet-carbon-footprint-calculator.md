@@ -14,11 +14,11 @@ This MCP server provides a specialized calculation engine to estimate carbon dio
 
 
 ## Available Tools (3)
-- **analyze_group_impact_percentage**: Identifies which food group is responsible for the largest share of total emissions
 - **calculate_dietary_emissions**: Calculates total carbon footprint and breakdown for given food weights
 - **compare_diet_profiles**: g., Omnivorous, Vegan).
 
 Evaluates the difference in carbon footprint between two dietary lifestyles
+- **analyze_group_impact_percentage**: Identifies which food group is responsible for the largest share of total emissions
 
 
 ## 💬 Prompt Examples

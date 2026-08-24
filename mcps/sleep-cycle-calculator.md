@@ -5,18 +5,18 @@
 
 ## Overview
 
-**Category:** [productivity](../categories/productivity.md)
+**Category:** [wellness](../categories/wellness.md)
 
-Optimize your rest by finding the perfect wake-up times based on natural 90-minute sleep cycles.
+Calculate optimal bedtimes and sleep stage distributions using 90-minute circadian cycles.
 
 ## Description
-The Sleep Cycle Calculator helps you align your sleep schedule with your body's biological rhythms. By calculating wake-up windows based on 90-minute cycles and accounting for a 15-minute sleep latency, this tool ensures you wake up at the end of a cycle to minimize grogginess. Use `calculate_wake_times` to find when to wake up after a planned bedtime, `calculate_bedtimes` to plan your night around a required wakeup time, or `assess_sleep_window` to check if your sleep duration falls into optimal or insufficient categories.
+Optimize your rest by aligning your sleep with natural 90-minute circadian cycles. This tool uses `calculate_bedtimes` to provide specific bedtime options based on your desired wake time and sleep latency. It also includes `evaluate_sleep_adequacy` to ensure your sleep duration meets the biological needs of your age group, and `calculate_jet_lag_adjustment` to help you plan for time zone shifts during travel.
 
 
 ## Available Tools (3)
-- **calculate_bedtimes**: Calculate ideal bedtimes based on a wakeup time
-- **calculate_wake_times**: Calculate ideal wake up times based on a bedtime
-- **assess_sleep_window**: Assess if a sleep duration is optimal
+- **evaluate_sleep_adequacy**: Checks if the proposed sleep duration meets the biological needs of the user based on their age
+- **calculate_bedtimes**: Determines the best times to go to bed to wake up at a specific time while completing full 90-minute sleep cycles
+- **calculate_jet_lag_adjustment**: Determines the necessary circadian adjustment period for travel
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ The Sleep Cycle Calculator helps you align your sleep schedule with your body's 
 Here are some examples of how you can interact with the **Sleep Cycle Calculator** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "I want to go to sleep at 23:00. When should I wake up?"
+> "I want to wake up at 07:00 and it usually takes me 15 minutes to fall asleep. What are my best bedtime options?"
 
 **🤖 AI Agent:**
-> Based on a 23:00 bedtime, your ideal wake-up times are 00:45, 02:15, 03:45, 05:15, and 06:45.
+> To wake up at 07:00, your optimal bedtimes are 21:45 (6 cycles), 23:15 (5 cycles), or 00:45 (4 cycles).
 
 ---
 
 **👤 You:**
-> "I need to wake up at 07:00. What time should I go to bed?"
+> "I am an adult and I slept for 6 hours. Is that enough?"
 
 **🤖 AI Agent:**
-> To wake up at 07:00, you should aim to fall asleep at 23:15, 01:45, or 04:15.
+> No, that is insufficient. As an adult, you require a minimum of 7 hours of sleep, leaving a shortfall of 60 minutes.
 
 ---
 
 **👤 You:**
-> "Is 420 minutes of sleep enough?"
+> "I am traveling across 3 time zones. How long will it take to adjust?"
 
 **🤖 AI Agent:**
-> A duration of 420 minutes is classified as Optimal for your sleep window.
+> You will need 3 days to adjust to the new time zone.
 
 
 ## ❓ FAQ
 
-**Q: How does the calculator determine wake-up times?**
-The tool adds a 15-minute sleep latency to your bedtime and then calculates subsequent 90-minute intervals to suggest the best moments to wake up.
+**Q: How do 90-minute sleep cycles work?**
+The human sleep pattern is composed of repeating cycles that typically last approximately 90 minutes. Using `calculate_bedtimes` helps you wake up at the end of a cycle to minimize sleep inertia.
 
-**Q: Can I check if my current sleep duration is healthy?**
-Yes, you can use the `assess_sleep_window` tool by providing your total minutes of sleep to see if it falls into optimal, insufficient, or excessive categories.
+**Q: Can I check if I am getting enough sleep?**
+Yes, you can use `evaluate_sleep_adequacy` to compare your total sleep duration against the minimum requirements for your age group.
 
-**Q: What format should I use for times?**
-Please use the 24-hour notation (HH:mm), such as '23:00' or '07:30', for all time-related inputs.
+**Q: How do I adjust for jet lag?**
+You can use `calculate_jet_lag_adjustment` to determine how many days you need to adjust your internal clock based on the number of time zones you cross.
 
 
 ## Installation & Usage

@@ -14,8 +14,8 @@ This MCP server provides a deterministic engine for calculating turn orders in b
 
 
 ## Available Tools (3)
-- **resolve_round_one**: Calculates the initial turn order based on player scores and tie-breaking logic
 - **generate_round_sequence**: Determines the turn order for all future rounds based on the Round 1 results
+- **resolve_round_one**: Calculates the initial turn order based on player scores and tie-breaking logic
 - **validate_player_data**: Ensures that the player profiles provided contain all necessary attributes for the requested tie-breaking logic
 
 

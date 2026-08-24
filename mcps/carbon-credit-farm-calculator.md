@@ -14,9 +14,9 @@ This MCP server provides specialized tools to quantify the carbon sequestration 
 
 
 ## Available Tools (3)
-- **calculate_sequestration_capacity**: Calculate total CO2 sequestration capacity based on land area
-- **calculate_annual_credit_issuance**: Convert carbon stock into annual tradable credits
 - **estimate_carbon_market_value**: Project potential annual revenue from carbon credits
+- **calculate_annual_credit_issuance**: Convert carbon stock into annual tradable credits
+- **calculate_sequestration_capacity**: Calculate total CO2 sequestration capacity based on land area
 
 
 ## 💬 Prompt Examples
