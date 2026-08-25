@@ -17,8 +17,8 @@ This MCP server provides clinical utility for determining safe and effective pes
 - **get_weight_tier_metadata**: ).
 
 Identifies the weight tier for a given mass
-- **validate_treatment_safety**: Checks if a specific dose is safe
 - **calculate_dosage_window**: Determines the required dosage range and frequency
+- **validate_treatment_safety**: Checks if a specific dose is safe
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ The Safe Note Converter is a specialized computational tool designed for founder
 
 
 ## Available Tools (3)
-- **calculate_effective_conversion_price**: Determines the final price per
 - **calculate_ownership_stake**: Calculates the investor's resulting ownership percentage
+- **calculate_effective_conversion_price**: Determines the final price per
 - **calculate_shares_distributed**: Calculates how many new common shares are issued to the SAFE holder
 
 

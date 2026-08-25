@@ -14,9 +14,9 @@ This MCP server provides a simplified Life Cycle Assessment (LCA) tool to compar
 
 
 ## Available Tools (3)
+- **get_material_profile**: Retrieve environmental and physical characteristics for a specific packaging type
 - **calculate_recycling_benefit**: Calculate the reduction in CO2e by increasing recycling rate
 - **compare_packaging_footprint**: Compare environmental footprint of different packaging materials
-- **get_material_profile**: Retrieve environmental and physical characteristics for a specific packaging type
 
 
 ## 💬 Prompt Examples

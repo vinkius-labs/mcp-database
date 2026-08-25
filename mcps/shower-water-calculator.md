@@ -14,9 +14,9 @@ The Shower Water Calculator MCP server allows AI agents to calculate the environ
 
 
 ## Available Tools (4)
-- **estimate_cost**: Estimate the cost of water usage
 - **calculate_consumption**: Calculate water consumption and benchmark status
 - **calculate_emissions**: Estimate carbon emissions from water usage
+- **estimate_cost**: Estimate the cost of water usage
 - **get_shower_summary**: Get a comprehensive shower usage report
 
 

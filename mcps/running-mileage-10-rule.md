@@ -15,8 +15,8 @@ This MCP server provides a safety-first training progression generator. Use `gen
 
 ## Available Tools (3)
 - **calculate_next_step**: Determines the safest mileage for the next training week
-- **generate_mileage_plan**: Generates a full week-by/week training schedule
 - **validate_transition_safety**: Audits a proposed mileage increase
+- **generate_mileage_plan**: Generates a full week-by/week training schedule
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ The Breadcrumb Generator MCP server automates the creation of structural breadcr
 
 ## Available Tools (3)
 - **generate_text_breadcrumb**: Generates a plain text breadcrumb
-- **generate_html_breadcrumb**: Generates an HTML breadcrumb snippet
 - **generate_json_ld_schema**: Generates a JSON-LD schema for BreadcrumbList
+- **generate_html_breadcrumb**: Generates an HTML breadcrumb snippet
 
 
 ## 💬 Prompt Examples

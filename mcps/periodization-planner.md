@@ -15,8 +15,8 @@ The Periodization Planner is a mathematical engine designed for athletes and coa
 
 ## Available Tools (3)
 - **generate_weekly_load_progression**: Provides a week-by-week breakdown of the relative training load
-- **get_phase_attributes**: Retrieves the specific training focus, target volume, and target intensity for a given phase
 - **calculate_macrocycle_structure**: Determines how the total available time should be divided into phases and mesocycles
+- **get_phase_attributes**: Retrieves the specific training focus, target volume, and target intensity for a given phase
 
 
 ## 💬 Prompt Examples

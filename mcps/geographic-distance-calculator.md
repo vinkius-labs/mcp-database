@@ -16,9 +16,9 @@ A high-precision geospatial utility for calculating distances, bearings, waypoin
 ## Available Tools (5)
 - **get_bearing_stats**: Get bearing statistics between two points
 - **generate_bounding_box**: Generate a bounding box for a circular area
-- **compute_destination**: Compute a destination point based on bearing and distance
-- **calculate_distance**: Calculate the distance between two geographic points
 - **get_midpoint**: Find the midpoint between two points
+- **calculate_distance**: Calculate the distance between two geographic points
+- **compute_destination**: Compute a destination point based on bearing and distance
 
 
 ## 💬 Prompt Examples

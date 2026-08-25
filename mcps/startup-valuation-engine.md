@@ -14,12 +14,12 @@ This MCP server provides a specialized engine for determining early-stage startu
 
 
 ## Available Tools (4)
-- **scorecard_valuation**: Calculate valuation using the Scorecard method
+- **dcf_valuation**: Calculate valuation using the Simplified DCF method
 - **berkus_valuation**: g., prototype, management team).
 
 Calculate valuation using the Berkus method
-- **dcf_valuation**: Calculate valuation using the Simplified DCF method
 - **risk_summation_valuation**: Calculate valuation using the Risk Summation method
+- **scorecard_valuation**: Calculate valuation using the Scorecard method
 
 
 ## 💬 Prompt Examples

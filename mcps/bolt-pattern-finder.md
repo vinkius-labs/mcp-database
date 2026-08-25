@@ -14,11 +14,11 @@ The Bolt Pattern Finder is a specialized tool for automotive enthusiasts, mechan
 
 
 ## Available Tools (3)
+- **list_makes**: Provides a list of all supported automotive manufacturers
 - **check_compatibility**: Determines if a wheel from one vehicle will safely and functionally fit onto another vehicle
 - **get_vehicle_specs**: Returns bolt pattern, center bore, lug nut thread, and offset range.
 
 Fetches the precise factory wheel specifications for a specific vehicle
-- **list_makes**: Provides a list of all supported automotive manufacturers
 
 
 ## 💬 Prompt Examples

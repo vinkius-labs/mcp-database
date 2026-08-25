@@ -15,8 +15,8 @@ The Warehouse ABC Slotting Optimizer connects AI agents to your warehouse logist
 
 ## Available Tools (3)
 - **create_slotting_plan**: Generate a warehouse slotting plan
-- **calculate_optimization_efficiency**: Calculate optimization efficiency metrics
 - **classify_sku_velocity**: Classify SKUs into ABC classes based on frequency
+- **calculate_optimization_efficiency**: Calculate optimization efficiency metrics
 
 
 ## 💬 Prompt Examples

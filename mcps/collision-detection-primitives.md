@@ -14,10 +14,10 @@ This MCP server provides a specialized computational engine for high-precision g
 
 
 ## Available Tools (4)
+- **spherical_collision**: Check intersection between two spheres
 - **boundary_inclusion**: Check if a sphere is within bounds
 - **box_collision**: Check collision between a sphere and an AABB
 - **ray_intersection**: Check intersection between a ray and an AABB
-- **spherical_collision**: Check intersection between two spheres
 
 
 ## 💬 Prompt Examples

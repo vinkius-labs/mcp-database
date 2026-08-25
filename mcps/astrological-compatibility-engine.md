@@ -14,15 +14,15 @@ This MCP server provides a deep analytical engine for evaluating astrological co
 
 
 ## Available Tools (3)
-- **generate_compatibility_report**: Returns multi-dimensional scores and summary.
-
-Generates a full astrological compatibility report
-- **lookup_sign_properties**: g., "Aries"). Returns element and modality.
-
-Retrieves elemental and modal attributes for a zodiac sign
 - **analyze_elemental_synergy**: Returns affinity score and interaction type.
 
 Evaluates relationship between two elements
+- **lookup_sign_properties**: g., "Aries"). Returns element and modality.
+
+Retrieves elemental and modal attributes for a zodiac sign
+- **generate_compatibility_report**: Returns multi-dimensional scores and summary.
+
+Generates a full astrological compatibility report
 
 
 ## 💬 Prompt Examples
