@@ -16,8 +16,8 @@ This MCP server provides a powerful statistical engine for evaluating A/B test r
 ## Available Tools (4)
 - **calculate_expected_loss**: Calculate the expected loss for choosing either variant
 - **calculate_expected_uplift**: Calculate the expected uplift of Variant B over Variant 1
-- **evaluate_decision_recommendation**: Evaluate the decision recommendation based on a threshold
 - **calculate_superiority_probability**: Calculate the probability that Variant B is better than Variant A
+- **evaluate_decision_recommendation**: Evaluate the decision recommendation based on a threshold
 
 
 ## 💬 Prompt Examples

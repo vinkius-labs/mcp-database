@@ -14,9 +14,9 @@ The Break-Even Calculator is a specialized financial tool designed to help busin
 
 
 ## Available Tools (3)
+- **calculate_accounting_break_even**: Determine the minimum units and revenue needed to cover explicit fixed costs
 - **calculate_economic_break_even**: Identify the sales volume required to cover both fixed costs and opportunity costs
 - **evaluate_margin_of_safety**: Assess the financial cushion by comparing current sales against break-even point
-- **calculate_accounting_break_even**: Determine the minimum units and revenue needed to cover explicit fixed costs
 
 
 ## 💬 Prompt Examples

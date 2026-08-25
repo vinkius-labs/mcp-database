@@ -14,9 +14,9 @@ The HAS-BLED Score Calculator is a clinical decision support tool designed to id
 
 
 ## Available Tools (3)
-- **calculate_has_ble_score**: Compute the quantitative HAS-BLED integer score
 - **get_risk_interpretation**: Translate a numerical HAS-BLED score into a qualitative risk category
 - **get_scoring_criteria_reference**: Provide a descriptive reference for all potential scoring variables
+- **calculate_has_ble_score**: Compute the quantitative HAS-BLED integer score
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides essential statistical tools for running reliable A/B te
 
 
 ## Available Tools (3)
-- **estimate_test_duration**: Estimate the duration of an A/B test
 - **assess_peeking_risk**: Assess the risk of stopping an A/B test early
 - **calculate_required_sample_size**: Determine the required sample size for an A/B test
+- **estimate_test_duration**: Estimate the duration of an A/B test
 
 
 ## 💬 Prompt Examples

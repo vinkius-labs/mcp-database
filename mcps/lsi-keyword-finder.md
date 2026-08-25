@@ -14,9 +14,9 @@ LSI Keyword Finder is a semantic extraction engine designed to identify meaningf
 
 
 ## Available Tools (3)
-- **expand_keyword_network**: Generates a list of semantically related keywords for a specific seed word
 - **extract_core_keywords**: Identifies the most significant and frequent meaningful terms within a provided body of text
 - **get_word_variations**: Identifies all known morphological variations for a given input
+- **expand_keyword_network**: Generates a list of semantically related keywords for a specific seed word
 
 
 ## 💬 Prompt Examples

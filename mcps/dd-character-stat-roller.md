@@ -15,8 +15,8 @@ This MCP server provides a high-performance statistical simulation engine to com
 
 ## Available Tools (4)
 - **analyze_attribute_averages**: Calculates the mean value for each attribute across a provided set of simulation results
-- **generate_method_comparison_report**: Produces a high-level comparative summary between two different simulation datasets
 - **evaluate_power_threshold**: Determines the probability of a character "outperforming" a specific power metric
+- **generate_method_comparison_report**: Produces a high-level comparative summary between two different simulation datasets
 - **simulate_method**: Executes a large-scale randomized simulation for a specific generation method
 
 

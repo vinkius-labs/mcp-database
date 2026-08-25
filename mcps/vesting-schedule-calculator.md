@@ -14,9 +14,9 @@ This MCP server provides a specialized engine for managing equity compensation d
 
 
 ## Available Tools (3)
-- **generate_monthly_vesting_timeline**: Generates a month-by-month breakdown of the vesting journey
 - **get_cliff_milestone_details**: Extracts critical cliff data
 - **project_liquidity_value**: Estimates potential cash value of vested holdings
+- **generate_monthly_vesting_timeline**: Generates a month-by-month breakdown of the vesting journey
 
 
 ## 💬 Prompt Examples

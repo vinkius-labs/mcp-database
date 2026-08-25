@@ -15,8 +15,8 @@ The Spell Slot Optimizer is a resource management tool designed for tabletop RPG
 
 ## Available Tools (3)
 - **calculate_optimal_allocation**: Computes the most efficient way to spend slots across a series of encounters
-- **analyze_spell_potency**: Summarizes the combat and utility potential of a player's known spells
 - **query_caster_capacity**: Retrieves the maximum available spell slots for a specific character configuration
+- **analyze_spell_potency**: Summarizes the combat and utility potential of a player's known spells
 
 
 ## 💬 Prompt Examples

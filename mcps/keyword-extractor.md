@@ -14,9 +14,9 @@ The Keyword Extractor is an analytical engine designed to identify the most rele
 
 
 ## Available Tools (3)
-- **rank_keywords**: Provides a prioritized list of keywords found within a text
-- **calculate_term_density**: Analyzes a specific word's importance within a given text block
 - **verify_language_capability**: Confirms whether the requested language is available
+- **calculate_term_density**: Analyzes a specific word's importance within a given text block
+- **rank_keywords**: Provides a prioritized list of keywords found within a text
 
 
 ## 💬 Prompt Examples

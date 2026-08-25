@@ -14,9 +14,9 @@ The Freight Cost Calculator is a specialized logistics engine that provides prec
 
 
 ## Available Tools (3)
+- **get_logistics_recommendation**: Get a logistics recommendation based on priority
 - **compare_all_modes**: Compare all available transport modes for a shipment
 - **estimate_mode_cost**: Calculate cost and time for a specific transport mode
-- **get_logistics_recommendation**: Get a logistics recommendation based on priority
 
 
 ## 💬 Prompt Examples

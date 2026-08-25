@@ -14,8 +14,8 @@ The Dice Probability Calculator is a specialized engine designed to model the ma
 
 
 ## Available Tools (3)
-- **compare_roll_mechanics**: Quantifies the impact of changing a roll mechanic
 - **calculate_threshold_probability**: Determines the probability of achieving a result >= target value
+- **compare_roll_mechanics**: Quantifies the impact of changing a roll mechanic
 - **compute_dice_distribution**: g., "1d6"). Supports modifiers, dropCount, and mechanics like advantage/disadvantage.
 
 Computes the statistical profile for a dice notation

@@ -14,9 +14,9 @@ The Keyword Proximity Checker is an analytical tool designed to assess semantic 
 
 
 ## Available Tools (3)
+- **get_word_distance**: Calculate the exact number of words separating two specific keywords in a given text
 - **detect_keyword_clusters**: Identify clusters where multiple keywords appear near each other
 - **evaluate_proximity_status**: Determine if specific pairs of keywords meet a predefined proximity threshold
-- **get_word_distance**: Calculate the exact number of words separating two specific keywords in a given text
 
 
 ## 💬 Prompt Examples

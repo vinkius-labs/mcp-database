@@ -14,8 +14,8 @@ The Tarot Spread Generator connects AI agents to the mystical art of tarot. By u
 
 
 ## Available Tools (3)
-- **generate_new_reading**: Executes a randomized drawing of cards for a specific spread template
 - **get_position_definitions**: Explains the meaning of each slot within a specific tarot spread
+- **generate_new_reading**: Executes a randomized drawing of cards for a specific spread template
 - **list_spread_templates**: Provides an overview of all available tarot spread configurations
 
 

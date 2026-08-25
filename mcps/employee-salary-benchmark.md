@@ -14,9 +14,9 @@ The Employee Salary Benchmark MCP connects AI agents to a specialized dataset of
 
 
 ## Available Tools (3)
+- **calculate_average_salary**: Calculate the average minimum salary for a list of roles
 - **compare_seniority_premium**: Calculate the estimated salary increase when moving between seniority levels
 - **get_salary_range**: Retrieve the minimum and maximum salary bounds for a professional profile
-- **calculate_average_salary**: Calculate the average minimum salary for a list of roles
 
 
 ## 💬 Prompt Examples

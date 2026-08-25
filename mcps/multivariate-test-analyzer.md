@@ -14,11 +14,11 @@ The Multivariate Test Analyzer is a statistical engine designed for simplified 2
 
 
 ## Available Tools (3)
-- **identify_winning_combination**: Identifies the winning combination in an experiment
 - **analyze_interaction_effects**: Analyates interaction effects between pairs of factors
 - **calculate_main_effects**: Each combination must have levels, conversions, and visits.
 
 Calculates main effects for each factor in an experiment
+- **identify_winning_combination**: Identifies the winning combination in an experiment
 
 
 ## 💬 Prompt Examples

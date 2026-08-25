@@ -15,10 +15,10 @@ The Long-Tail Extractor is a specialized analysis engine designed to uncover hid
 
 ## Available Tools (3)
 - **calculate_pattern_density**: Calculate the density of N-grams within a text
+- **filter_high_frequency_patterns**: Filter N-grams by a minimum frequency threshold
 - **extract_ngram_sequences**: Returns phrases with their counts and positions.
 
 Identify recurring sequences of words within a text
-- **filter_high_frequency_patterns**: Filter N-grams by a minimum frequency threshold
 
 
 ## 💬 Prompt Examples

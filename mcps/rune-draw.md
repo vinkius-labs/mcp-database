@@ -15,8 +15,8 @@ Connect your AI agent to the ancient wisdom of the Elder Futhark. This MCP serve
 
 ## Available Tools (3)
 - **multi_draw**: Perform a multi-rune reading
-- **rune_metadata**: Get metadata for a specific rune
 - **single_draw**: Perform a single rune draw
+- **rune_metadata**: Get metadata for a specific rune
 
 
 ## 💬 Prompt Examples

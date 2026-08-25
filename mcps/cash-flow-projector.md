@@ -14,9 +14,9 @@ The Cash Flow Projector is a financial forecasting tool that helps businesses pl
 
 
 ## Available Tools (3)
-- **analyze_liquidity_gaps**: Analyzes liquidity gaps in a projection
 - **generate_cash_flow_projection**: Generates a month-by-month cash flow projection
 - **calculate_working_capital_metrics**: Calculates working capital metrics
+- **analyze_liquidity_gaps**: Analyzes liquidity gaps in a projection
 
 
 ## 💬 Prompt Examples

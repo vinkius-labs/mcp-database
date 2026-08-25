@@ -14,9 +14,9 @@ The LTL-FTL Comparator is a specialized logistics tool designed to optimize ship
 
 
 ## Available Tools (4)
-- **find_break_even_threshold**: Find the weight threshold where FTL becomes cheaper than LTL
 - **calculate_ftl_metrics**: Calculate FTL shipment metrics
 - **calculate_ltl_metrics**: Calculate LTL shipment metrics
+- **find_break_even_threshold**: Find the weight threshold where FTL becomes cheaper than LTL
 - **get_shipment_recommendation**: Get a shipment mode recommendation
 
 

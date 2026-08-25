@@ -14,9 +14,9 @@ This MCP server provides specialized tools for logistics professionals to calcul
 
 
 ## Available Tools (3)
-- **get_class_from_density**: Maps a calculated density value to its specific NMFC freight class
 - **evaluate_cost_impact**: Calculates the estimated shipping cost impact based on freight class and a base rate
 - **calculate_shipping_density**: Determines the density of a shipment in pounds per cubic foot
+- **get_class_from_density**: Maps a calculated density value to its specific NMFC freight class
 
 
 ## 💬 Prompt Examples
