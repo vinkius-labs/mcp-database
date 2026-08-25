@@ -14,9 +14,9 @@ This MCP server provides decision-support tools for accelerator programs to eval
 
 
 ## Available Tools (3)
+- **calculate_optimal_mix**: Calculates the ideal distribution of online and offline sessions to maximize impact within a budget
 - **compare_delivery_modes**: Compares the effectiveness and cost-effectiveness of online versus offline delivery modes
 - **evaluate_session_suitability**: Evaluates if a specific topic is better suited for online or offline delivery
-- **calculate_optimal_mix**: Calculates the ideal distribution of online and offline sessions to maximize impact within a budget
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ The BPM Tap Tempo Analyzer is a specialized engine for processing raw rhythmic t
 
 
 ## Available Tools (3)
-- **audit_tap_integrity**: Quantifies the quality and reliability of the tap sequence
 - **compute_tap_metrics**: Processes raw tap data to determine the primary tempo and consistency metrics
+- **audit_tap_integrity**: Quantifies the quality and reliability of the tap sequence
 - **generate_musical_suggestions**: Translates a raw BPM into musically useful rhythmic alternatives
 
 

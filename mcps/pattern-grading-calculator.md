@@ -14,9 +14,9 @@ The Pattern Grading Calculator automates the mathematical process of enlarging o
 
 
 ## Available Tools (3)
-- **compute_pattern_grading_table**: Generates a complete table showing how much every individual pattern point should move for a specific target size
 - **distribute_size_increments**: Splits a total circumference change into specific, usable increments for key body landmarks
 - **calculate_standard_increment**: Determines the total amount of circumference change required for a single size jump within a chosen standard
+- **compute_pattern_grading_table**: Generates a complete table showing how much every individual pattern point should move for a specific target size
 
 
 ## 💬 Prompt Examples

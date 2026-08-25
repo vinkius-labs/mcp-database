@@ -14,9 +14,9 @@ The Recurring Event Expander MCP server provides a specialized engine for expand
 
 
 ## Available Tools (3)
-- **expand_occurrences**: Expands an RRULE string into a list of occurrence dates within a window
 - **get_rrule_summary**: Generates a human-readable summary of an RRULE
 - **validate_rrule**: Validates the syntax of an RRULE string
+- **expand_occurrences**: Expands an RRULE string into a list of occurrence dates within a window
 
 
 ## 💬 Prompt Examples

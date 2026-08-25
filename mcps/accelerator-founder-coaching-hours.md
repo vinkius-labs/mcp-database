@@ -15,8 +15,8 @@ This MCP server provides a specialized calculation engine for accelerator progra
 
 ## Available Tools (3)
 - **compute_effectiveness_ratio**: Evaluates how efficiently the coaching hours are being utilized relative to the needs and experience of the founders
-- **get_founder_hour_allocation**: Determines how many hours each founder should receive based on the total pool and company structure
 - **calculate_topic_priority**: Ranks the requested coaching topics to ensure critical subjects are addressed first
+- **get_founder_hour_allocation**: Determines how many hours each founder should receive based on the total pool and company structure
 
 
 ## 💬 Prompt Examples

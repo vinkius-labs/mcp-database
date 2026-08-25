@@ -15,8 +15,8 @@ The Minimum Payment Exploder is a powerful debt simulation engine designed to sh
 
 ## Available Tools (3)
 - **calculate_overpayment_benefit**: Calculate the benefits of making extra monthly payments
-- **simulate_minimum_impact**: Simulate the long-term impact of only paying minimum payments
 - **get_debt_status_at_period**: View a snapshot of your debt at a specific future month
+- **simulate_minimum_impact**: Simulate the long-term impact of only paying minimum payments
 
 
 ## 💬 Prompt Examples

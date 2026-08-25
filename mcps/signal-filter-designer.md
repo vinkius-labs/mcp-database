@@ -14,12 +14,12 @@ The Signal Filter Designer MCP server provides a suite of digital signal process
 
 
 ## Available Tools (4)
-- **apply_exponential_moving_average**: Smooths data while allowing for more recent changes to have a programmable impact on the output
 - **apply_first_order_filter**: Cutoff must be below Nyquist limit.
 
 Applies basic attenuation to remove either high-frequency noise or low-frequency drift
-- **apply_peaking_eq**: Boosts or cuts specific frequency ranges to shape the signal's tone
+- **apply_exponential_moving_average**: Smooths data while allowing for more recent changes to have a programmable impact on the output
 - **apply_moving_average_sma**: Smooths out short-term fluctuations in data by averaging local data points
+- **apply_peaking_eq**: Boosts or cuts specific frequency ranges to shape the signal's tone
 
 
 ## 💬 Prompt Examples

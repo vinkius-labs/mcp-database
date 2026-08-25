@@ -14,9 +14,9 @@ The Simple Dilution Mixer MCP server provides precision tools for laboratory and
 
 
 ## Available Tools (3)
-- **calculate_dilution_volumes**: Determines the specific volumes of concentrate and base liquid required to reach a dilution goal
 - **generate_dilution_recipe**: Converts calculated volumes into a set of clear, actionable instructions for a technician
 - **validate_concentration_tier**: Categorizes a target concentration into a safety and handling tier
+- **calculate_dilution_volumes**: Determines the specific volumes of concentrate and base liquid required to reach a dilution goal
 
 
 ## 💬 Prompt Examples

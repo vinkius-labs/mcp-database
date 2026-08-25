@@ -14,8 +14,8 @@ The Saw Blade Kerf Compensator MCP server provides essential tools for precision
 
 
 ## Available Tools (3)
-- **calculate_item_footprint**: Determines the effective space a single piece occupies on a board after accounting for the blade thickness
 - **check_linear_fitment**: Validates whether a series of pieces can successfully be cut from a single length of stock
+- **calculate_item_footprint**: Determines the effective space a single piece occupies on a board after accounting for the blade thickness
 - **evaluate_material_depletion**: Analyzes how much of the total material is destroyed by the cutting process
 
 

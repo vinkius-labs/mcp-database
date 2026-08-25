@@ -15,8 +15,8 @@ The Subtitle Readability Pacer is a calculation engine designed to prevent readi
 
 ## Available Tools (3)
 - **check_readability_risk**: Assess the readability risk of a subtitle segment
-- **calculate_speaking_rate**: Calculate characters per second (CPS) for a segment
 - **generate_subtitle_blocks**: Generate split subtitle blocks based on character limits
+- **calculate_speaking_rate**: Calculate characters per second (CPS) for a segment
 
 
 ## 💬 Prompt Examples

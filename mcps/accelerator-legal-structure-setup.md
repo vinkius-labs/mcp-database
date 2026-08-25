@@ -14,9 +14,9 @@ This MCP provides specialized tools to determine the financial investment and te
 
 
 ## Available Tools (3)
-- **compare_structures**: 
 - **estimate_compliance_roadmap**: 
 - **calculate_setup_costs**: 
+- **compare_structures**: 
 
 
 ## 💬 Prompt Examples

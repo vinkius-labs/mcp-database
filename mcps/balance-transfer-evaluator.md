@@ -16,10 +16,10 @@ Using tools like `calculate_transfer_economics`, you can see exactly how much yo
 
 
 ## Available Tools (4)
-- **evaluate_payment_sensitivity**: Evaluate how changes in monthly payment affect net savings
-- **estimate_payoff_timeline**: Estimate the time to be debt-free under a transfer plan
 - **classify_savings_tier**: Classify net savings into tiers
+- **evaluate_payment_sensitivity**: Evaluate how changes in monthly payment affect net savings
 - **calculate_transfer_economics**: Calculate the total cost of staying on original card vs transferring
+- **estimate_payoff_timeline**: Estimate the time to be debt-free under a transfer plan
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides a diagnostic suite to assess how well a founder or foun
 
 
 ## Available Tools (4)
+- **assess_intensity_resilience**: Evaluates if the founder has the necessary psychological stamina for the program's specific rigor
 - **analyze_coaching_match**: Specifically isolates how a founder's temperament interacts with different mentorship approaches
 - **calculate_fit_score**: Provides a high-level assessment of how well a founder or team matches a specific accelerator program
 - **evaluate_culture_synergy**: Determines if the founder's individual values will survive or thrive within the accelerator's ecosystem
-- **assess_intensity_resilience**: Evaluates if the founder has the necessary psychological stamina for the program's specific rigor
 
 
 ## 💬 Prompt Examples

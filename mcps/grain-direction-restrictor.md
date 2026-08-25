@@ -14,9 +14,9 @@ The Grain Direction Restrictor is a specialized constraint engine designed for w
 
 
 ## Available Tools (3)
-- **get_oriented_dimensions**: Calculates the effective footprint of a piece based on grain orientation
 - **validate_single_piece**: Verifies if a single piece fits within stock dimensions
 - **evaluate_batch_constraints**: Scans a batch of pieces for maximum required dimensions and invalidity
+- **get_oriented_dimensions**: Calculates the effective footprint of a piece based on grain orientation
 
 
 ## 💬 Prompt Examples

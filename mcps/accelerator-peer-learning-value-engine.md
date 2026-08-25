@@ -14,9 +14,9 @@ This MCP server provides specialized calculation engines to measure the impact o
 
 
 ## Available Tools (3)
+- **analyze_knowledge_flow**: Evaluates how structured events are contributing to the overall network intelligence
 - **calculate_peer_learning_metrics**: Provides a snapshot of the current network's health and connectivity
 - **estimate_collaboration_value**: Translates network activity into a monetary value representing the economic utility of the cohort
-- **analyze_knowledge_flow**: Evaluates how structured events are contributing to the overall network intelligence
 
 
 ## 💬 Prompt Examples

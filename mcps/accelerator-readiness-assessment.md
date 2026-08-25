@@ -15,8 +15,8 @@ This MCP server provides an intelligent assessment engine to evaluate how prepar
 
 ## Available Tools (3)
 - **get_preparation_recommendations**: Generates actionable advice to improve the startup's readiness score
-- **perform_gap_analysis**: Identifies specific areas where a startup falls short of the requirements for their target program
 - **calculate_readiness_score**: Provides the primary quantitative assessment of a company's readiness for a specific program
+- **perform_gap_analysis**: Identifies specific areas where a startup falls short of the requirements for their target program
 
 
 ## 💬 Prompt Examples

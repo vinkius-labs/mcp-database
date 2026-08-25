@@ -14,9 +14,9 @@ The Stretch Factor Calculator provides precise mathematical analysis for digital
 
 
 ## Available Tools (3)
-- **compute_stretch_factors**: Calculates the horizontal and vertical stretch factors
-- **analyze_aspect_match**: Analyzes if aspect ratios match and calculates distortion ratio
 - **calculate_pixel_footprint**: Calculates the physical footprint of a single source pixel
+- **analyze_aspect_match**: Analyzes if aspect ratios match and calculates distortion ratio
+- **compute_stretch_factors**: Calculates the horizontal and vertical stretch factors
 
 
 ## 💬 Prompt Examples

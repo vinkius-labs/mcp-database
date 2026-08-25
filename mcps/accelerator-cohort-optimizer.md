@@ -7,16 +7,16 @@
 
 **Category:** [business](../categories/business.md)
 
-Optimizes accelerator cohort sizes by balancing resource constraints and peer learning value.
+Optimize accelerator cohort selection for diversity, sector balance, and synergy.
 
 ## Description
-This MCP server provides specialized tools to determine the ideal number of participants for accelerator programs. It balances physical and financial constraints--such as desk space and funding--against the qualitative benefits of the network effect. Use `find_optimal_size` to identify the best cohort size for graduation success, `verify_resource_constraints` to check if a proposed size is feasible, and `calculate_network_effect_value` to estimate the peer learning benefits of a specific cohort size.
+This MCP server provides advanced optimization tools for accelerator programs to select the ideal group of companies. Use `calculate_optimal_composition` to determine the best group based on diversity goals and sector balance. You can also use `evaluate_cohort_health` to generate diagnostic reports on selected groups, or `simulate_synergy_impact` to predict peer learning potential and collaboration opportunities within a cohort.
 
 
 ## Available Tools (3)
-- **calculate_network_effect_value**: Estimates the qualitative "Peer Learning Value" gained from increasing the cohort size
-- **find_optimal_size**: Determines the single best cohort size that maximizes the balance between resource efficiency and graduation success
-- **verify_resource_constraints**: Validates if a specific proposed cohort size is feasible given the current operational limits
+- **calculate_optimal_composition**: 
+- **evaluate_cohort_health**: 
+- **simulate_synergy_impact**: 
 
 
 ## 💬 Prompt Examples
@@ -24,38 +24,38 @@ This MCP server provides specialized tools to determine the ideal number of part
 Here are some examples of how you can interact with the **Accelerator Cohort Optimizer** MCP server using an AI Agent (Claude, ChatGPT, etc.).
 
 **👤 You:**
-> "What is the best cohort size for a program with 50 desk spaces, 10 mentors, and $100,000 in funding?"
+> "Find the best 5 companies from this list for a balanced cohort."
 
 **🤖 AI Agent:**
-> The optimal cohort size is 42 participants, which utilizes 84% of your desk space and maintains a high graduation success rate.
+> The optimal cohort consists of Company A, Company B, Company C, Company D, and Company E, achieving a high diversity score and balanced sector distribution.
 
 ---
 
 **👤 You:**
-> "Is a cohort of 60 participants feasible if I only have 50 desks available?"
+> "How healthy is this group of companies?"
 
 **🤖 AI Agent:**
-> No, a cohort of 60 is not feasible because it exceeds the available desk space.
+> The cohort has an overall health index of 0.85, with high synergy scores and low competition risk.
 
 ---
 
 **👤 You:**
-> "What is the peer learning value for a cohort of 20 people with a base value of 100?"
+> "What is the synergy potential for these selected companies?"
 
 **🤖 AI Agent:**
-> The total value for a cohort of 20 participants is 2,400.
+> The group shows high peer learning potential with 4 estimated collaborative opportunities between different sectors.
 
 
 ## ❓ FAQ
 
-**Q: How does the tool handle physical constraints?**
-The `verify_resource_constraints` tool checks the proposed size against your available desk space and total program capacity to ensure feasibility.
+**Q: How do I select the best companies for my cohort?**
+You can use the `calculate_optimal_composition` tool, providing your applicant pool and desired constraints like diversity goals and sector balance.
 
-**Q: Can I calculate the value of peer networking?**
-Yes, you can use `calculate_network_effect_value` to estimate the total value gained from peer-to-peer interaction as the cohort size increases.
+**Q: Can I check if a cohort is well-balanced?**
+Yes, the `evaluate_cohort_health` tool provides a diagnostic report including diversity scores and competition risk.
 
-**Q: What determines the optimal cohort size?**
-The `find_optimal_size` tool calculates the ideal size by finding the point where graduation success is maximized within your budget, mentor ratio, and capacity limits.
+**Q: How is synergy measured?**
+The `simulate_synergy_impact` tool estimates peer learning potential and estimated collaborations based on company stages and sectors.
 
 
 ## Installation & Usage
