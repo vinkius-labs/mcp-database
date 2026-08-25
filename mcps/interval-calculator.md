@@ -14,11 +14,11 @@ An essential tool for musicians and theorists to calculate the distance between 
 
 
 ## Available Tools (3)
-- **identify_interval_properties**: Describe the musical character and identity of an interval
-- **calculate_note_frequency**: Determine the physical vibration frequency for a specific note
 - **calculate_semitone_distance**: g., "C4") and end note (e.g., "E4") and returns total semitones moved.
 
 Find the raw numerical distance between two pitches in semitones
+- **calculate_note_frequency**: Determine the physical vibration frequency for a specific note
+- **identify_interval_properties**: Describe the musical character and identity of an interval
 
 
 ## 💬 Prompt Examples

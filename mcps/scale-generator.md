@@ -14,11 +14,11 @@ The Scale Generator MCP connects AI agents to a powerful music theory engine. Us
 
 
 ## Available Tools (3)
-- **list_available_scales**: Allows discovery of the supported scales
 - **validate_musical_input**: Validates whether a user's provided tonic and scale type are musically valid
 - **generate_scale_report**: g., "C") and a scale type from the catalog.
 
 Generates a complete structural breakdown of a specific scale across multiple octaves
+- **list_available_scales**: Allows discovery of the supported scales
 
 
 ## 💬 Prompt Examples

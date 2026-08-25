@@ -15,8 +15,8 @@ This MCP server provides precise estimates for construction-related fees includi
 
 ## Available Tools (3)
 - **lookup_city_rules**: Lookup fee rules for a specific city
-- **verify_valuation**: Verify if a valuation is valid for a city
 - **estimate_permit_fee**: Calculate estimated building permit fees
+- **verify_valuation**: Verify if a valuation is valid for a city
 
 
 ## 💬 Prompt Examples

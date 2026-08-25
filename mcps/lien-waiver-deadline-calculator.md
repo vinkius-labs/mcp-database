@@ -16,8 +16,8 @@ This MCP server provides precise calculations for US Mechanics Lien deadlines. B
 ## Available Tools (4)
 - **calculate_enforcement_deadline**: Calculate the deadline for filing an enforcement lawsuit
 - **calculate_lien_filing_deadline**: Calculate the deadline for recording a lien
-- **calculate_preliminary_notice_deadline**: Calculate the deadline for serving a preliminary notice
 - **get_state_regulations**: Retrieve statutory period durations for a specific jurisdiction
+- **calculate_preliminary_notice_deadline**: Calculate the deadline for serving a preliminary notice
 
 
 ## 💬 Prompt Examples

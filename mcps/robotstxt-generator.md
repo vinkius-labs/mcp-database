@@ -14,8 +14,8 @@ The Robots.txt Generator is a configuration-driven engine designed to produce pr
 
 
 ## Available Tools (3)
-- **generate_robots_txt**: Generates a robots.txt file based on agent rules
 - **get_configuration_summary**: Provides a summary of the current robots.txt configuration
+- **generate_robots_txt**: Generates a robots.txt file based on agent rules
 - **validate_rule_syntax**: Validates the syntax of robots.txt rules
 
 

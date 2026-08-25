@@ -14,9 +14,9 @@ The Values Alignment Score MCP server provides diagnostic tools to identify disc
 
 
 ## Available Tools (3)
-- **calculate_alignment_gaps**: Calculates the numerical discrepancy for every declared value
 - **identify_priority_area**: Pinpoints the specific category or value that requires immediate focus
 - **generate_dissatisfaction_ranking**: Identifies which values are causing the most significant life friction
+- **calculate_alignment_gaps**: Calculates the numerical discrepancy for every declared value
 
 
 ## 💬 Prompt Examples

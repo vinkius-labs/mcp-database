@@ -14,9 +14,9 @@ The Meal Cost Calculator MCP connects your AI agent to precise culinary costing 
 
 
 ## Available Tools (4)
-- **get_cost_contribution_breakdown**: Shows which ingredients drive the cost
-- **calculate_recipe_total**: Calculates the total cost of a recipe
 - **calculate_serving_split**: Calculates the cost per individual serving
+- **calculate_recipe_total**: Calculates the total cost of a recipe
+- **get_cost_contribution_breakdown**: Shows which ingredients drive the cost
 - **validate_measurement_units**: Validates measurement units consistency
 
 

@@ -14,8 +14,8 @@ The Sleep Debt Tracker MCP server provides a specialized calculation engine to a
 
 
 ## Available Tools (3)
-- **analyze_sleep_consistency**: Evaluates how stable or erratic the user's sleep schedule has been
 - **calculate_sleep_metrics**: Calculates sleep metrics including accumulated debt, average duration, and trend
+- **analyze_sleep_consistency**: Evaluates how stable or erratic the user's sleep schedule has been
 - **estimate_recovery_days**: Predicts how many nights of extra sleep are needed to reach zero debt
 
 

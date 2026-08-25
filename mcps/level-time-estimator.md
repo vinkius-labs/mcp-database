@@ -14,9 +14,9 @@ The Level Time Estimator is an analytical tool designed for game designers and p
 
 
 ## Available Tools (3)
+- **calculate_timeline**: Calculate progression timeline
 - **evaluate_activity_impact**: Evaluate how different activities affect XP rate
 - **find_progression_breakpoints**: Identify significant changes in progression speed
-- **calculate_timeline**: Calculate progression timeline
 
 
 ## 💬 Prompt Examples

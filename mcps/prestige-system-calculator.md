@@ -14,9 +14,9 @@ This MCP server provides a specialized calculation engine to analyze progression
 
 
 ## Available Tools (3)
+- **find_optimal_prestige_count**: Determines the exact number of prestiges that results in the absolute minimum time to reach the target goal
 - **calculate_breakeven_point**: Identifies the first prestige count where performing a prestige becomes more efficient than not performing one at all
 - **calculate_path_time**: Compares total time required to reach a target goal using zero prestiges versus a specific number of prestiges
-- **find_optimal_prestige_count**: Determines the exact number of prestiges that results in the absolute minimum time to reach the target goal
 
 
 ## 💬 Prompt Examples

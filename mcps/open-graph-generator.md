@@ -14,9 +14,9 @@ The Open Graph Generator MCP server automates the creation of essential social S
 
 
 ## Available Tools (3)
-- **get_content_types**: Lists all supported content types
-- **generate_html_tags**: Generates Open Graph and Twitter meta tags
 - **validate_metadata**: Checks if metadata adheres to social media best practices
+- **generate_html_tags**: Generates Open Graph and Twitter meta tags
+- **get_content_types**: Lists all supported content types
 
 
 ## 💬 Prompt Examples

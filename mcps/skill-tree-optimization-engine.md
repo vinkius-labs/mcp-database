@@ -14,11 +14,11 @@ The Skill Tree Optimization Engine is a specialized tool designed to solve the c
 
 
 ## Available Tools (3)
+- **evaluate_node_efficiency**: Compares how cost-effective a specific node is based on the immediate boost it provides to all attributes
+- **get_unlock_breakpoints**: Identifies the specific point totals required to unlock significant milestones or high-tier skill clusters
 - **calculate_optimal_build**: Prioritizes nodes with highest value for chosen objective relative to cost.
 
 Finds the best possible combination of skill nodes to maximize a specific attribute weight given a fixed amount of points
-- **evaluate_node_efficiency**: Compares how cost-effective a specific node is based on the immediate boost it provides to all attributes
-- **get_unlock_breakpoints**: Identifies the specific point totals required to unlock significant milestones or high-tier skill clusters
 
 
 ## 💬 Prompt Examples

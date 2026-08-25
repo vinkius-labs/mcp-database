@@ -15,10 +15,10 @@ The Batch Cooking Planner is an essential tool for meal prepping. It allows you 
 
 ## Available Tools (3)
 - **scale_recipe**: Scale a recipe to a target number of servings
-- **generate_shopping_list**: Generate a consolidated shopping list from multiple recipes
 - **get_category_counts**: ).
 
 Get the count of unique ingredients in each food category
+- **generate_shopping_list**: Generate a consolidated shopping list from multiple recipes
 
 
 ## 💬 Prompt Examples

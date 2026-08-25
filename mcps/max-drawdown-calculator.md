@@ -14,9 +14,9 @@ The Max Drawdown Calculator is a specialized risk assessment tool designed to an
 
 
 ## Available Tools (4)
-- **calculate_max_drawdown**: Identify the single worst percentage decline and its duration
 - **calculate_ulcer_index**: Provide a single metric representing the accumulated psychological stress
 - **get_current_drawdown_status**: Compare the most recent market state against historical highs
+- **calculate_max_drawdown**: Identify the single worst percentage decline and its duration
 - **calculate_recovery_metrics**: Analyze how long it takes for assets to bounce back after losing value
 
 

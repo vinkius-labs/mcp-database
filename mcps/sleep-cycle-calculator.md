@@ -14,9 +14,9 @@ Optimize your rest by aligning your sleep with natural 90-minute circadian cycle
 
 
 ## Available Tools (3)
-- **evaluate_sleep_adequacy**: Checks if the proposed sleep duration meets the biological needs of the user based on their age
 - **calculate_bedtimes**: Determines the best times to go to bed to wake up at a specific time while completing full 90-minute sleep cycles
 - **calculate_jet_lag_adjustment**: Determines the necessary circadian adjustment period for travel
+- **evaluate_sleep_adequacy**: Checks if the proposed sleep duration meets the biological needs of the user based on their age
 
 
 ## 💬 Prompt Examples

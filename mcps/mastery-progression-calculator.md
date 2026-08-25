@@ -14,10 +14,10 @@ This MCP server provides an analytical engine to calculate the time required to 
 
 
 ## Available Tools (4)
-- **get_cumulative_reward_value**: Calculates the total sum of all rewards earned up to a specific tier
-- **get_total_progression_timeline**: Computee the entire progression roadmap to Platinum
 - **calculate_streak_acceleration_factor**: Analyzes the impact of a streak bonus on progression speed
+- **get_cumulative_reward_value**: Calculates the total sum of all rewards earned up to a specific tier
 - **get_tier_duration**: Calculates hours required for a specific mastery tier
+- **get_total_progression_timeline**: Computee the entire progression roadmap to Platinum
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ The Life Satisfaction Wheel MCP provides a diagnostic framework to evaluate how 
 
 
 ## Available Tools (3)
+- **calculate_global_satisfaction**: Calculate the average satisfaction score across all life dimensions
 - **identify_critical_area**: Identify the life dimension with the lowest satisfaction score
 - **measure_imbalance**: Calculate the degree of imbalance between life dimensions
-- **calculate_global_satisfaction**: Calculate the average satisfaction score across all life dimensions
 
 
 ## 💬 Prompt Examples

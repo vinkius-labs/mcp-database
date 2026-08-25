@@ -15,8 +15,8 @@ The Yield Calculator MCP server helps culinary professionals estimate the amount
 
 ## Available Tools (3)
 - **calculate_batch_loss**: Calculate total waste and usable mass for a collection of ingredients
-- **search_ingredients**: Search the ingredient registry for matches
 - **calculate_ingredient_yield**: Calculate expected usable mass and waste for an ingredient
+- **search_ingredients**: Search the ingredient registry for matches
 
 
 ## 💬 Prompt Examples

@@ -14,11 +14,11 @@ The Mode Calculator is a specialized tool for musicians and theorists to instant
 
 
 ## Available Tools (3)
-- **list_mode_notes**: Provides the sequence of individual notes that make up a specific mode
 - **generate_mode_set**: Generates the set of all 7 modes for a given parent scale
 - **analyze_mode_texture**: g., Bright, Dark) and genre associated with a specific mode name.
 
 Retrieves the sonic character and typical musical genre for a single specified mode
+- **list_mode_notes**: Provides the sequence of individual notes that make up a specific mode
 
 
 ## 💬 Prompt Examples
