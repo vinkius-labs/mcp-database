@@ -14,10 +14,10 @@ The Chatbot Dialogue Consistency Checker is a diagnostic tool designed to audit 
 
 
 ## Available Tools (5)
-- **analyze_persona_alignment**: Analyates dialogue for alignment with a specific persona
 - **calculate_structural_ratio**: Calculates the ratio of questions to statements in bot turns
-- **calculate_turn_variance**: Calculates the standard deviation of dialogue turn lengths
 - **evaluate_fallback_quality**: Evaluates the quality of fallback messages
+- **analyze_persona_alignment**: Analyates dialogue for alignment with a specific persona
+- **calculate_turn_variance**: Calculates the standard deviation of dialogue turn lengths
 - **detect_phrase_repetition**: Detects repeated substrings across dialogue turns
 
 

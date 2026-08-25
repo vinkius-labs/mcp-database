@@ -14,9 +14,9 @@ The Content Length Benchmark Analyzer evaluates how well your text adheres to op
 
 
 ## Available Tools (3)
-- **analyze_scannability**: Analyzes text scannability for mobile
 - **check_benchmark_deviations**: Compares text metrics against benchmarks
 - **get_text_metrics**: Extracts linguistic metrics from raw text
+- **analyze_scannability**: Analyzes text scannability for mobile
 
 
 ## 💬 Prompt Examples

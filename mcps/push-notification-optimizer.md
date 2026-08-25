@@ -14,11 +14,11 @@ The Push Notification Optimizer helps you ensure your mobile notifications are i
 
 
 ## Available Tools (5)
-- **evaluate_copy_efficiency**: Identifies inefficiency caused by repeating information between the title and the body
 - **predict_text_truncation**: Simulates exactly how a user will see the text when it exceeds platform limits
-- **calculate_urgency_score**: Quantifies the psychological urgency of the notification body based on linguistic cues
 - **analyze_engagement_features**: Evaluates the presence of engagement-driving elements like emojis and personalization tokens
+- **calculate_urgency_score**: Quantifies the psychological urgency of the notification body based on linguistic cues
 - **check_display_compliance**: Determines if the provided notification text fits within the visible character limits for a specific platform
+- **evaluate_copy_efficiency**: Identifies inefficiency caused by repeating information between the title and the body
 
 
 ## 💬 Prompt Examples

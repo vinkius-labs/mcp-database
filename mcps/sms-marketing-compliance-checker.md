@@ -14,9 +14,9 @@ This MCP server provides a powerful engine to audit SMS campaigns. Use `analyze_
 
 
 ## Available Tools (3)
-- **analyze_encoding_impact**: Determine SMS encoding type and segment count
 - **calculate_link_optimization**: Measure character savings from URL shortening
 - **validate_regulatory_compliance**: Validate presence of required legal elements in SMS
+- **analyze_encoding_impact**: Determine SMS encoding type and segment count
 
 
 ## 💬 Prompt Examples

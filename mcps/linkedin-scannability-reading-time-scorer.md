@@ -15,9 +15,9 @@ This MCP server provides precise analytical metrics to optimize LinkedIn content
 
 ## Available Tools (4)
 - **estimate_mobile_viewport_impact**: Estimates how much of a post is visible on mobile without scrolling
-- **analyze_structural_rhythm**: Analyzes the structural rhythm and scannability of a post
 - **check_f_pattern_compliance**: Checks how well a post follows the F-pattern reading behavior
 - **get_reading_time**: Calculates estimated reading time for a LinkedIn post
+- **analyze_structural_rhythm**: Analyzes the structural rhythm and scannability of a post
 
 
 ## 💬 Prompt Examples

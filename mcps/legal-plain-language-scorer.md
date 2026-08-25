@@ -14,9 +14,9 @@ The Legal Plain Language Scorer is a specialized tool designed to evaluate legal
 
 
 ## Available Tools (3)
+- **analyze_syntax**: Analyze mechanical complexity in legal text
 - **audit_definitions**: Audit consistency of defined terms in legal text
 - **evaluate_readability**: Analyze the readability of legal text
-- **analyze_syntax**: Analyze mechanical complexity in legal text
 
 
 ## 💬 Prompt Examples

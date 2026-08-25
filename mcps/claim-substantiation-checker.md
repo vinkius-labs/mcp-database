@@ -14,6 +14,9 @@ The Claim Substantiation Checker helps you audit marketing text for regulatory c
 
 
 ## Available Tools (4)
+- **absolute_statements_check**: g., "typically").
+
+Scans text for absolute statements lacking qualifiers
 - **comparative_claims_check**: g., "than...").
 
 Scans text for comparative words without a baseline
@@ -21,9 +24,6 @@ Scans text for comparative words without a baseline
 - **unsupported_numerics_check**: g., "50%" without direction).
 
 Scans text for numeric claims that lack sufficient context or units
-- **absolute_statements_check**: g., "typically").
-
-Scans text for absolute statements lacking qualifiers
 
 
 ## 💬 Prompt Examples

@@ -39,15 +39,6 @@ Your AI acts as a control plane for Cursor's autonomous coding agents — create
 
 
 ## Available Tools (12)
-- **archive_agent**: The agent is no longer active but can be restored with unarchive_agent. This operation is idempotent — archiving an already-archived agent succeeds without error.
-
-Archive (soft delete) a Cursor cloud agent. Idempotent operation
-- **cancel_run**: This is a terminal cancellation — once cancelled, the run cannot be resumed. Use this when a run is taking too long or is no longer needed.
-
-Cancel a running Cursor cloud agent run. Terminal operation
-- **create_agent**: The agent receives a prompt (required), can be configured with a model (e.g. gpt-4.1, claude-sonnet-4-20250514, gemini-2.5-pro), optional repository URLs with starting refs, autoCreatePR flag, and mode (agent or plan). Returns the agent object and an initial run object.
-
-Create a new Cursor cloud agent with a prompt and optional repos, model, and mode
 - **create_run**: The run receives a prompt (required), optional images, optional MCP servers, and an optional mode override. Returns the run object with status and ID.
 
 Create a new run for an existing Cursor cloud agent
@@ -72,6 +63,15 @@ List all runs for a specific Cursor cloud agent
 - **unarchive_agent**: This operation is idempotent — unarchiving an already-active agent succeeds without error.
 
 Restore an archived Cursor cloud agent. Idempotent operation
+- **archive_agent**: The agent is no longer active but can be restored with unarchive_agent. This operation is idempotent — archiving an already-archived agent succeeds without error.
+
+Archive (soft delete) a Cursor cloud agent. Idempotent operation
+- **cancel_run**: This is a terminal cancellation — once cancelled, the run cannot be resumed. Use this when a run is taking too long or is no longer needed.
+
+Cancel a running Cursor cloud agent run. Terminal operation
+- **create_agent**: The agent receives a prompt (required), can be configured with a model (e.g. gpt-4.1, claude-sonnet-4-20250514, gemini-2.5-pro), optional repository URLs with starting refs, autoCreatePR flag, and mode (agent or plan). Returns the agent object and an initial run object.
+
+Create a new Cursor cloud agent with a prompt and optional repos, model, and mode
 - **list_agents**: Supports limit (default 20, max 100), cursor for pagination, prUrl to filter by PR, and includeArchived (default true). Returns items array and nextCursor for pagination.
 
 List all Cursor cloud agents with pagination and filtering

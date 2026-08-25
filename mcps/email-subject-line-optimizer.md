@@ -15,8 +15,8 @@ Maximize your email open rates with the Email Subject Line Optimizer. This MCP s
 
 ## Available Tools (3)
 - **analyze_spam_risk**: Detects vocabulary and formatting patterns that trigger spam filters
-- **estimate_engagement_score**: Predicts the potential for higher open rates based on engagement drivers
 - **predict_display_behavior**: Evaluates how the subject line and prehtml will appear across different mail clients
+- **estimate_engagement_score**: Predicts the potential for higher open rates based on engagement drivers
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ The Micro Impact Aggregator transforms small, repeatable sustainable habits--lik
 
 ## Available Tools (3)
 - **map_impact_to_analogies**: Converts metrics to relatable analogies
-- **calculate_period_impact**: Calculates total environmental and financial savings for a period
 - **get_achievement_progress**: Evaluates user engagement via streaks and milestones
+- **calculate_period_impact**: Calculates total environmental and financial savings for a period
 
 
 ## 💬 Prompt Examples

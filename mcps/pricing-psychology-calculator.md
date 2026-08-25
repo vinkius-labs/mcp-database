@@ -15,10 +15,10 @@ The Pricing Psychology Calculator is a specialized tool for auditing retail pric
 
 ## Available Tools (5)
 - **calculate_anchoring_impact**: Quantifies the psychological weight of a discount
-- **analyze_bundle_value**: Assesses the perceived savings and clarity of a multi-item bundle
-- **detect_charm_pricing**: Detects if a price uses psychological endings (.95/.99) and calculates left-digit shift
-- **validate_decoy_effectiveness**: Determines if a three-tier pricing structure contains a functional decoy
 - **compare_payment_framing**: Evaluates the psychological impact of splitting a total cost into installments
+- **detect_charm_pricing**: Detects if a price uses psychological endings (.95/.99) and calculates left-digit shift
+- **analyze_bundle_value**: Assesses the perceived savings and clarity of a multi-item bundle
+- **validate_decoy_effectiveness**: Determines if a three-tier pricing structure contains a functional decoy
 
 
 ## 💬 Prompt Examples

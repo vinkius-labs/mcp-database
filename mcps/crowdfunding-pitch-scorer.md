@@ -18,10 +18,10 @@ The Crowdfunding Pitch Scorer evaluates your campaign text for key success facto
 
 
 ## Available Tools (4)
-- **score_narrative_ratio**: Analyzes the ratio of storytelling to the funding request
-- **check_reward_tiers**: Evaluates the clarity and differentiation of reward tiers
-- **audit_transparency**: Audits for risk disclosures and timeline information
 - **count_persuasion_elements**: Quantifies scarcity and social proof elements
+- **audit_transparency**: Audits for risk disclosures and timeline information
+- **check_reward_tiers**: Evaluates the clarity and differentiation of reward tiers
+- **score_narrative_ratio**: Analyzes the ratio of storytelling to the funding request
 
 
 ## 💬 Prompt Examples

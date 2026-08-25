@@ -14,9 +14,9 @@ The Cognitive Load Scorer is an analytical engine designed to measure 'cognitive
 
 
 ## Available Tools (3)
-- **evaluate_lexical_difficulty**: Evaluate the lexical difficulty of a text
-- **analyze_syntactic_structure**: Analyze the syntactic structure of a text
 - **calculate_working_memory_load**: Calculate the working memory load of a text
+- **analyze_syntactic_structure**: Analyze the syntactic structure of a text
+- **evaluate_lexical_difficulty**: Evaluate the lexical difficulty of a text
 
 
 ## 💬 Prompt Examples

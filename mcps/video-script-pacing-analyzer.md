@@ -14,8 +14,8 @@ Optimize your video content for maximum viewer retention. This MCP server provid
 
 
 ## Available Tools (4)
-- **calculate_pacing_variance**: Analyze the variance in script segment durations
 - **analyze_script_timing**: Analyze timing and CTA placement in a video script
+- **calculate_pacing_variance**: Analyze the variance in script segment durations
 - **evaluate_hook_retention**: Evaluate how well the script hooks viewers in early windows
 - **assess_audio_rhythm**: Analyze the rhythm and breathability of the script
 

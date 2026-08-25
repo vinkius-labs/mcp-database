@@ -16,8 +16,8 @@ Optimize your advertising performance by ensuring perfect synergy between text a
 ## Available Tools (4)
 - **calculate_keyword_overlap**: Calculate overlap between ad text and image description
 - **estimate_text_density**: Estimate text density on a creative
-- **verify_cta_consistency**: Verify consistency between CTA and ad promise
 - **score_headline_redundancy**: Score redundancy of a headline relative to primary text
+- **verify_cta_consistency**: Verify consistency between CTA and ad promise
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ The Secondhand Value Calculator helps you determine the worth of your pre-owned 
 
 ## Available Tools (3)
 - **evaluate_disposal_utility**: Recommend a disposal strategy
-- **calculate_net_proceeds**: Calculate net proceeds after platform fees
 - **estimate_market_valuation**: Estimate the current market value of an item
+- **calculate_net_proceeds**: Calculate net proceeds after platform fees
 
 
 ## 💬 Prompt Examples

@@ -17,8 +17,8 @@ The Referral Program Copy Scorer is an analytical tool designed to evaluate the 
 - **check_compliance_visibility**: Verifies that legal disclaimers or links to terms are present to ensure transparency
 - **identify_reward_framing**: Identifies which psychological method is being used to communicate value
 - **score_incentive_clarity**: Determines if both the sender and the receiver benefits are clearly articulated in the text
-- **audit_cta_specificity**: Assesses if the call-to-action provides enough detail for a user to act without confusion
 - **calculate_friction_score**: Evaluates how much cognitive effort is required based on the length and complexity of the instructions
+- **audit_cta_specificity**: Assesses if the call-to-action provides enough detail for a user to act without confusion
 
 
 ## 💬 Prompt Examples

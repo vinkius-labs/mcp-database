@@ -19,10 +19,10 @@ The Webinar Registration Copy Analyzer evaluates your event landing pages using 
 
 ## Available Tools (5)
 - **analyze_agenda_bullets**: Evaluates if the webinar agenda focuses on attendee outcomes rather than just content topics
-- **detect_urgency_markers**: Identifies whether the copy utilizes psychological drivers of scarcity and time-sensitivity
-- **estimate_form_friction**: Predicts the risk of user abandonment based on the complexity of the registration form
 - **evaluate_speaker_authority**: Measures the level of trust established by the speaker's presentation text
 - **analyze_cta_specificity**: Gauges how clear and actionable the registration button text is
+- **detect_urgency_markers**: Identifies whether the copy utilizes psychological drivers of scarcity and time-sensitivity
+- **estimate_form_friction**: Predicts the risk of user abandonment based on the complexity of the registration form
 
 
 ## 💬 Prompt Examples

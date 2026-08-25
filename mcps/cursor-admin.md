@@ -40,6 +40,21 @@ Your AI acts as a team administration gateway — monitor usage, control spendin
 
 
 ## Available Tools (12)
+- **get_team_info**: [INFERENCE] The endpoint path /teams/info is inferred from REST conventions; no explicit documentation exists for this endpoint.
+
+Retrieve team metadata and overview information
+- **get_team_settings**: [INFERENCE] The endpoint path /teams/settings is inferred from REST conventions and the fact that team_settings appears as an audit event type in the Admin API documentation.
+
+Retrieve the current team settings
+- **list_team_members**: Use this to see who is on the team and their current roles.
+
+List all team members in the organization
+- **set_user_spend_limit**: Pass null for spend_limit_dollars to remove an existing spend limit. Returns an outcome and message indicating success or failure. Note: This endpoint has a higher rate limit of 250 req/min.
+
+Set or remove the spend limit for a specific team member
+- **upsert_repo_blocklists**: Pass a JSON array of repos, each with a url and a patterns array. Existing entries with matching URLs are updated; new entries are created. [INFERENCE] The exact response shape is inferred from the REST pattern.
+
+Add or update repository blocklist entries
 - **get_audit_logs**: Supports pagination via page and pageSize. Event types include team_settings, member_management, billing, and other administrative actions. Returns events array plus pagination metadata.
 
 Retrieve audit logs for the team with optional filters
@@ -52,30 +67,15 @@ Retrieve the repository blocklist configuration
 - **get_spending_data**: Supports search, sorting, and pagination. Use this for billing cycles and budget monitoring.
 
 Retrieve team spending data with per-member breakdowns
-- **get_team_info**: [INFERENCE] The endpoint path /teams/info is inferred from REST conventions; no explicit documentation exists for this endpoint.
-
-Retrieve team metadata and overview information
-- **get_team_settings**: [INFERENCE] The endpoint path /teams/settings is inferred from REST conventions and the fact that team_settings appears as an audit event type in the Admin API documentation.
-
-Retrieve the current team settings
 - **get_usage_events**: Filter by date range, user, service account, and hosting type. Supports pagination. Useful for detailed usage analysis and cost attribution.
 
 Retrieve filtered usage events for the team
-- **list_team_members**: Use this to see who is on the team and their current roles.
-
-List all team members in the organization
 - **remove_team_member**: This is a destructive operation — the member will lose access to the team. Provide either email or user_id to identify the member. Returns success status and the affected user ID.
 
 Remove a team member from the organization
-- **set_user_spend_limit**: Pass null for spend_limit_dollars to remove an existing spend limit. Returns an outcome and message indicating success or failure. Note: This endpoint has a higher rate limit of 250 req/min.
-
-Set or remove the spend limit for a specific team member
 - **update_team_settings**: Only the fields included in settings_json will be modified. [INFERENCE] The endpoint path /teams/settings with POST is inferred from REST conventions.
 
 Update team settings with partial configuration
-- **upsert_repo_blocklists**: Pass a JSON array of repos, each with a url and a patterns array. Existing entries with matching URLs are updated; new entries are created. [INFERENCE] The exact response shape is inferred from the REST pattern.
-
-Add or update repository blocklist entries
 
 
 ## 💬 Prompt Examples

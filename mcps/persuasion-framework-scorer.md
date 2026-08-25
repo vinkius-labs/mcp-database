@@ -16,8 +16,8 @@ The Persuasion Framework Scorer analyzes text to detect the presence and strengt
 ## Available Tools (4)
 - **identify_framework**: Identify copywriting frameworks like PAS, AIDA, BAB, or FAB
 - **detect_urgency**: Detect urgency triggers in text
-- **analyze_cialdini**: Analyze text for Cialdini principles of persuasion
 - **evaluate_cta**: Evaluate the effectiveness of a Call to Action (CTA)
+- **analyze_cialdini**: Analyze text for Cialdini principles of persuasion
 
 
 ## 💬 Prompt Examples
