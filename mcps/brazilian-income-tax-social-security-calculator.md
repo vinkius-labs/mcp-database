@@ -14,9 +14,9 @@ This MCP server provides a computational engine to calculate Brazilian Individua
 
 
 ## Available Tools (3)
+- **generate_payment_metadata**: Generate DARF payment metadata
 - **calculate_inss_deduction**: Calculate Social Security (INSS) deduction
 - **evaluate_irpf_liability**: Evaluate IRPF taxation method
-- **generate_payment_metadata**: Generate DARF payment metadata
 
 
 ## 💬 Prompt Examples

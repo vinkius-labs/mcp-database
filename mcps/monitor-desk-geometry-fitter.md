@@ -15,8 +15,8 @@ This MCP server provides tools to calculate the physical stability of a monitor 
 
 ## Available Tools (3)
 - **check_overhang_risk**: Determines if the monitor extends past the desk edge
-- **evaluate_current_placement**: Evaluates if a specific placement is safe and stable
 - **calculate_safety_requirement**: Calculates the minimum required desk depth
+- **evaluate_current_placement**: Evaluates if a specific placement is safe and stable
 
 
 ## 💬 Prompt Examples

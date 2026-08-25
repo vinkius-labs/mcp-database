@@ -14,11 +14,11 @@ Ensure your space looks professionally designed by verifying that your rug place
 
 
 ## Available Tools (3)
-- **verify_furniture_anchoring**: Validates rug adequacy based on furniture layout
+- **get_design_compliance_report**: Aggregates all spatial checks into a single pass/fail audit
 - **verify_floor_border**: Returns compliance status and dimensions.
 
 Checks if the rug leaves a sufficient 12-inch bare floor border
-- **get_design_compliance_report**: Aggregates all spatial checks into a single pass/fail audit
+- **verify_furniture_anchoring**: Validates rug adequacy based on furniture layout
 
 
 ## 💬 Prompt Examples

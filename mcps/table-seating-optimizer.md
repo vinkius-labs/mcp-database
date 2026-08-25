@@ -15,8 +15,8 @@ The Table Seating Optimizer is an advanced engine designed to help event planner
 
 ## Available Tools (3)
 - **estimate_required_space**: Estimate the minimum venue size required
-- **generate_layout_grid**: Generate the table arrangement grid
 - **calculate_max_capacity**: Calculate the maximum number of guests that can be accommodated in a room
+- **generate_layout_grid**: Generate the table arrangement grid
 
 
 ## 💬 Prompt Examples

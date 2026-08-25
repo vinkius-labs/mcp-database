@@ -15,8 +15,8 @@ The Cake Serving Sizer is a precision planning tool for bakers and event planner
 
 ## Available Tools (3)
 - **calculate_required_tiers**: Suggests a combination of tiers to meet a target guest count
-- **calculate_tier_yield**: Calculates how many people a single tier can feed
 - **calculate_stack_yield**: Calculates total servings for an existing multi-tier cake
+- **calculate_tier_yield**: Calculates how many people a single tier can feed
 
 
 ## 💬 Prompt Examples

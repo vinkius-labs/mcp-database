@@ -14,8 +14,8 @@ The Valid Outfit Generator MCP server connects AI agents to a rule-based engine 
 
 
 ## Available Tools (3)
-- **count_valid_outfits**: Calculates the total number of possible clothing combinations that satisfy the formality consistency rule
 - **get_outfit_samples**: Retrieves a limited list of valid clothing combinations for previewing
+- **count_valid_outfits**: Calculates the total number of possible clothing combinations that satisfy the formality consistency rule
 - **verify_outfit_consistency**: Validates whether a specific, pre-selected group of items adheres to the formality rules
 
 

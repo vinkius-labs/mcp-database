@@ -14,8 +14,8 @@ The Beauty Device Comparison Engine connects AI agents to a specialized database
 
 
 ## Available Tools (4)
-- **compare_devices**: Compare multiple beauty devices
 - **get_efficacy_projections**: Get efficacy projections for a specific device
+- **compare_devices**: Compare multiple beauty devices
 - **filter_devices**: Filter beauty devices by skin type and concern
 - **get_treatment_implications**: Get treatment implications for a specific device
 

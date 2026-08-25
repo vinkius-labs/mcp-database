@@ -14,9 +14,9 @@ The Closet Space Geometry Calculator helps you avoid the frustration of overstuf
 
 
 ## Available Tools (3)
-- **generate_capacity_audit**: Generate a summary audit of closet capacity
 - **calculate_rail_load**: Calculate if hangers fit on a closet rail
 - **calculate_shelf_load**: Calculate if folded items fit on a closet shelf
+- **generate_capacity_audit**: Generate a summary audit of closet capacity
 
 
 ## 💬 Prompt Examples

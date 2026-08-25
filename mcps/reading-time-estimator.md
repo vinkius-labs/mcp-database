@@ -14,9 +14,9 @@ The Reading Time Estimator MCP server provides precise calculations for text con
 
 
 ## Available Tools (3)
+- **calculate_completion_date**: Calculate the date when reading will be finished
 - **compare_reading_programs**: Compare two reading programs
 - **estimate_reading_duration**: Estimate the time required to read a text
-- **calculate_completion_date**: Calculate the date when reading will be finished
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides advanced tools for travelers to solve the knapsack prob
 
 
 ## Available Tools (3)
-- **evaluate_capacity_utilization**: Measures how effectively the available weight capacity was utilized
 - **calculate_packing_strategy**: Determines the optimal list of items to pack and which ones must be left behind
+- **evaluate_capacity_utilization**: Measures how effectively the available weight capacity was utilized
 - **summarize_priority_distribution**: Provides a high-level overview of the importance levels present in the inventory
 
 

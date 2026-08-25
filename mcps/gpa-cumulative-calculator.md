@@ -14,10 +14,10 @@ This MCP server allows for precise academic performance tracking. Use `calculate
 
 
 ## Available Tools (4)
-- **calculate_semester_performance**: Compute performance metrics for a single academic term
 - **get_grade_weight**: s. "A", "B+") and a grading scale (standard_4.0, advanced_4.3, weighted_5.0, or percentage_100) and returns its weight.
 
 Determine the numeric value of a grade based on a scale
+- **calculate_semester_performance**: Compute performance metrics for a single academic term
 - **update_cumulative_record**: Update the cumulative academic record
 - **validate_academic_input**: Validate and sanitize course input
 

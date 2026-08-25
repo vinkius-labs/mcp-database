@@ -14,9 +14,9 @@ The Non-linear Ingredient Adjuster is a specialized culinary engine designed to 
 
 
 ## Available Tools (3)
+- **validate_recipe_input**: Validate a recipe ingredient list
 - **get_scaling_multipliers**: Preview scaling multipliers
 - **scale_ingredients**: Scale ingredients non-linearly
-- **validate_recipe_input**: Validate a recipe ingredient list
 
 
 ## 💬 Prompt Examples
