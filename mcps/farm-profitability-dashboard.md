@@ -14,8 +14,8 @@ The Farm Profitability Dashboard provides a detailed financial analysis of your 
 
 
 ## Available Tools (3)
-- **get_area_efficiency_and_ranking**: Analyzes land efficiency and crop ranking
 - **get_crop_economic_breakdown**: Calculates revenue, cost, and margin for each specific crop
+- **get_area_efficiency_and_ranking**: Analyzes land efficiency and crop ranking
 - **get_farm_financials**: Calculates overall financial health of the farm
 
 

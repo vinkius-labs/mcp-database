@@ -14,9 +14,9 @@ This MCP server provides specialized tools for Modern Portfolio Theory (MPT) cal
 
 
 ## Available Tools (3)
+- **calculate_tangency_portfolio**: Calculate the tangency portfolio (max Sharpe ratio)
 - **generate_frontier_samples**: Generate points along the efficient frontier
 - **calculate_minimum_variance**: Calculate the minimum variance portfolio
-- **calculate_tangency_portfolio**: Calculate the tangency portfolio (max Sharpe ratio)
 
 
 ## 💬 Prompt Examples

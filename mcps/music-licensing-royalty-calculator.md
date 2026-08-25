@@ -14,10 +14,10 @@ This MCP server provides a precise engine for estimating musical royalty payouts
 
 
 ## Available Tools (4)
-- **calculate_sync_royalty**: Estimate the fee for synchronizing music with visual media
 - **calculate_mechanical_royalty**: Estimate royalties generated from the reproduction of music copies
 - **calculate_performance_royalty**: Estimate royalties for public broadcasts or live performances
 - **calculate_print_royalty**: Estimate royalties for the sale of sheet music and lyrics
+- **calculate_sync_royalty**: Estimate the fee for synchronizing music with visual media
 
 
 ## 💬 Prompt Examples

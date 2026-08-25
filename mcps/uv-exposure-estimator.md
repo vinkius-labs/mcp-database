@@ -14,9 +14,9 @@ The UV Exposure Estimator provides precise calculations for the maximum duration
 
 
 ## Available Tools (3)
-- **calculate_safe_minutes**: Calculate the maximum safe duration of sun exposure
 - **classify_uv_intensity**: Classify the current UV intensity level
 - **lookup_skin_characteristics**: Lookup dermatological information for a specific skin type
+- **calculate_safe_minutes**: Calculate the maximum safe duration of sun exposure
 
 
 ## 💬 Prompt Examples

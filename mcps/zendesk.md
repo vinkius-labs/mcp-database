@@ -41,6 +41,7 @@ No more manual logging into the Zendesk dashboard to check a ticket's status. Yo
 ## Available Tools (15)
 - **list_macros**: Lists all available support macros (canned responses)
 - **list_tickets**: Lists all support tickets in the Zendesk account
+- **update_ticket**: Update an existing Zendesk ticket
 - **add_ticket_comment**: The comment will be emailed to the requester.
 
 Add a public comment to an existing Zendesk ticket
@@ -63,7 +64,6 @@ Lists shared and personal ticket views
 - **search_tickets**: Syntax: "type:ticket status:open tags:escalation".
 
 Searches for tickets using the Zendesk search syntax
-- **update_ticket**: Update an existing Zendesk ticket
 
 
 ## 💬 Prompt Examples

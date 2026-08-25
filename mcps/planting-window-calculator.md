@@ -15,9 +15,9 @@ The Planting Window Calculator connects AI agents to precise agricultural zoning
 
 ## Available Tools (4)
 - **get_cultivar_recommendations**: Provides a list of recommended crop varieties
-- **get_planting_window**: Retrieves the recommended planting period and insurance deadline
 - **fetch_climate_risks**: Evaluates the probability of adverse weather events
 - **calculate_yield_loss**: Estimates the productivity loss caused by planting delays
+- **get_planting_window**: Retrieves the recommended planting period and insurance deadline
 
 
 ## 💬 Prompt Examples

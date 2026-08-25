@@ -14,9 +14,9 @@ This MCP server provides a suite of tools for taxpayers to manage their federal 
 
 
 ## Available Tools (4)
-- **annual_tax_liability**: Estimate total federal income tax liability
-- **annualized_gross_income**: Calculate total yearly gross earnings
 - **target_withholding_amount**: Determine required withholding amount per period
+- **annualized_gross_income**: Calculate total yearly gross earnings
+- **annual_tax_liability**: Estimate total federal income tax liability
 - **withholding_accuracy**: Evaluate accuracy of current withholding
 
 

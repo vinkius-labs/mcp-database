@@ -14,9 +14,9 @@ The Song Structure Timer is a precision utility for musicians and producers to c
 
 
 ## Available Tools (3)
+- **generate_song_timeline**: Generate a complete structural breakdown of a song
 - **get_bar_rhythm_metrics**: Calculate seconds per beat and seconds per bar
 - **calculate_section_duration**: Calculate the length of a song section
-- **generate_song_timeline**: Generate a complete structural breakdown of a song
 
 
 ## 💬 Prompt Examples

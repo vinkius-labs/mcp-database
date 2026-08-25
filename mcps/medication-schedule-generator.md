@@ -14,9 +14,9 @@ The Medication Schedule Generator is a precision scheduling engine designed to m
 
 
 ## Available Tools (3)
+- **audit_schedule_safety**: Audits a schedule for safety interval violations
 - **calculate_consumption_metrics**: Calculates total doses and cumulative volume
 - **create_medication_schedule**: Generates a complete medication schedule
-- **audit_schedule_safety**: Audits a schedule for safety interval violations
 
 
 ## 💬 Prompt Examples

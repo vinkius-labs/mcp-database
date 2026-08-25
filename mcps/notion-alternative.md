@@ -32,13 +32,13 @@ Use V1 for exhaustive workspace ops, V2 for collaboration/comments, V3 when you 
 - **search**: Search pages/databases by title with optional filter/sorts
 - **update_page**: Update page: properties, icon, cover, trash. V3 exclusive icon/cover
 - **append_block_children**: Append blocks to page. V3 supports bulk via JSON array
-- **create_page**: Create page with optional children blocks. Parent can be database or page
 - **list_databases**: List all databases (bulk, no search query needed). V3 exclusive
-- **query_database**: Query database with filter/sorts
-- **retrieve_block_children**: List child blocks of a page/block
 - **retrieve_database**: Get database schema (columns, types)
 - **retrieve_page**: Get page metadata by ID
 - **retrieve_user**: Get user by ID
+- **create_page**: Create page with optional children blocks. Parent can be database or page
+- **query_database**: Query database with filter/sorts
+- **retrieve_block_children**: List child blocks of a page/block
 
 
 ## 💬 Prompt Examples

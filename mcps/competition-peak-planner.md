@@ -14,10 +14,10 @@ The Competition Peak Planner helps athletes reach their physiological peak exact
 
 
 ## Available Tools (4)
-- **get_carb_loading_nutrition_plan**: Provide a 3-day carbohydrate loading strategy
-- **generate_pre_competition_checklist**: Generate a pre-competition logistics and physiological checklist
-- **calculate_peak_performance_window**: Predict the athlete's peak performance window
 - **generate_tapering_schedules**: Generate a week-by-week training taper schedule
+- **calculate_peak_performance_window**: Predict the athlete's peak performance window
+- **generate_pre_competition_checklist**: Generate a pre-competition logistics and physiological checklist
+- **get_carb_loading_nutrition_plan**: Provide a 3-day carbohydrate loading strategy
 
 
 ## 💬 Prompt Examples

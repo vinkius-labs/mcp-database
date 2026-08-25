@@ -34,37 +34,37 @@ Connect your **Raindrop.io** account to any AI agent and take full control of yo
 
 
 ## Available Tools (26)
-- **merge_collections**: Merge multiple collections
 - **rename_merge_tags**: Rename or merge tags
-- **update_collection**: Update a collection
 - **update_user**: Update authenticated user details
 - **delete_many_raindrops**: Delete multiple raindrops
-- **delete_raindrop**: Delete a raindrop (bookmark)
 - **list_backups**: List all backups
+- **list_root_collections**: List root collections
+- **list_tags**: List tags
+- **create_collection**: Create a new collection
+- **delete_collection**: Delete a collection
+- **get_collection**: Get a single collection
+- **get_user**: io user.
+
+Get authenticated user details
+- **list_all_highlights**: List all highlights
+- **list_child_collections**: List child collections
+- **update_many_raindrops**: Update multiple raindrops
+- **create_many_raindrops**: Create multiple raindrops
+- **create_raindrop**: Create a new raindrop (bookmark)
+- **delete_raindrop**: Delete a raindrop (bookmark)
+- **delete_tags**: Delete tags
+- **empty_trash**: Empty the trash collection
+- **get_public_user**: Get public user details
+- **get_raindrop**: Get a single raindrop (bookmark)
+- **list_collection_highlights**: List highlights in a collection
 - **list_filters**: ) for a collection.
 
 List filters
 - **list_raindrops**: Use 0 for all, -1 for unsorted, -99 for trash.
 
 List raindrops in a collection
-- **list_root_collections**: List root collections
-- **list_tags**: List tags
-- **create_collection**: Create a new collection
-- **create_many_raindrops**: Create multiple raindrops
-- **create_raindrop**: Create a new raindrop (bookmark)
-- **delete_collection**: Delete a collection
-- **delete_tags**: Delete tags
-- **empty_trash**: Empty the trash collection
-- **get_collection**: Get a single collection
-- **get_public_user**: Get public user details
-- **get_raindrop**: Get a single raindrop (bookmark)
-- **get_user**: io user.
-
-Get authenticated user details
-- **list_all_highlights**: List all highlights
-- **list_child_collections**: List child collections
-- **list_collection_highlights**: List highlights in a collection
-- **update_many_raindrops**: Update multiple raindrops
+- **merge_collections**: Merge multiple collections
+- **update_collection**: Update a collection
 - **update_raindrop**: Update a raindrop (bookmark)
 
 

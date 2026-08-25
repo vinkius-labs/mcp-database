@@ -15,8 +15,8 @@ The Recording Session Planner is a specialized tool designed to organize instrum
 
 ## Available Tools (3)
 - **check_completion_probability**: Assesses the likelihood of completing the session on time
-- **get_instrument_timeline**: Calculates the recording timeline for each instrument
 - **calculate_session_cost**: Estimates the total financial expenditure for the session
+- **get_instrument_timeline**: Calculates the recording timeline for each instrument
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ The Stress Load Scorer uses the Holmes-Rahe Life Change Units (LCU) framework to
 
 
 ## Available Tools (3)
-- **calculate_stress_score**: Computes the cumulative stress load and determines the resulting health risk classification
 - **get_event_catalog**: Provides the list of valid life event identifiers and their descriptions
 - **get_risk_mitigation_advice**: Provides detailed qualitative information and recommended health precautions for a risk level
+- **calculate_stress_score**: Computes the cumulative stress load and determines the resulting health risk classification
 
 
 ## 💬 Prompt Examples

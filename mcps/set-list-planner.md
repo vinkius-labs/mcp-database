@@ -14,9 +14,9 @@ The Set-List Planner is a specialized tool for musicians to organize song sequen
 
 
 ## Available Tools (3)
+- **extract_performance_metadata**: Extracts preparation data from a set list
 - **analyze_transition_smoothness**: Evaluates musical smoothness between songs
 - **optimize_set_sequence**: Reorders songs into an optimized energy arc
-- **extract_performance_metadata**: Extracts preparation data from a set list
 
 
 ## 💬 Prompt Examples

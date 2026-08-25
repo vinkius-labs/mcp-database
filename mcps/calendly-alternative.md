@@ -44,18 +44,15 @@ List event types in Calendly
 - **get_event_type**: Provide the event type URI (found in list_event_types).
 
 Get details for a specific Calendly event type
-- **list_memberships**: Each membership shows the user, organization, URI, and role. Useful for multi-team accounts and seeing which organizations you are part of.
+- **get_invitee**: Provide the invitee UUID from list_invitees.
 
-List your memberships in Calendly organizations
+Get details for a specific invitee
 - **create_scheduling_link**: Requires the event type URI and the owner type ("EventType" or "User"). Returns a booking URL that invitees can use to schedule a meeting directly via the API.
 
 Create a scheduling link for direct booking
 - **create_webhook**: Requires the callback URL, a list of events to subscribe to (e.g. ["invitee.created", "invitee.canceled", "invitee.no_show"]), and the scope (user or organization URI). Optionally provide a signing key for webhook verification.
 
 Create a new webhook subscription in Calendly
-- **get_invitee**: Provide the invitee UUID from list_invitees.
-
-Get details for a specific invitee
 - **get_me**: Returns user ID, name, email, slug, organization URI, and scheduling URL. Use this to verify your token is working correctly and to get your user URI for filtering other queries.
 
 Get the authenticated Calendly user
@@ -65,6 +62,9 @@ Get details for a specific scheduled event
 - **list_invitees**: Each invitee includes their name, email, event URI, scheduled start time, and responses to custom questions. Optionally filter by a specific event URI and set a count limit.
 
 List invitees (attendees) across all Calendly events
+- **list_memberships**: Each membership shows the user, organization, URI, and role. Useful for multi-team accounts and seeing which organizations you are part of.
+
+List your memberships in Calendly organizations
 - **list_scheduled_events**: Each event includes the event type, start time (UTC), invitee URI, status (active, canceled), and participants. Optionally filter by user URI, status (active or canceled), and count. Useful for reviewing your upcoming calendar.
 
 List scheduled events (meetings) in Calendly

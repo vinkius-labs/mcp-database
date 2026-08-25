@@ -14,9 +14,9 @@ This MCP server provides precise biological timeline predictions. By using tools
 
 
 ## Available Tools (3)
+- **predict_next_period_event**: Provides a quick look at the next major milestones in the user's cycle
 - **get_cycle_phases**: Retrieves a detailed timeline of all four biological phases for the upcoming cycle
 - **get_fertile_window**: Identifies the specific date range during which conception is most likely
-- **predict_next_period_event**: Provides a quick look at the next major milestones in the user's cycle
 
 
 ## 💬 Prompt Examples

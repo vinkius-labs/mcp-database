@@ -15,8 +15,8 @@ An essential tool for athletes and coaches to manage hydration. Use `calculate_s
 
 ## Available Tools (4)
 - **assess_electrolyte_requirements**: Assess electrolyte requirements
-- **calculate_sweat_metrics**: Calculate sweat rate and dehydration metrics
 - **generate_replacement_strategy**: Generate a hydration replacement strategy
+- **calculate_sweat_metrics**: Calculate sweat rate and dehydration metrics
 - **get_hyperhydration_protocol**: Get pre-exercise hyperhydration protocol
 
 

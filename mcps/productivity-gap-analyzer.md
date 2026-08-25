@@ -17,8 +17,8 @@ The Productivity Gap Analyzer connects AI agents to critical agricultural perfor
 - **bottleneck_analysis_tool**: ) are below the 80% optimal threshold.
 
 Analyze production bottlenecks based on environmental/management scores
-- **yield_gap_tool**: Calculate the yield gap for a specific region and cultivar
 - **financial_uplift_tool**: Project the financial revenue increase from closing a yield gap
+- **yield_gap_tool**: Calculate the yield gap for a specific region and cultivar
 
 
 ## 💬 Prompt Examples

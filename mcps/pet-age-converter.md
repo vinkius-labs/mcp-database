@@ -14,9 +14,9 @@ The Pet Age Converter is a precision biological aging engine that moves beyond t
 
 
 ## Available Tools (3)
+- **get_pet_life_stage**: Get the life stage of a pet
 - **convert_cat_age**: Convert cat age to human equivalent age
 - **convert_dog_age**: Convert dog age to human equivalent age
-- **get_pet_life_stage**: Get the life stage of a pet
 
 
 ## 💬 Prompt Examples
