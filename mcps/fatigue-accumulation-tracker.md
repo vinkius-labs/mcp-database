@@ -14,8 +14,8 @@ The Fatigue Accumulation Tracker is a specialized tool for monitoring sleep debt
 
 
 ## Available Tools (3)
-- **calculate_accumulated_debt**: Calculate total sleep debt or surplus
 - **estimate_cognitive_impact**: Estimate mental impairment from sleep debt
+- **calculate_accumulated_debt**: Calculate total sleep debt or surplus
 - **calculate_recovery_timeline**: Calculate nights needed to recover from sleep debt
 
 

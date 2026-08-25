@@ -14,9 +14,9 @@ This MCP server provides a deterministic toolset for strength athletes and coach
 
 
 ## Available Tools (3)
+- **validate_lift_integrity**: Checks lift integrity
 - **calculate_1rm_metrics**: 
 - **get_rpe_equivalence**: Maps lift to RPE
-- **validate_lift_integrity**: Checks lift integrity
 
 
 ## 💬 Prompt Examples

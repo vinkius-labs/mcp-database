@@ -15,8 +15,8 @@ The Burnout Detector MCP server provides a specialized diagnostic tool based on 
 
 ## Available Tools (3)
 - **calculate_burnout_metrics**: Calculate burnout metrics from survey scores
-- **get_dimension_health_status**: Get the health status of a specific burnout dimension
 - **evaluate_risk_level**: Evaluate the overall burnout risk level
+- **get_dimension_health_status**: Get the health status of a specific burnout dimension
 
 
 ## 💬 Prompt Examples

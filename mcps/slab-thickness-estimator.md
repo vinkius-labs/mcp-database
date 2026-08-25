@@ -14,9 +14,9 @@ This MCP server provides structural engineering pre-dimensioning tools for concr
 
 
 ## Available Tools (4)
-- **calculate_minimum_thickness**: Calculates the minimum thickness for a slab
-- **list_all_slab_types**: Lists all supported slab types and their metadata
 - **get_slab_metadata**: Retrieves metadata for a specific slab type
+- **list_all_slab_types**: Lists all supported slab types and their metadata
+- **calculate_minimum_thickness**: Calculates the minimum thickness for a slab
 - **check_analysis_requirement**: Checks if structural analysis is required
 
 

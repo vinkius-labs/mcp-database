@@ -14,8 +14,8 @@ This MCP server provides a professional financial valuation engine for determini
 
 
 ## Available Tools (3)
-- **calculate_intrinsic_value**: Calculates the estimated fair market price of a stock based on projected dividend growth
 - **estimate_cost_of_equity**: Determines the required rate of return using the CAPM framework
+- **calculate_intrinsic_value**: Calculates the estimated fair market price of a stock based on projected dividend growth
 - **evaluate_valuation_gap**: Compares current market pricing against intrinsic value
 
 

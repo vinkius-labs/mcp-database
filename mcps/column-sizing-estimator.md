@@ -16,10 +16,10 @@ With this MCP server, AI agents can use `calculate_total_axial_load` to determin
 
 
 ## Available Tools (4)
-- **calculate_total_axial_load**: Calculates the total cumulative vertical force acting on the base of the column
 - **estimate_concrete_section**: Suggests the minimum side dimensions for a square reinforced concrete column
-- **check_load_severity**: Categorizes the total axial load into a recognizable engineering tier
 - **estimate_steel_section**: Suggests a standard steel profile type for axial compression
+- **calculate_total_axial_load**: Calculates the total cumulative vertical force acting on the base of the column
+- **check_load_severity**: Categorizes the total axial load into a recognizable engineering tier
 
 
 ## 💬 Prompt Examples

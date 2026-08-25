@@ -14,8 +14,8 @@ The Running Race Predictor MCP server connects AI agents to advanced endurance m
 
 
 ## Available Tools (3)
-- **predict_race_times**: Predicts race times for standard distances
 - **generate_segment_strategy**: Generates a segmented pacing strategy
+- **predict_race_times**: Predicts race times for standard distances
 - **validate_race_input**: Validates and normalizes race distance input
 
 

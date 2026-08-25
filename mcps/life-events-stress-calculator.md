@@ -14,10 +14,10 @@ This MCP server implements the Holmes-Rahe Stress Adaptation model. By quantifyi
 
 
 ## Available Tools (3)
+- **calculate_stress_score**: Compute total stress score and risk level
 - **get_available_events**: Can filter by category (Critical, Moderate, Minor).
 
 See which life events are supported and their weights
-- **calculate_stress_score**: Compute total stress score and risk level
 - **get_risk_thresholds**: Get definitions of risk categories
 
 

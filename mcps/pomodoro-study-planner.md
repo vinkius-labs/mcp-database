@@ -14,8 +14,8 @@ The Pomodoro Study Planner is an intelligent engine designed to adapt the classi
 
 
 ## Available Tools (3)
-- **calculate_daily_target**: Calculates the daily study goal and frequency of sessions
 - **calculate_session_parameters**: Determines the optimal work-to-break ratio for a single session block
+- **calculate_daily_target**: Calculates the daily study goal and frequency of sessions
 - **estimate_completion_timeline**: Projects the end date for the total study workload
 
 

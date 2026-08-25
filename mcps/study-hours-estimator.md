@@ -15,8 +15,8 @@ The Study Hours Estimator is a specialized engine designed to help students plan
 
 ## Available Tools (3)
 - **estimate_subject_hours**: Estimate required study hours for a specific exam
-- **generate_phase_plan**: Generate a structured study plan with phases
 - **calculate_study_timeline**: Calculate the study timeline based on required hours
+- **generate_phase_plan**: Generate a structured study plan with phases
 
 
 ## 💬 Prompt Examples

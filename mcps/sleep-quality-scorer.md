@@ -16,8 +16,8 @@ The Sleep Quality Scorer MCP connects AI agents to your nocturnal metrics. By us
 ## Available Tools (4)
 - **diagnose_morning_subjectivity**: Diagnose morning subjectivity
 - **assess_sleep_duration**: Assess sleep duration quality
-- **calculate_overall_quality**: Calculate overall sleep quality score
 - **evaluate_sleep_continuity**: Evaluate sleep continuity
+- **calculate_overall_quality**: Calculate overall sleep quality score
 
 
 ## 💬 Prompt Examples

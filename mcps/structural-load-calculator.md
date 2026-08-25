@@ -14,8 +14,8 @@ The Structural Load Calculator is an essential tool for preliminary structural e
 
 
 ## Available Tools (3)
-- **calculate_floor_load**: Calculate total load for a single floor level
 - **aggregate_foundation_load**: Aggregate total load for the entire building foundation
+- **calculate_floor_load**: Calculate total load for a single floor level
 - **retrieve_load_constants**: ly: residential, commercial, garage, rooftop).
 
 Retrieve NBR 6120 load constants for a specific usage type

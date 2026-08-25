@@ -14,8 +14,8 @@ The Nap Optimizer MCP server provides intelligent, science-backed nap recommenda
 
 
 ## Available Tools (3)
-- **recommend_nap**: Get a nap recommendation
 - **get_strategy_details**: Get details about a nap strategy
+- **recommend_nap**: Get a nap recommendation
 - **verify_sleep_impact**: Check if a nap will interfere with sleep
 
 

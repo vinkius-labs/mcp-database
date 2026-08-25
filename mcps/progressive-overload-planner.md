@@ -14,9 +14,9 @@ The Progressive Overload Planner is a specialized tool for lifters seeking to ma
 
 
 ## Available Tools (3)
-- **compute_training_schedule**: Generates a complete 12-week spreadsheet of target weights for a lifting program
 - **predict_progression_plateau**: Estimates at which week in a 12-week cycle the safety cap will first be triggered
 - **validate_increment_safety**: Checks whether a proposed weight increase adheres to safety constraints
+- **compute_training_schedule**: Generates a complete 12-week spreadsheet of target weights for a lifting program
 
 
 ## 💬 Prompt Examples

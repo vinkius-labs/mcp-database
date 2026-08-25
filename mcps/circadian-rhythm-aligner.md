@@ -14,9 +14,9 @@ The Circadian Rhythm Aligner helps you transition your eating schedule smoothly.
 
 
 ## Available Tools (3)
-- **generate_transition_schedule**: Generate a day-by-day feeding schedule for a transition
-- **assess_transition_intensity**: Assess the metabolic risk of a proposed time shift
 - **calculate_shift_magnitude**: Calculate the total minutes to shift between two times
+- **assess_transition_intensity**: Assess the metabolic risk of a proposed time shift
+- **generate_transition_schedule**: Generate a day-by-day feeding schedule for a transition
 
 
 ## 💬 Prompt Examples

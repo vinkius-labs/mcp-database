@@ -16,10 +16,10 @@ With this MCP server, you can use tools like `calculate_group_volume` to sum up 
 
 
 ## Available Tools (4)
-- **compute_effective_volume**: Compute effective stimulus volume
 - **calculate_group_volume**: Calculate total weekly sets per muscle group
-- **get_rir_targets**: Get recommended RIR range for a training phase
+- **compute_effective_volume**: Compute effective stimulus volume
 - **evaluate_volume_adequacy**: Evaluate if weekly volume is adequate
+- **get_rir_targets**: Get recommended RIR range for a training phase
 
 
 ## 💬 Prompt Examples
