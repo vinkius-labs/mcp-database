@@ -15,8 +15,8 @@ This MCP server provides a deterministic analysis engine to identify infinite co
 
 ## Available Tools (3)
 - **analyze_conversation_cycles**: Identifies all repeating patterns and cycles within the provided conversation state graph
-- **estimate_recovery_path**: Predicts how many more steps are required to break a cycle if an exit condition is reachable
 - **calculate_deadlock_risk**: Determines the mathematical probability and severity of a conversation becoming stuck
+- **estimate_recovery_path**: Predicts how many more steps are required to break a cycle if an exit condition is reachable
 
 
 ## 💬 Prompt Examples

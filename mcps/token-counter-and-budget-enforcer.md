@@ -15,8 +15,8 @@ This MCP server provides precise token estimation and budget management for AI a
 
 ## Available Tools (3)
 - **estimate_tokens**: Calculates the estimated token count for a provided text string
-- **get_usage_summary**: Retrieves current cumulative totals without consuming new tokens
 - **track_and_enforce_usage**: Updates the cumulative usage for an agent and a conversation, then checks against set limits
+- **get_usage_summary**: Retrieves current cumulative totals without consuming new tokens
 
 
 ## 💬 Prompt Examples

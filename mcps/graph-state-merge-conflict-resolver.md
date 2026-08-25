@@ -14,9 +14,9 @@ This MCP server provides deterministic tools to resolve state conflicts when mul
 
 
 ## Available Tools (3)
-- **analyze_conflict_density**: Quantifies how many conflicts exist within a set of updates without applying a resolution strategy
 - **resolve_state_conflicts**: Merges multiple state updates into a single state object using a chosen deterministic strategy
 - **validate_strategy_compatibility**: Checks if a specific resolution strategy is mathematically or logically valid for the types of data provided
+- **analyze_conflict_density**: Quantifies how many conflicts exist within a set of updates without applying a resolution strategy
 
 
 ## 💬 Prompt Examples

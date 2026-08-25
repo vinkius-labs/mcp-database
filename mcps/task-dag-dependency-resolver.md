@@ -14,9 +14,9 @@ This MCP server provides advanced graph mathematics for agentic orchestration. I
 
 
 ## Available Tools (3)
-- **detect_cycles**: Specifically focuses on finding and describing the exact loop causing a deadlock in the pipeline
 - **find_isolated_tasks**: Identifies tasks that are completely disconnected from the rest of the execution graph
 - **resolve_execution_order**: Calculates the valid execution sequence and parallel execution groups for a set of tasks
+- **detect_cycles**: Specifically focuses on finding and describing the exact loop causing a deadlock in the pipeline
 
 
 ## 💬 Prompt Examples

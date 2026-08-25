@@ -14,9 +14,9 @@ This MCP server provides precise tools to manage variable placeholders within LL
 
 
 ## Available Tools (3)
-- **analyze_template_syntax**: Inspects a template to report on its structure and placeholder density
 - **resolve_template**: Validates and resolves a specific template string against a dictionary of values
 - **validate_dictionary_coverage**: Checks if a specific set of required variable names are all present within a template
+- **analyze_template_syntax**: Inspects a template to report on its structure and placeholder density
 
 
 ## 💬 Prompt Examples

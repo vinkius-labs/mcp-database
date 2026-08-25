@@ -15,8 +15,8 @@ This MCP server provides a standardized way to interpret unpredictable error out
 
 ## Available Tools (3)
 - **classify_error**: Analyzes a specific error signal to categorize it and determine how to recover
-- **get_recovery_strategy**: Returns the high-level strategy details for a previously classified error category
 - **validate_retry_eligibility**: Determines if a specific attempt is eligible for a retry based on current attempt counts
+- **get_recovery_strategy**: Returns the high-level strategy details for a previously classified error category
 
 
 ## 💬 Prompt Examples

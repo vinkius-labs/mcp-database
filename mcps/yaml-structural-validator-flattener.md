@@ -14,8 +14,8 @@ This MCP server provides high-precision tools for YAML processing. Use `validate
 
 
 ## Available Tools (3)
-- **validate_yaml_structure**: Validates the structural integrity of a YAML string
 - **flatten_yaml_structure**: Flattens a nested YAML structure into dot-notation key-value pairs
+- **validate_yaml_structure**: Validates the structural integrity of a YAML string
 - **get_indentation_analysis**: Analyzes the indentation pattern of a YAML string
 
 

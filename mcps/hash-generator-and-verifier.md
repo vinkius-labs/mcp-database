@@ -15,8 +15,8 @@ This MCP server provides precise cryptographic tools for data integrity. Use `ge
 
 ## Available Tools (3)
 - **generate_hash**: Computes a specific cryptographic digest for a provided string of text
-- **list_supported_algorithms**: Provides a list of all cryptographic algorithms available
 - **verify_hash**: Compares a computed hash of a text input against a provided hash string
+- **list_supported_algorithms**: Provides a list of all cryptographic algorithms available
 
 
 ## 💬 Prompt Examples

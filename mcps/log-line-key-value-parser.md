@@ -15,8 +15,8 @@ This MCP server provides precise tools for transforming unstructured log text in
 
 ## Available Tools (3)
 - **get_field_metadata**: 
-- **identify_format**: 
 - **parse_log_line**: 
+- **identify_format**: 
 
 
 ## 💬 Prompt Examples

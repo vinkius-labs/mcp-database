@@ -14,8 +14,8 @@ This MCP server provides deterministic mathematical tools for integer analysis. 
 
 
 ## Available Tools (3)
-- **calculate_lcm**: Calculates the Least Common Multiple (LCM) of a set of numbers
 - **calculate_gcd**: Calculates the Greatest Common Divisor (GCD) of a set of numbers
+- **calculate_lcm**: Calculates the Least Common Multiple (LCM) of a set of numbers
 - **get_prime_factors**: The result includes duplicates to ensure the product equals the original number.
 
 Computes the prime factorization of a positive integer

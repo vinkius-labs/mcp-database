@@ -17,8 +17,8 @@ This MCP server provides high-precision cryptographic tools for generating and v
 - **compute_hmac**: Ensure the algorithm is either sha256 or sha1.
 
 Calculates the HMAC signature for a specific message using a chosen algorithm and secret key
-- **get_supported_algorithms**: Informs the user of which cryptographic algorithms are available for computation and verification
 - **verify_hmac_signature**: Validates a provided signature against a message and secret key using secure constant-time comparison
+- **get_supported_algorithms**: Informs the user of which cryptographic algorithms are available for computation and verification
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ This MCP server provides precise parsing and validation for vCard (VCF) strings 
 
 ## Available Tools (3)
 - **extract_property_values**: Retrieves the clean key-value pairs from a valid vCard, accounting for parameter stripping
-- **parse_vcard_structure**: Validates the fundamental structure of a vCard string and checks for encapsulation and required identity fields
 - **validate_parameter_syntax**: Checks the integrity of parameters attached to specific properties to ensure they are not malformed
+- **parse_vcard_structure**: Validates the fundamental structure of a vCard string and checks for encapsulation and required identity fields
 
 
 ## 💬 Prompt Examples

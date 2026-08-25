@@ -15,8 +15,8 @@ This MCP server provides exact bitwise mathematical operations for IPv4 and IPv6
 
 ## Available Tools (3)
 - **calculate_subnet_details**: Calculates network boundaries and capacity for a given IP and CIDR mask
-- **check_ip_membership**: Checks if a specific IP address is contained within a defined subnet
 - **get_host_capacity_stats**: Calculates the total and usable host capacity of a subnet
+- **check_ip_membership**: Checks if a specific IP address is contained within a defined subnet
 
 
 ## 💬 Prompt Examples

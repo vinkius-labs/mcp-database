@@ -14,8 +14,8 @@ This MCP server identifies friction within multi-agent orchestration systems lik
 
 
 ## Available Tools (3)
-- **analyze_agent_team**: Performs a comprehensive conflict analysis across an entire group of agents
 - **check_agent_pair_conflict**: Investigates the relationship between exactly two agents to determine if they are redundant
+- **analyze_agent_team**: Performs a comprehensive conflict analysis across an entire group of agents
 - **get_tool_redundancy_map**: Identifies which specific tools are causing the most overlap within a team
 
 

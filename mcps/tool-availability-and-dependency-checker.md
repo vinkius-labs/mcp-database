@@ -14,9 +14,9 @@ This MCP server provides a validation engine to prevent runtime execution failur
 
 
 ## Available Tools (3)
+- **resolve_dependency_tree**: Map out the full chain of requirements for a specific tool to ensure no deep-level dependencies are missing
 - **validate_version_constraint**: Determine if a specific version of a tool satisfies a provided version constraint
 - **check_tool_readiness**: Perform a complete audit of the environment against a specific set of required tools
-- **resolve_dependency_tree**: Map out the full chain of requirements for a specific tool to ensure no deep-level dependencies are missing
 
 
 ## 💬 Prompt Examples

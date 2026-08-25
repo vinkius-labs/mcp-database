@@ -15,8 +15,8 @@ This MCP server provides precise validation for international banking identifier
 
 ## Available Tools (3)
 - **get_validation_rules**: Provides a list of expected IBAN lengths per country
-- **validate_bic**: Determines if a string follows the strict structural rules of a BIC
 - **validate_iban**: Checks if a given string is a mathematically valid IBAN
+- **validate_bic**: Determines if a string follows the strict structural rules of a BIC
 
 
 ## 💬 Prompt Examples

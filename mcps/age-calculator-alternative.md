@@ -15,8 +15,8 @@ This MCP server provides high-precision temporal calculations. Use `calculate_ag
 
 ## Available Tools (3)
 - **calculate_age_from_birthdate**: Calculate the current age in years, months, days, hours, minutes, and seconds
-- **identify_weekday_of_birth**: Identify the day of the week for a specific birth date
 - **get_next_birthday_countdown**: Calculate information about the next upcoming birthday
+- **identify_weekday_of_birth**: Identify the day of the week for a specific birth date
 
 
 ## 💬 Prompt Examples

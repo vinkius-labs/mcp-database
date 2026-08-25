@@ -15,10 +15,10 @@ This MCP server provides precise bidirectional conversion between literal charac
 
 ## Available Tools (3)
 - **batch_convert_codepoints**: Converts a list of various codepoint formats into characters
-- **char_to_codepoint**: Converts characters into their Unicode codepoint representations (hex and decimal)
 - **codepoint_to_char**: g., "U+0041" or "0041") or a decimal number to get the character.
 
 Converts a hex or decimal codepoint into its character representation
+- **char_to_codepoint**: Converts characters into their Unicode codepoint representations (hex and decimal)
 
 
 ## 💬 Prompt Examples

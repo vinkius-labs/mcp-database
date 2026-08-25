@@ -14,9 +14,9 @@ This MCP server provides precise tools for analyzing byte sequences and ensuring
 
 
 ## Available Tools (3)
+- **normalize_to_utf8**: Converts a byte sequence from its detected encoding into a clean UTF-8 string
 - **audit_character_integrity**: Performs a statistical analysis of the character composition within a text string
 - **detect_encoding**: Identifies the specific encoding of a provided byte sequence
-- **normalize_to_utf8**: Converts a byte sequence from its detected encoding into a clean UTF-8 string
 
 
 ## 💬 Prompt Examples

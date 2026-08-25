@@ -15,8 +15,8 @@ This MCP server provides a resilient way to manage multiple API keys through a d
 
 ## Available Tools (4)
 - **get_rotation_status**: Provides pool status
-- **report_key_failure**: Increments failure count
 - **report_key_success**: Resets failure count
+- **report_key_failure**: Increments failure count
 - **rotate_key**: Transitions to next key
 
 

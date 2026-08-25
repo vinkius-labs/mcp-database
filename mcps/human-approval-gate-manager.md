@@ -15,8 +15,8 @@ This MCP server provides a deterministic engine for managing human-in-the-loop a
 
 ## Available Tools (4)
 - **check_action_status**: Determines if a specific action is currently waiting, has been decided, or has expired
-- **refresh_gate_states**: A maintenance tool to advance the state of all pending actions, specifically handling transitions to EXPIRED
 - **register_action**: Submits a new action into the approval gate to start the monitoring process
+- **refresh_gate_states**: A maintenance tool to advance the state of all pending actions, specifically handling transitions to EXPIRED
 - **submit_human_decision**: Allows a human user to manually approve or reject a pending action
 
 

@@ -14,8 +14,8 @@ This MCP server provides a robust mechanism to protect agentic workflows from fa
 
 
 ## Available Tools (3)
-- **configure_circuit**: Change the sensitivity or behavior of the circuit breaker for a specific service
 - **get_circuit_status**: Get the current health and status of the circuit breaker
+- **configure_circuit**: Change the sensitivity or behavior of the circuit breaker for a specific service
 - **record_result**: Update the circuit breaker based on the outcome of a service call
 
 

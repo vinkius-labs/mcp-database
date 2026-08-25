@@ -14,8 +14,8 @@ This MCP server provides a deterministic scoring engine to solve the noise and h
 
 
 ## Available Tools (3)
-- **get_scoring_config**: Retrieves the current operational scoring parameters and weight distributions
 - **analyze_coverage_gap**: Identifies which specific terms from a query are missing from the provided document set
+- **get_scoring_config**: Retrieves the current operational scoring parameters and weight distributions
 - **score_documents**: Calculates relevance scores for a collection of documents against a single query
 
 

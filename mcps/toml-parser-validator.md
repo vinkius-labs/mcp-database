@@ -15,12 +15,12 @@ This MCP server provides high-precision tools for working with TOML configuratio
 
 ## Available Tools (3)
 - **locate_syntax_error**: Identifies the exact location and nature of a parsing failure
-- **parse_toml_string**: It will throw an error if the syntax is invalid or if duplicate keys are found.
-
-Converts a raw TOML string into a structured JavaScript object
 - **validate_schema**: The schema should be a mapping of keys to expected types (e.g., "Integer", "Float", "Boolean", "String", "Array", "Table", "Datetime").
 
 Verifies that a parsed TOML object conforms to a specific structural template
+- **parse_toml_string**: It will throw an error if the syntax is invalid or if duplicate keys are found.
+
+Converts a raw TOML string into a structured JavaScript object
 
 
 ## 💬 Prompt Examples
