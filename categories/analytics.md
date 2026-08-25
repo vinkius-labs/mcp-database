@@ -8,6 +8,7 @@ Explore the open database of **analytics** Model Context Protocol (MCP) servers.
 | [Accelerator Founder Personality Fit](../mcps/accelerator-founder-personality-fit.md) | Evaluate the alignment between startup founders and accelerator programs using psychological profiling. |
 | [Accelerator Pitch Deck Feedback Quality](../mcps/accelerator-pitch-deck-feedback-quality.md) | Analyze pitch deck improvement velocity and feedback effectiveness. |
 | [Accelerator Program Intensity Scorer](../mcps/accelerator-program-intensity-scorer.md) | Quantify operational pressure and burnout risk in startup accelerator programs. |
+| [Accelerator Program Optimizer](../mcps/accelerator-program-optimizer.md) | Optimize accelerator program lengths using startup performance and funding data. |
 | [Agent Benchmark Comparison Engine](../mcps/agent-benchmark-comparison-engine.md) | A deterministic engine for ranking and comparing LLM agents based on performance metrics. |
 | [Agent Scoring & Ranking Engine](../mcps/agent-scoring-ranking-engine.md) | Deterministic performance scoring and ranking for autonomous agents. |
 | [Application Funnel Abandonment Analyzer](../mcps/application-funnel-abandonment-analyzer.md) | Analyze user drop-off behavior and optimize application conversion funnels. |

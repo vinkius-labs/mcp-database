@@ -15,6 +15,7 @@ Explore the open database of **science** Model Context Protocol (MCP) servers.
 | [Distillation Proof Calculator](../mcps/distillation-proof-calculator.md) | Deterministic tools for alcohol proof correction, distillation stage identification, and volume-based cuts. |
 | [Dog Age Calculator](../mcps/dog-age-calculator.md) | Accurate canine aging estimation using scientific veterinary formulas. |
 | [Gemstone Weight Calculator](../mcps/gemstone-weight-calculator.md) | Estimate gemstone carat weight and market value using physical dimensions. |
+| [Hops Bitterness Calculator](../mcps/hops-bitterness-calculator.md) | Calculate precise IBU and BU:GU ratios for beer recipes. |
 | [IBU & SRM Brewing Calculator](../mcps/ibu-srm-brewing-calculator.md) | Calculate beer bitterness (IBU) and color (SRM) using deterministic brewing formulas. |
 | [Light Therapy Dosage Calculator](../mcps/light-therapy-dosage-calculator.md) | Calculates precise light therapy dosages for blue and red light treatments. |
 | [Precision Dilution Calculator](../mcps/precision-dilution-calculator.md) | Calculate exact volumes of stock solution and solvent needed for precise dilutions. |

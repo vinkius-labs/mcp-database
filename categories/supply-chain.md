@@ -4,6 +4,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Avocado Maturity Index](../mcps/avocado-maturity-index.md) | Calculate avocado maturity, shelf life, and market suitability. |
 | [Bullwhip Effect Calculator](../mcps/bullwhip-effect-calculator.md) | Quantify demand amplification and identify instability patterns in supply chains. |
 | [Demand Forecast Calculator](../mcps/demand-forecast-calculator.md) | Generate 3-month demand projections using SMA, WMA, and Exponential Smoothing methods. |
 | [Fill Rate Calculator](../mcps/fill-rate-calculator.md) | Calculate Order, Line, and Unit Fill Rate metrics along with stockout costs. |
@@ -16,7 +17,9 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Omnitracs Fleet Intelligence](../mcps/omnitracs-fleet-intelligence.md) | Manage your fleet and logistics via Omnitracs — track vehicles, drivers, and shipments directly from your AI agent. |
 | [OpenTHC](../mcps/openthc.md) | Automate cannabis compliance via OpenTHC — track plants, manage inventory, query lab results, and handle B2B/B2C transactions directly from any AI agent. |
 | [Perfect Order Rate Calculator](../mcps/perfect-order-rate-calculator.md) | Calculate Perfect Order Rate and evaluate financial and loyalty impact. |
+| [Potato Sprout Control & Storage Management](../mcps/potato-sprout-control-storage-management.md) | Manage potato dormancy and calculate CIPC inhibitor application rates. |
 | [Receiving Dock Capacity Calculator](../mcps/receiving-dock-capacity-calculator.md) | Analyze dock capacity, identify throughput bottlenecks, and optimize docking infrastructure. |
+| [Sugar Beet Quality Loss Analyzer](../mcps/sugar-beet-quality-loss-analyzer.md) | Calculate sugar beet storage losses, quality degradation, and economic impact. |
 | [Warehouse ABC Slotting Optimizer](../mcps/warehouse-abc-slotting-optimizer.md) | Optimize warehouse SKU placement using ABC analysis to minimize travel distance. |
 | [Warehouse Capacity Calculator](../mcps/warehouse-capacity-calculator.md) | Calculate warehouse storage density, utilization rates, and financial implications of pallet vacancy. |
 

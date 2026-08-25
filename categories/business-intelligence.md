@@ -5,13 +5,16 @@ Explore the open database of **business-intelligence** Model Context Protocol (M
 | Tool Name | Description |
 |-----------|-------------|
 | [Accelerator Application Quality Score](../mcps/accelerator-application-quality-score.md) | A diagnostic engine to evaluate startup accelerator applications. |
+| [Accelerator Cohort Diversity Analytics](../mcps/accelerator-cohort-diversity-analytics.md) | Analyze cohort diversity, inclusion indices, and performance correlations. |
 | [Accelerator International Partnership Economics](../mcps/accelerator-international-partnership-economics.md) | Quantify the economic value and operational friction of international accelerator partnerships. |
 | [Accelerator Mentorship Analytics](../mcps/accelerator-mentorship-analytics.md) | Quantify the impact of mentorship on startup success and optimize engagement intensity. |
 | [Accelerator Pivot Tracker](../mcps/accelerator-pivot-tracker.md) | Monitor startup pivot effectiveness, timing, and impact within accelerator cohorts. |
 | [Accelerator Post-Program Support](../mcps/accelerator-post-program-support.md) | Economic modeling for alumni support services and resource distribution. |
 | [Accelerator Selection Bias Correction](../mcps/accelerator-selection-bias-correction.md) | Quantify and correct selection bias in accelerator program outcomes. |
 | [Accelerator Selection Committee Effectiveness](../mcps/accelerator-selection-committee-effectiveness.md) | Evaluate the reliability, predictive accuracy, and decision-making quality of selection committees. |
+| [Accelerator Selection Funnel Analyzer](../mcps/accelerator-selection-funnel-analyzer.md) | Analyze recruitment efficiency and identify friction points in accelerator selection processes. |
 | [Accelerator Studio Idea Validation](../mcps/accelerator-studio-idea-validation.md) | Quantitatively assess startup idea viability using market, team, and empirical data. |
+| [Accelerator Time-to-Market](../mcps/accelerator-time-to-market.md) | Quantify the impact of acceleration on time-to-market and market opportunity. |
 | [Aha!](../mcps/aha.md) | Product roadmapping and strategy — manage features, ideas, and strategic goals via AI. |
 | [Arbox](../mcps/arbox.md) | Manage members, schedule, coaches, leads, payments, and CRM for your Arbox-powered fitness studio through natural conversation. |
 | [AskNicely](../mcps/asknicely.md) | Manage customer experience and NPS surveys with AskNicely — track responses and audit sentiment via AI. |

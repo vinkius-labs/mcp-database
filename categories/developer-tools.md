@@ -446,6 +446,7 @@ Explore the open database of **developer-tools** Model Context Protocol (MCP) se
 | [OpenFGA (Fine-Grained Auth)](../mcps/openfga-fine-grained-auth.md) | Manage fine-grained authorization with OpenFGA — create stores, define authorization models, and manage relationship tuples directly from your AI agent. |
 | [OpenReplay](../mcps/openreplay.md) | Debug web applications by inspecting user sessions, technical events, and project data directly from your AI agent. |
 | [OpenRouteService](../mcps/openrouteservice.md) | Plan routes and analyze spatial data via OpenRouteService — calculate directions, isochrones, distance matrices, VRP optimization, and geocoding from any AI agent. |
+| [OpenStreetMap (Geocoding & Places)](../mcps/openstreetmap-geocoding-places.md) | Geocode any city or address to coordinates and back — forward/reverse geocoding, place search and location details via OpenStreetMap. No API key. |
 | [Orama Hybrid Search Query Builder](../mcps/orama-hybrid-search-query-builder.md) | Generate syntactically perfect Orama search payloads with deterministic JSON structure. |
 | [Output Format Stability Checker](../mcps/output-format-stability-checker.md) | Detect non-deterministic shifts in LLM response structures. |
 | [Output Format Token Comparator](../mcps/output-format-token-comparator.md) | Analyze token efficiency, overhead, and complexity across different data serialization formats. |

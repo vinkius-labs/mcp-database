@@ -20,6 +20,8 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Accelerator Demo Day Prep](../mcps/accelerator-demo-day-prep.md) | Generate optimized preparation timelines and readiness scores for Demo Day. |
 | [Accelerator Founder Coaching Hours](../mcps/accelerator-founder-coaching-hours.md) | Calculates optimal coaching hour distribution and topic prioritization for accelerator founders. |
 | [Accelerator Graduation Milestone Tracker](../mcps/accelerator-graduation-milestone-tracker.md) | Monitor accelerator program progress, identify bottlenecks, and predict graduation timelines. |
+| [Accelerator Interview Scoring](../mcps/accelerator-interview-scoring.md) | Analyze interview scoring consistency and identify calibration needs to ensure fair candidate evaluations. |
+| [Accelerator Investor Day Prep](../mcps/accelerator-investor-day-prep.md) | Analyze and optimize startup readiness for high-stakes investor presentations. |
 | [Accelerator Program Batch Timing](../mcps/accelerator-program-batch-timing.md) | Optimize accelerator timelines by aligning application cycles, program duration, and Demo Day. |
 | [Accelerator Workshop Curriculum Designer](../mcps/accelerator-workshop-curriculum-designer.md) | Optimizes workshop curricula by calculating topic sequences, time allocation, and learning progression. |
 | [Accelevents](../mcps/accelevents.md) | All-in-one event management platform — manage events, attendees, and session registration via AI. |

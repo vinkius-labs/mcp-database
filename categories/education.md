@@ -4,7 +4,11 @@ Explore the open database of **education** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Accelerator Acceptance Analytics](../mcps/accelerator-acceptance-analytics.md) | Calculate acceptance probabilities and cohort composition for accelerator programs. |
 | [Accelerator Alumni Mentor Conversion](../mcps/accelerator-alumni-mentor-conversion.md) | Analyze alumni-to-mentor conversion rates and optimize mentor recruitment incentives. |
+| [Accelerator Curriculum Effectiveness](../mcps/accelerator-curriculum-effectiveness.md) | Measure the impact and quality of accelerator training programs through multi-dimensional performance metrics. |
+| [Accelerator Graduation Metrics](../mcps/accelerator-graduation-metrics.md) | Calculates program completion, attrition, and graduation time metrics for accelerator cohorts. |
+| [Accelerator Instructor Effectiveness](../mcps/accelerator-instructor-effectiveness.md) | Calculate instructor performance scores, effectiveness trends, and get curriculum-based instructor recommendations. |
 | [Accelerator Peer Learning Value Engine](../mcps/accelerator-peer-learning-value-engine.md) | Quantify the economic and structural value of startup accelerator networks. |
 | [Accelerator Program Satisfaction Engine](../mcps/accelerator-program-satisfaction-engine.md) | Analyzes accelerator program success through satisfaction scores, NPS, and module performance. |
 | [Accelerator Session Effectiveness Evaluator](../mcps/accelerator-session-effectiveness-evaluator.md) | Compares online vs offline session effectiveness and calculates optimal delivery mixes. |
