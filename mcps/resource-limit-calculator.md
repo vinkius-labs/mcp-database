@@ -15,8 +15,8 @@ This MCP server provides precise tools for sandboxing autonomous agents. It tran
 
 ## Available Tools (3)
 - **calculate_os_limits**: Translates high-level user resource requirements into specific OS-level constants
-- **estimate_instruction_budget**: Calculates the approximate number of CPU instruction cycles a process can perform
 - **validate_sandbox_configuration**: Verifies if a set of calculated limits is safe to apply to a production agent environment
+- **estimate_instruction_budget**: Calculates the approximate number of CPU instruction cycles a process can perform
 
 
 ## 💬 Prompt Examples

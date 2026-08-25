@@ -14,9 +14,9 @@ The Constraint Satisfaction Verifier acts as a guardrail for AI agents, ensuring
 
 
 ## Available Tools (3)
+- **validate_path_syntax**: Verifies if a string is a validly formatted path for traversing complex nested objects and arrays
 - **verify_constraints**: Performs a full evaluation of a dataset against a provided set of validation rules
 - **get_schema_template**: Provides a structural template to help users construct valid fieldPath strings
-- **validate_path_syntax**: Verifies if a string is a validly formatted path for traversing complex nested objects and arrays
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ Prevent budget overruns in agentic workflows by calculating precise token costs.
 
 ## Available Tools (3)
 - **estimate_single_call**: Calculates the exact cost of a single API request based on token counts and model type
-- **get_pricing_catalog**: Retrieves the current deterministic pricing rates for all supported models
 - **track_session_usage**: Updates the running total of costs for a specific workflow and checks against a defined budget
+- **get_pricing_catalog**: Retrieves the current deterministic pricing rates for all supported models
 
 
 ## 💬 Prompt Examples

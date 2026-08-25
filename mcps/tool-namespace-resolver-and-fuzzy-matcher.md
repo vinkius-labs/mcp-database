@@ -15,8 +15,8 @@ This MCP server provides advanced tool resolution capabilities to prevent LLM ha
 
 ## Available Tools (3)
 - **get_matching_tools_bulk**: Processes a batch of requested tool names to identify multiple valid targets simultaneously
-- **resolve_tool_name**: Resolves a single potentially misspelled or partial tool name into a valid identifier from a known list
 - **validate_tool_namespace**: Determines if a requested string belongs to a specific functional group or namespace within the toolset
+- **resolve_tool_name**: Resolves a single potentially misspelled or partial tool name into a valid identifier from a known list
 
 
 ## 💬 Prompt Examples

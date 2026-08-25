@@ -14,11 +14,11 @@ This MCP server prevents 'retry storms' in multi-agent workflows by managing a f
 
 
 ## Available Tools (3)
-- **get_session_status**: Retrieve a snapshot of the current budget state
-- **reset_budget**: Clear all tracking and reset the session to a fresh state
 - **check_and_deduct_retry**: Provide the agent ID, the type of error encountered, the current total budget, the cost mapping for error types, and the current per-agent usage map.
 
 Determine if a retry is permitted and deduct cost from the globalThis budget
+- **get_session_status**: Retrieve a snapshot of the current budget state
+- **reset_budget**: Clear all tracking and reset the session to a fresh state
 
 
 ## 💬 Prompt Examples

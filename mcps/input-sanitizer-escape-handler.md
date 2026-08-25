@@ -15,8 +15,8 @@ This MCP server provides a deterministic defense layer between untrusted LLM-gen
 
 ## Available Tools (4)
 - **sanitize_file_path**: 
-- **sanitize_shell_command**: 
 - **sanitize_strict_whitelist**: 
+- **sanitize_shell_command**: 
 - **sanitize_structured_payload**: 
 
 
