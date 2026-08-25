@@ -14,11 +14,11 @@ The JSONL Strict Parser is a specialized tool for high-integrity data ingestion.
 
 
 ## Available Tools (3)
+- **summarize_parsing_error_distribution**: Analyzes the distribution of parsing errors
 - **evaluate_dataset_health**: Evaluates the health of a dataset based on parsing success rates
 - **parse_jsonl_string**: Tracks successes and errors.
 
 Parses a JSON Lines (.jsonlan) string into structured objects
-- **summarize_parsing_error_distribution**: Analyzes the distribution of parsing errors
 
 
 ## 💬 Prompt Examples

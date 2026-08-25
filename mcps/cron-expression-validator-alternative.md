@@ -14,9 +14,9 @@ The Cron Expression Validator is a high-precision tool designed to ensure schedu
 
 
 ## Available Tools (3)
-- **calculate_next_execution**: Computes the exact next occurrence of a cron schedule after a specific point in time
 - **parse_cron_components**: Deconstructs a cron expression into its individual parts to allow for detailed inspection
 - **validate_cron_expression**: Checks if a provided string is a syntactically correct cron expression and if all values fall within their permitted numerical ranges
+- **calculate_next_execution**: Computes the exact next occurrence of a cron schedule after a specific point in time
 
 
 ## 💬 Prompt Examples

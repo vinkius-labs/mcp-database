@@ -14,11 +14,11 @@ The ICU MessageFormat Validator is a specialized utility designed to ensure the 
 
 
 ## Available Tools (3)
-- **validate_category_logic**: Validate the logic within plural/select blocks
+- **validate_structural_braces**: Validate the structural integrity of braces and quotes in an ICU message
 - **extract_template_variables**: }`.
 
 Extract template variables from an ICU message
-- **validate_structural_braces**: Validate the structural integrity of braces and quotes in an ICU message
+- **validate_category_logic**: Validate the logic within plural/select blocks
 
 
 ## 💬 Prompt Examples

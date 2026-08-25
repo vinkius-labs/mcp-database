@@ -14,9 +14,9 @@ The Hono Router Pattern Matcher provides a deterministic way to simulate Hono.js
 
 
 ## Available Tools (3)
+- **validate_pattern_syntax**: Validates the syntax of a route pattern
 - **inspect_pattern**: Inspects a route pattern to identify its components
 - **match_route**: Matches a request path against a route pattern
-- **validate_pattern_syntax**: Validates the syntax of a route pattern
 
 
 ## 💬 Prompt Examples
