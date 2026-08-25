@@ -8,6 +8,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [Bullwhip Effect Calculator](../mcps/bullwhip-effect-calculator.md) | Quantify demand amplification and identify instability patterns in supply chains. |
 | [Demand Forecast Calculator](../mcps/demand-forecast-calculator.md) | Generate 3-month demand projections using SMA, WMA, and Exponential Smoothing methods. |
 | [Fill Rate Calculator](../mcps/fill-rate-calculator.md) | Calculate Order, Line, and Unit Fill Rate metrics along with stockout costs. |
+| [Input Purchasing Optimizer](../mcps/input-purchasing-optimizer.md) | Optimizes agricultural procurement by balancing volume discounts, storage limits, and financing costs. |
 | [Lead Time Analyzer](../mcps/lead-time-analyzer.md) | Analyze and decompose supply chain lead times to identify bottlenecks. |
 | [LTL-FTL Comparator](../mcps/ltl-ftl-comparator.md) | Logistics decision engine to compare LTL and FTL shipment costs, risks, and break-even points. |
 | [ManoMano (Home Improvement Marketplace)](../mcps/manomano-home-improvement-marketplace.md) | Manage your ManoMano seller account — update offer prices, track orders, and audit fulfillment stock. |
@@ -16,6 +17,7 @@ Explore the open database of **supply-chain** Model Context Protocol (MCP) serve
 | [NMFC Freight Class Calculator](../mcps/nmfc-freight-class-calculator.md) | Determine NMFC freight class and shipping cost impact using density-based calculations. |
 | [Omnitracs Fleet Intelligence](../mcps/omnitracs-fleet-intelligence.md) | Manage your fleet and logistics via Omnitracs — track vehicles, drivers, and shipments directly from your AI agent. |
 | [OpenTHC](../mcps/openthc.md) | Automate cannabis compliance via OpenTHC — track plants, manage inventory, query lab results, and handle B2B/B2C transactions directly from any AI agent. |
+| [Pecan Quality & Yield Predictor](../mcps/pecan-quality-yield-predictor.md) | Predict pecan kernel quality, USDA grades, and yield impacts from water stress. |
 | [Perfect Order Rate Calculator](../mcps/perfect-order-rate-calculator.md) | Calculate Perfect Order Rate and evaluate financial and loyalty impact. |
 | [Potato Sprout Control & Storage Management](../mcps/potato-sprout-control-storage-management.md) | Manage potato dormancy and calculate CIPC inhibitor application rates. |
 | [Receiving Dock Capacity Calculator](../mcps/receiving-dock-capacity-calculator.md) | Analyze dock capacity, identify throughput bottlenecks, and optimize docking infrastructure. |

@@ -256,6 +256,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Culture Amp](../mcps/culture-amp.md) | Equip your AI agent to manage employee engagement surveys, monitor performance, and track development via the Culture Amp API. |
 | [Custify](../mcps/custify.md) | Predict and prevent customer churn with health scores, lifecycle tracking, and automated playbooks for your CS team. |
 | [Custify](../mcps/custify-alternative.md) | Predict and prevent customer churn with health scores, lifecycle tracking, and automated playbooks for your CS team. |
+| [Custom Farming Rate Calculator](../mcps/custom-farming-rate-calculator.md) | Calculate precise operational costs and fair custom service rates for agricultural tasks. |
 | [Customer Discovery Prover](../mcps/customer-discovery-prover.md) | An AI defined the ICP as 'busy professionals aged 25-45 who value productivity.' It described the problem as 'everyone struggles with time management.' Interview questions: 'Would you pay $29/month for this?' The startup built for 14 months, launched to silence, and shut down. 42% of startups fail because of no market need — and the discovery process guaranteed it. This tool forces persona grounding in real interviews, problem evidence from specific conversations, Mom Test methodology, segment separation, and willingness-to-pay commitment signals. |
 | [Customer.io](../mcps/customerio.md) | Send behavior-driven emails, push notifications, and in-app messages triggered by what your users actually do in your product. |
 | [Customer.io](../mcps/customerio-alternative.md) | Send behavior-driven emails, push notifications, and in-app messages triggered by what your users actually do in your product. |
@@ -381,6 +382,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Factorial](../mcps/factorial.md) | Modernize HR operations with time-off management, payroll processing, and performance reviews that employees actually enjoy using. |
 | [Fair Chore Rotation Algorithm](../mcps/fair-chore-rotation-algorithm.md) | A deterministic scheduling system to rotate tasks among participants without consecutive repeats. |
 | [Fantastical](../mcps/fantastical.md) | Manage calendars via Fantastical — create events using natural language, handle scheduling openings and proposals, and monitor connected accounts directly from any AI agent. |
+| [Farm Working Capital Calculator](../mcps/farm-working-capital-calculator.md) | Project seasonal cash flows and determine peak borrowing needs for agricultural operations. |
 | [Farming Efficiency Calculator](../mcps/farming-efficiency-calculator.md) | Optimize your gameplay by calculating Gold Per Hour and comparing farming routes. |
 | [Fasting Streak Accumulator](../mcps/fasting-streak-accumulator.md) | Validate fasting logs, track success streaks, and calculate compliance percentages. |
 | [Fasting Window Resolver](../mcps/fasting-window-resolver.md) | Calculate and track feeding and fasting windows with precision. |
@@ -803,6 +805,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [SmartThings](../mcps/smartthings.md) | Control and monitor your smart home ecosystem — manage devices, check real-time statuses, and trigger scenes directly from your AI agent. |
 | [SnipForm](../mcps/snipform.md) | Connect your AI agents to SnipForm to manage form submissions, block spam, handle webhooks, and analyze conversion data. |
 | [Softinn](../mcps/softinn.md) | Orchestrate Softinn Hotel PMS — manage reservations, rooms, and guest folios directly from any AI agent. |
+| [Soil Test ROI Calculator](../mcps/soil-test-roi-calculator.md) | Quantify the economic impact of soil testing programs. |
 | [Sonarr (TV)](../mcps/sonarr-tv.md) | Automate TV library management via Sonarr — list series, track episodes, and monitor download queues directly from any AI agent. |
 | [Song Structure Timer](../mcps/song-structure-timer.md) | Calculate musical timing, section durations, and full song timelines based on BPM and meter. |
 | [SoundCloud](../mcps/soundcloud.md) | Manage your SoundCloud account — audit tracks, playlists, and followers via AI. |
