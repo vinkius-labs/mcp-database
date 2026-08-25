@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,883 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,884 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -157,6 +157,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [e-commerce](categories/e-commerce.md) (2 servers)
 - [email-marketing](categories/email-marketing.md) (2 servers)
 - [environment](categories/environment.md) (2 servers)
+- [environmental-science](categories/environmental-science.md) (2 servers)
 - [field-service-management](categories/field-service-management.md) (2 servers)
 - [geocoding-maps](categories/geocoding-maps.md) (2 servers)
 - [graph-theory](categories/graph-theory.md) (2 servers)
@@ -210,7 +211,6 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [education-tools](categories/education-tools.md) (1 servers)
 - [energy](categories/energy.md) (1 servers)
 - [energy-efficiency](categories/energy-efficiency.md) (1 servers)
-- [environmental-science](categories/environmental-science.md) (1 servers)
 - [ergonomics](categories/ergonomics.md) (1 servers)
 - [ethology](categories/ethology.md) (1 servers)
 - [fashion](categories/fashion.md) (1 servers)

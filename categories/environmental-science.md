@@ -4,6 +4,7 @@ Explore the open database of **environmental-science** Model Context Protocol (M
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Brazil Nut Yield Model](../mcps/brazil-nut-yield-model.md) | Estimates Brazil nut yield per hectare using allometric equations and environmental data. |
 | [Orchard Frost Protection](../mcps/orchard-frost-protection.md) | Calculate water requirements, mortality risks, and compare frost protection methods. |
 
 
