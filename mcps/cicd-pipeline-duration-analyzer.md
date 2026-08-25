@@ -14,9 +14,9 @@ This MCP server provides deep analytical insights into your CI/CD pipeline execu
 
 
 ## Available Tools (4)
-- **find_parallelization_opportunities**: Finds stages that could be run concurrently
-- **get_stage_impact_breakdown**: Returns stage breakdown by duration and percentage of total time
 - **estimate_optimization_gains**: Estimates the potential time savings from different optimization strategies
+- **get_stage_impact_breakdown**: Returns stage breakdown by duration and percentage of total time
+- **find_parallelization_opportunities**: Finds stages that could be run concurrently
 - **compute_execution_efficiency**: Computes execution efficiency by comparing critical path to wall-clock time
 
 

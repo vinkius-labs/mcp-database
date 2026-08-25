@@ -14,9 +14,9 @@ The API Contract Diff Checker is a specialized utility for identifying structura
 
 
 ## Available Tools (3)
-- **evaluate_version_bump**: Analyzes a collection of identified changes to recommend a Semantic Versioning increment
 - **diff_graphql**: Compares two GraphQL Schema Definition Language (SDL) strings to identify breaking and additive changes
 - **diff_openapi**: Detects structural differences and compatibility impacts between two OpenAPI specification documents
+- **evaluate_version_bump**: Analyzes a collection of identified changes to recommend a Semantic Versioning increment
 
 
 ## 💬 Prompt Examples

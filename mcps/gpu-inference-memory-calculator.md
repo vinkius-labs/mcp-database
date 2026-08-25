@@ -14,8 +14,8 @@ This MCP server provides a specialized engine for calculating the precise GPU me
 
 
 ## Available Tools (4)
-- **calculate_max_batch_capacity**: Determines the largest possible batch size that can fit within a specific GPU's memory limit
 - **estimate_total_vram**: Calculates the total VRAM required to run a specific batch size
+- **calculate_max_batch_capacity**: Determines the largest possible batch size that can fit within a specific GPU's memory limit
 - **get_kv_cache_per_request**: Calculates the memory footprint of the Key-Value cache for a single inference request
 - **get_model_weights_size**: g., FP32, FP16, BF16, INT8, INT4).
 

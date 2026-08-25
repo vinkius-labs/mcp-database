@@ -14,8 +14,8 @@ The SEO On-Page Copy Analyzer provides a suite of tools to audit your web conten
 
 
 ## Available Tools (4)
-- **validate_meta_tags**: Check if meta title and description are likely to be truncated
 - **audit_heading_coverage**: Check for target keywords in page headings
+- **validate_meta_tags**: Check if meta title and description are likely to be truncated
 - **analyze_keyword_density**: Analyze keyword density and prominence in text
 - **evaluate_tfidf_significance**: Calculate TF-IDF scores for keywords
 

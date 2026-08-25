@@ -15,8 +15,8 @@ The Kubernetes Resource Request Calculator automates the derivation of optimized
 
 ## Available Tools (3)
 - **estimate_cluster_demand**: Projects the total resource requirements for a deployment based on pod specifications and replica count
-- **generate_resource_specification**: Generates a complete resource configuration based on usage history
 - **validate_scaling_ratio**: Verifies if a specific limit-to-request ratio stays within recommended operational boundaries
+- **generate_resource_specification**: Generates a complete resource configuration based on usage history
 
 
 ## 💬 Prompt Examples

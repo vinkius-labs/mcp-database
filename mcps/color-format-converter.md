@@ -14,8 +14,8 @@ The Color Format Converter MCP server provides exact mathematical transformation
 
 
 ## Available Tools (3)
-- **convert_color_format**: Transforms a color from one web-standard format to another
 - **convert_to_cmyk**: Converts a digital color into its CMYK equivalent
+- **convert_color_format**: Transforms a color from one web-standard format to another
 - **evaluate_wcag_compliance**: x compliance (AA/AAA) for text visibility.
 
 Performs an accessibility audit on the contrast between two colors

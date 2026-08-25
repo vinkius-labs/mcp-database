@@ -14,17 +14,17 @@ This MCP server provides a precision analysis suite for quantifying linguistic i
 
 
 ## Available Tools (5)
+- **calculate_promotional_ratio**: Evaluates the level of self-promotion or brand-centricity in the text
 - **calculate_verification_signal**: Detects the presence of handles/mentions that imply interaction with established entities
+- **calculate_data_density**: Throws error if word count is zero.
+
+Measures the concentration of empirical evidence within the text
 - **calculate_authority_markers**: Returns count and list.
 
 Quantifies the presence of absolute, high-certainty language
 - **calculate_customer_centricity**: Throws error if no pronouns or empty text.
 
 Determines how much the content focuses on the reader versus the writer
-- **calculate_data_density**: Throws error if word count is zero.
-
-Measures the concentration of empirical evidence within the text
-- **calculate_promotional_ratio**: Evaluates the level of self-promotion or brand-centricity in the text
 
 
 ## 💬 Prompt Examples

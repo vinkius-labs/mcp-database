@@ -17,9 +17,9 @@ The Wasm Bundle Size Analyzer provides deep insights into the efficiency of your
 - **analyze_wasm_sections**: g., "Code:100,Data:50").
 
 Breaks down the total binary size into its constituent architectural components
+- **predict_execution_latency**: Estimates parse and instantiate time based on device performance tiers
 - **check_budget_compliance**: Compares current module metrics against established delivery thresholds
 - **estimate_compression_savings**: Predicts how much smaller the module will be after standard web compression
-- **predict_execution_latency**: Estimates parse and instantiate time based on device performance tiers
 
 
 ## 💬 Prompt Examples

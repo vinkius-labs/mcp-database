@@ -14,10 +14,10 @@ The LinkedIn Broetry Structure Validator evaluates how well a post follows the h
 
 
 ## Available Tools (3)
+- **analyze_post_structure**: Analyze the structural metrics of a LinkedIn post
 - **detect_formatting_deviations**: g., multiple sentences in one paragraph).
 
 Detect formatting deviations in a LinkedIn post
-- **analyze_post_structure**: Analyze the structural metrics of a LinkedIn post
 - **evaluate_style_adherence**: Evaluate how well a post adheres to the LinkedIn Broetry style
 
 

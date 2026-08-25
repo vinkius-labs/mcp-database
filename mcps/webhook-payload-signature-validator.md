@@ -14,12 +14,12 @@ The Webhook Payload Signature Validator provides a secure way to verify the inte
 
 
 ## Available Tools (3)
-- **identify_signature_scheme**: Useful before attempting verification.
-
-Identify the webhook signature verification strategy
 - **verify_hmac_timestamped**: " and "v1=...". This prevents replay attacks by checking the timestamp drift.
 
 Verify a webhook signature using the timestamped HMAC-SHA256 method
+- **identify_signature_scheme**: Useful before attempting verification.
+
+Identify the webhook signature verification strategy
 - **verify_hmac_standard**: Requires the raw payload and the shared secret.
 
 Verify a webhook signature using the standard HMAC-SHA256 method

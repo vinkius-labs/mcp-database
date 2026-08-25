@@ -14,9 +14,9 @@ This MCP server provides analytical capabilities for LinkedIn content optimizati
 
 
 ## Available Tools (4)
-- **get_first_mention_distance**: Find distance to first symbol
-- **verify_signature_placement**: Check for signature in tail
 - **analyze_tag_distribution**: Analyze spacing between tags
+- **verify_signature_placement**: Check for signature in tail
+- **get_first_mention_distance**: Find distance to first symbol
 - **count_entities**: Count @ mentions and # hashtags in a post
 
 

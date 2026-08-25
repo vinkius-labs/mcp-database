@@ -14,8 +14,8 @@ This MCP server provides a specialized engine for evaluating the structural comp
 
 
 ## Available Tools (2)
-- **analyze_complexity**: Analyze the cyclomatic and cognitive complexity of code
 - **classify_risk_score**: Classify a complexity score into a risk level
+- **analyze_complexity**: Analyze the cyclomatic and cognitive complexity of code
 
 
 ## 💬 Prompt Examples

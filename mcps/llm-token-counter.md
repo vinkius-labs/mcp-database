@@ -14,8 +14,8 @@ An essential utility for LLM developers to manage context windows. Use `token_co
 
 
 ## Available Tools (2)
-- **analyze_complexity**: Analyze text complexity and punctuation diversity
 - **token_count**: Calculate character, word, and estimated token counts
+- **analyze_complexity**: Analyze text complexity and punctuation diversity
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides mathematical utilities for managing gradual feature rol
 
 
 ## Available Tools (4)
-- **get_user_assignment**: Determines whether a specific user is included in a feature flag's current rollout percentage
-- **project_rollout_impact**: Predicts the number of users affected at each stage of a predefined deployment schedule
 - **analyze_cohort_overlap**: Estimates the potential intersection of two different feature flag populations
 - **calculate_statistical_thresholds**: Determines the required number of users needed in a treatment group to detect a metric regression
+- **get_user_assignment**: Determines whether a specific user is included in a feature flag's current rollout percentage
+- **project_rollout_impact**: Predicts the number of users affected at each stage of a predefined deployment schedule
 
 
 ## 💬 Prompt Examples

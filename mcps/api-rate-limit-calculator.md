@@ -15,8 +15,8 @@ The API Rate Limit Calculator provides mathematical clarity for managing API quo
 
 ## Available Tools (4)
 - **estimate_next_reset**: Predicts the exact time when a sliding window or fixed window boundary will occur
-- **project_remaining_capacity**: Forecasts how many requests can still be performed before the quota is exhausted
 - **simulate_token_mechanics**: Simulates the state of a Token Bucket or Leaky Bucket
+- **project_remaining_capacity**: Forecasts how many requests can still be performed before the quota is exhausted
 - **calculate_request_interval**: Determines the minimum time gap required between requests
 
 

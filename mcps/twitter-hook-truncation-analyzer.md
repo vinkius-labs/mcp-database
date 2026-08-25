@@ -14,8 +14,8 @@ The Twitter Hook Truncation Analyzer is a precision utility for evaluating the s
 
 
 ## Available Tools (3)
-- **calculate_scroll_stopper**: Quantify the engagement potential of a post's linguistic structure
 - **analyze_truncation**: Analyze physical and</em> structural boundaries of a post
+- **calculate_scroll_stopper**: Quantify the engagement potential of a post's linguistic structure
 - **classify_hook**: Classify the rhetorical strategy used in a post's hook
 
 
