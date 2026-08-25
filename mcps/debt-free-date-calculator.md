@@ -14,8 +14,8 @@ The Debt-Free Date Calculator provides a precise roadmap to financial freedom. B
 
 
 ## Available Tools (3)
-- **compare_strategies**: Compare Avalanche vs Snowball strategies
 - **get_monthly_projection**: Get a month-by-month projection of debt balances
+- **compare_strategies**: Compare Avalanche vs Snowball strategies
 - **calculate_payoff_summary**: Calculate the date and cost to be debt free
 
 

@@ -14,8 +14,8 @@ The Credit Card Payoff Engine provides precise simulations of debt repayment tra
 
 
 ## Available Tools (3)
-- **compare_payment_strategies**: Compare two different monthly payment strategies
 - **calculate_repayment_projection**: Calculate the repayment trajectory for a credit and balance
+- **compare_payment_strategies**: Compare two different monthly payment strategies
 - **determine_required_monthly_payment**: Calculate the monthly payment needed to reach a debt-free goal
 
 

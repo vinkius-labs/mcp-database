@@ -15,10 +15,10 @@ This MCP server provides a precise way to understand the true value of your earn
 
 ## Available Tools (3)
 - **evaluate_annual_net_earnings**: Evaluate yearly net earnings
+- **calculate_effective_wage**: Calculate real hourly wage factoring in taxes and time burdens
 - **convert_salary_period**: g., weekly salary) to another frequency (e.g., annual) using standard multipliers.
 
 Convert monetary amount between pay frequencies
-- **calculate_effective_wage**: Calculate real hourly wage factoring in taxes and time burdens
 
 
 ## 💬 Prompt Examples

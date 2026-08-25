@@ -14,9 +14,9 @@ This MCP server provides biologically accurate age conversions for dogs, moving 
 
 
 ## Available Tools (3)
-- **get_age_progression_table**: Get a year-by-year age progression table
-- **calculate_dog_age**: Calculate a dog's human-equivalent age
 - **identify_size_category**: Identify the size category of a dog based on its weight
+- **calculate_dog_age**: Calculate a dog's human-equivalent age
+- **get_age_progression_table**: Get a year-by-year age progression table
 
 
 ## 💬 Prompt Examples

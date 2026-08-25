@@ -14,11 +14,11 @@ A high-precision utility for converting numeric values between any bases from 2 
 
 
 ## Available Tools (3)
+- **validate_alphabet_compatibility**: Validates a custom alphabet for a specific base
 - **convert_number**: Use precision for fractions.
 
 Converts a number from one base to another
 - **get_conversion_trace**: Generates a step-by-step conversion trace
-- **validate_alphabet_compatibility**: Validates a custom alphabet for a specific base
 
 
 ## 💬 Prompt Examples

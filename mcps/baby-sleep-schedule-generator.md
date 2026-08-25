@@ -14,9 +14,9 @@ This MCP server provides a specialized planning tool for parents to manage infan
 
 
 ## Available Tools (3)
-- **create_daily_schedule**: Generates a chronological timeline of wake and sleep periods for a single day
 - **generate_routine_advice**: Provides specific behavioral and feeding instructions for each period of the generated schedule
 - **get_age_based_window**: Retrieves the minimum and maximum allowable wake window durations for a specific baby age
+- **create_daily_schedule**: Generates a chronological timeline of wake and sleep periods for a single day
 
 
 ## 💬 Prompt Examples

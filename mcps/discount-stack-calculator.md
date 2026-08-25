@@ -14,13 +14,13 @@ The Discount Stack Calculator is a specialized pricing engine designed to handle
 
 
 ## Available Tools (5)
-- **regional_taxation**: Calculate final price with regional taxes
-- **threshold_incentive**: Evaluate spend-based discount eligibility
 - **bogo_logic**: Calculate BOGO promotion impact
 - **fixed_reduction**: Apply fixed currency reductions
 - **percentage_stacking**: g., [20, 10] for 20% then 10%). Returns the new subtotal and total savings percentage.
 
 Apply multiple percentage discounts sequentially
+- **regional_taxation**: Calculate final price with regional taxes
+- **threshold_incentive**: Evaluate spend-based discount eligibility
 
 
 ## 💬 Prompt Examples

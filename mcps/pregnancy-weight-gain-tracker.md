@@ -14,9 +14,9 @@ This MCP server provides clinical-grade monitoring for pregnancy weight gain bas
 
 
 ## Available Tools (3)
+- **calculate_gain_deviation**: Compares current weight progress against projected ideal weight
 - **analyze_weekly_velocity**: Analyzes recent weight changes to detect rapid fluctuations or stagnation
 - **get_bmi_recommendations**: Retrieves standardized IOM weight targets based on pre-pregnancy BMI
-- **calculate_gain_deviation**: Compares current weight progress against projected ideal weight
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ The Diaper Consumption Forecaster helps parents plan for upcoming expenses by es
 
 
 ## Available Tools (3)
-- **calculate_monthly_requirements**: Calculate monthly diaper quantity and cost
 - **project_total_expenditure**: Project total expenditure until potty training
+- **calculate_monthly_requirements**: Calculate monthly diaper quantity and cost
 - **identify_usage_milestones**: Identify upcoming usage transitions
 
 

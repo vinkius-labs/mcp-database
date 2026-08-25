@@ -14,12 +14,12 @@ The Fraction Exact Calculator is a specialized engine for high-precision rationa
 
 
 ## Available Tools (4)
-- **analyze_continued_fraction**: Analyze the continued fraction of a rational number
-- **calculate_operation**: Perform arithmetic operations on two fractions
 - **expand_to_decimal**: Expand a fraction into its decimal representation
 - **parse_rational**: Returns the rational components.
 
 Parse a fraction string into its numerator and denominator
+- **analyze_continued_fraction**: Analyze the continued fraction of a rational number
+- **calculate_operation**: Perform arithmetic operations on two fractions
 
 
 ## 💬 Prompt Examples

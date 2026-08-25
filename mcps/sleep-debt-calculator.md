@@ -14,10 +14,10 @@ The Sleep Debt Calculator is an analytical tool designed to help you understand 
 
 
 ## Available Tools (4)
-- **calculate_sleep_debt**: Determine total sleep deficit accumulated over the past week
 - **evaluate_cognitive_impact**: Estimate percentage reduction in cognitive performance
 - **forecast_recovery_timeline**: Predict nights required to reach debt reduction milestones
 - **schedule_nap_remedy**: Suggest optimal nap windows adjusted for caffeine interference
+- **calculate_sleep_debt**: Determine total sleep deficit accumulated over the past week
 
 
 ## 💬 Prompt Examples

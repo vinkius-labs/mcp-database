@@ -14,10 +14,10 @@ The Prime Number Engine provides high-performance mathematical tools for number 
 
 
 ## Available Tools (4)
+- **factorize_integer**: Find all prime factors of an integer
 - **find_adjacent_primes**: Locate the nearest prime numbers above or below a specified value
 - **get_prime_density_info**: Provide statistical insights into prime distribution
 - **test_primality**: Determine whether a given integer is prime
-- **factorize_integer**: Find all prime factors of an integer
 
 
 ## 💬 Prompt Examples

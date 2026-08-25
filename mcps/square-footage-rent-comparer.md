@@ -14,9 +14,9 @@ The Square Footage Rent Comparer is a precision-focused utility designed to help
 
 
 ## Available Tools (3)
-- **calculate_size_ratio**: Answers how many times larger one room is compared to the other
 - **compute_rent_distribution**: Determines the exact amount of rent each roommate should pay
 - **validate_split_parameters**: Verifies that provided rent and area values are usable for a fair calculation
+- **calculate_size_ratio**: Answers how many times larger one room is compared to the other
 
 
 ## 💬 Prompt Examples

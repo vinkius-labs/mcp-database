@@ -14,11 +14,11 @@ This MCP server provides a suite of tools to calculate energy consumption reduct
 
 
 ## Available Tools (5)
+- **calculate_thermal_envelope_savings**: Estimate energy reduction from improving insulation or windows
+- **summarize_investment_return**: Aggregate savings data for financial and environmental metrics
 - **calculate_appliance_savings**: Estimate annual savings from upgrading to Energy Star appliances
 - **calculate_hvac_efficiency_impact**: Calculate energy savings from upgrading HVAC systems
-- **summarize_investment_return**: Aggregate savings data for financial and environmental metrics
 - **calculate_lighting_savings**: Calculate energy and cost savings from replacing bulbs with LEDs
-- **calculate_thermal_envelope_savings**: Estimate energy reduction from improving insulation or windows
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides a specialized utility to manage feline hygiene by calcu
 
 
 ## Available Tools (4)
-- **calculate_capacity**: Calculate total litter volume and weight needed
 - **calculate_consumption**: Calculate monthly litter usage
 - **estimate_cost**: Estimate monthly litter cost
 - **get_schedule**: Get litter replacement schedule
+- **calculate_capacity**: Calculate total litter volume and weight needed
 
 
 ## 💬 Prompt Examples

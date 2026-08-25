@@ -14,8 +14,8 @@ The Moving Cost Comparator is a decision-support engine designed to help you eva
 
 
 ## Available Tools (3)
-- **calculate_diy_costs**: Calculates the total projected expenditure for a self-managed move
 - **analyze_moving_comparison**: Provides the definitive comparison between the two moving strategies
+- **calculate_diy_costs**: Calculates the total projected expenditure for a self-managed move
 - **calculate_full_service_costs**: Calculates the total projected cost for hiring professional movers
 
 

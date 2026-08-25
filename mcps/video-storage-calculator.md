@@ -14,9 +14,9 @@ The Video Storage Calculator MCP server allows AI agents to estimate the disk sp
 
 
 ## Available Tools (3)
-- **get_codec_capabilities**: Retrieve supported bit depths and chroma subsampling for a codec
-- **compare_codec_profiles**: Compare storage requirements across different video profiles
 - **calculate_storage_estimate**: Calculate estimated video storage size
+- **compare_codec_profiles**: Compare storage requirements across different video profiles
+- **get_codec_capabilities**: Retrieve supported bit depths and chroma subsampling for a codec
 
 
 ## 💬 Prompt Examples

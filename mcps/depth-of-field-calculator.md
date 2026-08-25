@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine for precise photographic calcula
 
 
 ## Available Tools (3)
+- **get_sensor_equivalence**: Adjusts the Circle of Confusion based on different sensor formats to allow for crop factor comparisons
 - **calculate_dof**: Calculates the primary depth of field metrics for a given photographic setup
 - **calculate_hyperfocal**: Determines the hyperfocal distance for a specific lens and aperture setting
-- **get_sensor_equivalence**: Adjusts the Circle of Confusion based on different sensor formats to allow for crop factor comparisons
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ The Storage Unit Picker helps you plan your move by determining exactly how much
 
 
 ## Available Tools (3)
+- **recommend_storage_unit**: Matches a volume requirement to the smallest available storage unit
 - **calculate_required_volume**: Determines the total amount of space needed for selected items
 - **get_item_catalog**: Retrieves the complete list of all items available for selection
-- **recommend_storage_unit**: Matches a volume requirement to the smallest available storage unit
 
 
 ## 💬 Prompt Examples
