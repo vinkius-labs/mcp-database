@@ -14,9 +14,9 @@ The `zod-schema-error-flattener` MCP server acts as a bridge between complex val
 
 
 ## Available Tools (3)
-- **flatten_zod_error**: Transform a raw Zod error object into a flattened, user-friendly dictionary
 - **identify_problematic_fields**: Determine which specific fields in a schema are experiencing the highest frequency of validation failures
 - **validate_error_format**: Verify that a provided JSON object conforms to the expected Zod error structure
+- **flatten_zod_error**: Transform a raw Zod error object into a flattened, user-friendly dictionary
 
 
 ## 💬 Prompt Examples

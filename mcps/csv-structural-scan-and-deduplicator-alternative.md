@@ -15,9 +15,9 @@ The CSV Structural Scan and Deduplicator is a specialized utility for validating
 
 ## Available Tools (4)
 - **count_duplicate_rows**: Counts the number of duplicate rows in a CSV
+- **identify_empty_cells**: Identifies the locations of empty cells in a CSV
 - **get_deduplicated_payload**: Returns a version of the CSV with all duplicate rows removed
 - **get_structural_metrics**: Analyzes the structure of a CSV file
-- **identify_empty_cells**: Identifies the locations of empty cells in a CSV
 
 
 ## 💬 Prompt Examples

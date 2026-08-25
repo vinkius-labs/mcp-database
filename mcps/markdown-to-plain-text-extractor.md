@@ -14,8 +14,8 @@ The Markdown to Plain Text Extractor MCP server provides a precision utility for
 
 
 ## Available Tools (3)
-- **analyze_reduction**: Calculates the quantitative change in text size after extraction
 - **strip_markdown**: Removes all Markdown formatting syntax from a provided string
+- **analyze_reduction**: Calculates the quantitative change in text size after extraction
 - **verify_cleanliness**: Validates that no Markdown structural artifacts remain in the processed text
 
 

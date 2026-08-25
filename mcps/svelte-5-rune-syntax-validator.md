@@ -15,8 +15,8 @@ The Svelte 5 Rune Syntax Validator is a specialized tool for developers transiti
 
 ## Available Tools (3)
 - **rune_inventory**: Checks for the presence of required runes in a Svelte component
-- **syntax_validation**: Validates the syntax of a Svelte component
 - **script_boundary**: Identifies the boundaries of a script block in a Svelte component
+- **syntax_validation**: Validates the syntax of a Svelte component
 
 
 ## 💬 Prompt Examples

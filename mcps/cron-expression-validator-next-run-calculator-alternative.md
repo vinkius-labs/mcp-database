@@ -15,8 +15,8 @@ This MCP server provides a deterministic engine for working with standard 5-fiel
 
 ## Available Tools (3)
 - **get_next_runs**: Calculates the next N execution timestamps for a cron expression
-- **inspect_expression**: Decomposes a cron expression into human-readable parts
 - **validate_cron**: Validates a cron expression for syntax and logical possibility
+- **inspect_expression**: Decomposes a cron expression into human-readable parts
 
 
 ## 💬 Prompt Examples

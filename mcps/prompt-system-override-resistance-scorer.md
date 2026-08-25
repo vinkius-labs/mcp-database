@@ -14,9 +14,9 @@ This MCP server quantifies "Prompt Hardness" by measuring the concentration of a
 
 
 ## Available Tools (3)
-- **analyze_prompt_resistance**: Calculates the core robustness metrics for a given system prompt
-- **identify_low_resistance_zones**: Pinpoints specific segments of a prompt that lack sufficient directive density
 - **get_keyword_definitions**: Retrieves the official sets of directive and permissive words used for the calculation
+- **identify_low_resistance_zones**: Pinpoints specific segments of a prompt that lack sufficient directive density
+- **analyze_prompt_resistance**: Calculates the core robustness metrics for a given system prompt
 
 
 ## 💬 Prompt Examples

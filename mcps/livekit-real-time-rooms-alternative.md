@@ -40,13 +40,16 @@ Connect your AI agents to **LiveKit**, the open-source framework and cloud platf
 - **create_ttvoice_room**: Participants can join it via access tokens.
 
 Create a new LiveKit room with specified settings
-- **delete_ttvoice_room**: Requires roomCreate permission.
-
-Delete a room, disconnecting all participants
 - **get_ttvoice_participant**: Get detailed information about a specific participant
 - **list_ttvoice_participants**: List all participants currently in a room
 - **list_ttvoice_rooms**: List all active rooms on the LiveKit server
 - **mute_ttvoice_track**: Mute or unmute a participant's published track
+- **update_ttvoice_room_metadata**: Use JSON strings for structured data.
+
+Update the metadata of a room
+- **delete_ttvoice_room**: Requires roomCreate permission.
+
+Delete a room, disconnecting all participants
 - **remove_ttvoice_participant**: On LiveKit Cloud, their token is also revoked.
 
 Remove a participant from a room
@@ -54,9 +57,6 @@ Remove a participant from a room
 
 Send a data message to all participants in a room
 - **update_ttvoice_participant_metadata**: Update a participant's metadata
-- **update_ttvoice_room_metadata**: Use JSON strings for structured data.
-
-Update the metadata of a room
 
 
 ## 💬 Prompt Examples

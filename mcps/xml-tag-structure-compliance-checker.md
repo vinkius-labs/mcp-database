@@ -14,8 +14,8 @@ This MCP server provides specialized tools to ensure text strings adhere to stri
 
 
 ## Available Tools (3)
-- **calculate_tag_density**: Measures the amount of text content residing within specific target tags compared to the total text length
 - **get_nesting_hierarchy**: Visualizes or describes the tree-like relationship between different XML tags within the content
+- **calculate_tag_density**: Measures the amount of text content residing within specific target tags compared to the total text length
 - **validate_structure**: Checks if a given string is a well-formed XML structure with no unclosed or overlapping tags
 
 

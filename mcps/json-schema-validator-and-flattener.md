@@ -14,15 +14,15 @@ The JSON Schema Validator and Flattener MCP server provides deterministic parsin
 
 
 ## Available Tools (3)
-- **validate_json_against_schema**: Returns validation status, error count, and specific errors.
-
-Determines if a provided JSON string strictly adheres to the rules defined in a given JSON schema
 - **flatten_json_structure**: Returns a flattened map where keys are dot-notation paths.
 
 Transforms a complex, multi-layered JSON object into a single-level map using dot-notation for easy indexing
 - **summarize_schema_constraints**: Returns lists of mandatory keys and regex patterns found in the schema.
 
 Extracts and highlights the most critical structural requirements from a schema for quick human review
+- **validate_json_against_schema**: Returns validation status, error count, and specific errors.
+
+Determines if a provided JSON string strictly adheres to the rules defined in a given JSON schema
 
 
 ## 💬 Prompt Examples

@@ -15,10 +15,10 @@ This MCP server provides a deterministic engine to parse raw, newline-delimited 
 
 ## Available Tools (3)
 - **calculate_stream_metrics**: Provides usage-related metadata for a given stream chunk
-- **verify_protocol_integrity**: Validates whether a given stream segment adheres to the V1/V3 protocol
 - **parse_raw_stream**: 0 stream string.
 
 Deconstructs a raw, newline-delimited stream string into structured protocol events
+- **verify_protocol_integrity**: Validates whether a given stream segment adheres to the V1/V3 protocol
 
 
 ## 💬 Prompt Examples

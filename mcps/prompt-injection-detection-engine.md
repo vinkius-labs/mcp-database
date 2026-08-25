@@ -15,8 +15,8 @@ This MCP server provides deterministic detection of prompt injection attacks. It
 
 ## Available Tools (3)
 - **analyze_injection_risk**: Provides a high-level risk assessment of a specific input by evaluating the severity of the detected patterns
-- **get_attack_definitions**: Retrieves the current set of known malicious signatures and their associated categories
 - **scan_text_content**: Analyzes a single string of text to identify potential prompt injection signatures
+- **get_attack_definitions**: Retrieves the current set of known malicious signatures and their associated categories
 
 
 ## 💬 Prompt Examples

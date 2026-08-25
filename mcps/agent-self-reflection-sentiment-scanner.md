@@ -14,8 +14,8 @@ The Agent Self-Reflection & Sentiment Scanner MCP server provides a specialized 
 
 
 ## Available Tools (2)
-- **analyze_sentiment**: Analyze the sentiment of a given text
 - **detect_reflection**: Detect if a text contains self-reflective elements
+- **analyze_sentiment**: Analyze the sentiment of a given text
 
 
 ## 💬 Prompt Examples

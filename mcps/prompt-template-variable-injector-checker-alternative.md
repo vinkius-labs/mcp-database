@@ -15,8 +15,8 @@ This MCP server provides a suite of validation tools to ensure prompt templates 
 
 ## Available Tools (4)
 - **analyze_composition**: Calculates the density of dynamic content compared to static text
-- **audit_variables**: Compares variables found in the template against a list of allowed variables
 - **security_scan**: Detects if any variable names pose a risk of prompt injection
+- **audit_variables**: Compares variables found in the template against a list of allowed variables
 - **validate_syntax**: Checks if the template's variable delimiters are properly opened and closed
 
 

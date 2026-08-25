@@ -14,9 +14,9 @@ The RAG Chunk Boundary Optimizer MCP server provides a specialized analytical en
 
 
 ## Available Tools (3)
+- **identify_breaks**: Identifies chunks that end without terminal punctuation
 - **calculate_overlap**: Calculates the exact character overlap between two consecutive text chunks
 - **compute_continuity**: Computes a semantic continuity proxy score
-- **identify_breaks**: Identifies chunks that end without terminal punctuation
 
 
 ## 💬 Prompt Examples

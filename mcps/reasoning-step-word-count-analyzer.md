@@ -14,9 +14,9 @@ This MCP server provides tools to evaluate the quality of the ReAct (Reasoning +
 
 
 ## Available Tools (3)
+- **aggregate_trace_metrics**: 
 - **analyze_trace_verbosity**: 
 - **identify_high_verbosity_steps**: 
-- **aggregate_trace_metrics**: 
 
 
 ## 💬 Prompt Examples
