@@ -14,9 +14,9 @@ This MCP server provides precise extraction of code segments from LLM-generated 
 
 
 ## Available Tools (3)
-- **extract_code_blocks**: Performs the primary extraction of all code segments within a provided Markdown string
 - **get_block_metadata**: Provides context about the nature of a specific extracted block
 - **validate_block_integrity**: Checks if the extracted blocks actually match the original structural intent of the Markdown
+- **extract_code_blocks**: Performs the primary extraction of all code segments within a provided Markdown string
 
 
 ## 💬 Prompt Examples

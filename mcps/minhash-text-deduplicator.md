@@ -14,9 +14,9 @@ This MCP server provides tools to identify redundant content within large text c
 
 
 ## Available Tools (3)
-- **identify_duplicate_clusters**: Groups texts into distinct sets of near-duplicates based on a specific similarity requirement
 - **check_is_duplicate**: Performs a binary check to determine if a new piece of text is a near-duplicate of any existing text
 - **compute_similarity_matrix**: Calculates the estimated Jaccard similarity between all provided text entries
+- **identify_duplicate_clusters**: Groups texts into distinct sets of near-duplicates based on a specific similarity requirement
 
 
 ## 💬 Prompt Examples
