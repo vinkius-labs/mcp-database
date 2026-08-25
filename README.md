@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,765 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,812 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -10,10 +10,10 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 
 ## Browse by Category
 
-- [productivity](categories/productivity.md) (972 servers)
+- [productivity](categories/productivity.md) (975 servers)
 - [developer-tools](categories/developer-tools.md) (689 servers)
 - [industry-titans](categories/industry-titans.md) (587 servers)
-- [finance](categories/finance.md) (495 servers)
+- [finance](categories/finance.md) (529 servers)
 - [data-analytics](categories/data-analytics.md) (329 servers)
 - [marketing-automation](categories/marketing-automation.md) (240 servers)
 - [ecommerce](categories/ecommerce.md) (206 servers)
@@ -36,7 +36,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [data-management](categories/data-management.md) (56 servers)
 - [growth-engine](categories/growth-engine.md) (55 servers)
 - [finance-accounting](categories/finance-accounting.md) (54 servers)
-- [marketing](categories/marketing.md) (53 servers)
+- [marketing](categories/marketing.md) (54 servers)
 - [ship-it](categories/ship-it.md) (48 servers)
 - [construction](categories/construction.md) (47 servers)
 - [mathematics](categories/mathematics.md) (43 servers)
@@ -44,7 +44,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [document-management](categories/document-management.md) (40 servers)
 - [collaboration](categories/collaboration.md) (39 servers)
 - [infrastructure](categories/infrastructure.md) (39 servers)
-- [analytics](categories/analytics.md) (36 servers)
+- [analytics](categories/analytics.md) (37 servers)
 - [databases](categories/databases.md) (36 servers)
 - [talk-to-me](categories/talk-to-me.md) (36 servers)
 - [lifestyle](categories/lifestyle.md) (35 servers)
@@ -52,17 +52,17 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [image-video](categories/image-video.md) (32 servers)
 - [optimization](categories/optimization.md) (32 servers)
 - [customer-relationship-management](categories/customer-relationship-management.md) (31 servers)
+- [education](categories/education.md) (31 servers)
 - [security-compliance](categories/security-compliance.md) (31 servers)
-- [education](categories/education.md) (29 servers)
 - [friends-mcp](categories/friends-mcp.md) (29 servers)
 - [design-creative](categories/design-creative.md) (28 servers)
 - [healthcare](categories/healthcare.md) (28 servers)
+- [business-intelligence](categories/business-intelligence.md) (27 servers)
 - [iot-hardware](categories/iot-hardware.md) (25 servers)
 - [automation](categories/automation.md) (24 servers)
 - [gaming](categories/gaming.md) (24 servers)
 - [government-public-data](categories/government-public-data.md) (23 servers)
 - [superpower](categories/superpower.md) (23 servers)
-- [business-intelligence](categories/business-intelligence.md) (22 servers)
 - [science](categories/science.md) (21 servers)
 - [agriculture](categories/agriculture.md) (20 servers)
 - [utility](categories/utility.md) (18 servers)
@@ -92,13 +92,13 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [chemistry](categories/chemistry.md) (7 servers)
 - [design](categories/design.md) (7 servers)
 - [fitness](categories/fitness.md) (7 servers)
+- [project-management](categories/project-management.md) (7 servers)
 - [communication](categories/communication.md) (6 servers)
 - [crm-sales](categories/crm-sales.md) (6 servers)
 - [data-analysis](categories/data-analysis.md) (6 servers)
 - [data-extraction](categories/data-extraction.md) (6 servers)
 - [logistics](categories/logistics.md) (6 servers)
 - [other](categories/other.md) (6 servers)
-- [project-management](categories/project-management.md) (6 servers)
 - [video-conferencing](categories/video-conferencing.md) (6 servers)
 - [ai-agents](categories/ai-agents.md) (5 servers)
 - [automotive](categories/automotive.md) (5 servers)

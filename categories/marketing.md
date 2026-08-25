@@ -4,6 +4,7 @@ Explore the open database of **marketing** Model Context Protocol (MCP) servers.
 
 | Tool Name | Description |
 |-----------|-------------|
+| [Accelerator Marketing ROI Analyzer](../mcps/accelerator-marketing-roi-analyzer.md) | Analyze marketing efficiency and ROI for accelerator program pipelines. |
 | [Ad Copy Compliance Checker](../mcps/ad-copy-compliance-checker.md) | Audit ad copy against platform character limits and content policies. |
 | [Bluesky Automation](../mcps/bluesky-automation.md) | Full-spectrum Bluesky automation — 20 tools for publishing, engagement, analytics, social listening, and lead generation via the AT Protocol. |
 | [BuiltWith Tech Lookup](../mcps/builtwith-tech-lookup.md) | Universal website technology intelligence — detect CMS, analytics, and frameworks via AI. |

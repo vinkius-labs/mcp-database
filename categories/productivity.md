@@ -19,6 +19,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [AcademyOfMine](../mcps/academyofmine.md) | Manage AcademyOfMine LMS — orchestrate courses, register learners, and track enrollments directly from any AI agent. |
 | [Accelerator Demo Day Prep](../mcps/accelerator-demo-day-prep.md) | Generate optimized preparation timelines and readiness scores for Demo Day. |
 | [Accelerator Founder Coaching Hours](../mcps/accelerator-founder-coaching-hours.md) | Calculates optimal coaching hour distribution and topic prioritization for accelerator founders. |
+| [Accelerator Graduation Milestone Tracker](../mcps/accelerator-graduation-milestone-tracker.md) | Monitor accelerator program progress, identify bottlenecks, and predict graduation timelines. |
 | [Accelerator Program Batch Timing](../mcps/accelerator-program-batch-timing.md) | Optimize accelerator timelines by aligning application cycles, program duration, and Demo Day. |
 | [Accelerator Workshop Curriculum Designer](../mcps/accelerator-workshop-curriculum-designer.md) | Optimizes workshop curricula by calculating topic sequences, time allocation, and learning progression. |
 | [Accelevents](../mcps/accelevents.md) | All-in-one event management platform — manage events, attendees, and session registration via AI. |
@@ -514,6 +515,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Insightful](../mcps/insightful.md) | Manage employee productivity, time tracking, and activity via Insightful API. |
 | [Intelligent Loan Comparator](../mcps/intelligent-loan-comparator.md) | Empower your AI Agent with deterministic financial modeling. Instantly compare loan options and calculate exact amortization schedules offline, guaranteeing precision and privacy. |
 | [intelliHR](../mcps/intellihr.md) | Manage employee directory, jobs, and organization data via intelliHR API. |
+| [Interview Scheduling Optimizer](../mcps/interview-scheduling-optimizer.md) | Optimize interview scheduling by maximizing coverage and minimizing conflicts across timezones. |
 | [Invoice Ninja](../mcps/invoice-ninja.md) | Manage clients, invoices, and products directly through AI. |
 | [Invoice Ninja (Invoicing & Billing)](../mcps/invoice-ninja-invoicing-billing.md) | Manage invoicing via Invoice Ninja — create clients, track payments, and manage invoices and balances. |
 | [Invoicing Plus](../mcps/invoicing-plus.md) | Create professional invoices and estimates in minutes with a clean interface designed for small businesses and freelancers. |
@@ -746,6 +748,7 @@ Explore the open database of **productivity** Model Context Protocol (MCP) serve
 | [Recruit CRM](../mcps/recruit-crm.md) | Manage candidates, jobs, and client companies with Recruit CRM and AI agents. |
 | [Refiner](../mcps/refiner.md) | Survey your SaaS users with in-app micro-surveys that capture NPS, feature feedback, and churn signals at the perfect moment. |
 | [Reflect](../mcps/reflect.md) | Equip your AI to read, write, and explore your networked thought graph in Reflect Notes securely via their API. |
+| [Remote Program Effectiveness Analyzer](../mcps/remote-program-effectiveness-analyzer.md) | Quantifies remote accelerator success by comparing engagement and outcomes against in-person benchmarks. |
 | [Repetition Pattern Detector](../mcps/repetition-pattern-detector.md) | Detects redundant linguistic patterns and calculates text compression metrics. |
 | [Requirement Decomposition Prover](../mcps/requirement-decomposition-prover.md) | AI generates the happy path but omits error handling, edge cases, security, and observability — the '80% Problem'. This tool forces complete requirement decomposition BEFORE code generation: specify inputs/outputs, map failure modes, cover boundary conditions, validate OWASP, plan logging. |
 | [RescueTime](../mcps/rescuetime.md) | Track productivity, manage Focus Sessions, and analyze time usage directly from your AI agent. |

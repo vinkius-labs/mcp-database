@@ -6,15 +6,42 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 |-----------|-------------|
 | [13th Month Salary Provision Calculator](../mcps/13th-month-salary-provision-calculator.md) | Calculate monthly 13th-month salary accruals, employer taxes, and cumulative payroll liabilities. |
 | [A-share Price Limit Calculator](../mcps/a-share-price-limit-calculator.md) | Calculates daily upper and lower price limits for Chinese A-share stocks. |
+| [Accelerator & Incubator Economics Model](../mcps/accelerator-incubator-economics-model.md) | Calculate incubator service costs, equity value exchange, and program sustainability. |
+| [Accelerator Advisory Board Value](../mcps/accelerator-advisory-board-value.md) | Quantify the economic impact and ROI of your advisory board. |
+| [Accelerator Alumni Exit Tracker](../mcps/accelerator-alumni-exit-tracker.md) | Analyze alumni performance metrics, exit rates, and exit type distributions for accelerator cohorts. |
 | [Accelerator Alumni Fundraising Support](../mcps/accelerator-alumni-fundraising-support.md) | Quantify the economic impact of alumni networks on startup capital formation. |
+| [Accelerator Anti-Dilution Protection](../mcps/accelerator-anti-dilution-protection.md) | Calculate the impact of anti-dilution provisions and pay-to-play rules on investor holdings. |
+| [Accelerator Corporate Challenge Economics](../mcps/accelerator-corporate-challenge-economics.md) | Financial modeling for corporate-sponsored startup challenge programs. |
+| [Accelerator Corporate LP Value Calculator](../mcps/accelerator-corporate-lp-value-calculator.md) | Quantify strategic value, deal flow impact, and partnership ROI for corporate LP investments. |
 | [Accelerator Corporate Pilot Program Modeler](../mcps/accelerator-corporate-pilot-program-modeler.md) | Quantify the financial value, revenue potential, and ROI of corporate accelerator pilot programs. |
 | [Accelerator Equity Pool Management](../mcps/accelerator-equity-pool-management.md) | Manage and forecast accelerator equity allocation, utilization, and runway. |
+| [Accelerator Follow-up Metrics](../mcps/accelerator-follow-up-metrics.md) | Calculate follow-up conversion rates, deal velocity, and time compression for accelerator programs. |
+| [Accelerator Foreign Founder Visa Support](../mcps/accelerator-foreign-founder-visa-support.md) | Calculate visa support costs, success probability, and timeline risks for foreign founders. |
+| [Accelerator Founder-in-Residence Cost Calculator](../mcps/accelerator-founder-in-residence-cost-calculator.md) | Calculate the economic impact and investment requirements for hiring a Founder-in-Residence (EiR). |
+| [Accelerator Fund Recycling Impact](../mcps/accelerator-fund-recycling-impact.md) | Quantify the financial effects of recycling realized gains into new fund deployments. |
+| [Accelerator Fund Sizing Model](../mcps/accelerator-fund-sizing-model.md) | Calculate optimal accelerator fund sizes, deployment velocity, and reserve adequacy. |
+| [Accelerator Fundraise Timeline](../mcps/accelerator-fundraise-timeline.md) | Model fundraise duration, commitment schedules, and capital call timing for accelerator funds. |
+| [Accelerator Fundraising Success Analyzer](../mcps/accelerator-fundraising-success-analyzer.md) | Analyzes post-program fundraising success rates, funding velocity, and adjusted performance metrics. |
+| [Accelerator Housing Stipend Cost Modeler](../mcps/accelerator-housing-stipend-cost-modeler.md) | Calculate housing stipend budgets and compare location costs for accelerator programs. |
 | [Accelerator International Applicant Handling](../mcps/accelerator-international-applicant-handling.md) | Quantify the economic impact of recruiting and supporting international founders. |
 | [Accelerator Investor Matcher](../mcps/accelerator-investor-matcher.md) | Evaluates alignment between startups and investors to find optimal funding matches. |
 | [Accelerator Investor Relations Metrics](../mcps/accelerator-investor-relations-metrics.md) | Quantify investor network quality, conversion funnels, and engagement ROI. |
 | [Accelerator Legal Structure Setup](../mcps/accelerator-legal-structure-setup.md) | Calculate legal setup costs, compliance roadmaps, and optimal fund structures for startup accelerators. |
 | [Accelerator Location Economics](../mcps/accelerator-location-economics.md) | Analyze and compare geographic locations for accelerator programs using cost and ecosystem metrics. |
 | [Accelerator Mentor Compensation Model](../mcps/accelerator-mentor-compensation-model.md) | Calculate mentor costs, equity dilution, and industry benchmarks. |
+| [Accelerator Portfolio Concentration Risk](../mcps/accelerator-portfolio-concentration-risk.md) | Quantify capital exposure and diversification health for accelerator funds. |
+| [Accelerator Portfolio Markup Frequency](../mcps/accelerator-portfolio-markup-frequency.md) | Analyze valuation velocity and magnitude for portfolio companies and aggregate metrics. |
+| [Accelerator Portfolio Valuation Engine](../mcps/accelerator-portfolio-valuation-engine.md) | Determines the most statistically sound valuation methodology and price range for portfolio companies. |
+| [Accelerator Pre-Accelerator Economics](../mcps/accelerator-pre-accelerator-economics.md) | Calculate ROI, pipeline quality, and conversion economics for pre-accelerator programs. |
+| [Accelerator Pro-Rata Rights Analyzer](../mcps/accelerator-pro-rata-rights-analyzer.md) | Quantify the cost of maintaining ownership and the value of pro-rata rights during funding rounds. |
+| [Accelerator Sector Expertise Valuator](../mcps/accelerator-sector-expertise-valuator.md) | Calculates strategic value premiums and competitive positioning for accelerators based on sector-specific assets. |
+| [Accelerator Shared Services Efficiency](../mcps/accelerator-shared-services-efficiency.md) | Calculate cost savings, service utilization, and economic value for venture studio shared services. |
+| [Accelerator Syndicate Investment Sizing](../mcps/accelerator-syndicate-investment-sizing.md) | Calculate optimal capital allocation and strategic positioning for accelerator-led investment syndicates. |
+| [Accelerator Thematic Performance Engine](../mcps/accelerator-thematic-performance-engine.md) | Analyze investment efficacy across industry verticals and thematic focuses. |
+| [Accelerator University Spinout Terms](../mcps/accelerator-university-spinout-terms.md) | Generates equitable equity splits, royalty structures, and negotiation frameworks for university spinouts. |
+| [Accelerator Venture Builder Equity Split](../mcps/accelerator-venture-builder-equity-split.md) | Calculate optimal equity distributions, vesting schedules, and governance rights for venture builders. |
+| [Accelerator Venture Debt Readiness](../mcps/accelerator-venture-debt-readiness.md) | Assess portfolio companies for venture debt eligibility and capacity. |
+| [Accelerator Vintage Year Performance](../mcps/accelerator-vintage-year-performance.md) | Analyze historical performance, benchmark comparisons, and maturity stages for investment cohorts. |
 | [Advance-Decline Line Calculator](../mcps/advance-decline-line-calculator.md) | Calculate market breadth indicators like ADL, McClellan Oscillator, and divergence. |
 | [Advance/Decline Percentage Calculator](../mcps/advancedecline-percentage-calculator.md) | Calculate market breadth, sentiment classification, and trend divergence. |
 | [ADX-Calculator](../mcps/adx-calculator.md) | Deterministic Average Directional Index (ADX) calculator using Wilder's smoothing. |
@@ -86,6 +113,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Contingency Budget Calculator](../mcps/contingency-budget-calculator.md) | Calculate essential contingency reserves for architectural and construction projects based on development phases. |
 | [Contractor vs Employee Cost Calculator](../mcps/contractor-vs-employee-cost-calculator.md) | Compare total employment costs for W-2/1099 (USA) and PAYE/Ltd Company (UK) structures. |
 | [Contribution Margin Calculator](../mcps/contribution-margin-calculator.md) | Calculate unit profitability, margin indices, and weighted product mix margins. |
+| [Corporate Innovation ROI Engine](../mcps/corporate-innovation-roi-engine.md) | Quantifies financial and strategic returns for corporate innovation programs. |
 | [Correlation Matrix Calculator](../mcps/correlation-matrix-calculator.md) | Deterministic asset correlation and covariance calculator for financial time series. |
 | [Correlation Matrix Hedging](../mcps/correlation-matrix-hedging.md) | Calculate precise hedge ratios and risk profiles for correlated prediction markets. |
 | [Cost Per Wear Calculator](../mcps/cost-per-wear-calculator.md) | Calculate the true economic value of your wardrobe investments by determining cost per use. |
@@ -204,6 +232,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Garman-Klass Volatility Calculator](../mcps/garman-klass-volatility-calculator.md) | Calculate efficient Garman-Klass volatility using OHLC data. |
 | [Gas Fee Estimator](../mcps/gas-fee-estimator.md) | Estimate blockchain transaction costs for EVM-compatible chains. |
 | [Gas vs EV Fuel Savings Calculator](../mcps/gas-vs-ev-fuel-savings-calculator.md) | Compare the long-term costs of gasoline and electric vehicles. |
+| [Geographic Expansion ROI Accelerator](../mcps/geographic-expansion-roi-accelerator.md) | Quantify financial viability and operational readiness for entering new geographic markets. |
 | [Global Effective Tax Rate & Pillar Two Compliance](../mcps/global-effective-tax-rate-pillar-two-compliance.md) | Calculate global effective tax rates and OECD Pillar Two top-up tax liabilities. |
 | [Golden Cross Strategy Engine](../mcps/golden-cross-strategy-engine.md) | A deterministic trend-following engine for Golden Cross and Death Cross signals. |
 | [Grain Storage Cost Calculator](../mcps/grain-storage-cost-calculator.md) | Calculate grain storage expenses and determine optimal market timing. |
@@ -263,6 +292,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Loan Comparison Engine](../mcps/loan-comparison-engine.md) | Compare up to 5 loan configurations side by side, including fixed/adjustable rates and balloon payments. |
 | [Low-Volatility Strategy](../mcps/low-volatility-strategy.md) | Identify and trade assets with the lowest historical volatility to capture risk-adjusted premiums. |
 | [Loyalty Points Value Engine](../mcps/loyalty-points-value-engine.md) | Calculate the financial advantage of redeeming loyalty points now versus waiting for higher-tier rewards. |
+| [LP Reporting Metrics Engine](../mcps/lp-reporting-metrics-engine.md) | Calculates comprehensive LP performance dashboards, trend analysis, and peer benchmarking. |
 | [LTV:CAC Calculator](../mcps/ltvcac-calculator.md) | Determine if your customer acquisition strategy is profitable by calculating LTV, CAC, and the critical LTV:CAC ratio. |
 | [M&A Synergy Calculator](../mcps/ma-synergy-calculator.md) | Financial modeling tool to estimate NPV and break-even period for M&A deals by calculating revenue, cost, and integration synergies. |
 | [MACD Calculator](../mcps/macd-calculator.md) | Deterministic technical analysis engine for MACD indicators and signals. |
@@ -330,6 +360,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Portfolio Volatility Calculator](../mcps/portfolio-volatility-calculator.md) | Calculate asset volatility, pairwise covariance, and portfolio risk metrics. |
 | [Position Trading Strategy](../mcps/position-trading-strategy.md) | A deterministic trading system combining technical momentum, fundamental value, and sector strength. |
 | [Pre-Event Volatility Crush](../mcps/pre-event-volatility-crush.md) | Deterministic liquidity provision for capturing spreads during binary event volatility. |
+| [Pre-Seed Investment Terms Calculator](../mcps/pre-seed-investment-terms-calculator.md) | Model early-stage investment structures like SAFE and Convertible Notes. |
 | [Presumed Profit Tax Calculator](../mcps/presumed-profit-tax-calculator.md) | Calculate Corporate Income Tax (CIT) and Social Contribution (SCLL) using the Presumed Profit regime. |
 | [Prevailing Wage Calculator](../mcps/prevailing-wage-calculator.md) | Lookup Davis-Bacon Act compliant wage rates and fringe benefits for construction trades. |
 | [Price Volume Trend Calculator](../mcps/price-volume-trend-calculator.md) | Analyze market momentum using Price Volume Trend (PVT) and divergence detection. |
@@ -377,6 +408,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Scalping Strategy Engine](../mcps/scalping-strategy-engine.md) | Deterministic momentum-based scalping engine using EMA and Stochastic oscillators. |
 | [Scholarship Eligibility Checker](../mcps/scholarship-eligibility-checker.md) | Calculate household per capita income and determine eligibility for scholarship programs like ProUni and FIES. |
 | [Seasonal Strategy Engine](../mcps/seasonal-strategy-engine.md) | Generate deterministic trading signals by synchronizing historical seasonal patterns with trend filters. |
+| [Secondary Market Liquidity Accelerator](../mcps/secondary-market-liquidity-accelerator.md) | Estimates cash value and optimal exit timing for private equity stakes. |
 | [Secondhand Value Calculator](../mcps/secondhand-value-calculator.md) | Estimate the current market value and optimal resale strategy for used items. |
 | [Security Deposit Deductor](../mcps/security-deposit-deductor.md) | Calculate security deposit refunds by itemizing repair costs. |
 | [Setel Malaysia](../mcps/setel-malaysia.md) | Orchestrate Setel Malaysia payments — manage payment intents, parking sessions, and EV charging directly from any AI agent. |
@@ -474,6 +506,8 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Vacation Provision Calculator](../mcps/vacation-provision-calculator.md) | Calculate employee vacation liabilities, including constitutional bonuses and employer taxes. |
 | [Value Engineering Comparator](../mcps/value-engineering-comparator.md) | Analyze construction alternatives by comparing Life Cycle Costs and Savings-to-Investment Ratios. |
 | [Variable Index Dynamic Average (VIDYA) Calculator](../mcps/variable-index-dynamic-average-vidya-calculator.md) | Adaptive technical indicator engine that scales smoothing based on market volatility. |
+| [Venture Studio Operating Cost Modeler](../mcps/venture-studio-operating-cost-modeler.md) | Calculate startup unit costs, fee structures, and break-even points for venture studios. |
+| [Venture Studio Portfolio Economics Engine](../mcps/venture-studio-portfolio-economics-engine.md) | Project economic outcomes, portfolio value, and return multiples for venture studio portfolios. |
 | [Virtual Currency Converter](../mcps/virtual-currency-converter.md) | Calculate real-world USD costs and economic efficiency of virtual currency bundles, item purchases, and gacha mechanics. |
 | [VIX Term Structure Calculator](../mcps/vix-term-structure-calculator.md) | Analyze VIX futures term structure, roll yields, and market regimes. |
 | [Volatility Arbitrage Strategy](../mcps/volatility-arbitrage-strategy.md) | Identify mispriced volatility using IV-RV spreads and VIX term structure analysis. |
