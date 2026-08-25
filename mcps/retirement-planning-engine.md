@@ -14,12 +14,12 @@ The Retirement Planning Engine provides a sophisticated simulation suite for for
 
 
 ## Available Tools (5)
-- **evaluate_pension_strategy**: Evaluate lump-sum vs annuity pension strategy
 - **calculate_savings_growth**: Returns projected values.
 
 Calculate future value of savings with inflation adjustment
 - **optimize_social_security**: Optimize Social Security filing age
 - **calculate_tax_impacted_income**: Calculate net income after taxes
+- **evaluate_pension_strategy**: Evaluate lump-sum vs annuity pension strategy
 - **simulate_withdrawal_success**: Simulate retirement portfolio success probability
 
 

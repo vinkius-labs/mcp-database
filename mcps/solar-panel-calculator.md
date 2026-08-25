@@ -14,9 +14,9 @@ The Solar Panel Calculator is a decision-support engine that calculates the tech
 
 
 ## Available Tools (4)
+- **estimate_environmental_impact**: PEA: estimate environmental impact
 - **calculate_financial_returns**: Calculate solar investment financial returns
 - **compare_financing_models**: Compare solar financing models
-- **estimate_environmental_impact**: PEA: estimate environmental impact
 - **estimate_system_capacity**: Estimate required solar system capacity
 
 

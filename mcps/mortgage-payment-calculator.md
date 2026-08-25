@@ -15,8 +15,8 @@ A high-fidelity financial engine for simulating long-term mortgage impacts. Use 
 
 ## Available Tools (5)
 - **calculate_base_mortgage**: Determines the fundamental monthly costs and total loan commitment
-- **compare_rent_vs_buy**: Simulates long-term wealth accumulation/loss between renting and owning
 - **evaluate_refinance_breakeven**: Calculates if a new mortgage is financially advantageous
+- **compare_rent_vs_buy**: Simulates long-term wealth accumulation/loss between renting and owning
 - **generate_amortization_table**: Provides a month-by-month breakdown of the loan's reduction
 - **predict_arm_adjustment**: Estimates future costs for Adjustable Rate Mortgages
 
