@@ -14,9 +14,9 @@ The Detour Gas Savings Evaluator is a decision-support tool designed to help dri
 
 
 ## Available Tools (3)
-- **calculate_breakeven_volume**: Calculate the minimum fuel volume needed to break even on a detour
-- **assess_efficiency_sensitivity**: Assess how fuel efficiency affects detour profitability
 - **evaluate_detour_profitability**: Evaluate if a fuel detour is profitable
+- **assess_efficiency_sensitivity**: Assess how fuel efficiency affects detour profitability
+- **calculate_breakeven_volume**: Calculate the minimum fuel volume needed to break even on a detour
 
 
 ## 💬 Prompt Examples

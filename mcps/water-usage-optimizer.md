@@ -14,9 +14,9 @@ The Water Usage Optimizer connects your AI agent to precise household water metr
 
 
 ## Available Tools (3)
-- **calculate_drought_impact**: Calculate impact of drought levels on irrigation
 - **calculate_fixture_usage**: Calculate total water usage for fixtures
 - **calculate_savings**: Calculate potential water savings from upgrades
+- **calculate_drought_impact**: Calculate impact of drought levels on irrigation
 
 
 ## 💬 Prompt Examples

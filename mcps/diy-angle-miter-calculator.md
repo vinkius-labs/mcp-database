@@ -14,11 +14,11 @@ This MCP server provides precise calculations for woodworking projects. Use `get
 
 
 ## Available Tools (3)
-- **get_compound_molding_settings**: Calculates both the miter and bevel angles for crown molding
-- **get_flat_miter_settings**: Calculates the necessary miter angle for simple flat joints
 - **format_angle_to_dms**: g., 45° 30').
 
 Converts a decimal degree value into a human-readable string
+- **get_flat_miter_settings**: Calculates the necessary miter angle for simple flat joints
+- **get_compound_molding_settings**: Calculates both the miter and bevel angles for crown molding
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ The Caffeine Countdown Clock helps you plan your day by determining exactly when
 
 
 ## Available Tools (3)
+- **get_latest_safe_timestamp**: Tells the user the most recent time they can consume caffeine without exceeding their safety threshold
 - **estimate_remaining_caffeine_percentage**: Answers: "If I drink caffeine right now, what percentage will still be in my system when I go to bed?"
 - **evaluate_caffeine_risk_level**: Provides a qualitative assessment of caffeine risk based on current or planned intake
-- **get_latest_safe_timestamp**: Tells the user the most recent time they can consume caffeine without exceeding their safety threshold
 
 
 ## 💬 Prompt Examples

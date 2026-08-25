@@ -15,8 +15,8 @@ The Morning-Night Skincare Routine Syncer acts as a logic gate for your skincare
 
 ## Available Tools (3)
 - **evaluate_routine_risk_level**: Assigns a safety tier to a provided routine based on identified interactions
-- **validate_routine_safety**: Determines if a specific combination of morning and night products is safe to use
 - **check_dependency_fulfillment**: Checks if a specific night product has its required morning counterparts present
+- **validate_routine_safety**: Determines if a specific combination of morning and night products is safe to use
 
 
 ## 💬 Prompt Examples

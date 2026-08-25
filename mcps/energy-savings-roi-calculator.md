@@ -14,9 +14,9 @@ This MCP server provides tools to evaluate the economic and ecological benefits 
 
 
 ## Available Tools (3)
+- **calculate_upgrade_roi**: Calculate ROI for a specific energy upgrade
 - **compare_upgrades_ranking**: Rank multiple energy upgrades by financial efficiency
 - **get_carbon_impact_summary**: Summarize the total environmental impact of completed upgrades
-- **calculate_upgrade_roi**: Calculate ROI for a specific energy upgrade
 
 
 ## 💬 Prompt Examples

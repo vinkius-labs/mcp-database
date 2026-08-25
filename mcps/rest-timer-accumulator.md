@@ -15,8 +15,8 @@ The Rest Timer Accumulator is a specialized utility designed to help you track t
 
 ## Available Tools (3)
 - **format_time_display**: Converts seconds into HH:MM:SS format
-- **verify_workout_integrity**: Validates the workout plan integrity
 - **calculate_total_duration**: Calculates the total workout duration in seconds
+- **verify_workout_integrity**: Validates the workout plan integrity
 
 
 ## 💬 Prompt Examples

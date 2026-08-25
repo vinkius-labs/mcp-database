@@ -15,10 +15,10 @@ This MCP server provides powerful tools for developers to test regular expressio
 
 ## Available Tools (3)
 - **get_supported_flag**: Provides information regarding which regex flags are currently active and supported
+- **validate_regex_syntax**: Checks the structural integrity of a regex pattern and its flags
 - **run_regex_batch**: Max 1000 strings.
 
 Performs a high-volume test of a single regex pattern against a collection of strings
-- **validate_regex_syntax**: Checks the structural integrity of a regex pattern and its flags
 
 
 ## 💬 Prompt Examples

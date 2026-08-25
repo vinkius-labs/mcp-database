@@ -17,10 +17,10 @@ This MCP server provides a simulation engine to predict battery depletion and ca
 - **calculate_recharge_duration**: Returns minutes required.
 
 Calculate time needed to recharge
-- **analyze_segment_safety**: Analyze if a trip segment triggers charging
 - **simulate_trip_drain**: Returns total charging time and logs.
 
 Simulate an entire EV trip with multiple charging stops
+- **analyze_segment_safety**: Analyze if a trip segment triggers charging
 
 
 ## 💬 Prompt Examples

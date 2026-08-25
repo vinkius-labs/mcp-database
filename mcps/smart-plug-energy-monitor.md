@@ -14,9 +14,9 @@ The Smart Plug Energy Monitor connects your AI agents to precise energy calculat
 
 
 ## Available Tools (4)
+- **calculate_running_cost**: Calculate monetary cost for energy consumption
 - **analyze_standby_drain**: Estimate annual vampire power cost
 - **calculate_active_energy**: Determine total energy consumption in kWh
-- **calculate_running_cost**: Calculate monetary cost for energy consumption
 - **compare_appliance_efficiency**: Compare two appliance models for savings
 
 

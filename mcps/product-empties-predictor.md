@@ -14,9 +14,9 @@ This MCP server provides tools to forecast product depletion. Use `estimate_days
 
 
 ## Available Tools (3)
+- **predict_depletion_date**: Provide a specific calendar date for when the product will runting out
 - **estimate_days_remaining**: Calculate the total number of days until the current product supply is exhausted
 - **evaluate_replenishment_urgency**: Categorize how urgently a user needs to purchase more product
-- **predict_depletion_date**: Provide a specific calendar date for when the product will runting out
 
 
 ## 💬 Prompt Examples

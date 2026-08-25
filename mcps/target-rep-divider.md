@@ -15,10 +15,10 @@ The `target-rep-divider` MCP server helps athletes and coaches organize workout 
 
 ## Available Tools (3)
 - **validate_repetition_parameters**: Validates repetition parameters
+- **calculate_set_breakdown**: Calculates the numerical breakdown of sets and remaining reps
 - **generate_repetition_instruction**: "
 
 Generates a human-readable repetition instruction
-- **calculate_set_breakdown**: Calculates the numerical breakdown of sets and remaining reps
 
 
 ## 💬 Prompt Examples

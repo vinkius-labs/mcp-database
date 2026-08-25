@@ -14,10 +14,10 @@ This MCP server provides precise, matrix-based string comparison metrics that ar
 
 
 ## Available Tools (2)
-- **batch_rank_candidates**: Rank candidates based on similarity to a target
 - **compute_single_metric**: for example Levenshtein) between two strings.
 
 Compute a string similarity metric
+- **batch_rank_candidates**: Rank candidates based on similarity to a target
 
 
 ## 💬 Prompt Examples

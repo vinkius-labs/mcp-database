@@ -14,9 +14,9 @@ The Pyramid Scheme Builder is a specialized tool for strength athletes and fitne
 
 
 ## Available Tools (3)
+- **compare_scheme_intensities**: Compares two different pyramid schemes to determine which generates more total work
 - **generate_pyramidal_sequence**: Generates the complete list of repetitions for a specific training session and calculates total work
 - **validate_scheme_parameters**: Verifies if a proposed set of training parameters is mathematically valid
-- **compare_scheme_intensities**: Compares two different pyramid schemes to determine which generates more total work
 
 
 ## 💬 Prompt Examples

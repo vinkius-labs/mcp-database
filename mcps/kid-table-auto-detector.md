@@ -18,12 +18,12 @@ The `kid-table-auto-detector` MCP server automates the complex logic of event se
 
 
 ## Available Tools (3)
-- **audit_seating_safety**: Returns safety status and violations.
-
-Validate the integrity of the final seating plan
 - **link_parent_seating**: Returns parent assignments and broken links.
 
 Assign parents to tables near their children
+- **audit_seating_safety**: Returns safety status and violations.
+
+Validate the integrity of the final seating plan
 - **identify_child_seats**: Returns child assignments and unassigned children.
 
 Filter the guest list for children and assign them to available kid-specific tables

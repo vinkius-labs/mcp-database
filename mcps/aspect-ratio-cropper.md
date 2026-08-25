@@ -15,10 +15,10 @@ The Aspect Ratio Cropper MCP server provides high-precision calculations for ima
 
 ## Available Tools (3)
 - **analyze_area_loss**: Quantifies the amount of image data removed during cropping
+- **calculate_crop_bounds**: Calculates the precise rectangular boundaries for a center-aligned crop
 - **get_aspect_ratio_presets**: Use platform name to filter.
 
 Provides standardized aspect ratio presets
-- **calculate_crop_bounds**: Calculates the precise rectangular boundaries for a center-aligned crop
 
 
 ## 💬 Prompt Examples

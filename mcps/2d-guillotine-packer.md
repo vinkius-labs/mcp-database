@@ -14,8 +14,8 @@ The 2D Guillotine Packer is a geometric utility designed to determine if a colle
 
 
 ## Available Tools (3)
-- **pack_rectangles**: Determines if a set of 2D rectangles can fit inside a larger bounding rectangle
 - **calculate_packing_density**: Calculates how much of the container's total area is occupied by placed items
+- **pack_rectangles**: Determines if a set of 2D rectangles can fit inside a larger bounding rectangle
 - **validate_item_compatibility**: Performs a quick pre-check to see if any item's intrinsic size makes it impossible to fit
 
 

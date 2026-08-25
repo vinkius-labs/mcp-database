@@ -15,8 +15,8 @@ This MCP server provides specialized tools for strength athletes to calculate th
 
 ## Available Tools (3)
 - **evaluate_drop_intensity**: Categorizes the difficulty of a drop set strategy
-- **generate_drop_sequence**: Generates a sequence of weights for consecutive drop sets
 - **calculate_drop_summary**: Calculates the impact of drops on total workload
+- **generate_drop_sequence**: Generates a sequence of weights for consecutive drop sets
 
 
 ## 💬 Prompt Examples

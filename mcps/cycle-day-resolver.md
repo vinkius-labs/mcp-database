@@ -14,16 +14,16 @@ The Cycle Day Resolver MCP server acts as a temporal engine that calculates exac
 
 
 ## Available Tools (4)
+- **find_next_occurrence**: Searches forward in time to find the very next date a specific step will appear
+- **analyze_cycle_composition**: Returns total length and step frequencies as JSON.
+
+Provides a statistical overview of the cycle's structure and frequency
 - **get_schedule_window**: Returns a list of dates and steps.
 
 Generates a complete chronological forecast of all steps within a specific time range
 - **get_step_for_date**: Returns the resolved step name.
 
 Identifies which specific step or task is scheduled for a particular target date
-- **analyze_cycle_composition**: Returns total length and step frequencies as JSON.
-
-Provides a statistical overview of the cycle's structure and frequency
-- **find_next_occurrence**: Searches forward in time to find the very next date a specific step will appear
 
 
 ## 💬 Prompt Examples

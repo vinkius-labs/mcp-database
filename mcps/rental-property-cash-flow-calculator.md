@@ -16,8 +16,8 @@ This MCP server provides a complete financial analysis engine for real estate in
 ## Available Tools (5)
 - **compare_investment_scenarios**: Provides a side-by-side summary of multiple property options
 - **estimate_1031_exchange_impact**: Predicts potential tax savings from a 1031 exchange
-- **calculate_property_cash_flow**: Calculates monthly and annual cash flow for a rental property
 - **project_tax_benefits**: Estimates tax-shielding potential through depreciation and interest
+- **calculate_property_cash_flow**: Calculates monthly and annual cash flow for a rental property
 - **calculate_returns_metrics**: Evaluates profitability and yield of an investment
 
 
