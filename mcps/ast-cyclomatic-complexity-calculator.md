@@ -14,9 +14,9 @@ The AST Cyclomatic Complexity Calculator provides a deterministic way to audit c
 
 
 ## Available Tools (3)
+- **identify_refactor_candidates**: Identify functions that need refactoring
 - **analyze_complexity**: Analyze the cyclomatic complexity of source code
 - **compare_complexity_impact**: Compare complexity between two versions of code
-- **identify_refactor_candidates**: Identify functions that need refactoring
 
 
 ## 💬 Prompt Examples

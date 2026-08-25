@@ -14,9 +14,9 @@ The API Pagination Logic Verifier is an AST-based engine designed to identify 'u
 
 
 ## Available Tools (3)
+- **analyze_offset_pagination**: Checks if an endpoint implementation correctly accepts and structures parameters for offset/limit pagination
 - **inspect_pagination_metadata**: Verifies that the API response structure includes the necessary information for clients to navigate pages
 - **verify_limit_enforcement**: Audits whether the code implements a guardrail to prevent excessively large requests
-- **analyze_offset_pagination**: Checks if an endpoint implementation correctly accepts and structures parameters for offset/limit pagination
 
 
 ## 💬 Prompt Examples

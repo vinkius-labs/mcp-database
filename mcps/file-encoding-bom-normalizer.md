@@ -14,10 +14,10 @@ The File Encoding & BOM Normalizer is a specialized utility for maintaining cons
 
 
 ## Available Tools (4)
-- **generate_normalized_payload**: Generate the normalized text content of a file
 - **identify_encoding_bom**: Identify the BOM signature at the start of a file
 - **inspect_line_endings**: Check for consistent line endings in a file
 - **preview_normalization_stats**: Preview the impact of normalization on a file
+- **generate_normalized_payload**: Generate the normalized text content of a file
 
 
 ## 💬 Prompt Examples

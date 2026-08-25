@@ -14,8 +14,8 @@ The Execution Circuit Breaker is a stability pattern designed to prevent an agen
 
 
 ## Available Tools (3)
-- **record_failure**: Notifies the circuit breaker that an execution attempt failed
 - **record_success**: Notifies the circuit breaker that an execution attempt was successful
+- **record_failure**: Notifies the circuit breaker that an execution attempt failed
 - **get_circuit_status**: Determines the current operational state of the circuit and whether execution is permitted
 
 

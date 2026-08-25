@@ -14,8 +14,8 @@ This MCP server provides specialized tools to identify security threats within U
 
 
 ## Available Tools (3)
-- **inspect_homoglyph_substitutions**: Isolates and reports only the visual substitutions found in a string
 - **analyze_string_security**: Provides a high-level security assessment of a provided string
+- **inspect_homoglyph_substitutions**: Isolates and reports only the visual substitutions found in a string
 - **detect_hidden_characters**: Scans for the presence of invisible or zero-width characters
 
 

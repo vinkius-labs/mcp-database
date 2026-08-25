@@ -14,9 +14,9 @@ This MCP server acts as an architectural guardrail for your codebase. It allows 
 
 
 ## Available Tools (3)
-- **identify_layer**: Determines which architectural layer a specific file belongs to based on its path
 - **audit_imports**: Performs a full architectural audit on a file by checking all its imports
 - **check_rule_compliance**: Validates whether a dependency from one specific layer to another is permitted
+- **identify_layer**: Determines which architectural layer a specific file belongs to based on its path
 
 
 ## 💬 Prompt Examples

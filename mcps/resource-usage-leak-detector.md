@@ -14,12 +14,12 @@ This MCP server provides a monitoring system designed to track agentic resource 
 
 
 ## Available Tools (4)
-- **audit_all_sessions**: Perform a globalThis scan of all tracked sessions to identify any processes currently exhibiting resource leaks
-- **configure_thresholds**: Adjust the globalThis limits used to determine when a leak has occurred
-- **get_session_status**: Provide a snapshot of the current health and usage levels for a specific agent session
 - **record_resource_event**: Pass "OPEN" to increment and "CLOSE" to decrement.
 
 Update the internal state of an agent session by recording the opening or closing of a resource
+- **audit_all_sessions**: Perform a globalThis scan of all tracked sessions to identify any processes currently exhibiting resource leaks
+- **configure_thresholds**: Adjust the globalThis limits used to determine when a leak has occurred
+- **get_session_status**: Provide a snapshot of the current health and usage levels for a specific agent session
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ The JSON Payload Depth and Size Limiter MCP server provides a deterministic vali
 
 
 ## Available Tools (3)
+- **analyze_payload_metrics**: Analyzes the structural profile of a JSON payload
 - **validate_payload_constraints**: Validates JSON payload against depth and size constraints
 - **verify_limit_configuration**: Verifies if the provided constraints are safe and logical
-- **analyze_payload_metrics**: Analyzes the structural profile of a JSON payload
 
 
 ## 💬 Prompt Examples

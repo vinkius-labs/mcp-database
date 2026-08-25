@@ -14,8 +14,8 @@ This MCP server provides specialized tools for applying unified diff patches to 
 
 
 ## Available Tools (3)
-- **analyze_diff_syntax**: Verifies if a provided string follows the structural requirements of the Unified Diff format
 - **apply_unified_implements**: Attempts to apply a unified diff string to a block of original text
+- **analyze_diff_syntax**: Verifies if a provided string follows the structural requirements of the Unified Diff format
 - **measure_line_drift**: Quantifies how much a line of text has changed from its expected state
 
 

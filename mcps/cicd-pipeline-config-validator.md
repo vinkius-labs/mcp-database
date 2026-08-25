@@ -14,10 +14,10 @@ Ensure the structural integrity, security, and execution safety of your CI/CD pi
 
 
 ## Available Tools (4)
+- **audit_safety**: Audit the pipeline for execution safety risks
 - **check_structure**: Check the structural integrity of a CI/CD pipeline config
 - **generate_compliance_report**: Generate a full compliance report for a pipeline
 - **validate_references**: Validate that external references use immutable sha256 hashes
-- **audit_safety**: Audit the pipeline for execution safety risks
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides a simulation engine for atomic file updates. It allows 
 
 
 ## Available Tools (3)
-- **generate_payload**: Generates a transaction payload for a file write
 - **validate_syntax**: Validates the syntax of content
 - **verify_integrity**: Verifies the integrity of a file after a write operation
+- **generate_payload**: Generates a transaction payload for a file write
 
 
 ## 💬 Prompt Examples

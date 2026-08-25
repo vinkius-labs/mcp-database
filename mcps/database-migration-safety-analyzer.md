@@ -14,8 +14,8 @@ The Database Migration Safety Analyzer MCP server acts as a safety gate for your
 
 
 ## Available Tools (2)
-- **analyze_migration**: Analyze SQL migration content for destructive operations
 - **assess_deployment_safety**: Assess if a deployment is safe based on an analysis report
+- **analyze_migration**: Analyze SQL migration content for destructive operations
 
 
 ## 💬 Prompt Examples

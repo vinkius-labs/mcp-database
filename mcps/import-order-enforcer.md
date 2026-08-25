@@ -14,9 +14,9 @@ The Import Order Enforcer uses Abstract Syntax Tree (AST) parsing to ensure your
 
 
 ## Available Tools (3)
+- **detect_unused_imports**: Detects unused imports
 - **fix_imports**: Generates a fixed import block
 - **validate_imports**: Validates import compliance
-- **detect_unused_imports**: Detects unused imports
 
 
 ## 💬 Prompt Examples

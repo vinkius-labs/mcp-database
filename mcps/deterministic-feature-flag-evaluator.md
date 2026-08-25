@@ -14,9 +14,9 @@ The Deterministic Feature Flag Evaluator provides a reliable way to manage featu
 
 
 ## Available Tools (3)
-- **evaluate_flag**: Evaluates if a feature flag is enabled for a specific user
 - **get_flag_config**: Retrieves the configuration for a given flag key
 - **verify_distribution**: Verifies if the flag distribution is uniform across a sample size
+- **evaluate_flag**: Evaluates if a feature flag is enabled for a specific user
 
 
 ## 💬 Prompt Examples

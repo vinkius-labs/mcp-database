@@ -14,9 +14,9 @@ The Outbound Network Firewall Validator acts as a security layer for AI agents. 
 
 
 ## Available Tools (3)
+- **validate_outbound_request**: Validate an outbound URL against security policies
 - **check_domain_membership**: Check if a hostname belongs to an allowed domain list
 - **evaluate_ip_risk**: Evaluate the risk level of an IPv4 address
-- **validate_outbound_request**: Validate an outbound URL against security policies
 
 
 ## 💬 Prompt Examples

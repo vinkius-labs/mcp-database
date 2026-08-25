@@ -14,10 +14,10 @@ Protect your AI agents from spoofed external events with the Webhook HMAC Signat
 
 
 ## Available Tools (3)
-- **validate_webhook_signature**: Validate a webhook payload against a signature and secret
 - **decompose_header_string**: g., "sha256=abc...") and need to extract the components.
 
 Decompose a webhook header into algorithm and signature
+- **validate_webhook_signature**: Validate a webhook payload against a signature and secret
 - **fetch_provider_secrets**: Fetch stored secrets for a specific provider
 
 

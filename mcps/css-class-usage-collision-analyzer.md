@@ -14,12 +14,12 @@ This MCP server provides static analysis for frontend projects to maintain clean
 
 
 ## Available Tools (3)
-- **find_broken_references**: html/.jsx/.tsx files and checks if each class has a corresponding definition in .css/.scss files.
-
-Identifies class names used in HTML/JSX that lack CSS definitions
 - **find_css_collisions**: css/.scss files in the project root to identify if the same class name is defined in multiple places.
 
 Detects duplicate class definitions across different CSS files
+- **find_broken_references**: html/.jsx/.tsx files and checks if each class has a corresponding definition in .css/.scss files.
+
+Identifies class names used in HTML/JSX that lack CSS definitions
 - **find_orphaned_classes**: css/.scss files and compares them against usage in .html/.jsx/.tsx files.
 
 Identifies CSS classes that are declared but never used

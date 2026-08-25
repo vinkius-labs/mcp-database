@@ -14,8 +14,8 @@ The OpenAPI Context Window Packer is a precision engine designed to compress lar
 
 
 ## Available Tools (3)
-- **compress_openapi_spec**: Compresses OpenAPI spec
 - **analyze_endpoint_coverage**: Analyzes endpoint coverage
+- **compress_openapi_spec**: Compresses OpenAPI spec
 - **trace_schema_dependencies**: Traces schema dependencies
 
 

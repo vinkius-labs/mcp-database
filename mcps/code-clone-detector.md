@@ -14,8 +14,8 @@ The Code Clone Detector MCP server connects AI agents to your codebase to preven
 
 
 ## Available Tools (3)
-- **identify_exact_duplicates**: Finds blocks of code that are structurally identical after normalization
 - **identify_near_matches**: Finds code blocks that are highly similar but not exact duplicates
+- **identify_exact_duplicates**: Finds blocks of code that are structurally identical after normalization
 - **generate_normalized_signature**: Provides a normalized, anonymized version of a code block
 
 

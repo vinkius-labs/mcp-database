@@ -14,8 +14,8 @@ This MCP server provides a precision engine for calculating document relevance u
 
 
 ## Available Tools (3)
-- **calculate_term_weights**: Computes the IDF for each term in a query
 - **analyze_document_composition**: Extracts statistics from a document
+- **calculate_term_weights**: Computes the IDF for each term in a query
 - **compute_relevance_score**: Calculates the BM25 relevance score for a document
 
 
