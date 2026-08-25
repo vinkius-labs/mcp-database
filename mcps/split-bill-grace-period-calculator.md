@@ -14,9 +14,9 @@ The Split-Bill Grace Period Calculator is a financial utility designed to handle
 
 
 ## Available Tools (3)
-- **calculate_repayment_total**: Calculates the final, adjusted dollar amount that Person B must send to Person A
 - **get_interest_accrual**: Isolates and identifies exactly how much extra money is being charged due to the delay
 - **validate_bill_coverage**: Verifies if the combined initial payment and final repayment covers the total bill
+- **calculate_repayment_total**: Calculates the final, adjusted dollar amount that Person B must send to Person A
 
 
 ## 💬 Prompt Examples

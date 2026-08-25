@@ -14,9 +14,9 @@ The Discount Order Optimizer is a specialized tool designed to solve the complex
 
 
 ## Available Tools (3)
+- **validate_discount_eligibility**: Checks if a single discount is applicable
 - **calculate_sequence_impact**: Calculates impact of a specific sequence
 - **find_optimal_discount_sequence**: Finds the best order of discounts
-- **validate_discount_eligibility**: Checks if a single discount is applicable
 
 
 ## 💬 Prompt Examples

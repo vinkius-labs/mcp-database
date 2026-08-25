@@ -14,10 +14,10 @@ This MCP server provides specialized tools for bankroll management and capital a
 
 
 ## Available Tools (4)
-- **get_net_odds_ratio**: Translates American odds into the net profit-to-stake ratio (b)
 - **validate_betting_parameters**: Ensures all inputs provided for any Kelly calculation are mathematically sound
 - **calculate_half_kelly**: Provides a safer, more conservative wagering fraction
 - **calculate_pure_kelly**: Determines the maximum mathematically optimal percentage of the bankroll to wager
+- **get_net_odds_ratio**: Translates American odds into the net profit-to-stake ratio (b)
 
 
 ## 💬 Prompt Examples

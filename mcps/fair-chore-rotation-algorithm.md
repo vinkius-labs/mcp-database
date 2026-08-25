@@ -14,9 +14,9 @@ The Fair Chore Rotation Algorithm ensures a perfectly balanced distribution of r
 
 
 ## Available Tools (3)
-- **validate_rotation_integrity**: Verifies that no person receives the same task twice in a row
 - **calculate_task_frequency**: Measures how many times each chore was assigned
 - **generate_rotation_grid**: Generates a complete day-by daily task assignment schedule
+- **validate_rotation_integrity**: Verifies that no person receives the same task twice in a row
 
 
 ## 💬 Prompt Examples

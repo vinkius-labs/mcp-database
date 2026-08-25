@@ -14,9 +14,9 @@ The Crossfade Time Subtractor MCP server provides essential calculations for vid
 
 
 ## Available Tools (3)
-- **get_overlap_impact_report**: Provides a breakdown of time lost to transitions
 - **get_required_raw_sum**: Calculates the total sum of raw clip lengths needed for a target duration
 - **get_true_duration**: Determines the actual length of the final video sequence after all crossfades have been applied
+- **get_overlap_impact_report**: Provides a breakdown of time lost to transitions
 
 
 ## 💬 Prompt Examples

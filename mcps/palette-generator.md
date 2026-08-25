@@ -14,12 +14,12 @@ The Palette Generator MCP connects AI agents to a professional color theory engi
 
 
 ## Available Tools (4)
+- **get_monochromatic_shades**: Creates a range of shades and tints derived from a single hue
+- **get_accessible_palette**: Generates a palette where all colors are guaranteed to pass WCAG AA contrast standards
+- **get_attribute_variation**: Generates a palette by holding one color attribute constant while varying another
 - **get_harmony_palette**: Supports complementary, split-complementary, analogous, triadic, tetradic, monochromatic, and custom modes.
 
 Generates a palette based on traditional color theory relationship rules
-- **get_monochromatic_shades**: Creates a range of shades and tints derived from a single hue
-- **get_attribute_variation**: Generates a palette by holding one color attribute constant while varying another
-- **get_accessible_palette**: Generates a palette where all colors are guaranteed to pass WCAG AA contrast standards
 
 
 ## 💬 Prompt Examples

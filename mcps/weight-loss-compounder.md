@@ -14,8 +14,8 @@ The Weight Loss Compounder is a physiological simulator that models realistic, d
 
 
 ## Available Tools (3)
-- **analyze_metabolic_efficiency**: Analyze the deceleration of weight loss efficiency
 - **calculate_projection_summary**: Calculate a weight loss projection summary
+- **analyze_metabolic_efficiency**: Analyze the deceleration of weight loss efficiency
 - **get_weekly_trajectory**: Get a detailed weekly weight loss trajectory
 
 

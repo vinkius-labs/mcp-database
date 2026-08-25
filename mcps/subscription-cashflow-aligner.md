@@ -14,9 +14,9 @@ The Subscription Cashflow Aligner helps you synchronize your recurring expenses 
 
 
 ## Available Tools (3)
+- **summarize_cashflow_health**: Summarize the overall health of your cashflow
 - **evaluate_billing_day**: Evaluate if a specific subscription day is safe
 - **find_best_subscription_day**: Find the optimal day for a subscription to minimize overdrafts
-- **summarize_cashflow_health**: Summarize the overall health of your cashflow
 
 
 ## 💬 Prompt Examples

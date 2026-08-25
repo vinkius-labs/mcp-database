@@ -14,9 +14,9 @@ The Inflation Erosion Calculator helps you understand the 'hidden tax' of inflat
 
 
 ## Available Tools (3)
-- **compare_inflation_scenarios**: Demonstrates how different inflation environments impact long-term wealth differently
-- **calculate_annual_erosion_schedule**: Provides a detailed, year-by-year breakdown of how an initial sum loses effectiveness
 - **calculate_total_erosion_percentage**: Identifies the "hidden tax" percentage lost to inflation at the end of a timeframe
+- **calculate_annual_erosion_schedule**: Provides a detailed, year-by-year breakdown of how an initial sum loses effectiveness
+- **compare_inflation_scenarios**: Demonstrates how different inflation environments impact long-term wealth differently
 
 
 ## 💬 Prompt Examples

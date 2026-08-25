@@ -14,9 +14,9 @@ A precision engine for transforming color data between all major mathematical an
 
 
 ## Available Tools (3)
-- **convert_color**: Converts a color from one space to another
 - **inspect_color_profile**: Provides a breakdown of a color's identity across spaces
 - **batch_transform_colors**: Executes multiple color conversions in one go
+- **convert_color**: Converts a color from one space to another
 
 
 ## 💬 Prompt Examples

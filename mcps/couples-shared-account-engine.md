@@ -14,10 +14,10 @@ The Couples Shared Account Engine provides a precise way for partners to manage 
 
 
 ## Available Tools (4)
+- **calculate_reconciliation_transfer**: Calculate the transfer needed to reconcile shared expenses
 - **calculate_income_proportions**: Calculate the proportion of total income for each partner
 - **calculate_individual_obligations**: Calculate how much each partner owes to the shared expenses pool
 - **calculate_partner_surplus**: Calculate the remaining surplus for each partner after shared expenses and personal costs
-- **calculate_reconciliation_transfer**: Calculate the transfer needed to reconcile shared expenses
 
 
 ## 💬 Prompt Examples

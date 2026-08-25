@@ -14,9 +14,9 @@ The No-Consecutive-Shift-Generator is a specialized scheduling engine designed t
 
 
 ## Available Tools (3)
+- **validate_shift_sequence**: Audits a single team's schedule for fatigue-inducing transitions
 - **calculate_workload_imbalance**: Determines if safety interventions have created an unfair distribution of rest days
 - **generate_work_schedule**: Generates a complete multi-day work schedule
-- **validate_shift_sequence**: Audits a single team's schedule for fatigue-inducing transitions
 
 
 ## 💬 Prompt Examples

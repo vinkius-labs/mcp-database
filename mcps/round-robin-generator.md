@@ -14,9 +14,9 @@ The Round Robin Generator MCP allows AI agents to calculate every unique subset 
 
 
 ## Available Tools (3)
-- **generate_all_combinations**: Identify every unique subset of legs for a specified group size
 - **project_payouts**: Estimate the monetary return for each parlay in the set based on their odds
 - **calculate_per_parlay_wager**: Determine the specific amount of money to stake on each individual combination
+- **generate_all_combinations**: Identify every unique subset of legs for a specified group size
 
 
 ## 💬 Prompt Examples

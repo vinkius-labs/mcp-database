@@ -15,9 +15,9 @@ The Tile Floor Calculator is a specialized tool for estimating all necessary ins
 
 ## Available Tools (4)
 - **calculate_room_area**: Calculate the surface area of a room based on boundary points
-- **sum_project_costs**: Calculate the total estimated cost for all materials
-- **calculate_joint_and_trim**: Calculate grout volume and edge trim length
 - **estimate_tile_requirements**: Estimate the number of tiles and adhesive needed
+- **calculate_joint_and_trim**: Calculate grout volume and edge trim length
+- **sum_project_costs**: Calculate the total estimated cost for all materials
 
 
 ## 💬 Prompt Examples

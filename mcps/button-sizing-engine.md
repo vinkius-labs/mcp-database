@@ -14,10 +14,10 @@ The Button Sizing Engine is a specialized utility for the garment manufacturing 
 
 
 ## Available Tools (4)
+- **calculate_buttonhole_dimensions**: Calculates necessary buttonhole length
 - **convert_button_unit**: Converts a dimension from one unit to another
 - **estimate_button_spacing**: Suggests ideal distance between buttons
 - **get_button_by_application**: Gets standard button size for a garment part
-- **calculate_buttonhole_dimensions**: Calculates necessary buttonhole length
 
 
 ## 💬 Prompt Examples

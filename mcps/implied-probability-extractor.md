@@ -14,9 +14,9 @@ The Implied Probability Extractor is a precision utility designed for bettors an
 
 
 ## Available Tools (3)
+- **get_true_probabilities**: Removes the bookmaker's margin to provide fair market probabilities
 - **calculate_overround_percentage**: Determines the total margin (the "vig") being charged
 - **get_raw_probabilities**: Converts American odds into unadjusted raw implied probabilities
-- **get_true_probabilities**: Removes the bookmaker's margin to provide fair market probabilities
 
 
 ## 💬 Prompt Examples
