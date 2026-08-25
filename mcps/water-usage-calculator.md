@@ -14,10 +14,10 @@ The Water Usage Calculator connects your AI agent to precise household water con
 
 
 ## Available Tools (4)
-- **calculate_total_usage**: Calculate total annual water usage and cost
-- **assess_leak_impact**: Assess the impact of a water leak
-- **analyze_upgrade_roi**: Analyze the ROI of upgrading a water fixture
 - **compare_regional_usage**: Compare user water usage against regional benchmarks
+- **analyze_upgrade_roi**: Analyze the ROI of upgrading a water fixture
+- **assess_leak_impact**: Assess the impact of a water leak
+- **calculate_total_usage**: Calculate total annual water usage and cost
 
 
 ## 💬 Prompt Examples

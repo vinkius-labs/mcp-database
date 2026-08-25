@@ -14,9 +14,9 @@ This MCP server provides precision utilities for managing recurring medical inje
 
 
 ## Available Tools (3)
+- **verify_schedule_compliance**: Checks a provided list of dates against a specific frequency rule
 - **calculate_shift_offset**: Determines exactly how many days of delay are highly required to move a medication day to a preferred weekday
 - **get_injection_schedule**: Calculates a full list of injection dates based on a starting point and a frequency, with optional weekday realignment
-- **verify_schedule_compliance**: Checks a provided list of dates against a specific frequency rule
 
 
 ## 💬 Prompt Examples

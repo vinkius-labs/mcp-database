@@ -14,10 +14,10 @@ This MCP server provides advanced anthropometric analysis beyond basic Body Mass
 
 
 ## Available Tools (4)
-- **get_athlete_metrics**: Calculate FFMI and lean body mass
 - **calculate_bmi**: Calculate BMI and weight category
 - **analyze_body_composition**: Analyze body fat percentage and WHR
 - **calculate_frame_target_weight**: Determine skeletal frame size and target weight
+- **get_athlete_metrics**: Calculate FFMI and lean body mass
 
 
 ## 💬 Prompt Examples

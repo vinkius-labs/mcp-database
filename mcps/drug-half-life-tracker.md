@@ -21,11 +21,11 @@ This tool is essential for managing medications with non-linear kinetics, where 
 
 
 ## Available Tools (3)
+- **get_drug_data**: Retrieves fundamental pharmacokinetic properties for a specified medication
 - **calculate_steady_state_metrics**: Returns 90/95/99% SS times and accumulation factor.
 
 Calculates time to reach steady state milestones and accumulation factor
 - **evaluate_missed_dose_impact**: Predicts remaining concentration after missed doses
-- **get_drug_data**: Retrieves fundamental pharmacokinetic properties for a specified medication
 
 
 ## 💬 Prompt Examples

@@ -37,30 +37,28 @@ No API key required for public data — completely free.
 
 
 ## Available Tools (8)
-- **get_24h_ticker**: Includes last price, 24h change (price and %), high/low, volume (base and quote), number of trades and open interest. Useful for market overview and scanning.
+- **get_server_time**: Get the current Binance server time. Use to check exchange availability or align timestamps before other calls
+- **get_trades**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT.
 
-Get 24-hour rolling window price change statistics
-- **get_server_time**: Returns Unix timestamp in milliseconds and ISO string. Useful for synchronizing with the exchange server.
+Get the most recent individual trades (price, quantity, time, side) for a trading pair. Use to inspect live trade activity and order flow
+- **get_agg_trades**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT.
 
-Get Binance server time
-- **get_ticker_price**: Returns symbol and current price. If no symbol is specified, returns all pairs. Fastest way to get current prices.
+Get aggregated trades, where fills at the same price and time are combined into one record. Use for efficient trade-flow analysis on high-volume pairs
+- **get_exchange_info**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT. Omit symbol to list all pairs.
 
-Get latest price for trading pair(s)
-- **get_trades**: Each trade includes trade ID, price, quantity, time, whether buyer was maker and if it was the best price match. Returns up to 500 trades (default 500, max 1000 via limit). Useful for analyzing recent market activity.
+Look up trading rules and metadata for Binance pairs: status, base/quote assets, order types and price/quantity filters. Use to discover valid symbols or check limits before trading
+- **get_klines**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT.
 
-Get recent individual trades for a trading pair
-- **get_agg_trades**: Each aggregated trade includes trade ID, price, quantity, first/last trade IDs, timestamp and whether buyer was maker. More efficient than individual trades for high-volume pairs. Returns up to 500 (default) or 1000 trades.
+Get historical OHLCV candlestick data (open, high, low, close, volume) for a trading pair at a chosen interval. Use for charting and technical analysis
+- **get_24h_ticker**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT. Omit symbol to return all pairs.
 
-Get compressed/aggregated trades for a trading pair
-- **get_exchange_info**: Returns all trading pairs, their status, base/quote assets, order types, filters (price, quantity, notional) and permissions. Optionally filter by a specific symbol.
+Get 24-hour price change stats for a trading pair: price change, percent change, high, low and volume. Use for market overviews or "how did X move today"
+- **get_order_book**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT.
 
-Get exchange trading rules and symbol info
-- **get_klines**: Supports intervals: 1m, 3m, 5m, 15m, 30m, 1h, 2h, 4h, 6h, 8h, 12h, 1d, 3d, 1w, 1M. Optionally set limit (max 1000, default 500) and time range with startTime/endTime (Unix timestamp ms). Useful for technical analysis and charting.
+Get the live order book (bids and asks with prices and quantities) for a trading pair. Use to analyze market depth, spread and liquidity
+- **get_price**: Symbol format: BASE+QUOTE (BTCUSDT, BTCUSDC). BASE only (BTC) is converted to BTCUSDT. Omit symbol to return all pairs.
 
-Get candlestick (OHLCV) chart data for a trading pair
-- **get_order_book**: Each level includes price and quantity. The limit parameter controls the number of levels (5, 10, 20, 50, 100, 500, 1000, 5000). Useful for analyzing market depth, spread and liquidity.
-
-Get current order book (bids and asks) for a trading pair
+Get the latest market price for a trading pair (e.g. BTCUSDT). The fastest way to answer "how much is X worth right now"
 
 
 ## 💬 Prompt Examples

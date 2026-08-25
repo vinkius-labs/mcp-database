@@ -15,8 +15,8 @@ The Heart Rate Zone Calculator is a precision engine designed to optimize athlet
 
 ## Available Tools (3)
 - **get_max_heart_rate**: Determines the most accurate maximum heart rate for a user
-- **get_workout_distribution**: Provides a recommended time allocation across training zones
 - **calculate_training_zones**: Calculates specific heart rate ranges for all five training zones
+- **get_workout_distribution**: Provides a recommended time allocation across training zones
 
 
 ## 💬 Prompt Examples

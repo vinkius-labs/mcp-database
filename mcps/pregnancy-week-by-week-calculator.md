@@ -14,8 +14,8 @@ The Pregnancy Week-by-Week Calculator connects AI agents to essential obstetric 
 
 
 ## Available Tools (3)
-- **calculate_pregnancy_status**: Calculates current pregnancy progress and upcoming milestones
 - **get_trimester_information**: Provides common symptoms for a specific trimester
+- **calculate_pregnancy_status**: Calculates current pregnancy progress and upcoming milestones
 - **get_weekly_development_data**: Retrieves developmental milestones and size comparison for a specific week
 
 

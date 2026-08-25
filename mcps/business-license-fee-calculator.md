@@ -20,10 +20,10 @@ Key capabilities include:
 
 
 ## Available Tools (4)
-- **calculate_base_license_fee**: Calculate the base business license fee
 - **identify_required_permits**: Identify required business permits
-- **estimate_total_annual_burden**: Estimate the total annual business burden
 - **compare_jurisdiction_costs**: Compare business costs between two jurisdictions
+- **calculate_base_license_fee**: Calculate the base business license fee
+- **estimate_total_annual_burden**: Estimate the total annual business burden
 
 
 ## 💬 Prompt Examples

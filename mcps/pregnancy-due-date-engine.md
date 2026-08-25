@@ -15,8 +15,8 @@ The Pregnancy Due Date Engine provides precise clinical calculations for pregnan
 
 ## Available Tools (4)
 - **get_fetal_growth_metrics**: Estimate fetal weight percentile
-- **calculate_gestational_status**: Calculate pregnancy progress and due date
 - **get_pregnancy_milestones**: Get key pregnancy milestones
+- **calculate_gestational_status**: Calculate pregnancy progress and due date
 - **get_prenatal_visit_schedule**: Generate upcoming prenatal visit schedule
 
 

@@ -14,8 +14,8 @@ The Screen Time Impact Calculator helps you understand how your digital habits a
 
 
 ## Available Tools (4)
-- **generate_detox_plan**: Generate a digital detox reduction schedule
 - **calculate_exposure_risk**: Calculate eye strain risk and blue light exposure
+- **generate_detox_plan**: Generate a digital detox reduction schedule
 - **project_productivity_gains**: Project productivity gains from reduced screen time
 - **calculate_sleep_impact**: Calculate impact of screen time on sleep
 

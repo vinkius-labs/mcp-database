@@ -14,8 +14,8 @@ The Loot Drop Simulator allows game developers to verify the integrity of their 
 
 
 ## Available Tools (3)
-- **calculate_rarity_drift**: Identify how much the actual experimental results deviate from the theoretical design
 - **get_table_configuration**: Retrieve the structural definition and weight values for a specific loot table
+- **calculate_rarity_drift**: Identify how much the actual experimental results deviate from the theoretical design
 - **simulate_drop_batch**: Execute a large number of randomized trials to observe how item weights manifest in practice
 
 

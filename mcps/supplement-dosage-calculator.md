@@ -14,13 +14,13 @@ The Supplement Dosage Calculator is an expert system designed to bridge the gap 
 
 
 ## Available Tools (5)
-- **calculate_creatine_regimen**: Provides daily creatine dosing for both loading and maintenance phases
-- **calculate_iron_dosage**: Determines the required dose of iron salts to address hemoglobin deficiency or maintain levels
 - **calculate_magnesium_mass**: Calculates the total mass of a magnesium compound needed to achieve a specific elemental magnesium goal
-- **lookup_supplement_safety_parameters**: Retrieves official safety and nutritional benchmarks for any supplement in the database
 - **calculate_vitamin_d_dose**: Adjusts for deficiency.
 
 Determines the daily Vitamin D requirement in both mcg and IU based on user physiology
+- **calculate_creatine_regimen**: Provides daily creatine dosing for both loading and maintenance phases
+- **calculate_iron_dosage**: Determines the required dose of iron salts to address hemoglobin deficiency or maintain levels
+- **lookup_supplement_safety_parameters**: Retrieves official safety and nutritional benchmarks for any supplement in the database
 
 
 ## 💬 Prompt Examples

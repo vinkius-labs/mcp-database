@@ -14,9 +14,9 @@ The Digital Wellness Boundary Setter helps you reclaim your attention by calcula
 
 
 ## Available Tools (3)
+- **predict_wellbeing_uplift**: Estimates the potential increase in a user's well-being score
 - **analyze_usage_gap**: Compares current digital habits against desired limits
 - **calculate_boundaries**: Generates a personalized digital boundary plan
-- **predict_wellbeing_uplift**: Estimates the potential increase in a user's well-being score
 
 
 ## 💬 Prompt Examples

@@ -15,8 +15,8 @@ Plan your relocation with precision using the Moving Truck Sizer. This tool calc
 
 ## Available Tools (3)
 - **recommend_truck**: Recommend the best truck size based on estimated volume
-- **estimate_volume**: Calculate the total estimated cubic footage required for a move
 - **get_truck_inventory**: Get the list of available trucks and their capacities
+- **estimate_volume**: Calculate the total estimated cubic footage required for a move
 
 
 ## 💬 Prompt Examples

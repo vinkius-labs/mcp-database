@@ -14,8 +14,8 @@ The FPS Hardware Bottleneck Estimator is a specialized simulation engine designe
 
 
 ## Available Tools (3)
-- **estimate_performance**: Estimate game FPS and bottleneck status
 - **simulate_upgrade**: Simulate the impact of upgrading a component
+- **estimate_performance**: Estimate game FPS and bottleneck status
 - **identify_optimal_path**: Find the best hardware upgrade path
 
 

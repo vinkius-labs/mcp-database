@@ -36,27 +36,27 @@ Connect your AI agent to the **Binance** public API and take full control of you
 
 
 ## Available Tools (7)
-- **compare_coins**: Send one comma-separated string: {"symbols":"BTC,ETH,SOL"}. USDT is appended automatically, so bare tickers work.
+- **compare_coins**: A bare ticker defaults to USDT.
 
 Compare multiple cryptocurrencies side by side — price, 24h change, volume, and relative performance
-- **get_volatility**: Fetches the last N candles and computes: amplitude %, trend direction, bull/bear ratio. Do NOT use for a simple price check — use crypto.price instead. Default: interval=1h, periods=24 (last 24 hours).
+- **get_price**: For full stats, use get_ticker.
 
-Analyse the price volatility and trend of a cryptocurrency over a given number of candles
-- **get_ticker**: Accept natural names (e.g. "bitcoin", "BTC", "btcusdt"). For just a quick price, use crypto.price instead.
+Get the current price of a cryptocurrency plus its 24h change. Use for "how much is X?" or "what is the price of Y?"
+- **get_candles**: Intervals: 1m,5m,15m,30m,1h,4h,1d,1w. Limit 1-100 (default 30).
 
-Get full 24h statistics for any cryptocurrency trading pair on Binance
-- **list_market**: Returns USDT trading pairs ranked by 24h volume. Limit is 1–50 coins. Default to 10 if the user does not specify.
+Get OHLCV candlestick data for a crypto pair over time. Use for charts or analyzing price movement across a period
+- **get_ticker**: For a quick price only, use get_price.
 
-Get the top cryptocurrencies by trading volume on Binance, ranked by 24h USDT volume
-- **list_movers**: direction=gainers returns top positive movers, losers=negative movers, both=all sorted by absolute change. Filters to coins with at least $1M USDT volume to avoid low-liquidity noise. Limit is 1–20 per direction.
+Get full 24h statistics for a crypto pair: price, high, low, volume, trade count, VWAP and change. Use when a plain price is not enough
+- **list_market**: Limit 1-50 (default 10). For gainers/losers, use list_movers.
+
+List the top crypto coins by 24h trading volume. Use for market overviews, "top coins", or "most traded coins"
+- **list_movers**: Limit 1-20 per direction (default 5).
 
 Get the top gaining and/or losing cryptocurrencies on Binance in the last 24 hours
-- **get_price**: Accept natural names: "bitcoin", "BTC", "eth", "SOLUSDT". Returns current price + 24h change percentage. For full stats (volume, high/low, trades), use crypto.ticker instead.
+- **get_volatility**: Default interval=1h, periods=24.
 
-Get the current price of any cryptocurrency in USDT with 24h trend
-- **get_candles**: Supported intervals: 1m, 5m, 15m, 30m, 1h, 4h, 1d, 1w. Limit is 1–100 candles. Default to 30 daily candles (interval=1d, limit=30) unless the user specifies. Do NOT use for just a current price — use crypto.price for that.
-
-Get OHLCV candlestick chart data for a cryptocurrency pair on Binance
+Analyze price volatility and trend for a coin over recent candles: amplitude, direction and bull/bear ratio. Use for "how risky/volatile is X?"
 
 
 ## 💬 Prompt Examples

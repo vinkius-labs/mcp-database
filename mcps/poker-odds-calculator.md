@@ -14,9 +14,9 @@ This MCP server provides precise mathematical analysis for Texas Hold'em players
 
 
 ## Available Tools (4)
-- **analyze_outs**: Identifies how many cards in the deck will improve the player's hand
 - **calculate_hand_strength**: Determines the current best poker hand ranking based on available cards
 - **calculate_pot_odds**: Determines the mathematical necessity of calling a bet
+- **analyze_outs**: Identifies how many cards in the deck will improve the player's hand
 - **calculate_win_probability**: Predicts the percentage chance of winning against a specific number of opponents
 
 

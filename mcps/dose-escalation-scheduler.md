@@ -14,8 +14,8 @@ The Dose Escalation Scheduler is a specialized engine designed to generate accur
 
 
 ## Available Tools (3)
-- **predict_next_step**: Predict the next dose change
 - **generate_timeline**: Generate a full dose escalation timeline
+- **predict_next_step**: Predict the next dose change
 - **validate_parameters**: Validate dose escalation parameters
 
 

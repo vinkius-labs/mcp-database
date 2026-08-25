@@ -15,10 +15,10 @@ The Compound Interest Optimizer allows you to model long-term wealth accumulatio
 
 ## Available Tools (3)
 - **compare_scenarios**: Compare multiple investment projections
-- **generate_projection**: Generate a detailed investment growth projection
 - **get_account_regulations**: g., 401k, ira, isa) in a given region (e.g., USA, Europe).
 
 Get regulatory constraints for an account type and region
+- **generate_projection**: Generate a detailed investment growth projection
 
 
 ## 💬 Prompt Examples
