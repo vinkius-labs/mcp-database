@@ -14,8 +14,8 @@ This MCP server provides precise technical analysis tools for the SuperTrend ind
 
 
 ## Available Tools (3)
-- **calculate_supertrend**: Calculates the complete series of SuperTrend values, trend directions, and signals
 - **get_latest_supertrend_state**: Retrieves the most recent calculated values from a provided dataset
+- **calculate_supertrend**: Calculates the complete series of SuperTrend values, trend directions, and signals
 - **validate_price_data**: Ensures that price arrays are mathematically sound and consistent
 
 

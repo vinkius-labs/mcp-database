@@ -15,8 +15,8 @@ This MCP server provides tools to verify that AI-generated code changes align wi
 
 ## Available Tools (3)
 - **analyze_diff_relevance**: 
-- **identify_file_scope**: 
 - **summarize_change_distribution**: 
+- **identify_file_scope**: 
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ Git Workflow Guardian is an enforcement engine that validates git operations aga
 
 
 ## Available Tools (3)
-- **audit_commit_integrity**: Checks commit integrity
 - **check_branch_naming**: Verifies branch naming
 - **validate_git_action**: Validates if a git operation complies with rules
+- **audit_commit_integrity**: Checks commit integrity
 
 
 ## 💬 Prompt Examples

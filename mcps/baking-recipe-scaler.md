@@ -14,8 +14,8 @@ This MCP server provides precision tools for professional and home bakers to rec
 
 
 ## Available Tools (3)
-- **adjust_yeast_quantity**: Modifies the yeast amount based on the change in dough volume and hydration
 - **calculate_scaled_recipe**: Calculates the exact mass of every ingredient required for a new pan size while adjusting for a specific hydration level
+- **adjust_yeast_quantity**: Modifies the yeast amount based on the change in dough volume and hydration
 - **get_ingredient_density**: Retrieves the standard density constant for a specific ingredient
 
 

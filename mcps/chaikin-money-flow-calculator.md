@@ -14,9 +14,9 @@ This MCP server provides a deterministic technical analysis engine to evaluate m
 
 
 ## Available Tools (3)
+- **calculate_money_flow**: Computes core technical indicators (MFM, MFV, A/D Line, and CMF)
 - **analyze_cmf_signals**: Identifies zero-line crosses and sustained accumulation/distribution phases
 - **detect_cmf_divergence**: Detects discrepancies between price action and money flow momentum
-- **calculate_money_flow**: Computes core technical indicators (MFM, MFV, A/D Line, and CMF)
 
 
 ## 💬 Prompt Examples

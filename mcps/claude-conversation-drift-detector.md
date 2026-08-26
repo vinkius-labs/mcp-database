@@ -15,8 +15,8 @@ This MCP server provides tools to ensure AI agents stay aligned with their prima
 
 ## Available Tools (3)
 - **analyze_conversation_drift**: Determines if the current sequence of agent actions is staying aligned with the original user goal
-- **detect_topic_shift**: Identifies if the agent has abruptly switched to a completely unrelated topic
 - **get_task_relevance_summary**: Provides a high-level summary of how much of the task has been addressed based on keyword coverage
+- **detect_topic_shift**: Identifies if the agent has abruptly switched to a completely unrelated topic
 
 
 ## 💬 Prompt Examples

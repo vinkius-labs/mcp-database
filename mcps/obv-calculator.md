@@ -15,9 +15,9 @@ This MCP server provides a deterministic technical analysis engine for On-Balanc
 
 ## Available Tools (4)
 - **analyze_obv_trends**: Provides smoothing and momentum metrics based on the calculated OBV
+- **detect_divergences**: Identifies discrepancies between price movement and volume movement
 - **calculate_obv_series**: Computes the complete series of On-Balance Volume values from price and volume data
 - **classify_volume_flow**: Categorizes the current market state as Accumulation or Distribution
-- **detect_divergences**: Identifies discrepancies between price movement and volume movement
 
 
 ## 💬 Prompt Examples

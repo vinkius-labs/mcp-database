@@ -14,9 +14,9 @@ This MCP server acts as a security layer that intercepts, analyzes, and redacts 
 
 
 ## Available Tools (3)
+- **validate_safety_threshold**: Checks if risk meets a threshold
 - **get_redaction_audit**: Retrieves the history of redactions
 - **scan_content**: Analyzes a raw string for sensitive information
-- **validate_safety_threshold**: Checks if risk meets a threshold
 
 
 ## 💬 Prompt Examples

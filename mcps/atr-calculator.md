@@ -14,9 +14,9 @@ This MCP server provides deterministic technical analysis tools to measure marke
 
 
 ## Available Tools (3)
-- **validate_price_data**: Ensures that price arrays are mathematically sound and ready for technical analysis
 - **calculate_atr**: Calculates the Average True Range and volatility classification for a given set of price data
 - **get_volatility_thresholds**: Retrieves the historical percentile boundaries used to classify volatility levels
+- **validate_price_data**: Ensures that price arrays are mathematically sound and ready for technical analysis
 
 
 ## 💬 Prompt Examples

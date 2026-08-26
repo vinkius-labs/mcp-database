@@ -14,9 +14,9 @@ This MCP server provides precise statistical analysis for financial assets. Use 
 
 
 ## Available Tools (3)
+- **calculate_correlation_matrix**: Calculate correlation and covariance matrices for multiple assets
 - **get_asset_sensitivity**: Isolate risk-adjusted relationship against a benchmark
 - **analyze_correlation_dynamics**: Observe how asset relationships evolve over time
-- **calculate_correlation_matrix**: Calculate correlation and covariance matrices for multiple assets
 
 
 ## 💬 Prompt Examples

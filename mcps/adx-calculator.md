@@ -14,9 +14,9 @@ This MCP server provides precise technical analysis tools for measuring trend st
 
 
 ## Available Tools (3)
+- **validate_price_data**: Checks if the provided price arrays are valid for indicator calculation
 - **calculate_adx_indicators**: Calculates the core ADX, +DI, -DI, and trend metrics for a provided set of price data
 - **get_latest_adx_summary**: Retrieves the most recent trend analysis from a set of price data
-- **validate_price_data**: Checks if the provided price arrays are valid for indicator calculation
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides precise market structure analysis through volume-based 
 
 
 ## Available Tools (3)
-- **analyze_price_zones**: Identifies areas where the market has either accepted or rejected price levels
 - **calculate_volume_profile**: Generates the core volume distribution data and key market profile statistics
+- **analyze_price_zones**: Identifies areas where the market has either accepted or rejected price levels
 - **get_market_context**: Provides a summary of the current market structure relative to the volume profile
 
 

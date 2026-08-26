@@ -14,9 +14,9 @@ This MCP server provides deterministic technical analysis tools for volatility m
 
 
 ## Available Tools (3)
-- **detect_volatility_squeeze**: 
 - **get_band_summary**: 
 - **get_bollinger_bands**: 
+- **detect_volatility_squeeze**: 
 
 
 ## 💬 Prompt Examples

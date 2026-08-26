@@ -14,9 +14,9 @@ The File Change Impact Assessor is a deterministic tool designed to prevent regr
 
 
 ## Available Tools (3)
+- **get_dependency_graph**: Retrieves a structural view of how files are connected via imports
 - **identify_test_coverage**: Pinpoints specific test files that cover the logic of the target file
 - **analyze_impact**: Determines the scope and risk of a proposed file change
-- **get_dependency_graph**: Retrieves a structural view of how files are connected via imports
 
 
 ## 💬 Prompt Examples

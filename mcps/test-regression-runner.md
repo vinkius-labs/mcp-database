@@ -15,8 +15,8 @@ This MCP server provides tools to automate the verification of code changes. It 
 
 ## Available Tools (3)
 - **analyze_regression_differences**: Performs a deep comparison between the current test run results and the baseline
-- **get_test_baseline**: Retrieves the recorded results of the last successful or most recent relevant test run
 - **run_targeted_tests**: Executes the specific subset of tests identified as being affected by the provided file changes
+- **get_test_baseline**: Retrieves the recorded results of the last successful or most recent relevant test run
 
 
 ## 💬 Prompt Examples

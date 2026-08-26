@@ -14,9 +14,9 @@ This MCP server provides specialized tools to optimize prompt structures for Cla
 
 
 ## Available Tools (3)
-- **analyze_prompt_structure**: Evaluates the current arrangement of a prompt to determine its efficiency
 - **recommend_optimal_layout**: Generates a blueprint for how the prompt components should be reordered
 - **validate_caching_strategy**: Checks if the user's prompt structure violates the fundamental rule of cache continuity
+- **analyze_prompt_structure**: Evaluates the current arrangement of a prompt to determine its efficiency
 
 
 ## 💬 Prompt Examples

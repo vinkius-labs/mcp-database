@@ -14,8 +14,8 @@ This MCP server prevents 'partial updates' where an AI modifies a definition but
 
 
 ## Available Tools (3)
-- **audit_type_propagation**: Validates that changes to types or interfaces have not broken downstream consumers
 - **check_signature_consistency**: Detects if modified function/class signatures still match their call sites
+- **audit_type_propagation**: Validates that changes to types or interfaces have not broken downstream consumers
 - **validate_import_coherence**: Validates that imports in the project correctly reference existing exports in the changed files
 
 

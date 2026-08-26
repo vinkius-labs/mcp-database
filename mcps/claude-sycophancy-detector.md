@@ -14,9 +14,9 @@ The Claude Sycophancy Detector is a diagnostic tool designed to identify sycopha
 
 
 ## Available Tools (3)
-- **analyze_response_accuracy**: Evaluates the factual integrity of an AI response by comparing its claims against the provided codebase facts
 - **extract_claims_from_text**: Isolates potential factual assertions from a block of text using deterministic extraction rules
 - **get_sycophancy_risk_summary**: Provides a high-level interpretation of the risk score and detected patterns
+- **analyze_response_accuracy**: Evaluates the factual integrity of an AI response by comparing its claims against the provided codebase facts
 
 
 ## 💬 Prompt Examples

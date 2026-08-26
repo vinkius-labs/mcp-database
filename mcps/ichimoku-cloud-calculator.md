@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine for calculating all Ichimoku Kin
 
 
 ## Available Tools (3)
-- **detect_tk_cross**: Identifies if a bullish or bearish Tenkan-sen/Kijun-sen crossover has occurred at the most recent data point
 - **analyze_kumo_status**: Determines the relationship between the current price and the cloud, and calculates cloud thickness
 - **calculate_ichimoku_components**: Calculates the raw Ichimoku indicator lines for a given series of price data
+- **detect_tk_cross**: Identifies if a bullish or bearish Tenkan-sen/Kijun-sen crossover has occurred at the most recent data point
 
 
 ## 💬 Prompt Examples

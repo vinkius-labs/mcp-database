@@ -14,8 +14,8 @@ This MCP server provides a deterministic calculation engine for technical analys
 
 
 ## Available Tools (5)
-- **pivot_camarilla**: Calculates levels using the Camarilla method, which uses the close and the range to find levels near the equilibrium
 - **pivot_classic**: Calculates support and resistance levels using the standard Classic pivot point methodology
+- **pivot_camarilla**: Calculates levels using the Camarilla method, which uses the close and the range to find levels near the equilibrium
 - **pivot_demark**: Calculates levels using the DeMark method, where the pivot calculation is determined by the relationship between the open and close
 - **pivot_fibonacci**: Calculates support and resistance levels using Fibonacci-based mathematical ratios
 - **pivot_woodie**: Calculates levels using the Woodie method, which adjusts the pivot calculation to favor the closing price

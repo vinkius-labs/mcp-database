@@ -15,8 +15,8 @@ This MCP server acts as a diagnostic bridge for AI agents working on aging codeb
 
 ## Available Tools (3)
 - **calculate_risk_assessment**: 
-- **get_pattern_details**: 
 - **scan_codebase**: 
+- **get_pattern_details**: 
 
 
 ## 💬 Prompt Examples

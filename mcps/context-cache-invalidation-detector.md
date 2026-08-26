@@ -14,9 +14,9 @@ This MCP server provides diagnostic tools to identify when prompt caching or ses
 
 
 ## Available Tools (3)
-- **check_context_integrity**: Determines if the current session context is intact
 - **compute_pillar_checksums**: Generates unique fingerprints for the four pillars of context
 - **get_continuity_status**: Assess session health based on continuity score
+- **check_context_integrity**: Determines if the current session context is intact
 
 
 ## 💬 Prompt Examples

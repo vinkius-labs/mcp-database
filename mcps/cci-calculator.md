@@ -14,9 +14,9 @@ This MCP server provides precise Commodity Channel Index (CCI) calculations to i
 
 
 ## Available Tools (3)
+- **detect_cci_divergence**: Identifies discrepancies between price movement and CCI momentum
 - **analyze_cci_signals**: Interprets a series of CCI values to identify specific technical signals
 - **calculate_cci_series**: Calculates the full sequence of CCI values for a given historical dataset
-- **detect_cci_divergence**: Identifies discrepancies between price movement and CCI momentum
 
 
 ## 💬 Prompt Examples

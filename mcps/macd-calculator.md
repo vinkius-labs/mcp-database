@@ -14,8 +14,8 @@ This MCP server provides a deterministic engine for calculating Moving Average C
 
 
 ## Available Tools (4)
-- **analyze_crossovers**: Identifies momentum shifts by detecting crossovers between the MACD line and the Signal line
 - **calculate_macd_indicators**: Generates the full suite of MACD values (Line, Signal, and Histogram) for a given price series
+- **analyze_crossovers**: Identifies momentum shifts by detecting crossovers between the MACD line and the Signal line
 - **detect_histogram_divergence**: Detects potential trend reversals by finding discrepancies between price movement and histogram momentum
 - **detect_zero_crossings**: Identifies when the MACD line crosses the zero threshold, signaling a change in trend direction
 
