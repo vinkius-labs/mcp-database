@@ -14,9 +14,9 @@ This MCP server connects AI agents to chemical and economic modeling for mustard
 
 
 ## Available Tools (4)
+- **get_batch_quality_summary**: Provides a comprehensive overview of a batch by combining chemical, physical, and economic metrics
 - **get_economic_and_application_profile**: Estimates the commercial value of the oil and suggests the best culinary uses
 - **get_pungency_prediction**: Calculates the primary chemical and sensory pungency metrics for a specific mustard seed batch
-- **get_batch_quality_summary**: Provides a comprehensive overview of a batch by combining chemical, physical, and economic metrics
 - **get_yield_and_storage_impact**: Determines the total oil yield and evaluates how storage conditions have affected the precursor stability
 
 

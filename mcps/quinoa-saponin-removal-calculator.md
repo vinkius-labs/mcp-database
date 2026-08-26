@@ -15,9 +15,9 @@ This MCP server provides specialized decision-support tools for quinoa processin
 
 ## Available Tools (4)
 - **calculate_economic_impact**: Estimates the financial cost of the removal process
+- **estimate_quality_and_acceptance**: Predicts the final quality and whether the consumer will accept the product
 - **get_removal_requirements**: Determines the physical processing parameters needed to reach a target saponin level
 - **validate_process_feasibility**: Checks if a specific target is physically or economically viable
-- **estimate_quality_and_acceptance**: Predicts the final quality and whether the consumer will accept the product
 
 
 ## 💬 Prompt Examples

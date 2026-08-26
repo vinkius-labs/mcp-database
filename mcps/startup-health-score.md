@@ -14,9 +14,9 @@ The Startup Health Score MCP provides a multi-dimensional analytical engine to e
 
 
 ## Available Tools (3)
+- **evaluate_dimension_performance**: Calculates how well a single dimension is performing against targets
 - **generate_comprehensive_health_report**: Aggregates all dimensional scores to produce the final health score
 - **retrieve_stage_benchmarks**: Provides target ideal values for all metrics based on a specific startup stage
-- **evaluate_dimension_performance**: Calculates how well a single dimension is performing against targets
 
 
 ## 💬 Prompt Examples

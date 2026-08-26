@@ -14,9 +14,9 @@ This MCP server provides deterministic quantitative tools for executing bull cal
 
 
 ## Available Tools (3)
+- **validate_instrument_eligibility**: Verifies if two futures contracts are suitable for a calendar spread
 - **analyze_spread_signals**: Calculates daily spread metrics and generates actionable buy/sell signals
 - **calculate_spread_metrics**: Computes descriptive statistics and convergence targets for a spread
-- **validate_instrument_eligibility**: Verifies if two futures contracts are suitable for a calendar spread
 
 
 ## 💬 Prompt Examples

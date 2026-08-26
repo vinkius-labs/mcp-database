@@ -14,10 +14,10 @@ This MCP server provides predictive modeling for jojoba wax esters. It allows AI
 
 
 ## Available Tools (4)
-- **predict_wax_profile**: Calculates the primary chemical composition of the jojoba wax based on cultivation data
 - **compare_varieties**: Compares how different varieties would perform under identical environmental conditions
 - **evaluate_application_suitability**: Determines if the predicted wax is suitable for specific high-value uses
 - **get_harvest_window_recommendation**: Recommends the best harvest timing to achieve a target chemical profile
+- **predict_wax_profile**: Calculates the primary chemical composition of the jojoba wax based on cultivation data
 
 
 ## 💬 Prompt Examples

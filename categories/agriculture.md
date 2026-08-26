@@ -15,6 +15,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Beef Carcass Yield Predictor](../mcps/beef-carcass-yield-predictor.md) | Predict beef carcass weight, dressing percentage, and USDA grades from live animal measurements. |
 | [Buckwheat Milling Yield Predictor](../mcps/buckwheat-milling-yield-predictor.md) | Predicts buckwheat milling yield, nutritional quality, and market value. |
 | [Calf Housing Ventilation Engine](../mcps/calf-housing-ventilation-engine.md) | Calculate ventilation requirements, heating needs, and respiratory risk for calf housing. |
+| [Cation Exchange Capacity Calculator](../mcps/cation-exchange-capacity-calculator.md) | Calculate soil CEC, base saturation, and sodicity risk. |
 | [Cattle Working Facility Designer](../mcps/cattle-working-facility-designer.md) | Design cattle handling facilities with precise dimensions, throughput, and pen capacity calculations. |
 | [Cheese Aging & Affinage Calculator](../mcps/cheese-aging-affinage-calculator.md) | Predict cheese weight loss, flavor maturation, and maintenance schedules. |
 | [Cherry Cracking Risk Predictor](../mcps/cherry-cracking-risk-predictor.md) | Predict sweet cherry cracking risk from rainfall events and environmental conditions. |
@@ -77,6 +78,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Mint Oil Yield Predictor](../mcps/mint-oil-yield-predictor.md) | Predict mint oil yield, optimal harvest dates, and chemical quality. |
 | [Mushroom Compost Formulation](../mcps/mushroom-compost-formulation.md) | Calculate precise material proportions, hydration, and nitrogen levels for mushroom compost substrates. |
 | [Mustard Oil Pungency Predictor](../mcps/mustard-oil-pungency-predictor.md) | Predicts mustard oil pungency, yield, and economic value using myrosinase hydrolysis modeling. |
+| [Nutrient Availability Index](../mcps/nutrient-availability-index.md) | Calculates soil nutrient availability and provides amendment recommendations. |
 | [Oats Milling Quality Calculator](../mcps/oats-milling-quality-calculator.md) | Calculate oat milling yield, nutritional quality, and product suitability. |
 | [Olive Oil Extraction Yield & Quality Predictor](../mcps/olive-oil-extraction-yield-quality-predictor.md) | Predict olive oil yield, extraction loss, and chemical quality risks based on fruit characteristics and malaxing conditions. |
 | [Papaya Harvest & Ripening Predictor](../mcps/papaya-harvest-ripening-predictor.md) | Predict papaya harvest windows and post-harvest ripening trajectories. |
@@ -100,10 +102,15 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Seed Vigor Index Calculator](../mcps/seed-vigor-index-calculator.md) | Calculates seed vigor indices and assesses certification status from germination data. |
 | [Sheep Wool Quality Predictor](../mcps/sheep-wool-quality-predictor.md) | Predict wool quality, grade, and economic value based on sheep breed and physical characteristics. |
 | [Shrimp Feed & Growth Modeler](../mcps/shrimp-feed-growth-modeler.md) | Predictive modeling for shrimp growth, feed requirements, and survival risk. |
+| [Soil Compaction & Bulk Density Modeler](../mcps/soil-compaction-bulk-density-modeler.md) | Predict soil compaction, porosity loss, and yield impact from machinery traffic. |
 | [Soil Correction Planner](../mcps/soil-correction-planner.md) | Plan a 3-year soil amendment program for lime, gypsum, and micronutrients. |
+| [Soil Organic Matter Model](../mcps/soil-organic-matter-model.md) | Predictive modeling for soil organic matter dynamics and carbon sequestration. |
 | [Soil pH Amendment Calculator](../mcps/soil-ph-amendment-calculator.md) | Calculate precise soil amendment amounts and costs based on soil type and pH targets. |
+| [Soil Texture Classifier](../mcps/soil-texture-classifier.md) | Classifies soil texture using the USDA soil texture triangle based on particle size distribution. |
+| [Soil Water Holding Capacity Calculator](../mcps/soil-water-holding-capacity-calculator.md) | Calculate soil water retention, field capacity, and available water storage. |
 | [Sorghum Tannin Content Calculator](../mcps/sorghum-tannin-content-calculator.md) | Predict tannin levels and nutritional impact in sorghum grains. |
 | [Soybean Seed Quality Predictor](../mcps/soybean-seed-quality-predictor.md) | Predict soybean seed viability and storage safety windows using environmental stress models. |
+| [Spelt Hulling Efficiency Engine](../mcps/spelt-hulling-efficiency-engine.md) | Calculate dehulling yield, kernel breakage, and processing economics for spelt grain. |
 | [Sugarcane Trash Management](../mcps/sugarcane-trash-management.md) | Calculate economic and agronomic impacts of sugarcane residue management. |
 | [Sunflower Hybrid Selector](../mcps/sunflower-hybrid-selector.md) | Select optimal sunflower hybrids using multi-criteria analysis of yield, oil, and disease resistance. |
 | [Sunflower Oil Fatty Acid Profiler](../mcps/sunflower-oil-fatty-acid-profiler.md) | Predicts sunflower oil fatty acid composition and oxidative stability based on cultivar type and agronomic conditions. |
@@ -111,6 +118,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Swine Growth Performance Model](../mcps/swine-growth-performance-model.md) | Predict swine growth metrics, production costs, and optimal market weight using NRC equations. |
 | [Swine Ventilation & Heating Engine](../mcps/swine-ventilation-heating-engine.md) | Calculates ventilation rates and supplemental heating needs for swine facilities. |
 | [Tea Leaf Quality Index](../mcps/tea-leaf-quality-index.md) | Calculate optimal plucking intervals and expected cup quality scores for tea harvests. |
+| [Teff Grain Quality Grader](../mcps/teff-grain-quality-grader.md) | Grades teff grain quality, predicts injera suitability, and estimates market value. |
 | [TMR Mixer Capacity & Efficiency](../mcps/tmr-mixer-capacity-efficiency.md) | Calculate TMR mixer batch specs, mixing performance, and herd expansion readiness. |
 | [Tobacco Curing Optimizer](../mcps/tobacco-curing-optimizer.md) | Generates optimal temperature and humidity schedules for tobacco curing. |
 | [Turfgrass Nitrogen Scheduler](../mcps/turfgrass-nitrogen-scheduler.md) | Develop precise nitrogen fertilization schedules based on grass species, soil, and GDD. |

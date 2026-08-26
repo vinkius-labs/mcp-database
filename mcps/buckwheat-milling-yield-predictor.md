@@ -18,10 +18,10 @@ This MCP server provides specialized tools for buckwheat processing analysis. Us
 
 
 ## Available Tools (4)
-- **estimate_market_value_tool**: Determines the most profitable processing route based on predicted outputs
 - **evaluate_processing_efficiency_tool**: Analyzes how physical characteristics impact the mechanical milling process
 - **get_variety_parameters_tool**: Retrieves baseline constants for a specific buckwheat variety
 - **predict_yield_and_quality_tool**: Predicts expected buckwheat milling yield and nutritional quality
+- **estimate_market_value_tool**: Determines the most profitable processing route based on predicted outputs
 
 
 ## 💬 Prompt Examples

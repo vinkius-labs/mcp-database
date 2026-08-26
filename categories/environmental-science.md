@@ -6,6 +6,7 @@ Explore the open database of **environmental-science** Model Context Protocol (M
 |-----------|-------------|
 | [Brazil Nut Yield Model](../mcps/brazil-nut-yield-model.md) | Estimates Brazil nut yield per hectare using allometric equations and environmental data. |
 | [Cover Crop Biomass Predictor](../mcps/cover-crop-biomass-predictor.md) | Predict cover crop biomass, nitrogen content, and optimal termination timing. |
+| [Infiltration Rate Estimator](../mcps/infiltration-rate-estimator.md) | Estimates soil infiltration rates and runoff risks using physical soil properties. |
 | [Orchard Frost Protection](../mcps/orchard-frost-protection.md) | Calculate water requirements, mortality risks, and compare frost protection methods. |
 | [Rye Ergot Risk Predictor](../mcps/rye-ergot-risk-predictor.md) | Predicts ergot contamination risk and economic impact in rye production. |
 

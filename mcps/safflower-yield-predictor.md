@@ -14,10 +14,10 @@ This MCP server provides specialized tools for safflower cultivation management.
 
 
 ## Available Tools (4)
-- **calculate_economic_value**: Determines the total monetary value of the crop per hectare
 - **calculate_yield_metrics**: Calculates the raw physical yields for both petals and seeds based on plant individual metrics and field density
 - **estimate_oil_content**: Predicts the oil percentage within the seeds based on the specific variety
 - **optimize_harvest_window**: Identifies the ideal time to harvest to balance petal color quality against seed maturity
+- **calculate_economic_value**: Determines the total monetary value of the crop per hectare
 
 
 ## 💬 Prompt Examples

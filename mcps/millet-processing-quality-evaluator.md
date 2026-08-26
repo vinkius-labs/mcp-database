@@ -14,8 +14,8 @@ This MCP server provides specialized tools to evaluate the efficiency and commer
 
 
 ## Available Tools (4)
-- **estimate_processing_costs**: Predicts the operational cost of processing a specific quantity of millet
 - **calculate_milling_yield**: Determines the amount of usable product that can be extracted after dehulling
+- **estimate_processing_costs**: Predicts the operational cost of processing a specific quantity of millet
 - **evaluate_product_suitability**: Determines which food industry applications the processed millet is best suited for
 - **get_dehulling_metrics**: Answers how efficiently the husk can be removed from a specific batch of millet
 
