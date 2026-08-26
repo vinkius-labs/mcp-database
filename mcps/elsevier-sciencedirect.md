@@ -36,15 +36,15 @@ No more manual searching through web portals. Your AI acts as a research assista
 
 
 ## Available Tools (9)
+- **get_article**: Retrieve full-text or abstract of an article
 - **get_article_entitlement**: Check user access rights for an article
 - **get_article_metadata**: Retrieve article metadata lookups
-- **get_article**: Retrieve full-text or abstract of an article
 - **get_hosting_permissions**: Retrieve embargo and hosting information
-- **get_nonserial_title**: Retrieve metadata for books by ISBN
 - **get_object**: Retrieve multimedia or attachments for an article
 - **get_serial_title**: Retrieve metadata for journals by ISSN
-- **get_subject_classifications**: Retrieve subject categories
 - **search_sciencedirect**: Search full-text content on ScienceDirect
+- **get_nonserial_title**: Retrieve metadata for books by ISBN
+- **get_subject_classifications**: Retrieve subject categories
 
 
 ## 💬 Prompt Examples

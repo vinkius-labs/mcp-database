@@ -34,9 +34,9 @@ Connect **Gamma** to your AI agent to transform prompts into beautiful presentat
 
 ## Available Tools (5)
 - **create_gamma**: Create a new Gamma (presentation, document, or webpage)
+- **list_gammas**: List all Gammas
 - **delete_gamma**: Delete a Gamma
 - **get_gamma**: Get details of a specific Gamma
-- **list_gammas**: List all Gammas
 - **update_gamma**: Update an existing Gamma
 
 

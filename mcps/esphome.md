@@ -35,11 +35,7 @@ Connect your **ESPHome** microcontrollers to any AI agent and take full control 
 
 
 ## Available Tools (10)
-- **fan_action**: Perform an action on a fan entity
 - **get_metrics**: Get Prometheus metrics from the ESPHome device
-- **light_action**: Perform an action on a light entity
-- **number_set**: Set a value for a number entity
-- **select_option**: Set an option for a select entity
 - **switch_action**: Perform an action on a switch entity
 - **get_entity_state**: g., sensor, switch) using the Web Server REST API.
 
@@ -49,6 +45,10 @@ Get the state of an ESPHome entity
 - **cover_action**: g., blinds, garage door), optionally setting position and tilt.
 
 Perform an action on a cover entity
+- **fan_action**: Perform an action on a fan entity
+- **light_action**: Perform an action on a light entity
+- **number_set**: Set a value for a number entity
+- **select_option**: Set an option for a select entity
 
 
 ## 💬 Prompt Examples

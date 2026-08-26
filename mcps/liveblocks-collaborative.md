@@ -34,24 +34,24 @@ Connect your **Liveblocks** account to any AI agent to orchestrate real-time col
 
 
 ## Available Tools (19)
-- **update_ydoc**: Send a binary Yjs update
-- **get_ydoc**: Get a JSON representation of the Yjs document
 - **list_active_users**: List users currently in the room
+- **delete_room**: Delete a room
+- **get_room**: Retrieve room details
+- **identify_user**: Obtain an ID token for a user
+- **initialize_storage**: Initialize or reinitialize Storage
+- **list_threads**: List threads in a room
+- **resolve_thread**: Resolve a thread
+- **set_presence**: Set ephemeral presence for a user/agent
+- **authorize_user**: Obtain an access token with specific permissions
 - **broadcast_event**: Broadcast a JSON event to a room
 - **create_room**: Create a new room
 - **create_thread**: Create a thread and the first comment
-- **delete_room**: Delete a room
-- **get_room**: Retrieve room details
 - **get_storage**: Get the room's Storage tree (LSON or JSON format)
-- **identify_user**: Obtain an ID token for a user
-- **initialize_storage**: Initialize or reinitialize Storage
+- **get_ydoc**: Get a JSON representation of the Yjs document
 - **list_rooms**: List rooms with filtering and pagination
-- **list_threads**: List threads in a room
 - **patch_storage**: Apply JSON Patch operations to Storage
-- **resolve_thread**: Resolve a thread
-- **set_presence**: Set ephemeral presence for a user/agent
 - **update_room**: Update room properties (metadata, permissions)
-- **authorize_user**: Obtain an access token with specific permissions
+- **update_ydoc**: Send a binary Yjs update
 - **list_versions**: List Yjs version history snapshots
 
 

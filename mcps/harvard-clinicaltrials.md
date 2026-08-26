@@ -35,42 +35,27 @@ Connect to the **ClinicalTrials.gov API v2** — the largest database of clinica
 
 
 ## Available Tools (16)
-- **get_study_timeline**: Essential for understanding the progress and currency of a study.
+- **get_api_version**: gov API version and the timestamp of the most recent data update. Useful for verifying data currency and API availability.
 
-Get the complete timeline of a clinical trial
-- **search_by_condition**: Examples: "diabetes", "breast cancer", "Alzheimer disease", "COVID-19", "depression", "hypertension".
-
-Search trials by medical condition
-- **search_fda_regulated**: S. Food and Drug Administration. These trials follow the most rigorous regulatory standards.
-
-Search FDA-regulated drug trials
-- **search_studies**: gov database of over 400,000 clinical studies from 200+ countries. Returns NCT IDs, titles, status, phases, sponsors, conditions, interventions, and locations.
-
-Search 400K+ clinical trials worldwide
-- **search_device_trials**: Covers diagnostic devices, surgical tools, implants, and digital health technologies.
-
-Search medical device clinical trials
+Get API version and data timestamp
 - **get_study**: g. "NCT04368728"). Returns title, status, phase, enrollment, conditions, interventions, eligibility criteria, sponsor, and study locations.
 
 Get clinical trial details by NCT ID
-- **get_study_results**: Not all trials report results — this is most useful for completed Phase 2-4 studies.
+- **get_study_timeline**: Essential for understanding the progress and currency of a study.
 
-Get primary outcome results for a trial
-- **search_by_intervention**: Examples: "pembrolizumab", "metformin", "radiation therapy", "cognitive behavioral therapy".
-
-Search trials by drug or treatment
-- **search_by_location**: Essential for finding trials accessible to patients in a particular area.
-
-Search trials by geographic location
+Get the complete timeline of a clinical trial
 - **search_by_phase**: Phase values: "PHASE1", "PHASE2", "PHASE3", "PHASE4", "EARLY_PHASE1". Phase 3 trials are the largest and most definitive, while Phase 1 trials focus on safety.
 
 Search trials by study phase
-- **search_by_sponsor**: Examples: "Pfizer", "National Cancer Institute", "Roche", "Novartis", "NIH".
-
-Search trials by sponsoring organization
 - **search_completed**: Completed trials are more likely to have published results and outcomes data.
 
 Search completed clinical trials
+- **search_device_trials**: Covers diagnostic devices, surgical tools, implants, and digital health technologies.
+
+Search medical device clinical trials
+- **search_fda_regulated**: S. Food and Drug Administration. These trials follow the most rigorous regulatory standards.
+
+Search FDA-regulated drug trials
 - **search_pediatric**: Essential for pediatricians, child health researchers, and parents seeking trials for children.
 
 Search pediatric clinical trials
@@ -80,9 +65,24 @@ Search rare disease clinical trials
 - **search_recruiting**: Essential for patients seeking to enroll in trials or researchers tracking active studies.
 
 Search for currently recruiting studies
-- **get_api_version**: gov API version and the timestamp of the most recent data update. Useful for verifying data currency and API availability.
+- **search_studies**: gov database of over 400,000 clinical studies from 200+ countries. Returns NCT IDs, titles, status, phases, sponsors, conditions, interventions, and locations.
 
-Get API version and data timestamp
+Search 400K+ clinical trials worldwide
+- **search_by_condition**: Examples: "diabetes", "breast cancer", "Alzheimer disease", "COVID-19", "depression", "hypertension".
+
+Search trials by medical condition
+- **get_study_results**: Not all trials report results — this is most useful for completed Phase 2-4 studies.
+
+Get primary outcome results for a trial
+- **search_by_intervention**: Examples: "pembrolizumab", "metformin", "radiation therapy", "cognitive behavioral therapy".
+
+Search trials by drug or treatment
+- **search_by_location**: Essential for finding trials accessible to patients in a particular area.
+
+Search trials by geographic location
+- **search_by_sponsor**: Examples: "Pfizer", "National Cancer Institute", "Roche", "Novartis", "NIH".
+
+Search trials by sponsoring organization
 
 
 ## 💬 Prompt Examples

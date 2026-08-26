@@ -36,35 +36,35 @@ Connect your **D2L Brightspace** environment to any AI agent to streamline learn
 ## Available Tools (33)
 - **copy_course**: Initiate a course copy job
 - **create_course**: Create a course offering
-- **create_enrollment**: Enroll a user in an org unit
 - **create_lti_deployment**: Create an LTI Advantage tool deployment
 - **create_org_unit**: Create custom org units
 - **create_post**: Create a post in a discussion topic
+- **list_legacy_lti_links**: List legacy LTI 1.1 links
+- **list_lti_registrations**: List LTI Advantage tool registrations
+- **list_my_enrollments**: List current user enrollments
+- **list_org_unit_children**: List child units of an org unit
+- **list_root_modules**: List root modules of course materials
+- **list_surveys**: List surveys in a course
+- **list_users**: Search or page through users
+- **upload_eportfolio_artifact**: Upload a file artifact to ePortfolio
+- **create_enrollment**: Enroll a user in an org unit
 - **create_topic**: Create a discussion topic in a forum
 - **create_user**: Create a new user
 - **delete_enrollment**: Unenroll a user from an org unit
-- **get_course_template**: Retrieve course template info
 - **get_course**: Retrieve course details
+- **get_course_template**: Retrieve course template info
 - **get_org_unit**: Retrieve org unit properties
 - **get_user_grade**: Retrieve user grades for a specific grade object
+- **get_whoami**: Retrieve current user context
 - **list_assignment_folders**: List assignment folders (dropboxes)
 - **list_forums**: List discussion forums in a course
 - **list_grades**: List grade objects for a course
-- **list_legacy_lti_links**: List legacy LTI 1.1 links
-- **list_lti_registrations**: List LTI Advantage tool registrations
 - **list_my_eportfolio_objects**: List current user ePortfolio objects
-- **list_my_enrollments**: List current user enrollments
-- **list_org_unit_children**: List child units of an org unit
 - **list_quiz_attempts**: List attempts for a specific quiz
-- **list_roles**: Retrieve system roles
-- **list_root_modules**: List root modules of course materials
-- **list_submissions**: List submissions for an assignment folder
-- **list_surveys**: List surveys in a course
-- **list_users**: Search or page through users
-- **update_user**: Update user data
-- **upload_eportfolio_artifact**: Upload a file artifact to ePortfolio
-- **get_whoami**: Retrieve current user context
 - **list_quizzes**: List quizzes in a course
+- **list_roles**: Retrieve system roles
+- **list_submissions**: List submissions for an assignment folder
+- **update_user**: Update user data
 - **provide_feedback**: Provide feedback for an assignment submission
 - **update_user_grade**: Update a user grade
 

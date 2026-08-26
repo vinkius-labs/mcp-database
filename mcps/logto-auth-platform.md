@@ -34,29 +34,29 @@ Connect your **Logto** authentication platform to any AI agent and take full con
 
 
 ## Available Tools (23)
-- **verify_user_password**: Verify a user password (Management API)
-- **create_resource**: Create a new API resource
 - **create_role**: Create a new role
 - **list_organization_users**: List members of an organization
-- **list_organizations**: List organizations in Logto
-- **list_resources**: List API resources in Logto
-- **create_organization**: Create a new organization
-- **delete_user**: Delete a Logto user
-- **get_user**: Get details for a specific Logto user
-- **list_mfa_verifications**: List registered MFA factors for the current user
 - **get_my_account**: Retrieve current user profile (Account API)
-- **remove_mfa_verification**: Remove an MFA factor
+- **list_mfa_verifications**: List registered MFA factors for the current user
 - **list_roles**: List globalThis roles in Logto
-- **send_verification_code**: Send email/SMS code for verification
+- **remove_mfa_verification**: Remove an MFA factor
 - **update_my_account**: Update basic profile (username, name, avatar)
 - **update_user**: Update an existing Logto user
+- **verify_password**: Verify password to get a verification ID
+- **create_organization**: Create a new organization
+- **create_resource**: Create a new API resource
+- **delete_user**: Delete a Logto user
+- **get_user**: Get details for a specific Logto user
+- **list_organizations**: List organizations in Logto
+- **list_resources**: List API resources in Logto
 - **list_user_roles**: List roles assigned to a user
 - **list_users**: List Logto users
-- **verify_password**: Verify password to get a verification ID
+- **send_verification_code**: Send email/SMS code for verification
+- **verify_user_password**: Verify a user password (Management API)
 - **bind_mfa_verification**: Bind a new MFA factor (TOTP, WebAuthn)
+- **update_my_account_password**: Update user password
 - **update_my_account_primary_email**: Update or link primary email
 - **update_my_account_profile**: Update extended profile (address, etc.)
-- **update_my_account_password**: Update user password
 
 
 ## 💬 Prompt Examples

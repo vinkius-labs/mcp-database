@@ -36,14 +36,14 @@ Connect to **CORE**, the world's largest aggregator of open access research pape
 ## Available Tools (10)
 - **global_search**: Global search across CORE
 - **search_repositories**: Search for repositories
+- **get_article**: Get a specific article by CORE ID
+- **get_article_pdf**: Get the PDF download URL for an article
+- **get_journal**: Get a specific journal by ISSN
 - **get_repository**: Get a specific repository by ID
 - **resolve_oai**: Resolve an OAI identifier
 - **search_articles**: Search for articles
 - **search_journals**: Search for journals
 - **get_article_history**: Get the history of an article
-- **get_article_pdf**: Get the PDF download URL for an article
-- **get_article**: Get a specific article by CORE ID
-- **get_journal**: Get a specific journal by ISSN
 
 
 ## 💬 Prompt Examples

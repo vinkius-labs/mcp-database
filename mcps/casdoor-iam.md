@@ -33,22 +33,22 @@ Connect your **Casdoor** IAM instance to any AI agent to streamline your identit
 
 
 ## Available Tools (10)
+- **get_application**: Get a specific application
+- **get_organization**: Get a specific organization
+- **get_user**: Get a specific user by ID
+- **list_organizations**: List all organizations
+- **list_users**: List users in an organization
+- **get_userinfo**: Get the profile of the authenticated user
 - **add_user**: Requires owner (organization) and name (username).
 
 Add a new user
 - **delete_user**: Requires the owner (organization) and name (username) of the user to delete.
 
 Delete a user
-- **get_application**: Get a specific application
-- **get_organization**: Get a specific organization
-- **get_user**: Get a specific user by ID
 - **list_applications**: List applications in an organization
-- **list_organizations**: List all organizations
-- **list_users**: List users in an organization
 - **update_user**: The ID parameter must be formatted as <organization>/<username>.
 
 Update an existing user
-- **get_userinfo**: Get the profile of the authenticated user
 
 
 ## 💬 Prompt Examples
