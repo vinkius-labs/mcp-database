@@ -46,20 +46,10 @@ Your AI becomes an Australian energy analyst, helping you understand the grid, t
 
 
 ## Available Tools (12)
-- **get_facility_data**: g. "ER01" for Eraring, "BNGSF1" for Bungala Solar). Shows actual output over time.
-
-Get generation data for a specific energy facility
-- **get_market_data**: Supports interval and date range filtering.
-
-Get market data including spot prices and demand by region
-- **list_metrics**: List all available metrics in the OpenElectricity API
 - **get_network_by_fueltech**: Useful for understanding the energy mix and renewable vs fossil fuel split.
 
 Get network data grouped by fuel technology type
-- **get_network_by_region**: Get network data grouped by Australian region/state
-- **get_network_data**: Supports interval aggregation (5m, 1h, 1d, 7d, 1M, 1y) and date range filtering.
-
-Get time series network data for power, energy, demand and generation
+- **list_metrics**: List all available metrics in the OpenElectricity API
 - **get_plans**: Get available API plans and pricing tiers
 - **get_pollution_data**: 5, VOC) reported to the National Pollutant Inventory by energy facilities. Filter by facility, pollutant, or category.
 
@@ -67,8 +57,18 @@ Get pollution and emissions data from NPI (National Pollutant Inventory)
 - **get_renewable_proportion**: Essential for tracking Australia's energy transition progress.
 
 Get renewable energy proportion data
-- **get_market_updates**: Get market updates and social posts from OpenElectricity
 - **get_user_profile**: Get current user profile and API account details
+- **get_facility_data**: g. "ER01" for Eraring, "BNGSF1" for Bungala Solar). Shows actual output over time.
+
+Get generation data for a specific energy facility
+- **get_market_data**: Supports interval and date range filtering.
+
+Get market data including spot prices and demand by region
+- **get_market_updates**: Get market updates and social posts from OpenElectricity
+- **get_network_by_region**: Get network data grouped by Australian region/state
+- **get_network_data**: Supports interval aggregation (5m, 1h, 1d, 7d, 1M, 1y) and date range filtering.
+
+Get time series network data for power, energy, demand and generation
 - **list_facilities**: Filter by fuel technology, status, network, or facility code.
 
 List energy facilities and generation units

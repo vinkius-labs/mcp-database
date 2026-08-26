@@ -34,24 +34,24 @@ Connect your **SurrealDB** database to any AI agent and take full control of you
 
 
 ## Available Tools (16)
-- **delete_all**: Delete all records in a table
-- **import_sql**: Import SurrealQL queries
-- **update_all**: Update all records in a table
-- **get_version**: Get SurrealDB version
-- **create_specific_record**: Create a specific record
 - **delete_record**: Delete a specific record
 - **export_data**: Export data
-- **get_health**: Check SurrealDB health
-- **modify_all**: Modify all records in a table (Merge)
-- **modify_record**: Modify a specific record (Merge)
 - **select_all**: Select all records in a table
-- **create_record**: Create a record with a random ID
 - **execute_sql**: Can pass variables via URL query parameters.
 
 Execute SurrealQL statements
 - **get_status**: Check SurrealDB web server status
-- **select_record**: Select a specific record
 - **update_record**: Update a specific record
+- **create_record**: Create a record with a random ID
+- **create_specific_record**: Create a specific record
+- **delete_all**: Delete all records in a table
+- **get_health**: Check SurrealDB health
+- **get_version**: Get SurrealDB version
+- **import_sql**: Import SurrealQL queries
+- **modify_all**: Modify all records in a table (Merge)
+- **modify_record**: Modify a specific record (Merge)
+- **select_record**: Select a specific record
+- **update_all**: Update all records in a table
 
 
 ## 💬 Prompt Examples

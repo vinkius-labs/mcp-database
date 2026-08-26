@@ -36,11 +36,11 @@ Connect your AI agent to **PubMed Central (PMC)**, the world's premier digital a
 ## Available Tools (7)
 - **get_citing_articles**: Find PMC articles that cite a specific PubMed ID
 - **get_oa_record**: Find citation data, license info, and file locations for OA articles
-- **oai_pmh_request**: Harvest metadata via the PMC OAI-PMH Service
-- **get_bioc_article**: Retrieve full-text articles via the BioC API
-- **convert_ids**: Convert between article identifiers (PMCID, PMID, DOI)
 - **search_articles**: Search for articles in PubMed Central
+- **convert_ids**: Convert between article identifiers (PMCID, PMID, DOI)
 - **get_article_summary**: Get metadata summaries for PMC articles
+- **get_bioc_article**: Retrieve full-text articles via the BioC API
+- **oai_pmh_request**: Harvest metadata via the PMC OAI-PMH Service
 
 
 ## 💬 Prompt Examples

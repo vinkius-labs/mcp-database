@@ -35,32 +35,32 @@ Connect your self-hosted **Immich** instance to any AI agent and take full contr
 ## Available Tools (26)
 - **create_album**: Create a new album
 - **get_asset**: Get details for a specific Immich asset
-- **get_person**: Get details for a specific person
 - **get_tag**: Get details for a specific tag
 - **get_user**: Get details for a specific user
 - **list_albums**: List all albums in Immich
-- **list_assets**: List all assets (photos/videos) in Immich
 - **list_persons**: List all recognized persons in Immich
 - **list_tags**: List all tags in Immich
-- **update_album**: Update an existing album
 - **update_asset**: g., isFavorite).
 
 Update an existing Immich asset
-- **update_person**: Update an existing person (e.g., change name)
 - **update_tag**: Update an existing tag
-- **update_user**: Update an existing user
 - **upload_asset**: Upload a new photo or video to Immich
-- **create_person**: Create a new person record
 - **create_tag**: Create a new tag
 - **create_user**: Create a new user
 - **delete_album**: Delete an album
-- **delete_asset**: Delete an Immich asset
 - **delete_person**: Delete a person record
 - **delete_tag**: Delete a tag
 - **delete_user**: Delete a user
 - **get_album**: Get details for a specific album
 - **list_users**: List all users in Immich
+- **create_person**: Create a new person record
+- **delete_asset**: Delete an Immich asset
+- **get_person**: Get details for a specific person
 - **get_server_info**: Get Immich server version and status information
+- **list_assets**: List all assets (photos/videos) in Immich
+- **update_album**: Update an existing album
+- **update_person**: Update an existing person (e.g., change name)
+- **update_user**: Update an existing user
 
 
 ## 💬 Prompt Examples

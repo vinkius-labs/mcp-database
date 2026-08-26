@@ -35,19 +35,19 @@ Empower your corporate education strategy with **360Learning**, the collaborativ
 
 
 ## Available Tools (6)
+- **list_groups**: Useful for finding a specific Group ID for reporting strategies.
+
+List all training groups, departments, or cohorts in the platform
 - **create_user**: Requires the email, first name, and last name of the user.
 
 Register a new learner, author, or administrator account
-- **list_courses**: Use this to find a specific Course ID to check enrollments or detailed lessons.
-
-Browse the catalog of available training courses
 - **get_course**: Get technical details and the lesson overview for a specific course
 - **get_stats**: You must filter by either Group ID, User ID, or Course ID.
 
 Retrieve training completion rates and assessment scores
-- **list_groups**: Useful for finding a specific Group ID for reporting strategies.
+- **list_courses**: Use this to find a specific Course ID to check enrollments or detailed lessons.
 
-List all training groups, departments, or cohorts in the platform
+Browse the catalog of available training courses
 - **list_users**: Use this to find specific learner profiles.
 
 List all active learners and administrators in the 360Learning platform

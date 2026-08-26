@@ -35,11 +35,11 @@ Connect **Gladia** to your AI agent to unlock enterprise-grade speech-to-text ca
 
 ## Available Tools (6)
 - **delete_transcription**: Delete a transcription job
-- **get_transcription**: Get status and results of a transcription job
-- **list_transcriptions**: List pre-recorded transcriptions
 - **upload_audio_file**: Upload an audio file to Gladia
+- **get_transcription**: Get status and results of a transcription job
 - **init_live_session**: Initiate a live transcription session
 - **init_transcription**: Start a pre-recorded transcription job
+- **list_transcriptions**: List pre-recorded transcriptions
 
 
 ## 💬 Prompt Examples

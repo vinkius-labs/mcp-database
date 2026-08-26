@@ -33,13 +33,13 @@ Connect your AI agent to the world's most comprehensive news database. This serv
 
 
 ## Available Tools (3)
-- **search_everything**: Supports advanced operators (+, -, AND, OR, NOT) in the query.
-
-Search through millions of articles from over 150,000 news sources
 - **list_sources**: Returns a list of publishers available for top headlines
 - **get_top_headlines**: Do not mix country/category with sources.
 
 Returns live top and breaking headlines
+- **search_everything**: Supports advanced operators (+, -, AND, OR, NOT) in the query.
+
+Search through millions of articles from over 150,000 news sources
 
 
 ## 💬 Prompt Examples

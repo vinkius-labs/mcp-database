@@ -34,21 +34,9 @@ Connect your **Mastodon** account to any AI agent and manage your decentralized 
 
 
 ## Available Tools (32)
-- **favourite_status**: The post author receives a notification. Use to acknowledge or endorse content. Requires the status ID from a previous tool result.
-
-Like a post to show appreciation
 - **get_notifications_v2**: Only available on Mastodon 4.3 or newer instances. Falls back to v1 if the instance does not support v2.
 
 View grouped notifications (Mastodon 4.3+)
-- **get_trending_statuses**: These are posts with high organic engagement. Use to find popular conversations where your reply will have maximum visibility and impact.
-
-View posts that are trending right now
-- **get_trending_tags**: Mastodon trends are algorithm-free and purely based on real usage, making them a reliable signal of genuine community interest. Use to discover active topics for engagement.
-
-View hashtags that are trending right now
-- **post_status**: There is no other way to send content — if you want to reply to someone, you MUST call this tool. To reply to an existing post, set "in_reply_to_id" to the status ID of the post you are replying to. To create an original post, omit "in_reply_to_id". The "status" parameter is the full text content you want to publish. Never compose text without calling this tool — text only exists on Mastodon after this tool is called.
-
-Publish or reply on Mastodon. This is the ONLY way to send a message
 - **register_account**: Requires an approved OAuth application first. Most instances require manual admin approval after registration.
 
 Register a new user account on the Mastodon instance
@@ -58,42 +46,60 @@ Clear all notifications at once
 - **unfollow_account**: Their posts will no longer appear in your home timeline.
 
 Unfollow a user by account ID
-- **bookmark_status**: Unlike favouriting, the post author is NOT notified. Use to save interesting posts you want to revisit later.
-
-Save a post privately for later reference
-- **get_trending_links**: Use to understand what external content the community is discussing — valuable for finding conversations around specific news or topics.
-
-View external articles and links being shared the most right now
-- **mute_account**: Their posts will be hidden from your timelines and notifications without unfollowing or blocking them.
-
-Mute a user by account ID
-- **reblog_status**: Equivalent to a retweet. Use to amplify content you want to endorse. Requires the status ID from a previous tool result.
-
-Boost (share) a post to your followers
 - **create_app**: Returns client_id and client_secret for the OAuth flow. Only needed once per application — not for posting or reading content.
 
 Register a new OAuth application on the Mastodon instance
+- **favourite_status**: The post author receives a notification. Use to acknowledge or endorse content. Requires the status ID from a previous tool result.
+
+Like a post to show appreciation
+- **follow_account**: Their posts will appear in your home timeline. Use after discovering an interesting account through search, timelines, or notifications. Requires the account ID.
+
+Follow a user by account ID
+- **get_account**: Returns display name, username, bio, follower/following counts. Use when you need details about a specific user after finding their account ID from a post or search.
+
+Retrieve a user profile by account ID
+- **get_notifications_v1**: Use to discover who is interacting with you and respond to mentions.
+
+View your recent notifications — mentions, follows, favourites, boosts
+- **get_trending_statuses**: These are posts with high organic engagement. Use to find popular conversations where your reply will have maximum visibility and impact.
+
+View posts that are trending right now
+- **get_trending_tags**: Mastodon trends are algorithm-free and purely based on real usage, making them a reliable signal of genuine community interest. Use to discover active topics for engagement.
+
+View hashtags that are trending right now
+- **bookmark_status**: Unlike favouriting, the post author is NOT notified. Use to save interesting posts you want to revisit later.
+
+Save a post privately for later reference
+- **mute_account**: Their posts will be hidden from your timelines and notifications without unfollowing or blocking them.
+
+Mute a user by account ID
+- **post_status**: There is no other way to send content — if you want to reply to someone, you MUST call this tool. To reply to an existing post, set "in_reply_to_id" to the status ID of the post you are replying to. To create an original post, omit "in_reply_to_id". The "status" parameter is the full text content you want to publish. Never compose text without calling this tool — text only exists on Mastodon after this tool is called.
+
+Publish or reply on Mastodon. This is the ONLY way to send a message
+- **search**: Use to find specific conversations, users, or topics. Set "type" to narrow results: "statuses" for posts, "accounts" for users, "hashtags" for tags. Without a type filter, returns all three. This is the primary discovery tool for finding content to interact with.
+
+Search for accounts, posts, or hashtags by keyword
+- **get_trending_links**: Use to understand what external content the community is discussing — valuable for finding conversations around specific news or topics.
+
+View external articles and links being shared the most right now
+- **reblog_status**: Equivalent to a retweet. Use to amplify content you want to endorse. Requires the status ID from a previous tool result.
+
+Boost (share) a post to your followers
 - **delete_status**: Cannot delete posts by other users. Use only for correcting mistakes on your own posts.
 
 Delete one of your own posts by status ID
 - **dismiss_notification**: Does not undo the action that caused it.
 
 Dismiss a single notification
-- **block_account**: They will not be able to see your posts or interact with you. Use only for spam, harassment, or abusive accounts.
-
-Block a user by account ID
 - **check_health**: Returns OK if the server is up. Use to verify connectivity before performing actions.
 
 Check if the Mastodon instance is online and responding
-- **follow_account**: Their posts will appear in your home timeline. Use after discovering an interesting account through search, timelines, or notifications. Requires the account ID.
+- **block_account**: They will not be able to see your posts or interact with you. Use only for spam, harassment, or abusive accounts.
 
-Follow a user by account ID
+Block a user by account ID
 - **get_account_statuses**: Use when you want to see what a specific user has been posting recently. Requires the account ID — get it from search results, timeline posts, or notifications.
 
 List recent posts by a specific account
-- **get_account**: Returns display name, username, bio, follower/following counts. Use when you need details about a specific user after finding their account ID from a post or search.
-
-Retrieve a user profile by account ID
 - **get_home_timeline**: This is your personalized feed. Use to discover what the people you follow are discussing right now.
 
 View your home feed — posts from accounts you follow
@@ -106,30 +112,24 @@ View the rules of the Mastodon instance
 - **get_list_timeline**: Lists are curated groups of accounts. Use when you have a pre-configured list of accounts to monitor.
 
 View posts from a curated list of accounts
-- **get_notifications_v1**: Use to discover who is interacting with you and respond to mentions.
-
-View your recent notifications — mentions, follows, favourites, boosts
 - **get_public_timeline**: This is the broadest discovery tool — shows posts from all users across all connected instances. Use when you want to find new conversations and people to interact with.
 
 View the public timeline — recent posts from all users
-- **search**: Use to find specific conversations, users, or topics. Set "type" to narrow results: "statuses" for posts, "accounts" for users, "hashtags" for tags. Without a type filter, returns all three. This is the primary discovery tool for finding content to interact with.
-
-Search for accounts, posts, or hashtags by keyword
 - **update_credentials**: Does not affect posting or interactions.
 
 Update the authenticated account profile
 - **verify_credentials**: Use this to confirm identity before performing actions.
 
 Check if credentials are valid and get the authenticated account profile
-- **get_status_context**: Use when you want to understand the full discussion before replying to a post.
-
-Fetch the full conversation thread for a post
 - **get_status**: Use when you need to read a post before replying to it, or to verify the content of a post found in timelines or search results.
 
 Fetch a single post by its status ID
 - **get_tag_timeline**: Use to find conversations about a specific topic. Pass the hashtag without the # symbol (e.g. "AI" not "#AI"). Great for discovering posts about specific technologies, events, or communities.
 
 View recent posts containing a specific hashtag
+- **get_status_context**: Use when you want to understand the full discussion before replying to a post.
+
+Fetch the full conversation thread for a post
 
 
 ## 💬 Prompt Examples

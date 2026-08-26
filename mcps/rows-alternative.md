@@ -36,18 +36,18 @@ No more manual copy-pasting or complex VLOOKUP building. Your AI acts as a dedic
 
 
 ## Available Tools (11)
-- **create_rows_spreadsheet**: Create a new spreadsheet
 - **delete_rows_spreadsheet**: Delete a spreadsheet
 - **get_rows_folder**: Get details for a specific folder
-- **append_rows_values_to_table**: Add new rows to a table
 - **get_rows_range_cells**: Get detailed cell objects
 - **get_rows_spreadsheet_details**: Get metadata for a spreadsheet
+- **list_rows_spreadsheets**: List your Rows spreadsheets
+- **append_rows_values_to_table**: Add new rows to a table
+- **create_rows_spreadsheet**: Create a new spreadsheet
 - **get_rows_range_values**: g., A1:B5).
 
 Get values from a specific range
 - **get_rows_workspace_info**: Get Rows workspace details
 - **list_rows_folders**: List workspace folders
-- **list_rows_spreadsheets**: List your Rows spreadsheets
 - **update_rows_range_values**: Overwrite values in a range
 
 

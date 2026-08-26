@@ -34,26 +34,26 @@ Connect **Meshy** to your AI agent to bridge the gap between 2D concepts and 3D 
 
 
 ## Available Tools (17)
-- **analyze_printability**: Analyze 3D Printability
-- **create_animation**: Create an Animation task
 - **create_image_to_image**: Create Image to Image task
 - **create_multi_color_print**: Create Multi-Color Print
 - **create_multi_image_to_3d**: Create a Multi-Image to 3D task
-- **create_remesh**: Create a Remesh task
-- **create_retexture**: Create a Retexture task
 - **create_text_to_image**: Create Text to Image task
 - **delete_text_to_3d_task**: Delete a Text to 3D task
-- **create_image_to_3d**: Create an Image to 3D task
-- **create_rigging**: Create a Rigging task
-- **create_text_to_3d_preview**: This is the first step in the Text to 3D workflow.
-
-Create a Text to 3D preview task
 - **create_text_to_3d_refine**: This is the second step in the Text to 3D workflow.
 
 Create a Text to 3D refine task
+- **create_rigging**: Create a Rigging task
 - **list_text_to_3d_tasks**: List Text to 3D tasks
 - **get_balance**: Get account balance
 - **get_text_to_3d_task**: Get a Text to 3D task by ID
+- **analyze_printability**: Analyze 3D Printability
+- **create_animation**: Create an Animation task
+- **create_image_to_3d**: Create an Image to 3D task
+- **create_remesh**: Create a Remesh task
+- **create_retexture**: Create a Retexture task
+- **create_text_to_3d_preview**: This is the first step in the Text to 3D workflow.
+
+Create a Text to 3D preview task
 - **repair_printability**: Repair 3D Printability
 
 

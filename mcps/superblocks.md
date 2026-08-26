@@ -34,16 +34,16 @@ Connect your **Superblocks** organization to any AI agent to streamline the mana
 
 ## Available Tools (7)
 - **update_application**: Update an existing Superblocks application
+- **delete_application**: Delete a Superblocks application
+- **get_application**: Retrieve details for a specific application
+- **list_workflows**: List all workflows in the organization
 - **create_application**: Create a new Superblocks application
 - **create_embed_token**: Used to request session tokens for users when embedding Superblocks applications via SSO.
 
 Create an authenticated session token for Embedded Apps
-- **delete_application**: Delete a Superblocks application
-- **get_application**: Retrieve details for a specific application
 - **list_applications**: Supports pagination.
 
 List all applications in the organization
-- **list_workflows**: List all workflows in the organization
 
 
 ## 💬 Prompt Examples

@@ -37,34 +37,22 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 - **agent_expert**: Deep multi-step analysis and synthesis
 - **agent_fast**: Low-latency streamed answers for simple research questions
 - **perp_leaderboard**: Most profitable Hyperliquid traders
-- **points_address**: Tier lookup for a wallet on the Nansen points leaderboard
 - **prediction_categories**: Stats for market categories (Politics, Crypto, etc.)
-- **prediction_event_screener**: Browse groups of related prediction markets
 - **prediction_market_screener**: Browse and filter all prediction markets
 - **prediction_ohlcv**: 1-hour price history candles for prediction markets
 - **prediction_orderbook**: Real-time bid/ask depth for prediction markets
-- **prediction_pnl_by_address**: Total PnL for a trader in prediction markets
-- **prediction_pnl_by_market**: Profitability rankings for a prediction market
-- **prediction_position_detail**: Granular holder positions for prediction markets
-- **prediction_top_holders**: Largest conviction holders in prediction markets
-- **prediction_trades_by_address**: All trades for a specific wallet in prediction markets
 - **prediction_trades_by_market**: Recent trades for a specific prediction market
-- **profiler_counterparties**: Top addresses/entities interacted with
 - **profiler_current_balance**: Current token balances for an address or entity
 - **profiler_historical_balances**: Historical holding snapshots for an address
-- **profiler_pnl_summary**: Aggregate PnL and top profitable tokens
 - **profiler_pnl**: Detailed PnL for a specific address and token
+- **profiler_pnl_summary**: Aggregate PnL and top profitable tokens
 - **profiler_premium_labels**: All labels including Smart Money
-- **profiler_related_wallets**: Wallets related by on-chain behavior
 - **profiler_transactions**: Recent blockchain transactions for an address
 - **smart_money_dcas**: DCA strategies on Jupiter (Solana)
-- **smart_money_dex_trades**: Real-time DEX trading activity (last 24h)
 - **smart_money_historical_holdings**: Daily snapshots of smart money holdings (Beta)
-- **smart_money_holdings**: Aggregated token balances held by smart money
 - **smart_money_netflow**: Net capital flows (inflows vs outflows) for tokens
 - **smart_money_perp_trades**: Perpetual trading on Hyperliquid
 - **tgm_dex_trades**: Individual DEX transactions for a token
-- **tgm_flow_intelligence**: Segmented flows (Exchanges, Whales, Smart Money)
 - **tgm_flows**: Hourly snapshots of inflows/outflows by category
 - **tgm_holders**: Top holders with balance change tracking
 - **tgm_indicators**: Risk and Reward scores for a token
@@ -78,10 +66,22 @@ Connect your **Nansen** API to any AI agent to unlock deep on-chain insights thr
 - **portfolio_defi_holdings**: Track DeFi positions across protocols
 - **prediction_address_summary**: Win rate, PnL, and wallet age in prediction markets
 - **search_general**: Search for tokens and entities by name, symbol, or contract address
-- **tgm_pnl_leaderboard**: Rank traders by profit for a specific token
-- **profiler_labels**: Non-premium labels (ENS, behavioral)
 - **profiler_perp_positions**: Real-time Hyperliquid positions
+- **points_address**: Tier lookup for a wallet on the Nansen points leaderboard
+- **prediction_event_screener**: Browse groups of related prediction markets
+- **prediction_pnl_by_address**: Total PnL for a trader in prediction markets
+- **prediction_pnl_by_market**: Profitability rankings for a prediction market
+- **prediction_position_detail**: Granular holder positions for prediction markets
+- **prediction_top_holders**: Largest conviction holders in prediction markets
+- **prediction_trades_by_address**: All trades for a specific wallet in prediction markets
+- **profiler_counterparties**: Top addresses/entities interacted with
+- **profiler_labels**: Non-premium labels (ENS, behavioral)
 - **profiler_perp_trades**: Hyperliquid trade history
+- **profiler_related_wallets**: Wallets related by on-chain behavior
+- **smart_money_dex_trades**: Real-time DEX trading activity (last 24h)
+- **smart_money_holdings**: Aggregated token balances held by smart money
+- **tgm_flow_intelligence**: Segmented flows (Exchanges, Whales, Smart Money)
+- **tgm_pnl_leaderboard**: Rank traders by profit for a specific token
 
 
 ## 💬 Prompt Examples

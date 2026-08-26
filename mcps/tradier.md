@@ -33,18 +33,18 @@ Connect your **Tradier** brokerage account to any AI agent to streamline your tr
 
 
 ## Available Tools (13)
-- **get_account_history**: Review trading history and account activity
 - **get_account_positions**: View current holdings in an account
-- **cancel_order**: Cancel a pending order
-- **get_option_chains**: Retrieve option chains for a specific underlying symbol
 - **search_symbols**: Search for symbols by keyword or description
-- **get_account_balances**: Get balances and buying power for a specific account
-- **get_order_status**: Check the status of a specific order
-- **place_order**: Execute equity or option trades
 - **get_quotes**: Fetch real-time or delayed quotes for one or more symbols
-- **get_user_profile**: Retrieve the user profile and linked accounts
-- **create_streaming_session**: Create a session to receive a streaming session ID
+- **cancel_order**: Cancel a pending order
+- **get_account_balances**: Get balances and buying power for a specific account
+- **get_account_history**: Review trading history and account activity
 - **get_historical_data**: Get historical price bars (daily, weekly, monthly)
+- **get_option_chains**: Retrieve option chains for a specific underlying symbol
+- **get_order_status**: Check the status of a specific order
+- **get_user_profile**: Retrieve the user profile and linked accounts
+- **place_order**: Execute equity or option trades
+- **create_streaming_session**: Create a session to receive a streaming session ID
 - **get_market_calendar**: Get market hours and holidays
 
 

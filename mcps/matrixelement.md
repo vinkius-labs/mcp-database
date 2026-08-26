@@ -35,24 +35,24 @@ Connect your **Matrix** account to any AI agent and take full control of your de
 
 
 ## Available Tools (19)
-- **change_password**: Change the account password
 - **claim_keys**: Claim E2EE keys from the homeserver
 - **sync_client**: Synchronize client state with the homeserver
 - **create_room**: Create a new Matrix room
 - **deactivate_account**: Deactivate the current Matrix account
 - **download_media**: Download media from the homeserver
-- **get_room_state**: Get state events for a room
 - **join_room**: Join a Matrix room by ID or alias
 - **knock_room**: Knock on a Matrix room to request access
 - **leave_room**: Leave a Matrix room
 - **login_account**: Log in to a Matrix account
 - **logout_account**: Log out of the current Matrix account
 - **query_keys**: Query E2EE keys from the homeserver
-- **register_account**: Register a new Matrix account
 - **search_user_directory**: Search the user directory
-- **send_message**: Send a message or event to a Matrix room
 - **set_room_state**: Set state events for a room
 - **upload_media**: Upload media to the homeserver
+- **change_password**: Change the account password
+- **get_room_state**: Get state events for a room
+- **register_account**: Register a new Matrix account
+- **send_message**: Send a message or event to a Matrix room
 - **upload_keys**: Upload E2EE keys to the homeserver
 
 

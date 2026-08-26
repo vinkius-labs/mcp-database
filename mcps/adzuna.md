@@ -36,11 +36,11 @@ Connect your **Adzuna** developer account to your AI agent to unlock a powerful 
 
 ## Available Tools (4)
 - **get_salary_histogram**: Retrieve a histogram distribution of current average salaries for a specified search query
+- **get_salary_history**: Retrieve the historical average salary trends over time for a specific job title and country
+- **list_top_companies**: List the top hiring companies and employers based on a specific job category or keyword
 - **search_jobs**: You must provide a valid 2-letter country code.
 
 Search for thousands of job vacancies across multiple countries using keywords, Postcodes, and categories
-- **get_salary_history**: Retrieve the historical average salary trends over time for a specific job title and country
-- **list_top_companies**: List the top hiring companies and employers based on a specific job category or keyword
 
 
 ## 💬 Prompt Examples
