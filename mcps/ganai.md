@@ -37,22 +37,22 @@ Connect your **GAN.ai** account to any AI agent to automate your personalized vi
 
 
 ## Available Tools (12)
-- **verify_api_connection**: ai API connectivity.
-
-Verify API access
-- **generate_personalized_videos**: Generate videos in bulk
 - **generate_single_video**: Generate one video
 - **get_workspace_info**: ai workspace.
 
 Get workspace details
-- **get_project_metadata**: Get template schema
+- **verify_api_connection**: ai API connectivity.
+
+Verify API access
 - **get_video_stats**: Get engagement stats
-- **get_video_metadata**: Get video details
-- **get_generation_status**: Check video status
 - **list_landing_templates**: List landing pages
-- **list_video_projects**: List video templates
 - **list_generated_videos**: List video history
 - **list_configured_webhooks**: List active webhooks
+- **generate_personalized_videos**: Generate videos in bulk
+- **get_generation_status**: Check video status
+- **get_project_metadata**: Get template schema
+- **get_video_metadata**: Get video details
+- **list_video_projects**: List video templates
 
 
 ## 💬 Prompt Examples

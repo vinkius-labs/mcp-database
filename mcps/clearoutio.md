@@ -38,12 +38,12 @@ Connect your **Clearout.io** account to any AI agent and take full control of yo
 ## Available Tools (8)
 - **get_bulk_verification_status**: Get the progress status of a bulk verification job
 - **get_clearout_credit_balance**: Retrieve the remaining email verification credit balance
+- **check_disposable_email**: Check if an email address belongs to a disposable/temporary provider
+- **verify_email_instant**: Verify a single email address in real-time
 - **list_bulk_verification_jobs**: List all bulk verification jobs in the account
 - **submit_bulk_email_list**: Submit a list of emails for bulk verification
 - **check_business_email**: Check if an email belongs to a business or professional domain
 - **check_email_catchall**: Specifically check if an email domain is configured as catch-all
-- **check_disposable_email**: Check if an email address belongs to a disposable/temporary provider
-- **verify_email_instant**: Verify a single email address in real-time
 
 
 ## 💬 Prompt Examples

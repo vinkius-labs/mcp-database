@@ -33,26 +33,26 @@ Empower your logical AI generative environments extracting robust structural lim
 
 
 ## Available Tools (10)
-- **search_geocode**: Identify bounded routing spaces inside the Headless Pelias Maps
-- **search_bounding_box**: rect` figuring out what geometries strictly fall inside the map coordinate rectangle.
-
-Dispatch an automated validation check routing explicit Box arrays
 - **search_country_filter**: country` fetching localized boundaries matching ISO 3166 limits.
 
 Identify explicit tracking networks dropping extraneous international domains
-- **search_autocomplete**: Retrieve explicit Cloud logging tracing explicit Keypress constraints
-- **lookup_place_id**: Irreversibly vaporize explicit validations extracting rich schema properties
-- **reverse_geocode**: Perform structural extraction of properties driving active OSM Pins
 - **reverse_distance_limit**: circle.radius` checking exactly how far from the point Pelias should search.
 
 Retrieve the exact structural matching verifying Reverse alternatives
-- **search_focus_bias**: point` enforcing Pelias to prioritize results physically closer to the GPS trace.
-
-Inspect deep internal arrays mitigating specific Center biases
+- **reverse_geocode**: Perform structural extraction of properties driving active OSM Pins
+- **search_autocomplete**: Retrieve explicit Cloud logging tracing explicit Keypress constraints
 - **search_layer_filter**: Enumerate explicitly attached structured rules exporting active GIS datasets
 - **structured_geocoding**: g address=X region=Y safely isolating terms.
 
 Identify precise active arrays spanning native Location limits
+- **lookup_place_id**: Irreversibly vaporize explicit validations extracting rich schema properties
+- **search_bounding_box**: rect` figuring out what geometries strictly fall inside the map coordinate rectangle.
+
+Dispatch an automated validation check routing explicit Box arrays
+- **search_focus_bias**: point` enforcing Pelias to prioritize results physically closer to the GPS trace.
+
+Inspect deep internal arrays mitigating specific Center biases
+- **search_geocode**: Identify bounded routing spaces inside the Headless Pelias Maps
 
 
 ## 💬 Prompt Examples

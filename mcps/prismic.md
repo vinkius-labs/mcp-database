@@ -33,22 +33,22 @@ Connect your **Prismic** headless CMS to any AI agent and integrate content quer
 
 
 ## Available Tools (10)
-- **search_filtered_locale**: g., "en-us" or "fr-fr").
-
-Performs a filtered search for documents within a specific locale
-- **get_repo_metadata**: Retrieves metadata about the Prismic repository, including master refs, types, and languages
+- **get_query_form_schema**: Retrieves the schema for a specific query form (e.g., "everything")
+- **list_custom_types**: Lists all Custom Types defined in the Prismic repository
+- **list_documents_by_type**: Lists all Prismic documents of a specific Custom Type
+- **list_global_tags**: Lists all tags used across the Prismic repository
+- **list_i18n_languages**: Lists the languages (locales) configured in the repository
 - **get_document_by_id**: g., from a search result or relationship field) and need to retrieve its full content.
 
 Fetches a specific Prismic document by its unique ID
-- **get_query_form_schema**: Retrieves the schema for a specific query form (e.g., "everything")
-- **list_i18n_languages**: Lists the languages (locales) configured in the repository
-- **list_global_tags**: Lists all tags used across the Prismic repository
-- **list_custom_types**: Lists all Custom Types defined in the Prismic repository
+- **get_repo_metadata**: Retrieves metadata about the Prismic repository, including master refs, types, and languages
 - **list_documents_by_tag**: Lists all Prismic documents that have a specific tag
-- **list_documents_by_type**: Lists all Prismic documents of a specific Custom Type
 - **query_prismic_documents**: This is the most powerful tool for finding content. It supports pagination and locale filtering internally.
 
 Queries the Prismic API for documents using raw Predicates
+- **search_filtered_locale**: g., "en-us" or "fr-fr").
+
+Performs a filtered search for documents within a specific locale
 
 
 ## 💬 Prompt Examples

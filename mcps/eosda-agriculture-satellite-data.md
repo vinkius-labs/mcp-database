@@ -35,24 +35,24 @@ Empower your AI agent with cutting-edge remote sensing capabilities via the **EO
 
 
 ## Available Tools (6)
-- **get_task_result**: Returns the processed vegetation index data, download URLs and status.
-
-Get the result of a vegetation index task
-- **search_multi_dataset**: g. Sentinel-2 and Landsat 8 together). Returns scenes from all requested datasets within the date range and area of interest.
-
-Search satellite imagery across multiple datasets
-- **search_dataset**: ) within a date range and optional area of interest. Returns scene IDs, dates, cloud cover percentages and download URLs. Use get_available_datasets to see all dataset options.
-
-Search satellite imagery for a specific dataset
-- **create_vegetation_task**: ) for a specific area of interest. Returns a task ID that can be used with get_task_result to retrieve results. Use get_available_indices to see all available index types.
-
-Create a vegetation index calculation task (NDVI, EVI, etc.)
 - **get_available_datasets**: Use these dataset IDs for search_dataset and create_vegetation_task.
 
 Get list of available satellite datasets
 - **get_available_indices**: Use these index types with create_vegetation_task.
 
 Get list of available vegetation indices
+- **create_vegetation_task**: ) for a specific area of interest. Returns a task ID that can be used with get_task_result to retrieve results. Use get_available_indices to see all available index types.
+
+Create a vegetation index calculation task (NDVI, EVI, etc.)
+- **get_task_result**: Returns the processed vegetation index data, download URLs and status.
+
+Get the result of a vegetation index task
+- **search_dataset**: ) within a date range and optional area of interest. Returns scene IDs, dates, cloud cover percentages and download URLs. Use get_available_datasets to see all dataset options.
+
+Search satellite imagery for a specific dataset
+- **search_multi_dataset**: g. Sentinel-2 and Landsat 8 together). Returns scenes from all requested datasets within the date range and area of interest.
+
+Search satellite imagery across multiple datasets
 
 
 ## 💬 Prompt Examples

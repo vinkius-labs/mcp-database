@@ -36,13 +36,13 @@ The **Anvyl MCP Server** brings visibility and automation to your supply chain o
 - **list_purchase_orders**: List Anvyl purchase orders for the team
 - **list_suppliers**: List suppliers in the Anvyl account
 - **confirm_milestone**: Confirm a milestone for a purchase order
-- **delay_milestone**: Delay a milestone for a purchase order
 - **get_part**: Get details for a specific part
 - **get_purchase_order**: Get details for a specific purchase order
 - **get_supplier**: Get details for a specific supplier
 - **list_logistics**: List tracking records for a purchase order
 - **list_milestones**: List milestones for a purchase order
 - **list_parts**: List parts in the Anvyl account
+- **delay_milestone**: Delay a milestone for a purchase order
 
 
 ## 💬 Prompt Examples

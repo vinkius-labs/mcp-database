@@ -33,11 +33,11 @@ Connect **Substack** to your AI agent and manage your newsletter publication con
 
 
 ## Available Tools (6)
-- **get_post**: Get post
 - **get_leaderboard**: Get leaderboard
 - **list_posts**: List recent posts
-- **get_post_stats**: Get post stats
 - **list_subscribers**: List subscribers
+- **get_post**: Get post
+- **get_post_stats**: Get post stats
 - **get_publication_info**: Get publication info
 
 

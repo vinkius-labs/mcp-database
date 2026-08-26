@@ -37,8 +37,8 @@ No more manual template copy-pasting or slow message tracking in the dashboard. 
 
 ## Available Tools (6)
 - **list_contacts**: List WhatsApp contacts
-- **list_groups**: List WhatsApp groups
 - **list_templates**: List WhatsApp templates
+- **list_groups**: List WhatsApp groups
 - **send_template_message**: Pass placeholders as a JSON string.
 
 Send a WhatsApp template message

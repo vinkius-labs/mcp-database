@@ -35,14 +35,14 @@ Connect your **Browserhub.io** account to any AI agent and orchestrate your web 
 
 
 ## Available Tools (10)
-- **get_account_balance**: Check account credit balance
-- **direct_scrape**: Perform a one-off URL scrape without a pre-defined scraper
 - **get_blueprint**: Get details of a specific blueprint
 - **get_scraping_job**: Get status and results of a scraping job
-- **get_scraper**: Get details of a specific scraper
-- **list_blueprints**: List all scraper blueprints
 - **list_scraping_jobs**: List all scraping jobs
 - **list_proxy_locations**: List all available proxy locations
+- **direct_scrape**: Perform a one-off URL scrape without a pre-defined scraper
+- **get_account_balance**: Check account credit balance
+- **get_scraper**: Get details of a specific scraper
+- **list_blueprints**: List all scraper blueprints
 - **list_scrapers**: List all configured scrapers
 - **run_scraper**: Start a scraping job using a specific scraper
 

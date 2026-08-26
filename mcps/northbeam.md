@@ -36,21 +36,21 @@ Connect your **Northbeam** account to your AI agent and gain deep insights into 
 
 
 ## Available Tools (10)
-- **get_dashboard_settings**: Get workspace dashboard settings
 - **list_breakdowns**: g., Platform, Campaign, Ad Set) in attribution reports.
 
 List available data breakdowns
 - **list_scheduled_exports**: List scheduled data exports
 - **create_data_export**: Initialize a new data export
-- **get_export_status**: Check data export status
+- **get_dashboard_settings**: Get workspace dashboard settings
+- **list_recent_exports**: List recently completed exports
 - **get_account_info**: Get account metadata
-- **list_metrics**: g., Attributed Revenue, Transactions, Spend) available for export.
-
-List available attribution metrics
+- **get_export_status**: Check data export status
 - **list_attribution_models**: g., Clicks only, Modeled).
 
 List supported attribution models
-- **list_recent_exports**: List recently completed exports
+- **list_metrics**: g., Attributed Revenue, Transactions, Spend) available for export.
+
+List available attribution metrics
 - **list_webhooks**: List active webhooks
 
 

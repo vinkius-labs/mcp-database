@@ -29,11 +29,11 @@ The **Arcadia Plug MCP Server** provides a direct natural language interface to 
 
 
 ## Available Tools (6)
-- **get_account_check**: Verify Arcadia account connection
-- **get_statement**: Get details for a specific statement
 - **list_accounts**: List all utility accounts associated with your organization
 - **list_credentials**: List all utility login credentials
 - **list_meters**: List all utility meters
+- **get_account_check**: Verify Arcadia account connection
+- **get_statement**: Get details for a specific statement
 - **list_statements**: List historical utility bills/statements
 
 

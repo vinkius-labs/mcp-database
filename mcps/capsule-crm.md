@@ -35,17 +35,17 @@ Connect your **Capsule CRM** account to any AI agent and orchestrate your sales 
 
 
 ## Available Tools (11)
-- **create_person**: Add a new person to Capsule CRM
 - **list_contacts**: List all contacts and organizations (parties)
 - **list_projects**: List all projects
-- **list_tasks**: List all tasks and reminders
-- **create_task**: Create a new task
 - **get_account_info**: Retrieve core account/user information
 - **get_opportunity_details**: Get details of a specific opportunity
-- **get_contact_details**: Get details of a specific contact or organization
 - **get_project_details**: Get details of a specific project
 - **get_task_details**: Get details of a specific task
 - **list_opportunities**: List all sales opportunities
+- **create_person**: Add a new person to Capsule CRM
+- **create_task**: Create a new task
+- **get_contact_details**: Get details of a specific contact or organization
+- **list_tasks**: List all tasks and reminders
 
 
 ## 💬 Prompt Examples

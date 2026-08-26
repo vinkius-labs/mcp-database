@@ -36,8 +36,8 @@ Connect your **Abyssale** account to your AI agent to automate your creative wor
 
 ## Available Tools (4)
 - **list_designs**: List all Abyssale designs
-- **get_design**: Get design template details
 - **generate_image**: Generate an image from a design
+- **get_design**: Get design template details
 - **create_dynamic_image_url**: Create a dynamic image URL
 
 

@@ -33,16 +33,16 @@ Integrate **Dotdigital**, the powerful marketing automation and omnichannel plat
 
 
 ## Available Tools (10)
-- **get_campaign_details**: Get detailed information for a specific email campaign
-- **get_contact_profile**: Get full profile and history for a specific contact by email
-- **quick_marketing_health_audit**: Retrieve a high-level summary of campaign and contact activity
-- **list_marketing_address_books**: List all contact address books configured in your Dotdigital account
-- **list_email_campaigns**: List all email marketing campaigns
 - **list_address_book_contacts**: List all contacts within a specific address book
-- **list_automation_programs**: List all active marketing automation programs (journeys)
-- **list_email_templates**: List all available email message templates
 - **search_marketing_contacts**: Search for contacts using a specific query string
 - **get_dotdigital_account_metadata**: Retrieve metadata and limits for your Dotdigital account
+- **get_campaign_details**: Get detailed information for a specific email campaign
+- **get_contact_profile**: Get full profile and history for a specific contact by email
+- **list_automation_programs**: List all active marketing automation programs (journeys)
+- **list_email_campaigns**: List all email marketing campaigns
+- **list_email_templates**: List all available email message templates
+- **list_marketing_address_books**: List all contact address books configured in your Dotdigital account
+- **quick_marketing_health_audit**: Retrieve a high-level summary of campaign and contact activity
 
 
 ## 💬 Prompt Examples
