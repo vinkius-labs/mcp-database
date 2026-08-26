@@ -36,9 +36,9 @@ Connect your **ShipHero** account to any AI agent to streamline your warehouse a
 ## Available Tools (8)
 - **list_inventory_changes**: List inventory changes for a SKU
 - **list_orders**: List ShipHero orders
+- **add_inventory**: Add or remove inventory for a SKU
 - **get_product**: Get product details by SKU
 - **sync_inventory**: Bulk sync inventory via CSV URL
-- **add_inventory**: Add or remove inventory for a SKU
 - **create_order**: Create a new order in ShipHero
 - **create_webhook**: Register a new webhook
 - **get_uuid**: Get UUID from a legacy numeric ID

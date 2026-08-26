@@ -26,16 +26,16 @@ Equip intelligent LLM models explicitly executing boundaries isolating **Personi
 
 
 ## Available Tools (8)
-- **get_absence_balance**: Get vacation balance for an employee
-- **get_employee_details**: Get details for a specific employee
 - **list_absences**: ) across the company.
 
 List employee absences and time-off requests
-- **list_attendances**: List employee attendance logs for a date range
 - **list_custom_attributes**: List custom HR attributes defined in Personio
 - **list_employees**: List all employees in the organization
-- **create_employee**: Create a new employee record
 - **create_attendance**: Log attendance/working hours for an employee
+- **get_absence_balance**: Get vacation balance for an employee
+- **get_employee_details**: Get details for a specific employee
+- **list_attendances**: List employee attendance logs for a date range
+- **create_employee**: Create a new employee record
 
 
 ## 💬 Prompt Examples

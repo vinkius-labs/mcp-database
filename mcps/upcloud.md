@@ -36,52 +36,52 @@ No more jumping between browser tabs to check server statuses or billing cycles.
 
 
 ## Available Tools (46)
+- **assign_ip**: Assign a new IP address
+- **backup_storage**: Create a storage backup
+- **create_api_token**: Create a new API token
+- **create_load_balancer**: Create a managed load balancer
 - **create_router**: Create a router
-- **update_network**: Modify network details
-- **update_storage**: Modify or resize storage
-- **list_zones**: List available zones
-- **create_network**: Create a new SDN private network
-- **list_databases**: List managed database services
+- **create_storage**: Create a new storage
 - **delete_server**: Delete a server
+- **get_account**: Get UpCloud account information
+- **get_kubernetes_kubeconfig**: Get Kubernetes cluster credentials (kubeconfig)
+- **list_api_tokens**: List API tokens
+- **list_databases**: List managed database services
+- **list_load_balancers**: List managed load balancer services
+- **list_object_storages**: List Managed Object Storage services
+- **list_routers**: List routers
+- **list_storages**: List all accessible storages
+- **list_zones**: List available zones
+- **restore_storage**: Restore storage from backup
+- **update_ip**: Modify PTR record or floating IP attachment
+- **update_network**: Modify network details
+- **update_server**: Modify server configuration
+- **update_storage**: Modify or resize storage
+- **create_network**: Create a new SDN private network
 - **export_audit_logs**: Export account audit logs
 - **list_firewall_rules**: List firewall rules for a server
-- **assign_ip**: Assign a new IP address
-- **list_audit_logs**: List account audit logs
-- **backup_storage**: Create a storage backup
-- **get_billing_summary**: Get monthly billing summary
 - **clone_storage**: Clone a storage
 - **create_database**: Create a managed database instance
+- **get_billing_summary**: Get monthly billing summary
+- **list_audit_logs**: List account audit logs
 - **create_firewall_rule**: Create a firewall rule for a server
 - **create_kubernetes_cluster**: Create a Managed Kubernetes cluster
-- **create_load_balancer**: Create a managed load balancer
 - **create_object_storage**: Create a Managed Object Storage service
 - **create_server**: Create a new server
-- **create_storage**: Create a new storage
-- **create_api_token**: Create a new API token
-- **list_database_types**: List available database types and plans
-- **get_server**: Get detailed server information
 - **get_host**: Get host details
-- **list_hosts**: List available hosts
+- **get_server**: Get detailed server information
 - **import_storage**: Import data to storage
+- **list_database_types**: List available database types and plans
+- **list_hosts**: List available hosts
 - **list_ips**: List all IP addresses
-- **get_kubernetes_kubeconfig**: Get Kubernetes cluster credentials (kubeconfig)
-- **list_load_balancers**: List managed load balancer services
 - **list_networks**: List all SDN private networks
 - **list_servers**: List all servers
 - **stop_server**: Stop a server
 - **list_kubernetes_clusters**: List Managed Kubernetes (UKS) clusters
-- **list_object_storages**: List Managed Object Storage services
 - **list_prices**: List resource prices
 - **release_ip**: Release an IP address
 - **restart_server**: Restart a server
-- **restore_storage**: Restore storage from backup
-- **list_routers**: List routers
 - **start_server**: Start a server
-- **list_storages**: List all accessible storages
-- **list_api_tokens**: List API tokens
-- **update_ip**: Modify PTR record or floating IP attachment
-- **update_server**: Modify server configuration
-- **get_account**: Get UpCloud account information
 
 
 ## 💬 Prompt Examples

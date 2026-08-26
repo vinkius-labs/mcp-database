@@ -33,16 +33,16 @@ Connect your **Node-RED** instance to any AI agent to orchestrate your event-dri
 
 
 ## Available Tools (11)
+- **get_nodes**: Get list of installed nodes
+- **remove_node**: Remove a node module
+- **set_flows**: Set active flow configuration
 - **get_diagnostics**: js, and memory usage.
 
 Get Node-RED system diagnostics
 - **get_flow**: Get an individual flow (tab) configuration
 - **get_flows**: Get active flow configuration
-- **get_nodes**: Get list of installed nodes
-- **install_node**: Install a new node module
-- **remove_node**: Remove a node module
-- **set_flows**: Set active flow configuration
 - **get_settings**: Get Node-RED runtime settings
+- **install_node**: Install a new node module
 - **update_flow**: Update an individual flow
 - **add_flow**: Add a new flow to the configuration
 - **delete_flow**: Delete an individual flow

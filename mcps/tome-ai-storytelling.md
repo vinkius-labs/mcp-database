@@ -36,8 +36,8 @@ No more manual slide creation. Your AI acts as a creative director, building out
 
 ## Available Tools (5)
 - **add_page**: Add a new page to an existing tome
-- **create_tome**: Create a new tome in a workspace
 - **get_tome**: Get detailed information about a specific tome
+- **create_tome**: Create a new tome in a workspace
 - **list_workspaces**: List Tome workspaces
 - **list_tomes**: List tomes in a workspace
 

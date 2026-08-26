@@ -36,44 +36,44 @@ Connect your **Syncthing** instance to any AI agent and take full control of you
 ## Available Tools (28)
 - **system_browse**: List directories matching a path
 - **system_shutdown**: Shutdown Syncthing
-- **system_connections**: Get configured devices and connection status
-- **get_db_completion**: Get folder/device completion status
 - **get_db_file**: Get detailed data about a specific file
-- **scan_db**: Request immediate scan of a folder
 - **get_db_status**: ).
 
 Get folder database status
-- **get_device_stats**: Get device statistics
 - **get_events**: Poll for events
+- **get_folder**: Get specific folder configuration
+- **get_random_string**: Get a strong random alphanumeric string
+- **set_config**: Replace entire configuration
+- **system_reset**: Optionally reset only a specific folder.
+
+Reset index database
+- **system_version**: Get Syncthing version
+- **get_db_completion**: Get folder/device completion status
+- **system_connections**: Get configured devices and connection status
+- **scan_db**: Request immediate scan of a folder
+- **get_device_stats**: Get device statistics
 - **get_folder_stats**: Get folder statistics
 - **get_config**: Get entire configuration
 - **get_db_ignores**: Get ignore patterns for a folder
 - **get_device**: Get specific device configuration
 - **get_devices**: Get all configured devices
-- **get_folder**: Get specific folder configuration
 - **get_folders**: Get all configured folders
 - **get_health**: Returns {"status": "OK"}. Does not require authentication.
 
 Simple health check
+- **get_restart_required**: Check if restart is required
 - **system_pause**: If device ID is omitted, affects all devices.
 
 Pause devices
-- **get_random_string**: Get a strong random alphanumeric string
-- **system_reset**: Optionally reset only a specific folder.
-
-Reset index database
-- **get_restart_required**: Check if restart is required
 - **system_restart**: Restart Syncthing
 - **system_resume**: If device ID is omitted, affects all devices.
 
 Resume devices
-- **set_config**: Replace entire configuration
 - **set_db_ignores**: Set ignore patterns for a folder
 - **system_status**: ).
 
 Get current system status and resource usage
 - **verify_device_id**: Verify and format a device ID
-- **system_version**: Get Syncthing version
 
 
 ## 💬 Prompt Examples

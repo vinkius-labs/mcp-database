@@ -36,38 +36,38 @@ No more switching between your store backend and ShipBob dashboard to check if a
 
 
 ## Available Tools (30)
+- **batch_cancel_shipments**: Cancel multiple shipments at once
+- **cancel_order**: Cancel an order and its shipments
+- **convert_variant_to_bundle**: Convert a variant into a bundle
+- **create_order**: Create a new fulfillment order
+- **create_return**: Create a return order (RMA)
+- **get_order**: Get order details and shipment status
+- **get_product**: Get details for a specific product
 - **get_receiving_labels**: Get PDF box labels for a WRO
 - **list_invoices**: List invoices by date range
+- **list_orders**: List orders with status/tracking filters
+- **list_returns**: List return orders
+- **query_inventory_history**: Query inventory movement events
+- **set_external_sync_receiving**: Mark WROs as synced to your system
+- **update_product**: Update product details
+- **update_shipment_address**: Update the shipping address for a shipment
 - **get_shipment**: Get specific shipment details
 - **list_inventory**: List all inventory items
-- **list_orders**: List orders with status/tracking filters
 - **list_products**: List products with filtering
+- **list_product_variants**: List all variants for a product
 - **list_receiving**: List Warehouse Receiving Orders (WROs)
 - **list_transaction_fees**: List available fee types
-- **list_product_variants**: List all variants for a product
-- **query_inventory_history**: Query inventory movement events
 - **query_transactions**: Search transactions (charges, credits)
-- **batch_cancel_shipments**: Cancel multiple shipments at once
 - **batch_update_tracking**: Mark tracking as synced to your system
-- **list_returns**: List return orders
-- **cancel_order**: Cancel an order and its shipments
+- **create_product**: Create a new product with variants
 - **list_channels**: g., a Shopify store).
 
 List all channels the user has access to
-- **convert_variant_to_bundle**: Convert a variant into a bundle
-- **create_order**: Create a new fulfillment order
-- **create_product**: Create a new product with variants
 - **create_receiving**: Create a new Warehouse Receiving Order (WRO)
-- **create_return**: Create a return order (RMA)
+- **get_inventory_levels**: Get aggregated inventory levels across all locations
 - **get_inventory_levels_by_location**: Get inventory levels grouped by fulfillment center
 - **get_inventory_levels_by_lot**: Get inventory levels grouped by lot/expiration
-- **get_inventory_levels**: Get aggregated inventory levels across all locations
-- **get_order**: Get order details and shipment status
-- **get_product**: Get details for a specific product
-- **set_external_sync_receiving**: Mark WROs as synced to your system
-- **update_product**: Update product details
 - **update_return**: Update an existing return
-- **update_shipment_address**: Update the shipping address for a shipment
 
 
 ## 💬 Prompt Examples

@@ -37,18 +37,18 @@ No more manual lead entry or missing campaign gaps. Your AI acts as your dedicat
 
 
 ## Available Tools (10)
-- **get_snovio_prospect_by_id**: Get prospect details by ID
-- **list_snovio_campaigns**: List outreach campaigns
 - **list_snovio_prospect_lists**: List prospect lists
 - **list_snovio_webhooks**: List account webhooks
-- **check_snovio_status**: io API credentials.
-
-Check API Status
 - **add_snovio_prospect_to_list**: Add prospect to list
-- **find_snovio_domain_emails**: Find emails for a domain
 - **find_snovio_prospect_by_name**: Find email by name and domain
 - **get_snovio_campaign_analytics**: Get campaign analytics
 - **get_snovio_prospect_by_email**: Get prospect details by email
+- **get_snovio_prospect_by_id**: Get prospect details by ID
+- **list_snovio_campaigns**: List outreach campaigns
+- **check_snovio_status**: io API credentials.
+
+Check API Status
+- **find_snovio_domain_emails**: Find emails for a domain
 
 
 ## 💬 Prompt Examples

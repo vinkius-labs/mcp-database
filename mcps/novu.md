@@ -38,40 +38,40 @@ No more manual API calls to test your notification flows. Your AI acts as a dedi
 ## Available Tools (39)
 - **update_topic**: Update a topic
 - **bulk_update_subscriber_preferences**: Bulk update subscriber preferences
-- **create_integration**: Create a new integration
-- **create_layout**: Create a new layout
-- **create_subscriber**: Create a new subscriber
 - **create_topic_subscriptions**: Create subscriptions for a topic
-- **create_topic**: Create a new topic
-- **create_workflow**: Create a new workflow
 - **delete_integration**: Delete an integration
-- **delete_message**: Delete a message
-- **delete_subscriber_credentials**: Delete subscriber credentials
 - **delete_subscriber**: Delete a subscriber
-- **delete_topic_subscriptions**: Delete subscriptions from a topic
 - **delete_topic**: Delete a topic
+- **delete_topic_subscriptions**: Delete subscriptions from a topic
 - **get_environment_variable_usage**: Retrieve usage of an environment variable
 - **get_subscriber_preferences**: Retrieve subscriber preferences
-- **get_subscriber**: Retrieve a subscriber by ID
-- **get_topic_subscription**: Retrieve a topic subscription
 - **list_integrations**: List all integrations
-- **list_messages**: List messages
 - **list_topic_subscriptions**: List subscriptions for a topic
-- **search_subscribers**: Search for subscribers
 - **set_primary_integration**: Set an integration as primary
-- **trigger_broadcast**: Send a notification to all existing subscribers
 - **trigger_bulk_event**: Trigger multiple events in a single request
 - **trigger_event**: Trigger a notification to one or more subscribers
-- **update_environment_variable**: Update an environment variable
-- **update_integration**: Update an integration
 - **update_subscriber_credentials**: Update subscriber credentials
-- **update_subscriber_preference**: Update a subscriber preference
-- **update_subscriber**: Update an existing subscriber
-- **upsert_subscriber_credentials**: Upsert subscriber credentials
 - **cancel_trigger**: Cancel active or pending workflows (e.g., digests, delays)
 - **check_topic_subscriber**: Check if a subscriber is subscribed to a topic
 - **create_environment_variable**: Create an environment variable
+- **create_integration**: Create a new integration
+- **create_layout**: Create a new layout
+- **create_subscriber**: Create a new subscriber
+- **create_topic**: Create a new topic
+- **create_workflow**: Create a new workflow
+- **delete_message**: Delete a message
 - **delete_messages_by_transaction**: Delete messages by transaction ID
+- **delete_subscriber_credentials**: Delete subscriber credentials
+- **get_subscriber**: Retrieve a subscriber by ID
+- **get_topic_subscription**: Retrieve a topic subscription
+- **list_messages**: List messages
+- **search_subscribers**: Search for subscribers
+- **trigger_broadcast**: Send a notification to all existing subscribers
+- **update_environment_variable**: Update an environment variable
+- **update_integration**: Update an integration
+- **update_subscriber**: Update an existing subscriber
+- **update_subscriber_preference**: Update a subscriber preference
+- **upsert_subscriber_credentials**: Upsert subscriber credentials
 - **get_topic**: Retrieve a topic by key
 - **list_environment_variables**: List all environment variables
 - **list_active_integrations**: List active integrations

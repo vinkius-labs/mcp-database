@@ -33,12 +33,12 @@ Connect your **Omnivore** account to any AI agent to organize your reading list 
 
 
 ## Available Tools (4)
-- **search_articles**: g., label:Newsletter, in:inbox, is:unread, has:highlights) to find articles.
-
-Search and filter articles in Omnivore library
 - **get_article**: Get full content of a specific article
 - **get_me**: Get current Omnivore user details
 - **save_url**: Save a URL to Omnivore library
+- **search_articles**: g., label:Newsletter, in:inbox, is:unread, has:highlights) to find articles.
+
+Search and filter articles in Omnivore library
 
 
 ## 💬 Prompt Examples

@@ -30,8 +30,8 @@ Connect your **SaveDay** account to any AI agent to seamlessly capture and retri
 - **capture_content**: Type must be url, text, or image.
 
 Capture a URL, text, or image to SaveDay
-- **search_items**: Search through saved items
 - **get_summary**: Retrieve an AI-generated summary for a specific saved item
+- **search_items**: Search through saved items
 - **list_tags**: Retrieve a list of all tags used in the SaveDay account
 
 

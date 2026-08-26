@@ -33,10 +33,10 @@ Connect **RentCast** to your AI agent to unlock powerful real estate insights. Q
 
 
 ## Available Tools (6)
-- **get_rental_avm_long_term**: Generate rental valuations and estimated market rents for long-term rentals
-- **get_rental_avm_short_term**: Generate rental valuations and estimated market rents for short-term/Airbnb rentals
 - **get_market_stats**: Retrieve aggregate market data and trends for a specific zip code
 - **get_property_records**: Retrieve detailed information about specific properties or search for property records
+- **get_rental_avm_long_term**: Generate rental valuations and estimated market rents for long-term rentals
+- **get_rental_avm_short_term**: Generate rental valuations and estimated market rents for short-term/Airbnb rentals
 - **get_rental_listings**: Search for active and historical rental listings
 - **get_sale_listings**: Search for active and historical real estate sale listings
 

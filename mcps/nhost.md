@@ -33,10 +33,13 @@ Connect your **Nhost** project to any AI agent to manage your backend services t
 
 
 ## Available Tools (15)
+- **change_email**: Requires elevated NHOST_JWT credential.
+
+Request to change the authenticated user email
 - **get_file_presigned_url**: Retrieve a presigned URL for a file
 - **signin_otp_email**: Initiate email-based one-time password authentication
-- **signin_passwordless_email**: Initiate passwordless authentication by sending a magic link
 - **signout**: Invalidate refresh tokens and end the session
+- **signin_passwordless_email**: Initiate passwordless authentication by sending a magic link
 - **signup_email_password**: Register a new user account
 - **signup_otp_email**: Register a new user account using email OTP
 - **upload_file**: Returns metadata for the processed file.
@@ -52,9 +55,6 @@ Retrieve the authenticated user profile information
 - **reset_password**: Request a password reset email
 - **signin_anonymous**: Create an anonymous user session
 - **signin_email_password**: Authenticate a user with email and password
-- **change_email**: Requires elevated NHOST_JWT credential.
-
-Request to change the authenticated user email
 - **delete_file**: Permanently delete a file
 
 

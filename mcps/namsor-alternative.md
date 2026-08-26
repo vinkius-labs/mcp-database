@@ -34,10 +34,10 @@ Connect **Namsor** to your AI agent to unlock advanced name analysis and data en
 
 
 ## Available Tools (5)
-- **parse_name**: Split a full name into its components
 - **format_phone**: Format and validate a phone number
-- **get_us_race_ethnicity**: Classify a name according to US Census race/ethnicity categories
 - **get_gender**: Classify a name as male or female
+- **get_us_race_ethnicity**: Classify a name according to US Census race/ethnicity categories
+- **parse_name**: Split a full name into its components
 - **get_origin**: Identify the likely country of origin for a name
 
 

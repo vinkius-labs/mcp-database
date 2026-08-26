@@ -34,12 +34,6 @@ Connect to the **ORCID** (Open Researcher and Contributor ID) registry to identi
 
 
 ## Available Tools (13)
-- **expanded_search**: Search the ORCID registry and return expanded metadata
-- **get_activities**: Get summary of all activities for an ORCID record
-- **get_item**: Get a specific item from a section using its put-code
-- **get_person**: Get biographical section of an ORCID record
-- **get_record**: Get summary view of the full ORCID record
-- **get_section**: Get summary of a specific section
 - **get_summary**: Requires Member API access.
 
 Get validated and self-asserted summary (Member API only)
@@ -52,13 +46,19 @@ Register a webhook callback URL for an ORCID record (Premium only)
 - **search**: Supports fields like given-names, family-name, email, orcid, etc.
 
 Search the ORCID registry using Solr 3.6 syntax
-- **update_item**: Requires Member API access.
-
-Update an existing item in a section (Member API only)
+- **csv_search**: Search the ORCID registry and return CSV format
 - **create_item**: Requires Member API access and appropriate scopes.
 
 Add a new item to a section (Member API only)
-- **csv_search**: Search the ORCID registry and return CSV format
+- **expanded_search**: Search the ORCID registry and return expanded metadata
+- **get_activities**: Get summary of all activities for an ORCID record
+- **get_item**: Get a specific item from a section using its put-code
+- **get_person**: Get biographical section of an ORCID record
+- **get_record**: Get summary view of the full ORCID record
+- **get_section**: Get summary of a specific section
+- **update_item**: Requires Member API access.
+
+Update an existing item in a section (Member API only)
 
 
 ## 💬 Prompt Examples
