@@ -15,8 +15,8 @@ This MCP server provides deterministic tools to exploit the roll-down effect in 
 
 ## Available Tools (3)
 - **analyze_curve_opportunities**: Identifies the most attractive contract to buy based on roll-down return and curve stability
-- **calculate_holding_parameters**: Determines the recommended duration to hold a specific contract and assesses risk
 - **get_curve_status**: Provides a snapshot of the current state of the futures curve
+- **calculate_holding_parameters**: Determines the recommended duration to hold a specific contract and assesses risk
 
 
 ## 💬 Prompt Examples

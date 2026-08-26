@@ -14,8 +14,8 @@ This MCP server provides deterministic intelligence for futures traders to maxim
 
 
 ## Available Tools (3)
-- **analyze_curve_structure**: Provides a comprehensive view of the carry profile across all available contract months to identify trends and anomalies
 - **calculate_optimal_roll**: Determines the most profitable contract to transition into and validates if the trade meets strict profitability and liquidity criteria
+- **analyze_curve_structure**: Provides a comprehensive view of the carry profile across all available contract months to identify trends and anomalies
 - **get_contract_rankings**: Ranks all available contracts based on their annualized implied carry to assist in identifying the strongest market opportunities
 
 

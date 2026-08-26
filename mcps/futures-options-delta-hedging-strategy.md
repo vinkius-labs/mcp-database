@@ -14,9 +14,9 @@ This MCP server provides a deterministic simulation engine for managing delta-ne
 
 
 ## Available Tools (3)
-- **calculate_hedge_signals**: Executes the core simulation to generate hedging decisions and risk metrics over a series of time steps
 - **get_portfolio_risk_summary**: Provides a snapshot of the current risk profile of the option portfolio
 - **validate_market_conditions**: Checks if the current market environment permits hedging based on liquidity and volatility constraints
+- **calculate_hedge_signals**: Executes the core simulation to generate hedging decisions and risk metrics over a series of time steps
 
 
 ## 💬 Prompt Examples

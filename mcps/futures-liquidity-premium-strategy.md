@@ -14,9 +14,9 @@ This MCP server provides deterministic tools to identify mispriced illiquidity d
 
 
 ## Available Tools (3)
-- **analyzePremiumOpportunity**: 
 - **calculateLiquidityMetrics**: 
 - **estimateConvergence**: 
+- **analyzePremiumOpportunity**: 
 
 
 ## 💬 Prompt Examples

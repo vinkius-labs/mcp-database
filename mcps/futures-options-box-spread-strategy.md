@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine to identify mispriced box spread
 
 
 ## Available Tools (3)
-- **analyze_box_spread**: Calculates the cost, theoretical value, and profitability of a specific box spread configuration
 - **calculate_margin_and_risk**: Estimates the capital required to hold the position and the inherent danger of the execution
 - **get_market_liquidity_status**: Validates if the specific options contracts are liquid enough to support arbitrage
+- **analyze_box_spread**: Calculates the cost, theoretical value, and profitability of a specific box spread configuration
 
 
 ## 💬 Prompt Examples

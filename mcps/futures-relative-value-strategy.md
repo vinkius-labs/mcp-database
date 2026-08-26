@@ -18,9 +18,9 @@ This MCP server provides a deterministic framework for executing relative value 
 
 
 ## Available Tools (3)
+- **generate_signal**: Computes the daily trading signal by comparing the current price ratio against statistical bounds and fundamental fair values
 - **analyze_relationship**: Evaluates the statistical and liquidity-based relationship between two futures contracts
 - **calculate_fair_value**: Determines the expected ratio between two contracts based on historical averages and physical market drivers
-- **generate_signal**: Computes the daily trading signal by comparing the current price ratio against statistical bounds and fundamental fair values
 
 
 ## 💬 Prompt Examples

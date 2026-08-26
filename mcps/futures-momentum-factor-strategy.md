@@ -15,8 +15,8 @@ This MCP server provides tools to execute a deterministic cross-sectional moment
 
 ## Available Tools (3)
 - **analyze_strategy_performance**: Compare current period signals against the previous period to evaluate changes
-- **calculate_momentum_signals**: Generate core momentum ranking and trading signals
 - **get_portfolio_composition**: Retrieve the specific list of assets currently held in Long, Short, or Hold positions
+- **calculate_momentum_signals**: Generate core momentum ranking and trading signals
 
 
 ## 💬 Prompt Examples

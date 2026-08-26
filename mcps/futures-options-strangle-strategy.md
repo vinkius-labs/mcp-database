@@ -14,9 +14,9 @@ This MCP server provides a specialized decision engine for traders executing sho
 
 
 ## Available Tools (3)
+- **validate_liquidity_conditions**: Verifies if a specific option setup meets the necessary liquidity and risk constraints
 - **analyze_strangle_signals**: Evaluates daily market data to generate specific BUY or SELL signals for a strangle strategy
 - **get_strategy_economics**: Calculates the specific risk/reward profile for a single identified strangle position
-- **validate_liquidity_conditions**: Verifies if a specific option setup meets the necessary liquidity and risk constraints
 
 
 ## 💬 Prompt Examples

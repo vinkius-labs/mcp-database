@@ -23,24 +23,27 @@ Connect your **Lightspeed Restaurant L-Series** (resto-api) to any AI agent.
 
 
 ## Available Tools (14)
-- **get_company**: Also the authoritative source of the account timezone. Not for sales numbers — use get_sales_report or get_product_sales.
-
-Get restaurant profile and settings
-- **list_establishments**: Returns each with name, country, timezone, and tax mode. Returns one page (up to 100). The response includes a "page" object with total, has_more, and next_offset — when has_more is true, call again with offset=next_offset to get the rest. Default amount is 100. Empty if the account is a single location.
-
-List linked establishments / locations (paginated)
-- **get_product_sales**: "from" and "to" are required ISO-8601 dates (e.g. 2026-08-01). This is the aggregated report; for the raw tickets use get_sales_report.
-
-Get per-product sales analytics
 - **list_modifiers**: Returns one page (up to 100). The response includes a "page" object with total, has_more, and next_offset — when has_more is true, call again with offset=next_offset to get the rest. Default amount is 100. For the items they attach to use list_menu_items.
 
 List modifier groups / add-ons (paginated)
-- **list_employees**: Returns one page (up to 100). The response includes a "page" object with total, has_more, and next_offset — when has_more is true, call again with offset=next_offset to get the rest. Default amount is 100. For their worked hours use list_clock_times.
+- **get_company**: Also the authoritative source of the account timezone. Not for sales numbers — use get_sales_report or get_product_sales.
 
-List staff members (paginated)
+Get restaurant profile and settings
 - **list_clock_times**: Returns clock-in and clock-out timestamps per employee. Returns one page (up to 100). The response includes a "page" object with total, has_more, and next_offset — when has_more is true, call again with offset=next_offset to get the rest. Default amount is 100. For the staff roster/details use list_employees.
 
 List staff clock in/out records (paginated)
+- **get_receipt**: Returns the full breakdown: items, modifiers, taxes, and payments. To find the ID first, use list_receipts.
+
+Get one receipt by its ID
+- **get_product_sales**: "from" and "to" are required ISO-8601 dates (e.g. 2026-08-01). Returns one page (up to 100). The response includes a "page" object with total, has_more, and next_offset — when has_more is true, call again with offset=next_offset to get the rest. Default amount is 100. Wide date ranges can exceed 100 rows — page through with next_offset. This is the aggregated report; for the raw tickets use get_sales_report.
+
+Get per-product sales analytics (paginated)
+- **list_employees**: Returns one page (up to 100). The response includes a "page" object with total, has_more, and next_offset — when has_more is true, call again with offset=next_offset to get the rest. Default amount is 100. For their worked hours use list_clock_times.
+
+List staff members (paginated)
+- **list_establishments**: Returns each with name, country, timezone, and tax mode. Returns one page (up to 100). The response includes a "page" object with total, has_more, and next_offset — when has_more is true, call again with offset=next_offset to get the rest. Default amount is 100. Empty if the account is a single location.
+
+List linked establishments / locations (paginated)
 - **list_menu_items**: Returns one page (up to 100). The response includes a "page" object with total, has_more, and next_offset — when has_more is true, call again with offset=next_offset to get the rest. Default amount is 100. Menus often exceed 100 items — page through with next_offset to get the full catalog. To group by category use list_categories; for add-on groups use list_modifiers.
 
 List menu products with prices (paginated)
@@ -56,9 +59,6 @@ List tables across floors (paginated)
 - **list_receipts**: Optional date (YYYY-MM-DD); defaults to the restaurant current business day in its own timezone. Returns one page (up to 100). The response includes a "page" object with total, has_more, and next_offset — when has_more is true, call again with offset=next_offset to get the rest. Default amount is 100. Busy days exceed 100 receipts — page through. For a multi-day span use get_sales_report; for per-product totals use get_product_sales.
 
 List receipts for a day (paginated)
-- **get_receipt**: Returns the full breakdown: items, modifiers, taxes, and payments. To find the ID first, use list_receipts.
-
-Get one receipt by its ID
 - **get_sales_report**: "from" and "to" are required ISO-8601 (e.g. 2026-08-01T00:00:00). Returns one page (up to 100). The response includes a "page" object with total, has_more, and next_offset — when has_more is true, call again with offset=next_offset to get the rest. Default amount is 100. Ranges commonly exceed 100 receipts — page through. For a single day use list_receipts; for best-sellers/profit per item use get_product_sales.
 
 List receipts over a date range (paginated)
