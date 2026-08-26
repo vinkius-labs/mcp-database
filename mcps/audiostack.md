@@ -34,17 +34,17 @@ Connect your **AudioStack** account to any AI agent and build a complete AI-driv
 
 ## Available Tools (10)
 - **list_media_files**: List your uploaded and generated media files
-- **create_audioform**: Create a fully mixed audio production (Audioform)
-- **create_mix**: Automate mixing and mastering of audio tracks
 - **create_story**: Create a long-form audio story
 - **get_audioform**: Get the status and final URL of an Audioform
+- **text_to_speech**: Generate speech from text using an AI voice
+- **get_usage_analytics**: Get account usage metrics
+- **create_audioform**: Create a fully mixed audio production (Audioform)
+- **create_mix**: Automate mixing and mastering of audio tracks
 - **list_voices**: You can filter by language, gender, or provider.
 
 List and search for available AI voices
-- **text_to_speech**: Generate speech from text using an AI voice
-- **get_usage_analytics**: Get account usage metrics
-- **get_voice_details**: Get detailed information for a specific voice
 - **list_sound_templates**: List available music and sound design templates
+- **get_voice_details**: Get detailed information for a specific voice
 
 
 ## 💬 Prompt Examples

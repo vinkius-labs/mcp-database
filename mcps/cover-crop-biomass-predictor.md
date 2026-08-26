@@ -14,9 +14,9 @@ This MCP server provides advanced modeling for regenerative agriculture. It uses
 
 
 ## Available Tools (4)
-- **find_optimum_termination**: Identifies the best date to terminate the crop to maximize nitrogen credits
 - **get_species_growth_parameters**: Retrieves the biological constants required for modeling a specific species
 - **analyze_growth_environment**: Validates if the current environmental conditions are sufficient for the selected species to reach maturity
+- **find_optimum_termination**: Identifies the best date to terminate the crop to maximize nitrogen credits
 - **predict_biomass_metrics**: Calculates total biomass and chemical composition for a specific growth period
 
 

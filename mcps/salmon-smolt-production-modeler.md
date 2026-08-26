@@ -14,10 +14,10 @@ This MCP server provides a predictive modeling engine for optimizing Atlantic sa
 
 
 ## Available Tools (4)
-- **predict_smoltification_milestones**: Predicts when a batch of salmon will reach specific developmental milestones
-- **simulate_photoperiod_impact**: Forecasts how altering light cycles will shift the timing of smoltification
 - **calculate_optimal_transfer_window**: Determines the best time to move salmon from freshwater to seawater to maximize survival
 - **evaluate_feeding_efficiency**: Analyzes how different feeding regimes impact the accumulation of thermal units and growth
+- **predict_smoltification_milestones**: Predicts when a batch of salmon will reach specific developmental milestones
+- **simulate_photoperiod_impact**: Forecasts how altering light cycles will shift the timing of smoltification
 
 
 ## 💬 Prompt Examples

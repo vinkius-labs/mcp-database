@@ -14,10 +14,10 @@ This MCP server provides specialized tools for managing baleage preservation. Us
 
 
 ## Available Tools (4)
-- **estimate_fermentation_quality**: Predicts the nutritional and preservation quality of the bale after storage
-- **evaluate_storage_risk**: Identifies the likelihood of spoilage during the storage period
 - **predict_oxygen_barrier**: Evaluates how effectively the wrapping will prevent oxygen from entering the bale
 - **calculate_film_requirements**: Determines the total amount of plastic film needed to wrap a specific bale
+- **estimate_fermentation_quality**: Predicts the nutritional and preservation quality of the bale after storage
+- **evaluate_storage_risk**: Identifies the likelihood of spoilage during the storage period
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ This MCP server provides specialized tools for managing Total Mixed Ration (TMR)
 
 
 ## Available Tools (4)
-- **evaluate_feeding_workflow**: Validates if the current mixer configuration can support the specific herd requirements
 - **calculate_batch_specs**: Determines the physical characteristics (weight and volume) of a single TMR batch based on the recipe
 - **check_expansion_readiness**: Predicts if the current mixer will be able to handle a larger herd in the future
 - **estimate_mixing_performance**: Calculates how long it takes to complete a mix and how many batches can be done in a day
+- **evaluate_feeding_workflow**: Validates if the current mixer configuration can support the specific herd requirements
 
 
 ## 💬 Prompt Examples

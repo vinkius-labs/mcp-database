@@ -35,10 +35,10 @@ Connect your **Bazaarvoice** account to any AI agent and gain deep insights into
 
 ## Available Tools (10)
 - **get_product**: Get specific product details
+- **list_categories**: List product categories
 - **get_review**: Get specific review details
 - **get_statistics**: Get review statistics for a product
 - **list_answers**: List customer answers
-- **list_categories**: List product categories
 - **search_reviews**: Search reviews by text
 - **get_question**: Get specific question details
 - **list_products**: List Bazaarvoice products

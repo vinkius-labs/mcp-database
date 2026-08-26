@@ -15,9 +15,9 @@ This MCP server provides tools to model pasture growth by accounting for tempera
 
 ## Available Tools (4)
 - **calculate_hay_surplus**: Estimates the amount of biomass available for hay production after grazing needs are satisfied
-- **simulate_seasonal_growth**: Projects the growth pattern over a specific period to visualize biomass accumulation trends
 - **calculate_daily_growth**: Determines the specific biomass accumulation for a single day based on current environmental conditions
 - **predict_grazing_capacity**: Determines how many livestock can be sustained by the pasture's annual production
+- **simulate_seasonal_growth**: Projects the growth pattern over a specific period to visualize biomass accumulation trends
 
 
 ## 💬 Prompt Examples

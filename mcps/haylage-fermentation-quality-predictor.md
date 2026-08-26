@@ -14,10 +14,10 @@ This MCP server provides advanced predictive modeling for haylage fermentation. 
 
 
 ## Available Tools (4)
-- **evaluate_aerobic_stability**: Estimate resistance to spoilage once exposed to air
-- **predict_fermentation_outcome**: Calculate primary chemical and biological indicators of fermentation quality
 - **compare_crop_profiles**: Compare theoretical fermentation potential of different crop types
+- **evaluate_aerobic_stability**: Estimate resistance to spoilage once exposed to air
 - **identify_risk_factors**: Diagnose specific harvesting or handling parameters causing poor quality
+- **predict_fermentation_outcome**: Calculate primary chemical and biological indicators of fermentation quality
 
 
 ## 💬 Prompt Examples
