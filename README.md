@@ -1,6 +1,6 @@
 # Vinkius MCP Registry — Open Data Initiative
 
-Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **6,992 unique Vinkius MCP servers**.
+Welcome to the **Vinkius Open Data Initiative**. This repository provides open access to the Vinkius Model Context Protocol (MCP) catalog, featuring automatically updated documentation for **7,002 unique Vinkius MCP servers**.
 
 This dataset is meticulously sourced from the Vinkius MCP Catalog — a curated, enterprise-grade marketplace of production-ready MCP servers. The catalog encompasses MCP servers that bridge the gap between AI agents and critical software platforms, enterprise systems, rich data sources, and external AI services.
 
@@ -22,7 +22,7 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [communication-messaging](categories/communication-messaging.md) (127 servers)
 - [utilities](categories/utilities.md) (124 servers)
 - [money-moves](categories/money-moves.md) (119 servers)
-- [agriculture](categories/agriculture.md) (106 servers)
+- [agriculture](categories/agriculture.md) (115 servers)
 - [customer-support](categories/customer-support.md) (106 servers)
 - [the-unthinkable](categories/the-unthinkable.md) (106 servers)
 - [knowledge-management](categories/knowledge-management.md) (104 servers)
@@ -62,9 +62,9 @@ Vinkius actively curates and maintains these MCP listings to guarantee they meet
 - [iot-hardware](categories/iot-hardware.md) (25 servers)
 - [automation](categories/automation.md) (24 servers)
 - [gaming](categories/gaming.md) (24 servers)
+- [supply-chain](categories/supply-chain.md) (24 servers)
 - [government-public-data](categories/government-public-data.md) (23 servers)
 - [superpower](categories/superpower.md) (23 servers)
-- [supply-chain](categories/supply-chain.md) (23 servers)
 - [science](categories/science.md) (22 servers)
 - [utility](categories/utility.md) (18 servers)
 - [audio-music](categories/audio-music.md) (16 servers)

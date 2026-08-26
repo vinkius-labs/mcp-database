@@ -6,12 +6,14 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 |-----------|-------------|
 | [Alfalfa Yield & Quality Predictor](../mcps/alfalfa-yield-quality-predictor.md) | Predict alfalfa yield and nutritional quality metrics from cutting schedules. |
 | [Almond Hull Split Predictor](../mcps/almond-hull-split-predictor.md) | Predicts almond hull split timing and harvest windows. |
+| [Amaranth Grain Quality Calculator](../mcps/amaranth-grain-quality-calculator.md) | Analyzes amaranth grain quality, nutritional value, and industrial suitability. |
 | [Aquaculture Feed & Growth Modeling](../mcps/aquaculture-feed-growth-modeling.md) | Predict fish growth, feed requirements, and harvest timelines using biological models. |
 | [Asparagus Spear Growth Model](../mcps/asparagus-spear-growth-model.md) | Predicts asparagus spear development, harvest timing, and crop quality using thermal time models. |
 | [Baleage Wrapping Calculator](../mcps/baleage-wrapping-calculator.md) | Calculate plastic film requirements and predict fermentation quality for baleage storage. |
 | [Barley Malt Quality Predictor](../mcps/barley-malt-quality-predictor.md) | Predict malt quality parameters and brewing suitability from barley characteristics. |
 | [Bee Colony Population Model](../mcps/bee-colony-population-model.md) | Simulate honey bee population dynamics and health risks using the HoPoBIM framework. |
 | [Beef Carcass Yield Predictor](../mcps/beef-carcass-yield-predictor.md) | Predict beef carcass weight, dressing percentage, and USDA grades from live animal measurements. |
+| [Buckwheat Milling Yield Predictor](../mcps/buckwheat-milling-yield-predictor.md) | Predicts buckwheat milling yield, nutritional quality, and market value. |
 | [Calf Housing Ventilation Engine](../mcps/calf-housing-ventilation-engine.md) | Calculate ventilation requirements, heating needs, and respiratory risk for calf housing. |
 | [Cattle Working Facility Designer](../mcps/cattle-working-facility-designer.md) | Design cattle handling facilities with precise dimensions, throughput, and pen capacity calculations. |
 | [Cheese Aging & Affinage Calculator](../mcps/cheese-aging-affinage-calculator.md) | Predict cheese weight loss, flavor maturation, and maintenance schedules. |
@@ -41,6 +43,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Feedlot Pen Sizing](../mcps/feedlot-pen-sizing.md) | Calculate precise feedlot pen dimensions, infrastructure needs, and performance impacts. |
 | [Fertilizer Requirement Calculator](../mcps/fertilizer-requirement-calculator.md) | Calculate precise nutrient dosages and fertilizer costs based on soil analysis and regional standards. |
 | [Flax Linen Quality Calculator](../mcps/flax-linen-quality-calculator.md) | Analyzes flax fiber properties and predicts linen yarn quality. |
+| [Flaxseed Lignan Predictor](../mcps/flaxseed-lignan-predictor.md) | Predicts flaxseed SDG content, oil, and protein levels based on environmental and genetic data. |
 | [Forestry Board Foot Calculator](../mcps/forestry-board-foot-calculator.md) | Deterministic timber volume and basal area calculator for forestry professionals. |
 | [Goat Milk Composition Model](../mcps/goat-milk-composition-model.md) | Predict goat milk yield, nutritional composition, and cheese potential. |
 | [Grass Hay Quality Predictor](../mcps/grass-hay-quality-predictor.md) | Predict nutritional profiles and dairy performance from hay maturity and harvest conditions. |
@@ -58,6 +61,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Horse Nutrition Balancer](../mcps/horse-nutrition-balancer.md) | Calculate precise equine nutrient requirements and optimize rations using NRC standards. |
 | [Irrigation Water Optimizer](../mcps/irrigation-water-optimizer.md) | Calculate precise weekly water requirements, irrigation frequency, and session dosage for your garden. |
 | [Irrigation Water Requirement Calculator](../mcps/irrigation-water-requirement-calculator.md) | Calculate crop evapotranspiration, water deficit, and required irrigation depths. |
+| [Jojoba Wax Composition Predictor](../mcps/jojoba-wax-composition-predictor.md) | Predicts jojoba wax ester composition and industrial suitability. |
 | [Lavender Oil Yield Calculator](../mcps/lavender-oil-yield-calculator.md) | Estimate lavender essential oil yield, chemical profiles, and distillation efficiency. |
 | [Laying Hen Egg Production Model](../mcps/laying-hen-egg-production-model.md) | Models laying hen egg production curves using the Adams-Bell model. |
 | [Lentil Splitting Yield Predictor](../mcps/lentil-splitting-yield-predictor.md) | Predicts lentil splitting yield, breakage, and cooking performance. |
@@ -69,8 +73,10 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Manure Storage Sizing](../mcps/manure-storage-sizing.md) | Calculate manure storage dimensions and nutrient production. |
 | [Maple Syrup Production Engine](../mcps/maple-syrup-production-engine.md) | Predict syrup yields, boiling times, and production costs. |
 | [Milk Cooling Load Calculator](../mcps/milk-cooling-load-calculator.md) | Calculate milk cooling loads, refrigeration sizing, and energy costs. |
+| [Millet Processing Quality Evaluator](../mcps/millet-processing-quality-evaluator.md) | Assess millet dehulling efficiency, milling yield, and product suitability. |
 | [Mint Oil Yield Predictor](../mcps/mint-oil-yield-predictor.md) | Predict mint oil yield, optimal harvest dates, and chemical quality. |
 | [Mushroom Compost Formulation](../mcps/mushroom-compost-formulation.md) | Calculate precise material proportions, hydration, and nitrogen levels for mushroom compost substrates. |
+| [Mustard Oil Pungency Predictor](../mcps/mustard-oil-pungency-predictor.md) | Predicts mustard oil pungency, yield, and economic value using myrosinase hydrolysis modeling. |
 | [Oats Milling Quality Calculator](../mcps/oats-milling-quality-calculator.md) | Calculate oat milling yield, nutritional quality, and product suitability. |
 | [Olive Oil Extraction Yield & Quality Predictor](../mcps/olive-oil-extraction-yield-quality-predictor.md) | Predict olive oil yield, extraction loss, and chemical quality risks based on fruit characteristics and malaxing conditions. |
 | [Papaya Harvest & Ripening Predictor](../mcps/papaya-harvest-ripening-predictor.md) | Predict papaya harvest windows and post-harvest ripening trajectories. |
@@ -85,7 +91,9 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Poultry Growth Curve Predictor](../mcps/poultry-growth-curve-predictor.md) | Predict broiler development and economic timing using the Gompertz growth model. |
 | [Poultry Ventilation Rate Calculator](../mcps/poultry-ventilation-rate-calculator.md) | Calculate precise airflow requirements for broiler houses to manage heat and moisture. |
 | [Productivity Gap Analyzer](../mcps/productivity-gap-analyzer.md) | Identify agricultural yield gaps and potential revenue increases. |
+| [Quinoa Saponin Removal Calculator](../mcps/quinoa-saponin-removal-calculator.md) | Calculate processing requirements, economic impact, and quality for quinoa saponin removal. |
 | [Rabbit Production Modeler](../mcps/rabbit-production-modeler.md) | Simulates rabbit growth, mortality, and reproductive efficiency. |
+| [Safflower Yield Predictor](../mcps/safflower-yield-predictor.md) | Predicts safflower petal and seed yields and optimizes harvest timing. |
 | [Sake Seimai Buai Calculator](../mcps/sake-seimai-buai-calculator.md) | Calculate rice milling yields, milling duration, sake grades, and fermentation water requirements. |
 | [Seed Spacing Grid Planner](../mcps/seed-spacing-grid-planner.md) | Generate precise planting layouts with exact coordinates and capacity limits. |
 | [Seed Treatment Calculator](../mcps/seed-treatment-calculator.md) | Calculate precise quantities, application sequences, and costs for seed treatment batches. |
@@ -94,6 +102,7 @@ Explore the open database of **agriculture** Model Context Protocol (MCP) server
 | [Shrimp Feed & Growth Modeler](../mcps/shrimp-feed-growth-modeler.md) | Predictive modeling for shrimp growth, feed requirements, and survival risk. |
 | [Soil Correction Planner](../mcps/soil-correction-planner.md) | Plan a 3-year soil amendment program for lime, gypsum, and micronutrients. |
 | [Soil pH Amendment Calculator](../mcps/soil-ph-amendment-calculator.md) | Calculate precise soil amendment amounts and costs based on soil type and pH targets. |
+| [Sorghum Tannin Content Calculator](../mcps/sorghum-tannin-content-calculator.md) | Predict tannin levels and nutritional impact in sorghum grains. |
 | [Soybean Seed Quality Predictor](../mcps/soybean-seed-quality-predictor.md) | Predict soybean seed viability and storage safety windows using environmental stress models. |
 | [Sugarcane Trash Management](../mcps/sugarcane-trash-management.md) | Calculate economic and agronomic impacts of sugarcane residue management. |
 | [Sunflower Hybrid Selector](../mcps/sunflower-hybrid-selector.md) | Select optimal sunflower hybrids using multi-criteria analysis of yield, oil, and disease resistance. |
