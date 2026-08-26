@@ -15,8 +15,8 @@ This MCP server provides deterministic financial analysis tools for calculating 
 
 ## Available Tools (3)
 - **analyze_roc_trend**: Evaluate ROC trend using a moving average and identify zero-line crossings
-- **detect_extremes_and_divergence**: Identify overbought/oversold conditions and price-momentum divergences
 - **calculate_basic_indicators**: Calculate fundamental ROC and Momentum values for a price series
+- **detect_extremes_and_divergence**: Identify overbought/oversold conditions and price-momentum divergences
 
 
 ## 💬 Prompt Examples

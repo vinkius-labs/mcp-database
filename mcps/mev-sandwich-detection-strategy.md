@@ -14,8 +14,8 @@ This MCP server provides tools to detect and analyze Maximal Extractable Value (
 
 
 ## Available Tools (3)
-- **analyze_sandwich_statistics**: Provides high-level aggregate metrics regarding the frequency and intensity of sandwich attacks
 - **detect_sandwich_pattern**: Determines if a specific transaction was the victim of a sandwich attack pattern
+- **analyze_sandwich_statistics**: Provides high-level aggregate metrics regarding the frequency and intensity of sandwich attacks
 - **evaluate_protection_strategy**: Evaluates whether a specific token or trade should be avoided based on current MEV risk levels
 
 

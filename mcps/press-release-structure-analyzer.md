@@ -14,8 +14,8 @@ The Press Release Structure Analyzer ensures your news announcements adhere to p
 
 
 ## Available Tools (3)
-- **verify_lead_elements**: Determines if a lead paragraph contains all critical news pillars
 - **audit_quote_standards**: Checks for appropriate quote density and attribution completeness
+- **verify_lead_elements**: Determines if a lead paragraph contains all critical news pillars
 - **validate_structural_format**: Validates headline, dateline, and boilerplate formatting
 
 

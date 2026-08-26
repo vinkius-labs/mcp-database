@@ -15,9 +15,9 @@ This MCP server provides a deterministic engine for calculating the Percentage P
 
 ## Available Tools (4)
 - **calculate_ppo_metrics**: Calculates the full suite of PPO indicators
+- **detect_ppo_events**: Identifies specific momentum triggers like zero-line crosses and signal crossovers
 - **compare_with_macd**: Provides a comparative analysis between PPO and standard MACD
 - **detect_ppo_divergence**: Finds discrepancies between price movements and PPO momentum
-- **detect_ppo_events**: Identifies specific momentum triggers like zero-line crosses and signal crossovers
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides precise technical analysis tools for the Stochastic Osc
 
 
 ## Available Tools (3)
-- **get_oscillator_summary**: Provide a high-level snapshot of the current market state
-- **calculate_stochastic_metrics**: Calculate core Stochastic Oscillator values (%K and %D) and identify signal states
 - **detect_stochastic_divergence**: Identify discrepancies between price movement and oscillator momentum
+- **calculate_stochastic_metrics**: Calculate core Stochastic Oscillator values (%K and %D) and identify signal states
+- **get_oscillator_summary**: Provide a high-level snapshot of the current market state
 
 
 ## 💬 Prompt Examples

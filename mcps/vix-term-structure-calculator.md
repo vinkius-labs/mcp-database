@@ -14,9 +14,9 @@ This MCP server provides deterministic tools to analyze the VIX futures term str
 
 
 ## Available Tools (3)
+- **get_structure_slope**: Calculates the trend of the term structure using linear regression
 - **analyze_term_structure**: Determines the current market state and relationship between spot and futures
 - **calculate_roll_yield**: Quantifies the return expected when rolling from the nearest contract to the next
-- **get_structure_slope**: Calculates the trend of the term structure using linear regression
 
 
 ## 💬 Prompt Examples

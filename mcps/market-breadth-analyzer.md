@@ -15,8 +15,8 @@ This MCP server provides deterministic market breadth analysis. It allows AI age
 
 ## Available Tools (3)
 - **analyze_breadth_trends**: Analyzes historical breadth data to identify moving averages and specific breakout signals
-- **calculate_breadth_metrics**: Provides the core mathematical breakdown of the current market breadth based on immediate counts
 - **get_market_classification**: Returns a simplified descriptive status of the market based on the current ratio
+- **calculate_breadth_metrics**: Provides the core mathematical breakdown of the current market breadth based on immediate counts
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides a deterministic toolset for identifying and evaluating 
 
 
 ## Available Tools (3)
+- **find_arbitrage_opportunities**: Identifies valid arbitrage loops between different lending protocols for stablecoin pairs
 - **evaluate_loop_economics**: Calculates the net profitability and risk metrics for a specific identified arbitrage opportunity
 - **get_protocol_safety_score**: Provides a qualitative risk assessment of a protocol based on its operational history and liquidity
-- **find_arbitrage_opportunities**: Identifies valid arbitrage loops between different lending protocols for stablecoin pairs
 
 
 ## 💬 Prompt Examples

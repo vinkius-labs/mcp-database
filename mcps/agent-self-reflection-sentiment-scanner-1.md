@@ -15,8 +15,8 @@ This MCP server provides tools to analyze the 'sentiment' of agentic workflows b
 
 ## Available Tools (3)
 - **calculate_rate**: Computes the statistical frequency of self-corrections relative to the number of loops performed
-- **get_summary**: Aggregates all scanning and calculation data into a single high-level report
 - **scan_logs**: Analyzes raw log files to identify and count specific markers
+- **get_summary**: Aggregates all scanning and calculation data into a single high-level report
 
 
 ## 💬 Prompt Examples

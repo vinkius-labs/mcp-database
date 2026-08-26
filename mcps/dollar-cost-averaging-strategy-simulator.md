@@ -14,9 +14,9 @@ This MCP server provides tools to execute and analyze a sophisticated Dollar-Cos
 
 
 ## Available Tools (3)
+- **simulate_dca_strategy**: Executes a full simulation of the valuation-adjusted DCA strategy
 - **calculate_performance_metrics**: Computes the core financial outcomes for a completed investment period
 - **get_valuation_percentile**: Calculates the historical standing of a specific valuation point
-- **simulate_dca_strategy**: Executes a full simulation of the valuation-adjusted DCA strategy
 
 
 ## 💬 Prompt Examples

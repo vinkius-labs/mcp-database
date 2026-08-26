@@ -14,8 +14,8 @@ This MCP server provides a deterministic risk assessment engine to protect trade
 
 
 ## Available Tools (3)
-- **analyze_token_risk**: Provides a comprehensive risk profile and a final trading recommendation for a specific token
 - **get_holder_metrics**: Evaluates the distribution of token ownership to identify centralization risks
+- **analyze_token_risk**: Provides a comprehensive risk profile and a final trading recommendation for a specific token
 - **get_liquidity_status**: Checks the current state of liquidity to determine if it is sufficient and how much is committed to the protocol
 
 

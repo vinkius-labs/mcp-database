@@ -14,9 +14,9 @@ This MCP server provides quantitative tools to identify and manage cash-and-carr
 
 
 ## Available Tools (3)
+- **monitor_basis_risk**: Evaluates the stability of the arbitrage opportunity by tracking the volatility of the basis
 - **analyze_arbitrage_signals**: Identifies daily arbitrage entry and exit signals based on price discrepancies and liquidity constraints
 - **calculate_position_economics**: Computes the expected financial outcomes of a specific arbitrage trade once a signal is identified
-- **monitor_basis_risk**: Evaluates the stability of the arbitrage opportunity by tracking the volatility of the basis
 
 
 ## 💬 Prompt Examples

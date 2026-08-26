@@ -14,9 +14,9 @@ This MCP server provides a deterministic technical analysis engine to identify h
 
 
 ## Available Tools (3)
+- **get_breakout_probability**: Provides the statistical likelihood of a price movement exceeding the outer bounds
 - **analyze_pivot_strength**: Evaluates the reliability of specific support or resistance levels based on historical testing
 - **calculate_pivot_signals**: Generates trading signals and risk parameters based on current price action against calculated pivot levels
-- **get_breakout_probability**: Provides the statistical likelihood of a price movement exceeding the outer bounds
 
 
 ## 💬 Prompt Examples

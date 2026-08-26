@@ -14,9 +14,9 @@ This MCP server provides deterministic technical analysis tools to calculate the
 
 
 ## Available Tools (3)
-- **analyze_emv_divergence**: Specifically isolates and identifies divergence patterns between price and the EMV indicator
 - **calculate_emv_metrics**: Computes the core EMV values, the smoothed average, and detects trend signals from raw price and volume data
 - **get_emv_summary**: Provides a high-level snapshot of the current EMV state and recent signal activity
+- **analyze_emv_divergence**: Specifically isolates and identifies divergence patterns between price and the EMV indicator
 
 
 ## 💬 Prompt Examples

@@ -14,10 +14,10 @@ The Pet Medication Dose Splitter is a precision utility designed to help pet own
 
 
 ## Available Tools (3)
-- **fetch_safety_disclaimer**: Retrieves the mandatory safety warning
 - **calculate_dosage_requirement**: Returns total mg required.
 
 Determines the total milligrams of medication needed for a specific pet
+- **fetch_safety_disclaimer**: Retrieves the mandatory safety warning
 - **evaluate_pill_division**: Returns whole pills, fraction, and ease of split.
 
 Translates a required milligram dose into physical pill counts and identifies potential splitting inaccuracies

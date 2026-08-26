@@ -15,8 +15,8 @@ This MCP server provides precise technical analysis tools to calculate the Chaik
 
 ## Available Tools (3)
 - **analyze_signals**: Identifies specific momentum signals like zero-line crosses and trend direction
-- **detect_divergences**: Identifies discrepancies between price movement and oscillator momentum
 - **calculate_oscillator_series**: Computes the raw Chaikin Oscillator values and the underlying AD Line
+- **detect_divergences**: Identifies discrepancies between price movement and oscillator momentum
 
 
 ## 💬 Prompt Examples

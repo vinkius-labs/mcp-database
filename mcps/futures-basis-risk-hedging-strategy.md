@@ -14,8 +14,8 @@ This MCP server provides a deterministic engine for minimizing basis risk betwee
 
 
 ## Available Tools (3)
-- **calculate_hedge_signals**: Generates daily hedging instructions and risk metrics
 - **predict_basis_trend**: Forecasts the future movement of the basis
+- **calculate_hedge_signals**: Generates daily hedging instructions and risk metrics
 - **validate_market_conditions**: Checks if market conditions meet safety requirements for hedging
 
 

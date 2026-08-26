@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine for calculating Parkinson volati
 
 
 ## Available Tools (3)
-- **calculate_parkinson_volatility**: Calculates the annualized Parkinson volatility for a specific set of price data
 - **compare_volatilities**: Answers how the current intraday volatility (Parkinson) compares to the end-of-day volatility (Close-to-Close) over multiple timeframes
 - **get_volatility_context**: Provides a comparative view of Parkinson volatility against standard close-to-close volatility and its percentile rank
+- **calculate_parkinson_volatility**: Calculates the annualized Parkinson volatility for a specific set of price data
 
 
 ## 💬 Prompt Examples

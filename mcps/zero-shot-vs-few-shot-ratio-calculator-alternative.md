@@ -14,8 +14,8 @@ This MCP server provides precise analytical tools to determine the prompting str
 
 
 ## Available Tools (3)
-- **analyze_prompt_composition**: Performs the primary structural analysis of a text string to determine its prompting strategy
 - **compare_prompt_strategies**: Compares two different prompt structures to identify which is more "dense" with examples
+- **analyze_prompt_composition**: Performs the primary structural analysis of a text string to determine its prompting strategy
 - **get_demarcationmetrics**: Provides a granular count of specific pattern occurrences to verify the presence of specific few-shot markers
 
 
