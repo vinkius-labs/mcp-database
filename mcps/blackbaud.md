@@ -33,6 +33,7 @@ Connect your **Blackbaud** account to any AI agent to streamline nonprofit fundr
 
 
 ## Available Tools (7)
+- **create_constituent**: Create a new constituent
 - **create_gift**: Record a new gift
 - **get_constituent**: Retrieve a constituent record
 - **get_gift**: Retrieve gift details
@@ -40,7 +41,6 @@ Connect your **Blackbaud** account to any AI agent to streamline nonprofit fundr
 
 List school users
 - **update_constituent**: Update constituent details
-- **create_constituent**: Create a new constituent
 - **list_academic_sections**: Retrieve academic section information
 
 

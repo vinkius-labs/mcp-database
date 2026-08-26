@@ -14,11 +14,11 @@ The Reverse Diet Metabolism Builder is a specialized simulation engine designed 
 
 
 ## Available Tools (3)
+- **classify_nutritional_state**: Classifies the current nutritional phase
 - **generate_reverse_diet_schedule**: 5kg in 4 weeks.
 
 Generates a week-by-week roadmap for reversing a diet
 - **predict_weight_impact**: Estimates weight change based on caloric surplus
-- **classify_nutritional_state**: Classifies the current nutritional phase
 
 
 ## 💬 Prompt Examples

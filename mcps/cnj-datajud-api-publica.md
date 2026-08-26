@@ -33,11 +33,11 @@ Connect to the **CNJ Datajud Public API** to perform deep searches across the Br
 
 
 ## Available Tools (3)
-- **search_processes_advanced**: Execute an advanced Elasticsearch query against the Datajud API
-- **search_processes_by_class_and_organ**: Search processes by Procedural Class and Court Organ
 - **search_process_by_number**: g., api_publica_trf1, api_publica_tjsp).
 
 Search for a specific judicial process by its CNJ number
+- **search_processes_advanced**: Execute an advanced Elasticsearch query against the Datajud API
+- **search_processes_by_class_and_organ**: Search processes by Procedural Class and Court Organ
 
 
 ## 💬 Prompt Examples
