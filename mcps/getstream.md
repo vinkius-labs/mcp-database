@@ -34,31 +34,31 @@ Connect **GetStream** to your AI agent to orchestrate complex social architectur
 
 
 ## Available Tools (23)
-- **add_activity_to_feed**: Add an activity to a feed
-- **add_to_collection**: Add objects to a collection
 - **batch_delete_collections**: Batch delete collections
-- **batch_follow**: Batch follow multiple feeds
 - **batch_get_collections**: Batch retrieve collections
 - **batch_post_collections**: Batch create/update collections
 - **delete_collection_object**: Delete an individual collection object
 - **delete_file**: Delete a file by URL
-- **follow_feed**: Follow a target feed
 - **get_activities**: Retrieve specific activities by ID or foreign ID
-- **get_collection_object**: Retrieve an individual collection object
-- **get_open_graph**: Scrape Open Graph data from a URL
-- **list_feed_followers**: List feeds following this feed
-- **list_feed_follows**: List feeds this feed follows
 - **partial_update_activity**: Partially update activity data
 - **process_image**: Process or resize an image
-- **remove_activity_from_feed**: Remove an activity from a feed
 - **unfollow_feed**: Unfollow a target feed
-- **update_activities**: Update activity metadata
 - **update_collection_object**: Update an individual collection object
 - **upload_file**: Upload a file
 - **upload_image**: Upload an image
+- **add_activity_to_feed**: Add an activity to a feed
+- **add_to_collection**: Add objects to a collection
+- **batch_follow**: Batch follow multiple feeds
+- **follow_feed**: Follow a target feed
+- **get_collection_object**: Retrieve an individual collection object
 - **get_feed**: Supports pagination.
 
 Retrieve activities in a feed
+- **get_open_graph**: Scrape Open Graph data from a URL
+- **list_feed_followers**: List feeds following this feed
+- **list_feed_follows**: List feeds this feed follows
+- **remove_activity_from_feed**: Remove an activity from a feed
+- **update_activities**: Update activity metadata
 
 
 ## 💬 Prompt Examples

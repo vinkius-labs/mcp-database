@@ -14,18 +14,18 @@ The Transloadit MCP server allows your AI agent to orchestrate complex file proc
 
 
 ## Available Tools (12)
-- **create_assembly**: Start a new file processing assembly
-- **list_templates**: List all reusable processing templates
-- **create_template**: Create a new processing template
 - **get_bill**: Retrieve billing information for a specific month
-- **get_me**: Check API connectivity and get account context
 - **get_template**: Retrieve details for a specific template
+- **get_me**: Check API connectivity and get account context
 - **list_assemblies**: List all file processing assemblies
-- **update_template**: Update an existing template
 - **cancel_assembly**: Stop a currently running assembly
 - **delete_template**: Permanently remove a template
 - **get_assembly**: Retrieve status and results for a specific assembly
+- **create_assembly**: Start a new file processing assembly
+- **create_template**: Create a new processing template
+- **list_templates**: List all reusable processing templates
 - **replay_assembly**: Re-run a completed assembly
+- **update_template**: Update an existing template
 
 
 ## 💬 Prompt Examples

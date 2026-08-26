@@ -42,18 +42,9 @@ Find the journal-published version of a preprint
 - **search_epidemiology**: Covers disease surveillance, outbreak analysis, population health, health policy, and clinical epidemiology. Critical for public health monitoring.
 
 Browse epidemiology and public health preprints
-- **search_by_category**: bioRxiv categories include: neuroscience, genomics, bioinformatics, cell_biology, cancer_biology, immunology, microbiology, molecular_biology, biochemistry, genetics, developmental_biology, evolutionary_biology, ecology, plant_biology, physiology, pharmacology, systems_biology, biophysics, synthetic_biology. medRxiv categories: epidemiology, infectious_diseases, public_and_global_health, health_systems, cardiovascular_medicine, oncology, psychiatry, neurology.
-
-Filter preprints by subject category
-- **get_preprint**: Searches both bioRxiv and medRxiv. Returns title, authors, corresponding author and institution, date, version, category, abstract, and license. DOI format: "10.1101/2024.01.15.575123".
-
-Get preprint details by DOI
 - **get_preprint_versions**: Preprints on bioRxiv/medRxiv can be updated multiple times. This lets you see the full revision history and understand how a manuscript has evolved.
 
 Get all versions of a preprint to track revisions
-- **get_published_tracking**: Shows the preprint DOI, published DOI, journal name, and publication date. Essential for understanding the preprint-to-publication pipeline.
-
-Track which preprints have been published in journals
 - **get_recent_biorxiv**: Default is 7 days. Essential for staying at the cutting edge of biological research — preprints appear here 6-12 months before peer-reviewed publication.
 
 Get the latest bioRxiv preprints
@@ -72,6 +63,18 @@ Browse cancer biology preprints
 - **search_cell_biology**: Covers cell signaling, organelle biology, cytoskeleton, cell division, stem cells, and cellular mechanisms of disease.
 
 Browse cell biology preprints
+- **search_neuroscience**: Neuroscience is one of the largest and most active categories, covering brain research, neural circuits, cognitive science, and neurological disorders.
+
+Browse neuroscience preprints
+- **get_preprint**: Searches both bioRxiv and medRxiv. Returns title, authors, corresponding author and institution, date, version, category, abstract, and license. DOI format: "10.1101/2024.01.15.575123".
+
+Get preprint details by DOI
+- **get_published_tracking**: Shows the preprint DOI, published DOI, journal name, and publication date. Essential for understanding the preprint-to-publication pipeline.
+
+Track which preprints have been published in journals
+- **search_by_category**: bioRxiv categories include: neuroscience, genomics, bioinformatics, cell_biology, cancer_biology, immunology, microbiology, molecular_biology, biochemistry, genetics, developmental_biology, evolutionary_biology, ecology, plant_biology, physiology, pharmacology, systems_biology, biophysics, synthetic_biology. medRxiv categories: epidemiology, infectious_diseases, public_and_global_health, health_systems, cardiovascular_medicine, oncology, psychiatry, neurology.
+
+Filter preprints by subject category
 - **search_genomics**: Covers genome sequencing, gene regulation, epigenomics, metagenomics, and computational genomics — core disciplines in modern biology.
 
 Browse genomics and bioinformatics preprints
@@ -81,9 +84,6 @@ Browse immunology and microbiology preprints
 - **search_medrxiv**: medRxiv covers clinical research, epidemiology, public health, and health policy. Use interval "YYYY-MM-DD/YYYY-MM-DD" format. Results paginated in batches of 100.
 
 Browse medRxiv preprints by date range
-- **search_neuroscience**: Neuroscience is one of the largest and most active categories, covering brain research, neural circuits, cognitive science, and neurological disorders.
-
-Browse neuroscience preprints
 
 
 ## 💬 Prompt Examples

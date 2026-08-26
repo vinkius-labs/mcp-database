@@ -38,10 +38,6 @@ No more manual data entry into complex accounting dashboards. Your AI agent beco
 
 
 ## Available Tools (10)
-- **approve_draft_invoice**: Finalizes a draft invoice, moving it to an unpaid/saved status
-- **create_accounting_customer**: Provide name and email.
-
-Creates a new customer record in Wave
 - **create_draft_invoice**: Provide a customer ID and a JSON array of items.
 
 Creates a new draft invoice in Wave
@@ -51,7 +47,6 @@ Permanently deletes a customer record
 - **delete_draft_invoice**: Saved or paid invoices cannot be deleted via this endpoint.
 
 Permanently deletes an unfinalized draft invoice
-- **get_customer_details**: Retrieves details for a specific customer in Wave
 - **get_invoice_details**: Retrieves full details for a specific Wave invoice
 - **list_accounting_customers**: Lists customers registered in the Wave Accounting business
 - **list_accounting_invoices**: ).
@@ -60,6 +55,11 @@ Lists invoices issued by the Wave business
 - **update_customer_profile**: Provide the unique customer ID.
 
 Updates the profile of an existing customer
+- **approve_draft_invoice**: Finalizes a draft invoice, moving it to an unpaid/saved status
+- **create_accounting_customer**: Provide name and email.
+
+Creates a new customer record in Wave
+- **get_customer_details**: Retrieves details for a specific customer in Wave
 
 
 ## 💬 Prompt Examples

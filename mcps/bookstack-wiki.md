@@ -35,14 +35,7 @@ Connect your **BookStack** instance to any AI agent and turn your documentation 
 
 
 ## Available Tools (32)
-- **create_page**: Requires either book_id or chapter_id, name, and html or markdown.
-
-Create a new page in BookStack
-- **create_shelf**: Create a new shelf
-- **delete_book**: Delete a book
-- **delete_chapter**: Delete a chapter
 - **delete_shelf**: Delete a shelf
-- **export_book**: Export book content
 - **export_chapter**: Export chapter content
 - **export_page**: Export page content
 - **get_chapter**: Get details for a specific chapter
@@ -52,25 +45,32 @@ Create a new page in BookStack
 - **list_attachments**: List all attachments in BookStack
 - **list_audit_log**: View system activity audit log
 - **list_books**: List all books in BookStack
+- **search**: Search across all content in BookStack
+- **update_attachment**: Update an existing attachment
+- **update_chapter**: Update an existing chapter
+- **update_page**: Update an existing page
+- **get_book**: Get details for a specific book
+- **create_attachment**: Create a new attachment link
+- **create_book**: Create a new book
+- **create_chapter**: Create a new chapter
+- **create_page**: Requires either book_id or chapter_id, name, and html or markdown.
+
+Create a new page in BookStack
+- **create_shelf**: Create a new shelf
+- **delete_attachment**: Delete an attachment
+- **delete_book**: Delete a book
+- **delete_chapter**: Delete a chapter
+- **delete_page**: Delete a page (moves to recycle bin)
+- **export_book**: Export book content
+- **get_attachment**: Get details for a specific attachment
 - **list_chapters**: List all chapters in BookStack
 - **list_pages**: Supports pagination, sorting, and filtering.
 
 List all pages in BookStack
 - **list_recycle_bin**: List deleted items in the recycle bin
 - **list_shelves**: List all shelves in BookStack
-- **search**: Search across all content in BookStack
-- **update_attachment**: Update an existing attachment
 - **update_book**: Update an existing book
-- **update_chapter**: Update an existing chapter
-- **update_page**: Update an existing page
 - **update_shelf**: Update an existing shelf
-- **delete_attachment**: Delete an attachment
-- **delete_page**: Delete a page (moves to recycle bin)
-- **get_attachment**: Get details for a specific attachment
-- **get_book**: Get details for a specific book
-- **create_attachment**: Create a new attachment link
-- **create_book**: Create a new book
-- **create_chapter**: Create a new chapter
 
 
 ## 💬 Prompt Examples

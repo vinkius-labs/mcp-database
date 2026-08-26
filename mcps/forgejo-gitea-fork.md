@@ -36,9 +36,9 @@ Connect your **Forgejo** or **Gitea** instance to any AI agent to streamline you
 - **create_token**: Generates a new personal access token.
 
 Generate a new API token for a user
+- **dispatch_workflow**: Trigger a manual workflow dispatch in Forgejo Actions
 - **get_forgejo_version**: Get detailed Forgejo version information
 - **get_gitea_version**: Get the Gitea-compatible version of the Forgejo instance
-- **dispatch_workflow**: Trigger a manual workflow dispatch in Forgejo Actions
 
 
 ## 💬 Prompt Examples

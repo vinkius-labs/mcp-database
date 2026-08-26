@@ -34,14 +34,20 @@ Connect your **GetBlock** account to any AI agent and interact with dozens of bl
 
 
 ## Available Tools (26)
+- **btc_analyzepsbt**: Analyze and provide information about a PSBT
+- **btc_getblockchaininfo**: Get an object containing various state info regarding blockchain processing
+- **btc_getblockcount**: Get the number of blocks in the longest blockchain
+- **debug_trace_transaction**: Get all traces of a given transaction
+- **eth_get_balance**: Get the balance of an Ethereum account
+- **eth_get_block_by_hash**: Get information about a block by hash
+- **eth_get_transaction_receipt**: Get the receipt of a transaction by hash
+- **sol_get_token_account_balance**: Get the token balance of an SPL Token account
+- **sol_get_transaction**: Get transaction details for a confirmed transaction signature
 - **btc_createpsbt**: Create a transaction in the Partially Signed Bitcoin Transaction format
 - **btc_getbestblockhash**: Get the hash of the best (tip) block
-- **btc_getblockcount**: Get the number of blocks in the longest blockchain
-- **btc_getblockchaininfo**: Get an object containing various state info regarding blockchain processing
 - **btc_sendrawtransaction**: Submit raw transaction (serialized, hex-encoded) to local node and network
 - **debug_trace_block_by_number**: Get traces for all transactions in a block
 - **debug_trace_call**: Run an eth_call within the context of the given block execution
-- **debug_trace_transaction**: Get all traces of a given transaction
 - **eth_accounts**: Get a list of addresses owned by client
 - **eth_block_number**: Get the number of the most recent block
 - **eth_call**: Execute a new message call immediately without creating a transaction
@@ -49,17 +55,11 @@ Connect your **GetBlock** account to any AI agent and interact with dozens of bl
 - **eth_get_block_by_number**: Get information about a block by block number
 - **eth_get_code**: Get code at a given address
 - **eth_get_transaction_by_hash**: Get information about a transaction by hash
-- **eth_get_transaction_receipt**: Get the receipt of a transaction by hash
 - **rpc_call**: Execute any generic JSON-RPC method via GetBlock
 - **sol_get_account_info**: Get all information associated with the account of provided Pubkey
 - **sol_get_balance**: Get the balance of the provided Pubkey
 - **sol_get_latest_blockhash**: Get the latest blockhash from the ledger
-- **sol_get_token_account_balance**: Get the token balance of an SPL Token account
-- **sol_get_transaction**: Get transaction details for a confirmed transaction signature
 - **sol_send_transaction**: Submit a signed transaction to the cluster for processing
-- **btc_analyzepsbt**: Analyze and provide information about a PSBT
-- **eth_get_balance**: Get the balance of an Ethereum account
-- **eth_get_block_by_hash**: Get information about a block by hash
 
 
 ## 💬 Prompt Examples

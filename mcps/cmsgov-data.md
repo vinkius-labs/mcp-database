@@ -42,24 +42,24 @@ Search for doctors and clinicians enrolled in Medicare
 - **search_hospitals**: Accepts hospital names, cities, or states. Returns provider IDs, hospital names, types (Acute Care, Critical Access, etc.), overall quality ratings (1-5 stars), locations, and emergency services availability.
 
 Search for hospitals by name or location
-- **get_hospital_ratings**: Filter by US state code (e.g. "CA", "NY", "TX") to see hospitals in that state. Returns overall ratings (1-5 stars), hospital type, and emergency services. Without a state filter, returns top-rated hospitals nationwide.
-
-Get hospital quality ratings, optionally by state
 - **list_datasets**: gov. Returns dataset identifiers, titles, descriptions, publication dates, and last-modified timestamps. The CMS data catalog includes datasets on Medicare utilization, hospital quality measures, provider enrollment, prescription drugs, and more.
 
 List available CMS open data datasets
 - **search_providers_by_specialty**: Examples: "Cardiology", "Internal Medicine", "Orthopedic Surgery", "Family Practice", "Dermatology", "Psychiatry". Returns matching providers with their NPI, name, practice location, and enrollment details.
 
 Search for healthcare providers by medical specialty
-- **get_dataset_metadata**: Returns the dataset title, full description, publication date, last modification date, and publisher information. Use the dataset ID obtained from list_datasets.
-
-Get detailed metadata for a specific CMS dataset
 - **get_doctor_by_npi**: Returns the provider's full name, primary and secondary specialties, practice address, city, state, ZIP code, and Medicare enrollment status. NPI is a unique 10-digit number (e.g. "1234567890").
 
 Get detailed provider information by NPI number
 - **search_nursing_homes**: Returns facility names, provider IDs, locations, and overall quality ratings. Useful for finding elder care facilities in a specific area.
 
 Search nursing homes and long-term care facilities
+- **get_dataset_metadata**: Returns the dataset title, full description, publication date, last modification date, and publisher information. Use the dataset ID obtained from list_datasets.
+
+Get detailed metadata for a specific CMS dataset
+- **get_hospital_ratings**: Filter by US state code (e.g. "CA", "NY", "TX") to see hospitals in that state. Returns overall ratings (1-5 stars), hospital type, and emergency services. Without a state filter, returns top-rated hospitals nationwide.
+
+Get hospital quality ratings, optionally by state
 
 
 ## 💬 Prompt Examples

@@ -34,7 +34,6 @@ Connect your AI agent exclusively to your **Trimble PC*MILER** logistics infrast
 
 
 ## Available Tools (10)
-- **route_avoiding_roads**: Calculates a route that explicitly avoids certain roads or expressways
 - **calculate_driving_isochrone**: Provide center coordinates and time in minutes.
 
 Calculates the reachable area within a specific time limit from a center point
@@ -45,17 +44,18 @@ Calculates distances and travel times between multiple origins and destinations
 - **calculate_trip_tolls**: Returns cash and electronic toll fees in USD.
 
 Estimates the total toll costs for a specific truck route
+- **reverse_geocode**: Converts geographic coordinates into the nearest commercial address
+- **route_avoiding_roads**: Calculates a route that explicitly avoids certain roads or expressways
+- **route_by_vehicle_size**: Provide vehicle height in inches and weight in lbs.
+
+Calculates a truck route using specific vehicle dimensions
 - **calculate_truck_route**: Returns distance, time, and routing polyline.
 
 Calculates a truck-compliant route between multiple stops using Trimble PC*MILER
 - **get_truck_directions**: Considers bridge heights, HazMat restrictions, and weight limits.
 
 Retrieves turn-by-turn driving directions for a truck route
-- **route_by_vehicle_size**: Provide vehicle height in inches and weight in lbs.
-
-Calculates a truck route using specific vehicle dimensions
 - **search_trimble_address**: Searches for locations and commercial addresses in the Trimble database
-- **reverse_geocode**: Converts geographic coordinates into the nearest commercial address
 
 
 ## 💬 Prompt Examples

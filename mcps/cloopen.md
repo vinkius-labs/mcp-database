@@ -35,16 +35,16 @@ Empower your AI agent to orchestrate your cloud communication with **Cloopen** (
 
 
 ## Available Tools (10)
-- **get_account_info**: Get account information
-- **list_apps**: List applications
 - **get_app**: Get application details
 - **get_ivr**: Get IVR configuration
-- **list_callback**: Initiate double-call callback
+- **list_apps**: List applications
 - **list_landing_calls**: Initiate landing call
-- **list_templates**: List SMS templates
-- **list_voice_codes**: Send voice verification code
 - **query_sms**: Query SMS status
 - **send_sms**: Send template SMS
+- **get_account_info**: Get account information
+- **list_callback**: Initiate double-call callback
+- **list_templates**: List SMS templates
+- **list_voice_codes**: Send voice verification code
 
 
 ## 💬 Prompt Examples

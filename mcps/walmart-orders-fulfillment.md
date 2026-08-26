@@ -30,14 +30,14 @@ Specifically built for **Logistics Operators**, **Fulfillment Centers**, and **E
 
 
 ## Available Tools (8)
+- **wm_get_return_requests**: Fetch bounds explicitly parsing returning logistic limits natively isolating arrays correctly
+- **wm_get_unshipped_orders**: Extract actively explicitly created bounds awaiting fulfillment isolating cleanly Walmart hosted arrays
+- **wm_cancel_order**: Cleanly correctly restrict bounds cancelling explicit PO variables securely safely isolating native arrays
+- **wm_download_shipping_labels**: Poll safely logical label arrays generating WFS structural explicit bounds securely
 - **wm_issue_refund**: Route financial limit safely mapping exactly standard logic securely executing safely
 - **wm_ship_order_lines**: Execute tracking updates bounding securely shipping matrices dynamically capturing physically explicit logistics
 - **wm_track_shipment**: Simulate shipping detail mapping actively capturing explicit physical routes perfectly
 - **wm_acknowledge_order**: Update explicit bounds acknowledging the purchase physically moving explicitly to the processing limit natively
-- **wm_cancel_order**: Cleanly correctly restrict bounds cancelling explicit PO variables securely safely isolating native arrays
-- **wm_download_shipping_labels**: Poll safely logical label arrays generating WFS structural explicit bounds securely
-- **wm_get_return_requests**: Fetch bounds explicitly parsing returning logistic limits natively isolating arrays correctly
-- **wm_get_unshipped_orders**: Extract actively explicitly created bounds awaiting fulfillment isolating cleanly Walmart hosted arrays
 
 
 ## 💬 Prompt Examples

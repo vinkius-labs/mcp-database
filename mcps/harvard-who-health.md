@@ -34,27 +34,12 @@ Connect to the **WHO Global Health Observatory (GHO) API** — the world's most 
 
 
 ## Available Tools (16)
-- **get_countries**: Returns ISO codes and country names for use with other indicator queries.
-
-Get list of WHO member countries
-- **get_hiv_aids**: Tracks the percentage of the population living with HIV, a critical indicator for public health programs and resource allocation.
-
-Get HIV/AIDS prevalence data
-- **get_dimensions**: Useful for understanding how to filter and disaggregate health data.
-
-Get WHO data dimensions metadata
-- **get_health_expenditure**: This indicator measures how much each country spends on healthcare, adjusted for purchasing power.
-
-Get health expenditure data
 - **get_health_workforce**: Supported types: "physicians", "nurses", "dentists", "pharmacists".
 
 Get health workforce density data
 - **get_immunization**: Supported shortcuts: "dtp3" (diphtheria-tetanus-pertussis), "measles", "polio", "bcg", "hepb3". Or use a WHO indicator code directly.
 
 Get immunization coverage data
-- **get_indicator_data**: g. "USA", "BRA", "GBR", "CHN", "IND"). Returns country, year, value, confidence intervals, and sex disaggregation.
-
-Get time-series data for a WHO indicator
 - **get_life_expectancy**: This is one of the most fundamental indicators of population health.
 
 Get life expectancy data
@@ -64,24 +49,39 @@ Get malaria case estimates
 - **get_maternal_health**: This measures the number of maternal deaths per 100,000 live births, a critical indicator of reproductive health and healthcare quality.
 
 Get maternal mortality data
-- **get_mortality**: Common indicator codes: "NCDMORT3070" (NCD mortality), "CHILDMORTALITY" (under-5), "MATERNALMORTALITY". Use search_indicators to find specific codes.
-
-Get mortality data by cause
-- **get_ncd**: Supported shortcuts: "diabetes" (prevalence), "obesity" (BMI ≥30), "blood_pressure" (hypertension), "tobacco" (smoking), "alcohol" (consumption). Or use a WHO code.
-
-Get non-communicable disease data
-- **get_water_sanitation**: Supported types: "water" (safely managed drinking water), "sanitation" (safely managed sanitation), "hygiene" (basic hygiene facilities).
-
-Get water and sanitation data
 - **search_indicators**: Returns indicator codes and names. Use the indicator code with get_indicator_data to retrieve time-series data.
 
 Search 1000+ WHO health indicators
 - **compare_countries**: Provide a comma-separated list of ISO 3-letter country codes. Returns the most recent 10 years of data for each country.
 
 Compare a health indicator across countries
+- **get_countries**: Returns ISO codes and country names for use with other indicator queries.
+
+Get list of WHO member countries
+- **get_dimensions**: Useful for understanding how to filter and disaggregate health data.
+
+Get WHO data dimensions metadata
+- **get_health_expenditure**: This indicator measures how much each country spends on healthcare, adjusted for purchasing power.
+
+Get health expenditure data
+- **get_hiv_aids**: Tracks the percentage of the population living with HIV, a critical indicator for public health programs and resource allocation.
+
+Get HIV/AIDS prevalence data
+- **get_indicator_data**: g. "USA", "BRA", "GBR", "CHN", "IND"). Returns country, year, value, confidence intervals, and sex disaggregation.
+
+Get time-series data for a WHO indicator
+- **get_mortality**: Common indicator codes: "NCDMORT3070" (NCD mortality), "CHILDMORTALITY" (under-5), "MATERNALMORTALITY". Use search_indicators to find specific codes.
+
+Get mortality data by cause
+- **get_ncd**: Supported shortcuts: "diabetes" (prevalence), "obesity" (BMI ≥30), "blood_pressure" (hypertension), "tobacco" (smoking), "alcohol" (consumption). Or use a WHO code.
+
+Get non-communicable disease data
 - **get_tuberculosis**: TB remains one of the top infectious disease killers worldwide, and this data tracks progress toward elimination.
 
 Get tuberculosis incidence data
+- **get_water_sanitation**: Supported types: "water" (safely managed drinking water), "sanitation" (safely managed sanitation), "hygiene" (basic hygiene facilities).
+
+Get water and sanitation data
 
 
 ## 💬 Prompt Examples

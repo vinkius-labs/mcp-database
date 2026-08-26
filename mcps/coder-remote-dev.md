@@ -35,51 +35,30 @@ Connect your **Coder** deployment to any AI agent to orchestrate remote developm
 
 ## Available Tools (84)
 - **get_agent_debug_magicsock**: Get Tailscale magicsock debug info (local agent API)
-- **get_app_auth_redirect**: Redirect to a URI with an encrypted API key
-- **list_ai_clients**: List connected AI Bridge clients
 - **list_ai_models**: List available AI models
 - **list_chats**: List user chat sessions
-- **list_groups**: List groups
-- **list_licenses**: List enterprise licenses
-- **list_org_provisioner_daemons**: List active provisioner daemons
-- **list_org_roles**: List assignable roles in an organization
 - **list_user_secrets**: List user secrets
 - **list_users**: List users
-- **check_auth**: Check if user has permission to perform actions
 - **list_workspaces**: g., owner:me).
 
 List workspaces
-- **create_chat_message**: Send a message to a chat session
-- **create_chat**: Start a new AI chat session
-- **create_group**: Create a group in an organization
-- **create_organization**: Create an organization
-- **create_user_secret**: Create a user secret
-- **create_user_task**: Create a long-running AI task for a user
 - **create_user_token**: Create a user token
-- **create_user**: Create a user
-- **create_workspace_port_share**: Create a port share for a workspace
 - **create_workspace**: Create a workspace
 - **delete_license**: Delete an enterprise license
 - **delete_user**: Delete a user
 - **download_file**: Download a file by ID
-- **get_agent_connection**: Get DERP and connection details for an agent
 - **get_agent_containers**: List running containers and devcontainers
 - **get_agent_debug_logs**: Get the last 10MiB of agent logs (local agent API)
 - **get_agent_debug_manifest**: Get the startup manifest from the server (local agent API)
-- **get_agent_external_auth**: Get external authentication tokens for the agent
 - **get_agent_logs**: Stream logs from a specific agent
 - **get_ai_session_threads**: Get threads for an AI session
 - **get_api_root**: Get basic API information
-- **get_app_host**: Get the base host for applications
 - **get_appearance**: Get dashboard branding and banners
 - **get_audit_logs**: Get a paginated list of audit logs
 - **get_build_info**: Get Coder build info
 - **get_chat_messages**: Get messages for a chat session
-- **get_deployment_config**: Get deployment configuration
 - **get_deployment_stats**: Get deployment statistics
-- **get_external_auth_device**: Initiate device-based OAuth
 - **get_insights_daus**: Get Daily Active User stats
-- **get_insights_templates**: Get usage data for templates
 - **get_insights_user_activity**: Get activity duration per user
 - **get_notifications_inbox**: List user notifications
 - **get_notifications_settings**: Get globalThis notification settings
@@ -89,36 +68,57 @@ List workspaces
 - **get_update_check**: Check for Coder updates
 - **get_user_profile**: Get user profile
 - **get_workspace_acl**: Get workspace ACLs
-- **get_workspace_build_logs**: Get logs for a specific build
 - **get_workspace_build_params**: List parameters used for the build
-- **get_workspace_build**: Get details of a specific build
 - **get_workspace**: Get workspace metadata
-- **list_ai_interceptions**: List AI interceptions
 - **list_ai_sessions**: List active AI Bridge sessions
 - **list_external_auth**: List linked external accounts (e.g., GitHub)
-- **list_org_members**: List members of an organization
 - **list_org_provisioner_jobs**: List jobs for the organization provisioners
-- **list_organizations**: List organizations
-- **list_tasks**: Manage long-running AI tasks
 - **list_template_examples**: List starter template examples
 - **list_template_versions**: List versions for a template
-- **list_templates**: List all templates
 - **list_user_tokens**: List user tokens
-- **list_workspace_port_shares**: List port shares for a workspace
 - **login_user**: Authenticate a user with email and password
-- **register_agent_log_source**: Register a new log source
 - **send_agent_logs**: Send logs to the server
+- **update_prebuild_settings**: Update prebuild settings
+- **update_workspace_acl**: Update workspace ACLs
+- **add_license**: Add an enterprise license
+- **auth_workspace_agent**: Authenticate agent using cloud provider identity
+- **check_auth**: Check if user has permission to perform actions
+- **create_chat**: Start a new AI chat session
+- **create_chat_message**: Send a message to a chat session
+- **create_group**: Create a group in an organization
+- **create_organization**: Create an organization
+- **create_user**: Create a user
+- **create_user_secret**: Create a user secret
+- **create_user_task**: Create a long-running AI task for a user
+- **create_workspace_port_share**: Create a port share for a workspace
+- **get_agent_connection**: Get DERP and connection details for an agent
+- **get_agent_external_auth**: Get external authentication tokens for the agent
+- **get_app_auth_redirect**: Redirect to a URI with an encrypted API key
+- **get_app_host**: Get the base host for applications
+- **get_deployment_config**: Get deployment configuration
+- **get_external_auth_device**: Initiate device-based OAuth
+- **get_insights_templates**: Get usage data for templates
+- **get_workspace_build**: Get details of a specific build
+- **get_workspace_build_logs**: Get logs for a specific build
+- **list_ai_clients**: List connected AI Bridge clients
+- **list_ai_interceptions**: List AI interceptions
+- **list_groups**: List groups
+- **list_licenses**: List enterprise licenses
+- **list_organizations**: List organizations
+- **list_org_members**: List members of an organization
+- **list_org_provisioner_daemons**: List active provisioner daemons
+- **list_org_roles**: List assignable roles in an organization
+- **list_tasks**: Manage long-running AI tasks
+- **list_templates**: List all templates
+- **list_workspace_port_shares**: List port shares for a workspace
+- **register_agent_log_source**: Register a new log source
 - **update_agent_app_status**: Update status of an application running on the agent
 - **update_appearance**: Update dashboard branding and banners
 - **update_organization**: Update an organization
-- **update_prebuild_settings**: Update prebuild settings
 - **update_user_profile**: Update user profile
-- **update_workspace_acl**: Update workspace ACLs
 - **update_workspace_autostart**: Update workspace autostart schedule
 - **update_workspace_autoupdates**: Update workspace autoupdates schedule
 - **upload_file**: Upload a file (tar or zip)
-- **add_license**: Add an enterprise license
-- **auth_workspace_agent**: Authenticate agent using cloud provider identity
 - **cancel_workspace_build**: Cancel a pending or running build
 
 

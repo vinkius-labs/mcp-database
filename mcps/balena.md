@@ -34,16 +34,7 @@ Connect your **BalenaCloud** account to any AI agent to orchestrate your IoT inf
 
 
 ## Available Tools (10)
-- **list_devices**: Use OData $filter, $select, and $expand for advanced querying (e.g., $filter=uuid eq '<UUID>').
-
-List devices in Balena fleets
-- **list_fleets**: Use OData $filter, $select, and $expand for advanced querying (e.g., $filter=slug eq '<SLUG>').
-
-List Balena fleets (applications)
 - **get_os_download_url**: Get the download URL for a balenaOS image
-- **list_os_versions**: g., raspberrypi3).
-
-List available balenaOS versions for a device type
 - **list_organizations**: List Balena organizations
 - **list_releases**: Use OData $filter to filter by fleet (e.g., $filter=belongs_to__application eq <FLEET_ID>).
 
@@ -52,6 +43,15 @@ List Balena releases
 - **list_api_keys**: List Balena API keys
 - **create_device_env_var**: Create a device environment variable
 - **create_device_tag**: Create a device tag
+- **list_devices**: Use OData $filter, $select, and $expand for advanced querying (e.g., $filter=uuid eq '<UUID>').
+
+List devices in Balena fleets
+- **list_fleets**: Use OData $filter, $select, and $expand for advanced querying (e.g., $filter=slug eq '<SLUG>').
+
+List Balena fleets (applications)
+- **list_os_versions**: g., raspberrypi3).
+
+List available balenaOS versions for a device type
 
 
 ## 💬 Prompt Examples

@@ -39,23 +39,23 @@ Connect your **AdGuard Home** instance to any AI agent and take full control of 
 - **get_dns_info**: Get DNS configuration info
 - **get_filtering_status**: Get filtering status and lists
 - **get_query_log_config**: Get query log configuration
-- **get_query_log**: Get DNS query log
 - **get_stats**: Get DNS query statistics
 - **get_status**: Get AdGuard Home server status
+- **configure_tls**: Configure TLS settings
+- **get_query_log**: Get DNS query log
+- **list_clients**: List all clients
 - **search_clients**: Search for clients
+- **set_dns_config**: Update DNS settings
 - **add_rewrite**: Add a DNS rewrite
 - **add_static_lease**: Add a DHCP static lease
 - **check_host**: Check if a host is filtered
 - **get_tls_status**: Get TLS configuration status
 - **list_blocked_services**: List all available blocked services
-- **list_clients**: List all clients
 - **list_rewrites**: List DNS rewrites
 - **update_blocked_services**: Update blocked services schedule
 - **update_query_log_config**: Update query log configuration
 - **add_client**: Add a new client
 - **add_filter_url**: Add a new filter URL
-- **configure_tls**: Configure TLS settings
-- **set_dns_config**: Update DNS settings
 - **set_protection**: globally.
 
 Enable or disable protection globally
