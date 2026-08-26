@@ -69,6 +69,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Advance/Decline Percentage Calculator](../mcps/advancedecline-percentage-calculator.md) | Calculate market breadth, sentiment classification, and trend divergence. |
 | [ADX-Calculator](../mcps/adx-calculator.md) | Deterministic Average Directional Index (ADX) calculator using Wilder's smoothing. |
 | [Agent Cost Allocation Engine](../mcps/agent-cost-allocation-engine.md) | Deterministic cost allocation and chargeback calculator for multi-agent systems. |
+| [Agritourism Revenue Predictor](../mcps/agritourism-revenue-predictor.md) | Forecast revenue, visitor demand, and break-even points for agritourism enterprises. |
 | [Airdrop Farming Strategy](../mcps/airdrop-farming-strategy.md) | A deterministic engine to identify high-ROI crypto airdrop opportunities. |
 | [Alcohol Cost-per-Buzz Calculator](../mcps/alcohol-cost-per-buzz-calculator.md) | Calculate the economic efficiency of alcohol consumption in Singapore. |
 | [Appliance Energy Calculator](../mcps/appliance-energy-calculator.md) | Calculate electricity consumption in kWh and monthly costs for appliances. |
@@ -95,6 +96,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Bond Yield Calculator](../mcps/bond-yield-calculator.md) | Calculate YTM, Current Yield, and interest rate sensitivity for fixed-income bonds. |
 | [Brazil CLT Payroll Calculator](../mcps/brazil-clt-payroll-calculator.md) | Calculate Brazil's CLT payroll components including INSS, IRRF, net pay, and employer costs. |
 | [Brazilian Income Tax & Social Security Calculator](../mcps/brazilian-income-tax-social-security-calculator.md) | Calculate Brazilian IRPF and INSS deductions for 2024/2025. |
+| [Break-even Analysis Tool](../mcps/break-even-analysis-tool.md) | Calculate break-even points, contribution margins, and sensitivity scenarios for agricultural enterprises. |
 | [Break-Even Calculator](../mcps/break-even-calculator.md) | Calculate accounting, economic, and financial break-even points with margin of safety analysis. |
 | [Breakout Strategy](../mcps/breakout-strategy.md) | A deterministic Donchian Channel breakout strategy based on Turtle Trader principles. |
 | [Brunch Cost & Instagram ROI Calculator](../mcps/brunch-cost-instagram-roi-calculator.md) | Calculate the economic efficiency and social ROI of your café visits. |
@@ -113,6 +115,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Carbon Offset Comparator](../mcps/carbon-offset-comparator.md) | Compare the financial efficiency of different carbon offset strategies. |
 | [Carry Trade Strategy](../mcps/carry-trade-strategy.md) | Deterministic forex carry trade strategy using interest rate differentials and volatility filters. |
 | [Cash Flow Projector](../mcps/cash-flow-projector.md) | Project monthly cash flow, identify liquidity gaps, and calculate working capital requirements. |
+| [Cash vs Accrual Converter](../mcps/cash-vs-accrual-converter.md) | Converts farm financial statements from cash basis to accrual basis. |
 | [Cash-and-Carry Arbitrage Strategy](../mcps/cash-and-carry-arbitrage-strategy.md) | Identify and track deterministic futures arbitrage opportunities by exploiting contango. |
 | [Cash-to-Cash Cycle Calculator](../mcps/cash-to-cash-cycle-calculator.md) | Calculate and optimize your Cash Conversion Cycle (C2C) to improve liquidity. |
 | [CCI Calculator](../mcps/cci-calculator.md) | Deterministic Commodity Channel Index (CCI) indicator for technical analysis. |
@@ -133,6 +136,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Compound Interest Optimizer](../mcps/compound-interest-optimizer.md) | Detailed investment growth projections accounting for inflation, taxes, and penalties. |
 | [Conditional Market Arbitrage Engine](../mcps/conditional-market-arbitrage-engine.md) | Identify risk-free arbitrage in conditional prediction markets using Bayesian probability. |
 | [Connors RSI Calculator](../mcps/connors-rsi-calculator.md) | Calculate Connors RSI and identify mean-reversion trading signals. |
+| [Conservation Program Payment Calculator](../mcps/conservation-program-payment-calculator.md) | Financial modeling for USDA conservation programs (CRP, EQIP, CSP) and crop economics. |
 | [Contingency Budget Calculator](../mcps/contingency-budget-calculator.md) | Calculate essential contingency reserves for architectural and construction projects based on development phases. |
 | [Contractor vs Employee Cost Calculator](../mcps/contractor-vs-employee-cost-calculator.md) | Compare total employment costs for W-2/1099 (USA) and PAYE/Ltd Company (UK) structures. |
 | [Contribution Margin Calculator](../mcps/contribution-margin-calculator.md) | Calculate unit profitability, margin indices, and weighted product mix margins. |
@@ -170,6 +174,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Diamond 4Cs Estimator](../mcps/diamond-4cs-estimator.md) | A deterministic valuation engine for estimating diamond market value using the 4Cs. |
 | [Diaper Consumption Forecaster](../mcps/diaper-consumption-forecaster.md) | Estimate monthly diaper needs and costs based on baby age and product pricing. |
 | [Dilution Calculator](../mcps/dilution-calculator.md) | Simulate equity dilution, cap table evolution, and anti-dilution adjustments during investment rounds. |
+| [Disaster Payment Eligibility](../mcps/disaster-payment-eligibility.md) | Calculate USDA disaster program eligibility and estimated payments for ARC, PLC, ELAP, and LFP. |
 | [Discount Stack Calculator](../mcps/discount-stack-calculator.md) | Calculate final transaction totals by compounding multiple discount types and applying regional tax logic. |
 | [Dividend Capture Strategy Engine](../mcps/dividend-capture-strategy-engine.md) | Identify and validate profitable dividend capture opportunities with deterministic modeling. |
 | [Dividend Discount Model](../mcps/dividend-discount-model.md) | Calculate intrinsic equity value using Gordon Growth and Two-Stage DDM models. |
@@ -195,6 +200,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Employee Salary Benchmark](../mcps/employee-salary-benchmark.md) | Retrieve market salary ranges in USD and BRL for various roles, seniority levels, and startup stages. |
 | [Employer Cost Calculator](../mcps/employer-cost-calculator.md) | Calculate the true total cost of an employee including taxes, provisions, and levies. |
 | [Energy Efficiency Calculator](../mcps/energy-efficiency-calculator.md) | Estimate energy savings and ROI for lighting, appliances, insulation, and HVAC upgrades. |
+| [Enterprise Budget Generator](../mcps/enterprise-budget-generator.md) | Generate comprehensive agricultural budget reports for crops and livestock. |
 | [EOQ Calculator](../mcps/eoq-calculator.md) | Optimize inventory replenishment by calculating the Economic Order Quantity (EOQ) and reorder points. |
 | [ETF Arbitrage Strategy](../mcps/etf-arbitrage-strategy.md) | Identify and quantify arbitrage opportunities between ETF market prices and NAV. |
 | [EU Employment Termination Calculator](../mcps/eu-employment-termination-calculator.md) | Estimate statutory severance pay for Germany, France, Spain, and Portugal. |
@@ -210,6 +216,9 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Exact Decimal Currency Calculator](../mcps/exact-decimal-currency-calculator.md) | Perform error-free financial arithmetic using integer-based cent calculations. |
 | [Expected Value vs Implied Probability](../mcps/expected-value-vs-implied-probability.md) | A deterministic decision-support tool for evaluating market edges and optimal position sizing. |
 | [Export Parity Calculator](../mcps/export-parity-calculator.md) | Calculate the net farm-gate price for grain exports by accounting for logistics and taxes. |
+| [Farm Asset Depreciation Generator](../mcps/farm-asset-depreciation-generator.md) | Generate detailed depreciation schedules and tax impact analyses for farm assets using IRS guidelines. |
+| [Farm Financial Ratio Analyzer](../mcps/farm-financial-ratio-analyzer.md) | Calculate essential farm liquidity, solvency, profitability, and efficiency ratios. |
+| [Farm Labor Cost Calculator](../mcps/farm-labor-cost-calculator.md) | Estimate total seasonal labor expenses including H-2A compliance, taxes, and benefits. |
 | [Farm Profitability Dashboard](../mcps/farm-profitability-dashboard.md) | Calculate comprehensive farm profitability, EBITDA, and crop efficiency metrics. |
 | [Farm Succession Estate Planner](../mcps/farm-succession-estate-planner.md) | Calculate estate tax liability and generational transfer timelines for farm assets. |
 | [FGTS Withdrawal Simulator](../mcps/fgts-withdrawal-simulator.md) | Estimate FGTS balances, severance penalties, and payout liquidity based on salary and tenure. |
@@ -323,6 +332,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Linear Regression Calculator](../mcps/linear-regression-calculator.md) | Perform deterministic least-squares linear regression and volatility channel analysis. |
 | [Liquid Staking Yield Strategy](../mcps/liquid-staking-yield-strategy.md) | Deterministic optimization engine for LST trading signals. |
 | [Liquidation Preference Calculator](../mcps/liquidation-preference-calculator.md) | Model complex equity distribution and liquidation preference scenarios during company exits. |
+| [Livestock Depreciation Model](../mcps/livestock-depreciation-model.md) | Calculate livestock depreciation using IRS-aligned methods for breeding stock. |
 | [Livestock Expansion Budgeting](../mcps/livestock-expansion-budgeting.md) | Financial planning tool for modeling livestock expansion costs, revenues, and cash flows. |
 | [Loan Comparison Engine](../mcps/loan-comparison-engine.md) | Compare up to 5 loan configurations side by side, including fixed/adjustable rates and balloon payments. |
 | [Low-Volatility Strategy](../mcps/low-volatility-strategy.md) | Identify and trade assets with the lowest historical volatility to capture risk-adjusted premiums. |
@@ -369,6 +379,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Options Gamma Scalping Strategy](../mcps/options-gamma-scalping-strategy.md) | Simulate delta-neutral gamma scalping with automated hedging and cost analysis. |
 | [Options Greeks Calculator](../mcps/options-greeks-calculator.md) | Calculate Black-Scholes theoretical option prices and Greeks (Delta, Gamma, Theta, Vega, Rho) to assess market risk. |
 | [Order Book Imbalance Detector](../mcps/order-book-imbalance-detector.md) | Detect market microstructure imbalances and spoofing risks in the Polymarket CLOB. |
+| [Organic Transition Planner](../mcps/organic-transition-planner.md) | Financial and operational modeling for organic farming transitions. |
 | [Overtime Pay Calculator](../mcps/overtime-pay-calculator.md) | Calculate US overtime pay based on FLSA and state-specific rules like CA/CO daily thresholds. |
 | [Pachinko Expected Value Calculator](../mcps/pachinko-expected-value-calculator.md) | Analyze profitability and risk for Pachinko and Pachislot machines. |
 | [Pachislot Expected Value Calculator](../mcps/pachislot-expected-value-calculator.md) | Calculate mathematical profitability, hourly yield, and risk of ruin for Japanese Pachislot machines. |
@@ -377,6 +388,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Parabolic SAR Calculator](../mcps/parabolic-sar-calculator.md) | Compute deterministic Parabolic SAR values, trend directions, and reversal signals. |
 | [Parkinson Volatility Calculator](../mcps/parkinson-volatility-calculator.md) | Calculate precise Parkinson volatility using high-low price ranges. |
 | [Parlay Payout Calculator](../mcps/parlay-payout-calculator.md) | Calculate exact cumulative payouts and net profits for multi-leg parlay bets using American odds. |
+| [Partial Budgeting Tool](../mcps/partial-budgeting-tool.md) | Analyze the financial impact of management changes using incremental revenue and cost modeling. |
 | [PE Ratio Analyzer](../mcps/pe-ratio-analyzer.md) | Analyze stock valuation using P/E, PEG, and sector-specific benchmarks. |
 | [Penalty Clause Calculator](../mcps/penalty-clause-calculator.md) | Calculate contractual penalties, legal ceilings, and estimated judicial reductions based on jurisdiction. |
 | [Percentage Price Oscillator (PPO) Engine](../mcps/percentage-price-oscillator-ppo-engine.md) | A deterministic engine for calculating normalized price momentum via PPO indicators. |
@@ -430,6 +442,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Reverse Cash-and-Carry Arbitrage Engine](../mcps/reverse-cash-and-carry-arbitrage-engine.md) | Identify and calculate deterministic arbitrage signals in backwardation markets. |
 | [Ride-Hail Surge Estimator](../mcps/ride-hail-surge-estimator.md) | Predict ride-hailing surge multipliers and total fares based on weather and peak hours. |
 | [Risk Parity Strategy Engine](../mcps/risk-parity-strategy-engine.md) | Deterministic risk parity portfolio allocation engine for equal risk contribution. |
+| [Risk-Rated Return Calculator](../mcps/risk-rated-return-calculator.md) | Evaluate farm investment efficiency using Sharpe and Sortino ratios. |
 | [ROAS Calculator](../mcps/roas-calculator.md) | Accurately determine your Return on Ad Spend (ROAS) across all channels, benchmark against industry standards, and calculate the break-even point to guide profitable ad spending. |
 | [Rogers-Satchell Volatility Calculator](../mcps/rogers-satchell-volatility-calculator.md) | Deterministic, drift-independent volatility estimation using OHLC data. |
 | [Roll Yield Strategy Engine](../mcps/roll-yield-strategy-engine.md) | A deterministic signal engine for capturing returns from futures curve structures. |
@@ -450,6 +463,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [Secondary Market Liquidity Accelerator](../mcps/secondary-market-liquidity-accelerator.md) | Estimates cash value and optimal exit timing for private equity stakes. |
 | [Secondhand Value Calculator](../mcps/secondhand-value-calculator.md) | Estimate the current market value and optimal resale strategy for used items. |
 | [Security Deposit Deductor](../mcps/security-deposit-deductor.md) | Calculate security deposit refunds by itemizing repair costs. |
+| [Sensitivity Analysis Matrix](../mcps/sensitivity-analysis-matrix.md) | Generates sensitivity matrices for price and yield combinations to identify profit/loss zones. |
 | [Setel Malaysia](../mcps/setel-malaysia.md) | Orchestrate Setel Malaysia payments — manage payment intents, parking sessions, and EV charging directly from any AI agent. |
 | [Settlement Value Estimator](../mcps/settlement-value-estimator.md) | Quantify legal settlement ranges using Expected Monetary Value and risk-adjusted negotiation boundaries. |
 | [Sharpe Ratio Calculator](../mcps/sharpe-ratio-calculator.md) | Deterministic risk-adjusted performance engine for financial metrics. |
@@ -545,6 +559,7 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [US Wrongful Termination Calculator](../mcps/us-wrongful-termination-calculator.md) | Estimate potential financial damages and legal liabilities for US wrongful termination claims. |
 | [Vacation Provision Calculator](../mcps/vacation-provision-calculator.md) | Calculate employee vacation liabilities, including constitutional bonuses and employer taxes. |
 | [Value Engineering Comparator](../mcps/value-engineering-comparator.md) | Analyze construction alternatives by comparing Life Cycle Costs and Savings-to-Investment Ratios. |
+| [Value-Added Processing Economics](../mcps/value-added-processing-economics.md) | Analyze profitability and ROI for transitioning from raw commodities to processed goods. |
 | [Variable Index Dynamic Average (VIDYA) Calculator](../mcps/variable-index-dynamic-average-vidya-calculator.md) | Adaptive technical indicator engine that scales smoothing based on market volatility. |
 | [Venture Studio Operating Cost Modeler](../mcps/venture-studio-operating-cost-modeler.md) | Calculate startup unit costs, fee structures, and break-even points for venture studios. |
 | [Venture Studio Portfolio Economics Engine](../mcps/venture-studio-portfolio-economics-engine.md) | Project economic outcomes, portfolio value, and return multiples for venture studio portfolios. |
@@ -561,11 +576,13 @@ Explore the open database of **finance** Model Context Protocol (MCP) servers.
 | [VTuber Super Chat ROI Calculator](../mcps/vtuber-super-chat-roi-calculator.md) | Analyze VTuber stream performance with precise Super Chat revenue, engagement, and whale ratio metrics. |
 | [VWAP Bounce Strategy](../mcps/vwap-bounce-strategy.md) | Identify high-probability intraday mean-reversion signals using VWAP interaction and trend filters. |
 | [VWAP Calculator](../mcps/vwap-calculator.md) | Deterministic Volume Weighted Average Price (VWAP) calculator with volatility bands and trend analysis. |
+| [Water Rights Valuation Engine](../mcps/water-rights-valuation-engine.md) | Economic assessment of agricultural water rights using income and market methods. |
 | [Water Usage Calculator](../mcps/water-usage-calculator.md) | Estimate household water consumption, identify leak impacts, and calculate the financial return on upgrading to water-efficient fixtures. |
 | [WeChat Red Packet Distributor](../mcps/wechat-red-packet-distributor.md) | Calculate fair and deterministic WeChat Red Packet distributions. |
 | [WeChat Red Packet Simulator](../mcps/wechat-red-packet-simulator.md) | Simulate deterministic WeChat 'Lucky Money' distributions with inequality metrics. |
 | [Wedding Budget Reality Check](../mcps/wedding-budget-reality-check.md) | Deterministic Singapore wedding budget calculator and reality check. |
 | [Wedding Budget Splitter](../mcps/wedding-budget-splitter.md) | Intelligently allocate your wedding budget using industry-standard percentages and dynamic rebalancing. |
+| [Whole Farm Budget Planner](../mcps/whole-farm-budget-planner.md) | Aggregate enterprise budgets into a holistic farm financial plan. |
 | [Williams %R Calculator](../mcps/williams-r-calculator.md) | Deterministic technical analysis engine for Williams %R, divergence, and failure swing detection. |
 | [Williams Alligator Indicator Calculator](../mcps/williams-alligator-indicator-calculator.md) | Calculate precise Williams Alligator indicator lines, states, and trend analysis. |
 | [Williams Fractals Strategy](../mcps/williams-fractals-strategy.md) | Identify price reversals and breakout signals using deterministic Williams Fractals. |
