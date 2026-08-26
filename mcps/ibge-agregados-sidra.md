@@ -34,13 +34,13 @@ Connect to the **IBGE SIDRA** (System for Automatic Recovery) database and explo
 
 
 ## Available Tools (5)
-- **get_localidades**: Get available geographic levels for an aggregate
-- **get_metadados**: Get metadata for a specific aggregate
 - **get_periodos**: Get available time periods for an aggregate
 - **get_variaveis**: Get variables for a specific aggregate
 - **list_agregados**: Allows multidimensional filtering.
 
 List IBGE aggregates (surveys/tables)
+- **get_metadados**: Get metadata for a specific aggregate
+- **get_localidades**: Get available geographic levels for an aggregate
 
 
 ## 💬 Prompt Examples

@@ -36,20 +36,20 @@ No more manual logging of walk-in leads or digging through complex session calen
 
 
 ## Available Tools (14)
-- **get_lead**: Get lead details
 - **list_leads**: List leads
-- **book_class**: Book a class
 - **check_arbox_status**: Verify connectivity
 - **create_client**: Create a member
-- **create_lead**: Create a lead
 - **create_task**: Create a task
+- **get_lead**: Get lead details
+- **list_classes**: List classes
+- **book_class**: Book a class
+- **create_lead**: Create a lead
 - **list_clients**: List members
 - **list_memberships**: List memberships
 - **list_tasks**: List tasks
 - **update_client**: Update a member
 - **get_client**: Get member details
 - **get_schedule**: Get schedule
-- **list_classes**: List classes
 
 
 ## 💬 Prompt Examples

@@ -34,16 +34,16 @@ Connect to **MySportsFeeds** to bring professional sports data into your AI work
 
 
 ## Available Tools (12)
+- **get_daily_games**: Get daily games schedule
 - **get_game_boxscore**: Get game boxscore
+- **get_player_stats_totals**: Get seasonal player stats totals
+- **get_seasonal_standings**: Get seasonal standings for a league
 - **get_game_playbyplay**: Get game play-by-play
 - **get_latest_updates**: Get latest updates
 - **get_player_injuries**: Get player injuries
-- **get_player_stats_totals**: Get seasonal player stats totals
 - **get_players**: Get players roster
 - **get_seasonal_games**: Get seasonal games schedule
-- **get_seasonal_standings**: Get seasonal standings for a league
 - **get_team_stats_totals**: Get seasonal team stats totals
-- **get_daily_games**: Get daily games schedule
 - **get_daily_player_stats**: Get daily player stats
 - **get_game_lineup**: Get game lineup
 

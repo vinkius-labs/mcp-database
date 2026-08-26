@@ -34,17 +34,31 @@ Connect to the **Tronscan API** to turn your AI agent into a powerful blockchain
 
 
 ## Available Tools (58)
-- **get_account_security**: Get account security data
 - **list_proposals**: Get proposals
+- **get_account_analysis**: Get account analysis (Balance, Transfers, Energy, Bandwidth, Transactions)
+- **get_account_security**: Get account security data
+- **get_account_token_asset_overview**: Get token asset overview for an account
+- **get_consumption_stats**: Get burn/staking income statistics
+- **get_funds**: Get TRX Supply & Marketcap
 - **get_multisign_security**: Get multi-sign security data
+- **get_stablecoin_total_supply**: Get stablecoin total circulation
+- **get_token_security**: Get token security data
+- **get_trc10_token**: Get TRC10 token details
+- **get_url_security**: Get URL security data
+- **list_account_resources**: Get account resources (Stake 1.0)
+- **list_accounts**: Get a list of accounts
+- **list_account_tokens**: Get tokens held by an account with balance > 0
+- **list_transactions**: Get transaction list
+- **list_trc1155_transfers**: Get TRC1155 token transfers
+- **list_trc20_transfers**: Get TRC20 & TRC721 token transfers
+- **list_witnesses**: Get witness list
+- **search_v2**: Search Tronscan (v2)
 - **get_account_detail**: Get detailed information for a specific account
 - **get_account_tags**: Get account behavioral tags
-- **get_account_token_asset_overview**: Get token asset overview for an account
 - **get_acquisition_cost_stats**: Get resource costs statistics
 - **get_auth_security**: Get authorization security data
 - **get_block_stats**: Get block statistics
 - **get_chain_parameters**: Get chain parameters
-- **get_consumption_stats**: Get burn/staking income statistics
 - **get_contract_analysis**: Get contract daily analysis
 - **get_contract_detail**: Get contract detail
 - **get_contract_energy_stats**: Get contract energy statistics
@@ -53,41 +67,27 @@ Connect to the **Tronscan API** to turn your AI agent into a powerful blockchain
 - **get_daily_accounts**: Get new users (daily)
 - **get_daily_transactions**: Get transaction trend
 - **get_energy_stats**: Get energy consumption statistics
-- **get_funds**: Get TRX Supply & Marketcap
 - **get_homepage_bundle**: Get homepage data bundle
 - **get_net_stats**: Get bandwidth consumption statistics
 - **get_nodemap**: Get node map
 - **get_stablecoin_big_amount**: Get stablecoin large transactions
 - **get_stablecoin_blacklist**: Get stablecoin blacklist transactions
 - **get_stablecoin_distribution**: Get stablecoin holder distribution
-- **get_stablecoin_total_supply**: Get stablecoin total circulation
-- **get_token_security**: Get token security data
 - **get_top10**: Get Top 10 Data
 - **get_tps**: Get current TPS
 - **get_transaction_detail**: Get transaction detail
 - **get_transaction_security**: Get transaction security data
-- **get_trc10_token**: Get TRC10 token details
 - **get_trc20_token**: Get TRC20/721/1155 token details
 - **get_turnover**: Get total protocol revenue
-- **get_url_security**: Get URL security data
-- **list_account_resources**: Get account resources (Stake 1.0)
 - **list_account_resources_v2**: Get account resources (Stake 2.0)
 - **list_contracts**: Get list of smart contracts
 - **list_internal_transactions**: Get internal transactions
-- **list_transactions**: Get transaction list
 - **list_trc10_holders**: Get TRC10 token holders
 - **list_trc1155_inventory**: Get TRC1155 token inventory (NFTs)
-- **list_trc1155_transfers**: Get TRC1155 token transfers
 - **list_trc20_holders**: Get TRC20/721/1155 token holders
-- **list_trc20_transfers**: Get TRC20 & TRC721 token transfers
 - **list_trc721_inventory**: Get TRC721 token inventory (NFTs)
 - **list_voted**: Get voted list for an account
-- **list_witnesses**: Get witness list
-- **search_v2**: Search Tronscan (v2)
-- **get_account_analysis**: Get account analysis (Balance, Transfers, Energy, Bandwidth, Transactions)
-- **list_account_tokens**: Get tokens held by an account with balance > 0
 - **list_account_votes**: Get account votes
-- **list_accounts**: Get a list of accounts
 - **list_approvals**: Get approval list for an account
 - **list_blocks**: Get block list or detail
 - **list_tokens_overview**: Get token list overview

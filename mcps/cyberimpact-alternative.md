@@ -14,18 +14,18 @@ The Cyberimpact MCP server allows your AI agent to manage members, groups, and m
 
 
 ## Available Tools (12)
-- **create_member**: Create a new member (contact)
 - **delete_member**: Delete a member from the account
 - **get_me**: Check API connectivity and get account context
 - **list_groups**: List all groups
-- **list_mailings**: List all mailings (campaigns)
 - **list_members**: List all members (contacts)
 - **list_templates**: List all available templates
-- **retrieve_member**: Get details of a specific member
 - **unsubscribe_member**: Unsubscribe a member from all mailings
-- **add_member_to_group**: Add an existing member to a group
 - **create_group**: Create a new group
 - **create_mailing**: Create a new mailing
+- **add_member_to_group**: Add an existing member to a group
+- **create_member**: Create a new member (contact)
+- **list_mailings**: List all mailings (campaigns)
+- **retrieve_member**: Get details of a specific member
 
 
 ## 💬 Prompt Examples

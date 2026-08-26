@@ -39,14 +39,14 @@ Connect your **Tubular Labs** video intelligence account to any AI agent and sim
 - **get_audience_ratings**: Get reach and engagement ratings
 - **get_creator_summary**: Get summary for a specific creator
 - **get_creator_trends**: Get trends for a specific creator
-- **check_api_health**: Check API health status
 - **list_sponsored_campaigns**: List sponsored video campaigns
 - **list_sponsors**: List sponsors and brand partners
 - **get_api_rate_limits**: Get current API rate limits
+- **get_video_trends**: List trending videos
 - **search_creators**: g., name or keywords).
 
 Search for creators
-- **get_video_trends**: List trending videos
+- **check_api_health**: Check API health status
 - **get_video_demographics**: ) for a specific video.
 
 Get audience demographics for a video

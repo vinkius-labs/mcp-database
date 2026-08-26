@@ -34,18 +34,18 @@ Connect to the **Campinas Open Data Portal** (CKAN) and explore a wealth of publ
 
 
 ## Available Tools (8)
+- **get_package**: Get full metadata for a specific dataset
+- **get_resource**: Get metadata for a specific resource
 - **list_groups**: g., Education, Health).
 
 List thematic groups
 - **list_organizations**: List organizations providing data
 - **list_packages**: List all dataset names
+- **list_tags**: List all tags used across the portal
 - **search_packages**: Search for datasets matching specific criteria
-- **get_package**: Get full metadata for a specific dataset
 - **search_resources**: g., name:financeiro).
 
 Search for resources based on fields
-- **get_resource**: Get metadata for a specific resource
-- **list_tags**: List all tags used across the portal
 
 
 ## 💬 Prompt Examples

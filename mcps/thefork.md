@@ -37,20 +37,20 @@ No more switching between apps to find the perfect restaurant. Your AI handles t
 
 
 ## Available Tools (10)
-- **get_reservation**: Get reservation details
 - **cancel_reservation**: This action is irreversible.
 
 Cancel a reservation
-- **check_availability**: Check restaurant availability
 - **create_reservation**: Create a restaurant reservation
-- **get_restaurant**: Get restaurant details
+- **get_reservation**: Get reservation details
 - **get_restaurant_menus**: Get restaurant menus
 - **get_restaurant_reviews**: Get restaurant reviews
-- **list_cuisines**: List available cuisine types
 - **search_locations**: Search for dining locations
 - **search_restaurants**: Returns a list of matching restaurants with ratings and availability.
 
 Search for restaurants
+- **check_availability**: Check restaurant availability
+- **get_restaurant**: Get restaurant details
+- **list_cuisines**: List available cuisine types
 
 
 ## 💬 Prompt Examples
