@@ -36,10 +36,10 @@ Connect your **Amazon Ads** account to your AI agent to unlock professional camp
 
 ## Available Tools (8)
 - **list_sb_campaigns**: List Sponsored Brands campaigns
-- **list_sb_keywords**: List SB keywords
-- **request_sp_report**: Request performance report
 - **get_report_status**: Check report status
+- **list_sb_keywords**: List SB keywords
 - **list_sp_campaigns**: List Sponsored Products campaigns
+- **request_sp_report**: Request performance report
 - **list_sp_keywords**: List SP keywords
 - **list_profiles**: List advertiser profiles
 - **list_sp_ad_groups**: List SP ad groups

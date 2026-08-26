@@ -35,20 +35,20 @@ Transform your team’s engagement and performance with **15Five**, the holistic
 
 
 ## Available Tools (6)
-- **list_users**: Use this to find the identifier for a person.
-
-List all active employees and users in the 15Five organization
-- **list_departments**: Useful for finding the department ID or identifying team structures.
-
-List all departments and their members
+- **list_high_fives**: List recent High Fives (public recognition) across the company
 - **list_checkins**: Use this to monitor team sentiment or review previous employee submissions. You can filter by user ID.
 
 List recent employee check-ins and performance reports
-- **list_high_fives**: List recent High Fives (public recognition) across the company
+- **list_departments**: Useful for finding the department ID or identifying team structures.
+
+List all departments and their members
+- **list_objectives**: List company and individual objectives (OKRs)
+- **list_users**: Use this to find the identifier for a person.
+
+List all active employees and users in the 15Five organization
 - **send_high_five**: Requires the email address of the recipient and a personal message.
 
 Send a High Five to publicly recognize a colleague
-- **list_objectives**: List company and individual objectives (OKRs)
 
 
 ## 💬 Prompt Examples

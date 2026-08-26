@@ -33,13 +33,21 @@ Integrate the industry-leading generative visual capabilities of **Stability AI*
 
 
 ## Available Tools (10)
-- **image_to_image_v1**: Requires engine_id and prompt.
+- **text_to_image_v1**: Provide engine_id, prompt, width, and height. Width/Height must be multiples of 64.
 
-Transform an existing image based on a text prompt
+Generate an image from a text prompt using v1 engines
 - **upscale_image**: Provide a guidance prompt to help the model maintain quality.
 
 Increases image resolution while preserving detail
 - **remove_background**: Removes the background from an image
+- **list_engines**: These IDs are required for v1 generation tools.
+
+List all available image generation engines on Stability AI
+- **get_credit_balance**: Retrieves your current Stability AI credit balance
+- **image_to_image_v1**: Requires engine_id and prompt.
+
+Transform an existing image based on a text prompt
+- **inpaint_image**: Edits specific regions of an image based on a prompt
 - **generate_core_v2**: Optimized for speed and quality.
 
 Generate an image using the Stable Image Core model
@@ -49,14 +57,6 @@ Generate an image using Stable Diffusion 3.5
 - **generate_ultra_v2**: Best for final production assets.
 
 Generate a high-end photorealistic image
-- **get_credit_balance**: Retrieves your current Stability AI credit balance
-- **inpaint_image**: Edits specific regions of an image based on a prompt
-- **list_engines**: These IDs are required for v1 generation tools.
-
-List all available image generation engines on Stability AI
-- **text_to_image_v1**: Provide engine_id, prompt, width, and height. Width/Height must be multiples of 64.
-
-Generate an image from a text prompt using v1 engines
 
 
 ## 💬 Prompt Examples

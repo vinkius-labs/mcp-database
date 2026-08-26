@@ -36,16 +36,16 @@ Your AI agent becomes a brilliant database administrator capable of exploring em
 
 ## Available Tools (7)
 - **list_collections**: List all collections in the Astra DB namespace
+- **find_one_document**: Find a single document in an Astra DB collection
+- **vector_search**: Perform an ANN vector similarity search on an Astra DB collection
+- **count_documents**: Count total documents in an Astra DB collection
+- **delete_document**: Delete a document from an Astra DB collection
 - **find_documents**: Useful for standard NoSQL document retrieval.
 
 Find documents in an Astra DB collection
-- **find_one_document**: Find a single document in an Astra DB collection
-- **vector_search**: Perform an ANN vector similarity search on an Astra DB collection
 - **insert_document**: The document can include a pre-generated $vector key for embedding searches.
 
 Insert a new document into an Astra DB collection
-- **delete_document**: Delete a document from an Astra DB collection
-- **count_documents**: Count total documents in an Astra DB collection
 
 
 ## 💬 Prompt Examples

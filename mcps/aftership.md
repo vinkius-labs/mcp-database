@@ -29,31 +29,31 @@ Connect **AfterShip** tracking platform to any AI agent and track packages from 
 
 
 ## Available Tools (9)
-- **create_tracking**: Requires at least the tracking number. Optionally specify the courier slug, title, customer emails, SMS phone numbers, order ID, and custom fields.
-
-Create a new package tracking
-- **delete_tracking**: This action cannot be undone.
-
-Delete a tracking entry
 - **detect_courier**: Useful when the user provides a tracking number but doesn't know which courier it belongs to. Returns a ranked list of likely couriers.
 
 Auto-detect courier from tracking number
-- **update_tracking**: Does not affect the tracking number or courier.
-
-Update an existing tracking
 - **get_tracking**: Get details of a specific tracking
 - **list_couriers**: ) that can be used for tracking packages.
 
 List all supported courier companies
-- **list_trackings**: Supports extensive filtering by courier (slug), tag, keyword, origin, destination, date ranges, and delivery status.
-
-List all package trackings
 - **mark_tracking_completed**: Useful when the package has been delivered but the courier hasn't updated the final status.
 
 Mark a tracking as completed
 - **retrack_tracking**: This restarts monitoring and will fetch new checkpoint updates.
 
 Retrack an expired tracking
+- **create_tracking**: Requires at least the tracking number. Optionally specify the courier slug, title, customer emails, SMS phone numbers, order ID, and custom fields.
+
+Create a new package tracking
+- **delete_tracking**: This action cannot be undone.
+
+Delete a tracking entry
+- **list_trackings**: Supports extensive filtering by courier (slug), tag, keyword, origin, destination, date ranges, and delivery status.
+
+List all package trackings
+- **update_tracking**: Does not affect the tracking number or courier.
+
+Update an existing tracking
 
 
 ## 💬 Prompt Examples

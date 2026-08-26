@@ -33,14 +33,14 @@ Connect **Outreach** to your AI agent and manage your enterprise sales engagemen
 
 
 ## Available Tools (8)
-- **list_outreach_accounts**: List company accounts
 - **get_outreach_prospect**: Get details for a specific prospect
-- **get_outreach_sequence_stats**: Get engagement metrics for a sequence
 - **list_outreach_emails**: List email addresses linked to prospects
 - **list_outreach_mailboxes**: List connected sending mailboxes
-- **list_outreach_prospects**: List sales prospects
 - **list_outreach_sequences**: List automated outreach sequences
 - **list_outreach_tasks**: List sales tasks
+- **get_outreach_sequence_stats**: Get engagement metrics for a sequence
+- **list_outreach_accounts**: List company accounts
+- **list_outreach_prospects**: List sales prospects
 
 
 ## 💬 Prompt Examples

@@ -29,12 +29,12 @@ Connect to the exact datasets used by the Federal Reserve and economists to meas
 
 
 ## Available Tools (2)
-- **get_cpi_inflation**: S. Consumer Price Index baseline. Identifies macroeconomic price shifts and consumer buying power anomalies.
-
-Get Consumer Price Index (CPI-U) data for inflation tracking
 - **query_bls**: Use this instead of specific endpoints if you intimately know the underlying numerical code. Up to 50 concurrent lookbacks allowed.
 
 Generic BLS v2 api timeseries query. Requires explicit BLS Series IDs
+- **get_cpi_inflation**: S. Consumer Price Index baseline. Identifies macroeconomic price shifts and consumer buying power anomalies.
+
+Get Consumer Price Index (CPI-U) data for inflation tracking
 
 
 ## 💬 Prompt Examples

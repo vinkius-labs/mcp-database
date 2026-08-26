@@ -26,9 +26,6 @@ Connect **Odoo ERP** to any AI agent — manage your entire business without swi
 
 
 ## Available Tools (7)
-- **odoo_create_manufacturing_order**: production record in "draft" state. Requires a product.product ID and desired quantity. Odoo will auto-select the default BOM if bomId is not specified. Once confirmed, the system will check component availability and create work orders if the BOM has routing operations. Use when the user wants to schedule new production, replenish stock via manufacturing, or create a custom production run.
-
-Create a new manufacturing order to produce a specific product quantity, optionally with a specific Bill of Materials
 - **odoo_get_bom_components**: bom.line records for the given BOM ID, showing each raw material/component needed, its required quantity, and unit of measure. Use when the user needs to know what materials are needed to manufacture a product, wants to verify component quantities, or is planning material procurement.
 
 Get the component list (raw materials and quantities) of a specific Bill of Materials
@@ -38,15 +35,18 @@ Get the complete details of a specific manufacturing order including product, BO
 - **odoo_list_boms**: bom records — the recipes/formulas that define how products are manufactured. Returns BOM name, finished product, quantity produced per BOM, BOM type (normal manufacturing vs kit), and reference code. Use when the user asks about product recipes, manufacturing formulas, component lists, or needs to find a BOM ID for creating manufacturing orders.
 
 List all Bills of Materials (BOMs) in Odoo showing the finished product, quantity, type, and reference code
-- **odoo_list_manufacturing_orders**: production records showing all manufacturing orders across the shop floor. Returns MO reference number, product being manufactured, planned quantity, quantity already produced, production state (draft/confirmed/progress/done/cancel), linked Bill of Materials, and planned start date. Filter by state to focus on orders in progress, waiting for materials, or completed. Use when the user asks about production activity, shop floor status, manufacturing backlog, or wants to check which products are being produced.
-
-List manufacturing orders (production orders) in Odoo with product, planned quantity, BOM, and production status
 - **odoo_list_work_centers**: workcenter records — the physical or logical production resources where operations are performed. Returns work center name, code, capacity, time efficiency percentage, and active status. Use when the user asks about available production resources, machine capacity, or needs work center codes for planning.
 
 List all work centers (machines, stations, production lines) configured in Odoo Manufacturing
 - **odoo_list_work_orders**: workorder records — the individual operations within manufacturing orders. Each work order represents a step in the production routing (e.g., cutting, assembly, painting). Returns work order name, product, assigned work center, state (pending/ready/progress/done), expected duration, and linked production order. Use when the user asks about shop floor activity, operator assignments, or production bottlenecks.
 
 List active work orders on the shop floor showing product, assigned work center, state, and estimated duration
+- **odoo_create_manufacturing_order**: production record in "draft" state. Requires a product.product ID and desired quantity. Odoo will auto-select the default BOM if bomId is not specified. Once confirmed, the system will check component availability and create work orders if the BOM has routing operations. Use when the user wants to schedule new production, replenish stock via manufacturing, or create a custom production run.
+
+Create a new manufacturing order to produce a specific product quantity, optionally with a specific Bill of Materials
+- **odoo_list_manufacturing_orders**: production records showing all manufacturing orders across the shop floor. Returns MO reference number, product being manufactured, planned quantity, quantity already produced, production state (draft/confirmed/progress/done/cancel), linked Bill of Materials, and planned start date. Filter by state to focus on orders in progress, waiting for materials, or completed. Use when the user asks about production activity, shop floor status, manufacturing backlog, or wants to check which products are being produced.
+
+List manufacturing orders (production orders) in Odoo with product, planned quantity, BOM, and production status
 
 
 ## 💬 Prompt Examples

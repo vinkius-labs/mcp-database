@@ -33,12 +33,12 @@ Integrate **ExchangeRatesAPI.io**, the reliable foreign exchange rates and curre
 
 
 ## Available Tools (7)
-- **convert_currency_amount**: Convert an amount from one currency to another
 - **get_currency_fluctuation_data**: Get data on how currencies fluctuated on a day-to-day basis
 - **get_historical_exchange_rates**: Get historical exchange rates for a specific date
 - **get_latest_exchange_rates**: Get the latest foreign exchange reference rates
 - **get_exchange_rate_timeseries**: Get daily historical rates for a specific time period
 - **list_supported_currencies**: List all available currency symbols and names
+- **convert_currency_amount**: Convert an amount from one currency to another
 - **get_top_market_rates**: Retrieve the latest rates for top globalThis market currencies (USD, GBP, JPY, CAD)
 
 

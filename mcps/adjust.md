@@ -36,10 +36,10 @@ Connect your **Adjust** account to your AI agent to unlock professional mobile m
 
 ## Available Tools (3)
 - **get_app_settings**: Get app configuration
-- **inspect_device**: Inspect device attribution
 - **get_kpi_report**: Filterable by date.
 
 Get aggregated KPI metrics
+- **inspect_device**: Inspect device attribution
 
 
 ## 💬 Prompt Examples

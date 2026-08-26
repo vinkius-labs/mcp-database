@@ -35,9 +35,9 @@ Connect your **Google Contacts** directory to any AI agent and take full control
 - **create_contact_group**: 
 - **get_contact**: Gets the full details of a specific contact
 - **list_contact_groups**: Lists the user's contact groups (or labels)
+- **create_contact**: Creates a new contact (connection)
 - **list_contacts**: Lists the user's connections (contacts)
 - **search_contacts**: Searches the user's contacts by a query string
-- **create_contact**: Creates a new contact (connection)
 - **delete_contact**: Deletes a contact
 - **get_contact_group**: 
 - **update_contact**: Must provide an etag obtained from get_contact.

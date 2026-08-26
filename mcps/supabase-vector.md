@@ -33,9 +33,6 @@ Integrate the powerful AI-native PostgreSQL extensions of **Supabase Vector** st
 
 
 ## Available Tools (7)
-- **delete_table_rows**: This action is irreversible.
-
-Deletes rows from a table based on a column value
 - **get_table_row**: Retrieves a specific row by matching a column value
 - **insert_table_rows**: Provide a JSON array of row objects.
 
@@ -48,6 +45,9 @@ Performs a vector similarity search via Postgres RPC
 
 Queries rows from a specific table
 - **call_postgres_function**: Calls a custom Postgres function (RPC) with parameters
+- **delete_table_rows**: This action is irreversible.
+
+Deletes rows from a table based on a column value
 
 
 ## 💬 Prompt Examples

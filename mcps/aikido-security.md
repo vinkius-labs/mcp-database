@@ -39,10 +39,6 @@ No more navigating the Aikido dashboard for every security review. Your AI acts 
 
 
 ## Available Tools (16)
-- **export_all_issues**: This provides a comprehensive snapshot of your organization's security posture.
-Use this for compliance reporting, audit preparation, or bulk analysis of vulnerabilities.
-
-Export all security issues from Aikido
 - **get_iso_compliance**: Shows which controls are passing, failing, or need attention.
 Use this for compliance monitoring, audit preparation, and security posture reporting.
 This endpoint is available on all paid Aikido plans.
@@ -65,10 +61,6 @@ Get workspace information and configuration
 Use this to verify your web applications are properly secured against common attacks (SQL injection, XSS, etc.).
 
 List all web applications protected by Aikido firewall
-- **list_cloud_assets**: You can paginate through results and optionally search by text or sort by name, asset type, region, etc.
-Use this to understand your cloud attack surface and identify misconfigurations or vulnerabilities.
-
-List cloud infrastructure assets monitored by Aikido
 - **list_code_repositories**: This includes repositories connected from GitHub, GitLab, Bitbucket, etc.
 Use this to discover which repositories are being monitored for vulnerabilities and security issues.
 
@@ -77,20 +69,10 @@ List all active code repositories connected to Aikido
 Use this to verify cloud integrations are properly configured.
 
 List all cloud accounts connected to Aikido
-- **list_containers**: This includes Docker images from registries like Docker Hub, ECR, GCR, etc.
-Use this to monitor container security and identify vulnerable base images or dependencies.
-
-List all container images and repositories scanned by Aikido
 - **list_custom_rules**: Custom rules allow you to define organization-specific security checks beyond the default scanner.
 Use this to audit your custom rule coverage and ensure your security policies are properly enforced.
 
 List all custom SAST scanning rules in Aikido
-- **list_open_issues**: Issues include vulnerabilities from code scanning, container scanning, cloud security, SAST, IaC, DAST, and more.
-You can optionally filter by issue type (open_source, leaked_secret, cloud, sast, iac, docker_container, etc.),
-by team ID, or by repository. Supports pagination with page and per_page parameters.
-Use this to get a comprehensive view of your organization's security posture and prioritize remediation efforts.
-
-List all open security issues (vulnerabilities) in your Aikido account
 - **list_teams**: Teams are used to organize repositories, assign issues, and manage security workflows.
 Use this to understand how your organization structures its security responsibilities.
 
@@ -106,6 +88,24 @@ List all virtual machines monitored by Aikido
 Use this to verify integrations are properly configured and troubleshoot notification delivery.
 
 List all configured webhooks in Aikido
+- **export_all_issues**: This provides a comprehensive snapshot of your organization's security posture.
+Use this for compliance reporting, audit preparation, or bulk analysis of vulnerabilities.
+
+Export all security issues from Aikido
+- **list_cloud_assets**: You can paginate through results and optionally search by text or sort by name, asset type, region, etc.
+Use this to understand your cloud attack surface and identify misconfigurations or vulnerabilities.
+
+List cloud infrastructure assets monitored by Aikido
+- **list_containers**: This includes Docker images from registries like Docker Hub, ECR, GCR, etc.
+Use this to monitor container security and identify vulnerable base images or dependencies.
+
+List all container images and repositories scanned by Aikido
+- **list_open_issues**: Issues include vulnerabilities from code scanning, container scanning, cloud security, SAST, IaC, DAST, and more.
+You can optionally filter by issue type (open_source, leaked_secret, cloud, sast, iac, docker_container, etc.),
+by team ID, or by repository. Supports pagination with page and per_page parameters.
+Use this to get a comprehensive view of your organization's security posture and prioritize remediation efforts.
+
+List all open security issues (vulnerabilities) in your Aikido account
 
 
 ## 💬 Prompt Examples

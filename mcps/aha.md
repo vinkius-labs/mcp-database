@@ -35,11 +35,11 @@ Connect your **Aha!** account to your AI agent to unlock professional product ma
 
 
 ## Available Tools (5)
-- **list_features**: List product features
 - **get_feature**: Get feature details
+- **list_features**: List product features
 - **list_ideas**: List product ideas
-- **create_idea**: Capture a new product idea
 - **list_releases**: List product releases
+- **create_idea**: Capture a new product idea
 
 
 ## 💬 Prompt Examples

@@ -32,14 +32,10 @@ Connect your conversational assistant directly to the **Replicate** ecosystem. T
 
 
 ## Available Tools (12)
-- **create_prediction**: g., image generation, LLMs). Provide the model version ID and inputs as a JSON object.
-
-Starts a new model prediction on Replicate
 - **get_account**: Retrieves the authenticated Replicate account details
 - **get_collection**: Provide the collection slug (e.g., "text-to-image").
 
 Retrieves a specific collection of models by its slug
-- **get_model**: Retrieves details for a specific model
 - **get_prediction**: ).
 
 Retrieves the status and output of a prediction
@@ -49,8 +45,12 @@ Lists curated collections of models
 - **list_predictions**: Lists recent predictions made by the user
 - **search_models**: Searches for public models on Replicate
 - **list_models**: Lists public models available on Replicate
-- **list_deployments**: Lists your active model deployments on Replicate
 - **cancel_prediction**: Cancels a prediction that is currently running
+- **create_prediction**: g., image generation, LLMs). Provide the model version ID and inputs as a JSON object.
+
+Starts a new model prediction on Replicate
+- **get_model**: Retrieves details for a specific model
+- **list_deployments**: Lists your active model deployments on Replicate
 - **list_hardware**: Lists available GPU hardware options for running models
 
 
