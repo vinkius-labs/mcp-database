@@ -34,37 +34,37 @@ Connect your **Legito** workspace to any AI agent to streamline your legal and d
 
 
 ## Available Tools (31)
-- **list_categories**: List categories (groups)
 - **create_user_group**: Create a new user group
-- **list_currencies**: List supported currencies
-- **delete_document_record**: Delete a document record
-- **delete_user_group**: Delete a user group
 - **delete_user**: Delete a user
-- **list_document_records**: List document records
-- **get_document_version_data**: Get data for a specific document version
 - **download_document_version**: Download a document version
+- **get_document_version_data**: Get data for a specific document version
+- **get_shares**: Get shares for a document
+- **get_user_permissions**: Get permissions for a user
+- **list_categories**: List categories (groups)
+- **list_document_records**: List document records
+- **update_document_record**: Update a document record
+- **delete_document_record**: Delete a document record
+- **list_currencies**: List supported currencies
+- **delete_user_group**: Delete a user group
 - **get_info**: Get workspace info
-- **remove_share_from_user_group**: Remove a document share from a user group
 - **remove_share_from_user**: Remove a document share from a user
+- **remove_share_from_user_group**: Remove a document share from a user group
 - **remove_user_from_group**: Remove a user from a user group
 - **share_with_user**: Share a document with a user
-- **get_shares**: Get shares for a document
 - **list_template_suites**: List Legito template suites
-- **update_document_record**: Update a document record
+- **list_user_groups**: List user groups (departments)
+- **list_users**: List users
 - **update_document_version_data**: Update document version data
+- **update_user**: Update a user
 - **update_user_group**: Update a user group
 - **update_user_permissions**: Update permissions for a user
-- **update_user**: Update a user
-- **list_user_groups**: List user groups (departments)
-- **get_user_permissions**: Get permissions for a user
-- **list_users**: List users
-- **add_user_to_group**: Add a user to a user group
 - **list_advanced_styles**: List advanced styles
+- **add_user_to_group**: Add a user to a user group
 - **list_countries**: List countries (laws)
 - **create_document_version_data**: Create document version data from a template suite
 - **create_user**: Create a new user
-- **share_with_user_group**: Share a document with a user group
 - **list_timezones**: List timezones
+- **share_with_user_group**: Share a document with a user group
 
 
 ## 💬 Prompt Examples

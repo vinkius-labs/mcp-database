@@ -37,54 +37,54 @@ No more jumping between dashboards to check if your nightly backups finished or 
 
 ## Available Tools (44)
 - **create_api_key**: Create an API key
-- **create_status_page_component**: Create a status page component
-- **create_environment**: Create an environment
 - **create_group**: Create a new monitor group
 - **create_issue**: Create a new issue
 - **create_maintenance_window**: Schedule a maintenance window
 - **create_notification**: Create a notification list
-- **create_site**: Create a RUM site
 - **create_status_page**: Create a status page
-- **delete_api_key**: Delete an API key
+- **create_status_page_component**: Create a status page component
 - **delete_group**: Delete a monitor group
 - **delete_monitor**: Delete a monitor
-- **delete_site**: Delete RUM sites
 - **delete_status_page**: Delete status pages
-- **get_aggregates**: Retrieve rolled-up aggregates
 - **get_metrics**: Requires at least one field parameter.
 
 Retrieve performance metrics
 - **get_monitor**: Retrieve a specific monitor
 - **get_site_errors**: Get site errors
-- **list_api_keys**: List API keys
 - **list_status_page_components**: List status page components
 - **list_environments**: List environments
 - **list_groups**: List monitor groups
 - **list_issues**: List issues and incidents
-- **list_monitors**: List or search monitors
 - **list_notifications**: List notification lists
 - **list_sites**: List RUM sites
 - **list_status_pages**: List status pages
 - **pause_group**: Bulk pause or resume a group of monitors
-- **update_environment**: Update an environment
 - **update_issue**: Update an issue state
 - **update_monitors**: Create or update monitors in bulk
 - **update_notification**: Update a notification list
-- **update_status_page**: Update status pages
-- **create_monitor**: Create a new monitor
+- **bulk_issues**: Perform bulk actions on issues
+- **create_environment**: Create an environment
+- **create_site**: Create a RUM site
+- **delete_api_key**: Delete an API key
+- **delete_site**: Delete RUM sites
 - **delete_status_page_component**: Delete status page components
-- **pause_monitor**: Use 0 to resume.
-
-Pause or resume a monitor
-- **query_site_analytics**: Query site analytics
+- **get_aggregates**: Retrieve rolled-up aggregates
+- **list_api_keys**: List API keys
+- **list_monitors**: List or search monitors
 - **send_telemetry**: link.
 
 Send telemetry events (pings, metrics)
+- **update_environment**: Update an environment
+- **update_group**: Update a monitor group
+- **update_status_page**: Update status pages
+- **create_monitor**: Create a new monitor
+- **query_site_analytics**: Query site analytics
+- **pause_monitor**: Use 0 to resume.
+
+Pause or resume a monitor
 - **update_api_key**: Update an API key
 - **update_status_page_component**: Update status page components
-- **update_group**: Update a monitor group
 - **update_site**: Update RUM sites
-- **bulk_issues**: Perform bulk actions on issues
 - **clone_monitor**: Clone an existing monitor
 
 

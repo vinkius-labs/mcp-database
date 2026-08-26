@@ -15,8 +15,8 @@ This MCP server provides a deterministic system to solve the reasoning tradeoff.
 
 ## Available Tools (3)
 - **calculate_reasoning_needs**: Determines the required reasoning effort and predicts latency based on task and context
-- **get_effort_mapping**: Retrieves the threshold boundaries for different effort levels
 - **get_latency_config**: Retrieves the configurable latency coefficients used for estimation
+- **get_effort_mapping**: Retrieves the threshold boundaries for different effort levels
 
 
 ## 💬 Prompt Examples

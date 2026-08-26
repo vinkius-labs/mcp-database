@@ -15,8 +15,8 @@ Test Coverage Analyzer provides deep visibility into how well your test suites e
 
 ## Available Tools (3)
 - **analyze_code_coverage**: Provides a complete overview of how well the provided test suite exercises the source code
-- **identify_uncovered_complex_logic**: Specifically pinpoints high-risk areas where complex logic is completely unverified
 - **map_test_targets**: Determines exactly which functions and classes are being targeted by the provided test suite
+- **identify_uncovered_complex_logic**: Specifically pinpoints high-risk areas where complex logic is completely unverified
 
 
 ## 💬 Prompt Examples

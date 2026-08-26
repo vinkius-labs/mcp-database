@@ -14,8 +14,8 @@ This MCP server provides a suite of tools to verify the reliability of LLM outpu
 
 
 ## Available Tools (3)
-- **extract_claims**: Decomposes text into individual factual assertions
 - **analyze_consistency**: Evaluates a set of LLM responses to determine if they are factually consistent
+- **extract_claims**: Decomposes text into individual factual assertions
 - **find_contradictions**: Compares sets of claims to identify logical conflicts
 
 

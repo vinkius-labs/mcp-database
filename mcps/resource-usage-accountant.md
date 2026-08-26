@@ -14,8 +14,8 @@ The Resource Usage Accountant provides a governance layer to prevent runaway res
 
 
 ## Available Tools (3)
-- **get_usage_summary**: Get a summary of current resource usage and remaining limits for a scope
 - **apply_thresholds**: Update or set resource usage limits for a scope
+- **get_usage_summary**: Get a summary of current resource usage and remaining limits for a scope
 - **record_consumption**: Record incremental resource consumption for a scope
 
 

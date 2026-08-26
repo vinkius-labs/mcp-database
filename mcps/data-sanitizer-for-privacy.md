@@ -14,13 +14,13 @@ This MCP server provides a specialized privacy enforcement layer for AI agents. 
 
 
 ## Available Tools (3)
-- **get_redaction_summary**: Provides an overview of the supported redaction patterns
 - **sanitize_text**: You can specify which entity types to look for and whether to redact the entire sentence containing the sensitive data.
 
 Redacts sensitive information from text based on specified entity types
 - **validate_entity_type**: g., "EMAIL") to check its validity.
 
 Checks if a specific entity type is supported by the sanitizer
+- **get_redaction_summary**: Provides an overview of the supported redaction patterns
 
 
 ## 💬 Prompt Examples

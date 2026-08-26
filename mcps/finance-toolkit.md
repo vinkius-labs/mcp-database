@@ -20,16 +20,16 @@ Financial mathematics require absolute deterministic precision. A single halluci
 
 
 ## Available Tools (4)
+- **calculate_amortization**: Rate must be periodic decimal (e.g. monthly rate). Type must be "SAC" or "PRICE".
+
+Generates a summarized amortization schedule (SAC or PRICE table)
+- **calculate_compound_interest**: g. 0.05). Frequency is times per year interest is compounded (default 1).
+
+Calculates compound interest over a period of time
 - **calculate_roi**: Calculates the Return on Investment (ROI) percentage
 - **calculate_simple_interest**: Rate must be decimal (e.g. 0.05 for 5%).
 
 Calculates simple interest over a period of time
-- **calculate_compound_interest**: g. 0.05). Frequency is times per year interest is compounded (default 1).
-
-Calculates compound interest over a period of time
-- **calculate_amortization**: Rate must be periodic decimal (e.g. monthly rate). Type must be "SAC" or "PRICE".
-
-Generates a summarized amortization schedule (SAC or PRICE table)
 
 
 ## 💬 Prompt Examples

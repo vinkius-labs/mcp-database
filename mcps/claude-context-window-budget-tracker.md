@@ -15,8 +15,8 @@ This MCP server provides precise monitoring and enforcement of token usage withi
 
 ## Available Tools (3)
 - **apply_pruning_recommendation**: Validates if a specific pruning strategy is appropriate for the current context state
-- **get_budget_configuration**: Retrieves the currently active limits and thresholds for the tracking session
 - **track_consumption**: Records the character count of new content and updates the current token usage state
+- **get_budget_configuration**: Retrieves the currently active limits and thresholds for the tracking session
 
 
 ## 💬 Prompt Examples

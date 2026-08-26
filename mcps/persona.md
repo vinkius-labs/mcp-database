@@ -36,35 +36,35 @@ No more jumping between dashboards to check if a user has submitted their ID. Yo
 
 
 ## Available Tools (27)
-- **get_verification**: Retrieve a Verification
-- **list_accounts**: List all Accounts
-- **list_inquiries**: List all Inquiries
-- **get_account**: Retrieve an Account
+- **approve_inquiry**: Approve an Inquiry
+- **create_account**: Create an Account
+- **create_transaction**: Create a Transaction
 - **get_case**: Retrieve a Case
 - **get_event**: Retrieve an Event
 - **get_inquiry**: Retrieve an Inquiry
+- **get_verification**: Retrieve a Verification
+- **list_accounts**: List all Accounts
+- **list_cases**: List all Cases
+- **list_inquiries**: List all Inquiries
+- **list_transactions**: List all Transactions
+- **list_webhooks**: List all Webhooks
+- **set_case_status**: Set Status on a Case
+- **get_account**: Retrieve an Account
 - **get_report**: Retrieve a Report
 - **get_transaction**: Retrieve a Transaction
-- **list_transactions**: List all Transactions
 - **redact_inquiry**: Redact an Inquiry
-- **list_webhooks**: List all Webhooks
 - **redact_account**: Redact an Account
-- **list_cases**: List all Cases
 - **list_events**: List all Events
 - **list_reports**: g., Watchlists, Adverse Media).
 
 List all Reports
 - **redact_report**: Redact a Report
 - **redact_verification**: Redact a Verification
-- **set_case_status**: Set Status on a Case
 - **trigger_workflow**: Create a Workflow Run
 - **update_account**: Update an Account
-- **create_account**: Create an Account
 - **create_inquiry**: Create an Inquiry
-- **create_transaction**: Create a Transaction
 - **create_webhook**: Create a Webhook
 - **decline_inquiry**: Decline an Inquiry
-- **approve_inquiry**: Approve an Inquiry
 
 
 ## 💬 Prompt Examples

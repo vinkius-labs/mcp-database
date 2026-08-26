@@ -14,9 +14,9 @@ This MCP server protects Large Language Model (LLM) context windows from being f
 
 
 ## Available Tools (3)
+- **validate_truncation_integrity**: Validates if a truncated string preserves character integrity and respects limits
 - **calculate_exact_byte_size**: Calculates the exact UTF-8 byte size of a string
 - **truncate_tool_output**: Safely shrinks a string to fit a byte limit without breaking multi-byte characters
-- **validate_truncation_integrity**: Validates if a truncated string preserves character integrity and respects limits
 
 
 ## 💬 Prompt Examples

@@ -15,11 +15,11 @@ Data Lineage Tracker provides a verifiable record of how data flows through LLM 
 
 ## Available Tools (4)
 - **find_downstream_impact**: Identifies all data items that were derived from a specific source item
+- **trace_item_lineage**: Provides the complete ancestral history of a specific data item to verify its origin
+- **verify_item_integrity**: Checks if a data item's current state matches its recorded deterministic hash
 - **register_transformation**: Ensure the parentId exists.
 
 Records a new step in the data lifecycle, linking a new data item to its parent
-- **trace_item_lineage**: Provides the complete ancestral history of a specific data item to verify its origin
-- **verify_item_integrity**: Checks if a data item's current state matches its recorded deterministic hash
 
 
 ## 💬 Prompt Examples

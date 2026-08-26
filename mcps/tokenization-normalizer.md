@@ -14,9 +14,9 @@ This MCP server provides tools to resolve tokenization drift, ensuring determini
 
 
 ## Available Tools (3)
+- **get_tokenizer_capabilities**: Informs the user about what specific normalization rules are available for a given tokenizer profile
 - **analyze_tokenization_drift**: Compares the original text against a target profile to provide a summary of how "unstable" the text is for that specific model
 - **normalize_text_structure**: Transforms a given string to match the structural expectations of a specific target tokenizer
-- **get_tokenizer_capabilities**: Informs the user about what specific normalization rules are available for a given tokenizer profile
 
 
 ## 💬 Prompt Examples

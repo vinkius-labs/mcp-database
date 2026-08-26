@@ -14,9 +14,9 @@ Maintain structural integrity in your codebase with the Architectural Constraint
 
 
 ## Available Tools (3)
+- **get_project_compliance_summary_tool**: Provides a high-level overview of the entire project's health against the defined constraints
 - **validate_file_compliance_tool**: Checks if a specific file or a set of changed files adheres to the provided architectural rules
 - **check_module_relationships_tool**: Answers if a specific relationship between two modules is permitted under the current architecture
-- **get_project_compliance_summary_tool**: Provides a high-level overview of the entire project's health against the defined constraints
 
 
 ## 💬 Prompt Examples

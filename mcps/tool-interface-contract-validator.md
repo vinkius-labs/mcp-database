@@ -15,8 +15,8 @@ Prevent contract drift in AI agent workflows. This MCP provides a validation eng
 
 ## Available Tools (3)
 - **generate_test_suite**: 
-- **analyze_compliance_report**: 
 - **validate_contract**: 
+- **analyze_compliance_report**: 
 
 
 ## 💬 Prompt Examples

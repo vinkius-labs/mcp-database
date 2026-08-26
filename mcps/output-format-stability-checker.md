@@ -14,8 +14,8 @@ This MCP server provides tools to measure the structural consistency of Large La
 
 
 ## Available Tools (3)
-- **analyze_output_stability**: Evaluates a collection of LLM responses to determine if their structural formats are consistent
 - **extract_structural_features**: Decomposes a raw text string into a set of discrete structural markers
+- **analyze_output_stability**: Evaluates a collection of LLM responses to determine if their structural formats are consistent
 - **get_structural_summary**: Provides a high-level overview of the most common structural patterns found in a set of responses
 
 

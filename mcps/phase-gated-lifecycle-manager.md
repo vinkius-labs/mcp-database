@@ -14,9 +14,9 @@ The Phase-Gated Lifecycle Manager acts as a deterministic state machine that gov
 
 
 ## Available Tools (3)
-- **check_phase_invariants**: Manually triggers the evaluation of all rules required for the current phase
 - **get_current_state**: Provides a snapshot of the agent's current standing within the lifecycle
 - **transition_to_next_phase**: Attempts to advance the workflow to the next logical state in the sequence
+- **check_phase_invariants**: Manually triggers the evaluation of all rules required for the current phase
 
 
 ## 💬 Prompt Examples

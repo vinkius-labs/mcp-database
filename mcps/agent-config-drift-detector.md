@@ -14,9 +14,9 @@ This MCP server ensures the integrity of LLM agent configurations by detecting '
 
 
 ## Available Tools (3)
-- **check_config_integrity**: Determines if the current agent configuration has deviated from its authorized baseline
 - **evaluate_risk_level**: Calculates the severity of a detected drift based on the nature of the changes
 - **get_drift_report**: Provides a detailed breakdown of the specific differences between two versions of a configuration
+- **check_config_integrity**: Determines if the current agent configuration has deviated from its authorized baseline
 
 
 ## 💬 Prompt Examples
