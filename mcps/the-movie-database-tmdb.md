@@ -45,6 +45,12 @@ Your AI acts as a personal entertainment database assistant — no more switchin
 
 
 ## Available Tools (15)
+- **discover_movies**: Find movies matching very specific criteria. Available filters: genre (genre IDs, comma-separated for OR), year, sortBy (popularity, rating, revenue, release date), vote_average.gte (minimum rating), with_companies (studio IDs, comma-separated), with_keywords (keyword IDs), primary_release_date.gte/lte (date range YYYY-MM-DD). Sort options: popularity.desc, popularity.asc, release_date.desc, release_date.asc, vote_average.desc, vote_average.asc, revenue.desc, revenue.asc, title.asc, title.desc. Use this for complex queries like "action movies from 2024 with rating above 7", "Warner Bros movies from the last year", or "horror movies sorted by rating". Genre IDs can be obtained from the get_genres tool. Company ID 17 = Warner Bros, 420 = Marvel Studios, 33 = Universal, etc.
+
+Discover movies with advanced filtering by genre, year, rating, studio, and more
+- **find_by_external_id**: The externalSource parameter must be one of: "imdb_id", "tvdb_id", "freebase_mid", "freebase_id", "tvrage_id", "wikidata_id". Returns matching movies, TV shows, and/or people from TMDb that have this external ID. Use this when you have an IMDb ID (like "tt0111161" for Shawshank Redemption) and want to find the corresponding TMDb entry. Common use case: converting IMDb IDs to TMDb IDs for use with other tools. IMDb IDs for movies start with "tt" followed by numbers (e.g., "tt0137523" for Fight Club). Results include all matching items across movies, TV, and people categories.
+
+Find movies, TV shows, or people using external IDs (IMDb, TVDb, etc)
 - **get_genres**: Each genre includes: id (numeric ID used for filtering in other tools) and name (localized genre name). Use this to get genre IDs needed for the discover_movies tool or to answer questions about available genres. Common movie genres: 28=Action, 12=Adventure, 16=Animation, 35=Comedy, 80=Crime, 18=Drama, 14=Fantasy, 27=Horror, 878=Science Fiction, 53=Thriller, 10749=Romance. The type parameter must be "movie" or "tv". Optional language parameter returns localized genre names.
 
 Get the complete list of movie or TV show genres with their IDs
@@ -57,39 +63,33 @@ Get complete cast and crew information for a specific movie
 - **get_movie_recommendations**: TMDb uses an algorithm that considers genre, keywords, cast, crew, and user rating patterns to suggest similar movies that fans of the original might enjoy. Each recommendation includes: title, release date, overview, poster path, vote average, vote count, and TMDb ID. Use this when users ask "if I liked X, what should I watch?", "movies similar to...", or "recommendations for...". The movieId is the TMDb ID of the reference movie. Results are paginated; use the page parameter to get more recommendations.
 
 Get movie recommendations based on a specific movie (similar titles)
-- **get_movie_videos**: Each video result includes: video key (YouTube ID), site (YouTube), type (Trailer, Teaser, Clip, Behind the Scenes, etc.), name, size (resolution), official status, and publish date. Use this when users want to watch trailers, find official promotional videos, or access movie video content. YouTube videos can be viewed at: https://www.youtube.com/watch?v={key}. The movieId is the TMDb movie ID.
-
-Get trailers, teasers, clips, and behind-the-scenes videos for a movie
 - **popular_movies**: Each movie includes: title, release date, overview, poster path, vote average, vote count, genre IDs, and TMDb ID. Use this when users ask "what movies are popular now?", "what is trending?", or want movie recommendations. Results are updated regularly based on TMDb user activity. Optional: page for pagination, region (ISO 3166-1 country code like "US", "BR") for country-specific popularity, and language for localized titles and descriptions.
 
 Get a list of currently popular movies on TMDb
 - **popular_tv**: Popularity is based on user activity, view counts, and trending data. Each TV show includes: name, first air date, overview, poster path, vote average, vote count, genre IDs, number of seasons, number of episodes, origin country, and TMDb ID. Use this when users ask "what TV shows are popular?", "what should I watch?", or want series recommendations. Optional: page for pagination and language for localized titles and descriptions.
 
 Get a list of currently popular TV shows on TMDb
-- **search_movies**: Returns movie titles, release dates, overview descriptions, poster images, vote averages, and TMDb IDs. Use this when users ask to find movies by title, search for films about a topic, or look up movies from a specific year. The query parameter is required and should be the movie title or search term. Optional parameters: year (YYYY format) to filter by release year, page for pagination (1-500), and language (ISO 639-1 code like "pt-BR", "en-US", "es") to get results in a specific language. Example: query="The Matrix", year="1999" returns the 1999 sci-fi classic.
-
-Search for movies by title, keyword, or phrase in the TMDb database
 - **search_multi**: Returns results from all three categories with a media_type field indicating the type ("movie", "tv", or "person"). Use this when users provide a general search term and you want to return all relevant results across content types. Ideal for broad queries like "Christopher Nolan" (returns movies directed by him + person profile) or "Star Wars" (returns movies + TV series). The query parameter is required. Optional: page for pagination and language for localized results.
 
 Search movies, TV shows, and people simultaneously in the TMDb database
-- **discover_movies**: Find movies matching very specific criteria. Available filters: genre (genre IDs, comma-separated for OR), year, sortBy (popularity, rating, revenue, release date), vote_average.gte (minimum rating), with_companies (studio IDs, comma-separated), with_keywords (keyword IDs), primary_release_date.gte/lte (date range YYYY-MM-DD). Sort options: popularity.desc, popularity.asc, release_date.desc, release_date.asc, vote_average.desc, vote_average.asc, revenue.desc, revenue.asc, title.asc, title.desc. Use this for complex queries like "action movies from 2024 with rating above 7", "Warner Bros movies from the last year", or "horror movies sorted by rating". Genre IDs can be obtained from the get_genres tool. Company ID 17 = Warner Bros, 420 = Marvel Studios, 33 = Universal, etc.
-
-Discover movies with advanced filtering by genre, year, rating, studio, and more
-- **search_tv**: Returns TV show names, first air dates, episode counts, overview descriptions, poster images, vote averages, and TMDb IDs. Use this when users ask to find TV series, look up shows by title, or search for programs about a specific topic. The query parameter is required. Optional: year to filter by first air date year, page for pagination, and language for localized results. Example: query="Breaking Bad" returns the critically acclaimed drama series.
-
-Search for TV shows by title or keyword in the TMDb database
 - **top_rated_movies**: These are the critically acclaimed films with the best user ratings. Each movie includes: title, release date, overview, vote average, vote count, poster path, genre IDs, and TMDb ID. Use this when users ask for "best movies ever", "top rated films", "highest rated movies", or want quality recommendations. This list includes classics like The Shawshank Redemption, The Godfather, and other critically acclaimed films. Optional: page for pagination and language for localized results.
 
 Get a list of the highest-rated movies of all time on TMDb
-- **find_by_external_id**: The externalSource parameter must be one of: "imdb_id", "tvdb_id", "freebase_mid", "freebase_id", "tvrage_id", "wikidata_id". Returns matching movies, TV shows, and/or people from TMDb that have this external ID. Use this when you have an IMDb ID (like "tt0111161" for Shawshank Redemption) and want to find the corresponding TMDb entry. Common use case: converting IMDb IDs to TMDb IDs for use with other tools. IMDb IDs for movies start with "tt" followed by numbers (e.g., "tt0137523" for Fight Club). Results include all matching items across movies, TV, and people categories.
-
-Find movies, TV shows, or people using external IDs (IMDb, TVDb, etc)
 - **top_rated_tv**: These are the most critically acclaimed series with the best user ratings. Each TV show includes: name, first air date, overview, vote average, vote count, poster path, number of seasons and episodes, and TMDb ID. Use this when users ask for "best TV shows ever", "top rated series", or want quality TV recommendations. This list includes acclaimed series like Breaking Bad, Band of Brothers, Chernobyl, and other top-rated shows. Optional: page for pagination and language for localized results.
 
 Get a list of the highest-rated TV shows of all time on TMDb
 - **trending**: The mediaType parameter can be: "movie", "tv", "person", or "all" (returns mixed results with media_type field). The timeWindow parameter can be: "day" (trending today) or "week" (trending this week). Each result includes: title/name, overview, poster path, vote average, popularity score, and media type. Use this when users ask "what is trending?", "what is popular today?", or want to see what is currently hot in entertainment. The trending algorithm considers user activity, page views, and search patterns on TMDb.
 
 Get trending content (movies, TV shows, or people) on TMDb for today or this week
+- **get_movie_videos**: Each video result includes: video key (YouTube ID), site (YouTube), type (Trailer, Teaser, Clip, Behind the Scenes, etc.), name, size (resolution), official status, and publish date. Use this when users want to watch trailers, find official promotional videos, or access movie video content. YouTube videos can be viewed at: https://www.youtube.com/watch?v={key}. The movieId is the TMDb movie ID.
+
+Get trailers, teasers, clips, and behind-the-scenes videos for a movie
+- **search_movies**: Returns movie titles, release dates, overview descriptions, poster images, vote averages, and TMDb IDs. Use this when users ask to find movies by title, search for films about a topic, or look up movies from a specific year. The query parameter is required and should be the movie title or search term. Optional parameters: year (YYYY format) to filter by release year, page for pagination (1-500), and language (ISO 639-1 code like "pt-BR", "en-US", "es") to get results in a specific language. Example: query="The Matrix", year="1999" returns the 1999 sci-fi classic.
+
+Search for movies by title, keyword, or phrase in the TMDb database
+- **search_tv**: Returns TV show names, first air dates, episode counts, overview descriptions, poster images, vote averages, and TMDb IDs. Use this when users ask to find TV series, look up shows by title, or search for programs about a specific topic. The query parameter is required. Optional: year to filter by first air date year, page for pagination, and language for localized results. Example: query="Breaking Bad" returns the critically acclaimed drama series.
+
+Search for TV shows by title or keyword in the TMDb database
 
 
 ## 💬 Prompt Examples

@@ -36,14 +36,14 @@ No more manual logging into the school dashboard for quick student or course che
 
 
 ## Available Tools (8)
-- **create_student**: Create a new student
 - **enroll_student**: Enroll a student in a product
-- **get_course_contents**: Get course contents
 - **get_student_details**: Get student details
-- **list_payments**: List all payments
-- **list_subscriptions**: List all student subscriptions
-- **list_students**: List all students
 - **list_courses**: List all courses
+- **list_payments**: List all payments
+- **list_students**: List all students
+- **create_student**: Create a new student
+- **get_course_contents**: Get course contents
+- **list_subscriptions**: List all student subscriptions
 
 
 ## 💬 Prompt Examples

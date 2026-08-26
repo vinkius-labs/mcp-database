@@ -35,17 +35,17 @@ Connect your **MRPLN** account to any AI agent to streamline your marketing auto
 
 ## Available Tools (10)
 - **create_customer**: Create a new customer/lead
-- **get_customer**: Get details for a specific customer
 - **get_tactic_performance**: Get performance analytics for a tactic
-- **list_customers**: List all customers/leads
 - **list_tactics**: List all marketing tactics
-- **list_waba_templates**: List WhatsApp Business templates
 - **send_email_message**: Send an email
-- **send_sms_message**: Send an SMS message
 - **send_whatsapp_message**: Pass components as a JSON string.
 
 Send a WhatsApp message
 - **update_customer**: Update an existing customer
+- **get_customer**: Get details for a specific customer
+- **list_customers**: List all customers/leads
+- **list_waba_templates**: List WhatsApp Business templates
+- **send_sms_message**: Send an SMS message
 
 
 ## 💬 Prompt Examples

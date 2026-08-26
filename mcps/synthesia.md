@@ -33,22 +33,22 @@ Bring the full power of synthetic enterprise video generation directly into your
 
 
 ## Available Tools (10)
-- **get_video_details**: Retrieves status and details for a specific video
-- **delete_video**: This action is irreversible.
-
-Permanently deletes a Synthesia video
-- **list_avatars**: Lists all available AI avatars
-- **get_template_details**: Retrieves details for a specific template
-- **list_voices**: Lists available AI voices
-- **dub_video**: Dubs an existing video into another language
-- **create_avatar_video**: Returns a video ID.
-
-Creates an AI avatar video from a script
 - **create_video_from_template**: Returns a video ID.
 
 Creates a video using a pre-defined Synthesia template
-- **list_videos**: Lists all videos in the account
+- **delete_video**: This action is irreversible.
+
+Permanently deletes a Synthesia video
+- **dub_video**: Dubs an existing video into another language
+- **get_video_details**: Retrieves status and details for a specific video
+- **list_avatars**: Lists all available AI avatars
+- **get_template_details**: Retrieves details for a specific template
+- **list_voices**: Lists available AI voices
+- **create_avatar_video**: Returns a video ID.
+
+Creates an AI avatar video from a script
 - **list_templates**: Lists available video templates
+- **list_videos**: Lists all videos in the account
 
 
 ## 💬 Prompt Examples

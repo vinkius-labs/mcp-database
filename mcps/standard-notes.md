@@ -33,6 +33,15 @@ Seamlessly integrate your highly secure **Standard Notes** environments directly
 
 
 ## Available Tools (10)
+- **create_note**: Provide plaintext title and text; encryption is handled by the sync layer.
+
+Creates a new encrypted note
+- **delete_item**: This action is irreversible.
+
+Permanently deletes an item (note, tag, or extension) by UUID
+- **tag_note**: Requires both the tag UUID and the note UUID.
+
+Associates a tag with a note
 - **list_notes**: Note content remains encrypted until decrypted with user keys.
 
 Lists all encrypted notes
@@ -40,17 +49,8 @@ Lists all encrypted notes
 - **sync_items**: Use the sync_token from the previous response.
 
 Performs a Standard Notes sync operation
-- **tag_note**: Requires both the tag UUID and the note UUID.
-
-Associates a tag with a note
 - **update_note**: Updates an existing note by UUID
-- **create_note**: Provide plaintext title and text; encryption is handled by the sync layer.
-
-Creates a new encrypted note
 - **create_tag**: Creates a new tag
-- **delete_item**: This action is irreversible.
-
-Permanently deletes an item (note, tag, or extension) by UUID
 - **get_auth_parameters**: Retrieves authentication parameters for an account email
 - **get_item_details**: Retrieves a specific item (note, tag, or extension) by UUID
 
