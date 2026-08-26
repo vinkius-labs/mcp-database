@@ -35,20 +35,20 @@ Your AI agent eliminates the clunky Merchant Interface, managing daily financial
 
 
 ## Available Tools (10)
+- **auth_only_transaction**: Place a temporary authorization hold on a credit card
+- **get_customer_profile**: Retrieve details of a Customer Information Manager (CIM) profile
+- **get_transaction_details**: Get comprehensive details of a specific gateway transaction
+- **void_transaction**: Void an unsettled Authorize.net transaction
 - **add_payment_profile**: Add a payment card to an existing CIM customer profile
 - **auth_capture_transaction**: Perform an Authorize.net authorization and capture transaction
-- **auth_only_transaction**: Place a temporary authorization hold on a credit card
-- **prior_auth_capture**: Capture a previously authorized transaction hold
 - **create_customer_profile**: net before securely attaching payment cards.
 
 Create a new Customer Information Manager (CIM) profile
-- **get_customer_profile**: Retrieve details of a Customer Information Manager (CIM) profile
-- **get_transaction_details**: Get comprehensive details of a specific gateway transaction
 - **get_unsettled_transactions**: List all unsettled transactions pending batch closure
+- **prior_auth_capture**: Capture a previously authorized transaction hold
 - **refund_transaction**: You must pass the original transaction ID, the refund amount, and the original masked or raw PAN and expiration.
 
 Refund an already settled Authorize.net transaction
-- **void_transaction**: Void an unsettled Authorize.net transaction
 
 
 ## 💬 Prompt Examples

@@ -36,16 +36,16 @@ Connect your **ActiveCampaign** account to your AI agent to unlock powerful mark
 
 ## Available Tools (5)
 - **list_contacts**: Retrieve and search active contacts in ActiveCampaign, optionally filtering by email address
-- **create_contact**: Only email is strictly required.
-
-Add a new person to your ActiveCampaign account with basic profile details
 - **list_deals**: Retrieve active opportunities and deals from your ActiveCampaign sales pipeline
-- **add_contact_to_list**: Requires both the Contact ID and the List ID.
-
-Subscribe an existing ActiveCampaign contact to a specific mailing list
 - **add_tag_to_contact**: Requires both the Contact ID and the Tag ID.
 
 Apply a specific tag to an ActiveCampaign contact profile
+- **add_contact_to_list**: Requires both the Contact ID and the List ID.
+
+Subscribe an existing ActiveCampaign contact to a specific mailing list
+- **create_contact**: Only email is strictly required.
+
+Add a new person to your ActiveCampaign account with basic profile details
 
 
 ## 💬 Prompt Examples

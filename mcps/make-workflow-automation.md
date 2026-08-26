@@ -35,17 +35,17 @@ Connect your **Make** account to any AI agent and take full control of your visu
 
 
 ## Available Tools (7)
-- **list_scenarios**: Check the list of organizations if org_id is unknown.
-
-List Make scenarios
 - **get_scenario**: Get Make scenario details
-- **list_teams**: Needs org_id.
-
-List Make teams inside an organization
 - **list_scenario_logs**: Helps debug automation errors.
 
 Get execution logs of a Make scenario
 - **list_data_stores**: List Make data stores
+- **list_scenarios**: Check the list of organizations if org_id is unknown.
+
+List Make scenarios
+- **list_teams**: Needs org_id.
+
+List Make teams inside an organization
 - **list_connections**: List Make connections linked to an organization
 - **list_organizations**: List Make organizations for the current authenticated user
 

@@ -32,15 +32,15 @@ Essential for **frequent travelers**, **travel agents**, **airport staff**, and 
 
 
 ## Available Tools (3)
-- **get_flight_schedule**: Returns flight numbers, departure/arrival times, aircraft types, and service classes. Use this to plan travel, find alternative flights if one is full, or compare schedule options.
-
-Get flight schedule between two airports on a specific date
 - **get_flight_status**: Use this to track your flight, check on a relative's arrival, or monitor delays. Requires flight number (e.g., 123 or AA123) and date (YYYY-MM-DD).
 
 Get real-time status of a specific American Airlines flight
 - **get_airport_info**: Useful for checking terminal layouts or finding specific amenities at a hub airport.
 
 Get information about an airport served by American Airlines
+- **get_flight_schedule**: Returns flight numbers, departure/arrival times, aircraft types, and service classes. Use this to plan travel, find alternative flights if one is full, or compare schedule options.
+
+Get flight schedule between two airports on a specific date
 
 
 ## 💬 Prompt Examples

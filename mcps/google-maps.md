@@ -37,8 +37,8 @@ Connect your **Google Maps Platform** account to any AI agent and take full cont
 
 ## Available Tools (4)
 - **geocode**: Convert an address or location name into precise geographic coordinates (Latitude / Longitude)
-- **place_search**: Search for businesses, restaurants, or spots (e.g. "Pizza in New York", "Hospitals near me")
 - **place_details**: Get deep details of a specific Place (Phone number, reviews, opening hours, website) using its PlaceID
+- **place_search**: Search for businesses, restaurants, or spots (e.g. "Pizza in New York", "Hospitals near me")
 - **directions**: Calculate ETA, distance, and optimal route directions between origin and destination
 
 

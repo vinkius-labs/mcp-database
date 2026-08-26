@@ -36,24 +36,24 @@ Connect your **Cal.com** account to any AI agent and orchestrate your scheduling
 
 ## Available Tools (10)
 - **list_memberships**: List organization and team memberships
-- **cancel_booking**: This action cannot be undone.
-
-Cancel an existing booking
-- **create_booking**: The start time must be within an available slot.
-
-Create a new booking on a specific event type
 - **create_event_type**: Create a new event type (meeting template)
 - **get_booking**: Get detailed information about a specific booking
-- **get_event_type**: Get detailed configuration of a specific event type
 - **get_current_user**: com profile information including name, email, timezone, and default schedule.
 
 Retrieve the authenticated user profile
+- **get_event_type**: Get detailed configuration of a specific event type
 - **get_schedules**: Each event type references one schedule.
 
 List all availability schedules
 - **list_bookings**: Use to audit your calendar schedule.
 
 List all bookings on your Cal.com account
+- **cancel_booking**: This action cannot be undone.
+
+Cancel an existing booking
+- **create_booking**: The start time must be within an available slot.
+
+Create a new booking on a specific event type
 - **list_event_types**: Use to discover bookable event types.
 
 List all event types (meeting templates)

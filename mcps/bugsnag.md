@@ -35,16 +35,16 @@ Connect your **BugSnag** account to any AI agent and orchestrate your error moni
 
 
 ## Available Tools (10)
+- **list_collaborators**: List collaborators in an organization
+- **list_projects**: List all projects in an organization
 - **get_error**: Get details of a specific error group
 - **get_event**: Get details of a specific error event
 - **get_project**: Get details of a specific project
 - **get_project_stats**: Get error trends and statistics for a project
 - **list_release_stages**: List release stages configured for a project
-- **list_collaborators**: List collaborators in an organization
 - **list_errors**: List error groups for a project
 - **list_events**: List individual error events for a project
 - **list_organizations**: List all organizations you have access to
-- **list_projects**: List all projects in an organization
 
 
 ## 💬 Prompt Examples

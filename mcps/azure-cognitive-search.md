@@ -33,13 +33,13 @@ Connect your **Azure Cognitive Search** endpoints to any AI agent and bring the 
 
 
 ## Available Tools (7)
-- **list_indexes**: List Azure Search indexes
-- **get_index**: Get Azure Cognitive Search index details
 - **search_documents**: Execute lexical full-text queries against Azure cognitive indexes
-- **vector_search**: Perform structural KNN vector searches against Azure embedding profiles
-- **get_document**: Retrieve an exact single document mapped explicitly by its UUID key
 - **list_indexers**: List explicitly scheduled Azure Search indexers
 - **list_skillsets**: List Cognitive Services skillsets orchestrating text enrichments
+- **get_document**: Retrieve an exact single document mapped explicitly by its UUID key
+- **get_index**: Get Azure Cognitive Search index details
+- **list_indexes**: List Azure Search indexes
+- **vector_search**: Perform structural KNN vector searches against Azure embedding profiles
 
 
 ## 💬 Prompt Examples

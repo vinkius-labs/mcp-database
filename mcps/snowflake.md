@@ -34,19 +34,19 @@ Connect your **Snowflake** account to any AI agent to automate your data cloud o
 
 
 ## Available Tools (11)
-- **cancel_sql**: Cancel a running SQL statement
 - **describe_table**: Get table schema details
+- **list_databases**: List all accessible databases
+- **list_schemas**: List schemas in a database
+- **list_users**: List Snowflake users
 - **execute_sql**: Returns the first partition of results or a handle for long-running queries.
 
 Execute a SQL statement in Snowflake
 - **get_session_context**: Get current session context
 - **get_statement_status**: Check the status of a SQL statement
-- **list_databases**: List all accessible databases
 - **list_roles**: List security roles
-- **list_schemas**: List schemas in a database
 - **list_tables**: List tables in a schema or database
-- **list_users**: List Snowflake users
 - **list_warehouses**: List compute warehouses
+- **cancel_sql**: Cancel a running SQL statement
 
 
 ## 💬 Prompt Examples

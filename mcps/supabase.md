@@ -33,22 +33,27 @@ Integrate the comprehensive backend infrastructure of **Supabase** straight into
 
 
 ## Available Tools (13)
-- **list_auth_users**: List authenticated users from Supabase Auth
+- **create_storage_bucket**: Optionally make it public for unauthenticated reads.
+
+Create a new storage bucket
+- **db_select**: For filters, use match_query (e.g. "id=eq.1"). Defaults to 50 rows.
+
+Query records from any PostgreSQL database table using PostgREST syntax
+- **get_auth_user**: Get detailed information about a specific authenticated user
+- **list_storage_files**: List files inside a storage bucket
 - **db_count**: Useful for pagination and analytics.
 
 Count rows in a database table with optional filters
 - **db_delete**: A match_query is mandatory. This action is irreversible.
 
 Delete rows from a database table
+- **list_auth_users**: List authenticated users from Supabase Auth
 - **db_insert**: Provide the payload as a JSON string.
 
 Insert a new row into a database table
 - **db_rpc**: Provide the function name and optional JSON arguments.
 
 Execute a Supabase Postgres Function (RPC)
-- **db_select**: For filters, use match_query (e.g. "id=eq.1"). Defaults to 50 rows.
-
-Query records from any PostgreSQL database table using PostgREST syntax
 - **db_update**: A match_query is required to target specific rows (e.g. "id=eq.123").
 
 Update existing rows in a database table
@@ -56,14 +61,9 @@ Update existing rows in a database table
 - **delete_auth_user**: Requires service_role key. This action is irreversible.
 
 Delete an authenticated user permanently
-- **create_storage_bucket**: Optionally make it public for unauthenticated reads.
-
-Create a new storage bucket
 - **delete_storage_file**: Provide a comma-separated list of file paths.
 
 Delete files from a storage bucket
-- **get_auth_user**: Get detailed information about a specific authenticated user
-- **list_storage_files**: List files inside a storage bucket
 
 
 ## 💬 Prompt Examples

@@ -35,18 +35,18 @@ Connect your **Amazon Selling Partner (SP-API)** account to your AI agent to unl
 
 
 ## Available Tools (10)
-- **list_fba_inventory**: List FBA inventory
 - **search_catalog**: Search Amazon catalog
 - **get_catalog_item**: Get catalog item
-- **create_report**: g. GET_MERCHANT_LISTINGS_ALL_DATA).
-
-Request a report
 - **get_report_status**: Check report status
 - **list_financial_events**: List financial events
 - **list_marketplaces**: List marketplaces
-- **list_product_types**: List product types
-- **list_orders**: List Amazon orders
+- **create_report**: g. GET_MERCHANT_LISTINGS_ALL_DATA).
+
+Request a report
 - **get_order_items**: Get order items
+- **list_fba_inventory**: List FBA inventory
+- **list_orders**: List Amazon orders
+- **list_product_types**: List product types
 
 
 ## 💬 Prompt Examples

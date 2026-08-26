@@ -25,12 +25,15 @@ The most powerful Salesforce integration — **raw SOQL access** to any data in 
 
 
 ## Available Tools (6)
-- **sf_get_dashboard**: Each component includes its type, header, data values, and the source report. Dashboards provide pre-built visual summaries. Get the dashboard ID from sf_list_dashboards. Use when the user asks "show me the sales dashboard" or wants a visual summary of specific metrics.
-
-Get all component data from a specific Salesforce dashboard — charts, metrics, and tables with their underlying data
 - **sf_record_count**: Returns the total number of records. Use for quick data volume checks: "how many leads do we have?", "total number of accounts", or capacity planning. Accepts any standard or custom object API name.
 
 Get the total record count for any Salesforce object — Account, Contact, Lead, Opportunity, Case, or any custom object
+- **sf_run_soql**: This is the most powerful and flexible tool — you can query any standard or custom object, apply filters, use aggregate functions, and join related objects. Example: SELECT Id, Name, Amount, StageName FROM Opportunity WHERE StageName = 'Closed Won' AND Amount > 10000 LIMIT 10. Use when no other tool covers the specific data need, or when the user requests a custom query.
+
+Execute a raw SOQL query against your Salesforce org to retrieve any data from standard or custom objects
+- **sf_get_dashboard**: Each component includes its type, header, data values, and the source report. Dashboards provide pre-built visual summaries. Get the dashboard ID from sf_list_dashboards. Use when the user asks "show me the sales dashboard" or wants a visual summary of specific metrics.
+
+Get all component data from a specific Salesforce dashboard — charts, metrics, and tables with their underlying data
 - **sf_list_dashboards**: Returns dashboard title, folder, last referenced date, and dashboard ID. Dashboards contain visual components (charts, tables, metrics) built from reports. Use to find dashboard IDs before fetching their component data with sf_get_dashboard.
 
 List available Salesforce dashboards with title, folder, and last referenced date to discover visualization assets
@@ -40,9 +43,6 @@ List available Salesforce reports with name, folder, format, and last run date t
 - **sf_run_report**: Get the report ID from sf_list_reports first. This is the read-only equivalent of clicking "Run Report" in the Salesforce UI. Returns up to 2000 rows. Use when the user asks for specific report data or wants to extract insights from a saved report.
 
 Execute a specific Salesforce report by ID and return its full data — all rows, columns, and groupings
-- **sf_run_soql**: This is the most powerful and flexible tool — you can query any standard or custom object, apply filters, use aggregate functions, and join related objects. Example: SELECT Id, Name, Amount, StageName FROM Opportunity WHERE StageName = 'Closed Won' AND Amount > 10000 LIMIT 10. Use when no other tool covers the specific data need, or when the user requests a custom query.
-
-Execute a raw SOQL query against your Salesforce org to retrieve any data from standard or custom objects
 
 
 ## 💬 Prompt Examples
