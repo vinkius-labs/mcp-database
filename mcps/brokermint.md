@@ -34,15 +34,15 @@ Connect your **Brokermint** account to any AI agent and orchestrate your real es
 
 
 ## Available Tools (10)
-- **list_users**: List all users/agents in the account
 - **create_contact**: Create a new contact
-- **create_transaction**: Create a new real estate transaction
 - **get_account_info**: Retrieve core account information
+- **list_commissions**: List commissions for a specific transaction
+- **create_transaction**: Create a new real estate transaction
 - **get_contact**: Get details of a specific contact
 - **get_transaction**: Get details of a specific transaction
-- **list_commissions**: List commissions for a specific transaction
 - **list_contacts**: List all contacts (buyers, sellers, etc)
 - **list_transactions**: List all real estate transactions
+- **list_users**: List all users/agents in the account
 - **update_transaction**: Update an existing transaction
 
 

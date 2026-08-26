@@ -36,13 +36,13 @@ Connect your **Agendor** account to your AI agent to unlock professional sales o
 
 ## Available Tools (6)
 - **list_people**: Retrieve a comprehensive directory of person profiles registered in your Agendor CRM
+- **create_organization**: Instantiate a new organization record securely within Agendor
 - **create_person**: Can optionally link the person to a company.
 
 Instantiate a new person profile natively within the Agendor CRM
 - **list_organizations**: Retrieve a directory of institutional organizations, companies, and business entities in the CRM
-- **create_organization**: Instantiate a new organization record securely within Agendor
-- **list_deals**: Retrieve highly active sales opportunities and negotiation pipelines tracked in Agendor
 - **list_tasks**: Retrieve the chronological queue of upcoming activities and follow-ups scheduled for the team
+- **list_deals**: Retrieve highly active sales opportunities and negotiation pipelines tracked in Agendor
 
 
 ## 💬 Prompt Examples

@@ -37,9 +37,6 @@ No more navigating complex management portals for simple identity lookups. Your 
 
 
 ## Available Tools (11)
-- **create_enrollment_invitation**: Pass the invitation details as a JSON string in "body_json" (requires userId and partNumber).
-
-Send a new invitation to a user for mobile identity enrollment
 - **get_audit_log_events**: Useful for security monitoring and troubleshooting enrollment issues.
 
 Retrieve the history of administrative and access events
@@ -51,11 +48,14 @@ Retrieve the history of administrative and access events
 - **list_mobile_identities**: Monitor issuance and activation status.
 
 List all issued mobile identities (digital cards)
+- **create_enrollment_invitation**: Pass the invitation details as a JSON string in "body_json" (requires userId and partNumber).
+
+Send a new invitation to a user for mobile identity enrollment
 - **list_access_readers**: List all IoT readers and door controllers connected to HID Origo
-- **list_physical_credentials**: List physical access credentials (cards, fobs) managed in the system
 - **list_identity_users**: Use this to find the user ID for credential or mobile identity assignment.
 
 List all users managed in the HID Origo tenant
+- **list_physical_credentials**: List physical access credentials (cards, fobs) managed in the system
 
 
 ## 💬 Prompt Examples

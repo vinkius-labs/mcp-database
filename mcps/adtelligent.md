@@ -35,11 +35,11 @@ Connect your **Adtelligent** account to your AI agent to unlock professional adt
 
 
 ## Available Tools (3)
-- **list_advertisers**: List DSP advertisers
 - **list_campaigns**: List DSP campaigns
 - **get_ssp_report**: Requires SSP Auth Token.
 
 Get SSP performance statistics
+- **list_advertisers**: List DSP advertisers
 
 
 ## 💬 Prompt Examples

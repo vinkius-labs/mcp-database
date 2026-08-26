@@ -32,16 +32,16 @@ Connect your AI to **Collect**, the secure platform for gathering information an
 
 
 ## Available Tools (10)
-- **send_message**: Send a message to a recipient regarding a specific request
-- **create_request**: Send a new data collection request to a recipient
 - **get_campaign**: Retrieve detailed information about a specific campaign
+- **list_requests**: Retrieve all data requests for a specific campaign
+- **create_request**: Send a new data collection request to a recipient
+- **send_message**: Send a message to a recipient regarding a specific request
 - **get_element_details**: Retrieve details of a specific element (field/block) in a request
 - **get_request**: Retrieve details of a specific data request
 - **get_team_info**: Retrieve information about your team in Collect
 - **get_user_info**: Retrieve information about the currently authenticated user
 - **list_campaigns**: Retrieve a list of all data collection campaigns in Collect
 - **list_messages**: Retrieve a list of messages sent through Collect
-- **list_requests**: Retrieve all data requests for a specific campaign
 
 
 ## 💬 Prompt Examples

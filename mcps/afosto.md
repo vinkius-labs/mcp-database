@@ -35,10 +35,10 @@ Connect your **Afosto Retail Engine** account to your AI agent to unlock enterpr
 
 
 ## Available Tools (4)
-- **list_orders**: Retrieve recent multi-channel eCommerce orders aggregated by Afosto
-- **list_inventory**: Retrieve real-time inventory and stock levels aggregated by warehouse distribution
-- **list_products**: Retrieve the complete product catalog, highlighting active variants and their pricing
 - **list_customers**: Retrieve centralized customer profile data and their historic eCommerce behavior
+- **list_orders**: Retrieve recent multi-channel eCommerce orders aggregated by Afosto
+- **list_products**: Retrieve the complete product catalog, highlighting active variants and their pricing
+- **list_inventory**: Retrieve real-time inventory and stock levels aggregated by warehouse distribution
 
 
 ## 💬 Prompt Examples

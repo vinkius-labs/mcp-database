@@ -45,6 +45,101 @@ Your AI becomes a US energy analyst, helping you understand grid operations, tra
 
 
 ## Available Tools (12)
+- **get_fuel_mix**: ) for any supported US ISO. Essential for understanding where electricity comes from and tracking the renewable energy transition.
+
+USE WHEN:
+- User asks about the energy mix or generation breakdown
+- User wants to know how much power comes from solar, wind, coal, etc.
+- User asks about renewable energy percentage
+- User needs to compare fossil vs clean energy generation
+
+SUPPORTED ISOs WITH FUEL MIX:
+- ercot (Texas), caiso (California), isone (New England)
+
+PARAMETERS:
+- iso (REQUIRED): ISO identifier: ercot, caiso, or isone
+- start (OPTIONAL): Start date
+- end (OPTIONAL): End date
+- limit (OPTIONAL): Maximum rows
+- timezone (OPTIONAL): Timezone for results
+
+EXAMPLES:
+- "What is Texas energy mix right now?" → call with iso="ercot", start="latest"
+- "Show Californiaia renewable generation today" → call with iso="caiso", start="2026-04-07"
+- "New England fuel mix this week" → call with iso="isone", start="2026-04-01", limit=168
+
+Get electricity generation by fuel source (energy mix) for a US ISO
+- **get_load_data**: Shows how much electricity is being consumed across the grid region.
+
+USE WHEN:
+- User asks about electricity demand or consumption for an ISO
+- User needs load data for a specific time period
+- User wants to compare load across different regions
+- User asks how much electricity is being used in Texas, California, etc.
+
+SUPPORTED ISOs:
+- ercot (Texas), caiso (California), pjm (Mid-Atlantic), miso (Midwest)
+- nyiso (New York), isone (New England), spp (Southwest)
+
+PARAMETERS:
+- iso (REQUIRED): ISO identifier (lowercase): ercot, caiso, pjm, miso, nyiso, isone, spp
+- start (OPTIONAL): Start date in YYYY-MM-DD or ISO 8601 format
+- end (OPTIONAL): End date in YYYY-MM-DD or ISO 8601 format
+- limit (OPTIONAL): Maximum number of rows to return (default varies by plan)
+- timezone (OPTIONAL): Timezone for results ("market" for ISO local time, or standard like "US/Eastern")
+
+EXAMPLES:
+- "What is current electricity demand in Texas?" → call with iso="ercot", start="latest"
+- "Show PJM load for yesterday" → call with iso="pjm", start="2026-04-06", end="2026-04-07"
+- "California load data this week" → call with iso="caiso", start="2026-04-01", limit=168
+
+Get electricity load/demand data for a specific US ISO
+- **get_realtime_spp**: Shows the most current wholesale electricity prices at trading hubs and zones in the Texas grid.
+
+USE WHEN:
+- User asks about current/real-time Texas electricity prices
+- User needs 15-minute interval SPP data for ERCOT
+- User wants to track price spikes or negative pricing in Texas
+- User asks about live ERCOT hub prices
+
+PARAMETERS:
+- start (OPTIONAL): Start date/time (use "latest" for most recent)
+- end (OPTIONAL): End date/time
+- limit (OPTIONAL): Maximum rows (recommended for real-time data)
+- timezone (OPTIONAL): Timezone
+
+EXAMPLES:
+- "Current ERCOT SPP at Houston hub" → call with start="latest", limit=4, filter_column="Settlement Point", filter_value="HB_HOUSTON"
+- "Last hour of Texas real-time prices" → call with start="latest", limit=4
+- "ERCOT West hub prices today" → call with start="2026-04-07", filter_column="Settlement Point", filter_value="HB_WEST"
+
+Get ERCOT real-time 15-minute Settlement Point Price (SPP) data
+- **query_dataset**: Use this when specific data needs are not covered by the specialized tools.
+
+USE WHEN:
+- User needs data from a specific dataset not covered by other tools
+- User wants custom filtering or resampling
+- User has a specific dataset identifier and needs flexible querying
+- User needs advanced filter operators
+
+PARAMETERS:
+- dataset_id (REQUIRED): Full dataset identifier (e.g. "pjm_load", "ercot_fuel_mix")
+- start (OPTIONAL): Start date
+- end (OPTIONAL): End date
+- limit (OPTIONAL): Maximum rows
+- timezone (OPTIONAL): Timezone for results
+- filter_column (OPTIONAL): Column name to filter on
+- filter_value (OPTIONAL): Value to filter by
+- filter_operator (OPTIONAL): Filter operator (=, !=, >, <, >=, <=, in)
+- resample (OPTIONAL): Resampling interval (e.g. "1 hour", "1 day")
+- resample_function (OPTIONAL): Aggregation function (mean, sum, min, max)
+
+EXAMPLES:
+- "Query pjm_load for last week" → call with dataset_id="pjm_load", start="2026-03-31", limit=168
+- "ERCOT fuel mix resampled daily" → call with dataset_id="ercot_fuel_mix", start="2026-04-01", resample="1 day", resample_function="mean"
+- "CAISO load filtered for SDGE zone" → call with dataset_id="caiso_load", start="2026-04-07", filter_column="location", filter_value="SDGE"
+
+Query any GridStatus dataset with custom filters and parameters
 - **get_api_usage**: Shows how many rows you've queried and your remaining allowance.
 
 USE WHEN:
@@ -96,30 +191,6 @@ EXAMPLES:
 - "Date range for CAISO LMP" → call with dataset_id="caiso_lmp_day_ahead_hourly"
 
 Get metadata for a specific GridStatus dataset
-- **get_fuel_mix**: ) for any supported US ISO. Essential for understanding where electricity comes from and tracking the renewable energy transition.
-
-USE WHEN:
-- User asks about the energy mix or generation breakdown
-- User wants to know how much power comes from solar, wind, coal, etc.
-- User asks about renewable energy percentage
-- User needs to compare fossil vs clean energy generation
-
-SUPPORTED ISOs WITH FUEL MIX:
-- ercot (Texas), caiso (California), isone (New England)
-
-PARAMETERS:
-- iso (REQUIRED): ISO identifier: ercot, caiso, or isone
-- start (OPTIONAL): Start date
-- end (OPTIONAL): End date
-- limit (OPTIONAL): Maximum rows
-- timezone (OPTIONAL): Timezone for results
-
-EXAMPLES:
-- "What is Texas energy mix right now?" → call with iso="ercot", start="latest"
-- "Show Californiaia renewable generation today" → call with iso="caiso", start="2026-04-07"
-- "New England fuel mix this week" → call with iso="isone", start="2026-04-01", limit=168
-
-Get electricity generation by fuel source (energy mix) for a US ISO
 - **get_lmp_data**: LMP is measured in dollars per megawatt-hour ($/MWh).
 
 USE WHEN:
@@ -146,80 +217,6 @@ EXAMPLES:
 - "MISO hourly prices this week" → call with iso="miso", start="2026-04-01", limit=168
 
 Get day-ahead Locational Marginal Pricing (LMP) data for a US ISO
-- **list_datasets**: Shows dataset identifiers, coverage dates, and available columns.
-
-USE WHEN:
-- User wants to explore what data is available in GridStatus
-- User needs to find dataset identifiers for querying
-- User is exploring the API capabilities for the first time
-- User asks what ISOs and data types are supported
-
-SUPPORTED ISOS:
-- ERCOT (Texas), CAISO (California), PJM (Mid-Atlantic/Midwest)
-- MISO (Midwest), NYISO (New York), ISO-NE (New England), SPP (Southwest)
-
-DATASET TYPES:
-- load (electricity demand), fuel_mix (generation by source)
-- lmp (locational marginal pricing), spp (settlement point prices)
-- capacity, standardized data
-
-EXAMPLES:
-- "What datasets are available?" → call with no params
-- "Show me all dataset identifiers" → call with no params
-- "List all supported ISOs" → call with no params
-
-List all available datasets in the GridStatus API
-- **get_load_data**: Shows how much electricity is being consumed across the grid region.
-
-USE WHEN:
-- User asks about electricity demand or consumption for an ISO
-- User needs load data for a specific time period
-- User wants to compare load across different regions
-- User asks how much electricity is being used in Texas, California, etc.
-
-SUPPORTED ISOs:
-- ercot (Texas), caiso (California), pjm (Mid-Atlantic), miso (Midwest)
-- nyiso (New York), isone (New England), spp (Southwest)
-
-PARAMETERS:
-- iso (REQUIRED): ISO identifier (lowercase): ercot, caiso, pjm, miso, nyiso, isone, spp
-- start (OPTIONAL): Start date in YYYY-MM-DD or ISO 8601 format
-- end (OPTIONAL): End date in YYYY-MM-DD or ISO 8601 format
-- limit (OPTIONAL): Maximum number of rows to return (default varies by plan)
-- timezone (OPTIONAL): Timezone for results ("market" for ISO local time, or standard like "US/Eastern")
-
-EXAMPLES:
-- "What is current electricity demand in Texas?" → call with iso="ercot", start="latest"
-- "Show PJM load for yesterday" → call with iso="pjm", start="2026-04-06", end="2026-04-07"
-- "California load data this week" → call with iso="caiso", start="2026-04-01", limit=168
-
-Get electricity load/demand data for a specific US ISO
-- **query_dataset**: Use this when specific data needs are not covered by the specialized tools.
-
-USE WHEN:
-- User needs data from a specific dataset not covered by other tools
-- User wants custom filtering or resampling
-- User has a specific dataset identifier and needs flexible querying
-- User needs advanced filter operators
-
-PARAMETERS:
-- dataset_id (REQUIRED): Full dataset identifier (e.g. "pjm_load", "ercot_fuel_mix")
-- start (OPTIONAL): Start date
-- end (OPTIONAL): End date
-- limit (OPTIONAL): Maximum rows
-- timezone (OPTIONAL): Timezone for results
-- filter_column (OPTIONAL): Column name to filter on
-- filter_value (OPTIONAL): Value to filter by
-- filter_operator (OPTIONAL): Filter operator (=, !=, >, <, >=, <=, in)
-- resample (OPTIONAL): Resampling interval (e.g. "1 hour", "1 day")
-- resample_function (OPTIONAL): Aggregation function (mean, sum, min, max)
-
-EXAMPLES:
-- "Query pjm_load for last week" → call with dataset_id="pjm_load", start="2026-03-31", limit=168
-- "ERCOT fuel mix resampled daily" → call with dataset_id="ercot_fuel_mix", start="2026-04-01", resample="1 day", resample_function="mean"
-- "CAISO load filtered for SDGE zone" → call with dataset_id="caiso_load", start="2026-04-07", filter_column="location", filter_value="SDGE"
-
-Query any GridStatus dataset with custom filters and parameters
 - **get_realtime_lmp**: This is the most granular and up-to-date pricing data available.
 
 USE WHEN:
@@ -244,26 +241,6 @@ EXAMPLES:
 - "Last hour of real-time MISO prices" → call with iso="miso", start="latest", limit=12
 
 Get real-time 5-minute LMP data for a US ISO
-- **get_realtime_spp**: Shows the most current wholesale electricity prices at trading hubs and zones in the Texas grid.
-
-USE WHEN:
-- User asks about current/real-time Texas electricity prices
-- User needs 15-minute interval SPP data for ERCOT
-- User wants to track price spikes or negative pricing in Texas
-- User asks about live ERCOT hub prices
-
-PARAMETERS:
-- start (OPTIONAL): Start date/time (use "latest" for most recent)
-- end (OPTIONAL): End date/time
-- limit (OPTIONAL): Maximum rows (recommended for real-time data)
-- timezone (OPTIONAL): Timezone
-
-EXAMPLES:
-- "Current ERCOT SPP at Houston hub" → call with start="latest", limit=4, filter_column="Settlement Point", filter_value="HB_HOUSTON"
-- "Last hour of Texas real-time prices" → call with start="latest", limit=4
-- "ERCOT West hub prices today" → call with start="2026-04-07", filter_column="Settlement Point", filter_value="HB_WEST"
-
-Get ERCOT real-time 15-minute Settlement Point Price (SPP) data
 - **get_spp_data**: SPP is similar to LMP but specific to ERCOT's market design, showing prices at trading hubs, load zones, and resource zones.
 
 USE WHEN:
@@ -310,6 +287,29 @@ EXAMPLES:
 - "PJM hourly load yesterday" → call with iso="pjm", start="2026-04-06", end="2026-04-07"
 
 Get standardized hourly data for a US ISO with consistent column naming
+- **list_datasets**: Shows dataset identifiers, coverage dates, and available columns.
+
+USE WHEN:
+- User wants to explore what data is available in GridStatus
+- User needs to find dataset identifiers for querying
+- User is exploring the API capabilities for the first time
+- User asks what ISOs and data types are supported
+
+SUPPORTED ISOS:
+- ERCOT (Texas), CAISO (California), PJM (Mid-Atlantic/Midwest)
+- MISO (Midwest), NYISO (New York), ISO-NE (New England), SPP (Southwest)
+
+DATASET TYPES:
+- load (electricity demand), fuel_mix (generation by source)
+- lmp (locational marginal pricing), spp (settlement point prices)
+- capacity, standardized data
+
+EXAMPLES:
+- "What datasets are available?" → call with no params
+- "Show me all dataset identifiers" → call with no params
+- "List all supported ISOs" → call with no params
+
+List all available datasets in the GridStatus API
 
 
 ## 💬 Prompt Examples

@@ -36,16 +36,16 @@ No more manual logging into support portals to update FAQs or check bot logs. Yo
 
 
 ## Available Tools (11)
-- **add_aidbase_faq_item**: Add FAQ to knowledge base
 - **add_aidbase_website_knowledge**: Add a website to knowledge base
 - **check_aidbase_status**: Check API Status
-- **get_aidbase_chatbot**: Get Chatbot details
-- **get_aidbase_inbox**: Get AI Inbox details
-- **list_aidbase_chatbot_knowledge**: List Chatbot knowledge items
 - **list_aidbase_chatbots**: List all AI Chatbots
 - **list_aidbase_inboxes**: List Email AI Inboxes
 - **list_aidbase_inbox_knowledge**: List Inbox knowledge items
 - **list_aidbase_knowledge**: List all Knowledge items
+- **add_aidbase_faq_item**: Add FAQ to knowledge base
+- **get_aidbase_chatbot**: Get Chatbot details
+- **get_aidbase_inbox**: Get AI Inbox details
+- **list_aidbase_chatbot_knowledge**: List Chatbot knowledge items
 - **send_aidbase_reply**: Send a message to a Chatbot
 
 

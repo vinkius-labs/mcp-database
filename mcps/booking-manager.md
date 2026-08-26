@@ -35,16 +35,16 @@ Connect your **Booking Manager (MMK Systems)** account to any AI agent and orche
 
 
 ## Available Tools (10)
-- **check_availability**: Check yacht availability for specific dates
-- **create_booking**: Create a new reservation or option
 - **get_extras**: List available extras for a yacht
 - **get_offers**: Get automated price offers
-- **get_prices**: Calculate prices and quotes for a yacht
 - **get_yacht**: Get details of a specific yacht
 - **list_bases**: List all charter bases (marinas)
 - **list_bookings**: List all reservations and options
 - **list_companies**: List yacht charter companies/operators
 - **list_yachts**: List all available yachts
+- **check_availability**: Check yacht availability for specific dates
+- **create_booking**: Create a new reservation or option
+- **get_prices**: Calculate prices and quotes for a yacht
 
 
 ## 💬 Prompt Examples

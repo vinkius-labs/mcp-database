@@ -37,8 +37,8 @@ Connect your **Campaigner** account to any AI agent and orchestrate your email m
 ## Available Tools (10)
 - **create_subscriber**: Add a new subscriber to Campaigner
 - **get_account_info**: Retrieve core account information
-- **get_campaign_stats**: Retrieve performance statistics for a campaign
 - **get_campaign**: Get details of a specific campaign
+- **get_campaign_stats**: Retrieve performance statistics for a campaign
 - **get_subscriber**: Get details of a specific subscriber by email
 - **list_campaigns**: List all email campaigns
 - **list_publications**: List all publications/contact lists

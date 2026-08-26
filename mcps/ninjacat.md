@@ -35,18 +35,18 @@ Connect your **NinjaCat** agency account to your AI agent and streamline your ma
 
 
 ## Available Tools (10)
-- **list_data_sources**: List active data sources
-- **get_advertiser**: Get specific advertiser details
 - **get_agency_info**: Get agency metadata
-- **get_me**: Get current user details
 - **get_report_download_url**: Get report download URL
 - **get_report_history**: Get report execution history
 - **list_data_accounts**: g. specific Google Ads accounts).
 
 List connected data accounts
+- **list_reports**: List all agency reports
+- **get_advertiser**: Get specific advertiser details
+- **get_me**: Get current user details
 - **list_advertisers**: List all advertisers
 - **list_agency_campaigns**: List agency marketing campaigns
-- **list_reports**: List all agency reports
+- **list_data_sources**: List active data sources
 
 
 ## 💬 Prompt Examples

@@ -35,20 +35,20 @@ Connect your **NCREIF** account to your AI agent and gain authoritative insights
 
 
 ## Available Tools (10)
-- **list_market_data**: List real estate market data
 - **get_fund_performance**: Get specific fund performance
-- **get_index_data**: Get specific index data
 - **get_property_returns**: Get property-level returns
-- **get_property_type_data**: g., Office, Retail, Industrial).
-
-Get data by property type
 - **get_region_data**: Get performance data by region
-- **list_data_series**: List available data series
 - **list_funds**: List real estate funds
 - **list_indices**: g., NPI, ODCE).
 
 List NCREIF performance indices
 - **list_properties**: List indexed properties
+- **get_index_data**: Get specific index data
+- **get_property_type_data**: g., Office, Retail, Industrial).
+
+Get data by property type
+- **list_data_series**: List available data series
+- **list_market_data**: List real estate market data
 
 
 ## 💬 Prompt Examples

@@ -34,14 +34,14 @@ Connect your **Bright Pattern** contact center account to any AI agent and orche
 
 
 ## Available Tools (10)
+- **get_realtime_stats**: Get real-time contact center statistics
 - **get_tenant_config**: Retrieve core tenant configuration
 - **get_interaction_details**: Get metadata for a specific interaction
-- **get_realtime_stats**: Get real-time contact center statistics
 - **get_user**: Get details of a specific user
-- **list_campaigns**: List all outbound campaigns
 - **list_interactions**: List recent interactions (calls, chats)
-- **list_teams**: List all agent teams
 - **list_users**: List all contact center users
+- **list_campaigns**: List all outbound campaigns
+- **list_teams**: List all agent teams
 - **list_services**: List all contact center services
 - **list_skills**: List all configured agent skills
 

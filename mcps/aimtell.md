@@ -35,16 +35,16 @@ Connect your **Aimtell** account to your AI agent to unlock professional web pus
 
 
 ## Available Tools (10)
-- **send_one_off_notification**: Send an alert
-- **get_campaign_performance**: Get campaign metrics
 - **add_subscriber_attribute**: Add custom data to subscriber
+- **get_campaign_performance**: Get campaign metrics
 - **list_api_campaigns**: List API-triggered campaigns
-- **list_triggered_campaigns**: List automated campaigns
-- **list_sites**: List managed websites
-- **list_subscribers**: List site subscribers
+- **send_one_off_notification**: Send an alert
 - **get_subscriber_details**: Get subscriber metadata
-- **list_segments**: List subscriber segments
+- **list_sites**: List managed websites
 - **list_campaigns**: List push campaigns
+- **list_segments**: List subscriber segments
+- **list_subscribers**: List site subscribers
+- **list_triggered_campaigns**: List automated campaigns
 
 
 ## 💬 Prompt Examples
