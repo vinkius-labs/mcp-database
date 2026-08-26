@@ -36,20 +36,20 @@ Drop visually browsing the Unsplash homepage for 30 minutes. Provide specific se
 
 ## Available Tools (10)
 - **get_photo_details**: Retrieves details for a specific Unsplash photo
-- **list_latest_photos**: Lists the most recently uploaded photos on Unsplash
 - **list_editorial_topics**: Lists curated editorial topics (Nature, Architecture, etc.)
-- **get_random_photo**: Optionally provide a query to narrow the random selection.
-
-Retrieves a random high-resolution photo
+- **list_latest_photos**: Lists the most recently uploaded photos on Unsplash
 - **search_collections**: g. "Nature", "Industrial").
 
 Search for curated photo collections by keyword
 - **search_photos**: Returns photo IDs, URLs, and photographer information. Note: Proper attribution is required.
 
 Search Unsplash for free high-resolution photos
+- **get_random_photo**: Optionally provide a query to narrow the random selection.
+
+Retrieves a random high-resolution photo
 - **search_photographers**: Search for Unsplash photographers by name or username
-- **get_collection_details**: Retrieves details for a specific photo collection
 - **get_photographer_photos**: Lists photos uploaded by a specific Unsplash user
+- **get_collection_details**: Retrieves details for a specific photo collection
 - **list_collection_photos**: Requires a collection ID.
 
 Lists all photos contained within a specific collection

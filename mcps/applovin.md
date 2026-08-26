@@ -29,13 +29,13 @@ The **AppLovin MCP Server** provides your AI agent with a powerful interface to 
 
 
 ## Available Tools (7)
-- **get_account_check**: Verify AppLovin account connection
-- **get_user_ad_revenue_report**: Get revenue data aggregated per user or per impression
 - **get_app_discovery_report**: Get performance data for UA campaigns (AppDiscovery)
-- **get_max_cohort_report**: Get cohort analysis reports for MAX
 - **get_max_report**: Use columns, start, and end parameters.
 
 Get aggregated performance data for MAX mediation
+- **get_account_check**: Verify AppLovin account connection
+- **get_user_ad_revenue_report**: Get revenue data aggregated per user or per impression
+- **get_max_cohort_report**: Get cohort analysis reports for MAX
 - **list_apps**: List apps tracked in your AppLovin account
 - **list_campaigns**: List UA campaigns from the management API
 

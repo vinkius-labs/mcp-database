@@ -35,9 +35,6 @@ Connect your **Akeneo PIM** instance to your AI agent to unlock professional pro
 
 
 ## Available Tools (10)
-- **list_attributes**: List product attributes
-- **get_attribute_details**: Get attribute metadata
-- **list_families**: List product families
 - **list_channels**: g. Mobile, Web) configured in the PIM.
 
 List sales channels
@@ -46,9 +43,12 @@ List sales channels
 - **list_products**: Supports cursor-based pagination.
 
 List PIM products
-- **get_product_details**: Get product metadata
-- **update_product**: Update product attributes
 - **list_categories**: List category trees
+- **list_families**: List product families
+- **update_product**: Update product attributes
+- **get_attribute_details**: Get attribute metadata
+- **get_product_details**: Get product metadata
+- **list_attributes**: List product attributes
 
 
 ## 💬 Prompt Examples

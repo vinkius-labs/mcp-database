@@ -14,18 +14,18 @@ Equip your AI assistant with the ultimate crawler module engineered for unbridle
 
 
 ## Available Tools (11)
-- **get_account_info**: Retrieves SERPHouse account information
-- **google_news**: Searches for news on Google
 - **bing_images**: Searches for images on Bing
-- **google_images**: Searches for images on Google
-- **google_scholar**: Searches for scholarly articles on Google Scholar
 - **google_search**: Supports advanced parameters like "location" and "lang".
 
 Performs a search on Google
 - **google_shopping**: Searches for products on Google Shopping
 - **google_videos**: Searches for videos on Google
-- **bing_news**: Searches for news on Bing
 - **bing_search**: Performs a search on Bing
+- **bing_news**: Searches for news on Bing
+- **get_account_info**: Retrieves SERPHouse account information
+- **google_images**: Searches for images on Google
+- **google_news**: Searches for news on Google
+- **google_scholar**: Searches for scholarly articles on Google Scholar
 - **list_locations**: Lists supported locations for SERP queries
 
 

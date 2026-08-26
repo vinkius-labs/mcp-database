@@ -35,13 +35,13 @@ Connect your **Amazon DSP** (Demand-Side Platform) account to your AI agent to u
 
 
 ## Available Tools (7)
-- **list_campaigns**: List DSP campaigns
 - **get_campaign_details**: Get campaign metadata
-- **list_ad_groups**: List DSP ad groups
-- **list_creatives**: List creatives
-- **list_audiences**: List audiences
-- **request_report**: Request performance report
+- **list_campaigns**: List DSP campaigns
 - **get_report_status**: Check report status
+- **list_ad_groups**: List DSP ad groups
+- **list_audiences**: List audiences
+- **list_creatives**: List creatives
+- **request_report**: Request performance report
 
 
 ## 💬 Prompt Examples

@@ -36,16 +36,16 @@ Connect your **OptimoRoute** account to any AI agent and orchestrate your entire
 
 
 ## Available Tools (10)
-- **get_order_pod**: Retrieve the exact structural matching verifying Delivery success Proof
+- **abort_route_planning**: Inspect deep internal arrays mitigating specific Time constraints
+- **create_route_order**: Identify bounded routing spaces inside the Headless OptimoRoute platform
 - **delete_stale_order**: Perform structural extraction of properties driving active Deletions
 - **get_live_driver_gps**: Irreversibly vaporize explicit validations extracting Telemetry natively
-- **download_manifest_routes**: Enumerate explicitly attached structured rules exporting active Drivers
+- **get_order_pod**: Retrieve the exact structural matching verifying Delivery success Proof
 - **check_planning_status**: Identify precise active arrays spanning native Asynchronous bounds
+- **download_manifest_routes**: Enumerate explicitly attached structured rules exporting active Drivers
 - **get_order_scheduling**: Dispatch an automated validation check routing explicit ETA models
 - **queue_route_optimization**: Retrieve explicit Cloud logging tracing explicit solver logic
-- **abort_route_planning**: Inspect deep internal arrays mitigating specific Time constraints
 - **update_driver_shifts**: Provision a highly-available JSON Payload generating Truck constraints
-- **create_route_order**: Identify bounded routing spaces inside the Headless OptimoRoute platform
 
 
 ## 💬 Prompt Examples

@@ -41,15 +41,15 @@ Send a simple WhatsApp text message
 - **send_template**: Requires the template name.
 
 Send a pre-approved WhatsApp template message
+- **send_file**: Optionally supports a caption or filename.
+
+Send a media file (image, PDF, video) to a WhatsApp number
 - **get_status**: g. connected, disconnected). Use this to debug communication failures.
 
 Check the current connection status of the 1msg.io WhatsApp channel
 - **list_messages**: Use this to check previous communications or audit chat history.
 
 Retrieve recent incoming and outgoing WhatsApp message history
-- **send_file**: Optionally supports a caption or filename.
-
-Send a media file (image, PDF, video) to a WhatsApp number
 - **list_templates**: List all available and pre-approved WhatsApp templates
 
 

@@ -34,16 +34,16 @@ Connect your **OptimoRoute** account to any AI agent and take full control of yo
 
 
 ## Available Tools (10)
-- **get_planning_status**: Check status of an optimization task
 - **get_analytics**: Get delivery performance analytics
+- **get_stop_sequence**: Get stop sequence for a driver
+- **start_planning**: Start route optimization for a date
+- **get_planning_status**: Check status of an optimization task
 - **get_order**: Get details for a specific order
 - **create_order**: Create a new delivery order
 - **delete_order**: Delete a delivery order
 - **get_driver_locations**: Get real-time driver locations
 - **list_routes**: List routes for a specific date
-- **get_stop_sequence**: Get stop sequence for a driver
 - **list_drivers**: List all drivers
-- **start_planning**: Start route optimization for a date
 
 
 ## 💬 Prompt Examples

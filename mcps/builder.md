@@ -37,19 +37,19 @@ No need to leave the code editor to see how a model is defined. Read schema stru
 
 ## Available Tools (10)
 - **list_builder_models**: List all defined data models and schemas in the Builder space
-- **search_active_models**: Find Builder models matching a specific criteria or substring
 - **update_visual_block**: Update an existing Builder.io content block or document
-- **count_model_entities**: Quickly count the number of live items stored within a specific model
-- **create_visual_block**: Create new content entries or visual blocks inside a Builder model
-- **wipe_visual_block**: Permanently delete a specific content entry from Builder.io
+- **get_model_schema**: Get the exact field structure and schema definitions for a single model
 - **get_single_content**: g. `query.data.title=Home`).
 
 Retrieve a specific content document by query matching from Builder.io
-- **get_media_file**: Retrieve details about an uploaded media asset within Builder.io
-- **get_model_schema**: Get the exact field structure and schema definitions for a single model
 - **list_model_content**: Useful for fetching dynamic content blocks or pages.
 
 Retrieve a list of content entries for a specific Builder.io model
+- **search_active_models**: Find Builder models matching a specific criteria or substring
+- **wipe_visual_block**: Permanently delete a specific content entry from Builder.io
+- **count_model_entities**: Quickly count the number of live items stored within a specific model
+- **create_visual_block**: Create new content entries or visual blocks inside a Builder model
+- **get_media_file**: Retrieve details about an uploaded media asset within Builder.io
 
 
 ## 💬 Prompt Examples

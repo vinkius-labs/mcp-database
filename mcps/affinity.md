@@ -35,11 +35,11 @@ Connect your **Affinity** account to your AI agent to unlock professional relati
 
 
 ## Available Tools (5)
-- **list_persons**: Retrieve a paginated list of people your team has interacted with in your Affinity network
 - **list_organizations**: Retrieve companies and institutions mapped within your Affinity CRM
 - **list_smart_lists**: Retrieve the catalog of custom smart lists (pipelines) securely configured in your account
 - **list_list_entries**: Retrieve the people or organizations associated with a specific Affinity smart list ID
 - **list_interactions**: Retrieve recent chronological logs of synced emails, meetings, and calls across your team
+- **list_persons**: Retrieve a paginated list of people your team has interacted with in your Affinity network
 
 
 ## 💬 Prompt Examples

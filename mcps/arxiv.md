@@ -30,12 +30,12 @@ Connect your AI agent to **arXiv** — the world's premier open-access preprint 
 
 
 ## Available Tools (2)
-- **search_arxiv**: Returns title, authors, abstract, categories, and direct PDF links. Categories: cs.AI, cs.LG, physics, math, q-bio, stat, econ. Perfect for finding cutting-edge research.
-
-Search 2.5M+ scientific preprints across physics, CS, math, biology, and more
 - **get_arxiv_paper**: IDs look like 2106.09685 or cs/0101001.
 
 Get full preprint details by arXiv ID
+- **search_arxiv**: Returns title, authors, abstract, categories, and direct PDF links. Categories: cs.AI, cs.LG, physics, math, q-bio, stat, econ. Perfect for finding cutting-edge research.
+
+Search 2.5M+ scientific preprints across physics, CS, math, biology, and more
 
 
 ## 💬 Prompt Examples
