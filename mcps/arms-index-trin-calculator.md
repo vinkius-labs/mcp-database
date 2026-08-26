@@ -14,8 +14,8 @@ This MCP server provides deterministic tools to calculate the Arms Index (TRIN),
 
 
 ## Available Tools (3)
-- **calculate_daily_trin**: Computes the single-day TRIN value based on current market breadth and volume data
 - **get_trin_moving_average**: Analyzes the trend of TRIN values over a specific period
+- **calculate_daily_trin**: Computes the single-day TRIN value based on current market breadth and volume data
 - **get_trin_statistics**: Provides a statistical comparison of the current TRIN against historical data to identify extremes
 
 

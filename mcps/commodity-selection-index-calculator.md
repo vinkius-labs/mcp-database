@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine for calculating the Commodity Se
 
 
 ## Available Tools (3)
+- **validate_market_data**: Ensures the provided price arrays are mathematically viable
 - **calculate_csi_series**: Calculates the full time-series of the Commodity Selection Index (CSI)
 - **get_csi_signals**: Analyzes a specific CSI value to provide a qualitative trading signal
-- **validate_market_data**: Ensures the provided price arrays are mathematically viable
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides a deterministic grid trading strategy optimized for sid
 
 
 ## Available Tools (3)
-- **analyze_market_regime**: Determine if the current market environment is suitable (sideways) for grid trading
 - **calculate_grid_signals**: Generate specific buy/sell signals and track financial performance
 - **initialize_grid**: Establish a new set of grid levels around a starting price
+- **analyze_market_regime**: Determine if the current market environment is suitable (sideways) for grid trading
 
 
 ## 💬 Prompt Examples

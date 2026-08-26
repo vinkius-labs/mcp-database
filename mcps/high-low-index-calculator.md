@@ -15,9 +15,9 @@ This MCP server provides deterministic tools to analyze market breadth using the
 
 ## Available Tools (4)
 - **analyze_moving_average**: 
+- **detect_divergence**: 
 - **calculate_breadth_metrics**: 
 - **calculate_cumulative_summation**: 
-- **detect_divergence**: 
 
 
 ## 💬 Prompt Examples

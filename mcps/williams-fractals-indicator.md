@@ -15,8 +15,8 @@ This MCP server provides deterministic technical analysis for identifying Willia
 
 ## Available Tools (3)
 - **check_breakout_signal**: Determines if the current price action has breached the most recent structural fractal levels
-- **get_fractal_metrics**: Calculates structural levels and market activity based on recent fractal occurrences
 - **get_fractal_patterns**: Identifies all confirmed up-fractals and down-fractals within a provided price series
+- **get_fractal_metrics**: Calculates structural levels and market activity based on recent fractal occurrences
 
 
 ## 💬 Prompt Examples

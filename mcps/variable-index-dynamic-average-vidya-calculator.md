@@ -14,8 +14,8 @@ This MCP server provides advanced adaptive smoothing capabilities using the Vari
 
 
 ## Available Tools (3)
-- **get_vidya_summary**: Provides a high-level statistical snapshot of the VIDYA behavior over a specific range
 - **calculate_vidya_series**: Computes the full series of VIDYA values, slopes, and adaptive responses for a given price dataset
+- **get_vidya_summary**: Provides a high-level statistical snapshot of the VIDYA behavior over a specific range
 - **detect_vidya_regime**: Identifies the current market regime based on the relationship between price and the VIDYA line
 
 

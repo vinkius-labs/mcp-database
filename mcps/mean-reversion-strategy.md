@@ -14,9 +14,9 @@ This MCP server provides quantitative tools to identify statistical price extrem
 
 
 ## Available Tools (3)
+- **get_strategy_summary**: Provides statistical overview of price distribution and volatility
 - **calculate_z_score_signals**: 
 - **get_reversion_probability**: Calculates historical probability of price returning to mean
-- **get_strategy_summary**: Provides statistical overview of price distribution and volatility
 
 
 ## 💬 Prompt Examples

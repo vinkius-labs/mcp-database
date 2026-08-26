@@ -14,8 +14,8 @@ This MCP server provides deterministic technical analysis tools for the Relative
 
 
 ## Available Tools (3)
-- **rvi_calculate**: Calculates the raw RVI values and core technical indicators for a given price series
 - **rvi_check_divergence**: Identifies discrepancies between price action and volatility momentum
+- **rvi_calculate**: Calculates the raw RVI values and core technical indicators for a given price series
 - **rvi_detect_signals**: Analyzes the RVI series to identify actionable patterns like overbought/oversold conditions and crossovers
 
 

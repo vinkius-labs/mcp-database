@@ -15,8 +15,8 @@ This MCP server provides deterministic technical analysis tools for identifying 
 
 ## Available Tools (3)
 - **calculate_mass_index**: Calculates the deterministic Mass Index series based on provided price data and smoothing parameters
-- **detect_reversal_signals**: Identifies specific price reversal setups based on the Mass Index movement through threshold zones
 - **identify_bulge_formations**: Detects periods of sustained high Mass Index values, indicating intense momentum builds
+- **detect_reversal_signals**: Identifies specific price reversal setups based on the Mass Index movement through threshold zones
 
 
 ## 💬 Prompt Examples

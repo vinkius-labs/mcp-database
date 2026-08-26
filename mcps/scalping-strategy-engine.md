@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine for high-probability scalping. I
 
 
 ## Available Tools (3)
+- **evaluate_scalp_quality**: Analyzes a specific signal to provide a granular assessment of the trade's strength
 - **get_market_filters**: Validates if current market conditions (liquidity and cost) permit scalping
 - **calculate_signals**: Generates precise buy, sell, or hold signals for a historical price series based on trend and momentum criteria
-- **evaluate_scalp_quality**: Analyzes a specific signal to provide a granular assessment of the trade's strength
 
 
 ## 💬 Prompt Examples

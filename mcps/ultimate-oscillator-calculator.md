@@ -14,8 +14,8 @@ This MCP server provides precise technical analysis tools for the Larry Williams
 
 
 ## Available Tools (3)
-- **analyze_uo_signals**: Identifies technical signals such as overbought/oversold levels and centerline crosses based on calculated UO values
 - **detect_uo_divergence**: Detects bullish and bearish divergences between price action and the oscillator
+- **analyze_uo_signals**: Identifies technical signals such as overbought/oversold levels and centerline crosses based on calculated UO values
 - **calculate_uo_values**: Computes the raw Ultimate Oscillator values for a provided set of price data across the three standard timeframes
 
 

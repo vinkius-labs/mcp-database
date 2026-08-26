@@ -14,8 +14,8 @@ This MCP server provides advanced technical analysis tools to calculate the Pric
 
 
 ## Available Tools (3)
-- **calculate_pvt_metrics**: 
 - **compare_pvt_obv**: Compares PVT to OBV
+- **calculate_pvt_metrics**: 
 - **detect_pvt_divergences**: Identifies price/PVT divergences
 
 

@@ -15,8 +15,8 @@ This MCP server provides deterministic tools for calculating the Negative Volume
 
 ## Available Tools (3)
 - **analyze_market_sentiment**: 
-- **calculate_divergence**: 
 - **calculate_volume_indices**: 
+- **calculate_divergence**: 
 
 
 ## 💬 Prompt Examples

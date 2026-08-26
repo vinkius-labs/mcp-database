@@ -14,9 +14,9 @@ This MCP server provides precise tools for analyzing market sentiment through Pu
 
 
 ## Available Tools (3)
-- **analyze_sentiment_and_extremes**: Determine sentiment classification, statistical percentile, and z-score
 - **calculate_moving_averages**: Smooth PCR data to identify sentiment trends using a moving average
 - **calculate_pcr_metrics**: Calculate primary volume and open interest PCR values
+- **analyze_sentiment_and_extremes**: Determine sentiment classification, statistical percentile, and z-score
 
 
 ## 💬 Prompt Examples

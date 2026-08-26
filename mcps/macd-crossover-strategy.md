@@ -15,8 +15,8 @@ This MCP server provides advanced technical analysis tools for trend-following u
 
 ## Available Tools (3)
 - **calculate_macd_signals**: Generates a complete series of trading signals based on historical price data
-- **get_volatility_metrics**: Computes volatility indicators needed for risk management
 - **evaluate_signal_quality**: Provides a detailed breakdown of the strength and reliability of a specific signal
+- **get_volatility_metrics**: Computes volatility indicators needed for risk management
 
 
 ## 💬 Prompt Examples

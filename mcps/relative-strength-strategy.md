@@ -14,8 +14,8 @@ This MCP server provides tools to execute a deterministic momentum strategy. It 
 
 
 ## Available Tools (3)
-- **calculate_rs_metrics**: Calculates core relative strength indicators and momentum characteristics
 - **evaluate_strategy_signals**: Determines trade actions (BUY, SELL, HOLD) and risk parameters
+- **calculate_rs_metrics**: Calculates core relative strength indicators and momentum characteristics
 - **perform_monthly_rebalance**: Identifies top assets for the next monthly period
 
 

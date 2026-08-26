@@ -14,9 +14,9 @@ This MCP server provides precise technical analysis tools for the Relative Vigor
 
 
 ## Available Tools (3)
-- **calculate_rvi_metrics**: Calculates RVI, Signal Line, and momentum signals
 - **detect_divergence_patterns**: Isolates and describes price/RVI divergences
 - **get_rvi_summary**: Provides a high-level statistical overview of RVI state
+- **calculate_rvi_metrics**: Calculates RVI, Signal Line, and momentum signals
 
 
 ## 💬 Prompt Examples

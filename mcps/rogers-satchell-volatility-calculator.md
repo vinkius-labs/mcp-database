@@ -14,8 +14,8 @@ This MCP server provides precise volatility estimation using the Rogers-Satchell
 
 
 ## Available Tools (3)
-- **calculate_rs_volatility**: Calculates the deterministic Rogers-Satchell volatility for a specific series of price data
 - **calculate_volatility_comparison**: Compares Rogers-Satchell volatility against Parkinson and Garman-Klass estimators
+- **calculate_rs_volatility**: Calculates the deterministic Rogers-Satchell volatility for a specific series of price data
 - **get_volatility_percentile**: Determines the percentile rank of the most recent volatility value compared to a historical window
 
 

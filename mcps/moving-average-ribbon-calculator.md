@@ -14,8 +14,8 @@ This MCP server provides a deterministic engine for analyzing market momentum th
 
 
 ## Available Tools (3)
-- **analyze_ribbon_geometry**: Determine the qualitative state, trend direction, and width of the ribbon
 - **calculate_ribbon_values**: Compute specific Moving Average values for every period requested
+- **analyze_ribbon_geometry**: Determine the qualitative state, trend direction, and width of the ribbon
 - **detect_squeeze_setup**: Identify if the current ribbon compression represents a Squeeze
 
 

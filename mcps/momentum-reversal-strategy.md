@@ -14,8 +14,8 @@ This MCP server provides specialized tools for executing a deterministic momentu
 
 
 ## Available Tools (3)
-- **get_position_allocation**: Calculates the capital distribution for a set of active signals
 - **analyze_momentum_signals**: Calculates momentum returns and generates specific buy, sell, or hold signals
+- **get_position_allocation**: Calculates the capital distribution for a set of active signals
 - **calculate_reversal_probability**: Determines the historical success rate of the reversal strategy
 
 

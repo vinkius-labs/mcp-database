@@ -14,8 +14,8 @@ This MCP server provides deterministic calculations for the Williams Alligator i
 
 
 ## Available Tools (3)
-- **get_trend_analysis**: Provides the direction of the trend and the current width of the mouth
 - **get_alligator_lines**: Calculates the specific values for the Jaw, Teeth, and Lips at a given point in time
+- **get_trend_analysis**: Provides the direction of the trend and the current width of the mouth
 - **get_alligator_state**: Determines the current behavior of the Alligator (Sleeping, Waking, or Eating)
 
 

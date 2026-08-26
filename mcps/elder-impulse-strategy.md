@@ -14,9 +14,9 @@ This MCP server implements the Elder Impulse System, a trend-following methodolo
 
 
 ## Available Tools (3)
+- **generate_trade_signals**: Evaluates impulse signals to generate actionable BUY/SELL trade entries
 - **analyze_trend_strength**: Summarizes the current market trend based on the most recent impulse signals
 - **calculate_impulse_signals**: Generates core color-coded impulse signals (Green, Red, Blue) for a price series
-- **generate_trade_signals**: Evaluates impulse signals to generate actionable BUY/SELL trade entries
 
 
 ## 💬 Prompt Examples

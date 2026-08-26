@@ -15,8 +15,8 @@ This MCP server provides a deterministic technical analysis engine for the True 
 
 ## Available Tools (3)
 - **calculate_tsi_metrics**: Calculates the base TSI values, the signal line, and detects primary trend signals
-- **detect_tsi_divergence**: Identifies potential trend reversals by comparing price action against TSI movement
 - **get_tsi_summary**: Provides a high-level snapshot of the current market state based on the most recent TSI data
+- **detect_tsi_divergence**: Identifies potential trend reversals by comparing price action against TSI movement
 
 
 ## 💬 Prompt Examples

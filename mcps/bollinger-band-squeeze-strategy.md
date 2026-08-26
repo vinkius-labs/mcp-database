@@ -15,8 +15,8 @@ This MCP server provides a deterministic technical analysis engine to detect mar
 
 ## Available Tools (3)
 - **analyze_squeeze_signals**: Evaluates historical price, volume, and volatility data to identify squeeze periods and subsequent breakout signals
-- **get_current_volatility_metrics**: Calculates specific volatility indicators (ATR and BB width) for a given set of prices
 - **validate_breakout_conditions**: A specialized validator to check if a specific price action meets the strict criteria for a squeeze breakout
+- **get_current_volatility_metrics**: Calculates specific volatility indicators (ATR and BB width) for a given set of prices
 
 
 ## 💬 Prompt Examples
