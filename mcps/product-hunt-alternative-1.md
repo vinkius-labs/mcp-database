@@ -38,15 +38,15 @@ No more manual scrolling through the feed for daily highlights. Your AI acts as 
 ## Available Tools (12)
 - **get_my_profile**: Get account info
 - **get_product_reviews**: Read user reviews
+- **list_featured_posts**: List front-page products
 - **get_post_details**: Get product info
 - **get_topic_info**: Get topic details
-- **list_user_goals**: Check maker goals
 - **list_curated_collections**: List featured collections
-- **list_product_makers**: Get makers info
-- **list_new_launches**: List latest products
-- **list_featured_posts**: List front-page products
-- **list_trending_products**: List top products
 - **list_discovery_topics**: List product categories
+- **list_new_launches**: List latest products
+- **list_product_makers**: Get makers info
+- **list_trending_products**: List top products
+- **list_user_goals**: Check maker goals
 - **search_products**: Find products
 
 
