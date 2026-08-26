@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine to identify artificial funding r
 
 
 ## Available Tools (3)
-- **calculate_exploit_opportunities**: Filters detected signals to find high-probability, high-liquidity trade setups
 - **detect_manipulation_signals**: Identifies intervals where funding rates are decoupled from price basis and accompanied by specific Open Interest movements
 - **estimate_trade_metrics**: Provides detailed financial projections for a specific identified exploit
+- **calculate_exploit_opportunities**: Filters detected signals to find high-probability, high-liquidity trade setups
 
 
 ## 💬 Prompt Examples

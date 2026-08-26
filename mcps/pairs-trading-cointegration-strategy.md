@@ -15,8 +15,8 @@ This MCP server provides a deterministic engine for pairs trading based on the E
 
 ## Available Tools (3)
 - **analyze_pair_cointegration**: Determine if a specific pair of assets exhibits a statistically significant cointegrated relationship
-- **calculate_position_sizing**: Determine the exact quantities of Asset A and Asset B to trade to maintain a dollar-neutral profile
 - **generate_trading_signals**: Calculate daily z-scores and generate specific entry, exit, and stop-loss signals
+- **calculate_position_sizing**: Determine the exact quantities of Asset A and Asset B to trade to maintain a dollar-neutral profile
 
 
 ## 💬 Prompt Examples

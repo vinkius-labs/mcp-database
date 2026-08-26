@@ -14,8 +14,8 @@ This MCP server provides a deterministic engine to exploit backwardation by iden
 
 
 ## Available Tools (3)
-- **evaluate_risk_metrics**: Analyzes the risk profile of the current market environment to validate if the strategy is safe to execute
 - **calculate_arbitrage_signals**: Determines if a trade signal is generated based on historical or daily market data and calculates position parameters
+- **evaluate_risk_metrics**: Analyzes the risk profile of the current market environment to validate if the strategy is safe to execute
 - **get_theoretical_fair_value**: Computes the fair market value of a futures contract at a specific point in time
 
 

@@ -15,8 +15,8 @@ This MCP server provides deterministic trading signals by evaluating token price
 
 ## Available Tools (3)
 - **calculate_trading_signals**: Analyzes current market state against the bonding curve to generate specific BUY, SELL, or HOLD signals
-- **evaluate_liquidity_safety**: Determines if the current pool has enough depth to permit trading based on predefined risk thresholds
 - **get_curve_metrics**: Provides pure mathematical insights into the curve's state without generating trade signals
+- **evaluate_liquidity_safety**: Determines if the current pool has enough depth to permit trading based on predefined risk thresholds
 
 
 ## 💬 Prompt Examples

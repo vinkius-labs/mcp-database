@@ -14,9 +14,9 @@ This MCP server provides quantitative tools to implement the low-volatility anom
 
 
 ## Available Tools (3)
+- **generate_portfolio_weights**: Determines the capital allocation for the selected assets using different weighting methodologies
 - **analyze_strategy_performance**: Evaluates the risk-adjusted returns and risk characteristics of the low-volatility strategy
 - **calculate_volatility_signals**: Computes historical volatility and generates the primary buy/sell/hold signals based on the low-volatility ranking
-- **generate_portfolio_weights**: Determines the capital allocation for the selected assets using different weighting methodologies
 
 
 ## 💬 Prompt Examples

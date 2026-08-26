@@ -15,8 +15,8 @@ This MCP server provides a deterministic engine for statistical arbitrage. It id
 
 ## Available Tools (3)
 - **analyze_pairs_cointegration**: Evaluates whether two assets exhibit a stable, mean-reverting relationship suitable for trading
-- **generate_trading_signals**: Determines specific entry, exit, and stop-loss triggers for a pair based on z-score thresholds and cointegration filters
 - **calculate_position_metrics**: Provides detailed trade execution parameters for a specific signal
+- **generate_trading_signals**: Determines specific entry, exit, and stop-loss triggers for a pair based on z-score thresholds and cointegration filters
 
 
 ## 💬 Prompt Examples

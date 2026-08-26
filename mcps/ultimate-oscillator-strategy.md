@@ -14,9 +14,9 @@ This MCP server provides a deterministic implementation of the Larry Williams Ul
 
 
 ## Available Tools (3)
+- **calculate_uo_metrics**: Provides raw diagnostic data regarding the current state of the oscillator
 - **analyze_uo_strategy**: Executes the full deterministic strategy logic to generate buy, sell, or hold signals
 - **detect_divergence**: Identifies whether a bullish or bearish divergence exists between price and the UO
-- **calculate_uo_metrics**: Provides raw diagnostic data regarding the current state of the oscillator
 
 
 ## 💬 Prompt Examples

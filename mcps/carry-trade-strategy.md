@@ -15,8 +15,8 @@ This MCP server provides tools to execute a deterministic forex carry trade stra
 
 ## Available Tools (3)
 - **analyze_carry_signals**: Generates trading signals (BUY, SELL, HOLD) and calculates carry-related metrics for a given historical price series
-- **calculate_volatility_risk**: Determines if the current market volatility exceeds the allowable risk threshold
 - **get_pair_metadata**: Validates if a specific currency pair is eligible for the carry strategy
+- **calculate_volatility_risk**: Determines if the current market volatility exceeds the allowable risk threshold
 
 
 ## 💬 Prompt Examples

@@ -14,8 +14,8 @@ This MCP server provides deterministic mean-reversion analysis for NFT collectio
 
 
 ## Available Tools (3)
-- **get_reversion_target**: Calculates the mathematical price target for a mean-reversion trade
 - **analyze_floor_strategy**: Generates a deterministic trade signal (BUY, SELL, or HOLD) based on price, volume, and safety filters
+- **get_reversion_target**: Calculates the mathematical price target for a mean-reversion trade
 - **calculate_market_health**: Analyzes the risk profile of a collection regarding concentration and artificial activity
 
 

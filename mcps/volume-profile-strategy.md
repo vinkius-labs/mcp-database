@@ -14,8 +14,8 @@ This MCP server provides deterministic trading signals by analyzing volume-at-pr
 
 
 ## Available Tools (3)
-- **analyze_volume_profile**: Calculates core volume profile metrics and identifies key price levels
 - **generate_trading_signals**: Evaluates price action against the volume profile to generate signals
+- **analyze_volume_profile**: Calculates core volume profile metrics and identifies key price levels
 - **get_poc_trend**: Determines the direction of the Point of Control (POC)
 
 

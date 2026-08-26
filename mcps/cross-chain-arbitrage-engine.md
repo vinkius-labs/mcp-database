@@ -15,8 +15,8 @@ This MCP server provides a deterministic engine for evaluating cross-chain arbit
 
 ## Available Tools (3)
 - **calculate_arbitrage_signals**: Identifies profitable arbitrage opportunities based on current market data and protocol costs
-- **compare_strategies**: Compares the efficiency of "direct" vs "bridge_swap" modes
 - **evaluate_risk_exposure**: Quantifies the potential loss due to price volatility during the message transit period
+- **compare_strategies**: Compares the efficiency of "direct" vs "bridge_swap" modes
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides tools to execute a deterministic iron condor strategy. 
 
 
 ## Available Tools (3)
-- **generate_iron_condor_entry**: Entry
 - **analyze_market_conditions**: Check market
 - **evaluate_position_status**: Status
+- **generate_iron_condor_entry**: Entry
 
 
 ## 💬 Prompt Examples

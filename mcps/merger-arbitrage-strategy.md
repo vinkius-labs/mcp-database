@@ -14,9 +14,9 @@ This MCP server provides a deterministic engine for executing merger arbitrage (
 
 
 ## Available Tools (3)
-- **calculate_hedge_ratio**: Calculates the specific ratio required to neutralize market exposure in stock-for-stock transactions
 - **analyze_deal_opportunity**: Determines if a specific merger deal meets the necessary investment criteria and calculates core arbitrage metrics
 - **evaluate_downside_risk**: Estimates the potential loss if the merger fails
+- **calculate_hedge_ratio**: Calculates the specific ratio required to neutralize market exposure in stock-for-stock transactions
 
 
 ## 💬 Prompt Examples

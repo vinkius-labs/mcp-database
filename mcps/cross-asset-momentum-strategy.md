@@ -14,9 +14,9 @@ This MCP server provides a deterministic time-series momentum (TSMOM) engine des
 
 
 ## Available Tools (3)
+- **generate_portfolio_allocation**: Calculates position sizes and long/short lists based on momentum signals
 - **analyze_market_risk_metrics**: Computes aggregate market statistics including spread, crash risk, and correlation
 - **calculate_momentum_signals**: Evaluates momentum direction and return metrics for asset price histories
-- **generate_portfolio_allocation**: Calculates position sizes and long/short lists based on momentum signals
 
 
 ## 💬 Prompt Examples

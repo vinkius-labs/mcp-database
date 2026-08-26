@@ -15,8 +15,8 @@ This MCP server provides a deterministic engine for volatility arbitrage. It ide
 
 ## Available Tools (3)
 - **analyze_vix_structure**: Assess VIX futures market term structure and roll yield
-- **get_volatility_metrics**: Calculate statistical metrics for volatility spreads
 - **calculate_volatility_signals**: Determine primary trading signal based on volatility spread and IV rank filters
+- **get_volatility_metrics**: Calculate statistical metrics for volatility spreads
 
 
 ## 💬 Prompt Examples

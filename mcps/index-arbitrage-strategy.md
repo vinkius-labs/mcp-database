@@ -14,8 +14,8 @@ This MCP server provides deterministic modeling for identifying arbitrage betwee
 
 
 ## Available Tools (3)
-- **get_historical_basis_analysis**: Evaluates the historical consistency and frequency of arbitrage opportunities over a time series
 - **calculate_arbitrage_signals**: Determines the specific arbitrage action and profit potential for a given set of market conditions
+- **get_historical_basis_analysis**: Evaluates the historical consistency and frequency of arbitrage opportunities over a time series
 - **validate_market_conditions**: A diagnostic tool to check if the current environment allows for any deterministic arbitrage
 
 

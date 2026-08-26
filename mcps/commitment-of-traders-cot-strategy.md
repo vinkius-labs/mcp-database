@@ -15,8 +15,8 @@ This MCP server provides advanced algorithmic analysis of Commitment of Traders 
 
 ## Available Tools (3)
 - **analyze_cot_positioning**: Calculates core statistical metrics and sentiment indicators for a COT reporting period
-- **get_signal_summary**: Formats the final signal output into a human-readable summary
 - **generate_trading_signal**: Determines the exact trade direction (BUY, SELL, or HOLD)
+- **get_signal_summary**: Formats the final signal output into a human-readable summary
 
 
 ## 💬 Prompt Examples

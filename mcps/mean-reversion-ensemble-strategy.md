@@ -14,8 +14,8 @@ This MCP server provides a deterministic ensemble strategy for identifying mean-
 
 
 ## Available Tools (3)
-- **analyze_reversion_probability**: 
 - **calculate_ensemble_signals**: 
+- **analyze_reversion_probability**: 
 - **generate_trading_plan**: 
 
 

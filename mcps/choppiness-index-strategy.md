@@ -15,8 +15,8 @@ This MCP server provides a deterministic engine for market regime detection and 
 
 ## Available Tools (3)
 - **analyze_market_regime**: Determines the current market state and its characteristics based on price action and the Choppiness Index
-- **generate_trading_signals**: Evaluates price action against the identified regime to produce specific entry and exit instructions
 - **query_market_statistics**: Retrieves historical trend strength and volatility context for a specific window
+- **generate_trading_signals**: Evaluates price action against the identified regime to produce specific entry and exit instructions
 
 
 ## 💬 Prompt Examples

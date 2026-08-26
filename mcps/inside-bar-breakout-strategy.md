@@ -14,8 +14,8 @@ This MCP server provides deterministic tools to identify volatility contraction 
 
 
 ## Available Tools (3)
-- **analyze_patterns**: Identify inside bar formations and calculate contraction metrics
 - **detect_signals**: Identify valid buy and sell entry signals based on breakout rules
+- **analyze_patterns**: Identify inside bar formations and calculate contraction metrics
 - **get_trade_metrics**: Provide statistical summary of the strategy performance
 
 

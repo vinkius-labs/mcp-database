@@ -15,8 +15,8 @@ This MCP server provides a deterministic optimization engine to identify the mat
 
 ## Available Tools (3)
 - **analyze_vesting_status**: Calculates the current state of a specific vesting contract
-- **evaluate_claim_signal**: Determines if the conditions are met to trigger a "Claim" action
 - **optimize_claim_timing**: Decides the specific execution strategy based on market trends
+- **evaluate_claim_signal**: Determines if the conditions are met to trigger a "Claim" action
 
 
 ## 💬 Prompt Examples

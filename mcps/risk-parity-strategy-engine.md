@@ -14,8 +14,8 @@ This MCP server provides a deterministic risk parity portfolio allocation engine
 
 
 ## Available Tools (3)
-- **check_rebalance_trigger**: Determine if the portfolio needs to be rebalanced
 - **calculate_risk_parity_weights**: Determine optimal capital allocation for equal risk contribution
+- **check_rebalance_trigger**: Determine if the portfolio needs to be rebalanced
 - **get_portfolio_performance**: Analyze historical risk and reward characteristics
 
 

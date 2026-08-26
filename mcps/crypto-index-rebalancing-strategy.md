@@ -15,8 +15,8 @@ This MCP server provides a deterministic decision engine for cryptocurrency inde
 
 ## Available Tools (3)
 - **calculate_rebalance_signals**: Analyzes historical price data and index composition to determine if a rebalance should be executed
-- **estimate_execution_friction**: Predicts the total cost of performing a rebalance
 - **simulate_portfolio_drift**: Calculates the current deviation of token weights from their targets
+- **estimate_execution_friction**: Predicts the total cost of performing a rebalance
 
 
 ## 💬 Prompt Examples

@@ -14,9 +14,9 @@ This MCP server provides a deterministic intraday trading strategy focused on th
 
 
 ## Available Tools (3)
+- **track_trade_lifecycle**: Monitors ongoing trades to determine if they have hit a Take-Profit, a Stop-Loss, or if they should be held/closed
 - **calculate_orb_parameters**: Determines the core boundaries and characteristics of the opening range
 - **evaluate_breakout_signals**: Analyzes price action and volume to identify specific Buy or Sell entry signals
-- **track_trade_lifecycle**: Monitors ongoing trades to determine if they have hit a Take-Profit, a Stop-Loss, or if they should be held/closed
 
 
 ## 💬 Prompt Examples

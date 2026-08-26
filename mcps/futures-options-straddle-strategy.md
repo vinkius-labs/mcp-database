@@ -15,8 +15,8 @@ This MCP server provides specialized tools to identify volatility mispricing in 
 
 ## Available Tools (3)
 - **analyze_straddle_opportunity**: 
-- **calculate_volatility_metrics**: Computes theoretical movement values
 - **get_straddle_risk_profile**: Calculates financial boundaries and probabilities
+- **calculate_volatility_metrics**: Computes theoretical movement values
 
 
 ## 💬 Prompt Examples
