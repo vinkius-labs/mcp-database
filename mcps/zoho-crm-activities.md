@@ -28,9 +28,6 @@ Connect **Zoho CRM** to any AI agent — manage your entire CRM without switchin
 
 
 ## Available Tools (8)
-- **zoho_create_event**: Event_Title, Start_DateTime, and End_DateTime are required (ISO format). Events appear in the Zoho CRM calendar and can be linked to contacts, leads, and deals. Use to schedule meetings, demos, or any time-bound activity.
-
-Create a calendar event in Zoho CRM with title, start/end times, and description for meetings and appointments
 - **zoho_create_task**: Subject is required. Status: Not Started, Deferred, In Progress, Completed, Waiting on someone else. Priority: High, Highest, Normal, Low, Lowest. Due_Date uses YYYY-MM-DD. Use for scheduling follow-ups, assigning action items, or creating reminders.
 
 Create a task in Zoho CRM with subject, due date, priority, and status for sales and support follow-ups
@@ -40,6 +37,12 @@ List call logs in Zoho CRM with subject, call type (Inbound/Outbound), result, d
 - **zoho_list_events**: Returns event title, start and end DateTime, location, and linked records. Events represent meetings, demos, webinars, and other calendar-based activities. Use when the user asks about scheduled meetings, upcoming events, or calendar review.
 
 List calendar events in Zoho CRM with title, start/end dates, location, and linked contacts
+- **zoho_create_call**: Subject is required. Call_Type: Outbound or Inbound. Call_Purpose describes the reason (Prospecting, Follow-up, Demo, etc.). Call_Start_Time uses ISO format. Use to log completed calls or schedule upcoming ones.
+
+Log a call in Zoho CRM with subject, type (Inbound/Outbound), purpose, and start time for activity tracking
+- **zoho_create_event**: Event_Title, Start_DateTime, and End_DateTime are required (ISO format). Events appear in the Zoho CRM calendar and can be linked to contacts, leads, and deals. Use to schedule meetings, demos, or any time-bound activity.
+
+Create a calendar event in Zoho CRM with title, start/end times, and description for meetings and appointments
 - **zoho_list_notes**: Requires module (Leads, Contacts, Deals, Accounts) and recordId. Returns note title, content, and creation date. Use when the user asks "what notes are on this contact?" or wants to review the activity history of a record.
 
 List notes attached to a specific Zoho CRM record — see the activity log and history for any contact, deal, or account
@@ -49,9 +52,6 @@ List Zoho CRM tasks with subject, due date, status (Not Started/In Progress/Comp
 - **zoho_update_task**: Only specified fields change. Common operations: set Status to "Completed" when done, change Priority for escalation, push Due_Date when rescheduling.
 
 Update an existing Zoho CRM task — change status, priority, due date, or subject to reflect progress
-- **zoho_create_call**: Subject is required. Call_Type: Outbound or Inbound. Call_Purpose describes the reason (Prospecting, Follow-up, Demo, etc.). Call_Start_Time uses ISO format. Use to log completed calls or schedule upcoming ones.
-
-Log a call in Zoho CRM with subject, type (Inbound/Outbound), purpose, and start time for activity tracking
 
 
 ## 💬 Prompt Examples

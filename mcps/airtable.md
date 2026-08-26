@@ -34,17 +34,17 @@ Connect your **Airtable** account to your AI agent to transform static data into
 
 ## Available Tools (10)
 - **list_bases**: List Airtable bases
-- **list_tables**: List tables in a base
-- **list_records**: List records from a table
+- **get_base_metadata**: Get base schema
 - **get_record**: Get a single record
-- **create_records**: Create records in bulk
-- **update_records**: Update records in bulk
-- **delete_records**: Delete records in bulk
+- **list_fields**: Get table columns
+- **list_records**: List records from a table
 - **search_records**: g. {Status}="Done").
 
 Search records with formulas
-- **list_fields**: Get table columns
-- **get_base_metadata**: Get base schema
+- **list_tables**: List tables in a base
+- **create_records**: Create records in bulk
+- **delete_records**: Delete records in bulk
+- **update_records**: Update records in bulk
 
 
 ## 💬 Prompt Examples
