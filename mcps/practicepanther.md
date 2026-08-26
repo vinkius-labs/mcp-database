@@ -44,23 +44,6 @@ Your AI becomes a legal practice assistant, helping you track matters, log time,
 
 
 ## Available Tools (18)
-- **create_practicepanther_contact**: USE WHEN:
-- User wants to add a new client
-- User needs to create a new contact record
-- User asks to "add a new contact" or "create a client"
-
-PARAMETERS:
-- first_name (REQUIRED): Contact's first name
-- last_name (REQUIRED): Contact's last name
-- email (OPTIONAL): Contact's email address
-- phone (OPTIONAL): Contact's phone number
-- type (OPTIONAL): Contact type — "Client", "Opposing Party", "Witness", "Referral Source", etc.
-
-EXAMPLES:
-- "Add a new contact John Smith" → call with first_name="John", last_name="Smith"
-- "Create client Jane Doe, jane@example.com, 555-0123" → call with first_name="Jane", last_name="Doe", email="jane@example.com", phone="555-0123", type="Client"
-
-Create a new contact/client in PracticePanther
 - **create_practicepanther_matter**: USE WHEN:
 - User wants to open a new legal matter
 - User needs to create a new case for a client
@@ -98,9 +81,44 @@ Create a new time entry for billing
 - **get_practicepanther_bill**: Get detailed information for a specific bill/invoice
 - **get_practicepanther_contact**: Get detailed information for a specific contact/client
 - **get_practicepanther_matter**: Get detailed information for a specific matter/case
-- **list_practicepanther_activities**: List activities in PracticePanther
 - **list_practicepanther_bills**: List bills/invoices in PracticePanther
 - **list_practicepanther_calendar_events**: List calendar events in PracticePanther
+- **list_practicepanther_custom_fields**: List custom fields defined in PracticePanther
+- **list_practicepanther_tasks**: List tasks in PracticePanther
+- **search_practicepanther_matters**: USE WHEN:
+- User wants to search for specific matters
+- User needs to find matters by name, client, or status
+- User asks to "find matters about X" or "search for open cases"
+
+PARAMETERS:
+- filter (REQUIRED): OData filter expression (e.g. "contains(Name, 'Smith')", "Status eq 'Open'")
+- top (OPTIONAL): Number of results to return
+- orderby (OPTIONAL): OData order expression
+
+EXAMPLES:
+- "Search for matters containing 'Smith'" → call with filter="contains(Name, 'Smith')"
+- "Find all open personal injury cases" → call with filter="Status eq 'Open' and PracticeArea eq 'Personal Injury'"
+
+Search matters/cases using OData filter
+- **list_practicepanther_payments**: List payments received in PracticePanther
+- **create_practicepanther_contact**: USE WHEN:
+- User wants to add a new client
+- User needs to create a new contact record
+- User asks to "add a new contact" or "create a client"
+
+PARAMETERS:
+- first_name (REQUIRED): Contact's first name
+- last_name (REQUIRED): Contact's last name
+- email (OPTIONAL): Contact's email address
+- phone (OPTIONAL): Contact's phone number
+- type (OPTIONAL): Contact type — "Client", "Opposing Party", "Witness", "Referral Source", etc.
+
+EXAMPLES:
+- "Add a new contact John Smith" → call with first_name="John", last_name="Smith"
+- "Create client Jane Doe, jane@example.com, 555-0123" → call with first_name="Jane", last_name="Doe", email="jane@example.com", phone="555-0123", type="Client"
+
+Create a new contact/client in PracticePanther
+- **list_practicepanther_activities**: List activities in PracticePanther
 - **list_practicepanther_contacts**: USE WHEN:
 - User wants to see all their contacts and clients
 - User needs to find a contact by name or email
@@ -119,7 +137,6 @@ EXAMPLES:
 - "List contacts ordered by last name" → call with orderby="LastName asc"
 
 List all contacts/clients in PracticePanther
-- **list_practicepanther_custom_fields**: List custom fields defined in PracticePanther
 - **list_practicepanther_expenses**: List expenses in PracticePanther
 - **list_practicepanther_matters**: Supports OData filtering, ordering, and pagination for flexible queries.
 
@@ -141,8 +158,6 @@ EXAMPLES:
 - "List matters ordered by creation date" → call with orderby="CreatedDate desc"
 
 List all matters/cases in PracticePanther
-- **list_practicepanther_payments**: List payments received in PracticePanther
-- **list_practicepanther_tasks**: List tasks in PracticePanther
 - **list_practicepanther_time_entries**: Supports filtering by matter, user, and date range.
 
 USE WHEN:
@@ -163,21 +178,6 @@ EXAMPLES:
 - "List time entries from newest to oldest" → call with orderby="Date desc"
 
 List time entries logged in PracticePanther
-- **search_practicepanther_matters**: USE WHEN:
-- User wants to search for specific matters
-- User needs to find matters by name, client, or status
-- User asks to "find matters about X" or "search for open cases"
-
-PARAMETERS:
-- filter (REQUIRED): OData filter expression (e.g. "contains(Name, 'Smith')", "Status eq 'Open'")
-- top (OPTIONAL): Number of results to return
-- orderby (OPTIONAL): OData order expression
-
-EXAMPLES:
-- "Search for matters containing 'Smith'" → call with filter="contains(Name, 'Smith')"
-- "Find all open personal injury cases" → call with filter="Status eq 'Open' and PracticeArea eq 'Personal Injury'"
-
-Search matters/cases using OData filter
 - **update_practicepanther_matter**: Update an existing matter/case in PracticePanther
 
 

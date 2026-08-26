@@ -30,13 +30,13 @@ Connect your **Mapulus** account to any AI agent and access deep Australian loca
 - **get_boundary_details**: g., "poa:2000").
 
 Get details for a specific boundary
-- **get_h3_index**: Get H3 index for a location
 - **enrich_location**: Enrich a location with geographic context
 - **get_demographics**: Get demographics for a boundary
+- **search_boundaries**: Search for Australian statistical boundaries
+- **get_h3_index**: Get H3 index for a location
 - **get_isochrone**: Generate travel-time boundaries
 - **get_postcode_data**: Get data for a specific postcode
 - **list_data_topics**: List available data topics
-- **search_boundaries**: Search for Australian statistical boundaries
 - **search_suburbs**: Search specifically for Australian suburbs
 
 

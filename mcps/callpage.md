@@ -35,10 +35,10 @@ Connect your **CallPage** account to any AI agent and orchestrate your lead gene
 
 
 ## Available Tools (10)
-- **get_account_info**: Retrieve core manager/account info
-- **get_call_details**: Get details of a specific call
 - **get_lead_details**: Get details of a specific lead
 - **get_widget_settings**: Get settings for a specific widget
+- **get_account_info**: Retrieve core manager/account info
+- **get_call_details**: Get details of a specific call
 - **list_calls**: List all callback calls and their recordings
 - **list_departments**: List company departments
 - **list_leads**: List captured leads from widgets

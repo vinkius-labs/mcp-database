@@ -35,9 +35,9 @@ Empower your AI agent to orchestrate your entire digital signage network with **
 
 
 ## Available Tools (5)
-- **list_players**: List all digital signage players
 - **get_player**: Get detailed monitoring data for a specific player
 - **list_medias**: List all available media files
+- **list_players**: List all digital signage players
 - **list_templates**: List content and news templates
 - **list_users**: List platform users and groups
 

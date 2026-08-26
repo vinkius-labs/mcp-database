@@ -35,9 +35,9 @@ Connect your **Ad4Game** publisher account to your AI agent to streamline your g
 
 
 ## Available Tools (3)
-- **list_offers**: List all available ad offers
-- **get_offer_details**: Get details for a specific offer
 - **get_creatives**: Fetch creatives for an offer
+- **get_offer_details**: Get details for a specific offer
+- **list_offers**: List all available ad offers
 
 
 ## 💬 Prompt Examples

@@ -38,15 +38,15 @@ Your AI now acts as a billing operations specialist, capable of tracking consump
 ## Available Tools (9)
 - **create_entitlement**: Create an entitlement for a customer
 - **create_feature**: Create a new feature for metering
-- **create_stripe_checkout**: Create a Stripe checkout session
 - **create_subscription**: Create a subscription
 - **delete_subject**: Delete a subject by key
 - **get_customer**: Get a customer by ID or Key
-- **ingest_event**: Ingest a usage event into OpenMeter
 - **upsert_subjects**: Provide an array of subject objects.
 
 Upsert subjects in OpenMeter
 - **create_customer**: Create a new billable customer
+- **create_stripe_checkout**: Create a Stripe checkout session
+- **ingest_event**: Ingest a usage event into OpenMeter
 
 
 ## 💬 Prompt Examples

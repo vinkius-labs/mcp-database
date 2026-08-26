@@ -37,14 +37,14 @@ Connect your AI agents to **BrioHR**, the all-in-one HR software designed to sim
 ## Available Tools (10)
 - **get_employee_details**: Get detailed profile for a specific employee
 - **get_payroll_summary**: Get payroll overview for a specific month
-- **get_who_is_away**: List employees who are currently away or scheduled for leave
+- **list_claim_reports**: Retrieve approved claim reports for payroll integration
 - **list_departments**: List organizational departments
 - **list_employees**: Download the main information for all employees
+- **list_job_candidates**: List candidates for a specific job
+- **get_who_is_away**: List employees who are currently away or scheduled for leave
 - **list_job_postings**: List active job openings in the recruitment module
 - **list_leave_requests**: Retrieve leave requests for an employee
 - **list_performance_appraisals**: List performance review cycles
-- **list_job_candidates**: List candidates for a specific job
-- **list_claim_reports**: Retrieve approved claim reports for payroll integration
 
 
 ## 💬 Prompt Examples

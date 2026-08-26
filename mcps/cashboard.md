@@ -37,13 +37,13 @@ Connect your **Cashboard** account to any AI agent and take full control of your
 
 ## Available Tools (8)
 - **get_cashboard_account**: Retrieve core account and subscription information
-- **list_business_expenses**: List tracked business expenses
 - **list_active_projects**: List active projects
-- **list_cashboard_contacts**: List client and staff contacts
+- **list_business_expenses**: List tracked business expenses
 - **list_estimates**: List all project estimates
 - **list_invoices**: List all invoices
 - **list_project_tasks**: List all project tasks
 - **list_time_entries**: List recent time tracking entries
+- **list_cashboard_contacts**: List client and staff contacts
 
 
 ## 💬 Prompt Examples
