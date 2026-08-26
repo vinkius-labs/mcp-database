@@ -17,6 +17,7 @@ Explore the open database of **construction** Model Context Protocol (MCP) serve
 | [Drywall Quantity Calculator](../mcps/drywall-quantity-calculator.md) | Calculate the exact number of drywall sheets, screws, and tape needed for your construction project. |
 | [Electrical Load Calculator](../mcps/electrical-load-calculator.md) | Calculate electrical load per room/circuit, including lighting, receptacles, and appliances for panel sizing. |
 | [Electrical Panel Load Calculator](../mcps/electrical-panel-load-calculator.md) | Calculate residential electrical load requirements based on NEC Article 220 standards to determine panel capacity and conductor sizing. |
+| [Fence Material Calculator](../mcps/fence-material-calculator.md) | Calculate precise fencing material requirements and costs for pastures. |
 | [Fieldwire](../mcps/fieldwire.md) | Manage construction projects via Fieldwire — track tasks, organize floorplans, and coordinate field teams directly from any AI agent. |
 | [Floor Material Calculator](../mcps/floor-material-calculator.md) | Calculate the exact amount of tiles, wood, or porcelain needed for your flooring project. |
 | [Footing Size Calculator](../mcps/footing-size-calculator.md) | Calculate minimum square footing dimensions and thickness based on column load and soil bearing capacity. |
