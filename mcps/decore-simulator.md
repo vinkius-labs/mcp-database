@@ -14,9 +14,9 @@ The DECORE Simulator is a specialized financial engine designed to help users ve
 
 
 ## Available Tools (3)
+- **calculate_total_monthly_revenue**: Calculate total monthly revenue and its composition
 - **compute_taxable_burden**: Calculate the portion of total income subject to tax
 - **validate_income_compliance**: Validate if income amounts are within regulatory boundaries
-- **calculate_total_monthly_revenue**: Calculate total monthly revenue and its composition
 
 
 ## 💬 Prompt Examples

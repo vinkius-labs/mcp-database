@@ -15,8 +15,8 @@ The Pet Senior Care Planner helps owners manage the aging process of their pets.
 
 ## Available Tools (3)
 - **get_lifestyle_recommendations**: Provides lifestyle recommendations based on life stage
-- **get_veterinary_protocol**: Provides veterinary monitoring requirements for a life stage
 - **identify_pet_life_stage**: Determines the current biological life stage of a pet
+- **get_veterinary_protocol**: Provides veterinary monitoring requirements for a life stage
 
 
 ## 💬 Prompt Examples

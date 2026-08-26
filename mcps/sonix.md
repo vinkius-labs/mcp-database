@@ -37,22 +37,28 @@ No more manual uploading and waiting in browser tabs. Your AI acts as a media as
 
 
 ## Available Tools (30)
-- **create_media_export**: Create a media export
+- **create_batch_summarization**: Create a batch summarization for a folder
+- **create_folder**: Create a new folder
 - **create_share**: Share a media file with a user
 - **create_summarization**: Create a summarization for a media file
-- **create_translation**: Create a translation for a media file
 - **create_video_burn_in**: Create a video burn-in (subtitles on video)
-- **delete_media**: Delete a media file
-- **delete_share**: Remove a share from a media file
 - **get_batch_summarization**: Get batch summarization details
-- **get_media_export**: Get media export status
-- **get_media**: Get media status and details
-- **get_summarization**: Get summarization details
-- **get_transcript_json**: Get JSON transcript with word-level timestamps
 - **get_transcript_srt**: Get SRT transcript file
 - **get_transcript_text**: Get plain text transcript
 - **get_transcript_vtt**: Get VTT transcript file
 - **get_translation**: Get translation status
+- **list_users**: List all users in the account
+- **split_transcript**: Automatically split transcript into subtitles
+- **submit_media**: Submit new media for transcription
+- **update_user**: Update a user role
+- **create_media_export**: Create a media export
+- **create_translation**: Create a translation for a media file
+- **delete_media**: Delete a media file
+- **delete_share**: Remove a share from a media file
+- **get_media**: Get media status and details
+- **get_media_export**: Get media export status
+- **get_summarization**: Get summarization details
+- **get_transcript_json**: Get JSON transcript with word-level timestamps
 - **get_video_burn_in**: Get video burn-in status
 - **invite_user**: Invite a new user to the account
 - **list_folders**: List all folders
@@ -60,13 +66,7 @@ No more manual uploading and waiting in browser tabs. Your AI acts as a media as
 - **list_shares**: List shares for a media file
 - **update_media**: Update media attributes
 - **update_transcript**: Update transcript words and speakers
-- **update_user**: Update a user role
-- **create_batch_summarization**: Create a batch summarization for a folder
-- **create_folder**: Create a new folder
-- **list_users**: List all users in the account
-- **split_transcript**: Automatically split transcript into subtitles
 - **update_folder**: Update a folder
-- **submit_media**: Submit new media for transcription
 
 
 ## 💬 Prompt Examples

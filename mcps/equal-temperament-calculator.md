@@ -15,8 +15,8 @@ A mathematical engine for musical acoustics. Use `generate_midi_frequency_log` t
 
 ## Available Tools (3)
 - **calculate_interval_deviations**: Calculates deviations from Just Intonation
-- **generate_midi_frequency_log**: Generates a MIDI frequency log
 - **compare_tuning_systems**: Compares different tuning systems
+- **generate_midi_frequency_log**: Generates a MIDI frequency log
 
 
 ## 💬 Prompt Examples

@@ -34,11 +34,11 @@ Connect your **zipBoard** account to any AI agent to streamline your visual revi
 
 
 ## Available Tools (6)
-- **list_projects**: List all zipBoard projects
-- **list_tasks**: List project tasks/issues
 - **create_project**: Pass data as a JSON string.
 
 Create a new project
+- **list_projects**: List all zipBoard projects
+- **list_tasks**: List project tasks/issues
 - **create_task**: Create a new task/issue
 - **get_organization**: Get organization details
 - **list_files**: List project files/URLs

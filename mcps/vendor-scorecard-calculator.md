@@ -14,9 +14,9 @@ The Vendor Scorecard Calculator is a specialized MCP server designed to evaluate
 
 
 ## Available Tools (3)
+- **detect_at_risk_vendors**: Identify vendors at risk of falling into a lower performance tier
 - **evaluate_supplier_scores**: Calculate weighted performance scores for vendors
 - **generate_performance_ranking**: Rank vendors by their performance scores
-- **detect_at_risk_vendors**: Identify vendors at risk of falling into a lower performance tier
 
 
 ## 💬 Prompt Examples

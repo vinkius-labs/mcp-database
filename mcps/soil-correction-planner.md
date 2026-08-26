@@ -14,10 +14,10 @@ The Soil Correction Planner helps farmers transition their soil from acidic or n
 
 
 ## Available Tools (4)
-- **get_lime_sequence**: Calculate lime application doses for a 3-year period
-- **get_micronutrient_sequence**: Calculate micronutrient requirements for a crop
 - **calculate_total_program_cost**: Calculate the total cost of the soil correction program
 - **get_gypsum_sequence**: Calculate gypsum application doses for a 3-year period
+- **get_lime_sequence**: Calculate lime application doses for a 3-year period
+- **get_micronutrient_sequence**: Calculate micronutrient requirements for a crop
 
 
 ## 💬 Prompt Examples

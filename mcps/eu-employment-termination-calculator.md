@@ -15,10 +15,10 @@ This MCP server provides precise calculations for statutory employment terminati
 
 ## Available Tools (3)
 - **calculate_severance**: Calculates the estimated monetary compensation for an employee termination
+- **validate_termination_eligibility**: Checks whether a specific dismissal type is legally eligible to trigger compensation
 - **get_country_policy_summary**: g., France 10-year cap).
 
 Retrie ives the legal rules used for a specific country's calculations
-- **validate_termination_eligibility**: Checks whether a specific dismissal type is legally eligible to trigger compensation
 
 
 ## 💬 Prompt Examples

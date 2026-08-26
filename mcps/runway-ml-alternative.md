@@ -35,10 +35,10 @@ No more manual checking of generation progress bars. Your AI agent acts as a cre
 
 
 ## Available Tools (4)
-- **delete_task**: Delete a Runway task
-- **get_task**: Retrieve a Runway task
 - **create_task**: Create a new Runway generation task
+- **get_task**: Retrieve a Runway task
 - **list_tasks**: List Runway tasks
+- **delete_task**: Delete a Runway task
 
 
 ## 💬 Prompt Examples

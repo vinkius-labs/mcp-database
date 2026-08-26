@@ -36,16 +36,16 @@ No more manual contact research or complex campaign toggling. Your AI acts as yo
 
 
 ## Available Tools (8)
-- **list_properties_schema**: List custom properties schema
-- **add_to_campaign**: Add contact to a campaign
 - **create_contact**: Create a new lead/contact
 - **enrich_contact_ai**: Trigger AI enrichment for a contact
 - **get_contact_details**: Get contact profile details
 - **list_activities**: List sales activities
+- **add_to_campaign**: Add contact to a campaign
 - **list_campaigns**: List sales campaigns/sequences
 - **list_contacts**: Supports advanced filtering by email or created date.
 
 List FirstQuadrant contacts
+- **list_properties_schema**: List custom properties schema
 
 
 ## 💬 Prompt Examples

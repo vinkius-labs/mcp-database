@@ -37,16 +37,16 @@ No more manual check-ins or siloed safety logs. Your AI acts as a dedicated safe
 
 ## Available Tools (11)
 - **create_safety_task**: Create a new lone worker task
-- **list_safety_alerts**: List recent safety alerts
-- **list_safety_events**: List recent safety events
 - **get_alert_details**: Get details for a specific alert
 - **get_location**: Get details for a specific location
 - **get_safepoint_user_details**: Get user details
-- **list_safety_history**: List historical safety data
-- **list_user_locations**: List current user locations
-- **list_safety_tasks**: List all active safety tasks
 - **list_safepoint_teams**: List all safety teams
 - **list_safepoint_users**: List all users in the organization
+- **list_safety_alerts**: List recent safety alerts
+- **list_safety_events**: List recent safety events
+- **list_safety_history**: List historical safety data
+- **list_safety_tasks**: List all active safety tasks
+- **list_user_locations**: List current user locations
 
 
 ## 💬 Prompt Examples
