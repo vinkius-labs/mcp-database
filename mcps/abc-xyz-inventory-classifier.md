@@ -15,8 +15,8 @@ This MCP server provides advanced inventory intelligence by performing multi-dim
 
 ## Available Tools (3)
 - **classify_abc_priority**: Classify SKUs into ABC categories based on cumulative value
-- **get_strategy_matrix**: Generate management strategies by intersecting ABC and XYZ results
 - **classify_xyz_stability**: Classify SKUs into XYZ categories based on demand volatility
+- **get_strategy_matrix**: Generate management strategies by intersecting ABC and XYZ results
 
 
 ## 💬 Prompt Examples

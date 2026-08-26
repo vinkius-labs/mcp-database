@@ -14,11 +14,11 @@ The Magic Number Calculator is a specialized tool for evaluating Go-To-Market (G
 
 
 ## Available Tools (3)
-- **calculate_magic_number**: Calculate the Magic Number ratio
-- **evaluate_gtm_health_summary**: Provide a holistic diagnostic of the GTM engine
 - **get_efficiency_rating**: 5, 0.75, 1.0).
 
 Categorize a Magic Number into its performance tier
+- **calculate_magic_number**: Calculate the Magic Number ratio
+- **evaluate_gtm_health_summary**: Provide a holistic diagnostic of the GTM engine
 
 
 ## 💬 Prompt Examples

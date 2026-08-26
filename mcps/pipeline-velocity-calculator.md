@@ -14,12 +14,12 @@ Calculate sales pipeline velocity ($/day) and identify which operational metric 
 
 
 ## Available Tools (3)
-- **determine_required_throughput**: Specify primaryMetricToSolveFor as opportunities, close_rate, or sales_cycle.
-
-Determine what operational metric must improve to hit a revenue target
 - **calculate_pipeline_velocity**: Requires opportunity count, close rate (0-1), average contract value, and sales cycle length in days.
 
 Calculate sales pipeline velocity in dollars per day
+- **determine_required_throughput**: Specify primaryMetricToSolveFor as opportunities, close_rate, or sales_cycle.
+
+Determine what operational metric must improve to hit a revenue target
 - **project_revenue_and_sensitivity**: Also calculates how much revenue would change if each individual variable improved by a given percentage, helping identify which lever has the biggest impact.
 
 Project revenue for a period and analyze sensitivity to variable improvements

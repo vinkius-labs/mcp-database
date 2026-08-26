@@ -24,8 +24,8 @@ The result provides a clear, data-driven view of the patient's immediate and lon
 
 
 ## Available Tools (2)
-- **calculate_grace_score**: Calculate GRACE risk score for acute coronary syndrome patients
 - **get_risk_category**: Get risk category and recommendation for a GRACE score
+- **calculate_grace_score**: Calculate GRACE risk score for acute coronary syndrome patients
 
 
 ## 💬 Prompt Examples

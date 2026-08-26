@@ -14,8 +14,8 @@ This MCP server provides a precise engine to calculate statutory pre-judgment in
 
 
 ## Available Tools (3)
-- **calculate_accumulated_interest**: Calculate total interest accrued on a debt
 - **get_state_statute_details**: Get the legal interest rules for a specific state
+- **calculate_accumulated_interest**: Calculate total interest accrued on a debt
 - **list_supported_jurisdictions**: List all supported US states
 
 

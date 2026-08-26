@@ -14,12 +14,12 @@ The Training Pace Calculator MCP server provides precise tools for runners to de
 
 
 ## Available Tools (3)
-- **estimate_distance_conversion**: Uses Riegel's formula.
-
-Predict pace for a different distance based on current performance
 - **calculate_zones_from_pace**: g., 5K, 10K). Returns training zones in km and mile formats.
 
 Calculate training intensity zones based on a recent race pace
+- **estimate_distance_conversion**: Uses Riegel's formula.
+
+Predict pace for a different distance based on current performance
 - **calculate_zones_from_vo2max**: Returns training zones in km and mile formats.
 
 Calculate training intensity zones based on VO2max

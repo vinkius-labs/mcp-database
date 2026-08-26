@@ -34,14 +34,14 @@ Connect to **Reservoir**, the premier NFT liquidity aggregator, and empower your
 
 
 ## Available Tools (8)
-- **execute_sell**: Generate transactions to accept an offer (fill a bid)
 - **get_collection**: Get metadata and real-time stats for a collection
-- **get_token**: Retrieve detailed information for a specific token
 - **list_asks**: Retrieve active listings (asks) across all supported marketplaces
-- **list_bids**: Retrieve active offers (bids) for tokens or collections
-- **list_tokens**: Retrieve a list of tokens with various filters
 - **search_collections**: Search for collections by name or contract address
 - **execute_buy**: Generate transactions to buy an NFT
+- **execute_sell**: Generate transactions to accept an offer (fill a bid)
+- **get_token**: Retrieve detailed information for a specific token
+- **list_bids**: Retrieve active offers (bids) for tokens or collections
+- **list_tokens**: Retrieve a list of tokens with various filters
 
 
 ## 💬 Prompt Examples

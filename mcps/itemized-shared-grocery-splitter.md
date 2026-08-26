@@ -14,9 +14,9 @@ This MCP server provides tools to accurately split a shared grocery receipt wher
 
 
 ## Available Tools (3)
-- **get_unique_participants**: Identify every unique person involved in the shopping trip
 - **calculate_individual_subtotals**: Determine how much each person owes for the food items they specifically consumed, before tax
 - **compute_final_balances**: Calculate the final amount each person must pay, including their share of the tax
+- **get_unique_participants**: Identify every unique person involved in the shopping trip
 
 
 ## 💬 Prompt Examples

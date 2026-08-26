@@ -34,15 +34,15 @@ Connect to the **GBIF Backbone Taxonomy**, the most comprehensive database of bi
 
 ## Available Tools (10)
 - **get_species_children**: List child taxa for a specific taxon
-- **get_species_descriptions**: Retrieve text descriptions for a specific taxon
-- **get_species**: Retrieve detailed information for a specific taxon
-- **match_species**: Match a scientific name against the GBIF Backbone Taxonomy
-- **get_species_media**: Retrieve images and other media for a specific taxon
 - **get_species_parents**: List parent taxa for a specific taxon
+- **get_species_synonyms**: List taxonomic synonyms for a specific taxon
+- **get_species**: Retrieve detailed information for a specific taxon
+- **get_species_descriptions**: Retrieve text descriptions for a specific taxon
+- **get_species_media**: Retrieve images and other media for a specific taxon
 - **get_species_references**: Retrieve literature references for a specific taxon
+- **match_species**: Match a scientific name against the GBIF Backbone Taxonomy
 - **search_species**: Search for species and higher taxa
 - **suggest_species**: Quickly find scientific names for autocomplete or search suggestions
-- **get_species_synonyms**: List taxonomic synonyms for a specific taxon
 
 
 ## 💬 Prompt Examples

@@ -17,12 +17,12 @@ The Tempo Tap Averager MCP server allows you to derive accurate musical tempo (B
 - **evaluate_rhythm_consistency**: Returns a stability score (0-1) and the number of detected outliers.
 
 Evaluate the stability and consistency of a tapped rhythm
-- **get_tempo_metadata**: g., 120). Returns the corresponding musical term (e.g., Vivace).
-
-Get the musical label for a specific BPM
 - **calculate_bpm**: g., [0, 500, 1000]). Returns exact BPM, standard BPM, and suggested half/double time tempos.
 
 Calculate BPM and tempo variations from tap timestamps
+- **get_tempo_metadata**: g., 120). Returns the corresponding musical term (e.g., Vivace).
+
+Get the musical label for a specific BPM
 
 
 ## 💬 Prompt Examples

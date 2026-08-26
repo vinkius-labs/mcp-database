@@ -14,8 +14,8 @@ The Early Breaking Decision Engine provides a precise evaluation of the physiolo
 
 
 ## Available Tools (2)
-- **metabolic_loss_tool**: Estimate the metabolic loss magnitude from breaking a fast early
 - **fasting_progress_tool**: Calculate the percentage of a fasting window completed
+- **metabolic_loss_tool**: Estimate the metabolic loss magnitude from breaking a fast early
 
 
 ## 💬 Prompt Examples

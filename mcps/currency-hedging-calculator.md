@@ -14,8 +14,8 @@ This MCP server provides specialized tools for managing currency exposure. Use `
 
 
 ## Available Tools (3)
-- **calculate_exposure_impact**: Calculate the financial impact of hedging a currency position
 - **calculate_break_even_threshold**: Find the spot rate boundary for a profitable hedge
+- **calculate_exposure_impact**: Calculate the financial impact of hedging a currency position
 - **calculate_effective_rate**: Calculate the true per-unit price of a currency after hedging costs
 
 

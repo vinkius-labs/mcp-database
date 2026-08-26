@@ -14,9 +14,9 @@ This MCP server provides analytical tools to model financial runway. Using `calc
 
 
 ## Available Tools (3)
-- **calculate_required_fund_buffer**: Calculates the minimum amount of money needed in an emergency fund to survive for a specific number of highly targeted days
 - **calculate_survival_duration**: Determines how many days and months a user will remain financially solvent before their fund is depleted
 - **compare_scenario_impact**: Quantifies the difference in financial runway between two different loss-of-income scenarios
+- **calculate_required_fund_buffer**: Calculates the minimum amount of money needed in an emergency fund to survive for a specific number of highly targeted days
 
 
 ## 💬 Prompt Examples

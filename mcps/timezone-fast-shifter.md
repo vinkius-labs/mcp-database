@@ -14,9 +14,9 @@ The Timezone Fast Shifter helps you navigate international travel without breaki
 
 
 ## Available Tools (3)
-- **calculate_fast_window_shift**: Calculate the new feeding window at destination
 - **get_fasting_safety_thresholds**: Retrieve the maximum allowed fasting duration
 - **validate_travel_timeline**: Ensure travel itinerary and fasting schedule are logically compatible
+- **calculate_fast_window_shift**: Calculate the new feeding window at destination
 
 
 ## 💬 Prompt Examples

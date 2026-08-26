@@ -15,8 +15,8 @@ The Ideal Weight Calculator provides precise, science-based weight boundaries by
 
 ## Available Tools (3)
 - **calculate_weight_ranges**: Determines the minimum and maximum healthy weight boundaries
-- **plan_weight_transition**: Calculates nutritional adjustment for weight change
 - **evaluate_bmi_status**: Assesses the health classification of a specific weight
+- **plan_weight_transition**: Calculates nutritional adjustment for weight change
 
 
 ## 💬 Prompt Examples

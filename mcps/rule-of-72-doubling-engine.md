@@ -14,13 +14,13 @@ The Rule of 72 Doubling Engine provides mathematically precise calculations for 
 
 
 ## Available Tools (3)
+- **get_precision_reliability**: Check the reliability of the Rule of 72 shortcut
 - **get_doubling_comparison**: g., 5) and returns precise vs estimated periods and error percentage.
 
 Compare exact doubling periods with Rule of 72 estimate
 - **get_growth_milestones**: ) with time and value.
 
 Generate growth milestones based on doubling intervals
-- **get_precision_reliability**: Check the reliability of the Rule of 72 shortcut
 
 
 ## 💬 Prompt Examples

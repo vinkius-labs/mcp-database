@@ -14,9 +14,9 @@ The Loyalty Points Value Engine is a decision-support tool designed to maximize 
 
 
 ## Available Tools (3)
+- **calculate_upgrade_implication**: Calculate the cost of upgrading to a higher tier
 - **evaluate_current_efficiency**: Calculate the points-to-dollar ratio for each redemption option
 - **analyze_redemption_strategy**: Determine whether to redeem points now or wait for a better reward
-- **calculate_upgrade_implication**: Calculate the cost of upgrading to a higher tier
 
 
 ## 💬 Prompt Examples

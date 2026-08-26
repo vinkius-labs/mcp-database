@@ -15,10 +15,10 @@ The Penalty Clause Calculator is a specialized tool for determining the financia
 
 ## Available Tools (3)
 - **calculate_enforceable_penalty**: Determines the final penalty amount after applying legal caps
+- **calculate_raw_penalty**: Calculates the initial penalty amount based on contract terms
 - **get_jurisdiction_ceiling**: g., USA, DE, FR).
 
 Retrieves the maximum allowable penalty percentage for a jurisdiction
-- **calculate_raw_penalty**: Calculates the initial penalty amount based on contract terms
 
 
 ## 💬 Prompt Examples
